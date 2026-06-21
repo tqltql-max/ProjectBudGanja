@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pesquisas técnicas do Inspetor BudGanja — relatórios científicos e estudos sobre cultivo vegetal.">
+    <meta property="og:title" content="Pesquisas | Inspetor BudGanja">
+    <meta property="og:description" content="Relatórios técnicos e estudos científicos sobre cultivo vegetal.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#27ae60">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
+    <link rel="stylesheet" href="style.css">
+    <title>Pesquisas | Inspetor BudGanja</title>
+</head>
+<body data-page="pesquisas">
+    <div id="site-header"></div>
+
+    <main id="main-content" class="conteudo-interno">
+        <h1>Pesquisas em Andamento</h1>
+        <div class="container-cards">
+            
+            <div class="card">
+                <a href="pesquisa-substratos.html" style="text-decoration: none; color: inherit;">
+                    <h3>Otimização da propagação vegetal via substratos biodegradáveis</h3>
+                    <p>Relatório técnico sobre métodos sustentáveis de propagação.</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Outra Pesquisa</h3>
+                <p>Em breve novos conteúdos científicos.</p>
+            </div>
+            
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="js/layout.js"></script>
+    <script>
+        // Register Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registrado com sucesso:', registration);
+                    })
+                    .catch(error => {
+                        console.log('Falha ao registrar Service Worker:', error);
+                    });
+            });
+        }
+
+        // PWA Install Prompt
+        let deferredPrompt;
+        const installButton = document.createElement('button');
+        installButton.textContent = '📲 Instalar App';
+        installButton.className = 'install-prompt';
+        installButton.style.display = 'none';
+        document.body.appendChild(installButton);
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            installButton.style.display = 'block';
+        });
+
+        installButton.addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                if (outcome === 'accepted') {
+                    installButton.style.display = 'none';
+                }
+                deferredPrompt = null;
+            }
+        });
+
+        window.addEventListener('appinstalled', () => {
+            installButton.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

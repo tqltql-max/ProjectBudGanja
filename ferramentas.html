@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ferramentas do Inspetor BudGanja — calculadoras e utilitários para cultivo vegetal.">
+    <meta property="og:title" content="Ferramentas | Inspetor BudGanja">
+    <meta property="og:description" content="Calculadoras e utilitários para cultivo vegetal.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#27ae60">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
+    <link rel="stylesheet" href="style.css">
+    <title>Ferramentas | Inspetor BudGanja</title>
+</head>
+<body data-page="ferramentas">
+    <div id="site-header"></div>
+
+    <main id="main-content" class="conteudo">
+        <h1>Ferramentas</h1>
+        <p class="secao-subtitulo" style="margin-bottom: 40px;">Calculadoras e utilitários para cultivo vegetal.</p>
+
+        <!-- Ambiente -->
+        <h2 class="category-title">🌡️ Ambiente</h2>
+        <div class="container-cards">
+            <div class="card">
+                <h3>Calculadora de VPD</h3>
+                <p>Calcule o Déficit de Pressão de Vapor para otimizar o ambiente de cultivo.</p>
+                
+                <div class="calculator">
+                    <label for="temp">Temperatura (°C):</label>
+                    <input type="number" id="temp" step="0.1" placeholder="Ex: 25">
+                    
+                    <label for="umidade">Umidade (%):</label>
+                    <input type="number" id="umidade" step="0.1" placeholder="Ex: 60">
+                    
+                    <button onclick="calcularVPD()" class="botao">Calcular VPD</button>
+                    
+                    <div id="resultado"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📊 Guia de Referência</h3>
+                <p>Valores ideais de VPD e PPFD para cada fase do cultivo.</p>
+                
+                <div class="reference-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fase</th>
+                                <th>VPD (kPa)</th>
+                                <th>PPFD (μmol/m²/s)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Clones/Mudas</strong></td>
+                                <td>0.4 - 0.8</td>
+                                <td>100 - 200</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vegetação</strong></td>
+                                <td>0.8 - 1.2</td>
+                                <td>300 - 600</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Floração</strong></td>
+                                <td>1.0 - 1.5</td>
+                                <td>600 - 1000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="table-legend">
+                        <p><strong>VPD:</strong> Déficit de Pressão de Vapor - mede a diferença entre a pressão de vapor saturado e atual</p>
+                        <p><strong>PPFD:</strong> Fluxo de Fótons de Fotossíntese - intensidade de luz útil para as plantas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Substrato -->
+        <h2 class="category-title">🌱 Substrato</h2>
+        <div class="container-cards">
+            <div class="card">
+                <h3>Calculadora de Super Solo</h3>
+                <p>Calcule as proporções de ingredientes para fazer super solo orgânico.</p>
+                
+                <div class="calculator">
+                    <label for="volume">Volume total (litros):</label>
+                    <input type="number" id="volume" step="1" placeholder="Ex: 100">
+                    
+                    <button onclick="calcularSuperSolo()" class="botao">Calcular Ingredientes</button>
+                    
+                    <div id="resultado-super-solo"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nutrição -->
+        <h2 class="category-title">💧 Nutrição</h2>
+        <div class="container-cards">
+            <div class="card">
+                <h3>Calculadora de EC</h3>
+                <p>Calcule a Condutividade Elétrica para monitorar a solução nutritiva.</p>
+                
+                <div class="calculator">
+                    <label for="ec-ppm">EC (mS/cm):</label>
+                    <input type="number" id="ec-ppm" step="0.01" placeholder="Ex: 1.5">
+                    
+                    <button onclick="calcularEC()" class="botao">Converter para PPM</button>
+                    
+                    <div id="resultado-ec"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Calculadora de Diluição</h3>
+                <p>Calcule quanto diluir sua solução concentrada.</p>
+                
+                <div class="calculator">
+                    <label for="concentracao">Concentração atual (EC):</label>
+                    <input type="number" id="concentracao" step="0.1" placeholder="Ex: 2.0">
+                    
+                    <label for="alvo">EC alvo (mS/cm):</label>
+                    <input type="number" id="alvo" step="0.1" placeholder="Ex: 1.5">
+                    
+                    <button onclick="calcularDiluicao()" class="botao">Calcular Diluição</button>
+                    
+                    <div id="resultado-diluicao"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="js/layout.js"></script>
+    <script>
+        // Register Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registrado com sucesso:', registration);
+                    })
+                    .catch(error => {
+                        console.log('Falha ao registrar Service Worker:', error);
+                    });
+            });
+        }
+
+        // PWA Install Prompt
+        let deferredPrompt;
+        const installButton = document.createElement('button');
+        installButton.textContent = '📲 Instalar App';
+        installButton.className = 'install-prompt';
+        installButton.style.display = 'none';
+        document.body.appendChild(installButton);
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            installButton.style.display = 'block';
+        });
+
+        installButton.addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                if (outcome === 'accepted') {
+                    installButton.style.display = 'none';
+                }
+                deferredPrompt = null;
+            }
+        });
+
+        window.addEventListener('appinstalled', () => {
+            installButton.style.display = 'none';
+        });
+    </script>
+        function calcularVPD() {
+            const T = parseFloat(document.getElementById('temp').value);
+            const RH = parseFloat(document.getElementById('umidade').value);
+            
+            if (isNaN(T) || isNaN(RH)) {
+                document.getElementById('resultado').innerHTML = '<p style="color: #e74c3c;">Por favor, insira valores válidos.</p>';
+                return;
+            }
+            
+            // Fórmula aproximada de VPD (kPa)
+            // SVP (Pressão de vapor saturado) = 0.6108 * exp((17.27 * T) / (T + 237.3))
+            const SVP = 0.6108 * Math.exp((17.27 * T) / (T + 237.3));
+            const VPD = SVP * (1 - (RH / 100));
+            
+            let status = '';
+            let color = '';
+            
+            if (VPD < 0.4) {
+                status = 'Muito baixo - Risco de doenças';
+                color = '#3498db';
+            } else if (VPD < 0.8) {
+                status = 'Baixo - Ideal para propagação';
+                color = '#27ae60';
+            } else if (VPD < 1.2) {
+                status = 'Ideal - Ótimo para vegetativo';
+                color = '#27ae60';
+            } else if (VPD < 1.6) {
+                status = 'Alto - Bom para floração';
+                color = '#f39c12';
+            } else {
+                status = 'Muito alto - Estresse hídrico';
+                color = '#e74c3c';
+            }
+            
+            document.getElementById('resultado').innerHTML = `
+                <div class="result-box">
+                    <p style="font-size: 1.5rem; color: #27ae60; margin: 10px 0;">VPD: ${VPD.toFixed(2)} kPa</p>
+                    <p style="color: ${color}; font-weight: 500;">${status}</p>
+                </div>
+            `;
+        }
+
+        function calcularSuperSolo() {
+            const volume = parseFloat(document.getElementById('volume').value);
+            
+            if (isNaN(volume) || volume <= 0) {
+                document.getElementById('resultado-super-solo').innerHTML = '<p style="color: #e74c3c;">Por favor, insira um volume válido.</p>';
+                return;
+            }
+            
+            // Proporções típicas de super solo (baseado em receitas populares)
+            const ingredientes = {
+                'Base (solo/terra)': volume * 0.4,
+                'Composto': volume * 0.3,
+                'Castanha (castanha de índia/pecã)': volume * 0.1,
+                'Farinha de osso': volume * 0.05,
+                'Farinha de krill/camarão': volume * 0.05,
+                'Kelp (alga marinha)': volume * 0.03,
+                'Calcário (dolomítico)': volume * 0.04,
+                'Gesso agrícola': volume * 0.02,
+                'Perlita': volume * 0.01
+            };
+            
+            let resultadoHTML = '<div class="result-box"><h4 style="color: #27ae60; margin-bottom: 15px;">Ingredientes para ' + volume + ' litros:</h4><ul style="list-style: none; padding: 0;">';
+            
+            for (const [ingrediente, quantidade] of Object.entries(ingredientes)) {
+                resultadoHTML += `<li style="padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between;">
+                    <span>${ingrediente}:</span>
+                    <span style="color: #27ae60; font-weight: 600;">${quantidade.toFixed(2)} litros</span>
+                </li>`;
+            }
+            
+            resultadoHTML += '</ul><p style="margin-top: 15px; font-size: 0.85rem; color: #888;">* Proporções baseadas em receitas de super solo orgânico. Ajuste conforme necessário.</p></div>';
+            
+            document.getElementById('resultado-super-solo').innerHTML = resultadoHTML;
+        }
+
+        function calcularEC() {
+            const ec = parseFloat(document.getElementById('ec-ppm').value);
+            
+            if (isNaN(ec) || ec <= 0) {
+                document.getElementById('resultado-ec').innerHTML = '<p style="color: #e74c3c;">Por favor, insira um valor válido.</p>';
+                return;
+            }
+            
+            // Conversão EC (mS/cm) para PPM (500 scale e 700 scale)
+            const ppm500 = ec * 500;
+            const ppm700 = ec * 700;
+            
+            let status = '';
+            let color = '';
+            
+            if (ec < 0.8) {
+                status = 'Baixo - Pode indicar deficiência nutricional';
+                color = '#3498db';
+            } else if (ec < 1.2) {
+                status = 'Ideal para propagação';
+                color = '#27ae60';
+            } else if (ec < 2.0) {
+                status = 'Ideal para vegetativo';
+                color = '#27ae60';
+            } else if (ec < 2.5) {
+                status = 'Ideal para floração';
+                color = '#f39c12';
+            } else {
+                status = 'Alto - Risco de queima nutricional';
+                color = '#e74c3c';
+            }
+            
+            document.getElementById('resultado-ec').innerHTML = `
+                <div class="result-box">
+                    <p style="font-size: 1.3rem; color: #27ae60; margin: 10px 0;">EC: ${ec.toFixed(2)} mS/cm</p>
+                    <p style="color: #ccc; margin: 5px 0;">PPM (500): ${ppm500.toFixed(0)} ppm</p>
+                    <p style="color: #ccc; margin: 5px 0;">PPM (700): ${ppm700.toFixed(0)} ppm</p>
+                    <p style="color: ${color}; font-weight: 500; margin-top: 10px;">${status}</p>
+                </div>
+            `;
+        }
+
+        function calcularDiluicao() {
+            const concentracao = parseFloat(document.getElementById('concentracao').value);
+            const alvo = parseFloat(document.getElementById('alvo').value);
+            
+            if (isNaN(concentracao) || isNaN(alvo) || concentracao <= 0 || alvo <= 0) {
+                document.getElementById('resultado-diluicao').innerHTML = '<p style="color: #e74c3c;">Por favor, insira valores válidos.</p>';
+                return;
+            }
+            
+            if (concentracao <= alvo) {
+                document.getElementById('resultado-diluicao').innerHTML = '<p style="color: #f39c12;">A concentração atual já está menor ou igual ao alvo. Não é necessário diluir.</p>';
+                return;
+            }
+            
+            // Calcular fator de diluição
+            const fatorDiluicao = concentracao / alvo;
+            const aguaAdicionar = (fatorDiluicao - 1) * 100; // percentual de água a adicionar
+            
+            document.getElementById('resultado-diluicao').innerHTML = `
+                <div class="result-box">
+                    <p style="color: #27ae60; margin: 10px 0;">Fator de diluição: ${fatorDiluicao.toFixed(2)}x</p>
+                    <p style="color: #ccc; margin: 5px 0;">Adicione ${aguaAdicionar.toFixed(0)}% de água</p>
+                    <p style="font-size: 0.85rem; color: #888; margin-top: 10px;">* Para cada 1L da solução atual, adicione ${(fatorDiluicao - 1).toFixed(2)}L de água</p>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
