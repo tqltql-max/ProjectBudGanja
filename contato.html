@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sobre o Inspetor BudGanja — entre em contato com nossa equipe de investigação.">
-    <meta property="og:title" content="Sobre | Inspetor BudGanja">
+    <meta name="description" content="Entre em contato com o Inspetor BudGanja — envie dúvidas para nossa equipe de investigação.">
+    <meta property="og:title" content="Contato | Inspetor BudGanja">
     <meta property="og:description" content="Entre em contato com nossa equipe de investigação.">
     <meta property="og:type" content="website">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -14,65 +14,22 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
     <link rel="stylesheet" href="style.css">
-    <title>Sobre | Inspetor BudGanja</title>
+    <title>Contato | Inspetor BudGanja</title>
 </head>
 <body data-page="contato">
     <div id="site-header"></div>
 
-    <main id="main-content" class="conteudo" style="text-align: center;">
-        <h1>Sobre o Inspetor BudGanja</h1>
+    <main id="main-content" class="conteudo page-centered">
+        <h1>Contato com o Inspetor BudGanja</h1>
         <p>Envie suas dúvidas para nossa equipe de investigação.</p>
-        <div class="highlight" style="text-align: left; max-width: 600px; margin: 40px auto;">
+        <div class="highlight highlight-box">
             <h3>Contato</h3>
-            <p>Email: contato@inspetorbudganja.com</p>
+            <p>Email: <a class="contact-email" href="mailto:inspetorbudganja@gmail.com">inspetorbudganja@gmail.com</a></p>
             <p>Localização: Laboratório Experimental</p>
         </div>
     </main>
 
     <div id="site-footer"></div>
     <script src="js/layout.js"></script>
-    <script>
-        // Register Service Worker
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(registration => {
-                        console.log('Service Worker registrado com sucesso:', registration);
-                    })
-                    .catch(error => {
-                        console.log('Falha ao registrar Service Worker:', error);
-                    });
-            });
-        }
-
-        // PWA Install Prompt
-        let deferredPrompt;
-        const installButton = document.createElement('button');
-        installButton.textContent = '📲 Instalar App';
-        installButton.className = 'install-prompt';
-        installButton.style.display = 'none';
-        document.body.appendChild(installButton);
-
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            installButton.style.display = 'block';
-        });
-
-        installButton.addEventListener('click', async () => {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                const { outcome } = await deferredPrompt.userChoice;
-                if (outcome === 'accepted') {
-                    installButton.style.display = 'none';
-                }
-                deferredPrompt = null;
-            }
-        });
-
-        window.addEventListener('appinstalled', () => {
-            installButton.style.display = 'none';
-        });
-    </script>
 </body>
 </html>

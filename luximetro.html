@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxímetro do Inspetor BudGanja — meça a intensidade luminosa e estime PPFD usando a câmera do celular.">
+    <meta property="og:title" content="Luxímetro | Inspetor BudGanja">
+    <meta property="og:description" content="Meça lux e estime PPFD em tempo real com a câmera do celular.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#27ae60">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="luximetro.css">
+    <title>Luxímetro | Inspetor BudGanja</title>
+</head>
+<body data-page="luximetro">
+    <div id="site-header"></div>
+
+    <main id="main-content" class="luximetro-container">
+        <a href="calculadoras.html" class="voltar-link">&larr; Voltar para Calculadoras</a>
+
+        <h1 class="page-title-tight">Luxímetro</h1>
+        <p class="secao-subtitulo section-subtitle-tight">
+            Medidor de luminosidade em tempo real
+            <span id="sensor-type" class="sensor-badge sensor-camera">Câmera</span>
+        </p>
+
+        <div class="camera-wrapper" id="camera-wrapper">
+            <video id="video" autoplay playsinline muted></video>
+            <canvas id="canvas"></canvas>
+            <div class="camera-overlay">
+                <div class="metering-circle"></div>
+            </div>
+            <div class="camera-off-msg hidden" id="camera-off">
+                <span aria-hidden="true">📷</span>
+                <p>Toque em "Iniciar Câmera" para começar</p>
+            </div>
+        </div>
+
+        <div class="reading-panel">
+            <div class="ppfd-value" id="ppfd-display">--</div>
+            <div class="ppfd-unit">μmol/m²/s (PPFD estimado)</div>
+            <div class="lux-value" id="lux-display">-- lux</div>
+            <div id="status-container">
+                <span class="status-badge" id="status-badge">Aguardando...</span>
+            </div>
+        </div>
+
+        <div class="controls-panel">
+            <label for="light-source">Tipo de luz:</label>
+            <select id="light-source" class="select-dark">
+                <option value="0.0185">Luz solar</option>
+                <option value="0.0171" selected>LED branco</option>
+                <option value="0.0175">LED grow (full spectrum)</option>
+                <option value="0.0122">HPS</option>
+                <option value="0.0135">CFL / Fluorescente</option>
+            </select>
+
+            <label for="camera-facing">Câmera:</label>
+            <select id="camera-facing" class="select-dark select-dark-spaced">
+                <option value="environment" selected>Traseira</option>
+                <option value="user">Frontal</option>
+            </select>
+
+            <div class="btn-row">
+                <button type="button" class="botao" id="btn-start" onclick="toggleCamera()">Iniciar Câmera</button>
+                <button type="button" class="botao btn-secondary" id="btn-calibrate" onclick="openCalibration()" disabled>Calibrar</button>
+                <button type="button" class="botao btn-secondary" id="btn-save" onclick="saveReading()" disabled>Salvar</button>
+            </div>
+            <p class="calibration-info" id="cal-info">Sem calibração — valores aproximados</p>
+
+            <div class="extra-controls">
+                <div class="mini-toggle">
+                    <span>Modo suave</span>
+                    <label class="toggle">
+                        <input type="checkbox" id="smooth-mode" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="mini-toggle">
+                    <span>Travar leitura</span>
+                    <label class="toggle">
+                        <input type="checkbox" id="lock-reading" onchange="toggleLockReading()">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="monitor-panel" id="monitor-panel">
+            <div class="monitor-header">
+                <h3>Monitoramento</h3>
+                <label class="toggle" title="Ativar monitoramento">
+                    <input type="checkbox" id="monitor-toggle" onchange="toggleMonitoring()">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+
+            <label for="phase-preset" class="field-label">Fase de cultivo:</label>
+            <select id="phase-preset" class="select-dark" onchange="applyPhasePreset()">
+                <option value="clone">Clones / Mudas (100–200)</option>
+                <option value="veg" selected>Vegetativo (300–600)</option>
+                <option value="flora">Floração (600–1000)</option>
+                <option value="custom">Personalizado</option>
+            </select>
+
+            <div class="range-bar-container">
+                <div class="range-bar">
+                    <div class="range-bar-fill" id="range-fill"></div>
+                    <div class="range-bar-cursor" id="range-cursor"></div>
+                </div>
+                <div class="range-labels">
+                    <span>0</span>
+                    <span id="range-label-min">300</span>
+                    <span id="range-label-max">600</span>
+                    <span>1500</span>
+                </div>
+            </div>
+
+            <div class="range-inputs">
+                <div class="input-group">
+                    <label for="ppfd-min">PPFD mínimo:</label>
+                    <input type="number" id="ppfd-min" value="300" step="10" min="0" onchange="onRangeChange()">
+                </div>
+                <div class="input-group">
+                    <label for="ppfd-max">PPFD máximo:</label>
+                    <input type="number" id="ppfd-max" value="600" step="10" min="0" onchange="onRangeChange()">
+                </div>
+            </div>
+
+            <div class="alert-toggles">
+                <div class="toggle-wrap">
+                    <span class="toggle-label"><span class="t-icon" aria-hidden="true">🔔</span> Notificação do browser</span>
+                    <label class="toggle">
+                        <input type="checkbox" id="alert-notif" checked onchange="onNotifToggle()">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="toggle-wrap">
+                    <span class="toggle-label"><span class="t-icon" aria-hidden="true">🔊</span> Alerta sonoro</span>
+                    <label class="toggle">
+                        <input type="checkbox" id="alert-sound" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="toggle-wrap">
+                    <span class="toggle-label"><span class="t-icon" aria-hidden="true">📳</span> Vibração</span>
+                    <label class="toggle">
+                        <input type="checkbox" id="alert-vibrate" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="toggle-wrap">
+                    <span class="toggle-label"><span class="t-icon" aria-hidden="true">⚡</span> Flash visual</span>
+                    <label class="toggle">
+                        <input type="checkbox" id="alert-visual" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="alert-status inactive" id="alert-status">
+                <span class="pulse-dot"></span>
+                <span id="alert-status-text">Monitoramento desativado</span>
+            </div>
+        </div>
+
+        <div class="history-panel hidden" id="history-panel">
+            <h3>Leituras Salvas</h3>
+            <ul class="history-list" id="history-list"></ul>
+            <button type="button" class="botao btn-secondary full-width-small" onclick="clearHistory()">Limpar Histórico</button>
+        </div>
+
+        <div class="chart-panel">
+            <h3>Histórico de PPFD</h3>
+            <canvas id="history-chart" class="sparkline" width="1000" height="240"></canvas>
+            <div class="chart-caption">
+                <span>Últimos 60 pontos</span>
+                <span id="chart-status">Aguardando leitura</span>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <p><strong>Aviso:</strong> Este luxímetro usa a câmera do celular para estimar valores de lux e PPFD. Os resultados são <strong>aproximados</strong> e não substituem um PAR meter profissional.</p>
+            <p>Para melhor precisão, use a função <strong>Calibrar</strong> com uma referência conhecida (outro medidor ou valor de referência do fabricante da luz).</p>
+        </div>
+    </main>
+
+    <div id="cal-modal" class="modal-backdrop hidden">
+        <div class="modal-card">
+            <h3>Calibração</h3>
+            <p>Aponte a câmera para a fonte de luz e insira o valor real de PPFD ou Lux (medido com outro instrumento ou informado pelo fabricante).</p>
+
+            <label class="field-label" for="cal-value">Valor de referência:</label>
+            <input type="number" id="cal-value" step="1" placeholder="Ex: 600" class="select-dark">
+
+            <label class="field-label" for="cal-unit">Unidade:</label>
+            <select id="cal-unit" class="select-dark">
+                <option value="ppfd">PPFD (μmol/m²/s)</option>
+                <option value="lux">Lux</option>
+            </select>
+
+            <div class="modal-actions">
+                <button type="button" class="botao btn-inline" onclick="applyCalibration()">Aplicar</button>
+                <button type="button" class="botao btn-secondary btn-inline" onclick="closeCalibration()">Cancelar</button>
+            </div>
+            <button type="button" class="botao btn-secondary full-width-small" onclick="resetCalibration()">Resetar Calibração</button>
+        </div>
+    </div>
+
+    <div id="site-footer"></div>
+    <script src="js/layout.js"></script>
+    <script src="js/luximetro.js"></script>
+</body>
+</html>

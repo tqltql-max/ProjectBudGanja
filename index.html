@@ -19,101 +19,81 @@
 <body data-page="home">
     <div id="site-header"></div>
 
+    <main id="main-content">
     <section class="hero">
         <div class="hero-content">
             <h1>Bem-vindo ao Laboratório</h1>
-            <p>Sua referência em análise e conteúdo.</p>
-            <a href="pesquisas.html" class="botao">Ver Pesquisas</a>
+            <p>Pegue suas Ferramentas e vamos ao trabalho!</p>
+            <div class="hero-actions">
+                <a href="inspecoes.html" class="botao botao-hero">Inspeções</a>
+                <a href="pesquisas.html" class="botao botao-hero">Pesquisas</a>
+                <a href="equipamentos.html" class="botao botao-hero">Equipamentos</a>
+                <a href="calculadoras.html" class="botao botao-hero">Calculadoras</a>
+            </div>
         </div>
     </section>
 
     <section class="features">
-        <div class="conteudo">
+        <div class="conteudo conteudo-wide">
             <h2>Nossas Áreas de Atuação</h2>
-            <div class="container-cards">
-                <div class="card">
-                    <h3>🔬 Pesquisas Técnicas</h3>
+            <p class="section-subtitle">Escolha uma área para explorar o conteúdo do laboratório.</p>
+            <div class="container-cards home-cards">
+                <article class="card home-card">
+                    <div class="card-icon" aria-hidden="true">🔍</div>
+                    <h3>Inspeções</h3>
+                    <p>Relatórios de inspeção, verificações de campo e registros técnicos do laboratório.</p>
+                    <a href="inspecoes.html" class="botao botao-card">Ver Inspeções</a>
+                </article>
+                <article class="card home-card">
+                    <div class="card-icon" aria-hidden="true">🔬</div>
+                    <h3>Pesquisas Técnicas</h3>
                     <p>Relatórios científicos e estudos sobre cultivo vegetal com metodologia rigorosa.</p>
-                    <a href="pesquisas.html" class="botao">Explorar</a>
-                </div>
-                <div class="card">
-                    <h3>🛠️ Bugigangas DIY</h3>
+                    <a href="pesquisas.html" class="botao botao-card">Ver Pesquisas</a>
+                </article>
+                <article class="card home-card">
+                    <div class="card-icon" aria-hidden="true">🛠️</div>
+                    <h3>Equipamentos DIY</h3>
                     <p>Equipamentos caseiros documentados com materiais acessíveis e manuais completos.</p>
-                    <a href="bugigangas.html" class="botao">Ver Manuais</a>
-                </div>
-                <div class="card">
-                    <h3>🔍 Inspeções</h3>
-                    <p>Análise técnica de equipamentos e sistemas de cultivo.</p>
-                    <a href="index.html" class="botao">Saiba Mais</a>
-                </div>
-                <div class="card">
-                    <h3>🧮 Ferramentas</h3>
-                    <p>Calculadoras e utilitários para otimizar seu cultivo: VPD, Super Solo, EC e mais.</p>
-                    <a href="ferramentas.html" class="botao">Usar Ferramentas</a>
-                </div>
+                    <a href="equipamentos.html" class="botao botao-card">Ver Equipamentos</a>
+                </article>
+                <article class="card home-card">
+                    <div class="card-icon" aria-hidden="true">🧮</div>
+                    <h3>Calculadoras</h3>
+                    <p>Utilitários para otimizar seu cultivo: VPD, DLI, EC, luxímetro e muito mais.</p>
+                    <a href="calculadoras.html" class="botao botao-card">Ver Calculadoras</a>
+                </article>
+                <article class="card home-card">
+                    <div class="card-icon" aria-hidden="true">ℹ️</div>
+                    <h3>Sobre o Projeto</h3>
+                    <p>Conheça a metodologia, os limites e o propósito do Inspetor BudGanja.</p>
+                    <a href="sobre.html" class="botao botao-card">Ver Sobre</a>
+                </article>
             </div>
         </div>
     </section>
 
     <section class="about">
-        <div class="conteudo" style="text-align: center;">
+        <div class="conteudo section-center">
             <h2>Sobre o Inspetor BudGanja</h2>
-            <p style="max-width: 700px; margin: 0 auto; line-height: 1.8;">
-                Somos um laboratório dedicado à pesquisa técnica e documentação de equipamentos para cultivo vegetal. 
-                Nosso foco é fornecer conteúdo educacional de qualidade, manuais práticos e relatórios científicos 
+            <p>
+                Somos um laboratório dedicado à pesquisa técnica e documentação de equipamentos para cultivo vegetal.
+                Nosso foco é fornecer conteúdo educacional de qualidade, manuais práticos e relatórios científicos
                 baseados em experimentação real.
             </p>
-            <div class="highlight" style="text-align: left; max-width: 600px; margin: 40px auto;">
+            <div class="highlight info-box">
                 <h3>Missão</h3>
                 <p>Democratizar o conhecimento técnico sobre cultivo vegetal através de documentação acessível e científica.</p>
             </div>
+            <p class="section-subtitle section-center about-youtube-link">
+                Vídeos e tutoriais também no
+                <a href="https://www.youtube.com/@InspetorBudGanja" target="_blank" rel="noopener noreferrer">YouTube @InspetorBudGanja</a>.
+            </p>
+            <a href="contato.html" class="botao botao-card botao-inline-center">Entrar em Contato</a>
         </div>
     </section>
+    </main>
 
     <div id="site-footer"></div>
     <script src="js/layout.js"></script>
-    <script>
-        // Register Service Worker
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(registration => {
-                        console.log('Service Worker registrado com sucesso:', registration);
-                    })
-                    .catch(error => {
-                        console.log('Falha ao registrar Service Worker:', error);
-                    });
-            });
-        }
-
-        // PWA Install Prompt
-        let deferredPrompt;
-        const installButton = document.createElement('button');
-        installButton.textContent = '📲 Instalar App';
-        installButton.className = 'install-prompt';
-        installButton.style.display = 'none';
-        document.body.appendChild(installButton);
-
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            installButton.style.display = 'block';
-        });
-
-        installButton.addEventListener('click', async () => {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                const { outcome } = await deferredPrompt.userChoice;
-                if (outcome === 'accepted') {
-                    installButton.style.display = 'none';
-                }
-                deferredPrompt = null;
-            }
-        });
-
-        window.addEventListener('appinstalled', () => {
-            installButton.style.display = 'none';
-        });
-    </script>
 </body>
 </html>

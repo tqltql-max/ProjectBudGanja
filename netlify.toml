@@ -1,0 +1,31 @@
+# Netlify — site estático + Functions (Admin online)
+
+[build]
+  command = "npm run build"
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  included_files = ["posts.json", "content/pages.json", "content/site.json"]
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/uploads/*"
+  to = "/.netlify/functions/uploads?name=:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/post-:slug.html"
+  to = "/.netlify/functions/render-post?slug=:slug"
+  status = 200
+  force = true

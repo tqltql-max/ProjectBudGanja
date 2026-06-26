@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bugigangas DIY do Inspetor BudGanja — clonadora de baixo custo e hidrocloradora caseira com manuais completos.">
-    <meta property="og:title" content="Bugigangas | Inspetor BudGanja">
+    <meta name="description" content="Equipamentos DIY do Inspetor BudGanja — clonadora de baixo custo e hidrocloradora caseira com manuais completos.">
+    <meta property="og:title" content="Equipamentos | Inspetor BudGanja">
     <meta property="og:description" content="Equipamentos caseiros sustentáveis com manuais de montagem e uso.">
     <meta property="og:type" content="website">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -14,13 +14,13 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
     <link rel="stylesheet" href="style.css">
-    <title>Bugigangas | Inspetor BudGanja</title>
+    <title>Equipamentos | Inspetor BudGanja</title>
 </head>
-<body data-page="bugigangas">
+<body data-page="equipamentos">
     <div id="site-header"></div>
 
     <main id="main-content" class="conteudo">
-        <h1>Nossas Bugigangas</h1>
+        <h1>Nossos Equipamentos</h1>
         <p class="secao-subtitulo" style="margin-bottom: 40px;">Equipamentos caseiros documentados com materiais acessíveis e manuais completos.</p>
 
         <article class="item-lista">
@@ -40,52 +40,16 @@
                 <a href="manual-hidrocloradora.html" class="botao">Ver manual</a>
             </div>
         </article>
+
+        <h2 class="category-title" style="margin-top: 48px;">Publicações de Equipamentos</h2>
+        <div class="container-cards publications-equipamentos">
+            <div class="card post-card"><a href="post-teste-equipamento.html" style="text-decoration:none;color:inherit;"><h3>Teste Equipamento</h3><p>Pub equip</p><span class="post-card-date">26 de junho de 2026</span></a></div>
+        </div>
     </main>
 
     <div id="site-footer"></div>
     <script src="js/layout.js"></script>
-    <script>
-        // Register Service Worker
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(registration => {
-                        console.log('Service Worker registrado com sucesso:', registration);
-                    })
-                    .catch(error => {
-                        console.log('Falha ao registrar Service Worker:', error);
-                    });
-            });
-        }
+    <script src="js/posts.js"></script>
 
-        // PWA Install Prompt
-        let deferredPrompt;
-        const installButton = document.createElement('button');
-        installButton.textContent = '📲 Instalar App';
-        installButton.className = 'install-prompt';
-        installButton.style.display = 'none';
-        document.body.appendChild(installButton);
-
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            installButton.style.display = 'block';
-        });
-
-        installButton.addEventListener('click', async () => {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                const { outcome } = await deferredPrompt.userChoice;
-                if (outcome === 'accepted') {
-                    installButton.style.display = 'none';
-                }
-                deferredPrompt = null;
-            }
-        });
-
-        window.addEventListener('appinstalled', () => {
-            installButton.style.display = 'none';
-        });
-    </script>
 </body>
 </html>

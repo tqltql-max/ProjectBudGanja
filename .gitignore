@@ -1,0 +1,29 @@
+# Dependências
+node_modules/
+
+# Ambiente / segredos
+.env
+.env.*
+!.env.example
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs e temporários
+*.log
+npm-debug.log*
+.cache/
+
+# Uploads locais (produção usa Netlify Blobs)
+uploads/*
+!uploads/.gitkeep
+
+# Sessões locais de dev
+content/sessions.json

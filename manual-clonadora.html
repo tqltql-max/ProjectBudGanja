@@ -20,7 +20,7 @@
     <div id="site-header"></div>
 
     <main id="main-content" class="relatorio-container">
-        <a href="bugigangas.html" class="voltar-link">&larr; Voltar para Bugigangas</a>
+        <a href="equipamentos.html" class="voltar-link">&larr; Voltar para Equipamentos</a>
 
         <h1>Manual: Clonadora de Baixo Custo</h1>
         <p class="meta-info">Autor: Inspetor BudGanja | Dificuldade: Fácil | Custo: Baixo</p>
@@ -44,7 +44,7 @@
 
         <h2>3. Montagem</h2>
         <h3>3.1. Preparação do Recipiente</h3>
-        <p>Lave thoroughly o recipiente plástico. Faça um orifício na lateral próxima à base para passagem do cabo da bomba. Certifique-se de vedar adequadamente para evitar vazamentos.</p>
+        <p>Lave bem o recipiente plástico. Faça um orifício na lateral próxima à base para passagem do cabo da bomba. Certifique-se de vedar adequadamente para evitar vazamentos.</p>
 
         <h3>3.2. Instalação da Bomba</h3>
         <p>Posicione a bomba no fundo do recipiente. Conecte o tubo de PVC ao bico neblinizador. Fixe o neblinizador no centro do recipiente, apontando para cima.</p>
@@ -84,53 +84,10 @@
         <h2>7. Solução de Problemas</h2>
         <p><strong>Estacas murchando:</strong> Verifique umidade e temperatura. Ajuste ciclos de nebulização.</p>
         <p><strong>Sem desenvolvimento de raízes após 10 dias:</strong> Verifique saúde das estacas originais e qualidade da água.</p>
-        <p><strong>Bolor na espuma:</strong> Reduza umidade, melhore ventilação, troque espafa se necessário.</p>
+        <p><strong>Bolor na espuma:</strong> Reduza umidade, melhore ventilação, troque espuma se necessário.</p>
     </main>
 
     <div id="site-footer"></div>
     <script src="js/layout.js"></script>
-    <script>
-        // Register Service Worker
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(registration => {
-                        console.log('Service Worker registrado com sucesso:', registration);
-                    })
-                    .catch(error => {
-                        console.log('Falha ao registrar Service Worker:', error);
-                    });
-            });
-        }
-
-        // PWA Install Prompt
-        let deferredPrompt;
-        const installButton = document.createElement('button');
-        installButton.textContent = '📲 Instalar App';
-        installButton.className = 'install-prompt';
-        installButton.style.display = 'none';
-        document.body.appendChild(installButton);
-
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            installButton.style.display = 'block';
-        });
-
-        installButton.addEventListener('click', async () => {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                const { outcome } = await deferredPrompt.userChoice;
-                if (outcome === 'accepted') {
-                    installButton.style.display = 'none';
-                }
-                deferredPrompt = null;
-            }
-        });
-
-        window.addEventListener('appinstalled', () => {
-            installButton.style.display = 'none';
-        });
-    </script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+{
+  "siteName": "Inspetor BudGanja",
+  "footerText": "© 2026 Inspetor BudGanja. Conteúdo educacional.",
+  "youtubeChannelUrl": "https://www.youtube.com/@InspetorBudGanja",
+  "youtubeChannelLabel": "Canal @InspetorBudGanja",
+  "nav": [
+    {
+      "label": "Inspeções",
+      "href": "inspecoes.html"
+    },
+    {
+      "label": "Pesquisas",
+      "href": "pesquisas.html"
+    },
+    {
+      "label": "Equipamentos",
+      "href": "equipamentos.html"
+    },
+    {
+      "label": "Calculadoras",
+      "href": "calculadoras.html"
+    },
+    {
+      "label": "Sobre",
+      "href": "sobre.html"
+    },
+    {
+      "label": "Contato",
+      "href": "contato.html"
+    }
+  ]
+}

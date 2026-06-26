@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Teste Equipamento",
+    "excerpt": "Pub equip",
+    "slug": "teste-equipamento",
+    "filename": "post-teste-equipamento.html",
+    "url": "post-teste-equipamento.html",
+    "date": "2026-06-26T21:12:23.213Z",
+    "content_raw": "## Manual teste\\n\\nConteudo equipamento.",
+    "format": "markdown",
+    "published": true,
+    "coverImage": "",
+    "category": "equipamento"
+  },
+  {
+    "title": "Budganta teste 1",
+    "excerpt": "teste de resumo",
+    "slug": "budganta-teste-1",
+    "filename": "post-budganta-teste-1.html",
+    "url": "post-budganta-teste-1.html",
+    "date": "2026-06-26T20:45:36.679Z",
+    "content_raw": "teste de conteudo",
+    "format": "markdown",
+    "category": "pesquisa",
+    "published": true
+  }
+]

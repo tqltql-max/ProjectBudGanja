@@ -1,0 +1,19 @@
+{
+  "name": "inspetor-budganja",
+  "version": "1.0.0",
+  "description": "Site estático do Inspetor BudGanja — servidor estático local com headers de segurança e cache.",
+  "main": "_server.js",
+  "scripts": {
+    "start": "node _server.js",
+    "start:dev": "node _server.js",
+    "build": "node _build.js"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  }
+}

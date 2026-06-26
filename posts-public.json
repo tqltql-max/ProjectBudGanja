@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Teste Equipamento",
+    "excerpt": "Pub equip",
+    "slug": "teste-equipamento",
+    "url": "post-teste-equipamento.html",
+    "date": "2026-06-26T21:12:23.213Z",
+    "filename": "post-teste-equipamento.html",
+    "coverImage": "",
+    "category": "equipamento"
+  },
+  {
+    "title": "Budganta teste 1",
+    "excerpt": "teste de resumo",
+    "slug": "budganta-teste-1",
+    "url": "post-budganta-teste-1.html",
+    "date": "2026-06-26T20:45:36.679Z",
+    "filename": "post-budganta-teste-1.html",
+    "coverImage": "",
+    "category": "pesquisa"
+  }
+]
