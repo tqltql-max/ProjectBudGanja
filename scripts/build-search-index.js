@@ -15,7 +15,7 @@ const STATIC_PAGES = [
   { url: '/biblioteca/inspecoes/', title: 'Inspeções', desc: 'Verificações de campo e inspeções técnicas', keywords: 'inspeção campo' },
   { url: '/equipamentos/', title: 'Equipamentos', desc: 'Manuais caseiros e equipamentos documentados', keywords: 'equipamento caseiro manual clonadora' },
   { url: '/loja/', title: 'Loja parceira', desc: 'Materiais das clonadoras na vitrine Magazine Inspetor BudGanja (Magalu)', keywords: 'loja clonadora bombinha bucha balde bomba aspersor feltro magazine luiza magalu influenciador' },
-  { url: '/calculadoras/', title: 'Calculadoras', desc: 'VPD, DLI, EC e utilitários', keywords: 'calculadora vpd dli' },
+  { url: '/calculadoras/', title: 'Calculadoras', desc: 'Super Calculadora, luxímetro e Super Solo', keywords: 'calculadora cultivo vpd dli' },
   ...CALCULADORAS.map((c) => ({
     url: getCalculadoraUrl(c),
     title: c.shortTitle || c.title,

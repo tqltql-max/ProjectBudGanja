@@ -24,6 +24,14 @@
 
   var MIN_USER_AGE = 18;
   var CULTIVO_ONBOARDING_KEY = 'budganja_cultivo_onboarding_v1';
+  var SUBMISSION_NOTIFY_KEY = 'budganja_submission_notify_v1';
+  var PHASE_INSPECTION_LINKS = {
+    planejamento: { label: 'Inspeção: início do cultivo', href: '/posts/post-inspecao-cultivo-inicio.html' },
+    germinacao: { label: 'Inspeção: propagação e clonagem', href: '/posts/post-inspecao-propagacao-clonagem.html' },
+    vegetativo: { label: 'Inspeção: nutrição', href: '/posts/post-inspecao-nutricao-cannabis.html' },
+    floracao: { label: 'Inspeção: ciência da floração', href: '/posts/post-inspecao-ciencia-floracao.html' },
+    colheita: { label: 'Inspeção: solo vivo orgânico', href: '/posts/post-inspecao-solo-vivo-organico.html' }
+  };
   var DEFAULT_AVATAR = '/imagens/avatars/leaf.svg';
   var PRESET_AVATARS = [
     { id: 'leaf', label: 'Folha', src: '/imagens/avatars/leaf.svg' },
@@ -66,7 +74,15 @@
         plantedAt: log.plantedAt,
         phase: log.phase,
         plantCount: log.plantCount != null ? log.plantCount : 1,
+        species: log.species || '',
+        environment: log.environment || '',
+        substrate: log.substrate || '',
+        customGuide: log.customGuide || '',
+        guideWeekNotes: log.guideWeekNotes && typeof log.guideWeekNotes === 'object'
+          ? Object.assign({}, log.guideWeekNotes)
+          : {},
         createdAt: log.createdAt,
+        updatedAt: log.updatedAt,
         entries: Array.isArray(log.entries)
           ? log.entries.map(function (entry) {
             return {
@@ -85,7 +101,7 @@
     });
   }
 
-  function createGrowLogObject(name, plantedAt, phase, plantCount, species) {
+  function createGrowLogObject(name, plantedAt, phase, plantCount, species, environment, substrate) {
     var now = new Date().toISOString();
     var planted = plantedAt || now;
     var plantedDate = new Date(planted);
@@ -96,9 +112,13 @@
       id: 'g' + Date.now(),
       name: String(name || '').trim().slice(0, 80) || 'Minha pesquisa',
       species: String(species || '').trim().slice(0, 120),
+      environment: String(environment || '').trim().slice(0, 40),
+      substrate: String(substrate || '').trim().slice(0, 80),
       plantedAt: isNaN(plantedDate.getTime()) ? now : plantedDate.toISOString(),
       phase: phase || 'germinacao',
       plantCount: count,
+      customGuide: '',
+      guideWeekNotes: {},
       entries: [],
       createdAt: now
     };
@@ -156,6 +176,9 @@
     ENTRY_ACTIONS: ENTRY_ACTIONS,
     MIN_USER_AGE: MIN_USER_AGE,
     CULTIVO_ONBOARDING_KEY: CULTIVO_ONBOARDING_KEY,
+    SELECTED_GROW_KEY: SELECTED_GROW_KEY,
+    SUBMISSION_NOTIFY_KEY: SUBMISSION_NOTIFY_KEY,
+    PHASE_INSPECTION_LINKS: PHASE_INSPECTION_LINKS,
     DEFAULT_AVATAR: DEFAULT_AVATAR,
     PRESET_AVATARS: PRESET_AVATARS,
     escapeHtml: escapeHtml,

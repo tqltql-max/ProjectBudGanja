@@ -28,8 +28,8 @@ Dados do módulo `/cultivo/` — API `GET/PUT /api/cultivo`, fotos `POST /api/cu
 
 | Tabela | Conteúdo |
 |--------|----------|
-| `cultivo_settings` | Fase activa, grow activo, roteiro geral, notas por semana |
-| `cultivo_grows` | Cada pesquisa: nome, espécie, fase, nº plantas, data plantio |
+| `cultivo_settings` | Fase activa, grow activo (roteiro global legado — migrado para `cultivo_grows`) |
+| `cultivo_grows` | Cada pesquisa: nome, espécie, fase, nº plantas, ambiente, substrato, data plantio, `custom_guide`, `guide_week_notes` |
 | `cultivo_entries` | Registos do diário (texto, métricas JSON, fotos, tipo) |
 | `cultivo_plan_tasks` | Lembretes e tarefas do plano |
 | `cultivo_submissions` | Fila de submissão ao laboratório (`pending` → `approved` / `rejected`) |
@@ -54,7 +54,7 @@ Migração legada: dados antigos em `users.profile_json` (campo `growLogs`) são
 
 | Coluna | Descrição |
 |--------|-----------|
-| `id` | ex.: `calculadoras/vpd.html`, `biblioteca/pesquisas/substratos.html` |
+| `id` | ex.: `calculadoras/cultivo-lab.html`, `biblioteca/pesquisas/substratos.html` |
 | `section` | `biblioteca`, `calculadoras`, `guia`, `equipamentos`, `info`, `site`… |
 
 ### `users.profile_json` (apenas perfil de conta)

@@ -322,6 +322,10 @@ CREATE TABLE IF NOT EXISTS cultivo_grows (
   phase TEXT NOT NULL DEFAULT 'germinacao',
   plant_count INTEGER NOT NULL DEFAULT 1,
   species TEXT NOT NULL DEFAULT '',
+  environment TEXT NOT NULL DEFAULT '',
+  substrate TEXT NOT NULL DEFAULT '',
+  custom_guide TEXT NOT NULL DEFAULT '',
+  guide_week_notes TEXT NOT NULL DEFAULT '{}',
   created_at TEXT NOT NULL,
   updated_at TEXT NOT NULL,
   FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE

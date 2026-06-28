@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   const growEntryTypes = document.getElementById('perfil-grow-entry-types');
   const growEntryPhotos = document.getElementById('perfil-grow-entry-photos');
   const growEntryPhotosPreview = document.getElementById('perfil-grow-entry-photos-preview');
+  const growEntryMetricsHint = document.getElementById('perfil-grow-entry-metrics-hint');
+  const growEntrySubmitBtn = document.getElementById('perfil-grow-entry-submit');
   const growSubmitLabBtn = document.getElementById('perfil-grow-submit-lab');
   const growSubmissionStatus = document.getElementById('perfil-grow-submission-status');
   const growExportMdBtn = document.getElementById('perfil-grow-export-md');
@@ -72,11 +74,29 @@ document.addEventListener('DOMContentLoaded', async () => {
   const liveStatusEl = document.getElementById('perfil-live-status');
   const accountEl = document.getElementById('perfil-account');
   const accountEditBtn = document.getElementById('perfil-account-edit-btn');
+  const cultivoSectionNav = document.getElementById('cultivo-section-nav');
+  const cultivoOnboardingRoot = document.getElementById('cultivo-onboarding-root');
+  const weekInspectionLink = document.getElementById('perfil-week-inspection-link');
+  const cultivoSubmissionNotify = document.getElementById('cultivo-submission-notify');
+  const cultivoAutosaveStatus = document.getElementById('cultivo-autosave-status');
+  const growMetricsCharts = document.getElementById('perfil-grow-metrics-charts');
+  const growEnvironmentEl = document.getElementById('perfil-grow-environment');
+  const growSubstrateEl = document.getElementById('perfil-grow-substrate');
+  const growDuplicateBtn = document.getElementById('perfil-grow-duplicate');
+  const growCompareBtn = document.getElementById('perfil-grow-compare');
+  const cultivoWizardEnvironment = document.getElementById('cultivo-wizard-environment');
+  const cultivoWizardSubstrate = document.getElementById('cultivo-wizard-substrate');
 
   const IS_CULTIVO_PAGE = true;
   const PAGE_SELF = '/cultivo/';
   const CShared = window.BudGanjaCultivoShared || {};
   const COnboard = window.BudGanjaCultivoOnboarding || {};
+  const CMarkdown = window.BudGanjaCultivoMarkdown || {};
+  const CCharts = window.BudGanjaCultivoCharts || {};
+  const CAutosave = window.BudGanjaCultivoAutosave || {};
+  const SELECTED_GROW_KEY = CShared.SELECTED_GROW_KEY || 'budganja_selected_grow_id';
+  const SUBMISSION_NOTIFY_KEY = CShared.SUBMISSION_NOTIFY_KEY || 'budganja_submission_notify_v1';
+  const PHASE_INSPECTION_LINKS = CShared.PHASE_INSPECTION_LINKS || {};
   const CALCULATOR_LABELS = CShared.CALCULATOR_LABELS || {};
   const ENTRY_ACTIONS = CShared.ENTRY_ACTIONS || [];
   const MIN_USER_AGE = CShared.MIN_USER_AGE || 18;
@@ -101,10 +121,169 @@ document.addEventListener('DOMContentLoaded', async () => {
   let planSaving = false;
   let selectedWeek = null;
   let selectedGrowLogId = null;
+  let editingEntryId = null;
   let cultivoView = 'hub';
   let cultivoWizardPhase = 'germinacao';
   let selectedEntryAction = 'rega';
   let pendingEntryPhotoFiles = [];
+  let submissionStatusByGrow = null;
+  let sectionNavBound = false;
+  let activeSectionTab = 'diario';
+  let cultivoAutosave = null;
+
+  function persistSelectedGrowId(growId) {
+    try {
+      if (growId) sessionStorage.setItem(SELECTED_GROW_KEY, growId);
+      else sessionStorage.removeItem(SELECTED_GROW_KEY);
+    } catch (e) { /* ignore */ }
+  }
+
+  function setSectionNavVisible(visible) {
+    if (!cultivoSectionNav) return;
+    cultivoSectionNav.hidden = !visible;
+  }
+
+  function setActiveSectionTab(tabId) {
+    activeSectionTab = tabId || 'diario';
+    if (!cultivoSectionNav) return;
+    cultivoSectionNav.querySelectorAll('.cultivo-section-nav-btn').forEach((btn) => {
+      btn.classList.toggle('is-active', btn.getAttribute('data-tab') === activeSectionTab);
+    });
+  }
+
+  function initSectionNav() {
+    if (!cultivoSectionNav || sectionNavBound) return;
+    sectionNavBound = true;
+    cultivoSectionNav.querySelectorAll('.cultivo-section-nav-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const tab = btn.getAttribute('data-tab');
+        if (tab) {
+          setActiveSectionTab(tab);
+          switchTab(tab);
+        }
+      });
+    });
+    if ('IntersectionObserver' in window) {
+      const sections = ['diario', 'semana', 'plano', 'ferramentas']
+        .map((tab) => ({ tab, el: document.getElementById(
+          tab === 'diario' ? 'cultivo-section-diario'
+            : tab === 'semana' ? 'cultivo-section-roteiro'
+              : tab === 'plano' ? 'cultivo-section-plano'
+                : 'cultivo-section-ferramentas'
+        ) }))
+        .filter((item) => item.el);
+      const observer = new IntersectionObserver((entries) => {
+        if (cultivoView !== 'grow') return;
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        if (visible.length) {
+          const match = sections.find((item) => item.el === visible[0].target);
+          if (match) setActiveSectionTab(match.tab);
+        }
+      }, { root: null, rootMargin: '-40% 0px -45% 0px', threshold: [0, 0.2, 0.5] });
+      sections.forEach((item) => observer.observe(item.el));
+    }
+  }
+
+  async function loadSubmissionStatusMap(force) {
+    if (submissionStatusByGrow && !force) return submissionStatusByGrow;
+    const map = {};
+    try {
+      const res = await fetch('/api/cultivo/submissions', { credentials: 'include' });
+      if (res.ok) {
+        const data = await res.json().catch(() => ({}));
+        (data.submissions || []).forEach((sub) => {
+          if (!sub.growId) return;
+          const prev = map[sub.growId];
+          if (!prev || String(sub.submittedAt || '') > String(prev.submittedAt || '')) {
+            map[sub.growId] = sub;
+          }
+        });
+      }
+    } catch (e) { /* ignore */ }
+    submissionStatusByGrow = map;
+    return map;
+  }
+
+  function submissionBadgeHtml(sub) {
+    if (!sub) return '';
+    if (sub.status === 'pending') {
+      return '<span class="cultivo-hub-card-badge is-pending">Em revisão</span>';
+    }
+    if (sub.status === 'approved') {
+      return '<span class="cultivo-hub-card-badge is-approved">Publicada</span>';
+    }
+    if (sub.status === 'rejected') {
+      return '<span class="cultivo-hub-card-badge is-rejected">Rejeitada</span>';
+    }
+    return '';
+  }
+
+  function growHasPublishableContent(log, profile) {
+    if (CMarkdown.growHasPublishableContent) {
+      return CMarkdown.growHasPublishableContent(log, profile);
+    }
+    const entries = log && Array.isArray(log.entries) ? log.entries : [];
+    if (entries.length > 0) return true;
+    const guide = log && log.customGuide ? String(log.customGuide).trim() : '';
+    return guide.length >= 20;
+  }
+
+  function renderSubmitChecklist(log, profile) {
+    const listEl = document.getElementById('cultivo-submit-checklist');
+    const previewEl = document.getElementById('cultivo-submit-preview');
+    const confirmBtn = document.getElementById('cultivo-submit-confirm');
+    if (!log) return;
+    const publishable = growHasPublishableContent(log, profile);
+    const hasSpecies = !!(log.species && String(log.species).trim());
+    const hasPhotos = (log.entries || []).some((entry) => Array.isArray(entry.photos) && entry.photos.length);
+    const items = [
+      { ok: !!(log.name && String(log.name).trim()), label: 'Nome da pesquisa definido', required: true },
+      { ok: publishable, label: 'Pelo menos 1 registo no diário ou roteiro com 20+ caracteres', required: true },
+      { ok: hasSpecies, label: 'Espécie ou linha indicada (recomendado)', required: false },
+      { ok: hasPhotos, label: 'Fotos no diário (opcional, melhora a publicação)', required: false }
+    ];
+    if (listEl) {
+      listEl.innerHTML = items.map((item) => {
+        const cls = item.ok ? 'is-ok' : (item.required ? 'is-error' : 'is-warn');
+        const icon = item.ok ? '✓' : (item.required ? '✕' : '!');
+        return '<li class="' + cls + '"><span aria-hidden="true">' + icon + '</span><span>' + escapeHtml(item.label) + '</span></li>';
+      }).join('');
+    }
+    if (previewEl && CMarkdown.buildGrowMarkdown) {
+      const titleEl = document.getElementById('cultivo-submit-title');
+      const title = titleEl ? String(titleEl.value).trim() : (log.name || 'Pesquisa');
+      previewEl.textContent = CMarkdown.buildGrowMarkdown(log, profile, { title: title });
+    }
+    if (confirmBtn) confirmBtn.disabled = !publishable || !(log.name && String(log.name).trim());
+  }
+
+  function updateWeekInspectionLink(profile) {
+    if (!weekInspectionLink || !profile) return;
+    const phase = getEffectivePhase(profile);
+    const inspection = PHASE_INSPECTION_LINKS[phase];
+    const guide = getWeekGuideData(profile, getActiveWeek(profile));
+    let href = inspection ? inspection.href : '/biblioteca/inspecoes/';
+    let label = inspection ? inspection.label : 'Guia em vídeo';
+    if (guide && Array.isArray(guide.tools)) {
+      const libraryTool = guide.tools.find((tool) => tool.href && tool.href.indexOf('/biblioteca/') === 0);
+      if (libraryTool) {
+        href = libraryTool.href;
+        label = libraryTool.label;
+      }
+    }
+    weekInspectionLink.href = href;
+    weekInspectionLink.textContent = label;
+  }
+
+  function maybeShowOnboarding(profile) {
+    if (!cultivoOnboardingRoot || !COnboard.maybeStartTour) return;
+    if (cultivoView !== 'hub') return;
+    COnboard.maybeStartTour(cultivoOnboardingRoot, {
+      growCount: profile && profile.growLogs ? profile.growLogs.length : 0
+    });
+  }
 
   function setWizardStatus(message, isError) {
     if (!cultivoWizardStatus) return;
@@ -181,10 +360,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (cultivoHubView) cultivoHubView.hidden = cultivoView !== 'hub';
     if (cultivoWizardView) cultivoWizardView.hidden = cultivoView !== 'wizard';
     if (cultivoGrowView) cultivoGrowView.hidden = cultivoView !== 'grow';
+    setSectionNavVisible(cultivoView === 'grow');
 
     if (cultivoView === 'hub') {
       selectedGrowLogId = null;
-      if (user && user.profile) renderCultivoHub(user.profile);
+      persistSelectedGrowId(null);
+      if (user && user.profile) {
+        renderCultivoHub(user.profile);
+        maybeShowOnboarding(user.profile);
+      }
       return;
     }
 
@@ -194,6 +378,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (cultivoWizardName) cultivoWizardName.value = '';
         if (cultivoWizardSpecies) cultivoWizardSpecies.value = '';
         if (cultivoWizardPlants) cultivoWizardPlants.value = '1';
+        if (cultivoWizardEnvironment) cultivoWizardEnvironment.value = '';
+        if (cultivoWizardSubstrate) cultivoWizardSubstrate.value = '';
+        setWizardDefaultsFromProfile(user && user.profile);
         setWizardStatus('');
         requestAnimationFrame(() => { if (cultivoWizardName) cultivoWizardName.focus(); });
       }
@@ -211,9 +398,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
       }
       selectedGrowLogId = growId;
+      persistSelectedGrowId(growId);
       user.profile.activeGrowLogId = growId;
       syncPhaseFromActiveLog(user.profile);
       selectedWeek = getCurrentWeekNumber(user.profile.phaseStartedAt);
+      setActiveSectionTab('diario');
       renderGrowPage(user.profile);
       if (opts.scroll !== false && cultivoGrowView) {
         cultivoGrowView.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -266,27 +455,32 @@ document.addEventListener('DOMContentLoaded', async () => {
       ' · ' + entryCount + ' registo' + (entryCount === 1 ? '' : 's');
   }
 
-  function renderCultivoHub(profile) {
+  async function renderCultivoHub(profile) {
     ensureGrowLogs(profile);
     const logs = profile.growLogs || [];
     if (cultivoHubEmpty) cultivoHubEmpty.hidden = logs.length > 0;
     if (!cultivoHubList) return;
     if (!logs.length) {
       cultivoHubList.innerHTML = '';
+      maybeShowOnboarding(profile);
       return;
     }
+    const statusMap = await loadSubmissionStatusMap();
     cultivoHubList.innerHTML = logs.map((log) => {
+      const badge = submissionBadgeHtml(statusMap[log.id]);
       return (
         '<li class="cultivo-hub-card">' +
         '<button type="button" class="cultivo-hub-card-btn" data-grow-id="' + escapeHtml(log.id) + '">' +
         '<span class="cultivo-hub-card-name">' + escapeHtml(log.name) + '</span>' +
         '<span class="cultivo-hub-card-meta">' + escapeHtml(renderGrowCardMeta(log)) + '</span>' +
+        (badge ? badge : '') +
         '</button></li>'
       );
     }).join('');
     cultivoHubList.querySelectorAll('[data-grow-id]').forEach((btn) => {
       btn.addEventListener('click', () => openGrowPage(btn.getAttribute('data-grow-id')));
     });
+    renderSubmissionNotifications(profile);
   }
 
   function renderGrowHeader(log, profile) {
@@ -295,11 +489,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     const plants = log.plantCount != null ? log.plantCount : 1;
     const weeks = getPhaseWeeks(log.phase);
     const current = getCurrentWeekNumber(log.plantedAt || profile.phaseStartedAt);
+    const ctx = getGrowContext(log, profile);
+    const envLabel = ctx.environment ? formatProfileValue('environment', ctx.environment) : '';
+    const subLabel = ctx.substrate ? formatProfileValue('substrate', ctx.substrate) : '';
     cultivoGrowHeader.innerHTML =
       '<h2 class="cultivo-grow-title">' + escapeHtml(log.name) + '</h2>' +
       (log.species ? '<p class="cultivo-grow-species">' + escapeHtml(log.species) + '</p>' : '') +
       '<p class="cultivo-grow-meta">' + escapeHtml(phaseLabel) +
       ' · ' + plants + ' planta' + (plants === 1 ? '' : 's') +
+      (envLabel ? ' · ' + escapeHtml(envLabel) : '') +
+      (subLabel ? ' · ' + escapeHtml(subLabel) : '') +
       ' · plantio ' + escapeHtml(formatDate(log.plantedAt)) +
       ' · dia ' + daysSincePlanted(log.plantedAt) + '</p>' +
       (weeks.length
@@ -329,12 +528,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderToolsGrid();
     renderSiteLinks();
     renderPlanTasks(profile);
-    if (customGuideEl) customGuideEl.value = profile.customGuide || '';
+    if (customGuideEl) customGuideEl.value = log.customGuide || '';
+    fillGrowSetupFields(log);
+    if (CCharts.renderMetricsCharts && growMetricsCharts) {
+      CCharts.renderMetricsCharts(growMetricsCharts, log);
+    }
   }
 
-  async function createGrowFromWizard(name, phase, plantCount, species) {
+  async function createGrowFromWizard(name, phase, plantCount, species, environment, substrate) {
     if (!user || !user.profile) return null;
-    const log = createGrowLogObject(name, todayDateInputValue() + 'T12:00:00', phase, plantCount, species);
+    const env = environment || (user.profile.environment || '');
+    const sub = substrate || (user.profile.substrate || '');
+    const log = createGrowLogObject(name, todayDateInputValue() + 'T12:00:00', phase, plantCount, species, env, sub);
     ensureGrowLogs(user.profile);
     user.profile.growLogs.unshift(log);
     user.profile.activeGrowLogId = log.id;
@@ -599,7 +804,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const QUICK_LINKS = [
     { label: 'Sorteios', href: '/sorteios/', icon: '🎁', desc: 'Inscrição e prémios' },
-    { label: 'Calculadoras', href: '/calculadoras/', icon: '🧮', desc: 'Todas as ferramentas' },
+    { label: 'Super Calculadora', href: '/calculadoras/cultivo-lab.html', icon: '🧪', desc: 'VPD, DLI, pH, EC e mais' },
     { label: 'Inspeções', href: '/biblioteca/inspecoes/', icon: '🔍', desc: 'Guia em relatórios técnicos' },
     { label: 'Luxímetro', href: '/calculadoras/luximetro.html', icon: '💡', desc: 'Medir luz' }
   ];
@@ -627,22 +832,22 @@ document.addEventListener('DOMContentLoaded', async () => {
   const TOOL_SUGGESTIONS = {
     'solo-organico': [
       { label: 'Calculadora de Super Solo', href: '/calculadoras/super-solo.html' },
-      { label: 'Volume do vaso', href: '/calculadoras/volume-vaso.html' },
-      { label: 'Faixa ideal de pH', href: '/calculadoras/ph.html' }
+      { label: 'Volume do vaso', href: '/calculadoras/cultivo-lab.html?mode=volume' },
+      { label: 'Faixa ideal de pH', href: '/calculadoras/cultivo-lab.html?mode=ph' }
     ],
     'super-solo': [
       { label: 'Calculadora de Super Solo', href: '/calculadoras/super-solo.html' },
-      { label: 'Volume do vaso', href: '/calculadoras/volume-vaso.html' }
+      { label: 'Volume do vaso', href: '/calculadoras/cultivo-lab.html?mode=volume' }
     ],
     coco: [
-      { label: 'Calculadora de EC', href: '/calculadoras/ec.html' },
-      { label: 'Faixa ideal de pH', href: '/calculadoras/ph.html' },
-      { label: 'Calculadora de VPD', href: '/calculadoras/vpd.html' }
+      { label: 'Calculadora de EC', href: '/calculadoras/cultivo-lab.html?mode=ec' },
+      { label: 'Faixa ideal de pH', href: '/calculadoras/cultivo-lab.html?mode=ph' },
+      { label: 'Calculadora de VPD', href: '/calculadoras/cultivo-lab.html?mode=vpd' }
     ],
     hidroponia: [
-      { label: 'Calculadora de EC', href: '/calculadoras/ec.html' },
-      { label: 'Calculadora de Diluição', href: '/calculadoras/diluicao.html' },
-      { label: 'Faixa ideal de pH', href: '/calculadoras/ph.html' }
+      { label: 'Calculadora de EC', href: '/calculadoras/cultivo-lab.html?mode=ec' },
+      { label: 'Calculadora de Diluição', href: '/calculadoras/cultivo-lab.html?mode=diluicao' },
+      { label: 'Faixa ideal de pH', href: '/calculadoras/cultivo-lab.html?mode=ph' }
     ],
     default: [
       { label: 'Hub de calculadoras', href: '/calculadoras/' },
@@ -653,36 +858,36 @@ document.addEventListener('DOMContentLoaded', async () => {
   const PHASE_TOOLS = {
     germinacao: [{ label: 'Guia — germinação', href: '/biblioteca/inspecoes/' }],
     vegetativo: [
-      { label: 'Calculadora de VPD', href: '/calculadoras/vpd.html' },
+      { label: 'Super Calculadora (VPD)', href: '/calculadoras/cultivo-lab.html?mode=vpd' },
       { label: 'Luxímetro (câmera)', href: '/calculadoras/luximetro.html' },
-      { label: 'Calculadora de DLI', href: '/calculadoras/dli.html' }
+      { label: 'Super Calculadora (DLI)', href: '/calculadoras/cultivo-lab.html?mode=dli' }
     ],
     floracao: [
-      { label: 'Calculadora de VPD', href: '/calculadoras/vpd.html' },
-      { label: 'Faixa ideal de pH', href: '/calculadoras/ph.html' }
+      { label: 'Super Calculadora (VPD)', href: '/calculadoras/cultivo-lab.html?mode=vpd' },
+      { label: 'Faixa ideal de pH', href: '/calculadoras/cultivo-lab.html?mode=ph' }
     ],
     default: []
   };
 
   const PHASE_PLAN_DEFAULTS = {
     planejamento: [
-      { label: 'Definir espaço e iluminação (W/m²)', href: '/calculadoras/watts-m2.html' },
+      { label: 'Definir espaço e iluminação (W/m²)', href: '/calculadoras/cultivo-lab.html?mode=watts-m2' },
       { label: 'Planear substrato ou super solo', href: '/calculadoras/super-solo.html' },
       { label: 'Ver guia de cultivo em vídeo', href: '/biblioteca/inspecoes/' }
     ],
     germinacao: [
-      { label: 'Controlar humidade e temperatura (VPD)', href: '/calculadoras/vpd.html' },
+      { label: 'Controlar humidade e temperatura (VPD)', href: '/calculadoras/cultivo-lab.html?mode=vpd' },
       { label: 'Anotar data de germinação no diário', href: '' },
       { label: 'Consultar guia — germinação', href: '/biblioteca/inspecoes/' }
     ],
     vegetativo: [
       { label: 'Medir luz (luxímetro ou DLI)', href: '/calculadoras/luximetro.html' },
-      { label: 'Ajustar VPD no ambiente', href: '/calculadoras/vpd.html' },
-      { label: 'Registar EC/pH se usar coco ou hidro', href: '/calculadoras/ec.html' }
+      { label: 'Ajustar VPD no ambiente', href: '/calculadoras/cultivo-lab.html?mode=vpd' },
+      { label: 'Registar EC/pH se usar coco ou hidro', href: '/calculadoras/cultivo-lab.html?mode=ec' }
     ],
     floracao: [
-      { label: 'Monitorizar VPD na floração', href: '/calculadoras/vpd.html' },
-      { label: 'Verificar faixa de pH', href: '/calculadoras/ph.html' },
+      { label: 'Monitorizar VPD na floração', href: '/calculadoras/cultivo-lab.html?mode=vpd' },
+      { label: 'Verificar faixa de pH', href: '/calculadoras/cultivo-lab.html?mode=ph' },
       { label: 'Anotar semanas de flora no diário', href: '' }
     ],
     colheita: [
@@ -827,8 +1032,274 @@ document.addEventListener('DOMContentLoaded', async () => {
     return profile.growLogs[0] || null;
   }
 
+  function getSelectedGrowLog(profile) {
+    if (!profile || !Array.isArray(profile.growLogs) || !profile.growLogs.length) return null;
+    const id = selectedGrowLogId || profile.activeGrowLogId;
+    if (!id) return null;
+    return profile.growLogs.find((log) => log.id === id) || null;
+  }
+
+  function ensureGrowFields(log) {
+    if (!log) return;
+    if (log.customGuide == null) log.customGuide = '';
+    if (!log.guideWeekNotes || typeof log.guideWeekNotes !== 'object') log.guideWeekNotes = {};
+    if (log.environment == null) log.environment = '';
+    if (log.substrate == null) log.substrate = '';
+  }
+
+  function getGrowContext(log, profile) {
+    const p = profile || (user && user.profile) || {};
+    return {
+      environment: (log && log.environment) || p.environment || '',
+      substrate: (log && log.substrate) || p.substrate || ''
+    };
+  }
+
+  function loadSubmissionNotifyState() {
+    try {
+      return JSON.parse(localStorage.getItem(SUBMISSION_NOTIFY_KEY) || '{}');
+    } catch (e) {
+      return {};
+    }
+  }
+
+  function saveSubmissionNotifyState(state) {
+    try {
+      localStorage.setItem(SUBMISSION_NOTIFY_KEY, JSON.stringify(state || {}));
+    } catch (e) { /* ignore */ }
+  }
+
+  function markSubmissionNotificationSeen(growId, submission) {
+    if (!growId || !submission) return;
+    const state = loadSubmissionNotifyState();
+    state[growId] = {
+      id: submission.id || submission.submittedAt || '',
+      status: submission.status || '',
+      seenAt: new Date().toISOString()
+    };
+    saveSubmissionNotifyState(state);
+    renderSubmissionNotifications(user && user.profile);
+  }
+
+  function renderSubmissionNotifications(profile) {
+    if (!cultivoSubmissionNotify) return;
+    if (!profile || cultivoView !== 'hub') {
+      cultivoSubmissionNotify.hidden = true;
+      cultivoSubmissionNotify.innerHTML = '';
+      return;
+    }
+    const statusMap = submissionStatusByGrow || {};
+    const seen = loadSubmissionNotifyState();
+    const notices = (profile.growLogs || []).map((log) => {
+      const sub = statusMap[log.id];
+      if (!sub || sub.status === 'pending') return null;
+      const prev = seen[log.id];
+      if (prev && prev.id === (sub.id || sub.submittedAt) && prev.status === sub.status) return null;
+      return { log: log, sub: sub };
+    }).filter(Boolean);
+    if (!notices.length) {
+      cultivoSubmissionNotify.hidden = true;
+      cultivoSubmissionNotify.innerHTML = '';
+      return;
+    }
+    cultivoSubmissionNotify.hidden = false;
+    cultivoSubmissionNotify.className = 'cultivo-submission-notify' +
+      (notices.some((item) => item.sub.status === 'rejected') ? ' is-rejected' : '');
+    cultivoSubmissionNotify.innerHTML = notices.map((item) => {
+      const growName = escapeHtml(item.log.name || 'Pesquisa');
+      if (item.sub.status === 'approved') {
+        return '<p><strong>«' + growName + '»</strong> foi publicada no site.' +
+          (item.sub.postUrl ? ' <a href="' + escapeHtml(item.sub.postUrl) + '">Ver pesquisa</a>' : '') + '</p>';
+      }
+      return '<p><strong>«' + growName + '»</strong> — submissão rejeitada' +
+        (item.sub.reviewerNote ? ': ' + escapeHtml(item.sub.reviewerNote) : '') + '.</p>';
+    }).join('') +
+      '<div class="cultivo-submission-notify-actions">' +
+      notices.map((item) =>
+        '<button type="button" class="botao botao-outline botao-sm" data-notify-grow="' + escapeHtml(item.log.id) + '" data-notify-id="' + escapeHtml(item.sub.id || item.sub.submittedAt || '') + '">Marcar «' + escapeHtml(item.log.name) + '» como lida</button>'
+      ).join('') +
+      '</div>';
+    cultivoSubmissionNotify.querySelectorAll('[data-notify-grow]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const growId = btn.getAttribute('data-notify-grow');
+        const sub = statusMap[growId];
+        if (sub) markSubmissionNotificationSeen(growId, sub);
+      });
+    });
+  }
+
+  function duplicateGrowLog(sourceLog) {
+    if (!sourceLog || !user || !user.profile) return null;
+    const copy = createGrowLogObject(
+      (sourceLog.name || 'Pesquisa') + ' (cópia)',
+      sourceLog.plantedAt,
+      sourceLog.phase,
+      sourceLog.plantCount,
+      sourceLog.species,
+      sourceLog.environment,
+      sourceLog.substrate
+    );
+    ensureGrowFields(copy);
+    copy.customGuide = sourceLog.customGuide || '';
+    copy.guideWeekNotes = Object.assign({}, sourceLog.guideWeekNotes || {});
+    copy.entries = (sourceLog.entries || []).map((entry) => ({
+      id: 'e' + Date.now() + Math.random().toString(36).slice(2, 6),
+      date: entry.date,
+      text: entry.text,
+      source: entry.source,
+      actionType: entry.actionType || 'obs',
+      metrics: entry.metrics && typeof entry.metrics === 'object' ? Object.assign({}, entry.metrics) : {},
+      photos: Array.isArray(entry.photos) ? entry.photos.slice() : [],
+      createdAt: entry.createdAt || new Date().toISOString()
+    }));
+    const sourceTasks = planTasksForGrow(user.profile, sourceLog.id);
+    if (sourceTasks.length) {
+      const copiedTasks = sourceTasks.map((task) => Object.assign({}, task, {
+        id: 'u' + Date.now() + Math.random().toString(36).slice(2, 4),
+        done: false,
+        growId: copy.id
+      }));
+      setPlanTasksForGrow(user.profile, copy.id, copiedTasks);
+    }
+    return copy;
+  }
+
+  function openCompareModal() {
+    if (!user || !user.profile || !selectedGrowLogId) return;
+    const current = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
+    if (!current) return;
+    const select = document.getElementById('cultivo-compare-select');
+    const output = document.getElementById('cultivo-compare-output');
+    const others = (user.profile.growLogs || []).filter((item) => item.id !== current.id);
+    if (!select || !output) return;
+    if (!others.length) {
+      output.innerHTML = '<p class="perfil-plano-empty">Crie outra pesquisa para comparar métricas.</p>';
+      openCultivoModal('cultivo-compare-modal');
+      return;
+    }
+    select.innerHTML = others.map((log) =>
+      '<option value="' + escapeHtml(log.id) + '">' + escapeHtml(log.name) + '</option>'
+    ).join('');
+    const renderCompare = () => {
+      const other = user.profile.growLogs.find((item) => item.id === select.value);
+      output.innerHTML = CCharts.renderCompareHtml
+        ? CCharts.renderCompareHtml(current, other)
+        : '<p class="perfil-plano-empty">Comparação indisponível.</p>';
+    };
+    if (!select.dataset.bound) {
+      select.dataset.bound = '1';
+      select.addEventListener('change', renderCompare);
+    }
+    renderCompare();
+    openCultivoModal('cultivo-compare-modal');
+  }
+
+  function initCultivoAutosave() {
+    if (!CAutosave.create || cultivoAutosave) return;
+    cultivoAutosave = CAutosave.create({
+      statusEl: cultivoAutosaveStatus,
+      debounceMs: 3000,
+      isActive: () => cultivoView === 'grow' && !!selectedGrowLogId,
+      watchSelectors: [
+        '#perfil-week-notes',
+        '#profile-custom-guide',
+        '#perfil-grow-detail-phase',
+        '#perfil-grow-environment',
+        '#perfil-grow-substrate'
+      ],
+      save: async () => {
+        if (!user || !user.profile) return false;
+        const result = await saveCultivoPayload(readForm(), null, { silent: true });
+        return !!result;
+      }
+    });
+    cultivoAutosave.bind();
+  }
+
+  function initPhotoDropZone() {
+    const field = document.querySelector('.cultivo-entry-photos-field');
+    if (!field || field.dataset.dropBound === '1') return;
+    field.dataset.dropBound = '1';
+    ['dragenter', 'dragover'].forEach((type) => {
+      field.addEventListener(type, (e) => {
+        e.preventDefault();
+        field.classList.add('is-dragover');
+      });
+    });
+    ['dragleave', 'drop'].forEach((type) => {
+      field.addEventListener(type, (e) => {
+        e.preventDefault();
+        field.classList.remove('is-dragover');
+      });
+    });
+    field.addEventListener('drop', (e) => {
+      if (!growEntryPhotos || !e.dataTransfer || !e.dataTransfer.files) return;
+      const incoming = Array.from(e.dataTransfer.files).filter((file) => /^image\//i.test(file.type));
+      if (!incoming.length) return;
+      pendingEntryPhotoFiles = pendingEntryPhotoFiles.concat(incoming).slice(0, 4);
+      renderEntryPhotoPreview();
+    });
+  }
+
+  function fillGrowSetupFields(log) {
+    if (!log) return;
+    if (growEnvironmentEl) growEnvironmentEl.value = log.environment || '';
+    if (growSubstrateEl) growSubstrateEl.value = log.substrate || '';
+  }
+
+  function readGrowSetupFields(log) {
+    if (!log) return;
+    if (growEnvironmentEl) log.environment = growEnvironmentEl.value || '';
+    if (growSubstrateEl) log.substrate = growSubstrateEl.value || '';
+  }
+
+  function setWizardDefaultsFromProfile(profile) {
+    if (!profile) return;
+    if (cultivoWizardEnvironment && !cultivoWizardEnvironment.value && profile.environment) {
+      cultivoWizardEnvironment.value = profile.environment;
+    }
+    if (cultivoWizardSubstrate && !cultivoWizardSubstrate.value && profile.substrate) {
+      cultivoWizardSubstrate.value = profile.substrate;
+    }
+  }
+
+  function migrateGlobalGuideToGrows(profile) {
+    if (!profile || !Array.isArray(profile.growLogs) || !profile.growLogs.length) return;
+    const globalGuide = String(profile.customGuide || '').trim();
+    const globalNotes = profile.guideWeekNotes && typeof profile.guideWeekNotes === 'object'
+      ? profile.guideWeekNotes
+      : {};
+    const hasGlobal = globalGuide || Object.keys(globalNotes).length > 0;
+    if (!hasGlobal) return;
+    const target = getSelectedGrowLog(profile) || getActiveGrowLog(profile) || profile.growLogs[0];
+    if (!target) return;
+    ensureGrowFields(target);
+    if (!String(target.customGuide || '').trim() && globalGuide) target.customGuide = globalGuide;
+    if (!Object.keys(target.guideWeekNotes).length && Object.keys(globalNotes).length) {
+      target.guideWeekNotes = Object.assign({}, globalNotes);
+    }
+    profile.customGuide = '';
+    profile.guideWeekNotes = {};
+  }
+
+  function openCultivoModal(id) {
+    const el = document.getElementById(id);
+    if (el) el.hidden = false;
+  }
+
+  function closeCultivoModal(idOrKey) {
+    const map = {
+      submit: 'cultivo-submit-modal',
+      rename: 'cultivo-rename-modal',
+      compare: 'cultivo-compare-modal'
+    };
+    const id = map[idOrKey] || idOrKey;
+    const el = document.getElementById(id);
+    if (el) el.hidden = true;
+  }
+
   function syncPhaseFromActiveLog(profile) {
-    const log = getActiveGrowLog(profile);
+    const log = getSelectedGrowLog(profile) || getActiveGrowLog(profile);
     if (!log) return profile;
     profile.phase = log.phase || profile.phase || 'germinacao';
     if (log.plantedAt) profile.phaseStartedAt = log.plantedAt;
@@ -863,6 +1334,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       profile.activeGrowLogId = profile.growLogs[0].id;
     }
 
+    profile.growLogs.forEach((log) => ensureGrowFields(log));
+    migrateGlobalGuideToGrows(profile);
     syncPhaseFromActiveLog(profile);
     return profile;
   }
@@ -884,27 +1357,55 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
   }
 
-  function parseOptionalMetricInput(el, min, max) {
-    if (!el || el.value === '') return null;
-    const n = parseFloat(String(el.value).replace(',', '.'));
-    if (isNaN(n) || n < min || n > max) return null;
-    return n;
+  function parseOptionalMetricInput(el, min, max, label) {
+    if (!el || el.value === '') return { value: null };
+    const raw = String(el.value).replace(',', '.');
+    const n = parseFloat(raw);
+    if (isNaN(n) || n < min || n > max) {
+      return { value: null, error: label + ' deve estar entre ' + min + ' e ' + max + '.' };
+    }
+    return { value: n };
+  }
+
+  function validateEntryMetricsFromForm() {
+    const errors = [];
+    const ph = parseOptionalMetricInput(growEntryPh, 0, 14, 'pH');
+    const ec = parseOptionalMetricInput(growEntryEc, 0, 10, 'EC');
+    const temp = parseOptionalMetricInput(growEntryTemp, -10, 60, 'Temperatura');
+    const rh = parseOptionalMetricInput(growEntryRh, 0, 100, 'RH');
+    [ph, ec, temp, rh].forEach((item) => {
+      if (item.error) errors.push(item.error);
+    });
+    if (growEntryMetricsHint) {
+      if (errors.length) {
+        growEntryMetricsHint.hidden = false;
+        growEntryMetricsHint.classList.add('is-error');
+        growEntryMetricsHint.textContent = errors.join(' ');
+      } else {
+        growEntryMetricsHint.hidden = true;
+        growEntryMetricsHint.classList.remove('is-error');
+        growEntryMetricsHint.textContent = '';
+      }
+    }
+    return errors;
   }
 
   function readEntryMetricsFromForm() {
     const metrics = {};
-    const ph = parseOptionalMetricInput(growEntryPh, 0, 14);
-    const ec = parseOptionalMetricInput(growEntryEc, 0, 10);
-    const temp = parseOptionalMetricInput(growEntryTemp, -10, 60);
-    const rh = parseOptionalMetricInput(growEntryRh, 0, 100);
-    if (ph != null) metrics.ph = Math.round(ph * 10) / 10;
-    if (ec != null) metrics.ec = Math.round(ec * 10) / 10;
-    if (temp != null) metrics.temp = Math.round(temp);
-    if (rh != null) metrics.rh = Math.round(rh);
+    const ph = parseOptionalMetricInput(growEntryPh, 0, 14, 'pH');
+    const ec = parseOptionalMetricInput(growEntryEc, 0, 10, 'EC');
+    const temp = parseOptionalMetricInput(growEntryTemp, -10, 60, 'Temperatura');
+    const rh = parseOptionalMetricInput(growEntryRh, 0, 100, 'RH');
+    if (ph.value != null) metrics.ph = Math.round(ph.value * 10) / 10;
+    if (ec.value != null) metrics.ec = Math.round(ec.value * 10) / 10;
+    if (temp.value != null) metrics.temp = Math.round(temp.value);
+    if (rh.value != null) metrics.rh = Math.round(rh.value);
     return metrics;
   }
 
   function clearEntryForm() {
+    editingEntryId = null;
+    if (growEntrySubmitBtn) growEntrySubmitBtn.textContent = 'Guardar registo';
     if (growEntryText) growEntryText.value = '';
     if (growEntryPh) growEntryPh.value = '';
     if (growEntryEc) growEntryEc.value = '';
@@ -915,6 +1416,33 @@ document.addEventListener('DOMContentLoaded', async () => {
     pendingEntryPhotoFiles = [];
     renderEntryPhotoPreview();
     setSelectedEntryAction('rega');
+    if (growEntryMetricsHint) {
+      growEntryMetricsHint.hidden = true;
+      growEntryMetricsHint.textContent = '';
+    }
+  }
+
+  function fillEntryFormFromEntry(entry) {
+    if (!entry) return;
+    editingEntryId = entry.id;
+    if (growEntrySubmitBtn) growEntrySubmitBtn.textContent = 'Actualizar registo';
+    if (growEntryText) growEntryText.value = entry.text || '';
+    if (growEntryDate) growEntryDate.value = entry.date || todayDateInputValue();
+    if (growEntryPh) growEntryPh.value = entry.metrics && entry.metrics.ph != null ? entry.metrics.ph : '';
+    if (growEntryEc) growEntryEc.value = entry.metrics && entry.metrics.ec != null ? entry.metrics.ec : '';
+    if (growEntryTemp) growEntryTemp.value = entry.metrics && entry.metrics.temp != null ? entry.metrics.temp : '';
+    if (growEntryRh) growEntryRh.value = entry.metrics && entry.metrics.rh != null ? entry.metrics.rh : '';
+    setSelectedEntryAction(entry.actionType || 'obs');
+    pendingEntryPhotoFiles = [];
+    renderEntryPhotoPreview();
+    if (growEntryForm) growEntryForm.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function deleteGrowEntry(log, entryId) {
+    if (!log || !entryId || !Array.isArray(log.entries)) return false;
+    const before = log.entries.length;
+    log.entries = log.entries.filter((item) => item.id !== entryId);
+    return log.entries.length < before;
   }
 
   function renderEntryPhotoPreview() {
@@ -945,15 +1473,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     pendingEntryPhotoFiles = pendingEntryPhotoFiles.concat(incoming).slice(0, 4);
     growEntryPhotos.value = '';
     renderEntryPhotoPreview();
-  }
-
-  function readFileAsDataUrl(file) {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = reject;
-      reader.readAsDataURL(file);
-    });
   }
 
   async function uploadCultivoPhoto(file) {
@@ -1041,17 +1560,50 @@ document.addEventListener('DOMContentLoaded', async () => {
       : '';
     const photosHtml = renderEntryPhotosHtml(entry.photos);
     const cssClass = 'perfil-grow-entry perfil-grow-entry--' + escapeHtml(meta.id || entry.source || 'manual');
+    const calcBadge = entry.source === 'calculator'
+      ? '<span class="perfil-grow-entry-tag perfil-grow-entry-tag--calc">Calculadora</span>'
+      : '';
     return (
-      '<li class="' + cssClass + '">' +
+      '<li class="' + cssClass + '" data-entry-id="' + escapeHtml(entry.id) + '">' +
       '<div class="perfil-grow-entry-head">' +
       '<time datetime="' + escapeHtml(entry.date) + '">' + escapeHtml(formatDate(entry.date)) + '</time>' +
       '<span class="perfil-grow-entry-tag">' + escapeHtml(meta.icon + ' ' + meta.label) + '</span>' +
+      calcBadge +
       '</div>' +
       metricsHtml +
       (entry.text ? '<p class="perfil-grow-entry-text">' + escapeHtml(entry.text) + '</p>' : '') +
       photosHtml +
+      '<div class="perfil-grow-entry-actions">' +
+      '<button type="button" class="botao botao-outline botao-sm perfil-grow-entry-edit">Editar</button>' +
+      '<button type="button" class="botao botao-outline botao-sm perfil-grow-entry-delete">Apagar</button>' +
+      '</div>' +
       '</li>'
     );
+  }
+
+  function bindGrowEntryActions(log) {
+    if (!growEntriesEl || !log) return;
+    growEntriesEl.querySelectorAll('.perfil-grow-entry-edit').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const li = btn.closest('.perfil-grow-entry');
+        const entryId = li && li.getAttribute('data-entry-id');
+        const entry = (log.entries || []).find((item) => item.id === entryId);
+        if (entry) fillEntryFormFromEntry(entry);
+      });
+    });
+    growEntriesEl.querySelectorAll('.perfil-grow-entry-delete').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const li = btn.closest('.perfil-grow-entry');
+        const entryId = li && li.getAttribute('data-entry-id');
+        if (!entryId) return;
+        if (!window.confirm('Apagar este registo?')) return;
+        if (!deleteGrowEntry(log, entryId)) return;
+        if (editingEntryId === entryId) clearEntryForm();
+        flashLiveStatus('Registo apagado.');
+        if (user && user.profile) renderGrowPage(user.profile);
+        await persistGrowLogs(growDetailStatus);
+      });
+    });
   }
 
   function ensureActiveGrowLog(profile, defaultName) {
@@ -1071,7 +1623,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   function buildWeekNoteEntry(noteText, profile) {
     const weekNum = getActiveWeek(profile);
     const phaseLabel = formatProfileValue('phase', getEffectivePhase(profile));
-    const log = getActiveGrowLog(profile);
+    const log = getSelectedGrowLog(profile) || getActiveGrowLog(profile);
     const prefix = log && log.name ? log.name + ' · ' : '';
     const context = prefix + 'Semana ' + weekNum + (phaseLabel ? ' (' + phaseLabel + ')' : '');
     return createGrowEntry(context + ': ' + noteText.trim(), { source: 'week-note', actionType: 'roteiro' });
@@ -1126,6 +1678,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           '</ul></li>'
         ).join('');
       }
+      bindGrowEntryActions(log);
       const newest = growEntriesEl.querySelector('.perfil-grow-entry');
       if (newest) {
         newest.classList.add('is-new');
@@ -1176,7 +1729,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   function getEffectivePhase(profile) {
     if (!profile) return 'planejamento';
     if (Array.isArray(profile.growLogs) && profile.growLogs.length) {
-      const log = getActiveGrowLog(profile);
+      const log = getSelectedGrowLog(profile) || getActiveGrowLog(profile);
       if (log && log.phase && getPhaseWeeks(log.phase).length) return log.phase;
     }
     return getEffectivePhaseFromProfileOnly(profile);
@@ -1198,6 +1751,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
     const targetId = sectionMap[tabId];
     if (targetId && cultivoView === 'grow') {
+      setActiveSectionTab(tabId);
       const el = document.getElementById(targetId);
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -1240,12 +1794,36 @@ document.addEventListener('DOMContentLoaded', async () => {
     return 'Lembrete';
   }
 
-  function getUpcomingReminders(profile, limit) {
+  function getUpcomingReminders(profile, limit, growId) {
     const today = todayDateInputValue();
-    return sortPlanTasks(ensurePlanTasks(profile))
+    const gid = growId || selectedGrowLogId || '';
+    return sortPlanTasks(planTasksForGrow(profile, gid))
       .filter((task) => task.dueAt && !task.done)
       .filter((task) => task.dueAt >= today || isTaskOverdue(task))
       .slice(0, limit || 5);
+  }
+
+  function renderPlanPreview(profile) {
+    const el = document.getElementById('perfil-plan-preview');
+    if (!el) return;
+    const tasks = getUpcomingReminders(profile, 5, selectedGrowLogId);
+    if (!tasks.length) {
+      el.hidden = true;
+      el.innerHTML = '';
+      return;
+    }
+    el.hidden = false;
+    el.innerHTML =
+      '<div class="perfil-plan-preview-head"><h2>Próximos lembretes</h2></div>' +
+      tasks.map((task) => {
+        const overdue = isTaskOverdue(task);
+        return '<div class="perfil-plan-preview-item' + (overdue ? ' is-overdue' : '') + '">' +
+          '<span class="perfil-plan-preview-dot" aria-hidden="true"></span>' +
+          '<span>' + escapeHtml(task.label) +
+          (task.dueAt ? ' <span class="perfil-plano-due' + (overdue ? ' is-overdue' : '') + '">' +
+          escapeHtml(formatTaskDueLabel(task)) + '</span>' : '') +
+          '</span></div>';
+      }).join('');
   }
 
 
@@ -1270,70 +1848,115 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function exportGrowMarkdown(log, profile) {
     if (!log) return;
-    const phaseLabel = formatProfileValue('phase', log.phase);
-    const plants = log.plantCount != null ? log.plantCount : 1;
-    const lines = [
-      '# ' + (log.name || 'Pesquisa'),
-      '',
-      '> Rascunho gerado pelo Diário de Pesquisas — Inspetor BudGanja',
-      '> Data de exportação: ' + new Date().toLocaleDateString('pt-BR'),
-      '',
-      '## Metadados',
-      '',
-      '| Campo | Valor |',
-      '|-------|-------|',
-      '| Espécie / linha | ' + (log.species || '—') + ' |',
-      '| Fase | ' + phaseLabel + ' |',
-      '| Plantas | ' + plants + ' |',
-      '| Início | ' + formatDate(log.plantedAt) + ' |',
-      '| Dia | ' + daysSincePlanted(log.plantedAt) + ' |',
-      ''
-    ];
-    const guide = profile && profile.customGuide ? String(profile.customGuide).trim() : '';
-    if (guide) {
-      lines.push('## Roteiro geral', '', guide, '');
-    }
-    lines.push('## Registos do diário', '');
-    const entries = (log.entries || []).slice().sort((a, b) => String(b.date).localeCompare(String(a.date)));
-    if (!entries.length) {
-      lines.push('_Sem registos ainda._', '');
-    } else {
-      entries.forEach((entry) => {
-        const meta = getEntryActionMeta(entry);
-        lines.push('### ' + entry.date + ' — ' + meta.label);
-        if (entry.text) lines.push('', entry.text);
-        const metrics = formatMetricsPlain(entry.metrics);
-        if (metrics) lines.push('', '**Métricas:** ' + metrics);
-        if (entry.source === 'calculator' && entry.metrics && entry.metrics.calculator) {
-          lines.push('', '_Fonte: ' + (CALCULATOR_LABELS[entry.metrics.calculator] || entry.metrics.calculator) + '_');
-        }
-        if (Array.isArray(entry.photos) && entry.photos.length) {
-          lines.push('');
-          entry.photos.forEach((url) => { lines.push('![](' + url + ')'); });
-        }
-        lines.push('');
-      });
-    }
-    lines.push('---', '', '_Use este ficheiro como base para publicar em /biblioteca/pesquisas/ via o painel admin._');
+    const title = log.name || 'Pesquisa';
+    const markdown = CMarkdown.buildGrowMarkdown
+      ? CMarkdown.buildGrowMarkdown(log, profile, { title: title })
+      : ('# ' + title);
     const safeName = String(log.name || 'pesquisa').replace(/[^\w\-]+/g, '-').slice(0, 40);
-    downloadTextFile('pesquisa-' + safeName + '.md', lines.join('\n'), 'text/markdown;charset=utf-8');
+    downloadTextFile('pesquisa-' + safeName + '.md', markdown, 'text/markdown;charset=utf-8');
   }
 
   async function renameActiveGrow() {
     if (!user || !user.profile || !selectedGrowLogId) return;
     const log = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
     if (!log) return;
-    const next = window.prompt('Novo nome da pesquisa:', log.name || '');
-    if (next == null) return;
-    const name = String(next).trim();
+    const input = document.getElementById('cultivo-rename-input');
+    if (input) input.value = log.name || '';
+    openCultivoModal('cultivo-rename-modal');
+    if (input) input.focus();
+  }
+
+  async function confirmRenameGrow() {
+    if (!user || !user.profile || !selectedGrowLogId) return;
+    const log = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
+    if (!log) return;
+    const input = document.getElementById('cultivo-rename-input');
+    const name = input ? String(input.value).trim() : '';
     if (!name) {
       flashLiveStatus('O nome não pode ficar vazio.', true);
       return;
     }
     log.name = name.slice(0, 80);
+    closeCultivoModal('cultivo-rename-modal');
     flashLiveStatus('Nome actualizado.');
     refreshUI();
     await persistGrowLogs(growDetailStatus);
+  }
+
+  function openSubmitModal() {
+    if (!user || !user.profile || !selectedGrowLogId) return;
+    const log = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
+    if (!log) return;
+    const titleEl = document.getElementById('cultivo-submit-title');
+    const excerptEl = document.getElementById('cultivo-submit-excerpt');
+    const statusEl = document.getElementById('cultivo-submit-modal-status');
+    if (titleEl) titleEl.value = log.name || 'Pesquisa';
+    if (excerptEl) excerptEl.value = 'Pesquisa de cultivo — ' + (log.species || log.name || '');
+    if (statusEl) statusEl.textContent = '';
+    renderSubmitChecklist(log, user.profile);
+    if (titleEl && !titleEl.dataset.checklistBound) {
+      titleEl.dataset.checklistBound = '1';
+      titleEl.addEventListener('input', () => {
+        if (!user || !user.profile || !selectedGrowLogId) return;
+        const current = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
+        if (current) renderSubmitChecklist(current, user.profile);
+      });
+    }
+    openCultivoModal('cultivo-submit-modal');
+    if (titleEl) titleEl.focus();
+  }
+
+  async function submitActiveGrowToLab() {
+    if (!user || !user.profile || !selectedGrowLogId) return;
+    const log = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
+    if (!log) return;
+    if (!growHasPublishableContent(log, user.profile)) {
+      flashLiveStatus('Adicione registos no diário ou um roteiro mais completo antes de submeter.', true);
+      renderSubmitChecklist(log, user.profile);
+      return;
+    }
+    const titleEl = document.getElementById('cultivo-submit-title');
+    const excerptEl = document.getElementById('cultivo-submit-excerpt');
+    const statusEl = document.getElementById('cultivo-submit-modal-status');
+    const titleTrim = titleEl ? String(titleEl.value).trim() : '';
+    if (!titleTrim) {
+      if (statusEl) statusEl.textContent = 'Informe um título para a submissão.';
+      return;
+    }
+    const confirmBtn = document.getElementById('cultivo-submit-confirm');
+    if (confirmBtn) confirmBtn.disabled = true;
+    if (growSubmitLabBtn) growSubmitLabBtn.disabled = true;
+    if (statusEl) statusEl.textContent = 'A enviar submissão…';
+    try {
+      const res = await fetch('/api/cultivo/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify({
+          growId: log.id,
+          title: titleTrim,
+          excerpt: excerptEl ? String(excerptEl.value).trim() : ''
+        })
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        if (statusEl) statusEl.textContent = data.error || 'Não foi possível submeter.';
+        flashLiveStatus(data.error || 'Não foi possível submeter.', true);
+        if (growSubmitLabBtn) growSubmitLabBtn.disabled = false;
+        if (confirmBtn) confirmBtn.disabled = false;
+        return;
+      }
+      closeCultivoModal('cultivo-submit-modal');
+      flashLiveStatus('Submissão enviada — o laboratório irá rever.');
+      submissionStatusByGrow = null;
+      await loadGrowSubmissionStatus(log.id);
+      if (user && user.profile) renderCultivoHub(user.profile);
+    } catch (e) {
+      if (statusEl) statusEl.textContent = 'Erro de rede ao submeter.';
+      flashLiveStatus('Erro de rede ao submeter.', true);
+      if (growSubmitLabBtn) growSubmitLabBtn.disabled = false;
+    }
+    if (confirmBtn) confirmBtn.disabled = false;
   }
 
   async function loadGrowSubmissionStatus(growId) {
@@ -1358,10 +1981,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         growSubmissionStatus.innerHTML = 'Publicada no site' +
           (latest.postUrl ? ' — <a href="' + escapeHtml(latest.postUrl) + '">ver pesquisa</a>' : '') + '.';
         growSubmissionStatus.classList.add('is-approved');
+        if (submissionStatusByGrow) submissionStatusByGrow[growId] = latest;
+        renderSubmissionNotifications(user && user.profile);
       } else if (latest.status === 'rejected') {
         growSubmissionStatus.textContent = 'Submissão rejeitada' +
           (latest.reviewerNote ? ': ' + latest.reviewerNote : '') + '. Pode editar o diário e submeter de novo.';
         growSubmissionStatus.classList.add('is-error');
+        if (submissionStatusByGrow) submissionStatusByGrow[growId] = latest;
+        renderSubmissionNotifications(user && user.profile);
       }
       if (growSubmitLabBtn) {
         growSubmitLabBtn.disabled = latest.status === 'pending' || latest.status === 'approved';
@@ -1369,45 +1996,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     } catch (e) { /* ignore */ }
   }
 
-  async function submitActiveGrowToLab() {
+  async function duplicateActiveGrow() {
     if (!user || !user.profile || !selectedGrowLogId) return;
-    const log = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
-    if (!log) return;
-    const title = window.prompt('Título para publicação no site:', log.name || 'Pesquisa');
-    if (title === null) return;
-    const titleTrim = String(title).trim();
-    if (!titleTrim) {
-      flashLiveStatus('Informe um título para a submissão.', true);
-      return;
-    }
-    const excerpt = window.prompt('Resumo curto (opcional):', 'Pesquisa de cultivo — ' + (log.species || log.name || ''));
-    if (excerpt === null) return;
-    if (growSubmitLabBtn) growSubmitLabBtn.disabled = true;
-    if (growSubmissionStatus) growSubmissionStatus.textContent = 'A enviar submissão…';
-    try {
-      const res = await fetch('/api/cultivo/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
-        body: JSON.stringify({
-          growId: log.id,
-          title: titleTrim,
-          excerpt: String(excerpt).trim()
-        })
-      });
-      const data = await res.json().catch(() => ({}));
-      if (!res.ok) {
-        flashLiveStatus(data.error || 'Não foi possível submeter.', true);
-        if (growSubmissionStatus) growSubmissionStatus.textContent = '';
-        if (growSubmitLabBtn) growSubmitLabBtn.disabled = false;
-        return;
-      }
-      flashLiveStatus('Submissão enviada — o laboratório irá rever.');
-      await loadGrowSubmissionStatus(log.id);
-    } catch (e) {
-      flashLiveStatus('Erro de rede ao submeter.', true);
-      if (growSubmitLabBtn) growSubmitLabBtn.disabled = false;
-    }
+    const source = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
+    if (!source) return;
+    const copy = duplicateGrowLog(source);
+    if (!copy) return;
+    user.profile.growLogs.unshift(copy);
+    await persistGrowLogs(growDetailStatus);
+    flashLiveStatus('Pesquisa duplicada.');
+    navigateCultivo({ view: 'grow', growId: copy.id });
   }
 
   async function deleteActiveGrow() {
@@ -1487,7 +2085,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function logReminderToDiary(task, profile) {
-    const log = ensureActiveGrowLog(profile, '');
+    const log = getSelectedGrowLog(profile) || ensureActiveGrowLog(profile, '');
+    if (!log) return;
     const actionType = task.actionType || 'obs';
     const text = task.label || buildReminderLabel(actionType, '');
     const entry = createGrowEntry(text, {
@@ -1528,12 +2127,16 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
 
   function stashWeekNotes() {
     if (!weekNotesEl || !user || !user.profile) return;
+    const log = getSelectedGrowLog(user.profile);
+    if (!log) return;
+    ensureGrowFields(log);
     const w = getActiveWeek(user.profile);
-    if (!user.profile.guideWeekNotes) user.profile.guideWeekNotes = {};
-    user.profile.guideWeekNotes[String(w)] = weekNotesEl.value.trim();
+    log.guideWeekNotes[String(w)] = weekNotesEl.value.trim();
   }
 
   function readGuideWeekNotesFromProfile(profile) {
+    const log = getSelectedGrowLog(profile);
+    if (log && log.guideWeekNotes) return Object.assign({}, log.guideWeekNotes);
     const src = profile && profile.guideWeekNotes && typeof profile.guideWeekNotes === 'object'
       ? profile.guideWeekNotes
       : {};
@@ -1541,6 +2144,8 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
   }
 
   function readHubFields() {
+    const log = user && user.profile ? getSelectedGrowLog(user.profile) : null;
+    if (log) ensureGrowFields(log);
     const notes = readGuideWeekNotesFromProfile(user && user.profile);
     if (weekNotesEl && user && user.profile) {
       const w = getActiveWeek(user.profile);
@@ -1548,16 +2153,20 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       if (weekNotesEl.dataset.weekKey !== key) {
         weekNotesEl.value = notes[key] || '';
         weekNotesEl.dataset.weekKey = key;
-      } else {
-        notes[key] = weekNotesEl.value.trim();
+      } else if (log) {
+        log.guideWeekNotes[key] = weekNotesEl.value.trim();
       }
     }
+    if (customGuideEl && log) {
+      log.customGuide = customGuideEl.value.trim();
+    }
+    if (log) readGrowSetupFields(log);
     return {
-      customGuide: customGuideEl ? customGuideEl.value.trim() : '',
+      customGuide: '',
       planTasks: user && user.profile && Array.isArray(user.profile.planTasks)
         ? user.profile.planTasks.slice()
         : [],
-      guideWeekNotes: notes,
+      guideWeekNotes: {},
       growLogs: cloneGrowLogs(user && user.profile ? user.profile.growLogs : []),
       activeGrowLogId: user && user.profile ? user.profile.activeGrowLogId || '' : '',
       phase: user && user.profile ? getEffectivePhase(user.profile) : 'planejamento',
@@ -1742,6 +2351,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
 
     if (!guide) {
       weekContentEl.innerHTML = '<p class="perfil-plano-empty">Sem roteiro para esta fase.</p>';
+      updateWeekInspectionLink(profile);
       return;
     }
 
@@ -1759,6 +2369,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       (guide.tasks || []).map((t) => '<li>' + escapeHtml(t) + '</li>').join('') +
       '</ul>' +
       (toolsHtml ? '<p class="perfil-week-tools-title"><strong>Ferramentas:</strong></p><ul class="info-list">' + toolsHtml + '</ul>' : '');
+    updateWeekInspectionLink(profile);
   }
 
   function renderToolsGrid() {
@@ -1769,32 +2380,54 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     renderPerfilNavAccordion(siteLinks, window.__BIBLIOTECA_NAV__);
   }
 
-  function defaultPlanTasks(profile) {
+  function defaultPlanTasks(profile, growId) {
     const phase = getEffectivePhase(profile);
     const list = PHASE_PLAN_DEFAULTS[phase] || PHASE_PLAN_DEFAULTS.planejamento || [];
+    const gid = growId || selectedGrowLogId || '';
     return list.map((t, i) => ({
       id: 'd' + phase + i,
       label: t.label,
       done: false,
-      toolHref: t.href || ''
+      toolHref: t.href || '',
+      growId: gid
     }));
+  }
+
+  function planTasksForGrow(profile, growId) {
+    if (!profile) return [];
+    const gid = growId || selectedGrowLogId || '';
+    const all = Array.isArray(profile.planTasks) ? profile.planTasks : [];
+    const scoped = gid
+      ? all.filter((task) => !task.growId || task.growId === gid)
+      : all.filter((task) => !task.growId);
+    if (scoped.length) return scoped.slice();
+    if (gid) return defaultPlanTasks(profile, gid);
+    return [];
+  }
+
+  function setPlanTasksForGrow(profile, growId, tasks) {
+    if (!profile || !growId) return;
+    const others = (profile.planTasks || []).filter((task) => task.growId && task.growId !== growId);
+    const tagged = (tasks || []).map((task) => Object.assign({}, task, { growId: growId }));
+    profile.planTasks = others.concat(tagged);
   }
 
   function ensurePlanTasks(profile) {
     if (!profile) return [];
-    if (Array.isArray(profile.planTasks) && profile.planTasks.length) {
-      return profile.planTasks.slice();
-    }
-    return defaultPlanTasks(profile);
+    return planTasksForGrow(profile, selectedGrowLogId);
   }
 
   function renderPlanTasks(profile) {
     if (!planoList) return;
-    const tasks = sortPlanTasks(ensurePlanTasks(profile));
-    if (user && user.profile) user.profile.planTasks = tasks;
+    const growId = selectedGrowLogId;
+    const tasks = sortPlanTasks(planTasksForGrow(profile, growId));
+    if (user && user.profile && growId) {
+      setPlanTasksForGrow(user.profile, growId, tasks);
+    }
 
     if (!tasks.length) {
-      planoList.innerHTML = '<li class="perfil-plano-empty">Adicione tarefas ou altere a fase no diário activo para sugestões automáticas.</li>';
+      planoList.innerHTML = '<li class="perfil-plano-empty">Adicione tarefas ou altere a fase desta pesquisa para sugestões automáticas.</li>';
+      renderPlanPreview(profile);
       return;
     }
 
@@ -1826,7 +2459,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     renderInicioSummary(profile);
   }
 
-  async function saveCultivoPayload(payload, statusEl) {
+  async function saveCultivoPayload(payload, statusEl, options) {
     if (profileSaving) return null;
     profileSaving = true;
     if (statusEl) setStatus(statusEl, 'A guardar…');
@@ -1840,7 +2473,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
         if (statusEl) setStatus(statusEl, data.error || 'Erro ao guardar.', true);
-        flashLiveStatus(data.error || 'Erro ao guardar.', true);
+        if (!options || !options.silent) flashLiveStatus(data.error || 'Erro ao guardar.', true);
         return null;
       }
       if (data.cultivo && user) {
@@ -1854,7 +2487,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       if (user && user.profile) ensureGrowLogs(user.profile);
       updateUserHeader(user);
       fillForm(user.profile);
-      refreshUI();
+      if (!options || !options.silent) refreshUI();
       broadcastProfilePicture(user);
       if (statusEl) setStatus(statusEl, 'Guardado.');
       return user;
@@ -1930,9 +2563,9 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
 
   function onPlanTaskToggle(event) {
     const li = event.target.closest('.perfil-plano-item');
-    if (!li || !user || !user.profile) return;
+    if (!li || !user || !user.profile || !selectedGrowLogId) return;
     const id = li.getAttribute('data-task-id');
-    const tasks = ensurePlanTasks(user.profile);
+    const tasks = planTasksForGrow(user.profile, selectedGrowLogId);
     const task = tasks.find((t) => t.id === id);
     if (task) {
       const wasDone = task.done;
@@ -1944,7 +2577,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       } else {
         flashLiveStatus(task.done ? 'Tarefa concluída.' : 'Tarefa reaberta.');
       }
-      user.profile.planTasks = tasks;
+      setPlanTasksForGrow(user.profile, selectedGrowLogId, tasks);
       renderPlanPreview(user.profile);
       renderInicioSummary(user.profile);
       persistPlanTasks(planoStatus);
@@ -1956,9 +2589,10 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
 
   function onPlanTaskRemove(event) {
     const li = event.target.closest('.perfil-plano-item');
-    if (!li || !user || !user.profile) return;
+    if (!li || !user || !user.profile || !selectedGrowLogId) return;
     const id = li.getAttribute('data-task-id');
-    user.profile.planTasks = ensurePlanTasks(user.profile).filter((t) => t.id !== id);
+    const tasks = planTasksForGrow(user.profile, selectedGrowLogId).filter((t) => t.id !== id);
+    setPlanTasksForGrow(user.profile, selectedGrowLogId, tasks);
     renderPlanTasks(user.profile);
     persistPlanTasks(planoStatus);
   }
@@ -1966,9 +2600,8 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
   function addPlanTask(label, opts) {
     const options = opts || {};
     const trimmed = String(label || '').trim();
-    if (!trimmed || !user || !user.profile) return;
-    const tasks = ensurePlanTasks(user.profile);
-    const activeLog = getActiveGrowLog(user.profile);
+    if (!trimmed || !user || !user.profile || !selectedGrowLogId) return;
+    const tasks = planTasksForGrow(user.profile, selectedGrowLogId);
     tasks.push({
       id: 'u' + Date.now(),
       label: trimmed,
@@ -1976,9 +2609,9 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       toolHref: options.toolHref || '',
       dueAt: options.dueAt || '',
       actionType: options.actionType || '',
-      growId: options.growId || (activeLog ? activeLog.id : '')
+      growId: selectedGrowLogId
     });
-    user.profile.planTasks = tasks;
+    setPlanTasksForGrow(user.profile, selectedGrowLogId, tasks);
     renderPlanTasks(user.profile);
     flashLiveStatus(options.dueAt ? 'Lembrete agendado.' : 'Tarefa adicionada ao plano.');
     persistPlanTasks(planoStatus);
@@ -2000,20 +2633,24 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
   }
 
   async function seedDefaultPlanIfEmpty(profile) {
-    if (!profile || (Array.isArray(profile.planTasks) && profile.planTasks.length)) return;
-    const tasks = defaultPlanTasks(profile);
+    if (!profile || !selectedGrowLogId) return;
+    const existing = planTasksForGrow(profile, selectedGrowLogId);
+    if (existing.length) return;
+    const tasks = defaultPlanTasks(profile, selectedGrowLogId);
     if (!tasks.length) return;
-    profile.planTasks = tasks;
-    if (user && user.profile) user.profile.planTasks = tasks;
+    setPlanTasksForGrow(profile, selectedGrowLogId, tasks);
+    if (user && user.profile) setPlanTasksForGrow(user.profile, selectedGrowLogId, tasks);
     renderPlanTasks(profile);
     await saveProfilePayload(readForm(), null);
   }
 
   function updateToolLinks(profile) {
     if (!toolLinks) return;
-    const substrate = profile && profile.substrate;
-    const phase = getEffectivePhase(profile);
+    const log = getSelectedGrowLog(profile) || getActiveGrowLog(profile);
+    const ctx = getGrowContext(log, profile);
+    const substrate = ctx.substrate;
     const base = TOOL_SUGGESTIONS[substrate] || TOOL_SUGGESTIONS.default;
+    const phase = getEffectivePhase(profile);
     const phaseTools = PHASE_TOOLS[phase] || PHASE_TOOLS.default;
     const merged = [];
     const seen = new Set();
@@ -2024,9 +2661,9 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       merged.push(item);
     });
 
-    if (profile && profile.environment === 'indoor') {
-      merged.push({ label: 'Custo de energia', href: '/calculadoras/energia.html' });
-      merged.push({ label: 'Watts por m²', href: '/calculadoras/watts-m2.html' });
+    if (ctx.environment === 'indoor') {
+      merged.push({ label: 'Custo de energia', href: '/calculadoras/cultivo-lab.html?mode=energia' });
+      merged.push({ label: 'Watts por m²', href: '/calculadoras/cultivo-lab.html?mode=watts-m2' });
     }
 
     toolLinks.innerHTML = merged.map((item) =>
@@ -2077,21 +2714,28 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
           if (saved) data = saved;
         }
         initCultivoHistory();
+        initSectionNav();
+        initCultivoAutosave();
+        initPhotoDropZone();
         renderHub(data.profile);
         await seedDefaultPlanIfEmpty(data.profile);
         const params = new URLSearchParams(window.location.search);
         let initialRoute = parseCultivoRoute();
         const tab = params.get('tab');
-        if (tab === 'diario' && user.profile.growLogs && user.profile.growLogs.length) {
-          const active = getActiveGrowLog(user.profile);
+        const growParam = params.get('grow');
+        let preferredGrowId = growParam || '';
+        if (!preferredGrowId) {
+          try { preferredGrowId = sessionStorage.getItem(SELECTED_GROW_KEY) || ''; } catch (e) { /* ignore */ }
+        }
+        if ((tab === 'diario' || params.get('saved') === '1') && user.profile.growLogs && user.profile.growLogs.length) {
+          const target = preferredGrowId
+            ? user.profile.growLogs.find((item) => item.id === preferredGrowId)
+            : null;
+          const active = target || getActiveGrowLog(user.profile);
           if (active) initialRoute = { view: 'grow', growId: active.id };
         }
         if (params.get('saved') === '1') {
           flashLiveStatus('Resultado da calculadora guardado no diário.');
-          if (user.profile.growLogs && user.profile.growLogs.length) {
-            const active = getActiveGrowLog(user.profile);
-            if (active) initialRoute = { view: 'grow', growId: active.id };
-          }
         }
         navigateCultivo(initialRoute, { replace: true, scroll: false });
         if (tab && tab !== 'diario') {
@@ -2241,7 +2885,9 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       const submitBtn = document.getElementById('cultivo-wizard-submit');
       if (submitBtn) submitBtn.disabled = true;
       const species = cultivoWizardSpecies ? cultivoWizardSpecies.value.trim() : '';
-      const log = await createGrowFromWizard(name, cultivoWizardPhase, plants, species);
+      const environment = cultivoWizardEnvironment ? cultivoWizardEnvironment.value : '';
+      const substrate = cultivoWizardSubstrate ? cultivoWizardSubstrate.value : '';
+      const log = await createGrowFromWizard(name, cultivoWizardPhase, plants, species, environment, substrate);
       if (submitBtn) submitBtn.disabled = false;
       if (!log) {
         setWizardStatus('Não foi possível criar a pesquisa.', true);
@@ -2276,12 +2922,17 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     growEntryForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       if (!user || !user.profile || !selectedGrowLogId) return;
+      const metricErrors = validateEntryMetricsFromForm();
+      if (metricErrors.length) {
+        setStatus(growDetailStatus, metricErrors.join(' '), true);
+        return;
+      }
       const metrics = readEntryMetricsFromForm();
       let text = growEntryText ? growEntryText.value.trim() : '';
       if (!text) {
         text = buildDefaultEntryText(selectedEntryAction, metrics);
       }
-      if (!text && !Object.keys(metrics).length && !pendingEntryPhotoFiles.length) {
+      if (!text && !Object.keys(metrics).length && !pendingEntryPhotoFiles.length && !editingEntryId) {
         setStatus(growDetailStatus, 'Escolha o tipo ou preencha uma observação.', true);
         return;
       }
@@ -2297,30 +2948,66 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         setStatus(growDetailStatus, err.message || 'Erro ao enviar fotos.', true);
         return;
       }
-      const entry = createGrowEntry(text, {
-        date: growEntryDate ? growEntryDate.value : todayDateInputValue(),
-        actionType: selectedEntryAction,
-        metrics: metrics,
-        photos: photos
-      });
-      const result = appendEntryToGrowLog(log, entry);
-      if (!result.ok) {
-        setStatus(growDetailStatus, result.error, true);
-        return;
+      if (editingEntryId) {
+        const entry = (log.entries || []).find((item) => item.id === editingEntryId);
+        if (!entry) {
+          editingEntryId = null;
+          setStatus(growDetailStatus, 'Registo não encontrado.', true);
+          return;
+        }
+        entry.date = growEntryDate ? growEntryDate.value : entry.date;
+        entry.actionType = selectedEntryAction;
+        entry.text = text;
+        entry.metrics = metrics;
+        if (photos.length) {
+          entry.photos = (entry.photos || []).concat(photos);
+        }
+        editingEntryId = null;
+        clearEntryForm();
+        flashLiveStatus('Registo actualizado.');
+      } else {
+        const entry = createGrowEntry(text, {
+          date: growEntryDate ? growEntryDate.value : todayDateInputValue(),
+          actionType: selectedEntryAction,
+          metrics: metrics,
+          photos: photos
+        });
+        const result = appendEntryToGrowLog(log, entry);
+        if (!result.ok) {
+          setStatus(growDetailStatus, result.error, true);
+          return;
+        }
+        clearEntryForm();
+        flashLiveStatus('Registo guardado.');
       }
-      clearEntryForm();
-      flashLiveStatus('Registo guardado.');
       if (user && user.profile) renderGrowPage(user.profile);
       await persistGrowLogs(growDetailStatus);
     });
   }
 
-  if (growEntryPhotos) {
-    growEntryPhotos.addEventListener('change', readEntryPhotoFilesFromInput);
+  document.querySelectorAll('[data-modal-close]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const modalId = btn.getAttribute('data-modal-close');
+      if (modalId) closeCultivoModal(modalId);
+    });
+  });
+
+  const cultivoSubmitConfirm = document.getElementById('cultivo-submit-confirm');
+  if (cultivoSubmitConfirm) {
+    cultivoSubmitConfirm.addEventListener('click', () => submitActiveGrowToLab());
+  }
+
+  const cultivoRenameConfirm = document.getElementById('cultivo-rename-confirm');
+  if (cultivoRenameConfirm) {
+    cultivoRenameConfirm.addEventListener('click', () => confirmRenameGrow());
   }
 
   if (growSubmitLabBtn) {
-    growSubmitLabBtn.addEventListener('click', () => submitActiveGrowToLab());
+    growSubmitLabBtn.addEventListener('click', () => openSubmitModal());
+  }
+
+  if (growEntryPhotos) {
+    growEntryPhotos.addEventListener('change', readEntryPhotoFilesFromInput);
   }
 
   if (growExportMdBtn) {
@@ -2342,6 +3029,36 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
 
   if (growRenameBtn) {
     growRenameBtn.addEventListener('click', () => renameActiveGrow());
+  }
+
+  if (growDuplicateBtn) {
+    growDuplicateBtn.addEventListener('click', () => duplicateActiveGrow());
+  }
+
+  if (growCompareBtn) {
+    growCompareBtn.addEventListener('click', () => openCompareModal());
+  }
+
+  if (growEnvironmentEl) {
+    growEnvironmentEl.addEventListener('change', () => {
+      if (!user || !user.profile || !selectedGrowLogId) return;
+      const log = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
+      if (!log) return;
+      readGrowSetupFields(log);
+      updateToolLinks(user.profile);
+      renderGrowHeader(log, user.profile);
+    });
+  }
+
+  if (growSubstrateEl) {
+    growSubstrateEl.addEventListener('change', () => {
+      if (!user || !user.profile || !selectedGrowLogId) return;
+      const log = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
+      if (!log) return;
+      readGrowSetupFields(log);
+      updateToolLinks(user.profile);
+      renderGrowHeader(log, user.profile);
+    });
   }
 
   if (growDeleteBtn) {
@@ -2392,8 +3109,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         return;
       }
 
-      const defaultName = (user.profile.genetics && String(user.profile.genetics).trim()) || 'Minha pesquisa';
-      const log = ensureActiveGrowLog(user.profile, defaultName);
+      const log = getSelectedGrowLog(user.profile) || ensureActiveGrowLog(user.profile, 'Minha pesquisa');
       const entry = buildWeekNoteEntry(noteText, user.profile);
       const result = appendEntryToGrowLog(log, entry);
       if (!result.ok) {
@@ -2401,9 +3117,10 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         return;
       }
 
-      weekNotesEl.value = '';
+      ensureGrowFields(log);
       const weekKey = String(getActiveWeek(user.profile));
-      if (user.profile.guideWeekNotes) delete user.profile.guideWeekNotes[weekKey];
+      delete log.guideWeekNotes[weekKey];
+      weekNotesEl.value = '';
       weekNotesEl.dataset.weekKey = weekKey;
 
       selectedGrowLogId = log.id;
@@ -2420,7 +3137,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       if (!window.confirm('Reiniciar a contagem de semanas desta fase a partir de hoje?')) return;
       selectedWeek = 1;
       const now = new Date().toISOString();
-      const log = getActiveGrowLog(user.profile);
+      const log = getSelectedGrowLog(user.profile) || getActiveGrowLog(user.profile);
       if (log) log.plantedAt = now;
       syncPhaseFromActiveLog(user.profile);
       flashLiveStatus('Semanas reiniciadas a partir de hoje.');

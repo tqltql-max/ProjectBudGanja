@@ -10,16 +10,9 @@
   <url><loc>https://inspetorbudganja.com.br/loja/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://inspetorbudganja.com.br/loja/encomenda.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://inspetorbudganja.com.br/calculadoras/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/calculadoras/cultivo-lab.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/calculadoras/luximetro.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/calculadoras/vpd.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/calculadoras/dli.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/calculadoras/super-solo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/calculadoras/volume-vaso.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/calculadoras/ec.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/calculadoras/diluicao.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/calculadoras/ph.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/calculadoras/energia.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/calculadoras/watts-m2.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/sorteios/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://inspetorbudganja.com.br/info/sobre.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://inspetorbudganja.com.br/info/contato.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
@@ -32,15 +25,7 @@
   <url><loc>https://inspetorbudganja.com.br/posts/post-otimizacao-propagacao-vegetal.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-clonadora-aeroponica-documentada.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-luximetro.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-calculadora-vpd-guia-laboratorio.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-dli.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-super-solo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-volume-vaso.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-ec.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-diluicao.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-ph.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-energia.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-watts-m2.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-ventilacao-tenda.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-cultivo-inicio.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-nutricao-cannabis.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>

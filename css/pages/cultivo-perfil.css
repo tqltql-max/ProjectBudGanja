@@ -266,6 +266,301 @@ html[data-theme="light"] .botao-outline:hover {
     text-decoration: underline;
 }
 
+.cultivo-metrics-hint.is-error {
+    color: var(--color-danger, #c44);
+}
+
+.perfil-grow-entry-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.perfil-grow-entry-actions .botao-sm {
+    font-size: 0.78rem;
+    padding: 4px 10px;
+}
+
+.cultivo-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.cultivo-modal[hidden] {
+    display: none !important;
+}
+
+.cultivo-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.cultivo-modal-card {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 440px);
+    max-height: 90vh;
+    overflow: auto;
+    padding: 20px;
+}
+
+.cultivo-modal-card h2 {
+    margin: 0 0 8px;
+    font-size: 1.15rem;
+}
+
+.cultivo-section-nav {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    padding: 10px 0 14px;
+    margin: 0 0 12px;
+    background: var(--color-bg, #0f1410);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.cultivo-section-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.cultivo-section-nav-btn {
+    flex: 0 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.04);
+    color: inherit;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.cultivo-section-nav-btn.is-active {
+    background: rgba(39, 174, 96, 0.18);
+    border-color: var(--color-accent);
+    color: var(--color-accent-light, #9fd89f);
+}
+
+.cultivo-hub-card-badge {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.cultivo-hub-card-badge.is-pending {
+    background: rgba(201, 162, 39, 0.18);
+    color: var(--color-warn, #c9a227);
+}
+
+.cultivo-hub-card-badge.is-approved {
+    background: rgba(39, 174, 96, 0.18);
+    color: var(--color-accent-light, #9fd89f);
+}
+
+.cultivo-hub-card-badge.is-rejected {
+    background: rgba(204, 68, 68, 0.15);
+    color: var(--color-danger, #c44);
+}
+
+.cultivo-submit-checklist {
+    list-style: none;
+    margin: 12px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cultivo-submit-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.88rem;
+    line-height: 1.4;
+}
+
+.cultivo-submit-checklist li.is-ok {
+    color: var(--color-accent-light, #9fd89f);
+}
+
+.cultivo-submit-checklist li.is-warn {
+    color: var(--color-warn, #c9a227);
+}
+
+.cultivo-submit-checklist li.is-error {
+    color: var(--color-danger, #c44);
+}
+
+.cultivo-submit-preview-wrap {
+    margin: 8px 0 12px;
+}
+
+.cultivo-submit-preview {
+    max-height: 180px;
+    overflow: auto;
+    margin: 8px 0 0;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.25);
+    font-size: 0.72rem;
+    line-height: 1.45;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.cultivo-onboarding-highlight {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+    border-radius: 8px;
+}
+
+.cultivo-autosave-status {
+    margin: 0 0 10px;
+    font-size: 0.82rem;
+    color: var(--color-muted, rgba(255, 255, 255, 0.65));
+}
+
+.cultivo-autosave-status.is-saving,
+.cultivo-autosave-status.is-pending {
+    color: var(--color-warn, #c9a227);
+}
+
+.cultivo-autosave-status.is-saved {
+    color: var(--color-accent-light, #9fd89f);
+}
+
+.cultivo-autosave-status.is-offline,
+.cultivo-autosave-status.is-error {
+    color: var(--color-danger, #c44);
+}
+
+.cultivo-submission-notify {
+    margin: 0 0 16px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: rgba(39, 174, 96, 0.12);
+    border: 1px solid rgba(39, 174, 96, 0.28);
+}
+
+.cultivo-submission-notify.is-rejected {
+    background: rgba(204, 68, 68, 0.1);
+    border-color: rgba(204, 68, 68, 0.28);
+}
+
+.cultivo-submission-notify-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.perfil-grow-setup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.cultivo-metrics-charts {
+    margin-bottom: 16px;
+    padding: 14px 16px;
+}
+
+.cultivo-metrics-charts-head h3 {
+    margin: 0 0 4px;
+    font-size: 1rem;
+}
+
+.cultivo-metrics-charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.cultivo-metric-chart-card {
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.18);
+}
+
+.cultivo-metric-chart {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cultivo-metric-chart-meta {
+    margin: 6px 0 0;
+    font-size: 0.78rem;
+    color: var(--color-muted, rgba(255, 255, 255, 0.7));
+}
+
+.cultivo-compare-modal-card {
+    width: min(100%, 560px);
+}
+
+.cultivo-compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 0.88rem;
+}
+
+.cultivo-compare-table th,
+.cultivo-compare-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: left;
+}
+
+.cultivo-entry-photos-field.is-dragover {
+    outline: 2px dashed var(--color-accent);
+    outline-offset: 4px;
+    border-radius: 8px;
+}
+
+html[data-theme="light"] .cultivo-metric-chart-card {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+html[data-theme="light"] .cultivo-compare-table th,
+html[data-theme="light"] .cultivo-compare-table td {
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+html[data-theme="light"] .cultivo-section-nav {
+    background: var(--color-bg, #f7f9f5);
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+html[data-theme="light"] .cultivo-section-nav-btn {
+    border-color: rgba(0, 0, 0, 0.12);
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.perfil-plan-preview {
+    margin-bottom: 16px;
+    padding: 14px 16px;
+}
+
 .perfil-page {
     max-width: var(--max-width-wide);
     margin: 0 auto;

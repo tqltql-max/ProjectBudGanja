@@ -14,38 +14,6 @@ const CALC_DIR = path.join(ROOT, 'calculadoras');
 const GENERATED_MARKER = '<!-- generated:calculadoras -->';
 
 const FORMS = {
-  vpd: `
-                <div class="calculator">
-                    <label for="temp">Temperatura (°C):</label>
-                    <input type="number" id="temp" step="0.1" placeholder="Ex: 25">
-                    <label for="umidade">Umidade (%):</label>
-                    <input type="number" id="umidade" step="0.1" placeholder="Ex: 60">
-                    <button type="button" onclick="calcularVPD()" class="botao">Calcular VPD</button>
-                    <div id="resultado"></div>
-                </div>
-                <details class="calculator-reference">
-                    <summary>Faixas de referência VPD</summary>
-                    <div class="reference-table reference-table--compact">
-                        <table>
-                            <thead><tr><th>Fase</th><th>VPD ideal (kPa)</th></tr></thead>
-                            <tbody>
-                                <tr><td><strong>Clones / Mudas</strong></td><td>0,4 – 0,8</td></tr>
-                                <tr><td><strong>Vegetação</strong></td><td>0,8 – 1,2</td></tr>
-                                <tr><td><strong>Floração</strong></td><td>1,0 – 1,5</td></tr>
-                            </tbody>
-                        </table>
-                        <p class="reference-note">O VPD indica quanto a planta consegue transpirar. Valores muito baixos favorecem fungos; muito altos causam estresse hídrico.</p>
-                    </div>
-                </details>`,
-  dli: `
-                <div class="calculator">
-                    <label for="ppfd">PPFD (μmol/m²/s):</label>
-                    <input type="number" id="ppfd" step="1" placeholder="Ex: 600">
-                    <label for="fotoperiodo">Fotoperíodo (horas/dia):</label>
-                    <input type="number" id="fotoperiodo" step="0.5" min="0" max="24" placeholder="Ex: 18">
-                    <button type="button" onclick="calcularDLI()" class="botao">Calcular DLI</button>
-                    <div id="resultado-dli"></div>
-                </div>`,
   'super-solo': `
                 <div class="calculator super-solo-calculator">
                     <p class="calculator-section-label">Configuração do cultivo</p>
@@ -62,79 +30,6 @@ const FORMS = {
 
                     <button type="button" onclick="calcularSuperSolo()" class="botao">Calcular Ingredientes</button>
                     <div id="resultado-super-solo"></div>
-                </div>`,
-  'volume-vaso': `
-                <div class="calculator">
-                    <label for="vaso-forma">Formato do vaso:</label>
-                    <select id="vaso-forma" class="select-dark select-dark-spaced" onchange="toggleVasoForm()">
-                        <option value="retangular">Retangular</option>
-                        <option value="cilindrico">Cilíndrico</option>
-                    </select>
-                    <div id="vaso-retangular">
-                        <label for="vaso-comp">Comprimento (cm):</label>
-                        <input type="number" id="vaso-comp" step="0.1" placeholder="Ex: 30">
-                        <label for="vaso-larg">Largura (cm):</label>
-                        <input type="number" id="vaso-larg" step="0.1" placeholder="Ex: 30">
-                    </div>
-                    <div id="vaso-cilindrico" class="panel-hidden">
-                        <label for="vaso-diametro">Diâmetro (cm):</label>
-                        <input type="number" id="vaso-diametro" step="0.1" placeholder="Ex: 25">
-                    </div>
-                    <label for="vaso-alt">Altura (cm):</label>
-                    <input type="number" id="vaso-alt" step="0.1" placeholder="Ex: 30">
-                    <button type="button" onclick="calcularVolumeVaso()" class="botao">Calcular Volume</button>
-                    <div id="resultado-vaso"></div>
-                </div>`,
-  ec: `
-                <div class="calculator">
-                    <label for="ec-ppm">EC (mS/cm):</label>
-                    <input type="number" id="ec-ppm" step="0.01" placeholder="Ex: 1.5">
-                    <button type="button" onclick="calcularEC()" class="botao">Converter para PPM</button>
-                    <div id="resultado-ec"></div>
-                </div>`,
-  diluicao: `
-                <div class="calculator">
-                    <label for="concentracao">Concentração atual (EC):</label>
-                    <input type="number" id="concentracao" step="0.1" placeholder="Ex: 2.0">
-                    <label for="alvo">EC alvo (mS/cm):</label>
-                    <input type="number" id="alvo" step="0.1" placeholder="Ex: 1.5">
-                    <button type="button" onclick="calcularDiluicao()" class="botao">Calcular Diluição</button>
-                    <div id="resultado-diluicao"></div>
-                </div>`,
-  ph: `
-                <div class="calculator">
-                    <label for="ph-meio">Meio de cultivo:</label>
-                    <select id="ph-meio" class="select-dark select-dark-spaced">
-                        <option value="solo">Solo / Super Solo</option>
-                        <option value="coco">Fibra de Coco</option>
-                        <option value="hidro">Hidroponia</option>
-                    </select>
-                    <label for="ph-valor">pH medido:</label>
-                    <input type="number" id="ph-valor" step="0.1" min="0" max="14" placeholder="Ex: 6.2">
-                    <button type="button" onclick="calcularPH()" class="botao">Verificar pH</button>
-                    <div id="resultado-ph"></div>
-                </div>`,
-  energia: `
-                <div class="calculator">
-                    <label for="watts">Potência total (watts):</label>
-                    <input type="number" id="watts" step="1" placeholder="Ex: 300">
-                    <label for="horas-dia">Horas por dia:</label>
-                    <input type="number" id="horas-dia" step="0.5" min="0" max="24" placeholder="Ex: 18">
-                    <label for="preco-kwh">Preço do kWh (R$):</label>
-                    <input type="number" id="preco-kwh" step="0.01" placeholder="Ex: 0.85">
-                    <button type="button" onclick="calcularEnergia()" class="botao">Calcular Custo</button>
-                    <div id="resultado-energia"></div>
-                </div>`,
-  'watts-m2': `
-                <div class="calculator">
-                    <label for="watts-luz">Potência da luz (watts):</label>
-                    <input type="number" id="watts-luz" step="1" placeholder="Ex: 300">
-                    <label for="area-comp">Comprimento da área (cm):</label>
-                    <input type="number" id="area-comp" step="1" placeholder="Ex: 120">
-                    <label for="area-larg">Largura da área (cm):</label>
-                    <input type="number" id="area-larg" step="1" placeholder="Ex: 120">
-                    <button type="button" onclick="calcularWattsM2()" class="botao">Calcular W/m²</button>
-                    <div id="resultado-watts"></div>
                 </div>`
 };
 
@@ -263,9 +158,9 @@ function buildHubIndex() {
     ${GENERATED_MARKER}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Calculadoras do Inspetor BudGanja — utilitários para cultivo vegetal: VPD, DLI, EC, luxímetro e mais.">
+    <meta name="description" content="Calculadoras do Inspetor BudGanja — Super Calculadora de cultivo, luxímetro e Super Solo.">
     <meta property="og:title" content="Calculadoras | Inspetor BudGanja">
-    <meta property="og:description" content="Utilitários para cultivo vegetal: VPD, DLI, EC, luxímetro e mais.">
+    <meta property="og:description" content="Super Calculadora (VPD, DLI, pH, EC…), luxímetro e Super Solo.">
     <meta property="og:type" content="website">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/imagens/favicon-32.png" sizes="32x32" type="image/png">
@@ -290,10 +185,27 @@ ${body}
 `;
 }
 
+function removeStaleCalcPages() {
+  const activeSlugs = new Set(
+    CALCULADORAS.filter((c) => !c.customPage).map((c) => c.slug + '.html')
+  );
+  activeSlugs.add('index.html');
+  if (!fs.existsSync(CALC_DIR)) return;
+  for (const name of fs.readdirSync(CALC_DIR)) {
+    if (!name.endsWith('.html') || name === 'cultivo-lab.html' || name === 'luximetro.html') continue;
+    if (!activeSlugs.has(name)) {
+      fs.unlinkSync(path.join(CALC_DIR, name));
+      console.log('Removida calculadora obsoleta:', name);
+    }
+  }
+}
+
 function generate() {
   if (!fs.existsSync(CALC_DIR)) {
     fs.mkdirSync(CALC_DIR, { recursive: true });
   }
+
+  removeStaleCalcPages();
 
   let generated = 0;
 

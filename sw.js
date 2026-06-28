@@ -1,5 +1,5 @@
 // Service Worker para PWA - Inspetor BudGanja
-const APP_VERSION = '202';
+const APP_VERSION = '207';
 const CACHE_NAME = 'budganja-v' + APP_VERSION;
 const urlsToCache = [
     '/',
@@ -10,16 +10,9 @@ const urlsToCache = [
     '/loja/',
     '/loja/encomenda.html',
     '/calculadoras/',
+    '/calculadoras/cultivo-lab.html',
     '/calculadoras/luximetro.html',
-    '/calculadoras/vpd.html',
-    '/calculadoras/dli.html',
     '/calculadoras/super-solo.html',
-    '/calculadoras/volume-vaso.html',
-    '/calculadoras/ec.html',
-    '/calculadoras/diluicao.html',
-    '/calculadoras/ph.html',
-    '/calculadoras/energia.html',
-    '/calculadoras/watts-m2.html',
     '/guia/cultivo-basico.html',
     '/info/sobre.html',
     '/info/contato.html',
@@ -41,15 +34,9 @@ const urlsToCache = [
     '/equipamentos/manual-hidrocloradora.html',
     '/biblioteca/pesquisas/substratos.html',
     '/js/posts.js',
-    '/js/calculadoras/vpd.js',
-    '/js/calculadoras/dli.js',
+    '/js/calculadoras/cultivo-lab-engine.js',
+    '/js/calculadoras/cultivo-lab.js',
     '/js/calculadoras/super-solo.js',
-    '/js/calculadoras/volume-vaso.js',
-    '/js/calculadoras/ec.js',
-    '/js/calculadoras/diluicao.js',
-    '/js/calculadoras/ph.js',
-    '/js/calculadoras/energia.js',
-    '/js/calculadoras/watts-m2.js',
     '/js/luximetro.js',
     '/js/youtube.js',
     '/js/sorteios.js',

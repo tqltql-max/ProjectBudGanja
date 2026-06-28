@@ -469,7 +469,7 @@
         if (dliEstimate) {
             if (currentPPFD > 0) {
                 const dli18 = (currentPPFD * 18 * 3600) / 1000000;
-                dliEstimate.innerHTML = 'DLI estimado (18 h): <strong>' + dli18.toFixed(1) + '</strong> mol/m²/dia · <a href="/calculadoras/dli.html">Calcular DLI</a>';
+                dliEstimate.innerHTML = 'DLI estimado (18 h): <strong>' + dli18.toFixed(1) + '</strong> mol/m²/dia · <a href="/calculadoras/cultivo-lab.html?mode=dli">Calcular DLI</a>';
             } else {
                 dliEstimate.textContent = 'DLI estimado (18 h): — mol/m²/dia';
             }

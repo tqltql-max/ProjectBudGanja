@@ -60,7 +60,10 @@ const guiaFeed = feed.find((p) => p.slug === 'inspecao-cultivo-inicio');
 assert('posts-public tem series', guiaFeed && guiaFeed.series === 'guia-cultivo-basico');
 assert('posts-public coverImage absoluto', !feed.some((p) => p.coverImage && !p.coverImage.startsWith('/') && !/^https?:/i.test(p.coverImage)));
 
-assert('calculadoras registry', CALCULADORAS.length >= 9);
+assert('calculadoras registry', CALCULADORAS.length === 3);
+const cultivoLab = CALCULADORAS.find((c) => c.slug === 'cultivo-lab');
+assert('cultivo-lab featured', cultivoLab && cultivoLab.featured === true);
+assert('cultivo-lab URL custom', getCalculadoraUrl(cultivoLab) === '/calculadoras/cultivo-lab.html');
 CALCULADORAS.forEach((c) => {
   const url = getCalculadoraUrl(c);
   assert('URL ' + c.slug, url.startsWith('/calculadoras/') && url.endsWith('.html'));

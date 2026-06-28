@@ -91,54 +91,6 @@
                   "description": "Relatório sobre substratos biodegradáveis."
                 },
                 {
-                  "label": "Watts por m²: Guia de Uso",
-                  "tileLabel": "Watts por m²: Guia de Uso",
-                  "href": "/posts/post-guia-calculadora-watts-m2.html",
-                  "icon": "📋",
-                  "slug": "post-guia-calculadora-watts-m2",
-                  "description": "Como verificar se a potência luminosa está adequada para a área de cultivo — LEDs modernos."
-                },
-                {
-                  "label": "Custo de Energia: Guia de Uso",
-                  "tileLabel": "Custo de Energia: Guia de Uso",
-                  "href": "/posts/post-guia-calculadora-energia.html",
-                  "icon": "📋",
-                  "slug": "post-guia-calculadora-energia",
-                  "description": "Como estimar o gasto mensal de eletricidade do cultivo indoor — luz, ventilação e tarifa."
-                },
-                {
-                  "label": "Faixa de pH: Guia de Uso",
-                  "tileLabel": "Faixa de pH: Guia de Uso",
-                  "href": "/posts/post-guia-calculadora-ph.html",
-                  "icon": "📋",
-                  "slug": "post-guia-calculadora-ph",
-                  "description": "Como verificar se o pH está ideal para solo, coco ou hidroponia — leitura e correção."
-                },
-                {
-                  "label": "Diluição: Guia de Uso",
-                  "tileLabel": "Diluição: Guia de Uso",
-                  "href": "/posts/post-guia-calculadora-diluicao.html",
-                  "icon": "📋",
-                  "slug": "post-guia-calculadora-diluicao",
-                  "description": "Como diluir solução nutritiva concentrada até atingir a EC alvo — proporções práticas."
-                },
-                {
-                  "label": "Calculadora EC: Guia de Uso",
-                  "tileLabel": "Calculadora EC: Guia de Uso",
-                  "href": "/posts/post-guia-calculadora-ec.html",
-                  "icon": "📋",
-                  "slug": "post-guia-calculadora-ec",
-                  "description": "Como converter condutividade elétrica (EC) para PPM e interpretar concentração de nutrientes."
-                },
-                {
-                  "label": "Volume do Vaso: Guia de Uso",
-                  "tileLabel": "Volume do Vaso: Guia de Uso",
-                  "href": "/posts/post-guia-calculadora-volume-vaso.html",
-                  "icon": "📋",
-                  "slug": "post-guia-calculadora-volume-vaso",
-                  "description": "Como calcular litros de substrato a partir das dimensões do vaso — retangular ou cilíndrico."
-                },
-                {
                   "label": "Super Solo: Guia de Uso",
                   "tileLabel": "Super Solo: Guia de Uso",
                   "href": "/posts/post-guia-calculadora-super-solo.html",
@@ -147,28 +99,12 @@
                   "description": "Como calcular proporções de ingredientes para montar super solo orgânico em qualquer volume."
                 },
                 {
-                  "label": "Calculadora DLI: Guia de Uso",
-                  "tileLabel": "Calculadora DLI: Guia de Uso",
-                  "href": "/posts/post-guia-calculadora-dli.html",
-                  "icon": "📋",
-                  "slug": "post-guia-calculadora-dli",
-                  "description": "Como calcular o integral de luz diária a partir do PPFD e fotoperíodo — faixas por estágio de cultivo."
-                },
-                {
                   "label": "Luxímetro: Guia de Uso",
                   "tileLabel": "Luxímetro: Guia de Uso",
                   "href": "/posts/post-guia-calculadora-luximetro.html",
                   "icon": "📋",
                   "slug": "post-guia-calculadora-luximetro",
                   "description": "Como medir PPFD e lux com a câmera do celular — calibração, posicionamento e leituras confiáveis."
-                },
-                {
-                  "label": "Calculadora VPD: Guia de Uso",
-                  "tileLabel": "Calculadora VPD: Guia de Uso",
-                  "href": "/posts/post-calculadora-vpd-guia-laboratorio.html",
-                  "icon": "📋",
-                  "slug": "post-calculadora-vpd-guia-laboratorio",
-                  "description": "Como interpretar déficit de pressão de vapor — faixas por fase, leituras e ajustes práticos na tenda."
                 },
                 {
                   "label": "Processo de Germinação Controlado",
@@ -384,6 +320,14 @@
                   "description": "Índice com todas as ferramentas numéricas."
                 },
                 {
+                  "label": "Super Calc",
+                  "href": "/calculadoras/cultivo-lab.html",
+                  "icon": "🧪",
+                  "slug": "cultivo-lab",
+                  "featured": true,
+                  "description": "VPD, DLI, pH, EC, diluição, volume de vaso, W/m² e energia numa só ferramenta — modos em botões como calculadora científica."
+                },
+                {
                   "label": "Luxímetro",
                   "href": "/calculadoras/luximetro.html",
                   "icon": "📷",
@@ -392,76 +336,12 @@
                   "description": "Meça a intensidade luminosa em tempo real usando a câmera do celular. Estime PPFD e lux."
                 },
                 {
-                  "label": "VPD",
-                  "href": "/calculadoras/vpd.html",
-                  "icon": "🌡️",
-                  "slug": "vpd",
-                  "featured": false,
-                  "description": "Calcule o Déficit de Pressão de Vapor para otimizar o ambiente de cultivo."
-                },
-                {
-                  "label": "DLI",
-                  "href": "/calculadoras/dli.html",
-                  "icon": "☀️",
-                  "slug": "dli",
-                  "featured": false,
-                  "description": "Calcule o Integral de Luz Diária a partir do PPFD e fotoperíodo."
-                },
-                {
                   "label": "Solo",
                   "href": "/calculadoras/super-solo.html",
                   "icon": "🪴",
                   "slug": "super-solo",
                   "featured": false,
                   "description": "Calcule dosagens de amendments (gramas e ml) para super solo orgânico a partir do volume de substrato."
-                },
-                {
-                  "label": "Vaso",
-                  "href": "/calculadoras/volume-vaso.html",
-                  "icon": "📐",
-                  "slug": "volume-vaso",
-                  "featured": false,
-                  "description": "Calcule o volume em litros a partir das dimensões do vaso."
-                },
-                {
-                  "label": "EC",
-                  "href": "/calculadoras/ec.html",
-                  "icon": "⚡",
-                  "slug": "ec",
-                  "featured": false,
-                  "description": "Calcule a Condutividade Elétrica e converta para PPM."
-                },
-                {
-                  "label": "Diluição",
-                  "href": "/calculadoras/diluicao.html",
-                  "icon": "🧪",
-                  "slug": "diluicao",
-                  "featured": false,
-                  "description": "Calcule quanto diluir sua solução concentrada."
-                },
-                {
-                  "label": "pH",
-                  "href": "/calculadoras/ph.html",
-                  "icon": "🧫",
-                  "slug": "ph",
-                  "featured": false,
-                  "description": "Verifique se o pH da sua solução está na faixa ideal para cada fase e meio de cultivo."
-                },
-                {
-                  "label": "Energia",
-                  "href": "/calculadoras/energia.html",
-                  "icon": "💡",
-                  "slug": "energia",
-                  "featured": false,
-                  "description": "Calcule o custo mensal de eletricidade do seu cultivo indoor."
-                },
-                {
-                  "label": "W/m²",
-                  "href": "/calculadoras/watts-m2.html",
-                  "icon": "🔆",
-                  "slug": "watts-m2",
-                  "featured": false,
-                  "description": "Verifique se a potência luminosa está adequada para a área do seu cultivo."
                 }
               ]
             },

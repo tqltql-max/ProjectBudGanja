@@ -44,6 +44,8 @@ async function run() {
       id: growId,
       name: 'Pesquisa teste',
       species: 'Lycopersicon esculentum',
+      environment: 'indoor',
+      substrate: 'coco',
       plantedAt: now,
       phase: 'vegetativo',
       plantCount: 3,
@@ -77,11 +79,14 @@ async function run() {
     assert('load settings phase', loaded.phase === 'vegetativo');
     assert('grow count', loaded.growLogs.length === 1);
     assert('grow species', loaded.growLogs[0].species === 'Lycopersicon esculentum');
+    assert('grow environment', loaded.growLogs[0].environment === 'indoor');
+    assert('grow substrate', loaded.growLogs[0].substrate === 'coco');
     assert('grow plantCount', loaded.growLogs[0].plantCount === 3);
     assert('entry count', loaded.growLogs[0].entries.length === 1);
     assert('entry metrics ph', loaded.growLogs[0].entries[0].metrics.ph === 6.2);
     assert('plan task', loaded.planTasks.length === 1 && loaded.planTasks[0].label === 'Rega amanhã');
-    assert('guide week notes', loaded.guideWeekNotes['1'] === 'Semana 1 ok');
+    assert('grow custom guide', loaded.growLogs[0].customGuide === 'Notas gerais de teste');
+    assert('grow week notes', loaded.growLogs[0].guideWeekNotes['1'] === 'Semana 1 ok');
   } finally {
     await db.execute({ sql: 'DELETE FROM cultivo_entries WHERE user_id = ?', args: [TEST_USER_ID] });
     await db.execute({ sql: 'DELETE FROM cultivo_grows WHERE user_id = ?', args: [TEST_USER_ID] });

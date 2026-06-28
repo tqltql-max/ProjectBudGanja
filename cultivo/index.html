@@ -9,15 +9,15 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="/imagens/icon-512.png">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="/imagens/favicon-32.png?v=202" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.png?v=202" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=202">
+    <link rel="icon" href="/imagens/favicon-32.png?v=207" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=207" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=207">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#3d5c28">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="stylesheet" href="/css/style.css?v=202">
+    <link rel="stylesheet" href="/css/style.css?v=207">
     <meta name="robots" content="noindex,nofollow">
     <title>Diário de Pesquisas | Inspetor BudGanja</title>
 </head>
@@ -66,7 +66,7 @@
 
         <p id="perfil-live-status" class="perfil-live-status" role="status" aria-live="polite" hidden></p>
 
-
+        <div id="cultivo-submission-notify" class="cultivo-submission-notify" hidden role="status" aria-live="polite"></div>
 
         <!-- Hub: lista de pesquisas + começar por aqui -->
 
@@ -87,6 +87,8 @@
           <ul id="cultivo-hub-list" class="cultivo-hub-grid" aria-live="polite"></ul>
 
           <p id="cultivo-hub-empty" class="cultivo-hub-empty" hidden>Ainda não tem pesquisas. Toque em «Iniciar nova pesquisa» para começar.</p>
+
+          <div id="cultivo-onboarding-root" class="cultivo-onboarding" hidden aria-live="polite"></div>
 
         </div>
 
@@ -148,6 +150,30 @@
 
               </label>
 
+              <label class="login-field conta-field" for="cultivo-wizard-environment">Ambiente
+
+                <select id="cultivo-wizard-environment">
+                  <option value="">— usar padrão da conta —</option>
+                  <option value="indoor">Indoor (tenda/gabinete)</option>
+                  <option value="outdoor">Outdoor</option>
+                  <option value="estufa">Estufa</option>
+                </select>
+
+              </label>
+
+              <label class="login-field conta-field" for="cultivo-wizard-substrate">Substrato / meio
+
+                <select id="cultivo-wizard-substrate">
+                  <option value="">— usar padrão da conta —</option>
+                  <option value="solo-organico">Solo orgânico</option>
+                  <option value="super-solo">Super solo (amendments)</option>
+                  <option value="coco">Fibra de coco</option>
+                  <option value="hidroponia">Hidroponia (inerte)</option>
+                  <option value="outro">Outro</option>
+                </select>
+
+              </label>
+
               <div class="conta-actions">
 
                 <button type="button" class="botao botao-outline" id="cultivo-wizard-cancel">Cancelar</button>
@@ -174,7 +200,14 @@
 
           <header id="cultivo-grow-header" class="cultivo-grow-header info-panel highlight-card"></header>
 
+          <p id="cultivo-autosave-status" class="cultivo-autosave-status" role="status" aria-live="polite" hidden></p>
 
+          <nav id="cultivo-section-nav" class="cultivo-section-nav" aria-label="Secções da pesquisa">
+            <button type="button" class="cultivo-section-nav-btn is-active" data-tab="diario">Diário</button>
+            <button type="button" class="cultivo-section-nav-btn" data-tab="semana">Roteiro</button>
+            <button type="button" class="cultivo-section-nav-btn" data-tab="plano">Plano</button>
+            <button type="button" class="cultivo-section-nav-btn" data-tab="ferramentas">Ferramentas</button>
+          </nav>
 
           <div class="cultivo-sections">
 
@@ -202,6 +235,34 @@
 
               </label>
 
+              <div class="perfil-grow-setup-grid">
+
+                <label class="login-field conta-field" for="perfil-grow-environment">Ambiente desta pesquisa
+
+                  <select id="perfil-grow-environment">
+                    <option value="">— não definido —</option>
+                    <option value="indoor">Indoor (tenda/gabinete)</option>
+                    <option value="outdoor">Outdoor</option>
+                    <option value="estufa">Estufa</option>
+                  </select>
+
+                </label>
+
+                <label class="login-field conta-field" for="perfil-grow-substrate">Substrato / meio
+
+                  <select id="perfil-grow-substrate">
+                    <option value="">— não definido —</option>
+                    <option value="solo-organico">Solo orgânico</option>
+                    <option value="super-solo">Super solo (amendments)</option>
+                    <option value="coco">Fibra de coco</option>
+                    <option value="hidroponia">Hidroponia (inerte)</option>
+                    <option value="outro">Outro</option>
+                  </select>
+
+                </label>
+
+              </div>
+
               <div class="perfil-grow-detail-actions conta-actions cultivo-grow-actions">
 
                 <button type="button" class="botao botao-sm" id="perfil-grow-submit-lab">Submeter ao laboratório</button>
@@ -209,6 +270,10 @@
                 <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-export-md">Exportar Markdown</button>
 
                 <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-export-csv">Exportar CSV</button>
+
+                <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-duplicate">Duplicar</button>
+
+                <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-compare">Comparar métricas</button>
 
                 <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-rename">Renomear</button>
 
@@ -219,6 +284,8 @@
               </div>
 
               <p id="perfil-grow-submission-status" class="cultivo-submission-status conta-status" role="status" aria-live="polite"></p>
+
+              <div id="perfil-grow-metrics-charts" class="cultivo-metrics-charts highlight-card" hidden aria-live="polite"></div>
 
               <ul id="perfil-grow-entries" class="perfil-grow-entries perfil-grow-timeline" aria-live="polite"></ul>
 
@@ -268,6 +335,8 @@
 
                 </div>
 
+                <p id="perfil-grow-entry-metrics-hint" class="field-hint cultivo-metrics-hint" role="alert" hidden></p>
+
                 <label class="login-field conta-field" for="perfil-grow-entry-date">Data
 
                   <input type="date" id="perfil-grow-entry-date" required>
@@ -280,7 +349,7 @@
 
                 </label>
 
-                <label class="login-field conta-field" for="perfil-grow-entry-photos">Fotos <span class="perfil-field-optional">(opcional, máx. 4)</span>
+                <label class="login-field conta-field cultivo-entry-photos-field" for="perfil-grow-entry-photos">Fotos <span class="perfil-field-optional">(opcional, máx. 4 — arraste ou clique)</span>
 
                   <input type="file" id="perfil-grow-entry-photos" accept="image/jpeg,image/png,image/webp" multiple>
 
@@ -288,7 +357,7 @@
 
                 <div id="perfil-grow-entry-photos-preview" class="perfil-entry-photos-preview" aria-live="polite"></div>
 
-                <button type="submit" class="botao">Guardar registo</button>
+                <button type="submit" class="botao" id="perfil-grow-entry-submit">Guardar registo</button>
 
               </form>
 
@@ -338,7 +407,7 @@
 
                 <button type="button" class="botao" id="perfil-week-notes-save-btn">Guardar no diário</button>
 
-                <a href="/biblioteca/inspecoes/" class="botao botao-outline">Guia em vídeo</a>
+                <a href="/biblioteca/inspecoes/" class="botao botao-outline" id="perfil-week-inspection-link">Guia em vídeo</a>
 
               </div>
 
@@ -402,6 +471,8 @@
 
               </form>
 
+              <div id="perfil-plan-preview" class="perfil-plan-preview highlight-card" hidden aria-live="polite"></div>
+
               <ul id="perfil-plano-list" class="perfil-plano-list"></ul>
 
               <form id="perfil-plano-add" class="perfil-plano-add">
@@ -444,21 +515,80 @@
 
   </main>
 
+  <div id="cultivo-compare-modal" class="cultivo-modal" hidden role="dialog" aria-modal="true" aria-labelledby="cultivo-compare-modal-title">
+    <div class="cultivo-modal-backdrop" data-modal-close="compare"></div>
+    <div class="cultivo-modal-card highlight-card cultivo-compare-modal-card">
+      <h2 id="cultivo-compare-modal-title">Comparar métricas</h2>
+      <p class="field-hint">Médias dos registos com pH, EC, temperatura ou RH.</p>
+      <label class="login-field conta-field">Comparar com
+        <select id="cultivo-compare-select"></select>
+      </label>
+      <div id="cultivo-compare-output" class="cultivo-compare-output" aria-live="polite"></div>
+      <div class="conta-actions">
+        <button type="button" class="botao botao-outline" data-modal-close="compare">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="cultivo-submit-modal" class="cultivo-modal" hidden role="dialog" aria-modal="true" aria-labelledby="cultivo-submit-modal-title">
+    <div class="cultivo-modal-backdrop" data-modal-close="submit"></div>
+    <div class="cultivo-modal-card highlight-card">
+      <h2 id="cultivo-submit-modal-title">Submeter ao laboratório</h2>
+      <p class="field-hint">A equipa irá rever o diário antes de publicar em <strong>Pesquisas</strong> na biblioteca.</p>
+      <label class="login-field conta-field">Título da publicação
+        <input type="text" id="cultivo-submit-title" maxlength="120" required>
+      </label>
+      <label class="login-field conta-field">Resumo curto
+        <input type="text" id="cultivo-submit-excerpt" maxlength="280" placeholder="Resumo para a listagem do site">
+      </label>
+      <ul id="cultivo-submit-checklist" class="cultivo-submit-checklist" aria-live="polite"></ul>
+      <details class="cultivo-submit-preview-wrap">
+        <summary>Pré-visualizar Markdown</summary>
+        <pre id="cultivo-submit-preview" class="cultivo-submit-preview"></pre>
+      </details>
+      <div class="conta-actions">
+        <button type="button" class="botao botao-outline" data-modal-close="submit">Cancelar</button>
+        <button type="button" class="botao" id="cultivo-submit-confirm">Enviar submissão</button>
+      </div>
+      <p id="cultivo-submit-modal-status" class="conta-status" role="status"></p>
+    </div>
+  </div>
+
+  <div id="cultivo-rename-modal" class="cultivo-modal" hidden role="dialog" aria-modal="true" aria-labelledby="cultivo-rename-modal-title">
+    <div class="cultivo-modal-backdrop" data-modal-close="rename"></div>
+    <div class="cultivo-modal-card highlight-card">
+      <h2 id="cultivo-rename-modal-title">Renomear pesquisa</h2>
+      <label class="login-field conta-field">Nome
+        <input type="text" id="cultivo-rename-input" maxlength="80" required>
+      </label>
+      <div class="conta-actions">
+        <button type="button" class="botao botao-outline" data-modal-close="rename">Cancelar</button>
+        <button type="button" class="botao" id="cultivo-rename-confirm">Guardar</button>
+      </div>
+    </div>
+  </div>
+
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=202"></script>
-    <script src="/js/i18n-data.js?v=202"></script>
-    <script src="/js/i18n.js?v=202"></script>
-    <script src="/js/ferramentas-nav-data.js?v=202"></script>
-    <script src="/js/layout.js?v=202"></script>
-    <script src="/js/site-features.js?v=202"></script>
+  <script src="/js/app-version-check.js?v=207"></script>
+    <script src="/js/i18n-data.js?v=207"></script>
+    <script src="/js/i18n.js?v=207"></script>
+    <script src="/js/ferramentas-nav-data.js?v=207"></script>
+    <script src="/js/layout.js?v=207"></script>
+    <script src="/js/site-features.js?v=207"></script>
 
-  <script src="/js/cultivo/shared.js?v=202"></script>
+  <script src="/js/cultivo/shared.js?v=207"></script>
 
-  <script src="/js/cultivo/onboarding.js?v=202"></script>
+  <script src="/js/cultivo/markdown.js?v=207"></script>
 
-  <script src="/js/cultivo-phase-weeks-data.js?v=202"></script>
+  <script src="/js/cultivo/charts.js?v=207"></script>
 
-  <script src="/js/cultivo.js?v=202"></script>
+  <script src="/js/cultivo/autosave.js?v=207"></script>
+
+  <script src="/js/cultivo/onboarding.js?v=207"></script>
+
+  <script src="/js/cultivo-phase-weeks-data.js?v=207"></script>
+
+  <script src="/js/cultivo.js?v=207"></script>
 
 </body>
 </html>

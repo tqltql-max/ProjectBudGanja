@@ -13,7 +13,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "Watts por m²",
-          "href": "/calculadoras/watts-m2.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=watts-m2"
         }
       ]
     },
@@ -33,7 +33,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
         },
         {
           "label": "Volume do vaso",
-          "href": "/calculadoras/volume-vaso.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=volume"
         }
       ]
     },
@@ -53,7 +53,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
         },
         {
           "label": "Custo de energia",
-          "href": "/calculadoras/energia.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=energia"
         }
       ]
     },
@@ -87,7 +87,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "VPD",
-          "href": "/calculadoras/vpd.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=vpd"
         }
       ]
     },
@@ -103,7 +103,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "Volume do vaso",
-          "href": "/calculadoras/volume-vaso.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=volume"
         }
       ]
     },
@@ -119,7 +119,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "VPD",
-          "href": "/calculadoras/vpd.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=vpd"
         }
       ]
     }
@@ -137,7 +137,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "VPD",
-          "href": "/calculadoras/vpd.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=vpd"
         }
       ]
     },
@@ -157,11 +157,11 @@ window.__CULTIVO_PHASE_WEEKS__ = {
         },
         {
           "label": "DLI",
-          "href": "/calculadoras/dli.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=dli"
         },
         {
           "label": "pH",
-          "href": "/calculadoras/ph.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=ph"
         }
       ]
     },
@@ -177,7 +177,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "VPD",
-          "href": "/calculadoras/vpd.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=vpd"
         }
       ]
     },
@@ -193,7 +193,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "EC",
-          "href": "/calculadoras/ec.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=ec"
         }
       ]
     },
@@ -209,7 +209,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "DLI",
-          "href": "/calculadoras/dli.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=dli"
         }
       ]
     }
@@ -227,7 +227,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "VPD",
-          "href": "/calculadoras/vpd.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=vpd"
         }
       ]
     },
@@ -243,7 +243,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "pH",
-          "href": "/calculadoras/ph.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=ph"
         }
       ]
     },
@@ -259,11 +259,11 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "EC",
-          "href": "/calculadoras/ec.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=ec"
         },
         {
           "label": "VPD",
-          "href": "/calculadoras/vpd.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=vpd"
         }
       ]
     },
@@ -279,7 +279,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "Diluição",
-          "href": "/calculadoras/diluicao.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=diluicao"
         }
       ]
     },
@@ -311,7 +311,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "VPD",
-          "href": "/calculadoras/vpd.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=vpd"
         }
       ]
     }
@@ -340,7 +340,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "VPD",
-          "href": "/calculadoras/vpd.html"
+          "href": "/calculadoras/cultivo-lab.html?mode=vpd"
         }
       ]
     },
