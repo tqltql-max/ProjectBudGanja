@@ -16,6 +16,13 @@ desktop.ini
 .idea/
 *.swp
 
+# Backup externo (fora do repo)
+scripts/_jardimhg-*.json
+scripts/_tmp-*.js
+
+# Cursor
+.cursor/
+
 # Logs e temporários
 *.log
 npm-debug.log*
@@ -25,5 +32,16 @@ npm-debug.log*
 uploads/*
 !uploads/.gitkeep
 
+# Base de dados SQLite local
+data/
+!data/.gitkeep
+!data/backups/.gitkeep
+
 # Sessões locais de dev
 content/sessions.json
+
+# Android TWA (Play Store) — chaves e build local
+deploy/android/bubblewrap-project/
+deploy/android/*.keystore
+deploy/android/*.jks
+deploy/android/*.pepk

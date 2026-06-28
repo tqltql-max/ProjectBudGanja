@@ -1,0 +1,15 @@
+{
+  "ativo": false,
+  "emBreve": true,
+  "titulo": "Sorteio de inauguração — Inspetor BudGanja",
+  "descricao": "O primeiro sorteio do laboratório será a clonadora caseira com pote de sorvete documentada aqui no site — bucha de louça, bombinha de aquário ligada 24 h. As inscrições abrem em breve; o resultado será divulgado no canal @InspetorBudGanja.",
+  "dataSorteio": "Data a definir",
+  "googleFormUrl": "",
+  "manualUrl": "/equipamentos/clonadora-6-estacas.html",
+  "premios": [
+    {
+      "id": "clonadora-aeroponica",
+      "label": "Clonadora caseira com pote de sorvete"
+    }
+  ]
+}

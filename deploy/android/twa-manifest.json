@@ -1,0 +1,50 @@
+{
+  "packageId": "com.inspetorbudganja.app",
+  "host": "inspetorbudganja.com.br",
+  "name": "Inspetor BudGanja",
+  "launcherName": "BudGanja",
+  "display": "standalone",
+  "themeColor": "#27AE60",
+  "themeColorDark": "#1A1A1A",
+  "navigationColor": "#1A1A1A",
+  "navigationColorDark": "#1A1A1A",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#1A1A1A",
+  "enableNotifications": false,
+  "startUrl": "/index.html",
+  "iconUrl": "https://inspetorbudganja.com.br/imagens/icon-512.png",
+  "maskableIconUrl": "https://inspetorbudganja.com.br/imagens/icon-512.png",
+  "monochromeIconUrl": "https://inspetorbudganja.com.br/imagens/icon-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "budganja"
+  },
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://inspetorbudganja.com.br/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {
+    "playBilling": {
+      "enabled": false
+    },
+    "locationDelegation": {
+      "enabled": false
+    }
+  },
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "minSdkVersion": 21,
+  "orientation": "default",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "appVersion": "1.0.0"
+}

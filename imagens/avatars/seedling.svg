@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Muda">
+  <circle cx="64" cy="64" r="64" fill="#1a3324"/>
+  <rect x="58" y="72" width="12" height="28" rx="4" fill="#8B6914"/>
+  <ellipse cx="64" cy="78" rx="22" ry="8" fill="#3d2817"/>
+  <path d="M64 72V44c-14 4-22 16-22 28h22zm0 0c14-4 22-16 22-28H64v28z" fill="#27ae60"/>
+  <path d="M64 38c6-10 14-14 20-12-8 6-12 14-12 22 0-4-4-8-8-10z" fill="#2ecc71"/>
+</svg>

@@ -1,8 +1,7 @@
 const path = require('path');
 const { connectLambda } = require('@netlify/blobs');
-const { createBlobStore } = require('../../lib/store-blobs.js');
+const { createAppStore } = require('../../lib/create-store.js');
 const { handleApiRequest } = require('../../lib/api-handler.js');
-const { ensureBlobSeed } = require('../../lib/seed-blobs.js');
 
 const ROOT = path.resolve(__dirname, '../..');
 
@@ -28,8 +27,7 @@ function resolveApiPath(event) {
 exports.handler = async (event) => {
   connectLambda(event);
 
-  const store = createBlobStore();
-  await ensureBlobSeed(store, ROOT);
+  const store = await createAppStore({ root: ROOT, netlify: true });
 
   const query = (event.rawQuery || event.rawUrl || '').split('?')[1] || '';
 
@@ -42,9 +40,14 @@ exports.handler = async (event) => {
     query
   }, { store, root: null, fsFallback: ROOT });
 
+  const outHeaders = Object.assign({ 'Cache-Control': 'no-store' }, response.headers || {});
+  if (response.setCookies && response.setCookies.length) {
+    outHeaders['Set-Cookie'] = response.setCookies;
+  }
+
   return {
     statusCode: response.status,
-    headers: Object.assign({ 'Cache-Control': 'no-store' }, response.headers),
+    headers: outHeaders,
     body: response.body
   };
 };

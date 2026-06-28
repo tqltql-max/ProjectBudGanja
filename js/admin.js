@@ -1,30 +1,28 @@
-﻿document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', async () => {
   const userLabel = document.getElementById('admin-user');
   const logoutBtn = document.getElementById('logout-btn');
 
   try {
     const me = await fetch('/api/me', { credentials: 'include' });
     if (!me.ok) {
-      window.location.href = 'login.html';
+      window.location.href = '/login.html?returnTo=/admin.html';
       return;
     }
     const userData = await me.json();
     if (userLabel) userLabel.textContent = userData.username || 'admin';
   } catch (e) {
-    window.location.href = 'login.html';
+    window.location.href = '/login.html?returnTo=/admin.html';
     return;
   }
 
   if (logoutBtn) {
     logoutBtn.addEventListener('click', async () => {
       await fetch('/api/logout', { method: 'POST', credentials: 'include' });
-      window.location.href = 'login.html';
+      window.location.href = '/login.html';
     });
   }
 
-  const postsApi = initPostsPanel();
-  const slug = new URLSearchParams(window.location.search).get('slug');
-  if (slug && postsApi) await postsApi.openSlug(slug);
+  initPostsPanel();
 });
 
 async function uploadImage(file) {
@@ -101,6 +99,10 @@ function escapeText(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
+function escapeAttr(s) {
+  return escapeText(s).replace(/"/g, '&quot;');
+}
+
 function insertAtCursor(textarea, text) {
   const start = textarea.selectionStart;
   const end = textarea.selectionEnd;
@@ -112,9 +114,9 @@ function insertAtCursor(textarea, text) {
 }
 
 function listingUrl(category) {
-  if (category === 'equipamento') return 'equipamentos.html';
-  if (category === 'inspecao') return 'inspecoes.html';
-  return 'pesquisas.html';
+  if (category === 'equipamento') return '/equipamentos/';
+  if (category === 'inspecao') return '/biblioteca/inspecoes/';
+  return '/biblioteca/pesquisas/';
 }
 
 function categoryLabel(category) {
@@ -123,11 +125,30 @@ function categoryLabel(category) {
   return 'Pesquisas';
 }
 
+function coverSrc(coverImage) {
+  const raw = String(coverImage || '').trim();
+  if (!raw) return '';
+  if (/^(?:https?:)?\/\//i.test(raw) || raw.startsWith('/')) return raw;
+  return '/' + raw.replace(/^\/+/, '');
+}
+
 function initPostsPanel() {
+  const listView = document.getElementById('admin-list-view');
+  const editorView = document.getElementById('admin-editor-view');
+  const backToListBtn = document.getElementById('back-to-list-btn');
+  const newPostBtn = document.getElementById('new-post-btn');
+  const postsSearch = document.getElementById('posts-search');
+  const filterCategory = document.getElementById('filter-category');
+  const filterStatus = document.getElementById('filter-status');
+  const postsTable = document.getElementById('posts-table');
+  const postsTableWrap = document.getElementById('posts-table-wrap');
+  const postsEmpty = document.getElementById('posts-empty');
+  const adminStats = document.getElementById('admin-stats');
+  const editorModeBadge = document.getElementById('editor-mode-badge');
+
   const form = document.getElementById('post-form');
   const result = document.getElementById('result');
   const previewEl = document.getElementById('preview');
-  const postsList = document.getElementById('posts-list');
   const postsCount = document.getElementById('posts-count');
   const formHeading = document.getElementById('form-heading');
   const titleEl = document.getElementById('title');
@@ -148,6 +169,21 @@ function initPostsPanel() {
   let editingSlug = null;
   let cachedPosts = [];
   let previewTimer = null;
+  let currentView = 'list';
+
+  function showView(view) {
+    currentView = view;
+    const isList = view === 'list';
+    if (listView) listView.hidden = !isList;
+    if (editorView) editorView.hidden = isList;
+    if (isList) {
+      document.title = 'Painel Admin | Inspetor BudGanja';
+      renderStudioTable();
+    } else {
+      document.title = (editingSlug ? 'Editar' : 'Nova') + ' publicação | Inspetor BudGanja';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
 
   function setEditMode(slug) {
     editingSlug = slug;
@@ -155,6 +191,32 @@ function initPostsPanel() {
     submitBtn.textContent = editing ? 'Salvar alterações' : 'Publicar';
     cancelEditBtn.hidden = !editing;
     formHeading.textContent = editing ? 'Editar publicação' : 'Nova publicação';
+    if (editorModeBadge) {
+      editorModeBadge.textContent = editing ? 'Edição' : 'Nova';
+      editorModeBadge.classList.toggle('admin-editor-badge--edit', editing);
+    }
+  }
+
+  function countPostsBy(filterFn) {
+    return cachedPosts.filter(filterFn).length;
+  }
+
+  function renderAdminStats() {
+    if (!adminStats) return;
+    const total = cachedPosts.length;
+    const published = countPostsBy((p) => p.published !== false);
+    const drafts = countPostsBy((p) => p.published === false);
+    const pesquisas = countPostsBy((p) => (p.category || 'pesquisa') === 'pesquisa');
+    const inspecoes = countPostsBy((p) => p.category === 'inspecao');
+    const equip = countPostsBy((p) => p.category === 'equipamento');
+
+    adminStats.innerHTML =
+      '<article class="admin-stat-card"><span class="admin-stat-value">' + total + '</span><span class="admin-stat-label">Total</span></article>' +
+      '<article class="admin-stat-card admin-stat-card--live"><span class="admin-stat-value">' + published + '</span><span class="admin-stat-label">Publicadas</span></article>' +
+      '<article class="admin-stat-card admin-stat-card--draft"><span class="admin-stat-value">' + drafts + '</span><span class="admin-stat-label">Rascunhos</span></article>' +
+      '<article class="admin-stat-card admin-stat-card--meta">' +
+        '<span class="admin-stat-value admin-stat-value--sm">' + pesquisas + ' · ' + inspecoes + ' · ' + equip + '</span>' +
+        '<span class="admin-stat-label">Pesquisas · Inspeções · Equip.</span></article>';
   }
 
   function updatePreview() {
@@ -172,7 +234,7 @@ function initPostsPanel() {
   function updateCoverPreview() {
     const url = coverEl.value.trim();
     if (!url || !coverPreview || !coverPreviewWrap) return;
-    coverPreview.src = url;
+    coverPreview.src = coverSrc(url);
     coverPreviewWrap.classList.remove('hidden');
     if (imageFileName) imageFileName.textContent = url.split('/').pop() || 'Imagem de capa';
   }
@@ -206,6 +268,145 @@ function initPostsPanel() {
     updatePreview();
   }
 
+  function openEditor(post) {
+    if (post) {
+      fillForm(post);
+      history.replaceState({}, '', '/admin.html?slug=' + encodeURIComponent(post.slug));
+    } else {
+      resetForm();
+      history.replaceState({}, '', '/admin.html?new=1');
+    }
+    showView('edit');
+  }
+
+  function closeEditor() {
+    resetForm();
+    history.replaceState({}, '', '/admin.html');
+    showView('list');
+  }
+
+  function getFilteredPosts() {
+    const q = (postsSearch && postsSearch.value || '').trim().toLowerCase();
+    const cat = filterCategory ? filterCategory.value : '';
+    const status = filterStatus ? filterStatus.value : '';
+
+    return cachedPosts.filter((p) => {
+      if (cat && (p.category || 'pesquisa') !== cat) return false;
+      if (status === 'published' && p.published === false) return false;
+      if (status === 'draft' && p.published !== false) return false;
+      if (!q) return true;
+      const hay = ((p.title || '') + ' ' + (p.excerpt || '')).toLowerCase();
+      return hay.includes(q);
+    });
+  }
+
+  function renderStudioTable() {
+    if (!postsTable) return;
+
+    const filtered = getFilteredPosts();
+    postsCount.textContent = filtered.length + (cachedPosts.length ? ' / ' + cachedPosts.length : '');
+    renderAdminStats();
+
+    if (!cachedPosts.length) {
+      postsTable.innerHTML = '';
+      if (postsTableWrap) postsTableWrap.hidden = true;
+      if (postsEmpty) {
+        postsEmpty.hidden = false;
+        postsEmpty.textContent = 'Nenhuma publicação ainda. Clique em "+ Nova publicação" para começar.';
+      }
+      return;
+    }
+
+    if (!filtered.length) {
+      postsTable.innerHTML = '';
+      if (postsTableWrap) postsTableWrap.hidden = true;
+      if (postsEmpty) {
+        postsEmpty.hidden = false;
+        postsEmpty.textContent = 'Nenhuma publicação corresponde aos filtros.';
+      }
+      return;
+    }
+
+    if (postsTableWrap) postsTableWrap.hidden = false;
+    if (postsEmpty) postsEmpty.hidden = true;
+
+    const sorted = filtered.slice().sort((a, b) => {
+      return new Date(b.date || 0) - new Date(a.date || 0);
+    });
+
+    let html =
+      '<div class="admin-studio-row admin-studio-row--head" role="row">' +
+        '<span class="admin-studio-cell admin-studio-cell--thumb" role="columnheader"></span>' +
+        '<span class="admin-studio-cell admin-studio-cell--title" role="columnheader">Publicação</span>' +
+        '<span class="admin-studio-cell admin-studio-cell--cat" role="columnheader">Categoria</span>' +
+        '<span class="admin-studio-cell admin-studio-cell--status" role="columnheader">Estado</span>' +
+        '<span class="admin-studio-cell admin-studio-cell--date" role="columnheader">Data</span>' +
+        '<span class="admin-studio-cell admin-studio-cell--actions" role="columnheader">Ações</span>' +
+      '</div>';
+
+    sorted.forEach((p) => {
+      const isDraft = p.published === false;
+      const catLabel = categoryLabel(p.category);
+      const thumb = coverSrc(p.coverImage);
+      const thumbHtml = thumb
+        ? '<img src="' + escapeAttr(thumb) + '" alt="" class="admin-studio-thumb" loading="lazy">'
+        : '<span class="admin-studio-thumb admin-studio-thumb--empty" aria-hidden="true">📄</span>';
+      const statusClass = isDraft ? 'admin-tag-draft' : 'admin-tag-live';
+      const statusLabel = isDraft ? 'Rascunho' : 'Publicada';
+      const isActive = editingSlug === p.slug && currentView === 'edit';
+
+      html +=
+        '<article class="admin-studio-row' + (isActive ? ' is-active' : '') + '" role="row" data-slug="' + escapeAttr(p.slug) + '">' +
+          '<div class="admin-studio-cell admin-studio-cell--thumb" role="cell">' + thumbHtml + '</div>' +
+          '<div class="admin-studio-cell admin-studio-cell--title" role="cell">' +
+            '<strong class="admin-studio-title">' + escapeText(p.title || 'Sem título') + '</strong>' +
+            '<span class="admin-studio-excerpt">' + escapeText(p.excerpt || '—') + '</span>' +
+          '</div>' +
+          '<div class="admin-studio-cell admin-studio-cell--cat" role="cell"><span class="admin-tag">' + escapeText(catLabel) + '</span></div>' +
+          '<div class="admin-studio-cell admin-studio-cell--status" role="cell"><span class="admin-tag ' + statusClass + '">' + statusLabel + '</span></div>' +
+          '<div class="admin-studio-cell admin-studio-cell--date" role="cell">' + escapeText(formatDatePtBR(p.date)) + '</div>' +
+          '<div class="admin-studio-cell admin-studio-cell--actions" role="cell">' +
+            '<button type="button" class="edit-btn botao admin-secondary">Editar</button>' +
+            (isDraft ? '' : '<a href="' + escapeAttr(p.url) + '" target="_blank" rel="noopener" class="botao admin-secondary">Ver</a>') +
+            '<button type="button" class="delete-btn admin-danger">Excluir</button>' +
+          '</div>' +
+        '</article>';
+    });
+
+    postsTable.innerHTML = html;
+
+    postsTable.querySelectorAll('.admin-studio-row[data-slug]').forEach((row) => {
+      const slug = row.getAttribute('data-slug');
+      const post = cachedPosts.find((x) => x.slug === slug);
+      if (!post) return;
+
+      row.querySelector('.edit-btn').addEventListener('click', (e) => {
+        e.stopPropagation();
+        openEditor(post);
+      });
+
+      row.addEventListener('click', (e) => {
+        if (e.target.closest('a, button')) return;
+        openEditor(post);
+      });
+
+      const delBtn = row.querySelector('.delete-btn');
+      if (delBtn) {
+        delBtn.addEventListener('click', async (e) => {
+          e.stopPropagation();
+          if (!confirm('Excluir "' + (post.title || 'esta publicação') + '"?')) return;
+          const res = await fetch('/api/posts/' + post.slug, { method: 'DELETE', credentials: 'include' });
+          if (!res.ok) {
+            alert('Erro ao excluir.');
+            return;
+          }
+          if (editingSlug === post.slug) closeEditor();
+          await loadPosts();
+        });
+      }
+    });
+  }
+
   document.querySelectorAll('.md-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
       insertAtCursor(contentEl, btn.getAttribute('data-md') || '');
@@ -228,7 +429,7 @@ function initPostsPanel() {
       return false;
     }
     insertAtCursor(contentEl, '\n\n@youtube ' + trimmed + '\n');
-    result.textContent = 'Vídeo inserido. Revise o preview ao lado e clique Publicar.';
+    result.textContent = 'Vídeo inserido. Revise o preview e clique em Salvar.';
     return true;
   }
 
@@ -241,15 +442,6 @@ function initPostsPanel() {
         e.preventDefault();
         if (insertYouTubeVideo(youtubeUrlEl.value)) youtubeUrlEl.value = '';
       }
-    });
-    youtubeUrlEl.addEventListener('paste', () => {
-      setTimeout(() => {
-        const val = youtubeUrlEl.value.trim();
-        if (val && typeof parseYouTubeId === 'function' && parseYouTubeId(val)) {
-          insertYouTubeVideo(val);
-          youtubeUrlEl.value = '';
-        }
-      }, 0);
     });
   }
 
@@ -269,10 +461,23 @@ function initPostsPanel() {
   contentEl.addEventListener('input', schedulePreview);
   categoryEl.addEventListener('change', schedulePreview);
 
-  cancelEditBtn.addEventListener('click', () => {
-    resetForm();
-    history.replaceState({}, '', 'admin.html');
+  if (backToListBtn) backToListBtn.addEventListener('click', closeEditor);
+  if (newPostBtn) newPostBtn.addEventListener('click', () => openEditor(null));
+
+  document.addEventListener('keydown', (e) => {
+    if (currentView !== 'list') return;
+    if (!(e.ctrlKey || e.metaKey) || e.key.toLowerCase() !== 'n') return;
+    const tag = (document.activeElement && document.activeElement.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+    e.preventDefault();
+    openEditor(null);
   });
+
+  cancelEditBtn.addEventListener('click', closeEditor);
+
+  if (postsSearch) postsSearch.addEventListener('input', renderStudioTable);
+  if (filterCategory) filterCategory.addEventListener('change', renderStudioTable);
+  if (filterStatus) filterStatus.addEventListener('change', renderStudioTable);
 
   if (imagePickBtn && imageInput) {
     imagePickBtn.addEventListener('click', () => imageInput.click());
@@ -316,75 +521,20 @@ function initPostsPanel() {
     });
   }
 
-  function renderPostsList() {
-    postsList.innerHTML = '';
-    postsCount.textContent = String(cachedPosts.length);
-
-    if (!cachedPosts.length) {
-      postsList.innerHTML = '<p class="result-muted">Nenhuma publicação ainda.</p>';
-      return;
-    }
-
-    cachedPosts.forEach((p) => {
-      const isDraft = p.published === false;
-      const catLabel = categoryLabel(p.category);
-      const item = document.createElement('article');
-      item.className = 'admin-post-item' + (editingSlug === p.slug ? ' is-active' : '');
-
-      item.innerHTML =
-        '<div class="admin-post-head">' +
-          '<strong>' + escapeText(p.title || 'Sem título') + '</strong>' +
-          '<span class="admin-post-tags">' +
-            '<span class="admin-tag">' + escapeText(catLabel) + '</span>' +
-            (isDraft ? '<span class="admin-tag admin-tag-draft">Rascunho</span>' : '') +
-          '</span>' +
-        '</div>' +
-        '<p class="admin-post-excerpt">' + escapeText(p.excerpt || '—') + '</p>' +
-        '<div class="admin-post-meta">' + formatDatePtBR(p.date) + '</div>' +
-        '<div class="admin-post-actions">' +
-          '<button type="button" class="edit-btn botao admin-secondary">Editar</button>' +
-          '<a href="' + escapeText(p.url) + '" target="_blank" rel="noopener" class="botao admin-secondary">Abrir</a>' +
-          '<button type="button" class="delete-btn admin-danger">Excluir</button>' +
-        '</div>';
-
-      item.querySelector('.edit-btn').addEventListener('click', () => {
-        fillForm(p);
-        result.textContent = '';
-        history.replaceState({}, '', 'admin.html?slug=' + encodeURIComponent(p.slug));
-        document.querySelector('.admin-editor').scrollIntoView({ behavior: 'smooth', block: 'start' });
-        renderPostsList();
-      });
-
-      item.querySelector('.delete-btn').addEventListener('click', async () => {
-        if (!confirm('Excluir "' + (p.title || 'esta publicação') + '"?')) return;
-        const res = await fetch('/api/posts/' + p.slug, { method: 'DELETE', credentials: 'include' });
-        if (!res.ok) {
-          result.textContent = 'Erro ao excluir.';
-          return;
-        }
-        if (editingSlug === p.slug) {
-          resetForm();
-          history.replaceState({}, '', 'admin.html');
-        }
-        result.textContent = 'Publicação excluída.';
-        await loadPosts();
-      });
-
-      postsList.appendChild(item);
-    });
-  }
-
   async function loadPosts() {
     try {
       const res = await fetch('/api/posts', { credentials: 'include' });
       if (res.status === 401) {
-        window.location.href = 'login.html';
+        window.location.href = '/login.html?returnTo=/admin.html';
         return;
       }
       cachedPosts = await res.json();
-      renderPostsList();
+      renderStudioTable();
     } catch (err) {
-      postsList.innerHTML = '<p class="result-muted">Erro ao carregar publicações.</p>';
+      if (postsEmpty) {
+        postsEmpty.hidden = false;
+        postsEmpty.textContent = 'Erro ao carregar publicações.';
+      }
     }
   }
 
@@ -427,27 +577,49 @@ function initPostsPanel() {
         ? (isEdit ? 'Publicação atualizada.' : 'Publicação criada.')
         : 'Rascunho salvo.';
 
-      result.innerHTML = statusMsg +
-        (openUrl && publishedEl.checked
-          ? ' <a href="' + openUrl + '" target="_blank" rel="noopener">Ver artigo</a> · <a href="' + listUrl + '" target="_blank" rel="noopener">Ver listagem</a>'
-          : '');
-
-      resetForm();
-      history.replaceState({}, '', 'admin.html');
       await loadPosts();
+      closeEditor();
+
+      if (postsEmpty && statusMsg) {
+        postsEmpty.hidden = false;
+        postsEmpty.className = 'admin-studio-toast';
+        postsEmpty.textContent = statusMsg;
+        if (openUrl && publishedEl.checked) {
+          postsEmpty.innerHTML = statusMsg +
+            ' <a href="' + escapeAttr(openUrl) + '" target="_blank" rel="noopener">Ver artigo</a> · ' +
+            '<a href="' + escapeAttr(listUrl) + '" target="_blank" rel="noopener">Ver listagem</a>';
+        }
+        setTimeout(() => {
+          postsEmpty.hidden = true;
+          postsEmpty.className = 'admin-studio-empty result-muted';
+          renderStudioTable();
+        }, 5000);
+      }
     } catch (err) {
       result.textContent = 'Falha na requisição.';
     }
   });
 
   updatePreview();
-  loadPosts();
+  loadPosts().then(() => {
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get('slug');
+    if (slug) {
+      const post = cachedPosts.find((x) => x.slug === slug);
+      if (post) openEditor(post);
+      else showView('list');
+    } else if (params.get('new')) {
+      openEditor(null);
+    } else {
+      showView('list');
+    }
+  });
 
   return {
     async openSlug(slug) {
       await loadPosts();
       const post = cachedPosts.find((x) => x.slug === slug);
-      if (post) fillForm(post);
+      if (post) openEditor(post);
     }
   };
 }

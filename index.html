@@ -1,19 +1,23 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Inspetor BudGanja — pesquisas técnicas, inspeções de equipamentos e manuais DIY para cultivo vegetal.">
+    <meta name="description" content="Inspetor BudGanja — Biblioteca de Cultivo, pesquisas técnicas, inspeções, equipamentos caseiros, calculadoras e sorteios para cultivo vegetal.">
     <meta property="og:title" content="Inspetor BudGanja">
-    <meta property="og:description" content="Laboratório de pesquisas técnicas e inspeções de equipamentos para cultivo vegetal.">
+    <meta property="og:description" content="Laboratório digital de pesquisa, inspeções e ferramentas práticas para cultivo vegetal.">
     <meta property="og:type" content="website">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#27ae60">
+    <meta property="og:image" content="/imagens/icon-512.png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/imagens/favicon-32.png?v=190" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=190" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=190">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3d5c28">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css?v=190">
     <title>Início | Inspetor BudGanja</title>
 </head>
 <body data-page="home">
@@ -22,78 +26,102 @@
     <main id="main-content">
     <section class="hero">
         <div class="hero-content">
-            <h1>Bem-vindo ao Laboratório</h1>
-            <p>Pegue suas Ferramentas e vamos ao trabalho!</p>
-            <div class="hero-actions">
-                <a href="inspecoes.html" class="botao botao-hero">Inspeções</a>
-                <a href="pesquisas.html" class="botao botao-hero">Pesquisas</a>
-                <a href="equipamentos.html" class="botao botao-hero">Equipamentos</a>
-                <a href="calculadoras.html" class="botao botao-hero">Calculadoras</a>
+            <p class="hero-eyebrow" data-i18n="pages.home.heroEyebrow">Laboratório digital · conteúdo educacional</p>
+            <h1 data-i18n="pages.home.heroTitle">Bem-vindo ao Laboratório</h1>
+            <p data-i18n="pages.home.heroSubtitle">Pegue suas Ferramentas e vamos ao trabalho!</p>
+        </div>
+    </section>
+
+    <section id="home-sorteio-banner" class="home-announcement" hidden>
+        <div class="conteudo home-announcement-inner">
+            <div class="home-announcement-copy">
+                <p class="home-announcement-badge">🎁 Sorteio ativo</p>
+                <h2 id="home-sorteio-title">Sorteio do laboratório</h2>
+                <p id="home-sorteio-prize" class="home-announcement-prize"></p>
+                <p id="home-sorteio-date" class="home-announcement-date"></p>
             </div>
+            <a href="/sorteios/" class="botao botao-home">Participar agora</a>
         </div>
     </section>
 
     <section class="features">
         <div class="conteudo conteudo-wide">
-            <h2>Nossas Áreas de Atuação</h2>
-            <p class="section-subtitle">Escolha uma área para explorar o conteúdo do laboratório.</p>
+            <h2 data-i18n="pages.home.areasTitle">Nossas Áreas de Atuação</h2>
+            <p class="section-subtitle" data-i18n="pages.home.areasSubtitle">Biblioteca de Cultivo, calculadoras, sorteios e mais — escolha uma área para explorar.</p>
             <div class="container-cards home-cards">
-                <article class="card home-card">
-                    <div class="card-icon" aria-hidden="true">🔍</div>
-                    <h3>Inspeções</h3>
-                    <p>Relatórios de inspeção, verificações de campo e registros técnicos do laboratório.</p>
-                    <a href="inspecoes.html" class="botao botao-card">Ver Inspeções</a>
+                <article class="card home-card home-card--cultivo has-hover-tip" data-tip="Diário, roteiro e plano do seu cultivo — agenda pessoal ligada à sua conta.">
+                    <div class="card-icon card-icon--cultivo" aria-hidden="true">📓</div>
+                    <h3>Diário de Cultivo</h3>
+                    <p>Agenda do seu cultivo: registos dia a dia, roteiro por fase e plano de tarefas — tudo ligado à sua conta.</p>
+                    <a href="/cultivo/" class="botao botao-home">Abrir diário</a>
                 </article>
-                <article class="card home-card">
+                <article class="card home-card has-hover-tip" data-tip="Relatórios científicos e estudos sobre cultivo vegetal com metodologia rigorosa.">
                     <div class="card-icon" aria-hidden="true">🔬</div>
-                    <h3>Pesquisas Técnicas</h3>
-                    <p>Relatórios científicos e estudos sobre cultivo vegetal com metodologia rigorosa.</p>
-                    <a href="pesquisas.html" class="botao botao-card">Ver Pesquisas</a>
+                    <h3 data-i18n="pages.home.cardResearchTitle">Pesquisas Técnicas</h3>
+                    <p data-i18n="pages.home.cardResearchText">Relatórios científicos e estudos sobre cultivo vegetal com metodologia rigorosa.</p>
+                    <a href="/biblioteca/pesquisas/" class="botao botao-home" data-i18n="pages.home.cardResearchBtn">Ver Pesquisas</a>
                 </article>
-                <article class="card home-card">
+                <article class="card home-card has-hover-tip" data-tip="Relatórios de inspeção, verificações de campo e registros técnicos do laboratório.">
+                    <div class="card-icon" aria-hidden="true">🔍</div>
+                    <h3 data-i18n="pages.home.cardInspectionsTitle">Inspeções</h3>
+                    <p data-i18n="pages.home.cardInspectionsText">Relatórios de inspeção, verificações de campo e registros técnicos do laboratório.</p>
+                    <a href="/biblioteca/inspecoes/" class="botao botao-home" data-i18n="pages.home.cardInspectionsBtn">Ver Inspeções</a>
+                </article>
+                <article class="card home-card has-hover-tip" data-tip="Equipamentos caseiros documentados com materiais acessíveis e manuais completos.">
                     <div class="card-icon" aria-hidden="true">🛠️</div>
-                    <h3>Equipamentos DIY</h3>
-                    <p>Equipamentos caseiros documentados com materiais acessíveis e manuais completos.</p>
-                    <a href="equipamentos.html" class="botao botao-card">Ver Equipamentos</a>
+                    <h3 data-i18n="pages.home.cardEquipTitle">Equipamentos Caseiros</h3>
+                    <p data-i18n="pages.home.cardEquipText">Montagem caseira com peças de mercado — manuais completos de clonadora e hidrocloradora.</p>
+                    <a href="/equipamentos/" class="botao botao-home" data-i18n="pages.home.cardEquipBtn">Ver Equipamentos</a>
                 </article>
-                <article class="card home-card">
+                <article class="card home-card has-hover-tip" data-tip="Utilitários para otimizar seu cultivo: VPD, DLI, EC, luxímetro e muito mais.">
                     <div class="card-icon" aria-hidden="true">🧮</div>
-                    <h3>Calculadoras</h3>
-                    <p>Utilitários para otimizar seu cultivo: VPD, DLI, EC, luxímetro e muito mais.</p>
-                    <a href="calculadoras.html" class="botao botao-card">Ver Calculadoras</a>
+                    <h3 data-i18n="pages.home.cardCalcTitle">Calculadoras</h3>
+                    <p data-i18n="pages.home.cardCalcText">Utilitários para otimizar seu cultivo: VPD, DLI, EC, luxímetro e muito mais.</p>
+                    <a href="/calculadoras/" class="botao botao-home" data-i18n="pages.home.cardCalcBtn">Ver Calculadoras</a>
                 </article>
-                <article class="card home-card">
-                    <div class="card-icon" aria-hidden="true">ℹ️</div>
-                    <h3>Sobre o Projeto</h3>
-                    <p>Conheça a metodologia, os limites e o propósito do Inspetor BudGanja.</p>
-                    <a href="sobre.html" class="botao botao-card">Ver Sobre</a>
+                <article class="card home-card has-hover-tip" data-tip="Sorteio de inauguração — clonadora caseira com pote de sorvete.">
+                    <div class="card-icon" aria-hidden="true">🎁</div>
+                    <h3 data-i18n="pages.home.cardGiveawaysTitle">Sorteios</h3>
+                    <p data-i18n="pages.home.cardGiveawaysText">Em breve: sorteio de inauguração — clonadora caseira com pote de sorvete e bucha de louça.</p>
+                    <a href="/sorteios/" class="botao botao-home" data-i18n="pages.home.cardGiveawaysBtn">Ver Sorteios</a>
+                </article>
+                <article class="card home-card home-card--loja has-hover-tip" data-tip="Materiais das clonadoras documentadas no laboratório — encomenda com link para os guias.">
+                    <div class="card-icon card-icon--loja" aria-hidden="true">🛒</div>
+                    <h3 data-i18n="pages.home.cardLojaTitle">Loja parceira</h3>
+                    <p data-i18n="pages.home.cardLojaText">Produtos usados nas clonadoras e equipamentos do laboratório — monte com os mesmos materiais dos guias.</p>
+                    <a href="/loja/" class="botao botao-home" data-i18n="pages.home.cardLojaBtn">Ver loja</a>
                 </article>
             </div>
         </div>
     </section>
 
-    <section class="about">
-        <div class="conteudo section-center">
-            <h2>Sobre o Inspetor BudGanja</h2>
-            <p>
-                Somos um laboratório dedicado à pesquisa técnica e documentação de equipamentos para cultivo vegetal.
-                Nosso foco é fornecer conteúdo educacional de qualidade, manuais práticos e relatórios científicos
-                baseados em experimentação real.
-            </p>
-            <div class="highlight info-box">
-                <h3>Missão</h3>
-                <p>Democratizar o conhecimento técnico sobre cultivo vegetal através de documentação acessível e científica.</p>
+    <section class="home-latest home-latest--compact">
+        <div class="conteudo conteudo-wide">
+            <div class="home-latest-head">
+                <h2 data-i18n="pages.home.latestTitle">Últimas do laboratório</h2>
+                <p class="home-latest-nav">
+                    <a href="/biblioteca/pesquisas/" data-i18n="pages.home.latestLibrary">Biblioteca →</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="/biblioteca/inspecoes/" data-i18n="pages.home.latestInspections">Inspeções →</a>
+                </p>
             </div>
-            <p class="section-subtitle section-center about-youtube-link">
-                Vídeos e tutoriais também no
-                <a href="https://www.youtube.com/@InspetorBudGanja" target="_blank" rel="noopener noreferrer">YouTube @InspetorBudGanja</a>.
-            </p>
-            <a href="contato.html" class="botao botao-card botao-inline-center">Entrar em Contato</a>
+            <ul id="home-latest-posts" class="home-latest-list">
+                <li class="home-latest-item home-latest-item--loading">
+                    <p class="empty-message" data-i18n="pages.home.latestLoading">Carregando…</p>
+                </li>
+            </ul>
         </div>
     </section>
     </main>
 
     <div id="site-footer"></div>
-    <script src="js/layout.js"></script>
+  <script src="/js/app-version-check.js?v=190"></script>
+    <script src="/js/i18n-data.js?v=190"></script>
+    <script src="/js/i18n.js?v=190"></script>
+    <script src="/js/ferramentas-nav-data.js?v=190"></script>
+    <script src="/js/layout.js?v=190"></script>
+    <script src="/js/site-features.js?v=190"></script>
+    <script src="/js/home.js?v=190"></script>
+
 </body>
 </html>

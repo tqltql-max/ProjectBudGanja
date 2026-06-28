@@ -1,4 +1,4 @@
-﻿// ==================== State ====================
+// ==================== State ====================
     let stream = null;
     let animFrameId = null;
     let isRunning = false;
@@ -48,6 +48,7 @@
     const chartCanvas = document.getElementById('history-chart');
     const chartCtx = chartCanvas.getContext('2d');
     const chartStatus = document.getElementById('chart-status');
+    const dliEstimate = document.getElementById('dli-estimate');
     const DISPLAY_UPDATE_INTERVAL = 250;
     const SMOOTHING_FACTOR = 0.18;
      // ==================== Audio Context (lazy init) ====================
@@ -115,7 +116,7 @@
         try {
             new Notification(title, {
                 body: body,
-                icon: 'favicon.svg',
+                icon: '/imagens/icon-192.png',
                 tag: 'ppfd-alert',
                 renotify: true
             });
@@ -464,6 +465,15 @@
         currentLux = readingLocked ? lockedLux : lux;
          ppfdDisplay.textContent = currentPPFD;
         luxDisplay.textContent = lux.toLocaleString('pt-BR') + ' lux';
+
+        if (dliEstimate) {
+            if (currentPPFD > 0) {
+                const dli18 = (currentPPFD * 18 * 3600) / 1000000;
+                dliEstimate.innerHTML = 'DLI estimado (18 h): <strong>' + dli18.toFixed(1) + '</strong> mol/m²/dia · <a href="/calculadoras/dli.html">Calcular DLI</a>';
+            } else {
+                dliEstimate.textContent = 'DLI estimado (18 h): — mol/m²/dia';
+            }
+        }
          // Status classification
         let status, color, bg;
         if (currentPPFD < 100) {
@@ -545,7 +555,23 @@
         });
          if (history.length > 20) history.pop();
         renderHistory();
+        attachDiarySaveBar();
     }
+
+    function attachDiarySaveBar() {
+        if (!window.BudGanjaDiaryBridge || !readingPanel) return;
+        if (currentPPFD <= 0 && currentLux <= 0) return;
+        var source = document.getElementById('light-source');
+        var sourceLabel = source && source.selectedOptions[0] ? source.selectedOptions[0].text : '';
+        window.BudGanjaDiaryBridge.attachSaveBar(readingPanel, {
+            calculator: 'luximetro',
+            text: 'Luxímetro: ' + Math.round(currentPPFD) + ' μmol/m²/s · ' +
+                Math.round(currentLux).toLocaleString('pt-BR') + ' lux' +
+                (sourceLabel ? ' (' + sourceLabel + ')' : ''),
+            metrics: { ppfd: Math.round(currentPPFD), lux: Math.round(currentLux) }
+        });
+    }
+
      function renderHistory() {
         const panel = document.getElementById('history-panel');
         const list = document.getElementById('history-list');
@@ -581,7 +607,18 @@
     });
      // Show camera-off message initially
     video.style.display = 'none';
-    document.getElementById('camera-off').style.display = 'flex';
+    const cameraOff = document.getElementById('camera-off');
+    if (cameraOff) {
+        cameraOff.classList.remove('hidden');
+        cameraOff.style.display = 'flex';
+    }
      // Initialize range bar
     updateRangeBar();
     drawHistoryChart();
+    if (readingPanel && window.BudGanjaDiaryBridge) {
+        var origUpdate = updateDisplayFromLux;
+        updateDisplayFromLux = function(lux) {
+            origUpdate(lux);
+            if (readingLocked || (currentPPFD > 0 || currentLux > 0)) attachDiarySaveBar();
+        };
+    }

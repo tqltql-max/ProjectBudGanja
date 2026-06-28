@@ -1,0 +1,335 @@
+{
+  "updatedAt": "2026-06-28T04:41:40.834Z",
+  "items": [
+    {
+      "title": "Início",
+      "url": "/",
+      "excerpt": "Laboratório digital de cultivo vegetal",
+      "text": "Início Laboratório digital de cultivo vegetal home laboratório"
+    },
+    {
+      "title": "Guia de Cultivo Básico",
+      "url": "/guia/cultivo-basico.html",
+      "excerpt": "Redireciona para inspeções do guia em vídeo @InspetorBudGanja",
+      "text": "Guia de Cultivo Básico Redireciona para inspeções do guia em vídeo @InspetorBudGanja guia cultivo inspeção vídeo"
+    },
+    {
+      "title": "Pesquisas",
+      "url": "/biblioteca/pesquisas/",
+      "excerpt": "Relatórios e estudos técnicos",
+      "text": "Pesquisas Relatórios e estudos técnicos pesquisa relatório"
+    },
+    {
+      "title": "Inspeções",
+      "url": "/biblioteca/inspecoes/",
+      "excerpt": "Verificações de campo e inspeções técnicas",
+      "text": "Inspeções Verificações de campo e inspeções técnicas inspeção campo"
+    },
+    {
+      "title": "Equipamentos",
+      "url": "/equipamentos/",
+      "excerpt": "Manuais caseiros e equipamentos documentados",
+      "text": "Equipamentos Manuais caseiros e equipamentos documentados equipamento caseiro manual clonadora"
+    },
+    {
+      "title": "Loja parceira",
+      "url": "/loja/",
+      "excerpt": "Materiais das clonadoras na vitrine Magazine Inspetor BudGanja (Magalu)",
+      "text": "Loja parceira Materiais das clonadoras na vitrine Magazine Inspetor BudGanja (Magalu) loja clonadora bombinha bucha balde bomba aspersor feltro magazine luiza magalu influenciador"
+    },
+    {
+      "title": "Calculadoras",
+      "url": "/calculadoras/",
+      "excerpt": "VPD, DLI, EC e utilitários",
+      "text": "Calculadoras VPD, DLI, EC e utilitários calculadora vpd dli"
+    },
+    {
+      "title": "Luxímetro",
+      "url": "/calculadoras/luximetro.html",
+      "excerpt": "Meça a intensidade luminosa em tempo real usando a câmera do celular. Estime PPFD e lux.",
+      "text": "Luxímetro Meça a intensidade luminosa em tempo real usando a câmera do celular. Estime PPFD e lux. luxímetro ppfd luz câmera"
+    },
+    {
+      "title": "VPD",
+      "url": "/calculadoras/vpd.html",
+      "excerpt": "Calcule o Déficit de Pressão de Vapor para otimizar o ambiente de cultivo.",
+      "text": "VPD Calcule o Déficit de Pressão de Vapor para otimizar o ambiente de cultivo. vpd vapor umidade temperatura"
+    },
+    {
+      "title": "DLI",
+      "url": "/calculadoras/dli.html",
+      "excerpt": "Calcule o Integral de Luz Diária a partir do PPFD e fotoperíodo.",
+      "text": "DLI Calcule o Integral de Luz Diária a partir do PPFD e fotoperíodo. dli ppfd fotoperíodo luz"
+    },
+    {
+      "title": "Super Solo",
+      "url": "/calculadoras/super-solo.html",
+      "excerpt": "Calcule dosagens de amendments (gramas e ml) para super solo orgânico a partir do volume de substrato.",
+      "text": "Super Solo Calcule dosagens de amendments (gramas e ml) para super solo orgânico a partir do volume de substrato. super solo substrato orgânico"
+    },
+    {
+      "title": "Volume do Vaso",
+      "url": "/calculadoras/volume-vaso.html",
+      "excerpt": "Calcule o volume em litros a partir das dimensões do vaso.",
+      "text": "Volume do Vaso Calcule o volume em litros a partir das dimensões do vaso. vaso volume litros substrato"
+    },
+    {
+      "title": "EC",
+      "url": "/calculadoras/ec.html",
+      "excerpt": "Calcule a Condutividade Elétrica e converta para PPM.",
+      "text": "EC Calcule a Condutividade Elétrica e converta para PPM. ec condutividade ppm nutrientes"
+    },
+    {
+      "title": "Diluição",
+      "url": "/calculadoras/diluicao.html",
+      "excerpt": "Calcule quanto diluir sua solução concentrada.",
+      "text": "Diluição Calcule quanto diluir sua solução concentrada. diluição ec nutrientes"
+    },
+    {
+      "title": "pH",
+      "url": "/calculadoras/ph.html",
+      "excerpt": "Verifique se o pH da sua solução está na faixa ideal para cada fase e meio de cultivo.",
+      "text": "pH Verifique se o pH da sua solução está na faixa ideal para cada fase e meio de cultivo. ph solo coco hidroponia"
+    },
+    {
+      "title": "Custo de Energia",
+      "url": "/calculadoras/energia.html",
+      "excerpt": "Calcule o custo mensal de eletricidade do seu cultivo indoor.",
+      "text": "Custo de Energia Calcule o custo mensal de eletricidade do seu cultivo indoor. energia kwh custo luz"
+    },
+    {
+      "title": "Watts por m²",
+      "url": "/calculadoras/watts-m2.html",
+      "excerpt": "Verifique se a potência luminosa está adequada para a área do seu cultivo.",
+      "text": "Watts por m² Verifique se a potência luminosa está adequada para a área do seu cultivo. watts potência área led"
+    },
+    {
+      "title": "Sorteios",
+      "url": "/sorteios/",
+      "excerpt": "Sorteio de inauguração — clonadora aeropônica caseira em breve",
+      "text": "Sorteios Sorteio de inauguração — clonadora aeropônica caseira em breve sorteio inauguração clonadora"
+    },
+    {
+      "title": "Últimos vídeos",
+      "url": "/videos/",
+      "excerpt": "Vídeos recentes do canal YouTube",
+      "text": "Últimos vídeos Vídeos recentes do canal YouTube youtube vídeo canal"
+    },
+    {
+      "title": "Sobre",
+      "url": "/info/sobre.html",
+      "excerpt": "Propósito e metodologia do projeto",
+      "text": "Sobre Propósito e metodologia do projeto sobre missão"
+    },
+    {
+      "title": "Contato",
+      "url": "/info/contato.html",
+      "excerpt": "E-mail e perguntas frequentes",
+      "text": "Contato E-mail e perguntas frequentes contato email"
+    },
+    {
+      "title": "Privacidade",
+      "url": "/info/privacidade.html",
+      "excerpt": "LGPD e dados de sorteios",
+      "text": "Privacidade LGPD e dados de sorteios privacidade lgpd"
+    },
+    {
+      "title": "Guia: Clonadora de 6 estacas",
+      "url": "/equipamentos/clonadora-6-estacas.html",
+      "excerpt": "Pote de sorvete, bucha de louça e bombinha 24 h",
+      "text": "Guia: Clonadora de 6 estacas Pote de sorvete, bucha de louça e bombinha 24 h clonadora 6 estacas pote sorvete bucha bombinha"
+    },
+    {
+      "title": "Guia: Clonadora de 12 estacas",
+      "url": "/equipamentos/clonadora-12-estacas.html",
+      "excerpt": "Balde, bomba submersa, microaspersores e feltro",
+      "text": "Guia: Clonadora de 12 estacas Balde, bomba submersa, microaspersores e feltro clonadora 12 estacas balde aspersor bomba submersa feltro"
+    },
+    {
+      "title": "Clonadoras (redirecionamento)",
+      "url": "/equipamentos/manual-clonadora.html",
+      "excerpt": "Redireciona para a lista de equipamentos",
+      "text": "Clonadoras (redirecionamento) Redireciona para a lista de equipamentos clonadora"
+    },
+    {
+      "title": "Clonadora de 12 estacas (redirecionamento)",
+      "url": "/equipamentos/manual-hidrocloradora.html",
+      "excerpt": "Redireciona para o guia de 12 estacas",
+      "text": "Clonadora de 12 estacas (redirecionamento) Redireciona para o guia de 12 estacas clonadora hidro"
+    },
+    {
+      "title": "Pesquisa: Substratos",
+      "url": "/biblioteca/pesquisas/substratos.html",
+      "excerpt": "Relatório sobre substratos biodegradáveis",
+      "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Processo de Germinação Controlado",
+      "url": "/posts/post-otimizacao-propagacao-vegetal.html",
+      "excerpt": "Protocolo de semeadura e clonagem com vasos biodegradáveis e controle microclimático rigoroso.",
+      "text": "Processo de Germinação Controlado Protocolo de semeadura e clonagem com vasos biodegradáveis e controle microclimático rigoroso. pesquisa ## Resumo\n\nEste estudo documenta o protocolo de semeadura e clonagem vegetativa utilizando recipientes biodegradáveis à base de celulose reciclada, integrado ao controle microclimático de uma unidade **Mars Hydro**.\n\n## Introdução\n\nO choque de transplante limita o vigor inicial das plântulas. Vasos que se decompõem *in situ* reduzem o dano radicular no momento crítico de estabelecimento.\n\n## Metodologia\n\n- Embebição das sementes em meio aquoso (24 h)\n- Germinação em papel celulose úmido, fotoperíodo zero (24 h)\n- Vasos cilíndricos de papel sulfite reciclado com furos de aeração\n- Monitoramento de PPFD, CO₂ e temperatura na tenda experimental\n\n## Resultados\n\nRadículas emergentes posicionadas ortotrópicamente; desenvolvimento contínuo **sem sinais clássicos de estresse pós-transplante** nas primeiras duas semanas.\n\n## Conclusão\n\nMetodologia viável para propagação em pequena escala, combinando sustentabilidade e controle tecnológico de ponta.\n\n---\n\n📄 Leia o relatório completo em [Pesquisa: Substratos](/biblioteca/pesquisas/substratos.html).\n\n![](/uploads/icon-192-1782543515824.png)\n"
+    },
+    {
+      "title": "Clonadora Caseira: Montagem com Pote de Sorvete",
+      "url": "/posts/post-clonadora-aeroponica-documentada.html",
+      "excerpt": "Clonadora simples com pote de sorvete, bucha de louça e bombinha 24 h — até 6 estacas, baixo custo.",
+      "text": "Clonadora Caseira: Montagem com Pote de Sorvete Clonadora simples com pote de sorvete, bucha de louça e bombinha 24 h — até 6 estacas, baixo custo. equipamento ## Objetivo\n\nDocumentar a clonadora caseira do Inspetor BudGanja: **pote de sorvete**, **6 furos na tampa**, suporte com **buchas de louça** e **bombinha de aquário ligada 24 h** até sair raiz.\n\n## Materiais\n\n- 1 pote de sorvete com tampa\n- 1 bombinha de aquário\n- Buchas de louça (6 rodelas cortadas)\n- Água limpa\n\n## Montagem resumida\n\n1. Furar 6 furos redondos na tampa\n2. Cortar 6 rodelas de bucha e abrir ao meio para prender a estaca\n3. Encaixar buchas nos furos, estacas na bucha, tampa no pote com água\n4. Bomba ligada **24/7** — sem timer\n\n## Resultados do laboratório\n\nTaxa de enraizamento observada: **78%** em 14 dias em testes anteriores com oxigenação contínua.\n\n---\n\n🛠️ Manual completo: [Clonadora Caseira](/equipamentos/manual-clonadora.html)."
+    },
+    {
+      "title": "Luxímetro: Guia de Uso",
+      "url": "/posts/post-guia-calculadora-luximetro.html",
+      "excerpt": "Como medir PPFD e lux com a câmera do celular — calibração, posicionamento e leituras confiáveis.",
+      "text": "Luxímetro: Guia de Uso Como medir PPFD e lux com a câmera do celular — calibração, posicionamento e leituras confiáveis. pesquisa ## Objetivo\n\nAprender a usar o **Luxímetro (Câmera)** do site para estimar PPFD e lux no dossel das plantas.\n\n## Quando usar\n\n- Ao montar ou reposicionar luminárias\n- Para comparar intensidade entre cantos da tenda\n- Antes de calcular DLI (anote o PPFD médio)\n\n## Passo a passo\n\n1. Abra o [Luxímetro](/calculadoras/luximetro.html) no celular e permita acesso à câmera\n2. Toque em **Iniciar Câmera** e aponte para o ponto de medição (altura do dossel)\n3. Selecione o **tipo de luz** correspondente (LED grow, HPS, solar, etc.)\n4. Centralize a área clara no círculo de medição e aguarde a leitura estabilizar\n5. Anote PPFD (μmol/m²/s) e lux exibidos\n\n## Como interpretar\n\n- O badge de status indica se a intensidade está baixa, adequada ou excessiva para a fase\n- PPFD é mais útil que lux para comparar diferentes tipos de luz\n- Faça 3 leituras em pontos diferentes e use a média\n\n## Dicas\n\n- Evite sombras do corpo ou do celular sobre a área medida\n- Limpe a lente da câmera antes de medir\n- Trate como estimativa — valide com luxímetro dedicado quando possível\n\n---\n\n🧮 [Abrir Luxímetro](/calculadoras/luximetro.html)"
+    },
+    {
+      "title": "Calculadora VPD: Guia de Uso",
+      "url": "/posts/post-calculadora-vpd-guia-laboratorio.html",
+      "excerpt": "Como interpretar déficit de pressão de vapor — faixas por fase, leituras e ajustes práticos na tenda.",
+      "text": "Calculadora VPD: Guia de Uso Como interpretar déficit de pressão de vapor — faixas por fase, leituras e ajustes práticos na tenda. pesquisa ## Objetivo\n\nDocumentar o uso da **calculadora VPD** para monitorar o microclima da tenda durante propagação, vegetativo e floração.\n\n## Quando usar\n\nSempre que ajustar exaustor, humidificador ou temperatura — especialmente com folhas murchando sem causa nutricional aparente.\n\n## Passo a passo\n\n1. Meça **temperatura do ar** e **umidade relativa** no nível do dossel\n2. Abra a [Calculadora VPD](/calculadoras/vpd.html) e insira os valores\n3. Compare o resultado com a tabela de faixas por fase\n4. Ajuste ventilação ou umidade e registre após 30–60 min\n\n## Como interpretar\n\n- **VPD baixo (< 0,4 kPa):** risco de fungos; aumente ventilação ou reduza umidade\n- **Faixa ideal:** transpiração equilibrada\n- **VPD alto (> 1,5 kPa):** estresse hídrico; aumente umidade ou reduza temperatura\n\n## Dicas\n\n- Temperatura foliar costuma ser 1–2 °C abaixo do ar ambiente\n- Registre leituras matutinas e vespertinas\n\n---\n\n🧮 [Abrir Calculadora VPD](/calculadoras/vpd.html)"
+    },
+    {
+      "title": "Calculadora DLI: Guia de Uso",
+      "url": "/posts/post-guia-calculadora-dli.html",
+      "excerpt": "Como calcular o integral de luz diária a partir do PPFD e fotoperíodo — faixas por estágio de cultivo.",
+      "text": "Calculadora DLI: Guia de Uso Como calcular o integral de luz diária a partir do PPFD e fotoperíodo — faixas por estágio de cultivo. pesquisa ## Objetivo\n\nUsar a **Calculadora DLI** para saber se a planta recebe luz suficiente ao longo do dia.\n\n## Quando usar\n\n- Após medir PPFD com luxímetro ou sensor\n- Ao alterar fotoperíodo (12/12, 18/6, etc.)\n- Para comparar tendas ou posições diferentes\n\n## Passo a passo\n\n1. Meça ou estime o **PPFD médio** no dossel (μmol/m²/s)\n2. Anote o **fotoperíodo** em horas por dia (ex.: 18 h)\n3. Insira os valores na [Calculadora DLI](/calculadoras/dli.html)\n4. Leia o DLI em mol/m²/dia e a classificação exibida\n\n## Como interpretar\n\n| DLI (mol/m²/dia) | Indicação |\n|------------------|----------|\n| < 15 | Clones e mudas |\n| 15–25 | Vegetativo inicial |\n| 25–40 | Vegetativo pleno / floração |\n| > 40 | Alta performance (com CO₂) |\n\n## Dicas\n\n- DLI = PPFD × horas × 0,0036 (a calculadora faz isso automaticamente)\n- Aumente fotoperíodo ou intensidade se o DLI estiver abaixo do alvo\n\n---\n\n🧮 [Abrir Calculadora DLI](/calculadoras/dli.html)"
+    },
+    {
+      "title": "Super Solo: Guia de Uso",
+      "url": "/posts/post-guia-calculadora-super-solo.html",
+      "excerpt": "Como calcular proporções de ingredientes para montar super solo orgânico em qualquer volume.",
+      "text": "Super Solo: Guia de Uso Como calcular proporções de ingredientes para montar super solo orgânico em qualquer volume. pesquisa ## Objetivo\n\nMontar **super solo orgânico** com dosagens em gramas e ml — escolhendo só os componentes que vai usar.\n\n## Quando usar\n\n- Ao preparar substrato do zero ou repor um lote\n- Para montar lista de compras antes de misturar\n- Quando não tiver todos os insumos (desmarque o que faltar)\n\n## Passo a passo\n\n1. Informe o **volume total de substrato** em litros (ex.: 45 L)\n2. Marque os **componentes** que vai adicionar (bokashi, húmus, torta de mamona, etc.)\n3. Clique em **Calcular Ingredientes** na [Calculadora Super Solo](/calculadoras/super-solo.html)\n4. Anote gramas e ml de cada item selecionado\n\n## Componentes disponíveis\n\n- **Bokashi** (10 g/L) — ativador biológico\n- **Húmus de Minhoca** (15 g/L) — matéria orgânica e microbiota\n- **Torta de Mamona**, **Farinha de Osso**, **Pó de Rocha**, **Biochar**, **Gesso**, **Calcário Dolomítico**, **Torta de Neem**, **Farinha de Algas**\n\nCom **todos** marcados: 61 g/L. O total no resultado depende só do que você selecionar.\n\n## Dicas\n\n- Use **Marcar todos** / **Desmarcar todos** para testar receitas enxutas\n- Misture amendments secos antes de umedecer\n- Cure o solo 2–4 semanas antes de plantar\n\n---\n\n🧮 [Abrir Calculadora Super Solo](/calculadoras/super-solo.html)"
+    },
+    {
+      "title": "Volume do Vaso: Guia de Uso",
+      "url": "/posts/post-guia-calculadora-volume-vaso.html",
+      "excerpt": "Como calcular litros de substrato a partir das dimensões do vaso — retangular ou cilíndrico.",
+      "text": "Volume do Vaso: Guia de Uso Como calcular litros de substrato a partir das dimensões do vaso — retangular ou cilíndrico. pesquisa ## Objetivo\n\nCalcular o **volume em litros** de vasos retangulares ou cilíndricos para planejar substrato e nutrientes.\n\n## Quando usar\n\n- Ao comprar terra ou coco\n- Para dosar fertilizante por volume de vaso\n- Ao comparar vasos de formatos diferentes\n\n## Passo a passo\n\n1. Meça o vaso em **centímetros** (comprimento × largura × altura ou diâmetro × altura)\n2. Abra a [Calculadora Volume do Vaso](/calculadoras/volume-vaso.html)\n3. Selecione **Retangular** ou **Cilíndrico**\n4. Insira as dimensões e clique em **Calcular Volume**\n\n## Como interpretar\n\n- O resultado é o volume **útil** geométrico — desconta ~10% se houver perlita drenagem no fundo\n- Vasos altos e estreitos secam mais rápido que vasos largos com mesmo volume\n\n## Dicas\n\n- Meça por dentro do vaso, não por fora\n- Para fabricação de vasos, some margem de 5% para compactação do substrato\n\n---\n\n🧮 [Abrir Calculadora Volume do Vaso](/calculadoras/volume-vaso.html)"
+    },
+    {
+      "title": "Calculadora EC: Guia de Uso",
+      "url": "/posts/post-guia-calculadora-ec.html",
+      "excerpt": "Como converter condutividade elétrica (EC) para PPM e interpretar concentração de nutrientes.",
+      "text": "Calculadora EC: Guia de Uso Como converter condutividade elétrica (EC) para PPM e interpretar concentração de nutrientes. pesquisa ## Objetivo\n\nUsar a **Calculadora EC** para converter mS/cm em PPM e entender a força da solução nutritiva.\n\n## Quando usar\n\n- Após medir EC com medidor de pena ou monitor contínuo\n- Ao preparar reservatório hidropônico ou fertirrigação\n- Para comparar leituras entre escalas (500 vs 700 PPM)\n\n## Passo a passo\n\n1. Meça a **EC em mS/cm** da solução em temperatura ambiente\n2. Abra a [Calculadora EC](/calculadoras/ec.html)\n3. Insira o valor e clique em **Converter para PPM**\n4. Anote PPM 500 e PPM 700 exibidos\n\n## Como interpretar\n\n| Fase | EC típica (mS/cm) |\n|------|-------------------|\n| Mudas / clones | 0,4 – 0,8 |\n| Vegetativo | 1,0 – 1,6 |\n| Floração | 1,4 – 2,2 |\n\nValores variam por genética e meio — ajuste gradualmente.\n\n## Dicas\n\n- Calibre o medidor EC semanalmente com solução padrão\n- Temperatura da solução afeta a leitura — meça sempre à mesma temperatura\n\n---\n\n🧮 [Abrir Calculadora EC](/calculadoras/ec.html)"
+    },
+    {
+      "title": "Diluição: Guia de Uso",
+      "url": "/posts/post-guia-calculadora-diluicao.html",
+      "excerpt": "Como diluir solução nutritiva concentrada até atingir a EC alvo — proporções práticas.",
+      "text": "Diluição: Guia de Uso Como diluir solução nutritiva concentrada até atingir a EC alvo — proporções práticas. pesquisa ## Objetivo\n\nUsar a **Calculadora de Diluição** para saber quanto diluir uma solução que está mais concentrada que o desejado.\n\n## Quando usar\n\n- Solução nutritiva acima da EC alvo\n- Correção após erro na dosagem de fertilizante\n- Preparação a partir de concentrado comercial\n\n## Passo a passo\n\n1. Meça a **EC atual** da solução (mS/cm)\n2. Defina a **EC alvo** para a fase de cultivo\n3. Abra a [Calculadora de Diluição](/calculadoras/diluicao.html)\n4. Insira os dois valores e clique em **Calcular Diluição**\n5. Siga a proporção indicada (ex.: adicionar X partes de água)\n\n## Como interpretar\n\n- A calculadora indica quantas partes de água adicionar por parte de solução\n- Dilua gradualmente e meça de novo — não tente acertar de uma vez em soluções muito concentradas\n\n## Dicas\n\n- Use água com EC baixa (< 0,2 mS/cm) para diluir\n- Anote receitas que funcionaram para replicar no próximo ciclo\n\n---\n\n🧮 [Abrir Calculadora de Diluição](/calculadoras/diluicao.html)"
+    },
+    {
+      "title": "Faixa de pH: Guia de Uso",
+      "url": "/posts/post-guia-calculadora-ph.html",
+      "excerpt": "Como verificar se o pH está ideal para solo, coco ou hidroponia — leitura e correção.",
+      "text": "Faixa de pH: Guia de Uso Como verificar se o pH está ideal para solo, coco ou hidroponia — leitura e correção. pesquisa ## Objetivo\n\nUsar a **Faixa Ideal de pH** para saber se a solução ou runoff está dentro do intervalo correto para cada meio.\n\n## Quando usar\n\n- Antes de cada fertirrigação\n- Ao diagnosticar deficiências (bloqueio por pH incorreto)\n- Após misturar nutrientes ou calda orgânica\n\n## Passo a passo\n\n1. Meça o **pH** da solução ou runoff com medidor calibrado\n2. Abra a [Calculadora de pH](/calculadoras/ph.html)\n3. Selecione o **meio de cultivo** (solo, coco ou hidro)\n4. Insira o pH medido e clique em **Verificar pH**\n\n## Como interpretar\n\n| Meio | Faixa ideal |\n|------|-------------|\n| Solo / Super Solo | 6,0 – 7,0 |\n| Fibra de Coco | 5,5 – 6,5 |\n| Hidroponia | 5,5 – 6,0 |\n\nA calculadora indica se está ácido, ideal ou alcalino e sugere pH Up ou pH Down.\n\n## Dicas\n\n- Ajuste pH **depois** de misturar todos os nutrientes\n- Em solo orgânico, o pH do runoff é mais informativo que o da calda\n\n---\n\n🧮 [Abrir Calculadora de pH](/calculadoras/ph.html)"
+    },
+    {
+      "title": "Custo de Energia: Guia de Uso",
+      "url": "/posts/post-guia-calculadora-energia.html",
+      "excerpt": "Como estimar o gasto mensal de eletricidade do cultivo indoor — luz, ventilação e tarifa.",
+      "text": "Custo de Energia: Guia de Uso Como estimar o gasto mensal de eletricidade do cultivo indoor — luz, ventilação e tarifa. pesquisa ## Objetivo\n\nUsar a **Calculadora de Custo de Energia** para estimar quanto o cultivo indoor consome por mês.\n\n## Quando usar\n\n- Ao dimensionar equipamento (luz + exaustor + outros)\n- Para comparar LED vs. HPS em custo operacional\n- Ao planejar upgrade elétrico ou extensão\n\n## Passo a passo\n\n1. Some a **potência total** em watts (luz + exaustor + bombas + outros)\n2. Estime **horas ligadas por dia** (fotoperíodo + ventilação contínua)\n3. Consulte o **preço do kWh** na conta de luz (R$/kWh)\n4. Abra a [Calculadora de Energia](/calculadoras/energia.html), insira os valores e calcule\n\n## Como interpretar\n\n- O resultado mostra kWh/mês e custo estimado em reais\n- Some margem de 10–15% para perdas no fator de potência e equipamentos auxiliares\n\n## Dicas\n\n- Exaustor contínuo 24 h pesa no custo — use controlador de velocidade\n- LEDs consomem menos que HPS com PPFD equivalente\n\n---\n\n🧮 [Abrir Calculadora de Energia](/calculadoras/energia.html)"
+    },
+    {
+      "title": "Watts por m²: Guia de Uso",
+      "url": "/posts/post-guia-calculadora-watts-m2.html",
+      "excerpt": "Como verificar se a potência luminosa está adequada para a área de cultivo — LEDs modernos.",
+      "text": "Watts por m²: Guia de Uso Como verificar se a potência luminosa está adequada para a área de cultivo — LEDs modernos. pesquisa ## Objetivo\n\nUsar **Watts por m²** para saber se a luminária cobre adequadamente a área de cultivo.\n\n## Quando usar\n\n- Ao comprar nova luminária LED\n- Para verificar se a tenda está sub ou super dimensionada\n- Complemento ao luxímetro (potência vs. intensidade real)\n\n## Passo a passo\n\n1. Anote a **potência da luz** em watts (valor da placa, não equivalente HPS)\n2. Meça a **área iluminada** em cm (comprimento × largura da zona de cultivo)\n3. Abra a [Calculadora Watts/m²](/calculadoras/watts-m2.html)\n4. Insira os valores e clique em **Calcular W/m²**\n\n## Como interpretar\n\n| W/m² | Indicação (LED moderno) |\n|------|-------------------------|\n| < 150 | Insuficiente |\n| 150–250 | Mínimo vegetativo |\n| 250–400 | Bom uso geral |\n| 400–600 | Floração intensa |\n| > 600 | Verificar distância e calor |\n\n## Dicas\n\n- W/m² é referência — eficácia do LED (μmol/J) importa tanto quanto watts\n- Confirme sempre com PPFD no dossel\n\n---\n\n🧮 [Abrir Calculadora Watts/m²](/calculadoras/watts-m2.html)"
+    },
+    {
+      "title": "Inspeção: Sistema de Ventilação da Tenda",
+      "url": "/posts/post-inspecao-ventilacao-tenda.html",
+      "excerpt": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório.",
+      "text": "Inspeção: Sistema de Ventilação da Tenda Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório. inspecao ## Escopo\n\nInspeção do **sistema de ventilação** da tenda principal: exaustor inline, filtro de carvão, duto flexível e entradas passivas.\n\n## Medições\n\n| Ponto | Valor |\n|-------|-------|\n| Ruído exaustor (1 m) | 46 dB |\n| ΔT tenda vs. ambiente | +2,5 °C |\n| Renovações estimadas | ~1,2 min⁻¹ |\n\n## Achados\n\n- Duto com curva acentuada reduz fluxo ~15%\n- Filtro saturado aumenta ruído em 4 dB vs. filtro novo\n- Entrada passiva inferior equilibra pressão negativa\n\n## Recomendações\n\n1. Substituir filtro a cada 6–9 meses de uso contínuo\n2. Encurtar duto ou usar cotovelos de raio largo\n3. Revisão trimestral documentada no canal\n\n## Status\n\n**Aprovado** — sistema adequado para volume atual da tenda."
+    },
+    {
+      "title": "Inspeção: O Início do Cultivo de Cannabis",
+      "url": "/posts/post-inspecao-cultivo-inicio.html",
+      "excerpt": "Verificação das quatro fases fenológicas e dos fatores ambientais críticos no arranque do cultivo — base do guia em vídeo do canal.",
+      "text": "Inspeção: O Início do Cultivo de Cannabis Verificação das quatro fases fenológicas e dos fatores ambientais críticos no arranque do cultivo — base do guia em vídeo do canal. inspecao ## Escopo\n\nInspeção documental do **arranque do cultivo** conforme metodologia apresentada no canal @InspetorBudGanja: delimitação das fases fenológicas, variáveis ambientais mensuráveis e critérios de aceitação para germinação e vegetativo inicial.\n\n## Hipóteses e método\n\n- **H1:** O ciclo completo divide-se em quatro etapas operacionais distintas (germinação → vegetativo → floração → secagem/cura).\n- **H2:** Luz, água, ar, temperatura, umidade relativa (UR) e substrato/nutrição são variáveis de primeira ordem — falha em qualquer uma compromete o rendimento global.\n- **Método:** Revisão do protocolo em vídeo, cruzamento com parâmetros de referência do laboratório e checklist de instrumentação mínima.\n\n## Parâmetros de referência\n\n| Variável | Faixa alvo (indoor típico) | Instrumento |\n|----------|---------------------------|-------------|\n| Temperatura | 22–28 °C (dia) | [Termo-higrômetro digital](/loja/#cultivo-indoor) |\n| UR ar | 55–70 % (vegetativo) | Termo-higrômetro |\n| Fotoperíodo (veg.) | 18/6 h | [Timer digital](/loja/#cultivo-indoor) |\n| Substrato | Bem drenado, pH 6,0–6,5 | Medidor de pH (opcional) |\n\n## Achados\n\n1. **Germinação:** sementes viáveis exigem umidade constante (não encharcamento) e temperatura estável; escotofobia impede desenvolvimento sem luz após emergência.\n2. **Vegetativo:** taxa de crescimento correlaciona-se com fotossíntese líquida — insuficiência lumínica alonga internós e reduz biomassa foliar.\n3. **Transição:** mudança de fotoperíodo e nutrição antecipa floração; documentar data de flip é essencial para o diário de cultivo.\n4. **Secagem/cura:** redução gradual da UR (≈55–62 %) preserva terpenos; monitorização contínua evita mofo.\n\n## Equipamentos verificados (loja parceira)\n\n- [Termo-higrômetro digital](/loja/#cultivo-indoor) — leitura simultânea T e U"
+    },
+    {
+      "title": "Inspeção: Nutrição da Cannabis",
+      "url": "/posts/post-inspecao-nutricao-cannabis.html",
+      "excerpt": "Análise das necessidades de macro e micronutrientes por fase fenológica, relação N:P:K e condutividade elétrica da solução nutritiva.",
+      "text": "Inspeção: Nutrição da Cannabis Análise das necessidades de macro e micronutrientes por fase fenológica, relação N:P:K e condutividade elétrica da solução nutritiva. inspecao ## Escopo\n\nInspeção da **nutrição mineral e orgânica** da *Cannabis sativa* L. em cultivo controlado: demanda por macronutrientes (N, P, K, Ca, Mg, S), micronutrientes (Fe, Mn, Zn, Cu, B, Mo) e ajuste por fase vegetativa vs. floração.\n\n## Hipóteses e método\n\n- **H1:** A relação N:P:K deve inverter-se entre vegetativo (ênfase em N) e floração (ênfase em P e K).\n- **H2:** EC e pH da solução ou do extrato de solo predizem disponibilidade iônica — fora da faixa ótima ocorre bloqueio antagónico (ex.: excesso de Ca bloqueia Mg).\n- **Método:** Síntese do protocolo do vídeo + tabela de faixas EC/pH aceites para cada meio.\n\n## Medições de referência\n\n| Fase | N:P:K típico | EC solução (mS/cm) | pH alvo |\n|------|-------------|-------------------|---------|\n| Plântula / início veg. | 3:1:2 | 0,8–1,2 | 5,8–6,2 (hidro) / 6,0–6,5 (solo) |\n| Vegetativo pleno | 3:1:2 – 2:1:2 | 1,2–1,8 | 5,8–6,2 |\n| Floração | 1:3:2 | 1,4–2,0 | 5,8–6,0 |\n| Final floração | 0:3:3 | 1,0–1,4 | 5,8–6,0 |\n\n## Achados\n\n- **Deficiência de N:** clorose em folhas inferiores (mobilização de reservas).\n- **Deficiência de P:** folhas escuras com manchas bronzeadas; atraso na floração.\n- **Deficiência de K:** necrose marginal em folhas maduras durante floração.\n- **Toxicidade por excesso:** pontas queimadas, bloqueio de outros íons — reduzir EC antes de adicionar mais fertilizante.\n- Em **solo vivo**, a nutrição é mediada pelo microbioma — ver [Inspeção: Solo Vivo Orgânico](/posts/post-inspecao-solo-vivo-organico.html).\n\n## Equipamentos verificados (loja parceira)\n\n- [Medidor de pH da água](/loja/#cultivo-indoor) — calibração semanal recomendada\n- [Balança digital de precisão](/loja/#cultivo-indoor) — dosagem de fertilizantes\n- [Fertilizante NPK para plantas](/loja/#cultivo-indoor) — linha vegetativo e floração\n\n## Ferramentas do laboratóri"
+    },
+    {
+      "title": "Inspeção: Solo Vivo Orgânico",
+      "url": "/posts/post-inspecao-solo-vivo-organico.html",
+      "excerpt": "Verificação da construção de super-solo com microbioma ativo, ciclagem de nutrientes e indicadores de saúde do substrato.",
+      "text": "Inspeção: Solo Vivo Orgânico Verificação da construção de super-solo com microbioma ativo, ciclagem de nutrientes e indicadores de saúde do substrato. inspecao ## Escopo\n\nInspeção do **substrato vivo** (*living soil*): composição do super-solo, papel de bactérias, fungos micorrízicos e invertebrados na mineralização e disponibilização de nutrientes.\n\n## Hipóteses e método\n\n- **H1:** Um solo vivo reduz a dependência de fertilizantes minerais sintéticos ao manter ciclagem fechada de C e N.\n- **H2:** A estrutura física (porosidade, retenção hídrica) e a atividade biológica são indicadores complementares de saúde.\n- **Método:** Análise da receita do vídeo (turfa/coco, composto, perlita, amendamentos) e critérios de manutenção (rega com chá de compostagem, cobertura morta).\n\n## Composição verificada (receita base)\n\n| Componente | Função | Proporção orientativa |\n|------------|--------|----------------------|\n| Turfa / coco | Matriz e retenção | 30–40 % |\n| Composto maduro | Nutrientes lentos + microbioma | 30–40 % |\n| Perlita / vermiculita | Drenagem e aeração | 10–20 % |\n| Farinha de ossos / guano | P e Ca (liberação lenta) | conforme análise |\n| Humus de minhoca | Inóculo microbiano | 5–10 % |\n\n## Achados\n\n- **Atividade biológica:** odor terroso, agregados estáveis e presença de micélio visível indicam colonização fúngica benéfica.\n- **pH tampão:** matéria orgânica complexa mantém faixa 6,0–7,0 em cultivo de cânhamo.\n- **Irrigação:** regas com **chá de compostagem** (aerada 24–48 h) repõem microbioma sem sobrefertilizar.\n- **Cobertura morta (mulch):** reduz evaporação e alimenta decompositores na superfície.\n\n## Equipamentos verificados (loja parceira)\n\n- [Substrato orgânico para plantas](/loja/#cultivo-indoor)\n- [Perlita para cultivo](/loja/#cultivo-indoor)\n- [Termo-higrômetro](/loja/#cultivo-indoor) — UR do dossel em solo vivo (55–65 % veg.)\n\n## Ferramentas do laboratório\n\n- [Calculadora VPD](/calculadoras/vpd.html) — ambiente do dossel\n- [Inspeção: Nutrição](/posts/"
+    },
+    {
+      "title": "Inspeção: Arquitetura da Cannabis",
+      "url": "/posts/post-inspecao-arquitetura-cannabis.html",
+      "excerpt": "Avaliação morfológica da planta — nós, internós, gemas apicais e laterais — e técnicas de manejo (topping, LST, SCROG).",
+      "text": "Inspeção: Arquitetura da Cannabis Avaliação morfológica da planta — nós, internós, gemas apicais e laterais — e técnicas de manejo (topping, LST, SCROG). inspecao ## Escopo\n\nInspeção da **arquitetura vegetativa** da cannabis: padrão de ramificação, dominância apical, distribuição de fluxo assimilatório e intervenções de treino que maximizam área foliar iluminada.\n\n## Hipóteses e método\n\n- **H1:** A dominância apical concentra auxinas na gema terminal, limitando brotação lateral até intervenção mecânica.\n- **H2:** Topping, LST (Low Stress Training) e SCROG aumentam colmos produtivos de forma previsível se aplicados no vegetativo.\n- **Método:** Mapeamento morfológico (nó/internó), registo fotográfico no diário e verificação de uniformidade lumínica no dossel.\n\n## Parâmetros morfológicos\n\n| Estrutura | Função | Indicador de saúde |\n|-----------|--------|-------------------|\n| Gema apical | Crescimento vertical | Cor verde uniforme, sem necrose |\n| Gemas axilares | Ramos laterais | Ativas após topping/LST |\n| Pecíolo | Suporte e transporte | Ângulo 45–90° após treino |\n| Internódio | Distância entre nós | Curto = luz adequada; longo = estiolamento |\n\n## Achados\n\n- **Topping (pinceamento apical):** duas gemas laterais assumem dominância; ideal com 4–6 nós desenvolvidos.\n- **LST:** dobragem gradual redistribui hormônios sem choque — fita macia ou arame revestido.\n- **SCROG:** [rede de treino](/loja/#cultivo-indoor) nivela dossel; PPFD homogéneo reduz “pipoca” (buds inferiores improdutivos).\n- **Folhas:** índice de área foliar (LAI) correlaciona com taxa fotossintética — remover apenas fan leaves que sombreiam gemas.\n\n## Equipamentos verificados (loja parceira)\n\n- [Rede SCROG para cultivo](/loja/#cultivo-indoor)\n- [Tesoura de poda](/loja/#cultivo-indoor)\n- [Painel LED full spectrum](/loja/#cultivo-indoor) — uniformidade no dossel\n\n## Ferramentas do laboratório\n\n- [Calculadora Watts/m²](/calculadoras/watts-m2.html)\n- [Diário de Cultivo](/cultivo/) — fotos antes/depois do tr"
+    },
+    {
+      "title": "Inspeção: A Ciência da Floração",
+      "url": "/posts/post-inspecao-ciencia-floracao.html",
+      "excerpt": "Verificação do gatilho fotoperiódico, desenvolvimento pistilar, maturação tricomática e janela ideal de colheita.",
+      "text": "Inspeção: A Ciência da Floração Verificação do gatilho fotoperiódico, desenvolvimento pistilar, maturação tricomática e janela ideal de colheita. inspecao ## Escopo\n\nInspeção da **fase reprodutiva**: transição vegetativo→floração por fotoperíodo, morfologia floral, biosíntese de canabinoides e terpenos nos tricomas glandulares.\n\n## Hipóteses e método\n\n- **H1:** Fotoperíodo ≤12 h de luz contínua induz floração em genótipos fotoperiódicos via interação phytochrome (Pfr/Pr).\n- **H2:** A maturação tricomática (clara→leitosa→âmbar) correlaciona-se com perfil de efeito e rendimento — não apenas calendário.\n- **Método:** Registo de data de flip 12/12, contagem de semanas de floração e observação tricomática com lupa 60×.\n\n## Parâmetros críticos na floração\n\n| Variável | Alvo | Notas |\n|----------|------|-------|\n| Fotoperíodo | 12/12 h | [Timer digital](/loja/#cultivo-indoor) — sem fugas de luz |\n| Temperatura | 20–26 °C | Calor noturno excessivo degrada terpenos |\n| UR | 40–50 % | Reduz risco de botrytis |\n| VPD | 1,0–1,4 kPa | [Calculadora VPD](/calculadoras/vpd.html) |\n| N:P:K | Baixo N, alto P/K | Ver inspeção de nutrição |\n\n## Achados\n\n- **Pré-flora:** alongamento internodal (“stretch”) nas 2–3 primeiras semanas pós-flip — reforçar suporte/SCROG.\n- **Pistilos:** brancos e erectos no início; escurecimento e retração indicam aproximação da maturação.\n- **Tricomas:** colheita majoritariamente leitosa para perfil mais cerebral; 10–20 % âmbar para efeito mais sedativo.\n- **Flush opcional:** redução de EC nas últimas 1–2 semanas pode melhorar sabor em cultivo mineral.\n\n## Equipamentos verificados (loja parceira)\n\n- [Timer fotoperíodo 12/12](/loja/#cultivo-indoor)\n- [Tomada inteligente](/loja/#cultivo-indoor) — confirmação de escuro absoluto\n- [Termo-higrômetro](/loja/#cultivo-indoor) — UR baixa na floração\n\n## Ferramentas do laboratório\n\n- [Calculadora DLI](/calculadoras/dli.html)\n- [Diário de Cultivo](/cultivo/) — registar semanas de floração\n\n## Vídeo explicativo\n\n@youtub"
+    },
+    {
+      "title": "Inspeção: Propagação e Clonagem",
+      "url": "/posts/post-inspecao-propagacao-clonagem.html",
+      "excerpt": "Verificação de técnicas de multiplicação vegetativa — estacas, ambiente de enraizamento e sistemas aeropónicos caseiros.",
+      "text": "Inspeção: Propagação e Clonagem Verificação de técnicas de multiplicação vegetativa — estacas, ambiente de enraizamento e sistemas aeropónicos caseiros. inspecao ## Escopo\n\nInspeção dos **métodos de propagação clonal**: seleção de material-mãe, estacas apicais, parâmetros de enraizamento (T, UR, oxigenação radicular) e comparação entre métodos passivos e aeropónicos.\n\n## Hipóteses e método\n\n- **H1:** Estacas de 10–15 cm com 2–3 nós, cortadas em bisel sob água corrente, enraízam mais rápido com UR elevada (70–90 %).\n- **H2:** Oxigenação contínua da zona radicular (clonadora com bombinha ou aspersão) acelera emissão de raízes adventícias.\n- **Método:** Protocolo do vídeo cruzado com manuais das clonadoras documentadas no laboratório.\n\n## Parâmetros de enraizamento\n\n| Parâmetro | Faixa alvo | Equipamento |\n|-----------|-----------|-------------|\n| Temperatura | 24–26 °C | Termo-higrômetro |\n| UR | 70–90 % | Domo / propagador |\n| Fotoperíodo | 18/6 ou 24/0 h | Timer |\n| Oxigenação (aeroponia) | 24 h contínuo | [Bombinha de ar](/loja/#clonadora-6) |\n\n## Achados\n\n- **Material-mãe:** plantas sadias, livres de pragas; últimos ramos vegetativos são ideais.\n- **Clonadora 6 estacas:** pote + buchas + [compressor de ar](/loja/#clonadora-6) — baixo custo, documentada em [manual 6 estacas](/equipamentos/clonadora-6-estacas.html).\n- **Clonadora 12 estacas:** aspersão com [bomba submersa](/loja/#clonadora-12) — maior throughput.\n- **Gel de enraizamento:** opcional; ácido indolilbutírico (AIB) estimula calo e raízes.\n- Tempo típico: **7–14 dias** até raízes visíveis com ambiente estável.\n\n## Equipamentos verificados (loja parceira)\n\n- [Clonadora de 6 estacas — materiais](/loja/#clonadora-6)\n- [Clonadora de 12 estacas — materiais](/loja/#clonadora-12)\n- [Gel de enraizamento](/loja/#clonadora-6)\n\n## Ferramentas do laboratório\n\n- [Manual clonadora 6 estacas](/equipamentos/clonadora-6-estacas.html)\n- [Manual clonadora 12 estacas](/equipamentos/clonadora-12-estacas.html)\n\n## Vídeo explic"
+    },
+    {
+      "title": "Inspeção: Otimização do Cultivo Indoor (PPFD e ambiente)",
+      "url": "/posts/post-inspecao-cultivo-indoor-ppfd.html",
+      "excerpt": "Verificação integrada de PPFD, DLI, VPD, ventilação e layout da tenda — síntese do ambiente indoor eficiente.",
+      "text": "Inspeção: Otimização do Cultivo Indoor (PPFD e ambiente) Verificação integrada de PPFD, DLI, VPD, ventilação e layout da tenda — síntese do ambiente indoor eficiente. inspecao ## Escopo\n\nInspeção **integrada do ambiente indoor**: densidade de fluxo de fótons fotossinteticamente ativos (PPFD), integral diária de luz (DLI), déficit de pressão de vapor (VPD), renovação de ar e disposição física da tenda.\n\n## Hipóteses e método\n\n- **H1:** PPFD no dossel entre 400–600 μmol/m²/s (floração) com fotoperíodo 12 h produz DLI ≈ 17–26 mol/m²/d — faixa produtiva para cannabis.\n- **H2:** VPD estável (0,8–1,2 kPa veg.; 1,0–1,4 kPa floração) maximiza transpiração sem fechar estômatos.\n- **H3:** Renovação de ar ≥1 volume/minuto reduz gradiente térmico e acúmulo de etileno.\n- **Método:** Checklist do vídeo + cruzamento com [Inspeção: Ventilação da Tenda](/posts/post-inspecao-ventilacao-tenda.html).\n\n## Medições de referência\n\n| Grandeza | Vegetativo | Floração | Ferramenta |\n|----------|-----------|----------|------------|\n| PPFD (dossel) | 300–500 μmol/m²/s | 400–700 μmol/m²/s | Luxímetro/quantum (ou estimativa W/m²) |\n| DLI | 18–24 mol/m²/d | 30–45 mol/m²/d | [Calculadora DLI](/calculadoras/dli.html) |\n| VPD | 0,8–1,2 kPa | 1,0–1,4 kPa | [Calculadora VPD](/calculadoras/vpd.html) |\n| T | 24–28 °C (luz) | 20–26 °C | Termo-higrômetro |\n| Renovação ar | ~1,2 min⁻¹ | idem | Exaustor dimensionado |\n\n## Achados\n\n- **LED full spectrum:** posicionar a 30–45 cm do dossel; ajustar altura conforme [Watts/m²](/calculadoras/watts-m2.html).\n- **Exaustor inline + filtro de carvão:** pressão negativa evita odor; ver relatório de ventilação do laboratório.\n- **Ventilador de circulação interno:** previne microclimas e fortalece caules.\n- **Automação:** [tomada inteligente](/loja/#cultivo-indoor) + timer segregam luz, exaustor e umidificador por fase.\n- **Layout:** reservar espaço para acesso, espectro uniforme e manutenção do filtro.\n\n## Equipamentos verificados (loja parceira)\n\n- [Painel LED cultivo"
+    },
+    {
+      "title": "Inspeção: Canal Jardim HG (@jardimhg)",
+      "url": "/posts/post-inspecao-canal-jardimhg.html",
+      "excerpt": "Auditoria editorial do canal Jardim HG — 15 vídeos catalogados sobre cultivo medicinal indoor/outdoor, com créditos integrais ao criador.",
+      "text": "Inspeção: Canal Jardim HG (@jardimhg) Auditoria editorial do canal Jardim HG — 15 vídeos catalogados sobre cultivo medicinal indoor/outdoor, com créditos integrais ao criador. inspecao ## Escopo\n\nInspeção editorial e técnica do **canal de referência** [Jardim HG](https://www.youtube.com/@jardimhg) (@jardimhg) — auditoria do acervo público de vídeos sobre cultivo medicinal de *Cannabis sativa* L. em português (Brasil), com mapeamento temático, avaliação de consistência pedagógica e registo completo do catálogo inspecionado.\n\n> **Nota metodológica:** esta inspeção foi produzida pelo laboratório Inspetor BudGanja de forma **independente**. Todo o conteúdo audiovisual pertence ao criador do canal Jardim HG. Nenhum vídeo foi replicado além dos embeds oficiais do YouTube.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Canal | [Jardim HG](https://www.youtube.com/@jardimhg) |\n| Handle | @jardimhg |\n| ID YouTube | `UC35zh8z-3baboExD1_O0jgA` |\n| Instagram | [@jardimhg](https://www.instagram.com/jardimhg/) |\n| Idioma | Português (Brasil) |\n| Linha editorial | Conteúdo educativo sobre cultivo medicinal de Cannabis sativa indoor e outdoor, com dicas práticas e técnicas especializadas. |\n| Canal ativo desde | 2023-03-08 |\n| Vídeos catalogados nesta inspeção | **15** |\n| Data da inspeção | 2026-06-28 |\n\n## Hipóteses e método\n\n- **H1:** Canais educativos consistentes em PT-BR preenchem lacuna entre prática de campo e literatura técnica acessível ao cultivador doméstico.\n- **H2:** A diversidade temática (substrato → colheita) correlaciona-se com retenção de audiência e profundidade de comunidade.\n- **Método:** (1) levantamento via feed RSS e página pública de uploads; (2) verificação de autoria por oEmbed (autor `Jardim HG`); (3) classificação temática por palavras-chave; (4) revisão cruzada com calculadoras e inspeções do Inspetor BudGanja.\n\n## Perfil editorial (achados)\n\n1. **Abordagem dual indoor/outdoor** — fotoperíodo, sementes automáticas vs. fotoperiódicas e i"
+    },
+    {
+      "title": "Inspeção: O Início do Cultivo de Cannabis",
+      "url": "",
+      "excerpt": "Verificação das quatro fases fenológicas e dos fatores ambientais críticos no arranque do cultivo — base do guia em vídeo do canal.",
+      "text": "Inspeção: O Início do Cultivo de Cannabis Verificação das quatro fases fenológicas e dos fatores ambientais críticos no arranque do cultivo — base do guia em vídeo do canal. ## Escopo\n\nInspeção documental do **arranque do cultivo** conforme metodologia apresentada no canal @InspetorBudGanja: delimitação das fases fenológicas, variáveis ambientais mensuráveis e critérios de aceitação para germinação e vegetativo inicial.\n\n## Hipóteses e método\n\n- **H1:** O ciclo completo divide-se em quatro etapas operacionais distintas (germinação → vegetativo → floração → secagem/cura).\n- **H2:** Luz, água, ar, temperatura, umidade relativa (UR) e substrato/nutrição são variáveis de primeira ordem — falha em qualquer uma compromete o rendimento global.\n- **Método:** Revisão do protocolo em vídeo, cruzamento com parâmetros de referência do laboratório e checklist de instrumentação mínima.\n\n## Parâmetros de referência\n\n| Variável | Faixa alvo (indoor típico) | Instrumento |\n|----------|---------------------------|-------------|\n| Temperatura | 22–28 °C (dia) | [Termo-higrômetro digital](/loja/#cultivo-indoor) |\n| UR ar | 55–70 % (vegetativo) | Termo-higrômetro |\n| Fotoperíodo (veg.) | 18/6 h | [Timer digital](/loja/#cultivo-indoor) |\n| Substrato | Bem drenado, pH 6,0–6,5 | Medidor de pH (opcional) |\n\n## Achados\n\n1. **Germinação:** sementes viáveis exigem umidade constante (não encharcamento) e temperatura estável; escotofobia impede desenvolvimento sem luz após emergência.\n2. **Vegetativo:** taxa de crescimento correlaciona-se com fotossíntese líquida — insuficiência lumínica alonga internós e reduz biomassa foliar.\n3. **Transição:** mudança de fotoperíodo e nutrição antecipa floração; documentar data de flip é essencial para o diário de cultivo.\n4. **Secagem/cura:** redução gradual da UR (≈55–62 %) preserva terpenos; monitorização contínua evita mofo.\n\n## Equipamentos verificados (loja parceira)\n\n- [Termo-higrômetro digital](/loja/#cultivo-indoor) — leitura simultânea T e UR no doss"
+    },
+    {
+      "title": "Inspeção: Nutrição da Cannabis",
+      "url": "",
+      "excerpt": "Análise das necessidades de macro e micronutrientes por fase fenológica, relação N:P:K e condutividade elétrica da solução nutritiva.",
+      "text": "Inspeção: Nutrição da Cannabis Análise das necessidades de macro e micronutrientes por fase fenológica, relação N:P:K e condutividade elétrica da solução nutritiva. ## Escopo\n\nInspeção da **nutrição mineral e orgânica** da *Cannabis sativa* L. em cultivo controlado: demanda por macronutrientes (N, P, K, Ca, Mg, S), micronutrientes (Fe, Mn, Zn, Cu, B, Mo) e ajuste por fase vegetativa vs. floração.\n\n## Hipóteses e método\n\n- **H1:** A relação N:P:K deve inverter-se entre vegetativo (ênfase em N) e floração (ênfase em P e K).\n- **H2:** EC e pH da solução ou do extrato de solo predizem disponibilidade iônica — fora da faixa ótima ocorre bloqueio antagónico (ex.: excesso de Ca bloqueia Mg).\n- **Método:** Síntese do protocolo do vídeo + tabela de faixas EC/pH aceites para cada meio.\n\n## Medições de referência\n\n| Fase | N:P:K típico | EC solução (mS/cm) | pH alvo |\n|------|-------------|-------------------|---------|\n| Plântula / início veg. | 3:1:2 | 0,8–1,2 | 5,8–6,2 (hidro) / 6,0–6,5 (solo) |\n| Vegetativo pleno | 3:1:2 – 2:1:2 | 1,2–1,8 | 5,8–6,2 |\n| Floração | 1:3:2 | 1,4–2,0 | 5,8–6,0 |\n| Final floração | 0:3:3 | 1,0–1,4 | 5,8–6,0 |\n\n## Achados\n\n- **Deficiência de N:** clorose em folhas inferiores (mobilização de reservas).\n- **Deficiência de P:** folhas escuras com manchas bronzeadas; atraso na floração.\n- **Deficiência de K:** necrose marginal em folhas maduras durante floração.\n- **Toxicidade por excesso:** pontas queimadas, bloqueio de outros íons — reduzir EC antes de adicionar mais fertilizante.\n- Em **solo vivo**, a nutrição é mediada pelo microbioma — ver [Inspeção: Solo Vivo Orgânico](/posts/post-inspecao-solo-vivo-organico.html).\n\n## Equipamentos verificados (loja parceira)\n\n- [Medidor de pH da água](/loja/#cultivo-indoor) — calibração semanal recomendada\n- [Balança digital de precisão](/loja/#cultivo-indoor) — dosagem de fertilizantes\n- [Fertilizante NPK para plantas](/loja/#cultivo-indoor) — linha vegetativo e floração\n\n## Ferramentas do laboratório\n\n- [Cal"
+    },
+    {
+      "title": "Inspeção: Solo Vivo Orgânico",
+      "url": "",
+      "excerpt": "Verificação da construção de super-solo com microbioma ativo, ciclagem de nutrientes e indicadores de saúde do substrato.",
+      "text": "Inspeção: Solo Vivo Orgânico Verificação da construção de super-solo com microbioma ativo, ciclagem de nutrientes e indicadores de saúde do substrato. ## Escopo\n\nInspeção do **substrato vivo** (*living soil*): composição do super-solo, papel de bactérias, fungos micorrízicos e invertebrados na mineralização e disponibilização de nutrientes.\n\n## Hipóteses e método\n\n- **H1:** Um solo vivo reduz a dependência de fertilizantes minerais sintéticos ao manter ciclagem fechada de C e N.\n- **H2:** A estrutura física (porosidade, retenção hídrica) e a atividade biológica são indicadores complementares de saúde.\n- **Método:** Análise da receita do vídeo (turfa/coco, composto, perlita, amendamentos) e critérios de manutenção (rega com chá de compostagem, cobertura morta).\n\n## Composição verificada (receita base)\n\n| Componente | Função | Proporção orientativa |\n|------------|--------|----------------------|\n| Turfa / coco | Matriz e retenção | 30–40 % |\n| Composto maduro | Nutrientes lentos + microbioma | 30–40 % |\n| Perlita / vermiculita | Drenagem e aeração | 10–20 % |\n| Farinha de ossos / guano | P e Ca (liberação lenta) | conforme análise |\n| Humus de minhoca | Inóculo microbiano | 5–10 % |\n\n## Achados\n\n- **Atividade biológica:** odor terroso, agregados estáveis e presença de micélio visível indicam colonização fúngica benéfica.\n- **pH tampão:** matéria orgânica complexa mantém faixa 6,0–7,0 em cultivo de cânhamo.\n- **Irrigação:** regas com **chá de compostagem** (aerada 24–48 h) repõem microbioma sem sobrefertilizar.\n- **Cobertura morta (mulch):** reduz evaporação e alimenta decompositores na superfície.\n\n## Equipamentos verificados (loja parceira)\n\n- [Substrato orgânico para plantas](/loja/#cultivo-indoor)\n- [Perlita para cultivo](/loja/#cultivo-indoor)\n- [Termo-higrômetro](/loja/#cultivo-indoor) — UR do dossel em solo vivo (55–65 % veg.)\n\n## Ferramentas do laboratório\n\n- [Calculadora VPD](/calculadoras/vpd.html) — ambiente do dossel\n- [Inspeção: Nutrição](/posts/post-insp"
+    },
+    {
+      "title": "Inspeção: Arquitetura da Cannabis",
+      "url": "",
+      "excerpt": "Avaliação morfológica da planta — nós, internós, gemas apicais e laterais — e técnicas de manejo (topping, LST, SCROG).",
+      "text": "Inspeção: Arquitetura da Cannabis Avaliação morfológica da planta — nós, internós, gemas apicais e laterais — e técnicas de manejo (topping, LST, SCROG). ## Escopo\n\nInspeção da **arquitetura vegetativa** da cannabis: padrão de ramificação, dominância apical, distribuição de fluxo assimilatório e intervenções de treino que maximizam área foliar iluminada.\n\n## Hipóteses e método\n\n- **H1:** A dominância apical concentra auxinas na gema terminal, limitando brotação lateral até intervenção mecânica.\n- **H2:** Topping, LST (Low Stress Training) e SCROG aumentam colmos produtivos de forma previsível se aplicados no vegetativo.\n- **Método:** Mapeamento morfológico (nó/internó), registo fotográfico no diário e verificação de uniformidade lumínica no dossel.\n\n## Parâmetros morfológicos\n\n| Estrutura | Função | Indicador de saúde |\n|-----------|--------|-------------------|\n| Gema apical | Crescimento vertical | Cor verde uniforme, sem necrose |\n| Gemas axilares | Ramos laterais | Ativas após topping/LST |\n| Pecíolo | Suporte e transporte | Ângulo 45–90° após treino |\n| Internódio | Distância entre nós | Curto = luz adequada; longo = estiolamento |\n\n## Achados\n\n- **Topping (pinceamento apical):** duas gemas laterais assumem dominância; ideal com 4–6 nós desenvolvidos.\n- **LST:** dobragem gradual redistribui hormônios sem choque — fita macia ou arame revestido.\n- **SCROG:** [rede de treino](/loja/#cultivo-indoor) nivela dossel; PPFD homogéneo reduz “pipoca” (buds inferiores improdutivos).\n- **Folhas:** índice de área foliar (LAI) correlaciona com taxa fotossintética — remover apenas fan leaves que sombreiam gemas.\n\n## Equipamentos verificados (loja parceira)\n\n- [Rede SCROG para cultivo](/loja/#cultivo-indoor)\n- [Tesoura de poda](/loja/#cultivo-indoor)\n- [Painel LED full spectrum](/loja/#cultivo-indoor) — uniformidade no dossel\n\n## Ferramentas do laboratório\n\n- [Calculadora Watts/m²](/calculadoras/watts-m2.html)\n- [Diário de Cultivo](/cultivo/) — fotos antes/depois do treino\n\n## "
+    },
+    {
+      "title": "Inspeção: A Ciência da Floração",
+      "url": "",
+      "excerpt": "Verificação do gatilho fotoperiódico, desenvolvimento pistilar, maturação tricomática e janela ideal de colheita.",
+      "text": "Inspeção: A Ciência da Floração Verificação do gatilho fotoperiódico, desenvolvimento pistilar, maturação tricomática e janela ideal de colheita. ## Escopo\n\nInspeção da **fase reprodutiva**: transição vegetativo→floração por fotoperíodo, morfologia floral, biosíntese de canabinoides e terpenos nos tricomas glandulares.\n\n## Hipóteses e método\n\n- **H1:** Fotoperíodo ≤12 h de luz contínua induz floração em genótipos fotoperiódicos via interação phytochrome (Pfr/Pr).\n- **H2:** A maturação tricomática (clara→leitosa→âmbar) correlaciona-se com perfil de efeito e rendimento — não apenas calendário.\n- **Método:** Registo de data de flip 12/12, contagem de semanas de floração e observação tricomática com lupa 60×.\n\n## Parâmetros críticos na floração\n\n| Variável | Alvo | Notas |\n|----------|------|-------|\n| Fotoperíodo | 12/12 h | [Timer digital](/loja/#cultivo-indoor) — sem fugas de luz |\n| Temperatura | 20–26 °C | Calor noturno excessivo degrada terpenos |\n| UR | 40–50 % | Reduz risco de botrytis |\n| VPD | 1,0–1,4 kPa | [Calculadora VPD](/calculadoras/vpd.html) |\n| N:P:K | Baixo N, alto P/K | Ver inspeção de nutrição |\n\n## Achados\n\n- **Pré-flora:** alongamento internodal (“stretch”) nas 2–3 primeiras semanas pós-flip — reforçar suporte/SCROG.\n- **Pistilos:** brancos e erectos no início; escurecimento e retração indicam aproximação da maturação.\n- **Tricomas:** colheita majoritariamente leitosa para perfil mais cerebral; 10–20 % âmbar para efeito mais sedativo.\n- **Flush opcional:** redução de EC nas últimas 1–2 semanas pode melhorar sabor em cultivo mineral.\n\n## Equipamentos verificados (loja parceira)\n\n- [Timer fotoperíodo 12/12](/loja/#cultivo-indoor)\n- [Tomada inteligente](/loja/#cultivo-indoor) — confirmação de escuro absoluto\n- [Termo-higrômetro](/loja/#cultivo-indoor) — UR baixa na floração\n\n## Ferramentas do laboratório\n\n- [Calculadora DLI](/calculadoras/dli.html)\n- [Diário de Cultivo](/cultivo/) — registar semanas de floração\n\n## Vídeo explicativo\n\n@youtube V6LO6nX"
+    },
+    {
+      "title": "Inspeção: Propagação e Clonagem",
+      "url": "",
+      "excerpt": "Verificação de técnicas de multiplicação vegetativa — estacas, ambiente de enraizamento e sistemas aeropónicos caseiros.",
+      "text": "Inspeção: Propagação e Clonagem Verificação de técnicas de multiplicação vegetativa — estacas, ambiente de enraizamento e sistemas aeropónicos caseiros. ## Escopo\n\nInspeção dos **métodos de propagação clonal**: seleção de material-mãe, estacas apicais, parâmetros de enraizamento (T, UR, oxigenação radicular) e comparação entre métodos passivos e aeropónicos.\n\n## Hipóteses e método\n\n- **H1:** Estacas de 10–15 cm com 2–3 nós, cortadas em bisel sob água corrente, enraízam mais rápido com UR elevada (70–90 %).\n- **H2:** Oxigenação contínua da zona radicular (clonadora com bombinha ou aspersão) acelera emissão de raízes adventícias.\n- **Método:** Protocolo do vídeo cruzado com manuais das clonadoras documentadas no laboratório.\n\n## Parâmetros de enraizamento\n\n| Parâmetro | Faixa alvo | Equipamento |\n|-----------|-----------|-------------|\n| Temperatura | 24–26 °C | Termo-higrômetro |\n| UR | 70–90 % | Domo / propagador |\n| Fotoperíodo | 18/6 ou 24/0 h | Timer |\n| Oxigenação (aeroponia) | 24 h contínuo | [Bombinha de ar](/loja/#clonadora-6) |\n\n## Achados\n\n- **Material-mãe:** plantas sadias, livres de pragas; últimos ramos vegetativos são ideais.\n- **Clonadora 6 estacas:** pote + buchas + [compressor de ar](/loja/#clonadora-6) — baixo custo, documentada em [manual 6 estacas](/equipamentos/clonadora-6-estacas.html).\n- **Clonadora 12 estacas:** aspersão com [bomba submersa](/loja/#clonadora-12) — maior throughput.\n- **Gel de enraizamento:** opcional; ácido indolilbutírico (AIB) estimula calo e raízes.\n- Tempo típico: **7–14 dias** até raízes visíveis com ambiente estável.\n\n## Equipamentos verificados (loja parceira)\n\n- [Clonadora de 6 estacas — materiais](/loja/#clonadora-6)\n- [Clonadora de 12 estacas — materiais](/loja/#clonadora-12)\n- [Gel de enraizamento](/loja/#clonadora-6)\n\n## Ferramentas do laboratório\n\n- [Manual clonadora 6 estacas](/equipamentos/clonadora-6-estacas.html)\n- [Manual clonadora 12 estacas](/equipamentos/clonadora-12-estacas.html)\n\n## Vídeo explicativo\n\n@y"
+    },
+    {
+      "title": "Inspeção: Otimização do Cultivo Indoor (PPFD e ambiente)",
+      "url": "",
+      "excerpt": "Verificação integrada de PPFD, DLI, VPD, ventilação e layout da tenda — síntese do ambiente indoor eficiente.",
+      "text": "Inspeção: Otimização do Cultivo Indoor (PPFD e ambiente) Verificação integrada de PPFD, DLI, VPD, ventilação e layout da tenda — síntese do ambiente indoor eficiente. ## Escopo\n\nInspeção **integrada do ambiente indoor**: densidade de fluxo de fótons fotossinteticamente ativos (PPFD), integral diária de luz (DLI), déficit de pressão de vapor (VPD), renovação de ar e disposição física da tenda.\n\n## Hipóteses e método\n\n- **H1:** PPFD no dossel entre 400–600 μmol/m²/s (floração) com fotoperíodo 12 h produz DLI ≈ 17–26 mol/m²/d — faixa produtiva para cannabis.\n- **H2:** VPD estável (0,8–1,2 kPa veg.; 1,0–1,4 kPa floração) maximiza transpiração sem fechar estômatos.\n- **H3:** Renovação de ar ≥1 volume/minuto reduz gradiente térmico e acúmulo de etileno.\n- **Método:** Checklist do vídeo + cruzamento com [Inspeção: Ventilação da Tenda](/posts/post-inspecao-ventilacao-tenda.html).\n\n## Medições de referência\n\n| Grandeza | Vegetativo | Floração | Ferramenta |\n|----------|-----------|----------|------------|\n| PPFD (dossel) | 300–500 μmol/m²/s | 400–700 μmol/m²/s | Luxímetro/quantum (ou estimativa W/m²) |\n| DLI | 18–24 mol/m²/d | 30–45 mol/m²/d | [Calculadora DLI](/calculadoras/dli.html) |\n| VPD | 0,8–1,2 kPa | 1,0–1,4 kPa | [Calculadora VPD](/calculadoras/vpd.html) |\n| T | 24–28 °C (luz) | 20–26 °C | Termo-higrômetro |\n| Renovação ar | ~1,2 min⁻¹ | idem | Exaustor dimensionado |\n\n## Achados\n\n- **LED full spectrum:** posicionar a 30–45 cm do dossel; ajustar altura conforme [Watts/m²](/calculadoras/watts-m2.html).\n- **Exaustor inline + filtro de carvão:** pressão negativa evita odor; ver relatório de ventilação do laboratório.\n- **Ventilador de circulação interno:** previne microclimas e fortalece caules.\n- **Automação:** [tomada inteligente](/loja/#cultivo-indoor) + timer segregam luz, exaustor e umidificador por fase.\n- **Layout:** reservar espaço para acesso, espectro uniforme e manutenção do filtro.\n\n## Equipamentos verificados (loja parceira)\n\n- [Painel LED cultivo indoor]("
+    }
+  ]
+}

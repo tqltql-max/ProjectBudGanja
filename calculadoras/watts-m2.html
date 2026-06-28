@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Verifique se a potência luminosa está adequada para a área do seu cultivo.">
+    <meta property="og:title" content="Watts por m² | Inspetor BudGanja">
+    <meta property="og:description" content="Verifique se a potência luminosa está adequada para a área do seu cultivo.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/imagens/icon-512.png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/imagens/favicon-32.png?v=190" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=190" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=190">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3d5c28">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
+    <link rel="stylesheet" href="/css/style.css?v=190">
+    <!-- generated:calculadoras -->
+    <title>Watts por m² | Inspetor BudGanja</title>
+</head>
+<body data-page="calculadora-watts-m2">
+    <div id="site-header"></div>
+
+    <main id="main-content" class="conteudo calc-app-page">
+
+        <header class="calc-app-header">
+            <a href="/calculadoras/" class="calc-app-back" aria-label="Voltar para calculadoras">&larr;</a>
+            <div class="calc-app-header-main">
+                <span class="calc-app-icon" aria-hidden="true">🔆</span>
+                <h1>Watts por m²</h1>
+            </div>
+            <a href="/posts/post-guia-calculadora-watts-m2.html" class="calc-app-guia-btn">Guia</a>
+        </header>
+        <details class="calc-app-about">
+            <summary>Sobre</summary>
+            <p class="calc-app-about-text">Verifique se a potência luminosa está adequada para a área do seu cultivo.</p>
+        </details>
+
+        <div class="calc-app-body">
+            <div class="card calc-app-card">
+
+                <div class="calculator">
+                    <label for="watts-luz">Potência da luz (watts):</label>
+                    <input type="number" id="watts-luz" step="1" placeholder="Ex: 300">
+                    <label for="area-comp">Comprimento da área (cm):</label>
+                    <input type="number" id="area-comp" step="1" placeholder="Ex: 120">
+                    <label for="area-larg">Largura da área (cm):</label>
+                    <input type="number" id="area-larg" step="1" placeholder="Ex: 120">
+                    <button type="button" onclick="calcularWattsM2()" class="botao">Calcular W/m²</button>
+                    <div id="resultado-watts"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+  <script src="/js/app-version-check.js?v=190"></script>
+    <script src="/js/i18n-data.js?v=190"></script>
+    <script src="/js/i18n.js?v=190"></script>
+    <script src="/js/ferramentas-nav-data.js?v=190"></script>
+    <script src="/js/layout.js?v=190"></script>
+    <script src="/js/cultivo-diary-bridge.js?v=190"></script>
+    <script src="/js/calculadoras/watts-m2.js?v=190"></script>
+
+</body>
+</html>

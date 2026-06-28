@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sorteio de inauguração do Inspetor BudGanja — em breve, clonadora aeropônica caseira de baixo custo documentada no site.">
+    <meta property="og:title" content="Sorteios | Inspetor BudGanja">
+    <meta property="og:description" content="Primeiro sorteio do laboratório: clonadora aeropônica caseira. Inscrições em breve.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/imagens/icon-512.png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/imagens/favicon-32.png?v=190" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=190" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=190">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3d5c28">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
+    <link rel="stylesheet" href="/css/style.css?v=190">
+    <title>Sorteios | Inspetor BudGanja</title>
+</head>
+<body data-page="sorteios">
+    <div id="site-header"></div>
+
+    <main id="main-content" class="conteudo sorteios-page">
+        <h1>Sorteios</h1>
+        <p class="secao-subtitulo sorteios-intro">
+            Acompanhe o sorteio de inauguração do Inspetor BudGanja. As inscrições abrem em breve — o prêmio será a clonadora caseira com pote de sorvete documentada no site.
+        </p>
+
+        <section id="sorteios-current" class="sorteios-current highlight" hidden>
+            <p class="sorteios-current-badge">Em breve</p>
+            <h2 id="sorteios-current-title" class="sorteios-current-title"></h2>
+            <p id="sorteios-current-desc" class="sorteios-current-desc"></p>
+            <p id="sorteios-current-prize" class="sorteios-current-prize"></p>
+            <p id="sorteios-current-date" class="sorteios-current-date"></p>
+            <p id="sorteios-current-manual" class="sorteios-current-manual" hidden></p>
+        </section>
+
+        <div id="sorteios-closed" class="sorteios-notice" hidden>
+            <p><strong>Inscrições ainda não abertas.</strong></p>
+            <p id="sorteios-closed-text">Acompanhe o canal @InspetorBudGanja para saber quando o sorteio de inauguração abrir.</p>
+        </div>
+
+        <div id="sorteios-static-notice" class="sorteios-notice" hidden>
+            <p><strong>Configuração do sorteio indisponível.</strong></p>
+            <p>Recarregue a página ou confira se o ficheiro <code>content/sorteio.json</code> está publicado.</p>
+        </div>
+
+        <div class="sorteios-layout" id="sorteios-layout" hidden>
+            <aside class="highlight sorteios-info">
+                <h2>Como funciona</h2>
+                <ul class="info-list" id="sorteios-info-list">
+                    <li>Use dados reais para contato em caso de premiação.</li>
+                    <li>O sorteio é gratuito e sem compra obrigatória.</li>
+                    <li>Acompanhe o canal <a href="https://www.youtube.com/@InspetorBudGanja" target="_blank" rel="noopener noreferrer">@InspetorBudGanja</a>.</li>
+                </ul>
+            </aside>
+
+            <div id="sorteios-google-wrap" class="sorteios-google-wrap" hidden>
+                <div class="sorteios-form">
+                    <h2 class="sorteios-form-title">Inscrição via Google Forms</h2>
+                    <p class="sorteios-google-help">Preencha o formulário abaixo. Suas respostas serão registradas de forma segura no Google Forms.</p>
+                    <p class="sorteios-google-actions">
+                        <a id="sorteios-google-link" class="botao" href="#" target="_blank" rel="noopener noreferrer">Abrir formulário em nova aba</a>
+                    </p>
+                    <div id="sorteios-google-embed-wrap" class="sorteios-google-embed-wrap" hidden>
+                        <iframe id="sorteios-google-embed" class="sorteios-google-embed" title="Formulário de inscrição no sorteio" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sorteios-internal-wrap">
+            <form id="sorteios-form" class="sorteios-form" novalidate>
+                <h2 class="sorteios-form-title">Formulário de inscrição</h2>
+
+                <div id="sorteio-premio-wrap" class="sorteios-field" hidden>
+                    <label for="sorteio-premio">Prêmio desejado</label>
+                    <select id="sorteio-premio" name="premioId" class="select-dark"></select>
+                </div>
+
+                <label class="sorteios-field">
+                    Nome completo
+                    <input type="text" id="sorteio-nome" name="nome" autocomplete="name" required minlength="3" maxlength="120" placeholder="Seu nome">
+                </label>
+
+                <label class="sorteios-field">
+                    CPF
+                    <input type="text" id="sorteio-cpf" name="cpf" autocomplete="off" required inputmode="numeric" maxlength="14" placeholder="000.000.000-00">
+                </label>
+
+                <label class="sorteios-field">
+                    E-mail
+                    <input type="email" id="sorteio-email" name="email" autocomplete="email" required maxlength="120" placeholder="seu@email.com">
+                </label>
+
+                <label class="sorteios-field">
+                    Telefone / WhatsApp
+                    <input type="tel" id="sorteio-telefone" name="telefone" autocomplete="tel" required inputmode="numeric" maxlength="20" placeholder="(11) 99999-9999">
+                </label>
+
+                <div class="sorteios-field-row">
+                    <label class="sorteios-field">
+                        Cidade
+                        <input type="text" id="sorteio-cidade" name="cidade" autocomplete="address-level2" maxlength="80" placeholder="Sua cidade">
+                    </label>
+                    <label class="sorteios-field">
+                        Estado
+                        <select id="sorteio-estado" name="estado" class="select-dark">
+                            <option value="">Selecione</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </label>
+                </div>
+
+                <label class="sorteios-field">
+                    Instagram <span class="field-optional">(opcional)</span>
+                    <input type="text" id="sorteio-instagram" name="instagram" maxlength="80" placeholder="@seuusuario">
+                </label>
+
+                <label class="sorteios-checkbox">
+                    <input type="checkbox" id="sorteio-aceite" name="aceite" required>
+                    <span>Li e aceito participar deste sorteio e a <a href="/info/privacidade.html" target="_blank" rel="noopener">política de privacidade</a>. Autorizo o uso dos meus dados apenas para contato relacionado ao sorteio.</span>
+                </label>
+
+                <button type="submit" class="botao sorteios-submit" id="sorteios-submit">Participar do sorteio</button>
+                <p id="sorteios-message" class="sorteios-message" role="status" aria-live="polite"></p>
+            </form>
+            </div>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+  <script src="/js/app-version-check.js?v=190"></script>
+    <script src="/js/i18n-data.js?v=190"></script>
+    <script src="/js/i18n.js?v=190"></script>
+    <script src="/js/ferramentas-nav-data.js?v=190"></script>
+    <script src="/js/layout.js?v=190"></script>
+    <script src="/js/sorteios.js?v=190"></script>
+
+</body>
+</html>

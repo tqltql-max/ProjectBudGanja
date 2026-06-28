@@ -1,0 +1,13 @@
+# Tunel activo: budganja
+# ID: deccb19c-bdf3-477d-a251-279dc4b5b584
+# Config real: C:\Users\tiago\.cloudflared\config.yml
+
+tunnel: deccb19c-bdf3-477d-a251-279dc4b5b584
+credentials-file: C:\Users\tiago\.cloudflared\deccb19c-bdf3-477d-a251-279dc4b5b584.json
+
+ingress:
+  - hostname: inspetorbudganja.com.br
+    service: http://localhost:8080
+  - hostname: www.inspetorbudganja.com.br
+    service: http://localhost:8080
+  - service: http_status:404

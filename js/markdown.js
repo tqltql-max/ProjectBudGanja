@@ -1,4 +1,4 @@
-/* Markdown renderer (mirrors _markdown.js for admin preview) */
+/* Markdown renderer (mirrors lib/markdown-render.js for admin preview) */
 function mdInlineFormat(text) {
   return String(text)
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')

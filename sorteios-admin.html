@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Sorteios | Admin Inspetor BudGanja</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css?v=190">
+  <script>(function(){var t=localStorage.getItem('budganja-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+</head>
+<body data-page="sorteios-admin">
+  <div id="site-header"></div>
+  <main class="conteudo-interno admin-panel">
+    <header class="admin-hub-header">
+      <div class="admin-hub-intro">
+        <p class="admin-hub-eyebrow">Área administrativa</p>
+        <h1>Sorteios</h1>
+        <p class="admin-hub-sub">Publique o sorteio, defina prémios e acompanhe inscrições — <a href="/sorteios/" target="_blank" rel="noopener">página pública</a>.</p>
+      </div>
+      <div class="admin-hub-actions">
+        <span id="sorteio-status-pill" class="admin-editor-badge sorteio-status-pill">…</span>
+        <a href="/sorteios/" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Ver sorteio</a>
+        <a href="/" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Site</a>
+        <button id="logout-btn" type="button" class="botao botao-outline botao-sm">Sair</button>
+      </div>
+    </header>
+
+    <nav class="admin-nav" aria-label="Secções do admin">
+      <a href="/admin.html" class="admin-nav-link">Publicações</a>
+      <a href="/sorteios-admin.html" class="admin-nav-link is-active" aria-current="page">Sorteios</a>
+      <a href="/loja-admin.html" class="admin-nav-link">Encomendas</a>
+    </nav>
+
+    <div id="sorteio-admin-stats" class="admin-stats-grid" aria-label="Resumo do sorteio"></div>
+
+    <div class="admin-tabs" role="tablist" aria-label="Secções do sorteio">
+      <button type="button" class="admin-tab is-active" role="tab" id="tab-btn-publicar" aria-selected="true" aria-controls="tab-publicar" data-tab="publicar">Publicar</button>
+      <button type="button" class="admin-tab" role="tab" id="tab-btn-inscricoes" aria-selected="false" aria-controls="tab-inscricoes" data-tab="inscricoes">Inscrições</button>
+      <button type="button" class="admin-tab" role="tab" id="tab-btn-avisos" aria-selected="false" aria-controls="tab-avisos" data-tab="avisos">Avisos por e-mail</button>
+    </div>
+
+    <section id="tab-publicar" class="admin-tab-panel" role="tabpanel" aria-labelledby="tab-btn-publicar">
+      <div class="sorteios-admin-publish-grid">
+        <section class="admin-form sorteios-config-panel highlight-card">
+          <h2 class="admin-section-title">Configurar sorteio</h2>
+          <form id="sorteio-config-form" class="sorteios-config-form">
+            <fieldset class="sorteio-status-fieldset">
+              <legend class="admin-field-legend">Estado do sorteio</legend>
+              <label class="sorteio-status-option">
+                <input type="radio" name="sorteio-status" value="em-breve" checked>
+                <span><strong>Em breve</strong> — mostra na página, sem formulário</span>
+              </label>
+              <label class="sorteio-status-option">
+                <input type="radio" name="sorteio-status" value="aberto">
+                <span><strong>Inscrições abertas</strong> — formulário activo no site</span>
+              </label>
+              <label class="sorteio-status-option">
+                <input type="radio" name="sorteio-status" value="encerrado">
+                <span><strong>Encerrado</strong> — sorteio terminado</span>
+              </label>
+            </fieldset>
+
+            <label class="admin-field-full">Título
+              <input type="text" id="sorteio-titulo" required maxlength="160">
+            </label>
+            <label class="admin-field-full">Descrição
+              <textarea id="sorteio-descricao" rows="4" maxlength="800"></textarea>
+            </label>
+            <label class="admin-field-full">Data e hora do sorteio
+              <input type="datetime-local" id="sorteio-data" class="select-dark">
+              <span class="field-hint">Opcional. Aparece formatado na página pública.</span>
+            </label>
+            <label class="admin-field-full">Link do manual do prémio <span class="field-optional">(opcional)</span>
+              <input type="text" id="sorteio-manual-url" class="select-dark" maxlength="300" placeholder="/equipamentos/clonadora-6-estacas.html">
+            </label>
+
+            <div class="sorteio-premios-block">
+              <div class="sorteio-premios-head">
+                <h3 class="admin-field-legend">Prémios</h3>
+                <p class="field-hint">Com mais de um prémio, o formulário público mostra um combobox automático.</p>
+              </div>
+              <div id="sorteio-premios-list" class="sorteio-premios-list"></div>
+              <button type="button" id="sorteio-add-premio" class="botao botao-outline botao-sm">+ Adicionar prémio</button>
+            </div>
+
+            <details class="admin-help admin-help--inline">
+              <summary>Google Forms em vez do formulário interno</summary>
+              <label class="admin-field-full">Link do Google Forms
+                <input type="url" id="sorteio-google-form" class="select-dark" maxlength="500" placeholder="https://docs.google.com/forms/d/e/.../viewform">
+              </label>
+              <p class="field-hint">Com link preenchido, as inscrições vão para o Google. Deixe vazio para usar o formulário do site.</p>
+            </details>
+
+            <div class="sorteios-config-actions">
+              <button type="submit" class="botao">Publicar / guardar</button>
+              <span id="sorteio-config-msg" class="sorteios-message" role="status"></span>
+            </div>
+          </form>
+        </section>
+
+        <aside class="highlight-card sorteio-admin-preview" aria-live="polite">
+          <h2 class="admin-section-title">Pré-visualização</h2>
+          <p class="sorteios-current-badge" id="preview-badge">Em breve</p>
+          <h3 id="preview-title" class="sorteio-preview-title">—</h3>
+          <p id="preview-desc" class="sorteio-preview-desc">—</p>
+          <p id="preview-prize" class="sorteio-preview-prize"></p>
+          <p id="preview-date" class="sorteio-preview-date"></p>
+          <p class="field-hint" id="preview-combobox-note" hidden>Combobox «Prémio desejado» com <span id="preview-premio-count">0</span> opções no formulário.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="tab-inscricoes" class="admin-tab-panel" role="tabpanel" aria-labelledby="tab-btn-inscricoes" hidden>
+      <div id="sorteios-internal-admin">
+        <div class="sorteios-admin-toolbar">
+          <p id="sorteios-count" class="sorteios-admin-count">A carregar…</p>
+          <button type="button" id="sorteios-export-btn" class="botao admin-secondary">Exportar CSV</button>
+        </div>
+        <div class="sorteios-admin-table-wrap">
+          <table class="sorteios-admin-table" id="sorteios-table">
+            <thead>
+              <tr>
+                <th>Inscrição</th>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Prémio</th>
+                <th>Cidade/UF</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="sorteios-table-body">
+              <tr><td colspan="8">A carregar inscrições…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <section id="sorteios-google-admin-note" class="sorteios-notice" hidden>
+        <p><strong>Google Forms activo.</strong></p>
+        <p>As inscrições vão para a planilha do Google Forms. Abra o Forms → aba <strong>Respostas</strong> → planilha ou CSV.</p>
+      </section>
+    </section>
+
+    <section id="tab-avisos" class="admin-tab-panel" role="tabpanel" aria-labelledby="tab-btn-avisos" hidden>
+      <section class="sorteio-broadcast-panel highlight-card">
+        <h2 class="admin-section-title">Enviar aviso por e-mail</h2>
+        <p class="field-hint">Envia um e-mail a todos os inscritos na lista de avisos sobre o sorteio com <strong>inscrições abertas</strong>. Requer <code>GMAIL_USER</code> e <code>GMAIL_APP_PASSWORD</code> no <code>.env</code>.</p>
+        <div class="sorteio-broadcast-actions">
+          <button type="button" id="sorteio-broadcast-btn" class="botao">Enviar aviso aos inscritos</button>
+          <span id="sorteio-broadcast-msg" class="sorteios-message" role="status"></span>
+        </div>
+      </section>
+
+      <section class="sorteios-alerts-admin highlight-card" id="sorteios-alerts-admin">
+        <div class="sorteios-admin-toolbar">
+          <div>
+            <h2 class="admin-section-title" style="margin:0">Lista de avisos</h2>
+            <p class="field-hint">Pessoas que pediram aviso na página de contato (conta Google).</p>
+            <p id="sorteio-alerts-count" class="sorteios-admin-count">A carregar…</p>
+          </div>
+          <button type="button" id="sorteio-alerts-export-btn" class="botao admin-secondary">Exportar CSV</button>
+        </div>
+        <div class="sorteios-admin-table-wrap">
+          <table class="sorteios-admin-table" id="sorteio-alerts-table">
+            <thead>
+              <tr>
+                <th>Inscrição</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+              </tr>
+            </thead>
+            <tbody id="sorteio-alerts-table-body">
+              <tr><td colspan="3">A carregar…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="/js/app-version-check.js?v=190"></script>
+  <script src="/js/ferramentas-nav-data.js?v=190"></script>
+    <script src="/js/i18n-data.js?v=190"></script>
+    <script src="/js/i18n.js?v=190"></script>
+    <script src="/js/ferramentas-nav-data.js?v=190"></script>
+  <script src="/js/layout.js?v=190"></script>
+  <script src="/js/sorteio-utils.js?v=190"></script>
+  <script src="/js/sorteios-admin.js?v=190"></script>
+</body>
+</html>

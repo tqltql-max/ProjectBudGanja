@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Luz">
+  <circle cx="64" cy="64" r="64" fill="#1a3324"/>
+  <circle cx="64" cy="58" r="18" fill="#f1c40f"/>
+  <g stroke="#f39c12" stroke-width="4" stroke-linecap="round">
+    <line x1="64" y1="24" x2="64" y2="34"/>
+    <line x1="64" y1="82" x2="64" y2="92"/>
+    <line x1="24" y1="58" x2="34" y2="58"/>
+    <line x1="94" y1="58" x2="104" y2="58"/>
+    <line x1="35" y1="29" x2="42" y2="36"/>
+    <line x1="86" y1="80" x2="93" y2="87"/>
+    <line x1="93" y1="29" x2="86" y2="36"/>
+    <line x1="42" y1="80" x2="35" y2="87"/>
+  </g>
+  <path d="M40 96c8 6 18 10 24 10s16-4 24-10" fill="#27ae60"/>
+  <path d="M52 96l12-8 12 8" fill="#2ecc71"/>
+</svg>

@@ -9,41 +9,79 @@ function formatDatePtBR(iso) {
 
 function normalizePostUrl(url) {
   if (!url) return '#';
-  return String(url).replace(/^\//, '');
+  const href = String(url).trim();
+  return href || '#';
+}
+
+var SERIES_LABELS = {
+  'guia-cultivo-basico': 'Guia de Cultivo Básico',
+  'canal-jardimhg': 'Canal Jardim HG',
+  '': 'Todas as séries'
+};
+
+function seriesBadgeHtml(post) {
+  if (!post.series) return '';
+  var label = post.seriesLabel || SERIES_LABELS[post.series] || post.series;
+  var order = post.seriesOrder != null ? ' · Cap. ' + post.seriesOrder : '';
+  return '<span class="post-card-series" data-series="' + post.series + '">' + label + order + '</span>';
 }
 
 function renderPostCards(container, posts) {
   if (!posts.length) {
-    container.innerHTML = '<p class="empty-message">Nenhuma publicação ainda.</p>';
+    var page = document.body.dataset.page;
+    var category = page === 'inspecoes' ? 'inspecao' : page === 'equipamentos' ? 'equipamento' : 'pesquisa';
+    var ctas = {
+      pesquisa: { text: 'Ver inspeções do guia de cultivo', href: '/biblioteca/inspecoes/' },
+      inspecao: { text: 'Ver canal no YouTube', href: 'https://www.youtube.com/@InspetorBudGanja', external: true },
+      equipamento: { text: 'Ver guia da clonadora', href: '/equipamentos/clonadora-6-estacas.html' }
+    };
+    var cta = ctas[category] || ctas.pesquisa;
+    var ext = cta.external ? ' target="_blank" rel="noopener noreferrer"' : '';
+    container.innerHTML =
+      '<div class="empty-state">' +
+      '<p class="empty-message">Nenhuma publicação nesta secção ainda.</p>' +
+      '<a href="' + cta.href + '" class="botao botao-home"' + ext + '>' + cta.text + '</a>' +
+      '</div>';
     return;
   }
 
   container.innerHTML = '';
-  posts.forEach((p) => {
-    const card = document.createElement('div');
+  posts.forEach(function (p) {
+    var card = document.createElement('div');
     card.className = 'card post-card';
+    if (p.slug) card.dataset.postSlug = p.slug;
+    if (p.series) card.dataset.series = p.series;
 
-    const link = document.createElement('a');
+    var link = document.createElement('a');
     link.href = normalizePostUrl(p.url);
     link.style.textDecoration = 'none';
     link.style.color = 'inherit';
+    if (p.excerpt) link.setAttribute('data-tip', p.excerpt);
 
     if (p.coverImage) {
-      const img = document.createElement('img');
-      img.src = p.coverImage;
+      var img = document.createElement('img');
+      var cover = String(p.coverImage).trim();
+      img.src = cover.startsWith('/') || /^(?:https?:)?\/\//i.test(cover) ? cover : '/' + cover.replace(/^\/+/, '');
       img.alt = '';
       img.className = 'post-card-cover';
       img.loading = 'lazy';
       link.appendChild(img);
     }
 
-    const title = document.createElement('h3');
+    if (p.series) {
+      var badgeWrap = document.createElement('div');
+      badgeWrap.className = 'post-card-badges';
+      badgeWrap.innerHTML = seriesBadgeHtml(p);
+      link.appendChild(badgeWrap);
+    }
+
+    var title = document.createElement('h3');
     title.textContent = p.title || '';
 
-    const excerpt = document.createElement('p');
+    var excerpt = document.createElement('p');
     excerpt.textContent = p.excerpt || '';
 
-    const date = document.createElement('span');
+    var date = document.createElement('span');
     date.className = 'post-card-date';
     date.textContent = formatDatePtBR(p.date);
 
@@ -53,10 +91,13 @@ function renderPostCards(container, posts) {
     card.appendChild(link);
     container.appendChild(card);
   });
+
+  if (window.budganjaEnhanceAdminPostCards) window.budganjaEnhanceAdminPostCards();
+  if (window.budganjaEnhanceHoverTips) window.budganjaEnhanceHoverTips(container);
 }
 
 function getPublicationConfig() {
-  const page = document.body.dataset.page;
+  var page = document.body.dataset.page;
   if (page === 'pesquisas') {
     return { category: 'pesquisa', container: '.container-cards' };
   }
@@ -64,18 +105,23 @@ function getPublicationConfig() {
     return { category: 'equipamento', container: '.publications-equipamentos' };
   }
   if (page === 'inspecoes') {
-    return { category: 'inspecao', container: '.publications-inspecoes' };
+    return { category: 'inspecao', container: '.publications-inspecoes', seriesFilter: '#inspecoes-series-filter' };
   }
   return null;
 }
 
 function filterByCategory(posts, category) {
-  return posts.filter((p) => (p.category || 'pesquisa') === category);
+  return posts.filter(function (p) { return (p.category || 'pesquisa') === category; });
+}
+
+function filterBySeries(posts, seriesId) {
+  if (!seriesId) return posts;
+  return posts.filter(function (p) { return p.series === seriesId; });
 }
 
 function loadPostsFromApi(category) {
   return fetch('/api/posts?category=' + encodeURIComponent(category))
-    .then((r) => {
+    .then(function (r) {
       if (!r.ok) throw new Error('API ' + r.status);
       return r.json();
     });
@@ -83,26 +129,53 @@ function loadPostsFromApi(category) {
 
 function loadPostsFromStaticFile(category) {
   return fetch('posts-public.json')
-    .then((r) => {
+    .then(function (r) {
       if (!r.ok) throw new Error('static ' + r.status);
       return r.json();
     })
-    .then((all) => filterByCategory(all, category));
+    .then(function (all) { return filterByCategory(all, category); });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const config = getPublicationConfig();
+function initInspecoesSeriesFilter(filterEl, container, allPosts) {
+  if (!filterEl || filterEl.dataset.bound === '1') return;
+  filterEl.dataset.bound = '1';
+
+  var seriesSet = {};
+  allPosts.forEach(function (p) {
+    if (p.series) seriesSet[p.series] = p.seriesLabel || SERIES_LABELS[p.series] || p.series;
+  });
+
+  Object.keys(seriesSet).sort().forEach(function (id) {
+    var opt = document.createElement('option');
+    opt.value = id;
+    opt.textContent = seriesSet[id];
+    filterEl.appendChild(opt);
+  });
+
+  filterEl.addEventListener('change', function () {
+    var filtered = filterBySeries(allPosts, filterEl.value);
+    renderPostCards(container, filtered);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  var config = getPublicationConfig();
   if (!config) return;
 
-  const container = document.querySelector(config.container);
+  var container = document.querySelector(config.container);
   if (!container) return;
 
   if (container.querySelector('.card')) return;
 
+  var filterEl = config.seriesFilter ? document.querySelector(config.seriesFilter) : null;
+
   loadPostsFromApi(config.category)
-    .catch(() => loadPostsFromStaticFile(config.category))
-    .then((posts) => renderPostCards(container, posts))
-    .catch(() => {
+    .catch(function () { return loadPostsFromStaticFile(config.category); })
+    .then(function (posts) {
+      if (filterEl) initInspecoesSeriesFilter(filterEl, container, posts);
+      renderPostCards(container, posts);
+    })
+    .catch(function () {
       if (container.querySelector('.card')) return;
       if (container.querySelector('.empty-message') && !container.innerHTML.includes('npm start')) return;
       container.innerHTML = '<p class="empty-message">Nenhuma publicação disponível.</p>';

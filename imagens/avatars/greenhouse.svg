@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Estufa">
+  <circle cx="64" cy="64" r="64" fill="#1a3324"/>
+  <path d="M28 78V52l36-22 36 22v26H28z" fill="none" stroke="#2ecc71" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M28 78h72" stroke="#27ae60" stroke-width="4"/>
+  <rect x="52" y="62" width="24" height="16" rx="2" fill="#27ae60"/>
+  <path d="M44 78v14h40V78" fill="#3d2817"/>
+  <circle cx="88" cy="48" r="10" fill="#f1c40f" opacity=".9"/>
+</svg>

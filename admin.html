@@ -1,130 +1,171 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <title>Admin — Publicações</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
+  <title>Painel Admin | Inspetor BudGanja</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css?v=190">
+  <script>(function(){var t=localStorage.getItem('budganja-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
 </head>
 <body data-page="admin">
   <div id="site-header"></div>
   <main class="conteudo-interno admin-panel">
-    <header class="admin-topbar">
-      <div>
-        <h1>Publicações</h1>
-        <p class="admin-intro">
-          Crie e edite conteúdo para
-          <a href="inspecoes.html" target="_blank" rel="noopener">Inspeções</a>,
-          <a href="pesquisas.html" target="_blank" rel="noopener">Pesquisas</a>
-          e
-          <a href="equipamentos.html" target="_blank" rel="noopener">Equipamentos</a>.
-        </p>
+    <header class="admin-hub-header">
+      <div class="admin-hub-intro">
+        <p class="admin-hub-eyebrow">Área administrativa</p>
+        <h1>Painel de publicações</h1>
+        <p class="admin-hub-sub">Olá, <strong id="admin-user">admin</strong> — gere artigos, <a href="/sorteios-admin.html">sorteios</a> ou <a href="/loja-admin.html">encomendas da loja</a>.</p>
       </div>
-      <div class="admin-topbar-actions">
-        <span class="admin-user-label">Olá, <strong id="admin-user">admin</strong></span>
-        <button id="logout-btn" type="button" class="botao admin-secondary">Sair</button>
+      <div class="admin-hub-actions">
+        <a href="/" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Ver site</a>
+        <button id="logout-btn" type="button" class="botao botao-outline botao-sm">Sair</button>
       </div>
     </header>
 
-    <div class="admin-layout">
-      <section class="admin-editor">
-        <h2 id="form-heading" class="admin-section-title">Nova publicação</h2>
+    <nav class="admin-nav" aria-label="Secções do admin">
+      <a href="/admin.html" class="admin-nav-link is-active" aria-current="page">Publicações</a>
+      <a href="/sorteios-admin.html" class="admin-nav-link">Sorteios</a>
+      <a href="/loja-admin.html" class="admin-nav-link">Encomendas</a>
+    </nav>
 
-        <form id="post-form" class="admin-form">
-          <input type="hidden" id="cover-image">
+    <!-- Vista: biblioteca -->
+    <section id="admin-list-view" class="admin-studio">
+      <div id="admin-stats" class="admin-stats-grid" aria-label="Resumo das publicações"></div>
 
-          <label class="admin-field-full">Título
-            <input type="text" id="title" required placeholder="Ex: Análise de substratos orgânicos">
-          </label>
-
-          <label class="admin-field-full">Resumo
-            <input type="text" id="excerpt" placeholder="Texto curto que aparece no card da listagem">
-          </label>
-
-          <div class="admin-video admin-video--primary">
-            <h3 class="admin-block-title">Vídeo do YouTube</h3>
-            <ol class="admin-steps">
-              <li>Publique o vídeo no <a href="https://studio.youtube.com/" target="_blank" rel="noopener">YouTube Studio</a></li>
-              <li>Copie o link do vídeo (Compartilhar → Copiar link)</li>
-              <li>Cole abaixo e clique <strong>Inserir vídeo</strong></li>
-            </ol>
-            <div class="admin-upload-actions">
-              <input type="url" id="youtube-url" class="select-dark" placeholder="Cole aqui: https://www.youtube.com/watch?v=...">
-              <button type="button" id="youtube-paste-btn" class="botao admin-secondary">Colar link</button>
-              <button type="button" id="youtube-insert-btn" class="botao">Inserir vídeo</button>
-            </div>
-            <span class="admin-field-hint">Canal: <a href="https://www.youtube.com/@InspetorBudGanja" target="_blank" rel="noopener">@InspetorBudGanja</a> · watch, youtu.be ou Shorts</span>
-          </div>
-
-          <div class="admin-field-row">
-            <label>Categoria
-              <select id="category">
-                <option value="inspecao">Inspeções</option>
-                <option value="pesquisa">Pesquisas</option>
-                <option value="equipamento">Equipamentos</option>
-              </select>
-            </label>
-            <label class="admin-checkbox">
-              <input type="checkbox" id="published" checked>
-              Publicar no site
-            </label>
-          </div>
-
-          <label class="admin-field-full">Conteúdo
-            <div class="md-toolbar">
-              <button type="button" class="md-btn" data-md="## ">Título</button>
-              <button type="button" class="md-btn" data-md="**texto**">Negrito</button>
-              <button type="button" class="md-btn" data-md="- item">Lista</button>
-              <button type="button" class="md-btn" data-md="![descrição](url)">Imagem</button>
-            </div>
-            <textarea id="content" rows="16" required placeholder="Escreva o texto da publicação em Markdown..."></textarea>
-          </label>
-
-          <div class="admin-upload">
-            <input type="file" id="image-input" accept="image/jpeg,image/png,image/webp,image/gif" hidden>
-            <div class="admin-upload-actions">
-              <button type="button" id="image-pick-btn" class="botao admin-secondary">Escolher imagem</button>
-              <span id="image-file-name" class="admin-field-hint">Nenhuma imagem selecionada</span>
-            </div>
-            <div id="cover-preview-wrap" class="cover-preview-wrap hidden">
-              <img id="cover-preview" alt="Pré-visualização da capa">
-              <button type="button" id="cover-clear-btn" class="botao admin-secondary admin-secondary--small">Remover capa</button>
-            </div>
-            <span class="admin-field-hint">A imagem é inserida no texto. A primeira enviada vira capa do card (máx. ~4 MB).</span>
-          </div>
-
-          <div class="admin-actions">
-            <button type="submit" id="submit-btn" class="botao">Publicar</button>
-            <button id="cancel-edit-btn" type="button" class="botao admin-secondary" hidden>Cancelar</button>
-          </div>
-          <div id="result" class="admin-result" role="status"></div>
-        </form>
-      </section>
-
-      <aside class="admin-sidebar">
-        <div class="admin-sidebar-block">
-          <div class="admin-sidebar-head">
-            <h3>Suas publicações</h3>
-            <span id="posts-count" class="admin-badge">0</span>
-          </div>
-          <div id="posts-list" class="admin-posts-list"></div>
+      <div class="admin-studio-toolbar">
+        <div class="admin-studio-filters">
+          <input type="search" id="posts-search" class="admin-studio-search select-dark" placeholder="Buscar título ou resumo…" autocomplete="off" aria-label="Buscar publicações">
+          <select id="filter-category" class="select-dark" aria-label="Filtrar categoria">
+            <option value="">Todas as categorias</option>
+            <option value="pesquisa">Pesquisas</option>
+            <option value="inspecao">Inspeções</option>
+            <option value="equipamento">Equipamentos</option>
+          </select>
+          <select id="filter-status" class="select-dark" aria-label="Filtrar estado">
+            <option value="">Todos os estados</option>
+            <option value="published">Publicadas</option>
+            <option value="draft">Rascunhos</option>
+          </select>
         </div>
-
-        <div class="admin-sidebar-block">
-          <h3>Pré-visualização</h3>
-          <div id="preview" class="admin-preview">
-            <p class="result-muted">O preview aparece enquanto você escreve.</p>
-          </div>
+        <div class="admin-studio-toolbar-actions">
+          <span id="posts-count" class="admin-badge" title="Resultados filtrados">0</span>
+          <button type="button" id="new-post-btn" class="botao">+ Nova publicação</button>
         </div>
-      </aside>
-    </div>
+      </div>
+
+      <p class="admin-toolbar-hint">Atalho: <kbd>Ctrl</kbd> + <kbd>N</kbd> para nova publicação</p>
+      <p class="admin-generated-posts-note result-muted">Inspeções do <strong>Guia de Cultivo</strong>, do canal <strong>Jardim HG</strong> e similares são geradas em <code>lib/*-inspecoes-posts.js</code> no build — não aparecem aqui; edite o ficheiro fonte e rode <code>npm run build</code>.</p>
+
+      <div id="posts-table-wrap" class="admin-studio-table-wrap">
+        <div id="posts-table" class="admin-studio-table" role="table" aria-label="Suas publicações"></div>
+      </div>
+      <p id="posts-empty" class="admin-studio-empty result-muted" hidden>Nenhuma publicação corresponde aos filtros.</p>
+    </section>
+
+    <!-- Vista: editor -->
+    <section id="admin-editor-view" class="admin-studio-editor" hidden>
+      <div class="admin-editor-top">
+        <button type="button" id="back-to-list-btn" class="voltar-link admin-studio-back">&larr; Voltar à lista</button>
+        <span id="editor-mode-badge" class="admin-editor-badge">Nova</span>
+      </div>
+
+      <div class="admin-layout">
+        <section class="admin-editor">
+          <h2 id="form-heading" class="admin-section-title">Nova publicação</h2>
+
+          <form id="post-form" class="admin-form">
+            <input type="hidden" id="cover-image">
+
+            <label class="admin-field-full">Título
+              <input type="text" id="title" required placeholder="Ex: Análise de substratos orgânicos">
+            </label>
+
+            <label class="admin-field-full">Resumo
+              <input type="text" id="excerpt" placeholder="Texto curto no card da listagem">
+            </label>
+
+            <div class="admin-field-row">
+              <label>Categoria
+                <select id="category">
+                  <option value="inspecao">Inspeções</option>
+                  <option value="pesquisa">Pesquisas</option>
+                  <option value="equipamento">Equipamentos</option>
+                </select>
+              </label>
+              <label class="admin-checkbox">
+                <input type="checkbox" id="published" checked>
+                Publicar no site
+              </label>
+            </div>
+
+            <details class="admin-video admin-video--primary">
+              <summary>Inserir vídeo do YouTube</summary>
+              <ol class="admin-steps">
+                <li>Publique no <a href="https://studio.youtube.com/" target="_blank" rel="noopener">YouTube Studio</a></li>
+                <li>Copie o link (Compartilhar → Copiar link)</li>
+                <li>Cole abaixo e clique <strong>Inserir vídeo</strong></li>
+              </ol>
+              <div class="admin-upload-actions">
+                <input type="url" id="youtube-url" class="select-dark" placeholder="https://www.youtube.com/watch?v=...">
+                <button type="button" id="youtube-paste-btn" class="botao admin-secondary">Colar link</button>
+                <button type="button" id="youtube-insert-btn" class="botao">Inserir vídeo</button>
+              </div>
+              <span class="admin-field-hint">Canal <a href="https://www.youtube.com/@InspetorBudGanja" target="_blank" rel="noopener">@InspetorBudGanja</a></span>
+            </details>
+
+            <label class="admin-field-full">Conteúdo
+              <div class="md-toolbar">
+                <button type="button" class="md-btn" data-md="## ">Título</button>
+                <button type="button" class="md-btn" data-md="**texto**">Negrito</button>
+                <button type="button" class="md-btn" data-md="- item">Lista</button>
+                <button type="button" class="md-btn" data-md="![descrição](url)">Imagem</button>
+              </div>
+              <textarea id="content" rows="16" required placeholder="Texto em Markdown…"></textarea>
+            </label>
+
+            <div class="admin-upload">
+              <input type="file" id="image-input" accept="image/jpeg,image/png,image/webp,image/gif" hidden>
+              <div class="admin-upload-actions">
+                <button type="button" id="image-pick-btn" class="botao admin-secondary">Escolher imagem</button>
+                <span id="image-file-name" class="admin-field-hint">Nenhuma imagem selecionada</span>
+              </div>
+              <div id="cover-preview-wrap" class="cover-preview-wrap hidden">
+                <img id="cover-preview" alt="Pré-visualização da capa">
+                <button type="button" id="cover-clear-btn" class="botao admin-secondary admin-secondary--small">Remover capa</button>
+              </div>
+              <span class="admin-field-hint">A primeira imagem enviada vira capa do card (máx. ~4 MB).</span>
+            </div>
+
+            <div class="admin-actions">
+              <button type="submit" id="submit-btn" class="botao">Publicar</button>
+              <button id="cancel-edit-btn" type="button" class="botao admin-secondary" hidden>Cancelar</button>
+            </div>
+            <div id="result" class="admin-result" role="status"></div>
+          </form>
+        </section>
+
+        <aside class="admin-sidebar">
+          <div class="admin-sidebar-block admin-sidebar-block--sticky">
+            <h3>Pré-visualização</h3>
+            <div id="preview" class="admin-preview">
+              <p class="result-muted">O preview actualiza enquanto escreve.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
   </main>
   <div id="site-footer"></div>
-  <script src="js/layout.js"></script>
-  <script src="js/youtube.js"></script>
-  <script src="js/markdown.js"></script>
-  <script src="js/admin.js"></script>
+  <script src="/js/app-version-check.js?v=190"></script>
+  <script src="/js/ferramentas-nav-data.js?v=190"></script>
+    <script src="/js/i18n-data.js?v=190"></script>
+    <script src="/js/i18n.js?v=190"></script>
+    <script src="/js/ferramentas-nav-data.js?v=190"></script>
+  <script src="/js/layout.js?v=190"></script>
+  <script src="/js/youtube.js?v=190"></script>
+  <script src="/js/markdown.js?v=190"></script>
+  <script src="/js/admin.js?v=190"></script>
 </body>
 </html>

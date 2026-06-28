@@ -1,0 +1,2426 @@
+document.addEventListener('DOMContentLoaded', async () => {
+  const loadingEl = document.getElementById('perfil-loading');
+  const appEl = document.getElementById('perfil-app');
+  const onboardingEl = document.getElementById('perfil-onboarding');
+  const dashboardEl = document.getElementById('perfil-dashboard');
+  const form = document.getElementById('perfil-form');
+  const formStatus = document.getElementById('perfil-form-status');
+  const formTitle = document.getElementById('perfil-form-title');
+  const onboardingIntro = document.getElementById('perfil-onboarding-intro');
+  const editBtn = document.getElementById('perfil-edit-btn');
+  const cancelEditBtn = document.getElementById('perfil-cancel-edit-btn');
+  const logoutBtn = document.getElementById('perfil-logout-btn');
+  const phaseSelectEl = document.getElementById('perfil-phase-select');
+  const inicioSummaryEl = document.getElementById('perfil-inicio-summary');
+  const quickLinksEl = document.getElementById('perfil-quick-links');
+  const planPreviewList = document.getElementById('perfil-plan-preview-list');
+  const toolLinks = document.getElementById('perfil-tool-links');
+  const toolsGrid = document.getElementById('perfil-ferramentas-nav');
+  const siteLinks = document.getElementById('perfil-biblioteca-nav');
+  const planoList = document.getElementById('perfil-plano-list');
+  const planoAddForm = document.getElementById('perfil-plano-add');
+  const planoInput = document.getElementById('perfil-plano-input');
+  const planoStatus = document.getElementById('perfil-plano-status');
+  const customGuideEl = document.getElementById('profile-custom-guide');
+  const guiaSaveBtn = document.getElementById('perfil-guia-save-btn');
+  const guiaTemplateBtn = document.getElementById('perfil-guia-template-btn');
+  const guiaStatus = document.getElementById('perfil-guia-status');
+  const timelineEl = document.getElementById('perfil-timeline');
+  const timelineSub = document.getElementById('perfil-timeline-sub');
+  const weekPills = document.getElementById('perfil-week-pills');
+  const phaseResetBtn = document.getElementById('perfil-phase-reset-btn');
+  const weekContentEl = document.getElementById('perfil-week-content');
+  const weekNotesEl = document.getElementById('perfil-week-notes');
+  const weekNotesSaveBtn = document.getElementById('perfil-week-notes-save-btn');
+  const growListView = document.getElementById('perfil-grow-list-view');
+  const growDetailView = document.getElementById('perfil-grow-detail-view');
+  const growListEl = document.getElementById('perfil-grow-list');
+  const growEmptyEl = document.getElementById('perfil-grow-empty');
+  const growNewForm = document.getElementById('perfil-grow-new-form');
+  const growNameEl = document.getElementById('perfil-grow-name');
+  const growPlantedEl = document.getElementById('perfil-grow-planted');
+  const growPhaseEl = document.getElementById('perfil-grow-phase');
+  const growListStatus = document.getElementById('perfil-grow-list-status');
+  const growBackBtn = document.getElementById('perfil-grow-back-btn');
+  const growDetailTitle = document.getElementById('perfil-grow-detail-title');
+  const growDetailMeta = document.getElementById('perfil-grow-detail-meta');
+  const growDetailPhase = document.getElementById('perfil-grow-detail-phase');
+  const growSetActiveBtn = document.getElementById('perfil-grow-set-active-btn');
+  const growEntriesEl = document.getElementById('perfil-grow-entries');
+  const growEntriesEmpty = document.getElementById('perfil-grow-entries-empty');
+  const growEntryForm = document.getElementById('perfil-grow-entry-form');
+  const growEntryDate = document.getElementById('perfil-grow-entry-date');
+  const growEntryText = document.getElementById('perfil-grow-entry-text');
+  const growEntryPh = document.getElementById('perfil-grow-entry-ph');
+  const growEntryEc = document.getElementById('perfil-grow-entry-ec');
+  const growEntryTemp = document.getElementById('perfil-grow-entry-temp');
+  const growEntryRh = document.getElementById('perfil-grow-entry-rh');
+  const growEntryTypes = document.getElementById('perfil-grow-entry-types');
+  const growEntryPhotos = document.getElementById('perfil-grow-entry-photos');
+  const growEntryPhotosPreview = document.getElementById('perfil-grow-entry-photos-preview');
+  const growExportCsvBtn = document.getElementById('perfil-grow-export-csv');
+  const growPrintBtn = document.getElementById('perfil-grow-print');
+  const reminderAddForm = document.getElementById('perfil-reminder-add');
+  const reminderActionEl = document.getElementById('perfil-reminder-action');
+  const reminderDateEl = document.getElementById('perfil-reminder-date');
+  const reminderLabelEl = document.getElementById('perfil-reminder-label');
+  const cultivoOnboardingEl = document.getElementById('cultivo-onboarding');
+  const cultivoOnboardNameEl = document.getElementById('cultivo-onboard-name');
+  const cultivoOnboardPlantedEl = document.getElementById('cultivo-onboard-planted');
+  const cultivoOnboardReminderEnableEl = document.getElementById('cultivo-onboard-reminder-enable');
+  const cultivoOnboardReminderDateEl = document.getElementById('cultivo-onboard-reminder-date');
+  const cultivoOnboardBackBtn = document.getElementById('cultivo-onboard-back');
+  const cultivoOnboardSkipBtn = document.getElementById('cultivo-onboard-skip');
+  const cultivoOnboardNextBtn = document.getElementById('cultivo-onboard-next');
+  const cultivoOnboardFinishBtn = document.getElementById('cultivo-onboard-finish');
+  const cultivoOnboardStatusEl = document.getElementById('cultivo-onboard-status');
+  const growDetailStatus = document.getElementById('perfil-grow-detail-status');
+  const liveStatusEl = document.getElementById('perfil-live-status');
+  const accountEl = document.getElementById('perfil-account');
+  const accountEditBtn = document.getElementById('perfil-account-edit-btn');
+
+  const IS_CULTIVO_PAGE = true;
+  const PAGE_SELF = '/cultivo/';
+  const CShared = window.BudGanjaCultivoShared || {};
+  const COnboard = window.BudGanjaCultivoOnboarding || {};
+  const CALCULATOR_LABELS = CShared.CALCULATOR_LABELS || {};
+  const ENTRY_ACTIONS = CShared.ENTRY_ACTIONS || [];
+  const MIN_USER_AGE = CShared.MIN_USER_AGE || 18;
+  const TAB_STORAGE_KEY = IS_CULTIVO_PAGE ? 'budganja_cultivo_tab' : 'budganja_perfil_tab';
+  const CULTIVO_ONBOARDING_KEY = CShared.CULTIVO_ONBOARDING_KEY || 'budganja_cultivo_onboarding_v1';
+  const DEFAULT_AVATAR = CShared.DEFAULT_AVATAR || '/imagens/avatars/leaf.svg';
+  const PRESET_AVATARS = CShared.PRESET_AVATARS || [];
+  const escapeHtml = CShared.escapeHtml || function (t) { return String(t); };
+  const formatDate = CShared.formatDate || function (iso) { return iso || ''; };
+  const todayDateInputValue = CShared.todayDateInputValue || function () { return new Date().toISOString().slice(0, 10); };
+  const cloneGrowLogs = CShared.cloneGrowLogs || function (l) { return (l || []).slice(); };
+  const createGrowLogObject = CShared.createGrowLogObject || function (n) { return { id: 'g' + Date.now(), name: n, entries: [] }; };
+  const growWeekNumber = CShared.growWeekNumber || function () { return 1; };
+  const growWeekDayRange = CShared.growWeekDayRange || function () { return ''; };
+  const formatMetricsPlain = CShared.formatMetricsPlain || function () { return ''; };
+  const daysSincePlanted = CShared.daysSincePlanted || function () { return 0; };
+  const formatEntrySource = CShared.formatEntrySource || function () { return ''; };
+  const csvEscape = CShared.csvEscape || function (v) { return String(v == null ? '' : v); };
+
+  let user = null;
+  let liveStatusTimer = null;
+  let profileSaving = false;
+  let planSaving = false;
+  let selectedWeek = null;
+  let selectedGrowLogId = null;
+  let tabsInitialized = false;
+  let selectedEntryAction = 'rega';
+  let pendingEntryPhotoFiles = [];
+  let cultivoOnboardStep = 1;
+  let cultivoOnboardPhase = 'germinacao';
+
+  const avatarPreviewEl = document.getElementById('profile-avatar-preview');
+  const avatarPresetsEl = document.getElementById('profile-avatar-presets');
+  const avatarUrlEl = document.getElementById('profile-avatar-url');
+  const avatarFileEl = document.getElementById('profile-avatar-file');
+  const avatarUploadLabelEl = document.getElementById('profile-avatar-upload-label');
+  let avatarUploadPending = false;
+
+  function getProfilePicture(data) {
+    if (!data) return DEFAULT_AVATAR;
+    const custom = data.profile && data.profile.avatarUrl ? String(data.profile.avatarUrl).trim() : '';
+    if (custom) return custom;
+    if (data.picture) return data.picture;
+    if (data.googlePicture) return data.googlePicture;
+    return DEFAULT_AVATAR;
+  }
+
+  function broadcastProfilePicture(data) {
+    const source = data || user;
+    const picture = getProfilePicture(source);
+    const name = source && (source.name || (source.profile && source.profile.displayName) || '');
+    window.dispatchEvent(new CustomEvent('budganja:user-profile', {
+      detail: { picture: picture, name: name }
+    }));
+  }
+
+  async function persistAvatarChoice(message) {
+    if (!user || !user.profile) return null;
+    const avatarUrl = user.profile.avatarUrl != null
+      ? String(user.profile.avatarUrl).trim()
+      : (avatarUrlEl ? avatarUrlEl.value.trim() : '');
+
+    updateUserHeader(user);
+    broadcastProfilePicture(user);
+
+    try {
+      const res = await fetch('/api/user/profile/avatar', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify({ avatarUrl: avatarUrl })
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        flashLiveStatus(data.error || 'Erro ao guardar foto do perfil.', true);
+        setStatus(formStatus, data.error || 'Erro ao guardar foto.', true);
+        return null;
+      }
+      user = data.user;
+      if (user && user.profile) {
+        if (avatarUrlEl) avatarUrlEl.value = user.profile.avatarUrl || '';
+        ensureGrowLogs(user.profile);
+      }
+      updateUserHeader(user);
+      broadcastProfilePicture(user);
+      if (message) {
+        flashLiveStatus(message);
+        setStatus(formStatus, message);
+      }
+      return user;
+    } catch (err) {
+      flashLiveStatus('Servidor indisponível — tente de novo.', true);
+      setStatus(formStatus, 'Servidor indisponível.', true);
+      return null;
+    }
+  }
+
+  function setAvatarPreview(url) {
+    const src = url || DEFAULT_AVATAR;
+    if (avatarPreviewEl) avatarPreviewEl.src = src;
+    if (avatarUrlEl) avatarUrlEl.value = url || '';
+    if (user && user.profile) {
+      user.profile.avatarUrl = url || '';
+    }
+    if (avatarPresetsEl) {
+      avatarPresetsEl.querySelectorAll('.perfil-avatar-option').forEach((btn) => {
+        const match = btn.getAttribute('data-src') === url
+          || (!url && btn.getAttribute('data-src') === DEFAULT_AVATAR);
+        btn.classList.toggle('is-active', match);
+        btn.setAttribute('aria-selected', match ? 'true' : 'false');
+      });
+    }
+    updateAvatarStatus(url);
+    if (user) updateUserHeader(user);
+  }
+
+  function updateAvatarStatus(url) {
+    const statusEl = document.getElementById('profile-avatar-status');
+    if (!statusEl) return;
+    const custom = String(url || '').trim();
+    if (!custom) {
+      statusEl.textContent = user && user.googlePicture
+        ? 'A usar a foto da conta Google.'
+        : 'Escolha um avatar abaixo ou envie a sua foto.';
+      return;
+    }
+    if (custom.indexOf('/uploads/avatar-') === 0) {
+      statusEl.textContent = 'Foto personalizada seleccionada.';
+      return;
+    }
+    const preset = PRESET_AVATARS.find((item) => item.src === custom);
+    statusEl.textContent = preset
+      ? 'Avatar «' + preset.label + '» seleccionado.'
+      : 'Avatar seleccionado.';
+  }
+
+  function initAvatarPicker() {
+    if (!avatarPresetsEl) return;
+    avatarPresetsEl.innerHTML = PRESET_AVATARS.map((item) =>
+      '<button type="button" class="perfil-avatar-option" role="option" data-src="' + item.src + '" ' +
+      'data-label="' + escapeHtml(item.label) + '" aria-label="' + escapeHtml(item.label) + '" title="' + escapeHtml(item.label) + '">' +
+      '<span class="perfil-avatar-option-img-wrap">' +
+      '<img src="' + item.src + '" alt="" width="52" height="52" loading="lazy">' +
+      '</span>' +
+      '<span class="perfil-avatar-option-label">' + escapeHtml(item.label) + '</span>' +
+      '</button>'
+    ).join('');
+
+    avatarPresetsEl.querySelectorAll('.perfil-avatar-option').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const src = btn.getAttribute('data-src');
+        const label = btn.getAttribute('data-label') || 'Avatar';
+        setAvatarPreview(src);
+        if (avatarFileEl) avatarFileEl.value = '';
+        if (avatarUploadLabelEl) avatarUploadLabelEl.textContent = 'Enviar foto';
+        await persistAvatarChoice('Avatar «' + label + '» guardado.');
+      });
+    });
+
+    const googleBtn = document.getElementById('profile-avatar-google-btn');
+    if (googleBtn) {
+      googleBtn.addEventListener('click', async () => {
+        if (!user || !user.googlePicture) return;
+        user.profile.avatarUrl = '';
+        if (avatarUrlEl) avatarUrlEl.value = '';
+        if (avatarPreviewEl) avatarPreviewEl.src = user.googlePicture;
+        if (avatarFileEl) avatarFileEl.value = '';
+        if (avatarPresetsEl) {
+          avatarPresetsEl.querySelectorAll('.perfil-avatar-option').forEach((btn) => {
+            btn.classList.remove('is-active');
+            btn.setAttribute('aria-selected', 'false');
+          });
+        }
+        updateAvatarStatus('');
+        await persistAvatarChoice('Foto Google restaurada.');
+      });
+    }
+
+    if (avatarFileEl) {
+      avatarFileEl.addEventListener('change', async () => {
+        const file = avatarFileEl.files && avatarFileEl.files[0];
+        if (!file) return;
+        if (file.size > 2 * 1024 * 1024) {
+          setStatus(formStatus, 'A imagem deve ter no máximo 2 MB.', true);
+          avatarFileEl.value = '';
+          return;
+        }
+        if (!/^image\/(jpeg|png|webp)$/i.test(file.type)) {
+          setStatus(formStatus, 'Use JPG, PNG ou WebP.', true);
+          avatarFileEl.value = '';
+          return;
+        }
+        avatarUploadPending = true;
+        if (avatarUploadLabelEl) avatarUploadLabelEl.textContent = 'A enviar…';
+        setStatus(formStatus, 'A enviar foto…');
+
+        try {
+          const dataUrl = await readFileAsDataUrl(file);
+          const res = await fetch('/api/user/avatar', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'include',
+            body: JSON.stringify({ data: dataUrl })
+          });
+          const payload = await res.json().catch(() => ({}));
+          if (!res.ok) {
+            setStatus(formStatus, payload.error || 'Falha no upload.', true);
+            return;
+          }
+          if (payload.user) {
+            user = payload.user;
+            if (user.profile && user.profile.avatarUrl) {
+              setAvatarPreview(user.profile.avatarUrl);
+            } else if (payload.url) {
+              setAvatarPreview(payload.url);
+            }
+          } else if (payload.url) {
+            setAvatarPreview(payload.url);
+            await persistAvatarChoice('Foto guardada no perfil.');
+            return;
+          }
+          updateUserHeader(user);
+          broadcastProfilePicture(user);
+          if (avatarUploadLabelEl) avatarUploadLabelEl.textContent = 'Alterar foto';
+          flashLiveStatus('Foto guardada no perfil.');
+          setStatus(formStatus, 'Foto guardada no perfil.');
+        } catch (err) {
+          setStatus(formStatus, 'Servidor indisponível.', true);
+        } finally {
+          avatarUploadPending = false;
+        }
+      });
+    }
+  }
+
+  function readFileAsDataUrl(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function fillAvatarFields(profile, data) {
+    const custom = profile && profile.avatarUrl ? String(profile.avatarUrl).trim() : '';
+    const googleBtn = document.getElementById('profile-avatar-google-btn');
+    if (googleBtn) {
+      googleBtn.hidden = !(data && data.googlePicture);
+    }
+    if (custom) {
+      setAvatarPreview(custom);
+      if (avatarUploadLabelEl) {
+        avatarUploadLabelEl.textContent = custom.indexOf('/uploads/avatar-') === 0
+          ? 'Alterar foto'
+          : 'Enviar foto';
+      }
+      return;
+    }
+    const google = data && data.googlePicture;
+    const preview = google || DEFAULT_AVATAR;
+    if (avatarPreviewEl) avatarPreviewEl.src = preview;
+    if (avatarUrlEl) avatarUrlEl.value = '';
+    if (user && user.profile) user.profile.avatarUrl = '';
+    if (avatarPresetsEl) {
+      avatarPresetsEl.querySelectorAll('.perfil-avatar-option').forEach((btn) => {
+        btn.classList.remove('is-active');
+        btn.setAttribute('aria-selected', 'false');
+      });
+    }
+    if (avatarUploadLabelEl) avatarUploadLabelEl.textContent = 'Enviar foto';
+    updateAvatarStatus('');
+  }
+
+  const PHASE_OPTIONS = [
+    { id: 'planejamento', label: 'Planejamento' },
+    { id: 'germinacao', label: 'Germinação' },
+    { id: 'vegetativo', label: 'Vegetativo' },
+    { id: 'floracao', label: 'Floração' },
+    { id: 'colheita', label: 'Colheita' }
+  ];
+
+  const QUICK_LINKS = [
+    { label: 'Sorteios', href: '/sorteios/', icon: '🎁', desc: 'Inscrição e prémios' },
+    { label: 'Calculadoras', href: '/calculadoras/', icon: '🧮', desc: 'Todas as ferramentas' },
+    { label: 'Inspeções', href: '/biblioteca/inspecoes/', icon: '🔍', desc: 'Guia em relatórios técnicos' },
+    { label: 'Luxímetro', href: '/calculadoras/luximetro.html', icon: '💡', desc: 'Medir luz' }
+  ];
+
+  const PROFILE_VALUE_LABELS = {
+    experience: { iniciante: 'Iniciante', intermediario: 'Intermediário', avancado: 'Avançado' },
+    environment: { indoor: 'Indoor (tenda/gabinete)', outdoor: 'Outdoor', estufa: 'Estufa' },
+    substrate: {
+      'solo-organico': 'Solo orgânico',
+      'super-solo': 'Super solo (amendments)',
+      coco: 'Fibra de coco',
+      hidroponia: 'Hidroponia (inerte)',
+      outro: 'Outro'
+    },
+    method: { vaso: 'Vaso / pote', bed: 'Cama / raised bed', dwc: 'DWC', aeroponia: 'Aeroponia', outro: 'Outro' },
+    phase: {
+      planejamento: 'Planejamento',
+      germinacao: 'Germinação',
+      vegetativo: 'Vegetativo',
+      floracao: 'Floração',
+      colheita: 'Colheita / secagem'
+    }
+  };
+
+  const TOOL_SUGGESTIONS = {
+    'solo-organico': [
+      { label: 'Calculadora de Super Solo', href: '/calculadoras/super-solo.html' },
+      { label: 'Volume do vaso', href: '/calculadoras/volume-vaso.html' },
+      { label: 'Faixa ideal de pH', href: '/calculadoras/ph.html' }
+    ],
+    'super-solo': [
+      { label: 'Calculadora de Super Solo', href: '/calculadoras/super-solo.html' },
+      { label: 'Volume do vaso', href: '/calculadoras/volume-vaso.html' }
+    ],
+    coco: [
+      { label: 'Calculadora de EC', href: '/calculadoras/ec.html' },
+      { label: 'Faixa ideal de pH', href: '/calculadoras/ph.html' },
+      { label: 'Calculadora de VPD', href: '/calculadoras/vpd.html' }
+    ],
+    hidroponia: [
+      { label: 'Calculadora de EC', href: '/calculadoras/ec.html' },
+      { label: 'Calculadora de Diluição', href: '/calculadoras/diluicao.html' },
+      { label: 'Faixa ideal de pH', href: '/calculadoras/ph.html' }
+    ],
+    default: [
+      { label: 'Hub de calculadoras', href: '/calculadoras/' },
+      { label: 'Ver inspeções do guia', href: '/biblioteca/inspecoes/' }
+    ]
+  };
+
+  const PHASE_TOOLS = {
+    germinacao: [{ label: 'Guia — germinação', href: '/biblioteca/inspecoes/' }],
+    vegetativo: [
+      { label: 'Calculadora de VPD', href: '/calculadoras/vpd.html' },
+      { label: 'Luxímetro (câmera)', href: '/calculadoras/luximetro.html' },
+      { label: 'Calculadora de DLI', href: '/calculadoras/dli.html' }
+    ],
+    floracao: [
+      { label: 'Calculadora de VPD', href: '/calculadoras/vpd.html' },
+      { label: 'Faixa ideal de pH', href: '/calculadoras/ph.html' }
+    ],
+    default: []
+  };
+
+  const PHASE_PLAN_DEFAULTS = {
+    planejamento: [
+      { label: 'Definir espaço e iluminação (W/m²)', href: '/calculadoras/watts-m2.html' },
+      { label: 'Planear substrato ou super solo', href: '/calculadoras/super-solo.html' },
+      { label: 'Ver guia de cultivo em vídeo', href: '/biblioteca/inspecoes/' }
+    ],
+    germinacao: [
+      { label: 'Controlar humidade e temperatura (VPD)', href: '/calculadoras/vpd.html' },
+      { label: 'Anotar data de germinação no diário', href: '' },
+      { label: 'Consultar guia — germinação', href: '/biblioteca/inspecoes/' }
+    ],
+    vegetativo: [
+      { label: 'Medir luz (luxímetro ou DLI)', href: '/calculadoras/luximetro.html' },
+      { label: 'Ajustar VPD no ambiente', href: '/calculadoras/vpd.html' },
+      { label: 'Registar EC/pH se usar coco ou hidro', href: '/calculadoras/ec.html' }
+    ],
+    floracao: [
+      { label: 'Monitorizar VPD na floração', href: '/calculadoras/vpd.html' },
+      { label: 'Verificar faixa de pH', href: '/calculadoras/ph.html' },
+      { label: 'Anotar semanas de flora no diário', href: '' }
+    ],
+    colheita: [
+      { label: 'Planear secagem e cura', href: '/biblioteca/inspecoes/' },
+      { label: 'Registar peso e observações finais', href: '' }
+    ]
+  };
+
+  const SITE_SECTIONS = [];
+
+  function renderPerfilNavAccordion(container, navRoot) {
+    if (!container || !navRoot || !navRoot.groups || !navRoot.groups.length) {
+      if (container) container.innerHTML = '';
+      return;
+    }
+    const items = navRoot.groups[0].items || [];
+    if (typeof window.buildAccordionListHTML === 'function') {
+      container.innerHTML = window.buildAccordionListHTML(items);
+    } else {
+      container.innerHTML = '';
+      return;
+    }
+    if (window.budganjaInitAccordion) {
+      window.budganjaInitAccordion(container, '.nav-tile-submenu-toggle', '.nav-tile-submenu');
+    }
+    if (window.budganjaIsNavLinkActive) {
+      container.querySelectorAll('.nav-accordion-link').forEach(function (link) {
+        if (window.budganjaIsNavLinkActive(link.getAttribute('href'))) {
+          link.classList.add('is-active');
+        }
+      });
+    }
+    if (window.budganjaEnhanceHoverTips) {
+      window.budganjaEnhanceHoverTips(container);
+    }
+  }
+
+  function setStatus(el, message, isError) {
+    if (!el) return;
+    el.textContent = message || '';
+    el.style.color = isError ? 'var(--color-danger)' : '';
+  }
+
+  function flashLiveStatus(message, isError) {
+    if (!liveStatusEl || !message) return;
+    liveStatusEl.hidden = false;
+    liveStatusEl.textContent = message;
+    liveStatusEl.classList.toggle('is-error', !!isError);
+    liveStatusEl.classList.remove('is-fade');
+    clearTimeout(liveStatusTimer);
+    liveStatusTimer = setTimeout(() => {
+      liveStatusEl.classList.add('is-fade');
+      setTimeout(() => {
+        liveStatusEl.hidden = true;
+        liveStatusEl.classList.remove('is-fade');
+      }, 350);
+    }, 3200);
+  }
+
+
+  function mergeProfileFromPayload(serverProfile, payload) {
+    if (!serverProfile || !payload) return serverProfile;
+    const merged = Object.assign({}, serverProfile);
+    if (Array.isArray(payload.growLogs)) {
+      merged.growLogs = cloneGrowLogs(payload.growLogs);
+      merged.activeGrowLogId = payload.activeGrowLogId || merged.activeGrowLogId;
+    }
+    if (Array.isArray(payload.planTasks)) merged.planTasks = payload.planTasks.slice();
+    if (payload.guideWeekNotes && typeof payload.guideWeekNotes === 'object') {
+      merged.guideWeekNotes = Object.assign({}, payload.guideWeekNotes);
+    }
+    if (payload.customGuide !== undefined) merged.customGuide = payload.customGuide;
+    if (payload.phase) merged.phase = payload.phase;
+    if (payload.phaseStartedAt) merged.phaseStartedAt = payload.phaseStartedAt;
+    if (payload.avatarUrl !== undefined) merged.avatarUrl = payload.avatarUrl;
+    ensureGrowLogs(merged);
+    syncPhaseFromActiveLog(merged);
+    return merged;
+  }
+
+  function updateUserHeader(data) {
+    const avatar = document.getElementById('perfil-avatar');
+    const nameEl = document.getElementById('perfil-name');
+    const emailEl = document.getElementById('perfil-email');
+    if (avatar && data) {
+      const pic = getProfilePicture(data);
+      avatar.src = pic;
+      avatar.alt = data.name || 'Avatar';
+      avatar.hidden = false;
+    }
+    if (nameEl) {
+      if (IS_CULTIVO_PAGE) {
+        nameEl.textContent = isProfileComplete(data.profile)
+          ? firstName(data.profile, data.name) + ' · cultivo'
+          : 'Meu cultivo';
+      } else {
+        nameEl.textContent = isProfileComplete(data.profile)
+          ? 'Olá, ' + firstName(data.profile, data.name) + '!'
+          : ((data.profile && data.profile.displayName) || data.name || 'Meu perfil');
+      }
+    }
+    if (emailEl) emailEl.textContent = data.email || '';
+  }
+
+  function refreshUI(options) {
+    const opts = options || {};
+    if (!user || !user.profile || !isProfileComplete(user.profile)) return;
+    ensureGrowLogs(user.profile);
+    renderHub(user.profile);
+    if (opts.tab) switchTab(opts.tab, { skipRefresh: true, skipStash: opts.skipStash });
+    if (opts.scrollTo) {
+      requestAnimationFrame(() => {
+        const target = typeof opts.scrollTo === 'string'
+          ? document.getElementById(opts.scrollTo)
+          : opts.scrollTo;
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+  }
+
+
+  const JOURNAL_MAX_LENGTH = 8000;
+
+
+  function getEffectivePhaseFromProfileOnly(profile) {
+    const phase = profile && profile.phase;
+    if (phase && getPhaseWeeks(phase).length) return phase;
+    return 'planejamento';
+  }
+
+  function getActiveGrowLog(profile) {
+    if (!profile || !Array.isArray(profile.growLogs) || !profile.growLogs.length) return null;
+    const id = profile.activeGrowLogId;
+    if (id) {
+      const found = profile.growLogs.find((log) => log.id === id);
+      if (found) return found;
+    }
+    return profile.growLogs[0] || null;
+  }
+
+  function syncPhaseFromActiveLog(profile) {
+    const log = getActiveGrowLog(profile);
+    if (!log) return profile;
+    profile.phase = log.phase || profile.phase || 'germinacao';
+    if (log.plantedAt) profile.phaseStartedAt = log.plantedAt;
+    return profile;
+  }
+
+  function ensureGrowLogs(profile) {
+    if (!profile) return profile;
+    if (!Array.isArray(profile.growLogs)) profile.growLogs = [];
+
+    if (!profile.growLogs.length) {
+      const journal = String(profile.journal || '').trim();
+      if (journal) {
+        const log = createGrowLogObject(
+          'Diário anterior',
+          profile.phaseStartedAt || new Date().toISOString(),
+          getEffectivePhaseFromProfileOnly(profile)
+        );
+        log.entries = [{
+          id: 'e' + Date.now(),
+          date: todayDateInputValue(),
+          text: journal,
+          source: 'system',
+          createdAt: new Date().toISOString()
+        }];
+        profile.growLogs = [log];
+        profile.activeGrowLogId = log.id;
+      }
+    }
+
+    if (profile.growLogs.length && !profile.activeGrowLogId) {
+      profile.activeGrowLogId = profile.growLogs[0].id;
+    }
+
+    syncPhaseFromActiveLog(profile);
+    return profile;
+  }
+
+
+  function createGrowEntry(text, opts) {
+    const options = opts || {};
+    const metrics = options.metrics && typeof options.metrics === 'object' ? options.metrics : {};
+    const photos = Array.isArray(options.photos) ? options.photos.slice(0, 4) : [];
+    return {
+      id: 'e' + Date.now() + Math.random().toString(36).slice(2, 6),
+      date: options.date || todayDateInputValue(),
+      text: String(text || '').trim().slice(0, 2000),
+      source: options.source || 'manual',
+      actionType: options.actionType || selectedEntryAction || 'obs',
+      metrics: metrics,
+      photos: photos,
+      createdAt: new Date().toISOString()
+    };
+  }
+
+  function parseOptionalMetricInput(el, min, max) {
+    if (!el || el.value === '') return null;
+    const n = parseFloat(String(el.value).replace(',', '.'));
+    if (isNaN(n) || n < min || n > max) return null;
+    return n;
+  }
+
+  function readEntryMetricsFromForm() {
+    const metrics = {};
+    const ph = parseOptionalMetricInput(growEntryPh, 0, 14);
+    const ec = parseOptionalMetricInput(growEntryEc, 0, 10);
+    const temp = parseOptionalMetricInput(growEntryTemp, -10, 60);
+    const rh = parseOptionalMetricInput(growEntryRh, 0, 100);
+    if (ph != null) metrics.ph = Math.round(ph * 10) / 10;
+    if (ec != null) metrics.ec = Math.round(ec * 10) / 10;
+    if (temp != null) metrics.temp = Math.round(temp);
+    if (rh != null) metrics.rh = Math.round(rh);
+    return metrics;
+  }
+
+  function clearEntryForm() {
+    if (growEntryText) growEntryText.value = '';
+    if (growEntryPh) growEntryPh.value = '';
+    if (growEntryEc) growEntryEc.value = '';
+    if (growEntryTemp) growEntryTemp.value = '';
+    if (growEntryRh) growEntryRh.value = '';
+    if (growEntryDate) growEntryDate.value = todayDateInputValue();
+    if (growEntryPhotos) growEntryPhotos.value = '';
+    pendingEntryPhotoFiles = [];
+    renderEntryPhotoPreview();
+    setSelectedEntryAction('rega');
+  }
+
+  function renderEntryPhotoPreview() {
+    if (!growEntryPhotosPreview) return;
+    if (!pendingEntryPhotoFiles.length) {
+      growEntryPhotosPreview.innerHTML = '';
+      return;
+    }
+    growEntryPhotosPreview.innerHTML = pendingEntryPhotoFiles.map((file, index) =>
+      '<figure class="perfil-entry-photo-thumb">' +
+      '<img src="' + escapeHtml(URL.createObjectURL(file)) + '" alt="">' +
+      '<button type="button" class="perfil-entry-photo-remove" data-photo-index="' + index + '" aria-label="Remover foto">×</button>' +
+      '</figure>'
+    ).join('');
+    growEntryPhotosPreview.querySelectorAll('.perfil-entry-photo-remove').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const idx = parseInt(btn.getAttribute('data-photo-index'), 10);
+        if (isNaN(idx)) return;
+        pendingEntryPhotoFiles.splice(idx, 1);
+        renderEntryPhotoPreview();
+      });
+    });
+  }
+
+  function readEntryPhotoFilesFromInput() {
+    if (!growEntryPhotos || !growEntryPhotos.files) return;
+    const incoming = Array.from(growEntryPhotos.files);
+    pendingEntryPhotoFiles = pendingEntryPhotoFiles.concat(incoming).slice(0, 4);
+    growEntryPhotos.value = '';
+    renderEntryPhotoPreview();
+  }
+
+  function readFileAsDataUrl(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  }
+
+  async function uploadCultivoPhoto(file) {
+    const data = await readFileAsDataUrl(file);
+    const res = await fetch('/api/cultivo/photo', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
+      body: JSON.stringify({ data: data })
+    });
+    const payload = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(payload.error || 'Erro no upload da foto.');
+    return payload.url;
+  }
+
+  async function uploadPendingEntryPhotos() {
+    const urls = [];
+    for (const file of pendingEntryPhotoFiles.slice(0, 4)) {
+      urls.push(await uploadCultivoPhoto(file));
+    }
+    return urls;
+  }
+
+  function setSelectedEntryAction(actionId) {
+    selectedEntryAction = actionId || 'obs';
+    if (!growEntryTypes) return;
+    growEntryTypes.querySelectorAll('.perfil-entry-type').forEach((btn) => {
+      const active = btn.getAttribute('data-action') === selectedEntryAction;
+      btn.classList.toggle('is-active', active);
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+  }
+
+  function getEntryActionMeta(entry) {
+    if (entry.source === 'calculator') {
+      const slug = entry.metrics && entry.metrics.calculator;
+      const label = slug && CALCULATOR_LABELS[slug] ? CALCULATOR_LABELS[slug] : 'Calculadora';
+      return { icon: '🧮', label: label, id: 'calculator' };
+    }
+    if (entry.source === 'week-note') return ENTRY_ACTIONS.find((a) => a.id === 'roteiro') || { icon: '📋', label: 'Roteiro', id: 'roteiro' };
+    if (entry.source === 'system') return { icon: '📥', label: 'Importado', id: 'system' };
+    return ENTRY_ACTIONS.find((a) => a.id === entry.actionType) || ENTRY_ACTIONS.find((a) => a.id === 'obs');
+  }
+
+
+  function renderEntryPhotosHtml(photos) {
+    if (!Array.isArray(photos) || !photos.length) return '';
+    return (
+      '<div class="perfil-grow-entry-photos">' +
+      photos.map((url) =>
+        '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener">' +
+        '<img src="' + escapeHtml(url) + '" alt="Foto do registo" loading="lazy">' +
+        '</a>'
+      ).join('') +
+      '</div>'
+    );
+  }
+
+  function buildDefaultEntryText(actionType, metrics) {
+    const action = ENTRY_ACTIONS.find((a) => a.id === actionType) || ENTRY_ACTIONS[2];
+    const metricLine = formatMetricsPlain(metrics);
+    if (metricLine) return action.label + ' — ' + metricLine;
+    if (actionType === 'rega') return 'Rega registada.';
+    if (actionType === 'adubo') return 'Adubação registada.';
+    if (actionType === 'treino') return 'Treino registado.';
+    return '';
+  }
+
+
+
+  function groupEntriesByGrowWeek(log, entries) {
+    const groups = new Map();
+    entries.forEach((entry) => {
+      const week = growWeekNumber(log.plantedAt, entry.date);
+      if (!groups.has(week)) groups.set(week, []);
+      groups.get(week).push(entry);
+    });
+    return Array.from(groups.entries()).sort((a, b) => b[0] - a[0]);
+  }
+
+  function renderEntryHtml(entry) {
+    const meta = getEntryActionMeta(entry);
+    const metricsHtml = formatMetricsPlain(entry.metrics)
+      ? '<p class="perfil-grow-entry-metrics">' + escapeHtml(formatMetricsPlain(entry.metrics)) + '</p>'
+      : '';
+    const photosHtml = renderEntryPhotosHtml(entry.photos);
+    const cssClass = 'perfil-grow-entry perfil-grow-entry--' + escapeHtml(meta.id || entry.source || 'manual');
+    return (
+      '<li class="' + cssClass + '">' +
+      '<div class="perfil-grow-entry-head">' +
+      '<time datetime="' + escapeHtml(entry.date) + '">' + escapeHtml(formatDate(entry.date)) + '</time>' +
+      '<span class="perfil-grow-entry-tag">' + escapeHtml(meta.icon + ' ' + meta.label) + '</span>' +
+      '</div>' +
+      metricsHtml +
+      (entry.text ? '<p class="perfil-grow-entry-text">' + escapeHtml(entry.text) + '</p>' : '') +
+      photosHtml +
+      '</li>'
+    );
+  }
+
+  function ensureActiveGrowLog(profile, defaultName) {
+    ensureGrowLogs(profile);
+    let log = getActiveGrowLog(profile);
+    if (log) return log;
+    const name = defaultName
+      || (profile.genetics && String(profile.genetics).trim())
+      || 'Meu cultivo';
+    log = createGrowLogObject(name, new Date().toISOString(), getEffectivePhaseFromProfileOnly(profile));
+    profile.growLogs.push(log);
+    profile.activeGrowLogId = log.id;
+    syncPhaseFromActiveLog(profile);
+    return log;
+  }
+
+  function buildWeekNoteEntry(noteText, profile) {
+    const weekNum = getActiveWeek(profile);
+    const phaseLabel = formatProfileValue('phase', getEffectivePhase(profile));
+    const log = getActiveGrowLog(profile);
+    const prefix = log && log.name ? log.name + ' · ' : '';
+    const context = prefix + 'Semana ' + weekNum + (phaseLabel ? ' (' + phaseLabel + ')' : '');
+    return createGrowEntry(context + ': ' + noteText.trim(), { source: 'week-note', actionType: 'roteiro' });
+  }
+
+  function appendEntryToGrowLog(log, entry) {
+    if (!log) return { ok: false, error: 'Diário não encontrado.' };
+    if (!Array.isArray(log.entries)) log.entries = [];
+    log.entries.unshift(entry);
+    if (log.entries.length > 300) {
+      log.entries = log.entries.slice(0, 300);
+    }
+    return { ok: true };
+  }
+
+
+
+  function initEntryTypeButtons() {
+    if (!growEntryTypes || growEntryTypes.dataset.bound === '1') return;
+    growEntryTypes.dataset.bound = '1';
+    growEntryTypes.querySelectorAll('.perfil-entry-type').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        setSelectedEntryAction(btn.getAttribute('data-action'));
+      });
+    });
+  }
+
+  function initGrowDateDefaults() {
+    if (growPlantedEl && !growPlantedEl.value) growPlantedEl.value = todayDateInputValue();
+    if (growEntryDate && !growEntryDate.value) growEntryDate.value = todayDateInputValue();
+  }
+
+  function showGrowListView() {
+    selectedGrowLogId = null;
+    if (growListView) growListView.hidden = false;
+    if (growDetailView) growDetailView.hidden = true;
+  }
+
+  function showGrowDetail(logId, profile) {
+    const logs = profile && profile.growLogs ? profile.growLogs : [];
+    const log = logs.find((item) => item.id === logId);
+    if (!log) {
+      showGrowListView();
+      return;
+    }
+    selectedGrowLogId = logId;
+    if (growListView) growListView.hidden = true;
+    if (growDetailView) growDetailView.hidden = false;
+
+    const phaseLabel = formatProfileValue('phase', log.phase);
+    const planted = formatDate(log.plantedAt);
+    const days = daysSincePlanted(log.plantedAt);
+    const isActive = profile.activeGrowLogId === log.id;
+
+    if (growDetailTitle) growDetailTitle.textContent = log.name;
+    if (growDetailMeta) {
+      growDetailMeta.textContent = phaseLabel + ' · plantio ' + planted + ' · dia ' + days
+        + (isActive ? ' · cultivo activo no roteiro' : '');
+    }
+    if (growDetailPhase) growDetailPhase.value = log.phase || 'germinacao';
+    if (growSetActiveBtn) {
+      growSetActiveBtn.textContent = isActive ? 'Activo no roteiro' : 'Usar no roteiro';
+      growSetActiveBtn.disabled = isActive;
+    }
+    if (growEntryDate) growEntryDate.value = todayDateInputValue();
+    clearEntryForm();
+    initEntryTypeButtons();
+
+    const entries = Array.isArray(log.entries) ? log.entries.slice() : [];
+    if (growEntriesEmpty) growEntriesEmpty.hidden = entries.length > 0;
+    if (growEntriesEl) {
+      if (!entries.length) {
+        growEntriesEl.innerHTML = '';
+      } else {
+        const groups = groupEntriesByGrowWeek(log, entries);
+        growEntriesEl.innerHTML = groups.map(([weekNum, weekEntries]) =>
+          '<li class="perfil-grow-week-group">' +
+          '<h3 class="perfil-grow-week-title">Semana ' + weekNum + ' do cultivo · ' + growWeekDayRange(weekNum) + '</h3>' +
+          '<ul class="perfil-grow-week-entries">' +
+          weekEntries.map((entry) => renderEntryHtml(entry)).join('') +
+          '</ul></li>'
+        ).join('');
+      }
+      const newest = growEntriesEl.querySelector('.perfil-grow-entry');
+      if (newest) {
+        newest.classList.add('is-new');
+        setTimeout(() => newest.classList.remove('is-new'), 1800);
+      }
+    }
+  }
+
+  function renderGrowList(profile) {
+    ensureGrowLogs(profile);
+    initGrowDateDefaults();
+    const logs = profile.growLogs || [];
+    const activeId = profile.activeGrowLogId;
+
+    if (growEmptyEl) growEmptyEl.hidden = logs.length > 0;
+    if (!growListEl) return;
+
+    if (!logs.length) {
+      growListEl.innerHTML = '';
+      return;
+    }
+
+    growListEl.innerHTML = logs.map((log) => {
+      const entryCount = Array.isArray(log.entries) ? log.entries.length : 0;
+      const phaseLabel = formatProfileValue('phase', log.phase);
+      const isActive = log.id === activeId;
+      return (
+        '<li class="perfil-grow-card' + (isActive ? ' is-active' : '') + '">' +
+        '<button type="button" class="perfil-grow-card-btn" data-grow-id="' + escapeHtml(log.id) + '">' +
+        '<span class="perfil-grow-card-name">' + escapeHtml(log.name) + '</span>' +
+        '<span class="perfil-grow-card-meta">' + escapeHtml(phaseLabel) +
+        ' · plantio ' + escapeHtml(formatDate(log.plantedAt)) +
+        ' · ' + entryCount + ' registo' + (entryCount === 1 ? '' : 's') +
+        '</span>' +
+        (isActive ? '<span class="perfil-grow-card-badge">Roteiro</span>' : '') +
+        '</button></li>'
+      );
+    }).join('');
+
+    growListEl.querySelectorAll('[data-grow-id]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        showGrowDetail(btn.getAttribute('data-grow-id'), user.profile);
+      });
+    });
+  }
+
+  function renderGrowHub(profile) {
+    if (selectedGrowLogId) {
+      showGrowDetail(selectedGrowLogId, profile);
+    } else {
+      showGrowListView();
+      renderGrowList(profile);
+    }
+  }
+
+
+  function formatProfileValue(key, value) {
+    const trimmed = String(value || '').trim();
+    if (!trimmed) return '';
+    const map = PROFILE_VALUE_LABELS[key];
+    if (map && map[trimmed]) return map[trimmed];
+    return trimmed;
+  }
+
+  function isProfileComplete(profile) {
+    if (!profile) return false;
+    const name = String(profile.displayName || '').trim();
+    const age = profile.age;
+    return name.length >= 2 && age !== null && !isNaN(age) && age >= MIN_USER_AGE;
+  }
+
+  function validateRegistrationForm() {
+    const nameEl = document.getElementById('profile-displayName');
+    const ageEl = document.getElementById('profile-age');
+    const name = nameEl ? nameEl.value.trim() : '';
+    const age = ageEl ? parseInt(ageEl.value, 10) : NaN;
+    if (name.length < 2) {
+      return 'Informe um nome válido (mínimo 2 caracteres).';
+    }
+    if (isNaN(age) || age < MIN_USER_AGE) {
+      return 'É necessário ter 18 anos ou mais para utilizar o site.';
+    }
+    if (age > 120) {
+      return 'Informe uma idade válida.';
+    }
+    return '';
+  }
+
+  function getPhaseWeeks(phase) {
+    const data = window.__CULTIVO_PHASE_WEEKS__ || {};
+    const key = phase || 'planejamento';
+    return data[key] || data.planejamento || [];
+  }
+
+  function getEffectivePhase(profile) {
+    if (!profile) return 'planejamento';
+    if (Array.isArray(profile.growLogs) && profile.growLogs.length) {
+      const log = getActiveGrowLog(profile);
+      if (log && log.phase && getPhaseWeeks(log.phase).length) return log.phase;
+    }
+    return getEffectivePhaseFromProfileOnly(profile);
+  }
+
+  function firstName(profile, fallbackName) {
+    const raw = (profile && profile.displayName) || fallbackName || '';
+    return String(raw).trim().split(/\s+/)[0] || 'Cultivador';
+  }
+
+  function switchTab(tabId, options) {
+    const opts = options || {};
+    if (!opts.skipStash) stashWeekNotes();
+    const id = tabId || 'inicio';
+    document.querySelectorAll('.perfil-tab').forEach((btn) => {
+      const active = btn.getAttribute('data-tab') === id;
+      btn.classList.toggle('is-active', active);
+      btn.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+    document.querySelectorAll('.perfil-tab-panel').forEach((panel) => {
+      const active = panel.id === 'perfil-panel-' + id;
+      panel.classList.toggle('is-active', active);
+      panel.hidden = !active;
+    });
+    try { sessionStorage.setItem(TAB_STORAGE_KEY, id); } catch (e) { /* ignore */ }
+    if (!opts.skipRefresh && user && user.profile && isProfileComplete(user.profile)) {
+      renderHub(user.profile);
+    }
+  }
+
+  function initTabs() {
+    document.querySelectorAll('.perfil-tab').forEach((btn) => {
+      btn.addEventListener('click', () => switchTab(btn.getAttribute('data-tab')));
+    });
+    document.querySelectorAll('[data-goto-tab]').forEach((el) => {
+      el.addEventListener('click', () => switchTab(el.getAttribute('data-goto-tab')));
+    });
+    let saved = 'inicio';
+    try { saved = sessionStorage.getItem(TAB_STORAGE_KEY) || 'inicio'; } catch (e) { /* ignore */ }
+    if (document.getElementById('perfil-panel-' + saved)) switchTab(saved, { skipRefresh: true });
+  }
+
+  function isTaskOverdue(task) {
+    if (!task || !task.dueAt || task.done) return false;
+    return String(task.dueAt) < todayDateInputValue();
+  }
+
+  function sortPlanTasks(tasks) {
+    return tasks.slice().sort((a, b) => {
+      const aDue = a.dueAt || '';
+      const bDue = b.dueAt || '';
+      if (aDue && bDue && aDue !== bDue) return aDue.localeCompare(bDue);
+      if (aDue && !bDue) return -1;
+      if (!aDue && bDue) return 1;
+      return 0;
+    });
+  }
+
+  function formatTaskDueLabel(task) {
+    if (!task.dueAt) return '';
+    const prefix = isTaskOverdue(task) ? 'Atrasado · ' : '';
+    return prefix + formatDate(task.dueAt);
+  }
+
+  function buildReminderLabel(actionType, customLabel) {
+    const custom = String(customLabel || '').trim();
+    if (custom) return custom;
+    if (actionType === 'rega') return 'Rega agendada';
+    if (actionType === 'adubo') return 'Adubação agendada';
+    return 'Lembrete';
+  }
+
+  function getUpcomingReminders(profile, limit) {
+    const today = todayDateInputValue();
+    return sortPlanTasks(ensurePlanTasks(profile))
+      .filter((task) => task.dueAt && !task.done)
+      .filter((task) => task.dueAt >= today || isTaskOverdue(task))
+      .slice(0, limit || 5);
+  }
+
+
+  function downloadCsv(filename, rows) {
+    const csv = rows.map((row) => row.map(csvEscape).join(',')).join('\r\n');
+    const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = filename;
+    link.click();
+    URL.revokeObjectURL(link.href);
+  }
+
+  function exportGrowCsv(log) {
+    if (!log) return;
+    const rows = [['Diário', 'Data', 'Tipo', 'Texto', 'pH', 'EC', '°C', 'RH', 'VPD', 'DLI', 'Fonte', 'Fotos']];
+    (log.entries || []).forEach((entry) => {
+      const metrics = entry.metrics || {};
+      rows.push([
+        log.name,
+        entry.date,
+        entry.actionType || '',
+        entry.text || '',
+        metrics.ph != null ? metrics.ph : '',
+        metrics.ec != null ? metrics.ec : '',
+        metrics.temp != null ? metrics.temp : '',
+        metrics.rh != null ? metrics.rh : '',
+        metrics.vpd != null ? metrics.vpd : '',
+        metrics.dli != null ? metrics.dli : '',
+        entry.source || 'manual',
+        Array.isArray(entry.photos) ? entry.photos.join(' ') : ''
+      ]);
+    });
+    const safeName = String(log.name || 'cultivo').replace(/[^\w\-]+/g, '-').slice(0, 40);
+    downloadCsv('diario-' + safeName + '.csv', rows);
+  }
+
+  function exportAllGrowsCsv(profile) {
+    ensureGrowLogs(profile);
+    const rows = [['Diário', 'Data', 'Tipo', 'Texto', 'pH', 'EC', '°C', 'RH', 'VPD', 'DLI', 'Fonte', 'Fotos']];
+    (profile.growLogs || []).forEach((log) => {
+      (log.entries || []).forEach((entry) => {
+        const metrics = entry.metrics || {};
+        rows.push([
+          log.name,
+          entry.date,
+          entry.actionType || '',
+          entry.text || '',
+          metrics.ph != null ? metrics.ph : '',
+          metrics.ec != null ? metrics.ec : '',
+          metrics.temp != null ? metrics.temp : '',
+          metrics.rh != null ? metrics.rh : '',
+          metrics.vpd != null ? metrics.vpd : '',
+          metrics.dli != null ? metrics.dli : '',
+          entry.source || 'manual',
+          Array.isArray(entry.photos) ? entry.photos.join(' ') : ''
+        ]);
+      });
+    });
+    downloadCsv('diarios-cultivo.csv', rows);
+  }
+
+  function printGrowDetail() {
+    if (!selectedGrowLogId || !user || !user.profile) return;
+    const log = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
+    if (!log) return;
+    document.body.classList.add('perfil-print-mode');
+    const cleanup = () => document.body.classList.remove('perfil-print-mode');
+    window.addEventListener('afterprint', cleanup, { once: true });
+    window.print();
+  }
+
+  function logReminderToDiary(task, profile) {
+    const log = ensureActiveGrowLog(profile, '');
+    const actionType = task.actionType || 'obs';
+    const text = task.label || buildReminderLabel(actionType, '');
+    const entry = createGrowEntry(text, {
+      date: todayDateInputValue(),
+      actionType: actionType === 'rega' || actionType === 'adubo' ? actionType : 'obs',
+      source: 'manual'
+    });
+    appendEntryToGrowLog(log, entry);
+    if (profile.activeGrowLogId !== log.id) profile.activeGrowLogId = log.id;
+  }
+
+  function isCultivoOnboardingDone() {
+    return COnboard.isDone ? COnboard.isDone() : false;
+  }
+
+  function markCultivoOnboardingDone() {
+    if (COnboard.markDone) COnboard.markDone();
+  }
+
+  function shouldShowCultivoOnboarding(profile) {
+    if (!IS_CULTIVO_PAGE || !profile) return false;
+    if (isCultivoOnboardingDone()) return false;
+    ensureGrowLogs(profile);
+    return !(profile.growLogs && profile.growLogs.length);
+  }
+
+  function setCultivoOnboardStatus(message, isError) {
+    if (!cultivoOnboardStatusEl) return;
+    cultivoOnboardStatusEl.textContent = message || '';
+    cultivoOnboardStatusEl.classList.toggle('is-error', !!isError);
+  }
+
+  function defaultReminderDate(daysAhead) {
+    return COnboard.defaultReminderDate ? COnboard.defaultReminderDate(daysAhead) : todayDateInputValue();
+  }
+
+  function initCultivoOnboardingDefaults() {
+    if (cultivoOnboardPlantedEl && !cultivoOnboardPlantedEl.value) {
+      cultivoOnboardPlantedEl.value = todayDateInputValue();
+    }
+    if (cultivoOnboardReminderDateEl && !cultivoOnboardReminderDateEl.value) {
+      cultivoOnboardReminderDateEl.value = defaultReminderDate(3);
+    }
+    setCultivoOnboardPhase(cultivoOnboardPhase || 'germinacao');
+  }
+
+  function setCultivoOnboardPhase(phase) {
+    cultivoOnboardPhase = phase || 'germinacao';
+    if (!cultivoOnboardingEl) return;
+    cultivoOnboardingEl.querySelectorAll('.cultivo-onboard-phases .perfil-phase-btn').forEach((btn) => {
+      const active = btn.getAttribute('data-phase') === cultivoOnboardPhase;
+      btn.classList.toggle('is-active', active);
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+  }
+
+  function renderCultivoOnboardStep(step) {
+    cultivoOnboardStep = step;
+    if (!cultivoOnboardingEl) return;
+    cultivoOnboardingEl.querySelectorAll('[data-onboard-step]').forEach((panel) => {
+      const panelStep = parseInt(panel.getAttribute('data-onboard-step'), 10);
+      panel.hidden = panelStep !== step;
+    });
+    cultivoOnboardingEl.querySelectorAll('[data-step-dot]').forEach((dot) => {
+      const dotStep = parseInt(dot.getAttribute('data-step-dot'), 10);
+      dot.classList.toggle('is-active', dotStep === step);
+      dot.classList.toggle('is-done', dotStep < step);
+    });
+    if (cultivoOnboardBackBtn) cultivoOnboardBackBtn.hidden = step <= 1;
+    if (cultivoOnboardNextBtn) cultivoOnboardNextBtn.hidden = step >= 3;
+    if (cultivoOnboardFinishBtn) cultivoOnboardFinishBtn.hidden = step < 3;
+    setCultivoOnboardStatus('');
+  }
+
+  function showCultivoOnboarding(step) {
+    if (!cultivoOnboardingEl || !dashboardEl) return;
+    initCultivoOnboardingDefaults();
+    cultivoOnboardingEl.hidden = false;
+    dashboardEl.hidden = true;
+    renderCultivoOnboardStep(step || 1);
+    if (step === 1 && cultivoOnboardNameEl) {
+      requestAnimationFrame(() => cultivoOnboardNameEl.focus());
+    }
+  }
+
+  function hideCultivoOnboarding() {
+    if (cultivoOnboardingEl) cultivoOnboardingEl.hidden = true;
+    if (dashboardEl) dashboardEl.hidden = false;
+    setCultivoOnboardStatus('');
+  }
+
+  function skipCultivoOnboarding() {
+    markCultivoOnboardingDone();
+    hideCultivoOnboarding();
+    flashLiveStatus('Pode criar o diário quando quiser no separador Diário.');
+  }
+
+  function validateCultivoOnboardStep(step) {
+    if (step === 1) {
+      const name = cultivoOnboardNameEl ? cultivoOnboardNameEl.value.trim() : '';
+      if (!name) {
+        setCultivoOnboardStatus('Informe o nome da genética ou semente.', true);
+        if (cultivoOnboardNameEl) cultivoOnboardNameEl.focus();
+        return false;
+      }
+    }
+    if (step === 2) {
+      const planted = cultivoOnboardPlantedEl ? cultivoOnboardPlantedEl.value : '';
+      if (!planted) {
+        setCultivoOnboardStatus('Escolha a data de plantio ou germinação.', true);
+        return false;
+      }
+    }
+    return true;
+  }
+
+  async function finishCultivoOnboarding() {
+    if (!user || !user.profile) return;
+    const name = cultivoOnboardNameEl ? cultivoOnboardNameEl.value.trim() : '';
+    const plantedRaw = cultivoOnboardPlantedEl ? cultivoOnboardPlantedEl.value : todayDateInputValue();
+    if (!name) {
+      renderCultivoOnboardStep(1);
+      setCultivoOnboardStatus('Informe o nome da genética ou semente.', true);
+      return;
+    }
+    if (cultivoOnboardFinishBtn) cultivoOnboardFinishBtn.disabled = true;
+    setCultivoOnboardStatus('A criar o seu diário…');
+
+    const log = createGrowLogObject(name, plantedRaw + 'T12:00:00', cultivoOnboardPhase || 'germinacao');
+    ensureGrowLogs(user.profile);
+    user.profile.growLogs.unshift(log);
+    user.profile.activeGrowLogId = log.id;
+    syncPhaseFromActiveLog(user.profile);
+    selectedWeek = getCurrentWeekNumber(user.profile.phaseStartedAt);
+    selectedGrowLogId = log.id;
+
+    const reminderEnabled = cultivoOnboardReminderEnableEl && cultivoOnboardReminderEnableEl.checked;
+    const reminderDate = cultivoOnboardReminderDateEl ? cultivoOnboardReminderDateEl.value : '';
+    if (reminderEnabled && reminderDate) {
+      const tasks = ensurePlanTasks(user.profile);
+      tasks.push({
+        id: 'r' + Date.now(),
+        label: buildReminderLabel('rega', name + ' — primeira rega'),
+        done: false,
+        toolHref: '',
+        dueAt: reminderDate,
+        actionType: 'rega',
+        growId: log.id
+      });
+      user.profile.planTasks = tasks;
+    }
+
+    markCultivoOnboardingDone();
+    hideCultivoOnboarding();
+    if (cultivoOnboardFinishBtn) cultivoOnboardFinishBtn.disabled = false;
+
+    await seedDefaultPlanIfEmpty(user.profile);
+    refreshUI({ tab: 'diario', scrollTo: 'perfil-grow-entry-form' });
+    showGrowDetail(log.id, user.profile);
+    flashLiveStatus('Diário «' + log.name + '» criado — faça o primeiro registo.');
+    await persistGrowLogs(growDetailStatus);
+  }
+
+  function initCultivoOnboardingUI() {
+    if (!IS_CULTIVO_PAGE || !cultivoOnboardingEl || cultivoOnboardingEl.dataset.bound === '1') return;
+    cultivoOnboardingEl.dataset.bound = '1';
+    initCultivoOnboardingDefaults();
+
+    cultivoOnboardingEl.querySelectorAll('.cultivo-onboard-phases .perfil-phase-btn').forEach((btn) => {
+      btn.addEventListener('click', () => setCultivoOnboardPhase(btn.getAttribute('data-phase')));
+    });
+
+    if (cultivoOnboardReminderEnableEl && cultivoOnboardReminderDateEl) {
+      cultivoOnboardReminderEnableEl.addEventListener('change', () => {
+        cultivoOnboardReminderDateEl.disabled = !cultivoOnboardReminderEnableEl.checked;
+      });
+      cultivoOnboardReminderDateEl.disabled = !cultivoOnboardReminderEnableEl.checked;
+    }
+
+    if (cultivoOnboardNextBtn) {
+      cultivoOnboardNextBtn.addEventListener('click', () => {
+        if (!validateCultivoOnboardStep(cultivoOnboardStep)) return;
+        renderCultivoOnboardStep(cultivoOnboardStep + 1);
+      });
+    }
+
+    if (cultivoOnboardBackBtn) {
+      cultivoOnboardBackBtn.addEventListener('click', () => {
+        if (cultivoOnboardStep > 1) renderCultivoOnboardStep(cultivoOnboardStep - 1);
+      });
+    }
+
+    if (cultivoOnboardSkipBtn) {
+      cultivoOnboardSkipBtn.addEventListener('click', skipCultivoOnboarding);
+    }
+
+    if (cultivoOnboardFinishBtn) {
+      cultivoOnboardFinishBtn.addEventListener('click', finishCultivoOnboarding);
+    }
+  }
+
+  function renderInicioSummary(profile) {
+    if (!inicioSummaryEl || !profile) return;
+    ensureGrowLogs(profile);
+    const activeLog = getActiveGrowLog(profile);
+    const hasDiary = !!(profile.growLogs && profile.growLogs.length);
+
+    if (!hasDiary) {
+      inicioSummaryEl.innerHTML =
+        '<p class="perfil-inicio-grow-label">Comece aqui</p>' +
+        '<h2 class="perfil-inicio-focus">Crie o seu primeiro diário</h2>' +
+        '<p class="perfil-inicio-desc">Uma planta ou semente por diário — registe rega, adubo e notas em segundos.</p>' +
+        '<div class="perfil-inicio-actions">' +
+        '<button type="button" class="botao botao-sm perfil-inicio-cta" data-goto-tab="diario">Criar diário</button>' +
+        '</div>';
+      inicioSummaryEl.querySelectorAll('[data-goto-tab]').forEach((cta) => {
+        cta.addEventListener('click', () => switchTab(cta.getAttribute('data-goto-tab')));
+      });
+      return;
+    }
+
+    const phaseLabel = formatProfileValue('phase', getEffectivePhase(profile));
+    const weeks = getPhaseWeeks(getEffectivePhase(profile));
+    const current = getCurrentWeekNumber(profile.phaseStartedAt);
+    const guide = getWeekGuideData(profile, getActiveWeek(profile));
+    const weekTitle = guide ? guide.title : 'Sem roteiro';
+    const growLine = activeLog
+      ? activeLog.name + ' · dia ' + daysSincePlanted(activeLog.plantedAt) + ' desde o plantio'
+      : 'Escolha um diário activo no separador Diário.';
+
+    let lastLine = '';
+    if (activeLog && Array.isArray(activeLog.entries) && activeLog.entries.length) {
+      const last = activeLog.entries[0];
+      const meta = getEntryActionMeta(last);
+      const preview = last.text ? last.text.slice(0, 72) + (last.text.length > 72 ? '…' : '') : formatMetricsPlain(last.metrics);
+      lastLine = '<p class="perfil-inicio-last">Último registo: <strong>' + escapeHtml(meta.label) + '</strong>'
+        + (preview ? ' — ' + escapeHtml(preview) : '') + '</p>';
+    } else {
+      lastLine = '<p class="perfil-inicio-last">Ainda sem registos — faça o primeiro em segundos.</p>';
+    }
+
+    const reminders = getUpcomingReminders(profile, 3);
+    let remindersHtml = '';
+    if (reminders.length) {
+      remindersHtml =
+        '<div class="perfil-inicio-reminders">' +
+        '<p class="perfil-inicio-reminders-title">Lembretes</p><ul>' +
+        reminders.map((task) =>
+          '<li class="perfil-inicio-reminder' + (isTaskOverdue(task) ? ' is-overdue' : '') + '">' +
+          '<span>' + escapeHtml(task.label) + '</span>' +
+          '<time datetime="' + escapeHtml(task.dueAt) + '">' + escapeHtml(formatTaskDueLabel(task)) + '</time>' +
+          '</li>'
+        ).join('') +
+        '</ul></div>';
+    }
+
+    inicioSummaryEl.innerHTML =
+      '<p class="perfil-inicio-grow-label">Cultivo activo</p>' +
+      '<p class="perfil-inicio-grow">' + escapeHtml(growLine) + '</p>' +
+      '<p class="perfil-inicio-phase">' + escapeHtml(phaseLabel) + ' · semana ' + current + ' de ' + weeks.length + '</p>' +
+      '<h2 class="perfil-inicio-focus">' + escapeHtml(weekTitle) + '</h2>' +
+      (guide && guide.focus ? '<p class="perfil-inicio-desc">' + escapeHtml(guide.focus) + '</p>' : '') +
+      lastLine +
+      remindersHtml +
+      '<div class="perfil-inicio-actions">' +
+      '<button type="button" class="botao botao-sm perfil-inicio-cta" data-goto-tab="diario" data-scroll-form="1">Registar agora</button>' +
+      '<button type="button" class="botao botao-outline botao-sm perfil-inicio-cta" data-goto-tab="semana">Ver roteiro</button>' +
+      '</div>';
+    inicioSummaryEl.querySelectorAll('[data-goto-tab]').forEach((cta) => {
+      cta.addEventListener('click', () => {
+        const tab = cta.getAttribute('data-goto-tab');
+        if (tab === 'diario' && activeLog) {
+          selectedGrowLogId = activeLog.id;
+        }
+        switchTab(tab);
+        if (cta.getAttribute('data-scroll-form') === '1') {
+          requestAnimationFrame(() => {
+            const form = document.getElementById('perfil-grow-entry-form');
+            if (form) form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+        }
+      });
+    });
+  }
+
+  function renderQuickLinks() {
+    if (!quickLinksEl) return;
+    quickLinksEl.innerHTML = QUICK_LINKS.map((item) =>
+      '<li><a href="' + escapeHtml(item.href) + '" class="perfil-quick-card">' +
+      '<span class="perfil-quick-icon" aria-hidden="true">' + item.icon + '</span>' +
+      '<span class="perfil-quick-label">' + escapeHtml(item.label) + '</span>' +
+      '<span class="perfil-quick-desc">' + escapeHtml(item.desc) + '</span></a></li>'
+    ).join('');
+  }
+
+  function renderPlanPreview(profile) {
+    if (!planPreviewList) return;
+    const pending = sortPlanTasks(ensurePlanTasks(profile).filter((t) => !t.done)).slice(0, 4);
+    if (!pending.length) {
+      planPreviewList.innerHTML = '<li class="perfil-plano-empty">Nenhuma tarefa pendente — adicione no plano ou agende um lembrete.</li>';
+      return;
+    }
+    planPreviewList.innerHTML = pending.map((task) =>
+      '<li class="perfil-plan-preview-item' + (isTaskOverdue(task) ? ' is-overdue' : '') + '">' +
+      '<span class="perfil-plan-preview-dot" aria-hidden="true"></span>' +
+      '<span>' + escapeHtml(task.label) + (task.dueAt ? ' <em>(' + escapeHtml(formatTaskDueLabel(task)) + ')</em>' : '') + '</span></li>'
+    ).join('');
+  }
+
+  function renderPhaseSelector(profile) {
+    /* Fase gerida por diário de cultivo activo — selector global removido */
+  }
+
+  function getCurrentWeekNumber(phaseStartedAt) {
+    if (!phaseStartedAt) return 1;
+    const start = new Date(phaseStartedAt);
+    if (isNaN(start.getTime())) return 1;
+    const diffMs = Date.now() - start.getTime();
+    return Math.max(1, Math.floor(diffMs / (7 * 24 * 60 * 60 * 1000)) + 1);
+  }
+
+  function getActiveWeek(profile) {
+    const eff = getEffectivePhase(profile);
+    const weeks = getPhaseWeeks(eff);
+    const current = getCurrentWeekNumber(profile && profile.phaseStartedAt);
+    const num = selectedWeek != null ? selectedWeek : current;
+    return Math.min(Math.max(1, num), weeks.length || 1);
+  }
+
+  function getWeekGuideData(profile, weekNumber) {
+    const weeks = getPhaseWeeks(getEffectivePhase(profile));
+    if (!weeks.length) return null;
+    const idx = Math.min(Math.max(1, weekNumber), weeks.length) - 1;
+    return weeks[idx];
+  }
+
+  function stashWeekNotes() {
+    if (!weekNotesEl || !user || !user.profile) return;
+    const w = getActiveWeek(user.profile);
+    if (!user.profile.guideWeekNotes) user.profile.guideWeekNotes = {};
+    user.profile.guideWeekNotes[String(w)] = weekNotesEl.value.trim();
+  }
+
+  function readGuideWeekNotesFromProfile(profile) {
+    const src = profile && profile.guideWeekNotes && typeof profile.guideWeekNotes === 'object'
+      ? profile.guideWeekNotes
+      : {};
+    return Object.assign({}, src);
+  }
+
+  function readHubFields() {
+    const notes = readGuideWeekNotesFromProfile(user && user.profile);
+    if (weekNotesEl && user && user.profile) {
+      const w = getActiveWeek(user.profile);
+      const key = String(w);
+      if (weekNotesEl.dataset.weekKey !== key) {
+        weekNotesEl.value = notes[key] || '';
+        weekNotesEl.dataset.weekKey = key;
+      } else {
+        notes[key] = weekNotesEl.value.trim();
+      }
+    }
+    return {
+      customGuide: customGuideEl ? customGuideEl.value.trim() : '',
+      planTasks: user && user.profile && Array.isArray(user.profile.planTasks)
+        ? user.profile.planTasks.slice()
+        : [],
+      guideWeekNotes: notes,
+      growLogs: cloneGrowLogs(user && user.profile ? user.profile.growLogs : []),
+      activeGrowLogId: user && user.profile ? user.profile.activeGrowLogId || '' : '',
+      phase: user && user.profile ? getEffectivePhase(user.profile) : 'planejamento',
+      phaseStartedAt: user && user.profile ? user.profile.phaseStartedAt : null,
+      journal: user && user.profile ? String(user.profile.journal || '').trim() : ''
+    };
+  }
+
+  function applyCultivoState(profile, cultivo) {
+    if (!profile || !cultivo) return profile;
+    profile.phase = cultivo.phase;
+    profile.phaseStartedAt = cultivo.phaseStartedAt;
+    profile.activeGrowLogId = cultivo.activeGrowLogId;
+    profile.customGuide = cultivo.customGuide;
+    profile.guideWeekNotes = cultivo.guideWeekNotes && typeof cultivo.guideWeekNotes === 'object'
+      ? Object.assign({}, cultivo.guideWeekNotes)
+      : {};
+    profile.growLogs = cloneGrowLogs(cultivo.growLogs);
+    profile.planTasks = Array.isArray(cultivo.planTasks) ? cultivo.planTasks.slice() : [];
+    ensureGrowLogs(profile);
+    syncPhaseFromActiveLog(profile);
+    return profile;
+  }
+
+  async function loadCultivoIntoProfile() {
+    const res = await fetch('/api/cultivo', { credentials: 'include' });
+    if (!res.ok) throw new Error('cultivo_load_failed');
+    const data = await res.json();
+    if (data.cultivo && user) {
+      if (!user.profile) user.profile = {};
+      applyCultivoState(user.profile, data.cultivo);
+    }
+    return data.cultivo;
+  }
+
+  function readAccountForm() {
+    const nameEl = document.getElementById('profile-displayName');
+    const ageEl = document.getElementById('profile-age');
+    const base = user && user.profile ? Object.assign({}, user.profile) : {};
+    if (nameEl) base.displayName = nameEl.value.trim();
+    if (ageEl && ageEl.value !== '') {
+      const age = parseInt(ageEl.value, 10);
+      base.age = isNaN(age) ? null : age;
+    }
+    if (avatarUrlEl) {
+      const picked = avatarUrlEl.value.trim();
+      if (picked) base.avatarUrl = picked;
+    }
+    return base;
+  }
+
+  function readCultivoPayload() {
+    return readHubFields();
+  }
+
+  function readForm() {
+    if (IS_CULTIVO_PAGE) return readCultivoPayload();
+    return readAccountForm();
+  }
+
+  function fillForm(profile) {
+    const p = profile || {};
+    const nameEl = document.getElementById('profile-displayName');
+    const ageEl = document.getElementById('profile-age');
+    if (nameEl) {
+      nameEl.value = p.displayName || (user && user.name) || '';
+    }
+    if (ageEl) {
+      ageEl.value = p.age != null && !isNaN(p.age) ? String(p.age) : '';
+    }
+    if (customGuideEl) customGuideEl.value = p.customGuide || '';
+    fillAvatarFields(p, user);
+  }
+
+  function showAccountView() {
+    if (onboardingEl) onboardingEl.hidden = true;
+    if (dashboardEl) dashboardEl.hidden = true;
+    if (accountEl) accountEl.hidden = false;
+    if (editBtn) editBtn.hidden = false;
+    if (cancelEditBtn) cancelEditBtn.hidden = true;
+  }
+
+  function showDashboardView() {
+    if (!IS_CULTIVO_PAGE) {
+      showAccountView();
+      return;
+    }
+    if (onboardingEl) onboardingEl.hidden = true;
+    if (dashboardEl) dashboardEl.hidden = false;
+    if (accountEl) accountEl.hidden = true;
+    if (editBtn) editBtn.hidden = false;
+    if (cancelEditBtn) cancelEditBtn.hidden = true;
+    if (!tabsInitialized) {
+      tabsInitialized = true;
+      initTabs();
+    }
+    if (formTitle) formTitle.textContent = 'Completar cadastro';
+    if (onboardingIntro) {
+      onboardingIntro.innerHTML = 'Informe seu nome e idade para aceder ao painel. Conteúdo exclusivo para <strong>maiores de 18 anos</strong>.';
+    }
+  }
+
+  function showOnboardingView(isEdit) {
+    if (onboardingEl) onboardingEl.hidden = false;
+    if (dashboardEl) dashboardEl.hidden = true;
+    if (editBtn) editBtn.hidden = true;
+    if (cancelEditBtn) cancelEditBtn.hidden = !isEdit;
+    if (formTitle) {
+      formTitle.textContent = isEdit ? 'Editar cadastro' : 'Completar cadastro';
+    }
+    if (onboardingIntro) {
+      onboardingIntro.innerHTML = isEdit
+        ? 'Altere seu nome, idade ou foto de perfil. O site é exclusivo para <strong>maiores de 18 anos</strong>.'
+        : 'Informe seu nome, idade e escolha uma foto para aceder ao painel. Conteúdo exclusivo para <strong>maiores de 18 anos</strong>.';
+    }
+    onboardingEl && onboardingEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function renderHub(profile) {
+    ensureGrowLogs(profile);
+    if (selectedWeek == null) {
+      selectedWeek = getCurrentWeekNumber(profile && profile.phaseStartedAt);
+    }
+    renderPhaseSelector(profile);
+    renderInicioSummary(profile);
+    renderQuickLinks();
+    renderPlanPreview(profile);
+    renderTimeline(profile);
+    renderWeekGuide(profile);
+    updateToolLinks(profile);
+    renderToolsGrid();
+    renderSiteLinks();
+    renderPlanTasks(profile);
+    renderGrowHub(profile);
+    fillForm(profile);
+
+    const diarioTab = document.getElementById('perfil-tab-diario');
+    if (diarioTab) {
+      diarioTab.classList.toggle('perfil-tab--accent', !!(profile.growLogs && profile.growLogs.length));
+    }
+  }
+
+  function renderTimeline(profile) {
+    if (!timelineEl || !profile) return;
+    const eff = getEffectivePhase(profile);
+    const weeks = getPhaseWeeks(eff);
+    if (!weeks.length) {
+      timelineEl.hidden = true;
+      return;
+    }
+    const current = getCurrentWeekNumber(profile.phaseStartedAt);
+    const active = getActiveWeek(profile);
+    const phaseLabel = formatProfileValue('phase', eff);
+    const since = profile.phaseStartedAt ? formatDate(profile.phaseStartedAt) : 'data não registada';
+
+    timelineEl.hidden = false;
+    if (timelineSub) {
+      timelineSub.textContent = phaseLabel + ' — semana ' + current + ' de ' + weeks.length + ' (desde ' + since + ').';
+    }
+
+    if (weekPills) {
+      weekPills.innerHTML = weeks.map((w) => {
+        const isCurrent = w.week === current;
+        const isActive = w.week === active;
+        return (
+          '<button type="button" class="perfil-week-pill' +
+          (isActive ? ' is-active' : '') +
+          (isCurrent ? ' is-current' : '') +
+          '" role="tab" aria-selected="' + (isActive ? 'true' : 'false') + '" data-week="' + w.week + '">' +
+          'S' + w.week +
+          (isCurrent ? '<span class="perfil-week-pill-now">agora</span>' : '') +
+          '</button>'
+        );
+      }).join('');
+
+      weekPills.querySelectorAll('.perfil-week-pill').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          stashWeekNotes();
+          selectedWeek = parseInt(btn.getAttribute('data-week'), 10);
+          renderWeekGuide(profile);
+          renderTimeline(profile);
+          renderInicioSummary(profile);
+        });
+      });
+    }
+  }
+
+  function renderWeekGuide(profile) {
+    if (!weekContentEl || !profile) return;
+    const weekNum = getActiveWeek(profile);
+    const guide = getWeekGuideData(profile, weekNum);
+    const notes = readGuideWeekNotesFromProfile(profile);
+    if (weekNotesEl) {
+      weekNotesEl.value = notes[String(weekNum)] || '';
+      weekNotesEl.dataset.weekKey = String(weekNum);
+    }
+
+    if (!guide) {
+      weekContentEl.innerHTML = '<p class="perfil-plano-empty">Sem roteiro para esta fase.</p>';
+      return;
+    }
+
+    const toolsHtml = (guide.tools || []).map((t) =>
+      '<li><a href="' + escapeHtml(t.href) + '">' + escapeHtml(t.label) + '</a></li>'
+    ).join('');
+
+    weekContentEl.innerHTML =
+      '<header class="perfil-week-content-head">' +
+      '<p class="perfil-week-label">Semana ' + guide.week + '</p>' +
+      '<h3>' + escapeHtml(guide.title) + '</h3>' +
+      '<p class="perfil-week-focus">' + escapeHtml(guide.focus) + '</p>' +
+      '</header>' +
+      '<ul class="info-list perfil-week-tasks">' +
+      (guide.tasks || []).map((t) => '<li>' + escapeHtml(t) + '</li>').join('') +
+      '</ul>' +
+      (toolsHtml ? '<p class="perfil-week-tools-title"><strong>Ferramentas:</strong></p><ul class="info-list">' + toolsHtml + '</ul>' : '');
+  }
+
+  function renderToolsGrid() {
+    renderPerfilNavAccordion(toolsGrid, window.__FERRAMENTAS_NAV__);
+  }
+
+  function renderSiteLinks() {
+    renderPerfilNavAccordion(siteLinks, window.__BIBLIOTECA_NAV__);
+  }
+
+  function defaultPlanTasks(profile) {
+    const phase = getEffectivePhase(profile);
+    const list = PHASE_PLAN_DEFAULTS[phase] || PHASE_PLAN_DEFAULTS.planejamento || [];
+    return list.map((t, i) => ({
+      id: 'd' + phase + i,
+      label: t.label,
+      done: false,
+      toolHref: t.href || ''
+    }));
+  }
+
+  function ensurePlanTasks(profile) {
+    if (!profile) return [];
+    if (Array.isArray(profile.planTasks) && profile.planTasks.length) {
+      return profile.planTasks.slice();
+    }
+    return defaultPlanTasks(profile);
+  }
+
+  function renderPlanTasks(profile) {
+    if (!planoList) return;
+    const tasks = sortPlanTasks(ensurePlanTasks(profile));
+    if (user && user.profile) user.profile.planTasks = tasks;
+
+    if (!tasks.length) {
+      planoList.innerHTML = '<li class="perfil-plano-empty">Adicione tarefas ou altere a fase no diário activo para sugestões automáticas.</li>';
+      return;
+    }
+
+    planoList.innerHTML = tasks.map((task) => {
+      const toolLink = task.toolHref
+        ? ' <a class="perfil-plano-tool" href="' + escapeHtml(task.toolHref) + '">Abrir ferramenta</a>'
+        : '';
+      const dueHtml = task.dueAt
+        ? '<span class="perfil-plano-due' + (isTaskOverdue(task) ? ' is-overdue' : '') + '">' + escapeHtml(formatTaskDueLabel(task)) + '</span>'
+        : '';
+      return (
+        '<li class="perfil-plano-item' + (task.done ? ' is-done' : '') + (isTaskOverdue(task) ? ' is-overdue' : '') + '" data-task-id="' + escapeHtml(task.id) + '">' +
+        '<label class="perfil-plano-check">' +
+        '<input type="checkbox"' + (task.done ? ' checked' : '') + ' aria-label="' + escapeHtml(task.label) + '">' +
+        '<span>' + escapeHtml(task.label) + dueHtml + '</span></label>' +
+        toolLink +
+        '<button type="button" class="perfil-plano-remove" aria-label="Remover tarefa">×</button>' +
+        '</li>'
+      );
+    }).join('');
+
+    planoList.querySelectorAll('input[type="checkbox"]').forEach((input) => {
+      input.addEventListener('change', onPlanTaskToggle);
+    });
+    planoList.querySelectorAll('.perfil-plano-remove').forEach((btn) => {
+      btn.addEventListener('click', onPlanTaskRemove);
+    });
+    renderPlanPreview(profile);
+    renderInicioSummary(profile);
+  }
+
+  async function saveCultivoPayload(payload, statusEl) {
+    if (profileSaving) return null;
+    profileSaving = true;
+    if (statusEl) setStatus(statusEl, 'A guardar…');
+    try {
+      const res = await fetch('/api/cultivo', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify(payload)
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        if (statusEl) setStatus(statusEl, data.error || 'Erro ao guardar.', true);
+        flashLiveStatus(data.error || 'Erro ao guardar.', true);
+        return null;
+      }
+      if (data.cultivo && user) {
+        if (!user.profile) user.profile = {};
+        applyCultivoState(user.profile, mergeProfileFromPayload(
+          applyCultivoState(user.profile, data.cultivo),
+          payload
+        ));
+      }
+      if (data.user) user = Object.assign({}, user, data.user);
+      if (user && user.profile) ensureGrowLogs(user.profile);
+      updateUserHeader(user);
+      fillForm(user.profile);
+      refreshUI();
+      broadcastProfilePicture(user);
+      if (statusEl) setStatus(statusEl, 'Guardado.');
+      return user;
+    } catch (err) {
+      if (statusEl) setStatus(statusEl, 'Servidor indisponível.', true);
+      flashLiveStatus('Servidor indisponível — os dados ficaram na tela; tente guardar de novo.', true);
+      return null;
+    } finally {
+      profileSaving = false;
+    }
+  }
+
+  async function saveProfilePayload(payload, statusEl) {
+    if (IS_CULTIVO_PAGE) return saveCultivoPayload(payload, statusEl);
+    if (profileSaving) return null;
+    profileSaving = true;
+    if (statusEl) setStatus(statusEl, 'A guardar…');
+    try {
+      const accountPayload = {
+        displayName: payload.displayName,
+        age: payload.age,
+        avatarUrl: payload.avatarUrl
+      };
+      const res = await fetch('/api/user/profile', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify(accountPayload)
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        if (statusEl) setStatus(statusEl, data.error || 'Erro ao guardar.', true);
+        flashLiveStatus(data.error || 'Erro ao guardar.', true);
+        return null;
+      }
+      if (data.user && data.user.profile) {
+        const merged = Object.assign({}, data.user.profile);
+        if (payload.displayName !== undefined) merged.displayName = payload.displayName;
+        if (payload.age !== undefined) merged.age = payload.age;
+        if (payload.avatarUrl !== undefined) merged.avatarUrl = payload.avatarUrl;
+        data.user.profile = merged;
+      }
+      user = data.user;
+      if (user && user.profile) ensureGrowLogs(user.profile);
+      updateUserHeader(user);
+      fillForm(user.profile);
+      broadcastProfilePicture(user);
+      if (statusEl) setStatus(statusEl, 'Guardado.');
+      return user;
+    } catch (err) {
+      if (statusEl) setStatus(statusEl, 'Servidor indisponível.', true);
+      flashLiveStatus('Servidor indisponível — os dados ficaram na tela; tente guardar de novo.', true);
+      return null;
+    } finally {
+      profileSaving = false;
+    }
+  }
+
+  async function persistGrowLogs(statusEl, uiOptions) {
+    if (!user || !user.profile) return null;
+    syncPhaseFromActiveLog(user.profile);
+    if (uiOptions) refreshUI(uiOptions);
+    return saveProfilePayload(readForm(), statusEl);
+  }
+
+  async function persistPlanTasks(statusEl) {
+    if (planSaving || !user || !user.profile) return;
+    planSaving = true;
+    const payload = readForm();
+    await saveProfilePayload(payload, statusEl);
+    planSaving = false;
+  }
+
+  function onPlanTaskToggle(event) {
+    const li = event.target.closest('.perfil-plano-item');
+    if (!li || !user || !user.profile) return;
+    const id = li.getAttribute('data-task-id');
+    const tasks = ensurePlanTasks(user.profile);
+    const task = tasks.find((t) => t.id === id);
+    if (task) {
+      const wasDone = task.done;
+      task.done = event.target.checked;
+      li.classList.toggle('is-done', task.done);
+      if (task.done && !wasDone && task.dueAt && (task.actionType === 'rega' || task.actionType === 'adubo')) {
+        logReminderToDiary(task, user.profile);
+        flashLiveStatus('Lembrete concluído e registado no diário.');
+      } else {
+        flashLiveStatus(task.done ? 'Tarefa concluída.' : 'Tarefa reaberta.');
+      }
+      user.profile.planTasks = tasks;
+      renderPlanPreview(user.profile);
+      renderInicioSummary(user.profile);
+      persistPlanTasks(planoStatus);
+      if (task.done && !wasDone && task.dueAt && (task.actionType === 'rega' || task.actionType === 'adubo')) {
+        persistGrowLogs(growDetailStatus);
+      }
+    }
+  }
+
+  function onPlanTaskRemove(event) {
+    const li = event.target.closest('.perfil-plano-item');
+    if (!li || !user || !user.profile) return;
+    const id = li.getAttribute('data-task-id');
+    user.profile.planTasks = ensurePlanTasks(user.profile).filter((t) => t.id !== id);
+    renderPlanTasks(user.profile);
+    persistPlanTasks(planoStatus);
+  }
+
+  function addPlanTask(label, opts) {
+    const options = opts || {};
+    const trimmed = String(label || '').trim();
+    if (!trimmed || !user || !user.profile) return;
+    const tasks = ensurePlanTasks(user.profile);
+    const activeLog = getActiveGrowLog(user.profile);
+    tasks.push({
+      id: 'u' + Date.now(),
+      label: trimmed,
+      done: false,
+      toolHref: options.toolHref || '',
+      dueAt: options.dueAt || '',
+      actionType: options.actionType || '',
+      growId: options.growId || (activeLog ? activeLog.id : '')
+    });
+    user.profile.planTasks = tasks;
+    renderPlanTasks(user.profile);
+    flashLiveStatus(options.dueAt ? 'Lembrete agendado.' : 'Tarefa adicionada ao plano.');
+    persistPlanTasks(planoStatus);
+  }
+
+  function addPlanReminder(event) {
+    if (event) event.preventDefault();
+    if (!user || !user.profile) return;
+    const actionType = reminderActionEl ? reminderActionEl.value : '';
+    const dueAt = reminderDateEl ? reminderDateEl.value : '';
+    if (!dueAt) {
+      flashLiveStatus('Escolha a data do lembrete.', true);
+      return;
+    }
+    const label = buildReminderLabel(actionType, reminderLabelEl ? reminderLabelEl.value : '');
+    addPlanTask(label, { dueAt: dueAt, actionType: actionType });
+    if (reminderLabelEl) reminderLabelEl.value = '';
+    if (reminderDateEl) reminderDateEl.value = todayDateInputValue();
+  }
+
+  async function seedDefaultPlanIfEmpty(profile) {
+    if (!profile || (Array.isArray(profile.planTasks) && profile.planTasks.length)) return;
+    const tasks = defaultPlanTasks(profile);
+    if (!tasks.length) return;
+    profile.planTasks = tasks;
+    if (user && user.profile) user.profile.planTasks = tasks;
+    renderPlanTasks(profile);
+    await saveProfilePayload(readForm(), null);
+  }
+
+  function updateToolLinks(profile) {
+    if (!toolLinks) return;
+    const substrate = profile && profile.substrate;
+    const phase = getEffectivePhase(profile);
+    const base = TOOL_SUGGESTIONS[substrate] || TOOL_SUGGESTIONS.default;
+    const phaseTools = PHASE_TOOLS[phase] || PHASE_TOOLS.default;
+    const merged = [];
+    const seen = new Set();
+
+    base.concat(phaseTools).forEach((item) => {
+      if (seen.has(item.href)) return;
+      seen.add(item.href);
+      merged.push(item);
+    });
+
+    if (profile && profile.environment === 'indoor') {
+      merged.push({ label: 'Custo de energia', href: '/calculadoras/energia.html' });
+      merged.push({ label: 'Watts por m²', href: '/calculadoras/watts-m2.html' });
+    }
+
+    toolLinks.innerHTML = merged.map((item) =>
+      '<li><a href="' + item.href + '">' + item.label + '</a></li>'
+    ).join('');
+  }
+
+  function renderUser(data) {
+    user = data;
+    if (user && user.profile) ensureGrowLogs(user.profile);
+    updateUserHeader(data);
+    fillForm(data.profile);
+    broadcastProfilePicture(data);
+    if (isProfileComplete(data.profile) && IS_CULTIVO_PAGE) {
+      renderHub(data.profile);
+    }
+  }
+
+  async function loadUser() {
+    try {
+      const res = await fetch('/api/user/me', { credentials: 'include' });
+      if (res.status === 401) {
+        window.location.href = '/entrar.html?returnTo=' + encodeURIComponent(PAGE_SELF);
+        return;
+      }
+      if (!res.ok) throw new Error('load_failed');
+      const data = await res.json();
+      if (loadingEl) loadingEl.hidden = true;
+      if (appEl) appEl.hidden = false;
+      renderUser(data);
+
+      if (IS_CULTIVO_PAGE && !isProfileComplete(data.profile)) {
+        window.location.href = '/perfil.html?returnTo=' + encodeURIComponent('/cultivo/');
+        return;
+      }
+
+      if (IS_CULTIVO_PAGE && isProfileComplete(data.profile)) {
+        await loadCultivoIntoProfile();
+        showDashboardView();
+        const hadNoGrowLogs = !(user.profile.growLogs && user.profile.growLogs.length);
+        ensureGrowLogs(user.profile);
+        if (hadNoGrowLogs && user.profile.growLogs && user.profile.growLogs.length) {
+          await saveProfilePayload(readForm(), null);
+        }
+        if (!user.profile.phase) {
+          const bootstrap = Object.assign({}, readForm(), { phase: 'planejamento' });
+          const saved = await saveProfilePayload(bootstrap, null);
+          if (saved) data = saved;
+        }
+        initCultivoOnboardingUI();
+        renderHub(data.profile);
+        if (shouldShowCultivoOnboarding(data.profile)) {
+          showCultivoOnboarding(1);
+          return;
+        }
+        await seedDefaultPlanIfEmpty(data.profile);
+        const params = new URLSearchParams(window.location.search);
+        const tab = params.get('tab');
+        if (tab && document.getElementById('perfil-panel-' + tab)) {
+          if (tab === 'diario' && user.profile.growLogs && user.profile.growLogs.length) {
+            const active = getActiveGrowLog(user.profile);
+            if (active) {
+              selectedGrowLogId = active.id;
+              showGrowDetail(active.id, user.profile);
+            }
+          }
+          switchTab(tab);
+        }
+        if (params.get('saved') === '1') {
+          flashLiveStatus('Resultado da calculadora guardado no diário.');
+        }
+        return;
+      }
+
+      if (isProfileComplete(data.profile)) {
+        const params = new URLSearchParams(window.location.search);
+        const returnTo = params.get('returnTo');
+        if (returnTo && returnTo.startsWith('/')) {
+          window.location.href = returnTo;
+          return;
+        }
+        showAccountView();
+      } else {
+        showOnboardingView(false);
+      }
+    } catch (e) {
+      if (loadingEl) {
+        loadingEl.textContent = IS_CULTIVO_PAGE
+          ? 'Não foi possível carregar o cultivo. Recarregue a página.'
+          : 'Não foi possível carregar o perfil. Recarregue a página.';
+      }
+    }
+  }
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const validationError = validateRegistrationForm();
+      if (validationError) {
+        setStatus(formStatus, validationError, true);
+        return;
+      }
+      if (avatarUploadPending) {
+        setStatus(formStatus, 'Aguarde o envio da foto terminar.', true);
+        return;
+      }
+      setStatus(formStatus, 'A guardar…');
+      const saveBtn = document.getElementById('perfil-save-btn');
+      if (saveBtn) saveBtn.disabled = true;
+
+      try {
+        const formData = readForm();
+        const wasComplete = user && user.profile && isProfileComplete(user.profile);
+        const saved = await saveProfilePayload(formData, formStatus);
+        if (!saved) return;
+
+        if (!wasComplete && isProfileComplete(saved.profile)) {
+          const params = new URLSearchParams(window.location.search);
+          const returnTo = params.get('returnTo');
+          if (returnTo && returnTo.startsWith('/')) {
+            window.location.href = returnTo;
+            return;
+          }
+          setStatus(formStatus, 'Conta activa!');
+          showAccountView();
+          setStatus(formStatus, 'Perfil guardado — bem-vindo.');
+        } else {
+          showAccountView();
+          setStatus(formStatus, 'Perfil actualizado.');
+          if (cancelEditBtn && !cancelEditBtn.hidden) {
+            setTimeout(() => setStatus(formStatus, ''), 2500);
+          }
+        }
+      } catch (err) {
+        setStatus(formStatus, 'Servidor indisponível.', true);
+      } finally {
+        if (saveBtn) saveBtn.disabled = false;
+      }
+    });
+  }
+
+  if (editBtn) {
+    editBtn.addEventListener('click', () => {
+      fillForm(user && user.profile);
+      showOnboardingView(true);
+      const picker = document.querySelector('.perfil-avatar-picker');
+      if (picker) picker.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  const avatarEditTrigger = document.getElementById('perfil-avatar-edit-btn');
+  if (avatarEditTrigger) {
+    avatarEditTrigger.addEventListener('click', () => {
+      fillForm(user && user.profile);
+      showOnboardingView(true);
+      const picker = document.querySelector('.perfil-avatar-picker');
+      if (picker) picker.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  if (accountEditBtn) {
+    accountEditBtn.addEventListener('click', () => {
+      fillForm(user && user.profile);
+      showOnboardingView(true);
+      const picker = document.querySelector('.perfil-avatar-picker');
+      if (picker) picker.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  if (cancelEditBtn) {
+    cancelEditBtn.addEventListener('click', () => {
+      if (IS_CULTIVO_PAGE) showDashboardView();
+      else showAccountView();
+      setStatus(formStatus, '');
+    });
+  }
+
+  if (planoAddForm) {
+    planoAddForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!planoInput) return;
+      addPlanTask(planoInput.value);
+      planoInput.value = '';
+    });
+  }
+
+  if (growNewForm) {
+    growNewForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!user || !user.profile) return;
+      const name = growNameEl ? growNameEl.value.trim() : '';
+      if (!name) {
+        setStatus(growListStatus, 'Informe o nome da semente ou planta.', true);
+        return;
+      }
+      const plantedRaw = growPlantedEl ? growPlantedEl.value : todayDateInputValue();
+      const phase = growPhaseEl ? growPhaseEl.value : 'germinacao';
+      const log = createGrowLogObject(name, plantedRaw + 'T12:00:00', phase);
+      ensureGrowLogs(user.profile);
+      user.profile.growLogs.unshift(log);
+      user.profile.activeGrowLogId = log.id;
+      syncPhaseFromActiveLog(user.profile);
+      selectedWeek = getCurrentWeekNumber(user.profile.phaseStartedAt);
+      selectedGrowLogId = log.id;
+
+      if (growNameEl) growNameEl.value = '';
+      if (growPlantedEl) growPlantedEl.value = todayDateInputValue();
+
+      flashLiveStatus('Diário «' + log.name + '» criado.');
+      markCultivoOnboardingDone();
+      refreshUI({ tab: 'diario', scrollTo: 'perfil-grow-entry-form' });
+      await persistGrowLogs(growDetailStatus);
+    });
+  }
+
+  if (growBackBtn) {
+    growBackBtn.addEventListener('click', () => {
+      showGrowListView();
+      if (user && user.profile) renderGrowList(user.profile);
+    });
+  }
+
+  if (growSetActiveBtn) {
+    growSetActiveBtn.addEventListener('click', async () => {
+      if (!user || !user.profile || !selectedGrowLogId) return;
+      user.profile.activeGrowLogId = selectedGrowLogId;
+      syncPhaseFromActiveLog(user.profile);
+      selectedWeek = getCurrentWeekNumber(user.profile.phaseStartedAt);
+      flashLiveStatus('Este cultivo alimenta o roteiro.');
+      refreshUI();
+      showGrowDetail(selectedGrowLogId, user.profile);
+      await persistGrowLogs(growDetailStatus);
+    });
+  }
+
+  if (growDetailPhase) {
+    growDetailPhase.addEventListener('change', async () => {
+      if (!user || !user.profile || !selectedGrowLogId) return;
+      const log = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
+      if (!log) return;
+      log.phase = growDetailPhase.value;
+      if (user.profile.activeGrowLogId === log.id) {
+        syncPhaseFromActiveLog(user.profile);
+        selectedWeek = getCurrentWeekNumber(user.profile.phaseStartedAt);
+      }
+      flashLiveStatus('Fase actualizada.');
+      refreshUI();
+      showGrowDetail(selectedGrowLogId, user.profile);
+      await persistGrowLogs(growDetailStatus);
+    });
+  }
+
+  if (growEntryForm) {
+    growEntryForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!user || !user.profile || !selectedGrowLogId) return;
+      const metrics = readEntryMetricsFromForm();
+      let text = growEntryText ? growEntryText.value.trim() : '';
+      if (!text) {
+        text = buildDefaultEntryText(selectedEntryAction, metrics);
+      }
+      if (!text && !Object.keys(metrics).length && !pendingEntryPhotoFiles.length) {
+        setStatus(growDetailStatus, 'Escolha o tipo ou preencha uma observação.', true);
+        return;
+      }
+      const log = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
+      if (!log) return;
+      setStatus(growDetailStatus, pendingEntryPhotoFiles.length ? 'A enviar fotos…' : 'A guardar…');
+      let photos = [];
+      try {
+        if (pendingEntryPhotoFiles.length) {
+          photos = await uploadPendingEntryPhotos();
+        }
+      } catch (err) {
+        setStatus(growDetailStatus, err.message || 'Erro ao enviar fotos.', true);
+        return;
+      }
+      const entry = createGrowEntry(text, {
+        date: growEntryDate ? growEntryDate.value : todayDateInputValue(),
+        actionType: selectedEntryAction,
+        metrics: metrics,
+        photos: photos
+      });
+      const result = appendEntryToGrowLog(log, entry);
+      if (!result.ok) {
+        setStatus(growDetailStatus, result.error, true);
+        return;
+      }
+      clearEntryForm();
+      flashLiveStatus('Registo guardado.');
+      showGrowDetail(selectedGrowLogId, user.profile);
+      refreshUI();
+      await persistGrowLogs(growDetailStatus);
+    });
+  }
+
+  if (growEntryPhotos) {
+    growEntryPhotos.addEventListener('change', readEntryPhotoFilesFromInput);
+  }
+
+  if (growExportCsvBtn) {
+    growExportCsvBtn.addEventListener('click', () => {
+      if (!user || !user.profile || !selectedGrowLogId) return;
+      const log = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
+      if (log) exportGrowCsv(log);
+      else exportAllGrowsCsv(user.profile);
+    });
+  }
+
+  if (growPrintBtn) {
+    growPrintBtn.addEventListener('click', printGrowDetail);
+  }
+
+  if (reminderAddForm) {
+    reminderAddForm.addEventListener('submit', addPlanReminder);
+  }
+
+  if (reminderDateEl && !reminderDateEl.value) {
+    reminderDateEl.value = todayDateInputValue();
+  }
+
+  if (guiaSaveBtn) {
+    guiaSaveBtn.addEventListener('click', async () => {
+      await saveProfilePayload(readForm(), guiaStatus);
+    });
+  }
+
+  if (guiaTemplateBtn) {
+    guiaTemplateBtn.addEventListener('click', () => {
+      if (!customGuideEl || !user || !user.profile) return;
+      const phase = getEffectivePhase(user.profile);
+      const weeks = getPhaseWeeks(phase);
+      const lines = weeks.map((w) =>
+        'Semana ' + w.week + ' — ' + w.title + '\n' + w.focus + '\n• ' + (w.tasks || []).join('\n• ')
+      );
+      const template = 'Roteiro — ' + formatProfileValue('phase', phase) + '\n\n' + lines.join('\n\n');
+      if (customGuideEl.value.trim() && !window.confirm('Substituir o guia geral pelo roteiro base da fase?')) {
+        return;
+      }
+      customGuideEl.value = template;
+      setStatus(guiaStatus, 'Roteiro base inserido — clique em Guardar guia geral.');
+    });
+  }
+
+  if (weekNotesSaveBtn) {
+    weekNotesSaveBtn.addEventListener('click', async () => {
+      if (!user || !user.profile || !weekNotesEl) return;
+      const noteText = weekNotesEl.value.trim();
+      if (!noteText) {
+        setStatus(guiaStatus, 'Escreva uma observação antes de guardar.', true);
+        return;
+      }
+
+      const defaultName = (user.profile.genetics && String(user.profile.genetics).trim()) || 'Meu cultivo';
+      const log = ensureActiveGrowLog(user.profile, defaultName);
+      const entry = buildWeekNoteEntry(noteText, user.profile);
+      const result = appendEntryToGrowLog(log, entry);
+      if (!result.ok) {
+        setStatus(guiaStatus, result.error, true);
+        return;
+      }
+
+      weekNotesEl.value = '';
+      const weekKey = String(getActiveWeek(user.profile));
+      if (user.profile.guideWeekNotes) delete user.profile.guideWeekNotes[weekKey];
+      weekNotesEl.dataset.weekKey = weekKey;
+
+      selectedGrowLogId = log.id;
+      flashLiveStatus('Nota guardada em «' + log.name + '».');
+      refreshUI({ tab: 'diario', scrollTo: 'perfil-grow-entries' });
+      setStatus(guiaStatus, 'Guardado no diário.');
+      await saveProfilePayload(readForm(), guiaStatus);
+    });
+  }
+
+  if (phaseResetBtn) {
+    phaseResetBtn.addEventListener('click', async () => {
+      if (!user || !user.profile) return;
+      if (!window.confirm('Reiniciar a contagem de semanas desta fase a partir de hoje?')) return;
+      selectedWeek = 1;
+      const now = new Date().toISOString();
+      const log = getActiveGrowLog(user.profile);
+      if (log) log.plantedAt = now;
+      syncPhaseFromActiveLog(user.profile);
+      flashLiveStatus('Semanas reiniciadas a partir de hoje.');
+      refreshUI({ tab: 'semana' });
+      const payload = Object.assign({}, readForm(), { phaseStartedAt: now });
+      await saveProfilePayload(payload, null);
+    });
+  }
+
+  if (logoutBtn) {
+    logoutBtn.addEventListener('click', async () => {
+      try {
+        await fetch('/api/user/logout', { method: 'POST', credentials: 'include' });
+      } catch (e) { /* ignore */ }
+      window.location.href = '/entrar.html';
+    });
+  }
+
+  await   initAvatarPicker();
+  loadUser();
+});

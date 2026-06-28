@@ -1,19 +1,75 @@
 {
+
   "name": "inspetor-budganja",
+
   "version": "1.0.0",
+
   "description": "Site estático do Inspetor BudGanja — servidor estático local com headers de segurança e cache.",
-  "main": "_server.js",
+
+  "main": "server/index.js",
+
   "scripts": {
-    "start": "node _server.js",
-    "start:dev": "node _server.js",
-    "build": "node _build.js"
+
+    "start": "node server/index.js",
+
+    "start:dev": "node server/index.js",
+
+    "build": "node scripts/build.js",
+
+    "build:posts": "node scripts/regenerate-posts.js",
+
+    "sync:pages": "node scripts/sync-pages-from-html.js",
+
+    "build:guia": "node scripts/build-guia-cultivo.js",
+
+    "build:youtube": "node scripts/build-youtube-feed.js",
+
+    "build:jardimhg": "node scripts/build-jardimhg-catalog.js",
+
+    "build:search": "node scripts/build-search-index.js",
+
+    "build:sitemap": "node scripts/build-sitemap.js",
+
+    "build:assetlinks": "node scripts/build-assetlinks.js",
+
+    "test:site": "node scripts/test-site.js",
+    "test:lib": "node scripts/test-lib-unit.js",
+    "check:assetlinks": "node scripts/check-assetlinks.js",
+
+    "db:migrate": "node scripts/db-migrate.js",
+
+    "db:cleanup": "node scripts/db-cleanup-test-artifacts.js",
+
+    "db:backup": "node scripts/db-backup.js",
+    "db:backup:external": "node scripts/db-backup-external.js",
+
+    "test:db": "node scripts/test-db-persistence.js",
+
+    "verify": "node scripts/verify.js",
+
+    "db:backup:schedule": "node scripts/db-backup-schedule.js"
+
   },
+
   "dependencies": {
-    "@netlify/blobs": "^8.1.0"
+
+    "@libsql/client": "^0.15.15",
+
+    "@netlify/blobs": "^8.1.0",
+
+    "sharp": "^0.35.2"
+
   },
+
   "author": "",
+
   "license": "MIT",
+
   "engines": {
+
     "node": ">=14"
+
   }
+
 }
+

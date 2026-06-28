@@ -1,0 +1,7 @@
+{
+  "_comment": "Adicione o SHA-256 do certificado de assinatura do app Android. Obtenha com: deploy\\android\\get-signing-fingerprint.ps1",
+  "packageName": "com.inspetorbudganja.app",
+  "sha256CertFingerprints": [],
+  "_status": "PENDENTE — execute deploy\\android\\get-signing-fingerprint.ps1 após init-twa.ps1",
+  "_verify": "npm run check:assetlinks"
+}

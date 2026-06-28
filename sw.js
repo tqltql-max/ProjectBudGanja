@@ -1,42 +1,179 @@
 // Service Worker para PWA - Inspetor BudGanja
-const CACHE_NAME = 'budganja-v6';
+const APP_VERSION = '190';
+const CACHE_NAME = 'budganja-v' + APP_VERSION;
 const urlsToCache = [
     '/',
     '/index.html',
-    '/inspecoes.html',
-    '/pesquisas.html',
-    '/equipamentos.html',
-    '/calculadoras.html',
-    '/sobre.html',
-    '/luximetro.html',
-    '/contato.html',
-    '/manual-clonadora.html',
-    '/manual-hidrocloradora.html',
-    '/pesquisa-substratos.html',
-    '/style.css',
-    '/luximetro.css',
-    '/js/layout.js',
+    '/biblioteca/pesquisas/',
+    '/biblioteca/inspecoes/',
+    '/equipamentos/',
+    '/loja/',
+    '/loja/encomenda.html',
+    '/calculadoras/',
+    '/calculadoras/luximetro.html',
+    '/calculadoras/vpd.html',
+    '/calculadoras/dli.html',
+    '/calculadoras/super-solo.html',
+    '/calculadoras/volume-vaso.html',
+    '/calculadoras/ec.html',
+    '/calculadoras/diluicao.html',
+    '/calculadoras/ph.html',
+    '/calculadoras/energia.html',
+    '/calculadoras/watts-m2.html',
+    '/guia/cultivo-basico.html',
+    '/info/sobre.html',
+    '/info/contato.html',
+    '/info/privacidade.html',
+    '/sorteios/',
+    '/cultivo/',
+    '/videos/',
+    '/robots.txt',
+    '/sitemap.xml',
+    '/search-index.json',
+    '/equipamentos/clonadora-6-estacas.html',
+    '/equipamentos/clonadora-12-estacas.html',
+    '/equipamentos/manual-clonadora.html',
+    '/equipamentos/manual-hidrocloradora.html',
+    '/biblioteca/pesquisas/substratos.html',
     '/js/posts.js',
-    '/js/calculadoras.js',
+    '/js/calculadoras/vpd.js',
+    '/js/calculadoras/dli.js',
+    '/js/calculadoras/super-solo.js',
+    '/js/calculadoras/volume-vaso.js',
+    '/js/calculadoras/ec.js',
+    '/js/calculadoras/diluicao.js',
+    '/js/calculadoras/ph.js',
+    '/js/calculadoras/energia.js',
+    '/js/calculadoras/watts-m2.js',
     '/js/luximetro.js',
     '/js/youtube.js',
+    '/js/sorteios.js',
+    '/js/videos.js',
+    '/js/guia-cultivo.js',
+    '/content/guia-cultivo.json',
+    '/content/youtube-feed.json',
+    '/content/sorteio.json',
+    '/content/loja.json',
+    '/js/loja.js',
+    '/js/loja-data.js',
+    '/js/loja-order-ui.js',
+    '/js/loja-order-callout.js',
+    '/js/equip-loja-materials.js',
+    '/js/loja-encomenda.js',
+    '/js/i18n-data.js',
+    '/js/i18n.js',
     '/posts-public.json',
     '/manifest.json',
-    '/favicon.svg'
+    '/favicon.svg',
+    '/imagens/icon-192.png',
+    '/imagens/icon-512.png',
+    '/imagens/icon-512-maskable.png',
+    '/imagens/apple-touch-icon.png',
+    '/imagens/favicon-32.png',
+    '/imagens/favicon-16.png'
 ];
 
-self.addEventListener('install', event => {
-    event.waitUntil(
-        caches.open(CACHE_NAME)
-            .then(cache => cache.addAll(urlsToCache))
-    );
+self.addEventListener('message', (event) => {
+    if (event.data && event.data.type === 'SKIP_WAITING') {
+        self.skipWaiting();
+    }
 });
 
-self.addEventListener('fetch', event => {
+self.addEventListener('install', (event) => {
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+            .then((cache) => cache.addAll(urlsToCache).catch(() => {}))
+    );
+    self.skipWaiting();
+});
+
+self.addEventListener('activate', (event) => {
+    event.waitUntil(
+        caches.keys().then((keys) =>
+            Promise.all(keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k)))
+        )
+    );
+    self.clients.claim();
+});
+
+function networkFirstWithCache(request) {
+    return fetch(request)
+        .then((response) => {
+            if (response && response.ok) {
+                const copy = response.clone();
+                caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+            }
+            return response;
+        })
+        .catch(() => caches.match(request));
+}
+
+self.addEventListener('fetch', (event) => {
     if (event.request.url.includes('/api/')) return;
 
-    const path = new URL(event.request.url).pathname;
-    if (path.endsWith('/pesquisas.html') || path.endsWith('/pesquisas.html/')) {
+    const url = new URL(event.request.url);
+    const path = url.pathname;
+
+    if (path === '/version.json' || path === '/sw.js' || path.indexOf('/sw.js') === 0) {
+        event.respondWith(fetch(event.request, { cache: 'no-store' }));
+        return;
+    }
+
+    if (path.startsWith('/js/') || path.startsWith('/css/')) {
+        event.respondWith(
+            fetch(event.request, { cache: 'no-store' })
+                .then((response) => {
+                    if (response && response.ok) {
+                        const copy = response.clone();
+                        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+                    }
+                    return response;
+                })
+                .catch(() => caches.match(event.request))
+        );
+        return;
+    }
+
+    const isHtml = path.endsWith('.html') || path === '/' || path.endsWith('/');
+    const offlineFirst = [
+        '/calculadoras/',
+        '/calculadoras/luximetro.html',
+        '/guia/cultivo-basico.html',
+        '/search-index.json',
+        '/content/guia-cultivo.json',
+        '/content/youtube-feed.json'
+    ];
+
+    if (offlineFirst.some((p) => path === p || path.endsWith(p))) {
+        event.respondWith(
+            caches.match(event.request).then((cached) => cached || fetch(event.request))
+        );
+        return;
+    }
+
+    if (isHtml) {
+        event.respondWith(
+            fetch(event.request, { cache: 'no-store' })
+                .then((response) => {
+                    if (response && response.ok) {
+                        const copy = response.clone();
+                        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+                    }
+                    return response;
+                })
+                .catch(() => caches.match(event.request))
+        );
+        return;
+    }
+
+    if (path.startsWith('/biblioteca/pesquisas') || path.startsWith('/biblioteca/inspecoes')) {
+        event.respondWith(
+            fetch(event.request).catch(() => caches.match(event.request))
+        );
+        return;
+    }
+
+    if (path.startsWith('/content/') && path.endsWith('.json')) {
         event.respondWith(
             fetch(event.request).catch(() => caches.match(event.request))
         );
@@ -45,18 +182,6 @@ self.addEventListener('fetch', event => {
 
     event.respondWith(
         caches.match(event.request)
-            .then(response => response || fetch(event.request))
-    );
-});
-
-self.addEventListener('activate', event => {
-    event.waitUntil(
-        caches.keys().then(cacheNames =>
-            Promise.all(
-                cacheNames
-                    .filter(name => name !== CACHE_NAME)
-                    .map(name => caches.delete(name))
-            )
-        )
+            .then((response) => response || fetch(event.request))
     );
 });

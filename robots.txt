@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin.html
+Disallow: /login.html
+Disallow: /sorteios-admin.html
+Disallow: /api/
+Disallow: /content/
+Disallow: /.env
+
+Sitemap: https://inspetorbudganja.com.br/sitemap.xml

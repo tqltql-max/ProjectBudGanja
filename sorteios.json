@@ -1,0 +1,17 @@
+[
+  {
+    "id": "mqvkqp8romitqm",
+    "userId": "",
+    "nome": "Teste Sorteio",
+    "email": "teste.sorteio@example.com",
+    "cpf": "",
+    "cpfFormatado": "",
+    "telefone": "11999998888",
+    "cidade": "Sao Paulo",
+    "estado": "SP",
+    "instagram": "inspetor",
+    "premioId": "",
+    "premio": "",
+    "createdAt": "2026-06-26T23:40:40.395Z"
+  }
+]

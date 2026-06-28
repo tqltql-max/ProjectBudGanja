@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre com a sua conta Google para criar o perfil de cultivo e aceder ao painel.">
+    <meta property="og:title" content="Entrar | Inspetor BudGanja">
+    <meta property="og:description" content="Entre com a sua conta Google para criar o perfil de cultivo e aceder ao painel.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/imagens/icon-512.png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/imagens/favicon-32.png?v=190" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=190" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=190">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3d5c28">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
+    <link rel="stylesheet" href="/css/style.css?v=190">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Entrar | Inspetor BudGanja</title>
+</head>
+<body data-page="entrar">
+    <div id="site-header"></div>
+
+    <main id="main-content" class="conteudo-interno login-page entrar-page">
+    <div class="login-box entrar-box">
+      <h1>Criar conta no site</h1>
+      <p class="login-subtitle">Um clique com Google — depois confirme nome e idade (18+). Conteúdo exclusivo para maiores de idade.</p>
+
+      <div id="entrar-error" class="login-error" role="alert" hidden></div>
+      <div id="entrar-notice" class="login-notice" hidden></div>
+
+      <div class="entrar-actions">
+        <a id="entrar-redirect-btn" class="botao botao-google entrar-google-btn" href="/api/auth/google/start" hidden>
+          <span class="botao-google-icon" aria-hidden="true">G</span>
+          Continuar com Google
+        </a>
+        <div id="google-signin-btn" class="login-google-section" aria-live="polite" hidden></div>
+      </div>
+
+      <p class="entrar-legal">Ao entrar, confirma ter 18 anos ou mais e aceita o tratamento dos dados conforme a <a href="/info/privacidade.html">política de privacidade</a>.</p>
+      <p class="entrar-admin-link"><a href="/">← Voltar ao site</a> · <a href="/login.html">Área admin</a></p>
+    </div>
+  </main>
+
+    <div id="site-footer"></div>
+  <script src="/js/app-version-check.js?v=190"></script>
+    <script src="/js/i18n-data.js?v=190"></script>
+    <script src="/js/i18n.js?v=190"></script>
+    <script src="/js/ferramentas-nav-data.js?v=190"></script>
+    <script src="/js/layout.js?v=190"></script>
+    <script src="/js/site-features.js?v=190"></script>
+  <script src="/js/entrar.js?v=190"></script>
+
+</body>
+</html>

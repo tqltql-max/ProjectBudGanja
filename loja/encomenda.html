@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de encomenda — clonadoras montadas pelo Inspetor BudGanja.">
+    <meta property="og:title" content="Encomendar clonadora | Inspetor BudGanja">
+    <meta property="og:description" content="Peça sua clonadora montada e testada no laboratório BudGanja.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/imagens/icon-512.png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/imagens/favicon-32.png?v=190" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=190" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=190">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3d5c28">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
+    <link rel="stylesheet" href="/css/style.css?v=190">
+    <title>Encomendar clonadora | Inspetor BudGanja</title>
+</head>
+<body data-page="loja-encomenda">
+    <div id="site-header"></div>
+
+    <main id="main-content" class="article-page relatorio-container loja-encomenda-page">
+        <header class="article-header loja-encomenda-header">
+            <a href="/loja/" class="voltar-link">&larr; Voltar para a loja</a>
+            <p class="article-eyebrow">Loja</p>
+            <div class="loja-order-brand loja-order-brand--page" aria-hidden="true">
+                <img src="/imagens/icon-192.png" alt="" class="loja-order-brand-icon" width="44" height="44" loading="lazy">
+                <span class="loja-order-brand-name">Inspetor BudGanja</span>
+            </div>
+            <h1 id="encomenda-title">Formulário de encomenda</h1>
+            <p id="encomenda-intro" class="page-intro">Carregando produto…</p>
+        </header>
+
+        <div id="encomenda-invalid" class="highlight loja-encomenda-invalid" hidden>
+            <p><strong>Produto não encontrado.</strong></p>
+            <p>Escolha uma clonadora na <a href="/loja/">loja parceira</a> e use o botão de encomenda.</p>
+        </div>
+
+        <form id="encomenda-form" class="sorteios-form loja-encomenda-form highlight" novalidate hidden>
+            <h2 class="sorteios-form-title">Seus dados para contato</h2>
+            <p id="encomenda-product-label" class="loja-encomenda-product"></p>
+
+            <input type="hidden" id="encomenda-product-id" name="productId" value="">
+
+            <fieldset id="encomenda-packages" class="loja-package-fieldset sorteios-field" hidden>
+                <legend>Escolha a opção</legend>
+                <div id="encomenda-packages-list" class="loja-package-list"></div>
+            </fieldset>
+
+            <div class="sorteios-field">
+                <label for="encomenda-nome">Nome completo</label>
+                <input type="text" id="encomenda-nome" name="nome" autocomplete="name" required minlength="3" maxlength="120">
+            </div>
+
+            <div class="sorteios-field">
+                <label for="encomenda-email">E-mail</label>
+                <input type="email" id="encomenda-email" name="email" autocomplete="email" required maxlength="160">
+            </div>
+
+            <div class="sorteios-field">
+                <label for="encomenda-telefone">Telefone / WhatsApp (com DDD)</label>
+                <input type="tel" id="encomenda-telefone" name="telefone" autocomplete="tel" inputmode="numeric" required maxlength="20">
+            </div>
+
+            <div class="sorteios-field-row">
+                <div class="sorteios-field">
+                    <label for="encomenda-cidade">Cidade</label>
+                    <input type="text" id="encomenda-cidade" name="cidade" autocomplete="address-level2" required maxlength="80">
+                </div>
+                <div class="sorteios-field">
+                    <label for="encomenda-estado">Estado (UF)</label>
+                    <input type="text" id="encomenda-estado" name="estado" autocomplete="address-level1" required maxlength="2" pattern="[A-Za-z]{2}" title="Duas letras, ex.: SP">
+                </div>
+            </div>
+
+            <div class="sorteios-field">
+                <label for="encomenda-mensagem">Mensagem <span class="field-optional">(opcional)</span></label>
+                <textarea id="encomenda-mensagem" name="mensagem" rows="4" maxlength="2000" placeholder="Dúvidas, prazo desejado, se prefere retirada ou envio…"></textarea>
+            </div>
+
+            <label class="sorteios-field sorteios-checkbox">
+                <input type="checkbox" id="encomenda-aceite" name="aceite" value="1" required>
+                <span>Autorizo o uso dos meus dados para contato sobre esta encomenda, conforme a <a href="/info/privacidade.html">política de privacidade</a>.</span>
+            </label>
+
+            <p id="encomenda-message" class="sorteios-message" role="status" hidden></p>
+
+            <button type="submit" id="encomenda-submit" class="botao loja-order-btn loja-order-btn--submit">
+                <span class="loja-order-btn-label">Enviar encomenda</span>
+                <span class="loja-order-btn-arrow" aria-hidden="true">→</span>
+            </button>
+        </form>
+
+        <section id="encomenda-success" class="highlight loja-encomenda-success" hidden>
+            <h2>Encomenda enviada</h2>
+            <p id="encomenda-success-text">Recebemos seu pedido. Responderemos em até 48 h úteis.</p>
+            <p><a href="/loja/" class="botao botao-outline">Voltar para a loja</a></p>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+  <script src="/js/app-version-check.js?v=190"></script>
+    <script src="/js/i18n-data.js?v=190"></script>
+    <script src="/js/i18n.js?v=190"></script>
+    <script src="/js/ferramentas-nav-data.js?v=190"></script>
+    <script src="/js/layout.js?v=190"></script>
+    <script src="/js/site-features.js?v=190"></script>
+    <script src="/js/loja-data.js?v=190"></script>
+    <script src="/js/loja-encomenda.js?v=190"></script>
+
+</body>
+</html>
