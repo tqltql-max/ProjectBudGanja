@@ -2999,6 +2999,81 @@ html[data-theme="light"] .login-divider::after {
     white-space: nowrap;
 }
 
+.usuarios-admin-identity {
+    margin-bottom: 20px;
+}
+
+.usuarios-admin-identity-inner {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.usuarios-admin-name {
+    margin: 0 0 6px;
+}
+
+.usuarios-admin-usercell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.usuarios-admin-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.usuarios-admin-avatar--lg {
+    width: 72px;
+    height: 72px;
+}
+
+.usuarios-admin-avatar--empty {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-admin-muted);
+    font-weight: 600;
+}
+
+.usuarios-admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.usuarios-admin-card {
+    margin-bottom: 16px;
+}
+
+.usuarios-admin-dl {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+}
+
+.usuarios-admin-dl dt {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-accent);
+    margin: 0;
+}
+
+.usuarios-admin-dl dd {
+    margin: 2px 0 0;
+    color: var(--color-text);
+}
+}
+
 .sorteios-config-panel {
     margin-bottom: 28px;
 }

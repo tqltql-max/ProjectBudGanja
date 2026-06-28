@@ -13,7 +13,7 @@
     'calculadoras/index.html': [{ label: 'Início', href: HOME }, { label: 'Calculadoras' }],
     'calculadoras/luximetro.html': [{ label: 'Início', href: HOME }, { label: 'Calculadoras', href: '/calculadoras/' }, { label: 'Luxímetro' }],
     'sorteios/index.html': [{ label: 'Início', href: HOME }, { label: 'Sorteios' }],
-    'cultivo/index.html': [{ label: 'Início', href: HOME }, { label: 'Diário de Cultivo' }],
+    'cultivo/index.html': [{ label: 'Início', href: HOME }, { label: 'Diário de Pesquisas' }],
     'perfil.html': [{ label: 'Início', href: HOME }, { label: 'Minha conta' }],
     'login.html': [{ label: 'Início', href: HOME }, { label: 'Admin' }],
     'videos/index.html': [{ label: 'Início', href: HOME }, { label: 'Últimos vídeos' }],

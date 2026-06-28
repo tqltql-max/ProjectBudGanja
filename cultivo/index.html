@@ -3,328 +3,462 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Diário de Cultivo — registos, roteiro e plano do seu cultivo no Inspetor BudGanja.">
-    <meta property="og:title" content="Diário de Cultivo | Inspetor BudGanja">
-    <meta property="og:description" content="Agenda e diário do seu cultivo — registos dia a dia, roteiro por fase e plano de tarefas.">
+    <meta name="description" content="Diário de Pesquisas — documente o cultivo de qualquer planta e prepare publicações no Inspetor BudGanja.">
+    <meta property="og:title" content="Diário de Pesquisas | Inspetor BudGanja">
+    <meta property="og:description" content="Registe observações, roteiro e plano da sua pesquisa de cultivo — para publicar no laboratório depois.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/imagens/icon-512.png">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="/imagens/favicon-32.png?v=194" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.png?v=194" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=194">
+    <link rel="icon" href="/imagens/favicon-32.png?v=202" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=202" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=202">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#3d5c28">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="stylesheet" href="/css/style.css?v=194">
+    <link rel="stylesheet" href="/css/style.css?v=202">
     <meta name="robots" content="noindex,nofollow">
-    <title>Diário de Cultivo | Inspetor BudGanja</title>
+    <title>Diário de Pesquisas | Inspetor BudGanja</title>
 </head>
 <body data-page="cultivo">
     <div id="site-header"></div>
 
     <main id="main-content" class="conteudo-interno perfil-page cultivo-page">
-    <div id="perfil-loading" class="conta-status">A carregar o seu cultivo…</div>
+
+    <div id="perfil-loading" class="conta-status">A carregar as suas pesquisas…</div>
+
+
 
     <div id="perfil-app" hidden>
+
       <header class="perfil-hub-header">
+
         <div class="perfil-hub-identity">
+
           <img id="perfil-avatar" class="conta-avatar perfil-hub-avatar" src="/imagens/avatars/leaf.svg" alt="" width="64" height="64" hidden>
+
           <div>
-            <p class="perfil-hub-eyebrow">Laboratório · Diário de Cultivo</p>
-            <h1 id="perfil-name">Meu cultivo</h1>
+
+            <p class="perfil-hub-eyebrow">Laboratório · Diário de Pesquisas</p>
+
+            <h1 id="perfil-name">Minhas pesquisas</h1>
+
             <p id="perfil-email" class="conta-email"></p>
+
           </div>
+
         </div>
+
         <div class="perfil-hub-actions conta-actions">
+
           <a href="/perfil.html" class="botao botao-outline botao-sm">Minha conta</a>
+
           <button type="button" class="botao botao-outline botao-sm" id="perfil-logout-btn">Sair</button>
+
         </div>
+
       </header>
 
-      <div id="cultivo-onboarding" class="cultivo-onboarding" hidden>
-        <section class="cultivo-onboarding-card info-panel highlight-card" aria-labelledby="cultivo-onboard-title">
-          <div class="cultivo-onboarding-progress" aria-hidden="true">
-            <span class="cultivo-onboarding-dot is-active" data-step-dot="1"></span>
-            <span class="cultivo-onboarding-dot" data-step-dot="2"></span>
-            <span class="cultivo-onboarding-dot" data-step-dot="3"></span>
-          </div>
 
-          <div class="cultivo-onboarding-step" data-onboard-step="1">
-            <p class="cultivo-onboarding-eyebrow">Passo 1 de 3</p>
-            <h2 id="cultivo-onboard-title">Bem-vindo ao Diário de Cultivo</h2>
-            <p class="page-intro">Cada semente ou planta tem a sua agenda — rega, adubo, fotos, roteiro semanal e lembretes num só lugar.</p>
-            <label class="login-field conta-field" for="cultivo-onboard-name">Como se chama a sua genética ou semente?
-              <input type="text" id="cultivo-onboard-name" maxlength="80" required placeholder="Ex.: Blue Dream, Sementes do laboratório…" autocomplete="off">
-            </label>
-          </div>
 
-          <div class="cultivo-onboarding-step" data-onboard-step="2" hidden>
-            <p class="cultivo-onboarding-eyebrow">Passo 2 de 3</p>
-            <h2>Quando começou?</h2>
-            <p class="page-intro">Define o ponto de partida do roteiro e da contagem de semanas.</p>
-            <label class="login-field conta-field" for="cultivo-onboard-planted">Data de plantio / germinação
-              <input type="date" id="cultivo-onboard-planted" required>
-            </label>
-            <fieldset class="cultivo-onboard-phase-field">
-              <legend class="cultivo-onboard-phase-legend">Fase actual</legend>
-              <div class="perfil-phase-select cultivo-onboard-phases" role="group" aria-label="Fase do cultivo">
-                <button type="button" class="perfil-phase-btn" data-phase="planejamento">Planejamento</button>
-                <button type="button" class="perfil-phase-btn is-active" data-phase="germinacao">Germinação</button>
-                <button type="button" class="perfil-phase-btn" data-phase="vegetativo">Vegetativo</button>
-                <button type="button" class="perfil-phase-btn" data-phase="floracao">Floração</button>
-                <button type="button" class="perfil-phase-btn" data-phase="colheita">Colheita</button>
-              </div>
-            </fieldset>
-          </div>
+      <div id="perfil-dashboard" class="perfil-dashboard cultivo-single-page">
 
-          <div class="cultivo-onboarding-step" data-onboard-step="3" hidden>
-            <p class="cultivo-onboarding-eyebrow">Passo 3 de 3</p>
-            <h2>Primeiro lembrete</h2>
-            <p class="page-intro">Opcional — pode agendar a primeira rega ou saltar e configurar depois no Plano.</p>
-            <label class="perfil-plano-check cultivo-onboard-reminder-toggle">
-              <input type="checkbox" id="cultivo-onboard-reminder-enable" checked>
-              <span>Agendar primeira rega</span>
-            </label>
-            <label class="login-field conta-field" for="cultivo-onboard-reminder-date">Data do lembrete
-              <input type="date" id="cultivo-onboard-reminder-date">
-            </label>
-          </div>
-
-          <div class="cultivo-onboarding-actions conta-actions">
-            <button type="button" class="botao botao-outline" id="cultivo-onboard-back" hidden>Voltar</button>
-            <button type="button" class="perfil-link-btn cultivo-onboard-skip" id="cultivo-onboard-skip">Saltar configuração</button>
-            <button type="button" class="botao" id="cultivo-onboard-next">Continuar</button>
-            <button type="button" class="botao" id="cultivo-onboard-finish" hidden>Criar diário</button>
-          </div>
-          <p id="cultivo-onboard-status" class="conta-status" role="status"></p>
-        </section>
-      </div>
-
-      <div id="perfil-dashboard" class="perfil-dashboard">
         <p id="perfil-live-status" class="perfil-live-status" role="status" aria-live="polite" hidden></p>
-        <nav class="perfil-tabs" role="tablist" aria-label="Secções do cultivo">
-          <button type="button" class="perfil-tab is-active" role="tab" id="perfil-tab-inicio" data-tab="inicio" aria-selected="true" aria-controls="perfil-panel-inicio">Início</button>
-          <button type="button" class="perfil-tab" role="tab" id="perfil-tab-diario" data-tab="diario" aria-selected="false" aria-controls="perfil-panel-diario">Diário</button>
-          <button type="button" class="perfil-tab" role="tab" id="perfil-tab-semana" data-tab="semana" aria-selected="false" aria-controls="perfil-panel-semana">Roteiro</button>
-          <button type="button" class="perfil-tab" role="tab" id="perfil-tab-plano" data-tab="plano" aria-selected="false" aria-controls="perfil-panel-plano">Plano</button>
-          <button type="button" class="perfil-tab" role="tab" id="perfil-tab-ferramentas" data-tab="ferramentas" aria-selected="false" aria-controls="perfil-panel-ferramentas">Ferramentas</button>
-        </nav>
 
-        <div class="perfil-tab-panels">
-          <section id="perfil-panel-inicio" class="perfil-tab-panel is-active" role="tabpanel" aria-labelledby="perfil-tab-inicio">
-            <div id="perfil-inicio-summary" class="perfil-inicio-summary info-panel highlight-card"></div>
 
-            <section class="perfil-quick-section" aria-labelledby="perfil-quick-title">
-              <h2 id="perfil-quick-title" class="perfil-section-label">Acesso rápido</h2>
-              <ul id="perfil-quick-links" class="perfil-quick-grid"></ul>
-            </section>
 
-            <section class="perfil-plan-preview info-panel" aria-labelledby="perfil-plan-preview-title">
-              <div class="perfil-plan-preview-head">
-                <h2 id="perfil-plan-preview-title">Próximas tarefas</h2>
-                <button type="button" class="perfil-link-btn" data-goto-tab="plano">Ver plano completo</button>
-              </div>
-              <ul id="perfil-plan-preview-list" class="perfil-plano-list"></ul>
-            </section>
+        <!-- Hub: lista de pesquisas + começar por aqui -->
+
+        <div id="cultivo-hub-view" class="cultivo-hub-view">
+
+          <section class="cultivo-hub-hero info-panel highlight-card">
+
+            <p class="cultivo-hub-eyebrow">Comece por aqui</p>
+
+            <h2 class="cultivo-hub-title">As suas pesquisas</h2>
+
+            <p class="page-intro">Cada pesquisa documenta o cultivo de qualquer planta — diário, roteiro semanal, plano e ferramentas numa só página. Use os registos para publicar no site mais tarde.</p>
+
+            <button type="button" class="botao cultivo-hub-new-btn" id="cultivo-hub-new-btn">＋ Iniciar nova pesquisa</button>
+
           </section>
 
-          <section id="perfil-panel-semana" class="perfil-tab-panel" role="tabpanel" aria-labelledby="perfil-tab-semana" hidden>
-            <section id="perfil-timeline" class="perfil-timeline info-panel highlight-card" aria-labelledby="perfil-timeline-title" hidden>
-              <div class="perfil-timeline-head">
-                <div>
-                  <h2 id="perfil-timeline-title">Cronograma</h2>
-                  <p id="perfil-timeline-sub" class="page-intro"></p>
+          <ul id="cultivo-hub-list" class="cultivo-hub-grid" aria-live="polite"></ul>
+
+          <p id="cultivo-hub-empty" class="cultivo-hub-empty" hidden>Ainda não tem pesquisas. Toque em «Iniciar nova pesquisa» para começar.</p>
+
+        </div>
+
+
+
+        <!-- Wizard: nova pesquisa -->
+
+        <div id="cultivo-wizard-view" class="cultivo-wizard-view" hidden>
+
+          <section class="cultivo-wizard-card info-panel highlight-card" aria-labelledby="cultivo-wizard-title">
+
+            <button type="button" class="perfil-link-btn cultivo-wizard-back" id="cultivo-wizard-back">← Voltar</button>
+
+            <p class="cultivo-hub-eyebrow">Nova pesquisa</p>
+
+            <h2 id="cultivo-wizard-title">Iniciar pesquisa</h2>
+
+            <p class="page-intro">Dê um nome, indique a espécie ou linha, a fase actual e quantas plantas — o painel fica pronto para documentar.</p>
+
+            <form id="cultivo-wizard-form" class="cultivo-wizard-form">
+
+              <label class="login-field conta-field" for="cultivo-wizard-name">Nome da pesquisa
+
+                <input type="text" id="cultivo-wizard-name" maxlength="80" required placeholder="Ex.: Tomate hidropónico, Lavanda indoor…" autocomplete="off">
+
+              </label>
+
+              <label class="login-field conta-field" for="cultivo-wizard-species">Espécie ou linha <span class="perfil-field-optional">(opcional)</span>
+
+                <input type="text" id="cultivo-wizard-species" maxlength="120" placeholder="Ex.: Solanum lycopersicum, Lavandula angustifolia…" autocomplete="off">
+
+              </label>
+
+              <fieldset class="cultivo-phase-field">
+
+                <legend class="cultivo-phase-legend">Fase actual</legend>
+
+                <p id="cultivo-wizard-phase-hint" class="cultivo-phase-hint" aria-live="polite">Seleccionada: <strong>Germinação</strong></p>
+
+                <div class="cultivo-phase-picker cultivo-wizard-phases" role="group" aria-label="Fase da pesquisa">
+
+                  <button type="button" class="cultivo-phase-chip" data-phase="planejamento" aria-pressed="false"><span class="cultivo-phase-chip-icon" aria-hidden="true">📋</span> Planejamento</button>
+
+                  <button type="button" class="cultivo-phase-chip is-active" data-phase="germinacao" aria-pressed="true"><span class="cultivo-phase-chip-icon" aria-hidden="true">🌱</span> Germinação</button>
+
+                  <button type="button" class="cultivo-phase-chip" data-phase="vegetativo" aria-pressed="false"><span class="cultivo-phase-chip-icon" aria-hidden="true">🌿</span> Vegetativo</button>
+
+                  <button type="button" class="cultivo-phase-chip" data-phase="floracao" aria-pressed="false"><span class="cultivo-phase-chip-icon" aria-hidden="true">🌸</span> Floração</button>
+
+                  <button type="button" class="cultivo-phase-chip" data-phase="colheita" aria-pressed="false"><span class="cultivo-phase-chip-icon" aria-hidden="true">✂️</span> Colheita</button>
+
                 </div>
-                <button type="button" class="perfil-link-btn" id="perfil-phase-reset-btn">Reiniciar semanas</button>
+
+              </fieldset>
+
+              <label class="login-field conta-field" for="cultivo-wizard-plants">Quantas plantas?
+
+                <input type="number" id="cultivo-wizard-plants" min="1" max="99" value="1" required inputmode="numeric">
+
+              </label>
+
+              <div class="conta-actions">
+
+                <button type="button" class="botao botao-outline" id="cultivo-wizard-cancel">Cancelar</button>
+
+                <button type="submit" class="botao" id="cultivo-wizard-submit">Criar pesquisa</button>
+
               </div>
-              <div id="perfil-week-pills" class="perfil-week-pills" role="tablist" aria-label="Semanas da fase"></div>
+
+            </form>
+
+            <p id="cultivo-wizard-status" class="conta-status" role="status"></p>
+
+          </section>
+
+        </div>
+
+
+
+        <!-- Página única da pesquisa seleccionada -->
+
+        <div id="cultivo-grow-view" class="cultivo-grow-view" hidden>
+
+          <button type="button" class="perfil-link-btn cultivo-grow-back" id="cultivo-grow-back">← Minhas pesquisas</button>
+
+          <header id="cultivo-grow-header" class="cultivo-grow-header info-panel highlight-card"></header>
+
+
+
+          <div class="cultivo-sections">
+
+            <section id="cultivo-section-diario" class="cultivo-section perfil-hub-card info-panel highlight-card" aria-labelledby="cultivo-diario-title">
+
+              <h2 id="cultivo-diario-title" class="cultivo-section-title">Diário</h2>
+
+              <p class="cultivo-section-intro page-intro">Registe rega, adubo, treino e fotos — tudo fica na linha do tempo abaixo.</p>
+
+              <label class="login-field conta-field" for="perfil-grow-detail-phase">Fase desta pesquisa
+
+                <select id="perfil-grow-detail-phase">
+
+                  <option value="planejamento">Planejamento</option>
+
+                  <option value="germinacao">Germinação</option>
+
+                  <option value="vegetativo">Vegetativo</option>
+
+                  <option value="floracao">Floração</option>
+
+                  <option value="colheita">Colheita</option>
+
+                </select>
+
+              </label>
+
+              <div class="perfil-grow-detail-actions conta-actions cultivo-grow-actions">
+
+                <button type="button" class="botao botao-sm" id="perfil-grow-submit-lab">Submeter ao laboratório</button>
+
+                <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-export-md">Exportar Markdown</button>
+
+                <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-export-csv">Exportar CSV</button>
+
+                <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-rename">Renomear</button>
+
+                <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-delete">Apagar pesquisa</button>
+
+                <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-print">Imprimir</button>
+
+              </div>
+
+              <p id="perfil-grow-submission-status" class="cultivo-submission-status conta-status" role="status" aria-live="polite"></p>
+
+              <ul id="perfil-grow-entries" class="perfil-grow-entries perfil-grow-timeline" aria-live="polite"></ul>
+
+              <p id="perfil-grow-entries-empty" class="perfil-grow-empty" hidden>Sem registos ainda — use o formulário abaixo.</p>
+
+              <form id="perfil-grow-entry-form" class="perfil-grow-entry-form">
+
+                <h3 class="perfil-grow-form-title">Registo rápido</h3>
+
+                <div class="perfil-entry-types" role="group" aria-label="Tipo de registo" id="perfil-grow-entry-types">
+
+                  <button type="button" class="perfil-entry-type is-active" data-action="rega" aria-pressed="true">💧 Rega</button>
+
+                  <button type="button" class="perfil-entry-type" data-action="adubo" aria-pressed="false">🧪 Adubo</button>
+
+                  <button type="button" class="perfil-entry-type" data-action="obs" aria-pressed="false">📝 Nota</button>
+
+                  <button type="button" class="perfil-entry-type" data-action="treino" aria-pressed="false">✂️ Treino</button>
+
+                </div>
+
+                <div class="perfil-entry-metrics">
+
+                  <label class="perfil-entry-metric" for="perfil-grow-entry-ph">pH
+
+                    <input type="number" id="perfil-grow-entry-ph" step="0.1" min="0" max="14" inputmode="decimal" placeholder="—">
+
+                  </label>
+
+                  <label class="perfil-entry-metric" for="perfil-grow-entry-ec">EC
+
+                    <input type="number" id="perfil-grow-entry-ec" step="0.1" min="0" max="10" inputmode="decimal" placeholder="—">
+
+                  </label>
+
+                  <label class="perfil-entry-metric" for="perfil-grow-entry-temp">°C
+
+                    <input type="number" id="perfil-grow-entry-temp" step="1" min="-10" max="60" inputmode="numeric" placeholder="—">
+
+                  </label>
+
+                  <label class="perfil-entry-metric" for="perfil-grow-entry-rh">RH %
+
+                    <input type="number" id="perfil-grow-entry-rh" step="1" min="0" max="100" inputmode="numeric" placeholder="—">
+
+                  </label>
+
+                </div>
+
+                <label class="login-field conta-field" for="perfil-grow-entry-date">Data
+
+                  <input type="date" id="perfil-grow-entry-date" required>
+
+                </label>
+
+                <label class="login-field conta-field" for="perfil-grow-entry-text">Observação <span class="perfil-field-optional">(opcional)</span>
+
+                  <textarea id="perfil-grow-entry-text" class="perfil-hub-textarea" rows="3" maxlength="2000" placeholder="Ex.: rega leve, folhas ok…"></textarea>
+
+                </label>
+
+                <label class="login-field conta-field" for="perfil-grow-entry-photos">Fotos <span class="perfil-field-optional">(opcional, máx. 4)</span>
+
+                  <input type="file" id="perfil-grow-entry-photos" accept="image/jpeg,image/png,image/webp" multiple>
+
+                </label>
+
+                <div id="perfil-grow-entry-photos-preview" class="perfil-entry-photos-preview" aria-live="polite"></div>
+
+                <button type="submit" class="botao">Guardar registo</button>
+
+              </form>
+
+              <p id="perfil-grow-detail-status" class="conta-status" role="status"></p>
+
             </section>
 
-            <section class="perfil-hub-card info-panel highlight-card" aria-labelledby="perfil-guia-title">
-              <h2 id="perfil-guia-title">Roteiro desta semana</h2>
+
+
+            <section id="cultivo-section-roteiro" class="cultivo-section perfil-hub-card info-panel highlight-card" aria-labelledby="cultivo-roteiro-title">
+
+              <h2 id="cultivo-roteiro-title" class="cultivo-section-title">Roteiro</h2>
+
+              <section id="perfil-timeline" class="perfil-timeline" aria-labelledby="perfil-timeline-title" hidden>
+
+                <div class="perfil-timeline-head">
+
+                  <div>
+
+                    <h3 id="perfil-timeline-title">Cronograma</h3>
+
+                    <p id="perfil-timeline-sub" class="page-intro"></p>
+
+                  </div>
+
+                  <button type="button" class="perfil-link-btn" id="perfil-phase-reset-btn">Reiniciar semanas</button>
+
+                </div>
+
+                <div id="perfil-week-pills" class="perfil-week-pills" role="tablist" aria-label="Semanas da fase"></div>
+
+              </section>
+
               <div id="perfil-week-guide" class="perfil-week-guide">
+
                 <article id="perfil-week-content" class="perfil-week-content" aria-live="polite"></article>
-                <label class="login-field conta-field" for="perfil-week-notes">Nota rápida
-                  <textarea id="perfil-week-notes" class="perfil-hub-textarea" rows="4" maxlength="2000" placeholder="Observação desta semana… Vai para o diário da planta activa."></textarea>
+
+                <label class="login-field conta-field" for="perfil-week-notes">Nota rápida desta semana
+
+                  <textarea id="perfil-week-notes" class="perfil-hub-textarea" rows="3" maxlength="2000" placeholder="Vai para o diário desta pesquisa."></textarea>
+
                 </label>
+
               </div>
+
               <div class="conta-actions">
+
                 <button type="button" class="botao" id="perfil-week-notes-save-btn">Guardar no diário</button>
+
                 <a href="/biblioteca/inspecoes/" class="botao botao-outline">Guia em vídeo</a>
+
               </div>
+
               <p id="perfil-guia-status" class="conta-status" role="status"></p>
 
               <details class="perfil-advanced">
+
                 <summary>Roteiro geral do ciclo (opcional)</summary>
-                <textarea id="profile-custom-guide" class="perfil-hub-textarea" rows="6" maxlength="6000" placeholder="Visão geral, metas, lembretes…"></textarea>
+
+                <textarea id="profile-custom-guide" class="perfil-hub-textarea" rows="5" maxlength="6000" placeholder="Visão geral, metas, lembretes…"></textarea>
+
                 <div class="conta-actions">
+
                   <button type="button" class="botao botao-outline" id="perfil-guia-template-btn">Inserir modelo da fase</button>
+
                   <button type="button" class="botao botao-outline" id="perfil-guia-save-btn">Guardar roteiro geral</button>
+
                 </div>
+
               </details>
-            </section>
-          </section>
 
-          <section id="perfil-panel-diario" class="perfil-tab-panel" role="tabpanel" aria-labelledby="perfil-tab-diario" hidden>
-            <section id="perfil-grow-list-view" class="perfil-hub-card info-panel highlight-card perfil-grow-hub" aria-labelledby="perfil-grow-title">
-              <header class="perfil-grow-head">
-                <div>
-                  <h2 id="perfil-grow-title">Diários de cultivo</h2>
-                  <p class="page-intro">Cada semente ou planta tem a sua agenda. Registe observações dia a dia.</p>
-                </div>
-              </header>
-              <ul id="perfil-grow-list" class="perfil-grow-list" aria-live="polite"></ul>
-              <p id="perfil-grow-empty" class="perfil-grow-empty" hidden>Ainda não tem diários. Crie o primeiro abaixo.</p>
-              <form id="perfil-grow-new-form" class="perfil-grow-new-form">
-                <h3 class="perfil-grow-form-title">Nova planta / semente</h3>
-                <label class="login-field conta-field" for="perfil-grow-name">Nome da genética ou semente
-                  <input type="text" id="perfil-grow-name" maxlength="80" required placeholder="Ex.: Sementes especiais, Blue Dream…">
-                </label>
-                <div class="perfil-grow-new-row">
-                  <label class="login-field conta-field" for="perfil-grow-planted">Data de plantio / germinação
-                    <input type="date" id="perfil-grow-planted" required>
-                  </label>
-                  <label class="login-field conta-field" for="perfil-grow-phase">Fase actual
-                    <select id="perfil-grow-phase">
-                      <option value="planejamento">Planejamento</option>
-                      <option value="germinacao" selected>Germinação</option>
-                      <option value="vegetativo">Vegetativo</option>
-                      <option value="floracao">Floração</option>
-                      <option value="colheita">Colheita</option>
-                    </select>
-                  </label>
-                </div>
-                <button type="submit" class="botao">Criar diário</button>
-              </form>
-              <p id="perfil-grow-list-status" class="conta-status" role="status"></p>
             </section>
 
-            <section id="perfil-grow-detail-view" class="perfil-hub-card info-panel highlight-card perfil-grow-detail" hidden aria-labelledby="perfil-grow-detail-title">
-              <button type="button" class="perfil-link-btn perfil-grow-back" id="perfil-grow-back-btn">← Todos os diários</button>
-              <header class="perfil-grow-detail-head">
-                <div>
-                  <h2 id="perfil-grow-detail-title">Diário</h2>
-                  <p id="perfil-grow-detail-meta" class="perfil-grow-detail-meta"></p>
-                </div>
-                <div class="perfil-grow-detail-actions">
-                  <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-export-csv">Exportar CSV</button>
-                  <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-print">Imprimir</button>
-                  <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-set-active-btn">Usar no roteiro</button>
-                </div>
-              </header>
-              <label class="login-field conta-field" for="perfil-grow-detail-phase">Fase deste cultivo
-                <select id="perfil-grow-detail-phase">
-                  <option value="planejamento">Planejamento</option>
-                  <option value="germinacao">Germinação</option>
-                  <option value="vegetativo">Vegetativo</option>
-                  <option value="floracao">Floração</option>
-                  <option value="colheita">Colheita</option>
-                </select>
-              </label>
-              <ul id="perfil-grow-entries" class="perfil-grow-entries perfil-grow-timeline" aria-live="polite"></ul>
-              <p id="perfil-grow-entries-empty" class="perfil-grow-empty" hidden>Sem registos ainda — use o formulário abaixo.</p>
-              <form id="perfil-grow-entry-form" class="perfil-grow-entry-form">
-                <h3 class="perfil-grow-form-title">Registo rápido</h3>
-                <div class="perfil-entry-types" role="group" aria-label="Tipo de registo" id="perfil-grow-entry-types">
-                  <button type="button" class="perfil-entry-type is-active" data-action="rega" aria-pressed="true">💧 Rega</button>
-                  <button type="button" class="perfil-entry-type" data-action="adubo" aria-pressed="false">🧪 Adubo</button>
-                  <button type="button" class="perfil-entry-type" data-action="obs" aria-pressed="false">📝 Nota</button>
-                  <button type="button" class="perfil-entry-type" data-action="treino" aria-pressed="false">✂️ Treino</button>
-                </div>
-                <div class="perfil-entry-metrics">
-                  <label class="perfil-entry-metric" for="perfil-grow-entry-ph">pH
-                    <input type="number" id="perfil-grow-entry-ph" step="0.1" min="0" max="14" inputmode="decimal" placeholder="—">
-                  </label>
-                  <label class="perfil-entry-metric" for="perfil-grow-entry-ec">EC
-                    <input type="number" id="perfil-grow-entry-ec" step="0.1" min="0" max="10" inputmode="decimal" placeholder="—">
-                  </label>
-                  <label class="perfil-entry-metric" for="perfil-grow-entry-temp">°C
-                    <input type="number" id="perfil-grow-entry-temp" step="1" min="-10" max="60" inputmode="numeric" placeholder="—">
-                  </label>
-                  <label class="perfil-entry-metric" for="perfil-grow-entry-rh">RH %
-                    <input type="number" id="perfil-grow-entry-rh" step="1" min="0" max="100" inputmode="numeric" placeholder="—">
-                  </label>
-                </div>
-                <label class="login-field conta-field" for="perfil-grow-entry-date">Data
-                  <input type="date" id="perfil-grow-entry-date" required>
-                </label>
-                <label class="login-field conta-field" for="perfil-grow-entry-text">Observação <span class="perfil-field-optional">(opcional)</span>
-                  <textarea id="perfil-grow-entry-text" class="perfil-hub-textarea" rows="3" maxlength="2000" placeholder="Ex.: rega leve, folhas ok, LST nas laterais…"></textarea>
-                </label>
-                <label class="login-field conta-field" for="perfil-grow-entry-photos">Fotos <span class="perfil-field-optional">(opcional, máx. 4)</span>
-                  <input type="file" id="perfil-grow-entry-photos" accept="image/jpeg,image/png,image/webp" multiple>
-                </label>
-                <div id="perfil-grow-entry-photos-preview" class="perfil-entry-photos-preview" aria-live="polite"></div>
-                <button type="submit" class="botao">Guardar registo</button>
-              </form>
-              <p id="perfil-grow-detail-status" class="conta-status" role="status"></p>
-            </section>
-          </section>
 
-          <section id="perfil-panel-plano" class="perfil-tab-panel" role="tabpanel" aria-labelledby="perfil-tab-plano" hidden>
-            <section class="perfil-hub-card info-panel highlight-card" aria-labelledby="perfil-reminder-title">
-              <h2 id="perfil-reminder-title">Lembretes</h2>
-              <p class="page-intro">Agende rega, adubo ou outras tarefas com data. Ao concluir, pode registar automaticamente no diário.</p>
+
+            <section id="cultivo-section-plano" class="cultivo-section perfil-hub-card info-panel highlight-card" aria-labelledby="cultivo-plano-title">
+
+              <h2 id="cultivo-plano-title" class="cultivo-section-title">Plano</h2>
+
               <form id="perfil-reminder-add" class="perfil-reminder-form">
-                <label class="login-field conta-field" for="perfil-reminder-action">Tipo
-                  <select id="perfil-reminder-action">
-                    <option value="rega">💧 Rega</option>
-                    <option value="adubo">🧪 Adubo</option>
-                    <option value="">📝 Tarefa geral</option>
-                  </select>
-                </label>
-                <label class="login-field conta-field" for="perfil-reminder-date">Data
-                  <input type="date" id="perfil-reminder-date" required>
-                </label>
-                <label class="login-field conta-field" for="perfil-reminder-label">Descrição
-                  <input type="text" id="perfil-reminder-label" maxlength="240" placeholder="Ex.: rega com pH ajustado…">
-                </label>
-                <button type="submit" class="botao">Agendar lembrete</button>
-              </form>
-            </section>
-            <section class="perfil-hub-card info-panel highlight-card" aria-labelledby="perfil-plano-title">
-              <h2 id="perfil-plano-title">Meu plano de cultivo</h2>
-              <p class="page-intro">Marque o que já fez e adicione tarefas suas.</p>
-              <ul id="perfil-plano-list" class="perfil-plano-list"></ul>
-              <form id="perfil-plano-add" class="perfil-plano-add">
-                <input type="text" id="perfil-plano-input" maxlength="240" placeholder="Nova tarefa…" aria-label="Nova tarefa">
-                <button type="submit" class="botao">Adicionar</button>
-              </form>
-              <p id="perfil-plano-status" class="conta-status" role="status"></p>
-            </section>
-          </section>
 
-          <section id="perfil-panel-ferramentas" class="perfil-tab-panel" role="tabpanel" aria-labelledby="perfil-tab-ferramentas" hidden>
-            <section class="perfil-hub-card info-panel highlight-card" aria-labelledby="perfil-rec-title">
-              <h2 id="perfil-rec-title">Sugeridas para a sua fase</h2>
+                <h3 class="perfil-grow-form-title">Lembrete</h3>
+
+                <label class="login-field conta-field" for="perfil-reminder-action">Tipo
+
+                  <select id="perfil-reminder-action">
+
+                    <option value="rega">💧 Rega</option>
+
+                    <option value="adubo">🧪 Adubo</option>
+
+                    <option value="">📝 Tarefa geral</option>
+
+                  </select>
+
+                </label>
+
+                <label class="login-field conta-field" for="perfil-reminder-date">Data
+
+                  <input type="date" id="perfil-reminder-date" required>
+
+                </label>
+
+                <label class="login-field conta-field" for="perfil-reminder-label">Descrição
+
+                  <input type="text" id="perfil-reminder-label" maxlength="240" placeholder="Ex.: rega com pH ajustado…">
+
+                </label>
+
+                <button type="submit" class="botao botao-outline">Agendar</button>
+
+              </form>
+
+              <ul id="perfil-plano-list" class="perfil-plano-list"></ul>
+
+              <form id="perfil-plano-add" class="perfil-plano-add">
+
+                <input type="text" id="perfil-plano-input" maxlength="240" placeholder="Nova tarefa…" aria-label="Nova tarefa">
+
+                <button type="submit" class="botao">Adicionar</button>
+
+              </form>
+
+              <p id="perfil-plano-status" class="conta-status" role="status"></p>
+
+            </section>
+
+
+
+            <section id="cultivo-section-ferramentas" class="cultivo-section perfil-hub-card info-panel highlight-card" aria-labelledby="cultivo-tools-title">
+
+              <h2 id="cultivo-tools-title" class="cultivo-section-title">Ferramentas</h2>
+
+              <p class="page-intro">Sugeridas para a fase actual desta pesquisa.</p>
+
               <ul id="perfil-tool-links" class="perfil-rec-list info-list"></ul>
+
+              <div id="perfil-ferramentas-nav" class="perfil-nav-accordion" aria-label="Calculadoras"></div>
+
+              <h3 class="perfil-section-label">Biblioteca</h3>
+
+              <div id="perfil-biblioteca-nav" class="perfil-nav-accordion" aria-label="Guias e pesquisas"></div>
+
             </section>
-            <section class="perfil-hub-card info-panel" aria-labelledby="perfil-tools-all-title">
-              <h2 id="perfil-tools-all-title">Ferramentas</h2>
-              <div id="perfil-ferramentas-nav" class="perfil-nav-accordion" aria-label="Calculadoras e equipamentos"></div>
-            </section>
-            <section class="perfil-hub-card info-panel" aria-labelledby="perfil-site-title">
-              <h2 id="perfil-site-title">Biblioteca</h2>
-              <div id="perfil-biblioteca-nav" class="perfil-nav-accordion" aria-label="Guias, pesquisas e vídeos"></div>
-            </section>
-          </section>
+
+          </div>
+
         </div>
+
       </div>
+
     </div>
+
   </main>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=194"></script>
-    <script src="/js/i18n-data.js?v=194"></script>
-    <script src="/js/i18n.js?v=194"></script>
-    <script src="/js/ferramentas-nav-data.js?v=194"></script>
-    <script src="/js/layout.js?v=194"></script>
-    <script src="/js/site-features.js?v=194"></script>
-  <script src="/js/cultivo/shared.js?v=194"></script>
-  <script src="/js/cultivo/onboarding.js?v=194"></script>
-  <script src="/js/cultivo.js?v=194"></script>
+  <script src="/js/app-version-check.js?v=202"></script>
+    <script src="/js/i18n-data.js?v=202"></script>
+    <script src="/js/i18n.js?v=202"></script>
+    <script src="/js/ferramentas-nav-data.js?v=202"></script>
+    <script src="/js/layout.js?v=202"></script>
+    <script src="/js/site-features.js?v=202"></script>
+
+  <script src="/js/cultivo/shared.js?v=202"></script>
+
+  <script src="/js/cultivo/onboarding.js?v=202"></script>
+
+  <script src="/js/cultivo-phase-weeks-data.js?v=202"></script>
+
+  <script src="/js/cultivo.js?v=202"></script>
 
 </body>
 </html>

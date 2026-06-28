@@ -31,7 +31,7 @@ Detalhes: [`docs/GIT.md`](docs/GIT.md) · copie `.env.example` → `.env`
 
 | Secção | Páginas |
 |--------|---------|
-| **Cultivo** | [Diário de Cultivo](/cultivo/) · [Minha conta](/perfil.html) |
+| **Pesquisas** | [Diário de Pesquisas](/cultivo/) · [Minha conta](/perfil.html) |
 | **Biblioteca** | [Inspeções](/biblioteca/inspecoes/) (série Guia de Cultivo), [Pesquisas](/biblioteca/pesquisas/), [Equipamentos](/equipamentos/) |
 | **Ferramentas** | [Calculadoras](/calculadoras/), [Luxímetro](/calculadoras/luximetro.html) |
 | **Conteúdo** | [Sorteios](/sorteios/), [Últimos vídeos](/videos/), [Loja parceira](/loja/) |
@@ -139,15 +139,17 @@ npm run test:site
 
 Aceda a `/login.html` com `ADMIN_USER` e `RESEARCH_PASS` definidos no `.env`. Após entrar, use **Admin** para gerir publicações, sorteios e produtos.
 
-## Conta de cultivador (Google)
+## Conta de utilizador (Google)
 
-Utilizadores do site entram em **`/entrar.html`** com Google e completam o cadastro em **`/perfil.html`** com **nome** e **idade** (obrigatório **18 anos ou mais**). Depois acedem ao painel com ferramentas, plano e diário.
+Utilizadores entram em **`/entrar.html`** com Google e completam o cadastro em **`/perfil.html`** com **nome** e **idade** (obrigatório **18 anos ou mais**). Depois acedem ao **Diário de Pesquisas** em `/cultivo/`.
 
 Configure no `.env`:
 
 | Variável | Descrição |
 |----------|-----------|
-| `GOOGLE_CLIENT_ID` | OAuth 2.0 Client ID (Google Cloud Console → Credentials → Web application) |
+| `GOOGLE_CLIENT_ID` | OAuth 2.0 Client ID (utilizadores) |
+| `GOOGLE_CLIENT_SECRET` | OAuth redirect (`/api/auth/google/start`) |
+| `ADMIN_EMAILS` | E-mails Google com acesso admin (vírgula) |
 
 Origens autorizadas no Google Cloud: `https://inspetorbudganja.com.br` e `http://localhost:8080` (desenvolvimento).
 
@@ -182,7 +184,9 @@ Localmente, `npm start` grava utilizadores, sessões e conteúdo dinâmico em **
 ```powershell
 npm install
 npm run db:migrate    # criar schema + importar JSON → tabelas SQL
-npm run test:db       # validar persistência Admin + utilizador (28 testes)
+npm run test:db       # validar persistência SQL (posts, sessões, etc.)
+npm run test:cultivo  # validar tabelas cultivo_*
+npm run test          # test:lib + test:db + test:cultivo
 npm run build         # exporta BD → JSON estático + gera HTML
 deploy\start-now.ps1  # migra + build + servidor
 ```

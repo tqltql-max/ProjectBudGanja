@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS users (
   picture TEXT NOT NULL DEFAULT '',
   provider TEXT NOT NULL DEFAULT 'google',
   profile_json TEXT NOT NULL DEFAULT '{}',
+  is_admin INTEGER NOT NULL DEFAULT 0,
   created_at TEXT NOT NULL,
   updated_at TEXT NOT NULL
 );
@@ -299,3 +300,85 @@ CREATE TABLE IF NOT EXISTS loja_orders (
 
 CREATE INDEX IF NOT EXISTS idx_loja_orders_product ON loja_orders(product_id);
 CREATE INDEX IF NOT EXISTS idx_loja_orders_created ON loja_orders(created_at);
+
+-- Diário de Pesquisas (utilizador autenticado)
+
+CREATE TABLE IF NOT EXISTS cultivo_settings (
+  user_id TEXT PRIMARY KEY,
+  phase TEXT NOT NULL DEFAULT '',
+  phase_started_at TEXT,
+  active_grow_id TEXT NOT NULL DEFAULT '',
+  custom_guide TEXT NOT NULL DEFAULT '',
+  guide_week_notes TEXT NOT NULL DEFAULT '{}',
+  updated_at TEXT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS cultivo_grows (
+  id TEXT PRIMARY KEY,
+  user_id TEXT NOT NULL,
+  name TEXT NOT NULL DEFAULT '',
+  planted_at TEXT,
+  phase TEXT NOT NULL DEFAULT 'germinacao',
+  plant_count INTEGER NOT NULL DEFAULT 1,
+  species TEXT NOT NULL DEFAULT '',
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE INDEX IF NOT EXISTS idx_cultivo_grows_user ON cultivo_grows(user_id);
+
+CREATE TABLE IF NOT EXISTS cultivo_entries (
+  id TEXT PRIMARY KEY,
+  grow_id TEXT NOT NULL,
+  user_id TEXT NOT NULL,
+  entry_date TEXT NOT NULL,
+  text TEXT NOT NULL DEFAULT '',
+  source TEXT NOT NULL DEFAULT 'manual',
+  action_type TEXT NOT NULL DEFAULT 'obs',
+  metrics_json TEXT NOT NULL DEFAULT '{}',
+  photos_json TEXT NOT NULL DEFAULT '[]',
+  created_at TEXT NOT NULL,
+  FOREIGN KEY (grow_id) REFERENCES cultivo_grows(id) ON DELETE CASCADE,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE INDEX IF NOT EXISTS idx_cultivo_entries_grow ON cultivo_entries(grow_id);
+CREATE INDEX IF NOT EXISTS idx_cultivo_entries_user ON cultivo_entries(user_id);
+
+CREATE TABLE IF NOT EXISTS cultivo_plan_tasks (
+  id TEXT PRIMARY KEY,
+  user_id TEXT NOT NULL,
+  label TEXT NOT NULL DEFAULT '',
+  done INTEGER NOT NULL DEFAULT 0,
+  tool_href TEXT NOT NULL DEFAULT '',
+  sort_order INTEGER NOT NULL DEFAULT 0,
+  due_at TEXT,
+  action_type TEXT NOT NULL DEFAULT '',
+  grow_id TEXT NOT NULL DEFAULT '',
+  created_at TEXT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE INDEX IF NOT EXISTS idx_cultivo_plan_tasks_user ON cultivo_plan_tasks(user_id);
+
+CREATE TABLE IF NOT EXISTS cultivo_submissions (
+  id TEXT PRIMARY KEY,
+  user_id TEXT NOT NULL,
+  grow_id TEXT NOT NULL,
+  grow_name TEXT NOT NULL DEFAULT '',
+  status TEXT NOT NULL DEFAULT 'pending',
+  title TEXT NOT NULL DEFAULT '',
+  excerpt TEXT NOT NULL DEFAULT '',
+  content_md TEXT NOT NULL DEFAULT '',
+  reviewer_note TEXT NOT NULL DEFAULT '',
+  post_slug TEXT NOT NULL DEFAULT '',
+  submitted_at TEXT NOT NULL,
+  reviewed_at TEXT,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE INDEX IF NOT EXISTS idx_cultivo_submissions_status ON cultivo_submissions(status);
+CREATE INDEX IF NOT EXISTS idx_cultivo_submissions_user ON cultivo_submissions(user_id);
+CREATE INDEX IF NOT EXISTS idx_cultivo_submissions_grow ON cultivo_submissions(grow_id);

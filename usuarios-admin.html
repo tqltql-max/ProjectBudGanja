@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta property="og:title" content="Utilizadores | Admin Inspetor BudGanja">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/imagens/icon-512.png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/imagens/favicon-32.png?v=202" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=202" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=202">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3d5c28">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
+    <link rel="stylesheet" href="/css/style.css?v=202">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Utilizadores | Admin Inspetor BudGanja</title>
+</head>
+<body data-page="usuarios-admin">
+    <div id="site-header"></div>
+
+    <main class="conteudo-interno admin-panel">
+    <header class="admin-hub-header">
+      <div class="admin-hub-intro">
+        <p class="admin-hub-eyebrow">Área administrativa</p>
+        <h1>Utilizadores</h1>
+        <p class="admin-hub-sub">Contas Google registadas, perfis de cultivador e permissões de administrador.</p>
+      </div>
+      <div class="admin-hub-actions">
+        <a href="/perfil.html" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Minha conta</a>
+        <a href="/" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Site</a>
+        <button id="logout-btn" type="button" class="botao botao-outline botao-sm">Sair</button>
+      </div>
+    </header>
+
+    <nav class="admin-nav" aria-label="Secções do admin">
+      <a href="/admin.html" class="admin-nav-link">Publicações</a>
+      <a href="/pesquisas-admin.html" class="admin-nav-link">Submissões</a>
+      <a href="/usuarios-admin.html" class="admin-nav-link is-active" aria-current="page">Utilizadores</a>
+      <a href="/sorteios-admin.html" class="admin-nav-link">Sorteios</a>
+      <a href="/loja-admin.html" class="admin-nav-link">Encomendas</a>
+    </nav>
+
+    <div id="users-stats" class="admin-stats-grid" aria-label="Resumo de utilizadores"></div>
+
+    <section class="highlight-card loja-admin-panel" id="users-list-panel">
+      <div class="sorteios-admin-toolbar">
+        <div>
+          <h2 class="admin-section-title" style="margin:0">Contas registadas</h2>
+          <p class="field-hint">Pesquise por e-mail, nome ou ID. Clique em <strong>Ver</strong> para o perfil completo.</p>
+          <p id="users-count" class="sorteios-admin-count">A carregar…</p>
+        </div>
+        <label class="admin-field-row">
+          Buscar
+          <input type="search" id="users-search" class="select-dark admin-studio-search" placeholder="E-mail, nome…" autocomplete="off">
+        </label>
+      </div>
+      <div class="sorteios-admin-table-wrap">
+        <table class="sorteios-admin-table" id="users-table">
+          <thead>
+            <tr>
+              <th>Utilizador</th>
+              <th>E-mail</th>
+              <th>Perfil</th>
+              <th>Admin</th>
+              <th>Pesquisas</th>
+              <th>Registos</th>
+              <th>Cadastro</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="users-table-body">
+            <tr><td colspan="8">A carregar…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="highlight-card admin-studio-editor" id="user-detail-panel" hidden>
+      <div class="admin-editor-top">
+        <button type="button" id="user-back-btn" class="voltar-link admin-studio-back">&larr; Voltar à lista</button>
+        <span id="user-admin-badge" class="admin-editor-badge">Utilizador</span>
+      </div>
+
+      <div class="usuarios-admin-identity" id="user-identity"></div>
+
+      <div class="admin-stats-grid" id="user-detail-stats" aria-label="Estatísticas do utilizador"></div>
+
+      <div class="usuarios-admin-grid">
+        <section class="highlight-card usuarios-admin-card">
+          <h2 class="admin-section-title">Perfil da conta</h2>
+          <dl id="user-profile-fields" class="usuarios-admin-dl"></dl>
+          <p id="user-profile-empty" class="field-hint" hidden>Perfil ainda incompleto ou sem campos opcionais preenchidos.</p>
+        </section>
+
+        <section class="highlight-card usuarios-admin-card">
+          <h2 class="admin-section-title">Permissões</h2>
+          <p class="field-hint">Administradores podem aceder a todos os painéis. E-mails em <code>ADMIN_EMAILS</code> no servidor também têm acesso (não editável aqui).</p>
+          <label class="admin-checkbox">
+            <input type="checkbox" id="user-is-admin">
+            Administrador do site
+          </label>
+          <p id="user-admin-source" class="field-hint"></p>
+          <div class="conta-actions">
+            <button type="button" class="botao" id="user-save-admin-btn">Guardar permissão</button>
+          </div>
+        </section>
+      </div>
+
+      <section class="highlight-card usuarios-admin-card">
+        <h2 class="admin-section-title">Pesquisas no diário</h2>
+        <div class="sorteios-admin-table-wrap">
+          <table class="sorteios-admin-table">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Espécie</th>
+                <th>Fase</th>
+                <th>Registos</th>
+                <th>Plantio</th>
+              </tr>
+            </thead>
+            <tbody id="user-grows-body">
+              <tr><td colspan="5">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="highlight-card usuarios-admin-card">
+        <h2 class="admin-section-title">Submissões ao laboratório</h2>
+        <div class="sorteios-admin-table-wrap">
+          <table class="sorteios-admin-table">
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>Título</th>
+                <th>Estado</th>
+                <th>Post</th>
+              </tr>
+            </thead>
+            <tbody id="user-submissions-body">
+              <tr><td colspan="4">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="usuarios-admin-grid">
+        <section class="highlight-card usuarios-admin-card">
+          <h2 class="admin-section-title">Sorteios</h2>
+          <div class="sorteios-admin-table-wrap">
+            <table class="sorteios-admin-table">
+              <thead>
+                <tr>
+                  <th>Data</th>
+                  <th>Prémio</th>
+                  <th>Local</th>
+                </tr>
+              </thead>
+              <tbody id="user-sorteios-body">
+                <tr><td colspan="3">—</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="highlight-card usuarios-admin-card">
+          <h2 class="admin-section-title">Encomendas loja</h2>
+          <div class="sorteios-admin-table-wrap">
+            <table class="sorteios-admin-table">
+              <thead>
+                <tr>
+                  <th>Data</th>
+                  <th>Produto</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody id="user-loja-body">
+                <tr><td colspan="3">—</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <p id="user-result" class="conta-status" role="status"></p>
+    </section>
+  </main>
+
+    <div id="site-footer"></div>
+  <script src="/js/app-version-check.js?v=202"></script>
+    <script src="/js/i18n-data.js?v=202"></script>
+    <script src="/js/i18n.js?v=202"></script>
+    <script src="/js/ferramentas-nav-data.js?v=202"></script>
+    <script src="/js/layout.js?v=202"></script>
+    <script src="/js/usuarios-admin.js?v=202"></script>
+
+</body>
+</html>

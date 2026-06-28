@@ -44,6 +44,10 @@
     "db:backup:external": "node scripts/db-backup-external.js",
 
     "test:db": "node scripts/test-db-persistence.js",
+    "test:cultivo": "node scripts/test-cultivo-persistence.js",
+    "test:cultivo-submissions": "node scripts/test-cultivo-submissions.js",
+    "test:users-admin": "node scripts/test-users-admin.js",
+    "test": "node scripts/test-lib-unit.js && node scripts/test-db-persistence.js && node scripts/test-cultivo-persistence.js && node scripts/test-cultivo-submissions.js && node scripts/test-users-admin.js",
 
     "verify": "node scripts/verify.js",
 

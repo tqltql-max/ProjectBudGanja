@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '194';
+const ASSET_V = '202';
 
 let deferredInstallPrompt = null;
 let installFloatingBtn = null;
@@ -865,7 +865,7 @@ function buildHeaderProfileLink(userLink, hideAuthNav) {
     const displayName = userLink.name || label;
     const shortName = String(displayName).trim().split(/\s+/)[0] || label;
     return (
-      '<a href="' + href + '" class="header-profile-link" title="Meu perfil de cultivo" aria-label="Meu perfil">' +
+      '<a href="' + href + '" class="header-profile-link" title="Diário de pesquisas" aria-label="Diário de pesquisas">' +
       '<img src="' + escapeNavText(pic) + '" alt="" class="header-profile-avatar" width="32" height="32" loading="lazy">' +
       '<span class="header-profile-name">' + escapeNavText(shortName) + '</span>' +
       '</a>'
@@ -1354,7 +1354,7 @@ async function fetchAuthState() {
       if (res.ok) {
         const data = await res.json();
         state.userLink = {
-          label: 'Diário de Cultivo',
+          label: 'Diário de Pesquisas',
           href: '/cultivo/',
           isUser: true,
           picture: data.picture || (data.profile && data.profile.avatarUrl) || '/imagens/avatars/leaf.svg',

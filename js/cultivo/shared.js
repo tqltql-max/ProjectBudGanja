@@ -65,6 +65,7 @@
         name: log.name,
         plantedAt: log.plantedAt,
         phase: log.phase,
+        plantCount: log.plantCount != null ? log.plantCount : 1,
         createdAt: log.createdAt,
         entries: Array.isArray(log.entries)
           ? log.entries.map(function (entry) {
@@ -84,15 +85,20 @@
     });
   }
 
-  function createGrowLogObject(name, plantedAt, phase) {
+  function createGrowLogObject(name, plantedAt, phase, plantCount, species) {
     var now = new Date().toISOString();
     var planted = plantedAt || now;
     var plantedDate = new Date(planted);
+    var count = parseInt(plantCount, 10);
+    if (isNaN(count) || count < 1) count = 1;
+    if (count > 99) count = 99;
     return {
       id: 'g' + Date.now(),
-      name: String(name || '').trim().slice(0, 80) || 'Cultivo',
+      name: String(name || '').trim().slice(0, 80) || 'Minha pesquisa',
+      species: String(species || '').trim().slice(0, 120),
       plantedAt: isNaN(plantedDate.getTime()) ? now : plantedDate.toISOString(),
       phase: phase || 'germinacao',
+      plantCount: count,
       entries: [],
       createdAt: now
     };

@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var LOCAL_VERSION = '194';
+  var LOCAL_VERSION = '202';
   var VERSION_KEY = 'budganja_app_version';
   var MAX_RELOADS = 3;
 

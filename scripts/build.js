@@ -40,7 +40,8 @@ function runBuildSteps() {
   try {
     runStep('sync:cultivo-weeks', 'sync-cultivo-weeks.js');
   } catch (e) {
-    console.warn('Aviso sync:cultivo-weeks:', e.message);
+    console.error('ERRO sync:cultivo-weeks:', e.message);
+    throw e;
   }
 
   try {

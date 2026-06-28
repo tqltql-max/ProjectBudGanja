@@ -6,8 +6,9 @@ Base de dados **SQLite** (`data/budganja.db` localmente; **Turso** em produção
 
 | Área | Tabela(s) | O que guarda |
 |------|-----------|--------------|
-| **Utilizadores** | `users` | Conta Google + `profile_json` (perfil, diários, plano) |
-| **Sessões** | `user_sessions`, `admin_sessions`, `oauth_states` | Login cultivador, admin, OAuth |
+| **Utilizadores** | `users` | Conta Google + `profile_json` (nome, idade, avatar — **sem** diário) + `is_admin` |
+| **Diário de Pesquisas** | `cultivo_settings`, `cultivo_grows`, `cultivo_entries`, `cultivo_plan_tasks`, `cultivo_submissions` | Pesquisas de cultivo por utilizador + fila de publicação |
+| **Sessões** | `user_sessions`, `admin_sessions`, `oauth_states` | Login utilizador, admin, OAuth |
 | **Publicações** | `posts` | Artigos da biblioteca (markdown, capa, categoria) |
 | **Páginas CMS** | `pages` | HTML editável: biblioteca, calculadoras, guia, equipamentos, info… |
 | **Calculadoras** | `calculators` | Registo das 10 ferramentas (slug, href, ícone, descrição) |
@@ -15,10 +16,27 @@ Base de dados **SQLite** (`data/budganja.db` localmente; **Turso** em produção
 | **Navegação** | `nav_sections`, `nav_groups`, `nav_items` | Menu principal (Biblioteca, Ferramentas, Sorteios…) |
 | **Rodapé** | `footer_links`, `footer_groups`, `footer_group_links` | Links do footer |
 | **Guia de cultivo** | `guia_cultivo`, `guia_chapters`, `guia_videos` | Trilha em vídeo @InspetorBudGanja |
-| **Sorteios** | `sorteio_settings`, `sorteio_prizes`, `sorteio_entries` | Config + inscrições |
+| **Sorteios** | `sorteio_settings`, `sorteio_prizes`, `sorteio_entries`, `sorteio_alert_subscribers` | Config + inscrições + alertas |
+| **Loja** | `loja_orders` | Pedidos de encomenda |
 | **YouTube** | `youtube_feed`, `youtube_feed_videos` | Feed do canal Inspetor |
 
-Schema SQL: `lib/db/schema.sql` · Repositórios: `lib/db/content-repos.js`
+Schema SQL: `lib/db/schema.sql` · Repositórios: `lib/db/content-repos.js`, `lib/db/cultivo-repos.js`
+
+## Diário de Pesquisas (`cultivo_*`)
+
+Dados do módulo `/cultivo/` — API `GET/PUT /api/cultivo`, fotos `POST /api/cultivo/photo`.
+
+| Tabela | Conteúdo |
+|--------|----------|
+| `cultivo_settings` | Fase activa, grow activo, roteiro geral, notas por semana |
+| `cultivo_grows` | Cada pesquisa: nome, espécie, fase, nº plantas, data plantio |
+| `cultivo_entries` | Registos do diário (texto, métricas JSON, fotos, tipo) |
+| `cultivo_plan_tasks` | Lembretes e tarefas do plano |
+| `cultivo_submissions` | Fila de submissão ao laboratório (`pending` → `approved` / `rejected`) |
+
+API de submissão: `POST /api/cultivo/submit`, `GET /api/cultivo/submissions`. Admin: `pesquisas-admin.html`, rotas `/api/admin/cultivo-submissions/*`.
+
+Migração legada: dados antigos em `users.profile_json` (campo `growLogs`) são importados para estas tabelas na primeira leitura (`lib/cultivo-user-service.js`).
 
 ## Colunas principais
 
@@ -38,45 +56,22 @@ Schema SQL: `lib/db/schema.sql` · Repositórios: `lib/db/content-repos.js`
 |--------|-----------|
 | `id` | ex.: `calculadoras/vpd.html`, `biblioteca/pesquisas/substratos.html` |
 | `section` | `biblioteca`, `calculadoras`, `guia`, `equipamentos`, `info`, `site`… |
-| `title`, `body`, `scripts` | Conteúdo da página |
-| `meta_description`, `og_*` | SEO |
 
-### `calculators`
+### `users.profile_json` (apenas perfil de conta)
 
-| Coluna | Descrição |
+| Campo | Descrição |
+|-------|-----------|
+| `displayName`, `age` | Obrigatórios para aceder ao diário (≥18 anos) |
+| `avatarUrl`, `experience`, `environment`… | Metadados opcionais do cultivador |
+
+**Não guardar** `growLogs`, `journal`, `planTasks` em `profile_json` — usar tabelas `cultivo_*`.
+
+### Permissões de administrador
+
+| Origem | Descrição |
 |--------|-----------|
-| `slug` | `luximetro`, `vpd`, `dli`… |
-| `label`, `href`, `icon`, `description` | UI e navegação |
-| `featured`, `sort_order` | Destaque e ordem no menu |
+| `users.is_admin` | Concedido em `/usuarios-admin.html` (API `POST /api/admin/users/:id/admin`) |
+| `ADMIN_EMAILS` (env) | Lista de e-mails com acesso admin via Google (complementar) |
+| `admin_sessions` | Login por palavra-passe em `/login.html` |
 
-### `users` + `profile_json`
-
-Perfil do cultivador (diários `growLogs`, avatar, roteiro…) — ver secção anterior em `lib/user-auth-service.js`.
-
-## Fluxo
-
-```
-Admin / API → lib/store-sql.js → lib/db/content-repos.js → tabelas SQL
-Build estático → lê posts.json / pages.json do repo (artefactos gerados)
-Runtime (npm start) → fonte da verdade = data/budganja.db
-```
-
-## Comandos
-
-```bash
-npm run db:migrate     # schema + importar JSON se tabelas vazias
-deploy\start-now.ps1   # reiniciar servidor após mudanças em lib/
-```
-
-## Migração
-
-1. **JSON no repo** (`posts.json`, `content/pages.json`, …) → importados na primeira execução
-2. **kv_store legado** (BD v1) → copiados para tabelas dedicadas automaticamente
-3. Ficheiros JSON continuam como seed/backup; **gravações da API vão para SQL**
-
-## Produção
-
-- **Turso**: `TURSO_DATABASE_URL` + `TURSO_AUTH_TOKEN` no Netlify
-- Sem Turso: Netlify Blobs (comportamento anterior)
-
-Variáveis: `.env.example` · Backend: `lib/create-store.js`
+Painel: `usuarios-admin.html` · API: `GET /api/admin/users`, `GET /api/admin/users/:id`.

@@ -47,7 +47,7 @@
     if (!log) {
       log = {
         id: newGrowId(),
-        name: 'Meu cultivo',
+        name: 'Minha pesquisa',
         plantedAt: new Date().toISOString(),
         phase: cultivo.phase || 'germinacao',
         entries: [],
@@ -140,7 +140,7 @@
       status.textContent = result.error || 'Não foi possível guardar.';
       btn.disabled = false;
     };
-    bar.setAttribute('aria-label', 'Guardar resultado da ' + calcLabel + ' no diário de cultivo');
+    bar.setAttribute('aria-label', 'Guardar resultado da ' + calcLabel + ' no diário de pesquisas');
   }
 
   window.BudGanjaDiaryBridge = {
