@@ -104,31 +104,38 @@ async function enrichVideos(videos) {
 }
 
 async function buildCatalog() {
-  const channelId = await resolveChannelId();
-  const xml = await fetchText('https://www.youtube.com/feeds/videos.xml?channel_id=' + channelId);
-  let videos = parseRssVideos(xml).slice(0, MAX_VIDEOS);
-  videos = await enrichVideos(videos);
-
-  const emblematicId = 'yCBfY-Rg81g';
-  const emblemIdx = videos.findIndex((v) => v.id === emblematicId);
-  if (emblemIdx >= 0) {
-    videos[emblemIdx] = Object.assign({}, videos[emblemIdx], {
-      title: videos[emblemIdx].title || 'COMO PLANTAR MACONHA do ZERO (SUPER AULA)',
-      note: 'Vídeo emblemático do canal — verificado via oEmbed'
-    });
-  }
-
-  videos.sort((a, b) => {
-    if (a.published && b.published) return new Date(b.published) - new Date(a.published);
-    return (a.title || '').localeCompare(b.title || '', 'pt-BR');
-  });
-
   let catalog = {};
   if (fs.existsSync(OUT)) {
     try {
       catalog = JSON.parse(fs.readFileSync(OUT, 'utf8'));
     } catch (e) { /* fresh */ }
   }
+
+  const channelId = await resolveChannelId();
+  const xml = await fetchText('https://www.youtube.com/feeds/videos.xml?channel_id=' + channelId);
+  let rssVideos = parseRssVideos(xml).slice(0, MAX_VIDEOS);
+  rssVideos = await enrichVideos(rssVideos);
+
+  const byId = new Map();
+  (catalog.videos || []).forEach((v) => byId.set(v.id, v));
+  rssVideos.forEach((v) => {
+    const prev = byId.get(v.id) || {};
+    byId.set(v.id, Object.assign({}, prev, v));
+  });
+  let videos = [...byId.values()];
+
+  const emblematicId = 'yCBfY-Rg81g';
+  const emblem = byId.get(emblematicId) || { id: emblematicId };
+  byId.set(emblematicId, Object.assign({}, emblem, {
+    title: emblem.title || 'COMO PLANTAR MACONHA do ZERO (SUPER AULA)',
+    note: 'Vídeo emblemático do canal — verificado via oEmbed'
+  }));
+  videos = [...byId.values()];
+
+  videos.sort((a, b) => {
+    if (a.published && b.published) return new Date(b.published) - new Date(a.published);
+    return (a.title || '').localeCompare(b.title || '', 'pt-BR');
+  });
 
   const next = Object.assign({}, catalog, {
     channelId,
