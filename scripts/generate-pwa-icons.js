@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const { ROOT } = require('../lib/paths.js');
 
-const SOURCE = path.join(ROOT, 'imagens', 'avatars', 'seedling.svg');
+const SOURCE = path.join(ROOT, 'imagens', 'app-icon.svg');
 const OUT_DIR = path.join(ROOT, 'imagens');
 const FAVICON_SVG = path.join(ROOT, 'favicon.svg');
 
@@ -85,7 +85,7 @@ function buildFaviconSvg(pngBase64) {
 
 async function main() {
   if (!fs.existsSync(SOURCE)) {
-    throw new Error('Ficheiro em falta: imagens/avatars/seedling.svg');
+    throw new Error('Ficheiro em falta: imagens/app-icon.svg');
   }
 
   const sharp = await loadSharp();
@@ -108,7 +108,7 @@ async function main() {
   fs.writeFileSync(path.join(OUT_DIR, 'iconsite-processed.png'), await prepareLogo(sharp, 512));
   fs.writeFileSync(FAVICON_SVG, buildFaviconSvg(fav64.toString('base64')));
 
-  console.log('Ícones gerados a partir de imagens/avatars/seedling.svg');
+  console.log('Ícones gerados a partir de imagens/app-icon.svg');
   console.log('  → imagens/icon-192.png, icon-512.png, apple-touch-icon.png, favicon-*.png');
   console.log('  → favicon.svg (com brilho verde)');
 }

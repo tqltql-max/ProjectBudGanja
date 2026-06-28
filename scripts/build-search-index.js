@@ -10,7 +10,7 @@ const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registr
 
 const STATIC_PAGES = [
   { url: '/', title: 'Início', desc: 'Laboratório digital de cultivo vegetal', keywords: 'home laboratório' },
-  { url: '/guia/cultivo-basico.html', title: 'Guia de Cultivo Básico', desc: 'Redireciona para inspeções do guia em vídeo @InspetorBudGanja', keywords: 'guia cultivo inspeção vídeo' },
+  { url: '/biblioteca/inspecoes/', title: 'Inspeções — Guia de Cultivo Básico', desc: 'Série de inspeções com relatórios e vídeos @InspetorBudGanja', keywords: 'guia cultivo inspeção vídeo' },
   { url: '/biblioteca/pesquisas/', title: 'Pesquisas', desc: 'Relatórios e estudos técnicos', keywords: 'pesquisa relatório' },
   { url: '/biblioteca/inspecoes/', title: 'Inspeções', desc: 'Verificações de campo e inspeções técnicas', keywords: 'inspeção campo' },
   { url: '/equipamentos/', title: 'Equipamentos', desc: 'Manuais caseiros e equipamentos documentados', keywords: 'equipamento caseiro manual clonadora' },

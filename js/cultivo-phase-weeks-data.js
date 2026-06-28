@@ -69,7 +69,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "Guia de cultivo",
-          "href": "/guia/cultivo-basico.html"
+          "href": "/biblioteca/inspecoes/"
         }
       ]
     }
@@ -295,7 +295,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "Guia de cultivo",
-          "href": "/guia/cultivo-basico.html"
+          "href": "/biblioteca/inspecoes/"
         }
       ]
     },
@@ -367,7 +367,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "tools": [
         {
           "label": "Guia de cultivo",
-          "href": "/guia/cultivo-basico.html"
+          "href": "/biblioteca/inspecoes/"
         }
       ]
     }

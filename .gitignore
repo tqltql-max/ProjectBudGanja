@@ -37,8 +37,11 @@ data/
 !data/.gitkeep
 !data/backups/.gitkeep
 
-# Sessões locais de dev
+# Sessões e dados de utilizador locais (não versionar)
 content/sessions.json
+content/users.json
+content/user-sessions.json
+content/oauth-states.json
 
 # Android TWA (Play Store) — chaves e build local
 deploy/android/bubblewrap-project/

@@ -1,13 +1,47 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '190';
+const ASSET_V = '194';
 
 let deferredInstallPrompt = null;
 let installFloatingBtn = null;
+const PWA_INSTALL_STATE_KEY = 'budganja_pwa_install_state';
 
 function isStandaloneApp() {
   return window.matchMedia('(display-mode: standalone)').matches
     || window.navigator.standalone === true;
+}
+
+function isIosInstallable() {
+  if (isStandaloneApp()) return false;
+  const ua = navigator.userAgent || '';
+  const ios = /iPad|iPhone|iPod/.test(ua)
+    || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  return ios;
+}
+
+function isInstallDismissedRecently() {
+  try {
+    const raw = localStorage.getItem(PWA_INSTALL_STATE_KEY);
+    if (!raw) return false;
+    const data = JSON.parse(raw);
+    if (data.dismissedUntil && Date.now() < data.dismissedUntil) return true;
+    localStorage.removeItem(PWA_INSTALL_STATE_KEY);
+  } catch (e) { /* ignore */ }
+  return false;
+}
+
+function rememberInstallDismissed() {
+  try {
+    localStorage.setItem(PWA_INSTALL_STATE_KEY, JSON.stringify({
+      dismissedUntil: Date.now() + 7 * 24 * 60 * 60 * 1000
+    }));
+  } catch (e) { /* ignore */ }
+}
+
+function canShowInstallUi() {
+  if (isStandaloneApp()) return false;
+  if (deferredInstallPrompt) return true;
+  return isIosInstallable();
 }
 
 function showInstallButtons() {
@@ -19,29 +53,73 @@ function hideInstallButtons() {
 }
 
 function refreshInstallVisibility() {
-  if (isStandaloneApp()) {
-    hideInstallButtons();
-    return;
-  }
-  if (installFloatingBtn) {
+  if (!installFloatingBtn) return;
+  if (canShowInstallUi()) {
     installFloatingBtn.classList.remove('is-hidden');
+  } else {
+    installFloatingBtn.classList.add('is-hidden');
   }
+}
+
+function showIosInstallSheet() {
+  let sheet = document.getElementById('pwa-ios-install-sheet');
+  if (!sheet) {
+    sheet = document.createElement('div');
+    sheet.id = 'pwa-ios-install-sheet';
+    sheet.className = 'pwa-install-sheet';
+    sheet.setAttribute('role', 'dialog');
+    sheet.setAttribute('aria-modal', 'true');
+    sheet.setAttribute('aria-labelledby', 'pwa-ios-install-title');
+    sheet.innerHTML =
+      '<div class="pwa-install-sheet-backdrop" data-close="1"></div>' +
+      '<div class="pwa-install-sheet-panel">' +
+      '<h2 id="pwa-ios-install-title">Instalar BudGanja</h2>' +
+      '<p>No iPhone ou iPad: toque em <strong>Compartilhar</strong> ' +
+      '<span class="pwa-ios-share-icon" aria-hidden="true">⎋</span> ' +
+      'e depois em <strong>Adicionar à Tela de Início</strong>.</p>' +
+      '<button type="button" class="botao pwa-install-sheet-close">Entendi</button>' +
+      '</div>';
+    sheet.querySelector('[data-close]').addEventListener('click', () => { sheet.hidden = true; });
+    sheet.querySelector('.pwa-install-sheet-close').addEventListener('click', () => { sheet.hidden = true; });
+    document.body.appendChild(sheet);
+  }
+  sheet.hidden = false;
 }
 
 async function promptInstallApp() {
   if (deferredInstallPrompt) {
-    deferredInstallPrompt.prompt();
-    const choice = await deferredInstallPrompt.userChoice;
-    if (choice.outcome === 'accepted') hideInstallButtons();
-    deferredInstallPrompt = null;
-    return choice.outcome === 'accepted';
+    try {
+      await deferredInstallPrompt.prompt();
+      const choice = await deferredInstallPrompt.userChoice;
+      deferredInstallPrompt = null;
+      if (choice.outcome === 'accepted') {
+        hideInstallButtons();
+        return true;
+      }
+      if (choice.outcome === 'dismissed') rememberInstallDismissed();
+      refreshInstallVisibility();
+      return false;
+    } catch (e) {
+      deferredInstallPrompt = null;
+      refreshInstallVisibility();
+      return false;
+    }
   }
 
-  window.alert(
-    'Para instalar: no Chrome ou Edge, abra o menu do navegador (⋮) e escolha "Instalar app" ou "Instalar Inspetor BudGanja". ' +
-    'No iPhone, use Compartilhar → "Adicionar à Tela de Início".'
-  );
+  if (isIosInstallable()) {
+    showIosInstallSheet();
+  }
   return false;
+}
+
+async function tryAutoInstallPrompt() {
+  if (isStandaloneApp() || isInstallDismissedRecently() || !deferredInstallPrompt) return;
+  try {
+    if (sessionStorage.getItem('budganja_pwa_auto_prompt') === '1') return;
+    sessionStorage.setItem('budganja_pwa_auto_prompt', '1');
+  } catch (e) { /* ignore */ }
+  await new Promise((resolve) => setTimeout(resolve, 1500));
+  if (deferredInstallPrompt) await promptInstallApp();
 }
 
 function initInstallUi() {
@@ -50,7 +128,8 @@ function initInstallUi() {
     floating.type = 'button';
     floating.textContent = '\uD83D\uDCF2 Instalar app';
     floating.className = 'install-prompt is-hidden';
-    floating.addEventListener('click', promptInstallApp);
+    floating.setAttribute('aria-label', 'Instalar aplicativo BudGanja');
+    floating.addEventListener('click', () => { void promptInstallApp(); });
     document.body.appendChild(floating);
     installFloatingBtn = floating;
   }
@@ -62,11 +141,13 @@ window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredInstallPrompt = e;
   showInstallButtons();
+  void tryAutoInstallPrompt();
 });
 
 window.addEventListener('appinstalled', () => {
   deferredInstallPrompt = null;
   hideInstallButtons();
+  try { localStorage.removeItem(PWA_INSTALL_STATE_KEY); } catch (err) { /* ignore */ }
 });
 
 const APP_VERSION_KEY = 'budganja_app_version';
@@ -928,7 +1009,7 @@ function buildHeaderHTML(site, authState) {
     '<div class="logo">' +
     '<a href="/" class="logo-link">' +
     '<span class="logo-mark" aria-hidden="true">' +
-    '<img class="logo-mark-img" src="/imagens/avatars/seedling.svg?v=' + ASSET_V + '" alt="" width="42" height="42" decoding="async">' +
+    '<img class="logo-mark-img" src="/imagens/app-icon.svg?v=' + ASSET_V + '" alt="" width="42" height="42" decoding="async">' +
     '</span>' +
     '<span class="logo-copy">' +
     '<span class="logo-name">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
@@ -1129,7 +1210,7 @@ function buildFooterHTML(site) {
   const brandHtml =
     '<div class="footer-brand">' +
     '<a href="/" class="footer-brand-link">' +
-    '<img class="footer-brand-icon" src="/imagens/avatars/seedling.svg?v=' + ASSET_V + '" alt="" width="32" height="32" loading="lazy" decoding="async">' +
+    '<img class="footer-brand-icon" src="/imagens/app-icon.svg?v=' + ASSET_V + '" alt="" width="32" height="32" loading="lazy" decoding="async">' +
     '<span class="footer-brand-name">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
     '</a>' +
     '<p class="footer-brand-tagline">' + escapeNavText(i18n('footer.tagline', config.siteTagline || DEFAULT_SITE.siteTagline || '')) + '</p>' +

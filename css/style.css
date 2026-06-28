@@ -5268,6 +5268,57 @@ body[data-page="home"] .botao-home.has-hover-tip {
     }
 }
 
+.pwa-install-sheet[hidden] {
+    display: none !important;
+}
+
+.pwa-install-sheet {
+    position: fixed;
+    inset: 0;
+    z-index: calc(var(--z-install, 9000) + 10);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 16px;
+}
+
+.pwa-install-sheet-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.pwa-install-sheet-panel {
+    position: relative;
+    width: min(100%, 420px);
+    margin-bottom: env(safe-area-inset-bottom, 0);
+    padding: 20px 20px 16px;
+    border-radius: var(--radius-lg, 16px);
+    background: var(--color-surface, #1e1e1e);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45);
+}
+
+.pwa-install-sheet-panel h2 {
+    margin: 0 0 10px;
+    font-size: 1.15rem;
+}
+
+.pwa-install-sheet-panel p {
+    margin: 0 0 16px;
+    line-height: 1.5;
+    color: var(--color-text-soft);
+}
+
+.pwa-ios-share-icon {
+    display: inline-block;
+    font-weight: 700;
+}
+
+.pwa-install-sheet-close {
+    width: 100%;
+}
+
 /* Estilos para Features */
 .features {
     background: var(--color-bg);

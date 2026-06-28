@@ -8,6 +8,7 @@
 const { mergeGuiaInspecoesPosts, sortPublicPosts, GUIA_INSPECOES_POSTS } = require('../lib/merge-guia-inspecoes.js');
 const { CHANNEL_INSPECOES_POSTS } = require('../lib/channel-inspecoes-posts.js');
 const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registry.js');
+const { ROOT } = require('../lib/paths.js');
 
 let passed = 0;
 let failed = 0;
@@ -40,6 +41,9 @@ assert('seriesOrder guia #1', firstGuia && firstGuia.seriesOrder === 1);
 const jardim = inspecoes.find((p) => p.slug === 'inspecao-canal-jardimhg');
 assert('Jardim HG seriesOrder 10', jardim && jardim.seriesOrder === 10);
 
+const jardimCatalog = JSON.parse(require('fs').readFileSync(require('path').join(ROOT, 'content/channels/jardimhg.json'), 'utf8'));
+assert('Jardim HG catálogo >= 30 vídeos', (jardimCatalog.videoCount || jardimCatalog.videos?.length || 0) >= 30);
+
 assert('7 posts guia', GUIA_INSPECOES_POSTS.length === 7);
 assert('posts guia têm @youtube ou body', GUIA_INSPECOES_POSTS.every((p) => /@youtube\s+\S+/.test(p.content_raw || '')));
 
@@ -48,6 +52,13 @@ const sample = GUIA_INSPECOES_POSTS[0];
 const videoLd = buildVideoObjectJson(sample, sample.coverImage);
 assert('VideoObject no guia #1', videoLd && videoLd['@type'] === 'VideoObject' && videoLd.embedUrl);
 assert('guia #1 tem excerpt EN', !!sample.excerptEn);
+
+const { publishStaticAssets } = require('../lib/publish-static.js');
+publishStaticAssets(ROOT);
+const feed = JSON.parse(require('fs').readFileSync(require('path').join(ROOT, 'posts-public.json'), 'utf8'));
+const guiaFeed = feed.find((p) => p.slug === 'inspecao-cultivo-inicio');
+assert('posts-public tem series', guiaFeed && guiaFeed.series === 'guia-cultivo-basico');
+assert('posts-public coverImage absoluto', !feed.some((p) => p.coverImage && !p.coverImage.startsWith('/') && !/^https?:/i.test(p.coverImage)));
 
 assert('calculadoras registry', CALCULADORAS.length >= 9);
 CALCULADORAS.forEach((c) => {

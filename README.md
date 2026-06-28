@@ -36,7 +36,7 @@ Detalhes: [`docs/GIT.md`](docs/GIT.md) · copie `.env.example` → `.env`
 | **Ferramentas** | [Calculadoras](/calculadoras/), [Luxímetro](/calculadoras/luximetro.html) |
 | **Conteúdo** | [Sorteios](/sorteios/), [Últimos vídeos](/videos/), [Loja parceira](/loja/) |
 
-> O antigo [Guia de Cultivo](/guia/cultivo-basico.html) redireciona para as [Inspeções](/biblioteca/inspecoes/) — cada capítulo em vídeo virou relatório técnico com embed do YouTube.
+> O antigo guia em `/guia/cultivo-basico.html` redireciona para as [Inspeções](/biblioteca/inspecoes/) — cada capítulo em vídeo virou relatório técnico com embed do YouTube.
 
 ## Funcionalidades
 

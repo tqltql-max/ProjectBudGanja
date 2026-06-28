@@ -247,7 +247,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-canal-jardimhg.html",
               "icon": "🔍",
               "slug": "post-inspecao-canal-jardimhg",
-              "description": "Auditoria editorial do canal Jardim HG — 15 vídeos catalogados sobre cultivo medicinal indoor/outdoor, com créditos integrais ao criador."
+              "description": "Auditoria editorial do canal Jardim HG — 123 vídeos catalogados sobre cultivo medicinal indoor/outdoor, com créditos integrais ao criador."
             },
             {
               "label": "Inspeção: Sistema de Ventilação da Tenda",
