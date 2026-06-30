@@ -94,13 +94,25 @@ document.addEventListener('DOMContentLoaded', async () => {
   function showList() {
     currentId = null;
     currentUser = null;
-    if (listPanel) listPanel.hidden = false;
-    if (detailPanel) detailPanel.hidden = true;
+    if (listPanel) {
+      listPanel.hidden = false;
+      listPanel.removeAttribute('hidden');
+    }
+    if (detailPanel) {
+      detailPanel.hidden = true;
+      detailPanel.setAttribute('hidden', '');
+    }
   }
 
   function showDetail() {
-    if (listPanel) listPanel.hidden = true;
-    if (detailPanel) detailPanel.hidden = false;
+    if (listPanel) {
+      listPanel.hidden = true;
+      listPanel.setAttribute('hidden', '');
+    }
+    if (detailPanel) {
+      detailPanel.hidden = false;
+      detailPanel.removeAttribute('hidden');
+    }
   }
 
   async function loadUsers() {
@@ -111,7 +123,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       const res = await fetch('/api/admin/users' + qs, { credentials: 'include' });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
-        if (tableBody) tableBody.innerHTML = '<tr><td colspan="8">' + escapeHtml(data.error || 'Erro ao carregar.') + '</td></tr>';
+        const msg = data.error || 'Erro ao carregar utilizadores.';
+        if (statsEl) statsEl.innerHTML = '';
+        if (countEl) countEl.textContent = msg;
+        if (tableBody) {
+          tableBody.innerHTML = '<tr><td colspan="8">' + escapeHtml(msg) + '</td></tr>';
+        }
         return;
       }
       const list = data.users || [];

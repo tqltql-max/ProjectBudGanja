@@ -337,13 +337,17 @@ html[data-theme="light"] .botao-outline:hover {
 
 .cultivo-section-nav-btn {
     flex: 0 0 auto;
+    appearance: none;
+    -webkit-appearance: none;
     border: 1px solid rgba(255, 255, 255, 0.14);
     background: rgba(255, 255, 255, 0.04);
     color: inherit;
     border-radius: 999px;
     padding: 8px 14px;
+    font-family: inherit;
     font-size: 0.82rem;
     font-weight: 600;
+    line-height: 1.2;
     cursor: pointer;
     transition: background 0.15s ease, border-color 0.15s ease;
 }
@@ -352,6 +356,14 @@ html[data-theme="light"] .botao-outline:hover {
     background: rgba(39, 174, 96, 0.18);
     border-color: var(--color-accent);
     color: var(--color-accent-light, #9fd89f);
+}
+
+.cultivo-section-nav-btn:hover,
+.cultivo-section-nav-btn:focus-visible {
+    background: rgba(39, 174, 96, 0.16);
+    border-color: var(--color-accent);
+    color: var(--color-accent-light, #9fd89f);
+    outline: none;
 }
 
 .cultivo-hub-card-badge {
@@ -1346,6 +1358,7 @@ html[data-theme="light"] .perfil-phase-btn {
     body.perfil-print-mode .perfil-tabs,
     body.perfil-print-mode .perfil-hub-header,
     body.perfil-print-mode .perfil-grow-back,
+    body.perfil-print-mode .cultivo-grow-actions-menu,
     body.perfil-print-mode .perfil-grow-detail-actions,
     body.perfil-print-mode .perfil-grow-entry-form,
     body.perfil-print-mode .perfil-grow-new-form,
@@ -2119,8 +2132,26 @@ html[data-theme="light"] .ia-msg--assistant {
   display: none;
 }
 
-.cultivo-hub-hero {
+.cultivo-hub-hero,
+.cultivo-hub-topbar {
   margin-bottom: 1.25rem;
+}
+
+.cultivo-hub-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem 1.25rem;
+}
+
+.cultivo-hub-topbar-copy {
+  flex: 1 1 240px;
+  min-width: 0;
+}
+
+.cultivo-hub-summary {
+  margin: 0;
 }
 
 .cultivo-hub-eyebrow {
@@ -2137,9 +2168,495 @@ html[data-theme="light"] .ia-msg--assistant {
 }
 
 .cultivo-hub-new-btn {
-  margin-top: 1rem;
-  width: 100%;
-  max-width: 320px;
+  flex: 0 0 auto;
+  align-self: center;
+  min-width: 180px;
+}
+
+.cultivo-hub-view [hidden] {
+  display: none !important;
+}
+
+.cultivo-hub-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+}
+
+.cultivo-hub-stat strong {
+  color: var(--color-accent-light);
+  font-weight: 700;
+}
+
+.cultivo-hub-stat--alert {
+  border-color: rgba(201, 162, 39, 0.45);
+  background: rgba(201, 162, 39, 0.12);
+  color: var(--color-warn, #c9a227);
+}
+
+.cultivo-hub-stat--alert strong {
+  color: var(--color-warn, #c9a227);
+}
+
+.cultivo-hub-empty {
+  text-align: center;
+  align-items: center;
+  max-width: 520px;
+  margin: 0 auto 1.5rem;
+  padding: clamp(20px, 4vw, 28px);
+}
+
+.cultivo-hub-empty-icon {
+  margin-inline: auto;
+}
+
+.cultivo-hub-empty-title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--color-accent-light);
+}
+
+.cultivo-hub-empty-text {
+  margin: 0 0 1rem;
+  max-width: 36ch;
+  margin-inline: auto;
+}
+
+.cultivo-hub-empty-btn {
+  margin-top: 0;
+}
+
+.cultivo-research-stat--alert {
+  border-color: rgba(201, 162, 39, 0.4);
+  background: rgba(201, 162, 39, 0.1);
+}
+
+.cultivo-research-stat--alert .cultivo-research-stat-value {
+  color: var(--color-warn, #c9a227);
+}
+
+.cultivo-grow-header.card.cultivo-research-card {
+  padding: clamp(16px, 2.5vw, 20px);
+  overflow: visible;
+}
+
+.cultivo-grow-header .cultivo-grow-title {
+  margin: 0 0 0.25rem;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  line-height: 1.25;
+}
+
+.cultivo-grow-header.cultivo-research-card--germinacao .cultivo-grow-title {
+  color: var(--color-accent-light);
+}
+
+.cultivo-grow-header.cultivo-research-card--planejamento .cultivo-grow-title {
+  color: #9ec5ff;
+}
+
+.cultivo-grow-header.cultivo-research-card--vegetativo .cultivo-grow-title {
+  color: #a8d48a;
+}
+
+.cultivo-grow-header.cultivo-research-card--floracao .cultivo-grow-title {
+  color: #ffc98a;
+}
+
+.cultivo-grow-header.cultivo-research-card--colheita .cultivo-grow-title {
+  color: #d4b8ff;
+}
+
+.cultivo-research-grid {
+  display: grid;
+  gap: var(--gap-grid, 20px);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  margin: 0 0 var(--space-section, 1.5rem);
+}
+
+.cultivo-research-card.card {
+  padding: 0;
+  overflow: hidden;
+  min-height: auto;
+  height: auto;
+  text-align: left;
+}
+
+.cultivo-research-card-link {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: clamp(16px, 2.5vw, 20px);
+  text-decoration: none;
+  color: inherit;
+  text-align: left;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.cultivo-research-card-link,
+.cultivo-research-card-link:visited,
+.cultivo-research-card-link:hover,
+.cultivo-research-card-link:active,
+.cultivo-research-card-link:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cultivo-research-card-link *,
+.cultivo-research-card-link:visited * {
+  text-decoration: none;
+}
+
+.cultivo-research-card-link:hover,
+.cultivo-research-card-link:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cultivo-research-card-link:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: -2px;
+}
+
+.cultivo-research-card--planejamento.card {
+  border: 1px solid rgba(126, 184, 255, 0.4);
+  background: linear-gradient(160deg, rgba(126, 184, 255, 0.12) 0%, rgba(42, 42, 42, 1) 55%);
+  box-shadow: 0 0 0 1px rgba(126, 184, 255, 0.08), var(--shadow-card);
+}
+
+.cultivo-research-card--germinacao.card {
+  border: 1px solid rgba(39, 174, 96, 0.45);
+  background: linear-gradient(160deg, rgba(39, 174, 96, 0.14) 0%, rgba(42, 42, 42, 1) 55%);
+  box-shadow: 0 0 0 1px rgba(46, 204, 113, 0.08), var(--shadow-card);
+}
+
+.cultivo-research-card--vegetativo.card {
+  border: 1px solid rgba(61, 92, 40, 0.45);
+  background: linear-gradient(160deg, rgba(61, 92, 40, 0.14) 0%, rgba(42, 42, 42, 1) 55%);
+  box-shadow: 0 0 0 1px rgba(61, 92, 40, 0.1), var(--shadow-card);
+}
+
+.cultivo-research-card--floracao.card {
+  border: 1px solid rgba(255, 184, 107, 0.4);
+  background: linear-gradient(160deg, rgba(255, 184, 107, 0.12) 0%, rgba(42, 42, 42, 1) 55%);
+  box-shadow: 0 0 0 1px rgba(255, 184, 107, 0.08), var(--shadow-card);
+}
+
+.cultivo-research-card--colheita.card {
+  border: 1px solid rgba(201, 160, 255, 0.38);
+  background: linear-gradient(160deg, rgba(201, 160, 255, 0.12) 0%, rgba(42, 42, 42, 1) 55%);
+  box-shadow: 0 0 0 1px rgba(201, 160, 255, 0.08), var(--shadow-card);
+}
+
+.cultivo-research-card--germinacao .cultivo-research-card-name {
+  color: var(--color-accent-light);
+}
+
+.cultivo-research-card--vegetativo .cultivo-research-card-name {
+  color: #a8d48a;
+}
+
+.cultivo-research-card--floracao .cultivo-research-card-name {
+  color: #ffc98a;
+}
+
+.cultivo-research-card--colheita .cultivo-research-card-name {
+  color: #d4b8ff;
+}
+
+.cultivo-research-card--planejamento .cultivo-research-card-name {
+  color: #9ec5ff;
+}
+
+html[data-theme="light"] .cultivo-research-card.card {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.98) 0%, rgba(245, 245, 245, 1) 55%);
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+html[data-theme="light"] .cultivo-research-card--germinacao.card {
+  background: linear-gradient(160deg, rgba(39, 174, 96, 0.1) 0%, rgba(255, 255, 255, 1) 55%);
+}
+
+.cultivo-research-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.cultivo-research-card-body {
+  margin-bottom: 0.85rem;
+}
+
+.cultivo-research-card.card h3.cultivo-research-card-name {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+}
+
+.cultivo-research-card-phase-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.cultivo-research-card--germinacao .cultivo-research-card-name {
+  color: var(--color-accent-light);
+}
+
+.cultivo-research-card--planejamento .cultivo-research-card-name {
+  color: #9ec5ff;
+}
+
+.cultivo-research-card--vegetativo .cultivo-research-card-name {
+  color: #a8d48a;
+}
+
+.cultivo-research-card--floracao .cultivo-research-card-name {
+  color: #ffc98a;
+}
+
+.cultivo-research-card--colheita .cultivo-research-card-name {
+  color: #d4b8ff;
+}
+
+.cultivo-research-card-stats {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.cultivo-research-stat {
+  min-height: 2.6rem;
+  padding: 0.35rem 0.25rem;
+}
+
+.cultivo-research-stat-value {
+  font-size: 1rem;
+}
+
+.cultivo-research-card-top,
+.cultivo-research-phase-icon,
+.cultivo-research-card-heading {
+  display: none;
+}
+
+.cultivo-research-card-status-wrap {
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.cultivo-research-card-status-wrap .cultivo-hub-card-badge {
+  margin-top: 0;
+}
+
+.cultivo-research-card-phase-pill {
+  display: inline-block;
+  margin: 0 0 0.35rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent-light);
+  background: rgba(39, 174, 96, 0.14);
+  border: 1px solid rgba(39, 174, 96, 0.28);
+}
+
+.cultivo-research-card--planejamento .cultivo-research-card-phase-pill {
+  color: #9ec5ff;
+  background: rgba(126, 184, 255, 0.14);
+  border-color: rgba(126, 184, 255, 0.28);
+}
+
+.cultivo-research-card--floracao .cultivo-research-card-phase-pill {
+  color: #ffc98a;
+  background: rgba(255, 184, 107, 0.14);
+  border-color: rgba(255, 184, 107, 0.28);
+}
+
+.cultivo-research-card--colheita .cultivo-research-card-phase-pill {
+  color: #d4b8ff;
+  background: rgba(201, 160, 255, 0.14);
+  border-color: rgba(201, 160, 255, 0.28);
+}
+
+.cultivo-research-card.card h3.cultivo-research-card-name {
+  margin: 0 0 0.25rem;
+  margin-top: 0;
+  font-family: inherit;
+  font-size: clamp(0.92rem, 1.8vw, 1.05rem);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.cultivo-research-card-species {
+  margin: 0;
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+}
+
+.cultivo-research-card-muted {
+  color: var(--color-text-soft);
+  font-style: italic;
+}
+
+.cultivo-research-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.85rem;
+}
+
+.cultivo-research-card-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.18);
+}
+
+html[data-theme="light"] .cultivo-research-card-stats {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+.cultivo-research-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  min-height: 3.1rem;
+  padding: 0.45rem 0.35rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.03);
+  text-align: center;
+}
+
+html[data-theme="light"] .cultivo-research-stat {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+.cultivo-research-stat-label {
+  display: block;
+  font-family: inherit;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-text-soft);
+  line-height: 1.2;
+}
+
+.cultivo-research-stat-value {
+  display: block;
+  font-family: inherit;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--color-accent-light);
+}
+
+.cultivo-research-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-top: 0.65rem;
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.cultivo-research-card-meta {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--color-text-soft);
+}
+
+.cultivo-research-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-accent-light);
+  white-space: nowrap;
+}
+
+.cultivo-research-card:hover .cultivo-research-card-cta {
+  color: var(--color-text);
+}
+
+.cultivo-research-card-arrow {
+  transition: transform var(--transition-fast);
+}
+
+.cultivo-research-card:hover .cultivo-research-card-arrow {
+  transform: translateX(3px);
+}
+
+.cultivo-research-card-quick {
+  padding: 0.75rem clamp(16px, 2.5vw, 20px) clamp(14px, 2.5vw, 18px);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.22);
+}
+
+html[data-theme="light"] .cultivo-research-card-quick {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.cultivo-research-quick-label {
+  margin: 0 0 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-soft);
+}
+
+.cultivo-research-quick-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.cultivo-research-quick-btn {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: center;
+}
+
+.cultivo-research-quick-btn:hover,
+.cultivo-research-quick-btn:focus-visible {
+  outline: none;
+}
+
+@media (max-width: 520px) {
+  .cultivo-research-card-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cultivo-research-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cultivo-hub-new-btn {
+    width: 100%;
+  }
 }
 
 .cultivo-hub-grid {
@@ -2149,6 +2666,107 @@ html[data-theme="light"] .ia-msg--assistant {
   display: grid;
   gap: 0.75rem;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.cultivo-hub-table-wrap {
+  margin: 0 0 1.5rem;
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.cultivo-hub-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.cultivo-hub-table th,
+.cultivo-hub-table td {
+  padding: 0.75rem 0.85rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  vertical-align: middle;
+}
+
+.cultivo-hub-table th {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-soft);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cultivo-hub-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.cultivo-hub-row {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.cultivo-hub-row:hover {
+  background: rgba(39, 174, 96, 0.08);
+}
+
+.cultivo-hub-td-name strong {
+  font-weight: 600;
+}
+
+.cultivo-hub-td-num,
+.cultivo-hub-th-num {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.cultivo-hub-td-action {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.cultivo-hub-day {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-soft);
+  margin-top: 0.15rem;
+}
+
+.cultivo-hub-muted {
+  color: var(--color-text-soft);
+}
+
+.cultivo-hub-status {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  white-space: nowrap;
+}
+
+.cultivo-hub-status.is-pending {
+  background: rgba(255, 193, 7, 0.15);
+  color: #ffc107;
+}
+
+.cultivo-hub-status.is-approved {
+  background: rgba(39, 174, 96, 0.15);
+  color: #6ecf9a;
+}
+
+.cultivo-hub-status.is-rejected {
+  background: rgba(231, 76, 60, 0.12);
+  color: #e88a80;
+}
+
+@media (max-width: 720px) {
+  .cultivo-hub-table th:nth-child(2),
+  .cultivo-hub-table td:nth-child(2) {
+    display: none;
+  }
 }
 
 .cultivo-hub-card-btn {
@@ -2180,12 +2798,6 @@ html[data-theme="light"] .ia-msg--assistant {
   font-size: 0.85rem;
   color: var(--color-text-soft);
   line-height: 1.4;
-}
-
-.cultivo-hub-empty {
-  text-align: center;
-  color: var(--color-text-soft);
-  margin: 0 0 1rem;
 }
 
 .cultivo-phase-field {
@@ -2281,8 +2893,70 @@ html[data-theme="light"] .cultivo-phase-chip.is-active {
 }
 
 .cultivo-wizard-card {
-  max-width: 520px;
+  max-width: 640px;
   margin: 0 auto 1.5rem;
+}
+
+.cultivo-wizard-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-stack);
+  margin-top: 1.25rem;
+}
+
+.cultivo-wizard-form .login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 500;
+  color: var(--color-label);
+}
+
+.cultivo-wizard-form input,
+.cultivo-wizard-form select {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  background: var(--color-surface);
+  border: var(--border-input);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.cultivo-wizard-form input:focus,
+.cultivo-wizard-form select:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.15);
+}
+
+.cultivo-wizard-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ffffff' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  padding-right: 2.25rem;
+}
+
+html[data-theme="light"] .cultivo-wizard-form select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333333' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+}
+
+.cultivo-wizard-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: var(--gap-stack);
+}
+
+@media (max-width: 520px) {
+  .cultivo-wizard-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cultivo-wizard-form .conta-actions {
+  margin-top: 0.5rem;
 }
 
 .cultivo-wizard-back,
@@ -2294,9 +2968,28 @@ html[data-theme="light"] .cultivo-phase-chip.is-active {
   margin-bottom: 1.25rem;
 }
 
-.cultivo-grow-title {
-  margin: 0 0 0.35rem;
-  font-size: 1.4rem;
+.cultivo-grow-header-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.cultivo-grow-header-icon {
+  margin: 0;
+}
+
+.cultivo-grow-header-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.cultivo-grow-header-tags {
+  margin-bottom: 0.75rem;
+}
+
+.cultivo-grow-header-stats {
+  margin-bottom: 0.75rem;
 }
 
 .cultivo-grow-meta,
@@ -2323,8 +3016,163 @@ html[data-theme="light"] .cultivo-phase-chip.is-active {
   margin-top: 0;
 }
 
-.cultivo-grow-actions {
-  margin: 0.75rem 0 1rem;
+.cultivo-section-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.cultivo-section-head-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.cultivo-section-head .cultivo-section-title {
+  margin: 0 0 0.35rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.cultivo-section-head .cultivo-section-intro {
+  margin: 0;
+}
+
+.cultivo-grow-actions-menu {
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.cultivo-grow-actions-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.cultivo-grow-actions-toggle:hover,
+.cultivo-grow-actions-toggle:focus-visible {
+  border-color: var(--color-accent);
+  background: rgba(39, 174, 96, 0.14);
+  color: var(--color-accent-light);
+  outline: none;
+}
+
+.cultivo-grow-actions-menu.is-open .cultivo-grow-actions-toggle {
+  border-color: var(--color-accent);
+  background: rgba(39, 174, 96, 0.18);
+  color: var(--color-accent-light);
+}
+
+.cultivo-grow-actions-bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 18px;
+}
+
+.cultivo-grow-actions-bars span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+html[data-theme="light"] .cultivo-grow-actions-toggle {
+  border-color: rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.cultivo-grow-actions-panel {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 50;
+  min-width: min(100vw - 32px, 260px);
+  padding: 0.35rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(145deg, rgba(42, 42, 42, 0.98) 0%, rgba(33, 33, 33, 1) 100%);
+  box-shadow: var(--shadow-soft);
+}
+
+.cultivo-grow-actions-panel[hidden] {
+  display: none !important;
+}
+
+.cultivo-grow-actions-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.3;
+  padding: 0.55rem 0.75rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.cultivo-grow-actions-item:hover:not(:disabled),
+.cultivo-grow-actions-item:focus-visible:not(:disabled) {
+  background: rgba(39, 174, 96, 0.14);
+  color: var(--color-accent-light);
+  outline: none;
+}
+
+.cultivo-grow-actions-item:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.cultivo-grow-actions-item--primary {
+  color: var(--color-accent-light);
+}
+
+.cultivo-grow-actions-item--danger {
+  color: var(--color-danger, #e74c3c);
+}
+
+.cultivo-grow-actions-item--danger:hover:not(:disabled),
+.cultivo-grow-actions-item--danger:focus-visible:not(:disabled) {
+  background: rgba(204, 68, 68, 0.12);
+  color: #ff8a8a;
+}
+
+.cultivo-grow-actions-divider {
+  height: 1px;
+  margin: 0.25rem 0.35rem;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="light"] .cultivo-grow-actions-panel {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.98) 0%, rgba(245, 245, 245, 1) 100%);
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme="light"] .cultivo-grow-actions-divider {
+  background: rgba(0, 0, 0, 0.08);
 }
 
 .sr-only {

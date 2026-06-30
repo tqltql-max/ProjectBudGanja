@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Planeie a infraestrutura do seu cultivo — lista de equipamentos, estufa e orçamento estimado.">
+    <meta property="og:title" content="Planejamento de infraestrutura | Inspetor BudGanja">
+    <meta property="og:description" content="Organize os itens que pretende comprar para montar estufa, iluminação, ventilação e mais.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/imagens/icon-512.png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/imagens/favicon-32.png?v=207" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=207" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=207">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3d5c28">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
+    <link rel="stylesheet" href="/css/style.css?v=208">
+    <link rel="stylesheet" href="/css/pages/cultivo-perfil.css?v=208">
+    <link rel="stylesheet" href="/css/pages/planejamento.css?v=208">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Planejamento de infraestrutura | Inspetor BudGanja</title>
+</head>
+<body data-page="planejamento">
+    <div id="site-header"></div>
+
+    <main id="main-content" class="conteudo-interno perfil-page planejamento-page">
+
+    <div id="planejamento-loading" class="conta-status">A carregar o seu planejamento…</div>
+
+    <div id="planejamento-login" class="info-panel highlight-card planejamento-login" hidden>
+      <h2>Inicie sessão</h2>
+      <p class="page-intro">O planejamento de infraestrutura fica guardado na sua conta — estufa, luzes, ventilação e orçamento.</p>
+      <a href="/login.html?return=/planejamento/" class="botao">Entrar</a>
+    </div>
+
+    <div id="planejamento-onboarding" class="info-panel highlight-card planejamento-onboarding" hidden>
+      <h2>Complete o cadastro</h2>
+      <p class="page-intro">Informe nome e idade na sua conta antes de criar o planejamento.</p>
+      <a href="/perfil.html" class="botao">Ir para Minha conta</a>
+    </div>
+
+    <div id="planejamento-app" hidden>
+
+      <header class="perfil-hub-header">
+        <div class="perfil-hub-identity">
+          <img id="planejamento-avatar" class="conta-avatar perfil-hub-avatar" src="/imagens/avatars/greenhouse.svg" alt="" width="64" height="64">
+          <div>
+            <p class="perfil-hub-eyebrow">Laboratório · montagem</p>
+            <h1 id="planejamento-title">Planejamento de infraestrutura</h1>
+            <p id="planejamento-subtitle" class="conta-email">Lista o que precisa comprar para montar a estufa ou gabinete.</p>
+          </div>
+        </div>
+        <div class="perfil-hub-actions conta-actions">
+          <a href="/perfil.html" class="botao botao-outline botao-sm">Minha conta</a>
+          <a href="/cultivo/" class="botao botao-outline botao-sm">Diário</a>
+        </div>
+      </header>
+
+      <p id="planejamento-live-status" class="perfil-live-status" role="status" aria-live="polite" hidden></p>
+
+      <section class="planejamento-topbar info-panel highlight-card">
+        <div class="planejamento-topbar-copy">
+          <h2 class="planejamento-section-title">O que vai montar?</h2>
+          <p class="page-intro">Adicione tenda, luzes, exaustor, substrato e o resto. Marque como comprado quando tiver o item.</p>
+        </div>
+        <div id="planejamento-stats" class="planejamento-stats" role="group" aria-label="Resumo do planejamento"></div>
+      </section>
+
+      <section class="planejamento-form-card info-panel highlight-card" aria-labelledby="planejamento-form-title">
+        <h2 id="planejamento-form-title" class="planejamento-section-title">Adicionar item</h2>
+        <form id="planejamento-item-form" class="planejamento-item-form">
+          <label class="login-field conta-field" for="planejamento-item-name">Item
+            <input type="text" id="planejamento-item-name" maxlength="120" required placeholder="Ex.: Tenda 80×80, LED 240W, exaustor…" autocomplete="off">
+          </label>
+          <div class="planejamento-form-row">
+            <label class="login-field conta-field" for="planejamento-item-category">Categoria
+              <select id="planejamento-item-category" required></select>
+            </label>
+            <label class="login-field conta-field" for="planejamento-item-qty">Qtd.
+              <input type="number" id="planejamento-item-qty" min="1" max="99" value="1" inputmode="numeric">
+            </label>
+            <label class="login-field conta-field" for="planejamento-item-price">Preço est. (R$)
+              <input type="text" id="planejamento-item-price" inputmode="decimal" placeholder="Opcional">
+            </label>
+          </div>
+          <div class="planejamento-form-row">
+            <label class="login-field conta-field" for="planejamento-item-store">Loja / fornecedor
+              <input type="text" id="planejamento-item-store" maxlength="80" placeholder="Opcional">
+            </label>
+            <label class="login-field conta-field" for="planejamento-item-url">Link do produto
+              <input type="url" id="planejamento-item-url" maxlength="500" placeholder="https://…">
+            </label>
+          </div>
+          <label class="login-field conta-field" for="planejamento-item-notes">Notas
+            <input type="text" id="planejamento-item-notes" maxlength="400" placeholder="Medidas, modelo, alternativa…">
+          </label>
+          <div class="conta-actions">
+            <button type="submit" class="botao" id="planejamento-item-submit">＋ Adicionar à lista</button>
+            <button type="button" class="botao botao-outline" id="planejamento-price-search" hidden>Pesquisar preços na web</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="planejamento-list-card info-panel highlight-card" aria-labelledby="planejamento-list-title">
+        <h2 id="planejamento-list-title" class="planejamento-section-title">Lista de compras</h2>
+        <ul id="planejamento-items" class="planejamento-items" aria-live="polite"></ul>
+        <p id="planejamento-empty" class="planejamento-empty" hidden>Ainda não adicionou itens — use o formulário acima para começar a montar a lista.</p>
+      </section>
+
+      <section class="planejamento-notes-card info-panel highlight-card" aria-labelledby="planejamento-notes-title">
+        <h2 id="planejamento-notes-title" class="planejamento-section-title">Notas gerais</h2>
+        <label class="login-field conta-field" for="planejamento-plan-notes">Observações do projecto
+          <textarea id="planejamento-plan-notes" class="perfil-hub-textarea" rows="4" maxlength="1200" placeholder="Dimensão da sala, orçamento máximo, prazo, prioridades…"></textarea>
+        </label>
+        <button type="button" class="botao botao-outline botao-sm" id="planejamento-notes-save">Guardar notas</button>
+      </section>
+
+    </div>
+  </main>
+
+    <div id="site-footer"></div>
+  <script src="/js/app-version-check.js?v=208"></script>
+    <script src="/js/i18n-data.js?v=208"></script>
+    <script src="/js/i18n.js?v=208"></script>
+    <script src="/js/layout.js?v=208"></script>
+    <script src="/js/site-features.js?v=208"></script>
+  <script src="/js/planejamento.js?v=208"></script>
+
+</body>
+</html>

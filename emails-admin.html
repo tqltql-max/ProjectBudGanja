@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta property="og:title" content="E-mail | Admin Inspetor BudGanja">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/imagens/icon-512.png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/imagens/favicon-32.png?v=208" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=208" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=208">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3d5c28">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
+    <link rel="stylesheet" href="/css/style.css?v=208">
+    <meta name="robots" content="noindex,nofollow">
+    <title>E-mail | Admin Inspetor BudGanja</title>
+</head>
+<body data-page="emails-admin">
+    <div id="site-header"></div>
+
+    <main class="conteudo-interno admin-panel">
+    <header class="admin-hub-header">
+      <div class="admin-hub-intro">
+        <p class="admin-hub-eyebrow">Área administrativa</p>
+        <h1>E-mail transacional</h1>
+        <p class="admin-hub-sub">Fila de envios automáticos: boas-vindas, encomendas, sorteios e pagamentos. Configure SMTP no <code>.env</code>.</p>
+      </div>
+      <div class="admin-hub-actions">
+        <button id="email-process-btn" type="button" class="botao botao-sm">Processar fila</button>
+        <a href="/" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Site</a>
+        <button id="logout-btn" type="button" class="botao botao-outline botao-sm">Sair</button>
+      </div>
+    </header>
+
+    <nav class="admin-nav" aria-label="Secções do admin">
+      <a href="/admin.html" class="admin-nav-link">Publicações</a>
+      <a href="/pesquisas-admin.html" class="admin-nav-link">Submissões</a>
+      <a href="/usuarios-admin.html" class="admin-nav-link">Utilizadores</a>
+      <a href="/sorteios-admin.html" class="admin-nav-link">Sorteios</a>
+      <a href="/loja-admin.html" class="admin-nav-link">Encomendas</a>
+      <a href="/emails-admin.html" class="admin-nav-link is-active" aria-current="page">E-mail</a>
+    </nav>
+
+    <div id="email-smtp-banner" class="highlight-card loja-admin-msg" hidden></div>
+
+    <div id="email-stats" class="admin-stats-grid" aria-label="Resumo da fila"></div>
+
+    <section class="highlight-card loja-admin-panel">
+      <h2 class="admin-section-title">Modelos disponíveis</h2>
+      <p id="email-templates" class="field-hint">A carregar…</p>
+      <p class="field-hint">Boas-vindas: enviado automaticamente no primeiro login Google. Encomendas e sorteios: enfileirados ao ocorrer o evento.</p>
+    </section>
+
+    <section class="highlight-card loja-admin-panel">
+      <div class="sorteios-admin-toolbar">
+        <div>
+          <h2 class="admin-section-title" style="margin:0">Fila recente</h2>
+          <p id="email-queue-count" class="sorteios-admin-count">A carregar…</p>
+        </div>
+      </div>
+      <div class="sorteios-admin-table-wrap">
+        <table class="sorteios-admin-table">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Modelo</th>
+              <th>Destinatário</th>
+              <th>Assunto</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody id="email-queue-body">
+            <tr><td colspan="5">A carregar…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <p id="email-result" class="conta-status" role="status"></p>
+  </main>
+
+    <div id="site-footer"></div>
+  <script src="/js/app-version-check.js?v=208"></script>
+    <script src="/js/i18n-data.js?v=208"></script>
+    <script src="/js/i18n.js?v=208"></script>
+    <script src="/js/ferramentas-nav-data.js?v=208"></script>
+    <script src="/js/layout.js?v=208"></script>
+    <script src="/js/emails-admin.js?v=208"></script>
+
+</body>
+</html>

@@ -5,7 +5,7 @@
   var ONBOARDING_STEPS = [
     {
       title: 'Bem-vindo ao Diário de Pesquisas',
-      body: 'Aqui documenta cada cultivo como um caderno de campo — com diário, roteiro semanal, plano e ferramentas numa só página.',
+      body: 'Aqui documenta cada cultivo como um caderno de campo — com diário, roteiro semanal e plano numa só página.',
       cta: 'Seguinte'
     },
     {
@@ -15,8 +15,8 @@
       highlight: '#cultivo-hub-new-btn'
     },
     {
-      title: 'Quatro secções numa página',
-      body: 'Diário (registos e fotos), Roteiro (semanas da fase), Plano (lembretes) e Ferramentas (calculadoras sugeridas). Use a barra fixa para saltar entre elas.',
+      title: 'Três secções numa página',
+      body: 'Diário (registos e fotos), Roteiro (semanas da fase) e Plano (lembretes). Use a barra fixa para saltar entre elas.',
       cta: 'Seguinte'
     },
     {

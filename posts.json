@@ -9,7 +9,7 @@
     "content_raw": "## Resumo\n\nEste estudo documenta o protocolo de semeadura e clonagem vegetativa utilizando recipientes biodegradáveis à base de celulose reciclada, integrado ao controle microclimático de uma unidade **Mars Hydro**.\n\n## Introdução\n\nO choque de transplante limita o vigor inicial das plântulas. Vasos que se decompõem *in situ* reduzem o dano radicular no momento crítico de estabelecimento.\n\n## Metodologia\n\n- Embebição das sementes em meio aquoso (24 h)\n- Germinação em papel celulose úmido, fotoperíodo zero (24 h)\n- Vasos cilíndricos de papel sulfite reciclado com furos de aeração\n- Monitoramento de PPFD, CO₂ e temperatura na tenda experimental\n\n## Resultados\n\nRadículas emergentes posicionadas ortotrópicamente; desenvolvimento contínuo **sem sinais clássicos de estresse pós-transplante** nas primeiras duas semanas.\n\n## Conclusão\n\nMetodologia viável para propagação em pequena escala, combinando sustentabilidade e controle tecnológico de ponta.\n\n---\n\n📄 Leia o relatório completo em [Pesquisa: Substratos](/biblioteca/pesquisas/substratos.html).\n\n![](/uploads/icon-192-1782543515824.png)\n",
     "format": "markdown",
     "published": true,
-    "coverImage": "/uploads/icon-192-1782543515824.png",
+    "coverImage": "imagens/cover-germinacao.svg",
     "category": "pesquisa"
   },
   {
@@ -35,7 +35,7 @@
     "content_raw": "## Objetivo\n\nAprender a usar o **Luxímetro (Câmera)** do site para estimar PPFD e lux no dossel das plantas.\n\n## Quando usar\n\n- Ao montar ou reposicionar luminárias\n- Para comparar intensidade entre cantos da tenda\n- Antes de calcular DLI (anote o PPFD médio)\n\n## Passo a passo\n\n1. Abra o [Luxímetro](/calculadoras/luximetro.html) no celular e permita acesso à câmera\n2. Toque em **Iniciar Câmera** e aponte para o ponto de medição (altura do dossel)\n3. Selecione o **tipo de luz** correspondente (LED grow, HPS, solar, etc.)\n4. Centralize a área clara no círculo de medição e aguarde a leitura estabilizar\n5. Anote PPFD (μmol/m²/s) e lux exibidos\n\n## Como interpretar\n\n- O badge de status indica se a intensidade está baixa, adequada ou excessiva para a fase\n- PPFD é mais útil que lux para comparar diferentes tipos de luz\n- Faça 3 leituras em pontos diferentes e use a média\n\n## Dicas\n\n- Evite sombras do corpo ou do celular sobre a área medida\n- Limpe a lente da câmera antes de medir\n- Trate como estimativa — valide com luxímetro dedicado quando possível\n\n---\n\n🧮 [Abrir Luxímetro](/calculadoras/luximetro.html)",
     "format": "markdown",
     "published": true,
-    "coverImage": "imagens/background-hero.svg",
+    "coverImage": "imagens/cover-luximetro.svg",
     "category": "pesquisa"
   },
   {
@@ -48,20 +48,7 @@
     "content_raw": "## Objetivo\n\nMontar **super solo orgânico** com dosagens em gramas e ml — escolhendo só os componentes que vai usar.\n\n## Quando usar\n\n- Ao preparar substrato do zero ou repor um lote\n- Para montar lista de compras antes de misturar\n- Quando não tiver todos os insumos (desmarque o que faltar)\n\n## Passo a passo\n\n1. Informe o **volume total de substrato** em litros (ex.: 45 L)\n2. Marque os **componentes** que vai adicionar (bokashi, húmus, torta de mamona, etc.)\n3. Clique em **Calcular Ingredientes** na [Calculadora Super Solo](/calculadoras/super-solo.html)\n4. Anote gramas e ml de cada item selecionado\n\n## Componentes disponíveis\n\n- **Bokashi** (10 g/L) — ativador biológico\n- **Húmus de Minhoca** (15 g/L) — matéria orgânica e microbiota\n- **Torta de Mamona**, **Farinha de Osso**, **Pó de Rocha**, **Biochar**, **Gesso**, **Calcário Dolomítico**, **Torta de Neem**, **Farinha de Algas**\n\nCom **todos** marcados: 61 g/L. O total no resultado depende só do que você selecionar.\n\n## Dicas\n\n- Use **Marcar todos** / **Desmarcar todos** para testar receitas enxutas\n- Misture amendments secos antes de umedecer\n- Cure o solo 2–4 semanas antes de plantar\n\n---\n\n🧮 [Abrir Calculadora Super Solo](/calculadoras/super-solo.html)",
     "format": "markdown",
     "published": true,
-    "coverImage": "imagens/background-hero.svg",
+    "coverImage": "imagens/cover-super-solo.svg",
     "category": "pesquisa"
-  },
-  {
-    "title": "Inspeção: Sistema de Ventilação da Tenda",
-    "excerpt": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório.",
-    "slug": "inspecao-ventilacao-tenda",
-    "filename": "posts/post-inspecao-ventilacao-tenda.html",
-    "url": "/posts/post-inspecao-ventilacao-tenda.html",
-    "date": "2026-06-19T09:30:00.000Z",
-    "content_raw": "## Escopo\n\nInspeção do **sistema de ventilação** da tenda principal: exaustor inline, filtro de carvão, duto flexível e entradas passivas.\n\n## Medições\n\n| Ponto | Valor |\n|-------|-------|\n| Ruído exaustor (1 m) | 46 dB |\n| ΔT tenda vs. ambiente | +2,5 °C |\n| Renovações estimadas | ~1,2 min⁻¹ |\n\n## Achados\n\n- Duto com curva acentuada reduz fluxo ~15%\n- Filtro saturado aumenta ruído em 4 dB vs. filtro novo\n- Entrada passiva inferior equilibra pressão negativa\n\n## Recomendações\n\n1. Substituir filtro a cada 6–9 meses de uso contínuo\n2. Encurtar duto ou usar cotovelos de raio largo\n3. Revisão trimestral documentada no canal\n\n## Status\n\n**Aprovado** — sistema adequado para volume atual da tenda.",
-    "format": "markdown",
-    "published": true,
-    "coverImage": "imagens/background-hero.svg",
-    "category": "inspecao"
   }
 ]

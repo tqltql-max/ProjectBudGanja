@@ -57,6 +57,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('sync:pages-post-embed', 'sync-pages-from-html.js');
+  } catch (e) {
+    console.warn('Aviso sync:pages-post-embed:', e.message);
+  }
+
+  try {
     runStep('sync:pages-to-db', 'sync-pages-to-db.js');
   } catch (e) {
     console.warn('Aviso sync:pages-to-db:', e.message);
@@ -84,6 +90,12 @@ function runBuildSteps() {
     runStep('build:jardimhg', 'build-jardimhg-catalog.js');
   } catch (e) {
     console.warn('Aviso build:jardimhg:', e.message);
+  }
+
+  try {
+    runStep('build:movrecam', 'build-movrecam-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:movrecam:', e.message);
   }
 
   try {

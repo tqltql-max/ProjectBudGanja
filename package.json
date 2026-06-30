@@ -26,6 +26,8 @@
 
     "build:jardimhg": "node scripts/build-jardimhg-catalog.js",
 
+    "build:movrecam": "node scripts/build-movrecam-catalog.js",
+
     "build:search": "node scripts/build-search-index.js",
 
     "build:sitemap": "node scripts/build-sitemap.js",
@@ -47,6 +49,8 @@
     "test:cultivo": "node scripts/test-cultivo-persistence.js",
     "test:cultivo-submissions": "node scripts/test-cultivo-submissions.js",
     "test:users-admin": "node scripts/test-users-admin.js",
+    "test:email": "node scripts/test-email-service.js",
+    "email:process": "node scripts/process-email-queue.js",
     "test": "node scripts/test-lib-unit.js && node scripts/test-db-persistence.js && node scripts/test-cultivo-persistence.js && node scripts/test-cultivo-submissions.js && node scripts/test-users-admin.js",
 
     "verify": "node scripts/verify.js",

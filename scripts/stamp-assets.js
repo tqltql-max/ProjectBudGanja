@@ -41,6 +41,7 @@ function ensureVersionCheckScript(content) {
 
 // Reescreve src/href de /js/*.js e /css/*.css (com ou sem ?v= anterior).
 function stampHtml(content) {
+  const skipFerramentasNav = content.includes('data-page="cultivo"') || content.includes('data-page="planejamento"');
   let next = content.replace(
     /((?:src|href)=")((?:\/)?(?:js|css)\/[^"?#]+\.(?:js|css))(?:\?v=[^"#]*)?((?:#[^"]*)?")/g,
     (m, pre, asset, post) => {
@@ -48,7 +49,21 @@ function stampHtml(content) {
       return pre + normalized + '?v=' + ASSET_VERSION + post;
     }
   );
-  if (!next.includes('i18n-data.js') && next.includes('layout.js')) {
+  if (skipFerramentasNav) {
+    next = next.replace(/\s*<script\s+src="[^"]*\/js\/ferramentas-nav-data\.js[^"]*"><\/script>\n?/g, '\n');
+    if (!next.includes('pages/cultivo-perfil.css')) {
+      next = next.replace(
+        /(<link rel="stylesheet" href="\/css\/style\.css\?v=[^"]+">)/,
+        '$1\n    <link rel="stylesheet" href="/css/pages/cultivo-perfil.css?v=' + ASSET_VERSION + '">'
+      );
+    }
+    if (content.includes('data-page="planejamento"') && !next.includes('pages/planejamento.css')) {
+      next = next.replace(
+        /(<link rel="stylesheet" href="\/css\/pages\/cultivo-perfil\.css\?v=[^"]+">)/,
+        '$1\n    <link rel="stylesheet" href="/css/pages/planejamento.css?v=' + ASSET_VERSION + '">'
+      );
+    }
+  } else if (!next.includes('i18n-data.js') && next.includes('layout.js')) {
     next = next.replace(
       /(\s*<script\s+src="[^"]*\/js\/layout\.js[^"]*"><\/script>)/g,
       '\n    <script src="/js/i18n-data.js?v=' + ASSET_VERSION + '"></script>\n    <script src="/js/i18n.js?v=' + ASSET_VERSION + '"></script>\n    <script src="/js/ferramentas-nav-data.js?v=' + ASSET_VERSION + '"></script>$1'

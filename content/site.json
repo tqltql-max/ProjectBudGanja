@@ -133,12 +133,36 @@
                   "description": "Verificações de campo."
                 },
                 {
+                  "label": "Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal",
+                  "tileLabel": "Inspeção: Curso UNIFESP — Canna…",
+                  "href": "/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-curso-unifesp-cannabis-medicinal",
+                  "description": "Auditoria do XIV Curso de extensão da UNIFESP em parceria com o MovReCam — 10 mil vagas gratuitas, 57 h EaD via YouTube, certificado com 75% de presença e grade clínica, legislativa e de cultivo."
+                },
+                {
                   "label": "Inspeção: O Início do Cultivo de Cannabis",
                   "tileLabel": "Inspeção: O Início do Cultivo d…",
                   "href": "/posts/post-inspecao-cultivo-inicio.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-cultivo-inicio",
                   "description": "Verificação das quatro fases fenológicas e dos fatores ambientais críticos no arranque do cultivo — base do guia em vídeo do canal."
+                },
+                {
+                  "label": "Inspeção: Sistema de Ventilação da Tenda",
+                  "tileLabel": "Inspeção: Sistema de Ventilação…",
+                  "href": "/posts/post-inspecao-ventilacao-tenda.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-ventilacao-tenda",
+                  "description": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório."
+                },
+                {
+                  "label": "Inspeção: Equipamentos Mars Hydro Brasil",
+                  "tileLabel": "Inspeção: Equipamentos Mars Hyd…",
+                  "href": "/posts/post-inspecao-marshydro-brasil.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-marshydro-brasil",
+                  "description": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório."
                 },
                 {
                   "label": "Inspeção: Nutrição da Cannabis",
@@ -197,12 +221,12 @@
                   "description": "Auditoria editorial do canal Jardim HG — 123 vídeos catalogados sobre cultivo medicinal indoor/outdoor, com créditos integrais ao criador."
                 },
                 {
-                  "label": "Inspeção: Sistema de Ventilação da Tenda",
-                  "tileLabel": "Inspeção: Sistema de Ventilação…",
-                  "href": "/posts/post-inspecao-ventilacao-tenda.html",
+                  "label": "Inspeção: Canal MovReCam — aulas UNIFESP",
+                  "tileLabel": "Inspeção: Canal MovReCam — aula…",
+                  "href": "/posts/post-inspecao-canal-movrecam.html",
                   "icon": "🔍",
-                  "slug": "post-inspecao-ventilacao-tenda",
-                  "description": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório."
+                  "slug": "post-inspecao-canal-movrecam",
+                  "description": "Auditoria do canal MovReCam — 278 vídeos catalogados (aulas do curso UNIFESP, arquivo por edição e advocacy regulatória), complemento à inspeção do XIV curso de extensão."
                 }
               ]
             },

@@ -3,49 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Inspeções técnicas do Inspetor BudGanja — relatórios de campo e verificações de equipamentos e processos.">
+    <meta name="description" content="Inspeções técnicas do Inspetor BudGanja — guia em capítulos, canais, formação acadêmica e equipamentos do laboratório.">
     <meta property="og:title" content="Inspeções | Inspetor BudGanja">
-    <meta property="og:description" content="Relatórios de inspeção e verificações técnicas do laboratório.">
+    <meta property="og:description" content="Relatórios de inspeção por coleção — guia, canais, equipamentos e campo.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/imagens/icon-512.png">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="/imagens/favicon-32.png?v=207" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.png?v=207" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=207">
+    <link rel="icon" href="/imagens/favicon-32.png?v=208" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=208" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=208">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#3d5c28">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="stylesheet" href="/css/style.css?v=207">
+    <link rel="stylesheet" href="/css/style.css?v=208">
     <title>Inspeções | Inspetor BudGanja</title>
 </head>
 <body data-page="inspecoes">
     <div id="site-header"></div>
 
-    <main id="main-content" class="conteudo-interno">
-        <h1>Inspeções</h1>
-        <p class="secao-subtitulo" style="margin-bottom: 16px;">Relatórios de inspeção, verificações de campo e registros técnicos do laboratório.</p>
-        <p class="secao-subtitulo" style="margin-bottom: 32px;">A série <strong>Guia de Cultivo Básico</strong> (@InspetorBudGanja) está publicada aqui como inspeções numeradas — cada capítulo com relatório científico, equipamentos da <a href="/loja/#cultivo-indoor">loja parceira</a> e vídeo explicativo.</p>
-        <div class="inspecoes-toolbar" role="toolbar" aria-label="Filtrar inspeções">
-            <label for="inspecoes-series-filter" class="inspecoes-filter-label">Série</label>
-            <select id="inspecoes-series-filter" class="select-dark inspecoes-series-filter" aria-label="Filtrar por série">
-                <option value="">Todas as séries</option>
-            </select>
+    <main id="main-content" class="conteudo-interno inspecoes-page">
+        <header class="inspecoes-page-head">
+            <p class="inspecoes-page-eyebrow">Biblioteca · Laboratório</p>
+            <h1>Inspeções</h1>
+            <p class="inspecoes-page-intro">Relatórios técnicos organizados por coleção — cada tipo com o formato certo, sem repetir nove cards iguais na mesma página.</p>
+        </header>
+
+        <div id="inspecoes-hub-stats" class="inspecoes-hub-stats" aria-live="polite" hidden></div>
+
+        <nav class="inspecoes-hub-nav" id="inspecoes-hub-nav" role="tablist" aria-label="Categorias de inspeções" hidden>
+            <button type="button" class="inspecoes-hub-nav-btn is-active" role="tab" aria-selected="true" data-filter="">Todas</button>
+            <button type="button" class="inspecoes-hub-nav-btn" role="tab" aria-selected="false" data-filter="guia-cultivo-basico">Guia</button>
+            <button type="button" class="inspecoes-hub-nav-btn" role="tab" aria-selected="false" data-filter="canal-jardimhg">Conteúdo</button>
+            <button type="button" class="inspecoes-hub-nav-btn" role="tab" aria-selected="false" data-filter="formacao-academica">Formação</button>
+            <button type="button" class="inspecoes-hub-nav-btn" role="tab" aria-selected="false" data-filter="verificacao-equipamento">Equipamentos</button>
+        </nav>
+
+        <div id="inspecoes-hub-root" class="inspecoes-hub-root">
+            <p class="empty-message">Carregando inspeções…</p>
         </div>
-        <h2 class="category-title">Publicações de Inspeções</h2>
-        <div class="container-cards publications-inspecoes">
-            <p class="empty-message">Carregando publicações...</p>
-        </div>
+
+        <div class="container-cards publications-inspecoes" hidden aria-hidden="true"></div>
+        <script type="application/json" id="inspecoes-initial-feed">[{"title":"Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal","excerpt":"Auditoria do XIV Curso de extensão da UNIFESP em parceria com o MovReCam — 10 mil vagas gratuitas, 57 h EaD via YouTube, certificado com 75% de presença e grade clínica, legislativa e de cultivo.","excerptEn":"Audit of UNIFESP’s 14th extension course on therapeutic Cannabis sativa L. — 10k free seats, 57h distance learning via YouTube, certificate at 75% attendance, clinical and legislative syllabus.","excerptEs":"Auditoría del XIV Curso de extensión de la UNIFESP con MovReCam — 10 mil vacantes gratuitas, 57 h EaD por YouTube, certificado con 75% de asistencia y plan clínico y legislativo.","slug":"inspecao-curso-unifesp-cannabis-medicinal","url":"/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html","date":"2026-06-30T12:00:00.000Z","filename":"posts/post-inspecao-curso-unifesp-cannabis-medicinal.html","coverImage":"/imagens/icon-512.png","category":"inspecao","series":"formacao-academica","seriesOrder":1,"seriesLabel":"UNIFESP · XIV edição"},{"title":"Inspeção: O Início do Cultivo de Cannabis","excerpt":"Verificação das quatro fases fenológicas e dos fatores ambientais críticos no arranque do cultivo — base do guia em vídeo do canal.","excerptEn":"Field review of the four phenological phases and critical environmental variables at crop start.","excerptEs":"Revisión de las cuatro fases fenológicas y variables ambientales críticas al inicio del cultivo.","slug":"inspecao-cultivo-inicio","url":"/posts/post-inspecao-cultivo-inicio.html","date":"2026-06-27T17:01:02.000Z","filename":"posts/post-inspecao-cultivo-inicio.html","coverImage":"https://i.ytimg.com/vi/38uUEL1B-v4/hqdefault.jpg","category":"inspecao","series":"guia-cultivo-basico","seriesOrder":1,"seriesLabel":"Guia de Cultivo Básico"},{"title":"Inspeção: Sistema de Ventilação da Tenda","excerpt":"Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório.","excerptEn":"","excerptEs":"","slug":"inspecao-ventilacao-tenda","url":"/posts/post-inspecao-ventilacao-tenda.html","date":"2026-06-19T09:30:00.000Z","filename":"posts/post-inspecao-ventilacao-tenda.html","coverImage":"/imagens/background-hero.svg","category":"inspecao","series":"verificacao-equipamento","seriesOrder":1,"seriesLabel":"Ventilação · laboratório"},{"title":"Inspeção: Equipamentos Mars Hydro Brasil","excerpt":"Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório.","excerptEn":"Catalog audit of Mars Hydro gear sold in Brazil — LED lines, grow tents, iFresh ventilation and combo kits, cross-checked with BudGanja lab metrics.","excerptEs":"Auditoría del catálogo Mars Hydro en Brasil — líneas LED, carpas, ventilación iFresh y kits, contrastada con las métricas del laboratorio BudGanja.","slug":"inspecao-marshydro-brasil","url":"/posts/post-inspecao-marshydro-brasil.html","date":"2026-06-28T14:00:00.000Z","filename":"posts/post-inspecao-marshydro-brasil.html","coverImage":"https://i.ytimg.com/vi/3IS4Gcl3EIk/hqdefault.jpg","category":"inspecao","series":"verificacao-equipamento","seriesOrder":2,"seriesLabel":"Mars Hydro Brasil"},{"title":"Inspeção: Nutrição da Cannabis","excerpt":"Análise das necessidades de macro e micronutrientes por fase fenológica, relação N:P:K e condutividade elétrica da solução nutritiva.","excerptEn":"Nutrient strategy inspection — EC/PPM, macro and micro elements in vegetative and flowering.","excerptEs":"Inspección de nutrición — EC/PPM, macro y microelementos en vegetativo y floración.","slug":"inspecao-nutricao-cannabis","url":"/posts/post-inspecao-nutricao-cannabis.html","date":"2026-06-27T17:07:52.000Z","filename":"posts/post-inspecao-nutricao-cannabis.html","coverImage":"https://i.ytimg.com/vi/XIrSJWjhd6Q/hqdefault.jpg","category":"inspecao","series":"guia-cultivo-basico","seriesOrder":2,"seriesLabel":"Guia de Cultivo Básico"},{"title":"Inspeção: Solo Vivo Orgânico","excerpt":"Verificação da construção de super-solo com microbioma ativo, ciclagem de nutrientes e indicadores de saúde do substrato.","excerptEn":"Living soil audit — organic substrate, microbiology and sustainable buffering.","excerptEs":"Auditoría de suelo vivo — sustrato orgánico, microbiología y tamponamiento.","slug":"inspecao-solo-vivo-organico","url":"/posts/post-inspecao-solo-vivo-organico.html","date":"2026-06-27T17:08:37.000Z","filename":"posts/post-inspecao-solo-vivo-organico.html","coverImage":"https://i.ytimg.com/vi/092X69hq8Os/hqdefault.jpg","category":"inspecao","series":"guia-cultivo-basico","seriesOrder":3,"seriesLabel":"Guia de Cultivo Básico"},{"title":"Inspeção: Arquitetura da Cannabis","excerpt":"Avaliação morfológica da planta — nós, internós, gemas apicais e laterais — e técnicas de manejo (topping, LST, SCROG).","excerptEn":"Plant architecture inspection — training, LST/SCROG and canopy management.","excerptEs":"Inspección de arquitectura — entrenamiento, LST/SCROG y manejo del dosel.","slug":"inspecao-arquitetura-cannabis","url":"/posts/post-inspecao-arquitetura-cannabis.html","date":"2026-06-27T17:10:07.000Z","filename":"posts/post-inspecao-arquitetura-cannabis.html","coverImage":"https://i.ytimg.com/vi/OO7d72tHwJY/hqdefault.jpg","category":"inspecao","series":"guia-cultivo-basico","seriesOrder":4,"seriesLabel":"Guia de Cultivo Básico"},{"title":"Inspeção: A Ciência da Floração","excerpt":"Verificação do gatilho fotoperiódico, desenvolvimento pistilar, maturação tricomática e janela ideal de colheita.","excerptEn":"Flowering science review — photoperiod, hormones and harvest indicators.","excerptEs":"Revisión de floración — fotoperiodo, hormonas e indicadores de cosecha.","slug":"inspecao-ciencia-floracao","url":"/posts/post-inspecao-ciencia-floracao.html","date":"2026-06-27T17:11:03.000Z","filename":"posts/post-inspecao-ciencia-floracao.html","coverImage":"https://i.ytimg.com/vi/V6LO6nXh8bI/hqdefault.jpg","category":"inspecao","series":"guia-cultivo-basico","seriesOrder":5,"seriesLabel":"Guia de Cultivo Básico"},{"title":"Inspeção: Propagação e Clonagem","excerpt":"Verificação de técnicas de multiplicação vegetativa — estacas, ambiente de enraizamento e sistemas aeropónicos caseiros.","excerptEn":"Propagation inspection — cloning, rooting and aeroponic systems.","excerptEs":"Inspección de propagación — clonaje, enraizamiento y sistemas aeropónicos.","slug":"inspecao-propagacao-clonagem","url":"/posts/post-inspecao-propagacao-clonagem.html","date":"2026-06-27T17:11:35.000Z","filename":"posts/post-inspecao-propagacao-clonagem.html","coverImage":"https://i.ytimg.com/vi/tdMl4X5h83Y/hqdefault.jpg","category":"inspecao","series":"guia-cultivo-basico","seriesOrder":6,"seriesLabel":"Guia de Cultivo Básico"},{"title":"Inspeção: Otimização do Cultivo Indoor (PPFD e ambiente)","excerpt":"Verificação integrada de PPFD, DLI, VPD, ventilação e layout da tenda — síntese do ambiente indoor eficiente.","excerptEn":"Indoor PPFD audit — light intensity, DLI targets and measurement tools.","excerptEs":"Auditoría PPFD indoor — intensidad lumínica, DLI objetivo e instrumentos.","slug":"inspecao-cultivo-indoor-ppfd","url":"/posts/post-inspecao-cultivo-indoor-ppfd.html","date":"2026-06-27T17:13:59.000Z","filename":"posts/post-inspecao-cultivo-indoor-ppfd.html","coverImage":"https://i.ytimg.com/vi/zwKXgqZMPro/hqdefault.jpg","category":"inspecao","series":"guia-cultivo-basico","seriesOrder":7,"seriesLabel":"Guia de Cultivo Básico"},{"title":"Inspeção: Canal Jardim HG (@jardimhg)","excerpt":"Auditoria editorial do canal Jardim HG — 123 vídeos catalogados sobre cultivo medicinal indoor/outdoor, com créditos integrais ao criador.","excerptEn":"","excerptEs":"","slug":"inspecao-canal-jardimhg","url":"/posts/post-inspecao-canal-jardimhg.html","date":"2026-06-30T12:00:00.000Z","filename":"posts/post-inspecao-canal-jardimhg.html","coverImage":"https://i.ytimg.com/vi/yCBfY-Rg81g/hqdefault.jpg","category":"inspecao","series":"canal-jardimhg","seriesOrder":10,"seriesLabel":"Canal Jardim HG"},{"title":"Inspeção: Canal MovReCam — aulas UNIFESP","excerpt":"Auditoria do canal MovReCam — 278 vídeos catalogados (aulas do curso UNIFESP, arquivo por edição e advocacy regulatória), complemento à inspeção do XIV curso de extensão.","excerptEn":"Audit of the MovReCam YouTube channel — 278 videos catalogued (UNIFESP course lectures, edition archive and regulatory advocacy), complementing the extension course inspection.","excerptEs":"Auditoría del canal MovReCam — 278 vídeos catalogados (clases del curso UNIFESP, archivo por edición y advocacy regulatoria), complemento a la inspección del curso de extensión.","slug":"inspecao-canal-movrecam","url":"/posts/post-inspecao-canal-movrecam.html","date":"2026-06-30T14:00:00.000Z","filename":"posts/post-inspecao-canal-movrecam.html","coverImage":"https://i.ytimg.com/vi/eDy7Lgo0PoQ/hqdefault.jpg","category":"inspecao","series":"canal-movrecam","seriesOrder":11,"seriesLabel":"MovReCam · UNIFESP"}]</script>
     </main>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=207"></script>
-    <script src="/js/i18n-data.js?v=207"></script>
-    <script src="/js/i18n.js?v=207"></script>
-    <script src="/js/ferramentas-nav-data.js?v=207"></script>
-    <script src="/js/layout.js?v=207"></script>
-    <script src="/js/posts.js?v=207"></script>
+  <script src="/js/app-version-check.js?v=208"></script>
+    <script src="/js/i18n-data.js?v=208"></script>
+    <script src="/js/i18n.js?v=208"></script>
+    <script src="/js/ferramentas-nav-data.js?v=208"></script>
+    <script src="/js/layout.js?v=208"></script>
+    <script src="/js/posts.js?v=208"></script>
 
 </body>
 </html>

@@ -9,15 +9,16 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="/imagens/icon-512.png">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="/imagens/favicon-32.png?v=207" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.png?v=207" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=207">
+    <link rel="icon" href="/imagens/favicon-32.png?v=208" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=208" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=208">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#3d5c28">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="stylesheet" href="/css/style.css?v=207">
+    <link rel="stylesheet" href="/css/style.css?v=208">
+    <link rel="stylesheet" href="/css/pages/cultivo-perfil.css?v=208">
     <meta name="robots" content="noindex,nofollow">
     <title>Diário de Pesquisas | Inspetor BudGanja</title>
 </head>
@@ -53,6 +54,7 @@
         <div class="perfil-hub-actions conta-actions">
 
           <a href="/perfil.html" class="botao botao-outline botao-sm">Minha conta</a>
+          <a href="/planejamento/" class="botao botao-outline botao-sm">Planejamento</a>
 
           <button type="button" class="botao botao-outline botao-sm" id="perfil-logout-btn">Sair</button>
 
@@ -72,21 +74,25 @@
 
         <div id="cultivo-hub-view" class="cultivo-hub-view">
 
-          <section class="cultivo-hub-hero info-panel highlight-card">
-
-            <p class="cultivo-hub-eyebrow">Comece por aqui</p>
-
-            <h2 class="cultivo-hub-title">As suas pesquisas</h2>
-
-            <p class="page-intro">Cada pesquisa documenta o cultivo de qualquer planta — diário, roteiro semanal, plano e ferramentas numa só página. Use os registos para publicar no site mais tarde.</p>
-
-            <button type="button" class="botao cultivo-hub-new-btn" id="cultivo-hub-new-btn">＋ Iniciar nova pesquisa</button>
-
+          <section class="cultivo-hub-topbar info-panel highlight-card">
+            <div class="cultivo-hub-topbar-copy">
+              <p class="cultivo-hub-eyebrow">Laboratório · pesquisas activas</p>
+              <h2 class="cultivo-hub-title">As suas pesquisas</h2>
+              <p id="cultivo-hub-summary" class="cultivo-hub-summary page-intro">Toque num bloco para abrir a pesquisa completa — diário, roteiro e plano.</p>
+            </div>
+            <button type="button" class="botao cultivo-hub-new-btn" id="cultivo-hub-new-btn">＋ Nova pesquisa</button>
           </section>
 
-          <ul id="cultivo-hub-list" class="cultivo-hub-grid" aria-live="polite"></ul>
+          <div id="cultivo-hub-stats" class="cultivo-hub-stats" hidden role="group" aria-label="Resumo do laboratório"></div>
 
-          <p id="cultivo-hub-empty" class="cultivo-hub-empty" hidden>Ainda não tem pesquisas. Toque em «Iniciar nova pesquisa» para começar.</p>
+          <div id="cultivo-hub-list" class="container-cards cultivo-research-grid" role="list" aria-label="Pesquisas em andamento" hidden></div>
+
+          <section id="cultivo-hub-empty" class="cultivo-hub-empty card info-panel highlight-card" hidden aria-labelledby="cultivo-hub-empty-title">
+            <div class="card-icon card-icon--cultivo cultivo-hub-empty-icon" aria-hidden="true">📓</div>
+            <h2 id="cultivo-hub-empty-title" class="cultivo-hub-empty-title">Ainda não tem pesquisas</h2>
+            <p class="cultivo-hub-empty-text page-intro">Documente o cultivo de qualquer planta — diário, roteiro e plano prontos para publicar no laboratório.</p>
+            <button type="button" class="botao cultivo-hub-empty-btn" id="cultivo-hub-empty-btn">＋ Criar primeira pesquisa</button>
+          </section>
 
           <div id="cultivo-onboarding-root" class="cultivo-onboarding" hidden aria-live="polite"></div>
 
@@ -111,58 +117,41 @@
             <form id="cultivo-wizard-form" class="cultivo-wizard-form">
 
               <label class="login-field conta-field" for="cultivo-wizard-name">Nome da pesquisa
-
                 <input type="text" id="cultivo-wizard-name" maxlength="80" required placeholder="Ex.: Tomate hidropónico, Lavanda indoor…" autocomplete="off">
-
               </label>
 
               <label class="login-field conta-field" for="cultivo-wizard-species">Espécie ou linha <span class="perfil-field-optional">(opcional)</span>
-
                 <input type="text" id="cultivo-wizard-species" maxlength="120" placeholder="Ex.: Solanum lycopersicum, Lavandula angustifolia…" autocomplete="off">
-
               </label>
 
               <fieldset class="cultivo-phase-field">
-
                 <legend class="cultivo-phase-legend">Fase actual</legend>
-
                 <p id="cultivo-wizard-phase-hint" class="cultivo-phase-hint" aria-live="polite">Seleccionada: <strong>Germinação</strong></p>
-
                 <div class="cultivo-phase-picker cultivo-wizard-phases" role="group" aria-label="Fase da pesquisa">
-
                   <button type="button" class="cultivo-phase-chip" data-phase="planejamento" aria-pressed="false"><span class="cultivo-phase-chip-icon" aria-hidden="true">📋</span> Planejamento</button>
-
                   <button type="button" class="cultivo-phase-chip is-active" data-phase="germinacao" aria-pressed="true"><span class="cultivo-phase-chip-icon" aria-hidden="true">🌱</span> Germinação</button>
-
                   <button type="button" class="cultivo-phase-chip" data-phase="vegetativo" aria-pressed="false"><span class="cultivo-phase-chip-icon" aria-hidden="true">🌿</span> Vegetativo</button>
-
                   <button type="button" class="cultivo-phase-chip" data-phase="floracao" aria-pressed="false"><span class="cultivo-phase-chip-icon" aria-hidden="true">🌸</span> Floração</button>
-
                   <button type="button" class="cultivo-phase-chip" data-phase="colheita" aria-pressed="false"><span class="cultivo-phase-chip-icon" aria-hidden="true">✂️</span> Colheita</button>
-
                 </div>
-
               </fieldset>
 
-              <label class="login-field conta-field" for="cultivo-wizard-plants">Quantas plantas?
+              <div class="cultivo-wizard-row">
+                <label class="login-field conta-field" for="cultivo-wizard-plants">Quantas plantas?
+                  <input type="number" id="cultivo-wizard-plants" min="1" max="99" value="1" required inputmode="numeric">
+                </label>
 
-                <input type="number" id="cultivo-wizard-plants" min="1" max="99" value="1" required inputmode="numeric">
-
-              </label>
-
-              <label class="login-field conta-field" for="cultivo-wizard-environment">Ambiente
-
-                <select id="cultivo-wizard-environment">
-                  <option value="">— usar padrão da conta —</option>
-                  <option value="indoor">Indoor (tenda/gabinete)</option>
-                  <option value="outdoor">Outdoor</option>
-                  <option value="estufa">Estufa</option>
-                </select>
-
-              </label>
+                <label class="login-field conta-field" for="cultivo-wizard-environment">Ambiente
+                  <select id="cultivo-wizard-environment">
+                    <option value="">— usar padrão da conta —</option>
+                    <option value="indoor">Indoor (tenda/gabinete)</option>
+                    <option value="outdoor">Outdoor</option>
+                    <option value="estufa">Estufa</option>
+                  </select>
+                </label>
+              </div>
 
               <label class="login-field conta-field" for="cultivo-wizard-substrate">Substrato / meio
-
                 <select id="cultivo-wizard-substrate">
                   <option value="">— usar padrão da conta —</option>
                   <option value="solo-organico">Solo orgânico</option>
@@ -171,15 +160,11 @@
                   <option value="hidroponia">Hidroponia (inerte)</option>
                   <option value="outro">Outro</option>
                 </select>
-
               </label>
 
               <div class="conta-actions">
-
                 <button type="button" class="botao botao-outline" id="cultivo-wizard-cancel">Cancelar</button>
-
                 <button type="submit" class="botao" id="cultivo-wizard-submit">Criar pesquisa</button>
-
               </div>
 
             </form>
@@ -196,7 +181,7 @@
 
         <div id="cultivo-grow-view" class="cultivo-grow-view" hidden>
 
-          <button type="button" class="perfil-link-btn cultivo-grow-back" id="cultivo-grow-back">← Minhas pesquisas</button>
+          <button type="button" class="perfil-link-btn cultivo-grow-back botao botao-outline botao-sm" id="cultivo-grow-back">← Todas as pesquisas</button>
 
           <header id="cultivo-grow-header" class="cultivo-grow-header info-panel highlight-card"></header>
 
@@ -206,16 +191,52 @@
             <button type="button" class="cultivo-section-nav-btn is-active" data-tab="diario">Diário</button>
             <button type="button" class="cultivo-section-nav-btn" data-tab="semana">Roteiro</button>
             <button type="button" class="cultivo-section-nav-btn" data-tab="plano">Plano</button>
-            <button type="button" class="cultivo-section-nav-btn" data-tab="ferramentas">Ferramentas</button>
           </nav>
 
           <div class="cultivo-sections">
 
             <section id="cultivo-section-diario" class="cultivo-section perfil-hub-card info-panel highlight-card" aria-labelledby="cultivo-diario-title">
 
-              <h2 id="cultivo-diario-title" class="cultivo-section-title">Diário</h2>
+              <div class="cultivo-section-head">
 
-              <p class="cultivo-section-intro page-intro">Registe rega, adubo, treino e fotos — tudo fica na linha do tempo abaixo.</p>
+                <div class="cultivo-section-head-copy">
+                  <h2 id="cultivo-diario-title" class="cultivo-section-title">Diário</h2>
+                  <p class="cultivo-section-intro page-intro">Registe rega, adubo, treino e fotos — tudo fica na linha do tempo abaixo.</p>
+                </div>
+
+                <div class="cultivo-grow-actions-menu" id="perfil-grow-actions-menu">
+
+                  <button type="button" class="cultivo-grow-actions-toggle" id="perfil-grow-actions-toggle" aria-label="Opções da pesquisa" aria-haspopup="menu" aria-expanded="false" aria-controls="perfil-grow-actions-panel">
+                    <span class="cultivo-grow-actions-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+                  </button>
+
+                  <div class="cultivo-grow-actions-panel" id="perfil-grow-actions-panel" role="menu" hidden>
+
+                    <button type="button" class="cultivo-grow-actions-item cultivo-grow-actions-item--primary" role="menuitem" id="perfil-grow-submit-lab">Submeter ao laboratório</button>
+
+                    <div class="cultivo-grow-actions-divider" role="separator" aria-hidden="true"></div>
+
+                    <button type="button" class="cultivo-grow-actions-item" role="menuitem" id="perfil-grow-export-md">Exportar Markdown</button>
+
+                    <button type="button" class="cultivo-grow-actions-item" role="menuitem" id="perfil-grow-export-csv">Exportar CSV</button>
+
+                    <button type="button" class="cultivo-grow-actions-item" role="menuitem" id="perfil-grow-duplicate">Duplicar</button>
+
+                    <button type="button" class="cultivo-grow-actions-item" role="menuitem" id="perfil-grow-compare">Comparar métricas</button>
+
+                    <button type="button" class="cultivo-grow-actions-item" role="menuitem" id="perfil-grow-rename">Renomear</button>
+
+                    <button type="button" class="cultivo-grow-actions-item" role="menuitem" id="perfil-grow-print">Imprimir</button>
+
+                    <div class="cultivo-grow-actions-divider" role="separator" aria-hidden="true"></div>
+
+                    <button type="button" class="cultivo-grow-actions-item cultivo-grow-actions-item--danger" role="menuitem" id="perfil-grow-delete">Apagar pesquisa</button>
+
+                  </div>
+
+                </div>
+
+              </div>
 
               <label class="login-field conta-field" for="perfil-grow-detail-phase">Fase desta pesquisa
 
@@ -260,26 +281,6 @@
                   </select>
 
                 </label>
-
-              </div>
-
-              <div class="perfil-grow-detail-actions conta-actions cultivo-grow-actions">
-
-                <button type="button" class="botao botao-sm" id="perfil-grow-submit-lab">Submeter ao laboratório</button>
-
-                <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-export-md">Exportar Markdown</button>
-
-                <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-export-csv">Exportar CSV</button>
-
-                <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-duplicate">Duplicar</button>
-
-                <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-compare">Comparar métricas</button>
-
-                <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-rename">Renomear</button>
-
-                <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-delete">Apagar pesquisa</button>
-
-                <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-print">Imprimir</button>
 
               </div>
 
@@ -487,24 +488,6 @@
 
             </section>
 
-
-
-            <section id="cultivo-section-ferramentas" class="cultivo-section perfil-hub-card info-panel highlight-card" aria-labelledby="cultivo-tools-title">
-
-              <h2 id="cultivo-tools-title" class="cultivo-section-title">Ferramentas</h2>
-
-              <p class="page-intro">Sugeridas para a fase actual desta pesquisa.</p>
-
-              <ul id="perfil-tool-links" class="perfil-rec-list info-list"></ul>
-
-              <div id="perfil-ferramentas-nav" class="perfil-nav-accordion" aria-label="Calculadoras"></div>
-
-              <h3 class="perfil-section-label">Biblioteca</h3>
-
-              <div id="perfil-biblioteca-nav" class="perfil-nav-accordion" aria-label="Guias e pesquisas"></div>
-
-            </section>
-
           </div>
 
         </div>
@@ -569,26 +552,25 @@
   </div>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=207"></script>
-    <script src="/js/i18n-data.js?v=207"></script>
-    <script src="/js/i18n.js?v=207"></script>
-    <script src="/js/ferramentas-nav-data.js?v=207"></script>
-    <script src="/js/layout.js?v=207"></script>
-    <script src="/js/site-features.js?v=207"></script>
+  <script src="/js/app-version-check.js?v=208"></script>
+    <script src="/js/i18n-data.js?v=208"></script>
+    <script src="/js/i18n.js?v=208"></script>
+    <script src="/js/layout.js?v=208"></script>
+    <script src="/js/site-features.js?v=208"></script>
 
-  <script src="/js/cultivo/shared.js?v=207"></script>
+  <script src="/js/cultivo/shared.js?v=208"></script>
 
-  <script src="/js/cultivo/markdown.js?v=207"></script>
+  <script src="/js/cultivo/markdown.js?v=208"></script>
 
-  <script src="/js/cultivo/charts.js?v=207"></script>
+  <script src="/js/cultivo/charts.js?v=208"></script>
 
-  <script src="/js/cultivo/autosave.js?v=207"></script>
+  <script src="/js/cultivo/autosave.js?v=208"></script>
 
-  <script src="/js/cultivo/onboarding.js?v=207"></script>
+  <script src="/js/cultivo/onboarding.js?v=208"></script>
 
-  <script src="/js/cultivo-phase-weeks-data.js?v=207"></script>
+  <script src="/js/cultivo-phase-weeks-data.js?v=208"></script>
 
-  <script src="/js/cultivo.js?v=207"></script>
+  <script src="/js/cultivo.js?v=208"></script>
 
 </body>
 </html>

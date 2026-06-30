@@ -1,0 +1,214 @@
+.planejamento-page {
+  max-width: var(--max-width-wide);
+  margin: 0 auto;
+}
+
+.planejamento-login,
+.planejamento-onboarding {
+  max-width: 520px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.planejamento-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.planejamento-topbar-copy {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+
+.planejamento-section-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.planejamento-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.planejamento-stat-total {
+  border-color: rgba(39, 174, 96, 0.35);
+  background: rgba(39, 174, 96, 0.1);
+}
+
+.planejamento-stat-total strong {
+  color: var(--color-accent-light);
+}
+
+.planejamento-form-card,
+.planejamento-list-card,
+.planejamento-notes-card {
+  margin-bottom: 1.25rem;
+}
+
+.planejamento-form-card .planejamento-item-form,
+.planejamento-notes-card .login-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-stack);
+}
+
+.planejamento-form-card .login-field,
+.planejamento-notes-card .login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 500;
+  color: var(--color-label);
+}
+
+.planejamento-form-card input,
+.planejamento-form-card select,
+.planejamento-form-card textarea,
+.planejamento-notes-card textarea {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  background: var(--color-surface);
+  border: var(--border-input);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.planejamento-form-card input:focus,
+.planejamento-form-card select:focus,
+.planejamento-form-card textarea:focus,
+.planejamento-notes-card textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.15);
+}
+
+.planejamento-form-card select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ffffff' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  padding-right: 2.25rem;
+}
+
+html[data-theme="light"] .planejamento-form-card select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333333' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+}
+
+.planejamento-form-row {
+  display: grid;
+  gap: var(--gap-stack);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .planejamento-form-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .planejamento-form-row:last-of-type {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.planejamento-item-form .conta-actions {
+  margin-top: 0.25rem;
+}
+
+.planejamento-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.planejamento-item {
+  display: grid;
+  gap: 0.65rem;
+  padding: 0.85rem 0.95rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.16);
+}
+
+html[data-theme="light"] .planejamento-item {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.planejamento-item.is-purchased {
+  opacity: 0.72;
+}
+
+.planejamento-item.is-purchased .planejamento-item-name {
+  text-decoration: line-through;
+}
+
+.planejamento-item-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.planejamento-item-name {
+  margin: 0 0 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.planejamento-item-meta {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--color-text-soft);
+}
+
+.planejamento-item-price {
+  flex-shrink: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-accent-light);
+  white-space: nowrap;
+}
+
+.planejamento-item-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.planejamento-item-actions .botao-sm,
+.planejamento-item-actions .cultivo-section-nav-btn {
+  font-size: 0.78rem;
+  padding: 0.35rem 0.65rem;
+}
+
+.planejamento-empty {
+  margin: 0;
+  color: var(--color-text-soft);
+  font-size: 0.92rem;
+}
+
+.perfil-lab-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.perfil-lab-links .botao {
+  margin-top: 0;
+}
+
+.planejamento-page [hidden] {
+  display: none !important;
+}

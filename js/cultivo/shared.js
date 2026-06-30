@@ -24,6 +24,7 @@
 
   var MIN_USER_AGE = 18;
   var CULTIVO_ONBOARDING_KEY = 'budganja_cultivo_onboarding_v1';
+  var SELECTED_GROW_KEY = 'budganja_selected_grow_id';
   var SUBMISSION_NOTIFY_KEY = 'budganja_submission_notify_v1';
   var PHASE_INSPECTION_LINKS = {
     planejamento: { label: 'Inspeção: início do cultivo', href: '/posts/post-inspecao-cultivo-inicio.html' },
@@ -120,7 +121,8 @@
       customGuide: '',
       guideWeekNotes: {},
       entries: [],
-      createdAt: now
+      createdAt: now,
+      updatedAt: now
     };
   }
 
