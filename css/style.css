@@ -2745,9 +2745,7 @@ html[data-theme="light"] .login-divider::after {
     margin-top: 10px;
 }
 
-.sorteios-page {
-    /* usa .conteudo + .page-stack para largura dos blocos */
-}
+/* .sorteios-page usa .conteudo + .page-stack para largura dos blocos */
 
 .sorteios-layout {
     display: flex;
@@ -3106,7 +3104,6 @@ html[data-theme="light"] .login-divider::after {
 .usuarios-admin-dl dd {
     margin: 2px 0 0;
     color: var(--color-text);
-}
 }
 
 .sorteios-config-panel {
@@ -4088,6 +4085,20 @@ html[data-theme="light"] .login-divider::after {
     display: block;
 }
 
+.post-card-cover-placeholder {
+    background: #1e2a14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4a6a2a;
+}
+
+.post-card-cover-placeholder svg {
+    width: 48px;
+    height: 48px;
+    opacity: 0.5;
+}
+
 .post-card-date {
     display: block;
     font-size: 0.8rem;
@@ -4139,8 +4150,6 @@ html[data-theme="light"] .login-divider::after {
 
 .card.post-card > a:not(.post-card-edit-btn) h3 {
     padding-right: 36px;
-    margin-top: 0;
-}
     margin-top: 0;
 }
 
@@ -5563,7 +5572,9 @@ body[data-page="home"] .features {
     color: #f4d03f;
 }
 
-.card-icon--cultivo {
+.card-icon--cultivo,
+.card-icon--loja,
+.card-icon--guia {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -5572,6 +5583,9 @@ body[data-page="home"] .features {
     margin-bottom: 8px;
     border-radius: 12px;
     font-size: 1.45rem;
+}
+
+.card-icon--cultivo {
     background: linear-gradient(145deg, rgba(241, 196, 15, 0.35), rgba(243, 156, 18, 0.15));
     border: 1px solid rgba(241, 196, 15, 0.4);
     box-shadow: 0 3px 10px rgba(241, 196, 15, 0.18);
@@ -5590,14 +5604,6 @@ body[data-page="home"] .features {
 }
 
 .card-icon--loja {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    margin-bottom: 8px;
-    border-radius: 12px;
-    font-size: 1.45rem;
     background: linear-gradient(145deg, rgba(230, 126, 34, 0.35), rgba(211, 84, 0, 0.15));
     border: 1px solid rgba(230, 126, 34, 0.4);
     box-shadow: 0 3px 10px rgba(230, 126, 34, 0.18);
@@ -5610,14 +5616,6 @@ body[data-page="home"] .features {
 }
 
 .card-icon--guia {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    margin-bottom: 8px;
-    border-radius: 12px;
-    font-size: 1.45rem;
     background: linear-gradient(145deg, rgba(39, 174, 96, 0.35), rgba(46, 204, 113, 0.15));
     border: 1px solid rgba(46, 204, 113, 0.4);
     box-shadow: 0 3px 10px rgba(39, 174, 96, 0.18);

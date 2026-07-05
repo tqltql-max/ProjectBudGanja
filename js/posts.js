@@ -58,6 +58,7 @@ function renderPostCards(container, posts) {
     link.style.color = 'inherit';
     if (p.excerpt) link.setAttribute('data-tip', p.excerpt);
 
+    var placeholderHtml = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>';
     if (p.coverImage) {
       var img = document.createElement('img');
       var cover = String(p.coverImage).trim();
@@ -65,7 +66,20 @@ function renderPostCards(container, posts) {
       img.alt = '';
       img.className = 'post-card-cover';
       img.loading = 'lazy';
+      img.onerror = function() {
+        var ph = document.createElement('div');
+        ph.className = 'post-card-cover post-card-cover-placeholder';
+        ph.setAttribute('aria-hidden', 'true');
+        ph.innerHTML = placeholderHtml;
+        this.parentNode.replaceChild(ph, this);
+      };
       link.appendChild(img);
+    } else {
+      var placeholder = document.createElement('div');
+      placeholder.className = 'post-card-cover post-card-cover-placeholder';
+      placeholder.setAttribute('aria-hidden', 'true');
+      placeholder.innerHTML = placeholderHtml;
+      link.appendChild(placeholder);
     }
 
     if (p.series) {
