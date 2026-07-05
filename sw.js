@@ -1,5 +1,5 @@
 // Service Worker para PWA - Inspetor BudGanja
-const APP_VERSION = '208';
+const APP_VERSION = '207';
 const CACHE_NAME = 'budganja-v' + APP_VERSION;
 const urlsToCache = [
     '/',
@@ -158,11 +158,6 @@ self.addEventListener('fetch', (event) => {
                 })
                 .catch(() => caches.match(event.request))
         );
-        return;
-    }
-
-    if (path === '/posts-public.json') {
-        event.respondWith(networkFirstWithCache(event.request));
         return;
     }
 

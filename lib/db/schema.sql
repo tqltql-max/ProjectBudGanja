@@ -8,10 +8,15 @@ CREATE TABLE IF NOT EXISTS schema_migrations (
 
 CREATE TABLE IF NOT EXISTS users (
   id TEXT PRIMARY KEY,
+  google_id TEXT NOT NULL DEFAULT '',
   email TEXT NOT NULL DEFAULT '',
   name TEXT NOT NULL DEFAULT '',
   picture TEXT NOT NULL DEFAULT '',
   provider TEXT NOT NULL DEFAULT 'google',
+  local_password_hash TEXT NOT NULL DEFAULT '',
+  local_password_updated_at TEXT,
+  reset_token_hash TEXT NOT NULL DEFAULT '',
+  reset_token_expires_at TEXT,
   profile_json TEXT NOT NULL DEFAULT '{}',
   is_admin INTEGER NOT NULL DEFAULT 0,
   created_at TEXT NOT NULL,
@@ -60,11 +65,6 @@ CREATE TABLE IF NOT EXISTS posts (
   published INTEGER NOT NULL DEFAULT 1,
   cover_image TEXT NOT NULL DEFAULT '',
   category TEXT NOT NULL DEFAULT 'pesquisa',
-  series TEXT NOT NULL DEFAULT '',
-  series_order INTEGER,
-  series_label TEXT NOT NULL DEFAULT '',
-  excerpt_en TEXT NOT NULL DEFAULT '',
-  excerpt_es TEXT NOT NULL DEFAULT '',
   updated_at TEXT NOT NULL
 );
 
@@ -391,21 +391,3 @@ CREATE TABLE IF NOT EXISTS cultivo_submissions (
 CREATE INDEX IF NOT EXISTS idx_cultivo_submissions_status ON cultivo_submissions(status);
 CREATE INDEX IF NOT EXISTS idx_cultivo_submissions_user ON cultivo_submissions(user_id);
 CREATE INDEX IF NOT EXISTS idx_cultivo_submissions_grow ON cultivo_submissions(grow_id);
-
-CREATE TABLE IF NOT EXISTS email_outbox (
-  id TEXT PRIMARY KEY,
-  template TEXT NOT NULL,
-  to_email TEXT NOT NULL,
-  to_name TEXT NOT NULL DEFAULT '',
-  subject TEXT NOT NULL DEFAULT '',
-  payload_json TEXT NOT NULL DEFAULT '{}',
-  status TEXT NOT NULL DEFAULT 'pending',
-  idempotency_key TEXT UNIQUE,
-  attempts INTEGER NOT NULL DEFAULT 0,
-  last_error TEXT NOT NULL DEFAULT '',
-  created_at TEXT NOT NULL,
-  sent_at TEXT
-);
-
-CREATE INDEX IF NOT EXISTS idx_email_outbox_status ON email_outbox(status, created_at);
-CREATE INDEX IF NOT EXISTS idx_email_outbox_created ON email_outbox(created_at DESC);

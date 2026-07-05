@@ -51,60 +51,9 @@
   margin-bottom: 1.25rem;
 }
 
-.planejamento-form-card .planejamento-item-form,
-.planejamento-notes-card .login-field {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-stack);
-}
-
-.planejamento-form-card .login-field,
-.planejamento-notes-card .login-field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  font-weight: 500;
-  color: var(--color-label);
-}
-
-.planejamento-form-card input,
-.planejamento-form-card select,
-.planejamento-form-card textarea,
-.planejamento-notes-card textarea {
-  width: 100%;
-  padding: 0.75rem 0.85rem;
-  background: var(--color-surface);
-  border: var(--border-input);
-  border-radius: var(--radius-md);
-  color: var(--color-text);
-  font-size: 1rem;
-  line-height: 1.35;
-}
-
-.planejamento-form-card input:focus,
-.planejamento-form-card select:focus,
-.planejamento-form-card textarea:focus,
-.planejamento-notes-card textarea:focus {
-  outline: none;
-  border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.15);
-}
-
-.planejamento-form-card select {
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ffffff' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 0.85rem center;
-  padding-right: 2.25rem;
-}
-
-html[data-theme="light"] .planejamento-form-card select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333333' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
-}
-
 .planejamento-form-row {
   display: grid;
-  gap: var(--gap-stack);
+  gap: 0.75rem;
   grid-template-columns: 1fr;
 }
 
@@ -116,10 +65,6 @@ html[data-theme="light"] .planejamento-form-card select {
   .planejamento-form-row:last-of-type {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
-
-.planejamento-item-form .conta-actions {
-  margin-top: 0.25rem;
 }
 
 .planejamento-items {

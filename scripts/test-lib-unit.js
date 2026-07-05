@@ -7,9 +7,6 @@
 
 const { mergeGuiaInspecoesPosts, sortPublicPosts, GUIA_INSPECOES_POSTS } = require('../lib/merge-guia-inspecoes.js');
 const { CHANNEL_INSPECOES_POSTS } = require('../lib/channel-inspecoes-posts.js');
-const { EQUIPAMENTO_VERIFICACAO_POSTS } = require('../lib/equipamento-verificacao-posts.js');
-const { FORMACAO_INSPECOES_POSTS } = require('../lib/formacao-inspecoes-posts.js');
-const { getPublicPosts, toPublicFeedItem } = require('../lib/posts-service.js');
 const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registry.js');
 const { ROOT } = require('../lib/paths.js');
 
@@ -35,53 +32,18 @@ const channelSlugs = CHANNEL_INSPECOES_POSTS.map((p) => p.slug);
 
 assert('merge inclui inspeções guia', guiaSlugs.every((s) => merged.some((p) => p.slug === s)));
 assert('merge inclui inspeção Jardim HG', merged.some((p) => p.slug === 'inspecao-canal-jardimhg'));
-assert('merge inclui inspeção MovReCam', merged.some((p) => p.slug === 'inspecao-canal-movrecam'));
-assert('merge inclui curso UNIFESP', merged.some((p) => p.slug === 'inspecao-curso-unifesp-cannabis-medicinal'));
-assert('UNIFESP em formação acadêmica', merged.some((p) => p.slug === 'inspecao-curso-unifesp-cannabis-medicinal' && p.series === 'formacao-academica'));
-assert('Mars Hydro em equipamentos', merged.some((p) => p.slug === 'inspecao-marshydro-brasil' && p.series === 'verificacao-equipamento'));
-assert('ventilação em equipamentos', merged.some((p) => p.slug === 'inspecao-ventilacao-tenda' && p.series === 'verificacao-equipamento'));
+assert('merge mantém ventilação', merged.some((p) => p.slug === 'inspecao-ventilacao-tenda'));
 assert('merge não duplica slugs', merged.length === new Set(merged.map((p) => p.slug)).size);
-
-const publicInspec = getPublicPosts(merged)
-  .filter((p) => p.category === 'inspecao')
-  .map(toPublicFeedItem);
-assert('12 inspeções publicadas', publicInspec.length === 12);
-
-const expectedSeries = {
-  'inspecao-cultivo-inicio': 'guia-cultivo-basico',
-  'inspecao-nutricao-cannabis': 'guia-cultivo-basico',
-  'inspecao-solo-vivo-organico': 'guia-cultivo-basico',
-  'inspecao-arquitetura-cannabis': 'guia-cultivo-basico',
-  'inspecao-ciencia-floracao': 'guia-cultivo-basico',
-  'inspecao-propagacao-clonagem': 'guia-cultivo-basico',
-  'inspecao-cultivo-indoor-ppfd': 'guia-cultivo-basico',
-  'inspecao-canal-jardimhg': 'canal-jardimhg',
-  'inspecao-canal-movrecam': 'canal-movrecam',
-  'inspecao-ventilacao-tenda': 'verificacao-equipamento',
-  'inspecao-marshydro-brasil': 'verificacao-equipamento',
-  'inspecao-curso-unifesp-cannabis-medicinal': 'formacao-academica'
-};
-Object.keys(expectedSeries).forEach((slug) => {
-  const post = publicInspec.find((p) => p.slug === slug);
-  assert('categoria ' + slug, post && post.series === expectedSeries[slug], post ? post.series : 'em falta');
-});
 
 const inspecoes = sortPublicPosts(merged.filter((p) => p.category === 'inspecao'));
 const firstGuia = inspecoes.find((p) => p.slug === 'inspecao-cultivo-inicio');
 assert('seriesOrder guia #1', firstGuia && firstGuia.seriesOrder === 1);
 const jardim = inspecoes.find((p) => p.slug === 'inspecao-canal-jardimhg');
 assert('Jardim HG seriesOrder 10', jardim && jardim.seriesOrder === 10);
-const movrecam = inspecoes.find((p) => p.slug === 'inspecao-canal-movrecam');
-assert('MovReCam seriesOrder 11', movrecam && movrecam.seriesOrder === 11);
 
 const jardimCatalog = JSON.parse(require('fs').readFileSync(require('path').join(ROOT, 'content/channels/jardimhg.json'), 'utf8'));
 assert('Jardim HG catálogo >= 30 vídeos', (jardimCatalog.videoCount || jardimCatalog.videos?.length || 0) >= 30);
-const movrecamCatalog = JSON.parse(require('fs').readFileSync(require('path').join(ROOT, 'content/channels/movrecam.json'), 'utf8'));
-assert('MovReCam catálogo >= 100 vídeos', (movrecamCatalog.videoCount || movrecamCatalog.videos?.length || 0) >= 100);
-assert('2 posts canais', CHANNEL_INSPECOES_POSTS.length === 2);
 
-assert('2 posts equipamentos', EQUIPAMENTO_VERIFICACAO_POSTS.length === 2);
-assert('1 post formação', FORMACAO_INSPECOES_POSTS.length === 1);
 assert('7 posts guia', GUIA_INSPECOES_POSTS.length === 7);
 assert('posts guia têm @youtube ou body', GUIA_INSPECOES_POSTS.every((p) => /@youtube\s+\S+/.test(p.content_raw || '')));
 

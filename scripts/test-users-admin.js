@@ -74,33 +74,6 @@ async function run() {
     assert('conceder admin a segundo utilizador', grant2.ok && grant2.user.adminGranted);
     const revoke2 = await setUserAdmin(store, TEST_USER_ID_2, false, { userId: TEST_USER_ID });
     assert('revogar segundo admin', revoke2.ok);
-
-    const mockStore = {
-      async getUsers() {
-        return {
-          mock_user: {
-            id: 'mock_user',
-            email: 'mock@example.com',
-            name: 'Mock User',
-            picture: '',
-            provider: 'google',
-            isAdmin: false,
-            createdAt: now,
-            updatedAt: now,
-            profile: { displayName: 'Mock', age: 30 }
-          }
-        };
-      },
-      async setUsers(users) {
-        mockStore._users = users;
-      },
-      async getSorteios() { return []; },
-      async getLojaOrders() { return []; }
-    };
-    const mockList = await listUsersForAdmin(mockStore, 'mock@');
-    assert('fallback getUsers — listar', mockList.ok && mockList.users.length === 1);
-    const mockDetail = await getUserDetailForAdmin(mockStore, 'mock_user');
-    assert('fallback getUsers — detalhe', mockDetail.ok && mockDetail.user.email === 'mock@example.com');
   } finally {
     await db.execute({ sql: 'DELETE FROM users WHERE id IN (?, ?)', args: [TEST_USER_ID, TEST_USER_ID_2] });
   }

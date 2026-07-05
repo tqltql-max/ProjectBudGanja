@@ -138,8 +138,12 @@
       container.appendChild(bar);
     }
     var calcLabel = payload.calculator ? (CALC_LABELS[payload.calculator] || 'Calculadora') : 'Calculadora';
+    var hintText = payload.calculator
+      ? 'Salvar resultado da ' + calcLabel + ' no Diário de Pesquisas'
+      : 'Salvar resultado no Diário de Pesquisas';
     bar.innerHTML =
       '<button type="button" class="botao botao-outline botao-sm diary-save-btn">📓 Guardar no diário</button>' +
+      '<span class="diary-save-meta">' + hintText + '</span>' +
       '<span class="diary-save-status" role="status" aria-live="polite"></span>';
     var btn = bar.querySelector('.diary-save-btn');
     var status = bar.querySelector('.diary-save-status');

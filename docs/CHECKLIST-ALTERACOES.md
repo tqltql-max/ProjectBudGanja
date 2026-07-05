@@ -64,9 +64,39 @@ URLs rápidas (smoke test local `http://localhost:8080`):
 
 ## 5. Produção (só quando for publicar de verdade)
 
-- [ ] Site em produção abre no **domínio** (`https://inspetorbudganja.com.br`)
-- [ ] **Ctrl+F5** (ou limpar cache) na página alterada — evita ver versão antiga
-- [ ] Se instalou PWA no telemóvel: pode precisar fechar e reabrir o app após mudanças grandes
+- [ ] Deploy online executado:
+
+```powershell
+cd c:\Users\tiago\Desktop\ProjectBudGanja
+npm run deploy:online
+```
+
+- [ ] Site em produção abre no domínio (`https://inspetorbudganja.com.br`)
+- [ ] Validar versão publicada:
+
+```text
+https://inspetorbudganja.com.br/version.json
+```
+
+- [ ] Teste rápido no celular (sempre igual):
+1. Fechar e reabrir o app/site no celular.
+2. Abrir a home e navegar para a página alterada.
+3. Se aparecer aviso "Nova versão disponível", tocar em "Atualizar agora".
+4. Confirmar a alteração no ecrã.
+
+- [ ] Só se necessário: refresh forçado ou limpar cache do navegador/PWA
+
+### Fluxo padrão (copiar e usar após cada alteração)
+
+```powershell
+cd c:\Users\tiago\Desktop\ProjectBudGanja
+npm run deploy:online
+```
+
+Depois:
+1. Abrir `https://inspetorbudganja.com.br/version.json`.
+2. Testar a mudança no celular.
+3. Se houver banner de atualização, tocar em "Atualizar agora".
 
 ---
 

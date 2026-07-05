@@ -27,8 +27,8 @@ Write-Host "Build..." -ForegroundColor Cyan
 npm run build
 
 if (-not (Get-Command pm2 -ErrorAction SilentlyContinue)) {
-  Write-Host "PM2 nao encontrado. A correr npm start (fecha ao fechar a janela)." -ForegroundColor Yellow
-  npm start
+  Write-Host "PM2 nao encontrado. A usar modo sem PM2 (server + tunnel em background)." -ForegroundColor Yellow
+  & (Join-Path $PSScriptRoot "start-now.ps1")
   exit
 }
 

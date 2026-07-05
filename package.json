@@ -14,19 +14,26 @@
 
     "start:dev": "node server/index.js",
 
+    "start:quick": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-dev.ps1",
+
+    "start:quick:tunnel": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-dev.ps1 -Tunnel",
+    "deploy:online": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-site.ps1",
+
     "build": "node scripts/build.js",
 
     "build:posts": "node scripts/regenerate-posts.js",
 
     "sync:pages": "node scripts/sync-pages-from-html.js",
 
+    "sync:pages:db": "node scripts/sync-pages-to-db.js",
+
+    "sync:pages:all": "npm run sync:pages && npm run sync:pages:db",
+
     "build:guia": "node scripts/build-guia-cultivo.js",
 
     "build:youtube": "node scripts/build-youtube-feed.js",
 
     "build:jardimhg": "node scripts/build-jardimhg-catalog.js",
-
-    "build:movrecam": "node scripts/build-movrecam-catalog.js",
 
     "build:search": "node scripts/build-search-index.js",
 
@@ -49,8 +56,6 @@
     "test:cultivo": "node scripts/test-cultivo-persistence.js",
     "test:cultivo-submissions": "node scripts/test-cultivo-submissions.js",
     "test:users-admin": "node scripts/test-users-admin.js",
-    "test:email": "node scripts/test-email-service.js",
-    "email:process": "node scripts/process-email-queue.js",
     "test": "node scripts/test-lib-unit.js && node scripts/test-db-persistence.js && node scripts/test-cultivo-persistence.js && node scripts/test-cultivo-submissions.js && node scripts/test-users-admin.js",
 
     "verify": "node scripts/verify.js",

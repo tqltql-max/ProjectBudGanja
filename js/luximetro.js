@@ -16,6 +16,8 @@
     let readingLocked = false;
     let lockedPPFD = 0;
     let lockedLux = 0;
+    let cameraStarting = false;
+    let currentFacingMode = 'user';
      // Alert state
     let monitoringActive = false;
     let ppfdMin = 300;
@@ -35,18 +37,20 @@
     const luxDisplay = document.getElementById('lux-display');
     const statusBadge = document.getElementById('status-badge');
     const btnStart = document.getElementById('btn-start');
+    const btnCameraToggle = document.getElementById('btn-camera-toggle');
     const btnCalibrate = document.getElementById('btn-calibrate');
     const btnSave = document.getElementById('btn-save');
     const calInfo = document.getElementById('cal-info');
     const sensorType = document.getElementById('sensor-type');
     const cameraWrapper = document.getElementById('camera-wrapper');
+    const cameraOff = document.getElementById('camera-off');
     const readingPanel = document.querySelector('.reading-panel');
     const alertStatusEl = document.getElementById('alert-status');
     const alertStatusText = document.getElementById('alert-status-text');
     const rangeFill = document.getElementById('range-fill');
     const rangeCursor = document.getElementById('range-cursor');
     const chartCanvas = document.getElementById('history-chart');
-    const chartCtx = chartCanvas.getContext('2d');
+    const chartCtx = chartCanvas ? chartCanvas.getContext('2d') : null;
     const chartStatus = document.getElementById('chart-status');
     const dliEstimate = document.getElementById('dli-estimate');
     const DISPLAY_UPDATE_INTERVAL = 250;
@@ -157,11 +161,13 @@
         else if (alertLevel === 'critical') rangeCursor.classList.add('critical');
     }
      function pushLiveHistory(ppfd) {
+        if (!chartCanvas || !chartCtx || !chartStatus) return;
         liveHistory.push(ppfd);
         if (liveHistory.length > 60) liveHistory.shift();
         drawHistoryChart();
     }
      function drawHistoryChart() {
+        if (!chartCanvas || !chartCtx || !chartStatus) return;
         const width = chartCanvas.width;
         const height = chartCanvas.height;
         chartCtx.clearRect(0, 0, width, height);
@@ -353,7 +359,19 @@
     }
      tryLightSensor();
      // Camera toggle
+    function toggleCameraFacing() {
+        currentFacingMode = currentFacingMode === 'user' ? 'environment' : 'user';
+        if (btnCameraToggle) {
+            btnCameraToggle.textContent = currentFacingMode === 'user' ? 'Frontal' : 'Traseira';
+        }
+        if (isRunning) {
+            stopCamera();
+            void startCamera();
+        }
+    }
+
     async function toggleCamera() {
+        if (cameraStarting) return;
         if (isRunning) {
             stopCamera();
         } else {
@@ -361,8 +379,19 @@
         }
     }
      async function startCamera() {
+        if (cameraStarting || isRunning) return;
+        cameraStarting = true;
+        btnStart.disabled = true;
         try {
-            const facingMode = document.getElementById('camera-facing').value;
+            if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+                throw new Error('getUserMedia não suportado neste navegador');
+            }
+            const facingMode = currentFacingMode;
+            if (video.srcObject) {
+                video.pause();
+                video.srcObject.getTracks().forEach(t => t.stop());
+                video.srcObject = null;
+            }
             stream = await navigator.mediaDevices.getUserMedia({
                 video: {
                     facingMode: facingMode,
@@ -370,23 +399,37 @@
                     height: { ideal: 480 }
                 }
             });
-             video.srcObject = stream;
-            video.style.transform = facingMode === 'user' ? 'scaleX(-1)' : 'none';
+            video.srcObject = stream;
             video.style.display = 'block';
-            document.getElementById('camera-off').style.display = 'none';
-             await video.play();
-             canvas.width = video.videoWidth || 640;
+            video.style.width = '100%';
+            video.style.height = '100%';
+            video.style.maxWidth = '100%';
+            video.style.maxHeight = '100%';
+            video.style.objectFit = 'cover';
+            video.style.objectPosition = 'center';
+            video.style.transform = facingMode === 'user' ? 'scaleX(-1)' : 'none';
+            cameraOff.style.display = 'none';
+            await video.play();
+            await new Promise((resolve) => {
+                if (video.readyState >= 2) return resolve();
+                video.onloadedmetadata = () => resolve();
+            });
+            canvas.width = video.videoWidth || 640;
             canvas.height = video.videoHeight || 480;
-             isRunning = true;
+            isRunning = true;
             btnStart.textContent = 'Parar Câmera';
             btnCalibrate.disabled = false;
             btnSave.disabled = false;
-             processFrame();
+            btnStart.disabled = false;
+            processFrame();
         } catch (err) {
-            document.getElementById('camera-off').style.display = 'flex';
-            document.getElementById('camera-off').querySelector('p').textContent =
-                'Erro ao acessar câmera. Verifique as permissões.';
+            cameraOff.style.display = 'flex';
+            cameraOff.querySelector('p').textContent =
+                'Erro ao acessar câmera. Verifique as permissões. ' + (err && err.message ? err.message : '');
             console.error('Erro câmera:', err);
+            btnStart.disabled = false;
+        } finally {
+            cameraStarting = false;
         }
     }
      function stopCamera() {
@@ -394,25 +437,28 @@
             stream.getTracks().forEach(t => t.stop());
             stream = null;
         }
+        if (video.srcObject) {
+            video.pause();
+            video.srcObject = null;
+        }
         if (animFrameId) {
             cancelAnimationFrame(animFrameId);
             animFrameId = null;
         }
         isRunning = false;
-        video.style.display = 'none';
-        document.getElementById('camera-off').style.display = 'flex';
-        document.getElementById('camera-off').querySelector('p').textContent = 
+        cameraOff.style.display = 'flex';
+        cameraOff.querySelector('p').textContent = 
             'Câmera desligada';
+        video.style.display = 'none';
         btnStart.textContent = 'Iniciar Câmera';
+        btnStart.disabled = false;
         btnCalibrate.disabled = true;
         btnSave.disabled = true;
+        cameraStarting = false;
     }
-     document.getElementById('camera-facing').addEventListener('change', () => {
-        if (isRunning) {
-            stopCamera();
-            startCamera();
-        }
-    });
+    if (btnCameraToggle) {
+        btnCameraToggle.textContent = currentFacingMode === 'user' ? 'Frontal' : 'Traseira';
+    }
      // Frame processing
     function processFrame() {
         if (!isRunning) return;
@@ -555,26 +601,12 @@
         });
          if (history.length > 20) history.pop();
         renderHistory();
-        attachDiarySaveBar();
-    }
-
-    function attachDiarySaveBar() {
-        if (!window.BudGanjaDiaryBridge || !readingPanel) return;
-        if (currentPPFD <= 0 && currentLux <= 0) return;
-        var source = document.getElementById('light-source');
-        var sourceLabel = source && source.selectedOptions[0] ? source.selectedOptions[0].text : '';
-        window.BudGanjaDiaryBridge.attachSaveBar(readingPanel, {
-            calculator: 'luximetro',
-            text: 'Luxímetro: ' + Math.round(currentPPFD) + ' μmol/m²/s · ' +
-                Math.round(currentLux).toLocaleString('pt-BR') + ' lux' +
-                (sourceLabel ? ' (' + sourceLabel + ')' : ''),
-            metrics: { ppfd: Math.round(currentPPFD), lux: Math.round(currentLux) }
-        });
     }
 
      function renderHistory() {
         const panel = document.getElementById('history-panel');
         const list = document.getElementById('history-list');
+        if (!panel || !list) return;
          if (history.length === 0) {
             panel.classList.add('hidden');
             return;
@@ -607,18 +639,14 @@
     });
      // Show camera-off message initially
     video.style.display = 'none';
-    const cameraOff = document.getElementById('camera-off');
     if (cameraOff) {
         cameraOff.classList.remove('hidden');
         cameraOff.style.display = 'flex';
     }
+    if (btnCameraToggle) {
+        btnCameraToggle.textContent = currentFacingMode === 'user' ? 'Frontal' : 'Traseira';
+    }
+    void startCamera();
      // Initialize range bar
     updateRangeBar();
     drawHistoryChart();
-    if (readingPanel && window.BudGanjaDiaryBridge) {
-        var origUpdate = updateDisplayFromLux;
-        updateDisplayFromLux = function(lux) {
-            origUpdate(lux);
-            if (readingLocked || (currentPPFD > 0 || currentLux > 0)) attachDiarySaveBar();
-        };
-    }

@@ -58,7 +58,7 @@ function buildCalcAppHeader(calc) {
 
   return `
         <header class="calc-app-header">
-            <a href="/calculadoras/" class="calc-app-back" aria-label="Voltar para calculadoras">&larr;</a>
+            <a href="/calculadoras/" class="calc-app-back" aria-label="Voltar para Ferramentas">&larr;</a>
             <div class="calc-app-header-main">
                 <span class="calc-app-icon" aria-hidden="true">${icon}</span>
                 <h1>${escapeHtml(label)}</h1>
@@ -128,8 +128,8 @@ ${scriptTag}</body>
 function buildHubIndex() {
   let body = `
     <main id="main-content" class="conteudo calc-hub">
-        <h1>Calculadoras</h1>
-        <nav class="calc-apps-grid calc-apps-grid--all" aria-label="Calculadoras">`;
+        <h1>Ferramentas</h1>
+        <nav class="calc-apps-grid calc-apps-grid--all" aria-label="Ferramentas">`;
 
   CALCULADORAS.forEach((calc) => {
     const href = getCalculadoraUrl(calc);
@@ -158,9 +158,9 @@ function buildHubIndex() {
     ${GENERATED_MARKER}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Calculadoras do Inspetor BudGanja — Super Calculadora de cultivo, luxímetro e Super Solo.">
-    <meta property="og:title" content="Calculadoras | Inspetor BudGanja">
-    <meta property="og:description" content="Super Calculadora (VPD, DLI, pH, EC…), luxímetro e Super Solo.">
+    <meta name="description" content="Ferramentas do Inspetor BudGanja — Super Calc, luxímetro e Super Solo.">
+    <meta property="og:title" content="Ferramentas | Inspetor BudGanja">
+    <meta property="og:description" content="Super Calc, luxímetro e Super Solo — ferramentas numéricas para cultivo.">
     <meta property="og:type" content="website">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/imagens/favicon-32.png" sizes="32x32" type="image/png">
@@ -172,7 +172,7 @@ function buildHubIndex() {
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Calculadoras | Inspetor BudGanja</title>
+    <title>Ferramentas | Inspetor BudGanja</title>
 </head>
 <body data-page="calculadora">
     <div id="site-header"></div>
@@ -218,7 +218,7 @@ function generate() {
 
   fs.writeFileSync(path.join(CALC_DIR, 'index.html'), buildHubIndex(), 'utf8');
 
-  console.log('Calculadoras: index + ' + generated + ' páginas geradas em calculadoras/');
+  console.log('Ferramentas: index + ' + generated + ' páginas geradas em calculadoras/');
 }
 
 generate();

@@ -6,8 +6,8 @@
   "instagram": "https://www.instagram.com/jardimhg/",
   "telegramNote": "Comunidade no Telegram — link na bio do Instagram @jardimhg",
   "publishedAt": "2023-03-08T06:21:23+00:00",
-  "inspectedAt": "2026-06-30T03:18:25.142Z",
-  "videoCount": 123,
+  "inspectedAt": "2026-07-05T04:56:24.052Z",
+  "videoCount": 124,
   "mission": "Conteúdo educativo sobre cultivo medicinal de Cannabis sativa indoor e outdoor, com dicas práticas e técnicas especializadas.",
   "partnerCodes": [
     {
@@ -28,12 +28,18 @@
   ],
   "videos": [
     {
+      "id": "WDdDwaMRRCk",
+      "title": "LIVE DE CULTIVO DE CANNABIS | Tire suas dúvidas",
+      "published": "2026-07-04T14:51:59+00:00",
+      "url": "https://www.youtube.com/watch?v=WDdDwaMRRCk"
+    },
+    {
       "id": "dPSxm9jIy3o",
       "title": "Esse Adaptador Levou o Puffco Pivot para Outro Nível",
       "published": "2026-06-24T12:16:49+00:00",
       "url": "https://www.youtube.com/watch?v=dPSxm9jIy3o",
-      "views": "1,4 mil visualizações",
-      "publishedRelative": "há 5 dias"
+      "views": "1,6 mil visualizações",
+      "publishedRelative": "há 10 dias"
     },
     {
       "id": "O1Z0VnUrEgk",
@@ -54,7 +60,7 @@
       "title": "Colher a Planta Inteira de Uma Vez É a Melhor Opção?",
       "published": "2026-05-18T22:16:21+00:00",
       "url": "https://www.youtube.com/watch?v=hOlYFVoCHw0",
-      "views": "7 mil visualizações",
+      "views": "7,1 mil visualizações",
       "publishedRelative": "há 1 mês"
     },
     {
@@ -68,7 +74,7 @@
       "title": "Solo Orgânico Perfeito: Estrutura + Receita Revelada",
       "published": "2026-04-26T20:45:33+00:00",
       "url": "https://www.youtube.com/watch?v=TmKQ5HaGz3s",
-      "views": "8 mil visualizações",
+      "views": "8,1 mil visualizações",
       "publishedRelative": "há 2 meses"
     },
     {
@@ -90,7 +96,7 @@
       "title": "No-Veg: o que eu achei desse estudo",
       "published": "2026-03-15T10:41:18+00:00",
       "url": "https://www.youtube.com/watch?v=rToKLotvK08",
-      "views": "7 mil visualizações",
+      "views": "7,1 mil visualizações",
       "publishedRelative": "há 3 meses"
     },
     {
@@ -98,8 +104,8 @@
       "title": "Repensando a Fase Vegetativa: O Que Mostra o Novo Estudo",
       "published": "2026-03-03T10:47:44+00:00",
       "url": "https://www.youtube.com/watch?v=XIRUcXZSIBE",
-      "views": "4,1 mil visualizações",
-      "publishedRelative": "há 3 meses"
+      "views": "4,2 mil visualizações",
+      "publishedRelative": "há 4 meses"
     },
     {
       "id": "ZxlaVpso9SI",
@@ -118,7 +124,7 @@
       "title": "Tamponamento do Coco: O Que Realmente Acontece",
       "published": "2026-02-11T21:32:56+00:00",
       "url": "https://www.youtube.com/watch?v=bGWyyxQcrBY",
-      "views": "4,2 mil visualizações",
+      "views": "4,3 mil visualizações",
       "publishedRelative": "há 4 meses"
     },
     {
@@ -126,8 +132,8 @@
       "title": "Overfert: como lidar em solo orgânico e inerte",
       "published": "2026-02-03T20:39:47+00:00",
       "url": "https://www.youtube.com/watch?v=PejtWn3moTY",
-      "views": "5,4 mil visualizações",
-      "publishedRelative": "há 4 meses"
+      "views": "5,5 mil visualizações",
+      "publishedRelative": "há 5 meses"
     },
     {
       "id": "wnvr4JIF5FA",
@@ -292,18 +298,11 @@
       "publishedRelative": "1 year ago"
     },
     {
-      "id": "XliOmdDZSoU",
-      "title": "Como Fazer LST (low stress training) nas plantas de Cannabis",
-      "url": "https://www.youtube.com/watch?v=XliOmdDZSoU",
-      "views": "30K views",
-      "publishedRelative": "1 year ago"
-    },
-    {
       "id": "YWhCFaIubo8",
       "title": "COMO FAZER ROSIN - EXTRAÇÃO de CONCENTRATO de Cannabis (Haxixe)",
       "url": "https://www.youtube.com/watch?v=YWhCFaIubo8",
       "views": "31K views",
-      "publishedRelative": "1 year ago"
+      "publishedRelative": "2 years ago"
     },
     {
       "id": "y0-pIv5pvoI",
@@ -324,7 +323,7 @@
       "title": "COMO PLANTAR MACONHA - Transplante e Colheita + MUTAÇÃO",
       "url": "https://www.youtube.com/watch?v=6c9IMepe8g0",
       "views": "3.5K views",
-      "publishedRelative": "2 years ago"
+      "publishedRelative": "3 years ago"
     },
     {
       "id": "yCBfY-Rg81g",
@@ -366,7 +365,7 @@
       "id": "A19dws5NykI",
       "title": "Como SECAR e CURAR  a CANNABIS SATIVA",
       "url": "https://www.youtube.com/watch?v=A19dws5NykI",
-      "views": "351K views",
+      "views": "353K views",
       "publishedRelative": "2 years ago"
     },
     {
@@ -394,7 +393,7 @@
       "id": "zQL-v_rc2jg",
       "title": "Cruzamentos Genéticos: F1, F2, S1 e BX1 Explicados",
       "url": "https://www.youtube.com/watch?v=zQL-v_rc2jg",
-      "views": "9.4K views",
+      "views": "9.5K views",
       "publishedRelative": "1 year ago"
     },
     {
@@ -408,7 +407,7 @@
       "id": "DWkDk9GpVe0",
       "title": "Cultivo Cannabico - Germinação e Avaliação de Pradução",
       "url": "https://www.youtube.com/watch?v=DWkDk9GpVe0",
-      "views": "8.3K views",
+      "views": "8.4K views",
       "publishedRelative": "3 years ago"
     },
     {
@@ -454,13 +453,6 @@
       "publishedRelative": "1 year ago"
     },
     {
-      "id": "NdVJxTFdyFI",
-      "title": "Cultivo de Cannabis Sativa Indoor - Flora / 4 semanas",
-      "url": "https://www.youtube.com/watch?v=NdVJxTFdyFI",
-      "views": "12K views",
-      "publishedRelative": "1 year ago"
-    },
-    {
       "id": "RxJufsjNEWo",
       "title": "CULTIVO de CANNABIS SATIVA INDOOR - LST e Deficiências",
       "url": "https://www.youtube.com/watch?v=RxJufsjNEWo",
@@ -471,7 +463,7 @@
       "id": "XZZ_oDYy8Eg",
       "title": "CULTIVO DE CANNABIS SATIVA MEDICINAL - FLORA - DIA 1",
       "url": "https://www.youtube.com/watch?v=XZZ_oDYy8Eg",
-      "views": "5.8K views",
+      "views": "5.9K views",
       "publishedRelative": "2 years ago"
     },
     {
@@ -581,7 +573,7 @@
     },
     {
       "id": "QZ7p77fWwsQ",
-      "title": "Girl Scout Cookies (GSC) Strain review / Português",
+      "title": "Girl Scout Cookies (GSC) Strain Review",
       "url": "https://www.youtube.com/watch?v=QZ7p77fWwsQ",
       "views": "11K views",
       "publishedRelative": "2 years ago"
@@ -597,7 +589,7 @@
       "id": "x27xUFYjubg",
       "title": "HOW TO MAKE DRY ICE HASH",
       "url": "https://www.youtube.com/watch?v=x27xUFYjubg",
-      "views": "128K views",
+      "views": "129K views",
       "publishedRelative": "1 year ago"
     },
     {
@@ -608,10 +600,24 @@
       "publishedRelative": "2 years ago"
     },
     {
+      "id": "XliOmdDZSoU",
+      "title": "How to perform LST (Low Stress Training) on Cannabis plants",
+      "url": "https://www.youtube.com/watch?v=XliOmdDZSoU",
+      "views": "30K views",
+      "publishedRelative": "1 year ago"
+    },
+    {
       "id": "zUMsrGc2GF4",
       "title": "Identificando o sexo da Cannabis",
       "url": "https://www.youtube.com/watch?v=zUMsrGc2GF4",
       "views": "27K views",
+      "publishedRelative": "1 year ago"
+    },
+    {
+      "id": "NdVJxTFdyFI",
+      "title": "Indoor Cannabis Sativa Grow - Flowering / 4 weeks",
+      "url": "https://www.youtube.com/watch?v=NdVJxTFdyFI",
+      "views": "12K views",
       "publishedRelative": "1 year ago"
     },
     {
@@ -766,7 +772,7 @@
       "title": "Preparou o Solo? Espere um Pouco... Seu Cultivo Agradece!",
       "url": "https://www.youtube.com/watch?v=IU_luw2Z7uk",
       "views": "11 mil visualizações",
-      "publishedRelative": "há 10 meses"
+      "publishedRelative": "há 11 meses"
     },
     {
       "id": "DGBY51BqSNU",
@@ -842,14 +848,14 @@
       "id": "Hy7p1daCwKk",
       "title": "Tricho Jordan - Beleaf // Strain Review (Português)",
       "url": "https://www.youtube.com/watch?v=Hy7p1daCwKk",
-      "views": "7,4 mil visualizações",
+      "views": "7,5 mil visualizações",
       "publishedRelative": "há 1 ano"
     },
     {
       "id": "gpitSzPdCXQ",
       "title": "Tudo sobre cultivo de cannabis: fertilizantes, microrganismos e fox tail explicados",
       "url": "https://www.youtube.com/watch?v=gpitSzPdCXQ",
-      "views": "9,7 mil visualizações",
+      "views": "9,8 mil visualizações",
       "publishedRelative": "há 9 meses"
     },
     {
@@ -870,14 +876,14 @@
       "id": "oMoit6xd9So",
       "title": "Vaporizer UTILLIAN 421 - Review Completo",
       "url": "https://www.youtube.com/watch?v=oMoit6xd9So",
-      "views": "5,6 mil visualizações",
+      "views": "5,7 mil visualizações",
       "publishedRelative": "há 1 ano"
     },
     {
       "id": "5HL7MDoNy3E",
       "title": "Velvet Moon - Green House Seeds / Strain Review (Português)",
       "url": "https://www.youtube.com/watch?v=5HL7MDoNy3E",
-      "views": "5.9K views",
+      "views": "6K views",
       "publishedRelative": "2 years ago"
     },
     {

@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '208';
+const ASSET_V = '207';
 
 let deferredInstallPrompt = null;
 let installFloatingBtn = null;
@@ -151,11 +151,14 @@ window.addEventListener('appinstalled', () => {
 });
 
 const APP_VERSION_KEY = 'budganja_app_version';
+const APP_UPDATE_DISMISS_KEY = 'budganja_update_prompt_dismissed';
 let appUpdateReloading = false;
 let swRegistration = null;
 let updateCheckInFlight = false;
 let lastUpdateCheckAt = 0;
 const UPDATE_CHECK_MIN_MS = 5000;
+let appUpdatePromptEl = null;
+let appUpdatePromptVersion = null;
 
 async function fetchServerAppVersion() {
   try {
@@ -230,6 +233,86 @@ async function purgeAndReloadForVersion(serverVersion) {
   window.location.replace(url.toString());
 }
 
+function wasUpdatePromptDismissed(version) {
+  try {
+    return localStorage.getItem(APP_UPDATE_DISMISS_KEY) === String(version);
+  } catch (e) {
+    return false;
+  }
+}
+
+function rememberUpdatePromptDismissed(version) {
+  try {
+    localStorage.setItem(APP_UPDATE_DISMISS_KEY, String(version));
+  } catch (e) { /* ignore */ }
+}
+
+function clearUpdatePromptDismissed() {
+  try {
+    localStorage.removeItem(APP_UPDATE_DISMISS_KEY);
+  } catch (e) { /* ignore */ }
+}
+
+function hideUpdatePrompt() {
+  if (!appUpdatePromptEl) return;
+  appUpdatePromptEl.style.display = 'none';
+}
+
+function showUpdatePrompt(serverVersion) {
+  if (!serverVersion || wasUpdatePromptDismissed(serverVersion)) return;
+  appUpdatePromptVersion = String(serverVersion);
+
+  if (!appUpdatePromptEl) {
+    appUpdatePromptEl = document.getElementById('budganja-update-prompt');
+    if (appUpdatePromptEl) {
+      appUpdatePromptEl.style.display = 'block';
+      return;
+    }
+    appUpdatePromptEl = document.createElement('div');
+    appUpdatePromptEl.id = 'budganja-update-prompt';
+    appUpdatePromptEl.className = 'cultivo-app-update-banner';
+    appUpdatePromptEl.setAttribute('role', 'status');
+    appUpdatePromptEl.setAttribute('aria-live', 'polite');
+    appUpdatePromptEl.style.position = 'fixed';
+    appUpdatePromptEl.style.left = '12px';
+    appUpdatePromptEl.style.right = '12px';
+    appUpdatePromptEl.style.bottom = '12px';
+    appUpdatePromptEl.style.zIndex = '9999';
+    appUpdatePromptEl.style.background = 'rgba(20,26,22,0.96)';
+    appUpdatePromptEl.style.color = '#f2fff6';
+    appUpdatePromptEl.style.border = '1px solid rgba(67,199,122,0.45)';
+    appUpdatePromptEl.style.borderRadius = '12px';
+    appUpdatePromptEl.style.padding = '12px';
+    appUpdatePromptEl.style.boxShadow = '0 8px 28px rgba(0,0,0,0.35)';
+    appUpdatePromptEl.innerHTML =
+      '<div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between">' +
+      '<strong style="font-size:14px">Nova versão disponível</strong>' +
+      '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
+      '<button type="button" data-update-now="1" style="border:0;border-radius:10px;padding:8px 12px;background:#2ecc71;color:#0e2216;font-weight:700;cursor:pointer">Atualizar agora</button>' +
+      '<button type="button" data-update-later="1" style="border:1px solid rgba(255,255,255,0.22);border-radius:10px;padding:8px 12px;background:transparent;color:#eaf7ee;cursor:pointer">Depois</button>' +
+      '</div>' +
+      '</div>';
+
+    appUpdatePromptEl.addEventListener('click', async (event) => {
+      const nowBtn = event.target && event.target.closest ? event.target.closest('[data-update-now]') : null;
+      if (nowBtn) {
+        clearUpdatePromptDismissed();
+        await purgeAndReloadForVersion(appUpdatePromptVersion);
+        return;
+      }
+      const laterBtn = event.target && event.target.closest ? event.target.closest('[data-update-later]') : null;
+      if (laterBtn) {
+        rememberUpdatePromptDismissed(appUpdatePromptVersion);
+        hideUpdatePrompt();
+      }
+    });
+
+    document.body.appendChild(appUpdatePromptEl);
+  }
+
+  appUpdatePromptEl.style.display = 'block';
+}
+
 async function checkAppVersionMismatch() {
   const serverVersion = await fetchServerAppVersion();
   if (!serverVersion) return false;
@@ -241,9 +324,11 @@ async function checkAppVersionMismatch() {
 
   if (!storedVersion) {
     if ((cacheVersion && cacheVersion !== serverVersion) || ASSET_V !== serverVersion) {
-      await purgeAndReloadForVersion(serverVersion);
-      return true;
+      showUpdatePrompt(serverVersion);
+      return false;
     }
+    clearUpdatePromptDismissed();
+    hideUpdatePrompt();
     try { localStorage.setItem(APP_VERSION_KEY, serverVersion); } catch (e) { /* ignore */ }
     return false;
   }
@@ -251,9 +336,11 @@ async function checkAppVersionMismatch() {
   if (storedVersion !== serverVersion
       || (cacheVersion && cacheVersion !== serverVersion)
       || ASSET_V !== serverVersion) {
-    await purgeAndReloadForVersion(serverVersion);
-    return true;
+    showUpdatePrompt(serverVersion);
+    return false;
   }
+  clearUpdatePromptDismissed();
+  hideUpdatePrompt();
   return false;
 }
 
@@ -388,7 +475,7 @@ const DEFAULT_SITE = {
     { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
     { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
     { label: 'Equipamentos', href: '/equipamentos/' },
-    { label: 'Calculadoras', href: '/calculadoras/' },
+    { label: 'Ferramentas', href: '/calculadoras/' },
     { label: 'Luxímetro', href: '/calculadoras/luximetro.html' }
   ],
   footerGroups: [
@@ -404,7 +491,7 @@ const DEFAULT_SITE = {
     {
       title: 'Ferramentas',
       links: [
-        { label: 'Calculadoras', href: '/calculadoras/' },
+        { label: 'Ferramentas', href: '/calculadoras/' },
         { label: 'Equipamentos', href: '/equipamentos/' },
         { label: 'Luxímetro', href: '/calculadoras/luximetro.html' }
       ]
@@ -433,6 +520,7 @@ function translateFooterLabel(label) {
     'Inspeções': 'nav.inspections',
     'Equipamentos': 'nav.equipment',
     'Calculadoras': 'nav.calculators',
+    'Ferramentas': 'nav.calculators',
     'Luxímetro': 'nav.luxMeter',
     'Últimos vídeos': 'nav.videos',
     'Vídeos': 'nav.videos',

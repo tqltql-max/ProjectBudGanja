@@ -9,16 +9,16 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="/imagens/icon-512.png">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="/imagens/favicon-32.png?v=208" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.png?v=208" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=208">
+    <link rel="icon" href="/imagens/favicon-32.png?v=207" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=207" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=207">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#3d5c28">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="stylesheet" href="/css/style.css?v=208">
-    <link rel="stylesheet" href="/css/pages/cultivo-perfil.css?v=208">
+    <link rel="stylesheet" href="/css/style.css?v=207">
+    <link rel="stylesheet" href="/css/pages/cultivo-perfil.css?v=207">
     <meta name="robots" content="noindex,nofollow">
     <title>Diário de Pesquisas | Inspetor BudGanja</title>
 </head>
@@ -52,11 +52,6 @@
         </div>
 
         <div class="perfil-hub-actions conta-actions">
-
-          <a href="/perfil.html" class="botao botao-outline botao-sm">Minha conta</a>
-          <a href="/planejamento/" class="botao botao-outline botao-sm">Planejamento</a>
-
-          <button type="button" class="botao botao-outline botao-sm" id="perfil-logout-btn">Sair</button>
 
         </div>
 
@@ -98,6 +93,22 @@
 
         </div>
 
+        <div id="cultivo-tasks-view" class="cultivo-tasks-view" hidden>
+          <section class="cultivo-tasks-card info-panel highlight-card" aria-labelledby="cultivo-tasks-title">
+            <div class="cultivo-tasks-head">
+              <div>
+                <p class="cultivo-hub-eyebrow">Tarefas globais</p>
+                <h2 id="cultivo-tasks-title" class="cultivo-section-title">Tarefas agendadas de todas as pesquisas</h2>
+              </div>
+              <button type="button" class="botao botao-outline botao-sm" id="cultivo-tasks-back-btn">Ocultar tarefas</button>
+            </div>
+            <p class="cultivo-section-intro page-intro">Gerencie lembretes de todas as pesquisas em um único lugar.</p>
+            <ul id="cultivo-tasks-list" class="cultivo-tasks-list" aria-live="polite"></ul>
+            <p id="cultivo-tasks-empty" class="cultivo-hub-empty-text" hidden>Sem tarefas agendadas no momento.</p>
+            <p id="cultivo-tasks-status" class="conta-status" role="status"></p>
+          </section>
+        </div>
+
 
 
         <!-- Wizard: nova pesquisa -->
@@ -122,6 +133,12 @@
 
               <label class="login-field conta-field" for="cultivo-wizard-species">Espécie ou linha <span class="perfil-field-optional">(opcional)</span>
                 <input type="text" id="cultivo-wizard-species" maxlength="120" placeholder="Ex.: Solanum lycopersicum, Lavandula angustifolia…" autocomplete="off">
+              </label>
+
+              <label class="login-field conta-field" for="cultivo-wizard-date">Data de início
+                <div class="cultivo-wizard-date-control">
+                  <input type="date" id="cultivo-wizard-date" required>
+                </div>
               </label>
 
               <fieldset class="cultivo-phase-field">
@@ -180,8 +197,6 @@
         <!-- Página única da pesquisa seleccionada -->
 
         <div id="cultivo-grow-view" class="cultivo-grow-view" hidden>
-
-          <button type="button" class="perfil-link-btn cultivo-grow-back botao botao-outline botao-sm" id="cultivo-grow-back">← Todas as pesquisas</button>
 
           <header id="cultivo-grow-header" class="cultivo-grow-header info-panel highlight-card"></header>
 
@@ -340,7 +355,9 @@
 
                 <label class="login-field conta-field" for="perfil-grow-entry-date">Data
 
-                  <input type="date" id="perfil-grow-entry-date" required>
+                    <div class="cultivo-date-control">
+                      <input type="date" id="perfil-grow-entry-date" required>
+                    </div>
 
                 </label>
 
@@ -350,11 +367,19 @@
 
                 </label>
 
-                <label class="login-field conta-field cultivo-entry-photos-field" for="perfil-grow-entry-photos">Fotos <span class="perfil-field-optional">(opcional, máx. 4 — arraste ou clique)</span>
+                <label class="login-field conta-field cultivo-entry-photos-field" for="perfil-grow-entry-photos">Mídia <span class="perfil-field-optional">(opcional, máx. 4 — fotos e vídeos curtos)</span>
 
-                  <input type="file" id="perfil-grow-entry-photos" accept="image/jpeg,image/png,image/webp" multiple>
+                  <input type="file" id="perfil-grow-entry-photos" accept="image/*,video/*" multiple hidden>
+                  <input type="file" id="perfil-grow-entry-capture-photo" accept="image/*" capture="environment" hidden>
+                  <input type="file" id="perfil-grow-entry-capture-video" accept="video/*" capture="environment" hidden>
 
                 </label>
+
+                <div class="perfil-entry-capture-actions">
+                  <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-select-media-btn">Carregar mídia</button>
+                  <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-capture-photo-btn">Capturar foto</button>
+                  <button type="button" class="botao botao-outline botao-sm" id="perfil-grow-capture-video-btn">Gravar vídeo</button>
+                </div>
 
                 <div id="perfil-grow-entry-photos-preview" class="perfil-entry-photos-preview" aria-live="polite"></div>
 
@@ -458,7 +483,9 @@
 
                 <label class="login-field conta-field" for="perfil-reminder-date">Data
 
-                  <input type="date" id="perfil-reminder-date" required>
+                  <div class="cultivo-date-control">
+                    <input type="date" id="perfil-reminder-date" required>
+                  </div>
 
                 </label>
 
@@ -552,25 +579,25 @@
   </div>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=208"></script>
-    <script src="/js/i18n-data.js?v=208"></script>
-    <script src="/js/i18n.js?v=208"></script>
-    <script src="/js/layout.js?v=208"></script>
-    <script src="/js/site-features.js?v=208"></script>
+  <script src="/js/app-version-check.js?v=207"></script>
+    <script src="/js/i18n-data.js?v=207"></script>
+    <script src="/js/i18n.js?v=207"></script>
+    <script src="/js/layout.js?v=207"></script>
+    <script src="/js/site-features.js?v=207"></script>
 
-  <script src="/js/cultivo/shared.js?v=208"></script>
+  <script src="/js/cultivo/shared.js?v=207"></script>
 
-  <script src="/js/cultivo/markdown.js?v=208"></script>
+  <script src="/js/cultivo/markdown.js?v=207"></script>
 
-  <script src="/js/cultivo/charts.js?v=208"></script>
+  <script src="/js/cultivo/charts.js?v=207"></script>
 
-  <script src="/js/cultivo/autosave.js?v=208"></script>
+  <script src="/js/cultivo/autosave.js?v=207"></script>
 
-  <script src="/js/cultivo/onboarding.js?v=208"></script>
+  <script src="/js/cultivo/onboarding.js?v=207"></script>
 
-  <script src="/js/cultivo-phase-weeks-data.js?v=208"></script>
+  <script src="/js/cultivo-phase-weeks-data.js?v=207"></script>
 
-  <script src="/js/cultivo.js?v=208"></script>
+  <script src="/js/cultivo.js?v=207"></script>
 
 </body>
 </html>

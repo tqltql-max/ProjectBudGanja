@@ -1005,6 +1005,99 @@ html[data-theme="light"] .perfil-phase-btn {
     gap: 12px;
 }
 
+.perfil-grow-postsave-actions {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    padding: 10px 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(39, 174, 96, 0.34);
+    background: rgba(39, 174, 96, 0.08);
+}
+
+.perfil-grow-postsave-title {
+    margin: 0 0 8px;
+    font-size: 0.92rem;
+    color: var(--color-text);
+}
+
+.perfil-grow-postsave-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.perfil-grow-entry-form .conta-field {
+    display: block;
+    margin: 0;
+    color: var(--color-label);
+}
+
+.perfil-grow-entry-form .conta-field input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 8px;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    border: var(--border-input);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font: inherit;
+}
+
+.perfil-grow-entry-form .conta-field input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.12);
+}
+
+.cultivo-wizard-date-control,
+.cultivo-date-control {
+    margin-top: 8px;
+    position: relative;
+}
+
+.cultivo-wizard-form .conta-field .cultivo-wizard-date-control input[type="date"],
+.perfil-grow-entry-form .conta-field .cultivo-date-control input[type="date"],
+.perfil-reminder-form .conta-field .cultivo-date-control input[type="date"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    min-height: 46px;
+    padding-right: 44px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.cultivo-wizard-date-control::after,
+.cultivo-date-control::after {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    opacity: 0.78;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23EAF7EE' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3.5' y='5.5' width='17' height='15' rx='2.6'/%3E%3Cline x1='3.5' y1='9' x2='20.5' y2='9'/%3E%3Cline x1='8' y1='3.7' x2='8' y2='7'/%3E%3Cline x1='16' y1='3.7' x2='16' y2='7'/%3E%3C/svg%3E");
+}
+
+html[data-theme="light"] .cultivo-wizard-date-control::after,
+html[data-theme="light"] .cultivo-date-control::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232f3b35' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3.5' y='5.5' width='17' height='15' rx='2.6'/%3E%3Cline x1='3.5' y1='9' x2='20.5' y2='9'/%3E%3Cline x1='8' y1='3.7' x2='8' y2='7'/%3E%3Cline x1='16' y1='3.7' x2='16' y2='7'/%3E%3C/svg%3E");
+}
+
+.cultivo-wizard-form .conta-field .cultivo-wizard-date-control input[type="date"]::-webkit-calendar-picker-indicator,
+.perfil-grow-entry-form .conta-field .cultivo-date-control input[type="date"]::-webkit-calendar-picker-indicator,
+.perfil-reminder-form .conta-field .cultivo-date-control input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0;
+}
+
 .perfil-grow-form-title {
     margin: 0;
     font-size: 1rem;
@@ -1024,6 +1117,60 @@ html[data-theme="light"] .perfil-phase-btn {
 
 .perfil-grow-back {
     margin-bottom: 12px;
+}
+
+.perfil-hub-actions {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.perfil-hub-actions .botao-sm {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    min-width: 120px;
+    padding: 8px 14px;
+    text-align: center;
+    box-shadow: none;
+}
+
+.perfil-hub-actions .botao.botao-outline {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.perfil-hub-actions .botao.botao-outline:hover {
+    background: rgba(39, 174, 96, 0.14);
+    border-color: rgba(39, 174, 96, 0.45);
+}
+
+.perfil-hub-actions .cultivo-grow-back {
+    background: linear-gradient(135deg, #1fbf67 0%, #34d57f 100%);
+    border-color: transparent;
+    color: #fff;
+}
+
+html[data-theme="light"] .perfil-hub-actions .botao.botao-outline {
+    border-color: rgba(0, 0, 0, 0.14);
+    background: rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 520px) {
+    .perfil-hub-actions {
+        gap: 8px;
+    }
+
+    .perfil-hub-actions .botao-sm {
+        min-width: 102px;
+        min-height: 40px;
+        padding: 8px 10px;
+        font-size: 0.92rem;
+    }
 }
 
 .perfil-grow-detail-head {
@@ -1242,6 +1389,15 @@ html[data-theme="light"] .perfil-phase-btn {
     object-fit: cover;
 }
 
+.perfil-grow-entry-photos video {
+    display: block;
+    width: 160px;
+    max-width: 100%;
+    height: 88px;
+    object-fit: cover;
+    background: #000;
+}
+
 .perfil-entry-photos-preview {
     display: flex;
     flex-wrap: wrap;
@@ -1260,6 +1416,40 @@ html[data-theme="light"] .perfil-phase-btn {
     object-fit: cover;
     border-radius: 8px;
     display: block;
+}
+
+.perfil-entry-photo-thumb video {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    background: #000;
+}
+
+.perfil-entry-capture-actions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: -2px;
+}
+
+.perfil-entry-capture-actions .botao-sm {
+    width: 100%;
+    min-height: 42px;
+    justify-content: center;
+}
+
+@media (max-width: 760px) {
+    .perfil-entry-capture-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .perfil-entry-capture-actions {
+        grid-template-columns: 1fr;
+    }
 }
 
 .perfil-entry-photo-remove {
@@ -1289,10 +1479,52 @@ html[data-theme="light"] .perfil-phase-btn {
     margin-top: 12px;
 }
 
+.perfil-reminder-form .perfil-grow-form-title {
+    grid-column: 1 / -1;
+    margin: 0;
+}
+
+.perfil-reminder-form .conta-field {
+    display: block;
+    margin: 0;
+    color: var(--color-label);
+    font-weight: 500;
+}
+
+.perfil-reminder-form .conta-field input,
+.perfil-reminder-form .conta-field select {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 8px;
+    min-height: 46px;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    border: var(--border-input);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font: inherit;
+}
+
+.perfil-reminder-form .conta-field input:focus,
+.perfil-reminder-form .conta-field select:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.12);
+}
+
+.perfil-reminder-form button[type="submit"] {
+    justify-self: start;
+    min-width: 128px;
+}
+
 @media (min-width: 640px) {
     .perfil-reminder-form {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         align-items: end;
+    }
+
+    .perfil-reminder-form .conta-field:nth-of-type(3) {
+        grid-column: 1 / -1;
     }
 
     .perfil-reminder-form button[type="submit"] {
@@ -1844,6 +2076,108 @@ html[data-theme="light"] .perfil-week-content {
     color: var(--color-text-soft);
 }
 
+.perfil-week-kpis {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: 6px 0 8px;
+    font-size: 0.88rem;
+}
+
+.perfil-week-kpis p {
+    margin: 0;
+}
+
+.perfil-week-risk {
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.perfil-week-risk.is-low {
+    color: #72e2a2;
+    border-color: rgba(39, 174, 96, 0.4);
+}
+
+.perfil-week-risk.is-mid {
+    color: #f4d35e;
+    border-color: rgba(241, 196, 15, 0.45);
+}
+
+.perfil-week-risk.is-high {
+    color: #ff8a80;
+    border-color: rgba(231, 76, 60, 0.5);
+}
+
+.perfil-week-progress {
+    width: 100%;
+    height: 8px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+.perfil-week-progress span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, rgba(39, 174, 96, 0.95), rgba(79, 213, 133, 0.9));
+}
+
+.perfil-week-op-list {
+    list-style: none;
+    margin: 0 0 12px;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.perfil-week-op-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.perfil-week-op-copy {
+    min-width: 0;
+}
+
+.perfil-week-op-text {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.perfil-week-op-state {
+    font-size: 0.76rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--color-text-soft);
+}
+
+.perfil-week-op-item.is-doing {
+    border-color: rgba(241, 196, 15, 0.45);
+    background: rgba(241, 196, 15, 0.08);
+}
+
+.perfil-week-op-item.is-done {
+    border-color: rgba(39, 174, 96, 0.5);
+    background: rgba(39, 174, 96, 0.12);
+}
+
+.perfil-week-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
 .perfil-week-tasks {
     margin: 0 0 12px;
 }
@@ -2137,40 +2471,113 @@ html[data-theme="light"] .ia-msg--assistant {
   margin-bottom: 1.25rem;
 }
 
-.cultivo-hub-topbar {
+.cultivo-hub-topbar.info-panel.highlight-card {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+    align-items: center;
   justify-content: space-between;
-  gap: 1rem 1.25rem;
+    gap: 0.75rem 1rem;
+    position: relative;
+    overflow: hidden;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background: rgba(255, 255, 255, 0.02) !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16) !important;
+}
+
+.cultivo-hub-topbar::after {
+    content: none;
 }
 
 .cultivo-hub-topbar-copy {
-  flex: 1 1 240px;
+    flex: 1 1 260px;
   min-width: 0;
 }
 
-.cultivo-hub-summary {
-  margin: 0;
+.cultivo-hub-topbar .cultivo-hub-summary.page-intro {
+    margin: 0 !important;
+    max-width: 50ch;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--color-text-soft);
+    text-align: left;
+}
+
+.cultivo-hub-topbar .cultivo-hub-summary.page-intro:empty {
+    display: none;
 }
 
 .cultivo-hub-eyebrow {
-  font-size: 0.78rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    font-size: 0.72rem;
+    font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--color-accent-light);
-  margin: 0 0 0.35rem;
+    letter-spacing: 0.05em;
+    color: var(--color-text-soft);
+    margin: 0 0 0.35rem;
 }
 
 .cultivo-hub-title {
-  margin: 0 0 0.5rem;
-  font-size: 1.35rem;
+    margin: 0 0 0.3rem;
+    font-size: clamp(1.2rem, 1.7vw, 1.35rem);
+    line-height: 1.2;
+    letter-spacing: 0;
 }
 
-.cultivo-hub-new-btn {
+.cultivo-hub-topbar .cultivo-hub-new-btn.botao {
   flex: 0 0 auto;
   align-self: center;
-  min-width: 180px;
+    min-width: 150px;
+    min-height: 36px;
+    border-radius: 8px;
+    font-size: 0.93rem;
+    font-weight: 600;
+    margin-top: 0;
+    padding: 8px 14px;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    color: var(--color-text) !important;
+    box-shadow: none !important;
+}
+
+.cultivo-hub-topbar .cultivo-hub-new-btn.botao:hover,
+.cultivo-hub-topbar .cultivo-hub-new-btn.botao:focus-visible {
+    transform: none;
+    background: rgba(255, 255, 255, 0.07) !important;
+    border-color: rgba(255, 255, 255, 0.24) !important;
+    box-shadow: none;
+}
+
+html[data-theme="light"] .cultivo-hub-topbar.info-panel.highlight-card {
+    border-color: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+html[data-theme="light"] .cultivo-hub-eyebrow {
+    color: #5b615d;
+}
+
+html[data-theme="light"] .cultivo-hub-topbar .cultivo-hub-new-btn.botao {
+    background: rgba(0, 0, 0, 0.02) !important;
+    border-color: rgba(0, 0, 0, 0.14) !important;
+    color: #242a26;
+}
+
+@media (max-width: 760px) {
+    .cultivo-hub-topbar {
+        padding: 0.85rem 0.9rem;
+    }
+
+    .cultivo-hub-topbar .cultivo-hub-new-btn.botao {
+        width: 100%;
+    }
 }
 
 .cultivo-hub-view [hidden] {
@@ -2187,6 +2594,23 @@ html[data-theme="light"] .ia-msg--assistant {
 .cultivo-hub-stat strong {
   color: var(--color-accent-light);
   font-weight: 700;
+}
+
+button.cultivo-hub-stat {
+    cursor: pointer;
+    border: 1px solid rgba(39, 174, 96, 0.3);
+    background: rgba(39, 174, 96, 0.1);
+    color: inherit;
+    font: inherit;
+    padding: 6px 12px;
+    border-radius: 999px;
+}
+
+button.cultivo-hub-stat:hover,
+button.cultivo-hub-stat:focus-visible {
+    outline: none;
+    background: rgba(39, 174, 96, 0.16);
+    border-color: rgba(39, 174, 96, 0.48);
 }
 
 .cultivo-hub-stat--alert {
@@ -2225,6 +2649,63 @@ html[data-theme="light"] .ia-msg--assistant {
 
 .cultivo-hub-empty-btn {
   margin-top: 0;
+}
+
+.cultivo-tasks-view {
+    margin-bottom: 1.25rem;
+}
+
+.cultivo-tasks-card {
+    padding: 16px;
+}
+
+.cultivo-tasks-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.cultivo-tasks-list {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cultivo-task-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.18);
+}
+
+.cultivo-task-item.is-done {
+    opacity: 0.72;
+}
+
+.cultivo-task-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 1 260px;
+}
+
+.cultivo-task-check input {
+    margin-top: 2px;
+}
+
+.cultivo-task-open {
+    flex: 0 0 auto;
 }
 
 .cultivo-research-stat--alert {
@@ -2380,66 +2861,49 @@ html[data-theme="light"] .cultivo-research-card--germinacao.card {
   background: linear-gradient(160deg, rgba(39, 174, 96, 0.1) 0%, rgba(255, 255, 255, 1) 55%);
 }
 
-.cultivo-research-card-header {
+.cultivo-research-card-top {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.65rem;
-  margin-bottom: 0.75rem;
-}
-
-.cultivo-research-card-body {
+  align-items: flex-start;
+  gap: 0.85rem;
   margin-bottom: 0.85rem;
 }
 
-.cultivo-research-card.card h3.cultivo-research-card-name {
-  margin: 0 0 0.35rem;
-  font-size: clamp(1rem, 2vw, 1.15rem);
+.cultivo-research-phase-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  font-size: 1.45rem;
 }
 
-.cultivo-research-card-phase-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
+.cultivo-research-card--planejamento .cultivo-research-phase-icon {
+  background: linear-gradient(145deg, rgba(126, 184, 255, 0.35), rgba(126, 184, 255, 0.15));
+  border-color: rgba(126, 184, 255, 0.4);
 }
 
-.cultivo-research-card--germinacao .cultivo-research-card-name {
-  color: var(--color-accent-light);
+.cultivo-research-card--germinacao .cultivo-research-phase-icon {
+  background: linear-gradient(145deg, rgba(39, 174, 96, 0.35), rgba(46, 204, 113, 0.15));
+  border-color: rgba(46, 204, 113, 0.4);
 }
 
-.cultivo-research-card--planejamento .cultivo-research-card-name {
-  color: #9ec5ff;
+.cultivo-research-card--vegetativo .cultivo-research-phase-icon {
+  background: linear-gradient(145deg, rgba(61, 92, 40, 0.45), rgba(39, 174, 96, 0.15));
+  border-color: rgba(61, 92, 40, 0.45);
 }
 
-.cultivo-research-card--vegetativo .cultivo-research-card-name {
-  color: #a8d48a;
+.cultivo-research-card--floracao .cultivo-research-phase-icon {
+  background: linear-gradient(145deg, rgba(255, 184, 107, 0.35), rgba(230, 126, 34, 0.15));
+  border-color: rgba(255, 184, 107, 0.4);
 }
 
-.cultivo-research-card--floracao .cultivo-research-card-name {
-  color: #ffc98a;
+.cultivo-research-card--colheita .cultivo-research-phase-icon {
+  background: linear-gradient(145deg, rgba(201, 160, 255, 0.35), rgba(155, 89, 182, 0.15));
+  border-color: rgba(201, 160, 255, 0.4);
 }
 
-.cultivo-research-card--colheita .cultivo-research-card-name {
-  color: #d4b8ff;
-}
-
-.cultivo-research-card-stats {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.cultivo-research-stat {
-  min-height: 2.6rem;
-  padding: 0.35rem 0.25rem;
-}
-
-.cultivo-research-stat-value {
-  font-size: 1rem;
-}
-
-.cultivo-research-card-top,
-.cultivo-research-phase-icon,
 .cultivo-research-card-heading {
-  display: none;
+  flex: 1;
+  min-width: 0;
 }
 
 .cultivo-research-card-status-wrap {
@@ -2893,70 +3357,45 @@ html[data-theme="light"] .cultivo-phase-chip.is-active {
 }
 
 .cultivo-wizard-card {
-  max-width: 640px;
+  max-width: 520px;
   margin: 0 auto 1.5rem;
 }
 
 .cultivo-wizard-form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-stack);
-  margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.95rem;
 }
 
-.cultivo-wizard-form .login-field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  font-weight: 500;
-  color: var(--color-label);
+.cultivo-wizard-form .conta-field {
+    display: block;
+    margin: 0;
+    color: var(--color-label);
+    font-weight: 500;
 }
 
-.cultivo-wizard-form input,
-.cultivo-wizard-form select {
-  width: 100%;
-  padding: 0.75rem 0.85rem;
-  background: var(--color-surface);
-  border: var(--border-input);
-  border-radius: var(--radius-md);
-  color: var(--color-text);
-  font-size: 1rem;
-  line-height: 1.35;
+.cultivo-wizard-form .conta-field input,
+.cultivo-wizard-form .conta-field select {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 8px;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    border: var(--border-input);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font: inherit;
 }
 
-.cultivo-wizard-form input:focus,
-.cultivo-wizard-form select:focus {
-  outline: none;
-  border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.15);
+.cultivo-wizard-form .conta-field input:focus,
+.cultivo-wizard-form .conta-field select:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.12);
 }
 
-.cultivo-wizard-form select {
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ffffff' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 0.85rem center;
-  padding-right: 2.25rem;
-}
-
-html[data-theme="light"] .cultivo-wizard-form select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333333' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
-}
-
-.cultivo-wizard-row {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: var(--gap-stack);
-}
-
-@media (max-width: 520px) {
-  .cultivo-wizard-row {
-    grid-template-columns: 1fr;
-  }
-}
-
-.cultivo-wizard-form .conta-actions {
-  margin-top: 0.5rem;
+.cultivo-wizard-form .perfil-field-optional {
+    color: var(--color-text-soft);
 }
 
 .cultivo-wizard-back,

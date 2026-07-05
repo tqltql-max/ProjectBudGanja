@@ -53,9 +53,14 @@ Detalhes: [`docs/GIT.md`](docs/GIT.md) · copie `.env.example` → `.env`
 | Comando | Descrição |
 |---------|-----------|
 | `npm start` | Servidor local na porta 8080 |
+| `npm run start:quick` | Arranque rápido local (sem migrate/build) |
+| `npm run start:quick:tunnel` | Arranque rápido local + túnel Cloudflare (sem migrate/build) |
+| `npm run deploy:online` | Build + servidor + túnel para publicar online num comando só |
 | `npm run build` | Build completo: posts, páginas, guia, YouTube, busca, sitemap |
 | `npm run build:posts` | Regenera HTML dos posts a partir de `posts.json` |
 | `npm run sync:pages` | Sincroniza `content/pages.json` a partir dos HTML |
+| `npm run sync:pages:db` | Grava `content/pages.json` na base SQL (páginas gerenciadas) |
+| `npm run sync:pages:all` | Executa `sync:pages` + `sync:pages:db` numa etapa só |
 | `npm run build:guia` | Actualiza `content/guia-cultivo.json` via RSS |
 | `npm run build:youtube` | Actualiza `content/youtube-feed.json` via RSS |
 | `npm run build:search` | Gera `search-index.json` |
@@ -75,6 +80,42 @@ O comando `npm run build` executa, por ordem:
 3. `build:guia` · `build:youtube` · `build:search` · `build:sitemap` · `build:assetlinks`
 
 Defina `SITE_URL=https://inspetorbudganja.com.br` para o sitemap apontar ao domínio correcto.
+
+Para publicar online e já deixar o túnel ativo, use:
+
+```powershell
+npm run deploy:online
+```
+
+### Arranque rápido (desenvolvimento)
+
+Use no dia a dia para testar alterações sem rebuild completo:
+
+```bash
+npm run start:quick
+```
+
+Se precisar de URL pública para testes externos:
+
+```bash
+npm run start:quick:tunnel
+```
+
+Para ciclo completo (migração + build + servidor + túnel), continue com:
+
+```powershell
+deploy\start-now.ps1
+```
+
+### Páginas gerenciadas (localhost x Live Server)
+
+No servidor da app (`localhost:8080`), algumas páginas são servidas da base SQL. No Live Server (`127.0.0.1:5500`), a leitura é do ficheiro HTML. Após editar HTML gerenciado, sincronize antes de testar no `localhost`:
+
+```bash
+npm run sync:pages:all
+```
+
+Depois reinicie o servidor local (`npm run start:quick`) e faça refresh forçado no navegador.
 
 ### Google Play Store (TWA)
 

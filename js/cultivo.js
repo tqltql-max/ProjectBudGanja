@@ -33,10 +33,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   const cultivoHubEmpty = document.getElementById('cultivo-hub-empty');
   const cultivoHubEmptyBtn = document.getElementById('cultivo-hub-empty-btn');
   const cultivoHubNewBtn = document.getElementById('cultivo-hub-new-btn');
+  const cultivoTasksView = document.getElementById('cultivo-tasks-view');
+  const cultivoTasksList = document.getElementById('cultivo-tasks-list');
+  const cultivoTasksEmpty = document.getElementById('cultivo-tasks-empty');
+  const cultivoTasksStatus = document.getElementById('cultivo-tasks-status');
+  const cultivoTasksBackBtn = document.getElementById('cultivo-tasks-back-btn');
   const cultivoWizardView = document.getElementById('cultivo-wizard-view');
   const cultivoWizardForm = document.getElementById('cultivo-wizard-form');
   const cultivoWizardName = document.getElementById('cultivo-wizard-name');
   const cultivoWizardSpecies = document.getElementById('cultivo-wizard-species');
+  const cultivoWizardDate = document.getElementById('cultivo-wizard-date');
   const cultivoWizardPlants = document.getElementById('cultivo-wizard-plants');
   const cultivoWizardBack = document.getElementById('cultivo-wizard-back');
   const cultivoWizardCancel = document.getElementById('cultivo-wizard-cancel');
@@ -56,6 +62,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   const growEntryRh = document.getElementById('perfil-grow-entry-rh');
   const growEntryTypes = document.getElementById('perfil-grow-entry-types');
   const growEntryPhotos = document.getElementById('perfil-grow-entry-photos');
+  const growEntryCapturePhoto = document.getElementById('perfil-grow-entry-capture-photo');
+  const growEntryCaptureVideo = document.getElementById('perfil-grow-entry-capture-video');
+  const growSelectMediaBtn = document.getElementById('perfil-grow-select-media-btn');
+  const growCapturePhotoBtn = document.getElementById('perfil-grow-capture-photo-btn');
+  const growCaptureVideoBtn = document.getElementById('perfil-grow-capture-video-btn');
   const growEntryPhotosPreview = document.getElementById('perfil-grow-entry-photos-preview');
   const growEntryMetricsHint = document.getElementById('perfil-grow-entry-metrics-hint');
   const growEntrySubmitBtn = document.getElementById('perfil-grow-entry-submit');
@@ -126,6 +137,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   let selectedGrowLogId = null;
   let editingEntryId = null;
   let cultivoView = 'hub';
+  let globalTasksBoardOpen = false;
+  let growPostSaveActionsEl = null;
   let cultivoWizardPhase = 'germinacao';
   let selectedEntryAction = 'rega';
   let pendingEntryPhotoFiles = [];
@@ -133,7 +146,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   let sectionNavBound = false;
   let activeSectionTab = 'diario';
   let cultivoAutosave = null;
-  let hubRenderGeneration = 0;
+
+  const ENTRY_MEDIA_MAX_ITEMS = 4;
+  const ENTRY_MEDIA_MAX_IMAGE_BYTES = 6 * 1024 * 1024;
+  const ENTRY_MEDIA_MAX_VIDEO_BYTES = 25 * 1024 * 1024;
 
   function persistSelectedGrowId(growId) {
     try {
@@ -374,8 +390,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     cultivoView = mode || 'hub';
 
     if (cultivoHubView) cultivoHubView.hidden = cultivoView !== 'hub';
+    if (cultivoTasksView) cultivoTasksView.hidden = cultivoView !== 'hub' || !globalTasksBoardOpen;
     if (cultivoWizardView) cultivoWizardView.hidden = cultivoView !== 'wizard';
     if (cultivoGrowView) cultivoGrowView.hidden = cultivoView !== 'grow';
+    if (cultivoGrowBack) cultivoGrowBack.hidden = cultivoView !== 'grow';
     setSectionNavVisible(cultivoView === 'grow');
     if (cultivoView !== 'grow') closeGrowActionsMenu();
 
@@ -383,6 +401,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       selectedGrowLogId = null;
       persistSelectedGrowId(null);
       refreshCultivoHubFromServer();
+      if (globalTasksBoardOpen && user && user.profile) {
+        renderCultivoTasksBoard(user.profile);
+      }
       return;
     }
 
@@ -391,6 +412,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         setCultivoWizardPhase('germinacao');
         if (cultivoWizardName) cultivoWizardName.value = '';
         if (cultivoWizardSpecies) cultivoWizardSpecies.value = '';
+        if (cultivoWizardDate) cultivoWizardDate.value = todayDateInputValue();
         if (cultivoWizardPlants) cultivoWizardPlants.value = '1';
         if (cultivoWizardEnvironment) cultivoWizardEnvironment.value = '';
         if (cultivoWizardSubstrate) cultivoWizardSubstrate.value = '';
@@ -402,23 +424,40 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     if (cultivoView === 'grow') {
-      if (!user || !user.profile || !growId) {
+      if (!user || !user.profile) {
         navigateCultivo({ view: 'hub' }, { replace: true, scroll: false });
         return;
       }
-      const log = (user.profile.growLogs || []).find((item) => item.id === growId);
+      ensureGrowLogs(user.profile);
+      const logs = Array.isArray(user.profile.growLogs) ? user.profile.growLogs : [];
+      const requestedGrowId = growId || '';
+      const resolvedGrowId = requestedGrowId
+        || selectedGrowLogId
+        || user.profile.activeGrowLogId
+        || (logs[0] && logs[0].id)
+        || '';
+      let log = logs.find((item) => item.id === resolvedGrowId) || null;
+      if (!log && logs.length) {
+        log = logs.find((item) => item.id === user.profile.activeGrowLogId)
+          || logs.find((item) => item.id === selectedGrowLogId)
+          || logs[0]
+          || null;
+      }
       if (!log) {
         navigateCultivo({ view: 'hub' }, { replace: true, scroll: false });
         return;
       }
-      selectedGrowLogId = growId;
-      persistSelectedGrowId(growId);
-      user.profile.activeGrowLogId = growId;
+      selectedGrowLogId = log.id;
+      persistSelectedGrowId(log.id);
+      user.profile.activeGrowLogId = log.id;
       syncPhaseFromActiveLog(user.profile);
       selectedWeek = getCurrentWeekNumber(user.profile.phaseStartedAt);
       const initialTab = opts.tab || new URLSearchParams(window.location.search).get('tab') || 'diario';
       setActiveSectionTab(initialTab);
       renderGrowPage(user.profile);
+      if (!requestedGrowId || requestedGrowId !== log.id) {
+        navigateCultivo({ view: 'grow', growId: log.id, tab: initialTab }, { replace: true, scroll: false, history: false });
+      }
       if (initialTab && initialTab !== 'diario') {
         switchTab(initialTab, { skipRefresh: true, skipStash: true });
       }
@@ -458,19 +497,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     history.back();
   }
 
+  function openGlobalTasksBoard(profile) {
+    globalTasksBoardOpen = true;
+    if (cultivoTasksView) cultivoTasksView.hidden = false;
+    if (profile) renderCultivoTasksBoard(profile);
+    if (cultivoTasksView) cultivoTasksView.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function closeGlobalTasksBoard() {
+    globalTasksBoardOpen = false;
+    if (cultivoTasksView) cultivoTasksView.hidden = true;
+    if (cultivoTasksStatus) setStatus(cultivoTasksStatus, '');
+  }
+
   async function refreshCultivoHubFromServer() {
-    let waits = 0;
-    while (profileSaving && waits < 40) {
-      await new Promise((resolve) => setTimeout(resolve, 100));
-      waits += 1;
-    }
     try {
       await loadCultivoIntoProfile();
-    } catch (e) {
-      if (cultivoHubSummary) {
-        cultivoHubSummary.textContent = 'Não foi possível carregar as pesquisas. Recarregue a página (Ctrl+F5).';
-      }
-    }
+    } catch (e) { /* manter dados locais */ }
     if (user && user.profile) {
       await renderCultivoHub(user.profile);
     }
@@ -513,7 +556,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function countOpenPlanTasks(profile, growId) {
-    return planTasksForGrow(profile, growId).filter((task) => !task.done).length;
+    const gid = growId || '';
+    const all = Array.isArray(profile && profile.planTasks) ? profile.planTasks : [];
+    return all.filter((task) => task && task.growId === gid && !task.done).length;
   }
 
   function formatRelativeUpdate(iso) {
@@ -547,12 +592,100 @@ document.addEventListener('DOMContentLoaded', async () => {
     const totals = computeHubTotals(profile, logs);
     cultivoHubStats.hidden = false;
     cultivoHubStats.innerHTML =
-      '<span class="perfil-hub-chip cultivo-hub-stat"><strong>' + totals.researches + '</strong> ' +
-      (totals.researches === 1 ? 'pesquisa' : 'pesquisas') + '</span>' +
-      '<span class="perfil-hub-chip cultivo-hub-stat"><strong>' + totals.entries + '</strong> ' +
-      (totals.entries === 1 ? 'registo' : 'registos') + '</span>' +
-      '<span class="perfil-hub-chip cultivo-hub-stat' + (totals.tasks > 0 ? ' cultivo-hub-stat--alert' : '') + '"><strong>' + totals.tasks + '</strong> ' +
-      (totals.tasks === 1 ? 'tarefa aberta' : 'tarefas abertas') + '</span>';
+      '<button type="button" class="perfil-hub-chip cultivo-hub-stat" data-hub-stat="researches" aria-label="Ver pesquisas"><strong>' + totals.researches + '</strong> ' +
+      (totals.researches === 1 ? 'pesquisa' : 'pesquisas') + '</button>' +
+      '<button type="button" class="perfil-hub-chip cultivo-hub-stat" data-hub-stat="entries" aria-label="Abrir diário"><strong>' + totals.entries + '</strong> ' +
+      (totals.entries === 1 ? 'registo' : 'registos') + '</button>' +
+      '<button type="button" class="perfil-hub-chip cultivo-hub-stat' + (totals.tasks > 0 ? ' cultivo-hub-stat--alert' : '') + '" data-hub-stat="tasks" aria-label="Abrir tarefas"><strong>' + totals.tasks + '</strong> ' +
+      (totals.tasks === 1 ? 'tarefa aberta' : 'tarefas abertas') + '</button>';
+
+    cultivoHubStats.querySelectorAll('[data-hub-stat]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const kind = btn.getAttribute('data-hub-stat');
+        if (kind === 'researches') {
+          if (cultivoHubList) cultivoHubList.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return;
+        }
+        if (kind === 'entries') {
+          if (!logs.length) return;
+          openGrowPage(logs[0].id, { tab: 'diario', scroll: true });
+          return;
+        }
+        if (kind === 'tasks') {
+          if (!logs.length) return;
+          openGlobalTasksBoard(profile);
+        }
+      });
+    });
+  }
+
+  function collectGlobalScheduledTasks(profile) {
+    const growMap = new Map((profile.growLogs || []).map((log) => [log.id, log]));
+    const tasks = Array.isArray(profile.planTasks) ? profile.planTasks.slice() : [];
+    return tasks
+      .filter((task) => task && task.growId && task.dueAt)
+      .map((task) => {
+        const grow = growMap.get(task.growId);
+        return {
+          id: task.id,
+          label: task.label || 'Tarefa',
+          dueAt: task.dueAt || '',
+          done: !!task.done,
+          actionType: task.actionType || '',
+          growId: task.growId,
+          growName: grow && grow.name ? grow.name : 'Pesquisa'
+        };
+      })
+      .sort((a, b) => {
+        if (a.done !== b.done) return a.done ? 1 : -1;
+        return String(a.dueAt || '').localeCompare(String(b.dueAt || ''));
+      });
+  }
+
+  async function setGlobalTaskDone(taskId, growId, done) {
+    if (!user || !user.profile || !growId || !taskId) return;
+    const tasks = planTasksForGrow(user.profile, growId);
+    const task = tasks.find((item) => item.id === taskId);
+    if (!task) return;
+    task.done = !!done;
+    setPlanTasksForGrow(user.profile, growId, tasks);
+    renderCultivoTasksBoard(user.profile);
+    await persistPlanTasks(cultivoTasksStatus || planoStatus);
+  }
+
+  function renderCultivoTasksBoard(profile) {
+    if (!cultivoTasksList) return;
+    const tasks = collectGlobalScheduledTasks(profile || {});
+    if (!tasks.length) {
+      cultivoTasksList.innerHTML = '';
+      if (cultivoTasksEmpty) cultivoTasksEmpty.hidden = false;
+      if (cultivoTasksStatus) setStatus(cultivoTasksStatus, 'Sem tarefas agendadas.');
+      return;
+    }
+    if (cultivoTasksEmpty) cultivoTasksEmpty.hidden = true;
+    if (cultivoTasksStatus) setStatus(cultivoTasksStatus, '');
+    cultivoTasksList.innerHTML = tasks.map((task) =>
+      '<li class="cultivo-task-item' + (task.done ? ' is-done' : '') + '">' +
+      '<label class="cultivo-task-check">' +
+      '<input type="checkbox" data-task-id="' + escapeHtml(task.id) + '" data-grow-id="' + escapeHtml(task.growId) + '"' + (task.done ? ' checked' : '') + '>' +
+      '<span><strong>' + escapeHtml(task.label) + '</strong> · ' + escapeHtml(task.growName) +
+      ' <span class="perfil-plano-due' + (isTaskOverdue(task) ? ' is-overdue' : '') + '">' + escapeHtml(formatTaskDueLabel(task)) + '</span></span>' +
+      '</label>' +
+      '<button type="button" class="cultivo-section-nav-btn cultivo-task-open" data-grow-id="' + escapeHtml(task.growId) + '">Abrir pesquisa</button>' +
+      '</li>'
+    ).join('');
+
+    cultivoTasksList.querySelectorAll('input[type="checkbox"]').forEach((input) => {
+      input.addEventListener('change', async () => {
+        await setGlobalTaskDone(input.getAttribute('data-task-id'), input.getAttribute('data-grow-id'), input.checked);
+      });
+    });
+
+    cultivoTasksList.querySelectorAll('.cultivo-task-open').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        openGrowPage(btn.getAttribute('data-grow-id'), { tab: 'plano', scroll: true });
+      });
+    });
   }
 
   function buildResearchCardHtml(log, profile, statusMap) {
@@ -583,15 +716,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     return (
       '<article class="card cultivo-research-card cultivo-research-card--' + escapeHtml(phase) + '" role="listitem" data-grow-id="' + escapeHtml(log.id) + '">' +
       '<a class="cultivo-research-card-link" href="/cultivo/?grow=' + encodeURIComponent(log.id) + '" data-grow-id="' + escapeHtml(log.id) + '" aria-label="Abrir pesquisa ' + escapeHtml(log.name) + '">' +
-      '<div class="cultivo-research-card-header">' +
-      '<span class="cultivo-research-card-phase-pill">' + phaseIcon + ' ' + escapeHtml(phaseText) + '</span>' +
-      (statusHtml ? '<div class="cultivo-research-card-status-wrap">' + statusHtml + '</div>' : '') +
-      '</div>' +
-      '<div class="cultivo-research-card-body">' +
+      '<div class="cultivo-research-card-top">' +
+      '<div class="card-icon cultivo-research-phase-icon" aria-hidden="true">' + phaseIcon + '</div>' +
+      '<div class="cultivo-research-card-heading">' +
+      '<span class="cultivo-research-card-phase-pill">' + escapeHtml(phaseText) + '</span>' +
       '<h3 class="cultivo-research-card-name">' + escapeHtml(log.name) + '</h3>' +
       '<p class="cultivo-research-card-species">' + speciesLine + '</p>' +
-      (tagsHtml ? '<div class="cultivo-research-card-tags">' + tagsHtml + '</div>' : '') +
       '</div>' +
+      (statusHtml ? '<div class="cultivo-research-card-status-wrap">' + statusHtml + '</div>' : '') +
+      '</div>' +
+      (tagsHtml ? '<div class="cultivo-research-card-tags">' + tagsHtml + '</div>' : '') +
       '<div class="cultivo-research-card-stats" role="group" aria-label="Resumo da pesquisa">' +
       '<div class="cultivo-research-stat"><span class="cultivo-research-stat-label">Dia</span><span class="cultivo-research-stat-value">' + dayNum + '</span></div>' +
       '<div class="cultivo-research-stat"><span class="cultivo-research-stat-label">Registos</span><span class="cultivo-research-stat-value">' + entryCount + '</span></div>' +
@@ -665,7 +799,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   async function renderCultivoHub(profile) {
-    const gen = ++hubRenderGeneration;
     ensureGrowLogs(profile);
     const logs = (profile.growLogs || []).slice().sort((a, b) => {
       const ta = String(b.updatedAt || b.createdAt || b.plantedAt || '');
@@ -684,18 +817,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderHubStats(profile, logs);
     if (cultivoHubSummary) {
       cultivoHubSummary.textContent = hasLogs
-        ? logs.length + ' pesquisa' + (logs.length === 1 ? '' : 's') + ' em andamento — toque num bloco ou use o acesso rápido abaixo de cada cartão.'
+        ? ''
         : 'Toque em «Nova pesquisa» para começar o primeiro diário de campo.';
     }
     if (!cultivoHubList) return;
     if (!hasLogs) {
-      if (gen !== hubRenderGeneration) return;
       cultivoHubList.innerHTML = '';
       maybeShowOnboarding(profile);
       return;
     }
     const statusMap = await loadSubmissionStatusMap(true);
-    if (gen !== hubRenderGeneration) return;
     cultivoHubList.innerHTML = logs.map((log) => buildResearchCardHtml(log, profile, statusMap)).join('');
     bindResearchCards();
     renderSubmissionNotifications(profile);
@@ -709,7 +840,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const phaseLabel = formatProfileValue('phase', log.phase);
     const phaseIcon = PHASE_ICONS[log.phase] || '🌱';
     const plants = log.plantCount != null ? log.plantCount : 1;
-    const weeks = getPhaseWeeks(log.phase);
+    const weeks = getRoteiroWeeks(profile || {});
     const current = getCurrentWeekNumber(log.plantedAt || profile.phaseStartedAt);
     const ctx = getGrowContext(log, profile);
     const envLabel = ctx.environment ? formatProfileValue('environment', ctx.environment) : '';
@@ -753,9 +884,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function renderGrowPage(profile) {
-    const log = (profile.growLogs || []).find((item) => item.id === selectedGrowLogId);
+    let log = (profile.growLogs || []).find((item) => item.id === selectedGrowLogId);
     if (!log) {
-      navigateCultivo({ view: 'hub' }, { replace: true, scroll: false });
+      log = getSelectedGrowLog(profile) || getActiveGrowLog(profile) || (profile.growLogs && profile.growLogs[0]) || null;
+      if (!log) {
+        navigateCultivo({ view: 'hub' }, { replace: true, scroll: false });
+        return;
+      }
+      selectedGrowLogId = log.id;
+      persistSelectedGrowId(log.id);
+      navigateCultivo({ view: 'grow', growId: log.id, tab: activeSectionTab || 'diario' }, { replace: true, scroll: false });
       return;
     }
     renderGrowHeader(log, profile);
@@ -771,11 +909,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  async function createGrowFromWizard(name, phase, plantCount, species, environment, substrate) {
+  async function createGrowFromWizard(name, phase, plantCount, species, environment, substrate, plantedDate) {
     if (!user || !user.profile) return null;
     const env = environment || (user.profile.environment || '');
     const sub = substrate || (user.profile.substrate || '');
-    const log = createGrowLogObject(name, todayDateInputValue() + 'T12:00:00', phase, plantCount, species, env, sub);
+    const chosenDate = plantedDate || todayDateInputValue();
+    const plantedAt = chosenDate + 'T12:00:00';
+    const log = createGrowLogObject(name, plantedAt, phase, plantCount, species, env, sub);
     ensureGrowLogs(user.profile);
     user.profile.growLogs.unshift(log);
     user.profile.activeGrowLogId = log.id;
@@ -784,7 +924,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     syncPhaseFromActiveLog(user.profile);
     selectedWeek = getCurrentWeekNumber(user.profile.phaseStartedAt);
     if (COnboard.markDone) COnboard.markDone();
-    await seedDefaultPlanIfEmpty(user.profile, { persist: false });
+    await seedDefaultPlanIfEmpty(user.profile);
     const saved = await persistGrowLogs(cultivoWizardStatus);
     if (!saved) {
       user.profile.growLogs = user.profile.growLogs.filter((item) => item.id !== log.id);
@@ -1103,6 +1243,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     ]
   };
 
+  const PHASE_WEEK_LIMITS = {
+    planejamento: 12,
+    germinacao: 8,
+    vegetativo: 16,
+    floracao: 16,
+    colheita: 10
+  };
+
   function setStatus(el, message, isError) {
     if (!el) return;
     el.textContent = message || '';
@@ -1123,6 +1271,86 @@ document.addEventListener('DOMContentLoaded', async () => {
         liveStatusEl.classList.remove('is-fade');
       }, 350);
     }, 3200);
+  }
+
+  function ensureGrowPostSaveActions() {
+    if (growPostSaveActionsEl) return growPostSaveActionsEl;
+    const existing = document.getElementById('perfil-grow-postsave-actions');
+    if (existing) {
+      growPostSaveActionsEl = existing;
+      return growPostSaveActionsEl;
+    }
+    if (!growEntryForm || !growDetailStatus || !growDetailStatus.parentNode) return null;
+    const el = document.createElement('div');
+    el.id = 'perfil-grow-postsave-actions';
+    el.className = 'perfil-grow-postsave-actions';
+    el.hidden = true;
+    growDetailStatus.parentNode.insertBefore(el, growDetailStatus);
+    growPostSaveActionsEl = el;
+    return growPostSaveActionsEl;
+  }
+
+  function hideGrowPostSaveActions() {
+    const el = ensureGrowPostSaveActions();
+    if (!el) return;
+    el.hidden = true;
+    el.innerHTML = '';
+  }
+
+  function showGrowPostSaveActions() {
+    const el = ensureGrowPostSaveActions();
+    if (!el) return;
+    el.innerHTML =
+      '<p class="perfil-grow-postsave-title">Registo guardado. O que deseja fazer agora?</p>' +
+      '<div class="perfil-grow-postsave-buttons">' +
+      '<button type="button" class="botao botao-outline botao-sm" data-postsave-action="new">Adicionar outro registo</button>' +
+      '<button type="button" class="botao botao-sm" data-postsave-action="hub">Voltar às pesquisas</button>' +
+      '</div>';
+    el.hidden = false;
+    el.querySelectorAll('button[data-postsave-action]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const action = btn.getAttribute('data-postsave-action');
+        if (action === 'new') {
+          hideGrowPostSaveActions();
+          clearEntryForm();
+          if (growEntryForm) growEntryForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          requestAnimationFrame(() => {
+            if (growEntryText) growEntryText.focus();
+          });
+          return;
+        }
+        if (action === 'hub') {
+          hideGrowPostSaveActions();
+          navigateCultivo({ view: 'hub' }, { replace: false, scroll: true });
+        }
+      });
+    });
+  }
+
+  function enhanceDatePickerTouch(inputEl) {
+    if (!inputEl) return;
+    const openPicker = () => {
+      inputEl.focus({ preventScroll: true });
+      if (typeof inputEl.showPicker === 'function') {
+        try {
+          inputEl.showPicker();
+        } catch (_) {}
+      }
+    };
+    const field = inputEl.closest('.conta-field');
+    if (field) {
+      field.addEventListener('click', (event) => {
+        if (!event || event.target === inputEl) return;
+        openPicker();
+      });
+    }
+    inputEl.addEventListener('click', openPicker);
+    inputEl.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openPicker();
+      }
+    });
   }
 
 
@@ -1178,6 +1406,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       renderGrowPage(user.profile);
     } else if (cultivoView === 'hub') {
       renderCultivoHub(user.profile);
+      if (globalTasksBoardOpen) renderCultivoTasksBoard(user.profile);
     }
     if (opts.tab) switchTab(opts.tab, { skipRefresh: true, skipStash: opts.skipStash });
     if (opts.scrollTo) {
@@ -1412,10 +1641,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
     field.addEventListener('drop', (e) => {
       if (!growEntryPhotos || !e.dataTransfer || !e.dataTransfer.files) return;
-      const incoming = Array.from(e.dataTransfer.files).filter((file) => /^image\//i.test(file.type));
+      const incoming = Array.from(e.dataTransfer.files).filter((file) => /^(image|video)\//i.test(file.type));
       if (!incoming.length) return;
-      pendingEntryPhotoFiles = pendingEntryPhotoFiles.concat(incoming).slice(0, 4);
-      renderEntryPhotoPreview();
+      appendEntryMediaFiles(incoming);
     });
   }
 
@@ -1432,6 +1660,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function setWizardDefaultsFromProfile(profile) {
+    if (cultivoWizardDate && !cultivoWizardDate.value) {
+      cultivoWizardDate.value = todayDateInputValue();
+    }
     if (!profile) return;
     if (cultivoWizardEnvironment && !cultivoWizardEnvironment.value && profile.environment) {
       cultivoWizardEnvironment.value = profile.environment;
@@ -1629,10 +1860,17 @@ document.addEventListener('DOMContentLoaded', async () => {
       growEntryPhotosPreview.innerHTML = '';
       return;
     }
+    const renderPreviewMedia = (file) => {
+      const objectUrl = URL.createObjectURL(file);
+      if (/^video\//i.test(file.type)) {
+        return '<video src="' + escapeHtml(objectUrl) + '" muted playsinline preload="metadata"></video>';
+      }
+      return '<img src="' + escapeHtml(objectUrl) + '" alt="">';
+    };
     growEntryPhotosPreview.innerHTML = pendingEntryPhotoFiles.map((file, index) =>
       '<figure class="perfil-entry-photo-thumb">' +
-      '<img src="' + escapeHtml(URL.createObjectURL(file)) + '" alt="">' +
-      '<button type="button" class="perfil-entry-photo-remove" data-photo-index="' + index + '" aria-label="Remover foto">×</button>' +
+      renderPreviewMedia(file) +
+      '<button type="button" class="perfil-entry-photo-remove" data-photo-index="' + index + '" aria-label="Remover mídia">×</button>' +
       '</figure>'
     ).join('');
     growEntryPhotosPreview.querySelectorAll('.perfil-entry-photo-remove').forEach((btn) => {
@@ -1645,12 +1883,38 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
+  function appendEntryMediaFiles(incoming) {
+    const files = Array.isArray(incoming) ? incoming : [];
+    const valid = [];
+    let error = '';
+    for (const file of files) {
+      if (!file || !file.type) continue;
+      const isImage = /^image\//i.test(file.type);
+      const isVideo = /^video\//i.test(file.type);
+      if (!isImage && !isVideo) {
+        error = 'Use apenas fotos ou vídeos.';
+        continue;
+      }
+      if (isImage && file.size > ENTRY_MEDIA_MAX_IMAGE_BYTES) {
+        error = 'Imagem muito grande (máx. 6 MB).';
+        continue;
+      }
+      if (isVideo && file.size > ENTRY_MEDIA_MAX_VIDEO_BYTES) {
+        error = 'Vídeo muito grande (máx. 25 MB).';
+        continue;
+      }
+      valid.push(file);
+    }
+    pendingEntryPhotoFiles = pendingEntryPhotoFiles.concat(valid).slice(0, ENTRY_MEDIA_MAX_ITEMS);
+    renderEntryPhotoPreview();
+    if (error) setStatus(growDetailStatus, error, true);
+  }
+
   function readEntryPhotoFilesFromInput() {
     if (!growEntryPhotos || !growEntryPhotos.files) return;
     const incoming = Array.from(growEntryPhotos.files);
-    pendingEntryPhotoFiles = pendingEntryPhotoFiles.concat(incoming).slice(0, 4);
+    appendEntryMediaFiles(incoming);
     growEntryPhotos.value = '';
-    renderEntryPhotoPreview();
   }
 
   async function uploadCultivoPhoto(file) {
@@ -1662,13 +1926,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       body: JSON.stringify({ data: data })
     });
     const payload = await res.json().catch(() => ({}));
-    if (!res.ok) throw new Error(payload.error || 'Erro no upload da foto.');
+    if (!res.ok) throw new Error(payload.error || 'Erro no upload da mídia.');
     return payload.url;
   }
 
   async function uploadPendingEntryPhotos() {
     const urls = [];
-    for (const file of pendingEntryPhotoFiles.slice(0, 4)) {
+    for (const file of pendingEntryPhotoFiles.slice(0, ENTRY_MEDIA_MAX_ITEMS)) {
       urls.push(await uploadCultivoPhoto(file));
     }
     return urls;
@@ -1698,11 +1962,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function renderEntryPhotosHtml(photos) {
     if (!Array.isArray(photos) || !photos.length) return '';
+    const isVideoUrl = (url) => /\.(mp4|webm|mov)(\?|#|$)/i.test(String(url || ''));
     return (
       '<div class="perfil-grow-entry-photos">' +
       photos.map((url) =>
         '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener">' +
-        '<img src="' + escapeHtml(url) + '" alt="Foto do registo" loading="lazy">' +
+        (isVideoUrl(url)
+          ? '<video src="' + escapeHtml(url) + '" preload="metadata" controls playsinline></video>'
+          : '<img src="' + escapeHtml(url) + '" alt="Mídia do registo" loading="lazy">') +
         '</a>'
       ).join('') +
       '</div>'
@@ -1771,15 +2038,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
     growEntriesEl.querySelectorAll('.perfil-grow-entry-delete').forEach((btn) => {
       btn.addEventListener('click', async () => {
+        hideGrowPostSaveActions();
         const li = btn.closest('.perfil-grow-entry');
         const entryId = li && li.getAttribute('data-entry-id');
         if (!entryId) return;
         if (!window.confirm('Apagar este registo?')) return;
         if (!deleteGrowEntry(log, entryId)) return;
+        const keepGrowId = log.id;
         if (editingEntryId === entryId) clearEntryForm();
         flashLiveStatus('Registo apagado.');
-        if (user && user.profile) renderGrowPage(user.profile);
-        await persistGrowLogs(growDetailStatus);
+        if (user && user.profile) {
+          selectedGrowLogId = keepGrowId;
+          persistSelectedGrowId(keepGrowId);
+          user.profile.activeGrowLogId = keepGrowId;
+          renderGrowPage(user.profile);
+        }
+        await persistGrowLogs(growDetailStatus, { tab: 'diario' });
+        navigateCultivo({ view: 'grow', growId: keepGrowId, tab: 'diario' }, { replace: true, scroll: false });
       });
     });
   }
@@ -1902,6 +2177,42 @@ document.addEventListener('DOMContentLoaded', async () => {
     const data = window.__CULTIVO_PHASE_WEEKS__ || {};
     const key = phase || 'planejamento';
     return data[key] || data.planejamento || [];
+  }
+
+  function getPhaseWeekLimit(phase) {
+    const key = phase || 'planejamento';
+    return PHASE_WEEK_LIMITS[key] || 12;
+  }
+
+  function getDynamicPhaseWeeks(phase, desiredCount) {
+    const base = getPhaseWeeks(phase);
+    if (!base.length) return [];
+    const limit = getPhaseWeekLimit(phase);
+    const target = Math.max(base.length, Math.min(limit, Math.max(1, desiredCount || base.length)));
+    if (target <= base.length) return base.slice(0, target);
+
+    const out = base.slice();
+    const last = base[base.length - 1] || {};
+    while (out.length < target) {
+      const week = out.length + 1;
+      out.push({
+        week: week,
+        title: (last.title || 'Manutenção') + ' · contínuo',
+        focus: last.focus || 'Manter parâmetros estáveis e registos consistentes.',
+        tasks: Array.isArray(last.tasks) ? last.tasks.slice() : [],
+        tools: Array.isArray(last.tools) ? last.tools.slice() : []
+      });
+    }
+    return out;
+  }
+
+  function getRoteiroWeeks(profile) {
+    const phase = getEffectivePhase(profile);
+    const base = getPhaseWeeks(phase);
+    if (!base.length) return [];
+    const current = getCurrentWeekNumber(profile && profile.phaseStartedAt);
+    const desired = current + 1;
+    return getDynamicPhaseWeeks(phase, desired);
   }
 
   function getEffectivePhase(profile) {
@@ -2204,7 +2515,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function exportGrowCsv(log) {
     if (!log) return;
-    const rows = [['Diário', 'Data', 'Tipo', 'Texto', 'pH', 'EC', '°C', 'RH', 'VPD', 'DLI', 'Fonte', 'Fotos']];
+    const rows = [['Diário', 'Data', 'Tipo', 'Texto', 'pH', 'EC', '°C', 'RH', 'VPD', 'DLI', 'Fonte', 'Mídia']];
     (log.entries || []).forEach((entry) => {
       const metrics = entry.metrics || {};
       rows.push([
@@ -2228,7 +2539,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function exportAllGrowsCsv(profile) {
     ensureGrowLogs(profile);
-    const rows = [['Diário', 'Data', 'Tipo', 'Texto', 'pH', 'EC', '°C', 'RH', 'VPD', 'DLI', 'Fonte', 'Fotos']];
+    const rows = [['Diário', 'Data', 'Tipo', 'Texto', 'pH', 'EC', '°C', 'RH', 'VPD', 'DLI', 'Fonte', 'Mídia']];
     (profile.growLogs || []).forEach((log) => {
       (log.entries || []).forEach((entry) => {
         const metrics = entry.metrics || {};
@@ -2288,15 +2599,14 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
   }
 
   function getActiveWeek(profile) {
-    const eff = getEffectivePhase(profile);
-    const weeks = getPhaseWeeks(eff);
+    const weeks = getRoteiroWeeks(profile);
     const current = getCurrentWeekNumber(profile && profile.phaseStartedAt);
     const num = selectedWeek != null ? selectedWeek : current;
     return Math.min(Math.max(1, num), weeks.length || 1);
   }
 
   function getWeekGuideData(profile, weekNumber) {
-    const weeks = getPhaseWeeks(getEffectivePhase(profile));
+    const weeks = getRoteiroWeeks(profile);
     if (!weeks.length) return null;
     const idx = Math.min(Math.max(1, weekNumber), weeks.length) - 1;
     return weeks[idx];
@@ -2460,23 +2770,22 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
   }
 
   function renderHub(profile) {
-    const activeProfile = (user && user.profile) ? user.profile : profile;
-    ensureGrowLogs(activeProfile);
+    ensureGrowLogs(profile);
     if (selectedWeek == null) {
-      selectedWeek = getCurrentWeekNumber(activeProfile && activeProfile.phaseStartedAt);
+      selectedWeek = getCurrentWeekNumber(profile && profile.phaseStartedAt);
     }
     if (cultivoView === 'hub') {
-      renderCultivoHub(activeProfile);
+      renderCultivoHub(profile);
     } else if (cultivoView === 'grow' && selectedGrowLogId) {
-      renderGrowPage(activeProfile);
+      renderGrowPage(profile);
     }
-    fillForm(activeProfile);
+    fillForm(profile);
   }
 
   function renderTimeline(profile) {
     if (!timelineEl || !profile) return;
     const eff = getEffectivePhase(profile);
-    const weeks = getPhaseWeeks(eff);
+    const weeks = getRoteiroWeeks(profile);
     if (!weeks.length) {
       timelineEl.hidden = true;
       return;
@@ -2517,8 +2826,181 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     }
   }
 
+  function getWeekTaskCanonicalLabel(weekNum, taskText) {
+    return '[Semana ' + weekNum + '] ' + String(taskText || '').trim();
+  }
+
+  function findWeekPlanTask(profile, growId, weekNum, taskText) {
+    const canonical = getWeekTaskCanonicalLabel(weekNum, taskText);
+    return planTasksForGrow(profile, growId).find((task) => String(task.label || '').trim() === canonical) || null;
+  }
+
+  function weekTaskStatus(profile, growId, weekNum, taskText) {
+    const task = findWeekPlanTask(profile, growId, weekNum, taskText);
+    if (!task) return 'pending';
+    return task.done ? 'done' : 'doing';
+  }
+
+  function weekTaskDueAt(log, weekNum) {
+    const start = new Date(log && log.plantedAt ? log.plantedAt : new Date().toISOString());
+    if (Number.isNaN(start.getTime())) return todayDateInputValue();
+    const due = new Date(start.getTime() + (((weekNum - 1) * 7) + 3) * 86400000);
+    return due.toISOString().slice(0, 10);
+  }
+
+  function phaseMetricTargets(phase) {
+    const key = phase || 'planejamento';
+    const map = {
+      planejamento: ['Plano de luz: W/m² definido', 'Ambiente alvo: 22-28°C', 'Risco máximo: checklist incompleto'],
+      germinacao: ['Temperatura: 22-26°C', 'Humidade: 65-80%', 'Risco máximo: excesso de água'],
+      vegetativo: ['Temperatura: 22-29°C', 'Humidade: 55-70%', 'VPD alvo: 0.8-1.2 kPa'],
+      floracao: ['Temperatura: 20-28°C', 'Humidade: 40-55%', 'VPD alvo: 1.1-1.5 kPa'],
+      colheita: ['Secagem: 18-22°C', 'Humidade: 50-60%', 'Risco máximo: mofo na cura']
+    };
+    return map[key] || map.planejamento;
+  }
+
+  function growOpenOverdueTasks(profile, growId) {
+    return planTasksForGrow(profile, growId).filter((task) => !task.done && isTaskOverdue(task)).length;
+  }
+
+  function weekChecklistMetrics(profile, log, guide) {
+    const tasks = Array.isArray(guide && guide.tasks) ? guide.tasks : [];
+    const weekNum = guide && guide.week ? guide.week : getActiveWeek(profile);
+    let done = 0;
+    let doing = 0;
+    tasks.forEach((item) => {
+      const state = weekTaskStatus(profile, log.id, weekNum, item);
+      if (state === 'done') done += 1;
+      else if (state === 'doing') doing += 1;
+    });
+    const total = tasks.length || 1;
+    const progress = Math.round((done / total) * 100);
+    return { total: tasks.length, done, doing, pending: Math.max(0, tasks.length - done - doing), progress };
+  }
+
+  function setWeekTaskStatus(profile, log, guide, taskText, nextStatus) {
+    if (!profile || !log || !guide || !taskText) return;
+    const weekNum = guide.week || getActiveWeek(profile);
+    const canonical = getWeekTaskCanonicalLabel(weekNum, taskText);
+    const tasks = planTasksForGrow(profile, log.id);
+    const idx = tasks.findIndex((item) => String(item.label || '').trim() === canonical);
+    if (nextStatus === 'pending') {
+      if (idx >= 0) {
+        tasks.splice(idx, 1);
+        setPlanTasksForGrow(profile, log.id, tasks);
+      }
+      return;
+    }
+    const existing = idx >= 0 ? tasks[idx] : null;
+    const task = existing || {
+      id: 'u' + Date.now() + Math.random().toString(36).slice(2, 6),
+      label: canonical,
+      done: false,
+      toolHref: '',
+      dueAt: weekTaskDueAt(log, weekNum),
+      actionType: '',
+      growId: log.id
+    };
+    task.done = nextStatus === 'done';
+    if (!task.dueAt) task.dueAt = weekTaskDueAt(log, weekNum);
+    if (idx >= 0) tasks[idx] = task;
+    else tasks.push(task);
+    setPlanTasksForGrow(profile, log.id, tasks);
+  }
+
+  async function saveWeekTaskStatus(profile, log, guide, taskText, nextStatus) {
+    setWeekTaskStatus(profile, log, guide, taskText, nextStatus);
+    renderWeekGuide(profile);
+    renderPlanTasks(profile);
+    renderHubStats(profile, profile.growLogs || []);
+    await persistPlanTasks(planoStatus);
+  }
+
+  async function addAllWeekTasksToPlan(profile, log, guide) {
+    const tasks = Array.isArray(guide && guide.tasks) ? guide.tasks : [];
+    if (!tasks.length) return;
+    tasks.forEach((taskText) => {
+      if (weekTaskStatus(profile, log.id, guide.week, taskText) === 'pending') {
+        setWeekTaskStatus(profile, log, guide, taskText, 'doing');
+      }
+    });
+    renderWeekGuide(profile);
+    renderPlanTasks(profile);
+    renderHubStats(profile, profile.growLogs || []);
+    flashLiveStatus('Checklist da semana adicionada ao Plano.');
+    await persistPlanTasks(planoStatus);
+  }
+
+  async function closeActiveWeek(profile, log, guide) {
+    const metrics = weekChecklistMetrics(profile, log, guide);
+    const summary =
+      'Fecho da Semana ' + guide.week + ' (' + guide.title + '): ' +
+      metrics.done + '/' + metrics.total + ' concluídas, ' + metrics.pending + ' pendentes.';
+    const entry = createGrowEntry(summary, {
+      date: todayDateInputValue(),
+      actionType: 'roteiro',
+      source: 'week-note'
+    });
+    const result = appendEntryToGrowLog(log, entry);
+    if (!result.ok) {
+      setStatus(guiaStatus, result.error, true);
+      return;
+    }
+    const phaseWeeks = getRoteiroWeeks(profile);
+    selectedWeek = Math.min((guide.week || 1) + 1, phaseWeeks.length || (guide.week || 1));
+    renderWeekGuide(profile);
+    renderTimeline(profile);
+    refreshUI({ tab: 'diario', skipStash: true, scrollTo: 'perfil-grow-entries' });
+    setStatus(guiaStatus, 'Semana fechada e registada no diário.');
+    flashLiveStatus('Resumo semanal guardado no diário.');
+    await persistGrowLogs(growDetailStatus, { tab: 'diario', skipStash: true });
+  }
+
+  function bindWeekOperations(profile, log, guide) {
+    if (!weekContentEl || weekContentEl.dataset.opsBound === '1') return;
+    weekContentEl.dataset.opsBound = '1';
+    weekContentEl.addEventListener('click', async (event) => {
+      const taskBtn = event.target.closest('[data-week-task-index]');
+      if (taskBtn) {
+        const idx = parseInt(taskBtn.getAttribute('data-week-task-index'), 10);
+        const nextStatus = taskBtn.getAttribute('data-next-status') || 'doing';
+        const activeGuide = getWeekGuideData(profile, getActiveWeek(profile));
+        const activeLog = getSelectedGrowLog(profile) || getActiveGrowLog(profile);
+        if (!activeGuide || !activeLog || Number.isNaN(idx)) return;
+        const taskText = (activeGuide.tasks || [])[idx];
+        if (!taskText) return;
+        await saveWeekTaskStatus(profile, activeLog, activeGuide, taskText, nextStatus);
+        return;
+      }
+
+      const actionBtn = event.target.closest('[data-week-action]');
+      if (!actionBtn) return;
+      const action = actionBtn.getAttribute('data-week-action');
+      const activeGuide = getWeekGuideData(profile, getActiveWeek(profile));
+      const activeLog = getSelectedGrowLog(profile) || getActiveGrowLog(profile);
+      if (!activeGuide || !activeLog) return;
+      if (action === 'sync-plan') {
+        await addAllWeekTasksToPlan(profile, activeLog, activeGuide);
+        return;
+      }
+      if (action === 'close-week') {
+        await closeActiveWeek(profile, activeLog, activeGuide);
+        return;
+      }
+      if (action === 'next-week') {
+        const weeks = getPhaseWeeks(getEffectivePhase(profile));
+        selectedWeek = Math.min(getActiveWeek(profile) + 1, weeks.length || 1);
+        renderWeekGuide(profile);
+        renderTimeline(profile);
+      }
+    });
+  }
+
   function renderWeekGuide(profile) {
     if (!weekContentEl || !profile) return;
+    const log = getSelectedGrowLog(profile) || getActiveGrowLog(profile);
+    if (!log) return;
     const weekNum = getActiveWeek(profile);
     const guide = getWeekGuideData(profile, weekNum);
     const notes = readGuideWeekNotesFromProfile(profile);
@@ -2533,19 +3015,54 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       return;
     }
 
+    bindWeekOperations(profile, log, guide);
+
+    const phase = getEffectivePhase(profile);
+    const checklist = weekChecklistMetrics(profile, log, guide);
+    const overdue = growOpenOverdueTasks(profile, log.id);
+    const riskLabel = overdue > 0 ? 'Risco alto' : (checklist.pending > 1 ? 'Atenção' : 'Operação estável');
+    const riskClass = overdue > 0 ? 'is-high' : (checklist.pending > 1 ? 'is-mid' : 'is-low');
+    const metricsTargets = phaseMetricTargets(phase);
+
     const toolsHtml = (guide.tools || []).map((t) =>
       '<li><a href="' + escapeHtml(t.href) + '">' + escapeHtml(t.label) + '</a></li>'
     ).join('');
+
+    const taskRows = (guide.tasks || []).map((taskText, idx) => {
+      const state = weekTaskStatus(profile, log.id, guide.week, taskText);
+      const stateLabel = state === 'done' ? 'Concluída' : state === 'doing' ? 'Em andamento' : 'Pendente';
+      const next = state === 'pending' ? 'doing' : state === 'doing' ? 'done' : 'pending';
+      const nextLabel = next === 'doing' ? 'Iniciar' : next === 'done' ? 'Concluir' : 'Reabrir';
+      return '<li class="perfil-week-op-item ' + 'is-' + state + '">' +
+        '<div class="perfil-week-op-copy">' +
+        '<p class="perfil-week-op-text">' + escapeHtml(taskText) + '</p>' +
+        '<span class="perfil-week-op-state">' + stateLabel + '</span>' +
+        '</div>' +
+        '<button type="button" class="botao botao-outline botao-sm" data-week-task-index="' + idx + '" data-next-status="' + next + '">' + nextLabel + '</button>' +
+      '</li>';
+    }).join('');
 
     weekContentEl.innerHTML =
       '<header class="perfil-week-content-head">' +
       '<p class="perfil-week-label">Semana ' + guide.week + '</p>' +
       '<h3>' + escapeHtml(guide.title) + '</h3>' +
       '<p class="perfil-week-focus">' + escapeHtml(guide.focus) + '</p>' +
+      '<div class="perfil-week-kpis">' +
+      '<p><strong>Progresso</strong> ' + checklist.progress + '% · ' + checklist.done + '/' + checklist.total + ' concluídas</p>' +
+      '<p class="perfil-week-risk ' + riskClass + '"><strong>Risco:</strong> ' + riskLabel + '</p>' +
+      '</div>' +
+      '<div class="perfil-week-progress"><span style="width:' + checklist.progress + '%"></span></div>' +
       '</header>' +
-      '<ul class="info-list perfil-week-tasks">' +
-      (guide.tasks || []).map((t) => '<li>' + escapeHtml(t) + '</li>').join('') +
+      '<ul class="perfil-week-op-list">' +
+      taskRows +
       '</ul>' +
+      '<p class="perfil-week-tools-title"><strong>Metas operacionais:</strong></p>' +
+      '<ul class="info-list">' + metricsTargets.map((line) => '<li>' + escapeHtml(line) + '</li>').join('') + '</ul>' +
+      '<div class="perfil-week-actions">' +
+      '<button type="button" class="botao botao-outline botao-sm" data-week-action="sync-plan">Adicionar checklist ao Plano</button>' +
+      '<button type="button" class="botao botao-outline botao-sm" data-week-action="next-week">Próxima semana</button>' +
+      '<button type="button" class="botao botao-sm" data-week-action="close-week">Concluir semana no Diário</button>' +
+      '</div>' +
       (toolsHtml ? '<p class="perfil-week-tools-title"><strong>Ferramentas:</strong></p><ul class="info-list">' + toolsHtml + '</ul>' : '');
     updateWeekInspectionLink(profile);
   }
@@ -2652,8 +3169,29 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
           applyCultivoState(user.profile, data.cultivo),
           payload
         ));
+        if (cultivoView === 'grow' && user.profile) {
+          const hasSelected = selectedGrowLogId && (user.profile.growLogs || []).some((g) => g.id === selectedGrowLogId);
+          if (!hasSelected) {
+            const fallback = getSelectedGrowLog(user.profile) || getActiveGrowLog(user.profile) || (user.profile.growLogs || [])[0] || null;
+            if (fallback) {
+              selectedGrowLogId = fallback.id;
+              persistSelectedGrowId(fallback.id);
+            }
+          }
+        }
       }
-      if (data.user) user = Object.assign({}, user, data.user);
+      if (data.user) {
+        const accountProfile = data.user.profile && typeof data.user.profile === 'object'
+          ? data.user.profile
+          : {};
+        const currentProfile = user && user.profile && typeof user.profile === 'object'
+          ? user.profile
+          : {};
+        user = Object.assign({}, user, data.user, {
+          // Keep cultivo fields from the just-updated in-memory profile.
+          profile: Object.assign({}, accountProfile, currentProfile)
+        });
+      }
       if (user && user.profile) ensureGrowLogs(user.profile);
       updateUserHeader(user);
       fillForm(user.profile);
@@ -2802,9 +3340,8 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     if (reminderDateEl) reminderDateEl.value = todayDateInputValue();
   }
 
-  async function seedDefaultPlanIfEmpty(profile, options) {
+  async function seedDefaultPlanIfEmpty(profile) {
     if (!profile || !selectedGrowLogId) return;
-    const opts = options || {};
     const existing = planTasksForGrow(profile, selectedGrowLogId);
     if (existing.length) return;
     const tasks = defaultPlanTasks(profile, selectedGrowLogId);
@@ -2812,7 +3349,6 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     setPlanTasksForGrow(profile, selectedGrowLogId, tasks);
     if (user && user.profile) setPlanTasksForGrow(user.profile, selectedGrowLogId, tasks);
     renderPlanTasks(profile);
-    if (opts.persist === false) return;
     await saveProfilePayload(readForm(), null);
   }
 
@@ -2822,6 +3358,9 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     updateUserHeader(data);
     fillForm(data.profile);
     broadcastProfilePicture(data);
+    if (isProfileComplete(data.profile) && IS_CULTIVO_PAGE) {
+      renderHub(data.profile);
+    }
   }
 
   async function loadUser() {
@@ -2852,25 +3391,24 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         }
         if (!user.profile.phase) {
           const bootstrap = Object.assign({}, readForm(), { phase: 'planejamento' });
-          await saveProfilePayload(bootstrap, null);
+          const saved = await saveProfilePayload(bootstrap, null);
+          if (saved) data = saved;
         }
         initCultivoHistory();
         initSectionNav();
         initCultivoAutosave();
         initPhotoDropZone();
+        renderHub(data.profile);
+        await seedDefaultPlanIfEmpty(data.profile);
         const params = new URLSearchParams(window.location.search);
         let initialRoute = parseCultivoRoute();
         const tab = params.get('tab');
         const growParam = params.get('grow');
-        if (initialRoute.view === 'grow' && initialRoute.growId) {
-          const exists = (user.profile.growLogs || []).some((item) => item.id === initialRoute.growId);
-          if (!exists) initialRoute = { view: 'hub' };
+        let preferredGrowId = growParam || '';
+        if (!preferredGrowId) {
+          try { preferredGrowId = sessionStorage.getItem(SELECTED_GROW_KEY) || ''; } catch (e) { /* ignore */ }
         }
         if ((tab === 'diario' || params.get('saved') === '1') && user.profile.growLogs && user.profile.growLogs.length) {
-          let preferredGrowId = growParam || '';
-          if (!preferredGrowId) {
-            try { preferredGrowId = sessionStorage.getItem(SELECTED_GROW_KEY) || ''; } catch (e) { /* ignore */ }
-          }
           const target = preferredGrowId
             ? user.profile.growLogs.find((item) => item.id === preferredGrowId)
             : null;
@@ -2881,10 +3419,6 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
           flashLiveStatus('Resultado da calculadora guardado no diário.');
         }
         navigateCultivo(initialRoute, { replace: true, scroll: false });
-        if (initialRoute.view === 'hub') {
-          await refreshCultivoHubFromServer();
-        }
-        await seedDefaultPlanIfEmpty(user.profile);
         if (tab && tab !== 'diario') {
           switchTab(tab);
         }
@@ -3009,6 +3543,9 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
   if (cultivoHubEmptyBtn) {
     cultivoHubEmptyBtn.addEventListener('click', () => navigateCultivo({ view: 'wizard' }));
   }
+  if (cultivoTasksBackBtn) {
+    cultivoTasksBackBtn.addEventListener('click', () => closeGlobalTasksBoard());
+  }
 
   if (cultivoWizardBack) {
     cultivoWizardBack.addEventListener('click', () => cultivoGoBack());
@@ -3025,10 +3562,16 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       e.preventDefault();
       if (!user || !user.profile) return;
       const name = cultivoWizardName ? cultivoWizardName.value.trim() : '';
+      const plantedDate = cultivoWizardDate ? cultivoWizardDate.value : todayDateInputValue();
       const plants = cultivoWizardPlants ? parseInt(cultivoWizardPlants.value, 10) : 1;
       if (!name) {
         setWizardStatus('Informe o nome da pesquisa.', true);
         if (cultivoWizardName) cultivoWizardName.focus();
+        return;
+      }
+      if (!plantedDate) {
+        setWizardStatus('Selecione uma data para iniciar a pesquisa.', true);
+        if (cultivoWizardDate) cultivoWizardDate.focus();
         return;
       }
       setWizardStatus('A criar pesquisa…');
@@ -3037,7 +3580,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       const species = cultivoWizardSpecies ? cultivoWizardSpecies.value.trim() : '';
       const environment = cultivoWizardEnvironment ? cultivoWizardEnvironment.value : '';
       const substrate = cultivoWizardSubstrate ? cultivoWizardSubstrate.value : '';
-      const log = await createGrowFromWizard(name, cultivoWizardPhase, plants, species, environment, substrate);
+      const log = await createGrowFromWizard(name, cultivoWizardPhase, plants, species, environment, substrate, plantedDate);
       if (submitBtn) submitBtn.disabled = false;
       if (!log) {
         setWizardStatus('Não foi possível guardar a pesquisa. Verifique a ligação e tente de novo.', true);
@@ -3049,7 +3592,10 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     });
   }
 
+  [cultivoWizardDate, growEntryDate, reminderDateEl].forEach(enhanceDatePickerTouch);
+
   if (cultivoGrowBack) {
+    cultivoGrowBack.textContent = '← Pesquisas';
     cultivoGrowBack.addEventListener('click', () => cultivoGoBack());
   }
 
@@ -3072,6 +3618,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
   if (growEntryForm) {
     growEntryForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+      hideGrowPostSaveActions();
       if (!user || !user.profile || !selectedGrowLogId) return;
       const metricErrors = validateEntryMetricsFromForm();
       if (metricErrors.length) {
@@ -3089,16 +3636,17 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       }
       const log = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
       if (!log) return;
-      setStatus(growDetailStatus, pendingEntryPhotoFiles.length ? 'A enviar fotos…' : 'A guardar…');
+      setStatus(growDetailStatus, pendingEntryPhotoFiles.length ? 'A enviar mídia…' : 'A guardar…');
       let photos = [];
       try {
         if (pendingEntryPhotoFiles.length) {
           photos = await uploadPendingEntryPhotos();
         }
       } catch (err) {
-        setStatus(growDetailStatus, err.message || 'Erro ao enviar fotos.', true);
+        setStatus(growDetailStatus, err.message || 'Erro ao enviar mídia.', true);
         return;
       }
+      let createdNewEntry = false;
       if (editingEntryId) {
         const entry = (log.entries || []).find((item) => item.id === editingEntryId);
         if (!entry) {
@@ -3130,17 +3678,17 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         }
         clearEntryForm();
         flashLiveStatus('Registo guardado.');
+        createdNewEntry = true;
       }
       if (user && user.profile) {
-        renderTimeline(user.profile);
-        renderPlanTasks(user.profile);
-        const log = (user.profile.growLogs || []).find((item) => item.id === selectedGrowLogId);
-        if (log && CCharts.renderMetricsCharts && growMetricsCharts) {
-          CCharts.renderMetricsCharts(growMetricsCharts, log);
+        if (createdNewEntry) {
+          refreshUI({ tab: 'diario', skipStash: true, scrollTo: 'perfil-grow-entries' });
+        } else {
+          renderGrowPage(user.profile);
         }
       }
       await persistGrowLogs(growDetailStatus);
-      if (growEntryForm) growEntryForm.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      if (createdNewEntry) showGrowPostSaveActions();
     });
   }
 
@@ -3167,6 +3715,40 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
 
   if (growEntryPhotos) {
     growEntryPhotos.addEventListener('change', readEntryPhotoFilesFromInput);
+  }
+
+  if (growSelectMediaBtn && growEntryPhotos) {
+    growSelectMediaBtn.addEventListener('click', () => {
+      growEntryPhotos.click();
+    });
+  }
+
+  if (growEntryCapturePhoto) {
+    growEntryCapturePhoto.addEventListener('change', () => {
+      if (!growEntryCapturePhoto.files) return;
+      appendEntryMediaFiles(Array.from(growEntryCapturePhoto.files));
+      growEntryCapturePhoto.value = '';
+    });
+  }
+
+  if (growEntryCaptureVideo) {
+    growEntryCaptureVideo.addEventListener('change', () => {
+      if (!growEntryCaptureVideo.files) return;
+      appendEntryMediaFiles(Array.from(growEntryCaptureVideo.files));
+      growEntryCaptureVideo.value = '';
+    });
+  }
+
+  if (growCapturePhotoBtn && growEntryCapturePhoto) {
+    growCapturePhotoBtn.addEventListener('click', () => {
+      growEntryCapturePhoto.click();
+    });
+  }
+
+  if (growCaptureVideoBtn && growEntryCaptureVideo) {
+    growCaptureVideoBtn.addEventListener('click', () => {
+      growEntryCaptureVideo.click();
+    });
   }
 
   if (growExportMdBtn) {

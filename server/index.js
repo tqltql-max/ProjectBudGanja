@@ -60,12 +60,7 @@ function getCacheControl(ext) {
 }
 
 function readPosts() {
-  try {
-    const { mergeGuiaInspecoesPosts } = require('../lib/merge-guia-inspecoes.js');
-    return mergeGuiaInspecoesPosts(JSON.parse(fs.readFileSync(POSTS_META, 'utf8') || '[]'));
-  } catch (e) {
-    return [];
-  }
+  try { return JSON.parse(fs.readFileSync(POSTS_META, 'utf8') || '[]'); } catch (e) { return []; }
 }
 
 function writePosts(posts) {
@@ -226,11 +221,7 @@ function serveManagedHtml(res, filename) {
   } else if (filename === 'equipamentos/index.html') {
     transform = (body) => injectPostsPlaceholder(body, '<!-- EQUIPMENT_POSTS_PLACEHOLDER -->', 'equipamento');
   } else if (filename === 'biblioteca/inspecoes/index.html') {
-    const { injectInspecoesFeedInHtml, readInspecoesFeedItems } = require('../lib/embed-inspecoes-feed.js');
-    transform = (body) => {
-      let html = injectPostsPlaceholder(body, '<!-- INSPECTION_POSTS_PLACEHOLDER -->', 'inspecao');
-      return injectInspecoesFeedInHtml(html, readInspecoesFeedItems(ROOT));
-    };
+    transform = (body) => injectPostsPlaceholder(body, '<!-- INSPECTION_POSTS_PLACEHOLDER -->', 'inspecao');
   }
 
   const html = contentStore.renderManagedPage(filename, transform);

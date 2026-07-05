@@ -82,7 +82,12 @@ function calcularSuperSolo() {
   if (window.BudGanjaDiaryBridge) {
     window.BudGanjaDiaryBridge.attachSaveBar(out, {
       calculator: 'super-solo',
-      text: 'Super solo ' + buildResumo(volume) + ' — ' + selected.length + ' componentes, ' + fmtGrams(totalGrams) + ' g total'
+      text: 'Super solo ' + buildResumo(volume) + ' — ' + selected.length + ' componentes, ' + fmtGrams(totalGrams) + ' g total',
+      metrics: {
+        volume: Math.round(volume),
+        components: selected.length,
+        grams: Math.round(totalGrams)
+      }
     });
   }
 }
