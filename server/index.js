@@ -21,6 +21,9 @@ const {
 } = require('../lib/site-dev-mode.js');
 const { auditStartupSecurity } = require('../lib/startup-security.js');
 const { ROOT } = require('../lib/paths.js');
+const { getAdminSession } = require('../lib/admin-access.js');
+const eventBus = require('../lib/admin-event-bus.js');
+const { mergeGuiaInspecoesPosts } = require('../lib/merge-guia-inspecoes.js');
 const contentStore = createContentStore(ROOT);
 let appStore = null;
 const PORT = process.env.PORT || 8080;
@@ -303,6 +306,37 @@ const server = http.createServer((req, res) => {
     }
 
     if (url.startsWith('/api/')) {
+      // SSE — tratado directamente (precisa de acesso ao res nativo)
+      if (url === '/api/admin/stream' && req.method === 'GET') {
+        const cookie = req.headers.cookie || '';
+        const session = appStore ? await getAdminSession(appStore, cookie).catch(() => null) : null;
+        if (!session) {
+          res.writeHead(401, { 'Content-Type': 'application/json' });
+          res.end('{"error":"authentication required"}');
+          return;
+        }
+        res.writeHead(200, {
+          'Content-Type': 'text/event-stream',
+          'Cache-Control': 'no-cache',
+          'Connection': 'keep-alive',
+          'X-Accel-Buffering': 'no'
+        });
+        res.write(': connected\n\n');
+        try {
+          const posts = mergeGuiaInspecoesPosts(await appStore.getPosts());
+          const total = posts.length;
+          const published = posts.filter((p) => p.published !== false).length;
+          const drafts = total - published;
+          const byCategory = {};
+          posts.forEach((p) => { const c = p.category || 'pesquisa'; byCategory[c] = (byCategory[c] || 0) + 1; });
+          res.write('event: stats\ndata: ' + JSON.stringify({ total, published, drafts, byCategory }) + '\n\n');
+        } catch (e) { /* ignorar */ }
+        eventBus.subscribe(res);
+        const hb = setInterval(() => { try { res.write(': heartbeat\n\n'); } catch (e) { clearInterval(hb); } }, 25000);
+        res.on('close', () => clearInterval(hb));
+        return;
+      }
+
       const isAdmin = await isAdminAuthenticated(req);
       if (shouldBlockForDevMode(req, url, '', isAdmin)) {
         return serveDevModeApi(res, req);

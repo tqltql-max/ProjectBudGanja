@@ -24,7 +24,65 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   initPostsPanel();
   initIconsPanel();
+  initAdminSSE();
 });
+
+function initAdminSSE() {
+  if (!window.EventSource) return;
+  const dot = document.createElement('span');
+  dot.className = 'admin-sse-dot';
+  dot.title = 'Ligação em tempo real';
+  const hub = document.querySelector('.admin-hub-intro p');
+  if (hub) hub.prepend(dot);
+
+  function connect() {
+    const es = new EventSource('/api/admin/stream', { withCredentials: true });
+    es.addEventListener('stats', (e) => {
+      try {
+        const data = JSON.parse(e.data);
+        dot.classList.add('live');
+        updateDashboardStats(data);
+      } catch (x) { /* ignorar */ }
+    });
+    es.addEventListener('post_changed', (e) => {
+      try {
+        const data = JSON.parse(e.data);
+        if (window.adminToast) {
+          const icons = { create: '✅', update: '✏️', delete: '🗑️' };
+          const msgs = { create: 'Publicação criada', update: 'Publicação actualizada', delete: 'Publicação eliminada' };
+          window.adminToast((icons[data.action] || '') + ' ' + (msgs[data.action] || '') + (data.title ? ': ' + data.title.slice(0, 40) : ''), 'ok');
+        }
+      } catch (x) { /* ignorar */ }
+    });
+    es.onerror = () => { dot.classList.remove('live'); setTimeout(connect, 5000); };
+    es.onopen = () => dot.classList.add('live');
+  }
+  connect();
+}
+
+function updateDashboardStats(data) {
+  // Actualizar os stat cards com animação
+  const statsEl = document.getElementById('admin-stats');
+  if (!statsEl || !statsEl.children.length) return;
+  const cards = statsEl.querySelectorAll('.admin-stat-value');
+  if (cards[0]) animateNumber(cards[0], data.total);
+  if (cards[1]) animateNumber(cards[1], data.published);
+  if (cards[2]) animateNumber(cards[2], data.drafts);
+}
+
+function animateNumber(el, target) {
+  const current = parseInt(el.textContent) || 0;
+  if (current === target) return;
+  const step = target > current ? 1 : -1;
+  let val = current;
+  const timer = setInterval(() => {
+    val += step;
+    el.textContent = val;
+    if (val === target) clearInterval(timer);
+  }, 40);
+}
+
+
 
 async function uploadImage(file) {
   const prepared = await prepareImageForUpload(file);
@@ -563,6 +621,7 @@ function initPostsPanel() {
       }
       cachedPosts = await res.json();
       renderStudioTable();
+      if (window.adminRenderCharts) window.adminRenderCharts(cachedPosts);
     } catch (err) {
       if (postsEmpty) {
         postsEmpty.hidden = false;

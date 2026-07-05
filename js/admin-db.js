@@ -347,7 +347,33 @@
 
   document.addEventListener('DOMContentLoaded', async () => {
     const ok = await checkAuth();
-    if (ok) await loadTables();
+    if (!ok) return;
+    await loadTables();
+
+    // Deep-link: abrir tabela directamente via ?table=nome
+    const tableParam = new URLSearchParams(location.search).get('table');
+    if (tableParam) selectTable(tableParam);
+
+    // SSE — actualizar contagens em tempo real
+    if (window.EventSource) {
+      const es = new EventSource('/api/admin/stream', { withCredentials: true });
+      es.addEventListener('stats', () => { if (state.current) loadTableData(); });
+      es.addEventListener('post_changed', () => { if (state.current === 'posts') loadTableData(); });
+    }
+
+    // Atalhos de teclado
+    document.addEventListener('keydown', (e) => {
+      const modal = !document.getElementById('db-modal').hidden || !document.getElementById('db-del-modal').hidden;
+      const inInput = ['INPUT','TEXTAREA','SELECT'].includes(document.activeElement && document.activeElement.tagName);
+
+      if (e.key === 'Escape') { closeModal(); closeDeleteModal(); return; }
+      if (modal || inInput) return;
+
+      // N = novo registo
+      if (e.key === 'n' || e.key === 'N') { if (state.current) { e.preventDefault(); openModal(null); } return; }
+      // R = recarregar
+      if (e.key === 'r' || e.key === 'R') { if (state.current) { e.preventDefault(); loadTableData(); } return; }
+    });
   });
 
 })();
