@@ -16,14 +16,7 @@ function normalizePostUrl(url) {
 var SERIES_LABELS = {
   'guia-cultivo-basico': 'Guia de Cultivo Básico',
   'canal-jardimhg': 'Canal Jardim HG',
-  'verificacao-equipamento': 'Verificação de Equipamentos',
   '': 'Todas as séries'
-};
-
-var TIPO_LABELS = {
-  'conteudo': 'Conteúdo',
-  'equipamento': 'Equipamento',
-  'pesquisa': 'Pesquisa'
 };
 
 function seriesBadgeHtml(post) {
@@ -126,7 +119,7 @@ function getPublicationConfig() {
     return { category: 'equipamento', container: '.publications-equipamentos' };
   }
   if (page === 'inspecoes') {
-    return { category: 'inspecao', container: '.publications-inspecoes', tipoFilter: '#inspecoes-tipo-filter' };
+    return { category: 'inspecao', container: '.publications-inspecoes', seriesFilter: '#inspecoes-series-filter' };
   }
   return null;
 }
@@ -135,9 +128,9 @@ function filterByCategory(posts, category) {
   return posts.filter(function (p) { return (p.category || 'pesquisa') === category; });
 }
 
-function filterByTipo(posts, tipo) {
-  if (!tipo) return posts;
-  return posts.filter(function (p) { return (p.tipo || '') === tipo; });
+function filterBySeries(posts, seriesId) {
+  if (!seriesId) return posts;
+  return posts.filter(function (p) { return p.series === seriesId; });
 }
 
 function loadPostsFromApi(category) {
@@ -157,28 +150,24 @@ function loadPostsFromStaticFile(category) {
     .then(function (all) { return filterByCategory(all, category); });
 }
 
-function initInspecoesTipoFilter(filterEl, container, allPosts) {
+function initInspecoesSeriesFilter(filterEl, container, allPosts) {
   if (!filterEl || filterEl.dataset.bound === '1') return;
   filterEl.dataset.bound = '1';
 
-  // Opções fixas ordenadas
-  var tipos = [
-    { value: 'conteudo', label: 'Conteúdo' },
-    { value: 'equipamento', label: 'Equipamento' },
-    { value: 'pesquisa', label: 'Pesquisa' }
-  ];
+  var seriesSet = {};
+  allPosts.forEach(function (p) {
+    if (p.series) seriesSet[p.series] = p.seriesLabel || SERIES_LABELS[p.series] || p.series;
+  });
 
-  // Só mostrar tipos que existem nos posts actuais
-  var presentTipos = new Set(allPosts.map(function(p) { return p.tipo || ''; }));
-  tipos.filter(function(t) { return presentTipos.has(t.value); }).forEach(function(t) {
+  Object.keys(seriesSet).sort().forEach(function (id) {
     var opt = document.createElement('option');
-    opt.value = t.value;
-    opt.textContent = t.label;
+    opt.value = id;
+    opt.textContent = seriesSet[id];
     filterEl.appendChild(opt);
   });
 
   filterEl.addEventListener('change', function () {
-    var filtered = filterByTipo(allPosts, filterEl.value);
+    var filtered = filterBySeries(allPosts, filterEl.value);
     renderPostCards(container, filtered);
   });
 }
@@ -192,12 +181,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (container.querySelector('.card')) return;
 
-  var filterEl = config.tipoFilter ? document.querySelector(config.tipoFilter) : null;
+  var filterEl = config.seriesFilter ? document.querySelector(config.seriesFilter) : null;
 
   loadPostsFromApi(config.category)
     .catch(function () { return loadPostsFromStaticFile(config.category); })
     .then(function (posts) {
-      if (filterEl) initInspecoesTipoFilter(filterEl, container, posts);
+      if (filterEl) initInspecoesSeriesFilter(filterEl, container, posts);
       renderPostCards(container, posts);
     })
     .catch(function () {
