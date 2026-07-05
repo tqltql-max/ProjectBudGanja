@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta property="og:title" content="Painel BD | Inspetor BudGanja">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/imagens/icon-512.png?v=208">
+    <link rel="icon" href="/favicon.svg?v=208" type="image/svg+xml">
+    <link rel="icon" href="/imagens/favicon-32.png?v=208" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=208" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=208">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3d5c28">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
+    <link rel="stylesheet" href="/css/style.css?v=208">
+    <meta name="robots" content="noindex,nofollow">
+  
+  
+  
+  
+  <style>
+    .db-layout { display: flex; gap: 0; min-height: calc(100vh - 160px); }
+    .db-sidebar { width: 220px; flex-shrink: 0; border-right: 1px solid var(--color-border); padding: 16px 0; }
+    .db-sidebar-title { font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--color-text-muted); padding: 0 16px 8px; }
+    .db-table-btn { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 8px 16px; background: none; border: none; color: var(--color-text); cursor: pointer; font-size: .85rem; text-align: left; transition: background .15s; }
+    .db-table-btn:hover { background: rgba(255,255,255,.05); }
+    .db-table-btn.is-active { background: rgba(90,180,60,.12); color: var(--color-accent); font-weight: 600; }
+    .db-table-btn .db-count { font-size: .75rem; color: var(--color-text-muted); background: rgba(255,255,255,.08); padding: 1px 6px; border-radius: 10px; }
+    .db-main { flex: 1; padding: 24px; min-width: 0; }
+    .db-toolbar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+    .db-toolbar h2 { margin: 0; font-size: 1.1rem; flex: 1; }
+    .db-toolbar .db-total { font-size: .8rem; color: var(--color-text-muted); }
+    .db-search { padding: 6px 12px; border-radius: var(--radius); border: 1px solid var(--color-border); background: var(--color-card); color: var(--color-text); font-size: .85rem; width: 200px; }
+    .db-grid-wrap { overflow-x: auto; border-radius: var(--radius); border: 1px solid var(--color-border); }
+    .db-grid { width: 100%; border-collapse: collapse; font-size: .82rem; }
+    .db-grid th { background: var(--color-card); padding: 8px 12px; text-align: left; font-weight: 600; font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; color: var(--color-text-muted); border-bottom: 1px solid var(--color-border); white-space: nowrap; }
+    .db-grid td { padding: 7px 12px; border-bottom: 1px solid rgba(255,255,255,.05); vertical-align: top; max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .db-grid tr:last-child td { border-bottom: none; }
+    .db-grid tr:hover td { background: rgba(255,255,255,.03); }
+    .db-grid .db-actions { display: flex; gap: 6px; white-space: nowrap; }
+    .db-btn-edit { padding: 3px 10px; border-radius: var(--radius); border: 1px solid var(--color-border); background: none; color: var(--color-text-soft); cursor: pointer; font-size: .78rem; }
+    .db-btn-edit:hover { border-color: var(--color-accent); color: var(--color-accent); }
+    .db-btn-del { padding: 3px 10px; border-radius: var(--radius); border: 1px solid transparent; background: none; color: var(--color-text-muted); cursor: pointer; font-size: .78rem; }
+    .db-btn-del:hover { border-color: #e05; color: #e05; }
+    .db-pagination { display: flex; align-items: center; gap: 8px; margin-top: 14px; font-size: .82rem; color: var(--color-text-muted); }
+    .db-page-btn { padding: 4px 12px; border-radius: var(--radius); border: 1px solid var(--color-border); background: none; color: var(--color-text-soft); cursor: pointer; }
+    .db-page-btn:disabled { opacity: .4; cursor: default; }
+    .db-page-btn:not(:disabled):hover { border-color: var(--color-accent); color: var(--color-accent); }
+    .db-empty { padding: 40px; text-align: center; color: var(--color-text-muted); font-size: .9rem; }
+    .db-loading { padding: 40px; text-align: center; color: var(--color-text-muted); }
+
+    /* Modal */
+    .db-modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.6); z-index: 1000; display: flex; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow-y: auto; }
+    .db-modal { background: var(--color-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); width: 100%; max-width: 600px; padding: 28px; }
+    .db-modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+    .db-modal-header h3 { margin: 0; font-size: 1rem; }
+    .db-modal-close { background: none; border: none; color: var(--color-text-muted); cursor: pointer; font-size: 1.3rem; line-height: 1; padding: 4px; }
+    .db-modal-close:hover { color: var(--color-text); }
+    .db-field { margin-bottom: 14px; }
+    .db-field label { display: block; font-size: .78rem; font-weight: 600; color: var(--color-text-muted); margin-bottom: 4px; text-transform: uppercase; letter-spacing: .04em; }
+    .db-field input[type=text], .db-field input[type=number], .db-field input[type=datetime-local], .db-field textarea, .db-field select { width: 100%; padding: 8px 10px; border-radius: var(--radius); border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text); font-size: .88rem; box-sizing: border-box; }
+    .db-field textarea { min-height: 80px; resize: vertical; font-family: monospace; font-size: .8rem; }
+    .db-field input[type=checkbox] { width: auto; margin-right: 6px; }
+    .db-field-hint { font-size: .72rem; color: var(--color-text-muted); margin-top: 3px; }
+    .db-modal-footer { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--color-border); }
+    .db-confirm-del { padding: 16px; background: rgba(200,0,50,.08); border: 1px solid rgba(200,0,50,.2); border-radius: var(--radius); margin-bottom: 16px; font-size: .9rem; }
+    .db-sidebar-error { font-size: .75rem; color: #e86; padding: 8px 16px; }
+
+    @media (max-width: 700px) {
+      .db-layout { flex-direction: column; }
+      .db-sidebar { width: 100%; border-right: none; border-bottom: 1px solid var(--color-border); display: flex; flex-wrap: wrap; gap: 4px; padding: 8px; }
+      .db-table-btn { width: auto; border-radius: var(--radius); border: 1px solid var(--color-border); }
+      .db-sidebar-title { display: none; }
+    }
+  </style>
+    <title>Painel BD | Inspetor BudGanja</title>
+</head>
+<body data-page="admin">
+    <div id="site-header"></div>
+
+    <main class="conteudo-interno admin-panel">
+    <header class="admin-hub-header">
+      <div class="admin-hub-intro">
+        <p class="admin-hub-eyebrow">Área administrativa</p>
+        <h1>Painel de Base de Dados</h1>
+        <p class="admin-hub-sub">Olá, <strong id="admin-user">admin</strong> — CRUD dinâmico para todas as tabelas.</p>
+      </div>
+      <div class="admin-hub-actions">
+        <a href="/" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Ver site</a>
+        <button id="logout-btn" type="button" class="botao botao-outline botao-sm">Sair</button>
+      </div>
+    </header>
+
+    <nav class="admin-nav" aria-label="Secções do admin">
+      <a href="/admin.html" class="admin-nav-link">Publicações</a>
+      <a href="/pesquisas-admin.html" class="admin-nav-link">Submissões</a>
+      <a href="/usuarios-admin.html" class="admin-nav-link">Utilizadores</a>
+      <a href="/sorteios-admin.html" class="admin-nav-link">Sorteios</a>
+      <a href="/loja-admin.html" class="admin-nav-link">Encomendas</a>
+      <a href="/admin-db.html" class="admin-nav-link is-active" aria-current="page">Base de Dados</a>
+    </nav>
+
+    <div class="db-layout">
+      <aside class="db-sidebar" id="db-sidebar">
+        <div class="db-sidebar-title">Tabelas</div>
+        <div id="db-table-list"><p class="db-loading">A carregar…</p></div>
+      </aside>
+      <section class="db-main" id="db-main">
+        <div class="db-empty">Seleciona uma tabela para começar.</div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Modal create/edit -->
+  <div id="db-modal" class="db-modal-backdrop" hidden>
+    <div class="db-modal" role="dialog" aria-modal="true" aria-labelledby="db-modal-title">
+      <div class="db-modal-header">
+        <h3 id="db-modal-title">Novo registo</h3>
+        <button class="db-modal-close" id="db-modal-close" aria-label="Fechar">&times;</button>
+      </div>
+      <div id="db-modal-body"></div>
+      <div class="db-modal-footer">
+        <button type="button" class="botao botao-outline botao-sm" id="db-modal-cancel">Cancelar</button>
+        <button type="button" class="botao botao-sm" id="db-modal-save">Guardar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal delete confirm -->
+  <div id="db-del-modal" class="db-modal-backdrop" hidden>
+    <div class="db-modal" role="dialog" aria-modal="true">
+      <div class="db-modal-header">
+        <h3>Eliminar registo</h3>
+        <button class="db-modal-close" id="db-del-close" aria-label="Fechar">&times;</button>
+      </div>
+      <div class="db-confirm-del" id="db-del-msg">Tens a certeza?</div>
+      <div class="db-modal-footer">
+        <button type="button" class="botao botao-outline botao-sm" id="db-del-cancel">Cancelar</button>
+        <button type="button" class="botao botao-sm" id="db-del-confirm" style="background:#c00418;">Eliminar</button>
+      </div>
+    </div>
+  </div>
+
+    <div id="site-footer"></div>
+  <script src="/js/app-version-check.js?v=208"></script>
+    <script src="/js/i18n-data.js?v=208"></script>
+    <script src="/js/i18n.js?v=208"></script>
+    <script src="/js/ferramentas-nav-data.js?v=208"></script>
+    <script src="/js/layout.js?v=208"></script>
+    <script src="/js/admin-db.js?v=208"></script>
+
+</body>
+</html>
