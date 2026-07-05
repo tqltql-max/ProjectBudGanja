@@ -3,13 +3,12 @@
 const fs = require('fs');
 const path = require('path');
 const { ROOT } = require('../lib/paths.js');
-const { ASSET_VERSION } = require('../lib/asset-version.js');
 
-const ICON_BLOCK = `    <link rel="icon" href="/favicon.svg?v=${ASSET_VERSION}" type="image/svg+xml">
-  <link rel="icon" href="/imagens/favicon-32.png?v=${ASSET_VERSION}" sizes="32x32" type="image/png">
-  <link rel="icon" href="/imagens/favicon-16.png?v=${ASSET_VERSION}" sizes="16x16" type="image/png">
-  <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=${ASSET_VERSION}">
-  <link rel="manifest" href="/manifest.json?v=${ASSET_VERSION}">
+const ICON_BLOCK = `    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/imagens/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#3d5c28">`;
 
 const PATTERNS = [

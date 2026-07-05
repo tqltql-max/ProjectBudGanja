@@ -125,25 +125,6 @@ if (fs.existsSync(swPath)) {
   }
 }
 
-// Sincroniza os ícones do manifest com a versão de assets para forçar refresh.
-const manifestPath = path.join(ROOT, 'manifest.json');
-if (fs.existsSync(manifestPath)) {
-  try {
-    const manifestRaw = fs.readFileSync(manifestPath, 'utf8');
-    const manifest = JSON.parse(manifestRaw);
-    if (Array.isArray(manifest.icons)) {
-      manifest.icons = manifest.icons.map((icon) => {
-        if (!icon || typeof icon.src !== 'string') return icon;
-        const clean = icon.src.replace(/\?v=[^?#]*/g, '');
-        return { ...icon, src: clean + '?v=' + ASSET_VERSION };
-      });
-      fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n', 'utf8');
-    }
-  } catch (e) {
-    console.warn('Aviso manifest:icons:', e.message);
-  }
-}
-
 // Manifesto de versão para o app verificar actualizações no telemóvel.
 const versionPath = path.join(ROOT, 'version.json');
 fs.writeFileSync(
