@@ -35,7 +35,10 @@
       "purpose": "any"
     }
   ],
-  "categories": ["education", "science"],
+  "categories": [
+    "education",
+    "science"
+  ],
   "lang": "pt-BR",
   "prefer_related_applications": false
 }

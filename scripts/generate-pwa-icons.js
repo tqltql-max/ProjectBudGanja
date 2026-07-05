@@ -4,9 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const { ROOT } = require('../lib/paths.js');
 
-const SOURCE = path.join(ROOT, 'imagens', 'app-icon.svg');
+const SOURCE = path.join(ROOT, 'favicon.svg');
 const OUT_DIR = path.join(ROOT, 'imagens');
-const FAVICON_SVG = path.join(ROOT, 'favicon.svg');
 
 const BG = { r: 26, g: 26, b: 26, alpha: 1 };
 const GLOW = { r: 39, g: 174, b: 96 };
@@ -68,24 +67,9 @@ async function buildAppIcon(sharp, size, maskable) {
     .toBuffer();
 }
 
-function buildFaviconSvg(pngBase64) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
-  <defs>
-    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
-      <feDropShadow dx="0" dy="1" stdDeviation="2.2" flood-color="#27ae60" flood-opacity="0.5"/>
-    </filter>
-    <clipPath id="round"><circle cx="32" cy="32" r="30"/></clipPath>
-  </defs>
-  <circle cx="32" cy="32" r="30" fill="#1a1a1a"/>
-  <g clip-path="url(#round)" filter="url(#glow)">
-    <image xlink:href="data:image/png;base64,${pngBase64}" width="64" height="64" preserveAspectRatio="xMidYMid meet"/>
-  </g>
-</svg>`;
-}
-
 async function main() {
   if (!fs.existsSync(SOURCE)) {
-    throw new Error('Ficheiro em falta: imagens/app-icon.svg');
+    throw new Error('Ficheiro em falta: favicon.svg');
   }
 
   const sharp = await loadSharp();
@@ -97,8 +81,6 @@ async function main() {
   const appleTouch = await buildAppIcon(sharp, 180, false);
   const fav32 = await buildAppIcon(sharp, 32, false);
   const fav16 = await buildAppIcon(sharp, 16, false);
-  const fav64 = await buildAppIcon(sharp, 64, false);
-
   fs.writeFileSync(path.join(OUT_DIR, 'icon-192.png'), icon192);
   fs.writeFileSync(path.join(OUT_DIR, 'icon-512.png'), icon512);
   fs.writeFileSync(path.join(OUT_DIR, 'icon-512-maskable.png'), icon512Mask);
@@ -106,11 +88,9 @@ async function main() {
   fs.writeFileSync(path.join(OUT_DIR, 'favicon-32.png'), fav32);
   fs.writeFileSync(path.join(OUT_DIR, 'favicon-16.png'), fav16);
   fs.writeFileSync(path.join(OUT_DIR, 'iconsite-processed.png'), await prepareLogo(sharp, 512));
-  fs.writeFileSync(FAVICON_SVG, buildFaviconSvg(fav64.toString('base64')));
 
-  console.log('Ícones gerados a partir de imagens/app-icon.svg');
+  console.log('Ícones gerados a partir de favicon.svg');
   console.log('  → imagens/icon-192.png, icon-512.png, apple-touch-icon.png, favicon-*.png');
-  console.log('  → favicon.svg (com brilho verde)');
 }
 
 main().catch((err) => {
