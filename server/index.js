@@ -55,7 +55,7 @@ function isCompressible(ext) {
 function getCacheControl(ext) {
   if (ext === '.html') return 'no-cache';
   if (['.js', '.css', '.json', '.webmanifest'].includes(ext)) return 'no-cache';
-  if (['.png', '.jpg', '.jpeg', '.svg', '.webp', '.ico'].includes(ext)) return 'public, max-age=31536000, immutable';
+  if (['.png', '.jpg', '.jpeg', '.svg', '.webp', '.ico'].includes(ext)) return 'public, max-age=86400';
   return 'public, max-age=3600';
 }
 

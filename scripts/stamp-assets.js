@@ -125,6 +125,19 @@ if (fs.existsSync(swPath)) {
   }
 }
 
+// Sincroniza versão dos ícones no manifest.json (evita cache Cloudflare nos ícones PWA).
+const manifestPath = path.join(ROOT, 'manifest.json');
+if (fs.existsSync(manifestPath)) {
+  let manifest = fs.readFileSync(manifestPath, 'utf8');
+  const next = manifest.replace(
+    /(\/imagens\/[^"?]+\.(?:png|svg))(?:\?v=[^"]*)?(")/g,
+    `$1?v=${ASSET_VERSION}$2`
+  );
+  if (next !== manifest) {
+    fs.writeFileSync(manifestPath, next);
+  }
+}
+
 // Manifesto de versão para o app verificar actualizações no telemóvel.
 const versionPath = path.join(ROOT, 'version.json');
 fs.writeFileSync(

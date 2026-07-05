@@ -25,6 +25,16 @@
     Content-Security-Policy = "default-src 'self'; img-src 'self' data: https://i.ytimg.com https://http2.mlstatic.com https://lh3.googleusercontent.com https://www.gstatic.com; script-src 'self' 'unsafe-inline' https://pay.google.com https://accounts.google.com/gsi/client; style-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/style; connect-src 'self' https://pay.google.com https://api.stripe.com https://accounts.google.com/gsi/ https://oauth2.googleapis.com https://generativelanguage.googleapis.com; frame-src https://www.youtube-nocookie.com https://www.youtube.com https://docs.google.com https://accounts.google.com/gsi/; base-uri 'self'; form-action 'self'"
 
 [[headers]]
+  for = "/imagens/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/imagens/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
   for = "/sw.js"
   [headers.values]
     Cache-Control = "no-store, no-cache, must-revalidate"
