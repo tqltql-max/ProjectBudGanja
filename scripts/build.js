@@ -26,12 +26,6 @@ function runBuildSteps() {
   }
 
   try {
-    runStep('sync:icon-head', 'sync-icon-head.js');
-  } catch (e) {
-    console.warn('Aviso sync:icon-head:', e.message);
-  }
-
-  try {
     runStep('generate:calculadoras', 'generate-calculadoras-pages.js');
   } catch (e) {
     console.warn('Aviso generate:calculadoras:', e.message);
@@ -120,6 +114,12 @@ function runBuildSteps() {
     runStep('build:assetlinks', 'build-assetlinks.js');
   } catch (e) {
     console.warn('Aviso build:assetlinks:', e.message);
+  }
+
+  try {
+    runStep('sync:icon-head', 'sync-icon-head.js');
+  } catch (e) {
+    console.warn('Aviso sync:icon-head:', e.message);
   }
 
   try {
