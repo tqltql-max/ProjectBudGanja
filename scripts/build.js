@@ -51,12 +51,6 @@ function runBuildSteps() {
   }
 
   try {
-    runStep('sync:pages-to-db', 'sync-pages-to-db.js');
-  } catch (e) {
-    console.warn('Aviso sync:pages-to-db:', e.message);
-  }
-
-  try {
     runStep('build:posts', 'regenerate-posts.js');
   } catch (e) {
     console.warn('Aviso build:posts:', e.message);
@@ -120,6 +114,12 @@ function runBuildSteps() {
     runStep('sync:icon-head', 'sync-icon-head.js');
   } catch (e) {
     console.warn('Aviso sync:icon-head:', e.message);
+  }
+
+  try {
+    runStep('sync:pages-to-db', 'sync-pages-to-db.js');
+  } catch (e) {
+    console.warn('Aviso sync:pages-to-db:', e.message);
   }
 
   try {
