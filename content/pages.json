@@ -2,7 +2,7 @@
   "index.html": {
     "id": "index.html",
     "label": "Início",
-    "updatedAt": "2026-07-05T06:24:51.406Z",
+    "updatedAt": "2026-07-05T06:33:51.462Z",
     "title": "Início | Inspetor BudGanja",
     "metaDescription": "Inspetor BudGanja — Biblioteca de Cultivo, pesquisas técnicas, inspeções, equipamentos caseiros, ferramentas e sorteios para cultivo vegetal.",
     "ogTitle": "Inspetor BudGanja",
@@ -16,7 +16,7 @@
   "entrar.html": {
     "id": "entrar.html",
     "label": "Entrar",
-    "updatedAt": "2026-07-05T06:24:51.411Z",
+    "updatedAt": "2026-07-05T06:33:51.467Z",
     "title": "Entrar | Inspetor BudGanja",
     "metaDescription": "Entre com a sua conta Google para aceder ao diário de pesquisas e ao painel do laboratório.",
     "ogTitle": "Entrar | Inspetor BudGanja",
@@ -30,7 +30,7 @@
   "perfil.html": {
     "id": "perfil.html",
     "label": "Meu perfil",
-    "updatedAt": "2026-07-05T06:24:51.412Z",
+    "updatedAt": "2026-07-05T06:33:51.468Z",
     "title": "Minha conta | Inspetor BudGanja",
     "metaDescription": "Minha conta — dados de acesso e perfil no Inspetor BudGanja.",
     "ogTitle": "Minha conta | Inspetor BudGanja",
@@ -44,7 +44,7 @@
   "cultivo/index.html": {
     "id": "cultivo/index.html",
     "label": "Diário de Pesquisas",
-    "updatedAt": "2026-07-05T06:24:51.412Z",
+    "updatedAt": "2026-07-05T06:33:51.468Z",
     "title": "Diário de Pesquisas | Inspetor BudGanja",
     "metaDescription": "Diário de Pesquisas — documente o cultivo de qualquer planta e prepare publicações no Inspetor BudGanja.",
     "ogTitle": "Diário de Pesquisas | Inspetor BudGanja",
@@ -58,7 +58,7 @@
   "guia/cultivo-basico.html": {
     "id": "guia/cultivo-basico.html",
     "label": "Guia de Cultivo",
-    "updatedAt": "2026-07-05T06:24:51.412Z",
+    "updatedAt": "2026-07-05T06:33:51.469Z",
     "title": "Guia de Cultivo Básico | Inspetor BudGanja",
     "metaDescription": "O Guia de Cultivo Básico passou a ser uma série de inspeções técnicas na biblioteca do Inspetor BudGanja.",
     "ogTitle": "Guia de Cultivo Básico | Inspetor BudGanja",
@@ -72,7 +72,7 @@
   "videos/index.html": {
     "id": "videos/index.html",
     "label": "Últimos vídeos",
-    "updatedAt": "2026-07-05T06:24:51.413Z",
+    "updatedAt": "2026-07-05T06:33:51.470Z",
     "title": "Últimos vídeos | Inspetor BudGanja",
     "metaDescription": "Últimos vídeos do canal Inspetor BudGanja — inspeções, tutoriais e sorteios.",
     "ogTitle": "Últimos vídeos | Inspetor BudGanja",
@@ -86,7 +86,7 @@
   "biblioteca/inspecoes/index.html": {
     "id": "biblioteca/inspecoes/index.html",
     "label": "Inspeções",
-    "updatedAt": "2026-07-05T06:24:55.130Z",
+    "updatedAt": "2026-07-05T06:33:55.524Z",
     "title": "Inspeções | Inspetor BudGanja",
     "metaDescription": "Inspeções técnicas do Inspetor BudGanja — relatórios de campo e verificações de equipamentos e processos.",
     "ogTitle": "Inspeções | Inspetor BudGanja",
@@ -100,7 +100,7 @@
   "info/sobre.html": {
     "id": "info/sobre.html",
     "label": "Sobre",
-    "updatedAt": "2026-07-05T06:24:51.414Z",
+    "updatedAt": "2026-07-05T06:33:51.471Z",
     "title": "Sobre | Inspetor BudGanja",
     "metaDescription": "Conheça o propósito e a metodologia do projeto Inspetor BudGanja.",
     "ogTitle": "Sobre | Inspetor BudGanja",
@@ -114,7 +114,7 @@
   "info/contato.html": {
     "id": "info/contato.html",
     "label": "Contato",
-    "updatedAt": "2026-07-05T06:24:51.414Z",
+    "updatedAt": "2026-07-05T06:33:51.471Z",
     "title": "Contato | Inspetor BudGanja",
     "metaDescription": "Entre em contato com o Inspetor BudGanja — e-mail, canal YouTube e perguntas frequentes.",
     "ogTitle": "Contato | Inspetor BudGanja",
@@ -128,7 +128,7 @@
   "info/privacidade.html": {
     "id": "info/privacidade.html",
     "label": "Privacidade",
-    "updatedAt": "2026-07-05T06:24:51.415Z",
+    "updatedAt": "2026-07-05T06:33:51.472Z",
     "title": "Privacidade | Inspetor BudGanja",
     "metaDescription": "Política de privacidade do Inspetor BudGanja — como tratamos dados pessoais em sorteios e contato.",
     "ogTitle": "Privacidade | Inspetor BudGanja",
@@ -142,7 +142,7 @@
   "sorteios/index.html": {
     "id": "sorteios/index.html",
     "label": "Sorteios",
-    "updatedAt": "2026-07-05T06:24:51.416Z",
+    "updatedAt": "2026-07-05T06:33:51.472Z",
     "title": "Sorteios | Inspetor BudGanja",
     "metaDescription": "Sorteio de inauguração do Inspetor BudGanja — em breve, clonadora aeropônica caseira de baixo custo documentada no site.",
     "ogTitle": "Sorteios | Inspetor BudGanja",
@@ -156,7 +156,7 @@
   "equipamentos/index.html": {
     "id": "equipamentos/index.html",
     "label": "Equipamentos",
-    "updatedAt": "2026-07-05T06:24:55.130Z",
+    "updatedAt": "2026-07-05T06:33:55.525Z",
     "title": "Equipamentos | Inspetor BudGanja",
     "metaDescription": "Clonadoras caseiras do Inspetor BudGanja — guias separados para 6 estacas (pote) e 12 estacas (balde com aspersores).",
     "ogTitle": "Equipamentos | Inspetor BudGanja",
@@ -170,7 +170,7 @@
   "loja/index.html": {
     "id": "loja/index.html",
     "label": "Loja parceira",
-    "updatedAt": "2026-07-05T06:24:51.417Z",
+    "updatedAt": "2026-07-05T06:33:51.473Z",
     "title": "Loja parceira | Inspetor BudGanja",
     "metaDescription": "Loja parceira do Inspetor BudGanja — materiais usados nas clonadoras e experiências de campo e laboratório, com link para os guias de montagem.",
     "ogTitle": "Loja parceira | Inspetor BudGanja",
@@ -184,7 +184,7 @@
   "loja/encomenda.html": {
     "id": "loja/encomenda.html",
     "label": "Encomendar clonadora",
-    "updatedAt": "2026-07-05T06:24:51.417Z",
+    "updatedAt": "2026-07-05T06:33:51.474Z",
     "title": "Encomendar clonadora | Inspetor BudGanja",
     "metaDescription": "Formulário de encomenda — clonadoras montadas pelo Inspetor BudGanja.",
     "ogTitle": "Encomendar clonadora | Inspetor BudGanja",
@@ -198,7 +198,7 @@
   "loja-admin.html": {
     "id": "loja-admin.html",
     "label": "Admin encomendas",
-    "updatedAt": "2026-07-05T06:24:51.418Z",
+    "updatedAt": "2026-07-05T06:33:51.474Z",
     "title": "Encomendas | Admin Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Encomendas | Admin Inspetor BudGanja",
@@ -212,7 +212,7 @@
   "pesquisas-admin.html": {
     "id": "pesquisas-admin.html",
     "label": "Admin submissões de pesquisas",
-    "updatedAt": "2026-07-05T06:24:51.418Z",
+    "updatedAt": "2026-07-05T06:33:51.475Z",
     "title": "Submissões de pesquisas | Admin Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Submissões de pesquisas | Admin Inspetor BudGanja",
@@ -226,7 +226,7 @@
   "usuarios-admin.html": {
     "id": "usuarios-admin.html",
     "label": "Admin utilizadores",
-    "updatedAt": "2026-07-05T06:24:51.418Z",
+    "updatedAt": "2026-07-05T06:33:51.475Z",
     "title": "Utilizadores | Admin Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Utilizadores | Admin Inspetor BudGanja",
@@ -240,7 +240,7 @@
   "biblioteca/pesquisas/index.html": {
     "id": "biblioteca/pesquisas/index.html",
     "label": "Pesquisas",
-    "updatedAt": "2026-07-05T06:24:55.130Z",
+    "updatedAt": "2026-07-05T06:33:55.525Z",
     "title": "Pesquisas | Inspetor BudGanja",
     "metaDescription": "Pesquisas técnicas do Inspetor BudGanja — relatórios científicos e estudos sobre cultivo vegetal.",
     "ogTitle": "Pesquisas | Inspetor BudGanja",
@@ -254,7 +254,7 @@
   "calculadoras/index.html": {
     "id": "calculadoras/index.html",
     "label": "Ferramentas",
-    "updatedAt": "2026-07-05T06:24:51.419Z",
+    "updatedAt": "2026-07-05T06:33:51.476Z",
     "title": "Ferramentas | Inspetor BudGanja",
     "metaDescription": "Ferramentas do Inspetor BudGanja — Super Calc, luxímetro e Super Solo.",
     "ogTitle": "Ferramentas | Inspetor BudGanja",
@@ -268,7 +268,7 @@
   "calculadoras/cultivo-lab.html": {
     "id": "calculadoras/cultivo-lab.html",
     "label": "Super Calc",
-    "updatedAt": "2026-07-05T06:24:51.420Z",
+    "updatedAt": "2026-07-05T06:33:51.476Z",
     "title": "Super Calculadora de Cultivo | Inspetor BudGanja",
     "metaDescription": "Super calculadora de cultivo — VPD, DLI, pH, EC, diluição, volume de vaso, W/m² e custo de energia numa só ferramenta.",
     "ogTitle": "Super Calculadora de Cultivo | Inspetor BudGanja",
@@ -282,7 +282,7 @@
   "calculadoras/luximetro.html": {
     "id": "calculadoras/luximetro.html",
     "label": "Luxímetro",
-    "updatedAt": "2026-07-05T06:24:51.420Z",
+    "updatedAt": "2026-07-05T06:33:51.477Z",
     "title": "Luxímetro | Inspetor BudGanja",
     "metaDescription": "Luxímetro do Inspetor BudGanja — meça a intensidade luminosa e estime PPFD usando a câmera do celular.",
     "ogTitle": "Luxímetro | Inspetor BudGanja",
@@ -296,7 +296,7 @@
   "calculadoras/super-solo.html": {
     "id": "calculadoras/super-solo.html",
     "label": "Super Solo",
-    "updatedAt": "2026-07-05T06:24:51.421Z",
+    "updatedAt": "2026-07-05T06:33:51.477Z",
     "title": "Super Solo | Inspetor BudGanja",
     "metaDescription": "Calcule dosagens de amendments (gramas e ml) para super solo orgânico a partir do volume de substrato.",
     "ogTitle": "Calculadora de Super Solo | Inspetor BudGanja",
@@ -310,7 +310,7 @@
   "equipamentos/clonadora-6-estacas.html": {
     "id": "equipamentos/clonadora-6-estacas.html",
     "label": "Guia: Clonadora 6 estacas",
-    "updatedAt": "2026-07-05T06:24:51.422Z",
+    "updatedAt": "2026-07-05T06:33:51.478Z",
     "title": "Guia: Clonadora de 6 estacas | Inspetor BudGanja",
     "metaDescription": "Guia da clonadora caseira de 6 estacas — pote de sorvete, bucha de louça e bombinha de ar 24 h.",
     "ogTitle": "Guia: Clonadora de 6 estacas | Inspetor BudGanja",
@@ -324,7 +324,7 @@
   "equipamentos/clonadora-12-estacas.html": {
     "id": "equipamentos/clonadora-12-estacas.html",
     "label": "Guia: Clonadora 12 estacas",
-    "updatedAt": "2026-07-05T06:24:51.422Z",
+    "updatedAt": "2026-07-05T06:33:51.479Z",
     "title": "Guia: Clonadora de 12 estacas | Inspetor BudGanja",
     "metaDescription": "Guia da clonadora caseira de 12 estacas — balde, bomba submersa, microaspersores e feltro. Água borrifada 24 h.",
     "ogTitle": "Guia: Clonadora de 12 estacas | Inspetor BudGanja",
@@ -338,7 +338,7 @@
   "equipamentos/manual-clonadora.html": {
     "id": "equipamentos/manual-clonadora.html",
     "label": "Manual: Clonadoras (redirecionamento)",
-    "updatedAt": "2026-07-05T06:24:51.423Z",
+    "updatedAt": "2026-07-05T06:33:51.479Z",
     "title": "Clonadoras | Inspetor BudGanja",
     "metaDescription": "Clonadoras caseiras do Inspetor BudGanja — guias separados para 6 e 12 estacas.",
     "ogTitle": "Clonadoras | Inspetor BudGanja",
@@ -352,7 +352,7 @@
   "equipamentos/manual-hidrocloradora.html": {
     "id": "equipamentos/manual-hidrocloradora.html",
     "label": "Manual: Clonadoras (redirecionamento)",
-    "updatedAt": "2026-07-05T06:24:51.424Z",
+    "updatedAt": "2026-07-05T06:33:51.480Z",
     "title": "Clonadora de 12 estacas | Inspetor BudGanja",
     "metaDescription": "Redirecionamento para o guia da clonadora de 12 estacas.",
     "ogTitle": "Clonadora de 12 estacas | Inspetor BudGanja",
@@ -366,7 +366,7 @@
   "biblioteca/pesquisas/substratos.html": {
     "id": "biblioteca/pesquisas/substratos.html",
     "label": "Pesquisa: Substratos",
-    "updatedAt": "2026-07-05T06:24:51.424Z",
+    "updatedAt": "2026-07-05T06:33:51.481Z",
     "title": "Relatório: Otimização da Propagação Vegetal | Inspetor BudGanja",
     "metaDescription": "Relatório técnico: otimização da propagação vegetal via substratos biodegradáveis — Inspetor BudGanja.",
     "ogTitle": "Relatório: Propagação Vegetal | Inspetor BudGanja",

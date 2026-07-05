@@ -49,8 +49,18 @@ async function prepareLogo(sharp, maxSize) {
   }).png().toBuffer();
 }
 
-async function buildAppIcon(sharp, size, maskable) {
-  const pad = maskable ? Math.round(size * 0.12) : Math.round(size * 0.08);
+async function buildAppIcon(sharp, size) {
+  // PNG já tem background próprio — apenas redimensiona
+  if (SOURCE === SOURCE_PNG) {
+    return sharp(SOURCE)
+      .resize(size, size, { fit: 'cover', position: 'centre' })
+      .png({ compressionLevel: 9 })
+      .toBuffer();
+  }
+
+  // SVG: fundo escuro + glow (comportamento original)
+  const maskable = false;
+  const pad = Math.round(size * 0.08);
   const inner = size - pad * 2;
   const logo = await prepareLogo(sharp, inner);
 
@@ -95,13 +105,13 @@ async function main() {
   const sharp = await loadSharp();
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
-  const icon192 = await buildAppIcon(sharp, 192, false);
-  const icon512 = await buildAppIcon(sharp, 512, false);
-  const icon512Mask = await buildAppIcon(sharp, 512, true);
-  const appleTouch = await buildAppIcon(sharp, 180, false);
-  const fav32 = await buildAppIcon(sharp, 32, false);
-  const fav16 = await buildAppIcon(sharp, 16, false);
-  const fav64 = await buildAppIcon(sharp, 64, false);
+  const icon192 = await buildAppIcon(sharp, 192);
+  const icon512 = await buildAppIcon(sharp, 512);
+  const icon512Mask = await buildAppIcon(sharp, 512);
+  const appleTouch = await buildAppIcon(sharp, 180);
+  const fav32 = await buildAppIcon(sharp, 32);
+  const fav16 = await buildAppIcon(sharp, 16);
+  const fav64 = await buildAppIcon(sharp, 64);
 
   fs.writeFileSync(path.join(OUT_DIR, 'icon-192.png'), icon192);
   fs.writeFileSync(path.join(OUT_DIR, 'icon-512.png'), icon512);
