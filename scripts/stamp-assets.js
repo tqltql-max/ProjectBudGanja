@@ -138,6 +138,18 @@ if (fs.existsSync(manifestPath)) {
   }
 }
 
+// Versiona favicon.svg e imagens de ícone nos HTML (evita cache Cloudflare).
+for (const file of listHtmlFiles(ROOT)) {
+  let html = fs.readFileSync(file, 'utf8');
+  const next = html
+    .replace(/(href="\/favicon\.svg)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(href="\/imagens\/favicon-\d+\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(href="\/imagens\/apple-touch-icon\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`);
+  if (next !== html) {
+    fs.writeFileSync(file, next);
+  }
+}
+
 // Manifesto de versão para o app verificar actualizações no telemóvel.
 const versionPath = path.join(ROOT, 'version.json');
 fs.writeFileSync(
