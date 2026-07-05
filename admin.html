@@ -30,6 +30,7 @@
       <a href="/usuarios-admin.html" class="admin-nav-link">Utilizadores</a>
       <a href="/sorteios-admin.html" class="admin-nav-link">Sorteios</a>
       <a href="/loja-admin.html" class="admin-nav-link">Encomendas</a>
+      <button type="button" id="show-icons-btn" class="admin-nav-link" style="background:none;border:none;cursor:pointer;">🎨 Ícones</button>
     </nav>
 
     <!-- Vista: biblioteca -->
@@ -158,6 +159,38 @@
         </aside>
       </div>
     </section>
+
+    <!-- Vista: ícones do site -->
+    <section id="admin-icons-view" class="admin-studio" hidden>
+      <h2 class="admin-section-title" style="margin-bottom:1.5rem;">🎨 Ícones do Site</h2>
+      <p class="result-muted" style="margin-bottom:1.5rem;">Carregue uma imagem PNG/JPG/WebP (mínimo 512×512 px recomendado). O sistema gera automaticamente todos os tamanhos e atualiza a versão do cache.</p>
+
+      <div style="display:flex;gap:2rem;flex-wrap:wrap;align-items:flex-start;margin-bottom:2rem;">
+        <div>
+          <p style="margin:0 0 .5rem;font-size:.85rem;color:var(--muted)">Ícone atual (192px)</p>
+          <img id="icons-current-192" src="" alt="Ícone atual 192px" width="96" height="96" style="border-radius:12px;border:1px solid var(--border);background:#111;">
+        </div>
+        <div>
+          <p style="margin:0 0 .5rem;font-size:.85rem;color:var(--muted)">Favicon atual</p>
+          <img id="icons-current-favicon" src="" alt="Favicon atual" width="48" height="48" style="border-radius:6px;border:1px solid var(--border);background:#111;">
+        </div>
+        <div id="icons-preview-wrap" hidden>
+          <p style="margin:0 0 .5rem;font-size:.85rem;color:var(--verde)">Pré-visualização (novo)</p>
+          <img id="icons-preview-img" src="" alt="Pré-visualização" width="96" height="96" style="border-radius:12px;border:2px solid var(--verde);background:#111;">
+        </div>
+      </div>
+
+      <div class="admin-form" style="max-width:480px;">
+        <label class="admin-field-full" style="margin-bottom:1rem;">
+          <span style="display:block;margin-bottom:.4rem;">Selecionar nova imagem</span>
+          <input type="file" id="icons-file-input" accept="image/png,image/jpeg,image/webp" style="width:100%;">
+        </label>
+        <div id="icons-status" class="result-muted" style="min-height:1.4rem;margin-bottom:1rem;"></div>
+        <button type="button" id="icons-publish-btn" class="botao" disabled>Publicar ícones</button>
+        <button type="button" id="icons-back-btn" class="botao botao-outline" style="margin-left:.75rem;">Voltar</button>
+      </div>
+    </section>
+
   </main>
   <div id="site-footer"></div>
   <script src="/js/app-version-check.js?v=208"></script>

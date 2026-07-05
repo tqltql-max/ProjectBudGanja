@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   initPostsPanel();
+  initIconsPanel();
 });
 
 async function uploadImage(file) {
@@ -622,4 +623,124 @@ function initPostsPanel() {
       if (post) openEditor(post);
     }
   };
+}
+
+function initIconsPanel() {
+  const showBtn   = document.getElementById('show-icons-btn');
+  const backBtn   = document.getElementById('icons-back-btn');
+  const listView  = document.getElementById('admin-list-view');
+  const editorView = document.getElementById('admin-editor-view');
+  const iconsView = document.getElementById('admin-icons-view');
+  const fileInput = document.getElementById('icons-file-input');
+  const publishBtn = document.getElementById('icons-publish-btn');
+  const statusEl  = document.getElementById('icons-status');
+  const current192 = document.getElementById('icons-current-192');
+  const currentFav = document.getElementById('icons-current-favicon');
+  const previewWrap = document.getElementById('icons-preview-wrap');
+  const previewImg  = document.getElementById('icons-preview-img');
+
+  if (!showBtn || !iconsView) return;
+
+  let pendingDataUrl = null;
+
+  async function loadCurrentIcons() {
+    try {
+      const res = await fetch('/api/admin/icons', { credentials: 'include' });
+      if (!res.ok) return;
+      const data = await res.json();
+      if (current192) current192.src = data.icons.icon192 + '&t=' + Date.now();
+      if (currentFav) currentFav.src = data.icons.favicon + '&t=' + Date.now();
+    } catch (e) { /* ignore */ }
+  }
+
+  function showIconsView() {
+    if (listView)   listView.hidden   = true;
+    if (editorView) editorView.hidden = true;
+    iconsView.hidden = false;
+    loadCurrentIcons();
+  }
+
+  function hideIconsView() {
+    iconsView.hidden = true;
+    if (listView) listView.hidden = false;
+    pendingDataUrl = null;
+    if (previewWrap) previewWrap.hidden = true;
+    if (publishBtn) publishBtn.disabled = true;
+    if (statusEl) statusEl.textContent = '';
+    if (fileInput) fileInput.value = '';
+  }
+
+  showBtn.addEventListener('click', showIconsView);
+  if (backBtn) backBtn.addEventListener('click', hideIconsView);
+
+  if (fileInput) {
+    fileInput.addEventListener('change', (e) => {
+      const f = e.target.files && e.target.files[0];
+      if (!f) return;
+
+      if (!f.type.match(/^image\/(png|jpeg|jpg|webp)$/i)) {
+        statusEl.textContent = 'Use PNG, JPG ou WebP.';
+        return;
+      }
+      if (f.size > 8 * 1024 * 1024) {
+        statusEl.textContent = 'Imagem muito grande (máx. 8 MB).';
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = () => {
+        pendingDataUrl = reader.result;
+        if (previewImg) previewImg.src = pendingDataUrl;
+        if (previewWrap) previewWrap.hidden = false;
+        if (publishBtn) publishBtn.disabled = false;
+        statusEl.textContent = 'Pronto para publicar.';
+        statusEl.style.color = 'var(--verde)';
+      };
+      reader.readAsDataURL(f);
+    });
+  }
+
+  if (publishBtn) {
+    publishBtn.addEventListener('click', async () => {
+      if (!pendingDataUrl) return;
+
+      publishBtn.disabled = true;
+      publishBtn.textContent = 'Gerando ícones…';
+      statusEl.style.color = '';
+      statusEl.textContent = 'A processar imagem e gerar todos os tamanhos…';
+
+      try {
+        const res = await fetch('/api/admin/update-icons', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'include',
+          body: JSON.stringify({ data: pendingDataUrl })
+        });
+        const json = await res.json();
+
+        if (!res.ok) {
+          statusEl.textContent = json.error || 'Erro ao publicar ícones.';
+          statusEl.style.color = 'var(--danger, red)';
+          publishBtn.disabled = false;
+          publishBtn.textContent = 'Publicar ícones';
+          return;
+        }
+
+        statusEl.textContent = '✓ Ícones publicados — versão v' + json.version + '. Recarregue a página para ver.';
+        statusEl.style.color = 'var(--verde)';
+        publishBtn.textContent = 'Publicar ícones';
+        pendingDataUrl = null;
+        if (fileInput) fileInput.value = '';
+
+        // Atualizar previews dos ícones atuais
+        setTimeout(() => loadCurrentIcons(), 500);
+
+      } catch (e) {
+        statusEl.textContent = 'Falha de rede. Tente novamente.';
+        statusEl.style.color = 'var(--danger, red)';
+        publishBtn.disabled = false;
+        publishBtn.textContent = 'Publicar ícones';
+      }
+    });
+  }
 }

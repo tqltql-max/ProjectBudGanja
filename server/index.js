@@ -329,7 +329,7 @@ const server = http.createServer((req, res) => {
       if (req.method === 'GET' || req.method === 'DELETE' || req.method === 'HEAD') {
         return sendApi('');
       }
-      return collectBody(req, url === '/api/upload' ? MAX_UPLOAD_BYTES : MAX_BODY_BYTES).then(sendApi).catch(() => {
+      return collectBody(req, (url === '/api/upload' || url === '/api/admin/update-icons') ? MAX_UPLOAD_BYTES : MAX_BODY_BYTES).then(sendApi).catch(() => {
         setSecurityHeaders(res, req);
         res.writeHead(413, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: 'body too large' }));
