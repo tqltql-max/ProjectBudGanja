@@ -19,7 +19,8 @@
     "start:quick:tunnel": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-dev.ps1 -Tunnel",
     "deploy:online": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-site.ps1",
 
-    "build": "node scripts/build.js",
+    "build": "npm run icons:sync && node scripts/build.js",
+    "icons:sync": "node scripts/sync-icons.cjs",
 
     "build:posts": "node scripts/regenerate-posts.js",
 

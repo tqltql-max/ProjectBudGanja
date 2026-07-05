@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Luxímetro do Inspetor BudGanja — meça a intensidade luminosa e estime PPFD usando a câmera do celular.">
-    <meta property="og:title" content="Luxímetro | Inspetor BudGanja">
-    <meta property="og:description" content="Meça lux e estime PPFD em tempo real com a câmera do celular.">
+    <meta name="description" content="LuxÃ­metro do Inspetor BudGanja â€” meÃ§a a intensidade luminosa e estime PPFD usando a cÃ¢mera do celular.">
+    <meta property="og:title" content="LuxÃ­metro | Inspetor BudGanja">
+    <meta property="og:description" content="MeÃ§a lux e estime PPFD em tempo real com a cÃ¢mera do celular.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/imagens/icon-512.png">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -18,7 +18,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
     <link rel="stylesheet" href="/css/style.css?v=207">
-    <title>Luxímetro | Inspetor BudGanja</title>
+    <title>LuxÃ­metro | Inspetor BudGanja</title>
 </head>
 <body data-page="luximetro">
     <div id="site-header"></div>
@@ -27,12 +27,12 @@
         <header class="calc-app-header luximetro-app-header">
             <a href="/calculadoras/" class="calc-app-back" aria-label="Voltar para Ferramentas">&larr;</a>
             <div class="calc-app-header-main">
-                <span class="calc-app-icon" aria-hidden="true">📷</span>
+                <span class="calc-app-icon" aria-hidden="true">ðŸ“·</span>
                 <div>
-                    <h1>Luxímetro</h1>
+                    <h1>LuxÃ­metro</h1>
                     <p class="luximetro-header-sub">
                         Medidor em tempo real
-                        <span id="sensor-type" class="sensor-badge sensor-camera">Câmera</span>
+                        <span id="sensor-type" class="sensor-badge sensor-camera">CÃ¢mera</span>
                     </p>
                 </div>
             </div>
@@ -41,7 +41,7 @@
 
         <details class="calc-app-about">
             <summary>Sobre</summary>
-            <p class="calc-app-about-text">Meça a intensidade luminosa em tempo real usando a câmera do celular. Estime PPFD e lux.</p>
+            <p class="calc-app-about-text">MeÃ§a a intensidade luminosa em tempo real usando a cÃ¢mera do celular. Estime PPFD e lux.</p>
         </details>
 
         <div class="calc-app-body">
@@ -55,16 +55,16 @@
                                 <div class="metering-circle"></div>
                             </div>
                             <div class="camera-off-msg hidden" id="camera-off">
-                                <span aria-hidden="true">📷</span>
-                                <p>Toque em &quot;Iniciar Câmera&quot; para começar</p>
+                                <span aria-hidden="true">ðŸ“·</span>
+                                <p>Toque em &quot;Iniciar CÃ¢mera&quot; para comeÃ§ar</p>
                             </div>
                         </div>
 
                         <div class="reading-panel">
                             <div class="ppfd-value" id="ppfd-display">--</div>
-                            <div class="ppfd-unit">μmol/m²/s (PPFD estimado)</div>
+                            <div class="ppfd-unit">Î¼mol/mÂ²/s (PPFD estimado)</div>
                             <div class="lux-value" id="lux-display">-- lux</div>
-                            <p class="lux-dli-estimate" id="dli-estimate">DLI estimado (18 h): — mol/m²/dia</p>
+                            <p class="lux-dli-estimate" id="dli-estimate">DLI estimado (18 h): â€” mol/mÂ²/dia</p>
                             <div id="status-container">
                                 <span class="status-badge" id="status-badge">Aguardando...</span>
                             </div>
@@ -84,16 +84,16 @@
                             </select>
 
                             <div class="camera-switch-row">
-                                <span class="camera-switch-label">Câmera</span>
+                                <span class="camera-switch-label">CÃ¢mera</span>
                                 <button type="button" class="botao btn-secondary camera-switch-btn" id="btn-camera-toggle" onclick="toggleCameraFacing()">Frontal</button>
                             </div>
 
                             <div class="btn-row">
-                                <button type="button" class="botao" id="btn-start" onclick="toggleCamera()">Iniciar Câmera</button>
+                                <button type="button" class="botao" id="btn-start" onclick="toggleCamera()">Iniciar CÃ¢mera</button>
                                 <button type="button" class="botao btn-secondary" id="btn-calibrate" onclick="openCalibration()" disabled>Calibrar</button>
                                 <button type="button" class="botao btn-secondary" id="btn-save" onclick="saveReading()" disabled>Salvar</button>
                             </div>
-                            <p class="calibration-info" id="cal-info">Sem calibração — valores aproximados</p>
+                            <p class="calibration-info" id="cal-info">Sem calibraÃ§Ã£o â€” valores aproximados</p>
 
                             <div class="extra-controls">
                                 <div class="mini-toggle">
@@ -124,9 +124,9 @@
                                 <div class="monitor-body">
                                     <label for="phase-preset" class="field-label">Fase de cultivo</label>
                                     <select id="phase-preset" class="select-dark" onchange="applyPhasePreset()">
-                                        <option value="clone">Clones / Mudas (100–200)</option>
-                                        <option value="veg" selected>Vegetativo (300–600)</option>
-                                        <option value="flora">Floração (600–1000)</option>
+                                        <option value="clone">Clones / Mudas (100â€“200)</option>
+                                        <option value="veg" selected>Vegetativo (300â€“600)</option>
+                                        <option value="flora">FloraÃ§Ã£o (600â€“1000)</option>
                                         <option value="custom">Personalizado</option>
                                     </select>
 
@@ -145,39 +145,39 @@
 
                                     <div class="range-inputs">
                                         <div class="input-group">
-                                            <label for="ppfd-min">PPFD mínimo</label>
+                                            <label for="ppfd-min">PPFD mÃ­nimo</label>
                                             <input type="number" id="ppfd-min" value="300" step="10" min="0" onchange="onRangeChange()">
                                         </div>
                                         <div class="input-group">
-                                            <label for="ppfd-max">PPFD máximo</label>
+                                            <label for="ppfd-max">PPFD mÃ¡ximo</label>
                                             <input type="number" id="ppfd-max" value="600" step="10" min="0" onchange="onRangeChange()">
                                         </div>
                                     </div>
 
                                     <div class="alert-toggles">
                                         <div class="toggle-wrap">
-                                            <span class="toggle-label"><span class="t-icon" aria-hidden="true">🔔</span> Notificação</span>
+                                            <span class="toggle-label"><span class="t-icon" aria-hidden="true">ðŸ””</span> NotificaÃ§Ã£o</span>
                                             <label class="toggle">
                                                 <input type="checkbox" id="alert-notif" checked onchange="onNotifToggle()">
                                                 <span class="toggle-slider"></span>
                                             </label>
                                         </div>
                                         <div class="toggle-wrap">
-                                            <span class="toggle-label"><span class="t-icon" aria-hidden="true">🔊</span> Som</span>
+                                            <span class="toggle-label"><span class="t-icon" aria-hidden="true">ðŸ”Š</span> Som</span>
                                             <label class="toggle">
                                                 <input type="checkbox" id="alert-sound" checked>
                                                 <span class="toggle-slider"></span>
                                             </label>
                                         </div>
                                         <div class="toggle-wrap">
-                                            <span class="toggle-label"><span class="t-icon" aria-hidden="true">📳</span> Vibração</span>
+                                            <span class="toggle-label"><span class="t-icon" aria-hidden="true">ðŸ“³</span> VibraÃ§Ã£o</span>
                                             <label class="toggle">
                                                 <input type="checkbox" id="alert-vibrate" checked>
                                                 <span class="toggle-slider"></span>
                                             </label>
                                         </div>
                                         <div class="toggle-wrap">
-                                            <span class="toggle-label"><span class="t-icon" aria-hidden="true">⚡</span> Flash visual</span>
+                                            <span class="toggle-label"><span class="t-icon" aria-hidden="true">âš¡</span> Flash visual</span>
                                             <label class="toggle">
                                                 <input type="checkbox" id="alert-visual" checked>
                                                 <span class="toggle-slider"></span>
@@ -199,22 +199,22 @@
 <div class="history-panel hidden" id="history-panel">
                 <h3>Leituras salvas</h3>
                 <ul class="history-list" id="history-list"></ul>
-                <button type="button" class="botao btn-secondary full-width-small" onclick="clearHistory()">Limpar histórico</button>
+                <button type="button" class="botao btn-secondary full-width-small" onclick="clearHistory()">Limpar histÃ³rico</button>
             </div>
 
             <div class="chart-panel">
-                <h3>Histórico de PPFD</h3>
+                <h3>HistÃ³rico de PPFD</h3>
                 <canvas id="history-chart" class="sparkline"></canvas>
                 <div class="chart-caption">
-                    <span>Últimos 60 pontos</span>
+                    <span>Ãšltimos 60 pontos</span>
                     <span id="chart-status">Aguardando leitura</span>
                 </div>
             </div>
 
 
                     <div class="disclaimer">
-                        <p><strong>Aviso:</strong> Este luxímetro usa a câmera do celular para estimar lux e PPFD. Os resultados são <strong>aproximados</strong> e não substituem um PAR meter profissional.</p>
-                        <p>Use <strong>Calibrar</strong> com uma referência conhecida para melhor precisão. Depois, calcule o DLI completo na <a href="/calculadoras/cultivo-lab.html?mode=dli">Super Calculadora (DLI)</a>.</p>
+                        <p><strong>Aviso:</strong> Este luxÃ­metro usa a cÃ¢mera do celular para estimar lux e PPFD. Os resultados sÃ£o <strong>aproximados</strong> e nÃ£o substituem um PAR meter profissional.</p>
+                        <p>Use <strong>Calibrar</strong> com uma referÃªncia conhecida para melhor precisÃ£o. Depois, calcule o DLI completo na <a href="/calculadoras/cultivo-lab.html?mode=dli">Super Calculadora (DLI)</a>.</p>
                     </div>
                 </section>
             </div>
@@ -223,15 +223,15 @@
 
     <div id="cal-modal" class="modal-backdrop hidden">
         <div class="modal-card">
-            <h3>Calibração</h3>
-            <p>Aponte a câmera para a fonte de luz e insira o valor real de PPFD ou Lux medido com outro instrumento.</p>
+            <h3>CalibraÃ§Ã£o</h3>
+            <p>Aponte a cÃ¢mera para a fonte de luz e insira o valor real de PPFD ou Lux medido com outro instrumento.</p>
 
-            <label class="field-label" for="cal-value">Valor de referência</label>
+            <label class="field-label" for="cal-value">Valor de referÃªncia</label>
             <input type="number" id="cal-value" step="1" placeholder="Ex: 600" class="select-dark">
 
             <label class="field-label" for="cal-unit">Unidade</label>
             <select id="cal-unit" class="select-dark">
-                <option value="ppfd">PPFD (μmol/m²/s)</option>
+                <option value="ppfd">PPFD (Î¼mol/mÂ²/s)</option>
                 <option value="lux">Lux</option>
             </select>
 
@@ -239,7 +239,7 @@
                 <button type="button" class="botao btn-inline" onclick="applyCalibration()">Aplicar</button>
                 <button type="button" class="botao btn-secondary btn-inline" onclick="closeCalibration()">Cancelar</button>
             </div>
-            <button type="button" class="botao btn-secondary full-width-small" onclick="resetCalibration()">Resetar calibração</button>
+            <button type="button" class="botao btn-secondary full-width-small" onclick="resetCalibration()">Resetar calibraÃ§Ã£o</button>
         </div>
     </div>
 

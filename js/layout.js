@@ -1097,7 +1097,7 @@ function buildHeaderHTML(site, authState) {
     '<div class="logo">' +
     '<a href="/" class="logo-link">' +
     '<span class="logo-mark" aria-hidden="true">' +
-    '<img class="logo-mark-img" src="/imagens/app-icon.svg?v=' + ASSET_V + '" alt="" width="42" height="42" decoding="async">' +
+    '<img class="logo-mark-img" src="/favicon.svg?v=' + ASSET_V + '" alt="" width="42" height="42" decoding="async">' +
     '</span>' +
     '<span class="logo-copy">' +
     '<span class="logo-name">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
@@ -1298,7 +1298,7 @@ function buildFooterHTML(site) {
   const brandHtml =
     '<div class="footer-brand">' +
     '<a href="/" class="footer-brand-link">' +
-    '<img class="footer-brand-icon" src="/imagens/app-icon.svg?v=' + ASSET_V + '" alt="" width="32" height="32" loading="lazy" decoding="async">' +
+    '<img class="footer-brand-icon" src="/favicon.svg?v=' + ASSET_V + '" alt="" width="32" height="32" loading="lazy" decoding="async">' +
     '<span class="footer-brand-name">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
     '</a>' +
     '<p class="footer-brand-tagline">' + escapeNavText(i18n('footer.tagline', config.siteTagline || DEFAULT_SITE.siteTagline || '')) + '</p>' +
