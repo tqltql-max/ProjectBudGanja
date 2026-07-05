@@ -4,7 +4,9 @@ const fs = require('fs');
 const path = require('path');
 const { ROOT } = require('../lib/paths.js');
 
-const SOURCE = path.join(ROOT, 'imagens', 'app-icon.svg');
+const SOURCE_PNG = path.join(ROOT, 'imagens', 'iconsite.png');
+const SOURCE_SVG = path.join(ROOT, 'imagens', 'app-icon.svg');
+const SOURCE = fs.existsSync(SOURCE_PNG) ? SOURCE_PNG : SOURCE_SVG;
 const OUT_DIR = path.join(ROOT, 'imagens');
 const FAVICON_SVG = path.join(ROOT, 'favicon.svg');
 
@@ -40,7 +42,8 @@ async function prepareLogo(sharp, maxSize) {
     .raw()
     .toBuffer({ resolveWithObject: true });
 
-  const cleaned = stripNearWhite(data, info);
+  // só remove pixels quase-brancos quando a fonte é SVG (PNGs já têm transparência)
+  const cleaned = SOURCE === SOURCE_SVG ? stripNearWhite(data, info) : { pixels: data, info };
   return sharp(cleaned.pixels, {
     raw: { width: cleaned.info.width, height: cleaned.info.height, channels: 4 }
   }).png().toBuffer();
@@ -85,8 +88,9 @@ function buildFaviconSvg(pngBase64) {
 
 async function main() {
   if (!fs.existsSync(SOURCE)) {
-    throw new Error('Ficheiro em falta: imagens/app-icon.svg');
+    throw new Error('Ficheiro em falta: imagens/iconsite.png ou imagens/app-icon.svg');
   }
+  console.log(`Fonte de ícones: ${path.basename(SOURCE)}`);
 
   const sharp = await loadSharp();
   fs.mkdirSync(OUT_DIR, { recursive: true });
@@ -108,7 +112,7 @@ async function main() {
   fs.writeFileSync(path.join(OUT_DIR, 'iconsite-processed.png'), await prepareLogo(sharp, 512));
   fs.writeFileSync(FAVICON_SVG, buildFaviconSvg(fav64.toString('base64')));
 
-  console.log('Ícones gerados a partir de imagens/app-icon.svg');
+  console.log(`Ícones gerados a partir de imagens/${path.basename(SOURCE)}`);
   console.log('  → imagens/icon-192.png, icon-512.png, apple-touch-icon.png, favicon-*.png');
   console.log('  → favicon.svg (com brilho verde)');
 }
