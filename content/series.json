@@ -1,0 +1,5 @@
+[
+  { "id": "guia-cultivo-basico", "label": "Guia de Cultivo Básico", "category": "inspecao", "sortOrder": 1 },
+  { "id": "canal-jardimhg", "label": "Canal Jardim HG", "category": "inspecao", "sortOrder": 2 },
+  { "id": "verificacao-equipamento", "label": "Verificação de Equipamentos", "category": "inspecao", "sortOrder": 3 }
+]

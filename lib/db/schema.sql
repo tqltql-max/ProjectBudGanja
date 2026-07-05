@@ -391,3 +391,15 @@ CREATE TABLE IF NOT EXISTS cultivo_submissions (
 CREATE INDEX IF NOT EXISTS idx_cultivo_submissions_status ON cultivo_submissions(status);
 CREATE INDEX IF NOT EXISTS idx_cultivo_submissions_user ON cultivo_submissions(user_id);
 CREATE INDEX IF NOT EXISTS idx_cultivo_submissions_grow ON cultivo_submissions(grow_id);
+
+-- Séries de publicações (ex: séries de inspeções)
+
+CREATE TABLE IF NOT EXISTS post_series (
+  id TEXT PRIMARY KEY,
+  label TEXT NOT NULL DEFAULT '',
+  category TEXT NOT NULL DEFAULT 'inspecao',
+  sort_order INTEGER NOT NULL DEFAULT 0,
+  created_at TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_post_series_category ON post_series(category);

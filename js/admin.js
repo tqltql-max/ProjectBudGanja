@@ -264,8 +264,13 @@ function initPostsPanel() {
     excerptEl.value = post.excerpt || '';
     coverEl.value = post.coverImage || '';
     categoryEl.value = post.category || 'pesquisa';
-    if (serieEl) serieEl.value = post.series || '';
-    if (serieField) serieField.hidden = categoryEl.value !== 'inspecao';
+    const isinspecao = categoryEl.value === 'inspecao';
+    if (serieField) serieField.hidden = !isinspecao;
+    if (isinspecao) {
+      loadSeriesOptions(categoryEl.value).then(function() {
+        if (serieEl) serieEl.value = post.series || '';
+      });
+    }
     contentEl.value = post.content_raw || '';
     publishedEl.checked = post.published !== false;
     setEditMode(post.slug);
@@ -465,9 +470,29 @@ function initPostsPanel() {
 
   contentEl.addEventListener('input', schedulePreview);
   categoryEl.addEventListener('change', function() {
-    if (serieField) serieField.hidden = categoryEl.value !== 'inspecao';
+    const cat = categoryEl.value;
+    if (serieField) serieField.hidden = cat !== 'inspecao';
+    if (cat === 'inspecao') loadSeriesOptions(cat);
     schedulePreview();
   });
+
+  async function loadSeriesOptions(category) {
+    if (!serieEl) return;
+    const current = serieEl.value;
+    try {
+      const res = await fetch('/api/series?category=' + encodeURIComponent(category), { credentials: 'include' });
+      if (!res.ok) return;
+      const list = await res.json();
+      serieEl.innerHTML = '<option value="">-- sem série --</option>';
+      list.forEach(function(s) {
+        const opt = document.createElement('option');
+        opt.value = s.id;
+        opt.textContent = s.label;
+        serieEl.appendChild(opt);
+      });
+      serieEl.value = current;
+    } catch (e) { /* manter opções existentes */ }
+  }
 
   if (backToListBtn) backToListBtn.addEventListener('click', closeEditor);
   if (newPostBtn) newPostBtn.addEventListener('click', () => openEditor(null));
