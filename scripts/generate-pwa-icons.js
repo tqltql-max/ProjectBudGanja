@@ -119,8 +119,10 @@ async function main() {
   fs.writeFileSync(path.join(OUT_DIR, 'apple-touch-icon.png'), appleTouch);
   fs.writeFileSync(path.join(OUT_DIR, 'favicon-32.png'), fav32);
   fs.writeFileSync(path.join(OUT_DIR, 'favicon-16.png'), fav16);
-  fs.writeFileSync(path.join(OUT_DIR, 'iconsite-processed.png'), await prepareLogo(sharp, 512));
   fs.writeFileSync(FAVICON_SVG, buildFaviconSvg(fav64.toString('base64')));
+
+  // favicon.ico na raiz (Google e browsers antigos preferem este formato)
+  fs.writeFileSync(path.join(ROOT, 'favicon.ico'), fav32);
 
   console.log(`Ícones gerados a partir de imagens/${path.basename(SOURCE)}`);
   console.log('  → imagens/icon-192.png, icon-512.png, apple-touch-icon.png, favicon-*.png');

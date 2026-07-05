@@ -8,6 +8,7 @@ const { ASSET_VERSION } = require('../lib/asset-version.js');
 const V = `?v=${ASSET_VERSION}`;
 
 const ICON_BLOCK = `    <link rel="icon" href="/favicon.svg${V}" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="32x32" type="image/x-icon">
     <link rel="icon" href="/imagens/favicon-32.png${V}" sizes="32x32" type="image/png">
     <link rel="icon" href="/imagens/favicon-16.png${V}" sizes="16x16" type="image/png">
     <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png${V}">

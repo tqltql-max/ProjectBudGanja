@@ -144,7 +144,8 @@ for (const file of listHtmlFiles(ROOT)) {
   const next = html
     .replace(/(href="\/favicon\.svg)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
     .replace(/(href="\/imagens\/favicon-\d+\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
-    .replace(/(href="\/imagens\/apple-touch-icon\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`);
+    .replace(/(href="\/imagens\/apple-touch-icon\.png)(?:\?v=[^"]*)?(")/, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(content="\/imagens\/icon-512\.png)(?:\?v=[^"]*)?(")/, `$1?v=${ASSET_VERSION}$2`);
   if (next !== html) {
     fs.writeFileSync(file, next);
   }
