@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Minha conta â€” dados de acesso e perfil no Inspetor BudGanja.">
+    <meta name="description" content="Minha conta — dados de acesso e perfil no Inspetor BudGanja.">
     <meta property="og:title" content="Minha conta | Inspetor BudGanja">
-    <meta property="og:description" content="Gerir nome, idade e foto de perfil. O diÃ¡rio de pesquisas fica no mÃ³dulo dedicado.">
+    <meta property="og:description" content="Gerir nome, idade e foto de perfil. O diário de pesquisas fica no módulo dedicado.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/imagens/icon-512.png">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -25,18 +25,18 @@
     <div id="site-header"></div>
 
     <main id="main-content" class="conteudo-interno perfil-page">
-    <div id="perfil-loading" class="conta-status">A carregar a sua contaâ€¦</div>
+    <div id="perfil-loading" class="conta-status">A carregar a sua conta…</div>
 
     <div id="perfil-app" hidden>
       <header class="perfil-hub-header">
         <div class="perfil-hub-identity">
           <button type="button" class="perfil-avatar-edit-btn" id="perfil-avatar-edit-btn" title="Alterar foto do perfil" aria-label="Alterar foto do perfil">
             <img id="perfil-avatar" class="conta-avatar perfil-hub-avatar" src="/imagens/avatars/leaf.svg" alt="" width="64" height="64">
-            <span class="perfil-avatar-edit-badge" aria-hidden="true">âœŽ</span>
+            <span class="perfil-avatar-edit-badge" aria-hidden="true">✎</span>
           </button>
           <div>
             <p class="perfil-hub-eyebrow">Minha conta</p>
-            <h1 id="perfil-name">OlÃ¡!</h1>
+            <h1 id="perfil-name">Olá!</h1>
             <p id="perfil-email" class="conta-email"></p>
           </div>
         </div>
@@ -49,19 +49,19 @@
       <section id="perfil-onboarding" class="perfil-onboarding info-panel highlight-card" aria-labelledby="perfil-form-title">
         <h2 id="perfil-form-title">Completar cadastro</h2>
         <p id="perfil-onboarding-intro" class="page-intro">
-          Informe seu nome e idade para aceder ao site. ConteÃºdo exclusivo para <strong>maiores de 18 anos</strong>.
+          Informe seu nome e idade para aceder ao site. Conteúdo exclusivo para <strong>maiores de 18 anos</strong>.
         </p>
         <form id="perfil-form" class="login-form">
           <fieldset class="perfil-avatar-field">
             <legend class="perfil-avatar-legend">Foto do perfil</legend>
             <div class="perfil-avatar-picker">
               <div class="perfil-avatar-preview-wrap">
-                <img id="profile-avatar-preview" class="perfil-avatar-preview conta-avatar" src="/imagens/avatars/leaf.svg" alt="PrÃ©-visualizaÃ§Ã£o do avatar" width="96" height="96">
+                <img id="profile-avatar-preview" class="perfil-avatar-preview conta-avatar" src="/imagens/avatars/leaf.svg" alt="Pré-visualização do avatar" width="96" height="96">
               </div>
               <p id="profile-avatar-status" class="perfil-avatar-status">Escolha um avatar ou envie a sua foto.</p>
-              <p class="perfil-avatar-hint">Toque num avatar â€” guarda na hora e actualiza o site.</p>
-              <p class="perfil-avatar-section-label">Avatares do laboratÃ³rio</p>
-              <div id="profile-avatar-presets" class="perfil-avatar-presets" role="listbox" aria-label="Avatares disponÃ­veis"></div>
+              <p class="perfil-avatar-hint">Toque num avatar — guarda na hora e actualiza o site.</p>
+              <p class="perfil-avatar-section-label">Avatares do laboratório</p>
+              <div id="profile-avatar-presets" class="perfil-avatar-presets" role="listbox" aria-label="Avatares disponíveis"></div>
               <div class="perfil-avatar-actions">
                 <label class="perfil-avatar-upload botao botao-outline" for="profile-avatar-file">
                   <span id="profile-avatar-upload-label">Enviar foto</span>
@@ -78,7 +78,7 @@
           <label class="login-field conta-field" for="profile-age">Idade
             <input type="number" id="profile-age" name="age" min="18" max="120" required inputmode="numeric" placeholder="18 ou mais">
           </label>
-          <p class="perfil-age-notice">Menores de 18 anos nÃ£o podem utilizar este site.</p>
+          <p class="perfil-age-notice">Menores de 18 anos não podem utilizar este site.</p>
           <div class="conta-actions">
             <button type="submit" class="botao" id="perfil-save-btn">Guardar e continuar</button>
             <button type="button" class="botao botao-outline" id="perfil-cancel-edit-btn" hidden>Voltar</button>
@@ -89,10 +89,10 @@
 
       <section id="perfil-account" class="perfil-account info-panel highlight-card" hidden aria-labelledby="perfil-account-title">
         <h2 id="perfil-account-title">Conta activa</h2>
-        <p class="page-intro">Gerencie o seu laboratÃ³rio pessoal: documente pesquisas de cultivo e planeie a infraestrutura antes de comprar equipamentos.</p>
+        <p class="page-intro">Gerencie o seu laboratório pessoal: documente pesquisas de cultivo e planeie a infraestrutura antes de comprar equipamentos.</p>
         <div class="conta-actions perfil-account-actions perfil-lab-links">
-          <a href="/cultivo/" class="botao">ðŸ““ DiÃ¡rio de Pesquisas</a>
-          <a href="/planejamento/" class="botao botao-outline">ðŸ› ï¸ Planejamento de infraestrutura</a>
+          <a href="/cultivo/" class="botao">📓 Diário de Pesquisas</a>
+          <a href="/planejamento/" class="botao botao-outline">🛠️ Planejamento de infraestrutura</a>
           <button type="button" class="botao botao-outline" id="perfil-account-edit-btn">Editar dados</button>
         </div>
       </section>

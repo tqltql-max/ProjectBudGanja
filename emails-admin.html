@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <link rel="icon" href="/imagens/favicon-32.png?v=208" sizes="32x32" type="image/png">
     <link rel="icon" href="/imagens/favicon-16.png?v=208" sizes="16x16" type="image/png">
     <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=208">
-    <link rel="manifest" href="/manifest.json?v=208">
+    <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#3d5c28">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -27,9 +27,9 @@
     <main class="conteudo-interno admin-panel">
     <header class="admin-hub-header">
       <div class="admin-hub-intro">
-        <p class="admin-hub-eyebrow">Ãrea administrativa</p>
+        <p class="admin-hub-eyebrow">Área administrativa</p>
         <h1>E-mail transacional</h1>
-        <p class="admin-hub-sub">Fila de envios automÃ¡ticos: boas-vindas, encomendas, sorteios e pagamentos. Configure SMTP no <code>.env</code>.</p>
+        <p class="admin-hub-sub">Fila de envios automáticos: boas-vindas, encomendas, sorteios e pagamentos. Configure SMTP no <code>.env</code>.</p>
       </div>
       <div class="admin-hub-actions">
         <button id="email-process-btn" type="button" class="botao botao-sm">Processar fila</button>
@@ -38,9 +38,9 @@
       </div>
     </header>
 
-    <nav class="admin-nav" aria-label="SecÃ§Ãµes do admin">
-      <a href="/admin.html" class="admin-nav-link">PublicaÃ§Ãµes</a>
-      <a href="/pesquisas-admin.html" class="admin-nav-link">SubmissÃµes</a>
+    <nav class="admin-nav" aria-label="Secções do admin">
+      <a href="/admin.html" class="admin-nav-link">Publicações</a>
+      <a href="/pesquisas-admin.html" class="admin-nav-link">Submissões</a>
       <a href="/usuarios-admin.html" class="admin-nav-link">Utilizadores</a>
       <a href="/sorteios-admin.html" class="admin-nav-link">Sorteios</a>
       <a href="/loja-admin.html" class="admin-nav-link">Encomendas</a>
@@ -52,8 +52,8 @@
     <div id="email-stats" class="admin-stats-grid" aria-label="Resumo da fila"></div>
 
     <section class="highlight-card loja-admin-panel">
-      <h2 class="admin-section-title">Modelos disponÃ­veis</h2>
-      <p id="email-templates" class="field-hint">A carregarâ€¦</p>
+      <h2 class="admin-section-title">Modelos disponíveis</h2>
+      <p id="email-templates" class="field-hint">A carregar…</p>
       <p class="field-hint">Boas-vindas: enviado automaticamente no primeiro login Google. Encomendas e sorteios: enfileirados ao ocorrer o evento.</p>
     </section>
 
@@ -61,7 +61,7 @@
       <div class="sorteios-admin-toolbar">
         <div>
           <h2 class="admin-section-title" style="margin:0">Fila recente</h2>
-          <p id="email-queue-count" class="sorteios-admin-count">A carregarâ€¦</p>
+          <p id="email-queue-count" class="sorteios-admin-count">A carregar…</p>
         </div>
       </div>
       <div class="sorteios-admin-table-wrap">
@@ -70,13 +70,13 @@
             <tr>
               <th>Data</th>
               <th>Modelo</th>
-              <th>DestinatÃ¡rio</th>
+              <th>Destinatário</th>
               <th>Assunto</th>
               <th>Estado</th>
             </tr>
           </thead>
           <tbody id="email-queue-body">
-            <tr><td colspan="5">A carregarâ€¦</td></tr>
+            <tr><td colspan="5">A carregar…</td></tr>
           </tbody>
         </table>
       </div>

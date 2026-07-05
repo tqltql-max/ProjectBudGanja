@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta property="og:title" content="SubmissÃµes de pesquisas | Admin Inspetor BudGanja">
+    <meta property="og:title" content="Submissões de pesquisas | Admin Inspetor BudGanja">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/imagens/icon-512.png">
@@ -19,7 +19,7 @@
     <meta name="apple-mobile-web-app-title" content="BudGanja">
     <link rel="stylesheet" href="/css/style.css?v=207">
     <meta name="robots" content="noindex,nofollow">
-    <title>SubmissÃµes de pesquisas | Admin Inspetor BudGanja</title>
+    <title>Submissões de pesquisas | Admin Inspetor BudGanja</title>
 </head>
 <body data-page="pesquisas-admin">
     <div id="site-header"></div>
@@ -27,33 +27,33 @@
     <main class="conteudo-interno admin-panel">
     <header class="admin-hub-header">
       <div class="admin-hub-intro">
-        <p class="admin-hub-eyebrow">Ãrea administrativa</p>
-        <h1>SubmissÃµes de pesquisas</h1>
-        <p class="admin-hub-sub">DiÃ¡rios enviados pelos utilizadores para revisÃ£o e publicaÃ§Ã£o em <a href="/biblioteca/pesquisas/" target="_blank" rel="noopener">Pesquisas</a>.</p>
+        <p class="admin-hub-eyebrow">Área administrativa</p>
+        <h1>Submissões de pesquisas</h1>
+        <p class="admin-hub-sub">Diários enviados pelos utilizadores para revisão e publicação em <a href="/biblioteca/pesquisas/" target="_blank" rel="noopener">Pesquisas</a>.</p>
       </div>
       <div class="admin-hub-actions">
-        <a href="/cultivo/" class="botao botao-outline botao-sm" target="_blank" rel="noopener">DiÃ¡rio de Pesquisas</a>
+        <a href="/cultivo/" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Diário de Pesquisas</a>
         <a href="/" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Site</a>
         <button id="logout-btn" type="button" class="botao botao-outline botao-sm">Sair</button>
       </div>
     </header>
 
-    <nav class="admin-nav" aria-label="SecÃ§Ãµes do admin">
-      <a href="/admin.html" class="admin-nav-link">PublicaÃ§Ãµes</a>
-      <a href="/pesquisas-admin.html" class="admin-nav-link is-active" aria-current="page">SubmissÃµes</a>
+    <nav class="admin-nav" aria-label="Secções do admin">
+      <a href="/admin.html" class="admin-nav-link">Publicações</a>
+      <a href="/pesquisas-admin.html" class="admin-nav-link is-active" aria-current="page">Submissões</a>
       <a href="/usuarios-admin.html" class="admin-nav-link">Utilizadores</a>
       <a href="/sorteios-admin.html" class="admin-nav-link">Sorteios</a>
       <a href="/loja-admin.html" class="admin-nav-link">Encomendas</a>
     </nav>
 
-    <div id="submissions-stats" class="admin-stats-grid" aria-label="Resumo de submissÃµes"></div>
+    <div id="submissions-stats" class="admin-stats-grid" aria-label="Resumo de submissões"></div>
 
     <section class="highlight-card loja-admin-panel" id="submissions-list-panel">
       <div class="sorteios-admin-toolbar">
         <div>
-          <h2 class="admin-section-title" style="margin:0">Fila de revisÃ£o</h2>
+          <h2 class="admin-section-title" style="margin:0">Fila de revisão</h2>
           <p class="field-hint">Aprove para criar um post em <strong>Pesquisas</strong> ou rejeite com nota ao autor.</p>
-          <p id="submissions-count" class="sorteios-admin-count">A carregarâ€¦</p>
+          <p id="submissions-count" class="sorteios-admin-count">A carregar…</p>
         </div>
         <label class="admin-field-row">
           Estado
@@ -70,7 +70,7 @@
           <thead>
             <tr>
               <th>Data</th>
-              <th>TÃ­tulo</th>
+              <th>Título</th>
               <th>Autor</th>
               <th>Pesquisa</th>
               <th>Estado</th>
@@ -78,7 +78,7 @@
             </tr>
           </thead>
           <tbody id="submissions-table-body">
-            <tr><td colspan="6">A carregarâ€¦</td></tr>
+            <tr><td colspan="6">A carregar…</td></tr>
           </tbody>
         </table>
       </div>
@@ -86,18 +86,18 @@
 
     <section class="highlight-card admin-studio-editor" id="submission-detail-panel" hidden>
       <div class="admin-editor-top">
-        <button type="button" id="submission-back-btn" class="voltar-link admin-studio-back">&larr; Voltar Ã  lista</button>
+        <button type="button" id="submission-back-btn" class="voltar-link admin-studio-back">&larr; Voltar à lista</button>
         <span id="submission-status-badge" class="admin-editor-badge">Pendente</span>
       </div>
       <p id="submission-meta" class="field-hint"></p>
       <form id="submission-review-form" class="admin-form">
-        <label class="admin-field-full">TÃ­tulo da publicaÃ§Ã£o
+        <label class="admin-field-full">Título da publicação
           <input type="text" id="submission-title" required>
         </label>
         <label class="admin-field-full">Resumo (card da listagem)
           <input type="text" id="submission-excerpt" maxlength="280">
         </label>
-        <label class="admin-field-full">ConteÃºdo (Markdown)
+        <label class="admin-field-full">Conteúdo (Markdown)
           <textarea id="submission-content" rows="18" required></textarea>
         </label>
         <label class="admin-checkbox">
