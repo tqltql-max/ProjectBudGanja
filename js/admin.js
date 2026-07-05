@@ -156,6 +156,8 @@ function initPostsPanel() {
   const excerptEl = document.getElementById('excerpt');
   const coverEl = document.getElementById('cover-image');
   const categoryEl = document.getElementById('category');
+  const tipoEl = document.getElementById('tipo');
+  const tipoField = document.getElementById('tipo-field');
   const contentEl = document.getElementById('content');
   const publishedEl = document.getElementById('published');
   const imageInput = document.getElementById('image-input');
@@ -262,6 +264,8 @@ function initPostsPanel() {
     excerptEl.value = post.excerpt || '';
     coverEl.value = post.coverImage || '';
     categoryEl.value = post.category || 'pesquisa';
+    if (tipoEl) tipoEl.value = post.tipo || '';
+    if (tipoField) tipoField.hidden = categoryEl.value !== 'inspecao';
     contentEl.value = post.content_raw || '';
     publishedEl.checked = post.published !== false;
     setEditMode(post.slug);
@@ -460,7 +464,10 @@ function initPostsPanel() {
   }
 
   contentEl.addEventListener('input', schedulePreview);
-  categoryEl.addEventListener('change', schedulePreview);
+  categoryEl.addEventListener('change', function() {
+    if (tipoField) tipoField.hidden = categoryEl.value !== 'inspecao';
+    schedulePreview();
+  });
 
   if (backToListBtn) backToListBtn.addEventListener('click', closeEditor);
   if (newPostBtn) newPostBtn.addEventListener('click', () => openEditor(null));
@@ -553,6 +560,9 @@ function initPostsPanel() {
       format: 'markdown',
       published: publishedEl.checked
     };
+    if (category === 'inspecao' && tipoEl && tipoEl.value) {
+      payload.tipo = tipoEl.value;
+    }
 
     const isEdit = !!editingSlug;
     const endpoint = isEdit ? '/api/posts/' + editingSlug : '/api/posts';
