@@ -128,11 +128,11 @@
             <form id="cultivo-wizard-form" class="cultivo-wizard-form">
 
               <label class="login-field conta-field" for="cultivo-wizard-name">Nome da pesquisa
-                <input type="text" id="cultivo-wizard-name" maxlength="80" required placeholder="Ex.: Tomate hidropónico, Lavanda indoor…" autocomplete="off">
+                <input type="text" id="cultivo-wizard-name" maxlength="80" required placeholder="Ex.: Tomate, Lavanda" autocomplete="off">
               </label>
 
               <label class="login-field conta-field" for="cultivo-wizard-species">Espécie ou linha <span class="perfil-field-optional">(opcional)</span>
-                <input type="text" id="cultivo-wizard-species" maxlength="120" placeholder="Ex.: Solanum lycopersicum, Lavandula angustifolia…" autocomplete="off">
+                <input type="text" id="cultivo-wizard-species" maxlength="120" placeholder="Ex.: Solanum lycopersicum" autocomplete="off">
               </label>
 
               <label class="login-field conta-field" for="cultivo-wizard-date">Data de início
@@ -313,7 +313,7 @@
 
                 <div class="perfil-entry-types" role="group" aria-label="Tipo de registo" id="perfil-grow-entry-types">
 
-                  <button type="button" class="perfil-entry-type is-active" data-action="rega" aria-pressed="true">💧 Rega</button>
+                  <button type="button" class="perfil-entry-type" data-action="rega" aria-pressed="false">💧 Rega</button>
 
                   <button type="button" class="perfil-entry-type" data-action="adubo" aria-pressed="false">🧪 Adubo</button>
 
@@ -327,25 +327,25 @@
 
                   <label class="perfil-entry-metric" for="perfil-grow-entry-ph">pH
 
-                    <input type="number" id="perfil-grow-entry-ph" step="0.1" min="0" max="14" inputmode="decimal" placeholder="—">
+                    <input type="text" id="perfil-grow-entry-ph" inputmode="decimal" placeholder="Toque para definir" readonly>
 
                   </label>
 
                   <label class="perfil-entry-metric" for="perfil-grow-entry-ec">EC
 
-                    <input type="number" id="perfil-grow-entry-ec" step="0.1" min="0" max="10" inputmode="decimal" placeholder="—">
+                    <input type="text" id="perfil-grow-entry-ec" inputmode="decimal" placeholder="Toque para definir" readonly>
 
                   </label>
 
                   <label class="perfil-entry-metric" for="perfil-grow-entry-temp">°C
 
-                    <input type="number" id="perfil-grow-entry-temp" step="1" min="-10" max="60" inputmode="numeric" placeholder="—">
+                    <input type="text" id="perfil-grow-entry-temp" inputmode="numeric" placeholder="Toque para definir" readonly>
 
                   </label>
 
                   <label class="perfil-entry-metric" for="perfil-grow-entry-rh">RH %
 
-                    <input type="number" id="perfil-grow-entry-rh" step="1" min="0" max="100" inputmode="numeric" placeholder="—">
+                    <input type="text" id="perfil-grow-entry-rh" inputmode="numeric" placeholder="Toque para definir" readonly>
 
                   </label>
 
@@ -462,6 +462,7 @@
             <section id="cultivo-section-plano" class="cultivo-section perfil-hub-card info-panel highlight-card" aria-labelledby="cultivo-plano-title">
 
               <h2 id="cultivo-plano-title" class="cultivo-section-title">Plano</h2>
+              <p class="perfil-plan-intro">Planeamento operacional com prioridades, prazos e execução diária.</p>
 
               <form id="perfil-reminder-add" class="perfil-reminder-form">
 
@@ -498,6 +499,8 @@
                 <button type="submit" class="botao botao-outline">Agendar</button>
 
               </form>
+
+              <div id="perfil-plano-metrics" class="perfil-plano-metrics" aria-live="polite"></div>
 
               <div id="perfil-plan-preview" class="perfil-plan-preview highlight-card" hidden aria-live="polite"></div>
 
@@ -574,6 +577,38 @@
       <div class="conta-actions">
         <button type="button" class="botao botao-outline" data-modal-close="rename">Cancelar</button>
         <button type="button" class="botao" id="cultivo-rename-confirm">Guardar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="cultivo-metric-modal" class="cultivo-modal" hidden role="dialog" aria-modal="true" aria-labelledby="cultivo-metric-modal-title">
+    <div class="cultivo-modal-backdrop" data-modal-close="metric"></div>
+    <div class="cultivo-modal-card highlight-card cultivo-metric-modal-card">
+      <h2 id="cultivo-metric-modal-title">Selecionar métrica</h2>
+      <p id="cultivo-metric-modal-hint" class="field-hint">Escolha uma faixa ideal para preencher rapidamente.</p>
+      <div id="cultivo-metric-modal-ideal" class="cultivo-metric-modal-ideal" aria-live="polite"></div>
+      <div class="cultivo-metric-slider-wrap">
+        <div class="cultivo-metric-slider-head">
+          <strong id="cultivo-metric-slider-value">--</strong>
+          <span id="cultivo-metric-slider-ideal-note">Arraste para ajustar com precisão.</span>
+        </div>
+        <div class="cultivo-metric-slider-track" id="cultivo-metric-slider-track">
+          <input type="range" id="cultivo-metric-slider" min="0" max="100" step="1" value="0" aria-label="Selecionar valor da métrica">
+        </div>
+        <div class="cultivo-metric-slider-scale">
+          <span id="cultivo-metric-slider-min">0</span>
+          <span id="cultivo-metric-slider-max">100</span>
+        </div>
+        <div class="cultivo-metric-slider-nudge" role="group" aria-label="Ajuste fino">
+          <button type="button" class="botao botao-outline" id="cultivo-metric-nudge-down">-</button>
+          <button type="button" class="botao botao-outline" id="cultivo-metric-nudge-up">+</button>
+        </div>
+      </div>
+      <p id="cultivo-metric-modal-status" class="conta-status" role="status"></p>
+      <div class="conta-actions">
+        <button type="button" class="botao botao-outline" id="cultivo-metric-clear">Limpar</button>
+        <button type="button" class="botao" id="cultivo-metric-apply">Aplicar</button>
+        <button type="button" class="botao botao-outline" data-modal-close="metric">Fechar</button>
       </div>
     </div>
   </div>

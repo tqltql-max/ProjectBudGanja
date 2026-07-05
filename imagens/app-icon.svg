@@ -1,28 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Inspetor BudGanja">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Inspetor BudGanja icon">
   <defs>
-    <linearGradient id="bg" x1="20" y1="12" x2="108" y2="116" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#356b42"/>
-      <stop offset="45%" stop-color="#1a3324"/>
-      <stop offset="100%" stop-color="#0a140d"/>
+    <linearGradient id="bg" x1="16" y1="10" x2="112" y2="118" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f7f2e3"/>
+      <stop offset="100%" stop-color="#e9ddbf"/>
     </linearGradient>
-    <linearGradient id="leaf" x1="44" y1="88" x2="84" y2="28" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#1e8449"/>
-      <stop offset="55%" stop-color="#27ae60"/>
-      <stop offset="100%" stop-color="#58d68d"/>
+    <linearGradient id="frame" x1="20" y1="16" x2="108" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2d5a43"/>
+      <stop offset="100%" stop-color="#183528"/>
     </linearGradient>
-    <radialGradient id="lens" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#142218" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#050a07" stop-opacity="0.55"/>
-    </radialGradient>
+    <linearGradient id="hatTop" x1="38" y1="32" x2="90" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#315f48"/>
+      <stop offset="100%" stop-color="#1b392b"/>
+    </linearGradient>
+    <linearGradient id="hatBand" x1="36" y1="66" x2="92" y2="66" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#c2a86d"/>
+      <stop offset="100%" stop-color="#a78c52"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="38" y1="74" x2="90" y2="106" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2a5540" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#10231a" stop-opacity="0.55"/>
+    </linearGradient>
   </defs>
+
   <rect width="128" height="128" rx="28" fill="url(#bg)"/>
-  <rect x="8" y="8" width="112" height="112" rx="22" fill="none" stroke="#3d5c28" stroke-width="1.5" opacity="0.45"/>
-  <path fill="url(#leaf)" d="M64 96c-8-10-26-18-38-14 6-18 18-30 38-36 20 6 32 18 38 36-12-4-30 4-38 14zm0-46c-16 4-26 14-30 28 10-2 20-8 30-16 10 8 20 14 30 16-4-14-14-24-30-28z"/>
-  <path fill="none" stroke="#1a5c34" stroke-width="2" stroke-linecap="round" d="M64 50v46M64 62c-14-2-22 6-20 18M64 62c14-2 22 6 20 18M64 72c-10-1-16 5-14 14M64 72c10-1 16 5 14 14"/>
-  <circle cx="50" cy="52" r="31" fill="none" stroke="#2d4a32" stroke-width="4" opacity="0.7"/>
-  <circle cx="50" cy="52" r="27" fill="url(#lens)" stroke="#2ecc71" stroke-width="4"/>
-  <line x1="70" y1="72" x2="98" y2="100" stroke="#27ae60" stroke-width="10" stroke-linecap="round"/>
-  <circle cx="100" cy="28" r="17" fill="#e67e22"/>
-  <circle cx="100" cy="28" r="17" fill="none" stroke="#f5b041" stroke-width="2"/>
-  <path fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M92 28l6 6 14-14"/>
+  <rect x="7" y="7" width="114" height="114" rx="22" fill="none" stroke="url(#frame)" stroke-width="2.5" opacity="0.85"/>
+
+  <path d="M43 34h42l7 21H36z" fill="url(#hatTop)"/>
+  <path d="M28 58c4-7 16-11 36-11s32 4 36 11v7H28z" fill="#234633"/>
+  <rect x="33" y="62" width="62" height="9" rx="4.5" fill="url(#hatBand)"/>
+  <circle cx="64" cy="66.5" r="3.4" fill="#2d5a43"/>
+
+  <circle cx="64" cy="89" r="26" fill="none" stroke="#2d5a43" stroke-width="5"/>
+  <circle cx="64" cy="89" r="21" fill="url(#glass)" stroke="#1f4633" stroke-width="3"/>
+  <line x1="80" y1="105" x2="101" y2="123" stroke="#2d5a43" stroke-width="8" stroke-linecap="round"/>
+
+  <path d="M64 100c-5-6-14-10-21-8 3-10 10-17 21-21 11 4 18 11 21 21-7-2-16 2-21 8z" fill="#2a9d62"/>
+  <path d="M64 71v29M64 79c-8-1-12 4-11 10M64 79c8-1 12 4 11 10" fill="none" stroke="#1c6f45" stroke-width="2" stroke-linecap="round"/>
 </svg>

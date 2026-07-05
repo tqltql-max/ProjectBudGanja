@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const planoAddForm = document.getElementById('perfil-plano-add');
   const planoInput = document.getElementById('perfil-plano-input');
   const planoStatus = document.getElementById('perfil-plano-status');
+  const planoMetrics = document.getElementById('perfil-plano-metrics');
   const customGuideEl = document.getElementById('profile-custom-guide');
   const guiaSaveBtn = document.getElementById('perfil-guia-save-btn');
   const guiaTemplateBtn = document.getElementById('perfil-guia-template-btn');
@@ -100,6 +101,21 @@ document.addEventListener('DOMContentLoaded', async () => {
   const growActionsPanel = document.getElementById('perfil-grow-actions-panel');
   const cultivoWizardEnvironment = document.getElementById('cultivo-wizard-environment');
   const cultivoWizardSubstrate = document.getElementById('cultivo-wizard-substrate');
+  const cultivoMetricModal = document.getElementById('cultivo-metric-modal');
+  const cultivoMetricModalTitle = document.getElementById('cultivo-metric-modal-title');
+  const cultivoMetricModalHint = document.getElementById('cultivo-metric-modal-hint');
+  const cultivoMetricModalStatus = document.getElementById('cultivo-metric-modal-status');
+  const cultivoMetricSlider = document.getElementById('cultivo-metric-slider');
+  const cultivoMetricSliderTrack = document.getElementById('cultivo-metric-slider-track');
+  const cultivoMetricSliderWrap = document.querySelector('.cultivo-metric-slider-wrap');
+  const cultivoMetricSliderValue = document.getElementById('cultivo-metric-slider-value');
+  const cultivoMetricSliderMin = document.getElementById('cultivo-metric-slider-min');
+  const cultivoMetricSliderMax = document.getElementById('cultivo-metric-slider-max');
+  const cultivoMetricSliderIdealNote = document.getElementById('cultivo-metric-slider-ideal-note');
+  const cultivoMetricNudgeDown = document.getElementById('cultivo-metric-nudge-down');
+  const cultivoMetricNudgeUp = document.getElementById('cultivo-metric-nudge-up');
+  const cultivoMetricApply = document.getElementById('cultivo-metric-apply');
+  const cultivoMetricClear = document.getElementById('cultivo-metric-clear');
 
   const IS_CULTIVO_PAGE = true;
   const PAGE_SELF = '/cultivo/';
@@ -140,16 +156,35 @@ document.addEventListener('DOMContentLoaded', async () => {
   let globalTasksBoardOpen = false;
   let growPostSaveActionsEl = null;
   let cultivoWizardPhase = 'germinacao';
-  let selectedEntryAction = 'rega';
+  let selectedEntryAction = '';
   let pendingEntryPhotoFiles = [];
   let submissionStatusByGrow = null;
   let sectionNavBound = false;
   let activeSectionTab = 'diario';
   let cultivoAutosave = null;
+  let activeMetricKey = '';
+  let activeMetricInput = null;
+  let activeMetricConfig = null;
+  let activeMetricDraftValue = null;
+  let lastMetricInIdeal = null;
+  let lastMetricHapticAt = 0;
 
   const ENTRY_MEDIA_MAX_ITEMS = 4;
   const ENTRY_MEDIA_MAX_IMAGE_BYTES = 6 * 1024 * 1024;
   const ENTRY_MEDIA_MAX_VIDEO_BYTES = 25 * 1024 * 1024;
+  const METRIC_PICKER_META = {
+    ph: { label: 'pH', min: 0, max: 14, unit: '' },
+    ec: { label: 'EC', min: 0, max: 10, unit: 'mS/cm' },
+    temp: { label: 'Temperatura', min: -10, max: 60, unit: '°C' },
+    rh: { label: 'Humidade relativa', min: 0, max: 100, unit: '%' }
+  };
+  const PHASE_LABELS_SHORT = {
+    planejamento: 'Planejamento',
+    germinacao: 'Germinação',
+    vegetativo: 'Vegetativo',
+    floracao: 'Floração',
+    colheita: 'Colheita'
+  };
 
   function persistSelectedGrowId(growId) {
     try {
@@ -1700,11 +1735,157 @@ document.addEventListener('DOMContentLoaded', async () => {
     const map = {
       submit: 'cultivo-submit-modal',
       rename: 'cultivo-rename-modal',
-      compare: 'cultivo-compare-modal'
+      compare: 'cultivo-compare-modal',
+      metric: 'cultivo-metric-modal'
     };
     const id = map[idOrKey] || idOrKey;
     const el = document.getElementById(id);
     if (el) el.hidden = true;
+    if (id === 'cultivo-metric-modal') {
+      if (activeMetricInput && typeof activeMetricInput.blur === 'function') {
+        activeMetricInput.blur();
+      }
+      activeMetricKey = '';
+      activeMetricInput = null;
+      activeMetricConfig = null;
+      activeMetricDraftValue = null;
+      lastMetricInIdeal = null;
+    }
+  }
+
+  function round1(n) {
+    return Math.round(n * 10) / 10;
+  }
+
+  function getMetricContext() {
+    const profile = user && user.profile ? user.profile : {};
+    const logs = Array.isArray(profile.growLogs) ? profile.growLogs : [];
+    const log = logs.find((item) => item.id === selectedGrowLogId) || logs.find((item) => item.id === profile.activeGrowLogId) || logs[0] || null;
+    const phase = (log && log.phase) || profile.phase || 'germinacao';
+    const substrate = String((log && log.substrate) || profile.substrate || '').toLowerCase();
+    const hydroLike = /hidro|hidrop|coco|perlita|argila expandida/.test(substrate);
+    return { phase, substrate, hydroLike };
+  }
+
+  function buildMetricConfig(metricKey) {
+    const base = METRIC_PICKER_META[metricKey];
+    if (!base) return null;
+    const ctx = getMetricContext();
+    const phaseLabel = PHASE_LABELS_SHORT[ctx.phase] || 'Atual';
+
+    if (metricKey === 'ph') {
+      const min = ctx.hydroLike ? 5.5 : 6.0;
+      const max = ctx.hydroLike ? 6.2 : 6.8;
+      const mid = round1((min + max) / 2);
+      return {
+        label: base.label,
+        min: base.min,
+        max: base.max,
+        step: 0.1,
+        unit: base.unit,
+        hint: 'Substrato detectado: ' + (ctx.hydroLike ? 'hidro/coco' : 'solo') + '.',
+        idealLabel: 'Faixa ideal: ' + min + '-' + max,
+        idealMin: min,
+        idealMax: max,
+        defaultValue: mid,
+        options: [
+          { label: 'Ideal mínimo', value: min, helper: 'Início seguro da faixa' },
+          { label: 'Ideal médio', value: mid, helper: 'Ponto recomendado' },
+          { label: 'Ideal máximo', value: max, helper: 'Limite superior seguro' }
+        ]
+      };
+    }
+
+    if (metricKey === 'ec') {
+      const map = {
+        planejamento: [0.2, 0.6],
+        germinacao: [0.6, 1.0],
+        vegetativo: [1.2, 1.8],
+        floracao: [1.8, 2.2],
+        colheita: [0.4, 0.8]
+      };
+      const range = map[ctx.phase] || [1.2, 1.8];
+      const min = range[0];
+      const max = range[1];
+      const mid = round1((min + max) / 2);
+      return {
+        label: base.label,
+        min: base.min,
+        max: base.max,
+        step: 0.1,
+        unit: base.unit,
+        hint: 'Fase da pesquisa: ' + phaseLabel + '.',
+        idealLabel: 'Faixa ideal: ' + min + '-' + max + ' mS/cm',
+        idealMin: min,
+        idealMax: max,
+        defaultValue: mid,
+        options: [
+          { label: 'Ideal mínimo', value: min, helper: 'Nutrição leve' },
+          { label: 'Ideal médio', value: mid, helper: 'Ponto recomendado' },
+          { label: 'Ideal máximo', value: max, helper: 'Nutrição intensa' }
+        ]
+      };
+    }
+
+    if (metricKey === 'temp') {
+      const map = {
+        planejamento: [22, 26],
+        germinacao: [24, 28],
+        vegetativo: [24, 28],
+        floracao: [22, 26],
+        colheita: [20, 24]
+      };
+      const range = map[ctx.phase] || [24, 28];
+      const min = range[0];
+      const max = range[1];
+      const mid = Math.round((min + max) / 2);
+      return {
+        label: base.label,
+        min: base.min,
+        max: base.max,
+        step: 1,
+        unit: base.unit,
+        hint: 'Fase da pesquisa: ' + phaseLabel + '.',
+        idealLabel: 'Dia ideal: ' + min + '-' + max + '°C',
+        idealMin: min,
+        idealMax: max,
+        defaultValue: mid,
+        options: [
+          { label: 'Dia mínimo', value: min, helper: 'Faixa ideal inferior' },
+          { label: 'Dia médio', value: mid, helper: 'Ponto recomendado' },
+          { label: 'Dia máximo', value: max, helper: 'Faixa ideal superior' }
+        ]
+      };
+    }
+
+    const rhMap = {
+      planejamento: [50, 60],
+      germinacao: [65, 75],
+      vegetativo: [55, 65],
+      floracao: [45, 55],
+      colheita: [40, 50]
+    };
+    const rhRange = rhMap[ctx.phase] || [55, 65];
+    const rhMin = rhRange[0];
+    const rhMax = rhRange[1];
+    const rhMid = Math.round((rhMin + rhMax) / 2);
+    return {
+      label: base.label,
+      min: base.min,
+      max: base.max,
+      step: 1,
+      unit: base.unit,
+      hint: 'Fase da pesquisa: ' + phaseLabel + '.',
+      idealLabel: 'Faixa ideal: ' + rhMin + '-' + rhMax + '%',
+      idealMin: rhMin,
+      idealMax: rhMax,
+      defaultValue: rhMid,
+      options: [
+        { label: 'Ideal mínimo', value: rhMin, helper: 'Ar mais seco' },
+        { label: 'Ideal médio', value: rhMid, helper: 'Ponto recomendado' },
+        { label: 'Ideal máximo', value: rhMax, helper: 'Ar mais húmido' }
+      ]
+    };
   }
 
   function syncPhaseFromActiveLog(profile) {
@@ -1824,7 +2005,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (growEntryPhotos) growEntryPhotos.value = '';
     pendingEntryPhotoFiles = [];
     renderEntryPhotoPreview();
-    setSelectedEntryAction('rega');
+    setSelectedEntryAction('');
     if (growEntryMetricsHint) {
       growEntryMetricsHint.hidden = true;
       growEntryMetricsHint.textContent = '';
@@ -1939,13 +2120,240 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function setSelectedEntryAction(actionId) {
-    selectedEntryAction = actionId || 'obs';
+    selectedEntryAction = actionId || '';
     if (!growEntryTypes) return;
     growEntryTypes.querySelectorAll('.perfil-entry-type').forEach((btn) => {
-      const active = btn.getAttribute('data-action') === selectedEntryAction;
+      const active = selectedEntryAction && btn.getAttribute('data-action') === selectedEntryAction;
       btn.classList.toggle('is-active', active);
       btn.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
+  }
+
+  function metricValueForInput(metricKey, value) {
+    if (value == null || value === '') return '';
+    if (metricKey === 'temp' || metricKey === 'rh') return String(Math.round(value));
+    return String(Math.round(value * 10) / 10);
+  }
+
+  function clampMetricValue(value, cfg) {
+    if (!cfg) return value;
+    return Math.min(cfg.max, Math.max(cfg.min, value));
+  }
+
+  function parseMetricInputValue(metricKey, rawValue) {
+    if (rawValue == null || rawValue === '') return null;
+    const parsed = parseFloat(String(rawValue).replace(',', '.'));
+    if (isNaN(parsed)) return null;
+    if (metricKey === 'temp' || metricKey === 'rh') return Math.round(parsed);
+    return round1(parsed);
+  }
+
+  function updateMetricSliderUi() {
+    if (!activeMetricConfig || !cultivoMetricSlider) return;
+    const cfg = activeMetricConfig;
+    const value = clampMetricValue(
+      activeMetricDraftValue == null ? (cfg.defaultValue != null ? cfg.defaultValue : cfg.min) : activeMetricDraftValue,
+      cfg
+    );
+    activeMetricDraftValue = value;
+    cultivoMetricSlider.value = String(value);
+
+    const unit = cfg.unit ? ' ' + cfg.unit : '';
+    if (cultivoMetricSliderValue) {
+      cultivoMetricSliderValue.textContent = metricValueForInput(activeMetricKey, value) + unit;
+    }
+    if (cultivoMetricSliderIdealNote) {
+      const inIdeal = value >= cfg.idealMin && value <= cfg.idealMax;
+      cultivoMetricSliderIdealNote.textContent = inIdeal
+        ? 'Dentro da faixa ideal.'
+        : 'Fora da faixa ideal.';
+      const now = Date.now();
+      const canVibrate = typeof navigator !== 'undefined' && typeof navigator.vibrate === 'function';
+      if (lastMetricInIdeal === null) {
+        lastMetricInIdeal = inIdeal;
+      } else if (lastMetricInIdeal !== inIdeal && canVibrate && (now - lastMetricHapticAt) > 140) {
+        navigator.vibrate(inIdeal ? 18 : [10, 24, 10]);
+        lastMetricHapticAt = now;
+        lastMetricInIdeal = inIdeal;
+      } else {
+        lastMetricInIdeal = inIdeal;
+      }
+      if (cultivoMetricSliderWrap) {
+        cultivoMetricSliderWrap.classList.toggle('is-in-ideal', inIdeal);
+        cultivoMetricSliderWrap.classList.toggle('is-out-ideal', !inIdeal);
+      }
+    }
+    if (cultivoMetricSliderTrack && cfg.max > cfg.min) {
+      const start = ((cfg.idealMin - cfg.min) / (cfg.max - cfg.min)) * 100;
+      const end = ((cfg.idealMax - cfg.min) / (cfg.max - cfg.min)) * 100;
+      cultivoMetricSliderTrack.style.setProperty('--ideal-start', String(Math.max(0, Math.min(100, start))) + '%');
+      cultivoMetricSliderTrack.style.setProperty('--ideal-end', String(Math.max(0, Math.min(100, end))) + '%');
+      const progress = ((value - cfg.min) / (cfg.max - cfg.min)) * 100;
+      cultivoMetricSliderTrack.style.setProperty('--value-progress', String(Math.max(0, Math.min(100, progress))) + '%');
+    }
+    cultivoMetricSlider.setAttribute('aria-valuetext', metricValueForInput(activeMetricKey, value) + unit);
+  }
+
+  function nudgeMetricValue(direction) {
+    if (!activeMetricConfig) return;
+    const step = activeMetricConfig.step || 1;
+    const current = activeMetricDraftValue == null ? activeMetricConfig.defaultValue : activeMetricDraftValue;
+    activeMetricDraftValue = clampMetricValue(current + (step * direction), activeMetricConfig);
+    updateMetricSliderUi();
+  }
+
+  function commitMetricSliderValue(mode) {
+    if (!activeMetricInput || !activeMetricConfig) return;
+    const cfg = activeMetricConfig;
+
+    if (mode === 'clear') {
+      activeMetricInput.value = '';
+      validateEntryMetricsFromForm();
+      closeCultivoModal('metric');
+      return;
+    }
+
+    const value = clampMetricValue(
+      activeMetricDraftValue == null ? (cfg.defaultValue != null ? cfg.defaultValue : cfg.min) : activeMetricDraftValue,
+      cfg
+    );
+    activeMetricInput.value = metricValueForInput(activeMetricKey, value);
+    validateEntryMetricsFromForm();
+    closeCultivoModal('metric');
+  }
+
+  function openMetricPicker(metricKey, inputEl) {
+    const cfg = buildMetricConfig(metricKey);
+    if (!cfg) return;
+    if (!cultivoMetricModal || !cultivoMetricSlider) {
+      const fallback = window.prompt('Insira ' + cfg.label + ' (' + cfg.min + ' a ' + cfg.max + ')', inputEl && inputEl.value ? inputEl.value : '');
+      if (fallback == null) return;
+      const raw = String(fallback).replace(',', '.').trim();
+      if (!raw) {
+        if (inputEl) inputEl.value = '';
+        return;
+      }
+      const parsed = parseFloat(raw);
+      if (isNaN(parsed) || parsed < cfg.min || parsed > cfg.max) {
+        setStatus(growDetailStatus, cfg.label + ' deve estar entre ' + cfg.min + ' e ' + cfg.max + '.', true);
+        return;
+      }
+      if (inputEl) inputEl.value = metricValueForInput(metricKey, parsed);
+      validateEntryMetricsFromForm();
+      return;
+    }
+    activeMetricKey = metricKey;
+    activeMetricInput = inputEl || null;
+    activeMetricConfig = cfg;
+    activeMetricDraftValue = parseMetricInputValue(metricKey, inputEl && inputEl.value);
+    if (activeMetricDraftValue == null) activeMetricDraftValue = cfg.defaultValue;
+
+    if (cultivoMetricModalTitle) cultivoMetricModalTitle.textContent = 'Selecionar ' + cfg.label;
+    if (cultivoMetricModalHint) cultivoMetricModalHint.textContent = cfg.hint;
+    if (cultivoMetricModalStatus) cultivoMetricModalStatus.textContent = '';
+    if (cultivoMetricSlider) {
+      cultivoMetricSlider.min = String(cfg.min);
+      cultivoMetricSlider.max = String(cfg.max);
+      cultivoMetricSlider.step = String(cfg.step || 1);
+    }
+    if (cultivoMetricSliderMin) cultivoMetricSliderMin.textContent = metricValueForInput(metricKey, cfg.min);
+    if (cultivoMetricSliderMax) cultivoMetricSliderMax.textContent = metricValueForInput(metricKey, cfg.max);
+
+    const idealBlock = document.getElementById('cultivo-metric-modal-ideal');
+    if (idealBlock) {
+      idealBlock.innerHTML =
+        '<span class="cultivo-metric-ideal-chip">Ideal</span>' +
+        '<strong>' + escapeHtml(cfg.idealLabel || '') + '</strong>';
+    }
+    updateMetricSliderUi();
+    cultivoMetricModal.hidden = false;
+  }
+
+  function initEntryMetricPickers() {
+    const inputs = [
+      { el: growEntryPh, key: 'ph' },
+      { el: growEntryEc, key: 'ec' },
+      { el: growEntryTemp, key: 'temp' },
+      { el: growEntryRh, key: 'rh' }
+    ];
+
+    inputs.forEach((item) => {
+      if (!item.el || item.el.dataset.metricPickerBound === '1') return;
+      item.el.dataset.metricPickerBound = '1';
+      item.el.setAttribute('readonly', 'readonly');
+      const openPicker = (evt) => {
+        if (evt) evt.preventDefault();
+        openMetricPicker(item.key, item.el);
+      };
+      item.el.addEventListener('click', openPicker);
+      item.el.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openMetricPicker(item.key, item.el);
+        }
+      });
+    });
+
+    if (cultivoMetricSlider && cultivoMetricSlider.dataset.bound !== '1') {
+      cultivoMetricSlider.dataset.bound = '1';
+      cultivoMetricSlider.addEventListener('input', () => {
+        activeMetricDraftValue = parseFloat(cultivoMetricSlider.value);
+        updateMetricSliderUi();
+      });
+    }
+
+    function bindNudgeButton(btn, direction) {
+      if (!btn || btn.dataset.bound === '1') return;
+      btn.dataset.bound = '1';
+      let holdTimer = null;
+      let repeatTimer = null;
+      let repeated = false;
+      const clearTimers = () => {
+        if (holdTimer) {
+          clearTimeout(holdTimer);
+          holdTimer = null;
+        }
+        if (repeatTimer) {
+          clearInterval(repeatTimer);
+          repeatTimer = null;
+        }
+      };
+
+      btn.addEventListener('click', () => {
+        if (repeated) {
+          repeated = false;
+          return;
+        }
+        nudgeMetricValue(direction);
+      });
+
+      btn.addEventListener('pointerdown', () => {
+        repeated = false;
+        clearTimers();
+        holdTimer = setTimeout(() => {
+          repeated = true;
+          nudgeMetricValue(direction);
+          repeatTimer = setInterval(() => nudgeMetricValue(direction), 120);
+        }, 380);
+      });
+
+      ['pointerup', 'pointercancel', 'pointerleave'].forEach((evt) => {
+        btn.addEventListener(evt, clearTimers);
+      });
+    }
+
+    bindNudgeButton(cultivoMetricNudgeDown, -1);
+    bindNudgeButton(cultivoMetricNudgeUp, 1);
+
+    if (cultivoMetricApply && cultivoMetricApply.dataset.bound !== '1') {
+      cultivoMetricApply.dataset.bound = '1';
+      cultivoMetricApply.addEventListener('click', () => commitMetricSliderValue('apply'));
+    }
+
+    if (cultivoMetricClear && cultivoMetricClear.dataset.bound !== '1') {
+      cultivoMetricClear.dataset.bound = '1';
+      cultivoMetricClear.addEventListener('click', () => commitMetricSliderValue('clear'));
+    }
   }
 
   function getEntryActionMeta(entry) {
@@ -1977,8 +2385,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function buildDefaultEntryText(actionType, metrics) {
-    const action = ENTRY_ACTIONS.find((a) => a.id === actionType) || ENTRY_ACTIONS[2];
     const metricLine = formatMetricsPlain(metrics);
+    if (!actionType) {
+      if (metricLine) return 'Registo — ' + metricLine;
+      return '';
+    }
+    const action = ENTRY_ACTIONS.find((a) => a.id === actionType) || ENTRY_ACTIONS[2];
     if (metricLine) return action.label + ' — ' + metricLine;
     if (actionType === 'rega') return 'Rega registada.';
     if (actionType === 'adubo') return 'Adubação registada.';
@@ -2099,7 +2511,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     growEntryTypes.dataset.bound = '1';
     growEntryTypes.querySelectorAll('.perfil-entry-type').forEach((btn) => {
       btn.addEventListener('click', () => {
-        setSelectedEntryAction(btn.getAttribute('data-action'));
+        const actionId = btn.getAttribute('data-action');
+        setSelectedEntryAction(selectedEntryAction === actionId ? '' : actionId);
       });
     });
   }
@@ -2115,6 +2528,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (growEntryDate) growEntryDate.value = todayDateInputValue();
     clearEntryForm();
     initEntryTypeButtons();
+    initEntryMetricPickers();
 
     const entries = Array.isArray(log.entries) ? log.entries.slice() : [];
     if (growEntriesEmpty) growEntriesEmpty.hidden = entries.length > 0;
@@ -2272,6 +2686,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!task.dueAt) return '';
     const prefix = isTaskOverdue(task) ? 'Atrasado · ' : '';
     return prefix + formatDate(task.dueAt);
+  }
+
+  function renderPlanMetrics(tasks) {
+    if (!planoMetrics) return;
+    const list = Array.isArray(tasks) ? tasks : [];
+    const total = list.length;
+    const done = list.filter((task) => task.done).length;
+    const open = Math.max(0, total - done);
+    const overdue = list.filter((task) => !task.done && isTaskOverdue(task)).length;
+    const nextDueTask = list
+      .filter((task) => !task.done && task.dueAt)
+      .sort((a, b) => String(a.dueAt || '').localeCompare(String(b.dueAt || '')))[0] || null;
+    const nextDueLabel = nextDueTask ? formatDate(nextDueTask.dueAt) : '—';
+
+    planoMetrics.innerHTML =
+      '<div class="perfil-plano-metric"><strong>' + total + '</strong><span>Total</span></div>' +
+      '<div class="perfil-plano-metric"><strong>' + open + '</strong><span>Em aberto</span></div>' +
+      '<div class="perfil-plano-metric"><strong>' + done + '</strong><span>Concluídas</span></div>' +
+      '<div class="perfil-plano-metric' + (overdue > 0 ? ' is-alert' : '') + '"><strong>' + overdue + '</strong><span>Atrasadas</span></div>' +
+      '<div class="perfil-plano-metric perfil-plano-metric--wide"><strong>' + escapeHtml(nextDueLabel) + '</strong><span>Próximo prazo</span></div>';
   }
 
   function buildReminderLabel(actionType, customLabel) {
@@ -3087,9 +3521,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     const scoped = gid
       ? all.filter((task) => !task.growId || task.growId === gid)
       : all.filter((task) => !task.growId);
-    if (scoped.length) return scoped.slice();
-    if (gid) return defaultPlanTasks(profile, gid);
-    return [];
+    return scoped.slice();
   }
 
   function setPlanTasksForGrow(profile, growId, tasks) {
@@ -3114,11 +3546,14 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
 
     if (!tasks.length) {
       planoList.innerHTML = '<li class="perfil-plano-empty">Adicione tarefas ou altere a fase desta pesquisa para sugestões automáticas.</li>';
+      renderPlanMetrics(tasks);
       renderPlanPreview(profile);
       return;
     }
 
     planoList.innerHTML = tasks.map((task) => {
+      const isOverdue = isTaskOverdue(task);
+      const stateLabel = task.done ? 'Concluída' : (isOverdue ? 'Atrasada' : 'Em aberto');
       const toolLink = task.toolHref
         ? ' <a class="perfil-plano-tool" href="' + escapeHtml(task.toolHref) + '">Abrir ferramenta</a>'
         : '';
@@ -3126,10 +3561,13 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         ? '<span class="perfil-plano-due' + (isTaskOverdue(task) ? ' is-overdue' : '') + '">' + escapeHtml(formatTaskDueLabel(task)) + '</span>'
         : '';
       return (
-        '<li class="perfil-plano-item' + (task.done ? ' is-done' : '') + (isTaskOverdue(task) ? ' is-overdue' : '') + '" data-task-id="' + escapeHtml(task.id) + '">' +
+        '<li class="perfil-plano-item' + (task.done ? ' is-done' : '') + (isOverdue ? ' is-overdue' : '') + '" data-task-id="' + escapeHtml(task.id) + '">' +
         '<label class="perfil-plano-check">' +
         '<input type="checkbox"' + (task.done ? ' checked' : '') + ' aria-label="' + escapeHtml(task.label) + '">' +
-        '<span>' + escapeHtml(task.label) + dueHtml + '</span></label>' +
+        '<span class="perfil-plano-copy">' +
+        '<strong class="perfil-plano-label">' + escapeHtml(task.label) + '</strong>' +
+        '<span class="perfil-plano-meta"><span class="perfil-plano-state">' + escapeHtml(stateLabel) + '</span>' + dueHtml + '</span>' +
+        '</span></label>' +
         toolLink +
         '<button type="button" class="perfil-plano-remove" aria-label="Remover tarefa">×</button>' +
         '</li>'
@@ -3142,6 +3580,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     planoList.querySelectorAll('.perfil-plano-remove').forEach((btn) => {
       btn.addEventListener('click', onPlanTaskRemove);
     });
+    renderPlanMetrics(tasks);
     renderPlanPreview(profile);
     renderInicioSummary(profile);
   }
@@ -3399,7 +3838,6 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         initCultivoAutosave();
         initPhotoDropZone();
         renderHub(data.profile);
-        await seedDefaultPlanIfEmpty(data.profile);
         const params = new URLSearchParams(window.location.search);
         let initialRoute = parseCultivoRoute();
         const tab = params.get('tab');
@@ -3631,7 +4069,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         text = buildDefaultEntryText(selectedEntryAction, metrics);
       }
       if (!text && !Object.keys(metrics).length && !pendingEntryPhotoFiles.length && !editingEntryId) {
-        setStatus(growDetailStatus, 'Escolha o tipo ou preencha uma observação.', true);
+        setStatus(growDetailStatus, 'Preencha observação, métricas ou mídia para guardar o registo.', true);
         return;
       }
       const log = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
@@ -3655,7 +4093,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
           return;
         }
         entry.date = growEntryDate ? growEntryDate.value : entry.date;
-        entry.actionType = selectedEntryAction;
+        entry.actionType = selectedEntryAction || 'obs';
         entry.text = text;
         entry.metrics = metrics;
         if (photos.length) {
