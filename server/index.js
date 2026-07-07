@@ -26,7 +26,8 @@ const eventBus = require('../lib/admin-event-bus.js');
 const { mergeGuiaInspecoesPosts } = require('../lib/merge-guia-inspecoes.js');
 const contentStore = createContentStore(ROOT);
 let appStore = null;
-const PORT = process.env.PORT || 8080;
+const PORT = Number(process.env.PORT) || 8080;
+const MAX_PORT_RETRIES = 20;
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -248,6 +249,13 @@ function serveStatic(req, res, staticPath) {
 
   fs.stat(requested, (err, stats) => {
     if (err || !stats.isFile()) {
+      const ext = path.extname(staticPath || '').toLowerCase();
+      const accept = String(req.headers.accept || '').toLowerCase();
+      const isPageRoute = !ext || ext === '.html' || String(staticPath || '').endsWith('/');
+      const acceptsHtml = accept.includes('text/html');
+      if (isPageRoute || acceptsHtml) {
+        return resRedirect(res, '/');
+      }
       res.writeHead(404, { 'Content-Type': 'text/plain' });
       res.end('404 Not Found');
       return;
@@ -423,12 +431,39 @@ const server = http.createServer((req, res) => {
   })();
 });
 
+function listenOnAvailablePort(startPort, onReady) {
+  const basePort = Number(startPort) || 8080;
+
+  const tryListen = (port, attempt) => {
+    const onError = (err) => {
+      server.removeListener('listening', onListening);
+      if (err && err.code === 'EADDRINUSE' && attempt < MAX_PORT_RETRIES) {
+        console.warn('Porta ' + port + ' em uso; tentando ' + (port + 1) + '...');
+        setTimeout(() => tryListen(port + 1, attempt + 1), 40);
+        return;
+      }
+      throw err;
+    };
+
+    const onListening = () => {
+      server.removeListener('error', onError);
+      onReady(port);
+    };
+
+    server.once('error', onError);
+    server.once('listening', onListening);
+    server.listen(port);
+  };
+
+  tryListen(basePort, 0);
+}
+
 createAppStore({ root: ROOT, netlify: false }).then((store) => {
   appStore = store;
   const backend = store.backend || process.env.STORE_BACKEND || 'sql';
-  server.listen(PORT, () => {
-    console.log('Server running at http://localhost:' + PORT);
-    console.log('Admin login: http://localhost:' + PORT + '/login.html');
+  listenOnAvailablePort(PORT, (effectivePort) => {
+    console.log('Server running at http://localhost:' + effectivePort);
+    console.log('Admin login: http://localhost:' + effectivePort + '/login.html');
     console.log('Store backend:', backend);
     if (isDevModeEnabled()) {
       console.log('Modo desenvolvimento ATIVO — visitantes veem tela em construção (admin autenticado passa).');

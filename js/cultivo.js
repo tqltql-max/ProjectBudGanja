@@ -1421,11 +1421,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     if (nameEl) {
       if (IS_CULTIVO_PAGE) {
-        nameEl.textContent = isProfileComplete(data.profile)
+        nameEl.textContent = isUserProfileComplete(data)
           ? firstName(data.profile, data.name) + ' · pesquisas'
           : 'Minhas pesquisas';
       } else {
-        nameEl.textContent = isProfileComplete(data.profile)
+        nameEl.textContent = isUserProfileComplete(data)
           ? 'Olá, ' + firstName(data.profile, data.name) + '!'
           : ((data.profile && data.profile.displayName) || data.name || 'Meu perfil');
       }
@@ -1435,7 +1435,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function refreshUI(options) {
     const opts = options || {};
-    if (!user || !user.profile || !isProfileComplete(user.profile)) return;
+    if (!user || !user.profile || !isUserProfileComplete(user)) return;
     ensureGrowLogs(user.profile);
     if (cultivoView === 'grow' && selectedGrowLogId) {
       renderGrowPage(user.profile);
@@ -2566,17 +2566,23 @@ document.addEventListener('DOMContentLoaded', async () => {
   function isProfileComplete(profile) {
     if (!profile) return false;
     const name = String(profile.displayName || '').trim();
-    const age = profile.age;
-    return name.length >= 2 && age !== null && !isNaN(age) && age >= MIN_USER_AGE;
+    const username = sanitizeUsername(profile.username || '');
+    const age = resolvedProfileAge(profile);
+    return name.length >= 2 && !!username && age !== null && !isNaN(age) && age >= MIN_USER_AGE;
   }
 
   function validateRegistrationForm() {
     const nameEl = document.getElementById('profile-displayName');
-    const ageEl = document.getElementById('profile-age');
+    const usernameEl = document.getElementById('profile-username');
+    const birthDateEl = document.getElementById('profile-birthDate');
     const name = nameEl ? nameEl.value.trim() : '';
-    const age = ageEl ? parseInt(ageEl.value, 10) : NaN;
+    const username = sanitizeUsername(usernameEl && usernameEl.value);
+    const age = calculateAgeFromBirthDate(birthDateEl && birthDateEl.value);
     if (name.length < 2) {
       return 'Informe um nome válido (mínimo 2 caracteres).';
+    }
+    if (!username) {
+      return 'Use um nome de utilizador válido (3-32, letras, números, . _ -).';
     }
     if (isNaN(age) || age < MIN_USER_AGE) {
       return 'É necessário ter 18 anos ou mais para utilizar o site.';
@@ -2643,6 +2649,48 @@ document.addEventListener('DOMContentLoaded', async () => {
     return String(raw).trim().split(/\s+/)[0] || 'Cultivador';
   }
 
+  function sanitizeUsername(raw) {
+    const base = String(raw || '')
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9._-]/g, '')
+      .replace(/[._-]{2,}/g, '-')
+      .replace(/^[._-]+|[._-]+$/g, '');
+    if (base.length < 3 || base.length > 32) return '';
+    return base;
+  }
+
+  function calculateAgeFromBirthDate(raw) {
+    const text = String(raw || '').trim();
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(text)) return null;
+    const birth = new Date(text + 'T00:00:00.000Z');
+    if (isNaN(birth.getTime())) return null;
+    const now = new Date();
+    let age = now.getUTCFullYear() - birth.getUTCFullYear();
+    const monthDiff = now.getUTCMonth() - birth.getUTCMonth();
+    const dayDiff = now.getUTCDate() - birth.getUTCDate();
+    if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) age -= 1;
+    if (age < 0 || age > 120) return null;
+    return age;
+  }
+
+  function resolvedProfileAge(profile) {
+    if (!profile) return null;
+    const byBirthDate = calculateAgeFromBirthDate(profile.birthDate);
+    if (byBirthDate != null) return byBirthDate;
+    const raw = profile.age;
+    if (raw === null || raw === undefined || raw === '') return null;
+    const parsed = parseInt(raw, 10);
+    if (isNaN(parsed)) return null;
+    return parsed;
+  }
+
+  function isUserProfileComplete(data) {
+    if (!data) return false;
+    if (typeof data.profileComplete === 'boolean') return data.profileComplete;
+    return isProfileComplete(data.profile);
+  }
+
   function switchTab(tabId, options) {
     const opts = options || {};
     if (!opts.skipStash) stashWeekNotes();
@@ -2657,7 +2705,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const el = document.getElementById(targetId);
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-    if (!opts.skipRefresh && user && user.profile && isProfileComplete(user.profile)) {
+    if (!opts.skipRefresh && user && user.profile && isUserProfileComplete(user)) {
       renderHub(user.profile);
     }
   }
@@ -3125,13 +3173,13 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
 
   function readAccountForm() {
     const nameEl = document.getElementById('profile-displayName');
-    const ageEl = document.getElementById('profile-age');
+    const usernameEl = document.getElementById('profile-username');
+    const birthDateEl = document.getElementById('profile-birthDate');
     const base = user && user.profile ? Object.assign({}, user.profile) : {};
     if (nameEl) base.displayName = nameEl.value.trim();
-    if (ageEl && ageEl.value !== '') {
-      const age = parseInt(ageEl.value, 10);
-      base.age = isNaN(age) ? null : age;
-    }
+    if (usernameEl) base.username = sanitizeUsername(usernameEl.value);
+    if (birthDateEl) base.birthDate = String(birthDateEl.value || '').trim();
+    base.age = calculateAgeFromBirthDate(base.birthDate);
     if (avatarUrlEl) {
       const picked = avatarUrlEl.value.trim();
       if (picked) base.avatarUrl = picked;
@@ -3151,13 +3199,13 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
   function fillForm(profile) {
     const p = profile || {};
     const nameEl = document.getElementById('profile-displayName');
-    const ageEl = document.getElementById('profile-age');
+    const usernameEl = document.getElementById('profile-username');
+    const birthDateEl = document.getElementById('profile-birthDate');
     if (nameEl) {
       nameEl.value = p.displayName || (user && user.name) || '';
     }
-    if (ageEl) {
-      ageEl.value = p.age != null && !isNaN(p.age) ? String(p.age) : '';
-    }
+    if (usernameEl) usernameEl.value = p.username || (user && user.username) || '';
+    if (birthDateEl) birthDateEl.value = p.birthDate || (user && user.birthDate) || '';
     if (customGuideEl) customGuideEl.value = p.customGuide || '';
     fillAvatarFields(p, user);
   }
@@ -3183,7 +3231,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     initTabs();
     if (formTitle) formTitle.textContent = 'Completar cadastro';
     if (onboardingIntro) {
-      onboardingIntro.innerHTML = 'Informe seu nome e idade para aceder ao painel. Conteúdo exclusivo para <strong>maiores de 18 anos</strong>.';
+      onboardingIntro.innerHTML = 'Primeira etapa: nome, username e data de nascimento. O resto pode completar depois.';
     }
   }
 
@@ -3197,8 +3245,8 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     }
     if (onboardingIntro) {
       onboardingIntro.innerHTML = isEdit
-        ? 'Altere seu nome, idade ou foto de perfil. O site é exclusivo para <strong>maiores de 18 anos</strong>.'
-        : 'Informe seu nome, idade e escolha uma foto para aceder ao painel. Conteúdo exclusivo para <strong>maiores de 18 anos</strong>.';
+        ? 'Altere nome, username, data de nascimento ou foto. O site é exclusivo para <strong>maiores de 18 anos</strong>.'
+        : 'Primeira etapa: nome, username e data de nascimento. O resto pode completar depois.';
     }
     onboardingEl && onboardingEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
@@ -3655,6 +3703,8 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     try {
       const accountPayload = {
         displayName: payload.displayName,
+        username: payload.username,
+        birthDate: payload.birthDate,
         age: payload.age,
         avatarUrl: payload.avatarUrl
       };
@@ -3673,6 +3723,8 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       if (data.user && data.user.profile) {
         const merged = Object.assign({}, data.user.profile);
         if (payload.displayName !== undefined) merged.displayName = payload.displayName;
+        if (payload.username !== undefined) merged.username = payload.username;
+        if (payload.birthDate !== undefined) merged.birthDate = payload.birthDate;
         if (payload.age !== undefined) merged.age = payload.age;
         if (payload.avatarUrl !== undefined) merged.avatarUrl = payload.avatarUrl;
         data.user.profile = merged;
@@ -3797,7 +3849,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     updateUserHeader(data);
     fillForm(data.profile);
     broadcastProfilePicture(data);
-    if (isProfileComplete(data.profile) && IS_CULTIVO_PAGE) {
+    if (isUserProfileComplete(data) && IS_CULTIVO_PAGE) {
       renderHub(data.profile);
     }
   }
@@ -3815,12 +3867,12 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       if (appEl) appEl.hidden = false;
       renderUser(data);
 
-      if (IS_CULTIVO_PAGE && !isProfileComplete(data.profile)) {
+      if (IS_CULTIVO_PAGE && !isUserProfileComplete(data)) {
         window.location.href = '/perfil.html?returnTo=' + encodeURIComponent('/cultivo/');
         return;
       }
 
-      if (IS_CULTIVO_PAGE && isProfileComplete(data.profile)) {
+      if (IS_CULTIVO_PAGE && isUserProfileComplete(data)) {
         await loadCultivoIntoProfile();
         showDashboardView();
         const hadNoGrowLogs = !(user.profile.growLogs && user.profile.growLogs.length);
@@ -3863,7 +3915,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         return;
       }
 
-      if (isProfileComplete(data.profile)) {
+      if (isUserProfileComplete(data)) {
         const params = new URLSearchParams(window.location.search);
         const returnTo = params.get('returnTo');
         if (returnTo && returnTo.startsWith('/')) {
@@ -3901,11 +3953,11 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
 
       try {
         const formData = readForm();
-        const wasComplete = user && user.profile && isProfileComplete(user.profile);
+        const wasComplete = isUserProfileComplete(user);
         const saved = await saveProfilePayload(formData, formStatus);
         if (!saved) return;
 
-        if (!wasComplete && isProfileComplete(saved.profile)) {
+        if (!wasComplete && isUserProfileComplete(saved)) {
           const params = new URLSearchParams(window.location.search);
           const returnTo = params.get('returnTo');
           if (returnTo && returnTo.startsWith('/')) {

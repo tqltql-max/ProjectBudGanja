@@ -35,6 +35,43 @@ document.addEventListener('DOMContentLoaded', async () => {
   let saveTimer = null;
   let liveStatusTimer = null;
 
+  function sanitizeUsername(raw) {
+    const base = String(raw || '')
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9._-]/g, '')
+      .replace(/[._-]{2,}/g, '-')
+      .replace(/^[._-]+|[._-]+$/g, '');
+    if (base.length < 3 || base.length > 32) return '';
+    return base;
+  }
+
+  function calculateAgeFromBirthDate(raw) {
+    const text = String(raw || '').trim();
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(text)) return null;
+    const birth = new Date(text + 'T00:00:00.000Z');
+    if (isNaN(birth.getTime())) return null;
+    const now = new Date();
+    let age = now.getUTCFullYear() - birth.getUTCFullYear();
+    const monthDiff = now.getUTCMonth() - birth.getUTCMonth();
+    const dayDiff = now.getUTCDate() - birth.getUTCDate();
+    if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) age -= 1;
+    if (age < 0 || age > 120) return null;
+    return age;
+  }
+
+  function isProfileCompleteForPlanning(userData) {
+    if (!userData) return false;
+    if (typeof userData.profileComplete === 'boolean') return userData.profileComplete;
+    const profile = userData.profile || {};
+    const nameOk = String(profile.displayName || '').trim().length >= 2;
+    const usernameOk = !!sanitizeUsername(profile.username || userData.username || '');
+    const age = calculateAgeFromBirthDate(profile.birthDate || userData.birthDate || '')
+      || (profile.age != null ? Number(profile.age) : null);
+    const ageOk = age != null && !isNaN(age) && age >= 18;
+    return nameOk && usernameOk && ageOk;
+  }
+
   function escapeHtml(text) {
     return String(text)
       .replace(/&/g, '&amp;')
@@ -250,10 +287,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
       }
       user = meData;
-      const profile = meData.profile || {};
-      const nameOk = String(profile.displayName || '').trim().length >= 2;
-      const ageOk = profile.age != null && profile.age >= 18;
-      if (!nameOk || !ageOk) {
+      if (!isProfileCompleteForPlanning(meData)) {
         showView('onboarding');
         return;
       }

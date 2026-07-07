@@ -7,17 +7,17 @@
     <meta property="og:title" content="Minha conta | Inspetor BudGanja">
     <meta property="og:description" content="Gerir nome, idade e foto de perfil. O diário de pesquisas fica no módulo dedicado.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/imagens/icon-512.png?v=208">
-    <link rel="icon" href="/favicon.svg?v=208" type="image/svg+xml">
-    <link rel="icon" href="/imagens/favicon-32.png?v=208" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.png?v=208" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=208">
+    <meta property="og:image" content="/imagens/icon-512.png?v=209">
+    <link rel="icon" href="/favicon.svg?v=209" type="image/svg+xml">
+    <link rel="icon" href="/imagens/favicon-32.png?v=209" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=209" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=209">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#3d5c28">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="stylesheet" href="/css/style.css?v=208">
+    <link rel="stylesheet" href="/css/style.css?v=209">
     <meta name="robots" content="noindex,nofollow">
     <title>Minha conta | Inspetor BudGanja</title>
 </head>
@@ -49,7 +49,7 @@
       <section id="perfil-onboarding" class="perfil-onboarding info-panel highlight-card" aria-labelledby="perfil-form-title">
         <h2 id="perfil-form-title">Completar cadastro</h2>
         <p id="perfil-onboarding-intro" class="page-intro">
-          Informe seu nome e idade para aceder ao site. Conteúdo exclusivo para <strong>maiores de 18 anos</strong>.
+          Primeira etapa: informe apenas o essencial para activar a conta. O complemento do perfil pode ser feito depois.
         </p>
         <form id="perfil-form" class="login-form">
           <fieldset class="perfil-avatar-field">
@@ -75,10 +75,13 @@
           <label class="login-field conta-field" for="profile-displayName">Nome
             <input type="text" id="profile-displayName" name="displayName" maxlength="80" required autocomplete="name" placeholder="Como quer ser chamado">
           </label>
-          <label class="login-field conta-field" for="profile-age">Idade
-            <input type="number" id="profile-age" name="age" min="18" max="120" required inputmode="numeric" placeholder="18 ou mais">
+          <label class="login-field conta-field" for="profile-username">Nome de utilizador
+            <input type="text" id="profile-username" name="username" maxlength="32" required autocomplete="username" placeholder="ex.: cultivador.br">
           </label>
-          <p class="perfil-age-notice">Menores de 18 anos não podem utilizar este site.</p>
+          <label class="login-field conta-field" for="profile-birthDate">Data de nascimento
+            <input type="date" id="profile-birthDate" name="birthDate" required>
+          </label>
+          <p class="perfil-age-notice" id="profile-age-preview">Menores de 18 anos não podem utilizar este site.</p>
           <div class="conta-actions">
             <button type="submit" class="botao" id="perfil-save-btn">Guardar e continuar</button>
             <button type="button" class="botao botao-outline" id="perfil-cancel-edit-btn" hidden>Voltar</button>
@@ -89,7 +92,7 @@
 
       <section id="perfil-account" class="perfil-account info-panel highlight-card" hidden aria-labelledby="perfil-account-title">
         <h2 id="perfil-account-title">Conta activa</h2>
-        <p class="page-intro">Gerencie o seu laboratório pessoal: documente pesquisas de cultivo e planeie a infraestrutura antes de comprar equipamentos.</p>
+        <p class="page-intro">Conta activada. Agora pode usar o laboratório e complementar o perfil a qualquer momento sem bloquear o acesso.</p>
         <div class="conta-actions perfil-account-actions perfil-lab-links">
           <a href="/cultivo/" class="botao">📓 Diário de Pesquisas</a>
           <a href="/planejamento/" class="botao botao-outline">🛠️ Planejamento de infraestrutura</a>
@@ -100,13 +103,13 @@
   </main>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=208"></script>
-    <script src="/js/i18n-data.js?v=208"></script>
-    <script src="/js/i18n.js?v=208"></script>
-    <script src="/js/ferramentas-nav-data.js?v=208"></script>
-    <script src="/js/layout.js?v=208"></script>
-    <script src="/js/site-features.js?v=208"></script>
-  <script src="/js/perfil.js?v=208"></script>
+  <script src="/js/app-version-check.js?v=209"></script>
+    <script src="/js/i18n-data.js?v=209"></script>
+    <script src="/js/i18n.js?v=209"></script>
+    <script src="/js/ferramentas-nav-data.js?v=209"></script>
+    <script src="/js/layout.js?v=209"></script>
+    <script src="/js/site-features.js?v=209"></script>
+  <script src="/js/perfil.js?v=209"></script>
 
 </body>
 </html>

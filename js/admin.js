@@ -162,6 +162,41 @@ function escapeAttr(s) {
   return escapeText(s).replace(/"/g, '&quot;');
 }
 
+function flashAdmin(message, kind) {
+  if (window.adminToast) {
+    window.adminToast(message, kind || 'ok');
+    return;
+  }
+  console.log(message);
+}
+
+async function copyTextToClipboard(text) {
+  const value = String(text || '');
+  if (!value) return false;
+
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      await navigator.clipboard.writeText(value);
+      return true;
+    }
+  } catch (e) { /* fallback */ }
+
+  try {
+    const field = document.createElement('textarea');
+    field.value = value;
+    field.setAttribute('readonly', 'readonly');
+    field.style.position = 'absolute';
+    field.style.left = '-9999px';
+    document.body.appendChild(field);
+    field.select();
+    const copied = document.execCommand('copy');
+    field.remove();
+    return copied;
+  } catch (e) {
+    return false;
+  }
+}
+
 function insertAtCursor(textarea, text) {
   const start = textarea.selectionStart;
   const end = textarea.selectionEnd;
@@ -336,6 +371,48 @@ function initPostsPanel() {
     updatePreview();
   }
 
+  function duplicatePost(post) {
+    if (!post) return;
+    resetForm();
+    fillForm(Object.assign({}, post, {
+      slug: '',
+      title: (post.title || 'Publicação') + ' (cópia)',
+      published: false
+    }));
+    history.replaceState({}, '', '/admin.html?new=1');
+    showView('edit');
+    flashAdmin('Duplicado como rascunho. Ajuste o título antes de publicar.', 'ok');
+  }
+
+  async function togglePublished(post) {
+    if (!post) return;
+    const nextPublished = post.published === false;
+    const res = await fetch('/api/posts/' + post.slug, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
+      body: JSON.stringify({
+        title: post.title || '',
+        excerpt: post.excerpt || '',
+        coverImage: post.coverImage || '',
+        category: post.category || 'pesquisa',
+        content: post.content_raw || post.content || '',
+        format: post.format || 'markdown',
+        published: nextPublished,
+        series: post.series || '',
+        seriesLabel: post.seriesLabel || ''
+      })
+    });
+
+    if (!res.ok) {
+      flashAdmin('Não foi possível alterar o estado da publicação.', 'warn');
+      return;
+    }
+
+    await loadPosts();
+    flashAdmin(nextPublished ? 'Publicação marcada como publicada.' : 'Publicação movida para rascunho.', 'ok');
+  }
+
   function openEditor(post) {
     if (post) {
       fillForm(post);
@@ -422,6 +499,9 @@ function initPostsPanel() {
       const statusClass = isDraft ? 'admin-tag-draft' : 'admin-tag-live';
       const statusLabel = isDraft ? 'Rascunho' : 'Publicada';
       const isActive = editingSlug === p.slug && currentView === 'edit';
+      const viewLabel = isDraft ? 'Link público indisponível' : 'Ver no site';
+      const copyLabel = isDraft ? 'Copiar link da edição' : 'Copiar link público';
+      const toggleLabel = isDraft ? 'Publicar' : 'Transformar em rascunho';
 
       html +=
         '<article class="admin-studio-row' + (isActive ? ' is-active' : '') + '" role="row" data-slug="' + escapeAttr(p.slug) + '">' +
@@ -434,34 +514,97 @@ function initPostsPanel() {
           '<div class="admin-studio-cell admin-studio-cell--status" role="cell"><span class="admin-tag ' + statusClass + '">' + statusLabel + '</span></div>' +
           '<div class="admin-studio-cell admin-studio-cell--date" role="cell">' + escapeText(formatDatePtBR(p.date)) + '</div>' +
           '<div class="admin-studio-cell admin-studio-cell--actions" role="cell">' +
-            '<button type="button" class="edit-btn botao admin-secondary">Editar</button>' +
-            (isDraft ? '' : '<a href="' + escapeAttr(p.url) + '" target="_blank" rel="noopener" class="botao admin-secondary">Ver</a>') +
-            '<button type="button" class="delete-btn admin-danger">Excluir</button>' +
+            '<details class="admin-row-menu">' +
+              '<summary class="admin-row-menu-toggle" aria-label="Abrir menu de ações">⋯</summary>' +
+              '<div class="admin-row-menu-panel" role="menu" aria-label="Ações da publicação">' +
+                '<button type="button" class="admin-row-menu-item" data-post-action="edit">Editar</button>' +
+                (isDraft
+                  ? '<span class="admin-row-menu-item admin-row-menu-item--disabled" aria-disabled="true">' + viewLabel + '</span>'
+                  : '<a href="' + escapeAttr(p.url) + '" target="_blank" rel="noopener" class="admin-row-menu-item" data-post-action="view">' + viewLabel + '</a>') +
+                '<button type="button" class="admin-row-menu-item" data-post-action="toggle-published">' + toggleLabel + '</button>' +
+                '<button type="button" class="admin-row-menu-item" data-post-action="duplicate">Duplicar</button>' +
+                '<button type="button" class="admin-row-menu-item" data-post-action="copy-link">' + copyLabel + '</button>' +
+                '<button type="button" class="admin-row-menu-item admin-row-menu-item--danger" data-post-action="delete">Excluir</button>' +
+              '</div>' +
+            '</details>' +
           '</div>' +
         '</article>';
     });
 
     postsTable.innerHTML = html;
 
+    postsTable.querySelectorAll('img.admin-studio-thumb').forEach((img) => {
+      img.addEventListener('error', () => {
+        const fallback = document.createElement('span');
+        fallback.className = 'admin-studio-thumb admin-studio-thumb--empty';
+        fallback.setAttribute('aria-hidden', 'true');
+        fallback.textContent = '🖼️';
+        img.replaceWith(fallback);
+      }, { once: true });
+    });
+
     postsTable.querySelectorAll('.admin-studio-row[data-slug]').forEach((row) => {
       const slug = row.getAttribute('data-slug');
       const post = cachedPosts.find((x) => x.slug === slug);
       if (!post) return;
 
-      row.querySelector('.edit-btn').addEventListener('click', (e) => {
-        e.stopPropagation();
-        openEditor(post);
-      });
-
       row.addEventListener('click', (e) => {
-        if (e.target.closest('a, button')) return;
+        if (e.target.closest('a, button, summary, details')) return;
         openEditor(post);
       });
+    });
 
-      const delBtn = row.querySelector('.delete-btn');
-      if (delBtn) {
-        delBtn.addEventListener('click', async (e) => {
-          e.stopPropagation();
+    postsTable.querySelectorAll('.admin-row-menu').forEach((menu) => {
+      menu.addEventListener('toggle', () => {
+        if (!menu.open) return;
+        postsTable.querySelectorAll('.admin-row-menu[open]').forEach((other) => {
+          if (other !== menu) other.removeAttribute('open');
+        });
+      });
+    });
+
+    postsTable.querySelectorAll('[data-post-action]').forEach((actionEl) => {
+      actionEl.addEventListener('click', async (e) => {
+        e.stopPropagation();
+        if (actionEl.tagName === 'A') e.preventDefault();
+        const row = actionEl.closest('.admin-studio-row[data-slug]');
+        if (!row) return;
+        const slug = row.getAttribute('data-slug');
+        const post = cachedPosts.find((x) => x.slug === slug);
+        if (!post) return;
+
+        const menu = actionEl.closest('.admin-row-menu');
+        if (menu) menu.removeAttribute('open');
+
+        const action = actionEl.getAttribute('data-post-action');
+        if (action === 'edit') {
+          openEditor(post);
+          return;
+        }
+
+        if (action === 'view') {
+          window.open(post.url, '_blank', 'noopener');
+          return;
+        }
+
+        if (action === 'duplicate') {
+          duplicatePost(post);
+          return;
+        }
+
+        if (action === 'toggle-published') {
+          await togglePublished(post);
+          return;
+        }
+
+        if (action === 'copy-link') {
+          const link = post.published === false ? '/admin.html?slug=' + encodeURIComponent(post.slug) : post.url;
+          const ok = await copyTextToClipboard(link);
+          flashAdmin(ok ? 'Link copiado para a área de transferência.' : 'Não foi possível copiar o link.', ok ? 'ok' : 'warn');
+          return;
+        }
+
+        if (action === 'delete') {
           if (!confirm('Excluir "' + (post.title || 'esta publicação') + '"?')) return;
           const res = await fetch('/api/posts/' + post.slug, { method: 'DELETE', credentials: 'include' });
           if (!res.ok) {
@@ -470,8 +613,8 @@ function initPostsPanel() {
           }
           if (editingSlug === post.slug) closeEditor();
           await loadPosts();
-        });
-      }
+        }
+      });
     });
   }
 

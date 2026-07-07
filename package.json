@@ -56,7 +56,9 @@
     "test:cultivo": "node scripts/test-cultivo-persistence.js",
     "test:cultivo-submissions": "node scripts/test-cultivo-submissions.js",
     "test:users-admin": "node scripts/test-users-admin.js",
-    "test": "node scripts/test-lib-unit.js && node scripts/test-db-persistence.js && node scripts/test-cultivo-persistence.js && node scripts/test-cultivo-submissions.js && node scripts/test-users-admin.js",
+    "test:api:contract": "node scripts/test-api-contract-persistence.js",
+    "check:db:naming": "node scripts/check-db-naming.js",
+    "test": "node scripts/test-lib-unit.js && node scripts/test-db-persistence.js && node scripts/test-cultivo-persistence.js && node scripts/test-cultivo-submissions.js && node scripts/test-users-admin.js && node scripts/test-api-contract-persistence.js",
 
     "verify": "node scripts/verify.js",
 

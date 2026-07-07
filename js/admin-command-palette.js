@@ -222,10 +222,9 @@
     if (!nav) return;
     const btn = document.createElement('button');
     btn.type = 'button';
-    btn.className = 'admin-nav-link';
-    btn.style.cssText = 'background:none;border:none;cursor:pointer;opacity:.7;';
+    btn.className = 'admin-nav-link admin-nav-link--search';
     btn.title = 'Paleta de comandos (Ctrl+K)';
-    btn.textContent = '⌕ Pesquisar';
+    btn.textContent = 'Pesquisar';
     btn.addEventListener('click', open);
     nav.appendChild(btn);
   });

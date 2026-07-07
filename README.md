@@ -67,8 +67,10 @@ Detalhes: [`docs/GIT.md`](docs/GIT.md) · copie `.env.example` → `.env`
 | `npm run build:sitemap` | Gera `sitemap.xml` (usa `SITE_URL` ou URL Netlify) |
 | `npm run build:assetlinks` | Gera `.well-known/assetlinks.json` (TWA / Play Store) |
 | `npm run test:lib` | Testes unitários (merge inspeções, calculadoras) |
+| `npm run test:api:contract` | Valida contrato de payload da API admin (camelCase canônico) |
 | `npm run test:site` | Testes HTTP com servidor a correr (`npm start` noutro terminal) |
 | `npm run check:assetlinks` | Valida TWA / `.well-known/assetlinks.json` |
+| `npm run check:db:naming` | Audita tabelas/colunas SQL para manter naming `snake_case` consistente |
 | `npm run db:backup:external` | Cópia de `data/budganja.db` para `~/BudGanjaBackups/` |
 
 ### Build e deploy
@@ -236,6 +238,7 @@ deploy\start-now.ps1  # migra + build + servidor
 |---------|--------|
 | `npm run db:migrate` | Schema + importação JSON legado |
 | `npm run test:db` | Testa gravação em `posts`, `pages`, `users`, `sorteio_entries`, etc. |
+| `npm run check:db:naming` | Audita tabelas e colunas SQL para manter naming `snake_case` consistente |
 | `npm run db:backup` | Cópia em `data/backups/budganja-YYYY-MM-DD.db` |
 | `npm run db:backup:external` | Cópia **fora do repo** (`~/BudGanjaBackups/` — ver [`docs/GIT.md`](docs/GIT.md)) |
 | DB Browser for SQLite | Abrir `data/budganja.db` (pare o servidor antes) |

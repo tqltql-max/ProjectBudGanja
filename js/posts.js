@@ -16,6 +16,7 @@ function normalizePostUrl(url) {
 var SERIES_LABELS = {
   'guia-cultivo-basico': 'Guia de Cultivo Básico',
   'canal-jardimhg': 'Canal Jardim HG',
+  'canal-inspetorbudganja': 'Canal Inspetor BudGanja',
   '': 'Todas as séries'
 };
 

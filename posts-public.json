@@ -30,6 +30,21 @@
     "seriesLabel": "Guia de Cultivo Básico"
   },
   {
+    "title": "Inspeção: Canal Inspetor BudGanja (@InspetorBudGanja)",
+    "excerpt": "Auditoria editorial do canal oficial — 7 vídeos catalogados como trilha técnica do laboratório, com foco em conhecimento científico aplicado e integração com as ferramentas do projeto.",
+    "excerptEn": "",
+    "excerptEs": "",
+    "slug": "inspecao-canal-inspetorbudganja",
+    "url": "/posts/post-inspecao-canal-inspetorbudganja.html",
+    "date": "2026-07-06T12:00:00.000Z",
+    "filename": "posts/post-inspecao-canal-inspetorbudganja.html",
+    "coverImage": "https://i.ytimg.com/vi/38uUEL1B-v4/hqdefault.jpg",
+    "category": "inspecao",
+    "series": "canal-inspetorbudganja",
+    "seriesOrder": 3,
+    "seriesLabel": "Canal Inspetor BudGanja"
+  },
+  {
     "title": "Inspeção: Solo Vivo Orgânico",
     "excerpt": "Verificação da construção de super-solo com microbioma ativo, ciclagem de nutrientes e indicadores de saúde do substrato.",
     "excerptEn": "Living soil audit — organic substrate, microbiology and sustainable buffering.",
@@ -111,7 +126,7 @@
     "excerptEs": "",
     "slug": "inspecao-canal-jardimhg",
     "url": "/posts/post-inspecao-canal-jardimhg.html",
-    "date": "2026-07-05T12:00:00.000Z",
+    "date": "2026-07-06T12:00:00.000Z",
     "filename": "posts/post-inspecao-canal-jardimhg.html",
     "coverImage": "https://i.ytimg.com/vi/yCBfY-Rg81g/hqdefault.jpg",
     "category": "inspecao",

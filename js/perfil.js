@@ -74,20 +74,82 @@ document.addEventListener('DOMContentLoaded', async () => {
     return String(raw).trim().split(/\s+/)[0] || 'Cultivador';
   }
 
+  function sanitizeUsername(raw) {
+    const base = String(raw || '')
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9._-]/g, '')
+      .replace(/[._-]{2,}/g, '-')
+      .replace(/^[._-]+|[._-]+$/g, '');
+    if (base.length < 3 || base.length > 32) return '';
+    return base;
+  }
+
+  function calculateAgeFromBirthDate(raw) {
+    const text = String(raw || '').trim();
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(text)) return null;
+    const birth = new Date(text + 'T00:00:00.000Z');
+    if (isNaN(birth.getTime())) return null;
+    const now = new Date();
+    let age = now.getUTCFullYear() - birth.getUTCFullYear();
+    const monthDiff = now.getUTCMonth() - birth.getUTCMonth();
+    const dayDiff = now.getUTCDate() - birth.getUTCDate();
+    if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) age -= 1;
+    if (age < 0 || age > 120) return null;
+    return age;
+  }
+
+  function resolvedProfileAge(profile) {
+    if (!profile) return null;
+    const byBirthDate = calculateAgeFromBirthDate(profile.birthDate);
+    if (byBirthDate != null) return byBirthDate;
+    const raw = profile.age;
+    if (raw === null || raw === undefined || raw === '') return null;
+    const parsed = parseInt(raw, 10);
+    if (isNaN(parsed)) return null;
+    return parsed;
+  }
+
+  function isUserProfileComplete(data) {
+    if (!data) return false;
+    if (typeof data.profileComplete === 'boolean') return data.profileComplete;
+    return isProfileComplete(data.profile);
+  }
+
   function isProfileComplete(profile) {
     if (!profile) return false;
     const name = String(profile.displayName || '').trim();
-    const age = profile.age;
-    return name.length >= 2 && age !== null && !isNaN(age) && age >= MIN_USER_AGE;
+    const username = sanitizeUsername(profile.username || '');
+    const age = resolvedProfileAge(profile);
+    return name.length >= 2 && !!username && age !== null && !isNaN(age) && age >= MIN_USER_AGE;
+  }
+
+  function refreshAgePreview() {
+    const birthDateEl = document.getElementById('profile-birthDate');
+    const previewEl = document.getElementById('profile-age-preview');
+    if (!previewEl) return;
+    const age = calculateAgeFromBirthDate(birthDateEl && birthDateEl.value);
+    if (age == null) {
+      previewEl.textContent = 'Menores de 18 anos não podem utilizar este site.';
+      return;
+    }
+    previewEl.textContent = age >= MIN_USER_AGE
+      ? 'Idade detectada: ' + age + ' anos.'
+      : 'É necessário ter 18 anos ou mais (actual: ' + age + ').';
   }
 
   function validateRegistrationForm() {
     const nameEl = document.getElementById('profile-displayName');
-    const ageEl = document.getElementById('profile-age');
+    const usernameEl = document.getElementById('profile-username');
+    const birthDateEl = document.getElementById('profile-birthDate');
     const name = nameEl ? nameEl.value.trim() : '';
-    const age = ageEl ? parseInt(ageEl.value, 10) : NaN;
+    const username = sanitizeUsername(usernameEl && usernameEl.value);
+    const age = calculateAgeFromBirthDate(birthDateEl && birthDateEl.value);
     if (name.length < 2) {
       return 'Informe um nome válido (mínimo 2 caracteres).';
+    }
+    if (!username) {
+      return 'Use um nome de utilizador válido (3-32, letras, números, . _ -).';
     }
     if (isNaN(age) || age < MIN_USER_AGE) {
       return 'É necessário ter 18 anos ou mais para utilizar o site.';
@@ -353,13 +415,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function readForm() {
     const nameEl = document.getElementById('profile-displayName');
-    const ageEl = document.getElementById('profile-age');
+    const usernameEl = document.getElementById('profile-username');
+    const birthDateEl = document.getElementById('profile-birthDate');
     const base = user && user.profile ? Object.assign({}, user.profile) : {};
     if (nameEl) base.displayName = nameEl.value.trim();
-    if (ageEl && ageEl.value !== '') {
-      const age = parseInt(ageEl.value, 10);
-      base.age = isNaN(age) ? null : age;
-    }
+    if (usernameEl) base.username = sanitizeUsername(usernameEl.value);
+    if (birthDateEl) base.birthDate = String(birthDateEl.value || '').trim();
+    base.age = calculateAgeFromBirthDate(base.birthDate);
     if (avatarUrlEl) {
       const picked = avatarUrlEl.value.trim();
       if (picked) base.avatarUrl = picked;
@@ -370,13 +432,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   function fillForm(profile) {
     const p = profile || {};
     const nameEl = document.getElementById('profile-displayName');
-    const ageEl = document.getElementById('profile-age');
+    const usernameEl = document.getElementById('profile-username');
+    const birthDateEl = document.getElementById('profile-birthDate');
     if (nameEl) {
       nameEl.value = p.displayName || (user && user.name) || '';
     }
-    if (ageEl) {
-      ageEl.value = p.age != null && !isNaN(p.age) ? String(p.age) : '';
+    if (usernameEl) {
+      usernameEl.value = p.username || (user && user.username) || '';
     }
+    if (birthDateEl) {
+      birthDateEl.value = p.birthDate || (user && user.birthDate) || '';
+    }
+    refreshAgePreview();
     fillAvatarFields(p, user);
   }
 
@@ -397,8 +464,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     if (onboardingIntro) {
       onboardingIntro.innerHTML = isEdit
-        ? 'Altere seu nome, idade ou foto de perfil. O site é exclusivo para <strong>maiores de 18 anos</strong>.'
-        : 'Informe seu nome, idade e escolha uma foto para aceder ao site. Conteúdo exclusivo para <strong>maiores de 18 anos</strong>.';
+        ? 'Altere nome, username, data de nascimento ou foto. O site é exclusivo para <strong>maiores de 18 anos</strong>.'
+        : 'Primeira etapa: nome, username e data de nascimento. O resto pode completar depois.';
     }
     onboardingEl && onboardingEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
@@ -410,6 +477,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
       const accountPayload = {
         displayName: payload.displayName,
+        username: payload.username,
+        birthDate: payload.birthDate,
         age: payload.age,
         avatarUrl: payload.avatarUrl
       };
@@ -428,6 +497,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (data.user && data.user.profile) {
         const merged = Object.assign({}, data.user.profile);
         if (payload.displayName !== undefined) merged.displayName = payload.displayName;
+        if (payload.username !== undefined) merged.username = payload.username;
+        if (payload.birthDate !== undefined) merged.birthDate = payload.birthDate;
         if (payload.age !== undefined) merged.age = payload.age;
         if (payload.avatarUrl !== undefined) merged.avatarUrl = payload.avatarUrl;
         data.user.profile = merged;
@@ -477,7 +548,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (appEl) appEl.hidden = false;
       renderUser(data);
 
-      if (isProfileComplete(data.profile)) {
+      if (isUserProfileComplete(data)) {
         if (redirectIfReturnTo()) return;
         showAccountView();
       } else {
@@ -515,11 +586,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       try {
         const formData = readForm();
-        const wasComplete = user && user.profile && isProfileComplete(user.profile);
+        const wasComplete = isUserProfileComplete(user);
         const saved = await saveProfilePayload(formData, formStatus);
         if (!saved) return;
 
-        if (!wasComplete && isProfileComplete(saved.profile)) {
+        if (!wasComplete && isUserProfileComplete(saved)) {
           if (redirectIfReturnTo()) return;
           setStatus(formStatus, 'Conta activa!');
           showAccountView();
@@ -569,5 +640,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   await initAvatarPicker();
+  const birthDateInput = document.getElementById('profile-birthDate');
+  if (birthDateInput) birthDateInput.addEventListener('input', refreshAgePreview);
   loadUser();
 });
