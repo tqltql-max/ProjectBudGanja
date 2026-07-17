@@ -63,7 +63,7 @@ window.__CULTIVO_PHASE_WEEKS__ = {
       "focus": "Últimos detalhes antes da germinação.",
       "tasks": [
         "Calibrar medidor de pH/EC se aplicável",
-        "Preparar diário de pesquisas no painel",
+        "Preparar diário de cultivo no painel",
         "Assistir ao guia em vídeo — introdução"
       ],
       "tools": [

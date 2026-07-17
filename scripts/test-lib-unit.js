@@ -32,6 +32,7 @@ const channelSlugs = CHANNEL_INSPECOES_POSTS.map((p) => p.slug);
 
 assert('merge inclui inspeções guia', guiaSlugs.every((s) => merged.some((p) => p.slug === s)));
 assert('merge inclui inspeção Jardim HG', merged.some((p) => p.slug === 'inspecao-canal-jardimhg'));
+assert('merge inclui inspeção canal oficial', merged.some((p) => p.slug === 'inspecao-canal-inspetorbudganja'));
 assert('merge mantém ventilação', merged.some((p) => p.slug === 'inspecao-ventilacao-tenda'));
 assert('merge não duplica slugs', merged.length === new Set(merged.map((p) => p.slug)).size);
 
@@ -40,11 +41,14 @@ const firstGuia = inspecoes.find((p) => p.slug === 'inspecao-cultivo-inicio');
 assert('seriesOrder guia #1', firstGuia && firstGuia.seriesOrder === 1);
 const jardim = inspecoes.find((p) => p.slug === 'inspecao-canal-jardimhg');
 assert('Jardim HG seriesOrder 10', jardim && jardim.seriesOrder === 10);
+const canalOficial = inspecoes.find((p) => p.slug === 'inspecao-canal-inspetorbudganja');
+assert('canal oficial seriesOrder 3', canalOficial && canalOficial.seriesOrder === 3);
 
 const jardimCatalog = JSON.parse(require('fs').readFileSync(require('path').join(ROOT, 'content/channels/jardimhg.json'), 'utf8'));
 assert('Jardim HG catálogo >= 30 vídeos', (jardimCatalog.videoCount || jardimCatalog.videos?.length || 0) >= 30);
 
 assert('7 posts guia', GUIA_INSPECOES_POSTS.length === 7);
+assert('2 inspeções de canal', CHANNEL_INSPECOES_POSTS.length === 2);
 assert('posts guia têm @youtube ou body', GUIA_INSPECOES_POSTS.every((p) => /@youtube\s+\S+/.test(p.content_raw || '')));
 
 const { buildVideoObjectJson } = require('../lib/inspecao-post-extras.js');

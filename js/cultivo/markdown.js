@@ -73,7 +73,7 @@
     var lines = [
       '# ' + title,
       '',
-      '> Pesquisa de cultivo documentada no Diário de Pesquisas — Inspetor BudGanja',
+      '> Pesquisa de cultivo documentada no Diário de Cultivo — Inspetor BudGanja',
       '> Submetida em ' + new Date().toLocaleDateString('pt-BR'),
       '',
       '## Metadados',

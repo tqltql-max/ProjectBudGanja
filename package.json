@@ -17,6 +17,7 @@
     "start:quick": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-dev.ps1",
 
     "start:quick:tunnel": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-dev.ps1 -Tunnel",
+
     "deploy:online": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-site.ps1",
 
     "build": "node scripts/build.js",
@@ -42,7 +43,9 @@
     "build:assetlinks": "node scripts/build-assetlinks.js",
 
     "test:site": "node scripts/test-site.js",
+
     "test:lib": "node scripts/test-lib-unit.js",
+
     "check:assetlinks": "node scripts/check-assetlinks.js",
 
     "db:migrate": "node scripts/db-migrate.js",
@@ -50,13 +53,22 @@
     "db:cleanup": "node scripts/db-cleanup-test-artifacts.js",
 
     "db:backup": "node scripts/db-backup.js",
+
     "db:backup:external": "node scripts/db-backup-external.js",
 
     "test:db": "node scripts/test-db-persistence.js",
+
     "test:cultivo": "node scripts/test-cultivo-persistence.js",
+
     "test:cultivo-submissions": "node scripts/test-cultivo-submissions.js",
+
     "test:users-admin": "node scripts/test-users-admin.js",
-    "test": "node scripts/test-lib-unit.js && node scripts/test-db-persistence.js && node scripts/test-cultivo-persistence.js && node scripts/test-cultivo-submissions.js && node scripts/test-users-admin.js",
+
+    "test:api:contract": "node scripts/test-api-contract-persistence.js",
+
+    "check:db:naming": "node scripts/check-db-naming.js",
+
+    "test": "node scripts/test-lib-unit.js && node scripts/test-db-persistence.js && node scripts/test-cultivo-persistence.js && node scripts/test-cultivo-submissions.js && node scripts/test-users-admin.js && node scripts/test-api-contract-persistence.js",
 
     "verify": "node scripts/verify.js",
 
@@ -69,6 +81,8 @@
     "@libsql/client": "^0.15.15",
 
     "@netlify/blobs": "^8.1.0",
+
+    "png-to-ico": "^3.0.2",
 
     "sharp": "^0.35.2"
 

@@ -5,9 +5,26 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
   <title>Painel Admin | Inspetor BudGanja</title>
-  <link rel="icon" href="/favicon.svg?v=208" type="image/svg+xml">
-  <link rel="stylesheet" href="/css/style.css?v=208">
+    <link rel="icon" href="/imagens/icon-192.png?v=217" sizes="192x192" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.png?v=217" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-32.png?v=217" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=217" sizes="16x16" type="image/png">
+    <link rel="shortcut icon" href="/favicon.ico?v=217" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=217" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=217">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3d5c28">
+    <link rel="stylesheet" href="/css/style.css?v=217">
   <script>(function(){var t=localStorage.getItem('budganja-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+  <style>
+    .admin-charts-row { display:flex; gap:12px; flex-wrap:wrap; margin:0 0 20px; }
+    .admin-chart-card { background:var(--color-card); border:1px solid var(--color-border); border-radius:var(--radius); padding:12px 14px; display:flex; flex-direction:column; gap:6px; min-width:140px; }
+    .admin-chart-card--center { align-items:center; }
+    .admin-chart-label { font-size:.68rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--color-text-muted); }
+    .admin-chart-donut-legend { display:flex; flex-direction:column; gap:2px; font-size:.72rem; color:var(--color-text-muted); margin-top:4px; }
+    .admin-sse-dot { width:7px; height:7px; border-radius:50%; background:#7a9968; display:inline-block; margin-right:4px; transition:background .3s; }
+    .admin-sse-dot.live { background:#5ab43c; box-shadow:0 0 6px #5ab43c; }
+  </style>
 </head>
 <body data-page="admin">
   <div id="site-header"></div>
@@ -16,7 +33,7 @@
       <div class="admin-hub-intro">
         <p class="admin-hub-eyebrow">Área administrativa</p>
         <h1>Painel de publicações</h1>
-        <p class="admin-hub-sub">Olá, <strong id="admin-user">admin</strong> — gere artigos, <a href="/sorteios-admin.html">sorteios</a> ou <a href="/loja-admin.html">encomendas da loja</a>.</p>
+        <p class="admin-hub-sub">Olá, <strong id="admin-user">admin</strong> — gere artigos, sorteios ou encomendas da loja.</p>
       </div>
       <div class="admin-hub-actions">
         <a href="/" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Ver site</a>
@@ -31,12 +48,13 @@
       <a href="/sorteios-admin.html" class="admin-nav-link">Sorteios</a>
       <a href="/loja-admin.html" class="admin-nav-link">Encomendas</a>
       <a href="/admin-db.html" class="admin-nav-link">Base de Dados</a>
-      <button type="button" id="show-icons-btn" class="admin-nav-link" style="background:none;border:none;cursor:pointer;">🎨 Ícones</button>
+      <button type="button" id="show-icons-btn" class="admin-nav-link admin-nav-link--icon">🎨 Ícones</button>
     </nav>
 
     <!-- Vista: biblioteca -->
     <section id="admin-list-view" class="admin-studio">
       <div id="admin-stats" class="admin-stats-grid" aria-label="Resumo das publicações"></div>
+      <div id="admin-charts" class="admin-charts-row" aria-label="Gráficos"></div>
 
       <div class="admin-studio-toolbar">
         <div class="admin-studio-filters">
@@ -169,7 +187,7 @@
     <!-- Vista: ícones do site -->
     <section id="admin-icons-view" class="admin-studio" hidden>
       <h2 class="admin-section-title" style="margin-bottom:1.5rem;">🎨 Ícones do Site</h2>
-      <p class="result-muted" style="margin-bottom:1.5rem;">Carregue uma imagem PNG/JPG/WebP (mínimo 512×512 px recomendado). O sistema gera automaticamente todos os tamanhos e atualiza a versão do cache.</p>
+      <p class="result-muted" style="margin-bottom:1.5rem;">Carregue uma imagem PNG/JPG/WebP (mínimo 512×512 px recomendado). Gera app, favicon, aba do browser e logo do site. O ícone no Google pode demorar dias a atualizar (cache deles).</p>
 
       <div style="display:flex;gap:2rem;flex-wrap:wrap;align-items:flex-start;margin-bottom:2rem;">
         <div>
@@ -199,14 +217,15 @@
 
   </main>
   <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=208"></script>
-  <script src="/js/ferramentas-nav-data.js?v=208"></script>
-    <script src="/js/i18n-data.js?v=208"></script>
-    <script src="/js/i18n.js?v=208"></script>
-    <script src="/js/ferramentas-nav-data.js?v=208"></script>
-  <script src="/js/layout.js?v=208"></script>
-  <script src="/js/youtube.js?v=208"></script>
-  <script src="/js/markdown.js?v=208"></script>
-  <script src="/js/admin.js?v=208"></script>
+  <script src="/js/app-version-check.js?v=217"></script>
+  <script src="/js/ferramentas-nav-data.js?v=217"></script>
+  <script src="/js/i18n-data.js?v=217"></script>
+  <script src="/js/i18n.js?v=217"></script>
+  <script src="/js/layout.js?v=217"></script>
+  <script src="/js/youtube.js?v=217"></script>
+  <script src="/js/markdown.js?v=217"></script>
+  <script src="/js/admin-charts.js?v=217"></script>
+  <script src="/js/admin.js?v=217"></script>
+  <script src="/js/admin-command-palette.js?v=217"></script>
 </body>
 </html>

@@ -91,9 +91,12 @@ function buildCalcPage(calc) {
     <meta property="og:title" content="${escapeHtml(calc.title)} | Inspetor BudGanja">
     <meta property="og:description" content="${escapeHtml(calc.description)}">
     <meta property="og:type" content="website">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/imagens/icon-192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.png" sizes="48x48" type="image/png">
     <link rel="icon" href="/imagens/favicon-32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/imagens/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="shortcut icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#3d5c28">
@@ -162,9 +165,12 @@ function buildHubIndex() {
     <meta property="og:title" content="Ferramentas | Inspetor BudGanja">
     <meta property="og:description" content="Super Calc, luxímetro e Super Solo — ferramentas numéricas para cultivo.">
     <meta property="og:type" content="website">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/imagens/icon-192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.png" sizes="48x48" type="image/png">
     <link rel="icon" href="/imagens/favicon-32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/imagens/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="shortcut icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#3d5c28">

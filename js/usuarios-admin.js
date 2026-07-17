@@ -127,10 +127,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             ? '<img src="' + escapeHtml(row.picture) + '" alt="" class="usuarios-admin-avatar" width="36" height="36" loading="lazy">'
             : '<span class="usuarios-admin-avatar usuarios-admin-avatar--empty" aria-hidden="true">?</span>';
           const profile = row.profileComplete ? 'Completo' : 'Incompleto';
+          const status = row.accountStatus || 'pending_profile';
           return '<tr>' +
             '<td><div class="usuarios-admin-usercell">' + avatar + '<span>' + escapeHtml(row.displayName || row.name || '—') + '</span></div></td>' +
             '<td>' + escapeHtml(row.email || '—') + '</td>' +
-            '<td>' + escapeHtml(profile) + (row.age ? ' · ' + row.age + 'a' : '') + '</td>' +
+            '<td>' + escapeHtml(profile) + (row.age ? ' · ' + row.age + 'a' : '') + ' · ' + escapeHtml(status) + '</td>' +
             '<td>' + escapeHtml(adminLabel(row)) + '</td>' +
             '<td>' + escapeHtml(String(row.growCount || 0)) + '</td>' +
             '<td>' + escapeHtml(String(row.entryCount || 0)) + '</td>' +
@@ -206,12 +207,19 @@ document.addEventListener('DOMContentLoaded', async () => {
           '<div class="usuarios-admin-identity-inner">' + avatar +
           '<div><h2 class="usuarios-admin-name">' + escapeHtml(user.name || user.email) + '</h2>' +
           '<p class="field-hint"><a href="mailto:' + escapeHtml(user.email) + '">' + escapeHtml(user.email) + '</a></p>' +
+          '<p class="field-hint">@' + escapeHtml(user.username || 'sem-username') +
+          ' · e-mail verificado: ' + (user.emailVerified ? 'sim' : 'não') +
+          ' · status: ' + escapeHtml(user.accountStatus || 'pending_profile') +
+          ' · onboarding: ' + escapeHtml(user.onboardingStage || 'initial') + '</p>' +
           '<p class="field-hint">ID: <code>' + escapeHtml(user.id) + '</code> · ' +
           (user.profileComplete ? 'Perfil completo' : 'Perfil incompleto') +
           (user.cultivoPhase ? ' · Fase diário: ' + escapeHtml(user.cultivoPhase) : '') +
           '</p>' +
           '<p class="field-hint">Cadastro: ' + escapeHtml(formatDate(user.createdAt)) +
           ' · Actualização: ' + escapeHtml(formatDate(user.updatedAt)) + '</p>' +
+          '<p class="field-hint">IP cadastro: ' + escapeHtml(user.registrationIp || '—') +
+          ' · Último login: ' + escapeHtml(formatDate(user.lastLoginAt)) +
+          ' · IP login: ' + escapeHtml(user.lastLoginIp || '—') + '</p>' +
           (user.sorteioAlert ? '<p class="field-hint">Alertas sorteio: inscrito em ' + escapeHtml(formatDate(user.sorteioAlert.subscribedAt)) + '</p>' : '') +
           '</div></div>';
       }

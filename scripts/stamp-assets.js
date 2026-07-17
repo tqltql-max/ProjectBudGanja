@@ -125,13 +125,14 @@ if (fs.existsSync(swPath)) {
   }
 }
 
-// Sincroniza versão dos ícones no manifest.json (evita cache Cloudflare nos ícones PWA).
+// Manifest PWA: ícones SEM ?v= — alguns Chromium no desktop falham o critério
+// de instalação (e o atalho) quando o src do ícone leva query string.
 const manifestPath = path.join(ROOT, 'manifest.json');
 if (fs.existsSync(manifestPath)) {
   let manifest = fs.readFileSync(manifestPath, 'utf8');
   const next = manifest.replace(
-    /(\/imagens\/[^"?]+\.(?:png|svg))(?:\?v=[^"]*)?(")/g,
-    `$1?v=${ASSET_VERSION}$2`
+    /(\/imagens\/[^"?]+\.(?:png|svg))\?v=[^"]*(")/g,
+    '$1$2'
   );
   if (next !== manifest) {
     fs.writeFileSync(manifestPath, next);
@@ -143,7 +144,9 @@ for (const file of listHtmlFiles(ROOT)) {
   let html = fs.readFileSync(file, 'utf8');
   const next = html
     .replace(/(href="\/favicon\.svg)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(href="\/favicon\.ico)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
     .replace(/(href="\/imagens\/favicon-\d+\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(href="\/imagens\/icon-192\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
     .replace(/(href="\/imagens\/apple-touch-icon\.png)(?:\?v=[^"]*)?(")/, `$1?v=${ASSET_VERSION}$2`)
     .replace(/(content="\/imagens\/icon-512\.png)(?:\?v=[^"]*)?(")/, `$1?v=${ASSET_VERSION}$2`);
   if (next !== html) {

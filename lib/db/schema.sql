@@ -10,13 +10,22 @@ CREATE TABLE IF NOT EXISTS users (
   id TEXT PRIMARY KEY,
   google_id TEXT NOT NULL DEFAULT '',
   email TEXT NOT NULL DEFAULT '',
+  email_verified_at TEXT,
   name TEXT NOT NULL DEFAULT '',
+  username TEXT NOT NULL DEFAULT '',
+  birth_date TEXT NOT NULL DEFAULT '',
   picture TEXT NOT NULL DEFAULT '',
   provider TEXT NOT NULL DEFAULT 'google',
   local_password_hash TEXT NOT NULL DEFAULT '',
   local_password_updated_at TEXT,
   reset_token_hash TEXT NOT NULL DEFAULT '',
   reset_token_expires_at TEXT,
+  registration_ip TEXT NOT NULL DEFAULT '',
+  last_login_at TEXT,
+  last_login_ip TEXT NOT NULL DEFAULT '',
+  account_status TEXT NOT NULL DEFAULT 'pending_profile',
+  onboarding_stage TEXT NOT NULL DEFAULT 'initial',
+  activity_log_json TEXT NOT NULL DEFAULT '[]',
   profile_json TEXT NOT NULL DEFAULT '{}',
   is_admin INTEGER NOT NULL DEFAULT 0,
   created_at TEXT NOT NULL,
@@ -306,7 +315,7 @@ CREATE TABLE IF NOT EXISTS loja_orders (
 CREATE INDEX IF NOT EXISTS idx_loja_orders_product ON loja_orders(product_id);
 CREATE INDEX IF NOT EXISTS idx_loja_orders_created ON loja_orders(created_at);
 
--- Diário de Pesquisas (utilizador autenticado)
+-- Diário de Cultivo (utilizador autenticado)
 
 CREATE TABLE IF NOT EXISTS cultivo_settings (
   user_id TEXT PRIMARY KEY,

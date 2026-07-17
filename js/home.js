@@ -115,44 +115,8 @@ async function loadSorteioBanner() {
   banner.hidden = false;
 }
 
-const YT_BUBBLE_KEY = 'budganja-home-yt-bubble-dismissed';
-const YT_CHANNEL_URL = 'https://www.youtube.com/@InspetorBudGanja';
-const YT_CHANNEL_LABEL = '@InspetorBudGanja';
-
-function initHomeYoutubeBubble() {
-  try {
-    if (localStorage.getItem(YT_BUBBLE_KEY) === '1') return;
-  } catch (e) { /* ignore */ }
-
-  const bubble = document.createElement('aside');
-  bubble.className = 'home-yt-bubble';
-  bubble.setAttribute('role', 'dialog');
-  bubble.setAttribute('aria-labelledby', 'home-yt-bubble-title');
-  bubble.innerHTML =
-    '<button type="button" class="home-yt-bubble-close" aria-label="Fechar convite do YouTube">×</button>' +
-    '<p class="home-yt-bubble-icon" aria-hidden="true">▶</p>' +
-    '<p id="home-yt-bubble-title" class="home-yt-bubble-title">Visite nosso canal no YouTube!</p>' +
-    '<p class="home-yt-bubble-text">Vídeos, inspeções e tutoriais do laboratório em ' + escapeHtml(YT_CHANNEL_LABEL) + '.</p>' +
-    '<a href="' + escapeHtml(YT_CHANNEL_URL) + '" class="home-yt-bubble-cta botao botao-sm" target="_blank" rel="noopener noreferrer">Abrir canal</a>';
-
-  document.body.appendChild(bubble);
-
-  const close = () => {
-    bubble.classList.remove('is-visible');
-    window.setTimeout(() => bubble.remove(), 280);
-    try { localStorage.setItem(YT_BUBBLE_KEY, '1'); } catch (e) { /* ignore */ }
-  };
-
-  bubble.querySelector('.home-yt-bubble-close').addEventListener('click', close);
-
-  window.setTimeout(() => {
-    bubble.classList.add('is-visible');
-  }, 1800);
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   if (document.body.dataset.page !== 'home') return;
   loadSorteioBanner();
   loadLatestPosts();
-  initHomeYoutubeBubble();
 });

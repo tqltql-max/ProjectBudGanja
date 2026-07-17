@@ -149,6 +149,14 @@
                   "description": "Análise das necessidades de macro e micronutrientes por fase fenológica, relação N:P:K e condutividade elétrica da solução nutritiva."
                 },
                 {
+                  "label": "Inspeção: Canal Inspetor BudGanja (@InspetorBudGanja)",
+                  "tileLabel": "Inspeção: Canal Inspetor BudGan…",
+                  "href": "/posts/post-inspecao-canal-inspetorbudganja.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-canal-inspetorbudganja",
+                  "description": "Auditoria editorial do canal oficial — 7 vídeos catalogados como trilha técnica do laboratório, com foco em conhecimento científico aplicado e integração com as ferramentas do projeto."
+                },
+                {
                   "label": "Inspeção: Solo Vivo Orgânico",
                   "tileLabel": "Inspeção: Solo Vivo Orgânico",
                   "href": "/posts/post-inspecao-solo-vivo-organico.html",

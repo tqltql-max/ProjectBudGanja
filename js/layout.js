@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '208';
+const ASSET_V = '217';
 
 let deferredInstallPrompt = null;
 let installFloatingBtn = null;
@@ -17,6 +17,18 @@ function isIosInstallable() {
   const ios = /iPad|iPhone|iPod/.test(ua)
     || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   return ios;
+}
+
+function isMobileUa() {
+  return /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || '');
+}
+
+/** Chrome / Edge / Opera no desktop — candidatos a instalar PWA. */
+function isDesktopInstallCandidate() {
+  if (isStandaloneApp() || isIosInstallable() || isMobileUa()) return false;
+  if (!window.isSecureContext || !('serviceWorker' in navigator)) return false;
+  const ua = navigator.userAgent || '';
+  return /Chrome|Chromium|Edg|OPR/i.test(ua) && !/SamsungBrowser/i.test(ua);
 }
 
 function isInstallDismissedRecently() {
@@ -40,8 +52,10 @@ function rememberInstallDismissed() {
 
 function canShowInstallUi() {
   if (isStandaloneApp()) return false;
+  if (isInstallDismissedRecently()) return false;
   if (deferredInstallPrompt) return true;
-  return isIosInstallable();
+  if (isIosInstallable()) return true;
+  return false;
 }
 
 function showInstallButtons() {
@@ -50,6 +64,12 @@ function showInstallButtons() {
 
 function hideInstallButtons() {
   if (installFloatingBtn) installFloatingBtn.classList.add('is-hidden');
+}
+
+function dismissInstallUi() {
+  rememberInstallDismissed();
+  deferredInstallPrompt = null;
+  hideInstallButtons();
 }
 
 function refreshInstallVisibility() {
@@ -86,34 +106,119 @@ function showIosInstallSheet() {
   sheet.hidden = false;
 }
 
+function showDesktopInstallSheet() {
+  let sheet = document.getElementById('pwa-desktop-install-sheet');
+  if (!sheet) {
+    sheet = document.createElement('div');
+    sheet.id = 'pwa-desktop-install-sheet';
+    sheet.className = 'pwa-install-sheet';
+    sheet.setAttribute('role', 'dialog');
+    sheet.setAttribute('aria-modal', 'true');
+    sheet.setAttribute('aria-labelledby', 'pwa-desktop-install-title');
+    sheet.innerHTML =
+      '<div class="pwa-install-sheet-backdrop" data-close="1"></div>' +
+      '<div class="pwa-install-sheet-panel">' +
+      '<h2 id="pwa-desktop-install-title">Instalar BudGanja no computador</h2>' +
+      '<p>No Chrome ou Edge: menu <strong>⋮ → Instalar Inspetor BudGanja…</strong> ' +
+      '(ou o ícone ⊕ / computador na barra de endereço).</p>' +
+      '<p>Na janela de instalação, marque <strong>Criar atalho na área de trabalho</strong> ' +
+      '(ou “Create desktop shortcut”) para aparecer o ícone no ambiente de trabalho.</p>' +
+      '<button type="button" class="botao pwa-install-sheet-close">Entendi</button>' +
+      '</div>';
+    const closeSheet = () => {
+      sheet.hidden = true;
+      dismissInstallUi();
+    };
+    sheet.querySelector('[data-close]').addEventListener('click', closeSheet);
+    sheet.querySelector('.pwa-install-sheet-close').addEventListener('click', closeSheet);
+    document.body.appendChild(sheet);
+  }
+  sheet.hidden = false;
+}
+
+function waitForInstallPrompt(timeoutMs) {
+  if (deferredInstallPrompt) return Promise.resolve(deferredInstallPrompt);
+  return new Promise((resolve) => {
+    let settled = false;
+    const timer = setTimeout(() => {
+      if (settled) return;
+      settled = true;
+      window.removeEventListener('beforeinstallprompt', onPrompt);
+      resolve(null);
+    }, timeoutMs);
+    function onPrompt(e) {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timer);
+      e.preventDefault();
+      deferredInstallPrompt = e;
+      resolve(e);
+    }
+    window.addEventListener('beforeinstallprompt', onPrompt);
+  });
+}
+
+async function runNativeInstallPrompt() {
+  if (!deferredInstallPrompt) return false;
+  try {
+    await deferredInstallPrompt.prompt();
+    const choice = await deferredInstallPrompt.userChoice;
+    deferredInstallPrompt = null;
+    if (choice.outcome === 'accepted') {
+      hideInstallButtons();
+      try { localStorage.removeItem(PWA_INSTALL_STATE_KEY); } catch (err) { /* ignore */ }
+      return true;
+    }
+    // Fechou / cancelou → esconder o botão por uns dias
+    dismissInstallUi();
+    return false;
+  } catch (e) {
+    dismissInstallUi();
+    return false;
+  }
+}
+
 async function promptInstallApp() {
-  if (deferredInstallPrompt) {
-    try {
-      await deferredInstallPrompt.prompt();
-      const choice = await deferredInstallPrompt.userChoice;
-      deferredInstallPrompt = null;
-      if (choice.outcome === 'accepted') {
-        hideInstallButtons();
-        return true;
-      }
-      if (choice.outcome === 'dismissed') rememberInstallDismissed();
-      refreshInstallVisibility();
-      return false;
-    } catch (e) {
-      deferredInstallPrompt = null;
-      refreshInstallVisibility();
+  const mainBtn = installFloatingBtn && installFloatingBtn.querySelector('.install-prompt-main');
+  const labelEl = installFloatingBtn && installFloatingBtn.querySelector('.install-prompt-label');
+  if (mainBtn) {
+    mainBtn.disabled = true;
+    mainBtn.setAttribute('aria-busy', 'true');
+  }
+  if (labelEl) labelEl.textContent = 'A preparar instalação…';
+
+  try {
+    // Preferir o diálogo nativo (cria app + opção de atalho no ambiente de trabalho).
+    if (!deferredInstallPrompt && isDesktopInstallCandidate()) {
+      await waitForInstallPrompt(4000);
+    }
+
+    if (deferredInstallPrompt) {
+      return await runNativeInstallPrompt();
+    }
+
+    if (isIosInstallable()) {
+      showIosInstallSheet();
       return false;
     }
-  }
 
-  if (isIosInstallable()) {
-    showIosInstallSheet();
+    if (isDesktopInstallCandidate()) {
+      showDesktopInstallSheet();
+    }
+    return false;
+  } finally {
+    if (mainBtn) {
+      mainBtn.disabled = false;
+      mainBtn.removeAttribute('aria-busy');
+    }
+    if (labelEl) labelEl.textContent = 'Instalar app';
   }
-  return false;
 }
 
 async function tryAutoInstallPrompt() {
+  // Auto-prompt só no telemóvel — no desktop consome o evento e esconde o botão.
   if (isStandaloneApp() || isInstallDismissedRecently() || !deferredInstallPrompt) return;
+  if (!isMobileUa()) return;
   try {
     if (sessionStorage.getItem('budganja_pwa_auto_prompt') === '1') return;
     sessionStorage.setItem('budganja_pwa_auto_prompt', '1');
@@ -124,14 +229,22 @@ async function tryAutoInstallPrompt() {
 
 function initInstallUi() {
   if (!installFloatingBtn) {
-    const floating = document.createElement('button');
-    floating.type = 'button';
-    floating.textContent = '\uD83D\uDCF2 Instalar app';
-    floating.className = 'install-prompt is-hidden';
-    floating.setAttribute('aria-label', 'Instalar aplicativo BudGanja');
-    floating.addEventListener('click', () => { void promptInstallApp(); });
-    document.body.appendChild(floating);
-    installFloatingBtn = floating;
+    const wrap = document.createElement('div');
+    wrap.className = 'install-prompt is-hidden';
+    wrap.innerHTML =
+      '<button type="button" class="install-prompt-main" aria-label="Instalar aplicativo BudGanja">' +
+      '<span aria-hidden="true">\uD83D\uDCF2</span> ' +
+      '<span class="install-prompt-label">Instalar app</span>' +
+      '</button>' +
+      '<button type="button" class="install-prompt-dismiss" aria-label="Fechar" title="Fechar">×</button>';
+    wrap.querySelector('.install-prompt-main').addEventListener('click', () => { void promptInstallApp(); });
+    wrap.querySelector('.install-prompt-dismiss').addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      dismissInstallUi();
+    });
+    document.body.appendChild(wrap);
+    installFloatingBtn = wrap;
   }
 
   refreshInstallVisibility();
@@ -443,6 +556,8 @@ const DEFAULT_SITE = {
   contactEmail: 'inspetorbudganja@gmail.com',
   youtubeChannelUrl: 'https://www.youtube.com/@InspetorBudGanja',
   youtubeChannelLabel: 'Canal @InspetorBudGanja',
+  spotifyPodcastUrl: 'https://open.spotify.com/show/033yuLDWnN84xOcfHyJ1FZ',
+  spotifyPodcastLabel: 'Podcast Inspetor BudGanja',
   nav: [
     {
       label: 'Biblioteca',
@@ -953,7 +1068,7 @@ function buildHeaderProfileLink(userLink, hideAuthNav) {
     const displayName = userLink.name || label;
     const shortName = String(displayName).trim().split(/\s+/)[0] || label;
     return (
-      '<a href="' + href + '" class="header-profile-link" title="Diário de pesquisas" aria-label="Diário de pesquisas">' +
+      '<a href="' + href + '" class="header-profile-link" title="Diário de cultivo" aria-label="Diário de cultivo">' +
       '<img src="' + escapeNavText(pic) + '" alt="" class="header-profile-avatar" width="32" height="32" loading="lazy">' +
       '<span class="header-profile-name">' + escapeNavText(shortName) + '</span>' +
       '</a>'
@@ -1039,6 +1154,7 @@ function buildHeaderHTML(site, authState) {
   const navItems = config.nav || DEFAULT_SITE.nav;
   const navLinks = navItems.map(buildNavItemHTML).join('\n                ');
   const ytUrl = config.youtubeChannelUrl || DEFAULT_SITE.youtubeChannelUrl;
+  const spotifyUrl = config.spotifyPodcastUrl || DEFAULT_SITE.spotifyPodcastUrl;
   const tagline = config.siteTagline || DEFAULT_SITE.siteTagline || '';
 
   const hideAuthNav = document.body.dataset.page === 'admin'
@@ -1078,6 +1194,10 @@ function buildHeaderHTML(site, authState) {
       ? '<a href="' + escapeNavText(ytUrl) + '" class="header-icon-btn header-icon-btn--link" target="_blank" rel="noopener noreferrer" aria-label="Canal YouTube @InspetorBudGanja" title="YouTube">' +
         '<span class="header-action-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-5.8 31 31 0 0 0-.5-5.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></span></a>'
       : '') +
+    (spotifyUrl
+      ? '<a href="' + escapeNavText(spotifyUrl) + '" class="header-icon-btn header-icon-btn--link" target="_blank" rel="noopener noreferrer" aria-label="Podcast Spotify Inspetor BudGanja" title="Podcast Spotify">' +
+        '<span class="header-action-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></span></a>'
+      : '') +
     adminIcon +
     headerSearch +
     '</div>';
@@ -1089,6 +1209,7 @@ function buildHeaderHTML(site, authState) {
   const mobileNavFooter =
     '<div class="mobile-nav-footer">' +
     (ytUrl ? '<a href="' + escapeNavText(ytUrl) + '" class="mobile-nav-cta" target="_blank" rel="noopener noreferrer">▶ ' + escapeNavText(config.youtubeChannelLabel || 'Canal YouTube') + '</a>' : '') +
+    (spotifyUrl ? '<a href="' + escapeNavText(spotifyUrl) + '" class="mobile-nav-cta mobile-nav-cta--secondary" target="_blank" rel="noopener noreferrer">♪ ' + escapeNavText(config.spotifyPodcastLabel || 'Podcast Spotify') + '</a>' : '') +
     (jardimUrl ? '<a href="' + escapeNavText(jardimUrl) + '" class="mobile-nav-cta mobile-nav-cta--secondary" target="_blank" rel="noopener noreferrer">▶ ' + escapeNavText(jardimLabel) + '</a>' : '') +
     '</div>';
 
@@ -1097,7 +1218,8 @@ function buildHeaderHTML(site, authState) {
     '<div class="logo">' +
     '<a href="/" class="logo-link">' +
     '<span class="logo-mark" aria-hidden="true">' +
-    '<img class="logo-mark-img" src="/imagens/app-icon.svg?v=' + ASSET_V + '" alt="" width="42" height="42" decoding="async">' +
+    '<img class="logo-mark-img" src="/imagens/app-icon.png?v=' + ASSET_V + '" alt="" width="42" height="42" decoding="async">' +
+
     '</span>' +
     '<span class="logo-copy">' +
     '<span class="logo-name">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
@@ -1170,6 +1292,8 @@ function buildMobileMenuHTML(site, authState) {
   const navItems = config.nav || DEFAULT_SITE.nav;
   const ytUrl = config.youtubeChannelUrl || DEFAULT_SITE.youtubeChannelUrl;
   const ytLabel = config.youtubeChannelLabel || DEFAULT_SITE.youtubeChannelLabel;
+  const spotifyUrl = config.spotifyPodcastUrl || DEFAULT_SITE.spotifyPodcastUrl;
+  const spotifyLabel = config.spotifyPodcastLabel || DEFAULT_SITE.spotifyPodcastLabel;
 
   const hideAuthNav = document.body.dataset.page === 'admin'
     || document.body.dataset.page === 'sorteios-admin'
@@ -1191,9 +1315,14 @@ function buildMobileMenuHTML(site, authState) {
   const sectionsHtml = navItems.map(buildMobileNavSectionHTML).filter(Boolean).join('');
   const utilsHtml = buildMobileUtilsHTML(authState, hideAuthNav);
 
-  const footLinks = ytUrl
-    ? '<a href="' + escapeNavText(ytUrl) + '" class="mobile-menu-foot-link" target="_blank" rel="noopener noreferrer">▶ ' + escapeNavText(ytLabel) + '</a>'
-    : '';
+  const footLinks = [
+    ytUrl
+      ? '<a href="' + escapeNavText(ytUrl) + '" class="mobile-menu-foot-link" target="_blank" rel="noopener noreferrer">▶ ' + escapeNavText(ytLabel) + '</a>'
+      : '',
+    spotifyUrl
+      ? '<a href="' + escapeNavText(spotifyUrl) + '" class="mobile-menu-foot-link" target="_blank" rel="noopener noreferrer">♪ ' + escapeNavText(spotifyLabel) + '</a>'
+      : ''
+  ].filter(Boolean).join('');
 
   return (
     '<div id="mobile-menu-scrim" class="mobile-menu-scrim" aria-hidden="true"></div>' +
@@ -1281,6 +1410,8 @@ function buildFooterHTML(site) {
   const config = site || DEFAULT_SITE;
   const ytUrl = config.youtubeChannelUrl || DEFAULT_SITE.youtubeChannelUrl;
   const ytLabel = config.youtubeChannelLabel || DEFAULT_SITE.youtubeChannelLabel;
+  const spotifyUrl = config.spotifyPodcastUrl || DEFAULT_SITE.spotifyPodcastUrl;
+  const spotifyLabel = config.spotifyPodcastLabel || DEFAULT_SITE.spotifyPodcastLabel;
   const footerGroups = config.footerGroups || DEFAULT_SITE.footerGroups;
   const privacyDate = config.privacyUpdated || DEFAULT_SITE.privacyUpdated;
 
@@ -1298,13 +1429,17 @@ function buildFooterHTML(site) {
   const brandHtml =
     '<div class="footer-brand">' +
     '<a href="/" class="footer-brand-link">' +
-    '<img class="footer-brand-icon" src="/imagens/app-icon.svg?v=' + ASSET_V + '" alt="" width="32" height="32" loading="lazy" decoding="async">' +
+    '<img class="footer-brand-icon" src="/imagens/app-icon.png?v=' + ASSET_V + '" alt="" width="32" height="32" loading="lazy" decoding="async">' +
     '<span class="footer-brand-name">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
     '</a>' +
     '<p class="footer-brand-tagline">' + escapeNavText(i18n('footer.tagline', config.siteTagline || DEFAULT_SITE.siteTagline || '')) + '</p>' +
     (ytUrl
       ? '<a href="' + escapeNavText(ytUrl) + '" class="footer-yt-link" target="_blank" rel="noopener noreferrer">' +
         escapeNavText(ytLabel) + ' <span class="footer-ext" aria-hidden="true">↗</span></a>'
+      : '') +
+    (spotifyUrl
+      ? '<a href="' + escapeNavText(spotifyUrl) + '" class="footer-yt-link" target="_blank" rel="noopener noreferrer">' +
+        escapeNavText(spotifyLabel) + ' <span class="footer-ext" aria-hidden="true">↗</span></a>'
       : '') +
     '</div>';
 
@@ -1382,7 +1517,10 @@ function injectSeoMeta(site) {
       name: OG_SITE_NAME,
       url: absoluteUrl('index.html'),
       description: description,
-      sameAs: [site.youtubeChannelUrl || DEFAULT_SITE.youtubeChannelUrl]
+      sameAs: [
+        site.youtubeChannelUrl || DEFAULT_SITE.youtubeChannelUrl,
+        site.spotifyPodcastUrl || DEFAULT_SITE.spotifyPodcastUrl
+      ].filter(Boolean)
     });
     head.appendChild(script);
   }
@@ -1442,7 +1580,7 @@ async function fetchAuthState() {
       if (res.ok) {
         const data = await res.json();
         state.userLink = {
-          label: 'Diário de Pesquisas',
+          label: 'Diário de Cultivo',
           href: '/cultivo/',
           isUser: true,
           picture: data.picture || (data.profile && data.profile.avatarUrl) || '/imagens/avatars/leaf.svg',

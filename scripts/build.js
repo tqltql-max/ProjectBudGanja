@@ -26,12 +26,6 @@ function runBuildSteps() {
   }
 
   try {
-    runStep('sync:icon-head', 'sync-icon-head.js');
-  } catch (e) {
-    console.warn('Aviso sync:icon-head:', e.message);
-  }
-
-  try {
     runStep('generate:calculadoras', 'generate-calculadoras-pages.js');
   } catch (e) {
     console.warn('Aviso generate:calculadoras:', e.message);
@@ -126,6 +120,13 @@ function runBuildSteps() {
     runStep('stamp:assets', 'stamp-assets.js');
   } catch (e) {
     console.warn('Aviso stamp:assets:', e.message);
+  }
+
+  // Depois de posts/guia/stamp — evita que templates antigos voltem a pôr o favicon SVG errado.
+  try {
+    runStep('sync:icon-head', 'sync-icon-head.js');
+  } catch (e) {
+    console.warn('Aviso sync:icon-head:', e.message);
   }
 
   console.log('\nBuild concluído: ficheiros estáticos e índices gerados.');

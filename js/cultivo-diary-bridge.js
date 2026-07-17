@@ -139,8 +139,8 @@
     }
     var calcLabel = payload.calculator ? (CALC_LABELS[payload.calculator] || 'Calculadora') : 'Calculadora';
     var hintText = payload.calculator
-      ? 'Salvar resultado da ' + calcLabel + ' no Diário de Pesquisas'
-      : 'Salvar resultado no Diário de Pesquisas';
+      ? 'Salvar resultado da ' + calcLabel + ' no Diário de Cultivo'
+      : 'Salvar resultado no Diário de Cultivo';
     bar.innerHTML =
       '<button type="button" class="botao botao-outline botao-sm diary-save-btn">📓 Guardar no diário</button>' +
       '<span class="diary-save-meta">' + hintText + '</span>' +
@@ -165,7 +165,7 @@
       status.textContent = result.error || 'Não foi possível guardar.';
       btn.disabled = false;
     };
-    bar.setAttribute('aria-label', 'Guardar resultado da ' + calcLabel + ' no diário de pesquisas');
+    bar.setAttribute('aria-label', 'Guardar resultado da ' + calcLabel + ' no diário de cultivo');
   }
 
   window.BudGanjaDiaryBridge = {

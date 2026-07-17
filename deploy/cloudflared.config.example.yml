@@ -10,4 +10,13 @@ ingress:
     service: http://localhost:8080
   - hostname: www.inspetorbudganja.com.br
     service: http://localhost:8080
+  # Aliases .com → redireccionados pelo Node para o .com.br
+  - hostname: inspetorbudganja.com
+    service: http://localhost:8080
+  - hostname: www.inspetorbudganja.com
+    service: http://localhost:8080
+  - hostname: inspectorbudganja.com
+    service: http://localhost:8080
+  - hostname: www.inspectorbudganja.com
+    service: http://localhost:8080
   - service: http_status:404

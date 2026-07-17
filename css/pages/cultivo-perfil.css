@@ -311,6 +311,18 @@ html[data-theme="light"] .botao-outline:hover {
     padding: 20px;
 }
 
+.cultivo-modal-card--edit {
+    width: min(100%, 520px);
+}
+
+.cultivo-edit-form {
+    margin-top: 8px;
+}
+
+.cultivo-research-edit-btn {
+    flex: 0 0 auto;
+}
+
 .cultivo-modal-card h2 {
     margin: 0 0 8px;
     font-size: 1.15rem;

@@ -11,7 +11,6 @@ const OUT_DIR = path.join(ROOT, 'imagens');
 const FAVICON_SVG = path.join(ROOT, 'favicon.svg');
 
 const BG = { r: 26, g: 26, b: 26, alpha: 1 };
-const GLOW = { r: 39, g: 174, b: 96 };
 
 async function loadSharp() {
   try {
@@ -42,15 +41,14 @@ async function prepareLogo(sharp, maxSize) {
     .raw()
     .toBuffer({ resolveWithObject: true });
 
-  // só remove pixels quase-brancos quando a fonte é SVG (PNGs já têm transparência)
   const cleaned = SOURCE === SOURCE_SVG ? stripNearWhite(data, info) : { pixels: data, info };
   return sharp(cleaned.pixels, {
     raw: { width: cleaned.info.width, height: cleaned.info.height, channels: 4 }
   }).png().toBuffer();
 }
 
+/** Ícone completo do app (logo + texto) — PWA / apple-touch. */
 async function buildAppIcon(sharp, size) {
-  // PNG já tem background próprio — apenas redimensiona
   if (SOURCE === SOURCE_PNG) {
     return sharp(SOURCE)
       .resize(size, size, { fit: 'cover', position: 'centre' })
@@ -58,8 +56,6 @@ async function buildAppIcon(sharp, size) {
       .toBuffer();
   }
 
-  // SVG: fundo escuro + glow (comportamento original)
-  const maskable = false;
   const pad = Math.round(size * 0.08);
   const inner = size - pad * 2;
   const logo = await prepareLogo(sharp, inner);
@@ -81,19 +77,55 @@ async function buildAppIcon(sharp, size) {
     .toBuffer();
 }
 
+/**
+ * Favicon pequeno: recorta só o emblema (topo do iconsite) para ler bem a 16–48px.
+ * Sem o texto "INSPETOR BudGanja" que vira mancha na aba.
+ */
+async function buildFaviconMark(sharp, size) {
+  if (SOURCE !== SOURCE_PNG) {
+    return buildAppIcon(sharp, size);
+  }
+
+  const meta = await sharp(SOURCE).metadata();
+  const w = meta.width || 512;
+  const h = meta.height || 512;
+  // Emblema ocupa ~ metade superior do cartaz
+  const crop = Math.min(w, Math.round(h * 0.52));
+  const left = Math.max(0, Math.round((w - crop) / 2));
+  const top = Math.max(0, Math.round(h * 0.04));
+
+  return sharp(SOURCE)
+    .extract({ left, top, width: Math.min(crop, w - left), height: Math.min(crop, h - top) })
+    .resize(size, size, { fit: 'cover', position: 'centre' })
+    .png({ compressionLevel: 9 })
+    .toBuffer();
+}
+
 function buildFaviconSvg(pngBase64) {
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
   <defs>
-    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
-      <feDropShadow dx="0" dy="1" stdDeviation="2.2" flood-color="#27ae60" flood-opacity="0.5"/>
-    </filter>
     <clipPath id="round"><circle cx="32" cy="32" r="30"/></clipPath>
   </defs>
   <circle cx="32" cy="32" r="30" fill="#1a1a1a"/>
-  <g clip-path="url(#round)" filter="url(#glow)">
+  <g clip-path="url(#round)">
     <image xlink:href="data:image/png;base64,${pngBase64}" width="64" height="64" preserveAspectRatio="xMidYMid meet"/>
   </g>
 </svg>`;
+}
+
+async function writeIco(sizes) {
+  const icoPath = path.join(ROOT, 'favicon.ico');
+  try {
+    const mod = require('png-to-ico');
+    const pngToIco = typeof mod === 'function' ? mod : mod.default;
+    if (typeof pngToIco !== 'function') throw new Error('png-to-ico sem export default');
+    const ico = await pngToIco([sizes[16], sizes[32], sizes[48]]);
+    fs.writeFileSync(icoPath, ico);
+    console.log('  → favicon.ico (16/32/48)');
+  } catch (e) {
+    fs.writeFileSync(icoPath, sizes[32]);
+    console.log('  → favicon.ico (png fallback:', e.message + ')');
+  }
 }
 
 async function main() {
@@ -105,28 +137,34 @@ async function main() {
   const sharp = await loadSharp();
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
-  const icon192 = await buildAppIcon(sharp, 192);
-  const icon512 = await buildAppIcon(sharp, 512);
-  const icon512Mask = await buildAppIcon(sharp, 512);
-  const appleTouch = await buildAppIcon(sharp, 180);
-  const fav32 = await buildAppIcon(sharp, 32);
-  const fav16 = await buildAppIcon(sharp, 16);
-  const fav64 = await buildAppIcon(sharp, 64);
+  const app = {
+    512: await buildAppIcon(sharp, 512),
+    192: await buildAppIcon(sharp, 192),
+    180: await buildAppIcon(sharp, 180)
+  };
+  const mark = {
+    64: await buildFaviconMark(sharp, 64),
+    48: await buildFaviconMark(sharp, 48),
+    32: await buildFaviconMark(sharp, 32),
+    16: await buildFaviconMark(sharp, 16)
+  };
 
-  fs.writeFileSync(path.join(OUT_DIR, 'icon-192.png'), icon192);
-  fs.writeFileSync(path.join(OUT_DIR, 'icon-512.png'), icon512);
-  fs.writeFileSync(path.join(OUT_DIR, 'icon-512-maskable.png'), icon512Mask);
-  fs.writeFileSync(path.join(OUT_DIR, 'apple-touch-icon.png'), appleTouch);
-  fs.writeFileSync(path.join(OUT_DIR, 'favicon-32.png'), fav32);
-  fs.writeFileSync(path.join(OUT_DIR, 'favicon-16.png'), fav16);
-  fs.writeFileSync(FAVICON_SVG, buildFaviconSvg(fav64.toString('base64')));
+  fs.writeFileSync(path.join(OUT_DIR, 'icon-512.png'), app[512]);
+  fs.writeFileSync(path.join(OUT_DIR, 'icon-512-maskable.png'), app[512]);
+  fs.writeFileSync(path.join(OUT_DIR, 'icon-192.png'), app[192]);
+  fs.writeFileSync(path.join(OUT_DIR, 'apple-touch-icon.png'), app[180]);
+  fs.writeFileSync(path.join(OUT_DIR, 'favicon-48.png'), mark[48]);
+  fs.writeFileSync(path.join(OUT_DIR, 'favicon-32.png'), mark[32]);
+  fs.writeFileSync(path.join(OUT_DIR, 'favicon-16.png'), mark[16]);
+  fs.writeFileSync(FAVICON_SVG, buildFaviconSvg(mark[64].toString('base64')));
+  await writeIco(mark);
 
-  // favicon.ico na raiz (Google e browsers antigos preferem este formato)
-  fs.writeFileSync(path.join(ROOT, 'favicon.ico'), fav32);
+  // Header: mesma arte do emblema (não o cartaz completo com texto)
+  fs.writeFileSync(path.join(OUT_DIR, 'app-icon.png'), await buildFaviconMark(sharp, 192));
 
-  console.log(`Ícones gerados a partir de imagens/${path.basename(SOURCE)}`);
-  console.log('  → imagens/icon-192.png, icon-512.png, apple-touch-icon.png, favicon-*.png');
-  console.log('  → favicon.svg (com brilho verde)');
+  console.log('Ícones gerados a partir de imagens/' + path.basename(SOURCE));
+  console.log('  → imagens/icon-192.png, icon-512.png, apple-touch-icon.png (app completo)');
+  console.log('  → favicon-*.png, favicon.svg, favicon.ico, app-icon.png (emblema)');
 }
 
 main().catch((err) => {

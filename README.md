@@ -31,7 +31,7 @@ Detalhes: [`docs/GIT.md`](docs/GIT.md) · copie `.env.example` → `.env`
 
 | Secção | Páginas |
 |--------|---------|
-| **Pesquisas** | [Diário de Pesquisas](/cultivo/) · [Minha conta](/perfil.html) |
+| **Pesquisas** | [Diário de Cultivo](/cultivo/) · [Minha conta](/perfil.html) |
 | **Biblioteca** | [Inspeções](/biblioteca/inspecoes/) (série Guia de Cultivo), [Pesquisas](/biblioteca/pesquisas/), [Equipamentos](/equipamentos/) |
 | **Ferramentas** | [Calculadoras](/calculadoras/), [Luxímetro](/calculadoras/luximetro.html) |
 | **Conteúdo** | [Sorteios](/sorteios/), [Últimos vídeos](/videos/), [Loja parceira](/loja/) |
@@ -67,8 +67,10 @@ Detalhes: [`docs/GIT.md`](docs/GIT.md) · copie `.env.example` → `.env`
 | `npm run build:sitemap` | Gera `sitemap.xml` (usa `SITE_URL` ou URL Netlify) |
 | `npm run build:assetlinks` | Gera `.well-known/assetlinks.json` (TWA / Play Store) |
 | `npm run test:lib` | Testes unitários (merge inspeções, calculadoras) |
+| `npm run test:api:contract` | Valida contrato de payload da API admin (camelCase canônico) |
 | `npm run test:site` | Testes HTTP com servidor a correr (`npm start` noutro terminal) |
 | `npm run check:assetlinks` | Valida TWA / `.well-known/assetlinks.json` |
+| `npm run check:db:naming` | Audita tabelas/colunas SQL para manter naming `snake_case` consistente |
 | `npm run db:backup:external` | Cópia de `data/budganja.db` para `~/BudGanjaBackups/` |
 
 ### Build e deploy
@@ -143,14 +145,31 @@ Modo prático: **Cloudflare + túnel no PC Windows** (pasta `deploy/`).
    ```
    Copiar `deploy\cloudflared.config.example.yml` → `%USERPROFILE%\.cloudflared\config.yml` (ajustar Tunnel ID e user)
    ```powershell
-   cloudflared tunnel route dns budganja inspetorbudganja.com.br
-   cloudflared tunnel route dns budganja www.inspetorbudganja.com.br
+   .\deploy\fix-dns.ps1
    ```
 6. ```powershell
    .\deploy\start-site.ps1
    ```
 
-**URLs:** https://inspetorbudganja.com.br · Admin: `/login.html`
+**URL canónica:** https://inspetorbudganja.com.br · Admin: `/login.html`
+
+### Domínios alias (.com)
+
+Os domínios `inspetorbudganja.com` e `inspectorbudganja.com` (e respectivos `www`) usam o **mesmo túnel**; o servidor (e, se configurares, a Cloudflare) redirecciona para `https://inspetorbudganja.com.br`.
+
+Guia completo (DNS manual — método fiável): [`deploy/add-alias-domains.md`](deploy/add-alias-domains.md).
+
+Em cada zona `.com` → **DNS**, cria (Proxied):
+
+| Type | Name | Target |
+|------|------|--------|
+| CNAME | `@` | `deccb19c-bdf3-477d-a251-279dc4b5b584.cfargotunnel.com` |
+| CNAME | `www` | `deccb19c-bdf3-477d-a251-279dc4b5b584.cfargotunnel.com` |
+
+Apaga no `.com.br` quaisquer CNAME errados com esses nomes (subdomínios fantasma).  
+Opcional: Redirect Rule 301 na edge → `https://inspetorbudganja.com.br${uri}`.
+
+`SITE_URL` continua `https://inspetorbudganja.com.br`.
 
 O PC deve ficar ligado (PM2: `pm2 status`).
 
@@ -182,7 +201,7 @@ Aceda a `/login.html` com `ADMIN_USER` e `RESEARCH_PASS` definidos no `.env`. Ap
 
 ## Conta de utilizador (Google)
 
-Utilizadores entram em **`/entrar.html`** com Google e completam o cadastro em **`/perfil.html`** com **nome** e **idade** (obrigatório **18 anos ou mais**). Depois acedem ao **Diário de Pesquisas** em `/cultivo/`.
+Utilizadores entram em **`/entrar.html`** com Google e completam o cadastro em **`/perfil.html`** com **nome** e **idade** (obrigatório **18 anos ou mais**). Depois acedem ao **Diário de Cultivo** em `/cultivo/`.
 
 Configure no `.env`:
 
@@ -236,6 +255,7 @@ deploy\start-now.ps1  # migra + build + servidor
 |---------|--------|
 | `npm run db:migrate` | Schema + importação JSON legado |
 | `npm run test:db` | Testa gravação em `posts`, `pages`, `users`, `sorteio_entries`, etc. |
+| `npm run check:db:naming` | Audita tabelas e colunas SQL para manter naming `snake_case` consistente |
 | `npm run db:backup` | Cópia em `data/backups/budganja-YYYY-MM-DD.db` |
 | `npm run db:backup:external` | Cópia **fora do repo** (`~/BudGanjaBackups/` — ver [`docs/GIT.md`](docs/GIT.md)) |
 | DB Browser for SQLite | Abrir `data/budganja.db` (pare o servidor antes) |

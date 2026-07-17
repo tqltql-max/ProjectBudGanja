@@ -21,9 +21,13 @@ const {
 } = require('../lib/site-dev-mode.js');
 const { auditStartupSecurity } = require('../lib/startup-security.js');
 const { ROOT } = require('../lib/paths.js');
+const { getAdminSession } = require('../lib/admin-access.js');
+const eventBus = require('../lib/admin-event-bus.js');
+const { mergeGuiaInspecoesPosts } = require('../lib/merge-guia-inspecoes.js');
 const contentStore = createContentStore(ROOT);
 let appStore = null;
-const PORT = process.env.PORT || 8080;
+const PORT = Number(process.env.PORT) || 8080;
+const MAX_PORT_RETRIES = 20;
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -41,6 +45,13 @@ const MIME = {
 
 const MAX_BODY_BYTES = 2 * 1024 * 1024;
 const MAX_UPLOAD_BYTES = 6 * 1024 * 1024;
+const MAX_CULTIVO_MEDIA_BODY_BYTES = 40 * 1024 * 1024;
+
+function bodyLimitForApi(url) {
+  if (url === '/api/upload' || url === '/api/admin/update-icons') return MAX_UPLOAD_BYTES;
+  if (url === '/api/cultivo/photo') return MAX_CULTIVO_MEDIA_BODY_BYTES;
+  return MAX_BODY_BYTES;
+}
 
 const POSTS_META = path.join(ROOT, 'posts.json');
 const UPLOADS_DIR = path.join(ROOT, 'uploads');
@@ -245,6 +256,13 @@ function serveStatic(req, res, staticPath) {
 
   fs.stat(requested, (err, stats) => {
     if (err || !stats.isFile()) {
+      const ext = path.extname(staticPath || '').toLowerCase();
+      const accept = String(req.headers.accept || '').toLowerCase();
+      const isPageRoute = !ext || ext === '.html' || String(staticPath || '').endsWith('/');
+      const acceptsHtml = accept.includes('text/html');
+      if (isPageRoute || acceptsHtml) {
+        return resRedirect(res, '/');
+      }
       res.writeHead(404, { 'Content-Type': 'text/plain' });
       res.end('404 Not Found');
       return;
@@ -296,13 +314,52 @@ const server = http.createServer((req, res) => {
   try {
     const raw = req.url.split('?')[0] || '/';
     const url = decodeURIComponent(raw);
-    const host = String(req.headers['x-forwarded-host'] || req.headers.host || '').split(',')[0].trim().split(':')[0];
-    if (host === 'www.inspetorbudganja.com.br') {
+    const host = String(req.headers['x-forwarded-host'] || req.headers.host || '').split(',')[0].trim().split(':')[0].toLowerCase();
+    const canonicalHost = 'inspetorbudganja.com.br';
+    const redirectHosts = new Set([
+      'www.inspetorbudganja.com.br',
+      'inspetorbudganja.com',
+      'www.inspetorbudganja.com',
+      'inspectorbudganja.com',
+      'www.inspectorbudganja.com'
+    ]);
+    if (redirectHosts.has(host)) {
       const qs = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
-      return resRedirect(res, 'https://inspetorbudganja.com.br' + url + qs);
+      return resRedirect(res, 'https://' + canonicalHost + url + qs);
     }
 
     if (url.startsWith('/api/')) {
+      // SSE — tratado directamente (precisa de acesso ao res nativo)
+      if (url === '/api/admin/stream' && req.method === 'GET') {
+        const cookie = req.headers.cookie || '';
+        const session = appStore ? await getAdminSession(appStore, cookie).catch(() => null) : null;
+        if (!session) {
+          res.writeHead(401, { 'Content-Type': 'application/json' });
+          res.end('{"error":"authentication required"}');
+          return;
+        }
+        res.writeHead(200, {
+          'Content-Type': 'text/event-stream',
+          'Cache-Control': 'no-cache',
+          'Connection': 'keep-alive',
+          'X-Accel-Buffering': 'no'
+        });
+        res.write(': connected\n\n');
+        try {
+          const posts = mergeGuiaInspecoesPosts(await appStore.getPosts());
+          const total = posts.length;
+          const published = posts.filter((p) => p.published !== false).length;
+          const drafts = total - published;
+          const byCategory = {};
+          posts.forEach((p) => { const c = p.category || 'pesquisa'; byCategory[c] = (byCategory[c] || 0) + 1; });
+          res.write('event: stats\ndata: ' + JSON.stringify({ total, published, drafts, byCategory }) + '\n\n');
+        } catch (e) { /* ignorar */ }
+        eventBus.subscribe(res);
+        const hb = setInterval(() => { try { res.write(': heartbeat\n\n'); } catch (e) { clearInterval(hb); } }, 25000);
+        res.on('close', () => clearInterval(hb));
+        return;
+      }
+
       const isAdmin = await isAdminAuthenticated(req);
       if (shouldBlockForDevMode(req, url, '', isAdmin)) {
         return serveDevModeApi(res, req);
@@ -329,7 +386,7 @@ const server = http.createServer((req, res) => {
       if (req.method === 'GET' || req.method === 'DELETE' || req.method === 'HEAD') {
         return sendApi('');
       }
-      return collectBody(req, (url === '/api/upload' || url === '/api/admin/update-icons') ? MAX_UPLOAD_BYTES : MAX_BODY_BYTES).then(sendApi).catch(() => {
+      return collectBody(req, bodyLimitForApi(url)).then(sendApi).catch(() => {
         setSecurityHeaders(res, req);
         res.writeHead(413, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: 'body too large' }));
@@ -389,12 +446,39 @@ const server = http.createServer((req, res) => {
   })();
 });
 
+function listenOnAvailablePort(startPort, onReady) {
+  const basePort = Number(startPort) || 8080;
+
+  const tryListen = (port, attempt) => {
+    const onError = (err) => {
+      server.removeListener('listening', onListening);
+      if (err && err.code === 'EADDRINUSE' && attempt < MAX_PORT_RETRIES) {
+        console.warn('Porta ' + port + ' em uso; tentando ' + (port + 1) + '...');
+        setTimeout(() => tryListen(port + 1, attempt + 1), 40);
+        return;
+      }
+      throw err;
+    };
+
+    const onListening = () => {
+      server.removeListener('error', onError);
+      onReady(port);
+    };
+
+    server.once('error', onError);
+    server.once('listening', onListening);
+    server.listen(port);
+  };
+
+  tryListen(basePort, 0);
+}
+
 createAppStore({ root: ROOT, netlify: false }).then((store) => {
   appStore = store;
   const backend = store.backend || process.env.STORE_BACKEND || 'sql';
-  server.listen(PORT, () => {
-    console.log('Server running at http://localhost:' + PORT);
-    console.log('Admin login: http://localhost:' + PORT + '/login.html');
+  listenOnAvailablePort(PORT, (effectivePort) => {
+    console.log('Server running at http://localhost:' + effectivePort);
+    console.log('Admin login: http://localhost:' + effectivePort + '/login.html');
     console.log('Store backend:', backend);
     if (isDevModeEnabled()) {
       console.log('Modo desenvolvimento ATIVO — visitantes veem tela em construção (admin autenticado passa).');
