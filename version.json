@@ -1,4 +1,9 @@
 {
-  "version": "288",
-  "builtAt": "2026-07-20T21:09:33.523Z"
+  "version": "289",
+  "hero": "3de28475ec",
+  "heroSize": {
+    "width": 3712,
+    "height": 1152
+  },
+  "builtAt": "2026-07-20T22:13:11.254Z"
 }

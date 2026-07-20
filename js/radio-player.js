@@ -137,7 +137,8 @@
       '<path d="M3.24 6.15C2.51 6.43 2 7.17 2 8v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8c0-1.11-.89-2-2-2H8.3l8.26-3.34L15.88 1 3.24 6.15zM7 20c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm13-8h-2v-2h-2v2H4V8h16v4z"/>'
     ),
     close: svg('<path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>'),
-    expand: svg('<path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>')
+    expand: svg('<path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>'),
+    share: svg('<path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/>')
   };
 
   function mount(tracks, meta) {
@@ -176,6 +177,9 @@
       '<button type="button" class="radio-mini-btn" data-radio-mute aria-label="Silenciar">' +
       ICONS.unmute +
       '</button>' +
+      '<button type="button" class="radio-mini-btn" data-radio-share aria-label="Partilhar música a tocar" title="Partilhar música">' +
+      ICONS.share +
+      '</button>' +
       '<button type="button" class="radio-mini-btn" data-radio-collapse aria-label="Minimizar">' +
       ICONS.expand +
       '</button>' +
@@ -198,8 +202,10 @@
     var btnPlay = root.querySelector('[data-radio-play]');
     var btnNext = root.querySelector('[data-radio-next]');
     var btnMute = root.querySelector('[data-radio-mute]');
+    var btnShare = root.querySelector('[data-radio-share]');
     var btnCollapse = root.querySelector('[data-radio-collapse]');
     var btnClose = root.querySelector('[data-radio-close]');
+    var shareFeedbackTimer = null;
 
     var audio = new Audio();
     audio.preload = 'metadata';
@@ -357,6 +363,35 @@
       updateMuteUi();
     });
 
+    if (btnShare) {
+      btnShare.addEventListener('click', function () {
+        var track = tracks[index];
+        if (!track) return;
+        var username = meta && meta.shareUsername;
+        var done = function (result) {
+          if (!artistEl) return;
+          var prev = artistEl.textContent;
+          artistEl.textContent = result === 'shared' ? 'Partilhado!' : 'Link copiado!';
+          if (shareFeedbackTimer) clearTimeout(shareFeedbackTimer);
+          shareFeedbackTimer = setTimeout(function () {
+            artistEl.textContent = prev;
+          }, 1800);
+        };
+        if (window.BudGanjaRadioMedia && typeof window.BudGanjaRadioMedia.shareTrack === 'function') {
+          window.BudGanjaRadioMedia.shareTrack(track, { username: username }).then(done).catch(function () {
+            done('copied');
+          });
+        } else {
+          var url = (window.location.origin || '') + '/radio/?t=' + encodeURIComponent(track.id || '');
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(function () { done('copied'); }).catch(function () { done('copied'); });
+          } else {
+            done('copied');
+          }
+        }
+      });
+    }
+
     audio.addEventListener('ended', function () {
       writeSession(STORAGE_TIME, '0');
       loadTrack(index + 1, true, 0);
@@ -477,13 +512,15 @@
       return {
         label: 'A tua rádio',
         homeHref: '/radio/?u=' + encodeURIComponent(owner.username),
-        sourceKey: 'user:' + owner.username
+        sourceKey: 'user:' + owner.username,
+        shareUsername: owner.username
       };
     }
     return {
       label: 'Rádio',
       homeHref: '/radio/',
-      sourceKey: 'catalog'
+      sourceKey: 'catalog',
+      shareUsername: ''
     };
   }
 

@@ -1,42 +1,72 @@
 {
-  "updatedAt": "2026-07-20T21:09:32.945Z",
-  "trackCount": 6,
+  "updatedAt": "2026-07-20T22:13:10.650Z",
+  "trackCount": 11,
   "tracks": [
     {
-      "id": "t_76c886df919c",
-      "title": "OMC - How Bizarre",
-      "artist": "BudGanja Radio",
-      "url": "/radio/01-%20OMC%20-%20How%20Bizarre.mp3"
-    },
-    {
-      "id": "t_6bd962b26b76",
+      "id": "t_2bad930e1cdc",
       "title": "Bob Marley - One Love",
       "artist": "BudGanja Radio",
-      "url": "/radio/02%20-%20Bob%20Marley%20-%20One%20Love.mp3"
+      "url": "/radio/Bob%20Marley%20-%20One%20Love.mp3"
     },
     {
-      "id": "t_352d99e35eb0",
+      "id": "t_bac70dd6dec8",
       "title": "Bob Marley - Stir It Up",
       "artist": "BudGanja Radio",
-      "url": "/radio/02-%20Bob%20Marley%20-%20Stir%20It%20Up.mp3"
+      "url": "/radio/Bob%20Marley%20-%20Stir%20It%20Up.mp3"
     },
     {
-      "id": "t_5f207c0ff31b",
+      "id": "t_f11840222dd6",
       "title": "Bob Marley Three Little Birds",
       "artist": "BudGanja Radio",
-      "url": "/radio/03%20-%20Bob%20Marley%20Three%20Little%20Birds.mp3"
+      "url": "/radio/Bob%20Marley%20Three%20Little%20Birds.mp3"
     },
     {
-      "id": "t_7a0787a25314",
+      "id": "t_33a1437fe868",
       "title": "Bon Jovi - Livin' On A Prayer",
       "artist": "BudGanja Radio",
-      "url": "/radio/04%20-%20Bon%20Jovi%20-%20Livin'%20On%20A%20Prayer.mp3"
+      "url": "/radio/Bon%20Jovi%20-%20Livin'%20On%20A%20Prayer.mp3"
     },
     {
-      "id": "t_71e77b70b6f5",
+      "id": "t_276ea11bce4a",
+      "title": "Bons Aliados - Charlie Brown Jr",
+      "artist": "BudGanja Radio",
+      "url": "/radio/Bons%20Aliados%20-%20Charlie%20Brown%20Jr.mp3"
+    },
+    {
+      "id": "t_fd5b9a1e94c0",
+      "title": "Cidade Negra - Girassol",
+      "artist": "BudGanja Radio",
+      "url": "/radio/Cidade%20Negra%20-%20Girassol.mp3"
+    },
+    {
+      "id": "t_efa459324952",
+      "title": "Creedence Clearwater Revival - Long As I Can See The Light",
+      "artist": "BudGanja Radio",
+      "url": "/radio/Creedence%20Clearwater%20Revival%20-%20Long%20As%20I%20Can%20See%20The%20Light.mp3"
+    },
+    {
+      "id": "t_c95b5ddf191f",
+      "title": "Jimmy Cliff - I Can See Clearly Now",
+      "artist": "BudGanja Radio",
+      "url": "/radio/Jimmy%20Cliff%20-%20I%20Can%20See%20Clearly%20Now.mp3"
+    },
+    {
+      "id": "t_ef16dc48ad25",
+      "title": "OMC - How Bizarre",
+      "artist": "BudGanja Radio",
+      "url": "/radio/OMC%20-%20How%20Bizarre.mp3"
+    },
+    {
+      "id": "t_700695ab8937",
       "title": "The Rolling Stones - Jumpin' Jack Flash",
       "artist": "BudGanja Radio",
-      "url": "/radio/05%20-%20%20The%20Rolling%20Stones%20-%20Jumpin'%20Jack%20Flash.mp3"
+      "url": "/radio/The%20Rolling%20Stones%20-%20Jumpin'%20Jack%20Flash.mp3"
+    },
+    {
+      "id": "t_b3dbee7c08aa",
+      "title": "Van Morrison - Brown Eyed Girl",
+      "artist": "BudGanja Radio",
+      "url": "/radio/Van%20Morrison%20-%20Brown%20Eyed%20Girl.mp3"
     }
   ]
 }

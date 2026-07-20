@@ -6,7 +6,7 @@
  */
 (function (global) {
   // URLs com .v{N}. — evita o oval verde antigo em /imagens/icon-192.png (cache CDN).
-  var ICON_V = '288';
+  var ICON_V = '289';
 
   function artworkList() {
     var origin = (global.location && global.location.origin) || '';
@@ -137,10 +137,67 @@
     return refresh;
   }
 
+  function buildTrackShareUrl(track, username) {
+    var origin = (global.location && global.location.origin) || '';
+    var url = origin + '/radio/?';
+    var parts = [];
+    if (username) parts.push('u=' + encodeURIComponent(String(username)));
+    if (track && track.id) parts.push('t=' + encodeURIComponent(String(track.id)));
+    return url + parts.join('&');
+  }
+
+  /**
+   * Partilha a faixa atual (Web Share API ou copiar link).
+   * @returns {Promise<'shared'|'copied'|'fallback'>}
+   */
+  function shareTrack(track, opts) {
+    opts = opts || {};
+    if (!track) return Promise.reject(new Error('no track'));
+    var title = track.title || 'Rádio BudGanja';
+    var artist = track.artist || '';
+    var line = artist ? title + ' — ' + artist : title;
+    var shareUrl = buildTrackShareUrl(track, opts.username);
+    var payload = {
+      title: title + ' | BudGanja Radio',
+      text: 'A ouvir na Rádio BudGanja: ' + line,
+      url: shareUrl
+    };
+
+    if (typeof navigator.share === 'function') {
+      return navigator.share(payload).then(function () {
+        return 'shared';
+      }).catch(function (err) {
+        if (err && err.name === 'AbortError') return 'shared';
+        return copyShareUrl(shareUrl, payload.text);
+      });
+    }
+    return copyShareUrl(shareUrl, payload.text);
+  }
+
+  function copyShareUrl(shareUrl, fallbackText) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(shareUrl).then(function () {
+        return 'copied';
+      }).catch(function () {
+        return fallbackPrompt(shareUrl, fallbackText);
+      });
+    }
+    return Promise.resolve(fallbackPrompt(shareUrl, fallbackText));
+  }
+
+  function fallbackPrompt(shareUrl, fallbackText) {
+    try {
+      if (global.prompt) global.prompt(fallbackText || 'Copiar link:', shareUrl);
+    } catch (e) { /* ignore */ }
+    return 'fallback';
+  }
+
   global.BudGanjaRadioMedia = {
     artworkList: artworkList,
     updateMetadata: updateMetadata,
     updatePosition: updatePosition,
-    bind: bind
+    bind: bind,
+    buildTrackShareUrl: buildTrackShareUrl,
+    shareTrack: shareTrack
   };
 })(typeof window !== 'undefined' ? window : globalThis);

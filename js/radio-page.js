@@ -15,13 +15,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnPrev = document.getElementById('radio-prev');
   const btnPlay = document.getElementById('radio-play');
   const btnNext = document.getElementById('radio-next');
+  const shareTrackBtn = document.getElementById('radio-share-track-btn');
 
   const params = new URLSearchParams(window.location.search || '');
   const usernameParam = String(params.get('u') || params.get('username') || '').trim();
+  const trackParam = String(params.get('t') || params.get('track') || '').trim();
 
   let tracks = [];
   let index = 0;
   let seeking = false;
+  let shareOwnerUsername = usernameParam || '';
   const audio = new Audio();
   audio.preload = 'metadata';
 
@@ -146,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ownerEl.textContent = '@' + data.owner.username;
         }
         if (shareBtn) {
+          shareOwnerUsername = usernameParam;
           shareBtn.hidden = false;
           shareBtn.addEventListener('click', async () => {
             const url = window.location.origin + '/radio/?u=' + encodeURIComponent(usernameParam);
@@ -167,6 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ownerEl.textContent = '@' + data.owner.username;
         }
         if (shareBtn && data.owner.username) {
+          shareOwnerUsername = data.owner.username;
           shareBtn.hidden = false;
           shareBtn.addEventListener('click', async () => {
             const url = window.location.origin + '/radio/?u=' + encodeURIComponent(data.owner.username);
@@ -182,7 +187,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
       renderList();
       if (tracks.length) {
-        loadTrack(0, false);
+        let startIndex = 0;
+        if (trackParam) {
+          const found = tracks.findIndex((t) => t && String(t.id) === trackParam);
+          if (found >= 0) startIndex = found;
+        }
+        loadTrack(startIndex, !!trackParam);
         setStatus('');
       } else {
         setStatus(usernameParam ? 'Rádio vazia.' : 'Ainda não há faixas no catálogo.', !!usernameParam);
@@ -236,6 +246,40 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   if (btnPrev) btnPrev.addEventListener('click', () => loadTrack(index - 1, true));
   if (btnNext) btnNext.addEventListener('click', () => loadTrack(index + 1, true));
+
+  if (shareTrackBtn) {
+    shareTrackBtn.addEventListener('click', async () => {
+      const track = tracks[index];
+      if (!track) {
+        setStatus('Nenhuma faixa a tocar.', true);
+        return;
+      }
+      if (!window.BudGanjaRadioMedia || typeof window.BudGanjaRadioMedia.shareTrack !== 'function') {
+        const url = window.location.origin + '/radio/' +
+          (shareOwnerUsername ? ('?u=' + encodeURIComponent(shareOwnerUsername) + '&') : '?') +
+          't=' + encodeURIComponent(track.id || '');
+        try {
+          await navigator.clipboard.writeText(url);
+          setStatus('Link da música copiado.', false);
+        } catch (e) {
+          setStatus(url, false);
+        }
+        return;
+      }
+      try {
+        const result = await window.BudGanjaRadioMedia.shareTrack(track, {
+          username: shareOwnerUsername || undefined
+        });
+        if (result === 'copied' || result === 'fallback') {
+          setStatus('Link da música copiado.', false);
+        } else {
+          setStatus('Partilha pronta.', false);
+        }
+      } catch (e) {
+        setStatus('Não foi possível partilhar.', true);
+      }
+    });
+  }
 
   audio.addEventListener('ended', () => loadTrack(index + 1, true));
   audio.addEventListener('play', () => {

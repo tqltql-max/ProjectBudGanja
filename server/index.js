@@ -79,6 +79,10 @@ function getCacheControl(ext, filePath) {
   if (/^favicon(\.v\d+)?\.(ico|svg)$/i.test(base)) {
     return 'no-cache, must-revalidate';
   }
+  // Banner da home — muda com frequência durante design; hash no HTML + revalidação.
+  if (/^background-hero\.(png|svg)$/i.test(base)) {
+    return 'no-cache, must-revalidate';
+  }
   if (ext === '.html') return 'no-cache';
   if (['.js', '.css', '.json', '.webmanifest'].includes(ext)) return 'no-cache';
   if (['.png', '.jpg', '.jpeg', '.svg', '.webp', '.ico'].includes(ext)) return 'public, max-age=86400';

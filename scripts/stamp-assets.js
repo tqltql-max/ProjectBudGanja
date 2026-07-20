@@ -6,6 +6,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const { ROOT } = require('../lib/paths.js');
 const { ASSET_VERSION } = require('../lib/asset-version.js');
 
@@ -178,35 +179,72 @@ for (const file of listHtmlFiles(ROOT)) {
 
 // Manifesto de versão para o app verificar actualizações no telemóvel.
 const versionPath = path.join(ROOT, 'version.json');
+
+// Banner do hero: versão pelo hash do ficheiro (muda sozinho quando substituires o PNG).
+const heroPngPath = path.join(ROOT, 'imagens', 'background-hero.png');
+let heroCacheKey = ASSET_VERSION;
+let heroWidth = null;
+let heroHeight = null;
+if (fs.existsSync(heroPngPath)) {
+  const heroBuf = fs.readFileSync(heroPngPath);
+  heroCacheKey = crypto.createHash('sha1').update(heroBuf).digest('hex').slice(0, 10);
+  // Dimensões IHDR do PNG (bytes 16–23 big-endian)
+  if (heroBuf.length >= 24 && heroBuf[0] === 0x89 && heroBuf[1] === 0x50) {
+    heroWidth = heroBuf.readUInt32BE(16);
+    heroHeight = heroBuf.readUInt32BE(20);
+  }
+}
+
 fs.writeFileSync(
   versionPath,
-  JSON.stringify({ version: ASSET_VERSION, builtAt: new Date().toISOString() }, null, 2) + '\n',
+  JSON.stringify({
+    version: ASSET_VERSION,
+    hero: heroCacheKey,
+    heroSize: heroWidth && heroHeight ? { width: heroWidth, height: heroHeight } : null,
+    builtAt: new Date().toISOString()
+  }, null, 2) + '\n',
   'utf8'
 );
 
-// Versiona imagens referenciadas no CSS (ex.: banner do hero) — senão ficam presas num ?v= antigo.
+// Versiona imagens referenciadas no CSS (banner do hero → hash do ficheiro).
 const styleCssPath = path.join(ROOT, 'css', 'style.css');
 if (fs.existsSync(styleCssPath)) {
   let css = fs.readFileSync(styleCssPath, 'utf8');
   const nextCss = css.replace(
     /(url\(\s*['"]?(?:\.\.\/)?imagens\/background-hero\.(?:png|svg))(?:\?v=[^'")\s]*)?(['"]?\s*\))/g,
-    `$1?v=${ASSET_VERSION}$2`
+    `$1?v=${heroCacheKey}$2`
   );
   if (nextCss !== css) {
     fs.writeFileSync(styleCssPath, nextCss);
   }
 }
 
-// Versiona o banner do hero em HTML (img src)
+function stampHeroMediaAttrs(tag) {
+  if (!heroWidth || !heroHeight) return tag;
+  let next = tag;
+  if (/\bwidth="/i.test(next)) next = next.replace(/\bwidth="\d+"/i, 'width="' + heroWidth + '"');
+  else next = next.replace(/<img\b/i, '<img width="' + heroWidth + '"');
+  if (/\bheight="/i.test(next)) next = next.replace(/\bheight="\d+"/i, 'height="' + heroHeight + '"');
+  else next = next.replace(/<img\b/i, '<img height="' + heroHeight + '"');
+  return next;
+}
+
+// Versiona o banner do hero em HTML + actualiza width/height ao tamanho real do PNG
 for (const file of listHtmlFiles(ROOT)) {
   let html = fs.readFileSync(file, 'utf8');
-  const nextHtml = html.replace(
+  let nextHtml = html.replace(
     /(\/imagens\/background-hero\.(?:png|svg))(?:\?v=[^"']*)?/g,
-    `$1?v=${ASSET_VERSION}`
+    '$1?v=' + heroCacheKey
   );
+  nextHtml = nextHtml.replace(/<img\b[^>]*\bhero-media\b[^>]*>/gi, stampHeroMediaAttrs);
   if (nextHtml !== html) {
     fs.writeFileSync(file, nextHtml);
   }
 }
 
-console.log(`stamp-assets: versão v${ASSET_VERSION} aplicada (${changedHtml} HTML atualizados).`);
+console.log(
+  'stamp-assets: versão v' + ASSET_VERSION + ' aplicada (' + changedHtml + ' HTML atualizados)' +
+  '; hero ?v=' + heroCacheKey +
+  (heroWidth && heroHeight ? ' (' + heroWidth + '×' + heroHeight + ')' : '') +
+  '.'
+);
