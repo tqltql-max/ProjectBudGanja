@@ -7,21 +7,21 @@
     <meta property="og:title" content="Minha conta | Inspetor BudGanja">
     <meta property="og:description" content="Gerir nome, idade e foto de perfil. O diário de cultivo fica no módulo dedicado.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/imagens/icon-512.png?v=217">
+    <meta property="og:image" content="/imagens/icon-512.png?v=269">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="icon" href="/imagens/icon-192.png?v=217" sizes="192x192" type="image/png">
-    <link rel="icon" href="/imagens/favicon-48.png?v=217" sizes="48x48" type="image/png">
-    <link rel="icon" href="/imagens/favicon-32.png?v=217" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.png?v=217" sizes="16x16" type="image/png">
-    <link rel="shortcut icon" href="/favicon.ico?v=217" sizes="any">
-    <link rel="icon" href="/favicon.svg?v=217" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=217">
+    <link rel="icon" href="/imagens/icon-192.png?v=269" sizes="192x192" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.png?v=269" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-32.png?v=269" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=269" sizes="16x16" type="image/png">
+    <link rel="shortcut icon" href="/favicon.ico?v=269" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=269" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=269">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#3d5c28">
-    <link rel="stylesheet" href="/css/style.css?v=217">
+    <link rel="stylesheet" href="/css/style.css?v=269">
     <meta name="robots" content="noindex,nofollow">
     <title>Minha conta | Inspetor BudGanja</title>
 </head>
@@ -29,88 +29,172 @@
     <div id="site-header"></div>
 
     <main id="main-content" class="conteudo-interno perfil-page">
-    <div id="perfil-loading" class="conta-status">A carregar a sua conta…</div>
+      <div id="perfil-loading" class="perfil-loading" role="status">A carregar a sua conta…</div>
 
-    <div id="perfil-app" hidden>
-      <header class="perfil-hub-header">
-        <div class="perfil-hub-identity">
-          <button type="button" class="perfil-avatar-edit-btn" id="perfil-avatar-edit-btn" title="Alterar foto do perfil" aria-label="Alterar foto do perfil">
-            <img id="perfil-avatar" class="conta-avatar perfil-hub-avatar" src="/imagens/avatars/leaf.svg" alt="" width="64" height="64">
-            <span class="perfil-avatar-edit-badge" aria-hidden="true">✎</span>
-          </button>
-          <div>
-            <p class="perfil-hub-eyebrow">Minha conta</p>
-            <h1 id="perfil-name">Olá!</h1>
-            <p id="perfil-email" class="conta-email"></p>
-          </div>
-        </div>
-        <div class="perfil-hub-actions conta-actions">
-          <button type="button" class="botao botao-outline botao-sm" id="perfil-edit-btn" hidden>Editar dados</button>
-          <button type="button" class="botao botao-outline botao-sm" id="perfil-logout-btn">Sair</button>
-        </div>
-      </header>
-
-      <section id="perfil-onboarding" class="perfil-onboarding info-panel highlight-card" aria-labelledby="perfil-form-title">
-        <h2 id="perfil-form-title">Completar cadastro</h2>
-        <p id="perfil-onboarding-intro" class="page-intro">
-          Informe seu nome e idade para aceder ao site. Conteúdo exclusivo para <strong>maiores de 18 anos</strong>.
-        </p>
-        <form id="perfil-form" class="login-form">
-          <fieldset class="perfil-avatar-field">
-            <legend class="perfil-avatar-legend">Foto do perfil</legend>
-            <div class="perfil-avatar-picker">
-              <div class="perfil-avatar-preview-wrap">
-                <img id="profile-avatar-preview" class="perfil-avatar-preview conta-avatar" src="/imagens/avatars/leaf.svg" alt="Pré-visualização do avatar" width="96" height="96">
-              </div>
-              <p id="profile-avatar-status" class="perfil-avatar-status">Escolha um avatar ou envie a sua foto.</p>
-              <p class="perfil-avatar-hint">Toque num avatar — guarda na hora e actualiza o site.</p>
-              <p class="perfil-avatar-section-label">Avatares do laboratório</p>
-              <div id="profile-avatar-presets" class="perfil-avatar-presets" role="listbox" aria-label="Avatares disponíveis"></div>
-              <div class="perfil-avatar-actions">
-                <label class="perfil-avatar-upload botao botao-outline" for="profile-avatar-file">
-                  <span id="profile-avatar-upload-label">Enviar foto</span>
-                  <input type="file" id="profile-avatar-file" accept="image/jpeg,image/png,image/webp" hidden>
-                </label>
-                <button type="button" class="botao botao-outline" id="profile-avatar-google-btn" hidden>Usar foto Google</button>
-              </div>
-              <input type="hidden" id="profile-avatar-url" name="avatarUrl" value="">
+      <div id="perfil-app" class="perfil-shell" hidden>
+        <header class="perfil-identity">
+          <div class="perfil-identity-main">
+            <div class="perfil-avatar-display" aria-hidden="true">
+              <img id="perfil-avatar" class="conta-avatar perfil-hub-avatar" src="/imagens/avatars/inspector.svg" alt="" width="88" height="88">
             </div>
-          </fieldset>
-          <label class="login-field conta-field" for="profile-displayName">Nome
-            <input type="text" id="profile-displayName" name="displayName" maxlength="80" required autocomplete="name" placeholder="Como quer ser chamado">
-          </label>
-          <label class="login-field conta-field" for="profile-age">Idade
-            <input type="number" id="profile-age" name="age" min="18" max="120" required inputmode="numeric" placeholder="18 ou mais">
-          </label>
-          <p class="perfil-age-notice">Menores de 18 anos não podem utilizar este site.</p>
-          <div class="conta-actions">
-            <button type="submit" class="botao" id="perfil-save-btn">Guardar e continuar</button>
-            <button type="button" class="botao botao-outline" id="perfil-cancel-edit-btn" hidden>Voltar</button>
+            <div class="perfil-identity-copy">
+              <p class="perfil-hub-eyebrow">Conta do laboratório</p>
+              <h1 id="perfil-name">Conta</h1>
+              <p id="perfil-email" class="conta-email"></p>
+              <p id="perfil-account-badge" class="perfil-account-badge" hidden>Conta activa</p>
+            </div>
           </div>
-          <p id="perfil-form-status" class="conta-status" role="status" aria-live="polite"></p>
-        </form>
-      </section>
+          <div class="perfil-hub-actions conta-actions">
+            <button type="button" class="botao botao-outline botao-sm" id="perfil-edit-btn" hidden>Editar perfil</button>
+            <button type="button" class="botao botao-outline botao-sm" id="perfil-logout-btn">Terminar sessão</button>
+          </div>
+        </header>
 
-      <section id="perfil-account" class="perfil-account info-panel highlight-card" hidden aria-labelledby="perfil-account-title">
-        <h2 id="perfil-account-title">Conta activa</h2>
-        <p class="page-intro">Gerencie o seu laboratório pessoal: documente pesquisas de cultivo e planeie a infraestrutura antes de comprar equipamentos.</p>
-        <div class="conta-actions perfil-account-actions perfil-lab-links">
-          <a href="/cultivo/" class="botao">📓 Diário de Cultivo</a>
-          <a href="/planejamento/" class="botao botao-outline">🛠️ Planejamento de infraestrutura</a>
-          <button type="button" class="botao botao-outline" id="perfil-account-edit-btn">Editar dados</button>
+        <p id="perfil-live-status" class="perfil-live-status" role="status" aria-live="polite" hidden></p>
+
+        <div id="perfil-incomplete-banner" class="perfil-incomplete-banner" hidden>
+          <p>Ainda falta completar o cadastro (nome e idade, 18+).</p>
+          <button type="button" class="botao botao-sm" id="perfil-complete-btn">Completar agora</button>
         </div>
-      </section>
-    </div>
-  </main>
+
+        <section id="perfil-onboarding" class="perfil-panel perfil-onboarding" aria-labelledby="perfil-form-title" hidden>
+          <header class="perfil-panel-head">
+            <h2 id="perfil-form-title">Completar cadastro</h2>
+            <p id="perfil-onboarding-intro" class="perfil-panel-lead">
+              Informe o nome e a idade para activar o acesso. Conteúdo exclusivo para maiores de 18 anos.
+            </p>
+          </header>
+          <form id="perfil-form" class="perfil-form login-form">
+            <fieldset class="perfil-avatar-field">
+              <legend class="perfil-avatar-legend">Foto de perfil</legend>
+              <div class="perfil-avatar-picker">
+                <div class="perfil-avatar-preview-wrap">
+                  <img id="profile-avatar-preview" class="perfil-avatar-preview conta-avatar" src="/imagens/avatars/inspector.svg" alt="Pré-visualização do avatar" width="96" height="96">
+                </div>
+                <p id="profile-avatar-status" class="perfil-avatar-status">Escolha um avatar ou envie a sua foto.</p>
+                <p class="perfil-avatar-hint">A alteração da foto é guardada de imediato.</p>
+                <p class="perfil-avatar-section-label">Avatares do laboratório</p>
+                <div id="profile-avatar-presets" class="perfil-avatar-presets" role="listbox" aria-label="Avatares disponíveis"></div>
+                <div class="perfil-avatar-actions">
+                  <label class="perfil-avatar-upload botao botao-outline" for="profile-avatar-file">
+                    <span id="profile-avatar-upload-label">Enviar foto</span>
+                    <input type="file" id="profile-avatar-file" accept="image/jpeg,image/png,image/webp" hidden>
+                  </label>
+                  <label class="perfil-avatar-upload botao botao-outline" for="profile-avatar-capture">
+                    <span id="profile-avatar-capture-label">Tirar foto</span>
+                    <input type="file" id="profile-avatar-capture" accept="image/*" capture="user" hidden>
+                  </label>
+                  <button type="button" class="botao botao-outline" id="profile-avatar-google-btn" hidden>Usar foto Google</button>
+                </div>
+                <input type="hidden" id="profile-avatar-url" name="avatarUrl" value="">
+              </div>
+            </fieldset>
+
+            <div class="perfil-form-grid">
+              <label class="login-field conta-field" for="profile-displayName">Nome
+                <input type="text" id="profile-displayName" name="displayName" maxlength="80" required autocomplete="name" placeholder="Como quer ser chamado">
+              </label>
+              <label class="login-field conta-field" for="profile-age">Idade
+                <input type="number" id="profile-age" name="age" min="18" max="120" required inputmode="numeric" placeholder="18 ou mais">
+              </label>
+              <label class="login-field conta-field perfil-field-whatsapp" for="profile-whatsapp">WhatsApp <span class="perfil-field-optional">(opcional)</span>
+                <input type="tel" id="profile-whatsapp" name="whatsapp" maxlength="20" autocomplete="tel" inputmode="tel" placeholder="DDD + número, ex.: 11999999999">
+              </label>
+            </div>
+            <p class="perfil-age-notice">Acesso restrito a utilizadores com 18 anos ou mais. O WhatsApp é opcional.</p>
+
+            <div class="conta-actions perfil-form-actions">
+              <button type="submit" class="botao" id="perfil-save-btn">Guardar</button>
+              <button type="button" class="botao botao-outline" id="perfil-cancel-edit-btn" hidden>Cancelar</button>
+            </div>
+            <p id="perfil-form-status" class="conta-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section id="perfil-account" class="perfil-account" hidden aria-labelledby="perfil-account-title">
+          <h2 id="perfil-account-title" class="visually-hidden">Resumo da conta</h2>
+
+          <div class="perfil-account-grid">
+            <article class="perfil-panel">
+              <header class="perfil-panel-head">
+                <h3 class="perfil-panel-title">Dados da conta</h3>
+                <p class="perfil-panel-lead">Informação usada no site e no diário de cultivo.</p>
+              </header>
+              <dl class="perfil-meta-list">
+                <div>
+                  <dt>Nome</dt>
+                  <dd id="perfil-summary-name">—</dd>
+                </div>
+                <div>
+                  <dt>Idade</dt>
+                  <dd id="perfil-summary-age">—</dd>
+                </div>
+                <div>
+                  <dt>WhatsApp</dt>
+                  <dd id="perfil-summary-whatsapp">—</dd>
+                </div>
+                <div>
+                  <dt>E-mail</dt>
+                  <dd id="perfil-summary-email">—</dd>
+                </div>
+              </dl>
+              <div class="perfil-panel-actions">
+                <button type="button" class="botao" id="perfil-account-edit-btn">Editar perfil e foto</button>
+              </div>
+            </article>
+
+            <article class="perfil-panel">
+              <header class="perfil-panel-head">
+                <h3 class="perfil-panel-title">Módulos do laboratório</h3>
+                <p class="perfil-panel-lead">Ferramentas pessoais — o diário e o planejamento ficam em páginas próprias.</p>
+              </header>
+              <div class="perfil-module-list" role="list">
+                <a href="/cultivo/" class="perfil-module-link" role="listitem">
+                  <span class="perfil-module-label">Diário de Cultivo</span>
+                  <span class="perfil-module-desc">Pesquisas, registos e roteiro semanal</span>
+                </a>
+                <a href="/planejamento/" class="perfil-module-link" role="listitem">
+                  <span class="perfil-module-label">Planejamento</span>
+                  <span class="perfil-module-desc">Infraestrutura e lista de materiais</span>
+                </a>
+                <a href="/radio/" class="perfil-module-link" role="listitem">
+                  <span class="perfil-module-label">Rádio</span>
+                  <span class="perfil-module-desc">Ouvir e partilhar a tua playlist</span>
+                </a>
+                <button type="button" class="perfil-module-link" data-pwa-install role="listitem">
+                  <span class="perfil-module-label">Instalar app</span>
+                  <span class="perfil-module-desc">Acesso rápido na tela inicial</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="perfil-panel" id="perfil-radio">
+              <header class="perfil-panel-head">
+                <h3 class="perfil-panel-title">A minha rádio</h3>
+                <p class="perfil-panel-lead">Escolhe até 5 músicas do catálogo. A seleção toca no mini-player e na página pública da tua rádio.</p>
+              </header>
+              <p id="perfil-radio-count" class="field-hint">0 / 5 selecionadas</p>
+              <ul id="perfil-radio-list" class="perfil-radio-list" role="list"></ul>
+              <div class="perfil-panel-actions">
+                <button type="button" class="botao" id="perfil-radio-save">Guardar rádio</button>
+                <a class="botao botao-outline" id="perfil-radio-open" href="/radio/">Abrir player</a>
+              </div>
+              <p id="perfil-radio-share" class="perfil-radio-share field-hint" hidden></p>
+              <p id="perfil-radio-status" class="conta-status" role="status"></p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=217"></script>
-    <script src="/js/i18n-data.js?v=217"></script>
-    <script src="/js/i18n.js?v=217"></script>
-    <script src="/js/ferramentas-nav-data.js?v=217"></script>
-    <script src="/js/layout.js?v=217"></script>
-    <script src="/js/site-features.js?v=217"></script>
-  <script src="/js/perfil.js?v=217"></script>
+  <script src="/js/app-version-check.js?v=269"></script>
+    <script src="/js/i18n-data.js?v=269"></script>
+    <script src="/js/i18n.js?v=269"></script>
+    <script src="/js/ferramentas-nav-data.js?v=269"></script>
+    <script src="/js/layout.js?v=269"></script>
+    <script src="/js/site-features.js?v=269"></script>
+  <script src="/js/perfil.js?v=269"></script>
 
 </body>
 </html>

@@ -118,6 +118,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   const cultivoMetricSliderTrack = document.getElementById('cultivo-metric-slider-track');
   const cultivoMetricSliderWrap = document.querySelector('.cultivo-metric-slider-wrap');
   const cultivoMetricSliderValue = document.getElementById('cultivo-metric-slider-value');
+  const cultivoCommunityModal = document.getElementById('cultivo-community-modal');
+  const cultivoCommunityShareBlock = document.getElementById('cultivo-community-share-block');
+  const cultivoCommunitySuccessBlock = document.getElementById('cultivo-community-success-block');
+  const cultivoCommunitySuccessMsg = document.getElementById('cultivo-community-success-msg');
+  const cultivoCommunityPreviewImg = document.getElementById('cultivo-community-preview-img');
+  const cultivoCommunityCaption = document.getElementById('cultivo-community-caption');
+  const cultivoCommunityHelp = document.getElementById('cultivo-community-help');
+  const cultivoCommunityConfirm = document.getElementById('cultivo-community-confirm');
+  const cultivoCommunityStatus = document.getElementById('cultivo-community-modal-status');
+  let communityShares = new Map();
+  let communityShareDraft = null;
+  let communityTermsAccepted = false;
+  let communityShareBusy = false;
   const cultivoMetricSliderMin = document.getElementById('cultivo-metric-slider-min');
   const cultivoMetricSliderMax = document.getElementById('cultivo-metric-slider-max');
   const cultivoMetricSliderIdealNote = document.getElementById('cultivo-metric-slider-ideal-note');
@@ -140,7 +153,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const ENTRY_ACTIONS = CShared.ENTRY_ACTIONS || [];
   const MIN_USER_AGE = CShared.MIN_USER_AGE || 18;
   const TAB_STORAGE_KEY = IS_CULTIVO_PAGE ? 'budganja_cultivo_tab' : 'budganja_perfil_tab';
-  const DEFAULT_AVATAR = CShared.DEFAULT_AVATAR || '/imagens/avatars/leaf.svg';
+  const DEFAULT_AVATAR = CShared.DEFAULT_AVATAR || '/imagens/avatars/inspector.svg';
   const PRESET_AVATARS = CShared.PRESET_AVATARS || [];
   const escapeHtml = CShared.escapeHtml || function (t) { return String(t); };
   const formatDate = CShared.formatDate || function (iso) { return iso || ''; };
@@ -157,6 +170,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   let user = null;
   let liveStatusTimer = null;
   let profileSaving = false;
+  let entryMediaSaving = false;
   let planSaving = false;
   let selectedWeek = null;
   let selectedGrowLogId = null;
@@ -367,16 +381,117 @@ document.addEventListener('DOMContentLoaded', async () => {
     colheita: 'Colheita'
   };
 
-  const PHASE_ICONS = {
-    planejamento: '📋',
-    germinacao: '🌱',
-    vegetativo: '🌿',
-    floracao: '🌸',
-    colheita: '✂️'
+  const PHASE_ORDER = ['planejamento', 'germinacao', 'vegetativo', 'floracao', 'colheita'];
+
+  /**
+   * Arte do diário: cards dedicados (imagens/cultivo-cards/).
+   * Planejamento e Sênior usam a série perfil-evolucao.
+   */
+  const PHASE_EVOLUTION = {
+    planejamento: {
+      dir: 'perfil-evolucao',
+      file: '01-semente.png',
+      short: 'Semente',
+      blurb: 'O começo'
+    },
+    germinacao: {
+      dir: 'cultivo-cards',
+      file: 'germinacao.png',
+      short: 'Germinação',
+      blurb: 'A vida começa'
+    },
+    vegetativo: {
+      dir: 'cultivo-cards',
+      file: 'vegetativo.png',
+      short: 'Vegetação',
+      blurb: 'Crescimento'
+    },
+    floracao: {
+      dir: 'cultivo-cards',
+      file: 'floracao.png',
+      short: 'Floração',
+      blurb: 'O ciclo floresce'
+    },
+    colheita: {
+      dir: 'cultivo-cards',
+      file: 'colheita.png',
+      short: 'Colheita',
+      blurb: 'Momento da colheita'
+    }
   };
+
+  const SENIOR_EVOLUTION = {
+    dir: 'perfil-evolucao',
+    file: '07-cultivador-senior.png',
+    short: 'Sênior',
+    blurb: 'Experiência e excelência'
+  };
+
+  function assetVersionToken() {
+    if (typeof ASSET_V !== 'undefined' && ASSET_V) return String(ASSET_V);
+    const script = document.querySelector('script[src*="/js/layout.js"]');
+    const match = script && String(script.getAttribute('src') || '').match(/[?&]v=([^&]+)/);
+    return match ? match[1] : '241';
+  }
+
+  function phaseArtSrc(meta) {
+    const dir = (meta && meta.dir) || 'cultivo-cards';
+    const file = (meta && meta.file) || 'germinacao.png';
+    return '/imagens/' + dir + '/' + file + '?v=' + encodeURIComponent(assetVersionToken());
+  }
+
+  function phaseIconHtml(phase, extraClass) {
+    const meta = PHASE_EVOLUTION[phase] || PHASE_EVOLUTION.germinacao;
+    const cls = 'cultivo-phase-art' + (extraClass ? ' ' + extraClass : '');
+    return (
+      '<img class="' + cls + '" src="' + escapeHtml(phaseArtSrc(meta)) + '"' +
+      ' alt="" width="64" height="64" decoding="async" loading="lazy">'
+    );
+  }
 
   function phaseLabel(phase) {
     return PHASE_LABELS[phase] || phase || 'Germinação';
+  }
+
+  function phaseRank(phase) {
+    const idx = PHASE_ORDER.indexOf(phase);
+    return idx >= 0 ? idx : 1;
+  }
+
+  function renderEvolutionTrackHtml(currentPhase, options) {
+    const opts = options || {};
+    const current = currentPhase || 'germinacao';
+    const currentIdx = phaseRank(current);
+    const showSenior = !!opts.showSenior;
+    const seniorUnlocked = !!opts.seniorUnlocked;
+    const items = PHASE_ORDER.map((id, idx) => {
+      const meta = PHASE_EVOLUTION[id];
+      let state = 'is-upcoming';
+      if (idx < currentIdx) state = 'is-done';
+      if (idx === currentIdx) state = 'is-current';
+      return (
+        '<li class="cultivo-evo-step ' + state + '" data-phase="' + escapeHtml(id) + '">' +
+        '<span class="cultivo-evo-step-icon" aria-hidden="true">' + phaseIconHtml(id) + '</span>' +
+        '<span class="cultivo-evo-step-label">' + escapeHtml(meta.short) + '</span>' +
+        '</li>'
+      );
+    }).join('');
+    const seniorHtml = showSenior
+      ? (
+        '<li class="cultivo-evo-step cultivo-evo-step--senior ' + (seniorUnlocked ? 'is-current' : 'is-upcoming') + '">' +
+        '<span class="cultivo-evo-step-icon" aria-hidden="true">' +
+        '<img class="cultivo-phase-art" src="' + escapeHtml(phaseArtSrc(SENIOR_EVOLUTION)) + '"' +
+        ' alt="" width="64" height="64" decoding="async" loading="lazy">' +
+        '</span>' +
+        '<span class="cultivo-evo-step-label">' + escapeHtml(SENIOR_EVOLUTION.short) + '</span>' +
+        '</li>'
+      )
+      : '';
+    return (
+      '<div class="cultivo-evo-track" role="list" aria-label="Evolução do cultivo">' +
+      '<ol class="cultivo-evo-steps">' + items + seniorHtml + '</ol>' +
+      '</div>'
+    );
   }
 
   function setCultivoWizardPhase(phase) {
@@ -777,7 +892,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const sub = statusMap[log.id];
     const phase = log.phase || 'germinacao';
     const phaseText = formatProfileValue('phase', phase);
-    const phaseIcon = PHASE_ICONS[phase] || '🌱';
+    const phaseIcon = phaseIconHtml(phase);
     const entryCount = Array.isArray(log.entries) ? log.entries.length : 0;
     const plants = log.plantCount != null ? log.plantCount : 1;
     const dayNum = daysSincePlanted(log.plantedAt);
@@ -928,7 +1043,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     cultivoGrowHeader.className =
       'cultivo-grow-header info-panel highlight-card card cultivo-research-card cultivo-research-card--' + phase;
     const phaseLabel = formatProfileValue('phase', log.phase);
-    const phaseIcon = PHASE_ICONS[log.phase] || '🌱';
+    const phaseIcon = phaseIconHtml(log.phase || 'germinacao');
     const plants = log.plantCount != null ? log.plantCount : 1;
     const weeks = getRoteiroWeeks(profile || {});
     const current = getCurrentWeekNumber(log.plantedAt || profile.phaseStartedAt);
@@ -1706,8 +1821,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       ],
       save: async () => {
         if (!user || !user.profile) return false;
+        // Evitar corrida com upload/guardado do registo do diário.
+        if (entryMediaSaving || profileSaving) return null;
         const result = await saveCultivoPayload(readForm(), null, { silent: true });
-        return !!result;
+        return result ? true : false;
       }
     });
     cultivoAutosave.bind();
@@ -1794,7 +1911,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       rename: 'cultivo-edit-modal',
       edit: 'cultivo-edit-modal',
       compare: 'cultivo-compare-modal',
-      metric: 'cultivo-metric-modal'
+      metric: 'cultivo-metric-modal',
+      community: 'cultivo-community-modal'
     };
     const id = map[idOrKey] || idOrKey;
     const el = document.getElementById(id);
@@ -1802,6 +1920,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (id === 'cultivo-edit-modal') {
       editingGrowId = null;
       setEditModalStatus('');
+    }
+    if (id === 'cultivo-community-modal') {
+      communityShareDraft = null;
+      communityShareBusy = false;
+      setCommunityModalStatus('');
+      showCommunityShareForm();
+      const communityTitle = document.getElementById('cultivo-community-modal-title');
+      if (communityTitle) communityTitle.textContent = 'Publicar na comunidade';
     }
     if (id === 'cultivo-metric-modal') {
       if (activeMetricInput && typeof activeMetricInput.blur === 'function') {
@@ -2136,7 +2262,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   function prepareEntryImageForUpload(file) {
     if (!isEntryImageFile(file)) return Promise.resolve(file);
 
-    return new Promise((resolve) => {
+    return new Promise((resolve, reject) => {
       const img = new Image();
       const objectUrl = URL.createObjectURL(file);
       let settled = false;
@@ -2146,18 +2272,27 @@ document.addEventListener('DOMContentLoaded', async () => {
         URL.revokeObjectURL(objectUrl);
         resolve(result);
       }
+      function fail(message) {
+        if (settled) return;
+        settled = true;
+        URL.revokeObjectURL(objectUrl);
+        reject(new Error(message || 'Não foi possível ler esta foto.'));
+      }
 
       img.onload = () => {
         let width = img.naturalWidth || img.width;
         let height = img.naturalHeight || img.height;
         if (!width || !height) {
-          finish(file);
+          fail('Foto inválida ou corrompida.');
           return;
         }
         const maxSide = Math.max(width, height);
-        const looksHeic = /heic|heif/i.test(file.type || '') || /\.(heic|heif)$/i.test(file.name || '');
+        const type = String(file.type || '').toLowerCase();
+        const looksHeic = /heic|heif/i.test(type) || /\.(heic|heif)$/i.test(file.name || '');
+        const isJpegFamily = type === 'image/jpeg' || type === 'image/jpg' || type === 'image/png' || type === 'image/webp';
         const needsResize = maxSide > ENTRY_IMAGE_MAX_SIDE;
-        const needsCompress = needsResize || file.size > ENTRY_IMAGE_TARGET_BYTES || looksHeic;
+        // Sempre re-codificar fotos de telemóvel (HEIC/unknown) para JPEG aceite pela API.
+        const needsCompress = needsResize || file.size > ENTRY_IMAGE_TARGET_BYTES || looksHeic || !isJpegFamily;
         if (!needsCompress) {
           finish(file);
           return;
@@ -2172,23 +2307,27 @@ document.addEventListener('DOMContentLoaded', async () => {
         canvas.height = height;
         const ctx = canvas.getContext('2d');
         if (!ctx) {
-          finish(file);
+          fail('Este dispositivo não conseguiu otimizar a foto.');
           return;
         }
         ctx.drawImage(img, 0, 0, width, height);
 
-        const qualities = [0.82, 0.72, 0.62];
+        const qualities = [0.82, 0.72, 0.62, 0.5];
         const baseName = String(file.name || 'foto-cultivo').replace(/\.[^.]+$/, '') || 'foto-cultivo';
 
         function encodeAt(index) {
           const quality = qualities[index];
           canvas.toBlob((blob) => {
             if (!blob) {
-              finish(file);
+              fail('Falha ao converter a foto para JPEG.');
               return;
             }
             if (blob.size > ENTRY_MEDIA_MAX_IMAGE_BYTES && index < qualities.length - 1) {
               encodeAt(index + 1);
+              return;
+            }
+            if (blob.size > ENTRY_MEDIA_MAX_IMAGE_BYTES) {
+              fail('Imagem muito grande mesmo após otimização (máx. 6 MB).');
               return;
             }
             finish(new File([blob], baseName + '.jpg', { type: 'image/jpeg', lastModified: Date.now() }));
@@ -2198,7 +2337,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         encodeAt(0);
       };
 
-      img.onerror = () => finish(file);
+      img.onerror = () => fail(
+        'Não foi possível ler esta foto no telemóvel. Tire de novo em JPEG ou escolha «Carregar mídia».'
+      );
       img.src = objectUrl;
     });
   }
@@ -2232,13 +2373,19 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
 
       if (growDetailStatus) setStatus(growDetailStatus, 'A otimizar foto…');
-      const prepared = await prepareEntryImageForUpload(file);
-      if (prepared.size > ENTRY_MEDIA_MAX_IMAGE_BYTES) {
-        error = 'Imagem muito grande mesmo após otimização (máx. 6 MB).';
-        continue;
+      try {
+        const prepared = await prepareEntryImageForUpload(file);
+        if (prepared.size > ENTRY_MEDIA_MAX_IMAGE_BYTES) {
+          error = 'Imagem muito grande mesmo após otimização (máx. 6 MB).';
+          continue;
+        }
+        if (prepared !== file || prepared.size < file.size || prepared.type === 'image/jpeg') {
+          optimizedCount += 1;
+        }
+        valid.push(prepared);
+      } catch (err) {
+        error = (err && err.message) || 'Não foi possível preparar a foto.';
       }
-      if (prepared !== file || prepared.size < file.size) optimizedCount += 1;
-      valid.push(prepared);
     }
 
     pendingEntryPhotoFiles = pendingEntryPhotoFiles.concat(valid).slice(0, ENTRY_MEDIA_MAX_ITEMS);
@@ -2249,6 +2396,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       setStatus(growDetailStatus, optimizedCount === 1
         ? 'Foto otimizada para o diário.'
         : optimizedCount + ' fotos otimizadas para o diário.');
+    } else if (valid.length) {
+      setStatus(growDetailStatus, 'Mídia pronta para guardar.');
     }
   }
 
@@ -2265,6 +2414,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       throw new Error('Imagem muito grande mesmo após otimização (máx. 6 MB).');
     }
     const data = await readFileAsDataUrl(prepared);
+    if (!/^data:image\/(png|jpeg|jpg|webp|gif);base64,/i.test(data) && !/^data:video\//i.test(data)) {
+      throw new Error('Formato de foto inválido após otimização. Tire a foto de novo.');
+    }
     const res = await fetch('/api/cultivo/photo', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -2273,13 +2425,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
     const payload = await res.json().catch(() => ({}));
     if (!res.ok) throw new Error(payload.error || 'Erro no upload da mídia.');
+    if (!payload.url || String(payload.url).indexOf('/uploads/') !== 0) {
+      throw new Error('O servidor não devolveu o URL da mídia.');
+    }
     return payload.url;
   }
 
   async function uploadPendingEntryPhotos() {
     const urls = [];
-    for (const file of pendingEntryPhotoFiles.slice(0, ENTRY_MEDIA_MAX_ITEMS)) {
-      urls.push(await uploadCultivoPhoto(file));
+    const files = pendingEntryPhotoFiles.slice(0, ENTRY_MEDIA_MAX_ITEMS);
+    for (let i = 0; i < files.length; i++) {
+      if (growDetailStatus) {
+        setStatus(growDetailStatus, 'A enviar mídia ' + (i + 1) + '/' + files.length + '…');
+      }
+      urls.push(await uploadCultivoPhoto(files[i]));
     }
     return urls;
   }
@@ -2533,9 +2692,21 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
 
+  function isVideoUrl(url) {
+    return /\.(mp4|webm|mov)(\?|#|$)/i.test(String(url || ''));
+  }
+
+  function entryPhotoUrls(photos) {
+    if (!Array.isArray(photos)) return [];
+    return photos.filter((url) => String(url || '').startsWith('/uploads/') && !isVideoUrl(url));
+  }
+
+  function shareKey(entryId, photoUrl) {
+    return String(entryId || '') + '|' + String(photoUrl || '');
+  }
+
   function renderEntryPhotosHtml(photos) {
     if (!Array.isArray(photos) || !photos.length) return '';
-    const isVideoUrl = (url) => /\.(mp4|webm|mov)(\?|#|$)/i.test(String(url || ''));
     return (
       '<div class="perfil-grow-entry-photos">' +
       photos.map((url) =>
@@ -2545,6 +2716,26 @@ document.addEventListener('DOMContentLoaded', async () => {
           : '<img src="' + escapeHtml(url) + '" alt="Mídia do registo" loading="lazy">') +
         '</a>'
       ).join('') +
+      '</div>'
+    );
+  }
+
+  function renderCommunityShareActions(entry) {
+    const photos = entryPhotoUrls(entry.photos);
+    if (!photos.length) return '';
+    return (
+      '<div class="perfil-grow-entry-community">' +
+      photos.map((url) => {
+        const shared = communityShares.has(shareKey(entry.id, url));
+        if (shared) {
+          return '<a class="botao botao-outline botao-sm" href="/comunidade/">Já no feed</a>';
+        }
+        return (
+          '<button type="button" class="botao botao-outline botao-sm perfil-grow-entry-share"' +
+          ' data-entry-id="' + escapeHtml(entry.id) + '"' +
+          ' data-photo-url="' + escapeHtml(url) + '">Publicar na comunidade</button>'
+        );
+      }).join('') +
       '</div>'
     );
   }
@@ -2595,12 +2786,134 @@ document.addEventListener('DOMContentLoaded', async () => {
       metricsHtml +
       (entry.text ? '<p class="perfil-grow-entry-text">' + escapeHtml(entry.text) + '</p>' : '') +
       photosHtml +
+      renderCommunityShareActions(entry) +
       '<div class="perfil-grow-entry-actions">' +
       '<button type="button" class="botao botao-outline botao-sm perfil-grow-entry-edit">Editar</button>' +
       '<button type="button" class="botao botao-outline botao-sm perfil-grow-entry-delete">Apagar</button>' +
       '</div>' +
       '</li>'
     );
+  }
+
+  function setCommunityModalStatus(msg, isError) {
+    if (!cultivoCommunityStatus) return;
+    cultivoCommunityStatus.textContent = msg || '';
+    cultivoCommunityStatus.classList.toggle('is-error', !!isError);
+    cultivoCommunityStatus.classList.toggle('is-success', !!msg && !isError);
+  }
+
+  function showCommunityShareForm() {
+    if (cultivoCommunityShareBlock) cultivoCommunityShareBlock.hidden = false;
+    if (cultivoCommunitySuccessBlock) cultivoCommunitySuccessBlock.hidden = true;
+    if (cultivoCommunityConfirm) {
+      cultivoCommunityConfirm.disabled = false;
+      cultivoCommunityConfirm.textContent = 'Publicar';
+    }
+  }
+
+  function showCommunityShareSuccess(reused) {
+    if (cultivoCommunityShareBlock) cultivoCommunityShareBlock.hidden = true;
+    if (cultivoCommunitySuccessBlock) cultivoCommunitySuccessBlock.hidden = false;
+    if (cultivoCommunitySuccessMsg) {
+      cultivoCommunitySuccessMsg.textContent = reused
+        ? 'Esta foto já estava no feed da comunidade.'
+        : 'Pedido enviado — a foto já está no feed da comunidade.';
+    }
+    const title = document.getElementById('cultivo-community-modal-title');
+    if (title) title.textContent = 'Publicado';
+  }
+
+  function closeCommunityModal() {
+    if (cultivoCommunityModal) cultivoCommunityModal.hidden = true;
+    communityShareDraft = null;
+    communityShareBusy = false;
+    setCommunityModalStatus('');
+    showCommunityShareForm();
+    const title = document.getElementById('cultivo-community-modal-title');
+    if (title) title.textContent = 'Publicar na comunidade';
+  }
+
+  function openCommunityShareModal(log, entry, photoUrl) {
+    communityShareDraft = {
+      growId: log.id,
+      entryId: entry.id,
+      photoUrl: photoUrl,
+      caption: String(entry.text || '').trim().slice(0, 500)
+    };
+    if (cultivoCommunityPreviewImg) {
+      cultivoCommunityPreviewImg.src = photoUrl;
+      cultivoCommunityPreviewImg.alt = 'Foto do registo';
+    }
+    if (cultivoCommunityCaption) cultivoCommunityCaption.value = communityShareDraft.caption;
+    if (cultivoCommunityHelp) cultivoCommunityHelp.checked = false;
+    communityShareBusy = false;
+    showCommunityShareForm();
+    setCommunityModalStatus('');
+    if (cultivoCommunityModal) cultivoCommunityModal.hidden = false;
+  }
+
+  async function loadCommunityShares() {
+    try {
+      const res = await fetch('/api/community/my-shares', { credentials: 'include' });
+      if (!res.ok) return;
+      const data = await res.json().catch(() => ({}));
+      communityShares = new Map();
+      (data.shares || []).forEach((share) => {
+        communityShares.set(shareKey(share.entryId, share.photoUrl), share.id);
+      });
+    } catch (e) { /* ignore */ }
+  }
+
+  async function confirmCommunityShare() {
+    if (!communityShareDraft || communityShareBusy) return;
+    communityShareBusy = true;
+    if (cultivoCommunityConfirm) {
+      cultivoCommunityConfirm.disabled = true;
+      cultivoCommunityConfirm.textContent = 'A publicar…';
+    }
+    setCommunityModalStatus('A publicar…');
+    try {
+      const res = await fetch('/api/community/share', {
+        method: 'POST',
+        credentials: 'include',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          growId: communityShareDraft.growId,
+          entryId: communityShareDraft.entryId,
+          photoUrl: communityShareDraft.photoUrl,
+          caption: cultivoCommunityCaption ? cultivoCommunityCaption.value : '',
+          helpRequest: !!(cultivoCommunityHelp && cultivoCommunityHelp.checked)
+        })
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        communityShareBusy = false;
+        if (cultivoCommunityConfirm) {
+          cultivoCommunityConfirm.disabled = false;
+          cultivoCommunityConfirm.textContent = 'Publicar';
+        }
+        setCommunityModalStatus(data.error || 'Não foi possível publicar.', true);
+        return;
+      }
+      communityTermsAccepted = true;
+      if (data.post) {
+        communityShares.set(
+          shareKey(communityShareDraft.entryId, communityShareDraft.photoUrl),
+          data.post.id
+        );
+      }
+      showCommunityShareSuccess(!!data.reused);
+      flashLiveStatus(data.reused ? 'Esta foto já estava no feed.' : 'Publicado na comunidade.');
+      if (user && user.profile) renderGrowPage(user.profile);
+      communityShareBusy = false;
+    } catch (e) {
+      communityShareBusy = false;
+      if (cultivoCommunityConfirm) {
+        cultivoCommunityConfirm.disabled = false;
+        cultivoCommunityConfirm.textContent = 'Publicar';
+      }
+      setCommunityModalStatus('Servidor indisponível.', true);
+    }
   }
 
   function bindGrowEntryActions(log) {
@@ -2632,6 +2945,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         await persistGrowLogs(growDetailStatus, { tab: 'diario' });
         navigateCultivo({ view: 'grow', growId: keepGrowId, tab: 'diario' }, { replace: true, scroll: false });
+      });
+    });
+    growEntriesEl.querySelectorAll('.perfil-grow-entry-share').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const entryId = btn.getAttribute('data-entry-id');
+        const photoUrl = btn.getAttribute('data-photo-url');
+        const entry = (log.entries || []).find((item) => item.id === entryId);
+        if (entry && photoUrl) openCommunityShareModal(log, entry, photoUrl);
       });
     });
   }
@@ -3969,8 +4290,11 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
   async function persistGrowLogs(statusEl, uiOptions) {
     if (!user || !user.profile) return null;
     syncPhaseFromActiveLog(user.profile);
-    if (uiOptions) refreshUI(uiOptions);
-    return saveProfilePayload(readForm(), statusEl);
+    const silent = !!(uiOptions && uiOptions.silent);
+    const saved = await saveCultivoPayload(readForm(), statusEl, { silent: silent });
+    if (saved && uiOptions) refreshUI(uiOptions);
+    else if (saved && !silent) refreshUI();
+    return saved;
   }
 
   async function persistPlanTasks(statusEl) {
@@ -4086,11 +4410,13 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       const data = await res.json();
       if (loadingEl) loadingEl.hidden = true;
       if (appEl) appEl.hidden = false;
+      communityTermsAccepted = !!(data.communityTermsAccepted);
       renderUser(data);
 
       // O Diário exige apenas uma sessão autenticada. Não redirecionar perfis
       // antigos para o cadastro, pois isso criava um ciclo entre Cultivo e Perfil.
       if (IS_CULTIVO_PAGE) {
+        await loadCommunityShares();
         await loadCultivoIntoProfile();
         showDashboardView();
         const hadNoGrowLogs = !(user.profile.growLogs && user.profile.growLogs.length);
@@ -4245,6 +4571,12 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     });
   }
 
+  if (cultivoCommunityConfirm) {
+    cultivoCommunityConfirm.addEventListener('click', () => {
+      void confirmCommunityShare();
+    });
+  }
+
   if (cultivoHubNewBtn) {
     cultivoHubNewBtn.addEventListener('click', () => navigateCultivo({ view: 'wizard' }));
   }
@@ -4339,6 +4671,10 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       e.preventDefault();
       hideGrowPostSaveActions();
       if (!user || !user.profile || !selectedGrowLogId) return;
+      if (entryMediaSaving || profileSaving) {
+        setStatus(growDetailStatus, 'Aguarde o guardado anterior terminar…', true);
+        return;
+      }
       const metricErrors = validateEntryMetricsFromForm();
       if (metricErrors.length) {
         setStatus(growDetailStatus, metricErrors.join(' '), true);
@@ -4355,6 +4691,9 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
       }
       const log = user.profile.growLogs.find((item) => item.id === selectedGrowLogId);
       if (!log) return;
+
+      entryMediaSaving = true;
+      if (cultivoAutosave && cultivoAutosave.pause) cultivoAutosave.pause();
       setStatus(growDetailStatus, pendingEntryPhotoFiles.length ? 'A enviar mídia…' : 'A guardar…');
       let photos = [];
       try {
@@ -4363,51 +4702,68 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         }
       } catch (err) {
         setStatus(growDetailStatus, err.message || 'Erro ao enviar mídia.', true);
+        flashLiveStatus(err.message || 'Erro ao enviar mídia.', true);
+        entryMediaSaving = false;
+        if (cultivoAutosave && cultivoAutosave.resume) cultivoAutosave.resume();
         return;
       }
+
       let createdNewEntry = false;
-      if (editingEntryId) {
-        const entry = (log.entries || []).find((item) => item.id === editingEntryId);
-        if (!entry) {
+      try {
+        if (editingEntryId) {
+          const entry = (log.entries || []).find((item) => item.id === editingEntryId);
+          if (!entry) {
+            editingEntryId = null;
+            setStatus(growDetailStatus, 'Registo não encontrado.', true);
+            return;
+          }
+          entry.date = growEntryDate ? growEntryDate.value : entry.date;
+          entry.actionType = selectedEntryAction || 'obs';
+          entry.text = text;
+          entry.metrics = metrics;
+          if (photos.length) {
+            entry.photos = (entry.photos || []).concat(photos);
+          }
           editingEntryId = null;
-          setStatus(growDetailStatus, 'Registo não encontrado.', true);
-          return;
-        }
-        entry.date = growEntryDate ? growEntryDate.value : entry.date;
-        entry.actionType = selectedEntryAction || 'obs';
-        entry.text = text;
-        entry.metrics = metrics;
-        if (photos.length) {
-          entry.photos = (entry.photos || []).concat(photos);
-        }
-        editingEntryId = null;
-        clearEntryForm();
-        flashLiveStatus('Registo actualizado.');
-      } else {
-        const entry = createGrowEntry(text, {
-          date: growEntryDate ? growEntryDate.value : todayDateInputValue(),
-          actionType: selectedEntryAction,
-          metrics: metrics,
-          photos: photos
-        });
-        const result = appendEntryToGrowLog(log, entry);
-        if (!result.ok) {
-          setStatus(growDetailStatus, result.error, true);
-          return;
-        }
-        clearEntryForm();
-        flashLiveStatus('Registo guardado.');
-        createdNewEntry = true;
-      }
-      if (user && user.profile) {
-        if (createdNewEntry) {
-          refreshUI({ tab: 'diario', skipStash: true, scrollTo: 'perfil-grow-entries' });
+          clearEntryForm();
+          flashLiveStatus('Registo actualizado.');
         } else {
-          renderGrowPage(user.profile);
+          const entry = createGrowEntry(text, {
+            date: growEntryDate ? growEntryDate.value : todayDateInputValue(),
+            actionType: selectedEntryAction,
+            metrics: metrics,
+            photos: photos
+          });
+          const result = appendEntryToGrowLog(log, entry);
+          if (!result.ok) {
+            setStatus(growDetailStatus, result.error, true);
+            return;
+          }
+          clearEntryForm();
+          flashLiveStatus('Registo guardado.');
+          createdNewEntry = true;
         }
+
+        // Mostrar já a foto no diário; depois gravar em silêncio e refrescar de novo.
+        refreshUI({ tab: 'diario', skipStash: true, scrollTo: 'perfil-grow-entries' });
+        const saved = await persistGrowLogs(growDetailStatus, {
+          silent: true,
+          tab: 'diario',
+          skipStash: true,
+          scrollTo: 'perfil-grow-entries'
+        });
+        if (!saved) {
+          setStatus(growDetailStatus, 'A foto foi enviada, mas falhou gravar o diário. Tente guardar de novo.', true);
+          flashLiveStatus('Falha ao gravar o diário. Tente outra vez.', true);
+          refreshUI({ tab: 'diario', skipStash: true, scrollTo: 'perfil-grow-entries' });
+          return;
+        }
+        setStatus(growDetailStatus, photos.length ? 'Registo e foto guardados.' : 'Registo guardado.');
+        if (createdNewEntry) showGrowPostSaveActions();
+      } finally {
+        entryMediaSaving = false;
+        if (cultivoAutosave && cultivoAutosave.resume) cultivoAutosave.resume();
       }
-      await persistGrowLogs(growDetailStatus);
-      if (createdNewEntry) showGrowPostSaveActions();
     });
   }
 

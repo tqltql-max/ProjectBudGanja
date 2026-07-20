@@ -3,45 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pesquisas técnicas do Inspetor BudGanja — relatórios científicos e estudos sobre cultivo vegetal.">
-    <meta property="og:title" content="Pesquisas | Inspetor BudGanja">
-    <meta property="og:description" content="Relatórios técnicos e estudos científicos sobre cultivo vegetal.">
+    <meta name="description" content="Pesquisas realizadas do Inspetor BudGanja — estudos do laboratório e submissões aprovadas da comunidade.">
+    <meta property="og:title" content="Pesquisas Realizadas | Inspetor BudGanja">
+    <meta property="og:description" content="Pesquisas do laboratório e estudos submetidos pela comunidade.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/imagens/icon-512.png?v=217">
+    <meta property="og:image" content="/imagens/icon-512.png?v=269">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="icon" href="/imagens/icon-192.png?v=217" sizes="192x192" type="image/png">
-    <link rel="icon" href="/imagens/favicon-48.png?v=217" sizes="48x48" type="image/png">
-    <link rel="icon" href="/imagens/favicon-32.png?v=217" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.png?v=217" sizes="16x16" type="image/png">
-    <link rel="shortcut icon" href="/favicon.ico?v=217" sizes="any">
-    <link rel="icon" href="/favicon.svg?v=217" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=217">
+    <link rel="icon" href="/imagens/icon-192.png?v=269" sizes="192x192" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.png?v=269" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-32.png?v=269" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=269" sizes="16x16" type="image/png">
+    <link rel="shortcut icon" href="/favicon.ico?v=269" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=269" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=269">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#3d5c28">
-    <link rel="stylesheet" href="/css/style.css?v=217">
-    <title>Pesquisas | Inspetor BudGanja</title>
+    <link rel="stylesheet" href="/css/style.css?v=269">
+    <title>Pesquisas Realizadas | Inspetor BudGanja</title>
 </head>
 <body data-page="pesquisas">
     <div id="site-header"></div>
 
     <main id="main-content" class="conteudo-interno">
-        <h1>Pesquisas em Andamento</h1>
-        <p class="secao-subtitulo secao-subtitulo--spaced">Relatórios científicos, estudos com metodologia rigorosa e <strong>guias de uso das ferramentas</strong> do laboratório.</p>
-        <div class="container-cards">
-            <p class="empty-message">Carregando publicações...</p>
-        </div>
+        <h1>Pesquisas Realizadas</h1>
+        <p class="secao-subtitulo secao-subtitulo--spaced">As suas pesquisas em andamento, estudos do laboratório e submissões aprovadas da comunidade.</p>
+
+        <section class="pesquisas-section pesquisas-section--andamento" id="pesquisas-andamento" aria-labelledby="pesquisas-andamento-title">
+            <header class="pesquisas-section-head">
+                <h2 id="pesquisas-andamento-title">Pesquisas em andamento</h2>
+                <p class="pesquisas-section-lead">Os seus diários de cultivo activos — continue a documentar e, quando quiser, submeta para publicação.</p>
+            </header>
+            <div id="pesquisas-andamento-grid" class="container-cards" data-pesquisas-grid="andamento">
+                <p class="empty-message">A carregar…</p>
+            </div>
+        </section>
+
+        <section class="pesquisas-section" id="pesquisas-lab" aria-labelledby="pesquisas-lab-title">
+            <header class="pesquisas-section-head">
+                <h2 id="pesquisas-lab-title">Do laboratório</h2>
+                <p class="pesquisas-section-lead">Relatórios e protocolos produzidos pelo Inspetor BudGanja.</p>
+            </header>
+            <div id="pesquisas-lab-grid" class="container-cards" data-pesquisas-grid="lab">
+                <p class="empty-message">Carregando publicações...</p>
+            </div>
+        </section>
+
+        <section class="pesquisas-section" id="pesquisas-comunidade" aria-labelledby="pesquisas-comunidade-title">
+            <header class="pesquisas-section-head">
+                <h2 id="pesquisas-comunidade-title">Submetidas pela comunidade</h2>
+                <p class="pesquisas-section-lead">Diários enviados ao laboratório e aprovados para publicação.</p>
+            </header>
+            <div id="pesquisas-comunidade-grid" class="container-cards" data-pesquisas-grid="comunidade">
+                <p class="empty-message">Carregando publicações...</p>
+            </div>
+        </section>
     </main>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=217"></script>
-    <script src="/js/i18n-data.js?v=217"></script>
-    <script src="/js/i18n.js?v=217"></script>
-    <script src="/js/ferramentas-nav-data.js?v=217"></script>
-    <script src="/js/layout.js?v=217"></script>
-    <script src="/js/posts.js?v=217"></script>
+  <script src="/js/app-version-check.js?v=269"></script>
+    <script src="/js/i18n-data.js?v=269"></script>
+    <script src="/js/i18n.js?v=269"></script>
+    <script src="/js/ferramentas-nav-data.js?v=269"></script>
+    <script src="/js/layout.js?v=269"></script>
+    <script src="/js/posts.js?v=269"></script>
 
 </body>
 </html>

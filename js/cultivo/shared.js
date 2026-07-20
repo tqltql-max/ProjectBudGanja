@@ -33,16 +33,16 @@
     floracao: { label: 'Inspeção: ciência da floração', href: '/posts/post-inspecao-ciencia-floracao.html' },
     colheita: { label: 'Inspeção: solo vivo orgânico', href: '/posts/post-inspecao-solo-vivo-organico.html' }
   };
-  var DEFAULT_AVATAR = '/imagens/avatars/leaf.svg';
+  var DEFAULT_AVATAR = '/imagens/avatars/inspector.svg';
   var PRESET_AVATARS = [
+    { id: 'inspector', label: 'Inspetor', src: '/imagens/avatars/inspector.svg' },
     { id: 'leaf', label: 'Folha', src: '/imagens/avatars/leaf.svg' },
     { id: 'seedling', label: 'Muda', src: '/imagens/avatars/seedling.svg' },
     { id: 'bud', label: 'Flor', src: '/imagens/avatars/bud.svg' },
     { id: 'greenhouse', label: 'Estufa', src: '/imagens/avatars/greenhouse.svg' },
     { id: 'water', label: 'Rega', src: '/imagens/avatars/water.svg' },
     { id: 'lab', label: 'Laboratório', src: '/imagens/avatars/lab.svg' },
-    { id: 'sun', label: 'Luz', src: '/imagens/avatars/sun.svg' },
-    { id: 'inspector', label: 'Inspetor', src: '/imagens/avatars/inspector.svg' }
+    { id: 'sun', label: 'Luz', src: '/imagens/avatars/sun.svg' }
   ];
 
   function escapeHtml(text) {

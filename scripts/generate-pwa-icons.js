@@ -10,7 +10,15 @@ const SOURCE = fs.existsSync(SOURCE_PNG) ? SOURCE_PNG : SOURCE_SVG;
 const OUT_DIR = path.join(ROOT, 'imagens');
 const FAVICON_SVG = path.join(ROOT, 'favicon.svg');
 
+/** Fundo alinhado ao tema do site / PWA. */
 const BG = { r: 26, g: 26, b: 26, alpha: 1 };
+
+/** Margem para ícones “any” / favicon / header (evita corte em cantos arredondados). */
+const PAD_ANY = 0.12;
+/** Safe zone maskable (Android): conteúdo no ~60% central. */
+const PAD_MASKABLE = 0.22;
+/** Favicon/aba: um pouco mais de ar para máscaras circulares do browser. */
+const PAD_FAVICON = 0.16;
 
 async function loadSharp() {
   try {
@@ -34,79 +42,50 @@ function stripNearWhite(raw, info) {
   return { pixels, info };
 }
 
-async function prepareLogo(sharp, maxSize) {
-  const { data, info } = await sharp(SOURCE)
-    .ensureAlpha()
-    .resize(maxSize, maxSize, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
-    .raw()
-    .toBuffer({ resolveWithObject: true });
+/**
+ * Coloca a arte completa no canvas com padding — sem cover/crop.
+ * iconsite.png já é o emblema (não o cartaz com texto).
+ */
+async function buildPaddedIcon(sharp, size, padRatio) {
+  const pad = Math.max(2, Math.round(size * padRatio));
+  const inner = Math.max(8, size - pad * 2);
 
-  const cleaned = SOURCE === SOURCE_SVG ? stripNearWhite(data, info) : { pixels: data, info };
-  return sharp(cleaned.pixels, {
-    raw: { width: cleaned.info.width, height: cleaned.info.height, channels: 4 }
-  }).png().toBuffer();
-}
-
-/** Ícone completo do app (logo + texto) — PWA / apple-touch. */
-async function buildAppIcon(sharp, size) {
-  if (SOURCE === SOURCE_PNG) {
-    return sharp(SOURCE)
-      .resize(size, size, { fit: 'cover', position: 'centre' })
-      .png({ compressionLevel: 9 })
+  let logoBuf;
+  if (SOURCE === SOURCE_SVG) {
+    const { data, info } = await sharp(SOURCE)
+      .ensureAlpha()
+      .resize(inner, inner, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+    const cleaned = stripNearWhite(data, info);
+    logoBuf = await sharp(cleaned.pixels, {
+      raw: { width: cleaned.info.width, height: cleaned.info.height, channels: 4 }
+    })
+      .png()
+      .toBuffer();
+  } else {
+    logoBuf = await sharp(SOURCE)
+      .ensureAlpha()
+      .resize(inner, inner, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+      .png()
       .toBuffer();
   }
-
-  const pad = Math.round(size * 0.08);
-  const inner = size - pad * 2;
-  const logo = await prepareLogo(sharp, inner);
-
-  const glow = await sharp(logo)
-    .blur(Math.max(2, Math.round(size * 0.03)))
-    .modulate({ brightness: 1.15, saturation: 1.4 })
-    .png()
-    .toBuffer();
 
   return sharp({
     create: { width: size, height: size, channels: 4, background: BG }
   })
-    .composite([
-      { input: glow, gravity: 'centre', blend: 'screen' },
-      { input: logo, gravity: 'centre' }
-    ])
-    .png({ compressionLevel: 9 })
-    .toBuffer();
-}
-
-/**
- * Favicon pequeno: recorta só o emblema (topo do iconsite) para ler bem a 16–48px.
- * Sem o texto "INSPETOR BudGanja" que vira mancha na aba.
- */
-async function buildFaviconMark(sharp, size) {
-  if (SOURCE !== SOURCE_PNG) {
-    return buildAppIcon(sharp, size);
-  }
-
-  const meta = await sharp(SOURCE).metadata();
-  const w = meta.width || 512;
-  const h = meta.height || 512;
-  // Emblema ocupa ~ metade superior do cartaz
-  const crop = Math.min(w, Math.round(h * 0.52));
-  const left = Math.max(0, Math.round((w - crop) / 2));
-  const top = Math.max(0, Math.round(h * 0.04));
-
-  return sharp(SOURCE)
-    .extract({ left, top, width: Math.min(crop, w - left), height: Math.min(crop, h - top) })
-    .resize(size, size, { fit: 'cover', position: 'centre' })
+    .composite([{ input: logoBuf, gravity: 'centre' }])
     .png({ compressionLevel: 9 })
     .toBuffer();
 }
 
 function buildFaviconSvg(pngBase64) {
+  // Rounded square clip (não círculo) — o emblema já é squircle dourado.
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
   <defs>
-    <clipPath id="round"><circle cx="32" cy="32" r="30"/></clipPath>
+    <clipPath id="round"><rect x="2" y="2" width="60" height="60" rx="14" ry="14"/></clipPath>
   </defs>
-  <circle cx="32" cy="32" r="30" fill="#1a1a1a"/>
+  <rect x="0" y="0" width="64" height="64" rx="16" ry="16" fill="#1a1a1a"/>
   <g clip-path="url(#round)">
     <image xlink:href="data:image/png;base64,${pngBase64}" width="64" height="64" preserveAspectRatio="xMidYMid meet"/>
   </g>
@@ -138,19 +117,20 @@ async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
   const app = {
-    512: await buildAppIcon(sharp, 512),
-    192: await buildAppIcon(sharp, 192),
-    180: await buildAppIcon(sharp, 180)
+    512: await buildPaddedIcon(sharp, 512, PAD_ANY),
+    192: await buildPaddedIcon(sharp, 192, PAD_ANY),
+    180: await buildPaddedIcon(sharp, 180, PAD_ANY)
   };
+  const maskable = await buildPaddedIcon(sharp, 512, PAD_MASKABLE);
   const mark = {
-    64: await buildFaviconMark(sharp, 64),
-    48: await buildFaviconMark(sharp, 48),
-    32: await buildFaviconMark(sharp, 32),
-    16: await buildFaviconMark(sharp, 16)
+    64: await buildPaddedIcon(sharp, 64, PAD_FAVICON),
+    48: await buildPaddedIcon(sharp, 48, PAD_FAVICON),
+    32: await buildPaddedIcon(sharp, 32, PAD_FAVICON),
+    16: await buildPaddedIcon(sharp, 16, PAD_FAVICON)
   };
 
   fs.writeFileSync(path.join(OUT_DIR, 'icon-512.png'), app[512]);
-  fs.writeFileSync(path.join(OUT_DIR, 'icon-512-maskable.png'), app[512]);
+  fs.writeFileSync(path.join(OUT_DIR, 'icon-512-maskable.png'), maskable);
   fs.writeFileSync(path.join(OUT_DIR, 'icon-192.png'), app[192]);
   fs.writeFileSync(path.join(OUT_DIR, 'apple-touch-icon.png'), app[180]);
   fs.writeFileSync(path.join(OUT_DIR, 'favicon-48.png'), mark[48]);
@@ -159,12 +139,13 @@ async function main() {
   fs.writeFileSync(FAVICON_SVG, buildFaviconSvg(mark[64].toString('base64')));
   await writeIco(mark);
 
-  // Header: mesma arte do emblema (não o cartaz completo com texto)
-  fs.writeFileSync(path.join(OUT_DIR, 'app-icon.png'), await buildFaviconMark(sharp, 192));
+  // Header / menu: emblema completo com margem (não crop circular agressivo no ficheiro)
+  fs.writeFileSync(path.join(OUT_DIR, 'app-icon.png'), await buildPaddedIcon(sharp, 192, PAD_FAVICON));
 
   console.log('Ícones gerados a partir de imagens/' + path.basename(SOURCE));
-  console.log('  → imagens/icon-192.png, icon-512.png, apple-touch-icon.png (app completo)');
-  console.log('  → favicon-*.png, favicon.svg, favicon.ico, app-icon.png (emblema)');
+  console.log('  → icon-192/512 + apple-touch (padding ' + Math.round(PAD_ANY * 100) + '%)');
+  console.log('  → icon-512-maskable (padding ' + Math.round(PAD_MASKABLE * 100) + '%)');
+  console.log('  → favicon-*.png, favicon.svg, favicon.ico, app-icon.png');
 }
 
 main().catch((err) => {

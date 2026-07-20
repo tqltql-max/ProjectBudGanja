@@ -1,5 +1,5 @@
 // Service Worker para PWA - Inspetor BudGanja
-const APP_VERSION = '217';
+const APP_VERSION = '269';
 const CACHE_NAME = 'budganja-v' + APP_VERSION;
 const urlsToCache = [
     '/',
@@ -7,8 +7,6 @@ const urlsToCache = [
     '/biblioteca/pesquisas/',
     '/biblioteca/inspecoes/',
     '/equipamentos/',
-    '/loja/',
-    '/loja/encomenda.html',
     '/calculadoras/',
     '/calculadoras/cultivo-lab.html',
     '/calculadoras/luximetro.html',
@@ -18,6 +16,7 @@ const urlsToCache = [
     '/info/contato.html',
     '/info/privacidade.html',
     '/sorteios/',
+    '/comunidade/',
     '/cultivo/',
     '/planejamento/',
     '/js/planejamento.js',
@@ -58,14 +57,17 @@ const urlsToCache = [
     '/js/i18n.js',
     '/posts-public.json',
     '/manifest.json',
+    '/favicon.ico',
     '/favicon.svg',
-    '/imagens/app-icon.svg',
-    '/imagens/icon-192.png',
-    '/imagens/icon-512.png',
-    '/imagens/icon-512-maskable.png',
-    '/imagens/apple-touch-icon.png',
-    '/imagens/favicon-32.png',
-    '/imagens/favicon-16.png'
+    '/imagens/app-icon.png?v=' + APP_VERSION,
+    '/imagens/icon-192.png?v=' + APP_VERSION,
+    '/imagens/icon-512.png?v=' + APP_VERSION,
+    '/imagens/icon-512-maskable.png?v=' + APP_VERSION,
+    '/imagens/apple-touch-icon.png?v=' + APP_VERSION,
+    '/imagens/favicon-48.png?v=' + APP_VERSION,
+    '/imagens/favicon-32.png?v=' + APP_VERSION,
+    '/imagens/favicon-16.png?v=' + APP_VERSION,
+    '/imagens/iconsite.png?v=' + APP_VERSION
 ];
 
 self.addEventListener('message', (event) => {
@@ -107,9 +109,20 @@ self.addEventListener('fetch', (event) => {
     if (event.request.url.includes('/api/')) return;
 
     const url = new URL(event.request.url);
+    // Não interceptar cross-origin (ex.: miniaturas i.ytimg.com nos cards).
+    // Caso contrário o cache-first abaixo pode devolver respostas opacas/falhadas
+    // e as capas dos posts ficam em branco (net::ERR_FAILED).
+    if (url.origin !== self.location.origin) return;
+
     const path = url.pathname;
 
     if (path === '/version.json' || path === '/sw.js' || path.indexOf('/sw.js') === 0) {
+        event.respondWith(fetch(event.request, { cache: 'no-store' }));
+        return;
+    }
+
+    // Fotos/vídeos do diário: sempre rede (nunca cache-first, senão a foto nova não aparece).
+    if (path.startsWith('/uploads/')) {
         event.respondWith(fetch(event.request, { cache: 'no-store' }));
         return;
     }

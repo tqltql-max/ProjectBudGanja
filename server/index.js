@@ -40,16 +40,19 @@ const MIME = {
   '.jpeg': 'image/jpeg',
   '.ico': 'image/x-icon',
   '.webp': 'image/webp',
-  '.webmanifest': 'application/manifest+json'
+  '.webmanifest': 'application/manifest+json',
+  '.mp3': 'audio/mpeg'
 };
 
 const MAX_BODY_BYTES = 2 * 1024 * 1024;
 const MAX_UPLOAD_BYTES = 6 * 1024 * 1024;
 const MAX_CULTIVO_MEDIA_BODY_BYTES = 40 * 1024 * 1024;
+const MAX_CULTIVO_STATE_BODY_BYTES = 8 * 1024 * 1024;
 
 function bodyLimitForApi(url) {
   if (url === '/api/upload' || url === '/api/admin/update-icons') return MAX_UPLOAD_BYTES;
   if (url === '/api/cultivo/photo') return MAX_CULTIVO_MEDIA_BODY_BYTES;
+  if (url === '/api/cultivo') return MAX_CULTIVO_STATE_BODY_BYTES;
   return MAX_BODY_BYTES;
 }
 

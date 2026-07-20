@@ -412,3 +412,40 @@ CREATE TABLE IF NOT EXISTS post_series (
 );
 
 CREATE INDEX IF NOT EXISTS idx_post_series_category ON post_series(category);
+
+-- Feed da Comunidade (fotos do diário + comentários)
+
+CREATE TABLE IF NOT EXISTS community_posts (
+  id TEXT PRIMARY KEY,
+  user_id TEXT NOT NULL,
+  grow_id TEXT NOT NULL DEFAULT '',
+  entry_id TEXT NOT NULL DEFAULT '',
+  photo_url TEXT NOT NULL DEFAULT '',
+  caption TEXT NOT NULL DEFAULT '',
+  phase TEXT NOT NULL DEFAULT '',
+  help_request INTEGER NOT NULL DEFAULT 0,
+  kind TEXT NOT NULL DEFAULT 'diary',
+  status TEXT NOT NULL DEFAULT 'published',
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE INDEX IF NOT EXISTS idx_community_posts_status_created ON community_posts(status, created_at);
+CREATE INDEX IF NOT EXISTS idx_community_posts_user ON community_posts(user_id);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_community_posts_entry_photo
+  ON community_posts(entry_id, photo_url) WHERE entry_id <> '' AND photo_url <> '';
+
+CREATE TABLE IF NOT EXISTS community_comments (
+  id TEXT PRIMARY KEY,
+  post_id TEXT NOT NULL,
+  user_id TEXT NOT NULL,
+  body TEXT NOT NULL DEFAULT '',
+  status TEXT NOT NULL DEFAULT 'published',
+  created_at TEXT NOT NULL,
+  FOREIGN KEY (post_id) REFERENCES community_posts(id) ON DELETE CASCADE,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE INDEX IF NOT EXISTS idx_community_comments_post ON community_comments(post_id, created_at);
+CREATE INDEX IF NOT EXISTS idx_community_comments_user ON community_comments(user_id);

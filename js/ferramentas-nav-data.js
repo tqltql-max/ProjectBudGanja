@@ -63,13 +63,13 @@ window.__BIBLIOTECA_NAV__ = {
           "submenu": true,
           "children": [
             {
-              "label": "Todas as pesquisas",
+              "label": "Pesquisas realizadas",
               "tileLabel": "Índice",
               "href": "/biblioteca/pesquisas/",
               "icon": "🔬",
               "slug": "pesquisas",
               "featured": true,
-              "description": "Relatórios e estudos técnicos."
+              "description": "Pesquisas do laboratório e da comunidade."
             },
             {
               "label": "Substratos biodegradáveis",
@@ -122,20 +122,20 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Verificações de campo."
             },
             {
-              "label": "Inspeção: O Início do Cultivo de Cannabis",
-              "tileLabel": "Inspeção: O Início do Cultivo d…",
-              "href": "/posts/post-inspecao-cultivo-inicio.html",
+              "label": "Inspeção: Canal Jardim HG (@jardimhg)",
+              "tileLabel": "Inspeção: Canal Jardim HG (@jar…",
+              "href": "/posts/post-inspecao-canal-jardimhg.html",
               "icon": "🔍",
-              "slug": "post-inspecao-cultivo-inicio",
-              "description": "Verificação das quatro fases fenológicas e dos fatores ambientais críticos no arranque do cultivo — base do guia em vídeo do canal."
+              "slug": "post-inspecao-canal-jardimhg",
+              "description": "Auditoria editorial do canal Jardim HG — 124 vídeos catalogados sobre cultivo medicinal indoor/outdoor, com créditos integrais ao criador."
             },
             {
-              "label": "Inspeção: Nutrição da Cannabis",
-              "tileLabel": "Inspeção: Nutrição da Cannabis",
-              "href": "/posts/post-inspecao-nutricao-cannabis.html",
+              "label": "Inspeção: Canal Plantamemo (@plantamemo)",
+              "tileLabel": "Inspeção: Canal Plantamemo (@pl…",
+              "href": "/posts/post-inspecao-canal-plantamemo.html",
               "icon": "🔍",
-              "slug": "post-inspecao-nutricao-cannabis",
-              "description": "Análise das necessidades de macro e micronutrientes por fase fenológica, relação N:P:K e condutividade elétrica da solução nutritiva."
+              "slug": "post-inspecao-canal-plantamemo",
+              "description": "Auditoria editorial do canal Plantamemo — 213 vídeos catalogados sobre breeders, genéticas clássicas e cultivo indoor do zero, com créditos integrais ao criador."
             },
             {
               "label": "Inspeção: Canal Inspetor BudGanja (@InspetorBudGanja)",
@@ -146,36 +146,20 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Auditoria editorial do canal oficial — 7 vídeos catalogados como trilha técnica do laboratório, com foco em conhecimento científico aplicado e integração com as ferramentas do projeto."
             },
             {
-              "label": "Inspeção: Solo Vivo Orgânico",
-              "tileLabel": "Inspeção: Solo Vivo Orgânico",
-              "href": "/posts/post-inspecao-solo-vivo-organico.html",
+              "label": "Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal",
+              "tileLabel": "Inspeção: Curso UNIFESP — Canna…",
+              "href": "/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html",
               "icon": "🔍",
-              "slug": "post-inspecao-solo-vivo-organico",
-              "description": "Verificação da construção de super-solo com microbioma ativo, ciclagem de nutrientes e indicadores de saúde do substrato."
+              "slug": "post-inspecao-curso-unifesp-cannabis-medicinal",
+              "description": "Auditoria do XIV Curso de extensão da UNIFESP em parceria com o MovReCam — 10 mil vagas gratuitas, 57 h EaD via YouTube, certificado com 75% de presença e grade clínica, legislativa e de cultivo."
             },
             {
-              "label": "Inspeção: Arquitetura da Cannabis",
-              "tileLabel": "Inspeção: Arquitetura da Cannab…",
-              "href": "/posts/post-inspecao-arquitetura-cannabis.html",
+              "label": "Inspeção: Equipamentos Mars Hydro Brasil",
+              "tileLabel": "Inspeção: Equipamentos Mars Hyd…",
+              "href": "/posts/post-inspecao-marshydro-brasil.html",
               "icon": "🔍",
-              "slug": "post-inspecao-arquitetura-cannabis",
-              "description": "Avaliação morfológica da planta — nós, internós, gemas apicais e laterais — e técnicas de manejo (topping, LST, SCROG)."
-            },
-            {
-              "label": "Inspeção: A Ciência da Floração",
-              "tileLabel": "Inspeção: A Ciência da Floração",
-              "href": "/posts/post-inspecao-ciencia-floracao.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-ciencia-floracao",
-              "description": "Verificação do gatilho fotoperiódico, desenvolvimento pistilar, maturação tricomática e janela ideal de colheita."
-            },
-            {
-              "label": "Inspeção: Propagação e Clonagem",
-              "tileLabel": "Inspeção: Propagação e Clonagem",
-              "href": "/posts/post-inspecao-propagacao-clonagem.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-propagacao-clonagem",
-              "description": "Verificação de técnicas de multiplicação vegetativa — estacas, ambiente de enraizamento e sistemas aeropónicos caseiros."
+              "slug": "post-inspecao-marshydro-brasil",
+              "description": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório."
             },
             {
               "label": "Inspeção: Otimização do Cultivo Indoor (PPFD e ambiente)",
@@ -186,12 +170,52 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Verificação integrada de PPFD, DLI, VPD, ventilação e layout da tenda — síntese do ambiente indoor eficiente."
             },
             {
-              "label": "Inspeção: Canal Jardim HG (@jardimhg)",
-              "tileLabel": "Inspeção: Canal Jardim HG (@jar…",
-              "href": "/posts/post-inspecao-canal-jardimhg.html",
+              "label": "Inspeção: Propagação e Clonagem",
+              "tileLabel": "Inspeção: Propagação e Clonagem",
+              "href": "/posts/post-inspecao-propagacao-clonagem.html",
               "icon": "🔍",
-              "slug": "post-inspecao-canal-jardimhg",
-              "description": "Auditoria editorial do canal Jardim HG — 124 vídeos catalogados sobre cultivo medicinal indoor/outdoor, com créditos integrais ao criador."
+              "slug": "post-inspecao-propagacao-clonagem",
+              "description": "Verificação de técnicas de multiplicação vegetativa — estacas, ambiente de enraizamento e sistemas aeropónicos caseiros."
+            },
+            {
+              "label": "Inspeção: A Ciência da Floração",
+              "tileLabel": "Inspeção: A Ciência da Floração",
+              "href": "/posts/post-inspecao-ciencia-floracao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-ciencia-floracao",
+              "description": "Verificação do gatilho fotoperiódico, desenvolvimento pistilar, maturação tricomática e janela ideal de colheita."
+            },
+            {
+              "label": "Inspeção: Arquitetura da Cannabis",
+              "tileLabel": "Inspeção: Arquitetura da Cannab…",
+              "href": "/posts/post-inspecao-arquitetura-cannabis.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arquitetura-cannabis",
+              "description": "Avaliação morfológica da planta — nós, internós, gemas apicais e laterais — e técnicas de manejo (topping, LST, SCROG)."
+            },
+            {
+              "label": "Inspeção: Solo Vivo Orgânico",
+              "tileLabel": "Inspeção: Solo Vivo Orgânico",
+              "href": "/posts/post-inspecao-solo-vivo-organico.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-solo-vivo-organico",
+              "description": "Verificação da construção de super-solo com microbioma ativo, ciclagem de nutrientes e indicadores de saúde do substrato."
+            },
+            {
+              "label": "Inspeção: Nutrição da Cannabis",
+              "tileLabel": "Inspeção: Nutrição da Cannabis",
+              "href": "/posts/post-inspecao-nutricao-cannabis.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-nutricao-cannabis",
+              "description": "Análise das necessidades de macro e micronutrientes por fase fenológica, relação N:P:K e condutividade elétrica da solução nutritiva."
+            },
+            {
+              "label": "Inspeção: O Início do Cultivo de Cannabis",
+              "tileLabel": "Inspeção: O Início do Cultivo d…",
+              "href": "/posts/post-inspecao-cultivo-inicio.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-cultivo-inicio",
+              "description": "Verificação das quatro fases fenológicas e dos fatores ambientais críticos no arranque do cultivo — base do guia em vídeo do canal."
             },
             {
               "label": "Inspeção: Sistema de Ventilação da Tenda",

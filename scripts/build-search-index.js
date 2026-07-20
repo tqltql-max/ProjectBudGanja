@@ -12,9 +12,8 @@ const STATIC_PAGES = [
   { url: '/', title: 'Início', desc: 'Laboratório digital de cultivo vegetal', keywords: 'home laboratório' },
   { url: '/biblioteca/inspecoes/', title: 'Inspeções — Guia de Cultivo Básico', desc: 'Série de inspeções com relatórios e vídeos @InspetorBudGanja', keywords: 'guia cultivo inspeção vídeo' },
   { url: '/biblioteca/pesquisas/', title: 'Pesquisas', desc: 'Relatórios e estudos técnicos', keywords: 'pesquisa relatório' },
-  { url: '/biblioteca/inspecoes/', title: 'Inspeções', desc: 'Verificações de campo e inspeções técnicas', keywords: 'inspeção campo' },
+  { url: '/biblioteca/inspecoes/', title: 'Inspeções', desc: 'Relatórios técnicos com método verificável — guia, canais, equipamentos e cursos', keywords: 'inspeção auditoria método' },
   { url: '/equipamentos/', title: 'Equipamentos', desc: 'Manuais caseiros e equipamentos documentados', keywords: 'equipamento caseiro manual clonadora' },
-  { url: '/loja/', title: 'Loja parceira', desc: 'Materiais das clonadoras na vitrine Magazine Inspetor BudGanja (Magalu)', keywords: 'loja clonadora bombinha bucha balde bomba aspersor feltro magazine luiza magalu influenciador' },
   { url: '/calculadoras/', title: 'Ferramentas', desc: 'Super Calc, luxímetro e Super Solo', keywords: 'ferramentas cultivo vpd dli' },
   ...CALCULADORAS.map((c) => ({
     url: getCalculadoraUrl(c),
@@ -22,6 +21,7 @@ const STATIC_PAGES = [
     desc: c.description,
     keywords: c.keywords || c.slug
   })),
+  { url: '/comunidade/', title: 'Comunidade', desc: 'Feed de fotos e relatos de cultivo vegetal partilhados pelos cultivadores', keywords: 'comunidade feed fotos diário cultivo comentários' },
   { url: '/sorteios/', title: 'Sorteios', desc: 'Sorteio de inauguração — clonadora aeropônica caseira em breve', keywords: 'sorteio inauguração clonadora' },
   { url: '/videos/', title: 'Últimos vídeos', desc: 'Vídeos recentes do canal YouTube', keywords: 'youtube vídeo canal' },
   { url: '/info/sobre.html', title: 'Sobre', desc: 'Propósito e metodologia do projeto', keywords: 'sobre missão' },

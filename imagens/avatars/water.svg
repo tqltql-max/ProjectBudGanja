@@ -1,7 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Rega">
-  <circle cx="64" cy="64" r="64" fill="#1a3324"/>
-  <path d="M64 30c-8 14-20 28-20 42 0 12 9 22 20 22s20-10 20-22c0-14-12-28-20-42z" fill="#3498db"/>
-  <path d="M64 38c-5 9-12 18-12 28 0 7 5 12 12 12s12-5 12-12c0-10-7-19-12-28z" fill="#5dade2"/>
-  <path d="M38 88c6 8 14 12 26 12s20-4 26-12" fill="none" stroke="#27ae60" stroke-width="4" stroke-linecap="round"/>
-  <ellipse cx="64" cy="92" rx="18" ry="6" fill="#27ae60" opacity=".5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Água">
+  <defs>
+    <linearGradient id="g" x1="40" y1="18" x2="88" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7ec8ff"/><stop offset="1" stop-color="#2a6fad"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#121212"/>
+  <rect x="6" y="6" width="116" height="116" rx="24" fill="none" stroke="#3a6a8a" stroke-width="2.5"/>
+  <path d="M64 24c0 0-28 36-28 56a28 28 0 0 0 56 0c0-20-28-56-28-56z" fill="url(#g)"/>
+  <path d="M52 78c4 8 12 12 20 10" fill="none" stroke="#dff3ff" stroke-width="3" stroke-linecap="round" opacity=".7"/>
 </svg>

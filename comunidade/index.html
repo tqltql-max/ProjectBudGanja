@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Feed da comunidade Inspetor BudGanja — fotos e relatos de cultivo vegetal partilhados pelos cultivadores.">
+    <meta property="og:title" content="Comunidade | Inspetor BudGanja">
+    <meta property="og:description" content="Veja fotos do diário de cultivo da comunidade e participe com comentários.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/imagens/icon-512.png?v=269">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
+    <link rel="icon" href="/imagens/icon-192.png?v=269" sizes="192x192" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.png?v=269" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-32.png?v=269" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=269" sizes="16x16" type="image/png">
+    <link rel="shortcut icon" href="/favicon.ico?v=269" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=269" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=269">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3d5c28">
+    <link rel="stylesheet" href="/css/style.css?v=269">
+    <title>Comunidade | Inspetor BudGanja</title>
+</head>
+<body data-page="comunidade">
+    <div id="site-header"></div>
+
+    <main id="main-content" class="conteudo comunidade-page">
+        <header class="comunidade-header">
+            <h1>Comunidade</h1>
+            <p class="secao-subtitulo">Fotos do diário e pedidos de identificação. Só conteúdo vegetal.</p>
+            <p class="comunidade-cta-wrap">
+                <a id="comunidade-cta" class="botao" href="/cultivo/">Enviar do diário</a>
+                <a class="botao botao-outline" href="#comunidade-plant-id">Que planta é essa?</a>
+            </p>
+        </header>
+
+        <section id="comunidade-plant-id" class="comunidade-plant-id" aria-labelledby="comunidade-plant-id-title">
+            <h2 id="comunidade-plant-id-title">Que planta é essa?</h2>
+            <p class="field-hint">Publica uma foto e pede ajuda à comunidade para identificar a planta. Os comentários servem para sugerir a espécie.</p>
+            <div id="comunidade-plant-id-guest" class="comunidade-plant-id-guest" hidden>
+                <p class="field-hint"><a id="comunidade-plant-id-login" href="/entrar.html?returnTo=%2Fcomunidade%2F%23comunidade-plant-id">Entre na conta</a> para publicar um pedido de identificação.</p>
+            </div>
+            <form id="comunidade-plant-id-form" class="comunidade-plant-id-form" hidden>
+                <div class="comunidade-plant-id-field">
+                    <label class="comunidade-plant-id-label" for="comunidade-plant-id-file">Foto da planta</label>
+                    <input type="file" id="comunidade-plant-id-file" class="comunidade-plant-id-file" accept="image/jpeg,image/png,image/webp,image/gif" required>
+                </div>
+                <div id="comunidade-plant-id-preview-wrap" class="comunidade-plant-id-preview" hidden>
+                    <img id="comunidade-plant-id-preview" src="" alt="Pré-visualização">
+                </div>
+                <div class="comunidade-plant-id-field">
+                    <label class="comunidade-plant-id-label" for="comunidade-plant-id-caption">Detalhes (opcional)</label>
+                    <textarea id="comunidade-plant-id-caption" class="comunidade-plant-id-textarea" rows="4" maxlength="500" placeholder="Onde encontrou, cheiro, tamanho, folha… qualquer pista ajuda."></textarea>
+                </div>
+                <div class="comunidade-plant-id-actions">
+                    <button type="submit" class="botao" id="comunidade-plant-id-submit">Pedir identificação</button>
+                </div>
+                <p id="comunidade-plant-id-status" class="conta-status" role="status"></p>
+            </form>
+        </section>
+
+        <div class="comunidade-filters" role="tablist" aria-label="Filtrar publicações">
+            <button type="button" class="comunidade-filter is-active" data-kind="" role="tab" aria-selected="true">Tudo</button>
+            <button type="button" class="comunidade-filter" data-kind="plant_id" role="tab" aria-selected="false">Que planta é essa?</button>
+            <button type="button" class="comunidade-filter" data-kind="diary" role="tab" aria-selected="false">Diário</button>
+        </div>
+
+        <div id="comunidade-feed" class="comunidade-feed" aria-live="polite">
+            <p class="conta-status">A carregar o feed…</p>
+        </div>
+        <p class="comunidade-more-wrap">
+            <button type="button" id="comunidade-load-more" class="botao botao-outline" hidden>Carregar mais</button>
+        </p>
+    </main>
+
+    <div id="site-footer"></div>
+  <script src="/js/app-version-check.js?v=269"></script>
+    <script src="/js/i18n-data.js?v=269"></script>
+    <script src="/js/i18n.js?v=269"></script>
+    <script src="/js/ferramentas-nav-data.js?v=269"></script>
+    <script src="/js/layout.js?v=269"></script>
+    <script src="/js/site-features.js?v=269"></script>
+    <script src="/js/comunidade.js?v=269"></script>
+
+</body>
+</html>

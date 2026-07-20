@@ -698,6 +698,69 @@ function initPostsPanel() {
   if (backToListBtn) backToListBtn.addEventListener('click', closeEditor);
   if (newPostBtn) newPostBtn.addEventListener('click', () => openEditor(null));
 
+  const channelInspectUrl = document.getElementById('channel-inspect-url');
+  const channelInspectPublish = document.getElementById('channel-inspect-publish');
+  const channelInspectBtn = document.getElementById('channel-inspect-btn');
+  const channelInspectStatus = document.getElementById('channel-inspect-status');
+
+  async function generateChannelInspection() {
+    if (!channelInspectBtn) return;
+    const url = (channelInspectUrl && channelInspectUrl.value || '').trim();
+    if (!url) {
+      if (channelInspectStatus) channelInspectStatus.textContent = 'Cole o link do canal YouTube.';
+      return;
+    }
+    const publish = !!(channelInspectPublish && channelInspectPublish.checked);
+    channelInspectBtn.disabled = true;
+    if (channelInspectStatus) {
+      channelInspectStatus.textContent = 'A buscar catálogo e gerar inspeção… isto pode demorar cerca de 1 minuto.';
+    }
+    try {
+      const res = await fetch('/api/admin/inspecoes/from-channel', {
+        method: 'POST',
+        credentials: 'include',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url, publish })
+      });
+      const data = await res.json().catch(function () { return {}; });
+      if (!res.ok) {
+        throw new Error(data.error || ('Erro ' + res.status));
+      }
+      if (channelInspectStatus) {
+        channelInspectStatus.textContent =
+          'Gerado: ' + (data.handle || data.slug) +
+          ' · ' + (data.videoCount || 0) + ' vídeos' +
+          (data.published ? ' · publicado' : ' · rascunho');
+      }
+      await loadPosts();
+      const post = cachedPosts.find(function (p) { return p.slug === data.slug; });
+      if (post) {
+        openEditor(post);
+      } else if (data.slug) {
+        const one = await fetch('/api/posts/' + encodeURIComponent(data.slug), { credentials: 'include' });
+        if (one.ok) openEditor(await one.json());
+      }
+    } catch (e) {
+      if (channelInspectStatus) {
+        channelInspectStatus.textContent = e.message || 'Falha ao gerar inspeção.';
+      }
+    } finally {
+      channelInspectBtn.disabled = false;
+    }
+  }
+
+  if (channelInspectBtn) {
+    channelInspectBtn.addEventListener('click', generateChannelInspection);
+  }
+  if (channelInspectUrl) {
+    channelInspectUrl.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        generateChannelInspection();
+      }
+    });
+  }
+
   document.addEventListener('keydown', (e) => {
     if (currentView !== 'list') return;
     if (!(e.ctrlKey || e.metaKey) || e.key.toLowerCase() !== 'n') return;
@@ -873,6 +936,7 @@ function initIconsPanel() {
   const statusEl  = document.getElementById('icons-status');
   const current192 = document.getElementById('icons-current-192');
   const currentFav = document.getElementById('icons-current-favicon');
+  const currentApp = document.getElementById('icons-current-app');
   const previewWrap = document.getElementById('icons-preview-wrap');
   const previewImg  = document.getElementById('icons-preview-img');
 
@@ -885,8 +949,14 @@ function initIconsPanel() {
       const res = await fetch('/api/admin/icons', { credentials: 'include' });
       if (!res.ok) return;
       const data = await res.json();
-      if (current192) current192.src = data.icons.icon192 + '&t=' + Date.now();
-      if (currentFav) currentFav.src = data.icons.favicon + '&t=' + Date.now();
+      const bust = '&t=' + Date.now();
+      if (current192) current192.src = data.icons.icon192 + bust;
+      if (currentFav) currentFav.src = (data.icons.favicon48 || data.icons.favicon) + bust;
+      if (currentApp) currentApp.src = data.icons.appIcon + bust;
+      if (data.missing && data.missing.length && statusEl) {
+        statusEl.textContent = 'Ficheiros em falta: ' + data.missing.join(', ');
+        statusEl.style.color = 'var(--danger, red)';
+      }
     } catch (e) { /* ignore */ }
   }
 
@@ -963,14 +1033,14 @@ function initIconsPanel() {
           return;
         }
 
-        statusEl.textContent = '✓ Ícones publicados — versão v' + json.version +
-          '. App, aba e site atualizados. No Google pode demorar dias (cache deles). Recarregue com Ctrl+F5.';
+        statusEl.textContent = '✓ v' + json.version +
+          ' — site/aba, header, PWA e favicons Google actualizados. Google Search pode demorar dias. Ctrl+F5 no browser; no app, reabra o atalho.';
         statusEl.style.color = 'var(--verde)';
         publishBtn.textContent = 'Publicar ícones';
         pendingDataUrl = null;
         if (fileInput) fileInput.value = '';
+        if (previewWrap) previewWrap.hidden = true;
 
-        // Atualizar previews dos ícones atuais
         setTimeout(() => loadCurrentIcons(), 500);
 
       } catch (e) {

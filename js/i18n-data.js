@@ -49,10 +49,10 @@ window.__I18N_LOCALES__ = {
       "contact": "Contact",
       "privacy": "Privacy",
       "aboutProject": "About the project",
-      "technicalResearch": "Technical research",
+      "technicalResearch": "Completed research",
       "partnerShops": "Partner stores",
       "quickNav": "Lab shortcuts",
-      "quickResearchTip": "Lab reports and technical studies",
+      "quickResearchTip": "Lab and community research",
       "quickInspectionsTip": "Field logs and checklists",
       "quickEquipmentTip": "Cloners and build guides",
       "quickCalculatorsTip": "VPD, pH, EC, lux meter and more",
@@ -97,9 +97,9 @@ window.__I18N_LOCALES__ = {
         "tileLabel": "Research"
       },
       "pesquisas": {
-        "label": "All research",
+        "label": "Completed research",
         "tileLabel": "Index",
-        "description": "Technical reports and studies."
+        "description": "Lab and community research."
       },
       "substratos": {
         "label": "Biodegradable substrates",
@@ -163,8 +163,8 @@ window.__I18N_LOCALES__ = {
         "cardGuiaTitle": "Basic Growing Guide",
         "cardGuiaText": "Video trail by @InspetorBudGanja — from soil to flowering, step by step.",
         "cardGuiaBtn": "Open guide",
-        "cardResearchTitle": "Technical Research",
-        "cardResearchText": "Scientific reports and studies on plant cultivation with rigorous methodology.",
+        "cardResearchTitle": "Completed Research",
+        "cardResearchText": "Lab research and community studies approved for publication.",
         "cardResearchBtn": "View research",
         "cardInspectionsTitle": "Inspections",
         "cardInspectionsText": "Inspection reports, field checks and technical lab records.",
@@ -184,7 +184,7 @@ window.__I18N_LOCALES__ = {
         "latestTitle": "Latest from the lab",
         "latestSubtitle": "Recent posts from the Growing Library.",
         "latestLoading": "Loading publications...",
-        "latestLibrary": "Full library →",
+        "latestLibrary": "Research →",
         "latestInspections": "Inspections →",
         "youtubeTitle": "Follow on YouTube",
         "youtubeText": "Inspections, equipment tutorials and live giveaways on the official lab channel.",
@@ -264,10 +264,10 @@ window.__I18N_LOCALES__ = {
       "contact": "Contacto",
       "privacy": "Privacidad",
       "aboutProject": "Sobre el proyecto",
-      "technicalResearch": "Investigaciones técnicas",
+      "technicalResearch": "Investigaciones realizadas",
       "partnerShops": "Tiendas asociadas",
       "quickNav": "Atajos del laboratorio",
-      "quickResearchTip": "Informes y estudios del laboratorio",
+      "quickResearchTip": "Investigaciones del laboratorio y de la comunidad",
       "quickInspectionsTip": "Registros de campo y listas",
       "quickEquipmentTip": "Clonadoras y guías de montaje",
       "quickCalculatorsTip": "VPD, pH, EC, luxímetro y más",
@@ -312,9 +312,9 @@ window.__I18N_LOCALES__ = {
         "tileLabel": "Investigaciones"
       },
       "pesquisas": {
-        "label": "Todas las investigaciones",
+        "label": "Investigaciones realizadas",
         "tileLabel": "Índice",
-        "description": "Informes y estudios técnicos."
+        "description": "Investigaciones del laboratorio y de la comunidad."
       },
       "substratos": {
         "label": "Sustratos biodegradables",
@@ -328,7 +328,7 @@ window.__I18N_LOCALES__ = {
       "inspecoes": {
         "label": "Todas las inspecciones",
         "tileLabel": "Índice",
-        "description": "Informes de campo y laboratorio."
+        "description": "Informes técnicos con método verificable."
       },
       "equipamentos-menu": {
         "label": "Equipos",
@@ -378,8 +378,8 @@ window.__I18N_LOCALES__ = {
         "cardGuiaTitle": "Guía básica de cultivo",
         "cardGuiaText": "Ruta en video del canal @InspetorBudGanja — del suelo a la floración, paso a paso.",
         "cardGuiaBtn": "Abrir guía",
-        "cardResearchTitle": "Investigaciones técnicas",
-        "cardResearchText": "Informes científicos y estudios sobre cultivo vegetal con metodología rigurosa.",
+        "cardResearchTitle": "Investigaciones realizadas",
+        "cardResearchText": "Investigaciones del laboratorio y estudios enviados por la comunidad y aprobados.",
         "cardResearchBtn": "Ver investigaciones",
         "cardInspectionsTitle": "Inspecciones",
         "cardInspectionsText": "Informes de inspección, verificaciones de campo y registros técnicos del laboratorio.",
@@ -399,7 +399,7 @@ window.__I18N_LOCALES__ = {
         "latestTitle": "Últimas del laboratorio",
         "latestSubtitle": "Publicaciones recientes de la Biblioteca de Cultivo.",
         "latestLoading": "Cargando publicaciones...",
-        "latestLibrary": "Ver biblioteca completa →",
+        "latestLibrary": "Investigaciones →",
         "latestInspections": "Inspecciones →",
         "youtubeTitle": "Síguenos en YouTube",
         "youtubeText": "Inspecciones, tutoriales de equipos y sorteos en vivo en el canal oficial del laboratorio.",
@@ -479,10 +479,10 @@ window.__I18N_LOCALES__ = {
       "contact": "Contato",
       "privacy": "Privacidade",
       "aboutProject": "Sobre o projeto",
-      "technicalResearch": "Pesquisas técnicas",
+      "technicalResearch": "Pesquisas realizadas",
       "partnerShops": "Lojas parceiras",
       "quickNav": "Atalhos do laboratório",
-      "quickResearchTip": "Relatórios e estudos do laboratório",
+      "quickResearchTip": "Pesquisas do laboratório e da comunidade",
       "quickInspectionsTip": "Registos de campo e checklists",
       "quickEquipmentTip": "Clonadoras e guias de montagem",
       "quickCalculatorsTip": "VPD, pH, EC, luxímetro e mais",
@@ -527,9 +527,9 @@ window.__I18N_LOCALES__ = {
         "tileLabel": "Pesquisas"
       },
       "pesquisas": {
-        "label": "Todas as pesquisas",
+        "label": "Pesquisas realizadas",
         "tileLabel": "Índice",
-        "description": "Relatórios e estudos técnicos."
+        "description": "Pesquisas do laboratório e submetidas pela comunidade."
       },
       "substratos": {
         "label": "Substratos biodegradáveis",
@@ -593,9 +593,9 @@ window.__I18N_LOCALES__ = {
         "cardGuiaTitle": "Guia de Cultivo Básico",
         "cardGuiaText": "Trilha em vídeo do canal @InspetorBudGanja — do solo à floração, passo a passo.",
         "cardGuiaBtn": "Abrir guia",
-        "cardResearchTitle": "Pesquisas Técnicas",
-        "cardResearchText": "Relatórios científicos e estudos sobre cultivo vegetal com metodologia rigorosa.",
-        "cardResearchBtn": "Ver Pesquisas",
+        "cardResearchTitle": "Pesquisas Realizadas",
+        "cardResearchText": "Pesquisas do laboratório e estudos submetidos pela comunidade e aprovados para publicação.",
+        "cardResearchBtn": "Ver pesquisas",
         "cardInspectionsTitle": "Inspeções",
         "cardInspectionsText": "Relatórios de inspeção, verificações de campo e registros técnicos do laboratório.",
         "cardInspectionsBtn": "Ver Inspeções",
@@ -614,7 +614,7 @@ window.__I18N_LOCALES__ = {
         "latestTitle": "Últimas do laboratório",
         "latestSubtitle": "Publicações recentes da Biblioteca de Cultivo.",
         "latestLoading": "Carregando publicações...",
-        "latestLibrary": "Ver biblioteca completa →",
+        "latestLibrary": "Pesquisas →",
         "latestInspections": "Inspeções →",
         "youtubeTitle": "Acompanhe no YouTube",
         "youtubeText": "Inspeções, tutoriais de equipamentos e sorteios ao vivo no canal oficial do laboratório.",

@@ -139,7 +139,7 @@ if (fs.existsSync(manifestPath)) {
   }
 }
 
-// Versiona favicon.svg e imagens de ícone nos HTML (evita cache Cloudflare).
+// Versiona favicon / ícones PWA / og:image nos HTML (evita cache Cloudflare).
 for (const file of listHtmlFiles(ROOT)) {
   let html = fs.readFileSync(file, 'utf8');
   const next = html
@@ -147,8 +147,12 @@ for (const file of listHtmlFiles(ROOT)) {
     .replace(/(href="\/favicon\.ico)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
     .replace(/(href="\/imagens\/favicon-\d+\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
     .replace(/(href="\/imagens\/icon-192\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
-    .replace(/(href="\/imagens\/apple-touch-icon\.png)(?:\?v=[^"]*)?(")/, `$1?v=${ASSET_VERSION}$2`)
-    .replace(/(content="\/imagens\/icon-512\.png)(?:\?v=[^"]*)?(")/, `$1?v=${ASSET_VERSION}$2`);
+    .replace(/(href="\/imagens\/icon-512\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(href="\/imagens\/icon-512-maskable\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(href="\/imagens\/apple-touch-icon\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(href="\/imagens\/app-icon\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(src="\/imagens\/app-icon\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(content="\/imagens\/icon-512\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`);
   if (next !== html) {
     fs.writeFileSync(file, next);
   }

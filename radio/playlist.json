@@ -1,0 +1,42 @@
+{
+  "updatedAt": "2026-07-20T03:54:20.693Z",
+  "trackCount": 6,
+  "tracks": [
+    {
+      "id": "t_76c886df919c",
+      "title": "OMC - How Bizarre",
+      "artist": "BudGanja Radio",
+      "url": "/radio/01-%20OMC%20-%20How%20Bizarre.mp3"
+    },
+    {
+      "id": "t_6bd962b26b76",
+      "title": "Bob Marley - One Love",
+      "artist": "BudGanja Radio",
+      "url": "/radio/02%20-%20Bob%20Marley%20-%20One%20Love.mp3"
+    },
+    {
+      "id": "t_352d99e35eb0",
+      "title": "Bob Marley - Stir It Up",
+      "artist": "BudGanja Radio",
+      "url": "/radio/02-%20Bob%20Marley%20-%20Stir%20It%20Up.mp3"
+    },
+    {
+      "id": "t_5f207c0ff31b",
+      "title": "Bob Marley Three Little Birds",
+      "artist": "BudGanja Radio",
+      "url": "/radio/03%20-%20Bob%20Marley%20Three%20Little%20Birds.mp3"
+    },
+    {
+      "id": "t_7a0787a25314",
+      "title": "Bon Jovi - Livin' On A Prayer",
+      "artist": "BudGanja Radio",
+      "url": "/radio/04%20-%20Bon%20Jovi%20-%20Livin'%20On%20A%20Prayer.mp3"
+    },
+    {
+      "id": "t_71e77b70b6f5",
+      "title": "The Rolling Stones - Jumpin' Jack Flash",
+      "artist": "BudGanja Radio",
+      "url": "/radio/05%20-%20%20The%20Rolling%20Stones%20-%20Jumpin'%20Jack%20Flash.mp3"
+    }
+  ]
+}

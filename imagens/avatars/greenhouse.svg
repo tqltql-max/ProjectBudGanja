@@ -1,8 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Estufa">
-  <circle cx="64" cy="64" r="64" fill="#1a3324"/>
-  <path d="M28 78V52l36-22 36 22v26H28z" fill="none" stroke="#2ecc71" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M28 78h72" stroke="#27ae60" stroke-width="4"/>
-  <rect x="52" y="62" width="24" height="16" rx="2" fill="#27ae60"/>
-  <path d="M44 78v14h40V78" fill="#3d2817"/>
-  <circle cx="88" cy="48" r="10" fill="#f1c40f" opacity=".9"/>
+  <defs>
+    <linearGradient id="g" x1="24" y1="24" x2="104" y2="108" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8fe3a4"/><stop offset="1" stop-color="#2f8f4e"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#121212"/>
+  <rect x="6" y="6" width="116" height="116" rx="24" fill="none" stroke="#3d5c28" stroke-width="2.5"/>
+  <path d="M28 70L64 30l36 40v34H28V70z" fill="url(#g)"/>
+  <path d="M64 30v74M28 70h72" stroke="#0f2416" stroke-width="3" opacity=".35"/>
+  <rect x="54" y="78" width="20" height="26" rx="2" fill="#1a1a1a" opacity=".4"/>
 </svg>

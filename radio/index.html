@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rádio Inspetor BudGanja — ouça a playlist do laboratório ou a rádio montada por cada cultivador.">
+    <meta property="og:title" content="Rádio | Inspetor BudGanja">
+    <meta property="og:description" content="Player com as músicas disponíveis. Monta a tua rádio com até 5 faixas no perfil.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/imagens/icon-512.png?v=269">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
+    <link rel="icon" href="/imagens/icon-192.png?v=269" sizes="192x192" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.png?v=269" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-32.png?v=269" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.png?v=269" sizes="16x16" type="image/png">
+    <link rel="shortcut icon" href="/favicon.ico?v=269" sizes="any">
+    <link rel="icon" href="/favicon.svg?v=269" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=269">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3d5c28">
+    <link rel="stylesheet" href="/css/style.css?v=269">
+    <title>Rádio | Inspetor BudGanja</title>
+</head>
+<body data-page="radio">
+    <div id="site-header"></div>
+
+    <main id="main-content" class="conteudo radio-page">
+        <header class="radio-page-header">
+            <p class="article-eyebrow">Rádio</p>
+            <h1 id="radio-page-title">BudGanja Radio</h1>
+            <p id="radio-page-subtitle" class="secao-subtitulo">As faixas disponíveis no laboratório. No perfil podes montar a tua rádio com até 5 músicas.</p>
+            <p id="radio-page-owner" class="radio-page-owner" hidden></p>
+            <p class="radio-page-actions">
+                <a class="botao botao-outline" href="/perfil.html#perfil-radio">Montar a minha rádio</a>
+                <button type="button" class="botao botao-outline" id="radio-share-btn" hidden>Copiar link</button>
+            </p>
+        </header>
+
+        <section class="radio-player-card" aria-label="Player">
+            <div class="radio-player-now">
+                <span class="radio-player-label">A tocar</span>
+                <strong id="radio-now-title">—</strong>
+                <span id="radio-now-artist" class="radio-now-artist"></span>
+            </div>
+            <div class="radio-player-progress">
+                <input type="range" id="radio-seek" min="0" max="1000" value="0" step="1" aria-label="Posição da faixa">
+                <div class="radio-player-times">
+                    <span id="radio-time-current">0:00</span>
+                    <span id="radio-time-duration">0:00</span>
+                </div>
+            </div>
+            <div class="radio-player-controls">
+                <button type="button" class="botao botao-outline" id="radio-prev" aria-label="Faixa anterior">Anterior</button>
+                <button type="button" class="botao" id="radio-play" aria-label="Reproduzir">Reproduzir</button>
+                <button type="button" class="botao botao-outline" id="radio-next" aria-label="Faixa seguinte">Seguinte</button>
+            </div>
+            <p id="radio-page-status" class="conta-status" role="status"></p>
+        </section>
+
+        <section class="radio-tracklist-wrap" aria-label="Lista de faixas">
+            <h2 class="radio-tracklist-title">Faixas</h2>
+            <ol id="radio-tracklist" class="radio-tracklist">
+                <li class="field-hint">A carregar playlist…</li>
+            </ol>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+  <script src="/js/app-version-check.js?v=269"></script>
+    <script src="/js/i18n-data.js?v=269"></script>
+    <script src="/js/i18n.js?v=269"></script>
+    <script src="/js/ferramentas-nav-data.js?v=269"></script>
+    <script src="/js/layout.js?v=269"></script>
+    <script src="/js/site-features.js?v=269"></script>
+    <script src="/js/radio-page.js?v=269"></script>
+
+</body>
+</html>

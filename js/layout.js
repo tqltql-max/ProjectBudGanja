@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '217';
+const ASSET_V = '269';
 
 let deferredInstallPrompt = null;
 let installFloatingBtn = null;
@@ -50,11 +50,19 @@ function rememberInstallDismissed() {
   } catch (e) { /* ignore */ }
 }
 
+function clearInstallDismissed() {
+  try { localStorage.removeItem(PWA_INSTALL_STATE_KEY); } catch (e) { /* ignore */ }
+}
+
 function canShowInstallUi() {
   if (isStandaloneApp()) return false;
   if (isInstallDismissedRecently()) return false;
   if (deferredInstallPrompt) return true;
   if (isIosInstallable()) return true;
+  // Android / outros: manter atalho visível mesmo sem beforeinstallprompt
+  // (Chrome deixa de disparar o evento depois de recusar ou instalação falhada).
+  if (isMobileUa()) return true;
+  if (isDesktopInstallCandidate()) return true;
   return false;
 }
 
@@ -106,34 +114,65 @@ function showIosInstallSheet() {
   sheet.hidden = false;
 }
 
-function showDesktopInstallSheet() {
-  let sheet = document.getElementById('pwa-desktop-install-sheet');
+function ensureInstallSheet(id, titleId, title, bodyHtml) {
+  let sheet = document.getElementById(id);
   if (!sheet) {
     sheet = document.createElement('div');
-    sheet.id = 'pwa-desktop-install-sheet';
+    sheet.id = id;
     sheet.className = 'pwa-install-sheet';
     sheet.setAttribute('role', 'dialog');
     sheet.setAttribute('aria-modal', 'true');
-    sheet.setAttribute('aria-labelledby', 'pwa-desktop-install-title');
+    sheet.setAttribute('aria-labelledby', titleId);
     sheet.innerHTML =
       '<div class="pwa-install-sheet-backdrop" data-close="1"></div>' +
       '<div class="pwa-install-sheet-panel">' +
-      '<h2 id="pwa-desktop-install-title">Instalar BudGanja no computador</h2>' +
-      '<p>No Chrome ou Edge: menu <strong>⋮ → Instalar Inspetor BudGanja…</strong> ' +
-      '(ou o ícone ⊕ / computador na barra de endereço).</p>' +
-      '<p>Na janela de instalação, marque <strong>Criar atalho na área de trabalho</strong> ' +
-      '(ou “Create desktop shortcut”) para aparecer o ícone no ambiente de trabalho.</p>' +
+      '<h2 id="' + titleId + '">' + title + '</h2>' +
+      bodyHtml +
       '<button type="button" class="botao pwa-install-sheet-close">Entendi</button>' +
       '</div>';
-    const closeSheet = () => {
-      sheet.hidden = true;
-      dismissInstallUi();
-    };
+    const closeSheet = () => { sheet.hidden = true; };
     sheet.querySelector('[data-close]').addEventListener('click', closeSheet);
     sheet.querySelector('.pwa-install-sheet-close').addEventListener('click', closeSheet);
     document.body.appendChild(sheet);
   }
   sheet.hidden = false;
+  return sheet;
+}
+
+function showDesktopInstallSheet() {
+  ensureInstallSheet(
+    'pwa-desktop-install-sheet',
+    'pwa-desktop-install-title',
+    'Instalar BudGanja no computador',
+    '<p>No Chrome ou Edge: menu <strong>⋮ → Instalar Inspetor BudGanja…</strong> ' +
+    '(ou o ícone ⊕ / computador na barra de endereço).</p>' +
+    '<p>Na janela de instalação, marque <strong>Criar atalho na área de trabalho</strong> ' +
+    'para aparecer o ícone no ambiente de trabalho.</p>'
+  );
+}
+
+function showAndroidInstallSheet() {
+  ensureInstallSheet(
+    'pwa-android-install-sheet',
+    'pwa-android-install-title',
+    'Instalar BudGanja no telemóvel',
+    '<p>No Chrome: toque em <strong>⋮</strong> (canto superior) e escolha ' +
+    '<strong>Instalar app</strong> ou <strong>Adicionar à tela inicial</strong>.</p>' +
+    '<p>Se a opção não aparecer: remova o ícone antigo (se existir), abra o site em Chrome, ' +
+    'aguarde alguns segundos e tente de novo por este botão.</p>' +
+    '<p class="pwa-install-sheet-tip">Dica: use a ligação segura do site (https) e mantenha a página aberta enquanto instala.</p>'
+  );
+}
+
+function showAlreadyInstalledSheet() {
+  ensureInstallSheet(
+    'pwa-installed-sheet',
+    'pwa-installed-title',
+    'App já instalado',
+    '<p>O BudGanja já está a correr como aplicação neste dispositivo. ' +
+    'Procure o ícone na tela inicial ou na gaveta de apps.</p>' +
+    '<p>Se o ícone antigo estiver partido, remova-o e instale de novo pelo menu do site.</p>'
+  );
 }
 
 function waitForInstallPrompt(timeoutMs) {
@@ -158,7 +197,8 @@ function waitForInstallPrompt(timeoutMs) {
   });
 }
 
-async function runNativeInstallPrompt() {
+async function runNativeInstallPrompt(options) {
+  const opts = options || {};
   if (!deferredInstallPrompt) return false;
   try {
     await deferredInstallPrompt.prompt();
@@ -166,19 +206,22 @@ async function runNativeInstallPrompt() {
     deferredInstallPrompt = null;
     if (choice.outcome === 'accepted') {
       hideInstallButtons();
-      try { localStorage.removeItem(PWA_INSTALL_STATE_KEY); } catch (err) { /* ignore */ }
+      clearInstallDismissed();
+      refreshPermanentInstallButtons();
       return true;
     }
-    // Fechou / cancelou → esconder o botão por uns dias
-    dismissInstallUi();
+    // Só esconder o flutuante por uns dias se o utilizador fechou o banner — não o atalho do menu.
+    if (opts.dismissOnCancel !== false) dismissInstallUi();
     return false;
   } catch (e) {
-    dismissInstallUi();
+    if (opts.dismissOnCancel !== false) dismissInstallUi();
     return false;
   }
 }
 
-async function promptInstallApp() {
+async function promptInstallApp(options) {
+  const opts = options || {};
+  const persistent = !!opts.persistent;
   const mainBtn = installFloatingBtn && installFloatingBtn.querySelector('.install-prompt-main');
   const labelEl = installFloatingBtn && installFloatingBtn.querySelector('.install-prompt-label');
   if (mainBtn) {
@@ -188,17 +231,31 @@ async function promptInstallApp() {
   if (labelEl) labelEl.textContent = 'A preparar instalação…';
 
   try {
-    // Preferir o diálogo nativo (cria app + opção de atalho no ambiente de trabalho).
-    if (!deferredInstallPrompt && isDesktopInstallCandidate()) {
-      await waitForInstallPrompt(4000);
+    if (isStandaloneApp()) {
+      showAlreadyInstalledSheet();
+      return true;
+    }
+
+    // Pedido explícito (menu/rodapé): reabrir a opção mesmo após ter fechado o banner.
+    if (persistent) clearInstallDismissed();
+
+    if (!deferredInstallPrompt) {
+      await waitForInstallPrompt(persistent || isDesktopInstallCandidate() ? 3500 : 1200);
     }
 
     if (deferredInstallPrompt) {
-      return await runNativeInstallPrompt();
+      const accepted = await runNativeInstallPrompt({ dismissOnCancel: !persistent });
+      if (!accepted && isMobileUa() && !isIosInstallable()) showAndroidInstallSheet();
+      return accepted;
     }
 
     if (isIosInstallable()) {
       showIosInstallSheet();
+      return false;
+    }
+
+    if (isMobileUa()) {
+      showAndroidInstallSheet();
       return false;
     }
 
@@ -212,8 +269,34 @@ async function promptInstallApp() {
       mainBtn.removeAttribute('aria-busy');
     }
     if (labelEl) labelEl.textContent = 'Instalar app';
+    refreshInstallVisibility();
+    refreshPermanentInstallButtons();
   }
 }
+
+function refreshPermanentInstallButtons() {
+  const show = !isStandaloneApp();
+  document.querySelectorAll('[data-pwa-install]').forEach((btn) => {
+    btn.hidden = !show;
+  });
+}
+
+function bindPermanentInstallButtons(root) {
+  const scope = root || document;
+  scope.querySelectorAll('[data-pwa-install]').forEach((btn) => {
+    if (btn.dataset.boundInstall === '1') return;
+    btn.dataset.boundInstall = '1';
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      void promptInstallApp({ persistent: true });
+    });
+  });
+  refreshPermanentInstallButtons();
+}
+
+window.budganjaPromptInstallApp = function () {
+  return promptInstallApp({ persistent: true });
+};
 
 async function tryAutoInstallPrompt() {
   // Auto-prompt só no telemóvel — no desktop consome o evento e esconde o botão.
@@ -260,7 +343,8 @@ window.addEventListener('beforeinstallprompt', (e) => {
 window.addEventListener('appinstalled', () => {
   deferredInstallPrompt = null;
   hideInstallButtons();
-  try { localStorage.removeItem(PWA_INSTALL_STATE_KEY); } catch (err) { /* ignore */ }
+  clearInstallDismissed();
+  refreshPermanentInstallButtons();
 });
 
 const APP_VERSION_KEY = 'budganja_app_version';
@@ -587,7 +671,7 @@ const DEFAULT_SITE = {
     { label: 'Início', href: '/' },
     { label: 'Guia de Cultivo', href: '/biblioteca/inspecoes/' },
     { label: 'Últimos vídeos', href: '/videos/' },
-    { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
+    { label: 'Pesquisas realizadas', href: '/biblioteca/pesquisas/' },
     { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
     { label: 'Equipamentos', href: '/equipamentos/' },
     { label: 'Ferramentas', href: '/calculadoras/' },
@@ -598,7 +682,7 @@ const DEFAULT_SITE = {
       title: 'Biblioteca',
       links: [
         { label: 'Guia de Cultivo', href: '/biblioteca/inspecoes/' },
-        { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
+        { label: 'Pesquisas realizadas', href: '/biblioteca/pesquisas/' },
         { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
         { label: 'Vídeos', href: '/videos/' }
       ]
@@ -1064,11 +1148,11 @@ function buildHeaderProfileLink(userLink, hideAuthNav) {
   const href = escapeNavText(userLink.href);
   const label = escapeNavText(userLink.label || 'Entrar');
   if (userLink.isUser) {
-    const pic = userLink.picture || '/imagens/avatars/leaf.svg';
+    const pic = userLink.picture || '/imagens/avatars/inspector.svg';
     const displayName = userLink.name || label;
     const shortName = String(displayName).trim().split(/\s+/)[0] || label;
     return (
-      '<a href="' + href + '" class="header-profile-link" title="Diário de cultivo" aria-label="Diário de cultivo">' +
+      '<a href="' + href + '" class="header-profile-link" title="Minha conta" aria-label="Minha conta">' +
       '<img src="' + escapeNavText(pic) + '" alt="" class="header-profile-avatar" width="32" height="32" loading="lazy">' +
       '<span class="header-profile-name">' + escapeNavText(shortName) + '</span>' +
       '</a>'
@@ -1085,53 +1169,130 @@ function buildHeaderAdminIcon(adminLink, hideAuthNav) {
   );
 }
 
+/** Hubs reais do site — fonte única para quick-nav (desktop) e menu mobile. */
+function getSiteHubNav() {
+  return {
+    quick: [
+      {
+        href: '/biblioteca/pesquisas/',
+        icon: '🔬',
+        label: i18n('nav.technicalResearch', 'Pesquisas realizadas'),
+        tip: i18n('nav.quickResearchTip', 'Pesquisas do laboratório e da comunidade'),
+        prefixes: '/biblioteca/pesquisas'
+      },
+      {
+        href: '/biblioteca/inspecoes/',
+        icon: '📋',
+        label: i18n('nav.inspections', 'Inspeções'),
+        tip: i18n('nav.quickInspectionsTip', 'Guia, canais, equipamentos e cursos'),
+        prefixes: '/biblioteca/inspecoes,/guia'
+      },
+      {
+        href: '/videos/',
+        icon: '▶',
+        label: i18n('nav.videos', 'Vídeos'),
+        tip: i18n('nav.quickVideosTip', 'Últimos vídeos do canal'),
+        prefixes: '/videos'
+      },
+      {
+        href: '/calculadoras/',
+        icon: '🧮',
+        label: i18n('nav.calculators', 'Calculadoras'),
+        tip: i18n('nav.quickCalculatorsTip', 'VPD, pH, EC, luxímetro e mais'),
+        prefixes: '/calculadoras'
+      },
+      {
+        href: '/equipamentos/',
+        icon: '⚙️',
+        label: i18n('nav.equipment', 'Equipamentos'),
+        tip: i18n('nav.quickEquipmentTip', 'Clonadoras e guias de montagem'),
+        prefixes: '/equipamentos'
+      },
+      {
+        href: '/comunidade/',
+        icon: '🌿',
+        label: i18n('nav.community', 'Comunidade'),
+        tip: i18n('nav.quickCommunityTip', 'Feed de fotos do diário de cultivo'),
+        prefixes: '/comunidade'
+      },
+      {
+        href: '/sorteios/',
+        icon: '🎁',
+        label: i18n('nav.giveaways', 'Sorteios'),
+        tip: i18n('nav.quickGiveawaysTip', 'Promoções ativas do laboratório'),
+        prefixes: '/sorteios',
+        tone: 'sorteios'
+      }
+    ],
+    mobileSections: [
+      {
+        title: i18n('nav.sectionExplore', 'Explorar'),
+        links: [
+          {
+            href: '/',
+            label: i18n('nav.home', 'Início'),
+            prefixes: '/',
+            exact: true
+          },
+          {
+            href: '/biblioteca/pesquisas/',
+            label: i18n('nav.technicalResearch', 'Pesquisas realizadas'),
+            prefixes: '/biblioteca/pesquisas'
+          },
+          {
+            href: '/biblioteca/inspecoes/',
+            label: i18n('nav.inspections', 'Inspeções'),
+            prefixes: '/biblioteca/inspecoes,/guia'
+          },
+          {
+            href: '/videos/',
+            label: i18n('nav.videos', 'Vídeos'),
+            prefixes: '/videos'
+          }
+        ]
+      },
+      {
+        title: i18n('nav.sectionTools', 'Ferramentas'),
+        links: [
+          {
+            href: '/calculadoras/',
+            label: i18n('nav.calculators', 'Calculadoras'),
+            prefixes: '/calculadoras'
+          },
+          {
+            href: '/equipamentos/',
+            label: i18n('nav.equipment', 'Equipamentos'),
+            prefixes: '/equipamentos'
+          },
+          {
+            href: '/cultivo/',
+            label: i18n('nav.growDiary', 'Diário de cultivo'),
+            prefixes: '/cultivo'
+          }
+        ]
+      },
+      {
+        title: i18n('nav.sectionCommunity', 'Comunidade'),
+        links: [
+          {
+            href: '/comunidade/',
+            label: i18n('nav.communityFeed', 'Feed da comunidade'),
+            prefixes: '/comunidade'
+          },
+          {
+            href: '/sorteios/',
+            label: i18n('nav.giveaways', 'Sorteios'),
+            prefixes: '/sorteios',
+            tone: 'sorteios'
+          }
+        ]
+      }
+    ]
+  };
+}
+
 function buildDesktopQuickNavHTML() {
-  const items = [
-    {
-      href: '/biblioteca/pesquisas/',
-      icon: '🔬',
-      label: i18n('nav.technicalResearch', 'Pesquisas técnicas'),
-      tip: i18n('nav.quickResearchTip', 'Relatórios e estudos do laboratório'),
-      prefixes: '/biblioteca/pesquisas'
-    },
-    {
-      href: '/biblioteca/inspecoes/',
-      icon: '📋',
-      label: i18n('nav.inspections', 'Inspeções'),
-      tip: i18n('nav.quickInspectionsTip', 'Registos de campo e checklists'),
-      prefixes: '/biblioteca/inspecoes'
-    },
-    {
-      href: '/equipamentos/',
-      icon: '⚙️',
-      label: i18n('nav.equipment', 'Equipamentos'),
-      tip: i18n('nav.quickEquipmentTip', 'Clonadoras e guias de montagem'),
-      prefixes: '/equipamentos'
-    },
-    {
-      href: '/calculadoras/',
-      icon: '🧮',
-      label: i18n('nav.calculators', 'Calculadoras'),
-      tip: i18n('nav.quickCalculatorsTip', 'VPD, pH, EC, luxímetro e mais'),
-      prefixes: '/calculadoras'
-    },
-    {
-      href: '/sorteios/',
-      icon: '🎁',
-      label: i18n('nav.giveaways', 'Sorteios'),
-      tip: i18n('nav.quickGiveawaysTip', 'Promoções ativas do laboratório'),
-      prefixes: '/sorteios',
-      tone: 'sorteios'
-    },
-    {
-      href: '/loja/',
-      icon: '🛒',
-      label: i18n('nav.partnerShops', 'Lojas parceiras'),
-      tip: i18n('nav.quickShopTip', 'Materiais das clonadoras'),
-      prefixes: '/loja',
-      tone: 'loja'
-    }
-  ];
+  const items = getSiteHubNav().quick;
   const links = items.map(function (item) {
     const cls = 'header-quick-link' + (item.tone ? ' header-quick-link--' + item.tone : '');
     return (
@@ -1147,6 +1308,31 @@ function buildDesktopQuickNavHTML() {
     '<nav class="header-quick-nav" aria-label="' + escapeNavText(i18n('nav.quickNav', 'Atalhos do laboratório')) + '">' +
     '<div class="header-quick-track">' + links + '</div></nav>'
   );
+}
+
+function buildMobileHubNavHTML() {
+  const sections = getSiteHubNav().mobileSections;
+  return sections.map(function (section) {
+    const links = (section.links || []).map(function (item) {
+      const cls = 'mobile-menu-link' +
+        (item.cta ? ' mobile-menu-link--cta' : '') +
+        (item.tone ? ' mobile-menu-link--' + item.tone : '');
+      const exactAttr = item.exact ? ' data-active-exact="1"' : '';
+      return (
+        '<a href="' + escapeNavText(item.href) + '" class="' + cls + '"' +
+        ' data-active-prefixes="' + escapeNavText(item.prefixes || item.href) + '"' +
+        exactAttr + '>' +
+        escapeNavText(item.label) +
+        '</a>'
+      );
+    }).join('');
+    return (
+      '<div class="mobile-menu-section">' +
+      '<p class="mobile-menu-section-title">' + escapeNavText(section.title) + '</p>' +
+      '<div class="mobile-menu-section-links">' + links + '</div>' +
+      '</div>'
+    );
+  }).join('');
 }
 
 function buildHeaderHTML(site, authState) {
@@ -1265,8 +1451,15 @@ function buildMobileUtilsHTML(authState, hideAuthNav) {
   links.push(
     '<button type="button" class="mobile-menu-util mobile-menu-util--search" data-mobile-search-open>' +
     '<span class="mobile-menu-util-icon" aria-hidden="true">⌕</span>' +
-    '<span>Buscar no site</span></button>'
+    '<span>' + escapeNavText(i18n('common.searchOpen', 'Buscar no site')) + '</span></button>'
   );
+  if (!isStandaloneApp()) {
+    links.push(
+      '<button type="button" class="mobile-menu-util mobile-menu-util--install" data-pwa-install>' +
+      '<span class="mobile-menu-util-icon" aria-hidden="true">⬇</span>' +
+      '<span>' + escapeNavText(i18n('common.installApp', 'Instalar app')) + '</span></button>'
+    );
+  }
   const adminLink = authState && authState.adminLink;
   if (adminLink && !hideAuthNav) {
     links.push(
@@ -1287,9 +1480,30 @@ function buildMobileUtilsHTML(authState, hideAuthNav) {
   return '<div class="mobile-menu-utils">' + links.join('') + '</div>';
 }
 
+function markMobileHubActive(root) {
+  if (!root) return;
+  const current = normalizeNavPath(window.location.pathname);
+  root.querySelectorAll('.mobile-menu-link[data-active-prefixes]').forEach(function (link) {
+    const exact = link.getAttribute('data-active-exact') === '1';
+    const href = link.getAttribute('href');
+    if (exact) {
+      link.classList.toggle('is-active', isNavLinkActive(href));
+      return;
+    }
+    const prefixes = String(link.getAttribute('data-active-prefixes') || '')
+      .split(',')
+      .map(function (p) { return normalizeNavPath(p.trim()); })
+      .filter(Boolean);
+    const prefixMatch = prefixes.some(function (prefix) {
+      if (prefix === '/') return false;
+      return current === prefix || current.startsWith(prefix + '/');
+    });
+    link.classList.toggle('is-active', isNavLinkActive(href) || prefixMatch);
+  });
+}
+
 function buildMobileMenuHTML(site, authState) {
   const config = site || DEFAULT_SITE;
-  const navItems = config.nav || DEFAULT_SITE.nav;
   const ytUrl = config.youtubeChannelUrl || DEFAULT_SITE.youtubeChannelUrl;
   const ytLabel = config.youtubeChannelLabel || DEFAULT_SITE.youtubeChannelLabel;
   const spotifyUrl = config.spotifyPodcastUrl || DEFAULT_SITE.spotifyPodcastUrl;
@@ -1303,16 +1517,16 @@ function buildMobileMenuHTML(site, authState) {
   const userLink = authState && authState.userLink;
   let accountHtml = '';
   if (userLink && userLink.isUser && !hideAuthNav) {
-    const pic = userLink.picture || '/imagens/avatars/leaf.svg';
+    const pic = userLink.picture || '/imagens/avatars/inspector.svg';
     const avatar = '<img src="' + escapeNavText(pic) + '" alt="" class="mobile-menu-account-avatar" width="32" height="32" loading="lazy">';
     accountHtml =
       '<div class="mobile-menu-account">' +
       '<a href="' + escapeNavText(userLink.href) + '" class="mobile-menu-account-link">' +
       avatar +
-      '<span>' + escapeNavText(userLink.label || 'Meu perfil') + '</span></a></div>';
+      '<span>' + escapeNavText(userLink.label || 'Minha conta') + '</span></a></div>';
   }
 
-  const sectionsHtml = navItems.map(buildMobileNavSectionHTML).filter(Boolean).join('');
+  const hubNavHtml = buildMobileHubNavHTML();
   const utilsHtml = buildMobileUtilsHTML(authState, hideAuthNav);
 
   const footLinks = [
@@ -1320,7 +1534,7 @@ function buildMobileMenuHTML(site, authState) {
       ? '<a href="' + escapeNavText(ytUrl) + '" class="mobile-menu-foot-link" target="_blank" rel="noopener noreferrer">▶ ' + escapeNavText(ytLabel) + '</a>'
       : '',
     spotifyUrl
-      ? '<a href="' + escapeNavText(spotifyUrl) + '" class="mobile-menu-foot-link" target="_blank" rel="noopener noreferrer">♪ ' + escapeNavText(spotifyLabel) + '</a>'
+      ? '<a href="' + escapeNavText(spotifyUrl) + '" class="mobile-menu-foot-link mobile-menu-foot-link--muted" target="_blank" rel="noopener noreferrer">♪ ' + escapeNavText(spotifyLabel) + '</a>'
       : ''
   ].filter(Boolean).join('');
 
@@ -1328,10 +1542,19 @@ function buildMobileMenuHTML(site, authState) {
     '<div id="mobile-menu-scrim" class="mobile-menu-scrim" aria-hidden="true"></div>' +
     '<aside id="mobile-menu" class="mobile-menu" aria-hidden="true" aria-label="Menu de navegação">' +
     '<div class="mobile-menu-top">' +
-    '<p class="mobile-menu-title">Navegação</p>' +
+    '<div class="mobile-menu-brand">' +
+    '<img class="mobile-menu-brand-icon" src="/imagens/app-icon.png?v=' + ASSET_V + '" alt="" width="28" height="28" decoding="async">' +
+    '<p class="mobile-menu-title">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</p>' +
+    '</div>' +
     '<button type="button" id="mobile-menu-close" class="mobile-menu-close" aria-label="Fechar menu">×</button>' +
     '</div>' +
-    '<nav class="mobile-menu-body">' + accountHtml + utilsHtml + sectionsHtml + '</nav>' +
+    '<div class="mobile-menu-body">' +
+    accountHtml +
+    '<nav class="mobile-menu-nav" aria-label="' + escapeNavText(i18n('common.mobileNav', 'Navegação principal')) + '">' +
+    hubNavHtml +
+    '</nav>' +
+    utilsHtml +
+    '</div>' +
     (footLinks ? '<div class="mobile-menu-foot">' + footLinks + '</div>' : '') +
     '</aside>'
   );
@@ -1367,7 +1590,6 @@ function mountMobileMenu(site, authState, menuToggle) {
 
   if (menuToggle) {
     menuToggle.addEventListener('click', function (e) {
-      if (!isMobileNav()) return;
       e.stopPropagation();
       setOpen(panel.getAttribute('aria-hidden') !== 'false');
     });
@@ -1376,8 +1598,7 @@ function mountMobileMenu(site, authState, menuToggle) {
   if (closeBtn) closeBtn.addEventListener('click', function () { setOpen(false); });
   scrim.addEventListener('click', function () { setOpen(false); });
 
-  initAccordionToggles(panel, '.nav-tile-submenu-toggle', '.nav-tile-submenu');
-  markActiveNavLinks(panel);
+  markMobileHubActive(panel);
 
   const searchOpenBtn = panel.querySelector('[data-mobile-search-open]');
   if (searchOpenBtn) {
@@ -1393,6 +1614,11 @@ function mountMobileMenu(site, authState, menuToggle) {
     });
   }
 
+  bindPermanentInstallButtons(panel);
+  panel.querySelectorAll('[data-pwa-install]').forEach(function (btn) {
+    btn.addEventListener('click', function () { setOpen(false); });
+  });
+
   panel.querySelectorAll('a[href]').forEach(function (link) {
     link.addEventListener('click', function () { setOpen(false); });
   });
@@ -1400,10 +1626,6 @@ function mountMobileMenu(site, authState, menuToggle) {
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && panel.getAttribute('aria-hidden') === 'false') setOpen(false);
   });
-
-  window.addEventListener('resize', function () {
-    if (!isMobileNav() && panel.getAttribute('aria-hidden') === 'false') setOpen(false);
-  }, { passive: true });
 }
 
 function buildFooterHTML(site) {
@@ -1452,11 +1674,16 @@ function buildFooterHTML(site) {
     '</div>' +
     '<div class="footer-bar">' +
     '<p class="footer-copy">' + escapeNavText(i18n('footer.copy', config.footerText || DEFAULT_SITE.footerText)) + '</p>' +
+    '<div class="footer-bar-actions">' +
+    '<button type="button" class="footer-install-btn" data-pwa-install>' +
+    escapeNavText(i18n('common.installApp', 'Instalar app')) +
+    '</button>' +
     '<p class="footer-legal">' +
     escapeNavText(i18n('common.footerLegal', 'Conteúdo educacional.')) +
     ' · <a href="/info/privacidade.html">' + escapeNavText(i18n('common.footerPrivacy', 'Privacidade')) + '</a>' +
     ' · ' + escapeNavText(i18n('common.footerUpdated', 'atualizado em')) + ' ' + escapeNavText(privacyDate) +
     '</p>' +
+    '</div>' +
     '</div>' +
     '</div></footer>'
   );
@@ -1580,10 +1807,10 @@ async function fetchAuthState() {
       if (res.ok) {
         const data = await res.json();
         state.userLink = {
-          label: 'Diário de Cultivo',
-          href: '/cultivo/',
+          label: 'Minha conta',
+          href: '/perfil.html',
           isUser: true,
-          picture: data.picture || (data.profile && data.profile.avatarUrl) || '/imagens/avatars/leaf.svg',
+          picture: data.picture || (data.profile && data.profile.avatarUrl) || '/imagens/avatars/inspector.svg',
           name: data.name || null
         };
         state.isUser = true;
@@ -1883,6 +2110,7 @@ function injectLayout(site, authState) {
   if (footerContainer) {
     footerContainer.innerHTML = footerHTML;
     markActiveNavLinks(footerContainer);
+    bindPermanentInstallButtons(footerContainer);
   }
 }
 
@@ -1902,6 +2130,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   enhanceHoverTips(document);
   initInstallUi();
   refreshInstallVisibility();
+  bindPermanentInstallButtons(document);
   injectSeoMeta(site);
 
   window.addEventListener('budganja:locale-change', function () {
@@ -1928,5 +2157,12 @@ document.addEventListener('DOMContentLoaded', async function () {
     feat.id = 'site-features-js';
     feat.src = '/js/site-features.js?v=' + ASSET_V;
     document.body.appendChild(feat);
+  }
+
+  if (!document.querySelector('script[src*="radio-player.js"]')) {
+    const radio = document.createElement('script');
+    radio.id = 'radio-player-js';
+    radio.src = '/js/radio-player.js?v=' + ASSET_V;
+    document.body.appendChild(radio);
   }
 });

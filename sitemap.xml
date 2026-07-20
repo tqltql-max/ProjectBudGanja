@@ -22,18 +22,21 @@
   <url><loc>https://inspetorbudganja.com.br/equipamentos/manual-clonadora.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/equipamentos/manual-hidrocloradora.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/biblioteca/pesquisas/substratos.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-otimizacao-propagacao-vegetal.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-clonadora-aeroponica-documentada.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-luximetro.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-super-solo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-ventilacao-tenda.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-cultivo-inicio.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-nutricao-cannabis.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-solo-vivo-organico.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-arquitetura-cannabis.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-ciencia-floracao.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-propagacao-clonagem.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-cultivo-indoor-ppfd.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-canal-jardimhg.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-canal-plantamemo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-canal-inspetorbudganja.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-marshydro-brasil.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-cultivo-indoor-ppfd.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-propagacao-clonagem.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-ciencia-floracao.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-arquitetura-cannabis.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-solo-vivo-organico.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-nutricao-cannabis.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-cultivo-inicio.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-super-solo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-luximetro.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-otimizacao-propagacao-vegetal.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-ventilacao-tenda.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-clonadora-aeroponica-documentada.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

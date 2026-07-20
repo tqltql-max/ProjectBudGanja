@@ -114,10 +114,15 @@ document.addEventListener('DOMContentLoaded', async () => {
       const emailEl = document.getElementById('local-register-email');
       const passEl = document.getElementById('local-register-password');
       const passConfirmEl = document.getElementById('local-register-password-confirm');
+      const termsEl = document.getElementById('local-register-community-terms');
       const password = passEl ? passEl.value : '';
       const passwordConfirm = passConfirmEl ? passConfirmEl.value : '';
       if (password !== passwordConfirm) {
         showError('As senhas não coincidem.');
+        return;
+      }
+      if (!termsEl || !termsEl.checked) {
+        showError('Aceite os termos de uso para criar a conta.');
         return;
       }
       try {
@@ -128,7 +133,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           body: JSON.stringify({
             name: nameEl ? nameEl.value : '',
             email: emailEl ? emailEl.value : '',
-            password: password
+            password: password,
+            communityTermsAccepted: true
           })
         });
         const data = await res.json().catch(() => ({}));

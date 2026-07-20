@@ -57,6 +57,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('stamp:pesquisa-series', 'stamp-pesquisa-series.js');
+  } catch (e) {
+    console.warn('Aviso stamp:pesquisa-series:', e.message);
+  }
+
+  try {
     runStep('build:posts', 'regenerate-posts.js');
   } catch (e) {
     console.warn('Aviso build:posts:', e.message);
@@ -78,6 +84,12 @@ function runBuildSteps() {
     runStep('build:jardimhg', 'build-jardimhg-catalog.js');
   } catch (e) {
     console.warn('Aviso build:jardimhg:', e.message);
+  }
+
+  try {
+    runStep('build:radio', 'build-radio-playlist.js');
+  } catch (e) {
+    console.warn('Aviso build:radio:', e.message);
   }
 
   try {
