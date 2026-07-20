@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '269';
+const ASSET_V = '288';
 
 let deferredInstallPrompt = null;
 let installFloatingBtn = null;
@@ -669,39 +669,46 @@ const DEFAULT_SITE = {
   ],
   footerLinks: [
     { label: 'Início', href: '/' },
-    { label: 'Guia de Cultivo', href: '/biblioteca/inspecoes/' },
-    { label: 'Últimos vídeos', href: '/videos/' },
-    { label: 'Pesquisas realizadas', href: '/biblioteca/pesquisas/' },
+    { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
     { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
+    { label: 'Vídeos', href: '/videos/' },
     { label: 'Equipamentos', href: '/equipamentos/' },
     { label: 'Ferramentas', href: '/calculadoras/' },
-    { label: 'Luxímetro', href: '/calculadoras/luximetro.html' }
+    { label: 'Luxímetro', href: '/calculadoras/luximetro.html' },
+    { label: 'Diário de cultivo', href: '/cultivo/' },
+    { label: 'Comunidade', href: '/comunidade/' },
+    { label: 'Rádio', href: '/radio/' },
+    { label: 'Sorteios', href: '/sorteios/' },
+    { label: 'Loja', href: '/loja/' }
   ],
   footerGroups: [
     {
       title: 'Biblioteca',
       links: [
-        { label: 'Guia de Cultivo', href: '/biblioteca/inspecoes/' },
-        { label: 'Pesquisas realizadas', href: '/biblioteca/pesquisas/' },
+        { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
         { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
-        { label: 'Vídeos', href: '/videos/' }
+        { label: 'Vídeos', href: '/videos/' },
+        { label: 'Equipamentos', href: '/equipamentos/' }
       ]
     },
     {
       title: 'Ferramentas',
       links: [
         { label: 'Ferramentas', href: '/calculadoras/' },
-        { label: 'Equipamentos', href: '/equipamentos/' },
-        { label: 'Luxímetro', href: '/calculadoras/luximetro.html' }
+        { label: 'Luxímetro', href: '/calculadoras/luximetro.html' },
+        { label: 'Solo', href: '/calculadoras/super-solo.html' },
+        { label: 'Diário de cultivo', href: '/cultivo/' }
       ]
     },
     {
-      title: 'Sobre nós',
+      title: 'Comunidade',
       links: [
-        { label: 'Sobre o projeto', href: '/info/sobre.html' },
-        { label: 'Contato', href: '/info/contato.html' },
+        { label: 'Feed da comunidade', href: '/comunidade/' },
+        { label: 'Rádio', href: '/radio/' },
         { label: 'Sorteios', href: '/sorteios/' },
-        { label: 'Privacidade', href: '/info/privacidade.html' }
+        { label: 'Loja', href: '/loja/' },
+        { label: 'Sobre o projeto', href: '/info/sobre.html' },
+        { label: 'Contato', href: '/info/contato.html' }
       ]
     }
   ]
@@ -716,17 +723,25 @@ function translateFooterLabel(label) {
     'Início': 'common.home',
     'Guia de Cultivo': 'nav.growingGuide',
     'Pesquisas': 'nav.research',
+    'Pesquisas': 'nav.technicalResearch',
     'Inspeções': 'nav.inspections',
     'Equipamentos': 'nav.equipment',
     'Calculadoras': 'nav.calculators',
     'Ferramentas': 'nav.calculators',
+    'Ferramentas': 'nav.calculators',
     'Luxímetro': 'nav.luxMeter',
+    'Solo': 'nav.soilCalc',
+    'Diário de cultivo': 'nav.growDiary',
     'Últimos vídeos': 'nav.videos',
     'Vídeos': 'nav.videos',
+    'Comunidade': 'nav.community',
+    'Feed da comunidade': 'nav.communityFeed',
+    'Rádio': 'nav.radio',
     'Sorteios': 'nav.giveaways',
     'Sobre o projeto': 'nav.aboutProject',
     'Contato': 'nav.contact',
     'Privacidade': 'nav.privacy',
+    'Loja': 'nav.shop',
     'Loja parceira': 'nav.shop'
   };
   return map[label] ? i18n(map[label], label) : label;
@@ -735,25 +750,9 @@ function translateFooterLabel(label) {
 function translateFooterGroupTitle(title) {
   if (title === 'Biblioteca') return i18n('footer.groupLibrary', title);
   if (title === 'Ferramentas') return i18n('footer.groupTools', title);
+  if (title === 'Comunidade') return i18n('footer.groupCommunity', title);
   if (title === 'Sobre nós') return i18n('footer.groupAbout', title);
   return title;
-}
-
-function buildLangSwitcherHTML() {
-  if (!window.BudGanjaI18n) return '';
-  var html =
-    '<div class="lang-switcher">' +
-    '<button type="button" class="header-icon-btn lang-switcher-btn" aria-haspopup="listbox" aria-expanded="false">PT</button>' +
-    '<ul class="lang-switcher-menu" role="listbox" hidden>';
-  window.BudGanjaI18n.SUPPORTED.forEach(function (code) {
-    var meta = window.BudGanjaI18n.getLocaleMeta(code);
-    html +=
-      '<li role="presentation"><button type="button" class="lang-switcher-option" data-lang="' + escapeNavText(code) + '" role="option">' +
-      escapeNavText(meta.name || code) +
-      '</button></li>';
-  });
-  html += '</ul></div>';
-  return html;
 }
 
 const OG_SITE_NAME = 'Inspetor BudGanja';
@@ -830,6 +829,8 @@ function markQuickNavActive(root) {
     });
     const active = isNavLinkActive(href) || prefixMatch;
     link.classList.toggle('is-active', active);
+    if (active) link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
   });
 }
 
@@ -1143,32 +1144,6 @@ function buildNavItemHTML(item) {
   );
 }
 
-function buildHeaderProfileLink(userLink, hideAuthNav) {
-  if (!userLink || hideAuthNav) return '';
-  const href = escapeNavText(userLink.href);
-  const label = escapeNavText(userLink.label || 'Entrar');
-  if (userLink.isUser) {
-    const pic = userLink.picture || '/imagens/avatars/inspector.svg';
-    const displayName = userLink.name || label;
-    const shortName = String(displayName).trim().split(/\s+/)[0] || label;
-    return (
-      '<a href="' + href + '" class="header-profile-link" title="Minha conta" aria-label="Minha conta">' +
-      '<img src="' + escapeNavText(pic) + '" alt="" class="header-profile-avatar" width="32" height="32" loading="lazy">' +
-      '<span class="header-profile-name">' + escapeNavText(shortName) + '</span>' +
-      '</a>'
-    );
-  }
-  return '<a href="' + href + '" class="header-profile-link header-profile-link--guest">' + label + '</a>';
-}
-
-function buildHeaderAdminIcon(adminLink, hideAuthNav) {
-  if (!adminLink || hideAuthNav) return '';
-  return (
-    '<a href="' + escapeNavText(adminLink.href) + '" class="header-icon-btn header-icon-btn--admin" title="Painel administrativo" aria-label="Painel admin">' +
-    '<span class="header-action-icon" aria-hidden="true">⚙</span></a>'
-  );
-}
-
 /** Hubs reais do site — fonte única para quick-nav (desktop) e menu mobile. */
 function getSiteHubNav() {
   return {
@@ -1176,44 +1151,50 @@ function getSiteHubNav() {
       {
         href: '/biblioteca/pesquisas/',
         icon: '🔬',
-        label: i18n('nav.technicalResearch', 'Pesquisas realizadas'),
+        label: i18n('nav.technicalResearch', 'Pesquisas'),
         tip: i18n('nav.quickResearchTip', 'Pesquisas do laboratório e da comunidade'),
-        prefixes: '/biblioteca/pesquisas'
+        prefixes: '/biblioteca/pesquisas',
+        tone: 'pesquisas'
       },
       {
         href: '/biblioteca/inspecoes/',
-        icon: '📋',
+        icon: '🔍',
         label: i18n('nav.inspections', 'Inspeções'),
         tip: i18n('nav.quickInspectionsTip', 'Guia, canais, equipamentos e cursos'),
-        prefixes: '/biblioteca/inspecoes,/guia'
+        prefixes: '/biblioteca/inspecoes,/guia',
+        tone: 'inspecoes'
       },
       {
         href: '/videos/',
         icon: '▶',
         label: i18n('nav.videos', 'Vídeos'),
         tip: i18n('nav.quickVideosTip', 'Últimos vídeos do canal'),
-        prefixes: '/videos'
+        prefixes: '/videos',
+        tone: 'videos'
       },
       {
         href: '/calculadoras/',
         icon: '🧮',
-        label: i18n('nav.calculators', 'Calculadoras'),
+        label: i18n('nav.calculators', 'Ferramentas'),
         tip: i18n('nav.quickCalculatorsTip', 'VPD, pH, EC, luxímetro e mais'),
-        prefixes: '/calculadoras'
+        prefixes: '/calculadoras',
+        tone: 'ferramentas'
       },
       {
         href: '/equipamentos/',
-        icon: '⚙️',
+        icon: '🛠️',
         label: i18n('nav.equipment', 'Equipamentos'),
         tip: i18n('nav.quickEquipmentTip', 'Clonadoras e guias de montagem'),
-        prefixes: '/equipamentos'
+        prefixes: '/equipamentos',
+        tone: 'equipamentos'
       },
       {
         href: '/comunidade/',
         icon: '🌿',
         label: i18n('nav.community', 'Comunidade'),
         tip: i18n('nav.quickCommunityTip', 'Feed de fotos do diário de cultivo'),
-        prefixes: '/comunidade'
+        prefixes: '/comunidade',
+        tone: 'comunidade'
       },
       {
         href: '/sorteios/',
@@ -1230,24 +1211,32 @@ function getSiteHubNav() {
         links: [
           {
             href: '/',
+            icon: '🏠',
             label: i18n('nav.home', 'Início'),
             prefixes: '/',
-            exact: true
+            exact: true,
+            tone: 'inicio'
           },
           {
             href: '/biblioteca/pesquisas/',
-            label: i18n('nav.technicalResearch', 'Pesquisas realizadas'),
-            prefixes: '/biblioteca/pesquisas'
+            icon: '🔬',
+            label: i18n('nav.technicalResearch', 'Pesquisas'),
+            prefixes: '/biblioteca/pesquisas',
+            tone: 'pesquisas'
           },
           {
             href: '/biblioteca/inspecoes/',
+            icon: '🔍',
             label: i18n('nav.inspections', 'Inspeções'),
-            prefixes: '/biblioteca/inspecoes,/guia'
+            prefixes: '/biblioteca/inspecoes,/guia',
+            tone: 'inspecoes'
           },
           {
             href: '/videos/',
+            icon: '▶',
             label: i18n('nav.videos', 'Vídeos'),
-            prefixes: '/videos'
+            prefixes: '/videos',
+            tone: 'videos'
           }
         ]
       },
@@ -1256,18 +1245,24 @@ function getSiteHubNav() {
         links: [
           {
             href: '/calculadoras/',
-            label: i18n('nav.calculators', 'Calculadoras'),
-            prefixes: '/calculadoras'
+            icon: '🧮',
+            label: i18n('nav.calculators', 'Ferramentas'),
+            prefixes: '/calculadoras',
+            tone: 'ferramentas'
           },
           {
             href: '/equipamentos/',
+            icon: '🛠️',
             label: i18n('nav.equipment', 'Equipamentos'),
-            prefixes: '/equipamentos'
+            prefixes: '/equipamentos',
+            tone: 'equipamentos'
           },
           {
             href: '/cultivo/',
+            icon: '📓',
             label: i18n('nav.growDiary', 'Diário de cultivo'),
-            prefixes: '/cultivo'
+            prefixes: '/cultivo',
+            tone: 'cultivo'
           }
         ]
       },
@@ -1276,11 +1271,21 @@ function getSiteHubNav() {
         links: [
           {
             href: '/comunidade/',
+            icon: '🌿',
             label: i18n('nav.communityFeed', 'Feed da comunidade'),
-            prefixes: '/comunidade'
+            prefixes: '/comunidade',
+            tone: 'comunidade'
+          },
+          {
+            href: '/radio/',
+            icon: '📻',
+            label: i18n('nav.radio', 'Rádio'),
+            prefixes: '/radio',
+            tone: 'radio'
           },
           {
             href: '/sorteios/',
+            icon: '🎁',
             label: i18n('nav.giveaways', 'Sorteios'),
             prefixes: '/sorteios',
             tone: 'sorteios'
@@ -1318,11 +1323,15 @@ function buildMobileHubNavHTML() {
         (item.cta ? ' mobile-menu-link--cta' : '') +
         (item.tone ? ' mobile-menu-link--' + item.tone : '');
       const exactAttr = item.exact ? ' data-active-exact="1"' : '';
+      const iconHtml = item.icon
+        ? '<span class="mobile-menu-link-icon" aria-hidden="true">' + item.icon + '</span>'
+        : '';
       return (
         '<a href="' + escapeNavText(item.href) + '" class="' + cls + '"' +
         ' data-active-prefixes="' + escapeNavText(item.prefixes || item.href) + '"' +
         exactAttr + '>' +
-        escapeNavText(item.label) +
+        iconHtml +
+        '<span class="mobile-menu-link-label">' + escapeNavText(item.label) + '</span>' +
         '</a>'
       );
     }).join('');
@@ -1339,22 +1348,6 @@ function buildHeaderHTML(site, authState) {
   const config = site || DEFAULT_SITE;
   const navItems = config.nav || DEFAULT_SITE.nav;
   const navLinks = navItems.map(buildNavItemHTML).join('\n                ');
-  const ytUrl = config.youtubeChannelUrl || DEFAULT_SITE.youtubeChannelUrl;
-  const spotifyUrl = config.spotifyPodcastUrl || DEFAULT_SITE.spotifyPodcastUrl;
-  const tagline = config.siteTagline || DEFAULT_SITE.siteTagline || '';
-
-  const hideAuthNav = document.body.dataset.page === 'admin'
-    || document.body.dataset.page === 'sorteios-admin'
-    || document.body.dataset.page === 'login'
-    || document.body.dataset.page === 'entrar';
-
-  const userLink = authState && authState.userLink;
-  const adminLink = authState && authState.adminLink;
-  const profileLink = buildHeaderProfileLink(userLink, hideAuthNav);
-  const adminIcon = buildHeaderAdminIcon(adminLink, hideAuthNav);
-
-  const jardimUrl = '';
-  const jardimLabel = '';
 
   const headerSearch =
     '<div id="site-search" class="site-search" hidden role="dialog" aria-label="' + escapeNavText(i18n('common.searchTitle', 'Buscar no site')) + '">' +
@@ -1369,60 +1362,45 @@ function buildHeaderHTML(site, authState) {
     '<ul id="site-search-results" class="site-search-results"></ul>' +
     '</div>';
 
+  // Fora do menu: só pesquisa. Perfil, admin e redes ficam no hambúrguer.
   const headerToolbar =
     '<div class="header-toolbar">' +
-    buildLangSwitcherHTML() +
-    '<button type="button" class="header-icon-btn" id="theme-toggle" aria-label="' + escapeNavText(i18n('common.themeToggle', 'Alternar tema')) + '" title="' + escapeNavText(i18n('common.themeToggle', 'Alternar tema')) + '">' +
-    '<span class="header-action-icon" aria-hidden="true">◐</span></button>' +
-    '<button type="button" class="header-icon-btn" id="search-toggle" aria-expanded="false" aria-label="' + escapeNavText(i18n('common.searchOpen', 'Buscar no site')) + '" title="Buscar (Ctrl+K)">' +
-    '<span class="header-action-icon" aria-hidden="true">⌕</span></button>' +
-    (ytUrl
-      ? '<a href="' + escapeNavText(ytUrl) + '" class="header-icon-btn header-icon-btn--link" target="_blank" rel="noopener noreferrer" aria-label="Canal YouTube @InspetorBudGanja" title="YouTube">' +
-        '<span class="header-action-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-5.8 31 31 0 0 0-.5-5.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></span></a>'
-      : '') +
-    (spotifyUrl
-      ? '<a href="' + escapeNavText(spotifyUrl) + '" class="header-icon-btn header-icon-btn--link" target="_blank" rel="noopener noreferrer" aria-label="Podcast Spotify Inspetor BudGanja" title="Podcast Spotify">' +
-        '<span class="header-action-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></span></a>'
-      : '') +
-    adminIcon +
+    '<button type="button" class="header-quick-link header-quick-link--search" id="search-toggle" aria-expanded="false" aria-label="' + escapeNavText(i18n('common.searchOpen', 'Buscar no site')) + '" title="Buscar (Ctrl+K)">' +
+    '<span class="header-quick-link-icon" aria-hidden="true">' +
+    '<svg class="header-search-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">' +
+    '<circle cx="10.5" cy="10.5" r="6.5"></circle>' +
+    '<path d="M16 16l4.5 4.5"></path>' +
+    '</svg></span></button>' +
     headerSearch +
-    '</div>';
-
-  const headerProfileSlot = profileLink
-    ? '<div class="header-profile-slot">' + profileLink + '</div>'
-    : '';
-
-  const mobileNavFooter =
-    '<div class="mobile-nav-footer">' +
-    (ytUrl ? '<a href="' + escapeNavText(ytUrl) + '" class="mobile-nav-cta" target="_blank" rel="noopener noreferrer">▶ ' + escapeNavText(config.youtubeChannelLabel || 'Canal YouTube') + '</a>' : '') +
-    (spotifyUrl ? '<a href="' + escapeNavText(spotifyUrl) + '" class="mobile-nav-cta mobile-nav-cta--secondary" target="_blank" rel="noopener noreferrer">♪ ' + escapeNavText(config.spotifyPodcastLabel || 'Podcast Spotify') + '</a>' : '') +
-    (jardimUrl ? '<a href="' + escapeNavText(jardimUrl) + '" class="mobile-nav-cta mobile-nav-cta--secondary" target="_blank" rel="noopener noreferrer">▶ ' + escapeNavText(jardimLabel) + '</a>' : '') +
     '</div>';
 
   return (
     '<a class="skip-link" href="#main-content">' + escapeNavText(i18n('common.skipLink', 'Ir para o conteúdo')) + '</a>' +
-    '<div class="logo">' +
-    '<a href="/" class="logo-link">' +
-    '<span class="logo-mark" aria-hidden="true">' +
-    '<img class="logo-mark-img" src="/imagens/app-icon.png?v=' + ASSET_V + '" alt="" width="42" height="42" decoding="async">' +
-
-    '</span>' +
-    '<span class="logo-copy">' +
-    '<span class="logo-name">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
-    (tagline ? '<span class="logo-tagline">' + escapeNavText(tagline) + '</span>' : '') +
-    '</span></a></div>' +
-    buildDesktopQuickNavHTML() +
     '<nav id="primary-nav" class="primary-nav" aria-label="' + escapeNavText(i18n('common.mobileNav', 'Navegação principal')) + '">' +
     '<ul>' + navLinks + '</ul>' +
     '</nav>' +
+    '<div class="header-bar">' +
+    '<div class="header-chrome header-chrome--main">' +
+    '<div class="logo">' +
+    '<a href="/" class="header-quick-link header-quick-link--brand logo-link" aria-label="' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '">' +
+    '<span class="header-quick-link-icon" aria-hidden="true">' +
+    '<img class="logo-mark-img" src="/imagens/app-icon.v' + ASSET_V + '.png" alt="" width="28" height="28" decoding="async">' +
+    '</span>' +
+    '<span class="header-quick-link-label">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
+    '</a></div>' +
+    '<span class="header-chrome-sep" aria-hidden="true"></span>' +
+    '<div id="header-radio-host" class="header-radio-host"></div>' +
+    buildDesktopQuickNavHTML() +
+    '<span class="header-chrome-sep header-chrome-sep--end" aria-hidden="true"></span>' +
     '<div class="header-right">' +
     '<div class="header-utilities">' +
     headerToolbar +
-    headerProfileSlot +
     '</div>' +
-    '<button type="button" class="menu-toggle" aria-label="' + escapeNavText(i18n('common.menuOpen', 'Abrir menu')) + '" aria-expanded="false" aria-controls="mobile-menu">' +
-    '<span class="menu-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>' +
-    '</button></div>'
+    '<button type="button" class="header-quick-link header-quick-link--menu menu-toggle" aria-label="' + escapeNavText(i18n('common.menuOpen', 'Abrir menu')) + '" aria-expanded="false" aria-controls="mobile-menu">' +
+    '<span class="header-quick-link-icon" aria-hidden="true">' +
+    '<span class="menu-toggle-bars"><span></span><span></span><span></span></span>' +
+    '</span></button></div>' +
+    '</div></div>'
   );
 }
 
@@ -1468,14 +1446,6 @@ function buildMobileUtilsHTML(authState, hideAuthNav) {
       '<span>' + escapeNavText(adminLink.label || 'Painel') + '</span></a>'
     );
   }
-  const userLink = authState && authState.userLink;
-  if (userLink && !hideAuthNav && !userLink.isUser) {
-    links.push(
-      '<a href="' + escapeNavText(userLink.href) + '" class="mobile-menu-util mobile-menu-util--cta">' +
-      '<span class="mobile-menu-util-icon" aria-hidden="true">→</span>' +
-      '<span>' + escapeNavText(userLink.label || 'Entrar') + '</span></a>'
-    );
-  }
   if (!links.length) return '';
   return '<div class="mobile-menu-utils">' + links.join('') + '</div>';
 }
@@ -1516,14 +1486,28 @@ function buildMobileMenuHTML(site, authState) {
 
   const userLink = authState && authState.userLink;
   let accountHtml = '';
-  if (userLink && userLink.isUser && !hideAuthNav) {
-    const pic = userLink.picture || '/imagens/avatars/inspector.svg';
-    const avatar = '<img src="' + escapeNavText(pic) + '" alt="" class="mobile-menu-account-avatar" width="32" height="32" loading="lazy">';
-    accountHtml =
-      '<div class="mobile-menu-account">' +
-      '<a href="' + escapeNavText(userLink.href) + '" class="mobile-menu-account-link">' +
-      avatar +
-      '<span>' + escapeNavText(userLink.label || 'Minha conta') + '</span></a></div>';
+  if (userLink && !hideAuthNav) {
+    if (userLink.isUser) {
+      const pic = userLink.picture || '/imagens/avatars/inspector.svg';
+      const avatar = '<img src="' + escapeNavText(pic) + '" alt="" class="mobile-menu-account-avatar" width="36" height="36" loading="lazy">';
+      accountHtml =
+        '<div class="mobile-menu-account">' +
+        '<a href="' + escapeNavText(userLink.href) + '" class="mobile-menu-account-link">' +
+        avatar +
+        '<span class="mobile-menu-account-copy">' +
+        '<strong class="mobile-menu-account-title">' + escapeNavText(userLink.label || 'Minha conta') + '</strong>' +
+        '<span class="mobile-menu-account-hint">Abrir perfil</span>' +
+        '</span></a></div>';
+    } else {
+      accountHtml =
+        '<div class="mobile-menu-account">' +
+        '<a href="' + escapeNavText(userLink.href) + '" class="mobile-menu-account-link mobile-menu-account-link--guest">' +
+        '<span class="mobile-menu-account-avatar mobile-menu-account-avatar--guest" aria-hidden="true">👤</span>' +
+        '<span class="mobile-menu-account-copy">' +
+        '<strong class="mobile-menu-account-title">' + escapeNavText(userLink.label || 'Entrar') + '</strong>' +
+        '<span class="mobile-menu-account-hint">Aceder ao perfil</span>' +
+        '</span></a></div>';
+    }
   }
 
   const hubNavHtml = buildMobileHubNavHTML();
@@ -1543,7 +1527,7 @@ function buildMobileMenuHTML(site, authState) {
     '<aside id="mobile-menu" class="mobile-menu" aria-hidden="true" aria-label="Menu de navegação">' +
     '<div class="mobile-menu-top">' +
     '<div class="mobile-menu-brand">' +
-    '<img class="mobile-menu-brand-icon" src="/imagens/app-icon.png?v=' + ASSET_V + '" alt="" width="28" height="28" decoding="async">' +
+    '<img class="mobile-menu-brand-icon" src="/imagens/app-icon.v' + ASSET_V + '.png" alt="" width="28" height="28" decoding="async">' +
     '<p class="mobile-menu-title">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</p>' +
     '</div>' +
     '<button type="button" id="mobile-menu-close" class="mobile-menu-close" aria-label="Fechar menu">×</button>' +
@@ -1651,7 +1635,7 @@ function buildFooterHTML(site) {
   const brandHtml =
     '<div class="footer-brand">' +
     '<a href="/" class="footer-brand-link">' +
-    '<img class="footer-brand-icon" src="/imagens/app-icon.png?v=' + ASSET_V + '" alt="" width="32" height="32" loading="lazy" decoding="async">' +
+    '<img class="footer-brand-icon" src="/imagens/app-icon.v' + ASSET_V + '.png" alt="" width="32" height="32" loading="lazy" decoding="async">' +
     '<span class="footer-brand-name">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
     '</a>' +
     '<p class="footer-brand-tagline">' + escapeNavText(i18n('footer.tagline', config.siteTagline || DEFAULT_SITE.siteTagline || '')) + '</p>' +
@@ -2081,10 +2065,6 @@ function injectLayout(site, authState) {
     mountMobileMenu(site, authState, menuToggle);
     initNavDropdowns(navPanel, function () {});
 
-    if (window.BudGanjaI18n) {
-      window.BudGanjaI18n.initLanguageSwitcher();
-    }
-
     const updateHeaderState = function () {
       const scrolled = window.scrollY > 16;
       headerContainer.classList.toggle('is-scrolled', scrolled);
@@ -2159,10 +2139,24 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.body.appendChild(feat);
   }
 
-  if (!document.querySelector('script[src*="radio-player.js"]')) {
+  function loadRadioPlayerScript() {
+    if (document.querySelector('script[src*="radio-player.js"]')) return;
     const radio = document.createElement('script');
     radio.id = 'radio-player-js';
     radio.src = '/js/radio-player.js?v=' + ASSET_V;
     document.body.appendChild(radio);
+  }
+
+  if (window.BudGanjaRadioMedia) {
+    loadRadioPlayerScript();
+  } else if (!document.querySelector('script[src*="radio-media-session.js"]')) {
+    const radioMedia = document.createElement('script');
+    radioMedia.id = 'radio-media-session-js';
+    radioMedia.src = '/js/radio-media-session.js?v=' + ASSET_V;
+    radioMedia.onload = loadRadioPlayerScript;
+    radioMedia.onerror = loadRadioPlayerScript;
+    document.body.appendChild(radioMedia);
+  } else {
+    loadRadioPlayerScript();
   }
 });

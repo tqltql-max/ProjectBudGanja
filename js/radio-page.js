@@ -61,6 +61,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  function refreshMediaSession() {
+    if (!window.BudGanjaRadioMedia || !tracks[index]) return;
+    window.BudGanjaRadioMedia.updateMetadata(
+      audio,
+      tracks[index],
+      (titleEl && titleEl.textContent) || 'Rádio BudGanja'
+    );
+    window.BudGanjaRadioMedia.updatePosition(audio);
+  }
+
   function loadTrack(i, autoplay) {
     if (!tracks.length) return;
     index = ((i % tracks.length) + tracks.length) % tracks.length;
@@ -69,8 +79,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (nowTitle) nowTitle.textContent = track.title || 'Faixa';
     if (nowArtist) nowArtist.textContent = track.artist || '';
     highlightActive();
+    refreshMediaSession();
     if (autoplay) {
-      audio.play().then(() => updatePlayUi(true)).catch(() => {
+      audio.play().then(() => {
+        updatePlayUi(true);
+        refreshMediaSession();
+      }).catch(() => {
         updatePlayUi(false);
         setStatus('Toque em Reproduzir para começar.', false);
       });
@@ -178,17 +192,45 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  if (window.BudGanjaRadioMedia) {
+    window.BudGanjaRadioMedia.bind(audio, {
+      album: 'Rádio BudGanja',
+      getTrack: () => tracks[index] || null,
+      play: () => {
+        if (!tracks.length) return;
+        if (!audio.src) loadTrack(index, true);
+        else {
+          audio.play().then(() => {
+            updatePlayUi(true);
+            refreshMediaSession();
+          }).catch(() => setStatus('Não foi possível reproduzir.', true));
+        }
+      },
+      pause: () => {
+        audio.pause();
+        updatePlayUi(false);
+        refreshMediaSession();
+      },
+      prev: () => loadTrack(index - 1, true),
+      next: () => loadTrack(index + 1, true)
+    });
+  }
+
   if (btnPlay) {
     btnPlay.addEventListener('click', () => {
       if (!tracks.length) return;
       if (audio.paused) {
         if (!audio.src) loadTrack(index, true);
         else {
-          audio.play().then(() => updatePlayUi(true)).catch(() => setStatus('Não foi possível reproduzir.', true));
+          audio.play().then(() => {
+            updatePlayUi(true);
+            refreshMediaSession();
+          }).catch(() => setStatus('Não foi possível reproduzir.', true));
         }
       } else {
         audio.pause();
         updatePlayUi(false);
+        refreshMediaSession();
       }
     });
   }
@@ -196,9 +238,15 @@ document.addEventListener('DOMContentLoaded', () => {
   if (btnNext) btnNext.addEventListener('click', () => loadTrack(index + 1, true));
 
   audio.addEventListener('ended', () => loadTrack(index + 1, true));
-  audio.addEventListener('play', () => updatePlayUi(true));
+  audio.addEventListener('play', () => {
+    updatePlayUi(true);
+    refreshMediaSession();
+  });
   audio.addEventListener('pause', () => {
-    if (!audio.ended) updatePlayUi(false);
+    if (!audio.ended) {
+      updatePlayUi(false);
+      refreshMediaSession();
+    }
   });
   audio.addEventListener('timeupdate', () => {
     if (seeking) return;
@@ -214,6 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const dur = audio.duration || 0;
       if (dur > 0) audio.currentTime = (Number(seekEl.value) / 1000) * dur;
       seeking = false;
+      refreshMediaSession();
     });
   }
 

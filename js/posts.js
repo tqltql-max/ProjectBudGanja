@@ -141,6 +141,16 @@ function renderPostCards(container, posts, options) {
     card.className = 'card post-card';
     if (p.slug) card.dataset.postSlug = p.slug;
     if (p.series) card.dataset.series = p.series;
+    if (document.body.dataset.page === 'pesquisas') {
+      card.dataset.pesquisasSource = isPesquisaComunidadePost(p) ? 'comunidade' : 'lab';
+      card.dataset.pesquisasQ = [
+        p.title || '',
+        p.excerpt || '',
+        p.seriesLabel || '',
+        p.series || '',
+        p.slug || ''
+      ].join(' ').toLowerCase();
+    }
 
     var link = document.createElement('a');
     link.href = normalizePostUrl(p.url);
@@ -468,6 +478,14 @@ function renderPesquisasEmAndamentoCards(grid, growLogs, statusMap) {
     var card = document.createElement('div');
     card.className = 'card post-card pesquisas-andamento-card';
     card.dataset.growId = log.id || '';
+    card.dataset.pesquisasSource = 'andamento';
+    card.dataset.pesquisasQ = [
+      log.name || '',
+      species,
+      phaseLabel,
+      badge,
+      'dia ' + dayNum
+    ].join(' ').toLowerCase();
 
     var link = document.createElement('a');
     link.href = '/cultivo/?grow=' + encodeURIComponent(log.id || '');
@@ -593,7 +611,93 @@ function renderPesquisasHub(posts) {
     });
   }
 
-  loadPesquisasEmAndamento();
+  loadPesquisasEmAndamento().then(function () {
+    initPesquisasFilter();
+  });
+}
+
+function normalizePesquisasQuery(value) {
+  return String(value || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .trim();
+}
+
+function applyPesquisasFilter() {
+  var qInput = document.getElementById('pesquisas-q');
+  var sourceSelect = document.getElementById('pesquisas-source');
+  var statusEl = document.getElementById('pesquisas-filter-status');
+  var emptyEl = document.getElementById('pesquisas-filter-empty');
+  if (!qInput && !sourceSelect) return;
+
+  var query = normalizePesquisasQuery(qInput && qInput.value);
+  var source = sourceSelect ? String(sourceSelect.value || '') : '';
+  var sections = document.querySelectorAll('.pesquisas-section');
+  var visibleCards = 0;
+  var totalCards = 0;
+
+  sections.forEach(function (section) {
+    var sectionSource = '';
+    if (section.id === 'pesquisas-andamento') sectionSource = 'andamento';
+    else if (section.id === 'pesquisas-lab') sectionSource = 'lab';
+    else if (section.id === 'pesquisas-comunidade') sectionSource = 'comunidade';
+
+    var sourceMatch = !source || source === sectionSource;
+    var cards = section.querySelectorAll('.card.post-card, .empty-state');
+    var sectionVisible = 0;
+
+    cards.forEach(function (card) {
+      if (card.classList.contains('empty-state')) {
+        card.hidden = !sourceMatch || !!query;
+        return;
+      }
+      totalCards += 1;
+      var hay = normalizePesquisasQuery(card.dataset.pesquisasQ || card.textContent || '');
+      var textOk = !query || hay.indexOf(query) !== -1;
+      var srcOk = !source || (card.dataset.pesquisasSource || sectionSource) === source;
+      var show = sourceMatch && textOk && srcOk;
+      card.hidden = !show;
+      if (show) {
+        sectionVisible += 1;
+        visibleCards += 1;
+      }
+    });
+
+    var showSection = sourceMatch && (sectionVisible > 0 || (!query && section.querySelector('.empty-state')));
+    if (!sourceMatch) showSection = false;
+    if (query && sectionVisible === 0) showSection = false;
+    section.hidden = !showSection;
+  });
+
+  if (emptyEl) emptyEl.hidden = !(totalCards > 0 && visibleCards === 0);
+  if (statusEl) {
+    if (!query && !source) statusEl.textContent = '';
+    else if (visibleCards === 0) statusEl.textContent = '0 resultados';
+    else statusEl.textContent = visibleCards + (visibleCards === 1 ? ' resultado' : ' resultados');
+  }
+}
+
+function initPesquisasFilter() {
+  if (document.body.dataset.page !== 'pesquisas') return;
+  var qInput = document.getElementById('pesquisas-q');
+  var sourceSelect = document.getElementById('pesquisas-source');
+  if (!qInput && !sourceSelect) return;
+  if (qInput && qInput.dataset.filterBound) return;
+  if (qInput) qInput.dataset.filterBound = '1';
+
+  var timer = null;
+  function schedule() {
+    clearTimeout(timer);
+    timer = setTimeout(applyPesquisasFilter, 80);
+  }
+
+  if (qInput) {
+    qInput.addEventListener('input', schedule);
+    qInput.addEventListener('search', schedule);
+  }
+  if (sourceSelect) sourceSelect.addEventListener('change', applyPesquisasFilter);
+  applyPesquisasFilter();
 }
 
 function prependSubstratosCard(container, replaceEmpty) {
@@ -601,6 +705,8 @@ function prependSubstratosCard(container, replaceEmpty) {
   var card = document.createElement('div');
   card.className = 'card post-card';
   card.dataset.postSlug = 'substratos-static';
+  card.dataset.pesquisasSource = 'lab';
+  card.dataset.pesquisasQ = 'substratos biodegradáveis relatório técnico propagação vegetal laboratório';
   card.innerHTML =
     '<a href="/biblioteca/pesquisas/substratos.html" style="text-decoration:none;color:inherit">' +
     '<div class="post-card-badges"><span class="post-card-series">Laboratório</span></div>' +

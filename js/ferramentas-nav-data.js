@@ -63,7 +63,7 @@ window.__BIBLIOTECA_NAV__ = {
           "submenu": true,
           "children": [
             {
-              "label": "Pesquisas realizadas",
+              "label": "Pesquisas",
               "tileLabel": "Índice",
               "href": "/biblioteca/pesquisas/",
               "icon": "🔬",

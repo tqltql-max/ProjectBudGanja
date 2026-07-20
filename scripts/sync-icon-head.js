@@ -5,19 +5,17 @@ const path = require('path');
 const { ROOT } = require('../lib/paths.js');
 const { ASSET_VERSION } = require('../lib/asset-version.js');
 
-const V = `?v=${ASSET_VERSION}`;
-
-// PNG/ICO primeiro — Google prefere ≥48px; SVG antigo em cache causava ícone diferente na aba.
-const ICON_BLOCK = `    <link rel="icon" href="/imagens/icon-192.png${V}" sizes="192x192" type="image/png">
-    <link rel="icon" href="/imagens/favicon-48.png${V}" sizes="48x48" type="image/png">
-    <link rel="icon" href="/imagens/favicon-32.png${V}" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.png${V}" sizes="16x16" type="image/png">
-    <link rel="shortcut icon" href="/favicon.ico${V}" sizes="any">
-    <link rel="icon" href="/favicon.svg${V}" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png${V}">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#3d5c28">`;
-
+// 32/48 primeiro (aba do browser). ICO/SVG com NOME versionado — Cloudflare
+// ainda serve /imagens/icon-192.png antigo (oval verde, immutable ~23 dias).
+const ICON_BLOCK = `    <link rel="icon" href="/imagens/favicon-32.v${ASSET_VERSION}.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.v${ASSET_VERSION}.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.v${ASSET_VERSION}.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/imagens/icon-192.v${ASSET_VERSION}.png" sizes="192x192" type="image/png">
+    <link rel="shortcut icon" href="/favicon.v${ASSET_VERSION}.ico" sizes="any">
+    <link rel="icon" href="/favicon.v${ASSET_VERSION}.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v${ASSET_VERSION}.png">
+    <link rel="manifest" href="/manifest.json?v=${ASSET_VERSION}">
+    <meta name="theme-color" content="#a68628">`;
 const ICON_LINE_RE =
   /^\s*<link[^>]*(?:rel=["'](?:icon|shortcut icon|apple-touch-icon|manifest)["']|href=["'][^"']*favicon)[^>]*>\s*$/gim;
 const THEME_LINE_RE = /^\s*<meta\s+name=["']theme-color["'][^>]*>\s*$/gim;

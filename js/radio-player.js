@@ -103,10 +103,10 @@
   function isCollapsedPref() {
     try {
       var v = sessionStorage.getItem(STORAGE_COLLAPSED);
-      if (v === null) return true; // por defeito compacta
+      if (v === null) return false; // por defeito expandida
       return v === '1';
     } catch (e) {
-      return true;
+      return false;
     }
   }
 
@@ -147,7 +147,8 @@
     var unloading = false;
     var root = document.createElement('div');
     root.id = 'budganja-radio';
-    root.className = 'radio-mini';
+    var host = document.getElementById('header-radio-host');
+    root.className = 'radio-mini' + (host ? ' radio-mini--header' : '');
     root.setAttribute('role', 'region');
     root.setAttribute('aria-label', meta.label || 'Rádio BudGanja');
 
@@ -184,7 +185,8 @@
       '</div>' +
       '</div>';
 
-    document.body.appendChild(root);
+    if (host) host.appendChild(root);
+    else document.body.appendChild(root);
 
     var titleEl = root.querySelector('[data-radio-title]');
     var artistEl = root.querySelector('[data-radio-artist]');
@@ -206,7 +208,8 @@
     var index = Math.max(0, Math.min(tracks.length - 1, readInt(STORAGE_INDEX, 0)));
     var wantPlay = sessionStorage.getItem(STORAGE_PLAYING) === '1';
     var savedTime = Math.max(0, readFloat(STORAGE_TIME, 0));
-    var collapsed = isFocusPage() || isCollapsedPref();
+    var inHeader = !!host;
+    var collapsed = (!inHeader && isFocusPage()) || isCollapsedPref();
 
     function applyCollapsed() {
       root.classList.toggle('is-collapsed', collapsed);
@@ -238,16 +241,27 @@
     }
 
     function updateMediaSession(track) {
+      if (window.BudGanjaRadioMedia) {
+        window.BudGanjaRadioMedia.updateMetadata(audio, track, meta.label || 'Rádio BudGanja');
+        window.BudGanjaRadioMedia.updatePosition(audio);
+        return;
+      }
       if (!('mediaSession' in navigator) || !track) return;
       try {
+        var origin = window.location.origin || '';
         navigator.mediaSession.metadata = new MediaMetadata({
           title: track.title || 'Rádio BudGanja',
           artist: track.artist || 'Inspetor BudGanja',
-          album: 'Rádio BudGanja',
-          artwork: [
-            { src: '/imagens/icon-192.png', sizes: '192x192', type: 'image/png' },
-            { src: '/imagens/icon-512.png', sizes: '512x512', type: 'image/png' }
-          ]
+          album: meta.label || 'Rádio BudGanja',
+          artwork: (window.BudGanjaRadioMedia && window.BudGanjaRadioMedia.artworkList
+            ? window.BudGanjaRadioMedia.artworkList()
+            : (function () {
+                var v = (typeof ASSET_V !== 'undefined' && ASSET_V) ? String(ASSET_V) : '288';
+                return [
+                  { src: origin + '/imagens/icon-192.v' + v + '.png', sizes: '192x192', type: 'image/png' },
+                  { src: origin + '/imagens/icon-512.v' + v + '.png', sizes: '512x512', type: 'image/png' }
+                ];
+              })())
         });
         navigator.mediaSession.playbackState = audio.paused ? 'paused' : 'playing';
       } catch (e) { /* ignore */ }
@@ -357,8 +371,9 @@
     });
 
     audio.addEventListener('pause', function () {
-      // Navegação MPA: o unload dispara pause — não apagar o pedido de continuar.
-      if (unloading || document.visibilityState === 'hidden') {
+      // Navegação MPA: pagehide marca unloading antes do pause.
+      // Pause via Bluetooth/ecrã de bloqueio (aba em background) deve atualizar estado.
+      if (unloading) {
         persistProgress();
         return;
       }
@@ -387,7 +402,40 @@
     window.addEventListener('pagehide', markUnloading);
     window.addEventListener('beforeunload', markUnloading);
 
-    if ('mediaSession' in navigator) {
+    if (window.BudGanjaRadioMedia) {
+      window.BudGanjaRadioMedia.bind(audio, {
+        album: meta.label || 'Rádio BudGanja',
+        getTrack: function () {
+          return tracks[index] || null;
+        },
+        play: function () {
+          audio.play().then(function () {
+            updatePlayUi(true);
+            writeSession(STORAGE_PLAYING, '1');
+            wantPlay = true;
+            updateMediaSession(tracks[index]);
+          }).catch(function () {
+            updatePlayUi(false);
+          });
+        },
+        pause: function () {
+          audio.pause();
+          updatePlayUi(false);
+          writeSession(STORAGE_PLAYING, '0');
+          wantPlay = false;
+          persistProgress();
+          updateMediaSession(tracks[index]);
+        },
+        prev: function () {
+          writeSession(STORAGE_TIME, '0');
+          loadTrack(index - 1, true, 0);
+        },
+        next: function () {
+          writeSession(STORAGE_TIME, '0');
+          loadTrack(index + 1, true, 0);
+        }
+      });
+    } else if ('mediaSession' in navigator) {
       try {
         navigator.mediaSession.setActionHandler('play', function () {
           audio.play();

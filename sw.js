@@ -1,5 +1,5 @@
 // Service Worker para PWA - Inspetor BudGanja
-const APP_VERSION = '269';
+const APP_VERSION = '288';
 const CACHE_NAME = 'budganja-v' + APP_VERSION;
 const urlsToCache = [
     '/',
@@ -57,16 +57,16 @@ const urlsToCache = [
     '/js/i18n.js',
     '/posts-public.json',
     '/manifest.json',
-    '/favicon.ico',
-    '/favicon.svg',
-    '/imagens/app-icon.png?v=' + APP_VERSION,
-    '/imagens/icon-192.png?v=' + APP_VERSION,
-    '/imagens/icon-512.png?v=' + APP_VERSION,
-    '/imagens/icon-512-maskable.png?v=' + APP_VERSION,
-    '/imagens/apple-touch-icon.png?v=' + APP_VERSION,
-    '/imagens/favicon-48.png?v=' + APP_VERSION,
-    '/imagens/favicon-32.png?v=' + APP_VERSION,
-    '/imagens/favicon-16.png?v=' + APP_VERSION,
+    '/favicon.v' + APP_VERSION + '.ico',
+    '/favicon.v' + APP_VERSION + '.svg',
+    '/imagens/app-icon.v' + APP_VERSION + '.png',
+    '/imagens/icon-192.v' + APP_VERSION + '.png',
+    '/imagens/icon-512.v' + APP_VERSION + '.png',
+    '/imagens/icon-512-maskable.v' + APP_VERSION + '.png',
+    '/imagens/apple-touch-icon.v' + APP_VERSION + '.png',
+    '/imagens/favicon-48.v' + APP_VERSION + '.png',
+    '/imagens/favicon-32.v' + APP_VERSION + '.png',
+    '/imagens/favicon-16.v' + APP_VERSION + '.png',
     '/imagens/iconsite.png?v=' + APP_VERSION
 ];
 

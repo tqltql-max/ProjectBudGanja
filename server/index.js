@@ -38,10 +38,14 @@ const MIME = {
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
+  '.gif': 'image/gif',
   '.ico': 'image/x-icon',
   '.webp': 'image/webp',
   '.webmanifest': 'application/manifest+json',
-  '.mp3': 'audio/mpeg'
+  '.mp3': 'audio/mpeg',
+  '.mp4': 'video/mp4',
+  '.webm': 'video/webm',
+  '.mov': 'video/quicktime'
 };
 
 const MAX_BODY_BYTES = 2 * 1024 * 1024;
@@ -66,7 +70,15 @@ function isCompressible(ext) {
   return ['.html', '.js', '.css', '.json', '.svg', '.txt', '.webmanifest'].includes(ext);
 }
 
-function getCacheControl(ext) {
+function getCacheControl(ext, filePath) {
+  const base = path.basename(filePath || '');
+  // Ícones PWA / favicon — nunca cachear agressivamente (Cloudflare ficou com oval verde immutable).
+  if (/^(icon-\d+|icon-\d+-maskable|apple-touch-icon|app-icon|favicon-\d+|iconsite)\.png$/i.test(base)) {
+    return 'no-cache, must-revalidate';
+  }
+  if (/^favicon(\.v\d+)?\.(ico|svg)$/i.test(base)) {
+    return 'no-cache, must-revalidate';
+  }
   if (ext === '.html') return 'no-cache';
   if (['.js', '.css', '.json', '.webmanifest'].includes(ext)) return 'no-cache';
   if (['.png', '.jpg', '.jpeg', '.svg', '.webp', '.ico'].includes(ext)) return 'public, max-age=86400';
@@ -289,7 +301,12 @@ function serveStatic(req, res, staticPath) {
       || pageName === 'version.json'
       || pageName === 'manifest.json'
       || pageName === 'js/app-version-check.js';
-    res.setHeader('Cache-Control', (headerOpts || neverCache) ? 'no-store, no-cache, must-revalidate' : getCacheControl(ext));
+    res.setHeader('Cache-Control', (headerOpts || neverCache) ? 'no-store, no-cache, must-revalidate' : getCacheControl(ext, requested));
+    // Pedir à Cloudflare para não reter ícones “envenenados” (ex.: oval verde immutable).
+    if (/no-cache/i.test(res.getHeader('Cache-Control') || '')) {
+      res.setHeader('CDN-Cache-Control', 'no-store');
+      res.setHeader('Cloudflare-CDN-Cache-Control', 'no-store');
+    }
     res.setHeader('Last-Modified', lastModified);
     res.setHeader('ETag', etag);
     res.setHeader('Content-Type', contentType);

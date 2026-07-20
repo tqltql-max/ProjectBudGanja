@@ -16,7 +16,9 @@
     'cultivo/index.html': [{ label: 'Início', href: HOME }, { label: 'Diário de Cultivo' }],
     'perfil.html': [{ label: 'Início', href: HOME }, { label: 'Minha conta' }],
     'login.html': [{ label: 'Início', href: HOME }, { label: 'Admin' }],
-    'videos/index.html': [{ label: 'Início', href: HOME }, { label: 'Últimos vídeos' }],
+    'videos/index.html': [{ label: 'Início', href: HOME }, { label: 'Vídeos' }],
+    'radio/index.html': [{ label: 'Início', href: HOME }, { label: 'Rádio' }],
+    'comunidade/index.html': [{ label: 'Início', href: HOME }, { label: 'Comunidade' }],
     'info/sobre.html': [{ label: 'Início', href: HOME }, { label: 'Sobre' }],
     'info/contato.html': [{ label: 'Início', href: HOME }, { label: 'Contato' }],
     'info/privacidade.html': [{ label: 'Início', href: HOME }, { label: 'Privacidade' }],
@@ -78,6 +80,7 @@
       'Sorteios': 'nav.giveaways',
       'Admin': 'common.panel',
       'Últimos vídeos': 'nav.videos',
+      'Vídeos': 'nav.videos',
       'Sobre': 'nav.about',
       'Contato': 'nav.contact',
       'Privacidade': 'nav.privacy',
@@ -102,7 +105,7 @@
       var calcTitle = document.querySelector('main h1');
       crumbs = [
         { label: 'Início', href: HOME },
-        { label: 'Calculadoras', href: '/calculadoras/' },
+        { label: 'Ferramentas', href: '/calculadoras/' },
         { label: calcTitle ? calcTitle.textContent.trim() : 'Calculadora' }
       ];
     } else if (document.body.dataset.postSlug && POST_PARENT[page]) {
@@ -305,7 +308,7 @@
       script.textContent = JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
-        name: 'Últimos vídeos — Inspetor BudGanja',
+        name: 'Vídeos — Inspetor BudGanja',
         url: window.location.href.split('#')[0]
       });
       head.appendChild(script);

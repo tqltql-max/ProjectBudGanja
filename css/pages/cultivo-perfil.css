@@ -4097,6 +4097,30 @@ html[data-theme="light"] .cultivo-phase-chip.is-active {
     box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.12);
 }
 
+.cultivo-wizard-photo-actions {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 0;
+}
+
+.cultivo-wizard-photo-field {
+  margin-bottom: 0;
+}
+
+.cultivo-research-card-cover {
+  margin: -0.15rem -0.15rem 0.85rem;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.cultivo-research-card-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .cultivo-wizard-form .perfil-field-optional {
     color: var(--color-text-soft);
 }

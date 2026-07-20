@@ -112,6 +112,19 @@ if (fs.existsSync(versionCheckPath)) {
   }
 }
 
+// Sincroniza ICON_V da Media Session (notificação da rádio).
+const radioMediaPath = path.join(ROOT, 'js', 'radio-media-session.js');
+if (fs.existsSync(radioMediaPath)) {
+  let radioMedia = fs.readFileSync(radioMediaPath, 'utf8');
+  const next = radioMedia.replace(
+    /(var\s+ICON_V\s*=\s*')[^']*(')/,
+    `$1${ASSET_VERSION}$2`
+  );
+  if (next !== radioMedia) {
+    fs.writeFileSync(radioMediaPath, next);
+  }
+}
+
 // Sincroniza APP_VERSION e CACHE_NAME do service worker.
 const swPath = path.join(ROOT, 'sw.js');
 if (fs.existsSync(swPath)) {
@@ -139,7 +152,7 @@ if (fs.existsSync(manifestPath)) {
   }
 }
 
-// Versiona favicon / ícones PWA / og:image nos HTML (evita cache Cloudflare).
+// Versiona favicon / ícones PWA / og:image nos HTML (evita cache Cloudflare / oval verde).
 for (const file of listHtmlFiles(ROOT)) {
   let html = fs.readFileSync(file, 'utf8');
   const next = html
@@ -152,7 +165,12 @@ for (const file of listHtmlFiles(ROOT)) {
     .replace(/(href="\/imagens\/apple-touch-icon\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
     .replace(/(href="\/imagens\/app-icon\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
     .replace(/(src="\/imagens\/app-icon\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
-    .replace(/(content="\/imagens\/icon-512\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`);
+    .replace(/(src="\/imagens\/icon-192\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(content="\/imagens\/icon-512\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(
+      /(\/(?:imagens\/(?:icon-192|icon-512|icon-512-maskable|app-icon|apple-touch-icon|favicon-\d+)|favicon)\.v)\d+(\.(?:png|ico|svg))/g,
+      `$1${ASSET_VERSION}$2`
+    );
   if (next !== html) {
     fs.writeFileSync(file, next);
   }
@@ -165,5 +183,30 @@ fs.writeFileSync(
   JSON.stringify({ version: ASSET_VERSION, builtAt: new Date().toISOString() }, null, 2) + '\n',
   'utf8'
 );
+
+// Versiona imagens referenciadas no CSS (ex.: banner do hero) — senão ficam presas num ?v= antigo.
+const styleCssPath = path.join(ROOT, 'css', 'style.css');
+if (fs.existsSync(styleCssPath)) {
+  let css = fs.readFileSync(styleCssPath, 'utf8');
+  const nextCss = css.replace(
+    /(url\(\s*['"]?(?:\.\.\/)?imagens\/background-hero\.(?:png|svg))(?:\?v=[^'")\s]*)?(['"]?\s*\))/g,
+    `$1?v=${ASSET_VERSION}$2`
+  );
+  if (nextCss !== css) {
+    fs.writeFileSync(styleCssPath, nextCss);
+  }
+}
+
+// Versiona o banner do hero em HTML (img src)
+for (const file of listHtmlFiles(ROOT)) {
+  let html = fs.readFileSync(file, 'utf8');
+  const nextHtml = html.replace(
+    /(\/imagens\/background-hero\.(?:png|svg))(?:\?v=[^"']*)?/g,
+    `$1?v=${ASSET_VERSION}`
+  );
+  if (nextHtml !== html) {
+    fs.writeFileSync(file, nextHtml);
+  }
+}
 
 console.log(`stamp-assets: versão v${ASSET_VERSION} aplicada (${changedHtml} HTML atualizados).`);

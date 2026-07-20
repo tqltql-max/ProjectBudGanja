@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { ROOT } = require('../lib/paths.js');
+const { ASSET_VERSION } = require('../lib/asset-version.js');
 
 const SOURCE_PNG = path.join(ROOT, 'imagens', 'iconsite.png');
 const SOURCE_SVG = path.join(ROOT, 'imagens', 'app-icon.svg');
@@ -13,12 +14,13 @@ const FAVICON_SVG = path.join(ROOT, 'favicon.svg');
 /** Fundo alinhado ao tema do site / PWA. */
 const BG = { r: 26, g: 26, b: 26, alpha: 1 };
 
-/** Margem para ícones “any” / favicon / header (evita corte em cantos arredondados). */
-const PAD_ANY = 0.12;
-/** Safe zone maskable (Android): conteúdo no ~60% central. */
-const PAD_MASKABLE = 0.22;
-/** Favicon/aba: um pouco mais de ar para máscaras circulares do browser. */
-const PAD_FAVICON = 0.16;
+/**
+ * iconsite.png já traz moldura dourada — padding leve só para safe-zone,
+ * sem “encolher” o emblema (o que fazia o app parecer outro ícone).
+ */
+const PAD_ANY = 0.06;
+const PAD_MASKABLE = 0.18;
+const PAD_FAVICON = 0.04;
 
 async function loadSharp() {
   try {
@@ -42,10 +44,6 @@ function stripNearWhite(raw, info) {
   return { pixels, info };
 }
 
-/**
- * Coloca a arte completa no canvas com padding — sem cover/crop.
- * iconsite.png já é o emblema (não o cartaz com texto).
- */
 async function buildPaddedIcon(sharp, size, padRatio) {
   const pad = Math.max(2, Math.round(size * padRatio));
   const inner = Math.max(8, size - pad * 2);
@@ -80,7 +78,6 @@ async function buildPaddedIcon(sharp, size, padRatio) {
 }
 
 function buildFaviconSvg(pngBase64) {
-  // Rounded square clip (não círculo) — o emblema já é squircle dourado.
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
   <defs>
     <clipPath id="round"><rect x="2" y="2" width="60" height="60" rx="14" ry="14"/></clipPath>
@@ -94,24 +91,84 @@ function buildFaviconSvg(pngBase64) {
 
 async function writeIco(sizes) {
   const icoPath = path.join(ROOT, 'favicon.ico');
+  const versionedIco = path.join(ROOT, `favicon.v${ASSET_VERSION}.ico`);
   try {
     const mod = require('png-to-ico');
     const pngToIco = typeof mod === 'function' ? mod : mod.default;
     if (typeof pngToIco !== 'function') throw new Error('png-to-ico sem export default');
     const ico = await pngToIco([sizes[16], sizes[32], sizes[48]]);
     fs.writeFileSync(icoPath, ico);
-    console.log('  → favicon.ico (16/32/48)');
+    fs.writeFileSync(versionedIco, ico);
+    // Limpar .ico versionados antigos na raiz
+    for (const name of fs.readdirSync(ROOT)) {
+      const m = name.match(/^favicon\.v(\d+)\.ico$/i);
+      if (m && m[1] !== String(ASSET_VERSION)) {
+        try { fs.unlinkSync(path.join(ROOT, name)); } catch (_) { /* ignore */ }
+      }
+    }
+    console.log('  → favicon.ico + favicon.v' + ASSET_VERSION + '.ico (16/32/48)');
   } catch (e) {
     fs.writeFileSync(icoPath, sizes[32]);
+    fs.writeFileSync(versionedIco, sizes[32]);
     console.log('  → favicon.ico (png fallback:', e.message + ')');
   }
+}
+
+function writeBoth(name, buf) {
+  fs.writeFileSync(path.join(OUT_DIR, name), buf);
+  // Cópia versionada — PWA/Android/CDN ignoram ?v= no manifest; URL nova força refresh.
+  const versioned = name.replace(/(\.[a-z0-9]+)$/i, `.v${ASSET_VERSION}$1`);
+  fs.writeFileSync(path.join(OUT_DIR, versioned), buf);
+  return versioned;
+}
+
+function stampManifestIcons() {
+  const manifestPath = path.join(ROOT, 'manifest.json');
+  if (!fs.existsSync(manifestPath)) return;
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+  const v = ASSET_VERSION;
+  manifest.icons = [
+    {
+      src: `/imagens/icon-192.v${v}.png`,
+      sizes: '192x192',
+      type: 'image/png',
+      purpose: 'any'
+    },
+    {
+      src: `/imagens/icon-512.v${v}.png`,
+      sizes: '512x512',
+      type: 'image/png',
+      purpose: 'any'
+    },
+    {
+      src: `/imagens/icon-512-maskable.v${v}.png`,
+      sizes: '512x512',
+      type: 'image/png',
+      purpose: 'maskable'
+    }
+  ];
+  fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
+  console.log(`  → manifest.json ícones v${v}`);
+}
+
+function stampTwaIconUrls() {
+  const twaPath = path.join(ROOT, 'deploy', 'android', 'twa-manifest.json');
+  if (!fs.existsSync(twaPath)) return;
+  const twa = JSON.parse(fs.readFileSync(twaPath, 'utf8'));
+  const base = 'https://inspetorbudganja.com.br/imagens';
+  const v = ASSET_VERSION;
+  twa.iconUrl = `${base}/icon-512.v${v}.png`;
+  twa.maskableIconUrl = `${base}/icon-512-maskable.v${v}.png`;
+  twa.monochromeIconUrl = `${base}/icon-512.v${v}.png`;
+  fs.writeFileSync(twaPath, JSON.stringify(twa, null, 2) + '\n');
+  console.log(`  → twa-manifest.json ícones v${v}`);
 }
 
 async function main() {
   if (!fs.existsSync(SOURCE)) {
     throw new Error('Ficheiro em falta: imagens/iconsite.png ou imagens/app-icon.svg');
   }
-  console.log(`Fonte de ícones: ${path.basename(SOURCE)}`);
+  console.log(`Fonte de ícones: ${path.basename(SOURCE)} (v${ASSET_VERSION})`);
 
   const sharp = await loadSharp();
   fs.mkdirSync(OUT_DIR, { recursive: true });
@@ -129,22 +186,43 @@ async function main() {
     16: await buildPaddedIcon(sharp, 16, PAD_FAVICON)
   };
 
-  fs.writeFileSync(path.join(OUT_DIR, 'icon-512.png'), app[512]);
-  fs.writeFileSync(path.join(OUT_DIR, 'icon-512-maskable.png'), maskable);
-  fs.writeFileSync(path.join(OUT_DIR, 'icon-192.png'), app[192]);
-  fs.writeFileSync(path.join(OUT_DIR, 'apple-touch-icon.png'), app[180]);
-  fs.writeFileSync(path.join(OUT_DIR, 'favicon-48.png'), mark[48]);
-  fs.writeFileSync(path.join(OUT_DIR, 'favicon-32.png'), mark[32]);
-  fs.writeFileSync(path.join(OUT_DIR, 'favicon-16.png'), mark[16]);
+  writeBoth('icon-512.png', app[512]);
+  writeBoth('icon-512-maskable.png', maskable);
+  writeBoth('icon-192.png', app[192]);
+  writeBoth('apple-touch-icon.png', app[180]);
+  writeBoth('favicon-48.png', mark[48]);
+  writeBoth('favicon-32.png', mark[32]);
+  writeBoth('favicon-16.png', mark[16]);
   fs.writeFileSync(FAVICON_SVG, buildFaviconSvg(mark[64].toString('base64')));
+  const faviconSvgVersioned = path.join(ROOT, `favicon.v${ASSET_VERSION}.svg`);
+  fs.writeFileSync(faviconSvgVersioned, buildFaviconSvg(mark[64].toString('base64')));
+  for (const name of fs.readdirSync(ROOT)) {
+    const m = name.match(/^favicon\.v(\d+)\.svg$/i);
+    if (m && m[1] !== String(ASSET_VERSION)) {
+      try { fs.unlinkSync(path.join(ROOT, name)); } catch (_) { /* ignore */ }
+    }
+  }
   await writeIco(mark);
 
-  // Header / menu: emblema completo com margem (não crop circular agressivo no ficheiro)
-  fs.writeFileSync(path.join(OUT_DIR, 'app-icon.png'), await buildPaddedIcon(sharp, 192, PAD_FAVICON));
+  writeBoth('app-icon.png', await buildPaddedIcon(sharp, 192, PAD_FAVICON));
+
+  stampManifestIcons();
+  stampTwaIconUrls();
+
+  // Limpar cópias versionadas antigas (mantém só a versão actual).
+  for (const name of fs.readdirSync(OUT_DIR)) {
+    const m = name.match(/\.(v)(\d+)\.(png)$/i);
+    if (!m) continue;
+    if (m[2] !== String(ASSET_VERSION)) {
+      try {
+        fs.unlinkSync(path.join(OUT_DIR, name));
+      } catch (_) { /* ignore */ }
+    }
+  }
 
   console.log('Ícones gerados a partir de imagens/' + path.basename(SOURCE));
-  console.log('  → icon-192/512 + apple-touch (padding ' + Math.round(PAD_ANY * 100) + '%)');
-  console.log('  → icon-512-maskable (padding ' + Math.round(PAD_MASKABLE * 100) + '%)');
+  console.log('  → icon-192/512 (+ .v' + ASSET_VERSION + ') padding ' + Math.round(PAD_ANY * 100) + '%');
+  console.log('  → icon-512-maskable (+ versionado)');
   console.log('  → favicon-*.png, favicon.svg, favicon.ico, app-icon.png');
 }
 

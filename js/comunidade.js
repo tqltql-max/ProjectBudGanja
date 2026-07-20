@@ -351,12 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (plantFile) plantFile.value = '';
         if (plantCaption) plantCaption.value = '';
         if (plantPreviewWrap) plantPreviewWrap.hidden = true;
-        feedKind = 'plant_id';
-        filterBtns.forEach((btn) => {
-          const active = btn.getAttribute('data-kind') === 'plant_id';
-          btn.classList.toggle('is-active', active);
-          btn.setAttribute('aria-selected', active ? 'true' : 'false');
-        });
+        activateFilterTab(filterBtns.find((b) => b.getAttribute('data-kind') === 'plant_id') || filterBtns[0]);
         nextCursor = null;
         await loadFeed(false);
         if (feedEl) feedEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -368,14 +363,44 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  function activateFilterTab(btn) {
+    if (!btn) return;
+    feedKind = btn.getAttribute('data-kind') || '';
+    filterBtns.forEach((b) => {
+      const active = b === btn;
+      b.classList.toggle('is-active', active);
+      b.setAttribute('aria-selected', active ? 'true' : 'false');
+      b.tabIndex = active ? 0 : -1;
+    });
+    if (feedEl) {
+      feedEl.setAttribute('aria-labelledby', btn.id || 'comunidade-tab-all');
+    }
+  }
+
+  const filterList = document.querySelector('.comunidade-filters');
+  if (filterList) {
+    filterList.addEventListener('keydown', (e) => {
+      const keys = ['ArrowLeft', 'ArrowRight', 'Home', 'End'];
+      if (!keys.includes(e.key)) return;
+      const current = document.activeElement;
+      const idx = filterBtns.indexOf(current);
+      if (idx < 0) return;
+      e.preventDefault();
+      let next = idx;
+      if (e.key === 'ArrowRight') next = (idx + 1) % filterBtns.length;
+      if (e.key === 'ArrowLeft') next = (idx - 1 + filterBtns.length) % filterBtns.length;
+      if (e.key === 'Home') next = 0;
+      if (e.key === 'End') next = filterBtns.length - 1;
+      activateFilterTab(filterBtns[next]);
+      filterBtns[next].focus();
+      nextCursor = null;
+      void loadFeed(false);
+    });
+  }
+
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
-      feedKind = btn.getAttribute('data-kind') || '';
-      filterBtns.forEach((b) => {
-        const active = b === btn;
-        b.classList.toggle('is-active', active);
-        b.setAttribute('aria-selected', active ? 'true' : 'false');
-      });
+      activateFilterTab(btn);
       nextCursor = null;
       void loadFeed(false);
     });

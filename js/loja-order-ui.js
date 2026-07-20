@@ -39,7 +39,7 @@
       '<aside class="loja-order-card">' +
       '<div class="loja-order-card-inner">' +
       '<div class="loja-order-brand" aria-hidden="true">' +
-      '<img src="/imagens/icon-192.png" alt="" class="loja-order-brand-icon" width="40" height="40" loading="lazy">' +
+      '<img src="/imagens/icon-192.v' + ((typeof ASSET_V !== 'undefined' && ASSET_V) ? ASSET_V : '288') + '.png" alt="" class="loja-order-brand-icon" width="40" height="40" loading="lazy">' +
       '<span class="loja-order-brand-name">Inspetor BudGanja</span>' +
       '</div>' +
       '<p class="loja-order-badge">' + escapeHtml(offer.badge || 'Montagem no laboratório') + '</p>' +

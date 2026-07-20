@@ -131,6 +131,8 @@ CREATE TABLE IF NOT EXISTS site_settings (
   youtube_channel_label TEXT NOT NULL DEFAULT '',
   youtube_jardim_url TEXT NOT NULL DEFAULT '',
   youtube_jardim_label TEXT NOT NULL DEFAULT '',
+  spotify_podcast_url TEXT NOT NULL DEFAULT '',
+  spotify_podcast_label TEXT NOT NULL DEFAULT '',
   updated_at TEXT NOT NULL
 );
 

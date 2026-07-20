@@ -85,6 +85,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   const cultivoEditSubstrate = document.getElementById('cultivo-edit-substrate');
   const cultivoEditStatus = document.getElementById('cultivo-edit-status');
   const cultivoEditConfirm = document.getElementById('cultivo-edit-confirm');
+  const cultivoEditPhoto = document.getElementById('cultivo-edit-photo');
+  const cultivoEditCapturePhoto = document.getElementById('cultivo-edit-capture-photo');
+  const cultivoEditSelectPhotoBtn = document.getElementById('cultivo-edit-select-photo-btn');
+  const cultivoEditCapturePhotoBtn = document.getElementById('cultivo-edit-capture-photo-btn');
+  const cultivoEditPhotoPreview = document.getElementById('cultivo-edit-photo-preview');
   const growDeleteBtn = document.getElementById('perfil-grow-delete');
   const growPrintBtn = document.getElementById('perfil-grow-print');
   const reminderAddForm = document.getElementById('perfil-reminder-add');
@@ -110,6 +115,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   const growActionsPanel = document.getElementById('perfil-grow-actions-panel');
   const cultivoWizardEnvironment = document.getElementById('cultivo-wizard-environment');
   const cultivoWizardSubstrate = document.getElementById('cultivo-wizard-substrate');
+  const cultivoWizardPhoto = document.getElementById('cultivo-wizard-photo');
+  const cultivoWizardCapturePhoto = document.getElementById('cultivo-wizard-capture-photo');
+  const cultivoWizardSelectPhotoBtn = document.getElementById('cultivo-wizard-select-photo-btn');
+  const cultivoWizardCapturePhotoBtn = document.getElementById('cultivo-wizard-capture-photo-btn');
+  const cultivoWizardPhotoPreview = document.getElementById('cultivo-wizard-photo-preview');
   const cultivoMetricModal = document.getElementById('cultivo-metric-modal');
   const cultivoMetricModalTitle = document.getElementById('cultivo-metric-modal-title');
   const cultivoMetricModalHint = document.getElementById('cultivo-metric-modal-hint');
@@ -183,6 +193,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   let editingGrowId = null;
   let selectedEntryAction = '';
   let pendingEntryPhotoFiles = [];
+  let pendingWizardPhotoFile = null;
+  let pendingEditPhotoFile = null;
+  let editExistingCoverUrl = '';
+  let lastDetailGrowId = null;
   let submissionStatusByGrow = null;
   let sectionNavBound = false;
   let activeSectionTab = 'diario';
@@ -321,7 +335,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const hasSpecies = !!(log.species && String(log.species).trim());
     const hasPhotos = (log.entries || []).some((entry) => Array.isArray(entry.photos) && entry.photos.length);
     const items = [
-      { ok: !!(log.name && String(log.name).trim()), label: 'Nome da pesquisa definido', required: true },
+      { ok: !!(log.name && String(log.name).trim()), label: 'Nome do diário definido', required: true },
       { ok: publishable, label: 'Pelo menos 1 registo no diário ou roteiro com 20+ caracteres', required: true },
       { ok: hasSpecies, label: 'Espécie ou linha indicada (recomendado)', required: false },
       { ok: hasPhotos, label: 'Fotos no diário (opcional, melhora a publicação)', required: false }
@@ -616,6 +630,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (cultivoWizardPlants) cultivoWizardPlants.value = '1';
         if (cultivoWizardEnvironment) cultivoWizardEnvironment.value = '';
         if (cultivoWizardSubstrate) cultivoWizardSubstrate.value = '';
+        clearWizardPhoto();
         setWizardDefaultsFromProfile(user && user.profile);
         setWizardStatus('');
         requestAnimationFrame(() => { if (cultivoWizardName) cultivoWizardName.focus(); });
@@ -792,8 +807,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const totals = computeHubTotals(profile, logs);
     cultivoHubStats.hidden = false;
     cultivoHubStats.innerHTML =
-      '<button type="button" class="perfil-hub-chip cultivo-hub-stat" data-hub-stat="researches" aria-label="Ver pesquisas"><strong>' + totals.researches + '</strong> ' +
-      (totals.researches === 1 ? 'pesquisa' : 'pesquisas') + '</button>' +
+      '<button type="button" class="perfil-hub-chip cultivo-hub-stat" data-hub-stat="researches" aria-label="Ver diários"><strong>' + totals.researches + '</strong> ' +
+      (totals.researches === 1 ? 'diário' : 'diários') + '</button>' +
       '<button type="button" class="perfil-hub-chip cultivo-hub-stat" data-hub-stat="entries" aria-label="Abrir diário"><strong>' + totals.entries + '</strong> ' +
       (totals.entries === 1 ? 'registo' : 'registos') + '</button>' +
       '<button type="button" class="perfil-hub-chip cultivo-hub-stat' + (totals.tasks > 0 ? ' cultivo-hub-stat--alert' : '') + '" data-hub-stat="tasks" aria-label="Abrir tarefas"><strong>' + totals.tasks + '</strong> ' +
@@ -833,7 +848,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           done: !!task.done,
           actionType: task.actionType || '',
           growId: task.growId,
-          growName: grow && grow.name ? grow.name : 'Pesquisa'
+          growName: grow && grow.name ? grow.name : 'Diário'
         };
       })
       .sort((a, b) => {
@@ -871,7 +886,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       '<span><strong>' + escapeHtml(task.label) + '</strong> · ' + escapeHtml(task.growName) +
       ' <span class="perfil-plano-due' + (isTaskOverdue(task) ? ' is-overdue' : '') + '">' + escapeHtml(formatTaskDueLabel(task)) + '</span></span>' +
       '</label>' +
-      '<button type="button" class="cultivo-section-nav-btn cultivo-task-open" data-grow-id="' + escapeHtml(task.growId) + '">Abrir pesquisa</button>' +
+      '<button type="button" class="cultivo-section-nav-btn cultivo-task-open" data-grow-id="' + escapeHtml(task.growId) + '">Abrir diário</button>' +
       '</li>'
     ).join('');
 
@@ -912,10 +927,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     ).join('');
     const updatedLine = formatRelativeUpdate(log.updatedAt || log.createdAt);
     const tasksStatClass = openTasks > 0 ? ' cultivo-research-stat--alert' : '';
+    const coverUrl = growCoverPhotoUrl(log);
+    const coverHtml = coverUrl
+      ? '<div class="cultivo-research-card-cover"><img src="' + escapeHtml(coverUrl) + '" alt="" loading="lazy" decoding="async"></div>'
+      : '';
 
     return (
       '<article class="card cultivo-research-card cultivo-research-card--' + escapeHtml(phase) + '" role="listitem" data-grow-id="' + escapeHtml(log.id) + '">' +
-      '<a class="cultivo-research-card-link" href="/cultivo/?grow=' + encodeURIComponent(log.id) + '" data-grow-id="' + escapeHtml(log.id) + '" aria-label="Abrir pesquisa ' + escapeHtml(log.name) + '">' +
+      '<a class="cultivo-research-card-link" href="/cultivo/?grow=' + encodeURIComponent(log.id) + '" data-grow-id="' + escapeHtml(log.id) + '" aria-label="Abrir diário ' + escapeHtml(log.name) + '">' +
+      coverHtml +
       '<div class="cultivo-research-card-top">' +
       '<div class="card-icon cultivo-research-phase-icon" aria-hidden="true">' + phaseIcon + '</div>' +
       '<div class="cultivo-research-card-heading">' +
@@ -926,7 +946,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       (statusHtml ? '<div class="cultivo-research-card-status-wrap">' + statusHtml + '</div>' : '') +
       '</div>' +
       (tagsHtml ? '<div class="cultivo-research-card-tags">' + tagsHtml + '</div>' : '') +
-      '<div class="cultivo-research-card-stats" role="group" aria-label="Resumo da pesquisa">' +
+      '<div class="cultivo-research-card-stats" role="group" aria-label="Resumo do diário">' +
       '<div class="cultivo-research-stat"><span class="cultivo-research-stat-label">Dia</span><span class="cultivo-research-stat-value">' + dayNum + '</span></div>' +
       '<div class="cultivo-research-stat"><span class="cultivo-research-stat-label">Registos</span><span class="cultivo-research-stat-value">' + entryCount + '</span></div>' +
       '<div class="cultivo-research-stat"><span class="cultivo-research-stat-label">Plantas</span><span class="cultivo-research-stat-value">' + plants + '</span></div>' +
@@ -935,7 +955,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       '<div class="cultivo-research-card-footer">' +
       '<p class="cultivo-research-card-meta">Plantio ' + escapeHtml(formatDate(log.plantedAt)) +
       (updatedLine ? ' · ' + escapeHtml(updatedLine) : '') + '</p>' +
-      '<span class="cultivo-research-card-cta">Abrir pesquisa<span class="cultivo-research-card-arrow" aria-hidden="true">→</span></span>' +
+      '<span class="cultivo-research-card-cta">Abrir diário<span class="cultivo-research-card-arrow" aria-hidden="true">→</span></span>' +
       '</div>' +
       '</a>' +
       '<div class="cultivo-research-card-quick">' +
@@ -1023,7 +1043,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (cultivoHubSummary) {
       cultivoHubSummary.textContent = hasLogs
         ? ''
-        : 'Toque em «Nova pesquisa» para começar o primeiro diário de campo.';
+        : 'Toque em «Novo diário» para começar o primeiro registo de campo.';
     }
     if (!cultivoHubList) return;
     if (!hasLogs) {
@@ -1067,7 +1087,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         ).join('');
         return tags ? '<div class="cultivo-research-card-tags cultivo-grow-header-tags">' + tags + '</div>' : '';
       })() +
-      '<div class="cultivo-research-card-stats cultivo-grow-header-stats" role="group" aria-label="Resumo da pesquisa">' +
+      '<div class="cultivo-research-card-stats cultivo-grow-header-stats" role="group" aria-label="Resumo do diário">' +
       '<div class="cultivo-research-stat"><span class="cultivo-research-stat-label">Dia</span><span class="cultivo-research-stat-value">' + daysSincePlanted(log.plantedAt) + '</span></div>' +
       '<div class="cultivo-research-stat"><span class="cultivo-research-stat-label">Registos</span><span class="cultivo-research-stat-value">' + entryCount + '</span></div>' +
       '<div class="cultivo-research-stat"><span class="cultivo-research-stat-label">Plantas</span><span class="cultivo-research-stat-value">' + plants + '</span></div>' +
@@ -1114,13 +1134,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  async function createGrowFromWizard(name, phase, plantCount, species, environment, substrate, plantedDate) {
+  async function createGrowFromWizard(name, phase, plantCount, species, environment, substrate, plantedDate, photoUrl) {
     if (!user || !user.profile) return null;
     const env = environment || (user.profile.environment || '');
     const sub = substrate || (user.profile.substrate || '');
     const chosenDate = plantedDate || todayDateInputValue();
     const plantedAt = chosenDate + 'T12:00:00';
     const log = createGrowLogObject(name, plantedAt, phase, plantCount, species, env, sub);
+    const coverUrl = String(photoUrl || '').trim();
+    if (coverUrl.indexOf('/uploads/') === 0) {
+      log.entries = [createGrowEntry('Foto inicial do diário.', {
+        date: chosenDate,
+        actionType: 'obs',
+        source: 'system',
+        photos: [coverUrl]
+      })];
+    }
     ensureGrowLogs(user.profile);
     user.profile.growLogs.unshift(log);
     user.profile.activeGrowLogId = log.id;
@@ -1509,7 +1538,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       '<p class="perfil-grow-postsave-title">Registo guardado. O que deseja fazer agora?</p>' +
       '<div class="perfil-grow-postsave-buttons">' +
       '<button type="button" class="botao botao-outline botao-sm" data-postsave-action="new">Adicionar outro registo</button>' +
-      '<button type="button" class="botao botao-sm" data-postsave-action="hub">Voltar às pesquisas</button>' +
+      '<button type="button" class="botao botao-sm" data-postsave-action="hub">Voltar aos diários</button>' +
       '</div>';
     el.hidden = false;
     el.querySelectorAll('button[data-postsave-action]').forEach((btn) => {
@@ -1592,8 +1621,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (nameEl) {
       if (IS_CULTIVO_PAGE) {
         nameEl.textContent = isUserProfileComplete(data)
-          ? firstName(data.profile, data.name) + ' · pesquisas'
-          : 'Minhas pesquisas';
+          ? firstName(data.profile, data.name) + ' · diário'
+          : 'Diário de Cultivo';
       } else {
         nameEl.textContent = isUserProfileComplete(data)
           ? 'Olá, ' + firstName(data.profile, data.name) + '!'
@@ -1785,7 +1814,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const others = (user.profile.growLogs || []).filter((item) => item.id !== current.id);
     if (!select || !output) return;
     if (!others.length) {
-      output.innerHTML = '<p class="perfil-plano-empty">Crie outra pesquisa para comparar métricas.</p>';
+      output.innerHTML = '<p class="perfil-plano-empty">Crie outro diário para comparar métricas.</p>';
       openCultivoModal('cultivo-compare-modal');
       return;
     }
@@ -1919,6 +1948,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (el) el.hidden = true;
     if (id === 'cultivo-edit-modal') {
       editingGrowId = null;
+      clearEditPhoto();
       setEditModalStatus('');
     }
     if (id === 'cultivo-community-modal') {
@@ -2002,7 +2032,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         max: base.max,
         step: 0.1,
         unit: base.unit,
-        hint: 'Fase da pesquisa: ' + phaseLabel + '.',
+        hint: 'Fase do diário: ' + phaseLabel + '.',
         idealLabel: 'Faixa ideal: ' + min + '-' + max + ' mS/cm',
         idealMin: min,
         idealMax: max,
@@ -2033,7 +2063,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         max: base.max,
         step: 1,
         unit: base.unit,
-        hint: 'Fase da pesquisa: ' + phaseLabel + '.',
+        hint: 'Fase do diário: ' + phaseLabel + '.',
         idealLabel: 'Dia ideal: ' + min + '-' + max + '°C',
         idealMin: min,
         idealMax: max,
@@ -2063,7 +2093,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       max: base.max,
       step: 1,
       unit: base.unit,
-      hint: 'Fase da pesquisa: ' + phaseLabel + '.',
+      hint: 'Fase do diário: ' + phaseLabel + '.',
       idealLabel: 'Faixa ideal: ' + rhMin + '-' + rhMax + '%',
       idealMin: rhMin,
       idealMax: rhMax,
@@ -2200,6 +2230,180 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
+  function clearWizardPhoto() {
+    pendingWizardPhotoFile = null;
+    if (cultivoWizardPhoto) cultivoWizardPhoto.value = '';
+    if (cultivoWizardCapturePhoto) cultivoWizardCapturePhoto.value = '';
+    renderWizardPhotoPreview();
+  }
+
+  function renderWizardPhotoPreview() {
+    if (!cultivoWizardPhotoPreview) return;
+    if (!pendingWizardPhotoFile) {
+      cultivoWizardPhotoPreview.innerHTML = '';
+      return;
+    }
+    const objectUrl = URL.createObjectURL(pendingWizardPhotoFile);
+    cultivoWizardPhotoPreview.innerHTML =
+      '<figure class="perfil-entry-photo-thumb">' +
+      '<img src="' + escapeHtml(objectUrl) + '" alt="Pré-visualização da foto inicial">' +
+      '<button type="button" class="perfil-entry-photo-remove" id="cultivo-wizard-photo-remove" aria-label="Remover foto">×</button>' +
+      '</figure>';
+    const removeBtn = document.getElementById('cultivo-wizard-photo-remove');
+    if (removeBtn) {
+      removeBtn.addEventListener('click', () => {
+        clearWizardPhoto();
+        setWizardStatus('Foto removida.');
+      });
+    }
+  }
+
+  async function setWizardPhotoFromFiles(incoming) {
+    const files = Array.isArray(incoming) ? incoming : [];
+    const file = files.find((item) => isEntryImageFile(item));
+    if (!file) {
+      setWizardStatus('Escolha uma foto (JPEG, PNG ou WebP).', true);
+      return;
+    }
+    if (file.size > ENTRY_MEDIA_MAX_IMAGE_RAW_BYTES) {
+      setWizardStatus('Imagem muito grande (máx. 25 MB antes da otimização).', true);
+      return;
+    }
+    setWizardStatus('A otimizar foto…');
+    try {
+      const prepared = await prepareEntryImageForUpload(file);
+      if (prepared.size > ENTRY_MEDIA_MAX_IMAGE_BYTES) {
+        setWizardStatus('Imagem muito grande mesmo após otimização (máx. 6 MB).', true);
+        return;
+      }
+      pendingWizardPhotoFile = prepared;
+      renderWizardPhotoPreview();
+      setWizardStatus('Foto pronta para o diário.');
+    } catch (err) {
+      setWizardStatus((err && err.message) || 'Não foi possível preparar a foto.', true);
+    }
+  }
+
+  function clearEditPhoto() {
+    pendingEditPhotoFile = null;
+    editExistingCoverUrl = '';
+    if (cultivoEditPhoto) cultivoEditPhoto.value = '';
+    if (cultivoEditCapturePhoto) cultivoEditCapturePhoto.value = '';
+    renderEditPhotoPreview();
+  }
+
+  function renderEditPhotoPreview() {
+    if (!cultivoEditPhotoPreview) return;
+    if (pendingEditPhotoFile) {
+      const objectUrl = URL.createObjectURL(pendingEditPhotoFile);
+      cultivoEditPhotoPreview.innerHTML =
+        '<figure class="perfil-entry-photo-thumb">' +
+        '<img src="' + escapeHtml(objectUrl) + '" alt="Nova foto do diário">' +
+        '<button type="button" class="perfil-entry-photo-remove" id="cultivo-edit-photo-remove" aria-label="Remover foto nova">×</button>' +
+        '</figure>';
+    } else if (editExistingCoverUrl) {
+      cultivoEditPhotoPreview.innerHTML =
+        '<figure class="perfil-entry-photo-thumb">' +
+        '<img src="' + escapeHtml(editExistingCoverUrl) + '" alt="Foto actual do diário" loading="lazy">' +
+        '<button type="button" class="perfil-entry-photo-remove" id="cultivo-edit-photo-remove" aria-label="Remover foto">×</button>' +
+        '</figure>';
+    } else {
+      cultivoEditPhotoPreview.innerHTML = '';
+      return;
+    }
+    const removeBtn = document.getElementById('cultivo-edit-photo-remove');
+    if (removeBtn) {
+      removeBtn.addEventListener('click', () => {
+        if (pendingEditPhotoFile) {
+          pendingEditPhotoFile = null;
+          if (cultivoEditPhoto) cultivoEditPhoto.value = '';
+          if (cultivoEditCapturePhoto) cultivoEditCapturePhoto.value = '';
+          renderEditPhotoPreview();
+          setEditModalStatus(editExistingCoverUrl ? 'Nova foto cancelada — mantém a actual.' : 'Foto removida.');
+          return;
+        }
+        editExistingCoverUrl = '';
+        renderEditPhotoPreview();
+        setEditModalStatus('Foto será removida ao guardar.');
+      });
+    }
+  }
+
+  async function setEditPhotoFromFiles(incoming) {
+    const files = Array.isArray(incoming) ? incoming : [];
+    const file = files.find((item) => isEntryImageFile(item));
+    if (!file) {
+      setEditModalStatus('Escolha uma foto (JPEG, PNG ou WebP).', true);
+      return;
+    }
+    if (file.size > ENTRY_MEDIA_MAX_IMAGE_RAW_BYTES) {
+      setEditModalStatus('Imagem muito grande (máx. 25 MB antes da otimização).', true);
+      return;
+    }
+    setEditModalStatus('A otimizar foto…');
+    try {
+      const prepared = await prepareEntryImageForUpload(file);
+      if (prepared.size > ENTRY_MEDIA_MAX_IMAGE_BYTES) {
+        setEditModalStatus('Imagem muito grande mesmo após otimização (máx. 6 MB).', true);
+        return;
+      }
+      pendingEditPhotoFile = prepared;
+      renderEditPhotoPreview();
+      setEditModalStatus('Nova foto pronta — guarde para aplicar.');
+    } catch (err) {
+      setEditModalStatus((err && err.message) || 'Não foi possível preparar a foto.', true);
+    }
+  }
+
+  function applyCoverPhotoToGrow(log, photoUrl) {
+    if (!log) return;
+    const url = String(photoUrl || '').trim();
+    if (!url || url.indexOf('/uploads/') !== 0) return;
+    if (!Array.isArray(log.entries)) log.entries = [];
+    const initial = log.entries.find((entry) =>
+      entry && entry.source === 'system' && String(entry.text || '').indexOf('Foto inicial') === 0
+    );
+    if (initial) {
+      initial.photos = [url];
+      return;
+    }
+    const withPhoto = log.entries.find((entry) => Array.isArray(entry.photos) && entry.photos.some((p) =>
+      String(p || '').startsWith('/uploads/') && !isVideoUrl(p)
+    ));
+    if (withPhoto) {
+      const photos = Array.isArray(withPhoto.photos) ? withPhoto.photos.slice() : [];
+      const idx = photos.findIndex((p) => String(p || '').startsWith('/uploads/') && !isVideoUrl(p));
+      if (idx >= 0) photos[idx] = url;
+      else photos.unshift(url);
+      withPhoto.photos = photos.slice(0, 4);
+      return;
+    }
+    const plantedDate = plantedAtToDateInput(log.plantedAt) || todayDateInputValue();
+    log.entries.unshift(createGrowEntry('Foto inicial do diário.', {
+      date: plantedDate,
+      actionType: 'obs',
+      source: 'system',
+      photos: [url]
+    }));
+  }
+
+  function removeCoverPhotoFromGrow(log) {
+    if (!log || !Array.isArray(log.entries)) return;
+    const initial = log.entries.find((entry) =>
+      entry && entry.source === 'system' && String(entry.text || '').indexOf('Foto inicial') === 0
+    );
+    if (initial) {
+      log.entries = log.entries.filter((entry) => entry !== initial);
+      return;
+    }
+    const coverUrl = growCoverPhotoUrl(log);
+    if (!coverUrl) return;
+    log.entries.forEach((entry) => {
+      if (!Array.isArray(entry.photos)) return;
+      entry.photos = entry.photos.filter((url) => String(url || '') !== coverUrl);
+    });
+  }
+
   function fillEntryFormFromEntry(entry) {
     if (!entry) return;
     editingEntryId = entry.id;
@@ -2264,22 +2468,22 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     return new Promise((resolve, reject) => {
       const img = new Image();
-      const objectUrl = URL.createObjectURL(file);
+      let objectUrl = '';
       let settled = false;
       function finish(result) {
         if (settled) return;
         settled = true;
-        URL.revokeObjectURL(objectUrl);
+        if (objectUrl) URL.revokeObjectURL(objectUrl);
         resolve(result);
       }
       function fail(message) {
         if (settled) return;
         settled = true;
-        URL.revokeObjectURL(objectUrl);
+        if (objectUrl) URL.revokeObjectURL(objectUrl);
         reject(new Error(message || 'Não foi possível ler esta foto.'));
       }
 
-      img.onload = () => {
+      function processLoadedImage() {
         let width = img.naturalWidth || img.width;
         let height = img.naturalHeight || img.height;
         if (!width || !height) {
@@ -2335,12 +2539,34 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         encodeAt(0);
+      }
+
+      img.onload = processLoadedImage;
+      img.onerror = () => {
+        // Fallback: data: URLs já são permitidas na CSP (blob: pode falhar em caches antigos).
+        if (objectUrl) {
+          URL.revokeObjectURL(objectUrl);
+          objectUrl = '';
+        }
+        const reader = new FileReader();
+        reader.onload = () => {
+          img.onerror = () => fail(
+            'Não foi possível ler esta foto no telemóvel. Tire de novo em JPEG ou escolha «Carregar mídia».'
+          );
+          img.src = String(reader.result || '');
+        };
+        reader.onerror = () => fail(
+          'Não foi possível ler esta foto no telemóvel. Tire de novo em JPEG ou escolha «Carregar mídia».'
+        );
+        reader.readAsDataURL(file);
       };
 
-      img.onerror = () => fail(
-        'Não foi possível ler esta foto no telemóvel. Tire de novo em JPEG ou escolha «Carregar mídia».'
-      );
-      img.src = objectUrl;
+      try {
+        objectUrl = URL.createObjectURL(file);
+        img.src = objectUrl;
+      } catch (err) {
+        img.onerror();
+      }
     });
   }
 
@@ -2361,6 +2587,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (isVideo) {
         if (file.size > ENTRY_MEDIA_MAX_VIDEO_BYTES) {
           error = 'Vídeo muito grande (máx. 25 MB).';
+          continue;
+        }
+        const videoType = String(file.type || '').toLowerCase();
+        if (videoType && !/^video\/(mp4|webm|quicktime)$/i.test(videoType)) {
+          error = 'Use vídeo em MP4, WebM ou MOV.';
           continue;
         }
         valid.push(file);
@@ -2701,6 +2932,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     return photos.filter((url) => String(url || '').startsWith('/uploads/') && !isVideoUrl(url));
   }
 
+  function growCoverPhotoUrl(log) {
+    const entries = Array.isArray(log && log.entries) ? log.entries : [];
+    for (let i = 0; i < entries.length; i++) {
+      const photos = entryPhotoUrls(entries[i].photos);
+      if (photos.length) return photos[0];
+    }
+    return '';
+  }
+
   function shareKey(entryId, photoUrl) {
     return String(entryId || '') + '|' + String(photoUrl || '');
   }
@@ -2963,7 +3203,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (log) return log;
     const name = defaultName
       || (profile.genetics && String(profile.genetics).trim())
-      || 'Minha pesquisa';
+      || 'Meu diário';
     log = createGrowLogObject(name, new Date().toISOString(), getEffectivePhaseFromProfileOnly(profile));
     profile.growLogs.push(log);
     profile.activeGrowLogId = log.id;
@@ -3011,8 +3251,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!log) return;
     const phaseLabel = formatProfileValue('phase', log.phase);
     if (growDetailPhase) growDetailPhase.value = log.phase || 'germinacao';
-    if (growEntryDate) growEntryDate.value = todayDateInputValue();
-    clearEntryForm();
+    // Só limpar o formulário ao mudar de diário — refreshes/autosave não devem apagar mídia pendente.
+    if (lastDetailGrowId !== log.id) {
+      lastDetailGrowId = log.id;
+      clearEntryForm();
+    } else if (growEntryDate && !growEntryDate.value) {
+      growEntryDate.value = todayDateInputValue();
+    }
     initEntryTypeButtons();
     initEntryMetricPickers();
 
@@ -3025,7 +3270,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const groups = groupEntriesByGrowWeek(log, entries);
         growEntriesEl.innerHTML = groups.map(([weekNum, weekEntries]) =>
           '<li class="perfil-grow-week-group">' +
-          '<h3 class="perfil-grow-week-title">Semana ' + weekNum + ' da pesquisa · ' + growWeekDayRange(weekNum) + '</h3>' +
+          '<h3 class="perfil-grow-week-title">Semana ' + weekNum + ' do diário · ' + growWeekDayRange(weekNum) + '</h3>' +
           '<ul class="perfil-grow-week-entries">' +
           weekEntries.map((entry) => renderEntryHtml(entry)).join('') +
           '</ul></li>'
@@ -3324,6 +3569,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (cultivoEditEnvironment) cultivoEditEnvironment.value = log.environment || '';
     if (cultivoEditSubstrate) cultivoEditSubstrate.value = log.substrate || '';
     setEditGrowPhase(log.phase || 'germinacao');
+    pendingEditPhotoFile = null;
+    editExistingCoverUrl = growCoverPhotoUrl(log);
+    if (cultivoEditPhoto) cultivoEditPhoto.value = '';
+    if (cultivoEditCapturePhoto) cultivoEditCapturePhoto.value = '';
+    renderEditPhotoPreview();
     setEditModalStatus('');
     openCultivoModal('cultivo-edit-modal');
     if (cultivoEditName) cultivoEditName.focus();
@@ -3355,6 +3605,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (isNaN(plants) || plants < 1) plants = 1;
     if (plants > 99) plants = 99;
 
+    const prevCoverUrl = growCoverPhotoUrl(log);
+    const shouldRemoveCover = !pendingEditPhotoFile && !editExistingCoverUrl && !!prevCoverUrl;
+    let newPhotoUrl = '';
+    if (cultivoEditConfirm) cultivoEditConfirm.disabled = true;
+    if (pendingEditPhotoFile) {
+      setEditModalStatus('A enviar foto…');
+      try {
+        newPhotoUrl = await uploadCultivoPhoto(pendingEditPhotoFile);
+      } catch (err) {
+        if (cultivoEditConfirm) cultivoEditConfirm.disabled = false;
+        setEditModalStatus((err && err.message) || 'Erro ao enviar a foto.', true);
+        return;
+      }
+    }
+
     const prevPlantedAt = log.plantedAt;
     const prevPhase = log.phase;
     log.name = name.slice(0, 80);
@@ -3365,6 +3630,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     log.environment = cultivoEditEnvironment ? String(cultivoEditEnvironment.value || '').trim().slice(0, 40) : '';
     log.substrate = cultivoEditSubstrate ? String(cultivoEditSubstrate.value || '').trim().slice(0, 80) : '';
     log.updatedAt = new Date().toISOString();
+
+    if (newPhotoUrl) {
+      applyCoverPhotoToGrow(log, newPhotoUrl);
+    } else if (shouldRemoveCover) {
+      removeCoverPhotoFromGrow(log);
+    }
 
     if (user.profile.activeGrowLogId === log.id || selectedGrowLogId === log.id) {
       syncPhaseFromActiveLog(user.profile);
@@ -3377,7 +3648,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       fillGrowSetupFields(log);
     }
 
-    if (cultivoEditConfirm) cultivoEditConfirm.disabled = true;
     setEditModalStatus('A guardar…');
     const statusTarget = growDetailStatus && cultivoGrowView && !cultivoGrowView.hidden ? growDetailStatus : null;
     const saved = await persistGrowLogs(statusTarget || cultivoEditStatus);
@@ -3386,8 +3656,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       setEditModalStatus('Não foi possível guardar. Tente de novo.', true);
       return;
     }
+    clearEditPhoto();
     closeCultivoModal('cultivo-edit-modal');
-    flashLiveStatus('Diário «' + log.name + '» actualizado.');
+    flashLiveStatus(newPhotoUrl
+      ? 'Diário «' + log.name + '» actualizado com nova foto.'
+      : shouldRemoveCover
+        ? 'Diário «' + log.name + '» actualizado (foto removida).'
+        : 'Diário «' + log.name + '» actualizado.');
     refreshUI();
   }
 
@@ -4625,20 +4900,34 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         if (cultivoWizardDate) cultivoWizardDate.focus();
         return;
       }
-      setWizardStatus('A criar pesquisa…');
       const submitBtn = document.getElementById('cultivo-wizard-submit');
       if (submitBtn) submitBtn.disabled = true;
       const species = cultivoWizardSpecies ? cultivoWizardSpecies.value.trim() : '';
       const environment = cultivoWizardEnvironment ? cultivoWizardEnvironment.value : '';
       const substrate = cultivoWizardSubstrate ? cultivoWizardSubstrate.value : '';
-      const log = await createGrowFromWizard(name, cultivoWizardPhase, plants, species, environment, substrate, plantedDate);
+      let photoUrl = '';
+      if (pendingWizardPhotoFile) {
+        setWizardStatus('A enviar foto…');
+        try {
+          photoUrl = await uploadCultivoPhoto(pendingWizardPhotoFile);
+        } catch (err) {
+          if (submitBtn) submitBtn.disabled = false;
+          setWizardStatus((err && err.message) || 'Erro ao enviar a foto.', true);
+          return;
+        }
+      }
+      setWizardStatus(photoUrl ? 'A criar diário com foto…' : 'A criar pesquisa…');
+      const log = await createGrowFromWizard(name, cultivoWizardPhase, plants, species, environment, substrate, plantedDate, photoUrl);
       if (submitBtn) submitBtn.disabled = false;
       if (!log) {
         setWizardStatus('Não foi possível guardar a pesquisa. Verifique a ligação e tente de novo.', true);
         return;
       }
+      clearWizardPhoto();
       setWizardStatus('');
-      flashLiveStatus('Pesquisa «' + log.name + '» criada e guardada.');
+      flashLiveStatus(photoUrl
+        ? 'Diário «' + log.name + '» criado com foto inicial.'
+        : 'Pesquisa «' + log.name + '» criada e guardada.');
       navigateCultivo({ view: 'grow', growId: log.id }, { replace: true });
     });
   }
@@ -4791,6 +5080,62 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
 
   if (growEntryPhotos) {
     growEntryPhotos.addEventListener('change', readEntryPhotoFilesFromInput);
+  }
+
+  if (cultivoWizardSelectPhotoBtn && cultivoWizardPhoto) {
+    cultivoWizardSelectPhotoBtn.addEventListener('click', () => {
+      cultivoWizardPhoto.click();
+    });
+  }
+
+  if (cultivoWizardPhoto) {
+    cultivoWizardPhoto.addEventListener('change', () => {
+      if (!cultivoWizardPhoto.files) return;
+      void setWizardPhotoFromFiles(Array.from(cultivoWizardPhoto.files));
+      cultivoWizardPhoto.value = '';
+    });
+  }
+
+  if (cultivoWizardCapturePhotoBtn && cultivoWizardCapturePhoto) {
+    cultivoWizardCapturePhotoBtn.addEventListener('click', () => {
+      cultivoWizardCapturePhoto.click();
+    });
+  }
+
+  if (cultivoWizardCapturePhoto) {
+    cultivoWizardCapturePhoto.addEventListener('change', () => {
+      if (!cultivoWizardCapturePhoto.files) return;
+      void setWizardPhotoFromFiles(Array.from(cultivoWizardCapturePhoto.files));
+      cultivoWizardCapturePhoto.value = '';
+    });
+  }
+
+  if (cultivoEditSelectPhotoBtn && cultivoEditPhoto) {
+    cultivoEditSelectPhotoBtn.addEventListener('click', () => {
+      cultivoEditPhoto.click();
+    });
+  }
+
+  if (cultivoEditPhoto) {
+    cultivoEditPhoto.addEventListener('change', () => {
+      if (!cultivoEditPhoto.files) return;
+      void setEditPhotoFromFiles(Array.from(cultivoEditPhoto.files));
+      cultivoEditPhoto.value = '';
+    });
+  }
+
+  if (cultivoEditCapturePhotoBtn && cultivoEditCapturePhoto) {
+    cultivoEditCapturePhotoBtn.addEventListener('click', () => {
+      cultivoEditCapturePhoto.click();
+    });
+  }
+
+  if (cultivoEditCapturePhoto) {
+    cultivoEditCapturePhoto.addEventListener('change', () => {
+      if (!cultivoEditCapturePhoto.files) return;
+      void setEditPhotoFromFiles(Array.from(cultivoEditCapturePhoto.files));
+      cultivoEditCapturePhoto.value = '';
+    });
   }
 
   if (growSelectMediaBtn && growEntryPhotos) {
