@@ -17,6 +17,7 @@
   <url><loc>https://inspetorbudganja.com.br/calculadoras/super-solo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/sorteios/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://inspetorbudganja.com.br/info/sobre.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/info/apresentacao-unifesp.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/info/contato.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/info/privacidade.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://inspetorbudganja.com.br/equipamentos/clonadora-6-estacas.html</loc><changefreq>yearly</changefreq><priority>0.75</priority></url>
@@ -24,8 +25,6 @@
   <url><loc>https://inspetorbudganja.com.br/equipamentos/manual-clonadora.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/equipamentos/manual-hidrocloradora.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/biblioteca/pesquisas/substratos.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-insumo-biobizz.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-loja-floraurbana.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-canal-movrecam.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-canal-canabinall.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>

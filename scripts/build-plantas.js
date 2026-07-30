@@ -132,7 +132,7 @@ ${cards}
 
         <p class="plantas-empty" id="plantas-empty" hidden>Nenhuma planta corresponde aos filtros.</p>
 
-        <p class="plantas-related"><a href="/biblioteca/unifesp/">Curso UNIFESP</a> · <a href="/biblioteca/inspecoes/">Inspeções</a> · <a href="/cultivo/">Diário de cultivo</a></p>`;
+        <p class="plantas-related"><a href="/biblioteca/unifesp/">Curso UNIFESP</a> · <a href="/biblioteca/inspecoes/">Inspeções</a> · <a href="/cultivo/">Diário de pesquisas</a></p>`;
 
   return pageShell({
     title: 'Plantas fitoterápicas | Inspetor BudGanja',
@@ -210,11 +210,11 @@ ${unifespBlock}
         <section class="info-panel">
             <h2>Continuar no laboratório</h2>
             <ul class="info-list">
+                <li><a href="/cultivo/?plant=${escapeHtml(plant.slug)}">Iniciar pesquisa no diário</a> — criar ou abrir o diário desta espécie</li>
                 <li><a href="/plantas/">Voltar ao catálogo</a></li>
                 <li><a href="/biblioteca/unifesp/">Curso UNIFESP</a></li>
                 <li><a href="/biblioteca/inspecoes/">Inspeções</a></li>
                 <li><a href="/calculadoras/">Ferramentas de cultivo</a></li>
-                <li><a href="/cultivo/">Diário de cultivo</a></li>
             </ul>
         </section>`;
 

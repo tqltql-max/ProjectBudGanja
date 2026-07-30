@@ -131,22 +131,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Canais, equipamentos, lojas, insumos e formação."
             },
             {
-              "label": "Inspeção: Fertilizantes BioBizz",
-              "tileLabel": "Inspeção: Fertilizantes BioBizz",
-              "href": "/posts/post-inspecao-insumo-biobizz.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-insumo-biobizz",
-              "description": "Auditoria da linha orgânica BioBizz (Holanda) — Bio·Grow, Bio·Bloom, stimulators e cruzamento com EC, solo vivo e o guia de nutrição do laboratório."
-            },
-            {
-              "label": "Inspeção: Loja Flora Urbana 420",
-              "tileLabel": "Inspeção: Loja Flora Urbana 420",
-              "href": "/posts/post-inspecao-loja-floraurbana.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-loja-floraurbana",
-              "description": "Auditoria da vitrine floraurbana420.com.br — sementes de coleção, bancos representados, logística BR, PIX e cruzamento com o guia de cultivo."
-            },
-            {
               "label": "Inspeção: Sistema de Ventilação da Tenda",
               "tileLabel": "Inspeção: Sistema de Ventilação…",
               "href": "/posts/post-inspecao-ventilacao-tenda.html",

@@ -317,7 +317,7 @@ CREATE TABLE IF NOT EXISTS loja_orders (
 CREATE INDEX IF NOT EXISTS idx_loja_orders_product ON loja_orders(product_id);
 CREATE INDEX IF NOT EXISTS idx_loja_orders_created ON loja_orders(created_at);
 
--- Diário de Cultivo (utilizador autenticado)
+-- Diário de Pesquisas (utilizador autenticado)
 
 CREATE TABLE IF NOT EXISTS cultivo_settings (
   user_id TEXT PRIMARY KEY,

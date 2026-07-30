@@ -13,14 +13,14 @@ Transformar um canal, tema técnico ou vitrine comercial em um relatório editor
 | Canais | `canal-<nome>` | `inspecao-canal-movrecam` |
 | Equipamentos | `verificacao-equipamento` | `inspecao-marshydro-brasil` |
 | Cursos | `formacao-academica` | Extensão académica | `inspecao-curso-unifesp-…` |
-| **Lojas** | `loja-cultivo` | `inspecao-loja-floraurbana` |
-| **Insumos** | `insumos-cultivo` | `inspecao-insumo-biobizz` |
+| **Lojas** | `loja-cultivo` | `inspecao-loja-<nome>` |
+| **Insumos** | `insumos-cultivo` | `inspecao-insumo-<marca>` |
 
 ## Fontes
 
 - Canal público do YouTube ou feed exportado localmente
 - Títulos, resumos e datas dos vídeos
-- **Lojas:** home, catálogo, FAQ/institucional, políticas de envio e pagamento (ex.: [floraurbana420.com.br](https://floraurbana420.com.br/))
+- **Lojas:** home, catálogo, FAQ/institucional, políticas de envio e pagamento
 - Páginas do site que complementam o tema: calculadoras, manuais, pesquisas e inspeções relacionadas
 
 ## Passo a passo

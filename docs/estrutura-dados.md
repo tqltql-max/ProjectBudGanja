@@ -7,7 +7,7 @@ Base de dados **SQLite** (`data/budganja.db` localmente; **Turso** em produção
 | Área | Tabela(s) | O que guarda |
 |------|-----------|--------------|
 | **Utilizadores** | `users` | Conta/autenticação + onboarding progressivo + segurança/auditoria (`email_verified_at`, `birth_date`, `username`, `registration_ip`, `account_status`, `activity_log_json`) + `profile_json` (metadados de perfil, sem diário) + `is_admin` |
-| **Diário de Cultivo** | `cultivo_settings`, `cultivo_grows`, `cultivo_entries`, `cultivo_plan_tasks`, `cultivo_submissions` | Pesquisas de cultivo por utilizador + fila de publicação |
+| **Diário de Pesquisas** | `cultivo_settings`, `cultivo_grows`, `cultivo_entries`, `cultivo_plan_tasks`, `cultivo_submissions` | Pesquisas de cultivo por utilizador + fila de publicação |
 | **Sessões** | `user_sessions`, `admin_sessions`, `oauth_states` | Login utilizador, admin, OAuth |
 | **Publicações** | `posts` | Artigos da biblioteca (markdown, capa, categoria) |
 | **Páginas CMS** | `pages` | HTML editável: biblioteca, calculadoras, guia, equipamentos, info… |
@@ -77,7 +77,7 @@ Notas de arquitetura:
 - Novas tabelas devem seguir o mesmo padrão (SQL em `snake_case`, contrato externo em `camelCase`).
 - Teste de contrato: `npm run test:api:contract` valida automaticamente payloads canônicos em endpoints administrativos críticos.
 
-## Diário de Cultivo (`cultivo_*`)
+## Diário de Pesquisas (`cultivo_*`)
 
 Dados do módulo `/cultivo/` — API `GET/PUT /api/cultivo`, fotos `POST /api/cultivo/photo`.
 

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Diário de Cultivo — documente o cultivo de qualquer planta e prepare publicações no Inspetor BudGanja.">
-    <meta property="og:title" content="Diário de Cultivo | Inspetor BudGanja">
-    <meta property="og:description" content="Registe observações, roteiro e plano do seu diário de cultivo — para publicar no laboratório depois.">
+    <meta name="description" content="Diário de Pesquisas — documente o cultivo de qualquer planta e prepare publicações no Inspetor BudGanja.">
+    <meta property="og:title" content="Diário de Pesquisas | Inspetor BudGanja">
+    <meta property="og:description" content="Registe observações, roteiro e plano do seu diário de pesquisas — para publicar no laboratório depois.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://inspetorbudganja.com.br/cultivo/">
     <meta property="og:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
@@ -14,8 +14,8 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Diário de Cultivo | Inspetor BudGanja">
-    <meta name="twitter:description" content="Registe observações, roteiro e plano do seu diário de cultivo — para publicar no laboratório depois.">
+    <meta name="twitter:title" content="Diário de Pesquisas | Inspetor BudGanja">
+    <meta name="twitter:description" content="Registe observações, roteiro e plano do seu diário de pesquisas — para publicar no laboratório depois.">
     <meta name="twitter:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
     <link rel="canonical" href="https://inspetorbudganja.com.br/cultivo/">
 
@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="/css/style.css?v=289">
     <link rel="stylesheet" href="/css/pages/cultivo-perfil.css?v=289">
     <meta name="robots" content="noindex,nofollow">
-    <title>Diário de Cultivo | Inspetor BudGanja</title>
+    <title>Diário de Pesquisas | Inspetor BudGanja</title>
 </head>
 <body data-page="cultivo">
     <div id="site-header"></div>
@@ -53,9 +53,9 @@
 
           <div>
 
-            <p class="perfil-hub-eyebrow">Laboratório · Diário de Cultivo</p>
+            <p class="perfil-hub-eyebrow">Laboratório · Diário de Pesquisas</p>
 
-            <h1 id="perfil-name">Diário de Cultivo</h1>
+            <h1 id="perfil-name">Diário de Pesquisas</h1>
 
             <p id="perfil-email" class="conta-email"></p>
 
@@ -95,8 +95,23 @@
           <section id="cultivo-hub-empty" class="cultivo-hub-empty card info-panel highlight-card" hidden aria-labelledby="cultivo-hub-empty-title">
             <div class="card-icon card-icon--cultivo cultivo-hub-empty-icon" aria-hidden="true">📓</div>
             <h2 id="cultivo-hub-empty-title" class="cultivo-hub-empty-title">Ainda não tem diários</h2>
-            <p class="cultivo-hub-empty-text page-intro">Documente o cultivo de qualquer planta — diário, roteiro e plano prontos para publicar no laboratório.</p>
+            <p class="cultivo-hub-empty-text page-intro">Escolha uma planta do catálogo abaixo ou crie um diário livre.</p>
             <button type="button" class="botao cultivo-hub-empty-btn" id="cultivo-hub-empty-btn">＋ Criar primeiro diário</button>
+          </section>
+
+          <section id="cultivo-plantas-catalog" class="cultivo-plantas-catalog info-panel" aria-labelledby="cultivo-plantas-title">
+            <header class="cultivo-plantas-head">
+              <div>
+                <p class="cultivo-hub-eyebrow">Catálogo fitoterápico</p>
+                <h2 id="cultivo-plantas-title" class="cultivo-section-title">Pesquisar plantas</h2>
+                <p class="cultivo-section-intro page-intro">Cada espécie vira um diário de pesquisa. Toque para iniciar ou abrir o que já começou.</p>
+              </div>
+              <button type="button" class="botao botao-outline botao-sm" id="cultivo-plantas-start-all" hidden>Iniciar todas as pendentes</button>
+            </header>
+            <p id="cultivo-plantas-status" class="conta-status" role="status" aria-live="polite"></p>
+            <div id="cultivo-plantas-grid" class="cultivo-plantas-grid" role="list" aria-label="Plantas do catálogo">
+              <p class="empty-message">A carregar catálogo…</p>
+            </div>
           </section>
 
           <div id="cultivo-onboarding-root" class="cultivo-onboarding" hidden aria-live="polite"></div>

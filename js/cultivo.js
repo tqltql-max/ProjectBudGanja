@@ -34,6 +34,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   const cultivoHubEmpty = document.getElementById('cultivo-hub-empty');
   const cultivoHubEmptyBtn = document.getElementById('cultivo-hub-empty-btn');
   const cultivoHubNewBtn = document.getElementById('cultivo-hub-new-btn');
+  const cultivoPlantasCatalog = document.getElementById('cultivo-plantas-catalog');
+  const cultivoPlantasGrid = document.getElementById('cultivo-plantas-grid');
+  const cultivoPlantasStatus = document.getElementById('cultivo-plantas-status');
+  const cultivoPlantasStartAll = document.getElementById('cultivo-plantas-start-all');
+  let plantasCatalogCache = null;
+  let plantasCatalogLoading = null;
+  const MAX_GROW_LOGS = 40;
   const cultivoTasksView = document.getElementById('cultivo-tasks-view');
   const cultivoTasksList = document.getElementById('cultivo-tasks-list');
   const cultivoTasksEmpty = document.getElementById('cultivo-tasks-empty');
@@ -1023,6 +1030,260 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
+  function normalizePlantMatchText(value) {
+    return String(value || '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .trim();
+  }
+
+  async function loadPlantasCatalog() {
+    if (Array.isArray(plantasCatalogCache)) return plantasCatalogCache;
+    if (plantasCatalogLoading) return plantasCatalogLoading;
+    plantasCatalogLoading = fetch('/content/plantas.json', { credentials: 'same-origin' })
+      .then((res) => {
+        if (!res.ok) throw new Error('plantas_load_failed');
+        return res.json();
+      })
+      .then((data) => {
+        const plants = Array.isArray(data && data.plants) ? data.plants.slice() : [];
+        plants.sort((a, b) => String(a.nomePopular || '').localeCompare(String(b.nomePopular || ''), 'pt'));
+        plantasCatalogCache = plants;
+        return plants;
+      })
+      .catch(() => {
+        plantasCatalogCache = [];
+        return plantasCatalogCache;
+      })
+      .finally(() => {
+        plantasCatalogLoading = null;
+      });
+    return plantasCatalogLoading;
+  }
+
+  function findGrowForPlant(profile, plant) {
+    if (!profile || !plant) return null;
+    const logs = Array.isArray(profile.growLogs) ? profile.growLogs : [];
+    const popular = normalizePlantMatchText(plant.nomePopular);
+    const scientific = normalizePlantMatchText(plant.nomeCientifico);
+    const pesquisaName = normalizePlantMatchText('Pesquisa: ' + (plant.nomePopular || ''));
+    return logs.find((log) => {
+      const name = normalizePlantMatchText(log && log.name);
+      const species = normalizePlantMatchText(log && log.species);
+      if (popular && name === popular) return true;
+      if (pesquisaName && name === pesquisaName) return true;
+      if (scientific && species === scientific) return true;
+      if (scientific && name === scientific) return true;
+      return false;
+    }) || null;
+  }
+
+  function buildPlantCatalogCardHtml(plant, existingGrow) {
+    const started = !!existingGrow;
+    const scientific = plant.nomeCientifico
+      ? '<p class="cultivo-plantas-card-sci"><em>' + escapeHtml(plant.nomeCientifico) + '</em></p>'
+      : '';
+    const summary = plant.summary
+      ? '<p class="cultivo-plantas-card-summary">' + escapeHtml(plant.summary) + '</p>'
+      : '';
+    const actionLabel = started ? 'Abrir diário' : 'Iniciar pesquisa';
+    const stateLabel = started ? 'Em curso' : 'Pendente';
+    return (
+      '<article class="cultivo-plantas-card' + (started ? ' is-started' : '') + '" role="listitem" data-plant-slug="' + escapeHtml(plant.slug) + '">' +
+      '<div class="cultivo-plantas-card-copy">' +
+      '<span class="cultivo-plantas-card-state">' + escapeHtml(stateLabel) + '</span>' +
+      '<h3 class="cultivo-plantas-card-title">' + escapeHtml(plant.nomePopular || plant.slug) + '</h3>' +
+      scientific +
+      summary +
+      '</div>' +
+      '<div class="cultivo-plantas-card-actions">' +
+      '<a class="cultivo-plantas-card-link" href="/plantas/' + encodeURIComponent(plant.slug) + '/">Ficha</a>' +
+      '<button type="button" class="botao botao-sm cultivo-plantas-card-btn" data-plant-action="' + (started ? 'open' : 'start') + '" data-plant-slug="' + escapeHtml(plant.slug) + '"' +
+      (started && existingGrow ? ' data-grow-id="' + escapeHtml(existingGrow.id) + '"' : '') +
+      '>' + escapeHtml(actionLabel) + '</button>' +
+      '</div>' +
+      '</article>'
+    );
+  }
+
+  function bindPlantasCatalog() {
+    if (!cultivoPlantasGrid || cultivoPlantasGrid.dataset.bound === '1') return;
+    cultivoPlantasGrid.dataset.bound = '1';
+    cultivoPlantasGrid.addEventListener('click', async (event) => {
+      const btn = event.target.closest('[data-plant-action]');
+      if (!btn) return;
+      event.preventDefault();
+      const slug = btn.getAttribute('data-plant-slug') || '';
+      const action = btn.getAttribute('data-plant-action') || '';
+      if (!slug) return;
+      if (action === 'open') {
+        const growId = btn.getAttribute('data-grow-id') || '';
+        if (growId) openGrowPage(growId);
+        return;
+      }
+      btn.disabled = true;
+      try {
+        await startPlantResearchBySlug(slug, { open: true });
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  }
+
+  async function renderPlantasCatalog(profile) {
+    if (!cultivoPlantasGrid) return;
+    bindPlantasCatalog();
+    const plants = await loadPlantasCatalog();
+    if (!plants.length) {
+      cultivoPlantasGrid.innerHTML = '<p class="empty-message">Catálogo de plantas indisponível no momento.</p>';
+      if (cultivoPlantasStartAll) cultivoPlantasStartAll.hidden = true;
+      return;
+    }
+    const pending = [];
+    cultivoPlantasGrid.innerHTML = plants.map((plant) => {
+      const existing = findGrowForPlant(profile, plant);
+      if (!existing) pending.push(plant);
+      return buildPlantCatalogCardHtml(plant, existing);
+    }).join('');
+    if (cultivoPlantasStartAll) {
+      cultivoPlantasStartAll.hidden = pending.length === 0;
+      cultivoPlantasStartAll.textContent = pending.length
+        ? 'Iniciar todas as pendentes (' + pending.length + ')'
+        : 'Iniciar todas as pendentes';
+    }
+    if (cultivoPlantasStatus && !cultivoPlantasStatus.dataset.keep) {
+      const startedCount = plants.length - pending.length;
+      setStatus(
+        cultivoPlantasStatus,
+        startedCount
+          ? startedCount + ' de ' + plants.length + ' plantas com diário iniciado.'
+          : plants.length + ' plantas no catálogo — escolha uma para começar.'
+      );
+    }
+  }
+
+  async function startPlantResearchBySlug(slug, options) {
+    const opts = options || {};
+    if (!user || !user.profile) return null;
+    const plants = await loadPlantasCatalog();
+    const plant = plants.find((item) => item.slug === slug);
+    if (!plant) {
+      setStatus(cultivoPlantasStatus, 'Planta não encontrada no catálogo.', true);
+      return null;
+    }
+    return startPlantResearch(plant, opts);
+  }
+
+  async function startPlantResearch(plant, options) {
+    const opts = options || {};
+    if (!user || !user.profile || !plant) return null;
+    ensureGrowLogs(user.profile);
+    const existing = findGrowForPlant(user.profile, plant);
+    if (existing) {
+      if (opts.open !== false) openGrowPage(existing.id, opts);
+      return existing;
+    }
+    if ((user.profile.growLogs || []).length >= MAX_GROW_LOGS) {
+      setStatus(cultivoPlantasStatus, 'Limite de ' + MAX_GROW_LOGS + ' diários atingido. Arquive ou apague um para continuar.', true);
+      return null;
+    }
+    setStatus(cultivoPlantasStatus, 'A criar diário de ' + (plant.nomePopular || plant.slug) + '…');
+    const log = await createGrowFromWizard(
+      plant.nomePopular || plant.slug,
+      'planejamento',
+      1,
+      plant.nomeCientifico || '',
+      '',
+      '',
+      todayDateInputValue(),
+      ''
+    );
+    if (!log) {
+      setStatus(cultivoPlantasStatus, 'Não foi possível criar o diário. Tente novamente.', true);
+      return null;
+    }
+    setStatus(cultivoPlantasStatus, 'Diário de ' + (plant.nomePopular || plant.slug) + ' criado.');
+    await renderCultivoHub(user.profile);
+    if (opts.open !== false) openGrowPage(log.id, opts);
+    return log;
+  }
+
+  async function startAllPendingPlantResearch() {
+    if (!user || !user.profile) return;
+    const plants = await loadPlantasCatalog();
+    ensureGrowLogs(user.profile);
+    const pending = plants.filter((plant) => !findGrowForPlant(user.profile, plant));
+    if (!pending.length) {
+      setStatus(cultivoPlantasStatus, 'Todas as plantas do catálogo já têm diário.');
+      return;
+    }
+    const remainingSlots = Math.max(0, MAX_GROW_LOGS - (user.profile.growLogs || []).length);
+    if (!remainingSlots) {
+      setStatus(cultivoPlantasStatus, 'Limite de ' + MAX_GROW_LOGS + ' diários atingido.', true);
+      return;
+    }
+    const toCreate = pending.slice(0, remainingSlots);
+    const skipped = pending.length - toCreate.length;
+    const ok = window.confirm(
+      'Criar ' + toCreate.length + ' diário' + (toCreate.length === 1 ? '' : 's') +
+      ' de pesquisa para as plantas pendentes?' +
+      (skipped ? '\n\n(' + skipped + ' ficam de fora por causa do limite de ' + MAX_GROW_LOGS + '.)' : '')
+    );
+    if (!ok) return;
+    if (cultivoPlantasStartAll) cultivoPlantasStartAll.disabled = true;
+    setStatus(cultivoPlantasStatus, 'A criar ' + toCreate.length + ' diários…');
+    let created = 0;
+    for (let i = 0; i < toCreate.length; i += 1) {
+      const plant = toCreate[i];
+      const plantedAt = todayDateInputValue() + 'T12:00:00';
+      const log = createGrowLogObject(
+        plant.nomePopular || plant.slug,
+        plantedAt,
+        'planejamento',
+        1,
+        plant.nomeCientifico || '',
+        user.profile.environment || '',
+        user.profile.substrate || ''
+      );
+      log.id = ('g' + Date.now().toString(36) + i.toString(36) + Math.random().toString(36).slice(2, 7)).slice(0, 24);
+      user.profile.growLogs.unshift(log);
+      created += 1;
+    }
+    if (created && user.profile.growLogs[0]) {
+      user.profile.activeGrowLogId = user.profile.growLogs[0].id;
+      selectedGrowLogId = user.profile.growLogs[0].id;
+      persistSelectedGrowId(selectedGrowLogId);
+      syncPhaseFromActiveLog(user.profile);
+    }
+    const saved = await persistGrowLogs(cultivoPlantasStatus);
+    if (cultivoPlantasStartAll) cultivoPlantasStartAll.disabled = false;
+    if (!saved) {
+      setStatus(cultivoPlantasStatus, 'Erro ao guardar os diários. Tente novamente.', true);
+      await loadCultivoIntoProfile().catch(() => {});
+      await renderCultivoHub(user.profile);
+      return;
+    }
+    setStatus(
+      cultivoPlantasStatus,
+      created + ' diário' + (created === 1 ? '' : 's') + ' criado' + (created === 1 ? '' : 's') +
+      (skipped ? '. ' + skipped + ' pendente' + (skipped === 1 ? '' : 's') + ' por falta de espaço.' : '.')
+    );
+    await renderCultivoHub(user.profile);
+  }
+
+  async function handlePlantDeepLink(slug) {
+    if (!slug || !user || !user.profile) return false;
+    const plants = await loadPlantasCatalog();
+    const plant = plants.find((item) => item.slug === slug);
+    if (!plant) {
+      setStatus(cultivoPlantasStatus, 'Planta «' + slug + '» não encontrada no catálogo.', true);
+      return false;
+    }
+    const log = await startPlantResearch(plant, { open: true, replace: true });
+    return !!log;
+  }
+
   async function renderCultivoHub(profile) {
     ensureGrowLogs(profile);
     const logs = (profile.growLogs || []).slice().sort((a, b) => {
@@ -1043,8 +1304,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (cultivoHubSummary) {
       cultivoHubSummary.textContent = hasLogs
         ? ''
-        : 'Toque em «Novo diário» para começar o primeiro registo de campo.';
+        : 'Escolha uma planta do catálogo ou toque em «Novo diário».';
     }
+    renderPlantasCatalog(profile);
     if (!cultivoHubList) return;
     if (!hasLogs) {
       cultivoHubList.innerHTML = '';
@@ -1622,7 +1884,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (IS_CULTIVO_PAGE) {
         nameEl.textContent = isUserProfileComplete(data)
           ? firstName(data.profile, data.name) + ' · diário'
-          : 'Diário de Cultivo';
+          : 'Diário de Pesquisas';
       } else {
         nameEl.textContent = isUserProfileComplete(data)
           ? 'Olá, ' + firstName(data.profile, data.name) + '!'
@@ -4713,6 +4975,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         let initialRoute = parseCultivoRoute();
         const tab = params.get('tab');
         const growParam = params.get('grow');
+        const plantParam = (params.get('plant') || '').trim();
         let preferredGrowId = growParam || '';
         if (!preferredGrowId) {
           try { preferredGrowId = sessionStorage.getItem(SELECTED_GROW_KEY) || ''; } catch (e) { /* ignore */ }
@@ -4726,6 +4989,11 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         }
         if (params.get('saved') === '1') {
           flashLiveStatus('Resultado da calculadora guardado no diário.');
+        }
+        if (plantParam && !growParam) {
+          navigateCultivo({ view: 'hub' }, { replace: true, scroll: false });
+          const opened = await handlePlantDeepLink(plantParam);
+          if (opened) return;
         }
         navigateCultivo(initialRoute, { replace: true, scroll: false });
         if (tab && tab !== 'diario') {
@@ -4857,6 +5125,11 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
   }
   if (cultivoHubEmptyBtn) {
     cultivoHubEmptyBtn.addEventListener('click', () => navigateCultivo({ view: 'wizard' }));
+  }
+  if (cultivoPlantasStartAll) {
+    cultivoPlantasStartAll.addEventListener('click', () => {
+      startAllPendingPlantResearch();
+    });
   }
   if (cultivoTasksBackBtn) {
     cultivoTasksBackBtn.addEventListener('click', () => closeGlobalTasksBoard());

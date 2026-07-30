@@ -124,7 +124,7 @@ function renderPostCards(container, posts, options) {
     var page = document.body.dataset.page;
     var category = page === 'inspecoes' ? 'inspecao' : page === 'equipamentos' ? 'equipamento' : 'pesquisa';
     var ctas = {
-      pesquisa: { text: 'Abrir diário de cultivo', href: '/cultivo/' },
+      pesquisa: { text: 'Abrir diário de pesquisas', href: '/cultivo/' },
       inspecao: { text: 'Ver canal no YouTube', href: 'https://www.youtube.com/@InspetorBudGanja', external: true },
       equipamento: { text: 'Ver guia da clonadora', href: '/equipamentos/clonadora-6-estacas.html' }
     };
@@ -221,114 +221,10 @@ function sortCanaisPosts(posts) {
   });
 }
 
-function formatDropCount(count, nounSingular, nounPlural) {
-  return count + ' ' + (count === 1 ? nounSingular : nounPlural);
-}
-
-function renderInspecoesDropdown(container, posts, opts) {
-  opts = opts || {};
-  var sorted = opts.sort === 'seriesOrder' ? sortBySeriesOrder(posts) : sortCanaisPosts(posts);
-  if (!sorted.length) return null;
-
-  var coverPost = opts.coverPost || sorted[0];
-  var label = opts.label || 'Inspeções';
-  var badge = opts.badge || label;
-  var seriesKey = opts.seriesKey || '';
-  var count = sorted.length;
-  var countText = formatDropCount(count, opts.nounSingular || 'item', opts.nounPlural || 'itens');
-
-  var details = document.createElement('details');
-  details.className = 'card post-card inspecoes-drop-group';
-  if (seriesKey) details.dataset.series = seriesKey;
-
-  var summary = document.createElement('summary');
-  summary.className = 'inspecoes-drop-summary';
-
-  appendCoverTo(summary, coverPost.coverImage);
-
-  var badgeWrap = document.createElement('div');
-  badgeWrap.className = 'post-card-badges';
-  badgeWrap.innerHTML = '<span class="post-card-series"' +
-    (seriesKey ? ' data-series="' + seriesKey + '"' : '') + '>' + badge + '</span>';
-  summary.appendChild(badgeWrap);
-
-  var title = document.createElement('h3');
-  title.textContent = label;
-
-  var excerpt = document.createElement('p');
-  excerpt.textContent = opts.excerpt || ('Clique para expandir — ' + countText + '.');
-
-  var meta = document.createElement('span');
-  meta.className = 'post-card-date inspecoes-drop-meta';
-  meta.innerHTML = '<span class="inspecoes-drop-count">' + countText + '</span>' +
-    '<span class="inspecoes-drop-caret" aria-hidden="true"></span>';
-
-  summary.appendChild(title);
-  summary.appendChild(excerpt);
-  summary.appendChild(meta);
-  details.appendChild(summary);
-
-  var chapters = document.createElement('div');
-  chapters.className = 'container-cards inspecoes-drop-chapters';
-  chapters.setAttribute('role', 'list');
-  if (opts.chaptersAttr) chapters.setAttribute(opts.chaptersAttr, '');
-  renderPostCards(chapters, sorted, { hub: true });
-  details.appendChild(chapters);
-
-  container.appendChild(details);
-  return details;
-}
-
-function renderCanaisGrid(grid, list) {
-  grid.innerHTML = '';
-  if (!list.length) {
-    renderPostCards(grid, [], { hub: true });
-    return;
-  }
-  var count = list.length;
-  var coverPost = list.filter(function (p) { return p.series === 'canal-movrecam'; })[0] || list[0];
-  renderInspecoesDropdown(grid, list, {
-    sort: 'label',
-    seriesKey: 'canais',
-    coverPost: coverPost,
-    label: 'Canais de referência',
-    badge: 'Canais',
-    nounSingular: 'canal',
-    nounPlural: 'canais',
-    chaptersAttr: 'data-inspecao-canal-chapters',
-    excerpt: 'Auditoria de catálogo, foco temático e utilidade prática — ' +
-      formatDropCount(count, 'canal', 'canais') + '.'
-  });
-}
-
-function renderCursosGrid(grid, list) {
-  grid.innerHTML = '';
-  if (!list.length) {
-    renderPostCards(grid, [], { hub: true });
-    return;
-  }
-  var count = list.length;
-  var coverPost = list.filter(function (p) {
-    return p.slug === 'inspecao-curso-unifesp-cannabis-medicinal';
-  })[0] || sortBySeriesOrder(list)[0];
-  renderInspecoesDropdown(grid, list, {
-    sort: 'seriesOrder',
-    seriesKey: 'formacao-academica',
-    coverPost: coverPost,
-    label: 'Extensão académica',
-    badge: 'UNIFESP',
-    nounSingular: 'curso',
-    nounPlural: 'cursos',
-    chaptersAttr: 'data-inspecao-curso-chapters',
-    excerpt: 'Grade, acesso e valor prático da extensão — ' +
-      formatDropCount(count, 'curso', 'cursos') + '. Destaque: curso UNIFESP.'
-  });
-}
-
 function renderInspecoesHub(allPosts) {
   var tipos = [
-    { id: 'canal', section: '#inspecoes-canais' },
-    { id: 'curso', section: '#inspecoes-cursos' }
+    { id: 'canal', section: '#inspecoes-canais', sort: 'label' },
+    { id: 'curso', section: '#inspecoes-cursos', sort: 'seriesOrder' }
   ];
 
   tipos.forEach(function (t) {
@@ -345,9 +241,8 @@ function renderInspecoesHub(allPosts) {
 
     section.hidden = false;
     setHubChipVisibility(t.id, true);
-    if (t.id === 'canal') renderCanaisGrid(grid, list);
-    else if (t.id === 'curso') renderCursosGrid(grid, list);
-    else renderPostCards(grid, list, { hub: true });
+    var sorted = t.sort === 'seriesOrder' ? sortBySeriesOrder(list) : sortCanaisPosts(list);
+    renderPostCards(grid, sorted, { hub: true });
   });
 }
 
@@ -417,7 +312,7 @@ function renderAndamentoEmpty(grid, opts) {
     '<div class="empty-state">' +
     '<p class="empty-message">' + (opts.message || 'Ainda não tem pesquisas em andamento.') + '</p>' +
     '<a href="' + (opts.href || '/cultivo/') + '" class="botao botao-home">' +
-    (opts.cta || 'Abrir diário de cultivo') +
+    (opts.cta || 'Abrir diário de pesquisas') +
     '</a></div>';
 }
 
@@ -524,7 +419,7 @@ function loadPesquisasEmAndamento() {
               message: growLogs.length
                 ? 'Todas as suas pesquisas já foram publicadas. Comece uma nova no diário.'
                 : 'Ainda não tem pesquisas em andamento. Abra o diário para iniciar uma.',
-              cta: 'Abrir diário de cultivo',
+              cta: 'Abrir diário de pesquisas',
               href: '/cultivo/'
             });
             return;

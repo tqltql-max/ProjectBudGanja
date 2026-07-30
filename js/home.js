@@ -3,7 +3,7 @@ function i18nHome(key, fallback) {
 }
 
 function homeLocale() {
-  return (window.BudGanjaI18n && window.BudGanjaI18n.getLocale()) || 'pt-BR';
+  return (window.BudGanjaI18n && window.BudGanjaI18n.getLocale()) || 'en';
 }
 
 function formatDatePtBR(iso) {

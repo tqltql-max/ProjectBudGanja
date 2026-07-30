@@ -31,12 +31,12 @@ Detalhes: [`docs/GIT.md`](docs/GIT.md) · copie `.env.example` → `.env`
 
 | Secção | Páginas |
 |--------|---------|
-| **Pesquisas** | [Diário de Cultivo](/cultivo/) · [Minha conta](/perfil.html) |
+| **Pesquisas** | [Diário de Pesquisas](/cultivo/) · [Minha conta](/perfil.html) |
 | **Biblioteca** | [Inspeções](/biblioteca/inspecoes/), [Pesquisas](/biblioteca/pesquisas/), [Equipamentos](/equipamentos/) |
 | **Ferramentas** | [Calculadoras](/calculadoras/), [Luxímetro](/calculadoras/luximetro.html) |
 | **Conteúdo** | [Sorteios](/sorteios/), [Últimos vídeos](/videos/), [Loja parceira](/loja/) |
 
-> O antigo guia em `/guia/cultivo-basico.html` redireciona para o [Diário de Cultivo](/cultivo/).
+> O antigo guia em `/guia/cultivo-basico.html` redireciona para o [Diário de Pesquisas](/cultivo/).
 
 ## Funcionalidades
 
@@ -201,7 +201,7 @@ Aceda a `/login.html` com `ADMIN_USER` e `RESEARCH_PASS` definidos no `.env`. Ap
 
 ## Conta de utilizador (Google)
 
-Utilizadores entram em **`/entrar.html`** com Google e completam o cadastro em **`/perfil.html`** com **nome** e **idade** (obrigatório **18 anos ou mais**). Depois acedem ao **Diário de Cultivo** em `/cultivo/`.
+Utilizadores entram em **`/entrar.html`** com Google e completam o cadastro em **`/perfil.html`** com **nome** e **idade** (obrigatório **18 anos ou mais**). Depois acedem ao **Diário de Pesquisas** em `/cultivo/`.
 
 Configure no `.env`:
 

@@ -19,6 +19,7 @@
   var STORAGE_COLLAPSED = 'budganja.radio.collapsed';
   var STORAGE_DISMISSED = 'budganja.radio.dismissed';
   var STORAGE_SOURCE = 'budganja.radio.source';
+  var WELCOME_TITLE = /rusted\s*root.*send\s*me\s*on\s*my\s*way|send\s*me\s*on\s*my\s*way/i;
 
   function pathLower() {
     return (window.location.pathname || '').toLowerCase();
@@ -112,6 +113,28 @@
 
   function setCollapsedPref(collapsed) {
     writeSession(STORAGE_COLLAPSED, collapsed ? '1' : '0');
+  }
+
+  function hasSessionKey(key) {
+    try {
+      return sessionStorage.getItem(key) != null;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  /** Faixa de boas-vindas ao abrir o site (Rusted Root — Send Me On My Way). */
+  function findWelcomeIndex(tracks) {
+    var i;
+    var list = Array.isArray(tracks) ? tracks : [];
+    for (i = 0; i < list.length; i++) {
+      var title = String((list[i] && list[i].title) || '');
+      if (/rusted\s*root/i.test(title) && /send\s*me\s*on\s*my\s*way/i.test(title)) return i;
+    }
+    for (i = 0; i < list.length; i++) {
+      if (WELCOME_TITLE.test(String((list[i] && list[i].title) || ''))) return i;
+    }
+    return 0;
   }
 
   function svg(paths) {
@@ -217,12 +240,16 @@
     audio.preload = 'metadata';
     audio.muted = readMuted();
 
-    var index = Math.max(0, Math.min(tracks.length - 1, readInt(STORAGE_INDEX, 0)));
+    var freshSession = !hasSessionKey(STORAGE_INDEX) && !hasSessionKey(STORAGE_PLAYING);
+    var welcomeIndex = findWelcomeIndex(tracks);
+    var index = freshSession
+      ? welcomeIndex
+      : Math.max(0, Math.min(tracks.length - 1, readInt(STORAGE_INDEX, welcomeIndex)));
     var wantPlay = sessionStorage.getItem(STORAGE_PLAYING) === '1';
-    var savedTime = Math.max(0, readFloat(STORAGE_TIME, 0));
+    var savedTime = freshSession ? 0 : Math.max(0, readFloat(STORAGE_TIME, 0));
     var inHeader = !!host;
     var collapsed = (!inHeader && isFocusPage()) || isCollapsedPref();
-
+    var unlockBound = false;
     function applyCollapsed() {
       root.classList.toggle('is-collapsed', collapsed);
       btnFab.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
@@ -498,14 +525,47 @@
     applyCollapsed();
     loadTrack(index, false, savedTime);
 
+    function startPlayback() {
+      return audio.play().then(function () {
+        updatePlayUi(true);
+        writeSession(STORAGE_PLAYING, '1');
+        wantPlay = true;
+        updateMediaSession(tracks[index]);
+        if (collapsed && freshSession) {
+          collapsed = false;
+          setCollapsedPref(false);
+          applyCollapsed();
+        }
+      });
+    }
+
+    function bindUnlockOnGesture() {
+      if (unlockBound) return;
+      unlockBound = true;
+      var unlock = function () {
+        document.removeEventListener('pointerdown', unlock, true);
+        document.removeEventListener('keydown', unlock, true);
+        document.removeEventListener('touchstart', unlock, true);
+        startPlayback().catch(function () {
+          updatePlayUi(false);
+        });
+      };
+      document.addEventListener('pointerdown', unlock, true);
+      document.addEventListener('keydown', unlock, true);
+      document.addEventListener('touchstart', unlock, true);
+    }
+
     // Retomar após navegação (gesto de play já feito neste separador).
     if (wantPlay) {
-      audio.play().then(function () {
-        updatePlayUi(true);
-        updateMediaSession(tracks[index]);
-      }).catch(function () {
+      startPlayback().catch(function () {
         updatePlayUi(false);
-        // Mantém wantPlay — browser pode bloquear até novo gesto; UI fica pausada.
+        bindUnlockOnGesture();
+      });
+    } else if (freshSession) {
+      // Boas-vindas: Send Me On My Way ao abrir o site (browser pode exigir o 1.º clique).
+      startPlayback().catch(function () {
+        updatePlayUi(false);
+        bindUnlockOnGesture();
       });
     }
   }

@@ -47,6 +47,21 @@
     Cache-Control = "no-cache, must-revalidate"
 
 [[headers]]
+  for = "/imagens/background-hero.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/imagens/background-hero*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/imagens/background-hero*.avif"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
   for = "/imagens/*.svg"
   [headers.values]
     Cache-Control = "public, max-age=86400"

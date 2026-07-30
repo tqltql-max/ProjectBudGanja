@@ -41,6 +41,7 @@ const MIME = {
   '.gif': 'image/gif',
   '.ico': 'image/x-icon',
   '.webp': 'image/webp',
+  '.avif': 'image/avif',
   '.webmanifest': 'application/manifest+json',
   '.mp3': 'audio/mpeg',
   '.mp4': 'video/mp4',
@@ -108,7 +109,7 @@ function getCacheControl(ext, filePath) {
   }
   if (ext === '.html') return 'no-cache';
   if (['.js', '.css', '.json', '.webmanifest'].includes(ext)) return 'no-cache';
-  if (['.png', '.jpg', '.jpeg', '.svg', '.webp', '.ico'].includes(ext)) return 'public, max-age=86400';
+  if (['.png', '.jpg', '.jpeg', '.svg', '.webp', '.avif', '.ico'].includes(ext)) return 'public, max-age=86400';
   return 'public, max-age=3600';
 }
 

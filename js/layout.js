@@ -357,15 +357,46 @@ const UPDATE_CHECK_MIN_MS = 5000;
 let appUpdatePromptEl = null;
 let appUpdatePromptVersion = null;
 
-async function fetchServerAppVersion() {
+let cachedSiteBuiltAt = null;
+
+async function fetchVersionMeta() {
   try {
     const res = await fetch('/version.json?_=' + Date.now(), { cache: 'no-store', credentials: 'same-origin' });
     if (!res.ok) return null;
-    const data = await res.json();
-    return data && data.version != null ? String(data.version) : null;
+    return await res.json();
   } catch (e) {
     return null;
   }
+}
+
+async function fetchServerAppVersion() {
+  const data = await fetchVersionMeta();
+  return data && data.version != null ? String(data.version) : null;
+}
+
+function formatSiteUpdatedDate(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '';
+  const locale = (window.BudGanjaI18n && typeof window.BudGanjaI18n.getLocale === 'function')
+    ? window.BudGanjaI18n.getLocale()
+    : (document.documentElement.lang || 'pt-BR');
+  try {
+    return new Intl.DateTimeFormat(locale, {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+      timeZone: 'America/Sao_Paulo'
+    }).format(d);
+  } catch (e) {
+    return d.toISOString().slice(0, 10);
+  }
+}
+
+function resolveFooterUpdatedDate(site) {
+  const fromBuild = formatSiteUpdatedDate(cachedSiteBuiltAt);
+  if (fromBuild) return fromBuild;
+  return (site && site.privacyUpdated) || DEFAULT_SITE.privacyUpdated || '';
 }
 
 async function clearAllAppCaches() {
@@ -635,7 +666,7 @@ const DEFAULT_SITE = {
   siteName: 'Inspetor BudGanja',
   siteTagline: 'Laboratório de fitoterapia brasileira',
   footerText: '© 2026 Inspetor BudGanja. Conteúdo educacional sobre plantas medicinais do Brasil.',
-  privacyUpdated: '29 de julho de 2026',
+  privacyUpdated: '30 de julho de 2026',
   ogImage: '/imagens/og-default.jpg',
   contactEmail: 'tql.tql@gmail.com',
   youtubeChannelUrl: 'https://www.youtube.com/@InspetorBudGanja',
@@ -672,11 +703,11 @@ const DEFAULT_SITE = {
     { label: 'Plantas', href: '/plantas/' },
     { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
     { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
-    { label: 'Extensão académica', href: '/biblioteca/inspecoes/' },
+    { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
     { label: 'Vídeos', href: '/videos/' },
     { label: 'Equipamentos', href: '/equipamentos/' },
     { label: 'Ferramentas', href: '/calculadoras/' },
-    { label: 'Diário de cultivo', href: '/cultivo/' },
+    { label: 'Diário de pesquisas', href: '/cultivo/' },
     { label: 'Comunidade', href: '/comunidade/' },
     { label: 'BudGanja Radio', href: '/radio/' },
     { label: 'Sorteios', href: '/sorteios/' },
@@ -688,7 +719,7 @@ const DEFAULT_SITE = {
       links: [
         { label: 'Plantas', href: '/plantas/' },
         { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
-        { label: 'Extensão académica', href: '/biblioteca/inspecoes/' },
+        { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
         { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
         { label: 'Vídeos', href: '/videos/' },
         { label: 'Equipamentos', href: '/equipamentos/' }
@@ -700,7 +731,7 @@ const DEFAULT_SITE = {
         { label: 'Ferramentas', href: '/calculadoras/' },
         { label: 'Luxímetro', href: '/calculadoras/luximetro.html' },
         { label: 'Solo', href: '/calculadoras/super-solo.html' },
-        { label: 'Diário de cultivo', href: '/cultivo/' }
+        { label: 'Diário de pesquisas', href: '/cultivo/' }
       ]
     },
     {
@@ -716,6 +747,7 @@ const DEFAULT_SITE = {
       title: 'Sobre nós',
       links: [
         { label: 'Sobre o projeto', href: '/info/sobre.html' },
+        { label: 'Apresentação UNIFESP', href: '/info/apresentacao-unifesp.html' },
         { label: 'Contato', href: '/info/contato.html' },
         { label: 'Privacidade', href: '/info/privacidade.html' }
       ]
@@ -740,7 +772,7 @@ function translateFooterLabel(label) {
     'Ferramentas': 'nav.calculators',
     'Luxímetro': 'nav.luxMeter',
     'Solo': 'nav.soilCalc',
-    'Diário de cultivo': 'nav.growDiary',
+    'Diário de pesquisas': 'nav.growDiary',
     'Últimos vídeos': 'nav.videos',
     'Vídeos': 'nav.videos',
     'Comunidade': 'nav.community',
@@ -1294,7 +1326,7 @@ function getSiteHubNav() {
           {
             href: '/cultivo/',
             icon: '📓',
-            label: i18n('nav.growDiary', 'Diário de cultivo'),
+            label: i18n('nav.growDiary', 'Diário de pesquisas'),
             prefixes: '/cultivo',
             tone: 'cultivo'
           }
@@ -1396,9 +1428,10 @@ function buildHeaderHTML(site, authState) {
     '<ul id="site-search-results" class="site-search-results"></ul>' +
     '</div>';
 
-  // Fora do menu: só pesquisa. Perfil, admin e redes ficam no hambúrguer.
+  // Fora do menu: pesquisa + idioma. Perfil, admin e redes ficam no hambúrguer.
   const headerToolbar =
     '<div class="header-toolbar">' +
+    buildLangSwitcherHTML('header') +
     '<button type="button" class="header-quick-link header-quick-link--search" id="search-toggle" aria-expanded="false" aria-label="' + escapeNavText(i18n('common.searchOpen', 'Buscar no site')) + '" title="' + escapeNavText(i18n('common.searchShortcut', 'Buscar (Ctrl+K)')) + '">' +
     '<span class="header-quick-link-icon" aria-hidden="true">' +
     '<svg class="header-search-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">' +
@@ -1458,14 +1491,34 @@ function buildMobileNavSectionHTML(navItem) {
   );
 }
 
-function buildLangSwitcherHTML() {
+function buildLangSwitcherHTML(variant) {
+  const isHeader = variant === 'header';
+  const rootClass = isHeader
+    ? 'lang-switcher lang-switcher--header'
+    : 'lang-switcher mobile-menu-util-lang';
+  const btnClass = isHeader
+    ? 'lang-switcher-btn header-quick-link header-quick-link--lang'
+    : 'lang-switcher-btn mobile-menu-util';
+  const btnInner = isHeader
+    ? (
+      '<span class="header-quick-link-icon" aria-hidden="true">' +
+      '<svg class="header-lang-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<circle cx="12" cy="12" r="9"></circle>' +
+      '<path d="M3 12h18"></path>' +
+      '<path d="M12 3a14 14 0 0 1 0 18"></path>' +
+      '<path d="M12 3a14 14 0 0 0 0 18"></path>' +
+      '</svg></span>' +
+      '<span class="lang-switcher-code">EN</span>'
+    )
+    : 'EN';
   return (
-    '<div class="lang-switcher mobile-menu-util-lang">' +
-    '<button type="button" class="lang-switcher-btn mobile-menu-util" aria-haspopup="listbox" aria-expanded="false" aria-label="' +
-    escapeNavText(i18n('common.langChoose', 'Escolher idioma')) + '">EN</button>' +
+    '<div class="' + rootClass + '">' +
+    '<button type="button" class="' + btnClass + '" aria-haspopup="listbox" aria-expanded="false" title="' +
+    escapeNavText(i18n('common.langChoose', 'Choose language')) + '" aria-label="' +
+    escapeNavText(i18n('common.langChoose', 'Choose language')) + '">' + btnInner + '</button>' +
     '<ul class="lang-switcher-menu" hidden role="listbox">' +
-    '<li><button type="button" class="lang-switcher-option" data-lang="pt-BR" role="option">Português</button></li>' +
     '<li><button type="button" class="lang-switcher-option" data-lang="en" role="option">English</button></li>' +
+    '<li><button type="button" class="lang-switcher-option" data-lang="pt-BR" role="option">Português</button></li>' +
     '<li><button type="button" class="lang-switcher-option" data-lang="es" role="option">Español</button></li>' +
     '</ul></div>'
   );
@@ -1478,7 +1531,7 @@ function buildMobileUtilsHTML(authState, hideAuthNav) {
     '<span class="mobile-menu-util-icon" aria-hidden="true">⌕</span>' +
     '<span>' + escapeNavText(i18n('common.searchOpen', 'Buscar no site')) + '</span></button>'
   );
-  links.push(buildLangSwitcherHTML());
+  links.push(buildLangSwitcherHTML('mobile'));
   if (!isStandaloneApp()) {
     links.push(
       '<button type="button" class="mobile-menu-util mobile-menu-util--install" data-pwa-install>' +
@@ -1670,7 +1723,7 @@ function buildFooterHTML(site) {
   const spotifyUrl = config.spotifyPodcastUrl || DEFAULT_SITE.spotifyPodcastUrl;
   const spotifyLabel = config.spotifyPodcastLabel || DEFAULT_SITE.spotifyPodcastLabel;
   const footerGroups = config.footerGroups || DEFAULT_SITE.footerGroups;
-  const privacyDate = i18n('common.privacyUpdatedDate', config.privacyUpdated || DEFAULT_SITE.privacyUpdated);
+  const privacyDate = resolveFooterUpdatedDate(config);
 
   const groupsHtml = footerGroups.map((group) =>
     '<div class="footer-col">' +
@@ -2200,7 +2253,12 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (e.detail && e.detail.picture) applyUserPictureToDom(e.detail.picture);
   });
 
-  const [site, authState] = await Promise.all([fetchSiteConfig(), fetchAuthState()]);
+  const [site, authState, versionMeta] = await Promise.all([
+    fetchSiteConfig(),
+    fetchAuthState(),
+    fetchVersionMeta()
+  ]);
+  if (versionMeta && versionMeta.builtAt) cachedSiteBuiltAt = String(versionMeta.builtAt);
   injectLayout(site, authState);
   if (window.BudGanjaI18n) {
     window.BudGanjaI18n.apply();

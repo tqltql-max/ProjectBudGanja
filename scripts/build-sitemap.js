@@ -30,6 +30,7 @@ const STATIC = [
   })),
   { loc: '/sorteios/', priority: '0.8', changefreq: 'weekly' },
   { loc: '/info/sobre.html', priority: '0.6', changefreq: 'monthly' },
+  { loc: '/info/apresentacao-unifesp.html', priority: '0.7', changefreq: 'monthly' },
   { loc: '/info/contato.html', priority: '0.5', changefreq: 'yearly' },
   { loc: '/info/privacidade.html', priority: '0.4', changefreq: 'yearly' },
   { loc: '/equipamentos/clonadora-6-estacas.html', priority: '0.75', changefreq: 'yearly' },

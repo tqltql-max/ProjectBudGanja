@@ -4,7 +4,7 @@
   var Shared = global.BudGanjaCultivoShared || {};
   var ONBOARDING_STEPS = [
     {
-      title: 'Bem-vindo ao Diário de Cultivo',
+      title: 'Bem-vindo ao Diário de Pesquisas',
       body: 'Aqui documenta cada cultivo como um caderno de campo — com diário, roteiro semanal e plano numa só página.',
       cta: 'Seguinte'
     },

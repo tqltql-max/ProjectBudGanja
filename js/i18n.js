@@ -2,26 +2,17 @@
   'use strict';
 
   var STORAGE_KEY = 'budganja-lang';
-  var SUPPORTED = ['pt-BR', 'en', 'es'];
+  var SUPPORTED = ['en', 'pt-BR', 'es'];
   var LOCALES = global.__I18N_LOCALES__ || {};
-  var currentLocale = 'pt-BR';
+  var currentLocale = 'en';
 
   function normalizeLocale(input) {
     var raw = String(input || '').trim().toLowerCase();
-    if (!raw) return 'pt-BR';
+    if (!raw) return 'en';
     if (raw === 'pt' || raw.indexOf('pt-') === 0) return 'pt-BR';
     if (raw.indexOf('en') === 0) return 'en';
     if (raw.indexOf('es') === 0) return 'es';
-    return 'pt-BR';
-  }
-
-  function isEnglishHost() {
-    try {
-      var host = String(global.location && global.location.hostname || '').toLowerCase();
-      return host === 'inspectorbudganja.com' || host === 'www.inspectorbudganja.com';
-    } catch (e) {
-      return false;
-    }
+    return 'en';
   }
 
   function detectLocale() {
@@ -36,21 +27,12 @@
       if (saved && SUPPORTED.indexOf(saved) !== -1) return saved;
     } catch (e) { /* ignore */ }
 
-    // www.inspectorbudganja.com → versão em inglês por defeito
-    if (isEnglishHost()) return 'en';
-
-    var list = (navigator.languages && navigator.languages.length)
-      ? navigator.languages
-      : [navigator.language || 'pt-BR'];
-    for (var i = 0; i < list.length; i++) {
-      var norm = normalizeLocale(list[i]);
-      if (SUPPORTED.indexOf(norm) !== -1) return norm;
-    }
-    return 'pt-BR';
+    // Padrão do site: inglês (domínio EN e .com.br).
+    return 'en';
   }
 
   function getBundle(locale) {
-    return LOCALES[locale] || LOCALES['pt-BR'] || {};
+    return LOCALES[locale] || LOCALES.en || LOCALES['pt-BR'] || {};
   }
 
   function lookup(obj, path) {
@@ -67,6 +49,10 @@
   function t(key, fallback) {
     var value = lookup(getBundle(currentLocale), key);
     if (value) return value;
+    if (currentLocale !== 'en') {
+      value = lookup(getBundle('en'), key);
+      if (value) return value;
+    }
     if (fallback != null) return String(fallback);
     return lookup(getBundle('pt-BR'), key) || String(key || '');
   }
@@ -75,6 +61,10 @@
     var menu = getBundle(currentLocale).menu || {};
     var entry = menu[slug];
     if (entry && entry[field]) return entry[field];
+    if (currentLocale !== 'en') {
+      var en = (LOCALES.en && LOCALES.en.menu && LOCALES.en.menu[slug]) || {};
+      if (en[field]) return en[field];
+    }
     var pt = (LOCALES['pt-BR'] && LOCALES['pt-BR'].menu && LOCALES['pt-BR'].menu[slug]) || {};
     if (pt[field]) return pt[field];
     return fallback != null ? String(fallback) : '';
@@ -86,11 +76,11 @@
 
   function getLocaleMeta(locale) {
     var bundle = getBundle(locale || currentLocale);
-    return bundle.meta || { name: locale, short: (locale || 'pt').slice(0, 2).toUpperCase() };
+    return bundle.meta || { name: locale, short: (locale || 'en').slice(0, 2).toUpperCase() };
   }
 
   function setLocale(locale, options) {
-    var next = SUPPORTED.indexOf(locale) !== -1 ? locale : 'pt-BR';
+    var next = SUPPORTED.indexOf(locale) !== -1 ? locale : 'en';
     if (next === currentLocale && !(options && options.force)) return;
     currentLocale = next;
     try { localStorage.setItem(STORAGE_KEY, next); } catch (e) { /* ignore */ }
@@ -156,8 +146,12 @@
 
     function syncActive() {
       var meta = getLocaleMeta(currentLocale);
-      btn.textContent = meta.short || currentLocale.slice(0, 2).toUpperCase();
+      var code = meta.short || currentLocale.slice(0, 2).toUpperCase();
+      var codeEl = btn.querySelector('.lang-switcher-code');
+      if (codeEl) codeEl.textContent = code;
+      else btn.textContent = code;
       btn.setAttribute('aria-label', t('common.langChoose', 'Choose language'));
+      btn.setAttribute('title', t('common.langChoose', 'Choose language'));
       menu.querySelectorAll('[data-lang]').forEach(function (opt) {
         var active = opt.getAttribute('data-lang') === currentLocale;
         opt.classList.toggle('is-active', active);

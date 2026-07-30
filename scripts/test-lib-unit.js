@@ -86,6 +86,8 @@ assert('posts guia builtin vazios', GUIA_INSPECOES_POSTS.length === 0);
 assert('slugs guia em REMOVED', REMOVED_INSPECAO_SLUGS.has('inspecao-cultivo-inicio'));
 assert('slugs canal oficial em REMOVED', REMOVED_INSPECAO_SLUGS.has('inspecao-canal-inspetorbudganja'));
 assert('slugs Plantamemo em REMOVED', REMOVED_INSPECAO_SLUGS.has('inspecao-canal-plantamemo'));
+assert('slugs BioBizz em REMOVED', REMOVED_INSPECAO_SLUGS.has('inspecao-insumo-biobizz'));
+assert('slugs Flora Urbana em REMOVED', REMOVED_INSPECAO_SLUGS.has('inspecao-loja-floraurbana'));
 assert('2 inspeções de canal (builtin)', CHANNEL_INSPECOES_POSTS.length === 2);
 assert('builtin sem Jardim HG', !CHANNEL_INSPECOES_POSTS.some((p) => /jardimhg/i.test(p.slug || '')));
 assert('builtin sem Inspetor BudGanja', !CHANNEL_INSPECOES_POSTS.some((p) => p.slug === 'inspecao-canal-inspetorbudganja'));
