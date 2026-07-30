@@ -18,10 +18,6 @@
     <meta name="twitter:description" content="Laboratório de fitoterapia brasileira: plantas medicinais, formação UNIFESP e cultivo responsável.">
     <meta name="twitter:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
     <link rel="canonical" href="https://inspetorbudganja.com.br/">
-
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="BudGanja">
     <link rel="icon" href="/imagens/favicon-32.v289.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/imagens/favicon-48.v289.png" sizes="48x48" type="image/png">
     <link rel="icon" href="/imagens/favicon-16.v289.png" sizes="16x16" type="image/png">
@@ -31,7 +27,11 @@
     <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v289.png">
     <link rel="manifest" href="/manifest.json?v=289">
     <meta name="theme-color" content="#a68628">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
     <link rel="stylesheet" href="/css/style.css?v=289">
+    <link rel="preload" as="image" type="image/webp" href="/imagens/background-hero-960.webp?v=0d6b109d95" imagesrcset="/imagens/background-hero-640.webp?v=0d6b109d95 640w, /imagens/background-hero-960.webp?v=0d6b109d95 960w, /imagens/background-hero.webp?v=0d6b109d95 1400w" imagesizes="100vw" fetchpriority="high">
     <title>Início | Inspetor BudGanja</title>
 </head>
 <body data-page="home">
@@ -40,7 +40,17 @@
     <main id="main-content">
     <div class="lab-atmosphere" aria-hidden="true"></div>
     <section class="hero">
-        <img class="hero-media" src="/imagens/background-hero.png?v=2e2192a02b" alt="" width="1983" height="393" decoding="async" fetchpriority="high">
+        <picture>
+            <source
+                type="image/avif"
+                srcset="/imagens/background-hero-640.avif?v=0d6b109d95 640w, /imagens/background-hero-960.avif?v=0d6b109d95 960w, /imagens/background-hero.avif?v=0d6b109d95 1400w"
+                sizes="100vw">
+            <source
+                type="image/webp"
+                srcset="/imagens/background-hero-640.webp?v=0d6b109d95 640w, /imagens/background-hero-960.webp?v=0d6b109d95 960w, /imagens/background-hero.webp?v=0d6b109d95 1400w"
+                sizes="100vw">
+            <img class="hero-media" src="/imagens/background-hero.jpg?v=0d6b109d95" alt="" width="1400" height="560" decoding="async" fetchpriority="high">
+        </picture>
         <span class="hero-shine" aria-hidden="true"></span>
         <div class="hero-content">
             <p class="hero-eyebrow" data-i18n="pages.home.heroEyebrow">Fitoterapia brasileira · educação e cultivo responsável</p>
@@ -64,20 +74,24 @@
     <section class="home-pillars" aria-label="Destaques">
         <div class="conteudo conteudo-wide">
             <article class="home-pillar home-pillar--unifesp">
-                <p class="home-pillar-eyebrow" data-i18n="pages.home.pillarUnifespEyebrow">Extensão</p>
-                <h2 data-i18n="pages.home.pillarUnifespTitle">Curso UNIFESP — Cannabis medicinal</h2>
-                <p data-i18n="pages.home.pillarUnifespText">XIV curso de extensão gratuito: 10 mil vagas, 57 h EaD e certificado com 75% de presença. Confirme inscrição no SIEX e leia a nossa inspeção do programa.</p>
+                <div class="home-pillar-row">
+                    <img
+                        class="home-pillar-logo"
+                        src="/imagens/inspecoes/unifesp-logo.png"
+                        alt="Logo UNIFESP"
+                        width="72"
+                        height="72"
+                        decoding="async"
+                        loading="lazy">
+                    <div class="home-pillar-copy">
+                        <p class="home-pillar-eyebrow" data-i18n="pages.home.pillarUnifespEyebrow">Extensão</p>
+                        <h2 data-i18n="pages.home.pillarUnifespTitle">Curso UNIFESP — Cannabis medicinal</h2>
+                        <p data-i18n="pages.home.pillarUnifespText">XIV curso de extensão gratuito: 10 mil vagas, 57 h EaD e certificado com 75% de presença. Confirme inscrição no SIEX e leia a nossa inspeção do programa.</p>
+                    </div>
+                </div>
                 <div class="home-pillar-actions">
                     <a href="https://siex.siiu.unifesp.br/catalogo-siex/30063/mais-info" class="botao botao-home" rel="noopener noreferrer" target="_blank" data-i18n="pages.home.pillarUnifespCtaSiex">Inscrição SIEX</a>
                     <a href="/biblioteca/unifesp/" class="botao botao-home botao-home--secondary" data-i18n="pages.home.pillarUnifespCtaHub">Abrir hub UNIFESP</a>
-                </div>
-            </article>
-            <article class="home-pillar home-pillar--plantas">
-                <p class="home-pillar-eyebrow" data-i18n="pages.home.pillarPlantasEyebrow">Catálogo</p>
-                <h2 data-i18n="pages.home.pillarPlantasTitle">Plantas fitoterápicas</h2>
-                <p data-i18n="pages.home.pillarPlantasText">Fichas curadas de espécies usadas na medicina popular brasileira — usos tradicionais, partes usadas e cuidados editoriais.</p>
-                <div class="home-pillar-actions">
-                    <a href="/plantas/" class="botao botao-home" data-i18n="pages.home.pillarPlantasCta">Explorar plantas</a>
                 </div>
             </article>
         </div>
@@ -135,32 +149,26 @@
         <div class="conteudo conteudo-wide">
             <header class="features-head">
                 <h2 class="features-title" data-i18n="pages.home.areasTitle">Laboratório e comunidade</h2>
-                <p class="section-subtitle features-subtitle" data-i18n="pages.home.areasSubtitle">Inspeções, ferramentas, diário e BudGanja Radio — apoios ao estudo e ao cultivo responsável.</p>
+                <p class="section-subtitle features-subtitle" data-i18n="pages.home.areasSubtitle">Plantas, inspeções e diário — apoios ao estudo e ao cultivo responsável.</p>
             </header>
             <div class="container-cards home-cards">
+                <article class="card home-card home-card--plantas has-hover-tip" data-tip="Fichas de espécies usadas na medicina popular brasileira." data-i18n-tip="pages.home.cardPlantasTip">
+                    <div class="card-icon card-icon--plantas" aria-hidden="true">🌿</div>
+                    <h3 data-i18n="pages.home.cardPlantasTitle">Plantas fitoterápicas</h3>
+                    <p data-i18n="pages.home.cardPlantasText">Fichas curadas de espécies usadas na medicina popular brasileira — usos tradicionais, partes usadas e cuidados editoriais.</p>
+                    <a href="/plantas/" class="botao botao-home" data-i18n="pages.home.cardPlantasBtn">Explorar plantas</a>
+                </article>
                 <article class="card home-card home-card--inspecoes has-hover-tip" data-tip="Relatórios de inspeção, verificações de campo e formação." data-i18n-tip="pages.home.cardInspectionsTip">
                     <div class="card-icon card-icon--inspecoes" aria-hidden="true">🔍</div>
                     <h3 data-i18n="pages.home.cardInspectionsTitle">Inspeções</h3>
                     <p data-i18n="pages.home.cardInspectionsText">Relatórios técnicos com método verificável — guia, canais, equipamentos e cursos.</p>
                     <a href="/biblioteca/inspecoes/" class="botao botao-home" data-i18n="pages.home.cardInspectionsBtn">Ver Inspeções</a>
                 </article>
-                <article class="card home-card home-card--ferramentas has-hover-tip" data-tip="Utilitários para ambiente de cultivo: VPD, DLI, EC, luxímetro e mais." data-i18n-tip="pages.home.cardCalcTip">
-                    <div class="card-icon card-icon--ferramentas" aria-hidden="true">🧮</div>
-                    <h3 data-i18n="pages.home.cardCalcTitle">Ferramentas</h3>
-                    <p data-i18n="pages.home.cardCalcText">Utilitários para otimizar o cultivo: VPD, DLI, EC, luxímetro e muito mais.</p>
-                    <a href="/calculadoras/" class="botao botao-home" data-i18n="pages.home.cardCalcBtn">Ver Ferramentas</a>
-                </article>
                 <article class="card home-card home-card--cultivo has-hover-tip" data-tip="Documente o cultivo de qualquer planta — diário, roteiro e plano." data-i18n-tip="pages.home.cardCultivoTip">
                     <div class="card-icon card-icon--cultivo" aria-hidden="true">📓</div>
-                    <h3 data-i18n="pages.home.cardCultivoTitle">Diário de Cultivo</h3>
+                    <h3 data-i18n="pages.home.cardCultivoTitle">Diário de Pesquisas</h3>
                     <p data-i18n="pages.home.cardCultivoText">Documente o cultivo de qualquer planta: registos dia a dia, roteiro por fase e plano.</p>
                     <a href="/cultivo/" class="botao botao-home" data-i18n="pages.home.cardCultivoBtn">Abrir diário</a>
-                </article>
-                <article class="card home-card home-card--radio has-hover-tip" data-tip="Playlist BudGanja Radio." data-i18n-tip="pages.home.cardRadioTip">
-                    <div class="card-icon card-icon--radio" aria-hidden="true">📻</div>
-                    <h3 data-i18n="pages.home.cardRadioTitle">BudGanja Radio</h3>
-                    <p data-i18n="pages.home.cardRadioText">Ouça a playlist do laboratório — BudGanja Radio.</p>
-                    <a href="/radio/" class="botao botao-home" data-i18n="pages.home.cardRadioBtn">Abrir rádio</a>
                 </article>
             </div>
         </div>
@@ -188,7 +196,6 @@
     </main>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=289"></script>
     <script src="/js/i18n-data.js?v=289"></script>
     <script src="/js/i18n.js?v=289"></script>
     <script src="/js/ferramentas-nav-data.js?v=289"></script>

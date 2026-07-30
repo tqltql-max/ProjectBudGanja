@@ -13,7 +13,7 @@
         radial-gradient(ellipse 50% 38% at 12% 78%, rgba(78, 94, 21, 0.28), transparent 48%),
         radial-gradient(ellipse 40% 30% at 50% 40%, rgba(223, 194, 98, 0.08), transparent 55%),
         linear-gradient(180deg, rgba(12, 18, 8, 0.52) 0%, rgba(10, 14, 8, 0.88) 45%, var(--color-bg, #1a1a1a) 100%),
-        url("/imagens/background-hero.png?v=2e2192a02b") center top / cover no-repeat;
+        url("/imagens/background-hero.png?v=0d6b109d95") center top / cover no-repeat;
     animation: lab-atmosphere-drift 28s ease-in-out infinite alternate;
 }
 

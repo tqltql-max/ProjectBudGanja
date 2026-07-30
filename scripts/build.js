@@ -26,6 +26,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('optimize:hero', 'optimize-hero.js');
+  } catch (e) {
+    console.warn('Aviso optimize:hero:', e.message);
+  }
+
+  try {
     runStep('build:og-images', 'generate-og-images.js');
   } catch (e) {
     console.warn('Aviso build:og-images:', e.message);

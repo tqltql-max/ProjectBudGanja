@@ -11,6 +11,7 @@
     "deploy:online": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-site.ps1",
     "build": "node scripts/build.js",
     "stamp:hero": "node scripts/stamp-assets.js",
+    "optimize:hero": "node scripts/optimize-hero.js",
     "build:posts": "node scripts/regenerate-posts.js",
     "sync:pages": "node scripts/sync-pages-from-html.js",
     "sync:pages:db": "node scripts/sync-pages-to-db.js",
