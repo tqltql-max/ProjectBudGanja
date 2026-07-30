@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const plantGuest = document.getElementById('comunidade-plant-id-guest');
   const plantLogin = document.getElementById('comunidade-plant-id-login');
   const plantFile = document.getElementById('comunidade-plant-id-file');
+  const plantCapture = document.getElementById('comunidade-plant-id-capture');
+  const plantSelectBtn = document.getElementById('comunidade-plant-id-select-btn');
+  const plantCaptureBtn = document.getElementById('comunidade-plant-id-capture-btn');
+  const plantClearBtn = document.getElementById('comunidade-plant-id-clear-btn');
   const plantPreviewWrap = document.getElementById('comunidade-plant-id-preview-wrap');
   const plantPreview = document.getElementById('comunidade-plant-id-preview');
   const plantCaption = document.getElementById('comunidade-plant-id-caption');
@@ -18,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let authUser = null;
   let feedKind = '';
   let pendingFile = null;
+  let previewObjectUrl = '';
   const openComments = new Set();
 
   function escapeHtml(s) {
@@ -252,14 +257,52 @@ document.addEventListener('DOMContentLoaded', () => {
     return fallback;
   }
 
-  if (plantFile) {
-    plantFile.addEventListener('change', () => {
-      const file = plantFile.files && plantFile.files[0];
-      pendingFile = file || null;
-      if (!file || !plantPreview || !plantPreviewWrap) return;
-      const url = URL.createObjectURL(file);
-      plantPreview.src = url;
+  function clearPlantPhoto() {
+    pendingFile = null;
+    if (previewObjectUrl) {
+      URL.revokeObjectURL(previewObjectUrl);
+      previewObjectUrl = '';
+    }
+    if (plantPreview) plantPreview.removeAttribute('src');
+    if (plantPreviewWrap) plantPreviewWrap.hidden = true;
+    if (plantFile) plantFile.value = '';
+    if (plantCapture) plantCapture.value = '';
+  }
+
+  function setPlantPhotoFromInput(inputEl) {
+    const file = inputEl && inputEl.files && inputEl.files[0];
+    if (!file) return;
+    pendingFile = file;
+    if (previewObjectUrl) {
+      URL.revokeObjectURL(previewObjectUrl);
+      previewObjectUrl = '';
+    }
+    if (plantPreview && plantPreviewWrap) {
+      previewObjectUrl = URL.createObjectURL(file);
+      plantPreview.src = previewObjectUrl;
       plantPreviewWrap.hidden = false;
+    }
+    setPlantStatus('');
+    // Limpa o outro input para poder voltar a escolher/capturar o mesmo ficheiro.
+    if (inputEl === plantFile && plantCapture) plantCapture.value = '';
+    if (inputEl === plantCapture && plantFile) plantFile.value = '';
+  }
+
+  if (plantSelectBtn && plantFile) {
+    plantSelectBtn.addEventListener('click', () => plantFile.click());
+  }
+  if (plantCaptureBtn && plantCapture) {
+    plantCaptureBtn.addEventListener('click', () => plantCapture.click());
+  }
+  if (plantFile) {
+    plantFile.addEventListener('change', () => setPlantPhotoFromInput(plantFile));
+  }
+  if (plantCapture) {
+    plantCapture.addEventListener('change', () => setPlantPhotoFromInput(plantCapture));
+  }
+  if (plantClearBtn) {
+    plantClearBtn.addEventListener('click', () => {
+      clearPlantPhoto();
       setPlantStatus('');
     });
   }
@@ -324,10 +367,8 @@ document.addEventListener('DOMContentLoaded', () => {
           return;
         }
         setPlantStatus('Pedido publicado — a comunidade pode ajudar nos comentários.');
-        pendingFile = null;
-        if (plantFile) plantFile.value = '';
+        clearPlantPhoto();
         if (plantCaption) plantCaption.value = '';
-        if (plantPreviewWrap) plantPreviewWrap.hidden = true;
         activateFilterTab(filterBtns.find((b) => b.getAttribute('data-kind') === 'plant_id') || filterBtns[0]);
         nextCursor = null;
         try {
