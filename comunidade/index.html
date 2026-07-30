@@ -22,16 +22,16 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="icon" href="/imagens/favicon-32.v291.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-48.v291.png" sizes="48x48" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.v291.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="/imagens/icon-192.v291.png" sizes="192x192" type="image/png">
-    <link rel="shortcut icon" href="/favicon.v291.ico" sizes="any">
-    <link rel="icon" href="/favicon.v291.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v291.png">
-    <link rel="manifest" href="/manifest.json?v=291">
+    <link rel="icon" href="/imagens/favicon-32.v292.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.v292.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.v292.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/imagens/icon-192.v292.png" sizes="192x192" type="image/png">
+    <link rel="shortcut icon" href="/favicon.v292.ico" sizes="any">
+    <link rel="icon" href="/favicon.v292.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v292.png">
+    <link rel="manifest" href="/manifest.json?v=292">
     <meta name="theme-color" content="#a68628">
-    <link rel="stylesheet" href="/css/style.css?v=291">
+    <link rel="stylesheet" href="/css/style.css?v=292">
     <title>Comunidade | Inspetor BudGanja</title>
 </head>
 <body data-page="comunidade">
@@ -41,48 +41,61 @@
         <div class="page-stack">
             <header class="comunidade-header">
                 <h1>Comunidade</h1>
-                <p class="secao-subtitulo">Fotos do diário e pedidos de identificação. Só conteúdo vegetal.</p>
-                <p class="comunidade-cta-wrap">
-                    <a id="comunidade-cta" class="botao" href="/cultivo/">Enviar do diário</a>
-                    <a class="botao botao-outline" href="#comunidade-plant-id">Que planta é essa?</a>
-                </p>
+                <p class="secao-subtitulo">Pedidos de identificação e fotos do diário. Só conteúdo vegetal.</p>
             </header>
 
-            <section id="comunidade-plant-id" class="comunidade-plant-id" aria-labelledby="comunidade-plant-id-title">
-                <h2 id="comunidade-plant-id-title">Que planta é essa?</h2>
-                <p class="field-hint">Publica uma foto e pede ajuda à comunidade para identificar a planta. Os comentários servem para sugerir a espécie.</p>
-                <div id="comunidade-plant-id-guest" class="comunidade-plant-id-guest" hidden>
-                    <p class="field-hint"><a id="comunidade-plant-id-login" href="/entrar.html?returnTo=%2Fcomunidade%2F%23comunidade-plant-id">Entre na conta</a> para publicar um pedido de identificação.</p>
+            <section id="comunidade-plant-id" class="comunidade-compose" aria-labelledby="comunidade-plant-id-title">
+                <div class="comunidade-compose-head">
+                    <h2 id="comunidade-plant-id-title">Que planta é essa?</h2>
+                    <p class="field-hint">Tira ou escolhe uma foto e pede ajuda à comunidade.</p>
                 </div>
-                <form id="comunidade-plant-id-form" class="comunidade-plant-id-form" hidden>
-                    <div class="comunidade-plant-id-field">
-                        <span class="comunidade-plant-id-label" id="comunidade-plant-id-photo-label">Foto da planta</span>
-                        <input type="file" id="comunidade-plant-id-file" accept="image/jpeg,image/png,image/webp,image/gif,image/heic,image/heif,.jpg,.jpeg,.png,.webp,.gif,.heic,.heif" hidden>
-                        <input type="file" id="comunidade-plant-id-capture" accept="image/*" capture="environment" hidden>
-                        <div class="comunidade-plant-id-capture-actions" role="group" aria-labelledby="comunidade-plant-id-photo-label">
-                            <button type="button" class="botao botao-outline botao-sm" id="comunidade-plant-id-select-btn">Escolher foto</button>
-                            <button type="button" class="botao botao-outline botao-sm" id="comunidade-plant-id-capture-btn">Tirar foto</button>
+
+                <div id="comunidade-plant-id-guest" class="comunidade-compose-guest" hidden>
+                    <a id="comunidade-plant-id-login" class="botao" href="/entrar.html?returnTo=%2Fcomunidade%2F%23comunidade-plant-id">Entrar para publicar</a>
+                    <a id="comunidade-cta" class="botao botao-outline" href="/entrar.html?returnTo=%2Fcultivo%2F">Entrar e abrir diário</a>
+                </div>
+
+                <form id="comunidade-plant-id-form" class="comunidade-compose-form" hidden>
+                    <input type="file" id="comunidade-plant-id-file" accept="image/jpeg,image/png,image/webp,image/gif,image/heic,image/heif,.jpg,.jpeg,.png,.webp,.gif,.heic,.heif" hidden>
+                    <input type="file" id="comunidade-plant-id-capture" accept="image/*" capture="environment" hidden>
+
+                    <div class="comunidade-compose-photo" id="comunidade-plant-id-photo-zone">
+                        <div id="comunidade-plant-id-preview-wrap" class="comunidade-compose-preview" hidden>
+                            <img id="comunidade-plant-id-preview" src="" alt="Pré-visualização da planta">
+                            <button type="button" class="comunidade-compose-preview-clear" id="comunidade-plant-id-clear-btn" aria-label="Remover foto">×</button>
+                        </div>
+                        <div class="comunidade-compose-photo-empty" id="comunidade-plant-id-photo-empty">
+                            <p class="comunidade-compose-photo-title">Adicionar foto</p>
+                            <p class="comunidade-compose-photo-hint">Câmara ou galeria do telemóvel</p>
+                        </div>
+                        <div class="comunidade-compose-photo-actions" role="group" aria-label="Adicionar foto da planta">
+                            <button type="button" class="botao" id="comunidade-plant-id-capture-btn">Tirar foto</button>
+                            <button type="button" class="botao botao-outline" id="comunidade-plant-id-select-btn">Galeria</button>
                         </div>
                     </div>
-                    <div id="comunidade-plant-id-preview-wrap" class="comunidade-plant-id-preview" hidden>
-                        <img id="comunidade-plant-id-preview" src="" alt="Pré-visualização da planta">
-                        <button type="button" class="comunidade-plant-id-preview-clear" id="comunidade-plant-id-clear-btn" aria-label="Remover foto">×</button>
-                    </div>
-                    <label class="comunidade-plant-id-field" for="comunidade-plant-id-caption">
-                        <span class="comunidade-plant-id-label">Detalhes <span class="perfil-field-optional">(opcional)</span></span>
-                        <textarea id="comunidade-plant-id-caption" class="comunidade-plant-id-textarea" rows="3" maxlength="500" placeholder="Onde encontrou, cheiro, tamanho, folha… qualquer pista ajuda."></textarea>
+
+                    <label class="comunidade-compose-field" for="comunidade-plant-id-caption">
+                        <span class="comunidade-compose-label">Detalhes <span class="comunidade-compose-optional">(opcional)</span></span>
+                        <textarea id="comunidade-plant-id-caption" class="comunidade-compose-textarea" rows="2" maxlength="500" placeholder="Onde encontrou, cheiro, tamanho da folha…"></textarea>
                     </label>
-                    <div class="conta-actions comunidade-plant-id-actions">
-                        <button type="submit" class="botao" id="comunidade-plant-id-submit">Pedir identificação</button>
-                    </div>
+
+                    <button type="submit" class="botao comunidade-compose-submit" id="comunidade-plant-id-submit">Publicar pedido</button>
                     <p id="comunidade-plant-id-status" class="conta-status" role="status"></p>
+
+                    <p class="comunidade-compose-alt">
+                        Ou partilha uma foto do teu diário:
+                        <a id="comunidade-cta-logged" href="/cultivo/">Abrir diário</a>
+                    </p>
                 </form>
             </section>
 
-            <div class="comunidade-filters" role="tablist" aria-label="Filtrar publicações">
-                <button type="button" class="comunidade-filter is-active" id="comunidade-tab-all" data-kind="" role="tab" aria-selected="true" aria-controls="comunidade-feed" tabindex="0">Tudo</button>
-                <button type="button" class="comunidade-filter" id="comunidade-tab-plant" data-kind="plant_id" role="tab" aria-selected="false" aria-controls="comunidade-feed" tabindex="-1">Que planta é essa?</button>
-                <button type="button" class="comunidade-filter" id="comunidade-tab-diary" data-kind="diary" role="tab" aria-selected="false" aria-controls="comunidade-feed" tabindex="-1">Diário</button>
+            <div class="comunidade-feed-toolbar">
+                <h2 class="comunidade-feed-title">Publicações</h2>
+                <div class="comunidade-filters" role="tablist" aria-label="Filtrar publicações">
+                    <button type="button" class="comunidade-filter is-active" id="comunidade-tab-all" data-kind="" role="tab" aria-selected="true" aria-controls="comunidade-feed" tabindex="0">Tudo</button>
+                    <button type="button" class="comunidade-filter" id="comunidade-tab-plant" data-kind="plant_id" role="tab" aria-selected="false" aria-controls="comunidade-feed" tabindex="-1">Identificação</button>
+                    <button type="button" class="comunidade-filter" id="comunidade-tab-diary" data-kind="diary" role="tab" aria-selected="false" aria-controls="comunidade-feed" tabindex="-1">Diário</button>
+                </div>
             </div>
 
             <div id="comunidade-feed" class="comunidade-feed" role="tabpanel" aria-labelledby="comunidade-tab-all" tabindex="0" aria-live="polite">
@@ -95,14 +108,14 @@
     </main>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=291"></script>
-    <script src="/js/i18n-data.js?v=291"></script>
-    <script src="/js/i18n.js?v=291"></script>
-    <script src="/js/ferramentas-nav-data.js?v=291"></script>
-    <script src="/js/layout.js?v=291"></script>
-    <script src="/js/site-features.js?v=291"></script>
-    <script src="/js/media-upload.js?v=291"></script>
-    <script src="/js/comunidade.js?v=291"></script>
+  <script src="/js/app-version-check.js?v=292"></script>
+    <script src="/js/i18n-data.js?v=292"></script>
+    <script src="/js/i18n.js?v=292"></script>
+    <script src="/js/ferramentas-nav-data.js?v=292"></script>
+    <script src="/js/layout.js?v=292"></script>
+    <script src="/js/site-features.js?v=292"></script>
+    <script src="/js/media-upload.js?v=292"></script>
+    <script src="/js/comunidade.js?v=292"></script>
 
 </body>
 </html>

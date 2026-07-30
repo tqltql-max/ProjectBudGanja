@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const feedEl = document.getElementById('comunidade-feed');
   const loadMoreBtn = document.getElementById('comunidade-load-more');
   const ctaEl = document.getElementById('comunidade-cta');
+  const ctaLoggedEl = document.getElementById('comunidade-cta-logged');
   const plantForm = document.getElementById('comunidade-plant-id-form');
   const plantGuest = document.getElementById('comunidade-plant-id-guest');
   const plantLogin = document.getElementById('comunidade-plant-id-login');
@@ -10,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const plantSelectBtn = document.getElementById('comunidade-plant-id-select-btn');
   const plantCaptureBtn = document.getElementById('comunidade-plant-id-capture-btn');
   const plantClearBtn = document.getElementById('comunidade-plant-id-clear-btn');
+  const plantPhotoZone = document.getElementById('comunidade-plant-id-photo-zone');
+  const plantPhotoEmpty = document.getElementById('comunidade-plant-id-photo-empty');
   const plantPreviewWrap = document.getElementById('comunidade-plant-id-preview-wrap');
   const plantPreview = document.getElementById('comunidade-plant-id-preview');
   const plantCaption = document.getElementById('comunidade-plant-id-caption');
@@ -57,24 +60,20 @@ document.addEventListener('DOMContentLoaded', () => {
       const res = await fetch('/api/user/me', { credentials: 'include' });
       if (!res.ok) {
         authUser = null;
-        if (ctaEl) {
-          ctaEl.href = '/entrar.html?returnTo=' + encodeURIComponent('/cultivo/');
-          ctaEl.textContent = 'Entrar para partilhar';
-        }
         if (plantGuest) plantGuest.hidden = false;
         if (plantForm) plantForm.hidden = true;
         if (plantLogin) {
           plantLogin.href = '/entrar.html?returnTo=' + encodeURIComponent('/comunidade/#comunidade-plant-id');
         }
+        if (ctaEl) {
+          ctaEl.href = '/entrar.html?returnTo=' + encodeURIComponent('/cultivo/');
+        }
         return;
       }
       authUser = await res.json();
-      if (ctaEl) {
-        ctaEl.href = '/cultivo/';
-        ctaEl.textContent = 'Enviar do diário';
-      }
       if (plantGuest) plantGuest.hidden = true;
       if (plantForm) plantForm.hidden = false;
+      if (ctaLoggedEl) ctaLoggedEl.href = '/cultivo/';
     } catch (e) {
       authUser = null;
     }
@@ -257,6 +256,12 @@ document.addEventListener('DOMContentLoaded', () => {
     return fallback;
   }
 
+  function syncPlantPhotoUi(hasPhoto) {
+    if (plantPreviewWrap) plantPreviewWrap.hidden = !hasPhoto;
+    if (plantPhotoEmpty) plantPhotoEmpty.hidden = !!hasPhoto;
+    if (plantPhotoZone) plantPhotoZone.classList.toggle('has-photo', !!hasPhoto);
+  }
+
   function clearPlantPhoto() {
     pendingFile = null;
     if (previewObjectUrl) {
@@ -264,9 +269,9 @@ document.addEventListener('DOMContentLoaded', () => {
       previewObjectUrl = '';
     }
     if (plantPreview) plantPreview.removeAttribute('src');
-    if (plantPreviewWrap) plantPreviewWrap.hidden = true;
     if (plantFile) plantFile.value = '';
     if (plantCapture) plantCapture.value = '';
+    syncPlantPhotoUi(false);
   }
 
   function setPlantPhotoFromInput(inputEl) {
@@ -277,11 +282,11 @@ document.addEventListener('DOMContentLoaded', () => {
       URL.revokeObjectURL(previewObjectUrl);
       previewObjectUrl = '';
     }
-    if (plantPreview && plantPreviewWrap) {
+    if (plantPreview) {
       previewObjectUrl = URL.createObjectURL(file);
       plantPreview.src = previewObjectUrl;
-      plantPreviewWrap.hidden = false;
     }
+    syncPlantPhotoUi(true);
     setPlantStatus('');
     // Limpa o outro input para poder voltar a escolher/capturar o mesmo ficheiro.
     if (inputEl === plantFile && plantCapture) plantCapture.value = '';
