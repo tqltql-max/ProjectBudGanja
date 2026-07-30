@@ -10680,12 +10680,6 @@ a.radio-mini-btn-open:hover {
     margin: 0;
 }
 
-.comunidade-more-wrap {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
 .comunidade-card {
     border: 1px solid var(--color-border, rgba(61, 92, 40, 0.25));
     border-radius: var(--radius-md, 12px);
@@ -10957,8 +10951,10 @@ a.radio-mini-btn-open:hover {
 
 .comunidade-more-wrap,
 .comunidade-empty {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin: 1.5rem 0;
+    margin: 0;
 }
 
 .perfil-grow-entry-community {
