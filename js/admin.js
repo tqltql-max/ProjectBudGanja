@@ -114,10 +114,17 @@ async function uploadImage(file) {
 }
 
 function prepareImageForUpload(file) {
+  const media = window.BudGanjaMediaUpload;
+  if (media && typeof media.prepareImageForUpload === 'function') {
+    return media.prepareImageForUpload(file);
+  }
+
   const maxSide = 1600;
   const maxBytes = 900 * 1024;
+  const type = String(file.type || '');
+  const looksImage = type.indexOf('image/') === 0 || /\.(jpe?g|png|webp|gif)$/i.test(file.name || '');
 
-  if (!file.type.startsWith('image/') || file.size <= maxBytes) {
+  if (!looksImage || (type.indexOf('image/') === 0 && file.size <= maxBytes)) {
     return Promise.resolve(file);
   }
 
@@ -792,7 +799,10 @@ function initPostsPanel() {
       const f = e.target.files && e.target.files[0];
       if (!f) return;
 
-      if (!f.type.startsWith('image/')) {
+      const looksImage = (window.BudGanjaMediaUpload && window.BudGanjaMediaUpload.isImageFile)
+        ? window.BudGanjaMediaUpload.isImageFile(f)
+        : (String(f.type || '').indexOf('image/') === 0 || /\.(jpe?g|png|webp|gif)$/i.test(f.name || ''));
+      if (!looksImage) {
         result.textContent = 'Selecione um ficheiro de imagem (JPG, PNG, WebP ou GIF).';
         imageInput.value = '';
         return;
@@ -985,7 +995,9 @@ function initIconsPanel() {
       const f = e.target.files && e.target.files[0];
       if (!f) return;
 
-      if (!f.type.match(/^image\/(png|jpeg|jpg|webp)$/i)) {
+      const iconLooksOk = /^image\/(png|jpeg|jpg|pjpeg|webp)$/i.test(String(f.type || ''))
+        || (!f.type && /\.(jpe?g|png|webp)$/i.test(f.name || ''));
+      if (!iconLooksOk) {
         statusEl.textContent = 'Use PNG, JPG ou WebP.';
         return;
       }

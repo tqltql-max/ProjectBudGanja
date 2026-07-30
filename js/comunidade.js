@@ -282,8 +282,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (plantSubmit) plantSubmit.disabled = true;
       setPlantStatus('A preparar foto…');
       try {
-        const prepared = await media.prepareImageForUpload(pendingFile);
-        const data = await media.readFileAsDataUrl(prepared);
+        const data = typeof media.prepareAndReadDataUrl === 'function'
+          ? await media.prepareAndReadDataUrl(pendingFile)
+          : media.normalizeImageDataUrl(
+            await media.readFileAsDataUrl(await media.prepareImageForUpload(pendingFile)),
+            pendingFile
+          );
         if (!/^data:image\/(png|jpeg|jpg|webp|gif);base64,/i.test(String(data || ''))) {
           setPlantStatus('Formato de foto inválido após otimização. Tire de novo em JPEG.', true);
           return;

@@ -1585,22 +1585,39 @@ document.addEventListener('DOMContentLoaded', async () => {
       avatarFileEl.addEventListener('change', async () => {
         const file = avatarFileEl.files && avatarFileEl.files[0];
         if (!file) return;
-        if (file.size > 2 * 1024 * 1024) {
-          setStatus(formStatus, 'A imagem deve ter no máximo 2 MB.', true);
+        const media = window.BudGanjaMediaUpload;
+        if (!media || typeof media.isImageFile !== 'function') {
+          setStatus(formStatus, 'Recarregue a página (módulo de fotos em falta).', true);
           avatarFileEl.value = '';
           return;
         }
-        if (!/^image\/(jpeg|png|webp)$/i.test(file.type)) {
+        if (!media.isImageFile(file)) {
           setStatus(formStatus, 'Use JPG, PNG ou WebP.', true);
+          avatarFileEl.value = '';
+          return;
+        }
+        if (file.size > 25 * 1024 * 1024) {
+          setStatus(formStatus, 'A imagem deve ter no máximo 25 MB.', true);
           avatarFileEl.value = '';
           return;
         }
         avatarUploadPending = true;
         if (avatarUploadLabelEl) avatarUploadLabelEl.textContent = 'A enviar…';
-        setStatus(formStatus, 'A enviar foto…');
+        setStatus(formStatus, 'A preparar foto…');
 
         try {
-          const dataUrl = await readFileAsDataUrl(file);
+          const dataUrl = typeof media.prepareAndReadDataUrl === 'function'
+            ? await media.prepareAndReadDataUrl(file, {
+              maxSide: 1200,
+              targetBytes: 700 * 1024,
+              maxBytes: media.AVATAR_MAX_BYTES || (1.8 * 1024 * 1024)
+            })
+            : media.normalizeImageDataUrl(await readFileAsDataUrl(file), file);
+          if (!/^data:image\/(png|jpeg|jpg|webp);base64,/i.test(String(dataUrl || ''))) {
+            setStatus(formStatus, 'Formato de imagem inválido. Use JPG, PNG ou WebP.', true);
+            return;
+          }
+          setStatus(formStatus, 'A enviar foto…');
           const res = await fetch('/api/user/avatar', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -2906,11 +2923,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   async function uploadCultivoPhoto(file) {
+    const media = window.BudGanjaMediaUpload;
     const prepared = isEntryImageFile(file) ? await prepareEntryImageForUpload(file) : file;
     if (isEntryImageFile(prepared) && prepared.size > ENTRY_MEDIA_MAX_IMAGE_BYTES) {
       throw new Error('Imagem muito grande mesmo após otimização (máx. 6 MB).');
     }
-    const data = await readFileAsDataUrl(prepared);
+    let data = await readFileAsDataUrl(prepared);
+    if (isEntryImageFile(prepared) && media && typeof media.normalizeImageDataUrl === 'function') {
+      data = media.normalizeImageDataUrl(data, prepared);
+    }
     if (!/^data:image\/(png|jpeg|jpg|webp|gif);base64,/i.test(data) && !/^data:video\//i.test(data)) {
       throw new Error('Formato de foto inválido após otimização. Tire a foto de novo.');
     }

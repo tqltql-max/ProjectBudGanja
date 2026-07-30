@@ -1,5 +1,5 @@
 /**
- * Preparação partilhada de fotos para upload (comunidade + diário).
+ * Preparação partilhada de fotos para upload (comunidade + diário + avatar).
  * Objectivo: JPEG aceite pela API e payload abaixo do limite típico da Netlify (~6 MB no pedido).
  */
 (function (global) {
@@ -10,6 +10,10 @@
   var TARGET_BYTES = 900 * 1024;
   /** Limite duro alinhado com /api/cultivo/photo e com o payload Netlify. */
   var MAX_BYTES = 3.5 * 1024 * 1024;
+  /** Avatar: ficheiro decodificado máx. 2 MB na API; alvo mais baixo para o JSON caber. */
+  var AVATAR_TARGET_BYTES = 700 * 1024;
+  var AVATAR_MAX_BYTES = 1.8 * 1024 * 1024;
+  var AVATAR_MAX_SIDE = 1200;
   var MAX_RAW_BYTES = 25 * 1024 * 1024;
   var QUALITIES = [0.82, 0.72, 0.62, 0.5, 0.4];
 
@@ -20,6 +24,16 @@
     return /\.(jpe?g|png|webp|gif|heic|heif)$/i.test(file.name || '');
   }
 
+  function looksLikeJpeg(file) {
+    var type = String((file && file.type) || '').toLowerCase();
+    if (type === 'image/jpeg' || type === 'image/jpg' || type === 'image/pjpeg') return true;
+    return /\.jpe?g$/i.test((file && file.name) || '');
+  }
+
+  function isApiFriendlyImageType(type) {
+    return /^image\/(jpeg|jpg|pjpeg|png|webp|gif)$/i.test(String(type || ''));
+  }
+
   function readFileAsDataUrl(file) {
     return new Promise(function (resolve, reject) {
       var reader = new FileReader();
@@ -27,6 +41,28 @@
       reader.onerror = function () { reject(new Error('Não foi possível ler a foto.')); };
       reader.readAsDataURL(file);
     });
+  }
+
+  /** Garante prefixo data:image/... aceite pela API (Windows por vezes devolve octet-stream). */
+  function normalizeImageDataUrl(dataUrl, file) {
+    var raw = String(dataUrl || '');
+    var m = raw.match(/^data:([^;]*);base64,(.+)$/i);
+    if (!m) return raw;
+    var mime = String(m[1] || '').toLowerCase();
+    var b64 = m[2];
+    if (isApiFriendlyImageType(mime)) {
+      if (mime === 'image/pjpeg' || mime === 'image/jpg') {
+        return 'data:image/jpeg;base64,' + b64;
+      }
+      return 'data:' + mime + ';base64,' + b64;
+    }
+    if (looksLikeJpeg(file) || !mime || mime === 'application/octet-stream') {
+      return 'data:image/jpeg;base64,' + b64;
+    }
+    if (/\.png$/i.test((file && file.name) || '')) return 'data:image/png;base64,' + b64;
+    if (/\.webp$/i.test((file && file.name) || '')) return 'data:image/webp;base64,' + b64;
+    if (/\.gif$/i.test((file && file.name) || '')) return 'data:image/gif;base64,' + b64;
+    return 'data:image/jpeg;base64,' + b64;
   }
 
   function prepareImageForUpload(file, options) {
@@ -71,12 +107,13 @@
 
         var type = String(file.type || '').toLowerCase();
         var looksHeic = /heic|heif/i.test(type) || /\.(heic|heif)$/i.test(file.name || '');
-        var isJpegFamily = type === 'image/jpeg' || type === 'image/jpg' || type === 'image/png' || type === 'image/webp' || type === 'image/gif';
+        var friendlyType = isApiFriendlyImageType(type);
         var maxDim = Math.max(width, height);
         var needsResize = maxDim > maxSide;
-        var needsCompress = needsResize || file.size > targetBytes || looksHeic || !isJpegFamily;
+        // MIME vazio / pjpeg / octet-stream: re-codificar para image/jpeg limpo.
+        var needsCompress = needsResize || file.size > targetBytes || looksHeic || !friendlyType;
 
-        if (!needsCompress && file.size <= maxBytes && /^image\/(jpeg|jpg|png|webp|gif)$/i.test(type)) {
+        if (!needsCompress && file.size <= maxBytes) {
           finish(file);
           return;
         }
@@ -149,11 +186,32 @@
     });
   }
 
+  function prepareAvatarForUpload(file) {
+    return prepareImageForUpload(file, {
+      maxSide: AVATAR_MAX_SIDE,
+      targetBytes: AVATAR_TARGET_BYTES,
+      maxBytes: AVATAR_MAX_BYTES
+    });
+  }
+
+  function prepareAndReadDataUrl(file, options) {
+    return prepareImageForUpload(file, options).then(function (prepared) {
+      return readFileAsDataUrl(prepared).then(function (dataUrl) {
+        return normalizeImageDataUrl(dataUrl, prepared);
+      });
+    });
+  }
+
   global.BudGanjaMediaUpload = {
     isImageFile: isImageFile,
+    looksLikeJpeg: looksLikeJpeg,
     readFileAsDataUrl: readFileAsDataUrl,
+    normalizeImageDataUrl: normalizeImageDataUrl,
     prepareImageForUpload: prepareImageForUpload,
+    prepareAvatarForUpload: prepareAvatarForUpload,
+    prepareAndReadDataUrl: prepareAndReadDataUrl,
     TARGET_BYTES: TARGET_BYTES,
-    MAX_BYTES: MAX_BYTES
+    MAX_BYTES: MAX_BYTES,
+    AVATAR_MAX_BYTES: AVATAR_MAX_BYTES
   };
 })(typeof window !== 'undefined' ? window : globalThis);

@@ -370,23 +370,40 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     async function uploadAvatarFile(file, inputEl, idleLabel) {
       if (!file) return;
-      if (file.size > 2 * 1024 * 1024) {
-        setStatus(formStatus, 'A imagem deve ter no máximo 2 MB.', true);
+      const media = window.BudGanjaMediaUpload;
+      if (!media || typeof media.isImageFile !== 'function') {
+        setStatus(formStatus, 'Recarregue a página (módulo de fotos em falta).', true);
         if (inputEl) inputEl.value = '';
         return;
       }
-      if (file.type && !/^image\/(jpeg|png|webp|heic|heif)$/i.test(file.type) && !file.type.startsWith('image/')) {
+      if (!media.isImageFile(file)) {
         setStatus(formStatus, 'Use uma imagem (JPG, PNG ou WebP).', true);
+        if (inputEl) inputEl.value = '';
+        return;
+      }
+      if (file.size > 25 * 1024 * 1024) {
+        setStatus(formStatus, 'A imagem deve ter no máximo 25 MB.', true);
         if (inputEl) inputEl.value = '';
         return;
       }
       avatarUploadPending = true;
       if (avatarUploadLabelEl) avatarUploadLabelEl.textContent = 'A enviar…';
       if (avatarCaptureLabelEl) avatarCaptureLabelEl.textContent = 'A enviar…';
-      setStatus(formStatus, 'A enviar foto…');
+      setStatus(formStatus, 'A preparar foto…');
 
       try {
-        const dataUrl = await readFileAsDataUrl(file);
+        const dataUrl = typeof media.prepareAndReadDataUrl === 'function'
+          ? await media.prepareAndReadDataUrl(file, {
+            maxSide: 1200,
+            targetBytes: 700 * 1024,
+            maxBytes: media.AVATAR_MAX_BYTES || (1.8 * 1024 * 1024)
+          })
+          : media.normalizeImageDataUrl(await readFileAsDataUrl(file), file);
+        if (!/^data:image\/(png|jpeg|jpg|webp);base64,/i.test(String(dataUrl || ''))) {
+          setStatus(formStatus, 'Formato de imagem inválido. Use JPG, PNG ou WebP.', true);
+          return;
+        }
+        setStatus(formStatus, 'A enviar foto…');
         const res = await fetch('/api/user/avatar', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
