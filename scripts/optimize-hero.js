@@ -1,8 +1,9 @@
 'use strict';
 
 /**
- * Gera variantes leves do banner principal a partir de imagens/background-hero.png.
- * Saídas: WebP/AVIF responsivos + JPEG de fallback (CSS e <img>).
+ * Gera variantes leves do banner a partir de imagens/background-hero.png.
+ * Preserva a composição e a proporção do PNG (sem crop 5:1).
+ * Saídas: WebP/AVIF responsivos + JPEG de fallback.
  */
 const fs = require('fs');
 const path = require('path');
@@ -13,6 +14,7 @@ const SRC = path.join(ROOT, 'imagens', 'background-hero.png');
 const OUT_DIR = path.join(ROOT, 'imagens');
 const WIDTHS = [640, 960, 1400];
 const META_PATH = path.join(OUT_DIR, 'background-hero.meta.json');
+const PIPELINE_ID = 'png-aspect-inside-v1';
 
 async function loadSharp() {
   try {
@@ -33,11 +35,11 @@ function kb(n) {
 async function writeVariant(sharp, pipeline, outPath, encoder) {
   let img = pipeline.clone();
   if (encoder === 'webp') {
-    img = img.webp({ quality: 74, effort: 5 });
+    img = img.webp({ quality: 78, effort: 5 });
   } else if (encoder === 'avif') {
-    img = img.avif({ quality: 52, effort: 4 });
+    img = img.avif({ quality: 55, effort: 4 });
   } else if (encoder === 'jpeg') {
-    img = img.jpeg({ quality: 78, mozjpeg: true, chromaSubsampling: '4:2:0' });
+    img = img.jpeg({ quality: 82, mozjpeg: true, chromaSubsampling: '4:2:0' });
   } else {
     throw new Error('encoder desconhecido: ' + encoder);
   }
@@ -55,6 +57,7 @@ async function main() {
   const meta = {
     source: 'background-hero.png',
     sourceHash: srcHash.slice(0, 12),
+    pipeline: PIPELINE_ID,
     builtAt: new Date().toISOString(),
     widths: WIDTHS,
     files: {}
@@ -73,8 +76,13 @@ async function main() {
         'background-hero.jpg'
       ];
       const allExist = expected.every((name) => fs.existsSync(path.join(OUT_DIR, name)));
-      if (prev && prev.sourceHash === meta.sourceHash && allExist) {
-        console.log('optimize-hero: variantes em dia (hash ' + meta.sourceHash + ')');
+      if (
+        prev &&
+        prev.sourceHash === meta.sourceHash &&
+        prev.pipeline === PIPELINE_ID &&
+        allExist
+      ) {
+        console.log('optimize-hero: variantes em dia (hash ' + meta.sourceHash + ', ' + PIPELINE_ID + ')');
         return;
       }
     } catch (e) {
@@ -82,21 +90,28 @@ async function main() {
     }
   }
 
-  const base = sharp(SRC).rotate().withMetadata({ orientation: undefined });
-  const info = await base.metadata();
+  const info = await sharp(SRC).rotate().metadata();
   const srcW = info.width || 1983;
   const srcH = info.height || 793;
   meta.width = srcW;
   meta.height = srcH;
+  meta.aspectRatio = Number((srcW / srcH).toFixed(4));
 
-  console.log('optimize-hero: a gerar variantes a partir de ' + srcW + '×' + srcH + ' (' + kb(fs.statSync(SRC).size) + ')…');
+  console.log(
+    'optimize-hero: a gerar a partir de background-hero.png ' +
+    srcW + '×' + srcH + ' (' + kb(fs.statSync(SRC).size) + ')…'
+  );
 
   for (const w of WIDTHS) {
     const targetW = Math.min(w, srcW);
-    const h = Math.max(1, Math.round((srcH * targetW) / srcW));
+    const targetH = Math.max(1, Math.round((srcH * targetW) / srcW));
     const resized = sharp(SRC)
       .rotate()
-      .resize(targetW, h, { fit: 'inside', withoutEnlargement: true });
+      .withMetadata({ orientation: undefined })
+      .resize(targetW, targetH, {
+        fit: 'inside',
+        withoutEnlargement: true
+      });
 
     const suffix = w === Math.max(...WIDTHS) ? '' : '-' + w;
     const webpName = 'background-hero' + suffix + '.webp';
@@ -105,13 +120,13 @@ async function main() {
     const avifPath = path.join(OUT_DIR, avifName);
 
     const webpSize = await writeVariant(sharp, resized, webpPath, 'webp');
-    console.log('  → ' + webpName + ' (' + targetW + 'w, ' + kb(webpSize) + ')');
-    meta.files[webpName] = { width: targetW, height: h, bytes: webpSize };
+    console.log('  → ' + webpName + ' (' + targetW + '×' + targetH + ', ' + kb(webpSize) + ')');
+    meta.files[webpName] = { width: targetW, height: targetH, bytes: webpSize };
 
     try {
       const avifSize = await writeVariant(sharp, resized, avifPath, 'avif');
-      console.log('  → ' + avifName + ' (' + targetW + 'w, ' + kb(avifSize) + ')');
-      meta.files[avifName] = { width: targetW, height: h, bytes: avifSize };
+      console.log('  → ' + avifName + ' (' + targetW + '×' + targetH + ', ' + kb(avifSize) + ')');
+      meta.files[avifName] = { width: targetW, height: targetH, bytes: avifSize };
     } catch (e) {
       console.warn('  aviso AVIF ' + avifName + ':', e.message);
     }
@@ -119,8 +134,8 @@ async function main() {
     if (w === Math.max(...WIDTHS)) {
       const jpgPath = path.join(OUT_DIR, 'background-hero.jpg');
       const jpgSize = await writeVariant(sharp, resized, jpgPath, 'jpeg');
-      console.log('  → background-hero.jpg (' + targetW + 'w, ' + kb(jpgSize) + ')');
-      meta.files['background-hero.jpg'] = { width: targetW, height: h, bytes: jpgSize };
+      console.log('  → background-hero.jpg (' + targetW + '×' + targetH + ', ' + kb(jpgSize) + ')');
+      meta.files['background-hero.jpg'] = { width: targetW, height: targetH, bytes: jpgSize };
     }
   }
 

@@ -242,54 +242,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  function readFileAsDataUrl(file) {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = reject;
-      reader.readAsDataURL(file);
-    });
-  }
+  const media = window.BudGanjaMediaUpload || null;
 
-  function prepareImageForUpload(file) {
-    return new Promise((resolve) => {
-      if (!file || !String(file.type || '').startsWith('image/')) {
-        resolve(file);
-        return;
-      }
-      if (file.size <= 1.4 * 1024 * 1024) {
-        resolve(file);
-        return;
-      }
-      const img = new Image();
-      const url = URL.createObjectURL(file);
-      img.onload = () => {
-        URL.revokeObjectURL(url);
-        const maxSide = 1600;
-        let w = img.naturalWidth || img.width;
-        let h = img.naturalHeight || img.height;
-        const scale = Math.min(1, maxSide / Math.max(w, h));
-        w = Math.max(1, Math.round(w * scale));
-        h = Math.max(1, Math.round(h * scale));
-        const canvas = document.createElement('canvas');
-        canvas.width = w;
-        canvas.height = h;
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(img, 0, 0, w, h);
-        canvas.toBlob((blob) => {
-          if (!blob) {
-            resolve(file);
-            return;
-          }
-          resolve(new File([blob], 'plant.jpg', { type: 'image/jpeg' }));
-        }, 'image/jpeg', 0.85);
-      };
-      img.onerror = () => {
-        URL.revokeObjectURL(url);
-        resolve(file);
-      };
-      img.src = url;
-    });
+  function apiErrorMessage(res, data, fallback) {
+    if (data && data.error) return String(data.error);
+    if (res && res.status === 413) return 'Foto demasiado grande para o servidor. Tente uma foto mais leve.';
+    if (res && res.status === 401) return 'Sessão expirada. Entre de novo e tente publicar.';
+    if (res && res.status >= 500) return 'Erro no servidor ao enviar a foto. Tente de novo dentro de instantes.';
+    return fallback;
   }
 
   if (plantFile) {
@@ -315,11 +275,20 @@ document.addEventListener('DOMContentLoaded', () => {
         setPlantStatus('Escolha uma foto da planta.', true);
         return;
       }
+      if (!media || typeof media.prepareImageForUpload !== 'function') {
+        setPlantStatus('Recarregue a página (módulo de fotos em falta).', true);
+        return;
+      }
       if (plantSubmit) plantSubmit.disabled = true;
-      setPlantStatus('A enviar foto…');
+      setPlantStatus('A preparar foto…');
       try {
-        const prepared = await prepareImageForUpload(pendingFile);
-        const data = await readFileAsDataUrl(prepared);
+        const prepared = await media.prepareImageForUpload(pendingFile);
+        const data = await media.readFileAsDataUrl(prepared);
+        if (!/^data:image\/(png|jpeg|jpg|webp|gif);base64,/i.test(String(data || ''))) {
+          setPlantStatus('Formato de foto inválido após otimização. Tire de novo em JPEG.', true);
+          return;
+        }
+        setPlantStatus('A enviar foto…');
         const upRes = await fetch('/api/cultivo/photo', {
           method: 'POST',
           credentials: 'include',
@@ -328,7 +297,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         const upData = await upRes.json().catch(() => ({}));
         if (!upRes.ok) {
-          setPlantStatus(upData.error || 'Não foi possível enviar a foto.', true);
+          setPlantStatus(apiErrorMessage(upRes, upData, 'Não foi possível enviar a foto.'), true);
+          return;
+        }
+        if (!upData.url || String(upData.url).indexOf('/uploads/') !== 0) {
+          setPlantStatus('O servidor não devolveu o URL da foto.', true);
           return;
         }
         setPlantStatus('A publicar pedido…');
@@ -343,7 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         const payload = await res.json().catch(() => ({}));
         if (!res.ok) {
-          setPlantStatus(payload.error || 'Não foi possível publicar.', true);
+          setPlantStatus(apiErrorMessage(res, payload, 'Não foi possível publicar.'), true);
           return;
         }
         setPlantStatus('Pedido publicado — a comunidade pode ajudar nos comentários.');
@@ -353,10 +326,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (plantPreviewWrap) plantPreviewWrap.hidden = true;
         activateFilterTab(filterBtns.find((b) => b.getAttribute('data-kind') === 'plant_id') || filterBtns[0]);
         nextCursor = null;
-        await loadFeed(false);
-        if (feedEl) feedEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        try {
+          await loadFeed(false);
+          if (feedEl) feedEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } catch (feedErr) { /* publicação ok; feed atualiza ao recarregar */ }
       } catch (err) {
-        setPlantStatus('Servidor indisponível.', true);
+        const msg = err && err.message ? String(err.message) : '';
+        setPlantStatus(msg || 'Servidor indisponível. Verifique a ligação e tente de novo.', true);
       } finally {
         if (plantSubmit) plantSubmit.disabled = false;
       }

@@ -1,7 +1,8 @@
 {
   "source": "background-hero.png",
   "sourceHash": "0d6b109d9575",
-  "builtAt": "2026-07-30T16:42:43.597Z",
+  "pipeline": "png-aspect-inside-v1",
+  "builtAt": "2026-07-30T18:57:34.812Z",
   "widths": [
     640,
     960,
@@ -11,39 +12,40 @@
     "background-hero-640.webp": {
       "width": 640,
       "height": 256,
-      "bytes": 45572
+      "bytes": 51290
     },
     "background-hero-640.avif": {
       "width": 640,
       "height": 256,
-      "bytes": 28568
+      "bytes": 32827
     },
     "background-hero-960.webp": {
       "width": 960,
       "height": 384,
-      "bytes": 92060
+      "bytes": 103968
     },
     "background-hero-960.avif": {
       "width": 960,
       "height": 384,
-      "bytes": 59530
+      "bytes": 67600
     },
     "background-hero.webp": {
       "width": 1400,
       "height": 560,
-      "bytes": 173966
+      "bytes": 194264
     },
     "background-hero.avif": {
       "width": 1400,
       "height": 560,
-      "bytes": 111035
+      "bytes": 124812
     },
     "background-hero.jpg": {
       "width": 1400,
       "height": 560,
-      "bytes": 184949
+      "bytes": 209763
     }
   },
   "width": 1983,
-  "height": 793
+  "height": 793,
+  "aspectRatio": 2.5006
 }

@@ -2115,28 +2115,36 @@ body[data-page="admin"] .admin-studio-row {
     padding: var(--space-page-top) var(--space-page-x) var(--space-section);
 }
 
-/* Home: banner full-bleed — faixa larga, sem ocupar a viewport inteira */
+/* Home: banner na proporção do background-hero.png (1983×793), teto 340px */
 body[data-page="home"] .hero {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     width: 100%;
-    min-height: clamp(220px, 38vh, 420px);
-    min-height: clamp(220px, 38dvh, 420px);
+    height: min(340px, calc(100vw * 793 / 1983));
+    min-height: 160px;
+    max-height: 340px;
     aspect-ratio: auto;
-    max-height: none;
-    background-color: #12180a;
+    background-color: #0c1208;
     background-image: none;
     padding: 0;
     overflow: hidden;
     isolation: isolate;
 }
 
-/* Bleed desligado — a imagem cobre o hero inteiro */
 body[data-page="home"] .hero::after {
     display: none;
     content: none;
+}
+
+body[data-page="home"] .hero > picture {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 body[data-page="home"] .hero-media {
@@ -2165,14 +2173,20 @@ body[data-page="home"] .hero-content {
     width: 100%;
     margin-top: 0;
     justify-content: center;
-    padding: clamp(16px, 3vw, 32px) var(--space-page-x);
+    padding: clamp(12px, 2vw, 22px) var(--space-page-x);
     box-sizing: border-box;
     animation: none !important;
 }
 
 @media (max-width: 720px) {
+    body[data-page="home"] .hero {
+        height: min(220px, calc(100vw * 793 / 1983));
+        max-height: 220px;
+        min-height: 140px;
+    }
+
     body[data-page="home"] .hero-content {
-        padding: clamp(14px, 4vw, 24px) var(--space-page-x);
+        padding: clamp(10px, 3vw, 16px) var(--space-page-x);
     }
 }
 
@@ -2187,15 +2201,14 @@ body[data-page="home"] .hero-content {
     z-index: 1;
 }
 
-/* Vinheta leve para ler o texto sobre o banner em viewport cheia */
 body[data-page="home"] .hero::before {
     z-index: 1;
     background: linear-gradient(
         180deg,
-        rgba(12, 18, 8, 0.35) 0%,
-        rgba(12, 18, 8, 0.12) 38%,
-        rgba(12, 18, 8, 0.18) 62%,
-        rgba(12, 18, 8, 0.42) 100%
+        rgba(12, 18, 8, 0.22) 0%,
+        rgba(12, 18, 8, 0.06) 42%,
+        rgba(12, 18, 8, 0.1) 68%,
+        rgba(12, 18, 8, 0.3) 100%
     );
     pointer-events: none;
 }

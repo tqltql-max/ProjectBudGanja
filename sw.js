@@ -22,6 +22,8 @@ const urlsToCache = [
     '/js/planejamento.js',
     '/js/cultivo.js',
     '/js/cultivo/shared.js',
+    '/js/media-upload.js',
+    '/js/comunidade.js',
     '/js/cultivo/onboarding.js',
     '/js/cultivo-phase-weeks-data.js',
     '/css/pages/cultivo-perfil.css',

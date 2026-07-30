@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   let lastMetricHapticAt = 0;
 
   const ENTRY_MEDIA_MAX_ITEMS = 4;
-  const ENTRY_MEDIA_MAX_IMAGE_BYTES = 6 * 1024 * 1024;
+  const ENTRY_MEDIA_MAX_IMAGE_BYTES = Math.floor(3.5 * 1024 * 1024);
   const ENTRY_MEDIA_MAX_IMAGE_RAW_BYTES = 25 * 1024 * 1024;
   const ENTRY_MEDIA_MAX_VIDEO_BYTES = 25 * 1024 * 1024;
   const ENTRY_IMAGE_MAX_SIDE = 1600;
@@ -2778,7 +2778,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         ctx.drawImage(img, 0, 0, width, height);
 
-        const qualities = [0.82, 0.72, 0.62, 0.5];
+        // Alvo ~900 KB: base64 + JSON precisa caber no limite ~6 MB da Netlify.
+        const qualities = [0.82, 0.72, 0.62, 0.5, 0.4];
+        const netlifySafeMax = 3.5 * 1024 * 1024;
         const baseName = String(file.name || 'foto-cultivo').replace(/\.[^.]+$/, '') || 'foto-cultivo';
 
         function encodeAt(index) {
@@ -2788,12 +2790,14 @@ document.addEventListener('DOMContentLoaded', async () => {
               fail('Falha ao converter a foto para JPEG.');
               return;
             }
-            if (blob.size > ENTRY_MEDIA_MAX_IMAGE_BYTES && index < qualities.length - 1) {
+            const overTarget = blob.size > ENTRY_IMAGE_TARGET_BYTES && index < qualities.length - 1;
+            const overSafe = blob.size > netlifySafeMax && index < qualities.length - 1;
+            if (overTarget || overSafe) {
               encodeAt(index + 1);
               return;
             }
-            if (blob.size > ENTRY_MEDIA_MAX_IMAGE_BYTES) {
-              fail('Imagem muito grande mesmo após otimização (máx. 6 MB).');
+            if (blob.size > ENTRY_MEDIA_MAX_IMAGE_BYTES || blob.size > netlifySafeMax) {
+              fail('Imagem muito grande mesmo após otimização. Tire outra foto ou reduza a resolução.');
               return;
             }
             finish(new File([blob], baseName + '.jpg', { type: 'image/jpeg', lastModified: Date.now() }));
@@ -3414,7 +3418,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         cultivoCommunityConfirm.disabled = false;
         cultivoCommunityConfirm.textContent = 'Publicar';
       }
-      setCommunityModalStatus('Servidor indisponível.', true);
+      setCommunityModalStatus('Servidor indisponível. Verifique a ligação e tente de novo.', true);
     }
   }
 
