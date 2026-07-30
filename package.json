@@ -17,8 +17,8 @@
     "sync:pages:all": "npm run sync:pages && npm run sync:pages:db",
     "build:guia": "node scripts/build-guia-cultivo.js",
     "build:youtube": "node scripts/build-youtube-feed.js",
-    "build:jardimhg": "node scripts/build-jardimhg-catalog.js",
     "build:radio": "node scripts/build-radio-playlist.js",
+    "build:plantas": "node scripts/build-plantas.js",
     "build:search": "node scripts/build-search-index.js",
     "build:sitemap": "node scripts/build-sitemap.js",
     "build:assetlinks": "node scripts/build-assetlinks.js",
@@ -37,7 +37,9 @@
     "check:db:naming": "node scripts/check-db-naming.js",
     "test": "node scripts/test-lib-unit.js && node scripts/test-db-persistence.js && node scripts/test-cultivo-persistence.js && node scripts/test-cultivo-submissions.js && node scripts/test-users-admin.js && node scripts/test-api-contract-persistence.js",
     "verify": "node scripts/verify.js",
-    "db:backup:schedule": "node scripts/db-backup-schedule.js"
+    "db:backup:schedule": "node scripts/db-backup-schedule.js",
+    "build:movrecam": "node scripts/build-movrecam-catalog.js",
+    "build:canabinall": "node scripts/build-canabinall-catalog.js"
   },
   "dependencies": {
     "@libsql/client": "^0.15.15",

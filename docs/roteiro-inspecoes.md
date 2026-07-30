@@ -1,26 +1,38 @@
 # Roteiro de Inspeções
 
-Use este roteiro para criar novas inspeções de canais, séries ou métodos no Inspetor BudGanja.
+Use este roteiro para criar novas inspeções de canais, séries, equipamentos, cursos ou **lojas do nicho cultivo** no Inspetor BudGanja.
 
 ## Objetivo
 
-Transformar um canal ou tema técnico em um relatório editorial reutilizável, com catálogo, método e links para ferramentas do site.
+Transformar um canal, tema técnico ou vitrine comercial em um relatório editorial reutilizável, com catálogo, método e links para ferramentas do site.
+
+## Tipos no hub (`/biblioteca/inspecoes/`)
+
+| Tipo | `series` (convenção) | Exemplo de slug |
+|------|----------------------|-----------------|
+| Canais | `canal-<nome>` | `inspecao-canal-movrecam` |
+| Equipamentos | `verificacao-equipamento` | `inspecao-marshydro-brasil` |
+| Cursos | `formacao-academica` | Extensão académica | `inspecao-curso-unifesp-…` |
+| **Lojas** | `loja-cultivo` | `inspecao-loja-floraurbana` |
+| **Insumos** | `insumos-cultivo` | `inspecao-insumo-biobizz` |
 
 ## Fontes
 
 - Canal público do YouTube ou feed exportado localmente
 - Títulos, resumos e datas dos vídeos
+- **Lojas:** home, catálogo, FAQ/institucional, políticas de envio e pagamento (ex.: [floraurbana420.com.br](https://floraurbana420.com.br/))
 - Páginas do site que complementam o tema: calculadoras, manuais, pesquisas e inspeções relacionadas
 
 ## Passo a passo
 
-1. Defina o recorte: canal inteiro, série de vídeos ou tópico específico.
-2. Liste os vídeos e confirme títulos, datas e descrições.
+1. Defina o recorte: canal inteiro, série de vídeos, equipamento, curso ou **loja**.
+2. Liste as fontes (vídeos, fichas técnicas ou páginas da vitrine) e confirme datas.
 3. Agrupe o acervo por temas com palavras-chave simples.
-4. Escreva o bloco `## Hipóteses e método` com 2 hipóteses e 4 passos objetivos.
-5. Produza o catálogo completo e, se couber, um embed de referência com `@youtube`.
+4. Escreva o bloco `## Hipóteses e método` com 2–3 hipóteses e passos objetivos.
+5. Produza o catálogo / mapa temático e, se couber, um embed com `@youtube`.
 6. Relacione o material com calculadoras, manuais e inspeções já publicadas.
 7. Feche com um `Status` claro: aprovado, em revisão ou referência externa.
+8. Em lojas: declare **independência** (sem afiliação), registe a data da visita e o enquadramento legal/editorial das sementes de coleção.
 
 ## Estrutura recomendada do post
 
@@ -28,20 +40,22 @@ Transformar um canal ou tema técnico em um relatório editorial reutilizável, 
 - `## Objeto inspecionado`
 - `## Hipóteses e método`
 - `## Perfil editorial (achados)`
-- `## Mapa temático do acervo`
-- `## Catálogo completo`
-- `## Vídeo de referência (embed)`
+- `## Mapa temático do acervo` *(canais)* / `## Mapa do catálogo` *(lojas)* / medições *(equipamentos)*
+- `## Catálogo completo` *(quando aplicável)*
+- `## Vídeo de referência (embed)` *(opcional)*
 - `## Complementaridade com o Inspetor BudGanja`
 - `## Como repetir o método`
 - `## Status`
 
 ## Convenções
 
-- Use `slug` curto e previsível, por exemplo `inspecao-canal-nome`
+- Use `slug` curto e previsível, por exemplo `inspecao-canal-nome` ou `inspecao-loja-nome`
 - Guarde a série em `series` e o nome legível em `seriesLabel`
 - Escolha `seriesOrder` para manter a ordem da biblioteca
-- Prefira `coverImage` do vídeo principal do relatório
-- Mantenha os créditos do canal de origem sempre explícitos
+- Prefira `coverImage` do vídeo principal (YouTube `hqdefault`) ou PNG/JPG em `/imagens/inspecoes/`
+- Lojas sem vídeo: gravar capa em `imagens/inspecoes/loja-<slug>-cover.png` (1200×630) e apontar `coverImage`
+- Mantenha os créditos do canal / loja de origem sempre explícitos
+- Builder de lojas: `lib/loja-inspecoes-posts.js`
 
 ## Validação
 

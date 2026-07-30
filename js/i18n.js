@@ -15,11 +15,29 @@
     return 'pt-BR';
   }
 
+  function isEnglishHost() {
+    try {
+      var host = String(global.location && global.location.hostname || '').toLowerCase();
+      return host === 'inspectorbudganja.com' || host === 'www.inspectorbudganja.com';
+    } catch (e) {
+      return false;
+    }
+  }
+
   function detectLocale() {
+    try {
+      var params = new URLSearchParams((global.location && global.location.search) || '');
+      var fromQuery = normalizeLocale(params.get('lang') || params.get('locale') || '');
+      if (fromQuery && SUPPORTED.indexOf(fromQuery) !== -1) return fromQuery;
+    } catch (e) { /* ignore */ }
+
     try {
       var saved = localStorage.getItem(STORAGE_KEY);
       if (saved && SUPPORTED.indexOf(saved) !== -1) return saved;
     } catch (e) { /* ignore */ }
+
+    // www.inspectorbudganja.com → versão em inglês por defeito
+    if (isEnglishHost()) return 'en';
 
     var list = (navigator.languages && navigator.languages.length)
       ? navigator.languages
@@ -115,6 +133,16 @@
       if (!key) return;
       var value = t(key, el.getAttribute('title') || '');
       if (value) el.setAttribute('title', value);
+    });
+
+    document.querySelectorAll('[data-i18n-tip]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-tip');
+      if (!key) return;
+      var value = t(key, el.getAttribute('data-tip') || '');
+      if (!value) return;
+      el.setAttribute('data-tip', value);
+      var tipEl = el.querySelector('.app-tile-tip');
+      if (tipEl) tipEl.textContent = value;
     });
   }
 

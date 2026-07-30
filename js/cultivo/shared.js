@@ -27,11 +27,11 @@
   var SELECTED_GROW_KEY = 'budganja_selected_grow_id';
   var SUBMISSION_NOTIFY_KEY = 'budganja_submission_notify_v1';
   var PHASE_INSPECTION_LINKS = {
-    planejamento: { label: 'Inspeção: início do cultivo', href: '/posts/post-inspecao-cultivo-inicio.html' },
-    germinacao: { label: 'Inspeção: propagação e clonagem', href: '/posts/post-inspecao-propagacao-clonagem.html' },
-    vegetativo: { label: 'Inspeção: nutrição', href: '/posts/post-inspecao-nutricao-cannabis.html' },
-    floracao: { label: 'Inspeção: ciência da floração', href: '/posts/post-inspecao-ciencia-floracao.html' },
-    colheita: { label: 'Inspeção: solo vivo orgânico', href: '/posts/post-inspecao-solo-vivo-organico.html' }
+    planejamento: { label: 'Inspeções do laboratório', href: '/biblioteca/inspecoes/' },
+    germinacao: { label: 'Clonadora 6 estacas', href: '/equipamentos/clonadora-6-estacas.html' },
+    vegetativo: { label: 'Calculadora EC', href: '/calculadoras/cultivo-lab.html?mode=ec' },
+    floracao: { label: 'Calculadora VPD', href: '/calculadoras/cultivo-lab.html?mode=vpd' },
+    colheita: { label: 'Calculadora Super Solo', href: '/calculadoras/super-solo.html' }
   };
   var DEFAULT_AVATAR = '/imagens/avatars/inspector.svg';
   var PRESET_AVATARS = [

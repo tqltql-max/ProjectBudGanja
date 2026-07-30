@@ -633,11 +633,11 @@ async function isServerAvailable() {
 
 const DEFAULT_SITE = {
   siteName: 'Inspetor BudGanja',
-  siteTagline: 'Laboratório de cultivo',
-  footerText: '© 2026 Inspetor BudGanja. Conteúdo educacional.',
-  privacyUpdated: '26 de junho de 2026',
-  ogImage: '/imagens/background-hero.svg',
-  contactEmail: 'inspetorbudganja@gmail.com',
+  siteTagline: 'Laboratório de fitoterapia brasileira',
+  footerText: '© 2026 Inspetor BudGanja. Conteúdo educacional sobre plantas medicinais do Brasil.',
+  privacyUpdated: '29 de julho de 2026',
+  ogImage: '/imagens/og-default.jpg',
+  contactEmail: 'tql.tql@gmail.com',
   youtubeChannelUrl: 'https://www.youtube.com/@InspetorBudGanja',
   youtubeChannelLabel: 'Canal @InspetorBudGanja',
   spotifyPodcastUrl: 'https://open.spotify.com/show/033yuLDWnN84xOcfHyJ1FZ',
@@ -669,15 +669,16 @@ const DEFAULT_SITE = {
   ],
   footerLinks: [
     { label: 'Início', href: '/' },
+    { label: 'Plantas', href: '/plantas/' },
+    { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
     { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
-    { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
+    { label: 'Extensão académica', href: '/biblioteca/inspecoes/' },
     { label: 'Vídeos', href: '/videos/' },
     { label: 'Equipamentos', href: '/equipamentos/' },
     { label: 'Ferramentas', href: '/calculadoras/' },
-    { label: 'Luxímetro', href: '/calculadoras/luximetro.html' },
     { label: 'Diário de cultivo', href: '/cultivo/' },
     { label: 'Comunidade', href: '/comunidade/' },
-    { label: 'Rádio', href: '/radio/' },
+    { label: 'BudGanja Radio', href: '/radio/' },
     { label: 'Sorteios', href: '/sorteios/' },
     { label: 'Loja', href: '/loja/' }
   ],
@@ -685,8 +686,10 @@ const DEFAULT_SITE = {
     {
       title: 'Biblioteca',
       links: [
+        { label: 'Plantas', href: '/plantas/' },
+        { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
+        { label: 'Extensão académica', href: '/biblioteca/inspecoes/' },
         { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
-        { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
         { label: 'Vídeos', href: '/videos/' },
         { label: 'Equipamentos', href: '/equipamentos/' }
       ]
@@ -704,11 +707,17 @@ const DEFAULT_SITE = {
       title: 'Comunidade',
       links: [
         { label: 'Feed da comunidade', href: '/comunidade/' },
-        { label: 'Rádio', href: '/radio/' },
+        { label: 'BudGanja Radio', href: '/radio/' },
         { label: 'Sorteios', href: '/sorteios/' },
-        { label: 'Loja', href: '/loja/' },
+        { label: 'Loja', href: '/loja/' }
+      ]
+    },
+    {
+      title: 'Sobre nós',
+      links: [
         { label: 'Sobre o projeto', href: '/info/sobre.html' },
-        { label: 'Contato', href: '/info/contato.html' }
+        { label: 'Contato', href: '/info/contato.html' },
+        { label: 'Privacidade', href: '/info/privacidade.html' }
       ]
     }
   ]
@@ -725,9 +734,9 @@ function translateFooterLabel(label) {
     'Pesquisas': 'nav.research',
     'Pesquisas': 'nav.technicalResearch',
     'Inspeções': 'nav.inspections',
+    'Extensão académica': 'nav.academicExtension',
     'Equipamentos': 'nav.equipment',
     'Calculadoras': 'nav.calculators',
-    'Ferramentas': 'nav.calculators',
     'Ferramentas': 'nav.calculators',
     'Luxímetro': 'nav.luxMeter',
     'Solo': 'nav.soilCalc',
@@ -739,6 +748,7 @@ function translateFooterLabel(label) {
     'Rádio': 'nav.radio',
     'Sorteios': 'nav.giveaways',
     'Sobre o projeto': 'nav.aboutProject',
+    'Privacidade': 'nav.privacy',
     'Contato': 'nav.contact',
     'Privacidade': 'nav.privacy',
     'Loja': 'nav.shop',
@@ -944,7 +954,9 @@ function buildSubmenuLinkHTML(child) {
     ? '<span class="nav-item-desc">' + escapeNavText(child.desc) + '</span>'
     : '';
   const featuredClass = child.featured ? ' nav-rich-link--featured' : '';
-  const badge = child.featured ? '<span class="nav-item-badge">Destaque</span>' : '';
+  const badge = child.featured
+    ? '<span class="nav-item-badge">' + escapeNavText(i18n('common.featured', 'Destaque')) + '</span>'
+    : '';
   const tipText = child.desc || child.description || '';
   const tip = hoverTipMarkup(tipText);
 
@@ -1149,12 +1161,20 @@ function getSiteHubNav() {
   return {
     quick: [
       {
-        href: '/biblioteca/pesquisas/',
-        icon: '🔬',
-        label: i18n('nav.technicalResearch', 'Pesquisas'),
-        tip: i18n('nav.quickResearchTip', 'Pesquisas do laboratório e da comunidade'),
-        prefixes: '/biblioteca/pesquisas',
-        tone: 'pesquisas'
+        href: '/plantas/',
+        icon: '🌿',
+        label: i18n('nav.plants', 'Plantas'),
+        tip: i18n('nav.quickPlantsTip', 'Catálogo de plantas fitoterápicas do Brasil'),
+        prefixes: '/plantas',
+        tone: 'comunidade'
+      },
+      {
+        href: '/biblioteca/unifesp/',
+        icon: '🎓',
+        label: i18n('nav.unifesp', 'UNIFESP'),
+        tip: i18n('nav.quickUnifespTip', 'Curso de extensão UNIFESP sobre cannabis medicinal'),
+        prefixes: '/biblioteca/unifesp,/posts/post-inspecao-curso-unifesp',
+        tone: 'inspecoes'
       },
       {
         href: '/biblioteca/inspecoes/',
@@ -1165,12 +1185,12 @@ function getSiteHubNav() {
         tone: 'inspecoes'
       },
       {
-        href: '/videos/',
-        icon: '▶',
-        label: i18n('nav.videos', 'Vídeos'),
-        tip: i18n('nav.quickVideosTip', 'Últimos vídeos do canal'),
-        prefixes: '/videos',
-        tone: 'videos'
+        href: '/biblioteca/pesquisas/',
+        icon: '🔬',
+        label: i18n('nav.technicalResearch', 'Pesquisas'),
+        tip: i18n('nav.quickResearchTip', 'Pesquisas do laboratório e da comunidade'),
+        prefixes: '/biblioteca/pesquisas',
+        tone: 'pesquisas'
       },
       {
         href: '/calculadoras/',
@@ -1189,20 +1209,20 @@ function getSiteHubNav() {
         tone: 'equipamentos'
       },
       {
-        href: '/comunidade/',
-        icon: '🌿',
-        label: i18n('nav.community', 'Comunidade'),
-        tip: i18n('nav.quickCommunityTip', 'Feed de fotos do diário de cultivo'),
-        prefixes: '/comunidade',
-        tone: 'comunidade'
+        href: '/videos/',
+        icon: '▶',
+        label: i18n('nav.videos', 'Vídeos'),
+        tip: i18n('nav.quickVideosTip', 'Últimos vídeos do canal'),
+        prefixes: '/videos',
+        tone: 'videos'
       },
       {
-        href: '/sorteios/',
-        icon: '🎁',
-        label: i18n('nav.giveaways', 'Sorteios'),
-        tip: i18n('nav.quickGiveawaysTip', 'Promoções ativas do laboratório'),
-        prefixes: '/sorteios',
-        tone: 'sorteios'
+        href: '/radio/',
+        icon: '📻',
+        label: i18n('nav.radio', 'BudGanja Radio'),
+        tip: i18n('nav.quickRadioTip', 'Playlist BudGanja Radio'),
+        prefixes: '/radio',
+        tone: 'radio'
       }
     ],
     mobileSections: [
@@ -1212,17 +1232,24 @@ function getSiteHubNav() {
           {
             href: '/',
             icon: '🏠',
-            label: i18n('nav.home', 'Início'),
+            label: i18n('common.home', 'Início'),
             prefixes: '/',
             exact: true,
             tone: 'inicio'
           },
           {
-            href: '/biblioteca/pesquisas/',
-            icon: '🔬',
-            label: i18n('nav.technicalResearch', 'Pesquisas'),
-            prefixes: '/biblioteca/pesquisas',
-            tone: 'pesquisas'
+            href: '/plantas/',
+            icon: '🌿',
+            label: i18n('nav.plants', 'Plantas'),
+            prefixes: '/plantas',
+            tone: 'comunidade'
+          },
+          {
+            href: '/biblioteca/unifesp/',
+            icon: '🎓',
+            label: i18n('nav.unifesp', 'Curso UNIFESP'),
+            prefixes: '/biblioteca/unifesp',
+            tone: 'inspecoes'
           },
           {
             href: '/biblioteca/inspecoes/',
@@ -1230,6 +1257,13 @@ function getSiteHubNav() {
             label: i18n('nav.inspections', 'Inspeções'),
             prefixes: '/biblioteca/inspecoes,/guia',
             tone: 'inspecoes'
+          },
+          {
+            href: '/biblioteca/pesquisas/',
+            icon: '🔬',
+            label: i18n('nav.technicalResearch', 'Pesquisas'),
+            prefixes: '/biblioteca/pesquisas',
+            tone: 'pesquisas'
           },
           {
             href: '/videos/',
@@ -1279,7 +1313,7 @@ function getSiteHubNav() {
           {
             href: '/radio/',
             icon: '📻',
-            label: i18n('nav.radio', 'Rádio'),
+            label: i18n('nav.radio', 'BudGanja Radio'),
             prefixes: '/radio',
             tone: 'radio'
           },
@@ -1365,7 +1399,7 @@ function buildHeaderHTML(site, authState) {
   // Fora do menu: só pesquisa. Perfil, admin e redes ficam no hambúrguer.
   const headerToolbar =
     '<div class="header-toolbar">' +
-    '<button type="button" class="header-quick-link header-quick-link--search" id="search-toggle" aria-expanded="false" aria-label="' + escapeNavText(i18n('common.searchOpen', 'Buscar no site')) + '" title="Buscar (Ctrl+K)">' +
+    '<button type="button" class="header-quick-link header-quick-link--search" id="search-toggle" aria-expanded="false" aria-label="' + escapeNavText(i18n('common.searchOpen', 'Buscar no site')) + '" title="' + escapeNavText(i18n('common.searchShortcut', 'Buscar (Ctrl+K)')) + '">' +
     '<span class="header-quick-link-icon" aria-hidden="true">' +
     '<svg class="header-search-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">' +
     '<circle cx="10.5" cy="10.5" r="6.5"></circle>' +
@@ -1424,6 +1458,19 @@ function buildMobileNavSectionHTML(navItem) {
   );
 }
 
+function buildLangSwitcherHTML() {
+  return (
+    '<div class="lang-switcher mobile-menu-util-lang">' +
+    '<button type="button" class="lang-switcher-btn mobile-menu-util" aria-haspopup="listbox" aria-expanded="false" aria-label="' +
+    escapeNavText(i18n('common.langChoose', 'Escolher idioma')) + '">EN</button>' +
+    '<ul class="lang-switcher-menu" hidden role="listbox">' +
+    '<li><button type="button" class="lang-switcher-option" data-lang="pt-BR" role="option">Português</button></li>' +
+    '<li><button type="button" class="lang-switcher-option" data-lang="en" role="option">English</button></li>' +
+    '<li><button type="button" class="lang-switcher-option" data-lang="es" role="option">Español</button></li>' +
+    '</ul></div>'
+  );
+}
+
 function buildMobileUtilsHTML(authState, hideAuthNav) {
   const links = [];
   links.push(
@@ -1431,6 +1478,7 @@ function buildMobileUtilsHTML(authState, hideAuthNav) {
     '<span class="mobile-menu-util-icon" aria-hidden="true">⌕</span>' +
     '<span>' + escapeNavText(i18n('common.searchOpen', 'Buscar no site')) + '</span></button>'
   );
+  links.push(buildLangSwitcherHTML());
   if (!isStandaloneApp()) {
     links.push(
       '<button type="button" class="mobile-menu-util mobile-menu-util--install" data-pwa-install>' +
@@ -1443,7 +1491,7 @@ function buildMobileUtilsHTML(authState, hideAuthNav) {
     links.push(
       '<a href="' + escapeNavText(adminLink.href) + '" class="mobile-menu-util">' +
       '<span class="mobile-menu-util-icon" aria-hidden="true">⚙</span>' +
-      '<span>' + escapeNavText(adminLink.label || 'Painel') + '</span></a>'
+      '<span>' + escapeNavText(adminLink.label || i18n('common.panel', 'Painel')) + '</span></a>'
     );
   }
   if (!links.length) return '';
@@ -1495,8 +1543,8 @@ function buildMobileMenuHTML(site, authState) {
         '<a href="' + escapeNavText(userLink.href) + '" class="mobile-menu-account-link">' +
         avatar +
         '<span class="mobile-menu-account-copy">' +
-        '<strong class="mobile-menu-account-title">' + escapeNavText(userLink.label || 'Minha conta') + '</strong>' +
-        '<span class="mobile-menu-account-hint">Abrir perfil</span>' +
+        '<strong class="mobile-menu-account-title">' + escapeNavText(userLink.label || i18n('common.profile', 'Minha conta')) + '</strong>' +
+        '<span class="mobile-menu-account-hint">' + escapeNavText(i18n('common.openProfile', 'Abrir perfil')) + '</span>' +
         '</span></a></div>';
     } else {
       accountHtml =
@@ -1504,8 +1552,8 @@ function buildMobileMenuHTML(site, authState) {
         '<a href="' + escapeNavText(userLink.href) + '" class="mobile-menu-account-link mobile-menu-account-link--guest">' +
         '<span class="mobile-menu-account-avatar mobile-menu-account-avatar--guest" aria-hidden="true">👤</span>' +
         '<span class="mobile-menu-account-copy">' +
-        '<strong class="mobile-menu-account-title">' + escapeNavText(userLink.label || 'Entrar') + '</strong>' +
-        '<span class="mobile-menu-account-hint">Aceder ao perfil</span>' +
+        '<strong class="mobile-menu-account-title">' + escapeNavText(userLink.label || i18n('common.login', 'Entrar')) + '</strong>' +
+        '<span class="mobile-menu-account-hint">' + escapeNavText(i18n('common.accessProfile', 'Aceder ao perfil')) + '</span>' +
         '</span></a></div>';
     }
   }
@@ -1524,13 +1572,13 @@ function buildMobileMenuHTML(site, authState) {
 
   return (
     '<div id="mobile-menu-scrim" class="mobile-menu-scrim" aria-hidden="true"></div>' +
-    '<aside id="mobile-menu" class="mobile-menu" aria-hidden="true" aria-label="Menu de navegação">' +
+    '<aside id="mobile-menu" class="mobile-menu" aria-hidden="true" aria-label="' + escapeNavText(i18n('common.mobileNav', 'Menu de navegação')) + '">' +
     '<div class="mobile-menu-top">' +
     '<div class="mobile-menu-brand">' +
     '<img class="mobile-menu-brand-icon" src="/imagens/app-icon.v' + ASSET_V + '.png" alt="" width="28" height="28" decoding="async">' +
     '<p class="mobile-menu-title">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</p>' +
     '</div>' +
-    '<button type="button" id="mobile-menu-close" class="mobile-menu-close" aria-label="Fechar menu">×</button>' +
+    '<button type="button" id="mobile-menu-close" class="mobile-menu-close" aria-label="' + escapeNavText(i18n('common.menuClose', 'Fechar menu')) + '">×</button>' +
     '</div>' +
     '<div class="mobile-menu-body">' +
     accountHtml +
@@ -1568,7 +1616,10 @@ function mountMobileMenu(site, authState, menuToggle) {
     if (menuToggle) {
       menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       menuToggle.classList.toggle('is-active', open);
-      menuToggle.setAttribute('aria-label', open ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
+      menuToggle.setAttribute(
+        'aria-label',
+        open ? i18n('common.menuClose', 'Fechar menu de navegação') : i18n('common.menuOpen', 'Abrir menu de navegação')
+      );
     }
   }
 
@@ -1619,7 +1670,7 @@ function buildFooterHTML(site) {
   const spotifyUrl = config.spotifyPodcastUrl || DEFAULT_SITE.spotifyPodcastUrl;
   const spotifyLabel = config.spotifyPodcastLabel || DEFAULT_SITE.spotifyPodcastLabel;
   const footerGroups = config.footerGroups || DEFAULT_SITE.footerGroups;
-  const privacyDate = config.privacyUpdated || DEFAULT_SITE.privacyUpdated;
+  const privacyDate = i18n('common.privacyUpdatedDate', config.privacyUpdated || DEFAULT_SITE.privacyUpdated);
 
   const groupsHtml = footerGroups.map((group) =>
     '<div class="footer-col">' +
@@ -1682,9 +1733,8 @@ function absoluteUrl(path) {
 }
 
 function injectSeoMeta(site) {
-  const ogImage = site.ogImage || DEFAULT_SITE.ogImage;
   const head = document.head;
-  if (!head || !ogImage) return;
+  if (!head) return;
 
   const pageUrl = window.location.href.split('#')[0];
   const title = document.title || OG_SITE_NAME;
@@ -1702,9 +1752,25 @@ function injectSeoMeta(site) {
     el.setAttribute('content', value);
   }
 
-  const imageUrl = absoluteUrl(ogImage);
+  // Preferência: capa do post/página. Ícones PWA (icon-512, etc.) são fracos no WhatsApp —
+  // nesses casos usar o hero do site (igual à home).
+  const existingOg = head.querySelector('meta[property="og:image"]');
+  const existingTw = head.querySelector('meta[name="twitter:image"]');
+  const existingOgUrl = head.querySelector('meta[property="og:url"]');
+  const pageCover = (existingOg && existingOg.getAttribute('content')) ||
+    (existingTw && existingTw.getAttribute('content')) || '';
+  const siteCover = site.ogImage || DEFAULT_SITE.ogImage || '/imagens/background-hero.png';
+  function isWeakShareImage(url) {
+    return /\/imagens\/(?:icon-192|icon-512|icon-512-maskable|app-icon|apple-touch-icon|favicon)/i.test(String(url || ''));
+  }
+  const chosenCover = (pageCover && !isWeakShareImage(pageCover)) ? pageCover : siteCover;
+  const imageUrl = absoluteUrl(chosenCover || pageCover);
+  if (!imageUrl) return;
+
   ensureMeta('property', 'og:image', imageUrl);
-  ensureMeta('property', 'og:url', pageUrl);
+  if (!(existingOgUrl && existingOgUrl.getAttribute('content'))) {
+    ensureMeta('property', 'og:url', pageUrl);
+  }
   ensureMeta('property', 'og:site_name', OG_SITE_NAME);
   ensureMeta('name', 'twitter:card', 'summary_large_image');
   ensureMeta('name', 'twitter:title', title);
@@ -1714,7 +1780,8 @@ function injectSeoMeta(site) {
   if (!head.querySelector('link[rel="canonical"]')) {
     const canonical = document.createElement('link');
     canonical.rel = 'canonical';
-    canonical.href = pageUrl;
+    const existingUrl = existingOgUrl && existingOgUrl.getAttribute('content');
+    canonical.href = existingUrl || pageUrl;
     head.appendChild(canonical);
   }
 
@@ -1768,8 +1835,36 @@ function applyGeneratedNav(site) {
       next.nav = next.nav.concat([lojaItem]);
     }
   }
-  if (window.BudGanjaI18n && window.BudGanjaI18n.localizeNavTree) {
-    next.nav = window.BudGanjaI18n.localizeNavTree(next.nav);
+  return next;
+}
+
+function localizeSiteForLayout(site) {
+  if (!site) return site;
+  try {
+    var next = JSON.parse(JSON.stringify(site));
+    if (window.BudGanjaI18n && window.BudGanjaI18n.localizeNavTree && Array.isArray(next.nav)) {
+      next.nav = window.BudGanjaI18n.localizeNavTree(next.nav);
+    }
+    return next;
+  } catch (e) {
+    return site;
+  }
+}
+
+function localizeAuthForLayout(authState) {
+  if (!authState) return authState;
+  var next = Object.assign({}, authState);
+  if (next.userLink) {
+    next.userLink = Object.assign({}, next.userLink, {
+      label: next.userLink.isUser
+        ? i18n('common.profile', 'Minha conta')
+        : i18n('common.login', 'Entrar')
+    });
+  }
+  if (next.adminLink) {
+    next.adminLink = Object.assign({}, next.adminLink, {
+      label: i18n('common.panel', 'Painel')
+    });
   }
   return next;
 }
@@ -1779,19 +1874,19 @@ function applyFerramentasNav(site) {
 }
 
 async function fetchAuthState() {
-  const userFallback = { label: 'Entrar', href: '/entrar.html', isUser: false };
+  const userFallback = { label: i18n('common.login', 'Entrar'), href: '/entrar.html', isUser: false };
   const state = { userLink: userFallback, adminLink: null, isAdmin: false, isUser: false };
 
   try {
     const serverOk = await isServerAvailable();
-    if (!serverOk) return state;
+    if (!serverOk) return localizeAuthForLayout(state);
 
     try {
       const res = await fetch('/api/user/me', { credentials: 'include' });
       if (res.ok) {
         const data = await res.json();
         state.userLink = {
-          label: 'Minha conta',
+          label: i18n('common.profile', 'Minha conta'),
           href: '/perfil.html',
           isUser: true,
           picture: data.picture || (data.profile && data.profile.avatarUrl) || '/imagens/avatars/inspector.svg',
@@ -1804,14 +1899,14 @@ async function fetchAuthState() {
     try {
       const res = await fetch('/api/me', { credentials: 'include' });
       if (res.ok) {
-        state.adminLink = { label: 'Painel', href: '/admin.html', isAdmin: true };
+        state.adminLink = { label: i18n('common.panel', 'Painel'), href: '/admin.html', isAdmin: true };
         state.isAdmin = true;
       }
     } catch (e) { /* not admin */ }
 
-    return state;
+    return localizeAuthForLayout(state);
   } catch (e) {
-    return state;
+    return localizeAuthForLayout(state);
   }
 }
 
@@ -2050,10 +2145,12 @@ let cachedLayoutAuth = null;
 function injectLayout(site, authState) {
   cachedLayoutSite = site;
   cachedLayoutAuth = authState;
+  const localizedSite = localizeSiteForLayout(site);
+  const localizedAuth = localizeAuthForLayout(authState);
   const headerContainer = document.getElementById('site-header');
   const footerContainer = document.getElementById('site-footer');
-  const headerHTML = buildHeaderHTML(site, authState);
-  const footerHTML = buildFooterHTML(site);
+  const headerHTML = buildHeaderHTML(localizedSite, localizedAuth);
+  const footerHTML = buildFooterHTML(localizedSite);
 
   if (headerContainer) {
     headerContainer.innerHTML = headerHTML;
@@ -2062,7 +2159,7 @@ function injectLayout(site, authState) {
     const navPanel = document.getElementById('primary-nav');
     const quickNav = headerContainer.querySelector('.header-quick-nav');
 
-    mountMobileMenu(site, authState, menuToggle);
+    mountMobileMenu(localizedSite, localizedAuth, menuToggle);
     initNavDropdowns(navPanel, function () {});
 
     const updateHeaderState = function () {
@@ -2105,7 +2202,10 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   const [site, authState] = await Promise.all([fetchSiteConfig(), fetchAuthState()]);
   injectLayout(site, authState);
-  if (window.BudGanjaI18n) window.BudGanjaI18n.apply();
+  if (window.BudGanjaI18n) {
+    window.BudGanjaI18n.apply();
+    window.BudGanjaI18n.initLanguageSwitcher();
+  }
   if (typeof window.budganjaReinitChrome === 'function') window.budganjaReinitChrome();
   enhanceHoverTips(document);
   initInstallUi();
@@ -2115,7 +2215,10 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   window.addEventListener('budganja:locale-change', function () {
     injectLayout(cachedLayoutSite, cachedLayoutAuth);
-    if (window.BudGanjaI18n) window.BudGanjaI18n.apply();
+    if (window.BudGanjaI18n) {
+      window.BudGanjaI18n.apply();
+      window.BudGanjaI18n.initLanguageSwitcher();
+    }
     enhanceHoverTips(document);
     if (typeof window.budganjaReinitChrome === 'function') window.budganjaReinitChrome();
   });
@@ -2147,16 +2250,33 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.body.appendChild(radio);
   }
 
+  function loadRadioOrderThenPlayer() {
+    if (window.BudGanjaRadioOrder) {
+      loadRadioPlayerScript();
+      return;
+    }
+    if (document.querySelector('script[src*="radio-order.js"]')) {
+      loadRadioPlayerScript();
+      return;
+    }
+    const order = document.createElement('script');
+    order.id = 'radio-order-js';
+    order.src = '/js/radio-order.js?v=' + ASSET_V;
+    order.onload = loadRadioPlayerScript;
+    order.onerror = loadRadioPlayerScript;
+    document.body.appendChild(order);
+  }
+
   if (window.BudGanjaRadioMedia) {
-    loadRadioPlayerScript();
+    loadRadioOrderThenPlayer();
   } else if (!document.querySelector('script[src*="radio-media-session.js"]')) {
     const radioMedia = document.createElement('script');
     radioMedia.id = 'radio-media-session-js';
     radioMedia.src = '/js/radio-media-session.js?v=' + ASSET_V;
-    radioMedia.onload = loadRadioPlayerScript;
-    radioMedia.onerror = loadRadioPlayerScript;
+    radioMedia.onload = loadRadioOrderThenPlayer;
+    radioMedia.onerror = loadRadioOrderThenPlayer;
     document.body.appendChild(radioMedia);
   } else {
-    loadRadioPlayerScript();
+    loadRadioOrderThenPlayer();
   }
 });

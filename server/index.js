@@ -70,6 +70,29 @@ function isCompressible(ext) {
   return ['.html', '.js', '.css', '.json', '.svg', '.txt', '.webmanifest'].includes(ext);
 }
 
+function isMediaExt(ext) {
+  return ['.mp3', '.mp4', '.webm', '.mov', '.ogg', '.wav', '.m4a', '.aac'].includes(ext);
+}
+
+/** Parseia Range: bytes=start-end para seek de áudio/vídeo. */
+function parseByteRange(rangeHeader, size) {
+  const m = /^bytes=(\d*)-(\d*)$/i.exec(String(rangeHeader || '').trim());
+  if (!m || !size) return null;
+  let start = m[1] === '' ? NaN : parseInt(m[1], 10);
+  let end = m[2] === '' ? NaN : parseInt(m[2], 10);
+  if (Number.isNaN(start) && Number.isNaN(end)) return null;
+  if (Number.isNaN(start)) {
+    const suffix = end;
+    start = Math.max(0, size - suffix);
+    end = size - 1;
+  } else if (Number.isNaN(end)) {
+    end = size - 1;
+  }
+  if (start < 0 || start >= size || start > end) return null;
+  end = Math.min(end, size - 1);
+  return { start, end };
+}
+
 function getCacheControl(ext, filePath) {
   const base = path.basename(filePath || '');
   // Ícones PWA / favicon — nunca cachear agressivamente (Cloudflare ficou com oval verde immutable).
@@ -290,7 +313,11 @@ function serveStatic(req, res, staticPath) {
     const ext = path.extname(requested).toLowerCase();
     const contentType = MIME[ext] || 'application/octet-stream';
     const pageName = path.relative(ROOT, requested).replace(/\\/g, '/');
-    const headerOpts = isProtectedHtml(pageName) ? { noStore: true, noIndex: true } : null;
+    const isShareImage = /(?:^|\/)imagens\/(?:og-[^/]+\.jpe?g|inspecoes\/)/i.test(pageName);
+    const headerOpts = {
+      ...(isProtectedHtml(pageName) ? { noStore: true, noIndex: true } : {}),
+      corpCrossOrigin: isShareImage
+    };
     setSecurityHeaders(res, req, headerOpts);
 
     const lastModified = stats.mtime.toUTCString();
@@ -314,6 +341,39 @@ function serveStatic(req, res, staticPath) {
     res.setHeader('Last-Modified', lastModified);
     res.setHeader('ETag', etag);
     res.setHeader('Content-Type', contentType);
+
+    // Áudio/vídeo: Accept-Ranges + 206 — sem isto o seek da rádio falha no browser.
+    if (isMediaExt(ext)) {
+      res.setHeader('Accept-Ranges', 'bytes');
+      const range = parseByteRange(req.headers.range, stats.size);
+      if (req.headers.range && !range) {
+        res.writeHead(416, {
+          'Content-Range': 'bytes */' + stats.size,
+          'Content-Type': contentType
+        });
+        res.end();
+        return;
+      }
+      if (range) {
+        const chunkSize = range.end - range.start + 1;
+        res.writeHead(206, {
+          'Content-Range': 'bytes ' + range.start + '-' + range.end + '/' + stats.size,
+          'Content-Length': chunkSize,
+          'Accept-Ranges': 'bytes',
+          'Content-Type': contentType,
+          'Cache-Control': res.getHeader('Cache-Control') || getCacheControl(ext, requested),
+          'Last-Modified': lastModified,
+          ETag: etag
+        });
+        const partial = fs.createReadStream(requested, { start: range.start, end: range.end });
+        partial.on('error', () => {
+          if (!res.headersSent) res.writeHead(500, { 'Content-Type': 'text/plain' });
+          res.end('500 Internal Server Error');
+        });
+        partial.pipe(res);
+        return;
+      }
+    }
 
     const accept = req.headers['accept-encoding'] || '';
     const stream = fs.createReadStream(requested);
@@ -339,16 +399,20 @@ const server = http.createServer((req, res) => {
     const raw = req.url.split('?')[0] || '/';
     const url = decodeURIComponent(raw);
     const host = String(req.headers['x-forwarded-host'] || req.headers.host || '').split(',')[0].trim().split(':')[0].toLowerCase();
+    const qs = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
     const canonicalHost = 'inspetorbudganja.com.br';
+    const englishCanonicalHost = 'www.inspectorbudganja.com';
+    // Domínio EN: serve o site (não redirecciona para .com.br)
+    if (host === 'inspectorbudganja.com') {
+      return resRedirect(res, 'https://' + englishCanonicalHost + url + qs);
+    }
+    // Aliases PT → canónico .com.br
     const redirectHosts = new Set([
       'www.inspetorbudganja.com.br',
       'inspetorbudganja.com',
-      'www.inspetorbudganja.com',
-      'inspectorbudganja.com',
-      'www.inspectorbudganja.com'
+      'www.inspetorbudganja.com'
     ]);
     if (redirectHosts.has(host)) {
-      const qs = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
       return resRedirect(res, 'https://' + canonicalHost + url + qs);
     }
 

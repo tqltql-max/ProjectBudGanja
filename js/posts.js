@@ -14,26 +14,21 @@ function normalizePostUrl(url) {
 }
 
 var SERIES_LABELS = {
-  'guia-cultivo-basico': 'Guia de Cultivo Básico',
   'guia-ferramenta': 'Guia de ferramenta',
   'pesquisa-laboratorio': 'Laboratório',
   'pesquisa-comunidade': 'Comunidade',
-  'canal-jardimhg': 'Canal Jardim HG',
-  'canal-plantamemo': 'Canal Plantamemo',
-  'canal-inspetorbudganja': 'Canal Inspetor BudGanja',
+  'canal-movrecam': 'Canal MovReCam',
+  'canal-canabinall': 'Canal CANABinALL',
   'verificacao-equipamento': 'Equipamentos',
-  'formacao-academica': 'Cursos',
+  'formacao-academica': 'Extensão académica',
+  'loja-cultivo': 'Lojas de cultivo',
+  'insumos-cultivo': 'Insumos de cultivo',
   '': 'Todas as séries'
 };
-
-var GUIA_CULTIVO_SERIES = 'guia-cultivo-basico';
 
 function seriesBadgeHtml(post, options) {
   if (!post.series) return '';
   options = options || {};
-  if (options.hub && post.series === GUIA_CULTIVO_SERIES && post.seriesOrder != null) {
-    return '<span class="post-card-series" data-series="' + post.series + '">Cap. ' + post.seriesOrder + '</span>';
-  }
   if (options.hub && post.series.indexOf('canal-') === 0) {
     var canal = post.seriesLabel || SERIES_LABELS[post.series] || 'Canal';
     canal = String(canal).replace(/^Canal\s+/i, '');
@@ -46,6 +41,14 @@ function seriesBadgeHtml(post, options) {
   if (options.hub && (post.series.indexOf('formacao') === 0 || post.series.indexOf('curso') === 0)) {
     var curso = post.seriesLabel || 'Curso';
     return '<span class="post-card-series" data-series="' + post.series + '">' + curso + '</span>';
+  }
+  if (options.hub && (post.series === 'loja-cultivo' || post.series.indexOf('loja-') === 0)) {
+    var loja = post.seriesLabel || 'Loja';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + loja + '</span>';
+  }
+  if (options.hub && (post.series === 'insumos-cultivo' || post.series.indexOf('insumo') === 0)) {
+    var insumo = post.seriesLabel || 'Insumo';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + insumo + '</span>';
   }
   var label = post.seriesLabel || SERIES_LABELS[post.series] || post.series;
   var order = post.seriesOrder != null ? ' · Cap. ' + post.seriesOrder : '';
@@ -63,12 +66,13 @@ function hubCardTitle(post) {
 function resolveInspecaoTipo(post) {
   var series = String((post && post.series) || '');
   var slug = String((post && post.slug) || '');
-  if (series === GUIA_CULTIVO_SERIES || series.indexOf('guia-') === 0) return 'guia';
   if (series.indexOf('canal-') === 0 || /inspecao-canal-/i.test(slug)) return 'canal';
   if (series === 'verificacao-equipamento' || /equipamento|marshydro/i.test(series + slug)) return 'equipamento';
   if (series === 'formacao-academica' || /curso|unifesp|formacao/i.test(series + slug)) return 'curso';
+  if (series === 'loja-cultivo' || series.indexOf('loja-') === 0 || /inspecao-loja-/i.test(slug)) return 'loja';
+  if (series === 'insumos-cultivo' || series.indexOf('insumo') === 0 || /inspecao-insumo-/i.test(slug)) return 'insumo';
   if (/^inspecao-canal-/i.test(slug)) return 'canal';
-  return 'guia';
+  return 'canal';
 }
 
 function sortBySeriesOrder(posts) {
@@ -193,10 +197,11 @@ function filterByInspecaoTipo(posts, tipo) {
 }
 
 var HUB_CHIP_ANCHOR = {
-  guia: 'guia',
   canal: 'canais',
   equipamento: 'equipamentos',
-  curso: 'cursos'
+  curso: 'cursos',
+  loja: 'lojas',
+  insumo: 'insumos'
 };
 
 function setHubChipVisibility(tipo, visible) {
@@ -274,26 +279,6 @@ function renderInspecoesDropdown(container, posts, opts) {
   return details;
 }
 
-function renderGuiaGrid(grid, list) {
-  grid.innerHTML = '';
-  if (!list.length) {
-    renderPostCards(grid, [], { hub: true });
-    return;
-  }
-  var count = list.length;
-  renderInspecoesDropdown(grid, list, {
-    sort: 'seriesOrder',
-    seriesKey: GUIA_CULTIVO_SERIES,
-    label: 'Guia de Cultivo Básico',
-    badge: 'Guia',
-    nounSingular: 'capítulo',
-    nounPlural: 'capítulos',
-    chaptersAttr: 'data-inspecao-guia-chapters',
-    excerpt: 'Trilha técnica do início à floração — ' +
-      formatDropCount(count, 'capítulo', 'capítulos') + ' com checklist e critérios mensuráveis.'
-  });
-}
-
 function renderCanaisGrid(grid, list) {
   grid.innerHTML = '';
   if (!list.length) {
@@ -301,7 +286,7 @@ function renderCanaisGrid(grid, list) {
     return;
   }
   var count = list.length;
-  var coverPost = list.filter(function (p) { return p.series === 'canal-inspetorbudganja'; })[0] || list[0];
+  var coverPost = list.filter(function (p) { return p.series === 'canal-movrecam'; })[0] || list[0];
   renderInspecoesDropdown(grid, list, {
     sort: 'label',
     seriesKey: 'canais',
@@ -316,29 +301,6 @@ function renderCanaisGrid(grid, list) {
   });
 }
 
-function renderEquipamentosGrid(grid, list) {
-  grid.innerHTML = '';
-  if (!list.length) {
-    renderPostCards(grid, [], { hub: true });
-    return;
-  }
-  var count = list.length;
-  var coverPost = list.filter(function (p) { return p.slug === 'inspecao-marshydro-brasil'; })[0]
-    || sortBySeriesOrder(list)[0];
-  renderInspecoesDropdown(grid, list, {
-    sort: 'seriesOrder',
-    seriesKey: 'verificacao-equipamento',
-    coverPost: coverPost,
-    label: 'Equipamentos do laboratório',
-    badge: 'Equipamentos',
-    nounSingular: 'item',
-    nounPlural: 'itens',
-    chaptersAttr: 'data-inspecao-equipamento-chapters',
-    excerpt: 'Desempenho, limites e recomendações de uso — ' +
-      formatDropCount(count, 'verificação', 'verificações') + '.'
-  });
-}
-
 function renderCursosGrid(grid, list) {
   grid.innerHTML = '';
   if (!list.length) {
@@ -346,26 +308,26 @@ function renderCursosGrid(grid, list) {
     return;
   }
   var count = list.length;
-  var coverPost = sortBySeriesOrder(list)[0];
+  var coverPost = list.filter(function (p) {
+    return p.slug === 'inspecao-curso-unifesp-cannabis-medicinal';
+  })[0] || sortBySeriesOrder(list)[0];
   renderInspecoesDropdown(grid, list, {
     sort: 'seriesOrder',
     seriesKey: 'formacao-academica',
     coverPost: coverPost,
-    label: 'Formação académica',
-    badge: 'Cursos',
+    label: 'Extensão académica',
+    badge: 'UNIFESP',
     nounSingular: 'curso',
     nounPlural: 'cursos',
     chaptersAttr: 'data-inspecao-curso-chapters',
-    excerpt: 'Grade, acesso e valor prático da formação — ' +
-      formatDropCount(count, 'curso', 'cursos') + '.'
+    excerpt: 'Grade, acesso e valor prático da extensão — ' +
+      formatDropCount(count, 'curso', 'cursos') + '. Destaque: curso UNIFESP.'
   });
 }
 
 function renderInspecoesHub(allPosts) {
   var tipos = [
-    { id: 'guia', section: '#inspecoes-guia' },
     { id: 'canal', section: '#inspecoes-canais' },
-    { id: 'equipamento', section: '#inspecoes-equipamentos' },
     { id: 'curso', section: '#inspecoes-cursos' }
   ];
 
@@ -383,9 +345,7 @@ function renderInspecoesHub(allPosts) {
 
     section.hidden = false;
     setHubChipVisibility(t.id, true);
-    if (t.id === 'guia') renderGuiaGrid(grid, list);
-    else if (t.id === 'canal') renderCanaisGrid(grid, list);
-    else if (t.id === 'equipamento') renderEquipamentosGrid(grid, list);
+    if (t.id === 'canal') renderCanaisGrid(grid, list);
     else if (t.id === 'curso') renderCursosGrid(grid, list);
     else renderPostCards(grid, list, { hub: true });
   });

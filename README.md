@@ -32,11 +32,11 @@ Detalhes: [`docs/GIT.md`](docs/GIT.md) · copie `.env.example` → `.env`
 | Secção | Páginas |
 |--------|---------|
 | **Pesquisas** | [Diário de Cultivo](/cultivo/) · [Minha conta](/perfil.html) |
-| **Biblioteca** | [Inspeções](/biblioteca/inspecoes/) (série Guia de Cultivo), [Pesquisas](/biblioteca/pesquisas/), [Equipamentos](/equipamentos/) |
+| **Biblioteca** | [Inspeções](/biblioteca/inspecoes/), [Pesquisas](/biblioteca/pesquisas/), [Equipamentos](/equipamentos/) |
 | **Ferramentas** | [Calculadoras](/calculadoras/), [Luxímetro](/calculadoras/luximetro.html) |
 | **Conteúdo** | [Sorteios](/sorteios/), [Últimos vídeos](/videos/), [Loja parceira](/loja/) |
 
-> O antigo guia em `/guia/cultivo-basico.html` redireciona para as [Inspeções](/biblioteca/inspecoes/) — cada capítulo em vídeo virou relatório técnico com embed do YouTube.
+> O antigo guia em `/guia/cultivo-basico.html` redireciona para o [Diário de Cultivo](/cultivo/).
 
 ## Funcionalidades
 

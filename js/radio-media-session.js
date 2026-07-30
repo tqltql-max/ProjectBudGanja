@@ -137,17 +137,84 @@
     return refresh;
   }
 
-  function buildTrackShareUrl(track, username) {
-    var origin = (global.location && global.location.origin) || '';
-    var url = origin + '/radio/?';
-    var parts = [];
-    if (username) parts.push('u=' + encodeURIComponent(String(username)));
-    if (track && track.id) parts.push('t=' + encodeURIComponent(String(track.id)));
-    return url + parts.join('&');
+  var PRODUCTION_ORIGIN = 'https://inspetorbudganja.com.br';
+  // JPEG 1200×630 leve — o hero PNG (~10MB) falha no preview do WhatsApp.
+  var SHARE_COVER_PATH = '/imagens/og-radio.jpg';
+
+  function shareOrigin() {
+    var host = (global.location && global.location.hostname) || '';
+    if (/localhost|127\.0\.0\.1/i.test(host)) return PRODUCTION_ORIGIN;
+    return (global.location && global.location.origin) || PRODUCTION_ORIGIN;
+  }
+
+  function buildTrackShareUrl(track) {
+    var url = shareOrigin() + '/radio/';
+    if (track && track.id) url += '?t=' + encodeURIComponent(String(track.id));
+    return url;
+  }
+
+  function buildRadioShareUrl() {
+    return shareOrigin() + '/radio/';
+  }
+
+  function shareCoverUrl() {
+    var origin = (global.location && global.location.origin) || shareOrigin();
+    return origin + SHARE_COVER_PATH;
+  }
+
+  function fetchShareCoverFile() {
+    return fetch(shareCoverUrl(), { credentials: 'same-origin' })
+      .then(function (res) {
+        if (!res.ok) throw new Error('cover ' + res.status);
+        return res.blob();
+      })
+      .then(function (blob) {
+        if (!blob || !blob.type || blob.type.indexOf('image/') !== 0) return null;
+        try {
+          return new File([blob], 'budganja-radio.jpg', { type: blob.type || 'image/jpeg' });
+        } catch (e) {
+          blob.name = 'budganja-radio.jpg';
+          return blob;
+        }
+      })
+      .catch(function () {
+        return null;
+      });
+  }
+
+  function canShareFiles(files) {
+    if (!files || !files.length || typeof navigator.canShare !== 'function') return false;
+    try {
+      return navigator.canShare({ files: files });
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function doShare(payload) {
+    if (typeof navigator.share !== 'function') {
+      return copyShareUrl(payload.url, payload.text);
+    }
+    var withFiles = payload;
+    return navigator.share(withFiles).then(function () {
+      return 'shared';
+    }).catch(function (err) {
+      if (err && err.name === 'AbortError') return 'shared';
+      if (withFiles.files) {
+        var bare = { title: payload.title, text: payload.text, url: payload.url };
+        return navigator.share(bare).then(function () {
+          return 'shared';
+        }).catch(function (err2) {
+          if (err2 && err2.name === 'AbortError') return 'shared';
+          return copyShareUrl(payload.url, payload.text);
+        });
+      }
+      return copyShareUrl(payload.url, payload.text);
+    });
   }
 
   /**
-   * Partilha a faixa atual (Web Share API ou copiar link).
+   * Partilha a faixa atual (Web Share API + capa do site, ou copiar link).
    * @returns {Promise<'shared'|'copied'|'fallback'>}
    */
   function shareTrack(track, opts) {
@@ -156,22 +223,35 @@
     var title = track.title || 'Rádio BudGanja';
     var artist = track.artist || '';
     var line = artist ? title + ' — ' + artist : title;
-    var shareUrl = buildTrackShareUrl(track, opts.username);
-    var payload = {
-      title: title + ' | BudGanja Radio',
-      text: 'A ouvir na Rádio BudGanja: ' + line,
-      url: shareUrl
-    };
+    var shareUrl = buildTrackShareUrl(track);
 
-    if (typeof navigator.share === 'function') {
-      return navigator.share(payload).then(function () {
-        return 'shared';
-      }).catch(function (err) {
-        if (err && err.name === 'AbortError') return 'shared';
-        return copyShareUrl(shareUrl, payload.text);
-      });
-    }
-    return copyShareUrl(shareUrl, payload.text);
+    return fetchShareCoverFile().then(function (file) {
+      var files = file && canShareFiles([file]) ? [file] : null;
+      var payload = {
+        title: title + ' | BudGanja Radio',
+        text: 'A ouvir na BudGanja Radio: ' + line + '\n' + shareUrl,
+        url: shareUrl
+      };
+      if (files) payload.files = files;
+      return doShare(payload);
+    });
+  }
+
+  /**
+   * Partilha a rádio do laboratório com a mesma capa da home.
+   * @returns {Promise<'shared'|'copied'|'fallback'>}
+   */
+  function shareRadio() {
+    var shareUrl = buildRadioShareUrl();
+    var title = 'BudGanja Radio | Inspetor BudGanja';
+    var text = 'Ouça a BudGanja Radio — playlist do laboratório Inspetor BudGanja.\n' + shareUrl;
+
+    return fetchShareCoverFile().then(function (file) {
+      var files = file && canShareFiles([file]) ? [file] : null;
+      var payload = { title: title, text: text, url: shareUrl };
+      if (files) payload.files = files;
+      return doShare(payload);
+    });
   }
 
   function copyShareUrl(shareUrl, fallbackText) {
@@ -198,6 +278,8 @@
     updatePosition: updatePosition,
     bind: bind,
     buildTrackShareUrl: buildTrackShareUrl,
-    shareTrack: shareTrack
+    buildRadioShareUrl: buildRadioShareUrl,
+    shareTrack: shareTrack,
+    shareRadio: shareRadio
   };
 })(typeof window !== 'undefined' ? window : globalThis);

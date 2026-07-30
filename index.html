@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Inspetor BudGanja — Biblioteca de Cultivo, pesquisas técnicas, inspeções, equipamentos caseiros, ferramentas e sorteios para cultivo vegetal.">
+    <meta name="description" content="Inspetor BudGanja — plantas medicinais do Brasil, curso UNIFESP, inspeções, ferramentas e BudGanja Radio.">
     <meta property="og:title" content="Inspetor BudGanja">
-    <meta property="og:description" content="Laboratório digital de pesquisa, inspeções e ferramentas práticas para cultivo vegetal.">
+    <meta property="og:description" content="Laboratório de fitoterapia brasileira: plantas medicinais, formação UNIFESP e cultivo responsável.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/imagens/icon-512.v289.png">
+    <meta property="og:url" content="https://inspetorbudganja.com.br/">
+    <meta property="og:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
+    <meta property="og:image:secure_url" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Inspetor BudGanja">
+    <meta name="twitter:description" content="Laboratório de fitoterapia brasileira: plantas medicinais, formação UNIFESP e cultivo responsável.">
+    <meta name="twitter:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
+    <link rel="canonical" href="https://inspetorbudganja.com.br/">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -28,88 +38,129 @@
     <div id="site-header"></div>
 
     <main id="main-content">
+    <div class="lab-atmosphere" aria-hidden="true"></div>
     <section class="hero">
-        <img class="hero-media" src="/imagens/background-hero.png?v=3de28475ec" alt="" width="3712" height="1152" decoding="async" fetchpriority="high">
+        <img class="hero-media" src="/imagens/background-hero.png?v=2e2192a02b" alt="" width="1983" height="393" decoding="async" fetchpriority="high">
         <span class="hero-shine" aria-hidden="true"></span>
         <div class="hero-content">
-            <p class="hero-eyebrow" data-i18n="pages.home.heroEyebrow">Laboratório digital · conteúdo educacional</p>
-            <h1 class="hero-title" data-i18n="pages.home.heroTitle">Bem-vindo ao Laboratório</h1>
-            <p class="hero-subtitle" data-i18n="pages.home.heroSubtitle">As ferramentas estão prontas — vamos experimentar.</p>
+            <p class="hero-eyebrow" data-i18n="pages.home.heroEyebrow">Fitoterapia brasileira · educação e cultivo responsável</p>
+            <h1 class="hero-title" data-i18n="pages.home.heroTitle">Inspetor BudGanja</h1>
+            <p class="hero-subtitle" data-i18n="pages.home.heroSubtitle">Plantas medicinais do Brasil, extensão académica e laboratório prático num só lugar.</p>
         </div>
     </section>
 
     <section id="home-sorteio-banner" class="home-announcement" hidden>
         <div class="conteudo home-announcement-inner">
             <div class="home-announcement-copy">
-                <p class="home-announcement-badge">🎁 Sorteio ativo</p>
-                <h2 id="home-sorteio-title">Sorteio do laboratório</h2>
+                <p class="home-announcement-badge" data-i18n="pages.home.giveawayBadge">🎁 Sorteio ativo</p>
+                <h2 id="home-sorteio-title" data-i18n="pages.home.giveawayTitle">Sorteio do laboratório</h2>
                 <p id="home-sorteio-prize" class="home-announcement-prize"></p>
                 <p id="home-sorteio-date" class="home-announcement-date"></p>
             </div>
-            <a href="/sorteios/" class="botao botao-home">Participar agora</a>
+            <a href="/sorteios/" class="botao botao-home" data-i18n="pages.home.giveawayJoin">Participar agora</a>
+        </div>
+    </section>
+
+    <section class="home-pillars" aria-label="Destaques">
+        <div class="conteudo conteudo-wide">
+            <article class="home-pillar home-pillar--unifesp">
+                <p class="home-pillar-eyebrow" data-i18n="pages.home.pillarUnifespEyebrow">Extensão</p>
+                <h2 data-i18n="pages.home.pillarUnifespTitle">Curso UNIFESP — Cannabis medicinal</h2>
+                <p data-i18n="pages.home.pillarUnifespText">XIV curso de extensão gratuito: 10 mil vagas, 57 h EaD e certificado com 75% de presença. Confirme inscrição no SIEX e leia a nossa inspeção do programa.</p>
+                <div class="home-pillar-actions">
+                    <a href="https://siex.siiu.unifesp.br/catalogo-siex/30063/mais-info" class="botao botao-home" rel="noopener noreferrer" target="_blank" data-i18n="pages.home.pillarUnifespCtaSiex">Inscrição SIEX</a>
+                    <a href="/biblioteca/unifesp/" class="botao botao-home botao-home--secondary" data-i18n="pages.home.pillarUnifespCtaHub">Abrir hub UNIFESP</a>
+                </div>
+            </article>
+            <article class="home-pillar home-pillar--plantas">
+                <p class="home-pillar-eyebrow" data-i18n="pages.home.pillarPlantasEyebrow">Catálogo</p>
+                <h2 data-i18n="pages.home.pillarPlantasTitle">Plantas fitoterápicas</h2>
+                <p data-i18n="pages.home.pillarPlantasText">Fichas curadas de espécies usadas na medicina popular brasileira — usos tradicionais, partes usadas e cuidados editoriais.</p>
+                <div class="home-pillar-actions">
+                    <a href="/plantas/" class="botao botao-home" data-i18n="pages.home.pillarPlantasCta">Explorar plantas</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="home-channels" aria-label="Canais de extensão">
+        <div class="conteudo conteudo-wide">
+            <header class="home-channels-head">
+                <p class="home-pillar-eyebrow" data-i18n="pages.home.channelsEyebrow">Canais</p>
+                <h2 data-i18n="pages.home.channelsTitle">MovReCam e CANABinALL</h2>
+                <p class="section-subtitle" data-i18n="pages.home.channelsSubtitle">Arquivo de aulas UNIFESP e divulgação científica semanal — canais parceiros da extensão.</p>
+            </header>
+            <div class="home-channels-grid">
+                <article class="home-channel">
+                    <div class="video-embed home-channel-embed">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/dV-6qKW1HXg"
+                            title="MovReCam — 11ª Aula UNIFESP (Psicodélicos)"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p class="home-pillar-eyebrow" data-i18n="pages.home.channelMovrecamEyebrow">Aulas ao vivo</p>
+                    <h3 data-i18n="pages.home.channelMovrecamTitle">MovReCam</h3>
+                    <p data-i18n="pages.home.channelMovrecamText">Transmissão das aulas do curso UNIFESP e arquivo do Movimento pela Regulamentação da Cannabis.</p>
+                    <div class="home-pillar-actions">
+                        <a href="https://www.youtube.com/@MovReCam" class="botao botao-home" rel="noopener noreferrer" target="_blank" data-i18n="pages.home.channelMovrecamCtaYt">Abrir canal</a>
+                        <a href="/posts/post-inspecao-canal-movrecam.html" class="botao botao-home botao-home--secondary" data-i18n="pages.home.channelMovrecamCtaInsp">Ver inspeção</a>
+                    </div>
+                </article>
+                <article class="home-channel">
+                    <div class="video-embed home-channel-embed">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/4TVwESEe2vo"
+                            title="CANABinALL — Conceitos básicos #1"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p class="home-pillar-eyebrow" data-i18n="pages.home.channelCanabinallEyebrow">Divulgação científica</p>
+                    <h3 data-i18n="pages.home.channelCanabinallTitle">CANABinALL</h3>
+                    <p data-i18n="pages.home.channelCanabinallText">Projeto de extensão UNIFESP com a Profa. Dra. Eliana Rodrigues — literacia canábica em português, todas as semanas.</p>
+                    <div class="home-pillar-actions">
+                        <a href="https://www.youtube.com/@canabinall" class="botao botao-home" rel="noopener noreferrer" target="_blank" data-i18n="pages.home.channelCanabinallCtaYt">Abrir canal</a>
+                        <a href="/posts/post-inspecao-canal-canabinall.html" class="botao botao-home botao-home--secondary" data-i18n="pages.home.channelCanabinallCtaInsp">Ver inspeção</a>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 
     <section class="features">
         <div class="conteudo conteudo-wide">
             <header class="features-head">
-                <h2 class="features-title" data-i18n="pages.home.areasTitle">Nossas Áreas de Atuação</h2>
-                <p class="section-subtitle features-subtitle" data-i18n="pages.home.areasSubtitle">Diário, ferramentas, comunidade, rádio e mais — escolha por onde começar.</p>
+                <h2 class="features-title" data-i18n="pages.home.areasTitle">Laboratório e comunidade</h2>
+                <p class="section-subtitle features-subtitle" data-i18n="pages.home.areasSubtitle">Inspeções, ferramentas, diário e BudGanja Radio — apoios ao estudo e ao cultivo responsável.</p>
             </header>
             <div class="container-cards home-cards">
-                <article class="card home-card home-card--cultivo has-hover-tip" data-tip="Documente o cultivo de qualquer planta — diário, roteiro e plano prontos para publicar como pesquisa.">
-                    <div class="card-icon card-icon--cultivo" aria-hidden="true">📓</div>
-                    <h3 data-i18n="pages.home.cardCultivoTitle">Diário de Cultivo</h3>
-                    <p data-i18n="pages.home.cardCultivoText">Documente o cultivo de qualquer planta: registos dia a dia, roteiro por fase e plano — pronto para publicar no site.</p>
-                    <a href="/cultivo/" class="botao botao-home" data-i18n="pages.home.cardCultivoBtn">Abrir diário</a>
-                </article>
-                <article class="card home-card home-card--ferramentas has-hover-tip" data-tip="Utilitários para otimizar seu cultivo: VPD, DLI, EC, luxímetro e muito mais.">
-                    <div class="card-icon card-icon--ferramentas" aria-hidden="true">🧮</div>
-                    <h3 data-i18n="pages.home.cardCalcTitle">Ferramentas</h3>
-                    <p data-i18n="pages.home.cardCalcText">Utilitários para otimizar seu cultivo: VPD, DLI, EC, luxímetro e muito mais.</p>
-                    <a href="/calculadoras/" class="botao botao-home" data-i18n="pages.home.cardCalcBtn">Ver Ferramentas</a>
-                </article>
-                <article class="card home-card home-card--pesquisas has-hover-tip" data-tip="Pesquisas do laboratório e estudos submetidos pela comunidade e aprovados para publicação.">
-                    <div class="card-icon card-icon--pesquisas" aria-hidden="true">🔬</div>
-                    <h3 data-i18n="pages.home.cardResearchTitle">Pesquisas</h3>
-                    <p data-i18n="pages.home.cardResearchText">Pesquisas do laboratório e estudos submetidos pela comunidade e aprovados para publicação.</p>
-                    <a href="/biblioteca/pesquisas/" class="botao botao-home" data-i18n="pages.home.cardResearchBtn">Ver pesquisas</a>
-                </article>
-                <article class="card home-card home-card--inspecoes has-hover-tip" data-tip="Relatórios de inspeção, verificações de campo e registros técnicos do laboratório.">
+                <article class="card home-card home-card--inspecoes has-hover-tip" data-tip="Relatórios de inspeção, verificações de campo e formação." data-i18n-tip="pages.home.cardInspectionsTip">
                     <div class="card-icon card-icon--inspecoes" aria-hidden="true">🔍</div>
                     <h3 data-i18n="pages.home.cardInspectionsTitle">Inspeções</h3>
-                    <p data-i18n="pages.home.cardInspectionsText">Relatórios de inspeção, verificações de campo e registros técnicos do laboratório.</p>
+                    <p data-i18n="pages.home.cardInspectionsText">Relatórios técnicos com método verificável — guia, canais, equipamentos e cursos.</p>
                     <a href="/biblioteca/inspecoes/" class="botao botao-home" data-i18n="pages.home.cardInspectionsBtn">Ver Inspeções</a>
                 </article>
-                <article class="card home-card home-card--equipamentos has-hover-tip" data-tip="Equipamentos documentados com materiais acessíveis e manuais completos.">
-                    <div class="card-icon card-icon--equipamentos" aria-hidden="true">🛠️</div>
-                    <h3 data-i18n="pages.home.cardEquipTitle">Equipamentos</h3>
-                    <p data-i18n="pages.home.cardEquipText">Montagem caseira com peças de mercado — manuais completos de clonadora e hidrocloradora.</p>
-                    <a href="/equipamentos/" class="botao botao-home" data-i18n="pages.home.cardEquipBtn">Ver Equipamentos</a>
+                <article class="card home-card home-card--ferramentas has-hover-tip" data-tip="Utilitários para ambiente de cultivo: VPD, DLI, EC, luxímetro e mais." data-i18n-tip="pages.home.cardCalcTip">
+                    <div class="card-icon card-icon--ferramentas" aria-hidden="true">🧮</div>
+                    <h3 data-i18n="pages.home.cardCalcTitle">Ferramentas</h3>
+                    <p data-i18n="pages.home.cardCalcText">Utilitários para otimizar o cultivo: VPD, DLI, EC, luxímetro e muito mais.</p>
+                    <a href="/calculadoras/" class="botao botao-home" data-i18n="pages.home.cardCalcBtn">Ver Ferramentas</a>
                 </article>
-                <article class="card home-card home-card--comunidade has-hover-tip" data-tip="Partilhe fotos do diário e peça ajuda à comunidade.">
-                    <div class="card-icon card-icon--comunidade" aria-hidden="true">🌿</div>
-                    <h3 data-i18n="pages.home.cardCommunityTitle">Comunidade</h3>
-                    <p data-i18n="pages.home.cardCommunityText">Feed de fotos do diário, pedidos de identificação de plantas e comentários da comunidade.</p>
-                    <a href="/comunidade/" class="botao botao-home" data-i18n="pages.home.cardCommunityBtn">Abrir comunidade</a>
+                <article class="card home-card home-card--cultivo has-hover-tip" data-tip="Documente o cultivo de qualquer planta — diário, roteiro e plano." data-i18n-tip="pages.home.cardCultivoTip">
+                    <div class="card-icon card-icon--cultivo" aria-hidden="true">📓</div>
+                    <h3 data-i18n="pages.home.cardCultivoTitle">Diário de Cultivo</h3>
+                    <p data-i18n="pages.home.cardCultivoText">Documente o cultivo de qualquer planta: registos dia a dia, roteiro por fase e plano.</p>
+                    <a href="/cultivo/" class="botao botao-home" data-i18n="pages.home.cardCultivoBtn">Abrir diário</a>
                 </article>
-                <article class="card home-card home-card--videos has-hover-tip" data-tip="Inspeções, tutoriais e novidades do canal no YouTube.">
-                    <div class="card-icon card-icon--videos" aria-hidden="true">▶</div>
-                    <h3 data-i18n="pages.home.cardVideosTitle">Vídeos</h3>
-                    <p data-i18n="pages.home.cardVideosText">Conteúdo do canal @InspetorBudGanja — inspeções, tutoriais e novidades do laboratório.</p>
-                    <a href="/videos/" class="botao botao-home" data-i18n="pages.home.cardVideosBtn">Ver vídeos</a>
-                </article>
-                <article class="card home-card home-card--radio has-hover-tip" data-tip="Rádio do laboratório e playlist pessoal para partilhar.">
+                <article class="card home-card home-card--radio has-hover-tip" data-tip="Playlist BudGanja Radio." data-i18n-tip="pages.home.cardRadioTip">
                     <div class="card-icon card-icon--radio" aria-hidden="true">📻</div>
-                    <h3 data-i18n="pages.home.cardRadioTitle">Rádio</h3>
-                    <p data-i18n="pages.home.cardRadioText">Ouça a rádio do laboratório e monte uma playlist pessoal para partilhar no perfil.</p>
+                    <h3 data-i18n="pages.home.cardRadioTitle">BudGanja Radio</h3>
+                    <p data-i18n="pages.home.cardRadioText">Ouça a playlist do laboratório — BudGanja Radio.</p>
                     <a href="/radio/" class="botao botao-home" data-i18n="pages.home.cardRadioBtn">Abrir rádio</a>
-                </article>
-                <article class="card home-card home-card--sorteios has-hover-tip" data-tip="Sorteios activos e históricos do laboratório.">
-                    <div class="card-icon card-icon--sorteios" aria-hidden="true">🎁</div>
-                    <h3 data-i18n="pages.home.cardGiveawaysTitle">Sorteios</h3>
-                    <p data-i18n="pages.home.cardGiveawaysText">Sorteios activos e históricos do laboratório — participe e acompanhe os resultados.</p>
-                    <a href="/sorteios/" class="botao botao-home" data-i18n="pages.home.cardGiveawaysBtn">Ver Sorteios</a>
                 </article>
             </div>
         </div>
@@ -120,7 +171,9 @@
             <div class="home-latest-head">
                 <h2 data-i18n="pages.home.latestTitle">Últimas do laboratório</h2>
                 <p class="home-latest-nav">
-                    <a href="/biblioteca/pesquisas/" data-i18n="pages.home.latestLibrary">Pesquisas →</a>
+                    <a href="/plantas/" data-i18n="pages.home.latestPlantas">Plantas →</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="/biblioteca/unifesp/" data-i18n="pages.home.latestUnifesp">UNIFESP →</a>
                     <span aria-hidden="true">·</span>
                     <a href="/biblioteca/inspecoes/" data-i18n="pages.home.latestInspections">Inspeções →</a>
                 </p>

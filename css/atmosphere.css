@@ -1,0 +1,77 @@
+/* Atmosfera partilhada do laboratório (rádio → resto do site)
+   Paleta do banner: creme central, âmbar e verdes oliva/floresta */
+
+.lab-atmosphere,
+.radio-atmosphere {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        radial-gradient(ellipse 70% 45% at 50% -8%, rgba(254, 249, 215, 0.16), transparent 58%),
+        radial-gradient(ellipse 55% 40% at 82% 58%, rgba(109, 144, 77, 0.2), transparent 52%),
+        radial-gradient(ellipse 50% 38% at 12% 78%, rgba(78, 94, 21, 0.28), transparent 48%),
+        radial-gradient(ellipse 40% 30% at 50% 40%, rgba(223, 194, 98, 0.08), transparent 55%),
+        linear-gradient(180deg, rgba(12, 18, 8, 0.52) 0%, rgba(10, 14, 8, 0.88) 45%, var(--color-bg, #1a1a1a) 100%),
+        url("/imagens/background-hero.png?v=2e2192a02b") center top / cover no-repeat;
+    animation: lab-atmosphere-drift 28s ease-in-out infinite alternate;
+}
+
+@keyframes lab-atmosphere-drift {
+    from { background-position: center top, 80% 60%, 10% 80%, center, center 0%; }
+    to { background-position: center top, 70% 55%, 18% 75%, center, center 8%; }
+}
+
+@keyframes lab-fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.lab-fade-up {
+    animation: lab-fade-up 0.7s var(--transition-smooth, cubic-bezier(0.22, 1, 0.36, 1)) both;
+}
+
+.lab-fade-up-delay-1 { animation-delay: 0.06s; }
+.lab-fade-up-delay-2 { animation-delay: 0.12s; }
+.lab-fade-up-delay-3 { animation-delay: 0.18s; }
+
+.lab-eyebrow {
+    margin: 0 0 0.45rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #c2b168;
+}
+
+.lab-title-gold {
+    background: linear-gradient(180deg, #fef9d7 0%, #dfc262 52%, #7a9619 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.lab-glass {
+    border: 1px solid rgba(122, 150, 25, 0.32);
+    background:
+        linear-gradient(165deg, rgba(22, 28, 14, 0.9), rgba(10, 14, 8, 0.94));
+    box-shadow:
+        0 1px 0 rgba(254, 249, 215, 0.04) inset,
+        0 18px 48px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .lab-atmosphere,
+    .radio-atmosphere,
+    .lab-fade-up {
+        animation: none !important;
+    }
+}

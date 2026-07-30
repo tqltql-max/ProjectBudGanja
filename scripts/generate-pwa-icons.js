@@ -11,8 +11,8 @@ const SOURCE = fs.existsSync(SOURCE_PNG) ? SOURCE_PNG : SOURCE_SVG;
 const OUT_DIR = path.join(ROOT, 'imagens');
 const FAVICON_SVG = path.join(ROOT, 'favicon.svg');
 
-/** Fundo alinhado ao tema do site / PWA. */
-const BG = { r: 26, g: 26, b: 26, alpha: 1 };
+/** Fundo do splash/ícone — preto puro (evita cinza no arranque da app). */
+const BG = { r: 0, g: 0, b: 0, alpha: 1 };
 
 /**
  * iconsite.png já traz moldura dourada — padding leve só para safe-zone,
@@ -82,7 +82,7 @@ function buildFaviconSvg(pngBase64) {
   <defs>
     <clipPath id="round"><rect x="2" y="2" width="60" height="60" rx="14" ry="14"/></clipPath>
   </defs>
-  <rect x="0" y="0" width="64" height="64" rx="16" ry="16" fill="#1a1a1a"/>
+  <rect x="0" y="0" width="64" height="64" rx="16" ry="16" fill="#000000"/>
   <g clip-path="url(#round)">
     <image xlink:href="data:image/png;base64,${pngBase64}" width="64" height="64" preserveAspectRatio="xMidYMid meet"/>
   </g>
@@ -127,6 +127,7 @@ function stampManifestIcons() {
   if (!fs.existsSync(manifestPath)) return;
   const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
   const v = ASSET_VERSION;
+  manifest.background_color = '#000000';
   manifest.icons = [
     {
       src: `/imagens/icon-192.v${v}.png`,
@@ -160,6 +161,10 @@ function stampTwaIconUrls() {
   twa.iconUrl = `${base}/icon-512.v${v}.png`;
   twa.maskableIconUrl = `${base}/icon-512-maskable.v${v}.png`;
   twa.monochromeIconUrl = `${base}/icon-512.v${v}.png`;
+  twa.backgroundColor = '#000000';
+  twa.themeColorDark = '#000000';
+  twa.navigationColor = '#000000';
+  twa.navigationColorDark = '#000000';
   fs.writeFileSync(twaPath, JSON.stringify(twa, null, 2) + '\n');
   console.log(`  → twa-manifest.json ícones v${v}`);
 }

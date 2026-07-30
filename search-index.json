@@ -1,29 +1,35 @@
 {
-  "updatedAt": "2026-07-20T22:13:10.960Z",
+  "updatedAt": "2026-07-30T03:50:07.197Z",
   "items": [
     {
       "title": "Início",
       "url": "/",
-      "excerpt": "Laboratório digital de cultivo vegetal",
-      "text": "Início Laboratório digital de cultivo vegetal home laboratório"
+      "excerpt": "Laboratório de fitoterapia brasileira — plantas medicinais, UNIFESP e cultivo responsável",
+      "text": "Início Laboratório de fitoterapia brasileira — plantas medicinais, UNIFESP e cultivo responsável home fitoterapia plantas"
     },
     {
-      "title": "Inspeções — Guia de Cultivo Básico",
+      "title": "Plantas fitoterápicas",
+      "url": "/plantas/",
+      "excerpt": "Catálogo curado de plantas medicinais e fitoterápicas do Brasil",
+      "text": "Plantas fitoterápicas Catálogo curado de plantas medicinais e fitoterápicas do Brasil plantas fitoterapia medicinal babosa camomila cannabis"
+    },
+    {
+      "title": "Curso UNIFESP",
+      "url": "/biblioteca/unifesp/",
+      "excerpt": "Hub do XIV curso de extensão UNIFESP sobre cannabis medicinal",
+      "text": "Curso UNIFESP Hub do XIV curso de extensão UNIFESP sobre cannabis medicinal unifesp curso cannabis medicinal siex formação"
+    },
+    {
+      "title": "Inspeções",
       "url": "/biblioteca/inspecoes/",
-      "excerpt": "Série de inspeções com relatórios e vídeos @InspetorBudGanja",
-      "text": "Inspeções — Guia de Cultivo Básico Série de inspeções com relatórios e vídeos @InspetorBudGanja guia cultivo inspeção vídeo"
+      "excerpt": "Relatórios técnicos com método verificável — canais, equipamentos e cursos",
+      "text": "Inspeções Relatórios técnicos com método verificável — canais, equipamentos e cursos inspeção auditoria método"
     },
     {
       "title": "Pesquisas",
       "url": "/biblioteca/pesquisas/",
       "excerpt": "Relatórios e estudos técnicos",
       "text": "Pesquisas Relatórios e estudos técnicos pesquisa relatório"
-    },
-    {
-      "title": "Inspeções",
-      "url": "/biblioteca/inspecoes/",
-      "excerpt": "Relatórios técnicos com método verificável — guia, canais, equipamentos e cursos",
-      "text": "Inspeções Relatórios técnicos com método verificável — guia, canais, equipamentos e cursos inspeção auditoria método"
     },
     {
       "title": "Equipamentos",
@@ -74,10 +80,16 @@
       "text": "Últimos vídeos Vídeos recentes do canal YouTube youtube vídeo canal"
     },
     {
+      "title": "BudGanja Radio",
+      "url": "/radio/",
+      "excerpt": "Playlist BudGanja Radio do laboratório",
+      "text": "BudGanja Radio Playlist BudGanja Radio do laboratório rádio budganja playlist"
+    },
+    {
       "title": "Sobre",
       "url": "/info/sobre.html",
       "excerpt": "Propósito e metodologia do projeto",
-      "text": "Sobre Propósito e metodologia do projeto sobre missão"
+      "text": "Sobre Propósito e metodologia do projeto sobre missão fitoterapia"
     },
     {
       "title": "Contato",
@@ -122,22 +134,28 @@
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
     },
     {
-      "title": "Inspeção: Canal Jardim HG (@jardimhg)",
-      "url": "/posts/post-inspecao-canal-jardimhg.html",
-      "excerpt": "Auditoria editorial do canal Jardim HG — 124 vídeos catalogados sobre cultivo medicinal indoor/outdoor, com créditos integrais ao criador.",
-      "text": "Inspeção: Canal Jardim HG (@jardimhg) Auditoria editorial do canal Jardim HG — 124 vídeos catalogados sobre cultivo medicinal indoor/outdoor, com créditos integrais ao criador. inspecao ## Escopo\n\nInspeção editorial e técnica do **canal de referência** [Jardim HG](https://www.youtube.com/@jardimhg) (@jardimhg) — auditoria do acervo público de vídeos sobre cultivo medicinal de *Cannabis sativa* L. em português (Brasil), com mapeamento temático, avaliação de consistência pedagógica e registo completo do catálogo inspecionado.\n\n> **Nota metodológica:** esta inspeção foi produzida pelo laboratório Inspetor BudGanja de forma **independente**. Todo o conteúdo audiovisual pertence ao criador do canal Jardim HG. Nenhum vídeo foi replicado além dos embeds oficiais do YouTube.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Canal | [Jardim HG](https://www.youtube.com/@jardimhg) |\n| Handle | @jardimhg |\n| ID YouTube | `UC35zh8z-3baboExD1_O0jgA` |\n| Instagram | [@jardimhg](https://www.instagram.com/jardimhg/) |\n| Idioma | Português (Brasil) |\n| Linha editorial | Conteúdo educativo sobre cultivo medicinal de Cannabis sativa indoor e outdoor, com dicas práticas e técnicas especializadas. |\n| Canal ativo desde | 2023-03-08 |\n| Vídeos catalogados nesta inspeção | **124** |\n| Data da inspeção | 2026-07-17 |\n\n## Hipóteses e método\n\n- **H1:** Canais educativos consistentes em PT-BR preenchem lacuna entre prática de campo e literatura técnica acessível ao cultivador doméstico.\n- **H2:** A diversidade temática (substrato → colheita) correlaciona-se com retenção de audiência e profundidade de comunidade.\n- **Método:** (1) levantamento via feed RSS e página pública de uploads; (2) verificação de autoria por oEmbed (autor `Jardim HG`); (3) classificação temática por palavras-chave; (4) revisão cruzada com calculadoras e inspeções do Inspetor BudGanja.\n\n## Perfil editorial (achados)\n\n1. **Abordagem dual indoor/outdoor** — fotoperíodo, sementes automáticas vs. fotoperiódicas e"
+      "title": "Inspeção: Fertilizantes BioBizz",
+      "url": "/posts/post-inspecao-insumo-biobizz.html",
+      "excerpt": "Auditoria da linha orgânica BioBizz (Holanda) — Bio·Grow, Bio·Bloom, stimulators e cruzamento com EC, solo vivo e o guia de nutrição do laboratório.",
+      "text": "Inspeção: Fertilizantes BioBizz Auditoria da linha orgânica BioBizz (Holanda) — Bio·Grow, Bio·Bloom, stimulators e cruzamento com EC, solo vivo e o guia de nutrição do laboratório. inspecao ## Escopo\n\nInspeção documental da **linha de fertilizantes e stimulators orgânicos BioBizz** (Biobizz Worldwide Organics, Holanda, desde 1992) — bases de vegetativo/floração, aditivos e lógica de dosagem, com foco no uso em cultivo indoor/outdoor e na disponibilidade típica no Brasil via revendedores.\n\n> **Nota metodológica:** auditoria editorial independente do Inspetor BudGanja com base em fichas públicas, tabelas de aplicação e catálogos de revendedores BR (ex.: grow shops) em **2026-07-20**. **Sem afiliação comercial** com a BioBizz; NPK, dosagens e stock podem variar por lote/região — confirmar sempre no rótulo e em [biobizz.com](https://www.biobizz.com/).\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Marca | BioBizz (Biobizz Worldwide Organics) |\n| Origem | Holanda (1992) |\n| Site oficial | [biobizz.com](https://www.biobizz.com/) |\n| Perfil | Fertilizantes e stimulators **100% orgânicos** (líquidos + substratos na linha global) |\n| Disponibilidade BR | Via revendedores / grow shops (não é loja própria BudGanja) |\n| Embalagens típicas | 250 ml · 500 ml · 1 L · 5 L (+ kits Try-Pack / Grow+Bloom) |\n| Data da inspeção | 2026-07-20 |\n\n## Hipóteses e método\n\n- **H1:** A dupla **Bio·Grow + Bio·Bloom** cobre o ciclo completo em solo/coco para cultivadores que preferem orgânico líquido sem programa mineral multi-parte complexo.\n- **H2:** Em orgânico, **EC/PPM não substitui** observação de planta e tabela do fabricante — mas a [Calculadora EC](/calculadoras/cultivo-lab.html?mode=ec) ainda ajuda a registar a água de saída e a detectar acumulação.\n- **H3:** Stimulators (Top·Max, Bio·Heaven, Alg·A·Mic, Root·Juice, etc.) só fazem sentido depois das bases estarem estáveis.\n- **Método:** (1) inventário da linha mais citada em BR; (2) papel de cada produto no ciclo; (3) fai"
     },
     {
-      "title": "Inspeção: Canal Plantamemo (@plantamemo)",
-      "url": "/posts/post-inspecao-canal-plantamemo.html",
-      "excerpt": "Auditoria editorial do canal Plantamemo — 213 vídeos catalogados sobre breeders, genéticas clássicas e cultivo indoor do zero, com créditos integrais ao criador.",
-      "text": "Inspeção: Canal Plantamemo (@plantamemo) Auditoria editorial do canal Plantamemo — 213 vídeos catalogados sobre breeders, genéticas clássicas e cultivo indoor do zero, com créditos integrais ao criador. inspecao ## Escopo\n\nInspeção editorial e técnica do **canal de referência** [Plantamemo](https://www.youtube.com/@plantamemo) (@plantamemo) — auditoria do acervo público sobre história de breeders/genéticas, curso indoor do zero e setup prático (LED, nutrição e diários de grow) em português.\n\n> **Nota metodológica:** esta inspeção foi produzida pelo laboratório Inspetor BudGanja de forma **independente**. Todo o conteúdo audiovisual pertence ao criador do canal Plantamemo. Nenhum vídeo foi replicado além dos embeds oficiais do YouTube.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Canal | [Plantamemo](https://www.youtube.com/@plantamemo) |\n| Handle | @plantamemo |\n| ID YouTube | `UCGshKUCThq45YYwJ2Vqb3gA` |\n| Instagram | [@plantamemo](https://www.instagram.com/plantamemo/) |\n| Idioma | Português (Brasil), com episódios pontuais em inglês |\n| Linha editorial | Histórias de breeders, genéticas clássicas e conteúdo prático de cultivo indoor (LED, setup e cultura canábica) em português. |\n| Canal ativo desde (aprox., catálogo) | 2026-03-12 |\n| Vídeos catalogados nesta inspeção | **213** |\n| Data da inspeção | 2026-07-17 |\n\n## Hipóteses e método\n\n- **H1:** Canais que combinam **narrativa de genéticas** com **curso indoor serializado** aumentam retenção e literacia do cultivador doméstico.\n- **H2:** Parcerias de equipamento (LED/tenda) são úteis quando acompanhadas de protocolo mensurável (PPFD, ciclo, nutrição) — e devem ser lidas com espírito crítico.\n- **Método:** (1) inventário via página pública `/videos` + feed RSS; (2) classificação temática por palavras-chave nos títulos; (3) selecção de vídeo de referência para embed; (4) cruzamento com calculadoras e inspeções do Inspetor BudGanja.\n\n## Perfil editorial (achados)\n\n1. **Arquivo de breeders e linhag"
+      "title": "Inspeção: Loja Flora Urbana 420",
+      "url": "/posts/post-inspecao-loja-floraurbana.html",
+      "excerpt": "Auditoria da vitrine floraurbana420.com.br — sementes de coleção, bancos representados, logística BR, PIX e cruzamento com o guia de cultivo.",
+      "text": "Inspeção: Loja Flora Urbana 420 Auditoria da vitrine floraurbana420.com.br — sementes de coleção, bancos representados, logística BR, PIX e cruzamento com o guia de cultivo. inspecao ## Escopo\n\nInspeção documental da **loja virtual Flora Urbana 420** — vitrine brasileira de **sementes de coleção**, lifestyle e head shop associados, com foco em catálogo de bancos, filtros de compra, logística nacional e transparência de atendimento.\n\n> **Nota metodológica:** auditoria editorial independente do Inspetor BudGanja com base nas páginas públicas do site em **2026-07-20**. **Sem afiliação comercial** com a Flora Urbana; preços, stock e condições podem mudar — confirmar sempre em [floraurbana420.com.br](https://floraurbana420.com.br/). Códigos de desconto de canais externos **não** são códigos do Inspetor BudGanja.\n\n> **Enquadramento legal / editorial:** a loja declara vender sementes para **coleção, pesquisa ou preservação genética**. Esta inspeção é **educacional** e descreve a vitrine pública; não incentiva ilícitos. Cabe ao leitor conhecer a legislação local.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Loja | Flora Urbana 420 |\n| Site | [floraurbana420.com.br](https://floraurbana420.com.br/) |\n| Não confundir com | [floraurbana.com.br](https://floraurbana.com.br/) (loja de plantas ornamentais / decoração — domínio distinto) |\n| Idioma / moeda | Português (BR) · R$ |\n| Pagamento declarado | **PIX** (exclusivo na data da inspeção) |\n| Logística declarada | Correios · rastreio · envio discreto · postagem seg–sex · até **72 h úteis** após confirmação |\n| Atendimento | Seg–sex 10:00–17:00 (Brasília) · WhatsApp / e-mail |\n| App / cupom observado | App com cupom **APP10** (10% OFF) na data da inspeção |\n| Data da inspeção | 2026-07-20 |\n\n## Hipóteses e método\n\n- **H1:** Uma loja BR com múltiplos bancos internacionais + filtros (ciclo, feminizada/regular, pack) reduz fricção na escolha de genética para colecionadores.\n- **H2:** Políticas claras de armazenamen"
     },
     {
-      "title": "Inspeção: Canal Inspetor BudGanja (@InspetorBudGanja)",
-      "url": "/posts/post-inspecao-canal-inspetorbudganja.html",
-      "excerpt": "Auditoria editorial do canal oficial — 7 vídeos catalogados como trilha técnica do laboratório, com foco em conhecimento científico aplicado e integração com as ferramentas do projeto.",
-      "text": "Inspeção: Canal Inspetor BudGanja (@InspetorBudGanja) Auditoria editorial do canal oficial — 7 vídeos catalogados como trilha técnica do laboratório, com foco em conhecimento científico aplicado e integração com as ferramentas do projeto. inspecao ## Escopo\n\nInspeção editorial do **canal oficial** [Inspetor BudGanja](https://www.youtube.com/@InspetorBudGanja) (@InspetorBudGanja) — leitura do catálogo inicial de vídeos do laboratório, com foco em método, sequência pedagógica e relação directa com as ferramentas do site.\n\nA inspeção considera a intenção declarada do canal: **promover conhecimento científico aplicado ao cultivo vegetal**, traduzindo conceitos técnicos em protocolos práticos, verificáveis e replicáveis dentro do projeto Inspetor BudGanja.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Canal | [Inspetor BudGanja](https://www.youtube.com/@InspetorBudGanja) |\n| Handle | @InspetorBudGanja |\n| ID YouTube | `UCv6U48NA-zeDCRxmegfe7NQ` |\n| Idioma | Português (Brasil) |\n| Linha editorial | Conteúdo técnico, prático e educacional sobre cultivo, ferramentas e documentação de campo |\n| Canal ativo desde | 2026-06-27 |\n| Vídeos catalogados nesta inspeção | **7** |\n| Data da inspeção | 2026-07-17 |\n\n## Hipóteses e método\n\n- **H1:** Um canal técnico consistente funciona melhor quando a sequência editorial vai do básico ao aplicado.\n- **H2:** Cada vídeo do canal deve mapear para uma ferramenta, um manual ou uma inspeção complementar no site.\n- **Método:** (1) inventário do feed público do canal; (2) leitura dos títulos e resumos; (3) agrupamento temático por palavras-chave; (4) cruzamento com calculadoras, manuais e inspeções já publicadas; (5) revisão final do texto e dos links.\n\n## Intenção científica do canal\n\n1. **Popularização científica:** converter fundamentos de fisiologia vegetal, ambiente e nutrição em linguagem acessível sem perder rigor técnico.\n2. **Padronização de método:** estimular decisões baseadas em variáveis mensuráveis (luz, pH, EC,"
+      "title": "Inspeção: Canal MovReCam — aulas UNIFESP",
+      "url": "/posts/post-inspecao-canal-movrecam.html",
+      "excerpt": "Auditoria do canal MovReCam — 285 vídeos catalogados; destaque à 11ª aula (Psicodélicos, Profa. Dra. Eliana Rodrigues) da XIV edição UNIFESP.",
+      "text": "Inspeção: Canal MovReCam — aulas UNIFESP Auditoria do canal MovReCam — 285 vídeos catalogados; destaque à 11ª aula (Psicodélicos, Profa. Dra. Eliana Rodrigues) da XIV edição UNIFESP. inspecao ## Escopo\n\nInspeção editorial e documental do **canal oficial** [MovReCam](https://www.youtube.com/@MovReCam) (@MovReCam) — plataforma de transmissão do **curso de extensão UNIFESP** sobre cannabis medicinal e arquivo público do **Movimento pela Regulamentação da Cannabis**. Complementa a [inspeção do curso UNIFESP (XIV edição)](/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html): aqui audita-se o **acervo em vídeo** (aulas, lives e material de advocacy), não apenas a ficha SIEX.\n\n> **Nota metodológica:** auditoria independente do Inspetor BudGanja. Todo o conteúdo audiovisual pertence ao MovReCam e aos palestrantes convidados pela UNIFESP. Nenhum vídeo foi replicado além dos embeds oficiais do YouTube.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Canal | [MovReCam](https://www.youtube.com/@MovReCam) |\n| Handle | @MovReCam |\n| ID YouTube | `UCGvVEwpsxRlq18Uh2HYocbg` |\n| Site do movimento | [movrecam.org.br](https://movrecam.org.br/) |\n| Curso vinculado | [UNIFESP SIEX 30063](https://siex.siiu.unifesp.br/catalogo-siex/30063/mais-info) |\n| Contato curso | [curso.cannabismedicinal@unifesp.br](mailto:curso.cannabismedicinal@unifesp.br) |\n| Idioma | Português (Brasil) |\n| Linha editorial | Canal oficial do Movimento pela Regulamentação da Cannabis (MovReCam) — transmissão das aulas do curso de extensão UNIFESP sobre Cannabis sativa L. medicinal e conteúdo de advocacy em português. |\n| Vídeos catalogados nesta inspeção | **285** |\n| Aulas identificadas (padrão «Nª Aula») | **234** |\n| Aulas da XIV edição (desde 16/06/2026) | **11** |\n| Data da inspeção | 2026-07-30 |\n\n## Aula em destaque\n\n**[11ª Aula - Psicodélicos - Profª Dra. Eliana Rodrigues](https://www.youtube.com/watch?v=dV-6qKW1HXg&t=3894s)** — Profa. Dra. Eliana Rodrigues (coordenação RTC do curso UN"
+    },
+    {
+      "title": "Inspeção: Canal CANABinALL — Profa. Dra. Eliana Rodrigues",
+      "url": "/posts/post-inspecao-canal-canabinall.html",
+      "excerpt": "Auditoria do canal CANABinALL (@canabinall) — 139 vídeos catalogados; divulgação científica UNIFESP sob curadoria da Profa. Dra. Eliana Rodrigues (CEE), com destaque a Conceitos básicos #1 e à série Plantas Sagradas.",
+      "text": "Inspeção: Canal CANABinALL — Profa. Dra. Eliana Rodrigues Auditoria do canal CANABinALL (@canabinall) — 139 vídeos catalogados; divulgação científica UNIFESP sob curadoria da Profa. Dra. Eliana Rodrigues (CEE), com destaque a Conceitos básicos #1 e à série Plantas Sagradas. inspecao ## Escopo\n\nInspeção editorial e documental do **canal oficial** [CANABinALL](https://www.youtube.com/@canabinall) (@canabinall) — projeto de **extensão universitária da UNIFESP** idealizado e curado pela **Profa. Dra. Eliana Rodrigues**, Professora Titular do ICAQF/Campus Diadema, fundadora e coordenadora do [Centro de Estudos Etnobotânicos e Etnofarmacológicos (CEE)](https://site.unifesp.br/cee/coordenacao).\n\nEste relatório audita o **acervo de divulgação científica** do CANABinALL («tudo sobre os canabinoides»), distinto do arquivo de aulas ao vivo do [MovReCam](/posts/post-inspecao-canal-movrecam.html) e complementar à [inspeção do curso UNIFESP](/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html). Aqui o foco é a **tradução semanal da literatura** — fitocanabinoides, endocanabinoides e canabinoides sintéticos — para o público leigo e profissional, com rigor académico e generosidade pedagógica.\n\n> **Nota metodológica:** auditoria independente do Inspetor BudGanja. Todo o conteúdo audiovisual, a curadoria científica e o mérito intelectual pertencem à Profa. Dra. Eliana Rodrigues, à UNIFESP/CEE/Observatório PharMacon e aos colaboradores do projeto. Nenhum vídeo foi replicado além dos embeds oficiais do YouTube. **Sem afiliação** institucional.\n\n## Por que esta inspeção importa\n\nA Profa. Dra. Eliana Rodrigues é uma das vozes mais sólidas da ciência canábica e etnobotânica no Brasil. Bióloga (USP), com mestrado em Geografia Física (USP), doutorado e pós-doutorado na Escola Paulista de Medicina, coordena desde 1995 linhas de etnofarmacologia, etnobotânica e conservação, reações adversas de fitoterápicos, etnoveterinária e zoofarmacognosia. Orienta no Programa de Biologia Química da"
     },
     {
       "title": "Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal",
@@ -149,49 +167,7 @@
       "title": "Inspeção: Equipamentos Mars Hydro Brasil",
       "url": "/posts/post-inspecao-marshydro-brasil.html",
       "excerpt": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório.",
-      "text": "Inspeção: Equipamentos Mars Hydro Brasil Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório. inspecao ## Escopo\n\nInspeção documental e técnica do **catálogo Mars Hydro disponível no Brasil** — luzes LED, tendas de cultivo, ventilação iFresh e kits integrados comercializados com envio nacional, preços em real e garantia declarada pelo fabricante.\n\n> **Nota metodológica:** auditoria editorial independente do Inspetor BudGanja sobre fichas técnicas públicas e dimensionamento cruzado com as calculadoras do laboratório. **Sem afiliação comercial** com a Mars Hydro; preços e SKUs podem variar — confirmar sempre no site oficial antes da compra.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Marca | Mars Hydro (fundada 2009) |\n| Loja Brasil | [marshydros.com.br](https://marshydros.com.br) |\n| Espelho regional | [marshydrobr.com](https://marshydrobr.com) |\n| Idioma / moeda | Português (BR) · R$ |\n| Logística declarada | Envio do Brasil · frete grátis · valor final sem taxas extras (conforme vitrine) |\n| Garantia LED | Até **5 anos** (séries FC / FC-EVO, conforme ficha) |\n| Data da inspeção | 2026-06-28 |\n\n## Hipóteses e método\n\n- **H1:** Um ecossistema fechado (luz + tenda + exaustão + controlador) reduz erros de dimensionamento para cultivadores iniciantes no Brasil.\n- **H2:** A separação em séries TS (entrada), FC-E (custo-benefício) e FC-EVO (premium Samsung) permite escolha por orçamento sem sacrificar cobertura útil.\n- **H3:** Ventilação iFresh com filtro de carvão e controlador iControl aproxima automação de VPD do que o laboratório mede manualmente.\n- **Método:** (1) levantamento do catálogo BR em 2026-06-28; (2) agrupamento por família de produto; (3) validação de cobertura LED × volume da tenda; (4) cruzamento com [inspeções de ambiente indoor](/posts/post-inspecao-cultivo-indoor-ppfd.html), [ventilação](/posts/post-inspecao-ventilacao-tenda.htm"
-    },
-    {
-      "title": "Inspeção: Otimização do Cultivo Indoor (PPFD e ambiente)",
-      "url": "/posts/post-inspecao-cultivo-indoor-ppfd.html",
-      "excerpt": "Verificação integrada de PPFD, DLI, VPD, ventilação e layout da tenda — síntese do ambiente indoor eficiente.",
-      "text": "Inspeção: Otimização do Cultivo Indoor (PPFD e ambiente) Verificação integrada de PPFD, DLI, VPD, ventilação e layout da tenda — síntese do ambiente indoor eficiente. inspecao ## Escopo\n\nInspeção **integrada do ambiente indoor**: densidade de fluxo de fótons fotossinteticamente ativos (PPFD), integral diária de luz (DLI), déficit de pressão de vapor (VPD), renovação de ar e disposição física da tenda.\n\n## Hipóteses e método\n\n- **H1:** PPFD no dossel entre 400–600 μmol/m²/s (floração) com fotoperíodo 12 h produz DLI ≈ 17–26 mol/m²/d — faixa produtiva para cannabis.\n- **H2:** VPD estável (0,8–1,2 kPa veg.; 1,0–1,4 kPa floração) maximiza transpiração sem fechar estômatos.\n- **H3:** Renovação de ar ≥1 volume/minuto reduz gradiente térmico e acúmulo de etileno.\n- **Método:** Checklist do vídeo + cruzamento com [Inspeção: Ventilação da Tenda](/posts/post-inspecao-ventilacao-tenda.html).\n\n## Medições de referência\n\n| Grandeza | Vegetativo | Floração | Ferramenta |\n|----------|-----------|----------|------------|\n| PPFD (dossel) | 300–500 μmol/m²/s | 400–700 μmol/m²/s | Luxímetro/quantum (ou estimativa W/m²) |\n| DLI | 18–24 mol/m²/d | 30–45 mol/m²/d | [Calculadora DLI](/calculadoras/cultivo-lab.html?mode=dli) |\n| VPD | 0,8–1,2 kPa | 1,0–1,4 kPa | [Calculadora VPD](/calculadoras/cultivo-lab.html?mode=vpd) |\n| T | 24–28 °C (luz) | 20–26 °C | Termo-higrômetro |\n| Renovação ar | ~1,2 min⁻¹ | idem | Exaustor dimensionado |\n\n## Achados\n\n- **LED full spectrum:** posicionar a 30–45 cm do dossel; ajustar altura conforme [Watts/m²](/calculadoras/cultivo-lab.html?mode=watts-m2).\n- **Exaustor inline + filtro de carvão:** pressão negativa evita odor; ver relatório de ventilação do laboratório.\n- **Ventilador de circulação interno:** previne microclimas e fortalece caules.\n- **Automação:** tomada inteligente + timer segregam luz, exaustor e umidificador por fase.\n- **Layout:** reservar espaço para acesso, espectro uniforme e manutenção do filtro.\n\n## Equipamentos verificados\n\n- Painel LE"
-    },
-    {
-      "title": "Inspeção: Propagação e Clonagem",
-      "url": "/posts/post-inspecao-propagacao-clonagem.html",
-      "excerpt": "Verificação de técnicas de multiplicação vegetativa — estacas, ambiente de enraizamento e sistemas aeropónicos caseiros.",
-      "text": "Inspeção: Propagação e Clonagem Verificação de técnicas de multiplicação vegetativa — estacas, ambiente de enraizamento e sistemas aeropónicos caseiros. inspecao ## Escopo\n\nInspeção dos **métodos de propagação clonal**: seleção de material-mãe, estacas apicais, parâmetros de enraizamento (T, UR, oxigenação radicular) e comparação entre métodos passivos e aeropónicos.\n\n## Hipóteses e método\n\n- **H1:** Estacas de 10–15 cm com 2–3 nós, cortadas em bisel sob água corrente, enraízam mais rápido com UR elevada (70–90 %).\n- **H2:** Oxigenação contínua da zona radicular (clonadora com bombinha ou aspersão) acelera emissão de raízes adventícias.\n- **Método:** Protocolo do vídeo cruzado com manuais das clonadoras documentadas no laboratório.\n\n## Parâmetros de enraizamento\n\n| Parâmetro | Faixa alvo | Equipamento |\n|-----------|-----------|-------------|\n| Temperatura | 24–26 °C | Termo-higrômetro |\n| UR | 70–90 % | Domo / propagador |\n| Fotoperíodo | 18/6 ou 24/0 h | Timer |\n| Oxigenação (aeroponia) | 24 h contínuo | Bombinha de ar |\n\n## Achados\n\n- **Material-mãe:** plantas sadias, livres de pragas; últimos ramos vegetativos são ideais.\n- **Clonadora 6 estacas:** pote + buchas + compressor de ar — baixo custo, documentada em [manual 6 estacas](/equipamentos/clonadora-6-estacas.html).\n- **Clonadora 12 estacas:** aspersão com bomba submersa — maior throughput.\n- **Gel de enraizamento:** opcional; ácido indolilbutírico (AIB) estimula calo e raízes.\n- Tempo típico: **7–14 dias** até raízes visíveis com ambiente estável.\n\n## Equipamentos verificados\n\n- Clonadora de 6 estacas — materiais\n- Clonadora de 12 estacas — materiais\n- Gel de enraizamento\n\n## Ferramentas do laboratório\n\n- [Manual clonadora 6 estacas](/equipamentos/clonadora-6-estacas.html)\n- [Manual clonadora 12 estacas](/equipamentos/clonadora-12-estacas.html)\n\n## Vídeo explicativo\n\n@youtube tdMl4X5h83Y\n\n## Status\n\n**Aprovado** — protocolos de clonagem reprodutíveis com materiais acessíveis e documentação de campo completa."
-    },
-    {
-      "title": "Inspeção: A Ciência da Floração",
-      "url": "/posts/post-inspecao-ciencia-floracao.html",
-      "excerpt": "Verificação do gatilho fotoperiódico, desenvolvimento pistilar, maturação tricomática e janela ideal de colheita.",
-      "text": "Inspeção: A Ciência da Floração Verificação do gatilho fotoperiódico, desenvolvimento pistilar, maturação tricomática e janela ideal de colheita. inspecao ## Escopo\n\nInspeção da **fase reprodutiva**: transição vegetativo→floração por fotoperíodo, morfologia floral, biosíntese de canabinoides e terpenos nos tricomas glandulares.\n\n## Hipóteses e método\n\n- **H1:** Fotoperíodo ≤12 h de luz contínua induz floração em genótipos fotoperiódicos via interação phytochrome (Pfr/Pr).\n- **H2:** A maturação tricomática (clara→leitosa→âmbar) correlaciona-se com perfil de efeito e rendimento — não apenas calendário.\n- **Método:** Registo de data de flip 12/12, contagem de semanas de floração e observação tricomática com lupa 60×.\n\n## Parâmetros críticos na floração\n\n| Variável | Alvo | Notas |\n|----------|------|-------|\n| Fotoperíodo | 12/12 h | Timer digital — sem fugas de luz |\n| Temperatura | 20–26 °C | Calor noturno excessivo degrada terpenos |\n| UR | 40–50 % | Reduz risco de botrytis |\n| VPD | 1,0–1,4 kPa | [Calculadora VPD](/calculadoras/cultivo-lab.html?mode=vpd) |\n| N:P:K | Baixo N, alto P/K | Ver inspeção de nutrição |\n\n## Achados\n\n- **Pré-flora:** alongamento internodal (“stretch”) nas 2–3 primeiras semanas pós-flip — reforçar suporte/SCROG.\n- **Pistilos:** brancos e erectos no início; escurecimento e retração indicam aproximação da maturação.\n- **Tricomas:** colheita majoritariamente leitosa para perfil mais cerebral; 10–20 % âmbar para efeito mais sedativo.\n- **Flush opcional:** redução de EC nas últimas 1–2 semanas pode melhorar sabor em cultivo mineral.\n\n## Equipamentos verificados\n\n- Timer fotoperíodo 12/12\n- Tomada inteligente — confirmação de escuro absoluto\n- Termo-higrômetro — UR baixa na floração\n\n## Ferramentas do laboratório\n\n- [Calculadora DLI](/calculadoras/cultivo-lab.html?mode=dli)\n- [Diário de Cultivo](/cultivo/) — registar semanas de floração\n\n## Vídeo explicativo\n\n@youtube V6LO6nXh8bI\n\n## Status\n\n**Aprovado** — critérios fotoperiódicos e de maturação t"
-    },
-    {
-      "title": "Inspeção: Arquitetura da Cannabis",
-      "url": "/posts/post-inspecao-arquitetura-cannabis.html",
-      "excerpt": "Avaliação morfológica da planta — nós, internós, gemas apicais e laterais — e técnicas de manejo (topping, LST, SCROG).",
-      "text": "Inspeção: Arquitetura da Cannabis Avaliação morfológica da planta — nós, internós, gemas apicais e laterais — e técnicas de manejo (topping, LST, SCROG). inspecao ## Escopo\n\nInspeção da **arquitetura vegetativa** da cannabis: padrão de ramificação, dominância apical, distribuição de fluxo assimilatório e intervenções de treino que maximizam área foliar iluminada.\n\n## Hipóteses e método\n\n- **H1:** A dominância apical concentra auxinas na gema terminal, limitando brotação lateral até intervenção mecânica.\n- **H2:** Topping, LST (Low Stress Training) e SCROG aumentam colmos produtivos de forma previsível se aplicados no vegetativo.\n- **Método:** Mapeamento morfológico (nó/internó), registo fotográfico no diário e verificação de uniformidade lumínica no dossel.\n\n## Parâmetros morfológicos\n\n| Estrutura | Função | Indicador de saúde |\n|-----------|--------|-------------------|\n| Gema apical | Crescimento vertical | Cor verde uniforme, sem necrose |\n| Gemas axilares | Ramos laterais | Ativas após topping/LST |\n| Pecíolo | Suporte e transporte | Ângulo 45–90° após treino |\n| Internódio | Distância entre nós | Curto = luz adequada; longo = estiolamento |\n\n## Achados\n\n- **Topping (pinceamento apical):** duas gemas laterais assumem dominância; ideal com 4–6 nós desenvolvidos.\n- **LST:** dobragem gradual redistribui hormônios sem choque — fita macia ou arame revestido.\n- **SCROG:** rede de treino nivela dossel; PPFD homogéneo reduz “pipoca” (buds inferiores improdutivos).\n- **Folhas:** índice de área foliar (LAI) correlaciona com taxa fotossintética — remover apenas fan leaves que sombreiam gemas.\n\n## Equipamentos verificados\n\n- Rede SCROG para cultivo\n- Tesoura de poda\n- Painel LED full spectrum — uniformidade no dossel\n\n## Ferramentas do laboratório\n\n- [Calculadora Watts/m²](/calculadoras/cultivo-lab.html?mode=watts-m2)\n- [Diário de Cultivo](/cultivo/) — fotos antes/depois do treino\n\n## Vídeo explicativo\n\n@youtube OO7d72tHwJY\n\n## Status\n\n**Aprovado** — protocolos de manejo co"
-    },
-    {
-      "title": "Inspeção: Solo Vivo Orgânico",
-      "url": "/posts/post-inspecao-solo-vivo-organico.html",
-      "excerpt": "Verificação da construção de super-solo com microbioma ativo, ciclagem de nutrientes e indicadores de saúde do substrato.",
-      "text": "Inspeção: Solo Vivo Orgânico Verificação da construção de super-solo com microbioma ativo, ciclagem de nutrientes e indicadores de saúde do substrato. inspecao ## Escopo\n\nInspeção do **substrato vivo** (*living soil*): composição do super-solo, papel de bactérias, fungos micorrízicos e invertebrados na mineralização e disponibilização de nutrientes.\n\n## Hipóteses e método\n\n- **H1:** Um solo vivo reduz a dependência de fertilizantes minerais sintéticos ao manter ciclagem fechada de C e N.\n- **H2:** A estrutura física (porosidade, retenção hídrica) e a atividade biológica são indicadores complementares de saúde.\n- **Método:** Análise da receita do vídeo (turfa/coco, composto, perlita, amendamentos) e critérios de manutenção (rega com chá de compostagem, cobertura morta).\n\n## Composição verificada (receita base)\n\n| Componente | Função | Proporção orientativa |\n|------------|--------|----------------------|\n| Turfa / coco | Matriz e retenção | 30–40 % |\n| Composto maduro | Nutrientes lentos + microbioma | 30–40 % |\n| Perlita / vermiculita | Drenagem e aeração | 10–20 % |\n| Farinha de ossos / guano | P e Ca (liberação lenta) | conforme análise |\n| Humus de minhoca | Inóculo microbiano | 5–10 % |\n\n## Achados\n\n- **Atividade biológica:** odor terroso, agregados estáveis e presença de micélio visível indicam colonização fúngica benéfica.\n- **pH tampão:** matéria orgânica complexa mantém faixa 6,0–7,0 em cultivo de cânhamo.\n- **Irrigação:** regas com **chá de compostagem** (aerada 24–48 h) repõem microbioma sem sobrefertilizar.\n- **Cobertura morta (mulch):** reduz evaporação e alimenta decompositores na superfície.\n\n## Equipamentos verificados\n\n- Substrato orgânico para plantas\n- Perlita para cultivo\n- Termo-higrômetro — UR do dossel em solo vivo (55–65 % veg.)\n\n## Ferramentas do laboratório\n\n- [Calculadora VPD](/calculadoras/cultivo-lab.html?mode=vpd) — ambiente do dossel\n- [Inspeção: Nutrição](/posts/post-inspecao-nutricao-cannabis.html) — complemento mineral\n\n## Vídeo expl"
-    },
-    {
-      "title": "Inspeção: Nutrição da Cannabis",
-      "url": "/posts/post-inspecao-nutricao-cannabis.html",
-      "excerpt": "Análise das necessidades de macro e micronutrientes por fase fenológica, relação N:P:K e condutividade elétrica da solução nutritiva.",
-      "text": "Inspeção: Nutrição da Cannabis Análise das necessidades de macro e micronutrientes por fase fenológica, relação N:P:K e condutividade elétrica da solução nutritiva. inspecao ## Escopo\n\nInspeção da **nutrição mineral e orgânica** da *Cannabis sativa* L. em cultivo controlado: demanda por macronutrientes (N, P, K, Ca, Mg, S), micronutrientes (Fe, Mn, Zn, Cu, B, Mo) e ajuste por fase vegetativa vs. floração.\n\n## Hipóteses e método\n\n- **H1:** A relação N:P:K deve inverter-se entre vegetativo (ênfase em N) e floração (ênfase em P e K).\n- **H2:** EC e pH da solução ou do extrato de solo predizem disponibilidade iônica — fora da faixa ótima ocorre bloqueio antagónico (ex.: excesso de Ca bloqueia Mg).\n- **Método:** Síntese do protocolo do vídeo + tabela de faixas EC/pH aceites para cada meio.\n\n## Medições de referência\n\n| Fase | N:P:K típico | EC solução (mS/cm) | pH alvo |\n|------|-------------|-------------------|---------|\n| Plântula / início veg. | 3:1:2 | 0,8–1,2 | 5,8–6,2 (hidro) / 6,0–6,5 (solo) |\n| Vegetativo pleno | 3:1:2 – 2:1:2 | 1,2–1,8 | 5,8–6,2 |\n| Floração | 1:3:2 | 1,4–2,0 | 5,8–6,0 |\n| Final floração | 0:3:3 | 1,0–1,4 | 5,8–6,0 |\n\n## Achados\n\n- **Deficiência de N:** clorose em folhas inferiores (mobilização de reservas).\n- **Deficiência de P:** folhas escuras com manchas bronzeadas; atraso na floração.\n- **Deficiência de K:** necrose marginal em folhas maduras durante floração.\n- **Toxicidade por excesso:** pontas queimadas, bloqueio de outros íons — reduzir EC antes de adicionar mais fertilizante.\n- Em **solo vivo**, a nutrição é mediada pelo microbioma — ver [Inspeção: Solo Vivo Orgânico](/posts/post-inspecao-solo-vivo-organico.html).\n\n## Equipamentos verificados\n\n- Medidor de pH da água — calibração semanal recomendada\n- Balança digital de precisão — dosagem de fertilizantes\n- Fertilizante NPK para plantas — linha vegetativo e floração\n\n## Ferramentas do laboratório\n\n- [Calculadora EC](/calculadoras/cultivo-lab.html?mode=ec)\n- [Calculadora de diluição](/"
-    },
-    {
-      "title": "Inspeção: O Início do Cultivo de Cannabis",
-      "url": "/posts/post-inspecao-cultivo-inicio.html",
-      "excerpt": "Verificação das quatro fases fenológicas e dos fatores ambientais críticos no arranque do cultivo — base do guia em vídeo do canal.",
-      "text": "Inspeção: O Início do Cultivo de Cannabis Verificação das quatro fases fenológicas e dos fatores ambientais críticos no arranque do cultivo — base do guia em vídeo do canal. inspecao ## Escopo\n\nInspeção documental do **arranque do cultivo** conforme metodologia apresentada no canal @InspetorBudGanja: delimitação das fases fenológicas, variáveis ambientais mensuráveis e critérios de aceitação para germinação e vegetativo inicial.\n\n## Hipóteses e método\n\n- **H1:** O ciclo completo divide-se em quatro etapas operacionais distintas (germinação → vegetativo → floração → secagem/cura).\n- **H2:** Luz, água, ar, temperatura, umidade relativa (UR) e substrato/nutrição são variáveis de primeira ordem — falha em qualquer uma compromete o rendimento global.\n- **Método:** Revisão do protocolo em vídeo, cruzamento com parâmetros de referência do laboratório e checklist de instrumentação mínima.\n\n## Parâmetros de referência\n\n| Variável | Faixa alvo (indoor típico) | Instrumento |\n|----------|---------------------------|-------------|\n| Temperatura | 22–28 °C (dia) | Termo-higrômetro digital |\n| UR ar | 55–70 % (vegetativo) | Termo-higrômetro |\n| Fotoperíodo (veg.) | 18/6 h | Timer digital |\n| Substrato | Bem drenado, pH 6,0–6,5 | Medidor de pH (opcional) |\n\n## Achados\n\n1. **Germinação:** sementes viáveis exigem umidade constante (não encharcamento) e temperatura estável; escotofobia impede desenvolvimento sem luz após emergência.\n2. **Vegetativo:** taxa de crescimento correlaciona-se com fotossíntese líquida — insuficiência lumínica alonga internós e reduz biomassa foliar.\n3. **Transição:** mudança de fotoperíodo e nutrição antecipa floração; documentar data de flip é essencial para o diário de cultivo.\n4. **Secagem/cura:** redução gradual da UR (≈55–62 %) preserva terpenos; monitorização contínua evita mofo.\n\n## Equipamentos verificados\n\n- Termo-higrômetro digital — leitura simultânea T e UR no dossel\n- Timer de fotoperíodo — repetibilidade 18/6 ou 12/12\n- Tomada inteligente Wi-F"
+      "text": "Inspeção: Equipamentos Mars Hydro Brasil Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório. inspecao ## Escopo\n\nInspeção documental e técnica do **catálogo Mars Hydro disponível no Brasil** — luzes LED, tendas de cultivo, ventilação iFresh e kits integrados comercializados com envio nacional, preços em real e garantia declarada pelo fabricante.\n\n> **Nota metodológica:** auditoria editorial independente do Inspetor BudGanja sobre fichas técnicas públicas e dimensionamento cruzado com as calculadoras do laboratório. **Sem afiliação comercial** com a Mars Hydro; preços e SKUs podem variar — confirmar sempre no site oficial antes da compra.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Marca | Mars Hydro (fundada 2009) |\n| Loja Brasil | [marshydros.com.br](https://marshydros.com.br) |\n| Espelho regional | [marshydrobr.com](https://marshydrobr.com) |\n| Idioma / moeda | Português (BR) · R$ |\n| Logística declarada | Envio do Brasil · frete grátis · valor final sem taxas extras (conforme vitrine) |\n| Garantia LED | Até **5 anos** (séries FC / FC-EVO, conforme ficha) |\n| Data da inspeção | 2026-06-28 |\n\n## Hipóteses e método\n\n- **H1:** Um ecossistema fechado (luz + tenda + exaustão + controlador) reduz erros de dimensionamento para cultivadores iniciantes no Brasil.\n- **H2:** A separação em séries TS (entrada), FC-E (custo-benefício) e FC-EVO (premium Samsung) permite escolha por orçamento sem sacrificar cobertura útil.\n- **H3:** Ventilação iFresh com filtro de carvão e controlador iControl aproxima automação de VPD do que o laboratório mede manualmente.\n- **Método:** (1) levantamento do catálogo BR em 2026-06-28; (2) agrupamento por família de produto; (3) validação de cobertura LED × volume da tenda; (4) cruzamento com [inspeções de ambiente indoor](/calculadoras/luximetro.html), [ventilação](/posts/post-inspecao-ventilacao-tenda.html) e [pesquisa em"
     },
     {
       "title": "Super Solo: Guia de Uso",
@@ -224,46 +200,178 @@
       "text": "Clonadora Caseira: Montagem com Pote de Sorvete Clonadora simples com pote de sorvete, bucha de louça e bombinha 24 h — até 6 estacas, baixo custo. equipamento ## Objetivo\n\nDocumentar a clonadora caseira do Inspetor BudGanja: **pote de sorvete**, **6 furos na tampa**, suporte com **buchas de louça** e **bombinha de aquário ligada 24 h** até sair raiz.\n\n## Materiais\n\n- 1 pote de sorvete com tampa\n- 1 bombinha de aquário\n- Buchas de louça (6 rodelas cortadas)\n- Água limpa\n\n## Montagem resumida\n\n1. Furar 6 furos redondos na tampa\n2. Cortar 6 rodelas de bucha e abrir ao meio para prender a estaca\n3. Encaixar buchas nos furos, estacas na bucha, tampa no pote com água\n4. Bomba ligada **24/7** — sem timer\n\n## Resultados do laboratório\n\nTaxa de enraizamento observada: **78%** em 14 dias em testes anteriores com oxigenação contínua.\n\n---\n\n🛠️ Manual completo: [Clonadora Caseira](/equipamentos/manual-clonadora.html)."
     },
     {
-      "title": "Inspeção: O Início do Cultivo de Cannabis",
-      "url": "",
-      "excerpt": "Verificação das quatro fases fenológicas e dos fatores ambientais críticos no arranque do cultivo — base do guia em vídeo do canal.",
-      "text": "Inspeção: O Início do Cultivo de Cannabis Verificação das quatro fases fenológicas e dos fatores ambientais críticos no arranque do cultivo — base do guia em vídeo do canal. ## Escopo\n\nInspeção documental do **arranque do cultivo** conforme metodologia apresentada no canal @InspetorBudGanja: delimitação das fases fenológicas, variáveis ambientais mensuráveis e critérios de aceitação para germinação e vegetativo inicial.\n\n## Hipóteses e método\n\n- **H1:** O ciclo completo divide-se em quatro etapas operacionais distintas (germinação → vegetativo → floração → secagem/cura).\n- **H2:** Luz, água, ar, temperatura, umidade relativa (UR) e substrato/nutrição são variáveis de primeira ordem — falha em qualquer uma compromete o rendimento global.\n- **Método:** Revisão do protocolo em vídeo, cruzamento com parâmetros de referência do laboratório e checklist de instrumentação mínima.\n\n## Parâmetros de referência\n\n| Variável | Faixa alvo (indoor típico) | Instrumento |\n|----------|---------------------------|-------------|\n| Temperatura | 22–28 °C (dia) | Termo-higrômetro digital |\n| UR ar | 55–70 % (vegetativo) | Termo-higrômetro |\n| Fotoperíodo (veg.) | 18/6 h | Timer digital |\n| Substrato | Bem drenado, pH 6,0–6,5 | Medidor de pH (opcional) |\n\n## Achados\n\n1. **Germinação:** sementes viáveis exigem umidade constante (não encharcamento) e temperatura estável; escotofobia impede desenvolvimento sem luz após emergência.\n2. **Vegetativo:** taxa de crescimento correlaciona-se com fotossíntese líquida — insuficiência lumínica alonga internós e reduz biomassa foliar.\n3. **Transição:** mudança de fotoperíodo e nutrição antecipa floração; documentar data de flip é essencial para o diário de cultivo.\n4. **Secagem/cura:** redução gradual da UR (≈55–62 %) preserva terpenos; monitorização contínua evita mofo.\n\n## Equipamentos verificados\n\n- Termo-higrômetro digital — leitura simultânea T e UR no dossel\n- Timer de fotoperíodo — repetibilidade 18/6 ou 12/12\n- Tomada inteligente Wi-Fi — regis"
+      "title": "Babosa (Aloe vera)",
+      "url": "/plantas/babosa/",
+      "excerpt": "Suculenta amplamente cultivada no Brasil; gel foliar usado em cuidados cutâneos tradicionais.",
+      "text": "Babosa Aloe vera Asphodelaceae Suculenta amplamente cultivada no Brasil; gel foliar usado em cuidados cutâneos tradicionais. pele domestica gel Uso tópico em pele irritada Cosmética caseira planta fitoterapia medicinal"
     },
     {
-      "title": "Inspeção: Nutrição da Cannabis",
-      "url": "",
-      "excerpt": "Análise das necessidades de macro e micronutrientes por fase fenológica, relação N:P:K e condutividade elétrica da solução nutritiva.",
-      "text": "Inspeção: Nutrição da Cannabis Análise das necessidades de macro e micronutrientes por fase fenológica, relação N:P:K e condutividade elétrica da solução nutritiva. ## Escopo\n\nInspeção da **nutrição mineral e orgânica** da *Cannabis sativa* L. em cultivo controlado: demanda por macronutrientes (N, P, K, Ca, Mg, S), micronutrientes (Fe, Mn, Zn, Cu, B, Mo) e ajuste por fase vegetativa vs. floração.\n\n## Hipóteses e método\n\n- **H1:** A relação N:P:K deve inverter-se entre vegetativo (ênfase em N) e floração (ênfase em P e K).\n- **H2:** EC e pH da solução ou do extrato de solo predizem disponibilidade iônica — fora da faixa ótima ocorre bloqueio antagónico (ex.: excesso de Ca bloqueia Mg).\n- **Método:** Síntese do protocolo do vídeo + tabela de faixas EC/pH aceites para cada meio.\n\n## Medições de referência\n\n| Fase | N:P:K típico | EC solução (mS/cm) | pH alvo |\n|------|-------------|-------------------|---------|\n| Plântula / início veg. | 3:1:2 | 0,8–1,2 | 5,8–6,2 (hidro) / 6,0–6,5 (solo) |\n| Vegetativo pleno | 3:1:2 – 2:1:2 | 1,2–1,8 | 5,8–6,2 |\n| Floração | 1:3:2 | 1,4–2,0 | 5,8–6,0 |\n| Final floração | 0:3:3 | 1,0–1,4 | 5,8–6,0 |\n\n## Achados\n\n- **Deficiência de N:** clorose em folhas inferiores (mobilização de reservas).\n- **Deficiência de P:** folhas escuras com manchas bronzeadas; atraso na floração.\n- **Deficiência de K:** necrose marginal em folhas maduras durante floração.\n- **Toxicidade por excesso:** pontas queimadas, bloqueio de outros íons — reduzir EC antes de adicionar mais fertilizante.\n- Em **solo vivo**, a nutrição é mediada pelo microbioma — ver [Inspeção: Solo Vivo Orgânico](/posts/post-inspecao-solo-vivo-organico.html).\n\n## Equipamentos verificados\n\n- Medidor de pH da água — calibração semanal recomendada\n- Balança digital de precisão — dosagem de fertilizantes\n- Fertilizante NPK para plantas — linha vegetativo e floração\n\n## Ferramentas do laboratório\n\n- [Calculadora EC](/calculadoras/cultivo-lab.html?mode=ec)\n- [Calculadora de diluição](/calculado"
+      "title": "Camomila (Matricaria chamomilla)",
+      "url": "/plantas/camomila/",
+      "excerpt": "Erva aromática clássica em chás relaxantes e preparações leves.",
+      "text": "Camomila Matricaria chamomilla Asteraceae Erva aromática clássica em chás relaxantes e preparações leves. cha calmante digestao Infusões calmantes Apoio ao sono e digestão leve planta fitoterapia medicinal"
     },
     {
-      "title": "Inspeção: Solo Vivo Orgânico",
-      "url": "",
-      "excerpt": "Verificação da construção de super-solo com microbioma ativo, ciclagem de nutrientes e indicadores de saúde do substrato.",
-      "text": "Inspeção: Solo Vivo Orgânico Verificação da construção de super-solo com microbioma ativo, ciclagem de nutrientes e indicadores de saúde do substrato. ## Escopo\n\nInspeção do **substrato vivo** (*living soil*): composição do super-solo, papel de bactérias, fungos micorrízicos e invertebrados na mineralização e disponibilização de nutrientes.\n\n## Hipóteses e método\n\n- **H1:** Um solo vivo reduz a dependência de fertilizantes minerais sintéticos ao manter ciclagem fechada de C e N.\n- **H2:** A estrutura física (porosidade, retenção hídrica) e a atividade biológica são indicadores complementares de saúde.\n- **Método:** Análise da receita do vídeo (turfa/coco, composto, perlita, amendamentos) e critérios de manutenção (rega com chá de compostagem, cobertura morta).\n\n## Composição verificada (receita base)\n\n| Componente | Função | Proporção orientativa |\n|------------|--------|----------------------|\n| Turfa / coco | Matriz e retenção | 30–40 % |\n| Composto maduro | Nutrientes lentos + microbioma | 30–40 % |\n| Perlita / vermiculita | Drenagem e aeração | 10–20 % |\n| Farinha de ossos / guano | P e Ca (liberação lenta) | conforme análise |\n| Humus de minhoca | Inóculo microbiano | 5–10 % |\n\n## Achados\n\n- **Atividade biológica:** odor terroso, agregados estáveis e presença de micélio visível indicam colonização fúngica benéfica.\n- **pH tampão:** matéria orgânica complexa mantém faixa 6,0–7,0 em cultivo de cânhamo.\n- **Irrigação:** regas com **chá de compostagem** (aerada 24–48 h) repõem microbioma sem sobrefertilizar.\n- **Cobertura morta (mulch):** reduz evaporação e alimenta decompositores na superfície.\n\n## Equipamentos verificados\n\n- Substrato orgânico para plantas\n- Perlita para cultivo\n- Termo-higrômetro — UR do dossel em solo vivo (55–65 % veg.)\n\n## Ferramentas do laboratório\n\n- [Calculadora VPD](/calculadoras/cultivo-lab.html?mode=vpd) — ambiente do dossel\n- [Inspeção: Nutrição](/posts/post-inspecao-nutricao-cannabis.html) — complemento mineral\n\n## Vídeo explicativo\n\n"
+      "title": "Capim-limão (Cymbopogon citratus)",
+      "url": "/plantas/capim-limao/",
+      "excerpt": "Gramínea citrica comum em quintais brasileiros; folhas em chás e culinária.",
+      "text": "Capim-limão Cymbopogon citratus Poaceae Gramínea citrica comum em quintais brasileiros; folhas em chás e culinária. cha aromatica culinaria Chás aromáticos Aromatização de alimentos planta fitoterapia medicinal"
     },
     {
-      "title": "Inspeção: Arquitetura da Cannabis",
-      "url": "",
-      "excerpt": "Avaliação morfológica da planta — nós, internós, gemas apicais e laterais — e técnicas de manejo (topping, LST, SCROG).",
-      "text": "Inspeção: Arquitetura da Cannabis Avaliação morfológica da planta — nós, internós, gemas apicais e laterais — e técnicas de manejo (topping, LST, SCROG). ## Escopo\n\nInspeção da **arquitetura vegetativa** da cannabis: padrão de ramificação, dominância apical, distribuição de fluxo assimilatório e intervenções de treino que maximizam área foliar iluminada.\n\n## Hipóteses e método\n\n- **H1:** A dominância apical concentra auxinas na gema terminal, limitando brotação lateral até intervenção mecânica.\n- **H2:** Topping, LST (Low Stress Training) e SCROG aumentam colmos produtivos de forma previsível se aplicados no vegetativo.\n- **Método:** Mapeamento morfológico (nó/internó), registo fotográfico no diário e verificação de uniformidade lumínica no dossel.\n\n## Parâmetros morfológicos\n\n| Estrutura | Função | Indicador de saúde |\n|-----------|--------|-------------------|\n| Gema apical | Crescimento vertical | Cor verde uniforme, sem necrose |\n| Gemas axilares | Ramos laterais | Ativas após topping/LST |\n| Pecíolo | Suporte e transporte | Ângulo 45–90° após treino |\n| Internódio | Distância entre nós | Curto = luz adequada; longo = estiolamento |\n\n## Achados\n\n- **Topping (pinceamento apical):** duas gemas laterais assumem dominância; ideal com 4–6 nós desenvolvidos.\n- **LST:** dobragem gradual redistribui hormônios sem choque — fita macia ou arame revestido.\n- **SCROG:** rede de treino nivela dossel; PPFD homogéneo reduz “pipoca” (buds inferiores improdutivos).\n- **Folhas:** índice de área foliar (LAI) correlaciona com taxa fotossintética — remover apenas fan leaves que sombreiam gemas.\n\n## Equipamentos verificados\n\n- Rede SCROG para cultivo\n- Tesoura de poda\n- Painel LED full spectrum — uniformidade no dossel\n\n## Ferramentas do laboratório\n\n- [Calculadora Watts/m²](/calculadoras/cultivo-lab.html?mode=watts-m2)\n- [Diário de Cultivo](/cultivo/) — fotos antes/depois do treino\n\n## Vídeo explicativo\n\n@youtube OO7d72tHwJY\n\n## Status\n\n**Aprovado** — protocolos de manejo compatíveis"
+      "title": "Carqueja (Baccharis trimera)",
+      "url": "/plantas/carqueja/",
+      "excerpt": "Arbusto nativo usado na tradição popular do Sul/Sudeste em chás amargos.",
+      "text": "Carqueja Baccharis trimera Asteraceae Arbusto nativo usado na tradição popular do Sul/Sudeste em chás amargos. nativa digestao cha Chás digestivos tradicionais Fitoterapia popular planta fitoterapia medicinal"
     },
     {
-      "title": "Inspeção: A Ciência da Floração",
-      "url": "",
-      "excerpt": "Verificação do gatilho fotoperiódico, desenvolvimento pistilar, maturação tricomática e janela ideal de colheita.",
-      "text": "Inspeção: A Ciência da Floração Verificação do gatilho fotoperiódico, desenvolvimento pistilar, maturação tricomática e janela ideal de colheita. ## Escopo\n\nInspeção da **fase reprodutiva**: transição vegetativo→floração por fotoperíodo, morfologia floral, biosíntese de canabinoides e terpenos nos tricomas glandulares.\n\n## Hipóteses e método\n\n- **H1:** Fotoperíodo ≤12 h de luz contínua induz floração em genótipos fotoperiódicos via interação phytochrome (Pfr/Pr).\n- **H2:** A maturação tricomática (clara→leitosa→âmbar) correlaciona-se com perfil de efeito e rendimento — não apenas calendário.\n- **Método:** Registo de data de flip 12/12, contagem de semanas de floração e observação tricomática com lupa 60×.\n\n## Parâmetros críticos na floração\n\n| Variável | Alvo | Notas |\n|----------|------|-------|\n| Fotoperíodo | 12/12 h | Timer digital — sem fugas de luz |\n| Temperatura | 20–26 °C | Calor noturno excessivo degrada terpenos |\n| UR | 40–50 % | Reduz risco de botrytis |\n| VPD | 1,0–1,4 kPa | [Calculadora VPD](/calculadoras/cultivo-lab.html?mode=vpd) |\n| N:P:K | Baixo N, alto P/K | Ver inspeção de nutrição |\n\n## Achados\n\n- **Pré-flora:** alongamento internodal (“stretch”) nas 2–3 primeiras semanas pós-flip — reforçar suporte/SCROG.\n- **Pistilos:** brancos e erectos no início; escurecimento e retração indicam aproximação da maturação.\n- **Tricomas:** colheita majoritariamente leitosa para perfil mais cerebral; 10–20 % âmbar para efeito mais sedativo.\n- **Flush opcional:** redução de EC nas últimas 1–2 semanas pode melhorar sabor em cultivo mineral.\n\n## Equipamentos verificados\n\n- Timer fotoperíodo 12/12\n- Tomada inteligente — confirmação de escuro absoluto\n- Termo-higrômetro — UR baixa na floração\n\n## Ferramentas do laboratório\n\n- [Calculadora DLI](/calculadoras/cultivo-lab.html?mode=dli)\n- [Diário de Cultivo](/cultivo/) — registar semanas de floração\n\n## Vídeo explicativo\n\n@youtube V6LO6nXh8bI\n\n## Status\n\n**Aprovado** — critérios fotoperiódicos e de maturação tricomátic"
+      "title": "Cavalinha (Equisetum arvense)",
+      "url": "/plantas/cavalinha/",
+      "excerpt": "Planta rica em sílica na tradição popular; usada em chás e banhos.",
+      "text": "Cavalinha Equisetum arvense Equisetaceae Planta rica em sílica na tradição popular; usada em chás e banhos. cha mineral Infusões tradicionais Uso tópico em banhos planta fitoterapia medicinal"
     },
     {
-      "title": "Inspeção: Propagação e Clonagem",
-      "url": "",
-      "excerpt": "Verificação de técnicas de multiplicação vegetativa — estacas, ambiente de enraizamento e sistemas aeropónicos caseiros.",
-      "text": "Inspeção: Propagação e Clonagem Verificação de técnicas de multiplicação vegetativa — estacas, ambiente de enraizamento e sistemas aeropónicos caseiros. ## Escopo\n\nInspeção dos **métodos de propagação clonal**: seleção de material-mãe, estacas apicais, parâmetros de enraizamento (T, UR, oxigenação radicular) e comparação entre métodos passivos e aeropónicos.\n\n## Hipóteses e método\n\n- **H1:** Estacas de 10–15 cm com 2–3 nós, cortadas em bisel sob água corrente, enraízam mais rápido com UR elevada (70–90 %).\n- **H2:** Oxigenação contínua da zona radicular (clonadora com bombinha ou aspersão) acelera emissão de raízes adventícias.\n- **Método:** Protocolo do vídeo cruzado com manuais das clonadoras documentadas no laboratório.\n\n## Parâmetros de enraizamento\n\n| Parâmetro | Faixa alvo | Equipamento |\n|-----------|-----------|-------------|\n| Temperatura | 24–26 °C | Termo-higrômetro |\n| UR | 70–90 % | Domo / propagador |\n| Fotoperíodo | 18/6 ou 24/0 h | Timer |\n| Oxigenação (aeroponia) | 24 h contínuo | Bombinha de ar |\n\n## Achados\n\n- **Material-mãe:** plantas sadias, livres de pragas; últimos ramos vegetativos são ideais.\n- **Clonadora 6 estacas:** pote + buchas + compressor de ar — baixo custo, documentada em [manual 6 estacas](/equipamentos/clonadora-6-estacas.html).\n- **Clonadora 12 estacas:** aspersão com bomba submersa — maior throughput.\n- **Gel de enraizamento:** opcional; ácido indolilbutírico (AIB) estimula calo e raízes.\n- Tempo típico: **7–14 dias** até raízes visíveis com ambiente estável.\n\n## Equipamentos verificados\n\n- Clonadora de 6 estacas — materiais\n- Clonadora de 12 estacas — materiais\n- Gel de enraizamento\n\n## Ferramentas do laboratório\n\n- [Manual clonadora 6 estacas](/equipamentos/clonadora-6-estacas.html)\n- [Manual clonadora 12 estacas](/equipamentos/clonadora-12-estacas.html)\n\n## Vídeo explicativo\n\n@youtube tdMl4X5h83Y\n\n## Status\n\n**Aprovado** — protocolos de clonagem reprodutíveis com materiais acessíveis e documentação de campo completa.\n## Série"
+      "title": "Erva-cidreira (Lippia alba)",
+      "url": "/plantas/erva-cidreira/",
+      "excerpt": "Espécie muito cultivada no Brasil; folhas aromáticas em chás e banhos.",
+      "text": "Erva-cidreira Lippia alba Verbenaceae Espécie muito cultivada no Brasil; folhas aromáticas em chás e banhos. cha calmante brasileira Chás relaxantes Aromatização doméstica planta fitoterapia medicinal"
     },
     {
-      "title": "Inspeção: Otimização do Cultivo Indoor (PPFD e ambiente)",
-      "url": "",
-      "excerpt": "Verificação integrada de PPFD, DLI, VPD, ventilação e layout da tenda — síntese do ambiente indoor eficiente.",
-      "text": "Inspeção: Otimização do Cultivo Indoor (PPFD e ambiente) Verificação integrada de PPFD, DLI, VPD, ventilação e layout da tenda — síntese do ambiente indoor eficiente. ## Escopo\n\nInspeção **integrada do ambiente indoor**: densidade de fluxo de fótons fotossinteticamente ativos (PPFD), integral diária de luz (DLI), déficit de pressão de vapor (VPD), renovação de ar e disposição física da tenda.\n\n## Hipóteses e método\n\n- **H1:** PPFD no dossel entre 400–600 μmol/m²/s (floração) com fotoperíodo 12 h produz DLI ≈ 17–26 mol/m²/d — faixa produtiva para cannabis.\n- **H2:** VPD estável (0,8–1,2 kPa veg.; 1,0–1,4 kPa floração) maximiza transpiração sem fechar estômatos.\n- **H3:** Renovação de ar ≥1 volume/minuto reduz gradiente térmico e acúmulo de etileno.\n- **Método:** Checklist do vídeo + cruzamento com [Inspeção: Ventilação da Tenda](/posts/post-inspecao-ventilacao-tenda.html).\n\n## Medições de referência\n\n| Grandeza | Vegetativo | Floração | Ferramenta |\n|----------|-----------|----------|------------|\n| PPFD (dossel) | 300–500 μmol/m²/s | 400–700 μmol/m²/s | Luxímetro/quantum (ou estimativa W/m²) |\n| DLI | 18–24 mol/m²/d | 30–45 mol/m²/d | [Calculadora DLI](/calculadoras/cultivo-lab.html?mode=dli) |\n| VPD | 0,8–1,2 kPa | 1,0–1,4 kPa | [Calculadora VPD](/calculadoras/cultivo-lab.html?mode=vpd) |\n| T | 24–28 °C (luz) | 20–26 °C | Termo-higrômetro |\n| Renovação ar | ~1,2 min⁻¹ | idem | Exaustor dimensionado |\n\n## Achados\n\n- **LED full spectrum:** posicionar a 30–45 cm do dossel; ajustar altura conforme [Watts/m²](/calculadoras/cultivo-lab.html?mode=watts-m2).\n- **Exaustor inline + filtro de carvão:** pressão negativa evita odor; ver relatório de ventilação do laboratório.\n- **Ventilador de circulação interno:** previne microclimas e fortalece caules.\n- **Automação:** tomada inteligente + timer segregam luz, exaustor e umidificador por fase.\n- **Layout:** reservar espaço para acesso, espectro uniforme e manutenção do filtro.\n\n## Equipamentos verificados\n\n- Painel LED cultivo"
+      "title": "Espinheira-santa (Maytenus ilicifolia)",
+      "url": "/plantas/espinheira-santa/",
+      "excerpt": "Arbusto nativo da Mata Atlântica; folhas na fitoterapia popular gástrica.",
+      "text": "Espinheira-santa Maytenus ilicifolia Celastraceae Arbusto nativo da Mata Atlântica; folhas na fitoterapia popular gástrica. nativa digestao mata-atlantica Chás digestivos tradicionais Fitoterapia brasileira planta fitoterapia medicinal"
+    },
+    {
+      "title": "Guaco (Mikania glomerata)",
+      "url": "/plantas/guaco/",
+      "excerpt": "Trepadeira brasileira clássica em xaropes e chás da medicina popular respiratória.",
+      "text": "Guaco Mikania glomerata Asteraceae Trepadeira brasileira clássica em xaropes e chás da medicina popular respiratória. nativa respiratorio cha Xaropes e chás tradicionais Uso popular respiratório planta fitoterapia medicinal"
+    },
+    {
+      "title": "Hortelã (Mentha spicata)",
+      "url": "/plantas/hortela/",
+      "excerpt": "Erva aromática de cultivo fácil; folhas em chás e culinária.",
+      "text": "Hortelã Mentha spicata Lamiaceae Erva aromática de cultivo fácil; folhas em chás e culinária. cha culinaria aromatica Chás digestivos Culinária e aromatização planta fitoterapia medicinal"
+    },
+    {
+      "title": "Boldo (Plectranthus barbatus)",
+      "url": "/plantas/boldo/",
+      "excerpt": "No Brasil, “boldo” costuma referir P. barbatus (falso-boldo); folhas amargas em chás.",
+      "text": "Boldo Plectranthus barbatus Lamiaceae No Brasil, “boldo” costuma referir P. barbatus (falso-boldo); folhas amargas em chás. digestao cha domestica Chás digestivos tradicionais planta fitoterapia medicinal"
+    },
+    {
+      "title": "Melissa (Melissa officinalis)",
+      "url": "/plantas/melissa/",
+      "excerpt": "Erva citrica associada a chás calmantes na tradição europeia adaptada ao Brasil.",
+      "text": "Melissa Melissa officinalis Lamiaceae Erva citrica associada a chás calmantes na tradição europeia adaptada ao Brasil. cha calmante aromatica Infusões relaxantes Aromatização planta fitoterapia medicinal"
+    },
+    {
+      "title": "Alecrim (Salvia rosmarinus)",
+      "url": "/plantas/alecrim/",
+      "excerpt": "Arbusto aromático de cozinha e chás; comum em hortas urbanas.",
+      "text": "Alecrim Salvia rosmarinus Lamiaceae Arbusto aromático de cozinha e chás; comum em hortas urbanas. culinaria aromatica cha Culinária Chás aromáticos planta fitoterapia medicinal"
+    },
+    {
+      "title": "Gengibre (Zingiber officinale)",
+      "url": "/plantas/gengibre/",
+      "excerpt": "Rizoma picante usado em chás, culinária e preparações tradicionais.",
+      "text": "Gengibre Zingiber officinale Zingiberaceae Rizoma picante usado em chás, culinária e preparações tradicionais. cha culinaria rizoma Chás e decoctos Culinária planta fitoterapia medicinal"
+    },
+    {
+      "title": "Cúrcuma (Curcuma longa)",
+      "url": "/plantas/curcuma/",
+      "excerpt": "Rizoma amarelo (açafrão-da-terra) na culinária e chás brasileiros.",
+      "text": "Cúrcuma Curcuma longa Zingiberaceae Rizoma amarelo (açafrão-da-terra) na culinária e chás brasileiros. culinaria rizoma cha Culinária Chás e leites dourados tradicionais planta fitoterapia medicinal"
+    },
+    {
+      "title": "Unha-de-gato (Uncaria tomentosa)",
+      "url": "/plantas/unha-de-gato/",
+      "excerpt": "Trepadeira amazônica; casca e raiz na fitoterapia popular andino-amazônica.",
+      "text": "Unha-de-gato Uncaria tomentosa Rubiaceae Trepadeira amazônica; casca e raiz na fitoterapia popular andino-amazônica. amazonia tradicional Decoctos tradicionais planta fitoterapia medicinal"
+    },
+    {
+      "title": "Sucupira (Pterodon emarginatus)",
+      "url": "/plantas/sucupira/",
+      "excerpt": "Árvore do Cerrado; sementes e óleo na medicina popular do Centro-Oeste.",
+      "text": "Sucupira Pterodon emarginatus Fabaceae Árvore do Cerrado; sementes e óleo na medicina popular do Centro-Oeste. cerrado nativa oleo Uso popular tópico e oral tradicional planta fitoterapia medicinal"
+    },
+    {
+      "title": "Copaíba (Copaifera langsdorffii)",
+      "url": "/plantas/copaiba/",
+      "excerpt": "Árvore amazônica/cerrado famosa pelo óleo-resina de uso tradicional.",
+      "text": "Copaíba Copaifera langsdorffii Fabaceae Árvore amazônica/cerrado famosa pelo óleo-resina de uso tradicional. amazonia oleo nativa Uso tópico tradicional Fitoterapia amazônica planta fitoterapia medicinal"
+    },
+    {
+      "title": "Andiroba (Carapa guianensis)",
+      "url": "/plantas/andiroba/",
+      "excerpt": "Árvore amazônica; óleo das sementes na cosmética e tradição local.",
+      "text": "Andiroba Carapa guianensis Meliaceae Árvore amazônica; óleo das sementes na cosmética e tradição local. amazonia oleo pele Uso tópico tradicional Cosmética natural planta fitoterapia medicinal"
+    },
+    {
+      "title": "Jambu (Acmella oleracea)",
+      "url": "/plantas/jambu/",
+      "excerpt": "Erva amazônica de sabor anestésico; usada na culinária paraense.",
+      "text": "Jambu Acmella oleracea Asteraceae Erva amazônica de sabor anestésico; usada na culinária paraense. amazonia culinaria regional Culinária regional Uso tradicional oral planta fitoterapia medicinal"
+    },
+    {
+      "title": "Mulungu (Erythrina mulungu)",
+      "url": "/plantas/mulungu/",
+      "excerpt": "Árvore brasileira; casca em chás da tradição popular calmantes.",
+      "text": "Mulungu Erythrina mulungu Fabaceae Árvore brasileira; casca em chás da tradição popular calmantes. nativa calmante cha Chás tradicionais planta fitoterapia medicinal"
+    },
+    {
+      "title": "Maracujá (Passiflora incarnata)",
+      "url": "/plantas/maracuja/",
+      "excerpt": "Passifloras usadas em chás e fitoterápicos industriais; folhas e partes aéreas.",
+      "text": "Maracujá Passiflora incarnata Passifloraceae Passifloras usadas em chás e fitoterápicos industriais; folhas e partes aéreas. calmante cha brasileira Chás calmantes Fitoterapia popular planta fitoterapia medicinal"
+    },
+    {
+      "title": "Calêndula (Calendula officinalis)",
+      "url": "/plantas/calendula/",
+      "excerpt": "Flor ornamental e medicinal; pétalas em pomadas e chás leves.",
+      "text": "Calêndula Calendula officinalis Asteraceae Flor ornamental e medicinal; pétalas em pomadas e chás leves. pele flor cha Uso tópico em pele Infusões leves planta fitoterapia medicinal"
+    },
+    {
+      "title": "Barbatimão (Stryphnodendron adstringens)",
+      "url": "/plantas/barbatimao/",
+      "excerpt": "Árvore do Cerrado; casca adstringente na tradição popular brasileira.",
+      "text": "Barbatimão Stryphnodendron adstringens Fabaceae Árvore do Cerrado; casca adstringente na tradição popular brasileira. cerrado nativa adstringente Decoctos e uso tópico tradicional planta fitoterapia medicinal"
+    },
+    {
+      "title": "Jaborandi (Pilocarpus microphyllus)",
+      "url": "/plantas/jaborandi/",
+      "excerpt": "Espécie amazônica historicamente importante pela pilocarpina.",
+      "text": "Jaborandi Pilocarpus microphyllus Rutaceae Espécie amazônica historicamente importante pela pilocarpina. amazonia historica nativa Referência histórica farmacológica Fitoterapia regional planta fitoterapia medicinal"
+    },
+    {
+      "title": "Ipecacuanha (Carapichea ipecacuanha)",
+      "url": "/plantas/ipecacuanha/",
+      "excerpt": "Planta brasileira histórica na farmacopeia; raiz de uso restrito.",
+      "text": "Ipecacuanha Carapichea ipecacuanha Rubiaceae Planta brasileira histórica na farmacopeia; raiz de uso restrito. historica nativa farmacopeia Referência histórica farmacêutica planta fitoterapia medicinal"
+    },
+    {
+      "title": "Pfaffia (ginseng-brasileiro) (Pfaffia glomerata)",
+      "url": "/plantas/pfaffia/",
+      "excerpt": "Raiz conhecida como ginseng-brasileiro na tradição popular.",
+      "text": "Pfaffia (ginseng-brasileiro) Pfaffia glomerata Amaranthaceae Raiz conhecida como ginseng-brasileiro na tradição popular. nativa raiz tradicional Preparações tradicionais tonificantes planta fitoterapia medicinal"
+    },
+    {
+      "title": "Aroeira (Schinus terebinthifolia)",
+      "url": "/plantas/aroeira/",
+      "excerpt": "Árvore comum no Brasil; casca e folhas na medicina popular e culinária (pimenta-rosa).",
+      "text": "Aroeira Schinus terebinthifolia Anacardiaceae Árvore comum no Brasil; casca e folhas na medicina popular e culinária (pimenta-rosa). nativa culinaria pele Uso tópico tradicional Culinária (frutos) planta fitoterapia medicinal"
+    },
+    {
+      "title": "Quina (Cinchona sp.)",
+      "url": "/plantas/quina/",
+      "excerpt": "Género histórico da quina; casca associada à quinine na história da medicina.",
+      "text": "Quina Cinchona sp. Rubiaceae Género histórico da quina; casca associada à quinine na história da medicina. historica farmacopeia Referência histórica antimalárica planta fitoterapia medicinal"
+    },
+    {
+      "title": "Cannabis (medicinal) (Cannabis sativa L.)",
+      "url": "/plantas/cannabis-sativa/",
+      "excerpt": "Espécie com uso terapêutico regulamentado em contextos clínicos e formativos. Destaque do curso UNIFESP e da inspeção do laboratório.",
+      "text": "Cannabis (medicinal) Cannabis sativa L. Cannabaceae Espécie com uso terapêutico regulamentado em contextos clínicos e formativos. Destaque do curso UNIFESP e da inspeção do laboratório. medicinal unifesp legislacao fitoterapia Educação sobre uso terapêutico (curso UNIFESP) Referência em fitoterapia e legislação brasileira planta fitoterapia medicinal"
     }
   ]
 }

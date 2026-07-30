@@ -1,7 +1,13 @@
 {
-  "updatedAt": "2026-07-20T22:13:10.650Z",
-  "trackCount": 11,
+  "updatedAt": "2026-07-30T03:50:06.795Z",
+  "trackCount": 17,
   "tracks": [
+    {
+      "id": "t_57186cebcf59",
+      "title": "All Right Now - Free",
+      "artist": "BudGanja Radio",
+      "url": "/radio/All%20Right%20Now%20-%20Free.mp3"
+    },
     {
       "id": "t_2bad930e1cdc",
       "title": "Bob Marley - One Love",
@@ -45,10 +51,40 @@
       "url": "/radio/Creedence%20Clearwater%20Revival%20-%20Long%20As%20I%20Can%20See%20The%20Light.mp3"
     },
     {
+      "id": "t_c5dfef4c582a",
+      "title": "Depeche Mode - Enjoy The Silence",
+      "artist": "BudGanja Radio",
+      "url": "/radio/Depeche%20Mode%20-%20Enjoy%20The%20Silence.mp3"
+    },
+    {
+      "id": "t_1f8be7420ee9",
+      "title": "Gabriel o Pensador - Cachimbo da Paz",
+      "artist": "BudGanja Radio",
+      "url": "/radio/Gabriel%20o%20Pensador%20-%20Cachimbo%20da%20Paz%20.mp3"
+    },
+    {
+      "id": "t_45b7ce0146ce",
+      "title": "Hungria - Amor e Fé",
+      "artist": "BudGanja Radio",
+      "url": "/radio/Hungria%20-%20Amor%20e%20F%C3%A9.mp3"
+    },
+    {
+      "id": "t_1f0824659be4",
+      "title": "Ini Kamoze - Here Comes The Hotstepper",
+      "artist": "BudGanja Radio",
+      "url": "/radio/Ini%20Kamoze%20-%20Here%20Comes%20The%20Hotstepper%20.mp3"
+    },
+    {
       "id": "t_c95b5ddf191f",
       "title": "Jimmy Cliff - I Can See Clearly Now",
       "artist": "BudGanja Radio",
       "url": "/radio/Jimmy%20Cliff%20-%20I%20Can%20See%20Clearly%20Now.mp3"
+    },
+    {
+      "id": "t_5f9a456bfefd",
+      "title": "Mamonas Assassinas - Robocop Gay",
+      "artist": "BudGanja Radio",
+      "url": "/radio/Mamonas%20Assassinas%20-%20Robocop%20Gay.mp3"
     },
     {
       "id": "t_ef16dc48ad25",

@@ -56,9 +56,15 @@ Em **cada** zona `.com` → **Rules → Redirect Rules** → Create rule:
 - If: Hostname equals `inspetorbudganja.com` OR `www.inspetorbudganja.com`
 - Then: Dynamic → `concat("https://inspetorbudganja.com.br", http.request.uri)` · **301**
 
-Repetir para `inspectorbudganja.com` / `www.inspectorbudganja.com`.
+**Domínio inglês (não redireccionar para .com.br):**
 
-(O Node em `server/index.js` também redirecciona se o pedido chegar ao túnel.)
+- If: Hostname equals `inspectorbudganja.com`
+- Then: Dynamic → `concat("https://www.inspectorbudganja.com", http.request.uri)` · **301**
+- `www.inspectorbudganja.com` deve **servir o site** (túnel/Netlify). O `i18n.js` abre em inglês nesse host.
+
+Se existir uma Redirect Rule antiga que manda `inspectorbudganja.com` → `.com.br`, **apaga ou desativa**.
+
+(O Node em `server/index.js` também trata estes hosts se o pedido chegar ao túnel.)
 
 ### E) Confirmar no PC
 
@@ -72,7 +78,8 @@ Teste após 1–2 min:
 
 ```text
 https://inspetorbudganja.com  → https://inspetorbudganja.com.br/
-https://inspectorbudganja.com → https://inspetorbudganja.com.br/
+https://inspectorbudganja.com → https://www.inspectorbudganja.com/  (inglês)
+https://www.inspectorbudganja.com/ → site em inglês (não redirecciona para .br)
 ```
 
 ---

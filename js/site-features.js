@@ -53,8 +53,10 @@
 
     function syncLabel() {
       var light = document.documentElement.getAttribute('data-theme') === 'light';
-      btn.setAttribute('aria-label', light ? 'Ativar tema escuro' : 'Ativar tema claro');
-      btn.title = light ? 'Tema escuro' : 'Tema claro';
+      var darkLabel = window.BudGanjaI18n ? window.BudGanjaI18n.t('common.themeDark', 'Ativar tema escuro') : 'Ativar tema escuro';
+      var lightLabel = window.BudGanjaI18n ? window.BudGanjaI18n.t('common.themeLight', 'Ativar tema claro') : 'Ativar tema claro';
+      btn.setAttribute('aria-label', light ? darkLabel : lightLabel);
+      btn.title = light ? darkLabel : lightLabel;
     }
 
     btn.addEventListener('click', function () {
@@ -84,6 +86,12 @@
       'Sobre': 'nav.about',
       'Contato': 'nav.contact',
       'Privacidade': 'nav.privacy',
+      'Diário de Cultivo': 'nav.growDiary',
+      'Diário de cultivo': 'nav.growDiary',
+      'Rádio': 'nav.radio',
+      'Comunidade': 'nav.community',
+      'Luxímetro': 'nav.luxMeter',
+      'Minha conta': 'common.profile',
       'Clonadora de 6 estacas': 'menu.clonadora-6.label',
       'Clonadora de 12 estacas': 'menu.clonadora-12.label',
       'Clonadoras': 'menu.clonadoras.label',
@@ -179,7 +187,7 @@
     );
     els.toggle.title = searchOpen
       ? searchLabel('common.searchClose', 'Fechar busca')
-      : 'Buscar (Ctrl+K)';
+      : searchLabel('common.searchShortcut', 'Buscar (Ctrl+K)');
 
     if (searchOpen && els.input) {
       els.input.focus();
@@ -207,7 +215,7 @@
 
     var query = String(q || '').trim().toLowerCase();
     if (!query) {
-      els.results.innerHTML = '<li class="site-search-hint">Digite para buscar páginas e artigos</li>';
+      els.results.innerHTML = '<li class="site-search-hint">' + escapeHtml(searchLabel('common.searchHint', 'Digite para buscar páginas e artigos')) + '</li>';
       return;
     }
     var matches = (searchIndex || []).filter(function (item) {
@@ -216,7 +224,8 @@
     }).slice(0, 8);
 
     if (!matches.length) {
-      els.results.innerHTML = '<li class="site-search-hint">Nenhum resultado para “' + escapeHtml(query) + '”</li>';
+      var noResults = searchLabel('common.searchNoResults', 'Nenhum resultado para “{q}”').replace('{q}', query);
+      els.results.innerHTML = '<li class="site-search-hint">' + escapeHtml(noResults) + '</li>';
       return;
     }
 
@@ -282,6 +291,215 @@
     setSearchOpen(false);
   }
 
+  var SHARE_ICON_SVG =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>';
+
+  function tShare(key, fallback) {
+    if (window.BudGanjaI18n && typeof window.BudGanjaI18n.t === 'function') {
+      return window.BudGanjaI18n.t(key, fallback);
+    }
+    return fallback;
+  }
+
+  var PRODUCTION_ORIGIN = 'https://inspetorbudganja.com.br';
+
+  function canonicalShareUrl() {
+    var ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) {
+      var fromOg = String(ogUrl.getAttribute('content') || '').trim();
+      if (fromOg) return fromOg.split('#')[0].split('?')[0];
+    }
+    var canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical && canonical.href) {
+      return String(canonical.href).split('#')[0].split('?')[0];
+    }
+    var path = window.location.pathname || '/';
+    if (/localhost|127\.0\.0\.1/i.test(window.location.hostname || '')) {
+      return PRODUCTION_ORIGIN + path;
+    }
+    return window.location.origin + path;
+  }
+
+  function resolveShareImageUrl() {
+    var dataImg = document.querySelector('[data-share-image]');
+    if (dataImg) {
+      var src = dataImg.getAttribute('data-share-image') || dataImg.getAttribute('src') || '';
+      if (src) {
+        if (/^https?:\/\//i.test(src)) return src;
+        if (src.charAt(0) === '/') return window.location.origin + src;
+        return window.location.origin + '/' + src.replace(/^\/+/, '');
+      }
+    }
+    var og = document.querySelector('meta[property="og:image"]');
+    var content = og && og.getAttribute('content');
+    if (!content) return '';
+    if (/^https?:\/\//i.test(content)) {
+      // Em local, preferir a cópia no origin atual para anexar o ficheiro.
+      try {
+        var u = new URL(content);
+        if (/localhost|127\.0\.0\.1/i.test(window.location.hostname || '') &&
+            /inspetorbudganja\.com\.br$/i.test(u.hostname)) {
+          return window.location.origin + u.pathname;
+        }
+      } catch (e) { /* ignore */ }
+      return content;
+    }
+    if (content.charAt(0) === '/') return window.location.origin + content;
+    return window.location.origin + '/' + content.replace(/^\/+/, '');
+  }
+
+  function sharePagePayload(files) {
+    var h1 = document.querySelector('.article-header h1, main h1');
+    var title = (h1 && h1.textContent.trim()) || document.title || 'Inspetor BudGanja';
+    var descMeta = document.querySelector('meta[name="description"]');
+    var desc = (descMeta && descMeta.getAttribute('content')) || title;
+    var url = canonicalShareUrl();
+    var payload = {
+      title: title,
+      text: desc + '\n\n' + url,
+      url: url
+    };
+    if (files && files.length) payload.files = files;
+    return payload;
+  }
+
+  function fetchShareImageFile() {
+    var imageUrl = resolveShareImageUrl();
+    if (!imageUrl) return Promise.resolve(null);
+    return fetch(imageUrl, { credentials: 'same-origin' })
+      .then(function (res) {
+        if (!res.ok) throw new Error('cover ' + res.status);
+        return res.blob();
+      })
+      .then(function (blob) {
+        if (!blob || !blob.type || blob.type.indexOf('image/') !== 0) return null;
+        var ext = blob.type.indexOf('png') >= 0 ? 'png' : blob.type.indexOf('webp') >= 0 ? 'webp' : 'jpg';
+        var file;
+        try {
+          file = new File([blob], 'capa-budganja.' + ext, { type: blob.type });
+        } catch (e) {
+          file = blob;
+          file.name = 'capa-budganja.' + ext;
+        }
+        return file;
+      })
+      .catch(function () {
+        return null;
+      });
+  }
+
+  function copyShareUrl(url) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(url).then(function () {
+        return 'copied';
+      }).catch(function () {
+        return fallbackSharePrompt(url);
+      });
+    }
+    return Promise.resolve(fallbackSharePrompt(url));
+  }
+
+  function fallbackSharePrompt(url) {
+    try {
+      if (window.prompt) window.prompt(tShare('common.share', 'Compartilhar') + ':', url);
+    } catch (e) { /* ignore */ }
+    return 'fallback';
+  }
+
+  function showShareFeedback(btn, result) {
+    if (result !== 'copied' && result !== 'fallback') return;
+    var wrap = btn.closest('.article-share');
+    var feedback = wrap && wrap.querySelector('[data-post-share-feedback]');
+    var msg = tShare('common.shareCopied', 'Link copiado!');
+    btn.classList.add('is-copied');
+    if (feedback) {
+      feedback.hidden = false;
+      feedback.textContent = msg;
+    } else {
+      btn.setAttribute('data-tip', msg);
+    }
+    window.setTimeout(function () {
+      btn.classList.remove('is-copied');
+      if (feedback) {
+        feedback.hidden = true;
+        feedback.textContent = '';
+      }
+    }, 2200);
+  }
+
+  function canShareFiles(files) {
+    if (!files || !files.length || typeof navigator.canShare !== 'function') return false;
+    try {
+      return navigator.canShare({ files: files });
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function bindShareButton(btn) {
+    if (!btn || btn.dataset.shareBound === '1') return;
+    btn.dataset.shareBound = '1';
+    btn.addEventListener('click', function () {
+      var run = fetchShareImageFile().then(function (file) {
+        var files = file ? [file] : null;
+        var withFiles = sharePagePayload(canShareFiles(files) ? files : null);
+        var withoutFiles = sharePagePayload(null);
+
+        if (typeof navigator.share !== 'function') {
+          return copyShareUrl(withoutFiles.url);
+        }
+
+        return navigator.share(withFiles).then(function () {
+          return 'shared';
+        }).catch(function (err) {
+          if (err && err.name === 'AbortError') return 'shared';
+          // Alguns browsers rejeitam files — tentar só link.
+          if (withFiles.files) {
+            return navigator.share(withoutFiles).then(function () {
+              return 'shared';
+            }).catch(function (err2) {
+              if (err2 && err2.name === 'AbortError') return 'shared';
+              return copyShareUrl(withoutFiles.url);
+            });
+          }
+          return copyShareUrl(withoutFiles.url);
+        });
+      });
+
+      run.then(function (result) {
+        showShareFeedback(btn, result);
+      }).catch(function () { /* ignore */ });
+    });
+  }
+
+  /** Insere o botão se a página de artigo ainda não tiver (manuais CMS, etc.). */
+  function ensureArticleShareButton() {
+    var header = document.querySelector('.article-page .article-header, .relatorio-container .article-header');
+    if (!header || header.querySelector('[data-post-share]')) return;
+    var h1 = header.querySelector('h1');
+    if (!h1) return;
+
+    var wrap = document.createElement('div');
+    wrap.className = 'article-share';
+    wrap.innerHTML =
+      '<button type="button" class="article-share-btn" data-post-share data-i18n-aria="common.shareAria" aria-label="' +
+      tShare('common.shareAria', 'Compartilhar esta publicação') +
+      '">' +
+      '<span class="article-share-icon" aria-hidden="true">' + SHARE_ICON_SVG + '</span>' +
+      '<span data-i18n="common.share">' + tShare('common.share', 'Compartilhar') + '</span>' +
+      '</button>' +
+      '<span class="article-share-feedback" data-post-share-feedback hidden aria-live="polite"></span>';
+
+    var meta = header.querySelector('.meta-info');
+    if (meta) header.insertBefore(wrap, meta);
+    else h1.insertAdjacentElement('afterend', wrap);
+  }
+
+  function initPostShare() {
+    ensureArticleShareButton();
+    document.querySelectorAll('[data-post-share]').forEach(bindShareButton);
+  }
+
   function injectJsonLd(site) {
     var page = document.body.dataset.page;
     var head = document.head;
@@ -319,6 +537,7 @@
     initTheme();
     injectBreadcrumbs();
     initSearch();
+    initPostShare();
     injectJsonLd();
   }
 

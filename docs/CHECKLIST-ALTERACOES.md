@@ -45,7 +45,7 @@ Abra `http://localhost:8080` (ou o domínio em produção).
 URLs rápidas (smoke test local `http://localhost:8080`):
 
 - `/` — home, menu Biblioteca e Ferramentas
-- `/biblioteca/inspecoes/` — filtro Guia / Jardim HG
+- `/biblioteca/inspecoes/` — hub por tipo (Guia / Canais / Equipamentos / Cursos / …)
 - `/posts/post-inspecao-cultivo-inicio.html` — embed YouTube + materiais loja
 - `/calculadoras/luximetro.html` — luxímetro + bridge diário
 - `/cultivo/` — diário (requer login)

@@ -1,6 +1,38 @@
 [
-  { "id": "guia-cultivo-basico", "label": "Guia de Cultivo Básico", "category": "inspecao", "sortOrder": 1 },
-  { "id": "canal-jardimhg", "label": "Canal Jardim HG", "category": "inspecao", "sortOrder": 2 },
-  { "id": "canal-inspetorbudganja", "label": "Canal Inspetor BudGanja", "category": "inspecao", "sortOrder": 3 },
-  { "id": "verificacao-equipamento", "label": "Verificação de Equipamentos", "category": "inspecao", "sortOrder": 4 }
+  {
+    "id": "canal-movrecam",
+    "label": "Canal MovReCam",
+    "category": "inspecao",
+    "sortOrder": 3.5
+  },
+  {
+    "id": "canal-canabinall",
+    "label": "Canal CANABinALL",
+    "category": "inspecao",
+    "sortOrder": 3.6
+  },
+  {
+    "id": "verificacao-equipamento",
+    "label": "Verificação de Equipamentos",
+    "category": "inspecao",
+    "sortOrder": 4
+  },
+  {
+    "id": "formacao-academica",
+    "label": "Extensão académica",
+    "category": "inspecao",
+    "sortOrder": 5
+  },
+  {
+    "id": "loja-cultivo",
+    "label": "Lojas de cultivo",
+    "category": "inspecao",
+    "sortOrder": 6
+  },
+  {
+    "id": "insumos-cultivo",
+    "label": "Insumos de cultivo",
+    "category": "inspecao",
+    "sortOrder": 7
+  }
 ]

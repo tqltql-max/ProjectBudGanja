@@ -1,7 +1,15 @@
+function i18nHome(key, fallback) {
+  return window.BudGanjaI18n ? window.BudGanjaI18n.t(key, fallback) : (fallback || '');
+}
+
+function homeLocale() {
+  return (window.BudGanjaI18n && window.BudGanjaI18n.getLocale()) || 'pt-BR';
+}
+
 function formatDatePtBR(iso) {
   if (!iso) return '';
   try {
-    return new Date(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+    return new Date(iso).toLocaleDateString(homeLocale(), { day: '2-digit', month: 'long', year: 'numeric' });
   } catch (e) {
     return iso;
   }
@@ -15,9 +23,9 @@ function escapeHtml(s) {
 }
 
 function categoryLabel(category) {
-  if (category === 'inspecao') return 'Inspeção';
-  if (category === 'equipamento') return 'Equipamento';
-  return 'Pesquisa';
+  if (category === 'inspecao') return i18nHome('pages.home.catInspection', 'Inspeção');
+  if (category === 'equipamento') return i18nHome('pages.home.catEquipment', 'Equipamento');
+  return i18nHome('pages.home.catResearch', 'Pesquisa');
 }
 
 function normalizeAssetUrl(value) {
@@ -30,7 +38,7 @@ function normalizeAssetUrl(value) {
 function formatDateCompact(iso) {
   if (!iso) return '';
   try {
-    return new Date(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' });
+    return new Date(iso).toLocaleDateString(homeLocale(), { day: '2-digit', month: 'short' });
   } catch (e) {
     return iso;
   }
@@ -40,7 +48,7 @@ function renderHomePostCards(container, posts) {
   if (!posts.length) {
     container.innerHTML =
       '<li class="home-latest-item home-latest-item--empty">' +
-      '<span class="empty-message">Novas publicações em breve.</span>' +
+      '<span class="empty-message">' + escapeHtml(i18nHome('pages.home.latestEmpty', 'Novas publicações em breve.')) + '</span>' +
       '</li>';
     return;
   }
@@ -103,14 +111,18 @@ async function loadSorteioBanner() {
   const titleEl = document.getElementById('home-sorteio-title');
   const prizeEl = document.getElementById('home-sorteio-prize');
   const dateEl = document.getElementById('home-sorteio-date');
+  const badgeEl = banner.querySelector('.home-announcement-badge');
+  const joinEl = banner.querySelector('a.botao-home');
 
-  if (titleEl) titleEl.textContent = config.titulo || 'Sorteio ativo';
+  if (badgeEl) badgeEl.textContent = i18nHome('pages.home.giveawayBadge', '🎁 Sorteio ativo');
+  if (titleEl) titleEl.textContent = config.titulo || i18nHome('pages.home.giveawayTitle', 'Sorteio do laboratório');
   if (prizeEl && config.premios && config.premios.length) {
     prizeEl.textContent = config.premios.map((p) => p.label).join(' · ');
   }
   if (dateEl && config.dataSorteio) {
-    dateEl.textContent = 'Sorteio em ' + config.dataSorteio;
+    dateEl.textContent = i18nHome('pages.home.giveawayOn', 'Sorteio em') + ' ' + config.dataSorteio;
   }
+  if (joinEl) joinEl.textContent = i18nHome('pages.home.giveawayJoin', 'Participar agora');
 
   banner.hidden = false;
 }
@@ -119,4 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.body.dataset.page !== 'home') return;
   loadSorteioBanner();
   loadLatestPosts();
+  window.addEventListener('budganja:locale-change', function () {
+    loadSorteioBanner();
+    loadLatestPosts();
+  });
 });

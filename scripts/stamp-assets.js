@@ -207,17 +207,21 @@ fs.writeFileSync(
 );
 
 // Versiona imagens referenciadas no CSS (banner do hero → hash do ficheiro).
-const styleCssPath = path.join(ROOT, 'css', 'style.css');
-if (fs.existsSync(styleCssPath)) {
-  let css = fs.readFileSync(styleCssPath, 'utf8');
+function stampHeroInCssFile(cssPath) {
+  if (!fs.existsSync(cssPath)) return;
+  let css = fs.readFileSync(cssPath, 'utf8');
   const nextCss = css.replace(
-    /(url\(\s*['"]?(?:\.\.\/)?imagens\/background-hero\.(?:png|svg))(?:\?v=[^'")\s]*)?(['"]?\s*\))/g,
+    /(url\(\s*['"]?(?:\.\.\/)?\/?imagens\/background-hero\.(?:png|svg))(?:\?v=[^'")\s]*)?(['"]?\s*\))/g,
     `$1?v=${heroCacheKey}$2`
   );
   if (nextCss !== css) {
-    fs.writeFileSync(styleCssPath, nextCss);
+    fs.writeFileSync(cssPath, nextCss);
   }
 }
+stampHeroInCssFile(path.join(ROOT, 'css', 'style.css'));
+stampHeroInCssFile(path.join(ROOT, 'css', 'atmosphere.css'));
+stampHeroInCssFile(path.join(ROOT, 'css', 'pages', 'radio.css'));
+stampHeroInCssFile(path.join(ROOT, 'css', 'pages', 'home.css'));
 
 function stampHeroMediaAttrs(tag) {
   if (!heroWidth || !heroHeight) return tag;

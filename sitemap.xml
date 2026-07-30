@@ -6,6 +6,8 @@
   <url><loc>https://inspetorbudganja.com.br/videos/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://inspetorbudganja.com.br/biblioteca/pesquisas/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://inspetorbudganja.com.br/biblioteca/inspecoes/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/biblioteca/unifesp/</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://inspetorbudganja.com.br/equipamentos/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://inspetorbudganja.com.br/loja/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://inspetorbudganja.com.br/loja/encomenda.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -22,21 +24,44 @@
   <url><loc>https://inspetorbudganja.com.br/equipamentos/manual-clonadora.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/equipamentos/manual-hidrocloradora.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/biblioteca/pesquisas/substratos.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-canal-jardimhg.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-canal-plantamemo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-canal-inspetorbudganja.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-insumo-biobizz.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-loja-floraurbana.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-canal-movrecam.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-canal-canabinall.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-marshydro-brasil.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-cultivo-indoor-ppfd.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-propagacao-clonagem.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-ciencia-floracao.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-arquitetura-cannabis.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-solo-vivo-organico.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-nutricao-cannabis.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-cultivo-inicio.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-super-solo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-guia-calculadora-luximetro.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-otimizacao-propagacao-vegetal.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-ventilacao-tenda.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-clonadora-aeroponica-documentada.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/babosa/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/camomila/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/capim-limao/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/carqueja/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/cavalinha/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/erva-cidreira/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/espinheira-santa/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/guaco/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/hortela/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/boldo/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/melissa/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/alecrim/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/gengibre/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/curcuma/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/unha-de-gato/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/sucupira/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/copaiba/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/andiroba/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/jambu/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/mulungu/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/maracuja/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/calendula/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/barbatimao/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/jaborandi/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/ipecacuanha/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/pfaffia/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/aroeira/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/quina/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/cannabis-sativa/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
 </urlset>

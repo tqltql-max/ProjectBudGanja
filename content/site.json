@@ -1,10 +1,10 @@
 {
-  "siteName": "Inspetor BudGanja",
-  "siteTagline": "Laboratório de cultivo",
-  "footerText": "© 2026 Inspetor BudGanja. Conteúdo educacional.",
-  "privacyUpdated": "26 de junho de 2026",
-  "ogImage": "/imagens/background-hero.png",
-  "contactEmail": "inspetorbudganja@gmail.com",
+  "siteName": "Inspetor Fitoterapia",
+  "siteTagline": "Laboratório de fitoterapia brasileira",
+  "footerText": "© 2026 Inspetor Fitoterapia. Conteúdo educacional sobre plantas medicinais do Brasil.",
+  "privacyUpdated": "29 de julho de 2026",
+  "ogImage": "/imagens/og-default.jpg",
+  "contactEmail": "tql.tql@gmail.com",
   "youtubeChannelUrl": "https://www.youtube.com/@InspetorBudGanja",
   "youtubeChannelLabel": "Canal @InspetorBudGanja",
   "youtubeJardimUrl": "",
@@ -18,11 +18,29 @@
       "megaCompact": true,
       "megaAccordion": true,
       "megaHeader": "Biblioteca",
-      "megaHeaderHref": "/biblioteca/pesquisas/",
+      "megaHeaderHref": "/plantas/",
       "groups": [
         {
           "title": "",
           "items": [
+            {
+              "label": "Plantas",
+              "tileLabel": "Plantas",
+              "href": "/plantas/",
+              "icon": "🌿",
+              "slug": "plantas",
+              "featured": true,
+              "description": "Catálogo de plantas fitoterápicas do Brasil."
+            },
+            {
+              "label": "Curso UNIFESP",
+              "tileLabel": "UNIFESP",
+              "href": "/biblioteca/unifesp/",
+              "icon": "🎓",
+              "slug": "unifesp",
+              "featured": true,
+              "description": "Hub do XIV curso de extensão sobre cannabis medicinal."
+            },
             {
               "label": "Guias",
               "tileLabel": "Guias",
@@ -30,15 +48,6 @@
               "slug": "guias",
               "submenu": true,
               "children": [
-                {
-                  "label": "Cultivo",
-                  "tileLabel": "Cultivo",
-                  "href": "/biblioteca/inspecoes/",
-                  "icon": "📖",
-                  "slug": "guia-cultivo",
-                  "featured": true,
-                  "description": "Série de inspeções do Guia de Cultivo Básico — vídeos e relatórios técnicos."
-                },
                 {
                   "label": "Clonadoras",
                   "tileLabel": "Clonadoras",
@@ -132,39 +141,31 @@
                   "icon": "🔍",
                   "slug": "inspecoes",
                   "featured": true,
-                  "description": "Verificações de campo."
+                  "description": "Canais, equipamentos, lojas, insumos e formação."
                 },
                 {
-                  "label": "Inspeção: Canal Jardim HG (@jardimhg)",
-                  "tileLabel": "Inspeção: Canal Jardim HG (@jar…",
-                  "href": "/posts/post-inspecao-canal-jardimhg.html",
+                  "label": "Inspeção: Fertilizantes BioBizz",
+                  "tileLabel": "Inspeção: Fertilizantes BioBizz",
+                  "href": "/posts/post-inspecao-insumo-biobizz.html",
                   "icon": "🔍",
-                  "slug": "post-inspecao-canal-jardimhg",
-                  "description": "Auditoria editorial do canal Jardim HG — 124 vídeos catalogados sobre cultivo medicinal indoor/outdoor, com créditos integrais ao criador."
+                  "slug": "post-inspecao-insumo-biobizz",
+                  "description": "Auditoria da linha orgânica BioBizz (Holanda) — Bio·Grow, Bio·Bloom, stimulators e cruzamento com EC, solo vivo e o guia de nutrição do laboratório."
                 },
                 {
-                  "label": "Inspeção: Canal Plantamemo (@plantamemo)",
-                  "tileLabel": "Inspeção: Canal Plantamemo (@pl…",
-                  "href": "/posts/post-inspecao-canal-plantamemo.html",
+                  "label": "Inspeção: Loja Flora Urbana 420",
+                  "tileLabel": "Inspeção: Loja Flora Urbana 420",
+                  "href": "/posts/post-inspecao-loja-floraurbana.html",
                   "icon": "🔍",
-                  "slug": "post-inspecao-canal-plantamemo",
-                  "description": "Auditoria editorial do canal Plantamemo — 213 vídeos catalogados sobre breeders, genéticas clássicas e cultivo indoor do zero, com créditos integrais ao criador."
+                  "slug": "post-inspecao-loja-floraurbana",
+                  "description": "Auditoria da vitrine floraurbana420.com.br — sementes de coleção, bancos representados, logística BR, PIX e cruzamento com o guia de cultivo."
                 },
                 {
-                  "label": "Inspeção: Canal Inspetor BudGanja (@InspetorBudGanja)",
-                  "tileLabel": "Inspeção: Canal Inspetor BudGan…",
-                  "href": "/posts/post-inspecao-canal-inspetorbudganja.html",
+                  "label": "Inspeção: Sistema de Ventilação da Tenda",
+                  "tileLabel": "Inspeção: Sistema de Ventilação…",
+                  "href": "/posts/post-inspecao-ventilacao-tenda.html",
                   "icon": "🔍",
-                  "slug": "post-inspecao-canal-inspetorbudganja",
-                  "description": "Auditoria editorial do canal oficial — 7 vídeos catalogados como trilha técnica do laboratório, com foco em conhecimento científico aplicado e integração com as ferramentas do projeto."
-                },
-                {
-                  "label": "Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal",
-                  "tileLabel": "Inspeção: Curso UNIFESP — Canna…",
-                  "href": "/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-curso-unifesp-cannabis-medicinal",
-                  "description": "Auditoria do XIV Curso de extensão da UNIFESP em parceria com o MovReCam — 10 mil vagas gratuitas, 57 h EaD via YouTube, certificado com 75% de presença e grade clínica, legislativa e de cultivo."
+                  "slug": "post-inspecao-ventilacao-tenda",
+                  "description": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório."
                 },
                 {
                   "label": "Inspeção: Equipamentos Mars Hydro Brasil",
@@ -175,68 +176,28 @@
                   "description": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório."
                 },
                 {
-                  "label": "Inspeção: Otimização do Cultivo Indoor (PPFD e ambiente)",
-                  "tileLabel": "Inspeção: Otimização do Cultivo…",
-                  "href": "/posts/post-inspecao-cultivo-indoor-ppfd.html",
+                  "label": "Inspeção: Canal CANABinALL — Profa. Dra. Eliana Rodrigues",
+                  "tileLabel": "Inspeção: Canal CANABinALL — Pr…",
+                  "href": "/posts/post-inspecao-canal-canabinall.html",
                   "icon": "🔍",
-                  "slug": "post-inspecao-cultivo-indoor-ppfd",
-                  "description": "Verificação integrada de PPFD, DLI, VPD, ventilação e layout da tenda — síntese do ambiente indoor eficiente."
+                  "slug": "post-inspecao-canal-canabinall",
+                  "description": "Auditoria do canal CANABinALL (@canabinall) — 139 vídeos catalogados; divulgação científica UNIFESP sob curadoria da Profa. Dra. Eliana Rodrigues (CEE), com destaque a Conceitos básicos #1 e à série Plantas Sagradas."
                 },
                 {
-                  "label": "Inspeção: Propagação e Clonagem",
-                  "tileLabel": "Inspeção: Propagação e Clonagem",
-                  "href": "/posts/post-inspecao-propagacao-clonagem.html",
+                  "label": "Inspeção: Canal MovReCam — aulas UNIFESP",
+                  "tileLabel": "Inspeção: Canal MovReCam — aula…",
+                  "href": "/posts/post-inspecao-canal-movrecam.html",
                   "icon": "🔍",
-                  "slug": "post-inspecao-propagacao-clonagem",
-                  "description": "Verificação de técnicas de multiplicação vegetativa — estacas, ambiente de enraizamento e sistemas aeropónicos caseiros."
+                  "slug": "post-inspecao-canal-movrecam",
+                  "description": "Auditoria do canal MovReCam — 285 vídeos catalogados; destaque à 11ª aula (Psicodélicos, Profa. Dra. Eliana Rodrigues) da XIV edição UNIFESP."
                 },
                 {
-                  "label": "Inspeção: A Ciência da Floração",
-                  "tileLabel": "Inspeção: A Ciência da Floração",
-                  "href": "/posts/post-inspecao-ciencia-floracao.html",
+                  "label": "Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal",
+                  "tileLabel": "Inspeção: Curso UNIFESP — Canna…",
+                  "href": "/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html",
                   "icon": "🔍",
-                  "slug": "post-inspecao-ciencia-floracao",
-                  "description": "Verificação do gatilho fotoperiódico, desenvolvimento pistilar, maturação tricomática e janela ideal de colheita."
-                },
-                {
-                  "label": "Inspeção: Arquitetura da Cannabis",
-                  "tileLabel": "Inspeção: Arquitetura da Cannab…",
-                  "href": "/posts/post-inspecao-arquitetura-cannabis.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-arquitetura-cannabis",
-                  "description": "Avaliação morfológica da planta — nós, internós, gemas apicais e laterais — e técnicas de manejo (topping, LST, SCROG)."
-                },
-                {
-                  "label": "Inspeção: Solo Vivo Orgânico",
-                  "tileLabel": "Inspeção: Solo Vivo Orgânico",
-                  "href": "/posts/post-inspecao-solo-vivo-organico.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-solo-vivo-organico",
-                  "description": "Verificação da construção de super-solo com microbioma ativo, ciclagem de nutrientes e indicadores de saúde do substrato."
-                },
-                {
-                  "label": "Inspeção: Nutrição da Cannabis",
-                  "tileLabel": "Inspeção: Nutrição da Cannabis",
-                  "href": "/posts/post-inspecao-nutricao-cannabis.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-nutricao-cannabis",
-                  "description": "Análise das necessidades de macro e micronutrientes por fase fenológica, relação N:P:K e condutividade elétrica da solução nutritiva."
-                },
-                {
-                  "label": "Inspeção: O Início do Cultivo de Cannabis",
-                  "tileLabel": "Inspeção: O Início do Cultivo d…",
-                  "href": "/posts/post-inspecao-cultivo-inicio.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-cultivo-inicio",
-                  "description": "Verificação das quatro fases fenológicas e dos fatores ambientais críticos no arranque do cultivo — base do guia em vídeo do canal."
-                },
-                {
-                  "label": "Inspeção: Sistema de Ventilação da Tenda",
-                  "tileLabel": "Inspeção: Sistema de Ventilação…",
-                  "href": "/posts/post-inspecao-ventilacao-tenda.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-ventilacao-tenda",
-                  "description": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório."
+                  "slug": "post-inspecao-curso-unifesp-cannabis-medicinal",
+                  "description": "Auditoria do XIV Curso de extensão da UNIFESP em parceria com o MovReCam — 10 mil vagas gratuitas, 57 h EaD via YouTube, certificado com 75% de presença e grade clínica, legislativa e de cultivo."
                 }
               ]
             },
@@ -448,6 +409,14 @@
       "href": "/"
     },
     {
+      "label": "Plantas",
+      "href": "/plantas/"
+    },
+    {
+      "label": "Curso UNIFESP",
+      "href": "/biblioteca/unifesp/"
+    },
+    {
       "label": "Pesquisas",
       "href": "/biblioteca/pesquisas/"
     },
@@ -468,10 +437,6 @@
       "href": "/calculadoras/"
     },
     {
-      "label": "Luxímetro",
-      "href": "/calculadoras/luximetro.html"
-    },
-    {
       "label": "Diário de cultivo",
       "href": "/cultivo/"
     },
@@ -480,7 +445,7 @@
       "href": "/comunidade/"
     },
     {
-      "label": "Rádio",
+      "label": "BudGanja Radio",
       "href": "/radio/"
     },
     {
@@ -497,12 +462,20 @@
       "title": "Biblioteca",
       "links": [
         {
-          "label": "Pesquisas",
-          "href": "/biblioteca/pesquisas/"
+          "label": "Plantas",
+          "href": "/plantas/"
+        },
+        {
+          "label": "Curso UNIFESP",
+          "href": "/biblioteca/unifesp/"
         },
         {
           "label": "Inspeções",
           "href": "/biblioteca/inspecoes/"
+        },
+        {
+          "label": "Pesquisas",
+          "href": "/biblioteca/pesquisas/"
         },
         {
           "label": "Vídeos",
@@ -543,7 +516,7 @@
           "href": "/comunidade/"
         },
         {
-          "label": "Rádio",
+          "label": "BudGanja Radio",
           "href": "/radio/"
         },
         {
@@ -553,7 +526,12 @@
         {
           "label": "Loja",
           "href": "/loja/"
-        },
+        }
+      ]
+    },
+    {
+      "title": "Sobre nós",
+      "links": [
         {
           "label": "Sobre o projeto",
           "href": "/info/sobre.html"
@@ -561,6 +539,10 @@
         {
           "label": "Contato",
           "href": "/info/contato.html"
+        },
+        {
+          "label": "Privacidade",
+          "href": "/info/privacidade.html"
         }
       ]
     }

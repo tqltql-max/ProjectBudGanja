@@ -17,6 +17,8 @@ const STATIC = [
   { loc: '/videos/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/biblioteca/pesquisas/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/biblioteca/inspecoes/', priority: '0.9', changefreq: 'weekly' },
+  { loc: '/biblioteca/unifesp/', priority: '0.95', changefreq: 'monthly' },
+  { loc: '/plantas/', priority: '0.95', changefreq: 'weekly' },
   { loc: '/equipamentos/', priority: '0.9', changefreq: 'monthly' },
   { loc: '/loja/', priority: '0.85', changefreq: 'monthly' },
   { loc: '/loja/encomenda.html', priority: '0.8', changefreq: 'monthly' },
@@ -49,6 +51,18 @@ function buildSitemap() {
       changefreq: 'monthly'
     });
   });
+
+  try {
+    const { readPlantas, getPlantUrl } = require('../lib/plantas-service.js');
+    const catalog = readPlantas();
+    catalog.plants.forEach((plant) => {
+      urls.push({
+        loc: getPlantUrl(plant),
+        priority: '0.75',
+        changefreq: 'monthly'
+      });
+    });
+  } catch (e) { /* optional */ }
 
   const body = urls.map((u) =>
     '  <url><loc>' + BASE + u.loc + '</loc><changefreq>' + u.changefreq + '</changefreq><priority>' + u.priority + '</priority></url>'

@@ -17,7 +17,7 @@ desktop.ini
 *.swp
 
 # Backup externo (fora do repo)
-scripts/_jardimhg-*.json
+scripts/_tmp-*.json
 scripts/_tmp-*.js
 
 # Cursor

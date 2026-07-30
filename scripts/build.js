@@ -26,6 +26,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('build:og-images', 'generate-og-images.js');
+  } catch (e) {
+    console.warn('Aviso build:og-images:', e.message);
+  }
+
+  try {
     runStep('generate:calculadoras', 'generate-calculadoras-pages.js');
   } catch (e) {
     console.warn('Aviso generate:calculadoras:', e.message);
@@ -81,12 +87,6 @@ function runBuildSteps() {
   }
 
   try {
-    runStep('build:jardimhg', 'build-jardimhg-catalog.js');
-  } catch (e) {
-    console.warn('Aviso build:jardimhg:', e.message);
-  }
-
-  try {
     runStep('build:radio', 'build-radio-playlist.js');
   } catch (e) {
     console.warn('Aviso build:radio:', e.message);
@@ -108,6 +108,12 @@ function runBuildSteps() {
     runStep('sync:loja-data', 'sync-loja-data.js');
   } catch (e) {
     console.warn('Aviso sync:loja-data:', e.message);
+  }
+
+  try {
+    runStep('build:plantas', 'build-plantas.js');
+  } catch (e) {
+    console.warn('Aviso build:plantas:', e.message);
   }
 
   try {

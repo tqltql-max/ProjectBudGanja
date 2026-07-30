@@ -9,10 +9,11 @@ const OUT = path.join(ROOT, 'search-index.json');
 const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registry.js');
 
 const STATIC_PAGES = [
-  { url: '/', title: 'Início', desc: 'Laboratório digital de cultivo vegetal', keywords: 'home laboratório' },
-  { url: '/biblioteca/inspecoes/', title: 'Inspeções — Guia de Cultivo Básico', desc: 'Série de inspeções com relatórios e vídeos @InspetorBudGanja', keywords: 'guia cultivo inspeção vídeo' },
+  { url: '/', title: 'Início', desc: 'Laboratório de fitoterapia brasileira — plantas medicinais, UNIFESP e cultivo responsável', keywords: 'home fitoterapia plantas' },
+  { url: '/plantas/', title: 'Plantas fitoterápicas', desc: 'Catálogo curado de plantas medicinais e fitoterápicas do Brasil', keywords: 'plantas fitoterapia medicinal babosa camomila cannabis' },
+  { url: '/biblioteca/unifesp/', title: 'Curso UNIFESP', desc: 'Hub do XIV curso de extensão UNIFESP sobre cannabis medicinal', keywords: 'unifesp curso cannabis medicinal siex formação' },
+  { url: '/biblioteca/inspecoes/', title: 'Inspeções', desc: 'Relatórios técnicos com método verificável — canais, equipamentos e cursos', keywords: 'inspeção auditoria método' },
   { url: '/biblioteca/pesquisas/', title: 'Pesquisas', desc: 'Relatórios e estudos técnicos', keywords: 'pesquisa relatório' },
-  { url: '/biblioteca/inspecoes/', title: 'Inspeções', desc: 'Relatórios técnicos com método verificável — guia, canais, equipamentos e cursos', keywords: 'inspeção auditoria método' },
   { url: '/equipamentos/', title: 'Equipamentos', desc: 'Manuais caseiros e equipamentos documentados', keywords: 'equipamento caseiro manual clonadora' },
   { url: '/calculadoras/', title: 'Ferramentas', desc: 'Super Calc, luxímetro e Super Solo', keywords: 'ferramentas cultivo vpd dli' },
   ...CALCULADORAS.map((c) => ({
@@ -24,7 +25,8 @@ const STATIC_PAGES = [
   { url: '/comunidade/', title: 'Comunidade', desc: 'Feed de fotos e relatos de cultivo vegetal partilhados pelos cultivadores', keywords: 'comunidade feed fotos diário cultivo comentários' },
   { url: '/sorteios/', title: 'Sorteios', desc: 'Sorteio de inauguração — clonadora aeropônica caseira em breve', keywords: 'sorteio inauguração clonadora' },
   { url: '/videos/', title: 'Últimos vídeos', desc: 'Vídeos recentes do canal YouTube', keywords: 'youtube vídeo canal' },
-  { url: '/info/sobre.html', title: 'Sobre', desc: 'Propósito e metodologia do projeto', keywords: 'sobre missão' },
+  { url: '/radio/', title: 'BudGanja Radio', desc: 'Playlist BudGanja Radio do laboratório', keywords: 'rádio budganja playlist' },
+  { url: '/info/sobre.html', title: 'Sobre', desc: 'Propósito e metodologia do projeto', keywords: 'sobre missão fitoterapia' },
   { url: '/info/contato.html', title: 'Contato', desc: 'E-mail e perguntas frequentes', keywords: 'contato email' },
   { url: '/info/privacidade.html', title: 'Privacidade', desc: 'LGPD e dados de sorteios', keywords: 'privacidade lgpd' },
   { url: '/equipamentos/clonadora-6-estacas.html', title: 'Guia: Clonadora de 6 estacas', desc: 'Pote de sorvete, bucha de louça e bombinha 24 h', keywords: 'clonadora 6 estacas pote sorvete bucha bombinha' },
@@ -54,14 +56,25 @@ function buildIndex() {
   });
 
   try {
-    const { GUIA_INSPECOES_POSTS } = require('../lib/guia-inspecoes-posts.js');
-    GUIA_INSPECOES_POSTS.forEach((post) => {
-      const url = post.url || (post.filename ? '/' + String(post.filename).replace(/^\/+/, '') : '');
+    const { readPlantas, getPlantUrl } = require('../lib/plantas-service.js');
+    const catalog = readPlantas();
+    catalog.plants.forEach((plant) => {
       items.push({
-        title: post.title,
-        url,
-        excerpt: post.excerpt || '',
-        text: [post.title, post.excerpt, post.content_raw, 'guia cultivo básico inspeção'].join(' ').slice(0, 2000)
+        title: plant.nomePopular + (plant.nomeCientifico ? ' (' + plant.nomeCientifico + ')' : ''),
+        url: getPlantUrl(plant),
+        excerpt: plant.summary || '',
+        text: [
+          plant.nomePopular,
+          plant.nomeCientifico,
+          plant.familia,
+          plant.summary,
+          (plant.tags || []).join(' '),
+          (plant.traditionalUses || []).join(' '),
+          'planta fitoterapia medicinal'
+        ]
+          .filter(Boolean)
+          .join(' ')
+          .slice(0, 2000)
       });
     });
   } catch (e) { /* optional */ }
