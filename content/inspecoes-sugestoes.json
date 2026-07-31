@@ -45,7 +45,7 @@
       "titleEs": "Profa. Solange Nappo — CEBRID",
       "tipo": "pessoa",
       "priority": 1,
-      "status": "a-fazer",
+      "status": "feita",
       "why": "Continuidade do CEBRID após Carlini; coordenação do curso UNIFESP; elo directo com a linha científica do laboratório.",
       "whyEn": "CEBRID continuity after Carlini; UNIFESP course coordination; direct link to the lab’s scientific line.",
       "whyEs": "Continuidad del CEBRID tras Carlini; coordinación del curso UNIFESP; vínculo directo con la línea científica del laboratorio.",
@@ -55,7 +55,8 @@
         "https://www.cebrid.com.br/",
         "https://portal.unifesp.br/destaques/curso-sobre-cannabis-medicinal-da-unifesp-e-movrecam-ganha-premio-internacional"
       ],
-      "notes": "Cruzar com inspeções Carlini, curso UNIFESP e CANABinALL."
+      "notes": "Cruzar com inspeções Carlini, curso UNIFESP e CANABinALL.",
+      "doneHref": "/posts/post-inspecao-solange-nappo.html"
     },
     {
       "id": "eliana-rodrigues",
