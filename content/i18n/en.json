@@ -37,6 +37,9 @@
     "shareCopied": "Link copied!",
     "privacyUpdatedDate": "June 26, 2026"
   },
+  "posts": {
+    "summaryOnly": "(summary; full article in Portuguese)"
+  },
   "nav": {
     "library": "Library",
     "tools": "Tools",

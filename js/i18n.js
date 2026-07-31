@@ -89,6 +89,16 @@
     global.dispatchEvent(new CustomEvent('budganja:locale-change', { detail: { locale: next } }));
   }
 
+  function syncPostI18nNotes() {
+    document.querySelectorAll('[data-post-i18n-note]').forEach(function (note) {
+      var show = currentLocale === 'en' || currentLocale === 'es';
+      note.hidden = !show;
+      note.querySelectorAll('[data-i18n-locale]').forEach(function (p) {
+        p.hidden = p.getAttribute('data-i18n-locale') !== currentLocale;
+      });
+    });
+  }
+
   function applyDomTranslations() {
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var key = el.getAttribute('data-i18n');
@@ -134,6 +144,8 @@
       var tipEl = el.querySelector('.app-tile-tip');
       if (tipEl) tipEl.textContent = value;
     });
+
+    syncPostI18nNotes();
   }
 
   function mountLanguageSwitcher(root) {

@@ -66,6 +66,8 @@ CREATE TABLE IF NOT EXISTS posts (
   slug TEXT PRIMARY KEY,
   title TEXT NOT NULL DEFAULT '',
   excerpt TEXT NOT NULL DEFAULT '',
+  excerpt_en TEXT NOT NULL DEFAULT '',
+  excerpt_es TEXT NOT NULL DEFAULT '',
   content_raw TEXT NOT NULL DEFAULT '',
   format TEXT NOT NULL DEFAULT 'markdown',
   filename TEXT NOT NULL DEFAULT '',

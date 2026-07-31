@@ -42,6 +42,9 @@ window.__I18N_LOCALES__ = {
       "shareCopied": "Link copied!",
       "privacyUpdatedDate": "June 26, 2026"
     },
+    "posts": {
+      "summaryOnly": "(summary; full article in Portuguese)"
+    },
     "nav": {
       "library": "Library",
       "tools": "Tools",
@@ -360,6 +363,9 @@ window.__I18N_LOCALES__ = {
       "shareCopied": "¡Enlace copiado!",
       "privacyUpdatedDate": "26 de junio de 2026"
     },
+    "posts": {
+      "summaryOnly": "(resumen; artículo completo en portugués)"
+    },
     "nav": {
       "library": "Biblioteca",
       "tools": "Herramientas",
@@ -677,6 +683,9 @@ window.__I18N_LOCALES__ = {
       "shareAria": "Compartilhar esta publicação",
       "shareCopied": "Link copiado!",
       "privacyUpdatedDate": "26 de junho de 2026"
+    },
+    "posts": {
+      "summaryOnly": "(resumo; artigo completo em português)"
     },
     "nav": {
       "library": "Biblioteca",
