@@ -76,9 +76,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function isProfileComplete(profile, data) {
-    if (data && data.profileComplete === true) return true;
-    if (data && data.profileComplete === false) return false;
+    // Confia no cálculo local — o flag da API pode ficar desactualizado com birth_date antigo.
     if (!profile && !data) return false;
+    if (data && data.profileComplete === true) return true;
     const name = resolveProfileName(profile, data);
     const age = resolveProfileAge(profile, data);
     return name.length >= 2 && !isNaN(age) && age >= MIN_USER_AGE;
@@ -322,11 +322,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (accountEl) accountEl.hidden = false;
     if (editBtn) {
       editBtn.hidden = false;
-      const complete = isProfileComplete(user && user.profile, user);
-      editBtn.textContent = complete ? 'Editar perfil' : 'Completar cadastro';
+      editBtn.textContent = 'Editar perfil';
     }
     if (cancelEditBtn) cancelEditBtn.hidden = true;
-    showIncompleteBanner(user ? !isProfileComplete(user.profile, user) : false);
+    // Banner só se faltar nome — idade em falta resolve-se em «Editar perfil», sem loop de cadastro.
+    const hasName = resolveProfileName(user && user.profile, user).length >= 2;
+    showIncompleteBanner(user ? !hasName : false);
     clearEditQuery();
     void loadPerfilEvolution();
   }
@@ -339,12 +340,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (cancelEditBtn) cancelEditBtn.hidden = !isEdit;
     showIncompleteBanner(false);
     if (formTitle) {
-      formTitle.textContent = isEdit ? 'Editar perfil' : 'Completar cadastro';
+      formTitle.textContent = 'Editar perfil';
     }
     if (onboardingIntro) {
-      onboardingIntro.textContent = isEdit
-        ? 'Actualize o nome, a idade e o WhatsApp (opcional). A foto vem da conta Google. O acesso continua restrito a maiores de 18 anos.'
-        : 'Informe o nome e a idade para activar o acesso. WhatsApp é opcional. A foto vem da conta Google. Conteúdo exclusivo para maiores de 18 anos.';
+      onboardingIntro.textContent = 'Actualize o nome, a idade (18+) e o WhatsApp (opcional). A foto vem da conta Google.';
     }
     if (opts.scroll !== false && onboardingEl) {
       onboardingEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -438,10 +437,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       const complete = isProfileComplete(data.profile, data);
       const hasName = resolveProfileName(data.profile, data).length >= 2;
 
-      // Clicar no nome/foto do header deve abrir a conta, não o formulário.
-      // Só abre cadastro automático se ainda não houver nome; edição só com ?edit=1 ou botão.
+      // Conta aberta por defeito. Formulário só com ?edit=1, botão editar, ou sem nome.
       if (wantsExplicitEdit()) {
-        showOnboardingView(complete, { scroll: true });
+        showOnboardingView(true, { scroll: true });
       } else if (!hasName) {
         showOnboardingView(false, { scroll: false });
       } else {
