@@ -10,6 +10,7 @@ const {
   listTags,
   escapeHtml
 } = require('../lib/plantas-service.js');
+const { plantLocalePayload } = require('../lib/plantas-i18n.js');
 
 const GENERATED_MARKER = '<!-- generated:plantas -->';
 const OUT_DIR = path.join(ROOT, 'plantas');
@@ -88,18 +89,26 @@ function buildHub(catalog) {
     .slice()
     .sort((a, b) => a.nomePopular.localeCompare(b.nomePopular, 'pt'))
     .map((p) => {
+      const loc = plantLocalePayload(p);
       const tagAttrs = (p.tags || []).join(' ');
-      const searchBlob = [p.nomePopular, p.nomeCientifico, p.familia, ...(p.tags || [])]
+      const searchBlob = [
+        loc['pt-BR'].nomePopular,
+        loc.en.nomePopular,
+        loc.es.nomePopular,
+        p.nomeCientifico,
+        p.familia,
+        ...(p.tags || [])
+      ]
         .join(' ')
         .toLowerCase();
       const unifesp = p.relatedUnifesp
         ? '<span class="planta-card-badge">UNIFESP</span>'
         : '';
-      return `                <article class="planta-card" data-tags="${escapeHtml(tagAttrs)}" data-search="${escapeHtml(searchBlob)}">
+      return `                <article class="planta-card" data-tags="${escapeHtml(tagAttrs)}" data-search="${escapeHtml(searchBlob)}" data-nome-pt="${escapeHtml(loc['pt-BR'].nomePopular)}" data-nome-en="${escapeHtml(loc.en.nomePopular)}" data-nome-es="${escapeHtml(loc.es.nomePopular)}" data-summary-pt="${escapeHtml(loc['pt-BR'].summary)}" data-summary-en="${escapeHtml(loc.en.summary)}" data-summary-es="${escapeHtml(loc.es.summary)}">
                     <a class="planta-card-link" href="${escapeHtml(getPlantUrl(p))}">
-                        <h2 class="planta-card-title">${escapeHtml(p.nomePopular)}</h2>
+                        <h2 class="planta-card-title" data-planta-nome>${escapeHtml(p.nomePopular)}</h2>
                         <p class="planta-card-sci"><em>${escapeHtml(p.nomeCientifico)}</em></p>
-                        <p class="planta-card-summary">${escapeHtml(p.summary)}</p>
+                        <p class="planta-card-summary" data-planta-summary>${escapeHtml(p.summary)}</p>
                         ${unifesp}
                     </a>
                 </article>`;
@@ -130,9 +139,9 @@ function buildHub(catalog) {
 ${cards}
         </div>
 
-        <p class="plantas-empty" id="plantas-empty" hidden>Nenhuma planta corresponde aos filtros.</p>
+        <p class="plantas-empty" id="plantas-empty" hidden data-i18n="pages.plantas.empty">Nenhuma planta corresponde aos filtros.</p>
 
-        <p class="plantas-related"><a href="/biblioteca/unifesp/">Curso UNIFESP</a> · <a href="/biblioteca/inspecoes/">Inspeções</a> · <a href="/cultivo/">Diário de pesquisas</a></p>`;
+        <p class="plantas-related"><a href="/biblioteca/unifesp/" data-i18n="pages.plantas.relatedCourse">Curso UNIFESP</a> · <a href="/biblioteca/inspecoes/" data-i18n="pages.plantas.relatedInspections">Inspeções</a> · <a href="/cultivo/" data-i18n="pages.plantas.relatedDiary">Diário de pesquisas</a></p>`;
 
   return pageShell({
     title: 'Plantas fitoterápicas | Inspetor BudGanja',
@@ -147,38 +156,34 @@ ${cards}
 }
 
 function buildPlantPage(plant, catalog) {
-  const parts = (plant.partsUsed || [])
-    .map((x) => `<li>${escapeHtml(x)}</li>`)
-    .join('\n                    ');
-  const uses = (plant.traditionalUses || [])
-    .map((x) => `<li>${escapeHtml(x)}</li>`)
-    .join('\n                    ');
   const tags = (plant.tags || [])
     .map((t) => `<span class="planta-tag">${escapeHtml(t)}</span>`)
     .join(' ');
+  const localeJson = JSON.stringify(plantLocalePayload(plant)).replace(/</g, '\\u003c');
 
   const unifespBlock = plant.relatedUnifesp
     ? `        <section class="info-panel">
-            <h2>Formação UNIFESP</h2>
-            <p>Esta espécie está ligada ao eixo do curso de extensão UNIFESP sobre cannabis medicinal.</p>
+            <h2 data-i18n="pages.plantas.unifespTitle">Formação UNIFESP</h2>
+            <p data-i18n="pages.plantas.unifespBody">Esta espécie está ligada ao eixo do curso de extensão UNIFESP sobre cannabis medicinal.</p>
             <div class="home-pillar-actions">
-                <a class="botao botao-home" href="/biblioteca/unifesp/">Hub UNIFESP</a>
-                <a class="botao botao-home botao-home--secondary" href="/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html">Inspeção do curso</a>
+                <a class="botao botao-home" href="/biblioteca/unifesp/" data-i18n="pages.plantas.unifespHub">Hub UNIFESP</a>
+                <a class="botao botao-home botao-home--secondary" href="/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html" data-i18n="pages.plantas.unifespCourse">Inspeção do curso</a>
             </div>
         </section>`
     : '';
 
-  const body = `        <nav class="planta-breadcrumb" aria-label="Navegação">
-            <a href="/plantas/">Plantas</a>
+  const body = `        <script type="application/json" id="planta-i18n-data">${localeJson}</script>
+        <nav class="planta-breadcrumb" data-i18n-aria="pages.plantas.breadcrumb" aria-label="Navegação">
+            <a href="/plantas/" data-i18n="pages.plantas.plantsLink">Plantas</a>
             <span aria-hidden="true">/</span>
-            <span>${escapeHtml(plant.nomePopular)}</span>
+            <span data-planta-nome>${escapeHtml(plant.nomePopular)}</span>
         </nav>
 
         <header class="article-header planta-header">
             <p class="article-eyebrow">${escapeHtml(plant.familia || 'Fitoterapia')}</p>
-            <h1>${escapeHtml(plant.nomePopular)}</h1>
+            <h1 data-planta-nome>${escapeHtml(plant.nomePopular)}</h1>
             <p class="planta-sci"><em>${escapeHtml(plant.nomeCientifico)}</em></p>
-            <p class="page-intro">${escapeHtml(plant.summary)}</p>
+            <p class="page-intro" data-planta-summary>${escapeHtml(plant.summary)}</p>
             <div class="planta-tags">${tags}</div>
         </header>
 
@@ -187,34 +192,30 @@ function buildPlantPage(plant, catalog) {
         </aside>
 
         <section class="info-panel">
-            <h2>Partes usadas</h2>
-            <ul class="info-list">
-                    ${parts || '<li>—</li>'}
-            </ul>
+            <h2 data-i18n="pages.plantas.partsUsed">Partes usadas</h2>
+            <ul class="info-list" data-planta-parts></ul>
         </section>
 
         <section class="info-panel">
-            <h2>Usos tradicionais</h2>
-            <ul class="info-list">
-                    ${uses || '<li>—</li>'}
-            </ul>
+            <h2 data-i18n="pages.plantas.traditionalUses">Usos tradicionais</h2>
+            <ul class="info-list" data-planta-uses></ul>
         </section>
 
         <section class="info-panel">
-            <h2>Cuidados</h2>
-            <p>${escapeHtml(plant.cautions)}</p>
+            <h2 data-i18n="pages.plantas.cautions">Cuidados</h2>
+            <p data-planta-cautions>${escapeHtml(plant.cautions)}</p>
         </section>
 
 ${unifespBlock}
 
         <section class="info-panel">
-            <h2>Continuar no laboratório</h2>
+            <h2 data-i18n="pages.plantas.continueLab">Continuar no laboratório</h2>
             <ul class="info-list">
-                <li><a href="/cultivo/?plant=${escapeHtml(plant.slug)}">Iniciar pesquisa no diário</a> — criar ou abrir o diário desta espécie</li>
-                <li><a href="/plantas/">Voltar ao catálogo</a></li>
-                <li><a href="/biblioteca/unifesp/">Curso UNIFESP</a></li>
-                <li><a href="/biblioteca/inspecoes/">Inspeções</a></li>
-                <li><a href="/calculadoras/">Ferramentas de cultivo</a></li>
+                <li><a href="/cultivo/?plant=${escapeHtml(plant.slug)}" data-i18n="pages.plantas.startDiary">Iniciar pesquisa no diário</a><span data-i18n="pages.plantas.startDiaryHint"> — criar ou abrir o diário desta espécie</span></li>
+                <li><a href="/plantas/" data-i18n="pages.plantas.backCatalog">Voltar ao catálogo</a></li>
+                <li><a href="/biblioteca/unifesp/" data-i18n="pages.plantas.relatedCourse">Curso UNIFESP</a></li>
+                <li><a href="/biblioteca/inspecoes/" data-i18n="pages.plantas.relatedInspections">Inspeções</a></li>
+                <li><a href="/calculadoras/" data-i18n="pages.plantas.relatedTools">Ferramentas de cultivo</a></li>
             </ul>
         </section>`;
 

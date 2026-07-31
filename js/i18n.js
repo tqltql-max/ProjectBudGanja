@@ -114,6 +114,19 @@
 
   function syncPostI18nNotes() {
     document.querySelectorAll('[data-post-i18n-note]').forEach(function (note) {
+      var hasBodyEn = note.getAttribute('data-has-body-en') === '1';
+      var hasBodyEs = note.getAttribute('data-has-body-es') === '1';
+      // Corpo completo no idioma actual → esconder nota de resumo.
+      if (
+        (currentLocale === 'en' && hasBodyEn) ||
+        (currentLocale === 'es' && hasBodyEs) ||
+        currentLocale === 'pt-BR'
+      ) {
+        note.hidden = true;
+        note.setAttribute('hidden', '');
+        return;
+      }
+
       var show = currentLocale === 'en' || currentLocale === 'es';
       var hasEn = note.getAttribute('data-has-en') === '1';
       var hasEs = note.getAttribute('data-has-es') === '1';
@@ -220,9 +233,39 @@
         if (metaDesc) metaDesc.setAttribute('content', excerpt);
       }
     }
+
+    var bodies = document.querySelectorAll('[data-post-body]');
+    if (bodies.length) {
+      var shown = false;
+      bodies.forEach(function (el) {
+        var loc = el.getAttribute('data-locale') || 'pt-BR';
+        var match = loc === currentLocale;
+        if (!match && currentLocale === 'en' && loc === 'pt-BR') {
+          // fallback abaixo
+        }
+        if (match) {
+          el.hidden = false;
+          el.removeAttribute('hidden');
+          shown = true;
+        } else {
+          el.hidden = true;
+          el.setAttribute('hidden', '');
+        }
+      });
+      if (!shown) {
+        bodies.forEach(function (el) {
+          if ((el.getAttribute('data-locale') || '') === 'pt-BR') {
+            el.hidden = false;
+            el.removeAttribute('hidden');
+          }
+        });
+      }
+    }
   }
 
   function applyDomTranslations() {
+    applyPageBodyTranslations();
+
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var key = el.getAttribute('data-i18n');
       if (!key) return;
@@ -251,6 +294,13 @@
       if (value) el.setAttribute('aria-label', value);
     });
 
+    document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-alt');
+      if (!key) return;
+      var value = t(key, el.getAttribute('alt') || '');
+      if (value) el.setAttribute('alt', value);
+    });
+
     document.querySelectorAll('[data-i18n-title]').forEach(function (el) {
       var key = el.getAttribute('data-i18n-title');
       if (!key) return;
@@ -269,8 +319,134 @@
     });
 
     applyPostPageTranslations();
+    applyPlantPageTranslations();
+    applyPlantHubTranslations();
     applyHubPageTranslations();
     syncPostI18nNotes();
+  }
+
+  function resolvePageTranslationKey() {
+    var path = (global.location && global.location.pathname) || '';
+    path = path.replace(/^\//, '');
+    if (!path || path.endsWith('/')) path = path + 'index.html';
+    if (path.indexOf('.html') === -1 && path.slice(-1) !== '/') path = path + '/index.html';
+    return path;
+  }
+
+  function applyPageBodyTranslations() {
+    var map = global.__PAGE_TRANSLATIONS__;
+    if (!map) return;
+    var main = document.getElementById('main-content');
+    if (!main) return;
+    // Hubs com conteúdo dinâmico (posts/loja) — não substituir o main inteiro.
+    if (
+      main.querySelector('.publications-equipamentos') ||
+      main.querySelector('[data-equip-loja]') ||
+      main.querySelector('[data-inspecao-grid]') ||
+      main.querySelector('#plantas-grid') ||
+      document.body.dataset.page === 'equipamentos' ||
+      document.body.dataset.page === 'cultivo' ||
+      document.body.dataset.page === 'comunidade' ||
+      document.body.dataset.postSlug
+    ) {
+      return;
+    }
+
+    var key = resolvePageTranslationKey();
+    var entry = map[key];
+    if (!entry) {
+      // aliases comuns
+      if (key === 'biblioteca/unifesp/') entry = map['biblioteca/unifesp/index.html'];
+      if (key === 'equipamentos/') entry = map['equipamentos/index.html'];
+    }
+    if (!entry) return;
+
+    if (!global.__PAGE_BODY_PT__) {
+      global.__PAGE_BODY_PT__ = main.innerHTML;
+    }
+
+    if (currentLocale === 'pt-BR') {
+      main.innerHTML = global.__PAGE_BODY_PT__;
+      return;
+    }
+
+    var loc = entry[currentLocale];
+    if (!loc || !loc.bodyHtml) return;
+    main.innerHTML = loc.bodyHtml;
+    if (loc.title) document.title = loc.title;
+  }
+
+  function fillList(ul, items) {
+    if (!ul) return;
+    ul.innerHTML = '';
+    (items || []).forEach(function (item) {
+      var li = document.createElement('li');
+      li.textContent = item;
+      ul.appendChild(li);
+    });
+    if (!ul.children.length) {
+      var empty = document.createElement('li');
+      empty.textContent = '—';
+      ul.appendChild(empty);
+    }
+  }
+
+  function applyPlantPageTranslations() {
+    if (!document.body || document.body.dataset.page !== 'planta') return;
+    var dataEl = document.getElementById('planta-i18n-data');
+    if (!dataEl) return;
+    var payload = null;
+    try {
+      payload = JSON.parse(dataEl.textContent || '{}');
+    } catch (e) {
+      return;
+    }
+    var fields = payload[currentLocale] || payload['pt-BR'] || null;
+    if (!fields) return;
+
+    document.querySelectorAll('[data-planta-nome]').forEach(function (el) {
+      el.textContent = fields.nomePopular || el.textContent;
+    });
+    document.querySelectorAll('[data-planta-summary]').forEach(function (el) {
+      el.textContent = fields.summary || el.textContent;
+    });
+    document.querySelectorAll('[data-planta-cautions]').forEach(function (el) {
+      el.textContent = fields.cautions || el.textContent;
+    });
+    fillList(document.querySelector('[data-planta-parts]'), fields.partsUsed);
+    fillList(document.querySelector('[data-planta-uses]'), fields.traditionalUses);
+
+    if (fields.nomePopular) {
+      document.title = fields.nomePopular + ' | Inspetor BudGanja';
+    }
+    if (fields.summary) {
+      var metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute('content', fields.summary.slice(0, 160));
+    }
+  }
+
+  function applyPlantHubTranslations() {
+    if (!document.body || document.body.dataset.page !== 'plantas') return;
+    var attrNome =
+      currentLocale === 'en' ? 'data-nome-en' : currentLocale === 'es' ? 'data-nome-es' : 'data-nome-pt';
+    var attrSummary =
+      currentLocale === 'en'
+        ? 'data-summary-en'
+        : currentLocale === 'es'
+          ? 'data-summary-es'
+          : 'data-summary-pt';
+    document.querySelectorAll('.planta-card').forEach(function (card) {
+      var nome =
+        (card.getAttribute(attrNome) || '').trim() ||
+        (card.getAttribute('data-nome-pt') || '').trim();
+      var summary =
+        (card.getAttribute(attrSummary) || '').trim() ||
+        (card.getAttribute('data-summary-pt') || '').trim();
+      var titleEl = card.querySelector('[data-planta-nome]');
+      var summaryEl = card.querySelector('[data-planta-summary]');
+      if (titleEl && nome) titleEl.textContent = nome;
+      if (summaryEl && summary) summaryEl.textContent = summary;
+    });
   }
 
   var PAGE_I18N_MAP = {

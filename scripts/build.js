@@ -112,6 +112,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('sync:page-translations', 'sync-page-translations.js');
+  } catch (e) {
+    console.warn('Aviso sync:page-translations:', e.message);
+  }
+
+  try {
     runStep('sync:ferramentas-nav', 'sync-ferramentas-nav.js');
   } catch (e) {
     console.warn('Aviso sync:ferramentas-nav:', e.message);

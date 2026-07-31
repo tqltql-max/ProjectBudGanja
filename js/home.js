@@ -55,11 +55,17 @@ function renderHomePostCards(container, posts) {
 
   container.innerHTML = posts.slice(0, 3).map((p) => {
     const href = normalizeAssetUrl(p.url);
+    const loc = homeLocale();
+    const title =
+      (loc === 'en' && p.titleEn) ||
+      (loc === 'es' && p.titleEs) ||
+      p.title ||
+      '';
     return (
       '<li class="home-latest-item post-card"' + (p.slug ? ' data-post-slug="' + escapeHtml(p.slug) + '"' : '') + '>' +
       '<a href="' + escapeHtml(href) + '" class="home-latest-row">' +
       '<span class="home-latest-badge">' + escapeHtml(categoryLabel(p.category)) + '</span>' +
-      '<span class="home-latest-title">' + escapeHtml(p.title || '') + '</span>' +
+      '<span class="home-latest-title">' + escapeHtml(title) + '</span>' +
       '<time class="home-latest-date" datetime="' + escapeHtml(p.date || '') + '">' + escapeHtml(formatDateCompact(p.date)) + '</time>' +
       '</a></li>'
     );

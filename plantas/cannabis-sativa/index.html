@@ -17,6 +17,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
+
     <link rel="icon" href="/imagens/favicon-32.v295.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/imagens/favicon-48.v295.png" sizes="48x48" type="image/png">
     <link rel="icon" href="/imagens/favicon-16.v295.png" sizes="16x16" type="image/png">
@@ -33,17 +34,18 @@
     <div id="site-header"></div>
 
     <main id="main-content" class="article-page relatorio-container planta-ficha">
-        <nav class="planta-breadcrumb" aria-label="Navegação">
-            <a href="/plantas/">Plantas</a>
+        <script type="application/json" id="planta-i18n-data">{"pt-BR":{"nomePopular":"Cannabis (medicinal)","summary":"Espécie com uso terapêutico regulamentado em contextos clínicos e formativos. Destaque do curso UNIFESP e da inspeção do laboratório.","partsUsed":["Flores","Extratos (contexto clínico)"],"traditionalUses":["Educação sobre uso terapêutico (curso UNIFESP)","Referência em fitoterapia e legislação brasileira"],"cautions":"Uso medicinal sujeito a legislação e prescrição. Conteúdo educacional — não incentiva cultivo ilícito nem automedicação."},"en":{"nomePopular":"Medical cannabis","summary":"A species with regulated therapeutic use in clinical and educational settings. It is featured in the UNIFESP course and laboratory inspection.","partsUsed":["Flowers","Extracts (clinical context)"],"traditionalUses":["Education on therapeutic use (UNIFESP course)","Reference in herbal medicine and Brazilian legislation"],"cautions":"Medicinal use is subject to legislation and prescription. Educational content — it does not encourage illegal cultivation or self-medication."},"es":{"nomePopular":"Cannabis medicinal","summary":"Una especie con uso terapéutico regulado en contextos clínicos y formativos. Se destaca en el curso de UNIFESP y la inspección del laboratorio.","partsUsed":["Flores","Extractos (contexto clínico)"],"traditionalUses":["Educación sobre uso terapéutico (curso de UNIFESP)","Referencia en fitoterapia y legislación brasileña"],"cautions":"El uso medicinal está sujeto a legislación y prescripción. Contenido educativo: no fomenta el cultivo ilegal ni la automedicación."}}</script>
+        <nav class="planta-breadcrumb" data-i18n-aria="pages.plantas.breadcrumb" aria-label="Navegação">
+            <a href="/plantas/" data-i18n="pages.plantas.plantsLink">Plantas</a>
             <span aria-hidden="true">/</span>
-            <span>Cannabis (medicinal)</span>
+            <span data-planta-nome>Cannabis (medicinal)</span>
         </nav>
 
         <header class="article-header planta-header">
             <p class="article-eyebrow">Cannabaceae</p>
-            <h1>Cannabis (medicinal)</h1>
+            <h1 data-planta-nome>Cannabis (medicinal)</h1>
             <p class="planta-sci"><em>Cannabis sativa L.</em></p>
-            <p class="page-intro">Espécie com uso terapêutico regulamentado em contextos clínicos e formativos. Destaque do curso UNIFESP e da inspeção do laboratório.</p>
+            <p class="page-intro" data-planta-summary>Espécie com uso terapêutico regulamentado em contextos clínicos e formativos. Destaque do curso UNIFESP e da inspeção do laboratório.</p>
             <div class="planta-tags"><span class="planta-tag">medicinal</span> <span class="planta-tag">unifesp</span> <span class="planta-tag">legislacao</span> <span class="planta-tag">fitoterapia</span></div>
         </header>
 
@@ -52,43 +54,37 @@
         </aside>
 
         <section class="info-panel">
-            <h2>Partes usadas</h2>
-            <ul class="info-list">
-                    <li>Flores</li>
-                    <li>Extratos (contexto clínico)</li>
-            </ul>
+            <h2 data-i18n="pages.plantas.partsUsed">Partes usadas</h2>
+            <ul class="info-list" data-planta-parts></ul>
         </section>
 
         <section class="info-panel">
-            <h2>Usos tradicionais</h2>
-            <ul class="info-list">
-                    <li>Educação sobre uso terapêutico (curso UNIFESP)</li>
-                    <li>Referência em fitoterapia e legislação brasileira</li>
-            </ul>
+            <h2 data-i18n="pages.plantas.traditionalUses">Usos tradicionais</h2>
+            <ul class="info-list" data-planta-uses></ul>
         </section>
 
         <section class="info-panel">
-            <h2>Cuidados</h2>
-            <p>Uso medicinal sujeito a legislação e prescrição. Conteúdo educacional — não incentiva cultivo ilícito nem automedicação.</p>
+            <h2 data-i18n="pages.plantas.cautions">Cuidados</h2>
+            <p data-planta-cautions>Uso medicinal sujeito a legislação e prescrição. Conteúdo educacional — não incentiva cultivo ilícito nem automedicação.</p>
         </section>
 
         <section class="info-panel">
-            <h2>Formação UNIFESP</h2>
-            <p>Esta espécie está ligada ao eixo do curso de extensão UNIFESP sobre cannabis medicinal.</p>
+            <h2 data-i18n="pages.plantas.unifespTitle">Formação UNIFESP</h2>
+            <p data-i18n="pages.plantas.unifespBody">Esta espécie está ligada ao eixo do curso de extensão UNIFESP sobre cannabis medicinal.</p>
             <div class="home-pillar-actions">
-                <a class="botao botao-home" href="/biblioteca/unifesp/">Hub UNIFESP</a>
-                <a class="botao botao-home botao-home--secondary" href="/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html">Inspeção do curso</a>
+                <a class="botao botao-home" href="/biblioteca/unifesp/" data-i18n="pages.plantas.unifespHub">Hub UNIFESP</a>
+                <a class="botao botao-home botao-home--secondary" href="/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html" data-i18n="pages.plantas.unifespCourse">Inspeção do curso</a>
             </div>
         </section>
 
         <section class="info-panel">
-            <h2>Continuar no laboratório</h2>
+            <h2 data-i18n="pages.plantas.continueLab">Continuar no laboratório</h2>
             <ul class="info-list">
-                <li><a href="/cultivo/?plant=cannabis-sativa">Iniciar pesquisa no diário</a> — criar ou abrir o diário desta espécie</li>
-                <li><a href="/plantas/">Voltar ao catálogo</a></li>
-                <li><a href="/biblioteca/unifesp/">Curso UNIFESP</a></li>
-                <li><a href="/biblioteca/inspecoes/">Inspeções</a></li>
-                <li><a href="/calculadoras/">Ferramentas de cultivo</a></li>
+                <li><a href="/cultivo/?plant=cannabis-sativa" data-i18n="pages.plantas.startDiary">Iniciar pesquisa no diário</a><span data-i18n="pages.plantas.startDiaryHint"> — criar ou abrir o diário desta espécie</span></li>
+                <li><a href="/plantas/" data-i18n="pages.plantas.backCatalog">Voltar ao catálogo</a></li>
+                <li><a href="/biblioteca/unifesp/" data-i18n="pages.plantas.relatedCourse">Curso UNIFESP</a></li>
+                <li><a href="/biblioteca/inspecoes/" data-i18n="pages.plantas.relatedInspections">Inspeções</a></li>
+                <li><a href="/calculadoras/" data-i18n="pages.plantas.relatedTools">Ferramentas de cultivo</a></li>
             </ul>
         </section>
     </main>
@@ -96,6 +92,7 @@
     <div id="site-footer"></div>
   <script src="/js/app-version-check.js?v=295"></script>
     <script src="/js/i18n-data.js?v=295"></script>
+    <script src="/js/page-translations-data.js?v=295"></script>
     <script src="/js/i18n.js?v=295"></script>
     <script src="/js/ferramentas-nav-data.js?v=295"></script>
     <script src="/js/layout.js?v=295"></script>

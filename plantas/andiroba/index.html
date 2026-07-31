@@ -17,6 +17,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
+
     <link rel="icon" href="/imagens/favicon-32.v295.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/imagens/favicon-48.v295.png" sizes="48x48" type="image/png">
     <link rel="icon" href="/imagens/favicon-16.v295.png" sizes="16x16" type="image/png">
@@ -33,17 +34,18 @@
     <div id="site-header"></div>
 
     <main id="main-content" class="article-page relatorio-container planta-ficha">
-        <nav class="planta-breadcrumb" aria-label="Navegação">
-            <a href="/plantas/">Plantas</a>
+        <script type="application/json" id="planta-i18n-data">{"pt-BR":{"nomePopular":"Andiroba","summary":"Árvore amazônica; óleo das sementes na cosmética e tradição local.","partsUsed":["Óleo das sementes"],"traditionalUses":["Uso tópico tradicional","Cosmética natural"],"cautions":"Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação."},"en":{"nomePopular":"Andiroba","summary":"An Amazonian tree; oil from its seeds is used in cosmetics and local tradition.","partsUsed":["Seed oil"],"traditionalUses":["Traditional topical use","Natural cosmetics"],"cautions":"Educational content. It does not replace guidance from a health professional. Avoid self-medication."},"es":{"nomePopular":"Andiroba","summary":"Un árbol amazónico; el aceite de sus semillas se usa en cosmética y en la tradición local.","partsUsed":["Aceite de las semillas"],"traditionalUses":["Uso tópico tradicional","Cosmética natural"],"cautions":"Contenido educativo. No sustituye la orientación de un profesional de la salud. Evite la automedicación."}}</script>
+        <nav class="planta-breadcrumb" data-i18n-aria="pages.plantas.breadcrumb" aria-label="Navegação">
+            <a href="/plantas/" data-i18n="pages.plantas.plantsLink">Plantas</a>
             <span aria-hidden="true">/</span>
-            <span>Andiroba</span>
+            <span data-planta-nome>Andiroba</span>
         </nav>
 
         <header class="article-header planta-header">
             <p class="article-eyebrow">Meliaceae</p>
-            <h1>Andiroba</h1>
+            <h1 data-planta-nome>Andiroba</h1>
             <p class="planta-sci"><em>Carapa guianensis</em></p>
-            <p class="page-intro">Árvore amazônica; óleo das sementes na cosmética e tradição local.</p>
+            <p class="page-intro" data-planta-summary>Árvore amazônica; óleo das sementes na cosmética e tradição local.</p>
             <div class="planta-tags"><span class="planta-tag">amazonia</span> <span class="planta-tag">oleo</span> <span class="planta-tag">pele</span></div>
         </header>
 
@@ -52,35 +54,28 @@
         </aside>
 
         <section class="info-panel">
-            <h2>Partes usadas</h2>
-            <ul class="info-list">
-                    <li>Óleo das sementes</li>
-            </ul>
+            <h2 data-i18n="pages.plantas.partsUsed">Partes usadas</h2>
+            <ul class="info-list" data-planta-parts></ul>
         </section>
 
         <section class="info-panel">
-            <h2>Usos tradicionais</h2>
-            <ul class="info-list">
-                    <li>Uso tópico tradicional</li>
-                    <li>Cosmética natural</li>
-            </ul>
+            <h2 data-i18n="pages.plantas.traditionalUses">Usos tradicionais</h2>
+            <ul class="info-list" data-planta-uses></ul>
         </section>
 
         <section class="info-panel">
-            <h2>Cuidados</h2>
-            <p>Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.</p>
+            <h2 data-i18n="pages.plantas.cautions">Cuidados</h2>
+            <p data-planta-cautions>Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.</p>
         </section>
 
-
-
         <section class="info-panel">
-            <h2>Continuar no laboratório</h2>
+            <h2 data-i18n="pages.plantas.continueLab">Continuar no laboratório</h2>
             <ul class="info-list">
-                <li><a href="/cultivo/?plant=andiroba">Iniciar pesquisa no diário</a> — criar ou abrir o diário desta espécie</li>
-                <li><a href="/plantas/">Voltar ao catálogo</a></li>
-                <li><a href="/biblioteca/unifesp/">Curso UNIFESP</a></li>
-                <li><a href="/biblioteca/inspecoes/">Inspeções</a></li>
-                <li><a href="/calculadoras/">Ferramentas de cultivo</a></li>
+                <li><a href="/cultivo/?plant=andiroba" data-i18n="pages.plantas.startDiary">Iniciar pesquisa no diário</a><span data-i18n="pages.plantas.startDiaryHint"> — criar ou abrir o diário desta espécie</span></li>
+                <li><a href="/plantas/" data-i18n="pages.plantas.backCatalog">Voltar ao catálogo</a></li>
+                <li><a href="/biblioteca/unifesp/" data-i18n="pages.plantas.relatedCourse">Curso UNIFESP</a></li>
+                <li><a href="/biblioteca/inspecoes/" data-i18n="pages.plantas.relatedInspections">Inspeções</a></li>
+                <li><a href="/calculadoras/" data-i18n="pages.plantas.relatedTools">Ferramentas de cultivo</a></li>
             </ul>
         </section>
     </main>
@@ -88,6 +83,7 @@
     <div id="site-footer"></div>
   <script src="/js/app-version-check.js?v=295"></script>
     <script src="/js/i18n-data.js?v=295"></script>
+    <script src="/js/page-translations-data.js?v=295"></script>
     <script src="/js/i18n.js?v=295"></script>
     <script src="/js/ferramentas-nav-data.js?v=295"></script>
     <script src="/js/layout.js?v=295"></script>

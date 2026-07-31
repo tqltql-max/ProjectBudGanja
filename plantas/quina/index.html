@@ -17,6 +17,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
+
     <link rel="icon" href="/imagens/favicon-32.v295.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/imagens/favicon-48.v295.png" sizes="48x48" type="image/png">
     <link rel="icon" href="/imagens/favicon-16.v295.png" sizes="16x16" type="image/png">
@@ -33,17 +34,18 @@
     <div id="site-header"></div>
 
     <main id="main-content" class="article-page relatorio-container planta-ficha">
-        <nav class="planta-breadcrumb" aria-label="Navegação">
-            <a href="/plantas/">Plantas</a>
+        <script type="application/json" id="planta-i18n-data">{"pt-BR":{"nomePopular":"Quina","summary":"Género histórico da quina; casca associada à quinine na história da medicina.","partsUsed":["Casca"],"traditionalUses":["Referência histórica antimalárica"],"cautions":"Espécies e usos regulamentados; não automedicar. Conteúdo educacional."},"en":{"nomePopular":"Cinchona","summary":"A historic cinchona genus; its bark is associated with quinine in the history of medicine.","partsUsed":["Bark"],"traditionalUses":["Historical antimalarial reference"],"cautions":"Species and uses are regulated; do not self-medicate. Educational content."},"es":{"nomePopular":"Quina","summary":"Un género histórico de quina; su corteza se asocia con la quinina en la historia de la medicina.","partsUsed":["Corteza"],"traditionalUses":["Referencia antimalárica histórica"],"cautions":"Las especies y sus usos están regulados; no se automedique. Contenido educativo."}}</script>
+        <nav class="planta-breadcrumb" data-i18n-aria="pages.plantas.breadcrumb" aria-label="Navegação">
+            <a href="/plantas/" data-i18n="pages.plantas.plantsLink">Plantas</a>
             <span aria-hidden="true">/</span>
-            <span>Quina</span>
+            <span data-planta-nome>Quina</span>
         </nav>
 
         <header class="article-header planta-header">
             <p class="article-eyebrow">Rubiaceae</p>
-            <h1>Quina</h1>
+            <h1 data-planta-nome>Quina</h1>
             <p class="planta-sci"><em>Cinchona sp.</em></p>
-            <p class="page-intro">Género histórico da quina; casca associada à quinine na história da medicina.</p>
+            <p class="page-intro" data-planta-summary>Género histórico da quina; casca associada à quinine na história da medicina.</p>
             <div class="planta-tags"><span class="planta-tag">historica</span> <span class="planta-tag">farmacopeia</span></div>
         </header>
 
@@ -52,34 +54,28 @@
         </aside>
 
         <section class="info-panel">
-            <h2>Partes usadas</h2>
-            <ul class="info-list">
-                    <li>Casca</li>
-            </ul>
+            <h2 data-i18n="pages.plantas.partsUsed">Partes usadas</h2>
+            <ul class="info-list" data-planta-parts></ul>
         </section>
 
         <section class="info-panel">
-            <h2>Usos tradicionais</h2>
-            <ul class="info-list">
-                    <li>Referência histórica antimalárica</li>
-            </ul>
+            <h2 data-i18n="pages.plantas.traditionalUses">Usos tradicionais</h2>
+            <ul class="info-list" data-planta-uses></ul>
         </section>
 
         <section class="info-panel">
-            <h2>Cuidados</h2>
-            <p>Espécies e usos regulamentados; não automedicar. Conteúdo educacional.</p>
+            <h2 data-i18n="pages.plantas.cautions">Cuidados</h2>
+            <p data-planta-cautions>Espécies e usos regulamentados; não automedicar. Conteúdo educacional.</p>
         </section>
 
-
-
         <section class="info-panel">
-            <h2>Continuar no laboratório</h2>
+            <h2 data-i18n="pages.plantas.continueLab">Continuar no laboratório</h2>
             <ul class="info-list">
-                <li><a href="/cultivo/?plant=quina">Iniciar pesquisa no diário</a> — criar ou abrir o diário desta espécie</li>
-                <li><a href="/plantas/">Voltar ao catálogo</a></li>
-                <li><a href="/biblioteca/unifesp/">Curso UNIFESP</a></li>
-                <li><a href="/biblioteca/inspecoes/">Inspeções</a></li>
-                <li><a href="/calculadoras/">Ferramentas de cultivo</a></li>
+                <li><a href="/cultivo/?plant=quina" data-i18n="pages.plantas.startDiary">Iniciar pesquisa no diário</a><span data-i18n="pages.plantas.startDiaryHint"> — criar ou abrir o diário desta espécie</span></li>
+                <li><a href="/plantas/" data-i18n="pages.plantas.backCatalog">Voltar ao catálogo</a></li>
+                <li><a href="/biblioteca/unifesp/" data-i18n="pages.plantas.relatedCourse">Curso UNIFESP</a></li>
+                <li><a href="/biblioteca/inspecoes/" data-i18n="pages.plantas.relatedInspections">Inspeções</a></li>
+                <li><a href="/calculadoras/" data-i18n="pages.plantas.relatedTools">Ferramentas de cultivo</a></li>
             </ul>
         </section>
     </main>
@@ -87,6 +83,7 @@
     <div id="site-footer"></div>
   <script src="/js/app-version-check.js?v=295"></script>
     <script src="/js/i18n-data.js?v=295"></script>
+    <script src="/js/page-translations-data.js?v=295"></script>
     <script src="/js/i18n.js?v=295"></script>
     <script src="/js/ferramentas-nav-data.js?v=295"></script>
     <script src="/js/layout.js?v=295"></script>

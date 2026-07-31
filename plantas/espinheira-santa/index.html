@@ -17,6 +17,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
+
     <link rel="icon" href="/imagens/favicon-32.v295.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/imagens/favicon-48.v295.png" sizes="48x48" type="image/png">
     <link rel="icon" href="/imagens/favicon-16.v295.png" sizes="16x16" type="image/png">
@@ -33,17 +34,18 @@
     <div id="site-header"></div>
 
     <main id="main-content" class="article-page relatorio-container planta-ficha">
-        <nav class="planta-breadcrumb" aria-label="Navegação">
-            <a href="/plantas/">Plantas</a>
+        <script type="application/json" id="planta-i18n-data">{"pt-BR":{"nomePopular":"Espinheira-santa","summary":"Arbusto nativo da Mata Atlântica; folhas na fitoterapia popular gástrica.","partsUsed":["Folhas"],"traditionalUses":["Chás digestivos tradicionais","Fitoterapia brasileira"],"cautions":"Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação."},"en":{"nomePopular":"Espinheira-santa","summary":"A shrub native to the Atlantic Forest; its leaves are used in popular herbal practices for gastric concerns.","partsUsed":["Leaves"],"traditionalUses":["Traditional digestive teas","Brazilian herbal medicine"],"cautions":"Educational content. It does not replace guidance from a health professional. Avoid self-medication."},"es":{"nomePopular":"Espinheira-santa","summary":"Un arbusto nativo de la Mata Atlántica; sus hojas se emplean en la fitoterapia popular para molestias gástricas.","partsUsed":["Hojas"],"traditionalUses":["Infusiones digestivas tradicionales","Fitoterapia brasileña"],"cautions":"Contenido educativo. No sustituye la orientación de un profesional de la salud. Evite la automedicación."}}</script>
+        <nav class="planta-breadcrumb" data-i18n-aria="pages.plantas.breadcrumb" aria-label="Navegação">
+            <a href="/plantas/" data-i18n="pages.plantas.plantsLink">Plantas</a>
             <span aria-hidden="true">/</span>
-            <span>Espinheira-santa</span>
+            <span data-planta-nome>Espinheira-santa</span>
         </nav>
 
         <header class="article-header planta-header">
             <p class="article-eyebrow">Celastraceae</p>
-            <h1>Espinheira-santa</h1>
+            <h1 data-planta-nome>Espinheira-santa</h1>
             <p class="planta-sci"><em>Maytenus ilicifolia</em></p>
-            <p class="page-intro">Arbusto nativo da Mata Atlântica; folhas na fitoterapia popular gástrica.</p>
+            <p class="page-intro" data-planta-summary>Arbusto nativo da Mata Atlântica; folhas na fitoterapia popular gástrica.</p>
             <div class="planta-tags"><span class="planta-tag">nativa</span> <span class="planta-tag">digestao</span> <span class="planta-tag">mata-atlantica</span></div>
         </header>
 
@@ -52,35 +54,28 @@
         </aside>
 
         <section class="info-panel">
-            <h2>Partes usadas</h2>
-            <ul class="info-list">
-                    <li>Folhas</li>
-            </ul>
+            <h2 data-i18n="pages.plantas.partsUsed">Partes usadas</h2>
+            <ul class="info-list" data-planta-parts></ul>
         </section>
 
         <section class="info-panel">
-            <h2>Usos tradicionais</h2>
-            <ul class="info-list">
-                    <li>Chás digestivos tradicionais</li>
-                    <li>Fitoterapia brasileira</li>
-            </ul>
+            <h2 data-i18n="pages.plantas.traditionalUses">Usos tradicionais</h2>
+            <ul class="info-list" data-planta-uses></ul>
         </section>
 
         <section class="info-panel">
-            <h2>Cuidados</h2>
-            <p>Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.</p>
+            <h2 data-i18n="pages.plantas.cautions">Cuidados</h2>
+            <p data-planta-cautions>Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.</p>
         </section>
 
-
-
         <section class="info-panel">
-            <h2>Continuar no laboratório</h2>
+            <h2 data-i18n="pages.plantas.continueLab">Continuar no laboratório</h2>
             <ul class="info-list">
-                <li><a href="/cultivo/?plant=espinheira-santa">Iniciar pesquisa no diário</a> — criar ou abrir o diário desta espécie</li>
-                <li><a href="/plantas/">Voltar ao catálogo</a></li>
-                <li><a href="/biblioteca/unifesp/">Curso UNIFESP</a></li>
-                <li><a href="/biblioteca/inspecoes/">Inspeções</a></li>
-                <li><a href="/calculadoras/">Ferramentas de cultivo</a></li>
+                <li><a href="/cultivo/?plant=espinheira-santa" data-i18n="pages.plantas.startDiary">Iniciar pesquisa no diário</a><span data-i18n="pages.plantas.startDiaryHint"> — criar ou abrir o diário desta espécie</span></li>
+                <li><a href="/plantas/" data-i18n="pages.plantas.backCatalog">Voltar ao catálogo</a></li>
+                <li><a href="/biblioteca/unifesp/" data-i18n="pages.plantas.relatedCourse">Curso UNIFESP</a></li>
+                <li><a href="/biblioteca/inspecoes/" data-i18n="pages.plantas.relatedInspections">Inspeções</a></li>
+                <li><a href="/calculadoras/" data-i18n="pages.plantas.relatedTools">Ferramentas de cultivo</a></li>
             </ul>
         </section>
     </main>
@@ -88,6 +83,7 @@
     <div id="site-footer"></div>
   <script src="/js/app-version-check.js?v=295"></script>
     <script src="/js/i18n-data.js?v=295"></script>
+    <script src="/js/page-translations-data.js?v=295"></script>
     <script src="/js/i18n.js?v=295"></script>
     <script src="/js/ferramentas-nav-data.js?v=295"></script>
     <script src="/js/layout.js?v=295"></script>

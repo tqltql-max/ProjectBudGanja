@@ -53,7 +53,7 @@
 
           <div>
 
-            <p class="perfil-hub-eyebrow">Laboratório · Diário de Pesquisas</p>
+            <p class="perfil-hub-eyebrow" data-i18n="pages.cultivo.labEyebrow">Laboratório · Diário de Pesquisas</p>
 
             <h1 id="perfil-name" data-i18n="pages.cultivo.title">Diário de Pesquisas</h1>
 
@@ -64,7 +64,7 @@
         </div>
 
         <div class="perfil-hub-actions conta-actions">
-          <a href="/perfil.html" class="botao botao-outline botao-sm" id="cultivo-account-link">Minha conta</a>
+          <a href="/perfil.html" class="botao botao-outline botao-sm" id="cultivo-account-link" data-i18n="pages.cultivo.accountLink">Minha conta</a>
         </div>
 
       </header>
@@ -81,36 +81,36 @@
 
           <section class="cultivo-hub-topbar info-panel highlight-card">
             <div class="cultivo-hub-topbar-copy">
-              <p class="cultivo-hub-eyebrow">Laboratório · diários activos</p>
-              <h2 class="cultivo-hub-title">Os seus diários</h2>
-              <p id="cultivo-hub-summary" class="cultivo-hub-summary page-intro">Toque num bloco para abrir o diário completo — registos, roteiro e plano.</p>
+              <p class="cultivo-hub-eyebrow" data-i18n="pages.cultivo.hubEyebrow">Laboratório · diários activos</p>
+              <h2 class="cultivo-hub-title" data-i18n="pages.cultivo.hubTitle">Os seus diários</h2>
+              <p id="cultivo-hub-summary" class="cultivo-hub-summary page-intro" data-i18n="pages.cultivo.hubSummary">Toque num bloco para abrir o diário completo — registos, roteiro e plano.</p>
             </div>
-            <button type="button" class="botao cultivo-hub-new-btn" id="cultivo-hub-new-btn">＋ Novo diário</button>
+            <button type="button" class="botao cultivo-hub-new-btn" id="cultivo-hub-new-btn" data-i18n="pages.cultivo.newDiary">＋ Novo diário</button>
           </section>
 
-          <div id="cultivo-hub-stats" class="cultivo-hub-stats" hidden role="group" aria-label="Resumo do laboratório"></div>
+          <div id="cultivo-hub-stats" class="cultivo-hub-stats" hidden role="group" data-i18n-aria="pages.cultivo.statsAria" aria-label="Resumo do laboratório"></div>
 
-          <div id="cultivo-hub-list" class="container-cards cultivo-research-grid" role="list" aria-label="Diários em andamento" hidden></div>
+          <div id="cultivo-hub-list" class="container-cards cultivo-research-grid" role="list" data-i18n-aria="pages.cultivo.diariesAria" aria-label="Diários em andamento" hidden></div>
 
           <section id="cultivo-hub-empty" class="cultivo-hub-empty card info-panel highlight-card" hidden aria-labelledby="cultivo-hub-empty-title">
             <div class="card-icon card-icon--cultivo cultivo-hub-empty-icon" aria-hidden="true">📓</div>
-            <h2 id="cultivo-hub-empty-title" class="cultivo-hub-empty-title">Ainda não tem diários</h2>
-            <p class="cultivo-hub-empty-text page-intro">Escolha uma planta do catálogo abaixo ou crie um diário livre.</p>
-            <button type="button" class="botao cultivo-hub-empty-btn" id="cultivo-hub-empty-btn">＋ Criar primeiro diário</button>
+            <h2 id="cultivo-hub-empty-title" class="cultivo-hub-empty-title" data-i18n="pages.cultivo.emptyTitle">Ainda não tem diários</h2>
+            <p class="cultivo-hub-empty-text page-intro" data-i18n="pages.cultivo.emptyText">Escolha uma planta do catálogo abaixo ou crie um diário livre.</p>
+            <button type="button" class="botao cultivo-hub-empty-btn" id="cultivo-hub-empty-btn" data-i18n="pages.cultivo.emptyBtn">＋ Criar primeiro diário</button>
           </section>
 
           <section id="cultivo-plantas-catalog" class="cultivo-plantas-catalog info-panel" aria-labelledby="cultivo-plantas-title">
             <header class="cultivo-plantas-head">
               <div>
-                <p class="cultivo-hub-eyebrow">Catálogo fitoterápico</p>
-                <h2 id="cultivo-plantas-title" class="cultivo-section-title">Pesquisar plantas</h2>
-                <p class="cultivo-section-intro page-intro">Cada espécie vira um diário de pesquisa. Toque para iniciar ou abrir o que já começou.</p>
+                <p class="cultivo-hub-eyebrow" data-i18n="pages.cultivo.catalogEyebrow">Catálogo fitoterápico</p>
+                <h2 id="cultivo-plantas-title" class="cultivo-section-title" data-i18n="pages.cultivo.catalogTitle">Pesquisar plantas</h2>
+                <p class="cultivo-section-intro page-intro" data-i18n="pages.cultivo.catalogIntro">Cada espécie vira um diário de pesquisa. Toque para iniciar ou abrir o que já começou.</p>
               </div>
-              <button type="button" class="botao botao-outline botao-sm" id="cultivo-plantas-start-all" hidden>Iniciar todas as pendentes</button>
+              <button type="button" class="botao botao-outline botao-sm" id="cultivo-plantas-start-all" hidden data-i18n="pages.cultivo.startAllPending">Iniciar todas as pendentes</button>
             </header>
             <p id="cultivo-plantas-status" class="conta-status" role="status" aria-live="polite"></p>
-            <div id="cultivo-plantas-grid" class="cultivo-plantas-grid" role="list" aria-label="Plantas do catálogo">
-              <p class="empty-message">A carregar catálogo…</p>
+            <div id="cultivo-plantas-grid" class="cultivo-plantas-grid" role="list" data-i18n-aria="pages.cultivo.catalogAria" aria-label="Plantas do catálogo">
+              <p class="empty-message" data-i18n="pages.cultivo.catalogLoading">A carregar catálogo…</p>
             </div>
           </section>
 
@@ -122,10 +122,10 @@
           <section class="cultivo-tasks-card info-panel highlight-card" aria-labelledby="cultivo-tasks-title">
             <div class="cultivo-tasks-head">
               <div>
-                <p class="cultivo-hub-eyebrow">Tarefas globais</p>
-                <h2 id="cultivo-tasks-title" class="cultivo-section-title">Tarefas agendadas de todos os diários</h2>
+                <p class="cultivo-hub-eyebrow" data-i18n="pages.cultivo.tasksEyebrow">Tarefas globais</p>
+                <h2 id="cultivo-tasks-title" class="cultivo-section-title" data-i18n="pages.cultivo.tasksTitle">Tarefas agendadas de todos os diários</h2>
               </div>
-              <button type="button" class="botao botao-outline botao-sm" id="cultivo-tasks-back-btn">Ocultar tarefas</button>
+              <button type="button" class="botao botao-outline botao-sm" id="cultivo-tasks-back-btn" data-i18n="pages.cultivo.hideTasks">Ocultar tarefas</button>
             </div>
             <p class="cultivo-section-intro page-intro">Gerencie lembretes de todos os diários num único lugar.</p>
             <ul id="cultivo-tasks-list" class="cultivo-tasks-list" aria-live="polite"></ul>
@@ -731,6 +731,7 @@
     <div id="site-footer"></div>
   <script src="/js/app-version-check.js?v=295"></script>
     <script src="/js/i18n-data.js?v=295"></script>
+    <script src="/js/page-translations-data.js?v=295"></script>
     <script src="/js/i18n.js?v=295"></script>
     <script src="/js/layout.js?v=295"></script>
     <script src="/js/site-features.js?v=295"></script>

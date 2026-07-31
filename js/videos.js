@@ -32,14 +32,25 @@
       return;
     }
 
+    var loc = videoLocale();
     container.innerHTML = videos.map(function (v) {
+      var title =
+        (loc === 'en' && v.titleEn) ||
+        (loc === 'es' && v.titleEs) ||
+        v.title ||
+        '';
+      var summary =
+        (loc === 'en' && v.summaryEn) ||
+        (loc === 'es' && v.summaryEs) ||
+        v.summary ||
+        '';
       return (
         '<article class="video-card card">' +
         '<a href="' + v.url + '" target="_blank" rel="noopener noreferrer" class="video-card-link">' +
         (v.thumb ? '<img src="' + v.thumb + '" alt="" class="video-card-thumb" loading="lazy">' : '') +
         '<div class="video-card-body">' +
-        '<h2 class="video-card-title">' + escapeHtml(v.title) + '</h2>' +
-        (v.summary ? '<p class="video-card-summary">' + escapeHtml(v.summary) + '</p>' : '') +
+        '<h2 class="video-card-title">' + escapeHtml(title) + '</h2>' +
+        (summary ? '<p class="video-card-summary">' + escapeHtml(summary) + '</p>' : '') +
         '<span class="video-card-date">' + escapeHtml(formatDate(v.published)) + '</span>' +
         '</div></a></article>'
       );

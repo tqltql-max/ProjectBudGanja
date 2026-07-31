@@ -89,6 +89,23 @@ function refreshInstallVisibility() {
   }
 }
 
+function fillInstallSheet(sheet, titleId, title, bodyHtml) {
+  const titleEl = sheet.querySelector('#' + titleId);
+  const panel = sheet.querySelector('.pwa-install-sheet-panel');
+  const closeBtn = sheet.querySelector('.pwa-install-sheet-close');
+  if (titleEl) titleEl.textContent = title;
+  if (panel) {
+    const bodyNodes = panel.querySelectorAll('p, .pwa-install-sheet-body');
+    bodyNodes.forEach((n) => n.remove());
+    const wrap = document.createElement('div');
+    wrap.className = 'pwa-install-sheet-body';
+    wrap.innerHTML = bodyHtml;
+    if (closeBtn) panel.insertBefore(wrap, closeBtn);
+    else panel.appendChild(wrap);
+  }
+  if (closeBtn) closeBtn.textContent = i18n('common.installGotIt', 'Entendi');
+}
+
 function showIosInstallSheet() {
   let sheet = document.getElementById('pwa-ios-install-sheet');
   if (!sheet) {
@@ -101,16 +118,21 @@ function showIosInstallSheet() {
     sheet.innerHTML =
       '<div class="pwa-install-sheet-backdrop" data-close="1"></div>' +
       '<div class="pwa-install-sheet-panel">' +
-      '<h2 id="pwa-ios-install-title">Instalar BudGanja</h2>' +
-      '<p>No iPhone ou iPad: toque em <strong>Compartilhar</strong> ' +
-      '<span class="pwa-ios-share-icon" aria-hidden="true">⎋</span> ' +
-      'e depois em <strong>Adicionar à Tela de Início</strong>.</p>' +
-      '<button type="button" class="botao pwa-install-sheet-close">Entendi</button>' +
+      '<h2 id="pwa-ios-install-title"></h2>' +
+      '<button type="button" class="botao pwa-install-sheet-close"></button>' +
       '</div>';
     sheet.querySelector('[data-close]').addEventListener('click', () => { sheet.hidden = true; });
     sheet.querySelector('.pwa-install-sheet-close').addEventListener('click', () => { sheet.hidden = true; });
     document.body.appendChild(sheet);
   }
+  fillInstallSheet(
+    sheet,
+    'pwa-ios-install-title',
+    i18n('common.installTitle', 'Instalar BudGanja'),
+    '<p>' + i18n('common.installIosBody',
+      'No iPhone ou iPad: toque em <strong>Compartilhar</strong> e depois em <strong>Adicionar à Tela de Início</strong>.') +
+    ' <span class="pwa-ios-share-icon" aria-hidden="true">⎋</span></p>'
+  );
   sheet.hidden = false;
 }
 
@@ -126,15 +148,15 @@ function ensureInstallSheet(id, titleId, title, bodyHtml) {
     sheet.innerHTML =
       '<div class="pwa-install-sheet-backdrop" data-close="1"></div>' +
       '<div class="pwa-install-sheet-panel">' +
-      '<h2 id="' + titleId + '">' + title + '</h2>' +
-      bodyHtml +
-      '<button type="button" class="botao pwa-install-sheet-close">Entendi</button>' +
+      '<h2 id="' + titleId + '"></h2>' +
+      '<button type="button" class="botao pwa-install-sheet-close"></button>' +
       '</div>';
     const closeSheet = () => { sheet.hidden = true; };
     sheet.querySelector('[data-close]').addEventListener('click', closeSheet);
     sheet.querySelector('.pwa-install-sheet-close').addEventListener('click', closeSheet);
     document.body.appendChild(sheet);
   }
+  fillInstallSheet(sheet, titleId, title, bodyHtml);
   sheet.hidden = false;
   return sheet;
 }
@@ -143,11 +165,9 @@ function showDesktopInstallSheet() {
   ensureInstallSheet(
     'pwa-desktop-install-sheet',
     'pwa-desktop-install-title',
-    'Instalar BudGanja no computador',
-    '<p>No Chrome ou Edge: menu <strong>⋮ → Instalar Inspetor BudGanja…</strong> ' +
-    '(ou o ícone ⊕ / computador na barra de endereço).</p>' +
-    '<p>Na janela de instalação, marque <strong>Criar atalho na área de trabalho</strong> ' +
-    'para aparecer o ícone no ambiente de trabalho.</p>'
+    i18n('common.installDesktopTitle', 'Instalar BudGanja no computador'),
+    i18n('common.installDesktopBody',
+      '<p>No Chrome ou Edge: menu <strong>⋮ → Instalar Inspetor BudGanja…</strong>.</p>')
   );
 }
 
@@ -155,12 +175,9 @@ function showAndroidInstallSheet() {
   ensureInstallSheet(
     'pwa-android-install-sheet',
     'pwa-android-install-title',
-    'Instalar BudGanja no telemóvel',
-    '<p>No Chrome: toque em <strong>⋮</strong> (canto superior) e escolha ' +
-    '<strong>Instalar app</strong> ou <strong>Adicionar à tela inicial</strong>.</p>' +
-    '<p>Se a opção não aparecer: remova o ícone antigo (se existir), abra o site em Chrome, ' +
-    'aguarde alguns segundos e tente de novo por este botão.</p>' +
-    '<p class="pwa-install-sheet-tip">Dica: use a ligação segura do site (https) e mantenha a página aberta enquanto instala.</p>'
+    i18n('common.installAndroidTitle', 'Instalar BudGanja no telemóvel'),
+    i18n('common.installAndroidBody',
+      '<p>No Chrome: toque em <strong>⋮</strong> e escolha <strong>Instalar app</strong>.</p>')
   );
 }
 
@@ -168,10 +185,9 @@ function showAlreadyInstalledSheet() {
   ensureInstallSheet(
     'pwa-installed-sheet',
     'pwa-installed-title',
-    'App já instalado',
-    '<p>O BudGanja já está a correr como aplicação neste dispositivo. ' +
-    'Procure o ícone na tela inicial ou na gaveta de apps.</p>' +
-    '<p>Se o ícone antigo estiver partido, remova-o e instale de novo pelo menu do site.</p>'
+    i18n('common.installAlreadyTitle', 'App já instalado'),
+    i18n('common.installAlreadyBody',
+      '<p>O BudGanja já está a correr como aplicação neste dispositivo.</p>')
   );
 }
 
@@ -228,7 +244,7 @@ async function promptInstallApp(options) {
     mainBtn.disabled = true;
     mainBtn.setAttribute('aria-busy', 'true');
   }
-  if (labelEl) labelEl.textContent = 'A preparar instalação…';
+  if (labelEl) labelEl.textContent = i18n('common.installPreparing', 'A preparar instalação…');
 
   try {
     if (isStandaloneApp()) {
@@ -268,9 +284,23 @@ async function promptInstallApp(options) {
       mainBtn.disabled = false;
       mainBtn.removeAttribute('aria-busy');
     }
-    if (labelEl) labelEl.textContent = 'Instalar app';
+    applyInstallPromptI18n();
     refreshInstallVisibility();
     refreshPermanentInstallButtons();
+  }
+}
+
+function applyInstallPromptI18n() {
+  if (!installFloatingBtn) return;
+  const mainBtn = installFloatingBtn.querySelector('.install-prompt-main');
+  const labelEl = installFloatingBtn.querySelector('.install-prompt-label');
+  const dismissBtn = installFloatingBtn.querySelector('.install-prompt-dismiss');
+  if (mainBtn) mainBtn.setAttribute('aria-label', i18n('common.installAppAria', 'Instalar aplicativo BudGanja'));
+  if (labelEl && !mainBtn?.disabled) labelEl.textContent = i18n('common.installApp', 'Instalar app');
+  if (dismissBtn) {
+    const close = i18n('common.installClose', 'Fechar');
+    dismissBtn.setAttribute('aria-label', close);
+    dismissBtn.setAttribute('title', close);
   }
 }
 
@@ -315,11 +345,11 @@ function initInstallUi() {
     const wrap = document.createElement('div');
     wrap.className = 'install-prompt is-hidden';
     wrap.innerHTML =
-      '<button type="button" class="install-prompt-main" aria-label="Instalar aplicativo BudGanja">' +
+      '<button type="button" class="install-prompt-main">' +
       '<span aria-hidden="true">\uD83D\uDCF2</span> ' +
-      '<span class="install-prompt-label">Instalar app</span>' +
+      '<span class="install-prompt-label"></span>' +
       '</button>' +
-      '<button type="button" class="install-prompt-dismiss" aria-label="Fechar" title="Fechar">×</button>';
+      '<button type="button" class="install-prompt-dismiss">×</button>';
     wrap.querySelector('.install-prompt-main').addEventListener('click', () => { void promptInstallApp(); });
     wrap.querySelector('.install-prompt-dismiss').addEventListener('click', (e) => {
       e.preventDefault();
@@ -329,7 +359,7 @@ function initInstallUi() {
     document.body.appendChild(wrap);
     installFloatingBtn = wrap;
   }
-
+  applyInstallPromptI18n();
   refreshInstallVisibility();
 }
 
@@ -2281,6 +2311,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       window.BudGanjaI18n.apply();
       window.BudGanjaI18n.initLanguageSwitcher();
     }
+    applyInstallPromptI18n();
     enhanceHoverTips(document);
     if (typeof window.budganjaReinitChrome === 'function') window.budganjaReinitChrome();
   });

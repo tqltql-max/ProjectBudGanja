@@ -9,6 +9,7 @@ const { publishStaticAssets } = require('../lib/publish-static.js');
 const { createAppStore } = require('../lib/create-store.js');
 const { handleApiRequest } = require('../lib/api-handler.js');
 const { buildPostHtml, normalizePosts } = require('../lib/posts-service.js');
+const { mergeGuiaInspecoesPosts } = require('../lib/merge-guia-inspecoes.js');
 const { buildEmptyStateHtml } = require('../lib/empty-state.js');
 const { applySecurityHeaders } = require('../lib/security-headers.js');
 const { hasAdminAccess } = require('../lib/admin-access.js');
@@ -23,7 +24,6 @@ const { auditStartupSecurity } = require('../lib/startup-security.js');
 const { ROOT } = require('../lib/paths.js');
 const { getAdminSession } = require('../lib/admin-access.js');
 const eventBus = require('../lib/admin-event-bus.js');
-const { mergeGuiaInspecoesPosts } = require('../lib/merge-guia-inspecoes.js');
 const contentStore = createContentStore(ROOT);
 let appStore = null;
 const PORT = Number(process.env.PORT) || 8080;
@@ -116,7 +116,11 @@ function getCacheControl(ext, filePath) {
 }
 
 function readPosts() {
-  try { return JSON.parse(fs.readFileSync(POSTS_META, 'utf8') || '[]'); } catch (e) { return []; }
+  try {
+    return mergeGuiaInspecoesPosts(JSON.parse(fs.readFileSync(POSTS_META, 'utf8') || '[]'));
+  } catch (e) {
+    return mergeGuiaInspecoesPosts([]);
+  }
 }
 
 function writePosts(posts) {
@@ -173,12 +177,12 @@ function getPublicPosts(category) {
 
 function normalizePostsOnStartup() {
   try {
+    // Sempre regenera HTML com overlay i18n (contentEn/Es, titleEn/Es).
     const posts = readPosts() || [];
-    const normalized = normalizePosts(posts);
-    if (JSON.stringify(posts) !== JSON.stringify(normalized)) writePosts(normalized);
-    normalized.forEach((p) => {
-      const fp = path.join(ROOT, p.filename);
-      if (fs.existsSync(fp)) writePostFile(fp, p);
+    posts.forEach((p) => {
+      if (p.published === false) return;
+      if (!p.filename) return;
+      writePostFile(path.join(ROOT, p.filename), p);
     });
   } catch (e) { /* ignore */ }
 }

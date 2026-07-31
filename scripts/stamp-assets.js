@@ -67,9 +67,16 @@ function stampHtml(content) {
   } else if (!next.includes('i18n-data.js') && next.includes('layout.js')) {
     next = next.replace(
       /(\s*<script\s+src="[^"]*\/js\/layout\.js[^"]*"><\/script>)/g,
-      '\n    <script src="/js/i18n-data.js?v=' + ASSET_VERSION + '"></script>\n    <script src="/js/i18n.js?v=' + ASSET_VERSION + '"></script>\n    <script src="/js/ferramentas-nav-data.js?v=' + ASSET_VERSION + '"></script>$1'
+      '\n    <script src="/js/i18n-data.js?v=' + ASSET_VERSION + '"></script>\n    <script src="/js/page-translations-data.js?v=' + ASSET_VERSION + '"></script>\n    <script src="/js/i18n.js?v=' + ASSET_VERSION + '"></script>\n    <script src="/js/ferramentas-nav-data.js?v=' + ASSET_VERSION + '"></script>$1'
     );
-  } else if (!next.includes('ferramentas-nav-data.js') && next.includes('layout.js')) {
+  }
+  if (next.includes('i18n-data.js') && !next.includes('page-translations-data.js')) {
+    next = next.replace(
+      /(<script\s+src="[^"]*\/js\/i18n-data\.js[^"]*"><\/script>)/g,
+      '$1\n    <script src="/js/page-translations-data.js?v=' + ASSET_VERSION + '"></script>'
+    );
+  }
+  if (!next.includes('ferramentas-nav-data.js') && next.includes('layout.js') && !next.includes('i18n-data.js')) {
     next = next.replace(
       /(\s*<script\s+src="[^"]*\/js\/layout\.js[^"]*"><\/script>)/g,
       '\n    <script src="/js/ferramentas-nav-data.js?v=' + ASSET_VERSION + '"></script>$1'

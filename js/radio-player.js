@@ -21,6 +21,10 @@
   var STORAGE_SOURCE = 'budganja.radio.source';
   var WELCOME_TITLE = /rusted\s*root.*send\s*me\s*on\s*my\s*way|send\s*me\s*on\s*my\s*way/i;
 
+  function tr(key, fallback) {
+    return window.BudGanjaI18n ? window.BudGanjaI18n.t(key, fallback) : (fallback || '');
+  }
+
   function pathLower() {
     return (window.location.pathname || '').toLowerCase();
   }
@@ -175,42 +179,41 @@
     var host = document.getElementById('header-radio-host');
     root.className = 'radio-mini' + (host ? ' radio-mini--header' : '');
     root.setAttribute('role', 'region');
-    root.setAttribute('aria-label', meta.label || 'Rádio BudGanja');
 
     root.innerHTML =
-      '<button type="button" class="radio-mini-fab" data-radio-fab aria-label="Abrir rádio">' +
+      '<button type="button" class="radio-mini-fab" data-radio-fab>' +
       ICONS.radio +
       '<span class="radio-mini-fab-dot" aria-hidden="true"></span>' +
       '</button>' +
       '<div class="radio-mini-panel">' +
       '<div class="radio-mini-meta">' +
-      '<a class="radio-mini-label" href="/radio/" data-radio-home>Rádio</a>' +
+      '<a class="radio-mini-label" href="/radio/" data-radio-home></a>' +
       '<span class="radio-mini-title" data-radio-title>—</span>' +
       '<span class="radio-mini-artist" data-radio-artist></span>' +
       '</div>' +
       '<div class="radio-mini-controls">' +
-      '<button type="button" class="radio-mini-btn" data-radio-prev aria-label="Faixa anterior">' +
+      '<button type="button" class="radio-mini-btn" data-radio-prev>' +
       ICONS.prev +
       '</button>' +
-      '<button type="button" class="radio-mini-btn radio-mini-btn-play" data-radio-play aria-label="Reproduzir">' +
+      '<button type="button" class="radio-mini-btn radio-mini-btn-play" data-radio-play>' +
       ICONS.play +
       '</button>' +
-      '<button type="button" class="radio-mini-btn" data-radio-next aria-label="Faixa seguinte">' +
+      '<button type="button" class="radio-mini-btn" data-radio-next>' +
       ICONS.next +
       '</button>' +
-      '<button type="button" class="radio-mini-btn" data-radio-mute aria-label="Silenciar">' +
+      '<button type="button" class="radio-mini-btn" data-radio-mute>' +
       ICONS.unmute +
       '</button>' +
-      '<button type="button" class="radio-mini-btn" data-radio-share aria-label="Partilhar música a tocar" title="Partilhar música">' +
+      '<button type="button" class="radio-mini-btn" data-radio-share>' +
       ICONS.share +
       '</button>' +
-      '<a class="radio-mini-btn radio-mini-btn-open" href="/radio/" data-radio-open aria-label="Abrir página da rádio" title="Abrir rádio">' +
+      '<a class="radio-mini-btn radio-mini-btn-open" href="/radio/" data-radio-open>' +
       ICONS.open +
       '</a>' +
-      '<button type="button" class="radio-mini-btn" data-radio-collapse aria-label="Minimizar">' +
+      '<button type="button" class="radio-mini-btn" data-radio-collapse>' +
       ICONS.expand +
       '</button>' +
-      '<button type="button" class="radio-mini-btn radio-mini-btn-close" data-radio-close aria-label="Fechar rádio nesta sessão">' +
+      '<button type="button" class="radio-mini-btn radio-mini-btn-close" data-radio-close>' +
       ICONS.close +
       '</button>' +
       '</div>' +
@@ -223,7 +226,6 @@
     var artistEl = root.querySelector('[data-radio-artist]');
     var homeLink = root.querySelector('[data-radio-home]');
     var btnFab = root.querySelector('[data-radio-fab]');
-    if (homeLink && meta.label) homeLink.textContent = meta.label;
     if (homeLink && meta.homeHref) homeLink.setAttribute('href', meta.homeHref);
     var openLink = root.querySelector('[data-radio-open]');
     if (openLink && meta.homeHref) openLink.setAttribute('href', meta.homeHref);
@@ -250,24 +252,65 @@
     var inHeader = !!host;
     var collapsed = (!inHeader && isFocusPage()) || isCollapsedPref();
     var unlockBound = false;
+
+    function radioLabel() {
+      return tr('radio.label', meta.label || 'Rádio');
+    }
+
+    function applyStaticLabels() {
+      root.setAttribute('aria-label', tr('radio.region', meta.label || 'Rádio BudGanja'));
+      if (homeLink) homeLink.textContent = radioLabel();
+      if (btnPrev) btnPrev.setAttribute('aria-label', tr('radio.prev', 'Faixa anterior'));
+      if (btnNext) btnNext.setAttribute('aria-label', tr('radio.next', 'Faixa seguinte'));
+      if (btnShare) {
+        btnShare.setAttribute('aria-label', tr('radio.share', 'Partilhar música a tocar'));
+        btnShare.setAttribute('title', tr('radio.shareTitle', 'Partilhar música'));
+      }
+      if (openLink) {
+        openLink.setAttribute('aria-label', tr('radio.openPage', 'Abrir página da rádio'));
+        openLink.setAttribute('title', tr('radio.open', 'Abrir rádio'));
+      }
+      if (btnCollapse) btnCollapse.setAttribute('aria-label', tr('radio.minimize', 'Minimizar'));
+      if (btnClose) btnClose.setAttribute('aria-label', tr('radio.close', 'Fechar rádio nesta sessão'));
+      applyCollapsed();
+      updateMuteUi();
+      updatePlayUi(!audio.paused);
+    }
+
     function applyCollapsed() {
       root.classList.toggle('is-collapsed', collapsed);
       btnFab.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
-      btnFab.setAttribute('aria-label', collapsed ? (wantPlay || !audio.paused ? 'Expandir rádio (a tocar)' : 'Abrir rádio') : 'Rádio aberta');
+      btnFab.setAttribute(
+        'aria-label',
+        collapsed
+          ? (wantPlay || !audio.paused
+            ? tr('radio.expandPlaying', 'Expandir rádio (a tocar)')
+            : tr('radio.open', 'Abrir rádio'))
+          : tr('radio.opened', 'Rádio aberta')
+      );
     }
 
     function updateMuteUi() {
       btnMute.innerHTML = audio.muted ? ICONS.mute : ICONS.unmute;
-      btnMute.setAttribute('aria-label', audio.muted ? 'Ativar som' : 'Silenciar');
+      btnMute.setAttribute(
+        'aria-label',
+        audio.muted ? tr('radio.unmute', 'Ativar som') : tr('radio.mute', 'Silenciar')
+      );
       btnMute.classList.toggle('is-muted', audio.muted);
     }
 
     function updatePlayUi(playing) {
       btnPlay.innerHTML = playing ? ICONS.pause : ICONS.play;
-      btnPlay.setAttribute('aria-label', playing ? 'Pausar' : 'Reproduzir');
+      btnPlay.setAttribute(
+        'aria-label',
+        playing ? tr('radio.pause', 'Pausar') : tr('radio.play', 'Reproduzir')
+      );
       root.classList.toggle('is-playing', playing);
       applyCollapsed();
     }
+
+    applyStaticLabels();
+    window.addEventListener('budganja:locale-change', applyStaticLabels);
 
     function persistProgress() {
       if (unloading) return;

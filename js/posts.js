@@ -1,7 +1,25 @@
+function postsLocale() {
+  return (window.BudGanjaI18n && window.BudGanjaI18n.getLocale()) || 'pt-BR';
+}
+
+function localizedPostTitle(p) {
+  var loc = postsLocale();
+  if (loc === 'en' && p.titleEn) return p.titleEn;
+  if (loc === 'es' && p.titleEs) return p.titleEs;
+  return p.title || '';
+}
+
+function localizedPostExcerpt(p) {
+  var loc = postsLocale();
+  if (loc === 'en' && p.excerptEn) return p.excerptEn;
+  if (loc === 'es' && p.excerptEs) return p.excerptEs;
+  return p.excerpt || '';
+}
+
 function formatDatePtBR(iso) {
   if (!iso) return '';
   try {
-    return new Date(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+    return new Date(iso).toLocaleDateString(postsLocale(), { day: '2-digit', month: 'long', year: 'numeric' });
   } catch (e) {
     return iso;
   }
@@ -23,6 +41,7 @@ var SERIES_LABELS = {
   'formacao-academica': 'Extensão académica',
   'loja-cultivo': 'Lojas de cultivo',
   'insumos-cultivo': 'Insumos de cultivo',
+  'artigos-cientificos': 'Artigos científicos',
   '': 'Todas as séries'
 };
 
@@ -50,6 +69,10 @@ function seriesBadgeHtml(post, options) {
     var insumo = post.seriesLabel || 'Insumo';
     return '<span class="post-card-series" data-series="' + post.series + '">' + insumo + '</span>';
   }
+  if (options.hub && (post.series === 'artigos-cientificos' || post.series.indexOf('artigo') === 0)) {
+    var artigo = post.seriesLabel || 'Artigo';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + artigo + '</span>';
+  }
   var label = post.seriesLabel || SERIES_LABELS[post.series] || post.series;
   var order = post.seriesOrder != null ? ' · Cap. ' + post.seriesOrder : '';
   return '<span class="post-card-series" data-series="' + post.series + '">' + label + order + '</span>';
@@ -57,9 +80,12 @@ function seriesBadgeHtml(post, options) {
 
 /** Título limpo para cards do hub (sem prefixo “Inspeção:”). */
 function hubCardTitle(post) {
-  var t = String((post && post.title) || '').trim();
+  var t = String(localizedPostTitle(post) || '').trim();
   t = t.replace(/^Inspe[cç][aã]o:\s*/i, '');
+  t = t.replace(/^Inspection:\s*/i, '');
+  t = t.replace(/^Inspecci[oó]n:\s*/i, '');
   t = t.replace(/^Canal\s+/i, '');
+  t = t.replace(/^Channel\s+/i, '');
   return t;
 }
 
@@ -71,6 +97,7 @@ function resolveInspecaoTipo(post) {
   if (series === 'formacao-academica' || /curso|unifesp|formacao/i.test(series + slug)) return 'curso';
   if (series === 'loja-cultivo' || series.indexOf('loja-') === 0 || /inspecao-loja-/i.test(slug)) return 'loja';
   if (series === 'insumos-cultivo' || series.indexOf('insumo') === 0 || /inspecao-insumo-/i.test(slug)) return 'insumo';
+  if (series === 'artigos-cientificos' || series.indexOf('artigo') === 0 || /inspecao-artigo-/i.test(slug)) return 'artigo';
   if (/^inspecao-canal-/i.test(slug)) return 'canal';
   return 'canal';
 }
@@ -148,8 +175,8 @@ function renderPostCards(container, posts, options) {
     if (document.body.dataset.page === 'pesquisas') {
       card.dataset.pesquisasSource = isPesquisaComunidadePost(p) ? 'comunidade' : 'lab';
       card.dataset.pesquisasQ = [
-        p.title || '',
-        p.excerpt || '',
+        localizedPostTitle(p),
+        localizedPostExcerpt(p),
         p.seriesLabel || '',
         p.series || '',
         p.slug || ''
@@ -160,7 +187,8 @@ function renderPostCards(container, posts, options) {
     link.href = normalizePostUrl(p.url);
     link.style.textDecoration = 'none';
     link.style.color = 'inherit';
-    if (p.excerpt) link.setAttribute('data-tip', p.excerpt);
+    var tip = localizedPostExcerpt(p);
+    if (tip) link.setAttribute('data-tip', tip);
 
     appendCoverTo(link, p.coverImage);
 
@@ -172,10 +200,10 @@ function renderPostCards(container, posts, options) {
     }
 
     var title = document.createElement('h3');
-    title.textContent = options.hub ? hubCardTitle(p) : (p.title || '');
+    title.textContent = options.hub ? hubCardTitle(p) : localizedPostTitle(p);
 
     var excerpt = document.createElement('p');
-    excerpt.textContent = p.excerpt || '';
+    excerpt.textContent = localizedPostExcerpt(p);
 
     var date = document.createElement('span');
     date.className = 'post-card-date';
@@ -201,7 +229,8 @@ var HUB_CHIP_ANCHOR = {
   equipamento: 'equipamentos',
   curso: 'cursos',
   loja: 'lojas',
-  insumo: 'insumos'
+  insumo: 'insumos',
+  artigo: 'artigos'
 };
 
 function setHubChipVisibility(tipo, visible) {
@@ -224,7 +253,8 @@ function sortCanaisPosts(posts) {
 function renderInspecoesHub(allPosts) {
   var tipos = [
     { id: 'canal', section: '#inspecoes-canais', sort: 'label' },
-    { id: 'curso', section: '#inspecoes-cursos', sort: 'seriesOrder' }
+    { id: 'curso', section: '#inspecoes-cursos', sort: 'seriesOrder' },
+    { id: 'artigo', section: '#inspecoes-artigos', sort: 'seriesOrder' }
   ];
 
   tipos.forEach(function (t) {
@@ -615,12 +645,21 @@ function loadPostsFromStaticFile(category) {
 document.addEventListener('DOMContentLoaded', function () {
   var config = getPublicationConfig();
   if (!config) return;
+  var cachedPosts = null;
+
+  function bindLocaleRerender(renderFn) {
+    window.addEventListener('budganja:locale-change', function () {
+      if (cachedPosts) renderFn(cachedPosts);
+    });
+  }
 
   if (config.hub) {
     loadPostsFromApi(config.category)
       .catch(function () { return loadPostsFromStaticFile(config.category); })
       .then(function (posts) {
-        renderInspecoesHub(posts || []);
+        cachedPosts = posts || [];
+        renderInspecoesHub(cachedPosts);
+        bindLocaleRerender(renderInspecoesHub);
       })
       .catch(function () {
         document.querySelectorAll('[data-inspecao-grid]').forEach(function (grid) {
@@ -639,7 +678,9 @@ document.addEventListener('DOMContentLoaded', function () {
     loadPostsFromApi(config.category)
       .catch(function () { return loadPostsFromStaticFile(config.category); })
       .then(function (posts) {
-        renderPesquisasHub(posts || []);
+        cachedPosts = posts || [];
+        renderPesquisasHub(cachedPosts);
+        bindLocaleRerender(renderPesquisasHub);
       })
       .catch(function () {
         document.querySelectorAll('[data-pesquisas-grid]').forEach(function (grid) {
@@ -660,7 +701,9 @@ document.addEventListener('DOMContentLoaded', function () {
   loadPostsFromApi(config.category)
     .catch(function () { return loadPostsFromStaticFile(config.category); })
     .then(function (posts) {
-      renderPostCards(container, posts);
+      cachedPosts = posts || [];
+      renderPostCards(container, cachedPosts);
+      bindLocaleRerender(function (list) { renderPostCards(container, list); });
     })
     .catch(function () {
       if (container.querySelector('.card')) return;

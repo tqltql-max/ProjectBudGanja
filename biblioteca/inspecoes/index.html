@@ -40,18 +40,19 @@
     <main id="main-content" class="conteudo-interno inspecoes-hub">
         <header class="inspecoes-hub-header">
             <h1 data-i18n="pages.inspections.title">Inspeções</h1>
-            <p class="secao-subtitulo inspecoes-hub-lead" data-i18n="pages.inspections.subtitle">Relatórios técnicos com método verificável — canais, cursos e equipamentos com acesso directo aos artigos.</p>
+            <p class="secao-subtitulo inspecoes-hub-lead" data-i18n="pages.inspections.subtitle">Relatórios técnicos com método verificável — canais, cursos, artigos científicos e equipamentos com acesso directo aos relatórios.</p>
         </header>
 
         <nav class="inspecoes-hub-nav" aria-label="Secções de inspeções">
-            <a class="inspecoes-hub-chip" href="#inspecoes-canais">Canais</a>
-            <a class="inspecoes-hub-chip" href="#inspecoes-cursos">Cursos</a>
+            <a class="inspecoes-hub-chip" href="#inspecoes-canais" data-i18n="pages.inspections.chipChannels">Canais</a>
+            <a class="inspecoes-hub-chip" href="#inspecoes-cursos" data-i18n="pages.inspections.chipCourses">Cursos</a>
+            <a class="inspecoes-hub-chip" href="#inspecoes-artigos" data-i18n="pages.inspections.chipArticles">Artigos</a>
         </nav>
 
         <section id="inspecoes-canais" class="inspecoes-hub-section" data-inspecao-tipo="canal" hidden>
             <header class="inspecoes-hub-section-head">
-                <h2 class="category-title">Canais</h2>
-                <p class="inspecoes-hub-section-desc">Avaliação editorial e técnica de canais públicos — catálogo, foco temático e utilidade para o cultivador.</p>
+                <h2 class="category-title" data-i18n="pages.inspections.sectionChannels">Canais</h2>
+                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionChannelsDesc">Avaliação editorial e técnica de canais públicos — catálogo, foco temático e utilidade para o cultivador.</p>
             </header>
             <div class="container-cards publications-inspecoes" data-inspecao-grid="canal">
                 <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
@@ -60,10 +61,20 @@
 
         <section id="inspecoes-cursos" class="inspecoes-hub-section" data-inspecao-tipo="curso" hidden>
             <header class="inspecoes-hub-section-head">
-                <h2 class="category-title">Cursos</h2>
-                <p class="inspecoes-hub-section-desc">Análise de programas de extensão e formação — carga horária, acesso, grade e valor prático.</p>
+                <h2 class="category-title" data-i18n="pages.inspections.sectionCourses">Cursos</h2>
+                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionCoursesDesc">Análise de programas de extensão e formação — carga horária, acesso, grade e valor prático.</p>
             </header>
             <div class="container-cards publications-inspecoes" data-inspecao-grid="curso">
+                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
+            </div>
+        </section>
+
+        <section id="inspecoes-artigos" class="inspecoes-hub-section" data-inspecao-tipo="artigo" hidden>
+            <header class="inspecoes-hub-section-head">
+                <h2 class="category-title" data-i18n="pages.inspections.sectionArticles">Artigos</h2>
+                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionArticlesDesc">Auditoria editorial de artigos científicos peer-reviewed — desenho, achados, limites e utilidade educativa.</p>
+            </header>
+            <div class="container-cards publications-inspecoes" data-inspecao-grid="artigo">
                 <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
             </div>
         </section>
@@ -72,6 +83,7 @@
     <div id="site-footer"></div>
   <script src="/js/app-version-check.js?v=295"></script>
     <script src="/js/i18n-data.js?v=295"></script>
+    <script src="/js/page-translations-data.js?v=295"></script>
     <script src="/js/i18n.js?v=295"></script>
     <script src="/js/ferramentas-nav-data.js?v=295"></script>
     <script src="/js/layout.js?v=295"></script>

@@ -36,24 +36,60 @@ async function resolveChannelId() {
   return FALLBACK_CHANNEL_ID;
 }
 
+function loadPreviousLocaleFields() {
+  try {
+    const prev = JSON.parse(fs.readFileSync(OUT, 'utf8'));
+    const map = new Map();
+    (prev.videos || []).forEach((v) => {
+      if (!v || !v.id) return;
+      map.set(v.id, {
+        titleEn: v.titleEn || '',
+        titleEs: v.titleEs || '',
+        summaryEn: v.summaryEn || '',
+        summaryEs: v.summaryEs || ''
+      });
+    });
+    return map;
+  } catch (e) {
+    return new Map();
+  }
+}
+
+function loadYoutubeI18nFile() {
+  const file = path.join(ROOT, 'content', 'youtube-i18n.json');
+  try {
+    return JSON.parse(fs.readFileSync(file, 'utf8'));
+  } catch (e) {
+    return {};
+  }
+}
+
 async function buildFeed() {
   const channelId = await resolveChannelId();
   const res = await fetch('https://www.youtube.com/feeds/videos.xml?channel_id=' + channelId);
   if (!res.ok) throw new Error('RSS YouTube HTTP ' + res.status);
   const xml = await res.text();
   const entries = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map((m) => m[1]);
+  const prevLocale = loadPreviousLocaleFields();
+  const fileLocale = loadYoutubeI18nFile();
   const videos = entries.map((entry) => {
     const id = (entry.match(/<yt:videoId>([^<]+)<\/yt:videoId>/) || [])[1];
     const title = (entry.match(/<title>([^<]+)<\/title>/) || [])[1];
     const published = (entry.match(/<published>([^<]+)<\/published>/) || [])[1];
     const desc = (entry.match(/<media:description>([\s\S]*?)<\/media:description>/) || [])[1] || '';
+    const kept = prevLocale.get(id) || {};
+    const fromFile = fileLocale[id] || {};
     return {
       id,
       title,
       published,
       summary: summarize(desc),
       url: 'https://www.youtube.com/watch?v=' + id,
-      thumb: id ? 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg' : ''
+      thumb: id ? 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg' : '',
+      titleEn: fromFile.titleEn || kept.titleEn || '',
+      titleEs: fromFile.titleEs || kept.titleEs || '',
+      summaryEn: fromFile.summaryEn || kept.summaryEn || '',
+      summaryEs: fromFile.summaryEs || kept.summaryEs || ''
     };
   }).filter((v) => v.id && !/transmissão ao vivo/i.test(v.title)).slice(0, MAX_VIDEOS);
 
