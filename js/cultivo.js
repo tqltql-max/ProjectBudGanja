@@ -171,7 +171,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   const MIN_USER_AGE = CShared.MIN_USER_AGE || 18;
   const TAB_STORAGE_KEY = IS_CULTIVO_PAGE ? 'budganja_cultivo_tab' : 'budganja_perfil_tab';
   const DEFAULT_AVATAR = CShared.DEFAULT_AVATAR || '/imagens/avatars/inspector.svg';
-  const PRESET_AVATARS = CShared.PRESET_AVATARS || [];
   const escapeHtml = CShared.escapeHtml || function (t) { return String(t); };
   const formatDate = CShared.formatDate || function (iso) { return iso || ''; };
   const todayDateInputValue = CShared.todayDateInputValue || function () { return new Date().toISOString().slice(0, 10); };
@@ -1434,17 +1433,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     return log;
   }
 
-  const avatarPreviewEl = document.getElementById('profile-avatar-preview');
-  const avatarPresetsEl = document.getElementById('profile-avatar-presets');
-  const avatarUrlEl = document.getElementById('profile-avatar-url');
-  const avatarFileEl = document.getElementById('profile-avatar-file');
-  const avatarUploadLabelEl = document.getElementById('profile-avatar-upload-label');
-  let avatarUploadPending = false;
-
   function getProfilePicture(data) {
     if (!data) return DEFAULT_AVATAR;
-    const custom = data.profile && data.profile.avatarUrl ? String(data.profile.avatarUrl).trim() : '';
-    if (custom) return custom;
     if (data.picture) return data.picture;
     if (data.googlePicture) return data.googlePicture;
     return DEFAULT_AVATAR;
@@ -1459,202 +1449,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }));
   }
 
-  async function persistAvatarChoice(message) {
-    if (!user || !user.profile) return null;
-    const avatarUrl = user.profile.avatarUrl != null
-      ? String(user.profile.avatarUrl).trim()
-      : (avatarUrlEl ? avatarUrlEl.value.trim() : '');
-
-    updateUserHeader(user);
-    broadcastProfilePicture(user);
-
-    try {
-      const res = await fetch('/api/user/profile/avatar', {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
-        body: JSON.stringify({ avatarUrl: avatarUrl })
-      });
-      const data = await res.json().catch(() => ({}));
-      if (!res.ok) {
-        flashLiveStatus(data.error || 'Erro ao guardar foto do perfil.', true);
-        setStatus(formStatus, data.error || 'Erro ao guardar foto.', true);
-        return null;
-      }
-      user = data.user;
-      if (user && user.profile) {
-        if (avatarUrlEl) avatarUrlEl.value = user.profile.avatarUrl || '';
-        ensureGrowLogs(user.profile);
-      }
-      updateUserHeader(user);
-      broadcastProfilePicture(user);
-      if (message) {
-        flashLiveStatus(message);
-        setStatus(formStatus, message);
-      }
-      return user;
-    } catch (err) {
-      flashLiveStatus('Servidor indisponível — tente de novo.', true);
-      setStatus(formStatus, 'Servidor indisponível.', true);
-      return null;
-    }
-  }
-
-  function setAvatarPreview(url) {
-    const src = url || DEFAULT_AVATAR;
-    if (avatarPreviewEl) avatarPreviewEl.src = src;
-    if (avatarUrlEl) avatarUrlEl.value = url || '';
-    if (user && user.profile) {
-      user.profile.avatarUrl = url || '';
-    }
-    if (avatarPresetsEl) {
-      avatarPresetsEl.querySelectorAll('.perfil-avatar-option').forEach((btn) => {
-        const match = btn.getAttribute('data-src') === url
-          || (!url && btn.getAttribute('data-src') === DEFAULT_AVATAR);
-        btn.classList.toggle('is-active', match);
-        btn.setAttribute('aria-selected', match ? 'true' : 'false');
-      });
-    }
-    updateAvatarStatus(url);
-    if (user) updateUserHeader(user);
-  }
-
-  function updateAvatarStatus(url) {
-    const statusEl = document.getElementById('profile-avatar-status');
-    if (!statusEl) return;
-    const custom = String(url || '').trim();
-    if (!custom) {
-      statusEl.textContent = user && user.googlePicture
-        ? 'A usar a foto da conta Google.'
-        : 'Escolha um avatar abaixo ou envie a sua foto.';
-      return;
-    }
-    if (custom.indexOf('/uploads/avatar-') === 0) {
-      statusEl.textContent = 'Foto personalizada seleccionada.';
-      return;
-    }
-    const preset = PRESET_AVATARS.find((item) => item.src === custom);
-    statusEl.textContent = preset
-      ? 'Avatar «' + preset.label + '» seleccionado.'
-      : 'Avatar seleccionado.';
-  }
-
-  function initAvatarPicker() {
-    if (!avatarPresetsEl) return;
-    avatarPresetsEl.innerHTML = PRESET_AVATARS.map((item) =>
-      '<button type="button" class="perfil-avatar-option" role="option" data-src="' + item.src + '" ' +
-      'data-label="' + escapeHtml(item.label) + '" aria-label="' + escapeHtml(item.label) + '" title="' + escapeHtml(item.label) + '">' +
-      '<span class="perfil-avatar-option-img-wrap">' +
-      '<img src="' + item.src + '" alt="" width="52" height="52" loading="lazy">' +
-      '</span>' +
-      '<span class="perfil-avatar-option-label">' + escapeHtml(item.label) + '</span>' +
-      '</button>'
-    ).join('');
-
-    avatarPresetsEl.querySelectorAll('.perfil-avatar-option').forEach((btn) => {
-      btn.addEventListener('click', async () => {
-        const src = btn.getAttribute('data-src');
-        const label = btn.getAttribute('data-label') || 'Avatar';
-        setAvatarPreview(src);
-        if (avatarFileEl) avatarFileEl.value = '';
-        if (avatarUploadLabelEl) avatarUploadLabelEl.textContent = 'Enviar foto';
-        await persistAvatarChoice('Avatar «' + label + '» guardado.');
-      });
-    });
-
-    const googleBtn = document.getElementById('profile-avatar-google-btn');
-    if (googleBtn) {
-      googleBtn.addEventListener('click', async () => {
-        if (!user || !user.googlePicture) return;
-        user.profile.avatarUrl = '';
-        if (avatarUrlEl) avatarUrlEl.value = '';
-        if (avatarPreviewEl) avatarPreviewEl.src = user.googlePicture;
-        if (avatarFileEl) avatarFileEl.value = '';
-        if (avatarPresetsEl) {
-          avatarPresetsEl.querySelectorAll('.perfil-avatar-option').forEach((btn) => {
-            btn.classList.remove('is-active');
-            btn.setAttribute('aria-selected', 'false');
-          });
-        }
-        updateAvatarStatus('');
-        await persistAvatarChoice('Foto Google restaurada.');
-      });
-    }
-
-    if (avatarFileEl) {
-      avatarFileEl.addEventListener('change', async () => {
-        const file = avatarFileEl.files && avatarFileEl.files[0];
-        if (!file) return;
-        const media = window.BudGanjaMediaUpload;
-        if (!media || typeof media.isImageFile !== 'function') {
-          setStatus(formStatus, 'Recarregue a página (módulo de fotos em falta).', true);
-          avatarFileEl.value = '';
-          return;
-        }
-        if (!media.isImageFile(file)) {
-          setStatus(formStatus, 'Use JPG, PNG ou WebP.', true);
-          avatarFileEl.value = '';
-          return;
-        }
-        if (file.size > 25 * 1024 * 1024) {
-          setStatus(formStatus, 'A imagem deve ter no máximo 25 MB.', true);
-          avatarFileEl.value = '';
-          return;
-        }
-        avatarUploadPending = true;
-        if (avatarUploadLabelEl) avatarUploadLabelEl.textContent = 'A enviar…';
-        setStatus(formStatus, 'A preparar foto…');
-
-        try {
-          const dataUrl = typeof media.prepareAndReadDataUrl === 'function'
-            ? await media.prepareAndReadDataUrl(file, {
-              maxSide: 1200,
-              targetBytes: 700 * 1024,
-              maxBytes: media.AVATAR_MAX_BYTES || (1.8 * 1024 * 1024)
-            })
-            : media.normalizeImageDataUrl(await readFileAsDataUrl(file), file);
-          if (!/^data:image\/(png|jpeg|jpg|webp);base64,/i.test(String(dataUrl || ''))) {
-            setStatus(formStatus, 'Formato de imagem inválido. Use JPG, PNG ou WebP.', true);
-            return;
-          }
-          setStatus(formStatus, 'A enviar foto…');
-          const res = await fetch('/api/user/avatar', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            credentials: 'include',
-            body: JSON.stringify({ data: dataUrl })
-          });
-          const payload = await res.json().catch(() => ({}));
-          if (!res.ok) {
-            setStatus(formStatus, payload.error || 'Falha no upload.', true);
-            return;
-          }
-          if (payload.user) {
-            user = payload.user;
-            if (user.profile && user.profile.avatarUrl) {
-              setAvatarPreview(user.profile.avatarUrl);
-            } else if (payload.url) {
-              setAvatarPreview(payload.url);
-            }
-          } else if (payload.url) {
-            setAvatarPreview(payload.url);
-            await persistAvatarChoice('Foto guardada no perfil.');
-            return;
-          }
-          updateUserHeader(user);
-          broadcastProfilePicture(user);
-          if (avatarUploadLabelEl) avatarUploadLabelEl.textContent = 'Alterar foto';
-          flashLiveStatus('Foto guardada no perfil.');
-          setStatus(formStatus, 'Foto guardada no perfil.');
-        } catch (err) {
-          setStatus(formStatus, 'Servidor indisponível.', true);
-        } finally {
-          avatarUploadPending = false;
-        }
-      });
-    }
-  }
-
   function readFileAsDataUrl(file) {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
@@ -1662,36 +1456,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       reader.onerror = reject;
       reader.readAsDataURL(file);
     });
-  }
-
-  function fillAvatarFields(profile, data) {
-    const custom = profile && profile.avatarUrl ? String(profile.avatarUrl).trim() : '';
-    const googleBtn = document.getElementById('profile-avatar-google-btn');
-    if (googleBtn) {
-      googleBtn.hidden = !(data && data.googlePicture);
-    }
-    if (custom) {
-      setAvatarPreview(custom);
-      if (avatarUploadLabelEl) {
-        avatarUploadLabelEl.textContent = custom.indexOf('/uploads/avatar-') === 0
-          ? 'Alterar foto'
-          : 'Enviar foto';
-      }
-      return;
-    }
-    const google = data && data.googlePicture;
-    const preview = google || DEFAULT_AVATAR;
-    if (avatarPreviewEl) avatarPreviewEl.src = preview;
-    if (avatarUrlEl) avatarUrlEl.value = '';
-    if (user && user.profile) user.profile.avatarUrl = '';
-    if (avatarPresetsEl) {
-      avatarPresetsEl.querySelectorAll('.perfil-avatar-option').forEach((btn) => {
-        btn.classList.remove('is-active');
-        btn.setAttribute('aria-selected', 'false');
-      });
-    }
-    if (avatarUploadLabelEl) avatarUploadLabelEl.textContent = 'Enviar foto';
-    updateAvatarStatus('');
   }
 
   const PHASE_OPTIONS = [
@@ -1881,7 +1645,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (payload.customGuide !== undefined) merged.customGuide = payload.customGuide;
     if (payload.phase) merged.phase = payload.phase;
     if (payload.phaseStartedAt) merged.phaseStartedAt = payload.phaseStartedAt;
-    if (payload.avatarUrl !== undefined) merged.avatarUrl = payload.avatarUrl;
     ensureGrowLogs(merged);
     syncPhaseFromActiveLog(merged);
     return merged;
@@ -4284,10 +4047,6 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     if (usernameEl) base.username = sanitizeUsername(usernameEl.value);
     if (birthDateEl) base.birthDate = String(birthDateEl.value || '').trim();
     base.age = calculateAgeFromBirthDate(base.birthDate);
-    if (avatarUrlEl) {
-      const picked = avatarUrlEl.value.trim();
-      if (picked) base.avatarUrl = picked;
-    }
     return base;
   }
 
@@ -4311,7 +4070,6 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     if (usernameEl) usernameEl.value = p.username || (user && user.username) || '';
     if (birthDateEl) birthDateEl.value = p.birthDate || (user && user.birthDate) || '';
     if (customGuideEl) customGuideEl.value = p.customGuide || '';
-    fillAvatarFields(p, user);
   }
 
   function showAccountView() {
@@ -4809,8 +4567,7 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         displayName: payload.displayName,
         username: payload.username,
         birthDate: payload.birthDate,
-        age: payload.age,
-        avatarUrl: payload.avatarUrl
+        age: payload.age
       };
       const res = await fetch('/api/user/profile', {
         method: 'PUT',
@@ -4830,7 +4587,6 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         if (payload.username !== undefined) merged.username = payload.username;
         if (payload.birthDate !== undefined) merged.birthDate = payload.birthDate;
         if (payload.age !== undefined) merged.age = payload.age;
-        if (payload.avatarUrl !== undefined) merged.avatarUrl = payload.avatarUrl;
         data.user.profile = merged;
       }
       user = data.user;
@@ -5055,10 +4811,6 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
         setStatus(formStatus, validationError, true);
         return;
       }
-      if (avatarUploadPending) {
-        setStatus(formStatus, 'Aguarde o envio da foto terminar.', true);
-        return;
-      }
       setStatus(formStatus, 'A guardar…');
       const saveBtn = document.getElementById('perfil-save-btn');
       if (saveBtn) saveBtn.disabled = true;
@@ -5098,18 +4850,6 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     editBtn.addEventListener('click', () => {
       fillForm(user && user.profile);
       showOnboardingView(true);
-      const picker = document.querySelector('.perfil-avatar-picker');
-      if (picker) picker.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  }
-
-  const avatarEditTrigger = document.getElementById('perfil-avatar-edit-btn');
-  if (avatarEditTrigger) {
-    avatarEditTrigger.addEventListener('click', () => {
-      fillForm(user && user.profile);
-      showOnboardingView(true);
-      const picker = document.querySelector('.perfil-avatar-picker');
-      if (picker) picker.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   }
 
@@ -5117,8 +4857,6 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     accountEditBtn.addEventListener('click', () => {
       fillForm(user && user.profile);
       showOnboardingView(true);
-      const picker = document.querySelector('.perfil-avatar-picker');
-      if (picker) picker.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   }
 
@@ -5616,6 +5354,5 @@ function renderInicioSummary() { /* hub dedicado */ }  function renderPhaseSelec
     });
   }
 
-  await   initAvatarPicker();
   loadUser();
 });

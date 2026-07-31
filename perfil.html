@@ -75,31 +75,6 @@
             </p>
           </header>
           <form id="perfil-form" class="perfil-form login-form">
-            <fieldset class="perfil-avatar-field">
-              <legend class="perfil-avatar-legend">Foto de perfil</legend>
-              <div class="perfil-avatar-picker">
-                <div class="perfil-avatar-preview-wrap">
-                  <img id="profile-avatar-preview" class="perfil-avatar-preview conta-avatar" src="/imagens/avatars/inspector.svg" alt="Pré-visualização do avatar" width="96" height="96">
-                </div>
-                <p id="profile-avatar-status" class="perfil-avatar-status">Escolha um avatar ou envie a sua foto.</p>
-                <p class="perfil-avatar-hint">A alteração da foto é guardada de imediato.</p>
-                <p class="perfil-avatar-section-label">Avatares do laboratório</p>
-                <div id="profile-avatar-presets" class="perfil-avatar-presets" role="listbox" aria-label="Avatares disponíveis"></div>
-                <div class="perfil-avatar-actions">
-                  <label class="perfil-avatar-upload botao botao-outline" for="profile-avatar-file">
-                    <span id="profile-avatar-upload-label">Enviar foto</span>
-                    <input type="file" id="profile-avatar-file" accept="image/jpeg,image/png,image/webp" hidden>
-                  </label>
-                  <label class="perfil-avatar-upload botao botao-outline" for="profile-avatar-capture">
-                    <span id="profile-avatar-capture-label">Tirar foto</span>
-                    <input type="file" id="profile-avatar-capture" accept="image/*" capture="user" hidden>
-                  </label>
-                  <button type="button" class="botao botao-outline" id="profile-avatar-google-btn" hidden>Usar foto Google</button>
-                </div>
-                <input type="hidden" id="profile-avatar-url" name="avatarUrl" value="">
-              </div>
-            </fieldset>
-
             <div class="perfil-form-grid">
               <label class="login-field conta-field" for="profile-displayName">Nome
                 <input type="text" id="profile-displayName" name="displayName" maxlength="80" required autocomplete="name" placeholder="Como quer ser chamado">
@@ -195,7 +170,6 @@
     <script src="/js/ferramentas-nav-data.js?v=295"></script>
     <script src="/js/layout.js?v=295"></script>
     <script src="/js/site-features.js?v=295"></script>
-    <script src="/js/media-upload.js?v=295"></script>
   <script src="/js/perfil.js?v=295"></script>
 
 </body>

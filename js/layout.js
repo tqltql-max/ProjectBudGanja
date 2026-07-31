@@ -1991,7 +1991,7 @@ async function fetchAuthState() {
           label: i18n('common.profile', 'Minha conta'),
           href: '/perfil.html',
           isUser: true,
-          picture: data.picture || (data.profile && data.profile.avatarUrl) || '/imagens/avatars/inspector.svg',
+          picture: data.picture || '/imagens/avatars/inspector.svg',
           name: data.name || null
         };
         state.isUser = true;

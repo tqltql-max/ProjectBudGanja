@@ -34,16 +34,6 @@
     colheita: { label: 'Calculadora Super Solo', href: '/calculadoras/super-solo.html' }
   };
   var DEFAULT_AVATAR = '/imagens/avatars/inspector.svg';
-  var PRESET_AVATARS = [
-    { id: 'inspector', label: 'Inspetor', src: '/imagens/avatars/inspector.svg' },
-    { id: 'leaf', label: 'Folha', src: '/imagens/avatars/leaf.svg' },
-    { id: 'seedling', label: 'Muda', src: '/imagens/avatars/seedling.svg' },
-    { id: 'bud', label: 'Flor', src: '/imagens/avatars/bud.svg' },
-    { id: 'greenhouse', label: 'Estufa', src: '/imagens/avatars/greenhouse.svg' },
-    { id: 'water', label: 'Rega', src: '/imagens/avatars/water.svg' },
-    { id: 'lab', label: 'Laboratório', src: '/imagens/avatars/lab.svg' },
-    { id: 'sun', label: 'Luz', src: '/imagens/avatars/sun.svg' }
-  ];
 
   function escapeHtml(text) {
     return String(text)
@@ -182,7 +172,6 @@
     SUBMISSION_NOTIFY_KEY: SUBMISSION_NOTIFY_KEY,
     PHASE_INSPECTION_LINKS: PHASE_INSPECTION_LINKS,
     DEFAULT_AVATAR: DEFAULT_AVATAR,
-    PRESET_AVATARS: PRESET_AVATARS,
     escapeHtml: escapeHtml,
     formatDate: formatDate,
     todayDateInputValue: todayDateInputValue,

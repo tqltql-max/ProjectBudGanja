@@ -1,5 +1,5 @@
 /**
- * Preparação partilhada de fotos para upload (comunidade + diário + avatar).
+ * Preparação partilhada de fotos para upload (comunidade + diário).
  * Objectivo: JPEG aceite pela API e payload abaixo do limite típico da Netlify (~6 MB no pedido).
  */
 (function (global) {
@@ -10,10 +10,6 @@
   var TARGET_BYTES = 900 * 1024;
   /** Limite duro alinhado com /api/cultivo/photo e com o payload Netlify. */
   var MAX_BYTES = 3.5 * 1024 * 1024;
-  /** Avatar: ficheiro decodificado máx. 2 MB na API; alvo mais baixo para o JSON caber. */
-  var AVATAR_TARGET_BYTES = 700 * 1024;
-  var AVATAR_MAX_BYTES = 1.8 * 1024 * 1024;
-  var AVATAR_MAX_SIDE = 1200;
   var MAX_RAW_BYTES = 25 * 1024 * 1024;
   var QUALITIES = [0.82, 0.72, 0.62, 0.5, 0.4];
 
@@ -186,14 +182,6 @@
     });
   }
 
-  function prepareAvatarForUpload(file) {
-    return prepareImageForUpload(file, {
-      maxSide: AVATAR_MAX_SIDE,
-      targetBytes: AVATAR_TARGET_BYTES,
-      maxBytes: AVATAR_MAX_BYTES
-    });
-  }
-
   function prepareAndReadDataUrl(file, options) {
     return prepareImageForUpload(file, options).then(function (prepared) {
       return readFileAsDataUrl(prepared).then(function (dataUrl) {
@@ -208,10 +196,8 @@
     readFileAsDataUrl: readFileAsDataUrl,
     normalizeImageDataUrl: normalizeImageDataUrl,
     prepareImageForUpload: prepareImageForUpload,
-    prepareAvatarForUpload: prepareAvatarForUpload,
     prepareAndReadDataUrl: prepareAndReadDataUrl,
     TARGET_BYTES: TARGET_BYTES,
-    MAX_BYTES: MAX_BYTES,
-    AVATAR_MAX_BYTES: AVATAR_MAX_BYTES
+    MAX_BYTES: MAX_BYTES
   };
 })(typeof window !== 'undefined' ? window : globalThis);

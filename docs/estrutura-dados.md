@@ -130,7 +130,8 @@ Migração legada: dados antigos em `users.profile_json` (campo `growLogs`) são
 | Campo | Descrição |
 |-------|-----------|
 | `displayName`, `age`, `username`, `birthDate` | Dados de perfil para UX; idade é dinâmica com base em `birthDate` |
-| `avatarUrl`, `experience`, `environment`… | Metadados opcionais do cultivador |
+| `experience`, `environment`… | Metadados opcionais do cultivador |
+| Foto de perfil | Vem de `users.picture` (URL da conta Google no login); sem upload próprio |
 
 **Não guardar** `growLogs`, `journal`, `planTasks` em `profile_json` — usar tabelas `cultivo_*`.
 
