@@ -9768,15 +9768,29 @@ html[data-theme="light"] .header-group-divider {
 }
 
 .videos-continue-yt,
-.videos-copy-link {
+.videos-copy-link,
+.videos-play-btn,
+.videos-share-btn {
     display: inline-flex;
     align-items: center;
     gap: 0.35em;
 }
 
 .videos-player-actions .videos-continue-yt,
-.videos-player-actions .videos-copy-link {
+.videos-player-actions .videos-copy-link,
+.videos-player-actions .videos-play-btn,
+.videos-player-actions .videos-share-btn {
     margin-right: 0;
+}
+
+/* Player principal: sem botão play por cima da thumbnail */
+.videos-player .yt-facade .video-card-play {
+    display: none !important;
+}
+
+.videos-share-btn.is-copied {
+    border-color: rgba(39, 174, 96, 0.55);
+    color: var(--color-accent-light);
 }
 
 .videos-player-actions {

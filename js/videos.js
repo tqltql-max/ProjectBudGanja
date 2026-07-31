@@ -213,6 +213,70 @@
     });
   }
 
+  function bindPlayVideoButton(root) {
+    if (!root) return;
+    var btn = root.querySelector('[data-play-video]');
+    if (!btn || btn.dataset.bound === '1') return;
+    btn.dataset.bound = '1';
+    btn.addEventListener('click', function () {
+      var facade = root.querySelector('.yt-facade[data-youtube-id]');
+      if (!facade) return;
+      if (window.BudGanjaYoutubeFacade && typeof window.BudGanjaYoutubeFacade.load === 'function') {
+        window.BudGanjaYoutubeFacade.load(facade, true);
+      } else {
+        facade.click();
+      }
+      btn.hidden = true;
+    });
+  }
+
+  function bindShareVideoButton(root, title) {
+    if (!root) return;
+    var btn = root.querySelector('[data-share-video]');
+    if (!btn || btn.dataset.bound === '1') return;
+    btn.dataset.bound = '1';
+    btn.addEventListener('click', function () {
+      var id = btn.getAttribute('data-share-video') || '';
+      if (!isValidVideoId(id)) return;
+      var url = videoPageShareUrl(id);
+      var shareTitle = title || i18n('pages.videos.nowPlaying', 'Vídeo do YouTube');
+      var label = btn.querySelector('[data-share-label]') || btn;
+      var original = i18n('common.share', 'Compartilhar');
+      var markCopied = function () {
+        label.textContent = i18n('common.shareCopied', 'Link copiado!');
+        btn.classList.add('is-copied');
+        window.setTimeout(function () {
+          label.textContent = original;
+          btn.classList.remove('is-copied');
+        }, 1800);
+      };
+      var copyFallback = function () {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(url).then(markCopied).catch(function () {
+            try {
+              if (window.prompt) window.prompt(original + ':', url);
+            } catch (e) { /* ignore */ }
+            markCopied();
+          });
+          return;
+        }
+        try {
+          if (window.prompt) window.prompt(original + ':', url);
+        } catch (e) { /* ignore */ }
+        markCopied();
+      };
+      if (typeof navigator.share === 'function') {
+        navigator
+          .share({ title: shareTitle, text: shareTitle, url: url })
+          .catch(function () {
+            copyFallback();
+          });
+        return;
+      }
+      copyFallback();
+    });
+  }
+
   /** Tenta abrir a app YouTube (melhor para áudio com ecrã desligado). */
   function openYouTubeAppOrWeb(id) {
     if (!isValidVideoId(id)) return;
@@ -467,18 +531,32 @@
       '</h2>' +
       (summary ? '<p class="videos-player-summary">' + escapeHtml(summary) + '</p>' : '') +
       '<div class="videos-player-actions">' +
-      '<a class="botao botao-sm videos-continue-yt" href="' +
+      '<button type="button" class="botao botao-sm videos-play-btn" data-play-video="' +
+      escapeHtml(video.id) +
+      '"' +
+      (autoplay ? ' hidden' : '') +
+      '>' +
+      escapeHtml(i18n('pages.videos.watchHere', 'Assistir')) +
+      '</button>' +
+      '<button type="button" class="botao botao-outline botao-sm videos-copy-link" data-copy-video-link="' +
+      escapeHtml(video.id) +
+      '"><span data-copy-label>' +
+      escapeHtml(i18n('pages.videos.copyLink', 'Copiar link')) +
+      '</span></button>' +
+      '<button type="button" class="botao botao-outline botao-sm videos-share-btn" data-share-video="' +
+      escapeHtml(video.id) +
+      '" aria-label="' +
+      escapeHtml(i18n('common.shareAria', 'Compartilhar esta publicação')) +
+      '"><span data-share-label>' +
+      escapeHtml(i18n('common.share', 'Compartilhar')) +
+      '</span></button>' +
+      '<a class="botao botao-outline botao-sm videos-continue-yt" href="' +
       escapeHtml(watchUrl) +
       '" data-continue-youtube="' +
       escapeHtml(video.id) +
       '" target="_blank" rel="noopener noreferrer">' +
       escapeHtml(i18n('pages.videos.continueOnYoutube', 'Continuar no YouTube')) +
       '</a>' +
-      '<button type="button" class="botao botao-outline botao-sm videos-copy-link" data-copy-video-link="' +
-      escapeHtml(video.id) +
-      '"><span data-copy-label>' +
-      escapeHtml(i18n('pages.videos.copyLink', 'Copiar link')) +
-      '</span></button>' +
       '<p class="videos-continue-yt-hint">' +
       escapeHtml(
         i18n(
@@ -499,12 +577,28 @@
 
     bindContinueYouTubeButton(playerEl);
     bindCopyVideoLinkButton(playerEl);
+    bindPlayVideoButton(playerEl);
+    bindShareVideoButton(playerEl, title);
     if (window.BudGanjaYoutubeFacade && typeof window.BudGanjaYoutubeFacade.enhance === 'function') {
       window.BudGanjaYoutubeFacade.enhance(playerEl);
     }
     var facadeBtn = playerEl.querySelector('.yt-facade');
     if (facadeBtn && autoplay && window.BudGanjaYoutubeFacade && typeof window.BudGanjaYoutubeFacade.load === 'function') {
       window.BudGanjaYoutubeFacade.load(facadeBtn, true);
+    }
+    // Esconde o play overlay só no player principal; o botão Assistir fica abaixo.
+    var overlayPlay = playerEl.querySelector('.yt-facade .video-card-play');
+    if (overlayPlay) overlayPlay.hidden = true;
+    // Se o utilizador clicar na thumbnail, esconde o botão Assistir.
+    if (facadeBtn && !autoplay) {
+      facadeBtn.addEventListener(
+        'click',
+        function () {
+          var playBtn = playerEl.querySelector('[data-play-video]');
+          if (playBtn) playBtn.hidden = true;
+        },
+        { once: true }
+      );
     }
     if (autoplay && playerEl.scrollIntoView) {
       window.setTimeout(function () {
