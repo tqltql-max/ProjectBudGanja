@@ -91,6 +91,16 @@ async function main() {
     }),
     path.join(outDir, 'og-default.jpg')
   );
+
+  // Capa do card da inspeção JAMA / Albaugh (também gerada por scripts/generate-jama-cover.js)
+  try {
+    require('child_process').execFileSync(process.execPath, [path.join(__dirname, 'generate-jama-cover.js')], {
+      cwd: ROOT,
+      stdio: 'inherit'
+    });
+  } catch (e) {
+    console.warn('Aviso generate-jama-cover:', e.message || e);
+  }
 }
 
 main().catch((e) => {
