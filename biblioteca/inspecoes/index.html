@@ -40,7 +40,7 @@
     <main id="main-content" class="conteudo-interno inspecoes-hub">
         <header class="inspecoes-hub-header">
             <h1 data-i18n="pages.inspections.title">Inspeções</h1>
-            <p class="secao-subtitulo inspecoes-hub-lead" data-i18n="pages.inspections.subtitle">Relatórios técnicos com método verificável — legado, canais, cursos, artigos científicos e equipamentos com acesso directo aos relatórios.</p>
+            <p class="secao-subtitulo inspecoes-hub-lead" data-i18n="pages.inspections.subtitle">Relatórios técnicos com método verificável — legado, canais, cursos, artigos científicos, plantas medicinais e equipamentos.</p>
         </header>
 
         <nav class="inspecoes-hub-nav" aria-label="Secções de inspeções">
@@ -48,6 +48,7 @@
             <a class="inspecoes-hub-chip" href="#inspecoes-canais" data-i18n="pages.inspections.chipChannels">Canais</a>
             <a class="inspecoes-hub-chip" href="#inspecoes-cursos" data-i18n="pages.inspections.chipCourses">Cursos</a>
             <a class="inspecoes-hub-chip" href="#inspecoes-artigos" data-i18n="pages.inspections.chipArticles">Artigos</a>
+            <a class="inspecoes-hub-chip" href="#inspecoes-plantas" data-i18n="pages.inspections.chipPlants">Plantas</a>
             <a class="inspecoes-hub-chip" href="#inspecoes-sugestoes" data-i18n="pages.inspections.chipSuggestions">Sugestões</a>
         </nav>
 
@@ -87,6 +88,16 @@
                 <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionArticlesDesc">Auditoria editorial de artigos científicos peer-reviewed — desenho, achados, limites e utilidade educativa.</p>
             </header>
             <div class="container-cards publications-inspecoes" data-inspecao-grid="artigo">
+                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
+            </div>
+        </section>
+
+        <section id="inspecoes-plantas" class="inspecoes-hub-section" data-inspecao-tipo="planta" hidden>
+            <header class="inspecoes-hub-section-head">
+                <h2 class="category-title" data-i18n="pages.inspections.sectionPlants">Plantas</h2>
+                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionPlantsDesc">Relatórios educacionais sobre espécies do catálogo de plantas medicinais — ficha, usos tradicionais, cuidados e ligação à extensão UNIFESP.</p>
+            </header>
+            <div class="container-cards publications-inspecoes" data-inspecao-grid="planta">
                 <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
             </div>
         </section>

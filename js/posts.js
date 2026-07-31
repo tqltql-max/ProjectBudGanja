@@ -43,6 +43,7 @@ var SERIES_LABELS = {
   'insumos-cultivo': 'Insumos de cultivo',
   'artigos-cientificos': 'Artigos científicos',
   'legado-pessoas': 'Legado',
+  'plantas-medicinais': 'Plantas medicinais',
   '': 'Todas as séries'
 };
 
@@ -78,6 +79,10 @@ function seriesBadgeHtml(post, options) {
     var legado = post.seriesLabel || 'Legado';
     return '<span class="post-card-series" data-series="' + post.series + '">' + legado + '</span>';
   }
+  if (options.hub && (post.series === 'plantas-medicinais' || /inspecao-planta-/i.test(post.slug || ''))) {
+    var planta = post.seriesLabel || 'Planta';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + planta + '</span>';
+  }
   var label = post.seriesLabel || SERIES_LABELS[post.series] || post.series;
   var order = post.seriesOrder != null ? ' · Cap. ' + post.seriesOrder : '';
   return '<span class="post-card-series" data-series="' + post.series + '">' + label + order + '</span>';
@@ -110,6 +115,7 @@ function resolveInspecaoTipo(post) {
   ) {
     return 'pessoa';
   }
+  if (series === 'plantas-medicinais' || /inspecao-planta-/i.test(slug)) return 'planta';
   if (/^inspecao-canal-/i.test(slug)) return 'canal';
   return 'canal';
 }
@@ -243,7 +249,8 @@ var HUB_CHIP_ANCHOR = {
   loja: 'lojas',
   insumo: 'insumos',
   artigo: 'artigos',
-  pessoa: 'pessoas'
+  pessoa: 'pessoas',
+  planta: 'plantas'
 };
 
 function setHubChipVisibility(tipo, visible) {
@@ -268,7 +275,8 @@ function renderInspecoesHub(allPosts) {
     { id: 'pessoa', section: '#inspecoes-pessoas', sort: 'seriesOrder' },
     { id: 'canal', section: '#inspecoes-canais', sort: 'label' },
     { id: 'curso', section: '#inspecoes-cursos', sort: 'seriesOrder' },
-    { id: 'artigo', section: '#inspecoes-artigos', sort: 'seriesOrder' }
+    { id: 'artigo', section: '#inspecoes-artigos', sort: 'seriesOrder' },
+    { id: 'planta', section: '#inspecoes-plantas', sort: 'seriesOrder' }
   ];
 
   tipos.forEach(function (t) {

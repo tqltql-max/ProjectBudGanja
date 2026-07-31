@@ -152,6 +152,14 @@
                   "description": "Homenagem documental ao Padre Ticão (Antônio Luiz Marchioni, 1952–2021): pároco de Ermelino Matarazzo, líder popular da zona leste e fundador do MovReCam — mérito máximo na democratização da educação sobre cannabis medicinal no Brasil."
                 },
                 {
+                  "label": "Inspeção: Planta — Babosa",
+                  "tileLabel": "Inspeção: Planta — Babosa",
+                  "href": "/posts/post-inspecao-planta-babosa.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-babosa",
+                  "description": "Relatório educacional de Babosa (*Aloe vera): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
                   "label": "Inspeção: Artigo — Cannabis na adolescência e neurodesenvolvimento (JAMA Psychiatry)",
                   "tileLabel": "Inspeção: Artigo — Cannabis na …",
                   "href": "/posts/post-inspecao-artigo-albaugh-cannabis-neurodesenvolvimento.html",
@@ -184,12 +192,28 @@
                   "description": "Homenagem documental ao Prof. Emérito Elisaldo Luiz de Araújo Carlini (1930–2020): médico e psicofarmacologista da UNIFESP, fundador do CEBRID — mérito máximo na ciência e na democratização do conhecimento sobre cannabis medicinal no Brasil."
                 },
                 {
+                  "label": "Inspeção: Planta — Camomila",
+                  "tileLabel": "Inspeção: Planta — Camomila",
+                  "href": "/posts/post-inspecao-planta-camomila.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-camomila",
+                  "description": "Relatório educacional de Camomila (*Matricaria chamomilla): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
                   "label": "Inspeção: Equipamentos Mars Hydro Brasil",
                   "tileLabel": "Inspeção: Equipamentos Mars Hyd…",
                   "href": "/posts/post-inspecao-marshydro-brasil.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-marshydro-brasil",
                   "description": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório."
+                },
+                {
+                  "label": "Inspeção: Planta — Capim-limão",
+                  "tileLabel": "Inspeção: Planta — Capim-limão",
+                  "href": "/posts/post-inspecao-planta-capim-limao.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-capim-limao",
+                  "description": "Relatório educacional de Capim-limão (*Cymbopogon citratus): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
                 },
                 {
                   "label": "Inspeção: Canal CANABinALL — Profa. Dra. Eliana Rodrigues",
@@ -200,12 +224,220 @@
                   "description": "Auditoria do canal CANABinALL (@canabinall) — 139 vídeos catalogados; divulgação científica UNIFESP sob curadoria da Profa. Dra. Eliana Rodrigues (CEE), com destaque a Conceitos básicos #1 e à série Plantas Sagradas."
                 },
                 {
+                  "label": "Inspeção: Planta — Carqueja",
+                  "tileLabel": "Inspeção: Planta — Carqueja",
+                  "href": "/posts/post-inspecao-planta-carqueja.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-carqueja",
+                  "description": "Relatório educacional de Carqueja (*Baccharis trimera): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Cavalinha",
+                  "tileLabel": "Inspeção: Planta — Cavalinha",
+                  "href": "/posts/post-inspecao-planta-cavalinha.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-cavalinha",
+                  "description": "Relatório educacional de Cavalinha (*Equisetum arvense): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Erva-cidreira",
+                  "tileLabel": "Inspeção: Planta — Erva-cidreira",
+                  "href": "/posts/post-inspecao-planta-erva-cidreira.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-erva-cidreira",
+                  "description": "Relatório educacional de Erva-cidreira (*Lippia alba): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Espinheira-santa",
+                  "tileLabel": "Inspeção: Planta — Espinheira-s…",
+                  "href": "/posts/post-inspecao-planta-espinheira-santa.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-espinheira-santa",
+                  "description": "Relatório educacional de Espinheira-santa (*Maytenus ilicifolia): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Guaco",
+                  "tileLabel": "Inspeção: Planta — Guaco",
+                  "href": "/posts/post-inspecao-planta-guaco.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-guaco",
+                  "description": "Relatório educacional de Guaco (*Mikania glomerata): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Hortelã",
+                  "tileLabel": "Inspeção: Planta — Hortelã",
+                  "href": "/posts/post-inspecao-planta-hortela.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-hortela",
+                  "description": "Relatório educacional de Hortelã (*Mentha spicata): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Boldo",
+                  "tileLabel": "Inspeção: Planta — Boldo",
+                  "href": "/posts/post-inspecao-planta-boldo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-boldo",
+                  "description": "Relatório educacional de Boldo (*Plectranthus barbatus): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Melissa",
+                  "tileLabel": "Inspeção: Planta — Melissa",
+                  "href": "/posts/post-inspecao-planta-melissa.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-melissa",
+                  "description": "Relatório educacional de Melissa (*Melissa officinalis): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
                   "label": "Inspeção: Canal MovReCam — aulas UNIFESP",
                   "tileLabel": "Inspeção: Canal MovReCam — aula…",
                   "href": "/posts/post-inspecao-canal-movrecam.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-canal-movrecam",
                   "description": "Auditoria do canal MovReCam — 285 vídeos catalogados, com embeds das aulas da XIV edição UNIFESP para revisão in-page."
+                },
+                {
+                  "label": "Inspeção: Planta — Alecrim",
+                  "tileLabel": "Inspeção: Planta — Alecrim",
+                  "href": "/posts/post-inspecao-planta-alecrim.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-alecrim",
+                  "description": "Relatório educacional de Alecrim (*Salvia rosmarinus): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Gengibre",
+                  "tileLabel": "Inspeção: Planta — Gengibre",
+                  "href": "/posts/post-inspecao-planta-gengibre.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-gengibre",
+                  "description": "Relatório educacional de Gengibre (*Zingiber officinale): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Cúrcuma",
+                  "tileLabel": "Inspeção: Planta — Cúrcuma",
+                  "href": "/posts/post-inspecao-planta-curcuma.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-curcuma",
+                  "description": "Relatório educacional de Cúrcuma (*Curcuma longa): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Unha-de-gato",
+                  "tileLabel": "Inspeção: Planta — Unha-de-gato",
+                  "href": "/posts/post-inspecao-planta-unha-de-gato.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-unha-de-gato",
+                  "description": "Relatório educacional de Unha-de-gato (*Uncaria tomentosa): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Sucupira",
+                  "tileLabel": "Inspeção: Planta — Sucupira",
+                  "href": "/posts/post-inspecao-planta-sucupira.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-sucupira",
+                  "description": "Relatório educacional de Sucupira (*Pterodon emarginatus): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Copaíba",
+                  "tileLabel": "Inspeção: Planta — Copaíba",
+                  "href": "/posts/post-inspecao-planta-copaiba.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-copaiba",
+                  "description": "Relatório educacional de Copaíba (*Copaifera langsdorffii): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Andiroba",
+                  "tileLabel": "Inspeção: Planta — Andiroba",
+                  "href": "/posts/post-inspecao-planta-andiroba.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-andiroba",
+                  "description": "Relatório educacional de Andiroba (*Carapa guianensis): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Jambu",
+                  "tileLabel": "Inspeção: Planta — Jambu",
+                  "href": "/posts/post-inspecao-planta-jambu.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-jambu",
+                  "description": "Relatório educacional de Jambu (*Acmella oleracea): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Mulungu",
+                  "tileLabel": "Inspeção: Planta — Mulungu",
+                  "href": "/posts/post-inspecao-planta-mulungu.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-mulungu",
+                  "description": "Relatório educacional de Mulungu (*Erythrina mulungu): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Maracujá",
+                  "tileLabel": "Inspeção: Planta — Maracujá",
+                  "href": "/posts/post-inspecao-planta-maracuja.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-maracuja",
+                  "description": "Relatório educacional de Maracujá (*Passiflora incarnata): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Calêndula",
+                  "tileLabel": "Inspeção: Planta — Calêndula",
+                  "href": "/posts/post-inspecao-planta-calendula.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-calendula",
+                  "description": "Relatório educacional de Calêndula (*Calendula officinalis): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Barbatimão",
+                  "tileLabel": "Inspeção: Planta — Barbatimão",
+                  "href": "/posts/post-inspecao-planta-barbatimao.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-barbatimao",
+                  "description": "Relatório educacional de Barbatimão (*Stryphnodendron adstringens): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Jaborandi",
+                  "tileLabel": "Inspeção: Planta — Jaborandi",
+                  "href": "/posts/post-inspecao-planta-jaborandi.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-jaborandi",
+                  "description": "Relatório educacional de Jaborandi (*Pilocarpus microphyllus): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Ipecacuanha",
+                  "tileLabel": "Inspeção: Planta — Ipecacuanha",
+                  "href": "/posts/post-inspecao-planta-ipecacuanha.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-ipecacuanha",
+                  "description": "Relatório educacional de Ipecacuanha (*Carapichea ipecacuanha): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Pfaffia (ginseng-brasileiro)",
+                  "tileLabel": "Inspeção: Planta — Pfaffia (gin…",
+                  "href": "/posts/post-inspecao-planta-pfaffia.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-pfaffia",
+                  "description": "Relatório educacional de Pfaffia (ginseng-brasileiro) (*Pfaffia glomerata): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Aroeira",
+                  "tileLabel": "Inspeção: Planta — Aroeira",
+                  "href": "/posts/post-inspecao-planta-aroeira.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-aroeira",
+                  "description": "Relatório educacional de Aroeira (*Schinus terebinthifolia): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Quina",
+                  "tileLabel": "Inspeção: Planta — Quina",
+                  "href": "/posts/post-inspecao-planta-quina.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-quina",
+                  "description": "Relatório educacional de Quina (*Cinchona sp.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Planta — Cannabis (medicinal)",
+                  "tileLabel": "Inspeção: Planta — Cannabis (me…",
+                  "href": "/posts/post-inspecao-planta-cannabis-sativa.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-cannabis-sativa",
+                  "description": "Relatório educacional de Cannabis (medicinal) (*Cannabis sativa L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
                 }
               ]
             },
