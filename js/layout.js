@@ -702,7 +702,7 @@ const DEFAULT_SITE = {
   privacyUpdated: '30 de julho de 2026',
   ogImage: '/imagens/og-default.jpg',
   contactEmail: 'tql.tql@gmail.com',
-  youtubeChannelUrl: 'https://www.youtube.com/@InspetorBudGanja',
+  youtubeChannelUrl: '/videos/',
   youtubeChannelLabel: 'Canal @InspetorBudGanja',
   spotifyPodcastUrl: 'https://open.spotify.com/show/033yuLDWnN84xOcfHyJ1FZ',
   spotifyPodcastLabel: 'Podcast Inspetor BudGanja',
@@ -1650,7 +1650,14 @@ function buildMobileMenuHTML(site, authState) {
 
   const footLinks = [
     ytUrl
-      ? '<a href="' + escapeNavText(ytUrl) + '" class="mobile-menu-foot-link" target="_blank" rel="noopener noreferrer">▶ ' + escapeNavText(ytLabel) + '</a>'
+      ? (function () {
+          const external = /^https?:\/\//i.test(ytUrl);
+          return (
+            '<a href="' + escapeNavText(ytUrl) + '" class="mobile-menu-foot-link"' +
+            (external ? ' target="_blank" rel="noopener noreferrer"' : '') +
+            '>▶ ' + escapeNavText(ytLabel) + '</a>'
+          );
+        })()
       : '',
     spotifyUrl
       ? '<a href="' + escapeNavText(spotifyUrl) + '" class="mobile-menu-foot-link mobile-menu-foot-link--muted" target="_blank" rel="noopener noreferrer">♪ ' + escapeNavText(spotifyLabel) + '</a>'
@@ -1778,8 +1785,16 @@ function buildFooterHTML(site) {
     '</a>' +
     '<p class="footer-brand-tagline">' + escapeNavText(i18n('footer.tagline', config.siteTagline || DEFAULT_SITE.siteTagline || '')) + '</p>' +
     (ytUrl
-      ? '<a href="' + escapeNavText(ytUrl) + '" class="footer-yt-link" target="_blank" rel="noopener noreferrer">' +
-        escapeNavText(ytLabel) + ' <span class="footer-ext" aria-hidden="true">↗</span></a>'
+      ? (function () {
+          const external = /^https?:\/\//i.test(ytUrl);
+          return (
+            '<a href="' + escapeNavText(ytUrl) + '" class="footer-yt-link"' +
+            (external ? ' target="_blank" rel="noopener noreferrer"' : '') +
+            '>' + escapeNavText(ytLabel) +
+            (external ? ' <span class="footer-ext" aria-hidden="true">↗</span>' : '') +
+            '</a>'
+          );
+        })()
       : '') +
     (spotifyUrl
       ? '<a href="' + escapeNavText(spotifyUrl) + '" class="footer-yt-link" target="_blank" rel="noopener noreferrer">' +
@@ -1883,7 +1898,7 @@ function injectSeoMeta(site) {
       url: absoluteUrl('index.html'),
       description: description,
       sameAs: [
-        site.youtubeChannelUrl || DEFAULT_SITE.youtubeChannelUrl,
+        'https://www.youtube.com/@InspetorBudGanja',
         site.spotifyPodcastUrl || DEFAULT_SITE.spotifyPodcastUrl
       ].filter(Boolean)
     });

@@ -59,9 +59,11 @@ function renderGuide(data) {
 
   if (titleEl && data.title) titleEl.textContent = data.title;
   if (subtitleEl && data.subtitle) subtitleEl.textContent = data.subtitle;
-  if (channelLink && data.channelUrl) {
-    channelLink.href = data.channelUrl;
-    channelLink.textContent = '▶ Inscrever-se no ' + (data.channelName || '@InspetorBudGanja');
+  if (channelLink) {
+    channelLink.href = '/videos/';
+    channelLink.removeAttribute('target');
+    channelLink.removeAttribute('rel');
+    channelLink.textContent = '▶ Ver vídeos' + (data.channelName ? ' · ' + data.channelName : '');
   }
 
   if (!tocList || !chaptersEl || !data.chapters) return;

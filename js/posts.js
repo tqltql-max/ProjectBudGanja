@@ -152,7 +152,7 @@ function renderPostCards(container, posts, options) {
     var category = page === 'inspecoes' ? 'inspecao' : page === 'equipamentos' ? 'equipamento' : 'pesquisa';
     var ctas = {
       pesquisa: { text: 'Abrir diário de pesquisas', href: '/cultivo/' },
-      inspecao: { text: 'Ver canal no YouTube', href: 'https://www.youtube.com/@InspetorBudGanja', external: true },
+      inspecao: { text: 'Ver vídeos', href: '/videos/', external: false },
       equipamento: { text: 'Ver guia da clonadora', href: '/equipamentos/clonadora-6-estacas.html' }
     };
     var cta = options.cta || ctas[category] || ctas.pesquisa;

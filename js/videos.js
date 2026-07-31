@@ -158,7 +158,7 @@
         '<p class="empty-message">' +
         escapeHtml(i18n('pages.videos.empty', 'Nenhum vídeo disponível.')) +
         '</p>' +
-        '<a href="https://www.youtube.com/@InspetorBudGanja" class="botao botao-home" target="_blank" rel="noopener noreferrer">@InspetorBudGanja</a>' +
+        '<a href="/videos/" class="botao botao-home">@InspetorBudGanja</a>' +
         '</div>';
       return;
     }
@@ -303,9 +303,8 @@
           });
         })
         .then(function (feed) {
-          if (channelLink && feed && feed.channelUrl) {
-            channelLink.href = feed.channelUrl;
-            channelLink.textContent = '▶ ' + (feed.channelName || 'YouTube');
+          if (channelLink && feed && feed.channelName) {
+            channelLink.textContent = '▶ Inscrever-se no ' + feed.channelName;
           }
           playerEl = document.getElementById('videos-player') || player;
           gridEl = document.getElementById('videos-list') || grid;

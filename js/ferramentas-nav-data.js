@@ -168,7 +168,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-canal-movrecam.html",
               "icon": "🔍",
               "slug": "post-inspecao-canal-movrecam",
-              "description": "Auditoria do canal MovReCam — 285 vídeos catalogados; destaque à 11ª aula (Psicodélicos, Profa. Dra. Eliana Rodrigues) da XIV edição UNIFESP."
+              "description": "Auditoria do canal MovReCam — 285 vídeos catalogados, com embeds das aulas da XIV edição UNIFESP para revisão in-page."
             },
             {
               "label": "Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal",

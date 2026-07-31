@@ -164,11 +164,11 @@ function renderSorteioPage(config) {
       ? '<li>Preencha o Google Forms com dados reais.</li>' +
         '<li>As respostas ficam na planilha do Google Forms.</li>' +
         '<li>O sorteio é gratuito e sem compra obrigatória.</li>' +
-        '<li>Acompanhe o canal <a href="https://www.youtube.com/@InspetorBudGanja" target="_blank" rel="noopener noreferrer">@InspetorBudGanja</a>.</li>'
+        '<li>Acompanhe o canal <a href="/videos/">@InspetorBudGanja</a>.</li>'
       : '<li>Uma inscrição por e-mail e por CPF.</li>' +
         '<li>Use dados reais para contato em caso de premiação.</li>' +
         '<li>O sorteio é gratuito e sem compra obrigatória.</li>' +
-        '<li>Acompanhe o canal <a href="https://www.youtube.com/@InspetorBudGanja" target="_blank" rel="noopener noreferrer">@InspetorBudGanja</a>.</li>';
+        '<li>Acompanhe o canal <a href="/videos/">@InspetorBudGanja</a>.</li>';
   }
 
   if (googleWrap) googleWrap.hidden = !googleMode;
