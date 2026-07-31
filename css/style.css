@@ -8336,6 +8336,114 @@ body[data-page="apresentacao-unifesp"] .apresentacao-url a {
     }
 }
 
+@media (max-width: 719px) {
+    /* Telemovel: radio + Comunidade na barra; resto no menu */
+    #site-header .header-quick-nav {
+        display: flex;
+        align-items: center;
+        flex: 1 1 auto;
+        min-width: 0;
+        max-width: 100%;
+        justify-content: flex-start;
+        overflow: visible;
+        padding: 0;
+    }
+
+    #site-header .header-quick-track {
+        display: inline-flex;
+        align-items: center;
+        flex-shrink: 0;
+        gap: 6px;
+    }
+
+    #site-header .header-quick-nav .header-quick-link {
+        display: none;
+    }
+
+    #site-header .header-quick-nav .header-quick-link--mobile-bar {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        min-width: 34px;
+        height: 34px;
+        padding: 0 10px 0 8px;
+        border-radius: 10px;
+        border: 1px solid var(--hq-icon-border);
+        background: var(--hq-icon-bg);
+        box-shadow: var(--hq-icon-shadow);
+        color: var(--hq-label);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        max-width: none;
+    }
+
+    #site-header .header-quick-nav .header-quick-link--mobile-bar .header-quick-link-icon {
+        width: auto;
+        height: auto;
+        padding: 0;
+        border: none;
+        background: none;
+        box-shadow: none;
+        font-size: 1.05rem;
+        transform: none;
+    }
+
+    #site-header .header-quick-nav .header-quick-link--mobile-bar .header-quick-link-label {
+        display: inline;
+        max-width: none;
+        overflow: visible;
+        text-overflow: clip;
+    }
+
+    #site-header .header-quick-nav .header-quick-link--mobile-bar .app-tile-tip {
+        display: none !important;
+    }
+
+    #site-header .header-quick-nav .header-quick-link--mobile-bar:hover,
+    #site-header .header-quick-nav .header-quick-link--mobile-bar:focus-visible {
+        transform: translateY(-1px);
+        background: linear-gradient(160deg, var(--hq-accent-strong), var(--hq-accent-soft));
+        box-shadow: inset 0 0 0 1px var(--hq-accent-border), var(--hq-icon-shadow);
+    }
+
+    #site-header .header-quick-nav .header-quick-link--mobile-bar.is-active {
+        background: linear-gradient(160deg, var(--hq-accent-strong), var(--hq-accent-soft));
+        box-shadow:
+            inset 0 0 0 1px var(--hq-accent-border),
+            0 3px 12px var(--hq-accent-soft);
+    }
+
+    #site-header .header-radio-host:not(:empty) {
+        flex: 0 0 auto;
+        padding-right: 0;
+        margin-right: 0;
+        border-right: none;
+    }
+
+    #site-header .header-chrome--main {
+        gap: 6px;
+    }
+
+    #site-header .header-right {
+        gap: 2px;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    /* Ecran muito estreito: so icone da Comunidade */
+    #site-header .header-quick-nav .header-quick-link--mobile-bar {
+        padding: 0 8px;
+        gap: 0;
+    }
+
+    #site-header .header-quick-nav .header-quick-link--mobile-bar .header-quick-link-label {
+        display: none;
+    }
+}
 /* Drawer ? glass + hubs (desktop e mobile) */
 .mobile-menu-scrim {
     position: fixed;

@@ -1271,7 +1271,8 @@ function getSiteHubNav() {
         label: i18n('nav.community', 'Comunidade'),
         tip: i18n('nav.quickCommunityTip', 'Feed de fotos do diário de pesquisas'),
         prefixes: '/comunidade',
-        tone: 'comunidade'
+        tone: 'comunidade',
+        mobileBar: true
       },
       {
         href: '/videos/',
@@ -1390,7 +1391,10 @@ function getSiteHubNav() {
 function buildDesktopQuickNavHTML() {
   const items = getSiteHubNav().quick;
   const links = items.map(function (item) {
-    const cls = 'header-quick-link' + (item.tone ? ' header-quick-link--' + item.tone : '');
+    const cls =
+      'header-quick-link' +
+      (item.tone ? ' header-quick-link--' + item.tone : '') +
+      (item.mobileBar ? ' header-quick-link--mobile-bar' : '');
     return (
       '<a href="' + escapeNavText(item.href) + '" class="' + cls + '"' +
       ' data-active-prefixes="' + escapeNavText(item.prefixes) + '"' +
