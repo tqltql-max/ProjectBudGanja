@@ -3,7 +3,7 @@ function i18nHome(key, fallback) {
 }
 
 function homeLocale() {
-  return (window.BudGanjaI18n && window.BudGanjaI18n.getLocale()) || 'en';
+  return (window.BudGanjaI18n && window.BudGanjaI18n.getLocale()) || 'pt-BR';
 }
 
 function formatDatePtBR(iso) {
@@ -115,7 +115,14 @@ async function loadSorteioBanner() {
   const joinEl = banner.querySelector('a.botao-home');
 
   if (badgeEl) badgeEl.textContent = i18nHome('pages.home.giveawayBadge', '🎁 Sorteio ativo');
-  if (titleEl) titleEl.textContent = config.titulo || i18nHome('pages.home.giveawayTitle', 'Sorteio do laboratório');
+  if (titleEl) {
+    // Título da API é PT; em EN/ES preferir string i18n genérica.
+    if (homeLocale() === 'pt-BR' && config.titulo) {
+      titleEl.textContent = config.titulo;
+    } else {
+      titleEl.textContent = i18nHome('pages.home.giveawayTitle', config.titulo || 'Sorteio do laboratório');
+    }
+  }
   if (prizeEl && config.premios && config.premios.length) {
     prizeEl.textContent = config.premios.map((p) => p.label).join(' · ');
   }

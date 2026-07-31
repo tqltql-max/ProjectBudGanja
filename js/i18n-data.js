@@ -40,10 +40,15 @@ window.__I18N_LOCALES__ = {
       "share": "Share",
       "shareAria": "Share this publication",
       "shareCopied": "Link copied!",
-      "privacyUpdatedDate": "June 26, 2026"
+      "privacyUpdatedDate": "July 30, 2026"
     },
     "posts": {
-      "summaryOnly": "(summary; full article in Portuguese)"
+      "summaryOnly": "(summary; full article in Portuguese)",
+      "backTo": "← Back to {label}",
+      "publishedOn": "Published on {date}",
+      "categoryInspection": "Inspections",
+      "categoryEquipment": "Equipment",
+      "categoryResearch": "Research"
     },
     "nav": {
       "library": "Library",
@@ -203,6 +208,91 @@ window.__I18N_LOCALES__ = {
         "label": "Shop",
         "tileLabel": "Shop",
         "description": "Parts used in the lab cloners and builds."
+      },
+      "plantas": {
+        "label": "Plants",
+        "tileLabel": "Plants",
+        "description": "Catalog of Brazilian herbal plants."
+      },
+      "unifesp": {
+        "label": "UNIFESP course",
+        "tileLabel": "UNIFESP",
+        "description": "Hub for the 14th extension course on medicinal cannabis."
+      },
+      "post-guia-calculadora-super-solo": {
+        "label": "Super Soil: usage guide",
+        "tileLabel": "Super Soil: usage guide",
+        "description": "How to calculate ingredient ratios for organic super soil at any volume."
+      },
+      "post-guia-calculadora-luximetro": {
+        "label": "Lux meter: usage guide",
+        "tileLabel": "Lux meter: usage guide",
+        "description": "How to measure PPFD and lux with your phone camera — calibration, placement and reliable readings."
+      },
+      "post-otimizacao-propagacao-vegetal": {
+        "label": "Controlled germination process",
+        "tileLabel": "Controlled germination process",
+        "description": "Sowing and cloning protocol with biodegradable pots and strict microclimate control."
+      },
+      "post-inspecao-ventilacao-tenda": {
+        "label": "Inspection: tent ventilation system",
+        "tileLabel": "Inspection: tent ventilation…",
+        "description": "Airflow, noise and heat-exchange check on the lab exhaust duct and carbon filter."
+      },
+      "post-inspecao-marshydro-brasil": {
+        "label": "Inspection: Mars Hydro Brasil equipment",
+        "tileLabel": "Inspection: Mars Hydro Brasil…",
+        "description": "Audit of the marshydros.com.br catalog — TS/FC/FC-EVO lights, tents, iFresh ventilation and kits with national shipping, cross-checked against lab sizing."
+      },
+      "post-inspecao-canal-canabinall": {
+        "label": "Inspection: CANABinALL channel — Prof. Dr. Eliana Rodrigues",
+        "tileLabel": "Inspection: CANABinALL channel…",
+        "description": "Audit of the CANABinALL channel (@canabinall) — science outreach from UNIFESP curated by Prof. Dr. Eliana Rodrigues."
+      },
+      "post-inspecao-canal-movrecam": {
+        "label": "Inspection: MovReCam channel — UNIFESP lectures",
+        "tileLabel": "Inspection: MovReCam channel…",
+        "description": "Audit of the MovReCam channel — archive of UNIFESP course lectures and the Cannabis Regulation Movement."
+      },
+      "post-inspecao-curso-unifesp-cannabis-medicinal": {
+        "label": "Inspection: UNIFESP course — medicinal Cannabis sativa L.",
+        "tileLabel": "Inspection: UNIFESP course…",
+        "description": "Audit of the 14th UNIFESP extension course with MovReCam — free seats, distance learning via YouTube and certificate at 75% attendance."
+      },
+      "video-zwKXgqZMPro": {
+        "label": "Optimizing indoor growing",
+        "tileLabel": "Optimizing indoor growing",
+        "description": "Organize light, ventilation and space for an efficient indoor environment."
+      },
+      "video-tdMl4X5h83Y": {
+        "label": "Propagation and cloning",
+        "tileLabel": "Propagation and cloning",
+        "description": "Multiply plants with accessible techniques and everyday materials."
+      },
+      "video-V6LO6nXh8bI": {
+        "label": "The science of flowering",
+        "tileLabel": "The science of flowering",
+        "description": "1. The trigger (photoperiod)"
+      },
+      "video-OO7d72tHwJY": {
+        "label": "Cannabis architecture",
+        "tileLabel": "Cannabis architecture",
+        "description": "Everything about your plant structure"
+      },
+      "video-092X69hq8Os": {
+        "label": "Living organic soil",
+        "tileLabel": "Living organic soil",
+        "description": "Make your own Super Soil"
+      },
+      "video-XIrSJWjhd6Q": {
+        "label": "Cannabis nutrition",
+        "tileLabel": "Cannabis nutrition",
+        "description": "Plant feeding in each phase — from vegetative to transition."
+      },
+      "video-38uUEL1B-v4": {
+        "label": "Cannabis growing: the beginning",
+        "tileLabel": "Cannabis growing: the beginning",
+        "description": "Cannabis growing comes down to 4 stages and essential factors."
       }
     },
     "pages": {
@@ -318,6 +408,116 @@ window.__I18N_LOCALES__ = {
         "text": "The lab is building the new site — guides, tools and shop coming soon.",
         "note": "Thanks for your patience. Check back soon.",
         "admin": "Admin area"
+      },
+      "plantas": {
+        "eyebrow": "Catalog",
+        "title": "Herbal plants",
+        "subtitle": "Educational sheets of species used in Brazilian folk medicine and phytotherapy — traditional uses, plant parts and editorial cautions.",
+        "disclaimerStrong": "Educational notice.",
+        "disclaimer": "Educational sheets on Brazilian herbal and medicinal plants. They do not replace professional health advice or legal counsel.",
+        "searchLabel": "Search",
+        "searchPlaceholder": "Common name, scientific name or tag…",
+        "tagLabel": "Tag",
+        "allTags": "All tags",
+        "count": "{n} plants",
+        "empty": "No plants found.",
+        "docTitle": "Herbal plants | Inspetor BudGanja"
+      },
+      "videos": {
+        "eyebrow": "YouTube channel",
+        "title": "Videos",
+        "subtitle": "Inspections, tutorials and updates published on the channel.",
+        "loading": "Loading videos…",
+        "empty": "No videos available.",
+        "docTitle": "Videos | Inspetor BudGanja"
+      },
+      "inspections": {
+        "eyebrow": "Library",
+        "title": "Inspections",
+        "subtitle": "Technical reports with a verifiable method — guide, channels, equipment and courses.",
+        "loading": "Loading…",
+        "empty": "No inspections published yet.",
+        "docTitle": "Inspections | Inspetor BudGanja"
+      },
+      "research": {
+        "eyebrow": "Library",
+        "title": "Research",
+        "subtitle": "Lab research and approved community studies.",
+        "loading": "Loading…",
+        "empty": "No research published yet.",
+        "docTitle": "Research | Inspetor BudGanja"
+      },
+      "tools": {
+        "eyebrow": "Lab",
+        "title": "Tools",
+        "subtitle": "Calculators and utilities to optimize your grow.",
+        "docTitle": "Tools | Inspetor BudGanja"
+      },
+      "equipment": {
+        "eyebrow": "Lab",
+        "title": "Equipment",
+        "subtitle": "Documented home builds with accessible materials.",
+        "docTitle": "Equipment | Inspetor BudGanja"
+      },
+      "cultivo": {
+        "eyebrow": "Community",
+        "title": "Research Diary",
+        "subtitle": "Document any plant grow: day-by-day logs, phase roadmap and plan.",
+        "docTitle": "Research Diary | Inspetor BudGanja"
+      },
+      "community": {
+        "eyebrow": "Community",
+        "title": "Community",
+        "subtitle": "Diary photo feed, plant ID requests and community comments.",
+        "docTitle": "Community | Inspetor BudGanja"
+      },
+      "giveaways": {
+        "eyebrow": "Community",
+        "title": "Giveaways",
+        "subtitle": "Active and past lab giveaways.",
+        "docTitle": "Giveaways | Inspetor BudGanja"
+      },
+      "shop": {
+        "eyebrow": "Partners",
+        "title": "Shop",
+        "subtitle": "Parts used in the lab cloners and builds.",
+        "docTitle": "Shop | Inspetor BudGanja"
+      },
+      "unifesp": {
+        "eyebrow": "Academic extension",
+        "title": "14th course — medicinal Cannabis sativa L.",
+        "subtitle": "Hub for the UNIFESP extension course in partnership with MovReCam.",
+        "docTitle": "UNIFESP course | Inspetor BudGanja"
+      },
+      "about": {
+        "eyebrow": "About",
+        "title": "About Inspetor BudGanja",
+        "subtitle": "Brazilian phytotherapy and medicinal plants lab.",
+        "docTitle": "About | Inspetor BudGanja"
+      },
+      "contact": {
+        "eyebrow": "Contact",
+        "title": "Contact Inspetor BudGanja",
+        "subtitle": "Reach out about the project, partnerships and questions.",
+        "docTitle": "Contact | Inspetor BudGanja"
+      },
+      "privacy": {
+        "eyebrow": "Legal",
+        "title": "Privacy Policy",
+        "subtitle": "How we handle data on this site.",
+        "docTitle": "Privacy | Inspetor BudGanja"
+      },
+      "login": {
+        "eyebrow": "Account",
+        "title": "Create a site account",
+        "subtitle": "Sign in to access the diary, community and dashboard.",
+        "docTitle": "Sign in | Inspetor BudGanja"
+      },
+      "profile": {
+        "eyebrow": "Account",
+        "title": "Account",
+        "subtitle": "Manage your profile and sessions.",
+        "docTitle": "Account | Inspetor BudGanja"
       }
     }
   },
@@ -339,7 +539,7 @@ window.__I18N_LOCALES__ = {
       "menuClose": "Cerrar menú de navegación",
       "mobileNav": "Navegación",
       "mobileSearch": "Buscar en el sitio",
-      "installApp": "Instalar app",
+      "installApp": "Instalar la app",
       "langLabel": "Idioma",
       "langChoose": "Elegir idioma",
       "home": "Inicio",
@@ -349,11 +549,11 @@ window.__I18N_LOCALES__ = {
       "footerLegal": "Contenido educativo.",
       "footerPrivacy": "Privacidad",
       "footerUpdated": "actualizado el",
-      "adminArea": "Área administrativa",
+      "adminArea": "Área de administración",
       "profile": "Mi cuenta",
-      "login": "Entrar",
+      "login": "Iniciar sesión",
       "panel": "Panel",
-      "openProfile": "Abrir perfil",
+      "openProfile": "Abrir el perfil",
       "accessProfile": "Acceder al perfil",
       "searchHint": "Escribe para buscar páginas y artículos",
       "searchNoResults": "Ningún resultado para “{q}”",
@@ -361,10 +561,15 @@ window.__I18N_LOCALES__ = {
       "share": "Compartir",
       "shareAria": "Compartir esta publicación",
       "shareCopied": "¡Enlace copiado!",
-      "privacyUpdatedDate": "26 de junio de 2026"
+      "privacyUpdatedDate": "30 de julio de 2026"
     },
     "posts": {
-      "summaryOnly": "(resumen; artículo completo en portugués)"
+      "summaryOnly": "(resumen; artículo completo en portugués)",
+      "backTo": "← Volver a {label}",
+      "publishedOn": "Publicado el {date}",
+      "categoryInspection": "Inspecciones",
+      "categoryEquipment": "Equipos",
+      "categoryResearch": "Investigaciones"
     },
     "nav": {
       "library": "Biblioteca",
@@ -376,8 +581,8 @@ window.__I18N_LOCALES__ = {
       "academicExtension": "Extensión académica",
       "equipment": "Equipos",
       "calculators": "Herramientas",
-      "luxMeter": "Luxímetro",
-      "videos": "Vídeos",
+      "luxMeter": "Luxómetro",
+      "videos": "Videos",
       "giveaways": "Sorteos",
       "about": "Acerca de",
       "contact": "Contacto",
@@ -402,8 +607,8 @@ window.__I18N_LOCALES__ = {
       "quickResearchTip": "Investigaciones del laboratorio y de la comunidad",
       "quickInspectionsTip": "Guía, canales y cursos",
       "quickEquipmentTip": "Clonadoras y guías de montaje",
-      "quickCalculatorsTip": "VPD, pH, EC, luxímetro y más",
-      "quickVideosTip": "Últimos vídeos del canal",
+      "quickCalculatorsTip": "VPD, pH, EC, luxómetro y más",
+      "quickVideosTip": "Últimos videos del canal",
       "quickGiveawaysTip": "Promociones activas del laboratorio",
       "quickLibraryTip": "Investigaciones, inspecciones y vídeos",
       "quickToolsTip": "Calculadoras y equipos",
@@ -480,8 +685,8 @@ window.__I18N_LOCALES__ = {
         "description": "VPD, DLI, EC, pH y más."
       },
       "luximetro": {
-        "label": "Luxímetro",
-        "tileLabel": "Luxímetro",
+        "label": "Luxómetro",
+        "tileLabel": "Luxómetro",
         "description": "Medir luz con la cámara del móvil."
       },
       "vpd": {
@@ -518,12 +723,97 @@ window.__I18N_LOCALES__ = {
       "super-solo": {
         "label": "Suelo",
         "tileLabel": "Suelo",
-        "description": "Dosis de amendments para super suelo orgánico según el volumen de sustrato."
+        "description": "Dosis de enmiendas para super suelo orgánico según el volumen de sustrato."
       },
       "loja": {
         "label": "Tienda",
         "tileLabel": "Tienda",
         "description": "Materiales usados en las clonadoras y equipos del laboratorio."
+      },
+      "plantas": {
+        "label": "Plantas",
+        "tileLabel": "Plantas",
+        "description": "Catálogo de plantas fitoterapéuticas de Brasil."
+      },
+      "unifesp": {
+        "label": "Curso UNIFESP",
+        "tileLabel": "UNIFESP",
+        "description": "Hub del XIV curso de extensión sobre cannabis medicinal."
+      },
+      "post-guia-calculadora-super-solo": {
+        "label": "Super Suelo: guía de uso",
+        "tileLabel": "Super Suelo: guía de uso",
+        "description": "Cómo calcular proporciones de ingredientes para armar super suelo orgánico en cualquier volumen."
+      },
+      "post-guia-calculadora-luximetro": {
+        "label": "Luxímetro: guía de uso",
+        "tileLabel": "Luxímetro: guía de uso",
+        "description": "Cómo medir PPFD y lux con la cámara del móvil — calibración, posición y lecturas confiables."
+      },
+      "post-otimizacao-propagacao-vegetal": {
+        "label": "Proceso de germinación controlada",
+        "tileLabel": "Proceso de germinación controlada",
+        "description": "Protocolo de siembra y clonación con macetas biodegradables y control microclimático estricto."
+      },
+      "post-inspecao-ventilacao-tenda": {
+        "label": "Inspección: sistema de ventilación de la carpa",
+        "tileLabel": "Inspección: sistema de ventilación…",
+        "description": "Verificación de flujo de aire, ruido e intercambio térmico en el ducto de extracción y filtro de carbón del laboratorio."
+      },
+      "post-inspecao-marshydro-brasil": {
+        "label": "Inspección: equipos Mars Hydro Brasil",
+        "tileLabel": "Inspección: equipos Mars Hydro…",
+        "description": "Auditoría del catálogo marshydros.com.br — luces TS/FC/FC-EVO, carpas, ventilación iFresh y kits con envío nacional, contrastados con el dimensionamiento del laboratorio."
+      },
+      "post-inspecao-canal-canabinall": {
+        "label": "Inspección: canal CANABinALL — Profa. Dra. Eliana Rodrigues",
+        "tileLabel": "Inspección: canal CANABinALL…",
+        "description": "Auditoría del canal CANABinALL (@canabinall) — divulgación científica UNIFESP bajo curaduría de la Profa. Dra. Eliana Rodrigues."
+      },
+      "post-inspecao-canal-movrecam": {
+        "label": "Inspección: canal MovReCam — clases UNIFESP",
+        "tileLabel": "Inspección: canal MovReCam…",
+        "description": "Auditoría del canal MovReCam — archivo de clases del curso UNIFESP y del Movimiento por la Regulación del Cannabis."
+      },
+      "post-inspecao-curso-unifesp-cannabis-medicinal": {
+        "label": "Inspección: curso UNIFESP — Cannabis sativa L. medicinal",
+        "tileLabel": "Inspección: curso UNIFESP…",
+        "description": "Auditoría del XIV curso de extensión de la UNIFESP con MovReCam — cupos gratuitos, aprendizaje a distancia por YouTube y certificado con 75% de asistencia."
+      },
+      "video-zwKXgqZMPro": {
+        "label": "Optimizando el cultivo indoor",
+        "tileLabel": "Optimizando el cultivo indoor",
+        "description": "Organiza luz, ventilación y espacio para un ambiente indoor eficiente."
+      },
+      "video-tdMl4X5h83Y": {
+        "label": "Propagación y clonación",
+        "tileLabel": "Propagación y clonación",
+        "description": "Multiplica plantas con técnicas accesibles y materiales del día a día."
+      },
+      "video-V6LO6nXh8bI": {
+        "label": "La ciencia de la floración",
+        "tileLabel": "La ciencia de la floración",
+        "description": "1. El disparador (fotoperiodo)"
+      },
+      "video-OO7d72tHwJY": {
+        "label": "Arquitectura de la cannabis",
+        "tileLabel": "Arquitectura de la cannabis",
+        "description": "Todo sobre la estructura de tu planta"
+      },
+      "video-092X69hq8Os": {
+        "label": "Suelo vivo orgánico",
+        "tileLabel": "Suelo vivo orgánico",
+        "description": "Haz tu propio Super Suelo"
+      },
+      "video-XIrSJWjhd6Q": {
+        "label": "Nutrición de la cannabis",
+        "tileLabel": "Nutrición de la cannabis",
+        "description": "Alimentación de la planta en cada fase — del vegetativo a la transición."
+      },
+      "video-38uUEL1B-v4": {
+        "label": "Cultivo de cannabis: el comienzo",
+        "tileLabel": "Cultivo de cannabis: el comienzo",
+        "description": "El cultivo de cannabis se resume en 4 etapas y factores esenciales."
       }
     },
     "pages": {
@@ -552,14 +842,14 @@ window.__I18N_LOCALES__ = {
         "cardEquipText": "Montaje casero con piezas del mercado — manuales completos de clonadora e hidrocloradora.",
         "cardEquipBtn": "Ver equipos",
         "cardCalcTitle": "Herramientas",
-        "cardCalcText": "Utilidades para optimizar tu cultivo: VPD, DLI, EC, luxímetro y más.",
+        "cardCalcText": "Utilidades para optimizar tu cultivo: VPD, DLI, EC, luxómetro y más.",
         "cardCalcBtn": "Ver herramientas",
         "cardCommunityTitle": "Comunidad",
         "cardCommunityText": "Feed de fotos del diario, identificación de plantas y comentarios de la comunidad.",
         "cardCommunityBtn": "Abrir comunidad",
-        "cardVideosTitle": "Vídeos",
+        "cardVideosTitle": "Videos",
         "cardVideosText": "Contenido del canal @InspetorBudGanja — inspecciones, tutoriales y novedades.",
-        "cardVideosBtn": "Ver vídeos",
+        "cardVideosBtn": "Ver videos",
         "cardRadioTitle": "BudGanja Radio",
         "cardRadioText": "Escucha la playlist del laboratorio — BudGanja Radio.",
         "cardRadioBtn": "Abrir radio",
@@ -587,7 +877,7 @@ window.__I18N_LOCALES__ = {
         "pillarLibraryTitle": "Biblioteca",
         "pillarLibraryText": "Plantas, UNIFESP, investigaciones e inspecciones en un solo lugar.",
         "pillarToolsTitle": "Herramientas rápidas",
-        "pillarToolsText": "Calculadoras de ambiente, luxímetro por cámara y utilidades del día a día.",
+        "pillarToolsText": "Calculadoras de ambiente, luxómetro por cámara y utilidades del día a día.",
         "pillarCommunityTitle": "Comunidad",
         "pillarCommunityText": "Videos, sorteos y novedades en @InspetorBudGanja.",
         "giveawayBadge": "🎁 Sorteo activo",
@@ -600,7 +890,7 @@ window.__I18N_LOCALES__ = {
         "catResearch": "Investigación",
         "cardCultivoTip": "Documenta el cultivo de cualquier planta — diario, hoja de ruta y plan listos para publicar.",
         "cardPlantasTip": "Fichas de especies usadas en la medicina popular brasileña.",
-        "cardCalcTip": "Utilidades para optimizar tu cultivo: VPD, DLI, EC, luxímetro y más.",
+        "cardCalcTip": "Utilidades para optimizar tu cultivo: VPD, DLI, EC, luxómetro y más.",
         "cardResearchTip": "Investigaciones del laboratorio y estudios de la comunidad aprobados para publicación.",
         "cardInspectionsTip": "Informes de inspección, chequeos de campo y formación.",
         "cardEquipTip": "Equipos documentados con materiales accesibles y manuales completos.",
@@ -610,9 +900,9 @@ window.__I18N_LOCALES__ = {
         "cardGiveawaysTip": "Sorteos activos e históricos del laboratorio.",
         "pillarUnifespEyebrow": "Extensión",
         "pillarUnifespTitle": "Curso UNIFESP — Cannabis medicinal",
-        "pillarUnifespText": "XIV curso de extensión gratuito: 10 mil vacantes, 57 h EaD y certificado con 75% de asistencia. Confirma inscripción en SIEX y lee nuestra inspección del programa.",
+        "pillarUnifespText": "XIV curso de extensión gratuito: 10 mil cupos, 57 h a distancia y certificado con 75% de asistencia. Confirma inscripción en SIEX y lee nuestra inspección del programa.",
         "pillarUnifespCtaSiex": "Inscripción SIEX",
-        "pillarUnifespCtaHub": "Abrir hub UNIFESP",
+        "pillarUnifespCtaHub": "Abrir el hub UNIFESP",
         "pillarPlantasEyebrow": "Catálogo",
         "pillarPlantasTitle": "Plantas fitoterapéuticas",
         "pillarPlantasText": "Fichas curadas de especies usadas en la medicina popular brasileña — usos tradicionales, partes usadas y cuidados editoriales.",
@@ -623,12 +913,12 @@ window.__I18N_LOCALES__ = {
         "channelMovrecamEyebrow": "Clases en vivo",
         "channelMovrecamTitle": "MovReCam",
         "channelMovrecamText": "Transmisión de las clases del curso UNIFESP y archivo del Movimiento por la Regulación del Cannabis.",
-        "channelMovrecamCtaYt": "Abrir canal",
+        "channelMovrecamCtaYt": "Abrir el canal",
         "channelMovrecamCtaInsp": "Ver inspección",
         "channelCanabinallEyebrow": "Divulgación científica",
         "channelCanabinallTitle": "CANABinALL",
-        "channelCanabinallText": "Proyecto de extensión UNIFESP con la Profa. Dra. Eliana Rodrigues — literacia cannábica en portugués, todas las semanas.",
-        "channelCanabinallCtaYt": "Abrir canal",
+        "channelCanabinallText": "Proyecto de extensión UNIFESP con la Profa. Dra. Eliana Rodrigues — alfabetización cannábica en portugués, todas las semanas.",
+        "channelCanabinallCtaYt": "Abrir el canal",
         "channelCanabinallCtaInsp": "Ver inspección",
         "latestPlantas": "Plantas →",
         "latestUnifesp": "UNIFESP →"
@@ -638,7 +928,117 @@ window.__I18N_LOCALES__ = {
         "title": "Estamos preparando novedades",
         "text": "El laboratorio está montando la nueva versión del sitio — guías, herramientas y tienda pronto.",
         "note": "Gracias por la paciencia. Vuelve pronto.",
-        "admin": "Área administrativa"
+        "admin": "Área de administración"
+      },
+      "plantas": {
+        "eyebrow": "Catálogo",
+        "title": "Plantas fitoterapéuticas",
+        "subtitle": "Fichas educativas de especies usadas en la medicina popular y la fitoterapia brasileña — usos tradicionales, partes usadas y cuidados editoriales.",
+        "disclaimerStrong": "Aviso educacional.",
+        "disclaimer": "Fichas educativas sobre plantas fitoterapéuticas y medicinales de Brasil. No sustituyen orientación profesional de salud ni asesoramiento jurídico.",
+        "searchLabel": "Buscar",
+        "searchPlaceholder": "Nombre popular, científico o etiqueta…",
+        "tagLabel": "Etiqueta",
+        "allTags": "Todas las etiquetas",
+        "count": "{n} plantas",
+        "empty": "Ninguna planta encontrada.",
+        "docTitle": "Plantas fitoterapéuticas | Inspetor BudGanja"
+      },
+      "videos": {
+        "eyebrow": "Canal de YouTube",
+        "title": "Videos",
+        "subtitle": "Inspecciones, tutoriales y novedades publicadas en el canal.",
+        "loading": "Cargando videos…",
+        "empty": "Ningún video disponible.",
+        "docTitle": "Videos | Inspetor BudGanja"
+      },
+      "inspections": {
+        "eyebrow": "Biblioteca",
+        "title": "Inspecciones",
+        "subtitle": "Informes técnicos con método verificable — guía, canales, equipos y cursos.",
+        "loading": "Cargando…",
+        "empty": "Ninguna inspección publicada aún.",
+        "docTitle": "Inspecciones | Inspetor BudGanja"
+      },
+      "research": {
+        "eyebrow": "Biblioteca",
+        "title": "Investigaciones",
+        "subtitle": "Investigaciones del laboratorio y estudios aprobados de la comunidad.",
+        "loading": "Cargando…",
+        "empty": "Ninguna investigación publicada aún.",
+        "docTitle": "Investigaciones | Inspetor BudGanja"
+      },
+      "tools": {
+        "eyebrow": "Laboratorio",
+        "title": "Herramientas",
+        "subtitle": "Calculadoras y utilidades para optimizar el cultivo.",
+        "docTitle": "Herramientas | Inspetor BudGanja"
+      },
+      "equipment": {
+        "eyebrow": "Laboratorio",
+        "title": "Equipos",
+        "subtitle": "Montajes caseros documentados con materiales accesibles.",
+        "docTitle": "Equipos | Inspetor BudGanja"
+      },
+      "cultivo": {
+        "eyebrow": "Comunidad",
+        "title": "Diario de investigaciones",
+        "subtitle": "Documenta el cultivo de cualquier planta: registros día a día, hoja de ruta por fase y plan.",
+        "docTitle": "Diario de investigaciones | Inspetor BudGanja"
+      },
+      "community": {
+        "eyebrow": "Comunidad",
+        "title": "Comunidad",
+        "subtitle": "Feed de fotos del diario, identificación de plantas y comentarios.",
+        "docTitle": "Comunidad | Inspetor BudGanja"
+      },
+      "giveaways": {
+        "eyebrow": "Comunidad",
+        "title": "Sorteos",
+        "subtitle": "Sorteos activos e históricos del laboratorio.",
+        "docTitle": "Sorteos | Inspetor BudGanja"
+      },
+      "shop": {
+        "eyebrow": "Socios",
+        "title": "Tienda",
+        "subtitle": "Materiales usados en las clonadoras y equipos del laboratorio.",
+        "docTitle": "Tienda | Inspetor BudGanja"
+      },
+      "unifesp": {
+        "eyebrow": "Extensión académica",
+        "title": "XIV curso — Cannabis sativa L. medicinal",
+        "subtitle": "Hub del curso de extensión de la UNIFESP en alianza con MovReCam.",
+        "docTitle": "Curso UNIFESP | Inspetor BudGanja"
+      },
+      "about": {
+        "eyebrow": "Acerca de",
+        "title": "Sobre Inspetor BudGanja",
+        "subtitle": "Laboratorio de fitoterapia y plantas medicinales de Brasil.",
+        "docTitle": "Acerca de | Inspetor BudGanja"
+      },
+      "contact": {
+        "eyebrow": "Contacto",
+        "title": "Contacto con Inspetor BudGanja",
+        "subtitle": "Escríbenos sobre el proyecto, alianzas y dudas.",
+        "docTitle": "Contacto | Inspetor BudGanja"
+      },
+      "privacy": {
+        "eyebrow": "Legal",
+        "title": "Política de Privacidad",
+        "subtitle": "Cómo tratamos los datos en este sitio.",
+        "docTitle": "Privacidad | Inspetor BudGanja"
+      },
+      "login": {
+        "eyebrow": "Cuenta",
+        "title": "Crear cuenta en el sitio",
+        "subtitle": "Inicia sesión para acceder al diario, la comunidad y el panel.",
+        "docTitle": "Iniciar sesión | Inspetor BudGanja"
+      },
+      "profile": {
+        "eyebrow": "Cuenta",
+        "title": "Cuenta",
+        "subtitle": "Gestiona tu perfil y sesiones.",
+        "docTitle": "Cuenta | Inspetor BudGanja"
       }
     }
   },
@@ -675,17 +1075,22 @@ window.__I18N_LOCALES__ = {
       "login": "Entrar",
       "panel": "Painel",
       "openProfile": "Abrir perfil",
-      "accessProfile": "Aceder ao perfil",
+      "accessProfile": "Acessar o perfil",
       "searchHint": "Digite para buscar páginas e artigos",
       "searchNoResults": "Nenhum resultado para “{q}”",
       "searchShortcut": "Buscar (Ctrl+K)",
       "share": "Compartilhar",
       "shareAria": "Compartilhar esta publicação",
       "shareCopied": "Link copiado!",
-      "privacyUpdatedDate": "26 de junho de 2026"
+      "privacyUpdatedDate": "30 de julho de 2026"
     },
     "posts": {
-      "summaryOnly": "(resumo; artigo completo em português)"
+      "summaryOnly": "(resumo; artigo completo em português)",
+      "backTo": "← Voltar para {label}",
+      "publishedOn": "Publicado em {date}",
+      "categoryInspection": "Inspeções",
+      "categoryEquipment": "Equipamentos",
+      "categoryResearch": "Pesquisas"
     },
     "nav": {
       "library": "Biblioteca",
@@ -694,7 +1099,7 @@ window.__I18N_LOCALES__ = {
       "growingGuide": "Guia de Cultivo",
       "research": "Pesquisas",
       "inspections": "Inspeções",
-      "academicExtension": "Extensão académica",
+      "academicExtension": "Extensão acadêmica",
       "equipment": "Equipamentos",
       "calculators": "Ferramentas",
       "luxMeter": "Luxímetro",
@@ -839,19 +1244,104 @@ window.__I18N_LOCALES__ = {
       "super-solo": {
         "label": "Solo",
         "tileLabel": "Solo",
-        "description": "Dosagens de amendments para super solo orgânico a partir do volume de substrato."
+        "description": "Dosagens de aditivos para super solo orgânico a partir do volume de substrato."
       },
       "loja": {
         "label": "Loja",
         "tileLabel": "Loja",
         "description": "Materiais usados nas clonadoras e equipamentos do laboratório."
+      },
+      "plantas": {
+        "label": "Plantas",
+        "tileLabel": "Plantas",
+        "description": "Catálogo de plantas fitoterápicas do Brasil."
+      },
+      "unifesp": {
+        "label": "Curso UNIFESP",
+        "tileLabel": "UNIFESP",
+        "description": "Hub do XIV curso de extensão sobre cannabis medicinal."
+      },
+      "post-guia-calculadora-super-solo": {
+        "label": "Super Solo: Guia de Uso",
+        "tileLabel": "Super Solo: Guia de Uso",
+        "description": "Como calcular proporções de ingredientes para montar super solo orgânico em qualquer volume."
+      },
+      "post-guia-calculadora-luximetro": {
+        "label": "Luxímetro: Guia de Uso",
+        "tileLabel": "Luxímetro: Guia de Uso",
+        "description": "Como medir PPFD e lux com a câmera do celular — calibração, posicionamento e leituras confiáveis."
+      },
+      "post-otimizacao-propagacao-vegetal": {
+        "label": "Processo de Germinação Controlado",
+        "tileLabel": "Processo de Germinação Controla…",
+        "description": "Protocolo de semeadura e clonagem com vasos biodegradáveis e controle microclimático rigoroso."
+      },
+      "post-inspecao-ventilacao-tenda": {
+        "label": "Inspeção: Sistema de Ventilação da Tenda",
+        "tileLabel": "Inspeção: Sistema de Ventilação…",
+        "description": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório."
+      },
+      "post-inspecao-marshydro-brasil": {
+        "label": "Inspeção: Equipamentos Mars Hydro Brasil",
+        "tileLabel": "Inspeção: Equipamentos Mars Hyd…",
+        "description": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório."
+      },
+      "post-inspecao-canal-canabinall": {
+        "label": "Inspeção: Canal CANABinALL — Profa. Dra. Eliana Rodrigues",
+        "tileLabel": "Inspeção: Canal CANABinALL — Pr…",
+        "description": "Auditoria do canal CANABinALL (@canabinall) — divulgação científica UNIFESP sob curadoria da Profa. Dra. Eliana Rodrigues."
+      },
+      "post-inspecao-canal-movrecam": {
+        "label": "Inspeção: Canal MovReCam — aulas UNIFESP",
+        "tileLabel": "Inspeção: Canal MovReCam — aula…",
+        "description": "Auditoria do canal MovReCam — arquivo de aulas do curso UNIFESP e do Movimento pela Regulação do Cannabis."
+      },
+      "post-inspecao-curso-unifesp-cannabis-medicinal": {
+        "label": "Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal",
+        "tileLabel": "Inspeção: Curso UNIFESP — Canna…",
+        "description": "Auditoria do XIV Curso de extensão da UNIFESP em parceria com o MovReCam — 10 mil vagas gratuitas, 57 h EaD via YouTube, certificado com 75% de presença."
+      },
+      "video-zwKXgqZMPro": {
+        "label": "Otimizando o Cultivo Indoor",
+        "tileLabel": "Otimizando o Cultivo Indoor",
+        "description": "Organize luz, ventilação e espaço para um ambiente indoor eficiente."
+      },
+      "video-tdMl4X5h83Y": {
+        "label": "Propagação e clonagem",
+        "tileLabel": "Propagação e clonagem",
+        "description": "Multiplique plantas com técnicas acessíveis e materiais do dia a dia."
+      },
+      "video-V6LO6nXh8bI": {
+        "label": "A Ciência da Floração",
+        "tileLabel": "A Ciência da Floração",
+        "description": "1. O Gatilho (Fotoperíodo)"
+      },
+      "video-OO7d72tHwJY": {
+        "label": "Arquitetura da Cannabis",
+        "tileLabel": "Arquitetura da Cannabis",
+        "description": "Tudo sobre a estrutura da sua planta"
+      },
+      "video-092X69hq8Os": {
+        "label": "Solo Vivo Orgânico",
+        "tileLabel": "Solo Vivo Orgânico",
+        "description": "Faça seu próprio Super Solo"
+      },
+      "video-XIrSJWjhd6Q": {
+        "label": "Nutrição da Cannabis",
+        "tileLabel": "Nutrição da Cannabis",
+        "description": "Alimentação da planta em cada fase — do vegetativo à transição."
+      },
+      "video-38uUEL1B-v4": {
+        "label": "Cultivo de Cannabis: o início",
+        "tileLabel": "Cultivo de Cannabis: o início",
+        "description": "O cultivo de cannabis resume-se em 4 etapas e fatores essenciais."
       }
     },
     "pages": {
       "home": {
         "heroEyebrow": "Fitoterapia brasileira · educação e cultivo responsável",
         "heroTitle": "Inspetor BudGanja",
-        "heroSubtitle": "Plantas medicinais do Brasil, extensão académica e laboratório prático num só lugar.",
+        "heroSubtitle": "Plantas medicinais do Brasil, extensão acadêmica e laboratório prático em um só lugar.",
         "areasTitle": "Laboratório e comunidade",
         "areasSubtitle": "Plantas, inspeções e diário — apoios ao estudo e ao cultivo responsável.",
         "pillarUnifespEyebrow": "Extensão",
@@ -924,13 +1414,13 @@ window.__I18N_LOCALES__ = {
         "youtubeSubscribe": "Inscrever-se no canal",
         "youtubeGiveaways": "Ver sorteios",
         "aboutTitle": "Sobre o Inspetor BudGanja",
-        "aboutText": "Laboratório de fitoterapia e plantas medicinais do Brasil: fichas educacionais, extensão académica e documentação prática de cultivo responsável.",
+        "aboutText": "Laboratório de fitoterapia e plantas medicinais do Brasil: fichas educacionais, extensão acadêmica e documentação prática de cultivo responsável.",
         "aboutMissionTitle": "Missão",
         "aboutMissionText": "Democratizar o conhecimento sobre plantas medicinais e cultivo responsável com documentação acessível e verificável.",
         "aboutYoutube": "Vídeos e tutoriais também no",
         "aboutContact": "Entrar em Contato",
         "pillarLibraryTitle": "Biblioteca",
-        "pillarLibraryText": "Plantas, UNIFESP, pesquisas e inspeções num só lugar.",
+        "pillarLibraryText": "Plantas, UNIFESP, pesquisas e inspeções em um só lugar.",
         "pillarToolsTitle": "Ferramentas rápidas",
         "pillarToolsText": "Ferramentas de ambiente, luxímetro por câmera e utilitários para o dia a dia.",
         "pillarCommunityTitle": "Comunidade",
@@ -960,6 +1450,116 @@ window.__I18N_LOCALES__ = {
         "text": "O laboratório está a montar a nova versão do site — guias, ferramentas e loja em breve.",
         "note": "Obrigado pela paciência. Volte daqui a pouco.",
         "admin": "Área administrativa"
+      },
+      "plantas": {
+        "eyebrow": "Catálogo",
+        "title": "Plantas fitoterápicas",
+        "subtitle": "Fichas educacionais de espécies usadas na medicina popular e na fitoterapia brasileira — usos tradicionais, partes usadas e cuidados editoriais.",
+        "disclaimerStrong": "Aviso educacional.",
+        "disclaimer": "Fichas educacionais de plantas fitoterápicas e medicinais do Brasil. Não substituem orientação profissional de saúde nem aconselhamento jurídico.",
+        "searchLabel": "Buscar",
+        "searchPlaceholder": "Nome popular, científico ou tag…",
+        "tagLabel": "Tag",
+        "allTags": "Todas as tags",
+        "count": "{n} plantas",
+        "empty": "Nenhuma planta encontrada.",
+        "docTitle": "Plantas fitoterápicas | Inspetor BudGanja"
+      },
+      "videos": {
+        "eyebrow": "Canal YouTube",
+        "title": "Vídeos",
+        "subtitle": "Inspeções, tutoriais e novidades publicadas no canal.",
+        "loading": "Carregando vídeos...",
+        "empty": "Nenhum vídeo disponível.",
+        "docTitle": "Vídeos | Inspetor BudGanja"
+      },
+      "inspections": {
+        "eyebrow": "Biblioteca",
+        "title": "Inspeções",
+        "subtitle": "Relatórios técnicos com método verificável — guia, canais, equipamentos e cursos.",
+        "loading": "Carregando…",
+        "empty": "Nenhuma inspeção publicada ainda.",
+        "docTitle": "Inspeções | Inspetor BudGanja"
+      },
+      "research": {
+        "eyebrow": "Biblioteca",
+        "title": "Pesquisas",
+        "subtitle": "Pesquisas do laboratório e estudos aprovados da comunidade.",
+        "loading": "Carregando…",
+        "empty": "Nenhuma pesquisa publicada ainda.",
+        "docTitle": "Pesquisas | Inspetor BudGanja"
+      },
+      "tools": {
+        "eyebrow": "Laboratório",
+        "title": "Ferramentas",
+        "subtitle": "Calculadoras e utilitários para otimizar o cultivo.",
+        "docTitle": "Ferramentas | Inspetor BudGanja"
+      },
+      "equipment": {
+        "eyebrow": "Laboratório",
+        "title": "Equipamentos",
+        "subtitle": "Montagens caseiras documentadas com materiais acessíveis.",
+        "docTitle": "Equipamentos | Inspetor BudGanja"
+      },
+      "cultivo": {
+        "eyebrow": "Comunidade",
+        "title": "Diário de Pesquisas",
+        "subtitle": "Documente o cultivo de qualquer planta: registos dia a dia, roteiro por fase e plano.",
+        "docTitle": "Diário de Pesquisas | Inspetor BudGanja"
+      },
+      "community": {
+        "eyebrow": "Comunidade",
+        "title": "Comunidade",
+        "subtitle": "Feed de fotos do diário, identificação de plantas e comentários.",
+        "docTitle": "Comunidade | Inspetor BudGanja"
+      },
+      "giveaways": {
+        "eyebrow": "Comunidade",
+        "title": "Sorteios",
+        "subtitle": "Sorteios ativos e históricos do laboratório.",
+        "docTitle": "Sorteios | Inspetor BudGanja"
+      },
+      "shop": {
+        "eyebrow": "Parceiros",
+        "title": "Loja",
+        "subtitle": "Materiais usados nas clonadoras e equipamentos do laboratório.",
+        "docTitle": "Loja | Inspetor BudGanja"
+      },
+      "unifesp": {
+        "eyebrow": "Extensão académica",
+        "title": "XIV Curso — Cannabis sativa L. medicinal",
+        "subtitle": "Hub do curso de extensão da UNIFESP em parceria com o MovReCam.",
+        "docTitle": "Curso UNIFESP | Inspetor BudGanja"
+      },
+      "about": {
+        "eyebrow": "Sobre",
+        "title": "Sobre o Inspetor BudGanja",
+        "subtitle": "Laboratório de fitoterapia e plantas medicinais do Brasil.",
+        "docTitle": "Sobre | Inspetor BudGanja"
+      },
+      "contact": {
+        "eyebrow": "Contato",
+        "title": "Contato com o Inspetor BudGanja",
+        "subtitle": "Fale connosco sobre o projeto, parcerias e dúvidas.",
+        "docTitle": "Contato | Inspetor BudGanja"
+      },
+      "privacy": {
+        "eyebrow": "Legal",
+        "title": "Política de Privacidade",
+        "subtitle": "Como tratamos dados neste site.",
+        "docTitle": "Privacidade | Inspetor BudGanja"
+      },
+      "login": {
+        "eyebrow": "Conta",
+        "title": "Criar conta no site",
+        "subtitle": "Entre para aceder ao diário, comunidade e painel.",
+        "docTitle": "Entrar | Inspetor BudGanja"
+      },
+      "profile": {
+        "eyebrow": "Conta",
+        "title": "Conta",
+        "subtitle": "Gerir o seu perfil e sessões.",
+        "docTitle": "Conta | Inspetor BudGanja"
       }
     }
   }

@@ -1,5 +1,8 @@
 {
-  "meta": { "name": "English", "short": "EN" },
+  "meta": {
+    "name": "English",
+    "short": "EN"
+  },
   "common": {
     "skipLink": "Skip to content",
     "searchTitle": "Search the site",
@@ -35,10 +38,15 @@
     "share": "Share",
     "shareAria": "Share this publication",
     "shareCopied": "Link copied!",
-    "privacyUpdatedDate": "June 26, 2026"
+    "privacyUpdatedDate": "July 30, 2026"
   },
   "posts": {
-    "summaryOnly": "(summary; full article in Portuguese)"
+    "summaryOnly": "(summary; full article in Portuguese)",
+    "backTo": "← Back to {label}",
+    "publishedOn": "Published on {date}",
+    "categoryInspection": "Inspections",
+    "categoryEquipment": "Equipment",
+    "categoryResearch": "Research"
   },
   "nav": {
     "library": "Library",
@@ -93,29 +101,197 @@
     "copy": "© 2026 Inspetor BudGanja. Educational content on Brazilian medicinal plants."
   },
   "menu": {
-    "guias": { "label": "Guides", "tileLabel": "Guides" },
-    "guia-cultivo": { "label": "Growing", "tileLabel": "Growing", "description": "Video trail by @InspetorBudGanja." },
-    "clonadoras": { "label": "Cloners", "tileLabel": "Cloners" },
-    "clonadora-6": { "label": "6-site cloner", "tileLabel": "6 sites", "description": "Ice cream tub, dish sponge and 24 h air pump." },
-    "clonadora-12": { "label": "12-site cloner", "tileLabel": "12 sites", "description": "Bucket, submersible pump and micro-sprinkler kit." },
-    "pesquisas-menu": { "label": "Research", "tileLabel": "Research" },
-    "pesquisas": { "label": "Research", "tileLabel": "Index", "description": "Lab and community research." },
-    "substratos": { "label": "Biodegradable substrates", "tileLabel": "Substrates", "description": "Report on biodegradable substrates." },
-    "inspecoes-menu": { "label": "Inspections", "tileLabel": "Inspections" },
-    "inspecoes": { "label": "All inspections", "tileLabel": "Index", "description": "Field and lab inspection reports." },
-    "equipamentos-menu": { "label": "Equipment", "tileLabel": "Equipment" },
-    "equipamentos": { "label": "DIY cloners", "tileLabel": "Index", "description": "Documented build guides." },
-    "calculadoras": { "label": "Calculators", "tileLabel": "Calculators", "description": "VPD, DLI, EC, pH and more." },
-    "luximetro": { "label": "Lux meter", "tileLabel": "Lux meter", "description": "Measure light with your phone camera." },
-    "vpd": { "label": "VPD", "tileLabel": "VPD" },
-    "dli": { "label": "DLI", "tileLabel": "DLI" },
-    "sorteios": { "label": "Giveaways", "tileLabel": "Giveaways", "description": "Lab promotions and draws." },
-    "videos": { "label": "Videos", "tileLabel": "Videos", "description": "Latest channel videos." },
-    "videos-menu": { "label": "Videos", "tileLabel": "Videos" },
-    "calculadoras-menu": { "label": "Calculators", "tileLabel": "Calculators" },
-    "cultivo-lab": { "label": "Super Calc", "tileLabel": "Super Calc", "description": "VPD, DLI, pH, EC, dilution, pot volume, W/m² and energy in one tool." },
-    "super-solo": { "label": "Soil", "tileLabel": "Soil", "description": "Organic super-soil amendment doses from substrate volume." },
-    "loja": { "label": "Shop", "tileLabel": "Shop", "description": "Parts used in the lab cloners and builds." }
+    "guias": {
+      "label": "Guides",
+      "tileLabel": "Guides"
+    },
+    "guia-cultivo": {
+      "label": "Growing",
+      "tileLabel": "Growing",
+      "description": "Video trail by @InspetorBudGanja."
+    },
+    "clonadoras": {
+      "label": "Cloners",
+      "tileLabel": "Cloners"
+    },
+    "clonadora-6": {
+      "label": "6-site cloner",
+      "tileLabel": "6 sites",
+      "description": "Ice cream tub, dish sponge and 24 h air pump."
+    },
+    "clonadora-12": {
+      "label": "12-site cloner",
+      "tileLabel": "12 sites",
+      "description": "Bucket, submersible pump and micro-sprinkler kit."
+    },
+    "pesquisas-menu": {
+      "label": "Research",
+      "tileLabel": "Research"
+    },
+    "pesquisas": {
+      "label": "Research",
+      "tileLabel": "Index",
+      "description": "Lab and community research."
+    },
+    "substratos": {
+      "label": "Biodegradable substrates",
+      "tileLabel": "Substrates",
+      "description": "Report on biodegradable substrates."
+    },
+    "inspecoes-menu": {
+      "label": "Inspections",
+      "tileLabel": "Inspections"
+    },
+    "inspecoes": {
+      "label": "All inspections",
+      "tileLabel": "Index",
+      "description": "Field and lab inspection reports."
+    },
+    "equipamentos-menu": {
+      "label": "Equipment",
+      "tileLabel": "Equipment"
+    },
+    "equipamentos": {
+      "label": "DIY cloners",
+      "tileLabel": "Index",
+      "description": "Documented build guides."
+    },
+    "calculadoras": {
+      "label": "Calculators",
+      "tileLabel": "Calculators",
+      "description": "VPD, DLI, EC, pH and more."
+    },
+    "luximetro": {
+      "label": "Lux meter",
+      "tileLabel": "Lux meter",
+      "description": "Measure light with your phone camera."
+    },
+    "vpd": {
+      "label": "VPD",
+      "tileLabel": "VPD"
+    },
+    "dli": {
+      "label": "DLI",
+      "tileLabel": "DLI"
+    },
+    "sorteios": {
+      "label": "Giveaways",
+      "tileLabel": "Giveaways",
+      "description": "Lab promotions and draws."
+    },
+    "videos": {
+      "label": "Videos",
+      "tileLabel": "Videos",
+      "description": "Latest channel videos."
+    },
+    "videos-menu": {
+      "label": "Videos",
+      "tileLabel": "Videos"
+    },
+    "calculadoras-menu": {
+      "label": "Calculators",
+      "tileLabel": "Calculators"
+    },
+    "cultivo-lab": {
+      "label": "Super Calc",
+      "tileLabel": "Super Calc",
+      "description": "VPD, DLI, pH, EC, dilution, pot volume, W/m² and energy in one tool."
+    },
+    "super-solo": {
+      "label": "Soil",
+      "tileLabel": "Soil",
+      "description": "Organic super-soil amendment doses from substrate volume."
+    },
+    "loja": {
+      "label": "Shop",
+      "tileLabel": "Shop",
+      "description": "Parts used in the lab cloners and builds."
+    },
+    "plantas": {
+      "label": "Plants",
+      "tileLabel": "Plants",
+      "description": "Catalog of Brazilian herbal plants."
+    },
+    "unifesp": {
+      "label": "UNIFESP course",
+      "tileLabel": "UNIFESP",
+      "description": "Hub for the 14th extension course on medicinal cannabis."
+    },
+    "post-guia-calculadora-super-solo": {
+      "label": "Super Soil: usage guide",
+      "tileLabel": "Super Soil: usage guide",
+      "description": "How to calculate ingredient ratios for organic super soil at any volume."
+    },
+    "post-guia-calculadora-luximetro": {
+      "label": "Lux meter: usage guide",
+      "tileLabel": "Lux meter: usage guide",
+      "description": "How to measure PPFD and lux with your phone camera — calibration, placement and reliable readings."
+    },
+    "post-otimizacao-propagacao-vegetal": {
+      "label": "Controlled germination process",
+      "tileLabel": "Controlled germination process",
+      "description": "Sowing and cloning protocol with biodegradable pots and strict microclimate control."
+    },
+    "post-inspecao-ventilacao-tenda": {
+      "label": "Inspection: tent ventilation system",
+      "tileLabel": "Inspection: tent ventilation…",
+      "description": "Airflow, noise and heat-exchange check on the lab exhaust duct and carbon filter."
+    },
+    "post-inspecao-marshydro-brasil": {
+      "label": "Inspection: Mars Hydro Brasil equipment",
+      "tileLabel": "Inspection: Mars Hydro Brasil…",
+      "description": "Audit of the marshydros.com.br catalog — TS/FC/FC-EVO lights, tents, iFresh ventilation and kits with national shipping, cross-checked against lab sizing."
+    },
+    "post-inspecao-canal-canabinall": {
+      "label": "Inspection: CANABinALL channel — Prof. Dr. Eliana Rodrigues",
+      "tileLabel": "Inspection: CANABinALL channel…",
+      "description": "Audit of the CANABinALL channel (@canabinall) — science outreach from UNIFESP curated by Prof. Dr. Eliana Rodrigues."
+    },
+    "post-inspecao-canal-movrecam": {
+      "label": "Inspection: MovReCam channel — UNIFESP lectures",
+      "tileLabel": "Inspection: MovReCam channel…",
+      "description": "Audit of the MovReCam channel — archive of UNIFESP course lectures and the Cannabis Regulation Movement."
+    },
+    "post-inspecao-curso-unifesp-cannabis-medicinal": {
+      "label": "Inspection: UNIFESP course — medicinal Cannabis sativa L.",
+      "tileLabel": "Inspection: UNIFESP course…",
+      "description": "Audit of the 14th UNIFESP extension course with MovReCam — free seats, distance learning via YouTube and certificate at 75% attendance."
+    },
+    "video-zwKXgqZMPro": {
+      "label": "Optimizing indoor growing",
+      "tileLabel": "Optimizing indoor growing",
+      "description": "Organize light, ventilation and space for an efficient indoor environment."
+    },
+    "video-tdMl4X5h83Y": {
+      "label": "Propagation and cloning",
+      "tileLabel": "Propagation and cloning",
+      "description": "Multiply plants with accessible techniques and everyday materials."
+    },
+    "video-V6LO6nXh8bI": {
+      "label": "The science of flowering",
+      "tileLabel": "The science of flowering",
+      "description": "1. The trigger (photoperiod)"
+    },
+    "video-OO7d72tHwJY": {
+      "label": "Cannabis architecture",
+      "tileLabel": "Cannabis architecture",
+      "description": "Everything about your plant structure"
+    },
+    "video-092X69hq8Os": {
+      "label": "Living organic soil",
+      "tileLabel": "Living organic soil",
+      "description": "Make your own Super Soil"
+    },
+    "video-XIrSJWjhd6Q": {
+      "label": "Cannabis nutrition",
+      "tileLabel": "Cannabis nutrition",
+      "description": "Plant feeding in each phase — from vegetative to transition."
+    },
+    "video-38uUEL1B-v4": {
+      "label": "Cannabis growing: the beginning",
+      "tileLabel": "Cannabis growing: the beginning",
+      "description": "Cannabis growing comes down to 4 stages and essential factors."
+    }
   },
   "pages": {
     "home": {
@@ -230,6 +406,116 @@
       "text": "The lab is building the new site — guides, tools and shop coming soon.",
       "note": "Thanks for your patience. Check back soon.",
       "admin": "Admin area"
+    },
+    "plantas": {
+      "eyebrow": "Catalog",
+      "title": "Herbal plants",
+      "subtitle": "Educational sheets of species used in Brazilian folk medicine and phytotherapy — traditional uses, plant parts and editorial cautions.",
+      "disclaimerStrong": "Educational notice.",
+      "disclaimer": "Educational sheets on Brazilian herbal and medicinal plants. They do not replace professional health advice or legal counsel.",
+      "searchLabel": "Search",
+      "searchPlaceholder": "Common name, scientific name or tag…",
+      "tagLabel": "Tag",
+      "allTags": "All tags",
+      "count": "{n} plants",
+      "empty": "No plants found.",
+      "docTitle": "Herbal plants | Inspetor BudGanja"
+    },
+    "videos": {
+      "eyebrow": "YouTube channel",
+      "title": "Videos",
+      "subtitle": "Inspections, tutorials and updates published on the channel.",
+      "loading": "Loading videos…",
+      "empty": "No videos available.",
+      "docTitle": "Videos | Inspetor BudGanja"
+    },
+    "inspections": {
+      "eyebrow": "Library",
+      "title": "Inspections",
+      "subtitle": "Technical reports with a verifiable method — guide, channels, equipment and courses.",
+      "loading": "Loading…",
+      "empty": "No inspections published yet.",
+      "docTitle": "Inspections | Inspetor BudGanja"
+    },
+    "research": {
+      "eyebrow": "Library",
+      "title": "Research",
+      "subtitle": "Lab research and approved community studies.",
+      "loading": "Loading…",
+      "empty": "No research published yet.",
+      "docTitle": "Research | Inspetor BudGanja"
+    },
+    "tools": {
+      "eyebrow": "Lab",
+      "title": "Tools",
+      "subtitle": "Calculators and utilities to optimize your grow.",
+      "docTitle": "Tools | Inspetor BudGanja"
+    },
+    "equipment": {
+      "eyebrow": "Lab",
+      "title": "Equipment",
+      "subtitle": "Documented home builds with accessible materials.",
+      "docTitle": "Equipment | Inspetor BudGanja"
+    },
+    "cultivo": {
+      "eyebrow": "Community",
+      "title": "Research Diary",
+      "subtitle": "Document any plant grow: day-by-day logs, phase roadmap and plan.",
+      "docTitle": "Research Diary | Inspetor BudGanja"
+    },
+    "community": {
+      "eyebrow": "Community",
+      "title": "Community",
+      "subtitle": "Diary photo feed, plant ID requests and community comments.",
+      "docTitle": "Community | Inspetor BudGanja"
+    },
+    "giveaways": {
+      "eyebrow": "Community",
+      "title": "Giveaways",
+      "subtitle": "Active and past lab giveaways.",
+      "docTitle": "Giveaways | Inspetor BudGanja"
+    },
+    "shop": {
+      "eyebrow": "Partners",
+      "title": "Shop",
+      "subtitle": "Parts used in the lab cloners and builds.",
+      "docTitle": "Shop | Inspetor BudGanja"
+    },
+    "unifesp": {
+      "eyebrow": "Academic extension",
+      "title": "14th course — medicinal Cannabis sativa L.",
+      "subtitle": "Hub for the UNIFESP extension course in partnership with MovReCam.",
+      "docTitle": "UNIFESP course | Inspetor BudGanja"
+    },
+    "about": {
+      "eyebrow": "About",
+      "title": "About Inspetor BudGanja",
+      "subtitle": "Brazilian phytotherapy and medicinal plants lab.",
+      "docTitle": "About | Inspetor BudGanja"
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Contact Inspetor BudGanja",
+      "subtitle": "Reach out about the project, partnerships and questions.",
+      "docTitle": "Contact | Inspetor BudGanja"
+    },
+    "privacy": {
+      "eyebrow": "Legal",
+      "title": "Privacy Policy",
+      "subtitle": "How we handle data on this site.",
+      "docTitle": "Privacy | Inspetor BudGanja"
+    },
+    "login": {
+      "eyebrow": "Account",
+      "title": "Create a site account",
+      "subtitle": "Sign in to access the diary, community and dashboard.",
+      "docTitle": "Sign in | Inspetor BudGanja"
+    },
+    "profile": {
+      "eyebrow": "Account",
+      "title": "Account",
+      "subtitle": "Manage your profile and sessions.",
+      "docTitle": "Account | Inspetor BudGanja"
     }
   }
 }

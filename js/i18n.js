@@ -1,25 +1,31 @@
 (function (global) {
   'use strict';
 
-  var STORAGE_KEY = 'budganja-lang';
+  // v2: limpa preferências antigas presas em EN durante o período com default errado.
+  var STORAGE_KEY = 'budganja-lang-v2';
+  var LEGACY_STORAGE_KEY = 'budganja-lang';
   var SUPPORTED = ['en', 'pt-BR', 'es'];
   var LOCALES = global.__I18N_LOCALES__ || {};
-  var currentLocale = 'en';
+  var currentLocale = 'pt-BR';
 
   function normalizeLocale(input) {
     var raw = String(input || '').trim().toLowerCase();
-    if (!raw) return 'en';
+    if (!raw) return '';
     if (raw === 'pt' || raw.indexOf('pt-') === 0) return 'pt-BR';
     if (raw.indexOf('en') === 0) return 'en';
     if (raw.indexOf('es') === 0) return 'es';
-    return 'en';
+    return '';
   }
 
   function detectLocale() {
     try {
       var params = new URLSearchParams((global.location && global.location.search) || '');
-      var fromQuery = normalizeLocale(params.get('lang') || params.get('locale') || '');
-      if (fromQuery && SUPPORTED.indexOf(fromQuery) !== -1) return fromQuery;
+      var rawQuery = params.get('lang') || params.get('locale') || '';
+      // Só usa a query quando há valor real (ex.: link partilhado ?lang=en).
+      if (rawQuery) {
+        var fromQuery = normalizeLocale(rawQuery);
+        if (fromQuery && SUPPORTED.indexOf(fromQuery) !== -1) return fromQuery;
+      }
     } catch (e) { /* ignore */ }
 
     try {
@@ -27,12 +33,24 @@
       if (saved && SUPPORTED.indexOf(saved) !== -1) return saved;
     } catch (e) { /* ignore */ }
 
-    // Padrão do site: inglês (domínio EN e .com.br).
-    return 'en';
+    // Padrão do site: português.
+    return 'pt-BR';
+  }
+
+  function clearLocaleFromUrl() {
+    try {
+      if (!global.history || !global.history.replaceState || !global.location) return;
+      var url = new URL(global.location.href);
+      if (!url.searchParams.has('lang') && !url.searchParams.has('locale')) return;
+      url.searchParams.delete('lang');
+      url.searchParams.delete('locale');
+      var search = url.searchParams.toString();
+      global.history.replaceState({}, '', url.pathname + (search ? '?' + search : '') + url.hash);
+    } catch (e) { /* ignore */ }
   }
 
   function getBundle(locale) {
-    return LOCALES[locale] || LOCALES.en || LOCALES['pt-BR'] || {};
+    return LOCALES[locale] || LOCALES['pt-BR'] || LOCALES.en || {};
   }
 
   function lookup(obj, path) {
@@ -76,15 +94,20 @@
 
   function getLocaleMeta(locale) {
     var bundle = getBundle(locale || currentLocale);
-    return bundle.meta || { name: locale, short: (locale || 'en').slice(0, 2).toUpperCase() };
+    return bundle.meta || { name: locale, short: (locale || 'pt-BR').slice(0, 2).toUpperCase() };
   }
 
   function setLocale(locale, options) {
-    var next = SUPPORTED.indexOf(locale) !== -1 ? locale : 'en';
+    var next = SUPPORTED.indexOf(locale) !== -1 ? locale : 'pt-BR';
     if (next === currentLocale && !(options && options.force)) return;
     currentLocale = next;
-    try { localStorage.setItem(STORAGE_KEY, next); } catch (e) { /* ignore */ }
+    try {
+      localStorage.setItem(STORAGE_KEY, next);
+      localStorage.removeItem(LEGACY_STORAGE_KEY);
+    } catch (e) { /* ignore */ }
     if (document.documentElement) document.documentElement.lang = next;
+    // Não grava ?lang= na URL (ficava preso em EN). Limpa query antiga ao escolher no seletor.
+    if (!(options && options.skipUrl)) clearLocaleFromUrl();
     applyDomTranslations();
     global.dispatchEvent(new CustomEvent('budganja:locale-change', { detail: { locale: next } }));
   }
@@ -110,6 +133,93 @@
         else p.setAttribute('hidden', '');
       });
     });
+  }
+
+  function formatPostDate(iso) {
+    if (!iso) return '';
+    var d = new Date(iso.length === 10 ? iso + 'T12:00:00' : iso);
+    if (Number.isNaN(d.getTime())) return iso;
+    try {
+      return new Intl.DateTimeFormat(currentLocale, {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+        timeZone: 'America/Sao_Paulo'
+      }).format(d);
+    } catch (e) {
+      return iso;
+    }
+  }
+
+  function applyPostPageTranslations() {
+    if (!document.body || !document.body.dataset.postSlug) return;
+
+    var categoryKeyFallback = {
+      'posts.categoryInspection': 'Inspections',
+      'posts.categoryEquipment': 'Equipment',
+      'posts.categoryResearch': 'Research'
+    };
+
+    document.querySelectorAll('[data-post-category]').forEach(function (el) {
+      var key = el.getAttribute('data-category-key') || 'posts.categoryResearch';
+      el.textContent = t(key, categoryKeyFallback[key] || el.textContent);
+    });
+
+    document.querySelectorAll('[data-post-back]').forEach(function (el) {
+      var key = el.getAttribute('data-category-key') || 'posts.categoryResearch';
+      var label = t(key, categoryKeyFallback[key] || '');
+      el.textContent = t('posts.backTo', '← Back to {label}').replace('{label}', label);
+    });
+
+    var titleEl = document.querySelector('[data-post-title]');
+    if (titleEl) {
+      var attr =
+        currentLocale === 'en'
+          ? 'data-title-en'
+          : currentLocale === 'es'
+            ? 'data-title-es'
+            : 'data-title-pt';
+      var localized = (titleEl.getAttribute(attr) || '').trim();
+      // Fallback: menu.i18n do mega-menu (slug do post com prefixo post-)
+      if (!localized && currentLocale !== 'pt-BR') {
+        var postSlug = document.body.dataset.postSlug || '';
+        var menuSlug = postSlug.indexOf('post-') === 0 ? postSlug : 'post-' + postSlug;
+        localized = tMenu(menuSlug, 'label', '') || tMenu(postSlug, 'label', '');
+      }
+      if (!localized) {
+        localized =
+          (titleEl.getAttribute('data-title-pt') || '').trim() ||
+          titleEl.textContent;
+      }
+      if (localized) titleEl.textContent = localized;
+      var docTitle = localized + ' | Inspetor BudGanja';
+      if (document.title !== docTitle) document.title = docTitle;
+    }
+
+    document.querySelectorAll('[data-post-date]').forEach(function (el) {
+      var iso = el.getAttribute('data-date-iso') || '';
+      var formatted = formatPostDate(iso);
+      if (formatted) {
+        el.textContent = t('posts.publishedOn', 'Published on {date}').replace('{date}', formatted);
+      }
+    });
+
+    var header = document.querySelector('[data-post-header]');
+    if (header) {
+      var excerptAttr =
+        currentLocale === 'en'
+          ? 'data-excerpt-en'
+          : currentLocale === 'es'
+            ? 'data-excerpt-es'
+            : 'data-excerpt-pt';
+      var excerpt =
+        (header.getAttribute(excerptAttr) || '').trim() ||
+        (header.getAttribute('data-excerpt-pt') || '').trim();
+      if (excerpt) {
+        var metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) metaDesc.setAttribute('content', excerpt);
+      }
+    }
   }
 
   function applyDomTranslations() {
@@ -158,7 +268,40 @@
       if (tipEl) tipEl.textContent = value;
     });
 
+    applyPostPageTranslations();
+    applyHubPageTranslations();
     syncPostI18nNotes();
+  }
+
+  var PAGE_I18N_MAP = {
+    plantas: 'plantas',
+    videos: 'videos',
+    inspecoes: 'inspections',
+    pesquisas: 'research',
+    calculadora: 'tools',
+    equipamentos: 'equipment',
+    cultivo: 'cultivo',
+    comunidade: 'community',
+    sorteios: 'giveaways',
+    loja: 'shop',
+    unifesp: 'unifesp',
+    sobre: 'about',
+    contato: 'contact',
+    privacidade: 'privacy',
+    entrar: 'login',
+    perfil: 'profile',
+    home: 'home'
+  };
+
+  function applyHubPageTranslations() {
+    if (!document.body) return;
+    var page = document.body.dataset.page || '';
+    var hubKey = PAGE_I18N_MAP[page];
+    if (!hubKey || hubKey === 'home') return;
+    // Não sobrescrever título de posts (já tratado em applyPostPageTranslations).
+    if (document.body.dataset.postSlug) return;
+    var docTitle = t('pages.' + hubKey + '.docTitle', '');
+    if (docTitle) document.title = docTitle;
   }
 
   function mountLanguageSwitcher(root) {
@@ -219,6 +362,10 @@
   function init() {
     currentLocale = detectLocale();
     if (document.documentElement) document.documentElement.lang = currentLocale;
+    try {
+      localStorage.setItem(STORAGE_KEY, currentLocale);
+      localStorage.removeItem(LEGACY_STORAGE_KEY);
+    } catch (e) { /* ignore */ }
     applyDomTranslations();
     initLanguageSwitcher();
   }

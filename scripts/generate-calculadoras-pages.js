@@ -122,8 +122,10 @@ ${form}
     </main>
 
     <div id="site-footer"></div>
-    <script src="/js/ferramentas-nav-data.js"></script>
-    <script src="/js/layout.js"></script>
+    <script src="/js/i18n-data.js?v=${ASSET_VERSION}"></script>
+    <script src="/js/i18n.js?v=${ASSET_VERSION}"></script>
+    <script src="/js/ferramentas-nav-data.js?v=${ASSET_VERSION}"></script>
+    <script src="/js/layout.js?v=${ASSET_VERSION}"></script>
     <script src="/js/cultivo-diary-bridge.js"></script>
 ${scriptTag}</body>
 </html>
@@ -133,7 +135,8 @@ ${scriptTag}</body>
 function buildHubIndex() {
   let body = `
     <main id="main-content" class="conteudo calc-hub">
-        <h1>Ferramentas</h1>
+        <h1 data-i18n="pages.tools.title">Ferramentas</h1>
+        <p class="secao-subtitulo" data-i18n="pages.tools.subtitle">Calculadoras e utilitários para otimizar o cultivo.</p>
         <nav class="calc-apps-grid calc-apps-grid--all" aria-label="Ferramentas">`;
 
   CALCULADORAS.forEach((calc) => {

@@ -51,6 +51,13 @@ function runBuildSteps() {
   }
 
   try {
+    // Garante data-i18n nos hubs antes de sync:pages (fonte = HTML).
+    runStep('wire:i18n', 'wire-html-i18n.js');
+  } catch (e) {
+    console.warn('Aviso wire:i18n:', e.message);
+  }
+
+  try {
     runStep('sync:pages', 'sync-pages-from-html.js');
   } catch (e) {
     console.warn('Aviso sync:pages:', e.message);

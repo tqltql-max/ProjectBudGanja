@@ -6,6 +6,10 @@
   var emptyEl = document.getElementById('plantas-empty');
   if (!grid) return;
 
+  function i18n(key, fallback) {
+    return window.BudGanjaI18n ? window.BudGanjaI18n.t(key, fallback) : (fallback || '');
+  }
+
   var cards = Array.prototype.slice.call(grid.querySelectorAll('.planta-card'));
 
   function applyFilters() {
@@ -22,12 +26,17 @@
       if (show) visible += 1;
     });
     if (countEl) {
-      countEl.textContent = visible + ' planta' + (visible === 1 ? '' : 's');
+      countEl.textContent = i18n('pages.plantas.count', '{n} plantas').replace('{n}', String(visible));
     }
-    if (emptyEl) emptyEl.hidden = visible > 0;
+    if (emptyEl) {
+      emptyEl.hidden = visible > 0;
+      emptyEl.textContent = i18n('pages.plantas.empty', 'Nenhuma planta encontrada.');
+    }
+    if (window.BudGanjaI18n) window.BudGanjaI18n.apply();
   }
 
   if (search) search.addEventListener('input', applyFilters);
   if (tagSelect) tagSelect.addEventListener('change', applyFilters);
   applyFilters();
+  window.addEventListener('budganja:locale-change', applyFilters);
 })();

@@ -95,7 +95,10 @@
       'Clonadora de 6 estacas': 'menu.clonadora-6.label',
       'Clonadora de 12 estacas': 'menu.clonadora-12.label',
       'Clonadoras': 'menu.clonadoras.label',
-      'Substratos': 'menu.substratos.tileLabel'
+      'Substratos': 'menu.substratos.tileLabel',
+      'Plantas': 'nav.plants',
+      'UNIFESP': 'nav.unifesp',
+      'Curso UNIFESP': 'menu.unifesp.label'
     };
     if (window.BudGanjaI18n && map[label]) return window.BudGanjaI18n.t(map[label], label);
     return label;
@@ -551,9 +554,10 @@
   };
 
   window.addEventListener('budganja:locale-change', function () {
+    // Aplicar i18n primeiro para o H1/título do post já estar no idioma certo nos breadcrumbs.
+    if (window.BudGanjaI18n) window.BudGanjaI18n.apply();
     document.querySelectorAll('.site-breadcrumbs').forEach(function (el) { el.remove(); });
     injectBreadcrumbs();
-    if (window.BudGanjaI18n) window.BudGanjaI18n.apply();
   });
 
   if (document.readyState === 'loading') {

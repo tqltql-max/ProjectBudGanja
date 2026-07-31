@@ -396,7 +396,10 @@ function formatSiteUpdatedDate(iso) {
 function resolveFooterUpdatedDate(site) {
   const fromBuild = formatSiteUpdatedDate(cachedSiteBuiltAt);
   if (fromBuild) return fromBuild;
-  return (site && site.privacyUpdated) || DEFAULT_SITE.privacyUpdated || '';
+  return i18n(
+    'common.privacyUpdatedDate',
+    (site && site.privacyUpdated) || DEFAULT_SITE.privacyUpdated || ''
+  );
 }
 
 async function clearAllAppCaches() {
@@ -763,10 +766,10 @@ function translateFooterLabel(label) {
   var map = {
     'Início': 'common.home',
     'Guia de Cultivo': 'nav.growingGuide',
-    'Pesquisas': 'nav.research',
     'Pesquisas': 'nav.technicalResearch',
     'Inspeções': 'nav.inspections',
     'Extensão académica': 'nav.academicExtension',
+    'Extensão acadêmica': 'nav.academicExtension',
     'Equipamentos': 'nav.equipment',
     'Calculadoras': 'nav.calculators',
     'Ferramentas': 'nav.calculators',
@@ -782,9 +785,10 @@ function translateFooterLabel(label) {
     'Sobre o projeto': 'nav.aboutProject',
     'Privacidade': 'nav.privacy',
     'Contato': 'nav.contact',
-    'Privacidade': 'nav.privacy',
     'Loja': 'nav.shop',
-    'Loja parceira': 'nav.shop'
+    'Loja parceira': 'nav.shop',
+    'Plantas': 'nav.plants',
+    'UNIFESP': 'nav.unifesp'
   };
   return map[label] ? i18n(map[label], label) : label;
 }

@@ -625,7 +625,11 @@ document.addEventListener('DOMContentLoaded', function () {
       .catch(function () {
         document.querySelectorAll('[data-inspecao-grid]').forEach(function (grid) {
           if (grid.querySelector('.card')) return;
-          grid.innerHTML = '<p class="empty-message">Nenhuma publicação disponível.</p>';
+          var emptyKey = config.category === 'inspecao' ? 'pages.inspections.empty' : 'pages.research.empty';
+          var emptyMsg = window.BudGanjaI18n
+            ? window.BudGanjaI18n.t(emptyKey, 'Nenhuma publicação disponível.')
+            : 'Nenhuma publicação disponível.';
+          grid.innerHTML = '<p class="empty-message">' + emptyMsg + '</p>';
         });
       });
     return;
@@ -640,7 +644,10 @@ document.addEventListener('DOMContentLoaded', function () {
       .catch(function () {
         document.querySelectorAll('[data-pesquisas-grid]').forEach(function (grid) {
           if (grid.querySelector('.card')) return;
-          grid.innerHTML = '<p class="empty-message">Nenhuma publicação disponível.</p>';
+          var emptyMsg = window.BudGanjaI18n
+            ? window.BudGanjaI18n.t('pages.research.empty', 'Nenhuma publicação disponível.')
+            : 'Nenhuma publicação disponível.';
+          grid.innerHTML = '<p class="empty-message">' + emptyMsg + '</p>';
         });
       });
     return;
@@ -658,6 +665,9 @@ document.addEventListener('DOMContentLoaded', function () {
     .catch(function () {
       if (container.querySelector('.card')) return;
       if (container.querySelector('.empty-message') && !container.innerHTML.includes('npm start')) return;
-      container.innerHTML = '<p class="empty-message">Nenhuma publicação disponível.</p>';
+      var emptyMsg = window.BudGanjaI18n
+        ? window.BudGanjaI18n.t('pages.research.empty', 'Nenhuma publicação disponível.')
+        : 'Nenhuma publicação disponível.';
+      container.innerHTML = '<p class="empty-message">' + emptyMsg + '</p>';
     });
 });

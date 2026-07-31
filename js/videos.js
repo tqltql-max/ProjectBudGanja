@@ -1,22 +1,33 @@
 (function () {
   'use strict';
 
+  function i18n(key, fallback) {
+    return window.BudGanjaI18n ? window.BudGanjaI18n.t(key, fallback) : (fallback || '');
+  }
+
+  function videoLocale() {
+    return (window.BudGanjaI18n && window.BudGanjaI18n.getLocale()) || 'pt-BR';
+  }
+
   function formatDate(iso) {
     if (!iso) return '';
     try {
-      return new Date(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
+      return new Date(iso).toLocaleDateString(videoLocale(), { day: '2-digit', month: 'short', year: 'numeric' });
     } catch (e) {
       return iso;
     }
   }
 
+  var cachedFeed = null;
+
   function renderVideos(container, feed) {
+    cachedFeed = feed;
     var videos = (feed && feed.videos) || [];
     if (!videos.length) {
       container.innerHTML =
         '<div class="empty-state">' +
-        '<p class="empty-message">Não foi possível carregar os vídeos agora.</p>' +
-        '<a href="https://www.youtube.com/@InspetorBudGanja" class="botao botao-home" target="_blank" rel="noopener noreferrer">Abrir canal no YouTube</a>' +
+        '<p class="empty-message">' + escapeHtml(i18n('pages.videos.empty', 'Nenhum vídeo disponível.')) + '</p>' +
+        '<a href="https://www.youtube.com/@InspetorBudGanja" class="botao botao-home" target="_blank" rel="noopener noreferrer">@InspetorBudGanja</a>' +
         '</div>';
       return;
     }
@@ -75,18 +86,26 @@
     var channelLink = document.getElementById('videos-channel-link');
     if (!grid) return;
 
-    fetch('/api/youtube-feed')
-      .catch(function () { return fetch('content/youtube-feed.json'); })
-      .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (feed) {
-        if (channelLink && feed && feed.channelUrl) {
-          channelLink.href = feed.channelUrl;
-          channelLink.textContent = '▶ ' + (feed.channelName || 'Canal YouTube');
-        }
-        renderVideos(grid, feed);
-      })
-      .catch(function () {
-        renderVideos(grid, null);
-      });
+    function load() {
+      fetch('/api/youtube-feed')
+        .catch(function () { return fetch('content/youtube-feed.json'); })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (feed) {
+          if (channelLink && feed && feed.channelUrl) {
+            channelLink.href = feed.channelUrl;
+            channelLink.textContent = '▶ ' + (feed.channelName || 'YouTube');
+          }
+          renderVideos(grid, feed);
+        })
+        .catch(function () {
+          renderVideos(grid, null);
+        });
+    }
+
+    load();
+    window.addEventListener('budganja:locale-change', function () {
+      if (cachedFeed) renderVideos(grid, cachedFeed);
+      else load();
+    });
   });
 })();

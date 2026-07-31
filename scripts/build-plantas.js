@@ -80,7 +80,7 @@ ${extraScripts || ''}
 
 function buildHub(catalog) {
   const tags = listTags(catalog.plants);
-  const tagOptions = ['<option value="">Todas as tags</option>']
+  const tagOptions = ['<option value="" data-i18n="pages.plantas.allTags">Todas as tags</option>']
     .concat(tags.map((t) => `<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`))
     .join('\n                    ');
 
@@ -107,19 +107,19 @@ function buildHub(catalog) {
     .join('\n');
 
   const body = `        <header class="plantas-hub-header">
-            <p class="article-eyebrow">Catálogo</p>
-            <h1>Plantas fitoterápicas</h1>
-            <p class="secao-subtitulo">Fichas educacionais de espécies usadas na medicina popular e na fitoterapia brasileira — usos tradicionais, partes usadas e cuidados editoriais.</p>
+            <p class="article-eyebrow" data-i18n="pages.plantas.eyebrow">Catálogo</p>
+            <h1 data-i18n="pages.plantas.title">Plantas fitoterápicas</h1>
+            <p class="secao-subtitulo" data-i18n="pages.plantas.subtitle">Fichas educacionais de espécies usadas na medicina popular e na fitoterapia brasileira — usos tradicionais, partes usadas e cuidados editoriais.</p>
         </header>
 
         <aside class="plantas-disclaimer" role="note">
-            <strong>Aviso educacional.</strong> ${escapeHtml(catalog.disclaimer)}
+            <strong data-i18n="pages.plantas.disclaimerStrong">Aviso educacional.</strong> <span data-i18n="pages.plantas.disclaimer">${escapeHtml(catalog.disclaimer)}</span>
         </aside>
 
         <div class="plantas-toolbar">
-            <label class="plantas-search-label" for="plantas-search">Buscar</label>
-            <input type="search" id="plantas-search" class="plantas-search" placeholder="Nome popular, científico ou tag…" autocomplete="off">
-            <label class="plantas-filter-label" for="plantas-tag">Tag</label>
+            <label class="plantas-search-label" for="plantas-search" data-i18n="pages.plantas.searchLabel">Buscar</label>
+            <input type="search" id="plantas-search" class="plantas-search" placeholder="Nome popular, científico ou tag…" data-i18n-placeholder="pages.plantas.searchPlaceholder" autocomplete="off">
+            <label class="plantas-filter-label" for="plantas-tag" data-i18n="pages.plantas.tagLabel">Tag</label>
             <select id="plantas-tag" class="plantas-tag-filter">
                     ${tagOptions}
             </select>
@@ -183,7 +183,7 @@ function buildPlantPage(plant, catalog) {
         </header>
 
         <aside class="plantas-disclaimer" role="note">
-            <strong>Aviso educacional.</strong> ${escapeHtml(catalog.disclaimer)}
+            <strong data-i18n="pages.plantas.disclaimerStrong">Aviso educacional.</strong> <span data-i18n="pages.plantas.disclaimer">${escapeHtml(catalog.disclaimer)}</span>
         </aside>
 
         <section class="info-panel">
