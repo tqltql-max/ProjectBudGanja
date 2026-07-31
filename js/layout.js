@@ -1267,7 +1267,7 @@ function getSiteHubNav() {
       },
       {
         href: '/comunidade/',
-        icon: '👥',
+        icon: '<img class="header-quick-link-icon-img" src="/imagens/foto-comunidade.png" alt="" width="20" height="20" decoding="async">',
         label: i18n('nav.community', 'Comunidade'),
         tip: i18n('nav.quickCommunityTip', 'Feed de fotos do diário de pesquisas'),
         prefixes: '/comunidade',
@@ -1363,7 +1363,7 @@ function getSiteHubNav() {
         links: [
           {
             href: '/comunidade/',
-            icon: '🌿',
+            icon: '<img class="mobile-menu-link-icon-img" src="/imagens/foto-comunidade.png" alt="" width="20" height="20" decoding="async">',
             label: i18n('nav.communityFeed', 'Feed da comunidade'),
             prefixes: '/comunidade',
             tone: 'comunidade'
