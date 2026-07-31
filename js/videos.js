@@ -72,9 +72,12 @@
   var selectedId = '';
   var activeChannel = 'all';
   var activeSeries = '';
+  var activeQuery = '';
+  var searchTimer = null;
   var playerEl = null;
   var gridEl = null;
   var filtersEl = null;
+  var searchEl = null;
   var channelLink = null;
   var inspectionLink = null;
 
@@ -114,6 +117,7 @@
   function readFilterFromUrl() {
     var channel = 'all';
     var series = '';
+    var q = '';
     try {
       var params = new URLSearchParams(window.location.search);
       var chRaw = params.get('channel') || '';
@@ -131,14 +135,16 @@
         if (series === 'xiv') channel = 'movrecam';
         else if (series === 'conceitos' || series === 'plantas-sagradas') channel = 'canabinall';
       }
+      q = String(params.get('q') || '').trim();
     } catch (e) { /* ignore */ }
-    return { channel: channel, series: series };
+    return { channel: channel, series: series, q: q };
   }
 
   function writeFilterToUrl(channel, series, videoId, replace) {
     var params = new URLSearchParams();
     if (channel && channel !== 'all') params.set('channel', channel);
     if (series) params.set('series', series);
+    if (activeQuery) params.set('q', activeQuery);
     var qs = params.toString();
     var next = window.location.pathname + (qs ? '?' + qs : '');
     if (isValidVideoId(videoId)) next += '#' + videoId;
@@ -146,6 +152,44 @@
     if (current === next) return;
     if (replace) history.replaceState(null, '', next);
     else history.pushState(null, '', next);
+  }
+
+  function foldText(s) {
+    return String(s || '')
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '');
+  }
+
+  function tokenizeQuery(q) {
+    return foldText(q)
+      .split(/[^a-z0-9]+/)
+      .filter(Boolean);
+  }
+
+  function videoSearchBlob(v) {
+    if (!v) return '';
+    return foldText(
+      [
+        v.title,
+        v.titleEn,
+        v.titleEs,
+        v.summary,
+        v.summaryEn,
+        v.summaryEs,
+        channelLabel(v.channel),
+        ((v.series || []) || []).join(' ')
+      ].join(' ')
+    );
+  }
+
+  function videoMatchesQuery(v, tokens) {
+    if (!tokens || !tokens.length) return true;
+    var blob = videoSearchBlob(v);
+    for (var i = 0; i < tokens.length; i++) {
+      if (blob.indexOf(tokens[i]) < 0) return false;
+    }
+    return true;
   }
 
   function embedSrc(id, autoplay) {
@@ -365,7 +409,7 @@
     return null;
   }
 
-  function filterVideos(videos, channel, series) {
+  function filterVideos(videos, channel, series, query) {
     var list = videos || [];
     if (channel && channel !== 'all') {
       list = list.filter(function (v) {
@@ -375,6 +419,12 @@
     if (series) {
       list = list.filter(function (v) {
         return (v.series || []).indexOf(series) >= 0;
+      });
+    }
+    var tokens = tokenizeQuery(query != null ? query : activeQuery);
+    if (tokens.length) {
+      list = list.filter(function (v) {
+        return videoMatchesQuery(v, tokens);
       });
     }
     return list;
@@ -761,10 +811,13 @@
   function renderGrid(videos) {
     if (!gridEl) return;
     if (!videos.length) {
+      var emptyMsg = activeQuery
+        ? i18n('pages.videos.emptySearch', 'Nenhum vídeo com essas palavras.')
+        : i18n('pages.videos.emptyFilter', 'Nenhum vídeo neste filtro.');
       gridEl.innerHTML =
         '<div class="empty-state">' +
         '<p class="empty-message">' +
-        escapeHtml(i18n('pages.videos.emptyFilter', 'Nenhum vídeo neste filtro.')) +
+        escapeHtml(emptyMsg) +
         '</p>' +
         '</div>';
       return;
@@ -919,17 +972,35 @@
     applyView({ replaceUrl: false, autoplay: false });
   }
 
+  function setSearchQuery(raw, opts) {
+    opts = opts || {};
+    var next = String(raw || '').trim();
+    if (next === activeQuery && !opts.force) return;
+    activeQuery = next;
+    if (searchEl && searchEl.value.trim() !== activeQuery) {
+      searchEl.value = activeQuery;
+    }
+    applyView({
+      replaceUrl: opts.replaceUrl !== false,
+      autoplay: false,
+      requestedId: opts.keepSelection ? selectedId || readRequestedId() : undefined
+    });
+  }
+
   function renderHub(player, grid, hub) {
     cachedHub = hub;
     playerEl = player;
     gridEl = grid;
     filtersEl = document.getElementById('videos-filters');
+    searchEl = document.getElementById('videos-search') || searchEl;
     channelLink = document.getElementById('videos-channel-link');
     inspectionLink = document.getElementById('videos-inspection-link');
 
     var fromUrl = readFilterFromUrl();
     activeChannel = fromUrl.channel || 'all';
     activeSeries = fromUrl.series || '';
+    activeQuery = fromUrl.q || activeQuery || '';
+    if (searchEl) searchEl.value = activeQuery;
 
     if (!(hub && hub.videos && hub.videos.length)) {
       player.hidden = true;
@@ -951,6 +1022,7 @@
     var player = document.getElementById('videos-player');
     var grid = document.getElementById('videos-list');
     filtersEl = document.getElementById('videos-filters');
+    searchEl = document.getElementById('videos-search');
     channelLink = document.getElementById('videos-channel-link');
     inspectionLink = document.getElementById('videos-inspection-link');
     if (!player || !grid) return;
@@ -981,12 +1053,34 @@
       });
     }
 
+    if (searchEl) {
+      searchEl.addEventListener('input', function () {
+        var value = searchEl.value;
+        if (searchTimer) window.clearTimeout(searchTimer);
+        searchTimer = window.setTimeout(function () {
+          searchTimer = null;
+          setSearchQuery(value, { replaceUrl: true, keepSelection: true });
+        }, 180);
+      });
+      searchEl.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          searchEl.value = '';
+          if (searchTimer) window.clearTimeout(searchTimer);
+          searchTimer = null;
+          setSearchQuery('', { replaceUrl: true, keepSelection: true });
+        }
+      });
+    }
+
     function onNavChange() {
       var next = readFilterFromUrl();
       var id = readRequestedId();
-      if (next.channel !== activeChannel || next.series !== activeSeries) {
+      var qChanged = (next.q || '') !== activeQuery;
+      if (next.channel !== activeChannel || next.series !== activeSeries || qChanged) {
         activeChannel = next.channel;
         activeSeries = next.series;
+        activeQuery = next.q || '';
+        if (searchEl) searchEl.value = activeQuery;
         applyView({ requestedId: id, replaceUrl: true, autoplay: !!id });
         return;
       }

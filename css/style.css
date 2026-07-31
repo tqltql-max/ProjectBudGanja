@@ -9590,6 +9590,48 @@ html[data-theme="light"] .header-group-divider {
     margin: 0;
 }
 
+.videos-search-wrap {
+    display: grid;
+    gap: 8px;
+    margin: 0 0 16px;
+    max-width: 36rem;
+}
+
+.videos-search-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-text-soft);
+}
+
+.videos-search-input {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.6rem 0.85rem;
+    border-radius: var(--radius-md, 10px);
+    border: 1px solid rgba(166, 134, 40, 0.28);
+    background: rgba(12, 12, 12, 0.72);
+    color: var(--color-text, #fff);
+    font: inherit;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.videos-search-input::placeholder {
+    color: rgba(245, 230, 184, 0.42);
+}
+
+.videos-search-input:hover {
+    border-color: rgba(166, 134, 40, 0.42);
+}
+
+.videos-search-input:focus,
+.videos-search-input:focus-visible {
+    outline: none;
+    border-color: rgba(212, 175, 55, 0.7);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.16);
+}
+
 .videos-filters-wrap {
     margin: 0 0 28px;
 }
