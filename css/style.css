@@ -2496,6 +2496,27 @@ nav ul li a:focus,
         0 8px 28px rgba(39, 174, 96, 0.45);
 }
 
+.botao-sm {
+    padding: 8px 16px;
+    font-size: 0.88rem;
+    margin-top: 0;
+}
+
+.botao-outline {
+    background: transparent;
+    color: var(--color-accent);
+    border: 1px solid rgba(212, 175, 55, 0.55);
+    box-shadow: none;
+}
+
+.botao-outline:hover {
+    background: rgba(212, 175, 55, 0.12);
+    color: var(--color-accent);
+    border-color: rgba(212, 175, 55, 0.85);
+    box-shadow: none;
+    transform: none;
+}
+
 .calculator button {
     min-width: 140px;
 }
@@ -9265,18 +9286,47 @@ html[data-theme="light"] .header-group-divider {
 }
 
 .videos-player-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 4px 0 0;
+}
+
+.videos-continue-yt {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+}
+
+.videos-continue-yt-hint,
+.video-embed-continue-hint {
     margin: 0;
-    font-size: 0.88rem;
+    font-size: 0.84rem;
+    line-height: 1.4;
     color: var(--color-text-soft);
 }
 
-.videos-player-actions a {
-    color: var(--color-accent);
-    text-decoration: none;
+.videos-player-meta-line {
+    margin: 2px 0 0;
+    font-size: 0.86rem;
+    color: var(--color-text-soft);
 }
 
-.videos-player-actions a:hover {
-    text-decoration: underline;
+.video-embed-block {
+    margin: 0 0 1.25rem;
+}
+
+.video-embed-block .video-embed {
+    margin-bottom: 10px;
+}
+
+.video-embed-continue {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+    margin: 0;
 }
 
 .videos-list-heading {

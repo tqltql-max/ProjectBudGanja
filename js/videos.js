@@ -160,6 +160,50 @@
     return src;
   }
 
+  function youtubeWatchUrl(id) {
+    return 'https://www.youtube.com/watch?v=' + encodeURIComponent(id);
+  }
+
+  /** Tenta abrir a app YouTube (melhor para áudio com ecrã desligado). */
+  function openYouTubeAppOrWeb(id) {
+    if (!isValidVideoId(id)) return;
+    var web = youtubeWatchUrl(id);
+    var ua = navigator.userAgent || '';
+    if (/Android/i.test(ua)) {
+      window.location.href =
+        'intent://www.youtube.com/watch?v=' +
+        encodeURIComponent(id) +
+        '#Intent;package=com.google.android.youtube;scheme=https;S.browser_fallback_url=' +
+        encodeURIComponent(web) +
+        ';end';
+      return;
+    }
+    if (/iPhone|iPad|iPod/i.test(ua)) {
+      var started = Date.now();
+      window.location.href = 'youtube://www.youtube.com/watch?v=' + encodeURIComponent(id);
+      window.setTimeout(function () {
+        if (Date.now() - started < 1600 && !document.hidden) {
+          window.open(web, '_blank', 'noopener,noreferrer');
+        }
+      }, 750);
+      return;
+    }
+    window.open(web, '_blank', 'noopener,noreferrer');
+  }
+
+  function bindContinueYouTubeButton(root) {
+    if (!root) return;
+    var btn = root.querySelector('[data-continue-youtube]');
+    if (!btn || btn.dataset.bound === '1') return;
+    btn.dataset.bound = '1';
+    btn.addEventListener('click', function (ev) {
+      var id = btn.getAttribute('data-continue-youtube') || '';
+      if (!isValidVideoId(id)) return;
+      ev.preventDefault();
+      openYouTubeAppOrWeb(id);
+    });
+  }
+
   function renderEmbed(id, title, autoplay) {
     var safeTitle = escapeHtml(title || i18n('pages.videos.nowPlaying', 'Vídeo do YouTube'));
     return (
@@ -339,6 +383,9 @@
     var title = localizedField(video, 'title');
     var summary = localizedField(video, 'summary');
     var chLabel = channelLabel(video.channel);
+    var watchUrl = video.url && String(video.url).indexOf('http') === 0
+      ? String(video.url)
+      : youtubeWatchUrl(video.id);
 
     playerEl.hidden = false;
     playerEl.innerHTML =
@@ -351,20 +398,33 @@
       escapeHtml(title) +
       '</h2>' +
       (summary ? '<p class="videos-player-summary">' + escapeHtml(summary) + '</p>' : '') +
-      '<p class="videos-player-actions">' +
-      '<time datetime="' +
-      escapeHtml(video.published || '') +
-      '">' +
-      escapeHtml(formatDate(video.published)) +
-      '</time>' +
-      ' · <a href="' +
-      escapeHtml(video.url) +
+      '<div class="videos-player-actions">' +
+      '<a class="botao botao-sm videos-continue-yt" href="' +
+      escapeHtml(watchUrl) +
+      '" data-continue-youtube="' +
+      escapeHtml(video.id) +
       '" target="_blank" rel="noopener noreferrer">' +
-      escapeHtml(i18n('pages.videos.openOnYoutube', 'Abrir no YouTube')) +
+      escapeHtml(i18n('pages.videos.continueOnYoutube', 'Continuar no YouTube')) +
       '</a>' +
+      '<p class="videos-continue-yt-hint">' +
+      escapeHtml(
+        i18n(
+          'pages.videos.continueOnYoutubeHint',
+          'Para ouvir com o ecrã desligado, abra na app YouTube.'
+        )
+      ) +
       '</p>' +
+      (video.published
+        ? '<p class="videos-player-meta-line"><time datetime="' +
+          escapeHtml(video.published) +
+          '">' +
+          escapeHtml(formatDate(video.published)) +
+          '</time></p>'
+        : '') +
+      '</div>' +
       '</div>';
 
+    bindContinueYouTubeButton(playerEl);
     syncActiveCards();
   }
 

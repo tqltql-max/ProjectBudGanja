@@ -42,9 +42,13 @@ function renderVideoBlock(video) {
     '</div>' +
     (video.summary ? '<p class="guia-video-summary">' + escapeHtml(video.summary) + '</p>' : '') +
     renderEmbed(video) +
+    '<div class="video-embed-continue guia-video-continue">' +
+    '<a class="botao botao-outline botao-sm" href="' + escapeHtml(video.url) + '" target="_blank" rel="noopener noreferrer">' +
+    'Continuar no YouTube</a>' +
+    '<span class="video-embed-continue-hint">Para ouvir com o ecrã desligado, abra na app YouTube.</span>' +
+    '</div>' +
     '<p class="guia-video-meta">' +
     '<time datetime="' + escapeHtml(video.published || '') + '">' + escapeHtml(formatDatePtBR(video.published)) + '</time>' +
-    ' · <a href="' + escapeHtml(video.url) + '" target="_blank" rel="noopener noreferrer">Abrir no YouTube</a>' +
     '</p>' +
     '</article>'
   );

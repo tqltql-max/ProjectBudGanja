@@ -33,16 +33,37 @@ function parseYouTubeId(input) {
   return null;
 }
 
+function youtubeContinueLabel(key, fallback) {
+  if (typeof window !== 'undefined' && window.BudGanjaI18n && typeof window.BudGanjaI18n.t === 'function') {
+    return window.BudGanjaI18n.t(key, fallback);
+  }
+  return fallback;
+}
+
 function renderYouTubeEmbed(videoId, title) {
   const id = parseYouTubeId(videoId);
   if (!id) return '<p class="embed-error">Link do YouTube inválido.</p>';
   const safeTitle = String(title || 'Vídeo do YouTube').replace(/"/g, '&quot;');
+  const watchUrl = 'https://www.youtube.com/watch?v=' + id;
+  const continueLabel = youtubeContinueLabel('pages.videos.continueOnYoutube', 'Continuar no YouTube');
+  const continueHint = youtubeContinueLabel(
+    'pages.videos.continueOnYoutubeHint',
+    'Para ouvir com o ecrã desligado, abra na app YouTube.'
+  );
   return (
+    '<div class="video-embed-block">' +
     '<div class="video-embed">' +
     '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '" ' +
     'title="' + safeTitle + '" loading="lazy" ' +
     'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ' +
     'referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>' +
+    '</div>' +
+    '<p class="video-embed-continue">' +
+    '<a class="botao botao-outline botao-sm" href="' + watchUrl + '" target="_blank" rel="noopener noreferrer">' +
+    continueLabel.replace(/</g, '&lt;') +
+    '</a>' +
+    '<span class="video-embed-continue-hint">' + continueHint.replace(/</g, '&lt;') + '</span>' +
+    '</p>' +
     '</div>'
   );
 }
