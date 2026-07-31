@@ -131,6 +131,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Canais, equipamentos, lojas, insumos e formação."
             },
             {
+              "label": "Inspeção: Artigo — Cannabis na adolescência e neurodesenvolvimento (JAMA Psychiatry)",
+              "tileLabel": "Inspeção: Artigo — Cannabis na …",
+              "href": "/posts/post-inspecao-artigo-albaugh-cannabis-neurodesenvolvimento.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-artigo-albaugh-cannabis-neurodesenvolvimento",
+              "description": "Auditoria editorial do estudo longitudinal IMAGEN (Albaugh et al., 2021): 799 adolescentes naïve, 1598 RM, afinamento cortical pré-frontal dose-dependente e sobreposição com densidade de receptores CB1."
+            },
+            {
               "label": "Inspeção: Sistema de Ventilação da Tenda",
               "tileLabel": "Inspeção: Sistema de Ventilação…",
               "href": "/posts/post-inspecao-ventilacao-tenda.html",
