@@ -65,7 +65,7 @@
       "titleEs": "Profa. Dra. Eliana Rodrigues",
       "tipo": "pessoa",
       "priority": 1,
-      "status": "a-fazer",
+      "status": "feita",
       "why": "Coordenação RTC do curso UNIFESP, curadoria do CANABinALL e CEE — figura central do ecossistema já inspecionado.",
       "whyEn": "UNIFESP course RTC coordination, CANABinALL curation and CEE — central figure of the already inspected ecosystem.",
       "whyEs": "Coordinación RTC del curso UNIFESP, curaduría del CANABinALL y CEE — figura central del ecosistema ya inspeccionado.",
@@ -75,7 +75,8 @@
         "https://site.unifesp.br/cee/coordenacao",
         "https://www.youtube.com/@canabinall"
       ],
-      "notes": "Não duplicar o canal CANABinALL: focar biografia, CEE e papel formativo."
+      "notes": "Não duplicar o canal CANABinALL: focar biografia, CEE e papel formativo.",
+      "doneHref": "/posts/post-inspecao-eliana-rodrigues.html"
     },
     {
       "id": "sidarta-ribeiro",
@@ -122,7 +123,7 @@
       "titleEs": "Gabrielle Dainezi — coordinación del curso UNIFESP",
       "tipo": "pessoa",
       "priority": 2,
-      "status": "ideia",
+      "status": "feita",
       "why": "Citada pela UNIFESP na coordenação do curso premiado; continua o fio Ticão–Carlini na extensão.",
       "whyEn": "Cited by UNIFESP in the award-winning course coordination; continues the Ticão–Carlini extension thread.",
       "whyEs": "Citada por la UNIFESP en la coordinación del curso premiado; continúa el hilo Ticão–Carlini en la extensión.",
@@ -130,7 +131,8 @@
       "seriesHint": "legado-pessoas",
       "sources": [
         "https://portal.unifesp.br/destaques/curso-sobre-cannabis-medicinal-da-unifesp-e-movrecam-ganha-premio-internacional"
-      ]
+      ],
+      "doneHref": "/posts/post-inspecao-gabrielle-dainezi.html"
     },
     {
       "id": "cebrid-hub",
@@ -139,7 +141,7 @@
       "titleEs": "CEBRID — centro y cursos de medicina cannabinoide",
       "tipo": "curso",
       "priority": 2,
-      "status": "a-fazer",
+      "status": "feita",
       "why": "Instituição fundada por Carlini; oferta formativa própria (ex. Medicina Canabinoide) complementar ao SIEX.",
       "whyEn": "Institution founded by Carlini; its own training offer (e.g. Cannabinoid Medicine) complementary to SIEX.",
       "whyEs": "Institución fundada por Carlini; oferta formativa propia (p. ej. Medicina cannabinoide) complementaria al SIEX.",
@@ -148,7 +150,8 @@
       "sources": [
         "https://www.cebrid.com.br/",
         "https://www.cebrid.com.br/curso-medicina-canabinoide/"
-      ]
+      ],
+      "doneHref": "/posts/post-inspecao-cebrid.html"
     },
     {
       "id": "observatorio-pharmacon",
