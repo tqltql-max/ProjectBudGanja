@@ -235,3 +235,19 @@
     color: var(--color-text-muted, #ccc);
     line-height: 1.45;
 }
+
+.planta-related-science {
+    margin-top: 1rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.22);
+}
+
+.planta-related-science h3 {
+    margin: 0 0 0.5rem;
+    font-size: 0.95rem;
+    color: var(--color-accent, #d4af37);
+}
+
+.planta-ficha #planta-cuidados {
+    scroll-margin-top: 5.5rem;
+}

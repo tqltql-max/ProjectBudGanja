@@ -161,6 +161,24 @@ function buildPlantPage(plant, catalog) {
     .join(' ');
   const localeJson = JSON.stringify(plantLocalePayload(plant)).replace(/</g, '\\u003c');
 
+  const relatedInspections = Array.isArray(plant.relatedInspections)
+    ? plant.relatedInspections.filter((r) => r && r.href && r.label)
+    : [];
+  const relatedScienceBlock = relatedInspections.length
+    ? `            <div class="planta-related-science">
+                <h3 data-i18n="pages.plantas.relatedScience">Leituras inspecionadas no laboratório</h3>
+                <ul class="info-list">
+${relatedInspections
+  .map((r) => {
+    const labelEn = escapeHtml(r.labelEn || r.label);
+    const labelEs = escapeHtml(r.labelEs || r.label);
+    return `                    <li><a href="${escapeHtml(r.href)}" data-planta-related-label data-label-pt="${escapeHtml(r.label)}" data-label-en="${labelEn}" data-label-es="${labelEs}">${escapeHtml(r.label)}</a></li>`;
+  })
+  .join('\n')}
+                </ul>
+            </div>`
+    : '';
+
   const unifespBlock = plant.relatedUnifesp
     ? `        <section class="info-panel">
             <h2 data-i18n="pages.plantas.unifespTitle">Formação UNIFESP</h2>
@@ -201,9 +219,10 @@ function buildPlantPage(plant, catalog) {
             <ul class="info-list" data-planta-uses></ul>
         </section>
 
-        <section class="info-panel">
+        <section class="info-panel" id="planta-cuidados">
             <h2 data-i18n="pages.plantas.cautions">Cuidados</h2>
             <p data-planta-cautions>${escapeHtml(plant.cautions)}</p>
+${relatedScienceBlock}
         </section>
 
 ${unifespBlock}

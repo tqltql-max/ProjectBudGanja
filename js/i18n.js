@@ -415,6 +415,17 @@
     document.querySelectorAll('[data-planta-cautions]').forEach(function (el) {
       el.textContent = fields.cautions || el.textContent;
     });
+    document.querySelectorAll('[data-planta-related-label]').forEach(function (el) {
+      var key = currentLocale === 'en' ? 'labelEn' : currentLocale === 'es' ? 'labelEs' : 'labelPt';
+      var attr =
+        key === 'labelEn'
+          ? 'data-label-en'
+          : key === 'labelEs'
+            ? 'data-label-es'
+            : 'data-label-pt';
+      var next = el.getAttribute(attr);
+      if (next) el.textContent = next;
+    });
     fillList(document.querySelector('[data-planta-parts]'), fields.partsUsed);
     fillList(document.querySelector('[data-planta-uses]'), fields.traditionalUses);
 

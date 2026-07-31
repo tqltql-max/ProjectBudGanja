@@ -651,7 +651,15 @@
         "Educação sobre uso terapêutico (curso UNIFESP)",
         "Referência em fitoterapia e legislação brasileira"
       ],
-      "cautions": "Uso medicinal sujeito a legislação e prescrição. Conteúdo educacional — não incentiva cultivo ilícito nem automedicação.",
+      "cautions": "Uso medicinal sujeito a legislação e prescrição. Em adolescentes, estudos longitudinais de neuroimagem (ex.: IMAGEN / Albaugh et al., JAMA Psychiatry 2021) associam uso de cannabis a alterações no neurodesenvolvimento cortical — ver a inspeção BudGanja do artigo. Conteúdo educacional — não incentiva cultivo ilícito nem automedicação.",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-artigo-albaugh-cannabis-neurodesenvolvimento.html",
+          "label": "Inspeção: Cannabis na adolescência e neurodesenvolvimento (JAMA Psychiatry)",
+          "labelEn": "Inspection: Adolescent cannabis use and neurodevelopment (JAMA Psychiatry)",
+          "labelEs": "Inspección: Cannabis en la adolescencia y neurodesarrollo (JAMA Psychiatry)"
+        }
+      ],
       "tags": [
         "medicinal",
         "unifesp",
