@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxImg = document.getElementById('comunidade-lightbox-img');
   const lightboxClose = document.getElementById('comunidade-lightbox-close');
   const lightboxBackdrop = document.getElementById('comunidade-lightbox-backdrop');
+  const lightboxTitle = document.getElementById('comunidade-lightbox-title');
 
   let nextCursor = null;
   let loading = false;
@@ -33,12 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const openComments = new Set();
   let lightboxLastFocus = null;
 
-  function openLightbox(url, altText) {
+  function openLightbox(url, altText, titleText) {
     const src = String(url || '').trim();
     if (!src || !lightboxEl || !lightboxImg) return;
     lightboxLastFocus = document.activeElement;
     lightboxImg.src = src;
     lightboxImg.alt = altText || 'Foto ampliada';
+    if (lightboxTitle) {
+      lightboxTitle.textContent = String(titleText || altText || 'Foto').trim() || 'Foto';
+    }
     lightboxEl.hidden = false;
     document.body.style.overflow = 'hidden';
     if (lightboxClose) lightboxClose.focus();
@@ -51,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       lightboxImg.removeAttribute('src');
       lightboxImg.alt = 'Foto ampliada';
     }
+    if (lightboxTitle) lightboxTitle.textContent = 'Foto';
     document.body.style.overflow = '';
     if (lightboxLastFocus && typeof lightboxLastFocus.focus === 'function') {
       lightboxLastFocus.focus();
@@ -122,17 +127,22 @@ document.addEventListener('DOMContentLoaded', () => {
       : '';
     const count = post.commentCount != null ? Number(post.commentCount) : 0;
     const commentLabel = isPlantId ? 'Sugestões' : 'Comentários';
+    const author = authorLabel(post.author);
+    const photoKind = isPlantId ? 'Pedido de identificação' : 'Foto da comunidade';
+    const photoTitle = author
+      ? (post.caption ? author + ' — ' + String(post.caption).trim() : author + ' · ' + photoKind)
+      : photoKind;
     return (
       '<article class="comunidade-card' + (isPlantId ? ' comunidade-card--plant' : '') + '" data-post-id="' + escapeHtml(post.id) + '">' +
       '<div class="comunidade-card-media">' +
-      '<button type="button" class="comunidade-card-photo-btn" data-photo-url="' + escapeHtml(post.photoUrl) + '" aria-label="Ampliar foto">' +
-      '<img class="comunidade-card-photo" src="' + escapeHtml(post.photoUrl) + '" alt="' + (isPlantId ? 'Pedido de identificação' : 'Foto da comunidade') + '" loading="lazy">' +
+      '<button type="button" class="comunidade-card-photo-btn" data-photo-url="' + escapeHtml(post.photoUrl) + '" data-photo-title="' + escapeHtml(photoTitle) + '" aria-label="Ampliar foto">' +
+      '<img class="comunidade-card-photo" src="' + escapeHtml(post.photoUrl) + '" alt="' + escapeHtml(photoTitle) + '" loading="lazy">' +
       '<span class="comunidade-card-media-hint">Ampliar</span>' +
       '</button>' +
       '</div>' +
       '<div class="comunidade-card-body">' +
       '<div class="comunidade-card-meta">' +
-      '<strong>' + escapeHtml(authorLabel(post.author)) + '</strong>' +
+      '<strong>' + escapeHtml(author) + '</strong>' +
       '<time datetime="' + escapeHtml(post.createdAt) + '">' + escapeHtml(formatDate(post.createdAt)) + '</time>' +
       '</div>' +
       '<div class="comunidade-card-badges">' + plantBadge + phase + help + '</div>' +
@@ -348,7 +358,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (plantPreview) {
     plantPreview.addEventListener('click', () => {
       if (!plantPreview.getAttribute('src')) return;
-      openLightbox(plantPreview.src, 'Pré-visualização da planta');
+      openLightbox(plantPreview.src, 'Pré-visualização da planta', 'Pré-visualização da planta');
     });
   }
 
@@ -486,8 +496,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const photoBtn = e.target.closest('.comunidade-card-photo-btn');
       if (photoBtn) {
         const url = photoBtn.getAttribute('data-photo-url') || '';
+        const title = photoBtn.getAttribute('data-photo-title') || '';
         const img = photoBtn.querySelector('img');
-        openLightbox(url, img ? img.alt : 'Foto ampliada');
+        openLightbox(url, img ? img.alt : 'Foto ampliada', title);
         return;
       }
       const btn = e.target.closest('.comunidade-comments-toggle');

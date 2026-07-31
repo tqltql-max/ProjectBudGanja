@@ -122,10 +122,15 @@
         </div>
     </main>
 
-    <div id="comunidade-lightbox" class="comunidade-lightbox" hidden role="dialog" aria-modal="true" aria-label="Foto ampliada">
+    <div id="comunidade-lightbox" class="comunidade-lightbox" hidden role="dialog" aria-modal="true" aria-labelledby="comunidade-lightbox-title">
         <button type="button" class="comunidade-lightbox-backdrop" id="comunidade-lightbox-backdrop" aria-label="Fechar foto"></button>
-        <img id="comunidade-lightbox-img" class="comunidade-lightbox-img" src="" alt="Foto ampliada">
-        <button type="button" class="comunidade-lightbox-close" id="comunidade-lightbox-close" aria-label="Fechar">×</button>
+        <div class="comunidade-lightbox-stage">
+            <img id="comunidade-lightbox-img" class="comunidade-lightbox-img" src="" alt="Foto ampliada">
+            <div class="comunidade-lightbox-bar">
+                <p id="comunidade-lightbox-title" class="comunidade-lightbox-title">Foto</p>
+                <button type="button" class="comunidade-lightbox-close" id="comunidade-lightbox-close">Fechar foto</button>
+            </div>
+        </div>
     </div>
 
     <div id="site-footer"></div>

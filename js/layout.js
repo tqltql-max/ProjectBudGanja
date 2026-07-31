@@ -1267,12 +1267,12 @@ function getSiteHubNav() {
         tone: 'ferramentas'
       },
       {
-        href: '/equipamentos/',
-        icon: '🛠️',
-        label: i18n('nav.equipment', 'Equipamentos'),
-        tip: i18n('nav.quickEquipmentTip', 'Clonadoras e guias de montagem'),
-        prefixes: '/equipamentos',
-        tone: 'equipamentos'
+        href: '/comunidade/',
+        icon: '👥',
+        label: i18n('nav.community', 'Comunidade'),
+        tip: i18n('nav.quickCommunityTip', 'Feed de fotos do diário de pesquisas'),
+        prefixes: '/comunidade',
+        tone: 'comunidade'
       },
       {
         href: '/videos/',
