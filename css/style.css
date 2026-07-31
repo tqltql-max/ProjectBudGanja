@@ -11338,29 +11338,44 @@ body[data-page="comunidade"] {
 .comunidade-card-media {
     position: relative;
     overflow: hidden;
+    background: #12180f;
 }
 
-.comunidade-card-media::after {
-    content: '';
-    position: absolute;
-    inset: auto 0 0;
-    height: 42%;
-    background: linear-gradient(180deg, transparent, rgba(8, 12, 6, 0.55));
-    pointer-events: none;
-}
-
-.comunidade-card-media img {
+.comunidade-card-photo-btn {
     display: block;
     width: 100%;
-    aspect-ratio: 4 / 3;
-    max-height: 420px;
-    object-fit: cover;
-    background: #1a2414;
-    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: zoom-in;
+    text-align: left;
 }
 
-.comunidade-card:hover .comunidade-card-media img {
-    transform: scale(1.03);
+.comunidade-card-media img,
+.comunidade-card-photo {
+    display: block;
+    width: 100%;
+    max-height: min(70vh, 560px);
+    height: auto;
+    object-fit: contain;
+    background: #12180f;
+}
+
+.comunidade-card-media-hint {
+    position: absolute;
+    right: 0.65rem;
+    bottom: 0.65rem;
+    z-index: 1;
+    padding: 0.28rem 0.55rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(0, 0, 0, 0.62);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    pointer-events: none;
 }
 
 .comunidade-card-body {
@@ -11615,9 +11630,70 @@ body[data-page="comunidade"] {
 .comunidade-compose-preview img {
     width: 100%;
     display: block;
-    aspect-ratio: 4 / 3;
-    max-height: 280px;
-    object-fit: cover;
+    max-height: min(50vh, 360px);
+    height: auto;
+    object-fit: contain;
+    cursor: zoom-in;
+    background: #12180f;
+}
+
+.comunidade-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.88);
+    backdrop-filter: blur(4px);
+}
+
+.comunidade-lightbox[hidden] {
+    display: none !important;
+}
+
+.comunidade-lightbox-img {
+    position: relative;
+    z-index: 1;
+    max-width: min(96vw, 1200px);
+    max-height: min(90vh, 900px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45);
+    background: #0d120a;
+}
+
+.comunidade-lightbox-close {
+    position: absolute;
+    top: 0.85rem;
+    right: 0.85rem;
+    z-index: 2;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.comunidade-lightbox-close:hover {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.comunidade-lightbox-backdrop {
+    position: absolute;
+    inset: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    cursor: zoom-out;
 }
 
 .comunidade-compose-preview-clear {
@@ -11771,13 +11847,11 @@ body[data-page="comunidade"] {
 
 @media (prefers-reduced-motion: reduce) {
     .comunidade-card,
-    .comunidade-card-media img,
     .comunidade-compose-action {
         transition: none;
     }
 
     .comunidade-card:hover,
-    .comunidade-card:hover .comunidade-card-media img,
     .comunidade-compose-action:hover {
         transform: none;
     }

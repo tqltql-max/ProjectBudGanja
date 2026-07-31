@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const plantStatus = document.getElementById('comunidade-plant-id-status');
   const plantSubmit = document.getElementById('comunidade-plant-id-submit');
   const filterBtns = Array.from(document.querySelectorAll('.comunidade-filter'));
+  const lightboxEl = document.getElementById('comunidade-lightbox');
+  const lightboxImg = document.getElementById('comunidade-lightbox-img');
+  const lightboxClose = document.getElementById('comunidade-lightbox-close');
+  const lightboxBackdrop = document.getElementById('comunidade-lightbox-backdrop');
 
   let nextCursor = null;
   let loading = false;
@@ -27,6 +31,32 @@ document.addEventListener('DOMContentLoaded', () => {
   let pendingFile = null;
   let previewObjectUrl = '';
   const openComments = new Set();
+  let lightboxLastFocus = null;
+
+  function openLightbox(url, altText) {
+    const src = String(url || '').trim();
+    if (!src || !lightboxEl || !lightboxImg) return;
+    lightboxLastFocus = document.activeElement;
+    lightboxImg.src = src;
+    lightboxImg.alt = altText || 'Foto ampliada';
+    lightboxEl.hidden = false;
+    document.body.style.overflow = 'hidden';
+    if (lightboxClose) lightboxClose.focus();
+  }
+
+  function closeLightbox() {
+    if (!lightboxEl) return;
+    lightboxEl.hidden = true;
+    if (lightboxImg) {
+      lightboxImg.removeAttribute('src');
+      lightboxImg.alt = 'Foto ampliada';
+    }
+    document.body.style.overflow = '';
+    if (lightboxLastFocus && typeof lightboxLastFocus.focus === 'function') {
+      lightboxLastFocus.focus();
+    }
+    lightboxLastFocus = null;
+  }
 
   function escapeHtml(s) {
     return String(s || '')
@@ -95,7 +125,10 @@ document.addEventListener('DOMContentLoaded', () => {
     return (
       '<article class="comunidade-card' + (isPlantId ? ' comunidade-card--plant' : '') + '" data-post-id="' + escapeHtml(post.id) + '">' +
       '<div class="comunidade-card-media">' +
-      '<img src="' + escapeHtml(post.photoUrl) + '" alt="' + (isPlantId ? 'Pedido de identificação' : 'Foto da comunidade') + '" loading="lazy">' +
+      '<button type="button" class="comunidade-card-photo-btn" data-photo-url="' + escapeHtml(post.photoUrl) + '" aria-label="Ampliar foto">' +
+      '<img class="comunidade-card-photo" src="' + escapeHtml(post.photoUrl) + '" alt="' + (isPlantId ? 'Pedido de identificação' : 'Foto da comunidade') + '" loading="lazy">' +
+      '<span class="comunidade-card-media-hint">Ampliar</span>' +
+      '</button>' +
       '</div>' +
       '<div class="comunidade-card-body">' +
       '<div class="comunidade-card-meta">' +
@@ -312,6 +345,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  if (plantPreview) {
+    plantPreview.addEventListener('click', () => {
+      if (!plantPreview.getAttribute('src')) return;
+      openLightbox(plantPreview.src, 'Pré-visualização da planta');
+    });
+  }
+
+  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+  if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightboxEl && !lightboxEl.hidden) {
+      e.preventDefault();
+      closeLightbox();
+    }
+  });
+
   if (plantForm) {
     plantForm.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -434,6 +483,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (feedEl) {
     feedEl.addEventListener('click', (e) => {
+      const photoBtn = e.target.closest('.comunidade-card-photo-btn');
+      if (photoBtn) {
+        const url = photoBtn.getAttribute('data-photo-url') || '';
+        const img = photoBtn.querySelector('img');
+        openLightbox(url, img ? img.alt : 'Foto ampliada');
+        return;
+      }
       const btn = e.target.closest('.comunidade-comments-toggle');
       if (!btn) return;
       const postId = btn.getAttribute('data-post-id');
