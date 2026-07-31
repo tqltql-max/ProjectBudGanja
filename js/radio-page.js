@@ -99,7 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
         heading: title,
         sub: artist,
         url: url,
-        text: 'A ouvir na BudGanja Radio: ' + line + '\n' + url,
+        // Sem URL aqui: Web Share usa `url` à parte; WhatsApp junta text+url.
+        text: 'A ouvir na BudGanja Radio: ' + line,
         title: title + ' | BudGanja Radio'
       };
     }
@@ -112,9 +113,17 @@ document.addEventListener('DOMContentLoaded', () => {
       heading: 'Playlist do laboratório',
       sub: 'Inspetor BudGanja',
       url: url,
-      text: 'Ouça a BudGanja Radio — playlist do laboratório Inspetor BudGanja.\n' + url,
+      text: 'Ouça a BudGanja Radio — playlist do laboratório Inspetor BudGanja.',
       title: 'BudGanja Radio | Inspetor BudGanja'
     };
+  }
+
+  function shareMessageForWhatsApp(payload) {
+    if (!payload) return '';
+    const body = String(payload.text || '').trim();
+    const link = String(payload.url || '').trim();
+    if (body && link) return body + '\n' + link;
+    return body || link;
   }
 
   function closeShareSheet() {
@@ -135,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (shareSub) shareSub.textContent = sharePayload.sub;
     if (shareUrlEl) shareUrlEl.textContent = sharePayload.url;
     if (shareWa) {
-      shareWa.href = whatsAppShareUrl(sharePayload.text);
+      shareWa.href = whatsAppShareUrl(shareMessageForWhatsApp(sharePayload));
     }
     if (shareNative) {
       shareNative.hidden = typeof navigator.share !== 'function';
@@ -152,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function openWhatsAppShare() {
     if (!sharePayload) return;
-    const url = whatsAppShareUrl(sharePayload.text);
+    const url = whatsAppShareUrl(shareMessageForWhatsApp(sharePayload));
     if (shareWa) shareWa.href = url;
     showToast('A abrir WhatsApp…');
     closeShareSheet();

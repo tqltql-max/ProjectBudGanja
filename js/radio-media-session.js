@@ -229,7 +229,8 @@
       var files = file && canShareFiles([file]) ? [file] : null;
       var payload = {
         title: title + ' | BudGanja Radio',
-        text: 'A ouvir na BudGanja Radio: ' + line + '\n' + shareUrl,
+        // URL só em `url` — evita link duplicado no WhatsApp / Web Share.
+        text: 'A ouvir na BudGanja Radio: ' + line,
         url: shareUrl
       };
       if (files) payload.files = files;
@@ -244,7 +245,7 @@
   function shareRadio() {
     var shareUrl = buildRadioShareUrl();
     var title = 'BudGanja Radio | Inspetor BudGanja';
-    var text = 'Ouça a BudGanja Radio — playlist do laboratório Inspetor BudGanja.\n' + shareUrl;
+    var text = 'Ouça a BudGanja Radio — playlist do laboratório Inspetor BudGanja.';
 
     return fetchShareCoverFile().then(function (file) {
       var files = file && canShareFiles([file]) ? [file] : null;

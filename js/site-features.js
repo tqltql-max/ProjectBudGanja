@@ -357,9 +357,11 @@
     var descMeta = document.querySelector('meta[name="description"]');
     var desc = (descMeta && descMeta.getAttribute('content')) || title;
     var url = canonicalShareUrl();
+    // Não incluir o URL em `text`: WhatsApp e outros apps concatenam text+url
+    // e acabam a enviar o mesmo link duas vezes.
     var payload = {
       title: title,
-      text: desc + '\n\n' + url,
+      text: desc,
       url: url
     };
     if (files && files.length) payload.files = files;
