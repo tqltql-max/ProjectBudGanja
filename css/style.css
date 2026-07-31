@@ -10189,6 +10189,10 @@ html[data-theme="light"] .pesquisas-section + .pesquisas-section {
     color: var(--color-accent-light);
 }
 
+.article-header .post-i18n-note {
+    margin: 1rem 0 0;
+}
+
 .post-i18n-note {
     display: block;
     margin: 14px 0 0;

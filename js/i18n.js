@@ -92,9 +92,22 @@
   function syncPostI18nNotes() {
     document.querySelectorAll('[data-post-i18n-note]').forEach(function (note) {
       var show = currentLocale === 'en' || currentLocale === 'es';
+      var hasEn = note.getAttribute('data-has-en') === '1';
+      var hasEs = note.getAttribute('data-has-es') === '1';
+      if (currentLocale === 'en' && !hasEn) show = hasEs;
+      if (currentLocale === 'es' && !hasEs) show = hasEn;
       note.hidden = !show;
+      if (show) note.removeAttribute('hidden');
+      else note.setAttribute('hidden', '');
+
       note.querySelectorAll('[data-i18n-locale]').forEach(function (p) {
-        p.hidden = p.getAttribute('data-i18n-locale') !== currentLocale;
+        var locale = p.getAttribute('data-i18n-locale');
+        var active = locale === currentLocale;
+        if (!active && currentLocale === 'en' && !hasEn && locale === 'es') active = true;
+        if (!active && currentLocale === 'es' && !hasEs && locale === 'en') active = true;
+        p.hidden = !active;
+        if (active) p.removeAttribute('hidden');
+        else p.setAttribute('hidden', '');
       });
     });
   }
