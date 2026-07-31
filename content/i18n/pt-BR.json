@@ -49,6 +49,7 @@
     "searchShortcut": "Buscar (Ctrl+K)",
     "share": "Compartilhar",
     "shareAria": "Compartilhar esta publicação",
+    "sharePageAria": "Compartilhar esta página",
     "shareCopied": "Link copiado!",
     "privacyUpdatedDate": "30 de julho de 2026"
   },
@@ -483,6 +484,8 @@
       "continueOnYoutube": "Continuar no YouTube",
       "continueOnYoutubeHint": "Para ouvir com o ecrã desligado, abra na app YouTube.",
       "watchHere": "Assistir",
+      "copyLink": "Copiar link",
+      "linkCopied": "Link copiado!",
       "nowPlaying": "Vídeo do YouTube",
       "filtersLabel": "Filtrar por canal",
       "seriesLabel": "Filtrar por série",

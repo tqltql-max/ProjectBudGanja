@@ -477,6 +477,27 @@
     });
   }
 
+  function buildShareWrap(ariaKey, ariaFallback) {
+    var wrap = document.createElement('div');
+    wrap.className = 'article-share';
+    wrap.innerHTML =
+      '<button type="button" class="article-share-btn" data-post-share data-i18n-aria="' + ariaKey + '" aria-label="' +
+      tShare(ariaKey, ariaFallback) +
+      '">' +
+      '<span class="article-share-icon" aria-hidden="true">' + SHARE_ICON_SVG + '</span>' +
+      '<span data-i18n="common.share">' + tShare('common.share', 'Compartilhar') + '</span>' +
+      '</button>' +
+      '<span class="article-share-feedback" data-post-share-feedback hidden aria-live="polite"></span>';
+    return wrap;
+  }
+
+  function pageShareSkipped() {
+    var page = (document.body && document.body.dataset.page) || '';
+    if (/admin/i.test(page)) return true;
+    if (page === 'entrar' || page === 'login' || page === 'radio' || page === 'home') return true;
+    return false;
+  }
+
   /** Insere o botão se a página de artigo ainda não tiver (manuais CMS, etc.). */
   function ensureArticleShareButton() {
     var header = document.querySelector('.article-page .article-header, .relatorio-container .article-header');
@@ -484,24 +505,49 @@
     var h1 = header.querySelector('h1');
     if (!h1) return;
 
-    var wrap = document.createElement('div');
-    wrap.className = 'article-share';
-    wrap.innerHTML =
-      '<button type="button" class="article-share-btn" data-post-share data-i18n-aria="common.shareAria" aria-label="' +
-      tShare('common.shareAria', 'Compartilhar esta publicação') +
-      '">' +
-      '<span class="article-share-icon" aria-hidden="true">' + SHARE_ICON_SVG + '</span>' +
-      '<span data-i18n="common.share">' + tShare('common.share', 'Compartilhar') + '</span>' +
-      '</button>' +
-      '<span class="article-share-feedback" data-post-share-feedback hidden aria-live="polite"></span>';
-
+    var wrap = buildShareWrap('common.shareAria', 'Compartilhar esta publicação');
     var meta = header.querySelector('.meta-info');
     if (meta) header.insertBefore(wrap, meta);
     else h1.insertAdjacentElement('afterend', wrap);
   }
 
+  /**
+   * Botão Compartilhar nos hubs/páginas (não na home — o hero não deve ter este CTA).
+   */
+  function ensurePageShareButton() {
+    if (pageShareSkipped()) return;
+    if (document.querySelector('[data-post-share]')) return;
+
+    var hubHeader = document.querySelector(
+      '.plantas-hub-header, .inspecoes-hub-header, .videos-header, ' +
+      '.pesquisas-hub-header, .equipamentos-page-header, .calculadoras-header, ' +
+      '.unifesp-hub-header, .comunidade-header, .sorteios-header, .loja-header, ' +
+      'main.conteudo-interno > header, main.conteudo > header, main > header'
+    );
+    if (hubHeader && !hubHeader.querySelector('[data-post-share]')) {
+      var hubH1 = hubHeader.querySelector('h1');
+      if (hubH1) {
+        hubH1.insertAdjacentElement(
+          'afterend',
+          buildShareWrap('common.sharePageAria', 'Compartilhar esta página')
+        );
+        return;
+      }
+    }
+
+    var main = document.getElementById('main-content') || document.querySelector('main');
+    if (!main) return;
+    var h1 = main.querySelector('h1');
+    if (!h1 || h1.closest('.card, .post-card, .home-pillar, .home-channel, .hero-content')) return;
+    h1.insertAdjacentElement(
+      'afterend',
+      buildShareWrap('common.sharePageAria', 'Compartilhar esta página')
+    );
+  }
+
   function initPostShare() {
     ensureArticleShareButton();
+    ensurePageShareButton();
     document.querySelectorAll('[data-post-share]').forEach(bindShareButton);
   }
 

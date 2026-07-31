@@ -152,7 +152,9 @@
     var src =
       'https://www.youtube-nocookie.com/embed/' +
       encodeURIComponent(id) +
-      '?rel=0&modestbranding=1&playsinline=1';
+      '?rel=0&modestbranding=1&playsinline=1' +
+      // Preferir legendas em inglês quando existirem no YouTube
+      '&cc_load_policy=1&cc_lang_pref=en';
     try {
       src += '&origin=' + encodeURIComponent(window.location.origin);
     } catch (e) { /* ignore */ }
@@ -162,6 +164,53 @@
 
   function youtubeWatchUrl(id) {
     return 'https://www.youtube.com/watch?v=' + encodeURIComponent(id);
+  }
+
+  function videoPageShareUrl(id) {
+    var path = '/videos/#' + encodeURIComponent(id);
+    try {
+      if (/localhost|127\.0\.0\.1/i.test(window.location.hostname || '')) {
+        return 'https://inspetorbudganja.com.br' + path;
+      }
+      return window.location.origin + path;
+    } catch (e) {
+      return 'https://inspetorbudganja.com.br' + path;
+    }
+  }
+
+  function bindCopyVideoLinkButton(root) {
+    if (!root) return;
+    var btn = root.querySelector('[data-copy-video-link]');
+    if (!btn || btn.dataset.bound === '1') return;
+    btn.dataset.bound = '1';
+    btn.addEventListener('click', function () {
+      var id = btn.getAttribute('data-copy-video-link') || '';
+      if (!isValidVideoId(id)) return;
+      var url = videoPageShareUrl(id);
+      var label = btn.querySelector('[data-copy-label]') || btn;
+      var original = i18n('pages.videos.copyLink', 'Copiar link');
+      var done = function () {
+        label.textContent = i18n('pages.videos.linkCopied', 'Link copiado!');
+        btn.classList.add('is-copied');
+        window.setTimeout(function () {
+          label.textContent = original;
+          btn.classList.remove('is-copied');
+        }, 1800);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done).catch(function () {
+          try {
+            if (window.prompt) window.prompt(original + ':', url);
+          } catch (e) { /* ignore */ }
+          done();
+        });
+        return;
+      }
+      try {
+        if (window.prompt) window.prompt(original + ':', url);
+      } catch (e) { /* ignore */ }
+      done();
+    });
   }
 
   /** Tenta abrir a app YouTube (melhor para áudio com ecrã desligado). */
@@ -406,6 +455,11 @@
       '" target="_blank" rel="noopener noreferrer">' +
       escapeHtml(i18n('pages.videos.continueOnYoutube', 'Continuar no YouTube')) +
       '</a>' +
+      '<button type="button" class="botao botao-outline botao-sm videos-copy-link" data-copy-video-link="' +
+      escapeHtml(video.id) +
+      '"><span data-copy-label>' +
+      escapeHtml(i18n('pages.videos.copyLink', 'Copiar link')) +
+      '</span></button>' +
       '<p class="videos-continue-yt-hint">' +
       escapeHtml(
         i18n(
@@ -425,6 +479,7 @@
       '</div>';
 
     bindContinueYouTubeButton(playerEl);
+    bindCopyVideoLinkButton(playerEl);
     syncActiveCards();
   }
 
