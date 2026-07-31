@@ -59,10 +59,8 @@ async function run() {
 
   const testUserId = TEST_PREFIX + '-user-' + Date.now();
   const testSorteioId = TEST_PREFIX + '-sorteio-' + Date.now();
-  const testOrderId = TEST_PREFIX + '-order-' + Date.now();
 
   const existingSorteios = await store.getSorteios();
-  const existingOrders = await store.getLojaOrders();
 
   try {
     const now = new Date().toISOString();
@@ -83,25 +81,6 @@ async function run() {
       created_at: now
     }]);
     await store.setSorteios(nextSorteios);
-
-    const nextOrders = existingOrders.concat([{
-      id: testOrderId,
-      product_id: 'clonadora-6',
-      product_title: 'Clonadora 6',
-      package_id: 'montagem',
-      package_label: 'Montagem',
-      package_price_note: 'Sem bomba',
-      nome: 'Contrato API',
-      email: 'contract-api@example.test',
-      telefone: '11999999999',
-      cidade: 'Sao Paulo',
-      estado: 'SP',
-      mensagem: 'Teste',
-      user_id: testUserId,
-      status: 'novo',
-      created_at: now
-    }]);
-    await store.setLojaOrders(nextOrders);
 
     await store.setUsers({
       [testUserId]: {
@@ -135,14 +114,6 @@ async function run() {
     assert('sorteio camelCase', sorteio && sorteio.userId && sorteio.cpfFormatado && sorteio.premioId && sorteio.premioLabel && sorteio.createdAt);
     assert('sorteio sem snake_case', hasNoSnakeCaseKeys(sorteio, ['user_id', 'cpf_formatado', 'premio_id', 'premio_label', 'created_at']));
 
-    const ordersRes = await callApi(store, 'GET', '/api/loja/encomendas', null, cookie);
-    assert('GET /api/loja/encomendas status', ordersRes.status === 200, 'status=' + ordersRes.status);
-    const orders = parseJsonBody(ordersRes);
-    const order = Array.isArray(orders) ? orders.find((row) => row.id === testOrderId) : null;
-    assert('encomenda de teste presente', !!order);
-    assert('loja camelCase', order && order.productId && order.productTitle && order.packageId && order.packageLabel && order.packagePriceNote && order.userId && order.createdAt);
-    assert('loja sem snake_case', hasNoSnakeCaseKeys(order, ['product_id', 'product_title', 'package_id', 'package_label', 'package_price_note', 'user_id', 'created_at']));
-
     const usersRes = await callApi(store, 'GET', '/api/admin/users', null, cookie, 'q=' + encodeURIComponent(TEST_PREFIX));
     assert('GET /api/admin/users status', usersRes.status === 200, 'status=' + usersRes.status);
     const usersPayload = parseJsonBody(usersRes);
@@ -155,7 +126,6 @@ async function run() {
   } finally {
     await db.execute({ sql: 'DELETE FROM users WHERE id = ?', args: [testUserId] });
     await store.setSorteios(existingSorteios.filter((row) => row.id !== testSorteioId));
-    await store.setLojaOrders(existingOrders.filter((row) => row.id !== testOrderId));
   }
 
   console.log('\n=== Resultado: ' + passed + ' OK, ' + failed + ' falhas ===');

@@ -60,6 +60,8 @@
     "openPage": "Open radio page",
     "opened": "Radio open",
     "expandPlaying": "Expand radio (playing)",
+    "powerOn": "Turn radio on",
+    "powerOff": "Turn radio off",
     "prev": "Previous track",
     "play": "Play",
     "pause": "Pause",
@@ -83,7 +85,6 @@
   "nav": {
     "library": "Library",
     "tools": "Tools",
-    "shop": "Shop",
     "growingGuide": "Growing Guide",
     "research": "Research",
     "inspections": "Inspections",
@@ -98,10 +99,10 @@
     "privacy": "Privacy",
     "aboutProject": "About the project",
     "technicalResearch": "Research",
-    "partnerShops": "Partner stores",
     "community": "Community",
     "communityFeed": "Community feed",
     "growDiary": "Research diary",
+    "diaryShort": "Diary",
     "radio": "BudGanja Radio",
     "plants": "Plants",
     "unifesp": "UNIFESP",
@@ -121,7 +122,7 @@
     "quickGiveawaysTip": "Active lab promotions",
     "quickLibraryTip": "Research, inspections and videos",
     "quickToolsTip": "Calculators and equipment",
-    "quickShopTip": "Cloner supplies",
+    "quickGrowTip": "Research diary and grow logs",
     "quickCommunityTip": "Research diary photo feed"
   },
   "footer": {
@@ -233,11 +234,6 @@
       "label": "Soil",
       "tileLabel": "Soil",
       "description": "Organic super-soil amendment doses from substrate volume."
-    },
-    "loja": {
-      "label": "Shop",
-      "tileLabel": "Shop",
-      "description": "Parts used in the lab cloners and builds."
     },
     "plantas": {
       "label": "Plants",
@@ -387,9 +383,6 @@
       "cardGiveawaysTitle": "Giveaways",
       "cardGiveawaysText": "Active and past lab giveaways — join in and follow the results.",
       "cardGiveawaysBtn": "View giveaways",
-      "cardLojaTitle": "Partner store",
-      "cardLojaText": "Products used in the lab's cloners and equipment — build with the same materials as the guides.",
-      "cardLojaBtn": "View store",
       "latestTitle": "Latest from the lab",
       "latestSubtitle": "Recent posts from the Library.",
       "latestLoading": "Loading publications...",
@@ -435,7 +428,7 @@
     "dev": {
       "badge": "Under construction",
       "title": "We're preparing something new",
-      "text": "The lab is building the new site — guides, tools and shop coming soon.",
+      "text": "The lab is building the new site — guides and tools coming soon.",
       "note": "Thanks for your patience. Check back soon.",
       "admin": "Admin area"
     },
@@ -560,21 +553,18 @@
     "equipment": {
       "eyebrow": "Lab",
       "title": "Equipment",
-      "subtitle": "Documented home cloners — pick by budget and cutting count. Each guide links to the <a href=\"/loja/\">partner shop</a> with lab materials.",
+      "subtitle": "Documented home cloners — pick by budget and cutting count. Materials from ordinary shops (pet stores, gardening or light hardware).",
       "docTitle": "Equipment | Inspetor BudGanja",
       "cloner6Title": "6-cutting cloner",
       "cloner6Body": "Ice cream tub, kitchen sponge and air pump — bubbles in the water, <strong>24 hours a day</strong> until roots form. A <strong>low-cost</strong>, easy build.",
       "cloner6Cta": "View build guide",
-      "cloner6Shop": "Materials in the shop",
       "cloner6Alt": "DIY 6-cutting cloner with ice cream tub",
       "cloner12Title": "12-cutting cloner",
       "cloner12Body": "Bucket, submersible pump and micro-sprayer kit — mist on the roots, <strong>24 hours a day</strong> until transplant. A <strong>moderate to high cost</strong> project.",
       "cloner12Cta": "View build guide",
-      "cloner12Shop": "Materials in the shop",
       "cloner12Alt": "DIY 12-cutting cloner with bucket and sprayers",
       "publications": "Equipment publications",
-      "loading": "Loading publications…",
-      "shopLink": "partner shop"
+      "loading": "Loading publications…"
     },
     "cultivo": {
       "eyebrow": "Community",
@@ -613,12 +603,6 @@
       "title": "Giveaways",
       "subtitle": "Active and past lab giveaways.",
       "docTitle": "Giveaways | Inspetor BudGanja"
-    },
-    "shop": {
-      "eyebrow": "Partners",
-      "title": "Shop",
-      "subtitle": "Parts used in the lab cloners and builds.",
-      "docTitle": "Shop | Inspetor BudGanja"
     },
     "unifesp": {
       "eyebrow": "Academic extension",

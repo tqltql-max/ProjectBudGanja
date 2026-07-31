@@ -20,8 +20,6 @@ const STATIC = [
   { loc: '/biblioteca/unifesp/', priority: '0.95', changefreq: 'monthly' },
   { loc: '/plantas/', priority: '0.95', changefreq: 'weekly' },
   { loc: '/equipamentos/', priority: '0.9', changefreq: 'monthly' },
-  { loc: '/loja/', priority: '0.85', changefreq: 'monthly' },
-  { loc: '/loja/encomenda.html', priority: '0.8', changefreq: 'monthly' },
   { loc: '/calculadoras/', priority: '0.8', changefreq: 'monthly' },
   ...CALCULADORAS.map((c) => ({
     loc: getCalculadoraUrl(c),

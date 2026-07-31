@@ -724,11 +724,6 @@ const DEFAULT_SITE = {
       megaHeader: 'Ferramentas',
       megaHeaderHref: '/calculadoras/',
       groups: [{ title: '', items: [] }]
-    },
-    {
-      label: 'Loja',
-      href: '/loja/',
-      navCta: true
     }
   ],
   footerLinks: [
@@ -743,8 +738,7 @@ const DEFAULT_SITE = {
     { label: 'Diário de pesquisas', href: '/cultivo/' },
     { label: 'Comunidade', href: '/comunidade/' },
     { label: 'BudGanja Radio', href: '/radio/' },
-    { label: 'Sorteios', href: '/sorteios/' },
-    { label: 'Loja', href: '/loja/' }
+    { label: 'Sorteios', href: '/sorteios/' }
   ],
   footerGroups: [
     {
@@ -772,8 +766,7 @@ const DEFAULT_SITE = {
       links: [
         { label: 'Feed da comunidade', href: '/comunidade/' },
         { label: 'BudGanja Radio', href: '/radio/' },
-        { label: 'Sorteios', href: '/sorteios/' },
-        { label: 'Loja', href: '/loja/' }
+        { label: 'Sorteios', href: '/sorteios/' }
       ]
     },
     {
@@ -815,8 +808,6 @@ function translateFooterLabel(label) {
     'Sobre o projeto': 'nav.aboutProject',
     'Privacidade': 'nav.privacy',
     'Contato': 'nav.contact',
-    'Loja': 'nav.shop',
-    'Loja parceira': 'nav.shop',
     'Plantas': 'nav.plants',
     'UNIFESP': 'nav.unifesp'
   };
@@ -1267,6 +1258,14 @@ function getSiteHubNav() {
         tone: 'ferramentas'
       },
       {
+        href: '/cultivo/',
+        icon: '📓',
+        label: i18n('nav.diaryShort', 'Diário'),
+        tip: i18n('nav.quickGrowTip', 'Diário de pesquisas e registos de cultivo'),
+        prefixes: '/cultivo',
+        tone: 'cultivo'
+      },
+      {
         href: '/comunidade/',
         icon: '👥',
         label: i18n('nav.community', 'Comunidade'),
@@ -1281,14 +1280,6 @@ function getSiteHubNav() {
         tip: i18n('nav.quickVideosTip', 'Últimos vídeos do canal'),
         prefixes: '/videos',
         tone: 'videos'
-      },
-      {
-        href: '/radio/',
-        icon: '📻',
-        label: i18n('nav.radio', 'BudGanja Radio'),
-        tip: i18n('nav.quickRadioTip', 'Playlist BudGanja Radio'),
-        prefixes: '/radio',
-        tone: 'radio'
       }
     ],
     mobileSections: [
@@ -1919,23 +1910,16 @@ function applyGeneratedNav(site) {
   if (!site || !Array.isArray(site.nav)) return site;
   const bib = typeof window !== 'undefined' ? window.__BIBLIOTECA_NAV__ : null;
   const fer = typeof window !== 'undefined' ? window.__FERRAMENTAS_NAV__ : null;
-  const loja = typeof window !== 'undefined' ? window.__LOJA_NAV__ : null;
   if (!bib && !fer) return site;
   const next = Object.assign({}, site);
-  const lojaItem = loja
-    || site.nav.find(function (item) { return item && item.navCta && item.href; })
-    || { label: 'Loja', href: '/loja/', navCta: true };
   if (bib && fer) {
-    next.nav = [bib, fer, lojaItem];
+    next.nav = [bib, fer];
   } else {
     next.nav = site.nav.map(function (item) {
       if (item && item.label === 'Biblioteca' && bib) return bib;
       if (item && item.label === 'Ferramentas' && fer) return fer;
       return item;
     });
-    if (!next.nav.some(function (item) { return item && item.navCta; })) {
-      next.nav = next.nav.concat([lojaItem]);
-    }
   }
   return next;
 }

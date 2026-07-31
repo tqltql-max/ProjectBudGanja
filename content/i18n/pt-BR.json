@@ -60,6 +60,8 @@
     "openPage": "Abrir página da rádio",
     "opened": "Rádio aberta",
     "expandPlaying": "Expandir rádio (a tocar)",
+    "powerOn": "Ligar rádio",
+    "powerOff": "Desligar rádio",
     "prev": "Faixa anterior",
     "play": "Reproduzir",
     "pause": "Pausar",
@@ -83,7 +85,6 @@
   "nav": {
     "library": "Biblioteca",
     "tools": "Ferramentas",
-    "shop": "Loja",
     "growingGuide": "Guia de Cultivo",
     "research": "Pesquisas",
     "inspections": "Inspeções",
@@ -98,10 +99,10 @@
     "privacy": "Privacidade",
     "aboutProject": "Sobre o projeto",
     "technicalResearch": "Pesquisas",
-    "partnerShops": "Lojas parceiras",
     "community": "Comunidade",
     "communityFeed": "Feed da comunidade",
     "growDiary": "Diário de pesquisas",
+    "diaryShort": "Diário",
     "radio": "BudGanja Radio",
     "plants": "Plantas",
     "unifesp": "UNIFESP",
@@ -121,7 +122,7 @@
     "quickToolsTip": "Ferramentas e equipamentos",
     "quickGiveawaysTip": "Promoções ativas do laboratório",
     "quickLibraryTip": "Pesquisas, inspeções e vídeos",
-    "quickShopTip": "Materiais das clonadoras",
+    "quickGrowTip": "Diário de pesquisas e registos de cultivo",
     "quickCommunityTip": "Feed de fotos do diário de pesquisas"
   },
   "footer": {
@@ -233,11 +234,6 @@
       "label": "Solo",
       "tileLabel": "Solo",
       "description": "Dosagens de aditivos para super solo orgânico a partir do volume de substrato."
-    },
-    "loja": {
-      "label": "Loja",
-      "tileLabel": "Loja",
-      "description": "Materiais usados nas clonadoras e equipamentos do laboratório."
     },
     "plantas": {
       "label": "Plantas",
@@ -387,9 +383,6 @@
       "cardGiveawaysTitle": "Sorteios",
       "cardGiveawaysText": "Sorteios activos e históricos do laboratório — participe e acompanhe os resultados.",
       "cardGiveawaysBtn": "Ver Sorteios",
-      "cardLojaTitle": "Loja parceira",
-      "cardLojaText": "Produtos usados nas clonadoras e equipamentos do laboratório — monte com os mesmos materiais dos guias.",
-      "cardLojaBtn": "Ver loja",
       "latestTitle": "Últimas do laboratório",
       "latestSubtitle": "Publicações recentes da Biblioteca.",
       "latestLoading": "Carregando publicações...",
@@ -435,7 +428,7 @@
     "dev": {
       "badge": "Em construção",
       "title": "Estamos preparando novidades",
-      "text": "O laboratório está a montar a nova versão do site — guias, ferramentas e loja em breve.",
+      "text": "O laboratório está a montar a nova versão do site — guias e ferramentas em breve.",
       "note": "Obrigado pela paciência. Volte daqui a pouco.",
       "admin": "Área administrativa"
     },
@@ -560,21 +553,18 @@
     "equipment": {
       "eyebrow": "Laboratório",
       "title": "Equipamentos",
-      "subtitle": "Clonadoras caseiras documentadas — escolha conforme orçamento e quantidade de estacas. Cada guia liga à <a href=\"/loja/\">loja parceira</a> com os materiais usados no laboratório.",
+      "subtitle": "Clonadoras caseiras documentadas — escolha conforme orçamento e quantidade de estacas. Materiais de loja comum (pet shop, jardinagem ou construção leve).",
       "docTitle": "Equipamentos | Inspetor BudGanja",
       "cloner6Title": "Clonadora de 6 estacas",
       "cloner6Body": "Pote de sorvete, bucha de louça e bombinha de ar — bolhas na água, <strong>24 h por dia</strong> até enraizar. Projeto de <strong>baixo custo</strong> e montagem fácil.",
       "cloner6Cta": "Ver guia de montagem",
-      "cloner6Shop": "Materiais na loja",
       "cloner6Alt": "Clonadora caseira de 6 estacas com pote de sorvete",
       "cloner12Title": "Clonadora de 12 estacas",
       "cloner12Body": "Balde, bomba submersa e kit de microaspersores — água borrifada nas raízes, <strong>24 h por dia</strong> até o transplante. Projeto de <strong>custo moderado a alto</strong>.",
       "cloner12Cta": "Ver guia de montagem",
-      "cloner12Shop": "Materiais na loja",
       "cloner12Alt": "Clonadora caseira de 12 estacas com balde e aspersores",
       "publications": "Publicações de Equipamentos",
-      "loading": "Carregando publicações...",
-      "shopLink": "loja parceira"
+      "loading": "Carregando publicações..."
     },
     "cultivo": {
       "eyebrow": "Comunidade",
@@ -613,12 +603,6 @@
       "title": "Sorteios",
       "subtitle": "Sorteios ativos e históricos do laboratório.",
       "docTitle": "Sorteios | Inspetor BudGanja"
-    },
-    "shop": {
-      "eyebrow": "Parceiros",
-      "title": "Loja",
-      "subtitle": "Materiais usados nas clonadoras e equipamentos do laboratório.",
-      "docTitle": "Loja | Inspetor BudGanja"
     },
     "unifesp": {
       "eyebrow": "Extensão académica",

@@ -32,7 +32,7 @@
       <div class="admin-hub-intro">
         <p class="admin-hub-eyebrow">Área administrativa</p>
         <h1>E-mail transacional</h1>
-        <p class="admin-hub-sub">Fila de envios automáticos: boas-vindas, encomendas, sorteios e pagamentos. Configure SMTP no <code>.env</code>.</p>
+        <p class="admin-hub-sub">Fila de envios automáticos: boas-vindas, sorteios e pagamentos. Configure SMTP no <code>.env</code>.</p>
       </div>
       <div class="admin-hub-actions">
         <button id="email-process-btn" type="button" class="botao botao-sm">Processar fila</button>
@@ -47,21 +47,20 @@
       <a href="/comunidade-admin.html" class="admin-nav-link">Comunidade</a>
       <a href="/usuarios-admin.html" class="admin-nav-link">Utilizadores</a>
       <a href="/sorteios-admin.html" class="admin-nav-link">Sorteios</a>
-      <a href="/loja-admin.html" class="admin-nav-link">Encomendas</a>
       <a href="/emails-admin.html" class="admin-nav-link is-active" aria-current="page">E-mail</a>
     </nav>
 
-    <div id="email-smtp-banner" class="highlight-card loja-admin-msg" hidden></div>
+    <div id="email-smtp-banner" class="highlight-card admin-surface-msg" hidden></div>
 
     <div id="email-stats" class="admin-stats-grid" aria-label="Resumo da fila"></div>
 
-    <section class="highlight-card loja-admin-panel">
+    <section class="highlight-card admin-surface-panel">
       <h2 class="admin-section-title">Modelos disponíveis</h2>
       <p id="email-templates" class="field-hint">A carregar…</p>
-      <p class="field-hint">Boas-vindas: enviado automaticamente no primeiro login Google. Encomendas e sorteios: enfileirados ao ocorrer o evento.</p>
+      <p class="field-hint">Boas-vindas: enviado automaticamente no primeiro login Google. Sorteios: enfileirados ao ocorrer o evento.</p>
     </section>
 
-    <section class="highlight-card loja-admin-panel">
+    <section class="highlight-card admin-surface-panel">
       <div class="sorteios-admin-toolbar">
         <div>
           <h2 class="admin-section-title" style="margin:0">Fila recente</h2>

@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   const growsBody = document.getElementById('user-grows-body');
   const submissionsBody = document.getElementById('user-submissions-body');
   const sorteiosBody = document.getElementById('user-sorteios-body');
-  const lojaBody = document.getElementById('user-loja-body');
   const resultEl = document.getElementById('user-result');
 
   let currentId = null;
@@ -196,8 +195,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     detailStatsEl.innerHTML =
       '<div class="admin-stat-card"><span class="admin-stat-value">' + s.grows + '</span><span class="admin-stat-label">Pesquisas</span></div>' +
       '<div class="admin-stat-card"><span class="admin-stat-value">' + s.entries + '</span><span class="admin-stat-label">Registos</span></div>' +
-      '<div class="admin-stat-card"><span class="admin-stat-value">' + s.submissions + '</span><span class="admin-stat-label">Submissões</span></div>' +
-      '<div class="admin-stat-card"><span class="admin-stat-value">' + s.lojaOrders + '</span><span class="admin-stat-label">Encomendas</span></div>';
+      '<div class="admin-stat-card"><span class="admin-stat-value">' + s.submissions + '</span><span class="admin-stat-label">Submissões</span></div>';
   }
 
   function renderProfileFields(user) {
@@ -288,10 +286,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         '<tr><td>' + escapeHtml(formatDateShort(s.createdAt)) + '</td><td>' + escapeHtml(s.premioLabel || '—') + '</td><td>' +
         escapeHtml((s.cidade || '—') + '/' + (s.estado || '—')) + '</td></tr>'
       );
-      renderTableRows(lojaBody, user.lojaOrders, 3, (o) =>
-        '<tr><td>' + escapeHtml(formatDateShort(o.createdAt)) + '</td><td>' + escapeHtml(o.productTitle || '—') + '</td><td>' +
-        escapeHtml(o.status || o.estado || '—') + '</td></tr>'
-      );
     } catch (e) {
       if (identityEl) identityEl.innerHTML = '<p class="field-hint">Erro de rede.</p>';
     }
@@ -335,7 +329,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const ok = window.confirm(
         'Remover permanentemente a conta «' + label + '»?\n\n' +
         'Será apagado: diário, sessões e conteúdo da comunidade.\n' +
-        'Mantém-se: sorteios e encomendas da loja.\n\n' +
+        'Mantém-se: inscrições em sorteios.\n\n' +
         'Esta acção não pode ser desfeita.'
       );
       if (!ok) return;

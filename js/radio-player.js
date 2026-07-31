@@ -250,11 +250,41 @@
     var wantPlay = sessionStorage.getItem(STORAGE_PLAYING) === '1';
     var savedTime = freshSession ? 0 : Math.max(0, readFloat(STORAGE_TIME, 0));
     var inHeader = !!host;
-    var collapsed = (!inHeader && isFocusPage()) || isCollapsedPref();
+    // No header: só toggle liga/desliga — painel completo fica em /radio/.
+    var collapsed = inHeader ? true : ((!inHeader && isFocusPage()) || isCollapsedPref());
     var unlockBound = false;
+    if (inHeader) root.classList.add('radio-mini--toggle');
 
     function radioLabel() {
       return tr('radio.label', meta.label || 'Rádio');
+    }
+
+    function trackHint() {
+      var track = tracks[index];
+      if (!track) return radioLabel();
+      var title = String(track.title || '').trim();
+      var artist = String(track.artist || '').trim();
+      if (title && artist) return title + ' — ' + artist;
+      return title || artist || radioLabel();
+    }
+
+    function togglePlayback() {
+      if (audio.paused) {
+        audio.play().then(function () {
+          updatePlayUi(true);
+          writeSession(STORAGE_PLAYING, '1');
+          wantPlay = true;
+          updateMediaSession(tracks[index]);
+        }).catch(function () {
+          updatePlayUi(false);
+        });
+      } else {
+        audio.pause();
+        updatePlayUi(false);
+        writeSession(STORAGE_PLAYING, '0');
+        wantPlay = false;
+        persistProgress();
+      }
     }
 
     function applyStaticLabels() {
@@ -279,6 +309,18 @@
 
     function applyCollapsed() {
       root.classList.toggle('is-collapsed', collapsed);
+      if (inHeader) {
+        btnFab.removeAttribute('aria-expanded');
+        var playing = wantPlay || !audio.paused;
+        btnFab.setAttribute(
+          'aria-label',
+          playing
+            ? tr('radio.powerOff', 'Desligar rádio')
+            : tr('radio.powerOn', 'Ligar rádio')
+        );
+        btnFab.setAttribute('title', trackHint());
+        return;
+      }
       btnFab.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
       btnFab.setAttribute(
         'aria-label',
@@ -291,6 +333,7 @@
     }
 
     function updateMuteUi() {
+      if (!btnMute) return;
       btnMute.innerHTML = audio.muted ? ICONS.mute : ICONS.unmute;
       btnMute.setAttribute(
         'aria-label',
@@ -300,11 +343,18 @@
     }
 
     function updatePlayUi(playing) {
-      btnPlay.innerHTML = playing ? ICONS.pause : ICONS.play;
-      btnPlay.setAttribute(
-        'aria-label',
-        playing ? tr('radio.pause', 'Pausar') : tr('radio.play', 'Reproduzir')
-      );
+      if (btnPlay) {
+        btnPlay.innerHTML = playing ? ICONS.pause : ICONS.play;
+        btnPlay.setAttribute(
+          'aria-label',
+          playing ? tr('radio.pause', 'Pausar') : tr('radio.play', 'Reproduzir')
+        );
+      }
+      if (inHeader && btnFab) {
+        btnFab.innerHTML =
+          (playing ? ICONS.pause : ICONS.radio) +
+          '<span class="radio-mini-fab-dot" aria-hidden="true"></span>';
+      }
       root.classList.toggle('is-playing', playing);
       applyCollapsed();
     }
@@ -385,43 +435,38 @@
     }
 
     btnFab.addEventListener('click', function () {
+      if (inHeader) {
+        togglePlayback();
+        return;
+      }
       collapsed = false;
       setCollapsedPref(false);
       applyCollapsed();
     });
 
-    btnCollapse.addEventListener('click', function () {
-      collapsed = true;
-      setCollapsedPref(true);
-      applyCollapsed();
-    });
+    if (btnCollapse) {
+      btnCollapse.addEventListener('click', function () {
+        collapsed = true;
+        setCollapsedPref(true);
+        applyCollapsed();
+      });
+    }
 
-    btnClose.addEventListener('click', function () {
-      unloading = true;
-      audio.pause();
-      writeSession(STORAGE_PLAYING, '0');
-      setDismissed();
-      root.remove();
-    });
-
-    btnPlay.addEventListener('click', function () {
-      if (audio.paused) {
-        audio.play().then(function () {
-          updatePlayUi(true);
-          writeSession(STORAGE_PLAYING, '1');
-          wantPlay = true;
-          updateMediaSession(tracks[index]);
-        }).catch(function () {
-          updatePlayUi(false);
-        });
-      } else {
+    if (btnClose) {
+      btnClose.addEventListener('click', function () {
+        unloading = true;
         audio.pause();
-        updatePlayUi(false);
         writeSession(STORAGE_PLAYING, '0');
-        wantPlay = false;
-        persistProgress();
-      }
-    });
+        setDismissed();
+        root.remove();
+      });
+    }
+
+    if (btnPlay) {
+      btnPlay.addEventListener('click', function () {
+        togglePlayback();
+      });
+    }
 
     btnPrev.addEventListener('click', function () {
       writeSession(STORAGE_TIME, '0');

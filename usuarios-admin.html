@@ -58,13 +58,12 @@
       <a href="/comunidade-admin.html" class="admin-nav-link">Comunidade</a>
       <a href="/usuarios-admin.html" class="admin-nav-link is-active" aria-current="page">Utilizadores</a>
       <a href="/sorteios-admin.html" class="admin-nav-link">Sorteios</a>
-      <a href="/loja-admin.html" class="admin-nav-link">Encomendas</a>
       <a href="/emails-admin.html" class="admin-nav-link">E-mail</a>
     </nav>
 
     <div id="users-stats" class="admin-stats-grid" aria-label="Resumo de utilizadores"></div>
 
-    <section class="highlight-card loja-admin-panel" id="users-list-panel">
+    <section class="highlight-card admin-surface-panel" id="users-list-panel">
       <div class="sorteios-admin-toolbar">
         <div>
           <h2 class="admin-section-title" style="margin:0">Contas registadas</h2>
@@ -185,23 +184,6 @@
           </div>
         </section>
 
-        <section class="usuarios-admin-card">
-          <h2 class="admin-section-title">Encomendas loja</h2>
-          <div class="sorteios-admin-table-wrap">
-            <table class="sorteios-admin-table">
-              <thead>
-                <tr>
-                  <th>Data</th>
-                  <th>Produto</th>
-                  <th>Estado</th>
-                </tr>
-              </thead>
-              <tbody id="user-loja-body">
-                <tr><td colspan="3">—</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
       </div>
 
       <section class="usuarios-admin-danger-zone" aria-labelledby="user-danger-title">
@@ -209,7 +191,7 @@
           <h2 class="admin-section-title" id="user-danger-title">Zona de risco</h2>
           <p class="field-hint">
             Remover a conta apaga o diário, sessões e conteúdo da comunidade.
-            Inscrições em sorteios e encomendas da loja mantêm-se por histórico.
+            Inscrições em sorteios mantêm-se por histórico.
           </p>
         </div>
         <button type="button" class="admin-danger" id="user-delete-btn">Remover conta</button>

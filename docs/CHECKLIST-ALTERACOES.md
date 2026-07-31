@@ -4,7 +4,7 @@ Use isto depois de pedir mudanças no site (você ou o assistente). **~5 minutos
 
 ## 1. Build (obrigatório)
 
-Se mexeu em HTML, CSS, JS do site, `lib/`, `server/`, JSON de conteúdo ou catálogo da loja:
+Se mexeu em HTML, CSS, JS do site, `lib/`, `server/` ou JSON de conteúdo:
 
 ```powershell
 cd c:\Users\tiago\Desktop\ProjectBudGanja
@@ -33,12 +33,12 @@ Abra `http://localhost:8080` (ou o domínio em produção).
 | O que mudou | O que abrir e conferir |
 |-------------|-------------------------|
 | Menu / navegação | Home → Biblioteca e Ferramentas (desktop e, se possível, mobile) |
-| Página nova (ex.: loja) | URL da página + link no menu |
-| Guia / equipamentos | Página do guia + link “voltar” e link para loja (se houver) |
+| Página nova | URL da página + link no menu |
+| Guia / equipamentos | Página do guia + link “voltar” |
 | Admin / login | `/login.html` — entra e abre Admin |
 | Sorteios / contato | Formulário ou página alterada |
 | Só conteúdo de post | Listagem da biblioteca + post individual |
-| Inspeções / guia | `/biblioteca/inspecoes/` → filtro de série → post com vídeo e loja |
+| Inspeções / guia | `/biblioteca/inspecoes/` → filtro de série → post com vídeo |
 | Diário / cultivo | `/cultivo/` (login) → separador Diário |
 | Calculadoras → diário | Abrir VPD ou Luxímetro → «Guardar no diário» visível se autenticado |
 
@@ -46,7 +46,7 @@ URLs rápidas (smoke test local `http://localhost:8080`):
 
 - `/` — home, menu Biblioteca e Ferramentas
 - `/biblioteca/inspecoes/` — hub por tipo (Guia / Canais / Equipamentos / Cursos / …)
-- `/posts/post-inspecao-cultivo-inicio.html` — embed YouTube + materiais loja
+- `/posts/post-inspecao-cultivo-inicio.html` — embed YouTube
 - `/calculadoras/luximetro.html` — luxímetro + bridge diário
 - `/cultivo/` — diário (requer login)
 - `/admin.html` — painel (requer login admin)
@@ -54,7 +54,7 @@ URLs rápidas (smoke test local `http://localhost:8080`):
 - [ ] Página alterada **abre** (sem 404)
 - [ ] **Menu e rodapé** aparecem normais
 - [ ] **Links principais** da tarefa funcionam (clique 2–3)
-- [ ] Se era link externo (Magalu, YouTube): abre em **nova aba** o destino certo
+- [ ] Se era link externo (YouTube, etc.): abre em **nova aba** o destino certo
 
 ## 4. Consistência rápida
 

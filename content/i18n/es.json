@@ -60,6 +60,8 @@
     "openPage": "Abrir página de la radio",
     "opened": "Radio abierta",
     "expandPlaying": "Expandir radio (reproduciendo)",
+    "powerOn": "Encender radio",
+    "powerOff": "Apagar radio",
     "prev": "Pista anterior",
     "play": "Reproducir",
     "pause": "Pausar",
@@ -83,7 +85,6 @@
   "nav": {
     "library": "Biblioteca",
     "tools": "Herramientas",
-    "shop": "Tienda",
     "growingGuide": "Guía de cultivo",
     "research": "Investigaciones",
     "inspections": "Inspecciones",
@@ -98,10 +99,10 @@
     "privacy": "Privacidad",
     "aboutProject": "Sobre el proyecto",
     "technicalResearch": "Investigaciones",
-    "partnerShops": "Tiendas asociadas",
     "community": "Comunidad",
     "communityFeed": "Feed de la comunidad",
     "growDiary": "Diario de investigaciones",
+    "diaryShort": "Diario",
     "radio": "BudGanja Radio",
     "plants": "Plantas",
     "unifesp": "UNIFESP",
@@ -121,7 +122,7 @@
     "quickGiveawaysTip": "Promociones activas del laboratorio",
     "quickLibraryTip": "Investigaciones, inspecciones y vídeos",
     "quickToolsTip": "Calculadoras y equipos",
-    "quickShopTip": "Materiales de las clonadoras",
+    "quickGrowTip": "Diario de investigaciones y registros de cultivo",
     "quickCommunityTip": "Feed de fotos del diario de cultivo"
   },
   "footer": {
@@ -233,11 +234,6 @@
       "label": "Suelo",
       "tileLabel": "Suelo",
       "description": "Dosis de enmiendas para super suelo orgánico según el volumen de sustrato."
-    },
-    "loja": {
-      "label": "Tienda",
-      "tileLabel": "Tienda",
-      "description": "Materiales usados en las clonadoras y equipos del laboratorio."
     },
     "plantas": {
       "label": "Plantas",
@@ -365,9 +361,6 @@
       "cardGiveawaysTitle": "Sorteos",
       "cardGiveawaysText": "Sorteos activos e históricos del laboratorio — participa y sigue los resultados.",
       "cardGiveawaysBtn": "Ver sorteos",
-      "cardLojaTitle": "Tienda asociada",
-      "cardLojaText": "Productos usados en las clonadoras y equipos del laboratorio — monta con los mismos materiales de las guías.",
-      "cardLojaBtn": "Ver tienda",
       "latestTitle": "Últimas del laboratorio",
       "latestSubtitle": "Publicaciones recientes de la Biblioteca de Cultivo.",
       "latestLoading": "Cargando publicaciones...",
@@ -435,7 +428,7 @@
     "dev": {
       "badge": "En construcción",
       "title": "Estamos preparando novedades",
-      "text": "El laboratorio está montando la nueva versión del sitio — guías, herramientas y tienda pronto.",
+      "text": "El laboratorio está montando la nueva versión del sitio — guías y herramientas pronto.",
       "note": "Gracias por la paciencia. Vuelve pronto.",
       "admin": "Área de administración"
     },
@@ -560,21 +553,18 @@
     "equipment": {
       "eyebrow": "Laboratorio",
       "title": "Equipos",
-      "subtitle": "Clonadoras caseras documentadas: elige según presupuesto y cantidad de esquejes. Cada guía enlaza a la <a href=\"/loja/\">tienda asociada</a> con los materiales del laboratorio.",
+      "subtitle": "Clonadoras caseras documentadas: elige según presupuesto y cantidad de esquejes. Materiales de tienda común (pet shop, jardinería o ferretería ligera).",
       "docTitle": "Equipos | Inspetor BudGanja",
       "cloner6Title": "Clonadora de 6 esquejes",
       "cloner6Body": "Pote de helado, esponja de cocina y bomba de aire: burbujas en el agua, <strong>24 h al día</strong> hasta enraizar. Proyecto de <strong>bajo costo</strong> y montaje fácil.",
       "cloner6Cta": "Ver guía de montaje",
-      "cloner6Shop": "Materiales en la tienda",
       "cloner6Alt": "Clonadora casera de 6 esquejes con pote de helado",
       "cloner12Title": "Clonadora de 12 esquejes",
       "cloner12Body": "Balde, bomba sumergible y kit de microaspersores: agua pulverizada en las raíces, <strong>24 h al día</strong> hasta el trasplante. Proyecto de <strong>costo moderado a alto</strong>.",
       "cloner12Cta": "Ver guía de montaje",
-      "cloner12Shop": "Materiales en la tienda",
       "cloner12Alt": "Clonadora casera de 12 esquejes con balde y aspersores",
       "publications": "Publicaciones de equipos",
-      "loading": "Cargando publicaciones…",
-      "shopLink": "tienda asociada"
+      "loading": "Cargando publicaciones…"
     },
     "cultivo": {
       "eyebrow": "Comunidad",
@@ -613,12 +603,6 @@
       "title": "Sorteos",
       "subtitle": "Sorteos activos e históricos del laboratorio.",
       "docTitle": "Sorteos | Inspetor BudGanja"
-    },
-    "shop": {
-      "eyebrow": "Socios",
-      "title": "Tienda",
-      "subtitle": "Materiales usados en las clonadoras y equipos del laboratorio.",
-      "docTitle": "Tienda | Inspetor BudGanja"
     },
     "unifesp": {
       "eyebrow": "Extensión académica",

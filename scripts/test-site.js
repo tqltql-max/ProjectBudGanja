@@ -11,10 +11,10 @@ const { isDevModeEnabled } = require('../lib/site-dev-mode.js');
 const BASE = 'http://localhost:8080';
 const TIMEOUT = 8000;
 
-const PROTECTED_PAGES = new Set(['admin.html', 'pesquisas-admin.html', 'usuarios-admin.html', 'sorteios-admin.html', 'loja-admin.html']);
+const PROTECTED_PAGES = new Set(['admin.html', 'pesquisas-admin.html', 'usuarios-admin.html', 'sorteios-admin.html']);
 const DEV_MODE_PUBLIC_PAGES = new Set(['login.html', 'em-desenvolvimento.html']);
 const DEV_MODE = isDevModeEnabled();
-const API_ROUTES = ['/api/me', '/api/site', '/api/posts', '/api/sorteio', '/api/guia-cultivo', '/api/youtube-feed', '/api/videos-hub', '/api/loja/encomendas'];
+const API_ROUTES = ['/api/me', '/api/site', '/api/posts', '/api/sorteio', '/api/guia-cultivo', '/api/youtube-feed', '/api/videos-hub'];
 
 function fetchUrl(urlPath) {
   return new Promise((resolve, reject) => {
@@ -186,7 +186,7 @@ async function main() {
     }
   }
 
-  const staticAssets = ['css/style.css', 'js/layout.js', 'js/ferramentas-nav-data.js', 'js/site-features.js', 'js/home.js', 'js/perfil.js', 'js/cultivo.js', 'js/guia-cultivo.js', 'js/videos.js', 'js/loja.js', 'js/loja-data.js', 'js/loja-order-ui.js', 'js/loja-order-callout.js', 'js/equip-loja-materials.js', 'js/loja-encomenda.js', 'js/loja-admin.js', 'content/guia-cultivo.json', 'content/youtube-feed.json', 'content/videos-hub.json', 'content/inspecoes-sugestoes.json', 'js/inspecoes-sugestoes.js', 'search-index.json', 'sw.js', 'posts-public.json'];
+  const staticAssets = ['css/style.css', 'js/layout.js', 'js/ferramentas-nav-data.js', 'js/site-features.js', 'js/home.js', 'js/perfil.js', 'js/cultivo.js', 'js/guia-cultivo.js', 'js/videos.js', 'content/guia-cultivo.json', 'content/youtube-feed.json', 'content/videos-hub.json', 'content/inspecoes-sugestoes.json', 'js/inspecoes-sugestoes.js', 'search-index.json', 'sw.js', 'posts-public.json'];
   for (const asset of staticAssets) {
     try {
       const res = await fetchUrl('/' + asset);

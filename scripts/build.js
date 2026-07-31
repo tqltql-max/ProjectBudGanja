@@ -130,12 +130,6 @@ function runBuildSteps() {
   }
 
   try {
-    runStep('sync:loja-data', 'sync-loja-data.js');
-  } catch (e) {
-    console.warn('Aviso sync:loja-data:', e.message);
-  }
-
-  try {
     runStep('build:plantas', 'build-plantas.js');
   } catch (e) {
     console.warn('Aviso build:plantas:', e.message);

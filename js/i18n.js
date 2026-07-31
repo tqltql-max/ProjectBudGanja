@@ -338,10 +338,9 @@
     if (!map) return;
     var main = document.getElementById('main-content');
     if (!main) return;
-    // Hubs com conteúdo dinâmico (posts/loja) — não substituir o main inteiro.
+    // Hubs com conteúdo dinâmico — não substituir o main inteiro.
     if (
       main.querySelector('.publications-equipamentos') ||
-      main.querySelector('[data-equip-loja]') ||
       main.querySelector('[data-inspecao-grid]') ||
       main.querySelector('#plantas-grid') ||
       main.querySelector('#videos-player') ||
@@ -472,7 +471,6 @@
     cultivo: 'cultivo',
     comunidade: 'community',
     sorteios: 'giveaways',
-    loja: 'shop',
     unifesp: 'unifesp',
     sobre: 'about',
     contato: 'contact',
@@ -582,7 +580,6 @@
       var slug = copy.slug || String(copy.label || '').toLowerCase();
       if (copy.label === 'Biblioteca') copy.label = t('nav.library', copy.label);
       else if (copy.label === 'Ferramentas') copy.label = t('nav.tools', copy.label);
-      else if (copy.label === 'Loja') copy.label = t('nav.shop', copy.label);
       if (copy.megaHeader === 'Biblioteca') copy.megaHeader = t('nav.library', copy.megaHeader);
       if (copy.megaHeader === 'Ferramentas') copy.megaHeader = t('nav.tools', copy.megaHeader);
 

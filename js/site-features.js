@@ -8,7 +8,6 @@
     'biblioteca/pesquisas/index.html': [{ label: 'Início', href: HOME }, { label: 'Pesquisas' }],
     'biblioteca/inspecoes/index.html': [{ label: 'Início', href: HOME }, { label: 'Inspeções' }],
     'equipamentos/index.html': [{ label: 'Início', href: HOME }, { label: 'Equipamentos' }],
-    'loja/index.html': [{ label: 'Início', href: HOME }, { label: 'Loja' }],
     'index.html': [{ label: 'Início' }],
     'calculadoras/index.html': [{ label: 'Início', href: HOME }, { label: 'Ferramentas' }],
     'calculadoras/luximetro.html': [{ label: 'Início', href: HOME }, { label: 'Ferramentas', href: '/calculadoras/' }, { label: 'Luxímetro' }],
@@ -76,7 +75,6 @@
       'Pesquisas': 'nav.research',
       'Inspeções': 'nav.inspections',
       'Equipamentos': 'nav.equipment',
-      'Loja': 'nav.shop',
       'Calculadoras': 'nav.calculators',
       'Ferramentas': 'nav.calculators',
       'Sorteios': 'nav.giveaways',
@@ -525,7 +523,7 @@
     var hubHeader = document.querySelector(
       '.plantas-hub-header, .inspecoes-hub-header, .videos-header, ' +
       '.pesquisas-hub-header, .equipamentos-page-header, .calculadoras-header, ' +
-      '.unifesp-hub-header, .comunidade-header, .sorteios-header, .loja-header, ' +
+      '.unifesp-hub-header, .comunidade-header, .sorteios-header, ' +
       'main.conteudo-interno > header, main.conteudo > header, main > header'
     );
     if (hubHeader && !hubHeader.querySelector('[data-post-share]')) {

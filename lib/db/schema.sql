@@ -303,27 +303,6 @@ CREATE TABLE IF NOT EXISTS kv_store (
   updated_at TEXT NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS loja_orders (
-  id TEXT PRIMARY KEY,
-  product_id TEXT NOT NULL,
-  product_title TEXT NOT NULL DEFAULT '',
-  package_id TEXT NOT NULL DEFAULT '',
-  package_label TEXT NOT NULL DEFAULT '',
-  package_price_note TEXT NOT NULL DEFAULT '',
-  nome TEXT NOT NULL DEFAULT '',
-  email TEXT NOT NULL DEFAULT '',
-  telefone TEXT NOT NULL DEFAULT '',
-  cidade TEXT NOT NULL DEFAULT '',
-  estado TEXT NOT NULL DEFAULT '',
-  mensagem TEXT NOT NULL DEFAULT '',
-  user_id TEXT NOT NULL DEFAULT '',
-  status TEXT NOT NULL DEFAULT 'novo',
-  created_at TEXT NOT NULL
-);
-
-CREATE INDEX IF NOT EXISTS idx_loja_orders_product ON loja_orders(product_id);
-CREATE INDEX IF NOT EXISTS idx_loja_orders_created ON loja_orders(created_at);
-
 -- Diário de Pesquisas (utilizador autenticado)
 
 CREATE TABLE IF NOT EXISTS cultivo_settings (

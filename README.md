@@ -34,7 +34,7 @@ Detalhes: [`docs/GIT.md`](docs/GIT.md) · copie `.env.example` → `.env`
 | **Pesquisas** | [Diário de Pesquisas](/cultivo/) · [Minha conta](/perfil.html) |
 | **Biblioteca** | [Inspeções](/biblioteca/inspecoes/), [Pesquisas](/biblioteca/pesquisas/), [Equipamentos](/equipamentos/) |
 | **Ferramentas** | [Calculadoras](/calculadoras/), [Luxímetro](/calculadoras/luximetro.html) |
-| **Conteúdo** | [Sorteios](/sorteios/), [Últimos vídeos](/videos/), [Loja parceira](/loja/) |
+| **Conteúdo** | [Sorteios](/sorteios/), [Últimos vídeos](/videos/), [Equipamentos](/equipamentos/) |
 
 > O antigo guia em `/guia/cultivo-basico.html` redireciona para o [Diário de Pesquisas](/cultivo/).
 
@@ -272,12 +272,12 @@ O site público **tem de ficar na raiz** (cada pasta = URL). Código de sistema:
 ProjectBudGanja/
 ├── [SITE — URLs públicas]
 │   ├── index.html, entrar.html, perfil.html, login.html, admin.html
-│   ├── biblioteca/, guia/, equipamentos/, calculadoras/, loja/, info/, videos/, sorteios/
+│   ├── biblioteca/, guia/, equipamentos/, calculadoras/, info/, videos/, sorteios/
 │   ├── css/, js/, imagens/, posts/
 │   └── sw.js, manifest.json, favicon.svg
 ├── [RUNTIME]
 │   ├── server/index.js          # HTTP local + API
-│   └── lib/                     # API, auth, CMS, nav, loja, BD (ver ARQUITETURA.md)
+│   └── lib/                     # API, auth, CMS, nav, BD (ver ARQUITETURA.md)
 ├── [BUILD]
 │   └── scripts/                 # npm run build, sync, testes
 ├── [DADOS]

@@ -62,6 +62,8 @@ window.__I18N_LOCALES__ = {
       "openPage": "Open radio page",
       "opened": "Radio open",
       "expandPlaying": "Expand radio (playing)",
+      "powerOn": "Turn radio on",
+      "powerOff": "Turn radio off",
       "prev": "Previous track",
       "play": "Play",
       "pause": "Pause",
@@ -85,7 +87,6 @@ window.__I18N_LOCALES__ = {
     "nav": {
       "library": "Library",
       "tools": "Tools",
-      "shop": "Shop",
       "growingGuide": "Growing Guide",
       "research": "Research",
       "inspections": "Inspections",
@@ -100,10 +101,10 @@ window.__I18N_LOCALES__ = {
       "privacy": "Privacy",
       "aboutProject": "About the project",
       "technicalResearch": "Research",
-      "partnerShops": "Partner stores",
       "community": "Community",
       "communityFeed": "Community feed",
       "growDiary": "Research diary",
+      "diaryShort": "Diary",
       "radio": "BudGanja Radio",
       "plants": "Plants",
       "unifesp": "UNIFESP",
@@ -123,7 +124,7 @@ window.__I18N_LOCALES__ = {
       "quickGiveawaysTip": "Active lab promotions",
       "quickLibraryTip": "Research, inspections and videos",
       "quickToolsTip": "Calculators and equipment",
-      "quickShopTip": "Cloner supplies",
+      "quickGrowTip": "Research diary and grow logs",
       "quickCommunityTip": "Research diary photo feed"
     },
     "footer": {
@@ -235,11 +236,6 @@ window.__I18N_LOCALES__ = {
         "label": "Soil",
         "tileLabel": "Soil",
         "description": "Organic super-soil amendment doses from substrate volume."
-      },
-      "loja": {
-        "label": "Shop",
-        "tileLabel": "Shop",
-        "description": "Parts used in the lab cloners and builds."
       },
       "plantas": {
         "label": "Plants",
@@ -389,9 +385,6 @@ window.__I18N_LOCALES__ = {
         "cardGiveawaysTitle": "Giveaways",
         "cardGiveawaysText": "Active and past lab giveaways — join in and follow the results.",
         "cardGiveawaysBtn": "View giveaways",
-        "cardLojaTitle": "Partner store",
-        "cardLojaText": "Products used in the lab's cloners and equipment — build with the same materials as the guides.",
-        "cardLojaBtn": "View store",
         "latestTitle": "Latest from the lab",
         "latestSubtitle": "Recent posts from the Library.",
         "latestLoading": "Loading publications...",
@@ -437,7 +430,7 @@ window.__I18N_LOCALES__ = {
       "dev": {
         "badge": "Under construction",
         "title": "We're preparing something new",
-        "text": "The lab is building the new site — guides, tools and shop coming soon.",
+        "text": "The lab is building the new site — guides and tools coming soon.",
         "note": "Thanks for your patience. Check back soon.",
         "admin": "Admin area"
       },
@@ -562,21 +555,18 @@ window.__I18N_LOCALES__ = {
       "equipment": {
         "eyebrow": "Lab",
         "title": "Equipment",
-        "subtitle": "Documented home cloners — pick by budget and cutting count. Each guide links to the <a href=\"/loja/\">partner shop</a> with lab materials.",
+        "subtitle": "Documented home cloners — pick by budget and cutting count. Materials from ordinary shops (pet stores, gardening or light hardware).",
         "docTitle": "Equipment | Inspetor BudGanja",
         "cloner6Title": "6-cutting cloner",
         "cloner6Body": "Ice cream tub, kitchen sponge and air pump — bubbles in the water, <strong>24 hours a day</strong> until roots form. A <strong>low-cost</strong>, easy build.",
         "cloner6Cta": "View build guide",
-        "cloner6Shop": "Materials in the shop",
         "cloner6Alt": "DIY 6-cutting cloner with ice cream tub",
         "cloner12Title": "12-cutting cloner",
         "cloner12Body": "Bucket, submersible pump and micro-sprayer kit — mist on the roots, <strong>24 hours a day</strong> until transplant. A <strong>moderate to high cost</strong> project.",
         "cloner12Cta": "View build guide",
-        "cloner12Shop": "Materials in the shop",
         "cloner12Alt": "DIY 12-cutting cloner with bucket and sprayers",
         "publications": "Equipment publications",
-        "loading": "Loading publications…",
-        "shopLink": "partner shop"
+        "loading": "Loading publications…"
       },
       "cultivo": {
         "eyebrow": "Community",
@@ -615,12 +605,6 @@ window.__I18N_LOCALES__ = {
         "title": "Giveaways",
         "subtitle": "Active and past lab giveaways.",
         "docTitle": "Giveaways | Inspetor BudGanja"
-      },
-      "shop": {
-        "eyebrow": "Partners",
-        "title": "Shop",
-        "subtitle": "Parts used in the lab cloners and builds.",
-        "docTitle": "Shop | Inspetor BudGanja"
       },
       "unifesp": {
         "eyebrow": "Academic extension",
@@ -722,6 +706,8 @@ window.__I18N_LOCALES__ = {
       "openPage": "Abrir página de la radio",
       "opened": "Radio abierta",
       "expandPlaying": "Expandir radio (reproduciendo)",
+      "powerOn": "Encender radio",
+      "powerOff": "Apagar radio",
       "prev": "Pista anterior",
       "play": "Reproducir",
       "pause": "Pausar",
@@ -745,7 +731,6 @@ window.__I18N_LOCALES__ = {
     "nav": {
       "library": "Biblioteca",
       "tools": "Herramientas",
-      "shop": "Tienda",
       "growingGuide": "Guía de cultivo",
       "research": "Investigaciones",
       "inspections": "Inspecciones",
@@ -760,10 +745,10 @@ window.__I18N_LOCALES__ = {
       "privacy": "Privacidad",
       "aboutProject": "Sobre el proyecto",
       "technicalResearch": "Investigaciones",
-      "partnerShops": "Tiendas asociadas",
       "community": "Comunidad",
       "communityFeed": "Feed de la comunidad",
       "growDiary": "Diario de investigaciones",
+      "diaryShort": "Diario",
       "radio": "BudGanja Radio",
       "plants": "Plantas",
       "unifesp": "UNIFESP",
@@ -783,7 +768,7 @@ window.__I18N_LOCALES__ = {
       "quickGiveawaysTip": "Promociones activas del laboratorio",
       "quickLibraryTip": "Investigaciones, inspecciones y vídeos",
       "quickToolsTip": "Calculadoras y equipos",
-      "quickShopTip": "Materiales de las clonadoras",
+      "quickGrowTip": "Diario de investigaciones y registros de cultivo",
       "quickCommunityTip": "Feed de fotos del diario de cultivo"
     },
     "footer": {
@@ -895,11 +880,6 @@ window.__I18N_LOCALES__ = {
         "label": "Suelo",
         "tileLabel": "Suelo",
         "description": "Dosis de enmiendas para super suelo orgánico según el volumen de sustrato."
-      },
-      "loja": {
-        "label": "Tienda",
-        "tileLabel": "Tienda",
-        "description": "Materiales usados en las clonadoras y equipos del laboratorio."
       },
       "plantas": {
         "label": "Plantas",
@@ -1027,9 +1007,6 @@ window.__I18N_LOCALES__ = {
         "cardGiveawaysTitle": "Sorteos",
         "cardGiveawaysText": "Sorteos activos e históricos del laboratorio — participa y sigue los resultados.",
         "cardGiveawaysBtn": "Ver sorteos",
-        "cardLojaTitle": "Tienda asociada",
-        "cardLojaText": "Productos usados en las clonadoras y equipos del laboratorio — monta con los mismos materiales de las guías.",
-        "cardLojaBtn": "Ver tienda",
         "latestTitle": "Últimas del laboratorio",
         "latestSubtitle": "Publicaciones recientes de la Biblioteca de Cultivo.",
         "latestLoading": "Cargando publicaciones...",
@@ -1097,7 +1074,7 @@ window.__I18N_LOCALES__ = {
       "dev": {
         "badge": "En construcción",
         "title": "Estamos preparando novedades",
-        "text": "El laboratorio está montando la nueva versión del sitio — guías, herramientas y tienda pronto.",
+        "text": "El laboratorio está montando la nueva versión del sitio — guías y herramientas pronto.",
         "note": "Gracias por la paciencia. Vuelve pronto.",
         "admin": "Área de administración"
       },
@@ -1222,21 +1199,18 @@ window.__I18N_LOCALES__ = {
       "equipment": {
         "eyebrow": "Laboratorio",
         "title": "Equipos",
-        "subtitle": "Clonadoras caseras documentadas: elige según presupuesto y cantidad de esquejes. Cada guía enlaza a la <a href=\"/loja/\">tienda asociada</a> con los materiales del laboratorio.",
+        "subtitle": "Clonadoras caseras documentadas: elige según presupuesto y cantidad de esquejes. Materiales de tienda común (pet shop, jardinería o ferretería ligera).",
         "docTitle": "Equipos | Inspetor BudGanja",
         "cloner6Title": "Clonadora de 6 esquejes",
         "cloner6Body": "Pote de helado, esponja de cocina y bomba de aire: burbujas en el agua, <strong>24 h al día</strong> hasta enraizar. Proyecto de <strong>bajo costo</strong> y montaje fácil.",
         "cloner6Cta": "Ver guía de montaje",
-        "cloner6Shop": "Materiales en la tienda",
         "cloner6Alt": "Clonadora casera de 6 esquejes con pote de helado",
         "cloner12Title": "Clonadora de 12 esquejes",
         "cloner12Body": "Balde, bomba sumergible y kit de microaspersores: agua pulverizada en las raíces, <strong>24 h al día</strong> hasta el trasplante. Proyecto de <strong>costo moderado a alto</strong>.",
         "cloner12Cta": "Ver guía de montaje",
-        "cloner12Shop": "Materiales en la tienda",
         "cloner12Alt": "Clonadora casera de 12 esquejes con balde y aspersores",
         "publications": "Publicaciones de equipos",
-        "loading": "Cargando publicaciones…",
-        "shopLink": "tienda asociada"
+        "loading": "Cargando publicaciones…"
       },
       "cultivo": {
         "eyebrow": "Comunidad",
@@ -1275,12 +1249,6 @@ window.__I18N_LOCALES__ = {
         "title": "Sorteos",
         "subtitle": "Sorteos activos e históricos del laboratorio.",
         "docTitle": "Sorteos | Inspetor BudGanja"
-      },
-      "shop": {
-        "eyebrow": "Socios",
-        "title": "Tienda",
-        "subtitle": "Materiales usados en las clonadoras y equipos del laboratorio.",
-        "docTitle": "Tienda | Inspetor BudGanja"
       },
       "unifesp": {
         "eyebrow": "Extensión académica",
@@ -1382,6 +1350,8 @@ window.__I18N_LOCALES__ = {
       "openPage": "Abrir página da rádio",
       "opened": "Rádio aberta",
       "expandPlaying": "Expandir rádio (a tocar)",
+      "powerOn": "Ligar rádio",
+      "powerOff": "Desligar rádio",
       "prev": "Faixa anterior",
       "play": "Reproduzir",
       "pause": "Pausar",
@@ -1405,7 +1375,6 @@ window.__I18N_LOCALES__ = {
     "nav": {
       "library": "Biblioteca",
       "tools": "Ferramentas",
-      "shop": "Loja",
       "growingGuide": "Guia de Cultivo",
       "research": "Pesquisas",
       "inspections": "Inspeções",
@@ -1420,10 +1389,10 @@ window.__I18N_LOCALES__ = {
       "privacy": "Privacidade",
       "aboutProject": "Sobre o projeto",
       "technicalResearch": "Pesquisas",
-      "partnerShops": "Lojas parceiras",
       "community": "Comunidade",
       "communityFeed": "Feed da comunidade",
       "growDiary": "Diário de pesquisas",
+      "diaryShort": "Diário",
       "radio": "BudGanja Radio",
       "plants": "Plantas",
       "unifesp": "UNIFESP",
@@ -1443,7 +1412,7 @@ window.__I18N_LOCALES__ = {
       "quickToolsTip": "Ferramentas e equipamentos",
       "quickGiveawaysTip": "Promoções ativas do laboratório",
       "quickLibraryTip": "Pesquisas, inspeções e vídeos",
-      "quickShopTip": "Materiais das clonadoras",
+      "quickGrowTip": "Diário de pesquisas e registos de cultivo",
       "quickCommunityTip": "Feed de fotos do diário de pesquisas"
     },
     "footer": {
@@ -1555,11 +1524,6 @@ window.__I18N_LOCALES__ = {
         "label": "Solo",
         "tileLabel": "Solo",
         "description": "Dosagens de aditivos para super solo orgânico a partir do volume de substrato."
-      },
-      "loja": {
-        "label": "Loja",
-        "tileLabel": "Loja",
-        "description": "Materiais usados nas clonadoras e equipamentos do laboratório."
       },
       "plantas": {
         "label": "Plantas",
@@ -1709,9 +1673,6 @@ window.__I18N_LOCALES__ = {
         "cardGiveawaysTitle": "Sorteios",
         "cardGiveawaysText": "Sorteios activos e históricos do laboratório — participe e acompanhe os resultados.",
         "cardGiveawaysBtn": "Ver Sorteios",
-        "cardLojaTitle": "Loja parceira",
-        "cardLojaText": "Produtos usados nas clonadoras e equipamentos do laboratório — monte com os mesmos materiais dos guias.",
-        "cardLojaBtn": "Ver loja",
         "latestTitle": "Últimas do laboratório",
         "latestSubtitle": "Publicações recentes da Biblioteca.",
         "latestLoading": "Carregando publicações...",
@@ -1757,7 +1718,7 @@ window.__I18N_LOCALES__ = {
       "dev": {
         "badge": "Em construção",
         "title": "Estamos preparando novidades",
-        "text": "O laboratório está a montar a nova versão do site — guias, ferramentas e loja em breve.",
+        "text": "O laboratório está a montar a nova versão do site — guias e ferramentas em breve.",
         "note": "Obrigado pela paciência. Volte daqui a pouco.",
         "admin": "Área administrativa"
       },
@@ -1882,21 +1843,18 @@ window.__I18N_LOCALES__ = {
       "equipment": {
         "eyebrow": "Laboratório",
         "title": "Equipamentos",
-        "subtitle": "Clonadoras caseiras documentadas — escolha conforme orçamento e quantidade de estacas. Cada guia liga à <a href=\"/loja/\">loja parceira</a> com os materiais usados no laboratório.",
+        "subtitle": "Clonadoras caseiras documentadas — escolha conforme orçamento e quantidade de estacas. Materiais de loja comum (pet shop, jardinagem ou construção leve).",
         "docTitle": "Equipamentos | Inspetor BudGanja",
         "cloner6Title": "Clonadora de 6 estacas",
         "cloner6Body": "Pote de sorvete, bucha de louça e bombinha de ar — bolhas na água, <strong>24 h por dia</strong> até enraizar. Projeto de <strong>baixo custo</strong> e montagem fácil.",
         "cloner6Cta": "Ver guia de montagem",
-        "cloner6Shop": "Materiais na loja",
         "cloner6Alt": "Clonadora caseira de 6 estacas com pote de sorvete",
         "cloner12Title": "Clonadora de 12 estacas",
         "cloner12Body": "Balde, bomba submersa e kit de microaspersores — água borrifada nas raízes, <strong>24 h por dia</strong> até o transplante. Projeto de <strong>custo moderado a alto</strong>.",
         "cloner12Cta": "Ver guia de montagem",
-        "cloner12Shop": "Materiais na loja",
         "cloner12Alt": "Clonadora caseira de 12 estacas com balde e aspersores",
         "publications": "Publicações de Equipamentos",
-        "loading": "Carregando publicações...",
-        "shopLink": "loja parceira"
+        "loading": "Carregando publicações..."
       },
       "cultivo": {
         "eyebrow": "Comunidade",
@@ -1935,12 +1893,6 @@ window.__I18N_LOCALES__ = {
         "title": "Sorteios",
         "subtitle": "Sorteios ativos e históricos do laboratório.",
         "docTitle": "Sorteios | Inspetor BudGanja"
-      },
-      "shop": {
-        "eyebrow": "Parceiros",
-        "title": "Loja",
-        "subtitle": "Materiais usados nas clonadoras e equipamentos do laboratório.",
-        "docTitle": "Loja | Inspetor BudGanja"
       },
       "unifesp": {
         "eyebrow": "Extensão académica",
