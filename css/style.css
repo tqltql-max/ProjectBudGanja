@@ -9477,6 +9477,58 @@ html[data-theme="light"] .header-group-divider {
     }
 }
 
+/* Facade YouTube: thumbnail + play pequeno (sem botão vermelho do YT) */
+.yt-facade {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    background: #111;
+    color: inherit;
+    font: inherit;
+}
+
+.yt-facade-thumb {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-embed,
+.home-channel-embed {
+    position: relative;
+}
+
+.video-embed:not(.is-playing) .yt-facade,
+.home-channel-embed:not(.is-playing) .yt-facade {
+    z-index: 1;
+}
+
+.video-embed .yt-facade .video-card-play,
+.home-channel-embed .yt-facade .video-card-play {
+    inset: auto auto 10px 10px;
+    width: 22px;
+    height: 22px;
+    opacity: 0.78;
+}
+
+.video-embed iframe,
+.home-channel-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .video-card-body {
     display: flex;
     flex-direction: column;

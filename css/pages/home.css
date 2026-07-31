@@ -268,7 +268,8 @@ body[data-page="home"] .home-channel-embed {
     border: 1px solid rgba(122, 150, 25, 0.2);
 }
 
-body[data-page="home"] .home-channel-embed iframe {
+body[data-page="home"] .home-channel-embed iframe,
+body[data-page="home"] .home-channel-embed .yt-facade {
     position: absolute;
     inset: 0;
     width: 100%;
