@@ -270,6 +270,77 @@ function sortCanaisPosts(posts) {
   });
 }
 
+function postsT(key, fallback) {
+  return window.BudGanjaI18n ? window.BudGanjaI18n.t(key, fallback) : fallback;
+}
+
+/** Agrupa inspeções de plantas num <details> compacto (fecha por defeito). */
+function renderPlantasDropGroup(container, posts) {
+  container.innerHTML = '';
+
+  var details = document.createElement('details');
+  details.className = 'card inspecoes-drop-group inspecoes-drop-group--plantas';
+  if (location.hash === '#inspecoes-plantas') details.open = true;
+
+  var summary = document.createElement('summary');
+  summary.className = 'inspecoes-drop-summary';
+
+  var coverPost = null;
+  for (var i = 0; i < posts.length; i++) {
+    if (posts[i] && posts[i].coverImage) {
+      coverPost = posts[i];
+      break;
+    }
+  }
+  if (!coverPost) coverPost = posts[0];
+  appendCoverTo(summary, coverPost && coverPost.coverImage);
+
+  var badges = document.createElement('div');
+  badges.className = 'post-card-badges';
+  var badge = document.createElement('span');
+  badge.className = 'post-card-series';
+  badge.dataset.series = 'plantas-medicinais';
+  badge.textContent = postsT('pages.inspections.sectionPlants', 'Plantas');
+  badges.appendChild(badge);
+  summary.appendChild(badges);
+
+  var title = document.createElement('h3');
+  title.textContent = postsT(
+    'pages.inspections.plantsDropTitle',
+    'Catálogo de plantas medicinais'
+  );
+  summary.appendChild(title);
+
+  var blurb = document.createElement('p');
+  blurb.textContent = postsT(
+    'pages.inspections.plantsDropDesc',
+    'Fichas e relatórios por espécie — toque para expandir a lista.'
+  );
+  summary.appendChild(blurb);
+
+  var meta = document.createElement('div');
+  meta.className = 'inspecoes-drop-meta';
+  var countEl = document.createElement('span');
+  countEl.className = 'inspecoes-drop-count';
+  countEl.textContent = postsT('pages.inspections.plantsDropCount', '{n} espécies')
+    .replace('{n}', String(posts.length));
+  var caret = document.createElement('span');
+  caret.className = 'inspecoes-drop-caret';
+  caret.setAttribute('aria-hidden', 'true');
+  meta.appendChild(countEl);
+  meta.appendChild(caret);
+  summary.appendChild(meta);
+
+  details.appendChild(summary);
+
+  var chapters = document.createElement('div');
+  chapters.className = 'inspecoes-drop-chapters';
+  details.appendChild(chapters);
+  container.appendChild(details);
+
+  renderPostCards(chapters, posts, { hub: true, append: true });
+}
+
 function renderInspecoesHub(allPosts) {
   var tipos = [
     { id: 'pessoa', section: '#inspecoes-pessoas', sort: 'seriesOrder' },
@@ -294,8 +365,18 @@ function renderInspecoesHub(allPosts) {
     section.hidden = false;
     setHubChipVisibility(t.id, true);
     var sorted = t.sort === 'seriesOrder' ? sortBySeriesOrder(list) : sortCanaisPosts(list);
-    renderPostCards(grid, sorted, { hub: true });
+    if (t.id === 'planta') renderPlantasDropGroup(grid, sorted);
+    else renderPostCards(grid, sorted, { hub: true });
   });
+
+  if (!window.__budganjaPlantasDropHashBound) {
+    window.__budganjaPlantasDropHashBound = true;
+    window.addEventListener('hashchange', function () {
+      if (location.hash !== '#inspecoes-plantas') return;
+      var drop = document.querySelector('#inspecoes-plantas .inspecoes-drop-group--plantas');
+      if (drop) drop.open = true;
+    });
+  }
 }
 
 function isPesquisaPost(post) {

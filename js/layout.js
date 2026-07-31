@@ -1271,8 +1271,7 @@ function getSiteHubNav() {
         label: i18n('nav.community', 'Comunidade'),
         tip: i18n('nav.quickCommunityTip', 'Feed de fotos do diário de pesquisas'),
         prefixes: '/comunidade',
-        tone: 'comunidade',
-        mobileBar: true
+        tone: 'comunidade'
       },
       {
         href: '/videos/',
@@ -1457,10 +1456,24 @@ function buildHeaderHTML(site, authState) {
     '<ul id="site-search-results" class="site-search-results"></ul>' +
     '</div>';
 
-  // Fora do menu: pesquisa + idioma. Perfil, admin e redes ficam no hambúrguer.
+  // Cluster: rádio + Comunidade + idioma (no mobile ficam juntos ao centro).
+  const communityLangCluster =
+    '<div class="header-cluster header-cluster--community-lang">' +
+    '<div id="header-radio-host" class="header-radio-host"></div>' +
+    '<a href="/comunidade/" class="header-quick-link header-quick-link--comunidade header-cluster-item"' +
+    ' data-active-prefixes="/comunidade"' +
+    ' data-tip="' + escapeNavText(i18n('nav.quickCommunityTip', 'Feed de fotos do diário de pesquisas')) + '"' +
+    ' aria-label="' + escapeNavText(i18n('nav.community', 'Comunidade')) + '">' +
+    '<span class="header-quick-link-icon" aria-hidden="true">' +
+    '<img class="header-quick-link-icon-img" src="/imagens/foto-comunidade.png" alt="" width="20" height="20" decoding="async">' +
+    '</span>' +
+    '<span class="header-quick-link-label">' + escapeNavText(i18n('nav.community', 'Comunidade')) + '</span>' +
+    '</a>' +
+    buildLangSwitcherHTML('header') +
+    '</div>';
+
   const headerToolbar =
     '<div class="header-toolbar">' +
-    buildLangSwitcherHTML('header') +
     '<button type="button" class="header-quick-link header-quick-link--search" id="search-toggle" aria-expanded="false" aria-label="' + escapeNavText(i18n('common.searchOpen', 'Buscar no site')) + '" title="' + escapeNavText(i18n('common.searchShortcut', 'Buscar (Ctrl+K)')) + '">' +
     '<span class="header-quick-link-icon" aria-hidden="true">' +
     '<svg class="header-search-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">' +
@@ -1485,7 +1498,7 @@ function buildHeaderHTML(site, authState) {
     '<span class="header-quick-link-label">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
     '</a></div>' +
     '<span class="header-chrome-sep" aria-hidden="true"></span>' +
-    '<div id="header-radio-host" class="header-radio-host"></div>' +
+    communityLangCluster +
     buildDesktopQuickNavHTML() +
     '<span class="header-chrome-sep header-chrome-sep--end" aria-hidden="true"></span>' +
     '<div class="header-right">' +

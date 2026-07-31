@@ -152,6 +152,25 @@
     "seriesLabel": "Mars Hydro Brasil"
   },
   {
+    "title": "Inspeção: Dr. Sidarta Ribeiro — Revolução Canabinóide",
+    "titleEn": "Inspection: Dr. Sidarta Ribeiro — Cannabinoid Revolution",
+    "titleEs": "Inspección: Dr. Sidarta Ribeiro — Revolución cannabinóide",
+    "excerpt": "Ficha de legado vivo: Sidarta Ribeiro (UFRN/ICe) — neurocientista e divulgador; aulas «Revolução Canabinóide» no acervo MovReCam e ponte entre evidência endocanabinoide e o curso UNIFESP.",
+    "excerptEn": "Living-legacy sheet: Sidarta Ribeiro (UFRN/ICe) — neuroscientist and science communicator; “Cannabinoid Revolution” lectures in the MovReCam archive and a bridge between endocannabinoid evidence and the UNIFESP course.",
+    "excerptEs": "Ficha de legado vivo: Sidarta Ribeiro (UFRN/ICe) — neurocientífico y divulgador; clases «Revolución cannabinóide» en el acervo MovReCam y puente entre evidencia endocannabinoide y el curso UNIFESP.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-sidarta-ribeiro",
+    "url": "/posts/post-inspecao-sidarta-ribeiro.html",
+    "date": "2026-07-31T19:00:00.000Z",
+    "filename": "posts/post-inspecao-sidarta-ribeiro.html",
+    "coverImage": "/imagens/inspecoes/sidarta-ribeiro-cover.jpg",
+    "category": "inspecao",
+    "series": "legado-pessoas",
+    "seriesOrder": 3,
+    "seriesLabel": "Sidarta Ribeiro · legado"
+  },
+  {
     "title": "InspeÃ§Ã£o: Planta â€” Capim-limÃ£o",
     "titleEn": "Inspection: Plant — Lemongrass",
     "titleEs": "Inspección: Planta — Hierba limón",

@@ -83,7 +83,7 @@
       "titleEs": "Dr. Sidarta Ribeiro — Revolución cannabinóide",
       "tipo": "pessoa",
       "priority": 2,
-      "status": "a-fazer",
+      "status": "feita",
       "why": "Já aparece no acervo MovReCam (aulas «Revolução Canabinóide»); ponte entre neurociência pública e o curso.",
       "whyEn": "Already in the MovReCam archive (“Cannabinoid Revolution” lectures); bridge between public neuroscience and the course.",
       "whyEs": "Ya aparece en el acervo MovReCam (clases «Revolución cannabinóide»); puente entre neurociencia pública y el curso.",
@@ -92,7 +92,8 @@
       "sources": [
         "https://www.youtube.com/@MovReCam"
       ],
-      "notes": "Usar embeds das aulas MovReCam catalogadas no hub de vídeos."
+      "notes": "Usar embeds das aulas MovReCam catalogadas no hub de vídeos.",
+      "doneHref": "/posts/post-inspecao-sidarta-ribeiro.html"
     },
     {
       "id": "lair-ribeiro",
