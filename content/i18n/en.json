@@ -213,7 +213,7 @@
     "videos": {
       "label": "Videos",
       "tileLabel": "Videos",
-      "description": "Latest channel videos."
+      "description": "Lab channel and lectures from inspected partner channels."
     },
     "videos-menu": {
       "label": "Videos",
@@ -472,14 +472,24 @@
     "videos": {
       "eyebrow": "YouTube channel",
       "title": "Videos",
-      "subtitle": "Watch here on the site — inspections, tutorials and channel updates.",
+      "subtitle": "Watch here on the site — the lab channel and lectures from inspected partner channels.",
       "loading": "Loading videos…",
       "empty": "No videos available.",
+      "emptyFilter": "No videos in this filter.",
       "docTitle": "Videos | Inspetor BudGanja",
       "playlist": "All videos",
       "openOnYoutube": "Open on YouTube",
       "watchHere": "Watch",
-      "nowPlaying": "YouTube video"
+      "nowPlaying": "YouTube video",
+      "filtersLabel": "Filter by channel",
+      "seriesLabel": "Filter by series",
+      "filterAll": "All",
+      "seriesAll": "All series",
+      "seriesXiv": "14th edition",
+      "seriesBasics": "Basics",
+      "seriesSacred": "Sacred Plants",
+      "subscribe": "Subscribe to",
+      "viewInspection": "View inspection"
     },
     "inspections": {
       "eyebrow": "Library",

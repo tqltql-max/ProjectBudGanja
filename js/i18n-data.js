@@ -215,7 +215,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "label": "Videos",
         "tileLabel": "Videos",
-        "description": "Latest channel videos."
+        "description": "Lab channel and lectures from inspected partner channels."
       },
       "videos-menu": {
         "label": "Videos",
@@ -474,14 +474,24 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "eyebrow": "YouTube channel",
         "title": "Videos",
-        "subtitle": "Watch here on the site — inspections, tutorials and channel updates.",
+        "subtitle": "Watch here on the site — the lab channel and lectures from inspected partner channels.",
         "loading": "Loading videos…",
         "empty": "No videos available.",
+        "emptyFilter": "No videos in this filter.",
         "docTitle": "Videos | Inspetor BudGanja",
         "playlist": "All videos",
         "openOnYoutube": "Open on YouTube",
         "watchHere": "Watch",
-        "nowPlaying": "YouTube video"
+        "nowPlaying": "YouTube video",
+        "filtersLabel": "Filter by channel",
+        "seriesLabel": "Filter by series",
+        "filterAll": "All",
+        "seriesAll": "All series",
+        "seriesXiv": "14th edition",
+        "seriesBasics": "Basics",
+        "seriesSacred": "Sacred Plants",
+        "subscribe": "Subscribe to",
+        "viewInspection": "View inspection"
       },
       "inspections": {
         "eyebrow": "Library",
@@ -830,7 +840,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "label": "Videos",
         "tileLabel": "Videos",
-        "description": "Últimos videos del canal."
+        "description": "Canal del laboratorio y clases de los canales inspeccionados."
       },
       "videos-menu": {
         "label": "Videos",
@@ -1089,14 +1099,24 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "eyebrow": "Canal de YouTube",
         "title": "Videos",
-        "subtitle": "Míralos aquí en el sitio — inspecciones, tutoriales y novedades del canal.",
+        "subtitle": "Míralos aquí en el sitio — canal del laboratorio y clases de los canales inspeccionados.",
         "loading": "Cargando videos…",
         "empty": "Ningún video disponible.",
+        "emptyFilter": "Ningún video en este filtro.",
         "docTitle": "Videos | Inspetor BudGanja",
         "playlist": "Todos los videos",
         "openOnYoutube": "Abrir en YouTube",
         "watchHere": "Ver",
-        "nowPlaying": "Video de YouTube"
+        "nowPlaying": "Video de YouTube",
+        "filtersLabel": "Filtrar por canal",
+        "seriesLabel": "Filtrar por serie",
+        "filterAll": "Todos",
+        "seriesAll": "Todas las series",
+        "seriesXiv": "XIV edición",
+        "seriesBasics": "Conceptos básicos",
+        "seriesSacred": "Plantas Sagradas",
+        "subscribe": "Suscribirse a",
+        "viewInspection": "Ver inspección"
       },
       "inspections": {
         "eyebrow": "Biblioteca",
@@ -1445,7 +1465,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "label": "Vídeos",
         "tileLabel": "Vídeos",
-        "description": "Últimos vídeos do canal."
+        "description": "Canal do laboratório e aulas dos canais inspecionados."
       },
       "videos-menu": {
         "label": "Vídeos",
@@ -1704,14 +1724,24 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "eyebrow": "Canal YouTube",
         "title": "Vídeos",
-        "subtitle": "Assista aqui no site — inspeções, tutoriais e novidades do canal.",
+        "subtitle": "Assista aqui no site — canal do laboratório e aulas dos canais inspecionados.",
         "loading": "Carregando vídeos...",
         "empty": "Nenhum vídeo disponível.",
+        "emptyFilter": "Nenhum vídeo neste filtro.",
         "docTitle": "Vídeos | Inspetor BudGanja",
         "playlist": "Todos os vídeos",
         "openOnYoutube": "Abrir no YouTube",
         "watchHere": "Assistir",
-        "nowPlaying": "Vídeo do YouTube"
+        "nowPlaying": "Vídeo do YouTube",
+        "filtersLabel": "Filtrar por canal",
+        "seriesLabel": "Filtrar por série",
+        "filterAll": "Todos",
+        "seriesAll": "Todas as séries",
+        "seriesXiv": "XIV edição",
+        "seriesBasics": "Conceitos básicos",
+        "seriesSacred": "Plantas Sagradas",
+        "subscribe": "Inscrever-se no",
+        "viewInspection": "Ver inspeção"
       },
       "inspections": {
         "eyebrow": "Biblioteca",

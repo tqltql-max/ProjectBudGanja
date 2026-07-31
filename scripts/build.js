@@ -100,6 +100,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('build:videos-hub', 'build-videos-hub.js');
+  } catch (e) {
+    console.warn('Aviso build:videos-hub:', e.message);
+  }
+
+  try {
     runStep('build:radio', 'build-radio-playlist.js');
   } catch (e) {
     console.warn('Aviso build:radio:', e.message);

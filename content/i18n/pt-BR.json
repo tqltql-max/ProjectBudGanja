@@ -213,7 +213,7 @@
     "videos": {
       "label": "Vídeos",
       "tileLabel": "Vídeos",
-      "description": "Últimos vídeos do canal."
+      "description": "Canal do laboratório e aulas dos canais inspecionados."
     },
     "videos-menu": {
       "label": "Vídeos",
@@ -472,14 +472,24 @@
     "videos": {
       "eyebrow": "Canal YouTube",
       "title": "Vídeos",
-      "subtitle": "Assista aqui no site — inspeções, tutoriais e novidades do canal.",
+      "subtitle": "Assista aqui no site — canal do laboratório e aulas dos canais inspecionados.",
       "loading": "Carregando vídeos...",
       "empty": "Nenhum vídeo disponível.",
+      "emptyFilter": "Nenhum vídeo neste filtro.",
       "docTitle": "Vídeos | Inspetor BudGanja",
       "playlist": "Todos os vídeos",
       "openOnYoutube": "Abrir no YouTube",
       "watchHere": "Assistir",
-      "nowPlaying": "Vídeo do YouTube"
+      "nowPlaying": "Vídeo do YouTube",
+      "filtersLabel": "Filtrar por canal",
+      "seriesLabel": "Filtrar por série",
+      "filterAll": "Todos",
+      "seriesAll": "Todas as séries",
+      "seriesXiv": "XIV edição",
+      "seriesBasics": "Conceitos básicos",
+      "seriesSacred": "Plantas Sagradas",
+      "subscribe": "Inscrever-se no",
+      "viewInspection": "Ver inspeção"
     },
     "inspections": {
       "eyebrow": "Biblioteca",

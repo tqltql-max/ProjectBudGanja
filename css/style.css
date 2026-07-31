@@ -9084,7 +9084,110 @@ html[data-theme="light"] .header-group-divider {
 }
 
 .videos-page .videos-header {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+}
+
+.videos-header-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    align-items: center;
+    margin: 0;
+}
+
+.videos-filters-wrap {
+    margin: 0 0 28px;
+}
+
+.videos-filters,
+.videos-series-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 10px;
+}
+
+.videos-filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: var(--radius-md, 10px);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-soft);
+    background: rgba(166, 134, 40, 0.08);
+    border: 1px solid rgba(166, 134, 40, 0.22);
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.videos-filter-chip:hover,
+.videos-filter-chip:focus-visible {
+    color: var(--color-accent-light, #e8c96a);
+    background: rgba(166, 134, 40, 0.16);
+    border-color: rgba(166, 134, 40, 0.4);
+    outline: none;
+}
+
+.videos-filter-chip.is-active {
+    color: #1a1408;
+    background: var(--color-accent, #a68628);
+    border-color: var(--color-accent, #a68628);
+}
+
+.videos-filter-chip--series {
+    text-transform: none;
+    letter-spacing: 0.02em;
+    background: rgba(39, 174, 96, 0.08);
+    border-color: rgba(39, 174, 96, 0.22);
+}
+
+.videos-filter-chip--series:hover,
+.videos-filter-chip--series:focus-visible {
+    color: var(--color-accent-light, #6fcf97);
+    background: rgba(39, 174, 96, 0.16);
+    border-color: rgba(39, 174, 96, 0.4);
+}
+
+.videos-filter-chip--series.is-active {
+    color: #0b1a10;
+    background: rgba(39, 174, 96, 0.85);
+    border-color: rgba(39, 174, 96, 0.95);
+}
+
+.videos-filter-count {
+    opacity: 0.75;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+}
+
+.videos-list-count {
+    font-weight: 500;
+    opacity: 0.7;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.videos-player-channel {
+    margin: 0 0 4px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.video-card-channel {
+    display: block;
+    margin: 0 0 4px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-accent);
 }
 
 .videos-player {
