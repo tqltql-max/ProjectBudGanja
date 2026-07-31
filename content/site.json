@@ -144,6 +144,14 @@
                   "description": "Canais, equipamentos, lojas, insumos e formação."
                 },
                 {
+                  "label": "Inspeção: Padre Ticão — Antônio Luiz Marchioni",
+                  "tileLabel": "Inspeção: Padre Ticão — Antônio…",
+                  "href": "/posts/post-inspecao-padre-ticao.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-padre-ticao",
+                  "description": "Homenagem documental ao Padre Ticão (Antônio Luiz Marchioni, 1952–2021): pároco de Ermelino Matarazzo, líder popular da zona leste e fundador do MovReCam — mérito máximo na democratização da educação sobre cannabis medicinal no Brasil."
+                },
+                {
                   "label": "Inspeção: Artigo — Cannabis na adolescência e neurodesenvolvimento (JAMA Psychiatry)",
                   "tileLabel": "Inspeção: Artigo — Cannabis na …",
                   "href": "/posts/post-inspecao-artigo-albaugh-cannabis-neurodesenvolvimento.html",

@@ -9171,6 +9171,37 @@ html[data-theme="light"] .header-group-divider {
     letter-spacing: 0;
 }
 
+.videos-channel-section {
+    margin: 0 0 40px;
+}
+
+.videos-channel-section:last-child {
+    margin-bottom: 0;
+}
+
+.videos-channel-section-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px 16px;
+    margin: 0 0 16px;
+}
+
+.videos-channel-section-head .videos-list-heading {
+    margin: 0;
+}
+
+.videos-channel-inspect {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.videos-channel-inspect:hover {
+    text-decoration: underline;
+}
+
 .videos-player-channel {
     margin: 0 0 4px;
     font-size: 0.78rem;

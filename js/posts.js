@@ -42,6 +42,7 @@ var SERIES_LABELS = {
   'loja-cultivo': 'Lojas de cultivo',
   'insumos-cultivo': 'Insumos de cultivo',
   'artigos-cientificos': 'Artigos científicos',
+  'legado-pessoas': 'Legado',
   '': 'Todas as séries'
 };
 
@@ -73,6 +74,10 @@ function seriesBadgeHtml(post, options) {
     var artigo = post.seriesLabel || 'Artigo';
     return '<span class="post-card-series" data-series="' + post.series + '">' + artigo + '</span>';
   }
+  if (options.hub && (post.series === 'legado-pessoas' || post.series.indexOf('legado') === 0)) {
+    var legado = post.seriesLabel || 'Legado';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + legado + '</span>';
+  }
   var label = post.seriesLabel || SERIES_LABELS[post.series] || post.series;
   var order = post.seriesOrder != null ? ' · Cap. ' + post.seriesOrder : '';
   return '<span class="post-card-series" data-series="' + post.series + '">' + label + order + '</span>';
@@ -98,6 +103,13 @@ function resolveInspecaoTipo(post) {
   if (series === 'loja-cultivo' || series.indexOf('loja-') === 0 || /inspecao-loja-/i.test(slug)) return 'loja';
   if (series === 'insumos-cultivo' || series.indexOf('insumo') === 0 || /inspecao-insumo-/i.test(slug)) return 'insumo';
   if (series === 'artigos-cientificos' || series.indexOf('artigo') === 0 || /inspecao-artigo-/i.test(slug)) return 'artigo';
+  if (
+    series === 'legado-pessoas' ||
+    series.indexOf('legado') === 0 ||
+    /inspecao-padre-|inspecao-pessoa-/i.test(slug)
+  ) {
+    return 'pessoa';
+  }
   if (/^inspecao-canal-/i.test(slug)) return 'canal';
   return 'canal';
 }
@@ -230,7 +242,8 @@ var HUB_CHIP_ANCHOR = {
   curso: 'cursos',
   loja: 'lojas',
   insumo: 'insumos',
-  artigo: 'artigos'
+  artigo: 'artigos',
+  pessoa: 'pessoas'
 };
 
 function setHubChipVisibility(tipo, visible) {
@@ -252,6 +265,7 @@ function sortCanaisPosts(posts) {
 
 function renderInspecoesHub(allPosts) {
   var tipos = [
+    { id: 'pessoa', section: '#inspecoes-pessoas', sort: 'seriesOrder' },
     { id: 'canal', section: '#inspecoes-canais', sort: 'label' },
     { id: 'curso', section: '#inspecoes-cursos', sort: 'seriesOrder' },
     { id: 'artigo', section: '#inspecoes-artigos', sort: 'seriesOrder' }

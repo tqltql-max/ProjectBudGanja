@@ -40,14 +40,25 @@
     <main id="main-content" class="conteudo-interno inspecoes-hub">
         <header class="inspecoes-hub-header">
             <h1 data-i18n="pages.inspections.title">Inspeções</h1>
-            <p class="secao-subtitulo inspecoes-hub-lead" data-i18n="pages.inspections.subtitle">Relatórios técnicos com método verificável — canais, cursos, artigos científicos e equipamentos com acesso directo aos relatórios.</p>
+            <p class="secao-subtitulo inspecoes-hub-lead" data-i18n="pages.inspections.subtitle">Relatórios técnicos com método verificável — legado, canais, cursos, artigos científicos e equipamentos com acesso directo aos relatórios.</p>
         </header>
 
         <nav class="inspecoes-hub-nav" aria-label="Secções de inspeções">
+            <a class="inspecoes-hub-chip" href="#inspecoes-pessoas" data-i18n="pages.inspections.chipPeople">Legado</a>
             <a class="inspecoes-hub-chip" href="#inspecoes-canais" data-i18n="pages.inspections.chipChannels">Canais</a>
             <a class="inspecoes-hub-chip" href="#inspecoes-cursos" data-i18n="pages.inspections.chipCourses">Cursos</a>
             <a class="inspecoes-hub-chip" href="#inspecoes-artigos" data-i18n="pages.inspections.chipArticles">Artigos</a>
         </nav>
+
+        <section id="inspecoes-pessoas" class="inspecoes-hub-section" data-inspecao-tipo="pessoa" hidden>
+            <header class="inspecoes-hub-section-head">
+                <h2 class="category-title" data-i18n="pages.inspections.sectionPeople">Legado</h2>
+                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionPeopleDesc">Homenagens documentais a pessoas de referência — vida, mérito e cruzamento com o ecossistema inspecionado.</p>
+            </header>
+            <div class="container-cards publications-inspecoes" data-inspecao-grid="pessoa">
+                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
+            </div>
+        </section>
 
         <section id="inspecoes-canais" class="inspecoes-hub-section" data-inspecao-tipo="canal" hidden>
             <header class="inspecoes-hub-section-head">

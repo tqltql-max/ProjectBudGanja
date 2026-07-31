@@ -2,7 +2,7 @@
   "index.html": {
     "id": "index.html",
     "label": "Início",
-    "updatedAt": "2026-07-31T11:25:29.418Z",
+    "updatedAt": "2026-07-31T11:36:23.743Z",
     "title": "Início | Inspetor BudGanja",
     "metaDescription": "Inspetor BudGanja — plantas medicinais do Brasil, curso UNIFESP, inspeções, ferramentas e BudGanja Radio.",
     "ogTitle": "Inspetor BudGanja",
@@ -16,7 +16,7 @@
   "entrar.html": {
     "id": "entrar.html",
     "label": "Entrar",
-    "updatedAt": "2026-07-31T11:25:29.424Z",
+    "updatedAt": "2026-07-31T11:36:23.748Z",
     "title": "Entrar | Inspetor BudGanja",
     "metaDescription": "Entre com Google ou conta local para iniciar o onboarding progressivo e activar a sua conta no laboratório.",
     "ogTitle": "Entrar | Inspetor BudGanja",
@@ -30,7 +30,7 @@
   "perfil.html": {
     "id": "perfil.html",
     "label": "Meu perfil",
-    "updatedAt": "2026-07-31T11:25:29.424Z",
+    "updatedAt": "2026-07-31T11:36:23.748Z",
     "title": "Minha conta | Inspetor BudGanja",
     "metaDescription": "Minha conta — dados de acesso e perfil no Inspetor BudGanja.",
     "ogTitle": "Minha conta | Inspetor BudGanja",
@@ -44,7 +44,7 @@
   "cultivo/index.html": {
     "id": "cultivo/index.html",
     "label": "Diário de Pesquisas",
-    "updatedAt": "2026-07-31T11:25:29.424Z",
+    "updatedAt": "2026-07-31T11:36:23.749Z",
     "title": "Diário de Pesquisas | Inspetor BudGanja",
     "metaDescription": "Diário de Pesquisas — documente o cultivo de qualquer planta e prepare publicações no Inspetor BudGanja.",
     "ogTitle": "Diário de Pesquisas | Inspetor BudGanja",
@@ -58,7 +58,7 @@
   "guia/cultivo-basico.html": {
     "id": "guia/cultivo-basico.html",
     "label": "Guia de Cultivo",
-    "updatedAt": "2026-07-31T11:25:29.425Z",
+    "updatedAt": "2026-07-31T11:36:23.749Z",
     "title": "Guia de Cultivo | Inspetor BudGanja",
     "metaDescription": "Redirecionamento — use o Diário de Pesquisas e a biblioteca de inspeções do Inspetor BudGanja.",
     "ogTitle": "Guia de Cultivo | Inspetor BudGanja",
@@ -72,7 +72,7 @@
   "videos/index.html": {
     "id": "videos/index.html",
     "label": "Últimos vídeos",
-    "updatedAt": "2026-07-31T11:25:29.425Z",
+    "updatedAt": "2026-07-31T11:36:23.750Z",
     "title": "Vídeos | Inspetor BudGanja",
     "metaDescription": "Assista aos vídeos do Inspetor BudGanja e às aulas dos canais MovReCam e CANABinALL — filtros por canal e série.",
     "ogTitle": "Vídeos | Inspetor BudGanja",
@@ -86,7 +86,7 @@
   "biblioteca/inspecoes/index.html": {
     "id": "biblioteca/inspecoes/index.html",
     "label": "Inspeções",
-    "updatedAt": "2026-07-31T11:25:29.425Z",
+    "updatedAt": "2026-07-31T11:36:23.750Z",
     "title": "Inspeções | Inspetor BudGanja",
     "metaDescription": "Relatórios de inspeção do Inspetor BudGanja: método verificável sobre cultivo, canais e formação — achados, medições e recomendações práticas.",
     "ogTitle": "Inspeções | Inspetor BudGanja",
@@ -94,13 +94,13 @@
     "ogType": "website",
     "dataPage": "inspecoes",
     "headExtra": "",
-    "body": "<main id=\"main-content\" class=\"conteudo-interno inspecoes-hub\">\r\n        <header class=\"inspecoes-hub-header\">\r\n            <h1 data-i18n=\"pages.inspections.title\">Inspeções</h1>\r\n            <p class=\"secao-subtitulo inspecoes-hub-lead\" data-i18n=\"pages.inspections.subtitle\">Relatórios técnicos com método verificável — canais, cursos, artigos científicos e equipamentos com acesso directo aos relatórios.</p>\r\n        </header>\r\n\r\n        <nav class=\"inspecoes-hub-nav\" aria-label=\"Secções de inspeções\">\r\n            <a class=\"inspecoes-hub-chip\" href=\"#inspecoes-canais\" data-i18n=\"pages.inspections.chipChannels\">Canais</a>\r\n            <a class=\"inspecoes-hub-chip\" href=\"#inspecoes-cursos\" data-i18n=\"pages.inspections.chipCourses\">Cursos</a>\r\n            <a class=\"inspecoes-hub-chip\" href=\"#inspecoes-artigos\" data-i18n=\"pages.inspections.chipArticles\">Artigos</a>\r\n        </nav>\r\n\r\n        <section id=\"inspecoes-canais\" class=\"inspecoes-hub-section\" data-inspecao-tipo=\"canal\" hidden>\r\n            <header class=\"inspecoes-hub-section-head\">\r\n                <h2 class=\"category-title\" data-i18n=\"pages.inspections.sectionChannels\">Canais</h2>\r\n                <p class=\"inspecoes-hub-section-desc\" data-i18n=\"pages.inspections.sectionChannelsDesc\">Avaliação editorial e técnica de canais públicos — catálogo, foco temático e utilidade para o cultivador.</p>\r\n            </header>\r\n            <div class=\"container-cards publications-inspecoes\" data-inspecao-grid=\"canal\">\r\n                <p class=\"empty-message\" data-i18n=\"pages.inspections.loading\">Carregando…</p>\r\n            </div>\r\n        </section>\r\n\r\n        <section id=\"inspecoes-cursos\" class=\"inspecoes-hub-section\" data-inspecao-tipo=\"curso\" hidden>\r\n            <header class=\"inspecoes-hub-section-head\">\r\n                <h2 class=\"category-title\" data-i18n=\"pages.inspections.sectionCourses\">Cursos</h2>\r\n                <p class=\"inspecoes-hub-section-desc\" data-i18n=\"pages.inspections.sectionCoursesDesc\">Análise de programas de extensão e formação — carga horária, acesso, grade e valor prático.</p>\r\n            </header>\r\n            <div class=\"container-cards publications-inspecoes\" data-inspecao-grid=\"curso\">\r\n                <p class=\"empty-message\" data-i18n=\"pages.inspections.loading\">Carregando…</p>\r\n            </div>\r\n        </section>\r\n\r\n        <section id=\"inspecoes-artigos\" class=\"inspecoes-hub-section\" data-inspecao-tipo=\"artigo\" hidden>\r\n            <header class=\"inspecoes-hub-section-head\">\r\n                <h2 class=\"category-title\" data-i18n=\"pages.inspections.sectionArticles\">Artigos</h2>\r\n                <p class=\"inspecoes-hub-section-desc\" data-i18n=\"pages.inspections.sectionArticlesDesc\">Auditoria editorial de artigos científicos peer-reviewed — desenho, achados, limites e utilidade educativa.</p>\r\n            </header>\r\n            <div class=\"container-cards publications-inspecoes\" data-inspecao-grid=\"artigo\">\r\n                <p class=\"empty-message\" data-i18n=\"pages.inspections.loading\">Carregando…</p>\r\n            </div>\r\n        </section>\r\n    </main>",
+    "body": "<main id=\"main-content\" class=\"conteudo-interno inspecoes-hub\">\r\n        <header class=\"inspecoes-hub-header\">\r\n            <h1 data-i18n=\"pages.inspections.title\">Inspeções</h1>\r\n            <p class=\"secao-subtitulo inspecoes-hub-lead\" data-i18n=\"pages.inspections.subtitle\">Relatórios técnicos com método verificável — legado, canais, cursos, artigos científicos e equipamentos com acesso directo aos relatórios.</p>\r\n        </header>\r\n\r\n        <nav class=\"inspecoes-hub-nav\" aria-label=\"Secções de inspeções\">\r\n            <a class=\"inspecoes-hub-chip\" href=\"#inspecoes-pessoas\" data-i18n=\"pages.inspections.chipPeople\">Legado</a>\r\n            <a class=\"inspecoes-hub-chip\" href=\"#inspecoes-canais\" data-i18n=\"pages.inspections.chipChannels\">Canais</a>\r\n            <a class=\"inspecoes-hub-chip\" href=\"#inspecoes-cursos\" data-i18n=\"pages.inspections.chipCourses\">Cursos</a>\r\n            <a class=\"inspecoes-hub-chip\" href=\"#inspecoes-artigos\" data-i18n=\"pages.inspections.chipArticles\">Artigos</a>\r\n        </nav>\r\n\r\n        <section id=\"inspecoes-pessoas\" class=\"inspecoes-hub-section\" data-inspecao-tipo=\"pessoa\" hidden>\r\n            <header class=\"inspecoes-hub-section-head\">\r\n                <h2 class=\"category-title\" data-i18n=\"pages.inspections.sectionPeople\">Legado</h2>\r\n                <p class=\"inspecoes-hub-section-desc\" data-i18n=\"pages.inspections.sectionPeopleDesc\">Homenagens documentais a pessoas de referência — vida, mérito e cruzamento com o ecossistema inspecionado.</p>\r\n            </header>\r\n            <div class=\"container-cards publications-inspecoes\" data-inspecao-grid=\"pessoa\">\r\n                <p class=\"empty-message\" data-i18n=\"pages.inspections.loading\">Carregando…</p>\r\n            </div>\r\n        </section>\r\n\r\n        <section id=\"inspecoes-canais\" class=\"inspecoes-hub-section\" data-inspecao-tipo=\"canal\" hidden>\r\n            <header class=\"inspecoes-hub-section-head\">\r\n                <h2 class=\"category-title\" data-i18n=\"pages.inspections.sectionChannels\">Canais</h2>\r\n                <p class=\"inspecoes-hub-section-desc\" data-i18n=\"pages.inspections.sectionChannelsDesc\">Avaliação editorial e técnica de canais públicos — catálogo, foco temático e utilidade para o cultivador.</p>\r\n            </header>\r\n            <div class=\"container-cards publications-inspecoes\" data-inspecao-grid=\"canal\">\r\n                <p class=\"empty-message\" data-i18n=\"pages.inspections.loading\">Carregando…</p>\r\n            </div>\r\n        </section>\r\n\r\n        <section id=\"inspecoes-cursos\" class=\"inspecoes-hub-section\" data-inspecao-tipo=\"curso\" hidden>\r\n            <header class=\"inspecoes-hub-section-head\">\r\n                <h2 class=\"category-title\" data-i18n=\"pages.inspections.sectionCourses\">Cursos</h2>\r\n                <p class=\"inspecoes-hub-section-desc\" data-i18n=\"pages.inspections.sectionCoursesDesc\">Análise de programas de extensão e formação — carga horária, acesso, grade e valor prático.</p>\r\n            </header>\r\n            <div class=\"container-cards publications-inspecoes\" data-inspecao-grid=\"curso\">\r\n                <p class=\"empty-message\" data-i18n=\"pages.inspections.loading\">Carregando…</p>\r\n            </div>\r\n        </section>\r\n\r\n        <section id=\"inspecoes-artigos\" class=\"inspecoes-hub-section\" data-inspecao-tipo=\"artigo\" hidden>\r\n            <header class=\"inspecoes-hub-section-head\">\r\n                <h2 class=\"category-title\" data-i18n=\"pages.inspections.sectionArticles\">Artigos</h2>\r\n                <p class=\"inspecoes-hub-section-desc\" data-i18n=\"pages.inspections.sectionArticlesDesc\">Auditoria editorial de artigos científicos peer-reviewed — desenho, achados, limites e utilidade educativa.</p>\r\n            </header>\r\n            <div class=\"container-cards publications-inspecoes\" data-inspecao-grid=\"artigo\">\r\n                <p class=\"empty-message\" data-i18n=\"pages.inspections.loading\">Carregando…</p>\r\n            </div>\r\n        </section>\r\n    </main>",
     "scripts": "<script src=\"/js/posts.js?v=295\"></script>"
   },
   "biblioteca/unifesp/index.html": {
     "id": "biblioteca/unifesp/index.html",
     "label": "Curso UNIFESP",
-    "updatedAt": "2026-07-31T11:25:29.426Z",
+    "updatedAt": "2026-07-31T11:36:23.751Z",
     "title": "Curso UNIFESP | Inspetor BudGanja",
     "metaDescription": "Hub do XIV Curso UNIFESP sobre Cannabis sativa L. medicinal — vagas, carga horária, SIEX, certificado e ligação ao laboratório de fitoterapia.",
     "ogTitle": "Curso UNIFESP | Inspetor BudGanja",
@@ -114,7 +114,7 @@
   "info/sobre.html": {
     "id": "info/sobre.html",
     "label": "Sobre",
-    "updatedAt": "2026-07-31T11:25:29.426Z",
+    "updatedAt": "2026-07-31T11:36:23.751Z",
     "title": "Sobre | Inspetor BudGanja",
     "metaDescription": "O Inspetor BudGanja é um laboratório digital de plantas medicinais do Brasil — catálogo, extensão académica UNIFESP, ferramentas e cultivo responsável.",
     "ogTitle": "Sobre | Inspetor BudGanja",
@@ -137,12 +137,12 @@
     "headExtra": "",
     "body": "<main id=\"main-content\" class=\"article-page relatorio-container apresentacao-page\">\r\n        <header class=\"article-header\">\r\n            <p class=\"article-eyebrow\">Apresentação · XIV Curso UNIFESP</p>\r\n            <h1>Inspetor BudGanja</h1>\r\n            <p class=\"page-intro\">\r\n                Laboratório digital educacional de plantas medicinais do Brasil —\r\n                desenvolvido de forma independente por um aluno do XIV Curso de Extensão\r\n                em Cannabis Medicinal (UNIFESP / MovReCam).\r\n            </p>\r\n            <p class=\"apresentacao-lead-links section-cta-inline\">\r\n                <a href=\"https://inspetorbudganja.com.br/\" class=\"botao btn-inline\">Abrir o laboratório</a>\r\n                <a href=\"/biblioteca/unifesp/\" class=\"botao botao-outline btn-inline\">Hub do curso UNIFESP</a>\r\n            </p>\r\n        </header>\r\n\r\n        <section class=\"info-panel apresentacao-author\" aria-labelledby=\"apresentacao-author-title\">\r\n            <h2 id=\"apresentacao-author-title\">Quem apresenta</h2>\r\n            <p class=\"info-panel-text\">\r\n                <strong>Tiago Queiroz Loureiro</strong> — cientista da computação, com foco em\r\n                ambientes controlados (CEA), automação e IoT agrícola. Aluno do XIV Curso UNIFESP.\r\n                O Inspetor BudGanja é o laboratório público deste trabalho: unir precisão\r\n                computacional e botânica em ferramentas e conteúdo acessíveis.\r\n            </p>\r\n            <p class=\"section-cta-inline\">\r\n                <a href=\"https://www.linkedin.com/in/tiago-queiroz-loureiro/\" class=\"botao botao-outline btn-inline\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a>\r\n                <a href=\"mailto:tql.tql@gmail.com\" class=\"botao botao-outline btn-inline\">E-mail</a>\r\n                <a href=\"/info/contato.html\" class=\"botao botao-outline btn-inline\">Contato no site</a>\r\n            </p>\r\n        </section>\r\n\r\n        <section class=\"info-panel apresentacao-channels\" aria-labelledby=\"apresentacao-channels-title\">\r\n            <h2 id=\"apresentacao-channels-title\">Outros canais de comunicação</h2>\r\n            <p class=\"info-panel-text\">\r\n                Além do site, o laboratório publica vídeos no YouTube e episódios no Spotify —\r\n                conteúdo educacional complementar, independente do curso UNIFESP.\r\n            </p>\r\n            <p class=\"section-cta-inline\">\r\n                <a href=\"/videos/\" class=\"botao botao-outline btn-inline apresentacao-channel-btn\">Vídeos</a>\r\n                <a href=\"https://open.spotify.com/show/033yuLDWnN84xOcfHyJ1FZ\" class=\"botao botao-outline btn-inline apresentacao-channel-btn\" target=\"_blank\" rel=\"noopener noreferrer\">Spotify</a>\r\n            </p>\r\n        </section>\r\n\r\n        <section class=\"apresentacao-story\" aria-labelledby=\"apresentacao-what-title\">\r\n            <h2 id=\"apresentacao-what-title\">O que é o projeto</h2>\r\n            <p>\r\n                Plataforma web pública dedicada a plantas medicinais, literacia canábica\r\n                responsável e documentação prática de cultivo. O conteúdo é educacional,\r\n                multilíngue (inglês, português e espanhol) e deixa limites éticos à vista:\r\n                <strong>não substitui orientação médica, farmacêutica ou jurídica</strong>,\r\n                nem o SIEX ou as aulas oficiais da UNIFESP.\r\n            </p>\r\n        </section>\r\n\r\n        <section class=\"info-panel\" aria-labelledby=\"apresentacao-unifesp-title\">\r\n            <h2 id=\"apresentacao-unifesp-title\">Ligação com o curso UNIFESP</h2>\r\n            <ul class=\"info-list\">\r\n                <li><a href=\"/biblioteca/unifesp/\">Hub do XIV curso</a> — resumo prático, SIEX, carga horária e caminhos de estudo.</li>\r\n                <li>Destaque na página inicial para o curso e para os canais de extensão <strong>MovReCam</strong> e <strong>CANABinALL</strong>.</li>\r\n                <li><a href=\"/biblioteca/inspecoes/\">Inspeções</a> documentais do programa e de canais parceiros, com método verificável.</li>\r\n                <li>Objetivo: ampliar o alcance da formação de extensão e cruzar o conteúdo académico com fichas botânicas e ferramentas práticas.</li>\r\n            </ul>\r\n        </section>\r\n\r\n        <section class=\"apresentacao-modules\" aria-labelledby=\"apresentacao-modules-title\">\r\n            <h2 id=\"apresentacao-modules-title\">Módulos do laboratório</h2>\r\n            <ol class=\"apresentacao-modules-list\">\r\n                <li>\r\n                    <a href=\"/plantas/\"><strong>Plantas fitoterápicas</strong></a>\r\n                    — cerca de 29 fichas educacionais (nome popular/científico, usos tradicionais, partes usadas, cuidados).\r\n                </li>\r\n                <li>\r\n                    <a href=\"/cultivo/\"><strong>Diário de pesquisas</strong></a>\r\n                    — registo por espécie (fases, notas, plano), inclusive a partir do catálogo.\r\n                </li>\r\n                <li>\r\n                    <a href=\"/biblioteca/inspecoes/\"><strong>Inspeções</strong></a>\r\n                    — auditorias independentes de canais, cursos e equipamentos.\r\n                </li>\r\n                <li>\r\n                    <a href=\"/calculadoras/\"><strong>Ferramentas no navegador</strong></a>\r\n                    — VPD, DLI, pH/EC, luxímetro, super solo e outros utilitários.\r\n                </li>\r\n                <li>\r\n                    <a href=\"/comunidade/\"><strong>Comunidade</strong></a>,\r\n                    <a href=\"/equipamentos/\">equipamentos documentados</a>,\r\n                    <a href=\"/radio/\">BudGanja Radio</a>,\r\n                    <a href=\"/videos/\">página de vídeos</a>\r\n                    e\r\n                    <a href=\"https://open.spotify.com/show/033yuLDWnN84xOcfHyJ1FZ\" target=\"_blank\" rel=\"noopener noreferrer\">podcast no Spotify</a>\r\n                    como apoios ao estudo.\r\n                </li>\r\n            </ol>\r\n        </section>\r\n\r\n        <div class=\"section-grid apresentacao-grid\">\r\n            <section class=\"info-panel\">\r\n                <h3>O que este projeto é</h3>\r\n                <ul class=\"info-list\">\r\n                    <li>Iniciativa educacional independente de um aluno do curso.</li>\r\n                    <li>Espaço digital para estudar, documentar e partilhar com responsabilidade.</li>\r\n                    <li>Ponte entre extensão académica, catálogo botânico e prática de laboratório.</li>\r\n                </ul>\r\n            </section>\r\n            <section class=\"info-panel\">\r\n                <h3>O que este projeto não é</h3>\r\n                <ul class=\"info-list\">\r\n                    <li>Não é produto comercial afiliado à UNIFESP.</li>\r\n                    <li>Não substitui inscrição SIEX, aulas oficiais ou certificado do curso.</li>\r\n                    <li>Não presta aconselhamento clínico, farmacêutico ou jurídico.</li>\r\n                </ul>\r\n            </section>\r\n        </div>\r\n\r\n        <section class=\"info-panel apresentacao-ask\" aria-labelledby=\"apresentacao-ask-title\">\r\n            <h2 id=\"apresentacao-ask-title\">Pedido à coordenação</h2>\r\n            <p class=\"info-panel-text\">\r\n                Estou disponível para demonstração breve (online ou presencial), para receber\r\n                críticas da coordenação e, se fizer sentido, para alinhar menções, links oficiais\r\n                ou boas práticas de citação ao XIV Curso UNIFESP.\r\n            </p>\r\n            <p class=\"section-cta-inline\">\r\n                <a href=\"mailto:tql.tql@gmail.com?subject=Apresentação%20Inspetor%20BudGanja%20—%20XIV%20Curso%20UNIFESP\" class=\"botao btn-inline\">Escrever ao autor</a>\r\n                <a href=\"/info/sobre.html\" class=\"botao botao-outline btn-inline\">Sobre o laboratório</a>\r\n            </p>\r\n        </section>\r\n\r\n        <section class=\"apresentacao-share info-panel\" aria-labelledby=\"apresentacao-share-title\">\r\n            <h2 id=\"apresentacao-share-title\">Link desta apresentação</h2>\r\n            <p class=\"info-panel-text\">\r\n                Pode partilhar directamente esta página:\r\n            </p>\r\n            <p class=\"apresentacao-url\">\r\n                <a href=\"https://inspetorbudganja.com.br/info/apresentacao-unifesp.html\">https://inspetorbudganja.com.br/info/apresentacao-unifesp.html</a>\r\n            </p>\r\n        </section>\r\n    </main>",
     "scripts": "<script src=\"/js/site-features.js?v=295\"></script>",
-    "updatedAt": "2026-07-31T11:25:29.427Z"
+    "updatedAt": "2026-07-31T11:36:23.751Z"
   },
   "info/contato.html": {
     "id": "info/contato.html",
     "label": "Contato",
-    "updatedAt": "2026-07-31T11:25:29.427Z",
+    "updatedAt": "2026-07-31T11:36:23.752Z",
     "title": "Contato | Inspetor BudGanja",
     "metaDescription": "Entre em contato com o Inspetor BudGanja — e-mail, canal YouTube e perguntas frequentes.",
     "ogTitle": "Contato | Inspetor BudGanja",
@@ -156,7 +156,7 @@
   "info/privacidade.html": {
     "id": "info/privacidade.html",
     "label": "Privacidade",
-    "updatedAt": "2026-07-31T11:25:29.427Z",
+    "updatedAt": "2026-07-31T11:36:23.752Z",
     "title": "Privacidade | Inspetor BudGanja",
     "metaDescription": "Política de privacidade do Inspetor BudGanja — como tratamos dados pessoais em sorteios e contato.",
     "ogTitle": "Privacidade | Inspetor BudGanja",
@@ -170,7 +170,7 @@
   "sorteios/index.html": {
     "id": "sorteios/index.html",
     "label": "Sorteios",
-    "updatedAt": "2026-07-31T11:25:29.428Z",
+    "updatedAt": "2026-07-31T11:36:23.752Z",
     "title": "Sorteios | Inspetor BudGanja",
     "metaDescription": "Sorteio de inauguração do Inspetor BudGanja — em breve, clonadora aeropônica caseira de baixo custo documentada no site.",
     "ogTitle": "Sorteios | Inspetor BudGanja",
@@ -184,7 +184,7 @@
   "comunidade/index.html": {
     "id": "comunidade/index.html",
     "label": "Comunidade",
-    "updatedAt": "2026-07-31T11:25:29.429Z",
+    "updatedAt": "2026-07-31T11:36:23.753Z",
     "title": "Comunidade | Inspetor BudGanja",
     "metaDescription": "Feed da comunidade Inspetor BudGanja — fotos e relatos de cultivo vegetal partilhados pelos cultivadores.",
     "ogTitle": "Comunidade | Inspetor BudGanja",
@@ -198,7 +198,7 @@
   "comunidade-admin.html": {
     "id": "comunidade-admin.html",
     "label": "Admin Comunidade",
-    "updatedAt": "2026-07-31T11:25:29.429Z",
+    "updatedAt": "2026-07-31T11:36:23.754Z",
     "title": "Admin Comunidade | Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Admin Comunidade | Inspetor BudGanja",
@@ -212,7 +212,7 @@
   "equipamentos/index.html": {
     "id": "equipamentos/index.html",
     "label": "Equipamentos",
-    "updatedAt": "2026-07-31T11:25:29.430Z",
+    "updatedAt": "2026-07-31T11:36:23.754Z",
     "title": "Equipamentos | Inspetor BudGanja",
     "metaDescription": "Clonadoras caseiras do Inspetor BudGanja — guias separados para 6 estacas (pote) e 12 estacas (balde com aspersores).",
     "ogTitle": "Equipamentos | Inspetor BudGanja",
@@ -226,7 +226,7 @@
   "loja/index.html": {
     "id": "loja/index.html",
     "label": "Loja (oculta)",
-    "updatedAt": "2026-07-31T11:25:29.430Z",
+    "updatedAt": "2026-07-31T11:36:23.754Z",
     "title": "Loja parceira | Inspetor BudGanja",
     "metaDescription": "Loja parceira do Inspetor BudGanja — materiais usados nas clonadoras e experiências de campo e laboratório, com link para os guias de montagem.",
     "ogTitle": "Loja parceira | Inspetor BudGanja",
@@ -240,7 +240,7 @@
   "loja/encomenda.html": {
     "id": "loja/encomenda.html",
     "label": "Encomendar clonadora",
-    "updatedAt": "2026-07-31T11:25:29.430Z",
+    "updatedAt": "2026-07-31T11:36:23.754Z",
     "title": "Encomendar clonadora | Inspetor BudGanja",
     "metaDescription": "Formulário de encomenda — clonadoras montadas pelo Inspetor BudGanja.",
     "ogTitle": "Encomendar clonadora | Inspetor BudGanja",
@@ -254,7 +254,7 @@
   "loja-admin.html": {
     "id": "loja-admin.html",
     "label": "Admin encomendas",
-    "updatedAt": "2026-07-31T11:25:29.430Z",
+    "updatedAt": "2026-07-31T11:36:23.755Z",
     "title": "Encomendas | Admin Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Encomendas | Admin Inspetor BudGanja",
@@ -268,7 +268,7 @@
   "pesquisas-admin.html": {
     "id": "pesquisas-admin.html",
     "label": "Admin submissões de pesquisas",
-    "updatedAt": "2026-07-31T11:25:29.431Z",
+    "updatedAt": "2026-07-31T11:36:23.755Z",
     "title": "Submissões de pesquisas | Admin Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Submissões de pesquisas | Admin Inspetor BudGanja",
@@ -282,7 +282,7 @@
   "usuarios-admin.html": {
     "id": "usuarios-admin.html",
     "label": "Admin utilizadores",
-    "updatedAt": "2026-07-31T11:25:29.431Z",
+    "updatedAt": "2026-07-31T11:36:23.756Z",
     "title": "Utilizadores | Admin Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Utilizadores | Admin Inspetor BudGanja",
@@ -296,7 +296,7 @@
   "biblioteca/pesquisas/index.html": {
     "id": "biblioteca/pesquisas/index.html",
     "label": "Pesquisas",
-    "updatedAt": "2026-07-31T11:25:29.431Z",
+    "updatedAt": "2026-07-31T11:36:23.756Z",
     "title": "Pesquisas | Inspetor BudGanja",
     "metaDescription": "Pesquisas do Inspetor BudGanja — estudos do laboratório e submissões aprovadas da comunidade.",
     "ogTitle": "Pesquisas | Inspetor BudGanja",
@@ -310,7 +310,7 @@
   "calculadoras/index.html": {
     "id": "calculadoras/index.html",
     "label": "Ferramentas",
-    "updatedAt": "2026-07-31T11:25:29.432Z",
+    "updatedAt": "2026-07-31T11:36:23.757Z",
     "title": "Ferramentas | Inspetor BudGanja",
     "metaDescription": "Ferramentas do Inspetor BudGanja — Super Calc, luxímetro e Super Solo.",
     "ogTitle": "Ferramentas | Inspetor BudGanja",
@@ -324,7 +324,7 @@
   "calculadoras/cultivo-lab.html": {
     "id": "calculadoras/cultivo-lab.html",
     "label": "Super Calc",
-    "updatedAt": "2026-07-31T11:25:29.432Z",
+    "updatedAt": "2026-07-31T11:36:23.757Z",
     "title": "Super Calculadora de Cultivo | Inspetor BudGanja",
     "metaDescription": "Super calculadora de cultivo — VPD, DLI, pH, EC, diluição, volume de vaso, W/m² e custo de energia numa só ferramenta.",
     "ogTitle": "Super Calculadora de Cultivo | Inspetor BudGanja",
@@ -338,7 +338,7 @@
   "calculadoras/luximetro.html": {
     "id": "calculadoras/luximetro.html",
     "label": "Luxímetro",
-    "updatedAt": "2026-07-31T11:25:29.432Z",
+    "updatedAt": "2026-07-31T11:36:23.757Z",
     "title": "Luxímetro | Inspetor BudGanja",
     "metaDescription": "Luxímetro do Inspetor BudGanja — meça a intensidade luminosa e estime PPFD usando a câmera do celular.",
     "ogTitle": "Luxímetro | Inspetor BudGanja",
@@ -352,7 +352,7 @@
   "calculadoras/super-solo.html": {
     "id": "calculadoras/super-solo.html",
     "label": "Super Solo",
-    "updatedAt": "2026-07-31T11:25:29.433Z",
+    "updatedAt": "2026-07-31T11:36:23.758Z",
     "title": "Super Solo | Inspetor BudGanja",
     "metaDescription": "Calcule dosagens de amendments (gramas e ml) para super solo orgânico a partir do volume de substrato.",
     "ogTitle": "Calculadora de Super Solo | Inspetor BudGanja",
@@ -366,7 +366,7 @@
   "equipamentos/clonadora-6-estacas.html": {
     "id": "equipamentos/clonadora-6-estacas.html",
     "label": "Guia: Clonadora 6 estacas",
-    "updatedAt": "2026-07-31T11:25:29.433Z",
+    "updatedAt": "2026-07-31T11:36:23.758Z",
     "title": "Guia: Clonadora de 6 estacas | Inspetor BudGanja",
     "metaDescription": "Guia da clonadora caseira de 6 estacas — pote de sorvete, bucha de louça e bombinha de ar 24 h.",
     "ogTitle": "Guia: Clonadora de 6 estacas | Inspetor BudGanja",
@@ -380,7 +380,7 @@
   "equipamentos/clonadora-12-estacas.html": {
     "id": "equipamentos/clonadora-12-estacas.html",
     "label": "Guia: Clonadora 12 estacas",
-    "updatedAt": "2026-07-31T11:25:29.433Z",
+    "updatedAt": "2026-07-31T11:36:23.758Z",
     "title": "Guia: Clonadora de 12 estacas | Inspetor BudGanja",
     "metaDescription": "Guia da clonadora caseira de 12 estacas — balde, bomba submersa, microaspersores e feltro. Água borrifada 24 h.",
     "ogTitle": "Guia: Clonadora de 12 estacas | Inspetor BudGanja",
@@ -394,7 +394,7 @@
   "equipamentos/manual-clonadora.html": {
     "id": "equipamentos/manual-clonadora.html",
     "label": "Manual: Clonadoras (redirecionamento)",
-    "updatedAt": "2026-07-31T11:25:29.433Z",
+    "updatedAt": "2026-07-31T11:36:23.758Z",
     "title": "Clonadoras | Inspetor BudGanja",
     "metaDescription": "Clonadoras caseiras do Inspetor BudGanja — guias separados para 6 e 12 estacas.",
     "ogTitle": "Clonadoras | Inspetor BudGanja",
@@ -408,7 +408,7 @@
   "equipamentos/manual-hidrocloradora.html": {
     "id": "equipamentos/manual-hidrocloradora.html",
     "label": "Manual: Clonadoras (redirecionamento)",
-    "updatedAt": "2026-07-31T11:25:29.433Z",
+    "updatedAt": "2026-07-31T11:36:23.758Z",
     "title": "Clonadora de 12 estacas | Inspetor BudGanja",
     "metaDescription": "Redirecionamento para o guia da clonadora de 12 estacas.",
     "ogTitle": "Clonadora de 12 estacas | Inspetor BudGanja",
@@ -422,7 +422,7 @@
   "admin-db.html": {
     "id": "admin-db.html",
     "label": "Admin Base de Dados",
-    "updatedAt": "2026-07-31T11:25:29.434Z",
+    "updatedAt": "2026-07-31T11:36:23.759Z",
     "title": "Painel BD | Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Painel BD | Inspetor BudGanja",
@@ -436,7 +436,7 @@
   "biblioteca/pesquisas/substratos.html": {
     "id": "biblioteca/pesquisas/substratos.html",
     "label": "Pesquisa: Substratos",
-    "updatedAt": "2026-07-31T11:25:29.434Z",
+    "updatedAt": "2026-07-31T11:36:23.759Z",
     "title": "Relatório: Otimização da Propagação Vegetal | Inspetor BudGanja",
     "metaDescription": "Relatório técnico: otimização da propagação vegetal via substratos biodegradáveis — Inspetor BudGanja.",
     "ogTitle": "Relatório: Propagação Vegetal | Inspetor BudGanja",

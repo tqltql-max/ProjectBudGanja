@@ -66,9 +66,11 @@
     'plantas sagradas': 'plantas-sagradas'
   };
 
+  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor'];
+
   var cachedHub = null;
   var selectedId = '';
-  var activeChannel = 'inspetor';
+  var activeChannel = 'all';
   var activeSeries = '';
   var playerEl = null;
   var gridEl = null;
@@ -110,7 +112,7 @@
   }
 
   function readFilterFromUrl() {
-    var channel = 'inspetor';
+    var channel = 'all';
     var series = '';
     try {
       var params = new URLSearchParams(window.location.search);
@@ -135,8 +137,7 @@
 
   function writeFilterToUrl(channel, series, videoId, replace) {
     var params = new URLSearchParams();
-    if (channel && channel !== 'inspetor') params.set('channel', channel);
-    if (channel === 'all') params.set('channel', 'all');
+    if (channel && channel !== 'all') params.set('channel', channel);
     if (series) params.set('series', series);
     var qs = params.toString();
     var next = window.location.pathname + (qs ? '?' + qs : '');
@@ -209,7 +210,45 @@
     return Number(m[1] || m[2] || 999);
   }
 
+  function sortChannelVideos(list, channelId) {
+    if (channelId === 'movrecam') {
+      return list.slice().sort(function (a, b) {
+        var na = aulaNumber(a.title);
+        var nb = aulaNumber(b.title);
+        var aXiv = (a.series || []).indexOf('xiv') >= 0;
+        var bXiv = (b.series || []).indexOf('xiv') >= 0;
+        if (aXiv !== bXiv) return aXiv ? -1 : 1;
+        if (aXiv && bXiv && na !== nb) return na - nb;
+        var da = a.published ? new Date(a.published).getTime() : 0;
+        var db = b.published ? new Date(b.published).getTime() : 0;
+        if (db !== da) return db - da;
+        return String(a.title || '').localeCompare(String(b.title || ''), 'pt-BR');
+      });
+    }
+    if (channelId === 'inspetor') return list.slice();
+    return list.slice().sort(function (a, b) {
+      var da = a.published ? new Date(a.published).getTime() : 0;
+      var db = b.published ? new Date(b.published).getTime() : 0;
+      if (db !== da) return db - da;
+      return String(a.title || '').localeCompare(String(b.title || ''), 'pt-BR');
+    });
+  }
+
   function sortForView(list, channel, series) {
+    if (channel === 'all') {
+      var grouped = [];
+      for (var i = 0; i < CHANNEL_ORDER.length; i++) {
+        var id = CHANNEL_ORDER[i];
+        var chunk = list.filter(function (v) {
+          return v.channel === id;
+        });
+        grouped = grouped.concat(sortChannelVideos(chunk, id));
+      }
+      var rest = list.filter(function (v) {
+        return CHANNEL_ORDER.indexOf(v.channel) < 0;
+      });
+      return grouped.concat(sortChannelVideos(rest, ''));
+    }
     if (channel === 'movrecam' && series === 'xiv') {
       return list.slice().sort(function (a, b) {
         var na = aulaNumber(a.title);
@@ -218,13 +257,7 @@
         return String(a.published || '').localeCompare(String(b.published || ''));
       });
     }
-    if (channel === 'inspetor') return list.slice();
-    return list.slice().sort(function (a, b) {
-      var da = a.published ? new Date(a.published).getTime() : 0;
-      var db = b.published ? new Date(b.published).getTime() : 0;
-      if (db !== da) return db - da;
-      return String(a.title || '').localeCompare(String(b.title || ''), 'pt-BR');
-    });
+    return sortChannelVideos(list, channel);
   }
 
   function channelLabel(id) {
@@ -260,7 +293,19 @@
   }
 
   function updateChrome() {
-    var meta = activeChannel === 'all' ? findChannelMeta('inspetor') : findChannelMeta(activeChannel);
+    if (activeChannel === 'all') {
+      if (channelLink) {
+        channelLink.href = '/biblioteca/inspecoes/';
+        channelLink.removeAttribute('target');
+        channelLink.removeAttribute('rel');
+        channelLink.hidden = false;
+        channelLink.textContent = i18n('pages.videos.viewInspections', 'Ver inspeções de canais');
+      }
+      if (inspectionLink) inspectionLink.hidden = true;
+      return;
+    }
+
+    var meta = findChannelMeta(activeChannel);
     if (channelLink) {
       if (meta && meta.channelUrl) {
         channelLink.href = meta.channelUrl;
@@ -330,10 +375,24 @@
     });
   }
 
+  function orderedChannels() {
+    var byId = {};
+    var list = (cachedHub && cachedHub.channels) || [];
+    for (var i = 0; i < list.length; i++) byId[list[i].id] = list[i];
+    var ordered = [];
+    for (var j = 0; j < CHANNEL_ORDER.length; j++) {
+      if (byId[CHANNEL_ORDER[j]]) ordered.push(byId[CHANNEL_ORDER[j]]);
+    }
+    for (var k = 0; k < list.length; k++) {
+      if (CHANNEL_ORDER.indexOf(list[k].id) < 0) ordered.push(list[k]);
+    }
+    return ordered;
+  }
+
   function renderFilters() {
     if (!filtersEl || !cachedHub) return;
     var channels = [{ id: 'all', label: i18n('pages.videos.filterAll', 'Todos'), count: (cachedHub.videos || []).length }]
-      .concat(cachedHub.channels || []);
+      .concat(orderedChannels());
 
     var seriesOpts = seriesChipsForChannel(activeChannel);
 
@@ -390,6 +449,75 @@
         : '');
   }
 
+  function renderVideoCard(v) {
+    var title = localizedField(v, 'title');
+    var summary = localizedField(v, 'summary');
+    var thumb = videoThumb(v);
+    var active = v.id === selectedId;
+    return (
+      '<article class="video-card card' +
+      (active ? ' is-active' : '') +
+      '" data-video-id="' +
+      escapeHtml(v.id) +
+      '" data-channel="' +
+      escapeHtml(v.channel || '') +
+      '">' +
+      '<button type="button" class="video-card-link" aria-pressed="' +
+      (active ? 'true' : 'false') +
+      '" aria-label="' +
+      escapeHtml(i18n('pages.videos.watchHere', 'Assistir') + ': ' + title) +
+      '">' +
+      '<span class="video-card-media">' +
+      (thumb
+        ? '<img src="' + escapeHtml(thumb) + '" alt="" class="video-card-thumb" loading="lazy" decoding="async">'
+        : '<span class="video-card-thumb video-card-thumb--empty"></span>') +
+      '<span class="video-card-play" aria-hidden="true"></span>' +
+      '</span>' +
+      '<span class="video-card-body">' +
+      '<span class="video-card-title">' +
+      escapeHtml(title) +
+      '</span>' +
+      (summary ? '<span class="video-card-summary">' + escapeHtml(summary) + '</span>' : '') +
+      '<span class="video-card-date">' +
+      escapeHtml(formatDate(v.published)) +
+      '</span>' +
+      '</span>' +
+      '</button>' +
+      '</article>'
+    );
+  }
+
+  function renderChannelSection(channelId, videos) {
+    if (!videos.length) return '';
+    var meta = findChannelMeta(channelId);
+    var label = channelLabel(channelId);
+    var inspect =
+      meta && meta.inspectionUrl
+        ? ' <a class="videos-channel-inspect" href="' +
+          escapeHtml(meta.inspectionUrl) +
+          '">' +
+          escapeHtml(i18n('pages.videos.viewInspection', 'Ver inspeção')) +
+          '</a>'
+        : '';
+    return (
+      '<section class="videos-channel-section" data-channel-section="' +
+      escapeHtml(channelId) +
+      '">' +
+      '<header class="videos-channel-section-head">' +
+      '<h2 class="videos-list-heading">' +
+      escapeHtml(label) +
+      ' <span class="videos-list-count">(' +
+      videos.length +
+      ')</span></h2>' +
+      inspect +
+      '</header>' +
+      '<div class="videos-grid">' +
+      videos.map(renderVideoCard).join('') +
+      '</div>' +
+      '</section>'
+    );
+  }
+
   function renderGrid(videos) {
     if (!gridEl) return;
     if (!videos.length) {
@@ -399,6 +527,23 @@
         escapeHtml(i18n('pages.videos.emptyFilter', 'Nenhum vídeo neste filtro.')) +
         '</p>' +
         '</div>';
+      return;
+    }
+
+    if (activeChannel === 'all') {
+      var html = '';
+      for (var i = 0; i < CHANNEL_ORDER.length; i++) {
+        var id = CHANNEL_ORDER[i];
+        var chunk = videos.filter(function (v) {
+          return v.channel === id;
+        });
+        html += renderChannelSection(id, chunk);
+      }
+      var other = videos.filter(function (v) {
+        return CHANNEL_ORDER.indexOf(v.channel) < 0;
+      });
+      if (other.length) html += renderChannelSection('other', other);
+      gridEl.innerHTML = html;
       return;
     }
 
@@ -412,48 +557,7 @@
       videos.length +
       ')</span></p>' +
       '<div class="videos-grid">' +
-      videos
-        .map(function (v) {
-          var title = localizedField(v, 'title');
-          var summary = localizedField(v, 'summary');
-          var thumb = videoThumb(v);
-          var active = v.id === selectedId;
-          return (
-            '<article class="video-card card' +
-            (active ? ' is-active' : '') +
-            '" data-video-id="' +
-            escapeHtml(v.id) +
-            '" data-channel="' +
-            escapeHtml(v.channel || '') +
-            '">' +
-            '<button type="button" class="video-card-link" aria-pressed="' +
-            (active ? 'true' : 'false') +
-            '" aria-label="' +
-            escapeHtml(i18n('pages.videos.watchHere', 'Assistir') + ': ' + title) +
-            '">' +
-            '<span class="video-card-media">' +
-            (thumb
-              ? '<img src="' + escapeHtml(thumb) + '" alt="" class="video-card-thumb" loading="lazy" decoding="async">'
-              : '<span class="video-card-thumb video-card-thumb--empty"></span>') +
-            '<span class="video-card-play" aria-hidden="true"></span>' +
-            '</span>' +
-            '<span class="video-card-body">' +
-            (activeChannel === 'all'
-              ? '<span class="video-card-channel">' + escapeHtml(channelLabel(v.channel)) + '</span>'
-              : '') +
-            '<span class="video-card-title">' +
-            escapeHtml(title) +
-            '</span>' +
-            (summary ? '<span class="video-card-summary">' + escapeHtml(summary) + '</span>' : '') +
-            '<span class="video-card-date">' +
-            escapeHtml(formatDate(v.published)) +
-            '</span>' +
-            '</span>' +
-            '</button>' +
-            '</article>'
-          );
-        })
-        .join('') +
+      videos.map(renderVideoCard).join('') +
       '</div>';
   }
 
@@ -499,8 +603,10 @@
       if (!inView) {
         var anywhere = findVideo(all, requested);
         if (anywhere) {
-          activeChannel = anywhere.channel || 'inspetor';
-          activeSeries = '';
+          if (activeChannel !== 'all') {
+            activeChannel = anywhere.channel || 'all';
+            activeSeries = '';
+          }
           filtered = sortForView(filterVideos(all, activeChannel, activeSeries), activeChannel, activeSeries);
         }
       }
@@ -561,7 +667,7 @@
   }
 
   function setChannel(channel, series) {
-    activeChannel = channel || 'inspetor';
+    activeChannel = channel || 'all';
     activeSeries = series || '';
     if (activeChannel === 'all') activeSeries = '';
     var seriesOpts = seriesChipsForChannel(activeChannel);
@@ -582,7 +688,7 @@
     inspectionLink = document.getElementById('videos-inspection-link');
 
     var fromUrl = readFilterFromUrl();
-    activeChannel = fromUrl.channel || 'inspetor';
+    activeChannel = fromUrl.channel || 'all';
     activeSeries = fromUrl.series || '';
 
     if (!(hub && hub.videos && hub.videos.length)) {
