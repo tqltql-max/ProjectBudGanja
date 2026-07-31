@@ -9087,45 +9087,231 @@ html[data-theme="light"] .header-group-divider {
     margin-bottom: 32px;
 }
 
+.videos-player {
+    margin: 0 0 40px;
+    scroll-margin-top: 88px;
+}
+
+.videos-page .video-embed {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0 0 16px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: #000;
+    box-shadow: var(--shadow-card);
+    border: 1px solid rgba(212, 175, 55, 0.22);
+}
+
+.videos-page .video-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.videos-player-meta {
+    max-width: 52rem;
+}
+
+.videos-player-title {
+    margin: 0 0 8px;
+    font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+    line-height: 1.3;
+    color: #fff;
+}
+
+.videos-player-summary {
+    margin: 0 0 10px;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--color-text-muted);
+}
+
+.videos-player-actions {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--color-text-soft);
+}
+
+.videos-player-actions a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.videos-player-actions a:hover {
+    text-decoration: underline;
+}
+
+.videos-list-heading {
+    margin: 0 0 16px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
 .videos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.videos-page .video-card.card {
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.videos-page .video-card.is-active {
+    border-color: rgba(212, 175, 55, 0.55);
+    box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.35), var(--shadow-card);
 }
 
 .video-card-link {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    text-align: left;
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+    font: inherit;
+}
+
+.video-card-media {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #111;
 }
 
 .video-card-thumb {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    height: 100%;
     object-fit: cover;
-    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    display: block;
+    transition: transform 0.25s ease;
+}
+
+.video-card-media > .video-card-thumb {
+    position: absolute;
+    inset: 0;
+}
+
+.video-card-thumb--empty {
+    display: block;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+}
+
+.video-card-play {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.45), transparent 55%);
+    transition: background 0.2s ease;
+}
+
+.video-card-play::before {
+    content: '';
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.62);
+    border: 2px solid rgba(212, 175, 55, 0.85);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7));
+    position: relative;
+}
+
+.video-card-play::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0 8px 14px;
+    border-color: transparent transparent transparent #f0d060;
+    transform: translate(-35%, -50%);
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+.videos-page .video-card.is-active .video-card-play::before {
+    background: rgba(166, 134, 40, 0.92);
+    border-color: #f0d060;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .videos-page .video-card.card:hover {
+        transform: translateY(-3px);
+    }
+
+    .videos-page .video-card.card:hover .video-card-thumb {
+        transform: scale(1.04);
+    }
+
+    .videos-page .video-card.card:hover .video-card-play {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.12));
+    }
 }
 
 .video-card-body {
-    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 14px 16px 16px;
 }
 
 .video-card-title {
-    font-size: 1rem;
-    margin: 0 0 8px;
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .video-card-summary {
-    font-size: 0.9rem;
+    font-size: 0.86rem;
     color: var(--color-text-muted);
-    margin: 0 0 8px;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .video-card-date {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     color: var(--color-text-soft);
+    margin-top: 2px;
+}
+
+@media (max-width: 640px) {
+    .videos-player {
+        margin-bottom: 28px;
+    }
+
+    .videos-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
 }
 
 .newsletter-cta {

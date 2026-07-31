@@ -210,60 +210,52 @@
                   "description": "Canal @InspetorBudGanja."
                 },
                 {
-                  "label": "Otimizando o Cultivo Indoor",
-                  "tileLabel": "Otimizando o Cultivo Indoor",
-                  "href": "https://www.youtube.com/watch?v=zwKXgqZMPro",
+                  "label": "Cultivo de Cannabis O Inicio",
+                  "tileLabel": "Cultivo de Cannabis O Inicio",
+                  "href": "/videos/#38uUEL1B-v4",
                   "icon": "▶️",
-                  "slug": "video-zwKXgqZMPro",
-                  "description": "Organize luz, ventilação e espaço para um ambiente indoor eficiente."
-                },
-                {
-                  "label": "Propagação e clonagem",
-                  "tileLabel": "Propagação e clonagem",
-                  "href": "https://www.youtube.com/watch?v=tdMl4X5h83Y",
-                  "icon": "▶️",
-                  "slug": "video-tdMl4X5h83Y",
-                  "description": "Multiplique plantas com técnicas acessíveis e materiais do dia a dia."
-                },
-                {
-                  "label": "A Ciência da Floração",
-                  "tileLabel": "A Ciência da Floração",
-                  "href": "https://www.youtube.com/watch?v=V6LO6nXh8bI",
-                  "icon": "▶️",
-                  "slug": "video-V6LO6nXh8bI",
-                  "description": "1. O Gatilho (Fotoperíodo)"
-                },
-                {
-                  "label": "Arquitetura da Cannabis",
-                  "tileLabel": "Arquitetura da Cannabis",
-                  "href": "https://www.youtube.com/watch?v=OO7d72tHwJY",
-                  "icon": "▶️",
-                  "slug": "video-OO7d72tHwJY",
-                  "description": "Tudo sobre a estrutura da sua planta"
-                },
-                {
-                  "label": "Solo Vivo Orgânico",
-                  "tileLabel": "Solo Vivo Orgânico",
-                  "href": "https://www.youtube.com/watch?v=092X69hq8Os",
-                  "icon": "▶️",
-                  "slug": "video-092X69hq8Os",
-                  "description": "Faça seu proprio Super Solo"
+                  "slug": "video-38uUEL1B-v4",
+                  "description": "O cultivo de cannabis resume-se em 4 etapas e fatores essenciais:"
                 },
                 {
                   "label": "Nutrição da Cannabis",
                   "tileLabel": "Nutrição da Cannabis",
-                  "href": "https://www.youtube.com/watch?v=XIrSJWjhd6Q",
+                  "href": "/videos/#XIrSJWjhd6Q",
                   "icon": "▶️",
                   "slug": "video-XIrSJWjhd6Q",
                   "description": "Alimentação da planta em cada fase — do vegetativo à transição."
                 },
                 {
-                  "label": "Cultivo de Cannabis O Inicio",
-                  "tileLabel": "Cultivo de Cannabis O Inicio",
-                  "href": "https://www.youtube.com/watch?v=38uUEL1B-v4",
+                  "label": "Solo Vivo Orgânico",
+                  "tileLabel": "Solo Vivo Orgânico",
+                  "href": "/videos/#092X69hq8Os",
                   "icon": "▶️",
-                  "slug": "video-38uUEL1B-v4",
-                  "description": "O cultivo de cannabis resume-se em 4 etapas e fatores essenciais:"
+                  "slug": "video-092X69hq8Os",
+                  "description": "Faça seu proprio Super Solo"
+                },
+                {
+                  "label": "Arquitetura da Cannabis",
+                  "tileLabel": "Arquitetura da Cannabis",
+                  "href": "/videos/#OO7d72tHwJY",
+                  "icon": "▶️",
+                  "slug": "video-OO7d72tHwJY",
+                  "description": "Tudo sobre a estrutura da sua planta"
+                },
+                {
+                  "label": "A Ciência da Floração",
+                  "tileLabel": "A Ciência da Floração",
+                  "href": "/videos/#V6LO6nXh8bI",
+                  "icon": "▶️",
+                  "slug": "video-V6LO6nXh8bI",
+                  "description": "1. O Gatilho (Fotoperíodo)"
+                },
+                {
+                  "label": "Propagação e clonagem",
+                  "tileLabel": "Propagação e clonagem",
+                  "href": "/videos/#tdMl4X5h83Y",
+                  "icon": "▶️",
+                  "slug": "video-tdMl4X5h83Y",
+                  "description": "Multiplique plantas com técnicas acessíveis e materiais do dia a dia."
                 }
               ]
             },

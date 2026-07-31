@@ -474,10 +474,14 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "eyebrow": "YouTube channel",
         "title": "Videos",
-        "subtitle": "Inspections, tutorials and updates published on the channel.",
+        "subtitle": "Watch here on the site — inspections, tutorials and channel updates.",
         "loading": "Loading videos…",
         "empty": "No videos available.",
-        "docTitle": "Videos | Inspetor BudGanja"
+        "docTitle": "Videos | Inspetor BudGanja",
+        "playlist": "All videos",
+        "openOnYoutube": "Open on YouTube",
+        "watchHere": "Watch",
+        "nowPlaying": "YouTube video"
       },
       "inspections": {
         "eyebrow": "Library",
@@ -1085,10 +1089,14 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "eyebrow": "Canal de YouTube",
         "title": "Videos",
-        "subtitle": "Inspecciones, tutoriales y novedades publicadas en el canal.",
+        "subtitle": "Míralos aquí en el sitio — inspecciones, tutoriales y novedades del canal.",
         "loading": "Cargando videos…",
         "empty": "Ningún video disponible.",
-        "docTitle": "Videos | Inspetor BudGanja"
+        "docTitle": "Videos | Inspetor BudGanja",
+        "playlist": "Todos los videos",
+        "openOnYoutube": "Abrir en YouTube",
+        "watchHere": "Ver",
+        "nowPlaying": "Video de YouTube"
       },
       "inspections": {
         "eyebrow": "Biblioteca",
@@ -1696,10 +1704,14 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "eyebrow": "Canal YouTube",
         "title": "Vídeos",
-        "subtitle": "Inspeções, tutoriais e novidades publicadas no canal.",
+        "subtitle": "Assista aqui no site — inspeções, tutoriais e novidades do canal.",
         "loading": "Carregando vídeos...",
         "empty": "Nenhum vídeo disponível.",
-        "docTitle": "Vídeos | Inspetor BudGanja"
+        "docTitle": "Vídeos | Inspetor BudGanja",
+        "playlist": "Todos os vídeos",
+        "openOnYoutube": "Abrir no YouTube",
+        "watchHere": "Assistir",
+        "nowPlaying": "Vídeo do YouTube"
       },
       "inspections": {
         "eyebrow": "Biblioteca",

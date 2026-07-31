@@ -472,10 +472,14 @@
     "videos": {
       "eyebrow": "Canal YouTube",
       "title": "Vídeos",
-      "subtitle": "Inspeções, tutoriais e novidades publicadas no canal.",
+      "subtitle": "Assista aqui no site — inspeções, tutoriais e novidades do canal.",
       "loading": "Carregando vídeos...",
       "empty": "Nenhum vídeo disponível.",
-      "docTitle": "Vídeos | Inspetor BudGanja"
+      "docTitle": "Vídeos | Inspetor BudGanja",
+      "playlist": "Todos os vídeos",
+      "openOnYoutube": "Abrir no YouTube",
+      "watchHere": "Assistir",
+      "nowPlaying": "Vídeo do YouTube"
     },
     "inspections": {
       "eyebrow": "Biblioteca",

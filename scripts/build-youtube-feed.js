@@ -11,6 +11,8 @@ const CHANNEL_URL = 'https://www.youtube.com/@InspetorBudGanja';
 const CHANNEL_NAME = 'Inspetor BudGanja';
 const FALLBACK_CHANNEL_ID = 'UCv6U48NA-zeDCRxmegfe7NQ';
 const MAX_VIDEOS = 12;
+// Fora da listagem /videos (mantém-se no guia se existir).
+const EXCLUDED_VIDEO_IDS = new Set(['zwKXgqZMPro']);
 
 function summarize(desc) {
   const line = String(desc || '').replace(/<[^>]+>/g, ' ').split('\n').map((l) => l.trim()).find(Boolean) || '';
@@ -91,19 +93,25 @@ async function buildFeed() {
       summaryEn: fromFile.summaryEn || kept.summaryEn || '',
       summaryEs: fromFile.summaryEs || kept.summaryEs || ''
     };
-  }).filter((v) => v.id && !/transmissão ao vivo/i.test(v.title)).slice(0, MAX_VIDEOS);
+  }).filter((v) => v.id && !EXCLUDED_VIDEO_IDS.has(v.id) && !/transmissão ao vivo/i.test(v.title));
+
+  // Ordem da série: do mais antigo para o mais recente (RSS vem invertido).
+  videos.sort(function (a, b) {
+    return String(a.published || '').localeCompare(String(b.published || ''));
+  });
+  const limited = videos.slice(0, MAX_VIDEOS);
 
   const data = {
     channelId,
     channelUrl: CHANNEL_URL,
     channelName: CHANNEL_NAME,
     updatedAt: new Date().toISOString(),
-    videos
+    videos: limited
   };
 
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, JSON.stringify(data, null, 2), 'utf8');
-  console.log('youtube-feed.json:', videos.length, 'vídeos (canal', channelId + ')');
+  console.log('youtube-feed.json:', limited.length, 'vídeos (canal', channelId + ')');
 
   const { persistJsonPayloadToDb } = require('../lib/sync-db-files.js');
   await persistJsonPayloadToDb(ROOT, 'youtube', data);

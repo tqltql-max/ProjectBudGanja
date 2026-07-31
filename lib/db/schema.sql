@@ -287,6 +287,11 @@ CREATE TABLE IF NOT EXISTS youtube_feed_videos (
   published TEXT NOT NULL DEFAULT '',
   summary TEXT NOT NULL DEFAULT '',
   url TEXT NOT NULL DEFAULT '',
+  thumb TEXT NOT NULL DEFAULT '',
+  title_en TEXT NOT NULL DEFAULT '',
+  title_es TEXT NOT NULL DEFAULT '',
+  summary_en TEXT NOT NULL DEFAULT '',
+  summary_es TEXT NOT NULL DEFAULT '',
   sort_order INTEGER NOT NULL DEFAULT 0
 );
 

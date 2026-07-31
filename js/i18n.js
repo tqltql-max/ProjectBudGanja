@@ -344,9 +344,11 @@
       main.querySelector('[data-equip-loja]') ||
       main.querySelector('[data-inspecao-grid]') ||
       main.querySelector('#plantas-grid') ||
+      main.querySelector('#videos-player') ||
       document.body.dataset.page === 'equipamentos' ||
       document.body.dataset.page === 'cultivo' ||
       document.body.dataset.page === 'comunidade' ||
+      document.body.dataset.page === 'videos' ||
       document.body.dataset.postSlug
     ) {
       return;
