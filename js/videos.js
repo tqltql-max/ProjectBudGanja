@@ -158,8 +158,7 @@
     try {
       src += '&origin=' + encodeURIComponent(window.location.origin);
     } catch (e) { /* ignore */ }
-    // mute=1 é necessário para autoplay após navegação (gesto do clique perde-se)
-    if (autoplay) src += '&autoplay=1&mute=1';
+    if (autoplay) src += '&autoplay=1';
     return src;
   }
 

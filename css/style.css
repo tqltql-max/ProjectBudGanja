@@ -9424,15 +9424,16 @@ html[data-theme="light"] .header-group-divider {
 .video-card-play {
     position: absolute;
     inset: auto auto 8px 8px;
-    width: 22px;
-    height: 22px;
+    width: 36px;
+    height: 36px;
     display: grid;
     place-items: center;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.55);
     border: 1px solid rgba(255, 255, 255, 0.28);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
-    opacity: 0.72;
+    box-shadow: none;
+    opacity: 0.78;
+    transform: none;
     transition: opacity 0.2s ease, background 0.2s ease, border-color 0.2s ease;
     pointer-events: none;
 }
@@ -9446,20 +9447,20 @@ html[data-theme="light"] .header-group-divider {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 4px 0 4px 7px;
+    border-width: 6px 0 6px 10px;
     border-color: transparent transparent transparent rgba(255, 255, 255, 0.92);
     transform: translateX(1px);
     filter: none;
 }
 
 .videos-page .video-card.is-active .video-card-play {
-    opacity: 0.95;
-    background: rgba(166, 134, 40, 0.78);
-    border-color: rgba(240, 208, 96, 0.7);
+    opacity: 0.92;
+    background: rgba(166, 134, 40, 0.72);
+    border-color: rgba(240, 208, 96, 0.55);
 }
 
 .videos-page .video-card.is-active .video-card-play::after {
-    border-color: transparent transparent transparent #f0d060;
+    border-color: transparent transparent transparent rgba(240, 208, 96, 0.95);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -9472,8 +9473,8 @@ html[data-theme="light"] .header-group-divider {
     }
 
     .videos-page .video-card.card:hover .video-card-play {
-        opacity: 0.92;
-        background: rgba(0, 0, 0, 0.55);
+        opacity: 0.9;
+        background: rgba(0, 0, 0, 0.65);
     }
 }
 
@@ -9514,10 +9515,15 @@ html[data-theme="light"] .header-group-divider {
 
 .video-embed .yt-facade .video-card-play,
 .home-channel-embed .yt-facade .video-card-play {
-    inset: auto auto 10px 10px;
-    width: 22px;
-    height: 22px;
-    opacity: 0.78;
+    inset: auto auto 12px 12px;
+    width: 42px;
+    height: 42px;
+    opacity: 0.82;
+}
+
+.video-embed .yt-facade .video-card-play::after,
+.home-channel-embed .yt-facade .video-card-play::after {
+    border-width: 7px 0 7px 12px;
 }
 
 .video-embed iframe,

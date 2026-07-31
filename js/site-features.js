@@ -297,6 +297,10 @@
   var SHARE_ICON_SVG =
     '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>';
 
+  /* Ícone Android/Material — o “oito deitado” clássico de partilha */
+  var SHARE_ICON_FLAT_SVG =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11A2.99 2.99 0 0 0 18 7.91c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L7.96 9.81A2.99 2.99 0 0 0 6 9.09c-1.66 0-3 1.34-3 3s1.34 3 3 3c.76 0 1.44-.3 1.96-.77l7.12 4.16c-.05.21-.08.43-.08.61 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91-1.31-2.91-2.92-2.91z"/></svg>';
+
   function tShare(key, fallback) {
     if (window.BudGanjaI18n && typeof window.BudGanjaI18n.t === 'function') {
       return window.BudGanjaI18n.t(key, fallback);
@@ -551,6 +555,89 @@
     document.querySelectorAll('[data-post-share]').forEach(bindShareButton);
   }
 
+  function absoluteVideosShareUrl(id) {
+    var path = videosPageUrl(id);
+    try {
+      if (/localhost|127\.0\.0\.1/i.test(window.location.hostname || '')) {
+        return PRODUCTION_ORIGIN + path;
+      }
+      return window.location.origin + path;
+    } catch (e) {
+      return PRODUCTION_ORIGIN + path;
+    }
+  }
+
+  function bindHomeEmbedShareButton(btn) {
+    if (!btn || btn.dataset.shareBound === '1') return;
+    btn.dataset.shareBound = '1';
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var id = btn.getAttribute('data-youtube-id') || '';
+      if (!YT_ID_RE.test(id)) return;
+      var title = btn.getAttribute('data-share-title') || 'Vídeo — Inspetor BudGanja';
+      var url = absoluteVideosShareUrl(id);
+      var payload = { title: title, text: title, url: url };
+
+      var run;
+      if (typeof navigator.share === 'function') {
+        run = navigator.share(payload).then(function () {
+          return 'shared';
+        }).catch(function (err) {
+          if (err && err.name === 'AbortError') return 'shared';
+          return copyShareUrl(url);
+        });
+      } else {
+        run = copyShareUrl(url);
+      }
+
+      run.then(function (result) {
+        if (result !== 'copied' && result !== 'fallback') return;
+        btn.classList.add('is-copied');
+        btn.setAttribute('data-tip', tShare('common.shareCopied', 'Link copiado!'));
+        window.setTimeout(function () {
+          btn.classList.remove('is-copied');
+          btn.removeAttribute('data-tip');
+        }, 2200);
+      }).catch(function () { /* ignore */ });
+    });
+  }
+
+  /** Só na home: botão partilhar (ícone) nos dois embeds de canal. */
+  function ensureHomeEmbedShareButtons() {
+    var page = (document.body && document.body.dataset.page) || '';
+    if (page !== 'home') return;
+
+    document.querySelectorAll('.home-channel-embed').forEach(function (wrap) {
+      if (wrap.querySelector('[data-home-embed-share]')) return;
+
+      var facade = wrap.querySelector('.yt-facade[data-youtube-id]');
+      var iframe = wrap.querySelector('iframe[src*="youtube"]');
+      var id = '';
+      var title = 'YouTube';
+      if (facade) {
+        id = facade.getAttribute('data-youtube-id') || '';
+        title = facade.getAttribute('data-youtube-title') || title;
+      } else if (iframe) {
+        id = parseYoutubeIdFromSrc(iframe.getAttribute('src') || '');
+        title = iframe.getAttribute('title') || title;
+      }
+      if (!YT_ID_RE.test(id)) return;
+
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'home-embed-share';
+      btn.setAttribute('data-home-embed-share', '');
+      btn.setAttribute('data-youtube-id', id);
+      btn.setAttribute('data-share-title', title);
+      btn.setAttribute('aria-label', tShare('common.share', 'Compartilhar'));
+      btn.innerHTML =
+        '<span class="article-share-icon" aria-hidden="true">' + SHARE_ICON_FLAT_SVG + '</span>';
+      wrap.appendChild(btn);
+      bindHomeEmbedShareButton(btn);
+    });
+  }
+
   var YT_ID_RE = /^[a-zA-Z0-9_-]{11}$/;
 
   function youtubeThumbUrl(id) {
@@ -565,7 +652,7 @@
     try {
       src += '&origin=' + encodeURIComponent(window.location.origin);
     } catch (e) { /* ignore */ }
-    if (autoplay) src += '&autoplay=1&mute=1';
+    if (autoplay) src += '&autoplay=1';
     return src;
   }
 
@@ -714,6 +801,7 @@
     initSearch();
     initPostShare();
     enhanceYoutubeFacades(document);
+    ensureHomeEmbedShareButtons();
     injectJsonLd();
   }
 
@@ -721,6 +809,7 @@
     initTheme();
     initSearch();
     enhanceYoutubeFacades(document);
+    ensureHomeEmbedShareButtons();
   };
 
   window.budganjaSetSearchOpen = function (open) {
