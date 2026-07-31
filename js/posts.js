@@ -106,7 +106,7 @@ function resolveInspecaoTipo(post) {
   if (
     series === 'legado-pessoas' ||
     series.indexOf('legado') === 0 ||
-    /inspecao-padre-|inspecao-pessoa-/i.test(slug)
+    /inspecao-padre-|inspecao-elisaldo-|inspecao-pessoa-/i.test(slug)
   ) {
     return 'pessoa';
   }
@@ -673,7 +673,15 @@ document.addEventListener('DOMContentLoaded', function () {
       .then(function (posts) {
         cachedPosts = posts || [];
         renderInspecoesHub(cachedPosts);
-        bindLocaleRerender(renderInspecoesHub);
+        if (typeof window.renderInspecoesSugestoes === 'function') {
+          window.renderInspecoesSugestoes(cachedPosts);
+        }
+        bindLocaleRerender(function (all) {
+          renderInspecoesHub(all);
+          if (typeof window.renderInspecoesSugestoes === 'function') {
+            window.renderInspecoesSugestoes(all);
+          }
+        });
       })
       .catch(function () {
         document.querySelectorAll('[data-inspecao-grid]').forEach(function (grid) {
@@ -684,6 +692,9 @@ document.addEventListener('DOMContentLoaded', function () {
             : 'Nenhuma publicação disponível.';
           grid.innerHTML = '<p class="empty-message">' + emptyMsg + '</p>';
         });
+        if (typeof window.renderInspecoesSugestoes === 'function') {
+          window.renderInspecoesSugestoes([]);
+        }
       });
     return;
   }

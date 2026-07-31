@@ -1,0 +1,184 @@
+{
+  "updatedAt": "2026-07-31T12:00:00.000Z",
+  "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes.",
+  "items": [
+    {
+      "id": "padre-ticao",
+      "title": "Padre Ticão — Antônio Luiz Marchioni",
+      "titleEn": "Father Ticão — Antônio Luiz Marchioni",
+      "titleEs": "Padre Ticão — Antônio Luiz Marchioni",
+      "tipo": "pessoa",
+      "priority": 1,
+      "status": "feita",
+      "why": "Origem pastoral/comunitária do MovReCam e do curso UNIFESP na periferia.",
+      "whyEn": "Pastoral/community origin of MovReCam and the UNIFESP course on the periphery.",
+      "whyEs": "Origen pastoral/comunitario del MovReCam y del curso UNIFESP en la periferia.",
+      "suggestedSlug": "inspecao-padre-ticao",
+      "doneHref": "/posts/post-inspecao-padre-ticao.html",
+      "seriesHint": "legado-pessoas",
+      "sources": [
+        "https://portal.unifesp.br/destaques/curso-sobre-cannabis-medicinal-da-unifesp-e-movrecam-ganha-premio-internacional"
+      ]
+    },
+    {
+      "id": "elisaldo-carlini",
+      "title": "Prof. Elisaldo Carlini",
+      "titleEn": "Prof. Elisaldo Carlini",
+      "titleEs": "Prof. Elisaldo Carlini",
+      "tipo": "pessoa",
+      "priority": 1,
+      "status": "feita",
+      "why": "Raiz científica da cannabis medicinal no Brasil; CEBRID; dedicatória do CANABinALL.",
+      "whyEn": "Scientific root of medicinal cannabis in Brazil; CEBRID; CANABinALL dedication.",
+      "whyEs": "Raíz científica del cannabis medicinal en Brasil; CEBRID; dedicación del CANABinALL.",
+      "suggestedSlug": "inspecao-elisaldo-carlini",
+      "doneHref": "/posts/post-inspecao-elisaldo-carlini.html",
+      "seriesHint": "legado-pessoas",
+      "sources": [
+        "https://cienciaecientistas.unifesp.br/cientistas-unifesp/elisaldo-luiz-de-araujo-carlini"
+      ]
+    },
+    {
+      "id": "solange-nappo",
+      "title": "Profa. Solange Nappo — CEBRID",
+      "titleEn": "Prof. Solange Nappo — CEBRID",
+      "titleEs": "Profa. Solange Nappo — CEBRID",
+      "tipo": "pessoa",
+      "priority": 1,
+      "status": "a-fazer",
+      "why": "Continuidade do CEBRID após Carlini; coordenação do curso UNIFESP; elo directo com a linha científica do laboratório.",
+      "whyEn": "CEBRID continuity after Carlini; UNIFESP course coordination; direct link to the lab’s scientific line.",
+      "whyEs": "Continuidad del CEBRID tras Carlini; coordinación del curso UNIFESP; vínculo directo con la línea científica del laboratorio.",
+      "suggestedSlug": "inspecao-solange-nappo",
+      "seriesHint": "legado-pessoas",
+      "sources": [
+        "https://www.cebrid.com.br/",
+        "https://portal.unifesp.br/destaques/curso-sobre-cannabis-medicinal-da-unifesp-e-movrecam-ganha-premio-internacional"
+      ],
+      "notes": "Cruzar com inspeções Carlini, curso UNIFESP e CANABinALL."
+    },
+    {
+      "id": "eliana-rodrigues",
+      "title": "Profa. Dra. Eliana Rodrigues",
+      "titleEn": "Prof. Dr. Eliana Rodrigues",
+      "titleEs": "Profa. Dra. Eliana Rodrigues",
+      "tipo": "pessoa",
+      "priority": 1,
+      "status": "a-fazer",
+      "why": "Coordenação RTC do curso UNIFESP, curadoria do CANABinALL e CEE — figura central do ecossistema já inspecionado.",
+      "whyEn": "UNIFESP course RTC coordination, CANABinALL curation and CEE — central figure of the already inspected ecosystem.",
+      "whyEs": "Coordinación RTC del curso UNIFESP, curaduría del CANABinALL y CEE — figura central del ecosistema ya inspeccionado.",
+      "suggestedSlug": "inspecao-eliana-rodrigues",
+      "seriesHint": "legado-pessoas",
+      "sources": [
+        "https://site.unifesp.br/cee/coordenacao",
+        "https://www.youtube.com/@canabinall"
+      ],
+      "notes": "Não duplicar o canal CANABinALL: focar biografia, CEE e papel formativo."
+    },
+    {
+      "id": "sidarta-ribeiro",
+      "title": "Dr. Sidarta Ribeiro — Revolução Canabinóide",
+      "titleEn": "Dr. Sidarta Ribeiro — Cannabinoid Revolution",
+      "titleEs": "Dr. Sidarta Ribeiro — Revolución cannabinóide",
+      "tipo": "pessoa",
+      "priority": 2,
+      "status": "a-fazer",
+      "why": "Já aparece no acervo MovReCam (aulas «Revolução Canabinóide»); ponte entre neurociência pública e o curso.",
+      "whyEn": "Already in the MovReCam archive (“Cannabinoid Revolution” lectures); bridge between public neuroscience and the course.",
+      "whyEs": "Ya aparece en el acervo MovReCam (clases «Revolución cannabinóide»); puente entre neurociencia pública y el curso.",
+      "suggestedSlug": "inspecao-sidarta-ribeiro",
+      "seriesHint": "legado-pessoas",
+      "sources": [
+        "https://www.youtube.com/@MovReCam"
+      ],
+      "notes": "Usar embeds das aulas MovReCam catalogadas no hub de vídeos."
+    },
+    {
+      "id": "lair-ribeiro",
+      "title": "Dr. Lair Ribeiro — divulgação sobre cannabinoides",
+      "titleEn": "Dr. Lair Ribeiro — cannabinoid outreach",
+      "titleEs": "Dr. Lair Ribeiro — divulgación sobre cannabinoides",
+      "tipo": "divulgacao",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Textos públicos sobre cannabinoides (dor, Alzheimer). Complementar ao ecossistema — não é origem UNIFESP/MovReCam.",
+      "whyEn": "Public texts on cannabinoids (pain, Alzheimer’s). Complementary to the ecosystem — not UNIFESP/MovReCam origin.",
+      "whyEs": "Textos públicos sobre cannabinoides (dolor, Alzheimer). Complementario al ecosistema — no es origen UNIFESP/MovReCam.",
+      "suggestedSlug": "inspecao-divulgacao-lair-ribeiro",
+      "seriesHint": "divulgacao-saude",
+      "sources": [
+        "https://lairribeiro.com.br/en/the-use-of-cannabinoids-as-an-adjuvant-in-the-treatment-of-chronic-pain/",
+        "https://lairribeiro.com.br/en/the-use-of-cannabinoids-as-an-adjuvant-in-the-treatment-of-alzheimers-disease/"
+      ],
+      "notes": "Série própria (divulgação). Declarar independência e não equiparar a Ticão/Carlini."
+    },
+    {
+      "id": "gabrielle-dainezi",
+      "title": "Gabrielle Dainezi — coordenação do curso UNIFESP",
+      "titleEn": "Gabrielle Dainezi — UNIFESP course coordination",
+      "titleEs": "Gabrielle Dainezi — coordinación del curso UNIFESP",
+      "tipo": "pessoa",
+      "priority": 2,
+      "status": "ideia",
+      "why": "Citada pela UNIFESP na coordenação do curso premiado; continua o fio Ticão–Carlini na extensão.",
+      "whyEn": "Cited by UNIFESP in the award-winning course coordination; continues the Ticão–Carlini extension thread.",
+      "whyEs": "Citada por la UNIFESP en la coordinación del curso premiado; continúa el hilo Ticão–Carlini en la extensión.",
+      "suggestedSlug": "inspecao-gabrielle-dainezi",
+      "seriesHint": "legado-pessoas",
+      "sources": [
+        "https://portal.unifesp.br/destaques/curso-sobre-cannabis-medicinal-da-unifesp-e-movrecam-ganha-premio-internacional"
+      ]
+    },
+    {
+      "id": "cebrid-hub",
+      "title": "CEBRID — centro e cursos de medicina canabinoide",
+      "titleEn": "CEBRID — center and cannabinoid medicine courses",
+      "titleEs": "CEBRID — centro y cursos de medicina cannabinoide",
+      "tipo": "curso",
+      "priority": 2,
+      "status": "a-fazer",
+      "why": "Instituição fundada por Carlini; oferta formativa própria (ex. Medicina Canabinoide) complementar ao SIEX.",
+      "whyEn": "Institution founded by Carlini; its own training offer (e.g. Cannabinoid Medicine) complementary to SIEX.",
+      "whyEs": "Institución fundada por Carlini; oferta formativa propia (p. ej. Medicina cannabinoide) complementaria al SIEX.",
+      "suggestedSlug": "inspecao-cebrid",
+      "seriesHint": "formacao-academica",
+      "sources": [
+        "https://www.cebrid.com.br/",
+        "https://www.cebrid.com.br/curso-medicina-canabinoide/"
+      ]
+    },
+    {
+      "id": "observatorio-pharmacon",
+      "title": "Observatório PharMacon",
+      "titleEn": "PharMacon Observatory",
+      "titleEs": "Observatorio PharMacon",
+      "tipo": "canal",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Parceiro citado no ecossistema CANABinALL/MovReCam; mapear acervo e complementaridade.",
+      "whyEn": "Partner cited in the CANABinALL/MovReCam ecosystem; map the archive and complementarity.",
+      "whyEs": "Socio citado en el ecosistema CANABinALL/MovReCam; mapear acervo y complementariedad.",
+      "suggestedSlug": "inspecao-canal-pharmacon",
+      "seriesHint": "canal-pharmacon",
+      "sources": [],
+      "notes": "Confirmar handle YouTube / site oficial antes de inventariar."
+    },
+    {
+      "id": "artigo-seguinte",
+      "title": "Próximo artigo peer-reviewed (fila científica)",
+      "titleEn": "Next peer-reviewed article (science queue)",
+      "titleEs": "Próximo artículo peer-reviewed (cola científica)",
+      "tipo": "artigo",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Manter ritmo de auditorias JAMA/Lancet-style após Albaugh — escolher DOI open access com utilidade educativa.",
+      "whyEn": "Keep the JAMA/Lancet-style audit pace after Albaugh — pick an open-access DOI with educational value.",
+      "whyEs": "Mantener el ritmo de auditorías estilo JAMA/Lancet tras Albaugh — elegir DOI open access con utilidad educativa.",
+      "suggestedSlug": "inspecao-artigo-",
+      "seriesHint": "artigos-cientificos",
+      "sources": [],
+      "notes": "Preencher DOI e título quando escolheres o paper."
+    }
+  ]
+}

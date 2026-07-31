@@ -48,6 +48,7 @@ const urlsToCache = [
     '/content/guia-cultivo.json',
     '/content/youtube-feed.json',
     '/content/videos-hub.json',
+    '/content/inspecoes-sugestoes.json',
     '/content/sorteio.json',
     '/content/loja.json',
     '/js/loja.js',
@@ -153,7 +154,8 @@ self.addEventListener('fetch', (event) => {
         '/search-index.json',
         '/content/guia-cultivo.json',
         '/content/youtube-feed.json',
-        '/content/videos-hub.json'
+        '/content/videos-hub.json',
+        '/content/inspecoes-sugestoes.json'
     ];
 
     if (offlineFirst.some((p) => path === p || path.endsWith(p))) {

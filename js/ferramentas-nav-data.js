@@ -147,12 +147,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Auditoria editorial do estudo longitudinal IMAGEN (Albaugh et al., 2021): 799 adolescentes naïve, 1598 RM, afinamento cortical pré-frontal dose-dependente e sobreposição com densidade de receptores CB1."
             },
             {
+              "label": "Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal",
+              "tileLabel": "Inspeção: Curso UNIFESP — Canna…",
+              "href": "/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-curso-unifesp-cannabis-medicinal",
+              "description": "Auditoria do XIV Curso de extensão da UNIFESP em parceria com o MovReCam — 10 mil vagas gratuitas, 57 h EaD via YouTube, certificado com 75% de presença e grade clínica, legislativa e de cultivo."
+            },
+            {
               "label": "Inspeção: Sistema de Ventilação da Tenda",
               "tileLabel": "Inspeção: Sistema de Ventilação…",
               "href": "/posts/post-inspecao-ventilacao-tenda.html",
               "icon": "🔍",
               "slug": "post-inspecao-ventilacao-tenda",
               "description": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório."
+            },
+            {
+              "label": "Inspeção: Prof. Elisaldo Carlini — pioneiro da cannabis medicinal",
+              "tileLabel": "Inspeção: Prof. Elisaldo Carlin…",
+              "href": "/posts/post-inspecao-elisaldo-carlini.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-elisaldo-carlini",
+              "description": "Homenagem documental ao Prof. Emérito Elisaldo Luiz de Araújo Carlini (1930–2020): médico e psicofarmacologista da UNIFESP, fundador do CEBRID — mérito máximo na ciência e na democratização do conhecimento sobre cannabis medicinal no Brasil."
             },
             {
               "label": "Inspeção: Equipamentos Mars Hydro Brasil",
@@ -177,14 +193,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-canal-movrecam",
               "description": "Auditoria do canal MovReCam — 285 vídeos catalogados, com embeds das aulas da XIV edição UNIFESP para revisão in-page."
-            },
-            {
-              "label": "Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal",
-              "tileLabel": "Inspeção: Curso UNIFESP — Canna…",
-              "href": "/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-curso-unifesp-cannabis-medicinal",
-              "description": "Auditoria do XIV Curso de extensão da UNIFESP em parceria com o MovReCam — 10 mil vagas gratuitas, 57 h EaD via YouTube, certificado com 75% de presença e grade clínica, legislativa e de cultivo."
             }
           ]
         },

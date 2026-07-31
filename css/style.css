@@ -11684,6 +11684,171 @@ body[data-page="comunidade"] {
     max-width: 40rem;
 }
 
+/* Fila de sugestões de inspeção */
+.inspecoes-sug-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 16px;
+}
+
+.inspecoes-sug-filter {
+    appearance: none;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: var(--radius-md, 10px);
+    font: inherit;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-text-soft);
+    background: transparent;
+    border: 1px solid rgba(166, 134, 40, 0.28);
+    transition: background var(--transition-fast, 0.15s ease), border-color var(--transition-fast, 0.15s ease), color var(--transition-fast, 0.15s ease);
+}
+
+.inspecoes-sug-filter:hover,
+.inspecoes-sug-filter:focus-visible {
+    color: var(--color-accent-gold, #c9a227);
+    border-color: rgba(166, 134, 40, 0.5);
+    outline: none;
+}
+
+.inspecoes-sug-filter.is-active {
+    color: #1a1a12;
+    background: rgba(166, 134, 40, 0.85);
+    border-color: rgba(166, 134, 40, 0.95);
+}
+
+.inspecoes-sug-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.inspecoes-sug-item {
+    padding: 14px 16px;
+    border: 1px solid rgba(39, 174, 96, 0.18);
+    border-left: 3px solid rgba(166, 134, 40, 0.65);
+    background: rgba(0, 0, 0, 0.12);
+}
+
+.inspecoes-sug-item[data-status="feita"] {
+    border-left-color: rgba(39, 174, 96, 0.7);
+    opacity: 0.92;
+}
+
+.inspecoes-sug-item[data-status="ideia"] {
+    border-left-color: rgba(148, 163, 184, 0.55);
+}
+
+.inspecoes-sug-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 8px;
+    margin-bottom: 8px;
+}
+
+.inspecoes-sug-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.inspecoes-sug-badge--status {
+    color: #1a1a12;
+    background: rgba(166, 134, 40, 0.75);
+}
+
+.inspecoes-sug-item[data-status="feita"] .inspecoes-sug-badge--status {
+    background: rgba(39, 174, 96, 0.75);
+}
+
+.inspecoes-sug-item[data-status="ideia"] .inspecoes-sug-badge--status {
+    color: var(--color-text-soft);
+    background: rgba(148, 163, 184, 0.22);
+    border-color: rgba(148, 163, 184, 0.35);
+}
+
+.inspecoes-sug-badge--tipo {
+    color: var(--color-accent-light, #6fcf97);
+    background: rgba(39, 174, 96, 0.1);
+    border-color: rgba(39, 174, 96, 0.28);
+}
+
+.inspecoes-sug-priority {
+    margin-left: auto;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+}
+
+.inspecoes-sug-title {
+    margin: 0 0 6px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-text);
+}
+
+.inspecoes-sug-why,
+.inspecoes-sug-notes,
+.inspecoes-sug-sources {
+    margin: 0 0 6px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--color-text-muted);
+    max-width: 46rem;
+}
+
+.inspecoes-sug-notes {
+    font-style: italic;
+    opacity: 0.92;
+}
+
+.inspecoes-sug-source {
+    color: var(--color-accent-light, #6fcf97);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.inspecoes-sug-source:hover,
+.inspecoes-sug-source:focus-visible {
+    color: var(--color-accent-gold, #c9a227);
+}
+
+.inspecoes-sug-actions {
+    margin-top: 10px;
+}
+
+.inspecoes-sug-cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1a1a12;
+    background: rgba(39, 174, 96, 0.85);
+    border: 1px solid rgba(39, 174, 96, 0.95);
+    border-radius: var(--radius-md, 10px);
+}
+
+.inspecoes-sug-cta:hover,
+.inspecoes-sug-cta:focus-visible {
+    background: rgba(39, 174, 96, 1);
+    outline: none;
+}
+
 /* Hub de inspeções: cards em lista horizontal (só nesta página) */
 .inspecoes-hub .container-cards {
     grid-template-columns: 1fr;

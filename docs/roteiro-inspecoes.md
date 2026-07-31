@@ -16,6 +16,16 @@ Transformar um canal, tema técnico ou vitrine comercial em um relatório editor
 | **Artigos** | `artigos-cientificos` | `inspecao-artigo-<sobrenome-tema>` |
 | **Lojas** | `loja-cultivo` | `inspecao-loja-<nome>` |
 | **Insumos** | `insumos-cultivo` | `inspecao-insumo-<marca>` |
+| **Legado** | `legado-pessoas` | `inspecao-<pessoa>` |
+| **Divulgação** | `divulgacao-saude` | `inspecao-divulgacao-<nome>` |
+
+## Fila de sugestões
+
+A secção **Sugestões** do hub lê `content/inspecoes-sugestoes.json` (público).
+
+Campos úteis por item: `id`, `title` (+ `titleEn`/`titleEs`), `tipo`, `priority` (1–5), `status` (`ideia` | `a-fazer` | `feita`), `why`, `sources`, `suggestedSlug`, `doneHref`, `seriesHint`, `notes`.
+
+Quando o post com `suggestedSlug` (ou `doneHref`) estiver publicado, o hub marca a sugestão como **feita** automaticamente — não misturar backlog com cards publicados.
 
 ## Fontes
 

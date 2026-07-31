@@ -186,7 +186,7 @@ async function main() {
     }
   }
 
-  const staticAssets = ['css/style.css', 'js/layout.js', 'js/ferramentas-nav-data.js', 'js/site-features.js', 'js/home.js', 'js/perfil.js', 'js/cultivo.js', 'js/guia-cultivo.js', 'js/videos.js', 'js/loja.js', 'js/loja-data.js', 'js/loja-order-ui.js', 'js/loja-order-callout.js', 'js/equip-loja-materials.js', 'js/loja-encomenda.js', 'js/loja-admin.js', 'content/guia-cultivo.json', 'content/youtube-feed.json', 'content/videos-hub.json', 'search-index.json', 'sw.js', 'posts-public.json'];
+  const staticAssets = ['css/style.css', 'js/layout.js', 'js/ferramentas-nav-data.js', 'js/site-features.js', 'js/home.js', 'js/perfil.js', 'js/cultivo.js', 'js/guia-cultivo.js', 'js/videos.js', 'js/loja.js', 'js/loja-data.js', 'js/loja-order-ui.js', 'js/loja-order-callout.js', 'js/equip-loja-materials.js', 'js/loja-encomenda.js', 'js/loja-admin.js', 'content/guia-cultivo.json', 'content/youtube-feed.json', 'content/videos-hub.json', 'content/inspecoes-sugestoes.json', 'js/inspecoes-sugestoes.js', 'search-index.json', 'sw.js', 'posts-public.json'];
   for (const asset of staticAssets) {
     try {
       const res = await fetchUrl('/' + asset);
