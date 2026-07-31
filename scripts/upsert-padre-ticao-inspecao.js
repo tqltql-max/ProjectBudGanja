@@ -38,7 +38,9 @@ i18n[post.slug] = {
   titleEn: post.titleEn,
   titleEs: post.titleEs,
   excerptEn: post.excerptEn,
-  excerptEs: post.excerptEs
+  excerptEs: post.excerptEs,
+  contentEn: post.contentEn,
+  contentEs: post.contentEs
 };
 fs.writeFileSync(I18N_FILE, JSON.stringify(i18n, null, 2) + '\n', 'utf8');
 
@@ -50,5 +52,8 @@ console.log(
   embeds,
   '| content_raw',
   (post.content_raw || '').length,
-  'chars'
+  'chars | contentEn',
+  (post.contentEn || '').length,
+  '| contentEs',
+  (post.contentEs || '').length
 );
