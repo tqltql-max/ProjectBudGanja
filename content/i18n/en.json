@@ -469,6 +469,7 @@
       "title": "Videos",
       "subtitle": "Watch here on the site — the lab channel and lectures from inspected partner channels.",
       "loading": "Loading videos…",
+      "loadMore": "Load more",
       "empty": "No videos available.",
       "emptyFilter": "No videos in this filter.",
       "emptySearch": "No videos match those words.",

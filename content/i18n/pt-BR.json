@@ -469,6 +469,7 @@
       "title": "Vídeos",
       "subtitle": "Assista aqui no site — canal do laboratório e aulas dos canais inspecionados.",
       "loading": "Carregando vídeos...",
+      "loadMore": "Carregar mais",
       "empty": "Nenhum vídeo disponível.",
       "emptyFilter": "Nenhum vídeo neste filtro.",
       "emptySearch": "Nenhum vídeo com essas palavras.",

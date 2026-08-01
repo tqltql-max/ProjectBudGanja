@@ -95,6 +95,9 @@
   var gridEl = null;
   var filtersEl = null;
   var searchEl = null;
+  var loadMoreBtn = null;
+  var PAGE_SIZE = 12;
+  var visibleCount = 0;
   function resolveChannel(raw) {
     var key = String(raw || '')
       .trim()
@@ -902,10 +905,11 @@
     );
   }
 
-  function renderChannelSection(channelId, videos) {
+  function renderChannelSection(channelId, videos, totalCount) {
     if (!videos.length) return '';
     var meta = findChannelMeta(channelId);
     var label = channelLabel(channelId);
+    var count = totalCount != null ? totalCount : videos.length;
     var inspect =
       meta && meta.inspectionUrl
         ? ' <a class="videos-channel-inspect" href="' +
@@ -922,7 +926,7 @@
       '<h2 class="videos-list-heading">' +
       escapeHtml(label) +
       ' <span class="videos-list-count">(' +
-      videos.length +
+      count +
       ')</span></h2>' +
       inspect +
       '</header>' +
@@ -933,9 +937,86 @@
     );
   }
 
+  function perChannelTake(count) {
+    var pages = Math.max(1, Math.ceil(count / PAGE_SIZE));
+    var per = Math.max(1, Math.ceil(PAGE_SIZE / CHANNEL_ORDER.length));
+    return pages * per;
+  }
+
+  function channelBuckets(videos) {
+    var buckets = {};
+    var i;
+    for (i = 0; i < CHANNEL_ORDER.length; i++) buckets[CHANNEL_ORDER[i]] = [];
+    var other = [];
+    for (i = 0; i < videos.length; i++) {
+      var v = videos[i];
+      var ch = v && v.channel;
+      if (ch && buckets[ch]) buckets[ch].push(v);
+      else other.push(v);
+    }
+    return { buckets: buckets, other: other };
+  }
+
+  function hasMoreVideos(videos) {
+    if (!videos.length) return false;
+    if (activeChannel !== 'all') return visibleCount < videos.length;
+    var take = perChannelTake(visibleCount);
+    var parts = channelBuckets(videos);
+    var i;
+    for (i = 0; i < CHANNEL_ORDER.length; i++) {
+      if (parts.buckets[CHANNEL_ORDER[i]].length > take) return true;
+    }
+    return parts.other.length > take;
+  }
+
+  function syncLoadMoreButton(videos) {
+    if (!loadMoreBtn) return;
+    var list = videos || lastFiltered || [];
+    var hasMore = hasMoreVideos(list);
+    loadMoreBtn.hidden = !hasMore;
+    loadMoreBtn.disabled = false;
+    loadMoreBtn.textContent = i18n('pages.videos.loadMore', 'Carregar mais');
+  }
+
+  function ensureVisibleIncludesId(videos, id) {
+    if (!id || !videos.length) return;
+    var idx = -1;
+    var i;
+    for (i = 0; i < videos.length; i++) {
+      if (videos[i] && videos[i].id === id) {
+        idx = i;
+        break;
+      }
+    }
+    if (idx < 0) return;
+
+    if (activeChannel !== 'all') {
+      var need = Math.ceil((idx + 1) / PAGE_SIZE) * PAGE_SIZE;
+      visibleCount = Math.min(videos.length, Math.max(visibleCount, need));
+      return;
+    }
+
+    var video = videos[idx];
+    var ch = video.channel || '';
+    var parts = channelBuckets(videos);
+    var bucket = parts.buckets[ch] || parts.other;
+    var pos = -1;
+    for (i = 0; i < bucket.length; i++) {
+      if (bucket[i].id === id) {
+        pos = i;
+        break;
+      }
+    }
+    if (pos < 0) return;
+    var per = Math.max(1, Math.ceil(PAGE_SIZE / CHANNEL_ORDER.length));
+    var pagesNeeded = Math.ceil((pos + 1) / per);
+    visibleCount = Math.max(visibleCount, pagesNeeded * PAGE_SIZE);
+  }
+
   function renderGrid(videos) {
     if (!gridEl) return;
     if (!videos.length) {
+      visibleCount = 0;
       var emptyMsg = activeQuery
         ? i18n('pages.videos.emptySearch', 'Nenhum vídeo com essas palavras.')
         : i18n('pages.videos.emptyFilter', 'Nenhum vídeo neste filtro.');
@@ -945,26 +1026,36 @@
         escapeHtml(emptyMsg) +
         '</p>' +
         '</div>';
+      syncLoadMoreButton([]);
       return;
     }
+
+    if (visibleCount < 1) visibleCount = Math.min(PAGE_SIZE, videos.length);
 
     if (activeChannel === 'all') {
+      var take = perChannelTake(visibleCount);
+      var parts = channelBuckets(videos);
       var html = '';
-      for (var i = 0; i < CHANNEL_ORDER.length; i++) {
-        var id = CHANNEL_ORDER[i];
-        var chunk = videos.filter(function (v) {
-          return v.channel === id;
-        });
-        html += renderChannelSection(id, chunk);
+      var c;
+      for (c = 0; c < CHANNEL_ORDER.length; c++) {
+        var id = CHANNEL_ORDER[c];
+        var totalChunk = parts.buckets[id];
+        html += renderChannelSection(id, totalChunk.slice(0, take), totalChunk.length);
       }
-      var other = videos.filter(function (v) {
-        return CHANNEL_ORDER.indexOf(v.channel) < 0;
-      });
-      if (other.length) html += renderChannelSection('other', other);
+      if (parts.other.length) {
+        html += renderChannelSection(
+          'other',
+          parts.other.slice(0, take),
+          parts.other.length
+        );
+      }
       gridEl.innerHTML = html;
+      syncLoadMoreButton(videos);
       return;
     }
 
+    visibleCount = Math.min(visibleCount, videos.length);
+    var slice = videos.slice(0, visibleCount);
     var heading = channelLabel(activeChannel);
     if (activeSeries) heading += ' · ' + seriesLabel(activeSeries);
     if (activeTopic) heading += ' · ' + topicLabel(activeTopic);
@@ -976,8 +1067,22 @@
       videos.length +
       ')</span></p>' +
       '<div class="videos-grid">' +
-      videos.map(renderVideoCard).join('') +
+      slice.map(renderVideoCard).join('') +
       '</div>';
+    syncLoadMoreButton(videos);
+  }
+
+  function loadMoreVideos() {
+    if (!lastFiltered.length) return;
+    if (!hasMoreVideos(lastFiltered)) {
+      syncLoadMoreButton(lastFiltered);
+      return;
+    }
+    if (loadMoreBtn) loadMoreBtn.disabled = true;
+    visibleCount += PAGE_SIZE;
+    renderGrid(lastFiltered);
+    bindPlayingCardActions();
+    syncActiveCards();
   }
 
   function injectVideoJsonLd(videos) {
@@ -1044,6 +1149,7 @@
 
     renderFilters();
     lastFiltered = filtered;
+    visibleCount = Math.min(PAGE_SIZE, filtered.length);
 
     if (!filtered.length) {
       selectedId = '';
@@ -1069,6 +1175,7 @@
       selectedId = '';
     }
 
+    ensureVisibleIncludesId(filtered, playingId || selectedId || requested || '');
     renderGrid(filtered);
     injectVideoJsonLd(filtered);
     bindPlayingCardActions();
@@ -1165,6 +1272,8 @@
     if (!(hub && hub.videos && hub.videos.length)) {
       playingId = '';
       selectedId = '';
+      lastFiltered = [];
+      visibleCount = 0;
       if (filtersEl) filtersEl.innerHTML = '';
       grid.innerHTML =
         '<div class="empty-state">' +
@@ -1172,6 +1281,7 @@
         escapeHtml(i18n('pages.videos.empty', 'Nenhum vídeo disponível.')) +
         '</p>' +
         '</div>';
+      syncLoadMoreButton([]);
       return;
     }
 
@@ -1188,9 +1298,16 @@
     var grid = document.getElementById('videos-list');
     filtersEl = document.getElementById('videos-filters');
     searchEl = document.getElementById('videos-search');
+    loadMoreBtn = document.getElementById('videos-load-more');
     if (!grid) return;
 
     gridEl = grid;
+
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', function () {
+        loadMoreVideos();
+      });
+    }
 
     grid.addEventListener('click', function (e) {
       if (e.target.closest('.video-card-actions, .video-embed, a, [data-stop-video]')) return;
