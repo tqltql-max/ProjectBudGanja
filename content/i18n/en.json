@@ -342,12 +342,15 @@
       "pillarPlantasTitle": "Herbal plants",
       "pillarPlantasText": "Curated sheets of species used in Brazilian folk medicine — traditional uses, plant parts and editorial cautions.",
       "pillarPlantasCta": "Browse plants",
-      "vidaEyebrow": "Family story",
+      "vidaEyebrow": "Launch",
       "vidaTitle": "Vida",
       "vidaSubtitle": "Every seed deserves kindness — science, nature and friendship in the BudGanja Lab.",
-      "vidaCardEyebrow": "For family reading",
+      "vidaVideoEyebrow": "Launch soundtrack",
+      "vidaVideoTitle": "Three Little Birds",
+      "vidaVideoText": "The lab birds’ song — tap play and listen with sound.",
+      "vidaCardEyebrow": "Family story",
       "vidaCardTitle": "The Lab and the Little Seed",
-      "vidaCardText": "The Inspector, Dona Maria, Ladybug Joana and the Three Little Birds teach the right way to care for plants — with rhythm, care and lots of friendship.",
+      "vidaCardText": "The Inspector, Dona Maria, Ladybug Joana and the Three Little Birds teach the right way to care for plants.",
       "vidaCtaHub": "Open Vida",
       "vidaCtaStory": "Read the story",
       "cardGuiaTitle": "Basic Growing Guide",
@@ -652,7 +655,7 @@
     "community": {
       "eyebrow": "Community",
       "title": "Community",
-      "subtitle": "Diary photo feed, plant ID requests and community comments.",
+      "subtitle": "Open feed for everyone — identify plants and share your diary. Plant content only.",
       "docTitle": "Community | Inspetor BudGanja"
     },
     "giveaways": {

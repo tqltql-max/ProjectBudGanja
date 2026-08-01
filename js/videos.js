@@ -229,13 +229,29 @@
     return true;
   }
 
+  function youtubeCcLangPref() {
+    var lang = '';
+    try {
+      if (window.BudGanjaI18n && typeof window.BudGanjaI18n.getLocale === 'function') {
+        lang = String(window.BudGanjaI18n.getLocale() || '');
+      }
+    } catch (e) { /* ignore */ }
+    if (!lang && document.documentElement) lang = String(document.documentElement.lang || '');
+    lang = lang.toLowerCase();
+    if (lang.indexOf('en') === 0) return 'en';
+    if (lang.indexOf('es') === 0) return 'es';
+    return 'pt';
+  }
+
   function embedSrc(id, autoplay) {
+    var cc = youtubeCcLangPref();
     var src =
       'https://www.youtube-nocookie.com/embed/' +
       encodeURIComponent(id) +
-      '?rel=0&modestbranding=1&playsinline=1' +
-      // Preferir legendas em inglês quando existirem no YouTube
-      '&cc_load_policy=1&cc_lang_pref=en';
+      '?rel=0&modestbranding=1&playsinline=1&hl=' +
+      encodeURIComponent(cc) +
+      '&cc_load_policy=1&cc_lang_pref=' +
+      encodeURIComponent(cc);
     try {
       src += '&origin=' + encodeURIComponent(window.location.origin);
     } catch (e) { /* ignore */ }

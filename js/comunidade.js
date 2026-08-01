@@ -90,19 +90,23 @@ document.addEventListener('DOMContentLoaded', () => {
     plantStatus.classList.toggle('is-error', !!isError);
   }
 
+  function showGuestCompose() {
+    authUser = null;
+    if (plantGuest) plantGuest.hidden = false;
+    if (plantForm) plantForm.hidden = true;
+    if (plantLogin) {
+      plantLogin.href = '/entrar.html?returnTo=' + encodeURIComponent('/comunidade/#comunidade-plant-id');
+    }
+    if (ctaEl) {
+      ctaEl.href = '/entrar.html?returnTo=' + encodeURIComponent('/cultivo/');
+    }
+  }
+
   async function loadMe() {
     try {
       const res = await fetch('/api/user/me', { credentials: 'include' });
       if (!res.ok) {
-        authUser = null;
-        if (plantGuest) plantGuest.hidden = false;
-        if (plantForm) plantForm.hidden = true;
-        if (plantLogin) {
-          plantLogin.href = '/entrar.html?returnTo=' + encodeURIComponent('/comunidade/#comunidade-plant-id');
-        }
-        if (ctaEl) {
-          ctaEl.href = '/entrar.html?returnTo=' + encodeURIComponent('/cultivo/');
-        }
+        showGuestCompose();
         return;
       }
       authUser = await res.json();
@@ -110,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (plantForm) plantForm.hidden = false;
       if (ctaLoggedEl) ctaLoggedEl.href = '/cultivo/';
     } catch (e) {
-      authUser = null;
+      showGuestCompose();
     }
   }
 
@@ -514,5 +518,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  void loadMe().then(() => loadFeed(false));
+  // Feed público: carrega sem depender do login (só publicar/comentar pedem conta).
+  void loadFeed(false);
+  void loadMe();
 });

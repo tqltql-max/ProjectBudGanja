@@ -660,18 +660,16 @@
       document.addEventListener('touchstart', unlock, true);
     }
 
-    // Retomar após navegação (gesto de play já feito neste separador).
+    // Retomar só se o utilizador já tinha a rádio a tocar neste separador.
+    // Entrada nova no site: fica em pausa até carregar no botão.
     if (wantPlay) {
       startPlayback().catch(function () {
         updatePlayUi(false);
         bindUnlockOnGesture();
       });
-    } else if (freshSession) {
-      // Boas-vindas: Send Me On My Way ao abrir o site (browser pode exigir o 1.º clique).
-      startPlayback().catch(function () {
-        updatePlayUi(false);
-        bindUnlockOnGesture();
-      });
+    } else {
+      writeSession(STORAGE_PLAYING, '0');
+      updatePlayUi(false);
     }
   }
 

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Feed da comunidade Inspetor BudGanja — fotos e relatos de cultivo vegetal partilhados pelos cultivadores.">
+    <meta name="description" content="Feed público da comunidade Inspetor BudGanja — fotos e relatos de cultivo vegetal partilhados pelos cultivadores.">
     <meta property="og:title" content="Comunidade | Inspetor BudGanja">
-    <meta property="og:description" content="Veja fotos do diário de pesquisas da comunidade e participe com comentários.">
+    <meta property="og:description" content="Feed público: veja fotos do diário de pesquisas da comunidade e participe com comentários.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://inspetorbudganja.com.br/comunidade/">
     <meta property="og:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
@@ -15,7 +15,7 @@
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Comunidade | Inspetor BudGanja">
-    <meta name="twitter:description" content="Veja fotos do diário de pesquisas da comunidade e participe com comentários.">
+    <meta name="twitter:description" content="Feed público: veja fotos do diário de pesquisas da comunidade e participe com comentários.">
     <meta name="twitter:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
     <link rel="canonical" href="https://inspetorbudganja.com.br/comunidade/">
 
@@ -48,19 +48,36 @@
                     height="720"
                     decoding="async"
                 >
-                <p class="lab-eyebrow">Feed vivo</p>
+                <p class="lab-eyebrow">Feed público</p>
                 <h1 class="lab-title-gold">Comunidade</h1>
-                <p class="secao-subtitulo" data-i18n="pages.community.subtitle">Identifica plantas e partilha o diário — só conteúdo vegetal.</p>
+                <p class="secao-subtitulo" data-i18n="pages.community.subtitle">Feed aberto a todos — identifica plantas e partilha o diário. Só conteúdo vegetal.</p>
             </header>
 
-            <section id="comunidade-plant-id" class="comunidade-compose lab-glass lab-fade-up lab-fade-up-delay-1" aria-labelledby="comunidade-plant-id-title">
+            <div class="comunidade-feed-toolbar lab-fade-up lab-fade-up-delay-1">
+                <h2 class="comunidade-feed-title">Publicações</h2>
+                <div class="comunidade-filters" role="tablist" aria-label="Filtrar publicações">
+                    <button type="button" class="comunidade-filter is-active" id="comunidade-tab-all" data-kind="" role="tab" aria-selected="true" aria-controls="comunidade-feed" tabindex="0">Tudo</button>
+                    <button type="button" class="comunidade-filter" id="comunidade-tab-plant" data-kind="plant_id" role="tab" aria-selected="false" aria-controls="comunidade-feed" tabindex="-1">Identificação</button>
+                    <button type="button" class="comunidade-filter" id="comunidade-tab-diary" data-kind="diary" role="tab" aria-selected="false" aria-controls="comunidade-feed" tabindex="-1">Diário</button>
+                </div>
+            </div>
+
+            <div id="comunidade-feed" class="comunidade-feed" role="tabpanel" aria-labelledby="comunidade-tab-all" tabindex="0" aria-live="polite">
+                <p class="conta-status">A carregar o feed…</p>
+            </div>
+            <p class="comunidade-more-wrap">
+                <button type="button" id="comunidade-load-more" class="botao botao-outline" hidden>Carregar mais</button>
+            </p>
+
+            <section id="comunidade-plant-id" class="comunidade-compose lab-glass lab-fade-up lab-fade-up-delay-2" aria-labelledby="comunidade-plant-id-title">
                 <div class="comunidade-compose-head">
                     <p class="lab-eyebrow">Publicar</p>
                     <h2 id="comunidade-plant-id-title">Que planta é essa?</h2>
-                    <p class="field-hint">Uma foto clara da folha ou da planta inteira — a comunidade ajuda a identificar.</p>
+                    <p class="field-hint">Uma foto clara da folha ou da planta inteira — a comunidade ajuda a identificar. Conta só é necessária para publicar.</p>
                 </div>
 
-                <div id="comunidade-plant-id-guest" class="comunidade-compose-guest" hidden>
+                <div id="comunidade-plant-id-guest" class="comunidade-compose-guest">
+                    <p class="field-hint">O feed acima é público. Para publicar ou comentar, entre na conta.</p>
                     <a id="comunidade-plant-id-login" class="botao" href="/entrar.html?returnTo=%2Fcomunidade%2F%23comunidade-plant-id">Entrar para publicar</a>
                     <a id="comunidade-cta" class="botao botao-outline" href="/entrar.html?returnTo=%2Fcultivo%2F">Entrar e abrir diário</a>
                 </div>
@@ -115,22 +132,6 @@
                     </p>
                 </form>
             </section>
-
-            <div class="comunidade-feed-toolbar lab-fade-up lab-fade-up-delay-2">
-                <h2 class="comunidade-feed-title">Publicações</h2>
-                <div class="comunidade-filters" role="tablist" aria-label="Filtrar publicações">
-                    <button type="button" class="comunidade-filter is-active" id="comunidade-tab-all" data-kind="" role="tab" aria-selected="true" aria-controls="comunidade-feed" tabindex="0">Tudo</button>
-                    <button type="button" class="comunidade-filter" id="comunidade-tab-plant" data-kind="plant_id" role="tab" aria-selected="false" aria-controls="comunidade-feed" tabindex="-1">Identificação</button>
-                    <button type="button" class="comunidade-filter" id="comunidade-tab-diary" data-kind="diary" role="tab" aria-selected="false" aria-controls="comunidade-feed" tabindex="-1">Diário</button>
-                </div>
-            </div>
-
-            <div id="comunidade-feed" class="comunidade-feed" role="tabpanel" aria-labelledby="comunidade-tab-all" tabindex="0" aria-live="polite">
-                <p class="conta-status">A carregar o feed…</p>
-            </div>
-            <p class="comunidade-more-wrap">
-                <button type="button" id="comunidade-load-more" class="botao botao-outline" hidden>Carregar mais</button>
-            </p>
         </div>
     </main>
 

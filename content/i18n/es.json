@@ -414,12 +414,15 @@
       "pillarPlantasTitle": "Plantas fitoterapéuticas",
       "pillarPlantasText": "Fichas curadas de especies usadas en la medicina popular brasileña — usos tradicionales, partes usadas y cuidados editoriales.",
       "pillarPlantasCta": "Explorar plantas",
-      "vidaEyebrow": "Cuento familiar",
+      "vidaEyebrow": "Inauguración",
       "vidaTitle": "Vida",
       "vidaSubtitle": "Cada semilla merece cariño — ciencia, naturaleza y amistad en el Laboratorio BudGanja.",
-      "vidaCardEyebrow": "Para leer en familia",
+      "vidaVideoEyebrow": "Banda sonora de la inauguración",
+      "vidaVideoTitle": "Three Little Birds",
+      "vidaVideoText": "La canción de los pájaros del laboratorio — toca play y escucha con sonido.",
+      "vidaCardEyebrow": "Cuento familiar",
       "vidaCardTitle": "El Laboratorio y la Semillita",
-      "vidaCardText": "El Inspector, Doña María, la Mariquita Juana y los Three Little Birds enseñan el cuidado correcto de las plantas — con ritmo, cuidado y mucha amistad.",
+      "vidaCardText": "El Inspector, Doña María, la Mariquita Juana y los Three Little Birds enseñan el cuidado correcto de las plantas.",
       "vidaCtaHub": "Abrir Vida",
       "vidaCtaStory": "Leer la historia",
       "latestPlantas": "Plantas →",
@@ -652,7 +655,7 @@
     "community": {
       "eyebrow": "Comunidad",
       "title": "Comunidad",
-      "subtitle": "Feed de fotos del diario, identificación de plantas y comentarios.",
+      "subtitle": "Feed abierto a todos — identifica plantas y comparte el diario. Solo contenido vegetal.",
       "docTitle": "Comunidad | Inspetor BudGanja"
     },
     "giveaways": {
