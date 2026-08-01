@@ -481,11 +481,11 @@ body[data-page="home"] .home-card--cultivo {
 }
 
 body[data-page="home"] .home-card--comunidade {
-    --card-accent: #58d68d;
-    --card-accent-soft: rgba(39, 174, 96, 0.14);
-    --card-accent-strong: rgba(39, 174, 96, 0.32);
-    --card-accent-border: rgba(46, 204, 113, 0.42);
-    --card-label: #e8fff0;
+    --card-accent: #d4af37;
+    --card-accent-soft: rgba(212, 175, 55, 0.14);
+    --card-accent-strong: rgba(212, 175, 55, 0.32);
+    --card-accent-border: rgba(212, 175, 55, 0.45);
+    --card-label: #fef0b5;
 }
 
 body[data-page="home"] .home-latest {
