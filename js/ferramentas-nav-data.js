@@ -211,6 +211,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório."
             },
             {
+              "label": "Inspeção: Derivados do abacate — açúcar, aditivos e química industrial",
+              "tileLabel": "Inspeção: Derivados do abacate …",
+              "href": "/posts/post-inspecao-derivado-abacate.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-abacate",
+              "description": "Derivados de risco: do fruto (*Persea americana*) ao ultraprocessado — óleo, guacamole de prateleira e sobremesas; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
+            },
+            {
               "label": "Inspeção: Só os Loucos Sabem — Charlie Brown Jr. e a segunda faixa da rádio",
               "tileLabel": "Inspeção: Só os Loucos Sabem — …",
               "href": "/posts/post-inspecao-arte-so-os-loucos-sabem.html",
@@ -427,12 +435,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Gengibre (*Zingiber officinale): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
-              "label": "Inspeção: Planta — Cúrcuma",
-              "tileLabel": "Inspeção: Planta — Cúrcuma",
+              "label": "Inspeção: Planta — Cúrcuma (açafrão-da-terra) e benefícios à saúde",
+              "tileLabel": "Inspeção: Planta — Cúrcuma (aça…",
               "href": "/posts/post-inspecao-planta-curcuma.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-curcuma",
-              "description": "Relatório educacional de Cúrcuma (*Curcuma longa): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+              "description": "Açafrão-da-terra (*Curcuma longa*): ficha, usos tradicionais, benefícios à saúde em contexto educacional (curcumina, digestão, anti-inflamatório) e cuidados — sem protocolo clínico."
             },
             {
               "label": "Inspeção: Planta — Unha-de-gato",
@@ -555,12 +563,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Cannabis (medicinal) (*Cannabis sativa L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
-              "label": "Inspeção: Planta — Abacate",
-              "tileLabel": "Inspeção: Planta — Abacate",
+              "label": "Inspeção: Planta — Abacate (āhuacatl) · etimo nativo e química do fruto",
+              "tileLabel": "Inspeção: Planta — Abacate (āhu…",
               "href": "/posts/post-inspecao-planta-abacate.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-abacate",
-              "description": "Relatório educacional de Abacate (*Persea americana Mill.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+              "description": "Abacate (*Persea americana*): āhuacatl (náuatle), química da polpa (lípidos, persina, PPO) e elo com a ficha de derivados industriais açucarados/aditivados."
             }
           ]
         },

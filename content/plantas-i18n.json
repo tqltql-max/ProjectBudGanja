@@ -359,6 +359,36 @@
       "traditionalUsesEs": ["Educación sobre uso terapéutico (curso de UNIFESP)", "Referencia en fitoterapia y legislación brasileña"],
       "cautionsEn": "Medicinal use is subject to legislation and prescription. In adolescents, longitudinal neuroimaging studies (e.g. IMAGEN / Albaugh et al., JAMA Psychiatry 2021) associate cannabis use with changes in cortical neurodevelopment — see the BudGanja inspection of that article. Educational content — it does not encourage illegal cultivation or self-medication.",
       "cautionsEs": "El uso medicinal está sujeto a legislación y prescripción. En adolescentes, estudios longitudinales de neuroimagen (p. ej. IMAGEN / Albaugh et al., JAMA Psychiatry 2021) asocian el uso de cannabis con cambios en el neurodesarrollo cortical — ver la inspección BudGanja del artículo. Contenido educativo: no fomenta el cultivo ilegal ni la automedicación."
+    },
+    "abacate": {
+      "nomePopularEn": "Avocado",
+      "nomePopularEs": "Aguacate",
+      "summaryEn": "Mesoamerican fruit (*āhuacatl* in Nahuatl): pulp rich in monounsaturated fats; everyday food in Brazil — this sheet separates the whole plant from sugary, additive-laden industrial derivatives.",
+      "summaryEs": "Fruto mesoamericano (*āhuacatl* en náhuatl): pulpa rica en grasas monoinsaturadas; alimento corriente en Brasil — la ficha separa la planta entera de los derivados industriales azucarados y aditivados.",
+      "partsUsedEn": [
+        "Fruit (pulp)",
+        "Pulp oil (culinary / traditional cosmetic)",
+        "Leaves (traditional use, with caution — not for pets)"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa)",
+        "Aceite de la pulpa (culinario / cosmético tradicional)",
+        "Hojas (uso tradicional, con cautela — no alimentar animales)"
+      ],
+      "traditionalUsesEn": [
+        "Food and cooking (salads, fresh guacamole, toast)",
+        "Mesoamerican and Andean food ethnobotany (aguacate / palta)",
+        "Home pulp preparations (skin/hair — popular tradition)",
+        "Pressed oil in artisanal contexts"
+      ],
+      "traditionalUsesEs": [
+        "Alimento y cocina (ensaladas, guacamole fresco, tostadas)",
+        "Etnobotánica alimentaria mesoamericana y andina (aguacate / palta)",
+        "Preparaciones caseras con la pulpa (piel/cabello — tradición popular)",
+        "Aceite prensado en contextos artesanales"
+      ],
+      "cautionsEn": "Ripe pulp is common food. Leaves, peel and seed contain persin and may be toxic to animals (dogs, birds, etc.). Leaf extracts/teas: avoid self-medication. Industrial derivatives with sugar and additives have their own Risk derivatives sheet. Educational content — does not replace professional advice.",
+      "cautionsEs": "La pulpa madura es alimento común. Hojas, cáscara y hueso contienen persina y pueden ser tóxicos para animales (perros, aves, etc.). Extractos y té de hoja: evitar automedicación. Los derivados industriales con azúcar y aditivos tienen ficha propia en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
     }
   }
 }

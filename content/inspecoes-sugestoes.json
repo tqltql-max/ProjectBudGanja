@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T14:21:16.836Z",
+  "updatedAt": "2026-08-01T14:45:14.427Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -536,6 +536,28 @@
         "/posts/post-inspecao-filme-the-matrix.html"
       ],
       "notes": "Pessoas ≠ Legado; filme fica em Artes."
+    },
+    {
+      "id": "derivado-abacate",
+      "title": "Derivados do abacate — açúcar, aditivos e química industrial",
+      "titleEn": "Avocado derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados del aguacate — azúcar, aditivos y química industrial",
+      "tipo": "derivado",
+      "priority": 2,
+      "status": "feita",
+      "why": "Derivados de risco: abacate inteiro vs ultraprocessado com açúcar e aditivos; mapa químico + elo planta.",
+      "whyEn": "Risk derivatives: whole avocado vs ultra-processed sugar/additives matrix; chemical map + plant link.",
+      "whyEs": "Derivados de riesgo: aguacate entero vs ultraprocesado con azúcar y aditivos; mapa químico + vínculo planta.",
+      "suggestedSlug": "inspecao-derivado-abacate",
+      "doneHref": "/posts/post-inspecao-derivado-abacate.html",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Abacate",
+        "/posts/post-inspecao-planta-abacate.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
+      ],
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose."
     }
   ]
 }

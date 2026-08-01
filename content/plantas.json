@@ -703,27 +703,37 @@
       "nomePopular": "Abacate",
       "nomeCientifico": "Persea americana Mill.",
       "familia": "Lauraceae",
-      "summary": "Árvore frutífera de origem mesoamericana, amplamente cultivada no Brasil; polpa rica em lipídios, presente na culinária e em usos tradicionais de cuidado.",
+      "summary": "Fruto mesoamericano (*āhuacatl* em náuatle): polpa rica em gorduras monoinsaturadas; no Brasil alimento corrente — a ficha separa a planta inteira dos derivados industriais açucarados e aditivados.",
       "partsUsed": [
         "Fruto (polpa)",
-        "Folhas (uso tradicional, com cautela)",
-        "Óleo da polpa"
+        "Óleo da polpa (culinário / cosmético tradicional)",
+        "Folhas (uso tradicional, com cautela — não alimentar animais)"
       ],
       "traditionalUses": [
-        "Alimento e culinária",
-        "Preparações caseiras com a polpa (cuidado da pele/cabelo — tradição popular)",
-        "Referência em etnobotânica alimentar das Américas"
+        "Alimento e culinária (saladas, guacamole fresco, torradas)",
+        "Etnobotânica alimentar mesoamericana e andina (aguacate / palta)",
+        "Preparações caseiras com a polpa (pele/cabelo — tradição popular)",
+        "Óleo prensado em contextos artesanais"
       ],
-      "cautions": "Alimento comum; folhas e extratos não são inocuidade garantida — evitar automedicação. Caroço e folhas podem ser tóxicos para animais domésticos. Conteúdo educacional — não substitui orientação profissional.",
+      "cautions": "Polpa madura é alimento comum. Folhas, casca e caroço contêm persina e podem ser tóxicos para animais (cães, aves, etc.). Extratos e chá de folha: evitar automedicação. Derivados industriais com açúcar e aditivos têm ficha própria em Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
       "tags": [
         "alimento",
         "frutifera",
         "americas",
-        "culinaria"
+        "culinaria",
+        "lipidos",
+        "etimo"
       ],
       "relatedUnifesp": false,
       "cover": null,
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-abacate.html",
+          "label": "Inspeção: Derivados do abacate — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Avocado derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados del aguacate — azúcar, aditivos y química industrial"
+        }
+      ]
     }
   ]
 }
