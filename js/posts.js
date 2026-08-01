@@ -48,6 +48,7 @@ var SERIES_LABELS = {
   'palavras-origem': 'Palavras',
   'pessoas-historia': 'Pessoas',
   'divulgacao-saude': 'Divulgação',
+  'artes-cultura': 'Artes',
   '': 'Todas as séries'
 };
 
@@ -98,6 +99,10 @@ function seriesBadgeHtml(post, options) {
   if (options.hub && (post.series === 'divulgacao-saude' || /inspecao-divulgacao-/i.test(post.slug || ''))) {
     var div = post.seriesLabel || 'Divulgação';
     return '<span class="post-card-series" data-series="' + post.series + '">' + div + '</span>';
+  }
+  if (options.hub && (post.series === 'artes-cultura' || /inspecao-arte-|inspecao-filme-|inspecao-serie-/i.test(post.slug || ''))) {
+    var arte = post.seriesLabel || 'Arte';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + arte + '</span>';
   }
   var label = post.seriesLabel || SERIES_LABELS[post.series] || post.series;
   var order = post.seriesOrder != null ? ' · Cap. ' + post.seriesOrder : '';
@@ -150,6 +155,13 @@ function resolveInspecaoTipo(post) {
     /inspecao-divulgacao-/i.test(slug)
   ) {
     return 'divulgacao';
+  }
+  if (
+    series === 'artes-cultura' ||
+    series.indexOf('arte') === 0 ||
+    /inspecao-arte-|inspecao-filme-|inspecao-serie-/i.test(slug)
+  ) {
+    return 'arte';
   }
   if (
     series === 'legado-pessoas' ||
@@ -297,7 +309,8 @@ var HUB_CHIP_ANCHOR = {
   derivado: 'derivados',
   palavra: 'palavras',
   pessoas: 'pessoas-historia',
-  divulgacao: 'divulgacao'
+  divulgacao: 'divulgacao',
+  arte: 'artes'
 };
 
 function setHubChipVisibility(tipo, visible) {
@@ -398,7 +411,8 @@ function renderInspecoesHub(allPosts) {
     { id: 'derivado', section: '#inspecoes-derivados', sort: 'seriesOrder' },
     { id: 'palavra', section: '#inspecoes-palavras', sort: 'seriesOrder' },
     { id: 'pessoas', section: '#inspecoes-pessoas-historia', sort: 'seriesOrder' },
-    { id: 'divulgacao', section: '#inspecoes-divulgacao', sort: 'seriesOrder' }
+    { id: 'divulgacao', section: '#inspecoes-divulgacao', sort: 'seriesOrder' },
+    { id: 'arte', section: '#inspecoes-artes', sort: 'seriesOrder', keepVisible: true }
   ];
 
   tipos.forEach(function (t) {
@@ -408,13 +422,21 @@ function renderInspecoesHub(allPosts) {
 
     var list = filterByInspecaoTipo(allPosts, t.id);
     if (!list.length) {
-      section.hidden = true;
-      setHubChipVisibility(t.id, false);
+      if (t.keepVisible) {
+        section.hidden = false;
+        setHubChipVisibility(t.id, true);
+        grid.hidden = true;
+        grid.innerHTML = '';
+      } else {
+        section.hidden = true;
+        setHubChipVisibility(t.id, false);
+      }
       return;
     }
 
     section.hidden = false;
     setHubChipVisibility(t.id, true);
+    grid.hidden = false;
     var sorted = t.sort === 'seriesOrder' ? sortBySeriesOrder(list) : sortCanaisPosts(list);
     if (t.id === 'planta') renderPlantasDropGroup(grid, sorted);
     else renderPostCards(grid, sorted, { hub: true });

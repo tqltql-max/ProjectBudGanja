@@ -21,6 +21,7 @@ Transformar um canal, tema técnico ou vitrine comercial em um relatório editor
 | **Derivados de risco** | `plantas-derivados-risco` | `inspecao-derivado-<especie>` |
 | **Palavras** | `palavras-origem` | `inspecao-palavra-<vocábulo>` |
 | **Pessoas** | `pessoas-historia` | `inspecao-figura-<nome>` *(distinto do Legado canábico)* |
+| **Artes** | `artes-cultura` | `inspecao-arte-<obra>` / `inspecao-filme-<obra>` / `inspecao-serie-<obra>` |
 
 ## Fila de sugestões
 
@@ -79,6 +80,7 @@ Quando o post com `suggestedSlug` (ou `doneHref`) estiver publicado, o hub marca
 - Builder de palavras: `lib/palavras-inspecoes-posts.js` · série `palavras-origem` — método: origem etimológica → viagem → transformação de sentido → rede semântica → elo obrigatório com `/plantas/<slug>/` quando houver referente botânico
 - Builder de pessoas (históricas): `lib/pessoas-historia-inspecoes-posts.js` · série `pessoas-historia` — método: biografia verificável → método de pesquisa → elo com `/plantas/<slug>/` (histórico directo ou metodológico). Não confundir com `legado-pessoas`
 - Builder de divulgação: `lib/divulgacao-inspecoes-posts.js` · série `divulgacao-saude` — método: IDs de canal verificáveis + textos públicos no tema + controvérsias com fonte; **não equiparar** a Legado UNIFESP/MovReCam
+- Builder de artes: `lib/artes-inspecoes-posts.js` · série `artes-cultura` — método: obra (título, ano, meio) → representação cultural → elos com Plantas / Palavras / Pessoas. Sugestões: `tipo: "arte"` em `content/inspecoes-sugestoes.json` (aba **Artes** no hub). Não confundir com Canais (YouTube) nem com Pessoas (biografia)
 
 ## Validação
 

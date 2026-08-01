@@ -40,7 +40,7 @@
     <main id="main-content" class="conteudo-interno inspecoes-hub">
         <header class="inspecoes-hub-header">
             <h1 data-i18n="pages.inspections.title">Inspeções</h1>
-            <p class="secao-subtitulo inspecoes-hub-lead" data-i18n="pages.inspections.subtitle">Relatórios técnicos com método verificável — legado, pessoas, canais, cursos, artigos, plantas medicinais, derivados de risco, palavras, divulgação e equipamentos.</p>
+            <p class="secao-subtitulo inspecoes-hub-lead" data-i18n="pages.inspections.subtitle">Relatórios técnicos com método verificável — legado, pessoas, canais, cursos, artigos, plantas medicinais, derivados de risco, palavras, divulgação, artes e equipamentos.</p>
         </header>
 
         <nav class="inspecoes-hub-nav" aria-label="Secções de inspeções">
@@ -53,6 +53,7 @@
             <a class="inspecoes-hub-chip" href="#inspecoes-derivados" data-i18n="pages.inspections.chipDerivatives">Derivados</a>
             <a class="inspecoes-hub-chip" href="#inspecoes-palavras" data-i18n="pages.inspections.chipWords">Palavras</a>
             <a class="inspecoes-hub-chip" href="#inspecoes-divulgacao" data-i18n="pages.inspections.chipOutreach">Divulgação</a>
+            <a class="inspecoes-hub-chip" href="#inspecoes-artes" data-i18n="pages.inspections.chipArts">Artes</a>
             <a class="inspecoes-hub-chip" href="#inspecoes-sugestoes" data-i18n="pages.inspections.chipSuggestions">Sugestões</a>
         </nav>
 
@@ -142,6 +143,22 @@
                 <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionOutreachDesc">Comunicação pública de saúde e cannabinoides fora do eixo UNIFESP–MovReCam–CEBRID — canal, textos e limites, sem equiparar ao Legado académico.</p>
             </header>
             <div class="container-cards publications-inspecoes" data-inspecao-grid="divulgacao">
+                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
+            </div>
+        </section>
+
+        <section id="inspecoes-artes" class="inspecoes-hub-section inspecoes-sugestoes" data-inspecao-tipo="arte" data-sug-tipo="arte" hidden>
+            <header class="inspecoes-hub-section-head">
+                <h2 class="category-title" data-i18n="pages.inspections.sectionArts">Artes</h2>
+                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionArtsDesc">Filmes, séries, música, artes visuais e obras culturais ligadas a plantas, linguagem ou ao ecossistema inspecionado — fila de sugestões abaixo; relatórios publicados aparecem em cards. Distinto de Canais (YouTube) e de Pessoas (biografia).</p>
+            </header>
+            <div class="container-cards publications-inspecoes" data-inspecao-grid="arte" hidden></div>
+            <div class="inspecoes-sug-filters" role="group" aria-label="Filtro de sugestões de artes">
+                <button type="button" class="inspecoes-sug-filter is-active" data-sug-filter="abertas" aria-pressed="true" data-i18n="pages.inspections.sugFilterOpen">Abertas</button>
+                <button type="button" class="inspecoes-sug-filter" data-sug-filter="feitas" aria-pressed="false" data-i18n="pages.inspections.sugFilterDone">Feitas</button>
+                <button type="button" class="inspecoes-sug-filter" data-sug-filter="todas" aria-pressed="false" data-i18n="pages.inspections.sugFilterAll">Todas</button>
+            </div>
+            <div class="inspecoes-sug-list" data-inspecoes-sugestoes-list>
                 <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
             </div>
         </section>

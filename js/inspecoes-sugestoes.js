@@ -1,5 +1,6 @@
 /**
  * Fila editorial de sugestões — /biblioteca/inspecoes/#inspecoes-sugestoes
+ * e fila filtrada Artes — /biblioteca/inspecoes/#inspecoes-artes
  * Fonte: /content/inspecoes-sugestoes.json
  */
 (function (global) {
@@ -18,7 +19,8 @@
     insumo: 'pages.inspections.sugTipoInsumo',
     derivado: 'pages.inspections.sugTipoDerivado',
     palavra: 'pages.inspections.sugTipoPalavra',
-    pessoas: 'pages.inspections.sugTipoPessoas'
+    pessoas: 'pages.inspections.sugTipoPessoas',
+    arte: 'pages.inspections.sugTipoArte'
   };
   var STATUS_I18N = {
     ideia: 'pages.inspections.sugStatusIdeia',
@@ -28,7 +30,6 @@
 
   var cachedPayload = null;
   var cachedPosts = null;
-  var activeFilter = 'abertas';
 
   function t(key, fallback) {
     if (global.BudGanjaI18n && typeof global.BudGanjaI18n.t === 'function') {
@@ -129,7 +130,12 @@
     });
   }
 
-  function matchesFilter(item, filter) {
+  function getActiveFilter(root) {
+    return root.getAttribute('data-sug-active-filter') || 'abertas';
+  }
+
+  function matchesFilter(item, filter, tipoFilter) {
+    if (tipoFilter && item.tipo !== tipoFilter) return false;
     if (filter === 'todas') return true;
     if (filter === 'feitas') return item.status === 'feita';
     if (filter === 'abertas') return item.status !== 'feita';
@@ -146,7 +152,11 @@
       equipamento: 'Equipamento',
       divulgacao: 'Divulgação',
       loja: 'Loja',
-      insumo: 'Insumo'
+      insumo: 'Insumo',
+      derivado: 'Derivado',
+      palavra: 'Palavra',
+      pessoas: 'Pessoas',
+      arte: 'Arte'
     };
     return key ? t(key, fallbacks[tipo] || tipo) : tipo;
   }
@@ -202,6 +212,7 @@
   }
 
   function setFilterButtons(root) {
+    var activeFilter = getActiveFilter(root);
     var buttons = root.querySelectorAll('[data-sug-filter]');
     buttons.forEach(function (btn) {
       var on = btn.getAttribute('data-sug-filter') === activeFilter;
@@ -210,15 +221,27 @@
     });
   }
 
+  function showChipForRoot(root) {
+    if (!root || !root.id) return;
+    var chip = document.querySelector('.inspecoes-hub-chip[href="#' + root.id + '"]');
+    if (!chip) return;
+    chip.hidden = false;
+    chip.setAttribute('aria-hidden', 'false');
+  }
+
   function paint(root, posts) {
     var listEl = root.querySelector('[data-inspecoes-sugestoes-list]');
     if (!listEl || !cachedPayload) return;
 
+    var tipoFilter = root.getAttribute('data-sug-tipo') || '';
+    var activeFilter = getActiveFilter(root);
     var lookup = postLookup(posts || cachedPosts || []);
     var resolved = sortItems(
       (cachedPayload.items || []).map(function (raw) { return resolveItem(raw, lookup); })
     );
-    var visible = resolved.filter(function (it) { return matchesFilter(it, activeFilter); });
+    var visible = resolved.filter(function (it) {
+      return matchesFilter(it, activeFilter, tipoFilter);
+    });
 
     setFilterButtons(root);
 
@@ -235,12 +258,22 @@
   function bindFilters(root) {
     if (root.getAttribute('data-sug-bound') === '1') return;
     root.setAttribute('data-sug-bound', '1');
+    if (!root.getAttribute('data-sug-active-filter')) {
+      root.setAttribute('data-sug-active-filter', 'abertas');
+    }
     root.addEventListener('click', function (ev) {
       var btn = ev.target.closest('[data-sug-filter]');
       if (!btn || !root.contains(btn)) return;
-      activeFilter = btn.getAttribute('data-sug-filter') || 'abertas';
+      root.setAttribute('data-sug-active-filter', btn.getAttribute('data-sug-filter') || 'abertas');
       paint(root, cachedPosts);
     });
+  }
+
+  function suggestionRoots() {
+    return [
+      document.getElementById('inspecoes-artes'),
+      document.getElementById('inspecoes-sugestoes')
+    ].filter(Boolean);
   }
 
   function loadPayload() {
@@ -258,30 +291,31 @@
   }
 
   function renderInspecoesSugestoes(posts) {
-    var root = document.getElementById('inspecoes-sugestoes');
-    if (!root) return Promise.resolve();
+    var roots = suggestionRoots();
+    if (!roots.length) return Promise.resolve();
 
     cachedPosts = posts || [];
-    bindFilters(root);
+    roots.forEach(bindFilters);
 
     return loadPayload()
       .then(function () {
-        root.hidden = false;
-        var chip = document.querySelector('.inspecoes-hub-chip[href="#inspecoes-sugestoes"]');
-        if (chip) {
-          chip.hidden = false;
-          chip.setAttribute('aria-hidden', 'false');
-        }
-        paint(root, cachedPosts);
+        roots.forEach(function (root) {
+          root.hidden = false;
+          showChipForRoot(root);
+          paint(root, cachedPosts);
+        });
       })
       .catch(function () {
-        var listEl = root.querySelector('[data-inspecoes-sugestoes-list]');
-        if (listEl) {
-          listEl.innerHTML = '<p class="empty-message">' +
-            escapeHtml(t('pages.inspections.sugLoadError', 'Não foi possível carregar as sugestões.')) +
-            '</p>';
-        }
-        root.hidden = false;
+        roots.forEach(function (root) {
+          var listEl = root.querySelector('[data-inspecoes-sugestoes-list]');
+          if (listEl) {
+            listEl.innerHTML = '<p class="empty-message">' +
+              escapeHtml(t('pages.inspections.sugLoadError', 'Não foi possível carregar as sugestões.')) +
+              '</p>';
+          }
+          root.hidden = false;
+          showChipForRoot(root);
+        });
       });
   }
 

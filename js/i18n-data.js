@@ -510,7 +510,7 @@ window.__I18N_LOCALES__ = {
       "inspections": {
         "eyebrow": "Library",
         "title": "Inspections",
-        "subtitle": "Technical reports with a verifiable method — legacy, people, channels, courses, articles, medicinal plants, risk derivatives, words, outreach and equipment.",
+        "subtitle": "Technical reports with a verifiable method — legacy, people, channels, courses, articles, medicinal plants, risk derivatives, words, outreach, arts and equipment.",
         "loading": "Loading…",
         "empty": "No inspections published yet.",
         "docTitle": "Inspections | Inspetor BudGanja",
@@ -523,6 +523,7 @@ window.__I18N_LOCALES__ = {
         "chipWords": "Words",
         "chipPeopleHistory": "People",
         "chipOutreach": "Outreach",
+        "chipArts": "Arts",
         "chipSuggestions": "Suggestions",
         "sectionPeople": "Legacy",
         "sectionPeopleDesc": "Documentary tributes to reference figures — life, credit due, and links to the inspected ecosystem.",
@@ -530,6 +531,8 @@ window.__I18N_LOCALES__ = {
         "sectionPeopleHistoryDesc": "Figures whose research or creative method — travel, ethnography, peoples, plants or language — informs the lab. Distinct from cannabis Legacy; each sheet links to plants and/or the Words series.",
         "sectionOutreach": "Outreach",
         "sectionOutreachDesc": "Public health and cannabinoid communication outside the UNIFESP–MovReCam–CEBRID axis — channel, texts and limits, without equating to academic Legacy.",
+        "sectionArts": "Arts",
+        "sectionArtsDesc": "Films, series, music, visual arts and cultural works linked to plants, language or the inspected ecosystem — suggestion queue below; published reports appear as cards. Distinct from Channels (YouTube) and People (biography).",
         "sectionChannels": "Channels",
         "sectionChannelsDesc": "Editorial and technical review of public channels — catalog, thematic focus and grower utility.",
         "sectionCourses": "Courses",
@@ -568,7 +571,8 @@ window.__I18N_LOCALES__ = {
         "sugTipoInsumo": "Supply",
         "sugTipoDerivado": "Derivative",
         "sugTipoPalavra": "Word",
-        "sugTipoPessoas": "People"
+        "sugTipoPessoas": "People",
+        "sugTipoArte": "Art"
       },
       "research": {
         "eyebrow": "Library",
@@ -1186,7 +1190,7 @@ window.__I18N_LOCALES__ = {
       "inspections": {
         "eyebrow": "Biblioteca",
         "title": "Inspecciones",
-        "subtitle": "Informes técnicos con método verificable — legado, personas, canales, cursos, artículos, plantas medicinales, derivados de riesgo, palabras, divulgación y equipos.",
+        "subtitle": "Informes técnicos con método verificable — legado, personas, canales, cursos, artículos, plantas medicinales, derivados de riesgo, palabras, divulgación, artes y equipos.",
         "loading": "Cargando…",
         "empty": "Ninguna inspección publicada aún.",
         "docTitle": "Inspecciones | Inspetor BudGanja",
@@ -1199,6 +1203,7 @@ window.__I18N_LOCALES__ = {
         "chipWords": "Palabras",
         "chipPeopleHistory": "Personas",
         "chipOutreach": "Divulgación",
+        "chipArts": "Artes",
         "chipSuggestions": "Sugerencias",
         "sectionPeople": "Legado",
         "sectionPeopleDesc": "Homenajes documentales a personas de referencia — vida, mérito y cruce con el ecosistema inspeccionado.",
@@ -1206,6 +1211,8 @@ window.__I18N_LOCALES__ = {
         "sectionPeopleHistoryDesc": "Figuras cuyo método de investigación o creación — viaje, etnografía, pueblos, plantas o lenguaje — informa el laboratorio. Distinto del Legado cannábico; cada ficha cruza con plantas y/o con la serie Palabras.",
         "sectionOutreach": "Divulgación",
         "sectionOutreachDesc": "Comunicación pública de salud y cannabinoides fuera del eje UNIFESP–MovReCam–CEBRID — canal, textos y límites, sin equiparar al Legado académico.",
+        "sectionArts": "Artes",
+        "sectionArtsDesc": "Películas, series, música, artes visuales y obras culturales ligadas a plantas, lenguaje o al ecosistema inspeccionado — cola de sugerencias abajo; los informes publicados aparecen en cards. Distinto de Canales (YouTube) y de Personas (biografía).",
         "sectionChannels": "Canales",
         "sectionChannelsDesc": "Evaluación editorial y técnica de canales públicos — catálogo, foco temático y utilidad para el cultivador.",
         "sectionCourses": "Cursos",
@@ -1244,7 +1251,8 @@ window.__I18N_LOCALES__ = {
         "sugTipoInsumo": "Insumo",
         "sugTipoDerivado": "Derivado",
         "sugTipoPalavra": "Palabra",
-        "sugTipoPessoas": "Personas"
+        "sugTipoPessoas": "Personas",
+        "sugTipoArte": "Arte"
       },
       "research": {
         "eyebrow": "Biblioteca",
@@ -1862,7 +1870,7 @@ window.__I18N_LOCALES__ = {
       "inspections": {
         "eyebrow": "Biblioteca",
         "title": "Inspeções",
-        "subtitle": "Relatórios técnicos com método verificável — legado, pessoas, canais, cursos, artigos, plantas medicinais, derivados de risco, palavras, divulgação e equipamentos.",
+        "subtitle": "Relatórios técnicos com método verificável — legado, pessoas, canais, cursos, artigos, plantas medicinais, derivados de risco, palavras, divulgação, artes e equipamentos.",
         "loading": "Carregando…",
         "empty": "Nenhuma inspeção publicada ainda.",
         "docTitle": "Inspeções | Inspetor BudGanja",
@@ -1875,6 +1883,7 @@ window.__I18N_LOCALES__ = {
         "chipWords": "Palavras",
         "chipPeopleHistory": "Pessoas",
         "chipOutreach": "Divulgação",
+        "chipArts": "Artes",
         "chipSuggestions": "Sugestões",
         "sectionPeople": "Legado",
         "sectionPeopleDesc": "Homenagens documentais a pessoas de referência — vida, mérito e cruzamento com o ecossistema inspecionado.",
@@ -1882,6 +1891,8 @@ window.__I18N_LOCALES__ = {
         "sectionPeopleHistoryDesc": "Figuras cujo método de pesquisa ou criação — viagem, etnografia, povos, plantas ou linguagem — informa o laboratório. Distinto do Legado canábico; cada ficha cruza com plantas e/ou com a série Palavras.",
         "sectionOutreach": "Divulgação",
         "sectionOutreachDesc": "Comunicação pública de saúde e cannabinoides fora do eixo UNIFESP–MovReCam–CEBRID — canal, textos e limites, sem equiparar ao Legado académico.",
+        "sectionArts": "Artes",
+        "sectionArtsDesc": "Filmes, séries, música, artes visuais e obras culturais ligadas a plantas, linguagem ou ao ecossistema inspecionado — fila de sugestões abaixo; relatórios publicados aparecem em cards. Distinto de Canais (YouTube) e de Pessoas (biografia).",
         "sectionChannels": "Canais",
         "sectionChannelsDesc": "Avaliação editorial e técnica de canais públicos — catálogo, foco temático e utilidade para o cultivador.",
         "sectionCourses": "Cursos",
@@ -1920,7 +1931,8 @@ window.__I18N_LOCALES__ = {
         "sugTipoInsumo": "Insumo",
         "sugTipoDerivado": "Derivado",
         "sugTipoPalavra": "Palavra",
-        "sugTipoPessoas": "Pessoas"
+        "sugTipoPessoas": "Pessoas",
+        "sugTipoArte": "Arte"
       },
       "research": {
         "eyebrow": "Biblioteca",

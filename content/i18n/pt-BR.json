@@ -508,7 +508,7 @@
     "inspections": {
       "eyebrow": "Biblioteca",
       "title": "Inspeções",
-      "subtitle": "Relatórios técnicos com método verificável — legado, pessoas, canais, cursos, artigos, plantas medicinais, derivados de risco, palavras, divulgação e equipamentos.",
+      "subtitle": "Relatórios técnicos com método verificável — legado, pessoas, canais, cursos, artigos, plantas medicinais, derivados de risco, palavras, divulgação, artes e equipamentos.",
       "loading": "Carregando…",
       "empty": "Nenhuma inspeção publicada ainda.",
       "docTitle": "Inspeções | Inspetor BudGanja",
@@ -521,6 +521,7 @@
       "chipWords": "Palavras",
       "chipPeopleHistory": "Pessoas",
       "chipOutreach": "Divulgação",
+      "chipArts": "Artes",
       "chipSuggestions": "Sugestões",
       "sectionPeople": "Legado",
       "sectionPeopleDesc": "Homenagens documentais a pessoas de referência — vida, mérito e cruzamento com o ecossistema inspecionado.",
@@ -528,6 +529,8 @@
       "sectionPeopleHistoryDesc": "Figuras cujo método de pesquisa ou criação — viagem, etnografia, povos, plantas ou linguagem — informa o laboratório. Distinto do Legado canábico; cada ficha cruza com plantas e/ou com a série Palavras.",
       "sectionOutreach": "Divulgação",
       "sectionOutreachDesc": "Comunicação pública de saúde e cannabinoides fora do eixo UNIFESP–MovReCam–CEBRID — canal, textos e limites, sem equiparar ao Legado académico.",
+      "sectionArts": "Artes",
+      "sectionArtsDesc": "Filmes, séries, música, artes visuais e obras culturais ligadas a plantas, linguagem ou ao ecossistema inspecionado — fila de sugestões abaixo; relatórios publicados aparecem em cards. Distinto de Canais (YouTube) e de Pessoas (biografia).",
       "sectionChannels": "Canais",
       "sectionChannelsDesc": "Avaliação editorial e técnica de canais públicos — catálogo, foco temático e utilidade para o cultivador.",
       "sectionCourses": "Cursos",
@@ -566,7 +569,8 @@
       "sugTipoInsumo": "Insumo",
       "sugTipoDerivado": "Derivado",
       "sugTipoPalavra": "Palavra",
-      "sugTipoPessoas": "Pessoas"
+      "sugTipoPessoas": "Pessoas",
+      "sugTipoArte": "Arte"
     },
     "research": {
       "eyebrow": "Biblioteca",

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-01T12:55:13.194Z",
-  "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes.",
+  "updatedAt": "2026-08-01T13:05:00.000Z",
+  "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
       "id": "padre-ticao",
@@ -380,6 +380,78 @@
       "sources": [
         "/posts/post-inspecao-figura-herodoto.html"
       ]
+    },
+    {
+      "id": "arte-o-magnata",
+      "title": "O Magnata (2007) — filme e elo com Chorão",
+      "titleEn": "O Magnata (2007) — film and link to Chorão",
+      "titleEs": "O Magnata (2007) — película y vínculo con Chorão",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "ideia",
+      "why": "Longa brasileiro com Chorão; cruzar representação urbana/canábica com a ficha Pessoas.",
+      "whyEn": "Brazilian feature with Chorão; cross urban/cannabis representation with the People sheet.",
+      "whyEs": "Largometraje brasileño con Chorão; cruzar representación urbana/cannábica con la ficha Personas.",
+      "suggestedSlug": "inspecao-filme-o-magnata",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/O_Magnata",
+        "/posts/post-inspecao-figura-chorao.html"
+      ],
+      "notes": "Foco na obra, não na biografia (já em Pessoas)."
+    },
+    {
+      "id": "arte-reefer-madness",
+      "title": "Reefer Madness (1936) — propaganda e história da palavra",
+      "titleEn": "Reefer Madness (1936) — propaganda and word history",
+      "titleEs": "Reefer Madness (1936) — propaganda e historia de la palabra",
+      "tipo": "arte",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Marco cultural da demonização; elo com Palavras (maconha) e discurso moral do século XX.",
+      "whyEn": "Cultural landmark of demonization; link to Words (maconha) and 20th-century moral discourse.",
+      "whyEs": "Hito cultural de la demonización; vínculo con Palabras (maconha) y discurso moral del siglo XX.",
+      "suggestedSlug": "inspecao-filme-reefer-madness",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Reefer_Madness",
+        "/posts/post-inspecao-palavra-maconha.html"
+      ]
+    },
+    {
+      "id": "arte-grass-doc",
+      "title": "Grass (1999) — documentário de Ron Mann",
+      "titleEn": "Grass (1999) — Ron Mann documentary",
+      "titleEs": "Grass (1999) — documental de Ron Mann",
+      "tipo": "arte",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Documentário sobre proibição e cultura canábica no século XX — método de inventário cultural.",
+      "whyEn": "Documentary on prohibition and cannabis culture in the 20th century — cultural inventory method.",
+      "whyEs": "Documental sobre prohibición y cultura cannábica en el siglo XX — método de inventario cultural.",
+      "suggestedSlug": "inspecao-filme-grass",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Grass_(1999_film)"
+      ]
+    },
+    {
+      "id": "arte-weeds",
+      "title": "Weeds (2005–2012) — série e representação doméstica",
+      "titleEn": "Weeds (2005–2012) — series and domestic representation",
+      "titleEs": "Weeds (2005–2012) — serie y representación doméstica",
+      "tipo": "arte",
+      "priority": 4,
+      "status": "ideia",
+      "why": "Série mainstream sobre cultivo/tráfico suburbano — útil para contrastar ficção e discurso público.",
+      "whyEn": "Mainstream series on suburban grow/trade — useful to contrast fiction and public discourse.",
+      "whyEs": "Serie mainstream sobre cultivo/tráfico suburbano — útil para contrastar ficción y discurso público.",
+      "suggestedSlug": "inspecao-serie-weeds",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Weeds_(TV_series)"
+      ],
+      "notes": "Não romantizar; mapear tropos e limites editoriais."
     }
   ]
 }

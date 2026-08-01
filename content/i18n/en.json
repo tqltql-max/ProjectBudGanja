@@ -508,7 +508,7 @@
     "inspections": {
       "eyebrow": "Library",
       "title": "Inspections",
-      "subtitle": "Technical reports with a verifiable method — legacy, people, channels, courses, articles, medicinal plants, risk derivatives, words, outreach and equipment.",
+      "subtitle": "Technical reports with a verifiable method — legacy, people, channels, courses, articles, medicinal plants, risk derivatives, words, outreach, arts and equipment.",
       "loading": "Loading…",
       "empty": "No inspections published yet.",
       "docTitle": "Inspections | Inspetor BudGanja",
@@ -521,6 +521,7 @@
       "chipWords": "Words",
       "chipPeopleHistory": "People",
       "chipOutreach": "Outreach",
+      "chipArts": "Arts",
       "chipSuggestions": "Suggestions",
       "sectionPeople": "Legacy",
       "sectionPeopleDesc": "Documentary tributes to reference figures — life, credit due, and links to the inspected ecosystem.",
@@ -528,6 +529,8 @@
       "sectionPeopleHistoryDesc": "Figures whose research or creative method — travel, ethnography, peoples, plants or language — informs the lab. Distinct from cannabis Legacy; each sheet links to plants and/or the Words series.",
       "sectionOutreach": "Outreach",
       "sectionOutreachDesc": "Public health and cannabinoid communication outside the UNIFESP–MovReCam–CEBRID axis — channel, texts and limits, without equating to academic Legacy.",
+      "sectionArts": "Arts",
+      "sectionArtsDesc": "Films, series, music, visual arts and cultural works linked to plants, language or the inspected ecosystem — suggestion queue below; published reports appear as cards. Distinct from Channels (YouTube) and People (biography).",
       "sectionChannels": "Channels",
       "sectionChannelsDesc": "Editorial and technical review of public channels — catalog, thematic focus and grower utility.",
       "sectionCourses": "Courses",
@@ -566,7 +569,8 @@
       "sugTipoInsumo": "Supply",
       "sugTipoDerivado": "Derivative",
       "sugTipoPalavra": "Word",
-      "sugTipoPessoas": "People"
+      "sugTipoPessoas": "People",
+      "sugTipoArte": "Art"
     },
     "research": {
       "eyebrow": "Library",
