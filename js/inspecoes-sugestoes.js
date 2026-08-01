@@ -15,7 +15,10 @@
     equipamento: 'pages.inspections.sugTipoEquipamento',
     divulgacao: 'pages.inspections.sugTipoDivulgacao',
     loja: 'pages.inspections.sugTipoLoja',
-    insumo: 'pages.inspections.sugTipoInsumo'
+    insumo: 'pages.inspections.sugTipoInsumo',
+    derivado: 'pages.inspections.sugTipoDerivado',
+    palavra: 'pages.inspections.sugTipoPalavra',
+    pessoas: 'pages.inspections.sugTipoPessoas'
   };
   var STATUS_I18N = {
     ideia: 'pages.inspections.sugStatusIdeia',

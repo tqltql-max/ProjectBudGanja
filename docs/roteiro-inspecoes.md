@@ -18,6 +18,9 @@ Transformar um canal, tema técnico ou vitrine comercial em um relatório editor
 | **Insumos** | `insumos-cultivo` | `inspecao-insumo-<marca>` |
 | **Legado** | `legado-pessoas` | `inspecao-<pessoa>` |
 | **Divulgação** | `divulgacao-saude` | `inspecao-divulgacao-<nome>` |
+| **Derivados de risco** | `plantas-derivados-risco` | `inspecao-derivado-<especie>` |
+| **Palavras** | `palavras-origem` | `inspecao-palavra-<vocábulo>` |
+| **Pessoas** | `pessoas-historia` | `inspecao-figura-<nome>` *(distinto do Legado canábico)* |
 
 ## Fila de sugestões
 
@@ -53,6 +56,8 @@ Quando o post com `suggestedSlug` (ou `doneHref`) estiver publicado, o hub marca
 - `## Objeto inspecionado`
 - `## Hipóteses e método`
 - `## Perfil editorial (achados)` *(canais)* / `## Achados principais` + `## Avaliação metodológica` *(artigos)*
+- `## Origens (etimologia)` → `## Viagem e transformação` → `## Rede semântica` → `## Elo com plantas` *(palavras)*
+- `## Quem foi` → `## O método` → `## Elo com planta` *(pessoas — declarar se o elo é histórico ou metodológico)*
 - `## Mapa temático do acervo` *(canais)* / `## Mapa do catálogo` *(lojas)* / medições *(equipamentos)*
 - `## Catálogo completo` *(quando aplicável)*
 - `## Vídeo de referência (embed)` *(opcional)*
@@ -70,6 +75,9 @@ Quando o post com `suggestedSlug` (ou `doneHref`) estiver publicado, o hub marca
 - Mantenha os créditos do canal / loja / artigo de origem sempre explícitos
 - Builder de lojas: `lib/loja-inspecoes-posts.js`
 - Builder de artigos: `lib/artigos-inspecoes-posts.js` · série `artigos-cientificos`
+- Builder de derivados de risco: `lib/derivados-inspecoes-posts.js` · série `plantas-derivados-risco` (não misturar com o catálogo `/plantas/` medicinal)
+- Builder de palavras: `lib/palavras-inspecoes-posts.js` · série `palavras-origem` — método: origem etimológica → viagem → transformação de sentido → rede semântica → elo obrigatório com `/plantas/<slug>/` quando houver referente botânico
+- Builder de pessoas (históricas): `lib/pessoas-historia-inspecoes-posts.js` · série `pessoas-historia` — método: biografia verificável → método de pesquisa → elo com `/plantas/<slug>/` (histórico directo ou metodológico). Não confundir com `legado-pessoas`
 
 ## Validação
 

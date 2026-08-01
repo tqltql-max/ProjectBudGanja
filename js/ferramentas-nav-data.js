@@ -131,6 +131,30 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Canais, equipamentos, insumos e formação."
             },
             {
+              "label": "Inspeção: Heródoto — método da pesquisa e o abacate que ele não viu",
+              "tileLabel": "Inspeção: Heródoto — método da …",
+              "href": "/posts/post-inspecao-figura-herodoto.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-herodoto",
+              "description": "Ficha fundadora da série Pessoas: Heródoto de Halicarnasso, *historie* como investigação, etnografia de povos e plantas — elo metodológico com o abacate (*Persea americana*) no catálogo brasileiro."
+            },
+            {
+              "label": "Inspeção: Maconha — origem da palavra e transformação no Brasil",
+              "tileLabel": "Inspeção: Maconha — origem da p…",
+              "href": "/posts/post-inspecao-palavra-maconha.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-maconha",
+              "description": "Ficha fundadora da série Palavras: etimologia afro-atlântica de «maconha», viagem histórica, mudança de sentido e elo com *Cannabis sativa* no catálogo medicinal."
+            },
+            {
+              "label": "Inspeção: Cana-de-açúcar — origem da planta e açúcar refinado",
+              "tileLabel": "Inspeção: Cana-de-açúcar — orig…",
+              "href": "/posts/post-inspecao-derivado-cana-de-acucar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-cana-de-acucar",
+              "description": "Ficha fundadora da série Derivados de risco: origem botânica de *Saccharum officinarum*, história no Brasil e alerta sobre açúcares livres / açúcar refinado em excesso — sem demonizar a planta."
+            },
+            {
               "label": "Inspeção: Padre Ticão — Antônio Luiz Marchioni",
               "tileLabel": "Inspeção: Padre Ticão — Antônio…",
               "href": "/posts/post-inspecao-padre-ticao.html",
@@ -169,6 +193,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-ventilacao-tenda",
               "description": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório."
+            },
+            {
+              "label": "Inspeção: Gregorio Duvivier — o método da palavra e a série Palavras",
+              "tileLabel": "Inspeção: Gregorio Duvivier — o…",
+              "href": "/posts/post-inspecao-figura-duvivier.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-duvivier",
+              "description": "Pessoas × Palavras: Gregorio Duvivier (Letras, poesia, Greg News, O Céu da Língua) — o ofício da linguagem cruzado com a ficha maconha e o hub de vocábulos."
             },
             {
               "label": "Inspeção: CEBRID — centro e medicina canabinoide",
@@ -465,6 +497,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-cannabis-sativa",
               "description": "Relatório educacional de Cannabis (medicinal) (*Cannabis sativa L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: Planta — Abacate",
+              "tileLabel": "Inspeção: Planta — Abacate",
+              "href": "/posts/post-inspecao-planta-abacate.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-abacate",
+              "description": "Relatório educacional de Abacate (*Persea americana Mill.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             }
           ]
         },

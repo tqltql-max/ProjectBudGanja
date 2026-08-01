@@ -44,6 +44,9 @@ var SERIES_LABELS = {
   'artigos-cientificos': 'Artigos científicos',
   'legado-pessoas': 'Legado',
   'plantas-medicinais': 'Plantas medicinais',
+  'plantas-derivados-risco': 'Derivados de risco',
+  'palavras-origem': 'Palavras',
+  'pessoas-historia': 'Pessoas',
   '': 'Todas as séries'
 };
 
@@ -83,6 +86,14 @@ function seriesBadgeHtml(post, options) {
     var planta = post.seriesLabel || 'Planta';
     return '<span class="post-card-series" data-series="' + post.series + '">' + planta + '</span>';
   }
+  if (options.hub && (post.series === 'palavras-origem' || /inspecao-palavra-/i.test(post.slug || ''))) {
+    var palavra = post.seriesLabel || 'Palavra';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + palavra + '</span>';
+  }
+  if (options.hub && (post.series === 'pessoas-historia' || /inspecao-figura-/i.test(post.slug || ''))) {
+    var figura = post.seriesLabel || 'Pessoa';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + figura + '</span>';
+  }
   var label = post.seriesLabel || SERIES_LABELS[post.series] || post.series;
   var order = post.seriesOrder != null ? ' · Cap. ' + post.seriesOrder : '';
   return '<span class="post-card-series" data-series="' + post.series + '">' + label + order + '</span>';
@@ -108,6 +119,26 @@ function resolveInspecaoTipo(post) {
   if (series === 'loja-cultivo' || series.indexOf('loja-') === 0 || /inspecao-loja-/i.test(slug)) return 'loja';
   if (series === 'insumos-cultivo' || series.indexOf('insumo') === 0 || /inspecao-insumo-/i.test(slug)) return 'insumo';
   if (series === 'artigos-cientificos' || series.indexOf('artigo') === 0 || /inspecao-artigo-/i.test(slug)) return 'artigo';
+  if (
+    series === 'plantas-derivados-risco' ||
+    series.indexOf('derivado') === 0 ||
+    /inspecao-derivado-/i.test(slug)
+  ) {
+    return 'derivado';
+  }
+  if (
+    series === 'palavras-origem' ||
+    series.indexOf('palavra') === 0 ||
+    /inspecao-palavra-/i.test(slug)
+  ) {
+    return 'palavra';
+  }
+  if (
+    series === 'pessoas-historia' ||
+    /inspecao-figura-/i.test(slug)
+  ) {
+    return 'pessoas';
+  }
   if (
     series === 'legado-pessoas' ||
     series.indexOf('legado') === 0 ||
@@ -250,7 +281,10 @@ var HUB_CHIP_ANCHOR = {
   insumo: 'insumos',
   artigo: 'artigos',
   pessoa: 'pessoas',
-  planta: 'plantas'
+  planta: 'plantas',
+  derivado: 'derivados',
+  palavra: 'palavras',
+  pessoas: 'pessoas-historia'
 };
 
 function setHubChipVisibility(tipo, visible) {
@@ -347,7 +381,10 @@ function renderInspecoesHub(allPosts) {
     { id: 'canal', section: '#inspecoes-canais', sort: 'label' },
     { id: 'curso', section: '#inspecoes-cursos', sort: 'seriesOrder' },
     { id: 'artigo', section: '#inspecoes-artigos', sort: 'seriesOrder' },
-    { id: 'planta', section: '#inspecoes-plantas', sort: 'seriesOrder' }
+    { id: 'planta', section: '#inspecoes-plantas', sort: 'seriesOrder' },
+    { id: 'derivado', section: '#inspecoes-derivados', sort: 'seriesOrder' },
+    { id: 'palavra', section: '#inspecoes-palavras', sort: 'seriesOrder' },
+    { id: 'pessoas', section: '#inspecoes-pessoas-historia', sort: 'seriesOrder' }
   ];
 
   tipos.forEach(function (t) {

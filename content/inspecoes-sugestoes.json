@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31T12:00:00.000Z",
+  "updatedAt": "2026-08-01T12:41:29.510Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes.",
   "items": [
     {
@@ -184,6 +184,162 @@
       "seriesHint": "artigos-cientificos",
       "sources": [],
       "notes": "Preencher DOI e título quando escolheres o paper."
+    },
+    {
+      "id": "derivado-cana-de-acucar",
+      "title": "Cana-de-açúcar — origem e açúcar refinado",
+      "titleEn": "Sugarcane — origin and refined sugar",
+      "titleEs": "Caña de azúcar — origen y azúcar refinado",
+      "tipo": "derivado",
+      "priority": 2,
+      "status": "feita",
+      "why": "Ficha fundadora da série Derivados de risco: origem botânica vs produto industrial.",
+      "whyEn": "Founding sheet of Risk derivatives: botanical origin vs industrial product.",
+      "whyEs": "Ficha fundadora de Derivados de riesgo: origen botánico vs producto industrial.",
+      "suggestedSlug": "inspecao-derivado-cana-de-acucar",
+      "doneHref": "/posts/post-inspecao-derivado-cana-de-acucar.html",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://www.who.int/publications/i/item/9789241549028"
+      ]
+    },
+    {
+      "id": "derivado-tabaco",
+      "title": "Tabaco — origem da planta e produtos industriais",
+      "titleEn": "Tobacco — plant origin and industrial products",
+      "titleEs": "Tabaco — origen de la planta y productos industriales",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Próximo candidato Derivados de risco: *Nicotiana tabacum* → cigarro industrial.",
+      "whyEn": "Next Risk derivatives candidate: *Nicotiana tabacum* → industrial cigarette.",
+      "whyEs": "Siguiente candidato Derivados de riesgo: *Nicotiana tabacum* → cigarrillo industrial.",
+      "suggestedSlug": "inspecao-derivado-tabaco",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [],
+      "notes": "Separar planta/etnobotânica de indústria do tabaco; sem romantizar nicotina."
+    },
+    {
+      "id": "palavra-maconha",
+      "title": "Maconha — origem da palavra e transformação no Brasil",
+      "titleEn": "Maconha — word origin and transformation in Brazil",
+      "titleEs": "Maconha — origen de la palabra y transformación en Brasil",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Ficha fundadora da série Palavras: etimologia, viagem histórica e elo com Cannabis sativa.",
+      "whyEn": "Founding sheet of the Words series: etymology, historical journey and link to Cannabis sativa.",
+      "whyEs": "Ficha fundadora de la serie Palabras: etimología, viaje histórico y vínculo con Cannabis sativa.",
+      "suggestedSlug": "inspecao-palavra-maconha",
+      "doneHref": "/posts/post-inspecao-palavra-maconha.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/plantas/cannabis-sativa/"
+      ]
+    },
+    {
+      "id": "palavra-ganja",
+      "title": "Ganja — do sânscrito ao Caribe e à marca cultural",
+      "titleEn": "Ganja — from Sanskrit to the Caribbean and cultural brand",
+      "titleEs": "Ganja — del sánscrito al Caribe y la marca cultural",
+      "tipo": "palavra",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Próxima Palavra: rota índica/caribenha; presente na marca BudGanja.",
+      "whyEn": "Next Word: Indic/Caribbean route; present in the BudGanja brand.",
+      "whyEs": "Siguiente Palabra: ruta índica/caribeña; presente en la marca BudGanja.",
+      "suggestedSlug": "inspecao-palavra-ganja",
+      "seriesHint": "palavras-origem",
+      "sources": [],
+      "notes": "Separar etimologia de marketing; cruzar com ficha cannabis-sativa."
+    },
+    {
+      "id": "palavra-diamba",
+      "title": "Diamba — cognato afro-brasileiro de maconha",
+      "titleEn": "Diamba — Afro-Brazilian cognate of maconha",
+      "titleEs": "Diamba — cognado afrobrasileño de maconha",
+      "tipo": "palavra",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Reforça o eixo bantu da série Palavras e a rede semântica aberta em maconha.",
+      "whyEn": "Strengthens the Bantu axis of the Words series and the network opened in maconha.",
+      "whyEs": "Refuerza el eje bantú de Palabras y la red abierta en maconha.",
+      "suggestedSlug": "inspecao-palavra-diamba",
+      "seriesHint": "palavras-origem",
+      "sources": [],
+      "notes": "Variantes liamba/riamba; ligação etnobotânica."
+    },
+    {
+      "id": "palavra-cannabis",
+      "title": "Cannabis — latinismo técnico e linguagem institucional",
+      "titleEn": "Cannabis — technical Latinism and institutional language",
+      "titleEs": "Cannabis — latinismo técnico y lenguaje institucional",
+      "tipo": "palavra",
+      "priority": 4,
+      "status": "ideia",
+      "why": "Como o nome científico virou preferência clínico-legal frente a «maconha».",
+      "whyEn": "How the scientific name became the clinical-legal preference over “maconha”.",
+      "whyEs": "Cómo el nombre científico pasó a preferencia clínico-legal frente a «maconha».",
+      "suggestedSlug": "inspecao-palavra-cannabis",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/plantas/cannabis-sativa/"
+      ],
+      "notes": "Grego/latim → taxonomia → ANVISA/OMS; contrastar com maconha."
+    },
+    {
+      "id": "figura-herodoto",
+      "title": "Heródoto — método da pesquisa e elo com o abacate",
+      "titleEn": "Herodotus — research method and avocado link",
+      "titleEs": "Heródoto — método de investigación y vínculo con el aguacate",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Ficha fundadora da série Pessoas: historie como investigação; ponte metodológica com Persea americana.",
+      "whyEn": "Founding sheet of the People series: historie as inquiry; methodological bridge to Persea americana.",
+      "whyEs": "Ficha fundadora de Personas: historie como investigación; puente metodológico con Persea americana.",
+      "suggestedSlug": "inspecao-figura-herodoto",
+      "doneHref": "/posts/post-inspecao-figura-herodoto.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Her%C3%B3doto",
+        "/plantas/abacate/"
+      ]
+    },
+    {
+      "id": "figura-teophrasto",
+      "title": "Teofrasto — pai da botânica e o catálogo de plantas",
+      "titleEn": "Theophrastus — father of botany and the plant catalog",
+      "titleEs": "Teofrasto — padre de la botánica y el catálogo de plantas",
+      "tipo": "pessoas",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Próxima Pessoa: botânica clássica após Heródoto; elo com espécies do catálogo.",
+      "whyEn": "Next Person: classical botany after Herodotus; link to catalog species.",
+      "whyEs": "Siguiente Persona: botánica clásica tras Heródoto; vínculo con especies del catálogo.",
+      "suggestedSlug": "inspecao-figura-teophrasto",
+      "seriesHint": "pessoas-historia",
+      "sources": [],
+      "notes": "Historia Plantarum; cruzar com fichas /plantas/."
+    },
+    {
+      "id": "figura-duvivier",
+      "title": "Gregorio Duvivier — método da palavra e série Palavras",
+      "titleEn": "Gregorio Duvivier — method of the word and Words series",
+      "titleEs": "Gregorio Duvivier — método de la palabra y serie Palabras",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas × Palavras: Letras, O Céu da Língua, sátira — elo com a ficha maconha.",
+      "whyEn": "People × Words: Literature degree, O Céu da Língua, satire — link to the maconha sheet.",
+      "whyEs": "Personas × Palabras: Letras, O Céu da Língua, sátira — vínculo con la ficha maconha.",
+      "suggestedSlug": "inspecao-figura-duvivier",
+      "doneHref": "/posts/post-inspecao-figura-duvivier.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Greg%C3%B3rio_Duvivier",
+        "/posts/post-inspecao-palavra-maconha.html"
+      ]
     }
   ]
 }

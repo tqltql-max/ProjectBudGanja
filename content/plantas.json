@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T01:54:07.446Z",
+  "updatedAt": "2026-08-01T12:37:16.148Z",
   "disclaimer": "Fichas educacionais de plantas fitoterápicas e medicinais do Brasil. Não substituem orientação profissional de saúde nem aconselhamento jurídico.",
   "plants": [
     {
@@ -658,6 +658,12 @@
           "label": "Inspeção: Cannabis na adolescência e neurodesenvolvimento (JAMA Psychiatry)",
           "labelEn": "Inspection: Adolescent cannabis use and neurodevelopment (JAMA Psychiatry)",
           "labelEs": "Inspección: Cannabis en la adolescencia y neurodesarrollo (JAMA Psychiatry)"
+        },
+        {
+          "href": "/posts/post-inspecao-palavra-maconha.html",
+          "label": "Inspeção: Maconha — origem da palavra e transformação no Brasil",
+          "labelEn": "Inspection: Maconha — word origin and transformation in Brazil",
+          "labelEs": "Inspección: Maconha — origen de la palabra y transformación en Brasil"
         }
       ],
       "tags": [
@@ -674,6 +680,41 @@
       "nomeCientifico": "Cannabis sativa L.",
       "familia": "Cannabaceae",
       "summary": "Espécie com uso terapêutico regulamentado em contextos clínicos e formativos. Destaque do curso UNIFESP e da inspeção do laboratório."
+    },
+    {
+      "id": "abacate",
+      "slug": "abacate",
+      "nomePopular": "Abacate",
+      "nomeCientifico": "Persea americana Mill.",
+      "familia": "Lauraceae",
+      "summary": "Árvore frutífera de origem mesoamericana, amplamente cultivada no Brasil; polpa rica em lipídios, presente na culinária e em usos tradicionais de cuidado.",
+      "partsUsed": [
+        "Fruto (polpa)",
+        "Folhas (uso tradicional, com cautela)",
+        "Óleo da polpa"
+      ],
+      "traditionalUses": [
+        "Alimento e culinária",
+        "Preparações caseiras com a polpa (cuidado da pele/cabelo — tradição popular)",
+        "Referência em etnobotânica alimentar das Américas"
+      ],
+      "cautions": "Alimento comum; folhas e extratos não são inocuidade garantida — evitar automedicação. Caroço e folhas podem ser tóxicos para animais domésticos. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutifera",
+        "americas",
+        "culinaria"
+      ],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-figura-herodoto.html",
+          "label": "Inspeção: Heródoto — método da pesquisa e o abacate que ele não viu",
+          "labelEn": "Inspection: Herodotus — research method and the avocado he never saw",
+          "labelEs": "Inspección: Heródoto — método de investigación y el aguacate que no vio"
+        }
+      ]
     }
   ]
 }
