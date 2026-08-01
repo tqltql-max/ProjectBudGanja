@@ -17,6 +17,25 @@
     return '';
   }
 
+  function defaultLocaleForHost() {
+    try {
+      var host = String((global.location && global.location.hostname) || '').toLowerCase();
+      // Domínio EN: inglês por padrão.
+      if (host === 'www.inspectorbudganja.com' || host === 'inspectorbudganja.com') {
+        return 'en';
+      }
+      // Domínio PT (.com.br): português por padrão.
+      if (
+        host === 'inspetorbudganja.com.br' ||
+        host === 'www.inspetorbudganja.com.br'
+      ) {
+        return 'pt-BR';
+      }
+    } catch (e) { /* ignore */ }
+    // localhost / hosts desconhecidos: português.
+    return 'pt-BR';
+  }
+
   function detectLocale() {
     try {
       var params = new URLSearchParams((global.location && global.location.search) || '');
@@ -33,8 +52,8 @@
       if (saved && SUPPORTED.indexOf(saved) !== -1) return saved;
     } catch (e) { /* ignore */ }
 
-    // Padrão do site: português.
-    return 'pt-BR';
+    // Padrão por domínio: .com.br → PT, inspectorbudganja.com → EN.
+    return defaultLocaleForHost();
   }
 
   function clearLocaleFromUrl() {
