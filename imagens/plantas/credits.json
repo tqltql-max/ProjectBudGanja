@@ -1,0 +1,254 @@
+{
+  "babosa": {
+    "credit": "Wikipedia · Aloe vera",
+    "source": "https://en.wikipedia.org/wiki/Aloe_vera",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Aloe_vera_flower_inset.png",
+    "cover": "/imagens/plantas/babosa-cover.jpg"
+  },
+  "camomila": {
+    "credit": "Wikipedia · Matricaria chamomilla",
+    "source": "https://en.wikipedia.org/wiki/Matricaria_chamomilla",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Matricaria_February_2008-1.jpg",
+    "cover": "/imagens/plantas/camomila-cover.jpg"
+  },
+  "capim-limao": {
+    "credit": "Wikipedia · Cymbopogon citratus",
+    "source": "https://en.wikipedia.org/wiki/Cymbopogon_citratus",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Gardenology.org-IMG_2892_rbgs11jan.jpg",
+    "cover": "/imagens/plantas/capim-limao-cover.jpg"
+  },
+  "carqueja": {
+    "credit": "Mateus Hidalgo · Wikimedia Commons · File:Baccharis trimera.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Baccharis_trimera.jpg",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Baccharis_trimera.jpg/1920px-Baccharis_trimera.jpg",
+    "cover": "/imagens/plantas/carqueja-cover.jpg"
+  },
+  "cavalinha": {
+    "credit": "Wikipedia · Equisetum arvense",
+    "source": "https://en.wikipedia.org/wiki/Equisetum_arvense",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/2/23/Equisetum_arvense_foliage.jpg",
+    "cover": "/imagens/plantas/cavalinha-cover.jpg"
+  },
+  "erva-cidreira": {
+    "credit": "Wikipedia · Lippia alba",
+    "source": "https://en.wikipedia.org/wiki/Lippia_alba",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lippia_alba%2C_planta_semelhante_ao_cambar%C3%A1_06.jpg/1920px-Lippia_alba%2C_planta_semelhante_ao_cambar%C3%A1_06.jpg",
+    "cover": "/imagens/plantas/erva-cidreira-cover.jpg"
+  },
+  "espinheira-santa": {
+    "credit": "Wikimedia Commons · File:Maytenus ilicifolia.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Maytenus_ilicifolia.jpg",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/5/54/Maytenus_ilicifolia.jpg",
+    "cover": "/imagens/plantas/espinheira-santa-cover.jpg"
+  },
+  "guaco": {
+    "credit": "Eugenio Hansen, OFS · Wikimedia Commons · File:Mikania glomerata.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Mikania_glomerata.JPG",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Mikania_glomerata.JPG/1920px-Mikania_glomerata.JPG",
+    "cover": "/imagens/plantas/guaco-cover.jpg"
+  },
+  "hortela": {
+    "credit": "Wikipedia · Spearmint",
+    "source": "https://en.wikipedia.org/wiki/Spearmint",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/0/05/Minze.jpg",
+    "cover": "/imagens/plantas/hortela-cover.jpg"
+  },
+  "boldo": {
+    "credit": "Wikipedia · Coleus barbatus",
+    "source": "https://en.wikipedia.org/wiki/Coleus_barbatus",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Plectranthus_barbatus_kz02.jpg/3840px-Plectranthus_barbatus_kz02.jpg",
+    "cover": "/imagens/plantas/boldo-cover.jpg"
+  },
+  "melissa": {
+    "credit": "Wikipedia · Lemon balm",
+    "source": "https://en.wikipedia.org/wiki/Lemon_balm",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/7/70/Lemon_balm_plant.jpg",
+    "cover": "/imagens/plantas/melissa-cover.jpg"
+  },
+  "alecrim": {
+    "credit": "Wikipedia · Rosemary",
+    "source": "https://en.wikipedia.org/wiki/Rosemary",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Rosemary_in_bloom.JPG",
+    "cover": "/imagens/plantas/alecrim-cover.jpg"
+  },
+  "gengibre": {
+    "credit": "Wikipedia · Ginger",
+    "source": "https://en.wikipedia.org/wiki/Ginger",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/1/18/Koeh-146-no_text.jpg",
+    "cover": "/imagens/plantas/gengibre-cover.jpg"
+  },
+  "curcuma": {
+    "credit": "Wikipedia · Turmeric",
+    "source": "https://en.wikipedia.org/wiki/Turmeric",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Turmeric_inflorescence.jpg",
+    "cover": "/imagens/plantas/curcuma-cover.jpg"
+  },
+  "unha-de-gato": {
+    "credit": "Wikipedia · Uncaria tomentosa",
+    "source": "https://en.wikipedia.org/wiki/Uncaria_tomentosa",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Uncaria_tomentosa.png",
+    "cover": "/imagens/plantas/unha-de-gato-cover.jpg"
+  },
+  "sucupira": {
+    "credit": "Wikipedia · Pterodon emarginatus",
+    "source": "https://en.wikipedia.org/wiki/Pterodon_emarginatus",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/9/94/Sucupira-branca.jpg",
+    "cover": "/imagens/plantas/sucupira-cover.jpg"
+  },
+  "copaiba": {
+    "credit": "Wikipedia · Copaifera langsdorffii",
+    "source": "https://en.wikipedia.org/wiki/Copaifera_langsdorffii",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/7/73/Copaicaaclimacao.JPG",
+    "cover": "/imagens/plantas/copaiba-cover.jpg"
+  },
+  "andiroba": {
+    "credit": "Wikipedia · Carapa guianensis",
+    "source": "https://en.wikipedia.org/wiki/Carapa_guianensis",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Andirobaamazonica.jpg",
+    "cover": "/imagens/plantas/andiroba-cover.jpg"
+  },
+  "jambu": {
+    "credit": "Wikipedia · Acmella oleracea",
+    "source": "https://en.wikipedia.org/wiki/Acmella_oleracea",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/7/72/Spilanthes-closeup-large.jpg",
+    "cover": "/imagens/plantas/jambu-cover.jpg"
+  },
+  "mulungu": {
+    "credit": "Wikipedia · Erythrina mulungu",
+    "source": "https://en.wikipedia.org/wiki/Erythrina_mulungu",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/2/24/Erythrina_mulungu.jpg",
+    "cover": "/imagens/plantas/mulungu-cover.jpg"
+  },
+  "maracuja": {
+    "credit": "Wikipedia · Passiflora incarnata",
+    "source": "https://en.wikipedia.org/wiki/Passiflora_incarnata",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/9/93/Passiflora_incarnata_fruit.jpg",
+    "cover": "/imagens/plantas/maracuja-cover.jpg"
+  },
+  "calendula": {
+    "credit": "Wikipedia · Calendula officinalis",
+    "source": "https://en.wikipedia.org/wiki/Calendula_officinalis",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Calendula_officinalis%2C_pot_marigold.JPG/1920px-Calendula_officinalis%2C_pot_marigold.JPG",
+    "cover": "/imagens/plantas/calendula-cover.jpg"
+  },
+  "barbatimao": {
+    "credit": "Wikipedia · Stryphnodendron adstringens",
+    "source": "https://en.wikipedia.org/wiki/Stryphnodendron_adstringens",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Stryphnodendron_adstringens.jpg",
+    "cover": "/imagens/plantas/barbatimao-cover.jpg"
+  },
+  "jaborandi": {
+    "credit": "Wikipedia · Pilocarpus microphyllus",
+    "source": "https://en.wikipedia.org/wiki/Pilocarpus_microphyllus",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Jaborandi.JPG",
+    "cover": "/imagens/plantas/jaborandi-cover.jpg"
+  },
+  "ipecacuanha": {
+    "credit": "Wikipedia · Carapichea ipecacuanha",
+    "source": "https://en.wikipedia.org/wiki/Carapichea_ipecacuanha",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/d/de/Psychotria_ipecacuanha_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-251.jpg",
+    "cover": "/imagens/plantas/ipecacuanha-cover.jpg"
+  },
+  "pfaffia": {
+    "credit": "Wikipedia · Pfaffia glomerata",
+    "source": "https://en.wikipedia.org/wiki/Pfaffia_glomerata",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Pfaffia_glomerata-costapppr.jpg",
+    "cover": "/imagens/plantas/pfaffia-cover.jpg"
+  },
+  "aroeira": {
+    "credit": "Wikipedia · Schinus terebinthifolia",
+    "source": "https://en.wikipedia.org/wiki/Schinus_terebinthifolia",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Aroeira-vermelha_%28Schinus_terebinthifolia%29_em_Bag%C3%A9%2C_RS%2C_Brasil._Apresenta_diversos_nomes_tupis_pouco_usados._-_55294784814.jpg/1920px-Aroeira-vermelha_%28Schinus_terebinthifolia%29_em_Bag%C3%A9%2C_RS%2C_Brasil._Apresenta_diversos_nomes_tupis_pouco_usados._-_55294784814.jpg",
+    "cover": "/imagens/plantas/aroeira-cover.jpg"
+  },
+  "quina": {
+    "credit": "Wikipedia · Cinchona officinalis",
+    "source": "https://en.wikipedia.org/wiki/Cinchona_officinalis",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Curtis%27s_botanical_magazine_%288272601122%29.jpg",
+    "cover": "/imagens/plantas/quina-cover.jpg"
+  },
+  "cannabis-sativa": {
+    "credit": "Wikipedia · Cannabis sativa",
+    "source": "https://en.wikipedia.org/wiki/Cannabis_sativa",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Cannabis_sativa_2.jpg/1920px-Cannabis_sativa_2.jpg",
+    "cover": "/imagens/plantas/cannabis-sativa-cover.jpg"
+  },
+  "abacate": {
+    "credit": "Wikipedia · Avocado",
+    "source": "https://en.wikipedia.org/wiki/Avocado",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Persea_americana_fruit_2.JPG",
+    "cover": "/imagens/plantas/abacate-cover.jpg"
+  },
+  "coco": {
+    "credit": "Wikipedia · Coconut",
+    "source": "https://en.wikipedia.org/wiki/Coconut",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/3/32/Cocos_nucifera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-187.jpg",
+    "cover": "/imagens/plantas/coco-cover.jpg"
+  },
+  "laranja": {
+    "credit": "Wikipedia · Citrus × sinensis",
+    "source": "https://en.wikipedia.org/wiki/Citrus_%C3%97_sinensis",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/b/b0/OrangeBloss_wb.jpg",
+    "cover": "/imagens/plantas/laranja-cover.jpg"
+  },
+  "acai": {
+    "credit": "Wikipedia · Açaí palm",
+    "source": "https://en.wikipedia.org/wiki/A%C3%A7a%C3%AD_palm",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Euterpe_oleracea_salu.jpg",
+    "cover": "/imagens/plantas/acai-cover.jpg"
+  },
+  "manga": {
+    "credit": "Wikipedia · Mangifera indica",
+    "source": "https://en.wikipedia.org/wiki/Mangifera_indica",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Mangoes_%28Magnifera_indica%29_from_India.jpg",
+    "cover": "/imagens/plantas/manga-cover.jpg"
+  },
+  "banana": {
+    "credit": "Wikipedia · Banana",
+    "source": "https://en.wikipedia.org/wiki/Banana",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg",
+    "cover": "/imagens/plantas/banana-cover.jpg"
+  },
+  "maca": {
+    "credit": "Wikipedia · Apple",
+    "source": "https://en.wikipedia.org/wiki/Apple",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Pink_lady_and_cross_section.jpg",
+    "cover": "/imagens/plantas/maca-cover.jpg"
+  },
+  "abacaxi": {
+    "credit": "Wikipedia · Pineapple",
+    "source": "https://en.wikipedia.org/wiki/Pineapple",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/7/74/%E0%B4%95%E0%B5%88%E0%B4%A4%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B4%95%E0%B5%8D%E0%B4%95.jpg",
+    "cover": "/imagens/plantas/abacaxi-cover.jpg"
+  },
+  "goiaba": {
+    "credit": "Wikipedia · Psidium guajava",
+    "source": "https://en.wikipedia.org/wiki/Psidium_guajava",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Psidium_guajava_fruit.jpg",
+    "cover": "/imagens/plantas/goiaba-cover.jpg"
+  },
+  "cacau": {
+    "credit": "Wikipedia · Theobroma cacao",
+    "source": "https://en.wikipedia.org/wiki/Theobroma_cacao",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Matadecacao.jpg",
+    "cover": "/imagens/plantas/cacau-cover.jpg"
+  },
+  "uva": {
+    "credit": "Wikipedia · Vitis vinifera",
+    "source": "https://en.wikipedia.org/wiki/Vitis_vinifera",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Cabernet_Sauvignon_Gaillac.jpg",
+    "cover": "/imagens/plantas/uva-cover.jpg"
+  },
+  "morango": {
+    "credit": "Wikipedia · Strawberry",
+    "source": "https://en.wikipedia.org/wiki/Strawberry",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/3840px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg",
+    "cover": "/imagens/plantas/morango-cover.jpg"
+  },
+  "maracuja-fruta": {
+    "credit": "Wikipedia · Passiflora edulis",
+    "source": "https://en.wikipedia.org/wiki/Passiflora_edulis",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/9/91/Passiflora_edulis_forma_flavicarpa.jpg",
+    "cover": "/imagens/plantas/maracuja-fruta-cover.jpg"
+  }
+}

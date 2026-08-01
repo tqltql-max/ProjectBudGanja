@@ -39,8 +39,10 @@ function pageShell(opts) {
     bodyPage,
     mainClass,
     bodyHtml,
-    extraScripts
+    extraScripts,
+    ogImage
   } = opts;
+  const og = ogImage || '/imagens/og-default.jpg';
   return `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -52,7 +54,7 @@ function pageShell(opts) {
     <meta property="og:description" content="${escapeHtml(description)}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://inspetorbudganja.com.br${canonical}">
-    <meta property="og:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
+    <meta property="og:image" content="https://inspetorbudganja.com.br${og}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${escapeHtml(title)}">
     <meta name="twitter:description" content="${escapeHtml(description)}">
@@ -249,7 +251,8 @@ ${unifespBlock}
     bodyPage: 'planta',
     mainClass: 'article-page relatorio-container planta-ficha',
     bodyHtml: body,
-    extraScripts: ''
+    extraScripts: '',
+    ogImage: plant.cover || '/imagens/og-default.jpg'
   });
 }
 

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T15:00:11.946Z",
+  "updatedAt": "2026-08-01T22:30:03.870Z",
   "disclaimer": "Fichas educacionais de plantas fitoterápicas e medicinais do Brasil. Não substituem orientação profissional de saúde nem aconselhamento jurídico.",
   "plants": [
     {
@@ -20,7 +20,7 @@
         "polissacarideos"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/babosa-cover.jpg",
       "id": "babosa",
       "slug": "babosa",
       "nomePopular": "Babosa",
@@ -46,7 +46,7 @@
         "asteraceae"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/camomila-cover.jpg",
       "id": "camomila",
       "slug": "camomila",
       "nomePopular": "Camomila",
@@ -72,7 +72,7 @@
         "oleo-essencial"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/capim-limao-cover.jpg",
       "id": "capim-limao",
       "slug": "capim-limao",
       "nomePopular": "Capim-limão",
@@ -98,7 +98,7 @@
         "baccharis"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/carqueja-cover.jpg",
       "id": "carqueja",
       "slug": "carqueja",
       "nomePopular": "Carqueja",
@@ -123,7 +123,7 @@
         "diuretico"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/cavalinha-cover.jpg",
       "id": "cavalinha",
       "slug": "cavalinha",
       "nomePopular": "Cavalinha",
@@ -149,7 +149,7 @@
         "oleo-essencial"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/erva-cidreira-cover.jpg",
       "id": "erva-cidreira",
       "slug": "erva-cidreira",
       "nomePopular": "Erva-cidreira",
@@ -175,7 +175,7 @@
         "gastrico"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/espinheira-santa-cover.jpg",
       "id": "espinheira-santa",
       "slug": "espinheira-santa",
       "nomePopular": "Espinheira-santa",
@@ -201,7 +201,7 @@
         "xarope"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/guaco-cover.jpg",
       "id": "guaco",
       "slug": "guaco",
       "nomePopular": "Guaco",
@@ -227,7 +227,7 @@
         "digestao"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/hortela-cover.jpg",
       "id": "hortela",
       "slug": "hortela",
       "nomePopular": "Hortelã",
@@ -253,7 +253,7 @@
         "plectranthus"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/boldo-cover.jpg",
       "id": "boldo",
       "slug": "boldo",
       "nomePopular": "Boldo",
@@ -279,7 +279,7 @@
         "lamiaceae"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/melissa-cover.jpg",
       "id": "melissa",
       "slug": "melissa",
       "nomePopular": "Melissa",
@@ -306,7 +306,7 @@
         "canfora"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/alecrim-cover.jpg",
       "id": "alecrim",
       "slug": "alecrim",
       "nomePopular": "Alecrim",
@@ -332,7 +332,7 @@
         "nauseas"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/gengibre-cover.jpg",
       "id": "gengibre",
       "slug": "gengibre",
       "nomePopular": "Gengibre",
@@ -359,7 +359,7 @@
         "digestivo"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/curcuma-cover.jpg",
       "id": "curcuma",
       "slug": "curcuma",
       "nomePopular": "Cúrcuma",
@@ -386,7 +386,7 @@
         "imunidade"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/unha-de-gato-cover.jpg",
       "id": "unha-de-gato",
       "slug": "unha-de-gato",
       "nomePopular": "Unha-de-gato",
@@ -413,7 +413,7 @@
         "sementes"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/sucupira-cover.jpg",
       "id": "sucupira",
       "slug": "sucupira",
       "nomePopular": "Sucupira",
@@ -439,7 +439,7 @@
         "resina"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/copaiba-cover.jpg",
       "id": "copaiba",
       "slug": "copaiba",
       "nomePopular": "Copaíba",
@@ -465,7 +465,7 @@
         "cosmetica"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/andiroba-cover.jpg",
       "id": "andiroba",
       "slug": "andiroba",
       "nomePopular": "Andiroba",
@@ -492,7 +492,7 @@
         "anestesico"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/jambu-cover.jpg",
       "id": "jambu",
       "slug": "jambu",
       "nomePopular": "Jambu",
@@ -518,7 +518,7 @@
         "sedativo"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/mulungu-cover.jpg",
       "id": "mulungu",
       "slug": "mulungu",
       "nomePopular": "Mulungu",
@@ -545,7 +545,7 @@
         "passiflora"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/maracuja-cover.jpg",
       "id": "maracuja",
       "slug": "maracuja",
       "nomePopular": "Maracujá",
@@ -571,7 +571,7 @@
         "topico"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/calendula-cover.jpg",
       "id": "calendula",
       "slug": "calendula",
       "nomePopular": "Calêndula",
@@ -597,7 +597,7 @@
         "casca"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/barbatimao-cover.jpg",
       "id": "barbatimao",
       "slug": "barbatimao",
       "nomePopular": "Barbatimão",
@@ -623,7 +623,7 @@
         "alcaloides"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/jaborandi-cover.jpg",
       "id": "jaborandi",
       "slug": "jaborandi",
       "nomePopular": "Jaborandi",
@@ -649,7 +649,7 @@
         "toxica"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/ipecacuanha-cover.jpg",
       "id": "ipecacuanha",
       "slug": "ipecacuanha",
       "nomePopular": "Ipecacuanha",
@@ -675,7 +675,7 @@
         "tonico"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/pfaffia-cover.jpg",
       "id": "pfaffia",
       "slug": "pfaffia",
       "nomePopular": "Pfaffia (ginseng-brasileiro)",
@@ -703,7 +703,7 @@
         "pimenta-rosa"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/aroeira-cover.jpg",
       "id": "aroeira",
       "slug": "aroeira",
       "nomePopular": "Aroeira",
@@ -729,7 +729,7 @@
         "alcaloides"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/quina-cover.jpg",
       "id": "quina",
       "slug": "quina",
       "nomePopular": "Quina",
@@ -783,7 +783,7 @@
         "cbd"
       ],
       "relatedUnifesp": true,
-      "cover": null,
+      "cover": "/imagens/plantas/cannabis-sativa-cover.jpg",
       "id": "cannabis-sativa",
       "slug": "cannabis-sativa",
       "nomePopular": "Cannabis (medicinal)",
@@ -820,7 +820,7 @@
         "frutos"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/abacate-cover.jpg",
       "relatedInspections": [
         {
           "href": "/posts/post-inspecao-derivado-abacate.html",
@@ -862,7 +862,7 @@
         "etimo"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/coco-cover.jpg",
       "relatedInspections": [
         {
           "href": "/posts/post-inspecao-derivado-coco.html",
@@ -898,7 +898,7 @@
         "suco"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/laranja-cover.jpg",
       "relatedInspections": []
     },
     {
@@ -928,7 +928,7 @@
         "tropicais"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/acai-cover.jpg",
       "relatedInspections": []
     },
     {
@@ -957,7 +957,7 @@
         "polpa"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/manga-cover.jpg",
       "relatedInspections": []
     },
     {
@@ -985,7 +985,7 @@
         "snacks"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/banana-cover.jpg",
       "relatedInspections": []
     },
     {
@@ -1014,7 +1014,7 @@
         "snacks"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/maca-cover.jpg",
       "relatedInspections": []
     },
     {
@@ -1043,7 +1043,7 @@
         "calda"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/abacaxi-cover.jpg",
       "relatedInspections": []
     },
     {
@@ -1072,7 +1072,7 @@
         "doce"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/goiaba-cover.jpg",
       "relatedInspections": []
     },
     {
@@ -1102,7 +1102,7 @@
         "lipidos"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/cacau-cover.jpg",
       "relatedInspections": []
     },
     {
@@ -1130,7 +1130,7 @@
         "suco"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/uva-cover.jpg",
       "relatedInspections": []
     },
     {
@@ -1159,7 +1159,7 @@
         "aroma"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/morango-cover.jpg",
       "relatedInspections": []
     },
     {
@@ -1188,7 +1188,7 @@
         "tropicais"
       ],
       "relatedUnifesp": false,
-      "cover": null,
+      "cover": "/imagens/plantas/maracuja-fruta-cover.jpg",
       "relatedInspections": []
     }
   ]
