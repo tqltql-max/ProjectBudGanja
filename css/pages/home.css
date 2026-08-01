@@ -244,13 +244,19 @@ body[data-page="home"] .home-vida-cover {
     display: block;
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 21 / 9;
     margin: 0 0 1rem;
     border-radius: 12px;
     overflow: hidden;
     background: #0a0f08;
     border: 1px solid rgba(212, 175, 55, 0.28);
     text-decoration: none;
+}
+
+@media (max-width: 560px) {
+    body[data-page="home"] .home-vida-cover {
+        aspect-ratio: 16 / 9;
+    }
 }
 
 body[data-page="home"] .home-vida-cover img {

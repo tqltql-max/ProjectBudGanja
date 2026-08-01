@@ -110,6 +110,22 @@ body[data-page="vida"] {
     color: rgba(244, 237, 216, 0.88);
 }
 
+.vida-hero-art {
+    margin: 1.5rem 0 0;
+    width: min(100%, 52rem);
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.28);
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.4);
+    animation: vida-fade-up 0.85s 0.06s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.vida-hero-art img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .vida-hero-actions {
     display: flex;
     flex-wrap: wrap;
