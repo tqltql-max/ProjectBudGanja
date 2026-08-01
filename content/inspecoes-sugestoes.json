@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T13:05:00.000Z",
+  "updatedAt": "2026-08-01T13:32:19.561Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -452,6 +452,49 @@
         "https://en.wikipedia.org/wiki/Weeds_(TV_series)"
       ],
       "notes": "Não romantizar; mapear tropos e limites editoriais."
+    },
+    {
+      "id": "arte-send-me-on-my-way",
+      "title": "Send Me On My Way — Rusted Root e abertura da rádio",
+      "titleEn": "Send Me On My Way — Rusted Root and radio opening",
+      "titleEs": "Send Me On My Way — Rusted Root y apertura de la radio",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Ficha fundadora Artes: música de boas-vindas da BudGanja Radio.",
+      "whyEn": "Founding Arts sheet: BudGanja Radio welcome track.",
+      "whyEs": "Ficha fundadora Artes: pista de bienvenida de BudGanja Radio.",
+      "suggestedSlug": "inspecao-arte-send-me-on-my-way",
+      "doneHref": "/posts/post-inspecao-arte-send-me-on-my-way.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Send_Me_On_My_Way",
+        "https://www.youtube.com/watch?v=IGMabBGydC0",
+        "/radio/"
+      ],
+      "notes": "Elo com /radio/ e Palavras (passar); faixa CBJr fica em Pessoas/Chorão."
+    },
+    {
+      "id": "arte-so-os-loucos-sabem",
+      "title": "Só os Loucos Sabem — CBJr e a segunda faixa da rádio",
+      "titleEn": "Só os Loucos Sabem — CBJr and the radio’s second track",
+      "titleEs": "Só os Loucos Sabem — CBJr y la segunda pista de la radio",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes: segunda música da BudGanja Radio (ao vivo Chegou Quem Faltava).",
+      "whyEn": "Arts: second BudGanja Radio track (live Chegou Quem Faltava).",
+      "whyEs": "Artes: segunda canción de BudGanja Radio (en vivo Chegou Quem Faltava).",
+      "suggestedSlug": "inspecao-arte-so-os-loucos-sabem",
+      "doneHref": "/posts/post-inspecao-arte-so-os-loucos-sabem.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Chegou_Quem_Faltava",
+        "https://www.youtube.com/watch?v=NFADwNLNSd4",
+        "/radio/",
+        "/posts/post-inspecao-figura-chorao.html"
+      ],
+      "notes": "Obra ≠ biografia Chorão; par da abertura Rusted Root."
     }
   ]
 }

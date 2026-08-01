@@ -144,12 +144,20 @@
                   "description": "Canais, equipamentos, insumos e formação."
                 },
                 {
-                  "label": "Inspeção: Dr. Lair Ribeiro — canal oficial e divulgação sobre cannabinoides",
+                  "label": "Inspeção: Send Me On My Way — Rusted Root e abertura da BudGanja Radio",
+                  "tileLabel": "Inspeção: Send Me On My Way — R…",
+                  "href": "/posts/post-inspecao-arte-send-me-on-my-way.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-send-me-on-my-way",
+                  "description": "Ficha fundadora da série Artes: a canção de boas-vindas da casa na BudGanja Radio — obra, uso no player e elos com Palavras (passar) e a segunda faixa CBJr da playlist."
+                },
+                {
+                  "label": "Inspeção: Dr. Lair Ribeiro — cannabinoides, açúcar e cruzamento com a cana",
                   "tileLabel": "Inspeção: Dr. Lair Ribeiro — ca…",
                   "href": "/posts/post-inspecao-divulgacao-lair-ribeiro.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-divulgacao-lair-ribeiro",
-                  "description": "Ficha fundadora da série Divulgação: IDs do canal @DrLairRibeiroOficiall, textos do portal sobre dor/Alzheimer e limites públicos — complementar ao Legado UNIFESP, sem equiparação."
+                  "description": "Divulgação: IDs do canal, textos canábicos, limites públicos e varredura de 887 vídeos sobre açúcar/frutose/diabesidade — elo com a ficha Derivados da cana-de-açúcar (portal nomeia sacarose da cana)."
                 },
                 {
                   "label": "Inspeção: Heródoto — método da pesquisa e a palavra passar",
@@ -168,12 +176,12 @@
                   "description": "Ficha fundadora da série Palavras: etimologia afro-atlântica de «maconha», viagem histórica, mudança de sentido e elo com *Cannabis sativa* no catálogo medicinal."
                 },
                 {
-                  "label": "Inspeção: Cana-de-açúcar — origem da planta e açúcar refinado",
+                  "label": "Inspeção: Cana-de-açúcar — origem da planta, açúcar refinado e cruzamento Lair",
                   "tileLabel": "Inspeção: Cana-de-açúcar — orig…",
                   "href": "/posts/post-inspecao-derivado-cana-de-acucar.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-derivado-cana-de-acucar",
-                  "description": "Ficha fundadora da série Derivados de risco: origem botânica de *Saccharum officinarum*, história no Brasil e alerta sobre açúcares livres / açúcar refinado em excesso — sem demonizar a planta."
+                  "description": "Derivados de risco: origem da cana, OMS (açúcares livres) e cruzamento com a divulgação do Dr. Lair Ribeiro — portal (sacarose da cana) + varredura de 887 vídeos do canal (açúcar, frutose, diabesidade)."
                 },
                 {
                   "label": "Inspeção: Padre Ticão — Antônio Luiz Marchioni",
@@ -214,6 +222,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-ventilacao-tenda",
                   "description": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório."
+                },
+                {
+                  "label": "Inspeção: Só os Loucos Sabem — Charlie Brown Jr. e a segunda faixa da rádio",
+                  "tileLabel": "Inspeção: Só os Loucos Sabem — …",
+                  "href": "/posts/post-inspecao-arte-so-os-loucos-sabem.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-so-os-loucos-sabem",
+                  "description": "Artes: segunda música da BudGanja Radio — versão ao vivo Chegou Quem Faltava; obra na playlist, distinta da biografia em Chorão e par da abertura Rusted Root."
                 },
                 {
                   "label": "Inspeção: Gregorio Duvivier — o método da palavra e a série Palavras",
