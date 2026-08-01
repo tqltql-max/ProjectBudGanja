@@ -23,7 +23,7 @@ const STATIC_PAGES = [
     desc: c.description,
     keywords: c.keywords || c.slug
   })),
-  { url: '/comunidade/', title: 'Comunidade', desc: 'Feed de fotos e relatos de cultivo vegetal partilhados pelos cultivadores', keywords: 'comunidade feed fotos diário cultivo comentários' },
+  { url: '/comunidade/', title: 'Feed Vivo', desc: 'Feed Vivo — fotos e relatos de cultivo vegetal partilhados pelos cultivadores', keywords: 'comunidade feed vivo fotos diário cultivo comentários' },
   { url: '/sorteios/', title: 'Sorteios', desc: 'Sorteio de inauguração — clonadora aeropônica caseira em breve', keywords: 'sorteio inauguração clonadora' },
   { url: '/videos/', title: 'Últimos vídeos', desc: 'Vídeos recentes do canal YouTube', keywords: 'youtube vídeo canal' },
   { url: '/radio/', title: 'BudGanja Radio', desc: 'Playlist BudGanja Radio do laboratório', keywords: 'rádio budganja playlist' },

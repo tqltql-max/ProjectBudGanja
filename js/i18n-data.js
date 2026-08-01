@@ -106,7 +106,7 @@ window.__I18N_LOCALES__ = {
       "aboutProject": "About the project",
       "technicalResearch": "Research",
       "community": "Community",
-      "communityFeed": "Community feed",
+      "communityFeed": "Feed Vivo",
       "growDiary": "Research diary",
       "diaryShort": "Diary",
       "radio": "BudGanja Radio",
@@ -700,9 +700,9 @@ window.__I18N_LOCALES__ = {
       },
       "community": {
         "eyebrow": "Community",
-        "title": "Community",
+        "title": "Feed Vivo",
         "subtitle": "Open feed for everyone — identify plants and share your diary. Plant content only.",
-        "docTitle": "Community | Inspetor BudGanja"
+        "docTitle": "Feed Vivo | Inspetor BudGanja"
       },
       "giveaways": {
         "eyebrow": "Community",
@@ -874,7 +874,7 @@ window.__I18N_LOCALES__ = {
       "aboutProject": "Sobre el proyecto",
       "technicalResearch": "Investigaciones",
       "community": "Comunidad",
-      "communityFeed": "Feed de la comunidad",
+      "communityFeed": "Feed Vivo",
       "growDiary": "Diario de investigaciones",
       "diaryShort": "Diario",
       "radio": "BudGanja Radio",
@@ -1468,9 +1468,9 @@ window.__I18N_LOCALES__ = {
       },
       "community": {
         "eyebrow": "Comunidad",
-        "title": "Comunidad",
+        "title": "Feed Vivo",
         "subtitle": "Feed abierto a todos — identifica plantas y comparte el diario. Solo contenido vegetal.",
-        "docTitle": "Comunidad | Inspetor BudGanja"
+        "docTitle": "Feed Vivo | Inspetor BudGanja"
       },
       "giveaways": {
         "eyebrow": "Comunidad",
@@ -1642,7 +1642,7 @@ window.__I18N_LOCALES__ = {
       "aboutProject": "Sobre o projeto",
       "technicalResearch": "Pesquisas",
       "community": "Comunidade",
-      "communityFeed": "Feed da comunidade",
+      "communityFeed": "Feed Vivo",
       "growDiary": "Diário de pesquisas",
       "diaryShort": "Diário",
       "radio": "BudGanja Radio",
@@ -2236,9 +2236,9 @@ window.__I18N_LOCALES__ = {
       },
       "community": {
         "eyebrow": "Comunidade",
-        "title": "Comunidade",
+        "title": "Feed Vivo",
         "subtitle": "Feed aberto a todos — identifica plantas e partilha o diário. Só conteúdo vegetal.",
-        "docTitle": "Comunidade | Inspetor BudGanja"
+        "docTitle": "Feed Vivo | Inspetor BudGanja"
       },
       "giveaways": {
         "eyebrow": "Comunidade",

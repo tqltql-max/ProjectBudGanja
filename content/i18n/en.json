@@ -104,7 +104,7 @@
     "aboutProject": "About the project",
     "technicalResearch": "Research",
     "community": "Community",
-    "communityFeed": "Community feed",
+    "communityFeed": "Feed Vivo",
     "growDiary": "Research diary",
     "diaryShort": "Diary",
     "radio": "BudGanja Radio",
@@ -698,9 +698,9 @@
     },
     "community": {
       "eyebrow": "Community",
-      "title": "Community",
+      "title": "Feed Vivo",
       "subtitle": "Open feed for everyone — identify plants and share your diary. Plant content only.",
-      "docTitle": "Community | Inspetor BudGanja"
+      "docTitle": "Feed Vivo | Inspetor BudGanja"
     },
     "giveaways": {
       "eyebrow": "Community",
