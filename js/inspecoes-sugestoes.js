@@ -18,6 +18,7 @@
     loja: 'pages.inspections.sugTipoLoja',
     insumo: 'pages.inspections.sugTipoInsumo',
     derivado: 'pages.inspections.sugTipoDerivado',
+    fruto: 'pages.inspections.sugTipoFruto',
     palavra: 'pages.inspections.sugTipoPalavra',
     pessoas: 'pages.inspections.sugTipoPessoas',
     arte: 'pages.inspections.sugTipoArte'
@@ -154,6 +155,7 @@
       loja: 'Loja',
       insumo: 'Insumo',
       derivado: 'Derivado',
+      fruto: 'Fruto',
       palavra: 'Palavra',
       pessoas: 'Pessoas',
       arte: 'Arte'

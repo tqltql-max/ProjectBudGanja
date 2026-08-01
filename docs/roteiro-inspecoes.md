@@ -19,6 +19,7 @@ Transformar um canal, tema técnico ou vitrine comercial em um relatório editor
 | **Legado** | `legado-pessoas` | `inspecao-<pessoa>` |
 | **Divulgação** | `divulgacao-saude` | `inspecao-divulgacao-<nome>` |
 | **Derivados de risco** | `plantas-derivados-risco` | `inspecao-derivado-<especie>` |
+| **Frutos** | `plantas-frutos` | `inspecao-planta-<slug>` *(com `hubCategory: "fruto"` em `content/plantas.json`)* |
 | **Palavras** | `palavras-origem` | `inspecao-palavra-<vocábulo>` |
 | **Pessoas** | `pessoas-historia` | `inspecao-figura-<nome>` *(distinto do Legado canábico)* |
 | **Artes** | `artes-cultura` | `inspecao-arte-<obra>` / `inspecao-filme-<obra>` / `inspecao-serie-<obra>` |

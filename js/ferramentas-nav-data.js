@@ -179,6 +179,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Homenagem documental ao Padre Ticão (Antônio Luiz Marchioni, 1952–2021): pároco de Ermelino Matarazzo, líder popular da zona leste e fundador do MovReCam — mérito máximo na democratização da educação sobre cannabis medicinal no Brasil."
             },
             {
+              "label": "Inspeção: Fruto — Coco — água, polpa e óleo da drupa tropical",
+              "tileLabel": "Inspeção: Fruto — Coco — água, …",
+              "href": "/posts/post-inspecao-planta-coco.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-coco",
+              "description": "*Cocos nucifera* — água endospérmica, polpa e óleo; etimologia do «rosto» do coco; separar fruto inteiro de derivados industriais adoçados e refinados."
+            },
+            {
               "label": "Inspeção: Planta — Babosa — gel foliar e polissacarídeos",
               "tileLabel": "Inspeção: Planta — Babosa — gel…",
               "href": "/posts/post-inspecao-planta-babosa.html",
@@ -721,14 +729,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-abacate",
               "description": "*Persea americana* — polpa rica em MUFA, persina defensiva e etimologia náuatle *āhuacatl*; separar planta inteira de derivados industriais."
-            },
-            {
-              "label": "Inspeção: Planta — Coco — água, polpa e óleo da drupa tropical",
-              "tileLabel": "Inspeção: Planta — Coco — água,…",
-              "href": "/posts/post-inspecao-planta-coco.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-planta-coco",
-              "description": "*Cocos nucifera* — água endospérmica, polpa e óleo; etimologia do «rosto» do coco; separar fruto inteiro de derivados industriais adoçados e refinados."
             }
           ]
         },

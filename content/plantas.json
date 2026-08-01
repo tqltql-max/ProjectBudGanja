@@ -835,6 +835,7 @@
       "nomePopular": "Coco",
       "nomeCientifico": "Cocos nucifera L.",
       "familia": "Arecaceae",
+      "hubCategory": "fruto",
       "summary": "Palmeira tropical (*Cocos nucifera*): o fruto (drupa) oferece água, polpa e óleo — a ficha separa o coco inteiro e a água fresca dos derivados industriais adoçados, refinados e ultraprocessados.",
       "partsUsed": [
         "Fruto (água endospérmica)",
@@ -851,6 +852,7 @@
       "cautions": "Água e polpa frescas são alimentos comuns. Derivados industriais com açúcar, xaropes e aditivos (água de coco adoçada, sobremesas, snacks) têm ficha própria em Derivados de risco. Óleo de coco é rico em gordura saturada — dose e contexto alimentar importam. Conteúdo educacional — não substitui orientação profissional.",
       "tags": [
         "alimento",
+        "frutos",
         "frutifera",
         "tropicais",
         "culinaria",

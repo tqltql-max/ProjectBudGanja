@@ -44,6 +44,7 @@ var SERIES_LABELS = {
   'artigos-cientificos': 'Artigos científicos',
   'legado-pessoas': 'Legado',
   'plantas-medicinais': 'Plantas medicinais',
+  'plantas-frutos': 'Frutos',
   'plantas-derivados-risco': 'Derivados de risco',
   'palavras-origem': 'Palavras',
   'pessoas-historia': 'Pessoas',
@@ -83,6 +84,10 @@ function seriesBadgeHtml(post, options) {
   if (options.hub && (post.series === 'legado-pessoas' || post.series.indexOf('legado') === 0)) {
     var legado = post.seriesLabel || 'Legado';
     return '<span class="post-card-series" data-series="' + post.series + '">' + legado + '</span>';
+  }
+  if (options.hub && post.series === 'plantas-frutos') {
+    var fruto = post.seriesLabel || 'Fruto';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + fruto + '</span>';
   }
   if (options.hub && (post.series === 'plantas-medicinais' || /inspecao-planta-/i.test(post.slug || ''))) {
     var planta = post.seriesLabel || 'Planta';
@@ -170,6 +175,7 @@ function resolveInspecaoTipo(post) {
   ) {
     return 'pessoa';
   }
+  if (series === 'plantas-frutos') return 'fruto';
   if (series === 'plantas-medicinais' || /inspecao-planta-/i.test(slug)) return 'planta';
   if (/^inspecao-canal-/i.test(slug)) return 'canal';
   return 'canal';
@@ -307,6 +313,7 @@ var HUB_CHIP_ANCHOR = {
   artigo: 'artigos',
   pessoa: 'pessoas',
   planta: 'plantas',
+  fruto: 'frutos',
   derivado: 'derivados',
   palavra: 'palavras',
   pessoas: 'pessoas-historia',
@@ -322,6 +329,7 @@ var HUB_ANCHOR_TO_TIPO = {
   cursos: 'curso',
   artigos: 'artigo',
   plantas: 'planta',
+  frutos: 'fruto',
   derivados: 'derivado',
   palavras: 'palavra',
   divulgacao: 'divulgacao',
@@ -336,6 +344,7 @@ var INSPECAO_HUB_TIPOS = [
   { id: 'curso', labelKey: 'pages.inspections.chipCourses', fallback: 'Cursos', sort: 'seriesOrder' },
   { id: 'artigo', labelKey: 'pages.inspections.chipArticles', fallback: 'Artigos', sort: 'seriesOrder' },
   { id: 'planta', labelKey: 'pages.inspections.chipPlants', fallback: 'Plantas', sort: 'seriesOrder' },
+  { id: 'fruto', labelKey: 'pages.inspections.chipFruits', fallback: 'Frutos', sort: 'seriesOrder', keepVisible: true },
   { id: 'derivado', labelKey: 'pages.inspections.chipDerivatives', fallback: 'Derivados', sort: 'seriesOrder' },
   { id: 'palavra', labelKey: 'pages.inspections.chipWords', fallback: 'Palavras', sort: 'seriesOrder', keepVisible: true },
   { id: 'divulgacao', labelKey: 'pages.inspections.chipOutreach', fallback: 'Divulgação', sort: 'seriesOrder' },

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T19:09:09.352Z",
+  "updatedAt": "2026-08-01T19:15:02.008Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -1270,9 +1270,9 @@
       "tipo": "derivado",
       "priority": 2,
       "status": "feita",
-      "why": "Derivados de risco: coco inteiro / água fresca vs ultraprocessado adoçado e óleo refinado; mapa químico + elo planta.",
-      "whyEn": "Risk derivatives: whole coconut / fresh water vs sweetened ultra-processed and refined oil; chemical map + plant link.",
-      "whyEs": "Derivados de riesgo: coco entero / agua fresca vs ultraprocesado endulzado y aceite refinado; mapa químico + vínculo planta.",
+      "why": "Derivados de risco: coco inteiro / água fresca vs ultraprocessado adoçado e óleo refinado; mapa químico + elo fruto.",
+      "whyEn": "Risk derivatives: whole coconut / fresh water vs sweetened ultra-processed and refined oil; chemical map + fruit link.",
+      "whyEs": "Derivados de riesgo: coco entero / agua fresca vs ultraprocesado endulzado y aceite refinado; mapa químico + vínculo fruto.",
       "suggestedSlug": "inspecao-derivado-coco",
       "doneHref": "/posts/post-inspecao-derivado-coco.html",
       "seriesHint": "plantas-derivados-risco",
@@ -1283,6 +1283,26 @@
         "/posts/post-inspecao-derivado-abacate.html"
       ],
       "notes": "Palmeira ≠ vilã; foco em açúcar × óleo × aditivos × dose."
+    },
+    {
+      "id": "fruto-coco",
+      "title": "Coco — fruto (água, polpa e óleo)",
+      "titleEn": "Coconut — fruit (water, pulp and oil)",
+      "titleEs": "Coco — fruto (agua, pulpa y aceite)",
+      "tipo": "fruto",
+      "priority": 2,
+      "status": "feita",
+      "why": "Nova categoria Frutos: *Cocos nucifera* no hub — distinto de Plantas medicinais e de Derivados.",
+      "whyEn": "New Fruits category: *Cocos nucifera* on the hub — distinct from Medicinal plants and Derivatives.",
+      "whyEs": "Nueva categoría Frutos: *Cocos nucifera* en el hub — distinta de Plantas medicinales y Derivados.",
+      "suggestedSlug": "inspecao-planta-coco",
+      "doneHref": "/posts/post-inspecao-planta-coco.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "/plantas/coco/",
+        "/posts/post-inspecao-derivado-coco.html"
+      ],
+      "notes": "hubCategory: fruto em plantas.json"
     }
   ]
 }

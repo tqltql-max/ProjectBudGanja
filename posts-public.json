@@ -114,6 +114,25 @@
     "seriesLabel": "Padre Ticão · legado"
   },
   {
+    "title": "Inspeção: Fruto — Coco — água, polpa e óleo da drupa tropical",
+    "titleEn": "Inspection: Fruit — Coconut — water, pulp and oil of the tropical drupe",
+    "titleEs": "Inspección: Fruto — Coco — agua, pulpa y aceite de la drupa tropical",
+    "excerpt": "*Cocos nucifera* — água endospérmica, polpa e óleo; etimologia do «rosto» do coco; separar fruto inteiro de derivados industriais adoçados e refinados.",
+    "excerptEn": "*Cocos nucifera* — endosperm water, pulp and oil; etymology of the coconut “face”; separate whole fruit from sweetened/refined industrial derivatives.",
+    "excerptEs": "*Cocos nucifera* — agua endospérmica, pulpa y aceite; etimología del «rostro» del coco; separar fruto entero de derivados industriales.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-planta-coco",
+    "url": "/posts/post-inspecao-planta-coco.html",
+    "date": "2026-07-31T14:00:00.000Z",
+    "filename": "posts/post-inspecao-planta-coco.html",
+    "coverImage": "/imagens/og-default.jpg",
+    "category": "inspecao",
+    "series": "plantas-frutos",
+    "seriesOrder": 1,
+    "seriesLabel": "Coco · fruto"
+  },
+  {
     "title": "Inspeção: Planta — Babosa — gel foliar e polissacarídeos",
     "titleEn": "Inspection: Plant — Aloe — leaf gel and polysaccharides",
     "titleEs": "Inspección: Planta — Sábila — gel foliar y polisacáridos",
@@ -1404,25 +1423,6 @@
     "series": "plantas-medicinais",
     "seriesOrder": 30,
     "seriesLabel": "Abacate"
-  },
-  {
-    "title": "Inspeção: Planta — Coco — água, polpa e óleo da drupa tropical",
-    "titleEn": "Inspection: Plant — Coconut — water, pulp and oil of the tropical drupe",
-    "titleEs": "Inspección: Planta — Coco — agua, pulpa y aceite de la drupa tropical",
-    "excerpt": "*Cocos nucifera* — água endospérmica, polpa e óleo; etimologia do «rosto» do coco; separar fruto inteiro de derivados industriais adoçados e refinados.",
-    "excerptEn": "*Cocos nucifera* — endosperm water, pulp and oil; etymology of the coconut “face”; separate whole fruit from sweetened/refined industrial derivatives.",
-    "excerptEs": "*Cocos nucifera* — agua endospérmica, pulpa y aceite; etimología del «rostro» del coco; separar fruto entero de derivados industriales.",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-planta-coco",
-    "url": "/posts/post-inspecao-planta-coco.html",
-    "date": "2026-07-31T14:00:00.000Z",
-    "filename": "posts/post-inspecao-planta-coco.html",
-    "coverImage": "/imagens/og-default.jpg",
-    "category": "inspecao",
-    "series": "plantas-medicinais",
-    "seriesOrder": 31,
-    "seriesLabel": "Coco"
   },
   {
     "title": "Super Solo: Guia de Uso",
