@@ -39,120 +39,35 @@
 
     <main id="main-content" class="conteudo-interno inspecoes-hub">
         <header class="inspecoes-hub-header">
+            <p class="guia-badge" data-i18n="pages.inspections.eyebrow">Biblioteca</p>
             <h1 data-i18n="pages.inspections.title">Inspeções</h1>
             <p class="secao-subtitulo inspecoes-hub-lead" data-i18n="pages.inspections.subtitle">Relatórios técnicos com método verificável — legado, pessoas, canais, cursos, artigos, plantas medicinais, derivados de risco, palavras, divulgação, artes e equipamentos.</p>
         </header>
 
-        <nav class="inspecoes-hub-nav" aria-label="Secções de inspeções">
-            <a class="inspecoes-hub-chip" href="#inspecoes-pessoas" data-i18n="pages.inspections.chipPeople">Legado</a>
-            <a class="inspecoes-hub-chip" href="#inspecoes-pessoas-historia" data-i18n="pages.inspections.chipPeopleHistory">Pessoas</a>
-            <a class="inspecoes-hub-chip" href="#inspecoes-canais" data-i18n="pages.inspections.chipChannels">Canais</a>
-            <a class="inspecoes-hub-chip" href="#inspecoes-cursos" data-i18n="pages.inspections.chipCourses">Cursos</a>
-            <a class="inspecoes-hub-chip" href="#inspecoes-artigos" data-i18n="pages.inspections.chipArticles">Artigos</a>
-            <a class="inspecoes-hub-chip" href="#inspecoes-plantas" data-i18n="pages.inspections.chipPlants">Plantas</a>
-            <a class="inspecoes-hub-chip" href="#inspecoes-derivados" data-i18n="pages.inspections.chipDerivatives">Derivados</a>
-            <a class="inspecoes-hub-chip" href="#inspecoes-palavras" data-i18n="pages.inspections.chipWords">Palavras</a>
-            <a class="inspecoes-hub-chip" href="#inspecoes-divulgacao" data-i18n="pages.inspections.chipOutreach">Divulgação</a>
-            <a class="inspecoes-hub-chip" href="#inspecoes-artes" data-i18n="pages.inspections.chipArts">Artes</a>
-            <a class="inspecoes-hub-chip" href="#inspecoes-sugestoes" data-i18n="pages.inspections.chipSuggestions">Sugestões</a>
-        </nav>
+        <nav id="inspecoes-filters" class="videos-filters-wrap" aria-label="Filtrar por série" data-i18n-aria="pages.inspections.filtersLabel"></nav>
 
-        <section id="inspecoes-pessoas" class="inspecoes-hub-section" data-inspecao-tipo="pessoa" hidden>
-            <header class="inspecoes-hub-section-head">
-                <h2 class="category-title" data-i18n="pages.inspections.sectionPeople">Legado</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionPeopleDesc">Homenagens documentais a pessoas de referência — vida, mérito e cruzamento com o ecossistema inspecionado.</p>
-            </header>
-            <div class="container-cards publications-inspecoes" data-inspecao-grid="pessoa">
-                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-            </div>
-        </section>
+        <div class="videos-search-wrap inspecoes-search-wrap">
+            <label class="videos-search-label" for="inspecoes-search" data-i18n="pages.inspections.searchLabel">Buscar</label>
+            <input
+                type="search"
+                id="inspecoes-search"
+                class="videos-search-input"
+                placeholder="Título, série ou palavra…"
+                data-i18n-placeholder="pages.inspections.searchPlaceholder"
+                autocomplete="off"
+                enterkeyhint="search"
+            >
+        </div>
 
-        <section id="inspecoes-canais" class="inspecoes-hub-section" data-inspecao-tipo="canal" hidden>
-            <header class="inspecoes-hub-section-head">
-                <h2 class="category-title" data-i18n="pages.inspections.sectionChannels">Canais</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionChannelsDesc">Avaliação editorial e técnica de canais públicos — catálogo, foco temático e utilidade para o cultivador.</p>
-            </header>
-            <div class="container-cards publications-inspecoes" data-inspecao-grid="canal">
-                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-            </div>
-        </section>
+        <div id="inspecoes-list" class="inspecoes-list">
+            <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
+        </div>
 
-        <section id="inspecoes-cursos" class="inspecoes-hub-section" data-inspecao-tipo="curso" hidden>
-            <header class="inspecoes-hub-section-head">
-                <h2 class="category-title" data-i18n="pages.inspections.sectionCourses">Cursos</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionCoursesDesc">Análise de programas de extensão e formação — carga horária, acesso, grade e valor prático.</p>
-            </header>
-            <div class="container-cards publications-inspecoes" data-inspecao-grid="curso">
-                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-            </div>
-        </section>
-
-        <section id="inspecoes-artigos" class="inspecoes-hub-section" data-inspecao-tipo="artigo" hidden>
-            <header class="inspecoes-hub-section-head">
-                <h2 class="category-title" data-i18n="pages.inspections.sectionArticles">Artigos</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionArticlesDesc">Auditoria editorial de artigos científicos peer-reviewed — desenho, achados, limites e utilidade educativa.</p>
-            </header>
-            <div class="container-cards publications-inspecoes" data-inspecao-grid="artigo">
-                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-            </div>
-        </section>
-
-        <section id="inspecoes-plantas" class="inspecoes-hub-section" data-inspecao-tipo="planta" hidden>
-            <header class="inspecoes-hub-section-head">
-                <h2 class="category-title" data-i18n="pages.inspections.sectionPlants">Plantas</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionPlantsDesc">Relatórios educacionais sobre espécies do catálogo de plantas medicinais — ficha, usos tradicionais, cuidados e ligação à extensão UNIFESP.</p>
-            </header>
-            <div class="container-cards publications-inspecoes" data-inspecao-grid="planta">
-                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-            </div>
-        </section>
-
-        <section id="inspecoes-derivados" class="inspecoes-hub-section" data-inspecao-tipo="derivado" hidden>
-            <header class="inspecoes-hub-section-head">
-                <h2 class="category-title" data-i18n="pages.inspections.sectionDerivatives">Derivados de risco</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionDerivativesDesc">Origem botânica de plantas transformadas em produtos industriais associados a dano à saúde — sem demonizar a espécie; foco no desvio industrial e no consumo excessivo.</p>
-            </header>
-            <div class="container-cards publications-inspecoes" data-inspecao-grid="derivado">
-                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-            </div>
-        </section>
-
-        <section id="inspecoes-palavras" class="inspecoes-hub-section" data-inspecao-tipo="palavra" hidden>
-            <header class="inspecoes-hub-section-head">
-                <h2 class="category-title" data-i18n="pages.inspections.sectionWords">Palavras</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionWordsDesc">Origem, viagem e transformação histórica de vocábulos ligados a plantas e cultura — etimologia com hipóteses em disputa, rede semântica e elo com o catálogo medicinal.</p>
-            </header>
-            <div class="container-cards publications-inspecoes" data-inspecao-grid="palavra">
-                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-            </div>
-        </section>
-
-        <section id="inspecoes-pessoas-historia" class="inspecoes-hub-section" data-inspecao-tipo="pessoas" hidden>
-            <header class="inspecoes-hub-section-head">
-                <h2 class="category-title" data-i18n="pages.inspections.sectionPeopleHistory">Pessoas</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionPeopleHistoryDesc">Figuras cujo método de pesquisa ou criação — viagem, etnografia, povos, plantas ou linguagem — informa o laboratório. Distinto do Legado canábico; cada ficha cruza com plantas e/ou com a série Palavras.</p>
-            </header>
-            <div class="container-cards publications-inspecoes" data-inspecao-grid="pessoas">
-                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-            </div>
-        </section>
-
-        <section id="inspecoes-divulgacao" class="inspecoes-hub-section" data-inspecao-tipo="divulgacao" hidden>
-            <header class="inspecoes-hub-section-head">
-                <h2 class="category-title" data-i18n="pages.inspections.sectionOutreach">Divulgação</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionOutreachDesc">Comunicação pública de saúde e cannabinoides fora do eixo UNIFESP–MovReCam–CEBRID — canal, textos e limites, sem equiparar ao Legado académico.</p>
-            </header>
-            <div class="container-cards publications-inspecoes" data-inspecao-grid="divulgacao">
-                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-            </div>
-        </section>
-
-        <section id="inspecoes-artes" class="inspecoes-hub-section inspecoes-sugestoes" data-inspecao-tipo="arte" data-sug-tipo="arte" hidden>
-            <header class="inspecoes-hub-section-head">
+        <section id="inspecoes-artes" class="inspecoes-hub-panel inspecoes-sugestoes" data-sug-tipo="arte" hidden>
+            <header class="inspecoes-hub-panel-head">
                 <h2 class="category-title" data-i18n="pages.inspections.sectionArts">Artes</h2>
                 <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionArtsDesc">Filmes, séries, música, artes visuais e obras culturais ligadas a plantas, linguagem ou ao ecossistema inspecionado — fila de sugestões abaixo; relatórios publicados aparecem em cards. Distinto de Canais (YouTube) e de Pessoas (biografia).</p>
             </header>
-            <div class="container-cards publications-inspecoes" data-inspecao-grid="arte" hidden></div>
             <div class="inspecoes-sug-filters" role="group" aria-label="Filtro de sugestões de artes">
                 <button type="button" class="inspecoes-sug-filter is-active" data-sug-filter="abertas" aria-pressed="true" data-i18n="pages.inspections.sugFilterOpen">Abertas</button>
                 <button type="button" class="inspecoes-sug-filter" data-sug-filter="feitas" aria-pressed="false" data-i18n="pages.inspections.sugFilterDone">Feitas</button>
@@ -163,8 +78,8 @@
             </div>
         </section>
 
-        <section id="inspecoes-sugestoes" class="inspecoes-hub-section inspecoes-sugestoes" hidden>
-            <header class="inspecoes-hub-section-head">
+        <section id="inspecoes-sugestoes" class="inspecoes-hub-panel inspecoes-sugestoes" hidden>
+            <header class="inspecoes-hub-panel-head">
                 <h2 class="category-title" data-i18n="pages.inspections.sectionSuggestions">Sugestões</h2>
                 <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionSuggestionsDesc">Fila editorial do laboratório — ideias e próximos relatórios, separados das inspeções já publicadas. Quando um relatório sai, a sugestão marca-se como feita automaticamente.</p>
             </header>

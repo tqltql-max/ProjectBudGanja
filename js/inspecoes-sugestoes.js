@@ -221,14 +221,6 @@
     });
   }
 
-  function showChipForRoot(root) {
-    if (!root || !root.id) return;
-    var chip = document.querySelector('.inspecoes-hub-chip[href="#' + root.id + '"]');
-    if (!chip) return;
-    chip.hidden = false;
-    chip.setAttribute('aria-hidden', 'false');
-  }
-
   function paint(root, posts) {
     var listEl = root.querySelector('[data-inspecoes-sugestoes-list]');
     if (!listEl || !cachedPayload) return;
@@ -270,10 +262,10 @@
   }
 
   function suggestionRoots() {
-    return [
-      document.getElementById('inspecoes-artes'),
-      document.getElementById('inspecoes-sugestoes')
-    ].filter(Boolean);
+    // Painéis do hub (não secções agrupadas da lista «Todas»).
+    return Array.prototype.slice.call(
+      document.querySelectorAll('.inspecoes-hub-panel.inspecoes-sugestoes')
+    );
   }
 
   function loadPayload() {
@@ -300,10 +292,11 @@
     return loadPayload()
       .then(function () {
         roots.forEach(function (root) {
-          root.hidden = false;
-          showChipForRoot(root);
           paint(root, cachedPosts);
         });
+        if (typeof global.applyInspecoesHubView === 'function') {
+          global.applyInspecoesHubView();
+        }
       })
       .catch(function () {
         roots.forEach(function (root) {
@@ -313,9 +306,10 @@
               escapeHtml(t('pages.inspections.sugLoadError', 'Não foi possível carregar as sugestões.')) +
               '</p>';
           }
-          root.hidden = false;
-          showChipForRoot(root);
         });
+        if (typeof global.applyInspecoesHubView === 'function') {
+          global.applyInspecoesHubView();
+        }
       });
   }
 

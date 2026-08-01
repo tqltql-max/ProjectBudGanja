@@ -297,6 +297,7 @@ function filterByInspecaoTipo(posts, tipo) {
   return (posts || []).filter(function (p) { return resolveInspecaoTipo(p) === tipo; });
 }
 
+/** Âncora hash → id de filtro (modelo /videos/). */
 var HUB_CHIP_ANCHOR = {
   canal: 'canais',
   equipamento: 'equipamentos',
@@ -310,17 +311,42 @@ var HUB_CHIP_ANCHOR = {
   palavra: 'palavras',
   pessoas: 'pessoas-historia',
   divulgacao: 'divulgacao',
-  arte: 'artes'
+  arte: 'artes',
+  sugestoes: 'sugestoes'
 };
 
-function setHubChipVisibility(tipo, visible) {
-  var anchor = HUB_CHIP_ANCHOR[tipo];
-  if (!anchor) return;
-  var chip = document.querySelector('.inspecoes-hub-chip[href="#inspecoes-' + anchor + '"]');
-  if (!chip) return;
-  chip.hidden = !visible;
-  chip.setAttribute('aria-hidden', visible ? 'false' : 'true');
-}
+var HUB_ANCHOR_TO_TIPO = {
+  pessoas: 'pessoa',
+  'pessoas-historia': 'pessoas',
+  canais: 'canal',
+  cursos: 'curso',
+  artigos: 'artigo',
+  plantas: 'planta',
+  derivados: 'derivado',
+  palavras: 'palavra',
+  divulgacao: 'divulgacao',
+  artes: 'arte',
+  sugestoes: 'sugestoes'
+};
+
+var INSPECAO_HUB_TIPOS = [
+  { id: 'pessoa', labelKey: 'pages.inspections.chipPeople', fallback: 'Legado', sort: 'seriesOrder' },
+  { id: 'pessoas', labelKey: 'pages.inspections.chipPeopleHistory', fallback: 'Pessoas', sort: 'seriesOrder' },
+  { id: 'canal', labelKey: 'pages.inspections.chipChannels', fallback: 'Canais', sort: 'label' },
+  { id: 'curso', labelKey: 'pages.inspections.chipCourses', fallback: 'Cursos', sort: 'seriesOrder' },
+  { id: 'artigo', labelKey: 'pages.inspections.chipArticles', fallback: 'Artigos', sort: 'seriesOrder' },
+  { id: 'planta', labelKey: 'pages.inspections.chipPlants', fallback: 'Plantas', sort: 'seriesOrder' },
+  { id: 'derivado', labelKey: 'pages.inspections.chipDerivatives', fallback: 'Derivados', sort: 'seriesOrder' },
+  { id: 'palavra', labelKey: 'pages.inspections.chipWords', fallback: 'Palavras', sort: 'seriesOrder' },
+  { id: 'divulgacao', labelKey: 'pages.inspections.chipOutreach', fallback: 'Divulgação', sort: 'seriesOrder' },
+  { id: 'arte', labelKey: 'pages.inspections.chipArts', fallback: 'Artes', sort: 'seriesOrder', keepVisible: true },
+  { id: 'sugestoes', labelKey: 'pages.inspections.chipSuggestions', fallback: 'Sugestões', special: true, keepVisible: true }
+];
+
+var inspecoesHubPosts = [];
+var inspecoesActiveTipo = 'all';
+var inspecoesActiveQuery = '';
+var inspecoesSearchTimer = null;
 
 function sortCanaisPosts(posts) {
   return posts.slice().sort(function (a, b) {
@@ -334,123 +360,276 @@ function postsT(key, fallback) {
   return window.BudGanjaI18n ? window.BudGanjaI18n.t(key, fallback) : fallback;
 }
 
-/** Agrupa inspeções de plantas num <details> compacto (fecha por defeito). */
-function renderPlantasDropGroup(container, posts) {
-  container.innerHTML = '';
+function escapeHubHtml(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/"/g, '&quot;');
+}
 
-  var details = document.createElement('details');
-  details.className = 'card inspecoes-drop-group inspecoes-drop-group--plantas';
-  if (location.hash === '#inspecoes-plantas') details.open = true;
-
-  var summary = document.createElement('summary');
-  summary.className = 'inspecoes-drop-summary';
-
-  var coverPost = null;
-  for (var i = 0; i < posts.length; i++) {
-    if (posts[i] && posts[i].coverImage) {
-      coverPost = posts[i];
-      break;
-    }
+function hubTipoMeta(tipo) {
+  for (var i = 0; i < INSPECAO_HUB_TIPOS.length; i++) {
+    if (INSPECAO_HUB_TIPOS[i].id === tipo) return INSPECAO_HUB_TIPOS[i];
   }
-  if (!coverPost) coverPost = posts[0];
-  appendCoverTo(summary, coverPost && coverPost.coverImage);
+  return null;
+}
 
-  var badges = document.createElement('div');
-  badges.className = 'post-card-badges';
-  var badge = document.createElement('span');
-  badge.className = 'post-card-series';
-  badge.dataset.series = 'plantas-medicinais';
-  badge.textContent = postsT('pages.inspections.sectionPlants', 'Plantas');
-  badges.appendChild(badge);
-  summary.appendChild(badges);
+function countHubTipo(posts, tipo) {
+  if (tipo === 'sugestoes') return null;
+  return filterByInspecaoTipo(posts, tipo).length;
+}
 
-  var title = document.createElement('h3');
-  title.textContent = postsT(
-    'pages.inspections.plantsDropTitle',
-    'Catálogo de plantas medicinais'
-  );
-  summary.appendChild(title);
+function readInspecoesFilterFromHash() {
+  var hash = String(location.hash || '').replace(/^#/, '');
+  if (hash.indexOf('inspecoes-') !== 0) return '';
+  var anchor = hash.replace(/^inspecoes-/, '');
+  return HUB_ANCHOR_TO_TIPO[anchor] || '';
+}
 
-  var blurb = document.createElement('p');
-  blurb.textContent = postsT(
-    'pages.inspections.plantsDropDesc',
-    'Fichas e relatórios por espécie — toque para expandir a lista.'
-  );
-  summary.appendChild(blurb);
+function writeInspecoesHash(tipo) {
+  var anchor = HUB_CHIP_ANCHOR[tipo];
+  var next = anchor ? '#inspecoes-' + anchor : '';
+  if (!next) {
+    if (location.hash) {
+      try { history.replaceState(null, '', location.pathname + location.search); } catch (e) { location.hash = ''; }
+    }
+    return;
+  }
+  if (location.hash !== next) {
+    try { history.replaceState(null, '', next); } catch (e) { location.hash = next; }
+  }
+}
 
-  var meta = document.createElement('div');
-  meta.className = 'inspecoes-drop-meta';
-  var countEl = document.createElement('span');
-  countEl.className = 'inspecoes-drop-count';
-  countEl.textContent = postsT('pages.inspections.plantsDropCount', '{n} espécies')
-    .replace('{n}', String(posts.length));
-  var caret = document.createElement('span');
-  caret.className = 'inspecoes-drop-caret';
-  caret.setAttribute('aria-hidden', 'true');
-  meta.appendChild(countEl);
-  meta.appendChild(caret);
-  summary.appendChild(meta);
+function postMatchesHubQuery(post, q) {
+  if (!q) return true;
+  var blob = [
+    localizedPostTitle(post),
+    post.excerpt,
+    post.series,
+    post.seriesLabel,
+    post.slug
+  ].join(' ').toLowerCase();
+  return blob.indexOf(q) !== -1;
+}
 
-  details.appendChild(summary);
+function sortedHubPosts(posts, tipo) {
+  var meta = hubTipoMeta(tipo);
+  var sort = meta && meta.sort === 'label' ? 'label' : 'seriesOrder';
+  return sort === 'label' ? sortCanaisPosts(posts) : sortBySeriesOrder(posts);
+}
 
-  var chapters = document.createElement('div');
-  chapters.className = 'inspecoes-drop-chapters';
-  details.appendChild(chapters);
-  container.appendChild(details);
+function setInspecoesPanels(tipo) {
+  var artes = document.getElementById('inspecoes-artes');
+  var sugs = document.getElementById('inspecoes-sugestoes');
+  var list = document.getElementById('inspecoes-list');
+  var searchWrap = document.querySelector('.inspecoes-search-wrap');
 
-  renderPostCards(chapters, posts, { hub: true, append: true });
+  if (artes) artes.hidden = tipo !== 'arte';
+  if (sugs) sugs.hidden = tipo !== 'sugestoes';
+  if (list) {
+    list.hidden = tipo === 'sugestoes';
+  }
+  if (searchWrap) {
+    searchWrap.hidden = tipo === 'sugestoes';
+  }
+}
+
+function renderInspecoesFilters(posts) {
+  var filtersEl = document.getElementById('inspecoes-filters');
+  if (!filtersEl) return;
+
+  var chips = [{ id: 'all', label: postsT('pages.inspections.filterAll', 'Todas'), count: (posts || []).length }];
+  INSPECAO_HUB_TIPOS.forEach(function (t) {
+    var n = countHubTipo(posts, t.id);
+    if (t.special || t.keepVisible || (n && n > 0)) {
+      chips.push({ id: t.id, label: postsT(t.labelKey, t.fallback), count: n });
+    }
+  });
+
+  // Modelo /videos/: com série activa, só «Todas» + activa.
+  if (inspecoesActiveTipo && inspecoesActiveTipo !== 'all') {
+    chips = chips.filter(function (ch) {
+      return ch.id === 'all' || ch.id === inspecoesActiveTipo;
+    });
+  }
+
+  filtersEl.innerHTML =
+    '<div class="videos-filters" role="toolbar" aria-label="' +
+    escapeHubHtml(postsT('pages.inspections.filtersLabel', 'Filtrar por série')) +
+    '">' +
+    chips
+      .map(function (ch) {
+        var pressed = inspecoesActiveTipo === ch.id;
+        return (
+          '<button type="button" class="videos-filter-chip' +
+          (pressed ? ' is-active' : '') +
+          '" data-inspecao-tipo="' +
+          escapeHubHtml(ch.id) +
+          '" aria-pressed="' +
+          (pressed ? 'true' : 'false') +
+          '">' +
+          escapeHubHtml(ch.label) +
+          (typeof ch.count === 'number'
+            ? ' <span class="videos-filter-count">' + ch.count + '</span>'
+            : '') +
+          '</button>'
+        );
+      })
+      .join('') +
+    '</div>';
+}
+
+function renderInspecoesGroupedList(container, posts) {
+  container.innerHTML = '';
+  var any = false;
+  INSPECAO_HUB_TIPOS.forEach(function (t) {
+    if (t.special) return;
+    var list = sortedHubPosts(filterByInspecaoTipo(posts, t.id), t.id);
+    if (!list.length) return;
+    any = true;
+    var section = document.createElement('section');
+    section.className = 'videos-channel-section inspecoes-tipo-section';
+    // Não reutilizar #inspecoes-<série>: esses IDs pertencem aos painéis
+    // (Artes / Sugestões) e a chips via hash.
+    section.setAttribute('data-inspecao-grupo', t.id);
+    var head = document.createElement('header');
+    head.className = 'videos-channel-section-head';
+    var h2 = document.createElement('h2');
+    h2.className = 'videos-list-heading';
+    h2.textContent = postsT(t.labelKey, t.fallback);
+    var count = document.createElement('span');
+    count.className = 'videos-list-count';
+    count.textContent = String(list.length);
+    head.appendChild(h2);
+    head.appendChild(count);
+    section.appendChild(head);
+    var grid = document.createElement('div');
+    grid.className = 'container-cards publications-inspecoes';
+    section.appendChild(grid);
+    container.appendChild(section);
+    renderPostCards(grid, list, { hub: true });
+  });
+  if (!any) {
+    container.innerHTML =
+      '<p class="empty-message">' +
+      escapeHubHtml(postsT('pages.inspections.empty', 'Nenhuma inspeção publicada ainda.')) +
+      '</p>';
+  }
+}
+
+function applyInspecoesHubView() {
+  var listEl = document.getElementById('inspecoes-list');
+  if (!listEl) return;
+  var posts = inspecoesHubPosts || [];
+  var q = String(inspecoesActiveQuery || '').trim().toLowerCase();
+
+  renderInspecoesFilters(posts);
+  setInspecoesPanels(inspecoesActiveTipo);
+
+  if (inspecoesActiveTipo === 'sugestoes') {
+    listEl.innerHTML = '';
+    return;
+  }
+
+  var filtered = posts.filter(function (p) {
+    if (inspecoesActiveTipo !== 'all' && resolveInspecaoTipo(p) !== inspecoesActiveTipo) return false;
+    return postMatchesHubQuery(p, q);
+  });
+
+  if (inspecoesActiveTipo === 'arte') {
+    // Cards publicados desta série (se houver) + painel de sugestões Artes.
+    listEl.hidden = !filtered.length;
+    if (filtered.length) {
+      var grid = document.createElement('div');
+      grid.className = 'container-cards publications-inspecoes';
+      listEl.innerHTML = '';
+      listEl.appendChild(grid);
+      renderPostCards(grid, sortedHubPosts(filtered, 'arte'), { hub: true });
+    } else {
+      listEl.innerHTML = '';
+    }
+    return;
+  }
+
+  listEl.hidden = false;
+  if (!filtered.length) {
+    listEl.innerHTML =
+      '<p class="empty-message">' +
+      escapeHubHtml(
+        q
+          ? postsT('pages.inspections.searchEmpty', 'Nenhuma inspeção neste filtro.')
+          : postsT('pages.inspections.empty', 'Nenhuma inspeção publicada ainda.')
+      ) +
+      '</p>';
+    return;
+  }
+
+  if (inspecoesActiveTipo === 'all') {
+    renderInspecoesGroupedList(listEl, filtered);
+  } else {
+    var wrap = document.createElement('div');
+    wrap.className = 'container-cards publications-inspecoes';
+    listEl.innerHTML = '';
+    listEl.appendChild(wrap);
+    renderPostCards(wrap, sortedHubPosts(filtered, inspecoesActiveTipo), { hub: true });
+  }
+}
+
+function bindInspecoesHubFilters() {
+  if (window.__budganjaInspecoesFiltersBound) return;
+  window.__budganjaInspecoesFiltersBound = true;
+
+  var filtersEl = document.getElementById('inspecoes-filters');
+  var searchEl = document.getElementById('inspecoes-search');
+
+  if (filtersEl) {
+    filtersEl.addEventListener('click', function (ev) {
+      var chip = ev.target.closest('[data-inspecao-tipo]');
+      if (!chip || !filtersEl.contains(chip)) return;
+      var next = chip.getAttribute('data-inspecao-tipo') || 'all';
+      if (next === inspecoesActiveTipo && next !== 'all') {
+        inspecoesActiveTipo = 'all';
+      } else {
+        inspecoesActiveTipo = next;
+      }
+      writeInspecoesHash(inspecoesActiveTipo === 'all' ? '' : inspecoesActiveTipo);
+      applyInspecoesHubView();
+    });
+  }
+
+  if (searchEl) {
+    searchEl.addEventListener('input', function () {
+      var value = searchEl.value || '';
+      clearTimeout(inspecoesSearchTimer);
+      inspecoesSearchTimer = setTimeout(function () {
+        inspecoesActiveQuery = value;
+        applyInspecoesHubView();
+      }, 160);
+    });
+  }
+
+  window.addEventListener('hashchange', function () {
+    var fromHash = readInspecoesFilterFromHash();
+    if (fromHash) inspecoesActiveTipo = fromHash;
+    else if (!location.hash) inspecoesActiveTipo = 'all';
+    applyInspecoesHubView();
+  });
 }
 
 function renderInspecoesHub(allPosts) {
-  var tipos = [
-    { id: 'pessoa', section: '#inspecoes-pessoas', sort: 'seriesOrder' },
-    { id: 'canal', section: '#inspecoes-canais', sort: 'label' },
-    { id: 'curso', section: '#inspecoes-cursos', sort: 'seriesOrder' },
-    { id: 'artigo', section: '#inspecoes-artigos', sort: 'seriesOrder' },
-    { id: 'planta', section: '#inspecoes-plantas', sort: 'seriesOrder' },
-    { id: 'derivado', section: '#inspecoes-derivados', sort: 'seriesOrder' },
-    { id: 'palavra', section: '#inspecoes-palavras', sort: 'seriesOrder' },
-    { id: 'pessoas', section: '#inspecoes-pessoas-historia', sort: 'seriesOrder' },
-    { id: 'divulgacao', section: '#inspecoes-divulgacao', sort: 'seriesOrder' },
-    { id: 'arte', section: '#inspecoes-artes', sort: 'seriesOrder', keepVisible: true }
-  ];
+  inspecoesHubPosts = allPosts || [];
+  bindInspecoesHubFilters();
 
-  tipos.forEach(function (t) {
-    var section = document.querySelector(t.section);
-    var grid = document.querySelector('[data-inspecao-grid="' + t.id + '"]');
-    if (!section || !grid) return;
+  var fromHash = readInspecoesFilterFromHash();
+  if (fromHash) inspecoesActiveTipo = fromHash;
 
-    var list = filterByInspecaoTipo(allPosts, t.id);
-    if (!list.length) {
-      if (t.keepVisible) {
-        section.hidden = false;
-        setHubChipVisibility(t.id, true);
-        grid.hidden = true;
-        grid.innerHTML = '';
-      } else {
-        section.hidden = true;
-        setHubChipVisibility(t.id, false);
-      }
-      return;
-    }
+  var searchEl = document.getElementById('inspecoes-search');
+  if (searchEl && inspecoesActiveQuery) searchEl.value = inspecoesActiveQuery;
 
-    section.hidden = false;
-    setHubChipVisibility(t.id, true);
-    grid.hidden = false;
-    var sorted = t.sort === 'seriesOrder' ? sortBySeriesOrder(list) : sortCanaisPosts(list);
-    if (t.id === 'planta') renderPlantasDropGroup(grid, sorted);
-    else renderPostCards(grid, sorted, { hub: true });
-  });
-
-  if (!window.__budganjaPlantasDropHashBound) {
-    window.__budganjaPlantasDropHashBound = true;
-    window.addEventListener('hashchange', function () {
-      if (location.hash !== '#inspecoes-plantas') return;
-      var drop = document.querySelector('#inspecoes-plantas .inspecoes-drop-group--plantas');
-      if (drop) drop.open = true;
-    });
-  }
+  applyInspecoesHubView();
 }
+
+window.applyInspecoesHubView = applyInspecoesHubView;
 
 function isPesquisaPost(post) {
   return String((post && post.category) || 'pesquisa') === 'pesquisa';
@@ -846,14 +1025,13 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       })
       .catch(function () {
-        document.querySelectorAll('[data-inspecao-grid]').forEach(function (grid) {
-          if (grid.querySelector('.card')) return;
-          var emptyKey = config.category === 'inspecao' ? 'pages.inspections.empty' : 'pages.research.empty';
+        var listEl = document.getElementById('inspecoes-list');
+        if (listEl && !listEl.querySelector('.card')) {
           var emptyMsg = window.BudGanjaI18n
-            ? window.BudGanjaI18n.t(emptyKey, 'Nenhuma publicação disponível.')
-            : 'Nenhuma publicação disponível.';
-          grid.innerHTML = '<p class="empty-message">' + emptyMsg + '</p>';
-        });
+            ? window.BudGanjaI18n.t('pages.inspections.empty', 'Nenhuma inspeção publicada ainda.')
+            : 'Nenhuma inspeção publicada ainda.';
+          listEl.innerHTML = '<p class="empty-message">' + emptyMsg + '</p>';
+        }
         if (typeof window.renderInspecoesSugestoes === 'function') {
           window.renderInspecoesSugestoes([]);
         }
