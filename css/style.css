@@ -9705,7 +9705,8 @@ html[data-theme="light"] .header-group-divider {
 }
 
 .videos-filters,
-.videos-series-filters {
+.videos-series-filters,
+.videos-topic-filters {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -9761,6 +9762,26 @@ html[data-theme="light"] .header-group-divider {
     color: #0b1a10;
     background: rgba(39, 174, 96, 0.85);
     border-color: rgba(39, 174, 96, 0.95);
+}
+
+.videos-filter-chip--topic {
+    text-transform: none;
+    letter-spacing: 0.02em;
+    background: rgba(133, 193, 233, 0.1);
+    border-color: rgba(133, 193, 233, 0.28);
+}
+
+.videos-filter-chip--topic:hover,
+.videos-filter-chip--topic:focus-visible {
+    color: #d6ecff;
+    background: rgba(133, 193, 233, 0.18);
+    border-color: rgba(133, 193, 233, 0.48);
+}
+
+.videos-filter-chip--topic.is-active {
+    color: #0a1520;
+    background: rgba(133, 193, 233, 0.9);
+    border-color: rgba(133, 193, 233, 0.98);
 }
 
 .videos-filter-count {

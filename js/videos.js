@@ -66,12 +66,28 @@
     'plantas sagradas': 'plantas-sagradas'
   };
 
+  var TOPIC_ALIASES = {
+    cultivo: 'cultivo',
+    unifesp: 'unifesp',
+    'aulas-unifesp': 'unifesp',
+    aulas: 'unifesp',
+    saude: 'saude',
+    saúde: 'saude',
+    'saude-e-usos': 'saude',
+    plantas: 'plantas',
+    ciencia: 'ciencia',
+    ciência: 'ciencia'
+  };
+
+  var TOPIC_ORDER = ['cultivo', 'unifesp', 'saude', 'plantas', 'ciencia'];
+
   var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor'];
 
   var cachedHub = null;
   var selectedId = '';
   var activeChannel = 'all';
   var activeSeries = '';
+  var activeTopic = '';
   var activeQuery = '';
   var searchTimer = null;
   var playerEl = null;
@@ -101,6 +117,16 @@
     return key;
   }
 
+  function resolveTopic(raw) {
+    var key = String(raw || '')
+      .trim()
+      .toLowerCase();
+    if (!key) return '';
+    if (TOPIC_ALIASES[key]) return TOPIC_ALIASES[key];
+    if (TOPIC_ORDER.indexOf(key) >= 0) return key;
+    return '';
+  }
+
   function readRequestedId() {
     try {
       var params = new URLSearchParams(window.location.search);
@@ -117,14 +143,17 @@
   function readFilterFromUrl() {
     var channel = 'all';
     var series = '';
+    var topic = '';
     var q = '';
     try {
       var params = new URLSearchParams(window.location.search);
       var chRaw = params.get('channel') || '';
       var seriesRaw = params.get('series') || '';
+      var topicRaw = params.get('topic') || '';
       var resolvedCh = resolveChannel(chRaw);
       var resolvedSeriesAsChannel = resolveChannel(seriesRaw);
       var resolvedSeries = resolveSeries(seriesRaw);
+      var resolvedTopic = resolveTopic(topicRaw);
 
       if (resolvedCh) channel = resolvedCh;
       else if (!chRaw && resolvedSeriesAsChannel) channel = resolvedSeriesAsChannel;
@@ -135,15 +164,17 @@
         if (series === 'xiv') channel = 'movrecam';
         else if (series === 'conceitos' || series === 'plantas-sagradas') channel = 'canabinall';
       }
+      if (resolvedTopic) topic = resolvedTopic;
       q = String(params.get('q') || '').trim();
     } catch (e) { /* ignore */ }
-    return { channel: channel, series: series, q: q };
+    return { channel: channel, series: series, topic: topic, q: q };
   }
 
   function writeFilterToUrl(channel, series, videoId, replace) {
     var params = new URLSearchParams();
     if (channel && channel !== 'all') params.set('channel', channel);
     if (series) params.set('series', series);
+    if (activeTopic) params.set('topic', activeTopic);
     if (activeQuery) params.set('q', activeQuery);
     var qs = params.toString();
     var next = window.location.pathname + (qs ? '?' + qs : '');
@@ -169,6 +200,9 @@
 
   function videoSearchBlob(v) {
     if (!v) return '';
+    var topicLabels = ((v.topics || []) || []).map(function (id) {
+      return topicLabel(id);
+    });
     return foldText(
       [
         v.title,
@@ -178,7 +212,9 @@
         v.summaryEn,
         v.summaryEs,
         channelLabel(v.channel),
-        ((v.series || []) || []).join(' ')
+        ((v.series || []) || []).join(' '),
+        ((v.topics || []) || []).join(' '),
+        topicLabels.join(' ')
       ].join(' ')
     );
   }
@@ -446,7 +482,7 @@
     return null;
   }
 
-  function filterVideos(videos, channel, series, query) {
+  function filterVideos(videos, channel, series, topic, query) {
     var list = videos || [];
     if (channel && channel !== 'all') {
       list = list.filter(function (v) {
@@ -456,6 +492,11 @@
     if (series) {
       list = list.filter(function (v) {
         return (v.series || []).indexOf(series) >= 0;
+      });
+    }
+    if (topic) {
+      list = list.filter(function (v) {
+        return (v.topics || []).indexOf(topic) >= 0;
       });
     }
     var tokens = tokenizeQuery(query != null ? query : activeQuery);
@@ -538,6 +579,19 @@
     if (id === 'conceitos') return i18n('pages.videos.seriesBasics', 'Conceitos básicos');
     if (id === 'plantas-sagradas') return i18n('pages.videos.seriesSacred', 'Plantas Sagradas');
     var opts = (cachedHub && cachedHub.seriesOptions) || [];
+    for (var i = 0; i < opts.length; i++) {
+      if (opts[i].id === id) return opts[i].label;
+    }
+    return id;
+  }
+
+  function topicLabel(id) {
+    if (id === 'cultivo') return i18n('pages.videos.topicCultivo', 'Cultivo');
+    if (id === 'unifesp') return i18n('pages.videos.topicUnifesp', 'Aulas UNIFESP');
+    if (id === 'saude') return i18n('pages.videos.topicSaude', 'Saúde e usos');
+    if (id === 'plantas') return i18n('pages.videos.topicPlantas', 'Plantas');
+    if (id === 'ciencia') return i18n('pages.videos.topicCiencia', 'Ciência');
+    var opts = (cachedHub && cachedHub.topicOptions) || [];
     for (var i = 0; i < opts.length; i++) {
       if (opts[i].id === id) return opts[i].label;
     }
@@ -724,12 +778,35 @@
     return ordered;
   }
 
+  function topicChipsWithCounts() {
+    var opts = (cachedHub && cachedHub.topicOptions) || [];
+    if (!opts.length) {
+      opts = TOPIC_ORDER.map(function (id) {
+        return { id: id, label: topicLabel(id) };
+      });
+    }
+    var base = filterVideos(cachedHub.videos || [], activeChannel, activeSeries, '', '');
+    var chips = [];
+    for (var i = 0; i < opts.length; i++) {
+      var id = opts[i].id;
+      var count = 0;
+      for (var j = 0; j < base.length; j++) {
+        if ((base[j].topics || []).indexOf(id) >= 0) count++;
+      }
+      if (count > 0) {
+        chips.push({ id: id, label: topicLabel(id), count: count });
+      }
+    }
+    return chips;
+  }
+
   function renderFilters() {
     if (!filtersEl || !cachedHub) return;
     var channels = [{ id: 'all', label: i18n('pages.videos.filterAll', 'Todos'), count: (cachedHub.videos || []).length }]
       .concat(orderedChannels());
 
     var seriesOpts = seriesChipsForChannel(activeChannel);
+    var topicOpts = topicChipsWithCounts();
 
     filtersEl.innerHTML =
       '<div class="videos-filters" role="toolbar" aria-label="' +
@@ -777,6 +854,37 @@
                 '">' +
                 escapeHtml(seriesLabel(opt.id)) +
                 '</button>'
+              );
+            })
+            .join('') +
+          '</div>'
+        : '') +
+      (topicOpts.length
+        ? '<div class="videos-topic-filters" role="toolbar" aria-label="' +
+          escapeHtml(i18n('pages.videos.topicsLabel', 'Filtrar por tema')) +
+          '">' +
+          '<button type="button" class="videos-filter-chip videos-filter-chip--topic' +
+          (!activeTopic ? ' is-active' : '') +
+          '" data-topic="" aria-pressed="' +
+          (!activeTopic ? 'true' : 'false') +
+          '">' +
+          escapeHtml(i18n('pages.videos.topicAll', 'Todos os temas')) +
+          '</button>' +
+          topicOpts
+            .map(function (opt) {
+              var pressed = activeTopic === opt.id;
+              return (
+                '<button type="button" class="videos-filter-chip videos-filter-chip--topic' +
+                (pressed ? ' is-active' : '') +
+                '" data-topic="' +
+                escapeHtml(opt.id) +
+                '" aria-pressed="' +
+                (pressed ? 'true' : 'false') +
+                '">' +
+                escapeHtml(opt.label) +
+                ' <span class="videos-filter-count">' +
+                opt.count +
+                '</span></button>'
               );
             })
             .join('') +
@@ -887,6 +995,7 @@
 
     var heading = channelLabel(activeChannel);
     if (activeSeries) heading += ' · ' + seriesLabel(activeSeries);
+    if (activeTopic) heading += ' · ' + topicLabel(activeTopic);
 
     gridEl.innerHTML =
       '<p class="videos-list-heading">' +
@@ -934,7 +1043,11 @@
 
     var all = cachedHub.videos || [];
     var requested = opts.requestedId || readRequestedId();
-    var filtered = sortForView(filterVideos(all, activeChannel, activeSeries), activeChannel, activeSeries);
+    var filtered = sortForView(
+      filterVideos(all, activeChannel, activeSeries, activeTopic),
+      activeChannel,
+      activeSeries
+    );
 
     if (requested) {
       var inView = findVideo(filtered, requested);
@@ -945,7 +1058,14 @@
             activeChannel = anywhere.channel || 'all';
             activeSeries = '';
           }
-          filtered = sortForView(filterVideos(all, activeChannel, activeSeries), activeChannel, activeSeries);
+          if (activeTopic && (anywhere.topics || []).indexOf(activeTopic) < 0) {
+            activeTopic = '';
+          }
+          filtered = sortForView(
+            filterVideos(all, activeChannel, activeSeries, activeTopic),
+            activeChannel,
+            activeSeries
+          );
         }
       }
     }
@@ -982,7 +1102,9 @@
     if (!playerEl) return;
 
     var all = cachedHub.videos || [];
-    var video = findVideo(filterVideos(all, activeChannel, activeSeries), id) || findVideo(all, id);
+    var video =
+      findVideo(filterVideos(all, activeChannel, activeSeries, activeTopic), id) ||
+      findVideo(all, id);
     if (!video) return;
 
     if (video.channel && video.channel !== activeChannel && activeChannel !== 'all') {
@@ -1014,6 +1136,19 @@
       if (seriesOpts[i].id === activeSeries) validSeries = true;
     }
     if (!validSeries) activeSeries = '';
+    if (activeTopic) {
+      var topicOpts = topicChipsWithCounts();
+      var validTopic = false;
+      for (var t = 0; t < topicOpts.length; t++) {
+        if (topicOpts[t].id === activeTopic) validTopic = true;
+      }
+      if (!validTopic) activeTopic = '';
+    }
+    applyView({ replaceUrl: false, autoplay: false });
+  }
+
+  function setTopic(topic) {
+    activeTopic = resolveTopic(topic) || '';
     applyView({ replaceUrl: false, autoplay: false });
   }
 
@@ -1044,6 +1179,7 @@
     var fromUrl = readFilterFromUrl();
     activeChannel = fromUrl.channel || 'all';
     activeSeries = fromUrl.series || '';
+    activeTopic = fromUrl.topic || '';
     activeQuery = fromUrl.q || activeQuery || '';
     if (searchEl) searchEl.value = activeQuery;
 
@@ -1088,12 +1224,14 @@
 
     if (filtersEl) {
       filtersEl.addEventListener('click', function (e) {
-        var chip = e.target.closest('[data-channel], [data-series]');
+        var chip = e.target.closest('[data-channel], [data-series], [data-topic]');
         if (!chip || !filtersEl.contains(chip)) return;
         if (chip.hasAttribute('data-channel')) {
           setChannel(chip.getAttribute('data-channel'), '');
         } else if (chip.hasAttribute('data-series')) {
           setChannel(activeChannel, chip.getAttribute('data-series') || '');
+        } else if (chip.hasAttribute('data-topic')) {
+          setTopic(chip.getAttribute('data-topic') || '');
         }
       });
     }
@@ -1121,9 +1259,16 @@
       var next = readFilterFromUrl();
       var id = readRequestedId();
       var qChanged = (next.q || '') !== activeQuery;
-      if (next.channel !== activeChannel || next.series !== activeSeries || qChanged) {
+      var topicChanged = (next.topic || '') !== activeTopic;
+      if (
+        next.channel !== activeChannel ||
+        next.series !== activeSeries ||
+        topicChanged ||
+        qChanged
+      ) {
         activeChannel = next.channel;
         activeSeries = next.series;
+        activeTopic = next.topic || '';
         activeQuery = next.q || '';
         if (searchEl) searchEl.value = activeQuery;
         applyView({ requestedId: id, replaceUrl: true, autoplay: !!id });
@@ -1174,10 +1319,18 @@
                     url: v.url,
                     thumb: v.thumb,
                     channel: 'inspetor',
-                    series: []
+                    series: [],
+                    topics: ['cultivo']
                   };
                 }),
-                seriesOptions: []
+                seriesOptions: [],
+                topicOptions: [
+                  { id: 'cultivo', label: 'Cultivo' },
+                  { id: 'unifesp', label: 'Aulas UNIFESP' },
+                  { id: 'saude', label: 'Saúde e usos' },
+                  { id: 'plantas', label: 'Plantas' },
+                  { id: 'ciencia', label: 'Ciência' }
+                ]
               };
             });
         })
