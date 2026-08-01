@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T14:45:14.427Z",
+  "updatedAt": "2026-08-01T17:46:22.936Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -455,67 +455,63 @@
     },
     {
       "id": "arte-send-me-on-my-way",
-      "title": "Send Me On My Way — Rusted Root e abertura da rádio",
-      "titleEn": "Send Me On My Way — Rusted Root and radio opening",
-      "titleEs": "Send Me On My Way — Rusted Root y apertura de la radio",
+      "title": "Send Me On My Way — a canção Rusted Root e o caminho",
+      "titleEn": "Send Me On My Way — the Rusted Root song and the path",
+      "titleEs": "Send Me On My Way — la canción de Rusted Root y el camino",
       "tipo": "arte",
-      "priority": 1,
+      "priority": 2,
       "status": "feita",
-      "why": "Ficha fundadora Artes: música de boas-vindas da BudGanja Radio.",
-      "whyEn": "Founding Arts sheet: BudGanja Radio welcome track.",
-      "whyEs": "Ficha fundadora Artes: pista de bienvenida de BudGanja Radio.",
+      "why": "Artes: génese da canção (1992/1994) primeiro; BudGanja Radio como eco secundário.",
+      "whyEn": "Arts: song genesis (1992/1994) first; BudGanja Radio as secondary echo.",
+      "whyEs": "Artes: génesis de la canción (1992/1994) primero; BudGanja Radio como eco secundario.",
       "suggestedSlug": "inspecao-arte-send-me-on-my-way",
       "doneHref": "/posts/post-inspecao-arte-send-me-on-my-way.html",
       "seriesHint": "artes-cultura",
       "sources": [
         "https://en.wikipedia.org/wiki/Send_Me_On_My_Way",
-        "https://www.youtube.com/watch?v=IGMabBGydC0",
-        "/radio/"
+        "/posts/post-inspecao-arte-send-me-on-my-way.html"
       ],
-      "notes": "Elo com /radio/ e Palavras (passar); faixa CBJr fica em Pessoas/Chorão."
+      "notes": "Origem primeiro; uso na rádio secundário."
     },
     {
       "id": "arte-so-os-loucos-sabem",
-      "title": "Só os Loucos Sabem — CBJr e a segunda faixa da rádio",
-      "titleEn": "Só os Loucos Sabem — CBJr and the radio’s second track",
-      "titleEs": "Só os Loucos Sabem — CBJr y la segunda pista de la radio",
+      "title": "Só os Loucos Sabem — a canção CBJr e o recomeço",
+      "titleEn": "Só os Loucos Sabem — the CBJr song and the restart",
+      "titleEs": "Só os Loucos Sabem — la canción CBJr y el recomienzo",
       "tipo": "arte",
-      "priority": 1,
+      "priority": 2,
       "status": "feita",
-      "why": "Artes: segunda música da BudGanja Radio (ao vivo Chegou Quem Faltava).",
-      "whyEn": "Arts: second BudGanja Radio track (live Chegou Quem Faltava).",
-      "whyEs": "Artes: segunda canción de BudGanja Radio (en vivo Chegou Quem Faltava).",
+      "why": "Artes: origem em Camisa 10 (2009); ao vivo / rádio como eco secundário.",
+      "whyEn": "Arts: origin in Camisa 10 (2009); live / radio as secondary echo.",
+      "whyEs": "Artes: origen en Camisa 10 (2009); en vivo / radio como eco secundario.",
       "suggestedSlug": "inspecao-arte-so-os-loucos-sabem",
       "doneHref": "/posts/post-inspecao-arte-so-os-loucos-sabem.html",
       "seriesHint": "artes-cultura",
       "sources": [
-        "https://pt.wikipedia.org/wiki/Chegou_Quem_Faltava",
-        "https://www.youtube.com/watch?v=NFADwNLNSd4",
-        "/radio/",
-        "/posts/post-inspecao-figura-chorao.html"
+        "https://pt.wikipedia.org/wiki/Camisa_10_Joga_Bola_At%C3%A9_na_Chuva",
+        "/posts/post-inspecao-arte-so-os-loucos-sabem.html"
       ],
-      "notes": "Obra ≠ biografia Chorão; par da abertura Rusted Root."
+      "notes": "Estúdio 2009 primeiro; Chegou Quem Faltava / rádio secundário."
     },
     {
       "id": "arte-the-matrix",
-      "title": "The Matrix — cinema, simulação e verificação",
-      "titleEn": "The Matrix — cinema, simulation and verification",
-      "titleEs": "The Matrix — cine, simulación y verificación",
+      "title": "The Matrix — a obra Wachowski e a pergunta do real",
+      "titleEn": "The Matrix — the Wachowski work and the question of the real",
+      "titleEs": "The Matrix — la obra Wachowski y la pregunta de lo real",
       "tipo": "arte",
       "priority": 2,
       "status": "feita",
-      "why": "Artes · cinema: The Matrix (1999) — obra; biografia do actor em Keanu Reeves (Pessoas).",
-      "whyEn": "Arts · film: The Matrix (1999) — work; actor biography in Keanu Reeves (People).",
-      "whyEs": "Artes · cine: The Matrix (1999) — obra; biografía del actor en Keanu Reeves (Personas).",
+      "why": "Artes · cinema: génese 1999 e influências primeiro; Keanu em Pessoas (secundário).",
+      "whyEn": "Arts · film: 1999 genesis and influences first; Keanu in People (secondary).",
+      "whyEs": "Artes · cine: génesis 1999 e influencias primero; Keanu en Personas (secundario).",
       "suggestedSlug": "inspecao-filme-the-matrix",
       "doneHref": "/posts/post-inspecao-filme-the-matrix.html",
       "seriesHint": "artes-cultura",
       "sources": [
-        "https://pt.wikipedia.org/wiki/Matrix_(filme)",
-        "https://www.youtube.com/watch?v=vKQi3bBA1y8",
-        "/posts/post-inspecao-figura-keanu-reeves.html"
+        "https://pt.wikipedia.org/wiki/Matrix",
+        "/posts/post-inspecao-filme-the-matrix.html"
       ],
-      "notes": "Obra ≠ biografia Keanu; metáfora da pílula é simbólica."
+      "notes": "Filme primeiro; biografia do actor fora deste recorte."
     },
     {
       "id": "figura-keanu-reeves",
@@ -558,6 +554,26 @@
         "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
       "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose."
+    },
+    {
+      "id": "arte-alice-no-pais-das-maravilhas",
+      "title": "Alice no País das Maravilhas — o livro de Carroll e o buraco do coelho",
+      "titleEn": "Alice in Wonderland — Carroll’s book and the rabbit hole",
+      "titleEs": "Alicia en el país de las maravillas — el libro de Carroll y la madriguera",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Artes: Alice começa no livro de Lewis Carroll (1865); Disney 1951 como adaptação.",
+      "whyEn": "Arts: Alice begins with Lewis Carroll’s book (1865); Disney 1951 as adaptation.",
+      "whyEs": "Artes: Alicia empieza en el libro de Lewis Carroll (1865); Disney 1951 como adaptación.",
+      "suggestedSlug": "inspecao-filme-alice-no-pais-das-maravilhas",
+      "doneHref": "/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Alice_no_Pa%C3%ADs_das_Maravilhas",
+        "/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html"
+      ],
+      "notes": "Livro primeiro (1862–1865); filme = eco."
     }
   ]
 }

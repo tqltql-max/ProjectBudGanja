@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T12:37:16.148Z",
+  "updatedAt": "2026-08-01T15:00:11.946Z",
   "disclaimer": "Fichas educacionais de plantas fitoterápicas e medicinais do Brasil. Não substituem orientação profissional de saúde nem aconselhamento jurídico.",
   "plants": [
     {
@@ -7,14 +7,17 @@
         "Folhas (gel)"
       ],
       "traditionalUses": [
-        "Uso tópico em pele irritada",
-        "Cosmética caseira"
+        "Gel tópico em pele irritada e queimaduras leves (tradição popular)",
+        "Cosmética caseira (máscaras, hidratação)",
+        "Uso interno só com orientação — distinto do gel externo"
       ],
-      "cautions": "Uso interno exige orientação profissional; látex pode irritar. Conteúdo educacional — não substitui consulta.",
+      "cautions": "Separar gel interno (folha) do látex amarelo (aloína / antraquinonas). Uso interno e extratos concentrados exigem orientação profissional; látex pode irritar. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "pele",
         "domestica",
-        "gel"
+        "gel",
+        "aloina",
+        "polissacarideos"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -23,21 +26,24 @@
       "nomePopular": "Babosa",
       "nomeCientifico": "Aloe vera",
       "familia": "Asphodelaceae",
-      "summary": "Suculenta amplamente cultivada no Brasil; gel foliar usado em cuidados cutâneos tradicionais."
+      "summary": "Suculenta (*Aloe vera*) amplamente cultivada; gel foliar rico em polissacarídeos — tradição tópica; látex com antraquinonas (aloína) exige cautela na ingestão."
     },
     {
       "partsUsed": [
         "Capítulos florais"
       ],
       "traditionalUses": [
-        "Infusões calmantes",
-        "Apoio ao sono e digestão leve"
+        "Infusões calmantes e apoio ao sono leve",
+        "Conforto digestivo leve após refeições",
+        "Compressas / uso tópico tradicional em pele irritada"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Alergia a Asteraceae possível. Evitar automedicação em gravidez e crianças pequenas sem orientação. Óleos essenciais concentrados ≠ chá. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "cha",
         "calmante",
-        "digestao"
+        "digestao",
+        "apigenina",
+        "asteraceae"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -46,21 +52,24 @@
       "nomePopular": "Camomila",
       "nomeCientifico": "Matricaria chamomilla",
       "familia": "Asteraceae",
-      "summary": "Erva aromática clássica em chás relaxantes e preparações leves."
+      "summary": "Capítulos de *Matricaria chamomilla* — tradição de chás calmantes; marcadores como apigenina e óleo azul (camazuleno) em contexto educacional."
     },
     {
       "partsUsed": [
         "Folhas"
       ],
       "traditionalUses": [
-        "Chás aromáticos",
-        "Aromatização de alimentos"
+        "Chás aromáticos citricos",
+        "Aromatização de alimentos e caldos",
+        "Uso popular digestivo leve"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Óleo essencial concentrado irritante — não ingerir puro. Gravidez e epilepsia: orientação profissional. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "cha",
         "aromatica",
-        "culinaria"
+        "culinaria",
+        "citral",
+        "oleo-essencial"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -69,21 +78,24 @@
       "nomePopular": "Capim-limão",
       "nomeCientifico": "Cymbopogon citratus",
       "familia": "Poaceae",
-      "summary": "Gramínea citrica comum em quintais brasileiros; folhas em chás e culinária."
+      "summary": "Gramínea cítrica (*Cymbopogon citratus*) comum em quintais; citral e óleo essencial nas folhas — chás e culinária."
     },
     {
       "partsUsed": [
         "Partes aéreas"
       ],
       "traditionalUses": [
-        "Chás digestivos tradicionais",
-        "Fitoterapia popular"
+        "Chás amargos digestivos tradicionais",
+        "Fitoterapia popular hepática/digestiva (contexto cultural)",
+        "Uso em decoctos regionais"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Amargor intenso; uso prolongado e gravidez exigem orientação. Não substitui avaliação de doença hepática. Conteúdo educacional — evite automedicação.",
       "tags": [
         "nativa",
         "digestao",
-        "cha"
+        "cha",
+        "amargo",
+        "baccharis"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -92,20 +104,23 @@
       "nomePopular": "Carqueja",
       "nomeCientifico": "Baccharis trimera",
       "familia": "Asteraceae",
-      "summary": "Arbusto nativo usado na tradição popular do Sul/Sudeste em chás amargos."
+      "summary": "Arbusto nativo (*Baccharis trimera*) — chás amargos do Sul/Sudeste; flavonoides e diterpenos em tradição digestiva popular."
     },
     {
       "partsUsed": [
         "Partes aéreas"
       ],
       "traditionalUses": [
-        "Infusões tradicionais",
-        "Uso tópico em banhos"
+        "Infusões tradicionais (diurese popular)",
+        "Banhos e uso tópico",
+        "Interesse em sílica / tecido conjuntivo na tradição"
       ],
-      "cautions": "Pode interagir com diuréticos e afetar rins — orientar-se com profissional. Conteúdo educacional.",
+      "cautions": "Pode interagir com diuréticos e afetar rins/eletrólitos — orientar-se com profissional. Identificar espécie; alguns Equisetum são tóxicos. Conteúdo educacional.",
       "tags": [
         "cha",
-        "mineral"
+        "mineral",
+        "silica",
+        "diuretico"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -114,21 +129,24 @@
       "nomePopular": "Cavalinha",
       "nomeCientifico": "Equisetum arvense",
       "familia": "Equisetaceae",
-      "summary": "Planta rica em sílica na tradição popular; usada em chás e banhos."
+      "summary": "Equisetum — tradição de sílica e diurese popular; partes aéreas em chás e banhos (não confundir espécies tóxicas)."
     },
     {
       "partsUsed": [
         "Folhas"
       ],
       "traditionalUses": [
-        "Chás relaxantes",
-        "Aromatização doméstica"
+        "Chás relaxantes e digestivos leves",
+        "Banhos e aromatização doméstica",
+        "Tradição de quintal brasileiro"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Quimiotipos variam (cheiro e composição). Óleo essencial concentrado ≠ chá. Gravidez: orientação profissional. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "cha",
         "calmante",
-        "brasileira"
+        "brasileira",
+        "lippia",
+        "oleo-essencial"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -137,21 +155,24 @@
       "nomePopular": "Erva-cidreira",
       "nomeCientifico": "Lippia alba",
       "familia": "Verbenaceae",
-      "summary": "Espécie muito cultivada no Brasil; folhas aromáticas em chás e banhos."
+      "summary": "*Lippia alba* — erva-cidreira brasileira; folhas com óleos essenciais (citral/carvona conforme quimiotipo) em chás e banhos."
     },
     {
       "partsUsed": [
         "Folhas"
       ],
       "traditionalUses": [
-        "Chás digestivos tradicionais",
-        "Fitoterapia brasileira"
+        "Chás digestivos / gástricos tradicionais",
+        "Fitoterapia brasileira popular",
+        "Decoctos de folhas"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Não substitui diagnóstico de úlcera ou gastrite. Uso prolongado e gravidez: orientação profissional. Conteúdo educacional — evite automedicação.",
       "tags": [
         "nativa",
         "digestao",
-        "mata-atlantica"
+        "mata-atlantica",
+        "taninos",
+        "gastrico"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -160,21 +181,24 @@
       "nomePopular": "Espinheira-santa",
       "nomeCientifico": "Maytenus ilicifolia",
       "familia": "Celastraceae",
-      "summary": "Arbusto nativo da Mata Atlântica; folhas na fitoterapia popular gástrica."
+      "summary": "*Maytenus ilicifolia* — Mata Atlântica; folhas na tradição gástrica brasileira; taninos e triterpenos em contexto educacional."
     },
     {
       "partsUsed": [
         "Folhas"
       ],
       "traditionalUses": [
-        "Xaropes e chás tradicionais",
-        "Uso popular respiratório"
+        "Xaropes e chás da medicina popular respiratória",
+        "Infusões expectorantes tradicionais",
+        "Uso familiar em resfriados (tradição — não protocolo)"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Cumarinas: cautela com anticoagulantes e hepatotoxicidade em doses altas. Não usar em gravidez sem orientação. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "nativa",
         "respiratorio",
-        "cha"
+        "cha",
+        "cumarina",
+        "xarope"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -183,21 +207,24 @@
       "nomePopular": "Guaco",
       "nomeCientifico": "Mikania glomerata",
       "familia": "Asteraceae",
-      "summary": "Trepadeira brasileira clássica em xaropes e chás da medicina popular respiratória."
+      "summary": "*Mikania glomerata* — trepadeira clássica em xaropes e chás respiratórios; cumarinas (ex. cumarina) em contexto educacional."
     },
     {
       "partsUsed": [
         "Folhas"
       ],
       "traditionalUses": [
-        "Chás digestivos",
-        "Culinária e aromatização"
+        "Chás digestivos e refrescantes",
+        "Culinária e aromatização",
+        "Uso popular em náuseas leves"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Não confundir espécies (*M. piperita* vs *spicata*). Óleo essencial concentrado pode irritar; cautela em refluxo e lactentes. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "cha",
         "culinaria",
-        "aromatica"
+        "aromatica",
+        "mentol",
+        "digestao"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -206,20 +233,24 @@
       "nomePopular": "Hortelã",
       "nomeCientifico": "Mentha spicata",
       "familia": "Lamiaceae",
-      "summary": "Erva aromática de cultivo fácil; folhas em chás e culinária."
+      "summary": "*Mentha spicata* (e afins) — mentol/óleos mentolados em chás e culinária; espécie e quimiotipo importam."
     },
     {
       "partsUsed": [
         "Folhas"
       ],
       "traditionalUses": [
-        "Chás digestivos tradicionais"
+        "Chás digestivos amargos tradicionais",
+        "Uso popular após refeições pesadas",
+        "Fitoterapia doméstica (identificar espécie)"
       ],
-      "cautions": "Não confundir espécies; uso prolongado exige cuidado. Conteúdo educacional.",
+      "cautions": "Não confundir com *Peumus boldus* (boldo-do-chile — hepatotoxicidade documentada em abusos). Uso prolongado, gravidez e doença hepática: orientação profissional. Conteúdo educacional.",
       "tags": [
         "digestao",
         "cha",
-        "domestica"
+        "domestica",
+        "falso-boldo",
+        "plectranthus"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -228,7 +259,7 @@
       "nomePopular": "Boldo",
       "nomeCientifico": "Plectranthus barbatus",
       "familia": "Lamiaceae",
-      "summary": "No Brasil, “boldo” costuma referir P. barbatus (falso-boldo); folhas amargas em chás."
+      "summary": "No Brasil, “boldo” costuma ser *Plectranthus barbatus* (falso-boldo) — distinto do *Peumus boldus* chileno; folhas amargas em chás digestivos."
     },
     {
       "partsUsed": [
@@ -236,13 +267,16 @@
       ],
       "traditionalUses": [
         "Infusões relaxantes",
-        "Aromatização"
+        "Aromatização e culinária leve",
+        "Tradição europeia de conforto nervoso leve"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Pode potencializar sedativos. Hipotiroidismo e gravidez: orientação. Óleo essencial concentrado ≠ chá. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "cha",
         "calmante",
-        "aromatica"
+        "aromatica",
+        "citral",
+        "lamiaceae"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -251,7 +285,7 @@
       "nomePopular": "Melissa",
       "nomeCientifico": "Melissa officinalis",
       "familia": "Lamiaceae",
-      "summary": "Erva citrica associada a chás calmantes na tradição europeia adaptada ao Brasil."
+      "summary": "*Melissa officinalis* — balm europeu adaptado; citral e ácidos fenólicos em chás calmantes."
     },
     {
       "partsUsed": [
@@ -259,14 +293,17 @@
         "Ramos"
       ],
       "traditionalUses": [
-        "Culinária",
-        "Chás aromáticos"
+        "Culinária (carnes, assados, azeites)",
+        "Chás aromáticos",
+        "Tradição de estímulo cognitivo popular (contexto cultural)"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Óleo essencial rico em cânfora — não ingerir puro; cautela em epilepsia e gravidez. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "culinaria",
         "aromatica",
-        "cha"
+        "cha",
+        "cineol",
+        "canfora"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -275,21 +312,24 @@
       "nomePopular": "Alecrim",
       "nomeCientifico": "Salvia rosmarinus",
       "familia": "Lamiaceae",
-      "summary": "Arbusto aromático de cozinha e chás; comum em hortas urbanas."
+      "summary": "*Salvia rosmarinus* — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos."
     },
     {
       "partsUsed": [
         "Rizoma"
       ],
       "traditionalUses": [
-        "Chás e decoctos",
-        "Culinária"
+        "Chás e decoctos digestivos",
+        "Culinária (fresco, seco, em conserva)",
+        "Uso popular em náuseas de viagem / gestação leve (sempre com orientação na gravidez)"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Pode interagir com anticoagulantes e irritar o estômago em doses altas; cautela em cálculos biliares. Uso culinário ≠ extratos concentrados. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "cha",
         "culinaria",
-        "rizoma"
+        "rizoma",
+        "gingerois",
+        "nauseas"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -298,7 +338,7 @@
       "nomePopular": "Gengibre",
       "nomeCientifico": "Zingiber officinale",
       "familia": "Zingiberaceae",
-      "summary": "Rizoma picante usado em chás, culinária e preparações tradicionais."
+      "summary": "Rizoma de *Zingiber officinale* — gingeróis e shogaóis; chás, culinária e tradição antináusea (contexto educacional)."
     },
     {
       "partsUsed": [
@@ -333,12 +373,17 @@
         "Raiz"
       ],
       "traditionalUses": [
-        "Decoctos tradicionais"
+        "Decoctos tradicionais de casca/raiz",
+        "Fitoterapia popular andino-amazônica",
+        "Uso tónico tradicional (contexto cultural)"
       ],
-      "cautions": "Espécie regulamentada em alguns contextos; procurar orientação profissional.",
+      "cautions": "Espécie e extratos regulamentados em alguns contextos; pode modular imunidade — cautela em doenças autoimunes e pré-cirurgia. Procurar orientação profissional. Conteúdo educacional.",
       "tags": [
         "amazonia",
-        "tradicional"
+        "tradicional",
+        "alcaloides",
+        "uncaria",
+        "imunidade"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -347,7 +392,7 @@
       "nomePopular": "Unha-de-gato",
       "nomeCientifico": "Uncaria tomentosa",
       "familia": "Rubiaceae",
-      "summary": "Trepadeira amazônica; casca e raiz na fitoterapia popular andino-amazônica."
+      "summary": "*Uncaria tomentosa* — trepadeira andino-amazônica; alcaloides oxindólicos e ácidos quinóvicos na tradição popular (casca/raiz)."
     },
     {
       "partsUsed": [
@@ -355,13 +400,17 @@
         "Óleo"
       ],
       "traditionalUses": [
-        "Uso popular tópico e oral tradicional"
+        "Uso popular tópico (óleo/sementes)",
+        "Tradição oral regional (com cautela)",
+        "Fitoterapia do Cerrado"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Sementes e óleos concentrados podem irritar; uso oral só com orientação. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "cerrado",
         "nativa",
-        "oleo"
+        "oleo",
+        "diterpenos",
+        "sementes"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -370,21 +419,24 @@
       "nomePopular": "Sucupira",
       "nomeCientifico": "Pterodon emarginatus",
       "familia": "Fabaceae",
-      "summary": "Árvore do Cerrado; sementes e óleo na medicina popular do Centro-Oeste."
+      "summary": "*Pterodon emarginatus* — Cerrado; sementes e óleo com diterpenos furânicos na medicina popular do Centro-Oeste."
     },
     {
       "partsUsed": [
         "Óleo-resina"
       ],
       "traditionalUses": [
-        "Uso tópico tradicional",
-        "Fitoterapia amazônica"
+        "Uso tópico tradicional (pele/inflamação popular)",
+        "Fitoterapia amazônica (gotas/óleo)",
+        "Cosmética artesanal"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Óleo-resina concentrado pode irritar mucosas; uso oral e dose só com orientação. Autenticidade do produto importa. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "amazonia",
         "oleo",
-        "nativa"
+        "nativa",
+        "cariofileno",
+        "resina"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -393,21 +445,24 @@
       "nomePopular": "Copaíba",
       "nomeCientifico": "Copaifera langsdorffii",
       "familia": "Fabaceae",
-      "summary": "Árvore amazônica/cerrado famosa pelo óleo-resina de uso tradicional."
+      "summary": "*Copaifera* — óleo-resina amazônico/cerrado rico em β-cariofileno e diterpenos; tradição tópica e oral popular."
     },
     {
       "partsUsed": [
         "Óleo das sementes"
       ],
       "traditionalUses": [
-        "Uso tópico tradicional",
-        "Cosmética natural"
+        "Uso tópico tradicional (pele/insetos — tradição)",
+        "Cosmética natural e sabões",
+        "Tradição ribeirinha amazônica"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Uso tópico prudente; ingestão e extratos concentrados só com orientação. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "amazonia",
         "oleo",
-        "pele"
+        "pele",
+        "limoides",
+        "cosmetica"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -416,7 +471,7 @@
       "nomePopular": "Andiroba",
       "nomeCientifico": "Carapa guianensis",
       "familia": "Meliaceae",
-      "summary": "Árvore amazônica; óleo das sementes na cosmética e tradição local."
+      "summary": "*Carapa guianensis* — óleo das sementes amazônicas; limonoides e ácidos gordos em cosmética e tradição local."
     },
     {
       "partsUsed": [
@@ -424,14 +479,17 @@
         "Flores"
       ],
       "traditionalUses": [
-        "Culinária regional",
-        "Uso tradicional oral"
+        "Culinária regional (tacacá, pato no tucupi)",
+        "Sensação anestésica/formigante tradicional",
+        "Uso oral popular em pequenas quantidades culinárias"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Spilanthol causa dormência temporária — esperado em doses culinárias; extratos concentrados exigem orientação. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "amazonia",
         "culinaria",
-        "regional"
+        "regional",
+        "spilanthol",
+        "anestesico"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -440,20 +498,24 @@
       "nomePopular": "Jambu",
       "nomeCientifico": "Acmella oleracea",
       "familia": "Asteraceae",
-      "summary": "Erva amazônica de sabor anestésico; usada na culinária paraense."
+      "summary": "*Acmella oleracea* — jambu amazônico; spilanthol provoca formigamento; culinária paraense e tradição oral."
     },
     {
       "partsUsed": [
         "Casca"
       ],
       "traditionalUses": [
-        "Chás tradicionais"
+        "Chás tradicionais calmantes",
+        "Uso popular para nervosismo/sono (contexto cultural)",
+        "Fitoterapia brasileira de casca"
       ],
-      "cautions": "Pode potencializar sedativos — não usar sem orientação. Conteúdo educacional.",
+      "cautions": "Pode potencializar sedativos e álcool — não usar sem orientação. Condução e máquinas: cautela. Conteúdo educacional.",
       "tags": [
         "nativa",
         "calmante",
-        "cha"
+        "cha",
+        "alcaloides",
+        "sedativo"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -462,7 +524,7 @@
       "nomePopular": "Mulungu",
       "nomeCientifico": "Erythrina mulungu",
       "familia": "Fabaceae",
-      "summary": "Árvore brasileira; casca em chás da tradição popular calmantes."
+      "summary": "*Erythrina mulungu* — casca com alcaloides eritrínicos; tradição de chás calmantes (sedação popular)."
     },
     {
       "partsUsed": [
@@ -471,13 +533,16 @@
       ],
       "traditionalUses": [
         "Chás calmantes",
-        "Fitoterapia popular"
+        "Fitoterapia popular e produtos industrializados",
+        "Tradição de conforto ansioso leve (não protocolo)"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Pode potencializar sedativos. Identificar espécie (*P. incarnata* vs edulis — fruto ≠ folha medicinal). Conteúdo educacional — não substitui consulta.",
       "tags": [
         "calmante",
         "cha",
-        "brasileira"
+        "brasileira",
+        "flavonoides",
+        "passiflora"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -486,21 +551,24 @@
       "nomePopular": "Maracujá",
       "nomeCientifico": "Passiflora incarnata",
       "familia": "Passifloraceae",
-      "summary": "Passifloras usadas em chás e fitoterápicos industriais; folhas e partes aéreas."
+      "summary": "*Passiflora* — folhas/partes aéreas em chás e fitoterápicos; flavonoides C-glicosídeos na tradição calmante."
     },
     {
       "partsUsed": [
         "Flores"
       ],
       "traditionalUses": [
-        "Uso tópico em pele",
-        "Infusões leves"
+        "Pomadas e uso tópico em pele",
+        "Infusões leves",
+        "Cosmética herbal tradicional"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Alergia a Asteraceae possível. Uso interno prolongado: orientação. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "pele",
         "flor",
-        "cha"
+        "cha",
+        "triterpenos",
+        "topico"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -509,20 +577,24 @@
       "nomePopular": "Calêndula",
       "nomeCientifico": "Calendula officinalis",
       "familia": "Asteraceae",
-      "summary": "Flor ornamental e medicinal; pétalas em pomadas e chás leves."
+      "summary": "*Calendula officinalis* — pétalas com triterpenos e carotenóides; tradição tópica em pele e infusões leves."
     },
     {
       "partsUsed": [
         "Casca"
       ],
       "traditionalUses": [
-        "Decoctos e uso tópico tradicional"
+        "Decoctos e uso tópico tradicional",
+        "Tradição adstringente/ cicatrizante popular",
+        "Fitoterapia do Cerrado"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Taninos concentrados irritam mucosas; uso oral só com orientação. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "cerrado",
         "nativa",
-        "adstringente"
+        "adstringente",
+        "taninos",
+        "casca"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -531,21 +603,24 @@
       "nomePopular": "Barbatimão",
       "nomeCientifico": "Stryphnodendron adstringens",
       "familia": "Fabaceae",
-      "summary": "Árvore do Cerrado; casca adstringente na tradição popular brasileira."
+      "summary": "*Stryphnodendron adstringens* — casca do Cerrado rica em taninos; tradição adstringente tópica e oral popular."
     },
     {
       "partsUsed": [
         "Folhas"
       ],
       "traditionalUses": [
-        "Referência histórica farmacológica",
-        "Fitoterapia regional"
+        "Referência histórica farmacológica (pilocarpina)",
+        "Fitoterapia regional com supervisão",
+        "Educação sobre alcaloides potentes"
       ],
-      "cautions": "Substâncias ativas potentes — uso só com supervisão profissional. Conteúdo educacional.",
+      "cautions": "Pilocarpina e alcaloides relacionados são potentes — uso só com supervisão profissional. Não automedicar. Conteúdo educacional.",
       "tags": [
         "amazonia",
         "historica",
-        "nativa"
+        "nativa",
+        "pilocarpina",
+        "alcaloides"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -554,20 +629,24 @@
       "nomePopular": "Jaborandi",
       "nomeCientifico": "Pilocarpus microphyllus",
       "familia": "Rutaceae",
-      "summary": "Espécie amazônica historicamente importante pela pilocarpina."
+      "summary": "*Pilocarpus microphyllus* — fonte histórica de pilocarpina (agonista muscarínico); referência farmacológica amazônica."
     },
     {
       "partsUsed": [
         "Raiz"
       ],
       "traditionalUses": [
-        "Referência histórica farmacêutica"
+        "Referência histórica farmacêutica (emético)",
+        "Educação sobre alcaloides isoquinolínicos",
+        "Contexto de farmacopeia — não uso doméstico"
       ],
-      "cautions": "Uso tóxico se inadequado — não automedicar. Conteúdo educacional apenas.",
+      "cautions": "Emetina é tóxica em abuso — não automedicar nem usar como «xarope caseiro». Conteúdo educacional apenas.",
       "tags": [
         "historica",
         "nativa",
-        "farmacopeia"
+        "farmacopeia",
+        "emetina",
+        "toxica"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -576,20 +655,24 @@
       "nomePopular": "Ipecacuanha",
       "nomeCientifico": "Carapichea ipecacuanha",
       "familia": "Rubiaceae",
-      "summary": "Planta brasileira histórica na farmacopeia; raiz de uso restrito."
+      "summary": "*Carapichea ipecacuanha* — raiz histórica com emetina/cefaelina; farmacopeia e uso restrito (não remédio caseiro)."
     },
     {
       "partsUsed": [
         "Raiz"
       ],
       "traditionalUses": [
-        "Preparações tradicionais tonificantes"
+        "Preparações tradicionais tonificantes",
+        "Uso popular de raiz (cápsulas/pó — mercado)",
+        "Tradição adaptogénica popular (contexto cultural)"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Suplementos concentrados ≠ raiz culinária. Gravidez, hipertensão e medicamentos: orientação profissional. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "nativa",
         "raiz",
-        "tradicional"
+        "tradicional",
+        "ecdiesteroides",
+        "tonico"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -598,7 +681,7 @@
       "nomePopular": "Pfaffia (ginseng-brasileiro)",
       "nomeCientifico": "Pfaffia glomerata",
       "familia": "Amaranthaceae",
-      "summary": "Raiz conhecida como ginseng-brasileiro na tradição popular."
+      "summary": "*Pfaffia glomerata* — «ginseng-brasileiro»; raiz com ecdiesteroides e saponinas na tradição tonificante popular."
     },
     {
       "partsUsed": [
@@ -607,14 +690,17 @@
         "Frutos"
       ],
       "traditionalUses": [
-        "Uso tópico tradicional",
-        "Culinária (frutos)"
+        "Uso tópico tradicional (casca/folhas)",
+        "Culinária (frutos — pimenta-rosa)",
+        "Tradição adstringente popular"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Anacardiaceae: alergia cruzada possível (urushiol-like). Frutos culinários ≠ decocto de casca. Conteúdo educacional — não substitui consulta.",
       "tags": [
         "nativa",
         "culinaria",
-        "pele"
+        "pele",
+        "taninos",
+        "pimenta-rosa"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -623,19 +709,24 @@
       "nomePopular": "Aroeira",
       "nomeCientifico": "Schinus terebinthifolia",
       "familia": "Anacardiaceae",
-      "summary": "Árvore comum no Brasil; casca e folhas na medicina popular e culinária (pimenta-rosa)."
+      "summary": "*Schinus terebinthifolia* — aroeira/pimenta-rosa; taninos e óleo essencial; casca/folhas na tradição e frutos na culinária."
     },
     {
       "partsUsed": [
         "Casca"
       ],
       "traditionalUses": [
-        "Referência histórica antimalárica"
+        "Referência histórica antimalárica (quinina)",
+        "Educação sobre alcaloides da casca",
+        "Contexto de farmacopeia e história da medicina"
       ],
-      "cautions": "Espécies e usos regulamentados; não automedicar. Conteúdo educacional.",
+      "cautions": "Quinina e derivados são fármacos potentes — espécies e usos regulamentados; não automedicar com «chá de quina». Conteúdo educacional.",
       "tags": [
         "historica",
-        "farmacopeia"
+        "farmacopeia",
+        "quinina",
+        "antimalarico",
+        "alcaloides"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -644,7 +735,7 @@
       "nomePopular": "Quina",
       "nomeCientifico": "Cinchona sp.",
       "familia": "Rubiaceae",
-      "summary": "Género histórico da quina; casca associada à quinine na história da medicina."
+      "summary": "*Cinchona* — casca histórica da quinina; antimalárico clássico — referência de farmacopeia, não chá doméstico."
     },
     {
       "partsUsed": [
@@ -686,7 +777,10 @@
         "medicinal",
         "unifesp",
         "legislacao",
-        "fitoterapia"
+        "fitoterapia",
+        "canabinoides",
+        "thc",
+        "cbd"
       ],
       "relatedUnifesp": true,
       "cover": null,
@@ -695,7 +789,7 @@
       "nomePopular": "Cannabis (medicinal)",
       "nomeCientifico": "Cannabis sativa L.",
       "familia": "Cannabaceae",
-      "summary": "Espécie com uso terapêutico regulamentado em contextos clínicos e formativos. Destaque do curso UNIFESP e da inspeção do laboratório."
+      "summary": "*Cannabis sativa* — canabinóides (THC, CBD e outros) em contexto clínico e formativo; destaque UNIFESP e legislação — não incentivo a cultivo ilícito."
     },
     {
       "id": "abacate",
