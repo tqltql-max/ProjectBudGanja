@@ -185,6 +185,9 @@
       ICONS.radio +
       '<span class="radio-mini-fab-dot" aria-hidden="true"></span>' +
       '</button>' +
+      '<button type="button" class="radio-mini-skip" data-radio-fab-next>' +
+      ICONS.next +
+      '</button>' +
       '<div class="radio-mini-panel">' +
       '<div class="radio-mini-meta">' +
       '<a class="radio-mini-label" href="/radio/" data-radio-home></a>' +
@@ -226,6 +229,7 @@
     var artistEl = root.querySelector('[data-radio-artist]');
     var homeLink = root.querySelector('[data-radio-home]');
     var btnFab = root.querySelector('[data-radio-fab]');
+    var btnFabNext = root.querySelector('[data-radio-fab-next]');
     if (homeLink && meta.homeHref) homeLink.setAttribute('href', meta.homeHref);
     var openLink = root.querySelector('[data-radio-open]');
     if (openLink && meta.homeHref) openLink.setAttribute('href', meta.homeHref);
@@ -292,6 +296,10 @@
       if (homeLink) homeLink.textContent = radioLabel();
       if (btnPrev) btnPrev.setAttribute('aria-label', tr('radio.prev', 'Faixa anterior'));
       if (btnNext) btnNext.setAttribute('aria-label', tr('radio.next', 'Faixa seguinte'));
+      if (btnFabNext) {
+        btnFabNext.setAttribute('aria-label', tr('radio.next', 'Faixa seguinte'));
+        btnFabNext.setAttribute('title', tr('radio.next', 'Faixa seguinte'));
+      }
       if (btnShare) {
         btnShare.setAttribute('aria-label', tr('radio.share', 'Partilhar música a tocar'));
         btnShare.setAttribute('title', tr('radio.shareTitle', 'Partilhar música'));
@@ -468,15 +476,24 @@
       });
     }
 
-    btnPrev.addEventListener('click', function () {
+    function skipBy(delta) {
       writeSession(STORAGE_TIME, '0');
-      loadTrack(index - 1, !audio.paused || wantPlay, 0);
+      loadTrack(index + delta, !audio.paused || wantPlay, 0);
+    }
+
+    btnPrev.addEventListener('click', function () {
+      skipBy(-1);
     });
 
     btnNext.addEventListener('click', function () {
-      writeSession(STORAGE_TIME, '0');
-      loadTrack(index + 1, !audio.paused || wantPlay, 0);
+      skipBy(1);
     });
+
+    if (btnFabNext) {
+      btnFabNext.addEventListener('click', function () {
+        skipBy(1);
+      });
+    }
 
     btnMute.addEventListener('click', function () {
       audio.muted = !audio.muted;

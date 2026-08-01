@@ -885,7 +885,7 @@ function markActiveNavLinks(root) {
 function markQuickNavActive(root) {
   if (!root) return;
   const current = normalizeNavPath(window.location.pathname);
-  root.querySelectorAll('.header-quick-link').forEach(function (link) {
+  root.querySelectorAll('.header-quick-link, .header-community-mark').forEach(function (link) {
     const href = link.getAttribute('href');
     const prefixes = String(link.getAttribute('data-active-prefixes') || '')
       .split(',')
@@ -1266,14 +1266,6 @@ function getSiteHubNav() {
         tone: 'cultivo'
       },
       {
-        href: '/comunidade/',
-        icon: '<img class="header-quick-link-icon-img" src="/imagens/foto-comunidade.png" alt="" width="20" height="20" decoding="async">',
-        label: i18n('nav.community', 'Comunidade'),
-        tip: i18n('nav.quickCommunityTip', 'Feed de fotos do diário de pesquisas'),
-        prefixes: '/comunidade',
-        tone: 'comunidade'
-      },
-      {
         href: '/videos/',
         icon: '▶',
         label: i18n('nav.videos', 'Vídeos'),
@@ -1456,21 +1448,24 @@ function buildHeaderHTML(site, authState) {
     '<ul id="site-search-results" class="site-search-results"></ul>' +
     '</div>';
 
-  // Cluster: rádio + Comunidade + idioma (no mobile ficam juntos ao centro).
-  const communityLangCluster =
+  // Cluster: rádio + idioma (no mobile ficam juntos ao centro).
+  const radioLangCluster =
     '<div class="header-cluster header-cluster--community-lang">' +
     '<div id="header-radio-host" class="header-radio-host"></div>' +
-    '<a href="/comunidade/" class="header-quick-link header-quick-link--comunidade header-cluster-item"' +
-    ' data-active-prefixes="/comunidade"' +
-    ' data-tip="' + escapeNavText(i18n('nav.quickCommunityTip', 'Feed de fotos do diário de pesquisas')) + '"' +
-    ' aria-label="' + escapeNavText(i18n('nav.community', 'Comunidade')) + '">' +
-    '<span class="header-quick-link-icon" aria-hidden="true">' +
-    '<img class="header-quick-link-icon-img" src="/imagens/foto-comunidade.png" alt="" width="20" height="20" decoding="async">' +
-    '</span>' +
-    '<span class="header-quick-link-label">' + escapeNavText(i18n('nav.community', 'Comunidade')) + '</span>' +
-    '</a>' +
     buildLangSwitcherHTML('header') +
     '</div>';
+
+  const communityMark =
+    '<a href="/comunidade/" class="header-community-mark"' +
+    ' data-active-prefixes="/comunidade"' +
+    ' data-tip="' + escapeNavText(i18n('nav.quickCommunityTip', 'Feed de fotos do diário de pesquisas')) + '"' +
+    ' aria-label="' + escapeNavText(i18n('nav.community', 'Comunidade')) + '"' +
+    ' title="' + escapeNavText(i18n('nav.community', 'Comunidade')) + '">' +
+    '<span class="header-community-mark-media" aria-hidden="true">' +
+    '<img class="header-community-mark-img" src="/imagens/foto-comunidade.png" alt="" width="40" height="40" decoding="async">' +
+    '</span>' +
+    '<span class="header-community-mark-label">' + escapeNavText(i18n('nav.community', 'Comunidade')) + '</span>' +
+    '</a>';
 
   const headerToolbar =
     '<div class="header-toolbar">' +
@@ -1490,6 +1485,7 @@ function buildHeaderHTML(site, authState) {
     '</nav>' +
     '<div class="header-bar">' +
     '<div class="header-chrome header-chrome--main">' +
+    '<div class="header-brand-group">' +
     '<div class="logo">' +
     '<a href="/" class="header-quick-link header-quick-link--brand logo-link" aria-label="' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '">' +
     '<span class="header-quick-link-icon" aria-hidden="true">' +
@@ -1497,8 +1493,10 @@ function buildHeaderHTML(site, authState) {
     '</span>' +
     '<span class="header-quick-link-label">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
     '</a></div>' +
+    communityMark +
+    '</div>' +
     '<span class="header-chrome-sep" aria-hidden="true"></span>' +
-    communityLangCluster +
+    radioLangCluster +
     buildDesktopQuickNavHTML() +
     '<span class="header-chrome-sep header-chrome-sep--end" aria-hidden="true"></span>' +
     '<div class="header-right">' +
