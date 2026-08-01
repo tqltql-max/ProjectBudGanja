@@ -46,6 +46,9 @@ var SERIES_LABELS = {
   'plantas-medicinais': 'Plantas medicinais',
   'plantas-frutos': 'Frutos',
   'plantas-derivados-risco': 'Derivados de risco',
+  'animais-catalogo': 'Animais',
+  'animais-producao': 'Produção animal',
+  'animais-derivados-risco': 'Derivados de risco',
   'palavras-origem': 'Palavras',
   'pessoas-historia': 'Pessoas',
   'divulgacao-saude': 'Divulgação',
@@ -141,11 +144,14 @@ function resolveInspecaoTipo(post) {
   if (series === 'artigos-cientificos' || series.indexOf('artigo') === 0 || /inspecao-artigo-/i.test(slug)) return 'artigo';
   if (
     series === 'plantas-derivados-risco' ||
+    series === 'animais-derivados-risco' ||
     series.indexOf('derivado') === 0 ||
     /inspecao-derivado-/i.test(slug)
   ) {
     return 'derivado';
   }
+  if (series === 'animais-producao') return 'producao';
+  if (series === 'animais-catalogo' || /inspecao-animal-/i.test(slug)) return 'animal';
   if (
     series === 'palavras-origem' ||
     series.indexOf('palavra') === 0 ||
@@ -360,6 +366,8 @@ var INSPECAO_HUB_TIPOS = [
   { id: 'artigo', labelKey: 'pages.inspections.chipArticles', fallback: 'Artigos', sort: 'seriesOrder' },
   { id: 'planta', labelKey: 'pages.inspections.chipPlants', fallback: 'Plantas', sort: 'seriesOrder' },
   { id: 'fruto', labelKey: 'pages.inspections.chipFruits', fallback: 'Frutos', sort: 'seriesOrder', keepVisible: true },
+  { id: 'animal', labelKey: 'pages.inspections.chipAnimals', fallback: 'Animais', sort: 'seriesOrder', keepVisible: true },
+  { id: 'producao', labelKey: 'pages.inspections.chipAnimalProduction', fallback: 'Produção animal', sort: 'seriesOrder', keepVisible: true },
   { id: 'derivado', labelKey: 'pages.inspections.chipDerivatives', fallback: 'Derivados', sort: 'seriesOrder' },
   { id: 'palavra', labelKey: 'pages.inspections.chipWords', fallback: 'Palavras', sort: 'seriesOrder', keepVisible: true },
   { id: 'divulgacao', labelKey: 'pages.inspections.chipOutreach', fallback: 'Divulgação', sort: 'seriesOrder' },

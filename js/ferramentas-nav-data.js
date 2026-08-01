@@ -20,6 +20,15 @@ window.__BIBLIOTECA_NAV__ = {
           "description": "Catálogo de plantas fitoterápicas do Brasil."
         },
         {
+          "label": "Animais",
+          "tileLabel": "Animais",
+          "href": "/animais/",
+          "icon": "🐾",
+          "slug": "animais",
+          "featured": true,
+          "description": "Catálogo de animais: criação, companhia e derivados industriais."
+        },
+        {
           "label": "Curso UNIFESP",
           "tileLabel": "UNIFESP",
           "href": "/biblioteca/unifesp/",

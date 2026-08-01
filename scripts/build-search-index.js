@@ -11,6 +11,7 @@ const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registr
 const STATIC_PAGES = [
   { url: '/', title: 'Início', desc: 'Laboratório de fitoterapia brasileira — plantas medicinais, UNIFESP e cultivo responsável', keywords: 'home fitoterapia plantas' },
   { url: '/plantas/', title: 'Plantas fitoterápicas', desc: 'Catálogo curado de plantas medicinais e fitoterápicas do Brasil', keywords: 'plantas fitoterapia medicinal babosa camomila cannabis' },
+  { url: '/animais/', title: 'Animais', desc: 'Catálogo de animais: criação, companhia e derivados industriais de risco', keywords: 'animais produção galinha vaca porco abelha derivados indústria' },
   { url: '/biblioteca/unifesp/', title: 'Curso UNIFESP', desc: 'Hub do XIV curso de extensão UNIFESP sobre cannabis medicinal', keywords: 'unifesp curso cannabis medicinal siex formação' },
   { url: '/biblioteca/inspecoes/', title: 'Inspeções', desc: 'Relatórios técnicos com método verificável — canais, equipamentos e cursos', keywords: 'inspeção auditoria método' },
   { url: '/biblioteca/pesquisas/', title: 'Pesquisas', desc: 'Relatórios e estudos técnicos', keywords: 'pesquisa relatório' },
@@ -73,6 +74,31 @@ function buildIndex() {
           (plant.tags || []).join(' '),
           (plant.traditionalUses || []).join(' '),
           'planta fitoterapia medicinal'
+        ]
+          .filter(Boolean)
+          .join(' ')
+          .slice(0, 2000)
+      });
+    });
+  } catch (e) { /* optional */ }
+
+  try {
+    const { readAnimais, getAnimalUrl } = require('../lib/animais-service.js');
+    const catalog = readAnimais();
+    catalog.animals.forEach((animal) => {
+      items.push({
+        title: animal.nomePopular + (animal.nomeCientifico ? ' (' + animal.nomeCientifico + ')' : ''),
+        url: getAnimalUrl(animal),
+        excerpt: animal.summary || '',
+        text: [
+          animal.nomePopular,
+          animal.nomeCientifico,
+          animal.familia,
+          animal.summary,
+          animal.hubCategory || '',
+          (animal.tags || []).join(' '),
+          (animal.traditionalUses || []).join(' '),
+          'animal produção indústria derivado'
         ]
           .filter(Boolean)
           .join(' ')

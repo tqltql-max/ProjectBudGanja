@@ -20,6 +20,7 @@
     "build:youtube": "node scripts/build-youtube-feed.js",
     "build:radio": "node scripts/build-radio-playlist.js",
     "build:plantas": "node scripts/build-plantas.js",
+    "build:animais": "node scripts/build-animais.js",
     "build:search": "node scripts/build-search-index.js",
     "build:sitemap": "node scripts/build-sitemap.js",
     "build:assetlinks": "node scripts/build-assetlinks.js",

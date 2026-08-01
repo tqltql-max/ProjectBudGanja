@@ -6,6 +6,7 @@
 @import url("pages/vida.css");
 @import url("pages/home.css");
 @import url("pages/plantas.css");
+@import url("pages/animais.css");
 @import url("luximetro.css");
 
 /* Design tokens */
@@ -52,6 +53,7 @@
     --header-offset: var(--header-height);
     --z-main: 1;
     --z-install: 1800;
+    --z-cookie-consent: 1850;
     --z-header: 2000;
     --z-nav-backdrop: 1999;
     --z-nav-dropdown: 2500;
@@ -6472,6 +6474,55 @@ body[data-page="home"] .botao-home.has-hover-tip {
     margin-top: 0;
 }
 
+/* Banner LGPD — consentimento GA4 */
+.cookie-consent {
+    position: fixed;
+    left: max(12px, env(safe-area-inset-left));
+    right: max(12px, env(safe-area-inset-right));
+    bottom: max(12px, env(safe-area-inset-bottom));
+    z-index: var(--z-cookie-consent);
+    pointer-events: none;
+}
+
+.cookie-consent-inner {
+    pointer-events: auto;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: var(--color-bg-elevated, #2a2a2a);
+    color: var(--color-text, #fff);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+    display: grid;
+    gap: 14px;
+}
+
+.cookie-consent-text {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: var(--color-text-muted, #ccc);
+}
+
+.cookie-consent-text a {
+    color: var(--color-accent-light, #f0d060);
+}
+
+.cookie-consent-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+@media (min-width: 720px) {
+    .cookie-consent-inner {
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+}
+
 /* Estilos para PWA Install Button */
 .install-prompt {
     position: fixed;
@@ -11464,6 +11515,16 @@ body[data-page="comunidade"] {
     line-height: 1.45;
 }
 
+.comunidade-badge--staff {
+    background: rgba(212, 175, 55, 0.18);
+    border: 1px solid rgba(212, 175, 55, 0.45);
+    color: #f3e6a6;
+}
+
+.comunidade-card--staff {
+    border-color: rgba(212, 175, 55, 0.38);
+}
+
 .comunidade-comments {
     margin-top: 0.85rem;
     padding-top: 0.75rem;
@@ -11476,6 +11537,24 @@ body[data-page="comunidade"] {
     padding: 0;
     display: grid;
     gap: 0.65rem;
+}
+
+.comunidade-comment-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.comunidade-comment--staff {
+    padding: 0.65rem 0.75rem;
+    border-radius: 10px;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.28);
+}
+
+.comunidade-comment--staff p {
+    font-size: 1.02rem;
 }
 
 .comunidade-comment time {

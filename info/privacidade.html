@@ -53,6 +53,7 @@
             <ul class="info-list">
                 <li>Não vendemos dados pessoais.</li>
                 <li>Sorteios usam dados só para contato e validação da inscrição.</li>
+                <li>Métricas de visita usam Google Analytics (GA4) só com o seu aceite no banner de cookies.</li>
                 <li>Você pode pedir exclusão escrevendo para <a href="mailto:tql.tql@gmail.com">tql.tql@gmail.com</a>.</li>
             </ul>
         </section>
@@ -82,7 +83,22 @@
         <h3>Navegação no site</h3>
         <p>
             O servidor pode registrar logs técnicos (IP, data, página acessada) para segurança e diagnóstico.
-            Não utilizamos cookies de rastreamento publicitário.
+        </p>
+
+        <h3>Google Analytics (métricas de uso)</h3>
+        <p>
+            Usamos o <strong>Google Analytics 4</strong> (código de medição <code>G-Q47PEYEXX6</code>) para
+            estatísticas agregadas de visitas (páginas vistas, dispositivo, origem do tráfego).
+            Cookies/armazenamento de analytics só são ativados se você clicar em
+            <strong>Aceitar métricas</strong> no banner. Publicidade e personalização de anúncios ficam
+            <strong>desligadas</strong> (Consent Mode). O Google processa esses dados conforme a
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">política de privacidade do Google</a>.
+        </p>
+        <p>
+            Pode alterar a escolha a qualquer momento:
+            <button type="button" class="botao botao-outline botao-sm" id="privacy-reset-analytics">
+                Redefinir preferência de métricas
+            </button>
         </p>
 
         <h2>3. Finalidade do tratamento</h2>
@@ -90,12 +106,13 @@
             <li>Validar inscrições em sorteios (uma por CPF/e-mail)</li>
             <li>Contatar ganhadores e responder dúvidas</li>
             <li>Manter o site seguro e funcional</li>
+            <li>Compreender o uso do site (métricas GA4, com consentimento)</li>
         </ul>
 
         <h2>4. Base legal (LGPD)</h2>
         <p>
-            O tratamento baseia-se no <strong>consentimento</strong> (aceite no formulário de sorteio) e no
-            <strong>legítimo interesse</strong> para operação técnica do site, sempre respeitando seus direitos.
+            O tratamento baseia-se no <strong>consentimento</strong> (aceite no formulário de sorteio e no banner de métricas)
+            e no <strong>legítimo interesse</strong> para operação técnica do site, sempre respeitando seus direitos.
         </p>
 
         <h2>5. Retenção</h2>
@@ -123,7 +140,7 @@
         <h2>8. Alterações</h2>
         <p>Esta política pode ser atualizada. A data da última revisão aparece no rodapé do site.</p>
 
-        <p class="privacy-updated"><em>Última atualização: 26 de junho de 2026.</em></p>
+        <p class="privacy-updated"><em>Última atualização: 1 de agosto de 2026.</em></p>
 
         <p class="section-cta-inline">
             <a href="/sorteios/" class="botao btn-inline">Ver sorteios</a>
@@ -140,6 +157,16 @@
     <script src="/js/ferramentas-nav-data.js?v=295"></script>
     <script src="/js/layout.js?v=295"></script>
     <script src="/js/site-features.js?v=295"></script>
+    <script>
+      document.getElementById('privacy-reset-analytics')?.addEventListener('click', function () {
+        if (window.BudGanjaAnalytics && typeof window.BudGanjaAnalytics.resetConsent === 'function') {
+          window.BudGanjaAnalytics.resetConsent();
+        } else {
+          try { localStorage.removeItem('budganja_analytics_consent'); } catch (e) {}
+          window.location.reload();
+        }
+      });
+    </script>
 
 </body>
 </html>

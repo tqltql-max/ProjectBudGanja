@@ -1,0 +1,253 @@
+/* Animais — hub e fichas */
+
+.animais-hub-header {
+    margin-bottom: 1rem;
+}
+
+.animais-hub-header h1 {
+    margin: 0.25rem 0 0.5rem;
+}
+
+.animais-disclaimer,
+.unifesp-disclaimer {
+    margin: 1rem 0 1.25rem;
+    padding: 0.85rem 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.28);
+    background: rgba(20, 20, 18, 0.65);
+    color: var(--color-text-muted, #ccc);
+    font-size: 0.92rem;
+    line-height: 1.45;
+}
+
+.animais-toolbar {
+    display: grid;
+    gap: 0.5rem 0.75rem;
+    grid-template-columns: 1fr;
+    margin-bottom: 1.25rem;
+    align-items: end;
+}
+
+@media (min-width: 900px) {
+    .animais-toolbar {
+        grid-template-columns: auto 1fr auto auto auto auto;
+        align-items: center;
+    }
+}
+
+.animais-search-label,
+.animais-filter-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-text-soft, #888);
+}
+
+.animais-search,
+.animais-tag-filter {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.55rem 0.75rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(12, 12, 12, 0.75);
+    color: var(--color-text, #fff);
+}
+
+.animais-count {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--color-text-muted, #ccc);
+}
+
+.animais-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+    .animais-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 960px) {
+    .animais-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.animal-card {
+    border-radius: 16px;
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    background: linear-gradient(165deg, rgba(28, 28, 26, 0.85), rgba(12, 14, 12, 0.92));
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.animal-card:hover,
+.animal-card:focus-within {
+    border-color: rgba(212, 175, 55, 0.45);
+    transform: translateY(-2px);
+}
+
+.animal-card[hidden] {
+    display: none !important;
+}
+
+.animal-card-link {
+    display: block;
+    padding: 1rem 1.1rem 1.15rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.animal-card-title {
+    margin: 0 0 0.25rem;
+    font-size: 1.15rem;
+    color: #fff8e0;
+}
+
+.animal-card-sci {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted, #ccc);
+}
+
+.animal-card-summary {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: var(--color-text-muted, #ccc);
+}
+
+.animal-card-badge {
+    display: inline-block;
+    margin-top: 0.65rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #1a1508;
+    background: linear-gradient(135deg, #d4af37, #f0d060);
+}
+
+.animais-empty {
+    text-align: center;
+    color: var(--color-text-muted, #ccc);
+}
+
+.animais-related {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+}
+
+.animal-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted, #ccc);
+}
+
+.animal-sci {
+    margin: 0.25rem 0 0.75rem;
+    color: var(--color-text-muted, #ccc);
+}
+
+.animal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+}
+
+.animal-tag {
+    display: inline-block;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: #d4af37;
+}
+
+.unifesp-hub .unifesp-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.unifesp-hub .unifesp-table th,
+.unifesp-hub .unifesp-table td {
+    padding: 0.55rem 0.65rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: left;
+    vertical-align: top;
+}
+
+.unifesp-hub .unifesp-table th {
+    width: 32%;
+    color: #d4af37;
+    font-weight: 600;
+}
+
+.unifesp-note {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted, #ccc);
+}
+
+.unifesp-cta-panel .home-pillar-actions,
+.inspecoes-formacao-destaque .home-pillar-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.inspecoes-formacao-destaque {
+    margin: 0 0 1.25rem;
+    padding: clamp(1rem, 2.5vw, 1.35rem);
+    border-radius: 16px;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    background: linear-gradient(165deg, rgba(28, 28, 26, 0.88), rgba(12, 14, 12, 0.92));
+}
+
+.inspecoes-formacao-eyebrow {
+    margin: 0 0 0.25rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #d4af37;
+}
+
+.inspecoes-formacao-title {
+    margin: 0 0 0.4rem;
+    font-size: 1.2rem;
+    color: #fff8e0;
+}
+
+.inspecoes-formacao-text {
+    margin: 0 0 0.85rem;
+    color: var(--color-text-muted, #ccc);
+    line-height: 1.45;
+}
+
+.animal-related-science {
+    margin-top: 1rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.22);
+}
+
+.animal-related-science h3 {
+    margin: 0 0 0.5rem;
+    font-size: 0.95rem;
+    color: var(--color-accent, #d4af37);
+}
+
+.animal-ficha #animal-cuidados {
+    scroll-margin-top: 5.5rem;
+}

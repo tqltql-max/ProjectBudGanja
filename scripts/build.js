@@ -136,6 +136,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('build:animais', 'build-animais.js');
+  } catch (e) {
+    console.warn('Aviso build:animais:', e.message);
+  }
+
+  try {
     runStep('build:search', 'build-search-index.js');
   } catch (e) {
     console.warn('Aviso build:search:', e.message);

@@ -2,7 +2,7 @@
   "siteName": "Inspetor BudGanja",
   "siteTagline": "Laboratório de fitoterapia brasileira",
   "footerText": "© 2026 Inspetor BudGanja. Conteúdo educacional sobre plantas medicinais do Brasil.",
-  "privacyUpdated": "29 de julho de 2026",
+  "privacyUpdated": "1 de agosto de 2026",
   "ogImage": "/imagens/og-default.jpg",
   "contactEmail": "tql.tql@gmail.com",
   "youtubeChannelUrl": "/videos/",
@@ -11,6 +11,7 @@
   "youtubeJardimLabel": "",
   "spotifyPodcastUrl": "https://open.spotify.com/show/033yuLDWnN84xOcfHyJ1FZ",
   "spotifyPodcastLabel": "Podcast Inspetor BudGanja",
+  "gaMeasurementId": "G-Q47PEYEXX6",
   "nav": [
     {
       "label": "Biblioteca",
@@ -31,6 +32,15 @@
               "slug": "plantas",
               "featured": true,
               "description": "Catálogo de plantas fitoterápicas do Brasil."
+            },
+            {
+              "label": "Animais",
+              "tileLabel": "Animais",
+              "href": "/animais/",
+              "icon": "🐾",
+              "slug": "animais",
+              "featured": true,
+              "description": "Catálogo de animais: criação, companhia e derivados industriais."
             },
             {
               "label": "Curso UNIFESP",

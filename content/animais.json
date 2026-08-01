@@ -1,0 +1,166 @@
+{
+  "updatedAt": "2026-08-01T22:00:00.000Z",
+  "disclaimer": "Fichas educacionais sobre animais, criação e produtos associados. Não substituem orientação veterinária, zootécnica nem aconselhamento alimentar profissional.",
+  "animals": [
+    {
+      "id": "galinha",
+      "slug": "galinha",
+      "nomePopular": "Galinha",
+      "nomeCientifico": "Gallus gallus domesticus",
+      "familia": "Phasianidae",
+      "hubCategory": "producao",
+      "summary": "Ave de criação: ovo e carne frescos versus nuggets, embutidos e ultraprocessados de frango da indústria.",
+      "partsUsed": ["Ovo fresco", "Carne", "Penas (não alimentar)"],
+      "traditionalUses": ["Alimento de baixo processamento", "Criação familiar e granja", "Ciclo ovo-pintainho-galinha"],
+      "cautions": "Separar o animal e o ovo/carne frescos dos derivados industriais ultraprocessados. Conteúdo educacional — não é protocolo nutricional.",
+      "tags": ["producao", "ovos", "alimento", "aves"],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-galinha.html",
+          "label": "Inspeção: Derivados da galinha — ultraprocessados e química industrial",
+          "labelEn": "Inspection: Chicken derivatives — ultra-processed foods and industrial chemistry",
+          "labelEs": "Inspección: Derivados del pollo — ultraprocesados y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "vaca",
+      "slug": "vaca",
+      "nomePopular": "Vaca / boi",
+      "nomeCientifico": "Bos taurus",
+      "familia": "Bovidae",
+      "hubCategory": "producao",
+      "summary": "Bovino de leite e carne: alimento fresco e tradição agrária versus carnes processadas e laticínios ultraprocessados.",
+      "partsUsed": ["Leite", "Carne", "Couro (não alimentar)"],
+      "traditionalUses": ["Leite e queijos artesanais", "Carne fresca", "Tração e paisagem rural histórica"],
+      "cautions": "O animal não é o vilão: o foco editorial é dose, processamento e padrões industriais. Consulte profissionais de saúde e veterinária quando couber.",
+      "tags": ["producao", "leite", "carne", "alimento"],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-vaca.html",
+          "label": "Inspeção: Derivados da vaca — carnes processadas e laticínios industriais",
+          "labelEn": "Inspection: Cattle derivatives — processed meats and industrial dairy",
+          "labelEs": "Inspección: Derivados de la vaca — carnes procesadas y lácteos industriales"
+        }
+      ]
+    },
+    {
+      "id": "porco",
+      "slug": "porco",
+      "nomePopular": "Porco",
+      "nomeCientifico": "Sus scrofa domesticus",
+      "familia": "Suidae",
+      "hubCategory": "producao",
+      "summary": "Suíno: carne fresca e charcutaria tradicional versus embutidos industriais ricos em sal, nitritos e ultraprocessamento.",
+      "partsUsed": ["Carne", "Gordura (banha)"],
+      "traditionalUses": ["Carne fresca", "Presunto e linguiça artesanal", "Banha culinária tradicional"],
+      "cautions": "Distinguir criação e peça fresca de embutidos industriais. Conteúdo educacional.",
+      "tags": ["producao", "carne", "alimento", "embutidos"],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-porco.html",
+          "label": "Inspeção: Derivados do porco — embutidos e química industrial",
+          "labelEn": "Inspection: Pork derivatives — cured meats and industrial chemistry",
+          "labelEs": "Inspección: Derivados del cerdo — embutidos y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "peixe-tilapia",
+      "slug": "peixe-tilapia",
+      "nomePopular": "Tilápia",
+      "nomeCientifico": "Oreochromis niloticus",
+      "familia": "Cichlidae",
+      "hubCategory": "producao",
+      "summary": "Peixe de aquicultura comum no Brasil: filé fresco versus empanados, nuggets e ultraprocessados de peixe.",
+      "partsUsed": ["Filé", "Peixe inteiro"],
+      "traditionalUses": ["Alimento fresco", "Aquicultura familiar e industrial", "Proteína de baixo processamento"],
+      "cautions": "A tilápia fresca não é o mesmo produto que o empanado industrial. Avaliar origem e processamento.",
+      "tags": ["producao", "peixe", "aquicultura", "alimento"],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-peixe.html",
+          "label": "Inspeção: Derivados do peixe — empanados e ultraprocessados",
+          "labelEn": "Inspection: Fish derivatives — breaded products and ultra-processed foods",
+          "labelEs": "Inspección: Derivados del pescado — empanados y ultraprocesados"
+        }
+      ]
+    },
+    {
+      "id": "abelha",
+      "slug": "abelha",
+      "nomePopular": "Abelha",
+      "nomeCientifico": "Apis mellifera",
+      "familia": "Apidae",
+      "hubCategory": "producao",
+      "summary": "Polinizadora e produtora de mel, própolis e cera — distinguir mel de qualidade de mel adulterado e xaropes industriais.",
+      "partsUsed": ["Mel", "Própolis", "Cera", "Geleia real"],
+      "traditionalUses": ["Mel como alimento", "Própolis na tradição popular", "Polinização agrícola"],
+      "cautions": "Mel para menores de 1 ano é contraindicado (botulismo). Mel adulterado com xaropes é o desvio industrial a inspecionar.",
+      "tags": ["producao", "mel", "polinizacao", "abelha"],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-abelha.html",
+          "label": "Inspeção: Derivados da abelha — mel adulterado e açúcares industriais",
+          "labelEn": "Inspection: Bee derivatives — adulterated honey and industrial sugars",
+          "labelEs": "Inspección: Derivados de la abeja — miel adulterada y azúcares industriales"
+        }
+      ]
+    },
+    {
+      "id": "cao",
+      "slug": "cao",
+      "nomePopular": "Cão",
+      "nomeCientifico": "Canis lupus familiaris",
+      "familia": "Canidae",
+      "summary": "Companheiro humano: bem-estar, alimentação responsável e distância crítica da indústria de pet food ultraprocessada de baixa qualidade.",
+      "partsUsed": ["Companhia", "Trabalho (guarda, pastoreio, assistência)"],
+      "traditionalUses": ["Companhia", "Guarda", "Pastoreio", "Apoio a pessoas"],
+      "cautions": "Bem-estar animal e nutrição veterinária têm primazia. Rações e petiscos industriais variam muito em qualidade — ler rótulos e consultar veterinário.",
+      "tags": ["companhia", "pet", "bem-estar"],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": []
+    },
+    {
+      "id": "gato",
+      "slug": "gato",
+      "nomePopular": "Gato",
+      "nomeCientifico": "Felis catus",
+      "familia": "Felidae",
+      "summary": "Felino doméstico: companhia, etologia e cuidados — com atenção a toxinas domésticas e à indústria pet.",
+      "partsUsed": ["Companhia"],
+      "traditionalUses": ["Companhia", "Controlo de roedores em contexto rural histórico"],
+      "cautions": "Várias plantas e alimentos humanos são tóxicos para gatos (ex.: lírios, chocolate, cebola). Rações e petiscos: critério veterinário.",
+      "tags": ["companhia", "pet", "bem-estar"],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": []
+    },
+    {
+      "id": "cavalo",
+      "slug": "cavalo",
+      "nomePopular": "Cavalo",
+      "nomeCientifico": "Equus ferus caballus",
+      "familia": "Equidae",
+      "summary": "Equídeo de trabalho, desporto e companhia — tradição rural brasileira e ética do bem-estar equino.",
+      "partsUsed": ["Trabalho", "Desporto", "Companhia"],
+      "traditionalUses": ["Tração e transporte histórico", "Pastoreio", "Hipismo e lazer"],
+      "cautions": "Bem-estar, casqueamento e nutrição equina exigem profissionais. Conteúdo educacional.",
+      "tags": ["companhia", "trabalho", "rural"],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": []
+    }
+  ]
+}

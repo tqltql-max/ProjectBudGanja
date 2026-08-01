@@ -340,6 +340,8 @@
     applyPostPageTranslations();
     applyPlantPageTranslations();
     applyPlantHubTranslations();
+    applyAnimalPageTranslations();
+    applyAnimalHubTranslations();
     applyHubPageTranslations();
     syncPostI18nNotes();
   }
@@ -362,11 +364,14 @@
       main.querySelector('.publications-equipamentos') ||
       main.querySelector('[data-inspecao-grid]') ||
       main.querySelector('#plantas-grid') ||
+      main.querySelector('#animais-grid') ||
       main.querySelector('#videos-player') ||
       document.body.dataset.page === 'equipamentos' ||
       document.body.dataset.page === 'cultivo' ||
       document.body.dataset.page === 'comunidade' ||
       document.body.dataset.page === 'videos' ||
+      document.body.dataset.page === 'animais' ||
+      document.body.dataset.page === 'animal' ||
       document.body.dataset.postSlug
     ) {
       return;
@@ -480,8 +485,79 @@
     });
   }
 
+  function applyAnimalPageTranslations() {
+    if (!document.body || document.body.dataset.page !== 'animal') return;
+    var dataEl = document.getElementById('animal-i18n-data');
+    if (!dataEl) return;
+    var payload = null;
+    try {
+      payload = JSON.parse(dataEl.textContent || '{}');
+    } catch (e) {
+      return;
+    }
+    var fields = payload[currentLocale] || payload['pt-BR'] || null;
+    if (!fields) return;
+
+    document.querySelectorAll('[data-animal-nome]').forEach(function (el) {
+      el.textContent = fields.nomePopular || el.textContent;
+    });
+    document.querySelectorAll('[data-animal-summary]').forEach(function (el) {
+      el.textContent = fields.summary || el.textContent;
+    });
+    document.querySelectorAll('[data-animal-cautions]').forEach(function (el) {
+      el.textContent = fields.cautions || el.textContent;
+    });
+    document.querySelectorAll('[data-animal-related-label]').forEach(function (el) {
+      var key = currentLocale === 'en' ? 'labelEn' : currentLocale === 'es' ? 'labelEs' : 'labelPt';
+      var attr =
+        key === 'labelEn'
+          ? 'data-label-en'
+          : key === 'labelEs'
+            ? 'data-label-es'
+            : 'data-label-pt';
+      var next = el.getAttribute(attr);
+      if (next) el.textContent = next;
+    });
+    fillList(document.querySelector('[data-animal-parts]'), fields.partsUsed);
+    fillList(document.querySelector('[data-animal-uses]'), fields.traditionalUses);
+
+    if (fields.nomePopular) {
+      document.title = fields.nomePopular + ' | Inspetor BudGanja';
+    }
+    if (fields.summary) {
+      var metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute('content', fields.summary.slice(0, 160));
+    }
+  }
+
+  function applyAnimalHubTranslations() {
+    if (!document.body || document.body.dataset.page !== 'animais') return;
+    var attrNome =
+      currentLocale === 'en' ? 'data-nome-en' : currentLocale === 'es' ? 'data-nome-es' : 'data-nome-pt';
+    var attrSummary =
+      currentLocale === 'en'
+        ? 'data-summary-en'
+        : currentLocale === 'es'
+          ? 'data-summary-es'
+          : 'data-summary-pt';
+    document.querySelectorAll('.animal-card').forEach(function (card) {
+      var nome =
+        (card.getAttribute(attrNome) || '').trim() ||
+        (card.getAttribute('data-nome-pt') || '').trim();
+      var summary =
+        (card.getAttribute(attrSummary) || '').trim() ||
+        (card.getAttribute('data-summary-pt') || '').trim();
+      var titleEl = card.querySelector('[data-animal-nome]');
+      var summaryEl = card.querySelector('[data-animal-summary]');
+      if (titleEl && nome) titleEl.textContent = nome;
+      if (summaryEl && summary) summaryEl.textContent = summary;
+    });
+  }
+
   var PAGE_I18N_MAP = {
     plantas: 'plantas',
+    animais: 'animais',
+    animal: 'animais',
     videos: 'videos',
     inspecoes: 'inspections',
     pesquisas: 'research',

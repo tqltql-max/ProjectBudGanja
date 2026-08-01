@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T21:34:37.955Z",
+  "updatedAt": "2026-08-01T22:30:35.779Z",
   "items": [
     {
       "title": "Início",
@@ -12,6 +12,12 @@
       "url": "/plantas/",
       "excerpt": "Catálogo curado de plantas medicinais e fitoterápicas do Brasil",
       "text": "Plantas fitoterápicas Catálogo curado de plantas medicinais e fitoterápicas do Brasil plantas fitoterapia medicinal babosa camomila cannabis"
+    },
+    {
+      "title": "Animais",
+      "url": "/animais/",
+      "excerpt": "Catálogo de animais: criação, companhia e derivados industriais de risco",
+      "text": "Animais Catálogo de animais: criação, companhia e derivados industriais de risco animais produção galinha vaca porco abelha derivados indústria"
     },
     {
       "title": "Curso UNIFESP",
@@ -461,7 +467,7 @@
       "title": "Inspeção: Profa. Solange Nappo — CEBRID",
       "url": "/posts/post-inspecao-solange-nappo.html",
       "excerpt": "Ficha de legado vivo: Solange Nappo (UNIFESP) — coordenadora do CEBRID após Carlini; saúde colectiva, prevenção (PREVINA) e formação em cannabis medicinal.",
-      "text": "Inspeção: Profa. Solange Nappo — CEBRID Ficha de legado vivo: Solange Nappo (UNIFESP) — coordenadora do CEBRID após Carlini; saúde colectiva, prevenção (PREVINA) e formação em cannabis medicinal. inspecao ## Escopo\n\nInspeção editorial e documental do papel público da **Profa. Dra. Solange Aparecida Nappo** — farmacêutica-bioquímica, professora da **UNIFESP** e **coordenadora do CEBRID** (Centro Brasileiro de Informações sobre Drogas Psicotrópicas). O recorte desta ficha não é currículo Lattes completo: é registar, com fontes institucionais públicas e com o **mérito que lhe é devido**, a **continuidade do CEBRID** após [Elisaldo Carlini](/posts/post-inspecao-elisaldo-carlini.html) e a ponte com a formação em cannabis medicinal e prevenção já inspecionada pelo laboratório.\n\n> **Nota metodológica:** auditoria independente do Inspetor BudGanja com base em Prodmais/UNIFESP, FAPESP, páginas oficiais do [CEBRID](https://www.cebrid.com.br/) (equipe, cursos) e cruzamento com inspeções BudGanja já publicadas. **Sem afiliação** com a UNIFESP, o CEBRID, a ABRAMD, a CAPES/UAB ou a FAP. Todo o mérito da coordenação científica, da pesquisa qualitativa e da formação pertence a Solange Nappo, às suas instituições e às equipas que lidera.\n\n![Profa. Solange Nappo — CEBRID](/imagens/inspecoes/solange-nappo-cover.jpg)\n\n*Capa editorial BudGanja (hero do laboratório + tipografia). Sem retrato fotográfico licenciado disponível no momento da inspeção — ver [CEBRID](https://www.cebrid.com.br/) e [Prodmais UNIFESP](https://unifesp.br/prodmais/profile.php?lattesID=4675292090990088).*\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome | **Solange Aparecida Nappo** |\n| Formação | Farmácia e Bioquímica (USP, 1976) · Mestrado em Saúde Pública (USP, 1981) · Doutorado em Ciências (UNIFESP, 1996) |\n| Instituição | Professora · **Coordenadora do CEBRID** (UNIFESP) · Pós-graduação em Medicina Preventiva · Ciências Farmacêuticas (Campus Diadema) |\n| Linhas públicas | Saúde coletiva · es"
+      "text": "Inspeção: Profa. Solange Nappo — CEBRID Ficha de legado vivo: Solange Nappo (UNIFESP) — coordenadora do CEBRID após Carlini; saúde colectiva, prevenção (PREVINA) e formação em cannabis medicinal. inspecao ## Escopo\n\nInspeção editorial e documental do papel público da **Profa. Dra. Solange Aparecida Nappo** — farmacêutica-bioquímica, professora da **UNIFESP** e **coordenadora do CEBRID** (Centro Brasileiro de Informações sobre Drogas Psicotrópicas). O recorte desta ficha não é currículo Lattes completo: é registar, com fontes institucionais públicas e com o **mérito que lhe é devido**, a **continuidade do CEBRID** após [Elisaldo Carlini](/posts/post-inspecao-elisaldo-carlini.html) e a ponte com a formação em cannabis medicinal e prevenção já inspecionada pelo laboratório.\n\n> **Nota metodológica:** auditoria independente do Inspetor BudGanja com base em Prodmais/UNIFESP, FAPESP, páginas oficiais do [CEBRID](https://www.cebrid.com.br/) (equipe, cursos) e cruzamento com inspeções BudGanja já publicadas. **Sem afiliação** com a UNIFESP, o CEBRID, a ABRAMD, a CAPES/UAB ou a FAP. Todo o mérito da coordenação científica, da pesquisa qualitativa e da formação pertence a Solange Nappo, às suas instituições e às equipas que lidera.\n\n![Profa. Solange Nappo](/imagens/inspecoes/solange-nappo-portrait.jpg)\n\n*Retrato da Profa. Dra. Solange Nappo. Imagem: [CEBRID — Equipe](https://www.cebrid.com.br/equipe/).*\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome | **Solange Aparecida Nappo** |\n| Formação | Farmácia e Bioquímica (USP, 1976) · Mestrado em Saúde Pública (USP, 1981) · Doutorado em Ciências (UNIFESP, 1996) |\n| Instituição | Professora · **Coordenadora do CEBRID** (UNIFESP) · Pós-graduação em Medicina Preventiva · Ciências Farmacêuticas (Campus Diadema) |\n| Linhas públicas | Saúde coletiva · estudos qualitativos · crack / cocaína / cannabis · dependência · vigilância sanitária / uso de medicamentos |\n| Formação (coordenação) | **PREVINA** (CAPES / UAB-UNIFES"
     },
     {
       "title": "Inspeção: Profa. Dra. Eliana Rodrigues",
@@ -1026,6 +1032,54 @@
       "url": "/plantas/maracuja-fruta/",
       "excerpt": "Fruto de *P. edulis*: polpa fresca vs néctares e polpas industriais adoçadas — distinto da ficha medicinal de folhas (*P. incarnata*).",
       "text": "Maracujá (fruta) Passiflora edulis Sims Passifloraceae Fruto de *P. edulis*: polpa fresca vs néctares e polpas industriais adoçadas — distinto da ficha medicinal de folhas (*P. incarnata*). alimento frutos frutifera culinaria polpa tropicais Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento planta fitoterapia medicinal"
+    },
+    {
+      "title": "Galinha (Gallus gallus domesticus)",
+      "url": "/animais/galinha/",
+      "excerpt": "Ave de criação: ovo e carne frescos versus nuggets, embutidos e ultraprocessados de frango da indústria.",
+      "text": "Galinha Gallus gallus domesticus Phasianidae Ave de criação: ovo e carne frescos versus nuggets, embutidos e ultraprocessados de frango da indústria. producao producao ovos alimento aves Alimento de baixo processamento Criação familiar e granja Ciclo ovo-pintainho-galinha animal produção indústria derivado"
+    },
+    {
+      "title": "Vaca / boi (Bos taurus)",
+      "url": "/animais/vaca/",
+      "excerpt": "Bovino de leite e carne: alimento fresco e tradição agrária versus carnes processadas e laticínios ultraprocessados.",
+      "text": "Vaca / boi Bos taurus Bovidae Bovino de leite e carne: alimento fresco e tradição agrária versus carnes processadas e laticínios ultraprocessados. producao producao leite carne alimento Leite e queijos artesanais Carne fresca Tração e paisagem rural histórica animal produção indústria derivado"
+    },
+    {
+      "title": "Porco (Sus scrofa domesticus)",
+      "url": "/animais/porco/",
+      "excerpt": "Suíno: carne fresca e charcutaria tradicional versus embutidos industriais ricos em sal, nitritos e ultraprocessamento.",
+      "text": "Porco Sus scrofa domesticus Suidae Suíno: carne fresca e charcutaria tradicional versus embutidos industriais ricos em sal, nitritos e ultraprocessamento. producao producao carne alimento embutidos Carne fresca Presunto e linguiça artesanal Banha culinária tradicional animal produção indústria derivado"
+    },
+    {
+      "title": "Tilápia (Oreochromis niloticus)",
+      "url": "/animais/peixe-tilapia/",
+      "excerpt": "Peixe de aquicultura comum no Brasil: filé fresco versus empanados, nuggets e ultraprocessados de peixe.",
+      "text": "Tilápia Oreochromis niloticus Cichlidae Peixe de aquicultura comum no Brasil: filé fresco versus empanados, nuggets e ultraprocessados de peixe. producao producao peixe aquicultura alimento Alimento fresco Aquicultura familiar e industrial Proteína de baixo processamento animal produção indústria derivado"
+    },
+    {
+      "title": "Abelha (Apis mellifera)",
+      "url": "/animais/abelha/",
+      "excerpt": "Polinizadora e produtora de mel, própolis e cera — distinguir mel de qualidade de mel adulterado e xaropes industriais.",
+      "text": "Abelha Apis mellifera Apidae Polinizadora e produtora de mel, própolis e cera — distinguir mel de qualidade de mel adulterado e xaropes industriais. producao producao mel polinizacao abelha Mel como alimento Própolis na tradição popular Polinização agrícola animal produção indústria derivado"
+    },
+    {
+      "title": "Cão (Canis lupus familiaris)",
+      "url": "/animais/cao/",
+      "excerpt": "Companheiro humano: bem-estar, alimentação responsável e distância crítica da indústria de pet food ultraprocessada de baixa qualidade.",
+      "text": "Cão Canis lupus familiaris Canidae Companheiro humano: bem-estar, alimentação responsável e distância crítica da indústria de pet food ultraprocessada de baixa qualidade. companhia pet bem-estar Companhia Guarda Pastoreio Apoio a pessoas animal produção indústria derivado"
+    },
+    {
+      "title": "Gato (Felis catus)",
+      "url": "/animais/gato/",
+      "excerpt": "Felino doméstico: companhia, etologia e cuidados — com atenção a toxinas domésticas e à indústria pet.",
+      "text": "Gato Felis catus Felidae Felino doméstico: companhia, etologia e cuidados — com atenção a toxinas domésticas e à indústria pet. companhia pet bem-estar Companhia Controlo de roedores em contexto rural histórico animal produção indústria derivado"
+    },
+    {
+      "title": "Cavalo (Equus ferus caballus)",
+      "url": "/animais/cavalo/",
+      "excerpt": "Equídeo de trabalho, desporto e companhia — tradição rural brasileira e ética do bem-estar equino.",
+      "text": "Cavalo Equus ferus caballus Equidae Equídeo de trabalho, desporto e companhia — tradição rural brasileira e ética do bem-estar equino. companhia trabalho rural Tração e transporte histórico Pastoreio Hipismo e lazer animal produção indústria derivado"
     }
   ]
 }

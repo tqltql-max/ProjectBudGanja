@@ -135,6 +135,7 @@ CREATE TABLE IF NOT EXISTS site_settings (
   youtube_jardim_label TEXT NOT NULL DEFAULT '',
   spotify_podcast_url TEXT NOT NULL DEFAULT '',
   spotify_podcast_label TEXT NOT NULL DEFAULT '',
+  ga_measurement_id TEXT NOT NULL DEFAULT 'G-Q47PEYEXX6',
   updated_at TEXT NOT NULL
 );
 

@@ -699,7 +699,8 @@ const DEFAULT_SITE = {
   siteName: 'Inspetor BudGanja',
   siteTagline: 'Laboratório de fitoterapia brasileira',
   footerText: '© 2026 Inspetor BudGanja. Conteúdo educacional sobre plantas medicinais do Brasil.',
-  privacyUpdated: '30 de julho de 2026',
+  privacyUpdated: '1 de agosto de 2026',
+  gaMeasurementId: 'G-Q47PEYEXX6',
   ogImage: '/imagens/og-default.jpg',
   contactEmail: 'tql.tql@gmail.com',
   youtubeChannelUrl: '/videos/',
@@ -729,6 +730,7 @@ const DEFAULT_SITE = {
   footerLinks: [
     { label: 'Início', href: '/' },
     { label: 'Plantas', href: '/plantas/' },
+    { label: 'Animais', href: '/animais/' },
     { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
     { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
     { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
@@ -745,6 +747,7 @@ const DEFAULT_SITE = {
       title: 'Biblioteca',
       links: [
         { label: 'Plantas', href: '/plantas/' },
+    { label: 'Animais', href: '/animais/' },
         { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
         { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
         { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
@@ -809,6 +812,7 @@ function translateFooterLabel(label) {
     'Privacidade': 'nav.privacy',
     'Contato': 'nav.contact',
     'Plantas': 'nav.plants',
+    'Animais': 'nav.animals',
     'UNIFESP': 'nav.unifesp'
   };
   return map[label] ? i18n(map[label], label) : label;
@@ -1226,6 +1230,14 @@ function getSiteHubNav() {
         tone: 'comunidade'
       },
       {
+        href: '/animais/',
+        icon: '🐾',
+        label: i18n('nav.animals', 'Animais'),
+        tip: i18n('nav.quickAnimalsTip', 'Catálogo de animais: criação, companhia e derivados industriais'),
+        prefixes: '/animais',
+        tone: 'comunidade'
+      },
+      {
         href: '/biblioteca/unifesp/',
         icon: '🎓',
         label: i18n('nav.unifesp', 'UNIFESP'),
@@ -1291,6 +1303,13 @@ function getSiteHubNav() {
             icon: '🌿',
             label: i18n('nav.plants', 'Plantas'),
             prefixes: '/plantas',
+            tone: 'comunidade'
+          },
+          {
+            href: '/animais/',
+            icon: '🐾',
+            label: i18n('nav.animals', 'Animais'),
+            prefixes: '/animais',
             tone: 'comunidade'
           },
           {
@@ -1912,6 +1931,27 @@ function injectSeoMeta(site) {
   }
 }
 
+function initAnalytics(site) {
+  function run() {
+    if (window.BudGanjaAnalytics && typeof window.BudGanjaAnalytics.init === 'function') {
+      window.BudGanjaAnalytics.init(site || DEFAULT_SITE);
+      return true;
+    }
+    return false;
+  }
+  if (run()) return;
+  if (document.querySelector('script[src*="analytics.js"]')) {
+    var existing = document.querySelector('script[src*="analytics.js"]');
+    existing.addEventListener('load', function () { run(); });
+    return;
+  }
+  var s = document.createElement('script');
+  s.id = 'budganja-analytics-js';
+  s.src = '/js/analytics.js?v=' + ASSET_V;
+  s.onload = function () { run(); };
+  document.head.appendChild(s);
+}
+
 async function fetchSiteConfig() {
   let site = DEFAULT_SITE;
   try {
@@ -2318,6 +2358,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   refreshInstallVisibility();
   bindPermanentInstallButtons(document);
   injectSeoMeta(site);
+  initAnalytics(site);
 
   window.addEventListener('budganja:locale-change', function () {
     injectLayout(cachedLayoutSite, cachedLayoutAuth);
