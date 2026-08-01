@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T18:21:21.054Z",
+  "updatedAt": "2026-08-01T18:26:05.256Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -734,6 +734,27 @@
         "/posts/post-inspecao-arte-a-historia-das-coisas.html"
       ],
       "notes": "Pessoas ≠ Legado; livro fica em Artes."
+    },
+    {
+      "id": "palavra-caminho",
+      "title": "Caminho — a palavra que liga o laboratório BudGanja",
+      "titleEn": "Caminho — the word that links the BudGanja lab",
+      "titleEs": "Caminho — la palabra que une el laboratorio BudGanja",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: hub lexical «caminho» — relaciona passar, Send Me, Heródoto, Artes, cultivo e inspeções.",
+      "whyEn": "Words: lexical hub “caminho” — links passar, Send Me, Herodotus, Arts, cultivation and inspections.",
+      "whyEs": "Palabras: hub léxico «caminho» — relaciona passar, Send Me, Heródoto, Artes, cultivo e inspecciones.",
+      "suggestedSlug": "inspecao-palavra-caminho",
+      "doneHref": "/posts/post-inspecao-palavra-caminho.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-passar.html",
+        "/posts/post-inspecao-arte-send-me-on-my-way.html",
+        "/posts/post-inspecao-figura-herodoto.html"
+      ],
+      "notes": "Hub do projecto; não confundir com guia de cultivo."
     }
   ]
 }

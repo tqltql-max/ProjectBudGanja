@@ -342,6 +342,25 @@
     "seriesLabel": "Mars Hydro Brasil"
   },
   {
+    "title": "Inspeção: Caminho — a palavra que liga o laboratório BudGanja",
+    "titleEn": "Inspection: Caminho — the word that links the BudGanja lab",
+    "titleEs": "Inspección: Caminho — la palabra que une el laboratorio BudGanja",
+    "excerpt": "Palavras: «caminho» (latim vulgar *cammīnus*) — via, método e hub lexical que relaciona passar, Send Me On My Way, Heródoto, Artes, cultivo e o mapa de inspeções.",
+    "excerptEn": "Words: “caminho” (Vulgar Latin *cammīnus*) — path, method and lexical hub linking passar, Send Me On My Way, Herodotus, Arts, cultivation and the inspections map.",
+    "excerptEs": "Palabras: «caminho» (latín vulgar *cammīnus*) — vía, método y hub léxico que relaciona passar, Send Me On My Way, Heródoto, Artes, cultivo y el mapa de inspecciones.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-caminho",
+    "url": "/posts/post-inspecao-palavra-caminho.html",
+    "date": "2026-08-01T22:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-caminho.html",
+    "coverImage": "/imagens/inspecoes/caminho-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 3,
+    "seriesLabel": "Caminho · palavra"
+  },
+  {
     "title": "Inspeção: The Matrix — a obra Wachowski e a pergunta do real",
     "titleEn": "Inspection: The Matrix — the Wachowski work and the question of the real",
     "titleEs": "Inspección: The Matrix — la obra Wachowski y la pregunta de lo real",
