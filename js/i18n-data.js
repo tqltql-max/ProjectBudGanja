@@ -740,7 +740,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "About",
         "title": "About Inspetor BudGanja",
-        "subtitle": "A public digital laboratory for Brazil's medicinal plants — created by Tiago Queiroz Loureiro, a student in the 14th UNIFESP medicinal-cannabis course. Catalog, documented legacy, method-based inspections, and practical tools for responsible study.",
+        "subtitle": "A public digital laboratory — medicinal plants, animals, method-based inspections (words, legacy, arts), Live Feed, the Vida trail, and practical tools. Created by Tiago Queiroz Loureiro, a student in the 14th UNIFESP medicinal-cannabis course.",
         "docTitle": "About | Inspetor BudGanja"
       },
       "contact": {
@@ -1509,7 +1509,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "Acerca de",
         "title": "Sobre Inspetor BudGanja",
-        "subtitle": "Laboratorio digital público de plantas medicinales de Brasil — creado por Tiago Queiroz Loureiro, alumno del XIV Curso UNIFESP de cannabis medicinal. Catálogo, legado documentado, inspecciones con método y herramientas prácticas para el estudio responsable.",
+        "subtitle": "Laboratorio digital público — plantas medicinales, animales, inspecciones con método (palabras, legado, artes), Feed Vivo, trama Vida y herramientas prácticas. Creado por Tiago Queiroz Loureiro, alumno del XIV Curso UNIFESP de cannabis medicinal.",
         "docTitle": "Acerca de | Inspetor BudGanja"
       },
       "contact": {
@@ -2278,7 +2278,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "Sobre",
         "title": "Sobre o Inspetor BudGanja",
-        "subtitle": "Laboratório digital público de plantas medicinais do Brasil — criado por Tiago Queiroz Loureiro, aluno do XIV Curso UNIFESP de cannabis medicinal. Catálogo, legado documentado, inspeções com método e ferramentas práticas para estudo responsável.",
+        "subtitle": "Laboratório digital público — plantas medicinais, animais, inspeções com método (palavras, legado, artes), Feed Vivo, trilha Vida e ferramentas práticas. Criado por Tiago Queiroz Loureiro, aluno do XIV Curso UNIFESP de cannabis medicinal.",
         "docTitle": "Sobre | Inspetor BudGanja"
       },
       "contact": {
