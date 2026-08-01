@@ -84,6 +84,18 @@ document.addEventListener('DOMContentLoaded', () => {
     return author.name || 'Cultivador';
   }
 
+  function isStaffAuthor(author) {
+    const username = String((author && author.username) || '').toLowerCase();
+    const name = String((author && author.name) || '').toLowerCase();
+    return username === 'inspetorbudganja' || name.indexOf('inspetor budganja') !== -1;
+  }
+
+  function commentToggleLabel(isPlantId, count, open) {
+    const base = isPlantId ? 'Sugestões' : 'Comentários';
+    if (open) return 'Ocultar ' + base.toLowerCase() + ' (' + count + ')';
+    return base + ' (' + count + ')';
+  }
+
   function setPlantStatus(msg, isError) {
     if (!plantStatus) return;
     plantStatus.textContent = msg || '';
@@ -129,15 +141,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const phase = !isPlantId && post.phase
       ? '<span class="comunidade-badge">' + escapeHtml(post.phase) + '</span>'
       : '';
-    const count = post.commentCount != null ? Number(post.commentCount) : 0;
-    const commentLabel = isPlantId ? 'Sugestões' : 'Comentários';
+    const comments = Array.isArray(post.comments) ? post.comments : [];
+    const count = post.commentCount != null ? Number(post.commentCount) : comments.length;
+    const openByDefault = comments.length > 0;
+    if (openByDefault) openComments.add(post.id);
     const author = authorLabel(post.author);
     const photoKind = isPlantId ? 'Pedido de identificação' : 'Foto da comunidade';
     const photoTitle = author
       ? (post.caption ? author + ' — ' + String(post.caption).trim() : author + ' · ' + photoKind)
       : photoKind;
+    const captionText = String(post.caption || '').trim();
+    const showCaption = captionText && !(isPlantId && /^que planta é essa\??$/i.test(captionText));
+    const staffMark = isStaffAuthor(post.author)
+      ? '<span class="comunidade-badge comunidade-badge--staff">Inspetor</span>'
+      : '';
     return (
-      '<article class="comunidade-card' + (isPlantId ? ' comunidade-card--plant' : '') + '" data-post-id="' + escapeHtml(post.id) + '">' +
+      '<article class="comunidade-card' + (isPlantId ? ' comunidade-card--plant' : '') + (isStaffAuthor(post.author) ? ' comunidade-card--staff' : '') + '" data-post-id="' + escapeHtml(post.id) + '" data-kind="' + (isPlantId ? 'plant_id' : 'diary') + '">' +
       '<div class="comunidade-card-media">' +
       '<button type="button" class="comunidade-card-photo-btn" data-photo-url="' + escapeHtml(post.photoUrl) + '" data-photo-title="' + escapeHtml(photoTitle) + '" aria-label="Ampliar foto">' +
       '<img class="comunidade-card-photo" src="' + escapeHtml(post.photoUrl) + '" alt="' + escapeHtml(photoTitle) + '" loading="lazy">' +
@@ -149,32 +168,43 @@ document.addEventListener('DOMContentLoaded', () => {
       '<strong>' + escapeHtml(author) + '</strong>' +
       '<time datetime="' + escapeHtml(post.createdAt) + '">' + escapeHtml(formatDate(post.createdAt)) + '</time>' +
       '</div>' +
-      '<div class="comunidade-card-badges">' + plantBadge + phase + help + '</div>' +
-      (post.caption ? '<p class="comunidade-card-caption">' + escapeHtml(post.caption) + '</p>' : '') +
-      '<button type="button" class="botao botao-outline botao-sm comunidade-comments-toggle" data-post-id="' + escapeHtml(post.id) + '">' +
-      commentLabel + ' (' + count + ')' +
+      '<div class="comunidade-card-badges">' + plantBadge + staffMark + phase + help + '</div>' +
+      (showCaption ? '<p class="comunidade-card-caption">' + escapeHtml(captionText) + '</p>' : '') +
+      '<button type="button" class="botao botao-outline botao-sm comunidade-comments-toggle" data-post-id="' + escapeHtml(post.id) + '" aria-expanded="' + (openByDefault ? 'true' : 'false') + '">' +
+      commentToggleLabel(isPlantId, count, openByDefault) +
       '</button>' +
-      '<div class="comunidade-comments" data-comments-for="' + escapeHtml(post.id) + '" hidden></div>' +
+      '<div class="comunidade-comments" data-comments-for="' + escapeHtml(post.id) + '"' + (openByDefault ? '' : ' hidden') + '>' +
+      (openByDefault ? renderCommentsBlock(post.id, comments) : '') +
+      '</div>' +
       '</div>' +
       '</article>'
     );
   }
 
   function renderCommentsBlock(postId, comments) {
-    const list = (comments || []).map((c) =>
-      '<li class="comunidade-comment">' +
-      '<strong>' + escapeHtml(authorLabel(c.author)) + '</strong>' +
-      '<time datetime="' + escapeHtml(c.createdAt) + '">' + escapeHtml(formatDate(c.createdAt)) + '</time>' +
-      '<p>' + escapeHtml(c.body) + '</p>' +
-      '</li>'
-    ).join('');
+    const list = (comments || []).map((c) => {
+      const staff = isStaffAuthor(c.author);
+      return (
+        '<li class="comunidade-comment' + (staff ? ' comunidade-comment--staff' : '') + '">' +
+        '<div class="comunidade-comment-head">' +
+        '<strong>' + escapeHtml(authorLabel(c.author)) + '</strong>' +
+        (staff ? '<span class="comunidade-badge comunidade-badge--staff">Inspetor</span>' : '') +
+        '</div>' +
+        '<time datetime="' + escapeHtml(c.createdAt) + '">' + escapeHtml(formatDate(c.createdAt)) + '</time>' +
+        '<p>' + escapeHtml(c.body) + '</p>' +
+        '</li>'
+      );
+    }).join('');
     const form = authUser
       ? (
         '<form class="comunidade-comment-form" data-post-id="' + escapeHtml(postId) + '">' +
-        '<label class="login-field">Sugestão / comentário' +
-        '<textarea name="body" rows="2" maxlength="1000" required placeholder="Ex.: parece manjericão / indica a espécie…"></textarea>' +
+        '<label class="comunidade-comment-field">' +
+        '<span class="comunidade-comment-label">Sugestão / comentário</span>' +
+        '<textarea class="comunidade-comment-textarea" name="body" rows="3" maxlength="1000" required placeholder="Ex.: parece manjericão / indica a espécie…"></textarea>' +
         '</label>' +
-        '<button type="submit" class="botao botao-sm">Comentar</button>' +
+        '<div class="comunidade-comment-actions">' +
+        '<button type="submit" class="botao botao-sm comunidade-comment-submit">Comentar</button>' +
+        '</div>' +
         '<p class="conta-status comunidade-comment-status" role="status"></p>' +
         '</form>'
       )
@@ -185,16 +215,35 @@ document.addEventListener('DOMContentLoaded', () => {
     );
   }
 
+  function syncCommentToggle(postId, count, open) {
+    const card = feedEl && feedEl.querySelector('[data-post-id="' + postId + '"]');
+    const toggle = card && card.querySelector('.comunidade-comments-toggle');
+    if (!toggle) return;
+    const isPlantId = card.getAttribute('data-kind') === 'plant_id';
+    toggle.textContent = commentToggleLabel(isPlantId, count, open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
   async function toggleComments(postId) {
     const panel = feedEl && feedEl.querySelector('[data-comments-for="' + postId + '"]');
     if (!panel) return;
+    const card = feedEl.querySelector('[data-post-id="' + postId + '"]');
+    const countMatch = card && card.querySelector('.comunidade-comments-toggle');
+    const countFromBtn = countMatch && countMatch.textContent.match(/\((\d+)\)/);
+    const count = countFromBtn ? Number(countFromBtn[1]) : 0;
     if (openComments.has(postId)) {
       openComments.delete(postId);
       panel.hidden = true;
+      syncCommentToggle(postId, count, false);
       return;
     }
     openComments.add(postId);
     panel.hidden = false;
+    syncCommentToggle(postId, count, true);
+    if (panel.querySelector('.comunidade-comment-list')) {
+      bindCommentForm(panel, postId);
+      return;
+    }
     panel.innerHTML = '<p class="conta-status">A carregar comentários…</p>';
     try {
       const res = await fetch('/api/community/posts/' + encodeURIComponent(postId) + '/comments');
@@ -203,7 +252,9 @@ document.addEventListener('DOMContentLoaded', () => {
         panel.innerHTML = '<p class="conta-status is-error">' + escapeHtml(data.error || 'Erro ao carregar.') + '</p>';
         return;
       }
-      panel.innerHTML = renderCommentsBlock(postId, data.comments || []);
+      const comments = data.comments || [];
+      panel.innerHTML = renderCommentsBlock(postId, comments);
+      syncCommentToggle(postId, comments.length, true);
       bindCommentForm(panel, postId);
     } catch (e) {
       panel.innerHTML = '<p class="conta-status is-error">Servidor indisponível.</p>';
@@ -212,7 +263,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function bindCommentForm(panel, postId) {
     const form = panel.querySelector('.comunidade-comment-form');
-    if (!form) return;
+    if (!form || form.dataset.bound === '1') return;
+    form.dataset.bound = '1';
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const status = form.querySelector('.comunidade-comment-status');
@@ -234,16 +286,14 @@ document.addEventListener('DOMContentLoaded', () => {
           }
           return;
         }
-        openComments.delete(postId);
-        await toggleComments(postId);
         const card = feedEl.querySelector('[data-post-id="' + postId + '"]');
         const toggle = card && card.querySelector('.comunidade-comments-toggle');
-        if (toggle) {
-          const match = toggle.textContent.match(/\((\d+)\)/);
-          const n = match ? Number(match[1]) + 1 : 1;
-          const label = toggle.textContent.indexOf('Sugestões') === 0 ? 'Sugestões' : 'Comentários';
-          toggle.textContent = label + ' (' + n + ')';
-        }
+        const match = toggle && toggle.textContent.match(/\((\d+)\)/);
+        const n = match ? Number(match[1]) + 1 : 1;
+        openComments.delete(postId);
+        panel.innerHTML = '';
+        await toggleComments(postId);
+        syncCommentToggle(postId, n, true);
       } catch (err) {
         if (status) {
           status.textContent = 'Servidor indisponível.';
@@ -271,6 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const items = data.items || [];
       nextCursor = data.nextCursor || null;
       if (!append) {
+        openComments.clear();
         if (!items.length) {
           const emptyMsg = feedKind === 'plant_id'
             ? 'Ainda não há pedidos de identificação. Seja o primeiro a perguntar «Que planta é essa?».'
@@ -284,6 +335,10 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (items.length) {
         feedEl.insertAdjacentHTML('beforeend', items.map(renderPostCard).join(''));
       }
+      feedEl.querySelectorAll('.comunidade-comments:not([hidden])').forEach(function (panel) {
+        const postId = panel.getAttribute('data-comments-for');
+        if (postId) bindCommentForm(panel, postId);
+      });
       if (loadMoreBtn) loadMoreBtn.hidden = !nextCursor;
     } catch (e) {
       if (!append) feedEl.innerHTML = '<p class="conta-status is-error">Servidor indisponível.</p>';
