@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T18:26:05.256Z",
+  "updatedAt": "2026-08-01T18:37:29.715Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -242,53 +242,60 @@
     },
     {
       "id": "palavra-ganja",
-      "title": "Ganja — do sânscrito ao Caribe e à marca cultural",
-      "titleEn": "Ganja — from Sanskrit to the Caribbean and cultural brand",
-      "titleEs": "Ganja — del sánscrito al Caribe y la marca cultural",
+      "title": "Ganja — da rota índica à marca e à gíria global",
+      "titleEn": "Ganja — from the Indic route to brand and global slang",
+      "titleEs": "Ganja — de la ruta índica a la marca y la jerga global",
       "tipo": "palavra",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Próxima Palavra: rota índica/caribenha; presente na marca BudGanja.",
-      "whyEn": "Next Word: Indic/Caribbean route; present in the BudGanja brand.",
-      "whyEs": "Siguiente Palabra: ruta índica/caribeña; presente en la marca BudGanja.",
+      "priority": 2,
+      "status": "feita",
+      "why": "Duplo sentido prejudicial à originalidade — ficha na série Palavras + mapa no hub.",
+      "whyEn": "Double meaning that harms originality — Words sheet + hub map.",
+      "whyEs": "Doble sentido que perjudica la originalidad — ficha Palabras + mapa en el hub.",
       "suggestedSlug": "inspecao-palavra-ganja",
       "seriesHint": "palavras-origem",
-      "sources": [],
-      "notes": "Separar etimologia de marketing; cruzar com ficha cannabis-sativa."
+      "sources": [
+        "/biblioteca/inspecoes/#inspecoes-palavras"
+      ],
+      "notes": "Ver content/palavras-duplo-sentido.json",
+      "doneHref": "/posts/post-inspecao-palavra-ganja.html"
     },
     {
       "id": "palavra-diamba",
-      "title": "Diamba — cognato afro-brasileiro de maconha",
-      "titleEn": "Diamba — Afro-Brazilian cognate of maconha",
-      "titleEs": "Diamba — cognado afrobrasileño de maconha",
+      "title": "Diamba — cognato afro-brasileiro apagado pelo estigma",
+      "titleEn": "Diamba — Afro-Brazilian cognate erased by stigma",
+      "titleEs": "Diamba — cognado afrobrasileño borrado por el estigma",
       "tipo": "palavra",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Reforça o eixo bantu da série Palavras e a rede semântica aberta em maconha.",
-      "whyEn": "Strengthens the Bantu axis of the Words series and the network opened in maconha.",
-      "whyEs": "Refuerza el eje bantú de Palabras y la red abierta en maconha.",
+      "priority": 2,
+      "status": "feita",
+      "why": "Duplo sentido prejudicial à originalidade — ficha na série Palavras + mapa no hub.",
+      "whyEn": "Double meaning that harms originality — Words sheet + hub map.",
+      "whyEs": "Doble sentido que perjudica la originalidad — ficha Palabras + mapa en el hub.",
       "suggestedSlug": "inspecao-palavra-diamba",
       "seriesHint": "palavras-origem",
-      "sources": [],
-      "notes": "Variantes liamba/riamba; ligação etnobotânica."
+      "sources": [
+        "/biblioteca/inspecoes/#inspecoes-palavras"
+      ],
+      "notes": "Ver content/palavras-duplo-sentido.json",
+      "doneHref": "/posts/post-inspecao-palavra-diamba.html"
     },
     {
       "id": "palavra-cannabis",
-      "title": "Cannabis — latinismo técnico e linguagem institucional",
-      "titleEn": "Cannabis — technical Latinism and institutional language",
-      "titleEs": "Cannabis — latinismo técnico y lenguaje institucional",
+      "title": "Cannabis — latinismo técnico e hierarquia de registos",
+      "titleEn": "Cannabis — technical Latinism and register hierarchy",
+      "titleEs": "Cannabis — latinismo técnico y jerarquía de registros",
       "tipo": "palavra",
-      "priority": 4,
-      "status": "ideia",
-      "why": "Como o nome científico virou preferência clínico-legal frente a «maconha».",
-      "whyEn": "How the scientific name became the clinical-legal preference over “maconha”.",
-      "whyEs": "Cómo el nombre científico pasó a preferencia clínico-legal frente a «maconha».",
+      "priority": 2,
+      "status": "feita",
+      "why": "Duplo sentido prejudicial à originalidade — ficha na série Palavras + mapa no hub.",
+      "whyEn": "Double meaning that harms originality — Words sheet + hub map.",
+      "whyEs": "Doble sentido que perjudica la originalidad — ficha Palabras + mapa en el hub.",
       "suggestedSlug": "inspecao-palavra-cannabis",
       "seriesHint": "palavras-origem",
       "sources": [
-        "/plantas/cannabis-sativa/"
+        "/biblioteca/inspecoes/#inspecoes-palavras"
       ],
-      "notes": "Grego/latim → taxonomia → ANVISA/OMS; contrastar com maconha."
+      "notes": "Ver content/palavras-duplo-sentido.json",
+      "doneHref": "/posts/post-inspecao-palavra-cannabis.html"
     },
     {
       "id": "figura-herodoto",
@@ -755,6 +762,118 @@
         "/posts/post-inspecao-figura-herodoto.html"
       ],
       "notes": "Hub do projecto; não confundir com guia de cultivo."
+    },
+    {
+      "id": "palavra-marijuana",
+      "title": "Marijuana — do nome popular à arma da proibição",
+      "titleEn": "Marijuana — from popular name to prohibition weapon",
+      "titleEs": "Marijuana — del nombre popular al arma de la prohibición",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Duplo sentido prejudicial à originalidade — ficha na série Palavras + mapa no hub.",
+      "whyEn": "Double meaning that harms originality — Words sheet + hub map.",
+      "whyEs": "Doble sentido que perjudica la originalidad — ficha Palabras + mapa en el hub.",
+      "suggestedSlug": "inspecao-palavra-marijuana",
+      "doneHref": "/posts/post-inspecao-palavra-marijuana.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/biblioteca/inspecoes/#inspecoes-palavras"
+      ],
+      "notes": "Ver content/palavras-duplo-sentido.json"
+    },
+    {
+      "id": "palavra-erva",
+      "title": "Erva — do sentido botânico amplo ao eufemismo",
+      "titleEn": "Erva — from broad botanical sense to euphemism",
+      "titleEs": "Erva — del sentido botánico amplio al eufemismo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Duplo sentido prejudicial à originalidade — ficha na série Palavras + mapa no hub.",
+      "whyEn": "Double meaning that harms originality — Words sheet + hub map.",
+      "whyEs": "Doble sentido que perjudica la originalidad — ficha Palabras + mapa en el hub.",
+      "suggestedSlug": "inspecao-palavra-erva",
+      "doneHref": "/posts/post-inspecao-palavra-erva.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/biblioteca/inspecoes/#inspecoes-palavras"
+      ],
+      "notes": "Ver content/palavras-duplo-sentido.json"
+    },
+    {
+      "id": "palavra-droga",
+      "title": "Droga — do remédio ao ilícito no senso comum",
+      "titleEn": "Droga — from remedy to illicit in common sense",
+      "titleEs": "Droga — del remedio a lo ilícito en el sentido común",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Duplo sentido prejudicial à originalidade — ficha na série Palavras + mapa no hub.",
+      "whyEn": "Double meaning that harms originality — Words sheet + hub map.",
+      "whyEs": "Doble sentido que perjudica la originalidad — ficha Palabras + mapa en el hub.",
+      "suggestedSlug": "inspecao-palavra-droga",
+      "doneHref": "/posts/post-inspecao-palavra-droga.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/biblioteca/inspecoes/#inspecoes-palavras"
+      ],
+      "notes": "Ver content/palavras-duplo-sentido.json"
+    },
+    {
+      "id": "palavra-canhamo",
+      "title": "Cânhamo — fibra industrial coberta pela confusão com droga",
+      "titleEn": "Cânhamo — industrial fiber overlaid by “drug” confusion",
+      "titleEs": "Cânhamo — fibra industrial tapada por la confusión con «droga»",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Duplo sentido prejudicial à originalidade — ficha na série Palavras + mapa no hub.",
+      "whyEn": "Double meaning that harms originality — Words sheet + hub map.",
+      "whyEs": "Doble sentido que perjudica la originalidad — ficha Palabras + mapa en el hub.",
+      "suggestedSlug": "inspecao-palavra-canhamo",
+      "doneHref": "/posts/post-inspecao-palavra-canhamo.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/biblioteca/inspecoes/#inspecoes-palavras"
+      ],
+      "notes": "Ver content/palavras-duplo-sentido.json"
+    },
+    {
+      "id": "palavra-entorpecente",
+      "title": "Entorpecente — categoria técnica virada rótulo moral",
+      "titleEn": "Entorpecente — technical category turned moral label",
+      "titleEs": "Entorpecente — categoría técnica vuelta rótulo moral",
+      "tipo": "palavra",
+      "priority": 4,
+      "status": "ideia",
+      "why": "No mapa de duplo sentido; ficha completa opcional.",
+      "whyEn": "On the double-meaning map; full sheet optional.",
+      "whyEs": "En el mapa de doble sentido; ficha completa opcional.",
+      "suggestedSlug": "inspecao-palavra-entorpecente",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/biblioteca/inspecoes/#inspecoes-palavras"
+      ],
+      "notes": "Já no catálogo palavras-duplo-sentido.json (mapa)."
+    },
+    {
+      "id": "palavra-narcotico",
+      "title": "Narcótico — do torpor clínico à arma policial",
+      "titleEn": "Narcótico — from clinical torpor to policing weapon",
+      "titleEs": "Narcótico — del torpor clínico al arma policial",
+      "tipo": "palavra",
+      "priority": 4,
+      "status": "ideia",
+      "why": "No mapa de duplo sentido; ficha completa opcional.",
+      "whyEn": "On the double-meaning map; full sheet optional.",
+      "whyEs": "En el mapa de doble sentido; ficha completa opcional.",
+      "suggestedSlug": "inspecao-palavra-narcotico",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/biblioteca/inspecoes/#inspecoes-palavras"
+      ],
+      "notes": "Já no catálogo palavras-duplo-sentido.json (mapa)."
     }
   ]
 }

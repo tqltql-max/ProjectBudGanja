@@ -78,6 +78,28 @@
             </div>
         </section>
 
+        <section id="inspecoes-palavras" class="inspecoes-hub-panel inspecoes-sugestoes" data-sug-tipo="palavra" hidden>
+            <header class="inspecoes-hub-panel-head">
+                <h2 class="category-title" data-i18n="pages.inspections.sectionWords">Palavras</h2>
+                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionWordsDesc">Origem, viagem e transformação histórica de vocábulos — com mapa do duplo sentido prejudicial à originalidade; fichas publicadas em cards e fila de sugestões abaixo.</p>
+            </header>
+            <div class="palavras-duplo-sentido" data-palavras-duplo-sentido>
+                <h3 class="palavras-duplo-heading" data-i18n="pages.inspections.wordsCatalogTitle">Duplo sentido prejudicial à originalidade</h3>
+                <p class="inspecoes-hub-section-desc" data-palavras-duplo-lead></p>
+                <div class="palavras-duplo-list" data-palavras-duplo-list>
+                    <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
+                </div>
+            </div>
+            <div class="inspecoes-sug-filters" role="group" aria-label="Filtro de sugestões de palavras">
+                <button type="button" class="inspecoes-sug-filter is-active" data-sug-filter="abertas" aria-pressed="true" data-i18n="pages.inspections.sugFilterOpen">Abertas</button>
+                <button type="button" class="inspecoes-sug-filter" data-sug-filter="feitas" aria-pressed="false" data-i18n="pages.inspections.sugFilterDone">Feitas</button>
+                <button type="button" class="inspecoes-sug-filter" data-sug-filter="todas" aria-pressed="false" data-i18n="pages.inspections.sugFilterAll">Todas</button>
+            </div>
+            <div class="inspecoes-sug-list" data-inspecoes-sugestoes-list>
+                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
+            </div>
+        </section>
+
         <section id="inspecoes-sugestoes" class="inspecoes-hub-panel inspecoes-sugestoes" hidden>
             <header class="inspecoes-hub-panel-head">
                 <h2 class="category-title" data-i18n="pages.inspections.sectionSuggestions">Sugestões</h2>
@@ -102,6 +124,7 @@
     <script src="/js/ferramentas-nav-data.js?v=295"></script>
     <script src="/js/layout.js?v=295"></script>
     <script src="/js/inspecoes-sugestoes.js?v=295"></script>
+    <script src="/js/palavras-duplo-sentido.js?v=295"></script>
     <script src="/js/posts.js?v=295"></script>
 
 </body>

@@ -336,6 +336,14 @@
                   "description": "Auditoria do canal CANABinALL (@canabinall) — 139 vídeos catalogados; divulgação científica UNIFESP sob curadoria da Profa. Dra. Eliana Rodrigues (CEE), com destaque a Conceitos básicos #1 e à série Plantas Sagradas."
                 },
                 {
+                  "label": "Inspeção: Ganja — da rota índica à marca e à gíria global",
+                  "tileLabel": "Inspeção: Ganja — da rota índic…",
+                  "href": "/posts/post-inspecao-palavra-ganja.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-ganja",
+                  "description": "Palavras: «ganja» — originalidade cultural índica/caribenha coberta por gíria e marketing (incl. BudGanja); mudança sem apagar a rota."
+                },
+                {
                   "label": "Inspeção: Alice no País das Maravilhas — o livro de Carroll e o buraco do coelho",
                   "tileLabel": "Inspeção: Alice no País das Mar…",
                   "href": "/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html",
@@ -366,6 +374,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-carqueja",
                   "description": "*Baccharis trimera* — chá amargo do Sul/Sudeste; flavonoides e ácidos fenólicos na tradição hepato-digestiva."
+                },
+                {
+                  "label": "Inspeção: Diamba — cognato afro-brasileiro apagado pelo estigma",
+                  "tileLabel": "Inspeção: Diamba — cognato afro…",
+                  "href": "/posts/post-inspecao-palavra-diamba.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-diamba",
+                  "description": "Palavras: «diamba» (e liamba/riamba) — originalidade bantu/afro-brasileira coberta pelo léxico pejorativo de maconha e pelo latinismo clínico."
                 },
                 {
                   "label": "Inspeção: Jostein Gaarder — filosofia narrada e elo com O Dia do Curinga",
@@ -400,6 +416,14 @@
                   "description": "*Equisetum arvense* — alto teor de sílica silícea, flavonoides e uso tradicional em chás e banhos."
                 },
                 {
+                  "label": "Inspeção: Cannabis — latinismo técnico e hierarquia de registos",
+                  "tileLabel": "Inspeção: Cannabis — latinismo …",
+                  "href": "/posts/post-inspecao-palavra-cannabis.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-cannabis",
+                  "description": "Palavras: «cannabis» — originalidade botânica/grega-latina; segunda camada «palavra limpa» que pode apagar maconha/diamba ou ainda soar a «droga» na imprensa."
+                },
+                {
                   "label": "Inspeção: Anthony Henman — antropologia da diamba e elo com Diamba Sarabamba",
                   "tileLabel": "Inspeção: Anthony Henman — antr…",
                   "href": "/posts/post-inspecao-figura-anthony-henman.html",
@@ -432,6 +456,14 @@
                   "description": "*Lippia alba* — erva aromática brasileira; quimiotipos ricos em citral ou carvona conforme região."
                 },
                 {
+                  "label": "Inspeção: Marijuana — do nome popular à arma da proibição",
+                  "tileLabel": "Inspeção: Marijuana — do nome p…",
+                  "href": "/posts/post-inspecao-palavra-marijuana.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-marijuana",
+                  "description": "Palavras: «marijuana» / marihuana — originalidade mexicana/espanhola coberta pela propaganda proibicionista EUA (xenofobia e pânico moral)."
+                },
+                {
                   "label": "Inspeção: Nick Tosches — prosa afiada e elo com A Última Casa de Ópio",
                   "tileLabel": "Inspeção: Nick Tosches — prosa …",
                   "href": "/posts/post-inspecao-figura-nick-tosches.html",
@@ -454,6 +486,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-espinheira-santa",
                   "description": "*Maytenus ilicifolia* — arbusto da Mata Atlântica; triterpenos e taninos na fitoterapia gástrica popular."
+                },
+                {
+                  "label": "Inspeção: Erva — do sentido botânico amplo ao eufemismo",
+                  "tileLabel": "Inspeção: Erva — do sentido bot…",
+                  "href": "/posts/post-inspecao-palavra-erva.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-erva",
+                  "description": "Palavras: «erva» — originalidade (planta herbácea, chá, tempero) coberta pelo eufemismo de cannabis; prejuízo à literacia do catálogo medicinal."
                 },
                 {
                   "label": "Inspeção: Annie Leonard — divulgação da economia dos materiais e elo com A História das Coisas",
@@ -480,12 +520,28 @@
                   "description": "*Mikania glomerata* — cumarina marcante, xaropes e chás da medicina popular respiratória brasileira."
                 },
                 {
+                  "label": "Inspeção: Droga — do remédio ao ilícito no senso comum",
+                  "tileLabel": "Inspeção: Droga — do remédio ao…",
+                  "href": "/posts/post-inspecao-palavra-droga.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-droga",
+                  "description": "Palavras: «droga» — originalidade farmacêutica/medicinal (eco de phármakon) coberta pelo sentido de ilícito, vício e crime."
+                },
+                {
                   "label": "Inspeção: Planta — Hortelã — mentol e mentona",
                   "tileLabel": "Inspeção: Planta — Hortelã — me…",
                   "href": "/posts/post-inspecao-planta-hortela.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-hortela",
                   "description": "*Mentha spicata* (hortelã-verde) — mentol, mentona e chás digestivos de cultivo doméstico."
+                },
+                {
+                  "label": "Inspeção: Cânhamo — fibra industrial coberta pela confusão com «droga»",
+                  "tileLabel": "Inspeção: Cânhamo — fibra indus…",
+                  "href": "/posts/post-inspecao-palavra-canhamo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-canhamo",
+                  "description": "Palavras: «cânhamo» — originalidade técnica (fibra/óleo industrial) coberta pela confusão moral com maconha/droga."
                 },
                 {
                   "label": "Inspeção: Planta — Boldo — falso-boldo brasileiro",

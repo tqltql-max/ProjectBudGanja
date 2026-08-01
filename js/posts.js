@@ -337,7 +337,7 @@ var INSPECAO_HUB_TIPOS = [
   { id: 'artigo', labelKey: 'pages.inspections.chipArticles', fallback: 'Artigos', sort: 'seriesOrder' },
   { id: 'planta', labelKey: 'pages.inspections.chipPlants', fallback: 'Plantas', sort: 'seriesOrder' },
   { id: 'derivado', labelKey: 'pages.inspections.chipDerivatives', fallback: 'Derivados', sort: 'seriesOrder' },
-  { id: 'palavra', labelKey: 'pages.inspections.chipWords', fallback: 'Palavras', sort: 'seriesOrder' },
+  { id: 'palavra', labelKey: 'pages.inspections.chipWords', fallback: 'Palavras', sort: 'seriesOrder', keepVisible: true },
   { id: 'divulgacao', labelKey: 'pages.inspections.chipOutreach', fallback: 'Divulgação', sort: 'seriesOrder' },
   { id: 'arte', labelKey: 'pages.inspections.chipArts', fallback: 'Artes', sort: 'seriesOrder', keepVisible: true },
   { id: 'sugestoes', labelKey: 'pages.inspections.chipSuggestions', fallback: 'Sugestões', special: true, keepVisible: true }
@@ -420,17 +420,22 @@ function sortedHubPosts(posts, tipo) {
 
 function setInspecoesPanels(tipo) {
   var artes = document.getElementById('inspecoes-artes');
+  var palavras = document.getElementById('inspecoes-palavras');
   var sugs = document.getElementById('inspecoes-sugestoes');
   var list = document.getElementById('inspecoes-list');
   var searchWrap = document.querySelector('.inspecoes-search-wrap');
 
   if (artes) artes.hidden = tipo !== 'arte';
+  if (palavras) palavras.hidden = tipo !== 'palavra';
   if (sugs) sugs.hidden = tipo !== 'sugestoes';
   if (list) {
     list.hidden = tipo === 'sugestoes';
   }
   if (searchWrap) {
     searchWrap.hidden = tipo === 'sugestoes';
+  }
+  if (tipo === 'palavra' && typeof window.renderPalavrasDuploSentido === 'function') {
+    window.renderPalavrasDuploSentido();
   }
 }
 
@@ -536,15 +541,15 @@ function applyInspecoesHubView() {
     return postMatchesHubQuery(p, q);
   });
 
-  if (inspecoesActiveTipo === 'arte') {
-    // Cards publicados desta série (se houver) + painel de sugestões Artes.
+  if (inspecoesActiveTipo === 'arte' || inspecoesActiveTipo === 'palavra') {
+    // Cards publicados da série + painel (Artes sugestões / Palavras catálogo+sugestões).
     listEl.hidden = !filtered.length;
     if (filtered.length) {
       var grid = document.createElement('div');
       grid.className = 'container-cards publications-inspecoes';
       listEl.innerHTML = '';
       listEl.appendChild(grid);
-      renderPostCards(grid, sortedHubPosts(filtered, 'arte'), { hub: true });
+      renderPostCards(grid, sortedHubPosts(filtered, inspecoesActiveTipo), { hub: true });
     } else {
       listEl.innerHTML = '';
     }
