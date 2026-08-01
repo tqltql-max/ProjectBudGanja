@@ -775,6 +775,270 @@
       ],
       "cautionsEn": "Fresh water and pulp are common foods. Industrial derivatives with sugar, syrups and additives (sweetened coconut water, desserts, snacks) have their own Risk derivatives sheet. Coconut oil is high in saturated fat — dose and dietary context matter. Educational content — does not replace professional advice.",
       "cautionsEs": "El agua y la pulpa frescas son alimentos comunes. Los derivados industriales con azúcar, jarabes y aditivos (agua de coco endulzada, postres, snacks) tienen ficha propia en Derivados de riesgo. El aceite de coco es rico en grasa saturada — importan dosis y contexto. Contenido educativo — no sustituye orientación profesional."
+    },
+    "laranja": {
+      "nomePopularEn": "Orange",
+      "nomePopularEs": "Naranja",
+      "summaryEn": "Citrus: whole fruit vs concentrate juice, nectars and “orange” soft drinks with sugar and additives.",
+      "summaryEs": "Cítrico: fruto entero vs jugo concentrado, néctares y refrescos «de naranja» con azúcar y aditivos.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "acai": {
+      "nomePopularEn": "Açaí",
+      "nomePopularEs": "Açaí",
+      "summaryEn": "Amazon palm: fresh pulp vs industrial bowls, syrups and sugary ultra-processed mixes.",
+      "summaryEs": "Palmera amazónica: pulpa fresca vs bowls industriales, jarabes y mixes ultraprocesados azucarados.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "manga": {
+      "nomePopularEn": "Mango",
+      "nomePopularEs": "Mango",
+      "summaryEn": "Tropical fruit: whole mango vs nectars, sweetened pulps and industrial dried snacks.",
+      "summaryEs": "Fruto tropical: mango entero vs néctares, pulpas endulzadas y snacks deshidratados industriales.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "banana": {
+      "nomePopularEn": "Banana",
+      "nomePopularEs": "Plátano / banana",
+      "summaryEn": "Everyday fruit: whole banana vs fried chips, flours, snacks and industrial desserts.",
+      "summaryEs": "Fruto cotidiano: banana entera vs chips fritos, harinas, snacks y postres industriales.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "maca": {
+      "nomePopularEn": "Apple",
+      "nomePopularEs": "Manzana",
+      "summaryEn": "Temperate fruit: whole apple vs concentrate juices, baby purées and industrial “apple” snacks.",
+      "summaryEs": "Fruto templado: manzana entera vs jugos concentrados, purés infantiles y snacks «apple» industriales.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "abacaxi": {
+      "nomePopularEn": "Pineapple",
+      "nomePopularEs": "Piña",
+      "summaryEn": "Tropical bromeliad: fresh fruit vs canned in syrup, juices and sugary nectars.",
+      "summaryEs": "Bromelia tropical: fruto fresco vs lata en almíbar, jugos y néctares azucarados.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "goiaba": {
+      "nomePopularEn": "Guava",
+      "nomePopularEs": "Guayaba",
+      "summaryEn": "Common Brazilian fruit: whole guava vs guava paste, pulps and sugar-rich nectars.",
+      "summaryEs": "Fruto brasileño común: guayaba entera vs pasta de guayaba, pulpas y néctares ricos en azúcar.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "cacau": {
+      "nomePopularEn": "Cacao",
+      "nomePopularEs": "Cacao",
+      "summaryEn": "Amazonian–Mesoamerican seed/fruit: bean vs industrial chocolate, sugar and ultra-processing.",
+      "summaryEs": "Semilla/fruto amazónico-mesoamericano: almendra vs chocolate industrial, azúcar y ultraprocesamiento.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "uva": {
+      "nomePopularEn": "Grape",
+      "nomePopularEs": "Uva",
+      "summaryEn": "Grape: whole fruit vs concentrate juices, nectars and sugary “grape” soft drinks.",
+      "summaryEs": "Uva: fruto entero vs jugos concentrados, néctares y refrescos «de uva» azucarados.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "morango": {
+      "nomePopularEn": "Strawberry",
+      "nomePopularEs": "Fresa",
+      "summaryEn": "Red fruit: fresh strawberry vs yogurts, syrups, flavours and “strawberry” ultra-processed products.",
+      "summaryEs": "Fruto rojo: fresa fresca vs yogures, jarabes, aromas y ultraprocesados «strawberry».",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "maracuja-fruta": {
+      "nomePopularEn": "Passion fruit",
+      "nomePopularEs": "Maracuyá (fruta)",
+      "summaryEn": "*P. edulis* fruit: fresh pulp vs industrial sweetened nectars/pulps — distinct from the medicinal leaf sheet (*P. incarnata*).",
+      "summaryEs": "Fruto de *P. edulis*: pulpa fresca vs néctares y pulpas industriales endulzadas — distinto de la ficha medicinal de hojas.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
     }
   }
 }

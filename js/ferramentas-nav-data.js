@@ -179,20 +179,20 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Homenagem documental ao Padre Ticão (Antônio Luiz Marchioni, 1952–2021): pároco de Ermelino Matarazzo, líder popular da zona leste e fundador do MovReCam — mérito máximo na democratização da educação sobre cannabis medicinal no Brasil."
             },
             {
-              "label": "Inspeção: Fruto — Coco — água, polpa e óleo da drupa tropical",
-              "tileLabel": "Inspeção: Fruto — Coco — água, …",
-              "href": "/posts/post-inspecao-planta-coco.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-planta-coco",
-              "description": "*Cocos nucifera* — água endospérmica, polpa e óleo; etimologia do «rosto» do coco; separar fruto inteiro de derivados industriais adoçados e refinados."
-            },
-            {
               "label": "Inspeção: Planta — Babosa — gel foliar e polissacarídeos",
               "tileLabel": "Inspeção: Planta — Babosa — gel…",
               "href": "/posts/post-inspecao-planta-babosa.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-babosa",
               "description": "Gel de *Aloe vera* — polissacarídeos, antraquinonas e uso tópico tradicional; cautela com ingestão."
+            },
+            {
+              "label": "Inspeção: Fruto — Abacate — persina, PPO e gorduras monoinsaturadas",
+              "tileLabel": "Inspeção: Fruto — Abacate — per…",
+              "href": "/posts/post-inspecao-planta-abacate.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-abacate",
+              "description": "*Persea americana* — polpa rica em MUFA, persina defensiva e etimologia náuatle *āhuacatl*; separar planta inteira de derivados industriais."
             },
             {
               "label": "Inspeção: Artigo — Cannabis na adolescência e neurodesenvolvimento (JAMA Psychiatry)",
@@ -267,6 +267,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Homenagem documental ao Prof. Emérito Elisaldo Luiz de Araújo Carlini (1930–2020): médico e psicofarmacologista da UNIFESP, fundador do CEBRID — mérito máximo na ciência e na democratização do conhecimento sobre cannabis medicinal no Brasil."
             },
             {
+              "label": "Inspeção: Fruto — Coco — água, polpa e óleo da drupa tropical",
+              "tileLabel": "Inspeção: Fruto — Coco — água, …",
+              "href": "/posts/post-inspecao-planta-coco.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-coco",
+              "description": "*Cocos nucifera* — água endospérmica, polpa e óleo; etimologia do «rosto» do coco; separar fruto inteiro de derivados industriais adoçados e refinados."
+            },
+            {
               "label": "Inspeção: Planta — Camomila — apigenina e óleo azul",
               "tileLabel": "Inspeção: Planta — Camomila — a…",
               "href": "/posts/post-inspecao-planta-camomila.html",
@@ -331,6 +339,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Folhas de *Cymbopogon citratus* — citral dominante, chás digestivos e culinária tailandesa/brasileira."
             },
             {
+              "label": "Inspeção: Fruto — Laranja",
+              "tileLabel": "Inspeção: Fruto — Laranja",
+              "href": "/posts/post-inspecao-planta-laranja.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-laranja",
+              "description": "Relatório educacional de Laranja (*Citrus × sinensis (L.) Osbeck): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
               "label": "Inspeção: Canal CANABinALL — Profa. Dra. Eliana Rodrigues",
               "tileLabel": "Inspeção: Canal CANABinALL — Pr…",
               "href": "/posts/post-inspecao-canal-canabinall.html",
@@ -379,6 +395,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Baccharis trimera* — chá amargo do Sul/Sudeste; flavonoides e ácidos fenólicos na tradição hepato-digestiva."
             },
             {
+              "label": "Inspeção: Fruto — Açaí",
+              "tileLabel": "Inspeção: Fruto — Açaí",
+              "href": "/posts/post-inspecao-planta-acai.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-acai",
+              "description": "Relatório educacional de Açaí (*Euterpe oleracea Mart.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
               "label": "Inspeção: Diamba — cognato afro-brasileiro apagado pelo estigma",
               "tileLabel": "Inspeção: Diamba — cognato afro…",
               "href": "/posts/post-inspecao-palavra-diamba.html",
@@ -417,6 +441,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-cavalinha",
               "description": "*Equisetum arvense* — alto teor de sílica silícea, flavonoides e uso tradicional em chás e banhos."
+            },
+            {
+              "label": "Inspeção: Fruto — Manga",
+              "tileLabel": "Inspeção: Fruto — Manga",
+              "href": "/posts/post-inspecao-planta-manga.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-manga",
+              "description": "Relatório educacional de Manga (*Mangifera indica L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
               "label": "Inspeção: Cannabis — latinismo técnico e hierarquia de registos",
@@ -459,6 +491,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Lippia alba* — erva aromática brasileira; quimiotipos ricos em citral ou carvona conforme região."
             },
             {
+              "label": "Inspeção: Fruto — Banana",
+              "tileLabel": "Inspeção: Fruto — Banana",
+              "href": "/posts/post-inspecao-planta-banana.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-banana",
+              "description": "Relatório educacional de Banana (*Musa spp.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
               "label": "Inspeção: Marijuana — do nome popular à arma da proibição",
               "tileLabel": "Inspeção: Marijuana — do nome p…",
               "href": "/posts/post-inspecao-palavra-marijuana.html",
@@ -489,6 +529,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-espinheira-santa",
               "description": "*Maytenus ilicifolia* — arbusto da Mata Atlântica; triterpenos e taninos na fitoterapia gástrica popular."
+            },
+            {
+              "label": "Inspeção: Fruto — Maçã",
+              "tileLabel": "Inspeção: Fruto — Maçã",
+              "href": "/posts/post-inspecao-planta-maca.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-maca",
+              "description": "Relatório educacional de Maçã (*Malus domestica Borkh.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
               "label": "Inspeção: Erva — do sentido botânico amplo ao eufemismo",
@@ -523,6 +571,22 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Mikania glomerata* — cumarina marcante, xaropes e chás da medicina popular respiratória brasileira."
             },
             {
+              "label": "Inspeção: Fruto — Abacaxi",
+              "tileLabel": "Inspeção: Fruto — Abacaxi",
+              "href": "/posts/post-inspecao-planta-abacaxi.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-abacaxi",
+              "description": "Relatório educacional de Abacaxi (*Ananas comosus (L.) Merr.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: Divertida Mente — as emoções da Riley e a mensagem que importa",
+              "tileLabel": "Inspeção: Divertida Mente — as …",
+              "href": "/posts/post-inspecao-filme-divertida-mente.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-divertida-mente",
+              "description": "Artes: Divertida Mente (Pixar, 2015) — literacia emocional com carinho; Alegria, Tristeza, Raiva, Medo e Nojinho em rede com a série Palavras. Todas as emoções importam."
+            },
+            {
               "label": "Inspeção: Droga — do remédio ao ilícito no senso comum",
               "tileLabel": "Inspeção: Droga — do remédio ao…",
               "href": "/posts/post-inspecao-palavra-droga.html",
@@ -537,6 +601,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-hortela",
               "description": "*Mentha spicata* (hortelã-verde) — mentol, mentona e chás digestivos de cultivo doméstico."
+            },
+            {
+              "label": "Inspeção: Fruto — Goiaba",
+              "tileLabel": "Inspeção: Fruto — Goiaba",
+              "href": "/posts/post-inspecao-planta-goiaba.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-goiaba",
+              "description": "Relatório educacional de Goiaba (*Psidium guajava L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
               "label": "Inspeção: Cânhamo — fibra industrial coberta pela confusão com «droga»",
@@ -555,6 +627,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Plectranthus barbatus* — «boldo» do Brasil (falso-boldo); distinguir do boldo-chileno *Peumus boldus*."
             },
             {
+              "label": "Inspeção: Fruto — Cacau",
+              "tileLabel": "Inspeção: Fruto — Cacau",
+              "href": "/posts/post-inspecao-planta-cacau.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-cacau",
+              "description": "Relatório educacional de Cacau (*Theobroma cacao L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
               "label": "Inspeção: Coelho — a palavra da toca e da entrada na investigação",
               "tileLabel": "Inspeção: Coelho — a palavra da…",
               "href": "/posts/post-inspecao-palavra-coelho.html",
@@ -571,12 +651,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Melissa officinalis* — erva-citronela europeia; citral, ácido rosmarínico e chás calmantes."
             },
             {
+              "label": "Inspeção: Fruto — Uva",
+              "tileLabel": "Inspeção: Fruto — Uva",
+              "href": "/posts/post-inspecao-planta-uva.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-uva",
+              "description": "Relatório educacional de Uva (*Vitis vinifera L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
               "label": "Inspeção: Canal MovReCam — aulas UNIFESP",
               "tileLabel": "Inspeção: Canal MovReCam — aula…",
               "href": "/posts/post-inspecao-canal-movrecam.html",
               "icon": "🔍",
               "slug": "post-inspecao-canal-movrecam",
               "description": "Auditoria do canal MovReCam — 285 vídeos catalogados, com embeds das aulas da XIV edição UNIFESP para revisão in-page."
+            },
+            {
+              "label": "Inspeção: Emoção — o hub lexical da Riley (Divertida Mente)",
+              "tileLabel": "Inspeção: Emoção — o hub lexica…",
+              "href": "/posts/post-inspecao-palavra-emocao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-emocao",
+              "description": "Palavras: «emoção» (*ēmovēre*) — hub das cinco emoções da Riley em Divertida Mente; literacia do sentir com elos a Alegria, Tristeza, Raiva, Medo e Nojinho."
             },
             {
               "label": "Inspeção: Planta — Alecrim — ácidos diterpênicos e cineol",
@@ -587,12 +683,44 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Salvia rosmarinus* — ácido rosmarínico, carnósico e 1,8-cineol; cozinha, chás e tradição antioxidante."
             },
             {
+              "label": "Inspeção: Fruto — Morango",
+              "tileLabel": "Inspeção: Fruto — Morango",
+              "href": "/posts/post-inspecao-planta-morango.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-morango",
+              "description": "Relatório educacional de Morango (*Fragaria × ananassa Duchesne): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: Alegria — a palavra amarela da Riley",
+              "tileLabel": "Inspeção: Alegria — a palavra a…",
+              "href": "/posts/post-inspecao-palavra-alegria.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-alegria",
+              "description": "Palavras: «alegria» — emoção-âncora de Divertida Mente; quer o bem de Riley e aprende a partilhar o comando com a Tristeza."
+            },
+            {
               "label": "Inspeção: Planta — Gengibre — gingeróis e rizoma picante",
               "tileLabel": "Inspeção: Planta — Gengibre — g…",
               "href": "/posts/post-inspecao-planta-gengibre.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-gengibre",
               "description": "*Zingiber officinale* — gingeróis, shogaóis e uso digestivo/anti-náusea com tradição pan-asiática."
+            },
+            {
+              "label": "Inspeção: Fruto — Maracujá (fruta)",
+              "tileLabel": "Inspeção: Fruto — Maracujá (fru…",
+              "href": "/posts/post-inspecao-planta-maracuja-fruta.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-maracuja-fruta",
+              "description": "Relatório educacional de Maracujá (fruta) (*Passiflora edulis Sims): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: Tristeza — a palavra azul que também cuida",
+              "tileLabel": "Inspeção: Tristeza — a palavra …",
+              "href": "/posts/post-inspecao-palavra-tristeza.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-tristeza",
+              "description": "Palavras: «tristeza» — em Divertida Mente, a emoção que abre o pedido de ajuda; sem ela a Alegria não basta."
             },
             {
               "label": "Inspeção: Planta — Cúrcuma — açafrão-da-terra e curcumina",
@@ -603,6 +731,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Curcuma longa* — açafrão-da-terra; curcumina, corante culinário e interesse anti-inflamatório (não é açafrão verdadeiro)."
             },
             {
+              "label": "Inspeção: Raiva — a palavra vermelha da sala de comando",
+              "tileLabel": "Inspeção: Raiva — a palavra ver…",
+              "href": "/posts/post-inspecao-palavra-raiva.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-raiva",
+              "description": "Palavras: «raiva» — em Divertida Mente, fogo de limite e indignação; emoção com ofício, não vilania."
+            },
+            {
               "label": "Inspeção: Planta — Unha-de-gato — alcaloides oxindólicos",
               "tileLabel": "Inspeção: Planta — Unha-de-gato…",
               "href": "/posts/post-inspecao-planta-unha-de-gato.html",
@@ -611,12 +747,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Uncaria tomentosa* — casca amazônica rica em alcaloides oxindólicos pentacíclicos; fitoterapia imunomoduladora popular."
             },
             {
+              "label": "Inspeção: Medo — a palavra roxa da vigilância interior",
+              "tileLabel": "Inspeção: Medo — a palavra roxa…",
+              "href": "/posts/post-inspecao-palavra-medo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-medo",
+              "description": "Palavras: «medo» — em Divertida Mente, a emoção da segurança e do ensaio do risco; ofício protetor."
+            },
+            {
               "label": "Inspeção: Planta — Sucupira — furanoditerpenos do Cerrado",
               "tileLabel": "Inspeção: Planta — Sucupira — f…",
               "href": "/posts/post-inspecao-planta-sucupira.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-sucupira",
               "description": "*Pterodon emarginatus* — sementes e óleo fixo do Cerrado; furanoditerpenos (sucupirins) na medicina popular."
+            },
+            {
+              "label": "Inspeção: Nojinho — a palavra verde da aversão que protege",
+              "tileLabel": "Inspeção: Nojinho — a palavra v…",
+              "href": "/posts/post-inspecao-palavra-nojinho.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-nojinho",
+              "description": "Palavras: «nojinho» — forma BR de Divertida Mente para Disgust; aversão protetora com humor e limite."
             },
             {
               "label": "Inspeção: Planta — Copaíba — óleo-resina e β-cariofileno",
@@ -721,14 +873,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-cannabis-sativa",
               "description": "*Cannabis sativa* L. — fitocanabinoides (THC, CBD), terpenos e uso medicinal regulamentado; cautela legal e neurodesenvolvimento."
-            },
-            {
-              "label": "Inspeção: Planta — Abacate — persina, PPO e gorduras monoinsaturadas",
-              "tileLabel": "Inspeção: Planta — Abacate — pe…",
-              "href": "/posts/post-inspecao-planta-abacate.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-planta-abacate",
-              "description": "*Persea americana* — polpa rica em MUFA, persina defensiva e etimologia náuatle *āhuacatl*; separar planta inteira de derivados industriais."
             }
           ]
         },

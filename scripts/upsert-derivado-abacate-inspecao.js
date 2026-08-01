@@ -40,11 +40,15 @@ function writeI18n(i18n, post) {
 const derivado = buildAbacateDerivadoPost();
 const plants = loadPlantasCatalog();
 const abacatePlant = plants.find((p) => p && p.slug === 'abacate');
+const frutos = plants.filter(
+  (p) => p && String(p.hubCategory || '').toLowerCase() === 'fruto'
+);
+const frutoOrder = Math.max(
+  1,
+  frutos.findIndex((p) => p.slug === 'abacate') + 1
+);
 const plantaPost = abacatePlant
-  ? buildPlantaInspecaoPost(
-      abacatePlant,
-      plants.findIndex((p) => p.slug === 'abacate') + 1
-    )
+  ? buildPlantaInspecaoPost(abacatePlant, frutoOrder)
   : null;
 
 const posts = JSON.parse(fs.readFileSync(POSTS_FILE, 'utf8'));

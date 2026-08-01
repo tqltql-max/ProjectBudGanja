@@ -816,7 +816,8 @@
         "americas",
         "culinaria",
         "lipidos",
-        "etimo"
+        "etimo",
+        "frutos"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -827,7 +828,8 @@
           "labelEn": "Inspection: Avocado derivatives — sugar, additives and industrial chemistry",
           "labelEs": "Inspección: Derivados del aguacate — azúcar, aditivos y química industrial"
         }
-      ]
+      ],
+      "hubCategory": "fruto"
     },
     {
       "id": "coco",
@@ -869,6 +871,325 @@
           "labelEs": "Inspección: Derivados del coco — azúcar, aceite y química industrial"
         }
       ]
+    },
+    {
+      "id": "laranja",
+      "slug": "laranja",
+      "nomePopular": "Laranja",
+      "nomeCientifico": "Citrus × sinensis (L.) Osbeck",
+      "familia": "Rutaceae",
+      "hubCategory": "fruto",
+      "summary": "Citrino: fruto inteiro vs suco concentrado, néctares e refrigerantes «de laranja» com açúcar e aditivos.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "citricos",
+        "suco"
+      ],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": []
+    },
+    {
+      "id": "acai",
+      "slug": "acai",
+      "nomePopular": "Açaí",
+      "nomeCientifico": "Euterpe oleracea Mart.",
+      "familia": "Arecaceae",
+      "hubCategory": "fruto",
+      "summary": "Palmeira amazónica: polpa fresca vs bowls industriais, xaropes e mixes ultraprocessados açucarados.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "amazonia",
+        "polpa",
+        "tropicais"
+      ],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": []
+    },
+    {
+      "id": "manga",
+      "slug": "manga",
+      "nomePopular": "Manga",
+      "nomeCientifico": "Mangifera indica L.",
+      "familia": "Anacardiaceae",
+      "hubCategory": "fruto",
+      "summary": "Fruto tropical: manga inteira vs néctares, polpas adoçadas e snacks desidratados industriais.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "tropicais",
+        "polpa"
+      ],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": []
+    },
+    {
+      "id": "banana",
+      "slug": "banana",
+      "nomePopular": "Banana",
+      "nomeCientifico": "Musa spp.",
+      "familia": "Musaceae",
+      "hubCategory": "fruto",
+      "summary": "Fruto cotidiano: banana inteira vs chips fritos, farinhas, snacks e sobremesas industriais.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "snacks"
+      ],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": []
+    },
+    {
+      "id": "maca",
+      "slug": "maca",
+      "nomePopular": "Maçã",
+      "nomeCientifico": "Malus domestica Borkh.",
+      "familia": "Rosaceae",
+      "hubCategory": "fruto",
+      "summary": "Fruto temperado: maçã inteira vs sucos concentrados, purés infantis e snacks «apple» industriais.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "suco",
+        "snacks"
+      ],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": []
+    },
+    {
+      "id": "abacaxi",
+      "slug": "abacaxi",
+      "nomePopular": "Abacaxi",
+      "nomeCientifico": "Ananas comosus (L.) Merr.",
+      "familia": "Bromeliaceae",
+      "hubCategory": "fruto",
+      "summary": "Bromélia tropical: fruto fresco vs lata em calda, sucos e néctares com açúcar.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "tropicais",
+        "calda"
+      ],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": []
+    },
+    {
+      "id": "goiaba",
+      "slug": "goiaba",
+      "nomePopular": "Goiaba",
+      "nomeCientifico": "Psidium guajava L.",
+      "familia": "Myrtaceae",
+      "hubCategory": "fruto",
+      "summary": "Fruto brasileiro comum: goiaba inteira vs goiabada, polpas e néctares ricos em açúcar.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "brasileira",
+        "doce"
+      ],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": []
+    },
+    {
+      "id": "cacau",
+      "slug": "cacau",
+      "nomePopular": "Cacau",
+      "nomeCientifico": "Theobroma cacao L.",
+      "familia": "Malvaceae",
+      "hubCategory": "fruto",
+      "summary": "Semente/fruto amazónico-mesoamericano: amêndoa vs chocolate industrial, açúcar e ultra processamento.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "amazonia",
+        "chocolate",
+        "lipidos"
+      ],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": []
+    },
+    {
+      "id": "uva",
+      "slug": "uva",
+      "nomePopular": "Uva",
+      "nomeCientifico": "Vitis vinifera L.",
+      "familia": "Vitaceae",
+      "hubCategory": "fruto",
+      "summary": "Bagão: uva inteira vs sucos concentrados, néctares e refrigerantes «de uva» com açúcar.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "suco"
+      ],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": []
+    },
+    {
+      "id": "morango",
+      "slug": "morango",
+      "nomePopular": "Morango",
+      "nomeCientifico": "Fragaria × ananassa Duchesne",
+      "familia": "Rosaceae",
+      "hubCategory": "fruto",
+      "summary": "Fruto vermelho: morango fresco vs iogurtes, caldas, aromas e ultraprocessados «strawberry».",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "calda",
+        "aroma"
+      ],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": []
+    },
+    {
+      "id": "maracuja-fruta",
+      "slug": "maracuja-fruta",
+      "nomePopular": "Maracujá (fruta)",
+      "nomeCientifico": "Passiflora edulis Sims",
+      "familia": "Passifloraceae",
+      "hubCategory": "fruto",
+      "summary": "Fruto de *P. edulis*: polpa fresca vs néctares e polpas industriais adoçadas — distinto da ficha medicinal de folhas (*P. incarnata*).",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "polpa",
+        "tropicais"
+      ],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": []
     }
   ]
 }
