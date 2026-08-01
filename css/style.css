@@ -9661,6 +9661,7 @@ html[data-theme="light"] .header-group-divider {
     max-width: 36rem;
 }
 
+.videos-filters-wrap + .videos-search-wrap,
 .videos-player + .videos-search-wrap {
     margin-top: -12px;
 }
@@ -9847,9 +9848,82 @@ html[data-theme="light"] .header-group-divider {
     color: var(--color-accent);
 }
 
+.videos-player-modal {
+    position: fixed;
+    inset: 0;
+    z-index: calc(var(--z-modal) + 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(12px, 3vw, 28px);
+}
+
+.videos-player-modal[hidden] {
+    display: none !important;
+}
+
+.videos-player-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: rgba(4, 8, 4, 0.78);
+    cursor: pointer;
+}
+
+.videos-player-modal-panel {
+    position: relative;
+    z-index: 1;
+    width: min(960px, 100%);
+    max-height: min(92vh, 900px);
+    overflow: auto;
+    padding: clamp(14px, 2.5vw, 22px);
+    border-radius: 16px;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    background: linear-gradient(160deg, rgba(28, 34, 18, 0.98) 0%, rgba(10, 14, 8, 0.98) 100%);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+}
+
+.videos-player-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    font-size: 1.55rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.videos-player-modal-close:hover,
+.videos-player-modal-close:focus-visible {
+    border-color: rgba(212, 175, 55, 0.55);
+    background: rgba(212, 175, 55, 0.22);
+    outline: none;
+}
+
+body.videos-modal-open {
+    overflow: hidden;
+}
+
 .videos-player {
-    margin: 0 0 40px;
-    scroll-margin-top: 88px;
+    margin: 0;
+    scroll-margin-top: 0;
+}
+
+.videos-player-modal .videos-player-meta {
+    padding-right: 2.25rem;
 }
 
 .videos-page .video-embed {
@@ -10204,8 +10278,14 @@ html[data-theme="light"] .header-group-divider {
 }
 
 @media (max-width: 640px) {
-    .videos-player {
-        margin-bottom: 28px;
+    .videos-player-modal {
+        padding: 10px;
+        align-items: flex-end;
+    }
+
+    .videos-player-modal-panel {
+        max-height: 88vh;
+        border-radius: 14px 14px 10px 10px;
     }
 
     .videos-grid {
