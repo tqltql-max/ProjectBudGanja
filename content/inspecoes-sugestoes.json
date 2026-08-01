@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T18:50:17.291Z",
+  "updatedAt": "2026-08-01T19:09:09.352Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -1240,6 +1240,49 @@
         "/posts/post-inspecao-palavra-caminho.html"
       ],
       "notes": "Filme-ensaio; sem diálogo."
+    },
+    {
+      "id": "palavra-coelho",
+      "title": "Coelho — a palavra da toca e da entrada na investigação",
+      "titleEn": "Coelho — the word of the burrow and entry into inquiry",
+      "titleEs": "Coelho — la palabra de la madriguera y la entrada a la investigación",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: «coelho» — Coelho Branco, buraco do coelho; elos Alice, caminho, passar e Matrix.",
+      "whyEn": "Words: “coelho” — White Rabbit, rabbit hole; links Alice, caminho, passar and Matrix.",
+      "whyEs": "Palabras: «coelho» — Conejo Blanco, agujero; vínculos Alice, caminho, passar y Matrix.",
+      "suggestedSlug": "inspecao-palavra-coelho",
+      "doneHref": "/posts/post-inspecao-palavra-coelho.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-palavra-passar.html"
+      ],
+      "notes": "Metáfora literária ≠ protocolo; não entra no mapa duplo sentido."
+    },
+    {
+      "id": "derivado-coco",
+      "title": "Derivados do coco — açúcar, óleo e química industrial",
+      "titleEn": "Coconut derivatives — sugar, oil and industrial chemistry",
+      "titleEs": "Derivados del coco — azúcar, aceite y química industrial",
+      "tipo": "derivado",
+      "priority": 2,
+      "status": "feita",
+      "why": "Derivados de risco: coco inteiro / água fresca vs ultraprocessado adoçado e óleo refinado; mapa químico + elo planta.",
+      "whyEn": "Risk derivatives: whole coconut / fresh water vs sweetened ultra-processed and refined oil; chemical map + plant link.",
+      "whyEs": "Derivados de riesgo: coco entero / agua fresca vs ultraprocesado endulzado y aceite refinado; mapa químico + vínculo planta.",
+      "suggestedSlug": "inspecao-derivado-coco",
+      "doneHref": "/posts/post-inspecao-derivado-coco.html",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Coco",
+        "/posts/post-inspecao-planta-coco.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/posts/post-inspecao-derivado-abacate.html"
+      ],
+      "notes": "Palmeira ≠ vilã; foco em açúcar × óleo × aditivos × dose."
     }
   ]
 }

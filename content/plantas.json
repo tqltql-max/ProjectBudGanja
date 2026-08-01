@@ -828,6 +828,45 @@
           "labelEs": "Inspección: Derivados del aguacate — azúcar, aditivos y química industrial"
         }
       ]
+    },
+    {
+      "id": "coco",
+      "slug": "coco",
+      "nomePopular": "Coco",
+      "nomeCientifico": "Cocos nucifera L.",
+      "familia": "Arecaceae",
+      "summary": "Palmeira tropical (*Cocos nucifera*): o fruto (drupa) oferece água, polpa e óleo — a ficha separa o coco inteiro e a água fresca dos derivados industriais adoçados, refinados e ultraprocessados.",
+      "partsUsed": [
+        "Fruto (água endospérmica)",
+        "Polpa / amêndoa (fresca ou desidratada)",
+        "Óleo da polpa (culinário / cosmético tradicional)",
+        "Fibra da casca (coir — uso material, não alimentar)"
+      ],
+      "traditionalUses": [
+        "Água de coco fresca (hidratação e bebida tropical)",
+        "Polpa em culinária costeira e afro-brasileira",
+        "Óleo e leite de coco em cozinha tradicional",
+        "Uso material da casca e da madeira da palmeira"
+      ],
+      "cautions": "Água e polpa frescas são alimentos comuns. Derivados industriais com açúcar, xaropes e aditivos (água de coco adoçada, sobremesas, snacks) têm ficha própria em Derivados de risco. Óleo de coco é rico em gordura saturada — dose e contexto alimentar importam. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutifera",
+        "tropicais",
+        "culinaria",
+        "lipidos",
+        "etimo"
+      ],
+      "relatedUnifesp": false,
+      "cover": null,
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-coco.html",
+          "label": "Inspeção: Derivados do coco — açúcar, óleo e química industrial",
+          "labelEn": "Inspection: Coconut derivatives — sugar, oil and industrial chemistry",
+          "labelEs": "Inspección: Derivados del coco — azúcar, aceite y química industrial"
+        }
+      ]
     }
   ]
 }

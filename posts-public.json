@@ -342,6 +342,25 @@
     "seriesLabel": "Mars Hydro Brasil"
   },
   {
+    "title": "Inspeção: Derivados do coco — açúcar, óleo e química industrial",
+    "titleEn": "Inspection: Coconut derivatives — sugar, oil and industrial chemistry",
+    "titleEs": "Inspección: Derivados del coco — azúcar, aceite y química industrial",
+    "excerpt": "Derivados de risco: do fruto (*Cocos nucifera*) ao ultraprocessado — água adoçada, leite UHT, óleo refinado e doces; mapa de açúcares livres + lípidos + aditivos, cruzado com a ficha planta e com a cana.",
+    "excerptEn": "Risk derivatives: from whole coconut to ultra-processed sweetened water, UHT milk, refined oil and sweets — free sugars + lipids + additives, cross-linked to the plant sheet and sugarcane.",
+    "excerptEs": "Derivados de riesgo: del coco entero al ultraprocesado — agua endulzada, leche UHT, aceite refinado y dulces; azúcares libres + lípidos + aditivos, cruzado con la ficha planta y la caña.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-derivado-coco",
+    "url": "/posts/post-inspecao-derivado-coco.html",
+    "date": "2026-08-01T23:45:00.000Z",
+    "filename": "posts/post-inspecao-derivado-coco.html",
+    "coverImage": "/imagens/inspecoes/coco-derivado-cover.jpg",
+    "category": "inspecao",
+    "series": "plantas-derivados-risco",
+    "seriesOrder": 3,
+    "seriesLabel": "Coco · derivado"
+  },
+  {
     "title": "Inspeção: Caminho — a palavra que liga o laboratório BudGanja",
     "titleEn": "Inspection: Caminho — the word that links the BudGanja lab",
     "titleEs": "Inspección: Caminho — la palabra que une el laboratorio BudGanja",
@@ -969,6 +988,25 @@
     "seriesLabel": "Boldo"
   },
   {
+    "title": "Inspeção: Coelho — a palavra da toca e da entrada na investigação",
+    "titleEn": "Inspection: Coelho — the word of the burrow and entry into inquiry",
+    "titleEs": "Inspección: Coelho — la palabra de la madriguera y la entrada a la investigación",
+    "excerpt": "Palavras: «coelho» (latim *cuniculus*) — animal, Coelho Branco e buraco do coelho como metáfora de entrada; elos com Alice, caminho, passar e Matrix.",
+    "excerptEn": "Words: “coelho” (Latin *cuniculus*) — animal, White Rabbit and rabbit hole as entry metaphor; links to Alice, caminho, passar and Matrix.",
+    "excerptEs": "Palabras: «coelho» (latín *cuniculus*) — animal, Conejo Blanco y agujero del conejo como metáfora de entrada; vínculos con Alice, caminho, passar y Matrix.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-coelho",
+    "url": "/posts/post-inspecao-palavra-coelho.html",
+    "date": "2026-08-01T23:30:00.000Z",
+    "filename": "posts/post-inspecao-palavra-coelho.html",
+    "coverImage": "/imagens/inspecoes/coelho-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 11,
+    "seriesLabel": "Coelho · palavra"
+  },
+  {
     "title": "Inspeção: Planta — Melissa — citral e melissa officinalis",
     "titleEn": "Inspection: Plant — Lemon balm — citral and Melissa officinalis",
     "titleEs": "Inspección: Planta — Melisa — citral y Melissa officinalis",
@@ -1366,6 +1404,25 @@
     "series": "plantas-medicinais",
     "seriesOrder": 30,
     "seriesLabel": "Abacate"
+  },
+  {
+    "title": "Inspeção: Planta — Coco — água, polpa e óleo da drupa tropical",
+    "titleEn": "Inspection: Plant — Coconut — water, pulp and oil of the tropical drupe",
+    "titleEs": "Inspección: Planta — Coco — agua, pulpa y aceite de la drupa tropical",
+    "excerpt": "*Cocos nucifera* — água endospérmica, polpa e óleo; etimologia do «rosto» do coco; separar fruto inteiro de derivados industriais adoçados e refinados.",
+    "excerptEn": "*Cocos nucifera* — endosperm water, pulp and oil; etymology of the coconut “face”; separate whole fruit from sweetened/refined industrial derivatives.",
+    "excerptEs": "*Cocos nucifera* — agua endospérmica, pulpa y aceite; etimología del «rostro» del coco; separar fruto entero de derivados industriales.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-planta-coco",
+    "url": "/posts/post-inspecao-planta-coco.html",
+    "date": "2026-07-31T14:00:00.000Z",
+    "filename": "posts/post-inspecao-planta-coco.html",
+    "coverImage": "/imagens/og-default.jpg",
+    "category": "inspecao",
+    "series": "plantas-medicinais",
+    "seriesOrder": 31,
+    "seriesLabel": "Coco"
   },
   {
     "title": "Super Solo: Guia de Uso",

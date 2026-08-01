@@ -288,6 +288,14 @@
                   "description": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório."
                 },
                 {
+                  "label": "Inspeção: Derivados do coco — açúcar, óleo e química industrial",
+                  "tileLabel": "Inspeção: Derivados do coco — a…",
+                  "href": "/posts/post-inspecao-derivado-coco.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-coco",
+                  "description": "Derivados de risco: do fruto (*Cocos nucifera*) ao ultraprocessado — água adoçada, leite UHT, óleo refinado e doces; mapa de açúcares livres + lípidos + aditivos, cruzado com a ficha planta e com a cana."
+                },
+                {
                   "label": "Inspeção: Caminho — a palavra que liga o laboratório BudGanja",
                   "tileLabel": "Inspeção: Caminho — a palavra q…",
                   "href": "/posts/post-inspecao-palavra-caminho.html",
@@ -552,6 +560,14 @@
                   "description": "*Plectranthus barbatus* — «boldo» do Brasil (falso-boldo); distinguir do boldo-chileno *Peumus boldus*."
                 },
                 {
+                  "label": "Inspeção: Coelho — a palavra da toca e da entrada na investigação",
+                  "tileLabel": "Inspeção: Coelho — a palavra da…",
+                  "href": "/posts/post-inspecao-palavra-coelho.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-coelho",
+                  "description": "Palavras: «coelho» (latim *cuniculus*) — animal, Coelho Branco e buraco do coelho como metáfora de entrada; elos com Alice, caminho, passar e Matrix."
+                },
+                {
                   "label": "Inspeção: Planta — Melissa — citral e melissa officinalis",
                   "tileLabel": "Inspeção: Planta — Melissa — ci…",
                   "href": "/posts/post-inspecao-planta-melissa.html",
@@ -718,6 +734,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-abacate",
                   "description": "*Persea americana* — polpa rica em MUFA, persina defensiva e etimologia náuatle *āhuacatl*; separar planta inteira de derivados industriais."
+                },
+                {
+                  "label": "Inspeção: Planta — Coco — água, polpa e óleo da drupa tropical",
+                  "tileLabel": "Inspeção: Planta — Coco — água,…",
+                  "href": "/posts/post-inspecao-planta-coco.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-coco",
+                  "description": "*Cocos nucifera* — água endospérmica, polpa e óleo; etimologia do «rosto» do coco; separar fruto inteiro de derivados industriais adoçados e refinados."
                 }
               ]
             },

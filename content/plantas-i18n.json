@@ -743,6 +743,38 @@
       ],
       "cautionsEn": "Ripe pulp is common food. Leaves, peel and seed contain persin and may be toxic to animals (dogs, birds, etc.). Leaf extracts/teas: avoid self-medication. Industrial derivatives with sugar and additives have their own Risk derivatives sheet. Educational content — does not replace professional advice.",
       "cautionsEs": "La pulpa madura es alimento común. Hojas, cáscara y hueso contienen persina y pueden ser tóxicos para animales (perros, aves, etc.). Extractos y té de hoja: evitar automedicación. Los derivados industriales con azúcar y aditivos tienen ficha propia en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "coco": {
+      "nomePopularEn": "Coconut",
+      "nomePopularEs": "Coco",
+      "summaryEn": "Tropical palm (*Cocos nucifera*): the fruit (drupe) yields water, pulp and oil — this sheet separates whole coconut and fresh water from sweetened, refined and ultra-processed industrial derivatives.",
+      "summaryEs": "Palmera tropical (*Cocos nucifera*): el fruto (drupa) ofrece agua, pulpa y aceite — la ficha separa el coco entero y el agua fresca de los derivados industriales endulzados, refinados y ultraprocesados.",
+      "partsUsedEn": [
+        "Fruit (endosperm water)",
+        "Pulp / kernel (fresh or dried)",
+        "Pulp oil (culinary / traditional cosmetic)",
+        "Husk fiber (coir — material use, not food)"
+      ],
+      "partsUsedEs": [
+        "Fruto (agua endospérmica)",
+        "Pulpa / almendra (fresca o deshidratada)",
+        "Aceite de la pulpa (culinario / cosmético tradicional)",
+        "Fibra de la cáscara (coir — uso material, no alimentario)"
+      ],
+      "traditionalUsesEn": [
+        "Fresh coconut water (hydration and tropical drink)",
+        "Pulp in coastal and Afro-Brazilian cooking",
+        "Coconut oil and milk in traditional cuisine",
+        "Material use of husk and palm wood"
+      ],
+      "traditionalUsesEs": [
+        "Agua de coco fresca (hidratación y bebida tropical)",
+        "Pulpa en cocina costera y afrobrasileña",
+        "Aceite y leche de coco en cocina tradicional",
+        "Uso material de la cáscara y la madera de la palmera"
+      ],
+      "cautionsEn": "Fresh water and pulp are common foods. Industrial derivatives with sugar, syrups and additives (sweetened coconut water, desserts, snacks) have their own Risk derivatives sheet. Coconut oil is high in saturated fat — dose and dietary context matter. Educational content — does not replace professional advice.",
+      "cautionsEs": "El agua y la pulpa frescas son alimentos comunes. Los derivados industriales con azúcar, jarabes y aditivos (agua de coco endulzada, postres, snacks) tienen ficha propia en Derivados de riesgo. El aceite de coco es rico en grasa saturada — importan dosis y contexto. Contenido educativo — no sustituye orientación profesional."
     }
   }
 }
