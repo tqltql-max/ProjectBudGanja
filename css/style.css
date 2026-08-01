@@ -9646,14 +9646,6 @@ html[data-theme="light"] .header-group-divider {
     margin-bottom: 24px;
 }
 
-.videos-header-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 14px;
-    align-items: center;
-    margin: 0;
-}
-
 .videos-search-wrap {
     display: grid;
     gap: 8px;
@@ -10843,8 +10835,8 @@ body[data-page="comunidade"] {
 
 .comunidade-header-logo {
     display: block;
-    width: 100%;
-    max-width: 100%;
+    width: 50%;
+    max-width: 50%;
     height: auto;
     aspect-ratio: 1 / 1;
     margin: 0 auto 0.85rem;

@@ -95,9 +95,6 @@
   var gridEl = null;
   var filtersEl = null;
   var searchEl = null;
-  var channelLink = null;
-  var inspectionLink = null;
-
   function resolveChannel(raw) {
     var key = String(raw || '')
       .trim()
@@ -610,47 +607,6 @@
     }
   }
 
-  function updateChrome() {
-    if (activeChannel === 'all') {
-      if (channelLink) {
-        channelLink.href = '/biblioteca/inspecoes/';
-        channelLink.removeAttribute('target');
-        channelLink.removeAttribute('rel');
-        channelLink.hidden = false;
-        channelLink.textContent = i18n('pages.videos.viewInspections', 'Ver inspeções de canais');
-      }
-      if (inspectionLink) inspectionLink.hidden = true;
-      return;
-    }
-
-    var meta = findChannelMeta(activeChannel);
-    if (channelLink) {
-      if (meta && meta.channelUrl) {
-        channelLink.href = meta.channelUrl;
-        channelLink.target = '_blank';
-        channelLink.rel = 'noopener noreferrer';
-        channelLink.hidden = false;
-        channelLink.textContent =
-          '▶ ' +
-          i18n('pages.videos.subscribe', 'Inscrever-se no') +
-          ' ' +
-          (meta.label || channelLabel(activeChannel));
-      } else {
-        channelLink.hidden = true;
-      }
-    }
-    if (inspectionLink) {
-      if (meta && meta.inspectionUrl) {
-        inspectionLink.href = meta.inspectionUrl;
-        inspectionLink.hidden = false;
-        inspectionLink.textContent =
-          i18n('pages.videos.viewInspection', 'Ver inspeção') + ' · ' + (meta.label || '');
-      } else {
-        inspectionLink.hidden = true;
-      }
-    }
-  }
-
   function stopInlinePlayer(opts) {
     opts = opts || {};
     playingId = '';
@@ -1087,7 +1043,6 @@
     }
 
     renderFilters();
-    updateChrome();
     lastFiltered = filtered;
 
     if (!filtered.length) {
@@ -1199,8 +1154,6 @@
     gridEl = grid;
     filtersEl = document.getElementById('videos-filters');
     searchEl = document.getElementById('videos-search') || searchEl;
-    channelLink = document.getElementById('videos-channel-link');
-    inspectionLink = document.getElementById('videos-inspection-link');
 
     var fromUrl = readFilterFromUrl();
     activeChannel = fromUrl.channel || 'all';
@@ -1235,8 +1188,6 @@
     var grid = document.getElementById('videos-list');
     filtersEl = document.getElementById('videos-filters');
     searchEl = document.getElementById('videos-search');
-    channelLink = document.getElementById('videos-channel-link');
-    inspectionLink = document.getElementById('videos-inspection-link');
     if (!grid) return;
 
     gridEl = grid;
