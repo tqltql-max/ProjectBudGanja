@@ -90,10 +90,8 @@
   var activeTopic = '';
   var activeQuery = '';
   var searchTimer = null;
-  var playerEl = null;
-  var playerModalEl = null;
-  var playerModalOpen = false;
-  var playerLastFocus = null;
+  var playingId = '';
+  var lastFiltered = [];
   var gridEl = null;
   var filtersEl = null;
   var searchEl = null;
@@ -653,88 +651,62 @@
     }
   }
 
-  function syncModalCloseLabels() {
-    if (!playerModalEl) return;
-    var label = i18n('pages.videos.closePlayer', 'Fechar vídeo');
-    var nodes = playerModalEl.querySelectorAll('[data-videos-modal-close]');
-    for (var i = 0; i < nodes.length; i++) {
-      nodes[i].setAttribute('aria-label', label);
-    }
-  }
-
-  function closePlayerModal(opts) {
+  function stopInlinePlayer(opts) {
     opts = opts || {};
-    if (!playerModalEl) return;
-    playerModalOpen = false;
-    playerModalEl.hidden = true;
-    if (playerEl) playerEl.innerHTML = '';
-    document.body.classList.remove('videos-modal-open');
-    document.body.style.overflow = '';
+    playingId = '';
     if (opts.clearHash !== false) {
       writeFilterToUrl(activeChannel, activeSeries, '', opts.replaceUrl !== false);
     }
-    syncActiveCards();
-    if (playerLastFocus && typeof playerLastFocus.focus === 'function') {
-      try {
-        playerLastFocus.focus();
-      } catch (e) { /* ignore */ }
+    if (lastFiltered && lastFiltered.length) {
+      renderGrid(lastFiltered);
+      bindPlayingCardActions();
     }
-    playerLastFocus = null;
+    syncActiveCards();
   }
 
-  function openPlayerModal(video, autoplay) {
-    if (!playerEl || !playerModalEl || !video || !isValidVideoId(video.id)) return;
-    playerLastFocus = document.activeElement;
-    fillPlayer(video, !!autoplay);
-    playerModalOpen = true;
-    syncModalCloseLabels();
-    playerModalEl.hidden = false;
-    document.body.classList.add('videos-modal-open');
-    document.body.style.overflow = 'hidden';
-    writeFilterToUrl(activeChannel, activeSeries, video.id, false);
-    syncActiveCards();
-    var closeBtn = playerModalEl.querySelector('.videos-player-modal-close');
-    if (closeBtn && typeof closeBtn.focus === 'function') {
-      window.setTimeout(function () {
-        try {
-          closeBtn.focus();
-        } catch (e) { /* ignore */ }
-      }, 0);
-    }
-  }
-
-  function fillPlayer(video, autoplay) {
-    if (!playerEl || !video || !isValidVideoId(video.id)) return;
-    selectedId = video.id;
+  function bindPlayingCardActions() {
+    if (!gridEl || !playingId || !cachedHub) return;
+    var card = gridEl.querySelector('.video-card.is-playing[data-video-id="' + playingId + '"]');
+    if (!card) return;
+    var video = findVideo(cachedHub.videos || [], playingId);
+    if (!video) return;
     var title = localizedField(video, 'title');
-    var summary = localizedField(video, 'summary');
-    var chLabel = channelLabel(video.channel);
-    var watchUrl = video.url && String(video.url).indexOf('http') === 0
-      ? String(video.url)
-      : youtubeWatchUrl(video.id);
+    bindContinueYouTubeButton(card);
+    bindCopyVideoLinkButton(card);
+    bindShareVideoButton(card, title);
+    bindWhatsAppVideoButton(card);
+    var stopBtn = card.querySelector('[data-stop-video]');
+    if (stopBtn && stopBtn.dataset.bound !== '1') {
+      stopBtn.dataset.bound = '1';
+      stopBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        stopInlinePlayer({ clearHash: true, replaceUrl: true });
+      });
+    }
+    if (card.scrollIntoView) {
+      window.setTimeout(function () {
+        card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 40);
+    }
+  }
 
-    playerEl.innerHTML =
-      renderEmbed(video.id, title, !!autoplay) +
-      '<div class="videos-player-meta">' +
-      '<p class="videos-player-channel">' +
-      escapeHtml(chLabel) +
-      '</p>' +
-      '<h2 id="videos-player-heading" class="videos-player-title">' +
-      escapeHtml(title) +
-      '</h2>' +
-      (summary ? '<p class="videos-player-summary">' + escapeHtml(summary) + '</p>' : '') +
-      '<div class="videos-player-actions">' +
-      '<button type="button" class="botao botao-sm videos-play-btn" data-play-video="' +
-      escapeHtml(video.id) +
-      '"' +
-      (autoplay ? ' hidden' : '') +
-      '>' +
-      escapeHtml(i18n('pages.videos.watchHere', 'Assistir')) +
+  function renderPlayingActions(video) {
+    var watchUrl =
+      video.url && String(video.url).indexOf('http') === 0
+        ? String(video.url)
+        : youtubeWatchUrl(video.id);
+    return (
+      '<div class="video-card-actions">' +
+      '<button type="button" class="botao botao-outline botao-sm" data-stop-video aria-label="' +
+      escapeHtml(i18n('pages.videos.closePlayer', 'Fechar vídeo')) +
+      '">' +
+      escapeHtml(i18n('pages.videos.closePlayer', 'Fechar vídeo')) +
       '</button>' +
       '<button type="button" class="botao botao-outline botao-sm videos-copy-link" data-copy-video-link="' +
       escapeHtml(video.id) +
       '"><span data-copy-label>' +
-      escapeHtml(i18n('pages.videos.copyLink', 'Copiar link')) +
+      escapeHtml(i18n('pages.videos.copyLink', 'Copiar link do site')) +
       '</span></button>' +
       '<button type="button" class="botao botao-outline botao-sm videos-share-btn" data-share-video="' +
       escapeHtml(video.id) +
@@ -745,8 +717,6 @@
       '</span></button>' +
       '<button type="button" class="botao botao-outline botao-sm videos-share-wa" data-share-video-wa="' +
       escapeHtml(video.id) +
-      '" aria-label="' +
-      escapeHtml(i18n('pages.videos.shareWhatsAppAria', 'Enviar no WhatsApp para assistir no chat')) +
       '">' +
       escapeHtml(i18n('pages.videos.shareWhatsApp', 'WhatsApp')) +
       '</button>' +
@@ -757,48 +727,8 @@
       '" target="_blank" rel="noopener noreferrer">' +
       escapeHtml(i18n('pages.videos.continueOnYoutube', 'Continuar no YouTube')) +
       '</a>' +
-      '<p class="videos-continue-yt-hint">' +
-      escapeHtml(
-        i18n(
-          'pages.videos.continueOnYoutubeHint',
-          'Para ouvir com o ecrã desligado, abra na app YouTube.'
-        )
-      ) +
-      '</p>' +
-      (video.published
-        ? '<p class="videos-player-meta-line"><time datetime="' +
-          escapeHtml(video.published) +
-          '">' +
-          escapeHtml(formatDate(video.published)) +
-          '</time></p>'
-        : '') +
-      '</div>' +
-      '</div>';
-
-    bindContinueYouTubeButton(playerEl);
-    bindCopyVideoLinkButton(playerEl);
-    bindPlayVideoButton(playerEl);
-    bindShareVideoButton(playerEl, title);
-    bindWhatsAppVideoButton(playerEl, title);
-    if (window.BudGanjaYoutubeFacade && typeof window.BudGanjaYoutubeFacade.enhance === 'function') {
-      window.BudGanjaYoutubeFacade.enhance(playerEl);
-    }
-    var facadeBtn = playerEl.querySelector('.yt-facade');
-    if (facadeBtn && autoplay && window.BudGanjaYoutubeFacade && typeof window.BudGanjaYoutubeFacade.load === 'function') {
-      window.BudGanjaYoutubeFacade.load(facadeBtn, true);
-    }
-    var overlayPlay = playerEl.querySelector('.yt-facade .video-card-play');
-    if (overlayPlay) overlayPlay.hidden = true;
-    if (facadeBtn && !autoplay) {
-      facadeBtn.addEventListener(
-        'click',
-        function () {
-          var playBtn = playerEl.querySelector('[data-play-video]');
-          if (playBtn) playBtn.hidden = true;
-        },
-        { once: true }
-      );
-    }
+      '</div>'
+    );
   }
 
   function seriesChipsForChannel(channel) {
@@ -848,9 +778,26 @@
     if (!filtersEl || !cachedHub) return;
     var channels = [{ id: 'all', label: i18n('pages.videos.filterAll', 'Todos'), count: (cachedHub.videos || []).length }]
       .concat(orderedChannels());
+    // Com canal selecionado, só "Todos" + o ativo — as outras categorias ficam ocultas.
+    if (activeChannel && activeChannel !== 'all') {
+      channels = channels.filter(function (ch) {
+        return ch.id === 'all' || ch.id === activeChannel;
+      });
+    }
 
     var seriesOpts = seriesChipsForChannel(activeChannel);
+    if (activeSeries) {
+      seriesOpts = seriesOpts.filter(function (opt) {
+        return opt.id === activeSeries;
+      });
+    }
+
     var topicOpts = topicChipsWithCounts();
+    if (activeTopic) {
+      topicOpts = topicOpts.filter(function (opt) {
+        return opt.id === activeTopic;
+      });
+    }
 
     filtersEl.innerHTML =
       '<div class="videos-filters" role="toolbar" aria-label="' +
@@ -874,7 +821,7 @@
         })
         .join('') +
       '</div>' +
-      (seriesOpts.length
+      (seriesOpts.length || activeSeries
         ? '<div class="videos-series-filters" role="toolbar" aria-label="' +
           escapeHtml(i18n('pages.videos.seriesLabel', 'Filtrar por série')) +
           '">' +
@@ -903,7 +850,7 @@
             .join('') +
           '</div>'
         : '') +
-      (topicOpts.length
+      (topicOpts.length || activeTopic
         ? '<div class="videos-topic-filters" role="toolbar" aria-label="' +
           escapeHtml(i18n('pages.videos.topicsLabel', 'Filtrar por tema')) +
           '">' +
@@ -940,7 +887,32 @@
     var title = localizedField(v, 'title');
     var summary = localizedField(v, 'summary');
     var thumb = videoThumb(v);
-    var active = v.id === selectedId;
+    var playing = v.id === playingId;
+    var active = playing || v.id === selectedId;
+    if (playing) {
+      return (
+        '<article class="video-card card is-playing is-active" data-video-id="' +
+        escapeHtml(v.id) +
+        '" data-channel="' +
+        escapeHtml(v.channel || '') +
+        '">' +
+        renderEmbed(v.id, title, true) +
+        '<div class="video-card-body">' +
+        '<p class="videos-player-channel">' +
+        escapeHtml(channelLabel(v.channel)) +
+        '</p>' +
+        '<h2 class="video-card-title videos-player-title">' +
+        escapeHtml(title) +
+        '</h2>' +
+        (summary ? '<p class="video-card-summary">' + escapeHtml(summary) + '</p>' : '') +
+        '<span class="video-card-date">' +
+        escapeHtml(formatDate(v.published)) +
+        '</span>' +
+        '</div>' +
+        renderPlayingActions(v) +
+        '</article>'
+      );
+    }
     return (
       '<article class="video-card card' +
       (active ? ' is-active' : '') +
@@ -1084,8 +1056,6 @@
   function applyView(opts) {
     opts = opts || {};
     if (!cachedHub || !gridEl) return;
-    playerEl = document.getElementById('videos-player') || playerEl;
-    playerModalEl = document.getElementById('videos-player-modal') || playerModalEl;
 
     var all = cachedHub.videos || [];
     var requested = opts.requestedId || readRequestedId();
@@ -1118,51 +1088,48 @@
 
     renderFilters();
     updateChrome();
+    lastFiltered = filtered;
 
     if (!filtered.length) {
       selectedId = '';
-      closePlayerModal({ clearHash: true, replaceUrl: opts.replaceUrl !== false });
+      playingId = '';
       renderGrid([]);
+      writeFilterToUrl(activeChannel, activeSeries, '', opts.replaceUrl !== false);
       return;
+    }
+
+    if (opts.openPlayer || opts.autoplay) {
+      var openTarget = requested
+        ? findVideo(filtered, requested) || findVideo(all, requested)
+        : null;
+      if (openTarget) {
+        playingId = openTarget.id;
+        selectedId = openTarget.id;
+      }
+    } else if (playingId && !findVideo(filtered, playingId)) {
+      playingId = '';
+    }
+
+    if (selectedId && !findVideo(filtered, selectedId) && selectedId !== playingId) {
+      selectedId = '';
     }
 
     renderGrid(filtered);
     injectVideoJsonLd(filtered);
-
-    var openTarget =
-      (opts.openPlayer || opts.autoplay) && requested
-        ? findVideo(filtered, requested) || findVideo(all, requested)
-        : null;
-
-    if (openTarget) {
-      openPlayerModal(openTarget, opts.autoplay !== false);
-      return;
-    }
-
-    if (playerModalOpen && selectedId) {
-      var stillThere = findVideo(filtered, selectedId);
-      if (!stillThere) {
-        closePlayerModal({ clearHash: true, replaceUrl: opts.replaceUrl !== false });
-      } else {
-        writeFilterToUrl(activeChannel, activeSeries, selectedId, opts.replaceUrl !== false);
-        syncActiveCards();
-      }
-      return;
-    }
-
-    if (selectedId && !findVideo(filtered, selectedId)) {
-      selectedId = '';
-    }
+    bindPlayingCardActions();
     syncActiveCards();
-    writeFilterToUrl(activeChannel, activeSeries, '', opts.replaceUrl !== false);
+    writeFilterToUrl(
+      activeChannel,
+      activeSeries,
+      playingId || '',
+      opts.replaceUrl !== false
+    );
   }
 
-  function selectById(id, autoplay) {
+  function selectById(id) {
     if (!cachedHub) return;
-    playerEl = document.getElementById('videos-player') || playerEl;
-    playerModalEl = document.getElementById('videos-player-modal') || playerModalEl;
     gridEl = document.getElementById('videos-list') || gridEl;
-    if (!playerEl || !playerModalEl) return;
+    if (!gridEl) return;
 
     var all = cachedHub.videos || [];
     var video =
@@ -1173,16 +1140,14 @@
     if (video.channel && video.channel !== activeChannel && activeChannel !== 'all') {
       activeChannel = video.channel;
       activeSeries = '';
-      applyView({
-        requestedId: id,
-        autoplay: autoplay !== false,
-        openPlayer: true,
-        replaceUrl: false
-      });
-      return;
     }
 
-    openPlayerModal(video, autoplay !== false);
+    applyView({
+      requestedId: id,
+      openPlayer: true,
+      autoplay: true,
+      replaceUrl: false
+    });
   }
 
   function setChannel(channel, series) {
@@ -1221,15 +1186,16 @@
     }
     applyView({
       replaceUrl: opts.replaceUrl !== false,
-      autoplay: false,
-      requestedId: opts.keepSelection ? selectedId || readRequestedId() : undefined
+      requestedId: opts.keepSelection
+        ? playingId || selectedId || readRequestedId()
+        : undefined,
+      openPlayer: !!(opts.keepSelection && playingId),
+      autoplay: !!(opts.keepSelection && playingId)
     });
   }
 
-  function renderHub(player, grid, hub) {
+  function renderHub(grid, hub) {
     cachedHub = hub;
-    playerEl = player || document.getElementById('videos-player');
-    playerModalEl = document.getElementById('videos-player-modal') || playerModalEl;
     gridEl = grid;
     filtersEl = document.getElementById('videos-filters');
     searchEl = document.getElementById('videos-search') || searchEl;
@@ -1244,7 +1210,8 @@
     if (searchEl) searchEl.value = activeQuery;
 
     if (!(hub && hub.videos && hub.videos.length)) {
-      closePlayerModal({ clearHash: true, replaceUrl: true });
+      playingId = '';
+      selectedId = '';
       if (filtersEl) filtersEl.innerHTML = '';
       grid.innerHTML =
         '<div class="empty-state">' +
@@ -1265,20 +1232,17 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    var player = document.getElementById('videos-player');
-    var modal = document.getElementById('videos-player-modal');
     var grid = document.getElementById('videos-list');
     filtersEl = document.getElementById('videos-filters');
     searchEl = document.getElementById('videos-search');
     channelLink = document.getElementById('videos-channel-link');
     inspectionLink = document.getElementById('videos-inspection-link');
-    if (!player || !modal || !grid) return;
+    if (!grid) return;
 
-    playerEl = player;
-    playerModalEl = modal;
     gridEl = grid;
 
     grid.addEventListener('click', function (e) {
+      if (e.target.closest('.video-card-actions, .video-embed, a, [data-stop-video]')) return;
       var btn = e.target.closest('.video-card-link');
       if (!btn || !grid.contains(btn)) return;
       e.preventDefault();
@@ -1286,19 +1250,13 @@
       if (!card) return;
       var id = card.getAttribute('data-video-id');
       if (!id) return;
-      selectById(id, true);
-    });
-
-    modal.addEventListener('click', function (e) {
-      var closeBtn = e.target.closest('[data-videos-modal-close]');
-      if (!closeBtn || !modal.contains(closeBtn)) return;
-      closePlayerModal({ clearHash: true, replaceUrl: true });
+      selectById(id);
     });
 
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && playerModalOpen) {
+      if (e.key === 'Escape' && playingId) {
         e.preventDefault();
-        closePlayerModal({ clearHash: true, replaceUrl: true });
+        stopInlinePlayer({ clearHash: true, replaceUrl: true });
       }
     });
 
@@ -1307,11 +1265,18 @@
         var chip = e.target.closest('[data-channel], [data-series], [data-topic]');
         if (!chip || !filtersEl.contains(chip)) return;
         if (chip.hasAttribute('data-channel')) {
-          setChannel(chip.getAttribute('data-channel'), '');
+          var nextCh = chip.getAttribute('data-channel') || 'all';
+          // Clicar de novo no canal ativo limpa o filtro e volta a mostrar todos.
+          if (nextCh !== 'all' && nextCh === activeChannel) setChannel('all', '');
+          else setChannel(nextCh, '');
         } else if (chip.hasAttribute('data-series')) {
-          setChannel(activeChannel, chip.getAttribute('data-series') || '');
+          var nextSeries = chip.getAttribute('data-series') || '';
+          if (nextSeries && nextSeries === activeSeries) setChannel(activeChannel, '');
+          else setChannel(activeChannel, nextSeries);
         } else if (chip.hasAttribute('data-topic')) {
-          setTopic(chip.getAttribute('data-topic') || '');
+          var nextTopic = chip.getAttribute('data-topic') || '';
+          if (nextTopic && nextTopic === activeTopic) setTopic('');
+          else setTopic(nextTopic);
         }
       });
     }
@@ -1327,6 +1292,10 @@
       });
       searchEl.addEventListener('keydown', function (e) {
         if (e.key === 'Escape') {
+          if (playingId) {
+            stopInlinePlayer({ clearHash: true, replaceUrl: true });
+            return;
+          }
           searchEl.value = '';
           if (searchTimer) window.clearTimeout(searchTimer);
           searchTimer = null;
@@ -1359,8 +1328,8 @@
         });
         return;
       }
-      if (id && (!playerModalOpen || id !== selectedId)) selectById(id, true);
-      if (!id && playerModalOpen) closePlayerModal({ clearHash: false, replaceUrl: true });
+      if (id && id !== playingId) selectById(id);
+      if (!id && playingId) stopInlinePlayer({ clearHash: false, replaceUrl: true });
     }
 
     window.addEventListener('hashchange', onNavChange);
@@ -1421,30 +1390,25 @@
             });
         })
         .then(function (hub) {
-          playerEl = document.getElementById('videos-player') || player;
-          playerModalEl = document.getElementById('videos-player-modal') || modal;
           gridEl = document.getElementById('videos-list') || grid;
           filtersEl = document.getElementById('videos-filters') || filtersEl;
-          renderHub(playerEl, gridEl, hub);
+          renderHub(gridEl, hub);
         })
         .catch(function () {
-          renderHub(player, grid, null);
+          renderHub(grid, null);
         });
     }
 
     load();
     window.addEventListener('budganja:locale-change', function () {
-      playerEl = document.getElementById('videos-player') || playerEl;
-      playerModalEl = document.getElementById('videos-player-modal') || playerModalEl;
       gridEl = document.getElementById('videos-list') || gridEl;
       filtersEl = document.getElementById('videos-filters') || filtersEl;
       if (cachedHub && gridEl) {
-        var keepOpen = playerModalOpen && selectedId;
         applyView({
           replaceUrl: true,
-          requestedId: keepOpen ? selectedId : '',
-          openPlayer: keepOpen,
-          autoplay: keepOpen
+          requestedId: playingId || '',
+          openPlayer: !!playingId,
+          autoplay: !!playingId
         });
       } else load();
     });
