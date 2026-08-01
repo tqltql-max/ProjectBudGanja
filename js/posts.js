@@ -383,6 +383,8 @@ var inspecoesSearchTimer = null;
 var INSPECOES_PAGE_SIZE = 12;
 var inspecoesVisibleCount = 0;
 var inspecoesLastFiltered = [];
+var inspecoesLoadingMore = false;
+var inspecoesScrollObserver = null;
 
 function sortCanaisPosts(posts) {
   return posts.slice().sort(function (a, b) {
@@ -556,8 +558,39 @@ function syncInspecoesLoadMore(posts) {
   var list = posts || inspecoesLastFiltered || [];
   var hasMore = hasMoreInspecoes(list);
   btn.hidden = !hasMore;
-  btn.disabled = false;
+  btn.disabled = inspecoesLoadingMore;
   btn.textContent = postsT('pages.inspections.loadMore', 'Carregar mais');
+  if (hasMore) ensureInspecoesScrollObserver();
+}
+
+function inspecoesLoadMoreNearViewport() {
+  var btn = document.getElementById('inspecoes-load-more');
+  if (!btn || btn.hidden) return false;
+  var rect = btn.getBoundingClientRect();
+  var margin = 240;
+  return rect.top < window.innerHeight + margin && rect.bottom > -margin;
+}
+
+function maybeAutoLoadMoreInspecoes() {
+  if (inspecoesLoadingMore) return;
+  if (!hasMoreInspecoes(inspecoesLastFiltered)) return;
+  if (!inspecoesLoadMoreNearViewport()) return;
+  loadMoreInspecoes();
+}
+
+function ensureInspecoesScrollObserver() {
+  var btn = document.getElementById('inspecoes-load-more');
+  if (!btn || !('IntersectionObserver' in window)) return;
+  if (inspecoesScrollObserver) return;
+  inspecoesScrollObserver = new IntersectionObserver(
+    function (entries) {
+      var entry = entries && entries[0];
+      if (!entry || !entry.isIntersecting) return;
+      maybeAutoLoadMoreInspecoes();
+    },
+    { root: null, rootMargin: '240px 0px', threshold: 0 }
+  );
+  inspecoesScrollObserver.observe(btn);
 }
 
 function renderInspecoesGroupedList(container, posts, take) {
@@ -680,15 +713,23 @@ function applyInspecoesHubView(opts) {
 }
 
 function loadMoreInspecoes() {
+  if (inspecoesLoadingMore) return;
   if (!inspecoesLastFiltered.length) return;
   if (!hasMoreInspecoes(inspecoesLastFiltered)) {
     syncInspecoesLoadMore(inspecoesLastFiltered);
     return;
   }
+  inspecoesLoadingMore = true;
   var btn = document.getElementById('inspecoes-load-more');
   if (btn) btn.disabled = true;
   inspecoesVisibleCount += INSPECOES_PAGE_SIZE;
   applyInspecoesHubView({ resetPage: false });
+  inspecoesLoadingMore = false;
+  syncInspecoesLoadMore(inspecoesLastFiltered);
+  // Se o sentinela continuar na zona de scroll, carrega a página seguinte.
+  if (hasMoreInspecoes(inspecoesLastFiltered) && inspecoesLoadMoreNearViewport()) {
+    setTimeout(maybeAutoLoadMoreInspecoes, 80);
+  }
 }
 
 function bindInspecoesHubFilters() {
@@ -729,6 +770,7 @@ function bindInspecoesHubFilters() {
     loadMoreBtn.addEventListener('click', function () {
       loadMoreInspecoes();
     });
+    ensureInspecoesScrollObserver();
   }
 
   window.addEventListener('hashchange', function () {
