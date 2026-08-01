@@ -161,14 +161,24 @@
     "curcuma": {
       "nomePopularEn": "Turmeric",
       "nomePopularEs": "Cúrcuma",
-      "summaryEn": "A yellow rhizome, also known as Indian saffron, used in Brazilian cooking and teas.",
-      "summaryEs": "Un rizoma amarillo, también conocido como azafrán de la India, utilizado en la cocina brasileña y en infusiones.",
+      "summaryEn": "Yellow rhizome known in Brazil as açafrão-da-terra (Indian saffron) — cooking, teas and popular tradition linked to digestive comfort and anti-inflammatory use (educational context).",
+      "summaryEs": "Rizoma amarillo conocido en Brasil como açafrão-da-terra (azafrán de la India) — cocina, infusiones y tradición popular ligada a confort digestivo y uso antiinflamatorio (contexto educativo).",
       "partsUsedEn": ["Rhizome"],
       "partsUsedEs": ["Rizoma"],
-      "traditionalUsesEn": ["Cooking", "Traditional teas and golden milk"],
-      "traditionalUsesEs": ["Cocina", "Infusiones tradicionales y leche dorada"],
-      "cautionsEn": "Educational content. It does not replace guidance from a health professional. Avoid self-medication.",
-      "cautionsEs": "Contenido educativo. No sustituye la orientación de un profesional de la salud. Evite la automedicación."
+      "traditionalUsesEn": [
+        "Cooking (spice and natural colorant)",
+        "Teas and golden milk",
+        "Popular digestive and traditional anti-inflammatory use",
+        "Traditional topical preparations in some cultures"
+      ],
+      "traditionalUsesEs": [
+        "Cocina (azafrán de la tierra / condimento y colorante)",
+        "Infusiones y leche dorada (golden milk)",
+        "Uso popular digestivo y antiinflamatorio tradicional",
+        "Preparaciones tópicas tradicionales en algunas culturas"
+      ],
+      "cautionsEn": "Educational content — does not replace professional advice. Everyday culinary use differs from concentrated curcumin supplements. May interact with anticoagulants and irritate the stomach at high doses; caution with gallstones and in pregnancy. Do not confuse with true saffron (Crocus sativus).",
+      "cautionsEs": "Contenido educativo — no sustituye orientación profesional. El uso culinario habitual difiere de suplementos concentrados (curcumina). Puede interactuar con anticoagulantes e irritar el estómago a dosis altas; precaución con cálculos biliares y en el embarazo. No confundir con el azafrán verdadero (Crocus sativus)."
     },
     "unha-de-gato": {
       "nomePopularEn": "Cat’s claw",

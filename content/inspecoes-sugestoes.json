@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T13:32:19.561Z",
+  "updatedAt": "2026-08-01T14:21:16.836Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -495,6 +495,47 @@
         "/posts/post-inspecao-figura-chorao.html"
       ],
       "notes": "Obra ≠ biografia Chorão; par da abertura Rusted Root."
+    },
+    {
+      "id": "arte-the-matrix",
+      "title": "The Matrix — cinema, simulação e verificação",
+      "titleEn": "The Matrix — cinema, simulation and verification",
+      "titleEs": "The Matrix — cine, simulación y verificación",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Artes · cinema: The Matrix (1999) — obra; biografia do actor em Keanu Reeves (Pessoas).",
+      "whyEn": "Arts · film: The Matrix (1999) — work; actor biography in Keanu Reeves (People).",
+      "whyEs": "Artes · cine: The Matrix (1999) — obra; biografía del actor en Keanu Reeves (Personas).",
+      "suggestedSlug": "inspecao-filme-the-matrix",
+      "doneHref": "/posts/post-inspecao-filme-the-matrix.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Matrix_(filme)",
+        "https://www.youtube.com/watch?v=vKQi3bBA1y8",
+        "/posts/post-inspecao-figura-keanu-reeves.html"
+      ],
+      "notes": "Obra ≠ biografia Keanu; metáfora da pílula é simbólica."
+    },
+    {
+      "id": "figura-keanu-reeves",
+      "title": "Keanu Reeves — presença, treino e elo com The Matrix",
+      "titleEn": "Keanu Reeves — presence, training and link to The Matrix",
+      "titleEs": "Keanu Reeves — presencia, entrenamiento y vínculo con The Matrix",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas × Artes: método actoral de Keanu Reeves com elo principal em The Matrix.",
+      "whyEn": "People × Arts: Keanu Reeves acting craft with primary link to The Matrix.",
+      "whyEs": "Personas × Artes: oficio actoral de Keanu Reeves con vínculo principal en The Matrix.",
+      "suggestedSlug": "inspecao-figura-keanu-reeves",
+      "doneHref": "/posts/post-inspecao-figura-keanu-reeves.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Keanu_Reeves",
+        "/posts/post-inspecao-filme-the-matrix.html"
+      ],
+      "notes": "Pessoas ≠ Legado; filme fica em Artes."
     }
   ]
 }

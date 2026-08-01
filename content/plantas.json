@@ -305,14 +305,18 @@
         "Rizoma"
       ],
       "traditionalUses": [
-        "Culinária",
-        "Chás e leites dourados tradicionais"
+        "Culinária (açafrão-da-terra / tempero e corante)",
+        "Chás e leite dourado (golden milk)",
+        "Uso popular digestivo e anti-inflamatório tradicional",
+        "Preparações tópicas tradicionais em algumas culturas"
       ],
-      "cautions": "Conteúdo educacional. Não substitui orientação de profissional de saúde. Evite automedicação.",
+      "cautions": "Conteúdo educacional — não substitui orientação profissional. Uso culinário habitual difere de suplementos concentrados (curcumina). Pode interagir com anticoagulantes e irritar o estômago em doses altas; cautela em cálculos biliares e na gravidez. Não confundir com açafrão verdadeiro (Crocus sativus).",
       "tags": [
         "culinaria",
         "rizoma",
-        "cha"
+        "cha",
+        "antiinflamatorio",
+        "digestivo"
       ],
       "relatedUnifesp": false,
       "cover": null,
@@ -321,7 +325,7 @@
       "nomePopular": "Cúrcuma",
       "nomeCientifico": "Curcuma longa",
       "familia": "Zingiberaceae",
-      "summary": "Rizoma amarelo (açafrão-da-terra) na culinária e chás brasileiros."
+      "summary": "Rizoma amarelo conhecido no Brasil como açafrão-da-terra — culinária, chás e tradição popular associada a conforto digestivo e efeitos anti-inflamatórios (contexto educacional)."
     },
     {
       "partsUsed": [

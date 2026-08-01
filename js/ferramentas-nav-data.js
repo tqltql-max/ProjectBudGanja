@@ -267,6 +267,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório."
             },
             {
+              "label": "Inspeção: The Matrix — cinema, simulação e o método de verificar",
+              "tileLabel": "Inspeção: The Matrix — cinema, …",
+              "href": "/posts/post-inspecao-filme-the-matrix.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-the-matrix",
+              "description": "Artes · cinema: The Matrix (1999, Wachowski) — obra sobre realidade simulada e escolha de ver; distinta da biografia em Keanu Reeves (Pessoas)."
+            },
+            {
               "label": "Inspeção: Chorão — letra urbana, Charlie Brown Jr. e a série Palavras",
               "tileLabel": "Inspeção: Chorão — letra urbana…",
               "href": "/posts/post-inspecao-figura-chorao.html",
@@ -297,6 +305,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-canal-canabinall",
               "description": "Auditoria do canal CANABinALL (@canabinall) — 139 vídeos catalogados; divulgação científica UNIFESP sob curadoria da Profa. Dra. Eliana Rodrigues (CEE), com destaque a Conceitos básicos #1 e à série Plantas Sagradas."
+            },
+            {
+              "label": "Inspeção: Keanu Reeves — presença, treino e elo com The Matrix",
+              "tileLabel": "Inspeção: Keanu Reeves — presen…",
+              "href": "/posts/post-inspecao-figura-keanu-reeves.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-keanu-reeves",
+              "description": "Pessoas × Artes: Keanu Reeves — método actoral e presença física, com elo principal no filme The Matrix (1999); distinto do Legado canábico."
             },
             {
               "label": "Inspeção: Profa. Solange Nappo — CEBRID",
