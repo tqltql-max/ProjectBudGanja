@@ -6977,7 +6977,7 @@ body[data-page="home"] .home-card .botao-home {
     padding: 7px 10px;
     font-size: 0.78rem;
     border-radius: 8px;
-    /* Cor do card (= menu hambúrguer), não o dourado genérico da home */
+    /* Cor do card (= menu hamb?rguer), n?o o dourado gen?rico da home */
     border-color: var(--card-accent-border, rgba(212, 175, 55, 0.42));
     color: var(--card-label, #f5e6b8);
     background: linear-gradient(145deg, var(--card-accent-strong, rgba(212, 175, 55, 0.28)), var(--card-accent-soft, rgba(212, 175, 55, 0.14)));
@@ -10781,7 +10781,8 @@ body[data-page="comunidade"] {
 
 .comunidade-header-logo {
     display: block;
-    width: min(160px, 42vw);
+    width: 100%;
+    max-width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
     margin: 0 auto 0.85rem;
@@ -11040,22 +11041,16 @@ body[data-page="comunidade"] {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 125px;
-    height: 125px;
+    width: 64px;
+    height: 64px;
     margin-bottom: 0.65rem;
-    border-radius: 0;
-    overflow: visible;
-    background: transparent;
-    border: 0;
-    box-shadow: none;
-}
-
-.comunidade-compose-photo-icon img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
+    border-radius: 50%;
+    color: #f0d78c;
+    background:
+        radial-gradient(circle at 35% 30%, rgba(254, 249, 215, 0.18), transparent 55%),
+        rgba(61, 92, 40, 0.45);
+    border: 1px solid rgba(223, 194, 98, 0.35);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
 }
 
 .comunidade-compose-photo-title {
