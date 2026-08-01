@@ -1948,6 +1948,35 @@
         "Vida/Personagens.txt"
       ],
       "notes": "Hub /vida/ + fichas de personagens."
+    },
+    {
+      "id": "pessoa-amyr-klink",
+      "title": "Amyr Klink — navegador e legado de caminho",
+      "tipo": "pessoa",
+      "priority": 2,
+      "status": "feita",
+      "why": "Legado Cap. 7 — pai de Tamara; planeamento, risco e ofício náutico brasileiro.",
+      "suggestedSlug": "inspecao-amyr-klink",
+      "doneHref": "/posts/post-inspecao-amyr-klink.html",
+      "seriesHint": "legado-pessoas",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Amyr_Klink"
+      ]
+    },
+    {
+      "id": "pessoa-tamara-klink",
+      "title": "Tamara Klink — legado vivo no Ártico",
+      "tipo": "pessoa",
+      "priority": 1,
+      "status": "feita",
+      "why": "Legado Cap. 8 — junto do pai Amyr; Atlântico, Ártico e Passagem Noroeste.",
+      "suggestedSlug": "inspecao-tamara-klink",
+      "doneHref": "/posts/post-inspecao-tamara-klink.html",
+      "seriesHint": "legado-pessoas",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Tamara_Klink",
+        "/posts/post-inspecao-amyr-klink.html"
+      ]
     }
   ]
 }

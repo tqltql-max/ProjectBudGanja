@@ -593,6 +593,14 @@
                   "description": "Artes: A Última Casa de Ópio (*The Last Opium Den*, 2002) — livro-reportagem de Nick Tosches; viagem, memória das dens e crítica ao consumismo. Autor em Pessoas. Sem romantizar ópio."
                 },
                 {
+                  "label": "Inspeção: Amyr Klink — navegador e legado de caminho",
+                  "tileLabel": "Inspeção: Amyr Klink — navegado…",
+                  "href": "/posts/post-inspecao-amyr-klink.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-amyr-klink",
+                  "description": "Ficha de legado: Amyr Klink — pioneiro da travessia a remo do Atlântico Sul (1984); planeamento, risco e ofício que continua na filha Tamara."
+                },
+                {
                   "label": "Inspeção: Planta — Espinheira-santa — friedelina e triterpenos",
                   "tileLabel": "Inspeção: Planta — Espinheira-s…",
                   "href": "/posts/post-inspecao-planta-espinheira-santa.html",
@@ -631,6 +639,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-arte-a-historia-das-coisas",
                   "description": "Artes: A História das Coisas (*The Story of Stuff*, 2010/2011) — livro de Annie Leonard sobre a economia linear das coisas; vídeo 2007 como precursor. Autora em Pessoas."
+                },
+                {
+                  "label": "Inspeção: Tamara Klink — legado vivo no Ártico",
+                  "tileLabel": "Inspeção: Tamara Klink — legado…",
+                  "href": "/posts/post-inspecao-tamara-klink.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-tamara-klink",
+                  "description": "Ficha de legado vivo: Tamara Klink — filha de Amyr; Atlântico, invernagem ártica e Passagem Noroeste em solitário; crédito junto do pai no hub Legado."
                 },
                 {
                   "label": "Inspeção: Planta — Guaco — cumarina e trepadeira respiratória",

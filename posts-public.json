@@ -1045,6 +1045,25 @@
     "seriesLabel": "A Última Casa de Ópio · Artes"
   },
   {
+    "title": "Inspeção: Amyr Klink — navegador e legado de caminho",
+    "titleEn": "Inspection: Amyr Klink — navigator and legacy of path",
+    "titleEs": "Inspección: Amyr Klink — navegante y legado de camino",
+    "excerpt": "Ficha de legado: Amyr Klink — pioneiro da travessia a remo do Atlântico Sul (1984); planeamento, risco e ofício que continua na filha Tamara.",
+    "excerptEn": "Legacy sheet: Amyr Klink — pioneer of the solo South Atlantic row (1984); planning, risk and craft continued by daughter Tamara.",
+    "excerptEs": "Ficha de legado: Amyr Klink — pionero de la travesía a remo del Atlántico Sur (1984); planificación y oficio que continúa en su hija Tamara.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-amyr-klink",
+    "url": "/posts/post-inspecao-amyr-klink.html",
+    "date": "2026-08-01T20:00:00.000Z",
+    "filename": "posts/post-inspecao-amyr-klink.html",
+    "coverImage": "/imagens/inspecoes/amyr-klink-cover.jpg",
+    "category": "inspecao",
+    "series": "legado-pessoas",
+    "seriesOrder": 7,
+    "seriesLabel": "Amyr Klink · legado"
+  },
+  {
     "title": "Inspeção: Planta — Espinheira-santa — friedelina e triterpenos",
     "titleEn": "Inspection: Plant — Espinheira-santa — friedelin and triterpenes",
     "titleEs": "Inspección: Planta — Espinheira-santa — friedelina y triterpenos",
@@ -1138,6 +1157,25 @@
     "series": "artes-cultura",
     "seriesOrder": 8,
     "seriesLabel": "A História das Coisas · Artes"
+  },
+  {
+    "title": "Inspeção: Tamara Klink — legado vivo no Ártico",
+    "titleEn": "Inspection: Tamara Klink — living legacy in the Arctic",
+    "titleEs": "Inspección: Tamara Klink — legado vivo en el Ártico",
+    "excerpt": "Ficha de legado vivo: Tamara Klink — filha de Amyr; Atlântico, invernagem ártica e Passagem Noroeste em solitário; crédito junto do pai no hub Legado.",
+    "excerptEn": "Living-legacy sheet: Tamara Klink — Amyr’s daughter; solo Atlantic, Arctic wintering and Northwest Passage; filed next to her father in Legacy.",
+    "excerptEs": "Ficha de legado vivo: Tamara Klink — hija de Amyr; Atlántico, invernada ártica y Paso del Noroeste; junto a su padre en Legado.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-tamara-klink",
+    "url": "/posts/post-inspecao-tamara-klink.html",
+    "date": "2026-08-01T20:05:00.000Z",
+    "filename": "posts/post-inspecao-tamara-klink.html",
+    "coverImage": "/imagens/inspecoes/tamara-klink-cover.jpg",
+    "category": "inspecao",
+    "series": "legado-pessoas",
+    "seriesOrder": 8,
+    "seriesLabel": "Tamara Klink · legado"
   },
   {
     "title": "Inspeção: Planta — Guaco — cumarina e trepadeira respiratória",
