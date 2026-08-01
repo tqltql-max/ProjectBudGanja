@@ -739,7 +739,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "About",
         "title": "About Inspetor BudGanja",
-        "subtitle": "A digital space dedicated to Brazil's medicinal plants: a curated catalog, UNIFESP continuing education, documented legacy, verifiable inspections, a video hub, and practical tools for responsible study and cultivation.",
+        "subtitle": "A public digital laboratory for Brazil's medicinal plants — created by Tiago Queiroz Loureiro, a student in the 14th UNIFESP medicinal-cannabis course. Catalog, documented legacy, method-based inspections, and practical tools for responsible study.",
         "docTitle": "About | Inspetor BudGanja"
       },
       "contact": {
@@ -1507,7 +1507,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "Acerca de",
         "title": "Sobre Inspetor BudGanja",
-        "subtitle": "Espacio digital dedicado a las plantas medicinales de Brasil: catálogo curado, extensión académica UNIFESP, legado documentado, inspecciones con método verificable, hub de videos y herramientas prácticas para el estudio y cultivo responsables.",
+        "subtitle": "Laboratorio digital público de plantas medicinales de Brasil — creado por Tiago Queiroz Loureiro, alumno del XIV Curso UNIFESP de cannabis medicinal. Catálogo, legado documentado, inspecciones con método y herramientas prácticas para el estudio responsable.",
         "docTitle": "Acerca de | Inspetor BudGanja"
       },
       "contact": {
@@ -2275,7 +2275,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "Sobre",
         "title": "Sobre o Inspetor BudGanja",
-        "subtitle": "Espaço digital dedicado às plantas medicinais do Brasil: catálogo curado, extensão académica UNIFESP, legado documentado, inspeções com método verificável, hub de vídeos e ferramentas práticas para estudo e cultivo responsável.",
+        "subtitle": "Laboratório digital público de plantas medicinais do Brasil — criado por Tiago Queiroz Loureiro, aluno do XIV Curso UNIFESP de cannabis medicinal. Catálogo, legado documentado, inspeções com método e ferramentas práticas para estudo responsável.",
         "docTitle": "Sobre | Inspetor BudGanja"
       },
       "contact": {

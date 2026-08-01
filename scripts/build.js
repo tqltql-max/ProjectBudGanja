@@ -64,6 +64,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('build:apresentacao-pdf', 'generate-apresentacao-pdf.js');
+  } catch (e) {
+    console.warn('Aviso build:apresentacao-pdf:', e.message);
+  }
+
+  try {
     publishStaticAssets(ROOT);
   } catch (e) {
     console.warn('Aviso publish:static:', e.message);

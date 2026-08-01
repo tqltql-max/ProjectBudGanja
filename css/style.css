@@ -8162,9 +8162,20 @@ body[data-page="sobre"] .info-panel {
     background: linear-gradient(165deg, rgba(22, 32, 14, 0.92), rgba(14, 18, 10, 0.96));
 }
 
+body[data-page="sobre"] .info-panel h2,
 body[data-page="sobre"] .info-panel h3,
-body[data-page="sobre"] .sobre-author h2 {
+body[data-page="sobre"] .sobre-author h2,
+body[data-page="sobre"] .sobre-story h2 {
     color: #dfc262;
+}
+
+body[data-page="sobre"] .sobre-story h2 {
+    margin: 0 0 0.65rem;
+    font-size: 1.15rem;
+}
+
+body[data-page="sobre"] .sobre-creditos h2 {
+    margin-top: 0;
 }
 
 body[data-page="sobre"] .sobre-paths {
@@ -8311,6 +8322,54 @@ body[data-page="apresentacao-unifesp"] .apresentacao-url {
 body[data-page="apresentacao-unifesp"] .apresentacao-url a {
     color: var(--color-accent-light, #dfc262);
     font-weight: 600;
+}
+
+body[data-page="apresentacao-unifesp"] .apresentacao-lead-links .botao[download],
+body[data-page="apresentacao-unifesp"] .apresentacao-ask .botao[download] {
+    box-shadow: 0 0 0 1px rgba(223, 194, 98, 0.35);
+}
+
+@media print {
+    body[data-page="apresentacao-unifesp"] #site-header,
+    body[data-page="apresentacao-unifesp"] #site-footer,
+    body[data-page="apresentacao-unifesp"] .apresentacao-lead-links,
+    body[data-page="apresentacao-unifesp"] .section-cta-inline {
+        display: none !important;
+    }
+
+    body[data-page="apresentacao-unifesp"] {
+        background: #fff !important;
+        color: #1a1f14 !important;
+    }
+
+    body[data-page="apresentacao-unifesp"] .apresentacao-page {
+        max-width: none;
+        padding: 0;
+    }
+
+    body[data-page="apresentacao-unifesp"] .info-panel,
+    body[data-page="apresentacao-unifesp"] .apresentacao-modules {
+        background: #fff !important;
+        border-color: #c5d08a !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+    }
+
+    body[data-page="apresentacao-unifesp"] .info-panel h2,
+    body[data-page="apresentacao-unifesp"] .info-panel h3,
+    body[data-page="apresentacao-unifesp"] .apresentacao-modules h2,
+    body[data-page="apresentacao-unifesp"] .apresentacao-story h2,
+    body[data-page="apresentacao-unifesp"] .article-header h1 {
+        color: #3d4d12 !important;
+    }
+
+    body[data-page="apresentacao-unifesp"] .page-intro,
+    body[data-page="apresentacao-unifesp"] .info-panel-text,
+    body[data-page="apresentacao-unifesp"] .apresentacao-story p,
+    body[data-page="apresentacao-unifesp"] .info-list,
+    body[data-page="apresentacao-unifesp"] .apresentacao-modules-list {
+        color: #222 !important;
+    }
 }
 
 /* Navega??o ativa ? ver regras do header moderno (.nav-pill) */

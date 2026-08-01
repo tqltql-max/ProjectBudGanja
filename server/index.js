@@ -46,7 +46,8 @@ const MIME = {
   '.mp3': 'audio/mpeg',
   '.mp4': 'video/mp4',
   '.webm': 'video/webm',
-  '.mov': 'video/quicktime'
+  '.mov': 'video/quicktime',
+  '.pdf': 'application/pdf'
 };
 
 const MAX_BODY_BYTES = 2 * 1024 * 1024;
