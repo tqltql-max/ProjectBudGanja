@@ -9880,7 +9880,8 @@ html[data-theme="light"] .header-group-divider {
 .videos-continue-yt,
 .videos-copy-link,
 .videos-play-btn,
-.videos-share-btn {
+.videos-share-btn,
+.videos-share-wa {
     display: inline-flex;
     align-items: center;
     gap: 0.35em;
@@ -9889,8 +9890,22 @@ html[data-theme="light"] .header-group-divider {
 .videos-player-actions .videos-continue-yt,
 .videos-player-actions .videos-copy-link,
 .videos-player-actions .videos-play-btn,
-.videos-player-actions .videos-share-btn {
+.videos-player-actions .videos-share-btn,
+.videos-player-actions .videos-share-wa {
     margin-right: 0;
+}
+
+.videos-share-wa {
+    border-color: rgba(37, 211, 102, 0.45);
+    color: #d8ffe8;
+    background: rgba(37, 211, 102, 0.12);
+}
+
+.videos-share-wa:hover,
+.videos-share-wa:focus-visible {
+    border-color: rgba(37, 211, 102, 0.7);
+    color: #fff;
+    background: rgba(37, 211, 102, 0.22);
 }
 
 /* Player principal: sem bot?o play por cima da thumbnail */

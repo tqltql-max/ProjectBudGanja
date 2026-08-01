@@ -222,6 +222,28 @@
     }
   }
 
+  /** WhatsApp só gera preview/player embutido com link do YouTube (não com /videos/#…). */
+  function whatsAppShareUrl(text) {
+    return 'https://api.whatsapp.com/send?text=' + encodeURIComponent(String(text || ''));
+  }
+
+  function youtubeShareMessage(title, id) {
+    var watch = youtubeWatchUrl(id);
+    var t = String(title || '').trim();
+    return t ? t + '\n' + watch : watch;
+  }
+
+  function openWhatsAppShare(text) {
+    var url = whatsAppShareUrl(text);
+    var isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || '');
+    if (isMobile) {
+      window.location.assign(url);
+      return;
+    }
+    var win = window.open(url, '_blank', 'noopener,noreferrer');
+    if (!win) window.location.assign(url);
+  }
+
   function bindCopyVideoLinkButton(root) {
     if (!root) return;
     var btn = root.querySelector('[data-copy-video-link]');
@@ -282,7 +304,8 @@
     btn.addEventListener('click', function () {
       var id = btn.getAttribute('data-share-video') || '';
       if (!isValidVideoId(id)) return;
-      var url = videoPageShareUrl(id);
+      // Link do YouTube → preview/player no WhatsApp e noutras apps.
+      var url = youtubeWatchUrl(id);
       var shareTitle = title || i18n('pages.videos.nowPlaying', 'Vídeo do YouTube');
       var label = btn.querySelector('[data-share-label]') || btn;
       var original = i18n('common.share', 'Compartilhar');
@@ -295,17 +318,18 @@
         }, 1800);
       };
       var copyFallback = function () {
+        var text = youtubeShareMessage(shareTitle, id);
         if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(url).then(markCopied).catch(function () {
+          navigator.clipboard.writeText(text).then(markCopied).catch(function () {
             try {
-              if (window.prompt) window.prompt(original + ':', url);
+              if (window.prompt) window.prompt(original + ':', text);
             } catch (e) { /* ignore */ }
             markCopied();
           });
           return;
         }
         try {
-          if (window.prompt) window.prompt(original + ':', url);
+          if (window.prompt) window.prompt(original + ':', text);
         } catch (e) { /* ignore */ }
         markCopied();
       };
@@ -318,6 +342,19 @@
         return;
       }
       copyFallback();
+    });
+  }
+
+  function bindWhatsAppVideoButton(root, title) {
+    if (!root) return;
+    var btn = root.querySelector('[data-share-video-wa]');
+    if (!btn || btn.dataset.bound === '1') return;
+    btn.dataset.bound = '1';
+    btn.addEventListener('click', function () {
+      var id = btn.getAttribute('data-share-video-wa') || '';
+      if (!isValidVideoId(id)) return;
+      var shareTitle = title || i18n('pages.videos.nowPlaying', 'Vídeo do YouTube');
+      openWhatsAppShare(youtubeShareMessage(shareTitle, id));
     });
   }
 
@@ -596,10 +633,17 @@
       '<button type="button" class="botao botao-outline botao-sm videos-share-btn" data-share-video="' +
       escapeHtml(video.id) +
       '" aria-label="' +
-      escapeHtml(i18n('common.shareAria', 'Compartilhar esta publicação')) +
+      escapeHtml(i18n('pages.videos.shareAria', 'Compartilhar link do YouTube')) +
       '"><span data-share-label>' +
       escapeHtml(i18n('common.share', 'Compartilhar')) +
       '</span></button>' +
+      '<button type="button" class="botao botao-outline botao-sm videos-share-wa" data-share-video-wa="' +
+      escapeHtml(video.id) +
+      '" aria-label="' +
+      escapeHtml(i18n('pages.videos.shareWhatsAppAria', 'Enviar no WhatsApp para assistir no chat')) +
+      '">' +
+      escapeHtml(i18n('pages.videos.shareWhatsApp', 'WhatsApp')) +
+      '</button>' +
       '<a class="botao botao-outline botao-sm videos-continue-yt" href="' +
       escapeHtml(watchUrl) +
       '" data-continue-youtube="' +
@@ -629,6 +673,7 @@
     bindCopyVideoLinkButton(playerEl);
     bindPlayVideoButton(playerEl);
     bindShareVideoButton(playerEl, title);
+    bindWhatsAppVideoButton(playerEl, title);
     if (window.BudGanjaYoutubeFacade && typeof window.BudGanjaYoutubeFacade.enhance === 'function') {
       window.BudGanjaYoutubeFacade.enhance(playerEl);
     }
