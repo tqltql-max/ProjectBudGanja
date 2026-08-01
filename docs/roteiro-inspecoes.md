@@ -78,6 +78,7 @@ Quando o post com `suggestedSlug` (ou `doneHref`) estiver publicado, o hub marca
 - Builder de derivados de risco: `lib/derivados-inspecoes-posts.js` · série `plantas-derivados-risco` (não misturar com o catálogo `/plantas/` medicinal)
 - Builder de palavras: `lib/palavras-inspecoes-posts.js` · série `palavras-origem` — método: origem etimológica → viagem → transformação de sentido → rede semântica → elo obrigatório com `/plantas/<slug>/` quando houver referente botânico
 - Builder de pessoas (históricas): `lib/pessoas-historia-inspecoes-posts.js` · série `pessoas-historia` — método: biografia verificável → método de pesquisa → elo com `/plantas/<slug>/` (histórico directo ou metodológico). Não confundir com `legado-pessoas`
+- Builder de divulgação: `lib/divulgacao-inspecoes-posts.js` · série `divulgacao-saude` — método: IDs de canal verificáveis + textos públicos no tema + controvérsias com fonte; **não equiparar** a Legado UNIFESP/MovReCam
 
 ## Validação
 

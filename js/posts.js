@@ -47,6 +47,7 @@ var SERIES_LABELS = {
   'plantas-derivados-risco': 'Derivados de risco',
   'palavras-origem': 'Palavras',
   'pessoas-historia': 'Pessoas',
+  'divulgacao-saude': 'Divulgação',
   '': 'Todas as séries'
 };
 
@@ -94,6 +95,10 @@ function seriesBadgeHtml(post, options) {
     var figura = post.seriesLabel || 'Pessoa';
     return '<span class="post-card-series" data-series="' + post.series + '">' + figura + '</span>';
   }
+  if (options.hub && (post.series === 'divulgacao-saude' || /inspecao-divulgacao-/i.test(post.slug || ''))) {
+    var div = post.seriesLabel || 'Divulgação';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + div + '</span>';
+  }
   var label = post.seriesLabel || SERIES_LABELS[post.series] || post.series;
   var order = post.seriesOrder != null ? ' · Cap. ' + post.seriesOrder : '';
   return '<span class="post-card-series" data-series="' + post.series + '">' + label + order + '</span>';
@@ -138,6 +143,13 @@ function resolveInspecaoTipo(post) {
     /inspecao-figura-/i.test(slug)
   ) {
     return 'pessoas';
+  }
+  if (
+    series === 'divulgacao-saude' ||
+    series.indexOf('divulgacao') === 0 ||
+    /inspecao-divulgacao-/i.test(slug)
+  ) {
+    return 'divulgacao';
   }
   if (
     series === 'legado-pessoas' ||
@@ -284,7 +296,8 @@ var HUB_CHIP_ANCHOR = {
   planta: 'plantas',
   derivado: 'derivados',
   palavra: 'palavras',
-  pessoas: 'pessoas-historia'
+  pessoas: 'pessoas-historia',
+  divulgacao: 'divulgacao'
 };
 
 function setHubChipVisibility(tipo, visible) {
@@ -384,7 +397,8 @@ function renderInspecoesHub(allPosts) {
     { id: 'planta', section: '#inspecoes-plantas', sort: 'seriesOrder' },
     { id: 'derivado', section: '#inspecoes-derivados', sort: 'seriesOrder' },
     { id: 'palavra', section: '#inspecoes-palavras', sort: 'seriesOrder' },
-    { id: 'pessoas', section: '#inspecoes-pessoas-historia', sort: 'seriesOrder' }
+    { id: 'pessoas', section: '#inspecoes-pessoas-historia', sort: 'seriesOrder' },
+    { id: 'divulgacao', section: '#inspecoes-divulgacao', sort: 'seriesOrder' }
   ];
 
   tipos.forEach(function (t) {

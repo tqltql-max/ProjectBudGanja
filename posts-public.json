@@ -1,5 +1,24 @@
 [
   {
+    "title": "Inspeção: Dr. Lair Ribeiro — canal oficial e divulgação sobre cannabinoides",
+    "titleEn": "Inspection: Dr. Lair Ribeiro — official channel and cannabinoid outreach",
+    "titleEs": "Inspección: Dr. Lair Ribeiro — canal oficial y divulgación sobre cannabinoides",
+    "excerpt": "Ficha fundadora da série Divulgação: IDs do canal @DrLairRibeiroOficiall, textos do portal sobre dor/Alzheimer e limites públicos — complementar ao Legado UNIFESP, sem equiparação.",
+    "excerptEn": "Founding sheet of the Outreach series: @DrLairRibeiroOficiall channel IDs, portal texts on pain/Alzheimer’s, and public limits — complementary to UNIFESP Legacy, without equivalence.",
+    "excerptEs": "Ficha fundadora de Divulgación: IDs del canal @DrLairRibeiroOficiall, textos del portal sobre dolor/Alzheimer y límites públicos — complementaria al Legado UNIFESP, sin equivalencia.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-divulgacao-lair-ribeiro",
+    "url": "/posts/post-inspecao-divulgacao-lair-ribeiro.html",
+    "date": "2026-08-01T09:00:00.000Z",
+    "filename": "posts/post-inspecao-divulgacao-lair-ribeiro.html",
+    "coverImage": "https://i.ytimg.com/vi/S61hC_9hmf8/hqdefault.jpg",
+    "category": "inspecao",
+    "series": "divulgacao-saude",
+    "seriesOrder": 1,
+    "seriesLabel": "Lair Ribeiro · divulgação"
+  },
+  {
     "title": "Inspeção: Heródoto — método da pesquisa e o abacate que ele não viu",
     "titleEn": "Inspection: Herodotus — research method and the avocado he never saw",
     "titleEs": "Inspección: Heródoto — método de investigación y el aguacate que no vio",
@@ -245,6 +264,25 @@
     "series": "verificacao-equipamento",
     "seriesOrder": 2,
     "seriesLabel": "Mars Hydro Brasil"
+  },
+  {
+    "title": "Inspeção: Chorão — letra urbana, Charlie Brown Jr. e a série Palavras",
+    "titleEn": "Inspection: Chorão — urban lyrics, Charlie Brown Jr. and the Words series",
+    "titleEs": "Inspección: Chorão — letra urbana, Charlie Brown Jr. y la serie Palabras",
+    "excerpt": "Pessoas × Palavras: Chorão (Alexandre Magno Abrão), letrista do Charlie Brown Jr. — poesia urbana, gíria e refrão cruzados com a ficha maconha e o hub de vocábulos.",
+    "excerptEn": "People × Words: Chorão (Alexandre Magno Abrão), Charlie Brown Jr. lyricist — urban poetry, slang and refrains crossed with the maconha sheet and the Words hub.",
+    "excerptEs": "Personas × Palabras: Chorão (Alexandre Magno Abrão), letrista de Charlie Brown Jr. — poesía urbana, jerga y estribillos cruzados con la ficha maconha y el hub de vocablos.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-figura-chorao",
+    "url": "/posts/post-inspecao-figura-chorao.html",
+    "date": "2026-08-01T08:00:00.000Z",
+    "filename": "posts/post-inspecao-figura-chorao.html",
+    "coverImage": "/imagens/inspecoes/chorao-cover.jpg",
+    "category": "inspecao",
+    "series": "pessoas-historia",
+    "seriesOrder": 3,
+    "seriesLabel": "Chorão · pessoa"
   },
   {
     "title": "Inspeção: Dr. Sidarta Ribeiro — Revolução Canabinóide",

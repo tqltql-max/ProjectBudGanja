@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T12:41:29.510Z",
+  "updatedAt": "2026-08-01T12:47:57.552Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes.",
   "items": [
     {
@@ -103,18 +103,21 @@
       "titleEn": "Dr. Lair Ribeiro — cannabinoid outreach",
       "titleEs": "Dr. Lair Ribeiro — divulgación sobre cannabinoides",
       "tipo": "divulgacao",
-      "priority": 3,
-      "status": "ideia",
-      "why": "Textos públicos sobre cannabinoides (dor, Alzheimer). Complementar ao ecossistema — não é origem UNIFESP/MovReCam.",
-      "whyEn": "Public texts on cannabinoids (pain, Alzheimer’s). Complementary to the ecosystem — not UNIFESP/MovReCam origin.",
-      "whyEs": "Textos públicos sobre cannabinoides (dolor, Alzheimer). Complementario al ecosistema — no es origen UNIFESP/MovReCam.",
+      "priority": 2,
+      "status": "feita",
+      "why": "Ficha fundadora Divulgação: IDs do canal oficial + textos dor/Alzheimer; limites públicos explícitos.",
+      "whyEn": "Founding Outreach sheet: official channel IDs + pain/Alzheimer texts; explicit public limits.",
+      "whyEs": "Ficha fundadora Divulgación: IDs del canal oficial + textos dolor/Alzheimer; límites públicos explícitos.",
       "suggestedSlug": "inspecao-divulgacao-lair-ribeiro",
       "seriesHint": "divulgacao-saude",
       "sources": [
+        "https://www.youtube.com/@DrLairRibeiroOficiall",
         "https://lairribeiro.com.br/en/the-use-of-cannabinoids-as-an-adjuvant-in-the-treatment-of-chronic-pain/",
-        "https://lairribeiro.com.br/en/the-use-of-cannabinoids-as-an-adjuvant-in-the-treatment-of-alzheimers-disease/"
+        "https://lairribeiro.com.br/en/the-use-of-cannabinoids-as-an-adjuvant-in-the-treatment-of-alzheimers-disease/",
+        "https://pt.wikipedia.org/wiki/Lair_Ribeiro"
       ],
-      "notes": "Série própria (divulgação). Declarar independência e não equiparar a Ticão/Carlini."
+      "notes": "Série própria (divulgação). Declarar independência e não equiparar a Ticão/Carlini.",
+      "doneHref": "/posts/post-inspecao-divulgacao-lair-ribeiro.html"
     },
     {
       "id": "gabrielle-dainezi",
@@ -338,6 +341,25 @@
       "seriesHint": "pessoas-historia",
       "sources": [
         "https://pt.wikipedia.org/wiki/Greg%C3%B3rio_Duvivier",
+        "/posts/post-inspecao-palavra-maconha.html"
+      ]
+    },
+    {
+      "id": "figura-chorao",
+      "title": "Chorão — letra urbana, Charlie Brown Jr. e série Palavras",
+      "titleEn": "Chorão — urban lyrics, Charlie Brown Jr. and Words series",
+      "titleEs": "Chorão — letra urbana, Charlie Brown Jr. y serie Palabras",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas × Palavras: letrista do CBJr — poesia urbana cruzada com a ficha maconha.",
+      "whyEn": "People × Words: CBJr lyricist — urban poetry crossed with the maconha sheet.",
+      "whyEs": "Personas × Palabras: letrista de CBJr — poesía urbana cruzada con la ficha maconha.",
+      "suggestedSlug": "inspecao-figura-chorao",
+      "doneHref": "/posts/post-inspecao-figura-chorao.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Chor%C3%A3o_(cantor)",
         "/posts/post-inspecao-palavra-maconha.html"
       ]
     }

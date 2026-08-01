@@ -131,6 +131,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Canais, equipamentos, insumos e formação."
             },
             {
+              "label": "Inspeção: Dr. Lair Ribeiro — canal oficial e divulgação sobre cannabinoides",
+              "tileLabel": "Inspeção: Dr. Lair Ribeiro — ca…",
+              "href": "/posts/post-inspecao-divulgacao-lair-ribeiro.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-divulgacao-lair-ribeiro",
+              "description": "Ficha fundadora da série Divulgação: IDs do canal @DrLairRibeiroOficiall, textos do portal sobre dor/Alzheimer e limites públicos — complementar ao Legado UNIFESP, sem equiparação."
+            },
+            {
               "label": "Inspeção: Heródoto — método da pesquisa e o abacate que ele não viu",
               "tileLabel": "Inspeção: Heródoto — método da …",
               "href": "/posts/post-inspecao-figura-herodoto.html",
@@ -233,6 +241,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-marshydro-brasil",
               "description": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório."
+            },
+            {
+              "label": "Inspeção: Chorão — letra urbana, Charlie Brown Jr. e a série Palavras",
+              "tileLabel": "Inspeção: Chorão — letra urbana…",
+              "href": "/posts/post-inspecao-figura-chorao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-chorao",
+              "description": "Pessoas × Palavras: Chorão (Alexandre Magno Abrão), letrista do Charlie Brown Jr. — poesia urbana, gíria e refrão cruzados com a ficha maconha e o hub de vocábulos."
             },
             {
               "label": "Inspeção: Dr. Sidarta Ribeiro — Revolução Canabinóide",
