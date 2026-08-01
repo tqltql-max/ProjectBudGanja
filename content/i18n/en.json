@@ -245,6 +245,11 @@
       "tileLabel": "UNIFESP",
       "description": "Hub for the 14th extension course on medicinal cannabis."
     },
+    "vida": {
+      "label": "Vida",
+      "tileLabel": "Vida",
+      "description": "Family story: caring for plants with science, nature and friendship."
+    },
     "post-guia-calculadora-super-solo": {
       "label": "Super Soil: usage guide",
       "tileLabel": "Super Soil: usage guide",
@@ -524,6 +529,7 @@
       "chipPeopleHistory": "People",
       "chipOutreach": "Outreach",
       "chipArts": "Arts",
+      "chipVida": "Vida",
       "chipSuggestions": "Suggestions",
       "filtersLabel": "Filter by series",
       "filterAll": "All",
@@ -665,6 +671,26 @@
       "title": "14th course — medicinal Cannabis sativa L.",
       "subtitle": "Hub for the UNIFESP extension course in partnership with MovReCam.",
       "docTitle": "UNIFESP course | Inspetor BudGanja"
+    },
+    "vida": {
+      "brand": "Inspetor BudGanja · Vida",
+      "title": "Vida",
+      "subtitle": "Every seed deserves kindness — a family story about caring for plants with science, nature and friendship.",
+      "ctaStory": "Read the story",
+      "ctaChars": "Meet the team",
+      "noteTitle": "Family and educational content.",
+      "noteBody": " Best read with kids and an adult nearby. Teaches gentle plant care — not clinical advice.",
+      "storyTitle": "The Lab and the Little Seed",
+      "storyLead": "Once upon a time, where bronze met green leaves…",
+      "charsTitle": "The lab team",
+      "charsLead": "Each character teaches a way to care — together they are the full squad.",
+      "lessonsTitle": "What the story teaches",
+      "lessonsLead": "Six simple ideas for treating plants the right way.",
+      "phasesTitle": "The plant’s stages",
+      "phasesLead": "From rest in the soil to the Senior Grower seal.",
+      "exploreTitle": "Keep exploring",
+      "exploreLead": "Lab tools to practice with (always with an adult).",
+      "docTitle": "Vida | Inspetor BudGanja"
     },
     "about": {
       "eyebrow": "About",

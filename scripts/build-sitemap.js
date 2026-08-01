@@ -19,6 +19,8 @@ const STATIC = [
   { loc: '/biblioteca/inspecoes/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/biblioteca/unifesp/', priority: '0.95', changefreq: 'monthly' },
   { loc: '/plantas/', priority: '0.95', changefreq: 'weekly' },
+  { loc: '/vida/', priority: '0.9', changefreq: 'monthly' },
+  { loc: '/radio/', priority: '0.8', changefreq: 'weekly' },
   { loc: '/equipamentos/', priority: '0.9', changefreq: 'monthly' },
   { loc: '/calculadoras/', priority: '0.8', changefreq: 'monthly' },
   ...CALCULADORAS.map((c) => ({

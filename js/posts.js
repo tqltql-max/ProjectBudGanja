@@ -50,6 +50,7 @@ var SERIES_LABELS = {
   'pessoas-historia': 'Pessoas',
   'divulgacao-saude': 'Divulgação',
   'artes-cultura': 'Artes',
+  'vida-contos': 'Vida',
   '': 'Todas as séries'
 };
 
@@ -109,6 +110,10 @@ function seriesBadgeHtml(post, options) {
     var arte = post.seriesLabel || 'Arte';
     return '<span class="post-card-series" data-series="' + post.series + '">' + arte + '</span>';
   }
+  if (options.hub && (post.series === 'vida-contos' || /inspecao-conto-|inspecao-personagem-/i.test(post.slug || ''))) {
+    var vida = post.seriesLabel || 'Vida';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + vida + '</span>';
+  }
   var label = post.seriesLabel || SERIES_LABELS[post.series] || post.series;
   var order = post.seriesOrder != null ? ' · Cap. ' + post.seriesOrder : '';
   return '<span class="post-card-series" data-series="' + post.series + '">' + label + order + '</span>';
@@ -167,6 +172,13 @@ function resolveInspecaoTipo(post) {
     /inspecao-arte-|inspecao-filme-|inspecao-serie-/i.test(slug)
   ) {
     return 'arte';
+  }
+  if (
+    series === 'vida-contos' ||
+    series.indexOf('vida') === 0 ||
+    /inspecao-conto-|inspecao-personagem-/i.test(slug)
+  ) {
+    return 'conto';
   }
   if (
     series === 'legado-pessoas' ||
@@ -319,6 +331,7 @@ var HUB_CHIP_ANCHOR = {
   pessoas: 'pessoas-historia',
   divulgacao: 'divulgacao',
   arte: 'artes',
+  conto: 'vida',
   sugestoes: 'sugestoes'
 };
 
@@ -334,6 +347,8 @@ var HUB_ANCHOR_TO_TIPO = {
   palavras: 'palavra',
   divulgacao: 'divulgacao',
   artes: 'arte',
+  vida: 'conto',
+  contos: 'conto',
   sugestoes: 'sugestoes'
 };
 
@@ -349,6 +364,7 @@ var INSPECAO_HUB_TIPOS = [
   { id: 'palavra', labelKey: 'pages.inspections.chipWords', fallback: 'Palavras', sort: 'seriesOrder', keepVisible: true },
   { id: 'divulgacao', labelKey: 'pages.inspections.chipOutreach', fallback: 'Divulgação', sort: 'seriesOrder' },
   { id: 'arte', labelKey: 'pages.inspections.chipArts', fallback: 'Artes', sort: 'seriesOrder', keepVisible: true },
+  { id: 'conto', labelKey: 'pages.inspections.chipVida', fallback: 'Vida', sort: 'seriesOrder', keepVisible: true },
   { id: 'sugestoes', labelKey: 'pages.inspections.chipSuggestions', fallback: 'Sugestões', special: true, keepVisible: true }
 ];
 

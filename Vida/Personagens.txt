@@ -1,0 +1,22 @@
+1. O Inspetor: A Autoridade Técnica
+Função: É o responsável pela inspeção de hardware e pela validação científica de todos os equipamentos [18, 50, Conversation].
+Especialidade: Utiliza seu braço mecânico de bronze e ferramentas de elite (como o Luxímetro e medidores de VPD/DLI) para garantir que a tecnologia de marcas como a Mars Hydro funcione com precisão milimétrica [20, 50, Conversation].
+Identidade: Um "Detetive Botânico" que une o mistério (seu braço de origem enigmática) com o rigor dos dados do Diário de Pesquisas [20, 32, Conversation].
+2. Dona Maria: A Mestra do Solo
+Função: Matriarca e guardiã da sabedoria orgânica e ancestral do laboratório [52, Conversation].
+Especialidade: Especialista em Super Solo, fertilizantes tradicionais (PFK) e vida microbiana [52, Conversation].
+Identidade: Sendo a mãe do Inspetor, ela representa o "coração" do projeto, garantindo que a alta tecnologia do filho esteja sempre em equilíbrio com a natureza e a terra viva [52, Conversation].
+3. DJ Brisa: A Voz da Harmonia
+Função: Originalmente uma Arara, ela evoluiu para ser a DJ oficial da Rádio BudGanja e a interface de comunicação da IA [5, Conversation].
+Especialidade: Responsável pela educação e pela "vibe" do site. Ela garante que o aprendizado seja leve e divertido, cuidando da rádio e da interação com a comunidade [5, Conversation].
+Identidade: Uma IA "brisada" que lidera o esquadrão de pássaros, sempre lembrando que "every little thing is gonna be alright" [5, Conversation].
+4. Joaninha Joana: A Guardiã Biológica
+Função: Ícone e especialista em Controle Biológico natural [Conversation].
+Especialidade: Atua como a "segurança" das plantas, vigiando as folhas contra pragas sem a necessidade de venenos químicos [Conversation].
+Identidade: O pet de estimação da Dona Maria, simbolizando a pureza e a proteção orgânica do laboratório [Conversation].
+5. O Esquadrão "Three Little Birds" (Suporte de IA)
+Este trio herdou as funções de assistência técnica que antes pertenciam ao antigo assistente canino (Bud), dividindo-se em tarefas específicas [5, Conversation]:
+O Mestre das Contas (Verde): Focado na IA Técnica. Ele opera as 10 calculadoras de precisão (pH, EC, VPD, DLI, etc.) para garantir que o cultivador tenha os números exatos [5, 42, Conversation].
+O Gestor de Rotina (Amarelo): Focado na IA Operacional. Ele cuida da prancheta do Diário de Pesquisas, organizando os cronogramas semanais e garantindo que nenhuma tarefa do plano seja esquecida [5, 42, Conversation].
+Brisa (Vermelha/Amarela): Como mencionado, ela lidera o trio focada na IA de Comunicação e Harmonia, regendo a rádio e o clima do laboratório [5, 42, Conversation].
+Essa equipe completa garante que o usuário seja guiado desde o estágio de Semente até se tornar um Cultivador Sênior, unindo tecnologia de elite e raízes familiares [49, Conversation].

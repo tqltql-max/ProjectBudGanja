@@ -26,6 +26,7 @@ const STATIC_PAGES = [
   { url: '/sorteios/', title: 'Sorteios', desc: 'Sorteio de inauguração — clonadora aeropônica caseira em breve', keywords: 'sorteio inauguração clonadora' },
   { url: '/videos/', title: 'Últimos vídeos', desc: 'Vídeos recentes do canal YouTube', keywords: 'youtube vídeo canal' },
   { url: '/radio/', title: 'BudGanja Radio', desc: 'Playlist BudGanja Radio do laboratório', keywords: 'rádio budganja playlist' },
+  { url: '/vida/', title: 'Vida — conto familiar', desc: 'Conto familiar do Laboratório BudGanja: cuidar de plantas com ciência, natureza e amizade', keywords: 'vida conto infantil família plantas semente inspetor dona maria' },
   { url: '/info/sobre.html', title: 'Sobre', desc: 'Propósito e metodologia do projeto', keywords: 'sobre missão fitoterapia' },
   { url: '/info/apresentacao-unifesp.html', title: 'Apresentação UNIFESP', desc: 'Apresentação do laboratório à coordenação do XIV Curso UNIFESP', keywords: 'unifesp apresentação curso extensão cannabis' },
   { url: '/info/contato.html', title: 'Contato', desc: 'E-mail e perguntas frequentes', keywords: 'contato email' },

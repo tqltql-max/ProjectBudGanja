@@ -29,6 +29,15 @@ window.__BIBLIOTECA_NAV__ = {
           "description": "Hub do XIV curso de extensão sobre cannabis medicinal."
         },
         {
+          "label": "Vida",
+          "tileLabel": "Vida",
+          "href": "/vida/",
+          "icon": "🌱",
+          "slug": "vida",
+          "featured": true,
+          "description": "Conto familiar: cuidar de plantas com ciência, natureza e amizade."
+        },
+        {
           "label": "Guias",
           "tileLabel": "Guias",
           "icon": "📚",
@@ -171,6 +180,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Derivados de risco: origem da cana, OMS (açúcares livres) e cruzamento com a divulgação do Dr. Lair Ribeiro — portal (sacarose da cana) + varredura de 887 vídeos do canal (açúcar, frutose, diabesidade)."
             },
             {
+              "label": "Vida — O Laboratório e a Sementinha",
+              "tileLabel": "Vida — O Laboratório e a Sement…",
+              "href": "/posts/post-inspecao-conto-vida-laboratorio.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-conto-vida-laboratorio",
+              "description": "Conto familiar: o Inspetor, a Dona Maria, a Joaninha Joana e os Three Little Birds ensinam a cuidar de uma semente com ciência, natureza e amizade."
+            },
+            {
               "label": "Inspeção: Padre Ticão — Antônio Luiz Marchioni",
               "tileLabel": "Inspeção: Padre Ticão — Antônio…",
               "href": "/posts/post-inspecao-padre-ticao.html",
@@ -251,6 +268,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras × Pessoas: «passar» (latim *passāre*) — atravessar, o que se passou, o tempo — elo metodológico com Heródoto e o ofício de *historie*."
             },
             {
+              "label": "Vida — O Inspetor, detetive botânico",
+              "tileLabel": "Vida — O Inspetor, detetive bot…",
+              "href": "/posts/post-inspecao-personagem-inspetor.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-personagem-inspetor",
+              "description": "Detetive botânico de chapéu engraçado e braço de bronze: mede luz e clima para a planta crescer feliz."
+            },
+            {
               "label": "Inspeção: CEBRID — centro e medicina canabinoide",
               "tileLabel": "Inspeção: CEBRID — centro e med…",
               "href": "/posts/post-inspecao-cebrid.html",
@@ -323,6 +348,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Pessoas × Palavras: Chorão (Alexandre Magno Abrão), letrista do Charlie Brown Jr. — poesia urbana, gíria e refrão cruzados com a ficha maconha e o hub de vocábulos."
             },
             {
+              "label": "Vida — Dona Maria, mestra do solo",
+              "tileLabel": "Vida — Dona Maria, mestra do so…",
+              "href": "/posts/post-inspecao-personagem-dona-maria.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-personagem-dona-maria",
+              "description": "Mãe do Inspetor e guardiã do Super Solo: o coração orgânico do laboratório — terra viva e carinho."
+            },
+            {
               "label": "Inspeção: Dr. Sidarta Ribeiro — Revolução Canabinóide",
               "tileLabel": "Inspeção: Dr. Sidarta Ribeiro —…",
               "href": "/posts/post-inspecao-sidarta-ribeiro.html",
@@ -379,6 +412,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Pessoas × Artes: Keanu Reeves — método actoral e presença física, com elo principal no filme The Matrix (1999); distinto do Legado canábico."
             },
             {
+              "label": "Vida — DJ Brisa, a voz da harmonia",
+              "tileLabel": "Vida — DJ Brisa, a voz da harmo…",
+              "href": "/posts/post-inspecao-personagem-dj-brisa.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-personagem-dj-brisa",
+              "description": "Arara DJ da Rádio BudGanja: torna o aprendizado leve, animado e cheio de boa vibração."
+            },
+            {
               "label": "Inspeção: Profa. Solange Nappo — CEBRID",
               "tileLabel": "Inspeção: Profa. Solange Nappo …",
               "href": "/posts/post-inspecao-solange-nappo.html",
@@ -427,6 +468,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes: O Dia do Curinga (*Kabalmysteriet*, 1990) — romance filosófico de Jostein Gaarder; curiosidade, viagem e metáfora da Bebida Púrpura. Autor em Pessoas."
             },
             {
+              "label": "Vida — Joaninha Joana, guardiã biológica",
+              "tileLabel": "Vida — Joaninha Joana, guardiã …",
+              "href": "/posts/post-inspecao-personagem-joaninha-joana.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-personagem-joaninha-joana",
+              "description": "Pet da Dona Maria e ícone do controle biológico: protege as folhas sem veneno químico."
+            },
+            {
               "label": "Inspeção: Profa. Dra. Eliana Rodrigues",
               "tileLabel": "Inspeção: Profa. Dra. Eliana Ro…",
               "href": "/posts/post-inspecao-eliana-rodrigues.html",
@@ -473,6 +522,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-arte-diamba-sarabamba",
               "description": "Artes: Diamba Sarabamba (Ground, 1986) — coletânea de Henman e Pessoa Jr.; arquivo pioneiro do debate brasileiro sobre a diamba/maconha. Organizador em Pessoas."
+            },
+            {
+              "label": "Vida — Three Little Birds, o esquadrão da alegria",
+              "tileLabel": "Vida — Three Little Birds, o es…",
+              "href": "/posts/post-inspecao-personagem-three-little-birds.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-personagem-three-little-birds",
+              "description": "Trio de pássaros-IA: contas precisas, diário organizado e DJ Brisa na harmonia — do semente ao sênior."
             },
             {
               "label": "Inspeção: Gabrielle Dainezi — coordenação do curso UNIFESP",

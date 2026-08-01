@@ -1927,6 +1927,27 @@
         "/posts/post-inspecao-filme-divertida-mente.html"
       ],
       "notes": "Rede com hub emoção."
+    },
+    {
+      "id": "conto-vida-laboratorio",
+      "title": "Vida — O Laboratório e a Sementinha",
+      "titleEn": "Vida — The Lab and the Little Seed",
+      "titleEs": "Vida — El Laboratorio y la Semillita",
+      "tipo": "conto",
+      "priority": 1,
+      "status": "feita",
+      "why": "Conto familiar: cuidar de plantas com ciência, natureza e amizade — série Vida.",
+      "whyEn": "Family story: plant care with science, nature and friendship — Vida series.",
+      "whyEs": "Cuento familiar: cuidar plantas con ciencia, naturaleza y amistad — serie Vida.",
+      "suggestedSlug": "inspecao-conto-vida-laboratorio",
+      "doneHref": "/posts/post-inspecao-conto-vida-laboratorio.html",
+      "seriesHint": "vida-contos",
+      "sources": [
+        "/vida/",
+        "Vida/Historia.txt",
+        "Vida/Personagens.txt"
+      ],
+      "notes": "Hub /vida/ + fichas de personagens."
     }
   ]
 }

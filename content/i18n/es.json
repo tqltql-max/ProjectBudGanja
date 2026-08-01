@@ -245,6 +245,11 @@
       "tileLabel": "UNIFESP",
       "description": "Hub del XIV curso de extensión sobre cannabis medicinal."
     },
+    "vida": {
+      "label": "Vida",
+      "tileLabel": "Vida",
+      "description": "Cuento familiar: cuidar plantas con ciencia, naturaleza y amistad."
+    },
     "post-guia-calculadora-super-solo": {
       "label": "Super Suelo: guía de uso",
       "tileLabel": "Super Suelo: guía de uso",
@@ -524,6 +529,7 @@
       "chipPeopleHistory": "Personas",
       "chipOutreach": "Divulgación",
       "chipArts": "Artes",
+      "chipVida": "Vida",
       "chipSuggestions": "Sugerencias",
       "filtersLabel": "Filtrar por serie",
       "filterAll": "Todas",
@@ -665,6 +671,26 @@
       "title": "XIV curso — Cannabis sativa L. medicinal",
       "subtitle": "Hub del curso de extensión de la UNIFESP en alianza con MovReCam.",
       "docTitle": "Curso UNIFESP | Inspetor BudGanja"
+    },
+    "vida": {
+      "brand": "Inspetor BudGanja · Vida",
+      "title": "Vida",
+      "subtitle": "Cada semilla merece cariño — un cuento familiar para aprender a cuidar las plantas con ciencia, naturaleza y amistad.",
+      "ctaStory": "Leer la historia",
+      "ctaChars": "Conocer al equipo",
+      "noteTitle": "Contenido familiar y educativo.",
+      "noteBody": " Ideal para leer con niños, con un adulto cerca. Enseña el cuidado correcto de las plantas — no es consejo clínico.",
+      "storyTitle": "El Laboratorio y la Semillita",
+      "storyLead": "Había una vez, donde el bronce encontraba el verde de las hojas…",
+      "charsTitle": "El equipo del laboratorio",
+      "charsLead": "Cada personaje enseña una forma de cuidar — juntos forman el escuadrón completo.",
+      "lessonsTitle": "Lo que enseña la historia",
+      "lessonsLead": "Seis ideas simples para tratar las plantas bien.",
+      "phasesTitle": "Las fases de la plantita",
+      "phasesLead": "Del descanso en la tierra al sello de Cultivador Sénior.",
+      "exploreTitle": "Seguir explorando",
+      "exploreLead": "Herramientas del laboratorio para practicar (siempre con un adulto).",
+      "docTitle": "Vida | Inspetor BudGanja"
     },
     "about": {
       "eyebrow": "Acerca de",

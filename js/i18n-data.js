@@ -247,6 +247,11 @@ window.__I18N_LOCALES__ = {
         "tileLabel": "UNIFESP",
         "description": "Hub for the 14th extension course on medicinal cannabis."
       },
+      "vida": {
+        "label": "Vida",
+        "tileLabel": "Vida",
+        "description": "Family story: caring for plants with science, nature and friendship."
+      },
       "post-guia-calculadora-super-solo": {
         "label": "Super Soil: usage guide",
         "tileLabel": "Super Soil: usage guide",
@@ -526,6 +531,7 @@ window.__I18N_LOCALES__ = {
         "chipPeopleHistory": "People",
         "chipOutreach": "Outreach",
         "chipArts": "Arts",
+        "chipVida": "Vida",
         "chipSuggestions": "Suggestions",
         "filtersLabel": "Filter by series",
         "filterAll": "All",
@@ -667,6 +673,26 @@ window.__I18N_LOCALES__ = {
         "title": "14th course — medicinal Cannabis sativa L.",
         "subtitle": "Hub for the UNIFESP extension course in partnership with MovReCam.",
         "docTitle": "UNIFESP course | Inspetor BudGanja"
+      },
+      "vida": {
+        "brand": "Inspetor BudGanja · Vida",
+        "title": "Vida",
+        "subtitle": "Every seed deserves kindness — a family story about caring for plants with science, nature and friendship.",
+        "ctaStory": "Read the story",
+        "ctaChars": "Meet the team",
+        "noteTitle": "Family and educational content.",
+        "noteBody": " Best read with kids and an adult nearby. Teaches gentle plant care — not clinical advice.",
+        "storyTitle": "The Lab and the Little Seed",
+        "storyLead": "Once upon a time, where bronze met green leaves…",
+        "charsTitle": "The lab team",
+        "charsLead": "Each character teaches a way to care — together they are the full squad.",
+        "lessonsTitle": "What the story teaches",
+        "lessonsLead": "Six simple ideas for treating plants the right way.",
+        "phasesTitle": "The plant’s stages",
+        "phasesLead": "From rest in the soil to the Senior Grower seal.",
+        "exploreTitle": "Keep exploring",
+        "exploreLead": "Lab tools to practice with (always with an adult).",
+        "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
         "eyebrow": "About",
@@ -947,6 +973,11 @@ window.__I18N_LOCALES__ = {
         "tileLabel": "UNIFESP",
         "description": "Hub del XIV curso de extensión sobre cannabis medicinal."
       },
+      "vida": {
+        "label": "Vida",
+        "tileLabel": "Vida",
+        "description": "Cuento familiar: cuidar plantas con ciencia, naturaleza y amistad."
+      },
       "post-guia-calculadora-super-solo": {
         "label": "Super Suelo: guía de uso",
         "tileLabel": "Super Suelo: guía de uso",
@@ -1226,6 +1257,7 @@ window.__I18N_LOCALES__ = {
         "chipPeopleHistory": "Personas",
         "chipOutreach": "Divulgación",
         "chipArts": "Artes",
+        "chipVida": "Vida",
         "chipSuggestions": "Sugerencias",
         "filtersLabel": "Filtrar por serie",
         "filterAll": "Todas",
@@ -1367,6 +1399,26 @@ window.__I18N_LOCALES__ = {
         "title": "XIV curso — Cannabis sativa L. medicinal",
         "subtitle": "Hub del curso de extensión de la UNIFESP en alianza con MovReCam.",
         "docTitle": "Curso UNIFESP | Inspetor BudGanja"
+      },
+      "vida": {
+        "brand": "Inspetor BudGanja · Vida",
+        "title": "Vida",
+        "subtitle": "Cada semilla merece cariño — un cuento familiar para aprender a cuidar las plantas con ciencia, naturaleza y amistad.",
+        "ctaStory": "Leer la historia",
+        "ctaChars": "Conocer al equipo",
+        "noteTitle": "Contenido familiar y educativo.",
+        "noteBody": " Ideal para leer con niños, con un adulto cerca. Enseña el cuidado correcto de las plantas — no es consejo clínico.",
+        "storyTitle": "El Laboratorio y la Semillita",
+        "storyLead": "Había una vez, donde el bronce encontraba el verde de las hojas…",
+        "charsTitle": "El equipo del laboratorio",
+        "charsLead": "Cada personaje enseña una forma de cuidar — juntos forman el escuadrón completo.",
+        "lessonsTitle": "Lo que enseña la historia",
+        "lessonsLead": "Seis ideas simples para tratar las plantas bien.",
+        "phasesTitle": "Las fases de la plantita",
+        "phasesLead": "Del descanso en la tierra al sello de Cultivador Sénior.",
+        "exploreTitle": "Seguir explorando",
+        "exploreLead": "Herramientas del laboratorio para practicar (siempre con un adulto).",
+        "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
         "eyebrow": "Acerca de",
@@ -1647,6 +1699,11 @@ window.__I18N_LOCALES__ = {
         "tileLabel": "UNIFESP",
         "description": "Hub do XIV curso de extensão sobre cannabis medicinal."
       },
+      "vida": {
+        "label": "Vida",
+        "tileLabel": "Vida",
+        "description": "Conto familiar: cuidar de plantas com ciência, natureza e amizade."
+      },
       "post-guia-calculadora-super-solo": {
         "label": "Super Solo: Guia de Uso",
         "tileLabel": "Super Solo: Guia de Uso",
@@ -1926,6 +1983,7 @@ window.__I18N_LOCALES__ = {
         "chipPeopleHistory": "Pessoas",
         "chipOutreach": "Divulgação",
         "chipArts": "Artes",
+        "chipVida": "Vida",
         "chipSuggestions": "Sugestões",
         "filtersLabel": "Filtrar por série",
         "filterAll": "Todas",
@@ -2067,6 +2125,26 @@ window.__I18N_LOCALES__ = {
         "title": "XIV Curso — Cannabis sativa L. medicinal",
         "subtitle": "Hub do curso de extensão da UNIFESP em parceria com o MovReCam.",
         "docTitle": "Curso UNIFESP | Inspetor BudGanja"
+      },
+      "vida": {
+        "brand": "Inspetor BudGanja · Vida",
+        "title": "Vida",
+        "subtitle": "Cada semente merece carinho — um conto familiar para aprender a cuidar das plantas com ciência, natureza e amizade.",
+        "ctaStory": "Ler a história",
+        "ctaChars": "Conhecer a equipe",
+        "noteTitle": "Conteúdo familiar e educacional.",
+        "noteBody": " Ideal para ler com crianças, com um adulto por perto. Ensina o jeito certo de tratar as plantas — não é protocolo clínico nem substitui orientação responsável.",
+        "storyTitle": "O Laboratório e a Sementinha",
+        "storyLead": "Era uma vez, onde o bronze encontrava o verde das folhas…",
+        "charsTitle": "A equipe do laboratório",
+        "charsLead": "Cada personagem ensina um jeito de cuidar — juntos formam o esquadrão completo.",
+        "lessonsTitle": "O que a história ensina",
+        "lessonsLead": "Seis ideias simples para tratar as plantas do jeito certo.",
+        "phasesTitle": "As fases da plantinha",
+        "phasesLead": "Do descanso na terra até o selo de Cultivador Sênior.",
+        "exploreTitle": "Continuar a explorar",
+        "exploreLead": "Ferramentas do laboratório para praticar (sempre com um adulto).",
+        "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
         "eyebrow": "Sobre",
