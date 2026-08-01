@@ -235,11 +235,40 @@ body[data-page="home"] .home-channels-grid {
     grid-template-columns: 1fr;
 }
 
-@media (min-width: 820px) {
-    body[data-page="home"] .home-channels-grid {
-        grid-template-columns: 1fr 1fr;
-        align-items: stretch;
+body[data-page="home"] .home-vida-grid {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+body[data-page="home"] .home-vida-cover {
+    display: block;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0 0 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #0a0f08;
+    border: 1px solid rgba(212, 175, 55, 0.28);
+    text-decoration: none;
+}
+
+body[data-page="home"] .home-vida-cover img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    body[data-page="home"] .home-vida-cover:hover img {
+        transform: scale(1.03);
     }
+}
+
+body[data-page="home"] .home-vida-card {
+    border-color: rgba(212, 175, 55, 0.32);
 }
 
 body[data-page="home"] .home-channel {
