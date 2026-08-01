@@ -553,7 +553,7 @@ window.__I18N_LOCALES__ = {
         "sectionDerivatives": "Risk derivatives",
         "sectionDerivativesDesc": "Botanical origin of plants transformed into industrial products linked to health harm — without demonizing the species; focus on industrial diversion and excess intake.",
         "sectionWords": "Words",
-        "sectionWordsDesc": "Origin, journey and historical transformation of plant- and culture-related vocabulary — etymology with competing hypotheses, semantic network and links to the medicinal catalog.",
+        "sectionWordsDesc": "Origin, journey and historical transformation of vocabulary — including a map of double meanings that harm originality; published sheets as cards and the suggestion queue below.",
         "plantsDropTitle": "Medicinal plants catalog",
         "plantsDropDesc": "Species profiles and reports — tap to expand the list.",
         "plantsDropCount": "{n} species",
@@ -581,7 +581,14 @@ window.__I18N_LOCALES__ = {
         "sugTipoDerivado": "Derivative",
         "sugTipoPalavra": "Word",
         "sugTipoPessoas": "People",
-        "sugTipoArte": "Art"
+        "sugTipoArte": "Art",
+        "wordsCatalogTitle": "Double meanings that harm originality",
+        "wordsOriginal": "Originality",
+        "wordsPrejudiced": "Prejudicial sense",
+        "wordsChange": "Change",
+        "wordsMapOnly": "map only",
+        "wordsCatalogEmpty": "Empty catalog.",
+        "wordsCatalogError": "Could not load the words catalog."
       },
       "research": {
         "eyebrow": "Library",
@@ -1242,7 +1249,7 @@ window.__I18N_LOCALES__ = {
         "sectionDerivatives": "Derivados de riesgo",
         "sectionDerivativesDesc": "Origen botánico de plantas transformadas en productos industriales asociados a daño a la salud — sin demonizar la especie; foco en el desvío industrial y el consumo excesivo.",
         "sectionWords": "Palabras",
-        "sectionWordsDesc": "Origen, viaje y transformación histórica de vocablos ligados a plantas y cultura — etimología con hipótesis en disputa, red semántica y vínculo con el catálogo medicinal.",
+        "sectionWordsDesc": "Origen, viaje y transformación histórica de vocablos — con mapa del doble sentido que perjudica la originalidad; fichas publicadas en cards y cola de sugerencias abajo.",
         "plantsDropTitle": "Catálogo de plantas medicinales",
         "plantsDropDesc": "Fichas e informes por especie — toca para expandir la lista.",
         "plantsDropCount": "{n} especies",
@@ -1270,7 +1277,14 @@ window.__I18N_LOCALES__ = {
         "sugTipoDerivado": "Derivado",
         "sugTipoPalavra": "Palabra",
         "sugTipoPessoas": "Personas",
-        "sugTipoArte": "Arte"
+        "sugTipoArte": "Arte",
+        "wordsCatalogTitle": "Doble sentido que perjudica la originalidad",
+        "wordsOriginal": "Originalidad",
+        "wordsPrejudiced": "Sentido perjudicial",
+        "wordsChange": "Cambio",
+        "wordsMapOnly": "solo mapa",
+        "wordsCatalogEmpty": "Catálogo vacío.",
+        "wordsCatalogError": "No se pudo cargar el catálogo de palabras."
       },
       "research": {
         "eyebrow": "Biblioteca",
@@ -1931,7 +1945,7 @@ window.__I18N_LOCALES__ = {
         "sectionDerivatives": "Derivados de risco",
         "sectionDerivativesDesc": "Origem botânica de plantas transformadas em produtos industriais associados a dano à saúde — sem demonizar a espécie; foco no desvio industrial e no consumo excessivo.",
         "sectionWords": "Palavras",
-        "sectionWordsDesc": "Origem, viagem e transformação histórica de vocábulos ligados a plantas e cultura — etimologia com hipóteses em disputa, rede semântica e elo com o catálogo medicinal.",
+        "sectionWordsDesc": "Origem, viagem e transformação histórica de vocábulos — com mapa do duplo sentido prejudicial à originalidade; fichas publicadas em cards e fila de sugestões abaixo.",
         "plantsDropTitle": "Catálogo de plantas medicinais",
         "plantsDropDesc": "Fichas e relatórios por espécie — toque para expandir a lista.",
         "plantsDropCount": "{n} espécies",
@@ -1959,7 +1973,14 @@ window.__I18N_LOCALES__ = {
         "sugTipoDerivado": "Derivado",
         "sugTipoPalavra": "Palavra",
         "sugTipoPessoas": "Pessoas",
-        "sugTipoArte": "Arte"
+        "sugTipoArte": "Arte",
+        "wordsCatalogTitle": "Duplo sentido prejudicial à originalidade",
+        "wordsOriginal": "Originalidade",
+        "wordsPrejudiced": "Sentido prejudicial",
+        "wordsChange": "Mudança",
+        "wordsMapOnly": "mapa",
+        "wordsCatalogEmpty": "Catálogo vazio.",
+        "wordsCatalogError": "Não foi possível carregar o catálogo de palavras."
       },
       "research": {
         "eyebrow": "Biblioteca",

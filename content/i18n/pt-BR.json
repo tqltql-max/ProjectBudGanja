@@ -532,7 +532,6 @@
       "jumpLabel": "Ir para série",
       "jumpPlaceholder": "Escolher série…",
       "jumpCount": "{n}",
-
       "sectionPeople": "Legado",
       "sectionPeopleDesc": "Homenagens documentais a pessoas de referência — vida, mérito e cruzamento com o ecossistema inspecionado.",
       "sectionPeopleHistory": "Pessoas",
@@ -552,7 +551,7 @@
       "sectionDerivatives": "Derivados de risco",
       "sectionDerivativesDesc": "Origem botânica de plantas transformadas em produtos industriais associados a dano à saúde — sem demonizar a espécie; foco no desvio industrial e no consumo excessivo.",
       "sectionWords": "Palavras",
-      "sectionWordsDesc": "Origem, viagem e transformação histórica de vocábulos ligados a plantas e cultura — etimologia com hipóteses em disputa, rede semântica e elo com o catálogo medicinal.",
+      "sectionWordsDesc": "Origem, viagem e transformação histórica de vocábulos — com mapa do duplo sentido prejudicial à originalidade; fichas publicadas em cards e fila de sugestões abaixo.",
       "plantsDropTitle": "Catálogo de plantas medicinais",
       "plantsDropDesc": "Fichas e relatórios por espécie — toque para expandir a lista.",
       "plantsDropCount": "{n} espécies",
@@ -580,7 +579,14 @@
       "sugTipoDerivado": "Derivado",
       "sugTipoPalavra": "Palavra",
       "sugTipoPessoas": "Pessoas",
-      "sugTipoArte": "Arte"
+      "sugTipoArte": "Arte",
+      "wordsCatalogTitle": "Duplo sentido prejudicial à originalidade",
+      "wordsOriginal": "Originalidade",
+      "wordsPrejudiced": "Sentido prejudicial",
+      "wordsChange": "Mudança",
+      "wordsMapOnly": "mapa",
+      "wordsCatalogEmpty": "Catálogo vazio.",
+      "wordsCatalogError": "Não foi possível carregar o catálogo de palavras."
     },
     "research": {
       "eyebrow": "Biblioteca",

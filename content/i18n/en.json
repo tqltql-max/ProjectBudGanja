@@ -532,7 +532,6 @@
       "jumpLabel": "Go to series",
       "jumpPlaceholder": "Choose a series…",
       "jumpCount": "{n}",
-
       "sectionPeople": "Legacy",
       "sectionPeopleDesc": "Documentary tributes to reference figures — life, credit due, and links to the inspected ecosystem.",
       "sectionPeopleHistory": "People",
@@ -552,7 +551,7 @@
       "sectionDerivatives": "Risk derivatives",
       "sectionDerivativesDesc": "Botanical origin of plants transformed into industrial products linked to health harm — without demonizing the species; focus on industrial diversion and excess intake.",
       "sectionWords": "Words",
-      "sectionWordsDesc": "Origin, journey and historical transformation of plant- and culture-related vocabulary — etymology with competing hypotheses, semantic network and links to the medicinal catalog.",
+      "sectionWordsDesc": "Origin, journey and historical transformation of vocabulary — including a map of double meanings that harm originality; published sheets as cards and the suggestion queue below.",
       "plantsDropTitle": "Medicinal plants catalog",
       "plantsDropDesc": "Species profiles and reports — tap to expand the list.",
       "plantsDropCount": "{n} species",
@@ -580,7 +579,14 @@
       "sugTipoDerivado": "Derivative",
       "sugTipoPalavra": "Word",
       "sugTipoPessoas": "People",
-      "sugTipoArte": "Art"
+      "sugTipoArte": "Art",
+      "wordsCatalogTitle": "Double meanings that harm originality",
+      "wordsOriginal": "Originality",
+      "wordsPrejudiced": "Prejudicial sense",
+      "wordsChange": "Change",
+      "wordsMapOnly": "map only",
+      "wordsCatalogEmpty": "Empty catalog.",
+      "wordsCatalogError": "Could not load the words catalog."
     },
     "research": {
       "eyebrow": "Library",
