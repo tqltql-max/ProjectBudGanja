@@ -347,6 +347,22 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Baccharis trimera* — chá amargo do Sul/Sudeste; flavonoides e ácidos fenólicos na tradição hepato-digestiva."
             },
             {
+              "label": "Inspeção: Jostein Gaarder — filosofia narrada e elo com O Dia do Curinga",
+              "tileLabel": "Inspeção: Jostein Gaarder — fil…",
+              "href": "/posts/post-inspecao-figura-jostein-gaarder.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-jostein-gaarder",
+              "description": "Pessoas × Artes: Jostein Gaarder — método de ensinar filosofia pela narrativa, com elo principal no livro O Dia do Curinga (1990); distinto do Legado canábico."
+            },
+            {
+              "label": "Inspeção: O Dia do Curinga — o livro de Gaarder e a pergunta do curinga",
+              "tileLabel": "Inspeção: O Dia do Curinga — o …",
+              "href": "/posts/post-inspecao-arte-o-dia-do-curinga.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-o-dia-do-curinga",
+              "description": "Artes: O Dia do Curinga (*Kabalmysteriet*, 1990) — romance filosófico de Jostein Gaarder; curiosidade, viagem e metáfora da Bebida Púrpura. Autor em Pessoas."
+            },
+            {
               "label": "Inspeção: Profa. Dra. Eliana Rodrigues",
               "tileLabel": "Inspeção: Profa. Dra. Eliana Ro…",
               "href": "/posts/post-inspecao-eliana-rodrigues.html",
@@ -361,6 +377,22 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-cavalinha",
               "description": "*Equisetum arvense* — alto teor de sílica silícea, flavonoides e uso tradicional em chás e banhos."
+            },
+            {
+              "label": "Inspeção: Anthony Henman — antropologia da diamba e elo com Diamba Sarabamba",
+              "tileLabel": "Inspeção: Anthony Henman — antr…",
+              "href": "/posts/post-inspecao-figura-anthony-henman.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-anthony-henman",
+              "description": "Pessoas × Artes: Anthony Henman — método etnobotânico e antiproibicionista, com elo principal na antologia Diamba Sarabamba (1986); distinto do Legado canábico."
+            },
+            {
+              "label": "Inspeção: Diamba Sarabamba — a coletânea pioneira de 1986 sobre a maconha no Brasil",
+              "tileLabel": "Inspeção: Diamba Sarabamba — a …",
+              "href": "/posts/post-inspecao-arte-diamba-sarabamba.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-diamba-sarabamba",
+              "description": "Artes: Diamba Sarabamba (Ground, 1986) — coletânea de Henman e Pessoa Jr.; arquivo pioneiro do debate brasileiro sobre a diamba/maconha. Organizador em Pessoas."
             },
             {
               "label": "Inspeção: Gabrielle Dainezi — coordenação do curso UNIFESP",
@@ -379,12 +411,44 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Lippia alba* — erva aromática brasileira; quimiotipos ricos em citral ou carvona conforme região."
             },
             {
+              "label": "Inspeção: Nick Tosches — prosa afiada e elo com A Última Casa de Ópio",
+              "tileLabel": "Inspeção: Nick Tosches — prosa …",
+              "href": "/posts/post-inspecao-figura-nick-tosches.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-nick-tosches",
+              "description": "Pessoas × Artes: Nick Tosches — método jornalístico-literário, com elo principal no livro A Última Casa de Ópio (2002); distinto do Legado canábico."
+            },
+            {
+              "label": "Inspeção: A Última Casa de Ópio — a procura de Tosches e a crítica ao placebo",
+              "tileLabel": "Inspeção: A Última Casa de Ópio…",
+              "href": "/posts/post-inspecao-arte-a-ultima-casa-de-opio.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-a-ultima-casa-de-opio",
+              "description": "Artes: A Última Casa de Ópio (*The Last Opium Den*, 2002) — livro-reportagem de Nick Tosches; viagem, memória das dens e crítica ao consumismo. Autor em Pessoas. Sem romantizar ópio."
+            },
+            {
               "label": "Inspeção: Planta — Espinheira-santa — friedelina e triterpenos",
               "tileLabel": "Inspeção: Planta — Espinheira-s…",
               "href": "/posts/post-inspecao-planta-espinheira-santa.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-espinheira-santa",
               "description": "*Maytenus ilicifolia* — arbusto da Mata Atlântica; triterpenos e taninos na fitoterapia gástrica popular."
+            },
+            {
+              "label": "Inspeção: Annie Leonard — divulgação da economia dos materiais e elo com A História das Coisas",
+              "tileLabel": "Inspeção: Annie Leonard — divul…",
+              "href": "/posts/post-inspecao-figura-annie-leonard.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-annie-leonard",
+              "description": "Pessoas × Artes: Annie Leonard — método de explicar a economia linear das coisas, com elo principal no livro A História das Coisas (2010); distinto do Legado canábico."
+            },
+            {
+              "label": "Inspeção: A História das Coisas — o livro de Leonard e a máquina extrair-fazer-descartar",
+              "tileLabel": "Inspeção: A História das Coisas…",
+              "href": "/posts/post-inspecao-arte-a-historia-das-coisas.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-a-historia-das-coisas",
+              "description": "Artes: A História das Coisas (*The Story of Stuff*, 2010/2011) — livro de Annie Leonard sobre a economia linear das coisas; vídeo 2007 como precursor. Autora em Pessoas."
             },
             {
               "label": "Inspeção: Planta — Guaco — cumarina e trepadeira respiratória",

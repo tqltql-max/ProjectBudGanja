@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T17:46:22.936Z",
+  "updatedAt": "2026-08-01T18:21:21.054Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -574,6 +574,166 @@
         "/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html"
       ],
       "notes": "Livro primeiro (1862–1865); filme = eco."
+    },
+    {
+      "id": "arte-o-dia-do-curinga",
+      "title": "O Dia do Curinga — o livro de Gaarder e a pergunta do curinga",
+      "titleEn": "The Solitaire Mystery — Gaarder’s book and the joker’s question",
+      "titleEs": "El día del comodín — el libro de Gaarder y la pregunta del curinga",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Artes: O Dia do Curinga (1990) — livro primeiro; autor em Jostein Gaarder (Pessoas).",
+      "whyEn": "Arts: The Solitaire Mystery (1990) — book first; author in Jostein Gaarder (People).",
+      "whyEs": "Artes: O Dia do Curinga (1990) — libro primero; autor en Jostein Gaarder (Personas).",
+      "suggestedSlug": "inspecao-arte-o-dia-do-curinga",
+      "doneHref": "/posts/post-inspecao-arte-o-dia-do-curinga.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/O_Dia_do_Curinga",
+        "/posts/post-inspecao-figura-jostein-gaarder.html"
+      ],
+      "notes": "Kabalmysteriet 1990; Bebida Púrpura = metáfora literária."
+    },
+    {
+      "id": "figura-jostein-gaarder",
+      "title": "Jostein Gaarder — filosofia narrada e elo com O Dia do Curinga",
+      "titleEn": "Jostein Gaarder — narrated philosophy and link to The Solitaire Mystery",
+      "titleEs": "Jostein Gaarder — filosofía narrada y vínculo con O Dia do Curinga",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas × Artes: método filosófico-narrativo de Gaarder com elo em O Dia do Curinga.",
+      "whyEn": "People × Arts: Gaarder’s narrative-philosophy method linked to The Solitaire Mystery.",
+      "whyEs": "Personas × Artes: método filosófico-narrativo de Gaarder con vínculo en O Dia do Curinga.",
+      "suggestedSlug": "inspecao-figura-jostein-gaarder",
+      "doneHref": "/posts/post-inspecao-figura-jostein-gaarder.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Jostein_Gaarder",
+        "/posts/post-inspecao-arte-o-dia-do-curinga.html"
+      ],
+      "notes": "Pessoas ≠ Legado; livro fica em Artes."
+    },
+    {
+      "id": "arte-diamba-sarabamba",
+      "title": "Diamba Sarabamba — a coletânea pioneira de 1986 sobre a maconha no Brasil",
+      "titleEn": "Diamba Sarabamba — the pioneering 1986 Brazilian cannabis anthology",
+      "titleEs": "Diamba Sarabamba — la antología pionera de 1986 sobre la marihuana en Brasil",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Artes: Diamba Sarabamba (Ground, 1986) — livro primeiro; organizador em Anthony Henman (Pessoas).",
+      "whyEn": "Arts: Diamba Sarabamba (Ground, 1986) — book first; organizer in Anthony Henman (People).",
+      "whyEs": "Artes: Diamba Sarabamba (Ground, 1986) — libro primero; organizador en Anthony Henman (Personas).",
+      "suggestedSlug": "inspecao-arte-diamba-sarabamba",
+      "doneHref": "/posts/post-inspecao-arte-diamba-sarabamba.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "http://neip.info/livro/diamba-sarabamba-coletanea-de-textos-brasileiros-sobre-a-maconha-sao-paulo-ground-1986/",
+        "/posts/post-inspecao-figura-anthony-henman.html"
+      ],
+      "notes": "Coletânea Henman & Pessoa Jr.; Carlini contribui (Legado)."
+    },
+    {
+      "id": "figura-anthony-henman",
+      "title": "Anthony Henman — antropologia da diamba e elo com Diamba Sarabamba",
+      "titleEn": "Anthony Henman — diamba anthropology and link to Diamba Sarabamba",
+      "titleEs": "Anthony Henman — antropología de la diamba y vínculo con Diamba Sarabamba",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas × Artes: método etnobotânico de Henman com elo em Diamba Sarabamba.",
+      "whyEn": "People × Arts: Henman’s ethnobotanical method linked to Diamba Sarabamba.",
+      "whyEs": "Personas × Artes: método etnobotánico de Henman con vínculo en Diamba Sarabamba.",
+      "suggestedSlug": "inspecao-figura-anthony-henman",
+      "doneHref": "/posts/post-inspecao-figura-anthony-henman.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://www.erowid.org/culture/characters/henman_anthony/henman_anthony.shtml",
+        "/posts/post-inspecao-arte-diamba-sarabamba.html"
+      ],
+      "notes": "Pessoas ≠ Legado; livro fica em Artes. Pessoa Jr. = co-organizador (crédito no livro)."
+    },
+    {
+      "id": "arte-a-ultima-casa-de-opio",
+      "title": "A Última Casa de Ópio — a procura de Tosches e a crítica ao placebo",
+      "titleEn": "The Last Opium Den — Tosches’s quest and the critique of placebos",
+      "titleEs": "La última casa de opio — la búsqueda de Tosches y la crítica al placebo",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Artes: A Última Casa de Ópio (2002) — livro primeiro; autor em Nick Tosches (Pessoas).",
+      "whyEn": "Arts: The Last Opium Den (2002) — book first; author in Nick Tosches (People).",
+      "whyEs": "Artes: A Última Casa de Ópio (2002) — libro primero; autor en Nick Tosches (Personas).",
+      "suggestedSlug": "inspecao-arte-a-ultima-casa-de-opio",
+      "doneHref": "/posts/post-inspecao-arte-a-ultima-casa-de-opio.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Last_Opium_Den",
+        "/posts/post-inspecao-figura-nick-tosches.html"
+      ],
+      "notes": "Sem romantizar ópio; Vanity Fair → Bloomsbury 2002 → Conrad 2006."
+    },
+    {
+      "id": "figura-nick-tosches",
+      "title": "Nick Tosches — prosa afiada e elo com A Última Casa de Ópio",
+      "titleEn": "Nick Tosches — sharp prose and link to The Last Opium Den",
+      "titleEs": "Nick Tosches — prosa afilada y vínculo con A Última Casa de Ópio",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas × Artes: método jornalístico-literário de Tosches com elo em A Última Casa de Ópio.",
+      "whyEn": "People × Arts: Tosches’s literary-journalistic method linked to The Last Opium Den.",
+      "whyEs": "Personas × Artes: método periodístico-literario de Tosches con vínculo en A Última Casa de Ópio.",
+      "suggestedSlug": "inspecao-figura-nick-tosches",
+      "doneHref": "/posts/post-inspecao-figura-nick-tosches.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nick_Tosches",
+        "/posts/post-inspecao-arte-a-ultima-casa-de-opio.html"
+      ],
+      "notes": "Pessoas ≠ Legado; livro fica em Artes."
+    },
+    {
+      "id": "arte-a-historia-das-coisas",
+      "title": "A História das Coisas — o livro de Leonard e a máquina extrair-fazer-descartar",
+      "titleEn": "The Story of Stuff — Leonard’s book and the take-make-waste machine",
+      "titleEs": "La historia de las cosas — el libro de Leonard y la máquina extraer-hacer-desechar",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Artes: A História das Coisas (2010/2011) — livro primeiro; vídeo 2007 precursor; autora em Annie Leonard.",
+      "whyEn": "Arts: The Story of Stuff (2010) — book first; 2007 video precursor; author in Annie Leonard.",
+      "whyEs": "Artes: A História das Coisas (2010/2011) — libro primero; vídeo 2007 precursor; autora en Annie Leonard.",
+      "suggestedSlug": "inspecao-arte-a-historia-das-coisas",
+      "doneHref": "/posts/post-inspecao-arte-a-historia-das-coisas.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://www.companhiadasletras.com.br/livro/9788537807286/a-historia-das-coisas",
+        "/posts/post-inspecao-figura-annie-leonard.html"
+      ],
+      "notes": "Free Press 2010 · Zahar 2011; vídeo Free Range 2007."
+    },
+    {
+      "id": "figura-annie-leonard",
+      "title": "Annie Leonard — divulgação da economia dos materiais e elo com A História das Coisas",
+      "titleEn": "Annie Leonard — materials-economy outreach and link to The Story of Stuff",
+      "titleEs": "Annie Leonard — divulgación de la economía de materiales y vínculo con A História das Coisas",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas × Artes: método de Leonard com elo em A História das Coisas.",
+      "whyEn": "People × Arts: Leonard’s method linked to The Story of Stuff.",
+      "whyEs": "Personas × Artes: método de Leonard con vínculo en A História das Coisas.",
+      "suggestedSlug": "inspecao-figura-annie-leonard",
+      "doneHref": "/posts/post-inspecao-figura-annie-leonard.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Annie_Leonard",
+        "/posts/post-inspecao-arte-a-historia-das-coisas.html"
+      ],
+      "notes": "Pessoas ≠ Legado; livro fica em Artes."
     }
   ]
 }
