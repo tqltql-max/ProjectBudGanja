@@ -6772,19 +6772,13 @@ body[data-page="home"] .features {
         var(--shadow-card);
 }
 
-/* Cards da home ? moldura e t?tulos na tonalidade dourada da marca */
-body[data-page="home"] .home-card,
+/* Cards fora da home ? fallback dourado; na home as cores v?m de pages/home.css (menu hamb?rguer) */
 .home-card--guia,
-.home-card--cultivo,
 .home-card--ferramentas,
 .home-card--pesquisas,
-.home-card--inspecoes,
 .home-card--equipamentos,
-.home-card--comunidade,
-.home-card--videos,
 .home-card--radio,
-.home-card--sorteios,
-.home-card--plantas {
+.home-card--sorteios {
     border: 1px solid rgba(212, 175, 55, 0.4);
     background: linear-gradient(160deg, rgba(212, 175, 55, 0.12) 0%, rgba(26, 26, 26, 0.98) 58%);
     box-shadow:
@@ -6792,19 +6786,13 @@ body[data-page="home"] .home-card,
         0 8px 22px rgba(0, 0, 0, 0.28);
 }
 
-body[data-page="home"] .home-card h3,
 .home-card-featured h3,
 .home-card--guia h3,
-.home-card--cultivo h3,
 .home-card--ferramentas h3,
 .home-card--pesquisas h3,
-.home-card--inspecoes h3,
 .home-card--equipamentos h3,
-.home-card--comunidade h3,
-.home-card--videos h3,
 .home-card--radio h3,
-.home-card--sorteios h3,
-.home-card--plantas h3 {
+.home-card--sorteios h3 {
     color: #fef0b5;
     background: none;
     -webkit-background-clip: unset;
@@ -6860,9 +6848,10 @@ body[data-page="home"] .home-card h3,
 }
 
 .card-icon--plantas {
-    background: linear-gradient(145deg, rgba(122, 150, 25, 0.4), rgba(88, 120, 20, 0.18));
-    border: 1px solid rgba(168, 198, 60, 0.45);
-    box-shadow: 0 3px 10px rgba(122, 150, 25, 0.2);
+    /* Mesmo tom do menu hamb?rguer (Plantas usa tone comunidade) */
+    background: linear-gradient(145deg, rgba(39, 174, 96, 0.32), rgba(46, 204, 113, 0.14));
+    border: 1px solid rgba(46, 204, 113, 0.4);
+    box-shadow: 0 3px 10px rgba(39, 174, 96, 0.16);
 }
 
 .card-icon--equipamentos {
@@ -6922,11 +6911,10 @@ body[data-page="home"] .home-card h3,
 
 body[data-page="home"] .home-card:hover {
     transform: translateY(-2px);
-    border-color: rgba(212, 175, 55, 0.65);
+    border-color: var(--card-accent, rgba(212, 175, 55, 0.65));
     box-shadow:
-        0 0 0 1px rgba(212, 175, 55, 0.18),
-        0 10px 28px rgba(0, 0, 0, 0.35),
-        0 0 24px rgba(212, 175, 55, 0.16);
+        0 0 0 1px color-mix(in srgb, var(--card-accent, #d4af37) 28%, transparent),
+        0 10px 28px rgba(0, 0, 0, 0.35);
 }
 
 /* Home ? bot?es padronizados (creme/?mbar + oliva do banner) */
@@ -6989,6 +6977,20 @@ body[data-page="home"] .home-card .botao-home {
     padding: 7px 10px;
     font-size: 0.78rem;
     border-radius: 8px;
+    /* Cor do card (= menu hambúrguer), não o dourado genérico da home */
+    border-color: var(--card-accent-border, rgba(212, 175, 55, 0.42));
+    color: var(--card-label, #f5e6b8);
+    background: linear-gradient(145deg, var(--card-accent-strong, rgba(212, 175, 55, 0.28)), var(--card-accent-soft, rgba(212, 175, 55, 0.14)));
+    box-shadow: none;
+}
+
+body[data-page="home"] .home-card .botao-home:hover,
+body[data-page="home"] .home-card .botao-home:focus-visible {
+    border-color: var(--card-accent, #d4af37);
+    color: #fff;
+    background: linear-gradient(145deg, var(--card-accent-strong, rgba(212, 175, 55, 0.4)), var(--card-accent-soft, rgba(212, 175, 55, 0.2)));
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
+    transform: none;
 }
 
 body[data-page="home"] .home-announcement-inner .botao-home {
