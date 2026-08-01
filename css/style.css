@@ -8740,7 +8740,7 @@ body[data-page="apresentacao-unifesp"] .apresentacao-url a {
 }
 
 @media (max-width: 360px) {
-    /* Ecrã muito estreito: marca só com ícone + Comunidade */
+    /* Ecr? muito estreito: marca s? com ?cone + Comunidade */
     #site-header .header-quick-link--brand .header-quick-link-label {
         display: none;
     }
@@ -10774,7 +10774,21 @@ body[data-page="comunidade"] {
 
 .comunidade-header {
     margin-bottom: 0;
-    text-align: left;
+    text-align: center;
+}
+
+.comunidade-header-logo {
+    display: block;
+    width: min(160px, 42vw);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto 0.85rem;
+    object-fit: contain;
+    object-position: center;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .comunidade-header h1 {
@@ -10785,7 +10799,7 @@ body[data-page="comunidade"] {
 }
 
 .comunidade-header .secao-subtitulo {
-    margin: 0;
+    margin: 0 auto;
     max-width: 28rem;
     opacity: 0.82;
 }
@@ -11024,21 +11038,21 @@ body[data-page="comunidade"] {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 88px;
-    height: 88px;
+    width: 125px;
+    height: 125px;
     margin-bottom: 0.65rem;
-    border-radius: 50%;
-    overflow: hidden;
-    background: #0a1208;
-    border: 1px solid rgba(223, 194, 98, 0.4);
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
+    border-radius: 0;
+    overflow: visible;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
 }
 
 .comunidade-compose-photo-icon img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
