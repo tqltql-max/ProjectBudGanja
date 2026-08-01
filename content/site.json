@@ -152,12 +152,12 @@
                   "description": "Ficha fundadora da série Divulgação: IDs do canal @DrLairRibeiroOficiall, textos do portal sobre dor/Alzheimer e limites públicos — complementar ao Legado UNIFESP, sem equiparação."
                 },
                 {
-                  "label": "Inspeção: Heródoto — método da pesquisa e o abacate que ele não viu",
+                  "label": "Inspeção: Heródoto — método da pesquisa e a palavra passar",
                   "tileLabel": "Inspeção: Heródoto — método da …",
                   "href": "/posts/post-inspecao-figura-herodoto.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-figura-herodoto",
-                  "description": "Ficha fundadora da série Pessoas: Heródoto de Halicarnasso, *historie* como investigação, etnografia de povos e plantas — elo metodológico com o abacate (*Persea americana*) no catálogo brasileiro."
+                  "description": "Ficha fundadora da série Pessoas: Heródoto de Halicarnasso, *historie* como investigação do que se passou — elo metodológico com a palavra «passar» na série Palavras."
                 },
                 {
                   "label": "Inspeção: Maconha — origem da palavra e transformação no Brasil",
@@ -222,6 +222,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-figura-duvivier",
                   "description": "Pessoas × Palavras: Gregorio Duvivier (Letras, poesia, Greg News, O Céu da Língua) — o ofício da linguagem cruzado com a ficha maconha e o hub de vocábulos."
+                },
+                {
+                  "label": "Inspeção: Passar — verbo da passagem, do acontecido e da travessia",
+                  "tileLabel": "Inspeção: Passar — verbo da pas…",
+                  "href": "/posts/post-inspecao-palavra-passar.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-passar",
+                  "description": "Palavras × Pessoas: «passar» (latim *passāre*) — atravessar, o que se passou, o tempo — elo metodológico com Heródoto e o ofício de *historie*."
                 },
                 {
                   "label": "Inspeção: CEBRID — centro e medicina canabinoide",

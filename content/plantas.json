@@ -719,14 +719,7 @@
       ],
       "relatedUnifesp": false,
       "cover": null,
-      "relatedInspections": [
-        {
-          "href": "/posts/post-inspecao-figura-herodoto.html",
-          "label": "Inspeção: Heródoto — método da pesquisa e o abacate que ele não viu",
-          "labelEn": "Inspection: Herodotus — research method and the avocado he never saw",
-          "labelEs": "Inspección: Heródoto — método de investigación y el aguacate que no vio"
-        }
-      ]
+      "relatedInspections": []
     }
   ]
 }

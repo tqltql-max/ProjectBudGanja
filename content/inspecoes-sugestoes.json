@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T12:47:57.552Z",
+  "updatedAt": "2026-08-01T12:55:13.194Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes.",
   "items": [
     {
@@ -292,21 +292,21 @@
     },
     {
       "id": "figura-herodoto",
-      "title": "Heródoto — método da pesquisa e elo com o abacate",
-      "titleEn": "Herodotus — research method and avocado link",
-      "titleEs": "Heródoto — método de investigación y vínculo con el aguacate",
+      "title": "Heródoto — método da pesquisa e a palavra passar",
+      "titleEn": "Herodotus — research method and the word passar",
+      "titleEs": "Heródoto — método de investigación y la palabra passar",
       "tipo": "pessoas",
       "priority": 2,
       "status": "feita",
-      "why": "Ficha fundadora da série Pessoas: historie como investigação; ponte metodológica com Persea americana.",
-      "whyEn": "Founding sheet of the People series: historie as inquiry; methodological bridge to Persea americana.",
-      "whyEs": "Ficha fundadora de Personas: historie como investigación; puente metodológico con Persea americana.",
+      "why": "Ficha fundadora Pessoas: historie; elo metodológico com a palavra passar.",
+      "whyEn": "Founding People sheet: historie; methodological link to the word passar.",
+      "whyEs": "Ficha fundadora Personas: historie; vínculo metodológico con la palabra passar.",
       "suggestedSlug": "inspecao-figura-herodoto",
       "doneHref": "/posts/post-inspecao-figura-herodoto.html",
       "seriesHint": "pessoas-historia",
       "sources": [
         "https://pt.wikipedia.org/wiki/Her%C3%B3doto",
-        "/plantas/abacate/"
+        "/posts/post-inspecao-palavra-passar.html"
       ]
     },
     {
@@ -361,6 +361,24 @@
       "sources": [
         "https://pt.wikipedia.org/wiki/Chor%C3%A3o_(cantor)",
         "/posts/post-inspecao-palavra-maconha.html"
+      ]
+    },
+    {
+      "id": "palavra-passar",
+      "title": "Passar — verbo da passagem e elo com Heródoto",
+      "titleEn": "Passar — verb of passage and link to Herodotus",
+      "titleEs": "Passar — verbo de la pasada y vínculo con Heródoto",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras × Pessoas: latim passāre; sentidos de travessia e acontecido.",
+      "whyEn": "Words × People: Latin passāre; senses of crossing and what happened.",
+      "whyEs": "Palabras × Personas: latín passāre; sentidos de travesía y lo ocurrido.",
+      "suggestedSlug": "inspecao-palavra-passar",
+      "doneHref": "/posts/post-inspecao-palavra-passar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-figura-herodoto.html"
       ]
     }
   ]
