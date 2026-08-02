@@ -147,9 +147,28 @@
     var text = pickLocalized(update.text, '');
     var href = update.href ? String(update.href) : '';
     var linkLabel = pickLocalized(update.linkLabel, t('common.siteUpdateOpen', 'Abrir'));
-    if (!title && !text && !href) return '';
+    var image = update.image ? String(update.image) : '';
+    var imageAlt = pickLocalized(update.imageAlt, title || 'Capa');
+    if (!title && !text && !href && !image) return '';
+    var imageHtml = '';
+    if (image && image.charAt(0) === '/') {
+      var imgTag =
+        '<img class="cookie-consent-update-cover" src="' +
+        escapeHtml(image) +
+        '" alt="' +
+        escapeHtml(imageAlt) +
+        '" width="320" height="480" loading="eager" decoding="async">';
+      imageHtml =
+        href && href.charAt(0) === '/'
+          ? '<a class="cookie-consent-update-cover-link" href="' +
+            escapeHtml(href) +
+            '" data-update-dismiss="1">' +
+            imgTag +
+            '</a>'
+          : '<div class="cookie-consent-update-cover-wrap">' + imgTag + '</div>';
+    }
     var linkHtml = '';
-    if (href && href.charAt(0) === '/') {
+    if (href && href.charAt(0) === '/' && !imageHtml) {
       linkHtml =
         '<p class="cookie-consent-update-link"><a class="cookie-consent-update-cta" href="' +
         escapeHtml(href) +
@@ -158,9 +177,12 @@
         '</a></p>';
     }
     return (
-      '<div class="cookie-consent-update cookie-consent-update--minimal" data-update-id="' +
+      '<div class="cookie-consent-update cookie-consent-update--minimal' +
+      (imageHtml ? ' cookie-consent-update--with-cover' : '') +
+      '" data-update-id="' +
       escapeHtml(update.id) +
       '">' +
+      imageHtml +
       (title
         ? '<p class="cookie-consent-update-title cookie-consent-update-title--whisper">' +
           escapeHtml(title) +

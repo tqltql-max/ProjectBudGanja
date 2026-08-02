@@ -1,6 +1,12 @@
 {
-  "id": "bom-dia-inverno-2026-08-entry",
+  "id": "bom-dia-inverno-2026-08-cover",
   "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+  "image": "/imagens/inspecoes/bom-dia-inverno-cover.jpg",
+  "imageAlt": {
+    "pt-BR": "Capa de Bom dia, Inverno — Tamara Klink no gelo com o controle do drone na mão esquerda",
+    "en": "Bom dia, Inverno cover — Tamara Klink on the ice holding the drone controller in her left hand",
+    "es": "Portada de Bom dia, Inverno — Tamara Klink en el hielo con el control del dron en la mano izquierda"
+  },
   "linkLabel": {
     "pt-BR": "Ver divulgação",
     "en": "Open promotion",
@@ -17,9 +23,9 @@
     "es": "Bom dia, Inverno — Tamara Klink en el laboratorio"
   },
   "text": {
-    "pt-BR": "O site abre nesta divulgação: livro da invernagem ártica cruzado com barco, mar, gelo, balde e caminho.",
-    "en": "The site opens on this promotion: Arctic overwintering book crossed with boat, sea, ice, bucket and path.",
-    "es": "El sitio abre en esta divulgación: libro de la invernada ártica cruzado con barco, mar, hielo, balde y camino."
+    "pt-BR": "Capa oficial: a foto que ela tirou com o drone, controle na mão esquerda, no gelo da invernagem.",
+    "en": "Official cover: the photo she took with a drone, controller in her left hand, on the overwintering ice.",
+    "es": "Portada oficial: la foto que ella tomó con el dron, control en la mano izquierda, sobre el hielo de la invernada."
   },
   "cta": {
     "pt-BR": "Depois",
