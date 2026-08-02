@@ -2508,6 +2508,25 @@
     "seriesLabel": "Maracujá"
   },
   {
+    "title": "Inspeção: Gesto — a palavra que liga o laboratório inteiro",
+    "titleEn": "Inspection: Gesto — the word that links the whole lab",
+    "titleEs": "Inspección: Gesto — la palabra que une todo el laboratorio",
+    "excerpt": "Palavras: «gesto» / «gestos» (latim *gestus*) — o acto mínimo no BudGanja: cultivar, inspecionar, narrar, medir, ficar e partilhar.",
+    "excerptEn": "Words: “gesto” / “gestos” (Latin *gestus*) — the minimal act in BudGanja: grow, inspect, narrate, measure, stay and share.",
+    "excerptEs": "Palabras: «gesto» / «gestos» (latín *gestus*) — el acto mínimo en BudGanja: cultivar, inspeccionar, narrar, medir, quedarse y compartir.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-gesto",
+    "url": "/posts/post-inspecao-palavra-gesto.html",
+    "date": "2026-08-02T18:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-gesto.html",
+    "coverImage": "/imagens/inspecoes/gesto-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 22,
+    "seriesLabel": "Gesto · palavra"
+  },
+  {
     "title": "Inspeção: Lista F — âncora brasileira das listas de controlo",
     "titleEn": "Inspection: Lista F — Brazilian control-list anchor",
     "titleEs": "Inspección: Lista F — ancla brasileña de las listas de control",

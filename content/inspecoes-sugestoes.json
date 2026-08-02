@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T12:27:29.811Z",
+  "updatedAt": "2026-08-02T12:57:08.078Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2329,6 +2329,29 @@
         "/posts/post-inspecao-filme-the-matrix.html"
       ],
       "notes": "Criatividade inventa formas; verdade não inventa dados."
+    },
+    {
+      "id": "palavra-gesto",
+      "title": "Gesto — acto mínimo do laboratório",
+      "titleEn": "Gesto — minimal act of the lab",
+      "titleEs": "Gesto — acto mínimo del laboratorio",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: «gesto» (*gestus*) — mapa do projecto: Vida, cultivo, inspeções, ferramentas e rede.",
+      "whyEn": "Words: “gesto” (*gestus*) — map of the project: Vida, grow, inspections, tools and network.",
+      "whyEs": "Palabras: «gesto» (*gestus*) — mapa del proyecto: Vida, cultivo, inspecciones, herramientas y red.",
+      "suggestedSlug": "inspecao-palavra-gesto",
+      "doneHref": "/posts/post-inspecao-palavra-gesto.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/vida/",
+        "/guia/cultivo-basico.html",
+        "/biblioteca/inspecoes/",
+        "/posts/post-inspecao-palavra-verdade.html",
+        "/posts/post-inspecao-palavra-criatividade.html"
+      ],
+      "notes": "Gesto ≠ pose — acto com método e cuidado."
     }
   ]
 }

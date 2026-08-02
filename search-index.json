@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T12:27:39.344Z",
+  "updatedAt": "2026-08-02T12:57:17.646Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Gesto — a palavra que liga o laboratório inteiro",
+      "url": "/posts/post-inspecao-palavra-gesto.html",
+      "excerpt": "Palavras: «gesto» / «gestos» (latim *gestus*) — o acto mínimo no BudGanja: cultivar, inspecionar, narrar, medir, ficar e partilhar.",
+      "text": "Inspeção: Gesto — a palavra que liga o laboratório inteiro Palavras: «gesto» / «gestos» (latim *gestus*) — o acto mínimo no BudGanja: cultivar, inspecionar, narrar, medir, ficar e partilhar. inspecao ## Escopo\n\nInspeção editorial e linguística da palavra **gesto** (e o plural **gestos**) — do latim *gestus* («modo de agir, movimento do corpo») à rede de **acções concretas** que atravessam o projecto BudGanja. Um gesto aqui não é pose: é o acto mínimo que liga planta, palavra, pessoa e cuidado — regar, citar, ficar, medir, partilhar.\n\n> **Nota metodológica:** auditoria independente. Étimo de trabalho: latim *gerere* («levar, conduzir, fazer») → *gestus* → português **gesto** / **gestos**. Fontes de apoio: [Wikcionário · gesto](https://en.wiktionary.org/wiki/gesto#Portuguese), [Wikipédia · Gesto](https://pt.wikipedia.org/wiki/Gesto). **Ficha de palavra ≠ tratado de comunicação não-verbal** — aqui inspecionamos o **vocábulo** como mapa do laboratório inteiro ([Vida](/vida/), [cultivo](/guia/cultivo-basico.html), [inspeções](/biblioteca/inspecoes/), ferramentas, rádio, comunidade). Sem afiliação comercial.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **gesto** / **gestos** |\n| Classe | Substantivo masculino |\n| Étimo (hipótese forte) | Latim *gerere* («conduzir, fazer») → *gestus* («actuação, porte») → PT *gesto* |\n| Família | *gestual* · *gesticular* · *gestão* (mesmo étimo latino, sentido administrativo distinto) · *congênito* (via *gen-* ≠ *gest-*) |\n| Cognatos | esp. *gesto* · fr. *geste* · it. *gesto* · ing. *gesture* · lat. *gestus* |\n| Tipo BudGanja | Palavra — acto mínimo que organiza o projecto |\n| Elo trilha | [Vida](/vida/) · [Diário](/vida/diario/) · [conto do laboratório](/posts/post-inspecao-conto-vida-laboratorio.html) |\n| Elo cultivo | [Cultivo](/guia/cultivo-basico.html) · [Plantas](/plantas/) · [Animais](/animais/) · [calculadoras](/calculadoras/) |\n| Elo Palavras | [verdade](/posts/post-inspecao-palavra-verdade.html) · [cri"
     },
     {
       "title": "Inspeção: Verdade — a palavra de verificar no laboratório",
@@ -2742,6 +2748,12 @@
       "url": "/posts/post-inspecao-palavra-verdade.html",
       "excerpt": "Do latim *vērĭtās* / *vērus* — o que se pode verificar; no BudGanja, citar, medir e não fabricar evidência.",
       "text": "Verdade Do latim *vērĭtās* / *vērus* — o que se pode verificar; no BudGanja, citar, medir e não fabricar evidência. lexico guia palavras glossário verdade"
+    },
+    {
+      "title": "Gesto",
+      "url": "/posts/post-inspecao-palavra-gesto.html",
+      "excerpt": "Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade.",
+      "text": "Gesto Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade. lexico guia palavras glossário gesto"
     },
     {
       "title": "Sintético",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T12:27:29.814Z",
+  "updatedAt": "2026-08-02T12:57:08.080Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2164,6 +2164,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-verdade.html"
+    },
+    {
+      "id": "gesto",
+      "word": "Gesto",
+      "simple": "Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade.",
+      "simpleEn": "From Latin *gestus* — minimal act; in BudGanja it links Vida, grow, inspections, tools and community.",
+      "simpleEs": "Del latín *gestus* — acto mínimo; en BudGanja une Vida, cultivo, inspecciones, herramientas y comunidad.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-gesto.html"
     },
     {
       "id": "sintetico",
