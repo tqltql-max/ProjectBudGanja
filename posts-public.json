@@ -2242,6 +2242,25 @@
     "seriesLabel": "Andiroba"
   },
   {
+    "title": "Inspeção: Guia de Palavras — auditoria das 139 entradas e do acervo",
+    "titleEn": "Inspection: Words Guide — audit of 139 entries and the site archive",
+    "titleEs": "Inspección: Guía de Palabras — auditoría de 139 entradas y el acervo",
+    "excerpt": "Cobertura do glossário BudGanja cruzada com inspeções, plantas, páginas e rascunhos XIV — hrefs, profundidade e lacunas.",
+    "excerptEn": "BudGanja glossary coverage vs inspections, plants, pages and XIV drafts — hrefs, depth and gaps.",
+    "excerptEs": "Cobertura del glosario BudGanja frente a inspecciones, plantas, páginas y borradores XIV — hrefs, profundidad y lagunas.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-guia-palavras-cobertura",
+    "url": "/posts/post-inspecao-guia-palavras-cobertura.html",
+    "date": "2026-08-02T06:00:00.000Z",
+    "filename": "posts/post-inspecao-guia-palavras-cobertura.html",
+    "coverImage": "/imagens/og-default.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 19,
+    "seriesLabel": "Guia de Palavras · cobertura"
+  },
+  {
     "title": "Inspeção: Planta — Jambu — espilanthol e anestesia oral",
     "titleEn": "Inspection: Plant — Jambu — spilanthol and oral numbing",
     "titleEs": "Inspección: Planta — Jambu — espilantol y anestesia oral",

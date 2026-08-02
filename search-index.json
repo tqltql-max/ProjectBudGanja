@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T05:55:21.048Z",
+  "updatedAt": "2026-08-02T06:02:27.588Z",
   "items": [
     {
       "title": "Início",
@@ -156,6 +156,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Guia de Palavras — auditoria das 139 entradas e do acervo",
+      "url": "/posts/post-inspecao-guia-palavras-cobertura.html",
+      "excerpt": "Cobertura do glossário BudGanja cruzada com inspeções, plantas, páginas e rascunhos XIV — hrefs, profundidade e lacunas.",
+      "text": "Inspeção: Guia de Palavras — auditoria das 139 entradas e do acervo Cobertura do glossário BudGanja cruzada com inspeções, plantas, páginas e rascunhos XIV — hrefs, profundidade e lacunas. inspecao ## Escopo\n\nInspeção editorial e de **cobertura de conteúdo** do [Guia de Palavras](/guia/palavras.html) — as **139** entradas do glossário cruzadas com o acervo público do Inspetor BudGanja (inspeções, plantas, páginas, rascunhos XIV e índice de busca).\n\n> **Nota metodológica:** auditoria independente BudGanja em 2026-08-02. Objecto = glossário + rede de links. **Não** substitui fichas profundas de [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). Indexar ≠ endossar. Conteúdo educacional.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Objecto | [Guia de Palavras](/guia/palavras.html) |\n| Fonte de dados | [`content/guia-palavras.json`](/content/guia-palavras.json) |\n| Entradas | **139** |\n| Tipo BudGanja | Inspeção de cobertura — glossário × site |\n| Elo | Hub [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [Rascunhos XIV](/biblioteca/unifesp/livro-xiv.html) |\n| Data da inspeção | 2026-08-02 |\n\n## Hipóteses e método\n\n**H1:** o Guia é a **porta de entrada** — significado simples; a inspeção profunda fica nas fichas `post-inspecao-palavra-*`.  \n**H2:** cada entrada deve ter **href válido** no site (página, planta, inspeção ou rascunhos).  \n**H3:** o léxico XIV (THC, CBD, endocanabinoidoma…) entra como estudo — link preferencial aos [rascunhos das aulas](/biblioteca/unifesp/livro-xiv.html) até haver ficha própria.  \n**H4:** títulos do site e hubs devem apontar para rotas reais do laboratório.\n\nPassos:\n\n1. Contar entradas por grupo.  \n2. Classificar destino do link (inspeção / planta / página / livro XIV).  \n3. Verificar ficheiros em falta e hrefs nulos.  \n4. Cruzar com posts de Palavras, catálogo de plantas e páginas estáticas.  \n5. Declarar lacunas e próximos passos.  \n6. Status.\n\n## Inventário do site (contexto)\n\n| Recurso | Contagem |\n|--------"
     },
     {
       "title": "Inspeção: William Davis — cardiologista de Barriga de Trigo e o método anti-trigo",
@@ -1260,6 +1266,840 @@
       "url": "/animais/cavalo/",
       "excerpt": "Equídeo de trabalho, desporto e companhia — tradição rural brasileira e ética do bem-estar equino.",
       "text": "Cavalo Equus ferus caballus Equidae Equídeo de trabalho, desporto e companhia — tradição rural brasileira e ética do bem-estar equino. companhia trabalho rural Tração e transporte histórico Pastoreio Hipismo e lazer animal produção indústria derivado"
+    },
+    {
+      "title": "Açúcar",
+      "url": "/posts/post-inspecao-derivado-cana-de-acucar.html",
+      "excerpt": "Substância doce (sacarose e afins) — no site, elo da cana e dos ultraprocessados.",
+      "text": "Açúcar Substância doce (sacarose e afins) — no site, elo da cana e dos ultraprocessados. tecnico guia palavras glossário acucar"
+    },
+    {
+      "title": "Alecrim",
+      "url": "/plantas/alecrim/",
+      "excerpt": "Salvia rosmarinus — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Alecrim Salvia rosmarinus — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário alecrim"
+    },
+    {
+      "title": "Alegria",
+      "url": "/posts/post-inspecao-palavra-alegria.html",
+      "excerpt": "Sentimento bom e leve — a emoção amarela da Riley.",
+      "text": "Alegria Sentimento bom e leve — a emoção amarela da Riley. lexico guia palavras glossário alegria"
+    },
+    {
+      "title": "Algodão",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Gossypium — fibra vegetal; contraste histórico com o cânhamo. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Algodão Gossypium — fibra vegetal; contraste histórico com o cânhamo. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário algodao"
+    },
+    {
+      "title": "Anandamida",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Endocanabinoide (AEA) que o próprio corpo produz — frequentemente associado a efeitos «tipo THC» nos receptores. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Anandamida Endocanabinoide (AEA) que o próprio corpo produz — frequentemente associado a efeitos «tipo THC» nos receptores. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário anandamida"
+    },
+    {
+      "title": "Animais",
+      "url": "/animais/",
+      "excerpt": "Seres vivos do reino animal — no site, fichas de criação, companhia e derivados.",
+      "text": "Animais Seres vivos do reino animal — no site, fichas de criação, companhia e derivados. titulo guia palavras glossário animais"
+    },
+    {
+      "title": "Animal",
+      "url": "/posts/post-inspecao-palavra-animal.html",
+      "excerpt": "Ser vivo que não é planta — também palavra de carinho ou insulto, conforme o tom.",
+      "text": "Animal Ser vivo que não é planta — também palavra de carinho ou insulto, conforme o tom. lexico guia palavras glossário animal"
+    },
+    {
+      "title": "Artes",
+      "url": "/biblioteca/inspecoes/#inspecoes-artes",
+      "excerpt": "Filmes, músicas, livros e outras obras culturais que o laboratório inspeciona.",
+      "text": "Artes Filmes, músicas, livros e outras obras culturais que o laboratório inspeciona. hub guia palavras glossário artes"
+    },
+    {
+      "title": "Ayahuasca",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Bebida ritual amazónica (Banisteriopsis + Psychotria) — citada nos rascunhos das aulas XIV entre psicoativos vegetais.",
+      "text": "Ayahuasca Bebida ritual amazónica (Banisteriopsis + Psychotria) — citada nos rascunhos das aulas XIV entre psicoativos vegetais. tecnico guia palavras glossário ayahuasca"
+    },
+    {
+      "title": "Babosa",
+      "url": "/plantas/babosa/",
+      "excerpt": "Suculenta (Aloe vera) amplamente cultivada; gel foliar rico em polissacarídeos — tradição tópica; látex com antraquinonas (aloína) exige ca… Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Babosa Suculenta (Aloe vera) amplamente cultivada; gel foliar rico em polissacarídeos — tradição tópica; látex com antraquinonas (aloína) exige ca… Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário babosa"
+    },
+    {
+      "title": "Barbatimão",
+      "url": "/plantas/barbatimao/",
+      "excerpt": "Stryphnodendron adstringens — casca do Cerrado rica em taninos; tradição adstringente tópica e oral popular. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Barbatimão Stryphnodendron adstringens — casca do Cerrado rica em taninos; tradição adstringente tópica e oral popular. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário barbatimao"
+    },
+    {
+      "title": "Barriga de Trigo",
+      "url": "/posts/post-inspecao-arte-barriga-de-trigo.html",
+      "excerpt": "Livro de William Davis (2011) sobre trigo moderno, glicemia e gordura visceral.",
+      "text": "Barriga de Trigo Livro de William Davis (2011) sobre trigo moderno, glicemia e gordura visceral. lexico guia palavras glossário barriga-de-trigo"
+    },
+    {
+      "title": "Bhang",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Bebida tradicional à base de folhas de cannabis (Ásia), distinta da flor ou da resina. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Bhang Bebida tradicional à base de folhas de cannabis (Ásia), distinta da flor ou da resina. Citada nos rascunhos das aulas XIV (curso UNIFESP). lexico guia palavras glossário bhang"
+    },
+    {
+      "title": "Biblioteca",
+      "url": "/plantas/",
+      "excerpt": "Lugar onde o conhecimento fica organizado — no site, o menu de plantas, inspeções e cursos.",
+      "text": "Biblioteca Lugar onde o conhecimento fica organizado — no site, o menu de plantas, inspeções e cursos. titulo guia palavras glossário biblioteca"
+    },
+    {
+      "title": "Broad spectrum",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Extrato «quase» full spectrum — tipicamente sem THC (ou com residual mínimo). Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Broad spectrum Extrato «quase» full spectrum — tipicamente sem THC (ou com residual mínimo). Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário broad-spectrum"
+    },
+    {
+      "title": "BudGanja",
+      "url": "/",
+      "excerpt": "Nome da marca do laboratório — junta «bud» (botão/flor) e «ganja» (nome índico da planta).",
+      "text": "BudGanja Nome da marca do laboratório — junta «bud» (botão/flor) e «ganja» (nome índico da planta). marca guia palavras glossário budganja"
+    },
+    {
+      "title": "Cacau",
+      "url": "/plantas/cacau/",
+      "excerpt": "Planta e amêndoa de Theobroma cacao — origem do chocolate; não é o vilão da fábrica.",
+      "text": "Cacau Planta e amêndoa de Theobroma cacao — origem do chocolate; não é o vilão da fábrica. tecnico guia palavras glossário cacau"
+    },
+    {
+      "title": "Café",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Coffea — bebida e planta; cafeína como psicoativo quotidiano. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Café Coffea — bebida e planta; cafeína como psicoativo quotidiano. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário cafe"
+    },
+    {
+      "title": "Calêndula",
+      "url": "/plantas/calendula/",
+      "excerpt": "Calendula officinalis — pétalas com triterpenos e carotenóides; tradição tópica em pele e infusões leves. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Calêndula Calendula officinalis — pétalas com triterpenos e carotenóides; tradição tópica em pele e infusões leves. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário calendula"
+    },
+    {
+      "title": "Caminho",
+      "url": "/posts/post-inspecao-palavra-caminho.html",
+      "excerpt": "Via por onde se anda — no laboratório, a palavra que liga pesquisa, vida e travessia.",
+      "text": "Caminho Via por onde se anda — no laboratório, a palavra que liga pesquisa, vida e travessia. lexico guia palavras glossário caminho"
+    },
+    {
+      "title": "Camomila",
+      "url": "/plantas/camomila/",
+      "excerpt": "Capítulos de Matricaria chamomilla — tradição de chás calmantes; marcadores como apigenina e óleo azul (camazuleno) em contexto educacional. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Camomila Capítulos de Matricaria chamomilla — tradição de chás calmantes; marcadores como apigenina e óleo azul (camazuleno) em contexto educacional. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário camomila"
+    },
+    {
+      "title": "Canabimimético",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Planta ou substância que mimetiza ou modula o sistema endocanabinoide sem ser necessariamente cannabis. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Canabimimético Planta ou substância que mimetiza ou modula o sistema endocanabinoide sem ser necessariamente cannabis. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário canabimimetico"
+    },
+    {
+      "title": "CANABinALL",
+      "url": "/posts/post-inspecao-canal-canabinall.html",
+      "excerpt": "Canal de divulgação científica ligado ao ecossistema UNIFESP / MovReCam.",
+      "text": "CANABinALL Canal de divulgação científica ligado ao ecossistema UNIFESP / MovReCam. tecnico guia palavras glossário canabinall"
+    },
+    {
+      "title": "Cânhamo",
+      "url": "/posts/post-inspecao-palavra-canhamo.html",
+      "excerpt": "Variedade da cannabis usada sobretudo por fibra e usos industriais, não por embriaguez.",
+      "text": "Cânhamo Variedade da cannabis usada sobretudo por fibra e usos industriais, não por embriaguez. lexico guia palavras glossário canhamo"
+    },
+    {
+      "title": "Cannabis",
+      "url": "/posts/post-inspecao-palavra-cannabis.html",
+      "excerpt": "Nome científico/latino da planta — o termo técnico mais usado em medicina e lei.",
+      "text": "Cannabis Nome científico/latino da planta — o termo técnico mais usado em medicina e lei. lexico guia palavras glossário cannabis"
+    },
+    {
+      "title": "Cannabis indica",
+      "url": "/plantas/cannabis-sativa/",
+      "excerpt": "Espécie/linhagem do género Cannabis frequentemente citada junto da sativa — morfologia e quimiotipo variam. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Cannabis indica Espécie/linhagem do género Cannabis frequentemente citada junto da sativa — morfologia e quimiotipo variam. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário cannabis-indica"
+    },
+    {
+      "title": "Cannabis ruderalis",
+      "url": "/plantas/cannabis-sativa/",
+      "excerpt": "Forma/linhagem de Cannabis associada a autofloração e menor porte — citada em taxonomia e cultivo. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Cannabis ruderalis Forma/linhagem de Cannabis associada a autofloração e menor porte — citada em taxonomia e cultivo. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário cannabis-ruderalis"
+    },
+    {
+      "title": "Caseína",
+      "url": "/posts/post-inspecao-derivado-caseina.html",
+      "excerpt": "Proteína principal do leite — no site, tratada como produto de risco alimentar.",
+      "text": "Caseína Proteína principal do leite — no site, tratada como produto de risco alimentar. tecnico guia palavras glossário caseina"
+    },
+    {
+      "title": "CB1",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Receptor canabinoide mais abundante no sistema nervoso central — alvo clássico do THC. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "CB1 Receptor canabinoide mais abundante no sistema nervoso central — alvo clássico do THC. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário cb1"
+    },
+    {
+      "title": "CB2",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Receptor canabinoide mais ligado a imunidade e tecidos periféricos — alvo de terpenos como β-cariofileno. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "CB2 Receptor canabinoide mais ligado a imunidade e tecidos periféricos — alvo de terpenos como β-cariofileno. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário cb2"
+    },
+    {
+      "title": "CBC",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Canabicromeno — fitocanabinoide da via do CBGA, citado com atividades anti-inflamatórias e analgésicas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "CBC Canabicromeno — fitocanabinoide da via do CBGA, citado com atividades anti-inflamatórias e analgésicas. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário cbc"
+    },
+    {
+      "title": "CBD",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Canabidiol — fitocanabinoide não (ou pouco) psicoativo, muito citado em epilepsia e em óleos isolados vs planta inteira. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "CBD Canabidiol — fitocanabinoide não (ou pouco) psicoativo, muito citado em epilepsia e em óleos isolados vs planta inteira. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário cbd"
+    },
+    {
+      "title": "CBG",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Canabigerol — fitocanabinoide «mãe» da via biossintética; predominante no quimiotipo 4 (cânhamo). Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "CBG Canabigerol — fitocanabinoide «mãe» da via biossintética; predominante no quimiotipo 4 (cânhamo). Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário cbg"
+    },
+    {
+      "title": "CBN",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Canabinol — produto de oxidação do THC; um dos quatro fitocanabinoides centrais na aula de quimiotipos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "CBN Canabinol — produto de oxidação do THC; um dos quatro fitocanabinoides centrais na aula de quimiotipos. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário cbn"
+    },
+    {
+      "title": "CEBRID",
+      "url": "/posts/post-inspecao-cebrid.html",
+      "excerpt": "Centro UNIFESP de informação sobre drogas psicotrópicas e medicina canabinoide.",
+      "text": "CEBRID Centro UNIFESP de informação sobre drogas psicotrópicas e medicina canabinoide. tecnico guia palavras glossário cebrid"
+    },
+    {
+      "title": "Charas",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Resina tradicional obtida esfregando flores femininas — forma etnobotânica citada junto de ganja e bhang. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Charas Resina tradicional obtida esfregando flores femininas — forma etnobotânica citada junto de ganja e bhang. Citada nos rascunhos das aulas XIV (curso UNIFESP). lexico guia palavras glossário charas"
+    },
+    {
+      "title": "Chocolate",
+      "url": "/posts/post-inspecao-derivado-chocolate.html",
+      "excerpt": "Matriz industrial que junta cacau, açúcar, farinha e leite — hub de Produtos nocivos.",
+      "text": "Chocolate Matriz industrial que junta cacau, açúcar, farinha e leite — hub de Produtos nocivos. tecnico guia palavras glossário chocolate"
+    },
+    {
+      "title": "Clonadora",
+      "url": "/equipamentos/",
+      "excerpt": "Equipamento (mesmo caseiro) para enraizar estacas e multiplicar plantas.",
+      "text": "Clonadora Equipamento (mesmo caseiro) para enraizar estacas e multiplicar plantas. tecnico guia palavras glossário clonadora"
+    },
+    {
+      "title": "Coca",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Erythroxylum coca — folha tradicional andina; distinta da cocaína isolada. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Coca Erythroxylum coca — folha tradicional andina; distinta da cocaína isolada. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário coca"
+    },
+    {
+      "title": "Coelho",
+      "url": "/posts/post-inspecao-palavra-coelho.html",
+      "excerpt": "Animal da toca — no método BudGanja, a palavra da entrada na investigação.",
+      "text": "Coelho Animal da toca — no método BudGanja, a palavra da entrada na investigação. lexico guia palavras glossário coelho"
+    },
+    {
+      "title": "Cogumelo",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Fungos (ex. Psilocybe) citados nas aulas de psicodélicos — léxico etnobotânico do curso, não planta. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Cogumelo Fungos (ex. Psilocybe) citados nas aulas de psicodélicos — léxico etnobotânico do curso, não planta. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário cogumelo"
+    },
+    {
+      "title": "Comunidade",
+      "url": "/comunidade/",
+      "excerpt": "Espaço social do laboratório — Feed Vivo, identificação de plantas e partilha do diário.",
+      "text": "Comunidade Espaço social do laboratório — Feed Vivo, identificação de plantas e partilha do diário. titulo guia palavras glossário comunidade"
+    },
+    {
+      "title": "Copaíba",
+      "url": "/plantas/copaiba/",
+      "excerpt": "Copaifera — óleo-resina amazônico/cerrado rico em β-cariofileno e diterpenos; tradição tópica e oral popular. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Copaíba Copaifera — óleo-resina amazônico/cerrado rico em β-cariofileno e diterpenos; tradição tópica e oral popular. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário copaiba"
+    },
+    {
+      "title": "Cultivar",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Variedade agronómica selecionada — nas aulas, milhares de cultivares vs poucos quimiotipos úteis clinicamente. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Cultivar Variedade agronómica selecionada — nas aulas, milhares de cultivares vs poucos quimiotipos úteis clinicamente. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário cultivar"
+    },
+    {
+      "title": "Cultivo",
+      "url": "/cultivo/",
+      "excerpt": "Ato de plantar e cuidar até a planta crescer — do solo à colheita.",
+      "text": "Cultivo Ato de plantar e cuidar até a planta crescer — do solo à colheita. tecnico guia palavras glossário cultivo"
+    },
+    {
+      "title": "Descarboxilação",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Passo (calor/química) que converte ácidos (THCA/CBDA…) nas formas «ativas» THC/CBD usadas em óleos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Descarboxilação Passo (calor/química) que converte ácidos (THCA/CBDA…) nas formas «ativas» THC/CBD usadas em óleos. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário descarboxilacao"
+    },
+    {
+      "title": "Diamba",
+      "url": "/posts/post-inspecao-palavra-diamba.html",
+      "excerpt": "Nome afro-brasileiro antigo da cannabis — tradição oral, pouco usado hoje.",
+      "text": "Diamba Nome afro-brasileiro antigo da cannabis — tradição oral, pouco usado hoje. lexico guia palavras glossário diamba"
+    },
+    {
+      "title": "Diário",
+      "url": "/cultivo/",
+      "excerpt": "Registo dia a dia — no site, o Diário de Pesquisas e o Diário da Sementinha.",
+      "text": "Diário Registo dia a dia — no site, o Diário de Pesquisas e o Diário da Sementinha. titulo guia palavras glossário diario"
+    },
+    {
+      "title": "Divulgação",
+      "url": "/biblioteca/inspecoes/",
+      "excerpt": "Explicar ciência ou saúde para o público amplo — no hub, fichas de outreach.",
+      "text": "Divulgação Explicar ciência ou saúde para o público amplo — no hub, fichas de outreach. hub guia palavras glossário divulgacao"
+    },
+    {
+      "title": "2-AG",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "2-Araquidonoilglicerol — endocanabinoide central, com enzimas próprias de síntese e degradação. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "2-AG 2-Araquidonoilglicerol — endocanabinoide central, com enzimas próprias de síntese e degradação. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário dois-ag"
+    },
+    {
+      "title": "Droga",
+      "url": "/posts/post-inspecao-palavra-droga.html",
+      "excerpt": "Antes significava remédio; hoje, no senso comum, quase sempre substância ilícita.",
+      "text": "Droga Antes significava remédio; hoje, no senso comum, quase sempre substância ilícita. lexico guia palavras glossário droga"
+    },
+    {
+      "title": "Droga vegetal",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Planta medicinal após colheita, secagem e processamento — antes do medicamento acabado. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Droga vegetal Planta medicinal após colheita, secagem e processamento — antes do medicamento acabado. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário droga-vegetal"
+    },
+    {
+      "title": "Efeito comitiva",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Sinergia da planta inteira (canabinoides + terpenos + outros) face ao isolado — «entourage» nas aulas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Efeito comitiva Sinergia da planta inteira (canabinoides + terpenos + outros) face ao isolado — «entourage» nas aulas. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário efeito-comitiva"
+    },
+    {
+      "title": "Emoção",
+      "url": "/posts/post-inspecao-palavra-emocao.html",
+      "excerpt": "Sentimento forte do corpo e da mente — hub lexical da Riley (Divertida Mente).",
+      "text": "Emoção Sentimento forte do corpo e da mente — hub lexical da Riley (Divertida Mente). lexico guia palavras glossário emocao"
+    },
+    {
+      "title": "Endocanabinoide",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Mensageiro que o próprio corpo produz (ex. anandamida, 2-AG) e que age nos receptores canabinoides. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Endocanabinoide Mensageiro que o próprio corpo produz (ex. anandamida, 2-AG) e que age nos receptores canabinoides. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário endocanabinoide"
+    },
+    {
+      "title": "Endocanabinoidoma",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Ampliação do sistema endocanabinoide: rede integrada de mediadores, receptores, enzimas e vias metabólicas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Endocanabinoidoma Ampliação do sistema endocanabinoide: rede integrada de mediadores, receptores, enzimas e vias metabólicas. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário endocanabinoidoma"
+    },
+    {
+      "title": "Entorpecente",
+      "url": "/posts/post-inspecao-palavra-droga.html",
+      "excerpt": "Substância que entorpece (diminui sensação ou reação) — termo jurídico-policial.",
+      "text": "Entorpecente Substância que entorpece (diminui sensação ou reação) — termo jurídico-policial. lexico guia palavras glossário entorpecente"
+    },
+    {
+      "title": "Equinácea",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Echinacea — planta citada entre as que modulam receptores do sistema endocanabinoide. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Equinácea Echinacea — planta citada entre as que modulam receptores do sistema endocanabinoide. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário equinacea"
+    },
+    {
+      "title": "Equipamentos",
+      "url": "/equipamentos/",
+      "excerpt": "Aparelhos e montagens do laboratório — clonadoras, ventilação, kits.",
+      "text": "Equipamentos Aparelhos e montagens do laboratório — clonadoras, ventilação, kits. titulo guia palavras glossário equipamentos"
+    },
+    {
+      "title": "Erva",
+      "url": "/posts/post-inspecao-palavra-erva.html",
+      "excerpt": "Planta pequena sem tronco lenhoso — e também eufemismo popular para cannabis.",
+      "text": "Erva Planta pequena sem tronco lenhoso — e também eufemismo popular para cannabis. lexico guia palavras glossário erva"
+    },
+    {
+      "title": "Erva-cidreira",
+      "url": "/plantas/erva-cidreira/",
+      "excerpt": "Lippia alba — erva-cidreira brasileira; folhas com óleos essenciais (citral/carvona conforme quimiotipo) em chás e banhos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Erva-cidreira Lippia alba — erva-cidreira brasileira; folhas com óleos essenciais (citral/carvona conforme quimiotipo) em chás e banhos. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário erva-cidreira"
+    },
+    {
+      "title": "Espinheira-santa",
+      "url": "/plantas/espinheira-santa/",
+      "excerpt": "Maytenus ilicifolia — Mata Atlântica; folhas na tradição gástrica brasileira; taninos e triterpenos em contexto educacional. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Espinheira-santa Maytenus ilicifolia — Mata Atlântica; folhas na tradição gástrica brasileira; taninos e triterpenos em contexto educacional. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário espinheira-santa"
+    },
+    {
+      "title": "Estaca",
+      "url": "/equipamentos/",
+      "excerpt": "Pedaço de planta cortado para criar raiz e virar uma planta nova (clone).",
+      "text": "Estaca Pedaço de planta cortado para criar raiz e virar uma planta nova (clone). tecnico guia palavras glossário estaca"
+    },
+    {
+      "title": "Etnobotânica",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Ciência da relação entre culturas e plantas — usos medicinais, rituais e nomes populares. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Etnobotânica Ciência da relação entre culturas e plantas — usos medicinais, rituais e nomes populares. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário etnobotanica"
+    },
+    {
+      "title": "Farmácia Viva",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Serviço do SUS que cultiva, processa e dispensa plantas e fitoterápicos com qualidade e rastreabilidade. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Farmácia Viva Serviço do SUS que cultiva, processa e dispensa plantas e fitoterápicos com qualidade e rastreabilidade. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário farmacia-viva"
+    },
+    {
+      "title": "Feed Vivo",
+      "url": "/comunidade/",
+      "excerpt": "Mural da comunidade — fotos, identificação de plantas e conversa aberta.",
+      "text": "Feed Vivo Mural da comunidade — fotos, identificação de plantas e conversa aberta. titulo guia palavras glossário feed-vivo"
+    },
+    {
+      "title": "Ferramentas",
+      "url": "/calculadoras/",
+      "excerpt": "Calculadoras e utilitários do laboratório (luz, clima, solo, EC…).",
+      "text": "Ferramentas Calculadoras e utilitários do laboratório (luz, clima, solo, EC…). titulo guia palavras glossário ferramentas"
+    },
+    {
+      "title": "Fitocanabinoide",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Canabinoide produzido por plantas (sobretudo cannabis) — e, nas aulas, compostos vegetais que agem no sistema endocanabinoide. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Fitocanabinoide Canabinoide produzido por plantas (sobretudo cannabis) — e, nas aulas, compostos vegetais que agem no sistema endocanabinoide. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário fitocanabinoide"
+    },
+    {
+      "title": "Fitofármaco",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Medicamento a partir de composto isolado da planta — nas aulas, distinto do fitoterápico de planta inteira. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Fitofármaco Medicamento a partir de composto isolado da planta — nas aulas, distinto do fitoterápico de planta inteira. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário fitofarmaco"
+    },
+    {
+      "title": "Fitoterapia",
+      "url": "/plantas/",
+      "excerpt": "Uso de plantas para cuidar da saúde — base do laboratório BudGanja.",
+      "text": "Fitoterapia Uso de plantas para cuidar da saúde — base do laboratório BudGanja. marca guia palavras glossário fitoterapia"
+    },
+    {
+      "title": "Floração",
+      "url": "/guia/cultivo-basico.html",
+      "excerpt": "Fase reprodutiva em que a planta concentra flores e tricomas — «ciência da floração» no guia de cultivo.",
+      "text": "Floração Fase reprodutiva em que a planta concentra flores e tricomas — «ciência da floração» no guia de cultivo. tecnico guia palavras glossário floracao"
+    },
+    {
+      "title": "Frutos",
+      "url": "/biblioteca/inspecoes/",
+      "excerpt": "Parte da planta que carrega a semente — no hub, fichas de frutas inspecionadas.",
+      "text": "Frutos Parte da planta que carrega a semente — no hub, fichas de frutas inspecionadas. hub guia palavras glossário frutos"
+    },
+    {
+      "title": "Full spectrum",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Extrato com o perfil amplo da planta (vários canabinoides e terpenos) — oposto ao isolado puro. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Full spectrum Extrato com o perfil amplo da planta (vários canabinoides e terpenos) — oposto ao isolado puro. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário full-spectrum"
+    },
+    {
+      "title": "Fumo de Angola",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Nome popular afro-brasileiro histórico da planta — citado com maconha, diamba/liamba e ganja. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Fumo de Angola Nome popular afro-brasileiro histórico da planta — citado com maconha, diamba/liamba e ganja. Citada nos rascunhos das aulas XIV (curso UNIFESP). lexico guia palavras glossário fumo-de-angola"
+    },
+    {
+      "title": "Ganja",
+      "url": "/posts/post-inspecao-palavra-ganja.html",
+      "excerpt": "Nome da planta na rota índica/sânscrita — depois gíria global e parte da marca BudGanja.",
+      "text": "Ganja Nome da planta na rota índica/sânscrita — depois gíria global e parte da marca BudGanja. marca guia palavras glossário ganja"
+    },
+    {
+      "title": "Glúten",
+      "url": "/posts/post-inspecao-derivado-gluten.html",
+      "excerpt": "Proteína do trigo e de outros cereais — no site, ficha de produto nocivo.",
+      "text": "Glúten Proteína do trigo e de outros cereais — no site, ficha de produto nocivo. tecnico guia palavras glossário gluten"
+    },
+    {
+      "title": "Guaco",
+      "url": "/plantas/guaco/",
+      "excerpt": "Mikania glomerata — trepadeira clássica em xaropes e chás respiratórios; cumarinas (ex. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Guaco Mikania glomerata — trepadeira clássica em xaropes e chás respiratórios; cumarinas (ex. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário guaco"
+    },
+    {
+      "title": "Guaraná",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Paullinia cupana — estimulante amazónico na classificação de psicoativos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Guaraná Paullinia cupana — estimulante amazónico na classificação de psicoativos. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário guarana"
+    },
+    {
+      "title": "Guia de Cultivo",
+      "url": "/guia/cultivo-basico.html",
+      "excerpt": "Trilha do site sobre nutrição, solo vivo, floração, clonagem e indoor.",
+      "text": "Guia de Cultivo Trilha do site sobre nutrição, solo vivo, floração, clonagem e indoor. titulo guia palavras glossário guia-de-cultivo"
+    },
+    {
+      "title": "Guias",
+      "url": "/guia/palavras.html",
+      "excerpt": "Textos que ensinam passo a passo — clonadoras, ferramentas e este glossário.",
+      "text": "Guias Textos que ensinam passo a passo — clonadoras, ferramentas e este glossário. titulo guia palavras glossário guias"
+    },
+    {
+      "title": "Hortelã",
+      "url": "/plantas/hortela/",
+      "excerpt": "Mentha spicata (e afins) — mentol/óleos mentolados em chás e culinária; espécie e quimiotipo importam. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Hortelã Mentha spicata (e afins) — mentol/óleos mentolados em chás e culinária; espécie e quimiotipo importam. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário hortela"
+    },
+    {
+      "title": "Inspeção",
+      "url": "/biblioteca/inspecoes/",
+      "excerpt": "Olhar com método, anotar o que se vê e publicar o relatório.",
+      "text": "Inspeção Olhar com método, anotar o que se vê e publicar o relatório. titulo guia palavras glossário inspecao"
+    },
+    {
+      "title": "Inspeções",
+      "url": "/biblioteca/inspecoes/",
+      "excerpt": "Os relatórios publicados do laboratório — legado, palavras, plantas, artes…",
+      "text": "Inspeções Os relatórios publicados do laboratório — legado, palavras, plantas, artes… titulo guia palavras glossário inspecoes"
+    },
+    {
+      "title": "Inspetor",
+      "url": "/posts/post-inspecao-personagem-inspetor.html",
+      "excerpt": "Quem observa, verifica e documenta com método — personagem e marca do site.",
+      "text": "Inspetor Quem observa, verifica e documenta com método — personagem e marca do site. marca guia palavras glossário inspetor"
+    },
+    {
+      "title": "Isolado",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Princípio ativo purificado (ex. CBD ~98%) — contraste com o fitoterápico de planta inteira. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Isolado Princípio ativo purificado (ex. CBD ~98%) — contraste com o fitoterápico de planta inteira. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário isolado"
+    },
+    {
+      "title": "Jambu",
+      "url": "/plantas/jambu/",
+      "excerpt": "Acmella oleracea — jambu amazônico; spilanthol provoca formigamento; culinária paraense e tradição oral. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Jambu Acmella oleracea — jambu amazônico; spilanthol provoca formigamento; culinária paraense e tradição oral. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário jambu"
+    },
+    {
+      "title": "Jurema",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Nome popular de Mimosa (ex. hostilis/tenuiflora) — tradição ritual e etnobotânica no Brasil. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Jurema Nome popular de Mimosa (ex. hostilis/tenuiflora) — tradição ritual e etnobotânica no Brasil. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário jurema"
+    },
+    {
+      "title": "Laboratório",
+      "url": "/",
+      "excerpt": "Lugar de experiência e medida — aqui, o laboratório digital público BudGanja.",
+      "text": "Laboratório Lugar de experiência e medida — aqui, o laboratório digital público BudGanja. marca guia palavras glossário laboratorio"
+    },
+    {
+      "title": "Laranja",
+      "url": "/plantas/laranja/",
+      "excerpt": "Citrino: fruto inteiro vs suco concentrado, néctares e refrigerantes «de laranja» com açúcar e aditivos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Laranja Citrino: fruto inteiro vs suco concentrado, néctares e refrigerantes «de laranja» com açúcar e aditivos. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário laranja"
+    },
+    {
+      "title": "Lavanda",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Planta aromática rica em terpenos — comparada aos cheiros de variedades de cannabis. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Lavanda Planta aromática rica em terpenos — comparada aos cheiros de variedades de cannabis. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário lavanda"
+    },
+    {
+      "title": "Legado",
+      "url": "/biblioteca/inspecoes/",
+      "excerpt": "O que fica de quem veio antes — pessoas, CEBRID, curso e canais fundadores.",
+      "text": "Legado O que fica de quem veio antes — pessoas, CEBRID, curso e canais fundadores. hub guia palavras glossário legado"
+    },
+    {
+      "title": "Lúpulo",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Humulus lupulus — parente botânico da cannabis (Cannabaceae), usado na cerveja; contraste taxonómico nas aulas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Lúpulo Humulus lupulus — parente botânico da cannabis (Cannabaceae), usado na cerveja; contraste taxonómico nas aulas. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário lupulo"
+    },
+    {
+      "title": "Luxímetro",
+      "url": "/calculadoras/luximetro.html",
+      "excerpt": "Ferramenta para medir a luz — no site, também com a câmara do telemóvel.",
+      "text": "Luxímetro Ferramenta para medir a luz — no site, também com a câmara do telemóvel. tecnico guia palavras glossário luximetro"
+    },
+    {
+      "title": "Maconha",
+      "url": "/posts/post-inspecao-palavra-maconha.html",
+      "excerpt": "Nome popular afro-atlântico da planta no Brasil — carregado de estigma no século XX.",
+      "text": "Maconha Nome popular afro-atlântico da planta no Brasil — carregado de estigma no século XX. lexico guia palavras glossário maconha"
+    },
+    {
+      "title": "Mamão",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Carica papaya — fonte de papaína; citada em protocolos de feridas no SUS. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Mamão Carica papaya — fonte de papaína; citada em protocolos de feridas no SUS. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário mamao"
+    },
+    {
+      "title": "Maracujá",
+      "url": "/plantas/maracuja/",
+      "excerpt": "Passiflora — folhas/partes aéreas em chás e fitoterápicos; flavonoides C-glicosídeos na tradição calmante. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Maracujá Passiflora — folhas/partes aéreas em chás e fitoterápicos; flavonoides C-glicosídeos na tradição calmante. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário maracuja"
+    },
+    {
+      "title": "Marijuana",
+      "url": "/posts/post-inspecao-palavra-marijuana.html",
+      "excerpt": "Nome popular mexicano/espanhol — no século XX virou arma de discurso da proibição.",
+      "text": "Marijuana Nome popular mexicano/espanhol — no século XX virou arma de discurso da proibição. lexico guia palavras glossário marijuana"
+    },
+    {
+      "title": "Medo",
+      "url": "/posts/post-inspecao-palavra-medo.html",
+      "excerpt": "Alerta interior que protege do perigo — a emoção roxa da Riley.",
+      "text": "Medo Alerta interior que protege do perigo — a emoção roxa da Riley. lexico guia palavras glossário medo"
+    },
+    {
+      "title": "Melissa",
+      "url": "/plantas/melissa/",
+      "excerpt": "Melissa officinalis — balm europeu adaptado; citral e ácidos fenólicos em chás calmantes. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Melissa Melissa officinalis — balm europeu adaptado; citral e ácidos fenólicos em chás calmantes. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário melissa"
+    },
+    {
+      "title": "MovReCam",
+      "url": "/posts/post-inspecao-canal-movrecam.html",
+      "excerpt": "Movimento de Reabilitação de Cannabis Medicinal — canal e origem comunitária do curso.",
+      "text": "MovReCam Movimento de Reabilitação de Cannabis Medicinal — canal e origem comunitária do curso. tecnico guia palavras glossário movrecam"
+    },
+    {
+      "title": "Mulungu",
+      "url": "/plantas/mulungu/",
+      "excerpt": "Erythrina mulungu — casca com alcaloides eritrínicos; tradição de chás calmantes (sedação popular). Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Mulungu Erythrina mulungu — casca com alcaloides eritrínicos; tradição de chás calmantes (sedação popular). Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário mulungu"
+    },
+    {
+      "title": "Narcótico",
+      "url": "/posts/post-inspecao-palavra-droga.html",
+      "excerpt": "Substância que provoca sono ou entorpecimento — termo médico/legal antigo e amplo.",
+      "text": "Narcótico Substância que provoca sono ou entorpecimento — termo médico/legal antigo e amplo. lexico guia palavras glossário narcotico"
+    },
+    {
+      "title": "Nojinho",
+      "url": "/posts/post-inspecao-palavra-nojinho.html",
+      "excerpt": "Aversão que afasta do que parece sujo ou perigoso — a emoção verde da Riley.",
+      "text": "Nojinho Aversão que afasta do que parece sujo ou perigoso — a emoção verde da Riley. lexico guia palavras glossário nojinho"
+    },
+    {
+      "title": "Orégano",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Erva culinária com terpenos que modulam o sistema endocanabinoide. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Orégano Erva culinária com terpenos que modulam o sistema endocanabinoide. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário oregano"
+    },
+    {
+      "title": "Palavras",
+      "url": "/posts/post-inspecao-guia-palavras-cobertura.html",
+      "excerpt": "Unidades da língua — no laboratório, série de inspeções sobre origem e sentido.",
+      "text": "Palavras Unidades da língua — no laboratório, série de inspeções sobre origem e sentido. hub guia palavras glossário palavras"
+    },
+    {
+      "title": "Papoula",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Papaver somniferum — fonte histórica do ópio; contraste com cannabis e outras plantas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Papoula Papaver somniferum — fonte histórica do ópio; contraste com cannabis e outras plantas. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário papoula"
+    },
+    {
+      "title": "Passar",
+      "url": "/posts/post-inspecao-palavra-passar.html",
+      "excerpt": "Verbo da passagem: o que aconteceu, o que atravessa, o que se transmite.",
+      "text": "Passar Verbo da passagem: o que aconteceu, o que atravessa, o que se transmite. lexico guia palavras glossário passar"
+    },
+    {
+      "title": "Pesquisas",
+      "url": "/biblioteca/pesquisas/",
+      "excerpt": "Estudos e relatórios do laboratório e da comunidade aprovados para publicação.",
+      "text": "Pesquisas Estudos e relatórios do laboratório e da comunidade aprovados para publicação. titulo guia palavras glossário pesquisas"
+    },
+    {
+      "title": "Pessoas",
+      "url": "/biblioteca/inspecoes/",
+      "excerpt": "Figuras humanas inspecionadas — biografias do legado e da divulgação.",
+      "text": "Pessoas Figuras humanas inspecionadas — biografias do legado e da divulgação. hub guia palavras glossário pessoas"
+    },
+    {
+      "title": "Pimenta-do-reino",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Piper nigrum — planta citada entre as que agem no endocanabinoidoma (ex. CB2). Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Pimenta-do-reino Piper nigrum — planta citada entre as que agem no endocanabinoidoma (ex. CB2). Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário pimenta-do-reino"
+    },
+    {
+      "title": "Plantas",
+      "url": "/plantas/",
+      "excerpt": "Seres vivos do reino vegetal — no site, catálogo fitoterápico brasileiro.",
+      "text": "Plantas Seres vivos do reino vegetal — no site, catálogo fitoterápico brasileiro. titulo guia palavras glossário plantas"
+    },
+    {
+      "title": "Produtos nocivos",
+      "url": "/biblioteca/inspecoes/",
+      "excerpt": "Itens industriais ou alimentares que o laboratório marca como risco (açúcar, glúten, caseína…).",
+      "text": "Produtos nocivos Itens industriais ou alimentares que o laboratório marca como risco (açúcar, glúten, caseína…). hub guia palavras glossário produtos-nocivos"
+    },
+    {
+      "title": "Psicoativo",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Substância que altera mente, percepção ou humor — nas aulas, não é sinónimo automático de alucinógeno. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Psicoativo Substância que altera mente, percepção ou humor — nas aulas, não é sinónimo automático de alucinógeno. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário psicoativo"
+    },
+    {
+      "title": "Psicodélico",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Classe de substâncias que alteram fortemente percepção e consciência — tema da aula 11, além da cannabis. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Psicodélico Classe de substâncias que alteram fortemente percepção e consciência — tema da aula 11, além da cannabis. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário psicodelico"
+    },
+    {
+      "title": "Quimiotipo",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Classificação da cannabis pelo teor relativo de THC/CBD/CBG — mais útil clinicamente que só «sativa/índica». Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Quimiotipo Classificação da cannabis pelo teor relativo de THC/CBD/CBG — mais útil clinicamente que só «sativa/índica». Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário quimiotipo"
+    },
+    {
+      "title": "Rádio",
+      "url": "/radio/",
+      "excerpt": "Playlist do laboratório para ouvir enquanto estuda ou cultiva.",
+      "text": "Rádio Playlist do laboratório para ouvir enquanto estuda ou cultiva. titulo guia palavras glossário radio"
+    },
+    {
+      "title": "Raiva",
+      "url": "/posts/post-inspecao-palavra-raiva.html",
+      "excerpt": "Fúria que avisa limite ultrapassado — a emoção vermelha da Riley.",
+      "text": "Raiva Fúria que avisa limite ultrapassado — a emoção vermelha da Riley. lexico guia palavras glossário raiva"
+    },
+    {
+      "title": "RENISUS",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Relação Nacional de Plantas Medicinais de Interesse ao SUS — lista de espécies prioritárias para pesquisa e uso. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "RENISUS Relação Nacional de Plantas Medicinais de Interesse ao SUS — lista de espécies prioritárias para pesquisa e uso. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário renisus"
+    },
+    {
+      "title": "Ruda",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Ruta — citada no eixo de plantas e endocanabinoidoma. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Ruda Ruta — citada no eixo de plantas e endocanabinoidoma. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário ruda"
+    },
+    {
+      "title": "Sementinha",
+      "url": "/vida/diario/",
+      "excerpt": "Semente pequena — personagem-símbolo do conto Vida e do diário familiar.",
+      "text": "Sementinha Semente pequena — personagem-símbolo do conto Vida e do diário familiar. titulo guia palavras glossário sementinha"
+    },
+    {
+      "title": "Sistema endocanabinoide",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Conjunto clássico de receptores (CB1/CB2), endocanabinoides e enzimas que ajuda a manter o equilíbrio do organismo. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Sistema endocanabinoide Conjunto clássico de receptores (CB1/CB2), endocanabinoides e enzimas que ajuda a manter o equilíbrio do organismo. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário sistema-endocanabinoide"
+    },
+    {
+      "title": "Soja",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Glycine max — leguminosa citada em contexto agrícola/alimentar e fitoterapia (isoflavonas). Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Soja Glycine max — leguminosa citada em contexto agrícola/alimentar e fitoterapia (isoflavonas). Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário soja"
+    },
+    {
+      "title": "Solo vivo",
+      "url": "/guia/cultivo-basico.html",
+      "excerpt": "Solo rico em vida microbiana — base do método orgânico do laboratório e capítulo do guia de cultivo.",
+      "text": "Solo vivo Solo rico em vida microbiana — base do método orgânico do laboratório e capítulo do guia de cultivo. tecnico guia palavras glossário solo-vivo"
+    },
+    {
+      "title": "Sorteios",
+      "url": "/sorteios/",
+      "excerpt": "Sorteios do laboratório — prémios e avisos para a comunidade.",
+      "text": "Sorteios Sorteios do laboratório — prémios e avisos para a comunidade. titulo guia palavras glossário sorteios"
+    },
+    {
+      "title": "Substrato",
+      "url": "/biblioteca/pesquisas/substratos.html",
+      "excerpt": "Base onde a planta cresce — terra, fibra de coco, misturas biodegradáveis…",
+      "text": "Substrato Base onde a planta cresce — terra, fibra de coco, misturas biodegradáveis… tecnico guia palavras glossário substrato"
+    },
+    {
+      "title": "Sugestões",
+      "url": "/biblioteca/inspecoes/#inspecoes-sugestoes",
+      "excerpt": "Ideias na fila — próximos relatórios ainda não publicados.",
+      "text": "Sugestões Ideias na fila — próximos relatórios ainda não publicados. hub guia palavras glossário sugestoes"
+    },
+    {
+      "title": "Super Solo",
+      "url": "/calculadoras/super-solo.html",
+      "excerpt": "Mistura de solo vivo rico — «cama fofinha» da semente no método BudGanja.",
+      "text": "Super Solo Mistura de solo vivo rico — «cama fofinha» da semente no método BudGanja. tecnico guia palavras glossário super-solo"
+    },
+    {
+      "title": "Tabaco",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Nicotiana — planta e produto de uso ritual/comercial; nicotina é o alcalóide principal. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Tabaco Nicotiana — planta e produto de uso ritual/comercial; nicotina é o alcalóide principal. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário tabaco"
+    },
+    {
+      "title": "Terpeno",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Composto aromático da planta (cheiro e sabor) que também modula efeitos dos fitocanabinoides no extrato. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Terpeno Composto aromático da planta (cheiro e sabor) que também modula efeitos dos fitocanabinoides no extrato. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário terpeno"
+    },
+    {
+      "title": "THC",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Delta-9-tetrahidrocanabinol — principal fitocanabinoide psicoativo da cannabis; eixo dos quimiotipos e da farmacologia do curso. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "THC Delta-9-tetrahidrocanabinol — principal fitocanabinoide psicoativo da cannabis; eixo dos quimiotipos e da farmacologia do curso. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário thc"
+    },
+    {
+      "title": "Tricoma",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Célula glandular na superfície da planta onde se concentram resina, canabinoides e terpenos — sobretudo nas flores femininas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Tricoma Célula glandular na superfície da planta onde se concentram resina, canabinoides e terpenos — sobretudo nas flores femininas. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário tricoma"
+    },
+    {
+      "title": "Trigo",
+      "url": "/posts/post-inspecao-derivado-gluten.html",
+      "excerpt": "Cereal (Triticum) — farinha e glúten; no discurso popular, alvo de Barriga de Trigo.",
+      "text": "Trigo Cereal (Triticum) — farinha e glúten; no discurso popular, alvo de Barriga de Trigo. tecnico guia palavras glossário trigo"
+    },
+    {
+      "title": "Tristeza",
+      "url": "/posts/post-inspecao-palavra-tristeza.html",
+      "excerpt": "Sentimento azul que também ajuda a cuidar e a pedir ajuda — emoção da Riley.",
+      "text": "Tristeza Sentimento azul que também ajuda a cuidar e a pedir ajuda — emoção da Riley. lexico guia palavras glossário tristeza"
+    },
+    {
+      "title": "Unha-de-gato",
+      "url": "/plantas/unha-de-gato/",
+      "excerpt": "Uncaria tomentosa — trepadeira andino-amazônica; alcaloides oxindólicos e ácidos quinóvicos na tradição popular (casca/raiz). Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Unha-de-gato Uncaria tomentosa — trepadeira andino-amazônica; alcaloides oxindólicos e ácidos quinóvicos na tradição popular (casca/raiz). Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário unha-de-gato"
+    },
+    {
+      "title": "UNIFESP",
+      "url": "/biblioteca/unifesp/",
+      "excerpt": "Universidade Federal de São Paulo — sede do curso de extensão em cannabis medicinal.",
+      "text": "UNIFESP Universidade Federal de São Paulo — sede do curso de extensão em cannabis medicinal. tecnico guia palavras glossário unifesp"
+    },
+    {
+      "title": "Valeriana",
+      "url": "/biblioteca/unifesp/livro-xiv.html",
+      "excerpt": "Raiz tradicional de chás para o sono — exemplo de planta depressora da atividade mental. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "text": "Valeriana Raiz tradicional de chás para o sono — exemplo de planta depressora da atividade mental. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário valeriana"
+    },
+    {
+      "title": "Vida",
+      "url": "/vida/",
+      "excerpt": "Trilha familiar do laboratório — conto, personagens e Diário da Sementinha.",
+      "text": "Vida Trilha familiar do laboratório — conto, personagens e Diário da Sementinha. titulo guia palavras glossário vida"
+    },
+    {
+      "title": "Vídeos",
+      "url": "/videos/",
+      "excerpt": "Aulas e clips do Inspetor, MovReCam, CANABinALL e divulgação (Lair).",
+      "text": "Vídeos Aulas e clips do Inspetor, MovReCam, CANABinALL e divulgação (Lair). titulo guia palavras glossário videos"
+    },
+    {
+      "title": "William Davis",
+      "url": "/posts/post-inspecao-figura-william-davis.html",
+      "excerpt": "Cardiologista autor de Barriga de Trigo — divulgação anti-trigo (Pessoas).",
+      "text": "William Davis Cardiologista autor de Barriga de Trigo — divulgação anti-trigo (Pessoas). lexico guia palavras glossário william-davis"
     }
   ]
 }

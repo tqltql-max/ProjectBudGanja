@@ -108,6 +108,22 @@ function buildIndex() {
     });
   } catch (e) { /* optional */ }
 
+  try {
+    const guia = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'guia-palavras.json'), 'utf8'));
+    (guia.items || []).forEach((entry) => {
+      if (!entry || !entry.word) return;
+      items.push({
+        title: entry.word,
+        url: entry.href || '/guia/palavras.html',
+        excerpt: entry.simple || '',
+        text: [entry.word, entry.simple, entry.group, 'guia palavras glossário', entry.id]
+          .filter(Boolean)
+          .join(' ')
+          .slice(0, 2000)
+      });
+    });
+  } catch (e) { /* optional */ }
+
   fs.writeFileSync(OUT, JSON.stringify({ updatedAt: new Date().toISOString(), items }, null, 2), 'utf8');
   console.log('search-index.json:', items.length, 'itens');
 }
