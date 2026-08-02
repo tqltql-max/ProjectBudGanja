@@ -1,33 +1,33 @@
 {
-  "version": "307",
+  "version": "308",
   "hero": "7f1482449a",
   "heroSize": {
     "width": 1400,
     "height": 440
   },
-  "builtAt": "2026-08-02T01:48:01.082Z",
+  "builtAt": "2026-08-02T01:54:33.731Z",
   "update": {
-    "id": "sala-video-2026-08",
+    "id": "plantas-feed-links-2026-08",
     "title": {
       "pt-BR": "O que está a ser atualizado",
       "en": "What’s being updated",
       "es": "Qué se está actualizando"
     },
     "text": {
-      "pt-BR": "Nova Sala de vídeo na Sala de aula: assista aos vídeos legendados do laboratório — é só dar play. O vídeo saiu da página inicial.",
-      "en": "New Video room in the Classroom: watch captioned lab videos — just hit play. The home-page video was moved there.",
-      "es": "Nueva Sala de vídeo en el aula: mira los vídeos subtitulados del laboratorio — solo dale play. El vídeo salió de la página inicial."
+      "pt-BR": "O Feed Vivo e o catálogo de plantas agora ligam às plantas inspecionadas — e cada inspeção de planta abre a ficha.",
+      "en": "Feed Vivo and the plant catalog now link to inspected plants — and each plant inspection opens its sheet.",
+      "es": "El Feed Vivo y el catálogo de plantas ahora enlazan a las plantas inspeccionadas — y cada inspección abre la ficha."
     },
     "cta": {
       "pt-BR": "Entendi",
       "en": "Got it",
       "es": "Entendido"
     },
-    "linkHref": "/vida/sala/videos.html",
+    "linkHref": "/comunidade/",
     "linkLabel": {
-      "pt-BR": "Abrir sala de vídeo",
-      "en": "Open video room",
-      "es": "Abrir sala de vídeo"
+      "pt-BR": "Abrir Feed Vivo",
+      "en": "Open Feed Vivo",
+      "es": "Abrir Feed Vivo"
     }
   }
 }

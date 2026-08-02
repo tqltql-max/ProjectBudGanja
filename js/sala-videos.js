@@ -28,10 +28,110 @@
     }
   }
 
-  function renderPlayer(video) {
+  function pickLang(obj, lang) {
+    if (!obj || typeof obj !== 'object') return '';
+    return obj[lang] || obj.pt || obj.en || '';
+  }
+
+  function renderLyrics(lyrics, lang) {
+    if (!lyrics || !lyrics.stanzas || !lyrics.stanzas.length) return '';
+
+    var activeLang = lang === 'en' || lang === 'es' ? lang : 'pt';
+    var heading = pickLang(lyrics.heading, activeLang);
+    var note = pickLang(lyrics.note, activeLang);
+    var originalLabel = pickLang(lyrics.originalLabel, activeLang);
+
+    var langButtons = ['pt', 'en', 'es']
+      .map(function (code) {
+        var label = (lyrics.langLabels && lyrics.langLabels[code]) || code;
+        return (
+          '<button type="button" role="tab" class="' +
+          (code === activeLang ? 'is-active' : '') +
+          '" data-lyrics-lang="' +
+          code +
+          '" aria-selected="' +
+          (code === activeLang ? 'true' : 'false') +
+          '">' +
+          escapeHtml(label) +
+          '</button>'
+        );
+      })
+      .join('');
+
+    var stanzasHtml = lyrics.stanzas
+      .map(function (stanza) {
+        var label = pickLang(stanza.label, activeLang);
+        var linesHtml = (stanza.lines || [])
+          .map(function (line) {
+            return (
+              '<li class="sala-song-line">' +
+              '<span class="sala-song-line-en" aria-label="' +
+              escapeHtml(originalLabel) +
+              '">' +
+              escapeHtml(line.en || '') +
+              '</span>' +
+              '<span class="sala-song-line-tr" data-lyrics-text="' +
+              escapeHtml(pickLang(line, activeLang)) +
+              '">' +
+              escapeHtml(pickLang(line, activeLang)) +
+              '</span>' +
+              '</li>'
+            );
+          })
+          .join('');
+        return (
+          '<div class="sala-song-stanza">' +
+          (label ? '<p class="sala-song-stanza-label">' + escapeHtml(label) + '</p>' : '') +
+          '<ul class="sala-song-lines">' +
+          linesHtml +
+          '</ul>' +
+          '</div>'
+        );
+      })
+      .join('');
+
+    return (
+      '<aside class="sala-song-lyrics" aria-label="' +
+      escapeHtml(heading) +
+      '">' +
+      '<h3>' +
+      escapeHtml(heading) +
+      '</h3>' +
+      (note ? '<p class="sala-song-lyrics-note">' + escapeHtml(note) + '</p>' : '') +
+      '<div class="sala-song-lyrics-lang" role="tablist" aria-label="Idioma da tradução">' +
+      langButtons +
+      '</div>' +
+      '<div class="sala-song-lyrics-body">' +
+      stanzasHtml +
+      '</div>' +
+      (lyrics.credit ? '<p class="sala-song-credit">' + escapeHtml(lyrics.credit) + '</p>' : '') +
+      '</aside>'
+    );
+  }
+
+  function bindLyricsLang(stage, video, lang) {
+    if (!stage || !video || !video.lyrics) return;
+    var panel = stage.querySelector('.sala-song-lyrics');
+    if (!panel) return;
+
+    panel.addEventListener('click', function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest('[data-lyrics-lang]') : null;
+      if (!btn || !panel.contains(btn)) return;
+      var next = btn.getAttribute('data-lyrics-lang');
+      if (next !== 'pt' && next !== 'en' && next !== 'es') return;
+
+      var aside = renderLyrics(video.lyrics, next);
+      var old = stage.querySelector('.sala-song-lyrics');
+      if (old) old.outerHTML = aside;
+      bindLyricsLang(stage, video, next);
+    });
+  }
+
+  function renderPlayer(video, lang) {
     var stage = $('#sala-video-stage');
     if (!stage || !video) return;
     var title = video.title || 'Vídeo';
+    var lyricsHtml = video.lyrics ? renderLyrics(video.lyrics, lang || 'pt') : '';
     stage.innerHTML =
       '<div class="video-embed sala-video-embed yt-facade-skip">' +
       '<button type="button" class="yt-facade" data-youtube-id="' +
@@ -58,8 +158,10 @@
       escapeHtml(video.summary || '') +
       '</p>' +
       '<p class="sala-video-cc-hint">Legendas (CC) ligadas no player — é só assistir.</p>' +
-      '</div>';
+      '</div>' +
+      lyricsHtml;
     bindFacades(stage);
+    bindLyricsLang(stage, video, lang || 'pt');
   }
 
   function renderList(videos, activeId) {
@@ -122,7 +224,13 @@
             return v.id === startId;
           }) || data.videos[0];
 
-        renderPlayer(current);
+        var lyricsLang = 'pt';
+        try {
+          var learnLang = localStorage.getItem('budganja-learn-lang') || '';
+          if (learnLang === 'en' || learnLang === 'es') lyricsLang = learnLang;
+        } catch (err) { /* ignore */ }
+
+        renderPlayer(current, lyricsLang);
         renderList(data.videos, current.id);
 
         var list = $('#sala-video-list');
@@ -135,14 +243,20 @@
               return v.id === id;
             });
             if (!video) return;
-            renderPlayer(video);
+            var stage = $('#sala-video-stage');
+            var activeLang = 'pt';
+            var activeBtn = stage && stage.querySelector('[data-lyrics-lang].is-active');
+            if (activeBtn) {
+              var code = activeBtn.getAttribute('data-lyrics-lang');
+              if (code === 'en' || code === 'es') activeLang = code;
+            }
+            renderPlayer(video, activeLang);
             renderList(data.videos, video.id);
             try {
               var url = new URL(window.location.href);
               url.searchParams.set('v', video.id);
               window.history.replaceState({}, '', url.toString());
             } catch (err) { /* ignore */ }
-            var stage = $('#sala-video-stage');
             if (stage) stage.scrollIntoView({ behavior: 'smooth', block: 'start' });
           });
         }
