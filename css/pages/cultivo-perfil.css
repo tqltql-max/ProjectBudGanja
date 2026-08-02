@@ -736,6 +736,85 @@ html[data-theme="light"] .cultivo-section-nav-btn {
     gap: 18px;
 }
 
+.perfil-images-panel {
+    grid-column: 1 / -1;
+}
+
+.perfil-images-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.perfil-images-upload-btn {
+    cursor: pointer;
+}
+
+.perfil-images-status {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--color-text-soft);
+}
+
+.perfil-images-status.is-error {
+    color: var(--color-danger, #c45c5c);
+}
+
+.perfil-images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+.perfil-images-item {
+    position: relative;
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    aspect-ratio: 1;
+}
+
+.perfil-images-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil-images-item-actions {
+    position: absolute;
+    inset: auto 8px 8px auto;
+    display: flex;
+    gap: 6px;
+}
+
+.perfil-images-item-actions button {
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font: inherit;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.72);
+    color: #fff;
+}
+
+.perfil-images-empty {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-soft);
+}
+
+html[data-theme="light"] .perfil-images-item {
+    border-color: rgba(0, 0, 0, 0.08);
+    background: rgba(0, 0, 0, 0.02);
+}
+
 .perfil-meta-list {
     margin: 0;
     display: grid;

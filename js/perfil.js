@@ -547,5 +547,121 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
+  const imagesGrid = document.getElementById('perfil-images-grid');
+  const imagesEmpty = document.getElementById('perfil-images-empty');
+  const imagesStatus = document.getElementById('perfil-images-status');
+  const imagesInput = document.getElementById('perfil-images-input');
+
+  function setImagesStatus(message, isError) {
+    if (!imagesStatus) return;
+    imagesStatus.textContent = message || '';
+    imagesStatus.classList.toggle('is-error', !!isError);
+  }
+
+  function renderImages(items) {
+    const list = Array.isArray(items) ? items : [];
+    if (imagesEmpty) imagesEmpty.hidden = list.length > 0;
+    if (!imagesGrid) return;
+    if (!list.length) {
+      imagesGrid.innerHTML = '';
+      return;
+    }
+    imagesGrid.innerHTML = list.map((item) => {
+      const name = String(item.name || '');
+      const url = String(item.url || '');
+      return (
+        '<figure class="perfil-images-item">' +
+        '<img src="' + escapeHtml(url) + '" alt="' + escapeHtml(name) + '" loading="lazy" decoding="async">' +
+        '<div class="perfil-images-item-actions">' +
+        '<button type="button" data-image-delete="' + escapeHtml(name) + '">Apagar</button>' +
+        '</div>' +
+        '</figure>'
+      );
+    }).join('');
+  }
+
+  async function loadUserImages() {
+    if (!imagesGrid) return;
+    try {
+      const res = await fetch('/api/user/images', { credentials: 'include' });
+      if (!res.ok) return;
+      const data = await res.json().catch(() => ({}));
+      renderImages(data.items || []);
+    } catch (e) {
+      setImagesStatus('Não foi possível carregar as imagens.', true);
+    }
+  }
+
+  function readFileAsDataUrl(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = () => reject(new Error('read_failed'));
+      reader.readAsDataURL(file);
+    });
+  }
+
+  if (imagesInput) {
+    imagesInput.addEventListener('change', async () => {
+      const file = imagesInput.files && imagesInput.files[0];
+      imagesInput.value = '';
+      if (!file) return;
+      if (!String(file.type || '').startsWith('image/')) {
+        setImagesStatus('Escolha uma imagem (png, jpg, webp ou gif).', true);
+        return;
+      }
+      setImagesStatus('A enviar…');
+      try {
+        const dataUrl = await readFileAsDataUrl(file);
+        const res = await fetch('/api/user/images', {
+          method: 'POST',
+          credentials: 'include',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ filename: file.name, data: dataUrl })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          setImagesStatus((data && data.error) || 'Falha no envio.', true);
+          return;
+        }
+        setImagesStatus('Imagem adicionada.');
+        await loadUserImages();
+        setTimeout(() => setImagesStatus(''), 2200);
+      } catch (e) {
+        setImagesStatus('Servidor indisponível.', true);
+      }
+    });
+  }
+
+  if (imagesGrid) {
+    imagesGrid.addEventListener('click', async (event) => {
+      const btn = event.target && event.target.closest('[data-image-delete]');
+      if (!btn) return;
+      const name = btn.getAttribute('data-image-delete');
+      if (!name) return;
+      if (!window.confirm('Apagar esta imagem da pasta pessoal?')) return;
+      setImagesStatus('A apagar…');
+      try {
+        const res = await fetch('/api/user/images', {
+          method: 'DELETE',
+          credentials: 'include',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          setImagesStatus((data && data.error) || 'Não foi possível apagar.', true);
+          return;
+        }
+        setImagesStatus('Imagem apagada.');
+        await loadUserImages();
+        setTimeout(() => setImagesStatus(''), 2200);
+      } catch (e) {
+        setImagesStatus('Servidor indisponível.', true);
+      }
+    });
+  }
+
   await loadUser();
+  await loadUserImages();
 });

@@ -161,6 +161,22 @@
               </div>
             </article>
 
+            <article class="perfil-panel perfil-images-panel" id="perfil-images-panel">
+              <header class="perfil-panel-head">
+                <h3 class="perfil-panel-title">Minhas imagens</h3>
+                <p class="perfil-panel-lead">Pasta pessoal da sua conta — privada, só para si.</p>
+              </header>
+              <div class="perfil-images-toolbar">
+                <label class="botao botao-sm perfil-images-upload-btn">
+                  Adicionar imagem
+                  <input type="file" id="perfil-images-input" accept="image/png,image/jpeg,image/webp,image/gif" hidden>
+                </label>
+                <p id="perfil-images-status" class="perfil-images-status" role="status" aria-live="polite"></p>
+              </div>
+              <div id="perfil-images-grid" class="perfil-images-grid" aria-live="polite"></div>
+              <p id="perfil-images-empty" class="perfil-images-empty" hidden>Ainda não há imagens nesta pasta.</p>
+            </article>
+
           </div>
         </section>
       </div>
