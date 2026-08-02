@@ -565,6 +565,14 @@ body[data-page="home"] .home-card--cultivo {
     --card-label: #e8fff0;
 }
 
+body[data-page="home"] .home-card--sementinha {
+    --card-accent: #e67e22;
+    --card-accent-soft: rgba(230, 126, 34, 0.16);
+    --card-accent-strong: rgba(211, 84, 0, 0.34);
+    --card-accent-border: rgba(230, 126, 34, 0.45);
+    --card-label: #ffe8d4;
+}
+
 body[data-page="home"] .home-card--comunidade {
     --card-accent: #d4af37;
     --card-accent-soft: rgba(212, 175, 55, 0.14);
