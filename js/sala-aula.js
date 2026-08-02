@@ -5,7 +5,9 @@
   'use strict';
 
   var STORAGE_KEY = 'budganja_sala_progress_v1';
+  var PRACTICA_STORAGE_KEY = 'budganja_sala_pratica_v1';
   var DATA_URL = '/content/sala-aula.json';
+  var PRACTICA_DATA_URL = '/content/sala-duolingo.json';
 
   function $(sel, root) {
     return (root || document).querySelector(sel);
@@ -100,6 +102,54 @@
       '</div>';
   }
 
+  function renderPracticeMeta(curriculum, progress) {
+    var el = $('#sala-practice-meta');
+    if (!el || !curriculum) return;
+    var all = [];
+    (curriculum.units || []).forEach(function (unit) {
+      (unit.lessons || []).forEach(function (lesson) {
+        all.push(lesson);
+      });
+    });
+    var done = 0;
+    all.forEach(function (lesson) {
+      if (progress.done && progress.done[lesson.id]) done += 1;
+    });
+    var label = 'Progresso na trilha: ' + done + ' de ' + all.length + ' lições';
+    if (window.BudGanjaI18n && typeof window.BudGanjaI18n.t === 'function') {
+      var t = window.BudGanjaI18n.t('pages.salaPratica.hubProgress');
+      if (t && t !== 'pages.salaPratica.hubProgress') {
+        label = t.replace('{done}', String(done)).replace('{total}', String(all.length));
+      }
+    }
+    el.textContent = label;
+  }
+
+  function loadPraticaProgress() {
+    try {
+      var raw = localStorage.getItem(PRACTICA_STORAGE_KEY);
+      if (!raw) return { done: {} };
+      var data = JSON.parse(raw);
+      if (!data || typeof data !== 'object') return { done: {} };
+      if (!data.done || typeof data.done !== 'object') data.done = {};
+      return data;
+    } catch (e) {
+      return { done: {} };
+    }
+  }
+
+  function fetchPraticaMeta() {
+    return fetch(PRACTICA_DATA_URL, { cache: 'default', credentials: 'same-origin' })
+      .then(function (res) {
+        return res.ok ? res.json() : null;
+      })
+      .then(function (curriculum) {
+        if (!curriculum) return;
+        renderPracticeMeta(curriculum, loadPraticaProgress());
+      })
+      .catch(function () { /* ignore */ });
+  }
+
   function renderHub(curriculum, progress) {
     var root = $('#sala-hub');
     if (!root) return;
@@ -155,6 +205,7 @@
     });
 
     root.innerHTML = html || '<p class="sala-empty">Ainda sem aulas.</p>';
+    fetchPraticaMeta();
   }
 
   function bindQuiz(lesson, progress) {

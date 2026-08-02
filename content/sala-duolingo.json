@@ -1,0 +1,241 @@
+{
+  "title": "Praticar idiomas",
+  "subtitle": "Trilha curta estilo Duolingo: palavras fáceis do laboratório, em passos pequenos — sempre com um adulto.",
+  "note": "Português como base. Escolha English ou Español e pratique aos poucos.",
+  "maxHearts": 5,
+  "skill": {
+    "id": "vida-lab",
+    "title": "Laboratório Vida",
+    "lead": "Palavras que você já viu nas aulas e na história."
+  },
+  "units": [
+    {
+      "id": "plantas",
+      "order": 1,
+      "title": "Plantas e sementes",
+      "summary": "Semente, planta, folha e sol.",
+      "lessons": [
+        {
+          "id": "plantas-basico",
+          "title": "Palavras verdes",
+          "exercises": [
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "semente",
+              "optionsEn": ["seed", "leaf", "water"],
+              "optionsEs": ["semilla", "hoja", "agua"],
+              "answer": 0
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "planta",
+              "optionsEn": ["plant", "hat", "team"],
+              "optionsEs": ["planta", "sombrero", "equipo"],
+              "answer": 0
+            },
+            {
+              "type": "tap_word",
+              "promptKey": "promptTap",
+              "sentencePt": "A ___ cresce com luz.",
+              "blankToken": "___",
+              "optionsPt": ["planta", "chapéu", "carro"],
+              "answerPt": "planta",
+              "hintEn": "The plant grows with light.",
+              "hintEs": "La planta crece con luz."
+            },
+            {
+              "type": "match_pairs",
+              "promptKey": "promptMatch",
+              "pairs": [
+                { "pt": "folha", "en": "leaf", "es": "hoja" },
+                { "pt": "sol", "en": "sun", "es": "sol" },
+                { "pt": "terra", "en": "soil", "es": "tierra" }
+              ]
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "equipe",
+              "optionsEn": ["team", "seed", "joy"],
+              "optionsEs": ["equipo", "semilla", "alegría"],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "id": "plantas-cuidado",
+          "title": "Cuidar bem",
+          "exercises": [
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "água",
+              "optionsEn": ["water", "air", "soil"],
+              "optionsEs": ["agua", "aire", "tierra"],
+              "answer": 0
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "luz",
+              "optionsEn": ["light", "fear", "leaf"],
+              "optionsEs": ["luz", "miedo", "hoja"],
+              "answer": 0
+            },
+            {
+              "type": "tap_word",
+              "promptKey": "promptTap",
+              "sentencePt": "A planta bebe ___ em gotas.",
+              "blankToken": "___",
+              "optionsPt": ["água", "raiva", "chapéu"],
+              "answerPt": "água",
+              "hintEn": "The plant drinks water in drops.",
+              "hintEs": "La planta bebe agua en gotas."
+            },
+            {
+              "type": "match_pairs",
+              "promptKey": "promptMatch",
+              "pairs": [
+                { "pt": "carinho", "en": "care", "es": "cariño" },
+                { "pt": "solo", "en": "soil", "es": "suelo" },
+                { "pt": "raiz", "en": "root", "es": "raíz" }
+              ]
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "cuidado",
+              "optionsEn": ["care", "anger", "seed"],
+              "optionsEs": ["cuidado", "ira", "semilla"],
+              "answer": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cumprimentos",
+      "order": 2,
+      "title": "Olá e obrigado",
+      "summary": "Cumprimentos simples para começar.",
+      "lessons": [
+        {
+          "id": "cumprimentos-basico",
+          "title": "Primeiras frases",
+          "exercises": [
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "olá",
+              "optionsEn": ["hello", "goodbye", "thanks"],
+              "optionsEs": ["hola", "adiós", "gracias"],
+              "answer": 0
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "obrigado",
+              "optionsEn": ["thank you", "please", "sorry"],
+              "optionsEs": ["gracias", "por favor", "perdón"],
+              "answer": 0
+            },
+            {
+              "type": "tap_word",
+              "promptKey": "promptTap",
+              "sentencePt": "___! Bem-vindo ao laboratório.",
+              "blankToken": "___",
+              "optionsPt": ["Olá", "Tchau", "Adeus"],
+              "answerPt": "Olá",
+              "hintEn": "Hello! Welcome to the laboratory.",
+              "hintEs": "¡Hola! Bienvenido al laboratorio."
+            },
+            {
+              "type": "match_pairs",
+              "promptKey": "promptMatch",
+              "pairs": [
+                { "pt": "por favor", "en": "please", "es": "por favor" },
+                { "pt": "sim", "en": "yes", "es": "sí" },
+                { "pt": "não", "en": "no", "es": "no" }
+              ]
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "amizade",
+              "optionsEn": ["friendship", "water", "leaf"],
+              "optionsEs": ["amistad", "agua", "hoja"],
+              "answer": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emocoes",
+      "order": 3,
+      "title": "Emoções",
+      "summary": "Como no filme Divertida Mente — palavras fáceis.",
+      "lessons": [
+        {
+          "id": "emocoes-basico",
+          "title": "Cinco emoções",
+          "exercises": [
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "alegria",
+              "optionsEn": ["joy", "sadness", "anger"],
+              "optionsEs": ["alegría", "tristeza", "ira"],
+              "answer": 0
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "tristeza",
+              "optionsEn": ["sadness", "joy", "disgust"],
+              "optionsEs": ["tristeza", "alegría", "asco"],
+              "answer": 0
+            },
+            {
+              "type": "match_pairs",
+              "promptKey": "promptMatch",
+              "pairs": [
+                { "pt": "raiva", "en": "anger", "es": "ira" },
+                { "pt": "medo", "en": "fear", "es": "miedo" },
+                { "pt": "nojinho", "en": "disgust", "es": "asco" }
+              ]
+            },
+            {
+              "type": "tap_word",
+              "promptKey": "promptTap",
+              "sentencePt": "A ___ traz luz, como no filme.",
+              "blankToken": "___",
+              "optionsPt": ["alegria", "raiva", "medo"],
+              "answerPt": "alegria",
+              "hintEn": "Joy brings light, like in the movie.",
+              "hintEs": "La alegría trae luz, como en la película."
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "emoção",
+              "optionsEn": ["emotion", "plant", "seed"],
+              "optionsEs": ["emoción", "planta", "semilla"],
+              "answer": 0
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "medo",
+              "optionsEn": ["fear", "joy", "water"],
+              "optionsEs": ["miedo", "alegría", "agua"],
+              "answer": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

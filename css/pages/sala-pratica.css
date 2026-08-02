@@ -1,0 +1,558 @@
+/* Sala de aula — trilha de prática (estilo Duolingo, marca BudGanja) */
+
+body[data-page="sala-pratica"] {
+    --sala-gold: #dfc262;
+    --sala-leaf: #7cb342;
+    --sala-cream: #f4edd8;
+    --sala-ink: #12180e;
+    background:
+        radial-gradient(ellipse 90% 55% at 12% 8%, rgba(212, 175, 55, 0.14), transparent 55%),
+        radial-gradient(ellipse 70% 45% at 88% 18%, rgba(124, 179, 66, 0.12), transparent 50%),
+        #0e140a;
+}
+
+.pratica-page {
+    position: relative;
+    width: 100%;
+    max-width: min(640px, 100%);
+    margin: 0 auto;
+    padding: 0 0 clamp(2.5rem, 6vw, 4rem);
+    font-family: "Nunito", system-ui, sans-serif;
+    color: var(--sala-cream, #f4edd8);
+}
+
+.pratica-hero {
+    text-align: center;
+    padding: clamp(1.75rem, 5vw, 2.75rem) var(--space-page-x, 1.25rem) 1rem;
+}
+
+.pratica-hero h1 {
+    margin: 0;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(1.9rem, 6vw, 2.6rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    background: linear-gradient(180deg, #fef9d7 0%, #dfc262 55%, #7cb342 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.pratica-hero-sub {
+    margin: 0.75rem auto 0;
+    max-width: 40ch;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(244, 237, 216, 0.85);
+}
+
+.pratica-entry {
+    margin: 0 var(--space-page-x, 1.25rem) 1.25rem;
+    padding: 1.15rem 1.2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(124, 179, 66, 0.45);
+    background:
+        linear-gradient(135deg, rgba(124, 179, 66, 0.14), rgba(223, 194, 98, 0.1)),
+        rgba(12, 18, 8, 0.92);
+    display: grid;
+    gap: 0.75rem;
+}
+
+.pratica-entry h2 {
+    margin: 0;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.35rem;
+    color: #fef9d7;
+}
+
+.pratica-entry p {
+    margin: 0;
+    color: rgba(244, 237, 216, 0.78);
+    line-height: 1.45;
+}
+
+.pratica-entry-meta {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--sala-gold, #dfc262);
+}
+
+.pratica-lang {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 var(--space-page-x, 1.25rem) 1rem;
+    padding: 0.65rem 0.85rem;
+    border-radius: 14px;
+    border: 1px solid rgba(223, 194, 98, 0.25);
+    background: rgba(12, 18, 8, 0.72);
+}
+
+.pratica-lang-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: rgba(244, 237, 216, 0.75);
+    margin-right: 0.25rem;
+}
+
+.pratica-lang-btn {
+    appearance: none;
+    border: 1px solid rgba(223, 194, 98, 0.28);
+    background: rgba(20, 28, 14, 0.75);
+    color: var(--sala-cream, #f4edd8);
+    border-radius: 999px;
+    padding: 0.35rem 0.8rem;
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.pratica-lang-btn:hover,
+.pratica-lang-btn:focus-visible {
+    border-color: rgba(223, 194, 98, 0.65);
+    outline: none;
+}
+
+.pratica-lang-btn.is-active {
+    border-color: rgba(223, 194, 98, 0.85);
+    background: rgba(223, 194, 98, 0.18);
+    color: #fef9d7;
+}
+
+.pratica-skill {
+    padding: 0 var(--space-page-x, 1.25rem) 1.5rem;
+}
+
+.pratica-skill-kicker {
+    margin: 0 0 0.25rem;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--sala-gold, #dfc262);
+}
+
+.pratica-skill h2 {
+    margin: 0 0 0.35rem;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.45rem;
+    color: #fef9d7;
+}
+
+.pratica-skill-lead {
+    margin: 0 0 1.1rem;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: rgba(244, 237, 216, 0.72);
+}
+
+.pratica-path {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.pratica-unit {
+    padding: 1rem 1.05rem;
+    border-radius: 16px;
+    border: 1px solid rgba(223, 194, 98, 0.28);
+    background: rgba(14, 20, 10, 0.82);
+}
+
+.pratica-unit.is-locked {
+    opacity: 0.55;
+}
+
+.pratica-unit.is-done {
+    border-color: rgba(124, 179, 66, 0.5);
+}
+
+.pratica-unit-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.pratica-unit-num {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: #12180e;
+    background: linear-gradient(145deg, #dfc262, #7cb342);
+}
+
+.pratica-unit-copy {
+    flex: 1;
+    min-width: 0;
+}
+
+.pratica-unit-copy h3 {
+    margin: 0 0 0.2rem;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.15rem;
+    color: #fef9d7;
+}
+
+.pratica-unit-copy p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(244, 237, 216, 0.7);
+    line-height: 1.4;
+}
+
+.pratica-unit-badge {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(124, 179, 66, 0.95);
+}
+
+.pratica-lessons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.45rem;
+}
+
+.pratica-lesson-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.35rem 0.75rem;
+    padding: 0.65rem 0.75rem;
+    border-radius: 12px;
+    border: 1px solid rgba(223, 194, 98, 0.22);
+    background: rgba(12, 18, 8, 0.65);
+    color: inherit;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+a.pratica-lesson-link:hover,
+a.pratica-lesson-link:focus-visible {
+    border-color: rgba(223, 194, 98, 0.65);
+    background: rgba(20, 28, 14, 0.9);
+    transform: translateY(-1px);
+    outline: none;
+}
+
+.pratica-lesson-link.is-done {
+    border-color: rgba(124, 179, 66, 0.45);
+}
+
+.pratica-lesson-link.is-locked {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.pratica-lesson-title {
+    font-weight: 700;
+    color: #fef9d7;
+}
+
+.pratica-lesson-meta {
+    font-size: 0.82rem;
+    color: rgba(244, 237, 216, 0.65);
+}
+
+.pratica-session-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.pratica-session-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.pratica-hearts {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.pratica-heart {
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 4px 4px 8px 8px;
+    background: rgba(255, 255, 255, 0.12);
+    transform: rotate(-45deg);
+    transition: background 0.2s ease;
+}
+
+.pratica-heart.is-full {
+    background: linear-gradient(145deg, #e8a040, #c45c48);
+}
+
+.pratica-streak {
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--sala-gold, #dfc262);
+}
+
+.pratica-lesson-bar {
+    height: 0.5rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.pratica-lesson-bar-fill {
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #dfc262, #7cb342);
+    transition: width 0.35s ease;
+}
+
+.pratica-lesson-kicker {
+    margin: 0 0 0.25rem;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--sala-gold, #dfc262);
+}
+
+.pratica-lesson-title {
+    margin: 0 0 1.25rem;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(1.35rem, 4vw, 1.75rem);
+    color: #fef9d7;
+}
+
+.pratica-exercise {
+    padding: 1.1rem 1.15rem;
+    border-radius: 16px;
+    border: 1px solid rgba(223, 194, 98, 0.3);
+    background: rgba(12, 18, 8, 0.88);
+}
+
+.pratica-exercise-step {
+    margin: 0 0 0.5rem;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(244, 237, 216, 0.55);
+}
+
+.pratica-exercise-prompt {
+    margin: 0 0 1rem;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.25rem;
+    line-height: 1.35;
+    color: #fef9d7;
+}
+
+.pratica-mc-options,
+.pratica-tap-options {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.pratica-option,
+.pratica-chip {
+    appearance: none;
+    text-align: center;
+    border: 2px solid rgba(223, 194, 98, 0.28);
+    background: rgba(20, 28, 14, 0.75);
+    color: var(--sala-cream, #f4edd8);
+    border-radius: 14px;
+    padding: 0.85rem 1rem;
+    font: inherit;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
+}
+
+.pratica-option:hover,
+.pratica-chip:hover,
+.pratica-option:focus-visible,
+.pratica-chip:focus-visible {
+    border-color: rgba(223, 194, 98, 0.7);
+    outline: none;
+}
+
+.pratica-option:active,
+.pratica-chip:active {
+    transform: scale(0.98);
+}
+
+.pratica-option.is-correct,
+.pratica-chip.is-correct,
+.pratica-match-item.is-matched {
+    border-color: rgba(124, 179, 66, 0.85);
+    background: rgba(124, 179, 66, 0.22);
+}
+
+.pratica-option.is-wrong,
+.pratica-chip.is-wrong,
+.pratica-match-item.is-wrong {
+    border-color: rgba(220, 90, 70, 0.75);
+    background: rgba(220, 90, 70, 0.15);
+}
+
+.pratica-tap-sentence {
+    margin: 0 0 1rem;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.pratica-tap-blank {
+    display: inline-block;
+    min-width: 4rem;
+    padding: 0.15rem 0.5rem;
+    margin: 0 0.2rem;
+    border-bottom: 2px dashed rgba(223, 194, 98, 0.6);
+    color: var(--sala-gold, #dfc262);
+    font-weight: 800;
+}
+
+.pratica-match {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem;
+    margin-bottom: 0.5rem;
+}
+
+.pratica-match-col {
+    display: grid;
+    gap: 0.45rem;
+}
+
+.pratica-match-item {
+    appearance: none;
+    border: 2px solid rgba(223, 194, 98, 0.28);
+    background: rgba(20, 28, 14, 0.75);
+    color: var(--sala-cream, #f4edd8);
+    border-radius: 12px;
+    padding: 0.65rem 0.5rem;
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.pratica-match-item.is-selected {
+    border-color: rgba(223, 194, 98, 0.85);
+    background: rgba(223, 194, 98, 0.15);
+}
+
+.pratica-match-item.is-matched {
+    cursor: default;
+}
+
+.pratica-match-hint {
+    margin: 0;
+    font-size: 0.85rem;
+    color: rgba(244, 237, 216, 0.6);
+}
+
+.pratica-feedback {
+    margin: 0.85rem 0 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.pratica-feedback.is-ok {
+    color: #9fd86a;
+}
+
+.pratica-feedback.is-bad {
+    color: #f0a090;
+}
+
+.pratica-continue {
+    margin-top: 0.85rem;
+    width: 100%;
+}
+
+.pratica-complete {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(124, 179, 66, 0.45);
+    background: rgba(124, 179, 66, 0.1);
+}
+
+.pratica-complete-badge {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #dfc262, #7cb342);
+    box-shadow: 0 0 0 4px rgba(223, 194, 98, 0.25);
+    animation: pratica-pop 0.45s ease;
+}
+
+@keyframes pratica-pop {
+    0% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.pratica-complete h2 {
+    margin: 0 0 0.5rem;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.5rem;
+    color: #fef9d7;
+}
+
+.pratica-complete p {
+    margin: 0 0 1.25rem;
+    color: rgba(244, 237, 216, 0.85);
+}
+
+.pratica-empty-hearts {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(220, 90, 70, 0.35);
+    background: rgba(220, 90, 70, 0.08);
+}
+
+.pratica-empty-hearts h2 {
+    margin: 0 0 0.5rem;
+    font-family: "Fraunces", Georgia, serif;
+    color: #fef9d7;
+}
+
+.pratica-empty-hearts p {
+    margin: 0 0 1rem;
+    color: rgba(244, 237, 216, 0.78);
+}
+
+.pratica-section {
+    padding: 0 var(--space-page-x, 1.25rem);
+}
