@@ -501,13 +501,58 @@
     syncToolbar();
   }
 
-  function onPointerOver(e) {
-    if (!state.lang) return;
+  function wordFromEvent(e) {
+    if (!state.lang) return null;
     var word = e.target && e.target.closest ? e.target.closest('.learn-word') : null;
-    if (!word) return;
+    if (!word) return null;
     if (state.scope && !state.scope.contains(word) && state.root && !state.root.contains(word)) {
-      return;
+      return null;
     }
+    return word;
+  }
+
+  function clearTextSelection() {
+    try {
+      var sel = global.getSelection && global.getSelection();
+      if (sel && sel.removeAllRanges) sel.removeAllRanges();
+    } catch (err) { /* ignore */ }
+  }
+
+  function isLearnContentTarget(target) {
+    if (!target || !target.closest) return false;
+    return !!(
+      target.closest('.learn-word') ||
+      target.closest('.learn-mode-on') ||
+      target.closest('[data-learn-root]')
+    );
+  }
+
+  function onSelectStart(e) {
+    if (!state.lang) return;
+    if (isLearnContentTarget(e.target)) e.preventDefault();
+  }
+
+  function onCopyCutPaste(e) {
+    if (!state.lang) return;
+    if (isLearnContentTarget(e.target)) e.preventDefault();
+  }
+
+  function onContextMenu(e) {
+    if (!state.lang) return;
+    if (isLearnContentTarget(e.target)) e.preventDefault();
+  }
+
+  function onPointerDown(e) {
+    var word = wordFromEvent(e);
+    if (!word) return;
+    // Limpa seleção nativa para o toque traduzir em vez de abrir Copiar/Colar.
+    clearTextSelection();
+    activateWord(word);
+  }
+
+  function onPointerOver(e) {
+    var word = wordFromEvent(e);
+    if (!word) return;
     activateWord(word);
   }
 
@@ -635,8 +680,14 @@
     // Eventos no main: cobre corpo + títulos do hero/header.
     state.scope.addEventListener('pointerover', onPointerOver);
     state.scope.addEventListener('pointerout', onPointerOut);
+    state.scope.addEventListener('pointerdown', onPointerDown);
     state.scope.addEventListener('focusin', onFocusIn);
     state.scope.addEventListener('focusout', onFocusOut);
+    state.scope.addEventListener('selectstart', onSelectStart);
+    state.scope.addEventListener('copy', onCopyCutPaste);
+    state.scope.addEventListener('cut', onCopyCutPaste);
+    state.scope.addEventListener('paste', onCopyCutPaste);
+    state.scope.addEventListener('contextmenu', onContextMenu);
 
     global.addEventListener('budganja:locale-change', function () {
       if (state.lang) {
