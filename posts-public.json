@@ -2736,6 +2736,25 @@
     "seriesLabel": "Guia · HC seletividade · advogados"
   },
   {
+    "title": "Inspeção: Guia cannabis medicinal — mapa para médicos (acesso × seletividade)",
+    "titleEn": "Inspection: Medicinal cannabis guide — map for physicians (access × selectivity)",
+    "titleEs": "Inspección: Guía cannabis medicinal — mapa para médicos (acceso × selectividad)",
+    "excerpt": "Guia para médicos: receita, laudo, produto ANVISA/importação e papel no HC — seletividade de quem vira paciente de facto. Elo com o guia para advogados. Não é protocolo clínico.",
+    "excerptEn": "Guide for physicians: prescription, report, ANVISA product/import and role in HC — selectivity in who becomes a patient on paper. Link to the lawyers’ guide. Not a clinical protocol.",
+    "excerptEs": "Guía para médicos: receta, informe, producto ANVISA/importación y papel en el HC — selectividad de quién llega a ser paciente. Vínculo con la guía para abogados. No es protocolo clínico.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-guia-cannabis-medicos",
+    "url": "/posts/post-inspecao-guia-cannabis-medicos.html",
+    "date": "2026-08-02T09:30:00.000Z",
+    "filename": "posts/post-inspecao-guia-cannabis-medicos.html",
+    "coverImage": "/imagens/og-default.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 34,
+    "seriesLabel": "Guia · cannabis medicinal · médicos"
+  },
+  {
     "title": "Super Solo: Guia de Uso",
     "titleEn": "Super Soil: User Guide",
     "titleEs": "Súper Sustrato: Guía de Uso",

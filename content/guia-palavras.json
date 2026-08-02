@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T07:03:01.613Z",
+  "updatedAt": "2026-08-02T07:04:51.340Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -344,6 +344,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/plantas/cannabis-sativa/"
+    },
+    {
+      "id": "cannabis-medicinal",
+      "word": "Cannabis medicinal",
+      "simple": "Uso terapêutico documentado da cannabis / canabinoides — discurso clínico distinto do nome popular «maconha» e do rótulo policial entorpecente.",
+      "simpleEn": "Documented therapeutic use of cannabis / cannabinoids — clinical discourse distinct from folk “maconha” and police-list entorpecente.",
+      "simpleEs": "Uso terapéutico documentado de cannabis / cannabinoides — discurso clínico distinto del nombre popular «maconha» y del rótulo policial entorpecente.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-cannabis-medicos.html"
     },
     {
       "id": "cannabis-ruderalis",
@@ -936,6 +946,16 @@
       "href": "/posts/post-inspecao-palavra-ilicito.html"
     },
     {
+      "id": "importacao-anvisa",
+      "word": "Importação ANVISA",
+      "simple": "Via sanitária para produtos de cannabis autorizados — cara e burocrática; não equivale a autocultivo nem a HC.",
+      "simpleEn": "Sanitary route for authorized cannabis products — costly and bureaucratic; not the same as home grow or HC.",
+      "simpleEs": "Vía sanitaria para productos de cannabis autorizados — cara y burocrática; no equivale a autocultivo ni a HC.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-cannabis-medicos.html"
+    },
+    {
       "id": "inspecao",
       "word": "Inspeção",
       "simple": "Olhar com método, anotar o que se vê e publicar o relatório.",
@@ -1024,6 +1044,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/plantas/laranja/"
+    },
+    {
+      "id": "laudo-medico",
+      "word": "Laudo médico",
+      "simple": "Documento clínico que sustenta indicação terapêutica — peça-chave do dossiê quando o paciente judicializa cultivo/HC.",
+      "simpleEn": "Clinical document supporting therapeutic indication — key piece of the file when the patient litigates cultivation/HC.",
+      "simpleEs": "Documento clínico que sustenta indicación terapéutica — pieza clave del expediente cuando el paciente judicializa cultivo/HC.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-cannabis-medicos.html"
     },
     {
       "id": "lavanda",
@@ -1384,6 +1414,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-raiva.html"
+    },
+    {
+      "id": "receituario",
+      "word": "Receituário",
+      "simple": "Acto médico de prescrição — abre vias de produto regulado/importação; não autoriza sozinho o cultivo caseiro.",
+      "simpleEn": "Medical prescribing act — opens regulated product/import paths; alone does not authorize home cultivation.",
+      "simpleEs": "Acto médico de prescripción — abre vías de producto regulado/importación; solo no autoriza el cultivo casero.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-cannabis-medicos.html"
     },
     {
       "id": "renisus",

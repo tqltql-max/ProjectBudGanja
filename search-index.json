@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T07:03:10.434Z",
+  "updatedAt": "2026-08-02T07:04:59.131Z",
   "items": [
     {
       "title": "Início",
@@ -426,6 +426,12 @@
       "url": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
       "excerpt": "Guia para advogados: habeas corpus / salvo-conduto no cultivo medicinal vs repressão sem HC — seletividade de classe, âncoras STJ/STF e rede BudGanja de classificação legal. Não é parecer jurídico.",
       "text": "Inspeção: Guia HC e seletividade — mapa para advogados (com HC × sem HC) Guia para advogados: habeas corpus / salvo-conduto no cultivo medicinal vs repressão sem HC — seletividade de classe, âncoras STJ/STF e rede BudGanja de classificação legal. Não é parecer jurídico. inspecao ## Escopo\n\nInspeção-guia do laboratório BudGanja para **advogados e operadores do direito**: mapa semântico e processual do contraste **com habeas corpus (HC) / salvo-conduto** × **sem HC** no cultivo e porte de cannabis no Brasil — com foco na **seletividade de classe** (e, na literatura, de cor/território).\n\n> **Nota metodológica (ler primeiro):** auditoria editorial independente. **Não é parecer jurídico, não é peça processual, não substitui consulta a advogado.** Indexar ≠ endossar. Jurisprudência e normas mudam — confirmar sempre nos tribunais e no Diário Oficial. Objecto = **literacia do projeto** + **âncoras públicas** para leitura crítica.\n\n## Público e uso\n\n| Campo | Valor |\n|-------|-------|\n| Público | Advogados, defensores, estudantes de Direito, associações de pacientes |\n| Tipo BudGanja | Inspeção-guia — classificação legal × acesso à justiça |\n| Grupo Guia | [Classificação legal](/guia/palavras.html?group=classificacao) |\n| Pergunta-guia | Por que quem tem HC pode cultivar/produzir óleo medicinal e quem não tem fica na zona de repressão? |\n| Data | 2026-08-02 |\n\n## Tese central (uma frase)\n\nA planta pode ser a mesma; o que muda é o **estatuto**: quem compra o caminho processual (laudos + advogado + HC preventivo) reduz o risco penal; quem não tem acesso permanece na categoria **usuário / traficante no olhar policial** — mecanismo de **seletividade**, não «direito natural do rico».\n\n## Hipóteses\n\n**H1:** o HC preventivo funciona como **salvo-conduto** — remédio constitucional («remédio heroico») que obsta a persecução penal em hipóteses medicinais documentadas.  \n**H2:** o custo (honorários, laudos médicos, por vezes agronómicos, tempo) transforma o direito em **filtro de renda"
+    },
+    {
+      "title": "Inspeção: Guia cannabis medicinal — mapa para médicos (acesso × seletividade)",
+      "url": "/posts/post-inspecao-guia-cannabis-medicos.html",
+      "excerpt": "Guia para médicos: receita, laudo, produto ANVISA/importação e papel no HC — seletividade de quem vira paciente de facto. Elo com o guia para advogados. Não é protocolo clínico.",
+      "text": "Inspeção: Guia cannabis medicinal — mapa para médicos (acesso × seletividade) Guia para médicos: receita, laudo, produto ANVISA/importação e papel no HC — seletividade de quem vira paciente de facto. Elo com o guia para advogados. Não é protocolo clínico. inspecao ## Escopo\n\nInspeção-guia do laboratório BudGanja para **médicos e profissionais de saúde**: mapa semântico e de **acesso terapêutico** à cannabis no Brasil — prescrição, produto regulado, importação, papel do laudo no HC, e a seletividade de quem consegue ser **paciente** de facto.\n\n> **Nota metodológica (ler primeiro):** auditoria editorial independente. **Não é protocolo clínico, não é bula, não substitui CFM/CRM, ANVISA nem literatura peer-reviewed.** Indexar ≠ endossar. Indicações, doses e vias mudam — confirmar normas e evidência actuais. Objecto = **literacia do projecto** + **elos com a classificação legal**.\n\n## Público e uso\n\n| Campo | Valor |\n|-------|-------|\n| Público | Médicos, residentes, farmacêuticos clínicos, estudantes da área da saúde |\n| Tipo BudGanja | Inspeção-guia — clínica × acesso × classificação |\n| Par jurídico | [Guia HC e seletividade — advogados](/posts/post-inspecao-guia-hc-seletividade-advogados.html) |\n| Grupo Guia | [Classificação legal](/guia/palavras.html?group=classificacao) |\n| Pergunta-guia | Como o acto médico (receita/laudo) abre ou fecha o caminho entre saúde regulada e risco penal do paciente? |\n| Data | 2026-08-02 |\n\n## Tese central (uma frase)\n\nO médico não «legaliza a planta»; **documenta necessidade terapêutica**. Sem esse documento + caminho (produto ANVISA, importação ou HC com advogado), o mesmo paciente pode permanecer na zona de [ilícito](/posts/post-inspecao-palavra-ilicito.html) / abordagem — seletividade que começa no consultório quando só quem paga chega à receita e ao dossiê.\n\n## Hipóteses\n\n**H1:** a dicotomia **paciente medicinal** × **usuário** começa na capacidade de obter **avaliação e receituário** — não só no tribunal.  \n**H2:** produto importa"
     },
     {
       "title": "Inspeção: Annie Leonard — divulgação da economia dos materiais e elo com A História das Coisas",
@@ -1526,6 +1532,12 @@
       "text": "Cannabis indica Espécie/linhagem do género Cannabis frequentemente citada junto da sativa — morfologia e quimiotipo variam. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário cannabis-indica"
     },
     {
+      "title": "Cannabis medicinal",
+      "url": "/posts/post-inspecao-guia-cannabis-medicos.html",
+      "excerpt": "Uso terapêutico documentado da cannabis / canabinoides — discurso clínico distinto do nome popular «maconha» e do rótulo policial entorpecente.",
+      "text": "Cannabis medicinal Uso terapêutico documentado da cannabis / canabinoides — discurso clínico distinto do nome popular «maconha» e do rótulo policial entorpecente. classificacao guia palavras glossário cannabis-medicinal"
+    },
+    {
       "title": "Cannabis ruderalis",
       "url": "/plantas/cannabis-sativa/",
       "excerpt": "Forma/linhagem de Cannabis associada a autofloração e menor porte — citada em taxonomia e cultivo. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -1880,6 +1892,12 @@
       "text": "Ilícito Polo jurídico «fora da lei» — fecha o contraste com droga (remédio ↔ ilícito no senso comum); não é o nome da planta. classificacao guia palavras glossário ilicito"
     },
     {
+      "title": "Importação ANVISA",
+      "url": "/posts/post-inspecao-guia-cannabis-medicos.html",
+      "excerpt": "Via sanitária para produtos de cannabis autorizados — cara e burocrática; não equivale a autocultivo nem a HC.",
+      "text": "Importação ANVISA Via sanitária para produtos de cannabis autorizados — cara e burocrática; não equivale a autocultivo nem a HC. classificacao guia palavras glossário importacao-anvisa"
+    },
+    {
       "title": "Inspeção",
       "url": "/biblioteca/inspecoes/",
       "excerpt": "Olhar com método, anotar o que se vê e publicar o relatório.",
@@ -1932,6 +1950,12 @@
       "url": "/plantas/laranja/",
       "excerpt": "Citrino: fruto inteiro vs suco concentrado, néctares e refrigerantes «de laranja» com açúcar e aditivos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Laranja Citrino: fruto inteiro vs suco concentrado, néctares e refrigerantes «de laranja» com açúcar e aditivos. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário laranja"
+    },
+    {
+      "title": "Laudo médico",
+      "url": "/posts/post-inspecao-guia-cannabis-medicos.html",
+      "excerpt": "Documento clínico que sustenta indicação terapêutica — peça-chave do dossiê quando o paciente judicializa cultivo/HC.",
+      "text": "Laudo médico Documento clínico que sustenta indicação terapêutica — peça-chave do dossiê quando o paciente judicializa cultivo/HC. classificacao guia palavras glossário laudo-medico"
     },
     {
       "title": "Lavanda",
@@ -2148,6 +2172,12 @@
       "url": "/posts/post-inspecao-palavra-raiva.html",
       "excerpt": "Fúria que avisa limite ultrapassado — a emoção vermelha da Riley.",
       "text": "Raiva Fúria que avisa limite ultrapassado — a emoção vermelha da Riley. lexico guia palavras glossário raiva"
+    },
+    {
+      "title": "Receituário",
+      "url": "/posts/post-inspecao-guia-cannabis-medicos.html",
+      "excerpt": "Acto médico de prescrição — abre vias de produto regulado/importação; não autoriza sozinho o cultivo caseiro.",
+      "text": "Receituário Acto médico de prescrição — abre vias de produto regulado/importação; não autoriza sozinho o cultivo caseiro. classificacao guia palavras glossário receituario"
     },
     {
       "title": "RENISUS",
