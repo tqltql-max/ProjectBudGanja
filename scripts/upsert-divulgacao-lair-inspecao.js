@@ -15,7 +15,7 @@ const I18N_FILE = path.join(ROOT, 'content', 'post-i18n.json');
 const SUG_FILE = path.join(ROOT, 'content', 'inspecoes-sugestoes.json');
 const PLANTAS_FILE = path.join(ROOT, 'content', 'plantas.json');
 
-const post = buildLairRibeiroPost();
+const post = buildLairRibeiroPost({ writeThemesJson: true });
 const posts = JSON.parse(fs.readFileSync(POSTS_FILE, 'utf8'));
 const idx = posts.findIndex((p) => p.slug === post.slug);
 
