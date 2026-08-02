@@ -565,12 +565,13 @@ body[data-page="home"] .home-card--plantas {
     --card-label: #e8fff0;
 }
 
-body[data-page="home"] .home-card--cultivo {
-    --card-accent: #58d68d;
-    --card-accent-soft: rgba(39, 174, 96, 0.14);
-    --card-accent-strong: rgba(39, 174, 96, 0.32);
-    --card-accent-border: rgba(46, 204, 113, 0.42);
-    --card-label: #e8fff0;
+body[data-page="home"] .home-card--cultivo,
+body[data-page="home"] .home-card--pesquisas {
+    --card-accent: #1abc9c;
+    --card-accent-soft: rgba(26, 188, 156, 0.14);
+    --card-accent-strong: rgba(22, 160, 133, 0.32);
+    --card-accent-border: rgba(26, 188, 156, 0.42);
+    --card-label: #e8fff8;
 }
 
 body[data-page="home"] .home-card--sementinha {

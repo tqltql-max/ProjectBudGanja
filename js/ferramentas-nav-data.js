@@ -1414,6 +1414,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-guia-farmacia-viva",
               "description": "Resumo da Aula 5 XIV (Jaqueline): Farmácia Viva como política do SUS, Portaria 886/2010, modalidades e o lugar da cannabis na cadeia pública."
+            },
+            {
+              "label": "Inspeção: Guia palavras — léxico «Da molécula ao lixo» (destaque e justificação)",
+              "tileLabel": "Inspeção: Guia palavras — léxic…",
+              "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-guia-palavras-molecula-ao-lixo",
+              "description": "As 23 palavras novas do Guia ligadas à pesquisa molécula→lixo: destaque, famílias semânticas e por que cada uma entra no catálogo."
             }
           ]
         },

@@ -819,7 +819,7 @@ window.__I18N_LOCALES__ = {
         "storyTitle": "The story",
         "storyLead": "Inspection chapters — read them in the cards below.",
         "entriesEmpty": "No story chapters yet.",
-        "adultLink": "Research diary for adults",
+        "adultLink": "Account / research diary (adults)",
         "docTitle": "Little Seed Diary | Inspetor BudGanja"
       },
       "biblioteca": {
@@ -1688,7 +1688,7 @@ window.__I18N_LOCALES__ = {
         "storyTitle": "La historia",
         "storyLead": "Capítulos de la inspección — léelos en las tarjetas.",
         "entriesEmpty": "Aún no hay capítulos en esta historia.",
-        "adultLink": "Diario de investigación para adultos",
+        "adultLink": "Cuenta / diario de investigación (adultos)",
         "docTitle": "Diario de la Semillita | Inspetor BudGanja"
       },
       "biblioteca": {
@@ -2557,7 +2557,7 @@ window.__I18N_LOCALES__ = {
         "storyTitle": "A história",
         "storyLead": "Capítulos da inspeção — leia nos cards.",
         "entriesEmpty": "Ainda sem capítulos nesta história.",
-        "adultLink": "Diário de pesquisas para adultos",
+        "adultLink": "Conta / diário de pesquisas (adultos)",
         "docTitle": "Diário da Sementinha | Inspetor BudGanja"
       },
       "biblioteca": {

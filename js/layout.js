@@ -738,7 +738,6 @@ const DEFAULT_SITE = {
     { label: 'Vídeos', href: '/videos/' },
     { label: 'Equipamentos', href: '/equipamentos/' },
     { label: 'Ferramentas', href: '/calculadoras/' },
-    { label: 'Diário de pesquisas', href: '/cultivo/' },
     { label: 'Comunidade', href: '/comunidade/' },
     { label: 'BudGanja Radio', href: '/radio/' },
     { label: 'Sorteios', href: '/sorteios/' }
@@ -761,8 +760,7 @@ const DEFAULT_SITE = {
       links: [
         { label: 'Ferramentas', href: '/calculadoras/' },
         { label: 'Luxímetro', href: '/calculadoras/luximetro.html' },
-        { label: 'Solo', href: '/calculadoras/super-solo.html' },
-        { label: 'Diário de pesquisas', href: '/cultivo/' }
+        { label: 'Solo', href: '/calculadoras/super-solo.html' }
       ]
     },
     {
@@ -1292,14 +1290,6 @@ function getSiteHubNav(authState) {
         tone: 'ferramentas'
       },
       {
-        href: '/cultivo/',
-        icon: '📓',
-        label: i18n('nav.diaryShort', 'Diário'),
-        tip: i18n('nav.quickGrowTip', 'Diário de pesquisas e registos de cultivo'),
-        prefixes: '/cultivo',
-        tone: 'cultivo'
-      },
-      {
         href: '/videos/',
         icon: '▶',
         label: i18n('nav.videos', 'Vídeos'),
@@ -1395,11 +1385,11 @@ function getSiteHubNav(authState) {
             tone: 'equipamentos'
           },
           {
-            href: '/cultivo/',
-            icon: '📓',
-            label: i18n('nav.growDiary', 'Diário de pesquisas'),
-            prefixes: '/cultivo',
-            tone: 'cultivo'
+            href: '/biblioteca/pesquisas/',
+            icon: '🔬',
+            label: i18n('nav.technicalResearch', 'Pesquisas'),
+            prefixes: '/biblioteca/pesquisas',
+            tone: 'pesquisas'
           }
         ]
       },
