@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T11:33:48.377Z",
+  "updatedAt": "2026-08-02T11:36:26.248Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2263,6 +2263,28 @@
         "/vida/"
       ],
       "notes": "Homenagem literária; não romantizar morte precoce."
+    },
+    {
+      "id": "arte-aguas-e-lagrimas",
+      "title": "Águas do Mar e Lágrimas — poesia original do laboratório",
+      "titleEn": "Sea Waters and Tears — original lab poetry",
+      "titleEs": "Aguas del Mar y Lágrimas — poesía original del laboratorio",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Poesia original: mar × lágrima × universo Vida / Álvares.",
+      "whyEn": "Original poetry: sea × tear × Vida / Álvares universe.",
+      "whyEs": "Poesía original: mar × lágrima × universo Vida / Álvares.",
+      "suggestedSlug": "inspecao-arte-aguas-e-lagrimas",
+      "doneHref": "/posts/post-inspecao-arte-aguas-e-lagrimas.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-aguas-e-lagrimas.html",
+        "/posts/post-inspecao-arte-lagrimas-da-vida.html",
+        "/posts/post-inspecao-figura-alvares-de-azevedo.html",
+        "/vida/"
+      ],
+      "notes": "Texto do laboratório; diálogo com ultrarromantismo sem culto da morte."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T11:33:48.380Z",
+  "updatedAt": "2026-08-02T11:36:26.250Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1464,6 +1464,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-figura-alvares-de-azevedo.html"
+    },
+    {
+      "id": "aguas-e-lagrimas",
+      "word": "Águas do Mar e Lágrimas",
+      "simple": "Poesia original BudGanja: o sal do mar e o da lágrima; elo com Vida, Lágrimas da Vida e Álvares de Azevedo.",
+      "simpleEn": "Original BudGanja poem: sea salt and tear salt; links to Vida, Lágrimas da Vida, and Álvares de Azevedo.",
+      "simpleEs": "Poesía original BudGanja: sal del mar y de la lágrima; vínculo con Vida, Lágrimas da Vida y Álvares de Azevedo.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-aguas-e-lagrimas.html"
     },
     {
       "id": "lei-11-343",

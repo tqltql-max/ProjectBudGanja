@@ -1995,6 +1995,25 @@
     "seriesLabel": "Canal MovReCam"
   },
   {
+    "title": "Inspeção: Águas do Mar e Lágrimas — poesia do laboratório entre oceano e peito",
+    "titleEn": "Inspection: Sea Waters and Tears — lab poetry between ocean and chest",
+    "titleEs": "Inspección: Aguas del Mar y Lágrimas — poesía del laboratorio entre océano y pecho",
+    "excerpt": "Artes · poesia original: o sal do mar e o da lágrima — máscara, porto no olho e o universo Vida que ensina a ficar.",
+    "excerptEn": "Arts · original poetry: sea salt and tear salt — mask, harbor in the eye, and the Vida universe that teaches staying.",
+    "excerptEs": "Artes · poesía original: sal del mar y de la lágrima — máscara, puerto en el ojo y el universo Vida que enseña a quedarse.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-arte-aguas-e-lagrimas",
+    "url": "/posts/post-inspecao-arte-aguas-e-lagrimas.html",
+    "date": "2026-08-02T15:00:00.000Z",
+    "filename": "posts/post-inspecao-arte-aguas-e-lagrimas.html",
+    "coverImage": "/imagens/inspecoes/aguas-e-lagrimas-cover.jpg",
+    "category": "inspecao",
+    "series": "artes-cultura",
+    "seriesOrder": 12,
+    "seriesLabel": "Águas e Lágrimas · Artes"
+  },
+  {
     "title": "Inspeção: Emoção — o hub lexical da Riley (Divertida Mente)",
     "titleEn": "Inspection: Emoção — Riley’s lexical hub (Inside Out)",
     "titleEs": "Inspección: Emoção — el hub léxico de Riley (Intensamente)",

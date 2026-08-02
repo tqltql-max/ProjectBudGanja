@@ -1013,6 +1013,14 @@
                   "description": "Auditoria do canal MovReCam — 285 vídeos catalogados, com embeds das aulas da XIV edição UNIFESP para revisão in-page."
                 },
                 {
+                  "label": "Inspeção: Águas do Mar e Lágrimas — poesia do laboratório entre oceano e peito",
+                  "tileLabel": "Inspeção: Águas do Mar e Lágrim…",
+                  "href": "/posts/post-inspecao-arte-aguas-e-lagrimas.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-aguas-e-lagrimas",
+                  "description": "Artes · poesia original: o sal do mar e o da lágrima — máscara, porto no olho e o universo Vida que ensina a ficar."
+                },
+                {
                   "label": "Inspeção: Emoção — o hub lexical da Riley (Divertida Mente)",
                   "tileLabel": "Inspeção: Emoção — o hub lexica…",
                   "href": "/posts/post-inspecao-palavra-emocao.html",
