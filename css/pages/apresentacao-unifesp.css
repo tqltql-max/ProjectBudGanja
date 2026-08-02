@@ -1,0 +1,128 @@
+/* Apresentação UNIFESP — mesmo espírito da Vida, com mais pulso */
+
+body[data-page="apresentacao-unifesp"] {
+    --vida-gold: #e4c76a;
+    --vida-leaf: #8fd15a;
+    --vida-leaf-deep: #3f7a2c;
+    --vida-soil: #5c4030;
+    --vida-cream: #f7f0dc;
+    --vida-ink: #10160c;
+    --vida-panel: rgba(12, 18, 8, 0.82);
+    background:
+        radial-gradient(ellipse 95% 65% at 12% 8%, rgba(232, 196, 90, 0.2), transparent 55%),
+        radial-gradient(ellipse 80% 55% at 92% 18%, rgba(124, 200, 80, 0.18), transparent 52%),
+        radial-gradient(ellipse 70% 45% at 48% 100%, rgba(70, 120, 50, 0.28), transparent 55%),
+        #0c1208;
+}
+
+body[data-page="apresentacao-unifesp"] .apresentacao-page.vida-page {
+    max-width: min(960px, 100%);
+}
+
+body[data-page="apresentacao-unifesp"] .vida-atmosphere {
+    height: min(78vh, 700px);
+    animation: vida-breathe 8s ease-in-out infinite alternate;
+}
+
+body[data-page="apresentacao-unifesp"] .vida-hero h1 {
+    font-size: clamp(2.6rem, 9vw, 4.4rem);
+    letter-spacing: -0.03em;
+}
+
+body[data-page="apresentacao-unifesp"] .vida-hero-sub {
+    max-width: 42rem;
+    margin-inline: auto;
+}
+
+body[data-page="apresentacao-unifesp"] .apresentacao-wiki-note {
+    margin: 0.35rem 0 0;
+    font-size: 0.92rem;
+    color: rgba(244, 237, 216, 0.78);
+}
+
+body[data-page="apresentacao-unifesp"] .apresentacao-wiki-note a {
+    color: var(--vida-gold);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+body[data-page="apresentacao-unifesp"] .vida-story a,
+body[data-page="apresentacao-unifesp"] .vida-section a:not(.botao):not(.vida-char) {
+    color: #d8efb0;
+    text-decoration: underline;
+    text-decoration-color: rgba(143, 209, 90, 0.55);
+    text-underline-offset: 2px;
+}
+
+body[data-page="apresentacao-unifesp"] .vida-story a[href*="wikipedia"],
+body[data-page="apresentacao-unifesp"] .vida-section a[href*="wikipedia"] {
+    color: #9ecbff;
+    text-decoration-color: rgba(120, 170, 255, 0.55);
+}
+
+body[data-page="apresentacao-unifesp"] .vida-story a:hover,
+body[data-page="apresentacao-unifesp"] .vida-section a:not(.botao):not(.vida-char):hover {
+    color: #fff6c8;
+}
+
+body[data-page="apresentacao-unifesp"] .apresentacao-dual {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+body[data-page="apresentacao-unifesp"] .apresentacao-dual .vida-lesson {
+    min-height: 100%;
+}
+
+body[data-page="apresentacao-unifesp"] .apresentacao-pulse {
+    display: inline-block;
+    animation: apresentacao-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes apresentacao-pulse {
+    0%, 100% { transform: scale(1); filter: brightness(1); }
+    50% { transform: scale(1.03); filter: brightness(1.12); }
+}
+
+body[data-page="apresentacao-unifesp"] .learn-word[data-learn-href] {
+    cursor: pointer;
+}
+
+body[data-page="apresentacao-unifesp"] .learn-word[data-learn-href]::after {
+    content: "";
+}
+
+@media (max-width: 700px) {
+    body[data-page="apresentacao-unifesp"] .apresentacao-dual {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    body[data-page="apresentacao-unifesp"] #site-header,
+    body[data-page="apresentacao-unifesp"] #site-footer,
+    body[data-page="apresentacao-unifesp"] .vida-atmosphere,
+    body[data-page="apresentacao-unifesp"] .vida-hero-actions,
+    body[data-page="apresentacao-unifesp"] .vida-cta-row,
+    body[data-page="apresentacao-unifesp"] [data-learn-toolbar],
+    body[data-page="apresentacao-unifesp"] .learn-toolbar {
+        display: none !important;
+    }
+
+    body[data-page="apresentacao-unifesp"] {
+        background: #fff !important;
+        color: #12180e !important;
+    }
+
+    body[data-page="apresentacao-unifesp"] .vida-page,
+    body[data-page="apresentacao-unifesp"] .vida-section,
+    body[data-page="apresentacao-unifesp"] .vida-story-beat,
+    body[data-page="apresentacao-unifesp"] .vida-lesson,
+    body[data-page="apresentacao-unifesp"] .vida-char {
+        background: transparent !important;
+        color: #12180e !important;
+        box-shadow: none !important;
+        border-color: #c5d08a !important;
+    }
+}

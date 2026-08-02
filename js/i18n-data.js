@@ -792,6 +792,7 @@ window.__I18N_LOCALES__ = {
         "docTitle": "Vida | Inspetor BudGanja",
         "learnHintOn": "Pass over a word: the gold sheen turns it into {lang}. Dotted underline = no translation. Solid red = dangerous word; amber dashed = use with care — meaning shows on hover.",
         "learnNoTranslation": "No translation in this language",
+        "learnOpenLink": "Double-click to open the reference",
         "learnToneDanger": "Dangerous word — use with care",
         "learnToneCaution": "Use with caution",
         "ctaDiary": "Little Seed Diary"
@@ -1686,6 +1687,7 @@ window.__I18N_LOCALES__ = {
         "docTitle": "Vida | Inspetor BudGanja",
         "learnHintOn": "Pasa por una palabra: el brillo dorado la traduce al {lang}. Subrayado punteado = sin traducción. Rojo sólido = palabra peligrosa; ámbar discontinuo = uso cauteloso — el significado aparece al pasar el ratón.",
         "learnNoTranslation": "Sin traducción en este idioma",
+        "learnOpenLink": "Doble clic para abrir la referencia",
         "learnToneDanger": "Palabra peligrosa — usar con cuidado",
         "learnToneCaution": "Uso cauteloso",
         "ctaDiary": "Diario de la Semillita"
@@ -2580,6 +2582,7 @@ window.__I18N_LOCALES__ = {
         "docTitle": "Vida | Inspetor BudGanja",
         "learnHintOn": "Passe numa palavra: o brilho dourado traduz para {lang}. Traço pontilhado = sem tradução. Traço sólido vermelho = palavra perigosa; tracejado âmbar = uso cauteloso — o significado aparece ao passar o rato.",
         "learnNoTranslation": "Sem tradução neste idioma",
+        "learnOpenLink": "Duplo clique para abrir a referência",
         "learnToneDanger": "Palavra perigosa — uso com cuidado",
         "learnToneCaution": "Uso cauteloso",
         "ctaDiary": "Diário da Sementinha"

@@ -279,11 +279,19 @@
     return parts.join(' · ');
   }
 
+  function wordHref(g, src) {
+    if (!g || !src) return '';
+    if (typeof g.hrefOf === 'function') return g.hrefOf(src) || '';
+    var entry = typeof g.findEntry === 'function' ? g.findEntry(src) : null;
+    return (entry && entry.href) || '';
+  }
+
   function markWordCoverage(span, src) {
     var g = glossary();
     var known = wordHasTranslation(g, src);
     var tone = wordTone(g, src);
     var gloss = wordGloss(g, src);
+    var href = wordHref(g, src);
     span.classList.toggle('learn-word--known', known);
     span.classList.toggle('learn-word--unknown', !known);
     span.classList.toggle('learn-word--danger', tone === 'danger');
@@ -292,7 +300,12 @@
     else span.removeAttribute('data-learn-tone');
     if (gloss) span.setAttribute('data-learn-gloss', gloss);
     else span.removeAttribute('data-learn-gloss');
+    if (href) span.setAttribute('data-learn-href', href);
+    else span.removeAttribute('data-learn-href');
     var tip = buildWordTip(src, known, gloss, tone);
+    if (href) {
+      tip = (tip ? tip + ' · ' : '') + t('pages.vida.learnOpenLink', 'Duplo clique para abrir a referência');
+    }
     if (tip) span.setAttribute('title', tip);
     else span.removeAttribute('title');
   }
@@ -618,12 +631,41 @@
     if (isLearnContentTarget(e.target)) e.preventDefault();
   }
 
+  function openWordHref(wordEl) {
+    if (!wordEl) return false;
+    var href = wordEl.getAttribute('data-learn-href') || '';
+    if (!href) {
+      var g = glossary();
+      href = wordHref(g, wordEl.getAttribute('data-learn-src') || '');
+    }
+    if (!href) return false;
+    try {
+      if (href.charAt(0) === '/') {
+        global.location.href = href;
+      } else {
+        global.open(href, '_blank', 'noopener,noreferrer');
+      }
+      return true;
+    } catch (err) {
+      return false;
+    }
+  }
+
   function onPointerDown(e) {
     var word = wordFromEvent(e);
     if (!word) return;
     // Limpa seleção nativa para o toque traduzir em vez de abrir Copiar/Colar.
     clearTextSelection();
     activateWord(word);
+  }
+
+  function onWordDblClick(e) {
+    var word = wordFromEvent(e);
+    if (!word) return;
+    if (openWordHref(word)) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
   }
 
   function onPointerOver(e) {
@@ -756,7 +798,7 @@
       }
     }
 
-    if (page === 'vida') {
+    if (page === 'vida' || page === 'apresentacao-unifesp') {
       var mainVida = document.querySelector('#main-content');
       if (mainVida) {
         mainVida.setAttribute('data-learn-root', '');
@@ -792,6 +834,7 @@
     state.scope.addEventListener('pointerover', onPointerOver);
     state.scope.addEventListener('pointerout', onPointerOut);
     state.scope.addEventListener('pointerdown', onPointerDown);
+    state.scope.addEventListener('dblclick', onWordDblClick);
     state.scope.addEventListener('focusin', onFocusIn);
     state.scope.addEventListener('focusout', onFocusOut);
     state.scope.addEventListener('selectstart', onSelectStart);

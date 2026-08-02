@@ -790,6 +790,7 @@
       "docTitle": "Vida | Inspetor BudGanja",
       "learnHintOn": "Passe numa palavra: o brilho dourado traduz para {lang}. Traço pontilhado = sem tradução. Traço sólido vermelho = palavra perigosa; tracejado âmbar = uso cauteloso — o significado aparece ao passar o rato.",
       "learnNoTranslation": "Sem tradução neste idioma",
+      "learnOpenLink": "Duplo clique para abrir a referência",
       "learnToneDanger": "Palavra perigosa — uso com cuidado",
       "learnToneCaution": "Uso cauteloso",
       "ctaDiary": "Diário da Sementinha"
