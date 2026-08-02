@@ -1379,7 +1379,7 @@ function getSiteHubNav() {
         links: [
           {
             href: '/comunidade/',
-            icon: '<img class="mobile-menu-link-icon-img" src="/imagens/foto-comunidade.png" alt="" width="20" height="20" decoding="async">',
+            icon: '<img class="mobile-menu-link-icon-img" src="/biblioteca/imagens/foto-comunidade.png" alt="" width="20" height="20" decoding="async">',
             label: i18n('nav.communityFeed', 'Feed da comunidade'),
             prefixes: '/comunidade',
             tone: 'comunidade'
@@ -1517,7 +1517,7 @@ function buildHeaderHTML(site, authState) {
     ' aria-label="' + escapeNavText(i18n('nav.community', 'Comunidade')) + '"' +
     ' title="' + escapeNavText(i18n('nav.community', 'Comunidade')) + '">' +
     '<span class="header-community-mark-media" aria-hidden="true">' +
-    '<img class="header-community-mark-img" src="/imagens/foto-comunidade.png" alt="" width="40" height="40" decoding="async">' +
+    '<img class="header-community-mark-img" src="/biblioteca/imagens/foto-comunidade.png" alt="" width="40" height="40" decoding="async">' +
     '</span>' +
     '<span class="header-community-mark-label">' + escapeNavText(i18n('nav.community', 'Comunidade')) + '</span>' +
     '</a>';

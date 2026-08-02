@@ -842,6 +842,8 @@ window.__I18N_LOCALES__ = {
         "cardVidaText": "Family story — caring for plants with science, nature and friendship.",
         "cardVideosTitle": "Videos",
         "cardVideosText": "Lab channel and inspected archives (MovReCam, Lair, Davis…).",
+        "cardCommunityTitle": "Live Feed",
+        "cardCommunityText": "Community photos and notes — plant ID and shared research diary.",
         "docTitle": "Library | Inspetor BudGanja"
       },
       "guiaPalavras": {
@@ -1709,6 +1711,8 @@ window.__I18N_LOCALES__ = {
         "cardVidaText": "Cuento familiar — cuidar plantas con ciencia, naturaleza y amistad.",
         "cardVideosTitle": "Videos",
         "cardVideosText": "Canal del laboratorio y archivos inspeccionados (MovReCam, Lair, Davis…).",
+        "cardCommunityTitle": "Feed Vivo",
+        "cardCommunityText": "Fotos y relatos de la comunidad — identificación de plantas y diario compartido.",
         "docTitle": "Biblioteca | Inspetor BudGanja"
       },
       "guiaPalavras": {
@@ -2576,6 +2580,8 @@ window.__I18N_LOCALES__ = {
         "cardVidaText": "Conto familiar — cuidar de plantas com ciência, natureza e amizade.",
         "cardVideosTitle": "Vídeos",
         "cardVideosText": "Canal do laboratório e acervos inspecionados (MovReCam, Lair, Davis…).",
+        "cardCommunityTitle": "Feed Vivo",
+        "cardCommunityText": "Fotos e relatos da comunidade — identificação de plantas e diário partilhado.",
         "docTitle": "Biblioteca | Inspetor BudGanja"
       },
       "guiaPalavras": {
