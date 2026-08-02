@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T06:07:07.191Z",
+  "updatedAt": "2026-08-02T06:31:45.834Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -46,6 +46,16 @@
   ],
   "items": [
     {
+      "id": "dois-ag",
+      "word": "2-AG",
+      "simple": "2-Araquidonoilglicerol — endocanabinoide central, com enzimas próprias de síntese e degradação. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "2-Arachidonoylglycerol — central endocannabinoid with its own synthesis and breakdown enzymes. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "2-Araquidonilglicerol — endocannabinoide central, con enzimas propias de síntesis y degradación. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "acucar",
       "word": "Açúcar",
       "simple": "Substância doce (sacarose e afins) — no site, elo da cana e dos ultraprocessados.",
@@ -86,6 +96,16 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "alucinogeno",
+      "word": "Alucinógeno",
+      "simple": "Classe de efeito: altera percepção ou consciência de forma intensa — distinta de psicoativo, psicodélico e de entorpecente (lista).",
+      "simpleEn": "Effect class: strongly alters perception or consciousness — distinct from psicoativo, psychedelic and control-list entorpecente.",
+      "simpleEs": "Clase de efecto: altera percepción o conciencia de forma intensa — distinta de psicoactivo, psicodélico y entorpecente de lista.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-alucinogeno.html"
+    },
+    {
       "id": "anandamida",
       "word": "Anandamida",
       "simple": "Endocanabinoide (AEA) que o próprio corpo produz — frequentemente associado a efeitos «tipo THC» nos receptores. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -114,6 +134,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-animal.html"
+    },
+    {
+      "id": "anvisa",
+      "word": "ANVISA",
+      "simple": "Agência reguladora de vigilância sanitária — nó institucional do mapa de portarias e listas; não é nome da planta.",
+      "simpleEn": "Brazilian health surveillance agency — institutional node for ordinances and lists; not a plant name.",
+      "simpleEs": "Agencia brasileña de vigilancia sanitaria — nodo institucional de portarias y listas; no es nombre de planta.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-anvisa.html"
     },
     {
       "id": "artes",
@@ -496,6 +526,16 @@
       "href": "/cultivo/"
     },
     {
+      "id": "depressor",
+      "word": "Depressor",
+      "simple": "Classe de efeito: diminui a actividade do sistema nervoso central — distinta de entorpecente (categoria de lista).",
+      "simpleEn": "Effect class: lowers central-nervous-system activity — distinct from control-list entorpecente.",
+      "simpleEs": "Clase de efecto: baja la actividad del sistema nervioso central — distinta de entorpecente de lista.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-depressor.html"
+    },
+    {
       "id": "descarboxilacao",
       "word": "Descarboxilação",
       "simple": "Passo (calor/química) que converte ácidos (THCA/CBDA…) nas formas «ativas» THC/CBD usadas em óleos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -534,16 +574,6 @@
       "group": "hub",
       "fromTitle": true,
       "href": "/biblioteca/inspecoes/"
-    },
-    {
-      "id": "dois-ag",
-      "word": "2-AG",
-      "simple": "2-Araquidonoilglicerol — endocanabinoide central, com enzimas próprias de síntese e degradação. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "2-Arachidonoylglycerol — central endocannabinoid with its own synthesis and breakdown enzymes. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "2-Araquidonilglicerol — endocannabinoide central, con enzimas propias de síntesis y degradación. Citada en los borradores de las clases XIV (curso UNIFESP).",
-      "group": "tecnico",
-      "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "droga",
@@ -613,7 +643,7 @@
       "simpleEs": "Término jurídico-policial: sustancia que entumece (baja sensación o reacción) y entra en listas de control — distinto de «droga» en el habla común y de «narcótico» (rótulo médico/legal antiguo).",
       "group": "classificacao",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-droga.html"
+      "href": "/posts/post-inspecao-palavra-entorpecente-narcotico.html"
     },
     {
       "id": "equinacea",
@@ -674,6 +704,26 @@
       "group": "tecnico",
       "fromTitle": true,
       "href": "/equipamentos/"
+    },
+    {
+      "id": "estimulante",
+      "word": "Estimulante",
+      "simple": "Classe de efeito: aumenta alerta ou actividade do sistema nervoso — do café quotidiano a substâncias sob lista.",
+      "simpleEn": "Effect class: raises alertness or nervous-system activity — from everyday coffee to listed substances.",
+      "simpleEs": "Clase de efecto: sube alerta o actividad del sistema nervioso — del café cotidiano a sustancias en lista.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-estimulante.html"
+    },
+    {
+      "id": "estupefaciente",
+      "word": "Estupefaciente",
+      "simple": "Rótulo internacional/de tratados, vizinho de narcótico — não é sinónimo exacto de entorpecente nas listas brasileiras modernas.",
+      "simpleEn": "International/treaty label next to narcotic — not an exact synonym of modern Brazilian entorpecente lists.",
+      "simpleEs": "Rótulo internacional/de tratados, vecino de narcótico — no es sinónimo exacto de entorpecente en listas brasileñas modernas.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-estupefaciente.html"
     },
     {
       "id": "etnobotanica",
@@ -856,6 +906,16 @@
       "href": "/plantas/hortela/"
     },
     {
+      "id": "ilicito",
+      "word": "Ilícito",
+      "simple": "Polo jurídico «fora da lei» — fecha o contraste com droga (remédio ↔ ilícito no senso comum); não é o nome da planta.",
+      "simpleEn": "Legal pole “outside the law” — closes the medicine ↔ illicit contrast of droga; not the plant’s name.",
+      "simpleEs": "Polo jurídico «fuera de la ley» — cierra el contraste remedio ↔ ilícito de droga; no es el nombre de la planta.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-ilicito.html"
+    },
+    {
       "id": "inspecao",
       "word": "Inspeção",
       "simple": "Olhar com método, anotar o que se vê e publicar o relatório.",
@@ -954,6 +1014,16 @@
       "group": "hub",
       "fromTitle": true,
       "href": "/biblioteca/inspecoes/"
+    },
+    {
+      "id": "lista-f",
+      "word": "Lista F",
+      "simple": "Âncora brasileira das listas oficiais de substâncias controladas — o laboratório indexa o tipo de linguagem, não o anexo integral.",
+      "simpleEn": "Brazilian anchor for official controlled-substance lists — the lab indexes the language type, not the full annex.",
+      "simpleEs": "Ancla brasileña de las listas oficiales de sustancias controladas — el laboratorio indexa el tipo de lenguaje, no el anexo íntegro.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-lista-f.html"
     },
     {
       "id": "lupulo",
@@ -1063,7 +1133,7 @@
       "simpleEs": "Término médico/legal antiguo y amplio: sustancia asociada a sueño o entumecimiento — no es sinónimo exacto de «entorpecente» en las listas modernas de control.",
       "group": "classificacao",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-droga.html"
+      "href": "/posts/post-inspecao-palavra-entorpecente-narcotico.html"
     },
     {
       "id": "nojinho",
@@ -1074,6 +1144,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-nojinho.html"
+    },
+    {
+      "id": "opiaceo",
+      "word": "Opiáceo",
+      "simple": "Tradição clínica ligada ao ópio e derivados naturais — ajuda a entender o rótulo narcótico; distinto da cannabis.",
+      "simpleEn": "Clinical tradition tied to opium and natural derivatives — helps explain the narcotic label; distinct from cannabis.",
+      "simpleEs": "Tradición clínica ligada al opio y derivados naturales — ayuda a entender el rótulo narcótico; distinta del cannabis.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-opioide-opiaceo.html"
+    },
+    {
+      "id": "opioide",
+      "word": "Opioide",
+      "simple": "Família farmacológica dos receptores opioides (inclui sintéticos) — distinta da rede de nomes da cannabis e de entorpecente.",
+      "simpleEn": "Pharmacological opioid-receptor family (including synthetics) — distinct from cannabis name network and entorpecente.",
+      "simpleEs": "Familia farmacológica de receptores opioides (incluye sintéticos) — distinta de la red de nombres del cannabis y de entorpecente.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-opioide-opiaceo.html"
     },
     {
       "id": "oregano",
@@ -1156,6 +1246,16 @@
       "href": "/plantas/"
     },
     {
+      "id": "portaria",
+      "word": "Portaria",
+      "simple": "Forma normativa que materializa listas e regras sanitárias — o laboratório nomeia o género textual, não um número eterno.",
+      "simpleEn": "Normative form that materializes sanitary lists and rules — the lab names the genre, not an eternal number.",
+      "simpleEs": "Forma normativa que materializa listas y reglas sanitarias — el laboratorio nombra el género, no un número eterno.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-portaria.html"
+    },
+    {
       "id": "produtos-nocivos",
       "word": "Produtos nocivos",
       "simple": "Itens industriais ou alimentares que o laboratório marca como risco (açúcar, glúten, caseína…).",
@@ -1164,6 +1264,26 @@
       "group": "hub",
       "fromTitle": true,
       "href": "/biblioteca/inspecoes/"
+    },
+    {
+      "id": "proibicao",
+      "word": "Proibição",
+      "simple": "Regime ou acto de proibir — camada política das listas e do estigma; distinta do nome da planta.",
+      "simpleEn": "Regime or act of banning — political layer of lists and stigma; distinct from the plant’s name.",
+      "simpleEs": "Régimen o acto de prohibir — capa política de listas y estigma; distinta del nombre de la planta.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-proibicao-proibicionismo.html"
+    },
+    {
+      "id": "proibicionismo",
+      "word": "Proibicionismo",
+      "simple": "Doutrina política que naturaliza a proibição — camada histórica do debate; indexar ≠ endossar.",
+      "simpleEn": "Political doctrine that naturalizes prohibition — historical layer of the debate; indexing ≠ endorsement.",
+      "simpleEs": "Doctrina política que naturaliza la prohibición — capa histórica del debate; indexar ≠ respaldar.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-proibicao-proibicionismo.html"
     },
     {
       "id": "psicoativo",
@@ -1184,6 +1304,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "psicotropico",
+      "word": "Psicotrópico",
+      "simple": "Rótulo clínico/institucional: substância que actua no sistema nervoso — distinto de entorpecente (lista) e de droga no senso comum.",
+      "simpleEn": "Clinical/institutional label: substance acting on the nervous system — distinct from control-list entorpecente and everyday “drug”.",
+      "simpleEs": "Rótulo clínico/institucional: sustancia que actúa en el sistema nervioso — distinto de entorpecente de lista y de droga en el habla común.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-psicotropico.html"
     },
     {
       "id": "quimiotipo",
@@ -1284,6 +1414,16 @@
       "group": "titulo",
       "fromTitle": true,
       "href": "/sorteios/"
+    },
+    {
+      "id": "substancia-controlada",
+      "word": "Substância controlada",
+      "simple": "Meta-rótulo do estatuto regulatório (listas, receituário) — distinto de ilícito automático e dos nomes populares.",
+      "simpleEn": "Meta-label for regulatory status (lists, prescriptions) — distinct from automatic “illicit” and folk names.",
+      "simpleEs": "Meta-rótulo del estatuto regulatorio (listas, receta) — distinto de ilícito automático y de los nombres populares.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-substancia-controlada.html"
     },
     {
       "id": "substrato",

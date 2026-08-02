@@ -1149,12 +1149,28 @@
                   "description": "*Erythrina mulungu* — casca com alcaloides eritrínicos; chá calmante da tradição brasileira."
                 },
                 {
+                  "label": "Inspeção: Psicotrópico — classe clínica e controlo no laboratório",
+                  "tileLabel": "Inspeção: Psicotrópico — classe…",
+                  "href": "/posts/post-inspecao-palavra-psicotropico.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-psicotropico",
+                  "description": "Palavra: psicotrópico — rótulo clínico/de controlo sobre substâncias que actuam no sistema nervoso; distinto de entorpecente, narcótico e droga no senso comum."
+                },
+                {
                   "label": "Inspeção: Planta — Maracujá — flavonoides e passiflorina",
                   "tileLabel": "Inspeção: Planta — Maracujá — f…",
                   "href": "/posts/post-inspecao-planta-maracuja.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-maracuja",
                   "description": "*Passiflora incarnata* — flavonoides e alcaloides traço; chá calmante clássico da fitoterapia."
+                },
+                {
+                  "label": "Inspeção: Lista F — âncora brasileira das listas de controlo",
+                  "tileLabel": "Inspeção: Lista F — âncora bras…",
+                  "href": "/posts/post-inspecao-palavra-lista-f.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-lista-f",
+                  "description": "Palavra: Lista F — âncora brasileira das listas de substâncias controladas; o laboratório indexa o tipo de linguagem, não o anexo integral da portaria."
                 },
                 {
                   "label": "Inspeção: Planta — Calêndula — flavonoides e pomadas cutâneas",
@@ -1165,12 +1181,28 @@
                   "description": "*Calendula officinalis* — pétalas ricas em triterpenos e flavonoides; uso tópico em pele irritada."
                 },
                 {
+                  "label": "Inspeção: Estupefaciente — rótulo internacional vizinho de narcótico",
+                  "tileLabel": "Inspeção: Estupefaciente — rótu…",
+                  "href": "/posts/post-inspecao-palavra-estupefaciente.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-estupefaciente",
+                  "description": "Palavra: estupefaciente — rótulo internacional/ONU vizinho de narcótico; o laboratório separa-o de entorpecente nas listas brasileiras modernas."
+                },
+                {
                   "label": "Inspeção: Planta — Barbatimão — proantocianidinas adstringentes",
                   "tileLabel": "Inspeção: Planta — Barbatimão —…",
                   "href": "/posts/post-inspecao-planta-barbatimao.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-barbatimao",
                   "description": "*Stryphnodendron adstringens* — casca rica em taninos e proantocianidinas; adstringente do Cerrado."
+                },
+                {
+                  "label": "Inspeção: Substância controlada — meta-rótulo das listas",
+                  "tileLabel": "Inspeção: Substância controlada…",
+                  "href": "/posts/post-inspecao-palavra-substancia-controlada.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-substancia-controlada",
+                  "description": "Palavra: substância controlada — meta-rótulo do que as listas fazem; distinto de droga no senso comum e dos nomes populares da cannabis."
                 },
                 {
                   "label": "Inspeção: Planta — Jaborandi — pilocarpina e glaucoma histórico",
@@ -1181,12 +1213,28 @@
                   "description": "*Pilocarpus microphyllus* — folhas fonte histórica de pilocarpina; alcaloide imidazólico miótico."
                 },
                 {
+                  "label": "Inspeção: Ilícito — polo jurídico do duplo sentido de droga",
+                  "tileLabel": "Inspeção: Ilícito — polo jurídi…",
+                  "href": "/posts/post-inspecao-palavra-ilicito.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-ilicito",
+                  "description": "Palavra: ilícito — polo jurídico que fecha o contraste com droga (remédio ↔ ilícito no senso comum) e com substância controlada."
+                },
+                {
                   "label": "Inspeção: Planta — Ipecacuanha — emetina e xarope histórico",
                   "tileLabel": "Inspeção: Planta — Ipecacuanha …",
                   "href": "/posts/post-inspecao-planta-ipecacuanha.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-ipecacuanha",
                   "description": "*Carapichea ipecacuanha* — raiz com emetina e cephaeline; farmacopeia histórica como emético e antiamébico."
+                },
+                {
+                  "label": "Inspeção: Opioide e Opiáceo — tradição clínica por trás de narcótico",
+                  "tileLabel": "Inspeção: Opioide e Opiáceo — t…",
+                  "href": "/posts/post-inspecao-palavra-opioide-opiaceo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-opioide-opiaceo",
+                  "description": "Palavras: opioide × opiáceo — tradição clínica (ópio / analgésicos) que explica parte do rótulo narcótico; distinta da rede de nomes da cannabis."
                 },
                 {
                   "label": "Inspeção: Planta — Pfaffia (ginseng-brasileiro) — ecdisteroides e ginseng-brasileiro",
@@ -1197,12 +1245,28 @@
                   "description": "*Pfaffia glomerata* — raiz rica em ecdisteroides e pfaffic acids; «ginseng-brasileiro» adaptogénico popular."
                 },
                 {
+                  "label": "Inspeção: Depressor — classe de efeito no sistema nervoso",
+                  "tileLabel": "Inspeção: Depressor — classe de…",
+                  "href": "/posts/post-inspecao-palavra-depressor.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-depressor",
+                  "description": "Palavra: depressor — classe de efeito (diminui actividade do SNC); distinta de entorpecente (lista) e de psicoativo (Guia técnico)."
+                },
+                {
                   "label": "Inspeção: Planta — Aroeira — pimenta-rosa e óleos resinosos",
                   "tileLabel": "Inspeção: Planta — Aroeira — pi…",
                   "href": "/posts/post-inspecao-planta-aroeira.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-aroeira",
                   "description": "*Schinus terebinthifolia* — frutos «pimenta-rosa» e folhas com óleos essenciais e taninos; tradição tópica e culinária."
+                },
+                {
+                  "label": "Inspeção: Estimulante — classe de efeito no sistema nervoso",
+                  "tileLabel": "Inspeção: Estimulante — classe …",
+                  "href": "/posts/post-inspecao-palavra-estimulante.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-estimulante",
+                  "description": "Palavra: estimulante — classe de efeito (aumenta actividade do SNC); par de depressor e alucinógeno; distinta de entorpecente."
                 },
                 {
                   "label": "Inspeção: Planta — Quina — quinina e antimalárico histórico",
@@ -1213,12 +1277,44 @@
                   "description": "*Cinchona* spp. — casca fonte histórica de quinina; capítulo fundacional da quimioterapia antimalárica."
                 },
                 {
+                  "label": "Inspeção: Alucinógeno — classe de efeito e literacia XIV",
+                  "tileLabel": "Inspeção: Alucinógeno — classe …",
+                  "href": "/posts/post-inspecao-palavra-alucinogeno.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-alucinogeno",
+                  "description": "Palavra: alucinógeno — classe de efeito (altera percepção); distinta de psicoativo, psicodélico e entorpecente; elo com ayahuasca/cogumelo no Guia."
+                },
+                {
                   "label": "Inspeção: Planta — Cannabis (medicinal) — canabinoides THC/CBD e contexto clínico",
                   "tileLabel": "Inspeção: Planta — Cannabis (me…",
                   "href": "/posts/post-inspecao-planta-cannabis-sativa.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-cannabis-sativa",
                   "description": "*Cannabis sativa* L. — fitocanabinoides (THC, CBD), terpenos e uso medicinal regulamentado; cautela legal e neurodesenvolvimento."
+                },
+                {
+                  "label": "Inspeção: Proibição e Proibicionismo — camada política da classificação",
+                  "tileLabel": "Inspeção: Proibição e Proibicio…",
+                  "href": "/posts/post-inspecao-palavra-proibicao-proibicionismo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-proibicao-proibicionismo",
+                  "description": "Palavras: proibição × proibicionismo — camada política/histórica das listas e do estigma; elo com ilícito, maconha e formação Sidarta/CEBRID."
+                },
+                {
+                  "label": "Inspeção: ANVISA — instituição no mapa regulatório BudGanja",
+                  "tileLabel": "Inspeção: ANVISA — instituição …",
+                  "href": "/posts/post-inspecao-palavra-anvisa.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-anvisa",
+                  "description": "Palavra: ANVISA — agência reguladora no mapa institucional do laboratório; elo com portaria, lista F e cannabis medicinal, sem parecer jurídico."
+                },
+                {
+                  "label": "Inspeção: Portaria — forma normativa das listas de controlo",
+                  "tileLabel": "Inspeção: Portaria — forma norm…",
+                  "href": "/posts/post-inspecao-palavra-portaria.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-portaria",
+                  "description": "Palavra: portaria — forma normativa que materializa listas e regras; elo com ANVISA, Lista F e entorpecente, sem reproduzir o texto oficial."
                 }
               ]
             },
