@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T08:28:15.945Z",
+  "updatedAt": "2026-08-02T08:40:25.741Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -286,14 +286,24 @@
       "href": "/plantas/"
     },
     {
-      "id": "broad-spectrum",
-      "word": "Broad spectrum",
-      "simple": "Extrato «quase» full spectrum — tipicamente sem THC (ou com residual mínimo). Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Nearly full-spectrum extract — typically without THC (or with minimal residue). Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Extracto «casi» full spectrum — típicamente sin THC (o con residual mínimo). Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "id": "biomarcador",
+      "word": "Biomarcador",
+      "simple": "Sinal mensurável citado na aula (AEA, 2-AG, BDNF) — no estudo-piloto de retiro indica associação com a prática; literacia XIV, não diagnóstico clínico.",
+      "simpleEn": "Measurable signal cited in the lecture (AEA, 2-AG, BDNF) — in the retreat pilot it marks association with practice; XIV literacy, not clinical diagnosis.",
+      "simpleEs": "Señal mensurable citada en la clase (AEA, 2-AG, BDNF) — en el piloto de retiro indica asociación con la práctica; literacia XIV, no diagnóstico clínico.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "broad-spectrum",
+      "word": "Broad spectrum",
+      "simple": "Perfil amplo sem THC — opção citada na grade XIV para quem não tolera THC; ainda distinto do isolado puro.",
+      "simpleEn": "Broad profile without THC — XIV option for THC-sensitive users; still distinct from a pure isolate.",
+      "simpleEs": "Perfil amplio sin THC — opción XIV para quien no tolera THC; aún distinto del aislado puro.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
       "id": "budganja",
@@ -358,12 +368,12 @@
     {
       "id": "canabimetico",
       "word": "Canabimético",
-      "simple": "Efeito ou molécula que imita / potencia a sinalização canabinoide sem ser necessariamente um fitocanabinoide clássico — na aula XIV, também associado a certas PIC (meditação, massagem…).",
-      "simpleEn": "Effect or molecule that mimics / boosts cannabinoid signalling without necessarily being a classic phytocannabinoid — in XIV also linked to some PIC (meditation, massage…).",
-      "simpleEs": "Efecto o molécula que imita / potencia la señalización cannabinoide sin ser necesariamente un fitocannabinoide clásico — en el XIV también asociado a ciertas PIC (meditación, masaje…).",
+      "simple": "Planta ou substância que interage com o SEC sem ser necessariamente cannabis — bloco central da Aula 7 XIV (Eliana), via exógena.",
+      "simpleEn": "Plant or substance that interacts with the ECS without necessarily being cannabis — core of XIV Lesson 7 (Eliana), exogenous path.",
+      "simpleEs": "Planta o sustancia que interactúa con el SEC sin ser necesariamente cannabis — bloque central de la Aula 7 XIV (Eliana).",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+      "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html"
     },
     {
       "id": "canabimimetico",
@@ -384,6 +394,16 @@
       "group": "tecnico",
       "fromTitle": true,
       "href": "/posts/post-inspecao-canal-canabinall.html"
+    },
+    {
+      "id": "canabinoide",
+      "word": "Canabinoide",
+      "simple": "Família de mensageiros que ligam receptores canabinoides — inclui endógenos (AEA, 2-AG), fito (cannabis) e sintéticos/isolados; a meditação actua na via endógena.",
+      "simpleEn": "Family of messengers that bind cannabinoid receptors — includes endogenous (AEA, 2-AG), phyto (cannabis) and synthetic/isolates; meditation acts on the endogenous path.",
+      "simpleEs": "Familia de mensajeros que unen receptores cannabinoides — incluye endógenos (AEA, 2-AG), fito (cannabis) y sintéticos/aislados; la meditación actúa en la vía endógena.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "canhamo",
@@ -448,62 +468,62 @@
     {
       "id": "cb1",
       "word": "CB1",
-      "simple": "Receptor canabinoide mais abundante no sistema nervoso central — alvo clássico do THC. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Cannabinoid receptor most abundant in the central nervous system — classic THC target. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Receptor cannabinoide más abundante en el sistema nervioso central — blanco clásico del THC. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Receptor canabinoide (sobretudo central/periférico) — na Aula 7, hiper expressão enquadra exemplos de pesquisa (ex. antagonistas periféricos).",
+      "simpleEn": "Cannabinoid receptor (mostly central/peripheral) — in Lesson 7, overexpression frames research examples (e.g. peripheral antagonists).",
+      "simpleEs": "Receptor cannabinoide — en la Aula 7, hiper expresión encuadra ejemplos de investigación (p. ej. antagonistas periféricos).",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html"
     },
     {
       "id": "cb2",
       "word": "CB2",
-      "simple": "Receptor canabinoide mais ligado a imunidade e tecidos periféricos — alvo de terpenos como β-cariofileno. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Cannabinoid receptor more tied to immunity and peripheral tissues — target of terpenes such as β-caryophyllene. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Receptor cannabinoide más ligado a inmunidad y tejidos periféricos — blanco de terpenos como el β-cariofileno. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Receptor canabinoide (perfil mais periférico/imune) — a aula cita baixa expressão óssea no mapa de osteoporose como literacia, não protocolo.",
+      "simpleEn": "Cannabinoid receptor (more peripheral/immune profile) — the lecture cites low bone expression in an osteoporosis map as literacy, not a protocol.",
+      "simpleEs": "Receptor cannabinoide (perfil más periférico/inmune) — la clase cita baja expresión ósea en el mapa de osteoporosis como literacia.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html"
     },
     {
       "id": "cbc",
       "word": "CBC",
-      "simple": "Canabicromeno — fitocanabinoide da via do CBGA, citado com atividades anti-inflamatórias e analgésicas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Cannabichromene — phytocannabinoid on the CBGA pathway, cited for anti-inflammatory and analgesic activity. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Cannabicromeno — fitocannabinoide de la vía del CBGA, citado por actividad antiinflamatoria y analgésica. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Canabicromeno — fitocanabinoide do mapa XIV (ex. anti-inflamatório/analgésico na figura da aula).",
+      "simpleEn": "Cannabichromene — phytocannabinoid on the XIV map (e.g. anti-inflammatory/analgesic on the lecture slide).",
+      "simpleEs": "Cannabicromeno — fitocannabinoide del mapa XIV (p. ej. antiinflamatorio/analgésico en la figura de la clase).",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
       "id": "cbd",
       "word": "CBD",
-      "simple": "Canabidiol — fitocanabinoide não (ou pouco) psicoativo, muito citado em epilepsia e em óleos isolados vs planta inteira. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Cannabidiol — non- (or weakly) psychoactive phytocannabinoid, often cited in epilepsy and isolate vs whole-plant oils. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Cannabidiol — fitocannabinoide no (o poco) psicoactivo, muy citado en epilepsia y en aceites aislados vs planta entera. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Canabidiol — majoritário no quimiotipo 3; a aula insiste: CBD isolado ≠ fitoterápico full spectrum (efeito comitiva / curva em U).",
+      "simpleEn": "Cannabidiol — major in chemotype 3; the lecture insists: isolated CBD ≠ full-spectrum herbal (entourage / inverted-U curve).",
+      "simpleEs": "Cannabidiol — mayoritario en el quimiotipo 3; la clase insiste: CBD aislado ≠ fitoterápico full spectrum (efecto séquito / curva en U).",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
       "id": "cbg",
       "word": "CBG",
-      "simple": "Canabigerol — fitocanabinoide «mãe» da via biossintética; predominante no quimiotipo 4 (cânhamo). Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Cannabigerol — «parent» phytocannabinoid of the biosynthetic pathway; dominant in chemotype 4 (hemp). Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Cannabigerol — fitocannabinoide «madre» de la vía biosintética; predominante en el quimiotipo 4 (cáñamo). Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Canabigerol — fitocanabinoide majoritário do quimiotipo 4 na classificação da Aula 10 XIV.",
+      "simpleEn": "Cannabigerol — major phytocannabinoid of chemotype 4 in XIV Lesson 10.",
+      "simpleEs": "Cannabigerol — fitocannabinoide mayoritario del quimiotipo 4 en la Aula 10 XIV.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
       "id": "cbn",
       "word": "CBN",
-      "simple": "Canabinol — produto de oxidação do THC; um dos quatro fitocanabinoides centrais na aula de quimiotipos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Cannabinol — oxidation product of THC; one of the four central phytocannabinoids in the chemotype lecture. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Cannabinol — producto de oxidación del THC; uno de los cuatro fitocannabinoides centrales en la clase de quimiotipos. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Canabinol — fitocanabinoide citado no mapa de moléculas/actividades da Aula 10 (composição química).",
+      "simpleEn": "Cannabinol — phytocannabinoid cited on the Lesson 10 molecule/activity map.",
+      "simpleEs": "Cannabinol — fitocannabinoide citado en el mapa de moléculas/actividades de la Aula 10.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
       "id": "cebrid",
@@ -608,12 +628,12 @@
     {
       "id": "cultivar",
       "word": "Cultivar",
-      "simple": "Variedade agronómica selecionada — nas aulas, milhares de cultivares vs poucos quimiotipos úteis clinicamente. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Selected agronomic variety — in the lectures, thousands of cultivars vs few clinically useful chemotypes. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Variedad agronómica seleccionada — en las clases, miles de cultivares vs pocos quimiotipos útiles clínicamente. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Variante cultivada de cannabis — na Aula 10, base para falar de quimiotipos por teor, não só por nome comercial.",
+      "simpleEn": "Cultivated cannabis variant — in Lesson 10, basis for chemotypes by content, not only trade name.",
+      "simpleEs": "Variante cultivada de cannabis — en la Aula 10, base para quimiotipos por teor, no solo por nombre comercial.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
       "id": "cultivo",
@@ -696,6 +716,16 @@
       "href": "/cultivo/"
     },
     {
+      "id": "dieta",
+      "word": "Dieta",
+      "simple": "Eixo de estilo de vida na aula XIV de modulação endógena — equilíbrio hiper × hipo do SEC, junto com peso e exercício; sem «suplemento milagroso» nesta ficha.",
+      "simpleEn": "Lifestyle axis in the XIV endogenous-modulation lecture — hyper × hypo ECS balance, with weight and exercise; no “miracle supplement” on this sheet.",
+      "simpleEs": "Eje de estilo de vida en la clase XIV de modulación endógena — equilibrio hiper × hipo del SEC, con peso y ejercicio; sin «suplemento milagroso» en esta ficha.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
       "id": "dispensacao",
       "word": "Dispensação",
       "simple": "Acto farmacêutico de fornecer medicamento conforme receita e normas — na cannabis, circuito de produto regulado distinto de óleo artesanal/HC.",
@@ -728,22 +758,32 @@
     {
       "id": "droga-vegetal",
       "word": "Droga vegetal",
-      "simple": "Planta medicinal após colheita, secagem e processamento — antes do medicamento acabado. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Medicinal plant after harvest, drying and processing — before the finished medicine. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Planta medicinal tras cosecha, secado y procesamiento — antes del medicamento acabado. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Planta medicinal processada/preparada para uso — etapa da cadeia Farmácia Viva distinta do fitofármaco isolado.",
+      "simpleEn": "Processed/prepared medicinal plant material — Living Pharmacy chain stage distinct from an isolated phytodrug.",
+      "simpleEs": "Planta medicinal procesada/preparada — etapa de la cadena Farmacia Viva distinta del fitofármaco aislado.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-farmacia-viva.html"
+    },
+    {
+      "id": "ecbome",
+      "word": "eCBome",
+      "simple": "Abreviatura de endocanabinoidoma — rede ampliada do sistema endocanabinoide; objecto da modulação endógena (meditação/PIC) e exógena na grade XIV.",
+      "simpleEn": "Abbreviation for endocannabinoidome — expanded ECS network; target of endogenous (meditation/PIC) and exogenous modulation in XIV.",
+      "simpleEs": "Abreviatura de endocannabinoidoma — red ampliada del sistema endocannabinoide; objeto de la modulación endógena (meditación/PIC) y exógena en el XIV.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "efeito-comitiva",
       "word": "Efeito comitiva",
-      "simple": "Sinergia da planta inteira (canabinoides + terpenos + outros) face ao isolado — «entourage» nas aulas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Whole-plant synergy (cannabinoids + terpenes + others) versus the isolate — the «entourage» effect in the lectures. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Sinergia de la planta entera (cannabinoides + terpenos + otros) frente al aislado — efecto «entourage» en las clases. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Ideia de que a planta inteira (full spectrum) mantém efeito melhor que o isolado em dose alta — elo Aula 3/Eliana + composição Aula 10.",
+      "simpleEn": "Idea that the whole plant (full spectrum) holds effect better than a high-dose isolate — Lesson 3/Eliana + Lesson 10 composition.",
+      "simpleEs": "Idea de que la planta entera (full spectrum) mantiene el efecto mejor que el aislado en dosis alta — Aula 3/Eliana + Aula 10.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
       "id": "eletroacupuntura",
@@ -876,6 +916,16 @@
       "href": "/posts/post-inspecao-palavra-estimulante.html"
     },
     {
+      "id": "estudo-observacional",
+      "word": "Estudo observacional",
+      "simple": "Desenho do piloto 2020 (retiro 4 dias, n≈323): mostra associação (AEA/2-AG/BDNF ↑) — não prova causalidade clínica universal nem «dose» de meditação.",
+      "simpleEn": "Design of the 2020 pilot (4-day retreat, n≈323): shows association (AEA/2-AG/BDNF ↑) — not universal clinical causation nor a meditation “dose”.",
+      "simpleEs": "Diseño del piloto 2020 (retiro 4 días, n≈323): muestra asociación (AEA/2-AG/BDNF ↑) — no prueba causalidad clínica universal ni «dosis» de meditación.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
       "id": "estupefaciente",
       "word": "Estupefaciente",
       "simple": "Rótulo internacional/de tratados, vizinho de narcótico — não é sinónimo exacto de entorpecente nas listas brasileiras modernas.",
@@ -896,14 +946,24 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
-      "id": "farmacia-viva",
-      "word": "Farmácia Viva",
-      "simple": "Serviço do SUS que cultiva, processa e dispensa plantas e fitoterápicos com qualidade e rastreabilidade. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "SUS service that grows, processes and dispenses plants and herbal medicines with quality and traceability. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Servicio del SUS que cultiva, procesa y dispensa plantas y fitoterápicos con calidad y trazabilidad. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "id": "exercicio",
+      "word": "Exercício",
+      "simple": "Camada de estilo de vida na grade XIV — ~30 min de corrida/bike associados a ↑ AEA; irmão metabólico da PIC (meditação/yoga).",
+      "simpleEn": "Lifestyle layer in XIV — ~30 min running/cycling linked to ↑ AEA; metabolic sibling of PIC (meditation/yoga).",
+      "simpleEs": "Capa de estilo de vida en el XIV — ~30 min de carrera/bici asociados a ↑ AEA; hermano metabólico de la PIC (meditación/yoga).",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "farmacia-viva",
+      "word": "Farmácia Viva",
+      "simple": "Serviço exclusivo do SUS (Portaria 886/2010) de cultivo/orientação/processamento de plantas medicinais — Aula 5 XIV (Jaqueline Guimarães).",
+      "simpleEn": "SUS-only service (Ordinance 886/2010) for cultivating/guiding/processing medicinal plants — XIV Lesson 5 (Jaqueline).",
+      "simpleEs": "Servicio exclusivo del SUS (Portaria 886/2010) de cultivo/orientacion/procesamiento de plantas medicinales — Aula 5 XIV.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-farmacia-viva.html"
     },
     {
       "id": "feed-vivo",
@@ -938,12 +998,12 @@
     {
       "id": "fitofarmaco",
       "word": "Fitofármaco",
-      "simple": "Medicamento a partir de composto isolado da planta — nas aulas, distinto do fitoterápico de planta inteira. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Medicine from an isolated plant compound — in the lectures, distinct from whole-plant herbal medicine. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Medicamento a partir de un compuesto aislado de la planta — en las clases, distinto del fitoterápico de planta entera. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Princípio activo vegetal isolado/padronizado — contraste com fitoterápico de planta inteira (rede XIV / Farmácia Viva).",
+      "simpleEn": "Isolated/standardized plant active — contrast with whole-plant herbal medicine (XIV / Living Pharmacy network).",
+      "simpleEs": "Principio activo vegetal aislado/estandarizado — contraste con fitoterápico de planta entera.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-farmacia-viva.html"
     },
     {
       "id": "fitoterapia",
@@ -966,6 +1026,16 @@
       "href": "/guia/cultivo-basico.html"
     },
     {
+      "id": "francisco-matos",
+      "word": "Francisco José de Abreu Matos",
+      "simple": "Farmacologista da UFC, mentor do projecto Farmácias Vivas (1983) — citado na Aula 5 como origem da política.",
+      "simpleEn": "UFC pharmacologist, mentor of the Living Pharmacies project (1983) — cited in Lesson 5 as policy origin.",
+      "simpleEs": "Farmacólogo de la UFC, mentor del proyecto Farmacias Vivas (1983) — citado en la Aula 5.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-farmacia-viva.html"
+    },
+    {
       "id": "frutos",
       "word": "Frutos",
       "simple": "Parte da planta que carrega a semente — no hub, fichas de frutas inspecionadas.",
@@ -978,12 +1048,12 @@
     {
       "id": "full-spectrum",
       "word": "Full spectrum",
-      "simple": "Extrato com o perfil amplo da planta (vários canabinoides e terpenos) — oposto ao isolado puro. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Extract with the plant’s broad profile (several cannabinoids and terpenes) — opposite of a pure isolate. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Extracto con el perfil amplio de la planta (varios cannabinoides y terpenos) — opuesto al aislado puro. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Extrato com o perfil amplo da planta — contraste com CBD isolado e com broad spectrum (sem THC) na grade XIV.",
+      "simpleEn": "Extract with the plant’s broad profile — contrast with isolated CBD and broad spectrum (no THC) in XIV.",
+      "simpleEs": "Extracto con el perfil amplio de la planta — contraste con CBD aislado y broad spectrum (sin THC) en el XIV.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
       "id": "fumo-de-angola",
@@ -1066,6 +1136,16 @@
       "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html"
     },
     {
+      "id": "hiperatividade-sec",
+      "word": "Hiperatividade do SEC",
+      "simple": "Polo oposto à hipoatividade — excesso de sinalização do sistema endocanabinoide; a grade XIV fala em equilibrar hiper × hipo via estilo de vida e PIC.",
+      "simpleEn": "Opposite pole to hypoactivity — excess endocannabinoid signalling; XIV speaks of balancing hyper × hypo via lifestyle and PIC.",
+      "simpleEs": "Polo opuesto a la hipoactividad — exceso de señalización del sistema endocannabinoide; el XIV habla de equilibrar hiper × hipo vía estilo de vida y PIC.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
       "id": "hipoatividade-sec",
       "word": "Hipoatividade do SEC",
       "simple": "Estado de baixa produção ou baixa expressão de receptores do sistema endocanabinoide — contexto em que a grade XIV cita meditação/yoga/mindfulness como estratégias de restabelecimento.",
@@ -1138,12 +1218,12 @@
     {
       "id": "isolado",
       "word": "Isolado",
-      "simple": "Princípio ativo purificado (ex. CBD ~98%) — contraste com o fitoterápico de planta inteira. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Purified active principle (e.g. CBD ~98%) — contrast with whole-plant herbal medicine. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Principio activo purificado (p. ej. CBD ~98%) — contraste con el fitoterápico de planta entera. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Princípio activo purificado (ex. CBD ~98%) — na grade XIV entra na modulação exógena (sintéticos/isolados), contraste com a via endógena da meditação/PIC.",
+      "simpleEn": "Purified active principle (e.g. CBD ~98%) — in XIV it belongs to exogenous modulation (synthetics/isolates), contrast with the endogenous meditation/PIC path.",
+      "simpleEs": "Principio activo purificado (p. ej. CBD ~98%) — en el XIV entra en la modulación exógena (sintéticos/aislados), contraste con la vía endógena de meditación/PIC.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "jambu",
@@ -1208,12 +1288,12 @@
     {
       "id": "lavanda",
       "word": "Lavanda",
-      "simple": "Planta aromática rica em terpenos — comparada aos cheiros de variedades de cannabis. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Aromatic plant rich in terpenes — compared to cannabis variety smells in the lectures. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Planta aromática rica en terpenos — comparada con olores de variedades de cannabis. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Planta citada na Aula 7 no bloco de canabiméticos — exemplo de rede vegetal além da cannabis.",
+      "simpleEn": "Plant cited in Lesson 7 in the cannabimimetics block — example of a plant network beyond cannabis.",
+      "simpleEs": "Planta citada en la Aula 7 en el bloque de cannabimiméticos — ejemplo de red vegetal más allá del cannabis.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html"
     },
     {
       "id": "legado",
@@ -1306,6 +1386,36 @@
       "href": "/posts/post-inspecao-palavra-marijuana.html"
     },
     {
+      "id": "massagem",
+      "word": "Massagem",
+      "simple": "PIC no mesmo bloco XIV da meditação e da eletroacupuntura — citada em revisões com efeitos canabiméticos / regulação do SEC (literacia, não protocolo).",
+      "simpleEn": "PIC in the same XIV block as meditation and electroacupuncture — cited in reviews with cannabimimetic / ECS-regulation effects (literacy, not a protocol).",
+      "simpleEs": "PIC en el mismo bloque XIV que meditación y electroacupuntura — citada en revisiones con efectos cannabimiméticos / regulación del SEC (literacia, no protocolo).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "mbsr",
+      "word": "MBSR",
+      "simple": "Mindfulness-Based Stress Reduction — uma das escolas citadas na ficha só para dizer que o guia XIV **não** hierarquiza vipassana, zen, Isha ou MBSR.",
+      "simpleEn": "Mindfulness-Based Stress Reduction — one of the schools named only to say XIV does **not** rank vipassana, zen, Isha or MBSR.",
+      "simpleEs": "Mindfulness-Based Stress Reduction — una de las escuelas citadas solo para decir que el XIV **no** jerarquiza vipassana, zen, Isha o MBSR.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "mechoulam",
+      "word": "Mechoulam",
+      "simple": "Linha de pesquisa (Universidade Hebraica) citada por Eliana na Aula 7 — moléculas alvo / actualização; não é endosso de fármaco BR.",
+      "simpleEn": "Research line (Hebrew University) cited by Eliana in Lesson 7 — target molecules / update; not a Brazilian drug endorsement.",
+      "simpleEs": "Línea de investigación (Universidad Hebrea) citada por Eliana en la Aula 7 — moléculas diana; no es respaldo de fármaco BR.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html"
+    },
+    {
       "id": "meditacao",
       "word": "Meditação",
       "simple": "Prática de atenção / recolhimento citada na grade XIV como via endógena para modular o endocanabinoidoma (ex. subida de anandamida/2-AG em estudos observacionais).",
@@ -1336,6 +1446,16 @@
       "href": "/plantas/melissa/"
     },
     {
+      "id": "metabolito-secundario",
+      "word": "Metabólito secundário",
+      "simple": "Pigmentos, terpenos, alcaloides… — o que mais diferencia quimiotipos na Aula 10, face aos metabólitos primários.",
+      "simpleEn": "Pigments, terpenes, alkaloids… — what most differentiates chemotypes in Lesson 10 versus primary metabolites.",
+      "simpleEs": "Pigmentos, terpenos, alcaloides… — lo que más diferencia quimiotipos en la Aula 10 frente a metabolitos primarios.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
+    },
+    {
       "id": "mindfulness",
       "word": "Mindfulness",
       "simple": "Atenção plena — no bloco XIV de PIC junto com meditação e yoga, associada a efeitos canabiméticos / regulação do SEC.",
@@ -1358,12 +1478,12 @@
     {
       "id": "modulacao-exogena",
       "word": "Modulação exógena",
-      "simple": "Caminho XIV de intervenção externa — cannabis, canabiméticos, isolados/sintéticos — distinto da autonomia endógena (hábitos e PIC).",
-      "simpleEn": "XIV path of external intervention — cannabis, cannabimimetics, isolates/synthetics — distinct from endogenous autonomy (habits and PIC).",
-      "simpleEs": "Camino XIV de intervención externa — cannabis, cannabimiméticos, aislados/sintéticos — distinto de la autonomía endógena (hábitos y PIC).",
+      "simple": "Via «de fora» na Aula 7 — cannabis, canabiméticos, isolados/sintéticos — distinta da autonomia endógena (meditação/PIC).",
+      "simpleEn": "“From outside” path in Lesson 7 — cannabis, cannabimimetics, isolates/synthetics — distinct from endogenous autonomy (meditation/PIC).",
+      "simpleEs": "Vía «desde fuera» en la Aula 7 — cannabis, cannabimiméticos, aislados/sintéticos — distinta de la autonomía endógena.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+      "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html"
     },
     {
       "id": "movrecam",
@@ -1434,6 +1554,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "orto-terapeutico",
+      "word": "Orto terapêutico",
+      "simple": "Horto de plantas medicinais ligado à Farmácia Viva / educação comunitária — modalidade tipo 1 no discurso da Aula 5.",
+      "simpleEn": "Medicinal plant garden tied to Living Pharmacy / community education — type-1 modality in Lesson 5.",
+      "simpleEs": "Huerto de plantas medicinales ligado a Farmacia Viva / educación comunitaria — modalidad tipo 1 en la Aula 5.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-farmacia-viva.html"
     },
     {
       "id": "paciente-medicinal",
@@ -1536,6 +1666,16 @@
       "href": "/posts/post-inspecao-palavra-portaria.html"
     },
     {
+      "id": "portaria-886",
+      "word": "Portaria 886",
+      "simple": "Portaria MS/2010 que institui as Farmácias Vivas no âmbito federal — âncora normativa citada na Aula 5.",
+      "simpleEn": "2010 Ministry of Health ordinance creating Living Pharmacies federally — normative anchor cited in Lesson 5.",
+      "simpleEs": "Portaria MS/2010 que instituye las Farmacias Vivas a nivel federal — ancla normativa citada en la Aula 5.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-farmacia-viva.html"
+    },
+    {
       "id": "porte",
       "word": "Porte",
       "simple": "Conduta tipicamente ligada ao consumo próprio — no debate canábico, eixo do Tema 506; distinta de tráfico e de cultivo amparado por HC.",
@@ -1544,6 +1684,16 @@
       "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-porte-trafico.html"
+    },
+    {
+      "id": "praticas-integrativas",
+      "word": "Práticas integrativas",
+      "simple": "Forma por extenso de PIC — meditação, yoga, mindfulness, massagem, eletroacupuntura como camadas de modulação endógena do endocanabinoidoma na grade XIV.",
+      "simpleEn": "Full form of PIC — meditation, yoga, mindfulness, massage, electroacupuncture as endogenous modulation layers of the endocannabinoidome in XIV.",
+      "simpleEs": "Forma extendida de PIC — meditación, yoga, mindfulness, masaje, electroacupuntura como capas de modulación endógena del endocannabinoidoma en el XIV.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "produtos-nocivos",
@@ -1608,12 +1758,12 @@
     {
       "id": "quimiotipo",
       "word": "Quimiotipo",
-      "simple": "Classificação da cannabis pelo teor relativo de THC/CBD/CBG — mais útil clinicamente que só «sativa/índica». Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Cannabis classification by relative THC/CBD/CBG content — clinically more useful than «sativa/indica» alone. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Clasificación del cannabis por el teor relativo de THC/CBD/CBG — más útil clínicamente que solo «sativa/índica». Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Classificação de variantes de cannabis pelo fitocanabinoide majoritário (THC, CBD, CBG…) — cinco tipos na Aula 10 XIV (Diogo).",
+      "simpleEn": "Classification of cannabis variants by major phytocannabinoid (THC, CBD, CBG…) — five types in XIV Lesson 10 (Diogo).",
+      "simpleEs": "Clasificación de variantes de cannabis por fitocannabinoide mayoritario (THC, CBD, CBG…) — cinco tipos en la Aula 10 XIV (Diogo).",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
       "id": "radio",
@@ -1658,12 +1808,32 @@
     {
       "id": "renisus",
       "word": "RENISUS",
-      "simple": "Relação Nacional de Plantas Medicinais de Interesse ao SUS — lista de espécies prioritárias para pesquisa e uso. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "National list of medicinal plants of interest to the SUS — priority species for research and use. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Relación Nacional de Plantas Medicinales de Interés al SUS — lista de especies prioritarias para investigación y uso. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Relação de plantas de interesse ao SUS para pesquisa/validação do saber tradicional — citada na Aula 5 (~71 espécies no discurso da aula).",
+      "simpleEn": "List of plants of interest to SUS for research/validation of traditional knowledge — cited in Lesson 5.",
+      "simpleEs": "Relación de plantas de interés al SUS para investigación/validación del saber tradicional — citada en la Aula 5.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-farmacia-viva.html"
+    },
+    {
+      "id": "retiro",
+      "word": "Retiro",
+      "simple": "Contexto intensivo de prática (ex. 4 dias Isha Yoga / Inner Engineering no estudo citado) — distinto da rotina diária de 10 min; indexar ≠ endossar escola comercial.",
+      "simpleEn": "Intensive practice context (e.g. 4-day Isha Yoga / Inner Engineering in the cited study) — distinct from a daily 10-min routine; indexing ≠ endorsing a commercial school.",
+      "simpleEs": "Contexto intensivo de práctica (p. ej. 4 días Isha Yoga / Inner Engineering en el estudio citado) — distinto de la rutina diaria de 10 min; indexar ≠ respaldar escuela comercial.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "rimonabant",
+      "word": "Rimonabant",
+      "simple": "Antagonista CB1 histórico retirado do mercado — a Aula 7 usa-o como alerta de risco central ao falar de novos candidatos periféricos.",
+      "simpleEn": "Historic CB1 antagonist withdrawn from market — Lesson 7 uses it as a central-risk warning when discussing newer peripheral candidates.",
+      "simpleEs": "Antagonista CB1 histórico retirado del mercado — la Aula 7 lo usa como alerta de riesgo central.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html"
     },
     {
       "id": "ruda",
@@ -1686,6 +1856,16 @@
       "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html"
     },
     {
+      "id": "sec",
+      "word": "SEC",
+      "simple": "Sigla de sistema endocanabinoide (CB1/CB2 + endocanabinoides + enzimas) — núcleo clássico antes da ampliação para endocanabinoidoma / eCBome.",
+      "simpleEn": "Abbreviation for endocannabinoid system (CB1/CB2 + endocannabinoids + enzymes) — classic core before the wider endocannabinoidome / eCBome.",
+      "simpleEs": "Sigla de sistema endocannabinoide (CB1/CB2 + endocannabinoides + enzimas) — núcleo clásico antes de la ampliación a endocannabinoidoma / eCBome.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
       "id": "seletividade-penal",
       "word": "Seletividade penal",
       "simple": "Mecanismo estrutural: a mesma conduta é lida como saúde ou crime conforme classe, cor, território e acesso a advogado/HC.",
@@ -1704,6 +1884,16 @@
       "group": "titulo",
       "fromTitle": true,
       "href": "/vida/diario/"
+    },
+    {
+      "id": "sintetico",
+      "word": "Sintético",
+      "simple": "Camada XIV de moléculas de laboratório (ex. linha Mechoulam / HU) — modulação exógena distinta da autonomia endógena (meditação, estilo de vida, PIC).",
+      "simpleEn": "XIV layer of laboratory molecules (e.g. Mechoulam / HU line) — exogenous modulation distinct from endogenous autonomy (meditation, lifestyle, PIC).",
+      "simpleEs": "Capa XIV de moléculas de laboratorio (p. ej. línea Mechoulam / HU) — modulación exógena distinta de la autonomía endógena (meditación, estilo de vida, PIC).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "sistema-endocanabinoide",
@@ -1798,22 +1988,22 @@
     {
       "id": "terpeno",
       "word": "Terpeno",
-      "simple": "Composto aromático da planta (cheiro e sabor) que também modula efeitos dos fitocanabinoides no extrato. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Aromatic plant compound (smell and taste) that also modulates phytocannabinoid effects in the extract. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Compuesto aromático de la planta (olor y sabor) que también modula efectos de los fitocannabinoides en el extracto. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Metabólito secundário (via mevalonato/MEP) — cheiro/cor e modulação; partilha vias com a biossíntese de fitocanabinoides (Aula 10).",
+      "simpleEn": "Secondary metabolite (mevalonate/MEP path) — scent/color and modulation; shares paths with phytocannabinoid biosynthesis (Lesson 10).",
+      "simpleEs": "Metabolito secundario (vía mevalonato/MEP) — olor/color y modulación; comparte vías con la biosíntesis de fitocannabinoides (Aula 10).",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
       "id": "thc",
       "word": "THC",
-      "simple": "Delta-9-tetrahidrocanabinol — principal fitocanabinoide psicoativo da cannabis; eixo dos quimiotipos e da farmacologia do curso. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Delta-9-tetrahydrocannabinol — main psychoactive phytocannabinoid of cannabis; axis of chemotypes and course pharmacology. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Delta-9-tetrahidrocannabinol — principal fitocannabinoide psicoactivo del cannabis; eje de quimiotipos y farmacología del curso. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Δ9-tetrahidrocanabinol — fitocanabinoide majoritário do quimiotipo 1; na grade XIV também contraste com anandamida endógena e com CBD isolado.",
+      "simpleEn": "Δ9-tetrahydrocannabinol — major phytocannabinoid of chemotype 1; in XIV also contrasted with endogenous anandamide and isolated CBD.",
+      "simpleEs": "Δ9-tetrahidrocannabinol — fitocannabinoide mayoritario del quimiotipo 1; en el XIV también contraste con anandamida endógena y CBD aislado.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
       "id": "trafico",
@@ -1828,12 +2018,12 @@
     {
       "id": "tricoma",
       "word": "Tricoma",
-      "simple": "Célula glandular na superfície da planta onde se concentram resina, canabinoides e terpenos — sobretudo nas flores femininas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Glandular cell on the plant surface where resin, cannabinoids and terpenes concentrate — especially on female flowers. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Célula glandular en la superficie de la planta donde se concentran resina, cannabinoides y terpenos — sobre todo en flores femeninas. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Estrutura glandular que armazena resina (canabinoides + terpenos) — ponto de colheita e qualidade na rede XIV.",
+      "simpleEn": "Glandular structure storing resin (cannabinoids + terpenes) — harvest/quality point in the XIV network.",
+      "simpleEs": "Estructura glandular que almacena resina (cannabinoides + terpenos) — punto de cosecha y calidad en la red XIV.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
       "id": "trigo",
@@ -1894,6 +2084,26 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "via-endogena",
+      "word": "Via endógena",
+      "simple": "Caminho sem ingestão de canabinoide — o corpo altera disponibilidade de AEA/2-AG com hábitos e PIC (meditação, yoga, exercício…).",
+      "simpleEn": "Path without ingesting a cannabinoid — the body changes AEA/2-AG availability with habits and PIC (meditation, yoga, exercise…).",
+      "simpleEs": "Camino sin ingestión de cannabinoide — el cuerpo altera la disponibilidad de AEA/2-AG con hábitos y PIC (meditación, yoga, ejercicio…).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "via-exogena",
+      "word": "Via exógena",
+      "simple": "Sinónimo prático de modulação exógena na rede BudGanja — elo Aula 7 × guia de meditação (via endógena).",
+      "simpleEn": "Practical synonym of exogenous modulation in BudGanja — Lesson 7 × meditation guide (endogenous path).",
+      "simpleEs": "Sinónimo práctico de modulación exógena en BudGanja — Aula 7 × guía de meditación (vía endógena).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html"
     },
     {
       "id": "vida",
