@@ -843,6 +843,14 @@
                   "description": "*Curcuma longa* — açafrão-da-terra; curcumina, corante culinário e interesse anti-inflamatório (não é açafrão verdadeiro)."
                 },
                 {
+                  "label": "Inspeção: Fruto — Tomatinho Cereja — cultivo familiar e fruto fresco",
+                  "tileLabel": "Inspeção: Fruto — Tomatinho Cer…",
+                  "href": "/posts/post-inspecao-planta-tomatinho-cereja.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-planta-tomatinho-cereja",
+                  "description": "Tomatinho cereja (*Solanum lycopersicum* var. *cerasiforme*) — primeiro cultivo do Diário da Sementinha: fruto fresco vs ultraprocessados «tomato»."
+                },
+                {
                   "label": "Inspeção: Raiva — a palavra vermelha da sala de comando",
                   "tileLabel": "Inspeção: Raiva — a palavra ver…",
                   "href": "/posts/post-inspecao-palavra-raiva.html",
