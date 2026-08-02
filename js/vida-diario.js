@@ -6,10 +6,14 @@
 
   var STORAGE_KEY = 'budganja_vida_diario_v1';
   var MAX_ENTRIES = 40;
+  var NEED_ALERT = 35;
+  var NOTIFY_COOLDOWN_MS = 2 * 60 * 60 * 1000;
   var DECAY_PER_HOUR = { water: 4, food: 3, energy: 2, mood: 2 };
   var PHASES = ['seed', 'sprout', 'plant', 'happy'];
 
   var state = null;
+  var reminderTimers = [];
+  var pollTimer = null;
 
   function t(key, fallback) {
     if (window.BudGanjaI18n && typeof window.BudGanjaI18n.t === 'function') {
@@ -35,6 +39,8 @@
       lastTick: nowIso(),
       sleeping: false,
       careCount: 0,
+      notifyEnabled: false,
+      lastNotified: {},
       entries: []
     };
   }
@@ -56,6 +62,8 @@
       data.lastTick = data.lastTick || nowIso();
       data.sleeping = !!data.sleeping;
       data.careCount = Number(data.careCount) || 0;
+      data.notifyEnabled = !!data.notifyEnabled;
+      data.lastNotified = data.lastNotified && typeof data.lastNotified === 'object' ? data.lastNotified : {};
       data.entries = Array.isArray(data.entries) ? data.entries.slice(0, MAX_ENTRIES) : [];
       return data;
     } catch (e) {
@@ -67,6 +75,7 @@
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
     } catch (e) { /* ignore quota */ }
+    scheduleReminders();
   }
 
   function hoursSince(iso) {
@@ -197,6 +206,19 @@
     if (waterBtn) waterBtn.disabled = !!state.sleeping;
     if (foodBtn) foodBtn.disabled = !!state.sleeping;
 
+    var notifyBtn = $('vd-notify-toggle');
+    var notifyLabel = $('vd-notify-label');
+    var notifyOn = !!state.notifyEnabled && notificationsAllowed();
+    if (notifyBtn) {
+      notifyBtn.classList.toggle('is-on', notifyOn);
+      notifyBtn.setAttribute('aria-pressed', notifyOn ? 'true' : 'false');
+    }
+    if (notifyLabel) {
+      notifyLabel.textContent = notifyOn
+        ? t('notifyOn', 'Lembretes ligados')
+        : t('notifyOff', 'Lembretes desligados');
+    }
+
     var log = $('vd-log');
     if (log) {
       if (!state.entries.length) {
@@ -249,11 +271,18 @@
     return escapeHtml(s).replace(/'/g, '&#39;');
   }
 
+  function clearNeedNotify(need) {
+    if (state.lastNotified && state.lastNotified[need]) {
+      delete state.lastNotified[need];
+    }
+  }
+
   function doWater() {
     if (state.sleeping) return;
     state.needs.water = clamp(state.needs.water + 28);
     state.needs.mood = clamp(state.needs.mood + 8);
     state.careCount += 1;
+    clearNeedNotify('water');
     pushEntry(
       'water',
       t('logWater', 'Hoje reguei a Sementinha.').replace(/Sementinha/g, state.name)
@@ -269,6 +298,7 @@
     state.needs.food = clamp(state.needs.food + 28);
     state.needs.mood = clamp(state.needs.mood + 8);
     state.careCount += 1;
+    clearNeedNotify('food');
     pushEntry(
       'food',
       t('logFood', 'Hoje dei comida à Sementinha.').replace(/Sementinha/g, state.name)
@@ -289,6 +319,7 @@
       );
     } else {
       state.sleeping = true;
+      clearNeedNotify('energy');
       pushEntry(
         'sleep',
         t('logSleep', 'A Sementinha foi dormir.').replace(/Sementinha/g, state.name)
@@ -317,9 +348,252 @@
       t('resetConfirm', 'Apagar o diário da Sementinha neste aparelho?')
     );
     if (!ok) return;
+    clearReminderTimers();
     state = defaultState();
     save();
     render();
+  }
+
+  function notificationsSupported() {
+    return typeof window !== 'undefined' && 'Notification' in window;
+  }
+
+  function notificationsAllowed() {
+    return notificationsSupported() && Notification.permission === 'granted';
+  }
+
+  function clearReminderTimers() {
+    reminderTimers.forEach(function (id) {
+      clearTimeout(id);
+    });
+    reminderTimers = [];
+  }
+
+  function notifyCopy(need) {
+    var name = state.name || 'Sementinha';
+    if (need === 'water') {
+      return {
+        title: t('notifyTitleWater', 'Hora de dar água!'),
+        body: t('notifyBodyWater', '{name} tem sede. Vamos regar?').replace('{name}', name),
+        tag: 'vida-diario-water'
+      };
+    }
+    if (need === 'food') {
+      return {
+        title: t('notifyTitleFood', 'Hora de dar comida!'),
+        body: t('notifyBodyFood', '{name} quer uma folhinha de comida.').replace('{name}', name),
+        tag: 'vida-diario-food'
+      };
+    }
+    return {
+      title: t('notifyTitleSleep', 'Hora de dormir!'),
+      body: t('notifyBodySleep', '{name} está cansada. Vamos deitar?').replace('{name}', name),
+      tag: 'vida-diario-energy'
+    };
+  }
+
+  function canNotifyNeed(need) {
+    if (!state.notifyEnabled || !notificationsAllowed()) return false;
+    var last = Date.parse(state.lastNotified[need] || '') || 0;
+    return Date.now() - last >= NOTIFY_COOLDOWN_MS;
+  }
+
+  function showNeedNotification(need) {
+    if (!canNotifyNeed(need)) return;
+    var copy = notifyCopy(need);
+    state.lastNotified[need] = nowIso();
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch (e) { /* ignore */ }
+
+    var payload = {
+      type: 'VIDA_DIARIO_NOTIFY',
+      title: copy.title,
+      body: copy.body,
+      tag: copy.tag,
+      url: '/vida/diario/'
+    };
+
+    if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+      navigator.serviceWorker.controller.postMessage(payload);
+      return;
+    }
+    if (navigator.serviceWorker && navigator.serviceWorker.ready) {
+      navigator.serviceWorker.ready
+        .then(function (reg) {
+          if (reg && reg.showNotification) {
+            var iconLink = document.querySelector('link[rel="icon"][sizes="192x192"]');
+            var badgeLink = document.querySelector('link[rel="icon"][sizes="48x48"]');
+            return reg.showNotification(copy.title, {
+              body: copy.body,
+              icon: (iconLink && iconLink.getAttribute('href')) || '/imagens/icon-192.png',
+              badge: (badgeLink && badgeLink.getAttribute('href')) || '/imagens/favicon-48.png',
+              tag: copy.tag,
+              renotify: true,
+              data: { url: '/vida/diario/' }
+            });
+          }
+          return undefined;
+        })
+        .catch(function () {
+          try {
+            new Notification(copy.title, { body: copy.body, tag: copy.tag });
+          } catch (err) { /* ignore */ }
+        });
+      return;
+    }
+    try {
+      new Notification(copy.title, { body: copy.body, tag: copy.tag });
+    } catch (err) { /* ignore */ }
+  }
+
+  function hoursUntilNeed(need) {
+    var value = state.needs[need];
+    if (value <= NEED_ALERT) return 0;
+    var rate = DECAY_PER_HOUR[need] || 1;
+    if (state.sleeping) {
+      if (need === 'energy') return Infinity;
+      if (need === 'water') rate = 1.5;
+      if (need === 'food') rate = 1;
+    }
+    if (rate <= 0) return Infinity;
+    return (value - NEED_ALERT) / rate;
+  }
+
+  function msUntilReminder(need) {
+    if (state.sleeping && need === 'energy') return null;
+    var hours = hoursUntilNeed(need);
+    if (!isFinite(hours)) return null;
+    var ms = Math.round(hours * 3600000);
+    if (ms <= 0) {
+      var last = Date.parse(state.lastNotified[need] || '') || 0;
+      var remain = NOTIFY_COOLDOWN_MS - (Date.now() - last);
+      return remain > 0 ? remain : 1500;
+    }
+    return Math.min(ms, 12 * 3600000);
+  }
+
+  function checkDueNeedsNow() {
+    if (!state.notifyEnabled || !notificationsAllowed()) return;
+    if (state.needs.water <= NEED_ALERT) showNeedNotification('water');
+    if (state.needs.food <= NEED_ALERT) showNeedNotification('food');
+    if (!state.sleeping && state.needs.energy <= NEED_ALERT) showNeedNotification('energy');
+  }
+
+  function scheduleReminders() {
+    clearReminderTimers();
+    if (!state || !state.notifyEnabled || !notificationsAllowed()) return;
+
+    checkDueNeedsNow();
+
+    ['water', 'food', 'energy'].forEach(function (need) {
+      var ms = msUntilReminder(need);
+      if (ms == null) return;
+      var id = setTimeout(function () {
+        tick();
+        checkDueNeedsNow();
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+        } catch (e) { /* ignore */ }
+        render();
+        scheduleReminders();
+      }, Math.max(1500, ms));
+      reminderTimers.push(id);
+    });
+  }
+
+  function startNotifyPoll() {
+    if (pollTimer) clearInterval(pollTimer);
+    pollTimer = setInterval(function () {
+      if (!state || !state.notifyEnabled) return;
+      tick();
+      checkDueNeedsNow();
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      } catch (e) { /* ignore */ }
+      render();
+      scheduleReminders();
+    }, 5 * 60 * 1000);
+  }
+
+  function toggleNotifications() {
+    if (!notificationsSupported()) {
+      window.alert(
+        t('notifyUnsupported', 'Este aparelho não permite notificações do navegador.')
+      );
+      return;
+    }
+
+    if (state.notifyEnabled) {
+      state.notifyEnabled = false;
+      clearReminderTimers();
+      save();
+      render();
+      return;
+    }
+
+    var ask = window.confirm(
+      t(
+        'notifyConfirm',
+        'Com um adulto: permitir avisos quando for hora de cuidar da planta?'
+      )
+    );
+    if (!ask) return;
+
+    var applyOn = function () {
+      state.notifyEnabled = true;
+      save();
+      render();
+      scheduleReminders();
+      startNotifyPoll();
+      // Feedback imediato de que ficou ligado
+      if (notificationsAllowed()) {
+        var copy = {
+          title: t('notifyTitleReady', 'Lembretes ligados'),
+          body: t(
+            'notifyBodyReady',
+            'Vamos avisar quando {name} precisar de cuidado.'
+          ).replace('{name}', state.name || 'Sementinha'),
+          tag: 'vida-diario-ready'
+        };
+        if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+          navigator.serviceWorker.controller.postMessage({
+            type: 'VIDA_DIARIO_NOTIFY',
+            title: copy.title,
+            body: copy.body,
+            tag: copy.tag,
+            url: '/vida/diario/'
+          });
+        } else {
+          try {
+            new Notification(copy.title, { body: copy.body, tag: copy.tag });
+          } catch (e) { /* ignore */ }
+        }
+      }
+    };
+
+    if (Notification.permission === 'granted') {
+      applyOn();
+      return;
+    }
+    if (Notification.permission === 'denied') {
+      window.alert(
+        t(
+          'notifyDenied',
+          'As notificações estão bloqueadas neste navegador. Um adulto pode activá-las nas definições do site.'
+        )
+      );
+      return;
+    }
+
+    Notification.requestPermission().then(function (perm) {
+      if (perm === 'granted') applyOn();
+      else {
+        window.alert(
+          t('notifyDenied', 'Não foi possível activar os lembretes neste aparelho.')
+        );
+      }
+    });
   }
 
   function bind() {
@@ -343,6 +617,18 @@
     var rst = $('vd-reset');
     if (exp) exp.addEventListener('click', exportJson);
     if (rst) rst.addEventListener('click', resetAll);
+
+    var notifyBtn = $('vd-notify-toggle');
+    if (notifyBtn) notifyBtn.addEventListener('click', toggleNotifications);
+
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState === 'visible' && state && state.notifyEnabled) {
+        tick();
+        checkDueNeedsNow();
+        save();
+        render();
+      }
+    });
   }
 
   function boot() {
@@ -356,6 +642,10 @@
     save();
     bind();
     render();
+    if (state.notifyEnabled && notificationsAllowed()) {
+      scheduleReminders();
+      startNotifyPoll();
+    }
   }
 
   if (document.readyState === 'loading') {

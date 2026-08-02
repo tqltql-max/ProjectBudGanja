@@ -447,6 +447,59 @@ body[data-page="vida-diario"] {
     background: linear-gradient(160deg, rgba(100, 120, 200, 0.28), rgba(40, 50, 90, 0.35));
 }
 
+.vd-notify {
+    position: relative;
+    z-index: 1;
+    margin-top: 1rem;
+    display: grid;
+    gap: 0.45rem;
+    justify-items: center;
+    text-align: center;
+}
+
+.vd-notify-btn {
+    appearance: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.7rem 1.1rem;
+    border-radius: 999px;
+    border: 2px solid rgba(223, 194, 98, 0.4);
+    background: rgba(14, 20, 10, 0.55);
+    color: #fef9d7;
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.vd-notify-btn:hover,
+.vd-notify-btn:focus-visible {
+    transform: translateY(-1px);
+    outline: none;
+    border-color: rgba(223, 194, 98, 0.75);
+}
+
+.vd-notify-btn.is-on {
+    border-color: rgba(124, 179, 66, 0.7);
+    background: linear-gradient(160deg, rgba(124, 179, 66, 0.35), rgba(40, 70, 30, 0.45));
+}
+
+.vd-notify-icon {
+    font-size: 1.15rem;
+    line-height: 1;
+}
+
+.vd-notify-hint {
+    margin: 0;
+    max-width: 28rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(244, 237, 216, 0.72);
+    line-height: 1.35;
+}
+
 .vd-log-section {
     margin-top: 0.5rem;
 }

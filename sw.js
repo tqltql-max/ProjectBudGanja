@@ -68,9 +68,39 @@ const urlsToCache = [
 ];
 
 self.addEventListener('message', (event) => {
-    if (event.data && event.data.type === 'SKIP_WAITING') {
+    const data = event.data || {};
+    if (data.type === 'SKIP_WAITING') {
         self.skipWaiting();
+        return;
     }
+    if (data.type === 'VIDA_DIARIO_NOTIFY' && data.title) {
+        event.waitUntil(
+            self.registration.showNotification(String(data.title), {
+                body: String(data.body || ''),
+                icon: '/imagens/icon-192.v' + APP_VERSION + '.png',
+                badge: '/imagens/favicon-48.v' + APP_VERSION + '.png',
+                tag: String(data.tag || 'vida-diario'),
+                renotify: true,
+                data: { url: data.url || '/vida/diario/' }
+            }).catch(() => {})
+        );
+    }
+});
+
+self.addEventListener('notificationclick', (event) => {
+    event.notification.close();
+    const target = (event.notification && event.notification.data && event.notification.data.url) || '/vida/diario/';
+    event.waitUntil(
+        clients.matchAll({ type: 'window', includeUncontrolled: true }).then((list) => {
+            for (const client of list) {
+                if (client.url && client.url.indexOf('/vida/diario') !== -1 && 'focus' in client) {
+                    return client.focus();
+                }
+            }
+            if (clients.openWindow) return clients.openWindow(target);
+            return undefined;
+        })
+    );
 });
 
 self.addEventListener('install', (event) => {
