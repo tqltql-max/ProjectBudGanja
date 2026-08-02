@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T19:19:44.503Z",
+  "updatedAt": "2026-08-02T19:30:02.117Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2464,6 +2464,29 @@
         "/posts/post-inspecao-palavra-verdade.html"
       ],
       "notes": "Separar recipiente (origem duvidosa) de locuções árabes em/de balde."
+    },
+    {
+      "id": "arte-bom-dia-inverno",
+      "title": "Bom dia, Inverno — divulgação Tamara Klink",
+      "titleEn": "Bom dia, Inverno — Tamara Klink promotion",
+      "titleEs": "Bom dia, Inverno — divulgación Tamara Klink",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Livro + lote temático (barco, mar, gelo, balde, caminho) + imagem UOL/Roda Viva.",
+      "whyEn": "Book + thematic lexicon (boat, sea, ice, bucket, path) + UOL/Roda Viva image.",
+      "whyEs": "Libro + léxico temático (barco, mar, hielo, balde, camino) + imagen UOL/Roda Viva.",
+      "suggestedSlug": "inspecao-arte-bom-dia-inverno",
+      "doneHref": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "/posts/post-inspecao-palavra-balde.html",
+        "/guia/palavras.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Divulgação editorial sem afiliação; crédito de imagem na ficha."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T19:19:55.104Z",
+  "updatedAt": "2026-08-02T19:30:13.134Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Livro de Tamara Klink (Companhia das Letras): invernagem ártica cruzada com barco, mar, gelo, balde, caminho e todo o mapa BudGanja.",
+      "text": "Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo Livro de Tamara Klink (Companhia das Letras): invernagem ártica cruzada com barco, mar, gelo, balde, caminho e todo o mapa BudGanja. inspecao ## Escopo\n\nDivulgação editorial e inspeção-cultura do livro **«Bom dia, Inverno»** de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) (Companhia das Letras) — a invernagem ártica em solitário virada narrativa. O laboratório **não vende o livro**: cruza a obra com o [Guia de Palavras](/guia/palavras.html), com a ficha de Legado da autora, com [caminho](/posts/post-inspecao-palavra-caminho.html) / [passar](/posts/post-inspecao-palavra-passar.html) / [balde](/posts/post-inspecao-palavra-balde.html) / [gesto](/posts/post-inspecao-palavra-gesto.html) e com a [Vida](/vida/).\n\n> **Nota metodológica:** auditoria independente BudGanja. Fontes: [site Tamara](https://www.tamaraklink.com), [Companhia das Letras](https://www.companhiadasletras.com.br/), [UOL Cultura / Roda Viva](https://cultura.uol.com.br/noticias/69371_navegadora-tamara-klink-conta-que-falta-de-apoio-do-pai-a-motivou-buscar-seus-proprios-caminhos.html), [Q&A no YouTube](https://www.youtube.com/watch?v=V3GSlr5sp7c) (legendas catalogadas). Capa desta ficha adaptada da imagem de divulgação TV Cultura / UOL (crédito de origem na reportagem). **Sem afiliação** com Tamara, Amyr, editora ou emissora. Divulgar ≠ endossar biografia completa.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Obra | **Bom dia, Inverno** |\n| Autora | [Tamara Klink](/posts/post-inspecao-tamara-klink.html) |\n| Tipo | Livro · narrativa de invernagem / memoir de navegação |\n| Editora | Companhia das Letras |\n| Feito âncora | Invernagem sozinha no gelo ártico (Groenlândia) |\n| Elo Legado | Cap. 8 Tamara · Cap. 7 [Amyr](/posts/post-inspecao-amyr-klink.html) |\n| Elo Palavras | [barco](/guia/palavras.html?q=Barco) · [mar](/guia/palavras.html?q=Mar) · [gelo](/guia/palavras.html?q=Gelo) · [invernagem](/guia/palavras.html?q=Inver"
     },
     {
       "title": "Inspeção: Balde — volume, transporte e o gesto de regar",
@@ -1538,6 +1544,18 @@
       "text": "AEA Sigla de anandamida (N-araquidonoiletanolamida) — endocanabinoide cujo aumento aparece em estudos de exercício e, observacionalmente, de meditação/yoga. tecnico guia palavras glossário aea"
     },
     {
+      "title": "Água",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem.",
+      "text": "Água Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem. lexico guia palavras glossário agua"
+    },
+    {
+      "title": "Águas do Mar e Lágrimas",
+      "url": "/posts/post-inspecao-arte-aguas-e-lagrimas.html",
+      "excerpt": "Poesia original BudGanja: o sal do mar e o da lágrima; elo com Vida, Lágrimas da Vida e Álvares de Azevedo.",
+      "text": "Águas do Mar e Lágrimas Poesia original BudGanja: o sal do mar e o da lágrima; elo com Vida, Lágrimas da Vida e Álvares de Azevedo. lexico guia palavras glossário aguas-e-lagrimas"
+    },
+    {
       "title": "Alecrim",
       "url": "/plantas/alecrim/",
       "excerpt": "Salvia rosmarinus — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -1562,6 +1580,12 @@
       "text": "Alucinógeno Classe de efeito: altera percepção ou consciência de forma intensa — distinta de psicoativo, psicodélico e de entorpecente (lista). classificacao guia palavras glossário alucinogeno"
     },
     {
+      "title": "Álvares de Azevedo",
+      "url": "/posts/post-inspecao-figura-alvares-de-azevedo.html",
+      "excerpt": "Poeta ultrarromântico brasileiro (1831–1852), autor da *Lira dos Vinte Anos*; no site, homenagem em Pessoas com elo ao poema Lágrimas da Vida.",
+      "text": "Álvares de Azevedo Poeta ultrarromântico brasileiro (1831–1852), autor da *Lira dos Vinte Anos*; no site, homenagem em Pessoas com elo ao poema Lágrimas da Vida. lexico guia palavras glossário alvares-de-azevedo"
+    },
+    {
       "title": "Anandamida",
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Endocanabinoide (AEA) associado a efeitos «tipo THC» nos receptores — biomarcador citado na aula XIV quando se fala de meditação, exercício e equilíbrio do SEC.",
@@ -1584,6 +1608,12 @@
       "url": "/posts/post-inspecao-palavra-anvisa.html",
       "excerpt": "Agência reguladora de vigilância sanitária — nó institucional do mapa de portarias e listas; não é nome da planta.",
       "text": "ANVISA Agência reguladora de vigilância sanitária — nó institucional do mapa de portarias e listas; não é nome da planta. classificacao guia palavras glossário anvisa"
+    },
+    {
+      "title": "Anzol",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Ferramenta de pesca na narrativa — gesto concreto de sobrevivência no gelo.",
+      "text": "Anzol Ferramenta de pesca na narrativa — gesto concreto de sobrevivência no gelo. lexico guia palavras glossário anzol"
     },
     {
       "title": "Artes",
@@ -1628,10 +1658,22 @@
       "text": "Babosa Suculenta (Aloe vera) amplamente cultivada; gel foliar rico em polissacarídeos — tradição tópica; látex com antraquinonas (aloína) exige ca… Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário babosa"
     },
     {
+      "title": "Balde",
+      "url": "/posts/post-inspecao-palavra-balde.html",
+      "excerpt": "Recipiente com asa (origem duvidosa); no cultivo transporta e mede volume. Locuções *em/de balde* vêm do árabe *bāṭil* («vão»).",
+      "text": "Balde Recipiente com asa (origem duvidosa); no cultivo transporta e mede volume. Locuções *em/de balde* vêm do árabe *bāṭil* («vão»). lexico guia palavras glossário balde"
+    },
+    {
       "title": "Barbatimão",
       "url": "/plantas/barbatimao/",
       "excerpt": "Stryphnodendron adstringens — casca do Cerrado rica em taninos; tradição adstringente tópica e oral popular. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Barbatimão Stryphnodendron adstringens — casca do Cerrado rica em taninos; tradição adstringente tópica e oral popular. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário barbatimao"
+    },
+    {
+      "title": "Barco",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Embarcação — no universo Tamara é casa, oficina e corpo da invernagem; elo do livro *Bom dia, Inverno*.",
+      "text": "Barco Embarcação — no universo Tamara é casa, oficina e corpo da invernagem; elo do livro *Bom dia, Inverno*. lexico guia palavras glossário barco"
     },
     {
       "title": "Barriga de Trigo",
@@ -1874,6 +1916,12 @@
       "text": "Comunidade Espaço social do laboratório — Feed Vivo, identificação de plantas e partilha do diário. titulo guia palavras glossário comunidade"
     },
     {
+      "title": "Congelado",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Estado do mar preso — o barco deixa de «passar» e passa a *ficar*; elo com Vida.",
+      "text": "Congelado Estado do mar preso — o barco deixa de «passar» e passa a *ficar*; elo com Vida. lexico guia palavras glossário congelado"
+    },
+    {
       "title": "Copaíba",
       "url": "/plantas/copaiba/",
       "excerpt": "Copaifera — óleo-resina amazônico/cerrado rico em β-cariofileno e diterpenos; tradição tópica e oral popular. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -1884,6 +1932,12 @@
       "url": "/posts/post-inspecao-guia-cannabis-farmaceuticos.html",
       "excerpt": "Conselho Regional de Farmácia — perímetro ético/profissional da dispensação; não autoriza cultivo nem substitui ANVISA ou HC.",
       "text": "CRF Conselho Regional de Farmácia — perímetro ético/profissional da dispensação; não autoriza cultivo nem substitui ANVISA ou HC. classificacao guia palavras glossário crf"
+    },
+    {
+      "title": "Criatividade",
+      "url": "/posts/post-inspecao-palavra-criatividade.html",
+      "excerpt": "Do latim *creāre* (fazer nascer) — inventar com método; no BudGanja, cultivar, nomear, compor e medir.",
+      "text": "Criatividade Do latim *creāre* (fazer nascer) — inventar com método; no BudGanja, cultivar, nomear, compor e medir. lexico guia palavras glossário criatividade"
     },
     {
       "title": "Cultivar",
@@ -2210,10 +2264,28 @@
       "text": "Ganja Nome da planta na rota índica/sânscrita — depois gíria global e parte da marca BudGanja. marca guia palavras glossário ganja"
     },
     {
+      "title": "Gelo",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Água sólida que prende o barco — matéria da invernagem ártica narrada em *Bom dia, Inverno*.",
+      "text": "Gelo Água sólida que prende o barco — matéria da invernagem ártica narrada em *Bom dia, Inverno*. lexico guia palavras glossário gelo"
+    },
+    {
+      "title": "Gesto",
+      "url": "/posts/post-inspecao-palavra-gesto.html",
+      "excerpt": "Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade.",
+      "text": "Gesto Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade. lexico guia palavras glossário gesto"
+    },
+    {
       "title": "Glúten",
       "url": "/posts/post-inspecao-derivado-gluten.html",
       "excerpt": "Proteína do trigo e de outros cereais — no site, ficha de produto nocivo.",
       "text": "Glúten Proteína do trigo e de outros cereais — no site, ficha de produto nocivo. tecnico guia palavras glossário gluten"
+    },
+    {
+      "title": "Groenlândia",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Palco da invernagem ártica de Tamara — gelo, animais e o livro *Bom dia, Inverno*.",
+      "text": "Groenlândia Palco da invernagem ártica de Tamara — gelo, animais e o livro *Bom dia, Inverno*. tecnico guia palavras glossário groenlandia"
     },
     {
       "title": "Guaco",
@@ -2300,6 +2372,18 @@
       "text": "Inspetor Quem observa, verifica e documenta com método — personagem e marca do site. marca guia palavras glossário inspetor"
     },
     {
+      "title": "Invernagem",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Permanecer o inverno inteiro no gelo — feito âncora de Tamara no Ártico; eixo do livro.",
+      "text": "Invernagem Permanecer o inverno inteiro no gelo — feito âncora de Tamara no Ártico; eixo do livro. tecnico guia palavras glossário invernagem"
+    },
+    {
+      "title": "Inverno",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Estação e título — *Bom dia, Inverno*: cumprimentar o frio sem romantizar o isolamento.",
+      "text": "Inverno Estação e título — *Bom dia, Inverno*: cumprimentar o frio sem romantizar o isolamento. lexico guia palavras glossário inverno"
+    },
+    {
       "title": "Isolado",
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Princípio activo purificado (ex. CBD ~98%) — na grade XIV entra na modulação exógena (sintéticos/isolados), contraste com a via endógena da meditação/PIC.",
@@ -2330,6 +2414,12 @@
       "text": "Laboratório Lugar de experiência e medida — aqui, o laboratório digital público BudGanja. marca guia palavras glossário laboratorio"
     },
     {
+      "title": "Lágrimas da Vida",
+      "url": "/posts/post-inspecao-arte-lagrimas-da-vida.html",
+      "excerpt": "Poema de Álvares de Azevedo (*Lira dos Vinte Anos*) — lágrima sob a máscara do sorriso; no site, inspeção de Artes com elo à trilha Vida.",
+      "text": "Lágrimas da Vida Poema de Álvares de Azevedo (*Lira dos Vinte Anos*) — lágrima sob a máscara do sorriso; no site, inspeção de Artes com elo à trilha Vida. lexico guia palavras glossário lagrimas-da-vida"
+    },
+    {
       "title": "Laranja",
       "url": "/plantas/laranja/",
       "excerpt": "Citrino: fruto inteiro vs suco concentrado, néctares e refrigerantes «de laranja» com açúcar e aditivos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -2354,24 +2444,6 @@
       "text": "Legado O que fica de quem veio antes — pessoas, CEBRID, curso e canais fundadores. hub guia palavras glossário legado"
     },
     {
-      "title": "Lágrimas da Vida",
-      "url": "/posts/post-inspecao-arte-lagrimas-da-vida.html",
-      "excerpt": "Poema de Álvares de Azevedo (*Lira dos Vinte Anos*) — lágrima sob a máscara do sorriso; no site, inspeção de Artes com elo à trilha Vida.",
-      "text": "Lágrimas da Vida Poema de Álvares de Azevedo (*Lira dos Vinte Anos*) — lágrima sob a máscara do sorriso; no site, inspeção de Artes com elo à trilha Vida. lexico guia palavras glossário lagrimas-da-vida"
-    },
-    {
-      "title": "Álvares de Azevedo",
-      "url": "/posts/post-inspecao-figura-alvares-de-azevedo.html",
-      "excerpt": "Poeta ultrarromântico brasileiro (1831–1852), autor da *Lira dos Vinte Anos*; no site, homenagem em Pessoas com elo ao poema Lágrimas da Vida.",
-      "text": "Álvares de Azevedo Poeta ultrarromântico brasileiro (1831–1852), autor da *Lira dos Vinte Anos*; no site, homenagem em Pessoas com elo ao poema Lágrimas da Vida. lexico guia palavras glossário alvares-de-azevedo"
-    },
-    {
-      "title": "Águas do Mar e Lágrimas",
-      "url": "/posts/post-inspecao-arte-aguas-e-lagrimas.html",
-      "excerpt": "Poesia original BudGanja: o sal do mar e o da lágrima; elo com Vida, Lágrimas da Vida e Álvares de Azevedo.",
-      "text": "Águas do Mar e Lágrimas Poesia original BudGanja: o sal do mar e o da lágrima; elo com Vida, Lágrimas da Vida e Álvares de Azevedo. lexico guia palavras glossário aguas-e-lagrimas"
-    },
-    {
       "title": "Lei 11.343/2006",
       "url": "/posts/post-inspecao-palavra-lei-11-343.html",
       "excerpt": "Lei de Drogas — âncora tipológica onde cai quem não tem estatuto processual (HC) ou sanitário (ANVISA); não é o nome da planta.",
@@ -2382,6 +2454,12 @@
       "url": "/posts/post-inspecao-palavra-lista-f.html",
       "excerpt": "Âncora brasileira das listas oficiais de substâncias controladas — o laboratório indexa o tipo de linguagem, não o anexo integral.",
       "text": "Lista F Âncora brasileira das listas oficiais de substâncias controladas — o laboratório indexa o tipo de linguagem, não o anexo integral. classificacao guia palavras glossário lista-f"
+    },
+    {
+      "title": "Livro",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Objecto e ofício — *Bom dia, Inverno* (Companhia das Letras): a invernagem vira página.",
+      "text": "Livro Objecto e ofício — *Bom dia, Inverno* (Companhia das Letras): a invernagem vira página. lexico guia palavras glossário livro"
     },
     {
       "title": "Lúpulo",
@@ -2406,6 +2484,12 @@
       "url": "/biblioteca/unifesp/livro-xiv.html",
       "excerpt": "Carica papaya — fonte de papaína; citada em protocolos de feridas no SUS. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Mamão Carica papaya — fonte de papaína; citada em protocolos de feridas no SUS. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário mamao"
+    },
+    {
+      "title": "Mar",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Oceano e horizonte — no laboratório cruza com caminho, Vida e a travessia solitária de Tamara.",
+      "text": "Mar Oceano e horizonte — no laboratório cruza com caminho, Vida e a travessia solitária de Tamara. lexico guia palavras glossário mar"
     },
     {
       "title": "Maracujá",
@@ -2520,6 +2604,18 @@
       "url": "/posts/post-inspecao-palavra-entorpecente-narcotico.html",
       "excerpt": "Termo médico/legal antigo e amplo: substância associada a sono ou entorpecimento — não é sinónimo exacto de «entorpecente» nas listas modernas de controle.",
       "text": "Narcótico Termo médico/legal antigo e amplo: substância associada a sono ou entorpecimento — não é sinónimo exacto de «entorpecente» nas listas modernas de controle. classificacao guia palavras glossário narcotico"
+    },
+    {
+      "title": "Navegar",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Conduzir o barco e a própria rota — ofício Klink; no BudGanja liga a caminho e gesto.",
+      "text": "Navegar Conduzir o barco e a própria rota — ofício Klink; no BudGanja liga a caminho e gesto. lexico guia palavras glossário navegar"
+    },
+    {
+      "title": "Neve",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Cobertura branca do Ártico — paisagem e ruído branco da narrativa de Tamara.",
+      "text": "Neve Cobertura branca do Ártico — paisagem e ruído branco da narrativa de Tamara. lexico guia palavras glossário neve"
     },
     {
       "title": "Nojinho",
@@ -2738,6 +2834,12 @@
       "text": "Rimonabant Antagonista CB1 histórico retirado do mercado — a Aula 7 usa-o como alerta de risco central ao falar de novos candidatos periféricos. tecnico guia palavras glossário rimonabant"
     },
     {
+      "title": "Risco",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Perigo calculado da travessia e da invernagem — Amyr planeia; Tamara assume o próprio.",
+      "text": "Risco Perigo calculado da travessia e da invernagem — Amyr planeia; Tamara assume o próprio. lexico guia palavras glossário risco"
+    },
+    {
       "title": "Ruda",
       "url": "/biblioteca/unifesp/livro-xiv.html",
       "excerpt": "Ruta — citada no eixo de plantas e endocanabinoidoma. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -2774,30 +2876,6 @@
       "text": "Simbiose Viver juntos (*syn* + *bíos*) — relação entre organismos; no senso comum vira «os dois ganham»; no site, elo de solo vivo, plantas e metáfora cultural (Venom). lexico guia palavras glossário simbiose"
     },
     {
-      "title": "Criatividade",
-      "url": "/posts/post-inspecao-palavra-criatividade.html",
-      "excerpt": "Do latim *creāre* (fazer nascer) — inventar com método; no BudGanja, cultivar, nomear, compor e medir.",
-      "text": "Criatividade Do latim *creāre* (fazer nascer) — inventar com método; no BudGanja, cultivar, nomear, compor e medir. lexico guia palavras glossário criatividade"
-    },
-    {
-      "title": "Verdade",
-      "url": "/posts/post-inspecao-palavra-verdade.html",
-      "excerpt": "Do latim *vērĭtās* / *vērus* — o que se pode verificar; no BudGanja, citar, medir e não fabricar evidência.",
-      "text": "Verdade Do latim *vērĭtās* / *vērus* — o que se pode verificar; no BudGanja, citar, medir e não fabricar evidência. lexico guia palavras glossário verdade"
-    },
-    {
-      "title": "Gesto",
-      "url": "/posts/post-inspecao-palavra-gesto.html",
-      "excerpt": "Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade.",
-      "text": "Gesto Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade. lexico guia palavras glossário gesto"
-    },
-    {
-      "title": "Balde",
-      "url": "/posts/post-inspecao-palavra-balde.html",
-      "excerpt": "Recipiente com asa (origem duvidosa); no cultivo transporta e mede volume. Locuções *em/de balde* vêm do árabe *bāṭil* («vão»).",
-      "text": "Balde Recipiente com asa (origem duvidosa); no cultivo transporta e mede volume. Locuções *em/de balde* vêm do árabe *bāṭil* («vão»). lexico guia palavras glossário balde"
-    },
-    {
       "title": "Sintético",
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Camada XIV de moléculas de laboratório (ex. linha Mechoulam / HU) — modulação exógena distinta da autonomia endógena (meditação, estilo de vida, PIC).",
@@ -2814,6 +2892,12 @@
       "url": "/biblioteca/unifesp/livro-xiv.html",
       "excerpt": "Glycine max — leguminosa citada em contexto agrícola/alimentar e fitoterapia (isoflavonas). Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Soja Glycine max — leguminosa citada em contexto agrícola/alimentar e fitoterapia (isoflavonas). Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário soja"
+    },
+    {
+      "title": "Solitário",
+      "url": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "excerpt": "Navegar e invernar sozinha — não isolamento romântico: método, medo e escrita.",
+      "text": "Solitário Navegar e invernar sozinha — não isolamento romântico: método, medo e escrita. lexico guia palavras glossário solitario"
     },
     {
       "title": "Solo vivo",
@@ -2922,6 +3006,12 @@
       "url": "/biblioteca/unifesp/livro-xiv.html",
       "excerpt": "Raiz tradicional de chás para o sono — exemplo de planta depressora da atividade mental. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Valeriana Raiz tradicional de chás para o sono — exemplo de planta depressora da atividade mental. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário valeriana"
+    },
+    {
+      "title": "Verdade",
+      "url": "/posts/post-inspecao-palavra-verdade.html",
+      "excerpt": "Do latim *vērĭtās* / *vērus* — o que se pode verificar; no BudGanja, citar, medir e não fabricar evidência.",
+      "text": "Verdade Do latim *vērĭtās* / *vērus* — o que se pode verificar; no BudGanja, citar, medir e não fabricar evidência. lexico guia palavras glossário verdade"
     },
     {
       "title": "Via endógena",

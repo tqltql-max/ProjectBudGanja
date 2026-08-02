@@ -145,7 +145,18 @@
     if (!update || !update.id || wasUpdateDismissed(update.id)) return '';
     var title = pickLocalized(update.title, '');
     var text = pickLocalized(update.text, '');
-    if (!title && !text) return '';
+    var href = update.href ? String(update.href) : '';
+    var linkLabel = pickLocalized(update.linkLabel, t('common.siteUpdateOpen', 'Abrir'));
+    if (!title && !text && !href) return '';
+    var linkHtml = '';
+    if (href && href.charAt(0) === '/') {
+      linkHtml =
+        '<p class="cookie-consent-update-link"><a class="cookie-consent-update-cta" href="' +
+        escapeHtml(href) +
+        '">' +
+        escapeHtml(linkLabel) +
+        '</a></p>';
+    }
     return (
       '<div class="cookie-consent-update cookie-consent-update--minimal" data-update-id="' +
       escapeHtml(update.id) +
@@ -158,6 +169,7 @@
       (text
         ? '<p class="cookie-consent-update-text">' + escapeHtml(text) + '</p>'
         : '') +
+      linkHtml +
       '</div>'
     );
   }

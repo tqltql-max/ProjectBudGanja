@@ -5,28 +5,34 @@
     "width": 1400,
     "height": 440
   },
-  "builtAt": "2026-08-02T19:19:55.823Z",
+  "builtAt": "2026-08-02T19:30:13.852Z",
   "update": {
-    "id": "arvore-da-vida-2026-08",
+    "id": "bom-dia-inverno-2026-08",
+    "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+    "linkLabel": {
+      "pt-BR": "Abrir divulgação",
+      "en": "Open promotion",
+      "es": "Abrir divulgación"
+    },
     "label": {
-      "pt-BR": "Laboratório",
-      "en": "Laboratory",
-      "es": "Laboratorio"
+      "pt-BR": "Divulgação",
+      "en": "Promotion",
+      "es": "Divulgación"
     },
     "title": {
-      "pt-BR": "Cada raiz lembra: a vida cresce em silêncio.",
-      "en": "Every root remembers: life grows in silence.",
-      "es": "Cada raíz recuerda: la vida crece en silencio."
+      "pt-BR": "Bom dia, Inverno — Tamara Klink no laboratório",
+      "en": "Bom dia, Inverno — Tamara Klink in the lab",
+      "es": "Bom dia, Inverno — Tamara Klink en el laboratorio"
     },
     "text": {
-      "pt-BR": "",
-      "en": "",
-      "es": ""
+      "pt-BR": "Livro da invernagem ártica cruzado com barco, mar, gelo, balde e caminho. Léxico novo no Guia de Palavras.",
+      "en": "Arctic overwintering book crossed with boat, sea, ice, bucket and path. New lexicon in the Words Guide.",
+      "es": "Libro de la invernada ártica cruzado con barco, mar, hielo, balde y camino. Léxico nuevo en la Guía."
     },
     "cta": {
-      "pt-BR": "Aceitar",
-      "en": "Accept",
-      "es": "Aceptar"
+      "pt-BR": "Depois",
+      "en": "Later",
+      "es": "Luego"
     }
   }
 }

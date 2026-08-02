@@ -6667,6 +6667,24 @@ body[data-page="home"] .botao-home.has-hover-tip {
     color: var(--color-accent-light, #f0d060);
 }
 
+.cookie-consent-update-link {
+    margin: 8px 0 0;
+}
+
+.cookie-consent-update-cta {
+    display: inline-block;
+    font-size: 0.92rem;
+    font-weight: 650;
+    color: var(--color-accent-light, #f0d060);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.cookie-consent-update-cta:hover,
+.cookie-consent-update-cta:focus-visible {
+    color: var(--brand-gold, #dfc262);
+}
+
 .cookie-consent-copy {
     position: relative;
     display: grid;

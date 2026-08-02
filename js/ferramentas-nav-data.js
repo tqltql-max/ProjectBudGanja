@@ -1087,6 +1087,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Maracujá (fruta) (*Passiflora edulis Sims): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
+              "label": "Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo",
+              "tileLabel": "Divulgação: Bom dia, Inverno — …",
+              "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-bom-dia-inverno",
+              "description": "Livro de Tamara Klink (Companhia das Letras): invernagem ártica cruzada com barco, mar, gelo, balde, caminho e todo o mapa BudGanja."
+            },
+            {
               "label": "Inspeção: Tristeza — a palavra azul que também cuida",
               "tileLabel": "Inspeção: Tristeza — a palavra …",
               "href": "/posts/post-inspecao-palavra-tristeza.html",
