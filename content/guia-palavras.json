@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T05:31:10.113Z",
+  "updatedAt": "2026-08-02T05:54:43.567Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -80,6 +80,16 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "anandamida",
+      "word": "Anandamida",
+      "simple": "Endocanabinoide (AEA) que o próprio corpo produz — frequentemente associado a efeitos «tipo THC» nos receptores. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Endocannabinoid (AEA) the body makes — often linked to THC-like effects at receptors. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Endocannabinoide (AEA) que el propio cuerpo produce — a menudo ligado a efectos «tipo THC» en los receptores. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "animais",
       "word": "Animais",
       "simple": "Seres vivos do reino animal — no site, fichas de criação, companhia e derivados.",
@@ -150,6 +160,16 @@
       "href": "/posts/post-inspecao-arte-barriga-de-trigo.html"
     },
     {
+      "id": "bhang",
+      "word": "Bhang",
+      "simple": "Bebida tradicional à base de folhas de cannabis (Ásia), distinta da flor ou da resina. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Traditional drink made from cannabis leaves (Asia), distinct from flower or resin. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Bebida tradicional a base de hojas de cannabis (Asia), distinta de la flor o la resina. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "biblioteca",
       "word": "Biblioteca",
       "simple": "Lugar onde o conhecimento fica organizado — no site, o menu de plantas, inspeções e cursos.",
@@ -158,6 +178,16 @@
       "group": "titulo",
       "fromTitle": true,
       "href": "/plantas/"
+    },
+    {
+      "id": "broad-spectrum",
+      "word": "Broad spectrum",
+      "simple": "Extrato «quase» full spectrum — tipicamente sem THC (ou com residual mínimo). Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Nearly full-spectrum extract — typically without THC (or with minimal residue). Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Extracto «casi» full spectrum — típicamente sin THC (o con residual mínimo). Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "budganja",
@@ -220,6 +250,16 @@
       "href": "/plantas/camomila/"
     },
     {
+      "id": "canabimimetico",
+      "word": "Canabimimético",
+      "simple": "Planta ou substância que mimetiza ou modula o sistema endocanabinoide sem ser necessariamente cannabis. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Plant or substance that mimics or modulates the endocannabinoid system without necessarily being cannabis. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Planta o sustancia que imita o modula el sistema endocannabinoide sin ser necesariamente cannabis. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "canabinall",
       "word": "CANABinALL",
       "simple": "Canal de divulgação científica ligado ao ecossistema UNIFESP / MovReCam.",
@@ -280,6 +320,66 @@
       "href": "/posts/post-inspecao-derivado-caseina.html"
     },
     {
+      "id": "cb1",
+      "word": "CB1",
+      "simple": "Receptor canabinoide mais abundante no sistema nervoso central — alvo clássico do THC. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Cannabinoid receptor most abundant in the central nervous system — classic THC target. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Receptor cannabinoide más abundante en el sistema nervioso central — blanco clásico del THC. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "cb2",
+      "word": "CB2",
+      "simple": "Receptor canabinoide mais ligado a imunidade e tecidos periféricos — alvo de terpenos como β-cariofileno. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Cannabinoid receptor more tied to immunity and peripheral tissues — target of terpenes such as β-caryophyllene. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Receptor cannabinoide más ligado a inmunidad y tejidos periféricos — blanco de terpenos como el β-cariofileno. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "cbc",
+      "word": "CBC",
+      "simple": "Canabicromeno — fitocanabinoide da via do CBGA, citado com atividades anti-inflamatórias e analgésicas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Cannabichromene — phytocannabinoid on the CBGA pathway, cited for anti-inflammatory and analgesic activity. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Cannabicromeno — fitocannabinoide de la vía del CBGA, citado por actividad antiinflamatoria y analgésica. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "cbd",
+      "word": "CBD",
+      "simple": "Canabidiol — fitocanabinoide não (ou pouco) psicoativo, muito citado em epilepsia e em óleos isolados vs planta inteira. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Cannabidiol — non- (or weakly) psychoactive phytocannabinoid, often cited in epilepsy and isolate vs whole-plant oils. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Cannabidiol — fitocannabinoide no (o poco) psicoactivo, muy citado en epilepsia y en aceites aislados vs planta entera. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "cbg",
+      "word": "CBG",
+      "simple": "Canabigerol — fitocanabinoide «mãe» da via biossintética; predominante no quimiotipo 4 (cânhamo). Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Cannabigerol — «parent» phytocannabinoid of the biosynthetic pathway; dominant in chemotype 4 (hemp). Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Cannabigerol — fitocannabinoide «madre» de la vía biosintética; predominante en el quimiotipo 4 (cáñamo). Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "cbn",
+      "word": "CBN",
+      "simple": "Canabinol — produto de oxidação do THC; um dos quatro fitocanabinoides centrais na aula de quimiotipos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Cannabinol — oxidation product of THC; one of the four central phytocannabinoids in the chemotype lecture. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Cannabinol — producto de oxidación del THC; uno de los cuatro fitocannabinoides centrales en la clase de quimiotipos. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "cebrid",
       "word": "CEBRID",
       "simple": "Centro UNIFESP de informação sobre drogas psicotrópicas e medicina canabinoide.",
@@ -288,6 +388,16 @@
       "group": "tecnico",
       "fromTitle": true,
       "href": "/posts/post-inspecao-cebrid.html"
+    },
+    {
+      "id": "charas",
+      "word": "Charas",
+      "simple": "Resina tradicional obtida esfregando flores femininas — forma etnobotânica citada junto de ganja e bhang. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Traditional resin made by rubbing female flowers — ethnobotanical form cited with ganja and bhang. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Resina tradicional obtenida frotando flores femeninas — forma etnobotánica citada junto a ganja y bhang. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "chocolate",
@@ -340,6 +450,16 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "comunidade",
+      "word": "Comunidade",
+      "simple": "Espaço social do laboratório — Feed Vivo, identificação de plantas e partilha do diário.",
+      "simpleEn": "The lab’s social space — Live Feed, plant ID and shared diary.",
+      "simpleEs": "Espacio social del laboratorio — Feed Vivo, identificación de plantas y diario compartido.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/comunidade/"
+    },
+    {
       "id": "copaiba",
       "word": "Copaíba",
       "simple": "Copaifera — óleo-resina amazônico/cerrado rico em β-cariofileno e diterpenos; tradição tópica e oral popular. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -350,6 +470,16 @@
       "href": "/plantas/copaiba/"
     },
     {
+      "id": "cultivar",
+      "word": "Cultivar",
+      "simple": "Variedade agronómica selecionada — nas aulas, milhares de cultivares vs poucos quimiotipos úteis clinicamente. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Selected agronomic variety — in the lectures, thousands of cultivars vs few clinically useful chemotypes. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Variedad agronómica seleccionada — en las clases, miles de cultivares vs pocos quimiotipos útiles clínicamente. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "cultivo",
       "word": "Cultivo",
       "simple": "Ato de plantar e cuidar até a planta crescer — do solo à colheita.",
@@ -358,6 +488,16 @@
       "group": "tecnico",
       "fromTitle": true,
       "href": "/cultivo/"
+    },
+    {
+      "id": "descarboxilacao",
+      "word": "Descarboxilação",
+      "simple": "Passo (calor/química) que converte ácidos (THCA/CBDA…) nas formas «ativas» THC/CBD usadas em óleos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Step (heat/chemistry) that converts acids (THCA/CBDA…) into the «active» THC/CBD forms used in oils. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Paso (calor/química) que convierte ácidos (THCA/CBDA…) en las formas «activas» THC/CBD usadas en aceites. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "diamba",
@@ -390,6 +530,16 @@
       "href": "/biblioteca/inspecoes/"
     },
     {
+      "id": "dois-ag",
+      "word": "2-AG",
+      "simple": "2-Araquidonoilglicerol — endocanabinoide central, com enzimas próprias de síntese e degradação. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "2-Arachidonoylglycerol — central endocannabinoid with its own synthesis and breakdown enzymes. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "2-Araquidonilglicerol — endocannabinoide central, con enzimas propias de síntesis y degradación. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "droga",
       "word": "Droga",
       "simple": "Antes significava remédio; hoje, no senso comum, quase sempre substância ilícita.",
@@ -400,6 +550,26 @@
       "href": "/posts/post-inspecao-palavra-droga.html"
     },
     {
+      "id": "droga-vegetal",
+      "word": "Droga vegetal",
+      "simple": "Planta medicinal após colheita, secagem e processamento — antes do medicamento acabado. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Medicinal plant after harvest, drying and processing — before the finished medicine. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Planta medicinal tras cosecha, secado y procesamiento — antes del medicamento acabado. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "efeito-comitiva",
+      "word": "Efeito comitiva",
+      "simple": "Sinergia da planta inteira (canabinoides + terpenos + outros) face ao isolado — «entourage» nas aulas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Whole-plant synergy (cannabinoids + terpenes + others) versus the isolate — the «entourage» effect in the lectures. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Sinergia de la planta entera (cannabinoides + terpenos + otros) frente al aislado — efecto «entourage» en las clases. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "emocao",
       "word": "Emoção",
       "simple": "Sentimento forte do corpo e da mente — hub lexical da Riley (Divertida Mente).",
@@ -408,6 +578,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-emocao.html"
+    },
+    {
+      "id": "endocanabinoide",
+      "word": "Endocanabinoide",
+      "simple": "Mensageiro que o próprio corpo produz (ex. anandamida, 2-AG) e que age nos receptores canabinoides. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Messenger the body itself makes (e.g. anandamide, 2-AG) that acts on cannabinoid receptors. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Mensajero que el propio cuerpo produce (p. ej. anandamida, 2-AG) y actúa en los receptores cannabinoides. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "endocanabinoidoma",
+      "word": "Endocanabinoidoma",
+      "simple": "Ampliação do sistema endocanabinoide: rede integrada de mediadores, receptores, enzimas e vias metabólicas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Wider view of the endocannabinoid system: integrated network of mediators, receptors, enzymes and pathways. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Ampliación del sistema endocannabinoide: red integrada de mediadores, receptores, enzimas y vías metabólicas. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "entorpecente",
@@ -480,6 +670,26 @@
       "href": "/equipamentos/"
     },
     {
+      "id": "etnobotanica",
+      "word": "Etnobotânica",
+      "simple": "Ciência da relação entre culturas e plantas — usos medicinais, rituais e nomes populares. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Science of the relationship between cultures and plants — medicinal uses, rituals and folk names. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Ciencia de la relación entre culturas y plantas — usos medicinales, rituales y nombres populares. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "farmacia-viva",
+      "word": "Farmácia Viva",
+      "simple": "Serviço do SUS que cultiva, processa e dispensa plantas e fitoterápicos com qualidade e rastreabilidade. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "SUS service that grows, processes and dispenses plants and herbal medicines with quality and traceability. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Servicio del SUS que cultiva, procesa y dispensa plantas y fitoterápicos con calidad y trazabilidad. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "feed-vivo",
       "word": "Feed Vivo",
       "simple": "Mural da comunidade — fotos, identificação de plantas e conversa aberta.",
@@ -500,6 +710,26 @@
       "href": "/calculadoras/"
     },
     {
+      "id": "fitocanabinoide",
+      "word": "Fitocanabinoide",
+      "simple": "Canabinoide produzido por plantas (sobretudo cannabis) — e, nas aulas, compostos vegetais que agem no sistema endocanabinoide. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Cannabinoid made by plants (especially cannabis) — and, in the lectures, plant compounds that act on the endocannabinoid system. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Cannabinoide producido por plantas (sobre todo cannabis) — y, en las clases, compuestos vegetales que actúan en el sistema endocannabinoide. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "fitofarmaco",
+      "word": "Fitofármaco",
+      "simple": "Medicamento a partir de composto isolado da planta — nas aulas, distinto do fitoterápico de planta inteira. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Medicine from an isolated plant compound — in the lectures, distinct from whole-plant herbal medicine. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Medicamento a partir de un compuesto aislado de la planta — en las clases, distinto del fitoterápico de planta entera. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "fitoterapia",
       "word": "Fitoterapia",
       "simple": "Uso de plantas para cuidar da saúde — base do laboratório BudGanja.",
@@ -510,6 +740,16 @@
       "href": "/plantas/"
     },
     {
+      "id": "floracao",
+      "word": "Floração",
+      "simple": "Fase reprodutiva em que a planta concentra flores e tricomas — «ciência da floração» no guia de cultivo.",
+      "simpleEn": "Reproductive phase when the plant concentrates flowers and trichomes — «science of flowering» in the grow guide.",
+      "simpleEs": "Fase reproductiva en la que la planta concentra flores y tricomas — «ciencia de la floración» en la guía de cultivo.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/guia/cultivo-basico.html"
+    },
+    {
       "id": "frutos",
       "word": "Frutos",
       "simple": "Parte da planta que carrega a semente — no hub, fichas de frutas inspecionadas.",
@@ -518,6 +758,26 @@
       "group": "hub",
       "fromTitle": true,
       "href": "/biblioteca/inspecoes/"
+    },
+    {
+      "id": "full-spectrum",
+      "word": "Full spectrum",
+      "simple": "Extrato com o perfil amplo da planta (vários canabinoides e terpenos) — oposto ao isolado puro. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Extract with the plant’s broad profile (several cannabinoids and terpenes) — opposite of a pure isolate. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Extracto con el perfil amplio de la planta (varios cannabinoides y terpenos) — opuesto al aislado puro. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "fumo-de-angola",
+      "word": "Fumo de Angola",
+      "simple": "Nome popular afro-brasileiro histórico da planta — citado com maconha, diamba/liamba e ganja. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Historic Afro-Brazilian folk name for the plant — cited with maconha, diamba/liamba and ganja. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Nombre popular afrobrasileño histórico de la planta — citado con maconha, diamba/liamba y ganja. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "ganja",
@@ -558,6 +818,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "guia-de-cultivo",
+      "word": "Guia de Cultivo",
+      "simple": "Trilha do site sobre nutrição, solo vivo, floração, clonagem e indoor.",
+      "simpleEn": "Site trail on nutrition, living soil, flowering, cloning and indoor growing.",
+      "simpleEs": "Ruta del sitio sobre nutrición, suelo vivo, floración, clonación e indoor.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/guia/cultivo-basico.html"
     },
     {
       "id": "guias",
@@ -608,6 +878,16 @@
       "group": "marca",
       "fromTitle": true,
       "href": "/posts/post-inspecao-personagem-inspetor.html"
+    },
+    {
+      "id": "isolado",
+      "word": "Isolado",
+      "simple": "Princípio ativo purificado (ex. CBD ~98%) — contraste com o fitoterápico de planta inteira. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Purified active principle (e.g. CBD ~98%) — contrast with whole-plant herbal medicine. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Principio activo purificado (p. ej. CBD ~98%) — contraste con el fitoterápico de planta entera. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "jambu",
@@ -668,6 +948,16 @@
       "group": "hub",
       "fromTitle": true,
       "href": "/biblioteca/inspecoes/"
+    },
+    {
+      "id": "lupulo",
+      "word": "Lúpulo",
+      "simple": "Humulus lupulus — parente botânico da cannabis (Cannabaceae), usado na cerveja; contraste taxonómico nas aulas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Humulus lupulus — botanical relative of cannabis (Cannabaceae), used in beer; taxonomic contrast in the lectures. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Humulus lupulus — pariente botánico del cannabis (Cannabaceae), usado en la cerveza; contraste taxonómico en las clases. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "luximetro",
@@ -870,6 +1160,36 @@
       "href": "/biblioteca/inspecoes/"
     },
     {
+      "id": "psicoativo",
+      "word": "Psicoativo",
+      "simple": "Substância que altera mente, percepção ou humor — nas aulas, não é sinónimo automático de alucinógeno. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Substance that alters mind, perception or mood — in the lectures, not automatically a synonym of hallucinogen. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Sustancia que altera mente, percepción o humor — en las clases, no es sinónimo automático de alucinógeno. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "psicodelico",
+      "word": "Psicodélico",
+      "simple": "Classe de substâncias que alteram fortemente percepção e consciência — tema da aula 11, além da cannabis. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Class of substances that strongly alter perception and consciousness — lecture 11 topic, beyond cannabis. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Clase de sustancias que alteran fuertemente percepción y conciencia — tema de la clase 11, más allá del cannabis. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "quimiotipo",
+      "word": "Quimiotipo",
+      "simple": "Classificação da cannabis pelo teor relativo de THC/CBD/CBG — mais útil clinicamente que só «sativa/índica». Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Cannabis classification by relative THC/CBD/CBG content — clinically more useful than «sativa/indica» alone. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Clasificación del cannabis por el teor relativo de THC/CBD/CBG — más útil clínicamente que solo «sativa/índica». Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "radio",
       "word": "Rádio",
       "simple": "Playlist do laboratório para ouvir enquanto estuda ou cultiva.",
@@ -888,6 +1208,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-raiva.html"
+    },
+    {
+      "id": "renisus",
+      "word": "RENISUS",
+      "simple": "Relação Nacional de Plantas Medicinais de Interesse ao SUS — lista de espécies prioritárias para pesquisa e uso. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "National list of medicinal plants of interest to the SUS — priority species for research and use. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Relación Nacional de Plantas Medicinales de Interés al SUS — lista de especies prioritarias para investigación y uso. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "ruda",
@@ -910,6 +1240,16 @@
       "href": "/vida/diario/"
     },
     {
+      "id": "sistema-endocanabinoide",
+      "word": "Sistema endocanabinoide",
+      "simple": "Conjunto clássico de receptores (CB1/CB2), endocanabinoides e enzimas que ajuda a manter o equilíbrio do organismo. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Classic set of receptors (CB1/CB2), endocannabinoids and enzymes that helps keep the body in balance. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Conjunto clásico de receptores (CB1/CB2), endocannabinoides y enzimas que ayuda a mantener el equilibrio del organismo. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "soja",
       "word": "Soja",
       "simple": "Glycine max — leguminosa citada em contexto agrícola/alimentar e fitoterapia (isoflavonas). Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -918,6 +1258,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "solo-vivo",
+      "word": "Solo vivo",
+      "simple": "Solo rico em vida microbiana — base do método orgânico do laboratório e capítulo do guia de cultivo.",
+      "simpleEn": "Soil rich in microbial life — basis of the lab’s organic method and a grow-guide chapter.",
+      "simpleEs": "Suelo rico en vida microbiana — base del método orgánico del laboratorio y capítulo de la guía de cultivo.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/guia/cultivo-basico.html"
     },
     {
       "id": "sorteios",
@@ -965,6 +1315,36 @@
       "simple": "Nicotiana — planta e produto de uso ritual/comercial; nicotina é o alcalóide principal. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "simpleEn": "Nicotiana — plant and ritual/commercial product; nicotine is the main alkaloid. Cited in Book XIV (UNIFESP course).",
       "simpleEs": "Nicotiana — planta y producto de uso ritual/comercial; la nicotina es el alcaloide principal. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "terpeno",
+      "word": "Terpeno",
+      "simple": "Composto aromático da planta (cheiro e sabor) que também modula efeitos dos fitocanabinoides no extrato. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Aromatic plant compound (smell and taste) that also modulates phytocannabinoid effects in the extract. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Compuesto aromático de la planta (olor y sabor) que también modula efectos de los fitocannabinoides en el extracto. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "thc",
+      "word": "THC",
+      "simple": "Delta-9-tetrahidrocanabinol — principal fitocanabinoide psicoativo da cannabis; eixo dos quimiotipos e da farmacologia do curso. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Delta-9-tetrahydrocannabinol — main psychoactive phytocannabinoid of cannabis; axis of chemotypes and course pharmacology. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Delta-9-tetrahidrocannabinol — principal fitocannabinoide psicoactivo del cannabis; eje de quimiotipos y farmacología del curso. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "tricoma",
+      "word": "Tricoma",
+      "simple": "Célula glandular na superfície da planta onde se concentram resina, canabinoides e terpenos — sobretudo nas flores femininas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
+      "simpleEn": "Glandular cell on the plant surface where resin, cannabinoids and terpenes concentrate — especially on female flowers. Cited in the XIV lesson drafts (UNIFESP course).",
+      "simpleEs": "Célula glandular en la superficie de la planta donde se concentran resina, cannabinoides y terpenos — sobre todo en flores femeninas. Citada en los borradores de las clases XIV (curso UNIFESP).",
       "group": "tecnico",
       "fromTitle": false,
       "href": "/biblioteca/unifesp/livro-xiv.html"
