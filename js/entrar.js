@@ -65,7 +65,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       invalid_client: 'Google rejeitou o Client ID. Verifique as credenciais no Google Cloud.',
       redirect_not_configured: 'Adicione GOOGLE_CLIENT_SECRET no .env e reinicie o site.',
       invalid_state: 'A ligação expirou ou o navegador bloqueou cookies. Tente novamente.',
-      access_denied: 'Login cancelado.'
+      access_denied: 'Login cancelado.',
+      registration_closed:
+        'Cadastros novos temporariamente indisponíveis no momento. Contas já existentes podem entrar normalmente.'
     };
     showError(errorMessages[urlError] || ('Erro Google: ' + urlError));
   }
@@ -77,6 +79,48 @@ document.addEventListener('DOMContentLoaded', async () => {
       return;
     }
   } catch (e) { /* continuar para login */ }
+
+  async function applyRegistrationGate() {
+    const banner = document.getElementById('entrar-registration-banner');
+    const registerTab = document.getElementById('local-tab-register');
+    const googleLabel = document.getElementById('entrar-google-label');
+    let open = false;
+    let message =
+      'Cadastros novos temporariamente indisponíveis no momento. Contas já existentes podem entrar normalmente.';
+    try {
+      const res = await fetch('/api/auth/registration-status', { credentials: 'include' });
+      if (res.ok) {
+        const data = await res.json();
+        open = !!data.open;
+        if (data.message) message = data.message;
+      }
+    } catch (e) {
+      open = false;
+    }
+    document.body.classList.toggle('registration-closed', !open);
+    if (banner) {
+      banner.hidden = open;
+      banner.textContent = message;
+    }
+    if (registerTab) {
+      registerTab.hidden = !open;
+      if (!open && registerTab.classList.contains('is-active')) {
+        setLocalTab('login');
+      }
+    }
+    if (registerForm && !open) {
+      registerForm.hidden = true;
+      registerForm.setAttribute('aria-disabled', 'true');
+    }
+    if (googleLabel && !open) {
+      googleLabel.textContent = 'Entrar com Google (contas existentes)';
+    }
+    if (!open && noticeEl && !urlError) {
+      showNotice(message);
+    }
+  }
+
+  await applyRegistrationGate();
 
   if (loginForm) {
     loginForm.addEventListener('submit', async (e) => {

@@ -40,16 +40,19 @@
 
     <main id="main-content" class="conteudo-interno login-page entrar-page">
     <div class="login-box entrar-box">
-      <h1 data-i18n="pages.login.title">Criar conta no site</h1>
-      <p class="login-subtitle" data-i18n="pages.login.subtitle">Um clique e entra. Na primeira etapa pedimos apenas o essencial: nome, username e data de nascimento (18+).</p>
+      <h1 id="entrar-title" data-i18n="pages.login.title">Entrar no site</h1>
+      <p id="entrar-subtitle" class="login-subtitle" data-i18n="pages.login.subtitle">Contas existentes: Google ou e-mail/senha. Cadastros novos estão temporariamente indisponíveis.</p>
 
       <div id="entrar-error" class="login-error" role="alert" hidden></div>
       <div id="entrar-notice" class="login-notice" hidden></div>
+      <div id="entrar-registration-banner" class="login-notice" role="status" hidden>
+        Cadastros novos temporariamente indisponíveis no momento. Contas já existentes podem entrar normalmente.
+      </div>
 
       <div class="entrar-actions">
         <a id="entrar-redirect-btn" class="botao botao-google entrar-google-btn" href="/api/auth/google/start" hidden>
           <span class="botao-google-icon" aria-hidden="true">G</span>
-          Continuar com Google
+          <span id="entrar-google-label">Entrar com Google</span>
         </a>
         <div id="google-signin-btn" class="login-google-section" aria-live="polite" hidden></div>
         <a class="botao botao-outline" href="/login.html">Entrar como admin local</a>
