@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T06:02:19.174Z",
+  "updatedAt": "2026-08-02T06:07:07.191Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -30,6 +30,12 @@
       "label": "Léxico inspecionado",
       "labelEn": "Inspected lexicon",
       "labelEs": "Léxico inspeccionado"
+    },
+    {
+      "id": "classificacao",
+      "label": "Classificação legal",
+      "labelEn": "Legal classification",
+      "labelEs": "Clasificación legal"
     },
     {
       "id": "tecnico",
@@ -602,10 +608,10 @@
     {
       "id": "entorpecente",
       "word": "Entorpecente",
-      "simple": "Substância que entorpece (diminui sensação ou reação) — termo jurídico-policial.",
-      "simpleEn": "A substance that dulls sensation or reaction — a legal/police term.",
-      "simpleEs": "Sustancia que entumece (baja sensación o reacción) — término jurídico-policial.",
-      "group": "lexico",
+      "simple": "Termo jurídico-policial: substância que entorpece (diminui sensação ou reação) e entra em listas de controle — distinto de «droga» no senso comum e de «narcótico» (rótulo médico/legal antigo).",
+      "simpleEn": "Legal/police term: a substance that dulls sensation or reaction and appears on control lists — distinct from everyday «drug» and from «narcotic» (older medical/legal label).",
+      "simpleEs": "Término jurídico-policial: sustancia que entumece (baja sensación o reacción) y entra en listas de control — distinto de «droga» en el habla común y de «narcótico» (rótulo médico/legal antiguo).",
+      "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-droga.html"
     },
@@ -1052,10 +1058,10 @@
     {
       "id": "narcotico",
       "word": "Narcótico",
-      "simple": "Substância que provoca sono ou entorpecimento — termo médico/legal antigo e amplo.",
-      "simpleEn": "A substance that causes sleep or dulling — an old, broad medical/legal term.",
-      "simpleEs": "Sustancia que provoca sueño o entumecimiento — término médico/legal antiguo y amplio.",
-      "group": "lexico",
+      "simple": "Termo médico/legal antigo e amplo: substância associada a sono ou entorpecimento — não é sinónimo exacto de «entorpecente» nas listas modernas de controle.",
+      "simpleEn": "Old, broad medical/legal term: a substance linked to sleep or dulling — not an exact synonym of «entorpecente» on modern control lists.",
+      "simpleEs": "Término médico/legal antiguo y amplio: sustancia asociada a sueño o entumecimiento — no es sinónimo exacto de «entorpecente» en las listas modernas de control.",
+      "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-droga.html"
     },
