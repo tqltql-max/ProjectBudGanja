@@ -437,6 +437,25 @@
     "seriesLabel": "Coco · derivado"
   },
   {
+    "title": "Inspeção: Celular — os riscos para a saúde das crianças (sociedade e mundo)",
+    "titleEn": "Inspection: Phone — risks to children’s health (society and world)",
+    "titleEs": "Inspección: Celular — riesgos para la salud de los niños (sociedad y mundo)",
+    "excerpt": "Verificação do smartphone como equipamento social: riscos à saúde infantil (sono, visão, mente, aprendizagem), limites SBP/guia federal 2025, Lei 15.100/2025 e enquadramento mundial (UNESCO).",
+    "excerptEn": "Smartphone as social equipment: risks to children’s health (sleep, vision, mind, learning), SBP/2025 federal-guide limits, Law 15.100/2025 and global framing (UNESCO).",
+    "excerptEs": "Smartphone como equipo social: riesgos para la salud infantil (sueño, visión, mente, aprendizaje), límites SBP/guía federal 2025, Ley 15.100/2025 y encuadre mundial (UNESCO).",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-celular-riscos-saude-criancas",
+    "url": "/posts/post-inspecao-celular-riscos-saude-criancas.html",
+    "date": "2026-08-01T22:30:00.000Z",
+    "filename": "posts/post-inspecao-celular-riscos-saude-criancas.html",
+    "coverImage": "/imagens/inspecoes/celular-riscos-criancas-cover.jpg",
+    "category": "inspecao",
+    "series": "verificacao-equipamento",
+    "seriesOrder": 3,
+    "seriesLabel": "Celular · saúde infantil"
+  },
+  {
     "title": "Inspeção: Caminho — a palavra que liga o laboratório BudGanja",
     "titleEn": "Inspection: Caminho — the word that links the BudGanja lab",
     "titleEs": "Inspección: Caminho — la palabra que une el laboratorio BudGanja",

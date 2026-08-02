@@ -1,7 +1,27 @@
 {
-  "updatedAt": "2026-08-01T23:20:14.492Z",
+  "updatedAt": "2026-08-02T03:02:45.111Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
+    {
+      "id": "celular-riscos-saude-criancas",
+      "title": "Celular — riscos para a saúde das crianças",
+      "titleEn": "Phone — risks to children’s health",
+      "titleEs": "Celular — riesgos para la salud de los niños",
+      "tipo": "equipamento",
+      "priority": 2,
+      "status": "feita",
+      "why": "Smartphone como equipamento social: riscos infantis, SBP, guia federal 2025 e Lei 15.100.",
+      "whyEn": "Smartphone as social equipment: child health risks, SBP, 2025 federal guide and Law 15.100.",
+      "whyEs": "Smartphone como equipo social: riesgos infantiles, SBP, guía federal 2025 y Ley 15.100.",
+      "suggestedSlug": "inspecao-celular-riscos-saude-criancas",
+      "doneHref": "/posts/post-inspecao-celular-riscos-saude-criancas.html",
+      "seriesHint": "verificacao-equipamento",
+      "sources": [
+        "https://www.gov.br/secom/pt-br/acompanhe-a-secom/noticias/2025/03/governo-lanca-guia-para-uso-saudavel-de-telas-por-criancas-e-adolescentes",
+        "https://www.sbp.com.br/",
+        "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15100.htm"
+      ]
+    },
     {
       "id": "padre-ticao",
       "title": "Padre Ticão — Antônio Luiz Marchioni",
