@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T05:03:11.065Z",
+  "updatedAt": "2026-08-02T05:31:10.113Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -50,6 +50,16 @@
       "href": "/posts/post-inspecao-derivado-cana-de-acucar.html"
     },
     {
+      "id": "alecrim",
+      "word": "Alecrim",
+      "simple": "Salvia rosmarinus — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Salvia rosmarinus — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Salvia rosmarinus — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/alecrim/"
+    },
+    {
       "id": "alegria",
       "word": "Alegria",
       "simple": "Sentimento bom e leve — a emoção amarela da Riley.",
@@ -58,6 +68,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-alegria.html"
+    },
+    {
+      "id": "algodao",
+      "word": "Algodão",
+      "simple": "Gossypium — fibra vegetal; contraste histórico com o cânhamo. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Gossypium — plant fiber; historical contrast with hemp. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Gossypium — fibra vegetal; contraste histórico con el cáñamo. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "animais",
@@ -88,6 +108,36 @@
       "group": "hub",
       "fromTitle": true,
       "href": "/biblioteca/inspecoes/#inspecoes-artes"
+    },
+    {
+      "id": "ayahuasca",
+      "word": "Ayahuasca",
+      "simple": "Bebida ritual amazónica (Banisteriopsis + Psychotria) — citada no Livro XIV entre psicoativos vegetais.",
+      "simpleEn": "Amazonian ritual brew (Banisteriopsis + Psychotria) — cited in Book XIV among plant psychoactives.",
+      "simpleEs": "Bebida ritual amazónica (Banisteriopsis + Psychotria) — citada en el Libro XIV entre psicoactivos vegetales.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "babosa",
+      "word": "Babosa",
+      "simple": "Suculenta (Aloe vera) amplamente cultivada; gel foliar rico em polissacarídeos — tradição tópica; látex com antraquinonas (aloína) exige ca… Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Aloe vera — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Aloe vera — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/babosa/"
+    },
+    {
+      "id": "barbatimao",
+      "word": "Barbatimão",
+      "simple": "Stryphnodendron adstringens — casca do Cerrado rica em taninos; tradição adstringente tópica e oral popular. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Stryphnodendron adstringens — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Stryphnodendron adstringens — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/barbatimao/"
     },
     {
       "id": "barriga-de-trigo",
@@ -130,6 +180,26 @@
       "href": "/plantas/cacau/"
     },
     {
+      "id": "cafe",
+      "word": "Café",
+      "simple": "Coffea — bebida e planta; cafeína como psicoativo quotidiano. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Coffea — drink and plant; caffeine as everyday psychoactive. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Coffea — bebida y planta; cafeína como psicoactivo cotidiano. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "calendula",
+      "word": "Calêndula",
+      "simple": "Calendula officinalis — pétalas com triterpenos e carotenóides; tradição tópica em pele e infusões leves. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Calendula officinalis — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Calendula officinalis — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/calendula/"
+    },
+    {
       "id": "caminho",
       "word": "Caminho",
       "simple": "Via por onde se anda — no laboratório, a palavra que liga pesquisa, vida e travessia.",
@@ -138,6 +208,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-caminho.html"
+    },
+    {
+      "id": "camomila",
+      "word": "Camomila",
+      "simple": "Capítulos de Matricaria chamomilla — tradição de chás calmantes; marcadores como apigenina e óleo azul (camazuleno) em contexto educacional. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Matricaria chamomilla — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Matricaria chamomilla — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/camomila/"
     },
     {
       "id": "canabinall",
@@ -168,6 +248,26 @@
       "group": "lexico",
       "fromTitle": true,
       "href": "/posts/post-inspecao-palavra-cannabis.html"
+    },
+    {
+      "id": "cannabis-indica",
+      "word": "Cannabis indica",
+      "simple": "Espécie/linhagem do género Cannabis frequentemente citada junto da sativa — morfologia e quimiotipo variam. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Cannabis species/lineage often cited with sativa — morphology and chemotype vary. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Especie/linaje del género Cannabis citada junto a sativa — morfología y quimiotipo varían. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/cannabis-sativa/"
+    },
+    {
+      "id": "cannabis-ruderalis",
+      "word": "Cannabis ruderalis",
+      "simple": "Forma/linhagem de Cannabis associada a autofloração e menor porte — citada em taxonomia e cultivo. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Cannabis form/lineage linked to autoflowering and smaller stature — taxonomy and cultivation. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Forma/linaje de Cannabis asociada a autofloración y menor porte — taxonomía y cultivo. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/cannabis-sativa/"
     },
     {
       "id": "caseina",
@@ -210,6 +310,16 @@
       "href": "/equipamentos/"
     },
     {
+      "id": "coca",
+      "word": "Coca",
+      "simple": "Erythroxylum coca — folha tradicional andina; distinta da cocaína isolada. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Erythroxylum coca — Andean traditional leaf; distinct from isolated cocaine. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Erythroxylum coca — hoja tradicional andina; distinta de la cocaína aislada. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "coelho",
       "word": "Coelho",
       "simple": "Animal da toca — no método BudGanja, a palavra da entrada na investigação.",
@@ -218,6 +328,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-coelho.html"
+    },
+    {
+      "id": "cogumelo",
+      "word": "Cogumelo",
+      "simple": "Fungos (ex. Psilocybe) citados nas aulas de psicodélicos — léxico etnobotânico do curso, não planta. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Fungi (e.g. Psilocybe) in psychedelic lectures — ethnobotanical lexicon, not a plant. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Hongos (p. ej. Psilocybe) en clases de psicodélicos — léxico etnobotánico, no planta. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "copaiba",
+      "word": "Copaíba",
+      "simple": "Copaifera — óleo-resina amazônico/cerrado rico em β-cariofileno e diterpenos; tradição tópica e oral popular. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Copaifera langsdorffii — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Copaifera langsdorffii — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/copaiba/"
     },
     {
       "id": "cultivo",
@@ -290,6 +420,16 @@
       "href": null
     },
     {
+      "id": "equinacea",
+      "word": "Equinácea",
+      "simple": "Echinacea — planta citada entre as que modulam receptores do sistema endocanabinoide. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Echinacea — plant cited among those modulating endocannabinoid receptors. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Echinacea — planta citada entre las que modulan receptores del sistema endocannabinoide. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "equipamentos",
       "word": "Equipamentos",
       "simple": "Aparelhos e montagens do laboratório — clonadoras, ventilação, kits.",
@@ -308,6 +448,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-erva.html"
+    },
+    {
+      "id": "erva-cidreira",
+      "word": "Erva-cidreira",
+      "simple": "Lippia alba — erva-cidreira brasileira; folhas com óleos essenciais (citral/carvona conforme quimiotipo) em chás e banhos. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Lippia alba — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Lippia alba — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/erva-cidreira/"
+    },
+    {
+      "id": "espinheira-santa",
+      "word": "Espinheira-santa",
+      "simple": "Maytenus ilicifolia — Mata Atlântica; folhas na tradição gástrica brasileira; taninos e triterpenos em contexto educacional. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Maytenus ilicifolia — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Maytenus ilicifolia — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/espinheira-santa/"
     },
     {
       "id": "estaca",
@@ -380,6 +540,26 @@
       "href": "/posts/post-inspecao-derivado-gluten.html"
     },
     {
+      "id": "guaco",
+      "word": "Guaco",
+      "simple": "Mikania glomerata — trepadeira clássica em xaropes e chás respiratórios; cumarinas (ex. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Mikania glomerata — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Mikania glomerata — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/guaco/"
+    },
+    {
+      "id": "guarana",
+      "word": "Guaraná",
+      "simple": "Paullinia cupana — estimulante amazónico na classificação de psicoativos. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Paullinia cupana — Amazonian stimulant in the psychoactive classification. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Paullinia cupana — estimulante amazónico en la clasificación de psicoactivos. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "guias",
       "word": "Guias",
       "simple": "Textos que ensinam passo a passo — clonadoras, ferramentas e este glossário.",
@@ -388,6 +568,16 @@
       "group": "titulo",
       "fromTitle": true,
       "href": "/guia/palavras.html"
+    },
+    {
+      "id": "hortela",
+      "word": "Hortelã",
+      "simple": "Mentha spicata (e afins) — mentol/óleos mentolados em chás e culinária; espécie e quimiotipo importam. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Mentha spicata — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Mentha spicata — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/hortela/"
     },
     {
       "id": "inspecao",
@@ -420,6 +610,26 @@
       "href": "/posts/post-inspecao-personagem-inspetor.html"
     },
     {
+      "id": "jambu",
+      "word": "Jambu",
+      "simple": "Acmella oleracea — jambu amazônico; spilanthol provoca formigamento; culinária paraense e tradição oral. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Acmella oleracea — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Acmella oleracea — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/jambu/"
+    },
+    {
+      "id": "jurema",
+      "word": "Jurema",
+      "simple": "Nome popular de Mimosa (ex. hostilis/tenuiflora) — tradição ritual e etnobotânica no Brasil. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Popular name for Mimosa (e.g. hostilis/tenuiflora) — ritual and ethnobotanical tradition in Brazil. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Nombre popular de Mimosa (p. ej. hostilis/tenuiflora) — tradición ritual y etnobotánica en Brasil. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "laboratorio",
       "word": "Laboratório",
       "simple": "Lugar de experiência e medida — aqui, o laboratório digital público BudGanja.",
@@ -428,6 +638,26 @@
       "group": "marca",
       "fromTitle": true,
       "href": "/"
+    },
+    {
+      "id": "laranja",
+      "word": "Laranja",
+      "simple": "Citrino: fruto inteiro vs suco concentrado, néctares e refrigerantes «de laranja» com açúcar e aditivos. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Citrus × sinensis (L.) Osbeck — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Citrus × sinensis (L.) Osbeck — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/laranja/"
+    },
+    {
+      "id": "lavanda",
+      "word": "Lavanda",
+      "simple": "Planta aromática rica em terpenos — comparada aos cheiros de variedades de cannabis. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Aromatic plant rich in terpenes — compared to cannabis variety scents. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Planta aromática rica en terpenos — comparada con olores de variedades de cannabis. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "legado",
@@ -460,6 +690,26 @@
       "href": "/posts/post-inspecao-palavra-maconha.html"
     },
     {
+      "id": "mamao",
+      "word": "Mamão",
+      "simple": "Carica papaya — fonte de papaína; citada em protocolos de feridas no SUS. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Carica papaya — source of papain; cited in SUS wound-care protocols. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Carica papaya — fuente de papaína; citada en protocolos de heridas del SUS. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "maracuja",
+      "word": "Maracujá",
+      "simple": "Passiflora — folhas/partes aéreas em chás e fitoterápicos; flavonoides C-glicosídeos na tradição calmante. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Passiflora incarnata — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Passiflora incarnata — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/maracuja/"
+    },
+    {
       "id": "marijuana",
       "word": "Marijuana",
       "simple": "Nome popular mexicano/espanhol — no século XX virou arma de discurso da proibição.",
@@ -480,6 +730,16 @@
       "href": "/posts/post-inspecao-palavra-medo.html"
     },
     {
+      "id": "melissa",
+      "word": "Melissa",
+      "simple": "Melissa officinalis — balm europeu adaptado; citral e ácidos fenólicos em chás calmantes. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Melissa officinalis — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Melissa officinalis — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/melissa/"
+    },
+    {
       "id": "movrecam",
       "word": "MovReCam",
       "simple": "Movimento de Reabilitação de Cannabis Medicinal — canal e origem comunitária do curso.",
@@ -488,6 +748,16 @@
       "group": "tecnico",
       "fromTitle": true,
       "href": "/posts/post-inspecao-canal-movrecam.html"
+    },
+    {
+      "id": "mulungu",
+      "word": "Mulungu",
+      "simple": "Erythrina mulungu — casca com alcaloides eritrínicos; tradição de chás calmantes (sedação popular). Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Erythrina mulungu — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Erythrina mulungu — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/mulungu/"
     },
     {
       "id": "narcotico",
@@ -510,6 +780,16 @@
       "href": "/posts/post-inspecao-palavra-nojinho.html"
     },
     {
+      "id": "oregano",
+      "word": "Orégano",
+      "simple": "Erva culinária com terpenos que modulam o sistema endocanabinoide. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Culinary herb with terpenes that modulate the endocannabinoid system. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Hierba culinaria con terpenos que modulan el sistema endocannabinoide. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "palavras",
       "word": "Palavras",
       "simple": "Unidades da língua — no laboratório, série de inspeções sobre origem e sentido.",
@@ -518,6 +798,16 @@
       "group": "hub",
       "fromTitle": true,
       "href": "/biblioteca/inspecoes/#inspecoes-palavras"
+    },
+    {
+      "id": "papoula",
+      "word": "Papoula",
+      "simple": "Papaver somniferum — fonte histórica do ópio; contraste com cannabis e outras plantas. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Papaver somniferum — historical source of opium; contrast with cannabis and other plants. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Papaver somniferum — fuente histórica del opio; contraste con cannabis y otras plantas. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "passar",
@@ -548,6 +838,16 @@
       "group": "hub",
       "fromTitle": true,
       "href": "/biblioteca/inspecoes/"
+    },
+    {
+      "id": "pimenta-do-reino",
+      "word": "Pimenta-do-reino",
+      "simple": "Piper nigrum — planta citada entre as que agem no endocanabinoidoma (ex. CB2). Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Piper nigrum — cited among plants acting on the endocannabinoidome (e.g. CB2). Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Piper nigrum — citada entre plantas que actúan en el endocannabinoidoma (p. ej. CB2). Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "plantas",
@@ -590,6 +890,16 @@
       "href": "/posts/post-inspecao-palavra-raiva.html"
     },
     {
+      "id": "ruda",
+      "word": "Ruda",
+      "simple": "Ruta — citada no eixo de plantas e endocanabinoidoma. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Ruta — cited in the plants-and-endocannabinoidome thread. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Ruta — citada en el eje de plantas y endocannabinoidoma. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "sementinha",
       "word": "Sementinha",
       "simple": "Semente pequena — personagem-símbolo do conto Vida e do diário familiar.",
@@ -598,6 +908,16 @@
       "group": "titulo",
       "fromTitle": true,
       "href": "/vida/diario/"
+    },
+    {
+      "id": "soja",
+      "word": "Soja",
+      "simple": "Glycine max — leguminosa citada em contexto agrícola/alimentar e fitoterapia (isoflavonas). Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Glycine max — legume cited in agricultural/food and phytotherapy (isoflavones) context. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Glycine max — leguminosa citada en contexto agrícola/alimentario y fitoterapia (isoflavonas). Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "sorteios",
@@ -640,6 +960,16 @@
       "href": "/calculadoras/super-solo.html"
     },
     {
+      "id": "tabaco",
+      "word": "Tabaco",
+      "simple": "Nicotiana — planta e produto de uso ritual/comercial; nicotina é o alcalóide principal. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Nicotiana — plant and ritual/commercial product; nicotine is the main alkaloid. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Nicotiana — planta y producto de uso ritual/comercial; la nicotina es el alcaloide principal. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
       "id": "trigo",
       "word": "Trigo",
       "simple": "Cereal (Triticum) — farinha e glúten; no discurso popular, alvo de Barriga de Trigo.",
@@ -660,6 +990,16 @@
       "href": "/posts/post-inspecao-palavra-tristeza.html"
     },
     {
+      "id": "unha-de-gato",
+      "word": "Unha-de-gato",
+      "simple": "Uncaria tomentosa — trepadeira andino-amazônica; alcaloides oxindólicos e ácidos quinóvicos na tradição popular (casca/raiz). Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Uncaria tomentosa — plant cited in UNIFESP Book XIV.",
+      "simpleEs": "Uncaria tomentosa — planta citada en el Libro XIV (UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/unha-de-gato/"
+    },
+    {
       "id": "unifesp",
       "word": "UNIFESP",
       "simple": "Universidade Federal de São Paulo — sede do curso de extensão em cannabis medicinal.",
@@ -668,6 +1008,16 @@
       "group": "tecnico",
       "fromTitle": true,
       "href": "/biblioteca/unifesp/"
+    },
+    {
+      "id": "valeriana",
+      "word": "Valeriana",
+      "simple": "Raiz tradicional de chás para o sono — exemplo de planta depressora da atividade mental. Citada no Livro XIV (curso UNIFESP).",
+      "simpleEn": "Traditional root for sleep teas — example of a plant that depresses mental activity. Cited in Book XIV (UNIFESP course).",
+      "simpleEs": "Raíz tradicional de tés para dormir — ejemplo de planta depresora de la actividad mental. Citada en el Libro XIV (curso UNIFESP).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
       "id": "vida",

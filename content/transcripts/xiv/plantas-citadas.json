@@ -1,0 +1,232 @@
+{
+  "extractedAt": "2026-08-02T05:28:36.874Z",
+  "count": 24,
+  "items": [
+    {
+      "id": "alecrim",
+      "word": "Alecrim",
+      "cientifico": "Salvia rosmarinus",
+      "matched": "Alecrim",
+      "href": "/plantas/alecrim/",
+      "inPlantas": true,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "algodao",
+      "word": "Algodão",
+      "cientifico": "",
+      "matched": "algodao",
+      "href": "/biblioteca/unifesp/livro-xiv.html",
+      "simple": "Gossypium — fibra vegetal; contraste histórico com o cânhamo.",
+      "inPlantas": false,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "babosa",
+      "word": "Babosa",
+      "cientifico": "Aloe vera",
+      "matched": "Babosa",
+      "href": "/plantas/babosa/",
+      "inPlantas": true,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "barbatimao",
+      "word": "Barbatimão",
+      "cientifico": "Stryphnodendron adstringens",
+      "matched": "Barbatimão",
+      "href": "/plantas/barbatimao/",
+      "inPlantas": true,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "cafe",
+      "word": "Café",
+      "cientifico": "",
+      "matched": "cafe",
+      "href": "/biblioteca/unifesp/livro-xiv.html",
+      "simple": "Coffea — bebida e planta; cafeína como psicoativo quotidiano citado nas aulas.",
+      "inPlantas": false,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "calendula",
+      "word": "Calêndula",
+      "cientifico": "Calendula officinalis",
+      "matched": "Calêndula",
+      "href": "/plantas/calendula/",
+      "inPlantas": true,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "camomila",
+      "word": "Camomila",
+      "cientifico": "Matricaria chamomilla",
+      "matched": "Camomila",
+      "href": "/plantas/camomila/",
+      "inPlantas": true,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "cannabis-sativa",
+      "word": "Cannabis (medicinal)",
+      "cientifico": "Cannabis sativa L.",
+      "matched": "Cannabis sativa L.",
+      "href": "/plantas/cannabis-sativa/",
+      "inPlantas": true,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "cannabis-indica",
+      "word": "Cannabis indica",
+      "cientifico": "",
+      "matched": "cannabis indica",
+      "href": "/plantas/cannabis-sativa/",
+      "simple": "Espécie/linhagem do género Cannabis frequentemente citada junto da sativa — morfologia e quimiotipo variam.",
+      "inPlantas": false,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "cannabis-ruderalis",
+      "word": "Cannabis ruderalis",
+      "cientifico": "",
+      "matched": "ruderalis",
+      "href": "/plantas/cannabis-sativa/",
+      "simple": "Forma/linhagem de Cannabis associada a autofloração e menor porte — citada em taxonomia e cultivo.",
+      "inPlantas": false,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "coca",
+      "word": "Coca",
+      "cientifico": "",
+      "matched": "coca",
+      "href": "/biblioteca/unifesp/livro-xiv.html",
+      "simple": "Erythroxylum coca — folha tradicional andina; distinta da cocaína isolada.",
+      "inPlantas": false,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "cogumelo",
+      "word": "Cogumelo",
+      "cientifico": "",
+      "matched": "cogumelo",
+      "href": "/biblioteca/unifesp/livro-xiv.html",
+      "simple": "Fungos (ex. Psilocybe) citados nas aulas de psicodélicos — não são plantas, mas entram no léxico etnobotânico do curso.",
+      "inPlantas": false,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "copaiba",
+      "word": "Copaíba",
+      "cientifico": "Copaifera langsdorffii",
+      "matched": "Copaíba",
+      "href": "/plantas/copaiba/",
+      "inPlantas": true,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "guaco",
+      "word": "Guaco",
+      "cientifico": "Mikania glomerata",
+      "matched": "Guaco",
+      "href": "/plantas/guaco/",
+      "inPlantas": true,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "hortela",
+      "word": "Hortelã",
+      "cientifico": "Mentha spicata",
+      "matched": "Hortelã",
+      "href": "/plantas/hortela/",
+      "inPlantas": true,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "jambu",
+      "word": "Jambu",
+      "cientifico": "Acmella oleracea",
+      "matched": "Jambu",
+      "href": "/plantas/jambu/",
+      "inPlantas": true,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "jurema",
+      "word": "Jurema",
+      "cientifico": "",
+      "matched": "jurema",
+      "href": "/biblioteca/unifesp/livro-xiv.html",
+      "simple": "Nome popular de Mimosa (ex. hostilis/tenuiflora) — tradição ritual e etnobotânica no Brasil.",
+      "inPlantas": false,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "laranja",
+      "word": "Laranja",
+      "cientifico": "Citrus × sinensis (L.) Osbeck",
+      "matched": "Laranja",
+      "href": "/plantas/laranja/",
+      "inPlantas": true,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "maracuja",
+      "word": "Maracujá",
+      "cientifico": "Passiflora incarnata",
+      "matched": "Maracujá",
+      "href": "/plantas/maracuja/",
+      "inPlantas": true,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "melissa",
+      "word": "Melissa",
+      "cientifico": "Melissa officinalis",
+      "matched": "Melissa",
+      "href": "/plantas/melissa/",
+      "inPlantas": true,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "mulungu",
+      "word": "Mulungu",
+      "cientifico": "Erythrina mulungu",
+      "matched": "Mulungu",
+      "href": "/plantas/mulungu/",
+      "inPlantas": true,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "papoula",
+      "word": "Papoula",
+      "cientifico": "",
+      "matched": "opio",
+      "href": "/biblioteca/unifesp/livro-xiv.html",
+      "simple": "Papaver somniferum — fonte histórica do ópio; citada em contraste com cannabis e outras plantas.",
+      "inPlantas": false,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "soja",
+      "word": "Soja",
+      "cientifico": "",
+      "matched": "soja",
+      "href": "/biblioteca/unifesp/livro-xiv.html",
+      "simple": "Glycine max — leguminosa citada em contexto agrícola/alimentar nas aulas.",
+      "inPlantas": false,
+      "alreadyInGuia": false
+    },
+    {
+      "id": "tabaco",
+      "word": "Tabaco",
+      "cientifico": "",
+      "matched": "tabaco",
+      "href": "/biblioteca/unifesp/livro-xiv.html",
+      "simple": "Nicotiana — planta e produto de uso ritual/comercial; nicotina é o alcalóide principal.",
+      "inPlantas": false,
+      "alreadyInGuia": false
+    }
+  ]
+}
