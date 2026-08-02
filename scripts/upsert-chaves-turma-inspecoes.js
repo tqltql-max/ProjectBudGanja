@@ -75,9 +75,9 @@ async function main() {
         tipo: 'pessoas',
         priority: 1,
         status: 'feita',
-        why: 'Pessoas: homenagem a Ramón Valdés / Seu Madruga — ofício, dignidade e legado infantil.',
-        whyEn: 'People: homage to Ramón Valdés / Seu Madruga — craft, dignity and childhood legacy.',
-        whyEs: 'Personas: homenaje a Ramón Valdés / Don Ramón — oficio, dignidad y legado infantil.',
+        why: 'Pessoas: homenagem a Ramón Valdés / Seu Madruga — ofício, dignidade e legado cultural.',
+        whyEn: 'People: homage to Ramón Valdés / Seu Madruga — craft, dignity and cultural legacy.',
+        whyEs: 'Personas: homenaje a Ramón Valdés / Don Ramón — oficio, dignidad y legado cultural.',
         suggestedSlug: 'inspecao-figura-ramon-valdes',
         doneHref: '/posts/post-inspecao-figura-ramon-valdes.html',
         seriesHint: 'pessoas-historia',
@@ -96,9 +96,9 @@ async function main() {
         tipo: 'arte',
         priority: 1,
         status: 'feita',
-        why: 'Artes: programa + méritos da turma + recomendação mediada para crianças.',
-        whyEn: 'Arts: show + cast merits + mediated kids recommendation.',
-        whyEs: 'Artes: programa + méritos de la tropa + recomendación infantil mediada.',
+        why: 'Artes: programa + méritos da turma — partilha, desculpa e amizade.',
+        whyEn: 'Arts: show + cast merits — sharing, apology and friendship.',
+        whyEs: 'Artes: programa + méritos de la tropa — compartir, pedir perdón y amistad.',
         suggestedSlug: 'inspecao-serie-chaves-el-chavo',
         doneHref: '/posts/post-inspecao-serie-chaves-el-chavo.html',
         seriesHint: 'artes-cultura',
@@ -107,7 +107,7 @@ async function main() {
           '/posts/post-inspecao-figura-ramon-valdes.html',
           '/vida/'
         ],
-        notes: 'Recomendação infantil com mediação parental.'
+        notes: 'Homenagem à turma; assistir com contexto para gags de época.'
       }
     ];
     entries.forEach((entry) => {

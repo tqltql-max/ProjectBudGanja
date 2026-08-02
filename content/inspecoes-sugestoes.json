@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T21:16:11.846Z",
+  "updatedAt": "2026-08-02T21:58:52.164Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -600,9 +600,12 @@
       "seriesHint": "artes-cultura",
       "sources": [
         "https://pt.wikipedia.org/wiki/Alice_no_Pa%C3%ADs_das_Maravilhas",
-        "/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html"
+        "https://pt.wikipedia.org/wiki/Alice_no_Pa%C3%ADs_das_Maravilhas_(filme_de_1951)",
+        "https://www.youtube.com/watch?v=PA-h3-0wheo",
+        "/posts/post-inspecao-filme-the-matrix.html",
+        "/posts/post-inspecao-palavra-passar.html"
       ],
-      "notes": "Livro primeiro (1862–1865); filme = eco."
+      "notes": "Livro primeiro (1862–1865); filme = eco; metáforas ≠ protocolo de substâncias."
     },
     {
       "id": "arte-o-dia-do-curinga",
@@ -1958,7 +1961,7 @@
       "tipo": "conto",
       "priority": 1,
       "status": "feita",
-      "why": "Conto familiar: cuidar de plantas com ciência, natureza e amizade — série Vida.",
+      "why": "Conto do laboratório: cuidar de plantas com ciência, natureza e amizade — série Vida.",
       "whyEn": "Family story: plant care with science, nature and friendship — Vida series.",
       "whyEs": "Cuento familiar: cuidar plantas con ciencia, naturaleza y amistad — serie Vida.",
       "suggestedSlug": "inspecao-conto-vida-laboratorio",
@@ -2385,9 +2388,9 @@
       "tipo": "pessoas",
       "priority": 1,
       "status": "feita",
-      "why": "Pessoas: homenagem a Ramón Valdés / Seu Madruga — ofício, dignidade e legado infantil.",
-      "whyEn": "People: homage to Ramón Valdés / Seu Madruga — craft, dignity and childhood legacy.",
-      "whyEs": "Personas: homenaje a Ramón Valdés / Don Ramón — oficio, dignidad y legado infantil.",
+      "why": "Pessoas: homenagem a Ramón Valdés / Seu Madruga — ofício, dignidade e legado cultural.",
+      "whyEn": "People: homage to Ramón Valdés / Seu Madruga — craft, dignity and cultural legacy.",
+      "whyEs": "Personas: homenaje a Ramón Valdés / Don Ramón — oficio, dignidad y legado cultural.",
       "suggestedSlug": "inspecao-figura-ramon-valdes",
       "doneHref": "/posts/post-inspecao-figura-ramon-valdes.html",
       "seriesHint": "pessoas-historia",
@@ -2406,9 +2409,9 @@
       "tipo": "arte",
       "priority": 1,
       "status": "feita",
-      "why": "Artes: programa + méritos da turma + recomendação mediada para crianças.",
-      "whyEn": "Arts: show + cast merits + mediated kids recommendation.",
-      "whyEs": "Artes: programa + méritos de la tropa + recomendación infantil mediada.",
+      "why": "Artes: programa + méritos da turma — partilha, desculpa e amizade.",
+      "whyEn": "Arts: show + cast merits — sharing, apology and friendship.",
+      "whyEs": "Artes: programa + méritos de la tropa — compartir, pedir perdón y amistad.",
       "suggestedSlug": "inspecao-serie-chaves-el-chavo",
       "doneHref": "/posts/post-inspecao-serie-chaves-el-chavo.html",
       "seriesHint": "artes-cultura",
@@ -2417,7 +2420,7 @@
         "/posts/post-inspecao-figura-ramon-valdes.html",
         "/vida/"
       ],
-      "notes": "Recomendação infantil com mediação parental."
+      "notes": "Homenagem à turma; assistir com contexto para gags de época."
     },
     {
       "id": "cruzamento-raiva-venom-vida-divertida",

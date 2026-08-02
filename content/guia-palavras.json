@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T21:16:11.849Z",
+  "updatedAt": "2026-08-02T21:58:52.167Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2658,8 +2658,8 @@
     {
       "id": "vida",
       "word": "Vida",
-      "simple": "Trilha familiar do laboratório — conto, personagens e Diário da Sementinha.",
-      "simpleEn": "The lab’s family trail — story, characters and Little Seed Diary.",
+      "simple": "Trilha Vida do laboratório — conto, personagens e Diário da Sementinha.",
+      "simpleEn": "The lab’s Vida trail — story, characters and Little Seed Diary.",
       "simpleEs": "Trama familiar del laboratorio — cuento, personajes y Diario de la Semillita.",
       "group": "titulo",
       "fromTitle": true,

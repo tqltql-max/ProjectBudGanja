@@ -260,7 +260,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-conto-vida-laboratorio.html",
               "icon": "🔍",
               "slug": "post-inspecao-conto-vida-laboratorio",
-              "description": "Conto familiar: o Inspetor, a Dona Maria, a Joaninha Joana e os Three Little Birds ensinam a cuidar de uma semente com ciência, natureza e amizade."
+              "description": "Conto do laboratório: o Inspetor, a Dona Maria, a Joaninha Joana e os Three Little Birds ensinam a cuidar de uma semente com ciência, natureza e amizade."
             },
             {
               "label": "Inspeção: Padre Ticão — Antônio Luiz Marchioni",
@@ -956,7 +956,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-figura-ramon-valdes.html",
               "icon": "🔍",
               "slug": "post-inspecao-figura-ramon-valdes",
-              "description": "Pessoas: homenagem a Ramón Valdés (1923–1988) — o actor que deu dignidade cómica ao Seu Madruga; ofício, ética sem sermão e legado infantil latino-americano."
+              "description": "Pessoas: homenagem a Ramón Valdés (1923–1988) — o actor que deu dignidade cómica ao Seu Madruga; ofício, ética sem sermão e legado cultural latino-americano."
             },
             {
               "label": "Inspeção: Álvares de Azevedo — homenagem ao poeta da Lira e elo com Lágrimas da Vida",
@@ -1228,7 +1228,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-serie-chaves-el-chavo.html",
               "icon": "🔍",
               "slug": "post-inspecao-serie-chaves-el-chavo",
-              "description": "Artes: *Chaves* / *El Chavo del Ocho* — homenagem à turma inteira, méritos de cada pilar e recomendação mediada para crianças aprenderem partilha, desculpa e amizade."
+              "description": "Artes: *Chaves* / *El Chavo del Ocho* — homenagem à turma inteira e méritos de cada pilar: partilha, desculpa e amizade."
             },
             {
               "label": "Inspeção: Criatividade — a palavra de fazer nascer no laboratório",
@@ -1327,6 +1327,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Stryphnodendron adstringens* — casca rica em taninos e proantocianidinas; adstringente do Cerrado."
             },
             {
+              "label": "Inspeção: Backspace — invenção do apagar e a tentação do «tudo de ruim»",
+              "tileLabel": "Inspeção: Backspace — invenção …",
+              "href": "/posts/post-inspecao-palavra-backspace.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-backspace",
+              "description": "Palavras: «backspace» (*back* + *space*, ~1899) — da tecla tipográfica à metáfora de apagar tudo de ruim sem inspecionar."
+            },
+            {
               "label": "Inspeção: Substância controlada — meta-rótulo das listas",
               "tileLabel": "Inspeção: Substância controlada…",
               "href": "/posts/post-inspecao-palavra-substancia-controlada.html",
@@ -1343,6 +1351,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Pilocarpus microphyllus* — folhas fonte histórica de pilocarpina; alcaloide imidazólico miótico."
             },
             {
+              "label": "Inspeção: Mão esquerda / mão direita — complementaridade do ofício",
+              "tileLabel": "Inspeção: Mão esquerda / mão di…",
+              "href": "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mao-esquerda-direita",
+              "description": "Palavras: «mão esquerda» / «mão direita» (lat. *manus*) — ferramentas do gesto, do cultivo e do teclado; complementaridade, não moral dualista."
+            },
+            {
               "label": "Inspeção: Ilícito — polo jurídico do duplo sentido de droga",
               "tileLabel": "Inspeção: Ilícito — polo jurídi…",
               "href": "/posts/post-inspecao-palavra-ilicito.html",
@@ -1357,6 +1373,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-ipecacuanha",
               "description": "*Carapichea ipecacuanha* — raiz com emetina e cephaeline; farmacopeia histórica como emético e antiamébico."
+            },
+            {
+              "label": "Inspeção: Árvore da Vida — a fase sénior do arco semente–mudinha–árvore",
+              "tileLabel": "Inspeção: Árvore da Vida — a fa…",
+              "href": "/posts/post-inspecao-palavra-arvore-da-vida.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-arvore-da-vida",
+              "description": "Palavras: «Árvore da Vida» / «árvore» (lat. *arbor*) — figura sénior do laboratório: semente → mudinha → árvore, com poema e ofício contínuo."
             },
             {
               "label": "Inspeção: Opioide e Opiáceo — tradição clínica por trás de narcótico",
