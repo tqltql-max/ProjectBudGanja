@@ -153,8 +153,66 @@
           ]
         },
         {
-          "id": "diploma-amigo",
+          "id": "emocoes-filme",
           "order": 6,
+          "title": "Emoções como no filme",
+          "minutes": 5,
+          "summary": "Alegria, Tristeza, Raiva, Medo, Nojinho e Emoção — pratique em inglês e espanhol.",
+          "body": [
+            "No filme Divertida Mente, a Riley tem amigas no centro de comando: cada emoção ajuda de um jeito.",
+            "Alegria traz luz; Tristeza avisa quando algo falta; Raiva defende limites; Medo cuida da segurança; Nojinho diz «não» ao que não combina.",
+            "No laboratório BudGanja, plantas também «falam» pelas folhas: alegria quando a luz chega, tristeza quando falta água — todas as emoções têm um lugar.",
+            "Ative English ou Español e passe o dedo nas palavras douradas. Com um adulto, explore a inspeção do filme nos links abaixo."
+          ],
+          "focusWords": ["emoção", "alegria", "tristeza", "raiva", "medo", "nojinho"],
+          "relatedLinks": [
+            {
+              "label": "Inspeção: Divertida Mente",
+              "href": "/posts/post-inspecao-filme-divertida-mente.html",
+              "hint": "O filme e a mensagem que importa"
+            },
+            {
+              "label": "Palavra: emoção",
+              "href": "/posts/post-inspecao-palavra-emocao.html",
+              "hint": "Hub das cinco emoções da Riley"
+            },
+            {
+              "label": "Alegria",
+              "href": "/posts/post-inspecao-palavra-alegria.html"
+            },
+            {
+              "label": "Tristeza",
+              "href": "/posts/post-inspecao-palavra-tristeza.html"
+            },
+            {
+              "label": "Raiva",
+              "href": "/posts/post-inspecao-palavra-raiva.html"
+            },
+            {
+              "label": "Medo",
+              "href": "/posts/post-inspecao-palavra-medo.html"
+            },
+            {
+              "label": "Nojinho",
+              "href": "/posts/post-inspecao-palavra-nojinho.html"
+            }
+          ],
+          "quiz": [
+            {
+              "q": "Quantas emoções principais guiam a Riley no filme?",
+              "options": ["Duas", "Cinco", "Dez"],
+              "answer": 1
+            },
+            {
+              "q": "No laboratório, o que a Tristeza pode avisar numa planta?",
+              "options": ["Que falta água ou carinho", "Que a planta quer voar", "Que é hora de dormir"],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "id": "diploma-amigo",
+          "order": 7,
           "title": "Diploma de amigo das plantas",
           "minutes": 4,
           "summary": "Revise e celebre o que aprendeu.",

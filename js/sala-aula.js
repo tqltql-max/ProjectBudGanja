@@ -239,6 +239,28 @@
       })
       .join('');
 
+    var relatedHtml = '';
+    if (lesson.relatedLinks && lesson.relatedLinks.length) {
+      relatedHtml =
+        '<aside class="sala-related" data-learn-skip aria-label="Ler mais no site">' +
+        '<strong>Quer saber mais?</strong>' +
+        '<ul class="sala-related-links">';
+      lesson.relatedLinks.forEach(function (link) {
+        if (!link || !link.href || !link.label) return;
+        relatedHtml +=
+          '<li><a href="' +
+          escapeHtml(link.href) +
+          '">' +
+          escapeHtml(link.label) +
+          '</a>' +
+          (link.hint
+            ? '<span class="sala-related-hint">' + escapeHtml(link.hint) + '</span>'
+            : '') +
+          '</li>';
+      });
+      relatedHtml += '</ul></aside>';
+    }
+
     var quizHtml = '';
     if (lesson.quiz && lesson.quiz.length) {
       quizHtml =
@@ -296,6 +318,7 @@
           wordsHtml +
           '</ul></aside>'
         : '') +
+      relatedHtml +
       '<p id="sala-done-badge" class="sala-lesson-status" ' +
       (done ? '' : 'hidden') +
       '>' +
