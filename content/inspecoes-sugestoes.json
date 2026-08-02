@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T05:03:11.846Z",
+  "updatedAt": "2026-08-02T05:11:13.066Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -199,7 +199,7 @@
       "titleEs": "Próximo artículo peer-reviewed (cola científica)",
       "tipo": "artigo",
       "priority": 3,
-      "status": "ideia",
+      "status": "fila",
       "why": "Manter ritmo de auditorias JAMA/Lancet-style após Albaugh — escolher DOI open access com utilidade educativa.",
       "whyEn": "Keep the JAMA/Lancet-style audit pace after Albaugh — pick an open-access DOI with educational value.",
       "whyEs": "Mantener el ritmo de auditorías estilo JAMA/Lancet tras Albaugh — elegir DOI open access con utilidad educativa.",
@@ -2117,6 +2117,61 @@
         "/posts/post-inspecao-arte-barriga-de-trigo.html"
       ],
       "notes": "Pessoas ≠ Legado; livro fica em Artes; proteína em Glúten."
+    },
+    {
+      "id": "artigo-brouns-trigo-2013",
+      "title": "Artigo — O trigo engorda e adoece? (Brouns 2013)",
+      "tipo": "artigo",
+      "priority": 2,
+      "status": "feita",
+      "why": "Contraponto científico a Barriga de Trigo / Davis.",
+      "suggestedSlug": "inspecao-artigo-brouns-trigo-obesidade-2013",
+      "doneHref": "/posts/post-inspecao-artigo-brouns-trigo-obesidade-2013.html",
+      "seriesHint": "artigos-cientificos"
+    },
+    {
+      "id": "artigo-wieser-trigo-2020",
+      "title": "Artigo — As duas faces do trigo (Wieser 2020)",
+      "tipo": "artigo",
+      "priority": 2,
+      "status": "feita",
+      "why": "Revisão Front. Nutr. sobre WRDs vs. marketing anti-trigo.",
+      "suggestedSlug": "inspecao-artigo-wieser-duas-faces-trigo-2020",
+      "doneHref": "/posts/post-inspecao-artigo-wieser-duas-faces-trigo-2020.html",
+      "seriesHint": "artigos-cientificos"
+    },
+    {
+      "id": "artigo-hall-upf-2019",
+      "title": "Artigo — Ultraprocessados e peso (Hall 2019)",
+      "tipo": "artigo",
+      "priority": 1,
+      "status": "feita",
+      "why": "RCT NIH — eixo causal da matriz chocolate industrial.",
+      "suggestedSlug": "inspecao-artigo-hall-ultraprocessados-2019",
+      "doneHref": "/posts/post-inspecao-artigo-hall-ultraprocessados-2019.html",
+      "seriesHint": "artigos-cientificos"
+    },
+    {
+      "id": "artigo-brooke-taylor-caseina-2017",
+      "title": "Artigo — Caseína A1 vs A2 (Brooke-Taylor 2017)",
+      "tipo": "artigo",
+      "priority": 2,
+      "status": "feita",
+      "why": "Revisão sistemática GI A1/A2 — elo leite/chocolate.",
+      "suggestedSlug": "inspecao-artigo-brooke-taylor-caseina-a1-a2-2017",
+      "doneHref": "/posts/post-inspecao-artigo-brooke-taylor-caseina-a1-a2-2017.html",
+      "seriesHint": "artigos-cientificos"
+    },
+    {
+      "id": "artigo-oms-acucares-2015",
+      "title": "Diretriz OMS — Açúcares livres (2015)",
+      "tipo": "artigo",
+      "priority": 1,
+      "status": "feita",
+      "why": "Norma global <10% / <5% energia — cana e chocolate.",
+      "suggestedSlug": "inspecao-artigo-oms-acucares-livres-2015",
+      "doneHref": "/posts/post-inspecao-artigo-oms-acucares-livres-2015.html",
+      "seriesHint": "artigos-cientificos"
     }
   ]
 }
