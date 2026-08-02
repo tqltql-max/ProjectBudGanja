@@ -218,7 +218,7 @@
     tip.hidden = false;
 
     var rect = wordEl.getBoundingClientRect();
-    var tipW = Math.min(260, global.innerWidth - 24);
+    var tipW = Math.min(320, global.innerWidth - 24);
     var left = Math.max(12, Math.min(rect.left, global.innerWidth - tipW - 12));
     var top = rect.bottom + 8;
     if (top + 110 > global.innerHeight) top = Math.max(12, rect.top - 110);
