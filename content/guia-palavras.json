@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T07:04:51.340Z",
+  "updatedAt": "2026-08-02T07:45:08.141Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -54,6 +54,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "acesso-gratuito-justica",
+      "word": "Acesso gratuito à justiça",
+      "simple": "Caminho sem honorários particulares — necessário, mas insuficiente sozinho contra a seletividade do estatuto paciente.",
+      "simpleEn": "Path without private fees — necessary but not enough alone against patient-status selectivity.",
+      "simpleEs": "Camino sin honorarios particulares — necesario pero insuficiente solo frente a la selectividad del estatuto paciente.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-defensoria-acesso.html"
     },
     {
       "id": "acucar",
@@ -156,6 +166,16 @@
       "href": "/biblioteca/inspecoes/#inspecoes-artes"
     },
     {
+      "id": "associacao-pacientes",
+      "word": "Associação de pacientes",
+      "simple": "Organização colectiva de acesso terapêutico à cannabis — actor híbrido (cuidado + direito + sanitário); distinta de farmácia e de tráfico.",
+      "simpleEn": "Collective organization for therapeutic cannabis access — hybrid actor (care + law + sanitary); distinct from pharmacy and trafficking.",
+      "simpleEs": "Organización colectiva de acceso terapéutico — actor híbrido; distinta de farmacia y de tráfico.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-associacoes-pacientes.html"
+    },
+    {
       "id": "autocultivo",
       "word": "Autocultivo",
       "simple": "Cultivo próprio da planta — no Brasil, zona de disputa entre saúde (HC/salvo-conduto) e risco penal sem amparo processual.",
@@ -164,6 +184,16 @@
       "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html"
+    },
+    {
+      "id": "autorizacao-sanitaria",
+      "word": "Autorização sanitária",
+      "simple": "Permissão no circuito ANVISA (produto, importação, estabelecimento) — distinta de salvo-conduto judicial (HC).",
+      "simpleEn": "Permission in the ANVISA circuit (product, import, establishment) — distinct from judicial HC safe-conduct.",
+      "simpleEs": "Permiso en el circuito ANVISA — distinto del salvoconducto judicial (HC).",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-rdc-autorizacao-sanitaria.html"
     },
     {
       "id": "ayahuasca",
@@ -526,6 +556,16 @@
       "href": "/plantas/copaiba/"
     },
     {
+      "id": "crf",
+      "word": "CRF",
+      "simple": "Conselho Regional de Farmácia — perímetro ético/profissional da dispensação; não autoriza cultivo nem substitui ANVISA ou HC.",
+      "simpleEn": "Regional Pharmacy Council — ethical/professional perimeter of dispensing; does not authorize grow or replace ANVISA/HC.",
+      "simpleEs": "Consejo Regional de Farmacia — perímetro ético/profesional de la dispensación; no autoriza cultivo ni sustituye ANVISA/HC.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-cannabis-farmaceuticos.html"
+    },
+    {
       "id": "cultivar",
       "word": "Cultivar",
       "simple": "Variedade agronómica selecionada — nas aulas, milhares de cultivares vs poucos quimiotipos úteis clinicamente. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -544,6 +584,26 @@
       "group": "tecnico",
       "fromTitle": true,
       "href": "/cultivo/"
+    },
+    {
+      "id": "cultivo-institucional",
+      "word": "Cultivo institucional",
+      "simple": "Cultivo/produção sob pessoa jurídica e regras ANVISA (marcos RDC) — distinto do autocultivo caseiro com HC individual.",
+      "simpleEn": "Grow/production under a legal entity and ANVISA rules (RDC frames) — distinct from home grow with individual HC.",
+      "simpleEs": "Cultivo/producción bajo persona jurídica y reglas ANVISA — distinto del autocultivo casero con HC individual.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-associacoes-pacientes.html"
+    },
+    {
+      "id": "defensoria-publica",
+      "word": "Defensoria Pública",
+      "simple": "Assistência jurídica gratuita do Estado — porta pública do HC/defesa; não apaga filtros de laudo, tempo e tipificação (porte×tráfico).",
+      "simpleEn": "State free legal aid — public door to HC/defense; does not erase report, time and charging filters.",
+      "simpleEs": "Asistencia jurídica gratuita del Estado — puerta pública al HC/defensa; no borra filtros de informe, tiempo y tipificación.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-defensoria-acesso.html"
     },
     {
       "id": "depressor",
@@ -566,6 +626,16 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "descriminalizacao",
+      "word": "Descriminalização",
+      "simple": "Mitigação ou atipicidade penal de certa conduta — no Brasil canábico, frequentemente o porte uso pessoal; ≠ legalização nem HC de cultivo.",
+      "simpleEn": "Reduced or atypical penal response — in Brazilian cannabis debate often personal possession; ≠ legalization or grow HC.",
+      "simpleEs": "Respuesta penal atenuada o atípica — en el debate cannábico brasileño suele ser el porte personal; ≠ legalización ni HC de cultivo.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-descriminalizacao.html"
+    },
+    {
       "id": "diamba",
       "word": "Diamba",
       "simple": "Nome afro-brasileiro antigo da cannabis — tradição oral, pouco usado hoje.",
@@ -584,6 +654,16 @@
       "group": "titulo",
       "fromTitle": true,
       "href": "/cultivo/"
+    },
+    {
+      "id": "dispensacao",
+      "word": "Dispensação",
+      "simple": "Acto farmacêutico de fornecer medicamento conforme receita e normas — na cannabis, circuito de produto regulado distinto de óleo artesanal/HC.",
+      "simpleEn": "Pharmacist act of supplying medicine per prescription and rules — for cannabis, regulated-product circuit distinct from artisanal oil/HC.",
+      "simpleEs": "Acto farmacéutico de suministrar medicamento según receta y normas — en cannabis, circuito de producto regulado distinto de aceite artesanal/HC.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-cannabis-farmaceuticos.html"
     },
     {
       "id": "divulgacao",
@@ -1076,6 +1156,16 @@
       "href": "/biblioteca/inspecoes/"
     },
     {
+      "id": "lei-11-343",
+      "word": "Lei 11.343/2006",
+      "simple": "Lei de Drogas — âncora tipológica onde cai quem não tem estatuto processual (HC) ou sanitário (ANVISA); não é o nome da planta.",
+      "simpleEn": "Drug Law — typological anchor for those without HC or ANVISA status; not the plant’s name.",
+      "simpleEs": "Ley de Drogas — ancla tipológica de quien no tiene estatuto de HC o ANVISA; no es el nombre de la planta.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-lei-11-343.html"
+    },
+    {
       "id": "lista-f",
       "word": "Lista F",
       "simple": "Âncora brasileira das listas oficiais de substâncias controladas — o laboratório indexa o tipo de linguagem, não o anexo integral.",
@@ -1326,6 +1416,16 @@
       "href": "/posts/post-inspecao-palavra-portaria.html"
     },
     {
+      "id": "porte",
+      "word": "Porte",
+      "simple": "Conduta tipicamente ligada ao consumo próprio — no debate canábico, eixo do Tema 506; distinta de tráfico e de cultivo amparado por HC.",
+      "simpleEn": "Conduct typically tied to personal use — in the cannabis debate, Tema 506 axis; distinct from trafficking and HC-shielded grow.",
+      "simpleEs": "Conducta ligada al consumo propio — eje del Tema 506; distinta de tráfico y de cultivo amparado por HC.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-porte-trafico.html"
+    },
+    {
       "id": "produtos-nocivos",
       "word": "Produtos nocivos",
       "simple": "Itens industriais ou alimentares que o laboratório marca como risco (açúcar, glúten, caseína…).",
@@ -1414,6 +1514,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-raiva.html"
+    },
+    {
+      "id": "rdc",
+      "word": "RDC",
+      "simple": "Resolução da Diretoria Colegiada (ANVISA) — género normativo sanitário; números mudam, o laboratório indexa o tipo.",
+      "simpleEn": "ANVISA Collegiate Board Resolution — sanitary normative genre; numbers change, the lab indexes the type.",
+      "simpleEs": "Resolución de la Dirección Colegiada (ANVISA) — género normativo sanitario; los números cambian.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-rdc-autorizacao-sanitaria.html"
     },
     {
       "id": "receituario",
@@ -1584,6 +1694,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "trafico",
+      "word": "Tráfico",
+      "simple": "Tipificação quando há indícios de mercancia — rótulo que, com porte, opera a seletividade na rua e no inquérito.",
+      "simpleEn": "Charging when commerce indicators appear — with possession, operates street/inquiry selectivity.",
+      "simpleEs": "Tipificación con indicios de mercancía — con porte, opera la selectividad en la calle y el sumario.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-porte-trafico.html"
     },
     {
       "id": "tricoma",

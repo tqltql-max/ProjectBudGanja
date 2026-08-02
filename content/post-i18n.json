@@ -1170,5 +1170,61 @@
     "excerptEs": "Guía para médicos: receta, informe, producto ANVISA/importación y papel en el HC — selectividad de quién llega a ser paciente. Vínculo con la guía para abogados. No es protocolo clínico.",
     "contentEn": "## Scope\n\nBudGanja **guide inspection for physicians**: semantic and access map for medicinal cannabis in Brazil — prescription, regulated products, import, the role of medical reports in HC, and selectivity in who becomes a **patient** on paper.\n\n> **Not a clinical protocol.** Not a substitute for medical boards or ANVISA. Indexing ≠ endorsement.\n\n## Core thesis\n\nDoctors do not “legalize the plant”; they **document therapeutic need**. Without that document plus a path (regulated product, import, or HC with a lawyer), the patient may stay in the illicit/police zone — selectivity that starts in the clinic.\n\n## Sibling guide\n\nProcess map for lawyers: [HC & selectivity — lawyers](/posts/post-inspecao-guia-hc-seletividade-advogados.html).\n\n## Status\n\n**Approved — first physician-facing guide sheet.**\n",
     "contentEs": "## Alcance\n\nInspección-guía BudGanja para **médicos**: mapa semántico y de acceso a cannabis medicinal en Brasil — prescripción, producto regulado, importación, papel del informe médico en el HC y selectividad de quién llega a ser **paciente** en el papel.\n\n> **No es protocolo clínico.** No sustituye consejos médicos ni ANVISA. Indexar ≠ respaldar.\n\n## Tesis central\n\nEl médico no «legaliza la planta»; **documenta necesidad terapéutica**. Sin ese documento + camino (producto, importación o HC con abogado), el paciente puede quedar en zona de ilícito — selectividad que empieza en la consulta.\n\n## Guía hermana\n\nMapa procesal para abogados: [HC y selectividad — abogados](/posts/post-inspecao-guia-hc-seletividade-advogados.html).\n\n## Estado\n\n**Aprobado — primera ficha-guía para médicos.**\n"
+  },
+  "inspecao-guia-cannabis-farmaceuticos": {
+    "titleEn": "Inspection: Medicinal cannabis guide — map for pharmacists (dispensing × selectivity)",
+    "titleEs": "Inspección: Guía cannabis medicinal — mapa para farmacéuticos (dispensación × selectividad)",
+    "excerptEn": "Guide for pharmacists: regulated product, import, pharmacy limits vs oil/HC, CRF/ANVISA and selectivity at the counter. Not a clinical protocol.",
+    "excerptEs": "Guía para farmacéuticos: producto regulado, importación, límites de farmacia vs aceite/HC, CRF/ANVISA y selectividad. No es protocolo clínico.",
+    "contentEn": "## Scope\n\nBudGanja **guide for pharmacists**: dispensing and sanitary literacy for cannabis — regulated product, import, pharmacy limits vs artisanal oil/HC, and selectivity of who reaches the counter with papers.\n\n> **Not a clinical protocol. Not legal advice.** Confirm CFF/CRF and ANVISA.\n\n## Status\n\n**Approved — first pharmacist guide sheet.**\n",
+    "contentEs": "## Alcance\n\nGuía BudGanja para **farmacéuticos**: dispensación y literacia sanitaria del cannabis — producto regulado, importación, límites de la farmacia vs aceite artesanal/HC.\n\n> **No es protocolo clínico ni asesoría jurídica.**\n\n## Estado\n\n**Aprobado — primera ficha-guía para farmacéuticos.**\n"
+  },
+  "inspecao-guia-associacoes-pacientes": {
+    "titleEn": "Inspection: Patient associations guide — institutional grow × selectivity",
+    "titleEs": "Inspección: Guía asociaciones de pacientes — cultivo institucional × selectividad",
+    "excerptEn": "Guide for associations: institutional grow/production (RDC/PJ), cost of membership, contrast with individual HC and selectivity. Not a licensing manual.",
+    "excerptEs": "Guía para asociaciones: cultivo/producción institucional (RDC/PJ), coste de membresía, contraste con HC individual y selectividad. No es manual de licenciamiento.",
+    "contentEn": "## Scope\n\nBudGanja **guide for patient associations**: institutional cultivation/production and the cost of becoming a patient in practice — between ANVISA RDC, individual HC and selectivity of membership.\n\n> **Not a licensing manual. Not legal advice.**\n\n## Status\n\n**Approved — first associations guide sheet.**\n",
+    "contentEs": "## Alcance\n\nGuía BudGanja para **asociaciones de pacientes**: cultivo/producción institucional y el coste de llegar a ser paciente de facto — entre RDC ANVISA, HC individual y selectividad.\n\n> **No es manual de licenciamiento ni asesoría jurídica.**\n\n## Estado\n\n**Aprobado — primera ficha-guía para asociaciones.**\n"
+  },
+  "inspecao-guia-defensoria-acesso": {
+    "titleEn": "Inspection: Public Defender & free-access guide — selectivity without fees",
+    "titleEs": "Inspección: Guía Defensoría y acceso gratuito — selectividad sin honorarios",
+    "excerptEn": "Guide for Public Defenders and those without private counsel: same HC/selectivity filters without private fees. Not legal advice.",
+    "excerptEs": "Guía para Defensoría y quien no tiene abogado particular: mismos filtros de HC/selectividad sin honorarios. No es asesoría.",
+    "contentEn": "## Scope\n\nBudGanja **guide for Public Defender offices and free legal aid**: mirror of the lawyers’ HC selectivity guide — same thesis, focusing on remaining filters when counsel is free (medical reports, time, stigma).\n\n> **Not legal advice. Not a pleading.**\n\n## Status\n\n**Approved — first Defensoria / free-access guide sheet.**\n",
+    "contentEs": "## Alcance\n\nGuía BudGanja para **Defensoría y acceso gratuito**: espejo de la guía HC para abogados — misma tesis, con foco en los filtros que quedan sin honorarios.\n\n> **No es asesoría jurídica ni escrito procesal.**\n\n## Estado\n\n**Aprobado — primera ficha-guía Defensoría / acceso gratuito.**\n"
+  },
+  "inspecao-palavra-lei-11-343": {
+    "titleEn": "Inspection: Law 11.343/2006 — Drug Law typological anchor",
+    "titleEs": "Inspección: Ley 11.343/2006 — ancla tipológica de la Ley de Drogas",
+    "excerptEn": "Anchor word: Law 11.343/2006 — typological backdrop for those without procedural/sanitary status. Not the full statute text.",
+    "excerptEs": "Palabra-ancla: Ley 11.343/2006 — fondo tipológico de quien no tiene estatuto procesal/sanitario. No es el texto íntegro.",
+    "contentEn": "## Scope\n\nEditorial inspection of **Lei 11.343/2006** in BudGanja’s **legal classification** layer.\n\n> **Method note:** independent BudGanja audit. **Not legal advice.** Indexing ≠ endorsement.\n\n## Working sense\n\nFederal Drug Law as typological backdrop — distinct from plant names, ANVISA lists and HC status.\n\n## Status\n\n**Approved — first sheet.**",
+    "contentEs": "## Alcance\n\nInspección editorial de **Lei 11.343/2006** en la capa de **clasificación legal** BudGanja.\n\n> **Nota metodológica:** auditoría independiente BudGanja. **No es asesoría jurídica.**\n\n## Sentido de trabajo\n\nLey federal de Drogas como fondo tipológico — distinta de nombres de planta, listas ANVISA y estatuto de HC.\n\n## Estado\n\n**Aprobado — primera ficha.**"
+  },
+  "inspecao-palavra-porte-trafico": {
+    "titleEn": "Inspection: Possession × Trafficking — street selectivity semantic pair",
+    "titleEs": "Inspección: Porte × Tráfico — par semántico de selectividad en la calle",
+    "excerptEn": "Pair: possession × trafficking — the same amount can be read as use or commerce by context, class and police gaze; link to Tema 506 and selectivity.",
+    "excerptEs": "Par: porte × tráfico — el mismo volumen puede leerse como uso o mercancía según contexto, clase y mirada policial.",
+    "contentEn": "## Scope\n\nEditorial inspection of **porte × tráfico** in BudGanja’s **legal classification** layer.\n\n> **Method note:** independent BudGanja audit. **Not legal advice.** Indexing ≠ endorsement.\n\n## Working sense\n\nPossession vs trafficking as street/selectivity labels — Tema 506 does not erase trafficking with commerce indicators.\n\n## Status\n\n**Approved — first sheet.**",
+    "contentEs": "## Alcance\n\nInspección editorial de **porte × tráfico** en la capa de **clasificación legal** BudGanja.\n\n> **Nota metodológica:** auditoría independiente BudGanja. **No es asesoría jurídica.**\n\n## Sentido de trabajo\n\nPorte vs tráfico como rótulos de calle/selectividad — el Tema 506 no borra el tráfico con indicios de mercancía.\n\n## Estado\n\n**Aprobado — primera ficha.**"
+  },
+  "inspecao-palavra-descriminalizacao": {
+    "titleEn": "Inspection: Decriminalization — penal atypicality ≠ legalization",
+    "titleEs": "Inspección: Descriminalización — atipicidad penal ≠ legalización",
+    "excerptEn": "Word: decriminalization — in Brazil often points to penal atypicality of possession (Tema 506); not legalization or grow authorization.",
+    "excerptEs": "Palabra: descriminalización — en Brasil suele apuntar a la atipicidad penal del porte (Tema 506); no es legalización ni autorización de cultivo.",
+    "contentEn": "## Scope\n\nEditorial inspection of **descriminalização** in BudGanja’s **legal classification** layer.\n\n> **Method note:** independent BudGanja audit. **Not legal advice.** Indexing ≠ endorsement.\n\n## Working sense\n\nDecriminalization as reduced/penal-atypical response — not legalization, RDC grow, or HC cultivation shield.\n\n## Status\n\n**Approved — first sheet.**",
+    "contentEs": "## Alcance\n\nInspección editorial de **descriminalização** en la capa de **clasificación legal** BudGanja.\n\n> **Nota metodológica:** auditoría independiente BudGanja. **No es asesoría jurídica.**\n\n## Sentido de trabajo\n\nDescriminalización como respuesta penal atenuada/atípica — no es legalización, cultivo RDC ni escudo de HC.\n\n## Estado\n\n**Aprobado — primera ficha.**"
+  },
+  "inspecao-palavra-rdc-autorizacao-sanitaria": {
+    "titleEn": "Inspection: RDC × Sanitary authorization — ANVISA access layer",
+    "titleEs": "Inspección: RDC × Autorización sanitaria — capa ANVISA del acceso",
+    "excerptEn": "Pair: RDC × sanitary authorization — ANVISA rules (incl. 2026 institutional grow frames) distinct from individual HC and possession decriminalization.",
+    "excerptEs": "Par: RDC × autorización sanitaria — normas ANVISA distintas del HC individual y de la descriminalización del porte.",
+    "contentEn": "## Scope\n\nEditorial inspection of **RDC × autorização sanitária** in BudGanja’s **legal classification** layer.\n\n> **Method note:** independent BudGanja audit. **Not legal advice.** Indexing ≠ endorsement.\n\n## Working sense\n\nANVISA RDC / sanitary authorization layer — distinct from HC safe-conduct and possession decriminalization.\n\n## Status\n\n**Approved — first sheet.**",
+    "contentEs": "## Alcance\n\nInspección editorial de **RDC × autorização sanitária** en la capa de **clasificación legal** BudGanja.\n\n> **Nota metodológica:** auditoría independiente BudGanja. **No es asesoría jurídica.**\n\n## Sentido de trabajo\n\nCapa ANVISA de RDC / autorización sanitaria — distinta del HC y de la descriminalización del porte.\n\n## Estado\n\n**Aprobado — primera ficha.**"
   }
 }
