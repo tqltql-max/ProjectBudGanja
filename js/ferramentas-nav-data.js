@@ -1092,7 +1092,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
               "icon": "🔍",
               "slug": "post-inspecao-arte-bom-dia-inverno",
-              "description": "Livro de Tamara Klink (Companhia das Letras): invernagem ártica cruzada com barco, mar, gelo, balde, caminho e todo o mapa BudGanja."
+              "description": "Bom dia, Inverno como hub: Vida, cultivo, plantas, animais, Palavras (gesto, verdade, medo…), Artes, Legado Klink e o léxico do gelo."
             },
             {
               "label": "Inspeção: Tristeza — a palavra azul que também cuida",
