@@ -44,6 +44,50 @@ function formatDateCompact(iso) {
   }
 }
 
+/**
+ * Últimas do laboratório: ordena por data, mas garante diversidade de categorias
+ * (ex.: uma pesquisa não fica enterrada sob várias inspeções do mesmo dia).
+ */
+function pickHomeLatestPosts(posts, limit) {
+  const max = Math.max(1, Number(limit) || 4);
+  const sorted = (posts || []).slice().sort(function (a, b) {
+    return new Date(b.date) - new Date(a.date);
+  });
+  if (!sorted.length) return [];
+
+  const windowSize = Math.min(sorted.length, 36);
+  const window = sorted.slice(0, windowSize);
+  const picked = [];
+  const used = Object.create(null);
+
+  function catOf(p) {
+    return String((p && p.category) || 'pesquisa');
+  }
+
+  function take(p) {
+    if (!p || !p.slug || used[p.slug]) return;
+    used[p.slug] = true;
+    picked.push(p);
+  }
+
+  ['pesquisa', 'inspecao', 'equipamento'].forEach(function (cat) {
+    if (picked.length >= max) return;
+    const hit = window.find(function (p) {
+      return catOf(p) === cat && !used[p.slug];
+    });
+    if (hit) take(hit);
+  });
+
+  sorted.forEach(function (p) {
+    if (picked.length >= max) return;
+    take(p);
+  });
+
+  return picked.sort(function (a, b) {
+    return new Date(b.date) - new Date(a.date);
+  });
+}
+
 function renderHomePostCards(container, posts) {
   if (!posts.length) {
     container.innerHTML =
@@ -53,7 +97,7 @@ function renderHomePostCards(container, posts) {
     return;
   }
 
-  container.innerHTML = posts.slice(0, 3).map((p) => {
+  container.innerHTML = posts.map((p) => {
     const href = normalizeAssetUrl(p.url);
     const loc = homeLocale();
     const title =
@@ -86,13 +130,12 @@ async function loadLatestPosts() {
 
   if (!posts.length) {
     try {
-      const res = await fetch('posts-public.json');
+      const res = await fetch('/posts-public.json');
       if (res.ok) posts = await res.json();
     } catch (e) { /* ignore */ }
   }
 
-  posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-  renderHomePostCards(container, posts);
+  renderHomePostCards(container, pickHomeLatestPosts(posts, 4));
 }
 
 async function loadSorteioBanner() {
