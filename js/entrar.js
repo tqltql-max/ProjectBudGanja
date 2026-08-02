@@ -98,6 +98,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       open = false;
     }
     document.body.classList.toggle('registration-closed', !open);
+    const subtitle = document.getElementById('entrar-subtitle');
+    if (subtitle) {
+      subtitle.textContent = open
+        ? 'Entre com Google ou e-mail/senha. Pode criar conta nova.'
+        : 'Contas existentes: Google ou e-mail/senha. Cadastros novos estão temporariamente indisponíveis.';
+    }
     if (banner) {
       banner.hidden = open;
       banner.textContent = message;
@@ -108,12 +114,18 @@ document.addEventListener('DOMContentLoaded', async () => {
         setLocalTab('login');
       }
     }
-    if (registerForm && !open) {
-      registerForm.hidden = true;
-      registerForm.setAttribute('aria-disabled', 'true');
+    if (registerForm) {
+      if (!open) {
+        registerForm.hidden = true;
+        registerForm.setAttribute('aria-disabled', 'true');
+      } else {
+        registerForm.removeAttribute('aria-disabled');
+      }
     }
-    if (googleLabel && !open) {
-      googleLabel.textContent = 'Entrar com Google (contas existentes)';
+    if (googleLabel) {
+      googleLabel.textContent = open
+        ? 'Entrar com Google'
+        : 'Entrar com Google (contas existentes)';
     }
     if (!open && noticeEl && !urlError) {
       showNotice(message);
