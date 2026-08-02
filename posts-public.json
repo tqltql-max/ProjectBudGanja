@@ -285,6 +285,25 @@
     "seriesLabel": "Ventilação · laboratório"
   },
   {
+    "title": "Pesquisa: Da molécula ao lixo — fármacos, industrialização e desigualdade",
+    "titleEn": "Research: From molecule to waste — pharmaceuticals, industry and inequality",
+    "titleEs": "Investigación: De la molécula a la basura — fármacos, industria y desigualdad",
+    "excerpt": "Mapa preliminar: drogas e derivados industriais no ciclo extrair→descartar — resíduos, exagero, desperdício e dano a plantas, animais e pessoas.",
+    "excerptEn": "Preliminary map: drugs and industrial derivatives in the take–make–waste cycle — waste, excess and harm to plants, animals and people.",
+    "excerptEs": "Mapa preliminar: drogas y derivados industriales en el ciclo extraer→desechar — residuos, exceso y daño a plantas, animales y personas.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "pesquisa-molecula-ao-lixo",
+    "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+    "date": "2026-08-02T12:00:00.000Z",
+    "filename": "posts/post-pesquisa-molecula-ao-lixo.html",
+    "coverImage": "/imagens/pesquisas/molecula-ao-lixo-cover.jpg",
+    "category": "pesquisa",
+    "series": "pesquisa-laboratorio",
+    "seriesOrder": 2,
+    "seriesLabel": "Laboratório"
+  },
+  {
     "title": "Inspeção: Artigo — O trigo engorda e adoece? (Brouns et al., 2013)",
     "titleEn": "Inspection: Article — Does wheat make us fat and sick? (Brouns et al., 2013)",
     "titleEs": "Inspección: Artículo — ¿El trigo engorda y enferma? (Brouns et al., 2013)",
