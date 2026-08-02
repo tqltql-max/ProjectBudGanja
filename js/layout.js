@@ -715,7 +715,7 @@ const DEFAULT_SITE = {
       megaAccordion: true,
       megaHeader: 'Biblioteca',
       megaHeaderHref: '/biblioteca/',
-      authOnly: true,
+      authOnly: false,
       groups: [{ title: '', items: [] }]
     },
     {

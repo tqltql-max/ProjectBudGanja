@@ -6,7 +6,7 @@ window.__BIBLIOTECA_NAV__ = {
   "megaAccordion": true,
   "megaHeader": "Biblioteca",
   "megaHeaderHref": "/biblioteca/",
-  "authOnly": true,
+  "authOnly": false,
   "groups": [
     {
       "title": "",
@@ -1373,6 +1373,15 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-rdc-autorizacao-sanitaria",
               "description": "Par: RDC × autorização sanitária — normas ANVISA (incl. marcos 2026 de cultivo/produção institucional) distintas de HC individual e de descriminalização do porte."
+            },
+            {
+              "label": "Inspeção: Guia meditação — modular o endocanabinoidoma (via endógena)",
+              "tileLabel": "Inspeção: Guia meditação — modu…",
+              "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-guia-meditacao-endocanabinoidoma",
+              "description": "Como a meditação, o yoga e o mindfulness entram no mapa XIV de modulação endógena do endocanabinoidoma (AEA/2-AG/BDNF). Elo Eliana Rodrigues · SEC. Não é protocolo clínico.",
+              "featured": true
             }
           ]
         },
