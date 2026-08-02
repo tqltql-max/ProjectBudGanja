@@ -1,0 +1,105 @@
+Catálogo de palavras de aviso — trilha Vida × modo Aprender
+Fonte: expressão «A vingança nunca é plena, mata a alma e a envenena»
+e rede emocional BudGanja (Raiva, Emoção, Venom, Vida).
+
+No modo Aprender, o traço pontilhado terracota marca tokens sem tradução
+no idioma activo. Este catálogo classifica o núcleo semântico da frase
+como aviso editorial — não é proibição de uso, é literacia emocional.
+
+Tom:
+  danger  = palavra perigosa (promessa tóxica / dano / retaliação)
+  caution = uso cauteloso (metáfora íntima, afecto, dose, aviso)
+
+---
+PERIGOSAS (tone: danger)
+
+1. vingança
+   Gloss: Retaliação que promete equilíbrio e cobra o preço em quem a cultiva.
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+2. envenena / envenenar
+   Gloss: Corromper por dentro — metáfora de dose que fica no próprio sujeito.
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+3. mata / matar
+   Gloss: Aqui = esvaziar o centro íntimo (não homicídio literal).
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+4. veneno
+   Gloss: Carga afectiva que ocupa o lugar do cuidado — ≠ toxina de planta.
+   Href: /posts/post-inspecao-filme-venom.html
+
+5. rancor
+   Gloss: Ressentimento guardado; o ditado trata-o como dose auto-ingerida.
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+6. ressentimento
+   Gloss: Ferida que continua a actuar depois do facto — nutriente do rancor.
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+7. retaliação
+   Gloss: Conta de «olho por olho» que a frase diz nunca fechar («nunca é plena»).
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+8. revidar
+   Gloss: Devolver o golpe — impulso que a oralidade avisa contra.
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+---
+USO CAUTELOSO (tone: caution)
+
+9. alma
+   Gloss: Centro íntimo (paz, carácter, humor de fundo) — não teologia dogmática.
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+10. espírito
+    Gloss: Ânimo / disposição interior afectada pelo rancor.
+    Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+11. raiva
+    Gloss: Fogo de limite e indignação — emoção com ofício, não vilania.
+    Href: /posts/post-inspecao-palavra-raiva.html
+
+12. emoção
+    Gloss: Nome do afecto antes da personagem; hub da sala de comando.
+    Href: /posts/post-inspecao-palavra-emocao.html
+
+13. justiça
+    Gloss: O que a vingança promete e não entrega — usar com precisão.
+    Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+14. plena
+    Gloss: Completa / cumprida — na frase: a vingança «nunca é plena».
+    Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+15. dose
+    Gloss: Quantidade que se ingere; metáfora toxicológica do ressentimento.
+    Href: /posts/post-inspecao-filme-venom.html
+
+16. aviso
+    Gloss: O que a frase faz ao ouvinte — alerta, não condenação do afecto.
+    Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+17. ditado / ditados
+    Gloss: Sabedoria em circulação (oralidade → TV → meme).
+    Href: /biblioteca/inspecoes/#inspecoes-expressoes
+
+18. expressão / expressões
+    Gloss: Unidade da série Expressões e Ditados — frase com método.
+    Href: /biblioteca/inspecoes/#inspecoes-expressoes
+
+19. metáfora
+    Gloss: Transporte de sentido (veneno afectivo ≠ toxina botânica).
+    Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+20. oralidade
+    Gloss: Circulação por voz, memória e refrão — antes e depois da TV.
+    Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+---
+Par tipográfico (já em Caracteres-tipograficos.txt)
+« » · — … → — usados nas citações desta frase e na trilha Vida.
+
+---
+Atalho de verificação
+node -e "const g=require('./js/learn-glossary.js'); const w=['vingança','alma','envenena','rancor','raiva']; w.forEach(k=>console.log(k, global.BudGanjaLearnGlossary&&BudGanjaLearnGlossary.findEntry(k)));"

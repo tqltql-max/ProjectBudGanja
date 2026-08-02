@@ -2,6 +2,9 @@ Catálogo de caracteres tipográficos especiais — trilha Vida
 Fonte: Mensagem do laboratório, história, poemas, diário e i18n (pt-BR / en / es).
 ASCII comum e acentos PT (á, ã, ç…) ficam de fora — só o que “parece diferente” no texto.
 
+Par semântico (não tipográfico): ver Vida/Palavras-aviso.txt — palavras perigosas / uso cauteloso
+do modo Aprender (vingança, alma, envenena…), com gloss no hover.
+
 1. «  U+00AB  LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
    Nome: aspas angulares / guillemets (abertura)
    Uso: citar falas e ênfase tipográfica («monstros», «Tu não precisas…»)

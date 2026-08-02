@@ -148,6 +148,35 @@ body.learn-mode-active .learn-mode-on {
     border-bottom-color: rgba(230, 160, 110, 1);
 }
 
+/* Palavras de aviso (catálogo Vida/Palavras-aviso.txt) — mesmo com tradução */
+.learn-mode-active .learn-word--danger,
+.learn-mode-on .learn-word--danger {
+    background: rgba(180, 64, 48, 0.16);
+    border-bottom: 2px solid rgba(200, 72, 56, 0.9);
+    border-radius: 0.12em;
+}
+
+.learn-mode-active .learn-word--danger:hover,
+.learn-mode-active .learn-word--danger:focus-visible,
+.learn-mode-on .learn-word--danger:hover,
+.learn-mode-on .learn-word--danger:focus-visible {
+    background: rgba(180, 64, 48, 0.28);
+}
+
+.learn-mode-active .learn-word--caution,
+.learn-mode-on .learn-word--caution {
+    background: rgba(196, 148, 64, 0.14);
+    border-bottom: 2px dashed rgba(196, 148, 64, 0.95);
+    border-radius: 0.12em;
+}
+
+.learn-mode-active .learn-word--caution:hover,
+.learn-mode-active .learn-word--caution:focus-visible,
+.learn-mode-on .learn-word--caution:hover,
+.learn-mode-on .learn-word--caution:focus-visible {
+    background: rgba(196, 148, 64, 0.26);
+}
+
 .learn-word.is-sheen,
 .learn-word.is-translated {
     background: linear-gradient(

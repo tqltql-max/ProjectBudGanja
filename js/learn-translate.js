@@ -242,19 +242,59 @@
     return t('pages.vida.learnNoTranslation', 'Sem tradução neste idioma');
   }
 
+  function toneDangerLabel() {
+    return t('pages.vida.learnToneDanger', 'Palavra perigosa — uso com cuidado');
+  }
+
+  function toneCautionLabel() {
+    return t('pages.vida.learnToneCaution', 'Uso cauteloso');
+  }
+
   function wordHasTranslation(g, src) {
     if (!g || !src || !state.lang) return false;
     if (typeof g.hasInLang === 'function') return g.hasInLang(src, state.lang);
     return !!g.lookup(src, state.lang, true);
   }
 
+  function wordTone(g, src) {
+    if (!g || !src) return '';
+    if (typeof g.toneOf === 'function') return g.toneOf(src) || '';
+    var entry = typeof g.findEntry === 'function' ? g.findEntry(src) : null;
+    return (entry && entry.tone) || '';
+  }
+
+  function wordGloss(g, src) {
+    if (!g || !src) return '';
+    if (typeof g.glossOf === 'function') return g.glossOf(src) || '';
+    var entry = typeof g.findEntry === 'function' ? g.findEntry(src) : null;
+    return (entry && entry.gloss) || '';
+  }
+
+  function buildWordTip(src, known, gloss, tone) {
+    var parts = [];
+    if (gloss) parts.push(gloss);
+    if (tone === 'danger') parts.push(toneDangerLabel());
+    else if (tone === 'caution') parts.push(toneCautionLabel());
+    if (!known) parts.push(noTranslationLabel());
+    return parts.join(' · ');
+  }
+
   function markWordCoverage(span, src) {
     var g = glossary();
     var known = wordHasTranslation(g, src);
+    var tone = wordTone(g, src);
+    var gloss = wordGloss(g, src);
     span.classList.toggle('learn-word--known', known);
     span.classList.toggle('learn-word--unknown', !known);
-    if (known) span.removeAttribute('title');
-    else span.setAttribute('title', noTranslationLabel());
+    span.classList.toggle('learn-word--danger', tone === 'danger');
+    span.classList.toggle('learn-word--caution', tone === 'caution');
+    if (tone) span.setAttribute('data-learn-tone', tone);
+    else span.removeAttribute('data-learn-tone');
+    if (gloss) span.setAttribute('data-learn-gloss', gloss);
+    else span.removeAttribute('data-learn-gloss');
+    var tip = buildWordTip(src, known, gloss, tone);
+    if (tip) span.setAttribute('title', tip);
+    else span.removeAttribute('title');
   }
 
   function refreshWordCoverage() {
@@ -273,11 +313,15 @@
     var src = wordEl.getAttribute('data-learn-src') || '';
     var g = glossary();
     var translated = g ? g.lookup(src, state.lang, true) : '';
+    var tone = wordTone(g, src);
+    var gloss = wordGloss(g, src);
+    var tip = buildWordTip(src, !!translated, gloss, tone);
     if (!translated) {
       wordEl.classList.add('is-sheen', 'is-unknown', 'learn-word--unknown');
       wordEl.classList.remove('learn-word--known');
-      wordEl.setAttribute('title', noTranslationLabel());
-      wordEl.setAttribute('aria-label', src + ' — ' + noTranslationLabel());
+      if (tip) wordEl.setAttribute('title', tip);
+      else wordEl.setAttribute('title', noTranslationLabel());
+      wordEl.setAttribute('aria-label', src + ' — ' + (tip || noTranslationLabel()));
       schedule(wordEl, function () {
         wordEl.classList.remove('is-sheen');
       }, 160);
@@ -285,7 +329,8 @@
     }
     wordEl.classList.remove('is-unknown', 'learn-word--unknown');
     wordEl.classList.add('learn-word--known');
-    wordEl.removeAttribute('title');
+    if (tip) wordEl.setAttribute('title', tip);
+    else wordEl.removeAttribute('title');
     morphTo(wordEl, translated);
   }
 
