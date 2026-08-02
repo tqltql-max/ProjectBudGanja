@@ -6510,17 +6510,67 @@ body[data-page="home"] .botao-home.has-hover-tip {
     color: var(--color-accent-light, #f0d060);
 }
 
+.cookie-consent-update {
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: rgba(212, 175, 55, 0.12);
+    border: 1px solid rgba(212, 175, 55, 0.28);
+}
+
+.cookie-consent-update-label {
+    display: block;
+    margin: 0 0 4px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-accent-light, #f0d060);
+}
+
+.cookie-consent-update-title {
+    margin: 0 0 4px;
+    font-size: 0.98rem;
+    font-weight: 650;
+    color: var(--color-text, #fff);
+}
+
+.cookie-consent-update-text {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: var(--color-text-muted, #ccc);
+}
+
+.cookie-consent-update-text a {
+    color: var(--color-accent-light, #f0d060);
+}
+
+.cookie-consent-copy {
+    display: grid;
+    gap: 12px;
+    min-width: 0;
+}
+
 .cookie-consent-actions {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: flex-end;
+    align-items: center;
+}
+
+.cookie-consent--update-only .cookie-consent-inner {
+    grid-template-columns: 1fr;
 }
 
 @media (min-width: 720px) {
     .cookie-consent-inner {
         grid-template-columns: 1fr auto;
         align-items: center;
+    }
+
+    .cookie-consent--update-only .cookie-consent-inner {
+        grid-template-columns: 1fr auto;
     }
 }
 

@@ -23,6 +23,7 @@
   var state = {
     lang: '',
     root: null,
+    scope: null,
     toolbar: null,
     tip: null,
     activeWord: null,
@@ -30,6 +31,12 @@
     reducedMotion: false,
     forcedPtBody: false
   };
+
+  var TITLE_SEL =
+    '.vida-hero-brand, .vida-hero h1, .vida-hero-sub, .vida-note, ' +
+    '.article-header h1, .article-header [data-post-title], .article-header .article-eyebrow, ' +
+    '#main-content > h1, .conteudo > h1, .conteudo-interno > h1, ' +
+    'h1, h2, h3, h4, h5';
 
   function glossary() {
     return global.BudGanjaLearnGlossary || null;
@@ -334,6 +341,7 @@
   }
 
   function walk(root) {
+    if (!root) return;
     markPhraseSources(root);
     var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode: function (node) {
@@ -354,14 +362,56 @@
     nodes.forEach(wrapTextNode);
   }
 
-  function unwrapRoot(root) {
-    if (!root) return;
-    root.querySelectorAll('.learn-word').forEach(function (el) {
+  function collectWalkRoots() {
+    var roots = [];
+    var seen = typeof WeakSet !== 'undefined' ? new WeakSet() : null;
+
+    function add(el) {
+      if (!el || el.nodeType !== 1) return;
+      if (el.closest && el.closest('.learn-toolbar, [data-learn-skip], a.botao')) return;
+      if (seen) {
+        if (seen.has(el)) return;
+        seen.add(el);
+      } else if (roots.indexOf(el) !== -1) {
+        return;
+      }
+      roots.push(el);
+    }
+
+    add(state.root);
+
+    // Títulos e cabeçalhos (hero, posts, secções) — mesmo fora do data-learn-root.
+    var scope = state.scope || document.getElementById('main-content') || document.body;
+    if (scope && scope.querySelectorAll) {
+      scope.querySelectorAll(TITLE_SEL).forEach(add);
+    }
+
+    return roots;
+  }
+
+  function walkAll() {
+    collectWalkRoots().forEach(walk);
+    if (state.scope) state.scope.classList.add('learn-mode-on');
+    if (state.root) state.root.classList.add('learn-mode-on');
+  }
+
+  function unwrapAll() {
+    var scope = state.scope || state.root || document;
+    scope.querySelectorAll('.learn-word').forEach(function (el) {
       clearTimers(el);
       var text = el.getAttribute('data-learn-src') || el.textContent || '';
       el.replaceWith(document.createTextNode(text));
     });
-    root.normalize();
+    if (scope.normalize) scope.normalize();
+    if (state.scope) state.scope.classList.remove('learn-mode-on');
+    if (state.root) state.root.classList.remove('learn-mode-on');
+  }
+
+  function forcePtTitles() {
+    document.querySelectorAll('[data-post-title]').forEach(function (el) {
+      var pt = (el.getAttribute('data-title-pt') || '').trim();
+      if (pt) el.textContent = pt;
+    });
   }
 
   function syncToolbar() {
@@ -429,25 +479,23 @@
     state.reducedMotion = prefersReducedMotion();
     hideTip();
 
-    if (!state.root) return;
+    if (!state.root && !state.scope) return;
 
     if (!next) {
-      state.root.classList.remove('learn-mode-on');
       document.body.classList.remove('learn-mode-active');
-      unwrapRoot(state.root);
+      unwrapAll();
       restorePostBodies();
     } else {
-      if (state.root.getAttribute('data-post-body') != null || document.querySelector('[data-post-body]')) {
+      if (state.root && (state.root.getAttribute('data-post-body') != null || document.querySelector('[data-post-body]'))) {
         var pt = forcePtPostBody();
         if (pt && pt !== state.root) {
-          unwrapRoot(state.root);
           state.root = pt;
           if (!pt.hasAttribute('data-learn-root')) pt.setAttribute('data-learn-root', '');
         }
+        forcePtTitles();
       }
-      unwrapRoot(state.root);
-      walk(state.root);
-      state.root.classList.add('learn-mode-on');
+      unwrapAll();
+      walkAll();
       document.body.classList.add('learn-mode-active');
     }
     syncToolbar();
@@ -456,7 +504,10 @@
   function onPointerOver(e) {
     if (!state.lang) return;
     var word = e.target && e.target.closest ? e.target.closest('.learn-word') : null;
-    if (!word || !state.root.contains(word)) return;
+    if (!word) return;
+    if (state.scope && !state.scope.contains(word) && state.root && !state.root.contains(word)) {
+      return;
+    }
     activateWord(word);
   }
 
@@ -575,28 +626,30 @@
     if (!root) return;
 
     state.root = root;
+    state.scope = document.getElementById('main-content') || root;
     state.reducedMotion = prefersReducedMotion();
     state.toolbar = buildToolbar();
     placeToolbar(root);
 
     state.toolbar.addEventListener('click', onToolbarClick);
-    root.addEventListener('pointerover', onPointerOver);
-    root.addEventListener('pointerout', onPointerOut);
-    root.addEventListener('focusin', onFocusIn);
-    root.addEventListener('focusout', onFocusOut);
+    // Eventos no main: cobre corpo + títulos do hero/header.
+    state.scope.addEventListener('pointerover', onPointerOver);
+    state.scope.addEventListener('pointerout', onPointerOut);
+    state.scope.addEventListener('focusin', onFocusIn);
+    state.scope.addEventListener('focusout', onFocusOut);
 
     global.addEventListener('budganja:locale-change', function () {
       if (state.lang) {
         var keep = state.lang;
         state.lang = '';
-        unwrapRoot(state.root);
+        unwrapAll();
         state.lang = keep;
         if (document.querySelector('[data-post-body]')) {
           var pt = forcePtPostBody();
           if (pt) state.root = pt;
+          forcePtTitles();
         }
-        walk(state.root);
-        state.root.classList.add('learn-mode-on');
+        walkAll();
       }
       syncToolbar();
     });

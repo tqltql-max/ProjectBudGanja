@@ -237,13 +237,24 @@ if (!fs.existsSync(heroJpgPath)) {
   console.warn('stamp-assets: background-hero.jpg em falta — corre scripts/optimize-hero.js');
 }
 
+let siteUpdate = null;
+const siteUpdatePath = path.join(ROOT, 'content', 'site-update.json');
+if (fs.existsSync(siteUpdatePath)) {
+  try {
+    siteUpdate = JSON.parse(fs.readFileSync(siteUpdatePath, 'utf8'));
+  } catch (e) {
+    console.warn('stamp-assets: site-update.json inválido —', e.message);
+  }
+}
+
 fs.writeFileSync(
   versionPath,
   JSON.stringify({
     version: ASSET_VERSION,
     hero: heroCacheKey,
     heroSize: heroWidth && heroHeight ? { width: heroWidth, height: heroHeight } : null,
-    builtAt: new Date().toISOString()
+    builtAt: new Date().toISOString(),
+    update: siteUpdate
   }, null, 2) + '\n',
   'utf8'
 );

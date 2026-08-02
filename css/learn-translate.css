@@ -75,12 +75,24 @@ body[data-page="vida"] .learn-toolbar {
     color: rgba(244, 237, 216, 0.72);
 }
 
-.learn-mode-on .learn-word {
+.learn-mode-on .learn-word,
+.learn-mode-active .learn-word {
     display: inline;
     cursor: pointer;
     border-radius: 0.2em;
     padding: 0 0.05em;
     transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Títulos dourados: garantir que as palavras traduzíveis recebem hover/cor */
+.learn-mode-active h1 .learn-word,
+.learn-mode-active h2 .learn-word,
+.learn-mode-active h3 .learn-word,
+.learn-mode-active h4 .learn-word,
+.learn-mode-active .vida-hero-brand .learn-word,
+.learn-mode-active .article-eyebrow .learn-word {
+    -webkit-text-fill-color: inherit;
+    color: inherit;
 }
 
 .learn-mode-on .learn-word:hover,

@@ -1,0 +1,24 @@
+{
+  "id": "learn-mode-titles-2026-08",
+  "title": {
+    "pt-BR": "O que está a ser atualizado",
+    "en": "What’s being updated",
+    "es": "Qué se está actualizando"
+  },
+  "text": {
+    "pt-BR": "Modo Aprender idiomas na Vida e nas inspeções: passe o rato ou o dedo pelas palavras e títulos para ver inglês ou espanhol, com brilho dourado e tip da frase.",
+    "en": "Learn languages mode on Vida and inspections: hover or tap words and titles to see English or Spanish, with a gold sheen and phrase tip.",
+    "es": "Modo Aprender idiomas en Vida e inspecciones: pasa el cursor o el dedo por palabras y títulos para ver inglés o español, con brillo dorado y tip de la frase."
+  },
+  "cta": {
+    "pt-BR": "Entendi",
+    "en": "Got it",
+    "es": "Entendido"
+  },
+  "linkHref": "/Vida/",
+  "linkLabel": {
+    "pt-BR": "Abrir Vida",
+    "en": "Open Vida",
+    "es": "Abrir Vida"
+  }
+}
