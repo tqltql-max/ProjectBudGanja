@@ -46,6 +46,21 @@
       .replace(/"/g, '&quot;');
   }
 
+  function isMantraStanza(stanza) {
+    var t = String(stanza || '')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .toLowerCase()
+      .replace(/^[¡!]+/, '')
+      .replace(/[!¡.]+$/g, '');
+    return (
+      t === 'faça o melhor' ||
+      t === 'faca o melhor' ||
+      t === 'do your best' ||
+      t === 'haz lo mejor'
+    );
+  }
+
   /** Corpo do poema → stanzas com <br> por verso (texto wrappável pelo learn-mode). */
   function poemHtml(body) {
     var text = String(body || '').replace(/\r\n/g, '\n').trim();
@@ -56,7 +71,10 @@
         var lines = stanza.split('\n').map(function (line) {
           return escapeHtml(line);
         });
-        return '<p class="vida-poem-stanza">' + lines.join('<br>') + '</p>';
+        var cls = isMantraStanza(stanza)
+          ? 'vida-poem-stanza vida-poem-stanza--mantra'
+          : 'vida-poem-stanza';
+        return '<p class="' + cls + '">' + lines.join('<br>') + '</p>';
       })
       .join('');
   }
