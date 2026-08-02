@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T22:00:00.000Z",
+  "updatedAt": "2026-08-02T04:07:47.081Z",
   "disclaimer": "Fichas educacionais sobre animais, criação e produtos associados. Não substituem orientação veterinária, zootécnica nem aconselhamento alimentar profissional.",
   "animals": [
     {
@@ -10,10 +10,23 @@
       "familia": "Phasianidae",
       "hubCategory": "producao",
       "summary": "Ave de criação: ovo e carne frescos versus nuggets, embutidos e ultraprocessados de frango da indústria.",
-      "partsUsed": ["Ovo fresco", "Carne", "Penas (não alimentar)"],
-      "traditionalUses": ["Alimento de baixo processamento", "Criação familiar e granja", "Ciclo ovo-pintainho-galinha"],
+      "partsUsed": [
+        "Ovo fresco",
+        "Carne",
+        "Penas (não alimentar)"
+      ],
+      "traditionalUses": [
+        "Alimento de baixo processamento",
+        "Criação familiar e granja",
+        "Ciclo ovo-pintainho-galinha"
+      ],
       "cautions": "Separar o animal e o ovo/carne frescos dos derivados industriais ultraprocessados. Conteúdo educacional — não é protocolo nutricional.",
-      "tags": ["producao", "ovos", "alimento", "aves"],
+      "tags": [
+        "producao",
+        "ovos",
+        "alimento",
+        "aves"
+      ],
       "relatedUnifesp": false,
       "cover": null,
       "relatedInspections": [
@@ -33,13 +46,32 @@
       "familia": "Bovidae",
       "hubCategory": "producao",
       "summary": "Bovino de leite e carne: alimento fresco e tradição agrária versus carnes processadas e laticínios ultraprocessados.",
-      "partsUsed": ["Leite", "Carne", "Couro (não alimentar)"],
-      "traditionalUses": ["Leite e queijos artesanais", "Carne fresca", "Tração e paisagem rural histórica"],
+      "partsUsed": [
+        "Leite",
+        "Carne",
+        "Couro (não alimentar)"
+      ],
+      "traditionalUses": [
+        "Leite e queijos artesanais",
+        "Carne fresca",
+        "Tração e paisagem rural histórica"
+      ],
       "cautions": "O animal não é o vilão: o foco editorial é dose, processamento e padrões industriais. Consulte profissionais de saúde e veterinária quando couber.",
-      "tags": ["producao", "leite", "carne", "alimento"],
+      "tags": [
+        "producao",
+        "leite",
+        "carne",
+        "alimento"
+      ],
       "relatedUnifesp": false,
       "cover": null,
       "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-caseina.html",
+          "label": "Inspeção: Caseína — leite bovino e proteína nociva ao organismo",
+          "labelEn": "Inspection: Casein — cow’s milk and a protein harmful to the body",
+          "labelEs": "Inspección: Caseína — leche bovina y proteína nociva para el organismo"
+        },
         {
           "href": "/posts/post-inspecao-derivado-vaca.html",
           "label": "Inspeção: Derivados da vaca — carnes processadas e laticínios industriais",
@@ -56,10 +88,22 @@
       "familia": "Suidae",
       "hubCategory": "producao",
       "summary": "Suíno: carne fresca e charcutaria tradicional versus embutidos industriais ricos em sal, nitritos e ultraprocessamento.",
-      "partsUsed": ["Carne", "Gordura (banha)"],
-      "traditionalUses": ["Carne fresca", "Presunto e linguiça artesanal", "Banha culinária tradicional"],
+      "partsUsed": [
+        "Carne",
+        "Gordura (banha)"
+      ],
+      "traditionalUses": [
+        "Carne fresca",
+        "Presunto e linguiça artesanal",
+        "Banha culinária tradicional"
+      ],
       "cautions": "Distinguir criação e peça fresca de embutidos industriais. Conteúdo educacional.",
-      "tags": ["producao", "carne", "alimento", "embutidos"],
+      "tags": [
+        "producao",
+        "carne",
+        "alimento",
+        "embutidos"
+      ],
       "relatedUnifesp": false,
       "cover": null,
       "relatedInspections": [
@@ -79,10 +123,22 @@
       "familia": "Cichlidae",
       "hubCategory": "producao",
       "summary": "Peixe de aquicultura comum no Brasil: filé fresco versus empanados, nuggets e ultraprocessados de peixe.",
-      "partsUsed": ["Filé", "Peixe inteiro"],
-      "traditionalUses": ["Alimento fresco", "Aquicultura familiar e industrial", "Proteína de baixo processamento"],
+      "partsUsed": [
+        "Filé",
+        "Peixe inteiro"
+      ],
+      "traditionalUses": [
+        "Alimento fresco",
+        "Aquicultura familiar e industrial",
+        "Proteína de baixo processamento"
+      ],
       "cautions": "A tilápia fresca não é o mesmo produto que o empanado industrial. Avaliar origem e processamento.",
-      "tags": ["producao", "peixe", "aquicultura", "alimento"],
+      "tags": [
+        "producao",
+        "peixe",
+        "aquicultura",
+        "alimento"
+      ],
       "relatedUnifesp": false,
       "cover": null,
       "relatedInspections": [
@@ -102,10 +158,24 @@
       "familia": "Apidae",
       "hubCategory": "producao",
       "summary": "Polinizadora e produtora de mel, própolis e cera — distinguir mel de qualidade de mel adulterado e xaropes industriais.",
-      "partsUsed": ["Mel", "Própolis", "Cera", "Geleia real"],
-      "traditionalUses": ["Mel como alimento", "Própolis na tradição popular", "Polinização agrícola"],
+      "partsUsed": [
+        "Mel",
+        "Própolis",
+        "Cera",
+        "Geleia real"
+      ],
+      "traditionalUses": [
+        "Mel como alimento",
+        "Própolis na tradição popular",
+        "Polinização agrícola"
+      ],
       "cautions": "Mel para menores de 1 ano é contraindicado (botulismo). Mel adulterado com xaropes é o desvio industrial a inspecionar.",
-      "tags": ["producao", "mel", "polinizacao", "abelha"],
+      "tags": [
+        "producao",
+        "mel",
+        "polinizacao",
+        "abelha"
+      ],
       "relatedUnifesp": false,
       "cover": null,
       "relatedInspections": [
@@ -124,10 +194,22 @@
       "nomeCientifico": "Canis lupus familiaris",
       "familia": "Canidae",
       "summary": "Companheiro humano: bem-estar, alimentação responsável e distância crítica da indústria de pet food ultraprocessada de baixa qualidade.",
-      "partsUsed": ["Companhia", "Trabalho (guarda, pastoreio, assistência)"],
-      "traditionalUses": ["Companhia", "Guarda", "Pastoreio", "Apoio a pessoas"],
+      "partsUsed": [
+        "Companhia",
+        "Trabalho (guarda, pastoreio, assistência)"
+      ],
+      "traditionalUses": [
+        "Companhia",
+        "Guarda",
+        "Pastoreio",
+        "Apoio a pessoas"
+      ],
       "cautions": "Bem-estar animal e nutrição veterinária têm primazia. Rações e petiscos industriais variam muito em qualidade — ler rótulos e consultar veterinário.",
-      "tags": ["companhia", "pet", "bem-estar"],
+      "tags": [
+        "companhia",
+        "pet",
+        "bem-estar"
+      ],
       "relatedUnifesp": false,
       "cover": null,
       "relatedInspections": []
@@ -139,10 +221,19 @@
       "nomeCientifico": "Felis catus",
       "familia": "Felidae",
       "summary": "Felino doméstico: companhia, etologia e cuidados — com atenção a toxinas domésticas e à indústria pet.",
-      "partsUsed": ["Companhia"],
-      "traditionalUses": ["Companhia", "Controlo de roedores em contexto rural histórico"],
+      "partsUsed": [
+        "Companhia"
+      ],
+      "traditionalUses": [
+        "Companhia",
+        "Controlo de roedores em contexto rural histórico"
+      ],
       "cautions": "Várias plantas e alimentos humanos são tóxicos para gatos (ex.: lírios, chocolate, cebola). Rações e petiscos: critério veterinário.",
-      "tags": ["companhia", "pet", "bem-estar"],
+      "tags": [
+        "companhia",
+        "pet",
+        "bem-estar"
+      ],
       "relatedUnifesp": false,
       "cover": null,
       "relatedInspections": []
@@ -154,10 +245,22 @@
       "nomeCientifico": "Equus ferus caballus",
       "familia": "Equidae",
       "summary": "Equídeo de trabalho, desporto e companhia — tradição rural brasileira e ética do bem-estar equino.",
-      "partsUsed": ["Trabalho", "Desporto", "Companhia"],
-      "traditionalUses": ["Tração e transporte histórico", "Pastoreio", "Hipismo e lazer"],
+      "partsUsed": [
+        "Trabalho",
+        "Desporto",
+        "Companhia"
+      ],
+      "traditionalUses": [
+        "Tração e transporte histórico",
+        "Pastoreio",
+        "Hipismo e lazer"
+      ],
       "cautions": "Bem-estar, casqueamento e nutrição equina exigem profissionais. Conteúdo educacional.",
-      "tags": ["companhia", "trabalho", "rural"],
+      "tags": [
+        "companhia",
+        "trabalho",
+        "rural"
+      ],
       "relatedUnifesp": false,
       "cover": null,
       "relatedInspections": []

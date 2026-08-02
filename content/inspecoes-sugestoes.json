@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T03:02:45.111Z",
+  "updatedAt": "2026-08-02T04:07:47.079Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2017,6 +2017,36 @@
         "/posts/post-inspecao-palavra-coelho.html"
       ],
       "notes": "Palavra ≠ monografia zoológica; catálogo em /animais/."
+    },
+    {
+      "id": "derivado-caseina",
+      "title": "Caseína — leite bovino e proteína nociva",
+      "titleEn": "Casein — cow’s milk and harmful protein",
+      "titleEs": "Caseína — leche bovina y proteína nociva",
+      "tipo": "derivado",
+      "priority": 1,
+      "status": "feita",
+      "why": "Produto nocivo: caseína / leite — A1, BCM-7 e ultraprocessados lácteos.",
+      "whyEn": "Harmful product: casein / milk — A1, BCM-7 and ultra-processed dairy.",
+      "whyEs": "Producto nocivo: caseína / leche — A1, BCM-7 y lácteos ultraprocesados.",
+      "suggestedSlug": "inspecao-derivado-caseina",
+      "doneHref": "/posts/post-inspecao-derivado-caseina.html",
+      "seriesHint": "animais-derivados-risco"
+    },
+    {
+      "id": "derivado-gluten",
+      "title": "Glúten — trigo e proteína nociva",
+      "titleEn": "Gluten — wheat and harmful protein",
+      "titleEs": "Gluten — trigo y proteína nociva",
+      "tipo": "derivado",
+      "priority": 1,
+      "status": "feita",
+      "why": "Produto nocivo: glúten — celíaca, sensibilidade e ultraprocessados de farinha.",
+      "whyEn": "Harmful product: gluten — celiac, sensitivity and ultra-processed flour.",
+      "whyEs": "Producto nocivo: gluten — celiaquía, sensibilidad y ultraprocesados de harina.",
+      "suggestedSlug": "inspecao-derivado-gluten",
+      "doneHref": "/posts/post-inspecao-derivado-gluten.html",
+      "seriesHint": "plantas-derivados-risco"
     }
   ]
 }
