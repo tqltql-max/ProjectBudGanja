@@ -6581,6 +6581,34 @@ body[data-page="home"] .botao-home.has-hover-tip {
     border: 1px solid rgba(212, 175, 55, 0.28);
 }
 
+.cookie-consent-update--brisa {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    align-items: start;
+    background:
+      linear-gradient(135deg, rgba(124, 179, 66, 0.14), rgba(212, 175, 55, 0.1) 55%, rgba(40, 90, 120, 0.12));
+    border-color: rgba(124, 179, 66, 0.35);
+}
+
+.cookie-consent-update-media {
+    flex-shrink: 0;
+}
+
+.cookie-consent-update-avatar {
+    display: block;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(223, 194, 98, 0.55);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.cookie-consent-update-body {
+    min-width: 0;
+}
+
 .cookie-consent-update-label {
     display: block;
     margin: 0 0 4px;
@@ -6605,8 +6633,37 @@ body[data-page="home"] .botao-home.has-hover-tip {
     color: var(--color-text-muted, #ccc);
 }
 
-.cookie-consent-update-text a {
+.cookie-consent-update-text a,
+.cookie-consent-update-links a {
     color: var(--color-accent-light, #f0d060);
+}
+
+.cookie-consent-update-quote {
+    margin: 10px 0 0;
+    padding: 8px 0 0 10px;
+    border-left: 3px solid rgba(223, 194, 98, 0.55);
+}
+
+.cookie-consent-update-quote p {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.4;
+    font-style: italic;
+    color: var(--color-text, #f4efe6);
+}
+
+.cookie-consent-update-quote cite {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.75rem;
+    font-style: normal;
+    color: var(--color-text-muted, #c8b8a0);
+}
+
+.cookie-consent-update-links {
+    margin: 10px 0 0;
+    font-size: 0.88rem;
+    line-height: 1.4;
 }
 
 .cookie-consent-copy {

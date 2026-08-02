@@ -157,10 +157,37 @@
 
     var detailsHtml = '';
     if (whatText) {
+      var whatLabel = pickLocalized(
+        updateInfo && updateInfo.label,
+        t('common.siteUpdateAria', 'Novidades do site')
+      );
+      var whatQuote = pickLocalized(updateInfo && updateInfo.quote, '');
+      var whatCredit = pickLocalized(updateInfo && updateInfo.quoteCredit, '');
+      var voice = updateInfo && updateInfo.voice ? String(updateInfo.voice) : '';
+      var avatar = updateInfo && updateInfo.avatar ? String(updateInfo.avatar) : '';
+      var quoteHtml = whatQuote
+        ? '<blockquote class="cookie-consent-update-quote"><p>«' +
+          escapeHtml(whatQuote) +
+          '»</p>' +
+          (whatCredit ? '<cite>' + escapeHtml(whatCredit) + '</cite>' : '') +
+          '</blockquote>'
+        : '';
+      var avatarHtml = avatar
+        ? '<div class="cookie-consent-update-media"><img class="cookie-consent-update-avatar" src="' +
+          escapeHtml(avatar) +
+          '" alt="" width="56" height="56" decoding="async"></div>'
+        : '';
+      var updClass =
+        'cookie-consent-update' +
+        (voice === 'dj-brisa' ? ' cookie-consent-update--brisa' : '');
       detailsHtml =
-        '<div class="cookie-consent-update">' +
+        '<div class="' +
+        updClass +
+        '">' +
+        avatarHtml +
+        '<div class="cookie-consent-update-body">' +
         '<span class="cookie-consent-update-label">' +
-        escapeHtml(t('common.siteUpdateAria', 'Novidades do site')) +
+        escapeHtml(whatLabel) +
         '</span>' +
         '<p class="cookie-consent-update-title">' +
         escapeHtml(whatTitle) +
@@ -168,7 +195,8 @@
         '<p class="cookie-consent-update-text">' +
         escapeHtml(whatText) +
         '</p>' +
-        '</div>';
+        quoteHtml +
+        '</div></div>';
     }
 
     updatePromptEl.innerHTML =
