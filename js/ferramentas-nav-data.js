@@ -125,6 +125,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Mapa preliminar: drogas e derivados industriais no ciclo extrair→descartar — resíduos, exagero, desperdício e dano a plantas, animais e pessoas."
             },
             {
+              "label": "Pesquisa: Insumos orgânicos vs industrializados — influência no fruto final",
+              "tileLabel": "Pesquisa: Insumos orgânicos vs …",
+              "href": "/posts/post-pesquisa-insumos-organicos-vs-industrializados-fruto.html",
+              "icon": "📋",
+              "slug": "post-pesquisa-insumos-organicos-vs-industrializados-fruto",
+              "description": "Mapa preliminar: como fertilizantes e defensivos orgânicos vs industriais alteram açúcar, aroma, antioxidantes e resíduos no fruto — mecanismos, meta-análises e limites."
+            },
+            {
               "label": "Super Solo: Guia de Uso",
               "tileLabel": "Super Solo: Guia de Uso",
               "href": "/posts/post-guia-calculadora-super-solo.html",
@@ -165,6 +173,14 @@ window.__BIBLIOTECA_NAV__ = {
               "slug": "inspecoes",
               "featured": true,
               "description": "Canais, equipamentos, insumos e formação."
+            },
+            {
+              "label": "Inspeção: A vingança nunca é plena — mata a alma e a envenena",
+              "tileLabel": "Inspeção: A vingança nunca é pl…",
+              "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-vinganca-mata-alma-envenena",
+              "description": "Expressões: «A vingança nunca é plena, mata a alma e a envenena» — ditado popular via Seu Madruga (*Chaves*); o rancor como veneno que o próprio sujeito ingere."
             },
             {
               "label": "Inspeção: Caseína — leite bovino e proteína nociva ao organismo",
@@ -919,6 +935,22 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Goiaba (*Psidium guajava L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
+              "label": "Inspeção: Ramón Valdés — Seu Madruga e os devidos méritos",
+              "tileLabel": "Inspeção: Ramón Valdés — Seu Ma…",
+              "href": "/posts/post-inspecao-figura-ramon-valdes.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-ramon-valdes",
+              "description": "Pessoas: homenagem a Ramón Valdés (1923–1988) — o actor que deu dignidade cómica ao Seu Madruga; ofício, ética sem sermão e legado infantil latino-americano."
+            },
+            {
+              "label": "Inspeção: Álvares de Azevedo — homenagem ao poeta da Lira e elo com Lágrimas da Vida",
+              "tileLabel": "Inspeção: Álvares de Azevedo — …",
+              "href": "/posts/post-inspecao-figura-alvares-de-azevedo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-alvares-de-azevedo",
+              "description": "Pessoas × Artes: homenagem a Álvares de Azevedo (1831–1852) — ofício ultrarromântico, com elo principal no poema Lágrimas da Vida; distinto do Legado canábico."
+            },
+            {
               "label": "Inspeção: Venom — o filme de 2018, a simbiose e o «nós»",
               "tileLabel": "Inspeção: Venom — o filme de 20…",
               "href": "/posts/post-inspecao-filme-venom.html",
@@ -949,6 +981,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-cacau",
               "description": "Relatório educacional de Cacau (*Theobroma cacao L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: Lágrimas da Vida — o poema de Álvares de Azevedo e a máscara que chora",
+              "tileLabel": "Inspeção: Lágrimas da Vida — o …",
+              "href": "/posts/post-inspecao-arte-lagrimas-da-vida.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-lagrimas-da-vida",
+              "description": "Artes · poesia: «Lágrimas da Vida» (Álvares de Azevedo, *Lira dos Vinte Anos*) — ultrarromantismo, lágrima escondida e elo com a trilha Vida."
             },
             {
               "label": "Inspeção: Coelho — a palavra da toca e da entrada na investigação",
@@ -983,6 +1023,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Auditoria do canal MovReCam — 285 vídeos catalogados, com embeds das aulas da XIV edição UNIFESP para revisão in-page."
             },
             {
+              "label": "Inspeção: Águas do Mar e Lágrimas — poesia do laboratório entre oceano e peito",
+              "tileLabel": "Inspeção: Águas do Mar e Lágrim…",
+              "href": "/posts/post-inspecao-arte-aguas-e-lagrimas.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-aguas-e-lagrimas",
+              "description": "Artes · poesia original: o sal do mar e o da lágrima — máscara, porto no olho e o universo Vida que ensina a ficar."
+            },
+            {
               "label": "Inspeção: Emoção — o hub lexical da Riley (Divertida Mente)",
               "tileLabel": "Inspeção: Emoção — o hub lexica…",
               "href": "/posts/post-inspecao-palavra-emocao.html",
@@ -1005,6 +1053,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-morango",
               "description": "Relatório educacional de Morango (*Fragaria × ananassa Duchesne): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: Cruzamento — Raiva, Emoção, Venom e Vida no mapa de Divertida Mente",
+              "tileLabel": "Inspeção: Cruzamento — Raiva, E…",
+              "href": "/posts/post-inspecao-cruzamento-raiva-venom-vida-divertida.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-cruzamento-raiva-venom-vida-divertida",
+              "description": "Artes · cruzamento: Raiva × Emoção × Venom × Vida lidos com Alegria, Tristeza, Raiva, Medo e Nojinho — ofício de cada sentimento vs veneno do rancor; rede com Divertida Mente e o «ficar» da Vida."
             },
             {
               "label": "Inspeção: Alegria — a palavra amarela da Riley",
@@ -1143,6 +1199,22 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Acmella oleracea* — alquilamidas (espilanthol) causam dormência oral; erva da culinária paraense."
             },
             {
+              "label": "Inspeção: Chaves (El Chavo del Ocho) — a turma e o bem que ensina",
+              "tileLabel": "Inspeção: Chaves (El Chavo del …",
+              "href": "/posts/post-inspecao-serie-chaves-el-chavo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-serie-chaves-el-chavo",
+              "description": "Artes: *Chaves* / *El Chavo del Ocho* — homenagem à turma inteira, méritos de cada pilar e recomendação mediada para crianças aprenderem partilha, desculpa e amizade."
+            },
+            {
+              "label": "Inspeção: Criatividade — a palavra de fazer nascer no laboratório",
+              "tileLabel": "Inspeção: Criatividade — a pala…",
+              "href": "/posts/post-inspecao-palavra-criatividade.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-criatividade",
+              "description": "Palavras: «criatividade» (latim *creāre*) — inventar com método no BudGanja: cultivo, Vida, fichas, poemas e ferramentas."
+            },
+            {
               "label": "Inspeção: Entorpecente e Narcótico — classificação legal no laboratório",
               "tileLabel": "Inspeção: Entorpecente e Narcót…",
               "href": "/posts/post-inspecao-palavra-entorpecente-narcotico.html",
@@ -1159,6 +1231,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Erythrina mulungu* — casca com alcaloides eritrínicos; chá calmante da tradição brasileira."
             },
             {
+              "label": "Inspeção: Verdade — a palavra de verificar no laboratório",
+              "tileLabel": "Inspeção: Verdade — a palavra d…",
+              "href": "/posts/post-inspecao-palavra-verdade.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-verdade",
+              "description": "Palavras: «verdade» (latim *vērĭtās*) — afirmar com método no BudGanja: citar, medir e não fabricar evidência."
+            },
+            {
               "label": "Inspeção: Psicotrópico — classe clínica e controlo no laboratório",
               "tileLabel": "Inspeção: Psicotrópico — classe…",
               "href": "/posts/post-inspecao-palavra-psicotropico.html",
@@ -1173,6 +1253,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-maracuja",
               "description": "*Passiflora incarnata* — flavonoides e alcaloides traço; chá calmante clássico da fitoterapia."
+            },
+            {
+              "label": "Inspeção: Gesto — a palavra que liga o laboratório inteiro",
+              "tileLabel": "Inspeção: Gesto — a palavra que…",
+              "href": "/posts/post-inspecao-palavra-gesto.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-gesto",
+              "description": "Palavras: «gesto» / «gestos» (latim *gestus*) — o acto mínimo no BudGanja: cultivar, inspecionar, narrar, medir, ficar e partilhar."
             },
             {
               "label": "Inspeção: Lista F — âncora brasileira das listas de controlo",
