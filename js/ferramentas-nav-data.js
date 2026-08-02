@@ -54,6 +54,15 @@ window.__BIBLIOTECA_NAV__ = {
           "submenu": true,
           "children": [
             {
+              "label": "Palavras",
+              "tileLabel": "Palavras",
+              "href": "/guia/palavras.html",
+              "icon": "📖",
+              "slug": "guia-palavras",
+              "featured": true,
+              "description": "Glossário simples: títulos do site e léxico inspecionado."
+            },
+            {
               "label": "Clonadoras",
               "tileLabel": "Clonadoras",
               "icon": "🌱",
@@ -186,7 +195,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-divulgacao-lair-ribeiro.html",
               "icon": "🔍",
               "slug": "post-inspecao-divulgacao-lair-ribeiro",
-              "description": "Divulgação: IDs do canal, textos canábicos, limites públicos e varredura de 887 vídeos sobre açúcar/frutose/diabesidade — elo com a ficha Derivados da cana-de-açúcar (portal nomeia sacarose da cana)."
+              "description": "Divulgação: IDs do canal, textos canábicos, limites públicos, varredura açúcar/frutose e catálogo temático completo dos ~887 vídeos do canal — elo com a ficha Derivados da cana-de-açúcar."
             },
             {
               "label": "Inspeção: Heródoto — método da pesquisa e a palavra passar",
@@ -485,12 +494,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Auditoria do canal CANABinALL (@canabinall) — 139 vídeos catalogados; divulgação científica UNIFESP sob curadoria da Profa. Dra. Eliana Rodrigues (CEE), com destaque a Conceitos básicos #1 e à série Plantas Sagradas."
             },
             {
-              "label": "Inspeção: Glúten — trigo e proteína nociva ao organismo",
-              "tileLabel": "Inspeção: Glúten — trigo e prot…",
+              "label": "Inspeção: Glúten / farinha — trigo e proteína nociva ao organismo",
+              "tileLabel": "Inspeção: Glúten / farinha — tr…",
               "href": "/posts/post-inspecao-derivado-gluten.html",
               "icon": "🔍",
               "slug": "post-inspecao-derivado-gluten",
-              "description": "Produtos nocivos: glúten do trigo — celíaca, sensibilidade e ultraprocessados de farinha versus cereal tradicional. Elo com caseína e açúcares livres."
+              "description": "Produtos nocivos: glúten e farinha de trigo — celíaca, sensibilidade e ultraprocessados versus cereal tradicional. Elo com caseína, açúcar e chocolate industrial."
             },
             {
               "label": "Inspeção: Ganja — da rota índica à marca e à gíria global",
@@ -565,6 +574,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Açaí (*Euterpe oleracea Mart.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
+              "label": "Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite",
+              "tileLabel": "Inspeção: Chocolate industrial …",
+              "href": "/posts/post-inspecao-derivado-chocolate.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-chocolate",
+              "description": "Produtos nocivos: chocolate industrial como matriz que junta cacau, açúcar, farinha/trigo/glúten, leite/caseína, Barriga de Trigo (Davis) e o léxico catalogado — hub que relaciona tudo."
+            },
+            {
               "label": "Inspeção: Diamba — cognato afro-brasileiro apagado pelo estigma",
               "tileLabel": "Inspeção: Diamba — cognato afro…",
               "href": "/posts/post-inspecao-palavra-diamba.html",
@@ -635,6 +652,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-manga",
               "description": "Relatório educacional de Manga (*Mangifera indica L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Análise: danos dos produtos nocivos × vídeos catalogados",
+              "tileLabel": "Análise: danos dos produtos noc…",
+              "href": "/posts/post-inspecao-derivado-analise-danos-videos.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-analise-danos-videos",
+              "description": "Onde o acervo de vídeos do projecto sustenta (ou não) a rede açúcar · farinha · leite · chocolate: quase todo o discurso está no Lair; MovReCam/CANABinALL quase não entram neste eixo."
             },
             {
               "label": "Inspeção: Cannabis — latinismo técnico e hierarquia de registos",
@@ -795,6 +820,22 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-abacaxi",
               "description": "Relatório educacional de Abacaxi (*Ananas comosus (L.) Merr.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: William Davis — cardiologista de Barriga de Trigo e o método anti-trigo",
+              "tileLabel": "Inspeção: William Davis — cardi…",
+              "href": "/posts/post-inspecao-figura-william-davis.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-william-davis",
+              "description": "Pessoas × Artes: William Davis — cardiologista preventivo e autor de Barriga de Trigo (*Wheat Belly*, 2011); método de divulgação sobre trigo/glúten. Livro em Artes; elo em Glúten / farinha."
+            },
+            {
+              "label": "Inspeção: Barriga de Trigo — o livro de William Davis e a tese do trigo moderno",
+              "tileLabel": "Inspeção: Barriga de Trigo — o …",
+              "href": "/posts/post-inspecao-arte-barriga-de-trigo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-barriga-de-trigo",
+              "description": "Artes: Barriga de Trigo (*Wheat Belly*, 2011) — best-seller de William Davis sobre trigo, glúten, amilopectina A e gordura visceral. Autor em Pessoas; elo em Glúten / farinha."
             },
             {
               "label": "Inspeção: Divertida Mente — as emoções da Riley e a mensagem que importa",

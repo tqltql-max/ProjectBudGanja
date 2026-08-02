@@ -3,13 +3,15 @@
   "siteTagline": "Laboratório de fitoterapia brasileira",
   "footerText": "© 2026 Inspetor BudGanja. Conteúdo educacional sobre plantas medicinais do Brasil.",
   "privacyUpdated": "1 de agosto de 2026",
-  "gaMeasurementId": "G-Q47PEYEXX6",
   "ogImage": "/imagens/og-default.jpg",
   "contactEmail": "tql.tql@gmail.com",
   "youtubeChannelUrl": "/videos/",
   "youtubeChannelLabel": "Canal @InspetorBudGanja",
+  "youtubeJardimUrl": "",
+  "youtubeJardimLabel": "",
   "spotifyPodcastUrl": "https://open.spotify.com/show/033yuLDWnN84xOcfHyJ1FZ",
   "spotifyPodcastLabel": "Podcast Inspetor BudGanja",
+  "gaMeasurementId": "G-Q47PEYEXX6",
   "nav": [
     {
       "label": "Biblioteca",
