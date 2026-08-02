@@ -54,11 +54,11 @@ const doc = {
       authorEn: 'BudGanja Lab',
       authorEs: 'Laboratorio BudGanja',
       teaser:
-        'Do ditado ao verso: sentido comum das palavras vermelhas e o aviso de não beber o rancor sozinho.',
+        'O copo é nosso — vingança que nunca fecha a conta, e o chamado a ficar sem beber o rancor sozinho.',
       teaserEn:
-        'From saying to verse: everyday senses of the red words, and the warning not to drink the grudge alone.',
+        'The cup is ours — revenge that never settles the score, and the call to stay without drinking the grudge alone.',
       teaserEs:
-        'Del dicho al verso: sentidos comunes de las palabras rojas y el aviso de no beber el rencor solo.',
+        'El vaso es nuestro — venganza que nunca cierra la cuenta, y el llamado a quedarse sin beber el rencor solo.',
       body: poemVingancaPt(),
       bodyEn: poemVingancaEn(),
       bodyEs: poemVingancaEs(),
