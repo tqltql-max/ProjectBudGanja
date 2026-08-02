@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T09:08:38.037Z",
+  "updatedAt": "2026-08-02T11:11:03.813Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -303,7 +303,7 @@
       "simpleEs": "Envase farmacéutico (plástico/aluminio) — vínculo concreto entre fármaco «necesario» y basura.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "broad-spectrum",
@@ -343,7 +343,7 @@
       "simpleEs": "Ciclo extraer → fabricar → vender → desechar (Leonard) aplicado a fármacos y derivados industriales.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "cafe",
@@ -483,7 +483,7 @@
       "simpleEs": "Métrica de salud pública del daño asociado (p. ej. ultraprocesados) — límite prudente vs «homicidio del estante».",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "caseina",
@@ -633,7 +633,7 @@
       "simpleEs": "Bien tratado como mercancía escalable (azúcar, planta medicinal industrializada, etc.).",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "comunidade",
@@ -733,7 +733,7 @@
       "simpleEs": "Último estadio de la cadena lineal — envases, restos y basura electrónica ligada a fármacos y commodities.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "descriminalizacao",
@@ -753,7 +753,7 @@
       "simpleEs": "Quién lucra en la cadena vs quién absorbe extracción, efluente y basura — polo ético nombrado en la investigación.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "desperdicio",
@@ -763,7 +763,7 @@
       "simpleEs": "Uso o producción en exceso sin necesidad — mecanismo central (con el exceso) en el ciclo industrial.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "diamba",
@@ -853,7 +853,7 @@
       "simpleEs": "Lectura del flujo físico de las cosas (mineral, planta, envase, basura) — ancla pedagógica de molécula→basura.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "efeito-comitiva",
@@ -873,7 +873,7 @@
       "simpleEs": "Residuo líquido/gaseoso de síntesis o fabricación — externalidad típica de la etapa industrial.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "eletroacupuntura",
@@ -1043,7 +1043,7 @@
       "simpleEs": "Sustancia auxiliar de la formulación (no es el principio activo) — entra en fabricación y residuos.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "exercicio",
@@ -1063,7 +1063,7 @@
       "simpleEs": "Costo o daño desplazado fuera del precio (residuos, enfermedad, hábitat) — mapa central de De la molécula a la basura.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "farmacia-viva",
@@ -1083,7 +1083,7 @@
       "simpleEs": "Sustancia terapéutica a escala industrial — en el mapa BudGanja comparte la cadena extraer→desechar con «droga» y commodity.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "farmacovigilancia",
@@ -1093,7 +1093,7 @@
       "simpleEs": "Monitoreo de seguridad de medicamentos tras el uso — literacia citada en la nota metodológica.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "feed-vivo",
@@ -1303,7 +1303,7 @@
       "simpleEs": "Daño causado por la propia intervención terapéutica — riesgo de la etapa «uso» en la cadena.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "ilicito",
@@ -1543,7 +1543,7 @@
       "simpleEs": "Planta, animal, mineral o petróleo al inicio de la cadena — primer estadio del marco molécula→basura.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "mbsr",
@@ -1573,7 +1573,7 @@
       "simpleEs": "Expandir el dominio médico/farmacéutico sobre la vida cotidiana — motor del «exceso de oferta» en el mapa.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "meditacao",
@@ -1623,7 +1623,7 @@
       "simpleEs": "Fragmentos plásticos persistentes en el ambiente — externalidad del descarte (envases, blister, logística).",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "mindfulness",
@@ -1663,7 +1663,7 @@
       "simpleEs": "Cultivo de una sola especie a gran escala — externalidad típica de extracción/cultivo.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "movrecam",
@@ -1723,7 +1723,7 @@
       "simpleEs": "Látex de amapola en la frontera cultura/medicina/comercio — caso ancla opioides (con La última casa de opio).",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "opioide",
@@ -1803,7 +1803,7 @@
       "simpleEs": "Derecho exclusivo sobre molécula/proceso — mecanismo que concentra valor en el polo industrial.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "pesquisas",
@@ -1903,7 +1903,7 @@
       "simpleEs": "Molécula responsable del efecto en fabricación farmacéutica — etapa de síntesis en el mapa.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "produtos-nocivos",
@@ -2033,7 +2033,7 @@
       "simpleEs": "Restos, metabolitos y envases de medicamentos en el ambiente — caso ancla 3 de la investigación.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "retiro",
@@ -2104,6 +2104,16 @@
       "group": "titulo",
       "fromTitle": true,
       "href": "/vida/diario/"
+    },
+    {
+      "id": "simbiose",
+      "word": "Simbiose",
+      "simple": "Viver juntos (*syn* + *bíos*) — relação entre organismos; no senso comum vira «os dois ganham»; no site, elo de solo vivo, plantas e metáfora cultural (Venom).",
+      "simpleEn": "Living together (*syn* + *bíos*) — relation between organisms; in common speech often “both win”; on the site, living soil, plants and cultural metaphor (Venom).",
+      "simpleEs": "Vivir juntos (*syn* + *bíos*) — relación entre organismos; en el habla común suele ser «los dos ganan»; en el sitio, suelo vivo, plantas y metáfora cultural (Venom).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-simbiose.html"
     },
     {
       "id": "sintetico",
@@ -2273,7 +2283,7 @@
       "simpleEs": "Alimento de diseño industrial — caso ancla de commodity que enferma en molécula→basura.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+      "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
       "id": "unha-de-gato",

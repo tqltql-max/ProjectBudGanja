@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T11:06:22.470Z",
+  "updatedAt": "2026-08-02T11:11:22.582Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2195,6 +2195,28 @@
         "/posts/post-inspecao-filme-divertida-mente.html"
       ],
       "notes": "Comics primeiro (personagem); filme 2018 = entrada SSU; sequelas = eco."
+    },
+    {
+      "id": "palavra-simbiose",
+      "title": "Simbiose — a palavra do viver juntos",
+      "titleEn": "Simbiose — the word for living together",
+      "titleEs": "Simbiose — la palabra del vivir juntos",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: «simbiose» (*syn* + *bíōsis*) — biologia, solo vivo e metáfora (Venom / «nós»).",
+      "whyEn": "Words: “simbiose” (*syn* + *bíōsis*) — biology, living soil, and metaphor (Venom / “we”).",
+      "whyEs": "Palabras: «simbiose» (*syn* + *bíōsis*) — biología, suelo vivo y metáfora (Venom / «nosotros»).",
+      "suggestedSlug": "inspecao-palavra-simbiose",
+      "doneHref": "/posts/post-inspecao-palavra-simbiose.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/plantas/",
+        "/guia/cultivo-basico.html",
+        "/posts/post-inspecao-filme-venom.html",
+        "/posts/post-inspecao-palavra-animal.html"
+      ],
+      "notes": "Palavra ≠ tratado de ecologia; metáfora cultural é camada, não definição."
     }
   ]
 }

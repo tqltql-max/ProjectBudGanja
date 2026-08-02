@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T11:06:31.393Z",
+  "updatedAt": "2026-08-02T11:11:39.830Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Simbiose — a palavra do viver juntos",
+      "url": "/posts/post-inspecao-palavra-simbiose.html",
+      "excerpt": "Palavras: «simbiose» (grego *syn* + *bíōsis*) — coabitação de vidas, mutualismo popular, solo vivo e metáfora cultural (Venom / «nós»).",
+      "text": "Inspeção: Simbiose — a palavra do viver juntos Palavras: «simbiose» (grego *syn* + *bíōsis*) — coabitação de vidas, mutualismo popular, solo vivo e metáfora cultural (Venom / «nós»). inspecao ## Escopo\n\nInspeção editorial e linguística da palavra **simbiose** — do grego *syn* («junto») + *bíōsis* («modo de vida», de *bíos* «vida») ao termo científico de **viver juntos** e à metáfora cultural de parceria (incluindo a parábola do «nós» em [Venom](/posts/post-inspecao-filme-venom.html)). Elo de laboratório: [plantas](/plantas/), [solo vivo / cultivo](/guia/cultivo-basico.html) e [animal](/posts/post-inspecao-palavra-animal.html).\n\n> **Nota metodológica:** auditoria independente do Inspetor BudGanja. Étimo de trabalho: grego *symbíōsis* → latim científico / inglês *symbiosis* → português **simbiose**. Fontes de apoio: [Wikcionário · symbiosis](https://en.wiktionary.org/wiki/symbiosis), [Wikipédia · Simbiose](https://pt.wikipedia.org/wiki/Simbiose), [Wikipedia · Symbiosis](https://en.wikipedia.org/wiki/Symbiosis). **Ficha de palavra ≠ tratado de ecologia** — aqui inspecionamos o **vocábulo** e a sua rede de sentidos. Sem afiliação comercial. A metáfora narrativa (filme, gíria) **não** substitui o sentido biológico.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **simbiose** |\n| Classe | Substantivo feminino |\n| Étimo (hipótese forte) | Grego *symbíōsis* ← *syn-* («junto») + *bíōsis* («viver / modo de vida») ← *bíos* («vida») |\n| Via moderna | Latim científico / inglês *symbiosis* (séc. XIX) → PT *simbiose* |\n| Cognatos | esp. *simbiosis* · fr. *symbiose* · ing. *symbiosis* · adj. *simbiótico/a* |\n| Relacionados | *simbionte* · *mutualismo* · *comensalismo* · *parasitismo* |\n| Tipo BudGanja | Palavra — biologia de convivência, cultivo e metáfora cultural |\n| Elo catálogo | [Plantas](/plantas/) · [cultivo / solo vivo](/guia/cultivo-basico.html) |\n| Elo Palavras irmãos | [animal](/posts/post-inspecao-palavra-animal.html) |\n| Elo Artes | [Venom — si"
     },
     {
       "title": "Inspeção: Venom — o filme de 2018, a simbiose e o «nós»",
@@ -2670,6 +2676,12 @@
       "url": "/vida/diario/",
       "excerpt": "Semente pequena — personagem-símbolo do conto Vida e do diário familiar.",
       "text": "Sementinha Semente pequena — personagem-símbolo do conto Vida e do diário familiar. titulo guia palavras glossário sementinha"
+    },
+    {
+      "title": "Simbiose",
+      "url": "/posts/post-inspecao-palavra-simbiose.html",
+      "excerpt": "Viver juntos (*syn* + *bíos*) — relação entre organismos; no senso comum vira «os dois ganham»; no site, elo de solo vivo, plantas e metáfora cultural (Venom).",
+      "text": "Simbiose Viver juntos (*syn* + *bíos*) — relação entre organismos; no senso comum vira «os dois ganham»; no site, elo de solo vivo, plantas e metáfora cultural (Venom). lexico guia palavras glossário simbiose"
     },
     {
       "title": "Sintético",

@@ -919,6 +919,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Goiaba (*Psidium guajava L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
+              "label": "Inspeção: Venom — o filme de 2018, a simbiose e o «nós»",
+              "tileLabel": "Inspeção: Venom — o filme de 20…",
+              "href": "/posts/post-inspecao-filme-venom.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-venom",
+              "description": "Artes · cinema: Venom (2018, Fleischer / Hardy) — entrada SSU, génese do personagem nos comics Marvel, simbiose e «nós» como parábola de agência partilhada."
+            },
+            {
               "label": "Inspeção: Cânhamo — fibra industrial coberta pela confusão com «droga»",
               "tileLabel": "Inspeção: Cânhamo — fibra indus…",
               "href": "/posts/post-inspecao-palavra-canhamo.html",
@@ -1109,6 +1117,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-andiroba",
               "description": "*Carapa guianensis* — óleo de sementes rico em limonoides (andirobina); tradição tópica e repelente."
+            },
+            {
+              "label": "Inspeção: Simbiose — a palavra do viver juntos",
+              "tileLabel": "Inspeção: Simbiose — a palavra …",
+              "href": "/posts/post-inspecao-palavra-simbiose.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-simbiose",
+              "description": "Palavras: «simbiose» (grego *syn* + *bíōsis*) — coabitação de vidas, mutualismo popular, solo vivo e metáfora cultural (Venom / «nós»)."
             },
             {
               "label": "Inspeção: Guia de Palavras — auditoria das 139 entradas e do acervo",
