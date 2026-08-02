@@ -6,7 +6,7 @@
   'use strict';
 
   var STORAGE_KEY = 'budganja-learn-lang';
-  var LEARN_LANGS = { en: 1, es: 1, fr: 1, it: 1, de: 1, yo: 1, sw: 1, gez: 1 };
+  var LEARN_LANGS = { en: 1, es: 1, fr: 1, it: 1, de: 1, yo: 1, sw: 1, gez: 1, el: 1, la: 1 };
   var WORD_RE = /([A-Za-zÀ-ÿ]+(?:['’-][A-Za-zÀ-ÿ]+)?)|([^A-Za-zÀ-ÿ]+)/g;
   var SKIP_TAGS = {
     SCRIPT: 1,
@@ -100,6 +100,8 @@
     if (lang === 'yo') return 'abcdefghijklmnopqrstuvwxyzàáèéẹ̀ẹ́ìíòóọ̀ọ́ùúṣṣ́';
     if (lang === 'sw') return 'abcdefghijklmnopqrstuvwxyz';
     if (lang === 'gez') return 'abcdefghijklmnopqrstuvwxyzʾʿäəḥḥśṣṭ';
+    if (lang === 'el') return 'αβγδεζηθικλμνξοπρστυφχψωάέήίόύώϊϋΐΰς';
+    if (lang === 'la') return 'abcdefghijklmnopqrstuvwxyzæœ';
     return 'abcdefghijklmnopqrstuvwxyz';
   }
 
@@ -367,7 +369,9 @@
           de: 'Deutsch',
           yo: 'Yorùbá',
           sw: 'Kiswahili',
-          gez: 'Geʽez'
+          gez: 'Geʽez',
+          el: 'Ελληνικά',
+          la: 'Latina'
         };
         var name = names[state.lang] || state.lang;
         hint.textContent = t(
@@ -548,6 +552,8 @@
       '<button type="button" class="learn-toolbar-btn" data-learn-lang="yo" aria-pressed="false" title="Yorùbá">YO</button>' +
       '<button type="button" class="learn-toolbar-btn" data-learn-lang="sw" aria-pressed="false" title="Kiswahili">SW</button>' +
       '<button type="button" class="learn-toolbar-btn" data-learn-lang="gez" aria-pressed="false" title="Geʽez (transliteração)">GEZ</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="el" aria-pressed="false" title="Ελληνικά (Grego)">EL</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="la" aria-pressed="false" title="Latina (Latim / étimos)">LA</button>' +
       '</div>' +
       '</div>' +
       '<p class="learn-toolbar-hint" data-learn-hint></p>';
