@@ -1108,7 +1108,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
               "icon": "🔍",
               "slug": "post-inspecao-arte-bom-dia-inverno",
-              "description": "Bom dia, Inverno como hub: Vida, cultivo, plantas, animais, Palavras (gesto, verdade, medo…), Artes, Legado Klink e o léxico do gelo."
+              "description": "Bom dia, Inverno como mudinha da Vida: invernagem no gelo, léxico, Artes irmãs (Águas / Lágrimas) e Legado Klink."
             },
             {
               "label": "Inspeção: Tristeza — a palavra azul que também cuida",

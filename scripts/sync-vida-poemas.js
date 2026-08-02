@@ -19,6 +19,11 @@ const {
   poemFacaOMelhorEn,
   poemFacaOMelhorEs
 } = require('../lib/expressoes-ditados-inspecoes-posts.js');
+const {
+  poemBomDiaInvernoPt,
+  poemBomDiaInvernoEn,
+  poemBomDiaInvernoEs
+} = require('../lib/bom-dia-inverno-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -89,6 +94,27 @@ const doc = {
       bodyEs: poemFacaOMelhorEs(),
       inspectionHref: '/posts/post-inspecao-expressao-faca-o-melhor.html',
       tags: ['poesia', 'vida', 'mantra', 'melhor', 'ofício']
+    },
+    {
+      id: 'bom-dia-inverno',
+      slug: 'bom-dia-inverno',
+      title: 'Bom dia, Inverno',
+      titleEn: 'Good Morning, Winter',
+      titleEs: 'Buenos días, Invierno',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'A mudinha no gelo — cumprimentar a estação difícil, ficar e faça o melhor.',
+      teaserEn:
+        'The seedling on the ice — greet the hard season, stay, and do your best.',
+      teaserEs:
+        'La plantita en el hielo — saludar la estación difícil, quedarse y haz lo mejor.',
+      body: poemBomDiaInvernoPt(),
+      bodyEn: poemBomDiaInvernoEn(),
+      bodyEs: poemBomDiaInvernoEs(),
+      inspectionHref: '/posts/post-inspecao-arte-bom-dia-inverno.html',
+      tags: ['poesia', 'vida', 'inverno', 'mudinha', 'gelo']
     }
   ]
 };

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T20:41:35.283Z",
+  "updatedAt": "2026-08-02T20:53:41.140Z",
   "poems": [
     {
       "id": "aguas-e-lagrimas",
@@ -70,6 +70,30 @@
         "mantra",
         "melhor",
         "ofício"
+      ]
+    },
+    {
+      "id": "bom-dia-inverno",
+      "slug": "bom-dia-inverno",
+      "title": "Bom dia, Inverno",
+      "titleEn": "Good Morning, Winter",
+      "titleEs": "Buenos días, Invierno",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "A mudinha no gelo — cumprimentar a estação difícil, ficar e faça o melhor.",
+      "teaserEn": "The seedling on the ice — greet the hard season, stay, and do your best.",
+      "teaserEs": "La plantita en el hielo — saludar la estación difícil, quedarse y haz lo mejor.",
+      "body": "Bom dia, Inverno.\nNão pedimos sol a mais —\npedimos só ficar\nquando o gelo prende o barco\ne o peito ainda cabe na mão.\n\nA semente não grita.\nA mudinha também não.\nEla só pede tempo:\nluz fraca, água certa,\num balde que não julga o enjoo.\n\nDizem que o inverno é fim.\nMentira antiga.\nInverno é estação —\nfase em que não se força flor,\nfase em que se inspeciona a raiz.\n\nTamara já sabia no gelo:\npartir, ficar, escrever.\nNós, neste universo novo,\naprendemos a cumprimentar a estação difícil —\nnão para negar o medo,\nmas para não deixar a mudinha\npassar sozinha.\n\nO laboratório não derrete o mar congelado.\nPlanta à beira.\nConta gotas.\nChama a Vida pelo nome verdadeiro:\nficar.\n\nFaça o melhor!\n\nPorque toda mudinha que permanece\nquando o sal do gelo arde\ncresce um pouco no mapa:\numa página a mais,\num verso a mais,\num nós onde antes só havia ilha de neve.",
+      "bodyEn": "Good morning, Winter.\nWe do not ask for more sun —\nwe only ask to stay\nwhen the ice holds the boat\nand the chest still fits in a hand.\n\nThe seed does not shout.\nNeither does the seedling.\nIt only asks for time:\nweak light, right water,\na bucket that does not judge the nausea.\n\nThey say winter is an end.\nOld lie.\nWinter is a season —\na phase when you do not force the flower,\na phase when you inspect the root.\n\nTamara already knew on the ice:\nleave, stay, write.\nIn this new universe of ours\nwe learn to greet the hard season —\nnot to deny the fear,\nbut so the seedling\ndoes not pass alone.\n\nThe laboratory does not melt the frozen sea.\nIt plants at the edge.\nIt counts drops.\nIt calls Vida by its true name:\nstay.\n\nDo your best!\n\nBecause every seedling that remains\nwhen the salt of ice burns\ngrows a little on the map:\none more page,\none more verse,\na we where once there was only an island of snow.",
+      "bodyEs": "Buenos días, Invierno.\nNo pedimos más sol —\npedimos solo quedarnos\ncuando el hielo agarra el barco\ny el pecho aún cabe en la mano.\n\nLa semilla no grita.\nLa plantita tampoco.\nSolo pide tiempo:\nluz débil, agua justa,\nun cubo que no juzgue el mareo.\n\nDicen que el invierno es fin.\nMentira antigua.\nInvierno es estación —\nfase en que no se fuerza la flor,\nfase en que se inspecciona la raíz.\n\nTamara ya sabía en el hielo:\npartir, quedarse, escribir.\nEn este universo nuevo\naprendemos a saludar la estación difícil —\nno para negar el miedo,\nsino para no dejar a la plantita\npasar sola.\n\nEl laboratorio no derrite el mar congelado.\nSiembra a la orilla.\nCuenta gotas.\nLlama a Vida por su nombre verdadero:\nquedarse.\n\n¡Haz lo mejor!\n\nPorque toda plantita que permanece\ncuando la sal del hielo arde\ncrece un poco en el mapa:\nuna página más,\nun verso más,\nun nosotros donde antes solo había isla de nieve.",
+      "inspectionHref": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "inverno",
+        "mudinha",
+        "gelo"
       ]
     }
   ]
