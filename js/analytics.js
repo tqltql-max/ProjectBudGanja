@@ -143,76 +143,22 @@
 
   function buildUpdateHtml(update) {
     if (!update || !update.id || wasUpdateDismissed(update.id)) return '';
-    var title = pickLocalized(update.title, t('common.siteUpdateTitle', 'O que está a ser atualizado'));
+    var title = pickLocalized(update.title, '');
     var text = pickLocalized(update.text, '');
-    if (!text) return '';
-    var label = pickLocalized(update.label, t('common.siteUpdateAria', 'Novidades do site'));
-    var quote = pickLocalized(update.quote, '');
-    var quoteCredit = pickLocalized(update.quoteCredit, '');
-    var avatar = update.avatar ? String(update.avatar) : '';
-    var voice = update.voice ? String(update.voice) : '';
-    var linkHref = update.linkHref ? String(update.linkHref) : '';
-    var linkLabel = pickLocalized(update.linkLabel, '');
-    var secondaryHref = update.secondaryHref ? String(update.secondaryHref) : '';
-    var secondaryLabel = pickLocalized(update.secondaryLabel, '');
-    var links = [];
-    if (linkHref && linkLabel) {
-      links.push(
-        '<a href="' + escapeHtml(linkHref) + '">' + escapeHtml(linkLabel) + '</a>'
-      );
-    }
-    if (secondaryHref && secondaryLabel) {
-      links.push(
-        '<a href="' + escapeHtml(secondaryHref) + '">' + escapeHtml(secondaryLabel) + '</a>'
-      );
-    }
-    var linksHtml = links.length
-      ? '<p class="cookie-consent-update-links">' + links.join(' · ') + '</p>'
-      : '';
-    var quoteHtml = '';
-    if (quote) {
-      quoteHtml =
-        '<blockquote class="cookie-consent-update-quote">' +
-        '<p>«' +
-        escapeHtml(quote) +
-        '»</p>' +
-        (quoteCredit
-          ? '<cite>' + escapeHtml(quoteCredit) + '</cite>'
-          : '') +
-        '</blockquote>';
-    }
-    var avatarHtml = avatar
-      ? '<img class="cookie-consent-update-avatar" src="' +
-        escapeHtml(avatar) +
-        '" alt="" width="56" height="56" decoding="async">'
-      : '';
-    var classes =
-      'cookie-consent-update' +
-      (voice === 'dj-brisa' ? ' cookie-consent-update--brisa' : '');
+    if (!title && !text) return '';
     return (
-      '<div class="' +
-      classes +
-      '" data-update-id="' +
+      '<div class="cookie-consent-update cookie-consent-update--minimal" data-update-id="' +
       escapeHtml(update.id) +
-      '"' +
-      (voice ? ' data-voice="' + escapeHtml(voice) + '"' : '') +
-      '>' +
-      (avatarHtml
-        ? '<div class="cookie-consent-update-media">' + avatarHtml + '</div>'
+      '">' +
+      (title
+        ? '<p class="cookie-consent-update-title cookie-consent-update-title--whisper">' +
+          escapeHtml(title) +
+          '</p>'
         : '') +
-      '<div class="cookie-consent-update-body">' +
-      '<span class="cookie-consent-update-label">' +
-      escapeHtml(label) +
-      '</span>' +
-      '<p class="cookie-consent-update-title">' +
-      escapeHtml(title) +
-      '</p>' +
-      '<p class="cookie-consent-update-text">' +
-      escapeHtml(text) +
-      '</p>' +
-      quoteHtml +
-      linksHtml +
-      '</div></div>'
+      (text
+        ? '<p class="cookie-consent-update-text">' + escapeHtml(text) + '</p>'
+        : '') +
+      '</div>'
     );
   }
 
@@ -244,8 +190,10 @@
     var root = document.createElement('div');
     root.id = BANNER_ID;
     root.className =
-      'cookie-consent' + (mode === 'update' ? ' cookie-consent--update-only' : '');
+      'cookie-consent cookie-consent--center cookie-consent--gold' +
+      (mode === 'update' ? ' cookie-consent--update-only' : '');
     root.setAttribute('role', 'dialog');
+    root.setAttribute('aria-modal', 'true');
     root.setAttribute('aria-live', 'polite');
     root.setAttribute(
       'aria-label',
@@ -259,9 +207,7 @@
       actions =
         '<div class="cookie-consent-actions">' +
         '<button type="button" class="botao cookie-consent-accept" data-update-dismiss="1">' +
-        escapeHtml(
-          pickLocalized(update && update.cta, t('common.siteUpdateGotIt', 'Entendi'))
-        ) +
+        escapeHtml(pickLocalized(update && update.cta, t('common.siteUpdateGotIt', 'Aceitar'))) +
         '</button>' +
         '</div>';
     } else {
@@ -277,7 +223,9 @@
     }
 
     root.innerHTML =
+      '<div class="cookie-consent-backdrop" aria-hidden="true"></div>' +
       '<div class="cookie-consent-inner">' +
+      '<span class="cookie-consent-ornament" aria-hidden="true"></span>' +
       '<div class="cookie-consent-copy">' +
       updateHtml +
       (mode === 'update' ? '' : cookieTextHtml()) +

@@ -130,7 +130,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-pesquisa-insumos-organicos-vs-industrializados-fruto.html",
               "icon": "📋",
               "slug": "post-pesquisa-insumos-organicos-vs-industrializados-fruto",
-              "description": "Mapa preliminar: como fertilizantes e defensivos orgânicos vs industriais alteram açúcar, aroma, antioxidantes e resíduos no fruto — mecanismos, meta-análises e limites."
+              "description": "Como insumos orgânicos vs industriais alteram o fruto — e como as substâncias químicas cortam elos entre espécies (solo, polinizadores, predadores), separando-nos da vida orgânica."
             },
             {
               "label": "Super Solo: Guia de Uso",

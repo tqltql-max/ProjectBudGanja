@@ -54,6 +54,7 @@ var SERIES_LABELS = {
   'divulgacao-saude': 'Divulgação',
   'artes-cultura': 'Artes',
   'vida-contos': 'Vida',
+  'expressoes-ditados': 'Expressões',
   '': 'Todas as séries'
 };
 
@@ -116,6 +117,13 @@ function seriesBadgeHtml(post, options) {
   if (options.hub && (post.series === 'vida-contos' || /inspecao-conto-|inspecao-personagem-/i.test(post.slug || ''))) {
     var vida = post.seriesLabel || 'Vida';
     return '<span class="post-card-series" data-series="' + post.series + '">' + vida + '</span>';
+  }
+  if (
+    options.hub &&
+    (post.series === 'expressoes-ditados' || /inspecao-expressao-|inspecao-ditado-/i.test(post.slug || ''))
+  ) {
+    var expressao = post.seriesLabel || 'Expressão';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + expressao + '</span>';
   }
   var label = post.seriesLabel || SERIES_LABELS[post.series] || post.series;
   var order = post.seriesOrder != null ? ' · Cap. ' + post.seriesOrder : '';
@@ -185,6 +193,14 @@ function resolveInspecaoTipo(post) {
     /inspecao-conto-|inspecao-personagem-/i.test(slug)
   ) {
     return 'conto';
+  }
+  if (
+    series === 'expressoes-ditados' ||
+    series.indexOf('expressao') === 0 ||
+    series.indexOf('ditado') === 0 ||
+    /inspecao-expressao-|inspecao-ditado-/i.test(slug)
+  ) {
+    return 'expressao';
   }
   if (
     series === 'legado-pessoas' ||
@@ -357,6 +373,7 @@ var HUB_CHIP_ANCHOR = {
   divulgacao: 'divulgacao',
   arte: 'artes',
   conto: 'vida',
+  expressao: 'expressoes',
   sugestoes: 'sugestoes'
 };
 
@@ -374,6 +391,8 @@ var HUB_ANCHOR_TO_TIPO = {
   artes: 'arte',
   vida: 'conto',
   contos: 'conto',
+  expressoes: 'expressao',
+  ditados: 'expressao',
   sugestoes: 'sugestoes'
 };
 
@@ -392,6 +411,13 @@ var INSPECAO_HUB_TIPOS = [
   { id: 'divulgacao', labelKey: 'pages.inspections.chipOutreach', fallback: 'Divulgação', sort: 'seriesOrder' },
   { id: 'arte', labelKey: 'pages.inspections.chipArts', fallback: 'Artes', sort: 'seriesOrder', keepVisible: true },
   { id: 'conto', labelKey: 'pages.inspections.chipVida', fallback: 'Vida', sort: 'seriesOrder', keepVisible: true },
+  {
+    id: 'expressao',
+    labelKey: 'pages.inspections.chipExpressions',
+    fallback: 'Expressões',
+    sort: 'seriesOrder',
+    keepVisible: true
+  },
   { id: 'sugestoes', labelKey: 'pages.inspections.chipSuggestions', fallback: 'Sugestões', special: true, keepVisible: true }
 ];
 
@@ -478,12 +504,14 @@ function sortedHubPosts(posts, tipo) {
 function setInspecoesPanels(tipo) {
   var artes = document.getElementById('inspecoes-artes');
   var palavras = document.getElementById('inspecoes-palavras');
+  var expressoes = document.getElementById('inspecoes-expressoes');
   var sugs = document.getElementById('inspecoes-sugestoes');
   var list = document.getElementById('inspecoes-list');
   var searchWrap = document.querySelector('.inspecoes-search-wrap');
 
   if (artes) artes.hidden = tipo !== 'arte';
   if (palavras) palavras.hidden = tipo !== 'palavra';
+  if (expressoes) expressoes.hidden = tipo !== 'expressao';
   if (sugs) sugs.hidden = tipo !== 'sugestoes';
   if (list) {
     list.hidden = tipo === 'sugestoes';

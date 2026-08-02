@@ -1,47 +1,23 @@
 {
-  "id": "dj-brisa-positividade-2026-08",
-  "voice": "dj-brisa",
-  "avatar": "/imagens/inspecoes/vida-dj-brisa-cover.jpg",
+  "id": "arvore-da-vida-2026-08",
   "label": {
-    "pt-BR": "DJ Brisa · Rádio BudGanja",
-    "en": "DJ Brisa · BudGanja Radio",
-    "es": "DJ Brisa · Radio BudGanja"
+    "pt-BR": "Laboratório",
+    "en": "Laboratory",
+    "es": "Laboratorio"
   },
   "title": {
-    "pt-BR": "Acompanhamento da DJ Brisa",
-    "en": "DJ Brisa's accompaniment",
-    "es": "Acompañamiento de DJ Brisa"
+    "pt-BR": "Cada raiz lembra: a vida cresce em silêncio.",
+    "en": "Every root remembers: life grows in silence.",
+    "es": "Cada raíz recuerda: la vida crece en silencio."
   },
   "text": {
-    "pt-BR": "Enquanto inspecionas o laboratório, a rádio pode acompanhar com «Só os Loucos Sabem» — positividade nos dias de luta.",
-    "en": "While you inspect the lab, the radio can accompany you with Só os Loucos Sabem — positivity for the hard days.",
-    "es": "Mientras inspeccionas el laboratorio, la radio puede acompañarte con «Só os Loucos Sabem» — positividad en los días de lucha."
-  },
-  "quote": {
-    "pt-BR": "Toda positividade eu desejo a você / Pois precisamos disso nos dias de luta.",
-    "en": "Toda positividade eu desejo a você / Pois precisamos disso nos dias de luta.",
-    "es": "Toda positividade eu desejo a você / Pois precisamos disso nos dias de luta."
-  },
-  "quoteCredit": {
-    "pt-BR": "Chorão · Charlie Brown Jr. · Só os Loucos Sabem (2009)",
-    "en": "Chorão · Charlie Brown Jr. · Só os Loucos Sabem (2009)",
-    "es": "Chorão · Charlie Brown Jr. · Só os Loucos Sabem (2009)"
+    "pt-BR": "",
+    "en": "",
+    "es": ""
   },
   "cta": {
-    "pt-BR": "Seguir na vibe",
-    "en": "Keep the vibe",
-    "es": "Seguir la vibra"
-  },
-  "linkHref": "/radio/",
-  "linkLabel": {
-    "pt-BR": "Abrir Rádio",
-    "en": "Open Radio",
-    "es": "Abrir Radio"
-  },
-  "secondaryHref": "/posts/post-inspecao-arte-so-os-loucos-sabem.html",
-  "secondaryLabel": {
-    "pt-BR": "Ficha da canção",
-    "en": "Song sheet",
-    "es": "Ficha de la canción"
+    "pt-BR": "Aceitar",
+    "en": "Accept",
+    "es": "Aceptar"
   }
 }

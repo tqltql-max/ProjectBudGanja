@@ -85,6 +85,8 @@ O comando `npm run build` executa, por ordem:
 
 Defina `SITE_URL=https://inspetorbudganja.com.br` para o sitemap apontar ao domínio correcto.
 
+Se o build falhar com `UNKNOWN: unknown error, open '…'` em JSON/HTML no Windows, é quase sempre ficheiro bloqueado (antivírus, pré-visualização do Explorer ou outro processo). Feche a pré-visualização, aguarde uns segundos e volte a correr `npm run build` (ou `npm run verify`).
+
 Para publicar online e já deixar o túnel ativo, use:
 
 ```powershell
@@ -123,9 +125,11 @@ Depois reinicie o servidor local (`npm run start:quick`) e faça refresh forçad
 
 ### Google Play Store (TWA)
 
-1. Instalar JDK 17 + Android Studio (ver `deploy/android/PLAY-STORE.md`)
-2. `.\deploy\android\init-twa.ps1` — gera projecto Android
-3. `.\deploy\android\get-signing-fingerprint.ps1` — copiar SHA-256 para `deploy/android/assetlinks.config.json`
+O Digital Asset Links já fica em `deploy/android/assetlinks.config.json` (fingerprint do `android.keystore` local; password em `deploy/android/.keystore-password`, gitignored). Guarda uma cópia segura dessa password — sem ela não assinas updates na Play Store.
+
+1. Instalar Android Studio + SDK (ver `deploy/android/PLAY-STORE.md`); JDK 17 no PATH ou portátil em `tools/jdk-17`
+2. `.\deploy\android\init-twa.ps1` — gera projecto Android (reutilizar o mesmo `android.keystore`)
+3. `.\deploy\android\get-signing-fingerprint.ps1` — confirmar SHA-256
 4. `npm run build` — publica `/.well-known/assetlinks.json`
 5. `.\deploy\android\build-twa.ps1` — gera `.aab` para a Play Console
 

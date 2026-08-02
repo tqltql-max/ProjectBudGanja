@@ -48,3 +48,16 @@ deploy/android/bubblewrap-project/
 deploy/android/*.keystore
 deploy/android/*.jks
 deploy/android/*.pepk
+deploy/android/.keystore-password
+deploy/android/keystore.password.txt
+
+# JDK / tooling local (não versionar)
+tools/jdk-*/
+tools/*.zip
+
+# Scripts temporários de download/pesquisa
+scripts/tmp-*
+scripts/tmp-*/
+
+# Fontes de imagem temporárias
+imagens/**/_src/

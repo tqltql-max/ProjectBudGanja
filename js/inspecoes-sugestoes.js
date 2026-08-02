@@ -21,7 +21,8 @@
     fruto: 'pages.inspections.sugTipoFruto',
     palavra: 'pages.inspections.sugTipoPalavra',
     pessoas: 'pages.inspections.sugTipoPessoas',
-    arte: 'pages.inspections.sugTipoArte'
+    arte: 'pages.inspections.sugTipoArte',
+    expressao: 'pages.inspections.sugTipoExpressao'
   };
   var STATUS_I18N = {
     ideia: 'pages.inspections.sugStatusIdeia',
@@ -158,7 +159,8 @@
       fruto: 'Fruto',
       palavra: 'Palavra',
       pessoas: 'Pessoas',
-      arte: 'Arte'
+      arte: 'Arte',
+      expressao: 'Expressão'
     };
     return key ? t(key, fallbacks[tipo] || tipo) : tipo;
   }
