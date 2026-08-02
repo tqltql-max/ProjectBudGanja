@@ -405,6 +405,114 @@ body[data-page="vida"] {
     line-height: 1.4;
 }
 
+.vida-poems-list {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.vida-poem-card {
+    appearance: none;
+    text-align: left;
+    cursor: pointer;
+    display: grid;
+    gap: 0.35rem;
+    padding: 1rem 1.1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(223, 194, 98, 0.28);
+    background:
+        linear-gradient(160deg, rgba(223, 194, 98, 0.1), rgba(18, 26, 12, 0.92));
+    color: inherit;
+    font: inherit;
+    transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.vida-poem-card:hover,
+.vida-poem-card:focus-visible {
+    border-color: rgba(223, 194, 98, 0.7);
+    outline: none;
+    transform: translateY(-2px);
+}
+
+.vida-poem-card.is-active {
+    border-color: rgba(223, 194, 98, 0.85);
+    background:
+        linear-gradient(160deg, rgba(223, 194, 98, 0.22), rgba(18, 26, 12, 0.95));
+}
+
+.vida-poem-card-meta {
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(223, 194, 98, 0.85);
+    font-weight: 700;
+}
+
+.vida-poem-card-title {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    color: var(--vida-cream, #f4edd8);
+    font-weight: 700;
+}
+
+.vida-poem-card-teaser {
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: rgba(244, 237, 216, 0.72);
+}
+
+.vida-poem-card-open {
+    margin-top: 0.25rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #dfc262;
+}
+
+.vida-poem-reader {
+    margin-top: 1.35rem;
+    padding: 1.35rem 1.4rem 1.5rem;
+    border-radius: 18px;
+    border: 1px solid rgba(223, 194, 98, 0.32);
+    background:
+        linear-gradient(165deg, rgba(223, 194, 98, 0.08), rgba(12, 18, 8, 0.96));
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.28);
+}
+
+.vida-poem-eyebrow {
+    margin: 0 0 0.35rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(223, 194, 98, 0.9);
+}
+
+.vida-poem-reader h3 {
+    margin: 0 0 0.25rem;
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    font-size: clamp(1.45rem, 3vw, 1.9rem);
+    color: var(--vida-cream, #f4edd8);
+}
+
+.vida-poem-author {
+    margin: 0 0 1.1rem;
+    font-size: 0.95rem;
+    color: rgba(244, 237, 216, 0.65);
+}
+
+.vida-poem-body {
+    display: grid;
+    gap: 1.1rem;
+}
+
+.vida-poem-stanza {
+    margin: 0;
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    font-size: clamp(1.05rem, 2.2vw, 1.22rem);
+    line-height: 1.65;
+    color: rgba(254, 249, 230, 0.92);
+}
+
 .vida-cta-row {
     display: flex;
     flex-wrap: wrap;

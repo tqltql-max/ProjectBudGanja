@@ -118,6 +118,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('sync:vida-poemas', 'sync-vida-poemas.js');
+  } catch (e) {
+    console.warn('Aviso sync:vida-poemas:', e.message);
+  }
+
+  try {
     runStep('sync:i18n-data', 'sync-i18n-data.js');
   } catch (e) {
     console.warn('Aviso sync:i18n-data:', e.message);
