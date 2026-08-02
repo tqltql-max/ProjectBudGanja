@@ -216,11 +216,29 @@
 
     var actions;
     if (mode === 'update') {
+      var updateHref = update && update.href ? String(update.href) : '';
+      var primaryCta = '';
+      if (updateHref && updateHref.charAt(0) === '/') {
+        primaryCta =
+          '<a class="botao cookie-consent-accept cookie-consent-update-cta" href="' +
+          escapeHtml(updateHref) +
+          '" data-update-dismiss="1">' +
+          escapeHtml(pickLocalized(update && update.linkLabel, t('common.siteUpdateOpen', 'Abrir'))) +
+          '</a>';
+      } else {
+        primaryCta =
+          '<button type="button" class="botao cookie-consent-accept" data-update-dismiss="1">' +
+          escapeHtml(pickLocalized(update && update.cta, t('common.siteUpdateGotIt', 'Aceitar'))) +
+          '</button>';
+      }
       actions =
         '<div class="cookie-consent-actions">' +
-        '<button type="button" class="botao cookie-consent-accept" data-update-dismiss="1">' +
-        escapeHtml(pickLocalized(update && update.cta, t('common.siteUpdateGotIt', 'Aceitar'))) +
-        '</button>' +
+        (primaryCta.indexOf('<a ') === 0
+          ? '<button type="button" class="botao botao-outline cookie-consent-deny" data-update-dismiss="1">' +
+            escapeHtml(pickLocalized(update && update.cta, t('common.siteUpdateGotIt', 'Depois'))) +
+            '</button>'
+          : '') +
+        primaryCta +
         '</div>';
     } else {
       actions =

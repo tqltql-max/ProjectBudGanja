@@ -147,12 +147,12 @@ async function main() {
   }
 
   const update = {
-    id: 'bom-dia-inverno-2026-08',
+    id: 'bom-dia-inverno-2026-08-entry',
     href: href,
     linkLabel: {
-      'pt-BR': 'Abrir divulgação',
+      'pt-BR': 'Ver divulgação',
       en: 'Open promotion',
-      es: 'Abrir divulgación'
+      es: 'Ver divulgación'
     },
     label: {
       'pt-BR': 'Divulgação',
@@ -166,9 +166,9 @@ async function main() {
     },
     text: {
       'pt-BR':
-        'Livro da invernagem ártica cruzado com barco, mar, gelo, balde e caminho. Léxico novo no Guia de Palavras.',
-      en: 'Arctic overwintering book crossed with boat, sea, ice, bucket and path. New lexicon in the Words Guide.',
-      es: 'Libro de la invernada ártica cruzado con barco, mar, hielo, balde y camino. Léxico nuevo en la Guía.'
+        'O site abre nesta divulgação: livro da invernagem ártica cruzado com barco, mar, gelo, balde e caminho.',
+      en: 'The site opens on this promotion: Arctic overwintering book crossed with boat, sea, ice, bucket and path.',
+      es: 'El sitio abre en esta divulgación: libro de la invernada ártica cruzado con barco, mar, hielo, balde y camino.'
     },
     cta: {
       'pt-BR': 'Depois',
