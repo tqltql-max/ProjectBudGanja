@@ -1,18 +1,19 @@
-# XIV Curso UNIFESP — Cannabis medicinal (Vol. 1)
+# XIV Curso UNIFESP — Rascunhos das aulas
 
-**Legendas / transcrições** das aulas da XIV edição no canal MovReCam, compiladas pelo Inspetor BudGanja para estudo.
+**Rascunhos** a partir das legendas das aulas da XIV edição (MovReCam), compilados pelo Inspetor BudGanja para estudo. Não é um livro oficial — é material de rascunho / revisão.
 
-> **Aviso:** conteúdo educacional. As legendas vêm do YouTube (muitas vezes **automáticas**) e podem conter erros. **Não** é publicação oficial da UNIFESP nem do MovReCam. Todo o mérito das aulas pertence aos professores e ao MovReCam. **Não substitui** a frequência no SIEX nem aconselhamento clínico/jurídico. Uso preferencial: estudo pessoal / revisão das aulas.
+> **Aviso:** conteúdo educacional. As legendas vêm do YouTube (muitas vezes **automáticas**) e podem conter erros. **Não** é publicação oficial da UNIFESP nem do MovReCam. Todo o mérito das aulas pertence aos professores e ao MovReCam. **Não substitui** a frequência no SIEX nem aconselhamento clínico/jurídico. Uso preferencial: estudo pessoal / rascunho das aulas.
 
 | Campo | Valor |
 |-------|-------|
 | Edição | XIV · 16/06/2026–12/11/2026 |
 | Canal | [MovReCam](https://www.youtube.com/@MovReCam) |
+| Tipo | Rascunhos das aulas (legendas) |
 | Vídeos com legenda | **11** / 11 |
 | Gerado em | 2026-08-02T05:21:31.200Z |
 | Hub de vídeos | [/videos/?channel=movrecam&series=xiv](/videos/?channel=movrecam&series=xiv) |
 
-## Índice
+## Índice das aulas
 
 - [Aula 1 — Apresentação e Orientações do Curso sobre o uso Terapêutico da Cannabis](#aula-1)
 - [Aula 2 — Botânica e a Etnobotânica da Cannabis sativa L. - Profªs Carla Bruniera e Eliana Rodrigues](#aula-2)

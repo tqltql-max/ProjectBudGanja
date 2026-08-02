@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Gera Markdown + HTML do Livro Vol. 1 (XIV) a partir do manifest de legendas.
+ * Gera Markdown + HTML dos rascunhos das aulas XIV a partir do manifest de legendas.
  * Uso: node scripts/build-xiv-livro.js
  * (Corre fetch-xiv-transcripts.js antes se o manifest não existir.)
  */

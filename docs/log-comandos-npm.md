@@ -101,7 +101,7 @@ node scripts/build-movrecam-professores.js
 
 ---
 
-## Livro XIV — legendas das aulas (Vol. 1)
+## Rascunhos das aulas XIV (legendas)
 
 ```bash
 npm run fetch:xiv-transcripts
@@ -111,7 +111,7 @@ npm run build:xiv-livro
 | Comando | O que faz |
 |---------|-----------|
 | `npm run fetch:xiv-transcripts` | Baixa legendas PT das aulas XIV → `content/transcripts/xiv/` |
-| `npm run build:xiv-livro` | Gera Markdown + HTML do livro (`biblioteca/unifesp/livro-xiv.html`) |
+| `npm run build:xiv-livro` | Gera Markdown + HTML dos rascunhos (`biblioteca/unifesp/livro-xiv.html`) |
 
 Fluxo completo quando saem aulas novas:
 
@@ -122,7 +122,7 @@ npm run build
 npm run deploy:online
 ```
 
-Página pública: `/biblioteca/unifesp/livro-xiv.html`
+Página pública: `/biblioteca/unifesp/livro-xiv.html` (URL estável; título = rascunhos das aulas)
 
 ---
 
