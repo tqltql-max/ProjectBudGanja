@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T08:19:02.220Z",
+  "updatedAt": "2026-08-02T08:28:15.945Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -48,12 +48,12 @@
     {
       "id": "dois-ag",
       "word": "2-AG",
-      "simple": "2-Araquidonoilglicerol — endocanabinoide central, com enzimas próprias de síntese e degradação. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "2-Arachidonoylglycerol — central endocannabinoid with its own synthesis and breakdown enzymes. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "2-Araquidonilglicerol — endocannabinoide central, con enzimas propias de síntesis y degradación. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "2-Araquidonoilglicerol — endocanabinoide central; na grade XIV sobe junto com anandamida/BDNF em contextos de meditação, yoga e exercício (estudos observacionais).",
+      "simpleEn": "2-Arachidonoylglycerol — central endocannabinoid; in XIV it rises with anandamide/BDNF in meditation, yoga and exercise contexts (observational studies).",
+      "simpleEs": "2-Araquidonilglicerol — endocannabinoide central; en el XIV sube junto con anandamida/BDNF en contextos de meditación, yoga y ejercicio (estudios observacionales).",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "acesso-gratuito-justica",
@@ -74,6 +74,16 @@
       "group": "tecnico",
       "fromTitle": true,
       "href": "/posts/post-inspecao-derivado-cana-de-acucar.html"
+    },
+    {
+      "id": "aea",
+      "word": "AEA",
+      "simple": "Sigla de anandamida (N-araquidonoiletanolamida) — endocanabinoide cujo aumento aparece em estudos de exercício e, observacionalmente, de meditação/yoga.",
+      "simpleEn": "Abbreviation for anandamide (N-arachidonoylethanolamide) — endocannabinoid whose rise appears in exercise studies and, observationally, meditation/yoga.",
+      "simpleEs": "Sigla de anandamida (N-araquidonoiletanolamida) — endocannabinoide cuyo aumento aparece en estudios de ejercicio y, observacionalmente, de meditación/yoga.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "alecrim",
@@ -186,6 +196,16 @@
       "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html"
     },
     {
+      "id": "autonomia-endogena",
+      "word": "Autonomia endógena",
+      "simple": "Ideia-chave da aula de estilo de vida (Eliana): o corpo pode modular o eCBome com hábitos e PIC — meditação entra nesta prateleira, não no lugar do óleo.",
+      "simpleEn": "Key idea from the lifestyle lecture (Eliana): the body can modulate the eCBome with habits and PIC — meditation belongs on this shelf, not in place of oil.",
+      "simpleEs": "Idea clave de la clase de estilo de vida (Eliana): el cuerpo puede modular el eCBome con hábitos y PIC — la meditación entra en este estante, no en lugar del aceite.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
       "id": "autorizacao-sanitaria",
       "word": "Autorização sanitária",
       "simple": "Permissão no circuito ANVISA (produto, importação, estabelecimento) — distinta de salvo-conduto judicial (HC).",
@@ -234,6 +254,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-arte-barriga-de-trigo.html"
+    },
+    {
+      "id": "bdnf",
+      "word": "BDNF",
+      "simple": "Factor neurotrófico derivado do cérebro — biomarcador citado no estudo-piloto de retiro (meditação/yoga) junto com ↑ AEA e 2-AG; literacia XIV, não diagnóstico.",
+      "simpleEn": "Brain-derived neurotrophic factor — biomarker cited in the retreat pilot (meditation/yoga) with ↑ AEA and 2-AG; XIV literacy, not a diagnosis.",
+      "simpleEs": "Factor neurotrófico derivado del cerebro — biomarcador citado en el piloto de retiro (meditación/yoga) junto con ↑ AEA y 2-AG; literacia XIV, no diagnóstico.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "bhang",
@@ -324,6 +354,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/plantas/camomila/"
+    },
+    {
+      "id": "canabimetico",
+      "word": "Canabimético",
+      "simple": "Efeito ou molécula que imita / potencia a sinalização canabinoide sem ser necessariamente um fitocanabinoide clássico — na aula XIV, também associado a certas PIC (meditação, massagem…).",
+      "simpleEn": "Effect or molecule that mimics / boosts cannabinoid signalling without necessarily being a classic phytocannabinoid — in XIV also linked to some PIC (meditation, massage…).",
+      "simpleEs": "Efecto o molécula que imita / potencia la señalización cannabinoide sin ser necesariamente un fitocannabinoide clásico — en el XIV también asociado a ciertas PIC (meditación, masaje…).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "canabimimetico",
@@ -706,6 +746,16 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "eletroacupuntura",
+      "word": "Eletroacupuntura",
+      "simple": "PIC citada na aula XIV no mesmo bloco da meditação — associada a efeitos canabiméticos / regulação do SEC em revisões indexadas (não é protocolo clínico).",
+      "simpleEn": "Integrative practice cited in XIV beside meditation — linked to cannabimimetic / ECS-regulation effects in indexed reviews (not a clinical protocol).",
+      "simpleEs": "PIC citada en la clase XIV junto a la meditación — asociada a efectos cannabimiméticos / regulación del SEC en revisiones indexadas (no es protocolo clínico).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
       "id": "emocao",
       "word": "Emoção",
       "simple": "Sentimento forte do corpo e da mente — hub lexical da Riley (Divertida Mente).",
@@ -806,6 +856,16 @@
       "href": "/equipamentos/"
     },
     {
+      "id": "estilo-de-vida",
+      "word": "Estilo de vida",
+      "simple": "Camada XIV de modulação endógena quotidiana — dieta, peso, exercício (~30 min → ↑ AEA) — irmã metabólica da PIC (meditação/yoga).",
+      "simpleEn": "XIV layer of everyday endogenous modulation — diet, weight, exercise (~30 min → ↑ AEA) — metabolic sibling of PIC (meditation/yoga).",
+      "simpleEs": "Capa XIV de modulación endógena cotidiana — dieta, peso, ejercicio (~30 min → ↑ AEA) — hermana metabólica de la PIC (meditación/yoga).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
       "id": "estimulante",
       "word": "Estimulante",
       "simple": "Classe de efeito: aumenta alerta ou actividade do sistema nervoso — do café quotidiano a substâncias sob lista.",
@@ -868,12 +928,12 @@
     {
       "id": "fitocanabinoide",
       "word": "Fitocanabinoide",
-      "simple": "Canabinoide produzido por plantas (sobretudo cannabis) — e, nas aulas, compostos vegetais que agem no sistema endocanabinoide. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Cannabinoid made by plants (especially cannabis) — and, in the lectures, plant compounds that act on the endocannabinoid system. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Cannabinoide producido por plantas (sobre todo cannabis) — y, en las clases, compuestos vegetales que actúan en el sistema endocannabinoide. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Canabinoide de planta (sobretudo cannabis) — na grade XIV é a camada de modulação exógena, distinta da via endógena (meditação, estilo de vida, PIC).",
+      "simpleEn": "Plant cannabinoid (especially cannabis) — in XIV the exogenous modulation layer, distinct from the endogenous path (meditation, lifestyle, PIC).",
+      "simpleEs": "Cannabinoide de planta (sobre todo cannabis) — en el XIV es la capa de modulación exógena, distinta de la vía endógena (meditación, estilo de vida, PIC).",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "fitofarmaco",
@@ -1004,6 +1064,16 @@
       "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html"
+    },
+    {
+      "id": "hipoatividade-sec",
+      "word": "Hipoatividade do SEC",
+      "simple": "Estado de baixa produção ou baixa expressão de receptores do sistema endocanabinoide — contexto em que a grade XIV cita meditação/yoga/mindfulness como estratégias de restabelecimento.",
+      "simpleEn": "State of low production or low receptor expression in the endocannabinoid system — context where XIV cites meditation/yoga/mindfulness as restoration strategies.",
+      "simpleEs": "Estado de baja producción o baja expresión de receptores del sistema endocannabinoide — contexto en el que el XIV cita meditación/yoga/mindfulness como estrategias de restablecimiento.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "hortela",
@@ -1276,6 +1346,26 @@
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
+      "id": "modulacao-endogena",
+      "word": "Modulação endógena",
+      "simple": "Caminho XIV em que o próprio organismo regula o endocanabinoidoma — estilo de vida + PIC (meditação, yoga, mindfulness…), sem ingestão de canabinoide.",
+      "simpleEn": "XIV path where the body itself regulates the endocannabinoidome — lifestyle + PIC (meditation, yoga, mindfulness…), without ingesting a cannabinoid.",
+      "simpleEs": "Camino XIV en el que el propio organismo regula el endocannabinoidoma — estilo de vida + PIC (meditación, yoga, mindfulness…), sin ingestión de cannabinoide.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "modulacao-exogena",
+      "word": "Modulação exógena",
+      "simple": "Caminho XIV de intervenção externa — cannabis, canabiméticos, isolados/sintéticos — distinto da autonomia endógena (hábitos e PIC).",
+      "simpleEn": "XIV path of external intervention — cannabis, cannabimimetics, isolates/synthetics — distinct from endogenous autonomy (habits and PIC).",
+      "simpleEs": "Camino XIV de intervención externa — cannabis, cannabimiméticos, aislados/sintéticos — distinto de la autonomía endógena (hábitos y PIC).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
       "id": "movrecam",
       "word": "MovReCam",
       "simple": "Movimento de Reabilitação de Cannabis Medicinal — canal e origem comunitária do curso.",
@@ -1404,6 +1494,16 @@
       "group": "hub",
       "fromTitle": true,
       "href": "/biblioteca/inspecoes/"
+    },
+    {
+      "id": "pic",
+      "word": "PIC",
+      "simple": "Práticas Integrativas e Complementares — na grade XIV: meditação, yoga, mindfulness, massagem, eletroacupuntura como vias de modulação endógena do endocanabinoidoma.",
+      "simpleEn": "Integrative and complementary practices — in XIV: meditation, yoga, mindfulness, massage, electroacupuncture as endogenous modulation paths of the endocannabinoidome.",
+      "simpleEs": "Prácticas integrativas y complementarias — en el XIV: meditación, yoga, mindfulness, masaje, electroacupuntura como vías de modulación endógena del endocannabinoidoma.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "pimenta-do-reino",
@@ -1824,6 +1924,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-figura-william-davis.html"
+    },
+    {
+      "id": "yoga",
+      "word": "Yoga",
+      "simple": "Prática corpo-mente no bloco XIV de PIC endógenas; retiros intensivos (ex. 4 dias) aparecem em estudos observacionais com ↑ AEA, 2-AG e BDNF.",
+      "simpleEn": "Body-mind practice in the XIV endogenous PIC block; intensive retreats (e.g. 4 days) appear in observational studies with ↑ AEA, 2-AG and BDNF.",
+      "simpleEs": "Práctica cuerpo-mente en el bloque XIV de PIC endógenas; retiros intensivos (p. ej. 4 días) aparecen en estudios observacionales con ↑ AEA, 2-AG y BDNF.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     }
   ]
 }

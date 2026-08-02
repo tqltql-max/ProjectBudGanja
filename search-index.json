@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T08:19:09.923Z",
+  "updatedAt": "2026-08-02T08:28:23.167Z",
   "items": [
     {
       "title": "Início",
@@ -1401,9 +1401,9 @@
     },
     {
       "title": "2-AG",
-      "url": "/biblioteca/unifesp/livro-xiv.html",
-      "excerpt": "2-Araquidonoilglicerol — endocanabinoide central, com enzimas próprias de síntese e degradação. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "text": "2-AG 2-Araquidonoilglicerol — endocanabinoide central, com enzimas próprias de síntese e degradação. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário dois-ag"
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "2-Araquidonoilglicerol — endocanabinoide central; na grade XIV sobe junto com anandamida/BDNF em contextos de meditação, yoga e exercício (estudos observacionais).",
+      "text": "2-AG 2-Araquidonoilglicerol — endocanabinoide central; na grade XIV sobe junto com anandamida/BDNF em contextos de meditação, yoga e exercício (estudos observacionais). tecnico guia palavras glossário dois-ag"
     },
     {
       "title": "Acesso gratuito à justiça",
@@ -1416,6 +1416,12 @@
       "url": "/posts/post-inspecao-derivado-cana-de-acucar.html",
       "excerpt": "Substância doce (sacarose e afins) — no site, elo da cana e dos ultraprocessados.",
       "text": "Açúcar Substância doce (sacarose e afins) — no site, elo da cana e dos ultraprocessados. tecnico guia palavras glossário acucar"
+    },
+    {
+      "title": "AEA",
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Sigla de anandamida (N-araquidonoiletanolamida) — endocanabinoide cujo aumento aparece em estudos de exercício e, observacionalmente, de meditação/yoga.",
+      "text": "AEA Sigla de anandamida (N-araquidonoiletanolamida) — endocanabinoide cujo aumento aparece em estudos de exercício e, observacionalmente, de meditação/yoga. tecnico guia palavras glossário aea"
     },
     {
       "title": "Alecrim",
@@ -1484,6 +1490,12 @@
       "text": "Autocultivo Cultivo próprio da planta — no Brasil, zona de disputa entre saúde (HC/salvo-conduto) e risco penal sem amparo processual. classificacao guia palavras glossário autocultivo"
     },
     {
+      "title": "Autonomia endógena",
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Ideia-chave da aula de estilo de vida (Eliana): o corpo pode modular o eCBome com hábitos e PIC — meditação entra nesta prateleira, não no lugar do óleo.",
+      "text": "Autonomia endógena Ideia-chave da aula de estilo de vida (Eliana): o corpo pode modular o eCBome com hábitos e PIC — meditação entra nesta prateleira, não no lugar do óleo. tecnico guia palavras glossário autonomia-endogena"
+    },
+    {
       "title": "Autorização sanitária",
       "url": "/posts/post-inspecao-palavra-rdc-autorizacao-sanitaria.html",
       "excerpt": "Permissão no circuito ANVISA (produto, importação, estabelecimento) — distinta de salvo-conduto judicial (HC).",
@@ -1512,6 +1524,12 @@
       "url": "/posts/post-inspecao-arte-barriga-de-trigo.html",
       "excerpt": "Livro de William Davis (2011) sobre trigo moderno, glicemia e gordura visceral.",
       "text": "Barriga de Trigo Livro de William Davis (2011) sobre trigo moderno, glicemia e gordura visceral. lexico guia palavras glossário barriga-de-trigo"
+    },
+    {
+      "title": "BDNF",
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Factor neurotrófico derivado do cérebro — biomarcador citado no estudo-piloto de retiro (meditação/yoga) junto com ↑ AEA e 2-AG; literacia XIV, não diagnóstico.",
+      "text": "BDNF Factor neurotrófico derivado do cérebro — biomarcador citado no estudo-piloto de retiro (meditação/yoga) junto com ↑ AEA e 2-AG; literacia XIV, não diagnóstico. tecnico guia palavras glossário bdnf"
     },
     {
       "title": "Bhang",
@@ -1566,6 +1584,12 @@
       "url": "/plantas/camomila/",
       "excerpt": "Capítulos de Matricaria chamomilla — tradição de chás calmantes; marcadores como apigenina e óleo azul (camazuleno) em contexto educacional. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Camomila Capítulos de Matricaria chamomilla — tradição de chás calmantes; marcadores como apigenina e óleo azul (camazuleno) em contexto educacional. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário camomila"
+    },
+    {
+      "title": "Canabimético",
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Efeito ou molécula que imita / potencia a sinalização canabinoide sem ser necessariamente um fitocanabinoide clássico — na aula XIV, também associado a certas PIC (meditação, massagem…).",
+      "text": "Canabimético Efeito ou molécula que imita / potencia a sinalização canabinoide sem ser necessariamente um fitocanabinoide clássico — na aula XIV, também associado a certas PIC (meditação, massagem…). tecnico guia palavras glossário canabimetico"
     },
     {
       "title": "Canabimimético",
@@ -1796,6 +1820,12 @@
       "text": "Efeito comitiva Sinergia da planta inteira (canabinoides + terpenos + outros) face ao isolado — «entourage» nas aulas. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário efeito-comitiva"
     },
     {
+      "title": "Eletroacupuntura",
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "PIC citada na aula XIV no mesmo bloco da meditação — associada a efeitos canabiméticos / regulação do SEC em revisões indexadas (não é protocolo clínico).",
+      "text": "Eletroacupuntura PIC citada na aula XIV no mesmo bloco da meditação — associada a efeitos canabiméticos / regulação do SEC em revisões indexadas (não é protocolo clínico). tecnico guia palavras glossário eletroacupuntura"
+    },
+    {
       "title": "Emoção",
       "url": "/posts/post-inspecao-palavra-emocao.html",
       "excerpt": "Sentimento forte do corpo e da mente — hub lexical da Riley (Divertida Mente).",
@@ -1856,6 +1886,12 @@
       "text": "Estaca Pedaço de planta cortado para criar raiz e virar uma planta nova (clone). tecnico guia palavras glossário estaca"
     },
     {
+      "title": "Estilo de vida",
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Camada XIV de modulação endógena quotidiana — dieta, peso, exercício (~30 min → ↑ AEA) — irmã metabólica da PIC (meditação/yoga).",
+      "text": "Estilo de vida Camada XIV de modulação endógena quotidiana — dieta, peso, exercício (~30 min → ↑ AEA) — irmã metabólica da PIC (meditação/yoga). tecnico guia palavras glossário estilo-de-vida"
+    },
+    {
       "title": "Estimulante",
       "url": "/posts/post-inspecao-palavra-estimulante.html",
       "excerpt": "Classe de efeito: aumenta alerta ou actividade do sistema nervoso — do café quotidiano a substâncias sob lista.",
@@ -1893,9 +1929,9 @@
     },
     {
       "title": "Fitocanabinoide",
-      "url": "/biblioteca/unifesp/livro-xiv.html",
-      "excerpt": "Canabinoide produzido por plantas (sobretudo cannabis) — e, nas aulas, compostos vegetais que agem no sistema endocanabinoide. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "text": "Fitocanabinoide Canabinoide produzido por plantas (sobretudo cannabis) — e, nas aulas, compostos vegetais que agem no sistema endocanabinoide. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário fitocanabinoide"
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Canabinoide de planta (sobretudo cannabis) — na grade XIV é a camada de modulação exógena, distinta da via endógena (meditação, estilo de vida, PIC).",
+      "text": "Fitocanabinoide Canabinoide de planta (sobretudo cannabis) — na grade XIV é a camada de modulação exógena, distinta da via endógena (meditação, estilo de vida, PIC). tecnico guia palavras glossário fitocanabinoide"
     },
     {
       "title": "Fitofármaco",
@@ -1974,6 +2010,12 @@
       "url": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
       "excerpt": "Remédio constitucional («remédio heroico») usado como HC preventivo / salvo-conduto no cultivo medicinal — filtro de acesso à justiça.",
       "text": "Habeas corpus Remédio constitucional («remédio heroico») usado como HC preventivo / salvo-conduto no cultivo medicinal — filtro de acesso à justiça. classificacao guia palavras glossário habeas-corpus"
+    },
+    {
+      "title": "Hipoatividade do SEC",
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Estado de baixa produção ou baixa expressão de receptores do sistema endocanabinoide — contexto em que a grade XIV cita meditação/yoga/mindfulness como estratégias de restabelecimento.",
+      "text": "Hipoatividade do SEC Estado de baixa produção ou baixa expressão de receptores do sistema endocanabinoide — contexto em que a grade XIV cita meditação/yoga/mindfulness como estratégias de restabelecimento. tecnico guia palavras glossário hipoatividade-sec"
     },
     {
       "title": "Hortelã",
@@ -2138,6 +2180,18 @@
       "text": "Mindfulness Atenção plena — no bloco XIV de PIC junto com meditação e yoga, associada a efeitos canabiméticos / regulação do SEC. tecnico guia palavras glossário mindfulness"
     },
     {
+      "title": "Modulação endógena",
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Caminho XIV em que o próprio organismo regula o endocanabinoidoma — estilo de vida + PIC (meditação, yoga, mindfulness…), sem ingestão de canabinoide.",
+      "text": "Modulação endógena Caminho XIV em que o próprio organismo regula o endocanabinoidoma — estilo de vida + PIC (meditação, yoga, mindfulness…), sem ingestão de canabinoide. tecnico guia palavras glossário modulacao-endogena"
+    },
+    {
+      "title": "Modulação exógena",
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Caminho XIV de intervenção externa — cannabis, canabiméticos, isolados/sintéticos — distinto da autonomia endógena (hábitos e PIC).",
+      "text": "Modulação exógena Caminho XIV de intervenção externa — cannabis, canabiméticos, isolados/sintéticos — distinto da autonomia endógena (hábitos e PIC). tecnico guia palavras glossário modulacao-exogena"
+    },
+    {
       "title": "MovReCam",
       "url": "/posts/post-inspecao-canal-movrecam.html",
       "excerpt": "Movimento de Reabilitação de Cannabis Medicinal — canal e origem comunitária do curso.",
@@ -2214,6 +2268,12 @@
       "url": "/biblioteca/inspecoes/",
       "excerpt": "Figuras humanas inspecionadas — biografias do legado e da divulgação.",
       "text": "Pessoas Figuras humanas inspecionadas — biografias do legado e da divulgação. hub guia palavras glossário pessoas"
+    },
+    {
+      "title": "PIC",
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Práticas Integrativas e Complementares — na grade XIV: meditação, yoga, mindfulness, massagem, eletroacupuntura como vias de modulação endógena do endocanabinoidoma.",
+      "text": "PIC Práticas Integrativas e Complementares — na grade XIV: meditação, yoga, mindfulness, massagem, eletroacupuntura como vias de modulação endógena do endocanabinoidoma. tecnico guia palavras glossário pic"
     },
     {
       "title": "Pimenta-do-reino",
@@ -2466,6 +2526,12 @@
       "url": "/posts/post-inspecao-figura-william-davis.html",
       "excerpt": "Cardiologista autor de Barriga de Trigo — divulgação anti-trigo (Pessoas).",
       "text": "William Davis Cardiologista autor de Barriga de Trigo — divulgação anti-trigo (Pessoas). lexico guia palavras glossário william-davis"
+    },
+    {
+      "title": "Yoga",
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Prática corpo-mente no bloco XIV de PIC endógenas; retiros intensivos (ex. 4 dias) aparecem em estudos observacionais com ↑ AEA, 2-AG e BDNF.",
+      "text": "Yoga Prática corpo-mente no bloco XIV de PIC endógenas; retiros intensivos (ex. 4 dias) aparecem em estudos observacionais com ↑ AEA, 2-AG e BDNF. tecnico guia palavras glossário yoga"
     }
   ]
 }
