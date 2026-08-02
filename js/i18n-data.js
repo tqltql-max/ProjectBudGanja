@@ -737,8 +737,8 @@ window.__I18N_LOCALES__ = {
         "exploreLead": "Lab tools to practice with (always with an adult).",
         "learnLabel": "Learn languages",
         "learnHintOff": "Choose English or Español — then pass your pointer over the words.",
-        "learnHintEn": "Pass over the words: the gold sheen translates to English, one by one.",
-        "learnHintEs": "Pass over the words: the gold sheen translates to Spanish, one by one.",
+        "learnHintEn": "Pass over words: the gold sheen translates and shows the English phrase.",
+        "learnHintEs": "Pass over words: the gold sheen translates and shows the Spanish phrase.",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
@@ -1510,8 +1510,8 @@ window.__I18N_LOCALES__ = {
         "exploreLead": "Herramientas del laboratorio para practicar (siempre con un adulto).",
         "learnLabel": "Aprender idiomas",
         "learnHintOff": "Elige English o Español — luego pasa el cursor o el dedo por las palabras.",
-        "learnHintEn": "Pasa por las palabras: el brillo dorado traduce al inglés, una a una.",
-        "learnHintEs": "Pasa por las palabras: el brillo dorado traduce al español, una a una.",
+        "learnHintEn": "Pasa por las palabras: el brillo traduce y muestra la frase en inglés.",
+        "learnHintEs": "Pasa por las palabras: el brillo traduce y muestra la frase en español.",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
@@ -2283,8 +2283,8 @@ window.__I18N_LOCALES__ = {
         "exploreLead": "Ferramentas do laboratório para praticar (sempre com um adulto).",
         "learnLabel": "Aprender idiomas",
         "learnHintOff": "Escolhe English ou Español — depois passa o rato/dedo pelas palavras.",
-        "learnHintEn": "Passe pelas palavras: o brilho dourado traduz para English, uma a uma.",
-        "learnHintEs": "Passe pelas palavras: o brilho dourado traduz para español, uma a uma.",
+        "learnHintEn": "Passe pelas palavras: o brilho traduz e mostra a frase em English.",
+        "learnHintEs": "Passe pelas palavras: o brilho traduz e mostra a frase em español.",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {

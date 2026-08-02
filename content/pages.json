@@ -2,7 +2,7 @@
   "index.html": {
     "id": "index.html",
     "label": "Início",
-    "updatedAt": "2026-08-02T00:54:53.800Z",
+    "updatedAt": "2026-08-02T01:01:17.371Z",
     "title": "Início | Inspetor BudGanja",
     "metaDescription": "Inspetor BudGanja — plantas medicinais do Brasil, curso UNIFESP, inspeções, ferramentas e BudGanja Radio.",
     "ogTitle": "Inspetor BudGanja",
@@ -16,7 +16,7 @@
   "entrar.html": {
     "id": "entrar.html",
     "label": "Entrar",
-    "updatedAt": "2026-08-02T00:54:53.804Z",
+    "updatedAt": "2026-08-02T01:01:17.375Z",
     "title": "Entrar | Inspetor BudGanja",
     "metaDescription": "Entre com Google ou conta local para iniciar o onboarding progressivo e activar a sua conta no laboratório.",
     "ogTitle": "Entrar | Inspetor BudGanja",
@@ -30,7 +30,7 @@
   "perfil.html": {
     "id": "perfil.html",
     "label": "Meu perfil",
-    "updatedAt": "2026-08-02T00:54:53.805Z",
+    "updatedAt": "2026-08-02T01:01:17.376Z",
     "title": "Minha conta | Inspetor BudGanja",
     "metaDescription": "Minha conta — dados de acesso e perfil no Inspetor BudGanja.",
     "ogTitle": "Minha conta | Inspetor BudGanja",
@@ -53,7 +53,7 @@
     "headExtra": "",
     "body": "<main id=\"main-content\" class=\"conteudo radio-page\">\n        <div class=\"radio-atmosphere\" aria-hidden=\"true\"></div>\n\n        <header class=\"radio-hero\">\n            <p class=\"radio-hero-brand\">Inspetor BudGanja</p>\n            <h1 id=\"radio-page-title\">BudGanja Radio</h1>\n            <p id=\"radio-page-subtitle\" class=\"radio-hero-sub\">Playlist do laboratório — ouça e partilhe as faixas do Inspetor BudGanja.</p>\n            <p id=\"radio-page-owner\" class=\"radio-page-owner\" hidden></p>\n        </header>\n\n        <section class=\"radio-stage\" id=\"radio-stage\" aria-label=\"Player\">\n            <div class=\"radio-disc\" id=\"radio-disc\" aria-hidden=\"true\">\n                <div class=\"radio-disc-glow\"></div>\n                <div class=\"radio-disc-ring\"></div>\n                <img\n                    class=\"radio-disc-art\"\n                    src=\"/imagens/icon-512.v296.png\"\n                    alt=\"\"\n                    width=\"160\"\n                    height=\"160\"\n                    decoding=\"async\"\n                >\n                <div class=\"radio-eq\" aria-hidden=\"true\">\n                    <i></i><i></i><i></i><i></i><i></i>\n                </div>\n            </div>\n\n            <div class=\"radio-now\">\n                <span class=\"radio-player-label\">A tocar</span>\n                <strong id=\"radio-now-title\">—</strong>\n                <span id=\"radio-now-artist\" class=\"radio-now-artist\"></span>\n            </div>\n\n            <div class=\"radio-player-progress\">\n                <input type=\"range\" id=\"radio-seek\" min=\"0\" max=\"1000\" value=\"0\" step=\"1\" aria-label=\"Posição da faixa\">\n                <div class=\"radio-player-times\">\n                    <span id=\"radio-time-current\">0:00</span>\n                    <span id=\"radio-time-duration\">0:00</span>\n                </div>\n            </div>\n\n            <div class=\"radio-transport\" role=\"group\" aria-label=\"Controlos\">\n                <button type=\"button\" class=\"radio-ctrl\" id=\"radio-prev\" aria-label=\"Faixa anterior\">\n                    <svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"currentColor\" d=\"M6 6h2v12H6V6zm3.5 6 8.5 6V6l-8.5 6z\"/></svg>\n                </button>\n                <button type=\"button\" class=\"radio-ctrl radio-ctrl--play\" id=\"radio-play\" aria-label=\"Reproduzir\">\n                    <svg class=\"radio-icon-play\" viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"currentColor\" d=\"M8 5v14l11-7L8 5z\"/></svg>\n                    <svg class=\"radio-icon-pause\" viewBox=\"0 0 24 24\" width=\"28\" height=\"28\" aria-hidden=\"true\" focusable=\"false\" hidden><path fill=\"currentColor\" d=\"M6 5h4v14H6V5zm8 0h4v14h-4V5z\"/></svg>\n                </button>\n                <button type=\"button\" class=\"radio-ctrl\" id=\"radio-next\" aria-label=\"Faixa seguinte\">\n                    <svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"currentColor\" d=\"M16 6h2v12h-2V6zM6 18l8.5-6L6 6v12z\"/></svg>\n                </button>\n            </div>\n\n            <div class=\"radio-page-actions\">\n                <button type=\"button\" class=\"radio-action\" id=\"radio-share-btn\">\n                    <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"currentColor\" d=\"M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11A2.99 2.99 0 0 0 18 7.91c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L7.96 9.81A2.99 2.99 0 0 0 6 9.09c-1.66 0-3 1.34-3 3s1.34 3 3 3c.76 0 1.44-.3 1.96-.77l7.12 4.16c-.05.21-.08.43-.08.61 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91-1.31-2.91-2.92-2.91z\"/></svg>\n                    Partilhar rádio\n                </button>\n                <button type=\"button\" class=\"radio-action\" id=\"radio-share-track-btn\" aria-label=\"Partilhar faixa a tocar\">\n                    <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"currentColor\" d=\"M12 3v10.55A3.99 3.99 0 0 0 10 13c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z\"/></svg>\n                    Partilhar música\n                </button>\n            </div>\n\n            <p id=\"radio-page-status\" class=\"conta-status radio-page-status\" role=\"status\"></p>\n        </section>\n\n        <section class=\"radio-tracklist-wrap\" aria-label=\"Lista de faixas\">\n            <div class=\"radio-tracklist-head\">\n                <div class=\"radio-tracklist-head-copy\">\n                    <h2 class=\"radio-tracklist-title\">Playlist</h2>\n                    <p class=\"radio-tracklist-hint\">Arrasta as faixas pela alça ⋮⋮ para mudar a ordem.</p>\n                </div>\n                <div class=\"radio-tracklist-head-actions\">\n                    <span id=\"radio-track-count\" class=\"radio-track-count\"></span>\n                    <button type=\"button\" id=\"radio-order-reset\" class=\"radio-order-reset\" hidden>Ordem original</button>\n                </div>\n            </div>\n            <ol id=\"radio-tracklist\" class=\"radio-tracklist\">\n                <li class=\"field-hint\">A carregar playlist…</li>\n            </ol>\n        </section>\n    </main>\n\n    <div id=\"radio-share-sheet\" class=\"radio-share-sheet\" hidden>\n        <button type=\"button\" class=\"radio-share-backdrop\" data-radio-share-close aria-label=\"Fechar partilha\"></button>\n        <div class=\"radio-share-panel\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"radio-share-heading\">\n            <div class=\"radio-share-panel-top\">\n                <p class=\"radio-share-kicker\">Partilhar</p>\n                <button type=\"button\" class=\"radio-share-close\" data-radio-share-close aria-label=\"Fechar\">\n                    <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"currentColor\" d=\"M18.3 5.71 12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.3 19.71 2.89 18.3 9.17 12 2.89 5.71 4.3 4.29l6.29 6.3 6.3-6.3 1.41 1.42z\"/></svg>\n                </button>\n            </div>\n            <div class=\"radio-share-preview\">\n                <img id=\"radio-share-cover\" class=\"radio-share-cover\" src=\"/imagens/og-radio.jpg\" alt=\"\" width=\"1200\" height=\"630\" decoding=\"async\">\n                <div class=\"radio-share-preview-body\">\n                    <p class=\"radio-share-brand\">BudGanja Radio</p>\n                    <strong id=\"radio-share-heading\">Playlist do laboratório</strong>\n                    <span id=\"radio-share-sub\">Inspetor BudGanja</span>\n                </div>\n            </div>\n            <div class=\"radio-share-actions\">\n                <button type=\"button\" class=\"radio-share-chip radio-share-chip--primary\" id=\"radio-share-native\">\n                    <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"currentColor\" d=\"M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11A2.99 2.99 0 0 0 18 7.91c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L7.96 9.81A2.99 2.99 0 0 0 6 9.09c-1.66 0-3 1.34-3 3s1.34 3 3 3c.76 0 1.44-.3 1.96-.77l7.12 4.16c-.05.21-.08.43-.08.61 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91-1.31-2.91-2.92-2.91z\"/></svg>\n                    Partilhar\n                </button>\n                <a class=\"radio-share-chip radio-share-chip--wa\" id=\"radio-share-wa\" href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\">\n                    <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"currentColor\" d=\"M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.76 14.07c-.24.68-1.42 1.25-1.96 1.33-.5.07-1.14.1-1.84-.12-.42-.13-.97-.32-1.67-.62-2.94-1.27-4.85-4.24-5-4.44-.14-.2-1.18-1.57-1.18-3 0-1.42.74-2.12 1-2.41.26-.29.57-.36.76-.36h.55c.17 0 .41-.07.64.49.24.58.82 2 .89 2.15.07.14.12.32.02.51-.1.2-.14.32-.29.49-.14.17-.31.38-.44.51-.14.14-.29.29-.12.57.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.29.14.46.12.63-.07.17-.2.72-.84.91-1.13.19-.29.39-.24.64-.14.26.1 1.64.77 1.92.91.29.14.48.22.55.34.07.12.07.68-.17 1.36z\"/></svg>\n                    WhatsApp\n                </a>\n                <button type=\"button\" class=\"radio-share-chip\" id=\"radio-share-copy\">\n                    <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"currentColor\" d=\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\"/></svg>\n                    Copiar link\n                </button>\n            </div>\n            <p class=\"radio-share-url\" id=\"radio-share-url\" aria-live=\"polite\"></p>\n        </div>\n    </div>\n    <div id=\"radio-share-toast\" class=\"radio-share-toast\" role=\"status\" aria-live=\"polite\" hidden></div>",
     "scripts": "<script src=\"/js/site-features.js?v=296\"></script>\n    <script src=\"/js/radio-order.js?v=296\"></script>\n    <script src=\"/js/radio-media-session.js?v=296\"></script>\n    <script src=\"/js/radio-page.js?v=296\"></script>",
-    "updatedAt": "2026-08-02T00:54:53.805Z"
+    "updatedAt": "2026-08-02T01:01:17.376Z"
   },
   "vida/index.html": {
     "id": "vida/index.html",
@@ -67,13 +67,13 @@
     "headExtra": "",
     "body": "<main id=\"main-content\" class=\"conteudo vida-page\">\r\n        <div class=\"vida-atmosphere\" aria-hidden=\"true\"></div>\r\n\r\n        <header class=\"vida-hero\">\r\n            <p class=\"vida-hero-brand\" data-i18n=\"pages.vida.brand\">Inspetor BudGanja · Vida</p>\r\n            <h1 data-i18n=\"pages.vida.title\">Vida</h1>\r\n            <p class=\"vida-hero-sub\" data-i18n=\"pages.vida.subtitle\">Cada semente merece carinho — um conto familiar para aprender a cuidar das plantas com ciência, natureza e amizade.</p>\r\n            <figure class=\"vida-hero-art\">\r\n                <img\r\n                    src=\"/imagens/vida/equipe.jpg\"\r\n                    alt=\"Equipe Vida — Dona Maria, Joaninha, Inspetor BudGanja e Three Little Birds\"\r\n                    width=\"1600\"\r\n                    height=\"630\"\r\n                    decoding=\"async\"\r\n                    fetchpriority=\"high\">\r\n            </figure>\r\n            <div class=\"vida-hero-actions\">\r\n                <a class=\"botao botao-home\" href=\"#historia\" data-i18n=\"pages.vida.ctaStory\">Ler a história</a>\r\n                <a class=\"botao botao-home botao-home--secondary\" href=\"#personagens\" data-i18n=\"pages.vida.ctaChars\">Conhecer a equipe</a>\r\n            </div>\r\n        </header>\r\n\r\n        <aside class=\"vida-section vida-note\" role=\"note\">\r\n            <strong data-i18n=\"pages.vida.noteTitle\">Conteúdo familiar e educacional.</strong>\r\n            <span data-i18n=\"pages.vida.noteBody\"> Ideal para ler com crianças, com um adulto por perto. Ensina o jeito certo de tratar as plantas — não é protocolo clínico nem substitui orientação responsável.</span>\r\n        </aside>\r\n\r\n        <div data-learn-toolbar></div>\r\n\r\n        <div data-learn-root>\r\n        <section id=\"historia\" class=\"vida-section\" aria-labelledby=\"historia-title\">\r\n            <h2 id=\"historia-title\" data-i18n=\"pages.vida.storyTitle\">O Laboratório e a Sementinha</h2>\r\n            <p class=\"vida-section-lead\" data-i18n=\"pages.vida.storyLead\">Era uma vez, onde o bronze encontrava o verde das folhas…</p>\r\n\r\n            <div class=\"vida-story\">\r\n                <article class=\"vida-story-beat\">\r\n                    <h3>O Inspetor e a sementinha</h3>\r\n                    <p>No Laboratório BudGanja vivia o Inspetor — detetive botânico de chapéu engraçado e um braço mecânico de bronze cheio de engrenagens misteriosas. Com ele, cuidava das plantas com uma precisão quase mágica.</p>\r\n                    <p>Certo dia encontrou uma sementinha muito especial.</p>\r\n                    <p class=\"vida-quote\">«Para esta semente virar uma planta Sênior, precisaremos de toda a equipe!»</p>\r\n                </article>\r\n\r\n                <article class=\"vida-story-beat\">\r\n                    <h3>Dona Maria e a cama fofinha</h3>\r\n                    <p>A primeira a chegar foi a Dona Maria, a sábia mãe do Inspetor. Trouxe o balde de Super Solo — uma «cama fofinha e cheia de vitaminas» para a semente.</p>\r\n                    <p>«O segredo está no carinho e no Chá Microbiano», disse ela, enquanto a Joaninha Joana pousava numa folha, pronta a espantar qualquer «monstro» (como os pulgões) que atrapalhasse o sono da sementinha.</p>\r\n                </article>\r\n\r\n                <article class=\"vida-story-beat\">\r\n                    <h3>Luz, ar e ritmo perfeito</h3>\r\n                    <p>Enquanto a semente acordava e criava raízes, o Inspetor media a luz com o Luxímetro e o ar com o VPD — para o clima ficar sempre perfeito, como um dia de sol no parque.</p>\r\n                </article>\r\n\r\n                <article class=\"vida-story-beat\">\r\n                    <h3>Three Little Birds e a festa das folhas</h3>\r\n                    <p>De repente: violão e batidas de DJ! Os Three Little Birds chegaram para cuidar da alegria do laboratório.</p>\r\n                    <p>O Passarinho Verde contava cada gota. O Passarinho Amarelo marcava cada centímetro no Diário. E a DJ Brisa ligou a Rádio BudGanja — músicas que faziam as folhas dançarem, lembrando a todos que cada pequena coisa vai ficar bem.</p>\r\n                </article>\r\n\r\n                <article class=\"vida-story-beat\">\r\n                    <h3>Do brotinho ao Cultivador Sênior</h3>\r\n                    <p>A plantinha cresceu feliz: Brotinho → Vegetativo com folhas fortes → linda Floração. Quando recebeu o selo de Cultivador Sênior, o laboratório inteiro virou festa!</p>\r\n                    <p>O Inspetor sorriu para a equipe. Sabia: quando a ciência e a natureza trabalham juntas, qualquer semente pode virar uma floresta de sonhos.</p>\r\n                    <p class=\"vida-quote\">Cultivar é como uma grande música: precisa de ritmo, cuidado e muita amizade.</p>\r\n                </article>\r\n            </div>\r\n\r\n            <div class=\"vida-cta-row\" data-learn-skip>\r\n                <a class=\"botao botao-home botao-home--secondary\" href=\"/posts/post-inspecao-conto-vida-laboratorio.html\">Abrir ficha completa</a>\r\n            </div>\r\n        </section>\r\n\r\n        <section id=\"personagens\" class=\"vida-section\" aria-labelledby=\"personagens-title\">\r\n            <h2 id=\"personagens-title\" data-i18n=\"pages.vida.charsTitle\">A equipe do laboratório</h2>\r\n            <p class=\"vida-section-lead\" data-i18n=\"pages.vida.charsLead\">Cada personagem ensina um jeito de cuidar — juntos formam o esquadrão completo.</p>\r\n\r\n            <div class=\"vida-chars\">\r\n                <a class=\"vida-char\" href=\"/posts/post-inspecao-personagem-inspetor.html\">\r\n                    <span class=\"vida-char-role\">Autoridade técnica</span>\r\n                    <h3>O Inspetor</h3>\r\n                    <p>Detetive botânico: mede luz e clima com o braço de bronze para a planta crescer feliz.</p>\r\n                    <span class=\"vida-char-link\">Conhecer →</span>\r\n                </a>\r\n                <a class=\"vida-char\" href=\"/posts/post-inspecao-personagem-dona-maria.html\">\r\n                    <span class=\"vida-char-role\">Mestra do solo</span>\r\n                    <h3>Dona Maria</h3>\r\n                    <p>Mãe do Inspetor e guardiã do Super Solo — o coração orgânico do laboratório.</p>\r\n                    <span class=\"vida-char-link\">Conhecer →</span>\r\n                </a>\r\n                <a class=\"vida-char\" href=\"/posts/post-inspecao-personagem-dj-brisa.html\">\r\n                    <span class=\"vida-char-role\">Voz da harmonia</span>\r\n                    <h3>DJ Brisa</h3>\r\n                    <p>Arara DJ da Rádio BudGanja: torna o aprendizado leve e cheio de boa vibração.</p>\r\n                    <span class=\"vida-char-link\">Conhecer →</span>\r\n                </a>\r\n                <a class=\"vida-char\" href=\"/posts/post-inspecao-personagem-joaninha-joana.html\">\r\n                    <span class=\"vida-char-role\">Guardiã biológica</span>\r\n                    <h3>Joaninha Joana</h3>\r\n                    <p>Protege as folhas dos «monstros» (pulgões) sem veneno — pet da Dona Maria.</p>\r\n                    <span class=\"vida-char-link\">Conhecer →</span>\r\n                </a>\r\n                <a class=\"vida-char\" href=\"/posts/post-inspecao-personagem-three-little-birds.html\">\r\n                    <span class=\"vida-char-role\">Esquadrão IA</span>\r\n                    <h3>Three Little Birds</h3>\r\n                    <p>Verde conta gotas, Amarelo anota o Diário, Brisa cuida da alegria — do semente ao sênior.</p>\r\n                    <span class=\"vida-char-link\">Conhecer →</span>\r\n                </a>\r\n            </div>\r\n        </section>\r\n\r\n        <section id=\"licoes\" class=\"vida-section\" aria-labelledby=\"licoes-title\">\r\n            <h2 id=\"licoes-title\" data-i18n=\"pages.vida.lessonsTitle\">O que a história ensina</h2>\r\n            <p class=\"vida-section-lead\" data-i18n=\"pages.vida.lessonsLead\">Seis ideias simples para tratar as plantas do jeito certo.</p>\r\n\r\n            <div class=\"vida-lessons\">\r\n                <div class=\"vida-lesson\">\r\n                    <strong>Solo vivo</strong>\r\n                    <span>Terra fofa, rica e cheia de vida — a «cama» da semente.</span>\r\n                </div>\r\n                <div class=\"vida-lesson\">\r\n                    <strong>Luz e clima</strong>\r\n                    <span>Medir com carinho para o parque ficar sempre agradável.</span>\r\n                </div>\r\n                <div class=\"vida-lesson\">\r\n                    <strong>Observar</strong>\r\n                    <span>Anotar o crescimento: cada centímetro conta.</span>\r\n                </div>\r\n                <div class=\"vida-lesson\">\r\n                    <strong>Amigos do jardim</strong>\r\n                    <span>Joaninhas e proteção natural, sem veneno.</span>\r\n                </div>\r\n                <div class=\"vida-lesson\">\r\n                    <strong>Alegria</strong>\r\n                    <span>Música, ritmo e companhia fazem as folhas dançarem.</span>\r\n                </div>\r\n                <div class=\"vida-lesson\">\r\n                    <strong>Equipe</strong>\r\n                    <span>Ninguém cuida sozinho — natureza + ciência + família.</span>\r\n                </div>\r\n            </div>\r\n        </section>\r\n\r\n        <section id=\"fases\" class=\"vida-section\" aria-labelledby=\"fases-title\">\r\n            <h2 id=\"fases-title\" data-i18n=\"pages.vida.phasesTitle\">As fases da plantinha</h2>\r\n            <p class=\"vida-section-lead\" data-i18n=\"pages.vida.phasesLead\">Do descanso na terra até o selo de Cultivador Sênior.</p>\r\n\r\n            <ol class=\"vida-phases\">\r\n                <li>\r\n                    <div>\r\n                        <strong>Semente</strong>\r\n                        <span>Preparar a cama (solo) e esperar com paciência.</span>\r\n                    </div>\r\n                </li>\r\n                <li>\r\n                    <div>\r\n                        <strong>Brotinho</strong>\r\n                        <span>Primeiras folhas — água com delicadeza.</span>\r\n                    </div>\r\n                </li>\r\n                <li>\r\n                    <div>\r\n                        <strong>Vegetativo</strong>\r\n                        <span>Folhas fortes — luz e nutrientes em equilíbrio.</span>\r\n                    </div>\r\n                </li>\r\n                <li>\r\n                    <div>\r\n                        <strong>Floração</strong>\r\n                        <span>A planta mostra a sua magia.</span>\r\n                    </div>\r\n                </li>\r\n                <li>\r\n                    <div>\r\n                        <strong>Sênior</strong>\r\n                        <span>Selo de quem cuidou com método e coração.</span>\r\n                    </div>\r\n                </li>\r\n            </ol>\r\n        </section>\r\n        </div>\r\n\r\n        <section class=\"vida-section\" aria-labelledby=\"explorar-title\">\r\n            <h2 id=\"explorar-title\" data-i18n=\"pages.vida.exploreTitle\">Continuar a explorar</h2>\r\n            <p class=\"vida-section-lead\" data-i18n=\"pages.vida.exploreLead\">Ferramentas do laboratório para praticar (sempre com um adulto).</p>\r\n            <div class=\"vida-cta-row\">\r\n                <a class=\"botao botao-home\" href=\"/calculadoras/super-solo.html\">Super Solo</a>\r\n                <a class=\"botao botao-home botao-home--secondary\" href=\"/calculadoras/luximetro.html\">Luxímetro</a>\r\n                <a class=\"botao botao-home botao-home--secondary\" href=\"/cultivo/\">Diário</a>\r\n                <a class=\"botao botao-home botao-home--secondary\" href=\"/radio/\">Rádio</a>\r\n                <a class=\"botao botao-home botao-home--secondary\" href=\"/plantas/\">Plantas</a>\r\n            </div>\r\n        </section>\r\n    </main>",
     "scripts": "<script src=\"/js/learn-glossary.js?v=296\"></script>\r\n    <script src=\"/js/learn-translate.js?v=296\"></script>",
-    "updatedAt": "2026-08-02T00:54:53.805Z",
+    "updatedAt": "2026-08-02T01:01:17.376Z",
     "ogImage": "/imagens/inspecoes/vida-laboratorio-cover.jpg"
   },
   "cultivo/index.html": {
     "id": "cultivo/index.html",
     "label": "Diário de Pesquisas",
-    "updatedAt": "2026-08-02T00:54:53.806Z",
+    "updatedAt": "2026-08-02T01:01:17.377Z",
     "title": "Diário de Pesquisas | Inspetor BudGanja",
     "metaDescription": "Diário de Pesquisas — documente o cultivo de qualquer planta e prepare publicações no Inspetor BudGanja.",
     "ogTitle": "Diário de Pesquisas | Inspetor BudGanja",
@@ -87,7 +87,7 @@
   "guia/cultivo-basico.html": {
     "id": "guia/cultivo-basico.html",
     "label": "Guia de Cultivo",
-    "updatedAt": "2026-08-02T00:54:53.806Z",
+    "updatedAt": "2026-08-02T01:01:17.377Z",
     "title": "Guia de Cultivo | Inspetor BudGanja",
     "metaDescription": "Redirecionamento — use o Diário de Pesquisas e a biblioteca de inspeções do Inspetor BudGanja.",
     "ogTitle": "Guia de Cultivo | Inspetor BudGanja",
@@ -101,7 +101,7 @@
   "videos/index.html": {
     "id": "videos/index.html",
     "label": "Últimos vídeos",
-    "updatedAt": "2026-08-02T00:54:53.806Z",
+    "updatedAt": "2026-08-02T01:01:17.377Z",
     "title": "Vídeos | Inspetor BudGanja",
     "metaDescription": "Assista aos vídeos do Inspetor BudGanja e às aulas dos canais MovReCam e CANABinALL — filtros por canal e série.",
     "ogTitle": "Vídeos | Inspetor BudGanja",
@@ -115,7 +115,7 @@
   "biblioteca/inspecoes/index.html": {
     "id": "biblioteca/inspecoes/index.html",
     "label": "Inspeções",
-    "updatedAt": "2026-08-02T00:54:53.807Z",
+    "updatedAt": "2026-08-02T01:01:17.377Z",
     "title": "Inspeções | Inspetor BudGanja",
     "metaDescription": "Relatórios de inspeção do Inspetor BudGanja: método verificável sobre cultivo, canais e formação — achados, medições e recomendações práticas.",
     "ogTitle": "Inspeções | Inspetor BudGanja",
@@ -129,7 +129,7 @@
   "biblioteca/unifesp/index.html": {
     "id": "biblioteca/unifesp/index.html",
     "label": "Curso UNIFESP",
-    "updatedAt": "2026-08-02T00:54:53.807Z",
+    "updatedAt": "2026-08-02T01:01:17.378Z",
     "title": "Curso UNIFESP | Inspetor BudGanja",
     "metaDescription": "Hub do XIV Curso UNIFESP sobre Cannabis sativa L. medicinal — vagas, carga horária, SIEX, certificado e ligação ao laboratório de fitoterapia.",
     "ogTitle": "Curso UNIFESP | Inspetor BudGanja",
@@ -143,7 +143,7 @@
   "info/sobre.html": {
     "id": "info/sobre.html",
     "label": "Sobre",
-    "updatedAt": "2026-08-02T00:54:53.807Z",
+    "updatedAt": "2026-08-02T01:01:17.378Z",
     "title": "Sobre | Inspetor BudGanja",
     "metaDescription": "Sobre o Inspetor BudGanja — laboratório digital de Tiago Queiroz Loureiro: plantas, animais, inspeções (palavras e legado), Feed Vivo, curso UNIFESP e ferramentas práticas.",
     "ogTitle": "Sobre | Inspetor BudGanja",
@@ -166,12 +166,12 @@
     "headExtra": "",
     "body": "<main id=\"main-content\" class=\"article-page relatorio-container apresentacao-page\">\r\n        <header class=\"article-header\">\r\n            <p class=\"article-eyebrow\">Apresentação institucional · UNIFESP</p>\r\n            <h1>Inspetor BudGanja</h1>\r\n            <p class=\"page-intro\">\r\n                Documento de apresentação à <strong>Reitoria da Universidade Federal de São Paulo</strong>\r\n                e à coordenação do XIV Curso de Extensão em Cannabis Medicinal\r\n                (UNIFESP / MovReCam / SIEX).\r\n            </p>\r\n            <p class=\"apresentacao-lead-links section-cta-inline\">\r\n                <a href=\"/info/apresentacao-inspetor-budganja-unifesp.pdf\" class=\"botao btn-inline\" download id=\"apresentacao-pdf-btn\">Descarregar PDF para a Reitoria</a>\r\n                <a href=\"https://inspetorbudganja.com.br/\" class=\"botao botao-outline btn-inline\">Abrir o laboratório</a>\r\n                <a href=\"/biblioteca/unifesp/\" class=\"botao botao-outline btn-inline\">Hub do curso UNIFESP</a>\r\n            </p>\r\n        </header>\r\n\r\n        <section class=\"info-panel apresentacao-author\" aria-labelledby=\"apresentacao-author-title\">\r\n            <h2 id=\"apresentacao-author-title\">1. Quem apresenta</h2>\r\n            <p class=\"info-panel-text\">\r\n                <strong>Tiago Queiroz Loureiro</strong><br>\r\n                Cientista da computação · ambientes controlados (CEA), automação e IoT agrícola<br>\r\n                Aluno do XIV Curso UNIFESP de Cannabis Medicinal\r\n            </p>\r\n            <p class=\"info-panel-text\">\r\n                Desenvolvi o Inspetor BudGanja como laboratório digital público para cruzar\r\n                formação de extensão, catálogo botânico e ferramentas práticas —\r\n                de forma independente, transparente e educacional.\r\n            </p>\r\n            <p class=\"section-cta-inline\">\r\n                <a href=\"https://www.linkedin.com/in/tiago-queiroz-loureiro/\" class=\"botao botao-outline btn-inline\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a>\r\n                <a href=\"mailto:tql.tql@gmail.com?subject=Apresentação%20Inspetor%20BudGanja%20—%20Reitoria%20UNIFESP\" class=\"botao botao-outline btn-inline\">E-mail</a>\r\n                <a href=\"/info/contato.html\" class=\"botao botao-outline btn-inline\">Contato no site</a>\r\n            </p>\r\n        </section>\r\n\r\n        <section class=\"apresentacao-story\" aria-labelledby=\"apresentacao-resumo-title\">\r\n            <h2 id=\"apresentacao-resumo-title\">2. Resumo executivo</h2>\r\n            <p>\r\n                O <strong>Inspetor BudGanja</strong> (inspetorbudganja.com.br) é uma plataforma web\r\n                pública, multilíngue (português, inglês e espanhol), dedicada a plantas medicinais\r\n                do Brasil, literacia canábica responsável e documentação prática de cultivo.\r\n                O conteúdo é educacional e deixa limites éticos à vista:\r\n                <strong>não substitui orientação médica, farmacêutica ou jurídica</strong>,\r\n                nem a inscrição SIEX ou as aulas oficiais da UNIFESP.\r\n            </p>\r\n        </section>\r\n\r\n        <section class=\"info-panel\" aria-labelledby=\"apresentacao-objetivos-title\">\r\n            <h2 id=\"apresentacao-objetivos-title\">3. Objectivos perante a Universidade</h2>\r\n            <ul class=\"info-list\">\r\n                <li>Ampliar o alcance da formação de extensão em cannabis medicinal com material complementar, organizado e verificável.</li>\r\n                <li>Documentar com mérito explícito o legado científico e comunitário que sustenta o ecossistema UNIFESP / MovReCam / CEBRID.</li>\r\n                <li>Oferecer ferramentas práticas (VPD, DLI, EC, luxímetro) e fichas botânicas alinhadas ao estudo responsável.</li>\r\n                <li>Manter independência editorial — sem reivindicar afiliação, marca ou endosso institucional da UNIFESP.</li>\r\n                <li>Estar disponível para demonstração, críticas da coordenação e alinhamento de boas práticas de citação.</li>\r\n            </ul>\r\n        </section>\r\n\r\n        <section class=\"info-panel\" aria-labelledby=\"apresentacao-unifesp-title\">\r\n            <h2 id=\"apresentacao-unifesp-title\">4. Ligação com o XIV Curso UNIFESP</h2>\r\n            <ul class=\"info-list\">\r\n                <li><a href=\"/biblioteca/unifesp/\">Hub do XIV curso</a> — resumo prático, SIEX, carga horária e caminhos de estudo.</li>\r\n                <li><a href=\"/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html\">Inspeção do programa</a> — auditoria editorial independente do curso de extensão.</li>\r\n                <li>Destaque na página inicial e no hub de vídeos para <strong>MovReCam</strong> e <strong>CANABinALL</strong>.</li>\r\n                <li>O curso foi premiado no <strong>CannaPortugal Global Cannabis Awards 2025</strong> — o laboratório regista esse mérito e o contexto histórico com fontes públicas.</li>\r\n            </ul>\r\n        </section>\r\n\r\n        <section class=\"apresentacao-modules\" aria-labelledby=\"apresentacao-modules-title\">\r\n            <h2 id=\"apresentacao-modules-title\">5. Módulos do laboratório</h2>\r\n            <ol class=\"apresentacao-modules-list\">\r\n                <li>\r\n                    <a href=\"/plantas/\"><strong>Plantas fitoterápicas</strong></a>\r\n                    — fichas educacionais (nome popular/científico, usos tradicionais, partes usadas, cuidados).\r\n                </li>\r\n                <li>\r\n                    <a href=\"/animais/\"><strong>Animais</strong></a>\r\n                    — fichas de interesse zootécnico e educativo ligadas ao laboratório.\r\n                </li>\r\n                <li>\r\n                    <a href=\"/biblioteca/inspecoes/\"><strong>Inspeções</strong></a>\r\n                    — legado (pessoas e CEBRID), canais, cursos, artigos e equipamentos, com método verificável.\r\n                </li>\r\n                <li>\r\n                    <a href=\"/videos/\"><strong>Hub de vídeos</strong></a>\r\n                    — player in-site com filtros por canal e série (aulas XIV, Conceitos, Plantas Sagradas).\r\n                </li>\r\n                <li>\r\n                    <a href=\"/calculadoras/\"><strong>Ferramentas no navegador</strong></a>\r\n                    — VPD, DLI, pH/EC, luxímetro, super solo e outros utilitários.\r\n                </li>\r\n                <li>\r\n                    <a href=\"/cultivo/\"><strong>Diário de pesquisas</strong></a>,\r\n                    <a href=\"/comunidade/\">comunidade</a>,\r\n                    <a href=\"/equipamentos/\">equipamentos</a>\r\n                    e\r\n                    <a href=\"/radio/\">BudGanja Radio</a>\r\n                    como apoios ao estudo.\r\n                </li>\r\n            </ol>\r\n        </section>\r\n\r\n        <section class=\"info-panel\" aria-labelledby=\"apresentacao-legado-title\">\r\n            <h2 id=\"apresentacao-legado-title\">6. Crédito às origens</h2>\r\n            <p class=\"info-panel-text\">\r\n                Método BudGanja: <strong>crédito a quem merece</strong>, com fontes públicas —\r\n                Padre Ticão, Prof. Elisaldo Carlini, CEBRID, Profa. Solange Nappo,\r\n                Profa. Dra. Eliana Rodrigues, Gabrielle Dainezi, Dr. Sidarta Ribeiro,\r\n                canais MovReCam e CANABinALL, e o próprio XIV Curso UNIFESP.\r\n            </p>\r\n            <p class=\"section-cta-inline\">\r\n                <a href=\"/biblioteca/inspecoes/#inspecoes-pessoas\" class=\"botao botao-outline btn-inline\">Ver hub · Legado</a>\r\n                <a href=\"/info/sobre.html\" class=\"botao botao-outline btn-inline\">Sobre o laboratório</a>\r\n            </p>\r\n        </section>\r\n\r\n        <div class=\"section-grid apresentacao-grid\">\r\n            <section class=\"info-panel\">\r\n                <h3>O que este projeto é</h3>\r\n                <ul class=\"info-list\">\r\n                    <li>Iniciativa educacional independente de um aluno do curso.</li>\r\n                    <li>Espaço digital para estudar, documentar e partilhar com responsabilidade.</li>\r\n                    <li>Ponte entre extensão académica, catálogo botânico e prática de laboratório.</li>\r\n                </ul>\r\n            </section>\r\n            <section class=\"info-panel\">\r\n                <h3>O que este projeto não é</h3>\r\n                <ul class=\"info-list\">\r\n                    <li>Não é produto comercial afiliado à UNIFESP.</li>\r\n                    <li>Não substitui inscrição SIEX, aulas oficiais ou certificado.</li>\r\n                    <li>Não presta aconselhamento clínico, farmacêutico ou jurídico.</li>\r\n                </ul>\r\n            </section>\r\n        </div>\r\n\r\n        <section class=\"info-panel apresentacao-ask\" aria-labelledby=\"apresentacao-ask-title\">\r\n            <h2 id=\"apresentacao-ask-title\">7. Pedido à Reitoria e à coordenação</h2>\r\n            <p class=\"info-panel-text\">\r\n                Solicito a oportunidade de uma demonstração breve (online ou presencial) do\r\n                laboratório perante a coordenação do XIV Curso e, se pertinente, perante\r\n                instâncias da Reitoria interessadas em extensão, divulgação científica e\r\n                inovação educacional. Estou aberto a críticas, a correções de citação e a\r\n                alinhar menções ou links oficiais quando fizer sentido institucionalmente.\r\n            </p>\r\n            <p class=\"section-cta-inline\">\r\n                <a href=\"/info/apresentacao-inspetor-budganja-unifesp.pdf\" class=\"botao btn-inline\" download>Descarregar PDF</a>\r\n                <a href=\"mailto:tql.tql@gmail.com?subject=Apresentação%20Inspetor%20BudGanja%20—%20Reitoria%20UNIFESP\" class=\"botao botao-outline btn-inline\">Escrever ao autor</a>\r\n                <a href=\"/info/sobre.html\" class=\"botao botao-outline btn-inline\">Sobre o laboratório</a>\r\n            </p>\r\n        </section>\r\n\r\n        <section class=\"info-panel apresentacao-channels\" aria-labelledby=\"apresentacao-channels-title\">\r\n            <h2 id=\"apresentacao-channels-title\">8. Canais e contacto</h2>\r\n            <p class=\"info-panel-text\">\r\n                Site · YouTube (@InspetorBudGanja) · Spotify · hub de vídeos com MovReCam e CANABinALL.\r\n                Conteúdo complementar, <strong>independente</strong> do curso oficial.\r\n            </p>\r\n            <p class=\"section-cta-inline\">\r\n                <a href=\"/videos/\" class=\"botao botao-outline btn-inline apresentacao-channel-btn\">Vídeos</a>\r\n                <a href=\"https://open.spotify.com/show/033yuLDWnN84xOcfHyJ1FZ\" class=\"botao botao-outline btn-inline apresentacao-channel-btn\" target=\"_blank\" rel=\"noopener noreferrer\">Spotify</a>\r\n                <a href=\"mailto:tql.tql@gmail.com\" class=\"botao botao-outline btn-inline apresentacao-channel-btn\">tql.tql@gmail.com</a>\r\n            </p>\r\n        </section>\r\n\r\n        <section class=\"apresentacao-share info-panel\" aria-labelledby=\"apresentacao-share-title\">\r\n            <h2 id=\"apresentacao-share-title\">Links desta apresentação</h2>\r\n            <p class=\"info-panel-text\">Página web:</p>\r\n            <p class=\"apresentacao-url\">\r\n                <a href=\"https://inspetorbudganja.com.br/info/apresentacao-unifesp.html\">https://inspetorbudganja.com.br/info/apresentacao-unifesp.html</a>\r\n            </p>\r\n            <p class=\"info-panel-text\" style=\"margin-top:0.85rem;\">PDF para partilhar com a Reitoria:</p>\r\n            <p class=\"apresentacao-url\">\r\n                <a href=\"https://inspetorbudganja.com.br/info/apresentacao-inspetor-budganja-unifesp.pdf\">https://inspetorbudganja.com.br/info/apresentacao-inspetor-budganja-unifesp.pdf</a>\r\n            </p>\r\n        </section>\r\n    </main>",
     "scripts": "<script src=\"/js/site-features.js?v=296\"></script>",
-    "updatedAt": "2026-08-02T00:54:53.807Z"
+    "updatedAt": "2026-08-02T01:01:17.378Z"
   },
   "info/contato.html": {
     "id": "info/contato.html",
     "label": "Contato",
-    "updatedAt": "2026-08-02T00:54:53.808Z",
+    "updatedAt": "2026-08-02T01:01:17.379Z",
     "title": "Contato | Inspetor BudGanja",
     "metaDescription": "Entre em contato com o Inspetor BudGanja — e-mail, canal YouTube e perguntas frequentes.",
     "ogTitle": "Contato | Inspetor BudGanja",
@@ -185,7 +185,7 @@
   "info/privacidade.html": {
     "id": "info/privacidade.html",
     "label": "Privacidade",
-    "updatedAt": "2026-08-02T00:54:53.808Z",
+    "updatedAt": "2026-08-02T01:01:17.379Z",
     "title": "Privacidade | Inspetor BudGanja",
     "metaDescription": "Política de privacidade do Inspetor BudGanja — como tratamos dados pessoais em sorteios e contato.",
     "ogTitle": "Privacidade | Inspetor BudGanja",
@@ -199,7 +199,7 @@
   "sorteios/index.html": {
     "id": "sorteios/index.html",
     "label": "Sorteios",
-    "updatedAt": "2026-08-02T00:54:53.808Z",
+    "updatedAt": "2026-08-02T01:01:17.379Z",
     "title": "Sorteios | Inspetor BudGanja",
     "metaDescription": "Sorteio de inauguração do Inspetor BudGanja — em breve, clonadora aeropônica caseira de baixo custo documentada no site.",
     "ogTitle": "Sorteios | Inspetor BudGanja",
@@ -213,7 +213,7 @@
   "comunidade/index.html": {
     "id": "comunidade/index.html",
     "label": "Comunidade",
-    "updatedAt": "2026-08-02T00:54:53.809Z",
+    "updatedAt": "2026-08-02T01:01:17.381Z",
     "title": "Feed Vivo | Inspetor BudGanja",
     "metaDescription": "Feed Vivo da comunidade Inspetor BudGanja — fotos e relatos de cultivo vegetal partilhados pelos cultivadores.",
     "ogTitle": "Feed Vivo | Inspetor BudGanja",
@@ -227,7 +227,7 @@
   "comunidade-admin.html": {
     "id": "comunidade-admin.html",
     "label": "Admin Comunidade",
-    "updatedAt": "2026-08-02T00:54:53.810Z",
+    "updatedAt": "2026-08-02T01:01:17.381Z",
     "title": "Admin Comunidade | Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Admin Comunidade | Inspetor BudGanja",
@@ -241,7 +241,7 @@
   "equipamentos/index.html": {
     "id": "equipamentos/index.html",
     "label": "Equipamentos",
-    "updatedAt": "2026-08-02T00:54:53.810Z",
+    "updatedAt": "2026-08-02T01:01:17.381Z",
     "title": "Equipamentos | Inspetor BudGanja",
     "metaDescription": "Clonadoras caseiras do Inspetor BudGanja — guias separados para 6 estacas (pote) e 12 estacas (balde com aspersores).",
     "ogTitle": "Equipamentos | Inspetor BudGanja",
@@ -255,7 +255,7 @@
   "pesquisas-admin.html": {
     "id": "pesquisas-admin.html",
     "label": "Admin submissões de pesquisas",
-    "updatedAt": "2026-08-02T00:54:53.810Z",
+    "updatedAt": "2026-08-02T01:01:17.381Z",
     "title": "Submissões de pesquisas | Admin Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Submissões de pesquisas | Admin Inspetor BudGanja",
@@ -269,7 +269,7 @@
   "usuarios-admin.html": {
     "id": "usuarios-admin.html",
     "label": "Admin utilizadores",
-    "updatedAt": "2026-08-02T00:54:53.811Z",
+    "updatedAt": "2026-08-02T01:01:17.382Z",
     "title": "Utilizadores | Admin Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Utilizadores | Admin Inspetor BudGanja",
@@ -283,7 +283,7 @@
   "biblioteca/pesquisas/index.html": {
     "id": "biblioteca/pesquisas/index.html",
     "label": "Pesquisas",
-    "updatedAt": "2026-08-02T00:54:53.811Z",
+    "updatedAt": "2026-08-02T01:01:17.382Z",
     "title": "Pesquisas | Inspetor BudGanja",
     "metaDescription": "Pesquisas do Inspetor BudGanja — estudos do laboratório e submissões aprovadas da comunidade.",
     "ogTitle": "Pesquisas | Inspetor BudGanja",
@@ -297,7 +297,7 @@
   "calculadoras/index.html": {
     "id": "calculadoras/index.html",
     "label": "Ferramentas",
-    "updatedAt": "2026-08-02T00:54:53.812Z",
+    "updatedAt": "2026-08-02T01:01:17.382Z",
     "title": "Ferramentas | Inspetor BudGanja",
     "metaDescription": "Ferramentas do Inspetor BudGanja — Super Calc, luxímetro e Super Solo.",
     "ogTitle": "Ferramentas | Inspetor BudGanja",
@@ -311,7 +311,7 @@
   "calculadoras/cultivo-lab.html": {
     "id": "calculadoras/cultivo-lab.html",
     "label": "Super Calc",
-    "updatedAt": "2026-08-02T00:54:53.812Z",
+    "updatedAt": "2026-08-02T01:01:17.383Z",
     "title": "Super Calculadora de Cultivo | Inspetor BudGanja",
     "metaDescription": "Super calculadora de cultivo — VPD, DLI, pH, EC, diluição, volume de vaso, W/m² e custo de energia numa só ferramenta.",
     "ogTitle": "Super Calculadora de Cultivo | Inspetor BudGanja",
@@ -325,7 +325,7 @@
   "calculadoras/luximetro.html": {
     "id": "calculadoras/luximetro.html",
     "label": "Luxímetro",
-    "updatedAt": "2026-08-02T00:54:53.812Z",
+    "updatedAt": "2026-08-02T01:01:17.383Z",
     "title": "Luxímetro | Inspetor BudGanja",
     "metaDescription": "Luxímetro do Inspetor BudGanja — meça a intensidade luminosa e estime PPFD usando a câmera do celular.",
     "ogTitle": "Luxímetro | Inspetor BudGanja",
@@ -339,7 +339,7 @@
   "calculadoras/super-solo.html": {
     "id": "calculadoras/super-solo.html",
     "label": "Super Solo",
-    "updatedAt": "2026-08-02T00:54:53.813Z",
+    "updatedAt": "2026-08-02T01:01:17.383Z",
     "title": "Super Solo | Inspetor BudGanja",
     "metaDescription": "Calcule dosagens de amendments (gramas e ml) para super solo orgânico a partir do volume de substrato.",
     "ogTitle": "Calculadora de Super Solo | Inspetor BudGanja",
@@ -353,7 +353,7 @@
   "equipamentos/clonadora-6-estacas.html": {
     "id": "equipamentos/clonadora-6-estacas.html",
     "label": "Guia: Clonadora 6 estacas",
-    "updatedAt": "2026-08-02T00:54:53.813Z",
+    "updatedAt": "2026-08-02T01:01:17.384Z",
     "title": "Guia: Clonadora de 6 estacas | Inspetor BudGanja",
     "metaDescription": "Guia da clonadora caseira de 6 estacas — pote de sorvete, bucha de louça e bombinha de ar 24 h.",
     "ogTitle": "Guia: Clonadora de 6 estacas | Inspetor BudGanja",
@@ -367,7 +367,7 @@
   "equipamentos/clonadora-12-estacas.html": {
     "id": "equipamentos/clonadora-12-estacas.html",
     "label": "Guia: Clonadora 12 estacas",
-    "updatedAt": "2026-08-02T00:54:53.813Z",
+    "updatedAt": "2026-08-02T01:01:17.384Z",
     "title": "Guia: Clonadora de 12 estacas | Inspetor BudGanja",
     "metaDescription": "Guia da clonadora caseira de 12 estacas — balde, bomba submersa, microaspersores e feltro. Água borrifada 24 h.",
     "ogTitle": "Guia: Clonadora de 12 estacas | Inspetor BudGanja",
@@ -381,7 +381,7 @@
   "equipamentos/manual-clonadora.html": {
     "id": "equipamentos/manual-clonadora.html",
     "label": "Manual: Clonadoras (redirecionamento)",
-    "updatedAt": "2026-08-02T00:54:53.813Z",
+    "updatedAt": "2026-08-02T01:01:17.384Z",
     "title": "Clonadoras | Inspetor BudGanja",
     "metaDescription": "Clonadoras caseiras do Inspetor BudGanja — guias separados para 6 e 12 estacas.",
     "ogTitle": "Clonadoras | Inspetor BudGanja",
@@ -395,7 +395,7 @@
   "equipamentos/manual-hidrocloradora.html": {
     "id": "equipamentos/manual-hidrocloradora.html",
     "label": "Manual: Clonadoras (redirecionamento)",
-    "updatedAt": "2026-08-02T00:54:53.813Z",
+    "updatedAt": "2026-08-02T01:01:17.384Z",
     "title": "Clonadora de 12 estacas | Inspetor BudGanja",
     "metaDescription": "Redirecionamento para o guia da clonadora de 12 estacas.",
     "ogTitle": "Clonadora de 12 estacas | Inspetor BudGanja",
@@ -409,7 +409,7 @@
   "admin-db.html": {
     "id": "admin-db.html",
     "label": "Admin Base de Dados",
-    "updatedAt": "2026-08-02T00:54:53.814Z",
+    "updatedAt": "2026-08-02T01:01:17.385Z",
     "title": "Painel BD | Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Painel BD | Inspetor BudGanja",
@@ -423,7 +423,7 @@
   "biblioteca/pesquisas/substratos.html": {
     "id": "biblioteca/pesquisas/substratos.html",
     "label": "Pesquisa: Substratos",
-    "updatedAt": "2026-08-02T00:54:53.814Z",
+    "updatedAt": "2026-08-02T01:01:17.385Z",
     "title": "Relatório: Otimização da Propagação Vegetal | Inspetor BudGanja",
     "metaDescription": "Relatório técnico: otimização da propagação vegetal via substratos biodegradáveis — Inspetor BudGanja.",
     "ogTitle": "Relatório: Propagação Vegetal | Inspetor BudGanja",

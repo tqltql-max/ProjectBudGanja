@@ -82,6 +82,24 @@ function stampHtml(content) {
       '\n    <script src="/js/ferramentas-nav-data.js?v=' + ASSET_VERSION + '"></script>$1'
     );
   }
+
+  // Modo Aprender: Vida + inspeções (conto, personagens, palavras…).
+  const wantsLearn =
+    /data-page="vida"/.test(next) ||
+    /data-page="inspecao"/.test(next) ||
+    /data-post-slug="inspecao-/.test(next);
+  if (wantsLearn && !next.includes('learn-translate.js')) {
+    next = next.replace(
+      /<\/body>/i,
+      '    <script src="/js/learn-glossary.js?v=' +
+        ASSET_VERSION +
+        '"></script>\n' +
+        '    <script src="/js/learn-translate.js?v=' +
+        ASSET_VERSION +
+        '"></script>\n</body>'
+    );
+  }
+
   return ensureVersionCheckScript(next);
 }
 

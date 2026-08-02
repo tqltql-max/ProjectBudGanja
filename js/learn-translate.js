@@ -1,6 +1,6 @@
 /**
  * Modo Aprender — traduz palavra a palavra com morph letra a letra
- * inspirado no brilho dourado (heroGoldSheen) que percorre o texto.
+ * + tip de frase. Auto-ativa em Vida e posts de inspeção.
  */
 (function (global) {
   'use strict';
@@ -24,9 +24,11 @@
     lang: '',
     root: null,
     toolbar: null,
+    tip: null,
     activeWord: null,
     timers: new WeakMap(),
-    reducedMotion: false
+    reducedMotion: false,
+    forcedPtBody: false
   };
 
   function glossary() {
@@ -94,6 +96,75 @@
     return preferUpper ? ch.toUpperCase() : ch;
   }
 
+  function ensureTip() {
+    if (state.tip) return state.tip;
+    var tip = document.createElement('div');
+    tip.className = 'learn-phrase-tip';
+    tip.setAttribute('role', 'status');
+    tip.setAttribute('aria-live', 'polite');
+    tip.hidden = true;
+    document.body.appendChild(tip);
+    state.tip = tip;
+    return tip;
+  }
+
+  function hideTip() {
+    if (!state.tip) return;
+    state.tip.classList.remove('is-visible');
+    state.tip.hidden = true;
+  }
+
+  function showPhraseTip(wordEl) {
+    var g = glossary();
+    if (!g || !state.lang) return;
+    var block = wordEl.closest(
+      'p, li, h1, h2, h3, h4, h5, blockquote, td, th, .vida-quote, .vida-section-lead, .vida-lesson, figcaption'
+    );
+    if (!block) return;
+    var src =
+      block.getAttribute('data-learn-phrase-src') ||
+      block.textContent ||
+      '';
+    src = String(src).replace(/\s+/g, ' ').trim();
+    if (!src || src.length < 2) return;
+
+    var phrase = g.translatePhrase ? g.translatePhrase(src, state.lang) : '';
+    if (!phrase || phrase === src) return;
+
+    var tip = ensureTip();
+    var label = state.lang === 'es' ? 'Español' : 'English';
+    tip.innerHTML =
+      '<strong>' +
+      label +
+      '</strong>' +
+      '<span></span>';
+    tip.querySelector('span').textContent = phrase;
+    tip.hidden = false;
+
+    var rect = wordEl.getBoundingClientRect();
+    var tipW = Math.min(448, global.innerWidth - 24);
+    var left = Math.max(12, Math.min(rect.left, global.innerWidth - tipW - 12));
+    var top = rect.bottom + 8;
+    if (top + 96 > global.innerHeight) top = Math.max(12, rect.top - 96);
+    tip.style.width = tipW + 'px';
+    tip.style.left = left + 'px';
+    tip.style.top = top + 'px';
+    tip.classList.add('is-visible');
+  }
+
+  function markPhraseSources(root) {
+    root
+      .querySelectorAll(
+        'p, li, h1, h2, h3, h4, h5, blockquote, td, th, .vida-quote, .vida-section-lead, .vida-lesson, figcaption'
+      )
+      .forEach(function (el) {
+        if (el.getAttribute('data-learn-phrase-src')) return;
+        if (el.closest('[data-learn-skip], .learn-toolbar, a.botao')) return;
+        var text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+        if (text) el.setAttribute('data-learn-phrase-src', text);
+      });
+  }
+
   function splitWordChars(wordEl) {
     var text = wordEl.getAttribute('data-learn-src') || wordEl.textContent || '';
     wordEl.textContent = '';
@@ -129,6 +200,7 @@
       wordEl.textContent = target;
       wordEl.classList.add('is-translated');
       wordEl.classList.remove('is-sheen');
+      showPhraseTip(wordEl);
       return;
     }
 
@@ -136,7 +208,6 @@
     var maxLen = Math.max(src.length, target.length);
     var charset = scrambleCharset(state.lang);
 
-    // Expand / shrink char spans to target length
     while (chars.length < maxLen) {
       var extra = document.createElement('span');
       extra.className = 'learn-char learn-char--grow';
@@ -148,7 +219,6 @@
 
     chars.forEach(function (span, i) {
       var finalCh = i < target.length ? target.charAt(i) : '';
-      // Rápido: 1–2 frames de scramble por letra, stagger curto.
       var steps = finalCh ? 1 + (i % 2) : 0;
       var step = 0;
       var delay = i * 12;
@@ -169,6 +239,7 @@
           schedule(wordEl, function () {
             setPlainText(wordEl, target);
             wordEl.classList.add('is-translated');
+            showPhraseTip(wordEl);
           }, 20);
         }
       }, delay);
@@ -178,7 +249,10 @@
   function revertWord(wordEl) {
     var src = wordEl.getAttribute('data-learn-src') || '';
     if (!src) return;
-    if ((wordEl.getAttribute('data-learn-shown') || src) === src && !wordEl.classList.contains('is-translated')) {
+    if (
+      (wordEl.getAttribute('data-learn-shown') || src) === src &&
+      !wordEl.classList.contains('is-translated')
+    ) {
       return;
     }
     clearTimers(wordEl);
@@ -189,7 +263,6 @@
       wordEl.removeAttribute('aria-label');
       return;
     }
-    // Snap back imediato (só um flash de sheen)
     schedule(wordEl, function () {
       setPlainText(wordEl, src);
       wordEl.removeAttribute('data-learn-shown');
@@ -199,7 +272,10 @@
 
   function activateWord(wordEl) {
     if (!wordEl || !state.lang) return;
-    if (state.activeWord === wordEl) return;
+    if (state.activeWord === wordEl) {
+      showPhraseTip(wordEl);
+      return;
+    }
     if (state.activeWord) revertWord(state.activeWord);
     state.activeWord = wordEl;
     var src = wordEl.getAttribute('data-learn-src') || '';
@@ -207,6 +283,7 @@
     var translated = g ? g.lookup(src, state.lang) : '';
     if (!translated) {
       wordEl.classList.add('is-sheen', 'is-unknown');
+      showPhraseTip(wordEl);
       schedule(wordEl, function () {
         wordEl.classList.remove('is-sheen');
       }, 160);
@@ -244,7 +321,12 @@
   function shouldSkip(el) {
     if (!el || el.nodeType !== 1) return true;
     if (SKIP_TAGS[el.tagName]) return true;
-    if (el.closest && el.closest('.learn-toolbar, .learn-word, a.botao, .vida-hero-actions, .vida-cta-row')) {
+    if (
+      el.closest &&
+      el.closest(
+        '.learn-toolbar, .learn-word, .learn-phrase-tip, a.botao, .vida-hero-actions, .vida-cta-row, .article-share, .voltar-link'
+      )
+    ) {
       return true;
     }
     if (el.closest && el.closest('[data-learn-skip]')) return true;
@@ -252,12 +334,17 @@
   }
 
   function walk(root) {
+    markPhraseSources(root);
     var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode: function (node) {
         var parent = node.parentNode;
         if (!parent || shouldSkip(parent)) return NodeFilter.FILTER_REJECT;
-        if (parent.closest && parent.closest('.learn-toolbar')) return NodeFilter.FILTER_REJECT;
-        if (!node.nodeValue || !/\S/.test(node.nodeValue)) return NodeFilter.FILTER_REJECT;
+        if (parent.closest && parent.closest('.learn-toolbar')) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        if (!node.nodeValue || !/\S/.test(node.nodeValue)) {
+          return NodeFilter.FILTER_REJECT;
+        }
         return NodeFilter.FILTER_ACCEPT;
       }
     });
@@ -295,18 +382,41 @@
       } else if (state.lang === 'es') {
         hint.textContent = t(
           'pages.vida.learnHintEs',
-          'Passe pelas palavras: o brilho dourado traduz para español, uma a uma.'
+          'Passe pelas palavras: o brilho traduz e mostra a frase em español.'
         );
       } else {
         hint.textContent = t(
           'pages.vida.learnHintEn',
-          'Pass over the words: the gold sheen translates to English, one by one.'
+          'Pass over words: the gold sheen translates and shows the English phrase.'
         );
       }
     }
     var label = state.toolbar.querySelector('[data-learn-label]');
     if (label) {
       label.textContent = t('pages.vida.learnLabel', 'Aprender idiomas');
+    }
+  }
+
+  function forcePtPostBody() {
+    var bodies = document.querySelectorAll('[data-post-body]');
+    if (!bodies.length) return null;
+    var pt = document.querySelector('[data-post-body][data-locale="pt-BR"]');
+    if (!pt) return null;
+    bodies.forEach(function (b) {
+      var show = b === pt;
+      b.hidden = !show;
+      if (show) b.removeAttribute('hidden');
+      else b.setAttribute('hidden', '');
+    });
+    state.forcedPtBody = true;
+    return pt;
+  }
+
+  function restorePostBodies() {
+    if (!state.forcedPtBody) return;
+    state.forcedPtBody = false;
+    if (global.BudGanjaI18n && typeof global.BudGanjaI18n.apply === 'function') {
+      global.BudGanjaI18n.apply();
     }
   }
 
@@ -317,6 +427,7 @@
     saveLang(next);
     state.activeWord = null;
     state.reducedMotion = prefersReducedMotion();
+    hideTip();
 
     if (!state.root) return;
 
@@ -324,7 +435,16 @@
       state.root.classList.remove('learn-mode-on');
       document.body.classList.remove('learn-mode-active');
       unwrapRoot(state.root);
+      restorePostBodies();
     } else {
+      if (state.root.getAttribute('data-post-body') != null || document.querySelector('[data-post-body]')) {
+        var pt = forcePtPostBody();
+        if (pt && pt !== state.root) {
+          unwrapRoot(state.root);
+          state.root = pt;
+          if (!pt.hasAttribute('data-learn-root')) pt.setAttribute('data-learn-root', '');
+        }
+      }
       unwrapRoot(state.root);
       walk(state.root);
       state.root.classList.add('learn-mode-on');
@@ -344,12 +464,15 @@
     if (!state.lang || !state.activeWord) return;
     var related = e.relatedTarget;
     if (related && state.activeWord.contains(related)) return;
-    if (related && related.closest && related.closest('.learn-word') === state.activeWord) return;
+    if (related && related.closest && related.closest('.learn-word') === state.activeWord) {
+      return;
+    }
     var leaving = state.activeWord;
     schedule(leaving, function () {
       if (state.activeWord === leaving) {
         revertWord(leaving);
         state.activeWord = null;
+        hideTip();
       }
     }, 80);
   }
@@ -360,13 +483,14 @@
     if (word) activateWord(word);
   }
 
-  function onFocusOut(e) {
+  function onFocusOut() {
     if (!state.lang || !state.activeWord) return;
     var leaving = state.activeWord;
     schedule(leaving, function () {
       if (state.activeWord === leaving) {
         revertWord(leaving);
         state.activeWord = null;
+        hideTip();
       }
     }, 80);
   }
@@ -397,20 +521,63 @@
     return bar;
   }
 
+  function resolveRoot() {
+    var explicit = document.querySelector('[data-learn-root]');
+    if (explicit) return explicit;
+
+    var page = (document.body && document.body.dataset.page) || '';
+    var slug = (document.body && document.body.dataset.postSlug) || '';
+    var isInspecao = page === 'inspecao' || slug.indexOf('inspecao') === 0;
+
+    if (isInspecao) {
+      var pt = document.querySelector('[data-post-body][data-locale="pt-BR"]');
+      if (pt) {
+        pt.setAttribute('data-learn-root', '');
+        return pt;
+      }
+      var main = document.querySelector('#main-content');
+      if (main) {
+        main.setAttribute('data-learn-root', '');
+        return main;
+      }
+    }
+
+    if (page === 'vida') {
+      var vida = document.querySelector('#main-content');
+      if (vida) {
+        vida.setAttribute('data-learn-root', '');
+        return vida;
+      }
+    }
+
+    return null;
+  }
+
+  function placeToolbar(root) {
+    var mount = document.querySelector('[data-learn-toolbar]');
+    if (mount) {
+      mount.appendChild(state.toolbar);
+      return;
+    }
+    if (root.getAttribute('data-post-body') != null) {
+      var main = document.getElementById('main-content');
+      var header = main && main.querySelector('.article-header');
+      if (header && header.parentNode) {
+        header.parentNode.insertBefore(state.toolbar, header.nextSibling);
+        return;
+      }
+    }
+    root.insertBefore(state.toolbar, root.firstChild);
+  }
+
   function init() {
-    var root = document.querySelector('[data-learn-root]');
+    var root = resolveRoot();
     if (!root) return;
 
     state.root = root;
     state.reducedMotion = prefersReducedMotion();
     state.toolbar = buildToolbar();
-
-    var mount = document.querySelector('[data-learn-toolbar]') || root;
-    if (mount.hasAttribute && mount.hasAttribute('data-learn-toolbar')) {
-      mount.appendChild(state.toolbar);
-    } else {
-      root.insertBefore(state.toolbar, root.firstChild);
-    }
+    placeToolbar(root);
 
     state.toolbar.addEventListener('click', onToolbarClick);
     root.addEventListener('pointerover', onPointerOver);
@@ -419,12 +586,15 @@
     root.addEventListener('focusout', onFocusOut);
 
     global.addEventListener('budganja:locale-change', function () {
-      // Reaplica wraps se o i18n reescreveu texto no DOM.
       if (state.lang) {
         var keep = state.lang;
         state.lang = '';
         unwrapRoot(state.root);
         state.lang = keep;
+        if (document.querySelector('[data-post-body]')) {
+          var pt = forcePtPostBody();
+          if (pt) state.root = pt;
+        }
         walk(state.root);
         state.root.classList.add('learn-mode-on');
       }

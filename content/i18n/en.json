@@ -735,8 +735,8 @@
       "exploreLead": "Lab tools to practice with (always with an adult).",
       "learnLabel": "Learn languages",
       "learnHintOff": "Choose English or Español — then pass your pointer over the words.",
-      "learnHintEn": "Pass over the words: the gold sheen translates to English, one by one.",
-      "learnHintEs": "Pass over the words: the gold sheen translates to Spanish, one by one.",
+      "learnHintEn": "Pass over words: the gold sheen translates and shows the English phrase.",
+      "learnHintEs": "Pass over words: the gold sheen translates and shows the Spanish phrase.",
       "docTitle": "Vida | Inspetor BudGanja"
     },
     "about": {

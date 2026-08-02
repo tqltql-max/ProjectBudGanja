@@ -1,0 +1,190 @@
+/* Modo Aprender — tradução palavra a palavra + tip de frase */
+
+.learn-toolbar {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 1.25rem;
+    padding: 0.9rem 1.1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(223, 194, 98, 0.35);
+    background:
+        linear-gradient(135deg, rgba(223, 194, 98, 0.12), rgba(124, 179, 66, 0.08)),
+        rgba(12, 18, 8, 0.92);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
+body[data-page="vida"] .learn-toolbar {
+    margin-left: var(--space-page-x, 1.25rem);
+    margin-right: var(--space-page-x, 1.25rem);
+}
+
+.learn-toolbar-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.65rem 1rem;
+}
+
+.learn-toolbar-label {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #dfc262;
+}
+
+.learn-toolbar-actions {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.learn-toolbar-btn {
+    appearance: none;
+    border: 1px solid rgba(223, 194, 98, 0.35);
+    background: rgba(10, 14, 8, 0.65);
+    color: rgba(244, 237, 216, 0.88);
+    font-family: "Nunito", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
+    padding: 0.4rem 0.75rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.learn-toolbar-btn:hover,
+.learn-toolbar-btn:focus-visible {
+    border-color: rgba(223, 194, 98, 0.75);
+    color: #fef9d7;
+    outline: none;
+}
+
+.learn-toolbar-btn.is-active {
+    background: linear-gradient(135deg, #dfc262, #a68628);
+    border-color: transparent;
+    color: #12180e;
+    transform: translateY(-1px);
+}
+
+.learn-toolbar-hint {
+    margin: 0.55rem 0 0;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    color: rgba(244, 237, 216, 0.72);
+}
+
+.learn-mode-on .learn-word {
+    display: inline;
+    cursor: pointer;
+    border-radius: 0.2em;
+    padding: 0 0.05em;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.learn-mode-on .learn-word:hover,
+.learn-mode-on .learn-word:focus-visible {
+    outline: none;
+    background: rgba(223, 194, 98, 0.12);
+}
+
+.learn-word.is-sheen,
+.learn-word.is-translated {
+    background: linear-gradient(
+        105deg,
+        rgba(254, 249, 215, 0.15) 0%,
+        rgba(223, 194, 98, 0.55) 45%,
+        rgba(124, 179, 66, 0.25) 70%,
+        rgba(254, 249, 215, 0.1) 100%
+    );
+    background-size: 220% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: learnWordSheen 0.28s ease-out;
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.35));
+}
+
+.learn-word.is-translated {
+    animation: none;
+    background-position: 100% 50%;
+    color: #f0d060;
+    -webkit-text-fill-color: #f0d060;
+    background: none;
+    filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.28));
+}
+
+.learn-word.is-unknown.is-sheen {
+    background: rgba(223, 194, 98, 0.18);
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+    filter: none;
+    animation: none;
+}
+
+.learn-word--chars {
+    white-space: normal;
+}
+
+.learn-char {
+    display: inline-block;
+    min-width: 0.2em;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.learn-char--fade {
+    opacity: 0;
+    transform: scaleY(0.4);
+    width: 0;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.learn-phrase-tip {
+    position: fixed;
+    z-index: 1200;
+    max-width: min(28rem, calc(100vw - 1.5rem));
+    padding: 0.65rem 0.85rem;
+    border-radius: 12px;
+    border: 1px solid rgba(223, 194, 98, 0.45);
+    background: rgba(12, 18, 8, 0.96);
+    color: #f4edd8;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.learn-phrase-tip.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.learn-phrase-tip strong {
+    display: block;
+    margin-bottom: 0.2rem;
+    color: #dfc262;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+@keyframes learnWordSheen {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .learn-word.is-sheen,
+    .learn-word.is-translated,
+    .learn-phrase-tip {
+        animation: none !important;
+        transition: none !important;
+        filter: none;
+    }
+}
