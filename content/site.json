@@ -131,6 +131,14 @@
                   "description": "Relatório sobre substratos biodegradáveis."
                 },
                 {
+                  "label": "Pesquisa: Da molécula ao lixo — fármacos, industrialização e desigualdade",
+                  "tileLabel": "Pesquisa: Da molécula ao lixo —…",
+                  "href": "/posts/post-pesquisa-molecula-ao-lixo.html",
+                  "icon": "📋",
+                  "slug": "post-pesquisa-molecula-ao-lixo",
+                  "description": "Mapa preliminar: drogas e derivados industriais no ciclo extrair→descartar — resíduos, exagero, desperdício e dano a plantas, animais e pessoas."
+                },
+                {
                   "label": "Super Solo: Guia de Uso",
                   "tileLabel": "Super Solo: Guia de Uso",
                   "href": "/posts/post-guia-calculadora-super-solo.html",
@@ -1396,6 +1404,30 @@
                   "slug": "post-inspecao-guia-meditacao-endocanabinoidoma",
                   "description": "Como a meditação, o yoga e o mindfulness entram no mapa XIV de modulação endógena do endocanabinoidoma (AEA/2-AG/BDNF). Elo Eliana Rodrigues · SEC. Não é protocolo clínico.",
                   "featured": true
+                },
+                {
+                  "label": "Inspeção: Guia quimiotipos — THC, CBD, CBG e a composição da cannabis",
+                  "tileLabel": "Inspeção: Guia quimiotipos — TH…",
+                  "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-guia-quimiotipos-cannabis",
+                  "description": "Resumo da Aula 10 XIV (Diogo): metabólitos, biossíntese, cinco quimiotipos e literacia fitoterápico × isolado. Não é laudo nem protocolo."
+                },
+                {
+                  "label": "Inspeção: Guia canabiméticos — modular o SEC por via exógena",
+                  "tileLabel": "Inspeção: Guia canabiméticos — …",
+                  "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-guia-canabimeticos-modulacao",
+                  "description": "Resumo da Aula 7 XIV (Eliana): modulação exógena, CB1/CB2, canabiméticos e moléculas em pesquisa — irmão do guia de meditação (via endógena)."
+                },
+                {
+                  "label": "Inspeção: Guia Farmácia Viva — plantas medicinais e cannabis no SUS",
+                  "tileLabel": "Inspeção: Guia Farmácia Viva — …",
+                  "href": "/posts/post-inspecao-guia-farmacia-viva.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-guia-farmacia-viva",
+                  "description": "Resumo da Aula 5 XIV (Jaqueline): Farmácia Viva como política do SUS, Portaria 886/2010, modalidades e o lugar da cannabis na cadeia pública."
                 }
               ]
             },
