@@ -2451,6 +2451,25 @@
     "seriesLabel": "Mulungu"
   },
   {
+    "title": "Inspeção: Verdade — a palavra de verificar no laboratório",
+    "titleEn": "Inspection: Verdade — the word for verifying in the lab",
+    "titleEs": "Inspección: Verdade — la palabra de verificar en el laboratorio",
+    "excerpt": "Palavras: «verdade» (latim *vērĭtās*) — afirmar com método no BudGanja: citar, medir e não fabricar evidência.",
+    "excerptEn": "Words: “verdade” (Latin *vērĭtās*) — affirming with method in BudGanja: cite, measure, and do not fabricate evidence.",
+    "excerptEs": "Palabras: «verdade» (latín *vērĭtās*) — afirmar con método en BudGanja: citar, medir y no fabricar evidencia.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-verdade",
+    "url": "/posts/post-inspecao-palavra-verdade.html",
+    "date": "2026-08-02T17:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-verdade.html",
+    "coverImage": "/imagens/inspecoes/verdade-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 21,
+    "seriesLabel": "Verdade · palavra"
+  },
+  {
     "title": "Inspeção: Psicotrópico — classe clínica e controlo no laboratório",
     "titleEn": "Inspection: Psicotrópico — clinical and control class in the lab",
     "titleEs": "Inspección: Psicotrópico — clase clínica y de control en el laboratorio",

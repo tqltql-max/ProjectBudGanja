@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T12:09:18.212Z",
+  "updatedAt": "2026-08-02T12:27:39.344Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Verdade — a palavra de verificar no laboratório",
+      "url": "/posts/post-inspecao-palavra-verdade.html",
+      "excerpt": "Palavras: «verdade» (latim *vērĭtās*) — afirmar com método no BudGanja: citar, medir e não fabricar evidência.",
+      "text": "Inspeção: Verdade — a palavra de verificar no laboratório Palavras: «verdade» (latim *vērĭtās*) — afirmar com método no BudGanja: citar, medir e não fabricar evidência. inspecao ## Escopo\n\nInspeção editorial e linguística da palavra **verdade** — do latim *vērĭtās* / *vērus* («verdadeiro») à exigência de **dizer o que se pode verificar** no laboratório. No Inspetor BudGanja, verdade não é slogan: é método — citar, medir, separar mito de evidência, e não fabricar o que a planta ou a lei não disseram.\n\n> **Nota metodológica:** auditoria independente. Étimo de trabalho: latim *vērus* («verdadeiro») → *vērĭtās* → português **verdade** (cognatos: esp. *verdad*, fr. *vérité*, ing. *verity* / *truth*, it. *verità*). Fontes de apoio: [Wikcionário · verdade](https://en.wiktionary.org/wiki/verdade), [Wikipédia · Verdade](https://pt.wikipedia.org/wiki/Verdade). **Ficha de palavra ≠ tratado de epistemologia** — aqui inspecionamos o **vocábulo** e a sua rede no laboratório (inspeções, [UNIFESP](/biblioteca/unifesp/), [Vida](/vida/), artes). Sem afiliação comercial.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **verdade** |\n| Classe | Substantivo feminino |\n| Étimo (hipótese forte) | Latim *vērus* («verdadeiro, real») → *vērĭtās* → PT *verdade* |\n| Família | *verdadeiro/a* · *verificar* · *veredito* · *veraz* · *averiguar* |\n| Cognatos | esp. *verdad* · fr. *vérité* · it. *verità* · ing. *verity* / *truth* · lat. *veritas* |\n| Tipo BudGanja | Palavra — rigor do que se afirma sobre planta, lei e cuidado |\n| Elo catálogo | [Plantas](/plantas/) · [cultivo](/guia/cultivo-basico.html) · [inspeções](/biblioteca/inspecoes/) |\n| Elo Palavras | [criatividade](/posts/post-inspecao-palavra-criatividade.html) · [caminho](/posts/post-inspecao-palavra-caminho.html) · [simbiose](/posts/post-inspecao-palavra-simbiose.html) |\n| Elo Artes | [Matrix](/posts/post-inspecao-filme-the-matrix.html) · [Alice](/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html) · [Vid"
     },
     {
       "title": "Inspeção: Criatividade — a palavra de fazer nascer no laboratório",
@@ -2730,6 +2736,12 @@
       "url": "/posts/post-inspecao-palavra-criatividade.html",
       "excerpt": "Do latim *creāre* (fazer nascer) — inventar com método; no BudGanja, cultivar, nomear, compor e medir.",
       "text": "Criatividade Do latim *creāre* (fazer nascer) — inventar com método; no BudGanja, cultivar, nomear, compor e medir. lexico guia palavras glossário criatividade"
+    },
+    {
+      "title": "Verdade",
+      "url": "/posts/post-inspecao-palavra-verdade.html",
+      "excerpt": "Do latim *vērĭtās* / *vērus* — o que se pode verificar; no BudGanja, citar, medir e não fabricar evidência.",
+      "text": "Verdade Do latim *vērĭtās* / *vērus* — o que se pode verificar; no BudGanja, citar, medir e não fabricar evidência. lexico guia palavras glossário verdade"
     },
     {
       "title": "Sintético",

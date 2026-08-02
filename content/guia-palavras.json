@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T11:36:26.250Z",
+  "updatedAt": "2026-08-02T12:27:29.814Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2144,6 +2144,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-simbiose.html"
+    },
+    {
+      "id": "criatividade",
+      "word": "Criatividade",
+      "simple": "Do latim *creāre* (fazer nascer) — inventar com método; no BudGanja, cultivar, nomear, compor e medir.",
+      "simpleEn": "From Latin *creāre* (to bring forth) — inventing with method; in BudGanja, grow, name, compose and measure.",
+      "simpleEs": "Del latín *creāre* (hacer nacer) — inventar con método; en BudGanja, cultivar, nombrar, componer y medir.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-criatividade.html"
+    },
+    {
+      "id": "verdade",
+      "word": "Verdade",
+      "simple": "Do latim *vērĭtās* / *vērus* — o que se pode verificar; no BudGanja, citar, medir e não fabricar evidência.",
+      "simpleEn": "From Latin *vērĭtās* / *vērus* — what can be verified; in BudGanja, cite, measure, and do not fabricate evidence.",
+      "simpleEs": "Del latín *vērĭtās* / *vērus* — lo verificable; en BudGanja, citar, medir y no fabricar evidencia.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-verdade.html"
     },
     {
       "id": "sintetico",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T11:36:26.248Z",
+  "updatedAt": "2026-08-02T12:27:29.811Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2285,6 +2285,50 @@
         "/vida/"
       ],
       "notes": "Texto do laboratório; diálogo com ultrarromantismo sem culto da morte."
+    },
+    {
+      "id": "palavra-criatividade",
+      "title": "Criatividade — fazer nascer no laboratório",
+      "titleEn": "Criatividade — bringing forth in the lab",
+      "titleEs": "Criatividade — hacer nacer en el laboratorio",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: «criatividade» (*creāre*) — método BudGanja entre cultivo, Vida e artes.",
+      "whyEn": "Words: “criatividade” (*creāre*) — BudGanja method between grow, Vida and arts.",
+      "whyEs": "Palabras: «criatividade» (*creāre*) — método BudGanja entre cultivo, Vida y artes.",
+      "suggestedSlug": "inspecao-palavra-criatividade",
+      "doneHref": "/posts/post-inspecao-palavra-criatividade.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/vida/",
+        "/guia/cultivo-basico.html",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-arte-aguas-e-lagrimas.html"
+      ],
+      "notes": "Inventar com método; não fabricar evidência."
+    },
+    {
+      "id": "palavra-verdade",
+      "title": "Verdade — verificar no laboratório",
+      "titleEn": "Verdade — verifying in the lab",
+      "titleEs": "Verdade — verificar en el laboratorio",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: «verdade» (*vērĭtās*) — citar, medir e não fabricar evidência.",
+      "whyEn": "Words: “verdade” (*vērĭtās*) — cite, measure, and do not fabricate evidence.",
+      "whyEs": "Palabras: «verdade» (*vērĭtās*) — citar, medir y no fabricar evidencia.",
+      "suggestedSlug": "inspecao-palavra-verdade",
+      "doneHref": "/posts/post-inspecao-palavra-verdade.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/biblioteca/inspecoes/",
+        "/biblioteca/unifesp/",
+        "/posts/post-inspecao-palavra-criatividade.html",
+        "/posts/post-inspecao-filme-the-matrix.html"
+      ],
+      "notes": "Criatividade inventa formas; verdade não inventa dados."
     }
   ]
 }
