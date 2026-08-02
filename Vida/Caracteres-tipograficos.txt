@@ -1,0 +1,48 @@
+Catálogo de caracteres tipográficos especiais — trilha Vida
+Fonte: Mensagem do laboratório, história, poemas, diário e i18n (pt-BR / en / es).
+ASCII comum e acentos PT (á, ã, ç…) ficam de fora — só o que “parece diferente” no texto.
+
+1. «  U+00AB  LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+   Nome: aspas angulares / guillemets (abertura)
+   Uso: citar falas e ênfase tipográfica («monstros», «Tu não precisas…»)
+   Onde: Vida/index.html · content/vida-cultivos.json · i18n pages.vida
+   Par: »
+
+2. »  U+00BB  RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
+   Nome: aspas angulares / guillemets (fecho)
+   Uso: fechar o par com «
+   Onde: mesmos ficheiros que «
+
+3. ·  U+00B7  MIDDLE DOT
+   Nome: ponto mediano
+   Uso: separador de marca («Inspetor BudGanja · Vida»)
+   Onde: Vida/index.html · i18n pages.vida · i18n pages.vidaDiario
+   Nota: não é hífen (-) nem ponto final (.)
+
+4. —  U+2014  EM DASH
+   Nome: travessão (em dash)
+   Uso: pausa ou inciso no meio da frase
+   Ex.: «ninguém cultiva sozinho — o Inspetor…»
+   Onde: vida-poemas.json · vida-cultivos.json · Historia.txt · index.html · i18n
+   Nota: não confundir com hífen (-) nem com en dash (– U+2013), que não aparece nestes textos
+
+5. …  U+2026  HORIZONTAL ELLIPSIS
+   Nome: reticências (um só carácter)
+   Uso: suspensão / continuidade («nada liga…»)
+   Onde: Vida/index.html · i18n pages.vida · i18n pages.vidaDiario
+   Nota: não são três pontos ASCII (...)
+
+6. →  U+2192  RIGHTWARDS ARROW
+   Nome: seta para a direita
+   Uso: sequência de fases («Brotinho → Vegetativo → Floração»)
+   Onde: Vida/index.html (corpo da história)
+   Nota: na grelha de personagens o CTA usa «Conhecer →» (mesmo glifo)
+
+---
+Formas de português europeu nas mensagens (não são Unicode “raros”, mas soam diferentes do BR)
+- Tu / Bastas / quiseres / só lê — na Mensagem do laboratório (connectQuote / connectBody)
+- Se o tom for 100% pt-BR: «Você», «Basta», «quiser», «só lê» (ou «só leia»)
+
+---
+Atalho de verificação
+node -e "const t=require('fs').readFileSync('Vida/index.html','utf8'); for (const ch of new Set(t)) { const cp=ch.codePointAt(0); if (cp>127) console.log(ch, 'U+'+cp.toString(16).toUpperCase()); }"
