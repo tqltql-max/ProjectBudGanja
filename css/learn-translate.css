@@ -3,6 +3,9 @@
 .learn-toolbar {
     position: relative;
     z-index: 2;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
     margin: 0 0 1.25rem;
     padding: 0.9rem 1.1rem;
     border-radius: 16px;
@@ -14,6 +17,7 @@
 }
 
 body[data-page="vida"] .learn-toolbar {
+    width: auto;
     margin-left: var(--space-page-x, 1.25rem);
     margin-right: var(--space-page-x, 1.25rem);
 }
@@ -83,6 +87,12 @@ body.learn-mode-active .learn-word {
     -webkit-touch-callout: none;
 }
 
+body.learn-mode-active #main-content,
+body.learn-mode-active .learn-mode-on {
+    overflow-x: clip;
+    max-width: 100%;
+}
+
 .learn-mode-on .learn-word,
 .learn-mode-active .learn-word {
     display: inline;
@@ -93,6 +103,8 @@ body.learn-mode-active .learn-word {
     -webkit-user-select: none;
     user-select: none;
     -webkit-touch-callout: none;
+    overflow-wrap: anywhere;
+    word-break: normal;
 }
 
 /* Títulos dourados: garantir que as palavras traduzíveis recebem hover/cor */
@@ -153,7 +165,8 @@ body.learn-mode-active .learn-word {
 
 .learn-char {
     display: inline-block;
-    min-width: 0.2em;
+    min-width: 0.05em;
+    max-width: 100%;
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
@@ -168,7 +181,8 @@ body.learn-mode-active .learn-word {
 .learn-phrase-tip {
     position: fixed;
     z-index: 1200;
-    max-width: min(28rem, calc(100vw - 1.5rem));
+    max-width: min(28rem, calc(100% - 1.5rem));
+    box-sizing: border-box;
     padding: 0.65rem 0.85rem;
     border-radius: 12px;
     border: 1px solid rgba(223, 194, 98, 0.45);

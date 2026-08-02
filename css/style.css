@@ -222,10 +222,20 @@ body, html {
 
 html {
     overflow-x: clip;
+    max-width: 100%;
+}
+
+body {
+    overflow-x: clip;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
 }
 
 #main-content {
     min-width: 0;
+    max-width: 100%;
+    overflow-x: clip;
 }
 
 * {

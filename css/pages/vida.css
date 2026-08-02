@@ -20,18 +20,24 @@ body[data-page="vida"] {
 .vida-page {
     position: relative;
     isolation: isolate;
-    max-width: 920px;
+    width: 100%;
+    max-width: min(920px, 100%);
     margin: 0 auto;
     padding: 0 0 clamp(2.5rem, 6vw, 4rem);
     font-family: "Nunito", system-ui, sans-serif;
+    overflow-x: clip;
 }
 
 .vida-atmosphere {
     position: absolute;
-    inset: -2rem -10vw auto;
+    top: -2rem;
+    left: 0;
+    right: 0;
+    width: 100%;
     height: min(72vh, 640px);
     pointer-events: none;
     z-index: 0;
+    overflow: hidden;
     background:
         radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.18), transparent 40%),
         radial-gradient(circle at 80% 20%, rgba(124, 179, 66, 0.16), transparent 42%),

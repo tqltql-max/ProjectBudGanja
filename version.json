@@ -1,11 +1,11 @@
 {
-  "version": "300",
+  "version": "301",
   "hero": "7f1482449a",
   "heroSize": {
     "width": 1400,
     "height": 440
   },
-  "builtAt": "2026-08-02T01:11:53.807Z",
+  "builtAt": "2026-08-02T01:15:09.530Z",
   "update": {
     "id": "learn-mode-titles-2026-08",
     "title": {
