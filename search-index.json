@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T08:56:59.573Z",
+  "updatedAt": "2026-08-02T09:08:45.104Z",
   "items": [
     {
       "title": "Início",
@@ -1574,6 +1574,12 @@
       "text": "Biomarcador Sinal mensurável citado na aula (AEA, 2-AG, BDNF) — no estudo-piloto de retiro indica associação com a prática; literacia XIV, não diagnóstico clínico. tecnico guia palavras glossário biomarcador"
     },
     {
+      "title": "Blister",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Embalagem farmacêutica (plástico/alumínio) — elo concreto entre fármaco «necessário» e lixo no mapa Leonard.",
+      "text": "Blister Embalagem farmacêutica (plástico/alumínio) — elo concreto entre fármaco «necessário» e lixo no mapa Leonard. tecnico guia palavras glossário blister"
+    },
+    {
       "title": "Broad spectrum",
       "url": "/posts/post-inspecao-guia-quimiotipos-cannabis.html",
       "excerpt": "Perfil amplo sem THC — opção citada na grade XIV para quem não tolera THC; ainda distinto do isolado puro.",
@@ -1590,6 +1596,12 @@
       "url": "/plantas/cacau/",
       "excerpt": "Planta e amêndoa de Theobroma cacao — origem do chocolate; não é o vilão da fábrica.",
       "text": "Cacau Planta e amêndoa de Theobroma cacao — origem do chocolate; não é o vilão da fábrica. tecnico guia palavras glossário cacau"
+    },
+    {
+      "title": "Cadeia linear",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Ciclo extrair → fabricar → vender → descartar (Leonard / História das Coisas) aplicado a fármacos e derivados industriais.",
+      "text": "Cadeia linear Ciclo extrair → fabricar → vender → descartar (Leonard / História das Coisas) aplicado a fármacos e derivados industriais. tecnico guia palavras glossário cadeia-linear"
     },
     {
       "title": "Café",
@@ -1668,6 +1680,12 @@
       "url": "/plantas/cannabis-sativa/",
       "excerpt": "Forma/linhagem de Cannabis associada a autofloração e menor porte — citada em taxonomia e cultivo. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Cannabis ruderalis Forma/linhagem de Cannabis associada a autofloração e menor porte — citada em taxonomia e cultivo. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário cannabis-ruderalis"
+    },
+    {
+      "title": "Carga de doença",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Métrica de saúde pública do dano associado (ex. ultraprocessados) — limite prudente vs «homicídio da prateleira».",
+      "text": "Carga de doença Métrica de saúde pública do dano associado (ex. ultraprocessados) — limite prudente vs «homicídio da prateleira». tecnico guia palavras glossário carga-de-doenca"
     },
     {
       "title": "Caseína",
@@ -1754,6 +1772,12 @@
       "text": "Cogumelo Fungos (ex. Psilocybe) citados nas aulas de psicodélicos — léxico etnobotânico do curso, não planta. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário cogumelo"
     },
     {
+      "title": "Commodity",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Bem tratado como mercadoria escalável (açúcar, planta medicinal industrializada, etc.) — deixa de ser só organismo/cultura.",
+      "text": "Commodity Bem tratado como mercadoria escalável (açúcar, planta medicinal industrializada, etc.) — deixa de ser só organismo/cultura. tecnico guia palavras glossário commodity"
+    },
+    {
       "title": "Comunidade",
       "url": "/comunidade/",
       "excerpt": "Espaço social do laboratório — Feed Vivo, identificação de plantas e partilha do diário.",
@@ -1808,10 +1832,28 @@
       "text": "Descarboxilação Passo (calor/química) que converte ácidos (THCA/CBDA…) nas formas «ativas» THC/CBD usadas em óleos. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário descarboxilacao"
     },
     {
+      "title": "Descarte",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Último estágio da cadeia linear — embalagens, sobras e lixo electrónico associado a fármacos e commodities.",
+      "text": "Descarte Último estágio da cadeia linear — embalagens, sobras e lixo electrónico associado a fármacos e commodities. tecnico guia palavras glossário descarte"
+    },
+    {
       "title": "Descriminalização",
       "url": "/posts/post-inspecao-palavra-descriminalizacao.html",
       "excerpt": "Mitigação ou atipicidade penal de certa conduta — no Brasil canábico, frequentemente o porte uso pessoal; ≠ legalização nem HC de cultivo.",
       "text": "Descriminalização Mitigação ou atipicidade penal de certa conduta — no Brasil canábico, frequentemente o porte uso pessoal; ≠ legalização nem HC de cultivo. classificacao guia palavras glossário descriminalizacao"
+    },
+    {
+      "title": "Desigualdade territorial",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Quem lucra na cadeia vs quem absorve extracção, efluente e lixo — pólo ético nomeado na pesquisa (sem conspiração).",
+      "text": "Desigualdade territorial Quem lucra na cadeia vs quem absorve extracção, efluente e lixo — pólo ético nomeado na pesquisa (sem conspiração). tecnico guia palavras glossário desigualdade-territorial"
+    },
+    {
+      "title": "Desperdício",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Uso ou produção em excesso sem necessidade — mecanismo central (com o exagero) no ciclo industrial da pesquisa.",
+      "text": "Desperdício Uso ou produção em excesso sem necessidade — mecanismo central (com o exagero) no ciclo industrial da pesquisa. tecnico guia palavras glossário desperdicio"
     },
     {
       "title": "Diamba",
@@ -1862,10 +1904,22 @@
       "text": "eCBome Abreviatura de endocanabinoidoma — rede ampliada do sistema endocanabinoide; objecto da modulação endógena (meditação/PIC) e exógena na grade XIV. tecnico guia palavras glossário ecbome"
     },
     {
+      "title": "Economia dos materiais",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Leitura do fluxo físico das coisas (minério, planta, embalagem, lixo) — âncora pedagógica da pesquisa molécula→lixo.",
+      "text": "Economia dos materiais Leitura do fluxo físico das coisas (minério, planta, embalagem, lixo) — âncora pedagógica da pesquisa molécula→lixo. tecnico guia palavras glossário economia-dos-materiais"
+    },
+    {
       "title": "Efeito comitiva",
       "url": "/posts/post-inspecao-guia-quimiotipos-cannabis.html",
       "excerpt": "Ideia de que a planta inteira (full spectrum) mantém efeito melhor que o isolado em dose alta — elo Aula 3/Eliana + composição Aula 10.",
       "text": "Efeito comitiva Ideia de que a planta inteira (full spectrum) mantém efeito melhor que o isolado em dose alta — elo Aula 3/Eliana + composição Aula 10. tecnico guia palavras glossário efeito-comitiva"
+    },
+    {
+      "title": "Efluente",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Resíduo líquido/gasoso da síntese ou fabrico — externalidade típica da etapa industrial no mapa BudGanja.",
+      "text": "Efluente Resíduo líquido/gasoso da síntese ou fabrico — externalidade típica da etapa industrial no mapa BudGanja. tecnico guia palavras glossário efluente"
     },
     {
       "title": "Eletroacupuntura",
@@ -1964,16 +2018,40 @@
       "text": "Etnobotânica Ciência da relação entre culturas e plantas — usos medicinais, rituais e nomes populares. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário etnobotanica"
     },
     {
+      "title": "Excipiente",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Substância auxiliar da formulação (não é o princípio activo) — entra no fabrico e no rasto de embalagem/resíduo.",
+      "text": "Excipiente Substância auxiliar da formulação (não é o princípio activo) — entra no fabrico e no rasto de embalagem/resíduo. tecnico guia palavras glossário excipiente"
+    },
+    {
       "title": "Exercício",
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Camada de estilo de vida na grade XIV — ~30 min de corrida/bike associados a ↑ AEA; irmão metabólico da PIC (meditação/yoga).",
       "text": "Exercício Camada de estilo de vida na grade XIV — ~30 min de corrida/bike associados a ↑ AEA; irmão metabólico da PIC (meditação/yoga). tecnico guia palavras glossário exercicio"
     },
     {
+      "title": "Externalidade",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Custo ou dano deslocado para fora do preço (resíduos, doença, habitat) — mapa central da pesquisa Da molécula ao lixo.",
+      "text": "Externalidade Custo ou dano deslocado para fora do preço (resíduos, doença, habitat) — mapa central da pesquisa Da molécula ao lixo. tecnico guia palavras glossário externalidade"
+    },
+    {
       "title": "Farmácia Viva",
       "url": "/posts/post-inspecao-guia-farmacia-viva.html",
       "excerpt": "Serviço exclusivo do SUS (Portaria 886/2010) de cultivo/orientação/processamento de plantas medicinais — Aula 5 XIV (Jaqueline Guimarães).",
       "text": "Farmácia Viva Serviço exclusivo do SUS (Portaria 886/2010) de cultivo/orientação/processamento de plantas medicinais — Aula 5 XIV (Jaqueline Guimarães). tecnico guia palavras glossário farmacia-viva"
+    },
+    {
+      "title": "Fármaco",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Substância com efeito terapêutico em escala industrial — no mapa BudGanja partilha a cadeia extrair→descartar com «droga» e commodity.",
+      "text": "Fármaco Substância com efeito terapêutico em escala industrial — no mapa BudGanja partilha a cadeia extrair→descartar com «droga» e commodity. tecnico guia palavras glossário farmaco"
+    },
+    {
+      "title": "Farmacovigilância",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Monitorização de segurança de medicamentos após uso — literacia citada na nota metodológica da pesquisa.",
+      "text": "Farmacovigilância Monitorização de segurança de medicamentos após uso — literacia citada na nota metodológica da pesquisa. tecnico guia palavras glossário farmacovigilancia"
     },
     {
       "title": "Feed Vivo",
@@ -2094,6 +2172,12 @@
       "url": "/plantas/hortela/",
       "excerpt": "Mentha spicata (e afins) — mentol/óleos mentolados em chás e culinária; espécie e quimiotipo importam. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Hortelã Mentha spicata (e afins) — mentol/óleos mentolados em chás e culinária; espécie e quimiotipo importam. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário hortela"
+    },
+    {
+      "title": "Iatrogenia",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Dano causado pela própria intervenção terapêutica — risco do estágio «uso» na cadeia fármaco/droga.",
+      "text": "Iatrogenia Dano causado pela própria intervenção terapêutica — risco do estágio «uso» na cadeia fármaco/droga. tecnico guia palavras glossário iatrogenia"
     },
     {
       "title": "Ilícito",
@@ -2234,6 +2318,12 @@
       "text": "Massagem PIC no mesmo bloco XIV da meditação e da eletroacupuntura — citada em revisões com efeitos canabiméticos / regulação do SEC (literacia, não protocolo). tecnico guia palavras glossário massagem"
     },
     {
+      "title": "Matéria-prima",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Planta, animal, minério ou petróleo no início da cadeia — primeiro estágio do quadro da molécula ao lixo.",
+      "text": "Matéria-prima Planta, animal, minério ou petróleo no início da cadeia — primeiro estágio do quadro da molécula ao lixo. tecnico guia palavras glossário materia-prima"
+    },
+    {
       "title": "MBSR",
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Mindfulness-Based Stress Reduction — uma das escolas citadas na ficha só para dizer que o guia XIV **não** hierarquiza vipassana, zen, Isha ou MBSR.",
@@ -2244,6 +2334,12 @@
       "url": "/posts/post-inspecao-guia-canabimeticos-modulacao.html",
       "excerpt": "Linha de pesquisa (Universidade Hebraica) citada por Eliana na Aula 7 — moléculas alvo / actualização; não é endosso de fármaco BR.",
       "text": "Mechoulam Linha de pesquisa (Universidade Hebraica) citada por Eliana na Aula 7 — moléculas alvo / actualização; não é endosso de fármaco BR. tecnico guia palavras glossário mechoulam"
+    },
+    {
+      "title": "Medicalização",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Expandir o domínio médico/farmacêutico sobre a vida quotidiana — um motor do «exagero de oferta» no mapa da pesquisa.",
+      "text": "Medicalização Expandir o domínio médico/farmacêutico sobre a vida quotidiana — um motor do «exagero de oferta» no mapa da pesquisa. tecnico guia palavras glossário medicalizacao"
     },
     {
       "title": "Meditação",
@@ -2270,6 +2366,12 @@
       "text": "Metabólito secundário Pigmentos, terpenos, alcaloides… — o que mais diferencia quimiotipos na Aula 10, face aos metabólitos primários. tecnico guia palavras glossário metabolito-secundario"
     },
     {
+      "title": "Microplástico",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Fragmentos plásticos persistentes no ambiente — externalidade do descarte (embalagens, blister, logística).",
+      "text": "Microplástico Fragmentos plásticos persistentes no ambiente — externalidade do descarte (embalagens, blister, logística). tecnico guia palavras glossário microplastico"
+    },
+    {
       "title": "Mindfulness",
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Atenção plena — no bloco XIV de PIC junto com meditação e yoga, associada a efeitos canabiméticos / regulação do SEC.",
@@ -2286,6 +2388,12 @@
       "url": "/posts/post-inspecao-guia-canabimeticos-modulacao.html",
       "excerpt": "Via «de fora» na Aula 7 — cannabis, canabiméticos, isolados/sintéticos — distinta da autonomia endógena (meditação/PIC).",
       "text": "Modulação exógena Via «de fora» na Aula 7 — cannabis, canabiméticos, isolados/sintéticos — distinta da autonomia endógena (meditação/PIC). tecnico guia palavras glossário modulacao-exogena"
+    },
+    {
+      "title": "Monocultura",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Cultivo de uma só espécie em larga escala — externalidade típica da extracção/cultivo no quadro molécula→lixo.",
+      "text": "Monocultura Cultivo de uma só espécie em larga escala — externalidade típica da extracção/cultivo no quadro molécula→lixo. tecnico guia palavras glossário monocultura"
     },
     {
       "title": "MovReCam",
@@ -2316,6 +2424,12 @@
       "url": "/posts/post-inspecao-palavra-opioide-opiaceo.html",
       "excerpt": "Tradição clínica ligada ao ópio e derivados naturais — ajuda a entender o rótulo narcótico; distinto da cannabis.",
       "text": "Opiáceo Tradição clínica ligada ao ópio e derivados naturais — ajuda a entender o rótulo narcótico; distinto da cannabis. classificacao guia palavras glossário opiaceo"
+    },
+    {
+      "title": "Ópio",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Látex de papoula na fronteira cultura/medicina/comércio — caso-âncora opioides da pesquisa (com A Última Casa de Ópio).",
+      "text": "Ópio Látex de papoula na fronteira cultura/medicina/comércio — caso-âncora opioides da pesquisa (com A Última Casa de Ópio). tecnico guia palavras glossário opio"
     },
     {
       "title": "Opioide",
@@ -2358,6 +2472,12 @@
       "url": "/posts/post-inspecao-palavra-passar.html",
       "excerpt": "Verbo da passagem: o que aconteceu, o que atravessa, o que se transmite.",
       "text": "Passar Verbo da passagem: o que aconteceu, o que atravessa, o que se transmite. lexico guia palavras glossário passar"
+    },
+    {
+      "title": "Patente",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Direito exclusivo sobre molécula/processo — mecanismo que concentra valor no pólo industrial da pesquisa.",
+      "text": "Patente Direito exclusivo sobre molécula/processo — mecanismo que concentra valor no pólo industrial da pesquisa. tecnico guia palavras glossário patente"
     },
     {
       "title": "Pesquisas",
@@ -2412,6 +2532,12 @@
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Forma por extenso de PIC — meditação, yoga, mindfulness, massagem, eletroacupuntura como camadas de modulação endógena do endocanabinoidoma na grade XIV.",
       "text": "Práticas integrativas Forma por extenso de PIC — meditação, yoga, mindfulness, massagem, eletroacupuntura como camadas de modulação endógena do endocanabinoidoma na grade XIV. tecnico guia palavras glossário praticas-integrativas"
+    },
+    {
+      "title": "Princípio activo",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Molécula responsável pelo efeito no fabrico farmacêutico — etapa de síntese no mapa extrair→descartar.",
+      "text": "Princípio activo Molécula responsável pelo efeito no fabrico farmacêutico — etapa de síntese no mapa extrair→descartar. tecnico guia palavras glossário principio-activo"
     },
     {
       "title": "Produtos nocivos",
@@ -2484,6 +2610,12 @@
       "url": "/posts/post-inspecao-guia-farmacia-viva.html",
       "excerpt": "Relação de plantas de interesse ao SUS para pesquisa/validação do saber tradicional — citada na Aula 5 (~71 espécies no discurso da aula).",
       "text": "RENISUS Relação de plantas de interesse ao SUS para pesquisa/validação do saber tradicional — citada na Aula 5 (~71 espécies no discurso da aula). tecnico guia palavras glossário renisus"
+    },
+    {
+      "title": "Resíduo farmacêutico",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Sobras, metabolitos e embalagens de medicamentos no ambiente (água, lixo) — caso-âncora 3 da pesquisa.",
+      "text": "Resíduo farmacêutico Sobras, metabolitos e embalagens de medicamentos no ambiente (água, lixo) — caso-âncora 3 da pesquisa. tecnico guia palavras glossário residuo-farmaceutico"
     },
     {
       "title": "Retiro",
@@ -2622,6 +2754,12 @@
       "url": "/posts/post-inspecao-palavra-tristeza.html",
       "excerpt": "Sentimento azul que também ajuda a cuidar e a pedir ajuda — emoção da Riley.",
       "text": "Tristeza Sentimento azul que também ajuda a cuidar e a pedir ajuda — emoção da Riley. lexico guia palavras glossário tristeza"
+    },
+    {
+      "title": "Ultraprocessado",
+      "url": "/posts/post-pesquisa-molecula-ao-lixo.html",
+      "excerpt": "Alimento de desenho industrial (formulacões, aditivos, marketing) — caso-âncora de commodity que adoece na pesquisa molécula→lixo.",
+      "text": "Ultraprocessado Alimento de desenho industrial (formulacões, aditivos, marketing) — caso-âncora de commodity que adoece na pesquisa molécula→lixo. tecnico guia palavras glossário ultraprocessado"
     },
     {
       "title": "Unha-de-gato",

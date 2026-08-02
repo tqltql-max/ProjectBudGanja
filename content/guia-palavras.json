@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T08:40:25.741Z",
+  "updatedAt": "2026-08-02T09:08:38.037Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -296,6 +296,16 @@
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
+      "id": "blister",
+      "word": "Blister",
+      "simple": "Embalagem farmacêutica (plástico/alumínio) — elo concreto entre fármaco «necessário» e lixo no mapa Leonard.",
+      "simpleEn": "Pharma pack (plastic/foil) — concrete link between a «needed» medicine and waste on the Leonard map.",
+      "simpleEs": "Envase farmacéutico (plástico/aluminio) — vínculo concreto entre fármaco «necesario» y basura.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+    },
+    {
       "id": "broad-spectrum",
       "word": "Broad spectrum",
       "simple": "Perfil amplo sem THC — opção citada na grade XIV para quem não tolera THC; ainda distinto do isolado puro.",
@@ -324,6 +334,16 @@
       "group": "tecnico",
       "fromTitle": true,
       "href": "/plantas/cacau/"
+    },
+    {
+      "id": "cadeia-linear",
+      "word": "Cadeia linear",
+      "simple": "Ciclo extrair → fabricar → vender → descartar (Leonard / História das Coisas) aplicado a fármacos e derivados industriais.",
+      "simpleEn": "Extract → make → sell → discard cycle (Leonard / Story of Stuff) applied to drugs and industrial derivatives.",
+      "simpleEs": "Ciclo extraer → fabricar → vender → desechar (Leonard) aplicado a fármacos y derivados industriales.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
     },
     {
       "id": "cafe",
@@ -454,6 +474,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/plantas/cannabis-sativa/"
+    },
+    {
+      "id": "carga-de-doenca",
+      "word": "Carga de doença",
+      "simple": "Métrica de saúde pública do dano associado (ex. ultraprocessados) — limite prudente vs «homicídio da prateleira».",
+      "simpleEn": "Public-health metric of associated harm (e.g. ultra-processed foods) — prudent limit vs «shelf homicide».",
+      "simpleEs": "Métrica de salud pública del daño asociado (p. ej. ultraprocesados) — límite prudente vs «homicidio del estante».",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
     },
     {
       "id": "caseina",
@@ -596,6 +626,16 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "commodity",
+      "word": "Commodity",
+      "simple": "Bem tratado como mercadoria escalável (açúcar, planta medicinal industrializada, etc.) — deixa de ser só organismo/cultura.",
+      "simpleEn": "Good treated as scalable merchandise (sugar, industrialized medicinal plant, etc.) — no longer only organism/culture.",
+      "simpleEs": "Bien tratado como mercancía escalable (azúcar, planta medicinal industrializada, etc.).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+    },
+    {
       "id": "comunidade",
       "word": "Comunidade",
       "simple": "Espaço social do laboratório — Feed Vivo, identificação de plantas e partilha do diário.",
@@ -686,6 +726,16 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "descarte",
+      "word": "Descarte",
+      "simple": "Último estágio da cadeia linear — embalagens, sobras e lixo electrónico associado a fármacos e commodities.",
+      "simpleEn": "Last stage of the linear chain — packaging, leftovers and e-waste tied to drugs and commodities.",
+      "simpleEs": "Último estadio de la cadena lineal — envases, restos y basura electrónica ligada a fármacos y commodities.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+    },
+    {
       "id": "descriminalizacao",
       "word": "Descriminalização",
       "simple": "Mitigação ou atipicidade penal de certa conduta — no Brasil canábico, frequentemente o porte uso pessoal; ≠ legalização nem HC de cultivo.",
@@ -694,6 +744,26 @@
       "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-descriminalizacao.html"
+    },
+    {
+      "id": "desigualdade-territorial",
+      "word": "Desigualdade territorial",
+      "simple": "Quem lucra na cadeia vs quem absorve extracção, efluente e lixo — pólo ético nomeado na pesquisa (sem conspiração).",
+      "simpleEn": "Who profits in the chain vs who absorbs extraction, effluent and waste — ethical pole named in the research.",
+      "simpleEs": "Quién lucra en la cadena vs quién absorbe extracción, efluente y basura — polo ético nombrado en la investigación.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+    },
+    {
+      "id": "desperdicio",
+      "word": "Desperdício",
+      "simple": "Uso ou produção em excesso sem necessidade — mecanismo central (com o exagero) no ciclo industrial da pesquisa.",
+      "simpleEn": "Use or production beyond need — central mechanism (with excess) in the research industrial cycle.",
+      "simpleEs": "Uso o producción en exceso sin necesidad — mecanismo central (con el exceso) en el ciclo industrial.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
     },
     {
       "id": "diamba",
@@ -776,6 +846,16 @@
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
+      "id": "economia-dos-materiais",
+      "word": "Economia dos materiais",
+      "simple": "Leitura do fluxo físico das coisas (minério, planta, embalagem, lixo) — âncora pedagógica da pesquisa molécula→lixo.",
+      "simpleEn": "Reading the physical flow of stuff (ore, plant, packaging, waste) — pedagogical anchor of molecule→waste research.",
+      "simpleEs": "Lectura del flujo físico de las cosas (mineral, planta, envase, basura) — ancla pedagógica de molécula→basura.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+    },
+    {
       "id": "efeito-comitiva",
       "word": "Efeito comitiva",
       "simple": "Ideia de que a planta inteira (full spectrum) mantém efeito melhor que o isolado em dose alta — elo Aula 3/Eliana + composição Aula 10.",
@@ -784,6 +864,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
+    },
+    {
+      "id": "efluente",
+      "word": "Efluente",
+      "simple": "Resíduo líquido/gasoso da síntese ou fabrico — externalidade típica da etapa industrial no mapa BudGanja.",
+      "simpleEn": "Liquid/gaseous waste from synthesis or manufacture — typical industrial-stage externality on the BudGanja map.",
+      "simpleEs": "Residuo líquido/gaseoso de síntesis o fabricación — externalidad típica de la etapa industrial.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
     },
     {
       "id": "eletroacupuntura",
@@ -946,6 +1036,16 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "excipiente",
+      "word": "Excipiente",
+      "simple": "Substância auxiliar da formulação (não é o princípio activo) — entra no fabrico e no rasto de embalagem/resíduo.",
+      "simpleEn": "Auxiliary formulation substance (not the active) — enters manufacture and the packaging/waste trail.",
+      "simpleEs": "Sustancia auxiliar de la formulación (no es el principio activo) — entra en fabricación y residuos.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+    },
+    {
       "id": "exercicio",
       "word": "Exercício",
       "simple": "Camada de estilo de vida na grade XIV — ~30 min de corrida/bike associados a ↑ AEA; irmão metabólico da PIC (meditação/yoga).",
@@ -956,6 +1056,16 @@
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
+      "id": "externalidade",
+      "word": "Externalidade",
+      "simple": "Custo ou dano deslocado para fora do preço (resíduos, doença, habitat) — mapa central da pesquisa Da molécula ao lixo.",
+      "simpleEn": "Cost or harm shifted off the shelf price (waste, disease, habitat) — core map of From molecule to waste.",
+      "simpleEs": "Costo o daño desplazado fuera del precio (residuos, enfermedad, hábitat) — mapa central de De la molécula a la basura.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+    },
+    {
       "id": "farmacia-viva",
       "word": "Farmácia Viva",
       "simple": "Serviço exclusivo do SUS (Portaria 886/2010) de cultivo/orientação/processamento de plantas medicinais — Aula 5 XIV (Jaqueline Guimarães).",
@@ -964,6 +1074,26 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-farmacia-viva.html"
+    },
+    {
+      "id": "farmaco",
+      "word": "Fármaco",
+      "simple": "Substância com efeito terapêutico em escala industrial — no mapa BudGanja partilha a cadeia extrair→descartar com «droga» e commodity.",
+      "simpleEn": "Therapeutic substance at industrial scale — on the BudGanja map it shares the take–make–waste chain with «drug» and commodity.",
+      "simpleEs": "Sustancia terapéutica a escala industrial — en el mapa BudGanja comparte la cadena extraer→desechar con «droga» y commodity.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+    },
+    {
+      "id": "farmacovigilancia",
+      "word": "Farmacovigilância",
+      "simple": "Monitorização de segurança de medicamentos após uso — literacia citada na nota metodológica da pesquisa.",
+      "simpleEn": "Post-use medicine safety monitoring — literacy cited in the research method note.",
+      "simpleEs": "Monitoreo de seguridad de medicamentos tras el uso — literacia citada en la nota metodológica.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
     },
     {
       "id": "feed-vivo",
@@ -1164,6 +1294,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/plantas/hortela/"
+    },
+    {
+      "id": "iatrogenia",
+      "word": "Iatrogenia",
+      "simple": "Dano causado pela própria intervenção terapêutica — risco do estágio «uso» na cadeia fármaco/droga.",
+      "simpleEn": "Harm caused by the therapeutic intervention itself — risk of the «use» stage in the drug/medicine chain.",
+      "simpleEs": "Daño causado por la propia intervención terapéutica — riesgo de la etapa «uso» en la cadena.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
     },
     {
       "id": "ilicito",
@@ -1396,6 +1536,16 @@
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
+      "id": "materia-prima",
+      "word": "Matéria-prima",
+      "simple": "Planta, animal, minério ou petróleo no início da cadeia — primeiro estágio do quadro da molécula ao lixo.",
+      "simpleEn": "Plant, animal, ore or oil at the start of the chain — first stage of the molecule-to-waste framework.",
+      "simpleEs": "Planta, animal, mineral o petróleo al inicio de la cadena — primer estadio del marco molécula→basura.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+    },
+    {
       "id": "mbsr",
       "word": "MBSR",
       "simple": "Mindfulness-Based Stress Reduction — uma das escolas citadas na ficha só para dizer que o guia XIV **não** hierarquiza vipassana, zen, Isha ou MBSR.",
@@ -1414,6 +1564,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html"
+    },
+    {
+      "id": "medicalizacao",
+      "word": "Medicalização",
+      "simple": "Expandir o domínio médico/farmacêutico sobre a vida quotidiana — um motor do «exagero de oferta» no mapa da pesquisa.",
+      "simpleEn": "Expanding the medical/pharma domain over everyday life — a driver of «excess supply» on the research map.",
+      "simpleEs": "Expandir el dominio médico/farmacéutico sobre la vida cotidiana — motor del «exceso de oferta» en el mapa.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
     },
     {
       "id": "meditacao",
@@ -1456,6 +1616,16 @@
       "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
+      "id": "microplastico",
+      "word": "Microplástico",
+      "simple": "Fragmentos plásticos persistentes no ambiente — externalidade do descarte (embalagens, blister, logística).",
+      "simpleEn": "Persistent plastic fragments in the environment — disposal externality (packaging, blister, logistics).",
+      "simpleEs": "Fragmentos plásticos persistentes en el ambiente — externalidad del descarte (envases, blister, logística).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
+    },
+    {
       "id": "mindfulness",
       "word": "Mindfulness",
       "simple": "Atenção plena — no bloco XIV de PIC junto com meditação e yoga, associada a efeitos canabiméticos / regulação do SEC.",
@@ -1484,6 +1654,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html"
+    },
+    {
+      "id": "monocultura",
+      "word": "Monocultura",
+      "simple": "Cultivo de uma só espécie em larga escala — externalidade típica da extracção/cultivo no quadro molécula→lixo.",
+      "simpleEn": "Large-scale single-species cropping — typical extraction/cultivation externality on the molecule→waste frame.",
+      "simpleEs": "Cultivo de una sola especie a gran escala — externalidad típica de extracción/cultivo.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
     },
     {
       "id": "movrecam",
@@ -1534,6 +1714,16 @@
       "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-opioide-opiaceo.html"
+    },
+    {
+      "id": "opio",
+      "word": "Ópio",
+      "simple": "Látex de papoula na fronteira cultura/medicina/comércio — caso-âncora opioides da pesquisa (com A Última Casa de Ópio).",
+      "simpleEn": "Poppy latex at the culture/medicine/trade border — opioids anchor case (with The Last Opium Den).",
+      "simpleEs": "Látex de amapola en la frontera cultura/medicina/comercio — caso ancla opioides (con La última casa de opio).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
     },
     {
       "id": "opioide",
@@ -1604,6 +1794,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-passar.html"
+    },
+    {
+      "id": "patente",
+      "word": "Patente",
+      "simple": "Direito exclusivo sobre molécula/processo — mecanismo que concentra valor no pólo industrial da pesquisa.",
+      "simpleEn": "Exclusive right over a molecule/process — mechanism that concentrates value on the industrial pole of the research.",
+      "simpleEs": "Derecho exclusivo sobre molécula/proceso — mecanismo que concentra valor en el polo industrial.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
     },
     {
       "id": "pesquisas",
@@ -1694,6 +1894,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "principio-activo",
+      "word": "Princípio activo",
+      "simple": "Molécula responsável pelo efeito no fabrico farmacêutico — etapa de síntese no mapa extrair→descartar.",
+      "simpleEn": "Molecule responsible for effect in pharma manufacture — synthesis stage on the take–make–waste map.",
+      "simpleEs": "Molécula responsable del efecto en fabricación farmacéutica — etapa de síntesis en el mapa.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
     },
     {
       "id": "produtos-nocivos",
@@ -1814,6 +2024,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-farmacia-viva.html"
+    },
+    {
+      "id": "residuo-farmaceutico",
+      "word": "Resíduo farmacêutico",
+      "simple": "Sobras, metabolitos e embalagens de medicamentos no ambiente (água, lixo) — caso-âncora 3 da pesquisa.",
+      "simpleEn": "Leftovers, metabolites and medicine packaging in the environment (water, waste) — research anchor case 3.",
+      "simpleEs": "Restos, metabolitos y envases de medicamentos en el ambiente — caso ancla 3 de la investigación.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
     },
     {
       "id": "retiro",
@@ -2044,6 +2264,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-tristeza.html"
+    },
+    {
+      "id": "ultraprocessado",
+      "word": "Ultraprocessado",
+      "simple": "Alimento de desenho industrial (formulacões, aditivos, marketing) — caso-âncora de commodity que adoece na pesquisa molécula→lixo.",
+      "simpleEn": "Industrially designed food (formulations, additives, marketing) — anchor case of a commodity that sickens in molecule→waste.",
+      "simpleEs": "Alimento de diseño industrial — caso ancla de commodity que enferma en molécula→basura.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-molecula-ao-lixo.html"
     },
     {
       "id": "unha-de-gato",
