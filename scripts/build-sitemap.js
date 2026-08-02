@@ -14,6 +14,7 @@ const STATIC = [
   { loc: '/', priority: '1.0', changefreq: 'weekly' },
   { loc: '/index.html', priority: '1.0', changefreq: 'weekly' },
   { loc: '/guia/cultivo-basico.html', priority: '0.95', changefreq: 'monthly' },
+  { loc: '/guia/palavras.html', priority: '0.9', changefreq: 'monthly' },
   { loc: '/videos/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/biblioteca/pesquisas/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/biblioteca/inspecoes/', priority: '0.9', changefreq: 'weekly' },

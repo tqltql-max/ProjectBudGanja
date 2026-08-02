@@ -341,6 +341,11 @@
       "label": "Cultivo de cannabis: el comienzo",
       "tileLabel": "Cultivo de cannabis: el comienzo",
       "description": "El cultivo de cannabis se resume en 4 etapas y factores esenciales."
+    },
+    "guia-palavras": {
+      "label": "Palabras",
+      "tileLabel": "Palabras",
+      "description": "Glosario simple de los títulos del sitio y del léxico inspeccionado."
     }
   },
   "pages": {
@@ -653,7 +658,8 @@
       "wordsChange": "Cambio",
       "wordsMapOnly": "solo mapa",
       "wordsCatalogEmpty": "Catálogo vacío.",
-      "wordsCatalogError": "No se pudo cargar el catálogo de palabras."
+      "wordsCatalogError": "No se pudo cargar el catálogo de palabras.",
+      "wordsGuideLink": "Guía de Palabras (glosario simple)"
     },
     "research": {
       "eyebrow": "Biblioteca",
@@ -808,6 +814,26 @@
       "entriesEmpty": "Aún no hay capítulos en esta historia.",
       "adultLink": "Diario de investigación para adultos",
       "docTitle": "Diario de la Semillita | Inspetor BudGanja"
+    },
+    "guiaPalavras": {
+      "eyebrow": "Biblioteca · Guías",
+      "title": "Guía de Palabras",
+      "subtitle": "Significados muy simples de las palabras de los títulos del sitio y del léxico que el laboratorio inspecciona.",
+      "loading": "Cargando palabras…",
+      "loadError": "No se pudo cargar el glosario.",
+      "searchLabel": "Buscar",
+      "searchPlaceholder": "Palabra o significado…",
+      "filtersLabel": "Filtrar por grupo",
+      "filterAll": "Todas",
+      "emptySearch": "Ninguna palabra con esas letras.",
+      "emptyFilter": "Ninguna palabra en este grupo.",
+      "countOne": "palabra",
+      "countMany": "palabras",
+      "badgeTitle": "Título",
+      "openInspection": "Ver inspección",
+      "openPage": "Abrir página",
+      "linkInspections": "Inspecciones de Palabras",
+      "docTitle": "Guía de Palabras | Inspetor BudGanja"
     }
   }
 }

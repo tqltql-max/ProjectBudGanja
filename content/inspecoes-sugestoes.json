@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T04:41:13.749Z",
+  "updatedAt": "2026-08-02T05:03:11.846Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2077,6 +2077,46 @@
       "suggestedSlug": "inspecao-derivado-analise-danos-videos",
       "doneHref": "/posts/post-inspecao-derivado-analise-danos-videos.html",
       "seriesHint": "plantas-derivados-risco"
+    },
+    {
+      "id": "arte-barriga-de-trigo",
+      "title": "Barriga de Trigo — o livro de William Davis e a tese do trigo moderno",
+      "titleEn": "Wheat Belly — William Davis’s book and the modern-wheat thesis",
+      "titleEs": "Barriga de Trigo — el libro de William Davis y la tesis del trigo moderno",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Artes: Barriga de Trigo / Wheat Belly (2011) — livro primeiro; autor em William Davis (Pessoas); elo Glúten.",
+      "whyEn": "Arts: Wheat Belly (2011) — book first; author in William Davis (People); Gluten link.",
+      "whyEs": "Artes: Barriga de Trigo (2011) — libro primero; autor en William Davis (Personas); vínculo Gluten.",
+      "suggestedSlug": "inspecao-arte-barriga-de-trigo",
+      "doneHref": "/posts/post-inspecao-arte-barriga-de-trigo.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wheat_Belly",
+        "/posts/post-inspecao-figura-william-davis.html"
+      ],
+      "notes": "Wheat Belly 2011; indexar ≠ endossar claims máximos."
+    },
+    {
+      "id": "figura-william-davis",
+      "title": "William Davis — cardiologista de Barriga de Trigo e o método anti-trigo",
+      "titleEn": "William Davis — Wheat Belly cardiologist and the anti-wheat method",
+      "titleEs": "William Davis — cardiólogo de Barriga de Trigo y el método anti-trigo",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas × Artes: método de divulgação clínica de Davis com elo em Barriga de Trigo.",
+      "whyEn": "People × Arts: Davis clinical-outreach method linked to Wheat Belly.",
+      "whyEs": "Personas × Artes: método de divulgación clínica de Davis con vínculo en Barriga de Trigo.",
+      "suggestedSlug": "inspecao-figura-william-davis",
+      "doneHref": "/posts/post-inspecao-figura-william-davis.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://drdavisinfinitehealth.com/",
+        "/posts/post-inspecao-arte-barriga-de-trigo.html"
+      ],
+      "notes": "Pessoas ≠ Legado; livro fica em Artes; proteína em Glúten."
     }
   ]
 }

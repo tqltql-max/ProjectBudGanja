@@ -1,0 +1,703 @@
+{
+  "updatedAt": "2026-08-02T05:03:11.065Z",
+  "title": "Guia de Palavras",
+  "titleEn": "Words Guide",
+  "titleEs": "Guía de Palabras",
+  "lead": "Significados bem simples das palavras dos títulos do site e do léxico que o laboratório inspeciona. Quando existir ficha profunda, o link abre a inspeção.",
+  "leadEn": "Very simple meanings for site-title words and the lexicon the lab inspects. When a deep sheet exists, the link opens that inspection.",
+  "leadEs": "Significados muy simples de las palabras de los títulos del sitio y del léxico que el laboratorio inspecciona. Si hay ficha profunda, el enlace la abre.",
+  "groups": [
+    {
+      "id": "marca",
+      "label": "Marca",
+      "labelEn": "Brand",
+      "labelEs": "Marca"
+    },
+    {
+      "id": "titulo",
+      "label": "Títulos do site",
+      "labelEn": "Site titles",
+      "labelEs": "Títulos del sitio"
+    },
+    {
+      "id": "hub",
+      "label": "Hub de inspeções",
+      "labelEn": "Inspections hub",
+      "labelEs": "Hub de inspecciones"
+    },
+    {
+      "id": "lexico",
+      "label": "Léxico inspecionado",
+      "labelEn": "Inspected lexicon",
+      "labelEs": "Léxico inspeccionado"
+    },
+    {
+      "id": "tecnico",
+      "label": "Técnico e formação",
+      "labelEn": "Technical & training",
+      "labelEs": "Técnico y formación"
+    }
+  ],
+  "items": [
+    {
+      "id": "acucar",
+      "word": "Açúcar",
+      "simple": "Substância doce (sacarose e afins) — no site, elo da cana e dos ultraprocessados.",
+      "simpleEn": "Sweet substance (sucrose and kin) — on the site, the cane and ultra-processed link.",
+      "simpleEs": "Sustancia dulce (sacarosa y afines) — en el sitio, el vínculo de la caña y los ultraprocesados.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/posts/post-inspecao-derivado-cana-de-acucar.html"
+    },
+    {
+      "id": "alegria",
+      "word": "Alegria",
+      "simple": "Sentimento bom e leve — a emoção amarela da Riley.",
+      "simpleEn": "A bright, good feeling — Riley’s yellow emotion.",
+      "simpleEs": "Sentimiento bueno y ligero — la emoción amarilla de Riley.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-alegria.html"
+    },
+    {
+      "id": "animais",
+      "word": "Animais",
+      "simple": "Seres vivos do reino animal — no site, fichas de criação, companhia e derivados.",
+      "simpleEn": "Living beings of the animal kingdom — on the site, husbandry, companionship and derivatives sheets.",
+      "simpleEs": "Seres vivos del reino animal — en el sitio, fichas de cría, compañía y derivados.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/animais/"
+    },
+    {
+      "id": "animal",
+      "word": "Animal",
+      "simple": "Ser vivo que não é planta — também palavra de carinho ou insulto, conforme o tom.",
+      "simpleEn": "A living being that is not a plant — also a term of endearment or insult, depending on tone.",
+      "simpleEs": "Ser vivo que no es planta — también cariño o insulto, según el tono.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-animal.html"
+    },
+    {
+      "id": "artes",
+      "word": "Artes",
+      "simple": "Filmes, músicas, livros e outras obras culturais que o laboratório inspeciona.",
+      "simpleEn": "Films, music, books and other cultural works the lab inspects.",
+      "simpleEs": "Películas, músicas, libros y otras obras culturales que el laboratorio inspecciona.",
+      "group": "hub",
+      "fromTitle": true,
+      "href": "/biblioteca/inspecoes/#inspecoes-artes"
+    },
+    {
+      "id": "barriga-de-trigo",
+      "word": "Barriga de Trigo",
+      "simple": "Livro de William Davis (2011) sobre trigo moderno, glicemia e gordura visceral.",
+      "simpleEn": "William Davis’s 2011 book on modern wheat, blood sugar and visceral fat.",
+      "simpleEs": "Libro de William Davis (2011) sobre trigo moderno, glucemia y grasa visceral.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-barriga-de-trigo.html"
+    },
+    {
+      "id": "biblioteca",
+      "word": "Biblioteca",
+      "simple": "Lugar onde o conhecimento fica organizado — no site, o menu de plantas, inspeções e cursos.",
+      "simpleEn": "Where knowledge is organized — on the site, the plants, inspections and courses menu.",
+      "simpleEs": "Donde el conocimiento se organiza — en el sitio, el menú de plantas, inspecciones y cursos.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/plantas/"
+    },
+    {
+      "id": "budganja",
+      "word": "BudGanja",
+      "simple": "Nome da marca do laboratório — junta «bud» (botão/flor) e «ganja» (nome índico da planta).",
+      "simpleEn": "The lab brand name — joins “bud” (flower tip) and “ganja” (Indic plant name).",
+      "simpleEs": "Nombre de la marca del laboratorio — une «bud» (brote/flor) y «ganja» (nombre índico de la planta).",
+      "group": "marca",
+      "fromTitle": true,
+      "href": "/"
+    },
+    {
+      "id": "cacau",
+      "word": "Cacau",
+      "simple": "Planta e amêndoa de Theobroma cacao — origem do chocolate; não é o vilão da fábrica.",
+      "simpleEn": "Theobroma cacao plant and bean — origin of chocolate; not the factory villain.",
+      "simpleEs": "Planta y almendra de Theobroma cacao — origen del chocolate; no es el villano de la fábrica.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/plantas/cacau/"
+    },
+    {
+      "id": "caminho",
+      "word": "Caminho",
+      "simple": "Via por onde se anda — no laboratório, a palavra que liga pesquisa, vida e travessia.",
+      "simpleEn": "A way you walk — in the lab, the word that links research, life and crossing.",
+      "simpleEs": "Vía por donde se anda — en el laboratorio, la palabra que une investigación, vida y travesía.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-caminho.html"
+    },
+    {
+      "id": "canabinall",
+      "word": "CANABinALL",
+      "simple": "Canal de divulgação científica ligado ao ecossistema UNIFESP / MovReCam.",
+      "simpleEn": "Scientific outreach channel linked to the UNIFESP / MovReCam ecosystem.",
+      "simpleEs": "Canal de divulgación científica ligado al ecosistema UNIFESP / MovReCam.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/posts/post-inspecao-canal-canabinall.html"
+    },
+    {
+      "id": "canhamo",
+      "word": "Cânhamo",
+      "simple": "Variedade da cannabis usada sobretudo por fibra e usos industriais, não por embriaguez.",
+      "simpleEn": "A cannabis variety used mainly for fiber and industry, not intoxication.",
+      "simpleEs": "Variedad de cannabis usada sobre todo por fibra y usos industriales, no por embriaguez.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-canhamo.html"
+    },
+    {
+      "id": "cannabis",
+      "word": "Cannabis",
+      "simple": "Nome científico/latino da planta — o termo técnico mais usado em medicina e lei.",
+      "simpleEn": "Scientific/Latin name of the plant — the technical term most used in medicine and law.",
+      "simpleEs": "Nombre científico/latino de la planta — el término técnico más usado en medicina y ley.",
+      "group": "lexico",
+      "fromTitle": true,
+      "href": "/posts/post-inspecao-palavra-cannabis.html"
+    },
+    {
+      "id": "caseina",
+      "word": "Caseína",
+      "simple": "Proteína principal do leite — no site, tratada como produto de risco alimentar.",
+      "simpleEn": "Main milk protein — on the site, treated as a food-risk product.",
+      "simpleEs": "Proteína principal de la leche — en el sitio, tratada como producto de riesgo alimentario.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/posts/post-inspecao-derivado-caseina.html"
+    },
+    {
+      "id": "cebrid",
+      "word": "CEBRID",
+      "simple": "Centro UNIFESP de informação sobre drogas psicotrópicas e medicina canabinoide.",
+      "simpleEn": "UNIFESP information center on psychoactive drugs and cannabinoid medicine.",
+      "simpleEs": "Centro UNIFESP de información sobre drogas psicotrópicas y medicina cannabinoide.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/posts/post-inspecao-cebrid.html"
+    },
+    {
+      "id": "chocolate",
+      "word": "Chocolate",
+      "simple": "Matriz industrial que junta cacau, açúcar, farinha e leite — hub de Produtos nocivos.",
+      "simpleEn": "Industrial matrix joining cacao, sugar, flour and milk — Harmful products hub.",
+      "simpleEs": "Matriz industrial que junta cacao, azúcar, harina y leche — hub de Productos nocivos.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/posts/post-inspecao-derivado-chocolate.html"
+    },
+    {
+      "id": "clonadora",
+      "word": "Clonadora",
+      "simple": "Equipamento (mesmo caseiro) para enraizar estacas e multiplicar plantas.",
+      "simpleEn": "Equipment (even homemade) to root cuttings and multiply plants.",
+      "simpleEs": "Equipo (incluso casero) para enraizar esquejes y multiplicar plantas.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/equipamentos/"
+    },
+    {
+      "id": "coelho",
+      "word": "Coelho",
+      "simple": "Animal da toca — no método BudGanja, a palavra da entrada na investigação.",
+      "simpleEn": "Burrow animal — in the BudGanja method, the word for entering an investigation.",
+      "simpleEs": "Animal de la madriguera — en el método BudGanja, la palabra de entrada a la investigación.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-coelho.html"
+    },
+    {
+      "id": "cultivo",
+      "word": "Cultivo",
+      "simple": "Ato de plantar e cuidar até a planta crescer — do solo à colheita.",
+      "simpleEn": "The act of planting and caring until the plant grows — from soil to harvest.",
+      "simpleEs": "Acto de plantar y cuidar hasta que la planta crezca — del suelo a la cosecha.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/cultivo/"
+    },
+    {
+      "id": "diamba",
+      "word": "Diamba",
+      "simple": "Nome afro-brasileiro antigo da cannabis — tradição oral, pouco usado hoje.",
+      "simpleEn": "Old Afro-Brazilian name for cannabis — oral tradition, little used today.",
+      "simpleEs": "Nombre afrobrasileño antiguo de la cannabis — tradición oral, poco usado hoy.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-diamba.html"
+    },
+    {
+      "id": "diario",
+      "word": "Diário",
+      "simple": "Registo dia a dia — no site, o Diário de Pesquisas e o Diário da Sementinha.",
+      "simpleEn": "Day-by-day record — on the site, the Research Journal and the Little Seed Diary.",
+      "simpleEs": "Registro día a día — en el sitio, el Diario de Investigaciones y el Diario de la Semillita.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/cultivo/"
+    },
+    {
+      "id": "divulgacao",
+      "word": "Divulgação",
+      "simple": "Explicar ciência ou saúde para o público amplo — no hub, fichas de outreach.",
+      "simpleEn": "Explaining science or health to a wide public — in the hub, outreach sheets.",
+      "simpleEs": "Explicar ciencia o salud al público amplio — en el hub, fichas de divulgación.",
+      "group": "hub",
+      "fromTitle": true,
+      "href": "/biblioteca/inspecoes/"
+    },
+    {
+      "id": "droga",
+      "word": "Droga",
+      "simple": "Antes significava remédio; hoje, no senso comum, quase sempre substância ilícita.",
+      "simpleEn": "Once meant medicine; today, in common speech, almost always an illicit substance.",
+      "simpleEs": "Antes significaba remedio; hoy, en el habla común, casi siempre sustancia ilícita.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-droga.html"
+    },
+    {
+      "id": "emocao",
+      "word": "Emoção",
+      "simple": "Sentimento forte do corpo e da mente — hub lexical da Riley (Divertida Mente).",
+      "simpleEn": "A strong body-and-mind feeling — Riley’s lexical hub (Inside Out).",
+      "simpleEs": "Sentimiento fuerte del cuerpo y la mente — hub léxico de Riley (Intensamente).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-emocao.html"
+    },
+    {
+      "id": "entorpecente",
+      "word": "Entorpecente",
+      "simple": "Substância que entorpece (diminui sensação ou reação) — termo jurídico-policial.",
+      "simpleEn": "A substance that dulls sensation or reaction — a legal/police term.",
+      "simpleEs": "Sustancia que entumece (baja sensación o reacción) — término jurídico-policial.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": null
+    },
+    {
+      "id": "equipamentos",
+      "word": "Equipamentos",
+      "simple": "Aparelhos e montagens do laboratório — clonadoras, ventilação, kits.",
+      "simpleEn": "Lab devices and builds — cloners, ventilation, kits.",
+      "simpleEs": "Aparatos y montajes del laboratorio — clonadoras, ventilación, kits.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/equipamentos/"
+    },
+    {
+      "id": "erva",
+      "word": "Erva",
+      "simple": "Planta pequena sem tronco lenhoso — e também eufemismo popular para cannabis.",
+      "simpleEn": "A small non-woody plant — and also a popular euphemism for cannabis.",
+      "simpleEs": "Planta pequeña sin tronco leñoso — y también eufemismo popular para cannabis.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-erva.html"
+    },
+    {
+      "id": "estaca",
+      "word": "Estaca",
+      "simple": "Pedaço de planta cortado para criar raiz e virar uma planta nova (clone).",
+      "simpleEn": "A plant piece cut to grow roots and become a new plant (clone).",
+      "simpleEs": "Trozo de planta cortado para crear raíz y volverse una planta nueva (clon).",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/equipamentos/"
+    },
+    {
+      "id": "feed-vivo",
+      "word": "Feed Vivo",
+      "simple": "Mural da comunidade — fotos, identificação de plantas e conversa aberta.",
+      "simpleEn": "Community wall — photos, plant ID and open conversation.",
+      "simpleEs": "Muro de la comunidad — fotos, identificación de plantas y conversación abierta.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/comunidade/"
+    },
+    {
+      "id": "ferramentas",
+      "word": "Ferramentas",
+      "simple": "Calculadoras e utilitários do laboratório (luz, clima, solo, EC…).",
+      "simpleEn": "Lab calculators and utilities (light, climate, soil, EC…).",
+      "simpleEs": "Calculadoras y utilidades del laboratorio (luz, clima, suelo, EC…).",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/calculadoras/"
+    },
+    {
+      "id": "fitoterapia",
+      "word": "Fitoterapia",
+      "simple": "Uso de plantas para cuidar da saúde — base do laboratório BudGanja.",
+      "simpleEn": "Using plants to care for health — the base of the BudGanja lab.",
+      "simpleEs": "Uso de plantas para cuidar la salud — base del laboratorio BudGanja.",
+      "group": "marca",
+      "fromTitle": true,
+      "href": "/plantas/"
+    },
+    {
+      "id": "frutos",
+      "word": "Frutos",
+      "simple": "Parte da planta que carrega a semente — no hub, fichas de frutas inspecionadas.",
+      "simpleEn": "The plant part that carries the seed — in the hub, inspected fruit sheets.",
+      "simpleEs": "Parte de la planta que lleva la semilla — en el hub, fichas de frutas inspeccionadas.",
+      "group": "hub",
+      "fromTitle": true,
+      "href": "/biblioteca/inspecoes/"
+    },
+    {
+      "id": "ganja",
+      "word": "Ganja",
+      "simple": "Nome da planta na rota índica/sânscrita — depois gíria global e parte da marca BudGanja.",
+      "simpleEn": "Plant name on the Indic/Sanskrit route — later global slang and part of the BudGanja brand.",
+      "simpleEs": "Nombre de la planta en la ruta índica/sánscrita — luego jerga global y parte de la marca BudGanja.",
+      "group": "marca",
+      "fromTitle": true,
+      "href": "/posts/post-inspecao-palavra-ganja.html"
+    },
+    {
+      "id": "gluten",
+      "word": "Glúten",
+      "simple": "Proteína do trigo e de outros cereais — no site, ficha de produto nocivo.",
+      "simpleEn": "Protein in wheat and other cereals — on the site, a harmful-product sheet.",
+      "simpleEs": "Proteína del trigo y otros cereales — en el sitio, ficha de producto nocivo.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/posts/post-inspecao-derivado-gluten.html"
+    },
+    {
+      "id": "guias",
+      "word": "Guias",
+      "simple": "Textos que ensinam passo a passo — clonadoras, ferramentas e este glossário.",
+      "simpleEn": "Step-by-step teaching texts — cloners, tools and this glossary.",
+      "simpleEs": "Textos que enseñan paso a paso — clonadoras, herramientas y este glosario.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/guia/palavras.html"
+    },
+    {
+      "id": "inspecao",
+      "word": "Inspeção",
+      "simple": "Olhar com método, anotar o que se vê e publicar o relatório.",
+      "simpleEn": "Looking with a method, noting what you see, and publishing the report.",
+      "simpleEs": "Mirar con método, anotar lo que se ve y publicar el informe.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/biblioteca/inspecoes/"
+    },
+    {
+      "id": "inspecoes",
+      "word": "Inspeções",
+      "simple": "Os relatórios publicados do laboratório — legado, palavras, plantas, artes…",
+      "simpleEn": "The lab’s published reports — legacy, words, plants, arts…",
+      "simpleEs": "Los informes publicados del laboratorio — legado, palabras, plantas, artes…",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/biblioteca/inspecoes/"
+    },
+    {
+      "id": "inspetor",
+      "word": "Inspetor",
+      "simple": "Quem observa, verifica e documenta com método — personagem e marca do site.",
+      "simpleEn": "Who observes, verifies and documents with method — the site’s character and brand.",
+      "simpleEs": "Quien observa, verifica y documenta con método — personaje y marca del sitio.",
+      "group": "marca",
+      "fromTitle": true,
+      "href": "/posts/post-inspecao-personagem-inspetor.html"
+    },
+    {
+      "id": "laboratorio",
+      "word": "Laboratório",
+      "simple": "Lugar de experiência e medida — aqui, o laboratório digital público BudGanja.",
+      "simpleEn": "A place of experiment and measurement — here, the public digital BudGanja lab.",
+      "simpleEs": "Lugar de experiencia y medida — aquí, el laboratorio digital público BudGanja.",
+      "group": "marca",
+      "fromTitle": true,
+      "href": "/"
+    },
+    {
+      "id": "legado",
+      "word": "Legado",
+      "simple": "O que fica de quem veio antes — pessoas, CEBRID, curso e canais fundadores.",
+      "simpleEn": "What remains from those who came before — people, CEBRID, course and founding channels.",
+      "simpleEs": "Lo que queda de quienes vinieron antes — personas, CEBRID, curso y canales fundadores.",
+      "group": "hub",
+      "fromTitle": true,
+      "href": "/biblioteca/inspecoes/"
+    },
+    {
+      "id": "luximetro",
+      "word": "Luxímetro",
+      "simple": "Ferramenta para medir a luz — no site, também com a câmara do telemóvel.",
+      "simpleEn": "A tool to measure light — on the site, also with a phone camera.",
+      "simpleEs": "Herramienta para medir la luz — en el sitio, también con la cámara del móvil.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/calculadoras/luximetro.html"
+    },
+    {
+      "id": "maconha",
+      "word": "Maconha",
+      "simple": "Nome popular afro-atlântico da planta no Brasil — carregado de estigma no século XX.",
+      "simpleEn": "Afro-Atlantic popular name of the plant in Brazil — loaded with 20th-century stigma.",
+      "simpleEs": "Nombre popular afroatlántico de la planta en Brasil — cargado de estigma en el siglo XX.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-maconha.html"
+    },
+    {
+      "id": "marijuana",
+      "word": "Marijuana",
+      "simple": "Nome popular mexicano/espanhol — no século XX virou arma de discurso da proibição.",
+      "simpleEn": "Mexican/Spanish popular name — in the 20th century it became a prohibition discourse weapon.",
+      "simpleEs": "Nombre popular mexicano/español — en el siglo XX se volvió arma de discurso de la prohibición.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-marijuana.html"
+    },
+    {
+      "id": "medo",
+      "word": "Medo",
+      "simple": "Alerta interior que protege do perigo — a emoção roxa da Riley.",
+      "simpleEn": "Inner alert that protects from danger — Riley’s purple emotion.",
+      "simpleEs": "Alerta interior que protege del peligro — la emoción morada de Riley.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-medo.html"
+    },
+    {
+      "id": "movrecam",
+      "word": "MovReCam",
+      "simple": "Movimento de Reabilitação de Cannabis Medicinal — canal e origem comunitária do curso.",
+      "simpleEn": "Medicinal Cannabis Rehabilitation Movement — channel and community origin of the course.",
+      "simpleEs": "Movimiento de Rehabilitación de Cannabis Medicinal — canal y origen comunitario del curso.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/posts/post-inspecao-canal-movrecam.html"
+    },
+    {
+      "id": "narcotico",
+      "word": "Narcótico",
+      "simple": "Substância que provoca sono ou entorpecimento — termo médico/legal antigo e amplo.",
+      "simpleEn": "A substance that causes sleep or dulling — an old, broad medical/legal term.",
+      "simpleEs": "Sustancia que provoca sueño o entumecimiento — término médico/legal antiguo y amplio.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": null
+    },
+    {
+      "id": "nojinho",
+      "word": "Nojinho",
+      "simple": "Aversão que afasta do que parece sujo ou perigoso — a emoção verde da Riley.",
+      "simpleEn": "Aversion that pushes away what seems dirty or dangerous — Riley’s green emotion.",
+      "simpleEs": "Aversión que aleja de lo que parece sucio o peligroso — la emoción verde de Riley.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-nojinho.html"
+    },
+    {
+      "id": "palavras",
+      "word": "Palavras",
+      "simple": "Unidades da língua — no laboratório, série de inspeções sobre origem e sentido.",
+      "simpleEn": "Units of language — in the lab, an inspection series on origin and meaning.",
+      "simpleEs": "Unidades de la lengua — en el laboratorio, serie de inspecciones sobre origen y sentido.",
+      "group": "hub",
+      "fromTitle": true,
+      "href": "/biblioteca/inspecoes/#inspecoes-palavras"
+    },
+    {
+      "id": "passar",
+      "word": "Passar",
+      "simple": "Verbo da passagem: o que aconteceu, o que atravessa, o que se transmite.",
+      "simpleEn": "Verb of passage: what happened, what crosses, what is passed on.",
+      "simpleEs": "Verbo del paso: lo ocurrido, lo que atraviesa, lo que se transmite.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-passar.html"
+    },
+    {
+      "id": "pesquisas",
+      "word": "Pesquisas",
+      "simple": "Estudos e relatórios do laboratório e da comunidade aprovados para publicação.",
+      "simpleEn": "Lab and community studies approved for publication.",
+      "simpleEs": "Estudios e informes del laboratorio y la comunidad aprobados para publicación.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/biblioteca/pesquisas/"
+    },
+    {
+      "id": "pessoas",
+      "word": "Pessoas",
+      "simple": "Figuras humanas inspecionadas — biografias do legado e da divulgação.",
+      "simpleEn": "Inspected human figures — legacy and outreach biographies.",
+      "simpleEs": "Figuras humanas inspeccionadas — biografías del legado y la divulgación.",
+      "group": "hub",
+      "fromTitle": true,
+      "href": "/biblioteca/inspecoes/"
+    },
+    {
+      "id": "plantas",
+      "word": "Plantas",
+      "simple": "Seres vivos do reino vegetal — no site, catálogo fitoterápico brasileiro.",
+      "simpleEn": "Living beings of the plant kingdom — on the site, a Brazilian phytotherapy catalog.",
+      "simpleEs": "Seres vivos del reino vegetal — en el sitio, catálogo fitoterapéutico brasileño.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/plantas/"
+    },
+    {
+      "id": "produtos-nocivos",
+      "word": "Produtos nocivos",
+      "simple": "Itens industriais ou alimentares que o laboratório marca como risco (açúcar, glúten, caseína…).",
+      "simpleEn": "Industrial or food items the lab marks as risk (sugar, gluten, casein…).",
+      "simpleEs": "Ítems industriales o alimentarios que el laboratorio marca como riesgo (azúcar, gluten, caseína…).",
+      "group": "hub",
+      "fromTitle": true,
+      "href": "/biblioteca/inspecoes/"
+    },
+    {
+      "id": "radio",
+      "word": "Rádio",
+      "simple": "Playlist do laboratório para ouvir enquanto estuda ou cultiva.",
+      "simpleEn": "The lab playlist to listen while you study or grow.",
+      "simpleEs": "Playlist del laboratorio para oír mientras estudias o cultivas.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/radio/"
+    },
+    {
+      "id": "raiva",
+      "word": "Raiva",
+      "simple": "Fúria que avisa limite ultrapassado — a emoção vermelha da Riley.",
+      "simpleEn": "Fury that signals a crossed limit — Riley’s red emotion.",
+      "simpleEs": "Furia que avisa límite cruzado — la emoción roja de Riley.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-raiva.html"
+    },
+    {
+      "id": "sementinha",
+      "word": "Sementinha",
+      "simple": "Semente pequena — personagem-símbolo do conto Vida e do diário familiar.",
+      "simpleEn": "A little seed — symbol character of the Vida story and family diary.",
+      "simpleEs": "Semilla pequeña — personaje-símbolo del cuento Vida y del diario familiar.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/vida/diario/"
+    },
+    {
+      "id": "sorteios",
+      "word": "Sorteios",
+      "simple": "Sorteios do laboratório — prémios e avisos para a comunidade.",
+      "simpleEn": "Lab giveaways — prizes and alerts for the community.",
+      "simpleEs": "Sorteos del laboratorio — premios y avisos para la comunidad.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/sorteios/"
+    },
+    {
+      "id": "substrato",
+      "word": "Substrato",
+      "simple": "Base onde a planta cresce — terra, fibra de coco, misturas biodegradáveis…",
+      "simpleEn": "The base a plant grows in — soil, coco fiber, biodegradable mixes…",
+      "simpleEs": "Base donde crece la planta — tierra, fibra de coco, mezclas biodegradables…",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/biblioteca/pesquisas/substratos.html"
+    },
+    {
+      "id": "sugestoes",
+      "word": "Sugestões",
+      "simple": "Ideias na fila — próximos relatórios ainda não publicados.",
+      "simpleEn": "Ideas in the queue — next reports not yet published.",
+      "simpleEs": "Ideas en la cola — próximos informes aún no publicados.",
+      "group": "hub",
+      "fromTitle": true,
+      "href": "/biblioteca/inspecoes/#inspecoes-sugestoes"
+    },
+    {
+      "id": "super-solo",
+      "word": "Super Solo",
+      "simple": "Mistura de solo vivo rico — «cama fofinha» da semente no método BudGanja.",
+      "simpleEn": "A rich living-soil mix — the seed’s “soft bed” in the BudGanja method.",
+      "simpleEs": "Mezcla de suelo vivo rico — la «cama mullida» de la semilla en el método BudGanja.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/calculadoras/super-solo.html"
+    },
+    {
+      "id": "trigo",
+      "word": "Trigo",
+      "simple": "Cereal (Triticum) — farinha e glúten; no discurso popular, alvo de Barriga de Trigo.",
+      "simpleEn": "Cereal (Triticum) — flour and gluten; in popular discourse, Wheat Belly’s target.",
+      "simpleEs": "Cereal (Triticum) — harina y gluten; en el discurso popular, blanco de Barriga de Trigo.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/posts/post-inspecao-derivado-gluten.html"
+    },
+    {
+      "id": "tristeza",
+      "word": "Tristeza",
+      "simple": "Sentimento azul que também ajuda a cuidar e a pedir ajuda — emoção da Riley.",
+      "simpleEn": "The blue feeling that also helps care and ask for help — Riley’s emotion.",
+      "simpleEs": "Sentimiento azul que también ayuda a cuidar y pedir ayuda — emoción de Riley.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-tristeza.html"
+    },
+    {
+      "id": "unifesp",
+      "word": "UNIFESP",
+      "simple": "Universidade Federal de São Paulo — sede do curso de extensão em cannabis medicinal.",
+      "simpleEn": "Federal University of São Paulo — home of the medicinal-cannabis extension course.",
+      "simpleEs": "Universidad Federal de São Paulo — sede del curso de extensión en cannabis medicinal.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/biblioteca/unifesp/"
+    },
+    {
+      "id": "vida",
+      "word": "Vida",
+      "simple": "Trilha familiar do laboratório — conto, personagens e Diário da Sementinha.",
+      "simpleEn": "The lab’s family trail — story, characters and Little Seed Diary.",
+      "simpleEs": "Trama familiar del laboratorio — cuento, personajes y Diario de la Semillita.",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/vida/"
+    },
+    {
+      "id": "videos",
+      "word": "Vídeos",
+      "simple": "Aulas e clips do Inspetor, MovReCam, CANABinALL e divulgação (Lair).",
+      "simpleEn": "Lectures and clips from Inspetor, MovReCam, CANABinALL and outreach (Lair).",
+      "simpleEs": "Clases y clips del Inspetor, MovReCam, CANABinALL y divulgación (Lair).",
+      "group": "titulo",
+      "fromTitle": true,
+      "href": "/videos/"
+    },
+    {
+      "id": "william-davis",
+      "word": "William Davis",
+      "simple": "Cardiologista autor de Barriga de Trigo — divulgação anti-trigo (Pessoas).",
+      "simpleEn": "Cardiologist who wrote Wheat Belly — anti-wheat outreach (People).",
+      "simpleEs": "Cardiólogo autor de Barriga de Trigo — divulgación anti-trigo (Personas).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-william-davis.html"
+    }
+  ]
+}

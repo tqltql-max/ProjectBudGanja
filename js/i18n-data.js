@@ -343,6 +343,11 @@ window.__I18N_LOCALES__ = {
         "label": "Cannabis growing: the beginning",
         "tileLabel": "Cannabis growing: the beginning",
         "description": "Cannabis growing comes down to 4 stages and essential factors."
+      },
+      "guia-palavras": {
+        "label": "Words",
+        "tileLabel": "Words",
+        "description": "Simple glossary of site titles and the inspected lexicon."
       }
     },
     "pages": {
@@ -655,7 +660,8 @@ window.__I18N_LOCALES__ = {
         "wordsChange": "Change",
         "wordsMapOnly": "map only",
         "wordsCatalogEmpty": "Empty catalog.",
-        "wordsCatalogError": "Could not load the words catalog."
+        "wordsCatalogError": "Could not load the words catalog.",
+        "wordsGuideLink": "Words Guide (simple glossary)"
       },
       "research": {
         "eyebrow": "Library",
@@ -810,6 +816,26 @@ window.__I18N_LOCALES__ = {
         "entriesEmpty": "No story chapters yet.",
         "adultLink": "Research diary for adults",
         "docTitle": "Little Seed Diary | Inspetor BudGanja"
+      },
+      "guiaPalavras": {
+        "eyebrow": "Library · Guides",
+        "title": "Words Guide",
+        "subtitle": "Very simple meanings for site-title words and the lexicon the lab inspects.",
+        "loading": "Loading words…",
+        "loadError": "Could not load the glossary.",
+        "searchLabel": "Search",
+        "searchPlaceholder": "Word or meaning…",
+        "filtersLabel": "Filter by group",
+        "filterAll": "All",
+        "emptySearch": "No words match those letters.",
+        "emptyFilter": "No words in this group.",
+        "countOne": "word",
+        "countMany": "words",
+        "badgeTitle": "Title",
+        "openInspection": "View inspection",
+        "openPage": "Open page",
+        "linkInspections": "Word inspections",
+        "docTitle": "Words Guide | Inspetor BudGanja"
       }
     }
   },
@@ -1156,6 +1182,11 @@ window.__I18N_LOCALES__ = {
         "label": "Cultivo de cannabis: el comienzo",
         "tileLabel": "Cultivo de cannabis: el comienzo",
         "description": "El cultivo de cannabis se resume en 4 etapas y factores esenciales."
+      },
+      "guia-palavras": {
+        "label": "Palabras",
+        "tileLabel": "Palabras",
+        "description": "Glosario simple de los títulos del sitio y del léxico inspeccionado."
       }
     },
     "pages": {
@@ -1468,7 +1499,8 @@ window.__I18N_LOCALES__ = {
         "wordsChange": "Cambio",
         "wordsMapOnly": "solo mapa",
         "wordsCatalogEmpty": "Catálogo vacío.",
-        "wordsCatalogError": "No se pudo cargar el catálogo de palabras."
+        "wordsCatalogError": "No se pudo cargar el catálogo de palabras.",
+        "wordsGuideLink": "Guía de Palabras (glosario simple)"
       },
       "research": {
         "eyebrow": "Biblioteca",
@@ -1623,6 +1655,26 @@ window.__I18N_LOCALES__ = {
         "entriesEmpty": "Aún no hay capítulos en esta historia.",
         "adultLink": "Diario de investigación para adultos",
         "docTitle": "Diario de la Semillita | Inspetor BudGanja"
+      },
+      "guiaPalavras": {
+        "eyebrow": "Biblioteca · Guías",
+        "title": "Guía de Palabras",
+        "subtitle": "Significados muy simples de las palabras de los títulos del sitio y del léxico que el laboratorio inspecciona.",
+        "loading": "Cargando palabras…",
+        "loadError": "No se pudo cargar el glosario.",
+        "searchLabel": "Buscar",
+        "searchPlaceholder": "Palabra o significado…",
+        "filtersLabel": "Filtrar por grupo",
+        "filterAll": "Todas",
+        "emptySearch": "Ninguna palabra con esas letras.",
+        "emptyFilter": "Ninguna palabra en este grupo.",
+        "countOne": "palabra",
+        "countMany": "palabras",
+        "badgeTitle": "Título",
+        "openInspection": "Ver inspección",
+        "openPage": "Abrir página",
+        "linkInspections": "Inspecciones de Palabras",
+        "docTitle": "Guía de Palabras | Inspetor BudGanja"
       }
     }
   },
@@ -1777,6 +1829,11 @@ window.__I18N_LOCALES__ = {
       "guias": {
         "label": "Guias",
         "tileLabel": "Guias"
+      },
+      "guia-palavras": {
+        "label": "Palavras",
+        "tileLabel": "Palavras",
+        "description": "Glossário simples dos títulos do site e do léxico inspecionado."
       },
       "guia-cultivo": {
         "label": "Cultivo",
@@ -2246,6 +2303,7 @@ window.__I18N_LOCALES__ = {
         "sectionDerivativesDesc": "Proteínas e matrizes industriais associadas a dano ao organismo — caseína, glúten, açúcares livres e outros derivados — sem demonizar a origem; foco no desvio industrial e na dose.",
         "sectionWords": "Palavras",
         "sectionWordsDesc": "Origem, viagem e transformação histórica de vocábulos — com mapa do duplo sentido prejudicial à originalidade; fichas publicadas em cards e fila de sugestões abaixo.",
+        "wordsGuideLink": "Guia de Palavras (glossário simples)",
         "plantsDropTitle": "Catálogo de plantas medicinais",
         "plantsDropDesc": "Fichas e relatórios por espécie — toque para expandir a lista.",
         "plantsDropCount": "{n} espécies",
@@ -2436,6 +2494,26 @@ window.__I18N_LOCALES__ = {
         "entriesEmpty": "Ainda sem capítulos nesta história.",
         "adultLink": "Diário de pesquisas para adultos",
         "docTitle": "Diário da Sementinha | Inspetor BudGanja"
+      },
+      "guiaPalavras": {
+        "eyebrow": "Biblioteca · Guias",
+        "title": "Guia de Palavras",
+        "subtitle": "Significados bem simples das palavras dos títulos do site e do léxico que o laboratório inspeciona.",
+        "loading": "Carregando palavras…",
+        "loadError": "Não foi possível carregar o glossário.",
+        "searchLabel": "Buscar",
+        "searchPlaceholder": "Palavra ou significado…",
+        "filtersLabel": "Filtrar por grupo",
+        "filterAll": "Todas",
+        "emptySearch": "Nenhuma palavra com essas letras.",
+        "emptyFilter": "Nenhuma palavra neste grupo.",
+        "countOne": "palavra",
+        "countMany": "palavras",
+        "badgeTitle": "Título",
+        "openInspection": "Ver inspeção",
+        "openPage": "Abrir página",
+        "linkInspections": "Inspeções de Palavras",
+        "docTitle": "Guia de Palavras | Inspetor BudGanja"
       }
     }
   }

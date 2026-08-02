@@ -341,6 +341,11 @@
       "label": "Cannabis growing: the beginning",
       "tileLabel": "Cannabis growing: the beginning",
       "description": "Cannabis growing comes down to 4 stages and essential factors."
+    },
+    "guia-palavras": {
+      "label": "Words",
+      "tileLabel": "Words",
+      "description": "Simple glossary of site titles and the inspected lexicon."
     }
   },
   "pages": {
@@ -653,7 +658,8 @@
       "wordsChange": "Change",
       "wordsMapOnly": "map only",
       "wordsCatalogEmpty": "Empty catalog.",
-      "wordsCatalogError": "Could not load the words catalog."
+      "wordsCatalogError": "Could not load the words catalog.",
+      "wordsGuideLink": "Words Guide (simple glossary)"
     },
     "research": {
       "eyebrow": "Library",
@@ -808,6 +814,26 @@
       "entriesEmpty": "No story chapters yet.",
       "adultLink": "Research diary for adults",
       "docTitle": "Little Seed Diary | Inspetor BudGanja"
+    },
+    "guiaPalavras": {
+      "eyebrow": "Library · Guides",
+      "title": "Words Guide",
+      "subtitle": "Very simple meanings for site-title words and the lexicon the lab inspects.",
+      "loading": "Loading words…",
+      "loadError": "Could not load the glossary.",
+      "searchLabel": "Search",
+      "searchPlaceholder": "Word or meaning…",
+      "filtersLabel": "Filter by group",
+      "filterAll": "All",
+      "emptySearch": "No words match those letters.",
+      "emptyFilter": "No words in this group.",
+      "countOne": "word",
+      "countMany": "words",
+      "badgeTitle": "Title",
+      "openInspection": "View inspection",
+      "openPage": "Open page",
+      "linkInspections": "Word inspections",
+      "docTitle": "Words Guide | Inspetor BudGanja"
     }
   }
 }

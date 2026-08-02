@@ -150,6 +150,11 @@
       "label": "Guias",
       "tileLabel": "Guias"
     },
+    "guia-palavras": {
+      "label": "Palavras",
+      "tileLabel": "Palavras",
+      "description": "Glossário simples dos títulos do site e do léxico inspecionado."
+    },
     "guia-cultivo": {
       "label": "Cultivo",
       "tileLabel": "Cultivo",
@@ -618,6 +623,7 @@
       "sectionDerivativesDesc": "Proteínas e matrizes industriais associadas a dano ao organismo — caseína, glúten, açúcares livres e outros derivados — sem demonizar a origem; foco no desvio industrial e na dose.",
       "sectionWords": "Palavras",
       "sectionWordsDesc": "Origem, viagem e transformação histórica de vocábulos — com mapa do duplo sentido prejudicial à originalidade; fichas publicadas em cards e fila de sugestões abaixo.",
+      "wordsGuideLink": "Guia de Palavras (glossário simples)",
       "plantsDropTitle": "Catálogo de plantas medicinais",
       "plantsDropDesc": "Fichas e relatórios por espécie — toque para expandir a lista.",
       "plantsDropCount": "{n} espécies",
@@ -808,6 +814,26 @@
       "entriesEmpty": "Ainda sem capítulos nesta história.",
       "adultLink": "Diário de pesquisas para adultos",
       "docTitle": "Diário da Sementinha | Inspetor BudGanja"
+    },
+    "guiaPalavras": {
+      "eyebrow": "Biblioteca · Guias",
+      "title": "Guia de Palavras",
+      "subtitle": "Significados bem simples das palavras dos títulos do site e do léxico que o laboratório inspeciona.",
+      "loading": "Carregando palavras…",
+      "loadError": "Não foi possível carregar o glossário.",
+      "searchLabel": "Buscar",
+      "searchPlaceholder": "Palavra ou significado…",
+      "filtersLabel": "Filtrar por grupo",
+      "filterAll": "Todas",
+      "emptySearch": "Nenhuma palavra com essas letras.",
+      "emptyFilter": "Nenhuma palavra neste grupo.",
+      "countOne": "palavra",
+      "countMany": "palavras",
+      "badgeTitle": "Título",
+      "openInspection": "Ver inspeção",
+      "openPage": "Abrir página",
+      "linkInspections": "Inspeções de Palavras",
+      "docTitle": "Guia de Palavras | Inspetor BudGanja"
     }
   }
 }
