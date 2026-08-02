@@ -76,6 +76,11 @@ function build() {
     else if (depthNew === depthOld && relNew.length < relOld.length) byBase.set(base, full);
   }
 
+  function isWelcomeTrack(title) {
+    const t = String(title || '');
+    return /rusted\s*root/i.test(t) && /send\s*me\s*on\s*my\s*way/i.test(t);
+  }
+
   const tracks = Array.from(byBase.values())
     .map((full) => {
       const rel = path.relative(RADIO_DIR, full).split(path.sep).join('/');
@@ -88,7 +93,13 @@ function build() {
         file: basename
       };
     })
-    .sort((a, b) => naturalKey(a.file).localeCompare(naturalKey(b.file), 'pt-BR'));
+    .sort((a, b) => {
+      // Abertura da casa (Rusted Root) sempre em 1.º — resto ordem natural.
+      const wa = isWelcomeTrack(a.title) ? 0 : 1;
+      const wb = isWelcomeTrack(b.title) ? 0 : 1;
+      if (wa !== wb) return wa - wb;
+      return naturalKey(a.file).localeCompare(naturalKey(b.file), 'pt-BR');
+    });
 
   const playlist = {
     updatedAt: new Date().toISOString(),

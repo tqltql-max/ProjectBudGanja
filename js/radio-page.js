@@ -469,11 +469,17 @@ document.addEventListener('DOMContentLoaded', () => {
       renderList();
       if (tracks.length) {
         let startIndex = 0;
+        const welcomeIndex = tracks.findIndex((t) => {
+          const title = String((t && t.title) || '');
+          return /rusted\s*root/i.test(title) && /send\s*me\s*on\s*my\s*way/i.test(title);
+        });
+        if (welcomeIndex >= 0) startIndex = welcomeIndex;
         if (trackParam) {
           const found = tracks.findIndex((t) => t && String(t.id) === trackParam);
           if (found >= 0) startIndex = found;
         }
-        loadTrack(startIndex, !!trackParam);
+        // Autoplay ao abrir a rádio (abertura Rusted Root, ou faixa partilhada via ?t=).
+        loadTrack(startIndex, true);
         setStatus('');
       } else {
         setStatus('Ainda não há faixas no catálogo.', false);

@@ -43,6 +43,12 @@
     return p === '/radio/' || p === '/radio' || p === '/radio/index.html';
   }
 
+  /** Mini-player exclusivo da Comunidade (Feed Vivo). */
+  function isCommunityPage() {
+    var p = pathLower();
+    return p === '/comunidade' || p === '/comunidade/' || p.indexOf('/comunidade/') === 0;
+  }
+
   /** Páginas de trabalho: só pill discreta (não barra larga). */
   function isFocusPage() {
     var p = pathLower();
@@ -274,6 +280,15 @@
 
     function togglePlayback() {
       if (audio.paused) {
+        // Primeira ligação nesta sessão: abertura Rusted Root com autoplay.
+        if (freshSession) {
+          freshSession = false;
+          var wi = findWelcomeIndex(tracks);
+          if (index !== wi || !audio.src) {
+            loadTrack(wi, true, 0);
+            return;
+          }
+        }
         audio.play().then(function () {
           updatePlayUi(true);
           writeSession(STORAGE_PLAYING, '1');
@@ -714,6 +729,8 @@
   function init() {
     if (isAdminPage()) return;
     if (isRadioPage()) return;
+    // Rádio exclusiva da Comunidade — não monta no resto do site.
+    if (!isCommunityPage()) return;
     if (isDismissed()) return;
     if (document.getElementById('budganja-radio')) return;
 
