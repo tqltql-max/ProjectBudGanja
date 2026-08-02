@@ -163,6 +163,30 @@
                   "description": "Canais, equipamentos, insumos e formação."
                 },
                 {
+                  "label": "Inspeção: Caseína — leite bovino e proteína nociva ao organismo",
+                  "tileLabel": "Inspeção: Caseína — leite bovin…",
+                  "href": "/posts/post-inspecao-derivado-caseina.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-caseina",
+                  "description": "Produtos nocivos: caseína do leite (*Bos taurus*) — A1/BCM-7, inflamação (limites de evidência) e laticínios ultraprocessados versus leite tradicional. Elo com glúten e ficha da vaca."
+                },
+                {
+                  "label": "Inspeção: Produção animal — Galinha",
+                  "tileLabel": "Inspeção: Produção animal — Gal…",
+                  "href": "/posts/post-inspecao-animal-galinha.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-animal-galinha",
+                  "description": "Relatório educacional de Galinha (*Gallus gallus domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+                },
+                {
+                  "label": "Inspeção: Animal — Cão",
+                  "tileLabel": "Inspeção: Animal — Cão",
+                  "href": "/posts/post-inspecao-animal-cao.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-animal-cao",
+                  "description": "Relatório educacional de Cão (*Canis lupus familiaris): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+                },
+                {
                   "label": "Inspeção: Send Me On My Way — a canção Rusted Root e o caminho",
                   "tileLabel": "Inspeção: Send Me On My Way — a…",
                   "href": "/posts/post-inspecao-arte-send-me-on-my-way.html",
@@ -257,6 +281,30 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-ventilacao-tenda",
                   "description": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório."
+                },
+                {
+                  "label": "Inspeção: Derivados da galinha — ultraprocessados e química industrial",
+                  "tileLabel": "Inspeção: Derivados da galinha …",
+                  "href": "/posts/post-inspecao-derivado-galinha.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-galinha",
+                  "description": "Derivados de risco: separar galinha/ovo/carne frescos de nuggets e ultraprocessados industriais de frango."
+                },
+                {
+                  "label": "Inspeção: Produção animal — Vaca / boi",
+                  "tileLabel": "Inspeção: Produção animal — Vac…",
+                  "href": "/posts/post-inspecao-animal-vaca.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-animal-vaca",
+                  "description": "Relatório educacional de Vaca / boi (*Bos taurus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+                },
+                {
+                  "label": "Inspeção: Animal — Gato",
+                  "tileLabel": "Inspeção: Animal — Gato",
+                  "href": "/posts/post-inspecao-animal-gato.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-animal-gato",
+                  "description": "Relatório educacional de Gato (*Felis catus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
                 },
                 {
                   "label": "Inspeção: Derivados do abacate — açúcar, aditivos e química industrial",
@@ -355,12 +403,36 @@
                   "description": "Verificação do smartphone como equipamento social: riscos à saúde infantil (sono, visão, mente, aprendizagem), limites SBP/guia federal 2025, Lei 15.100/2025 e enquadramento mundial (UNESCO)."
                 },
                 {
+                  "label": "Inspeção: Derivados da vaca — carnes processadas e laticínios industriais",
+                  "tileLabel": "Inspeção: Derivados da vaca — c…",
+                  "href": "/posts/post-inspecao-derivado-vaca.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-vaca",
+                  "description": "Produtos nocivos / derivados: bovino fresco versus carnes processadas e laticínios industriais. Elo com a ficha da caseína."
+                },
+                {
                   "label": "Inspeção: Caminho — a palavra que liga o laboratório BudGanja",
                   "tileLabel": "Inspeção: Caminho — a palavra q…",
                   "href": "/posts/post-inspecao-palavra-caminho.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-caminho",
                   "description": "Palavras: «caminho» (latim vulgar *cammīnus*) — via, método e hub lexical que relaciona passar, Send Me On My Way, Heródoto, Artes, cultivo e o mapa de inspeções."
+                },
+                {
+                  "label": "Inspeção: Produção animal — Porco",
+                  "tileLabel": "Inspeção: Produção animal — Por…",
+                  "href": "/posts/post-inspecao-animal-porco.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-animal-porco",
+                  "description": "Relatório educacional de Porco (*Sus scrofa domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+                },
+                {
+                  "label": "Inspeção: Animal — Cavalo",
+                  "tileLabel": "Inspeção: Animal — Cavalo",
+                  "href": "/posts/post-inspecao-animal-cavalo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-animal-cavalo",
+                  "description": "Relatório educacional de Cavalo (*Equus ferus caballus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
                 },
                 {
                   "label": "Inspeção: ESAPP — Agronomia em Paraguaçu Paulista",
@@ -427,12 +499,36 @@
                   "description": "Auditoria do canal CANABinALL (@canabinall) — 139 vídeos catalogados; divulgação científica UNIFESP sob curadoria da Profa. Dra. Eliana Rodrigues (CEE), com destaque a Conceitos básicos #1 e à série Plantas Sagradas."
                 },
                 {
+                  "label": "Inspeção: Glúten — trigo e proteína nociva ao organismo",
+                  "tileLabel": "Inspeção: Glúten — trigo e prot…",
+                  "href": "/posts/post-inspecao-derivado-gluten.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-gluten",
+                  "description": "Produtos nocivos: glúten do trigo — celíaca, sensibilidade e ultraprocessados de farinha versus cereal tradicional. Elo com caseína e açúcares livres."
+                },
+                {
                   "label": "Inspeção: Ganja — da rota índica à marca e à gíria global",
                   "tileLabel": "Inspeção: Ganja — da rota índic…",
                   "href": "/posts/post-inspecao-palavra-ganja.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-ganja",
                   "description": "Palavras: «ganja» — originalidade cultural índica/caribenha coberta por gíria e marketing (incl. BudGanja); mudança sem apagar a rota."
+                },
+                {
+                  "label": "Inspeção: Derivados do porco — embutidos e química industrial",
+                  "tileLabel": "Inspeção: Derivados do porco — …",
+                  "href": "/posts/post-inspecao-derivado-porco.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-porco",
+                  "description": "Derivados de risco: carne de porco fresca e charcutaria artesanal versus embutidos industriais."
+                },
+                {
+                  "label": "Inspeção: Produção animal — Tilápia",
+                  "tileLabel": "Inspeção: Produção animal — Til…",
+                  "href": "/posts/post-inspecao-animal-peixe-tilapia.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-animal-peixe-tilapia",
+                  "description": "Relatório educacional de Tilápia (*Oreochromis niloticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
                 },
                 {
                   "label": "Inspeção: Alice no País das Maravilhas — o livro de Carroll e o buraco do coelho",
@@ -491,6 +587,22 @@
                   "description": "Palavras: «diamba» (e liamba/riamba) — originalidade bantu/afro-brasileira coberta pelo léxico pejorativo de maconha e pelo latinismo clínico."
                 },
                 {
+                  "label": "Inspeção: Derivados do peixe — empanados e ultraprocessados",
+                  "tileLabel": "Inspeção: Derivados do peixe — …",
+                  "href": "/posts/post-inspecao-derivado-peixe.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-peixe",
+                  "description": "Derivados de risco: filé fresco de tilápia versus empanados e ultraprocessados de peixe."
+                },
+                {
+                  "label": "Inspeção: Produção animal — Abelha",
+                  "tileLabel": "Inspeção: Produção animal — Abe…",
+                  "href": "/posts/post-inspecao-animal-abelha.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-animal-abelha",
+                  "description": "Relatório educacional de Abelha (*Apis mellifera): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+                },
+                {
                   "label": "Inspeção: Jostein Gaarder — filosofia narrada e elo com O Dia do Curinga",
                   "tileLabel": "Inspeção: Jostein Gaarder — fil…",
                   "href": "/posts/post-inspecao-figura-jostein-gaarder.html",
@@ -545,6 +657,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-cannabis",
                   "description": "Palavras: «cannabis» — originalidade botânica/grega-latina; segunda camada «palavra limpa» que pode apagar maconha/diamba ou ainda soar a «droga» na imprensa."
+                },
+                {
+                  "label": "Inspeção: Derivados da abelha — mel adulterado e açúcares industriais",
+                  "tileLabel": "Inspeção: Derivados da abelha —…",
+                  "href": "/posts/post-inspecao-derivado-abelha.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-abelha",
+                  "description": "Derivados de risco: mel de qualidade e própolis versus mel adulterado com xaropes industriais."
                 },
                 {
                   "label": "Inspeção: Anthony Henman — antropologia da diamba e elo com Diamba Sarabamba",
