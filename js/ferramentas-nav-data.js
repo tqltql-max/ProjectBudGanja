@@ -342,6 +342,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Derivados de risco: do fruto (*Cocos nucifera*) ao ultraprocessado — água adoçada, leite UHT, óleo refinado e doces; mapa de açúcares livres + lípidos + aditivos, cruzado com a ficha planta e com a cana."
             },
             {
+              "label": "Inspeção: Celular — os riscos para a saúde das crianças (sociedade e mundo)",
+              "tileLabel": "Inspeção: Celular — os riscos p…",
+              "href": "/posts/post-inspecao-celular-riscos-saude-criancas.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-celular-riscos-saude-criancas",
+              "description": "Verificação do smartphone como equipamento social: riscos à saúde infantil (sono, visão, mente, aprendizagem), limites SBP/guia federal 2025, Lei 15.100/2025 e enquadramento mundial (UNESCO)."
+            },
+            {
               "label": "Inspeção: Caminho — a palavra que liga o laboratório BudGanja",
               "tileLabel": "Inspeção: Caminho — a palavra q…",
               "href": "/posts/post-inspecao-palavra-caminho.html",

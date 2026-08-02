@@ -4,6 +4,9 @@ Allow: /
 Disallow: /admin.html
 Disallow: /login.html
 Disallow: /sorteios-admin.html
+Disallow: /info/apresentacao-unifesp.html
+Disallow: /info/apresentacao-unifesp-print.html
+Disallow: /info/apresentacao-inspetor-budganja-unifesp.pdf
 Disallow: /api/
 Disallow: /content/
 Disallow: /.env

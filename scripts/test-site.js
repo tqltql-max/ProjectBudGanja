@@ -11,7 +11,15 @@ const { isDevModeEnabled } = require('../lib/site-dev-mode.js');
 const BASE = 'http://localhost:8080';
 const TIMEOUT = 8000;
 
-const PROTECTED_PAGES = new Set(['admin.html', 'pesquisas-admin.html', 'usuarios-admin.html', 'sorteios-admin.html']);
+const PROTECTED_PAGES = new Set([
+  'admin.html',
+  'pesquisas-admin.html',
+  'usuarios-admin.html',
+  'sorteios-admin.html',
+  'info/apresentacao-unifesp.html',
+  'info/apresentacao-unifesp-print.html',
+  'info/apresentacao-inspetor-budganja-unifesp.pdf'
+]);
 const DEV_MODE_PUBLIC_PAGES = new Set(['login.html', 'em-desenvolvimento.html']);
 const DEV_MODE = isDevModeEnabled();
 const API_ROUTES = ['/api/me', '/api/site', '/api/posts', '/api/sorteio', '/api/guia-cultivo', '/api/youtube-feed', '/api/videos-hub'];

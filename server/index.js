@@ -13,7 +13,7 @@ const { mergeGuiaInspecoesPosts } = require('../lib/merge-guia-inspecoes.js');
 const { buildEmptyStateHtml } = require('../lib/empty-state.js');
 const { applySecurityHeaders } = require('../lib/security-headers.js');
 const { hasAdminAccess } = require('../lib/admin-access.js');
-const { isBlockedStaticPath, isProtectedHtml } = require('../lib/static-security.js');
+const { isBlockedStaticPath, isProtectedHtml, isProtectedPath } = require('../lib/static-security.js');
 const {
   isDevModeEnabled,
   shouldBlockForDevMode,
@@ -288,9 +288,9 @@ function serveManagedHtml(res, filename) {
   const html = contentStore.renderManagedPage(filename, transform);
   if (!html) return false;
 
-  setSecurityHeaders(res, null);
+  setSecurityHeaders(res, null, isProtectedPath(filename) ? { noStore: true, noIndex: true } : {});
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
-  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Cache-Control', isProtectedPath(filename) ? 'no-store' : 'no-cache');
   res.end(html);
   return true;
 }
@@ -323,7 +323,7 @@ function serveStatic(req, res, staticPath) {
     const pageName = path.relative(ROOT, requested).replace(/\\/g, '/');
     const isShareImage = /(?:^|\/)imagens\/(?:og-[^/]+\.jpe?g|inspecoes\/)/i.test(pageName);
     const headerOpts = {
-      ...(isProtectedHtml(pageName) ? { noStore: true, noIndex: true } : {}),
+      ...(isProtectedPath(pageName) ? { noStore: true, noIndex: true } : {}),
       corpCrossOrigin: isShareImage
     };
     setSecurityHeaders(res, req, headerOpts);
@@ -511,8 +511,10 @@ const server = http.createServer((req, res) => {
       return serveDevModePage(res, req, ROOT);
     }
 
-    if (isProtectedHtml(pageFile) && !isAdmin) {
-      const returnTo = encodeURIComponent(staticPath);
+    if (isProtectedPath(pageFile) && !isAdmin) {
+      const returnTo = isProtectedHtml(pageFile)
+        ? encodeURIComponent(staticPath)
+        : encodeURIComponent('/info/apresentacao-unifesp.html');
       return resRedirect(res, '/login.html?returnTo=' + returnTo);
     }
 

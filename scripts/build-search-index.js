@@ -29,7 +29,6 @@ const STATIC_PAGES = [
   { url: '/radio/', title: 'BudGanja Radio', desc: 'Playlist BudGanja Radio do laboratório', keywords: 'rádio budganja playlist' },
   { url: '/vida/', title: 'Vida — conto familiar', desc: 'Conto familiar do Laboratório BudGanja: cuidar de plantas com ciência, natureza e amizade', keywords: 'vida conto infantil família plantas semente inspetor dona maria' },
   { url: '/info/sobre.html', title: 'Sobre', desc: 'Propósito e metodologia do projeto', keywords: 'sobre missão fitoterapia' },
-  { url: '/info/apresentacao-unifesp.html', title: 'Apresentação UNIFESP', desc: 'Apresentação do laboratório à coordenação do XIV Curso UNIFESP', keywords: 'unifesp apresentação curso extensão cannabis' },
   { url: '/info/contato.html', title: 'Contato', desc: 'E-mail e perguntas frequentes', keywords: 'contato email' },
   { url: '/info/privacidade.html', title: 'Privacidade', desc: 'LGPD e dados de sorteios', keywords: 'privacidade lgpd' },
   { url: '/equipamentos/clonadora-6-estacas.html', title: 'Guia: Clonadora de 6 estacas', desc: 'Pote de sorvete, bucha de louça e bombinha 24 h', keywords: 'clonadora 6 estacas pote sorvete bucha bombinha' },
