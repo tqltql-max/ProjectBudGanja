@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T21:05:27.883Z",
+  "updatedAt": "2026-08-02T21:10:17.127Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2827,6 +2827,32 @@
         "/vida/"
       ],
       "notes": "Backspace bom = rever; backspace mau = amnésia / silenciamento."
+    },
+    {
+      "id": "palavra-mao-esquerda-direita",
+      "title": "Mão esquerda / mão direita — complementaridade do ofício",
+      "titleEn": "Left hand / right hand — complementarity of craft",
+      "titleEs": "Mano izquierda / mano derecha — complementariedad del oficio",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: «mão esquerda» / «mão direita» (*manus*) — ferramentas do gesto e do teclado; complementaridade, não moral dualista.",
+      "whyEn": "Words: “mão esquerda” / “mão direita” (*manus*) — tools of gesture and typing; complementarity, not moral dualism.",
+      "whyEs": "Palabras: «mão esquerda» / «mão direita» (*manus*) — herramientas del gesto y el teclado; complementariedad, no dualismo moral.",
+      "suggestedSlug": "inspecao-palavra-mao-esquerda-direita",
+      "doneHref": "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/M%C3%A3o",
+        "https://pt.wiktionary.org/wiki/esquerda",
+        "https://pt.wiktionary.org/wiki/direita",
+        "https://en.wiktionary.org/wiki/manus#Latin",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-backspace.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/vida/"
+      ],
+      "notes": "Par único Cap. 25 — complementaridade de ofício; evitar preconceito «sinistra»."
     }
   ]
 }

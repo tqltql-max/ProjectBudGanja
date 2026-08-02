@@ -2831,6 +2831,25 @@
     "seriesLabel": "Jaborandi"
   },
   {
+    "title": "Inspeção: Mão esquerda / mão direita — complementaridade do ofício",
+    "titleEn": "Inspection: Left hand / right hand — complementarity of craft",
+    "titleEs": "Inspección: Mano izquierda / mano derecha — complementariedad del oficio",
+    "excerpt": "Palavras: «mão esquerda» / «mão direita» (lat. *manus*) — ferramentas do gesto, do cultivo e do teclado; complementaridade, não moral dualista.",
+    "excerptEn": "Words: “mão esquerda” / “mão direita” (Lat. *manus*) — tools of gesture, grow and typing; complementarity, not moral dualism.",
+    "excerptEs": "Palabras: «mão esquerda» / «mão direita» (lat. *manus*) — herramientas del gesto, el cultivo y el teclado; complementariedad, no dualismo moral.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-mao-esquerda-direita",
+    "url": "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
+    "date": "2026-08-02T22:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-mao-esquerda-direita.html",
+    "coverImage": "/imagens/inspecoes/mao-esquerda-direita-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 25,
+    "seriesLabel": "Mãos · palavra"
+  },
+  {
     "title": "Inspeção: Ilícito — polo jurídico do duplo sentido de droga",
     "titleEn": "Inspection: Ilícito — legal pole of the drug double sense",
     "titleEs": "Inspección: Ilícito — polo jurídico del doble sentido de droga",
