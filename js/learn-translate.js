@@ -6,7 +6,7 @@
   'use strict';
 
   var STORAGE_KEY = 'budganja-learn-lang';
-  var LEARN_LANGS = { en: 1, es: 1, fr: 1, it: 1, de: 1, yo: 1, sw: 1, gez: 1, el: 1, la: 1 };
+  var LEARN_LANGS = { en: 1, es: 1, fr: 1, it: 1, de: 1, yo: 1, sw: 1, gez: 1, el: 1, la: 1, nl: 1, pl: 1, ru: 1, uk: 1, zh: 1, ja: 1, ko: 1, ar: 1, he: 1, hi: 1, tr: 1, sv: 1, da: 1, no: 1, fi: 1, cs: 1, ro: 1, hu: 1, ca: 1, gl: 1, eu: 1, gn: 1, qu: 1, eo: 1, vi: 1, id: 1, th: 1, hr: 1, sk: 1, ga: 1, cy: 1, ha: 1, am: 1, fa: 1, bn: 1, zu: 1 };
   var WORD_RE = /([A-Za-zÀ-ÿ]+(?:['’-][A-Za-zÀ-ÿ]+)?)|([^A-Za-zÀ-ÿ]+)/g;
   var SKIP_TAGS = {
     SCRIPT: 1,
@@ -102,6 +102,31 @@
     if (lang === 'gez') return 'abcdefghijklmnopqrstuvwxyzʾʿäəḥḥśṣṭ';
     if (lang === 'el') return 'αβγδεζηθικλμνξοπρστυφχψωάέήίόύώϊϋΐΰς';
     if (lang === 'la') return 'abcdefghijklmnopqrstuvwxyzæœ';
+    if (lang === 'nl') return 'abcdefghijklmnopqrstuvwxyzáéíóúäëïöü';
+    if (lang === 'pl') return 'aąbcćdeęfghijklłmnńoóprsśtuwyzźż';
+    if (lang === 'ru') return 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
+    if (lang === 'uk') return 'абвгґдеєжзиіїйклмнопрстуфхцчшщьюя';
+    if (lang === 'zh') return '的一是不了人我在有他这为之大来以个中上们';
+    if (lang === 'ja') return 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん';
+    if (lang === 'ko') return '가나다라마바사아자차카타파하';
+    if (lang === 'ar') return 'ابتثجحخدذرزسشصضطظعغفقكلمنهوي';
+    if (lang === 'he') return 'אבגדהוזחטיכלמנסעפצקרשת';
+    if (lang === 'hi') return 'अआइईउऊएऐओऔकखगघचछजझटठडढणतथदधनपफबभमयरलवशषसह';
+    if (lang === 'tr') return 'abcçdefgğhıijklmnoöprsştuüvyz';
+    if (lang === 'sv' || lang === 'da' || lang === 'no') return 'abcdefghijklmnopqrstuvwxyzåäöæø';
+    if (lang === 'fi') return 'abcdefghijklmnopqrstuvwxyzäö';
+    if (lang === 'cs' || lang === 'sk') return 'aáäbcčdďeéěfghiíjklĺľmnňoóôpqrřŕsštťuúůvwxyýzž';
+    if (lang === 'ro') return 'aăâbcdefghiîjlmnopqrsștțuvwxyz';
+    if (lang === 'hu') return 'aábcdeéfghiíjklmnoóöőpqrstuúüűvwxyz';
+    if (lang === 'ca' || lang === 'gl' || lang === 'eu' || lang === 'gn' || lang === 'qu') {
+      return 'abcdefghijklmnopqrstuvwxyzáéíóúñüàçèïò';
+    }
+    if (lang === 'vi') return 'aáàảãạăâbcdđeéèẻẽẹêghiíìỉĩịklmnoóòỏõọôơpqrstuúùủũụưvyýỳỷỹỵ';
+    if (lang === 'th') return 'กขคฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮ';
+    if (lang === 'hr') return 'abcčćdđefghijklmnoprsštuvzž';
+    if (lang === 'ga' || lang === 'cy') return 'aábcdeéfghiílmnoóprstuúvwyz';
+    if (lang === 'fa') return 'ابپتثجچحخدذرزژسشصضطظعغفقکگلمنوهی';
+    if (lang === 'bn') return 'অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযরলশষসহ';
     return 'abcdefghijklmnopqrstuvwxyz';
   }
 
@@ -170,9 +195,9 @@
       schedule(wordEl, function tick() {
         if (step < steps && finalCh) {
           var upper = finalCh !== finalCh.toLowerCase();
-          span.textContent = /[A-Za-zÀ-ÿ]/.test(finalCh)
-            ? randomChar(charset, upper)
-            : finalCh;
+          span.textContent = /[\s\d\.,;:!?\-'"()]/.test(finalCh)
+            ? finalCh
+            : randomChar(charset, upper);
           step += 1;
           schedule(wordEl, tick, 14);
           return;
@@ -367,11 +392,47 @@
           fr: 'français',
           it: 'italiano',
           de: 'Deutsch',
-          yo: 'Yorùbá',
+          yo: 'Yoruba',
           sw: 'Kiswahili',
-          gez: 'Geʽez',
-          el: 'Ελληνικά',
-          la: 'Latina'
+          gez: "Ge'ez",
+          el: 'Ellenika',
+          la: 'Latina',
+          nl: 'Nederlands',
+          pl: 'polski',
+          ru: 'russkiy',
+          uk: 'ukrainska',
+          zh: 'Zhongwen',
+          ja: 'Nihongo',
+          ko: 'Hangugeo',
+          ar: 'Arabiyya',
+          he: 'Ivrit',
+          hi: 'Hindi',
+          tr: 'Turkce',
+          sv: 'svenska',
+          da: 'dansk',
+          no: 'norsk',
+          fi: 'suomi',
+          cs: 'cestina',
+          ro: 'romana',
+          hu: 'magyar',
+          ca: 'catala',
+          gl: 'galego',
+          eu: 'euskara',
+          gn: 'guarani',
+          qu: 'runasimi',
+          eo: 'Esperanto',
+          vi: 'tiếng Việt',
+          id: 'bahasa Indonesia',
+          th: 'ไทย',
+          hr: 'hrvatski',
+          sk: 'slovenčina',
+          ga: 'Gaeilge',
+          cy: 'Cymraeg',
+          ha: 'Hausa',
+          am: 'Amharic',
+          fa: 'فارسی',
+          bn: 'বাংলা',
+          zu: 'isiZulu'
         };
         var name = names[state.lang] || state.lang;
         hint.textContent = t(
@@ -551,9 +612,45 @@
       '<button type="button" class="learn-toolbar-btn" data-learn-lang="de" aria-pressed="false" title="Deutsch">DE</button>' +
       '<button type="button" class="learn-toolbar-btn" data-learn-lang="yo" aria-pressed="false" title="Yorùbá">YO</button>' +
       '<button type="button" class="learn-toolbar-btn" data-learn-lang="sw" aria-pressed="false" title="Kiswahili">SW</button>' +
-      '<button type="button" class="learn-toolbar-btn" data-learn-lang="gez" aria-pressed="false" title="Geʽez (transliteração)">GEZ</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="gez" aria-pressed="false" title="Geʽez">GEZ</button>' +
       '<button type="button" class="learn-toolbar-btn" data-learn-lang="el" aria-pressed="false" title="Ελληνικά (Grego)">EL</button>' +
-      '<button type="button" class="learn-toolbar-btn" data-learn-lang="la" aria-pressed="false" title="Latina (Latim / étimos)">LA</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="la" aria-pressed="false" title="Latina (Latim)">LA</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="nl" aria-pressed="false" title="Nederlands">NL</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="pl" aria-pressed="false" title="Polski">PL</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="ru" aria-pressed="false" title="Русский">RU</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="uk" aria-pressed="false" title="Українська">UK</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="zh" aria-pressed="false" title="中文">ZH</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="ja" aria-pressed="false" title="日本語">JA</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="ko" aria-pressed="false" title="한국어">KO</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="ar" aria-pressed="false" title="العربية">AR</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="he" aria-pressed="false" title="עברית">HE</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="hi" aria-pressed="false" title="हिन्दी">HI</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="tr" aria-pressed="false" title="Türkçe">TR</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="sv" aria-pressed="false" title="Svenska">SV</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="da" aria-pressed="false" title="Dansk">DA</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="no" aria-pressed="false" title="Norsk">NO</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="fi" aria-pressed="false" title="Suomi">FI</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="cs" aria-pressed="false" title="Čeština">CS</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="ro" aria-pressed="false" title="Română">RO</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="hu" aria-pressed="false" title="Magyar">HU</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="ca" aria-pressed="false" title="Català">CA</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="gl" aria-pressed="false" title="Galego">GL</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="eu" aria-pressed="false" title="Euskara">EU</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="gn" aria-pressed="false" title="Avañe\'ẽ (Guarani)">GN</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="qu" aria-pressed="false" title="Runasimi (Quechua)">QU</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="eo" aria-pressed="false" title="Esperanto">EO</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="vi" aria-pressed="false" title="Tiếng Việt">VI</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="id" aria-pressed="false" title="Bahasa Indonesia">ID</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="th" aria-pressed="false" title="ไทย">TH</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="hr" aria-pressed="false" title="Hrvatski">HR</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="sk" aria-pressed="false" title="Slovenčina">SK</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="ga" aria-pressed="false" title="Gaeilge">GA</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="cy" aria-pressed="false" title="Cymraeg">CY</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="ha" aria-pressed="false" title="Hausa">HA</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="am" aria-pressed="false" title="Amharic">AM</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="fa" aria-pressed="false" title="فارسی">FA</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="bn" aria-pressed="false" title="বাংলা">BN</button>' +
+      '<button type="button" class="learn-toolbar-btn" data-learn-lang="zu" aria-pressed="false" title="isiZulu">ZU</button>' +
       '</div>' +
       '</div>' +
       '<p class="learn-toolbar-hint" data-learn-hint></p>';
