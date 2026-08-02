@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T22:35:50.723Z",
+  "updatedAt": "2026-08-02T22:55:30.621Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -114,6 +114,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/plantas/alecrim/"
+    },
+    {
+      "id": "aff",
+      "word": "Aff",
+      "simple": "Interjeição BR de enfado — no laboratório: termómetro ok; fechar sem inspecionar = reprovado (inspeção severa).",
+      "simpleEn": "Brazilian exasperation interjection — in the lab: thermometer ok; closing without inspecting = fail (severe inspection).",
+      "simpleEs": "Interjección BR de hastío — en el laboratorio: termómetro ok; cerrar sin inspeccionar = reprobado (inspección severa).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-aff.html"
     },
     {
       "id": "alegria",

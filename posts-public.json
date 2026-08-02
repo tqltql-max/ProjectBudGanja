@@ -2945,6 +2945,25 @@
     "seriesLabel": "Pfaffia (ginseng-brasileiro)"
   },
   {
+    "title": "Inspeção: Aff — exasperação e o risco de fechar sem método",
+    "titleEn": "Inspection: Aff — exasperation and the risk of closing without method",
+    "titleEs": "Inspección: Aff — exasperación y el riesgo de cerrar sin método",
+    "excerpt": "Palavras: «aff» — interjeição BR de enfado; inspeção severa: termómetro ok, veredicto final sem relatório = reprovado.",
+    "excerptEn": "Words: “aff” — Brazilian exasperation interjection; severe inspection: thermometer ok, final verdict without report = fail.",
+    "excerptEs": "Palabras: «aff» — interjección BR de hastío; inspección severa: termómetro ok, veredicto final sin informe = reprobado.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-aff",
+    "url": "/posts/post-inspecao-palavra-aff.html",
+    "date": "2026-08-02T22:55:00.000Z",
+    "filename": "posts/post-inspecao-palavra-aff.html",
+    "coverImage": "/imagens/inspecoes/aff-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 27,
+    "seriesLabel": "Aff · palavra"
+  },
+  {
     "title": "Inspeção: Depressor — classe de efeito no sistema nervoso",
     "titleEn": "Inspection: Depressor — effect class on the nervous system",
     "titleEs": "Inspección: Depressor — clase de efecto en el sistema nervioso",

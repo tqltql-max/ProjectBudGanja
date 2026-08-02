@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T22:36:27.589Z",
+  "updatedAt": "2026-08-02T22:55:44.338Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Aff — exasperação e o risco de fechar sem método",
+      "url": "/posts/post-inspecao-palavra-aff.html",
+      "excerpt": "Palavras: «aff» — interjeição BR de enfado; inspeção severa: termómetro ok, veredicto final sem relatório = reprovado.",
+      "text": "Inspeção: Aff — exasperação e o risco de fechar sem método Palavras: «aff» — interjeição BR de enfado; inspeção severa: termómetro ok, veredicto final sem relatório = reprovado. inspecao ## Escopo\n\n**Inspeção severa** da interjeição **aff** (também *ah*, *uff*, *argh* no uso oral) — sopro de **exasperação** no português do Brasil. Não é substantivo de planta. Não é elogio. É o som curto que o peito solta quando algo **falha, cansa ou decepciona** — teclado a furar, frase a meio, pedido mal ouvido.\n\n> **Nota metodológica:** auditoria independente, tom **severo**. Fontes: uso oral contemporâneo, [Wikcionário · aff](https://pt.wiktionary.org/wiki/aff), rede emocional BudGanja ([raiva](/posts/post-inspecao-palavra-raiva.html), [medo](/posts/post-inspecao-palavra-medo.html), [tristeza](/posts/post-inspecao-palavra-tristeza.html)). **Ficha de palavra ≠ terapia.** Catalogar ≠ ridicularizar quem diz «aff». Sem afiliação a redes de humor.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **aff** (var. *ahh*, *uff*, alongamentos *afff*) |\n| Classe | Interjeição |\n| Étimo (trabalho) | Onomatopeia / sopro de enfado — oralidade BR (confiança: alta no uso; baixa em étimo erudito) |\n| Tipo BudGanja | Palavra — sinal de exasperação; risco de **fechar a inspeção** |\n| Elo emoção | [raiva](/posts/post-inspecao-palavra-raiva.html) · [medo](/posts/post-inspecao-palavra-medo.html) · [tristeza](/posts/post-inspecao-palavra-tristeza.html) |\n| Elo ofício | [gesto](/posts/post-inspecao-palavra-gesto.html) · [verdade](/posts/post-inspecao-palavra-verdade.html) · [backspace](/posts/post-inspecao-palavra-backspace.html) · [Faça o melhor!](/posts/post-inspecao-expressao-faca-o-melhor.html) |\n| Data | 2026-08-02 |\n\n## Hipóteses e método (severo)\n\n**H1:** «aff» é **válvula** — libera pressão sem nomear o objecto.  \n**H2:** «aff» **bom** = marca o limite («isto cansou») e abre espaço para dizer o quê.  \n**H3:** «aff» **mau** = substitui o relatório: cancela a conversa, a fot"
     },
     {
       "title": "Inspeção: Árvore da Vida — a fase sénior do arco semente–mudinha–árvore",
@@ -1674,6 +1680,12 @@
       "url": "/plantas/alecrim/",
       "excerpt": "Salvia rosmarinus — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Alecrim Salvia rosmarinus — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário alecrim"
+    },
+    {
+      "title": "Aff",
+      "url": "/posts/post-inspecao-palavra-aff.html",
+      "excerpt": "Interjeição BR de enfado — no laboratório: termómetro ok; fechar sem inspecionar = reprovado (inspeção severa).",
+      "text": "Aff Interjeição BR de enfado — no laboratório: termómetro ok; fechar sem inspecionar = reprovado (inspeção severa). lexico guia palavras glossário aff"
     },
     {
       "title": "Alegria",

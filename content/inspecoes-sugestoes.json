@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T22:35:54.370Z",
+  "updatedAt": "2026-08-02T22:55:30.618Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2878,6 +2878,28 @@
         "/vida/"
       ],
       "notes": "Sénior ≠ fim do ofício — ainda há gesto e mãos."
+    },
+    {
+      "id": "palavra-aff",
+      "title": "Aff — exasperação e fecho sem método",
+      "titleEn": "Aff — exasperation and closing without method",
+      "titleEs": "Aff — exasperación y cierre sin método",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: «aff» — interjeição BR; inspeção severa: termómetro ok, veredicto sem relatório = reprovado.",
+      "whyEn": "Words: “aff” — BR interjection; severe inspection: thermometer ok, verdict without report = fail.",
+      "whyEs": "Palabras: «aff» — interjección BR; inspección severa: termómetro ok, veredicto sin informe = reprobado.",
+      "suggestedSlug": "inspecao-palavra-aff",
+      "doneHref": "/posts/post-inspecao-palavra-aff.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/aff",
+        "/posts/post-inspecao-palavra-raiva.html",
+        "/posts/post-inspecao-palavra-verdade.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 27 — tom severo; não patologizar o enfado."
     }
   ]
 }
