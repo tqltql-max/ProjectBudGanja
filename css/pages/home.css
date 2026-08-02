@@ -541,6 +541,14 @@ body[data-page="home"] .home-card--videos {
     --card-label: #ffe8e8;
 }
 
+body[data-page="home"] .home-card--biblioteca {
+    --card-accent: #dfc262;
+    --card-accent-soft: rgba(223, 194, 98, 0.16);
+    --card-accent-strong: rgba(212, 175, 55, 0.34);
+    --card-accent-border: rgba(223, 194, 98, 0.48);
+    --card-label: #fef6d4;
+}
+
 body[data-page="home"] .home-card--inspecoes {
     --card-accent: #85c1e9;
     --card-accent-soft: rgba(93, 173, 226, 0.14);

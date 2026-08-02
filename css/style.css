@@ -12802,15 +12802,108 @@ a.palavras-duplo-word:focus-visible {
         background: rgba(212, 175, 55, 0.28);
     }
 }
+/* Biblioteca hub */
+.biblioteca-hub {
+    padding-bottom: 3.5rem;
+}
+
+.biblioteca-hub-header {
+    margin-bottom: 1.75rem;
+    max-width: 40rem;
+}
+
+.biblioteca-hub-header h1 {
+    margin: 0.35rem 0 0.5rem;
+}
+
+.biblioteca-hub-lead {
+    margin: 0;
+}
+
+.biblioteca-hub-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.biblioteca-hub-card {
+    --bib-accent: #dfc262;
+    --bib-soft: rgba(223, 194, 98, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    padding: 1.2rem 1.25rem 1.35rem;
+    border-radius: 16px;
+    border: 1px solid color-mix(in srgb, var(--bib-accent) 38%, transparent);
+    background: linear-gradient(160deg, var(--bib-soft) 0%, rgba(14, 20, 10, 0.94) 62%);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.18s ease, transform 0.15s ease, box-shadow 0.18s ease;
+}
+
+.biblioteca-hub-card:hover,
+.biblioteca-hub-card:focus-visible {
+    border-color: var(--bib-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+    outline: none;
+}
+
+.biblioteca-hub-icon {
+    font-size: 1.45rem;
+    line-height: 1;
+}
+
+.biblioteca-hub-card h2 {
+    margin: 0;
+    font-size: 1.15rem;
+    color: #fef9d7;
+    font-weight: 700;
+}
+
+.biblioteca-hub-card p {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: rgba(244, 237, 216, 0.78);
+}
+
+.biblioteca-hub-card--inspecoes { --bib-accent: #85c1e9; --bib-soft: rgba(93, 173, 226, 0.14); }
+.biblioteca-hub-card--unifesp { --bib-accent: #bb8fce; --bib-soft: rgba(155, 89, 182, 0.14); }
+.biblioteca-hub-card--palavras { --bib-accent: #f5b041; --bib-soft: rgba(243, 156, 18, 0.14); }
+.biblioteca-hub-card--pesquisas { --bib-accent: #5dade2; --bib-soft: rgba(52, 152, 219, 0.14); }
+.biblioteca-hub-card--plantas { --bib-accent: #58d68d; --bib-soft: rgba(39, 174, 96, 0.14); }
+.biblioteca-hub-card--animais { --bib-accent: #e59866; --bib-soft: rgba(230, 126, 34, 0.14); }
+.biblioteca-hub-card--vida { --bib-accent: #52be80; --bib-soft: rgba(46, 204, 113, 0.14); }
+.biblioteca-hub-card--videos { --bib-accent: #ff6b6b; --bib-soft: rgba(231, 76, 60, 0.14); }
+
 /* Guia de Palavras — glossário simples */
 .guia-palavras-page {
     padding-bottom: 3rem;
+    max-width: 1100px;
+}
+
+.guia-palavras-header {
+    margin-bottom: 1.25rem;
+}
+
+.guia-palavras-header h1 {
+    margin: 0.25rem 0 0.4rem;
+}
+
+.guia-palavras-header .secao-subtitulo {
+    margin: 0;
+    max-width: 38rem;
 }
 
 .guia-palavras-meta {
-    margin: 0.35rem 0 0;
-    font-size: 0.95rem;
-    color: rgba(244, 237, 216, 0.78);
+    margin: 0.55rem 0 0;
+    font-size: 0.92rem;
+    color: rgba(244, 237, 216, 0.72);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.45rem;
+    align-items: center;
 }
 
 .guia-palavras-meta a {
@@ -12819,77 +12912,125 @@ a.palavras-duplo-word:focus-visible {
     text-underline-offset: 2px;
 }
 
+.guia-palavras-toolbar {
+    display: grid;
+    gap: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.guia-palavras-filters {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.15rem;
+    scrollbar-width: thin;
+}
+
+.guia-palavras-filters .videos-filters {
+    flex-wrap: nowrap;
+    width: max-content;
+    min-width: 100%;
+}
+
+.guia-palavras-search {
+    margin: 0;
+}
+
+.guia-palavras-list-wrap {
+    margin-top: 1.1rem;
+}
+
 .guia-palavras-list {
     list-style: none;
-    margin: 1.25rem 0 0;
+    margin: 0;
     padding: 0;
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 0.85rem;
 }
 
 .guia-palavras-item {
-    padding: 1rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    padding: 1rem 1.1rem 1.05rem;
     border: 1px solid rgba(223, 194, 98, 0.22);
-    border-radius: 14px;
-    background: rgba(18, 24, 14, 0.55);
+    border-left: 3px solid rgba(223, 194, 98, 0.65);
+    border-radius: 12px;
+    background: rgba(18, 24, 14, 0.62);
+    min-height: 100%;
 }
 
 .guia-palavras-item-head {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.45rem 0.75rem;
-    margin-bottom: 0.35rem;
+    align-items: center;
+    gap: 0.4rem 0.55rem;
 }
 
 .guia-palavras-word {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     color: #fef9d7;
     font-weight: 700;
+    line-height: 1.2;
 }
 
 .guia-palavras-badge {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #12180e;
     background: rgba(223, 194, 98, 0.88);
     border-radius: 999px;
-    padding: 0.12rem 0.55rem;
+    padding: 0.12rem 0.5rem;
 }
 
 .guia-palavras-group {
     margin-left: auto;
-    font-size: 0.8rem;
-    color: rgba(244, 237, 216, 0.55);
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+    color: rgba(244, 237, 216, 0.62);
+    border: 1px solid rgba(223, 194, 98, 0.22);
+    border-radius: 999px;
+    padding: 0.1rem 0.5rem;
+    white-space: nowrap;
 }
 
 .guia-palavras-simple {
     margin: 0;
+    flex: 1;
     line-height: 1.45;
+    font-size: 0.94rem;
     color: rgba(244, 237, 216, 0.88);
 }
 
 .guia-palavras-actions {
-    margin: 0.65rem 0 0;
+    margin: 0.15rem 0 0;
+    padding-top: 0.35rem;
+    border-top: 1px solid rgba(223, 194, 98, 0.12);
 }
 
 .guia-palavras-link {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: #dfc262;
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .guia-palavras-link:hover,
 .guia-palavras-link:focus-visible {
     color: #f5e6b8;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 @media (max-width: 640px) {
     .guia-palavras-group {
         margin-left: 0;
-        width: 100%;
+    }
+
+    .guia-palavras-list {
+        grid-template-columns: 1fr;
     }
 }

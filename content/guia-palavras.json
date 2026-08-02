@@ -3,9 +3,9 @@
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
-  "lead": "Significados bem simples das palavras dos títulos do site e do léxico que o laboratório inspeciona. Quando existir ficha profunda, o link abre a inspeção.",
-  "leadEn": "Very simple meanings for site-title words and the lexicon the lab inspects. When a deep sheet exists, the link opens that inspection.",
-  "leadEs": "Significados muy simples de las palabras de los títulos del sitio y del léxico que el laboratorio inspecciona. Si hay ficha profunda, el enlace la abre.",
+  "lead": "Significados simples — títulos do site e léxico inspecionado. Quando existir ficha profunda, o link abre a inspeção.",
+  "leadEn": "Simple meanings — site titles and inspected lexicon. When a deep sheet exists, the link opens that inspection.",
+  "leadEs": "Significados simples — títulos del sitio y léxico inspeccionado. Si hay ficha profunda, el enlace la abre.",
   "groups": [
     {
       "id": "marca",

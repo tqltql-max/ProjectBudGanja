@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T05:35:41.226Z",
+  "updatedAt": "2026-08-02T05:42:01.828Z",
   "items": [
     {
       "title": "Início",
@@ -18,6 +18,12 @@
       "url": "/animais/",
       "excerpt": "Catálogo de animais: criação, companhia e derivados industriais de risco",
       "text": "Animais Catálogo de animais: criação, companhia e derivados industriais de risco animais produção galinha vaca porco abelha derivados indústria"
+    },
+    {
+      "title": "Biblioteca",
+      "url": "/biblioteca/",
+      "excerpt": "Acervo do laboratório — inspeções, UNIFESP, guias, pesquisas, plantas e animais",
+      "text": "Biblioteca Acervo do laboratório — inspeções, UNIFESP, guias, pesquisas, plantas e animais biblioteca acervo inspeções unifesp guias pesquisas"
     },
     {
       "title": "Curso UNIFESP",

@@ -38,30 +38,33 @@
     <div id="site-header"></div>
 
     <main id="main-content" class="conteudo guia-palavras-page">
-        <header class="videos-header">
+        <header class="guia-palavras-header">
             <p class="guia-badge" data-i18n="pages.guiaPalavras.eyebrow">Biblioteca · Guias</p>
             <h1 data-i18n="pages.guiaPalavras.title">Guia de Palavras</h1>
-            <p id="guia-palavras-lead" class="secao-subtitulo" data-i18n="pages.guiaPalavras.subtitle">Significados bem simples das palavras dos títulos do site e do léxico que o laboratório inspeciona.</p>
+            <p id="guia-palavras-lead" class="secao-subtitulo" data-i18n="pages.guiaPalavras.subtitle">Significados simples — títulos do site e léxico inspecionado.</p>
             <p class="guia-palavras-meta">
                 <span id="guia-palavras-count" class="videos-list-count"></span>
+                <span aria-hidden="true"> · </span>
+                <a href="/biblioteca/" data-i18n="pages.guiaPalavras.linkLibrary">Biblioteca</a>
                 <span aria-hidden="true"> · </span>
                 <a href="/biblioteca/inspecoes/#inspecoes-palavras" data-i18n="pages.guiaPalavras.linkInspections">Inspeções de Palavras</a>
             </p>
         </header>
 
-        <nav id="guia-palavras-filters" class="videos-filters-wrap" aria-label="Filtrar por grupo" data-i18n-aria="pages.guiaPalavras.filtersLabel"></nav>
-
-        <div class="videos-search-wrap">
-            <label class="videos-search-label" for="guia-palavras-search" data-i18n="pages.guiaPalavras.searchLabel">Buscar</label>
-            <input
-                type="search"
-                id="guia-palavras-search"
-                class="videos-search-input"
-                placeholder="Palavra ou significado…"
-                data-i18n-placeholder="pages.guiaPalavras.searchPlaceholder"
-                autocomplete="off"
-                enterkeyhint="search"
-            >
+        <div class="guia-palavras-toolbar">
+            <nav id="guia-palavras-filters" class="videos-filters-wrap guia-palavras-filters" aria-label="Filtrar por grupo" data-i18n-aria="pages.guiaPalavras.filtersLabel"></nav>
+            <div class="videos-search-wrap guia-palavras-search">
+                <label class="videos-search-label" for="guia-palavras-search" data-i18n="pages.guiaPalavras.searchLabel">Buscar</label>
+                <input
+                    type="search"
+                    id="guia-palavras-search"
+                    class="videos-search-input"
+                    placeholder="Palavra ou significado…"
+                    data-i18n-placeholder="pages.guiaPalavras.searchPlaceholder"
+                    autocomplete="off"
+                    enterkeyhint="search"
+                >
+            </div>
         </div>
 
         <div id="guia-palavras-list" class="guia-palavras-list-wrap">

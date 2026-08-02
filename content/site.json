@@ -19,7 +19,7 @@
       "megaCompact": true,
       "megaAccordion": true,
       "megaHeader": "Biblioteca",
-      "megaHeaderHref": "/plantas/",
+      "megaHeaderHref": "/biblioteca/",
       "groups": [
         {
           "title": "",
@@ -292,6 +292,14 @@
                   "description": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório."
                 },
                 {
+                  "label": "Inspeção: Artigo — O trigo engorda e adoece? (Brouns et al., 2013)",
+                  "tileLabel": "Inspeção: Artigo — O trigo engo…",
+                  "href": "/posts/post-inspecao-artigo-brouns-trigo-obesidade-2013.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-artigo-brouns-trigo-obesidade-2013",
+                  "description": "Auditoria do artigo de Brouns, van Buul & Shewry (Journal of Cereal Science, 2013) que examina as teses populares anti-trigo (incl. Barriga de Trigo / Davis) e conclui que o trigo integral não explica a obesidade na população geral."
+                },
+                {
                   "label": "Inspeção: Derivados da galinha — ultraprocessados e química industrial",
                   "tileLabel": "Inspeção: Derivados da galinha …",
                   "href": "/posts/post-inspecao-derivado-galinha.html",
@@ -394,6 +402,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-marshydro-brasil",
                   "description": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório."
+                },
+                {
+                  "label": "Inspeção: Artigo — As duas faces do trigo (Wieser, Koehler & Scherf, 2020)",
+                  "tileLabel": "Inspeção: Artigo — As duas face…",
+                  "href": "/posts/post-inspecao-artigo-wieser-duas-faces-trigo-2020.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-artigo-wieser-duas-faces-trigo-2020",
+                  "description": "Auditoria da revisão Frontiers in Nutrition (2020): trigo como alimento básico nutritivo vs. doenças relacionadas com o trigo (WRDs) e a confusão gerada por livros como Barriga de Trigo."
                 },
                 {
                   "label": "Inspeção: Derivados do coco — açúcar, óleo e química industrial",
@@ -508,6 +524,14 @@
                   "description": "Auditoria do canal CANABinALL (@canabinall) — 139 vídeos catalogados; divulgação científica UNIFESP sob curadoria da Profa. Dra. Eliana Rodrigues (CEE), com destaque a Conceitos básicos #1 e à série Plantas Sagradas."
                 },
                 {
+                  "label": "Inspeção: Artigo — Dietas ultraprocessadas, calorias e peso (Hall et al., 2019)",
+                  "tileLabel": "Inspeção: Artigo — Dietas ultra…",
+                  "href": "/posts/post-inspecao-artigo-hall-ultraprocessados-2019.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-artigo-hall-ultraprocessados-2019",
+                  "description": "Auditoria do RCT inpatient NIH (Hall et al., Cell Metabolism 2019): dieta ultraprocessada aumentou ~508 kcal/dia e +0,9 kg em 2 semanas vs. dieta não processada emparelhada — eixo central do chocolate industrial."
+                },
+                {
                   "label": "Inspeção: Glúten / farinha — trigo e proteína nociva ao organismo",
                   "tileLabel": "Inspeção: Glúten / farinha — tr…",
                   "href": "/posts/post-inspecao-derivado-gluten.html",
@@ -588,6 +612,14 @@
                   "description": "Relatório educacional de Açaí (*Euterpe oleracea Mart.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
                 },
                 {
+                  "label": "Inspeção: Artigo — Efeitos GI da caseína A1 vs A2 (Brooke-Taylor et al., 2017)",
+                  "tileLabel": "Inspeção: Artigo — Efeitos GI d…",
+                  "href": "/posts/post-inspecao-artigo-brooke-taylor-caseina-a1-a2-2017.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-artigo-brooke-taylor-caseina-a1-a2-2017",
+                  "description": "Auditoria da revisão sistemática Advances in Nutrition (2017): 39 estudos sobre β-caseína A1 vs A2, trânsito intestinal, BCM-7 e desconforto digestivo — elo científico da ficha Caseína e do chocolate ao leite."
+                },
+                {
                   "label": "Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite",
                   "tileLabel": "Inspeção: Chocolate industrial …",
                   "href": "/posts/post-inspecao-derivado-chocolate.html",
@@ -666,6 +698,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-manga",
                   "description": "Relatório educacional de Manga (*Mangifera indica L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Diretriz OMS — Ingestão de açúcares livres (2015)",
+                  "tileLabel": "Inspeção: Diretriz OMS — Ingest…",
+                  "href": "/posts/post-inspecao-artigo-oms-acucares-livres-2015.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-artigo-oms-acucares-livres-2015",
+                  "description": "Auditoria da diretriz WHO 2015 sobre açúcares livres (<10% da energia; condicional <5%): âncora global para cana, chocolate industrial e divulgação Lair — não é paper único, é norma de saúde pública."
                 },
                 {
                   "label": "Análise: danos dos produtos nocivos × vídeos catalogados",

@@ -1245,10 +1245,10 @@ function getSiteHubNav() {
         tone: 'inspecoes'
       },
       {
-        href: '/biblioteca/inspecoes/',
-        icon: '🔍',
-        label: i18n('nav.inspections', 'Inspeções'),
-        tip: i18n('nav.quickInspectionsTip', 'Guia, canais, equipamentos e cursos'),
+        href: '/biblioteca/',
+        icon: '📚',
+        label: i18n('nav.library', 'Biblioteca'),
+        tip: i18n('nav.quickLibraryTip', 'Inspeções, UNIFESP, guias, pesquisas e catálogos'),
         prefixes: '/biblioteca/inspecoes,/guia',
         tone: 'inspecoes'
       },
@@ -1298,6 +1298,13 @@ function getSiteHubNav() {
             tone: 'inicio'
           },
           {
+            href: '/biblioteca/',
+            icon: '📚',
+            label: i18n('nav.library', 'Biblioteca'),
+            prefixes: '/biblioteca/inspecoes,/guia',
+            tone: 'inspecoes'
+          },
+          {
             href: '/plantas/',
             icon: '🌿',
             label: i18n('nav.plants', 'Plantas'),
@@ -1322,7 +1329,7 @@ function getSiteHubNav() {
             href: '/biblioteca/inspecoes/',
             icon: '🔍',
             label: i18n('nav.inspections', 'Inspeções'),
-            prefixes: '/biblioteca/inspecoes,/guia',
+            prefixes: '/biblioteca/inspecoes',
             tone: 'inspecoes'
           },
           {
