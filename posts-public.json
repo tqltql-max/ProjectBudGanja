@@ -456,6 +456,25 @@
     "seriesLabel": "Caminho · palavra"
   },
   {
+    "title": "Inspeção: ESAPP — Agronomia em Paraguaçu Paulista",
+    "titleEn": "Inspection: ESAPP — Agronomy in Paraguaçu Paulista",
+    "titleEs": "Inspección: ESAPP — Agronomía en Paraguaçu Paulista",
+    "excerpt": "Ficha institucional da ESAPP (Paraguaçu Paulista/SP): curso de Agronomia, Fazenda Modelo e tradição desde 1974 — onde o Inspetor BudGanja pretende cursar graduação, complementar ao XIV Curso UNIFESP.",
+    "excerptEn": "Institutional sheet on ESAPP (Paraguaçu Paulista/SP): Agronomy program, Model Farm, and tradition since 1974 — where Inspector BudGanja intends to pursue an undergraduate degree, complementing the 14th UNIFESP Course.",
+    "excerptEs": "Ficha institucional de la ESAPP (Paraguaçu Paulista/SP): curso de Agronomía, Fazenda Modelo y tradición desde 1974 — donde el Inspector BudGanja pretende cursar grado, complementario al XIV Curso UNIFESP.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-esapp-agronomia-paraguacu-paulista",
+    "url": "/posts/post-inspecao-esapp-agronomia-paraguacu-paulista.html",
+    "date": "2026-08-01T18:00:00.000Z",
+    "filename": "posts/post-inspecao-esapp-agronomia-paraguacu-paulista.html",
+    "coverImage": "/imagens/inspecoes/esapp-cover.jpg",
+    "category": "inspecao",
+    "series": "formacao-academica",
+    "seriesOrder": 3,
+    "seriesLabel": "ESAPP · graduação"
+  },
+  {
     "title": "Inspeção: The Matrix — a obra Wachowski e a pergunta do real",
     "titleEn": "Inspection: The Matrix — the Wachowski work and the question of the real",
     "titleEs": "Inspección: The Matrix — la obra Wachowski y la pregunta de lo real",

@@ -350,6 +350,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «caminho» (latim vulgar *cammīnus*) — via, método e hub lexical que relaciona passar, Send Me On My Way, Heródoto, Artes, cultivo e o mapa de inspeções."
             },
             {
+              "label": "Inspeção: ESAPP — Agronomia em Paraguaçu Paulista",
+              "tileLabel": "Inspeção: ESAPP — Agronomia em …",
+              "href": "/posts/post-inspecao-esapp-agronomia-paraguacu-paulista.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-esapp-agronomia-paraguacu-paulista",
+              "description": "Ficha institucional da ESAPP (Paraguaçu Paulista/SP): curso de Agronomia, Fazenda Modelo e tradição desde 1974 — onde o Inspetor BudGanja pretende cursar graduação, complementar ao XIV Curso UNIFESP."
+            },
+            {
               "label": "Inspeção: The Matrix — a obra Wachowski e a pergunta do real",
               "tileLabel": "Inspeção: The Matrix — a obra W…",
               "href": "/posts/post-inspecao-filme-the-matrix.html",
