@@ -733,8 +733,8 @@
     btn.dataset.ytBound = '1';
     btn.addEventListener('click', function () {
       var id = btn.getAttribute('data-youtube-id') || '';
-      // Inauguração Vida na home: play in-page com som (sem mute).
-      if (btn.closest('.home-vida-embed')) {
+      // Home / sala de vídeo: play in-page com som (sem mute) + legendas CC.
+      if (btn.closest('.home-vida-embed, .sala-video-embed')) {
         loadYoutubeFacade(btn, true);
         return;
       }

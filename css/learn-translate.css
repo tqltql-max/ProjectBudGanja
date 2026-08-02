@@ -72,6 +72,124 @@ body[data-page="vida"] .learn-toolbar {
     transform: translateY(-1px);
 }
 
+.learn-school-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-left: 0.15rem;
+    padding: 0.42rem 0.85rem 0.42rem 0.55rem;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #12180e;
+    background:
+        linear-gradient(145deg, #ffe28a 0%, #dfc262 42%, #7cb342 100%);
+    border: 2px solid rgba(254, 249, 215, 0.55);
+    box-shadow:
+        0 0 0 1px rgba(166, 134, 40, 0.35),
+        0 8px 18px rgba(0, 0, 0, 0.28);
+    font-family: "Nunito", system-ui, sans-serif;
+    line-height: 1.1;
+    overflow: hidden;
+    isolation: isolate;
+    animation: learn-school-bob 2.8s ease-in-out infinite;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.learn-school-btn-icon {
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: rgba(18, 24, 14, 0.18);
+    flex-shrink: 0;
+}
+
+.learn-school-btn-svg {
+    display: block;
+}
+
+.learn-school-btn-copy {
+    display: grid;
+    gap: 0.08rem;
+    min-width: 0;
+}
+
+.learn-school-btn-kicker {
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(18, 24, 14, 0.72);
+}
+
+.learn-school-btn-text {
+    font-size: 0.92rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    color: #12180e;
+    white-space: nowrap;
+}
+
+.learn-school-btn-spark {
+    position: absolute;
+    inset: auto -30% -40% auto;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(254, 249, 215, 0.55), transparent 68%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.learn-school-btn:hover,
+.learn-school-btn:focus-visible {
+    transform: translateY(-2px) scale(1.03);
+    filter: saturate(1.08);
+    box-shadow:
+        0 0 0 1px rgba(166, 134, 40, 0.45),
+        0 12px 24px rgba(0, 0, 0, 0.34);
+    outline: none;
+    animation-play-state: paused;
+}
+
+.learn-school-btn.is-here {
+    background:
+        linear-gradient(145deg, #c8e6a0 0%, #7cb342 48%, #dfc262 100%);
+    animation: none;
+}
+
+@keyframes learn-school-bob {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .learn-school-btn {
+        animation: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .learn-toolbar-actions {
+        width: 100%;
+    }
+
+    .learn-school-btn {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 0.15rem;
+        padding: 0.55rem 0.9rem;
+    }
+}
+
 .learn-toolbar-hint {
     margin: 0.55rem 0 0;
     font-size: 0.88rem;

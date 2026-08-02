@@ -256,6 +256,11 @@ body[data-page="home"] .home-vida-grid {
         grid-template-columns: 1.05fr 0.95fr;
         gap: 1.15rem;
     }
+
+    body[data-page="home"] .home-vida-grid--solo {
+        grid-template-columns: minmax(0, 36rem);
+        justify-content: center;
+    }
 }
 
 body[data-page="home"] .home-vida-video,

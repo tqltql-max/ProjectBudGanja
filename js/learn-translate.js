@@ -368,6 +368,67 @@
     if (label) {
       label.textContent = t('pages.vida.learnLabel', 'Aprender idiomas');
     }
+    syncSchoolBtn();
+  }
+
+  function schoolPath() {
+    try {
+      return String(window.location.pathname || '').toLowerCase();
+    } catch (err) {
+      return '';
+    }
+  }
+
+  function isOnSchoolPage() {
+    return schoolPath().indexOf('/vida/sala') !== -1;
+  }
+
+  function isOnSchoolVideoPage() {
+    return schoolPath().indexOf('/vida/sala/videos') !== -1;
+  }
+
+  function syncSchoolBtn() {
+    if (!state.toolbar) return;
+    var btn = state.toolbar.querySelector('[data-learn-school]');
+    if (!btn) return;
+    var text = btn.querySelector('[data-learn-school-label]');
+    var onSchool = isOnSchoolPage();
+    var onVideo = isOnSchoolVideoPage();
+    btn.classList.toggle('is-here', onSchool);
+    if (onVideo) {
+      btn.setAttribute('href', '/vida/sala/');
+      if (text) text.textContent = t('pages.vida.schoolBtnBack', 'Voltar à sala');
+      btn.setAttribute(
+        'aria-label',
+        t('pages.vida.schoolBtnBackAria', 'Voltar à sala de aula')
+      );
+      btn.setAttribute('title', t('pages.vida.schoolBtnBackTip', 'Aulas e progresso da escola'));
+    } else if (onSchool) {
+      btn.setAttribute('href', '/vida/sala/videos.html');
+      if (text) text.textContent = t('pages.vida.schoolBtnVideo', 'Sala de vídeo');
+      btn.setAttribute(
+        'aria-label',
+        t('pages.vida.schoolBtnVideoAria', 'Abrir a sala de vídeo da escola')
+      );
+      btn.setAttribute('title', t('pages.vida.schoolBtnVideoTip', 'Vídeos com legendas — é só assistir'));
+    } else {
+      btn.setAttribute('href', '/vida/sala/');
+      if (text) text.textContent = t('pages.vida.schoolBtn', 'Entrar na escola');
+      btn.setAttribute(
+        'aria-label',
+        t('pages.vida.schoolBtnAria', 'Entrar na escola — sala de aula Vida')
+      );
+      btn.setAttribute(
+        'title',
+        t('pages.vida.schoolBtnTip', 'Aulas, vídeos e palavras — com um adulto')
+      );
+    }
+    var kicker = btn.querySelector('.learn-school-btn-kicker');
+    if (kicker) {
+      kicker.textContent = onSchool
+        ? t('pages.vida.schoolBtnKickerHere', 'Na escola')
+        : t('pages.vida.schoolBtnKicker', 'Para crianças');
+    }
   }
 
   function forcePtPostBody() {
@@ -518,6 +579,19 @@
     setLang(lang === state.lang ? '' : lang);
   }
 
+  function schoolIconSvg() {
+    return (
+      '<svg class="learn-school-btn-svg" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" focusable="false">' +
+      '<path fill="#fff8d6" d="M16 4.2 3.5 11.2v2.2h25v-2.2L16 4.2z"/>' +
+      '<path fill="#7cb342" d="M6.2 14.2h19.6V24c0 1.1-.9 2-2 2H8.2c-1.1 0-2-.9-2-2v-9.8z"/>' +
+      '<path fill="#dfc262" d="M13.2 18.2h5.6V26h-5.6z"/>' +
+      '<circle fill="#fef9d7" cx="16" cy="9.2" r="1.35"/>' +
+      '<path fill="#f4edd8" d="M8.8 16.4h3.2v2.4H8.8zm11.2 0h3.2v2.4H20z"/>' +
+      '<path fill="#a68628" d="M14.8 3.2h2.4v3.2h-2.4z"/>' +
+      '</svg>'
+    );
+  }
+
   function buildToolbar() {
     var bar = document.createElement('div');
     bar.className = 'learn-toolbar';
@@ -530,6 +604,20 @@
       '<button type="button" class="learn-toolbar-btn" data-learn-lang="" aria-pressed="true">Off</button>' +
       '<button type="button" class="learn-toolbar-btn" data-learn-lang="en" aria-pressed="false">English</button>' +
       '<button type="button" class="learn-toolbar-btn" data-learn-lang="es" aria-pressed="false">Español</button>' +
+      '<a class="learn-school-btn" href="/vida/sala/" data-learn-school>' +
+      '<span class="learn-school-btn-icon" aria-hidden="true">' +
+      schoolIconSvg() +
+      '</span>' +
+      '<span class="learn-school-btn-copy">' +
+      '<span class="learn-school-btn-kicker">' +
+      t('pages.vida.schoolBtnKicker', 'Para crianças') +
+      '</span>' +
+      '<span class="learn-school-btn-text" data-learn-school-label>' +
+      t('pages.vida.schoolBtn', 'Entrar na escola') +
+      '</span>' +
+      '</span>' +
+      '<span class="learn-school-btn-spark" aria-hidden="true"></span>' +
+      '</a>' +
       '</div>' +
       '</div>' +
       '<p class="learn-toolbar-hint" data-learn-hint></p>';
@@ -557,13 +645,13 @@
       }
     }
 
-    if (page === 'vida' || page === 'sala' || page === 'sala-aula') {
+    if (page === 'vida' || page === 'sala' || page === 'sala-aula' || page === 'sala-video') {
       var salaRoot = document.querySelector('[data-learn-root]');
       if (salaRoot) return salaRoot;
-      var main = document.querySelector('#main-content');
-      if (main && page === 'vida') {
-        main.setAttribute('data-learn-root', '');
-        return main;
+      var mainVida = document.querySelector('#main-content');
+      if (mainVida) {
+        mainVida.setAttribute('data-learn-root', '');
+        return mainVida;
       }
     }
 

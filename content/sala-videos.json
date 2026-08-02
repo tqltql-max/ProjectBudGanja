@@ -1,0 +1,49 @@
+{
+  "title": "Sala de vídeo",
+  "subtitle": "Assista e aprenda — os vídeos já vêm com legenda (CC). É só dar play.",
+  "note": "Conteúdo educacional do canal Inspetor BudGanja. Assista com um adulto. No player, as legendas abrem automaticamente quando disponíveis.",
+  "videos": [
+    {
+      "id": "38uUEL1B-v4",
+      "title": "O início do cultivo",
+      "summary": "As etapas e os fatores essenciais para começar com método.",
+      "tag": "aula"
+    },
+    {
+      "id": "XIrSJWjhd6Q",
+      "title": "Nutrição da planta",
+      "summary": "Como alimentar a planta em cada fase — do crescimento à transição.",
+      "tag": "aula"
+    },
+    {
+      "id": "092X69hq8Os",
+      "title": "Solo vivo orgânico",
+      "summary": "Faça o seu Super Solo: a cama fofinha cheia de vida.",
+      "tag": "aula"
+    },
+    {
+      "id": "OO7d72tHwJY",
+      "title": "Arquitetura da planta",
+      "summary": "Entenda a estrutura da planta e como ela cresce.",
+      "tag": "aula"
+    },
+    {
+      "id": "V6LO6nXh8bI",
+      "title": "A ciência da floração",
+      "summary": "O gatilho da luz (fotoperíodo) e o que muda na floração.",
+      "tag": "aula"
+    },
+    {
+      "id": "tdMl4X5h83Y",
+      "title": "Propagação e clonagem",
+      "summary": "Multiplique plantas com técnicas acessíveis do dia a dia.",
+      "tag": "aula"
+    },
+    {
+      "id": "HNBCVM4KbUM",
+      "title": "Three Little Birds",
+      "summary": "A trilha dos pássaros do laboratório — ouça com legendas e boa vibração.",
+      "tag": "trilha"
+    }
+  ]
+}

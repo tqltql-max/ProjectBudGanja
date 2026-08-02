@@ -349,3 +349,161 @@ body[data-page="sala"] {
     padding: 1.5rem;
     color: rgba(244, 237, 216, 0.75);
 }
+
+.sala-video-entry {
+    margin: 0 var(--space-page-x, 1.25rem) 1.25rem;
+    padding: 1.1rem 1.2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(223, 194, 98, 0.35);
+    background:
+        linear-gradient(135deg, rgba(223, 194, 98, 0.12), rgba(124, 179, 66, 0.08)),
+        rgba(12, 18, 8, 0.9);
+    display: grid;
+    gap: 0.75rem;
+}
+
+.sala-video-entry h2 {
+    margin: 0;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.35rem;
+    color: #fef9d7;
+}
+
+.sala-video-entry p {
+    margin: 0;
+    color: rgba(244, 237, 216, 0.78);
+    line-height: 1.45;
+}
+
+.sala-video-layout {
+    display: grid;
+    gap: 1.25rem;
+}
+
+@media (min-width: 900px) {
+    .sala-video-layout {
+        grid-template-columns: minmax(0, 1.4fr) minmax(16rem, 0.85fr);
+        align-items: start;
+    }
+}
+
+.sala-video-stage {
+    display: grid;
+    gap: 0.9rem;
+    min-width: 0;
+}
+
+.sala-video-embed {
+    margin: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(223, 194, 98, 0.3);
+    background: #0a0f08;
+    aspect-ratio: 16 / 9;
+}
+
+.sala-video-embed iframe,
+.sala-video-embed .yt-facade {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+.sala-video-embed .yt-facade {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    background: #0a0f08;
+}
+
+.sala-video-embed .yt-facade-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sala-video-now h2 {
+    margin: 0 0 0.35rem;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(1.35rem, 3vw, 1.7rem);
+    color: #fef9d7;
+}
+
+.sala-video-now p {
+    margin: 0 0 0.35rem;
+    color: rgba(244, 237, 216, 0.78);
+    line-height: 1.45;
+}
+
+.sala-video-cc-hint {
+    color: var(--sala-gold) !important;
+    font-weight: 700;
+    font-size: 0.92rem;
+}
+
+.sala-video-list {
+    display: grid;
+    gap: 0.65rem;
+    max-height: min(70vh, 36rem);
+    overflow: auto;
+    padding-right: 0.15rem;
+}
+
+.sala-video-card {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    gap: 0.7rem;
+    align-items: center;
+    text-align: left;
+    padding: 0.55rem;
+    border-radius: 14px;
+    border: 1px solid rgba(223, 194, 98, 0.22);
+    background: rgba(14, 20, 10, 0.78);
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.sala-video-card img {
+    width: 7.5rem;
+    height: 4.2rem;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #0a0f08;
+}
+
+.sala-video-card-copy {
+    display: grid;
+    gap: 0.2rem;
+    min-width: 0;
+}
+
+.sala-video-card-tag {
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--sala-gold);
+}
+
+.sala-video-card strong {
+    font-size: 0.98rem;
+    color: #fef9d7;
+}
+
+.sala-video-card em {
+    font-style: normal;
+    font-size: 0.82rem;
+    color: rgba(244, 237, 216, 0.68);
+    line-height: 1.35;
+}
+
+.sala-video-card:hover,
+.sala-video-card:focus-visible,
+.sala-video-card.is-active {
+    border-color: rgba(223, 194, 98, 0.7);
+    background: rgba(20, 28, 14, 0.95);
+    outline: none;
+}
