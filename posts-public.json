@@ -2888,6 +2888,25 @@
     "seriesLabel": "RDC · autorização sanitária · classificação"
   },
   {
+    "title": "Inspeção: Guia meditação — modular o endocanabinoidoma (via endógena)",
+    "titleEn": "Inspection: Meditation guide — modulating the endocannabinoidome (endogenous path)",
+    "titleEs": "Inspección: Guía meditación — modular el endocannabinoidoma (vía endógena)",
+    "excerpt": "Como a meditação, o yoga e o mindfulness entram no mapa XIV de modulação endógena do endocanabinoidoma (AEA/2-AG/BDNF). Elo Eliana Rodrigues · SEC. Não é protocolo clínico.",
+    "excerptEn": "How meditation, yoga and mindfulness enter the XIV map of endogenous endocannabinoidome modulation (AEA/2-AG/BDNF). Link: Eliana Rodrigues · ECS. Not a clinical protocol.",
+    "excerptEs": "Cómo la meditación, el yoga y el mindfulness entran en el mapa XIV de modulación endógena del endocannabinoidoma (AEA/2-AG/BDNF). Vínculo: Eliana Rodrigues · SEC. No es protocolo clínico.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-guia-meditacao-endocanabinoidoma",
+    "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+    "date": "2026-08-02T12:00:00.000Z",
+    "filename": "posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+    "coverImage": "/imagens/og-default.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 42,
+    "seriesLabel": "Guia · meditação · endocanabinoidoma"
+  },
+  {
     "title": "Super Solo: Guia de Uso",
     "titleEn": "Super Soil: User Guide",
     "titleEs": "Súper Sustrato: Guía de Uso",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T07:45:08.141Z",
+  "updatedAt": "2026-08-02T08:19:02.220Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -118,12 +118,12 @@
     {
       "id": "anandamida",
       "word": "Anandamida",
-      "simple": "Endocanabinoide (AEA) que o próprio corpo produz — frequentemente associado a efeitos «tipo THC» nos receptores. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Endocannabinoid (AEA) the body makes — often linked to THC-like effects at receptors. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Endocannabinoide (AEA) que el propio cuerpo produce — a menudo ligado a efectos «tipo THC» en los receptores. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Endocanabinoide (AEA) associado a efeitos «tipo THC» nos receptores — biomarcador citado na aula XIV quando se fala de meditação, exercício e equilíbrio do SEC.",
+      "simpleEn": "Endocannabinoid (AEA) linked to THC-like effects at receptors — biomarker cited in XIV when discussing meditation, exercise and ECS balance.",
+      "simpleEs": "Endocannabinoide (AEA) ligado a efectos «tipo THC» en receptores — biomarcador citado en el XIV al hablar de meditación, ejercicio y equilibrio del SEC.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "animais",
@@ -718,22 +718,22 @@
     {
       "id": "endocanabinoide",
       "word": "Endocanabinoide",
-      "simple": "Mensageiro que o próprio corpo produz (ex. anandamida, 2-AG) e que age nos receptores canabinoides. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Messenger the body itself makes (e.g. anandamide, 2-AG) that acts on cannabinoid receptors. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Mensajero que el propio cuerpo produce (p. ej. anandamida, 2-AG) y actúa en los receptores cannabinoides. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Mensageiro que o próprio corpo produz (ex. anandamida, 2-AG) e que age nos receptores canabinoides — pode subir com exercício e, em estudos, com meditação.",
+      "simpleEn": "Messenger the body itself makes (e.g. anandamide, 2-AG) that acts on cannabinoid receptors — may rise with exercise and, in studies, with meditation.",
+      "simpleEs": "Mensajero que el propio cuerpo produce (p. ej. anandamida, 2-AG) y actúa en receptores cannabinoides — puede subir con ejercicio y, en estudios, con meditación.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "endocanabinoidoma",
       "word": "Endocanabinoidoma",
-      "simple": "Ampliação do sistema endocanabinoide: rede integrada de mediadores, receptores, enzimas e vias metabólicas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Wider view of the endocannabinoid system: integrated network of mediators, receptors, enzymes and pathways. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Ampliación del sistema endocannabinoide: red integrada de mediadores, receptores, enzimas y vías metabólicas. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Ampliação do sistema endocanabinoide: rede integrada de mediadores, receptores, enzimas e vias — objecto da modulação endógena (meditação/PIC) e exógena (cannabis/canabiméticos).",
+      "simpleEn": "Wider view of the endocannabinoid system: integrated network of mediators, receptors, enzymes and pathways — target of endogenous (meditation/PIC) and exogenous (cannabis/cannabimimetics) modulation.",
+      "simpleEs": "Ampliación del sistema endocannabinoide: red integrada de mediadores, receptores, enzimas y vías — objeto de la modulación endógena (meditación/PIC) y exógena (cannabis/cannabimiméticos).",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "entorpecente",
@@ -1236,6 +1236,16 @@
       "href": "/posts/post-inspecao-palavra-marijuana.html"
     },
     {
+      "id": "meditacao",
+      "word": "Meditação",
+      "simple": "Prática de atenção / recolhimento citada na grade XIV como via endógena para modular o endocanabinoidoma (ex. subida de anandamida/2-AG em estudos observacionais).",
+      "simpleEn": "Attention / stillness practice cited in XIV as an endogenous way to modulate the endocannabinoidome (e.g. rises in anandamide/2-AG in observational studies).",
+      "simpleEs": "Práctica de atención / recogimiento citada en el XIV como vía endógena para modular el endocannabinoidoma (p. ej. subida de anandamida/2-AG en estudios observacionales).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
       "id": "medo",
       "word": "Medo",
       "simple": "Alerta interior que protege do perigo — a emoção roxa da Riley.",
@@ -1254,6 +1264,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/plantas/melissa/"
+    },
+    {
+      "id": "mindfulness",
+      "word": "Mindfulness",
+      "simple": "Atenção plena — no bloco XIV de PIC junto com meditação e yoga, associada a efeitos canabiméticos / regulação do SEC.",
+      "simpleEn": "Present-moment attention — in the XIV integrative-practices block with meditation and yoga, linked to cannabimimetic effects / ECS regulation.",
+      "simpleEs": "Atención plena — en el bloque XIV de PIC junto con meditación y yoga, asociada a efectos cannabimiméticos / regulación del SEC.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "movrecam",
@@ -1588,12 +1608,12 @@
     {
       "id": "sistema-endocanabinoide",
       "word": "Sistema endocanabinoide",
-      "simple": "Conjunto clássico de receptores (CB1/CB2), endocanabinoides e enzimas que ajuda a manter o equilíbrio do organismo. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Classic set of receptors (CB1/CB2), endocannabinoids and enzymes that helps keep the body in balance. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Conjunto clásico de receptores (CB1/CB2), endocannabinoides y enzimas que ayuda a mantener el equilibrio del organismo. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Conjunto clássico de receptores (CB1/CB2), endocanabinoides e enzimas que ajuda a manter o equilíbrio do organismo — núcleo do mapa de modulação (meditação, estilo de vida, cannabis).",
+      "simpleEn": "Classic set of receptors (CB1/CB2), endocannabinoids and enzymes that helps keep the body in balance — core of the modulation map (meditation, lifestyle, cannabis).",
+      "simpleEs": "Conjunto clásico de receptores (CB1/CB2), endocannabinoides y enzimas que ayuda a mantener el equilibrio — núcleo del mapa de modulación (meditación, estilo de vida, cannabis).",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
       "id": "soja",

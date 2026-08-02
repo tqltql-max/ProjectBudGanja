@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T07:45:16.849Z",
+  "updatedAt": "2026-08-02T08:19:09.923Z",
   "items": [
     {
       "title": "Início",
@@ -450,6 +450,12 @@
       "url": "/posts/post-inspecao-guia-defensoria-acesso.html",
       "excerpt": "Guia para Defensoria e quem não tem advogado particular: mesmos filtros de HC/seletividade (laudo, tempo, tipificação porte×tráfico) sem o preço do particular. Não é parecer.",
       "text": "Inspeção: Guia Defensoria e acesso gratuito — seletividade sem honorários Guia para Defensoria e quem não tem advogado particular: mesmos filtros de HC/seletividade (laudo, tempo, tipificação porte×tráfico) sem o preço do particular. Não é parecer. inspecao ## Escopo\n\nInspeção-guia do laboratório BudGanja para **Defensoria Pública, núcleos de prática jurídica e quem não tem advogado particular**: espelho do [guia HC para advogados](/posts/post-inspecao-guia-hc-seletividade-advogados.html) — mesma tese de **seletividade**, com foco em **acesso gratuito** e nos filtros que restam mesmo sem honorários (laudo, tempo, deslocamento, estigma).\n\n> **Nota metodológica (ler primeiro):** auditoria editorial independente. **Não é parecer jurídico, não é peça, não substitui a Defensoria local nem o juiz do caso.** Indexar ≠ endossar. Objecto = **literacia do projecto** para quem atende a ponta pobre da seletividade.\n\n## Público e uso\n\n| Campo | Valor |\n|-------|-------|\n| Público | Defensores, estagiários, núcleos universitários, pacientes sem rede |\n| Tipo BudGanja | Inspeção-guia — acesso gratuito × classificação |\n| Par completo | [HC × seletividade — advogados](/posts/post-inspecao-guia-hc-seletividade-advogados.html) |\n| Grupo Guia | [Classificação legal](/guia/palavras.html?group=classificacao) |\n| Data | 2026-08-02 |\n\n## Tese central (uma frase)\n\nTirar o preço do advogado **não apaga** a seletividade: sem laudo, sem tempo para judicializar, sem literacia de [porte × tráfico](/posts/post-inspecao-palavra-porte-trafico.html), a pessoa continua na [Lei 11.343](/posts/post-inspecao-palavra-lei-11-343.html) / abordagem — a Defensoria é a porta pública; o laboratório mapeia o **vocabulário** e os **filtros restantes**.\n\n## Hipóteses\n\n**H1:** HC medicinal documentado continua a exigir **prova terapêutica** — custo médico pode ser o novo filtro.  \n**H2:** a ponta pobre concentra tipificações de [tráfico](/posts/post-inspecao-palavra-porte-trafico.html) onde a ponta rica concentra"
+    },
+    {
+      "title": "Inspeção: Guia meditação — modular o endocanabinoidoma (via endógena)",
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Como a meditação, o yoga e o mindfulness entram no mapa XIV de modulação endógena do endocanabinoidoma (AEA/2-AG/BDNF). Elo Eliana Rodrigues · SEC. Não é protocolo clínico.",
+      "text": "Inspeção: Guia meditação — modular o endocanabinoidoma (via endógena) Como a meditação, o yoga e o mindfulness entram no mapa XIV de modulação endógena do endocanabinoidoma (AEA/2-AG/BDNF). Elo Eliana Rodrigues · SEC. Não é protocolo clínico. inspecao ## Escopo\n\nInspeção-guia do laboratório BudGanja sobre **como modular o endocanabinoidoma «por dentro»** — com foco na **meditação / mindfulness / yoga** como práticas que a literatura e a grade UNIFESP (XIV) ligam a alterações mensuráveis de endocanabinoides.\n\n> **Nota metodológica (ler primeiro):** auditoria editorial a partir dos [rascunhos das aulas XIV](/biblioteca/unifesp/livro-xiv.html) (Prof.ª Eliana Rodrigues · Prof. Dr. Paulo Morais) e da rede BudGanja. **Não é protocolo clínico, não é bula, não substitui médico nem prática supervisionada.** Estudos citados são sobretudo observacionais / revisões — indexar ≠ endossar dose ou escola de meditação. Objecto = **literacia do SEC × autonomia endógena**.\n\n## Público e uso\n\n| Campo | Valor |\n|-------|-------|\n| Público | Estudantes do curso UNIFESP, profissionais de saúde, praticantes de PIC, leitores do Guia técnico |\n| Tipo BudGanja | Inspeção-guia — SEC × estilo de vida × práticas integrativas |\n| Âncora de aula | [Livro XIV](/biblioteca/unifesp/livro-xiv.html) — Endocanabinoidoma + modulação / estilo de vida (Eliana) |\n| Grupo Guia | [Técnico](/guia/palavras.html?group=tecnico) |\n| Pergunta-guia | Como a meditação entra no mapa de **modulação endógena** do endocanabinoidoma, ao lado de dieta, exercício e outras PIC? |\n| Data | 2026-08-02 |\n\n## Tese central (uma frase)\n\nO endocanabinoidoma não se modulariza só com fitocanabinoides: a grade XIV descreve um eixo de **autonomia endógena** — estilo de vida + práticas integrativas — em que **meditação, yoga e mindfulness** aparecem como vias que podem **elevar anandamida / 2-AG** (e BDNF) em contextos de hipoatividade do sistema.\n\n## Hipóteses\n\n**H1:** [sistema endocanabinoide](/guia/palavras.html?q=Sistema+endocanabin"
     },
     {
       "title": "Inspeção: Lei 11.343/2006 — âncora tipológica da Lei de Drogas",
@@ -1437,9 +1443,9 @@
     },
     {
       "title": "Anandamida",
-      "url": "/biblioteca/unifesp/livro-xiv.html",
-      "excerpt": "Endocanabinoide (AEA) que o próprio corpo produz — frequentemente associado a efeitos «tipo THC» nos receptores. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "text": "Anandamida Endocanabinoide (AEA) que o próprio corpo produz — frequentemente associado a efeitos «tipo THC» nos receptores. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário anandamida"
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Endocanabinoide (AEA) associado a efeitos «tipo THC» nos receptores — biomarcador citado na aula XIV quando se fala de meditação, exercício e equilíbrio do SEC.",
+      "text": "Anandamida Endocanabinoide (AEA) associado a efeitos «tipo THC» nos receptores — biomarcador citado na aula XIV quando se fala de meditação, exercício e equilíbrio do SEC. tecnico guia palavras glossário anandamida"
     },
     {
       "title": "Animais",
@@ -1797,15 +1803,15 @@
     },
     {
       "title": "Endocanabinoide",
-      "url": "/biblioteca/unifesp/livro-xiv.html",
-      "excerpt": "Mensageiro que o próprio corpo produz (ex. anandamida, 2-AG) e que age nos receptores canabinoides. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "text": "Endocanabinoide Mensageiro que o próprio corpo produz (ex. anandamida, 2-AG) e que age nos receptores canabinoides. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário endocanabinoide"
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Mensageiro que o próprio corpo produz (ex. anandamida, 2-AG) e que age nos receptores canabinoides — pode subir com exercício e, em estudos, com meditação.",
+      "text": "Endocanabinoide Mensageiro que o próprio corpo produz (ex. anandamida, 2-AG) e que age nos receptores canabinoides — pode subir com exercício e, em estudos, com meditação. tecnico guia palavras glossário endocanabinoide"
     },
     {
       "title": "Endocanabinoidoma",
-      "url": "/biblioteca/unifesp/livro-xiv.html",
-      "excerpt": "Ampliação do sistema endocanabinoide: rede integrada de mediadores, receptores, enzimas e vias metabólicas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "text": "Endocanabinoidoma Ampliação do sistema endocanabinoide: rede integrada de mediadores, receptores, enzimas e vias metabólicas. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário endocanabinoidoma"
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Ampliação do sistema endocanabinoide: rede integrada de mediadores, receptores, enzimas e vias — objecto da modulação endógena (meditação/PIC) e exógena (cannabis/canabiméticos).",
+      "text": "Endocanabinoidoma Ampliação do sistema endocanabinoide: rede integrada de mediadores, receptores, enzimas e vias — objecto da modulação endógena (meditação/PIC) e exógena (cannabis/canabiméticos). tecnico guia palavras glossário endocanabinoidoma"
     },
     {
       "title": "Entorpecente",
@@ -2108,6 +2114,12 @@
       "text": "Marijuana Nome popular mexicano/espanhol — no século XX virou arma de discurso da proibição. lexico guia palavras glossário marijuana"
     },
     {
+      "title": "Meditação",
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Prática de atenção / recolhimento citada na grade XIV como via endógena para modular o endocanabinoidoma (ex. subida de anandamida/2-AG em estudos observacionais).",
+      "text": "Meditação Prática de atenção / recolhimento citada na grade XIV como via endógena para modular o endocanabinoidoma (ex. subida de anandamida/2-AG em estudos observacionais). tecnico guia palavras glossário meditacao"
+    },
+    {
       "title": "Medo",
       "url": "/posts/post-inspecao-palavra-medo.html",
       "excerpt": "Alerta interior que protege do perigo — a emoção roxa da Riley.",
@@ -2118,6 +2130,12 @@
       "url": "/plantas/melissa/",
       "excerpt": "Melissa officinalis — balm europeu adaptado; citral e ácidos fenólicos em chás calmantes. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Melissa Melissa officinalis — balm europeu adaptado; citral e ácidos fenólicos em chás calmantes. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário melissa"
+    },
+    {
+      "title": "Mindfulness",
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Atenção plena — no bloco XIV de PIC junto com meditação e yoga, associada a efeitos canabiméticos / regulação do SEC.",
+      "text": "Mindfulness Atenção plena — no bloco XIV de PIC junto com meditação e yoga, associada a efeitos canabiméticos / regulação do SEC. tecnico guia palavras glossário mindfulness"
     },
     {
       "title": "MovReCam",
@@ -2319,9 +2337,9 @@
     },
     {
       "title": "Sistema endocanabinoide",
-      "url": "/biblioteca/unifesp/livro-xiv.html",
-      "excerpt": "Conjunto clássico de receptores (CB1/CB2), endocanabinoides e enzimas que ajuda a manter o equilíbrio do organismo. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "text": "Sistema endocanabinoide Conjunto clássico de receptores (CB1/CB2), endocanabinoides e enzimas que ajuda a manter o equilíbrio do organismo. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário sistema-endocanabinoide"
+      "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
+      "excerpt": "Conjunto clássico de receptores (CB1/CB2), endocanabinoides e enzimas que ajuda a manter o equilíbrio do organismo — núcleo do mapa de modulação (meditação, estilo de vida, cannabis).",
+      "text": "Sistema endocanabinoide Conjunto clássico de receptores (CB1/CB2), endocanabinoides e enzimas que ajuda a manter o equilíbrio do organismo — núcleo do mapa de modulação (meditação, estilo de vida, cannabis). tecnico guia palavras glossário sistema-endocanabinoide"
     },
     {
       "title": "Soja",
