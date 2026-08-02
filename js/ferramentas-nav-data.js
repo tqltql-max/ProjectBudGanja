@@ -1542,6 +1542,118 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-guia-palavras-molecula-ao-lixo",
               "description": "As 23 palavras novas do Guia ligadas à pesquisa molécula→lixo: destaque, famílias semânticas e por que cada uma entra no catálogo."
+            },
+            {
+              "label": "Inspeção: Barco — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Barco — léxico Tamara…",
+              "href": "/posts/post-inspecao-palavra-barco.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-barco",
+              "description": "Embarcação — no universo Tamara é casa, oficina e corpo da invernagem; elo do livro *Bom dia, Inverno*."
+            },
+            {
+              "label": "Inspeção: Mar — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Mar — léxico Tamara /…",
+              "href": "/posts/post-inspecao-palavra-mar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mar",
+              "description": "Oceano e horizonte — no laboratório cruza com caminho, Vida e a travessia solitária de Tamara."
+            },
+            {
+              "label": "Inspeção: Gelo — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Gelo — léxico Tamara …",
+              "href": "/posts/post-inspecao-palavra-gelo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-gelo",
+              "description": "Água sólida que prende o barco — matéria da invernagem ártica narrada em *Bom dia, Inverno*."
+            },
+            {
+              "label": "Inspeção: Inverno — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Inverno — léxico Tama…",
+              "href": "/posts/post-inspecao-palavra-inverno.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-inverno",
+              "description": "Estação e título — *Bom dia, Inverno*: cumprimentar o frio sem romantizar o isolamento."
+            },
+            {
+              "label": "Inspeção: Invernagem — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Invernagem — léxico T…",
+              "href": "/posts/post-inspecao-palavra-invernagem.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-invernagem",
+              "description": "Permanecer o inverno inteiro no gelo — feito âncora de Tamara no Ártico; eixo do livro."
+            },
+            {
+              "label": "Inspeção: Navegar — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Navegar — léxico Tama…",
+              "href": "/posts/post-inspecao-palavra-navegar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-navegar",
+              "description": "Conduzir o barco e a própria rota — ofício Klink; no BudGanja liga a caminho e gesto."
+            },
+            {
+              "label": "Inspeção: Água — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Água — léxico Tamara …",
+              "href": "/posts/post-inspecao-palavra-agua.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-agua",
+              "description": "Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem."
+            },
+            {
+              "label": "Inspeção: Neve — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Neve — léxico Tamara …",
+              "href": "/posts/post-inspecao-palavra-neve.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-neve",
+              "description": "Cobertura branca do Ártico — paisagem e ruído branco da narrativa de Tamara."
+            },
+            {
+              "label": "Inspeção: Congelado — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Congelado — léxico Ta…",
+              "href": "/posts/post-inspecao-palavra-congelado.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-congelado",
+              "description": "Estado do mar preso — o barco deixa de «passar» e passa a *ficar*; elo com Vida."
+            },
+            {
+              "label": "Inspeção: Risco — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Risco — léxico Tamara…",
+              "href": "/posts/post-inspecao-palavra-risco.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-risco",
+              "description": "Perigo calculado da travessia e da invernagem — Amyr planeia; Tamara assume o próprio."
+            },
+            {
+              "label": "Inspeção: Solitário — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Solitário — léxico Ta…",
+              "href": "/posts/post-inspecao-palavra-solitario.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-solitario",
+              "description": "Navegar e invernar sozinha — não isolamento romântico: método, medo e escrita."
+            },
+            {
+              "label": "Inspeção: Groenlândia — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Groenlândia — léxico …",
+              "href": "/posts/post-inspecao-palavra-groenlandia.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-groenlandia",
+              "description": "Palco da invernagem ártica de Tamara — gelo, animais e o livro *Bom dia, Inverno*."
+            },
+            {
+              "label": "Inspeção: Anzol — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Anzol — léxico Tamara…",
+              "href": "/posts/post-inspecao-palavra-anzol.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-anzol",
+              "description": "Ferramenta de pesca na narrativa — gesto concreto de sobrevivência no gelo."
+            },
+            {
+              "label": "Inspeção: Livro — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Livro — léxico Tamara…",
+              "href": "/posts/post-inspecao-palavra-livro.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-livro",
+              "description": "Objecto e ofício — *Bom dia, Inverno* (Companhia das Letras): a invernagem vira página."
             }
           ]
         },
