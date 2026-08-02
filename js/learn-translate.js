@@ -402,21 +402,21 @@
         'aria-label',
         t('pages.vida.schoolBtnBackAria', 'Voltar à sala de aula')
       );
-      btn.setAttribute('title', t('pages.vida.schoolBtnBackTip', 'Aulas e progresso da escola'));
+      btn.setAttribute('title', t('pages.vida.schoolBtnBackTip', 'Aulas e progresso da sala'));
     } else if (onSchool) {
       btn.setAttribute('href', '/vida/sala/videos.html');
       if (text) text.textContent = t('pages.vida.schoolBtnVideo', 'Sala de vídeo');
       btn.setAttribute(
         'aria-label',
-        t('pages.vida.schoolBtnVideoAria', 'Abrir a sala de vídeo da escola')
+        t('pages.vida.schoolBtnVideoAria', 'Abrir a sala de vídeo')
       );
       btn.setAttribute('title', t('pages.vida.schoolBtnVideoTip', 'Vídeos com legendas — é só assistir'));
     } else {
       btn.setAttribute('href', '/vida/sala/');
-      if (text) text.textContent = t('pages.vida.schoolBtn', 'Entrar na escola');
+      if (text) text.textContent = t('pages.vida.schoolBtn', 'Sala de aula');
       btn.setAttribute(
         'aria-label',
-        t('pages.vida.schoolBtnAria', 'Entrar na escola — sala de aula Vida')
+        t('pages.vida.schoolBtnAria', 'Abrir a sala de aula Vida')
       );
       btn.setAttribute(
         'title',
@@ -426,7 +426,7 @@
     var kicker = btn.querySelector('.learn-school-btn-kicker');
     if (kicker) {
       kicker.textContent = onSchool
-        ? t('pages.vida.schoolBtnKickerHere', 'Na escola')
+        ? t('pages.vida.schoolBtnKickerHere', 'Na sala')
         : t('pages.vida.schoolBtnKicker', 'Para crianças');
     }
   }
@@ -613,7 +613,7 @@
       t('pages.vida.schoolBtnKicker', 'Para crianças') +
       '</span>' +
       '<span class="learn-school-btn-text" data-learn-school-label>' +
-      t('pages.vida.schoolBtn', 'Entrar na escola') +
+      t('pages.vida.schoolBtn', 'Sala de aula') +
       '</span>' +
       '</span>' +
       '<span class="learn-school-btn-spark" aria-hidden="true"></span>' +
