@@ -5,9 +5,9 @@
     "width": 1400,
     "height": 440
   },
-  "builtAt": "2026-08-02T19:49:46.023Z",
+  "builtAt": "2026-08-02T19:50:29.493Z",
   "update": {
-    "id": "bom-dia-inverno-2026-08-cover",
+    "id": "bom-dia-inverno-2026-08-cover-tt",
     "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
     "image": "/imagens/inspecoes/bom-dia-inverno-cover.jpg",
     "imageAlt": {
@@ -15,6 +15,8 @@
       "en": "Bom dia, Inverno cover — Tamara Klink on the ice holding the drone controller in her left hand",
       "es": "Portada de Bom dia, Inverno — Tamara Klink en el hielo con el control del dron en la mano izquierda"
     },
+    "mark": "TT",
+    "markHidden": true,
     "linkLabel": {
       "pt-BR": "Ver divulgação",
       "en": "Open promotion",

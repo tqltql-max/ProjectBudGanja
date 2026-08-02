@@ -149,6 +149,8 @@
     var linkLabel = pickLocalized(update.linkLabel, t('common.siteUpdateOpen', 'Abrir'));
     var image = update.image ? String(update.image) : '';
     var imageAlt = pickLocalized(update.imageAlt, title || 'Capa');
+    var mark = update.mark != null ? String(update.mark).trim() : '';
+    var markHidden = update.markHidden !== false;
     if (!title && !text && !href && !image) return '';
     var imageHtml = '';
     if (image && image.charAt(0) === '/') {
@@ -167,6 +169,17 @@
             '</a>'
           : '<div class="cookie-consent-update-cover-wrap">' + imgTag + '</div>';
     }
+    var markHtml = '';
+    if (mark) {
+      markHtml =
+        '<span class="cookie-consent-update-mark' +
+        (markHidden ? ' visually-hidden' : '') +
+        '" data-update-mark="' +
+        escapeHtml(mark) +
+        '" aria-hidden="true">' +
+        escapeHtml(mark) +
+        '</span>';
+    }
     var linkHtml = '';
     if (href && href.charAt(0) === '/' && !imageHtml) {
       linkHtml =
@@ -183,6 +196,7 @@
       escapeHtml(update.id) +
       '">' +
       imageHtml +
+      markHtml +
       (title
         ? '<p class="cookie-consent-update-title cookie-consent-update-title--whisper">' +
           escapeHtml(title) +

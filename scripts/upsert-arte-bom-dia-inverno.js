@@ -147,7 +147,7 @@ async function main() {
   }
 
   const update = {
-    id: 'bom-dia-inverno-2026-08-cover',
+    id: 'bom-dia-inverno-2026-08-cover-tt',
     href: href,
     image: '/imagens/inspecoes/bom-dia-inverno-cover.jpg',
     imageAlt: {
@@ -156,6 +156,8 @@ async function main() {
       en: 'Bom dia, Inverno cover — Tamara Klink on the ice holding the drone controller in her left hand',
       es: 'Portada de Bom dia, Inverno — Tamara Klink en el hielo con el control del dron en la mano izquierda'
     },
+    mark: 'TT',
+    markHidden: true,
     linkLabel: {
       'pt-BR': 'Ver divulgação',
       en: 'Open promotion',
