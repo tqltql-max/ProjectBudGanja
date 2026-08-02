@@ -750,7 +750,8 @@
       "learnHintEn": "Passe numa palavra: o brilho dourado traduz para English.",
       "learnHintEs": "Passe numa palavra: o brilho dourado traduz para español.",
       "docTitle": "Vida | Inspetor BudGanja",
-      "learnHintOn": "Passe numa palavra: o brilho dourado traduz para {lang}."
+      "learnHintOn": "Passe numa palavra: o brilho dourado traduz para {lang}.",
+      "ctaDiary": "Diário da Sementinha"
     },
     "about": {
       "eyebrow": "Sobre",
@@ -781,6 +782,45 @@
       "title": "Conta",
       "subtitle": "Gerir o seu perfil e sessões.",
       "docTitle": "Conta | Inspetor BudGanja"
+    },
+    "vidaDiario": {
+      "brand": "Inspetor BudGanja · Vida",
+      "title": "Diário da Sementinha",
+      "subtitle": "A sua planta-pet: dê água, comida e coloque para dormir — sempre com um adulto.",
+      "backVida": "Voltar à Vida",
+      "noteTitle": "Atividade familiar.",
+      "noteBody": " O progresso fica só neste aparelho. Não é o diário de pesquisas para adultos.",
+      "nameLabel": "Nome da planta",
+      "needWater": "Água",
+      "needFood": "Comida",
+      "needEnergy": "Energia",
+      "needMood": "Humor",
+      "actWater": "Dar água",
+      "actFood": "Dar comida",
+      "actSleep": "Dormir",
+      "actWake": "Acordar",
+      "logTitle": "O que fizemos juntos",
+      "logEmpty": "Ainda não há cuidados. Comece por dar água!",
+      "logWater": "Hoje reguei a Sementinha.",
+      "logFood": "Hoje dei comida à Sementinha.",
+      "logSleep": "A Sementinha foi dormir.",
+      "logWake": "A Sementinha acordou com o sol.",
+      "logGrow": "A Sementinha cresceu um pouquinho!",
+      "speechSleep": "Zzz… a plantinha está a descansar.",
+      "speechThirsty": "Tenho sede! Pode dar-me água?",
+      "speechHungry": "Queria uma folhinha de comida…",
+      "speechTired": "Estou cansada… hora de dormir?",
+      "speechHappy": "Estou tão feliz consigo!",
+      "speechOk": "Olá! Cuide de mim com carinho.",
+      "phaseSeed": "Semente",
+      "phaseSprout": "Brotinho",
+      "phasePlant": "Plantinha",
+      "phaseHappy": "Planta feliz",
+      "export": "Exportar",
+      "reset": "Apagar deste aparelho",
+      "resetConfirm": "Apagar o diário da Sementinha neste aparelho?",
+      "adultLink": "Diário de pesquisas para adultos",
+      "docTitle": "Diário da Sementinha | Inspetor BudGanja"
     }
   }
 }

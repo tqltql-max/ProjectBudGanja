@@ -750,7 +750,8 @@
       "learnHintEn": "Pass over a word: the gold sheen turns it into English.",
       "learnHintEs": "Pass over a word: the gold sheen turns it into Spanish.",
       "docTitle": "Vida | Inspetor BudGanja",
-      "learnHintOn": "Pass over a word: the gold sheen turns it into {lang}."
+      "learnHintOn": "Pass over a word: the gold sheen turns it into {lang}.",
+      "ctaDiary": "Little Seed Diary"
     },
     "about": {
       "eyebrow": "About",
@@ -781,6 +782,45 @@
       "title": "Account",
       "subtitle": "Manage your profile and sessions.",
       "docTitle": "Account | Inspetor BudGanja"
+    },
+    "vidaDiario": {
+      "brand": "Inspetor BudGanja · Vida",
+      "title": "Little Seed Diary",
+      "subtitle": "Your plant pet: give water, food, and put it to sleep — always with a grown-up.",
+      "backVida": "Back to Vida",
+      "noteTitle": "Family activity.",
+      "noteBody": " Progress stays on this device only. Not the adult research diary.",
+      "nameLabel": "Plant name",
+      "needWater": "Water",
+      "needFood": "Food",
+      "needEnergy": "Energy",
+      "needMood": "Mood",
+      "actWater": "Water",
+      "actFood": "Feed",
+      "actSleep": "Sleep",
+      "actWake": "Wake up",
+      "logTitle": "What we did together",
+      "logEmpty": "No care yet. Start by giving water!",
+      "logWater": "Today I watered Little Seed.",
+      "logFood": "Today I fed Little Seed.",
+      "logSleep": "Little Seed went to sleep.",
+      "logWake": "Little Seed woke up with the sun.",
+      "logGrow": "Little Seed grew a little!",
+      "speechSleep": "Zzz… the little plant is resting.",
+      "speechThirsty": "I am thirsty! Can I have water?",
+      "speechHungry": "I would love a little food leaf…",
+      "speechTired": "I am tired… bedtime?",
+      "speechHappy": "I am so happy with you!",
+      "speechOk": "Hi! Take care of me with love.",
+      "phaseSeed": "Seed",
+      "phaseSprout": "Sprout",
+      "phasePlant": "Little plant",
+      "phaseHappy": "Happy plant",
+      "export": "Export",
+      "reset": "Erase on this device",
+      "resetConfirm": "Erase the Little Seed diary on this device?",
+      "adultLink": "Research diary for adults",
+      "docTitle": "Little Seed Diary | Inspetor BudGanja"
     }
   }
 }

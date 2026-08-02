@@ -750,7 +750,8 @@
       "learnHintEn": "Pasa por una palabra: el brillo dorado la traduce al inglés.",
       "learnHintEs": "Pasa por una palabra: el brillo dorado la traduce al español.",
       "docTitle": "Vida | Inspetor BudGanja",
-      "learnHintOn": "Pasa por una palabra: el brillo dorado la traduce al {lang}."
+      "learnHintOn": "Pasa por una palabra: el brillo dorado la traduce al {lang}.",
+      "ctaDiary": "Diario de la Semillita"
     },
     "about": {
       "eyebrow": "Acerca de",
@@ -781,6 +782,45 @@
       "title": "Cuenta",
       "subtitle": "Gestiona tu perfil y sesiones.",
       "docTitle": "Cuenta | Inspetor BudGanja"
+    },
+    "vidaDiario": {
+      "brand": "Inspetor BudGanja · Vida",
+      "title": "Diario de la Semillita",
+      "subtitle": "Tu planta-mascota: dale agua, comida y ponla a dormir — siempre con un adulto.",
+      "backVida": "Volver a Vida",
+      "noteTitle": "Actividad familiar.",
+      "noteBody": " El progreso queda solo en este aparato. No es el diario de investigación para adultos.",
+      "nameLabel": "Nombre de la planta",
+      "needWater": "Agua",
+      "needFood": "Comida",
+      "needEnergy": "Energía",
+      "needMood": "Humor",
+      "actWater": "Dar agua",
+      "actFood": "Dar comida",
+      "actSleep": "Dormir",
+      "actWake": "Despertar",
+      "logTitle": "Lo que hicimos juntos",
+      "logEmpty": "Aún no hay cuidados. ¡Empieza dando agua!",
+      "logWater": "Hoy regué a la Semillita.",
+      "logFood": "Hoy di de comer a la Semillita.",
+      "logSleep": "La Semillita se fue a dormir.",
+      "logWake": "La Semillita despertó con el sol.",
+      "logGrow": "¡La Semillita creció un poquito!",
+      "speechSleep": "Zzz… la plantita está descansando.",
+      "speechThirsty": "¡Tengo sed! ¿Me das agua?",
+      "speechHungry": "Quería una hojita de comida…",
+      "speechTired": "Estoy cansada… ¿hora de dormir?",
+      "speechHappy": "¡Estoy tan feliz contigo!",
+      "speechOk": "¡Hola! Cuídame con cariño.",
+      "phaseSeed": "Semilla",
+      "phaseSprout": "Brotito",
+      "phasePlant": "Plantita",
+      "phaseHappy": "Planta feliz",
+      "export": "Exportar",
+      "reset": "Borrar de este aparato",
+      "resetConfirm": "¿Borrar el diario de la Semillita en este aparato?",
+      "adultLink": "Diario de investigación para adultos",
+      "docTitle": "Diario de la Semillita | Inspetor BudGanja"
     }
   }
 }

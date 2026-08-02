@@ -1,0 +1,556 @@
+/* Diário da Sementinha — planta-pet */
+
+body[data-page="vida-diario"] {
+    --vida-gold: #dfc262;
+    --vida-leaf: #7cb342;
+    --vida-leaf-deep: #3d6b28;
+    --vida-soil: #5c4030;
+    --vida-cream: #f4edd8;
+    --vida-ink: #12180e;
+    --vd-sky-day: linear-gradient(180deg, #1a2e14 0%, #0e140a 70%);
+    --vd-sky-night: linear-gradient(180deg, #0a1020 0%, #0e140a 75%);
+}
+
+.vida-diario-page {
+    max-width: min(720px, 100%);
+}
+
+.vida-diario-hero {
+    padding-bottom: 0.5rem;
+}
+
+.vd-stage {
+    position: relative;
+    margin: 0 var(--space-page-x, 1.25rem) 1.5rem;
+    padding: 1.25rem 1rem 1.5rem;
+    border-radius: 22px;
+    border: 1px solid rgba(223, 194, 98, 0.35);
+    background: rgba(14, 20, 10, 0.82);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: background 0.5s ease, border-color 0.5s ease;
+}
+
+.vida-diario-page.is-night .vd-stage {
+    border-color: rgba(120, 150, 220, 0.35);
+    background: rgba(8, 12, 22, 0.9);
+}
+
+.vd-sky {
+    position: absolute;
+    inset: 0;
+    background: var(--vd-sky-day);
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.55;
+    transition: background 0.6s ease;
+}
+
+.vida-diario-page.is-night .vd-sky {
+    background: var(--vd-sky-night);
+}
+
+.vd-pet-wrap {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    justify-items: center;
+    gap: 0.65rem;
+}
+
+.vd-speech {
+    margin: 0;
+    min-height: 2.4rem;
+    max-width: 22rem;
+    padding: 0.55rem 0.9rem;
+    border-radius: 16px;
+    background: rgba(254, 249, 215, 0.92);
+    color: #12180e;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.vd-pet {
+    position: relative;
+    width: min(220px, 70vw);
+    height: 240px;
+    margin-top: 0.35rem;
+}
+
+.vd-pot {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 70%;
+    height: 38%;
+    transform: translateX(-50%);
+}
+
+.vd-pot-rim {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    height: 18%;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #c4a484, #8b6914);
+    z-index: 2;
+}
+
+.vd-soil {
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+    border-radius: 0 0 28% 28% / 0 0 40% 40%;
+    background: linear-gradient(180deg, #6b4a32, #3d2818);
+    z-index: 1;
+}
+
+.vd-plant {
+    position: absolute;
+    left: 50%;
+    bottom: 28%;
+    width: 100%;
+    height: 72%;
+    transform: translateX(-50%);
+    transform-origin: 50% 100%;
+    z-index: 3;
+}
+
+.vd-pet.is-happy .vd-plant,
+.vd-pet.is-ok .vd-plant {
+    animation: vd-sway 3.2s ease-in-out infinite;
+}
+
+.vd-seed,
+.vd-sprout,
+.vd-bush {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.35s ease, transform 0.45s ease;
+}
+
+.vd-pet[data-phase="seed"] .vd-seed { opacity: 1; }
+.vd-pet[data-phase="sprout"] .vd-sprout { opacity: 1; }
+.vd-pet[data-phase="plant"] .vd-bush,
+.vd-pet[data-phase="happy"] .vd-bush { opacity: 1; }
+
+.vd-seed {
+    width: 28px;
+    height: 34px;
+    bottom: 8px;
+    border-radius: 50% 50% 45% 45%;
+    background: radial-gradient(circle at 35% 30%, #e8c989, #8b5a2b 70%);
+    box-shadow: inset -4px -6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.vd-sprout {
+    width: 80px;
+    height: 90px;
+}
+
+.vd-stem {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 8px;
+    height: 48px;
+    margin-left: -4px;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #8bc34a, #558b2f);
+}
+
+.vd-stem-tall {
+    height: 70px;
+}
+
+.vd-leaf {
+    position: absolute;
+    bottom: 36px;
+    width: 34px;
+    height: 20px;
+    border-radius: 80% 20% 80% 20%;
+    background: linear-gradient(135deg, #aed581, #689f38);
+}
+
+.vd-leaf-l {
+    left: 6px;
+    transform: rotate(-35deg);
+}
+
+.vd-leaf-r {
+    right: 6px;
+    transform: rotate(35deg) scaleX(-1);
+}
+
+.vd-bush {
+    width: 120px;
+    height: 120px;
+}
+
+.vd-canopy {
+    position: absolute;
+    left: 50%;
+    bottom: 48px;
+    width: 96px;
+    height: 72px;
+    margin-left: -48px;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle at 30% 35%, #c5e1a5, transparent 40%),
+        radial-gradient(circle at 70% 40%, #9ccc65, transparent 42%),
+        radial-gradient(circle at 50% 55%, #7cb342, #558b2f 70%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.vd-pet[data-phase="happy"] .vd-canopy {
+    filter: saturate(1.15) brightness(1.05);
+    box-shadow:
+        0 0 24px rgba(223, 194, 98, 0.45),
+        0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.vd-face {
+    position: absolute;
+    left: 50%;
+    bottom: 62px;
+    width: 40px;
+    height: 22px;
+    margin-left: -20px;
+    z-index: 2;
+}
+
+.vd-eye {
+    position: absolute;
+    top: 2px;
+    width: 7px;
+    height: 9px;
+    border-radius: 50%;
+    background: #1a220f;
+}
+
+.vd-eye:first-child { left: 6px; }
+.vd-eye:nth-child(2) { right: 6px; }
+
+.vd-mouth {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 14px;
+    height: 7px;
+    margin-left: -7px;
+    border: 2px solid #1a220f;
+    border-top: 0;
+    border-radius: 0 0 12px 12px;
+}
+
+.vd-pet.is-thirsty .vd-mouth,
+.vd-pet.is-sleepy .vd-mouth {
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    border-radius: 50%;
+    border: 2px solid #1a220f;
+    background: transparent;
+}
+
+.vd-pet.is-sleepy .vd-eye,
+.vd-pet.is-sleeping .vd-eye {
+    height: 3px;
+    top: 6px;
+    border-radius: 2px;
+}
+
+.vd-pet.is-sleeping .vd-plant {
+    animation: none;
+    transform: translateX(-50%) translateY(4px);
+    filter: brightness(0.85);
+}
+
+.vd-fx {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 5;
+}
+
+.vd-fx.is-on {
+    opacity: 1;
+}
+
+.vd-fx-drops.is-on::before,
+.vd-fx-drops.is-on::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    width: 10px;
+    height: 14px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    background: #64b5f6;
+    animation: vd-drop 0.85s ease-out forwards;
+}
+
+.vd-fx-drops.is-on::before { left: 38%; animation-delay: 0.05s; }
+.vd-fx-drops.is-on::after { left: 55%; animation-delay: 0.2s; }
+
+.vd-fx-food.is-on::before {
+    content: "🍃";
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    font-size: 1.4rem;
+    animation: vd-food 0.9s ease-out forwards;
+}
+
+.vd-fx-zzz.is-on::before {
+    content: "z z z";
+    position: absolute;
+    right: 8%;
+    top: 12%;
+    font-weight: 800;
+    color: #b3c7ff;
+    letter-spacing: 0.15em;
+    animation: vd-zzz 1.1s ease-out forwards;
+}
+
+.vd-name-field {
+    display: grid;
+    gap: 0.25rem;
+    width: min(16rem, 100%);
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: rgba(244, 237, 216, 0.75);
+}
+
+.vd-name-field input {
+    appearance: none;
+    border: 1px solid rgba(223, 194, 98, 0.4);
+    border-radius: 12px;
+    padding: 0.55rem 0.75rem;
+    background: rgba(10, 14, 8, 0.65);
+    color: #fef9d7;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.vd-phase-label {
+    margin: 0;
+    font-weight: 800;
+    color: var(--vida-gold);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+}
+
+.vd-needs {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: 0.55rem;
+    margin-top: 1.25rem;
+}
+
+.vd-need {
+    display: grid;
+    grid-template-columns: 1.5rem 4.5rem 1fr;
+    align-items: center;
+    gap: 0.45rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: rgba(244, 237, 216, 0.9);
+}
+
+.vd-bar {
+    height: 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    border: 1px solid rgba(223, 194, 98, 0.2);
+}
+
+.vd-bar i {
+    display: block;
+    height: 100%;
+    width: 0;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #7cb342, #dfc262);
+    transition: width 0.35s ease;
+}
+
+.vd-need[data-need="water"] .vd-bar i {
+    background: linear-gradient(90deg, #42a5f5, #81d4fa);
+}
+
+.vd-need[data-need="food"] .vd-bar i {
+    background: linear-gradient(90deg, #689f38, #aed581);
+}
+
+.vd-need[data-need="energy"] .vd-bar i {
+    background: linear-gradient(90deg, #7e57c2, #b39ddb);
+}
+
+.vd-actions {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.55rem;
+    margin-top: 1.25rem;
+}
+
+.vd-action {
+    appearance: none;
+    display: grid;
+    justify-items: center;
+    gap: 0.35rem;
+    padding: 0.85rem 0.5rem;
+    border-radius: 16px;
+    border: 2px solid rgba(223, 194, 98, 0.45);
+    background: linear-gradient(160deg, rgba(223, 194, 98, 0.2), rgba(124, 179, 66, 0.15));
+    color: #fef9d7;
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 0.92rem;
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease, opacity 0.2s ease;
+}
+
+.vd-action:hover:not(:disabled),
+.vd-action:focus-visible:not(:disabled) {
+    transform: translateY(-2px) scale(1.02);
+    filter: saturate(1.08);
+    outline: none;
+}
+
+.vd-action:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.vd-action-icon {
+    font-size: 1.55rem;
+    line-height: 1;
+}
+
+.vd-action--sleep {
+    border-color: rgba(150, 170, 255, 0.45);
+    background: linear-gradient(160deg, rgba(100, 120, 200, 0.28), rgba(40, 50, 90, 0.35));
+}
+
+.vd-log-section {
+    margin-top: 0.5rem;
+}
+
+.vd-log {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.55rem;
+}
+
+.vd-log li {
+    display: grid;
+    gap: 0.15rem;
+    padding: 0.75rem 0.9rem;
+    border-radius: 14px;
+    background: rgba(14, 20, 10, 0.72);
+    border: 1px solid rgba(223, 194, 98, 0.22);
+    color: rgba(244, 237, 216, 0.9);
+    font-weight: 600;
+}
+
+.vd-log time {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--vida-gold);
+}
+
+.vd-log-empty {
+    opacity: 0.75;
+    font-style: italic;
+}
+
+.vd-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 var(--space-page-x, 1.25rem) 2rem;
+    padding-top: 0.5rem;
+}
+
+.vd-foot-btn {
+    appearance: none;
+    border: 1px solid rgba(223, 194, 98, 0.35);
+    background: transparent;
+    color: rgba(244, 237, 216, 0.8);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.82rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.vd-foot-link {
+    color: rgba(223, 194, 98, 0.85);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+@keyframes vd-sway {
+    0%, 100% { transform: translateX(-50%) rotate(-2deg); }
+    50% { transform: translateX(-50%) rotate(2.5deg); }
+}
+
+@keyframes vd-drop {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(70px); opacity: 0; }
+}
+
+@keyframes vd-food {
+    0% { transform: translate(-50%, 0) scale(1); opacity: 1; }
+    100% { transform: translate(-50%, 60px) scale(0.7); opacity: 0; }
+}
+
+@keyframes vd-zzz {
+    0% { transform: translateY(0); opacity: 0; }
+    30% { opacity: 1; }
+    100% { transform: translateY(-18px); opacity: 0; }
+}
+
+@media (max-width: 560px) {
+    .vd-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .vd-action {
+        grid-template-columns: auto 1fr;
+        justify-items: start;
+        align-items: center;
+        padding: 0.9rem 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .vd-pet.is-happy .vd-plant,
+    .vd-pet.is-ok .vd-plant,
+    .vd-fx-drops.is-on::before,
+    .vd-fx-drops.is-on::after,
+    .vd-fx-food.is-on::before,
+    .vd-fx-zzz.is-on::before {
+        animation: none;
+    }
+}
