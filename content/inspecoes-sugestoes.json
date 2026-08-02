@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T13:45:12.386Z",
+  "updatedAt": "2026-08-02T19:19:44.503Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2442,6 +2442,28 @@
         "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
       ],
       "notes": "Mapa emocional: ofício vs veneno; rede Divertida Mente + Vida."
+    },
+    {
+      "id": "palavra-balde",
+      "title": "Balde — volume, transporte e regar",
+      "titleEn": "Balde — volume, transport and watering",
+      "titleEs": "Balde — volumen, transporte y riego",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: «balde» (recipiente) e «em/de balde» (*bāṭil*) — utensílio de volume no cultivo.",
+      "whyEn": "Words: “balde” (bucket) and “em/de balde” (*bāṭil*) — volume tool in the grow.",
+      "whyEs": "Palabras: «balde» (recipiente) y «em/de balde» (*bāṭil*) — herramienta de volumen en el cultivo.",
+      "suggestedSlug": "inspecao-palavra-balde",
+      "doneHref": "/posts/post-inspecao-palavra-balde.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/guia/cultivo-basico.html",
+        "/calculadoras/",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-verdade.html"
+      ],
+      "notes": "Separar recipiente (origem duvidosa) de locuções árabes em/de balde."
     }
   ]
 }

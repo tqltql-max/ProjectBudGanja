@@ -1279,6 +1279,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Calendula officinalis* — pétalas ricas em triterpenos e flavonoides; uso tópico em pele irritada."
             },
             {
+              "label": "Inspeção: Balde — volume, transporte e o gesto de regar",
+              "tileLabel": "Inspeção: Balde — volume, trans…",
+              "href": "/posts/post-inspecao-palavra-balde.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-balde",
+              "description": "Palavras: «balde» (recipiente de origem duvidosa) e «em/de balde» (árabe *bāṭil*) — utensílio de volume no cultivo BudGanja, sem confundir com «em vão»."
+            },
+            {
               "label": "Inspeção: Estupefaciente — rótulo internacional vizinho de narcótico",
               "tileLabel": "Inspeção: Estupefaciente — rótu…",
               "href": "/posts/post-inspecao-palavra-estupefaciente.html",

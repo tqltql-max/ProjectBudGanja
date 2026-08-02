@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T19:03:01.789Z",
+  "updatedAt": "2026-08-02T19:19:55.104Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Balde — volume, transporte e o gesto de regar",
+      "url": "/posts/post-inspecao-palavra-balde.html",
+      "excerpt": "Palavras: «balde» (recipiente de origem duvidosa) e «em/de balde» (árabe *bāṭil*) — utensílio de volume no cultivo BudGanja, sem confundir com «em vão».",
+      "text": "Inspeção: Balde — volume, transporte e o gesto de regar Palavras: «balde» (recipiente de origem duvidosa) e «em/de balde» (árabe *bāṭil*) — utensílio de volume no cultivo BudGanja, sem confundir com «em vão». inspecao ## Escopo\n\nInspeção editorial e linguística da palavra **balde** — o **recipiente com asa** que carrega água, solo, adubo e solução nutritiva — e das locuções **em balde** / **de balde** («em vão» / «de graça»), de étimo distinto. No BudGanja, o balde é ferramenta quotidiana do [cultivo](/guia/cultivo-basico.html): medir volume, transportar e regar sem romantizar o gesto.\n\n> **Nota metodológica:** auditoria independente. Duas fichas sob o mesmo som: (1) **balde** recipiente — origem **incerta / controversa** (tradição marítima ibérica; ver [Wikcionário · balde](https://en.wiktionary.org/wiki/balde#Portuguese), [Aulete · balde](https://www.aulete.com.br/balde)); (2) locuções **em balde** / **de balde** — via árabe *bāṭil* («vão, inútil»). **Ficha de palavra ≠ catálogo de loja** — aqui inspecionamos o **vocábulo** como objecto de cultivo e de método ([gesto](/posts/post-inspecao-palavra-gesto.html), [verdade](/posts/post-inspecao-palavra-verdade.html)). Sem afiliação comercial.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **balde** (recipiente) · locuções **em balde** / **de balde** |\n| Classe | Substantivo masculino · locuções adverbiais (homónimas) |\n| Étimo (recipiente) | Origem **duvidosa** — uso antigo marítimo/agrícola; *baldear* («trasvasar, lavar a baldes») na mesma família |\n| Étimo (locuções) | Árabe *bāṭil* («vão, sem valor») → *de balde* / *em balde* / *debalde* / *embalde* |\n| Família | *baldear* · *baldeação* · *baldeado* · *chutar o balde* (figurado BR) |\n| Cognatos / vizinhos | esp. *balde* · fr. *seau* (≠ étimo) · ing. *bucket* (≠ étimo) |\n| Tipo BudGanja | Palavra — utensílio de volume e transporte no laboratório |\n| Elo cultivo | [Cultivo](/guia/cultivo-basico.html) · [Plantas](/plantas/) · [Animais](/animai"
     },
     {
       "title": "Inspeção: Cruzamento — Raiva, Emoção, Venom e Vida no mapa de Divertida Mente",
@@ -2784,6 +2790,12 @@
       "url": "/posts/post-inspecao-palavra-gesto.html",
       "excerpt": "Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade.",
       "text": "Gesto Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade. lexico guia palavras glossário gesto"
+    },
+    {
+      "title": "Balde",
+      "url": "/posts/post-inspecao-palavra-balde.html",
+      "excerpt": "Recipiente com asa (origem duvidosa); no cultivo transporta e mede volume. Locuções *em/de balde* vêm do árabe *bāṭil* («vão»).",
+      "text": "Balde Recipiente com asa (origem duvidosa); no cultivo transporta e mede volume. Locuções *em/de balde* vêm do árabe *bāṭil* («vão»). lexico guia palavras glossário balde"
     },
     {
       "title": "Sintético",

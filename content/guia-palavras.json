@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T12:57:08.080Z",
+  "updatedAt": "2026-08-02T19:19:44.506Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2174,6 +2174,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-gesto.html"
+    },
+    {
+      "id": "balde",
+      "word": "Balde",
+      "simple": "Recipiente com asa (origem duvidosa); no cultivo transporta e mede volume. Locuções *em/de balde* vêm do árabe *bāṭil* («vão»).",
+      "simpleEn": "Handled bucket (uncertain origin); in grow it carries and measures volume. Locutions *em/de balde* from Arabic *bāṭil* (“vain”).",
+      "simpleEs": "Recipiente con asa (origen dudoso); en cultivo transporta y mide volumen. Locuciones *em/de balde* del árabe *bāṭil* («vano»).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-balde.html"
     },
     {
       "id": "sintetico",
