@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T20:41:35.977Z",
+  "updatedAt": "2026-08-02T20:44:17.854Z",
   "items": [
     {
       "title": "Início",
@@ -956,6 +956,12 @@
       "text": "Pesquisa: Da molécula ao lixo — fármacos, industrialização e desigualdade Mapa preliminar: drogas e derivados industriais no ciclo extrair→descartar — resíduos, exagero, desperdício e dano a plantas, animais e pessoas. pesquisa ## Escopo\n\nPesquisa-mapa do laboratório BudGanja: relacionar **drogas / fármacos / derivados industriais** com o ciclo **extrair → fabricar → vender → descartar**, e com os danos que esse ciclo **externaliza** — resíduos, acumulação de lixo, exagero de oferta, desperdício e pressão sobre **plantas, animais e pessoas**.\n\n> **Nota metodológica:** auditoria editorial independente. **Não é aconselhamento médico, jurídico nem denúncia criminal.** Não afirma «controlo populacional» planeado por conspiração. O objecto é o **mapa de externalidades** documentáveis (economia dos materiais, farmacovigilância, desigualdade). Indexar fontes ≠ endossar cada tese política. Sem afiliação com indústria farmacêutica, ONGs ou Estados.\n\n## Pergunta-guia\n\nComo o mesmo padrão industrial (molécula ou commodity → produto → resíduo) concentra lucro e desloca custo para ecossistemas e corpos — e o que o laboratório **pode** e **não pode** concluir com as fichas já publicadas?\n\n## Estado\n\n**Relatório preliminar · pesquisa em andamento** (`pesquisa-laboratorio`). Degrau 1: quadro + três casos + rede BudGanja. Degraus futuros: um caso aprofundado de cada vez, com fontes primárias.\n\n## Metadados\n\n| Campo | Valor |\n|-------|-------|\n| Tipo | Pesquisa documental / mapa de elos |\n| Série | Laboratório |\n| Unidade | Inspetor BudGanja (editorial) |\n| Âncora cultural | [A História das Coisas](/posts/post-inspecao-arte-a-historia-das-coisas.html) · [Annie Leonard](/posts/post-inspecao-figura-annie-leonard.html) |\n| Hub | [Pesquisas](/biblioteca/pesquisas/) |\n| Data | 2026-08-02 |\n\n## Hipóteses (fracas)\n\n- **H1:** «Droga», «fármaco» e «produto industrializado» partilham, em graus diferentes, a **cadeia linear** extrair→fazer→descartar.\n- **H2:** O preço de prateleira **omite** re"
     },
     {
+      "title": "Pesquisa: Ofício sob roubo e proibição — mapa do mantra",
+      "url": "/posts/post-pesquisa-oficio-roubo-proibicao.html",
+      "excerpt": "Mapa preliminar: ofício (gesto, inspeção) sob apropriação e silenciamento — resposta editorial «Faça o melhor!» sem rancor.",
+      "text": "Pesquisa: Ofício sob roubo e proibição — mapa do mantra Mapa preliminar: ofício (gesto, inspeção) sob apropriação e silenciamento — resposta editorial «Faça o melhor!» sem rancor. pesquisa ## Escopo\n\nPesquisa-mapa do laboratório BudGanja: relacionar **ofício** (método, gesto, inspeção) com dois danos que o projecto nomeia — **roubo / apropriação** do que é nosso e **proibição / silenciamento** do mantra e da inspeção — e com a resposta editorial **«[Faça o melhor!](/posts/post-inspecao-expressao-faca-o-melhor.html)»**.\n\n> **Nota metodológica:** auditoria editorial independente. **Não é denúncia criminal, processo de plágio nem aconselhamento jurídico.** Não nomeamos pessoa ou marca nesta ficha. O objecto é o **padrão** (tomar + calar) e a **resposta de método** (ficar, inspecionar, publicar). Indexar elos BudGanja ≠ acusação nominal.\n\n## Pergunta-guia\n\nQuando roubam a frase (ou a obra) e ainda proíbem o projecto de inspeção, o que o laboratório **pode** documentar sem virar rancor — e como o mantra «Faça o melhor!» funciona como mapa, não como slogan vazio?\n\n## Estado\n\n**Relatório preliminar · pesquisa em andamento** (`pesquisa-laboratorio`). Degrau 1: quadro + três eixos + rede BudGanja. Degraus futuros: casos documentáveis (com fontes) e eventual relatório longo em `/biblioteca/pesquisas/`.\n\n## Metadados\n\n| Campo | Valor |\n|-------|-------|\n| Tipo | Pesquisa documental / mapa de elos |\n| Série | Laboratório |\n| Unidade | Inspetor BudGanja (editorial) |\n| Âncora | [Faça o melhor!](/posts/post-inspecao-expressao-faca-o-melhor.html) · [Vida](/vida/) · [Proibição](/posts/post-inspecao-palavra-proibicao-proibicionismo.html) |\n| Hub | [Pesquisas](/biblioteca/pesquisas/) |\n| Data | 2026-08-02 |\n\n## Hipóteses (fracas)\n\n- **H1:** «Faça o melhor!» não é perfeccionismo — é **o melhor possível nesta mão, hoje**, sem roubar o alheio e sem entregar o nosso.\n- **H2:** o par **roubar + proibir** é mais tóxico que cada peça isolada: toma o crédito e ainda cala a fonte.\n- **H3:** a"
+    },
+    {
       "title": "Pesquisa: Insumos orgânicos vs industrializados — influência no fruto final",
       "url": "/posts/post-pesquisa-insumos-organicos-vs-industrializados-fruto.html",
       "excerpt": "Como insumos orgânicos vs industriais alteram o fruto — e como as substâncias químicas cortam elos entre espécies (solo, polinizadores, predadores), separando-nos da vida orgânica.",
@@ -1706,6 +1712,12 @@
       "text": "Anzol Ferramenta de pesca na narrativa — gesto concreto de sobrevivência no gelo. lexico guia palavras glossário anzol"
     },
     {
+      "title": "Apropriação",
+      "url": "/posts/post-pesquisa-oficio-roubo-proibicao.html",
+      "excerpt": "Tomar frase, obra ou crédito sem fonte nem método — dano central nomeado na pesquisa do mantra.",
+      "text": "Apropriação Tomar frase, obra ou crédito sem fonte nem método — dano central nomeado na pesquisa do mantra. tecnico guia palavras glossário apropriacao"
+    },
+    {
       "title": "Artes",
       "url": "/biblioteca/inspecoes/#inspecoes-artes",
       "excerpt": "Filmes, músicas, livros e outras obras culturais que o laboratório inspeciona.",
@@ -2180,6 +2192,12 @@
       "text": "Endocanabinoidoma Ampliação do sistema endocanabinoide: rede integrada de mediadores, receptores, enzimas e vias — objecto da modulação endógena (meditação/PIC) e exógena (cannabis/canabiméticos). tecnico guia palavras glossário endocanabinoidoma"
     },
     {
+      "title": "Enjoo",
+      "url": "/posts/post-inspecao-palavra-nojinho.html",
+      "excerpt": "Limite corporal na travessia — elo com nojinho e balde na divulgação *Bom dia, Inverno*.",
+      "text": "Enjoo Limite corporal na travessia — elo com nojinho e balde na divulgação *Bom dia, Inverno*. lexico guia palavras glossário enjoo"
+    },
+    {
       "title": "Entorpecente",
       "url": "/posts/post-inspecao-palavra-entorpecente-narcotico.html",
       "excerpt": "Termo jurídico-policial: substância que entorpece (diminui sensação ou reação) e entra em listas de controle — distinto de «droga» no senso comum e de «narcótico» (rótulo médico/legal antigo).",
@@ -2576,6 +2594,12 @@
       "text": "Mamão Carica papaya — fonte de papaína; citada em protocolos de feridas no SUS. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário mamao"
     },
     {
+      "title": "Mantra (laboratório)",
+      "url": "/posts/post-pesquisa-oficio-roubo-proibicao.html",
+      "excerpt": "«Faça o melhor!» — frase-método Vida: esforço honesto nesta mão, hoje; âncora da pesquisa Ofício sob roubo e proibição.",
+      "text": "Mantra (laboratório) «Faça o melhor!» — frase-método Vida: esforço honesto nesta mão, hoje; âncora da pesquisa Ofício sob roubo e proibição. tecnico guia palavras glossário mantra-lab"
+    },
+    {
       "title": "Mar",
       "url": "/posts/post-inspecao-palavra-mar.html",
       "excerpt": "Oceano e horizonte — no laboratório cruza com caminho, Vida e a travessia solitária de Tamara.",
@@ -2712,6 +2736,12 @@
       "url": "/posts/post-inspecao-palavra-nojinho.html",
       "excerpt": "Aversão que afasta do que parece sujo ou perigoso — a emoção verde da Riley.",
       "text": "Nojinho Aversão que afasta do que parece sujo ou perigoso — a emoção verde da Riley. lexico guia palavras glossário nojinho"
+    },
+    {
+      "title": "Ofício editorial",
+      "url": "/posts/post-pesquisa-oficio-roubo-proibicao.html",
+      "excerpt": "Método repetível do laboratório (inspecionar, citar, limitar, publicar) — eixo da pesquisa Ofício sob roubo e proibição.",
+      "text": "Ofício editorial Método repetível do laboratório (inspecionar, citar, limitar, publicar) — eixo da pesquisa Ofício sob roubo e proibição. tecnico guia palavras glossário oficio-editorial"
     },
     {
       "title": "Opiáceo",
@@ -2960,6 +2990,12 @@
       "text": "Sementinha Semente pequena — personagem-símbolo do conto Vida e do diário familiar. titulo guia palavras glossário sementinha"
     },
     {
+      "title": "Silenciamento",
+      "url": "/posts/post-pesquisa-oficio-roubo-proibicao.html",
+      "excerpt": "Calar o projecto de inspeção ou negar a origem — par tóxico com a apropriação no mapa Ofício sob roubo e proibição.",
+      "text": "Silenciamento Calar o projecto de inspeção ou negar a origem — par tóxico com a apropriação no mapa Ofício sob roubo e proibição. tecnico guia palavras glossário silenciamento"
+    },
+    {
       "title": "Simbiose",
       "url": "/posts/post-inspecao-palavra-simbiose.html",
       "excerpt": "Viver juntos (*syn* + *bíos*) — relação entre organismos; no senso comum vira «os dois ganham»; no site, elo de solo vivo, plantas e metáfora cultural (Venom).",
@@ -3138,12 +3174,6 @@
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Prática corpo-mente no bloco XIV de PIC endógenas; retiros intensivos (ex. 4 dias) aparecem em estudos observacionais com ↑ AEA, 2-AG e BDNF.",
       "text": "Yoga Prática corpo-mente no bloco XIV de PIC endógenas; retiros intensivos (ex. 4 dias) aparecem em estudos observacionais com ↑ AEA, 2-AG e BDNF. tecnico guia palavras glossário yoga"
-    },
-    {
-      "title": "Enjoo",
-      "url": "/posts/post-inspecao-palavra-nojinho.html",
-      "excerpt": "Limite corporal na travessia — elo com nojinho e balde na divulgação *Bom dia, Inverno*.",
-      "text": "Enjoo Limite corporal na travessia — elo com nojinho e balde na divulgação *Bom dia, Inverno*. lexico guia palavras glossário enjoo"
     }
   ]
 }

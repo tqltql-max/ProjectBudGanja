@@ -133,6 +133,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Como insumos orgânicos vs industriais alteram o fruto — e como as substâncias químicas cortam elos entre espécies (solo, polinizadores, predadores), separando-nos da vida orgânica."
             },
             {
+              "label": "Pesquisa: Ofício sob roubo e proibição — mapa do mantra",
+              "tileLabel": "Pesquisa: Ofício sob roubo e pr…",
+              "href": "/posts/post-pesquisa-oficio-roubo-proibicao.html",
+              "icon": "📋",
+              "slug": "post-pesquisa-oficio-roubo-proibicao",
+              "description": "Mapa preliminar: ofício (gesto, inspeção) sob apropriação e silenciamento — resposta editorial «Faça o melhor!» sem rancor."
+            },
+            {
               "label": "Super Solo: Guia de Uso",
               "tileLabel": "Super Solo: Guia de Uso",
               "href": "/posts/post-guia-calculadora-super-solo.html",
@@ -301,6 +309,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-ventilacao-tenda",
               "description": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório."
+            },
+            {
+              "label": "Inspeção: Faça o melhor! — mantra do laboratório",
+              "tileLabel": "Inspeção: Faça o melhor! — mant…",
+              "href": "/posts/post-inspecao-expressao-faca-o-melhor.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-faca-o-melhor",
+              "description": "Expressões: «Faça o melhor!» — mantra Vida; ofício diário e resposta ao roubo e à proibição que tentam calar o projecto de inspeção."
             },
             {
               "label": "Inspeção: Artigo — O trigo engorda e adoece? (Brouns et al., 2013)",

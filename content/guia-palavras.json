@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T20:35:37.196Z",
+  "updatedAt": "2026-08-02T20:44:03.558Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -204,6 +204,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-anzol.html"
+    },
+    {
+      "id": "apropriacao",
+      "word": "Apropriação",
+      "simple": "Tomar frase, obra ou crédito sem fonte nem método — dano central nomeado na pesquisa do mantra.",
+      "simpleEn": "Taking phrase, work or credit without source or method — central harm named in the mantra research.",
+      "simpleEs": "Tomar frase, obra o crédito sin fuente ni método — daño central del mapa del mantra.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-oficio-roubo-proibicao.html"
     },
     {
       "id": "artes",
@@ -996,6 +1006,16 @@
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
+      "id": "enjoo",
+      "word": "Enjoo",
+      "simple": "Limite corporal na travessia — elo com nojinho e balde na divulgação *Bom dia, Inverno*.",
+      "simpleEn": "Bodily limit at sea — links to nojinho and balde in the *Bom dia, Inverno* promotion.",
+      "simpleEs": "Límite corporal en la travesía — enlace con nojinho y balde en la divulgación *Bom dia, Inverno*.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-nojinho.html"
+    },
+    {
       "id": "entorpecente",
       "word": "Entorpecente",
       "simple": "Termo jurídico-policial: substância que entorpece (diminui sensação ou reação) e entra em listas de controle — distinto de «droga» no senso comum e de «narcótico» (rótulo médico/legal antigo).",
@@ -1656,6 +1676,16 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "mantra-lab",
+      "word": "Mantra (laboratório)",
+      "simple": "«Faça o melhor!» — frase-método Vida: esforço honesto nesta mão, hoje; âncora da pesquisa Ofício sob roubo e proibição.",
+      "simpleEn": "“Do your best!” — Vida method phrase; anchor of Craft under theft and prohibition.",
+      "simpleEs": "«¡Haz lo mejor!» — frase-método Vida; ancla de Oficio bajo robo y prohibición.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-oficio-roubo-proibicao.html"
+    },
+    {
       "id": "mar",
       "word": "Mar",
       "simple": "Oceano e horizonte — no laboratório cruza com caminho, Vida e a travessia solitária de Tamara.",
@@ -1884,6 +1914,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-nojinho.html"
+    },
+    {
+      "id": "oficio-editorial",
+      "word": "Ofício editorial",
+      "simple": "Método repetível do laboratório (inspecionar, citar, limitar, publicar) — eixo da pesquisa Ofício sob roubo e proibição.",
+      "simpleEn": "Lab’s repeatable method (inspect, cite, limit, publish) — axis of Craft under theft and prohibition.",
+      "simpleEs": "Método repetible del laboratorio — eje de Oficio bajo robo y prohibición.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-oficio-roubo-proibicao.html"
     },
     {
       "id": "opiaceo",
@@ -2296,6 +2336,16 @@
       "href": "/vida/diario/"
     },
     {
+      "id": "silenciamento",
+      "word": "Silenciamento",
+      "simple": "Calar o projecto de inspeção ou negar a origem — par tóxico com a apropriação no mapa Ofício sob roubo e proibição.",
+      "simpleEn": "Silencing the inspection project or denying origin — toxic pair with appropriation on this research map.",
+      "simpleEs": "Callar el proyecto de inspección o negar el origen — par tóxico con la apropiación.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-oficio-roubo-proibicao.html"
+    },
+    {
       "id": "simbiose",
       "word": "Simbiose",
       "simple": "Viver juntos (*syn* + *bíos*) — relação entre organismos; no senso comum vira «os dois ganham»; no site, elo de solo vivo, plantas e metáfora cultural (Venom).",
@@ -2594,16 +2644,6 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
-    },
-    {
-      "id": "enjoo",
-      "word": "Enjoo",
-      "simple": "Limite corporal na travessia — elo com nojinho e balde na divulgação *Bom dia, Inverno*.",
-      "simpleEn": "Bodily limit at sea — links to nojinho and balde in the *Bom dia, Inverno* promotion.",
-      "simpleEs": "Límite corporal en la travesía — enlace con nojinho y balde en la divulgación *Bom dia, Inverno*.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-nojinho.html"
     }
   ]
 }
