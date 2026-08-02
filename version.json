@@ -1,22 +1,22 @@
 {
-  "version": "303",
+  "version": "304",
   "hero": "7f1482449a",
   "heroSize": {
     "width": 1400,
     "height": 440
   },
-  "builtAt": "2026-08-02T01:23:48.114Z",
+  "builtAt": "2026-08-02T01:28:08.600Z",
   "update": {
-    "id": "learn-mode-titles-2026-08",
+    "id": "learn-mode-no-tip-2026-08",
     "title": {
       "pt-BR": "O que está a ser atualizado",
       "en": "What’s being updated",
       "es": "Qué se está actualizando"
     },
     "text": {
-      "pt-BR": "Modo Aprender idiomas na Vida e nas inspeções: passe o rato ou o dedo pelas palavras e títulos para ver inglês ou espanhol, com brilho dourado e tip da frase.",
-      "en": "Learn languages mode on Vida and inspections: hover or tap words and titles to see English or Spanish, with a gold sheen and phrase tip.",
-      "es": "Modo Aprender idiomas en Vida e inspecciones: pasa el cursor o el dedo por palabras y títulos para ver inglés o español, con brillo dorado y tip de la frase."
+      "pt-BR": "Modo Aprender idiomas na Vida e nas inspeções: passe o rato ou o dedo pelas palavras e títulos — elas viram inglês ou espanhol com brilho dourado, sem popup.",
+      "en": "Learn languages mode on Vida and inspections: hover or tap words and titles — they turn into English or Spanish with a gold sheen, no popup.",
+      "es": "Modo Aprender idiomas en Vida e inspecciones: pasa el cursor o el dedo por palabras y títulos — se vuelven inglés o español con brillo dorado, sin popup."
     },
     "cta": {
       "pt-BR": "Entendi",

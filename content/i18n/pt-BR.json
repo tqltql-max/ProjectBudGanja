@@ -741,9 +741,8 @@
       "exploreLead": "Ferramentas do laboratório para praticar (sempre com um adulto).",
       "learnLabel": "Aprender idiomas",
       "learnHintOff": "Escolhe English ou Español — depois passa o rato/dedo por uma palavra de cada vez.",
-      "learnHintEn": "Passe numa palavra: ela vira English. O tip mostra só a palavra e uma ideia curtinha.",
-      "learnHintEs": "Passe numa palavra: ela vira español. O tip mostra só a palavra e uma ideia curtinha.",
-      "learnIdeaLabel": "Ideia",
+      "learnHintEn": "Passe numa palavra: o brilho dourado traduz para English.",
+      "learnHintEs": "Passe numa palavra: o brilho dourado traduz para español.",
       "docTitle": "Vida | Inspetor BudGanja"
     },
     "about": {

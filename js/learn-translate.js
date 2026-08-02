@@ -25,7 +25,6 @@
     root: null,
     scope: null,
     toolbar: null,
-    tip: null,
     activeWord: null,
     timers: new WeakMap(),
     reducedMotion: false,
@@ -103,144 +102,6 @@
     return preferUpper ? ch.toUpperCase() : ch;
   }
 
-  function ensureTip() {
-    if (state.tip) return state.tip;
-    var tip = document.createElement('div');
-    tip.className = 'learn-phrase-tip';
-    tip.setAttribute('role', 'status');
-    tip.setAttribute('aria-live', 'polite');
-    tip.hidden = true;
-    document.body.appendChild(tip);
-    state.tip = tip;
-    return tip;
-  }
-
-  function hideTip() {
-    if (!state.tip) return;
-    state.tip.classList.remove('is-visible');
-    state.tip.hidden = true;
-  }
-
-  /** Frase curta à volta da palavra (para crianças — não o parágrafo inteiro). */
-  function shortClauseAround(wordEl, blockText) {
-    var word = (wordEl.getAttribute('data-learn-src') || wordEl.textContent || '').trim();
-    if (!word || !blockText) return '';
-    var text = String(blockText).replace(/\s+/g, ' ').trim();
-    var lower = text.toLowerCase();
-    var needle = word.toLowerCase();
-    var at = lower.indexOf(needle);
-    if (at < 0) return '';
-
-    var start = 0;
-    for (var i = at - 1; i >= 0; i--) {
-      var ch = text.charAt(i);
-      if (ch === '.' || ch === '!' || ch === '?' || ch === ';' || ch === '…') {
-        start = i + 1;
-        break;
-      }
-    }
-    var end = text.length;
-    for (var j = at + needle.length; j < text.length; j++) {
-      var ch2 = text.charAt(j);
-      if (ch2 === '.' || ch2 === '!' || ch2 === '?' || ch2 === ';' || ch2 === '…') {
-        end = j + 1;
-        break;
-      }
-    }
-    var clause = text.slice(start, end).replace(/\s+/g, ' ').trim();
-    var parts = clause.split(/\s+/);
-    if (parts.length <= 8) return clause;
-
-    // Mantém a palavra + poucas vizinhas (ideia curta).
-    var wIdx = -1;
-    for (var k = 0; k < parts.length; k++) {
-      if (parts[k].toLowerCase().replace(/[^\p{L}\p{N}'’-]/gu, '') === needle) {
-        wIdx = k;
-        break;
-      }
-    }
-    if (wIdx < 0) wIdx = 0;
-    var from = Math.max(0, wIdx - 3);
-    var to = Math.min(parts.length, from + 8);
-    from = Math.max(0, to - 8);
-    var slice = parts.slice(from, to).join(' ');
-    if (from > 0) slice = '…' + slice;
-    if (to < parts.length) slice = slice + '…';
-    return slice;
-  }
-
-  function showPhraseTip(wordEl) {
-    var g = glossary();
-    if (!g || !state.lang) return;
-
-    var src = (wordEl.getAttribute('data-learn-src') || '').trim();
-    if (!src) return;
-    var translated = g.lookup(src, state.lang) || '';
-
-    var block = wordEl.closest(
-      'p, li, h1, h2, h3, h4, h5, blockquote, td, th, .vida-quote, .vida-section-lead, .vida-lesson, figcaption'
-    );
-    var blockText =
-      (block && (block.getAttribute('data-learn-phrase-src') || block.textContent)) || '';
-    var clause = shortClauseAround(wordEl, blockText);
-    var idea = '';
-    if (clause && g.translatePhrase) {
-      idea = g.translatePhrase(clause, state.lang);
-      if (idea === clause) idea = '';
-    }
-
-    // Sem motivo para abrir tip se não há tradução da palavra nem ideia curta.
-    if (!translated && !idea) return;
-
-    var tip = ensureTip();
-    var langLabel = state.lang === 'es' ? 'Español' : 'English';
-    var wordLine = translated
-      ? '<p class="learn-phrase-tip-word"><span class="learn-phrase-tip-from"></span><span class="learn-phrase-tip-arrow" aria-hidden="true">→</span><span class="learn-phrase-tip-to"></span></p>'
-      : '';
-    var ideaLine = idea
-      ? '<p class="learn-phrase-tip-idea"><span class="learn-phrase-tip-idea-label"></span> <span class="learn-phrase-tip-idea-text"></span></p>'
-      : '';
-
-    tip.innerHTML =
-      '<strong class="learn-phrase-tip-lang"></strong>' + wordLine + ideaLine;
-    tip.querySelector('.learn-phrase-tip-lang').textContent = langLabel;
-    if (translated) {
-      tip.querySelector('.learn-phrase-tip-from').textContent = src;
-      tip.querySelector('.learn-phrase-tip-to').textContent = translated;
-    }
-    if (idea) {
-      tip.querySelector('.learn-phrase-tip-idea-label').textContent = t(
-        'pages.vida.learnIdeaLabel',
-        'Ideia'
-      );
-      tip.querySelector('.learn-phrase-tip-idea-text').textContent = idea;
-    }
-    tip.hidden = false;
-
-    var rect = wordEl.getBoundingClientRect();
-    var tipW = Math.min(320, global.innerWidth - 24);
-    var left = Math.max(12, Math.min(rect.left, global.innerWidth - tipW - 12));
-    var top = rect.bottom + 8;
-    if (top + 110 > global.innerHeight) top = Math.max(12, rect.top - 110);
-    tip.style.width = tipW + 'px';
-    tip.style.left = left + 'px';
-    tip.style.top = top + 'px';
-    tip.classList.add('is-visible');
-  }
-
-  function markPhraseSources(root) {
-    root
-      .querySelectorAll(
-        'p, li, h1, h2, h3, h4, h5, blockquote, td, th, .vida-quote, .vida-section-lead, .vida-lesson, figcaption'
-      )
-      .forEach(function (el) {
-        if (el.getAttribute('data-learn-phrase-src')) return;
-        if (el.closest('[data-learn-skip], .learn-toolbar, a.botao')) return;
-        var text = (el.textContent || '').replace(/\s+/g, ' ').trim();
-        if (text) el.setAttribute('data-learn-phrase-src', text);
-      });
-  }
-
   function splitWordChars(wordEl) {
     var text = wordEl.getAttribute('data-learn-src') || wordEl.textContent || '';
     wordEl.textContent = '';
@@ -276,7 +137,6 @@
       wordEl.textContent = target;
       wordEl.classList.add('is-translated');
       wordEl.classList.remove('is-sheen');
-      showPhraseTip(wordEl);
       return;
     }
 
@@ -315,7 +175,6 @@
           schedule(wordEl, function () {
             setPlainText(wordEl, target);
             wordEl.classList.add('is-translated');
-            showPhraseTip(wordEl);
           }, 20);
         }
       }, delay);
@@ -348,10 +207,7 @@
 
   function activateWord(wordEl) {
     if (!wordEl || !state.lang) return;
-    if (state.activeWord === wordEl) {
-      showPhraseTip(wordEl);
-      return;
-    }
+    if (state.activeWord === wordEl) return;
     if (state.activeWord) revertWord(state.activeWord);
     state.activeWord = wordEl;
     var src = wordEl.getAttribute('data-learn-src') || '';
@@ -359,7 +215,6 @@
     var translated = g ? g.lookup(src, state.lang) : '';
     if (!translated) {
       wordEl.classList.add('is-sheen', 'is-unknown');
-      showPhraseTip(wordEl);
       schedule(wordEl, function () {
         wordEl.classList.remove('is-sheen');
       }, 160);
@@ -400,7 +255,7 @@
     if (
       el.closest &&
       el.closest(
-        '.learn-toolbar, .learn-word, .learn-phrase-tip, a.botao, .vida-hero-actions, .vida-cta-row, .article-share, .voltar-link'
+        '.learn-toolbar, .learn-word, a.botao, .vida-hero-actions, .vida-cta-row, .article-share, .voltar-link'
       )
     ) {
       return true;
@@ -411,7 +266,6 @@
 
   function walk(root) {
     if (!root) return;
-    markPhraseSources(root);
     var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode: function (node) {
         var parent = node.parentNode;
@@ -546,8 +400,6 @@
     saveLang(next);
     state.activeWord = null;
     state.reducedMotion = prefersReducedMotion();
-    hideTip();
-
     if (!state.root && !state.scope) return;
 
     if (!next) {
@@ -637,7 +489,6 @@
       if (state.activeWord === leaving) {
         revertWord(leaving);
         state.activeWord = null;
-        hideTip();
       }
     }, 80);
   }
@@ -655,7 +506,6 @@
       if (state.activeWord === leaving) {
         revertWord(leaving);
         state.activeWord = null;
-        hideTip();
       }
     }, 80);
   }

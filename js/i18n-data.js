@@ -743,9 +743,8 @@ window.__I18N_LOCALES__ = {
         "exploreLead": "Lab tools to practice with (always with an adult).",
         "learnLabel": "Learn languages",
         "learnHintOff": "Choose English or Español — then pass over one word at a time.",
-        "learnHintEn": "Pass over a word: it turns into English. The tip shows only the word and a tiny idea.",
-        "learnHintEs": "Pass over a word: it turns into Spanish. The tip shows only the word and a tiny idea.",
-        "learnIdeaLabel": "Idea",
+        "learnHintEn": "Pass over a word: the gold sheen turns it into English.",
+        "learnHintEs": "Pass over a word: the gold sheen turns it into Spanish.",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
@@ -1523,9 +1522,8 @@ window.__I18N_LOCALES__ = {
         "exploreLead": "Herramientas del laboratorio para practicar (siempre con un adulto).",
         "learnLabel": "Aprender idiomas",
         "learnHintOff": "Elige English o Español — luego pasa por una palabra a la vez.",
-        "learnHintEn": "Pasa por una palabra: se vuelve English. El tip muestra solo la palabra y una idea corta.",
-        "learnHintEs": "Pasa por una palabra: se vuelve español. El tip muestra solo la palabra y una idea corta.",
-        "learnIdeaLabel": "Idea",
+        "learnHintEn": "Pasa por una palabra: el brillo dorado la traduce al inglés.",
+        "learnHintEs": "Pasa por una palabra: el brillo dorado la traduce al español.",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
@@ -2303,9 +2301,8 @@ window.__I18N_LOCALES__ = {
         "exploreLead": "Ferramentas do laboratório para praticar (sempre com um adulto).",
         "learnLabel": "Aprender idiomas",
         "learnHintOff": "Escolhe English ou Español — depois passa o rato/dedo por uma palavra de cada vez.",
-        "learnHintEn": "Passe numa palavra: ela vira English. O tip mostra só a palavra e uma ideia curtinha.",
-        "learnHintEs": "Passe numa palavra: ela vira español. O tip mostra só a palavra e uma ideia curtinha.",
-        "learnIdeaLabel": "Ideia",
+        "learnHintEn": "Passe numa palavra: o brilho dourado traduz para English.",
+        "learnHintEs": "Passe numa palavra: o brilho dourado traduz para español.",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {

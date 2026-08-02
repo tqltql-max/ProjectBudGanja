@@ -180,83 +180,6 @@ body.learn-mode-active .learn-mode-on {
     overflow: hidden;
 }
 
-.learn-phrase-tip {
-    position: fixed;
-    z-index: 1200;
-    max-width: min(20rem, calc(100% - 1.5rem));
-    box-sizing: border-box;
-    padding: 0.75rem 0.9rem 0.85rem;
-    border-radius: 14px;
-    border: 1px solid rgba(223, 194, 98, 0.45);
-    background: rgba(12, 18, 8, 0.96);
-    color: #f4edd8;
-    font-size: 1.05rem;
-    line-height: 1.35;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
-    pointer-events: none;
-    opacity: 0;
-    transform: translateY(4px);
-    transition: opacity 0.15s ease, transform 0.15s ease;
-}
-
-.learn-phrase-tip.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.learn-phrase-tip-lang {
-    display: block;
-    margin: 0 0 0.4rem;
-    color: #dfc262;
-    font-size: 0.78rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
-.learn-phrase-tip-word {
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.4rem 0.55rem;
-    font-family: "Fraunces", Georgia, "Times New Roman", serif;
-    font-size: clamp(1.45rem, 4.5vw, 1.85rem);
-    font-weight: 700;
-    line-height: 1.15;
-}
-
-.learn-phrase-tip-from {
-    color: rgba(244, 237, 216, 0.72);
-    font-weight: 600;
-}
-
-.learn-phrase-tip-arrow {
-    color: rgba(223, 194, 98, 0.75);
-    font-weight: 700;
-    font-size: 0.9em;
-}
-
-.learn-phrase-tip-to {
-    color: #f0d060;
-}
-
-.learn-phrase-tip-idea {
-    margin: 0.5rem 0 0;
-    padding-top: 0.45rem;
-    border-top: 1px solid rgba(223, 194, 98, 0.22);
-    font-size: 1rem;
-    line-height: 1.4;
-    color: rgba(244, 237, 216, 0.82);
-}
-
-.learn-phrase-tip-idea-label {
-    color: #dfc262;
-    font-weight: 800;
-    font-size: 0.78rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-}
-
 @keyframes learnWordSheen {
     0% { background-position: 0% 50%; }
     100% { background-position: 100% 50%; }
@@ -264,8 +187,7 @@ body.learn-mode-active .learn-mode-on {
 
 @media (prefers-reduced-motion: reduce) {
     .learn-word.is-sheen,
-    .learn-word.is-translated,
-    .learn-phrase-tip {
+    .learn-word.is-translated {
         animation: none !important;
         transition: none !important;
         filter: none;
