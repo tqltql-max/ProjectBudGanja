@@ -1,0 +1,63 @@
+{
+  "updatedAt": "2026-08-02T03:00:00.000Z",
+  "cultivos": [
+    {
+      "id": "tomatinho-cereja",
+      "slug": "tomatinho-cereja",
+      "name": "Tomatinho Cereja",
+      "nameEn": "Cherry Tomato",
+      "nameEs": "Tomate Cherry",
+      "scientificName": "Solanum lycopersicum var. cerasiforme",
+      "status": "em-inspecao",
+      "statusLabel": "Em inspeção",
+      "statusLabelEn": "Under inspection",
+      "statusLabelEs": "En inspección",
+      "plantedAt": "2026-07-20",
+      "cover": "/imagens/plantas/tomatinho-cereja-cover.jpg",
+      "summary": "Primeiro cultivo inspecionado pelo Inspetor BudGanja. Aqui as crianças só leem a história — quem cultiva é o laboratório (e adultos no diário de pesquisas).",
+      "summaryEn": "First crop inspected by Inspetor BudGanja. Kids only read the story here — growing is for the lab (and adults in the research diary).",
+      "summaryEs": "Primer cultivo inspeccionado por el Inspetor BudGanja. Aquí los niños solo leen la historia — cultivar es del laboratorio (y adultos en el diario de investigación).",
+      "inspector": "Inspetor BudGanja",
+      "plantHref": "/plantas/tomatinho-cereja/",
+      "inspectionHref": "/posts/post-inspecao-planta-tomatinho-cereja.html",
+      "entries": [
+        {
+          "date": "2026-07-20",
+          "phase": "Semente",
+          "phaseEn": "Seed",
+          "phaseEs": "Semilla",
+          "title": "A sementinha chega ao laboratório",
+          "titleEn": "The little seed arrives at the lab",
+          "titleEs": "La semillita llega al laboratorio",
+          "body": "O Inspetor encontrou sementes de Tomatinho Cereja. Com a Dona Maria, preparou uma cama fofinha de Super Solo e marcou o dia no diário: começa a inspeção do primeiro cultivo da Sementinha.",
+          "bodyEn": "The Inspector found Cherry Tomato seeds. With Dona Maria, he prepared a soft Super Soil bed and logged the day: the first Little Seed crop inspection begins.",
+          "bodyEs": "El Inspector encontró semillas de Tomate Cherry. Con Dona Maria preparó una cama mullida de Super Suelo y anotó el día: comienza la inspección del primer cultivo de la Semillita."
+        },
+        {
+          "date": "2026-07-25",
+          "phase": "Brotinho",
+          "phaseEn": "Sprout",
+          "phaseEs": "Brotito",
+          "title": "Primeiras folhinhas",
+          "titleEn": "First little leaves",
+          "titleEs": "Primeras hojitas",
+          "body": "Apareceram as folhas cotiledonares. O Inspetor mediu a luz com o Luxímetro; a Joaninha Joana vigiou as folhas contra «monstros» (pulgões). Água com carinho — sem encharcar.",
+          "bodyEn": "Cotyledon leaves appeared. The Inspector measured light with the Lux meter; Joaninha Joana watched the leaves for «monsters» (aphids). Water with care — no flooding.",
+          "bodyEs": "Aparecieron las hojas cotiledóneas. El Inspector midió la luz con el Luxímetro; Joaninha Joana vigiló las hojas contra «monstruos» (pulgones). Agua con cariño — sin encharcar."
+        },
+        {
+          "date": "2026-08-01",
+          "phase": "Plantinha",
+          "phaseEn": "Little plant",
+          "phaseEs": "Plantita",
+          "title": "Caule firme e folhas novas",
+          "titleEn": "Firm stem and new leaves",
+          "titleEs": "Tallo firme y hojas nuevas",
+          "body": "O Tomatinho já tem folhas verdadeiras. O Passarinho Amarelo registrou a altura no diário; o Verde lembrou a rotina de água. Ainda não há frutos — a inspeção continua com paciência e ciência.",
+          "bodyEn": "The Cherry Tomato already has true leaves. Yellow Bird logged the height; Green Bird reminded the water routine. No fruit yet — the inspection continues with patience and science.",
+          "bodyEs": "El Tomate Cherry ya tiene hojas verdaderas. El Pajarito Amarillo anotó la altura; el Verde recordó la rutina de agua. Aún no hay frutos — la inspección sigue con paciencia y ciencia."
+        }
+      ]
+    }
+  ]
+}

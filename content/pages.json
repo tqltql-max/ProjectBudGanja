@@ -2,7 +2,7 @@
   "index.html": {
     "id": "index.html",
     "label": "Início",
-    "updatedAt": "2026-08-02T03:42:49.806Z",
+    "updatedAt": "2026-08-02T03:55:23.374Z",
     "title": "Início | Inspetor BudGanja",
     "metaDescription": "Inspetor BudGanja — plantas medicinais do Brasil, curso UNIFESP, inspeções, ferramentas e BudGanja Radio.",
     "ogTitle": "Inspetor BudGanja",
@@ -16,7 +16,7 @@
   "entrar.html": {
     "id": "entrar.html",
     "label": "Entrar",
-    "updatedAt": "2026-08-02T03:42:49.810Z",
+    "updatedAt": "2026-08-02T03:55:23.378Z",
     "title": "Entrar | Inspetor BudGanja",
     "metaDescription": "Entre com Google ou conta local para iniciar o onboarding progressivo e activar a sua conta no laboratório.",
     "ogTitle": "Entrar | Inspetor BudGanja",
@@ -30,7 +30,7 @@
   "perfil.html": {
     "id": "perfil.html",
     "label": "Meu perfil",
-    "updatedAt": "2026-08-02T03:42:49.811Z",
+    "updatedAt": "2026-08-02T03:55:23.379Z",
     "title": "Minha conta | Inspetor BudGanja",
     "metaDescription": "Minha conta — dados de acesso e perfil no Inspetor BudGanja.",
     "ogTitle": "Minha conta | Inspetor BudGanja",
@@ -44,7 +44,7 @@
   "radio/index.html": {
     "id": "radio/index.html",
     "label": "Rádio",
-    "updatedAt": "2026-08-02T03:42:49.811Z",
+    "updatedAt": "2026-08-02T03:55:23.379Z",
     "title": "BudGanja Radio | Inspetor BudGanja",
     "metaDescription": "BudGanja Radio — playlist do laboratório Inspetor BudGanja para ouvir enquanto cultiva.",
     "ogTitle": "BudGanja Radio | Inspetor BudGanja",
@@ -58,7 +58,7 @@
   "vida/index.html": {
     "id": "vida/index.html",
     "label": "Vida",
-    "updatedAt": "2026-08-02T03:42:49.812Z",
+    "updatedAt": "2026-08-02T03:55:23.379Z",
     "title": "Vida — O Laboratório e a Sementinha | Inspetor BudGanja",
     "metaDescription": "Vida — conto familiar do Laboratório BudGanja: o Inspetor, a Dona Maria e os amigos ensinam a cuidar de plantas com ciência, natureza e amizade.",
     "ogTitle": "Vida | Inspetor BudGanja",
@@ -73,21 +73,21 @@
     "id": "vida/diario/index.html",
     "label": "Diário da Sementinha",
     "title": "Diário da Sementinha | Inspetor BudGanja",
-    "metaDescription": "Diário da Sementinha — cuide da sua planta-pet: água, comida e sono. Atividade familiar do Laboratório BudGanja.",
+    "metaDescription": "Diário da Sementinha — história dos cultivos inspecionados pelo Inspetor BudGanja. Primeiro: Tomatinho Cereja. Só leitura.",
     "ogTitle": "Diário da Sementinha | Inspetor BudGanja",
-    "ogDescription": "Planta-pet para crianças: dar água, comida e pôr a dormir — sempre com um adulto.",
+    "ogDescription": "História dos cultivos inspecionados pelo Inspetor. Crianças leem — não cultivam. Primeiro: Tomatinho Cereja.",
     "ogImage": "/imagens/og-default.jpg",
     "headExtra": "",
-    "body": "<main id=\"main-content\" class=\"conteudo vida-page vida-diario-page\">\n        <div class=\"vida-atmosphere\" aria-hidden=\"true\"></div>\n\n        <header class=\"vida-hero vida-diario-hero\">\n            <p class=\"vida-hero-brand\" data-i18n=\"pages.vidaDiario.brand\">Inspetor BudGanja · Vida</p>\n            <h1 data-i18n=\"pages.vidaDiario.title\">Diário da Sementinha</h1>\n            <p class=\"vida-hero-sub\" data-i18n=\"pages.vidaDiario.subtitle\">A sua planta-pet: dê água, comida e coloque para dormir — sempre com um adulto.</p>\n            <div class=\"vida-hero-actions\">\n                <a class=\"botao botao-home botao-home--secondary\" href=\"/vida/\" data-i18n=\"pages.vidaDiario.backVida\">Voltar à Vida</a>\n            </div>\n        </header>\n\n        <aside class=\"vida-section vida-note\" role=\"note\">\n            <strong data-i18n=\"pages.vidaDiario.noteTitle\">Atividade familiar.</strong>\n            <span data-i18n=\"pages.vidaDiario.noteBody\"> O progresso fica só neste aparelho. Não é o diário de pesquisas para adultos.</span>\n        </aside>\n\n        <section class=\"vd-stage\" aria-label=\"Planta-pet\">\n            <div class=\"vd-sky\" id=\"vd-sky\" aria-hidden=\"true\"></div>\n            <div class=\"vd-pet-wrap\">\n                <p class=\"vd-speech\" id=\"vd-speech\" aria-live=\"polite\"></p>\n                <div class=\"vd-pet\" id=\"vd-pet\" data-phase=\"seed\" aria-hidden=\"true\">\n                    <div class=\"vd-fx vd-fx-drops\" id=\"vd-fx-drops\"></div>\n                    <div class=\"vd-fx vd-fx-food\" id=\"vd-fx-food\"></div>\n                    <div class=\"vd-fx vd-fx-zzz\" id=\"vd-fx-zzz\"></div>\n                    <div class=\"vd-pot\">\n                        <div class=\"vd-pot-rim\"></div>\n                        <div class=\"vd-soil\"></div>\n                        <div class=\"vd-plant\">\n                            <div class=\"vd-seed\"></div>\n                            <div class=\"vd-sprout\">\n                                <span class=\"vd-stem\"></span>\n                                <span class=\"vd-leaf vd-leaf-l\"></span>\n                                <span class=\"vd-leaf vd-leaf-r\"></span>\n                            </div>\n                            <div class=\"vd-bush\">\n                                <span class=\"vd-stem vd-stem-tall\"></span>\n                                <span class=\"vd-canopy\"></span>\n                                <span class=\"vd-face\" aria-hidden=\"true\">\n                                    <i class=\"vd-eye\"></i><i class=\"vd-eye\"></i>\n                                    <i class=\"vd-mouth\"></i>\n                                </span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <label class=\"vd-name-field\">\n                    <span data-i18n=\"pages.vidaDiario.nameLabel\">Nome da planta</span>\n                    <input type=\"text\" id=\"vd-name\" maxlength=\"24\" autocomplete=\"off\" spellcheck=\"false\">\n                </label>\n                <p class=\"vd-phase-label\" id=\"vd-phase-label\"></p>\n            </div>\n\n            <div class=\"vd-needs\" id=\"vd-needs\" aria-label=\"Necessidades\">\n                <div class=\"vd-need\" data-need=\"water\">\n                    <span class=\"vd-need-icon\" aria-hidden=\"true\">💧</span>\n                    <span class=\"vd-need-label\" data-i18n=\"pages.vidaDiario.needWater\">Água</span>\n                    <div class=\"vd-bar\"><i id=\"vd-bar-water\"></i></div>\n                </div>\n                <div class=\"vd-need\" data-need=\"food\">\n                    <span class=\"vd-need-icon\" aria-hidden=\"true\">🍃</span>\n                    <span class=\"vd-need-label\" data-i18n=\"pages.vidaDiario.needFood\">Comida</span>\n                    <div class=\"vd-bar\"><i id=\"vd-bar-food\"></i></div>\n                </div>\n                <div class=\"vd-need\" data-need=\"energy\">\n                    <span class=\"vd-need-icon\" aria-hidden=\"true\">😴</span>\n                    <span class=\"vd-need-label\" data-i18n=\"pages.vidaDiario.needEnergy\">Energia</span>\n                    <div class=\"vd-bar\"><i id=\"vd-bar-energy\"></i></div>\n                </div>\n                <div class=\"vd-need\" data-need=\"mood\">\n                    <span class=\"vd-need-icon\" aria-hidden=\"true\">💛</span>\n                    <span class=\"vd-need-label\" data-i18n=\"pages.vidaDiario.needMood\">Humor</span>\n                    <div class=\"vd-bar\"><i id=\"vd-bar-mood\"></i></div>\n                </div>\n            </div>\n\n            <div class=\"vd-actions\" role=\"group\" aria-label=\"Cuidados\">\n                <button type=\"button\" class=\"vd-action\" id=\"vd-water\" data-action=\"water\">\n                    <span class=\"vd-action-icon\" aria-hidden=\"true\">💧</span>\n                    <span data-i18n=\"pages.vidaDiario.actWater\">Dar água</span>\n                </button>\n                <button type=\"button\" class=\"vd-action\" id=\"vd-food\" data-action=\"food\">\n                    <span class=\"vd-action-icon\" aria-hidden=\"true\">🍃</span>\n                    <span data-i18n=\"pages.vidaDiario.actFood\">Dar comida</span>\n                </button>\n                <button type=\"button\" class=\"vd-action vd-action--sleep\" id=\"vd-sleep\" data-action=\"sleep\">\n                    <span class=\"vd-action-icon\" aria-hidden=\"true\">🌙</span>\n                    <span id=\"vd-sleep-label\" data-i18n=\"pages.vidaDiario.actSleep\">Dormir</span>\n                </button>\n            </div>\n\n            <div class=\"vd-notify\" id=\"vd-notify\">\n                <button type=\"button\" class=\"vd-notify-btn\" id=\"vd-notify-toggle\" aria-pressed=\"false\">\n                    <span class=\"vd-notify-icon\" aria-hidden=\"true\">🔔</span>\n                    <span id=\"vd-notify-label\" data-i18n=\"pages.vidaDiario.notifyOff\">Lembretes desligados</span>\n                </button>\n                <p class=\"vd-notify-hint\" data-i18n=\"pages.vidaDiario.notifyHint\">Com um adulto: active para avisar quando for hora de água, comida ou dormir.</p>\n            </div>\n        </section>\n\n        <section class=\"vida-section vd-log-section\" aria-labelledby=\"vd-log-title\">\n            <h2 id=\"vd-log-title\" data-i18n=\"pages.vidaDiario.logTitle\">O que fizemos juntos</h2>\n            <ol class=\"vd-log\" id=\"vd-log\"></ol>\n        </section>\n\n        <footer class=\"vd-footer\">\n            <button type=\"button\" class=\"vd-foot-btn\" id=\"vd-export\" data-i18n=\"pages.vidaDiario.export\">Exportar</button>\n            <button type=\"button\" class=\"vd-foot-btn\" id=\"vd-reset\" data-i18n=\"pages.vidaDiario.reset\">Apagar deste aparelho</button>\n            <a class=\"vd-foot-link\" href=\"/cultivo/\" data-i18n=\"pages.vidaDiario.adultLink\">Diário de pesquisas para adultos</a>\n        </footer>\n    </main>",
+    "body": "<main id=\"main-content\" class=\"conteudo vida-page vida-diario-page\">\n        <div class=\"vida-atmosphere\" aria-hidden=\"true\"></div>\n\n        <header class=\"vida-hero vida-diario-hero\">\n            <p class=\"vida-hero-brand\" data-i18n=\"pages.vidaDiario.brand\">Inspetor BudGanja · Vida</p>\n            <h1 data-i18n=\"pages.vidaDiario.title\">Diário da Sementinha</h1>\n            <p class=\"vida-hero-sub\" data-i18n=\"pages.vidaDiario.subtitle\">História dos cultivos que o Inspetor BudGanja inspeciona no laboratório — para ler em família.</p>\n            <div class=\"vida-hero-actions\">\n                <a class=\"botao botao-home botao-home--secondary\" href=\"/vida/\" data-i18n=\"pages.vidaDiario.backVida\">Voltar à Vida</a>\n            </div>\n        </header>\n\n        <aside class=\"vida-section vida-note\" role=\"note\">\n            <strong data-i18n=\"pages.vidaDiario.noteTitle\">Só leitura.</strong>\n            <span data-i18n=\"pages.vidaDiario.noteBody\"> Crianças não cultivam aqui — leem a história das inspeções. Cultivar fica no diário de pesquisas, com um adulto.</span>\n        </aside>\n\n        <section class=\"vida-section vd-feature-section\" id=\"vd-feature\" aria-labelledby=\"vd-feature-title\">\n            <p class=\"vd-feature-eyebrow\" id=\"vd-feature-eyebrow\" data-i18n=\"pages.vidaDiario.featureEyebrow\">Inspeção em curso</p>\n            <h2 id=\"vd-feature-title\">Tomatinho Cereja</h2>\n            <p class=\"vd-feature-sci\" id=\"vd-feature-sci\">Solanum lycopersicum var. cerasiforme</p>\n            <p class=\"vd-feature-summary\" id=\"vd-feature-summary\">Primeiro cultivo inspecionado pelo Inspetor BudGanja no Diário da Sementinha.</p>\n            <figure class=\"vd-feature-art\" id=\"vd-feature-art\">\n                <img id=\"vd-feature-img\" src=\"/imagens/plantas/tomatinho-cereja-cover.jpg\" alt=\"Tomatinho Cereja\" width=\"1200\" height=\"630\" decoding=\"async\">\n            </figure>\n            <div class=\"vd-feature-actions\" id=\"vd-feature-actions\">\n                <a class=\"botao botao-home botao-home--secondary\" href=\"/posts/post-inspecao-planta-tomatinho-cereja.html\" data-i18n=\"pages.vidaDiario.openInspection\">Abrir inspeção completa</a>\n            </div>\n        </section>\n\n        <section class=\"vida-section vd-story-section\" aria-labelledby=\"vd-story-title\">\n            <h2 id=\"vd-story-title\" data-i18n=\"pages.vidaDiario.storyTitle\">A história</h2>\n            <p class=\"vida-section-lead\" data-i18n=\"pages.vidaDiario.storyLead\">Capítulos da inspeção — leia nos cards.</p>\n            <div class=\"vd-story-cards\" id=\"vd-story-cards\"></div>\n        </section>\n\n        <section class=\"vida-section vd-cultivos-section\" aria-labelledby=\"vd-cultivos-title\" hidden id=\"vd-more-wrap\">\n            <h2 id=\"vd-cultivos-title\" data-i18n=\"pages.vidaDiario.cultivosTitle\">Outros cultivos</h2>\n            <div class=\"vd-cultivos-list\" id=\"vd-cultivos-list\"></div>\n        </section>\n\n        <footer class=\"vd-footer\">\n            <a class=\"vd-foot-link\" href=\"/cultivo/\" data-i18n=\"pages.vidaDiario.adultLink\">Diário de pesquisas para adultos</a>\n        </footer>\n    </main>",
     "scripts": "<script src=\"/js/vida-diario.js?v=313\"></script>",
-    "updatedAt": "2026-08-02T03:42:49.812Z",
+    "updatedAt": "2026-08-02T03:55:23.379Z",
     "ogType": "website",
     "dataPage": "vida-diario"
   },
   "cultivo/index.html": {
     "id": "cultivo/index.html",
     "label": "Diário de Pesquisas",
-    "updatedAt": "2026-08-02T03:42:49.813Z",
+    "updatedAt": "2026-08-02T03:55:23.380Z",
     "title": "Diário de Pesquisas | Inspetor BudGanja",
     "metaDescription": "Diário de Pesquisas — documente o cultivo de qualquer planta e prepare publicações no Inspetor BudGanja.",
     "ogTitle": "Diário de Pesquisas | Inspetor BudGanja",
@@ -101,7 +101,7 @@
   "guia/cultivo-basico.html": {
     "id": "guia/cultivo-basico.html",
     "label": "Guia de Cultivo",
-    "updatedAt": "2026-08-02T03:42:49.813Z",
+    "updatedAt": "2026-08-02T03:55:23.380Z",
     "title": "Guia de Cultivo | Inspetor BudGanja",
     "metaDescription": "Redirecionamento — use o Diário de Pesquisas e a biblioteca de inspeções do Inspetor BudGanja.",
     "ogTitle": "Guia de Cultivo | Inspetor BudGanja",
@@ -115,7 +115,7 @@
   "videos/index.html": {
     "id": "videos/index.html",
     "label": "Últimos vídeos",
-    "updatedAt": "2026-08-02T03:42:49.814Z",
+    "updatedAt": "2026-08-02T03:55:23.380Z",
     "title": "Vídeos | Inspetor BudGanja",
     "metaDescription": "Assista aos vídeos do Inspetor BudGanja e às aulas dos canais MovReCam e CANABinALL — filtros por canal e série.",
     "ogTitle": "Vídeos | Inspetor BudGanja",
@@ -129,7 +129,7 @@
   "biblioteca/inspecoes/index.html": {
     "id": "biblioteca/inspecoes/index.html",
     "label": "Inspeções",
-    "updatedAt": "2026-08-02T03:42:49.814Z",
+    "updatedAt": "2026-08-02T03:55:23.381Z",
     "title": "Inspeções | Inspetor BudGanja",
     "metaDescription": "Relatórios de inspeção do Inspetor BudGanja: método verificável sobre cultivo, canais e formação — achados, medições e recomendações práticas.",
     "ogTitle": "Inspeções | Inspetor BudGanja",
@@ -143,7 +143,7 @@
   "biblioteca/unifesp/index.html": {
     "id": "biblioteca/unifesp/index.html",
     "label": "Curso UNIFESP",
-    "updatedAt": "2026-08-02T03:42:49.814Z",
+    "updatedAt": "2026-08-02T03:55:23.381Z",
     "title": "Curso UNIFESP | Inspetor BudGanja",
     "metaDescription": "Hub do XIV Curso UNIFESP sobre Cannabis sativa L. medicinal — vagas, carga horária, SIEX, certificado e ligação ao laboratório de fitoterapia.",
     "ogTitle": "Curso UNIFESP | Inspetor BudGanja",
@@ -157,7 +157,7 @@
   "info/sobre.html": {
     "id": "info/sobre.html",
     "label": "Sobre",
-    "updatedAt": "2026-08-02T03:42:49.814Z",
+    "updatedAt": "2026-08-02T03:55:23.381Z",
     "title": "Sobre | Inspetor BudGanja",
     "metaDescription": "Sobre o Inspetor BudGanja — laboratório digital de Tiago Queiroz Loureiro: plantas, animais, inspeções (palavras e legado), Feed Vivo, curso UNIFESP e ferramentas práticas.",
     "ogTitle": "Sobre | Inspetor BudGanja",
@@ -171,7 +171,7 @@
   "info/apresentacao-unifesp.html": {
     "id": "info/apresentacao-unifesp.html",
     "label": "Apresentação UNIFESP",
-    "updatedAt": "2026-08-02T03:42:49.815Z",
+    "updatedAt": "2026-08-02T03:55:23.381Z",
     "title": "Apresentação UNIFESP | Inspetor BudGanja",
     "metaDescription": "Apresentação institucional do Inspetor BudGanja à Reitoria e à coordenação do XIV Curso UNIFESP — laboratório educacional independente, com PDF para download.",
     "ogTitle": "Apresentação UNIFESP | Inspetor BudGanja",
@@ -185,7 +185,7 @@
   "info/contato.html": {
     "id": "info/contato.html",
     "label": "Contato",
-    "updatedAt": "2026-08-02T03:42:49.815Z",
+    "updatedAt": "2026-08-02T03:55:23.382Z",
     "title": "Contato | Inspetor BudGanja",
     "metaDescription": "Entre em contato com o Inspetor BudGanja — e-mail, canal YouTube e perguntas frequentes.",
     "ogTitle": "Contato | Inspetor BudGanja",
@@ -199,7 +199,7 @@
   "info/privacidade.html": {
     "id": "info/privacidade.html",
     "label": "Privacidade",
-    "updatedAt": "2026-08-02T03:42:49.815Z",
+    "updatedAt": "2026-08-02T03:55:23.382Z",
     "title": "Privacidade | Inspetor BudGanja",
     "metaDescription": "Política de privacidade do Inspetor BudGanja — como tratamos dados pessoais em sorteios e contato.",
     "ogTitle": "Privacidade | Inspetor BudGanja",
@@ -213,7 +213,7 @@
   "sorteios/index.html": {
     "id": "sorteios/index.html",
     "label": "Sorteios",
-    "updatedAt": "2026-08-02T03:42:49.815Z",
+    "updatedAt": "2026-08-02T03:55:23.382Z",
     "title": "Sorteios | Inspetor BudGanja",
     "metaDescription": "Sorteio de inauguração do Inspetor BudGanja — em breve, clonadora aeropônica caseira de baixo custo documentada no site.",
     "ogTitle": "Sorteios | Inspetor BudGanja",
@@ -227,7 +227,7 @@
   "comunidade/index.html": {
     "id": "comunidade/index.html",
     "label": "Comunidade",
-    "updatedAt": "2026-08-02T03:42:49.817Z",
+    "updatedAt": "2026-08-02T03:55:23.383Z",
     "title": "Feed Vivo | Inspetor BudGanja",
     "metaDescription": "Feed Vivo da comunidade Inspetor BudGanja — fotos e relatos de cultivo vegetal partilhados pelos cultivadores.",
     "ogTitle": "Feed Vivo | Inspetor BudGanja",
@@ -241,7 +241,7 @@
   "comunidade-admin.html": {
     "id": "comunidade-admin.html",
     "label": "Admin Comunidade",
-    "updatedAt": "2026-08-02T03:42:49.817Z",
+    "updatedAt": "2026-08-02T03:55:23.384Z",
     "title": "Admin Comunidade | Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Admin Comunidade | Inspetor BudGanja",
@@ -255,7 +255,7 @@
   "equipamentos/index.html": {
     "id": "equipamentos/index.html",
     "label": "Equipamentos",
-    "updatedAt": "2026-08-02T03:42:49.817Z",
+    "updatedAt": "2026-08-02T03:55:23.384Z",
     "title": "Equipamentos | Inspetor BudGanja",
     "metaDescription": "Clonadoras caseiras do Inspetor BudGanja — guias separados para 6 estacas (pote) e 12 estacas (balde com aspersores).",
     "ogTitle": "Equipamentos | Inspetor BudGanja",
@@ -269,7 +269,7 @@
   "pesquisas-admin.html": {
     "id": "pesquisas-admin.html",
     "label": "Admin submissões de pesquisas",
-    "updatedAt": "2026-08-02T03:42:49.818Z",
+    "updatedAt": "2026-08-02T03:55:23.384Z",
     "title": "Submissões de pesquisas | Admin Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Submissões de pesquisas | Admin Inspetor BudGanja",
@@ -283,7 +283,7 @@
   "usuarios-admin.html": {
     "id": "usuarios-admin.html",
     "label": "Admin utilizadores",
-    "updatedAt": "2026-08-02T03:42:49.818Z",
+    "updatedAt": "2026-08-02T03:55:23.384Z",
     "title": "Utilizadores | Admin Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Utilizadores | Admin Inspetor BudGanja",
@@ -297,7 +297,7 @@
   "biblioteca/pesquisas/index.html": {
     "id": "biblioteca/pesquisas/index.html",
     "label": "Pesquisas",
-    "updatedAt": "2026-08-02T03:42:49.818Z",
+    "updatedAt": "2026-08-02T03:55:23.385Z",
     "title": "Pesquisas | Inspetor BudGanja",
     "metaDescription": "Pesquisas do Inspetor BudGanja — estudos do laboratório e submissões aprovadas da comunidade.",
     "ogTitle": "Pesquisas | Inspetor BudGanja",
@@ -311,7 +311,7 @@
   "calculadoras/index.html": {
     "id": "calculadoras/index.html",
     "label": "Ferramentas",
-    "updatedAt": "2026-08-02T03:42:49.819Z",
+    "updatedAt": "2026-08-02T03:55:23.385Z",
     "title": "Ferramentas | Inspetor BudGanja",
     "metaDescription": "Ferramentas do Inspetor BudGanja — Super Calc, luxímetro e Super Solo.",
     "ogTitle": "Ferramentas | Inspetor BudGanja",
@@ -325,7 +325,7 @@
   "calculadoras/cultivo-lab.html": {
     "id": "calculadoras/cultivo-lab.html",
     "label": "Super Calc",
-    "updatedAt": "2026-08-02T03:42:49.819Z",
+    "updatedAt": "2026-08-02T03:55:23.385Z",
     "title": "Super Calculadora de Cultivo | Inspetor BudGanja",
     "metaDescription": "Super calculadora de cultivo — VPD, DLI, pH, EC, diluição, volume de vaso, W/m² e custo de energia numa só ferramenta.",
     "ogTitle": "Super Calculadora de Cultivo | Inspetor BudGanja",
@@ -339,7 +339,7 @@
   "calculadoras/luximetro.html": {
     "id": "calculadoras/luximetro.html",
     "label": "Luxímetro",
-    "updatedAt": "2026-08-02T03:42:49.819Z",
+    "updatedAt": "2026-08-02T03:55:23.386Z",
     "title": "Luxímetro | Inspetor BudGanja",
     "metaDescription": "Luxímetro do Inspetor BudGanja — meça a intensidade luminosa e estime PPFD usando a câmera do celular.",
     "ogTitle": "Luxímetro | Inspetor BudGanja",
@@ -353,7 +353,7 @@
   "calculadoras/super-solo.html": {
     "id": "calculadoras/super-solo.html",
     "label": "Super Solo",
-    "updatedAt": "2026-08-02T03:42:49.820Z",
+    "updatedAt": "2026-08-02T03:55:23.386Z",
     "title": "Super Solo | Inspetor BudGanja",
     "metaDescription": "Calcule dosagens de amendments (gramas e ml) para super solo orgânico a partir do volume de substrato.",
     "ogTitle": "Calculadora de Super Solo | Inspetor BudGanja",
@@ -367,7 +367,7 @@
   "equipamentos/clonadora-6-estacas.html": {
     "id": "equipamentos/clonadora-6-estacas.html",
     "label": "Guia: Clonadora 6 estacas",
-    "updatedAt": "2026-08-02T03:42:49.820Z",
+    "updatedAt": "2026-08-02T03:55:23.386Z",
     "title": "Guia: Clonadora de 6 estacas | Inspetor BudGanja",
     "metaDescription": "Guia da clonadora caseira de 6 estacas — pote de sorvete, bucha de louça e bombinha de ar 24 h.",
     "ogTitle": "Guia: Clonadora de 6 estacas | Inspetor BudGanja",
@@ -381,7 +381,7 @@
   "equipamentos/clonadora-12-estacas.html": {
     "id": "equipamentos/clonadora-12-estacas.html",
     "label": "Guia: Clonadora 12 estacas",
-    "updatedAt": "2026-08-02T03:42:49.820Z",
+    "updatedAt": "2026-08-02T03:55:23.387Z",
     "title": "Guia: Clonadora de 12 estacas | Inspetor BudGanja",
     "metaDescription": "Guia da clonadora caseira de 12 estacas — balde, bomba submersa, microaspersores e feltro. Água borrifada 24 h.",
     "ogTitle": "Guia: Clonadora de 12 estacas | Inspetor BudGanja",
@@ -395,7 +395,7 @@
   "equipamentos/manual-clonadora.html": {
     "id": "equipamentos/manual-clonadora.html",
     "label": "Manual: Clonadoras (redirecionamento)",
-    "updatedAt": "2026-08-02T03:42:49.821Z",
+    "updatedAt": "2026-08-02T03:55:23.387Z",
     "title": "Clonadoras | Inspetor BudGanja",
     "metaDescription": "Clonadoras caseiras do Inspetor BudGanja — guias separados para 6 e 12 estacas.",
     "ogTitle": "Clonadoras | Inspetor BudGanja",
@@ -409,7 +409,7 @@
   "equipamentos/manual-hidrocloradora.html": {
     "id": "equipamentos/manual-hidrocloradora.html",
     "label": "Manual: Clonadoras (redirecionamento)",
-    "updatedAt": "2026-08-02T03:42:49.821Z",
+    "updatedAt": "2026-08-02T03:55:23.387Z",
     "title": "Clonadora de 12 estacas | Inspetor BudGanja",
     "metaDescription": "Redirecionamento para o guia da clonadora de 12 estacas.",
     "ogTitle": "Clonadora de 12 estacas | Inspetor BudGanja",
@@ -423,7 +423,7 @@
   "admin-db.html": {
     "id": "admin-db.html",
     "label": "Admin Base de Dados",
-    "updatedAt": "2026-08-02T03:42:49.821Z",
+    "updatedAt": "2026-08-02T03:55:23.387Z",
     "title": "Painel BD | Inspetor BudGanja",
     "metaDescription": "",
     "ogTitle": "Painel BD | Inspetor BudGanja",
@@ -437,7 +437,7 @@
   "biblioteca/pesquisas/substratos.html": {
     "id": "biblioteca/pesquisas/substratos.html",
     "label": "Pesquisa: Substratos",
-    "updatedAt": "2026-08-02T03:42:49.821Z",
+    "updatedAt": "2026-08-02T03:55:23.388Z",
     "title": "Relatório: Otimização da Propagação Vegetal | Inspetor BudGanja",
     "metaDescription": "Relatório técnico: otimização da propagação vegetal via substratos biodegradáveis — Inspetor BudGanja.",
     "ogTitle": "Relatório: Propagação Vegetal | Inspetor BudGanja",

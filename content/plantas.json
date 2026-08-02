@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T22:30:03.870Z",
+  "updatedAt": "2026-08-02T03:55:19.416Z",
   "disclaimer": "Fichas educacionais de plantas fitoterápicas e medicinais do Brasil. Não substituem orientação profissional de saúde nem aconselhamento jurídico.",
   "plants": [
     {
@@ -1189,6 +1189,37 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/maracuja-fruta-cover.jpg",
+      "relatedInspections": []
+    },
+    {
+      "id": "tomatinho-cereja",
+      "slug": "tomatinho-cereja",
+      "nomePopular": "Tomatinho Cereja",
+      "nomeCientifico": "Solanum lycopersicum var. cerasiforme",
+      "familia": "Solanaceae",
+      "hubCategory": "fruto",
+      "summary": "Tomate cereja de cultivo familiar: fruto inteiro fresco vs molhos, ketchups e ultraprocessados «tomato». Primeiro cultivo publicado no Diário da Sementinha pelo Inspetor BudGanja.",
+      "partsUsed": [
+        "Fruto (inteiro / fresco)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto fresco em saladas e lanches",
+        "Culinária doméstica sem ultraprocessamento",
+        "Cultivo em vaso ou canteiro com acompanhamento familiar"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Folhas e partes verdes da planta não são alimento. Derivados industriais com açúcar, sal e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "cultivo-familiar",
+        "horta",
+        "solanaceae"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/tomatinho-cereja-cover.jpg",
       "relatedInspections": []
     }
   ]

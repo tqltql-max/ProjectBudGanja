@@ -1615,6 +1615,25 @@
     "seriesLabel": "Cúrcuma"
   },
   {
+    "title": "Inspeção: Fruto — Tomatinho Cereja — cultivo familiar e fruto fresco",
+    "titleEn": "Inspection: Fruit — Tomatinho Cereja — family growing and fresh fruit",
+    "titleEs": "Inspección: Fruto — Tomatinho Cereja — cultivo familiar y fruto fresco",
+    "excerpt": "Tomatinho cereja (*Solanum lycopersicum* var. *cerasiforme*) — primeiro cultivo do Diário da Sementinha: fruto fresco vs ultraprocessados «tomato».",
+    "excerptEn": "Cherry tomato (*Solanum lycopersicum* var. *cerasiforme*) — first Little Seed Diary crop: fresh fruit vs ultra-processed «tomato».",
+    "excerptEs": "Tomate cherry (*Solanum lycopersicum* var. *cerasiforme*) — primer cultivo del Diario de la Semillita: fruto fresco vs ultraprocesados «tomato».",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-planta-tomatinho-cereja",
+    "url": "/posts/post-inspecao-planta-tomatinho-cereja.html",
+    "date": "2026-07-31T14:00:00.000Z",
+    "filename": "posts/post-inspecao-planta-tomatinho-cereja.html",
+    "coverImage": "/imagens/plantas/tomatinho-cereja-cover.jpg",
+    "category": "inspecao",
+    "series": "plantas-frutos",
+    "seriesOrder": 14,
+    "seriesLabel": "Tomatinho Cereja · fruto"
+  },
+  {
     "title": "Inspeção: Raiva — a palavra vermelha da sala de comando",
     "titleEn": "Inspection: Raiva — the red word at the console (Anger)",
     "titleEs": "Inspección: Raiva — la palabra roja de la consola",

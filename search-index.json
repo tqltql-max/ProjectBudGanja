@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T03:38:43.481Z",
+  "updatedAt": "2026-08-02T03:55:26.913Z",
   "items": [
     {
       "title": "Início",
@@ -794,6 +794,12 @@
       "text": "Inspeção: Fruto — Maracujá (fruta) Relatório educacional de Maracujá (fruta) (*Passiflora edulis Sims): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja. inspecao ## Escopo\n\nInspeção educacional do **fruto** **Maracujá (fruta)** (*Passiflora edulis Sims*) a partir do catálogo de plantas do Inspetor BudGanja. Este relatório reúne a ficha pública com o método verificável do laboratório — **não** é protocolo clínico e **não substitui** orientação profissional de saúde.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/plantas/maracuja-fruta/](/plantas/maracuja-fruta/). Conteúdo apenas educacional.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Maracujá (fruta)** |\n| Nome científico | *Passiflora edulis Sims* |\n| Família | Passifloraceae |\n| Categoria no hub | Frutos |\n| Slug no catálogo | `maracuja-fruta` |\n| Data da inspeção | 2026-07-31 |\n\n## Resumo\n\nFruto de *P. edulis*: polpa fresca vs néctares e polpas industriais adoçadas — distinto da ficha medicinal de folhas (*P. incarnata*).\n\n## Partes usadas\n\n- Fruto (polpa / sumo natural)\n- Preparações culinárias de baixo processamento\n\n## Usos tradicionais (catálogo)\n\n- Consumo do fruto inteiro ou fresco\n- Culinária doméstica sem ultraprocessamento\n\n## Cuidados\n\nFruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.\n\n## Ficha do catálogo\n\nPágina completa: [Maracujá (fruta)](/plantas/maracuja-fruta/)\n\n## Hub\n\nVoltar às [inspeções de frutos](/biblioteca/inspecoes/#inspecoes-frutos).\n"
     },
     {
+      "title": "Inspeção: Fruto — Tomatinho Cereja — cultivo familiar e fruto fresco",
+      "url": "/posts/post-inspecao-planta-tomatinho-cereja.html",
+      "excerpt": "Tomatinho cereja (*Solanum lycopersicum* var. *cerasiforme*) — primeiro cultivo do Diário da Sementinha: fruto fresco vs ultraprocessados «tomato».",
+      "text": "Inspeção: Fruto — Tomatinho Cereja — cultivo familiar e fruto fresco Tomatinho cereja (*Solanum lycopersicum* var. *cerasiforme*) — primeiro cultivo do Diário da Sementinha: fruto fresco vs ultraprocessados «tomato». inspecao ## Escopo\n\nInspeção educacional do **fruto** **Tomatinho Cereja** (*Solanum lycopersicum var. cerasiforme*) a partir do catálogo de plantas do Inspetor BudGanja. Este relatório reúne a ficha pública com o método verificável do laboratório — **não** é protocolo clínico e **não substitui** orientação profissional de saúde.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/plantas/tomatinho-cereja/](/plantas/tomatinho-cereja/). Conteúdo apenas educacional.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Tomatinho Cereja** |\n| Nome científico | *Solanum lycopersicum var. cerasiforme* |\n| Família | Solanaceae |\n| Categoria no hub | Frutos |\n| Slug no catálogo | `tomatinho-cereja` |\n| Data da inspeção | 2026-07-31 |\n\n## Resumo\n\nTomate cereja de cultivo familiar: fruto inteiro fresco vs molhos, ketchups e ultraprocessados «tomato». Primeiro cultivo publicado no Diário da Sementinha pelo Inspetor BudGanja.\n\n## Partes usadas\n\n- Fruto (inteiro / fresco)\n- Preparações culinárias de baixo processamento\n\n## Usos tradicionais (catálogo)\n\n- Consumo do fruto fresco em saladas e lanches\n- Culinária doméstica sem ultraprocessamento\n- Cultivo em vaso ou canteiro com acompanhamento familiar\n\n## Cuidados\n\nFruto fresco é alimento comum. Folhas e partes verdes da planta não são alimento. Derivados industriais com açúcar, sal e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.\n\n\n## Identidade e etimologia\n\n**Tomate** vem do náuatle *tomatl*; **cereja** descreve o tamanho pequeno do cultivar. O binómio **Solanum lycopersicum** (família Solanaceae) agrupa os tomates cultivados; a variedade *cerasiforme* é o grupo dos tomates cereja.\n\n## Química e marca"
+    },
+    {
       "title": "Babosa (Aloe vera)",
       "url": "/plantas/babosa/",
       "excerpt": "Suculenta (*Aloe vera*) amplamente cultivada; gel foliar rico em polissacarídeos — tradição tópica; látex com antraquinonas (aloína) exige cautela na ingestão.",
@@ -1044,6 +1050,12 @@
       "url": "/plantas/maracuja-fruta/",
       "excerpt": "Fruto de *P. edulis*: polpa fresca vs néctares e polpas industriais adoçadas — distinto da ficha medicinal de folhas (*P. incarnata*).",
       "text": "Maracujá (fruta) Passiflora edulis Sims Passifloraceae Fruto de *P. edulis*: polpa fresca vs néctares e polpas industriais adoçadas — distinto da ficha medicinal de folhas (*P. incarnata*). alimento frutos frutifera culinaria polpa tropicais Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento planta fitoterapia medicinal"
+    },
+    {
+      "title": "Tomatinho Cereja (Solanum lycopersicum var. cerasiforme)",
+      "url": "/plantas/tomatinho-cereja/",
+      "excerpt": "Tomate cereja de cultivo familiar: fruto inteiro fresco vs molhos, ketchups e ultraprocessados «tomato». Primeiro cultivo publicado no Diário da Sementinha pelo Inspetor BudGanja.",
+      "text": "Tomatinho Cereja Solanum lycopersicum var. cerasiforme Solanaceae Tomate cereja de cultivo familiar: fruto inteiro fresco vs molhos, ketchups e ultraprocessados «tomato». Primeiro cultivo publicado no Diário da Sementinha pelo Inspetor BudGanja. alimento frutos frutifera culinaria cultivo-familiar horta solanaceae Consumo do fruto fresco em saladas e lanches Culinária doméstica sem ultraprocessamento Cultivo em vaso ou canteiro com acompanhamento familiar planta fitoterapia medicinal"
     },
     {
       "title": "Galinha (Gallus gallus domesticus)",

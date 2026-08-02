@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Diário da Sementinha — cuide da sua planta-pet: água, comida e sono. Atividade familiar do Laboratório BudGanja.">
+    <meta name="description" content="Diário da Sementinha — história dos cultivos inspecionados pelo Inspetor BudGanja. Primeiro: Tomatinho Cereja. Só leitura.">
     <meta property="og:title" content="Diário da Sementinha | Inspetor BudGanja">
-    <meta property="og:description" content="Planta-pet para crianças: dar água, comida e pôr a dormir — sempre com um adulto.">
+    <meta property="og:description" content="História dos cultivos inspecionados pelo Inspetor. Crianças leem — não cultivam. Primeiro: Tomatinho Cereja.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://inspetorbudganja.com.br/vida/diario/">
     <meta property="og:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
@@ -15,7 +15,7 @@
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Diário da Sementinha | Inspetor BudGanja">
-    <meta name="twitter:description" content="Planta-pet para crianças: dar água, comida e pôr a dormir — sempre com um adulto.">
+    <meta name="twitter:description" content="História dos cultivos inspecionados pelo Inspetor. Crianças leem — não cultivam. Primeiro: Tomatinho Cereja.">
     <meta name="twitter:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
     <link rel="canonical" href="https://inspetorbudganja.com.br/vida/diario/">
 
@@ -43,108 +43,42 @@
         <header class="vida-hero vida-diario-hero">
             <p class="vida-hero-brand" data-i18n="pages.vidaDiario.brand">Inspetor BudGanja · Vida</p>
             <h1 data-i18n="pages.vidaDiario.title">Diário da Sementinha</h1>
-            <p class="vida-hero-sub" data-i18n="pages.vidaDiario.subtitle">A sua planta-pet: dê água, comida e coloque para dormir — sempre com um adulto.</p>
+            <p class="vida-hero-sub" data-i18n="pages.vidaDiario.subtitle">História dos cultivos que o Inspetor BudGanja inspeciona no laboratório — para ler em família.</p>
             <div class="vida-hero-actions">
                 <a class="botao botao-home botao-home--secondary" href="/vida/" data-i18n="pages.vidaDiario.backVida">Voltar à Vida</a>
             </div>
         </header>
 
         <aside class="vida-section vida-note" role="note">
-            <strong data-i18n="pages.vidaDiario.noteTitle">Atividade familiar.</strong>
-            <span data-i18n="pages.vidaDiario.noteBody"> O progresso fica só neste aparelho. Não é o diário de pesquisas para adultos.</span>
+            <strong data-i18n="pages.vidaDiario.noteTitle">Só leitura.</strong>
+            <span data-i18n="pages.vidaDiario.noteBody"> Crianças não cultivam aqui — leem a história das inspeções. Cultivar fica no diário de pesquisas, com um adulto.</span>
         </aside>
 
-        <section class="vd-stage" aria-label="Planta-pet">
-            <div class="vd-sky" id="vd-sky" aria-hidden="true"></div>
-            <div class="vd-pet-wrap">
-                <p class="vd-speech" id="vd-speech" aria-live="polite"></p>
-                <div class="vd-pet" id="vd-pet" data-phase="seed" aria-hidden="true">
-                    <div class="vd-fx vd-fx-drops" id="vd-fx-drops"></div>
-                    <div class="vd-fx vd-fx-food" id="vd-fx-food"></div>
-                    <div class="vd-fx vd-fx-zzz" id="vd-fx-zzz"></div>
-                    <div class="vd-pot">
-                        <div class="vd-pot-rim"></div>
-                        <div class="vd-soil"></div>
-                        <div class="vd-plant">
-                            <div class="vd-seed"></div>
-                            <div class="vd-sprout">
-                                <span class="vd-stem"></span>
-                                <span class="vd-leaf vd-leaf-l"></span>
-                                <span class="vd-leaf vd-leaf-r"></span>
-                            </div>
-                            <div class="vd-bush">
-                                <span class="vd-stem vd-stem-tall"></span>
-                                <span class="vd-canopy"></span>
-                                <span class="vd-face" aria-hidden="true">
-                                    <i class="vd-eye"></i><i class="vd-eye"></i>
-                                    <i class="vd-mouth"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <label class="vd-name-field">
-                    <span data-i18n="pages.vidaDiario.nameLabel">Nome da planta</span>
-                    <input type="text" id="vd-name" maxlength="24" autocomplete="off" spellcheck="false">
-                </label>
-                <p class="vd-phase-label" id="vd-phase-label"></p>
-            </div>
-
-            <div class="vd-needs" id="vd-needs" aria-label="Necessidades">
-                <div class="vd-need" data-need="water">
-                    <span class="vd-need-icon" aria-hidden="true">💧</span>
-                    <span class="vd-need-label" data-i18n="pages.vidaDiario.needWater">Água</span>
-                    <div class="vd-bar"><i id="vd-bar-water"></i></div>
-                </div>
-                <div class="vd-need" data-need="food">
-                    <span class="vd-need-icon" aria-hidden="true">🍃</span>
-                    <span class="vd-need-label" data-i18n="pages.vidaDiario.needFood">Comida</span>
-                    <div class="vd-bar"><i id="vd-bar-food"></i></div>
-                </div>
-                <div class="vd-need" data-need="energy">
-                    <span class="vd-need-icon" aria-hidden="true">😴</span>
-                    <span class="vd-need-label" data-i18n="pages.vidaDiario.needEnergy">Energia</span>
-                    <div class="vd-bar"><i id="vd-bar-energy"></i></div>
-                </div>
-                <div class="vd-need" data-need="mood">
-                    <span class="vd-need-icon" aria-hidden="true">💛</span>
-                    <span class="vd-need-label" data-i18n="pages.vidaDiario.needMood">Humor</span>
-                    <div class="vd-bar"><i id="vd-bar-mood"></i></div>
-                </div>
-            </div>
-
-            <div class="vd-actions" role="group" aria-label="Cuidados">
-                <button type="button" class="vd-action" id="vd-water" data-action="water">
-                    <span class="vd-action-icon" aria-hidden="true">💧</span>
-                    <span data-i18n="pages.vidaDiario.actWater">Dar água</span>
-                </button>
-                <button type="button" class="vd-action" id="vd-food" data-action="food">
-                    <span class="vd-action-icon" aria-hidden="true">🍃</span>
-                    <span data-i18n="pages.vidaDiario.actFood">Dar comida</span>
-                </button>
-                <button type="button" class="vd-action vd-action--sleep" id="vd-sleep" data-action="sleep">
-                    <span class="vd-action-icon" aria-hidden="true">🌙</span>
-                    <span id="vd-sleep-label" data-i18n="pages.vidaDiario.actSleep">Dormir</span>
-                </button>
-            </div>
-
-            <div class="vd-notify" id="vd-notify">
-                <button type="button" class="vd-notify-btn" id="vd-notify-toggle" aria-pressed="false">
-                    <span class="vd-notify-icon" aria-hidden="true">🔔</span>
-                    <span id="vd-notify-label" data-i18n="pages.vidaDiario.notifyOff">Lembretes desligados</span>
-                </button>
-                <p class="vd-notify-hint" data-i18n="pages.vidaDiario.notifyHint">Com um adulto: active para avisar quando for hora de água, comida ou dormir.</p>
+        <section class="vida-section vd-feature-section" id="vd-feature" aria-labelledby="vd-feature-title">
+            <p class="vd-feature-eyebrow" id="vd-feature-eyebrow" data-i18n="pages.vidaDiario.featureEyebrow">Inspeção em curso</p>
+            <h2 id="vd-feature-title">Tomatinho Cereja</h2>
+            <p class="vd-feature-sci" id="vd-feature-sci">Solanum lycopersicum var. cerasiforme</p>
+            <p class="vd-feature-summary" id="vd-feature-summary">Primeiro cultivo inspecionado pelo Inspetor BudGanja no Diário da Sementinha.</p>
+            <figure class="vd-feature-art" id="vd-feature-art">
+                <img id="vd-feature-img" src="/imagens/plantas/tomatinho-cereja-cover.jpg" alt="Tomatinho Cereja" width="1200" height="630" decoding="async">
+            </figure>
+            <div class="vd-feature-actions" id="vd-feature-actions">
+                <a class="botao botao-home botao-home--secondary" href="/posts/post-inspecao-planta-tomatinho-cereja.html" data-i18n="pages.vidaDiario.openInspection">Abrir inspeção completa</a>
             </div>
         </section>
 
-        <section class="vida-section vd-log-section" aria-labelledby="vd-log-title">
-            <h2 id="vd-log-title" data-i18n="pages.vidaDiario.logTitle">O que fizemos juntos</h2>
-            <ol class="vd-log" id="vd-log"></ol>
+        <section class="vida-section vd-story-section" aria-labelledby="vd-story-title">
+            <h2 id="vd-story-title" data-i18n="pages.vidaDiario.storyTitle">A história</h2>
+            <p class="vida-section-lead" data-i18n="pages.vidaDiario.storyLead">Capítulos da inspeção — leia nos cards.</p>
+            <div class="vd-story-cards" id="vd-story-cards"></div>
+        </section>
+
+        <section class="vida-section vd-cultivos-section" aria-labelledby="vd-cultivos-title" hidden id="vd-more-wrap">
+            <h2 id="vd-cultivos-title" data-i18n="pages.vidaDiario.cultivosTitle">Outros cultivos</h2>
+            <div class="vd-cultivos-list" id="vd-cultivos-list"></div>
         </section>
 
         <footer class="vd-footer">
-            <button type="button" class="vd-foot-btn" id="vd-export" data-i18n="pages.vidaDiario.export">Exportar</button>
-            <button type="button" class="vd-foot-btn" id="vd-reset" data-i18n="pages.vidaDiario.reset">Apagar deste aparelho</button>
             <a class="vd-foot-link" href="/cultivo/" data-i18n="pages.vidaDiario.adultLink">Diário de pesquisas para adultos</a>
         </footer>
     </main>
