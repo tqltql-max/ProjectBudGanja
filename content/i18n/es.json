@@ -788,11 +788,13 @@
       "learnHintEn": "Pasa por una palabra: el brillo dorado la traduce al inglés.",
       "learnHintEs": "Pasa por una palabra: el brillo dorado la traduce al español.",
       "docTitle": "Vida | Inspetor BudGanja",
-      "learnHintOn": "Pasa por una palabra: el brillo dorado la traduce al {lang}. Subrayado punteado = sin traducción. Rojo sólido = palabra peligrosa; ámbar discontinuo = uso cauteloso — el significado aparece al pasar el ratón.",
+      "learnHintOn": "Pasa por una palabra: el brillo dorado la traduce al {lang}. Subrayado punteado = sin traducción. Rojo sólido = palabra peligrosa (común + lectura BudGanja); ámbar discontinuo = uso cauteloso — el significado aparece al pasar el ratón.",
       "learnNoTranslation": "Sin traducción en este idioma",
       "learnOpenLink": "Doble clic para abrir la referencia",
       "learnToneDanger": "Palabra peligrosa — usar con cuidado",
       "learnToneCaution": "Uso cauteloso",
+      "learnMundane": "Común",
+      "learnLabGloss": "BudGanja",
       "ctaDiary": "Diario de la Semillita"
     },
     "about": {

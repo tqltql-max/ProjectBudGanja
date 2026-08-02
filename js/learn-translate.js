@@ -270,9 +270,35 @@
     return (entry && entry.gloss) || '';
   }
 
-  function buildWordTip(src, known, gloss, tone) {
+  function wordMundane(g, src) {
+    if (!g || !src) return '';
+    if (typeof g.mundaneOf === 'function') return g.mundaneOf(src) || '';
+    var entry = typeof g.findEntry === 'function' ? g.findEntry(src) : null;
+    return (entry && entry.mundane) || '';
+  }
+
+  function wordCategory(g, src) {
+    if (!g || !src) return '';
+    if (typeof g.categoryOf === 'function') return g.categoryOf(src) || '';
+    var entry = typeof g.findEntry === 'function' ? g.findEntry(src) : null;
+    return (entry && entry.category) || '';
+  }
+
+  function mundaneLabel() {
+    return t('pages.vida.learnMundane', 'Comum');
+  }
+
+  function labGlossLabel() {
+    return t('pages.vida.learnLabGloss', 'BudGanja');
+  }
+
+  function buildWordTip(src, known, gloss, tone, mundane, category) {
     var parts = [];
-    if (gloss) parts.push(gloss);
+    if (category) parts.push(category);
+    if (mundane) parts.push(mundaneLabel() + ': ' + mundane);
+    if (gloss) {
+      parts.push(mundane ? labGlossLabel() + ': ' + gloss : gloss);
+    }
     if (tone === 'danger') parts.push(toneDangerLabel());
     else if (tone === 'caution') parts.push(toneCautionLabel());
     if (!known) parts.push(noTranslationLabel());
@@ -291,6 +317,8 @@
     var known = wordHasTranslation(g, src);
     var tone = wordTone(g, src);
     var gloss = wordGloss(g, src);
+    var mundane = wordMundane(g, src);
+    var category = wordCategory(g, src);
     var href = wordHref(g, src);
     span.classList.toggle('learn-word--known', known);
     span.classList.toggle('learn-word--unknown', !known);
@@ -300,9 +328,13 @@
     else span.removeAttribute('data-learn-tone');
     if (gloss) span.setAttribute('data-learn-gloss', gloss);
     else span.removeAttribute('data-learn-gloss');
+    if (mundane) span.setAttribute('data-learn-mundane', mundane);
+    else span.removeAttribute('data-learn-mundane');
+    if (category) span.setAttribute('data-learn-category', category);
+    else span.removeAttribute('data-learn-category');
     if (href) span.setAttribute('data-learn-href', href);
     else span.removeAttribute('data-learn-href');
-    var tip = buildWordTip(src, known, gloss, tone);
+    var tip = buildWordTip(src, known, gloss, tone, mundane, category);
     if (href) {
       tip = (tip ? tip + ' · ' : '') + t('pages.vida.learnOpenLink', 'Duplo clique para abrir a referência');
     }
@@ -328,7 +360,9 @@
     var translated = g ? g.lookup(src, state.lang, true) : '';
     var tone = wordTone(g, src);
     var gloss = wordGloss(g, src);
-    var tip = buildWordTip(src, !!translated, gloss, tone);
+    var mundane = wordMundane(g, src);
+    var category = wordCategory(g, src);
+    var tip = buildWordTip(src, !!translated, gloss, tone, mundane, category);
     if (!translated) {
       wordEl.classList.add('is-sheen', 'is-unknown', 'learn-word--unknown');
       wordEl.classList.remove('learn-word--known');

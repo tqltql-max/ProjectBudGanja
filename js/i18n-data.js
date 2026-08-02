@@ -790,11 +790,13 @@ window.__I18N_LOCALES__ = {
         "learnHintEn": "Pass over a word: the gold sheen turns it into English.",
         "learnHintEs": "Pass over a word: the gold sheen turns it into Spanish.",
         "docTitle": "Vida | Inspetor BudGanja",
-        "learnHintOn": "Pass over a word: the gold sheen turns it into {lang}. Dotted underline = no translation. Solid red = dangerous word; amber dashed = use with care — meaning shows on hover.",
+        "learnHintOn": "Pass over a word: the gold sheen turns it into {lang}. Dotted underline = no translation. Solid red = dangerous word (everyday + BudGanja reading); amber dashed = use with care — meaning shows on hover.",
         "learnNoTranslation": "No translation in this language",
         "learnOpenLink": "Double-click to open the reference",
         "learnToneDanger": "Dangerous word — use with care",
         "learnToneCaution": "Use with caution",
+        "learnMundane": "Everyday",
+        "learnLabGloss": "BudGanja",
         "ctaDiary": "Little Seed Diary"
       },
       "about": {
@@ -1685,11 +1687,13 @@ window.__I18N_LOCALES__ = {
         "learnHintEn": "Pasa por una palabra: el brillo dorado la traduce al inglés.",
         "learnHintEs": "Pasa por una palabra: el brillo dorado la traduce al español.",
         "docTitle": "Vida | Inspetor BudGanja",
-        "learnHintOn": "Pasa por una palabra: el brillo dorado la traduce al {lang}. Subrayado punteado = sin traducción. Rojo sólido = palabra peligrosa; ámbar discontinuo = uso cauteloso — el significado aparece al pasar el ratón.",
+        "learnHintOn": "Pasa por una palabra: el brillo dorado la traduce al {lang}. Subrayado punteado = sin traducción. Rojo sólido = palabra peligrosa (común + lectura BudGanja); ámbar discontinuo = uso cauteloso — el significado aparece al pasar el ratón.",
         "learnNoTranslation": "Sin traducción en este idioma",
         "learnOpenLink": "Doble clic para abrir la referencia",
         "learnToneDanger": "Palabra peligrosa — usar con cuidado",
         "learnToneCaution": "Uso cauteloso",
+        "learnMundane": "Común",
+        "learnLabGloss": "BudGanja",
         "ctaDiary": "Diario de la Semillita"
       },
       "about": {
@@ -2580,11 +2584,13 @@ window.__I18N_LOCALES__ = {
         "learnHintEn": "Passe numa palavra: o brilho dourado traduz para English.",
         "learnHintEs": "Passe numa palavra: o brilho dourado traduz para español.",
         "docTitle": "Vida | Inspetor BudGanja",
-        "learnHintOn": "Passe numa palavra: o brilho dourado traduz para {lang}. Traço pontilhado = sem tradução. Traço sólido vermelho = palavra perigosa; tracejado âmbar = uso cauteloso — o significado aparece ao passar o rato.",
+        "learnHintOn": "Passe numa palavra: o brilho dourado traduz para {lang}. Traço pontilhado = sem tradução. Traço sólido vermelho = palavra perigosa (comum + leitura BudGanja); tracejado âmbar = uso cauteloso — o significado aparece ao passar o rato.",
         "learnNoTranslation": "Sem tradução neste idioma",
         "learnOpenLink": "Duplo clique para abrir a referência",
         "learnToneDanger": "Palavra perigosa — uso com cuidado",
         "learnToneCaution": "Uso cauteloso",
+        "learnMundane": "Comum",
+        "learnLabGloss": "BudGanja",
         "ctaDiary": "Diário da Sementinha"
       },
       "about": {
