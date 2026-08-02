@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '312';
+const ASSET_V = '313';
 
 let deferredInstallPrompt = null;
 let installFloatingBtn = null;
@@ -1467,10 +1467,40 @@ function buildHeaderHTML(site, authState) {
     '<ul id="site-search-results" class="site-search-results"></ul>' +
     '</div>';
 
-  // Cluster: rádio + idioma (no mobile ficam juntos ao centro).
+  // Cluster: rádio + plantas + animais + idioma (no mobile ficam juntos ao centro).
+  const plantsQuickLink =
+    '<a href="/plantas/" class="header-quick-link header-quick-link--plants header-plants-link"' +
+    ' data-active-prefixes="/plantas"' +
+    ' data-tip="' + escapeNavText(i18n('nav.quickPlantsTip', 'Catálogo de plantas fitoterápicas do Brasil')) + '"' +
+    ' aria-label="' + escapeNavText(i18n('nav.plants', 'Plantas')) + '"' +
+    ' title="' + escapeNavText(i18n('nav.plants', 'Plantas')) + '">' +
+    '<span class="header-quick-link-icon" aria-hidden="true">' +
+    '<svg class="header-plants-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+    '<path d="M12 22V11"></path>' +
+    '<path d="M12 11c-3.5-1.5-6-5-6-9 4 0 7.5 2.5 9 6"></path>' +
+    '<path d="M12 11c3.5-1.5 6-5 6-9-4 0-7.5 2.5-9 6"></path>' +
+    '</svg></span></a>';
+
+  const animalsQuickLink =
+    '<a href="/animais/" class="header-quick-link header-quick-link--animals header-animals-link"' +
+    ' data-active-prefixes="/animais"' +
+    ' data-tip="' + escapeNavText(i18n('nav.quickAnimalsTip', 'Catálogo de animais: criação, companhia e derivados industriais')) + '"' +
+    ' aria-label="' + escapeNavText(i18n('nav.animals', 'Animais')) + '"' +
+    ' title="' + escapeNavText(i18n('nav.animals', 'Animais')) + '">' +
+    '<span class="header-quick-link-icon" aria-hidden="true">' +
+    '<svg class="header-animals-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+    '<path d="M11 5c-.5-1.5-1.5-3-3.5-3S4 4 4 6.5 5.5 10 8 10"></path>' +
+    '<path d="M13 5c.5-1.5 1.5-3 3.5-3S20 4 20 6.5 18.5 10 16 10"></path>' +
+    '<path d="M8 10c-2 1-3.5 3-3.5 5.5S6.5 20 10 20h4c3.5 0 5.5-2 5.5-4.5S18 11 16 10"></path>' +
+    '<circle cx="9.5" cy="14" r="0.8" fill="currentColor" stroke="none"></circle>' +
+    '<circle cx="14.5" cy="14" r="0.8" fill="currentColor" stroke="none"></circle>' +
+    '</svg></span></a>';
+
   const radioLangCluster =
     '<div class="header-cluster header-cluster--community-lang">' +
     '<div id="header-radio-host" class="header-radio-host"></div>' +
+    plantsQuickLink +
+    animalsQuickLink +
     buildLangSwitcherHTML('header') +
     '</div>';
 

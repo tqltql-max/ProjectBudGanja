@@ -705,7 +705,8 @@
       "statsAria": "Lab summary",
       "tasksEyebrow": "Global tasks",
       "tasksTitle": "Scheduled tasks across all diaries",
-      "hideTasks": "Hide tasks"
+      "hideTasks": "Hide tasks",
+      "publishVidas": "Publish Vidas"
     },
     "community": {
       "eyebrow": "Community",

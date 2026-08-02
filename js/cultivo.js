@@ -1999,7 +1999,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       setCommunityModalStatus('');
       showCommunityShareForm();
       const communityTitle = document.getElementById('cultivo-community-modal-title');
-      if (communityTitle) communityTitle.textContent = 'Publicar na comunidade';
+      if (communityTitle) {
+        communityTitle.textContent = (window.BudGanjaI18n && typeof window.BudGanjaI18n.t === 'function')
+          ? window.BudGanjaI18n.t('pages.cultivo.publishVidas', 'Publicar Vidas')
+          : 'Publicar Vidas';
+      }
     }
     if (id === 'cultivo-metric-modal') {
       if (activeMetricInput && typeof activeMetricInput.blur === 'function') {
@@ -3023,7 +3027,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         return (
           '<button type="button" class="botao botao-outline botao-sm perfil-grow-entry-share"' +
           ' data-entry-id="' + escapeHtml(entry.id) + '"' +
-          ' data-photo-url="' + escapeHtml(url) + '">Publicar na comunidade</button>'
+          ' data-photo-url="' + escapeHtml(url) + '">' +
+          ((window.BudGanjaI18n && typeof window.BudGanjaI18n.t === 'function')
+            ? window.BudGanjaI18n.t('pages.cultivo.publishVidas', 'Publicar Vidas')
+            : 'Publicar Vidas') +
+          '</button>'
         );
       }).join('') +
       '</div>'
@@ -3120,7 +3128,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     setCommunityModalStatus('');
     showCommunityShareForm();
     const title = document.getElementById('cultivo-community-modal-title');
-    if (title) title.textContent = 'Publicar na comunidade';
+    if (title) {
+      title.textContent = (window.BudGanjaI18n && typeof window.BudGanjaI18n.t === 'function')
+        ? window.BudGanjaI18n.t('pages.cultivo.publishVidas', 'Publicar Vidas')
+        : 'Publicar Vidas';
+    }
   }
 
   function openCommunityShareModal(log, entry, photoUrl) {

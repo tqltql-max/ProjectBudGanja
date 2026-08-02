@@ -707,7 +707,8 @@ window.__I18N_LOCALES__ = {
         "statsAria": "Lab summary",
         "tasksEyebrow": "Global tasks",
         "tasksTitle": "Scheduled tasks across all diaries",
-        "hideTasks": "Hide tasks"
+        "hideTasks": "Hide tasks",
+        "publishVidas": "Publish Vidas"
       },
       "community": {
         "eyebrow": "Community",
@@ -1553,7 +1554,8 @@ window.__I18N_LOCALES__ = {
         "statsAria": "Resumen del laboratorio",
         "tasksEyebrow": "Tareas globales",
         "tasksTitle": "Tareas programadas de todos los diarios",
-        "hideTasks": "Ocultar tareas"
+        "hideTasks": "Ocultar tareas",
+        "publishVidas": "Publicar Vidas"
       },
       "community": {
         "eyebrow": "Comunidad",
@@ -2399,7 +2401,8 @@ window.__I18N_LOCALES__ = {
         "statsAria": "Resumo do laboratório",
         "tasksEyebrow": "Tarefas globais",
         "tasksTitle": "Tarefas agendadas de todos os diários",
-        "hideTasks": "Ocultar tarefas"
+        "hideTasks": "Ocultar tarefas",
+        "publishVidas": "Publicar Vidas"
       },
       "community": {
         "eyebrow": "Comunidade",
