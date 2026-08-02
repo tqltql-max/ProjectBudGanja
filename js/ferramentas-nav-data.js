@@ -47,6 +47,15 @@ window.__BIBLIOTECA_NAV__ = {
           "description": "Conto familiar: cuidar de plantas com ciência, natureza e amizade."
         },
         {
+          "label": "Sala de aula",
+          "tileLabel": "Sala",
+          "href": "/vida/sala/",
+          "icon": "📘",
+          "slug": "sala-aula",
+          "featured": true,
+          "description": "Aulas curtas para crianças: plantas, palavras e perguntas."
+        },
+        {
           "label": "Guias",
           "tileLabel": "Guias",
           "icon": "📚",
@@ -859,6 +868,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-copaiba",
               "description": "*Copaifera langsdorffii* — óleo-resina amazônica; β-cariofileno e ácidos copaíbicos na tradição tópica e oral."
+            },
+            {
+              "label": "Inspeção: Animal — a palavra do alento, do vivo e do duplo sentido",
+              "tileLabel": "Inspeção: Animal — a palavra do…",
+              "href": "/posts/post-inspecao-palavra-animal.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-animal",
+              "description": "Palavras: «animal» (latim *anima* → *animal*) — ser vivo, catálogo Animais e o segundo sentido social (insulto / intensificador); elo com coelho."
             },
             {
               "label": "Inspeção: Planta — Andiroba — limonoides e óleo amazônico",

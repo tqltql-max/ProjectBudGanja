@@ -557,11 +557,13 @@
       }
     }
 
-    if (page === 'vida') {
-      var vida = document.querySelector('#main-content');
-      if (vida) {
-        vida.setAttribute('data-learn-root', '');
-        return vida;
+    if (page === 'vida' || page === 'sala' || page === 'sala-aula') {
+      var salaRoot = document.querySelector('[data-learn-root]');
+      if (salaRoot) return salaRoot;
+      var main = document.querySelector('#main-content');
+      if (main && page === 'vida') {
+        main.setAttribute('data-learn-root', '');
+        return main;
       }
     }
 
@@ -585,18 +587,11 @@
     root.insertBefore(state.toolbar, root.firstChild);
   }
 
-  function init() {
-    var root = resolveRoot();
-    if (!root) return;
+  var bound = false;
+  var localeBound = false;
 
-    state.root = root;
-    state.scope = document.getElementById('main-content') || root;
-    state.reducedMotion = prefersReducedMotion();
-    state.toolbar = buildToolbar();
-    placeToolbar(root);
-
-    state.toolbar.addEventListener('click', onToolbarClick);
-    // Eventos no main: cobre corpo + títulos do hero/header.
+  function bindScopeEvents() {
+    if (!state.scope || bound) return;
     state.scope.addEventListener('pointerover', onPointerOver);
     state.scope.addEventListener('pointerout', onPointerOut);
     state.scope.addEventListener('pointerdown', onPointerDown);
@@ -607,26 +602,63 @@
     state.scope.addEventListener('cut', onCopyCutPaste);
     state.scope.addEventListener('paste', onCopyCutPaste);
     state.scope.addEventListener('contextmenu', onContextMenu);
+    bound = true;
+  }
 
-    global.addEventListener('budganja:locale-change', function () {
-      if (state.lang) {
-        var keep = state.lang;
-        state.lang = '';
-        unwrapAll();
-        state.lang = keep;
-        if (document.querySelector('[data-post-body]')) {
-          var pt = forcePtPostBody();
-          if (pt) state.root = pt;
-          forcePtTitles();
+  function mount(root) {
+    if (!root) return false;
+    state.root = root;
+    state.scope = document.getElementById('main-content') || root;
+    state.reducedMotion = prefersReducedMotion();
+
+    if (!state.toolbar) {
+      state.toolbar = buildToolbar();
+      state.toolbar.addEventListener('click', onToolbarClick);
+    }
+    if (!state.toolbar.isConnected) placeToolbar(root);
+
+    bindScopeEvents();
+
+    if (!localeBound) {
+      global.addEventListener('budganja:locale-change', function () {
+        if (state.lang) {
+          var keep = state.lang;
+          state.lang = '';
+          unwrapAll();
+          state.lang = keep;
+          if (document.querySelector('[data-post-body]')) {
+            var pt = forcePtPostBody();
+            if (pt) state.root = pt;
+            forcePtTitles();
+          }
+          walkAll();
         }
-        walkAll();
-      }
-      syncToolbar();
-    });
+        syncToolbar();
+      });
+      localeBound = true;
+    }
 
-    var initial = loadLang();
-    if (initial) setLang(initial);
-    else syncToolbar();
+    var initial = state.lang || loadLang();
+    if (initial) {
+      state.lang = '';
+      setLang(initial);
+    } else {
+      syncToolbar();
+    }
+    return true;
+  }
+
+  function init() {
+    mount(resolveRoot());
+  }
+
+  function remount() {
+    var root = document.querySelector('[data-learn-root]') || resolveRoot();
+    if (!root) return false;
+    // Se o DOM da aula foi reinjetado, o toolbar antigo pode ter sido apagado.
+    if (state.toolbar && !state.toolbar.isConnected) state.toolbar = null;
+    bound = false;
+    return mount(root);
   }
 
   if (document.readyState === 'loading') {
@@ -639,6 +671,7 @@
     setLang: setLang,
     getLang: function () {
       return state.lang;
-    }
+    },
+    remount: remount
   };
 })(typeof window !== 'undefined' ? window : globalThis);

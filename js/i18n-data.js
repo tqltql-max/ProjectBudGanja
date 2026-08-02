@@ -745,6 +745,7 @@ window.__I18N_LOCALES__ = {
         "learnHintOff": "Choose English or Español — then pass over one word at a time.",
         "learnHintEn": "Pass over a word: the gold sheen turns it into English.",
         "learnHintEs": "Pass over a word: the gold sheen turns it into Spanish.",
+        "ctaClassroom": "Enter the classroom",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
@@ -1524,6 +1525,7 @@ window.__I18N_LOCALES__ = {
         "learnHintOff": "Elige English o Español — luego pasa por una palabra a la vez.",
         "learnHintEn": "Pasa por una palabra: el brillo dorado la traduce al inglés.",
         "learnHintEs": "Pasa por una palabra: el brillo dorado la traduce al español.",
+        "ctaClassroom": "Entrar al aula",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
@@ -2303,6 +2305,7 @@ window.__I18N_LOCALES__ = {
         "learnHintOff": "Escolhe English ou Español — depois passa o rato/dedo por uma palavra de cada vez.",
         "learnHintEn": "Passe numa palavra: o brilho dourado traduz para English.",
         "learnHintEs": "Passe numa palavra: o brilho dourado traduz para español.",
+        "ctaClassroom": "Entrar na sala de aula",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
