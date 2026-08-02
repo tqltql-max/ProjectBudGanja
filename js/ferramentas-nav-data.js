@@ -47,15 +47,6 @@ window.__BIBLIOTECA_NAV__ = {
           "description": "Conto familiar: cuidar de plantas com ciência, natureza e amizade."
         },
         {
-          "label": "Sala de aula",
-          "tileLabel": "Sala",
-          "href": "/vida/sala/",
-          "icon": "📘",
-          "slug": "sala-aula",
-          "featured": true,
-          "description": "Aulas curtas para crianças: plantas, palavras e perguntas."
-        },
-        {
           "label": "Guias",
           "tileLabel": "Guias",
           "icon": "📚",

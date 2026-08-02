@@ -86,9 +86,6 @@ function stampHtml(content) {
   // Modo Aprender: Vida + inspeções (conto, personagens, palavras…).
   const wantsLearn =
     /data-page="vida"/.test(next) ||
-    /data-page="sala"/.test(next) ||
-    /data-page="sala-aula"/.test(next) ||
-    /data-page="sala-video"/.test(next) ||
     /data-page="inspecao"/.test(next) ||
     /data-post-slug="inspecao-/.test(next);
   if (wantsLearn && !next.includes('learn-translate.js')) {

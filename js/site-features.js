@@ -734,7 +734,7 @@
     btn.addEventListener('click', function () {
       var id = btn.getAttribute('data-youtube-id') || '';
       // Home / sala de vídeo: play in-page com som (sem mute) + legendas CC.
-      if (btn.closest('.home-vida-embed, .sala-video-embed')) {
+      if (btn.closest('.home-vida-embed')) {
         loadYoutubeFacade(btn, true);
         return;
       }
