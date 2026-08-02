@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T03:55:19.416Z",
+  "updatedAt": "2026-08-02T04:35:35.636Z",
   "disclaimer": "Fichas educacionais de plantas fitoterápicas e medicinais do Brasil. Não substituem orientação profissional de saúde nem aconselhamento jurídico.",
   "plants": [
     {
@@ -1091,7 +1091,7 @@
         "Consumo do fruto inteiro ou fresco",
         "Culinária doméstica sem ultraprocessamento"
       ],
-      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "cautions": "Fruto fresco e amêndoa merecem contexto. Chocolate industrial, achocolatados e snacks com açúcar, farinha e leite entram na série Produtos nocivos (hub chocolate). Conteúdo educacional — não substitui orientação profissional.",
       "tags": [
         "alimento",
         "frutos",
@@ -1103,7 +1103,32 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/cacau-cover.jpg",
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-chocolate.html",
+          "label": "Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite",
+          "labelEn": "Inspection: Industrial chocolate — cacao, sugar, flour and milk",
+          "labelEs": "Inspección: Chocolate industrial — cacao, azúcar, harina y leche"
+        },
+        {
+          "href": "/posts/post-inspecao-derivado-cana-de-acucar.html",
+          "label": "Inspeção: Cana-de-açúcar / açúcares livres",
+          "labelEn": "Inspection: Sugarcane / free sugars",
+          "labelEs": "Inspección: Caña de azúcar / azúcares libres"
+        },
+        {
+          "href": "/posts/post-inspecao-derivado-gluten.html",
+          "label": "Inspeção: Glúten / farinha",
+          "labelEn": "Inspection: Gluten / flour",
+          "labelEs": "Inspección: Gluten / harina"
+        },
+        {
+          "href": "/posts/post-inspecao-derivado-caseina.html",
+          "label": "Inspeção: Caseína / leite",
+          "labelEn": "Inspection: Casein / milk",
+          "labelEs": "Inspección: Caseína / leche"
+        }
+      ]
     },
     {
       "id": "uva",

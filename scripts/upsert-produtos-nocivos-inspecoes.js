@@ -9,7 +9,8 @@ const fs = require('fs');
 const path = require('path');
 const {
   buildCaseinaPost,
-  buildGlutenPost
+  buildGlutenPost,
+  buildChocolatePost
 } = require('../lib/produtos-nocivos-inspecoes-posts.js');
 
 const ROOT = path.join(__dirname, '..');
@@ -17,6 +18,7 @@ const POSTS_FILE = path.join(ROOT, 'posts.json');
 const I18N_FILE = path.join(ROOT, 'content', 'post-i18n.json');
 const SUG_FILE = path.join(ROOT, 'content', 'inspecoes-sugestoes.json');
 const ANIMAIS_FILE = path.join(ROOT, 'content', 'animais.json');
+const PLANTAS_FILE = path.join(ROOT, 'content', 'plantas.json');
 
 function upsertPost(posts, post) {
   const idx = posts.findIndex((p) => p.slug === post.slug);
@@ -61,7 +63,7 @@ function upsertSug(items, entry) {
 }
 
 async function main() {
-  const built = [buildCaseinaPost(), buildGlutenPost()];
+  const built = [buildCaseinaPost(), buildGlutenPost(), buildChocolatePost()];
 
   const posts = JSON.parse(fs.readFileSync(POSTS_FILE, 'utf8'));
   built.forEach((post) => upsertPost(posts, post));
@@ -104,6 +106,21 @@ async function main() {
       doneHref: '/posts/post-inspecao-derivado-gluten.html',
       seriesHint: 'plantas-derivados-risco'
     });
+    upsertSug(items, {
+      id: 'derivado-chocolate',
+      title: 'Chocolate industrial — cacau, açúcar, farinha e leite',
+      titleEn: 'Industrial chocolate — cacao, sugar, flour and milk',
+      titleEs: 'Chocolate industrial — cacao, azúcar, harina y leche',
+      tipo: 'derivado',
+      priority: 1,
+      status: 'feita',
+      why: 'Hub Produtos nocivos: chocolate junta cacau, açúcar, farinha/glúten e caseína.',
+      whyEn: 'Harmful-products hub: chocolate joins cacao, sugar, flour/gluten and casein.',
+      whyEs: 'Hub Productos nocivos: el chocolate junta cacao, azúcar, harina/gluten y caseína.',
+      suggestedSlug: 'inspecao-derivado-chocolate',
+      doneHref: '/posts/post-inspecao-derivado-chocolate.html',
+      seriesHint: 'plantas-derivados-risco'
+    });
     sug.items = items;
     sug.updatedAt = new Date().toISOString();
     fs.writeFileSync(SUG_FILE, JSON.stringify(sug, null, 2) + '\n', 'utf8');
@@ -132,6 +149,45 @@ async function main() {
       catalog.updatedAt = new Date().toISOString();
       fs.writeFileSync(ANIMAIS_FILE, JSON.stringify(catalog, null, 2) + '\n', 'utf8');
       console.log('Elo relatedInspections em animais.json → vaca');
+    }
+  }
+
+  if (fs.existsSync(PLANTAS_FILE)) {
+    const catalog = JSON.parse(fs.readFileSync(PLANTAS_FILE, 'utf8'));
+    const plants = Array.isArray(catalog.plants) ? catalog.plants : [];
+    const cacau = plants.find((p) => p && p.slug === 'cacau');
+    if (cacau) {
+      cacau.relatedInspections = [
+        {
+          href: '/posts/post-inspecao-derivado-chocolate.html',
+          label: 'Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite',
+          labelEn: 'Inspection: Industrial chocolate — cacao, sugar, flour and milk',
+          labelEs: 'Inspección: Chocolate industrial — cacao, azúcar, harina y leche'
+        },
+        {
+          href: '/posts/post-inspecao-derivado-cana-de-acucar.html',
+          label: 'Inspeção: Cana-de-açúcar / açúcares livres',
+          labelEn: 'Inspection: Sugarcane / free sugars',
+          labelEs: 'Inspección: Caña de azúcar / azúcares libres'
+        },
+        {
+          href: '/posts/post-inspecao-derivado-gluten.html',
+          label: 'Inspeção: Glúten / farinha',
+          labelEn: 'Inspection: Gluten / flour',
+          labelEs: 'Inspección: Gluten / harina'
+        },
+        {
+          href: '/posts/post-inspecao-derivado-caseina.html',
+          label: 'Inspeção: Caseína / leite',
+          labelEn: 'Inspection: Casein / milk',
+          labelEs: 'Inspección: Caseína / leche'
+        }
+      ];
+      cacau.cautions =
+        'Fruto fresco e amêndoa merecem contexto. Chocolate industrial, achocolatados e snacks com açúcar, farinha e leite entram na série Produtos nocivos (hub chocolate). Conteúdo educacional — não substitui orientação profissional.';
+      catalog.updatedAt = new Date().toISOString();
+      fs.writeFileSync(PLANTAS_FILE, JSON.stringify(catalog, null, 2) + '\n', 'utf8');
+      console.log('Elo relatedInspections em plantas.json → cacau');
     }
   }
 

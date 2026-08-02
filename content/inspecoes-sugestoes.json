@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T04:32:33.351Z",
+  "updatedAt": "2026-08-02T04:36:03.870Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2046,6 +2046,21 @@
       "whyEs": "Producto nocivo: gluten — celiaquía, sensibilidad y ultraprocesados de harina.",
       "suggestedSlug": "inspecao-derivado-gluten",
       "doneHref": "/posts/post-inspecao-derivado-gluten.html",
+      "seriesHint": "plantas-derivados-risco"
+    },
+    {
+      "id": "derivado-chocolate",
+      "title": "Chocolate industrial — cacau, açúcar, farinha e leite",
+      "titleEn": "Industrial chocolate — cacao, sugar, flour and milk",
+      "titleEs": "Chocolate industrial — cacao, azúcar, harina y leche",
+      "tipo": "derivado",
+      "priority": 1,
+      "status": "feita",
+      "why": "Hub Produtos nocivos: chocolate junta cacau, açúcar, farinha/glúten e caseína.",
+      "whyEn": "Harmful-products hub: chocolate joins cacao, sugar, flour/gluten and casein.",
+      "whyEs": "Hub Productos nocivos: el chocolate junta cacao, azúcar, harina/gluten y caseína.",
+      "suggestedSlug": "inspecao-derivado-chocolate",
+      "doneHref": "/posts/post-inspecao-derivado-chocolate.html",
       "seriesHint": "plantas-derivados-risco"
     }
   ]

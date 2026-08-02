@@ -798,12 +798,12 @@
     "seriesLabel": "Canal CANABinALL"
   },
   {
-    "title": "Inspeção: Glúten — trigo e proteína nociva ao organismo",
-    "titleEn": "Inspection: Gluten — wheat and a protein harmful to the body",
-    "titleEs": "Inspección: Gluten — trigo y proteína nociva para el organismo",
-    "excerpt": "Produtos nocivos: glúten do trigo — celíaca, sensibilidade e ultraprocessados de farinha versus cereal tradicional. Elo com caseína e açúcares livres.",
-    "excerptEn": "Harmful products: wheat gluten — celiac disease, sensitivity and ultra-processed flour versus traditional grain. Links casein and free sugars.",
-    "excerptEs": "Productos nocivos: gluten del trigo — celiaquía, sensibilidad y ultraprocesados de harina frente al cereal tradicional. Vínculo con caseína y azúcares libres.",
+    "title": "Inspeção: Glúten / farinha — trigo e proteína nociva ao organismo",
+    "titleEn": "Inspection: Gluten / flour — wheat and a protein harmful to the body",
+    "titleEs": "Inspección: Gluten / harina — trigo y proteína nociva para el organismo",
+    "excerpt": "Produtos nocivos: glúten e farinha de trigo — celíaca, sensibilidade e ultraprocessados versus cereal tradicional. Elo com caseína, açúcar e chocolate industrial.",
+    "excerptEn": "Harmful products: wheat gluten and flour — celiac disease, sensitivity and ultra-processed foods versus traditional grain. Links casein, sugar and industrial chocolate.",
+    "excerptEs": "Productos nocivos: gluten y harina de trigo — celiaquía, sensibilidad y ultraprocesados frente al cereal tradicional. Vínculo con caseína, azúcar y chocolate industrial.",
     "hasBodyEn": true,
     "hasBodyEs": true,
     "slug": "inspecao-derivado-gluten",
@@ -814,7 +814,7 @@
     "category": "inspecao",
     "series": "plantas-derivados-risco",
     "seriesOrder": 4,
-    "seriesLabel": "Glúten · nocivo"
+    "seriesLabel": "Glúten / farinha · nocivo"
   },
   {
     "title": "Inspeção: Ganja — da rota índica à marca e à gíria global",
@@ -986,6 +986,25 @@
     "series": "plantas-frutos",
     "seriesOrder": 4,
     "seriesLabel": "Açaí · fruto"
+  },
+  {
+    "title": "Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite",
+    "titleEn": "Inspection: Industrial chocolate — cacao, sugar, flour and milk",
+    "titleEs": "Inspección: Chocolate industrial — cacao, azúcar, harina y leche",
+    "excerpt": "Produtos nocivos: chocolate de prateleira como matriz que junta cacau, açúcar (cana), farinha/glúten e leite/caseína — hub que relaciona tudo o que há deles.",
+    "excerptEn": "Harmful products: shelf chocolate as a matrix joining cacao, sugar (cane), flour/gluten and milk/casein — the hub that relates all of them.",
+    "excerptEs": "Productos nocivos: chocolate de estantería como matriz que junta cacao, azúcar (caña), harina/gluten y leche/caseína — hub que relaciona todo lo que hay de ellos.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-derivado-chocolate",
+    "url": "/posts/post-inspecao-derivado-chocolate.html",
+    "date": "2026-08-02T04:20:00.000Z",
+    "filename": "posts/post-inspecao-derivado-chocolate.html",
+    "coverImage": "/imagens/inspecoes/chocolate-cover.jpg",
+    "category": "inspecao",
+    "series": "plantas-derivados-risco",
+    "seriesOrder": 5,
+    "seriesLabel": "Chocolate · nocivo"
   },
   {
     "title": "Inspeção: Diamba — cognato afro-brasileiro apagado pelo estigma",
