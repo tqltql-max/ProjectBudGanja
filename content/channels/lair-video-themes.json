@@ -1,0 +1,5572 @@
+{
+  "channelId": "UCk9mgpQVdJ5oKQWkM1UPBaQ",
+  "handle": "@DrLairRibeiroOficiall",
+  "catalogVideoCount": 887,
+  "categorizedCount": 888,
+  "extraAnchors": [
+    "S61hC_9hmf8"
+  ],
+  "method": "Classificação exclusiva por palavras-chave no título (+ hits de lair-sugar-hits.json forçam eixo açúcar/diabetes). Âncoras fora da aba /videos entram como extra.",
+  "categorizedAt": "2026-08-02T04:32:40.083Z",
+  "summary": [
+    {
+      "id": "cannabis",
+      "label": "Cannabis e cannabinoides",
+      "count": 3
+    },
+    {
+      "id": "acucar",
+      "label": "Açúcar, frutose e adoçantes",
+      "count": 10
+    },
+    {
+      "id": "gluten-leite",
+      "label": "Trigo, glúten e laticínios",
+      "count": 14
+    },
+    {
+      "id": "diabetes",
+      "label": "Diabetes, obesidade e metabolismo",
+      "count": 30
+    },
+    {
+      "id": "cerebro",
+      "label": "Cérebro, memória e neurodegeneração",
+      "count": 37
+    },
+    {
+      "id": "coracao",
+      "label": "Coração e cardiologia",
+      "count": 14
+    },
+    {
+      "id": "inflamacao",
+      "label": "Inflamação e dor",
+      "count": 10
+    },
+    {
+      "id": "hormonios",
+      "label": "Hormônios e tireoide",
+      "count": 18
+    },
+    {
+      "id": "longevidade",
+      "label": "Longevidade e envelhecimento",
+      "count": 17
+    },
+    {
+      "id": "agua",
+      "label": "Água e hidratação",
+      "count": 10
+    },
+    {
+      "id": "oleos",
+      "label": "Óleos, gorduras e coco",
+      "count": 39
+    },
+    {
+      "id": "nutricao",
+      "label": "Nutrição e alimentação",
+      "count": 62
+    },
+    {
+      "id": "exercicio",
+      "label": "Exercício e músculo",
+      "count": 1
+    },
+    {
+      "id": "sono",
+      "label": "Sono, stress e ritmo",
+      "count": 4
+    },
+    {
+      "id": "imunidade",
+      "label": "Imunidade e infecções",
+      "count": 28
+    },
+    {
+      "id": "autoajuda",
+      "label": "Autoajuda, PNL e sucesso",
+      "count": 54
+    },
+    {
+      "id": "lives",
+      "label": "Lives, hangouts e entrevistas",
+      "count": 94
+    },
+    {
+      "id": "trailers",
+      "label": "Trailers e séries numeradas",
+      "count": 85
+    },
+    {
+      "id": "outros",
+      "label": "Outros temas de divulgação",
+      "count": 358
+    }
+  ],
+  "themes": [
+    {
+      "id": "cannabis",
+      "label": "Cannabis e cannabinoides",
+      "labelEn": "Cannabis and cannabinoids",
+      "labelEs": "Cannabis y cannabinoides",
+      "count": 3,
+      "videos": [
+        {
+          "id": "S61hC_9hmf8",
+          "title": "AO VIVO COM Dr. Lair Ribeiro | A força terapêutica da cannabis",
+          "url": "https://www.youtube.com/watch?v=S61hC_9hmf8"
+        },
+        {
+          "id": "istnjrIIrzc",
+          "title": "CANNABIS  NO PARKINSON",
+          "url": "https://www.youtube.com/watch?v=istnjrIIrzc",
+          "views": "139K views"
+        },
+        {
+          "id": "xnJNddotV54",
+          "title": "Cannabis: Be careful what you think you know.",
+          "url": "https://www.youtube.com/watch?v=xnJNddotV54",
+          "views": "5.7K views"
+        }
+      ]
+    },
+    {
+      "id": "acucar",
+      "label": "Açúcar, frutose e adoçantes",
+      "labelEn": "Sugar, fructose and sweeteners",
+      "labelEs": "Azúcar, fructosa y edulcorantes",
+      "count": 10,
+      "videos": [
+        {
+          "id": "wju2nUtdvIw",
+          "title": "Adoçantes aumenta a vontade de açucar",
+          "url": "https://www.youtube.com/watch?v=wju2nUtdvIw",
+          "views": "3.2K views"
+        },
+        {
+          "id": "tP6_BITgLwY",
+          "title": "Célula cancerosa gosta de glicose?",
+          "url": "https://www.youtube.com/watch?v=tP6_BITgLwY",
+          "views": "6.5K views"
+        },
+        {
+          "id": "ZvPCoIR26ns",
+          "title": "Comer açúcar faz morrer mais cedo, comer isso não! Dr  Lair Ribeiro #short",
+          "url": "https://www.youtube.com/watch?v=ZvPCoIR26ns"
+        },
+        {
+          "id": "rVS2M4wuseE",
+          "title": "Fructose the unknown poison",
+          "url": "https://www.youtube.com/watch?v=rVS2M4wuseE",
+          "views": "13K views"
+        },
+        {
+          "id": "iU5KFy5UF40",
+          "title": "O Problema dos Edulcorantes (Adoçantes Artificiais)",
+          "url": "https://www.youtube.com/watch?v=iU5KFy5UF40",
+          "views": "24K views"
+        },
+        {
+          "id": "oGhMcYmy-C4",
+          "title": "Sugar and Sweeteners | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=oGhMcYmy-C4",
+          "views": "87K views"
+        },
+        {
+          "id": "9S7mDGA_gCo",
+          "title": "The truth about sweeteners and sugars",
+          "url": "https://www.youtube.com/watch?v=9S7mDGA_gCo",
+          "views": "25K views"
+        },
+        {
+          "id": "15h7aOzzCR8",
+          "title": "This is what happens to the body when using half a teaspoon of baking soda on an empty stomach - ...",
+          "url": "https://www.youtube.com/watch?v=15h7aOzzCR8",
+          "views": "1.7M views"
+        },
+        {
+          "id": "UfPawBg7vXc",
+          "title": "Truths about Sugar",
+          "url": "https://www.youtube.com/watch?v=UfPawBg7vXc",
+          "views": "108K views"
+        },
+        {
+          "id": "rJ-J9msqqM8",
+          "title": "What do we need to consider besides blood sugar levels?",
+          "url": "https://www.youtube.com/watch?v=rJ-J9msqqM8",
+          "views": "5.8K views"
+        }
+      ]
+    },
+    {
+      "id": "gluten-leite",
+      "label": "Trigo, glúten e laticínios",
+      "labelEn": "Wheat, gluten and dairy",
+      "labelEs": "Trigo, gluten y lácteos",
+      "count": 14,
+      "videos": [
+        {
+          "id": "7S3LG24-t_8",
+          "title": "20 TRAILER O MITO DO LEITE",
+          "url": "https://www.youtube.com/watch?v=7S3LG24-t_8",
+          "views": "3.4K views"
+        },
+        {
+          "id": "Wfmf7sqnz14",
+          "title": "21 TRAILER EFEITO GLUTEN NA SAUDE",
+          "url": "https://www.youtube.com/watch?v=Wfmf7sqnz14",
+          "views": "2.3K views"
+        },
+        {
+          "id": "kPEdAEo9T0Q",
+          "title": "Alguns malefícios do trigo e leite.",
+          "url": "https://www.youtube.com/watch?v=kPEdAEo9T0Q",
+          "views": "8.9K views"
+        },
+        {
+          "id": "V8ANawrlllE",
+          "title": "Best foods: BREAST MILK and EGGS",
+          "url": "https://www.youtube.com/watch?v=V8ANawrlllE",
+          "views": "7.6K views"
+        },
+        {
+          "id": "Zj2j6CV2fyY",
+          "title": "COMO FICAR SABENDO QUANDO OLHA NO ESPELHO, SE É SENSÍVEL AO GLÚTEN?",
+          "url": "https://www.youtube.com/watch?v=Zj2j6CV2fyY",
+          "views": "17K views"
+        },
+        {
+          "id": "2qYo3wMHbT0",
+          "title": "Effect of gluten on health",
+          "url": "https://www.youtube.com/watch?v=2qYo3wMHbT0",
+          "views": "25K views"
+        },
+        {
+          "id": "yLOG0fcqYs0",
+          "title": "GLÚTEN E LACTOSE  e o custo para o seu corpo.",
+          "url": "https://www.youtube.com/watch?v=yLOG0fcqYs0",
+          "views": "65K views"
+        },
+        {
+          "id": "KKYMJtkYXTw",
+          "title": "Gluten Hypersensitivity: Find out if you have it, take the test.",
+          "url": "https://www.youtube.com/watch?v=KKYMJtkYXTw",
+          "views": "24K views"
+        },
+        {
+          "id": "K7sdJmn5F2I",
+          "title": "MAIS DE 50% DA GORDURA DO LEITE MATERNO É DE QUE TIPO?",
+          "url": "https://www.youtube.com/watch?v=K7sdJmn5F2I",
+          "views": "17K views"
+        },
+        {
+          "id": "cID3nNJsgm4",
+          "title": "O mito do leite",
+          "url": "https://www.youtube.com/watch?v=cID3nNJsgm4",
+          "views": "57K views"
+        },
+        {
+          "id": "ZROXfwuLWpk",
+          "title": "Stop eating gluten",
+          "url": "https://www.youtube.com/watch?v=ZROXfwuLWpk",
+          "views": "12K views"
+        },
+        {
+          "id": "XaGhsg_2mds",
+          "title": "The Importance of Breast Milk",
+          "url": "https://www.youtube.com/watch?v=XaGhsg_2mds",
+          "views": "29K views"
+        },
+        {
+          "id": "XP6cOQ1RvmI",
+          "title": "The myth of calcium in MILK",
+          "url": "https://www.youtube.com/watch?v=XP6cOQ1RvmI",
+          "views": "6.4K views"
+        },
+        {
+          "id": "lzpsqt-rI5Q",
+          "title": "WHAT IS MORE HARMFUL - Consuming wheat or the gluten contained in wheat?",
+          "url": "https://www.youtube.com/watch?v=lzpsqt-rI5Q",
+          "views": "37K views"
+        }
+      ]
+    },
+    {
+      "id": "diabetes",
+      "label": "Diabetes, obesidade e metabolismo",
+      "labelEn": "Diabetes, obesity and metabolism",
+      "labelEs": "Diabetes, obesidad y metabolismo",
+      "count": 30,
+      "videos": [
+        {
+          "id": "iFvhMcLkZ08",
+          "title": "54 TRAILER INTEGRACAO METABOLICA parte 1 de 6",
+          "url": "https://www.youtube.com/watch?v=iFvhMcLkZ08",
+          "views": "1.3K views"
+        },
+        {
+          "id": "12VTJG8hjQ8",
+          "title": "55 TRAILER INTEGRACAO METABOLICA parte 2 de 6",
+          "url": "https://www.youtube.com/watch?v=12VTJG8hjQ8",
+          "views": "1.2K views"
+        },
+        {
+          "id": "nrvfrkORogU",
+          "title": "56 TRAILER INTEGRACAO METABOLICA parte 3 de 6",
+          "url": "https://www.youtube.com/watch?v=nrvfrkORogU",
+          "views": "1.4K views"
+        },
+        {
+          "id": "LoT-dwWKUTY",
+          "title": "57 TRAILER INTEGRACAO METABOLICA parte 4 de 6",
+          "url": "https://www.youtube.com/watch?v=LoT-dwWKUTY",
+          "views": "1.2K views"
+        },
+        {
+          "id": "nqZef2B68lE",
+          "title": "58 TRAILER INTEGRACAO METABOLICA parte 5 de 6",
+          "url": "https://www.youtube.com/watch?v=nqZef2B68lE",
+          "views": "1.7K views"
+        },
+        {
+          "id": "awh2yN7WlyE",
+          "title": "59 TRAILER INTEGRACAO METABOLICA parte 6 de 6",
+          "url": "https://www.youtube.com/watch?v=awh2yN7WlyE",
+          "views": "1.4K views"
+        },
+        {
+          "id": "stxh_2q_79g",
+          "title": "Auxiliadores da manutenção metabólica",
+          "url": "https://www.youtube.com/watch?v=stxh_2q_79g",
+          "views": "8.5K views"
+        },
+        {
+          "id": "Gfm1ibJwDB8",
+          "title": "Conheça e Entenda a Diabesidade",
+          "url": "https://www.youtube.com/watch?v=Gfm1ibJwDB8",
+          "views": "7.9K views"
+        },
+        {
+          "id": "x6I5_nuW7dU",
+          "title": "CURSO CARDIOLOGIA METABÓLICA",
+          "url": "https://www.youtube.com/watch?v=x6I5_nuW7dU",
+          "views": "25K views"
+        },
+        {
+          "id": "eP57qT6cxqw",
+          "title": "DIABESIDADE",
+          "url": "https://www.youtube.com/watch?v=eP57qT6cxqw",
+          "views": "17K views"
+        },
+        {
+          "id": "ZgLx3Mr1h3U",
+          "title": "DIABETE E OBESIDADE PARTE 1",
+          "url": "https://www.youtube.com/watch?v=ZgLx3Mr1h3U",
+          "views": "6.1K views"
+        },
+        {
+          "id": "_DaTEI6RM8A",
+          "title": "DIABETE E OBESIDADE PARTE 2",
+          "url": "https://www.youtube.com/watch?v=_DaTEI6RM8A",
+          "views": "4.8K views"
+        },
+        {
+          "id": "3ujgB_bD4_A",
+          "title": "DIABETE E OBESIDADE PARTE 4",
+          "url": "https://www.youtube.com/watch?v=3ujgB_bD4_A",
+          "views": "3.1K views"
+        },
+        {
+          "id": "hDp2GeM9c8Q",
+          "title": "DIABETE E OBESIDADE PARTE 5",
+          "url": "https://www.youtube.com/watch?v=hDp2GeM9c8Q",
+          "views": "3.6K views"
+        },
+        {
+          "id": "mE0nwHIGAIY",
+          "title": "DIABETE E OBESIDADE PARTE 6",
+          "url": "https://www.youtube.com/watch?v=mE0nwHIGAIY",
+          "views": "3.6K views"
+        },
+        {
+          "id": "4GTxbtcCd3I",
+          "title": "DIABETE E OBESIDADE PARTE 8",
+          "url": "https://www.youtube.com/watch?v=4GTxbtcCd3I",
+          "views": "3K views"
+        },
+        {
+          "id": "rMliGyqWop8",
+          "title": "Diabetes",
+          "url": "https://www.youtube.com/watch?v=rMliGyqWop8",
+          "views": "6K views"
+        },
+        {
+          "id": "XIwot0boZ1k",
+          "title": "Diabetes and Obesity Part 3",
+          "url": "https://www.youtube.com/watch?v=XIwot0boZ1k",
+          "views": "3.6K views"
+        },
+        {
+          "id": "28d-0i8S8SU",
+          "title": "Diabetes and Obesity Part 7",
+          "url": "https://www.youtube.com/watch?v=28d-0i8S8SU",
+          "views": "3K views"
+        },
+        {
+          "id": "VItTyNMP_xg",
+          "title": "Diabetes e Obesidade | Hangout com Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=VItTyNMP_xg",
+          "views": "542K views"
+        },
+        {
+          "id": "oKNHCs86-Ss",
+          "title": "DIABETES: NÃO EMPURRE  O LIXO PARA DEBAIXO DO TAPETE",
+          "url": "https://www.youtube.com/watch?v=oKNHCs86-Ss",
+          "views": "8.3K views"
+        },
+        {
+          "id": "wrTKTEGGHy8",
+          "title": "Diabetic Lies - Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=wrTKTEGGHy8",
+          "views": "29K views"
+        },
+        {
+          "id": "btdoLarLnMc",
+          "title": "Gordura aumenta a insulina no sangue?  Dr Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=btdoLarLnMc"
+        },
+        {
+          "id": "ZXRt7XxsBHc",
+          "title": "Mas será que o DIABETES tem cura?",
+          "url": "https://www.youtube.com/watch?v=ZXRt7XxsBHc",
+          "views": "57K views"
+        },
+        {
+          "id": "PLHaUPlGic8",
+          "title": "QUAL É A CAUSA DE DIABETES?",
+          "url": "https://www.youtube.com/watch?v=PLHaUPlGic8"
+        },
+        {
+          "id": "Yuu7C1X1Ob8",
+          "title": "The diabetes-killing fruit",
+          "url": "https://www.youtube.com/watch?v=Yuu7C1X1Ob8",
+          "views": "3.1M views"
+        },
+        {
+          "id": "YpiD6Y51QyM",
+          "title": "The hidden causes of diabetes",
+          "url": "https://www.youtube.com/watch?v=YpiD6Y51QyM",
+          "views": "126K views"
+        },
+        {
+          "id": "pasKj01o5vA",
+          "title": "Trailer Academia Lair Ribeiro | Diabetes&Obesidade",
+          "url": "https://www.youtube.com/watch?v=pasKj01o5vA",
+          "views": "3.7K views"
+        },
+        {
+          "id": "G13lLBN6Z9o",
+          "title": "Tudo sobre resistência insulinica",
+          "url": "https://www.youtube.com/watch?v=G13lLBN6Z9o",
+          "views": "151K views"
+        },
+        {
+          "id": "6GfXztt1ZBk",
+          "title": "WHAT CAUSES INSULIN RESISTANCE?",
+          "url": "https://www.youtube.com/watch?v=6GfXztt1ZBk",
+          "views": "26K views"
+        }
+      ]
+    },
+    {
+      "id": "cerebro",
+      "label": "Cérebro, memória e neurodegeneração",
+      "labelEn": "Brain, memory and neurodegeneration",
+      "labelEs": "Cerebro, memoria y neurodegeneración",
+      "count": 37,
+      "videos": [
+        {
+          "id": "09Iw-FnmReo",
+          "title": "10 TRAILER IMPROVE YOUR BRAIN",
+          "url": "https://www.youtube.com/watch?v=09Iw-FnmReo",
+          "views": "4.7K views"
+        },
+        {
+          "id": "SYX6NBlxwqg",
+          "title": "A Epifania de Pasteur",
+          "url": "https://www.youtube.com/watch?v=SYX6NBlxwqg",
+          "views": "4.7K views"
+        },
+        {
+          "id": "rWIswvu1Nk4",
+          "title": "BRAIN",
+          "url": "https://www.youtube.com/watch?v=rWIswvu1Nk4",
+          "views": "5.8K views"
+        },
+        {
+          "id": "cvrocfN053w",
+          "title": "Brain Optimization - Leda Nagle Interview - Chapter 2 Part 3 | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=cvrocfN053w",
+          "views": "5.2K views"
+        },
+        {
+          "id": "f7CWsRQQZVA",
+          "title": "BRAIN OPTIMIZATION PART 6",
+          "url": "https://www.youtube.com/watch?v=f7CWsRQQZVA",
+          "views": "5.3K views"
+        },
+        {
+          "id": "YzI4-FOd9b8",
+          "title": "BRAIN OPTIMIZATION PART 7",
+          "url": "https://www.youtube.com/watch?v=YzI4-FOd9b8",
+          "views": "3.9K views"
+        },
+        {
+          "id": "-D3tYyS9KYE",
+          "title": "BRAIN OPTIMIZATION PART 8",
+          "url": "https://www.youtube.com/watch?v=-D3tYyS9KYE",
+          "views": "3.4K views"
+        },
+        {
+          "id": "IYiIjvhaEN0",
+          "title": "Can the brain recover after a stroke?",
+          "url": "https://www.youtube.com/watch?v=IYiIjvhaEN0",
+          "views": "6.2K views"
+        },
+        {
+          "id": "6IK24-9W3mM",
+          "title": "CÉREBRO",
+          "url": "https://www.youtube.com/watch?v=6IK24-9W3mM",
+          "views": "35K views"
+        },
+        {
+          "id": "CwzLsGMJCmA",
+          "title": "Coconut oil helps in the treatment of Alzheimer's",
+          "url": "https://www.youtube.com/watch?v=CwzLsGMJCmA",
+          "views": "134K views"
+        },
+        {
+          "id": "2QTwoql2sTg",
+          "title": "Como o cérebro resolve um problema?",
+          "url": "https://www.youtube.com/watch?v=2QTwoql2sTg",
+          "views": "7.3K views"
+        },
+        {
+          "id": "T1p7qfJMu7U",
+          "title": "COMO USAR MEU CÉREBRO MESMO DORMINDO!!!!",
+          "url": "https://www.youtube.com/watch?v=T1p7qfJMu7U",
+          "views": "4K views"
+        },
+        {
+          "id": "uf0zYTcQf0Q",
+          "title": "Depressão pós parto pode durar por toda vida saiba o que causa",
+          "url": "https://www.youtube.com/watch?v=uf0zYTcQf0Q",
+          "views": "5.1K views"
+        },
+        {
+          "id": "RtZrEXa2_nE",
+          "title": "Do you have more than one type of brain?",
+          "url": "https://www.youtube.com/watch?v=RtZrEXa2_nE",
+          "views": "3.5K views"
+        },
+        {
+          "id": "VheTDfZdMMk",
+          "title": "DR. LAIR RIBEIRO - COLOQUE O SEU CEREBRO PARA TRABALHAR",
+          "url": "https://www.youtube.com/watch?v=VheTDfZdMMk",
+          "views": "22K views"
+        },
+        {
+          "id": "VmUiRZbrxwA",
+          "title": "DR. LAIR RIBEIRO FALA SOBRE MÉTODO DE REPETIÇÃO PARA O CEREBRO",
+          "url": "https://www.youtube.com/watch?v=VmUiRZbrxwA",
+          "views": "57K views"
+        },
+        {
+          "id": "diThkRuuWgE",
+          "title": "FAÇA SEU CÉREBRO - SEU ORGÃO FAVORITO",
+          "url": "https://www.youtube.com/watch?v=diThkRuuWgE",
+          "views": "22K views"
+        },
+        {
+          "id": "WMdWZnrYJzw",
+          "title": "Intestino, segundo cérebro?",
+          "url": "https://www.youtube.com/watch?v=WMdWZnrYJzw",
+          "views": "12K views"
+        },
+        {
+          "id": "irgGVYVJVfo",
+          "title": "LEARN FROM BOTH SIDES OF THE BRAIN - PODCAST 12",
+          "url": "https://www.youtube.com/watch?v=irgGVYVJVfo",
+          "views": "18K views"
+        },
+        {
+          "id": "rlPvs0VvId4",
+          "title": "Melhore Seu Cérebro, Melhore Sua Vida | Hangout com Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=rlPvs0VvId4",
+          "views": "1.5M views"
+        },
+        {
+          "id": "3LZELGmIP_U",
+          "title": "MEMORY",
+          "url": "https://www.youtube.com/watch?v=3LZELGmIP_U",
+          "views": "34K views"
+        },
+        {
+          "id": "Rj7k2YAZodo",
+          "title": "Metaphorically, what type of brain do you have?",
+          "url": "https://www.youtube.com/watch?v=Rj7k2YAZodo",
+          "views": "4.1K views"
+        },
+        {
+          "id": "MemgnXrvjNo",
+          "title": "NEUROPLASTICIDADE - Entenda o complexo potencial do seu cérebro.",
+          "url": "https://www.youtube.com/watch?v=MemgnXrvjNo",
+          "views": "11K views"
+        },
+        {
+          "id": "tdsprmYXejA",
+          "title": "O cortisol está sabotando seu cérebro",
+          "url": "https://www.youtube.com/watch?v=tdsprmYXejA",
+          "views": "9 mil"
+        },
+        {
+          "id": "43N6bpQbZGo",
+          "title": "O EIXO CÉREBRO-CORAÇÃO-CÉREBRO",
+          "url": "https://www.youtube.com/watch?v=43N6bpQbZGo",
+          "views": "23K views"
+        },
+        {
+          "id": "J0V1MMoiGnM",
+          "title": "Ômega 3, Curcumina para o cérebro e visão",
+          "url": "https://www.youtube.com/watch?v=J0V1MMoiGnM",
+          "views": "60K views"
+        },
+        {
+          "id": "-CxtihtzxfM",
+          "title": "trailer TERCEIRO HANGOUT LAIR EDITADO 13 10 2015 cerebro",
+          "url": "https://www.youtube.com/watch?v=-CxtihtzxfM",
+          "views": "927 views"
+        },
+        {
+          "id": "QQXB6R7cAqQ",
+          "title": "Vitamin B12 deficiency can be mistaken for Alzheimer's | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=QQXB6R7cAqQ",
+          "views": "28K views"
+        },
+        {
+          "id": "LT7YNXmJyx0",
+          "title": "WEB SÉRIE - MELHORE SEU CÉREBRO, MELHORE SUA VIDA - PARTE 08",
+          "url": "https://www.youtube.com/watch?v=LT7YNXmJyx0",
+          "views": "18K views"
+        },
+        {
+          "id": "K8hQEdZ0rwQ",
+          "title": "WEB SERIES - IMPROVE YOUR BRAIN, IMPROVE YOUR LIFE - Part 01",
+          "url": "https://www.youtube.com/watch?v=K8hQEdZ0rwQ",
+          "views": "17K views"
+        },
+        {
+          "id": "GAFfEUXctsI",
+          "title": "WEB SERIES - IMPROVE YOUR BRAIN, IMPROVE YOUR LIFE - Part 5",
+          "url": "https://www.youtube.com/watch?v=GAFfEUXctsI",
+          "views": "13K views"
+        },
+        {
+          "id": "YDpoDBkcyOY",
+          "title": "WEB SERIES - UPGRADE YOUR BRAIN, UPGRADE YOUR LIFE - PART 07",
+          "url": "https://www.youtube.com/watch?v=YDpoDBkcyOY",
+          "views": "12K views"
+        },
+        {
+          "id": "vihei8Pn0CI",
+          "title": "WEB SERIES: UPGRADE YOUR BRAIN, UPGRADE YOUR LIFE! Part 02",
+          "url": "https://www.youtube.com/watch?v=vihei8Pn0CI",
+          "views": "14K views"
+        },
+        {
+          "id": "RWgqlVSgDWs",
+          "title": "WEB-SÉRIE MELHORE SEU CÉREBRO, MELHORE SUA VIDA - Parte 03",
+          "url": "https://www.youtube.com/watch?v=RWgqlVSgDWs",
+          "views": "14K views"
+        },
+        {
+          "id": "EibAXimXcuM",
+          "title": "WHAT DOES NEUROPLASTICITY CONSIST OF?",
+          "url": "https://www.youtube.com/watch?v=EibAXimXcuM",
+          "views": "20K views"
+        },
+        {
+          "id": "zCPKJ0kAMOA",
+          "title": "What is the function of the brain?",
+          "url": "https://www.youtube.com/watch?v=zCPKJ0kAMOA",
+          "views": "3.2K views"
+        },
+        {
+          "id": "-9MYslFfQHA",
+          "title": "WHO IS YOUR BRAIN'S EXECUTIVE ASSISTANT - PODCAST 39",
+          "url": "https://www.youtube.com/watch?v=-9MYslFfQHA",
+          "views": "13K views"
+        }
+      ]
+    },
+    {
+      "id": "coracao",
+      "label": "Coração e cardiologia",
+      "labelEn": "Heart and cardiology",
+      "labelEs": "Corazón y cardiología",
+      "count": 14,
+      "videos": [
+        {
+          "id": "5BfhTNXELh0",
+          "title": "COLESTEROL",
+          "url": "https://www.youtube.com/watch?v=5BfhTNXELh0",
+          "views": "30K views"
+        },
+        {
+          "id": "vQVMONKKlGo",
+          "title": "COLESTEROL É MOCINHO OU BANDIDO?",
+          "url": "https://www.youtube.com/watch?v=vQVMONKKlGo",
+          "views": "4.1K views"
+        },
+        {
+          "id": "w0ogqWz1RPA",
+          "title": "COLESTEROL É OU NÃO É UMA GORDURA?",
+          "url": "https://www.youtube.com/watch?v=w0ogqWz1RPA",
+          "views": "17K views"
+        },
+        {
+          "id": "vIyj4voNKFI",
+          "title": "Colesterol não é gordura   A mentira do colesterol",
+          "url": "https://www.youtube.com/watch?v=vIyj4voNKFI",
+          "views": "8.8K views"
+        },
+        {
+          "id": "T8a9YvUpXvQ",
+          "title": "COLESTEROL NUNCA FOI UMA GORDURA",
+          "url": "https://www.youtube.com/watch?v=T8a9YvUpXvQ",
+          "views": "17K views"
+        },
+        {
+          "id": "r5noX2mn02I",
+          "title": "Colesterol, o maior mito médico da atualidade",
+          "url": "https://www.youtube.com/watch?v=r5noX2mn02I",
+          "views": "21K views"
+        },
+        {
+          "id": "S-T0YJpF79A",
+          "title": "DOES YOUR HEARTBURN HAPPEN ON AN EMPTY OR FULL STOMACH?",
+          "url": "https://www.youtube.com/watch?v=S-T0YJpF79A",
+          "views": "21K views"
+        },
+        {
+          "id": "8UVs8-H1Btc",
+          "title": "Foods that save your heart",
+          "url": "https://www.youtube.com/watch?v=8UVs8-H1Btc",
+          "views": "24K views"
+        },
+        {
+          "id": "YxyVoe4mA14",
+          "title": "Heart and Cholesterol | Hangout Express with Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=YxyVoe4mA14",
+          "views": "28K views"
+        },
+        {
+          "id": "dYEITqmUcCI",
+          "title": "Heart Disease",
+          "url": "https://www.youtube.com/watch?v=dYEITqmUcCI",
+          "views": "5K views"
+        },
+        {
+          "id": "Z2tvpY8GraE",
+          "title": "Óleo para cozinhar O veneno do coração",
+          "url": "https://www.youtube.com/watch?v=Z2tvpY8GraE",
+          "views": "8.2K views"
+        },
+        {
+          "id": "WiX3_WPmAKc",
+          "title": "QUAL A RELAÇÃO DO COLESTEROL COM A SAÚDE CARDÍACA?",
+          "url": "https://www.youtube.com/watch?v=WiX3_WPmAKc",
+          "views": "11K views"
+        },
+        {
+          "id": "KAmsYqx8BC4",
+          "title": "QUAL É A DROGA IDEAL PARA SEU CORAÇÃO?",
+          "url": "https://www.youtube.com/watch?v=KAmsYqx8BC4",
+          "views": "26K views"
+        },
+        {
+          "id": "vWB1i165oWg",
+          "title": "RECOVER PROTECTION AGAINST HEART ATTACK",
+          "url": "https://www.youtube.com/watch?v=vWB1i165oWg",
+          "views": "22K views"
+        }
+      ]
+    },
+    {
+      "id": "inflamacao",
+      "label": "Inflamação e dor",
+      "labelEn": "Inflammation and pain",
+      "labelEs": "Inflamación y dolor",
+      "count": 10,
+      "videos": [
+        {
+          "id": "lHuvyimKNSw",
+          "title": "A guerra contra os radicais livres",
+          "url": "https://www.youtube.com/watch?v=lHuvyimKNSw",
+          "views": "7.8K views"
+        },
+        {
+          "id": "aQzXwdh5lFw",
+          "title": "Acute Inflammation vs. Chronic Inflammation",
+          "url": "https://www.youtube.com/watch?v=aQzXwdh5lFw",
+          "views": "7.4K views"
+        },
+        {
+          "id": "lMGjkkt6JL0",
+          "title": "COMO ATINGIR UM SONO REPARADOR?",
+          "url": "https://www.youtube.com/watch?v=lMGjkkt6JL0"
+        },
+        {
+          "id": "zb9C-OZmErI",
+          "title": "COMO SER COCRIADOR DA SUA EXISTÊNCIA - PODCAST 42",
+          "url": "https://www.youtube.com/watch?v=zb9C-OZmErI",
+          "views": "9K views"
+        },
+        {
+          "id": "9P4jUK0EnLM",
+          "title": "Denominador comum do câncer",
+          "url": "https://www.youtube.com/watch?v=9P4jUK0EnLM",
+          "views": "7.3K views"
+        },
+        {
+          "id": "8sVRlpKHxq8",
+          "title": "Dor no corpo ou dor no osso? Nem tudo é fibromialgia.",
+          "url": "https://www.youtube.com/watch?v=8sVRlpKHxq8",
+          "views": "6,5 mil"
+        },
+        {
+          "id": "CbzTZBajQ5E",
+          "title": "Lair Ribeiro   Inflamação , cura com açafrão",
+          "url": "https://www.youtube.com/watch?v=CbzTZBajQ5E",
+          "views": "150K views"
+        },
+        {
+          "id": "7tOdOW1bvy8",
+          "title": "O maior predador da alimentação e saúde!!",
+          "url": "https://www.youtube.com/watch?v=7tOdOW1bvy8"
+        },
+        {
+          "id": "O3kVnRHAZ-0",
+          "title": "O MAIOR PREDADOR DA ALIMENTAÇÃO E SAÚDE!!!",
+          "url": "https://www.youtube.com/watch?v=O3kVnRHAZ-0"
+        },
+        {
+          "id": "Sk0ERgeowFU",
+          "title": "SEIS PESSOAS AO SEU REDOR - PODCAST 15",
+          "url": "https://www.youtube.com/watch?v=Sk0ERgeowFU",
+          "views": "15K views"
+        }
+      ]
+    },
+    {
+      "id": "hormonios",
+      "label": "Hormônios e tireoide",
+      "labelEn": "Hormones and thyroid",
+      "labelEs": "Hormonas y tiroides",
+      "count": 18,
+      "videos": [
+        {
+          "id": "BlpMB7EGQxc",
+          "title": "08 TRAILER MODULACAO HORMONAL",
+          "url": "https://www.youtube.com/watch?v=BlpMB7EGQxc",
+          "views": "1.9K views"
+        },
+        {
+          "id": "KeKiSM4yus0",
+          "title": "31 TRAILER RISCOS BENEFICIOS MODULACAO HORMONAL MASCULINA",
+          "url": "https://www.youtube.com/watch?v=KeKiSM4yus0",
+          "views": "1.7K views"
+        },
+        {
+          "id": "n4C6NV5ni0A",
+          "title": "37 TRAILER HANGOUT TIREOIDE",
+          "url": "https://www.youtube.com/watch?v=n4C6NV5ni0A",
+          "views": "2.5K views"
+        },
+        {
+          "id": "Ya_UoeTFyBA",
+          "title": "38 TRAILER HANGOUT MODULACAO HORMONAL FEMININA",
+          "url": "https://www.youtube.com/watch?v=Ya_UoeTFyBA",
+          "views": "2.3K views"
+        },
+        {
+          "id": "t1KPxeAfPw4",
+          "title": "39 TRAILER HANGOUT MODULACAO HORMONAL MASCULINA",
+          "url": "https://www.youtube.com/watch?v=t1KPxeAfPw4",
+          "views": "1.4K views"
+        },
+        {
+          "id": "rkhDTxsr5Ak",
+          "title": "40 TRAILER MODULACAO HORMONAL MASCULINA OTIMIZADA parte 1 de 3",
+          "url": "https://www.youtube.com/watch?v=rkhDTxsr5Ak",
+          "views": "1.9K views"
+        },
+        {
+          "id": "dVeulZ35MmY",
+          "title": "41 TRAILER OPTIMIZED MALE HORMONE MODULATION part 2 of 3",
+          "url": "https://www.youtube.com/watch?v=dVeulZ35MmY",
+          "views": "4.9K views"
+        },
+        {
+          "id": "iWDXklDwrvk",
+          "title": "42 TRAILER MODULACAO HORMONAL MASCULINA OTIMIZADA parte 3 de 3",
+          "url": "https://www.youtube.com/watch?v=iWDXklDwrvk",
+          "views": "2.2K views"
+        },
+        {
+          "id": "LgKRIHd69oQ",
+          "title": "Cortisol: What does it do to you?",
+          "url": "https://www.youtube.com/watch?v=LgKRIHd69oQ",
+          "views": "9.9K views"
+        },
+        {
+          "id": "hsNHSHgDYjY",
+          "title": "Dr Lair Ribeiro comprova em si mesmo a eficacia do Hormonio bioindentico",
+          "url": "https://www.youtube.com/watch?v=hsNHSHgDYjY",
+          "views": "6.3K views"
+        },
+        {
+          "id": "xrRrmrpBUj4",
+          "title": "How does stress increase cortisol?",
+          "url": "https://www.youtube.com/watch?v=xrRrmrpBUj4",
+          "views": "9.9K views"
+        },
+        {
+          "id": "EOUvSC5Ot1c",
+          "title": "How is your thyroid?",
+          "url": "https://www.youtube.com/watch?v=EOUvSC5Ot1c",
+          "views": "169K views"
+        },
+        {
+          "id": "UZcJ8X8__QE",
+          "title": "Importância da parte hormonal",
+          "url": "https://www.youtube.com/watch?v=UZcJ8X8__QE",
+          "views": "26K views"
+        },
+        {
+          "id": "R_ZLuVsu-ms",
+          "title": "INTRODUCTION TO HORMONAL HOMEOSTASIS - DR. LAIR RIBEIRO",
+          "url": "https://www.youtube.com/watch?v=R_ZLuVsu-ms",
+          "views": "20K views"
+        },
+        {
+          "id": "vm6Hh17KQ80",
+          "title": "Mais testosterona, menos resultado",
+          "url": "https://www.youtube.com/watch?v=vm6Hh17KQ80",
+          "views": "12 mil"
+        },
+        {
+          "id": "K1LoVSEIpfw",
+          "title": "O hormônio do sono também regula o seu peso.",
+          "url": "https://www.youtube.com/watch?v=K1LoVSEIpfw",
+          "views": "7,6 mil"
+        },
+        {
+          "id": "jHrJiCXCdWg",
+          "title": "Suplementação hormonal é importante?",
+          "url": "https://www.youtube.com/watch?v=jHrJiCXCdWg",
+          "views": "26K views"
+        },
+        {
+          "id": "kQq5ttXSAtE",
+          "title": "Testosterona e Inteligência Espacial: Existe Conexão?",
+          "url": "https://www.youtube.com/watch?v=kQq5ttXSAtE",
+          "views": "5,6 mil"
+        }
+      ]
+    },
+    {
+      "id": "longevidade",
+      "label": "Longevidade e envelhecimento",
+      "labelEn": "Longevity and aging",
+      "labelEs": "Longevidad y envejecimiento",
+      "count": 17,
+      "videos": [
+        {
+          "id": "_MOgtHPFcLs",
+          "title": "01 TRAILER ENVELHECER SEM FICAR VELHO",
+          "url": "https://www.youtube.com/watch?v=_MOgtHPFcLs",
+          "views": "4.5K views"
+        },
+        {
+          "id": "nMQHV4VYU8Y",
+          "title": "04 TRAILER SARCOPENIA",
+          "url": "https://www.youtube.com/watch?v=nMQHV4VYU8Y",
+          "views": "28K views"
+        },
+        {
+          "id": "BA-A1rkKtu0",
+          "title": "17 TRAILER PORQUE ENVELHECEMOS",
+          "url": "https://www.youtube.com/watch?v=BA-A1rkKtu0",
+          "views": "1.2K views"
+        },
+        {
+          "id": "gbaFvgoaCiM",
+          "title": "A DIFERENÇA ENTRE O JOVEM E O VELHO",
+          "url": "https://www.youtube.com/watch?v=gbaFvgoaCiM",
+          "views": "39K views"
+        },
+        {
+          "id": "Ik69XOkaj8E",
+          "title": "AGING WITHOUT GETTING SICK - Part 03",
+          "url": "https://www.youtube.com/watch?v=Ik69XOkaj8E",
+          "views": "10K views"
+        },
+        {
+          "id": "YYMolcZc1JQ",
+          "title": "ENVELHECER SEM ADOECER - Parte 01",
+          "url": "https://www.youtube.com/watch?v=YYMolcZc1JQ",
+          "views": "17K views"
+        },
+        {
+          "id": "oZOCmc2noXs",
+          "title": "ENVELHECER SEM ADOECER - Parte 02",
+          "url": "https://www.youtube.com/watch?v=oZOCmc2noXs",
+          "views": "27K views"
+        },
+        {
+          "id": "hz-0JF38XqA",
+          "title": "ENVELHECER SEM ADOECER - Parte 04",
+          "url": "https://www.youtube.com/watch?v=hz-0JF38XqA",
+          "views": "14K views"
+        },
+        {
+          "id": "YOofH1yYsVY",
+          "title": "ENVELHECER SEM ADOECER - Parte 05",
+          "url": "https://www.youtube.com/watch?v=YOofH1yYsVY",
+          "views": "7.3K views"
+        },
+        {
+          "id": "_90if9TIq5o",
+          "title": "ENVELHECER SEM ADOECER - Parte 07",
+          "url": "https://www.youtube.com/watch?v=_90if9TIq5o",
+          "views": "9.7K views"
+        },
+        {
+          "id": "qYRBkOxy-R4",
+          "title": "ENVELHECER SEM ADOECER - Parte 08",
+          "url": "https://www.youtube.com/watch?v=qYRBkOxy-R4",
+          "views": "6.3K views"
+        },
+        {
+          "id": "xKYwBMt7tYo",
+          "title": "ENVELHECER SEM ADOECER - Parte 09",
+          "url": "https://www.youtube.com/watch?v=xKYwBMt7tYo",
+          "views": "8.1K views"
+        },
+        {
+          "id": "7L2HWI8d_d0",
+          "title": "ENVELHECER SEM ADOECER - Parte 10",
+          "url": "https://www.youtube.com/watch?v=7L2HWI8d_d0",
+          "views": "12K views"
+        },
+        {
+          "id": "qddSWkk62VQ",
+          "title": "ENVELHECER SEM ADOECER - Parte 6",
+          "url": "https://www.youtube.com/watch?v=qddSWkk62VQ",
+          "views": "11K views"
+        },
+        {
+          "id": "uKNcue6rBCI",
+          "title": "Envelhecer sem ficar doente Como evitar ficar doente",
+          "url": "https://www.youtube.com/watch?v=uKNcue6rBCI",
+          "views": "4.8K views"
+        },
+        {
+          "id": "gGgglhZ3FX4",
+          "title": "Leveraging the recovery",
+          "url": "https://www.youtube.com/watch?v=gGgglhZ3FX4",
+          "views": "7.2K views"
+        },
+        {
+          "id": "3-6Q6cJCr2w",
+          "title": "Restrição Calórica e Longevidade",
+          "url": "https://www.youtube.com/watch?v=3-6Q6cJCr2w",
+          "views": "10K views"
+        }
+      ]
+    },
+    {
+      "id": "agua",
+      "label": "Água e hidratação",
+      "labelEn": "Water and hydration",
+      "labelEs": "Agua e hidratación",
+      "count": 10,
+      "videos": [
+        {
+          "id": "l6KRx-TLmCU",
+          "title": "02 PHYSIOLOGICAL POWER OF WATER TRAILER",
+          "url": "https://www.youtube.com/watch?v=l6KRx-TLmCU",
+          "views": "3.2K views"
+        },
+        {
+          "id": "9HajY1OW-M8",
+          "title": "72 TRAILER PODER FISIOLOGICO AGUA parte 1 de 3",
+          "url": "https://www.youtube.com/watch?v=9HajY1OW-M8",
+          "views": "2.2K views"
+        },
+        {
+          "id": "E64I7S2q-54",
+          "title": "73 TRAILER PODER FISIOLOGICO AGUA parte 2 de 3",
+          "url": "https://www.youtube.com/watch?v=E64I7S2q-54",
+          "views": "18K views"
+        },
+        {
+          "id": "mvM8O6XLPCg",
+          "title": "74 TRAILER PODER FISIOLOGICO AGUA parte 3 de 3",
+          "url": "https://www.youtube.com/watch?v=mvM8O6XLPCg",
+          "views": "1.4K views"
+        },
+        {
+          "id": "EA0lFvKG4B4",
+          "title": "ÁGUA",
+          "url": "https://www.youtube.com/watch?v=EA0lFvKG4B4",
+          "views": "24K views"
+        },
+        {
+          "id": "baK1irLE_xg",
+          "title": "Água | | Hangout com Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=baK1irLE_xg",
+          "views": "369K views"
+        },
+        {
+          "id": "29biCd-Z61k",
+          "title": "ÁGUA COM LIMÃO - Por que tomar água com limão em jejum?",
+          "url": "https://www.youtube.com/watch?v=29biCd-Z61k",
+          "views": "41K views"
+        },
+        {
+          "id": "YBGWAG5hVyo",
+          "title": "Desidratação urina amarela é falta de água",
+          "url": "https://www.youtube.com/watch?v=YBGWAG5hVyo",
+          "views": "19K views"
+        },
+        {
+          "id": "TzwrI34uCPk",
+          "title": "OS MITOS DA ÁGUA",
+          "url": "https://www.youtube.com/watch?v=TzwrI34uCPk"
+        },
+        {
+          "id": "KOb-371tfUY",
+          "title": "Water with lemon: Yes or no?",
+          "url": "https://www.youtube.com/watch?v=KOb-371tfUY",
+          "views": "80K views"
+        }
+      ]
+    },
+    {
+      "id": "oleos",
+      "label": "Óleos, gorduras e coco",
+      "labelEn": "Oils, fats and coconut",
+      "labelEs": "Aceites, grasas y coco",
+      "count": 39,
+      "videos": [
+        {
+          "id": "LS3Hy_l2BR0",
+          "title": "03 TRAILER OLEO COCO",
+          "url": "https://www.youtube.com/watch?v=LS3Hy_l2BR0",
+          "views": "7.8K views"
+        },
+        {
+          "id": "imGy8-Iowf8",
+          "title": "10 reasons why you should take Omega 3",
+          "url": "https://www.youtube.com/watch?v=imGy8-Iowf8",
+          "views": "364K views"
+        },
+        {
+          "id": "KcSkCXnN42c",
+          "title": "18 TRAILER PORQUE OMEGA 3",
+          "url": "https://www.youtube.com/watch?v=KcSkCXnN42c",
+          "views": "1.7K views"
+        },
+        {
+          "id": "I9b8eXXpwhM",
+          "title": "A Verdade Científica do Óleo de Coco | Hangout com Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=I9b8eXXpwhM",
+          "views": "1M views"
+        },
+        {
+          "id": "EKkWEuD5m_I",
+          "title": "ABACATE",
+          "url": "https://www.youtube.com/watch?v=EKkWEuD5m_I",
+          "views": "50K views"
+        },
+        {
+          "id": "zr87-zdOUjg",
+          "title": "Aceite de Coco - La Verdad Científica | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=zr87-zdOUjg",
+          "views": "18K views"
+        },
+        {
+          "id": "Q0p25iZJkEg",
+          "title": "BENEFÍCIOS DA INGESTÃO DE GORDURAS BOAS",
+          "url": "https://www.youtube.com/watch?v=Q0p25iZJkEg"
+        },
+        {
+          "id": "IJ3X2KVlKxw",
+          "title": "Benefits of omega 3",
+          "url": "https://www.youtube.com/watch?v=IJ3X2KVlKxw",
+          "views": "18K views"
+        },
+        {
+          "id": "I1nG8nJ5_wo",
+          "title": "C15 a gordura saturada que protege, não adoece",
+          "url": "https://www.youtube.com/watch?v=I1nG8nJ5_wo",
+          "views": "8,1 mil"
+        },
+        {
+          "id": "pRC9mFyxNME",
+          "title": "Coconut Oil – Beneficial Effects on the Human Health | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=pRC9mFyxNME",
+          "views": "26K views"
+        },
+        {
+          "id": "kcSYqwvbUuQ",
+          "title": "Coconut Oil: The Truth, According to Science | Hangout with Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=kcSYqwvbUuQ",
+          "views": "83K views"
+        },
+        {
+          "id": "SvzAeWeY9p8",
+          "title": "COMO ESCOLHER A MELHOR OPÇÃO DE AZEITE DE OLIVA?",
+          "url": "https://www.youtube.com/watch?v=SvzAeWeY9p8"
+        },
+        {
+          "id": "-sJXYGUxESc",
+          "title": "Deficiência de ômega 3 na gravidez causa depleção pós parto e possível aborto",
+          "url": "https://www.youtube.com/watch?v=-sJXYGUxESc",
+          "views": "5.8K views"
+        },
+        {
+          "id": "rlvy6bfRgh8",
+          "title": "DR LAIR RIBEIRO FALA SOBRE O ÔMEGA 3 - parte 2",
+          "url": "https://www.youtube.com/watch?v=rlvy6bfRgh8",
+          "views": "38K views"
+        },
+        {
+          "id": "IhHFRCSZMrg",
+          "title": "DR LAIR RIBEIRO FALA SOBRE O ÔMEGA 3 - parte 3",
+          "url": "https://www.youtube.com/watch?v=IhHFRCSZMrg",
+          "views": "23K views"
+        },
+        {
+          "id": "FkDBSoQj86A",
+          "title": "DR. LAIR RIBEIRO FALA SOBRE ÓLEO DE COCO E ALHO",
+          "url": "https://www.youtube.com/watch?v=FkDBSoQj86A",
+          "views": "71K views"
+        },
+        {
+          "id": "vf7SyZJrmaY",
+          "title": "Dr. Lair Ribeiro talks about Omega 3 - part 1",
+          "url": "https://www.youtube.com/watch?v=vf7SyZJrmaY",
+          "views": "64K views"
+        },
+        {
+          "id": "y6JoOJuF2iM",
+          "title": "Está na hora de mudar de óleo",
+          "url": "https://www.youtube.com/watch?v=y6JoOJuF2iM",
+          "views": "13K views"
+        },
+        {
+          "id": "kdMYQLxtTgo",
+          "title": "Finasteride or Coconut Oil for Hair Loss?",
+          "url": "https://www.youtube.com/watch?v=kdMYQLxtTgo",
+          "views": "221K views"
+        },
+        {
+          "id": "aQ2R0iM_RFM",
+          "title": "GORDURA SATURADA - Parte 02",
+          "url": "https://www.youtube.com/watch?v=aQ2R0iM_RFM",
+          "views": "14K views"
+        },
+        {
+          "id": "-_xPZjH6J3I",
+          "title": "GORDURA SATURADA - Parte 03",
+          "url": "https://www.youtube.com/watch?v=-_xPZjH6J3I",
+          "views": "18K views"
+        },
+        {
+          "id": "dVkcbaMm0mg",
+          "title": "Gordura saturada faz mal?",
+          "url": "https://www.youtube.com/watch?v=dVkcbaMm0mg",
+          "views": "17K views"
+        },
+        {
+          "id": "pZohQ0_kOnY",
+          "title": "Gordura saturada na mãe #shorts",
+          "url": "https://www.youtube.com/watch?v=pZohQ0_kOnY"
+        },
+        {
+          "id": "148rGO5AdDE",
+          "title": "It's very cheap, so people consume a lot of it and the fat accumulates. - Dr. Lar Ribeiro",
+          "url": "https://www.youtube.com/watch?v=148rGO5AdDE",
+          "views": "19K views"
+        },
+        {
+          "id": "rHxqFcFTjCA",
+          "title": "Lair ribeiro   Óleo de coco não deixa o cabelo cair",
+          "url": "https://www.youtube.com/watch?v=rHxqFcFTjCA",
+          "views": "38K views"
+        },
+        {
+          "id": "_YOad3zNZE4",
+          "title": "Lair Ribeiro Coconut Oil & Safflower Oil",
+          "url": "https://www.youtube.com/watch?v=_YOad3zNZE4",
+          "views": "50K views"
+        },
+        {
+          "id": "Hbh7-lyrR4Q",
+          "title": "Melhores Alimentos: ÓLEO DE COCO, AZEITE DE OLIVA e CÚRCUMA",
+          "url": "https://www.youtube.com/watch?v=Hbh7-lyrR4Q",
+          "views": "25K views"
+        },
+        {
+          "id": "daKxfWOjz7M",
+          "title": "MY DEFINITIVE CLASS ON COCONUT OIL",
+          "url": "https://www.youtube.com/watch?v=daKxfWOjz7M",
+          "views": "948K views"
+        },
+        {
+          "id": "hMdRRbLpHkI",
+          "title": "ÓLEO DE CÔCO",
+          "url": "https://www.youtube.com/watch?v=hMdRRbLpHkI",
+          "views": "12K views"
+        },
+        {
+          "id": "Pw_SXcXTYGM",
+          "title": "Óleo para cozinhar o começo de muitas doenças 1",
+          "url": "https://www.youtube.com/watch?v=Pw_SXcXTYGM",
+          "views": "4.6K views"
+        },
+        {
+          "id": "hJlGeNTcuX4",
+          "title": "Óleos processados",
+          "url": "https://www.youtube.com/watch?v=hJlGeNTcuX4",
+          "views": "5.6K views"
+        },
+        {
+          "id": "HWd0hSUMvts",
+          "title": "Ômega 3 como atua e recomendação para alguns tipos de doenças",
+          "url": "https://www.youtube.com/watch?v=HWd0hSUMvts",
+          "views": "19K views"
+        },
+        {
+          "id": "F9dq56YuDkY",
+          "title": "Polêmica Óleo de Coco - Dr. Uronal Zancan",
+          "url": "https://www.youtube.com/watch?v=F9dq56YuDkY",
+          "views": "87K views"
+        },
+        {
+          "id": "-VCx5bThG2M",
+          "title": "QUALÉ O MELHOR DOS ÓLEOS PARA COZINHAR?",
+          "url": "https://www.youtube.com/watch?v=-VCx5bThG2M",
+          "views": "36K views"
+        },
+        {
+          "id": "U81eFrm9y5o",
+          "title": "SATURATED FAT - Part 01",
+          "url": "https://www.youtube.com/watch?v=U81eFrm9y5o",
+          "views": "14K views"
+        },
+        {
+          "id": "Eurfz0P2Qr4",
+          "title": "Somente palestra | OLEO DE COCO | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=Eurfz0P2Qr4",
+          "views": "245K views"
+        },
+        {
+          "id": "E7rB123EFcc",
+          "title": "somente palestra Oleo de coco | sem TARJA",
+          "url": "https://www.youtube.com/watch?v=E7rB123EFcc",
+          "views": "10K views"
+        },
+        {
+          "id": "sRHIuXInpWQ",
+          "title": "There is only one case in which animal fat should be avoided. Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=sRHIuXInpWQ",
+          "views": "56K views"
+        },
+        {
+          "id": "uEmmjzoJfOc",
+          "title": "What is the best oil for cooking?",
+          "url": "https://www.youtube.com/watch?v=uEmmjzoJfOc",
+          "views": "52K views"
+        }
+      ]
+    },
+    {
+      "id": "nutricao",
+      "label": "Nutrição e alimentação",
+      "labelEn": "Nutrition and food",
+      "labelEs": "Nutrición y alimentación",
+      "count": 62,
+      "videos": [
+        {
+          "id": "Fk9CAJwwu9s",
+          "title": "\"Eu tomo isso no café da manhã... infelizmente tem gente que pode mas não faz\" Dr Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=Fk9CAJwwu9s",
+          "views": "64K views"
+        },
+        {
+          "id": "t2tkrFmECQo",
+          "title": "05 TRAILER VITAMINA D3",
+          "url": "https://www.youtube.com/watch?v=t2tkrFmECQo",
+          "views": "3.2K views"
+        },
+        {
+          "id": "01ur4AoaBoE",
+          "title": "07 TRAILER VITAMINA K2",
+          "url": "https://www.youtube.com/watch?v=01ur4AoaBoE",
+          "views": "3.1K views"
+        },
+        {
+          "id": "6yr_iVhAMV0",
+          "title": "12 TRAILER MUDE SUA ALIMENTACAO MUDE SUA VIDA",
+          "url": "https://www.youtube.com/watch?v=6yr_iVhAMV0",
+          "views": "2.1K views"
+        },
+        {
+          "id": "iXau6D3Ux3c",
+          "title": "33 TRAILER MEDICINA NUTRICIONAL PARTE 01",
+          "url": "https://www.youtube.com/watch?v=iXau6D3Ux3c",
+          "views": "1.1K views"
+        },
+        {
+          "id": "9hnPmt_1kVo",
+          "title": "A alimentação muda o seu destino",
+          "url": "https://www.youtube.com/watch?v=9hnPmt_1kVo",
+          "views": "7,2 mil"
+        },
+        {
+          "id": "ptFixUcbtIc",
+          "title": "A BATATA FRITA TÓXICA, QUE VOCÊ CONSOME",
+          "url": "https://www.youtube.com/watch?v=ptFixUcbtIc"
+        },
+        {
+          "id": "76hEyd5xYv4",
+          "title": "A falta de sol está adoecendo você",
+          "url": "https://www.youtube.com/watch?v=76hEyd5xYv4",
+          "views": "7,5 mil"
+        },
+        {
+          "id": "ivSypXmz9CM",
+          "title": "A importância do magnésio",
+          "url": "https://www.youtube.com/watch?v=ivSypXmz9CM",
+          "views": "21K views"
+        },
+        {
+          "id": "bnxYvKT1vok",
+          "title": "A verdade sobre Microondas e Panelas",
+          "url": "https://www.youtube.com/watch?v=bnxYvKT1vok",
+          "views": "105K views"
+        },
+        {
+          "id": "T2zvkgBYR10",
+          "title": "A verdade sobre os remédios",
+          "url": "https://www.youtube.com/watch?v=T2zvkgBYR10",
+          "views": "46K views"
+        },
+        {
+          "id": "itJuVGackBU",
+          "title": "ALERGIA, INTOLERÂNCIA OU SENSIBILIDADE ALIMENTAR?",
+          "url": "https://www.youtube.com/watch?v=itJuVGackBU",
+          "views": "46K views"
+        },
+        {
+          "id": "Aq_BJv9HV44",
+          "title": "Basic Principles of the Ketogenic Diet | Why We Get Sick - Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=Aq_BJv9HV44",
+          "views": "143K views"
+        },
+        {
+          "id": "SitpEZzMeHc",
+          "title": "Batata frita e sopa enlatada um veneno viciante",
+          "url": "https://www.youtube.com/watch?v=SitpEZzMeHc",
+          "views": "2.7K views"
+        },
+        {
+          "id": "UGksSrpZQHs",
+          "title": "Benefits of Fasting",
+          "url": "https://www.youtube.com/watch?v=UGksSrpZQHs",
+          "views": "7.6K views"
+        },
+        {
+          "id": "pQslDDnN2w8",
+          "title": "CUIDADO COMO VOCÊ SE ALIMENTA",
+          "url": "https://www.youtube.com/watch?v=pQslDDnN2w8"
+        },
+        {
+          "id": "F3mvBRGeHoM",
+          "title": "DEFICIÊNCIA NUTRICIONAL",
+          "url": "https://www.youtube.com/watch?v=F3mvBRGeHoM",
+          "views": "12K views"
+        },
+        {
+          "id": "DVeTLPTH4vs",
+          "title": "DIETA CETOGÊNICA",
+          "url": "https://www.youtube.com/watch?v=DVeTLPTH4vs",
+          "views": "36K views"
+        },
+        {
+          "id": "gRBMqDZZKHg",
+          "title": "Doenças poderiam ser evitadas com suplemento alimentar",
+          "url": "https://www.youtube.com/watch?v=gRBMqDZZKHg",
+          "views": "5.8K views"
+        },
+        {
+          "id": "zyKRmtskVFk",
+          "title": "Dr. Lair Ribeiro nunca vendeu e nem vende remédio ou suplemento.",
+          "url": "https://www.youtube.com/watch?v=zyKRmtskVFk",
+          "views": "15K views"
+        },
+        {
+          "id": "h_ekbkM6EE8",
+          "title": "Entenda o que é suplemento alimentar",
+          "url": "https://www.youtube.com/watch?v=h_ekbkM6EE8",
+          "views": "5.5K views"
+        },
+        {
+          "id": "8YCtKoTg7aM",
+          "title": "Evite esses Alimentos, a sua saúde agradeçe",
+          "url": "https://www.youtube.com/watch?v=8YCtKoTg7aM",
+          "views": "103K views"
+        },
+        {
+          "id": "M13sLQX7v24",
+          "title": "Falta de nutrientes nos alimentos. Suplementação para saúde",
+          "url": "https://www.youtube.com/watch?v=M13sLQX7v24",
+          "views": "18K views"
+        },
+        {
+          "id": "v3UoKw3F-f4",
+          "title": "Importância do conhecimento sobre sua doença para procurar melhoras pela alimentação",
+          "url": "https://www.youtube.com/watch?v=v3UoKw3F-f4",
+          "views": "2.9K views"
+        },
+        {
+          "id": "FP4uwvMTanU",
+          "title": "INCOMPATIBILIDADE ALIMENTAR",
+          "url": "https://www.youtube.com/watch?v=FP4uwvMTanU",
+          "views": "31K views"
+        },
+        {
+          "id": "95fM2IuP0vI",
+          "title": "Incompatibilidade e alergia alimentar Dr  Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=95fM2IuP0vI",
+          "views": "61K views"
+        },
+        {
+          "id": "F5BFCv7en-Q",
+          "title": "Intolerância alimentar",
+          "url": "https://www.youtube.com/watch?v=F5BFCv7en-Q",
+          "views": "5.1K views"
+        },
+        {
+          "id": "hbpkfLKd6Qs",
+          "title": "Lair Ribeiro magnesium chloride",
+          "url": "https://www.youtube.com/watch?v=hbpkfLKd6Qs",
+          "views": "185K views"
+        },
+        {
+          "id": "eB5mnhfZ52U",
+          "title": "MAGNESIUM",
+          "url": "https://www.youtube.com/watch?v=eB5mnhfZ52U",
+          "views": "87K views"
+        },
+        {
+          "id": "4Vr5k7bJxmI",
+          "title": "Magnesium chloride is poorly absorbed, the best way to take it. Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=4Vr5k7bJxmI",
+          "views": "99K views"
+        },
+        {
+          "id": "VR3a6OLHJ6I",
+          "title": "MEDICINA NUTRICIONAL - DR. LAIR RIBEIRO",
+          "url": "https://www.youtube.com/watch?v=VR3a6OLHJ6I",
+          "views": "30K views"
+        },
+        {
+          "id": "v6DWGPNjNIg",
+          "title": "Mude Sua Alimentação, Mude Sua Vida | Hangout com Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=v6DWGPNjNIg",
+          "views": "916K views"
+        },
+        {
+          "id": "Hboc6O18oUU",
+          "title": "NUTRIÇÃO",
+          "url": "https://www.youtube.com/watch?v=Hboc6O18oUU",
+          "views": "13K views"
+        },
+        {
+          "id": "dSM14P652p8",
+          "title": "Nutrição, estilo de vida e meio ambiente",
+          "url": "https://www.youtube.com/watch?v=dSM14P652p8",
+          "views": "18K views"
+        },
+        {
+          "id": "zf9AiO6KhCM",
+          "title": "O alimento que blinda a sua próstata",
+          "url": "https://www.youtube.com/watch?v=zf9AiO6KhCM",
+          "views": "3.7M views"
+        },
+        {
+          "id": "EeCaEei5GHo",
+          "title": "Otimismo e pessimismo: qual deles você alimenta todos os dias?",
+          "url": "https://www.youtube.com/watch?v=EeCaEei5GHo",
+          "views": "Estreia em 18/08/2026, 15:00"
+        },
+        {
+          "id": "FL2ehf5BvyA",
+          "title": "PARA PRESSÃO ALTA, ELIMINE A CARÊNCIA DESSE MINERAL",
+          "url": "https://www.youtube.com/watch?v=FL2ehf5BvyA"
+        },
+        {
+          "id": "EUTE9Z1z1Sw",
+          "title": "PÓS GRADUAÇÃO ADEQUAÇÃO NUTRICIONAL E MANUTENÇÃO DA HOMEOSTASE",
+          "url": "https://www.youtube.com/watch?v=EUTE9Z1z1Sw",
+          "views": "12K views"
+        },
+        {
+          "id": "UbHVRn_T4PA",
+          "title": "REMÉDIO APENAS REMEDIA",
+          "url": "https://www.youtube.com/watch?v=UbHVRn_T4PA",
+          "views": "21K views"
+        },
+        {
+          "id": "qcV29XlIHOk",
+          "title": "Remédios são toxinas que compramos nas farmácias",
+          "url": "https://www.youtube.com/watch?v=qcV29XlIHOk",
+          "views": "9.8K views"
+        },
+        {
+          "id": "SH2fN8xeoLM",
+          "title": "Seu intestino controla sua imunidade — e o sol participa disso",
+          "url": "https://www.youtube.com/watch?v=SH2fN8xeoLM",
+          "views": "6,9 mil"
+        },
+        {
+          "id": "9xQmtfPuI0c",
+          "title": "Síndrome do inverno e deficiência de vitamina D",
+          "url": "https://www.youtube.com/watch?v=9xQmtfPuI0c",
+          "views": "5 mil"
+        },
+        {
+          "id": "dQOq4bTJFe8",
+          "title": "Sobre promessas milagrosas de alguns medicamentos",
+          "url": "https://www.youtube.com/watch?v=dQOq4bTJFe8",
+          "views": "18K views"
+        },
+        {
+          "id": "COrHYEIdzz4",
+          "title": "Suplementação de Vitamina D",
+          "url": "https://www.youtube.com/watch?v=COrHYEIdzz4",
+          "views": "81K views"
+        },
+        {
+          "id": "ZIQVIon4M1o",
+          "title": "The Ketogenic Diet",
+          "url": "https://www.youtube.com/watch?v=ZIQVIon4M1o",
+          "views": "206K views"
+        },
+        {
+          "id": "tKEMj4vDFkI",
+          "title": "TRÊS MANEIRAS DE I NGERIR A VITAMINA K2",
+          "url": "https://www.youtube.com/watch?v=tKEMj4vDFkI"
+        },
+        {
+          "id": "oYa4PiMXqSw",
+          "title": "TRIO DE OURO -  VITAMINAS A, D3 e K2 - Parte 06",
+          "url": "https://www.youtube.com/watch?v=oYa4PiMXqSw",
+          "views": "17K views"
+        },
+        {
+          "id": "GQLZhodhKxI",
+          "title": "TRIO DE OURO - VITAMINAS A, D3 E K2 -  Parte 08",
+          "url": "https://www.youtube.com/watch?v=GQLZhodhKxI",
+          "views": "15K views"
+        },
+        {
+          "id": "_X2EjTGnShc",
+          "title": "TRIO DE OURO - VITAMINAS A, D3 E K2 - Parte 03",
+          "url": "https://www.youtube.com/watch?v=_X2EjTGnShc",
+          "views": "33K views"
+        },
+        {
+          "id": "JCDboc45Ny4",
+          "title": "TRIO DE OURO - VITAMINAS A, D3 E K2 - Parte 05",
+          "url": "https://www.youtube.com/watch?v=JCDboc45Ny4",
+          "views": "19K views"
+        },
+        {
+          "id": "szEY-tyujhg",
+          "title": "TRIO DE OURO - VITAMINAS A, D3 E K2 - Parte 07",
+          "url": "https://www.youtube.com/watch?v=szEY-tyujhg",
+          "views": "19K views"
+        },
+        {
+          "id": "BP9dEFfQSyU",
+          "title": "TRIO DE OURO - VITAMINAS A, D3 e K2 - Parte 08",
+          "url": "https://www.youtube.com/watch?v=BP9dEFfQSyU",
+          "views": "11K views"
+        },
+        {
+          "id": "sbNua_rQUGY",
+          "title": "TRIO DE OURO - Vitaminas A, D3 e K2 - Parte 13",
+          "url": "https://www.youtube.com/watch?v=sbNua_rQUGY",
+          "views": "20K views"
+        },
+        {
+          "id": "o4lnEVr1gw0",
+          "title": "VITAMINA B12",
+          "url": "https://www.youtube.com/watch?v=o4lnEVr1gw0",
+          "views": "102K views"
+        },
+        {
+          "id": "6GashpHyRTM",
+          "title": "VITAMINA C  PODE AJUDAR A EVITAR DOENÇA CARDÍACA?",
+          "url": "https://www.youtube.com/watch?v=6GashpHyRTM"
+        },
+        {
+          "id": "uEzLiFqhwrY",
+          "title": "Vitamina D: o que esquecemos quando abandonamos o sol",
+          "url": "https://www.youtube.com/watch?v=uEzLiFqhwrY",
+          "views": "7,5 mil"
+        },
+        {
+          "id": "AwJvXf7pcQ4",
+          "title": "VITAMINA D3",
+          "url": "https://www.youtube.com/watch?v=AwJvXf7pcQ4",
+          "views": "46K views"
+        },
+        {
+          "id": "kXumfJzugkc",
+          "title": "Vitamina D3 | Hangout com Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=kXumfJzugkc",
+          "views": "649K views"
+        },
+        {
+          "id": "jXNYEYMC23Y",
+          "title": "Vitamina K2 e tipos de Vitamina K",
+          "url": "https://www.youtube.com/watch?v=jXNYEYMC23Y",
+          "views": "73K views"
+        },
+        {
+          "id": "mtQ2hFHCkoM",
+          "title": "Você chama de remédio. O corpo chama de reposição.",
+          "url": "https://www.youtube.com/watch?v=mtQ2hFHCkoM",
+          "views": "8,2 mil"
+        },
+        {
+          "id": "BAYDxq1L5mk",
+          "title": "VOCÊ É O QUE A COMIDA DA SUA COMIDA COMEU - Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=BAYDxq1L5mk",
+          "views": "18K views"
+        },
+        {
+          "id": "b7ArXAbz_uE",
+          "title": "WHAT IS THE DIFFERENCE BETWEEN THE MEDITERRANEAN AND KETOGENIC DIET?",
+          "url": "https://www.youtube.com/watch?v=b7ArXAbz_uE",
+          "views": "9.6K views"
+        }
+      ]
+    },
+    {
+      "id": "exercicio",
+      "label": "Exercício e músculo",
+      "labelEn": "Exercise and muscle",
+      "labelEs": "Ejercicio y músculo",
+      "count": 1,
+      "videos": [
+        {
+          "id": "cniU0HWipCs",
+          "title": "O PODER DA MECÂNICA BUCAL NO DESEMPENHO MUSCULOESQUELÉTICO",
+          "url": "https://www.youtube.com/watch?v=cniU0HWipCs",
+          "views": "5.9K views"
+        }
+      ]
+    },
+    {
+      "id": "sono",
+      "label": "Sono, stress e ritmo",
+      "labelEn": "Sleep, stress and rhythm",
+      "labelEs": "Sueño, estrés y ritmo",
+      "count": 4,
+      "videos": [
+        {
+          "id": "1ecPR4UjOXc",
+          "title": "DOES SLEEPING IN THE DARK MAKE A DIFFERENCE?",
+          "url": "https://www.youtube.com/watch?v=1ecPR4UjOXc",
+          "views": "43K views"
+        },
+        {
+          "id": "jERD0rr53PU",
+          "title": "ESTRESSE",
+          "url": "https://www.youtube.com/watch?v=jERD0rr53PU",
+          "views": "15K views"
+        },
+        {
+          "id": "g0FgXBdhue4",
+          "title": "O erro noturno que afeta sono, peso e saúde",
+          "url": "https://www.youtube.com/watch?v=g0FgXBdhue4",
+          "views": "14 mil"
+        },
+        {
+          "id": "HC_5VSRUSXI",
+          "title": "Por que a mulher estressada perde progesterona?",
+          "url": "https://www.youtube.com/watch?v=HC_5VSRUSXI",
+          "views": "7,2 mil"
+        }
+      ]
+    },
+    {
+      "id": "imunidade",
+      "label": "Imunidade e infecções",
+      "labelEn": "Immunity and infections",
+      "labelEs": "Inmunidad e infecciones",
+      "count": 28,
+      "videos": [
+        {
+          "id": "pQKMgIKrx3s",
+          "title": "\"Curando isso, iria curar a doença no mundo hoje\" . Dr Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=pQKMgIKrx3s",
+          "views": "16K views"
+        },
+        {
+          "id": "IQ9jINuqShc",
+          "title": "AMALGAMS",
+          "url": "https://www.youtube.com/watch?v=IQ9jINuqShc",
+          "views": "42K views"
+        },
+        {
+          "id": "9BMC1hnBuco",
+          "title": "Antibodies are messengers from the future.",
+          "url": "https://www.youtube.com/watch?v=9BMC1hnBuco",
+          "views": "3.8K views"
+        },
+        {
+          "id": "H59kqNtXJwk",
+          "title": "ANTICORPO ELEVADO JÁ É DOENÇA?",
+          "url": "https://www.youtube.com/watch?v=H59kqNtXJwk"
+        },
+        {
+          "id": "is2UxZngR9U",
+          "title": "As 3 Funções Essenciais do Sistema Imune",
+          "url": "https://www.youtube.com/watch?v=is2UxZngR9U",
+          "views": "4,5 mil"
+        },
+        {
+          "id": "HYzOat08944",
+          "title": "BACTÉRIA - O SEGREDO DOS CENTENÁRIOS",
+          "url": "https://www.youtube.com/watch?v=HYzOat08944"
+        },
+        {
+          "id": "TKyeJJAoE-8",
+          "title": "Como ficar saudável e evitar doenças Dr Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=TKyeJJAoE-8",
+          "views": "10K views"
+        },
+        {
+          "id": "L5Qcq9zLv4g",
+          "title": "CURSO DOENÇAS DEGENERATIVAS",
+          "url": "https://www.youtube.com/watch?v=L5Qcq9zLv4g",
+          "views": "16K views"
+        },
+        {
+          "id": "wsn4UsR9mfA",
+          "title": "Doença, pausa para reflexão",
+          "url": "https://www.youtube.com/watch?v=wsn4UsR9mfA",
+          "views": "4.1K views"
+        },
+        {
+          "id": "2rlFPc2FVUg",
+          "title": "How does the immune system work?",
+          "url": "https://www.youtube.com/watch?v=2rlFPc2FVUg",
+          "views": "8.9K views"
+        },
+        {
+          "id": "Gtdpou_X_IM",
+          "title": "How to Restore and Maintain Healthy Immunity",
+          "url": "https://www.youtube.com/watch?v=Gtdpou_X_IM",
+          "views": "111K views"
+        },
+        {
+          "id": "YLT5HB3Lp38",
+          "title": "Innate and Adaptive Immunity",
+          "url": "https://www.youtube.com/watch?v=YLT5HB3Lp38",
+          "views": "5.1K views"
+        },
+        {
+          "id": "UVwiGI8ouX0",
+          "title": "O futuro da cura já existe — você só não acessou ainda.",
+          "url": "https://www.youtube.com/watch?v=UVwiGI8ouX0",
+          "views": "8,5 mil"
+        },
+        {
+          "id": "Piw8Qk9i2A4",
+          "title": "PANDEMIA COVID-19",
+          "url": "https://www.youtube.com/watch?v=Piw8Qk9i2A4",
+          "views": "123K views"
+        },
+        {
+          "id": "XzBxqy4A4OU",
+          "title": "PODCAST  LIVE  - TUDO SOBRE COVID-19 - DR. LAIR RIBEIRO",
+          "url": "https://www.youtube.com/watch?v=XzBxqy4A4OU",
+          "views": "46K views"
+        },
+        {
+          "id": "7LsdcgEmtDI",
+          "title": "QUAL A DIFERENÇA QUE FAZ A DIFERENÇA NO SEU SISTEMA IMUNE?",
+          "url": "https://www.youtube.com/watch?v=7LsdcgEmtDI",
+          "views": "11K views"
+        },
+        {
+          "id": "vTXDyWVblTc",
+          "title": "Qual é o modelo do sistema imune?",
+          "url": "https://www.youtube.com/watch?v=vTXDyWVblTc",
+          "views": "4K views"
+        },
+        {
+          "id": "_CS3T0wgHEo",
+          "title": "Que o sistema imune esteja conosco.",
+          "url": "https://www.youtube.com/watch?v=_CS3T0wgHEo",
+          "views": "4.7K views"
+        },
+        {
+          "id": "H3WKMifXK9s",
+          "title": "Se você cura uma célula, você muda um organismo",
+          "url": "https://www.youtube.com/watch?v=H3WKMifXK9s",
+          "views": "6,3 mil"
+        },
+        {
+          "id": "K9XVEZ--sI0",
+          "title": "SISTEMA AUTOIMUNE",
+          "url": "https://www.youtube.com/watch?v=K9XVEZ--sI0",
+          "views": "56K views"
+        },
+        {
+          "id": "NqSZM-v-n0c",
+          "title": "Sua Imunidade: Recuperando-a e mantendo-a para vida",
+          "url": "https://www.youtube.com/watch?v=NqSZM-v-n0c",
+          "views": "46K views"
+        },
+        {
+          "id": "0ocZu8akRC8",
+          "title": "Trailer Academia Lair Ribeiro | Imunologia",
+          "url": "https://www.youtube.com/watch?v=0ocZu8akRC8",
+          "views": "10K views"
+        },
+        {
+          "id": "IgsobpbtS-s",
+          "title": "Tumor não é doença",
+          "url": "https://www.youtube.com/watch?v=IgsobpbtS-s",
+          "views": "90K views"
+        },
+        {
+          "id": "5TuBArbnPwU",
+          "title": "Uma vacina contra o câncer",
+          "url": "https://www.youtube.com/watch?v=5TuBArbnPwU",
+          "views": "63K views"
+        },
+        {
+          "id": "dohuRW3iBRg",
+          "title": "VOCÊ DEVE TOMAR A VACINA DA FEBRE AMARELA?",
+          "url": "https://www.youtube.com/watch?v=dohuRW3iBRg",
+          "views": "65K views"
+        },
+        {
+          "id": "5dwXpPkpPIw",
+          "title": "What is the essence of the immune system?",
+          "url": "https://www.youtube.com/watch?v=5dwXpPkpPIw",
+          "views": "5.1K views"
+        },
+        {
+          "id": "Yx6N9LLj6kI",
+          "title": "Where is the immune system located?",
+          "url": "https://www.youtube.com/watch?v=Yx6N9LLj6kI",
+          "views": "7.5K views"
+        },
+        {
+          "id": "gt9tIUrW578",
+          "title": "Why is immunity lower in the elderly?",
+          "url": "https://www.youtube.com/watch?v=gt9tIUrW578",
+          "views": "4K views"
+        }
+      ]
+    },
+    {
+      "id": "autoajuda",
+      "label": "Autoajuda, PNL e sucesso",
+      "labelEn": "Self-help, NLP and success",
+      "labelEs": "Autoayuda, PNL y éxito",
+      "count": 54,
+      "videos": [
+        {
+          "id": "sK95BlZ29_o",
+          "title": "A CRENÇA ESTABELECIDA TEM TENDÊNCIA A SE PERPETUAR",
+          "url": "https://www.youtube.com/watch?v=sK95BlZ29_o",
+          "views": "4.9K views"
+        },
+        {
+          "id": "BW8NQgUMvpQ",
+          "title": "A fórmula para não ser criticado",
+          "url": "https://www.youtube.com/watch?v=BW8NQgUMvpQ",
+          "views": "6,9 mil"
+        },
+        {
+          "id": "mRRaseDXflU",
+          "title": "A Única Constância é a Mudança",
+          "url": "https://www.youtube.com/watch?v=mRRaseDXflU",
+          "views": "3.5K views"
+        },
+        {
+          "id": "5okYER--BSk",
+          "title": "Alguns Paradigmas",
+          "url": "https://www.youtube.com/watch?v=5okYER--BSk",
+          "views": "4.7K views"
+        },
+        {
+          "id": "aCi1j6WZG1w",
+          "title": "AMIGOS DO BEM",
+          "url": "https://www.youtube.com/watch?v=aCi1j6WZG1w",
+          "views": "12K views"
+        },
+        {
+          "id": "0Tp-MrW2tq8",
+          "title": "AMOR PRÓPRIO - Você só pode dar aquilo que você tem, vamos refletir.",
+          "url": "https://www.youtube.com/watch?v=0Tp-MrW2tq8",
+          "views": "19K views"
+        },
+        {
+          "id": "5Ypbu7DzdHI",
+          "title": "Com o passar dos anos perdemos a musculatura, principalmente depois dos 40 | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=5Ypbu7DzdHI",
+          "views": "68K views"
+        },
+        {
+          "id": "3XHLFdPHsjA",
+          "title": "Conviction Brings Success",
+          "url": "https://www.youtube.com/watch?v=3XHLFdPHsjA",
+          "views": "7.7K views"
+        },
+        {
+          "id": "GFr15BpYfWw",
+          "title": "CRENÇA - PODCAST 38",
+          "url": "https://www.youtube.com/watch?v=GFr15BpYfWw",
+          "views": "8.8K views"
+        },
+        {
+          "id": "8sAP8pvLBlM",
+          "title": "DORMIR NO ESCURO, FAZ A DIFERENÇA?",
+          "url": "https://www.youtube.com/watch?v=8sAP8pvLBlM",
+          "views": "8.2K views"
+        },
+        {
+          "id": "mIGYUDT_RlQ",
+          "title": "Emergência ou Urgência? Entenda a Diferença",
+          "url": "https://www.youtube.com/watch?v=mIGYUDT_RlQ",
+          "views": "3,5 mil"
+        },
+        {
+          "id": "GPitHIDBGSg",
+          "title": "Fazendo a diferença no mundo",
+          "url": "https://www.youtube.com/watch?v=GPitHIDBGSg",
+          "views": "6.7K views"
+        },
+        {
+          "id": "rxvER2LgXxo",
+          "title": "LIVRO O SUCESSO NÃO OCORRE POR ACASO",
+          "url": "https://www.youtube.com/watch?v=rxvER2LgXxo",
+          "views": "4.2K views"
+        },
+        {
+          "id": "Kr_wNjJU-Us",
+          "title": "O  SUCESSO NÃO OCORRE POR ACASO - Parte 16",
+          "url": "https://www.youtube.com/watch?v=Kr_wNjJU-Us",
+          "views": "8.3K views"
+        },
+        {
+          "id": "gPEUnebSI9U",
+          "title": "O jeito que você senta no vaso faz uma diferença enorme | Dr Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=gPEUnebSI9U",
+          "views": "15K views"
+        },
+        {
+          "id": "DpdzFHU4nAo",
+          "title": "O Segredo do Sucesso: Dr. Lair revela o que aprendeu",
+          "url": "https://www.youtube.com/watch?v=DpdzFHU4nAo"
+        },
+        {
+          "id": "Qhycm12z3Ts",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO -  Parte 17",
+          "url": "https://www.youtube.com/watch?v=Qhycm12z3Ts",
+          "views": "20K views"
+        },
+        {
+          "id": "XibyFGt_i08",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO -  Parte 18",
+          "url": "https://www.youtube.com/watch?v=XibyFGt_i08",
+          "views": "4.1K views"
+        },
+        {
+          "id": "cluNR5UNLwM",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO -  Parte 19",
+          "url": "https://www.youtube.com/watch?v=cluNR5UNLwM",
+          "views": "6K views"
+        },
+        {
+          "id": "HIXEeflSKWc",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO -  Parte 20",
+          "url": "https://www.youtube.com/watch?v=HIXEeflSKWc",
+          "views": "9.2K views"
+        },
+        {
+          "id": "oaxSGNEVilU",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO -  Parte 21",
+          "url": "https://www.youtube.com/watch?v=oaxSGNEVilU",
+          "views": "11K views"
+        },
+        {
+          "id": "_poVVJyUElg",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO - Parte 02",
+          "url": "https://www.youtube.com/watch?v=_poVVJyUElg",
+          "views": "12K views"
+        },
+        {
+          "id": "NPLsow12JIw",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO - Parte 04",
+          "url": "https://www.youtube.com/watch?v=NPLsow12JIw",
+          "views": "9K views"
+        },
+        {
+          "id": "G0sk4UPeTk0",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO - Parte 05",
+          "url": "https://www.youtube.com/watch?v=G0sk4UPeTk0",
+          "views": "8.3K views"
+        },
+        {
+          "id": "26uKt08xd0c",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO - Parte 06",
+          "url": "https://www.youtube.com/watch?v=26uKt08xd0c",
+          "views": "8.4K views"
+        },
+        {
+          "id": "6vtybPbuHaY",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO - Parte 07",
+          "url": "https://www.youtube.com/watch?v=6vtybPbuHaY",
+          "views": "9.9K views"
+        },
+        {
+          "id": "zQOEggCho2c",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO - Parte 09",
+          "url": "https://www.youtube.com/watch?v=zQOEggCho2c",
+          "views": "16K views"
+        },
+        {
+          "id": "nGAI2kPVb-w",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO - Parte 10",
+          "url": "https://www.youtube.com/watch?v=nGAI2kPVb-w",
+          "views": "9K views"
+        },
+        {
+          "id": "5agBbtaHWMw",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO - Parte 11",
+          "url": "https://www.youtube.com/watch?v=5agBbtaHWMw",
+          "views": "9K views"
+        },
+        {
+          "id": "uAOaR5If_zA",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO - Parte 12",
+          "url": "https://www.youtube.com/watch?v=uAOaR5If_zA",
+          "views": "6.8K views"
+        },
+        {
+          "id": "ImTX4lsAeQo",
+          "title": "O SUCESSO NÃO OCORRE POR ACASO - Parte 13",
+          "url": "https://www.youtube.com/watch?v=ImTX4lsAeQo",
+          "views": "15K views"
+        },
+        {
+          "id": "QrGH_X1-Vm0",
+          "title": "O Sucesso Não Ocorre por Acaso | Hangout com Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=QrGH_X1-Vm0",
+          "views": "395K views"
+        },
+        {
+          "id": "oF_wh4qineg",
+          "title": "O TEMPERO SECRETO PARA A SAÚDE DA MENTE",
+          "url": "https://www.youtube.com/watch?v=oF_wh4qineg"
+        },
+        {
+          "id": "SrUXUx2rLUs",
+          "title": "PODCAST 62   A ÚNICA CONSTÂNCIA É A MUDANÇA",
+          "url": "https://www.youtube.com/watch?v=SrUXUx2rLUs",
+          "views": "9.6K views"
+        },
+        {
+          "id": "VplWGSLC_a4",
+          "title": "PODCAST 64   QUAIS OS INGREDIENTES DO SUCESSO?",
+          "url": "https://www.youtube.com/watch?v=VplWGSLC_a4",
+          "views": "7.8K views"
+        },
+        {
+          "id": "BfNZkeNV2eY",
+          "title": "PODCAST 67   VOCÊ SABE A DIFERENÇA ENTRE SONHO E META",
+          "url": "https://www.youtube.com/watch?v=BfNZkeNV2eY",
+          "views": "10K views"
+        },
+        {
+          "id": "B-QCXBRdJMk",
+          "title": "PODCAST 71   A FORÇA DE UM PARADIGMA",
+          "url": "https://www.youtube.com/watch?v=B-QCXBRdJMk",
+          "views": "5K views"
+        },
+        {
+          "id": "6m7-ELJOuZ4",
+          "title": "PODCAST 72   DIFERENÇA ENTRE URGENTE E IMPORTANTE",
+          "url": "https://www.youtube.com/watch?v=6m7-ELJOuZ4",
+          "views": "7.2K views"
+        },
+        {
+          "id": "gf-76vRZDug",
+          "title": "PODCAST 73   CRENÇA",
+          "url": "https://www.youtube.com/watch?v=gf-76vRZDug",
+          "views": "3.9K views"
+        },
+        {
+          "id": "sJZYsxC8uKg",
+          "title": "POTENCIALIZANDO O SEU SUCESSO PROFISSIONAL",
+          "url": "https://www.youtube.com/watch?v=sJZYsxC8uKg",
+          "views": "10K views"
+        },
+        {
+          "id": "cmFE8bZvwp8",
+          "title": "QUAL O CAMINHO DO SUCESSO - PODCAST 22",
+          "url": "https://www.youtube.com/watch?v=cmFE8bZvwp8",
+          "views": "8.9K views"
+        },
+        {
+          "id": "MUqJwzaJ4QQ",
+          "title": "Rompendo paradigmas",
+          "url": "https://www.youtube.com/watch?v=MUqJwzaJ4QQ",
+          "views": "5.2K views"
+        },
+        {
+          "id": "PUqXx7ouYoI",
+          "title": "SEGMENTE SUAS METAS - PODCAST 14",
+          "url": "https://www.youtube.com/watch?v=PUqXx7ouYoI",
+          "views": "8.4K views"
+        },
+        {
+          "id": "7qZmYqJwBMs",
+          "title": "Somente palestra PORQUE CONTINUAMOS ADOECENDO com Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=7qZmYqJwBMs",
+          "views": "24K views"
+        },
+        {
+          "id": "rK-XOx-CmWg",
+          "title": "SUCCESS DOES NOT HAPPEN BY CHANCE - Part 03",
+          "url": "https://www.youtube.com/watch?v=rK-XOx-CmWg",
+          "views": "18K views"
+        },
+        {
+          "id": "ZDlz8XKxd7k",
+          "title": "SUCCESS DOES NOT HAPPEN BY CHANCE - Part 08",
+          "url": "https://www.youtube.com/watch?v=ZDlz8XKxd7k",
+          "views": "9.1K views"
+        },
+        {
+          "id": "O3yule03qhw",
+          "title": "SUCCESS DOESN'T HAPPEN BY CHANCE - PART 01",
+          "url": "https://www.youtube.com/watch?v=O3yule03qhw",
+          "views": "23K views"
+        },
+        {
+          "id": "q8HZUWsyvPw",
+          "title": "SUCCESS DOESN'T HAPPEN BY CHANCE - Part 15",
+          "url": "https://www.youtube.com/watch?v=q8HZUWsyvPw",
+          "views": "6K views"
+        },
+        {
+          "id": "wloMTqGQ08E",
+          "title": "SUCESSO NÃO OCORRE POR ACASO - Parte 14",
+          "url": "https://www.youtube.com/watch?v=wloMTqGQ08E",
+          "views": "6.7K views"
+        },
+        {
+          "id": "w4IPyu_rsLo",
+          "title": "TER SUCESSO X SER BEM SUCEDIDO",
+          "url": "https://www.youtube.com/watch?v=w4IPyu_rsLo",
+          "views": "7.3K views"
+        },
+        {
+          "id": "EUA0vY1TaOY",
+          "title": "The Recipe for Success",
+          "url": "https://www.youtube.com/watch?v=EUA0vY1TaOY",
+          "views": "5.9K views"
+        },
+        {
+          "id": "T6wDn598rv8",
+          "title": "The Tripod of Success",
+          "url": "https://www.youtube.com/watch?v=T6wDn598rv8",
+          "views": "7.5K views"
+        },
+        {
+          "id": "Laye5eZ-RTI",
+          "title": "VOCÊ POSSUI UMA CRENÇA LIMITANTE?",
+          "url": "https://www.youtube.com/watch?v=Laye5eZ-RTI",
+          "views": "5.4K views"
+        },
+        {
+          "id": "Bjmr8zA2kas",
+          "title": "What Motivates You More: Fear or Self-Interest?",
+          "url": "https://www.youtube.com/watch?v=Bjmr8zA2kas",
+          "views": "12K views"
+        }
+      ]
+    },
+    {
+      "id": "lives",
+      "label": "Lives, hangouts e entrevistas",
+      "labelEn": "Lives, hangouts and interviews",
+      "labelEs": "Lives, hangouts y entrevistas",
+      "count": 94,
+      "videos": [
+        {
+          "id": "JXcwPJ0G9dA",
+          "title": "35 TRAILER ENTREVISTA REPORTER SAUDE FERNANDO BETETI DR LAIR RIBEIRO",
+          "url": "https://www.youtube.com/watch?v=JXcwPJ0G9dA",
+          "views": "1.5K views"
+        },
+        {
+          "id": "VZcefMTlnCE",
+          "title": "71 TRAILER HANGOUT perguntas respostas MEDICO",
+          "url": "https://www.youtube.com/watch?v=VZcefMTlnCE",
+          "views": "984 views"
+        },
+        {
+          "id": "gYWOrO6ZKE0",
+          "title": "78 TRAILER HANGOUT PERGUNTAS RESPOSTAS 01",
+          "url": "https://www.youtube.com/watch?v=gYWOrO6ZKE0",
+          "views": "785 views"
+        },
+        {
+          "id": "M_9YjrTsLsA",
+          "title": "79 TRAILER HANGOUT PERGUNTAS RESPOSTAS 02",
+          "url": "https://www.youtube.com/watch?v=M_9YjrTsLsA",
+          "views": "853 views"
+        },
+        {
+          "id": "IEdnTaFl568",
+          "title": "80 TRAILER HANGOUT PERGUNTAS RESPOSTAS 03",
+          "url": "https://www.youtube.com/watch?v=IEdnTaFl568",
+          "views": "882 views"
+        },
+        {
+          "id": "2EKw6HlabMg",
+          "title": "81 TRAILER HANGOUT PERGUNTAS RESPOSTAS medico 01",
+          "url": "https://www.youtube.com/watch?v=2EKw6HlabMg",
+          "views": "927 views"
+        },
+        {
+          "id": "cQtW1FCQ6T0",
+          "title": "A IMPORTÂNCIA DO DESEMPENHO - PODCAST 21",
+          "url": "https://www.youtube.com/watch?v=cQtW1FCQ6T0",
+          "views": "11K views"
+        },
+        {
+          "id": "fSNtTvmziw0",
+          "title": "A INFLUÊNCIA DOS PENSAMENTOS NA SAÚDE - PODCAST 01",
+          "url": "https://www.youtube.com/watch?v=fSNtTvmziw0",
+          "views": "23K views"
+        },
+        {
+          "id": "oEHZG0RSAZM",
+          "title": "AUTO ACEITAÇÃO - PODCAST 32",
+          "url": "https://www.youtube.com/watch?v=oEHZG0RSAZM",
+          "views": "11K views"
+        },
+        {
+          "id": "T86pjjsvAZI",
+          "title": "CARIDADE E GENEROSIDADE - PODCAST 18",
+          "url": "https://www.youtube.com/watch?v=T86pjjsvAZI",
+          "views": "10K views"
+        },
+        {
+          "id": "Jix1wmNaN2U",
+          "title": "COIN AT THE BOTTOM OF THE OCEAN - PODCAST 06",
+          "url": "https://www.youtube.com/watch?v=Jix1wmNaN2U",
+          "views": "12K views"
+        },
+        {
+          "id": "0Z5_CAxzfLI",
+          "title": "COMO MODIFICAR A AUTO IMAGEM - PODCAST 31",
+          "url": "https://www.youtube.com/watch?v=0Z5_CAxzfLI",
+          "views": "22K views"
+        },
+        {
+          "id": "WK3V_XToC6c",
+          "title": "COMO NOSSO \"EU\" É FORMADO? PODCAST 40",
+          "url": "https://www.youtube.com/watch?v=WK3V_XToC6c",
+          "views": "8.8K views"
+        },
+        {
+          "id": "ECx0hzUmAMM",
+          "title": "COMO TRABALHAR A SUA VISUALIZAÇÃO - PODCAST 29",
+          "url": "https://www.youtube.com/watch?v=ECx0hzUmAMM",
+          "views": "11K views"
+        },
+        {
+          "id": "WBBHqG34224",
+          "title": "CRIANÇA INTERIOR - PODCAST 47",
+          "url": "https://www.youtube.com/watch?v=WBBHqG34224",
+          "views": "7.1K views"
+        },
+        {
+          "id": "ERVO3Dye6OA",
+          "title": "DESENVOLVA SUA INTUIÇÃO - PODCAST 02",
+          "url": "https://www.youtube.com/watch?v=ERVO3Dye6OA",
+          "views": "18K views"
+        },
+        {
+          "id": "53B3eNDi-HQ",
+          "title": "EFICIÊNCIA E EFICÁCIA - PODCAST 20",
+          "url": "https://www.youtube.com/watch?v=53B3eNDi-HQ",
+          "views": "8.3K views"
+        },
+        {
+          "id": "6DbdUcdLjtY",
+          "title": "Entrevista com Dr. Lair Ribeiro no Programa Repórter Saúde",
+          "url": "https://www.youtube.com/watch?v=6DbdUcdLjtY",
+          "views": "464K views"
+        },
+        {
+          "id": "HJs2YQ6-sls",
+          "title": "Hangout com Dr. Lair Ribeiro 16 de Maio de 2017",
+          "url": "https://www.youtube.com/watch?v=HJs2YQ6-sls",
+          "views": "23K views"
+        },
+        {
+          "id": "Q0zoIIFV4SE",
+          "title": "HOW TO CREATE A NEW PARADIGM - PODCAST 35",
+          "url": "https://www.youtube.com/watch?v=Q0zoIIFV4SE",
+          "views": "16K views"
+        },
+        {
+          "id": "9ThI-gcAXXc",
+          "title": "HOW WE CAN CHANGE REALITY - PODCAST 28",
+          "url": "https://www.youtube.com/watch?v=9ThI-gcAXXc",
+          "views": "7.8K views"
+        },
+        {
+          "id": "11CJ9UnwWkM",
+          "title": "INFLUENCING VS. MANIPULATING - PODCAST 09",
+          "url": "https://www.youtube.com/watch?v=11CJ9UnwWkM",
+          "views": "13K views"
+        },
+        {
+          "id": "J5iNBU7tJFc",
+          "title": "INTEREST OR FEAR - PODCAST 04",
+          "url": "https://www.youtube.com/watch?v=J5iNBU7tJFc",
+          "views": "16K views"
+        },
+        {
+          "id": "SzbsItmlmt8",
+          "title": "LEARN TO BE RESILIENT - PODCAST 08",
+          "url": "https://www.youtube.com/watch?v=SzbsItmlmt8",
+          "views": "10K views"
+        },
+        {
+          "id": "4Ib1tKR-sDM",
+          "title": "LEARN TO LEVERAGE - PODCAST 03",
+          "url": "https://www.youtube.com/watch?v=4Ib1tKR-sDM",
+          "views": "11K views"
+        },
+        {
+          "id": "lXFb3SDKY30",
+          "title": "Otimização cerebral - Entrevista Leda Nagle - Capítulo 2 parte 1 | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=lXFb3SDKY30",
+          "views": "8K views"
+        },
+        {
+          "id": "OZ3vwYQZMh0",
+          "title": "Otimização cerebral - Entrevista Leda Nagle - Capítulo 2 parte 2 | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=OZ3vwYQZMh0",
+          "views": "7.3K views"
+        },
+        {
+          "id": "rPPxpG2OOO8",
+          "title": "Otimização cerebral - Entrevista Leda Nagle - Capítulo 2 parte 4 | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=rPPxpG2OOO8",
+          "views": "6.6K views"
+        },
+        {
+          "id": "O9YdJ2b97is",
+          "title": "PEDIR E AGRADECER - PODCAST 46",
+          "url": "https://www.youtube.com/watch?v=O9YdJ2b97is",
+          "views": "9.7K views"
+        },
+        {
+          "id": "gtCmR0knAdA",
+          "title": "PERCEPTION IS REALITY - PODCAST 23",
+          "url": "https://www.youtube.com/watch?v=gtCmR0knAdA",
+          "views": "13K views"
+        },
+        {
+          "id": "eFuc6JRlL1g",
+          "title": "PODCAST  55 - APARÊNCIA",
+          "url": "https://www.youtube.com/watch?v=eFuc6JRlL1g",
+          "views": "7.8K views"
+        },
+        {
+          "id": "6Q_MWTzPNls",
+          "title": "PODCAST 49 - VALORIZE SUAS QUALIDADES",
+          "url": "https://www.youtube.com/watch?v=6Q_MWTzPNls",
+          "views": "5.6K views"
+        },
+        {
+          "id": "jFEVl9u47nY",
+          "title": "PODCAST 50 - DO YOU TAKE RISKS IN LIFE?",
+          "url": "https://www.youtube.com/watch?v=jFEVl9u47nY",
+          "views": "8.6K views"
+        },
+        {
+          "id": "ggf0QKRQjL0",
+          "title": "PODCAST 51 - RESILIÊNCIA",
+          "url": "https://www.youtube.com/watch?v=ggf0QKRQjL0",
+          "views": "3.4K views"
+        },
+        {
+          "id": "xxhjRYrRWyg",
+          "title": "PODCAST 52 - MEDO DE ERRAR",
+          "url": "https://www.youtube.com/watch?v=xxhjRYrRWyg",
+          "views": "7.7K views"
+        },
+        {
+          "id": "UpdVgMGG1Kk",
+          "title": "PODCAST 53 - SORRIA MAIS",
+          "url": "https://www.youtube.com/watch?v=UpdVgMGG1Kk",
+          "views": "7.2K views"
+        },
+        {
+          "id": "jyi1MIl-e74",
+          "title": "PODCAST 54  - VÔCÊ CONTRIBUI OU CUSTA MAIS PARA O UNIVERSO?",
+          "url": "https://www.youtube.com/watch?v=jyi1MIl-e74",
+          "views": "9.4K views"
+        },
+        {
+          "id": "-3YY53u0njs",
+          "title": "PODCAST 56   ESCUTE MAIS, FALE MENOS",
+          "url": "https://www.youtube.com/watch?v=-3YY53u0njs",
+          "views": "15K views"
+        },
+        {
+          "id": "fBEDvSi5Sx4",
+          "title": "PODCAST 57   LINGUAGEM CORPORAL",
+          "url": "https://www.youtube.com/watch?v=fBEDvSi5Sx4",
+          "views": "7.7K views"
+        },
+        {
+          "id": "qifxBSbkRTU",
+          "title": "PODCAST 58 4 PHASES OF LEARNING",
+          "url": "https://www.youtube.com/watch?v=qifxBSbkRTU",
+          "views": "4.6K views"
+        },
+        {
+          "id": "nO3jw-xVm9o",
+          "title": "PODCAST 59   APRENDENDO A APRENDER",
+          "url": "https://www.youtube.com/watch?v=nO3jw-xVm9o",
+          "views": "10K views"
+        },
+        {
+          "id": "jhM4ldTKVXQ",
+          "title": "PODCAST 60  QUAL É O SEU ESTADO MENTAL",
+          "url": "https://www.youtube.com/watch?v=jhM4ldTKVXQ",
+          "views": "11K views"
+        },
+        {
+          "id": "NSKkB9PSnQc",
+          "title": "PODCAST 61   QUANTO  REAL É A REALIDADE?",
+          "url": "https://www.youtube.com/watch?v=NSKkB9PSnQc",
+          "views": "10K views"
+        },
+        {
+          "id": "qy57VCGqhq8",
+          "title": "PODCAST 65   AUTO ESTIMA",
+          "url": "https://www.youtube.com/watch?v=qy57VCGqhq8",
+          "views": "6.2K views"
+        },
+        {
+          "id": "ta5ypN3vjqs",
+          "title": "PODCAST 66   3 FASES FUMENTAMENTAIS NA SUA VIDA",
+          "url": "https://www.youtube.com/watch?v=ta5ypN3vjqs",
+          "views": "6.6K views"
+        },
+        {
+          "id": "KeqnaEiM8Hs",
+          "title": "PODCAST 68   COMO GERMINAR UMA IDEIA",
+          "url": "https://www.youtube.com/watch?v=KeqnaEiM8Hs",
+          "views": "9.8K views"
+        },
+        {
+          "id": "1mbgiSK60Ro",
+          "title": "PODCAST 69   GRATIDÃO E PERDÃO",
+          "url": "https://www.youtube.com/watch?v=1mbgiSK60Ro",
+          "views": "11K views"
+        },
+        {
+          "id": "fNswGzP7_hE",
+          "title": "PODCAST 70   BALANCE",
+          "url": "https://www.youtube.com/watch?v=fNswGzP7_hE",
+          "views": "6.2K views"
+        },
+        {
+          "id": "TWOTJ5bPMcc",
+          "title": "PODCAST 74   O PODER DA DECLARAÇÃO",
+          "url": "https://www.youtube.com/watch?v=TWOTJ5bPMcc",
+          "views": "7.1K views"
+        },
+        {
+          "id": "J1L1swRibJo",
+          "title": "PODCAST 75 NÃO DÊ CONSELHOS PARA NINGUÉM",
+          "url": "https://www.youtube.com/watch?v=J1L1swRibJo",
+          "views": "19K views"
+        },
+        {
+          "id": "YOAQwUQGIAk",
+          "title": "PODCAST 76  PARA QUEM VOCÊ TRABALHA",
+          "url": "https://www.youtube.com/watch?v=YOAQwUQGIAk",
+          "views": "5K views"
+        },
+        {
+          "id": "0vcoKGCoypA",
+          "title": "PODCAST 77   AMBIÇÃO",
+          "url": "https://www.youtube.com/watch?v=0vcoKGCoypA",
+          "views": "4.4K views"
+        },
+        {
+          "id": "1KZ8E8KV0KM",
+          "title": "PODCAST 78   TORNAR POSSÍVEL O IMPOSSÍVEL",
+          "url": "https://www.youtube.com/watch?v=1KZ8E8KV0KM",
+          "views": "12K views"
+        },
+        {
+          "id": "GVix8lbbvVw",
+          "title": "PODCAST 79   QUAIS SÃO SUAS QUALIDADES",
+          "url": "https://www.youtube.com/watch?v=GVix8lbbvVw",
+          "views": "9K views"
+        },
+        {
+          "id": "Cp1oPUlvjaI",
+          "title": "PODCAST 80   COISA IMPORTANTES SÃO COLOCADAS NO PAPEL",
+          "url": "https://www.youtube.com/watch?v=Cp1oPUlvjaI",
+          "views": "12K views"
+        },
+        {
+          "id": "1IxQ_lI30I0",
+          "title": "PODCAST 81   INTELIGÊNCIA FINANCEIRA",
+          "url": "https://www.youtube.com/watch?v=1IxQ_lI30I0",
+          "views": "8.4K views"
+        },
+        {
+          "id": "Di5MUNtiBUc",
+          "title": "PODCAST 82   A PRIMEIRA IMPRESSÃO É A QUE FICA",
+          "url": "https://www.youtube.com/watch?v=Di5MUNtiBUc",
+          "views": "6.3K views"
+        },
+        {
+          "id": "xVju6_7POYk",
+          "title": "PODCAST 83   A TÉCNICA DO SANDUÍCHE",
+          "url": "https://www.youtube.com/watch?v=xVju6_7POYk",
+          "views": "7.7K views"
+        },
+        {
+          "id": "3NcqbLpf9AM",
+          "title": "PODCAST 83   A TÉCNICA DO SANDUÍCHE",
+          "url": "https://www.youtube.com/watch?v=3NcqbLpf9AM",
+          "views": "4.6K views"
+        },
+        {
+          "id": "0uYkFNZSGXY",
+          "title": "Por Quê Adoecemos | Hangout com Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=0uYkFNZSGXY",
+          "views": "336K views"
+        },
+        {
+          "id": "h0U2YfyReZM",
+          "title": "Por que Continuamos Adoecendo | Hangout com Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=h0U2YfyReZM",
+          "views": "207K views"
+        },
+        {
+          "id": "gKTCuj7kB6U",
+          "title": "Porque adoecemos - Entrevista Leda Nagle  - Capítulo 1 parte 5  | Dr  Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=gKTCuj7kB6U",
+          "views": "5.8K views"
+        },
+        {
+          "id": "rJo2Uj1A3jk",
+          "title": "Porque adoecemos - Entrevista Leda Nagle  - Capítulo 1 parte 6 | Dr.  Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=rJo2Uj1A3jk",
+          "views": "6.8K views"
+        },
+        {
+          "id": "Qp65T3GG8O4",
+          "title": "Porque adoecemos - Entrevista Leda Nagle - Capítulo 1 parte 1| Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=Qp65T3GG8O4",
+          "views": "7.9K views"
+        },
+        {
+          "id": "FtKTvdKG3wU",
+          "title": "Porque adoecemos - Entrevista Leda Nagle - Capítulo 1 parte 10 | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=FtKTvdKG3wU",
+          "views": "7.1K views"
+        },
+        {
+          "id": "MuR7-enJesQ",
+          "title": "Porque adoecemos - Entrevista Leda Nagle - Capítulo 1 parte 2 | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=MuR7-enJesQ",
+          "views": "9.4K views"
+        },
+        {
+          "id": "HBBMmD3p93Y",
+          "title": "Porque adoecemos - Entrevista Leda Nagle - Capítulo 1 parte 3 | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=HBBMmD3p93Y",
+          "views": "7K views"
+        },
+        {
+          "id": "I62OvQlMDHk",
+          "title": "Porque adoecemos - Entrevista Leda Nagle - Capítulo 1 parte 4 | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=I62OvQlMDHk",
+          "views": "5.9K views"
+        },
+        {
+          "id": "V7oy8QL9twI",
+          "title": "Porque adoecemos - Entrevista Leda Nagle - Capítulo 1 parte 9 | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=V7oy8QL9twI",
+          "views": "6.3K views"
+        },
+        {
+          "id": "RU76n4bhiOE",
+          "title": "QUAIS SÃO AS SUAS LIMITAÇÕES - PODCAST 13",
+          "url": "https://www.youtube.com/watch?v=RU76n4bhiOE",
+          "views": "12K views"
+        },
+        {
+          "id": "ae7-nd-7r-o",
+          "title": "QUAL A SUA INTELIGÊNCIA - PODCAST 41",
+          "url": "https://www.youtube.com/watch?v=ae7-nd-7r-o",
+          "views": "13K views"
+        },
+        {
+          "id": "CZVBnAc-JuU",
+          "title": "QUAL A SUA LINGUAGEM? - PODCAST 44",
+          "url": "https://www.youtube.com/watch?v=CZVBnAc-JuU",
+          "views": "10K views"
+        },
+        {
+          "id": "fleCq2VfAwQ",
+          "title": "QUAL É O PROBLEMA - PODCAST 25",
+          "url": "https://www.youtube.com/watch?v=fleCq2VfAwQ",
+          "views": "8.2K views"
+        },
+        {
+          "id": "GDP9xXSOJLc",
+          "title": "QUAL SEU POTENCIAL - PODCAST 33",
+          "url": "https://www.youtube.com/watch?v=GDP9xXSOJLc",
+          "views": "4.9K views"
+        },
+        {
+          "id": "gA8nd3sJQYM",
+          "title": "QUANTO VALE SEU CORPO - PODCAST 48",
+          "url": "https://www.youtube.com/watch?v=gA8nd3sJQYM",
+          "views": "6K views"
+        },
+        {
+          "id": "WKVPifejqjc",
+          "title": "REASON AND EMOTION - PODCAST 34",
+          "url": "https://www.youtube.com/watch?v=WKVPifejqjc",
+          "views": "8.4K views"
+        },
+        {
+          "id": "pzIKMe73ZUA",
+          "title": "SEEING IS BELIEVING OR BELIEVING IS SEEING - PODCAST 24",
+          "url": "https://www.youtube.com/watch?v=pzIKMe73ZUA",
+          "views": "8.3K views"
+        },
+        {
+          "id": "bMut7mRvE0A",
+          "title": "SER, FAZER E TER - PODCAST 45",
+          "url": "https://www.youtube.com/watch?v=bMut7mRvE0A",
+          "views": "12K views"
+        },
+        {
+          "id": "gIeiIWFISsc",
+          "title": "SIMPLICIDADE E FACILIDADE - PODCAST 19",
+          "url": "https://www.youtube.com/watch?v=gIeiIWFISsc",
+          "views": "9.9K views"
+        },
+        {
+          "id": "U4UTlq5g_MM",
+          "title": "SISTEMATIZAÇÃO - PODCAST 26",
+          "url": "https://www.youtube.com/watch?v=U4UTlq5g_MM",
+          "views": "12K views"
+        },
+        {
+          "id": "5e2yVs5Tw3I",
+          "title": "SONHE DE NOITE, TRABALHE DE DIA - PODCAST 16",
+          "url": "https://www.youtube.com/watch?v=5e2yVs5Tw3I",
+          "views": "12K views"
+        },
+        {
+          "id": "0ET-wBsBRIA",
+          "title": "SONHO EM META E META EM REALIDADE - PODCAST 17",
+          "url": "https://www.youtube.com/watch?v=0ET-wBsBRIA",
+          "views": "10K views"
+        },
+        {
+          "id": "fyBcwDeNCRo",
+          "title": "THE POWER OF VISUALIZATION - PODCAST 07",
+          "url": "https://www.youtube.com/watch?v=fyBcwDeNCRo",
+          "views": "14K views"
+        },
+        {
+          "id": "oEh8rPaJefs",
+          "title": "TRAILER HANGOUT DR. LAIR RIBEIRO",
+          "url": "https://www.youtube.com/watch?v=oEh8rPaJefs",
+          "views": "875 views"
+        },
+        {
+          "id": "YhX91tinVnQ",
+          "title": "trailer SEGUNDO HANGOUT DR. LAIR RIBEIRO",
+          "url": "https://www.youtube.com/watch?v=YhX91tinVnQ",
+          "views": "1K views"
+        },
+        {
+          "id": "GTGGXN66r_c",
+          "title": "Transmissão ao vivo de Dr. Lair Ribeiro Oficial",
+          "url": "https://www.youtube.com/watch?v=GTGGXN66r_c"
+        },
+        {
+          "id": "zWvkgV1Bo6E",
+          "title": "Transmissão ao vivo de Dr. Lair Ribeiro Oficial",
+          "url": "https://www.youtube.com/watch?v=zWvkgV1Bo6E"
+        },
+        {
+          "id": "GC-H1V_v9Yo",
+          "title": "TURN OBSTACLES INTO STEPS - PODCAST 10",
+          "url": "https://www.youtube.com/watch?v=GC-H1V_v9Yo",
+          "views": "13K views"
+        },
+        {
+          "id": "EzrKQo_A3qU",
+          "title": "VOCÊ PENSA COMO UM CARRO OU COMO UM AVIÃO - PODCAST 11",
+          "url": "https://www.youtube.com/watch?v=EzrKQo_A3qU",
+          "views": "10K views"
+        },
+        {
+          "id": "qqftLaCILvM",
+          "title": "VOCÊ SOBRE POR ANTECIPAÇÃO - PODCAST 37",
+          "url": "https://www.youtube.com/watch?v=qqftLaCILvM",
+          "views": "10K views"
+        },
+        {
+          "id": "jZtblEwq1rQ",
+          "title": "WHAT IS THE DIFFERENCE BETWEEN SELF-ESTEEM AND SELF-IMAGE - PODCAST 30",
+          "url": "https://www.youtube.com/watch?v=jZtblEwq1rQ",
+          "views": "13K views"
+        },
+        {
+          "id": "ld2cS5gezDE",
+          "title": "WHAT IS YOUR REALITY - PODCAST 27",
+          "url": "https://www.youtube.com/watch?v=ld2cS5gezDE",
+          "views": "9.2K views"
+        },
+        {
+          "id": "W-UnK8Jetnc",
+          "title": "WHAT IS YOUR RELATIONSHIP WITH MONEY - PODCAST 36",
+          "url": "https://www.youtube.com/watch?v=W-UnK8Jetnc",
+          "views": "15K views"
+        },
+        {
+          "id": "mmtYAMPmQkk",
+          "title": "WHEN THE MAN IS RIGHT, THE WORLD IS RIGHT - PODCAST 05",
+          "url": "https://www.youtube.com/watch?v=mmtYAMPmQkk",
+          "views": "10K views"
+        }
+      ]
+    },
+    {
+      "id": "trailers",
+      "label": "Trailers e séries numeradas",
+      "labelEn": "Trailers and numbered series",
+      "labelEs": "Trailers y series numeradas",
+      "count": 85,
+      "videos": [
+        {
+          "id": "LFnDfitXpA4",
+          "title": "06 TRAILER COMO ADMINISTRAR MELHOR",
+          "url": "https://www.youtube.com/watch?v=LFnDfitXpA4",
+          "views": "2K views"
+        },
+        {
+          "id": "j95_jWLK5iY",
+          "title": "09 TRAILER MARKETING COM ETICA NA AREA DA SAUDE",
+          "url": "https://www.youtube.com/watch?v=j95_jWLK5iY",
+          "views": "1.3K views"
+        },
+        {
+          "id": "SkgJbLOH5o8",
+          "title": "11 GETTING RICH TRAILER",
+          "url": "https://www.youtube.com/watch?v=SkgJbLOH5o8",
+          "views": "2.7K views"
+        },
+        {
+          "id": "hgr56gqkQbU",
+          "title": "110 TRAILER Marketing com etica na area da saude disco 01",
+          "url": "https://www.youtube.com/watch?v=hgr56gqkQbU",
+          "views": "3.9K views"
+        },
+        {
+          "id": "S5Dt0qzqk0w",
+          "title": "111 TRAILER Marketing com etica na area da saude disco 02",
+          "url": "https://www.youtube.com/watch?v=S5Dt0qzqk0w",
+          "views": "3.8K views"
+        },
+        {
+          "id": "EmwrcyOzd2I",
+          "title": "112 TRAILER Marketing com etica na area da saude disco 03",
+          "url": "https://www.youtube.com/watch?v=EmwrcyOzd2I",
+          "views": "5.8K views"
+        },
+        {
+          "id": "B_vPexS2iTA",
+          "title": "113 TRAILER Marketing com etica na area da saude disco 04",
+          "url": "https://www.youtube.com/watch?v=B_vPexS2iTA",
+          "views": "4.6K views"
+        },
+        {
+          "id": "cRtwkAyB8fY",
+          "title": "13 TRAILER O USO DO HCG",
+          "url": "https://www.youtube.com/watch?v=cRtwkAyB8fY",
+          "views": "8.8K views"
+        },
+        {
+          "id": "cpZ3jex2mk0",
+          "title": "14 TRAILER LDN",
+          "url": "https://www.youtube.com/watch?v=cpZ3jex2mk0",
+          "views": "12K views"
+        },
+        {
+          "id": "pbcmmr742VA",
+          "title": "15 TRAILER EXAMES LABORATORIAIS",
+          "url": "https://www.youtube.com/watch?v=pbcmmr742VA",
+          "views": "2.1K views"
+        },
+        {
+          "id": "Cmj4fVXGMZ0",
+          "title": "16 TRAILER PORQUE ADOECEMOS",
+          "url": "https://www.youtube.com/watch?v=Cmj4fVXGMZ0",
+          "views": "2.5K views"
+        },
+        {
+          "id": "5ZD2DKu-6Kc",
+          "title": "18 TRAILER OVO",
+          "url": "https://www.youtube.com/watch?v=5ZD2DKu-6Kc",
+          "views": "3.4K views"
+        },
+        {
+          "id": "kh6fciVWP-k",
+          "title": "22 TRAILER OSTEOPOROSE",
+          "url": "https://www.youtube.com/watch?v=kh6fciVWP-k",
+          "views": "3.8K views"
+        },
+        {
+          "id": "gBhoSDz2F8Y",
+          "title": "23 MITOCHONDRIA TRAILER",
+          "url": "https://www.youtube.com/watch?v=gBhoSDz2F8Y",
+          "views": "5K views"
+        },
+        {
+          "id": "kCaK9TGxrf0",
+          "title": "24 TRAILER INTRODUCAO MEDICINA QUANTICA",
+          "url": "https://www.youtube.com/watch?v=kCaK9TGxrf0",
+          "views": "6.3K views"
+        },
+        {
+          "id": "l-Z9uh3XSIY",
+          "title": "27 TRAILER OZONOTERAPIA",
+          "url": "https://www.youtube.com/watch?v=l-Z9uh3XSIY",
+          "views": "2K views"
+        },
+        {
+          "id": "jqTRAqofyDw",
+          "title": "28 TRAILER EMAGRECER PERMANECER MAGRO",
+          "url": "https://www.youtube.com/watch?v=jqTRAqofyDw",
+          "views": "5.4K views"
+        },
+        {
+          "id": "P1CpxUPFZA0",
+          "title": "29 TRAILER IODO",
+          "url": "https://www.youtube.com/watch?v=P1CpxUPFZA0",
+          "views": "3K views"
+        },
+        {
+          "id": "W5PBNvfkxBQ",
+          "title": "3 Secrets to Overcoming Osteoporosis",
+          "url": "https://www.youtube.com/watch?v=W5PBNvfkxBQ",
+          "views": "480K views"
+        },
+        {
+          "id": "_mLVmzlK3Jw",
+          "title": "30 TRAILER RESPIRACAO CELULAR PRODUCAO ATP",
+          "url": "https://www.youtube.com/watch?v=_mLVmzlK3Jw",
+          "views": "2.5K views"
+        },
+        {
+          "id": "1mTRA3mQYRM",
+          "title": "34 TRAILER COMO ALAVANCAR AS VENDAS",
+          "url": "https://www.youtube.com/watch?v=1mTRA3mQYRM",
+          "views": "1.3K views"
+        },
+        {
+          "id": "kWmz4-tW_EA",
+          "title": "36 TRAILER COMO APRENDER MELHOR",
+          "url": "https://www.youtube.com/watch?v=kWmz4-tW_EA",
+          "views": "3.9K views"
+        },
+        {
+          "id": "0idjoOxXm9Q",
+          "title": "4 questions to solve a problem.",
+          "url": "https://www.youtube.com/watch?v=0idjoOxXm9Q",
+          "views": "6.8K views"
+        },
+        {
+          "id": "4PtZhCfyQIE",
+          "title": "43 TRAILER LDN parte 1 de 2",
+          "url": "https://www.youtube.com/watch?v=4PtZhCfyQIE",
+          "views": "12K views"
+        },
+        {
+          "id": "iAvjQww7-go",
+          "title": "44 TRAILER LDN parte 2 de 2",
+          "url": "https://www.youtube.com/watch?v=iAvjQww7-go",
+          "views": "1.7K views"
+        },
+        {
+          "id": "XT4gwhqN-PM",
+          "title": "45 MITOCHONDRIA TRAILER part 1 of 2",
+          "url": "https://www.youtube.com/watch?v=XT4gwhqN-PM",
+          "views": "5.2K views"
+        },
+        {
+          "id": "uhCku-UGM0I",
+          "title": "46 TRAILER MITOCONDRIA parte 2 de 2",
+          "url": "https://www.youtube.com/watch?v=uhCku-UGM0I",
+          "views": "2.1K views"
+        },
+        {
+          "id": "heuguNZ1BE0",
+          "title": "47 TRAILER ENERGIA VITAL parte 1 de 2",
+          "url": "https://www.youtube.com/watch?v=heuguNZ1BE0",
+          "views": "3.1K views"
+        },
+        {
+          "id": "wlrXEMFAgDw",
+          "title": "48 TRAILER ENERGIA VITAL parte 2 de 2",
+          "url": "https://www.youtube.com/watch?v=wlrXEMFAgDw",
+          "views": "3.3K views"
+        },
+        {
+          "id": "6l4DpzbJXag",
+          "title": "49 TRAILER CELULAS TRONCO TERAPIA CELULAR XENOGENICA parte 1 de 5",
+          "url": "https://www.youtube.com/watch?v=6l4DpzbJXag",
+          "views": "993 views"
+        },
+        {
+          "id": "ysCs4JqTXZY",
+          "title": "50 TRAILER CELULAS TRONCO TERAPIA CELULAR XENOGENICA parte 2 de 5",
+          "url": "https://www.youtube.com/watch?v=ysCs4JqTXZY",
+          "views": "1K views"
+        },
+        {
+          "id": "2Uju-2cXNFU",
+          "title": "51 TRAILER CELULAS TRONCO TERAPIA CELULAR XENOGENICA parte 3 de 5",
+          "url": "https://www.youtube.com/watch?v=2Uju-2cXNFU",
+          "views": "877 views"
+        },
+        {
+          "id": "pmDa2qKrbP8",
+          "title": "52 TRAILER CELULAS TRONCO TERAPIA CELULAR XENOGENICA parte 4 de 5",
+          "url": "https://www.youtube.com/watch?v=pmDa2qKrbP8",
+          "views": "1K views"
+        },
+        {
+          "id": "xxZsFMbOkkk",
+          "title": "53 TRAILER CELULAS TRONCO TERAPIA CELULAR XENOGENICA parte 5 de 5",
+          "url": "https://www.youtube.com/watch?v=xxZsFMbOkkk",
+          "views": "1.3K views"
+        },
+        {
+          "id": "r9PKLCrIM4s",
+          "title": "6 livros que podem transformar a sua vida - Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=r9PKLCrIM4s",
+          "views": "12K views"
+        },
+        {
+          "id": "HFRfVGnVsAA",
+          "title": "60 TRAILER EXAMES LABORATORIAIS parte 1 de 7",
+          "url": "https://www.youtube.com/watch?v=HFRfVGnVsAA",
+          "views": "3.8K views"
+        },
+        {
+          "id": "_6xvvmjk-Bo",
+          "title": "61 TRAILER EXAMES LABORATORIAIS parte 2 de 7",
+          "url": "https://www.youtube.com/watch?v=_6xvvmjk-Bo",
+          "views": "3K views"
+        },
+        {
+          "id": "v9Zs8feTYlM",
+          "title": "62 TRAILER EXAMES LABORATORIAIS parte 3 de 7",
+          "url": "https://www.youtube.com/watch?v=v9Zs8feTYlM",
+          "views": "4.6K views"
+        },
+        {
+          "id": "gWH3c_b1R_E",
+          "title": "63 TRAILER EXAMES LABORATORIAIS parte 4 de 7",
+          "url": "https://www.youtube.com/watch?v=gWH3c_b1R_E",
+          "views": "3.3K views"
+        },
+        {
+          "id": "B-snpETil7k",
+          "title": "64 TRAILER EXAMES LABORATORIAIS parte 5 de 7",
+          "url": "https://www.youtube.com/watch?v=B-snpETil7k",
+          "views": "2.2K views"
+        },
+        {
+          "id": "ZUnyN3WQAN4",
+          "title": "65 Trailer Laboratory Tests Part 6 of 7",
+          "url": "https://www.youtube.com/watch?v=ZUnyN3WQAN4",
+          "views": "5K views"
+        },
+        {
+          "id": "5cVEhlksWes",
+          "title": "66 TRAILER EXAMES LABORATORIAIS parte 7 de 7",
+          "url": "https://www.youtube.com/watch?v=5cVEhlksWes",
+          "views": "21K views"
+        },
+        {
+          "id": "8WjktUFGLkU",
+          "title": "67 TRAILER PORQUE ADOECEMOS parte 1 de 5",
+          "url": "https://www.youtube.com/watch?v=8WjktUFGLkU",
+          "views": "1.4K views"
+        },
+        {
+          "id": "RvNDikyuMpY",
+          "title": "69 TRAILER PORQUE ADOECEMOS parte 3 de 5",
+          "url": "https://www.youtube.com/watch?v=RvNDikyuMpY",
+          "views": "1.1K views"
+        },
+        {
+          "id": "SnaT46rGkiY",
+          "title": "70 TRAILER PORQUE ADOECEMOS parte 4 de 5",
+          "url": "https://www.youtube.com/watch?v=SnaT46rGkiY",
+          "views": "1.1K views"
+        },
+        {
+          "id": "VkGCMkJLe-Y",
+          "title": "71 TRAILER PORQUE ADOECEMOS parte 5 de 5",
+          "url": "https://www.youtube.com/watch?v=VkGCMkJLe-Y",
+          "views": "1.6K views"
+        },
+        {
+          "id": "MZwEDzrLd8o",
+          "title": "75 TRAILER DESTOXIFICACAO parte 1 de 3",
+          "url": "https://www.youtube.com/watch?v=MZwEDzrLd8o",
+          "views": "2.2K views"
+        },
+        {
+          "id": "Nyjft8a8LS0",
+          "title": "76 TRAILER DESTOXIFICACAO parte 2 de 3",
+          "url": "https://www.youtube.com/watch?v=Nyjft8a8LS0",
+          "views": "2K views"
+        },
+        {
+          "id": "rGMGUIrchkU",
+          "title": "77 TRAILER DESTOXIFICACAO parte 3 de 3",
+          "url": "https://www.youtube.com/watch?v=rGMGUIrchkU",
+          "views": "2.5K views"
+        },
+        {
+          "id": "hCQ7u6sw6u8",
+          "title": "A CIÊNCIA DA SAÚDE  - Parte 06",
+          "url": "https://www.youtube.com/watch?v=hCQ7u6sw6u8",
+          "views": "6.8K views"
+        },
+        {
+          "id": "UM0ktXu39v8",
+          "title": "A CIÊNCIA DA SAÚDE - Parte 01",
+          "url": "https://www.youtube.com/watch?v=UM0ktXu39v8",
+          "views": "15K views"
+        },
+        {
+          "id": "mEHaovxPmbg",
+          "title": "A CIÊNCIA DA SAÚDE - Parte 02",
+          "url": "https://www.youtube.com/watch?v=mEHaovxPmbg",
+          "views": "7.7K views"
+        },
+        {
+          "id": "QRn8lMay400",
+          "title": "A CIÊNCIA DA SAÚDE - Parte 4",
+          "url": "https://www.youtube.com/watch?v=QRn8lMay400",
+          "views": "8.5K views"
+        },
+        {
+          "id": "SoMYX-NbFo0",
+          "title": "AS SETE INTELIGÊNCIAS - PARTE 03",
+          "url": "https://www.youtube.com/watch?v=SoMYX-NbFo0",
+          "views": "5K views"
+        },
+        {
+          "id": "7h99Kxsutn4",
+          "title": "AS SETE INTELIGÊNCIAS - PARTE 04",
+          "url": "https://www.youtube.com/watch?v=7h99Kxsutn4",
+          "views": "2.8K views"
+        },
+        {
+          "id": "A1qlNMJfzjw",
+          "title": "AS STE INTELIGÊNIAS - PARTE 02",
+          "url": "https://www.youtube.com/watch?v=A1qlNMJfzjw",
+          "views": "3.1K views"
+        },
+        {
+          "id": "GTHLoL02K8g",
+          "title": "COMO SE ADAPTAR AOS NOVO TEMPOS - PARTE 04",
+          "url": "https://www.youtube.com/watch?v=GTHLoL02K8g",
+          "views": "16K views"
+        },
+        {
+          "id": "AUX9eCB8GB0",
+          "title": "COMO SE ADAPTAR AOS NOVO TEMPOS - PARTE 08",
+          "url": "https://www.youtube.com/watch?v=AUX9eCB8GB0",
+          "views": "13K views"
+        },
+        {
+          "id": "PKUyfpCRXgA",
+          "title": "COMO SE ADAPTAR AOS NOVO TEMPOS - PARTE 09",
+          "url": "https://www.youtube.com/watch?v=PKUyfpCRXgA",
+          "views": "5.3K views"
+        },
+        {
+          "id": "IK_IgHXqefc",
+          "title": "COMO SE ADAPTAR AOS NOVOS TEMPOS - PARTE 01",
+          "url": "https://www.youtube.com/watch?v=IK_IgHXqefc",
+          "views": "30K views"
+        },
+        {
+          "id": "tNbtEEcXpcA",
+          "title": "COMO SE ADAPTAR AOS NOVOS TEMPOS - PARTE 03",
+          "url": "https://www.youtube.com/watch?v=tNbtEEcXpcA",
+          "views": "10K views"
+        },
+        {
+          "id": "kwb7xZCkbm0",
+          "title": "COMO SE ADAPTAR AOS NOVOS TEMPOS - PARTE 05",
+          "url": "https://www.youtube.com/watch?v=kwb7xZCkbm0",
+          "views": "16K views"
+        },
+        {
+          "id": "PrTO5f0bU48",
+          "title": "COMO SE ADAPTAR AOS NOVOS TEMPOS - PARTE 07",
+          "url": "https://www.youtube.com/watch?v=PrTO5f0bU48",
+          "views": "12K views"
+        },
+        {
+          "id": "iJ33CjvTKB0",
+          "title": "COMO SE APADTAR AOS NOVOS TEMPOS - PARTE 02",
+          "url": "https://www.youtube.com/watch?v=iJ33CjvTKB0",
+          "views": "19K views"
+        },
+        {
+          "id": "6YsP7u8SUlk",
+          "title": "FAZENDO MUITO COM POUCO - PARTE 01",
+          "url": "https://www.youtube.com/watch?v=6YsP7u8SUlk",
+          "views": "4.7K views"
+        },
+        {
+          "id": "hfmTQ_T8Jqg",
+          "title": "FAZENDO MUITO COM POUCO - PARTE 02",
+          "url": "https://www.youtube.com/watch?v=hfmTQ_T8Jqg",
+          "views": "4.3K views"
+        },
+        {
+          "id": "Bsf8HK8YxZI",
+          "title": "FAZENDO MUITO COM POUCO - PARTE 03",
+          "url": "https://www.youtube.com/watch?v=Bsf8HK8YxZI",
+          "views": "6.4K views"
+        },
+        {
+          "id": "sBiH4axedjo",
+          "title": "FAZENDO MUITO COM POUCO - PARTE 04",
+          "url": "https://www.youtube.com/watch?v=sBiH4axedjo",
+          "views": "5.4K views"
+        },
+        {
+          "id": "dMxF5_Vwml0",
+          "title": "How I Switched from Allopathy to Nutraceuticals | Interview with Dr. Stephen Sinatra | Trailer 2",
+          "url": "https://www.youtube.com/watch?v=dMxF5_Vwml0",
+          "views": "10K views"
+        },
+        {
+          "id": "6mo0_xjVjF4",
+          "title": "Interview with Dr. Stephen Sinatra | Trailer 1",
+          "url": "https://www.youtube.com/watch?v=6mo0_xjVjF4",
+          "views": "26K views"
+        },
+        {
+          "id": "x3AkS3ocB3Y",
+          "title": "OTIMIZAÇÃO CEREBRAL PARTE 5",
+          "url": "https://www.youtube.com/watch?v=x3AkS3ocB3Y",
+          "views": "5.5K views"
+        },
+        {
+          "id": "AJENveK_e8Q",
+          "title": "PERCEPÇÃO É REALIDADE -  PARTE 03",
+          "url": "https://www.youtube.com/watch?v=AJENveK_e8Q",
+          "views": "6K views"
+        },
+        {
+          "id": "nunrkXAFa7w",
+          "title": "PERCEPÇÃO É REALIDADE - PARTE 01",
+          "url": "https://www.youtube.com/watch?v=nunrkXAFa7w",
+          "views": "4.3K views"
+        },
+        {
+          "id": "ua3GugOYv3s",
+          "title": "PERCEPÇÃO É REALIDADE - PARTE 02",
+          "url": "https://www.youtube.com/watch?v=ua3GugOYv3s",
+          "views": "3.8K views"
+        },
+        {
+          "id": "XeZ7deP0n7g",
+          "title": "PÉROLA - PARTE 01",
+          "url": "https://www.youtube.com/watch?v=XeZ7deP0n7g",
+          "views": "3.6K views"
+        },
+        {
+          "id": "Yt2Ow55BBN8",
+          "title": "PÉROLA - PARTE 02",
+          "url": "https://www.youtube.com/watch?v=Yt2Ow55BBN8",
+          "views": "3.9K views"
+        },
+        {
+          "id": "kLiYVZaEbg4",
+          "title": "PERSONALIDADE - PARTE 01",
+          "url": "https://www.youtube.com/watch?v=kLiYVZaEbg4",
+          "views": "4.5K views"
+        },
+        {
+          "id": "mUv_DnIVaWU",
+          "title": "PERSONALIDADE - PARTE 02",
+          "url": "https://www.youtube.com/watch?v=mUv_DnIVaWU",
+          "views": "3.5K views"
+        },
+        {
+          "id": "AIViUe4j5Oo",
+          "title": "PERSONALIDADE - PARTE 03",
+          "url": "https://www.youtube.com/watch?v=AIViUe4j5Oo",
+          "views": "3.3K views"
+        },
+        {
+          "id": "3O_nCJrThxo",
+          "title": "PERSONALIDADE - PARTE 04",
+          "url": "https://www.youtube.com/watch?v=3O_nCJrThxo",
+          "views": "4.7K views"
+        },
+        {
+          "id": "K1i5G2Z-kso",
+          "title": "Trailer Academia Lair Ribeiro | Câncer",
+          "url": "https://www.youtube.com/watch?v=K1i5G2Z-kso",
+          "views": "7.8K views"
+        },
+        {
+          "id": "UPqTsEM-mzI",
+          "title": "VAMOS RESOLVER O PROBLEMA? PARTE 01",
+          "url": "https://www.youtube.com/watch?v=UPqTsEM-mzI",
+          "views": "7.2K views"
+        },
+        {
+          "id": "Up0KYgHsajc",
+          "title": "VAMOS RESOLVER O PROBLEMA? PARTE 02",
+          "url": "https://www.youtube.com/watch?v=Up0KYgHsajc",
+          "views": "5.6K views"
+        },
+        {
+          "id": "ccjGim5rM-M",
+          "title": "VAMOS RESOLVER O PROBLEMA? PARTE 03",
+          "url": "https://www.youtube.com/watch?v=ccjGim5rM-M",
+          "views": "11K views"
+        },
+        {
+          "id": "91eT5w6jZRI",
+          "title": "WEB-SÉRIE MELHORE SEU CÉREBR0, MELHORE SUA VIDA - Parte 04",
+          "url": "https://www.youtube.com/watch?v=91eT5w6jZRI",
+          "views": "12K views"
+        }
+      ]
+    },
+    {
+      "id": "outros",
+      "label": "Outros temas de divulgação",
+      "labelEn": "Other outreach topics",
+      "labelEs": "Otros temas de divulgación",
+      "count": 358,
+      "videos": [
+        {
+          "id": "lnPDMgOM9lg",
+          "title": "A small difference that makes all the difference.",
+          "url": "https://www.youtube.com/watch?v=lnPDMgOM9lg",
+          "views": "5.4K views"
+        },
+        {
+          "id": "X9q8LYTbq1E",
+          "title": "A VIDA FICA MAIS FELIZ ASSIM... FINAL DE ANO Dr Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=X9q8LYTbq1E",
+          "views": "15K views"
+        },
+        {
+          "id": "cbmgjN2dVg0",
+          "title": "Adrenal fatigue destroys people's lives; learn how to prevent and cure it.",
+          "url": "https://www.youtube.com/watch?v=cbmgjN2dVg0",
+          "views": "97K views"
+        },
+        {
+          "id": "OUbALaoQtTM",
+          "title": "Adrenal fatigue syndrome",
+          "url": "https://www.youtube.com/watch?v=OUbALaoQtTM",
+          "views": "8.1K views"
+        },
+        {
+          "id": "ti5En9n79sQ",
+          "title": "Adrenal Fatigue Syndrome",
+          "url": "https://www.youtube.com/watch?v=ti5En9n79sQ",
+          "views": "140K views"
+        },
+        {
+          "id": "5BUsdPY270Y",
+          "title": "Another clinical approach.",
+          "url": "https://www.youtube.com/watch?v=5BUsdPY270Y",
+          "views": "3.6K views"
+        },
+        {
+          "id": "dg4JKNvPGbk",
+          "title": "APRENDA A DELEGAR",
+          "url": "https://www.youtube.com/watch?v=dg4JKNvPGbk",
+          "views": "2.1K views"
+        },
+        {
+          "id": "caOeXnvm74w",
+          "title": "APRENDA NA PRÁTICA",
+          "url": "https://www.youtube.com/watch?v=caOeXnvm74w",
+          "views": "1.7K views"
+        },
+        {
+          "id": "FNWOOLmMFI4",
+          "title": "Aprendendo com a doença",
+          "url": "https://www.youtube.com/watch?v=FNWOOLmMFI4",
+          "views": "3.6K views"
+        },
+        {
+          "id": "_9HAqNKmM7c",
+          "title": "Aproveita que passa rápido...",
+          "url": "https://www.youtube.com/watch?v=_9HAqNKmM7c",
+          "views": "8.2K views"
+        },
+        {
+          "id": "bL6pptEklK0",
+          "title": "AQUI E AGORA!!!",
+          "url": "https://www.youtube.com/watch?v=bL6pptEklK0",
+          "views": "1.9K views"
+        },
+        {
+          "id": "9zYtzC2-STQ",
+          "title": "AQUI estou eu aos 76 anos, prevenção é tudo, Dr  Lair RIbeiro",
+          "url": "https://www.youtube.com/watch?v=9zYtzC2-STQ",
+          "views": "97K views"
+        },
+        {
+          "id": "MI9ZPnOFCOc",
+          "title": "ARE IRON-ENRICHED FOODS GOOD?",
+          "url": "https://www.youtube.com/watch?v=MI9ZPnOFCOc",
+          "views": "28K views"
+        },
+        {
+          "id": "rAmAiirTzmI",
+          "title": "Are we being deceived?",
+          "url": "https://www.youtube.com/watch?v=rAmAiirTzmI",
+          "views": "8.4K views"
+        },
+        {
+          "id": "snWkUE42tsk",
+          "title": "Are you afraid?",
+          "url": "https://www.youtube.com/watch?v=snWkUE42tsk",
+          "views": "7.3K views"
+        },
+        {
+          "id": "4Hy2xelPP0I",
+          "title": "Are you failing to do something?",
+          "url": "https://www.youtube.com/watch?v=4Hy2xelPP0I",
+          "views": "4.8K views"
+        },
+        {
+          "id": "NBJOqYAS-kM",
+          "title": "Are you happy with what you have?",
+          "url": "https://www.youtube.com/watch?v=NBJOqYAS-kM",
+          "views": "5.8K views"
+        },
+        {
+          "id": "nCMWiS_cSks",
+          "title": "ATENÇÃO  - NÃO FIQUE DE FORA - DR. LAIR RIBEIRO",
+          "url": "https://www.youtube.com/watch?v=nCMWiS_cSks"
+        },
+        {
+          "id": "F3kWJoTG7E0",
+          "title": "AUMEMTE A PRODUTIVIDADE",
+          "url": "https://www.youtube.com/watch?v=F3kWJoTG7E0",
+          "views": "2.8K views"
+        },
+        {
+          "id": "gjT8vA134e8",
+          "title": "Aumento do câncer",
+          "url": "https://www.youtube.com/watch?v=gjT8vA134e8",
+          "views": "8.2K views"
+        },
+        {
+          "id": "YeOAmAJZHuI",
+          "title": "Autoestima",
+          "url": "https://www.youtube.com/watch?v=YeOAmAJZHuI",
+          "views": "11 mil"
+        },
+        {
+          "id": "FHump-GvdGg",
+          "title": "AUTOESTIMA",
+          "url": "https://www.youtube.com/watch?v=FHump-GvdGg",
+          "views": "13K views"
+        },
+        {
+          "id": "Ca0dXQdAlSU",
+          "title": "Aviso Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=Ca0dXQdAlSU",
+          "views": "18K views"
+        },
+        {
+          "id": "LKw4Mjwh-bE",
+          "title": "Aviso Importante",
+          "url": "https://www.youtube.com/watch?v=LKw4Mjwh-bE",
+          "views": "36K views"
+        },
+        {
+          "id": "Fg-N7PDL7Ro",
+          "title": "B12 deficiency",
+          "url": "https://www.youtube.com/watch?v=Fg-N7PDL7Ro",
+          "views": "20K views"
+        },
+        {
+          "id": "I4P4tMFu7F8",
+          "title": "Bem-Vindo academia Lair Ribeiro pay-per-view Portugal",
+          "url": "https://www.youtube.com/watch?v=I4P4tMFu7F8",
+          "views": "3.7K views"
+        },
+        {
+          "id": "hn2iy1ltEjU",
+          "title": "Benefícios de andar descalço",
+          "url": "https://www.youtube.com/watch?v=hn2iy1ltEjU",
+          "views": "20K views"
+        },
+        {
+          "id": "PBF7aVOHqZQ",
+          "title": "Benefits of exercise for cancer patients.",
+          "url": "https://www.youtube.com/watch?v=PBF7aVOHqZQ",
+          "views": "5.3K views"
+        },
+        {
+          "id": "IGV6CW9-yn8",
+          "title": "Benefits of physical exercise",
+          "url": "https://www.youtube.com/watch?v=IGV6CW9-yn8",
+          "views": "17K views"
+        },
+        {
+          "id": "BGbbB_iiUFo",
+          "title": "Benefits of the SUN",
+          "url": "https://www.youtube.com/watch?v=BGbbB_iiUFo",
+          "views": "10K views"
+        },
+        {
+          "id": "9EkMNZpS62Q",
+          "title": "Best Foods: SALT and DARK CHOCOLATE",
+          "url": "https://www.youtube.com/watch?v=9EkMNZpS62Q",
+          "views": "13K views"
+        },
+        {
+          "id": "mdUa15TwDWc",
+          "title": "Beware of little knowledge.",
+          "url": "https://www.youtube.com/watch?v=mdUa15TwDWc",
+          "views": "5.9K views"
+        },
+        {
+          "id": "jvcwKMihnmI",
+          "title": "BUILD YOUR SELF-ESTEEM",
+          "url": "https://www.youtube.com/watch?v=jvcwKMihnmI",
+          "views": "65K views"
+        },
+        {
+          "id": "P6gZnjO2-1Q",
+          "title": "Caloric Restriction",
+          "url": "https://www.youtube.com/watch?v=P6gZnjO2-1Q",
+          "views": "22K views"
+        },
+        {
+          "id": "Jnpq79oLquw",
+          "title": "CAN I DRINK RED WINE?",
+          "url": "https://www.youtube.com/watch?v=Jnpq79oLquw",
+          "views": "41K views"
+        },
+        {
+          "id": "H2nlw6NkWr4",
+          "title": "CÂNCER DE MAMA",
+          "url": "https://www.youtube.com/watch?v=H2nlw6NkWr4",
+          "views": "27K views"
+        },
+        {
+          "id": "2Jg9es8VNTY",
+          "title": "CAPACIDADE NÃO É O MESMO QUE HABILIDADE",
+          "url": "https://www.youtube.com/watch?v=2Jg9es8VNTY",
+          "views": "2.8K views"
+        },
+        {
+          "id": "51vMXmt01OM",
+          "title": "Causas do câncer",
+          "url": "https://www.youtube.com/watch?v=51vMXmt01OM"
+        },
+        {
+          "id": "59LOGccIsVU",
+          "title": "Causes numerous health problems Dr Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=59LOGccIsVU",
+          "views": "36K views"
+        },
+        {
+          "id": "fRcrmUieFOo",
+          "title": "Causes of Vitamin B12 Deficiency",
+          "url": "https://www.youtube.com/watch?v=fRcrmUieFOo",
+          "views": "15K views"
+        },
+        {
+          "id": "pwBvw_X7KTM",
+          "title": "Chá Verde e Sal Rosa do Himalaia",
+          "url": "https://www.youtube.com/watch?v=pwBvw_X7KTM",
+          "views": "55K views"
+        },
+        {
+          "id": "wB5kohCOuiI",
+          "title": "Change to stay",
+          "url": "https://www.youtube.com/watch?v=wB5kohCOuiI",
+          "views": "3.9K views"
+        },
+        {
+          "id": "gJhxodKS8TM",
+          "title": "CHOCOLATE  É O MELHOR ALIADO CONTRA A HIPERTENSÃO",
+          "url": "https://www.youtube.com/watch?v=gJhxodKS8TM"
+        },
+        {
+          "id": "fCIBskbK3Ws",
+          "title": "Cholesterol and Vitamin D",
+          "url": "https://www.youtube.com/watch?v=fCIBskbK3Ws",
+          "views": "18K views"
+        },
+        {
+          "id": "05T6REhUEeA",
+          "title": "Communication is the way to get where you want to go.",
+          "url": "https://www.youtube.com/watch?v=05T6REhUEeA",
+          "views": "3.9K views"
+        },
+        {
+          "id": "7LhjGNRyYx0",
+          "title": "Como a estatística pode enganar.",
+          "url": "https://www.youtube.com/watch?v=7LhjGNRyYx0",
+          "views": "5.4K views"
+        },
+        {
+          "id": "r2xRe1wAx3s",
+          "title": "COMO ENXUGAR GELO",
+          "url": "https://www.youtube.com/watch?v=r2xRe1wAx3s",
+          "views": "32K views"
+        },
+        {
+          "id": "tINhmDIWBtI",
+          "title": "COMO ESSA SOBREMESA 2 X NA SEMANA",
+          "url": "https://www.youtube.com/watch?v=tINhmDIWBtI",
+          "views": "20K views"
+        },
+        {
+          "id": "Do2Pl27kvMQ",
+          "title": "COMO ESTÁ SUA FORMA FISÍCA?",
+          "url": "https://www.youtube.com/watch?v=Do2Pl27kvMQ",
+          "views": "29K views"
+        },
+        {
+          "id": "kFpSbcqOBTI",
+          "title": "Como fui para Harvard?",
+          "url": "https://www.youtube.com/watch?v=kFpSbcqOBTI",
+          "views": "3,1 mil"
+        },
+        {
+          "id": "8ySuVMTbkIY",
+          "title": "COMO O FUTURO CRIA O PRESENTE - PODCAT 43",
+          "url": "https://www.youtube.com/watch?v=8ySuVMTbkIY",
+          "views": "12K views"
+        },
+        {
+          "id": "Vb7xl4pOXJI",
+          "title": "Como ocorre o câncer?",
+          "url": "https://www.youtube.com/watch?v=Vb7xl4pOXJI",
+          "views": "6.3K views"
+        },
+        {
+          "id": "agCDpV5K1lI",
+          "title": "COMO RECUPERAR E MANTER A SAÚDE",
+          "url": "https://www.youtube.com/watch?v=agCDpV5K1lI",
+          "views": "52K views"
+        },
+        {
+          "id": "pE0RSZCYfDU",
+          "title": "COMO RECUPERAR E MANTER A SAÚDE",
+          "url": "https://www.youtube.com/watch?v=pE0RSZCYfDU"
+        },
+        {
+          "id": "ANejHal5O20",
+          "title": "Cómo recuperar y mantener la SALUD - Comprender el proceso de la enfermedad",
+          "url": "https://www.youtube.com/watch?v=ANejHal5O20",
+          "views": "3K views"
+        },
+        {
+          "id": "_gNc30kAzYo",
+          "title": "Cómo recuperar y mantener la SALUD - Fortalecimento del órgano de choque",
+          "url": "https://www.youtube.com/watch?v=_gNc30kAzYo",
+          "views": "5.2K views"
+        },
+        {
+          "id": "fwoaO_yPtvc",
+          "title": "Como usar Sal rosa do Himalaia sal integral 2",
+          "url": "https://www.youtube.com/watch?v=fwoaO_yPtvc",
+          "views": "18K views"
+        },
+        {
+          "id": "BWqvNIfMHqQ",
+          "title": "COMPLAINT! FAKE ABOUT DR. LAIR RIBEIRO",
+          "url": "https://www.youtube.com/watch?v=BWqvNIfMHqQ",
+          "views": "26K views"
+        },
+        {
+          "id": "siC0rih96HE",
+          "title": "COMPLEXIDADE - VELOCIDADE - INCERTEZA",
+          "url": "https://www.youtube.com/watch?v=siC0rih96HE",
+          "views": "4.7K views"
+        },
+        {
+          "id": "AMIQB3NgYY4",
+          "title": "COMUNICADO IMPORTANTE DR. LAIR RIBEIRO",
+          "url": "https://www.youtube.com/watch?v=AMIQB3NgYY4",
+          "views": "142K views"
+        },
+        {
+          "id": "QGmGQLaHL54",
+          "title": "Comunicado Oficial Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=QGmGQLaHL54",
+          "views": "27K views"
+        },
+        {
+          "id": "Sv_iRAskuYk",
+          "title": "Comunicado Oficial Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=Sv_iRAskuYk",
+          "views": "18K views"
+        },
+        {
+          "id": "3wlRr3JNw-4",
+          "title": "Comunicado Oficial Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=3wlRr3JNw-4",
+          "views": "37K views"
+        },
+        {
+          "id": "xAxst9zEUqw",
+          "title": "COMUNICADO OFICIAL DR. LAIR RIBEIRO - CARTILAX",
+          "url": "https://www.youtube.com/watch?v=xAxst9zEUqw",
+          "views": "56K views"
+        },
+        {
+          "id": "9qeLl2APJWk",
+          "title": "Conhecendo uma verdade diferente",
+          "url": "https://www.youtube.com/watch?v=9qeLl2APJWk",
+          "views": "6.4K views"
+        },
+        {
+          "id": "XF1c3xgvxNU",
+          "title": "Conhecimento é poder?",
+          "url": "https://www.youtube.com/watch?v=XF1c3xgvxNU",
+          "views": "5.9K views"
+        },
+        {
+          "id": "Hz1NGKX30tQ",
+          "title": "CONSEQUÊNCIAS...",
+          "url": "https://www.youtube.com/watch?v=Hz1NGKX30tQ",
+          "views": "2.7K views"
+        },
+        {
+          "id": "3eMPlg4IP7Q",
+          "title": "CONVERSE CONSIGO",
+          "url": "https://www.youtube.com/watch?v=3eMPlg4IP7Q",
+          "views": "10K views"
+        },
+        {
+          "id": "ylMDmvtEs2E",
+          "title": "Correlação x Causalidade",
+          "url": "https://www.youtube.com/watch?v=ylMDmvtEs2E",
+          "views": "3K views"
+        },
+        {
+          "id": "i8gIYw_P2R8",
+          "title": "Cristiano Ronaldo e Dr. Lair Ribeiro, o que eles têm em comum?",
+          "url": "https://www.youtube.com/watch?v=i8gIYw_P2R8",
+          "views": "11K views"
+        },
+        {
+          "id": "67ToIUxyV_E",
+          "title": "Cuidando do seu intestino",
+          "url": "https://www.youtube.com/watch?v=67ToIUxyV_E",
+          "views": "290K views"
+        },
+        {
+          "id": "F3-TlPFT_wg",
+          "title": "Deficiência iodo causa câncer",
+          "url": "https://www.youtube.com/watch?v=F3-TlPFT_wg",
+          "views": "9.5K views"
+        },
+        {
+          "id": "n_un7xN5I3U",
+          "title": "Deficiência vitamínica",
+          "url": "https://www.youtube.com/watch?v=n_un7xN5I3U",
+          "views": "10K views"
+        },
+        {
+          "id": "UFq27gVsZzU",
+          "title": "Detox to have a clean and disease-free body",
+          "url": "https://www.youtube.com/watch?v=UFq27gVsZzU",
+          "views": "937K views"
+        },
+        {
+          "id": "wfzQTIdIsW8",
+          "title": "Dicas para alcançar uma saúde plena",
+          "url": "https://www.youtube.com/watch?v=wfzQTIdIsW8",
+          "views": "6.6K views"
+        },
+        {
+          "id": "p5ZthO0cMKA",
+          "title": "Do free radicals interfere with my health?",
+          "url": "https://www.youtube.com/watch?v=p5ZthO0cMKA",
+          "views": "5.5K views"
+        },
+        {
+          "id": "nYkBgzAGouY",
+          "title": "Do plants make vitamin B12?",
+          "url": "https://www.youtube.com/watch?v=nYkBgzAGouY",
+          "views": "13K views"
+        },
+        {
+          "id": "8bRaWPDvlOQ",
+          "title": "Do you chew gum?",
+          "url": "https://www.youtube.com/watch?v=8bRaWPDvlOQ",
+          "views": "7.1K views"
+        },
+        {
+          "id": "nPA15FItXE8",
+          "title": "Do you know about Roller Coaster Syndrome?",
+          "url": "https://www.youtube.com/watch?v=nPA15FItXE8",
+          "views": "36K views"
+        },
+        {
+          "id": "b0h0nN25DT8",
+          "title": "Do you know what the best treatment for a disease is?",
+          "url": "https://www.youtube.com/watch?v=b0h0nN25DT8",
+          "views": "7.1K views"
+        },
+        {
+          "id": "vQKD9qlXarU",
+          "title": "Do you still consume margarine?",
+          "url": "https://www.youtube.com/watch?v=vQKD9qlXarU",
+          "views": "5.9K views"
+        },
+        {
+          "id": "szVZ6RH0UE4",
+          "title": "Do your beliefs still make sense?",
+          "url": "https://www.youtube.com/watch?v=szVZ6RH0UE4",
+          "views": "4K views"
+        },
+        {
+          "id": "bRGhDK2hpsY",
+          "title": "Does homeopathy work?",
+          "url": "https://www.youtube.com/watch?v=bRGhDK2hpsY",
+          "views": "42K views"
+        },
+        {
+          "id": "rqSjfBlz2t8",
+          "title": "Does power corrupt?",
+          "url": "https://www.youtube.com/watch?v=rqSjfBlz2t8",
+          "views": "4.1K views"
+        },
+        {
+          "id": "5VgCgxwcR8o",
+          "title": "DON'T BE AFRAID OF THE SUN",
+          "url": "https://www.youtube.com/watch?v=5VgCgxwcR8o",
+          "views": "51K views"
+        },
+        {
+          "id": "BJVg9JjM15k",
+          "title": "Don't complain about your childhood.",
+          "url": "https://www.youtube.com/watch?v=BJVg9JjM15k",
+          "views": "4.1K views"
+        },
+        {
+          "id": "VYy-11ndzW8",
+          "title": "Don't confuse simple with easy",
+          "url": "https://www.youtube.com/watch?v=VYy-11ndzW8",
+          "views": "4.8K views"
+        },
+        {
+          "id": "J4TqLa5H2vQ",
+          "title": "Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=J4TqLa5H2vQ",
+          "views": "5.6K views"
+        },
+        {
+          "id": "KhDy91A0nWw",
+          "title": "Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=KhDy91A0nWw",
+          "views": "9.2K views"
+        },
+        {
+          "id": "hWkH1MczJcI",
+          "title": "Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=hWkH1MczJcI",
+          "views": "3.6K views"
+        },
+        {
+          "id": "DYTcn_og7i4",
+          "title": "Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=DYTcn_og7i4",
+          "views": "8.9K views"
+        },
+        {
+          "id": "vu2fTBh9W_E",
+          "title": "Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=vu2fTBh9W_E",
+          "views": "9.8K views"
+        },
+        {
+          "id": "7h-OTTv2jlc",
+          "title": "Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=7h-OTTv2jlc",
+          "views": "4K views"
+        },
+        {
+          "id": "oM1BVGRTA4E",
+          "title": "Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=oM1BVGRTA4E",
+          "views": "3.1K views"
+        },
+        {
+          "id": "pWvp14t1Wt4",
+          "title": "Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=pWvp14t1Wt4",
+          "views": "3.4K views"
+        },
+        {
+          "id": "bsSgTYya8hc",
+          "title": "Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=bsSgTYya8hc",
+          "views": "10K views"
+        },
+        {
+          "id": "u4ISUKsesdc",
+          "title": "Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=u4ISUKsesdc",
+          "views": "7.7K views"
+        },
+        {
+          "id": "_lc-MAxbpBg",
+          "title": "DR. LAIR RIBEIRO",
+          "url": "https://www.youtube.com/watch?v=_lc-MAxbpBg",
+          "views": "7.4K views"
+        },
+        {
+          "id": "mN5BwpU0CAc",
+          "title": "DR. LAIR RIBEIRO",
+          "url": "https://www.youtube.com/watch?v=mN5BwpU0CAc",
+          "views": "3.4K views"
+        },
+        {
+          "id": "QUOJYPEOivU",
+          "title": "Dr. Lair Ribeiro fala na Rede GLOBO",
+          "url": "https://www.youtube.com/watch?v=QUOJYPEOivU",
+          "views": "131K views"
+        },
+        {
+          "id": "HrbcM8Otbzw",
+          "title": "DR. LAIR RIBEIRO FALA SOBRE A COENZIMA Q10",
+          "url": "https://www.youtube.com/watch?v=HrbcM8Otbzw",
+          "views": "108K views"
+        },
+        {
+          "id": "cMJamdzTNhI",
+          "title": "Dr. Lair Ribeiro fala sobre a morte de Marcelo Rezende",
+          "url": "https://www.youtube.com/watch?v=cMJamdzTNhI",
+          "views": "124K views"
+        },
+        {
+          "id": "W5YETh-33K4",
+          "title": "Dr. Lair Ribeiro talks about lutein.",
+          "url": "https://www.youtube.com/watch?v=W5YETh-33K4",
+          "views": "43K views"
+        },
+        {
+          "id": "KXl39a9jFCE",
+          "title": "Dr. Lair Ribeiro talks about Salt",
+          "url": "https://www.youtube.com/watch?v=KXl39a9jFCE",
+          "views": "40K views"
+        },
+        {
+          "id": "R15OKh4E6BE",
+          "title": "Dr. Lair Ribeiro talks about Salt",
+          "url": "https://www.youtube.com/watch?v=R15OKh4E6BE",
+          "views": "342K views"
+        },
+        {
+          "id": "RJuo2bMayu8",
+          "title": "Dr. Lair Ribeiro talks about Vitamin B12 - unpublished material",
+          "url": "https://www.youtube.com/watch?v=RJuo2bMayu8",
+          "views": "36K views"
+        },
+        {
+          "id": "YYXQsH34TBg",
+          "title": "Dr. Lair Ribeiro talks about Vitamin B12 - unpublished material - part 2",
+          "url": "https://www.youtube.com/watch?v=YYXQsH34TBg",
+          "views": "296K views"
+        },
+        {
+          "id": "K9zddm4sgkM",
+          "title": "Dr. Lair Ribeiro's lecture at Uningá: The Power of Knowledge",
+          "url": "https://www.youtube.com/watch?v=K9zddm4sgkM",
+          "views": "105K views"
+        },
+        {
+          "id": "sU_L8_UWvU4",
+          "title": "Eat or make juice from the fruit?",
+          "url": "https://www.youtube.com/watch?v=sU_L8_UWvU4",
+          "views": "65K views"
+        },
+        {
+          "id": "Gpd8VEth8TY",
+          "title": "Eficiência vs Eficácia.",
+          "url": "https://www.youtube.com/watch?v=Gpd8VEth8TY",
+          "views": "4.3K views"
+        },
+        {
+          "id": "eFVuAuh__Fc",
+          "title": "Electricity of the body.",
+          "url": "https://www.youtube.com/watch?v=eFVuAuh__Fc",
+          "views": "9.1K views"
+        },
+        {
+          "id": "MLYUOHNqbJY",
+          "title": "Electromagnetic pollution",
+          "url": "https://www.youtube.com/watch?v=MLYUOHNqbJY",
+          "views": "30K views"
+        },
+        {
+          "id": "iJq9wRNfCVI",
+          "title": "Emotional conflicts and diseases",
+          "url": "https://www.youtube.com/watch?v=iJq9wRNfCVI",
+          "views": "6K views"
+        },
+        {
+          "id": "6UYUSYdri28",
+          "title": "ENGAJE TODOS OS COLABORADORES!!!",
+          "url": "https://www.youtube.com/watch?v=6UYUSYdri28",
+          "views": "1.5K views"
+        },
+        {
+          "id": "NDWSrjvG5Qw",
+          "title": "ENTÃO VOCÊ ANDA SEM TEMPO?",
+          "url": "https://www.youtube.com/watch?v=NDWSrjvG5Qw",
+          "views": "5.4K views"
+        },
+        {
+          "id": "XO8JZoxAyio",
+          "title": "Entenda porque você vive doente",
+          "url": "https://www.youtube.com/watch?v=XO8JZoxAyio",
+          "views": "11K views"
+        },
+        {
+          "id": "45rAj6KxV_U",
+          "title": "Epigenética",
+          "url": "https://www.youtube.com/watch?v=45rAj6KxV_U",
+          "views": "11K views"
+        },
+        {
+          "id": "ET5Qifwt9BA",
+          "title": "Epigenetics, gene expression",
+          "url": "https://www.youtube.com/watch?v=ET5Qifwt9BA",
+          "views": "4.1K views"
+        },
+        {
+          "id": "lwHGhYB_c8E",
+          "title": "ERA MÉDICO, VIROU MONSTRO",
+          "url": "https://www.youtube.com/watch?v=lwHGhYB_c8E",
+          "views": "9.2K views"
+        },
+        {
+          "id": "1SUj5WdRbVg",
+          "title": "ESSES LIVROS VÃO MUDAR SUA VIDA!!!!",
+          "url": "https://www.youtube.com/watch?v=1SUj5WdRbVg",
+          "views": "18K views"
+        },
+        {
+          "id": "CQnc_OjymfA",
+          "title": "ESTEJA ATENTO AO EFEITO BORBOLETA!!!",
+          "url": "https://www.youtube.com/watch?v=CQnc_OjymfA",
+          "views": "4.2K views"
+        },
+        {
+          "id": "EbYrFIXSEWw",
+          "title": "ESTRATÉGICA DE PREVENÇÃO",
+          "url": "https://www.youtube.com/watch?v=EbYrFIXSEWw",
+          "views": "6.1K views"
+        },
+        {
+          "id": "y5FErKiWB5E",
+          "title": "EU JÁ TIVE 63, E É MUITO DIFÍCIL...",
+          "url": "https://www.youtube.com/watch?v=y5FErKiWB5E",
+          "views": "16K views"
+        },
+        {
+          "id": "WYtTy33qNFc",
+          "title": "Everything has to be in balance.",
+          "url": "https://www.youtube.com/watch?v=WYtTy33qNFc",
+          "views": "6.2K views"
+        },
+        {
+          "id": "vBje7yDa0dA",
+          "title": "EVITE ESSES ALIEMENTOS",
+          "url": "https://www.youtube.com/watch?v=vBje7yDa0dA",
+          "views": "13K views"
+        },
+        {
+          "id": "5mS1mxHAv7M",
+          "title": "FAÇA MAIS COM MENOS",
+          "url": "https://www.youtube.com/watch?v=5mS1mxHAv7M",
+          "views": "8.4K views"
+        },
+        {
+          "id": "SNWrkOZSsuU",
+          "title": "Fatigue, what could it be?",
+          "url": "https://www.youtube.com/watch?v=SNWrkOZSsuU",
+          "views": "96K views"
+        },
+        {
+          "id": "Vc6orpvAMF8",
+          "title": "Feliz Natal e um Próspero 2024!",
+          "url": "https://www.youtube.com/watch?v=Vc6orpvAMF8",
+          "views": "12K views"
+        },
+        {
+          "id": "bFm6OfmS62c",
+          "title": "First, take care of yourself.",
+          "url": "https://www.youtube.com/watch?v=bFm6OfmS62c",
+          "views": "6K views"
+        },
+        {
+          "id": "biwO0UYN4D8",
+          "title": "Five foods that can improve your health.",
+          "url": "https://www.youtube.com/watch?v=biwO0UYN4D8",
+          "views": "11K views"
+        },
+        {
+          "id": "prXf9NBO1cM",
+          "title": "FOOD X FOOD PRODUCT",
+          "url": "https://www.youtube.com/watch?v=prXf9NBO1cM",
+          "views": "60K views"
+        },
+        {
+          "id": "8Z3gNLbbJDw",
+          "title": "Foods we should NOT eat",
+          "url": "https://www.youtube.com/watch?v=8Z3gNLbbJDw",
+          "views": "21K views"
+        },
+        {
+          "id": "kROXDvfMUFM",
+          "title": "Genérico ou marca: você está pagando mais por quê?",
+          "url": "https://www.youtube.com/watch?v=kROXDvfMUFM",
+          "views": "8,4 mil"
+        },
+        {
+          "id": "n_aUkLBfJts",
+          "title": "GENÉTICA",
+          "url": "https://www.youtube.com/watch?v=n_aUkLBfJts",
+          "views": "19K views"
+        },
+        {
+          "id": "tVCxjtxYMng",
+          "title": "Getting pregnant or miscarrying Irregular cycle and progesterone deficiency",
+          "url": "https://www.youtube.com/watch?v=tVCxjtxYMng",
+          "views": "32K views"
+        },
+        {
+          "id": "mEsSceM32_0",
+          "title": "GOLD TRIO - VITAMINS A, D3 and K2 - Part 01",
+          "url": "https://www.youtube.com/watch?v=mEsSceM32_0",
+          "views": "67K views"
+        },
+        {
+          "id": "wUWSV6noRJM",
+          "title": "GOLD TRIO - VITAMINS A, D3 and K2 - Part 02",
+          "url": "https://www.youtube.com/watch?v=wUWSV6noRJM",
+          "views": "31K views"
+        },
+        {
+          "id": "G3nd_xUmQRk",
+          "title": "GOLD TRIO - VITAMINS A, D3 AND K2 - Part 04",
+          "url": "https://www.youtube.com/watch?v=G3nd_xUmQRk",
+          "views": "19K views"
+        },
+        {
+          "id": "WBEV4Wl0TIg",
+          "title": "GOLDEN TRIO - VITAMINS A, D3 and K2 - Part 10",
+          "url": "https://www.youtube.com/watch?v=WBEV4Wl0TIg",
+          "views": "19K views"
+        },
+        {
+          "id": "E3ByyMBdHyk",
+          "title": "GOLDEN TRIO - VITAMINS A, D3 AND K2 - Part 11",
+          "url": "https://www.youtube.com/watch?v=E3ByyMBdHyk",
+          "views": "16K views"
+        },
+        {
+          "id": "kkK7jhkBiP4",
+          "title": "GOLDEN TRIO - Vitamins A, D3 and K2 Part 12",
+          "url": "https://www.youtube.com/watch?v=kkK7jhkBiP4",
+          "views": "22K views"
+        },
+        {
+          "id": "4Tv3NE_oK9Q",
+          "title": "Good news about cancer",
+          "url": "https://www.youtube.com/watch?v=4Tv3NE_oK9Q",
+          "views": "41K views"
+        },
+        {
+          "id": "9juYqynGXz8",
+          "title": "Habilidade de recomeçar.",
+          "url": "https://www.youtube.com/watch?v=9juYqynGXz8",
+          "views": "5.7K views"
+        },
+        {
+          "id": "vTpCAsda9PY",
+          "title": "HACKEIE SEU CORPO",
+          "url": "https://www.youtube.com/watch?v=vTpCAsda9PY",
+          "views": "11K views"
+        },
+        {
+          "id": "AvqstbC5fjg",
+          "title": "HARA HACHI BU - O SEGREDO PARA NÃO SER DIABÉTICO",
+          "url": "https://www.youtube.com/watch?v=AvqstbC5fjg"
+        },
+        {
+          "id": "mZxmEWDigK0",
+          "title": "Has cancer mortality changed in the last 50 years?",
+          "url": "https://www.youtube.com/watch?v=mZxmEWDigK0",
+          "views": "4.8K views"
+        },
+        {
+          "id": "8KybrQtI3eI",
+          "title": "Health triad",
+          "url": "https://www.youtube.com/watch?v=8KybrQtI3eI",
+          "views": "15K views"
+        },
+        {
+          "id": "_kKlQE7pbvc",
+          "title": "HEMISFÉRIOS",
+          "url": "https://www.youtube.com/watch?v=_kKlQE7pbvc",
+          "views": "6.2K views"
+        },
+        {
+          "id": "9FTQuB0bH-0",
+          "title": "HERANÇA MATERNA SEM PARTICIPAÇÃO PATERNA",
+          "url": "https://www.youtube.com/watch?v=9FTQuB0bH-0",
+          "views": "6.4K views"
+        },
+        {
+          "id": "BDyar557fHQ",
+          "title": "HOMENAGEM PARA O DR. LAIR RIBEIRO",
+          "url": "https://www.youtube.com/watch?v=BDyar557fHQ",
+          "views": "10K views"
+        },
+        {
+          "id": "0hauZPYPGp0",
+          "title": "How do you use your microwave?",
+          "url": "https://www.youtube.com/watch?v=0hauZPYPGp0",
+          "views": "14K views"
+        },
+        {
+          "id": "dLfsHuSXNus",
+          "title": "How is your hydration?",
+          "url": "https://www.youtube.com/watch?v=dLfsHuSXNus",
+          "views": "10K views"
+        },
+        {
+          "id": "_Jlzb4dzeCQ",
+          "title": "How is your pancreas doing?",
+          "url": "https://www.youtube.com/watch?v=_Jlzb4dzeCQ",
+          "views": "47K views"
+        },
+        {
+          "id": "1jmZT9Yy4HE",
+          "title": "How much of your body is blood?",
+          "url": "https://www.youtube.com/watch?v=1jmZT9Yy4HE",
+          "views": "4.9K views"
+        },
+        {
+          "id": "SM3DCQIG3As",
+          "title": "HOW TO ADAPT TO THE NEW TIMES - PART 06",
+          "url": "https://www.youtube.com/watch?v=SM3DCQIG3As",
+          "views": "5.3K views"
+        },
+        {
+          "id": "Fhod_gqvGbE",
+          "title": "How to avoid breast cancer or prevent it from manifesting",
+          "url": "https://www.youtube.com/watch?v=Fhod_gqvGbE",
+          "views": "5.3K views"
+        },
+        {
+          "id": "Odi1ERV84u0",
+          "title": "How to avoid diseases in old age",
+          "url": "https://www.youtube.com/watch?v=Odi1ERV84u0",
+          "views": "35K views"
+        },
+        {
+          "id": "XezIjyRaS84",
+          "title": "How to choose your doctor?",
+          "url": "https://www.youtube.com/watch?v=XezIjyRaS84",
+          "views": "7.5K views"
+        },
+        {
+          "id": "Ryf4q1Z91Fw",
+          "title": "How to find the root cause of your illness",
+          "url": "https://www.youtube.com/watch?v=Ryf4q1Z91Fw",
+          "views": "57K views"
+        },
+        {
+          "id": "nDdDBtFM348",
+          "title": "HOW TO LEARN BETTER",
+          "url": "https://www.youtube.com/watch?v=nDdDBtFM348",
+          "views": "12K views"
+        },
+        {
+          "id": "GncxO_HrJuw",
+          "title": "How to Recover and Maintain Health: Strengthening the Shock Organ",
+          "url": "https://www.youtube.com/watch?v=GncxO_HrJuw",
+          "views": "3.3K views"
+        },
+        {
+          "id": "vrU2o1EOR1w",
+          "title": "How to Recover and Maintain Health: Understanding the illness process",
+          "url": "https://www.youtube.com/watch?v=vrU2o1EOR1w",
+          "views": "5.9K views"
+        },
+        {
+          "id": "G-jJ1NLkXtk",
+          "title": "How to Recover and Maintain Health: Vitality and Self-Healing",
+          "url": "https://www.youtube.com/watch?v=G-jJ1NLkXtk",
+          "views": "2.8K views"
+        },
+        {
+          "id": "U3QVT59IaMM",
+          "title": "How to regain and maintain HEALTH - Vitality and Self-Healing",
+          "url": "https://www.youtube.com/watch?v=U3QVT59IaMM",
+          "views": "3K views"
+        },
+        {
+          "id": "y8O49wO1t_8",
+          "title": "How to Regain and Maintain Health: Principles of Epigenetics",
+          "url": "https://www.youtube.com/watch?v=y8O49wO1t_8",
+          "views": "4.1K views"
+        },
+        {
+          "id": "kcNpyhhAMZg",
+          "title": "How to treat cancer?",
+          "url": "https://www.youtube.com/watch?v=kcNpyhhAMZg",
+          "views": "176K views"
+        },
+        {
+          "id": "JN00bjqlZVI",
+          "title": "How was sucralose created?",
+          "url": "https://www.youtube.com/watch?v=JN00bjqlZVI",
+          "views": "4.4K views"
+        },
+        {
+          "id": "9oJNhByHIKQ",
+          "title": "HYPERTENSION IS YOUR BODY'S ALARM",
+          "url": "https://www.youtube.com/watch?v=9oJNhByHIKQ",
+          "views": "45K views"
+        },
+        {
+          "id": "44tnJfyJOZw",
+          "title": "If it doesn't look like the owner, it's stolen!",
+          "url": "https://www.youtube.com/watch?v=44tnJfyJOZw",
+          "views": "5K views"
+        },
+        {
+          "id": "UiwzRjdTcX0",
+          "title": "Importance of collagen.",
+          "url": "https://www.youtube.com/watch?v=UiwzRjdTcX0",
+          "views": "8.7K views"
+        },
+        {
+          "id": "_RlIfs9AJqo",
+          "title": "Importance of protein.",
+          "url": "https://www.youtube.com/watch?v=_RlIfs9AJqo",
+          "views": "11K views"
+        },
+        {
+          "id": "kr0SRMv-uTw",
+          "title": "Importance of Vitamin D3",
+          "url": "https://www.youtube.com/watch?v=kr0SRMv-uTw",
+          "views": "6.9K views"
+        },
+        {
+          "id": "H6iFxa-Y7ZU",
+          "title": "Important Notice!",
+          "url": "https://www.youtube.com/watch?v=H6iFxa-Y7ZU",
+          "views": "9.8K views"
+        },
+        {
+          "id": "WX1_8PNEoMQ",
+          "title": "INSTA 500k",
+          "url": "https://www.youtube.com/watch?v=WX1_8PNEoMQ",
+          "views": "11K views"
+        },
+        {
+          "id": "o0k5YctKV7M",
+          "title": "Is cancer a cytoplasmic or nuclear disease?",
+          "url": "https://www.youtube.com/watch?v=o0k5YctKV7M",
+          "views": "5.2K views"
+        },
+        {
+          "id": "W8YkXJh1lik",
+          "title": "Is cancer a mitochondrial disease?",
+          "url": "https://www.youtube.com/watch?v=W8YkXJh1lik",
+          "views": "7.3K views"
+        },
+        {
+          "id": "G9Y1JcdPMqk",
+          "title": "IS IT RECOMMENDABLE TO EAT A SALT-FREE DIET?",
+          "url": "https://www.youtube.com/watch?v=G9Y1JcdPMqk",
+          "views": "18K views"
+        },
+        {
+          "id": "U1pqivoxxfk",
+          "title": "Is this paradise?",
+          "url": "https://www.youtube.com/watch?v=U1pqivoxxfk",
+          "views": "4.3K views"
+        },
+        {
+          "id": "w_6VqYE_WPA",
+          "title": "ISSO vai tratar a azia para quem já passou dos 40 e de brinde o cabelo ainda vai crescer Dr Lair",
+          "url": "https://www.youtube.com/watch?v=w_6VqYE_WPA",
+          "views": "159K views"
+        },
+        {
+          "id": "flvE0CAuzf4",
+          "title": "It all starts in the mind",
+          "url": "https://www.youtube.com/watch?v=flvE0CAuzf4",
+          "views": "6.2K views"
+        },
+        {
+          "id": "GVr0S20bb1Q",
+          "title": "It has more vitamin A than chicken liver, carrots, and even eggs. Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=GVr0S20bb1Q",
+          "views": "342K views"
+        },
+        {
+          "id": "KdXAijH09CE",
+          "title": "Lair Ribeiro Crohn's Disease",
+          "url": "https://www.youtube.com/watch?v=KdXAijH09CE",
+          "views": "14K views"
+        },
+        {
+          "id": "fgJlo64shCA",
+          "title": "Lair Ribeiro Detox, which is the best?",
+          "url": "https://www.youtube.com/watch?v=fgJlo64shCA",
+          "views": "78K views"
+        },
+        {
+          "id": "ahAhjWtxGxs",
+          "title": "Lair ribeiro electromagnetic pollution",
+          "url": "https://www.youtube.com/watch?v=ahAhjWtxGxs",
+          "views": "29K views"
+        },
+        {
+          "id": "HRdieGPwBVg",
+          "title": "Lair Ribeiro Vitamin K2",
+          "url": "https://www.youtube.com/watch?v=HRdieGPwBVg",
+          "views": "83K views"
+        },
+        {
+          "id": "F-CE4MKsJPc",
+          "title": "Lair Ribeiro: Cilantro eliminates Mercury",
+          "url": "https://www.youtube.com/watch?v=F-CE4MKsJPc",
+          "views": "10K views"
+        },
+        {
+          "id": "fcJi5IHfWvk",
+          "title": "Lair Ribeiro: French fries, do you know what's inside?",
+          "url": "https://www.youtube.com/watch?v=fcJi5IHfWvk",
+          "views": "19K views"
+        },
+        {
+          "id": "Ou9hcDMbS8U",
+          "title": "Learn how to avoid gallstones",
+          "url": "https://www.youtube.com/watch?v=Ou9hcDMbS8U",
+          "views": "131K views"
+        },
+        {
+          "id": "_xWysnrDb3E",
+          "title": "LEI DE PARETO",
+          "url": "https://www.youtube.com/watch?v=_xWysnrDb3E",
+          "views": "2K views"
+        },
+        {
+          "id": "CocpCBJV_V8",
+          "title": "Let's sabotage the car",
+          "url": "https://www.youtube.com/watch?v=CocpCBJV_V8",
+          "views": "4.8K views"
+        },
+        {
+          "id": "O5ewXIeUfP0",
+          "title": "Mecanismos de defesa do organismo",
+          "url": "https://www.youtube.com/watch?v=O5ewXIeUfP0",
+          "views": "7.5K views"
+        },
+        {
+          "id": "B3cjWRvYJd4",
+          "title": "MÉDICO",
+          "url": "https://www.youtube.com/watch?v=B3cjWRvYJd4",
+          "views": "27K views"
+        },
+        {
+          "id": "PEy74Brf-ac",
+          "title": "Melhor tratamento para doenças?",
+          "url": "https://www.youtube.com/watch?v=PEy74Brf-ac",
+          "views": "6.3K views"
+        },
+        {
+          "id": "--rTW16dxUo",
+          "title": "Menopause: what is it really?",
+          "url": "https://www.youtube.com/watch?v=--rTW16dxUo",
+          "views": "5.9K views"
+        },
+        {
+          "id": "858IhuGqIb8",
+          "title": "METODOLOGIA JAPONESA",
+          "url": "https://www.youtube.com/watch?v=858IhuGqIb8",
+          "views": "2.7K views"
+        },
+        {
+          "id": "dXk9hrf4K1Q",
+          "title": "MEU YOUTUBE OFICIAL",
+          "url": "https://www.youtube.com/watch?v=dXk9hrf4K1Q",
+          "views": "56K views"
+        },
+        {
+          "id": "czO_wAzYs_g",
+          "title": "Minha prioridade aos 76 anos #shorts Dr Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=czO_wAzYs_g"
+        },
+        {
+          "id": "L7_FX9ZQHfQ",
+          "title": "MISSÃO DE VIDA",
+          "url": "https://www.youtube.com/watch?v=L7_FX9ZQHfQ",
+          "views": "19K views"
+        },
+        {
+          "id": "7KaB6j0IecM",
+          "title": "MODELOS MENTAIS",
+          "url": "https://www.youtube.com/watch?v=7KaB6j0IecM",
+          "views": "6.7K views"
+        },
+        {
+          "id": "HXHnKvn855w",
+          "title": "Mortalidade x Letalidade",
+          "url": "https://www.youtube.com/watch?v=HXHnKvn855w",
+          "views": "3.6K views"
+        },
+        {
+          "id": "5vts4l0hldU",
+          "title": "Most Important Things Happen Without Warning",
+          "url": "https://www.youtube.com/watch?v=5vts4l0hldU",
+          "views": "4K views"
+        },
+        {
+          "id": "zfPr6Fu1jEo",
+          "title": "MULHERES",
+          "url": "https://www.youtube.com/watch?v=zfPr6Fu1jEo",
+          "views": "23K views"
+        },
+        {
+          "id": "tyKySmeZJJU",
+          "title": "Myths about salt",
+          "url": "https://www.youtube.com/watch?v=tyKySmeZJJU",
+          "views": "22K views"
+        },
+        {
+          "id": "GoXPd0gUghQ",
+          "title": "NÃO CONSUMA ESSE VENENO",
+          "url": "https://www.youtube.com/watch?v=GoXPd0gUghQ"
+        },
+        {
+          "id": "nswJ0X77NJ4",
+          "title": "Não eduque seu filho....",
+          "url": "https://www.youtube.com/watch?v=nswJ0X77NJ4",
+          "views": "7.6K views"
+        },
+        {
+          "id": "DwkgPoQHBwk",
+          "title": "Não fique chorando!",
+          "url": "https://www.youtube.com/watch?v=DwkgPoQHBwk",
+          "views": "5.1K views"
+        },
+        {
+          "id": "Xa9nVGtYEWc",
+          "title": "Não reclame da sua infância: entenda o que ela lhe ensinou.                    Edição: Ricardo Grun",
+          "url": "https://www.youtube.com/watch?v=Xa9nVGtYEWc",
+          "views": "6 mil"
+        },
+        {
+          "id": "ttrA-MJJeo4",
+          "title": "Ninguém dá bola, tá espalhado em muitas casas | POR QUE ADOECEMOS | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=ttrA-MJJeo4",
+          "views": "24K views"
+        },
+        {
+          "id": "JPKT4KtQNgQ",
+          "title": "Ninguém pode ir além da sua individualidade?",
+          "url": "https://www.youtube.com/watch?v=JPKT4KtQNgQ",
+          "views": "5.3K views"
+        },
+        {
+          "id": "jWPX2Z09ZpE",
+          "title": "Nitric Oxide",
+          "url": "https://www.youtube.com/watch?v=jWPX2Z09ZpE",
+          "views": "49K views"
+        },
+        {
+          "id": "CALPMRPV9to",
+          "title": "No one is condemned to be who they always were",
+          "url": "https://www.youtube.com/watch?v=CALPMRPV9to",
+          "views": "4K views"
+        },
+        {
+          "id": "U6M9cyZnBL0",
+          "title": "NUTRIENTES CEREBRAIS VÃO DIMINUINDO COM O PASSAR DOS ANOS",
+          "url": "https://www.youtube.com/watch?v=U6M9cyZnBL0",
+          "views": "16K views"
+        },
+        {
+          "id": "3hSfqOTf_0o",
+          "title": "Nutritional deficiency is at the root of all illness.",
+          "url": "https://www.youtube.com/watch?v=3hSfqOTf_0o",
+          "views": "7.6K views"
+        },
+        {
+          "id": "pB_4DmpteoU",
+          "title": "O brasileiro que ganhou o Nobel e quase ninguém conhece",
+          "url": "https://www.youtube.com/watch?v=pB_4DmpteoU",
+          "views": "3,6 mil"
+        },
+        {
+          "id": "Han2n0xlN6w",
+          "title": "O câncer é um mensageiro",
+          "url": "https://www.youtube.com/watch?v=Han2n0xlN6w",
+          "views": "21K views"
+        },
+        {
+          "id": "EGh2rj7Wftc",
+          "title": "O CONTO DOS DIAMANTES",
+          "url": "https://www.youtube.com/watch?v=EGh2rj7Wftc",
+          "views": "20K views"
+        },
+        {
+          "id": "H9zK1qBS9qE",
+          "title": "O erro moderno que adoece o corpo",
+          "url": "https://www.youtube.com/watch?v=H9zK1qBS9qE",
+          "views": "10 mil"
+        },
+        {
+          "id": "u1uQA6KsOK4",
+          "title": "O EXCESSO PODE PREJUDICAR",
+          "url": "https://www.youtube.com/watch?v=u1uQA6KsOK4",
+          "views": "9.3K views"
+        },
+        {
+          "id": "dyt_hz6_XHg",
+          "title": "O futuro cria o passado.",
+          "url": "https://www.youtube.com/watch?v=dyt_hz6_XHg",
+          "views": "5.9K views"
+        },
+        {
+          "id": "WtqrlR1JcR0",
+          "title": "O MAIOR DESAFIO",
+          "url": "https://www.youtube.com/watch?v=WtqrlR1JcR0",
+          "views": "2.4K views"
+        },
+        {
+          "id": "mGtnhFDLoJ4",
+          "title": "O mundo é hoje um lugar poluído",
+          "url": "https://www.youtube.com/watch?v=mGtnhFDLoJ4",
+          "views": "7.3K views"
+        },
+        {
+          "id": "TcGUmQ2Mi-U",
+          "title": "O ovo tem tudo que você precisa para ter saúde",
+          "url": "https://www.youtube.com/watch?v=TcGUmQ2Mi-U",
+          "views": "14K views"
+        },
+        {
+          "id": "aLXXRWm-dg0",
+          "title": "O Passado Não Mudou. Sua Interpretação Sim",
+          "url": "https://www.youtube.com/watch?v=aLXXRWm-dg0",
+          "views": "Estreia em 04/08/2026, 15:00"
+        },
+        {
+          "id": "JJPBHTDm-PI",
+          "title": "O plástico pode estar destruindo sua fertilidade",
+          "url": "https://www.youtube.com/watch?v=JJPBHTDm-PI",
+          "views": "4,1 mil"
+        },
+        {
+          "id": "2GyZMmUvY2I",
+          "title": "o poder da epigenética",
+          "url": "https://www.youtube.com/watch?v=2GyZMmUvY2I",
+          "views": "5.1K views"
+        },
+        {
+          "id": "JWKsm7maULw",
+          "title": "O poder da metáfora",
+          "url": "https://www.youtube.com/watch?v=JWKsm7maULw",
+          "views": "8.8K views"
+        },
+        {
+          "id": "ndYoYXFDmVs",
+          "title": "O que é câncer?",
+          "url": "https://www.youtube.com/watch?v=ndYoYXFDmVs",
+          "views": "12K views"
+        },
+        {
+          "id": "LRuY_Lx8TXI",
+          "title": "O que é evoluir?",
+          "url": "https://www.youtube.com/watch?v=LRuY_Lx8TXI",
+          "views": "5.1K views"
+        },
+        {
+          "id": "0305G0bAQKQ",
+          "title": "O QUE É SAÚDE?",
+          "url": "https://www.youtube.com/watch?v=0305G0bAQKQ",
+          "views": "13K views"
+        },
+        {
+          "id": "_Z5ANp6voOk",
+          "title": "O que é ser saudável?",
+          "url": "https://www.youtube.com/watch?v=_Z5ANp6voOk",
+          "views": "15K views"
+        },
+        {
+          "id": "mjHm6S4efbU",
+          "title": "O que podemos fazer para ajudar a previnir o câncer?",
+          "url": "https://www.youtube.com/watch?v=mjHm6S4efbU",
+          "views": "8.7K views"
+        },
+        {
+          "id": "HQDqGbZ6OM8",
+          "title": "O QUE VC NÃO SABE SOBRE O CHICLETE",
+          "url": "https://www.youtube.com/watch?v=HQDqGbZ6OM8"
+        },
+        {
+          "id": "F8xIAd5aikE",
+          "title": "O que você acha dessa ideia?",
+          "url": "https://www.youtube.com/watch?v=F8xIAd5aikE",
+          "views": "19K views"
+        },
+        {
+          "id": "jxG_9jjpmUc",
+          "title": "O QUE VOCÊ FAZ DA VIDA?",
+          "url": "https://www.youtube.com/watch?v=jxG_9jjpmUc"
+        },
+        {
+          "id": "DjZFEsA8ZQU",
+          "title": "O Segredo da Saúde estava em Star Wars",
+          "url": "https://www.youtube.com/watch?v=DjZFEsA8ZQU",
+          "views": "67K views"
+        },
+        {
+          "id": "m1WGTpeSORI",
+          "title": "O TEMPO É O MELHOR DE TODOS OS MESTRES!!!",
+          "url": "https://www.youtube.com/watch?v=m1WGTpeSORI",
+          "views": "2.1K views"
+        },
+        {
+          "id": "9-od6uu4h-Q",
+          "title": "ODONTOLOGIA BIOLÓGICA",
+          "url": "https://www.youtube.com/watch?v=9-od6uu4h-Q",
+          "views": "38K views"
+        },
+        {
+          "id": "mGBksRTsmSE",
+          "title": "ONDE ESTÁ O SEU FOCO",
+          "url": "https://www.youtube.com/watch?v=mGBksRTsmSE",
+          "views": "9.4K views"
+        },
+        {
+          "id": "YIwKT-C6x9Q",
+          "title": "Opportunity comes disguised as a problem.",
+          "url": "https://www.youtube.com/watch?v=YIwKT-C6x9Q",
+          "views": "6.1K views"
+        },
+        {
+          "id": "FFcFJNM3M7I",
+          "title": "Os sintomas são o último pedido de socorro do corpo",
+          "url": "https://www.youtube.com/watch?v=FFcFJNM3M7I",
+          "views": "Estreia em 11/08/2026, 15:00"
+        },
+        {
+          "id": "mUTZlN4eNFk",
+          "title": "OVO",
+          "url": "https://www.youtube.com/watch?v=mUTZlN4eNFk",
+          "views": "40K views"
+        },
+        {
+          "id": "6NNvmtifoQg",
+          "title": "OVO",
+          "url": "https://www.youtube.com/watch?v=6NNvmtifoQg",
+          "views": "48K views"
+        },
+        {
+          "id": "6j38OI7y2Yo",
+          "title": "OXYGEN",
+          "url": "https://www.youtube.com/watch?v=6j38OI7y2Yo",
+          "views": "57K views"
+        },
+        {
+          "id": "Ejf-FjMwdfw",
+          "title": "PARA EU GANHAR VOCÊ NÃO PRECISA PERDER",
+          "url": "https://www.youtube.com/watch?v=Ejf-FjMwdfw",
+          "views": "9.6K views"
+        },
+        {
+          "id": "FjQjh8tOpsA",
+          "title": "PARA PRESSÃO ALTA, COMA SAL - MAS NÃO QUALQUER SAL",
+          "url": "https://www.youtube.com/watch?v=FjQjh8tOpsA"
+        },
+        {
+          "id": "Q1gT3QaI-PQ",
+          "title": "PARA VOCÊ QUE COME FAST FOOD",
+          "url": "https://www.youtube.com/watch?v=Q1gT3QaI-PQ",
+          "views": "42K views"
+        },
+        {
+          "id": "BbUZnaCUu_M",
+          "title": "Pensar x Agir",
+          "url": "https://www.youtube.com/watch?v=BbUZnaCUu_M",
+          "views": "6.3K views"
+        },
+        {
+          "id": "qr04tNKRZDE",
+          "title": "Perdoar, antes de ser uma ato de amor, é um ato de inteligência.",
+          "url": "https://www.youtube.com/watch?v=qr04tNKRZDE",
+          "views": "6.3K views"
+        },
+        {
+          "id": "yu0s7gNWN4c",
+          "title": "PERDOE E VIVA MAIS",
+          "url": "https://www.youtube.com/watch?v=yu0s7gNWN4c"
+        },
+        {
+          "id": "EHDokJbd8lA",
+          "title": "Physical activity is sacred.",
+          "url": "https://www.youtube.com/watch?v=EHDokJbd8lA",
+          "views": "9.3K views"
+        },
+        {
+          "id": "Ib8Xwh5_Cl4",
+          "title": "PÍLULA MÁGICA",
+          "url": "https://www.youtube.com/watch?v=Ib8Xwh5_Cl4",
+          "views": "31K views"
+        },
+        {
+          "id": "ZOlk1Xng8_Q",
+          "title": "Placebo Effect vs. Nocebo Effect",
+          "url": "https://www.youtube.com/watch?v=ZOlk1Xng8_Q",
+          "views": "3.9K views"
+        },
+        {
+          "id": "9bt2AaQ3JjU",
+          "title": "POLUIÇÃO",
+          "url": "https://www.youtube.com/watch?v=9bt2AaQ3JjU",
+          "views": "25K views"
+        },
+        {
+          "id": "g_-gnOKRWhg",
+          "title": "POR QUE INGERIR CHOCOLATE AMARGO?",
+          "url": "https://www.youtube.com/watch?v=g_-gnOKRWhg"
+        },
+        {
+          "id": "Q683AUE-V-A",
+          "title": "POSSO TOMAR SUCO DE LARANJA?",
+          "url": "https://www.youtube.com/watch?v=Q683AUE-V-A"
+        },
+        {
+          "id": "_39fHu-Ip8k",
+          "title": "Power of the mind",
+          "url": "https://www.youtube.com/watch?v=_39fHu-Ip8k",
+          "views": "6.2K views"
+        },
+        {
+          "id": "GCGQtrXAewU",
+          "title": "PREVENIR É MELHOR DO QUE REMEDIAR",
+          "url": "https://www.youtube.com/watch?v=GCGQtrXAewU",
+          "views": "11K views"
+        },
+        {
+          "id": "xDLndAhZSG4",
+          "title": "PRIMEIRO LUGAR",
+          "url": "https://www.youtube.com/watch?v=xDLndAhZSG4",
+          "views": "5.2K views"
+        },
+        {
+          "id": "5RkAD-_rFTM",
+          "title": "PRIORIDADE",
+          "url": "https://www.youtube.com/watch?v=5RkAD-_rFTM",
+          "views": "5.3K views"
+        },
+        {
+          "id": "QJ3dylhZJTM",
+          "title": "PRISÃO COGNITIVA",
+          "url": "https://www.youtube.com/watch?v=QJ3dylhZJTM",
+          "views": "40K views"
+        },
+        {
+          "id": "EIOkvEZ7fIQ",
+          "title": "PROGRAMAÇÃO CEREBRAL",
+          "url": "https://www.youtube.com/watch?v=EIOkvEZ7fIQ",
+          "views": "6.1K views"
+        },
+        {
+          "id": "K9v0sKgYINs",
+          "title": "QUAIS SÂO OS PRINCIPAIS SINTOMAS DA FEBRE AMARELA?",
+          "url": "https://www.youtube.com/watch?v=K9v0sKgYINs",
+          "views": "22K views"
+        },
+        {
+          "id": "Rk_SFiSdqR4",
+          "title": "QUAL A BASE DE TODO ADOECIMENTO?",
+          "url": "https://www.youtube.com/watch?v=Rk_SFiSdqR4"
+        },
+        {
+          "id": "agp9Q4TTHi4",
+          "title": "Qual é o órgão mais importante do seu corpo?",
+          "url": "https://www.youtube.com/watch?v=agp9Q4TTHi4",
+          "views": "8.1K views"
+        },
+        {
+          "id": "fYU3mlken7o",
+          "title": "QUAL É O SEU MAIOR DOM?",
+          "url": "https://www.youtube.com/watch?v=fYU3mlken7o",
+          "views": "44K views"
+        },
+        {
+          "id": "m0-6WHodcWw",
+          "title": "QUAL O TEMA QUE MOISÉS, JESUS E MAOMÉ ESTÃO DE ACORDO.",
+          "url": "https://www.youtube.com/watch?v=m0-6WHodcWw",
+          "views": "17K views"
+        },
+        {
+          "id": "Oh6ATOc33mk",
+          "title": "QUAL SEU VALOR NO MUNDO?",
+          "url": "https://www.youtube.com/watch?v=Oh6ATOc33mk",
+          "views": "4.4K views"
+        },
+        {
+          "id": "3OGiNk8j29k",
+          "title": "Redefining the past and the future from the present",
+          "url": "https://www.youtube.com/watch?v=3OGiNk8j29k",
+          "views": "4.2K views"
+        },
+        {
+          "id": "tyqkdnLadLM",
+          "title": "REPUTAÇÃO",
+          "url": "https://www.youtube.com/watch?v=tyqkdnLadLM",
+          "views": "18K views"
+        },
+        {
+          "id": "htaYW_Xsc80",
+          "title": "RESOLVA O IMPORTANTE !!!",
+          "url": "https://www.youtube.com/watch?v=htaYW_Xsc80",
+          "views": "2.3K views"
+        },
+        {
+          "id": "-r-B31jSIdI",
+          "title": "risco absoluto x risco relativo",
+          "url": "https://www.youtube.com/watch?v=-r-B31jSIdI",
+          "views": "3.7K views"
+        },
+        {
+          "id": "liQ5B6eTNoE",
+          "title": "SAFFRON",
+          "url": "https://www.youtube.com/watch?v=liQ5B6eTNoE",
+          "views": "26K views"
+        },
+        {
+          "id": "LyZp8FyIJQI",
+          "title": "Saúde é tudo?",
+          "url": "https://www.youtube.com/watch?v=LyZp8FyIJQI",
+          "views": "8.3K views"
+        },
+        {
+          "id": "SyzYCnMvhds",
+          "title": "Seed vs. Terrain: What Does This Have to Do with Your Body?",
+          "url": "https://www.youtube.com/watch?v=SyzYCnMvhds",
+          "views": "5.3K views"
+        },
+        {
+          "id": "dl950bYf4Pw",
+          "title": "SELF-HEALING",
+          "url": "https://www.youtube.com/watch?v=dl950bYf4Pw",
+          "views": "57K views"
+        },
+        {
+          "id": "ZEymHQAmrQY",
+          "title": "Sensibilidade a poluição eletromagnética",
+          "url": "https://www.youtube.com/watch?v=ZEymHQAmrQY",
+          "views": "6.2K views"
+        },
+        {
+          "id": "NqpTx0_8xTE",
+          "title": "Service: The Small Detail that Makes All the Difference",
+          "url": "https://www.youtube.com/watch?v=NqpTx0_8xTE",
+          "views": "3.7K views"
+        },
+        {
+          "id": "sYU-p-pWbnI",
+          "title": "SIMPLE, CHEAP AND EASY",
+          "url": "https://www.youtube.com/watch?v=sYU-p-pWbnI",
+          "views": "56K views"
+        },
+        {
+          "id": "pXWEZJfCP0c",
+          "title": "Six Books That Can Change Your Life for the Better - DR. LAIR RIBEIRO",
+          "url": "https://www.youtube.com/watch?v=pXWEZJfCP0c",
+          "views": "39K views"
+        },
+        {
+          "id": "DCdZL_w1sVY",
+          "title": "SKIN SPOTS - Learn to identify the possible signs.",
+          "url": "https://www.youtube.com/watch?v=DCdZL_w1sVY",
+          "views": "12K views"
+        },
+        {
+          "id": "2nvSkdm9zx4",
+          "title": "SOBRE ADAPTAÇÃO, FLEXIBILIDADE E RESILIÊNCIA",
+          "url": "https://www.youtube.com/watch?v=2nvSkdm9zx4",
+          "views": "24K views"
+        },
+        {
+          "id": "iBkIZwbO8AY",
+          "title": "Somos seres espirituais tendo uma experiência humana.",
+          "url": "https://www.youtube.com/watch?v=iBkIZwbO8AY",
+          "views": "7.8K views"
+        },
+        {
+          "id": "yiDbBRM5g_0",
+          "title": "Suplementação básica",
+          "url": "https://www.youtube.com/watch?v=yiDbBRM5g_0",
+          "views": "33K views"
+        },
+        {
+          "id": "LQO9cfx1VQk",
+          "title": "Take care of your SELF-IMAGE",
+          "url": "https://www.youtube.com/watch?v=LQO9cfx1VQk",
+          "views": "6.2K views"
+        },
+        {
+          "id": "RSg4e9SzVbw",
+          "title": "TECNOLOGIA COM BIOLOGIA PARA AUMENTAR DESEMPENHO",
+          "url": "https://www.youtube.com/watch?v=RSg4e9SzVbw",
+          "views": "3.6K views"
+        },
+        {
+          "id": "IYxcCCDQieM",
+          "title": "TEORIA DO CAOS",
+          "url": "https://www.youtube.com/watch?v=IYxcCCDQieM",
+          "views": "8.4K views"
+        },
+        {
+          "id": "7u3_aAB0Fjw",
+          "title": "The accidental discovery of Viagra",
+          "url": "https://www.youtube.com/watch?v=7u3_aAB0Fjw",
+          "views": "3K views"
+        },
+        {
+          "id": "EliQ7Vf-s3Q",
+          "title": "The best fish for you",
+          "url": "https://www.youtube.com/watch?v=EliQ7Vf-s3Q",
+          "views": "56K views"
+        },
+        {
+          "id": "Ov5bone0yus",
+          "title": "The best time to take Vitamin D3 Supplement",
+          "url": "https://www.youtube.com/watch?v=Ov5bone0yus",
+          "views": "612K views"
+        },
+        {
+          "id": "E2N4IjbT_PA",
+          "title": "THE CAUSES OF ILLNESS",
+          "url": "https://www.youtube.com/watch?v=E2N4IjbT_PA",
+          "views": "16K views"
+        },
+        {
+          "id": "stw3MhjtiQY",
+          "title": "The cure is on your PLATE",
+          "url": "https://www.youtube.com/watch?v=stw3MhjtiQY",
+          "views": "11K views"
+        },
+        {
+          "id": "PR4w9i5Hgvw",
+          "title": "The danger of contamination",
+          "url": "https://www.youtube.com/watch?v=PR4w9i5Hgvw",
+          "views": "10K views"
+        },
+        {
+          "id": "u0-MuhDjSA8",
+          "title": "The expression of disease",
+          "url": "https://www.youtube.com/watch?v=u0-MuhDjSA8",
+          "views": "3.8K views"
+        },
+        {
+          "id": "hQ__5-A4oSg",
+          "title": "The Forest Metaphor",
+          "url": "https://www.youtube.com/watch?v=hQ__5-A4oSg",
+          "views": "8.3K views"
+        },
+        {
+          "id": "WxU839Cs86o",
+          "title": "The human mind is teleological.",
+          "url": "https://www.youtube.com/watch?v=WxU839Cs86o",
+          "views": "6.9K views"
+        },
+        {
+          "id": "I9AmaCK3SCw",
+          "title": "The Invisible Weight of Your Energy",
+          "url": "https://www.youtube.com/watch?v=I9AmaCK3SCw",
+          "views": "6.7K views"
+        },
+        {
+          "id": "ZWL9qR7DeKM",
+          "title": "The organ that weighs little, but consumes a lot.",
+          "url": "https://www.youtube.com/watch?v=ZWL9qR7DeKM",
+          "views": "6.7K views"
+        },
+        {
+          "id": "jvRDNQJuhyo",
+          "title": "The Power of Declaration",
+          "url": "https://www.youtube.com/watch?v=jvRDNQJuhyo",
+          "views": "9.7K views"
+        },
+        {
+          "id": "V6cQVds04rc",
+          "title": "THE ROLE OF THE CIRCULATORY SYSTEM AND BLOOD",
+          "url": "https://www.youtube.com/watch?v=V6cQVds04rc",
+          "views": "36K views"
+        },
+        {
+          "id": "LBn4jH-ZiFk",
+          "title": "THE SEVEN INTELLIGENCES - PART 01",
+          "url": "https://www.youtube.com/watch?v=LBn4jH-ZiFk",
+          "views": "5.4K views"
+        },
+        {
+          "id": "bSgeHaD35S8",
+          "title": "The Truth About Chronic Soy Use",
+          "url": "https://www.youtube.com/watch?v=bSgeHaD35S8",
+          "views": "230K views"
+        },
+        {
+          "id": "2QQCL41Uf9s",
+          "title": "The Windows of the Mind",
+          "url": "https://www.youtube.com/watch?v=2QQCL41Uf9s",
+          "views": "5K views"
+        },
+        {
+          "id": "CTyBmKt-rBA",
+          "title": "THE WORLD IS FATTER",
+          "url": "https://www.youtube.com/watch?v=CTyBmKt-rBA",
+          "views": "251K views"
+        },
+        {
+          "id": "LtRw3mAq9lQ",
+          "title": "THERE ARE SEVERAL TYPES OF HIGH BLOOD PRESSURE",
+          "url": "https://www.youtube.com/watch?v=LtRw3mAq9lQ",
+          "views": "15K views"
+        },
+        {
+          "id": "-5QI2tLOSFs",
+          "title": "This explains why women talk more than men.",
+          "url": "https://www.youtube.com/watch?v=-5QI2tLOSFs",
+          "views": "4.8K views"
+        },
+        {
+          "id": "StsHNTNaq7g",
+          "title": "Today's world!",
+          "url": "https://www.youtube.com/watch?v=StsHNTNaq7g",
+          "views": "4.3K views"
+        },
+        {
+          "id": "yQQdnfurhZg",
+          "title": "Todo brasileiro é deficiente em magnésio",
+          "url": "https://www.youtube.com/watch?v=yQQdnfurhZg",
+          "views": "4.6K views"
+        },
+        {
+          "id": "sbHlN1mDEyc",
+          "title": "Todo remédio tem um preço",
+          "url": "https://www.youtube.com/watch?v=sbHlN1mDEyc",
+          "views": "5,9 mil"
+        },
+        {
+          "id": "CPiGnxczmts",
+          "title": "Toxinas cerebrais, elas existem?",
+          "url": "https://www.youtube.com/watch?v=CPiGnxczmts",
+          "views": "8.3K views"
+        },
+        {
+          "id": "y3VWPm_UonM",
+          "title": "Toxinas exógenas e endógenas",
+          "url": "https://www.youtube.com/watch?v=y3VWPm_UonM",
+          "views": "6.2K views"
+        },
+        {
+          "id": "x9eBIYflbHI",
+          "title": "TRANSFERÊNCIA DE CONHECIMENTO",
+          "url": "https://www.youtube.com/watch?v=x9eBIYflbHI",
+          "views": "3K views"
+        },
+        {
+          "id": "VMH0_FQEbrU",
+          "title": "Treating the person and not just their exam",
+          "url": "https://www.youtube.com/watch?v=VMH0_FQEbrU",
+          "views": "4K views"
+        },
+        {
+          "id": "s5R2jKRwyzg",
+          "title": "TRÊS LIVROS PARA SUA TRANSFORMAÇÃO",
+          "url": "https://www.youtube.com/watch?v=s5R2jKRwyzg",
+          "views": "6.9K views"
+        },
+        {
+          "id": "U81plbGTbjM",
+          "title": "Tudo começa com a disfunção Mitocondrial?",
+          "url": "https://www.youtube.com/watch?v=U81plbGTbjM",
+          "views": "11K views"
+        },
+        {
+          "id": "R9qW9z7THwo",
+          "title": "Um alerta para quem  come fast food!!",
+          "url": "https://www.youtube.com/watch?v=R9qW9z7THwo"
+        },
+        {
+          "id": "sxHA5bWm6l0",
+          "title": "Um ano novo cheio de saúde para você",
+          "url": "https://www.youtube.com/watch?v=sxHA5bWm6l0",
+          "views": "12K views"
+        },
+        {
+          "id": "mfgLlrwXiWk",
+          "title": "Understanding the Glycemic Index",
+          "url": "https://www.youtube.com/watch?v=mfgLlrwXiWk",
+          "views": "8.8K views"
+        },
+        {
+          "id": "9FVo2li5j0U",
+          "title": "UPDATE IN MEDICINE",
+          "url": "https://www.youtube.com/watch?v=9FVo2li5j0U",
+          "views": "18K views"
+        },
+        {
+          "id": "eZHKNwlLdiQ",
+          "title": "URGENTE OU NÃO URGENTE",
+          "url": "https://www.youtube.com/watch?v=eZHKNwlLdiQ",
+          "views": "2.7K views"
+        },
+        {
+          "id": "pMzKxYO4jBc",
+          "title": "Urine Test: How to avoid errors in interpretation?",
+          "url": "https://www.youtube.com/watch?v=pMzKxYO4jBc",
+          "views": "5.4K views"
+        },
+        {
+          "id": "LrRlRyX_6zY",
+          "title": "VIDA SEXUAL",
+          "url": "https://www.youtube.com/watch?v=LrRlRyX_6zY",
+          "views": "64K views"
+        },
+        {
+          "id": "mdcEpQQjfYU",
+          "title": "Visual Identity",
+          "url": "https://www.youtube.com/watch?v=mdcEpQQjfYU",
+          "views": "4.2K views"
+        },
+        {
+          "id": "ULCx4ODML-E",
+          "title": "Vitamin B12 absorption",
+          "url": "https://www.youtube.com/watch?v=ULCx4ODML-E",
+          "views": "17K views"
+        },
+        {
+          "id": "5vv6jL1btSk",
+          "title": "Vitamin D3 Prevents Cancer - Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=5vv6jL1btSk",
+          "views": "19K views"
+        },
+        {
+          "id": "JTcFBbIOUNk",
+          "title": "Vitamin Deficiency 2",
+          "url": "https://www.youtube.com/watch?v=JTcFBbIOUNk",
+          "views": "16K views"
+        },
+        {
+          "id": "rTPymPjycik",
+          "title": "Viver dá trabalho....",
+          "url": "https://www.youtube.com/watch?v=rTPymPjycik",
+          "views": "7.4K views"
+        },
+        {
+          "id": "FJMu9lBwMOQ",
+          "title": "VOCÊ ANDA SEM TEMPO",
+          "url": "https://www.youtube.com/watch?v=FJMu9lBwMOQ",
+          "views": "3.3K views"
+        },
+        {
+          "id": "fGBU2rnJhH8",
+          "title": "Você come o que sua bisavó comia?",
+          "url": "https://www.youtube.com/watch?v=fGBU2rnJhH8",
+          "views": "4.3K views"
+        },
+        {
+          "id": "lMlhcF_lhmo",
+          "title": "VOCÊ DORME BEM",
+          "url": "https://www.youtube.com/watch?v=lMlhcF_lhmo",
+          "views": "50K views"
+        },
+        {
+          "id": "QrYe0ccoz6g",
+          "title": "Você exerce o seu potencial?",
+          "url": "https://www.youtube.com/watch?v=QrYe0ccoz6g",
+          "views": "6.2K views"
+        },
+        {
+          "id": "mV3h9W7T2Zo",
+          "title": "Você faz suplementação de cálcio puro? Cuidado!",
+          "url": "https://www.youtube.com/watch?v=mV3h9W7T2Zo",
+          "views": "5.2K views"
+        },
+        {
+          "id": "Mdif4CY812M",
+          "title": "Você sabe o que é Misoneísmo?",
+          "url": "https://www.youtube.com/watch?v=Mdif4CY812M",
+          "views": "6.5K views"
+        },
+        {
+          "id": "MPrmL9IGEqg",
+          "title": "Você sabe o que é precessão?",
+          "url": "https://www.youtube.com/watch?v=MPrmL9IGEqg",
+          "views": "7.4K views"
+        },
+        {
+          "id": "EphDznQTKDg",
+          "title": "VOCÊ USA ASPARTAME?",
+          "url": "https://www.youtube.com/watch?v=EphDznQTKDg",
+          "views": "46K views"
+        },
+        {
+          "id": "4rF9b8vqDk8",
+          "title": "Want to reach 100? See how they did it!",
+          "url": "https://www.youtube.com/watch?v=4rF9b8vqDk8",
+          "views": "5.3K views"
+        },
+        {
+          "id": "_P4PddIhFZY",
+          "title": "Welcome Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=_P4PddIhFZY",
+          "views": "89K views"
+        },
+        {
+          "id": "h4nYD2LPSqQ",
+          "title": "WHAT ARE ENDOGENOUS TOXINS?",
+          "url": "https://www.youtube.com/watch?v=h4nYD2LPSqQ",
+          "views": "8.1K views"
+        },
+        {
+          "id": "OQILVeYrXUc",
+          "title": "WHAT ARE YOUR BELIEFS",
+          "url": "https://www.youtube.com/watch?v=OQILVeYrXUc",
+          "views": "12K views"
+        },
+        {
+          "id": "akOL6PzyOv4",
+          "title": "What can cause cancer?",
+          "url": "https://www.youtube.com/watch?v=akOL6PzyOv4",
+          "views": "19K views"
+        },
+        {
+          "id": "1-Nr5QI3N0M",
+          "title": "What causes the complexity of the system.",
+          "url": "https://www.youtube.com/watch?v=1-Nr5QI3N0M",
+          "views": "6.8K views"
+        },
+        {
+          "id": "lZkGccqxvSo",
+          "title": "What is the most common illness in a doctor's office?",
+          "url": "https://www.youtube.com/watch?v=lZkGccqxvSo",
+          "views": "5.3K views"
+        },
+        {
+          "id": "H2PGA7CYIZ8",
+          "title": "WHAT IS THE VALUE OF FIBER IN FOOD?",
+          "url": "https://www.youtube.com/watch?v=H2PGA7CYIZ8",
+          "views": "27K views"
+        },
+        {
+          "id": "gCK34qpYJtQ",
+          "title": "What is your financial belief?",
+          "url": "https://www.youtube.com/watch?v=gCK34qpYJtQ",
+          "views": "5.4K views"
+        },
+        {
+          "id": "6CsaBIwOlkA",
+          "title": "What is your purpose in life?",
+          "url": "https://www.youtube.com/watch?v=6CsaBIwOlkA",
+          "views": "5.2K views"
+        },
+        {
+          "id": "YVugc4B6_mY",
+          "title": "What to do after a cancer diagnosis",
+          "url": "https://www.youtube.com/watch?v=YVugc4B6_mY",
+          "views": "50K views"
+        },
+        {
+          "id": "gCDcoUeKMm4",
+          "title": "What's the best day of the week for you (and what does it reveal)?",
+          "url": "https://www.youtube.com/watch?v=gCDcoUeKMm4",
+          "views": "4.6K views"
+        },
+        {
+          "id": "WbO995X5S0I",
+          "title": "Where did all the chlorine that was here go, Dr. Lair Ribeiro?",
+          "url": "https://www.youtube.com/watch?v=WbO995X5S0I",
+          "views": "30K views"
+        },
+        {
+          "id": "H3IwhYDqgJE",
+          "title": "Who can get the yellow fever vaccine?",
+          "url": "https://www.youtube.com/watch?v=H3IwhYDqgJE",
+          "views": "13K views"
+        },
+        {
+          "id": "fCP_m6D2EIc",
+          "title": "Who controls biology: GENETICS or EPIGENETICS?",
+          "url": "https://www.youtube.com/watch?v=fCP_m6D2EIc",
+          "views": "9K views"
+        },
+        {
+          "id": "JkryvEKhg3c",
+          "title": "Why are some foods addictive?",
+          "url": "https://www.youtube.com/watch?v=JkryvEKhg3c",
+          "views": "4.6K views"
+        },
+        {
+          "id": "aJGURrRsbhA",
+          "title": "WHY SHOULD WE EAT CRUCIFEROUS VEGETABLES?",
+          "url": "https://www.youtube.com/watch?v=aJGURrRsbhA",
+          "views": "22K views"
+        },
+        {
+          "id": "n6677fNePA8",
+          "title": "Why We Get Sick - Interview with Leda Nagle - Chapter 1 Part 7 | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=n6677fNePA8",
+          "views": "5.1K views"
+        },
+        {
+          "id": "LMhd8tsLkq8",
+          "title": "Why We Get Sick - Interview with Leda Nagle - Chapter 1 Part 8 | Dr. Lair Ribeiro",
+          "url": "https://www.youtube.com/watch?v=LMhd8tsLkq8",
+          "views": "4.5K views"
+        },
+        {
+          "id": "axYDKiIarjA",
+          "title": "Winter, fatigue, weight gain, and depression: coincidence or vitamin D deficiency?",
+          "url": "https://www.youtube.com/watch?v=axYDKiIarjA",
+          "views": "4.9K views"
+        },
+        {
+          "id": "aQLMyNCvOY0",
+          "title": "You are not a hostage to your heredity",
+          "url": "https://www.youtube.com/watch?v=aQLMyNCvOY0",
+          "views": "3.4K views"
+        },
+        {
+          "id": "V-P34VkIAxc",
+          "title": "You are smarter than you think.",
+          "url": "https://www.youtube.com/watch?v=V-P34VkIAxc",
+          "views": "4.5K views"
+        },
+        {
+          "id": "QLxbonv68Ng",
+          "title": "YOU CAN BE HEALTHY EVEN WITH SICK PARENTS",
+          "url": "https://www.youtube.com/watch?v=QLxbonv68Ng",
+          "views": "11K views"
+        },
+        {
+          "id": "-NAzt0vEdA0",
+          "title": "You're looking in the wrong place.",
+          "url": "https://www.youtube.com/watch?v=-NAzt0vEdA0",
+          "views": "5.8K views"
+        }
+      ]
+    }
+  ]
+}
