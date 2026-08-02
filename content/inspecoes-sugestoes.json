@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T19:33:46.991Z",
+  "updatedAt": "2026-08-02T19:48:54.868Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2487,6 +2487,300 @@
         "https://www.youtube.com/watch?v=V3GSlr5sp7c"
       ],
       "notes": "Divulgação editorial sem afiliação; crédito de imagem na ficha."
+    },
+    {
+      "id": "palavra-barco",
+      "title": "Barco — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Barco — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Barco — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Embarcação — no universo Tamara é casa, oficina e corpo da invernagem; elo do livro *Bom dia, Inverno*.",
+      "whyEn": "Boat — in Tamara’s world: home, workshop and body of the overwintering; link to *Bom dia, Inverno*.",
+      "whyEs": "Barco — en el universo Tamara: casa, taller y cuerpo de la invernada; enlace con *Bom dia, Inverno*.",
+      "suggestedSlug": "inspecao-palavra-barco",
+      "doneHref": "/posts/post-inspecao-palavra-barco.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-mar",
+      "title": "Mar — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Mar — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Mar — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Oceano e horizonte — no laboratório cruza com caminho, Vida e a travessia solitária de Tamara.",
+      "whyEn": "Ocean and horizon — in the lab it crosses caminho, Vida and Tamara’s solo crossing.",
+      "whyEs": "Océano y horizonte — en el laboratorio cruza camino, Vida y la travesía solitaria de Tamara.",
+      "suggestedSlug": "inspecao-palavra-mar",
+      "doneHref": "/posts/post-inspecao-palavra-mar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-gelo",
+      "title": "Gelo — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Gelo — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Gelo — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Água sólida que prende o barco — matéria da invernagem ártica narrada em *Bom dia, Inverno*.",
+      "whyEn": "Solid water that holds the boat — matter of the Arctic overwintering in *Bom dia, Inverno*.",
+      "whyEs": "Agua sólida que atrapa el barco — materia de la invernada ártica en *Bom dia, Inverno*.",
+      "suggestedSlug": "inspecao-palavra-gelo",
+      "doneHref": "/posts/post-inspecao-palavra-gelo.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-inverno",
+      "title": "Inverno — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Inverno — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Inverno — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Estação e título — *Bom dia, Inverno*: cumprimentar o frio sem romantizar o isolamento.",
+      "whyEn": "Season and title — *Bom dia, Inverno*: greeting the cold without romanticizing isolation.",
+      "whyEs": "Estación y título — *Bom dia, Inverno*: saludar el frío sin romantizar el aislamiento.",
+      "suggestedSlug": "inspecao-palavra-inverno",
+      "doneHref": "/posts/post-inspecao-palavra-inverno.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-invernagem",
+      "title": "Invernagem — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Invernagem — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Invernagem — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Permanecer o inverno inteiro no gelo — feito âncora de Tamara no Ártico; eixo do livro.",
+      "whyEn": "Staying the whole winter in the ice — Tamara’s Arctic anchor feat; axis of the book.",
+      "whyEs": "Permanecer todo el invierno en el hielo — hazaña ancla de Tamara en el Ártico; eje del libro.",
+      "suggestedSlug": "inspecao-palavra-invernagem",
+      "doneHref": "/posts/post-inspecao-palavra-invernagem.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-navegar",
+      "title": "Navegar — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Navegar — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Navegar — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Conduzir o barco e a própria rota — ofício Klink; no BudGanja liga a caminho e gesto.",
+      "whyEn": "Steering the boat and one’s route — Klink craft; in BudGanja links to caminho and gesto.",
+      "whyEs": "Conducir el barco y la propia ruta — oficio Klink; en BudGanja une camino y gesto.",
+      "suggestedSlug": "inspecao-palavra-navegar",
+      "doneHref": "/posts/post-inspecao-palavra-navegar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-agua",
+      "title": "Água — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Água — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Água — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem.",
+      "whyEn": "Element the bucket carries and ice retains — volume, thirst and limit in overwintering.",
+      "whyEs": "Elemento que el balde lleva y el hielo retiene — volumen, sed y límite en la invernada.",
+      "suggestedSlug": "inspecao-palavra-agua",
+      "doneHref": "/posts/post-inspecao-palavra-agua.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-neve",
+      "title": "Neve — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Neve — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Neve — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Cobertura branca do Ártico — paisagem e ruído branco da narrativa de Tamara.",
+      "whyEn": "White Arctic cover — landscape and white noise of Tamara’s narrative.",
+      "whyEs": "Cubierta blanca del Ártico — paisaje y ruido blanco de la narrativa de Tamara.",
+      "suggestedSlug": "inspecao-palavra-neve",
+      "doneHref": "/posts/post-inspecao-palavra-neve.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-congelado",
+      "title": "Congelado — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Congelado — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Congelado — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Estado do mar preso — o barco deixa de «passar» e passa a *ficar*; elo com Vida.",
+      "whyEn": "State of the locked sea — the boat stops “passing” and starts *staying*; link to Vida.",
+      "whyEs": "Estado del mar atrapado — el barco deja de «pasar» y empieza a *quedarse*; enlace con Vida.",
+      "suggestedSlug": "inspecao-palavra-congelado",
+      "doneHref": "/posts/post-inspecao-palavra-congelado.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-risco",
+      "title": "Risco — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Risco — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Risco — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Perigo calculado da travessia e da invernagem — Amyr planeia; Tamara assume o próprio.",
+      "whyEn": "Calculated danger of crossing and overwintering — Amyr plans; Tamara owns her own.",
+      "whyEs": "Peligro calculado de la travesía y la invernada — Amyr planifica; Tamara asume el suyo.",
+      "suggestedSlug": "inspecao-palavra-risco",
+      "doneHref": "/posts/post-inspecao-palavra-risco.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-solitario",
+      "title": "Solitário — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Solitário — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Solitário — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Navegar e invernar sozinha — não isolamento romântico: método, medo e escrita.",
+      "whyEn": "Sailing and overwintering alone — not romantic isolation: method, fear and writing.",
+      "whyEs": "Navegar e invernar sola — no aislamiento romántico: método, miedo y escritura.",
+      "suggestedSlug": "inspecao-palavra-solitario",
+      "doneHref": "/posts/post-inspecao-palavra-solitario.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-groenlandia",
+      "title": "Groenlândia — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Groenlândia — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Groenlândia — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palco da invernagem ártica de Tamara — gelo, animais e o livro *Bom dia, Inverno*.",
+      "whyEn": "Stage of Tamara’s Arctic overwintering — ice, animals and *Bom dia, Inverno*.",
+      "whyEs": "Escenario de la invernada ártica de Tamara — hielo, animales y *Bom dia, Inverno*.",
+      "suggestedSlug": "inspecao-palavra-groenlandia",
+      "doneHref": "/posts/post-inspecao-palavra-groenlandia.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-anzol",
+      "title": "Anzol — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Anzol — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Anzol — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Ferramenta de pesca na narrativa — gesto concreto de sobrevivência no gelo.",
+      "whyEn": "Fishing hook in the narrative — concrete survival gesture on the ice.",
+      "whyEs": "Anzuelo en la narrativa — gesto concreto de supervivencia en el hielo.",
+      "suggestedSlug": "inspecao-palavra-anzol",
+      "doneHref": "/posts/post-inspecao-palavra-anzol.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-livro",
+      "title": "Livro — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Livro — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Livro — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Objecto e ofício — *Bom dia, Inverno* (Companhia das Letras): a invernagem vira página.",
+      "whyEn": "Object and craft — *Bom dia, Inverno* (Companhia das Letras): overwintering becomes page.",
+      "whyEs": "Objeto y oficio — *Bom dia, Inverno* (Companhia das Letras): la invernada se hace página.",
+      "suggestedSlug": "inspecao-palavra-livro",
+      "doneHref": "/posts/post-inspecao-palavra-livro.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
     }
   ]
 }

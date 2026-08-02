@@ -109,7 +109,8 @@
     },
     {
       "word": "barco",
-      "count": 12
+      "count": 12,
+      "href": "/posts/post-inspecao-palavra-barco.html"
     },
     {
       "word": "como",
@@ -189,7 +190,8 @@
     },
     {
       "word": "mar",
-      "count": 8
+      "count": 8,
+      "href": "/posts/post-inspecao-palavra-mar.html"
     },
     {
       "word": "mas",
@@ -233,7 +235,8 @@
     },
     {
       "word": "vida",
-      "count": 7
+      "count": 7,
+      "href": "/vida/"
     },
     {
       "word": "agora",
@@ -241,7 +244,8 @@
     },
     {
       "word": "animais",
-      "count": 6
+      "count": 6,
+      "href": "/animais/"
     },
     {
       "word": "ao",
@@ -301,7 +305,8 @@
     },
     {
       "word": "groenlandia",
-      "count": 5
+      "count": 5,
+      "href": "/posts/post-inspecao-palavra-groenlandia.html"
     },
     {
       "word": "ia",
@@ -309,7 +314,8 @@
     },
     {
       "word": "navegar",
-      "count": 5
+      "count": 5,
+      "href": "/posts/post-inspecao-palavra-navegar.html"
     },
     {
       "word": "pela",
@@ -333,7 +339,8 @@
     },
     {
       "word": "agua",
-      "count": 4
+      "count": 4,
+      "href": "/posts/post-inspecao-palavra-agua.html"
     },
     {
       "word": "bastante",
@@ -349,7 +356,8 @@
     },
     {
       "word": "congelado",
-      "count": 4
+      "count": 4,
+      "href": "/posts/post-inspecao-palavra-congelado.html"
     },
     {
       "word": "corpo",
@@ -401,7 +409,8 @@
     },
     {
       "word": "inverno",
-      "count": 4
+      "count": 4,
+      "href": "/posts/post-inspecao-palavra-inverno.html"
     },
     {
       "word": "lavar",
@@ -449,7 +458,8 @@
     },
     {
       "word": "risco",
-      "count": 4
+      "count": 4,
+      "href": "/posts/post-inspecao-palavra-risco.html"
     },
     {
       "word": "sem",
@@ -489,11 +499,13 @@
     },
     {
       "word": "anzol",
-      "count": 3
+      "count": 3,
+      "href": "/posts/post-inspecao-palavra-anzol.html"
     },
     {
       "word": "balde",
-      "count": 3
+      "count": 3,
+      "href": "/posts/post-inspecao-palavra-balde.html"
     },
     {
       "word": "bem",
@@ -569,7 +581,8 @@
     },
     {
       "word": "gelo",
-      "count": 3
+      "count": 3,
+      "href": "/posts/post-inspecao-palavra-gelo.html"
     },
     {
       "word": "grande",
@@ -601,7 +614,8 @@
     },
     {
       "word": "livro",
-      "count": 3
+      "count": 3,
+      "href": "/posts/post-inspecao-palavra-livro.html"
     },
     {
       "word": "marido",
@@ -625,7 +639,8 @@
     },
     {
       "word": "neve",
-      "count": 3
+      "count": 3,
+      "href": "/posts/post-inspecao-palavra-neve.html"
     },
     {
       "word": "nos",
@@ -641,7 +656,8 @@
     },
     {
       "word": "passar",
-      "count": 3
+      "count": 3,
+      "href": "/posts/post-inspecao-palavra-passar.html"
     },
     {
       "word": "pessoas",
@@ -861,7 +877,8 @@
     },
     {
       "word": "envernagem",
-      "count": 2
+      "count": 2,
+      "href": "/posts/post-inspecao-palavra-invernagem.html"
     },
     {
       "word": "esquece",
@@ -1125,7 +1142,8 @@
     },
     {
       "word": "solitario",
-      "count": 2
+      "count": 2,
+      "href": "/posts/post-inspecao-palavra-solitario.html"
     },
     {
       "word": "sonhava",
@@ -1325,7 +1343,8 @@
     },
     {
       "word": "animal",
-      "count": 1
+      "count": 1,
+      "href": "/posts/post-inspecao-palavra-animal.html"
     },
     {
       "word": "anterior",
@@ -2117,7 +2136,8 @@
     },
     {
       "word": "invernagem",
-      "count": 1
+      "count": 1,
+      "href": "/posts/post-inspecao-palavra-invernagem.html"
     },
     {
       "word": "inves",
@@ -2253,7 +2273,8 @@
     },
     {
       "word": "medo",
-      "count": 1
+      "count": 1,
+      "href": "/posts/post-inspecao-palavra-medo.html"
     },
     {
       "word": "meio",
@@ -5621,5 +5642,7 @@
       "word": "vovo",
       "count": 1
     }
-  ]
+  ],
+  "mappedAt": "2026-08-02T19:48:54.870Z",
+  "mappedCount": 21
 }
