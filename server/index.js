@@ -13,7 +13,14 @@ const { mergeGuiaInspecoesPosts } = require('../lib/merge-guia-inspecoes.js');
 const { buildEmptyStateHtml } = require('../lib/empty-state.js');
 const { applySecurityHeaders } = require('../lib/security-headers.js');
 const { hasAdminAccess } = require('../lib/admin-access.js');
-const { isBlockedStaticPath, isProtectedHtml, isProtectedPath } = require('../lib/static-security.js');
+const { getUserSession } = require('../lib/user-auth-service.js');
+const {
+  isBlockedStaticPath,
+  isProtectedHtml,
+  isProtectedPath,
+  isAuthProtectedHtml,
+  isAuthProtectedPath
+} = require('../lib/static-security.js');
 const {
   isDevModeEnabled,
   shouldBlockForDevMode,
@@ -195,6 +202,15 @@ async function isAdminAuthenticated(req) {
   if (!appStore) return false;
   try {
     return await hasAdminAccess(appStore, req.headers.cookie);
+  } catch (e) {
+    return false;
+  }
+}
+
+async function isUserAuthenticated(req) {
+  if (!appStore) return false;
+  try {
+    return !!(await getUserSession(appStore, req.headers.cookie));
   } catch (e) {
     return false;
   }
@@ -510,6 +526,16 @@ const server = http.createServer((req, res) => {
     const isAdmin = await isAdminAuthenticated(req);
     if (shouldBlockForDevMode(req, url, pageFile, isAdmin)) {
       return serveDevModePage(res, req, ROOT);
+    }
+
+    if (isAuthProtectedPath(pageFile) && !isAdmin) {
+      const isUser = await isUserAuthenticated(req);
+      if (!isUser) {
+        const returnTo = isAuthProtectedHtml(pageFile)
+          ? encodeURIComponent(staticPath)
+          : encodeURIComponent('/biblioteca/');
+        return resRedirect(res, '/entrar.html?returnTo=' + returnTo);
+      }
     }
 
     if (isProtectedPath(pageFile) && !isAdmin) {

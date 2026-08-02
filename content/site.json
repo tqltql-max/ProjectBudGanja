@@ -20,7 +20,7 @@
       "megaAccordion": true,
       "megaHeader": "Biblioteca",
       "megaHeaderHref": "/biblioteca/",
-      "adminOnly": true,
+      "authOnly": true,
       "groups": [
         {
           "title": "",
@@ -1323,6 +1323,70 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-guia-hc-seletividade-advogados",
                   "description": "Guia para advogados: habeas corpus / salvo-conduto no cultivo medicinal vs repressão sem HC — seletividade de classe, âncoras STJ/STF e rede BudGanja de classificação legal. Não é parecer jurídico."
+                },
+                {
+                  "label": "Inspeção: Guia cannabis medicinal — mapa para médicos (acesso × seletividade)",
+                  "tileLabel": "Inspeção: Guia cannabis medicin…",
+                  "href": "/posts/post-inspecao-guia-cannabis-medicos.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-guia-cannabis-medicos",
+                  "description": "Guia para médicos: receita, laudo, produto ANVISA/importação e papel no HC — seletividade de quem vira paciente de facto. Elo com o guia para advogados. Não é protocolo clínico."
+                },
+                {
+                  "label": "Inspeção: Guia cannabis medicinal — mapa para farmacêuticos (dispensação × seletividade)",
+                  "tileLabel": "Inspeção: Guia cannabis medicin…",
+                  "href": "/posts/post-inspecao-guia-cannabis-farmaceuticos.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-guia-cannabis-farmaceuticos",
+                  "description": "Guia para farmacêuticos: produto regulado, importação, limites da farmácia vs óleo/HC, CRF/ANVISA e seletividade de quem chega ao balcão. Não é protocolo clínico."
+                },
+                {
+                  "label": "Inspeção: Guia associações de pacientes — cultivo institucional × seletividade",
+                  "tileLabel": "Inspeção: Guia associações de p…",
+                  "href": "/posts/post-inspecao-guia-associacoes-pacientes.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-guia-associacoes-pacientes",
+                  "description": "Guia para associações: cultivo/produção institucional (RDC/PJ), custo de ser membro-paciente, contraste com HC individual e seletividade. Não é manual de licenciamento."
+                },
+                {
+                  "label": "Inspeção: Guia Defensoria e acesso gratuito — seletividade sem honorários",
+                  "tileLabel": "Inspeção: Guia Defensoria e ace…",
+                  "href": "/posts/post-inspecao-guia-defensoria-acesso.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-guia-defensoria-acesso",
+                  "description": "Guia para Defensoria e quem não tem advogado particular: mesmos filtros de HC/seletividade (laudo, tempo, tipificação porte×tráfico) sem o preço do particular. Não é parecer."
+                },
+                {
+                  "label": "Inspeção: Lei 11.343/2006 — âncora tipológica da Lei de Drogas",
+                  "tileLabel": "Inspeção: Lei 11.343/2006 — ânc…",
+                  "href": "/posts/post-inspecao-palavra-lei-11-343.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-lei-11-343",
+                  "description": "Palavra-âncora: Lei 11.343/2006 — fundo tipológico onde cai quem não tem estatuto processual/sanitário (HC, produto ANVISA). Não é o texto integral da lei."
+                },
+                {
+                  "label": "Inspeção: Porte × Tráfico — par semântico da seletividade na rua",
+                  "tileLabel": "Inspeção: Porte × Tráfico — par…",
+                  "href": "/posts/post-inspecao-palavra-porte-trafico.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-porte-trafico",
+                  "description": "Par: porte × tráfico — o mesmo volume pode ser lido como uso ou mercancia conforme contexto, classe e olhar policial; elo com Tema 506 e seletividade."
+                },
+                {
+                  "label": "Inspeção: Descriminalização — atipicidade penal ≠ legalização",
+                  "tileLabel": "Inspeção: Descriminalização — a…",
+                  "href": "/posts/post-inspecao-palavra-descriminalizacao.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-descriminalizacao",
+                  "description": "Palavra: descriminalização — no debate brasileiro, frequentemente aponta à atipicidade penal do porte (Tema 506); não é legalização nem autorização de cultivo."
+                },
+                {
+                  "label": "Inspeção: RDC × Autorização sanitária — camada ANVISA do acesso",
+                  "tileLabel": "Inspeção: RDC × Autorização san…",
+                  "href": "/posts/post-inspecao-palavra-rdc-autorizacao-sanitaria.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-rdc-autorizacao-sanitaria",
+                  "description": "Par: RDC × autorização sanitária — normas ANVISA (incl. marcos 2026 de cultivo/produção institucional) distintas de HC individual e de descriminalização do porte."
                 }
               ]
             },

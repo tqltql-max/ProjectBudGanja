@@ -715,7 +715,7 @@ const DEFAULT_SITE = {
       megaAccordion: true,
       megaHeader: 'Biblioteca',
       megaHeaderHref: '/biblioteca/',
-      adminOnly: true,
+      authOnly: true,
       groups: [{ title: '', items: [] }]
     },
     {
@@ -1221,17 +1221,26 @@ function isAdminAuth(authState) {
   return !!(authState && authState.isAdmin);
 }
 
+function isAuthUser(authState) {
+  return !!(authState && (authState.isUser || authState.isAdmin));
+}
+
+function navItemAllowed(item, authState) {
+  if (!item) return false;
+  if (item.adminOnly && !isAdminAuth(authState)) return false;
+  if (item.authOnly && !isAuthUser(authState)) return false;
+  return true;
+}
+
 function filterAdminOnlyNav(items, authState) {
   if (!Array.isArray(items)) return [];
-  const allowAdmin = isAdminAuth(authState);
   return items.filter(function (item) {
-    return !item || !item.adminOnly || allowAdmin;
+    return navItemAllowed(item, authState);
   });
 }
 
 /** Hubs reais do site — fonte única para quick-nav (desktop) e menu mobile. */
 function getSiteHubNav(authState) {
-  const allowAdmin = isAdminAuth(authState);
   const quick = [
       {
         href: '/plantas/',
@@ -1264,7 +1273,7 @@ function getSiteHubNav(authState) {
         tip: i18n('nav.quickLibraryTip', 'Inspeções, UNIFESP, guias, pesquisas e catálogos'),
         prefixes: '/biblioteca/inspecoes,/guia',
         tone: 'inspecoes',
-        adminOnly: true
+        authOnly: true
       },
       {
         href: '/biblioteca/pesquisas/',
@@ -1298,7 +1307,7 @@ function getSiteHubNav(authState) {
         prefixes: '/videos',
         tone: 'videos'
       }
-  ].filter(function (item) { return !item.adminOnly || allowAdmin; });
+  ].filter(function (item) { return navItemAllowed(item, authState); });
 
   const exploreLinks = [
           {
@@ -1315,7 +1324,7 @@ function getSiteHubNav(authState) {
             label: i18n('nav.library', 'Biblioteca'),
             prefixes: '/biblioteca/inspecoes,/guia',
             tone: 'inspecoes',
-            adminOnly: true
+            authOnly: true
           },
           {
             href: '/plantas/',
@@ -1359,7 +1368,7 @@ function getSiteHubNav(authState) {
             prefixes: '/videos',
             tone: 'videos'
           }
-  ].filter(function (item) { return !item.adminOnly || allowAdmin; });
+  ].filter(function (item) { return navItemAllowed(item, authState); });
 
   return {
     quick: quick,
@@ -2347,6 +2356,15 @@ function applyAdminOnlyVisibility(isAdmin) {
   });
 }
 
+function applyAuthOnlyVisibility(authState) {
+  const allow = isAuthUser(authState);
+  document.body.classList.toggle('is-auth-user', allow);
+  document.querySelectorAll('[data-auth-only]').forEach(function (el) {
+    if (allow) el.removeAttribute('hidden');
+    else el.setAttribute('hidden', '');
+  });
+}
+
 function injectLayout(site, authState) {
   cachedLayoutSite = site;
   cachedLayoutAuth = authState;
@@ -2357,6 +2375,7 @@ function injectLayout(site, authState) {
   const headerHTML = buildHeaderHTML(localizedSite, localizedAuth);
   const footerHTML = buildFooterHTML(localizedSite);
   applyAdminOnlyVisibility(isAdminAuth(localizedAuth));
+  applyAuthOnlyVisibility(localizedAuth);
 
   if (headerContainer) {
     headerContainer.innerHTML = headerHTML;
