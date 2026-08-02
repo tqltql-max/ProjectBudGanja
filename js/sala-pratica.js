@@ -113,6 +113,7 @@
   }
 
   function isUnitUnlocked(curriculum, progress, unit, unitIndex) {
+    if (unit && (unit.open === true || unit.unlockedByDefault === true)) return true;
     if (unitIndex === 0) return true;
     var prev = curriculum.units[unitIndex - 1];
     if (!prev || !prev.lessons || !prev.lessons.length) return true;
@@ -275,6 +276,9 @@
       var ln = lang === 'es' ? 'Español' : 'English';
       return t('promptMatch', 'Ligue cada palavra ao {lang}.').replace('{lang}', ln);
     }
+    if (key === 'promptRead' || ex.type === 'read_pass') {
+      return ex.prompt || t('promptRead', 'Leia com calma — depois continue.');
+    }
     return '';
   }
 
@@ -353,12 +357,49 @@
       });
       html += '</div></div>';
       html += '<p class="pratica-match-hint">' + escapeHtml(t('matchHint', 'Toque um par de cada lado.')) + '</p>';
+    } else if (ex.type === 'read_pass') {
+      var lines = Array.isArray(ex.lines) ? ex.lines : [];
+      var body = ex.body || '';
+      html += '<article class="pratica-read-card" data-learn-root>';
+      if (ex.kicker) {
+        html += '<p class="pratica-read-kicker">' + escapeHtml(ex.kicker) + '</p>';
+      }
+      if (ex.title) {
+        html += '<h3 class="pratica-read-title">' + escapeHtml(ex.title) + '</h3>';
+      }
+      if (lines.length) {
+        html += '<div class="pratica-read-poem">';
+        lines.forEach(function (line) {
+          html += '<p>' + escapeHtml(line) + '</p>';
+        });
+        html += '</div>';
+      } else if (body) {
+        html += '<p class="pratica-read-body">' + escapeHtml(body) + '</p>';
+      }
+      if (ex.credit) {
+        html += '<p class="pratica-read-credit">' + escapeHtml(ex.credit) + '</p>';
+      }
+      if (ex.legal) {
+        html += '<p class="pratica-read-legal">' + escapeHtml(ex.legal) + '</p>';
+      }
+      if (ex.linkHref && ex.linkLabel) {
+        html +=
+          '<p class="pratica-read-link"><a href="' +
+          escapeHtml(ex.linkHref) +
+          '">' +
+          escapeHtml(ex.linkLabel) +
+          '</a></p>';
+      }
+      html += '</article>';
     }
 
+    var continueHidden = ex.type === 'read_pass' ? '' : ' hidden';
     html +=
       '<p class="pratica-feedback" aria-live="polite" hidden></p>' +
-      '<button type="button" class="botao botao-home pratica-continue" hidden>' +
-      escapeHtml(t('continueBtn', 'Continuar')) +
+      '<button type="button" class="botao botao-home pratica-continue"' +
+      continueHidden +
+      '>' +
+      escapeHtml(ex.type === 'read_pass' ? t('readContinue', 'Li — continuar') : t('continueBtn', 'Continuar')) +
       '</button>' +
       '</div>';
     return html;
@@ -505,12 +546,21 @@
       var cont = $('.pratica-continue', mount);
       if (cont) {
         cont.addEventListener('click', function () {
+          if (ex.type === 'read_pass' && mount.getAttribute('data-locked') !== '1') {
+            mount.setAttribute('data-locked', '1');
+            state.correct += 1;
+            state.streak += 1;
+          }
           state.index += 1;
           state.matchSelected = null;
           state.matchDone = {};
           mount.removeAttribute('data-locked');
           renderCurrent();
         });
+      }
+
+      if (ex.type === 'read_pass') {
+        return;
       }
 
       if (ex.type === 'translate_mc') {

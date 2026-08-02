@@ -211,8 +211,68 @@
           ]
         },
         {
-          "id": "diploma-amigo",
+          "id": "metodo-palavra",
           "order": 7,
+          "title": "Poesia, livros e tradução",
+          "minutes": 5,
+          "summary": "Método da palavra (Gregorio), trechos legais de livros e tradução ao vivo — no modo Vida.",
+          "body": [
+            "No laboratório Vida, a língua também é planta: nasce na palavra, cresce na poesia e viaja na tradução.",
+            "Gregorio Duvivier trabalha o método da palavra — Letras, poesia e o espetáculo O Céu da Língua. Aqui não copiamos os poemas dele: lemos poeminhas originais BudGanja e apontamos para os livros publicados.",
+            "Trechos de livros? Só o que é legal: clássicos em domínio público (como Alice) e convites honestos aos livros de hoje nas livrarias.",
+            "Na trilha de prática, escolha Poesia, Trechos ou Traduções — instantâneo, interativo e com um adulto por perto."
+          ],
+          "focusWords": ["palavra", "poesia", "livro", "língua", "traduzir", "cuidado"],
+          "relatedLinks": [
+            {
+              "label": "Praticar: poesia",
+              "href": "/vida/sala/pratica.html?lesson=poesia-gregorio",
+              "hint": "Poeminhas + tradução"
+            },
+            {
+              "label": "Praticar: trechos de livros",
+              "href": "/vida/sala/pratica.html?lesson=trechos-publicados",
+              "hint": "Domínio público + livros publicados"
+            },
+            {
+              "label": "Praticar: traduções",
+              "href": "/vida/sala/pratica.html?lesson=traducoes-instant",
+              "hint": "English ou Español ao vivo"
+            },
+            {
+              "label": "Inspeção: Gregorio Duvivier",
+              "href": "/posts/post-inspecao-figura-duvivier.html",
+              "hint": "Método da palavra e livros citados"
+            },
+            {
+              "label": "Inspeção: Alice",
+              "href": "/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html"
+            }
+          ],
+          "quiz": [
+            {
+              "q": "Por que não colamos poemas inteiros de Gregorio aqui?",
+              "options": [
+                "Porque o texto publicado tem direitos — usamos poeminhas nossos e apontamos o livro",
+                "Porque poesia é proibida",
+                "Porque o Inspetor não gosta de livros"
+              ],
+              "answer": 0
+            },
+            {
+              "q": "Que tipo de trecho de livro podemos ler na prática Vida?",
+              "options": [
+                "Clássicos em domínio público e convites legais aos livros publicados",
+                "Qualquer PDF baixado na internet",
+                "Só capas sem ler nada"
+              ],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "id": "diploma-amigo",
+          "order": 8,
           "title": "Diploma de amigo das plantas",
           "minutes": 4,
           "summary": "Revise e celebre o que aprendeu.",

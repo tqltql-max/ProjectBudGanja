@@ -236,6 +236,234 @@
           ]
         }
       ]
+    },
+    {
+      "id": "poesia-palavra",
+      "order": 4,
+      "open": true,
+      "title": "Poesia · método da palavra",
+      "summary": "Poeminhas originais BudGanja no espírito do método da palavra (Gregorio) — legais e instantâneos.",
+      "lessons": [
+        {
+          "id": "poesia-gregorio",
+          "title": "Poesia e a língua",
+          "exercises": [
+            {
+              "type": "read_pass",
+              "promptKey": "promptRead",
+              "prompt": "Leia o poeminho — depois continue.",
+              "kicker": "Poesia · método da palavra",
+              "title": "A palavra acorda",
+              "lines": [
+                "A palavra acorda cedo,",
+                "veste sol e vai ao chão.",
+                "Se você olhar com cuidado,",
+                "ela vira investigação."
+              ],
+              "credit": "Poeminho original BudGanja · inspirado no método da palavra de Gregorio Duvivier",
+              "legal": "Texto educacional nosso — não é poema publicado do autor. Os livros dele estão nas livrarias; aqui praticamos a ideia com conteúdo legal.",
+              "linkHref": "/posts/post-inspecao-figura-duvivier.html",
+              "linkLabel": "Abrir inspeção: Gregorio Duvivier"
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "palavra",
+              "optionsEn": ["word", "plant", "seed"],
+              "optionsEs": ["palabra", "planta", "semilla"],
+              "answer": 0
+            },
+            {
+              "type": "tap_word",
+              "promptKey": "promptTap",
+              "sentencePt": "A ___ acorda cedo no poema.",
+              "blankToken": "___",
+              "optionsPt": ["palavra", "raiva", "chapéu"],
+              "answerPt": "palavra",
+              "hintEn": "The word wakes up early in the poem.",
+              "hintEs": "La palabra despierta temprano en el poema."
+            },
+            {
+              "type": "match_pairs",
+              "promptKey": "promptMatch",
+              "pairs": [
+                { "pt": "poesia", "en": "poetry", "es": "poesía" },
+                { "pt": "língua", "en": "language", "es": "lengua" },
+                { "pt": "cuidado", "en": "care", "es": "cuidado" }
+              ]
+            },
+            {
+              "type": "read_pass",
+              "promptKey": "promptRead",
+              "prompt": "Mais um poeminho curto — leia e continue.",
+              "kicker": "Poesia · laboratório",
+              "title": "Folha e verso",
+              "lines": [
+                "Folha verde, verso leve,",
+                "raiz quieta, ideia viva.",
+                "Quem pergunta pela origem",
+                "faz da língua uma oficina."
+              ],
+              "credit": "Poeminho original BudGanja",
+              "legal": "Conteúdo próprio do laboratório — livre para aprender em família."
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "poesia",
+              "optionsEn": ["poetry", "anger", "water"],
+              "optionsEs": ["poesía", "ira", "agua"],
+              "answer": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trechos-livros",
+      "order": 5,
+      "open": true,
+      "title": "Trechos de livros",
+      "summary": "Trechos legais: domínio público + convite aos livros publicados.",
+      "lessons": [
+        {
+          "id": "trechos-publicados",
+          "title": "Ler um pedacinho",
+          "exercises": [
+            {
+              "type": "read_pass",
+              "promptKey": "promptRead",
+              "prompt": "Trecho clássico em domínio público — leia com calma.",
+              "kicker": "Livro · domínio público",
+              "title": "Alice no País das Maravilhas",
+              "body": "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, «and what is the use of a book,» thought Alice, «without pictures or conversations?»",
+              "credit": "Lewis Carroll · Alice's Adventures in Wonderland (1865)",
+              "legal": "Texto em domínio público. Traduza ideias com um adulto — e, se quiser, leia o livro completo numa edição publicada.",
+              "linkHref": "/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html",
+              "linkLabel": "Inspeção BudGanja · Alice"
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "livro",
+              "optionsEn": ["book", "leaf", "team"],
+              "optionsEs": ["libro", "hoja", "equipo"],
+              "answer": 0
+            },
+            {
+              "type": "tap_word",
+              "promptKey": "promptTap",
+              "sentencePt": "Alice pergunta: para que serve um ___ sem figuras?",
+              "blankToken": "___",
+              "optionsPt": ["livro", "carro", "medo"],
+              "answerPt": "livro",
+              "hintEn": "Alice asks: what is the use of a book without pictures?",
+              "hintEs": "Alice pregunta: ¿para qué sirve un libro sin figuras?"
+            },
+            {
+              "type": "read_pass",
+              "promptKey": "promptRead",
+              "prompt": "Livros publicados de hoje — leia o convite (sem copiar o texto protegido).",
+              "kicker": "Livros publicados · legal",
+              "title": "Onde continuar a leitura",
+              "body": "Gregorio Duvivier publica poesia e crônica (ex.: A partir de amanhã…, Ligue os pontos, Aos pés da letra). Jostein Gaarder escreveu O Mundo de Sofia e O Dia do Curinga. Aqui no Vida você pratica a ideia; o texto completo mora no livro comprado ou emprestado — isso é o jeito legal e justo.",
+              "credit": "Convite educacional BudGanja",
+              "legal": "Não reproduzimos trechos protegidos por direitos autorais. Compre ou pegue emprestado o livro publicado.",
+              "linkHref": "/posts/post-inspecao-figura-duvivier.html",
+              "linkLabel": "Ver livros citados na inspeção"
+            },
+            {
+              "type": "match_pairs",
+              "promptKey": "promptMatch",
+              "pairs": [
+                { "pt": "livro", "en": "book", "es": "libro" },
+                { "pt": "história", "en": "story", "es": "historia" },
+                { "pt": "pergunta", "en": "question", "es": "pregunta" }
+              ]
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "história",
+              "optionsEn": ["story", "soil", "fear"],
+              "optionsEs": ["historia", "tierra", "miedo"],
+              "answer": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "traducoes-viva",
+      "order": 6,
+      "open": true,
+      "title": "Traduções ao vivo",
+      "summary": "Traduzir palavras da poesia e dos livros — English ou Español.",
+      "lessons": [
+        {
+          "id": "traducoes-instant",
+          "title": "Traduzir agora",
+          "exercises": [
+            {
+              "type": "read_pass",
+              "promptKey": "promptRead",
+              "prompt": "Frase para traduzir com o corpo — leia e continue.",
+              "kicker": "Tradução · modo Vida",
+              "title": "Oficina da língua",
+              "lines": [
+                "Língua é caminho.",
+                "Palavra é semente.",
+                "Traduzir é cuidar."
+              ],
+              "credit": "Microtexto original BudGanja",
+              "legal": "Conteúdo próprio — pratique English/Español nos passos seguintes."
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "língua",
+              "optionsEn": ["language", "anger", "seed"],
+              "optionsEs": ["lengua", "ira", "semilla"],
+              "answer": 0
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "traduzir",
+              "optionsEn": ["to translate", "to plant", "to sleep"],
+              "optionsEs": ["traducir", "plantar", "dormir"],
+              "answer": 0
+            },
+            {
+              "type": "match_pairs",
+              "promptKey": "promptMatch",
+              "pairs": [
+                { "pt": "caminho", "en": "path", "es": "camino" },
+                { "pt": "semente", "en": "seed", "es": "semilla" },
+                { "pt": "investigação", "en": "investigation", "es": "investigación" }
+              ]
+            },
+            {
+              "type": "tap_word",
+              "promptKey": "promptTap",
+              "sentencePt": "Traduzir é ___ da palavra.",
+              "blankToken": "___",
+              "optionsPt": ["cuidado", "raiva", "chapéu"],
+              "answerPt": "cuidado",
+              "hintEn": "To translate is care for the word.",
+              "hintEs": "Traducir es cuidado de la palabra."
+            },
+            {
+              "type": "translate_mc",
+              "promptKey": "promptTranslate",
+              "pt": "oficina",
+              "optionsEn": ["workshop", "forest", "cloud"],
+              "optionsEs": ["taller", "bosque", "nube"],
+              "answer": 0
+            }
+          ]
+        }
+      ]
     }
   ]
 }

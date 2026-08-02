@@ -556,3 +556,90 @@ a.pratica-lesson-link:focus-visible {
 .pratica-section {
     padding: 0 var(--space-page-x, 1.25rem);
 }
+
+.pratica-entry--lingua {
+    border-color: rgba(223, 194, 98, 0.55);
+    background:
+        linear-gradient(135deg, rgba(223, 194, 98, 0.16), rgba(124, 179, 66, 0.1)),
+        rgba(12, 18, 8, 0.92);
+}
+
+.pratica-read-card {
+    margin: 0.5rem 0 1rem;
+    padding: 1.15rem 1.2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(223, 194, 98, 0.4);
+    background:
+        linear-gradient(160deg, rgba(254, 249, 215, 0.08), transparent 60%),
+        rgba(18, 24, 12, 0.95);
+    display: grid;
+    gap: 0.65rem;
+    text-align: left;
+}
+
+.pratica-read-kicker {
+    margin: 0;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--sala-gold, #dfc262);
+}
+
+.pratica-read-title {
+    margin: 0;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.35rem;
+    color: #fef9d7;
+    line-height: 1.2;
+}
+
+.pratica-read-poem {
+    display: grid;
+    gap: 0.2rem;
+    padding: 0.35rem 0;
+}
+
+.pratica-read-poem p {
+    margin: 0;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.12rem;
+    line-height: 1.45;
+    color: rgba(254, 249, 215, 0.95);
+}
+
+.pratica-read-body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: rgba(244, 237, 216, 0.9);
+}
+
+.pratica-read-credit,
+.pratica-read-legal {
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.4;
+    color: rgba(244, 237, 216, 0.62);
+}
+
+.pratica-read-legal {
+    padding-top: 0.35rem;
+    border-top: 1px dashed rgba(223, 194, 98, 0.28);
+}
+
+.pratica-read-link {
+    margin: 0;
+}
+
+.pratica-read-link a {
+    color: var(--sala-gold, #dfc262);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.pratica-read-link a:hover,
+.pratica-read-link a:focus-visible {
+    color: #fef9d7;
+}

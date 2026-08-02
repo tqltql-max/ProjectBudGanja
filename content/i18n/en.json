@@ -787,6 +787,8 @@
       "promptTranslate": "How do you say «{word}» in {lang}?",
       "promptTap": "Tap the right word.",
       "promptMatch": "Match each word to {lang}.",
+      "promptRead": "Read carefully — then continue.",
+      "readContinue": "I read it — continue",
       "matchHint": "Tap one pair on each side.",
       "stepOf": "Step {n} of {total}",
       "continueBtn": "Continue",
@@ -802,6 +804,12 @@
       "streakLabel": "in a row",
       "noHeartsTitle": "Time to breathe",
       "noHeartsBody": "No lives left. Go back to the path and try again.",
+      "linguaTitle": "Learn with language",
+      "linguaLead": "Poetry in the spirit of Gregorio’s method of the word, legal published-book snippets, and live translations — instant and interactive.",
+      "ctaPoetry": "Poetry · Gregorio",
+      "ctaBooks": "Book excerpts",
+      "ctaTranslate": "Live translations",
+      "ctaLesson": "Lesson: method of the word",
       "docTitle": "Practice languages | Vida classroom"
     },
     "about": {

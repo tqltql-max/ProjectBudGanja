@@ -787,6 +787,8 @@
       "promptTranslate": "¿Cómo se dice «{word}» en {lang}?",
       "promptTap": "Toca la palabra correcta.",
       "promptMatch": "Une cada palabra al {lang}.",
+      "promptRead": "Lee con calma — después continúa.",
+      "readContinue": "Ya leí — continuar",
       "matchHint": "Toca un par en cada lado.",
       "stepOf": "Paso {n} de {total}",
       "continueBtn": "Continuar",
@@ -802,6 +804,12 @@
       "streakLabel": "seguidas",
       "noHeartsTitle": "Pausa para respirar",
       "noHeartsBody": "Sin vidas ahora. Vuelve a la ruta e inténtalo de nuevo.",
+      "linguaTitle": "Aprender con la lengua",
+      "linguaLead": "Poesía al espíritu del método de la palabra (Gregorio), fragmentos legales de libros publicados y traducciones en vivo — instantáneo e interactivo.",
+      "ctaPoetry": "Poesía · Gregorio",
+      "ctaBooks": "Fragmentos de libros",
+      "ctaTranslate": "Traducciones en vivo",
+      "ctaLesson": "Clase: método de la palabra",
       "docTitle": "Practicar idiomas | Aula Vida"
     },
     "about": {
