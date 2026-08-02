@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T04:36:03.870Z",
+  "updatedAt": "2026-08-02T04:41:13.749Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2061,6 +2061,21 @@
       "whyEs": "Hub Productos nocivos: el chocolate junta cacao, azúcar, harina/gluten y caseína.",
       "suggestedSlug": "inspecao-derivado-chocolate",
       "doneHref": "/posts/post-inspecao-derivado-chocolate.html",
+      "seriesHint": "plantas-derivados-risco"
+    },
+    {
+      "id": "derivado-analise-danos-videos",
+      "title": "Análise: danos × vídeos catalogados",
+      "titleEn": "Analysis: harms × catalogued videos",
+      "titleEs": "Análisis: daños × vídeos catalogados",
+      "tipo": "derivado",
+      "priority": 1,
+      "status": "feita",
+      "why": "Cruzar danos da rede Produtos nocivos com o acervo de vídeos do projecto.",
+      "whyEn": "Cross harmful-product harms with the project video archive.",
+      "whyEs": "Cruzar daños de Productos nocivos con el acervo de vídeos del proyecto.",
+      "suggestedSlug": "inspecao-derivado-analise-danos-videos",
+      "doneHref": "/posts/post-inspecao-derivado-analise-danos-videos.html",
       "seriesHint": "plantas-derivados-risco"
     }
   ]

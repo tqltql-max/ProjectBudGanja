@@ -10,7 +10,8 @@ const path = require('path');
 const {
   buildCaseinaPost,
   buildGlutenPost,
-  buildChocolatePost
+  buildChocolatePost,
+  buildAnaliseDanosVideosPost
 } = require('../lib/produtos-nocivos-inspecoes-posts.js');
 
 const ROOT = path.join(__dirname, '..');
@@ -63,7 +64,12 @@ function upsertSug(items, entry) {
 }
 
 async function main() {
-  const built = [buildCaseinaPost(), buildGlutenPost(), buildChocolatePost()];
+  const built = [
+    buildCaseinaPost(),
+    buildGlutenPost(),
+    buildChocolatePost(),
+    buildAnaliseDanosVideosPost()
+  ];
 
   const posts = JSON.parse(fs.readFileSync(POSTS_FILE, 'utf8'));
   built.forEach((post) => upsertPost(posts, post));
@@ -119,6 +125,21 @@ async function main() {
       whyEs: 'Hub Productos nocivos: el chocolate junta cacao, azúcar, harina/gluten y caseína.',
       suggestedSlug: 'inspecao-derivado-chocolate',
       doneHref: '/posts/post-inspecao-derivado-chocolate.html',
+      seriesHint: 'plantas-derivados-risco'
+    });
+    upsertSug(items, {
+      id: 'derivado-analise-danos-videos',
+      title: 'Análise: danos × vídeos catalogados',
+      titleEn: 'Analysis: harms × catalogued videos',
+      titleEs: 'Análisis: daños × vídeos catalogados',
+      tipo: 'derivado',
+      priority: 1,
+      status: 'feita',
+      why: 'Cruzar danos da rede Produtos nocivos com o acervo de vídeos do projecto.',
+      whyEn: 'Cross harmful-product harms with the project video archive.',
+      whyEs: 'Cruzar daños de Productos nocivos con el acervo de vídeos del proyecto.',
+      suggestedSlug: 'inspecao-derivado-analise-danos-videos',
+      doneHref: '/posts/post-inspecao-derivado-analise-danos-videos.html',
       seriesHint: 'plantas-derivados-risco'
     });
     sug.items = items;

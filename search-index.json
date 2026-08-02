@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T04:36:11.379Z",
+  "updatedAt": "2026-08-02T04:41:21.958Z",
   "items": [
     {
       "title": "Início",
@@ -144,6 +144,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Análise: danos dos produtos nocivos × vídeos catalogados",
+      "url": "/posts/post-inspecao-derivado-analise-danos-videos.html",
+      "excerpt": "Onde o acervo de vídeos do projecto sustenta (ou não) a rede açúcar · farinha · leite · chocolate: quase todo o discurso está no Lair; MovReCam/CANABinALL quase não entram neste eixo.",
+      "text": "Análise: danos dos produtos nocivos × vídeos catalogados Onde o acervo de vídeos do projecto sustenta (ou não) a rede açúcar · farinha · leite · chocolate: quase todo o discurso está no Lair; MovReCam/CANABinALL quase não entram neste eixo. inspecao ## Escopo\n\nAnálise editorial que **cruza os danos** da rede **Produtos nocivos** (açúcar, farinha/glúten, leite/caseína, chocolate industrial, óleos) com os **vídeos catalogados em todo o projecto** — Lair, MovReCam, CANABinALL e Inspetor BudGanja.\n\n> **Nota metodológica:** auditoria independente. Classificação por **título** (`lair-video-themes.json`, `lair-sugar-hits.json`, catálogos `content/channels/`). **Não é aconselhamento médico.** **Indexar ≠ endossar.** O discurso Lair é divulgação; as fichas BudGanja (OMS, celíaca, caseína A1) são a camada de método. Sem afiliação com os canais.\n\n## Universo do acervo (vídeos únicos)\n\n| Canal | Vídeos | Papel neste eixo |\n|-------|--------|------------------|\n| Dr. Lair Ribeiro Oficial | **888** | Quase todo o discurso alimentar / dano metabólico |\n| MovReCam | **285** | Cultivo / UNIFESP / cannabis — quase sem açúcar·glúten·leite |\n| CANABinALL | **139** | Divulgação científica cannabis — eixo alimentar residual |\n| Inspetor BudGanja | **6** | Ainda sem série própria de produtos nocivos em vídeo |\n| **Total único** | **~1318** | |\n\n**Achado principal:** o peso do eixo «produtos nocivos» **não** segue o hub de vídeos do site (MovReCam/CANABinALL) — segue o **Lair**.\n\n## Produto → danos no discurso → vídeos → ficha\n\n| Produto | Danos / hipóteses no discurso | Vídeos no catálogo | Ficha BudGanja |\n|---------|-------------------------------|--------------------|----------------|\n| **Açúcar / frutose / adoçantes** | Açúcares livres (OMS na ficha); diabesidade; frutose; adoçantes e desejo por doce | **10** no tema Lair · **38** hits na varredura (`lair-sugar-hits.json`: 20 diabetes/insulina, 16 metabólico) | [Cana](/posts/post-inspecao-derivado-cana-de-acucar.html) · [Lair](/posts/"
     },
     {
       "title": "Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite",
