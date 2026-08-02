@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T05:35:33.250Z",
+  "updatedAt": "2026-08-02T11:06:22.470Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2172,6 +2172,29 @@
       "suggestedSlug": "inspecao-artigo-oms-acucares-livres-2015",
       "doneHref": "/posts/post-inspecao-artigo-oms-acucares-livres-2015.html",
       "seriesHint": "artigos-cientificos"
+    },
+    {
+      "id": "arte-filme-venom",
+      "title": "Venom — o filme de 2018, a simbiose e o «nós»",
+      "titleEn": "Venom — the 2018 film, symbiosis and “we”",
+      "titleEs": "Venom — el filme de 2018, la simbiosis y el «nosotros»",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Artes: Venom (2018, Fleischer/Hardy) — comics Marvel → entrada SSU; simbiose e «nós».",
+      "whyEn": "Arts: Venom (2018) — Marvel comics → SSU entry; symbiosis and “we”.",
+      "whyEs": "Artes: Venom (2018) — cómics Marvel → entrada SSU; simbiosis y «nosotros».",
+      "suggestedSlug": "inspecao-filme-venom",
+      "doneHref": "/posts/post-inspecao-filme-venom.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Venom_(filme_de_2018)",
+        "https://en.wikipedia.org/wiki/Venom_(2018_film)",
+        "https://www.youtube.com/watch?v=u9Mv98Gr5pY",
+        "/posts/post-inspecao-filme-the-matrix.html",
+        "/posts/post-inspecao-filme-divertida-mente.html"
+      ],
+      "notes": "Comics primeiro (personagem); filme 2018 = entrada SSU; sequelas = eco."
     }
   ]
 }

@@ -1805,6 +1805,25 @@
     "seriesLabel": "Goiaba · fruto"
   },
   {
+    "title": "Inspeção: Venom — o filme de 2018, a simbiose e o «nós»",
+    "titleEn": "Inspection: Venom — the 2018 film, symbiosis and “we”",
+    "titleEs": "Inspección: Venom — el filme de 2018, la simbiosis y el «nosotros»",
+    "excerpt": "Artes · cinema: Venom (2018, Fleischer / Hardy) — entrada SSU, génese do personagem nos comics Marvel, simbiose e «nós» como parábola de agência partilhada.",
+    "excerptEn": "Arts · film: Venom (2018, Fleischer / Hardy) — SSU entry, Marvel comics character genesis, symbiosis and “we” as a shared-agency parable.",
+    "excerptEs": "Artes · cine: Venom (2018, Fleischer / Hardy) — entrada SSU, génesis del personaje en cómics Marvel, simbiosis y «nosotros» como parábola de agencia compartida.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-filme-venom",
+    "url": "/posts/post-inspecao-filme-venom.html",
+    "date": "2026-08-02T11:00:00.000Z",
+    "filename": "posts/post-inspecao-filme-venom.html",
+    "coverImage": "/imagens/inspecoes/venom-cover.jpg",
+    "category": "inspecao",
+    "series": "artes-cultura",
+    "seriesOrder": 10,
+    "seriesLabel": "Venom · Artes"
+  },
+  {
     "title": "Inspeção: Cânhamo — fibra industrial coberta pela confusão com «droga»",
     "titleEn": "Inspection: Cânhamo — industrial fiber overlaid by “drug” confusion",
     "titleEs": "Inspección: Cânhamo — fibra industrial tapada por la confusión con «droga»",
@@ -2981,6 +3000,25 @@
     "series": "palavras-origem",
     "seriesOrder": 45,
     "seriesLabel": "Guia · Farmácia Viva · Aula 5"
+  },
+  {
+    "title": "Inspeção: Guia palavras — léxico «Da molécula ao lixo» (destaque e justificação)",
+    "titleEn": "Inspection: Words Guide — «From molecule to waste» lexicon (highlight & justification)",
+    "titleEs": "Inspección: Guía de palabras — léxico «De la molécula a la basura» (destacado y justificación)",
+    "excerpt": "As 23 palavras novas do Guia ligadas à pesquisa molécula→lixo: destaque, famílias semânticas e por que cada uma entra no catálogo.",
+    "excerptEn": "The 23 new Words Guide entries from molecule→waste research: highlights, semantic families and why each term is catalogued.",
+    "excerptEs": "Las 23 palabras nuevas de la Guía ligadas a molécula→basura: destacado, familias semánticas y por qué entran al catálogo.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-guia-palavras-molecula-ao-lixo",
+    "url": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html",
+    "date": "2026-08-02T13:00:00.000Z",
+    "filename": "posts/post-inspecao-guia-palavras-molecula-ao-lixo.html",
+    "coverImage": "/imagens/pesquisas/molecula-ao-lixo-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 46,
+    "seriesLabel": "Guia · léxico molécula→lixo"
   },
   {
     "title": "Super Solo: Guia de Uso",
