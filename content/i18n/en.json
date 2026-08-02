@@ -740,9 +740,10 @@
       "exploreTitle": "Keep exploring",
       "exploreLead": "Lab tools to practice with (always with an adult).",
       "learnLabel": "Learn languages",
-      "learnHintOff": "Choose English or Español — then pass your pointer over the words.",
-      "learnHintEn": "Pass over words: the gold sheen translates and shows the English phrase.",
-      "learnHintEs": "Pass over words: the gold sheen translates and shows the Spanish phrase.",
+      "learnHintOff": "Choose English or Español — then pass over one word at a time.",
+      "learnHintEn": "Pass over a word: it turns into English. The tip shows only the word and a tiny idea.",
+      "learnHintEs": "Pass over a word: it turns into Spanish. The tip shows only the word and a tiny idea.",
+      "learnIdeaLabel": "Idea",
       "docTitle": "Vida | Inspetor BudGanja"
     },
     "about": {

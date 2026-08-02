@@ -742,9 +742,10 @@ window.__I18N_LOCALES__ = {
         "exploreTitle": "Keep exploring",
         "exploreLead": "Lab tools to practice with (always with an adult).",
         "learnLabel": "Learn languages",
-        "learnHintOff": "Choose English or Español — then pass your pointer over the words.",
-        "learnHintEn": "Pass over words: the gold sheen translates and shows the English phrase.",
-        "learnHintEs": "Pass over words: the gold sheen translates and shows the Spanish phrase.",
+        "learnHintOff": "Choose English or Español — then pass over one word at a time.",
+        "learnHintEn": "Pass over a word: it turns into English. The tip shows only the word and a tiny idea.",
+        "learnHintEs": "Pass over a word: it turns into Spanish. The tip shows only the word and a tiny idea.",
+        "learnIdeaLabel": "Idea",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
@@ -1521,9 +1522,10 @@ window.__I18N_LOCALES__ = {
         "exploreTitle": "Seguir explorando",
         "exploreLead": "Herramientas del laboratorio para practicar (siempre con un adulto).",
         "learnLabel": "Aprender idiomas",
-        "learnHintOff": "Elige English o Español — luego pasa el cursor o el dedo por las palabras.",
-        "learnHintEn": "Pasa por las palabras: el brillo traduce y muestra la frase en inglés.",
-        "learnHintEs": "Pasa por las palabras: el brillo traduce y muestra la frase en español.",
+        "learnHintOff": "Elige English o Español — luego pasa por una palabra a la vez.",
+        "learnHintEn": "Pasa por una palabra: se vuelve English. El tip muestra solo la palabra y una idea corta.",
+        "learnHintEs": "Pasa por una palabra: se vuelve español. El tip muestra solo la palabra y una idea corta.",
+        "learnIdeaLabel": "Idea",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
@@ -2300,9 +2302,10 @@ window.__I18N_LOCALES__ = {
         "exploreTitle": "Continuar a explorar",
         "exploreLead": "Ferramentas do laboratório para praticar (sempre com um adulto).",
         "learnLabel": "Aprender idiomas",
-        "learnHintOff": "Escolhe English ou Español — depois passa o rato/dedo pelas palavras.",
-        "learnHintEn": "Passe pelas palavras: o brilho traduz e mostra a frase em English.",
-        "learnHintEs": "Passe pelas palavras: o brilho traduz e mostra a frase em español.",
+        "learnHintOff": "Escolhe English ou Español — depois passa o rato/dedo por uma palavra de cada vez.",
+        "learnHintEn": "Passe numa palavra: ela vira English. O tip mostra só a palavra e uma ideia curtinha.",
+        "learnHintEs": "Passe numa palavra: ela vira español. O tip mostra só a palavra e uma ideia curtinha.",
+        "learnIdeaLabel": "Ideia",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
