@@ -5299,6 +5299,46 @@ blockquote {
     background: transparent;
 }
 
+/* Poemas nas inspeções — mesmo leitor tipográfico da página Vida */
+.post-content .post-poem-reader,
+.post-content .vida-poem-reader {
+    margin: 1.1rem 0 1.35rem;
+    padding: 1.35rem 1.4rem 1.5rem;
+    border-radius: 18px;
+    border: 1px solid rgba(223, 194, 98, 0.32);
+    background:
+        linear-gradient(165deg, rgba(223, 194, 98, 0.08), rgba(12, 18, 8, 0.96));
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.28);
+}
+
+.post-content .vida-poem-body {
+    display: grid;
+    gap: 1.1rem;
+}
+
+.post-content .vida-poem-stanza {
+    margin: 0;
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    font-size: clamp(1.05rem, 2.2vw, 1.22rem);
+    line-height: 1.65;
+    color: rgba(254, 249, 230, 0.92);
+}
+
+.post-content .vida-poem-stanza--mantra {
+    margin-top: 0.35rem;
+    padding: 0.85rem 1rem;
+    border-radius: 14px;
+    border: 1px solid rgba(223, 194, 98, 0.4);
+    background:
+        radial-gradient(ellipse 90% 120% at 50% 0%, rgba(223, 194, 98, 0.16), transparent 60%),
+        rgba(28, 40, 18, 0.55);
+    font-size: clamp(1.25rem, 2.8vw, 1.55rem);
+    font-weight: 700;
+    text-align: center;
+    color: #dfc262;
+    letter-spacing: 0.02em;
+}
+
 .result-value-xl {
     font-size: 1.5rem;
     color: var(--color-accent);

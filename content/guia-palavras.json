@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T21:58:52.167Z",
+  "updatedAt": "2026-08-02T22:35:50.723Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -226,6 +226,16 @@
       "href": "/biblioteca/inspecoes/#inspecoes-artes"
     },
     {
+      "id": "arvore-da-vida",
+      "word": "Árvore da Vida",
+      "simple": "Latim *arbor* — figura sénior do arco semente → mudinha → árvore no BudGanja; sombra e ofício contínuo.",
+      "simpleEn": "Latin *arbor* — senior figure of the seed → seedling → tree arc in BudGanja; shade and ongoing craft.",
+      "simpleEs": "Latín *arbor* — figura sénior del arco semilla → plantita → árbol en BudGanja; sombra y oficio continuo.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-arvore-da-vida.html"
+    },
+    {
       "id": "associacao-pacientes",
       "word": "Associação de pacientes",
       "simple": "Organização colectiva de acesso terapêutico à cannabis — actor híbrido (cuidado + direito + sanitário); distinta de farmácia e de tráfico.",
@@ -286,16 +296,6 @@
       "href": "/plantas/babosa/"
     },
     {
-      "id": "balde",
-      "word": "Balde",
-      "simple": "Recipiente com asa — volume e transporte no cultivo; no Q&A Tamara, utensílio da narrativa ártica.",
-      "simpleEn": "Handled bucket — volume and transport in the grow; in Tamara’s Q&A, a tool of the Arctic narrative.",
-      "simpleEs": "Recipiente con asa — volumen y transporte en el cultivo; en el Q&A de Tamara, utensilio de la narrativa ártica.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-balde.html"
-    },
-    {
       "id": "backspace",
       "word": "Backspace",
       "simple": "Inglês *back* + *space* (~1899) — tecla que volta/apaga; no BudGanja, ofício de rever × tentação de apagar tudo de ruim.",
@@ -304,6 +304,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-backspace.html"
+    },
+    {
+      "id": "balde",
+      "word": "Balde",
+      "simple": "Recipiente com asa — volume e transporte no cultivo; no Q&A Tamara, utensílio da narrativa ártica.",
+      "simpleEn": "Handled bucket — volume and transport in the grow; in Tamara’s Q&A, a tool of the Arctic narrative.",
+      "simpleEs": "Recipiente con asa — volumen y transporte en el cultivo; en el Q&A de Tamara, utensilio de la narrativa ártica.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-balde.html"
     },
     {
       "id": "barbatimao",
@@ -876,16 +886,6 @@
       "href": "/posts/post-inspecao-palavra-diamba.html"
     },
     {
-      "id": "direita",
-      "word": "Direita",
-      "simple": "Lado direito / mão direita — no BudGanja, papel de ofício (executar, precisar) em complementaridade com a esquerda.",
-      "simpleEn": "Right side / right hand — in BudGanja, a craft role (execute, refine) complementary to the left.",
-      "simpleEs": "Lado derecho / mano derecha — en BudGanja, papel de oficio (ejecutar, precisar) en complementariedad con la izquierda.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-mao-esquerda-direita.html"
-    },
-    {
       "id": "diario",
       "word": "Diário",
       "simple": "Registo dia a dia — no site, o Diário de Pesquisas e o Diário da Sementinha.",
@@ -904,6 +904,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "direita",
+      "word": "Direita",
+      "simple": "Lado direito / mão direita — no BudGanja, papel de ofício (executar, precisar) em complementaridade com a esquerda.",
+      "simpleEn": "Right side / right hand — in BudGanja, a craft role (execute, refine) complementary to the left.",
+      "simpleEs": "Lado derecho / mano derecha — en BudGanja, papel de oficio (ejecutar, precisar) en complementariedad con la izquierda.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mao-esquerda-direita.html"
     },
     {
       "id": "dispensacao",
@@ -1006,16 +1016,6 @@
       "href": "/posts/post-inspecao-palavra-emocao.html"
     },
     {
-      "id": "esquerda",
-      "word": "Esquerda",
-      "simple": "Lado esquerdo / mão esquerda — no BudGanja, papel de ofício (apoiar, estabilizar) sem moral «sinistra».",
-      "simpleEn": "Left side / left hand — in BudGanja, a craft role (support, stabilize) without “sinistra” moral stigma.",
-      "simpleEs": "Lado izquierdo / mano izquierda — en BudGanja, papel de oficio (apoyar, estabilizar) sin moral «sinistra».",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-mao-esquerda-direita.html"
-    },
-    {
       "id": "endocanabinoide",
       "word": "Endocanabinoide",
       "simple": "Mensageiro que o próprio corpo produz (ex. anandamida, 2-AG) e que age nos receptores canabinoides — pode subir com exercício e, em estudos, com meditação.",
@@ -1104,6 +1104,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/plantas/espinheira-santa/"
+    },
+    {
+      "id": "esquerda",
+      "word": "Esquerda",
+      "simple": "Lado esquerdo / mão esquerda — no BudGanja, papel de ofício (apoiar, estabilizar) sem moral «sinistra».",
+      "simpleEn": "Left side / left hand — in BudGanja, a craft role (support, stabilize) without “sinistra” moral stigma.",
+      "simpleEs": "Lado izquierdo / mano izquierda — en BudGanja, papel de oficio (apoyar, estabilizar) sin moral «sinistra».",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mao-esquerda-direita.html"
     },
     {
       "id": "estaca",
@@ -1696,26 +1706,6 @@
       "href": "/posts/post-inspecao-palavra-maconha.html"
     },
     {
-      "id": "mao",
-      "word": "Mão",
-      "simple": "Latim *manus* — ferramenta do gesto: cultivar, escrever, teclar; no BudGanja entra no par esquerda × direita.",
-      "simpleEn": "Latin *manus* — tool of gesture: grow, write, type; in BudGanja enters the left × right pair.",
-      "simpleEs": "Latín *manus* — herramienta del gesto: cultivar, escribir, teclear; en BudGanja entra en el par izquierda × derecha.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-mao-esquerda-direita.html"
-    },
-    {
-      "id": "arvore-da-vida",
-      "word": "Árvore da Vida",
-      "simple": "Latim *arbor* — figura sénior do arco semente → mudinha → árvore no BudGanja; sombra e ofício contínuo.",
-      "simpleEn": "Latin *arbor* — senior figure of the seed → seedling → tree arc in BudGanja; shade and ongoing craft.",
-      "simpleEs": "Latín *arbor* — figura sénior del arco semilla → plantita → árbol en BudGanja; sombra y oficio continuo.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-arvore-da-vida.html"
-    },
-    {
       "id": "mamao",
       "word": "Mamão",
       "simple": "Carica papaya — fonte de papaína; citada em protocolos de feridas no SUS. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -1734,6 +1724,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-pesquisa-oficio-roubo-proibicao.html"
+    },
+    {
+      "id": "mao",
+      "word": "Mão",
+      "simple": "Latim *manus* — ferramenta do gesto: cultivar, escrever, teclar; no BudGanja entra no par esquerda × direita.",
+      "simpleEn": "Latin *manus* — tool of gesture: grow, write, type; in BudGanja enters the left × right pair.",
+      "simpleEs": "Latín *manus* — herramienta del gesto: cultivar, escribir, teclear; en BudGanja entra en el par izquierda × derecha.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mao-esquerda-direita.html"
     },
     {
       "id": "mar",

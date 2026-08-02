@@ -279,7 +279,14 @@
   }
 
   function init() {
-    if (!$('vida-poemas-list')) return;
+    var list = $('vida-poemas-list');
+    if (!list) return;
+    if (!list.innerHTML.trim()) {
+      list.innerHTML =
+        '<p class="vida-section-lead" data-poems-loading>' +
+        escapeHtml(t('poemsLoading', 'A carregar os poemas…')) +
+        '</p>';
+    }
     bind();
     load();
   }
