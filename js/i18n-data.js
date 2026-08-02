@@ -735,6 +735,10 @@ window.__I18N_LOCALES__ = {
         "phasesLead": "From rest in the soil to the Senior Grower seal.",
         "exploreTitle": "Keep exploring",
         "exploreLead": "Lab tools to practice with (always with an adult).",
+        "learnLabel": "Learn languages",
+        "learnHintOff": "Choose English or Español — then pass your pointer over the words.",
+        "learnHintEn": "Pass over the words: the gold sheen translates to English, one by one.",
+        "learnHintEs": "Pass over the words: the gold sheen translates to Spanish, one by one.",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
@@ -1504,6 +1508,10 @@ window.__I18N_LOCALES__ = {
         "phasesLead": "Del descanso en la tierra al sello de Cultivador Sénior.",
         "exploreTitle": "Seguir explorando",
         "exploreLead": "Herramientas del laboratorio para practicar (siempre con un adulto).",
+        "learnLabel": "Aprender idiomas",
+        "learnHintOff": "Elige English o Español — luego pasa el cursor o el dedo por las palabras.",
+        "learnHintEn": "Pasa por las palabras: el brillo dorado traduce al inglés, una a una.",
+        "learnHintEs": "Pasa por las palabras: el brillo dorado traduce al español, una a una.",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {
@@ -2273,6 +2281,10 @@ window.__I18N_LOCALES__ = {
         "phasesLead": "Do descanso na terra até o selo de Cultivador Sênior.",
         "exploreTitle": "Continuar a explorar",
         "exploreLead": "Ferramentas do laboratório para praticar (sempre com um adulto).",
+        "learnLabel": "Aprender idiomas",
+        "learnHintOff": "Escolhe English ou Español — depois passa o rato/dedo pelas palavras.",
+        "learnHintEn": "Passe pelas palavras: o brilho dourado traduz para English, uma a uma.",
+        "learnHintEs": "Passe pelas palavras: o brilho dourado traduz para español, uma a uma.",
         "docTitle": "Vida | Inspetor BudGanja"
       },
       "about": {

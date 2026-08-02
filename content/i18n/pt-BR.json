@@ -733,6 +733,10 @@
       "phasesLead": "Do descanso na terra até o selo de Cultivador Sênior.",
       "exploreTitle": "Continuar a explorar",
       "exploreLead": "Ferramentas do laboratório para praticar (sempre com um adulto).",
+      "learnLabel": "Aprender idiomas",
+      "learnHintOff": "Escolhe English ou Español — depois passa o rato/dedo pelas palavras.",
+      "learnHintEn": "Passe pelas palavras: o brilho dourado traduz para English, uma a uma.",
+      "learnHintEs": "Passe pelas palavras: o brilho dourado traduz para español, uma a uma.",
       "docTitle": "Vida | Inspetor BudGanja"
     },
     "about": {
