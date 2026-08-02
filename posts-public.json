@@ -304,6 +304,25 @@
     "seriesLabel": "Ventilação · laboratório"
   },
   {
+    "title": "Inspeção: Faça o melhor! — mantra do laboratório",
+    "titleEn": "Inspection: Do your best! — lab mantra",
+    "titleEs": "Inspección: ¡Haz lo mejor! — mantra del laboratorio",
+    "excerpt": "Expressões: «Faça o melhor!» — mantra Vida; ofício diário e resposta ao roubo e à proibição que tentam calar o projecto de inspeção.",
+    "excerptEn": "Sayings: “Do your best!” — Vida mantra; daily craft and a reply to theft and prohibition that try to silence the inspection project.",
+    "excerptEs": "Dichos: «¡Haz lo mejor!» — mantra Vida; oficio diario y respuesta al robo y a la prohibición que intentan callar el proyecto de inspección.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-expressao-faca-o-melhor",
+    "url": "/posts/post-inspecao-expressao-faca-o-melhor.html",
+    "date": "2026-08-02T22:30:00.000Z",
+    "filename": "posts/post-inspecao-expressao-faca-o-melhor.html",
+    "coverImage": "/imagens/inspecoes/vida-laboratorio-cover.jpg",
+    "category": "inspecao",
+    "series": "expressoes-ditados",
+    "seriesOrder": 2,
+    "seriesLabel": "Faça o melhor · mantra"
+  },
+  {
     "title": "Pesquisa: Da molécula ao lixo — fármacos, industrialização e desigualdade",
     "titleEn": "Research: From molecule to waste — pharmaceuticals, industry and inequality",
     "titleEs": "Investigación: De la molécula a la basura — fármacos, industria y desigualdad",

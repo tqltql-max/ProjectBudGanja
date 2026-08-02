@@ -1,0 +1,44 @@
+# Palavras do mantra «Faça o melhor!»
+# Modo Aprender — vermelhas (apropriação / silenciamento) e âmbar (ofício).
+# Fonte para scripts/patch-learn-mantra-faca-o-melhor.js
+
+## Vermelhas (perigosa)
+
+1. roubar / roubo
+   Categoria: Apropriação
+   Mundano: Tirar o que é de outrem.
+   BudGanja: Tomar frase, obra ou crédito do laboratório.
+
+2. apropriar
+   Categoria: Apropriação
+   Mundano: Fazer seu o alheio.
+   BudGanja: Usar o mantra sem o ofício / sem a fonte.
+
+3. proibir / proibição
+   Categoria: Silenciamento
+   Mundano: Impedir por regra ou força.
+   BudGanja: Calar o projecto de inspeção e o mantra.
+   Elo: post-inspecao-palavra-proibicao-proibicionismo
+
+4. silenciar
+   Categoria: Silenciamento
+   Mundano: Impedir de falar.
+   BudGanja: Fechar a ficha, apagar o verso, negar a origem.
+
+## Âmbar (uso cauteloso)
+
+5. melhor
+   Mundano: Superior; o mais adequado.
+   BudGanja: O possível honesto nesta mão, hoje — não perfeição alheia.
+
+6. mantra
+   Mundano: Frase repetida (religião / motivação).
+   BudGanja: Frase curta que repete ofício no laboratório Vida.
+
+7. esforço
+   Mundano: Emprego de força ou atenção.
+   BudGanja: Trabalho honesto do ofício — «fiz o meu melhor».
+
+8. ofício
+   Mundano: Profissão; trabalho habitual.
+   BudGanja: Acto concreto (gesto) — inspecionar, cultivar, narrar.

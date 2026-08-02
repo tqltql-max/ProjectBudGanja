@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T20:35:49.209Z",
+  "updatedAt": "2026-08-02T20:41:35.283Z",
   "poems": [
     {
       "id": "aguas-e-lagrimas",
@@ -46,6 +46,30 @@
         "vingança",
         "aviso",
         "rancor"
+      ]
+    },
+    {
+      "id": "faca-o-melhor",
+      "slug": "faca-o-melhor",
+      "title": "Faça o melhor!",
+      "titleEn": "Do Your Best!",
+      "titleEs": "¡Haz lo mejor!",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Mantra do laboratório — ofício diário contra o roubo e a proibição que tentam calar a inspeção.",
+      "teaserEn": "Lab mantra — daily craft against theft and prohibition that try to silence the inspection.",
+      "teaserEs": "Mantra del laboratorio — oficio diario contra el robo y la prohibición que intentan callar la inspección.",
+      "body": "Não pedimos permissão para cuidar.\nPedimos só o ofício:\ninspecionar o que roubam,\nnomear o que proíbem,\nficar quando o silêncio aperta.\n\nRoubaram a frase —\ne ainda assim a frase fica.\nProibiram o projeto —\ne o laboratório continua aberto.\n\nHá um roubo que leva objectos.\nHá outro que leva o nome,\na ideia, o verso,\ne ainda aponta o dedo\ncomo se o dono fosse o erro.\n\nHá uma proibição de lista e de lei.\nHá outra de mesa e de corrido —\ncalar o mantra,\nfechar a inspeção,\ndizer que o melhor\nnão pode ser nosso.\n\nNão respondemos com rancor.\nRespondemos com método.\nFica.\nConta gotas.\nPlanta à beira.\nChama a Vida pelo nome verdadeiro:\n\nFaça o melhor!\n\nNão o melhor dos outros.\nO teu.\nO de hoje.\nO que cabe nesta mão —\nainda nosso.",
+      "bodyEn": "We do not ask permission to care.\nWe ask only for the craft:\ninspect what they steal,\nname what they forbid,\nstay when silence tightens.\n\nThey stole the phrase —\nand still the phrase remains.\nThey banned the project —\nand the laboratory stays open.\n\nThere is a theft that takes objects.\nThere is another that takes the name,\nthe idea, the verse,\nand still points a finger\nas if the owner were the fault.\n\nThere is a prohibition of lists and law.\nThere is another of tables and hallways —\nto silence the mantra,\nto close the inspection,\nto say that the best\ncannot be ours.\n\nWe do not answer with grudge.\nWe answer with method.\nStay.\nCount drops.\nPlant at the edge.\nCall Vida by its true name:\n\nDo your best!\n\nNot someone else's best.\nYours.\nToday's.\nWhat fits in this hand —\nstill ours.",
+      "bodyEs": "No pedimos permiso para cuidar.\nPedimos solo el oficio:\ninspeccionar lo que roban,\nnombrar lo que prohíben,\nquedarse cuando el silencio aprieta.\n\nRobaron la frase —\ny aun así la frase queda.\nProhibieron el proyecto —\ny el laboratorio sigue abierto.\n\nHay un robo que se lleva objetos.\nHay otro que se lleva el nombre,\nla idea, el verso,\ny aún señala con el dedo\ncomo si el dueño fuera el error.\n\nHay una prohibición de lista y de ley.\nHay otra de mesa y de pasillo —\ncallar el mantra,\ncerrar la inspección,\ndecir que lo mejor\nno puede ser nuestro.\n\nNo respondemos con rencor.\nRespondemos con método.\nQuédate.\nCuenta gotas.\nSiembra a la orilla.\nLlama a Vida por su nombre verdadero:\n\n¡Haz lo mejor!\n\nNo lo mejor de los otros.\nLo tuyo.\nEl de hoy.\nLo que cabe en esta mano —\naún nuestro.",
+      "inspectionHref": "/posts/post-inspecao-expressao-faca-o-melhor.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "mantra",
+        "melhor",
+        "ofício"
       ]
     }
   ]

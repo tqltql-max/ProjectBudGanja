@@ -14,7 +14,10 @@ const {
 const {
   poemVingancaPt,
   poemVingancaEn,
-  poemVingancaEs
+  poemVingancaEs,
+  poemFacaOMelhorPt,
+  poemFacaOMelhorEn,
+  poemFacaOMelhorEs
 } = require('../lib/expressoes-ditados-inspecoes-posts.js');
 
 const ROOT = path.join(__dirname, '..');
@@ -65,6 +68,27 @@ const doc = {
       inspectionHref:
         '/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html',
       tags: ['poesia', 'vida', 'vingança', 'aviso', 'rancor']
+    },
+    {
+      id: 'faca-o-melhor',
+      slug: 'faca-o-melhor',
+      title: 'Faça o melhor!',
+      titleEn: 'Do Your Best!',
+      titleEs: '¡Haz lo mejor!',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Mantra do laboratório — ofício diário contra o roubo e a proibição que tentam calar a inspeção.',
+      teaserEn:
+        'Lab mantra — daily craft against theft and prohibition that try to silence the inspection.',
+      teaserEs:
+        'Mantra del laboratorio — oficio diario contra el robo y la prohibición que intentan callar la inspección.',
+      body: poemFacaOMelhorPt(),
+      bodyEn: poemFacaOMelhorEn(),
+      bodyEs: poemFacaOMelhorEs(),
+      inspectionHref: '/posts/post-inspecao-expressao-faca-o-melhor.html',
+      tags: ['poesia', 'vida', 'mantra', 'melhor', 'ofício']
     }
   ]
 };

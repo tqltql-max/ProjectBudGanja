@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T20:35:38.909Z",
+  "updatedAt": "2026-08-02T20:41:25.650Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2781,6 +2781,28 @@
         "https://www.youtube.com/watch?v=V3GSlr5sp7c"
       ],
       "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "expressao-faca-o-melhor",
+      "title": "Faça o melhor! — mantra do laboratório",
+      "titleEn": "Do your best! — lab mantra",
+      "titleEs": "¡Haz lo mejor! — mantra del laboratorio",
+      "tipo": "expressao",
+      "priority": 1,
+      "status": "feita",
+      "why": "Expressões: mantra Vida — ofício diário; resposta ao roubo e à proibição do projecto de inspeção.",
+      "whyEn": "Sayings: Vida mantra — daily craft; reply to theft and prohibition of the inspection project.",
+      "whyEs": "Dichos: mantra Vida — oficio diario; respuesta al robo y a la prohibición del proyecto de inspección.",
+      "suggestedSlug": "inspecao-expressao-faca-o-melhor",
+      "doneHref": "/posts/post-inspecao-expressao-faca-o-melhor.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/vida/",
+        "/posts/post-inspecao-palavra-proibicao-proibicionismo.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+      ],
+      "notes": "Mantra canónico do laboratório; poema Vida faca-o-melhor."
     }
   ]
 }
