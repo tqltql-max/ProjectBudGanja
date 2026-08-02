@@ -493,9 +493,9 @@
       .replace(/^[«»"'“”‘’(\[]+|[)»»"'“”‘’)\],.:;!?…]+$/g, '');
   }
 
-  function lookup(word, lang) {
+  function findEntry(word) {
     var key = normalizeKey(word);
-    if (!key) return '';
+    if (!key) return null;
     var entry = GLOSSARY[key];
     if (!entry) {
       var bare = stripAccents(key);
@@ -509,13 +509,32 @@
         }
       }
     }
+    return entry || null;
+  }
+
+  /**
+   * @param {string} word
+   * @param {string} lang
+   * @param {boolean} [strict] se true, não cai para EN/ES quando o idioma pedido falta
+   */
+  function lookup(word, lang, strict) {
+    var entry = findEntry(word);
     if (!entry) return '';
     if (lang && entry[lang]) return entry[lang];
+    if (strict) return '';
     return entry.en || entry.es || '';
   }
 
   function has(word) {
-    return !!lookup(word, 'en');
+    return !!findEntry(word);
+  }
+
+  /** Tem tradução explícita no idioma (sem fallback EN/ES). */
+  function hasInLang(word, lang) {
+    var entry = findEntry(word);
+    if (!entry) return false;
+    if (!lang) return !!(entry.en || entry.es);
+    return !!(entry[lang] && String(entry[lang]).trim());
   }
 
   var TOKEN_RE = /([A-Za-zÀ-ÿ]+(?:['’-][A-Za-zÀ-ÿ]+)?)|([^A-Za-zÀ-ÿ]+)/g;
@@ -535,6 +554,8 @@
   global.BudGanjaLearnGlossary = {
     lookup: lookup,
     has: has,
+    hasInLang: hasInLang,
+    findEntry: findEntry,
     normalizeKey: normalizeKey,
     translatePhrase: translatePhrase,
     size: Object.keys(GLOSSARY).length

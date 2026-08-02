@@ -780,7 +780,8 @@
       "learnHintEn": "Pass over a word: the gold sheen turns it into English.",
       "learnHintEs": "Pass over a word: the gold sheen turns it into Spanish.",
       "docTitle": "Vida | Inspetor BudGanja",
-      "learnHintOn": "Pass over a word: the gold sheen turns it into {lang}.",
+      "learnHintOn": "Pass over a word: the gold sheen turns it into {lang}. Dotted underline = no translation.",
+      "learnNoTranslation": "No translation in this language",
       "ctaDiary": "Little Seed Diary"
     },
     "about": {

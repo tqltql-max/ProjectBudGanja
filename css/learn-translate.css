@@ -131,6 +131,23 @@ body.learn-mode-active .learn-mode-on {
     background: rgba(223, 194, 98, 0.12);
 }
 
+/* Palavras sem tradução no idioma activo — sempre visíveis no modo Aprender */
+.learn-mode-active .learn-word--unknown,
+.learn-mode-on .learn-word--unknown {
+    background: rgba(196, 112, 72, 0.14);
+    border-bottom: 2px dotted rgba(214, 140, 96, 0.95);
+    border-radius: 0.12em;
+    color: inherit;
+}
+
+.learn-mode-active .learn-word--unknown:hover,
+.learn-mode-active .learn-word--unknown:focus-visible,
+.learn-mode-on .learn-word--unknown:hover,
+.learn-mode-on .learn-word--unknown:focus-visible {
+    background: rgba(196, 112, 72, 0.26);
+    border-bottom-color: rgba(230, 160, 110, 1);
+}
+
 .learn-word.is-sheen,
 .learn-word.is-translated {
     background: linear-gradient(
@@ -160,12 +177,14 @@ body.learn-mode-active .learn-mode-on {
     font-weight: 700;
 }
 
-.learn-word.is-unknown.is-sheen {
-    background: rgba(223, 194, 98, 0.18);
+.learn-word.is-unknown.is-sheen,
+.learn-word--unknown.is-sheen {
+    background: rgba(196, 112, 72, 0.32);
     color: inherit;
     -webkit-text-fill-color: inherit;
     filter: none;
     animation: none;
+    border-bottom-color: rgba(230, 160, 110, 1);
 }
 
 .learn-word--chars {

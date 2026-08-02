@@ -238,6 +238,33 @@
     }, 40);
   }
 
+  function noTranslationLabel() {
+    return t('pages.vida.learnNoTranslation', 'Sem tradução neste idioma');
+  }
+
+  function wordHasTranslation(g, src) {
+    if (!g || !src || !state.lang) return false;
+    if (typeof g.hasInLang === 'function') return g.hasInLang(src, state.lang);
+    return !!g.lookup(src, state.lang, true);
+  }
+
+  function markWordCoverage(span, src) {
+    var g = glossary();
+    var known = wordHasTranslation(g, src);
+    span.classList.toggle('learn-word--known', known);
+    span.classList.toggle('learn-word--unknown', !known);
+    if (known) span.removeAttribute('title');
+    else span.setAttribute('title', noTranslationLabel());
+  }
+
+  function refreshWordCoverage() {
+    var scope = state.scope || state.root || document;
+    if (!scope.querySelectorAll) return;
+    scope.querySelectorAll('.learn-word').forEach(function (el) {
+      markWordCoverage(el, el.getAttribute('data-learn-src') || '');
+    });
+  }
+
   function activateWord(wordEl) {
     if (!wordEl || !state.lang) return;
     if (state.activeWord === wordEl) return;
@@ -245,15 +272,20 @@
     state.activeWord = wordEl;
     var src = wordEl.getAttribute('data-learn-src') || '';
     var g = glossary();
-    var translated = g ? g.lookup(src, state.lang) : '';
+    var translated = g ? g.lookup(src, state.lang, true) : '';
     if (!translated) {
-      wordEl.classList.add('is-sheen', 'is-unknown');
+      wordEl.classList.add('is-sheen', 'is-unknown', 'learn-word--unknown');
+      wordEl.classList.remove('learn-word--known');
+      wordEl.setAttribute('title', noTranslationLabel());
+      wordEl.setAttribute('aria-label', src + ' — ' + noTranslationLabel());
       schedule(wordEl, function () {
         wordEl.classList.remove('is-sheen');
       }, 160);
       return;
     }
-    wordEl.classList.remove('is-unknown');
+    wordEl.classList.remove('is-unknown', 'learn-word--unknown');
+    wordEl.classList.add('learn-word--known');
+    wordEl.removeAttribute('title');
     morphTo(wordEl, translated);
   }
 
@@ -272,7 +304,7 @@
         span.className = 'learn-word';
         span.setAttribute('data-learn-src', m[1]);
         span.setAttribute('tabindex', '0');
-        if (g.has(m[1])) span.classList.add('learn-word--known');
+        markWordCoverage(span, m[1]);
         span.textContent = m[1];
         frag.appendChild(span);
       } else if (m[2]) {
@@ -347,6 +379,7 @@
 
   function walkAll() {
     collectWalkRoots().forEach(walk);
+    refreshWordCoverage();
     if (state.scope) state.scope.classList.add('learn-mode-on');
     if (state.root) state.root.classList.add('learn-mode-on');
   }
@@ -437,7 +470,7 @@
         var name = names[state.lang] || state.lang;
         hint.textContent = t(
           'pages.vida.learnHintOn',
-          'Passe numa palavra: o brilho dourado traduz para {lang}.'
+          'Passe numa palavra: o brilho dourado traduz para {lang}. Traço pontilhado = sem tradução.'
         ).replace('{lang}', name);
       }
     }

@@ -782,7 +782,8 @@ window.__I18N_LOCALES__ = {
         "learnHintEn": "Pass over a word: the gold sheen turns it into English.",
         "learnHintEs": "Pass over a word: the gold sheen turns it into Spanish.",
         "docTitle": "Vida | Inspetor BudGanja",
-        "learnHintOn": "Pass over a word: the gold sheen turns it into {lang}.",
+        "learnHintOn": "Pass over a word: the gold sheen turns it into {lang}. Dotted underline = no translation.",
+        "learnNoTranslation": "No translation in this language",
         "ctaDiary": "Little Seed Diary"
       },
       "about": {
@@ -1665,7 +1666,8 @@ window.__I18N_LOCALES__ = {
         "learnHintEn": "Pasa por una palabra: el brillo dorado la traduce al inglés.",
         "learnHintEs": "Pasa por una palabra: el brillo dorado la traduce al español.",
         "docTitle": "Vida | Inspetor BudGanja",
-        "learnHintOn": "Pasa por una palabra: el brillo dorado la traduce al {lang}.",
+        "learnHintOn": "Pasa por una palabra: el brillo dorado la traduce al {lang}. Subrayado punteado = sin traducción.",
+        "learnNoTranslation": "Sin traducción en este idioma",
         "ctaDiary": "Diario de la Semillita"
       },
       "about": {
@@ -2548,7 +2550,8 @@ window.__I18N_LOCALES__ = {
         "learnHintEn": "Passe numa palavra: o brilho dourado traduz para English.",
         "learnHintEs": "Passe numa palavra: o brilho dourado traduz para español.",
         "docTitle": "Vida | Inspetor BudGanja",
-        "learnHintOn": "Passe numa palavra: o brilho dourado traduz para {lang}.",
+        "learnHintOn": "Passe numa palavra: o brilho dourado traduz para {lang}. Traço pontilhado = sem tradução.",
+        "learnNoTranslation": "Sem tradução neste idioma",
         "ctaDiary": "Diário da Sementinha"
       },
       "about": {

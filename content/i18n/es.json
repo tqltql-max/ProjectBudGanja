@@ -780,7 +780,8 @@
       "learnHintEn": "Pasa por una palabra: el brillo dorado la traduce al inglés.",
       "learnHintEs": "Pasa por una palabra: el brillo dorado la traduce al español.",
       "docTitle": "Vida | Inspetor BudGanja",
-      "learnHintOn": "Pasa por una palabra: el brillo dorado la traduce al {lang}.",
+      "learnHintOn": "Pasa por una palabra: el brillo dorado la traduce al {lang}. Subrayado punteado = sin traducción.",
+      "learnNoTranslation": "Sin traducción en este idioma",
       "ctaDiary": "Diario de la Semillita"
     },
     "about": {
