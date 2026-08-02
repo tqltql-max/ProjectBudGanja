@@ -59,6 +59,13 @@
     drlairribeiro: 'lair',
     drlairribeirooficiall: 'lair',
     'divulgacao-lair': 'lair',
+    davis: 'davis',
+    'canal-davis': 'davis',
+    'william-davis': 'davis',
+    williamdavis: 'davis',
+    williamdavismd: 'davis',
+    'wheat-belly': 'davis',
+    'dr-davis': 'davis',
     all: 'all',
     todos: 'all'
   };
@@ -111,7 +118,17 @@
     autoajuda: 'autoajuda',
     lives: 'lives',
     trailers: 'trailers',
-    outros: 'outros'
+    outros: 'outros',
+    'trigo-gluten': 'trigo-gluten',
+    'trigo-glúten': 'trigo-gluten',
+    microbioma: 'microbioma',
+    'diabetes-peso': 'diabetes-peso',
+    'tireoide-hormonios': 'tireoide-hormonios',
+    tireoide: 'tireoide-hormonios',
+    suplementos: 'suplementos',
+    undoctored: 'undoctored',
+    programas: 'programas',
+    entrevistas: 'entrevistas'
   };
 
   var TOPIC_ALIASES = {
@@ -129,7 +146,7 @@
 
   var TOPIC_ORDER = ['cultivo', 'unifesp', 'saude', 'plantas', 'ciencia'];
 
-  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair'];
+  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis'];
 
   var cachedHub = null;
   var selectedId = '';
@@ -637,6 +654,7 @@
     if (id === 'movrecam') return 'MovReCam';
     if (id === 'canabinall') return 'CANABinALL';
     if (id === 'lair') return 'Dr. Lair Ribeiro';
+    if (id === 'davis') return 'William Davis, MD';
     return id;
   }
 
@@ -645,7 +663,13 @@
     if (id === 'conceitos') return i18n('pages.videos.seriesBasics', 'Conceitos básicos');
     if (id === 'plantas-sagradas') return i18n('pages.videos.seriesSacred', 'Plantas Sagradas');
     var opts = (cachedHub && cachedHub.seriesOptions) || [];
-    for (var i = 0; i < opts.length; i++) {
+    var i;
+    if (activeChannel && activeChannel !== 'all') {
+      for (i = 0; i < opts.length; i++) {
+        if (opts[i].id === id && opts[i].channel === activeChannel) return opts[i].label;
+      }
+    }
+    for (i = 0; i < opts.length; i++) {
       if (opts[i].id === id) return opts[i].label;
     }
     return id;

@@ -43,6 +43,7 @@
     "db:backup:schedule": "node scripts/db-backup-schedule.js",
     "build:movrecam": "node scripts/build-movrecam-catalog.js",
     "build:canabinall": "node scripts/build-canabinall-catalog.js",
+    "build:william-davis": "node scripts/build-william-davis-catalog.js",
     "fetch:xiv-transcripts": "node scripts/fetch-xiv-transcripts.js",
     "build:xiv-livro": "node scripts/build-xiv-livro.js"
   },

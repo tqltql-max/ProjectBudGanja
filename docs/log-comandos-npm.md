@@ -83,12 +83,14 @@ npm run sync:pages:all
 ```bash
 npm run build:movrecam
 npm run build:canabinall
+npm run build:william-davis
 ```
 
 | Comando | O que faz |
 |---------|-----------|
 | `npm run build:movrecam` | Catálogo YouTube MovReCam → `content/channels/movrecam.json` |
 | `npm run build:canabinall` | Catálogo CANABinALL → `content/channels/canabinall.json` |
+| `npm run build:william-davis` | Catálogo William Davis, MD → `content/channels/williamdavismd.json` |
 
 Professores (série no hub) regeneram-se no `npm run build` via `lib/movrecam-professor-series.js`.
 Manual opcional:
@@ -218,6 +220,7 @@ npm run verify
 npm run db:backup:schedule
 npm run build:movrecam
 npm run build:canabinall
+npm run build:william-davis
 npm run fetch:xiv-transcripts
 npm run build:xiv-livro
 ```

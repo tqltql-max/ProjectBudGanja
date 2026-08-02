@@ -62,7 +62,7 @@ function upsertSug(items, entry) {
 
 async function main() {
   const livro = buildBarrigaDeTrigoPost();
-  const autor = buildWilliamDavisPost();
+  const autor = buildWilliamDavisPost({ writeThemesJson: true });
   const gluten = buildGlutenPost();
   const built = [livro, autor, gluten];
 
