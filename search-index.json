@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T06:35:09.943Z",
+  "updatedAt": "2026-08-02T07:03:10.434Z",
   "items": [
     {
       "title": "Início",
@@ -420,6 +420,12 @@
       "url": "/posts/post-inspecao-palavra-portaria.html",
       "excerpt": "Palavra: portaria — forma normativa que materializa listas e regras; elo com ANVISA, Lista F e entorpecente, sem reproduzir o texto oficial.",
       "text": "Inspeção: Portaria — forma normativa das listas de controlo Palavra: portaria — forma normativa que materializa listas e regras; elo com ANVISA, Lista F e entorpecente, sem reproduzir o texto oficial. inspecao ## Escopo\n\nInspeção de **portaria** — **forma normativa** pela qual o Estado brasileiro costuma publicar e actualizar listas e regras sanitárias. O laboratório nomeia o género textual, não um número específico.\n\n> **Nota metodológica:** auditoria independente BudGanja. **Não é parecer jurídico nem aconselhamento clínico.** Indexar ≠ endossar. Listas e portarias mudam — confirmar sempre nas fontes do Estado. O objecto é a **palavra e a rede semântica no projecto**.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra(s) | **portaria** |\n| Tipo BudGanja | Palavra — classificação legal |\n| Grupo no Guia | [Classificação legal](/guia/palavras.html?group=classificacao) |\n| Elo âncora | [Entorpecente × Narcótico](/posts/post-inspecao-palavra-entorpecente-narcotico.html) · [Droga](/posts/post-inspecao-palavra-droga.html) |\n| Elo planta | [Cannabis sativa](/plantas/cannabis-sativa/) |\n| Elo formação | [Rascunhos XIV](/biblioteca/unifesp/livro-xiv.html) · [CEBRID](/posts/post-inspecao-cebrid.html) · [Curso UNIFESP](/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html) |\n| Data da inspeção | 2026-08-02 |\n\n## Hipóteses e método\n\n**H1:** sem entender «portaria», «Lista F» e «entorpecente» parecem vocabulário solto.  \n**H2:** o projecto cita o **tipo** de fonte — não arquiva o PDF oficial.  \n**H3:** cruzar com [ANVISA](/posts/post-inspecao-palavra-anvisa.html) e [substância controlada](/posts/post-inspecao-palavra-substancia-controlada.html).\n\nPassos:\n\n1. Fixar o sentido de trabalho no laboratório.  \n2. Separar de [droga](/posts/post-inspecao-palavra-droga.html) no senso comum e dos nomes populares.  \n3. Cruzar com [entorpecente × narcótico](/posts/post-inspecao-palavra-entorpecente-narcotico.html) e a rede canábica.  \n4. Ligar ao Guia (grupo classi"
+    },
+    {
+      "title": "Inspeção: Guia HC e seletividade — mapa para advogados (com HC × sem HC)",
+      "url": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
+      "excerpt": "Guia para advogados: habeas corpus / salvo-conduto no cultivo medicinal vs repressão sem HC — seletividade de classe, âncoras STJ/STF e rede BudGanja de classificação legal. Não é parecer jurídico.",
+      "text": "Inspeção: Guia HC e seletividade — mapa para advogados (com HC × sem HC) Guia para advogados: habeas corpus / salvo-conduto no cultivo medicinal vs repressão sem HC — seletividade de classe, âncoras STJ/STF e rede BudGanja de classificação legal. Não é parecer jurídico. inspecao ## Escopo\n\nInspeção-guia do laboratório BudGanja para **advogados e operadores do direito**: mapa semântico e processual do contraste **com habeas corpus (HC) / salvo-conduto** × **sem HC** no cultivo e porte de cannabis no Brasil — com foco na **seletividade de classe** (e, na literatura, de cor/território).\n\n> **Nota metodológica (ler primeiro):** auditoria editorial independente. **Não é parecer jurídico, não é peça processual, não substitui consulta a advogado.** Indexar ≠ endossar. Jurisprudência e normas mudam — confirmar sempre nos tribunais e no Diário Oficial. Objecto = **literacia do projeto** + **âncoras públicas** para leitura crítica.\n\n## Público e uso\n\n| Campo | Valor |\n|-------|-------|\n| Público | Advogados, defensores, estudantes de Direito, associações de pacientes |\n| Tipo BudGanja | Inspeção-guia — classificação legal × acesso à justiça |\n| Grupo Guia | [Classificação legal](/guia/palavras.html?group=classificacao) |\n| Pergunta-guia | Por que quem tem HC pode cultivar/produzir óleo medicinal e quem não tem fica na zona de repressão? |\n| Data | 2026-08-02 |\n\n## Tese central (uma frase)\n\nA planta pode ser a mesma; o que muda é o **estatuto**: quem compra o caminho processual (laudos + advogado + HC preventivo) reduz o risco penal; quem não tem acesso permanece na categoria **usuário / traficante no olhar policial** — mecanismo de **seletividade**, não «direito natural do rico».\n\n## Hipóteses\n\n**H1:** o HC preventivo funciona como **salvo-conduto** — remédio constitucional («remédio heroico») que obsta a persecução penal em hipóteses medicinais documentadas.  \n**H2:** o custo (honorários, laudos médicos, por vezes agronómicos, tempo) transforma o direito em **filtro de renda"
     },
     {
       "title": "Inspeção: Annie Leonard — divulgação da economia dos materiais e elo com A História das Coisas",
@@ -1406,6 +1412,12 @@
       "text": "Artes Filmes, músicas, livros e outras obras culturais que o laboratório inspeciona. hub guia palavras glossário artes"
     },
     {
+      "title": "Autocultivo",
+      "url": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
+      "excerpt": "Cultivo próprio da planta — no Brasil, zona de disputa entre saúde (HC/salvo-conduto) e risco penal sem amparo processual.",
+      "text": "Autocultivo Cultivo próprio da planta — no Brasil, zona de disputa entre saúde (HC/salvo-conduto) e risco penal sem amparo processual. classificacao guia palavras glossário autocultivo"
+    },
+    {
       "title": "Ayahuasca",
       "url": "/biblioteca/unifesp/livro-xiv.html",
       "excerpt": "Bebida ritual amazónica (Banisteriopsis + Psychotria) — citada nos rascunhos das aulas XIV entre psicoativos vegetais.",
@@ -1850,6 +1862,12 @@
       "text": "Guias Textos que ensinam passo a passo — clonadoras, ferramentas e este glossário. titulo guia palavras glossário guias"
     },
     {
+      "title": "Habeas corpus",
+      "url": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
+      "excerpt": "Remédio constitucional («remédio heroico») usado como HC preventivo / salvo-conduto no cultivo medicinal — filtro de acesso à justiça.",
+      "text": "Habeas corpus Remédio constitucional («remédio heroico») usado como HC preventivo / salvo-conduto no cultivo medicinal — filtro de acesso à justiça. classificacao guia palavras glossário habeas-corpus"
+    },
+    {
       "title": "Hortelã",
       "url": "/plantas/hortela/",
       "excerpt": "Mentha spicata (e afins) — mentol/óleos mentolados em chás e culinária; espécie e quimiotipo importam. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -1890,6 +1908,12 @@
       "url": "/plantas/jambu/",
       "excerpt": "Acmella oleracea — jambu amazônico; spilanthol provoca formigamento; culinária paraense e tradição oral. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Jambu Acmella oleracea — jambu amazônico; spilanthol provoca formigamento; culinária paraense e tradição oral. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário jambu"
+    },
+    {
+      "title": "Judicialização",
+      "url": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
+      "excerpt": "Quando a saúde só se concretiza via processo (HC, fornecimento) por omissão regulatória — quem não judicializa fica exposto.",
+      "text": "Judicialização Quando a saúde só se concretiza via processo (HC, fornecimento) por omissão regulatória — quem não judicializa fica exposto. classificacao guia palavras glossário judicializacao"
     },
     {
       "title": "Jurema",
@@ -2018,6 +2042,12 @@
       "text": "Orégano Erva culinária com terpenos que modulam o sistema endocanabinoide. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário oregano"
     },
     {
+      "title": "Paciente medicinal",
+      "url": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
+      "excerpt": "Rótulo de quem documenta tratamento e judicializa — dicotomia com «usuário»; filtro de classe no acesso ao HC.",
+      "text": "Paciente medicinal Rótulo de quem documenta tratamento e judicializa — dicotomia com «usuário»; filtro de classe no acesso ao HC. classificacao guia palavras glossário paciente-medicinal"
+    },
+    {
       "title": "Palavras",
       "url": "/posts/post-inspecao-guia-palavras-cobertura.html",
       "excerpt": "Unidades da língua — no laboratório, série de inspeções sobre origem e sentido.",
@@ -2132,6 +2162,18 @@
       "text": "Ruda Ruta — citada no eixo de plantas e endocanabinoidoma. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário ruda"
     },
     {
+      "title": "Salvo-conduto",
+      "url": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
+      "excerpt": "Efeito prático do HC preventivo: ordem para que a persecução penal não turbe o cultivo/produção medicinal nos limites da decisão.",
+      "text": "Salvo-conduto Efeito prático do HC preventivo: ordem para que a persecução penal não turbe o cultivo/produção medicinal nos limites da decisão. classificacao guia palavras glossário salvo-conduto"
+    },
+    {
+      "title": "Seletividade penal",
+      "url": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
+      "excerpt": "Mecanismo estrutural: a mesma conduta é lida como saúde ou crime conforme classe, cor, território e acesso a advogado/HC.",
+      "text": "Seletividade penal Mecanismo estrutural: a mesma conduta é lida como saúde ou crime conforme classe, cor, território e acesso a advogado/HC. classificacao guia palavras glossário seletividade-penal"
+    },
+    {
       "title": "Sementinha",
       "url": "/vida/diario/",
       "excerpt": "Semente pequena — personagem-símbolo do conto Vida e do diário familiar.",
@@ -2232,6 +2274,12 @@
       "url": "/biblioteca/unifesp/",
       "excerpt": "Universidade Federal de São Paulo — sede do curso de extensão em cannabis medicinal.",
       "text": "UNIFESP Universidade Federal de São Paulo — sede do curso de extensão em cannabis medicinal. tecnico guia palavras glossário unifesp"
+    },
+    {
+      "title": "Usuário",
+      "url": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
+      "excerpt": "Rótulo policial/social oposto a «paciente medicinal» no debate canábico — quem não judicializa costuma ficar nesta categoria.",
+      "text": "Usuário Rótulo policial/social oposto a «paciente medicinal» no debate canábico — quem não judicializa costuma ficar nesta categoria. classificacao guia palavras glossário usuario-drogas"
     },
     {
       "title": "Valeriana",

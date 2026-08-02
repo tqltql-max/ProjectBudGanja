@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T06:31:45.834Z",
+  "updatedAt": "2026-08-02T07:03:01.613Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -154,6 +154,16 @@
       "group": "hub",
       "fromTitle": true,
       "href": "/biblioteca/inspecoes/#inspecoes-artes"
+    },
+    {
+      "id": "autocultivo",
+      "word": "Autocultivo",
+      "simple": "Cultivo próprio da planta — no Brasil, zona de disputa entre saúde (HC/salvo-conduto) e risco penal sem amparo processual.",
+      "simpleEn": "Growing the plant oneself — in Brazil, contested between health (HC/safe-conduct) and criminal risk without procedural shield.",
+      "simpleEs": "Cultivo propio de la planta — en Brasil, zona de disputa entre salud (HC/salvoconducto) y riesgo penal sin amparo procesal.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html"
     },
     {
       "id": "ayahuasca",
@@ -896,6 +906,16 @@
       "href": "/guia/palavras.html"
     },
     {
+      "id": "habeas-corpus",
+      "word": "Habeas corpus",
+      "simple": "Remédio constitucional («remédio heroico») usado como HC preventivo / salvo-conduto no cultivo medicinal — filtro de acesso à justiça.",
+      "simpleEn": "Constitutional remedy used as preventive HC / safe-conduct for medicinal cultivation — an access-to-justice filter.",
+      "simpleEs": "Remedio constitucional usado como HC preventivo / salvoconducto en cultivo medicinal — filtro de acceso a la justicia.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html"
+    },
+    {
       "id": "hortela",
       "word": "Hortelã",
       "simple": "Mentha spicata (e afins) — mentol/óleos mentolados em chás e culinária; espécie e quimiotipo importam. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -964,6 +984,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/plantas/jambu/"
+    },
+    {
+      "id": "judicializacao",
+      "word": "Judicialização",
+      "simple": "Quando a saúde só se concretiza via processo (HC, fornecimento) por omissão regulatória — quem não judicializa fica exposto.",
+      "simpleEn": "When health only becomes real through litigation (HC, provision) due to regulatory omission — those who do not litigate stay exposed.",
+      "simpleEs": "Cuando la salud solo se concreta vía proceso (HC, suministro) por omisión regulatoria — quien no judicializa queda expuesto.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html"
     },
     {
       "id": "jurema",
@@ -1176,6 +1206,16 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "paciente-medicinal",
+      "word": "Paciente medicinal",
+      "simple": "Rótulo de quem documenta tratamento e judicializa — dicotomia com «usuário»; filtro de classe no acesso ao HC.",
+      "simpleEn": "Label for those who document treatment and litigate — dichotomy with “user”; class filter on HC access.",
+      "simpleEs": "Rótulo de quien documenta tratamiento y judicializa — dicotomía con «usuario»; filtro de clase en el acceso al HC.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html"
+    },
+    {
       "id": "palavras",
       "word": "Palavras",
       "simple": "Unidades da língua — no laboratório, série de inspeções sobre origem e sentido.",
@@ -1366,6 +1406,26 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "salvo-conduto",
+      "word": "Salvo-conduto",
+      "simple": "Efeito prático do HC preventivo: ordem para que a persecução penal não turbe o cultivo/produção medicinal nos limites da decisão.",
+      "simpleEn": "Practical effect of preventive HC: order that criminal prosecution not hinder medicinal cultivation/production within the decision’s limits.",
+      "simpleEs": "Efecto práctico del HC preventivo: orden de que la persecución penal no turbe el cultivo/producción medicinal dentro de los límites de la decisión.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html"
+    },
+    {
+      "id": "seletividade-penal",
+      "word": "Seletividade penal",
+      "simple": "Mecanismo estrutural: a mesma conduta é lida como saúde ou crime conforme classe, cor, território e acesso a advogado/HC.",
+      "simpleEn": "Structural mechanism: the same conduct is read as health or crime depending on class, race, territory and access to a lawyer/HC.",
+      "simpleEs": "Mecanismo estructural: la misma conducta se lee como salud o crimen según clase, color, territorio y acceso a abogado/HC.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html"
+    },
+    {
       "id": "sementinha",
       "word": "Sementinha",
       "simple": "Semente pequena — personagem-símbolo do conto Vida e do diário familiar.",
@@ -1534,6 +1594,16 @@
       "group": "tecnico",
       "fromTitle": true,
       "href": "/biblioteca/unifesp/"
+    },
+    {
+      "id": "usuario-drogas",
+      "word": "Usuário",
+      "simple": "Rótulo policial/social oposto a «paciente medicinal» no debate canábico — quem não judicializa costuma ficar nesta categoria.",
+      "simpleEn": "Police/social label opposed to “medicinal patient” in the cannabis debate — those who do not litigate often stay here.",
+      "simpleEs": "Rótulo policial/social opuesto a «paciente medicinal» en el debate cannábico — quien no judicializa suele quedar aquí.",
+      "group": "classificacao",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html"
     },
     {
       "id": "valeriana",

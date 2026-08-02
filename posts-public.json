@@ -2717,6 +2717,25 @@
     "seriesLabel": "Portaria · classificação"
   },
   {
+    "title": "Inspeção: Guia HC e seletividade — mapa para advogados (com HC × sem HC)",
+    "titleEn": "Inspection: HC & selectivity guide — map for lawyers (with HC vs without HC)",
+    "titleEs": "Inspección: Guía HC y selectividad — mapa para abogados (con HC × sin HC)",
+    "excerpt": "Guia para advogados: habeas corpus / salvo-conduto no cultivo medicinal vs repressão sem HC — seletividade de classe, âncoras STJ/STF e rede BudGanja de classificação legal. Não é parecer jurídico.",
+    "excerptEn": "Guide for lawyers: habeas corpus / safe-conduct in medicinal cultivation vs repression without HC — class selectivity, STJ/STF anchors and BudGanja legal-classification network. Not legal advice.",
+    "excerptEs": "Guía para abogados: habeas corpus / salvoconducto en cultivo medicinal vs represión sin HC — selectividad de clase, anclas STJ/STF y red BudGanja. No es asesoría jurídica.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-guia-hc-seletividade-advogados",
+    "url": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
+    "date": "2026-08-02T09:00:00.000Z",
+    "filename": "posts/post-inspecao-guia-hc-seletividade-advogados.html",
+    "coverImage": "/imagens/og-default.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 33,
+    "seriesLabel": "Guia · HC seletividade · advogados"
+  },
+  {
     "title": "Super Solo: Guia de Uso",
     "titleEn": "Super Soil: User Guide",
     "titleEs": "Súper Sustrato: Guía de Uso",

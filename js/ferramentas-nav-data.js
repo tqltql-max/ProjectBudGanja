@@ -1301,6 +1301,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-portaria",
               "description": "Palavra: portaria — forma normativa que materializa listas e regras; elo com ANVISA, Lista F e entorpecente, sem reproduzir o texto oficial."
+            },
+            {
+              "label": "Inspeção: Guia HC e seletividade — mapa para advogados (com HC × sem HC)",
+              "tileLabel": "Inspeção: Guia HC e seletividad…",
+              "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-guia-hc-seletividade-advogados",
+              "description": "Guia para advogados: habeas corpus / salvo-conduto no cultivo medicinal vs repressão sem HC — seletividade de classe, âncoras STJ/STF e rede BudGanja de classificação legal. Não é parecer jurídico."
             }
           ]
         },
