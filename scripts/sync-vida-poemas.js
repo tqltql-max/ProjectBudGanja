@@ -33,11 +33,11 @@ const doc = {
       authorEn: 'BudGanja Lab',
       authorEs: 'Laboratorio BudGanja',
       teaser:
-        'O sal do mar e o da lágrima — máscara, porto no olho e o chamado a ficar.',
+        'O sal do mar e o da lágrima — máscara, porto no olho, ficar e o mantra: faça o melhor.',
       teaserEn:
-        'Sea salt and tear salt — mask, harbor in the eye, and the call to stay.',
+        'Sea salt and tear salt — mask, harbor in the eye, stay, and the mantra: do your best.',
       teaserEs:
-        'Sal del mar y de la lágrima — máscara, puerto en el ojo y el llamado a quedarse.',
+        'Sal del mar y de la lágrima — máscara, puerto en el ojo, quedarse y el mantra: haz lo mejor.',
       body: poemPt(),
       bodyEn: poemEn(),
       bodyEs: poemEs(),
@@ -54,11 +54,11 @@ const doc = {
       authorEn: 'BudGanja Lab',
       authorEs: 'Laboratorio BudGanja',
       teaser:
-        'O copo é nosso — vingança que nunca fecha a conta, e o chamado a ficar sem beber o rancor sozinho.',
+        'O copo é nosso — ficar sem beber o rancor sozinho, e o mantra: faça o melhor.',
       teaserEn:
-        'The cup is ours — revenge that never settles the score, and the call to stay without drinking the grudge alone.',
+        'The cup is ours — stay without drinking the grudge alone, and the mantra: do your best.',
       teaserEs:
-        'El vaso es nuestro — venganza que nunca cierra la cuenta, y el llamado a quedarse sin beber el rencor solo.',
+        'El vaso es nuestro — quedarse sin beber el rencor solo, y el mantra: haz lo mejor.',
       body: poemVingancaPt(),
       bodyEn: poemVingancaEn(),
       bodyEs: poemVingancaEs(),
