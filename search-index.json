@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T06:07:36.954Z",
+  "updatedAt": "2026-08-02T06:13:39.394Z",
   "items": [
     {
       "title": "Início",
@@ -18,12 +18,6 @@
       "url": "/animais/",
       "excerpt": "Catálogo de animais: criação, companhia e derivados industriais de risco",
       "text": "Animais Catálogo de animais: criação, companhia e derivados industriais de risco animais produção galinha vaca porco abelha derivados indústria"
-    },
-    {
-      "title": "Biblioteca",
-      "url": "/biblioteca/",
-      "excerpt": "Acervo do laboratório — inspeções, UNIFESP, guias, pesquisas, plantas e animais",
-      "text": "Biblioteca Acervo do laboratório — inspeções, UNIFESP, guias, pesquisas, plantas e animais biblioteca acervo inspeções unifesp guias pesquisas"
     },
     {
       "title": "Curso UNIFESP",
@@ -312,6 +306,12 @@
       "url": "/posts/post-inspecao-palavra-droga.html",
       "excerpt": "Palavras: «droga» — originalidade farmacêutica/medicinal (eco de phármakon) coberta pelo sentido de ilícito, vício e crime.",
       "text": "Inspeção: Droga — do remédio ao ilícito no senso comum Palavras: «droga» — originalidade farmacêutica/medicinal (eco de phármakon) coberta pelo sentido de ilícito, vício e crime. inspecao ## Escopo\n\nInspeção editorial da palavra **droga** — foco no **duplo sentido prejudicial à originalidade**: o sentido primeiro foi coberto por um segundo sentido pejorativo, policial, comercial ou de eufemismo. Esta ficha integra o **mapa Palavras** em [Inspeções · Palavras](/biblioteca/inspecoes/#inspecoes-palavras).\n\n> **Nota metodológica:** auditoria independente. Não é dicionário completo nem incentivo a uso ilícito. Indexar ≠ endossar. Cruzar com [maconha](/posts/post-inspecao-palavra-maconha.html) e o catálogo de plantas quando o referente for *Cannabis*.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **droga** |\n| Étimo / rota (trabalho) | Tradição romance «droga» (mercadoria/remédio); eco cultural de *phármakon* — confiança média-alta no arco semântico |\n| Tipo BudGanja | Palavra — duplo sentido e transformação |\n| Elo planta | [Cannabis sativa](/plantas/cannabis-sativa/) |\n| Mapa | [Palavras · duplo sentido](/biblioteca/inspecoes/#inspecoes-palavras) |\n| Data da inspeção | 2026-08-01 |\n\n## Originalidade (sentido primeiro)\n\nRemédio, preparação, mercadoria medicinal — a farmácia ainda fala em «drogaria».\n\n## Sentido prejudicial (segunda camada)\n\nNo senso comum, «droga» = ilícito / vício / tráfico — apaga o sentido farmacêutico.\n\n## Mudança documentada\n\nFarmácia e proibição partilham a palavra; o segundo sentido coloniza o primeiro. O laboratório inspeta plantas e evidências sem usar «droga» como insulto disfarçado de método.\n\n## Rede no laboratório\n\n| Recurso | Papel |\n|---------|-------|\n| [maconha](/posts/post-inspecao-palavra-maconha.html) | Ficha fundadora — estigma afro-atlântico |\n| [Cannabis sativa](/plantas/cannabis-sativa/) | Referente botânico |\n| [Mapa Palavras](/biblioteca/inspecoes/#inspecoes-palavras) | Tabela de mudanças (duplo sentid"
+    },
+    {
+      "title": "Inspeção: Entorpecente e Narcótico — classificação legal no laboratório",
+      "url": "/posts/post-inspecao-palavra-entorpecente-narcotico.html",
+      "excerpt": "Palavras: entorpecente × narcótico — rótulos de controlo e clínica, distintos de droga no senso comum e da rede de nomes (maconha, cannabis, ganja…).",
+      "text": "Inspeção: Entorpecente e Narcótico — classificação legal no laboratório Palavras: entorpecente × narcótico — rótulos de controlo e clínica, distintos de droga no senso comum e da rede de nomes (maconha, cannabis, ganja…). inspecao ## Escopo\n\nPrimeira inspeção editorial do par **entorpecente** × **narcótico** — rótulos de **classificação legal / médico-policial** que o laboratório separa do léxico popular ([maconha](/posts/post-inspecao-palavra-maconha.html), [erva](/posts/post-inspecao-palavra-erva.html), [ganja](/posts/post-inspecao-palavra-ganja.html)) e do duplo sentido de [droga](/posts/post-inspecao-palavra-droga.html). Grupo no glossário: [Classificação legal](/guia/palavras.html?group=classificacao).\n\n> **Nota metodológica:** auditoria independente BudGanja. **Não é parecer jurídico nem aconselhamento clínico.** Indexar ≠ endossar. Listas oficiais de substâncias controladas mudam — confirmar sempre nas fontes do Estado. O objecto aqui é a **palavra e a rede semântica no projecto**, não o texto integral de uma portaria.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavras | **entorpecente** · **narcótico** |\n| Tipo BudGanja | Palavra — classificação legal (par) |\n| Grupo no Guia | [Classificação legal](/guia/palavras.html?group=classificacao) |\n| Elo Palavras | [Droga](/posts/post-inspecao-palavra-droga.html) (duplo sentido remédio ↔ ilícito) |\n| Elo planta | [Cannabis sativa](/plantas/cannabis-sativa/) |\n| Elo formação | [Rascunhos XIV](/biblioteca/unifesp/livro-xiv.html) · entrada [Psicoativo](/guia/palavras.html?q=Psicoativo) |\n| Data da inspeção | 2026-08-02 |\n\n## Hipóteses e método\n\n**H1:** «entorpecente» no Brasil funciona sobretudo como **rótulo de controlo** (listas, polícia, processo) — descreve efeito e, ao mesmo tempo, **categoria jurídica**.  \n**H2:** «narcótico» é rótulo **médico/legal antigo e amplo** (sono, entorpecimento, analgésicos opiáceos na tradição clínica) — **não** é sinónimo exacto de «entorpecente» nas listas modern"
     },
     {
       "title": "Inspeção: Erva — do sentido botânico amplo ao eufemismo",
@@ -1605,7 +1605,7 @@
     },
     {
       "title": "Entorpecente",
-      "url": "/posts/post-inspecao-palavra-droga.html",
+      "url": "/posts/post-inspecao-palavra-entorpecente-narcotico.html",
       "excerpt": "Termo jurídico-policial: substância que entorpece (diminui sensação ou reação) e entra em listas de controle — distinto de «droga» no senso comum e de «narcótico» (rótulo médico/legal antigo).",
       "text": "Entorpecente Termo jurídico-policial: substância que entorpece (diminui sensação ou reação) e entra em listas de controle — distinto de «droga» no senso comum e de «narcótico» (rótulo médico/legal antigo). classificacao guia palavras glossário entorpecente"
     },
@@ -1875,7 +1875,7 @@
     },
     {
       "title": "Narcótico",
-      "url": "/posts/post-inspecao-palavra-droga.html",
+      "url": "/posts/post-inspecao-palavra-entorpecente-narcotico.html",
       "excerpt": "Termo médico/legal antigo e amplo: substância associada a sono ou entorpecimento — não é sinónimo exacto de «entorpecente» nas listas modernas de controle.",
       "text": "Narcótico Termo médico/legal antigo e amplo: substância associada a sono ou entorpecimento — não é sinónimo exacto de «entorpecente» nas listas modernas de controle. classificacao guia palavras glossário narcotico"
     },

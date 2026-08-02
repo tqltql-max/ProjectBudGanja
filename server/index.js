@@ -495,6 +495,7 @@ const server = http.createServer((req, res) => {
     if (staticPath === '/equipamentos') staticPath = '/equipamentos/';
     if (staticPath === '/sorteios') staticPath = '/sorteios/';
     if (staticPath === '/videos') staticPath = '/videos/';
+    if (staticPath === '/biblioteca') staticPath = '/biblioteca/';
     if (staticPath === '/biblioteca/pesquisas') staticPath = '/biblioteca/pesquisas/';
     if (staticPath === '/biblioteca/inspecoes') staticPath = '/biblioteca/inspecoes/';
     if (staticPath.endsWith('/')) staticPath += 'index.html';

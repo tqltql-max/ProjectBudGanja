@@ -714,7 +714,8 @@ const DEFAULT_SITE = {
       megaCompact: true,
       megaAccordion: true,
       megaHeader: 'Biblioteca',
-      megaHeaderHref: '/biblioteca/pesquisas/',
+      megaHeaderHref: '/biblioteca/',
+      adminOnly: true,
       groups: [{ title: '', items: [] }]
     },
     {
@@ -1216,10 +1217,22 @@ function buildNavItemHTML(item) {
   );
 }
 
+function isAdminAuth(authState) {
+  return !!(authState && authState.isAdmin);
+}
+
+function filterAdminOnlyNav(items, authState) {
+  if (!Array.isArray(items)) return [];
+  const allowAdmin = isAdminAuth(authState);
+  return items.filter(function (item) {
+    return !item || !item.adminOnly || allowAdmin;
+  });
+}
+
 /** Hubs reais do site — fonte única para quick-nav (desktop) e menu mobile. */
-function getSiteHubNav() {
-  return {
-    quick: [
+function getSiteHubNav(authState) {
+  const allowAdmin = isAdminAuth(authState);
+  const quick = [
       {
         href: '/plantas/',
         icon: '🌿',
@@ -1250,7 +1263,8 @@ function getSiteHubNav() {
         label: i18n('nav.library', 'Biblioteca'),
         tip: i18n('nav.quickLibraryTip', 'Inspeções, UNIFESP, guias, pesquisas e catálogos'),
         prefixes: '/biblioteca/inspecoes,/guia',
-        tone: 'inspecoes'
+        tone: 'inspecoes',
+        adminOnly: true
       },
       {
         href: '/biblioteca/pesquisas/',
@@ -1284,11 +1298,9 @@ function getSiteHubNav() {
         prefixes: '/videos',
         tone: 'videos'
       }
-    ],
-    mobileSections: [
-      {
-        title: i18n('nav.sectionExplore', 'Explorar'),
-        links: [
+  ].filter(function (item) { return !item.adminOnly || allowAdmin; });
+
+  const exploreLinks = [
           {
             href: '/',
             icon: '🏠',
@@ -1302,7 +1314,8 @@ function getSiteHubNav() {
             icon: '📚',
             label: i18n('nav.library', 'Biblioteca'),
             prefixes: '/biblioteca/inspecoes,/guia',
-            tone: 'inspecoes'
+            tone: 'inspecoes',
+            adminOnly: true
           },
           {
             href: '/plantas/',
@@ -1346,7 +1359,14 @@ function getSiteHubNav() {
             prefixes: '/videos',
             tone: 'videos'
           }
-        ]
+  ].filter(function (item) { return !item.adminOnly || allowAdmin; });
+
+  return {
+    quick: quick,
+    mobileSections: [
+      {
+        title: i18n('nav.sectionExplore', 'Explorar'),
+        links: exploreLinks
       },
       {
         title: i18n('nav.sectionTools', 'Ferramentas'),
@@ -1404,8 +1424,8 @@ function getSiteHubNav() {
   };
 }
 
-function buildDesktopQuickNavHTML() {
-  const items = getSiteHubNav().quick;
+function buildDesktopQuickNavHTML(authState) {
+  const items = getSiteHubNav(authState).quick;
   const links = items.map(function (item) {
     const cls =
       'header-quick-link' +
@@ -1426,8 +1446,8 @@ function buildDesktopQuickNavHTML() {
   );
 }
 
-function buildMobileHubNavHTML() {
-  const sections = getSiteHubNav().mobileSections;
+function buildMobileHubNavHTML(authState) {
+  const sections = getSiteHubNav(authState).mobileSections;
   return sections.map(function (section) {
     const links = (section.links || []).map(function (item) {
       const cls = 'mobile-menu-link' +
@@ -1457,7 +1477,7 @@ function buildMobileHubNavHTML() {
 
 function buildHeaderHTML(site, authState) {
   const config = site || DEFAULT_SITE;
-  const navItems = config.nav || DEFAULT_SITE.nav;
+  const navItems = filterAdminOnlyNav(config.nav || DEFAULT_SITE.nav, authState);
   const navLinks = navItems.map(buildNavItemHTML).join('\n                ');
 
   const headerSearch =
@@ -1552,7 +1572,7 @@ function buildHeaderHTML(site, authState) {
     '</div>' +
     '<span class="header-chrome-sep" aria-hidden="true"></span>' +
     radioLangCluster +
-    buildDesktopQuickNavHTML() +
+    buildDesktopQuickNavHTML(authState) +
     '<span class="header-chrome-sep header-chrome-sep--end" aria-hidden="true"></span>' +
     '<div class="header-right">' +
     '<div class="header-utilities">' +
@@ -1706,7 +1726,7 @@ function buildMobileMenuHTML(site, authState) {
     }
   }
 
-  const hubNavHtml = buildMobileHubNavHTML();
+  const hubNavHtml = buildMobileHubNavHTML(authState);
   const utilsHtml = buildMobileUtilsHTML(authState, hideAuthNav);
 
   const footLinks = [
@@ -2319,6 +2339,14 @@ function applyUserPictureToDom(picture) {
 let cachedLayoutSite = null;
 let cachedLayoutAuth = null;
 
+function applyAdminOnlyVisibility(isAdmin) {
+  document.body.classList.toggle('is-admin', !!isAdmin);
+  document.querySelectorAll('[data-admin-only]').forEach(function (el) {
+    if (isAdmin) el.removeAttribute('hidden');
+    else el.setAttribute('hidden', '');
+  });
+}
+
 function injectLayout(site, authState) {
   cachedLayoutSite = site;
   cachedLayoutAuth = authState;
@@ -2328,6 +2356,7 @@ function injectLayout(site, authState) {
   const footerContainer = document.getElementById('site-footer');
   const headerHTML = buildHeaderHTML(localizedSite, localizedAuth);
   const footerHTML = buildFooterHTML(localizedSite);
+  applyAdminOnlyVisibility(isAdminAuth(localizedAuth));
 
   if (headerContainer) {
     headerContainer.innerHTML = headerHTML;

@@ -20,6 +20,7 @@
       "megaAccordion": true,
       "megaHeader": "Biblioteca",
       "megaHeaderHref": "/biblioteca/",
+      "adminOnly": true,
       "groups": [
         {
           "title": "",
@@ -1116,12 +1117,28 @@
                   "description": "*Carapa guianensis* — óleo de sementes rico em limonoides (andirobina); tradição tópica e repelente."
                 },
                 {
+                  "label": "Inspeção: Guia de Palavras — auditoria das 139 entradas e do acervo",
+                  "tileLabel": "Inspeção: Guia de Palavras — au…",
+                  "href": "/posts/post-inspecao-guia-palavras-cobertura.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-guia-palavras-cobertura",
+                  "description": "Cobertura do glossário BudGanja cruzada com inspeções, plantas, páginas e rascunhos XIV — hrefs, profundidade e lacunas."
+                },
+                {
                   "label": "Inspeção: Planta — Jambu — espilanthol e anestesia oral",
                   "tileLabel": "Inspeção: Planta — Jambu — espi…",
                   "href": "/posts/post-inspecao-planta-jambu.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-jambu",
                   "description": "*Acmella oleracea* — alquilamidas (espilanthol) causam dormência oral; erva da culinária paraense."
+                },
+                {
+                  "label": "Inspeção: Entorpecente e Narcótico — classificação legal no laboratório",
+                  "tileLabel": "Inspeção: Entorpecente e Narcót…",
+                  "href": "/posts/post-inspecao-palavra-entorpecente-narcotico.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-entorpecente-narcotico",
+                  "description": "Palavras: entorpecente × narcótico — rótulos de controlo e clínica, distintos de droga no senso comum e da rede de nomes (maconha, cannabis, ganja…)."
                 },
                 {
                   "label": "Inspeção: Planta — Mulungu — alcaloides eritrínicos calmantes",
