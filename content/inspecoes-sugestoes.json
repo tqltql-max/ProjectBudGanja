@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T11:11:22.582Z",
+  "updatedAt": "2026-08-02T11:28:58.736Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2217,6 +2217,29 @@
         "/posts/post-inspecao-palavra-animal.html"
       ],
       "notes": "Palavra ≠ tratado de ecologia; metáfora cultural é camada, não definição."
+    },
+    {
+      "id": "arte-lagrimas-da-vida",
+      "title": "Lágrimas da Vida — Álvares de Azevedo e a máscara que chora",
+      "titleEn": "Lágrimas da Vida — Álvares de Azevedo and the mask that weeps",
+      "titleEs": "Lágrimas da Vida — Álvares de Azevedo y la máscara que llora",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Artes · poesia: «Lágrimas da Vida» (*Lira*) — ultrarromantismo; elo com /vida/.",
+      "whyEn": "Arts · poetry: “Lágrimas da Vida” (*Lira*) — ultra-romanticism; link to /vida/.",
+      "whyEs": "Artes · poesía: «Lágrimas da Vida» (*Lira*) — ultrarromanticismo; vínculo con /vida/.",
+      "suggestedSlug": "inspecao-arte-lagrimas-da-vida",
+      "doneHref": "/posts/post-inspecao-arte-lagrimas-da-vida.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://www.escritas.org/pt/t/10787/lagrimas-da-vida",
+        "https://pt.wikipedia.org/wiki/%C3%81lvares_de_Azevedo",
+        "/vida/",
+        "/posts/post-inspecao-palavra-emocao.html",
+        "/posts/post-inspecao-palavra-tristeza.html"
+      ],
+      "notes": "Poema ≠ culto da morte; literatura ultrarromântica com ponte ética a Vida."
     }
   ]
 }

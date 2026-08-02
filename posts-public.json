@@ -1881,6 +1881,25 @@
     "seriesLabel": "Cacau · fruto"
   },
   {
+    "title": "Inspeção: Lágrimas da Vida — o poema de Álvares de Azevedo e a máscara que chora",
+    "titleEn": "Inspection: Lágrimas da Vida — Álvares de Azevedo’s poem and the mask that weeps",
+    "titleEs": "Inspección: Lágrimas da Vida — el poema de Álvares de Azevedo y la máscara que llora",
+    "excerpt": "Artes · poesia: «Lágrimas da Vida» (Álvares de Azevedo, *Lira dos Vinte Anos*) — ultrarromantismo, lágrima escondida e elo com a trilha Vida.",
+    "excerptEn": "Arts · poetry: “Lágrimas da Vida” (Álvares de Azevedo, *Lira dos Vinte Anos*) — ultra-romanticism, hidden tear, and a link to the Vida trail.",
+    "excerptEs": "Artes · poesía: «Lágrimas da Vida» (Álvares de Azevedo, *Lira dos Vinte Anos*) — ultrarromanticismo, lágrima oculta y vínculo con Vida.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-arte-lagrimas-da-vida",
+    "url": "/posts/post-inspecao-arte-lagrimas-da-vida.html",
+    "date": "2026-08-02T13:00:00.000Z",
+    "filename": "posts/post-inspecao-arte-lagrimas-da-vida.html",
+    "coverImage": "/imagens/inspecoes/lagrimas-da-vida-cover.jpg",
+    "category": "inspecao",
+    "series": "artes-cultura",
+    "seriesOrder": 11,
+    "seriesLabel": "Lágrimas da Vida · Artes"
+  },
+  {
     "title": "Inspeção: Coelho — a palavra da toca e da entrada na investigação",
     "titleEn": "Inspection: Coelho — the word of the burrow and entry into inquiry",
     "titleEs": "Inspección: Coelho — la palabra de la madriguera y la entrada a la investigación",

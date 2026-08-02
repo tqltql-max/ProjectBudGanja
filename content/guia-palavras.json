@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T11:11:03.813Z",
+  "updatedAt": "2026-08-02T11:28:58.738Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1444,6 +1444,16 @@
       "group": "hub",
       "fromTitle": true,
       "href": "/biblioteca/inspecoes/"
+    },
+    {
+      "id": "lagrimas-da-vida",
+      "word": "Lágrimas da Vida",
+      "simple": "Poema de Álvares de Azevedo (*Lira dos Vinte Anos*) — lágrima sob a máscara do sorriso; no site, inspeção de Artes com elo à trilha Vida.",
+      "simpleEn": "Poem by Álvares de Azevedo (*Lira dos Vinte Anos*) — a tear under a smiling mask; on the site, an Arts inspection linked to Vida.",
+      "simpleEs": "Poema de Álvares de Azevedo (*Lira dos Vinte Anos*) — lágrima bajo la máscara de la sonrisa; en el sitio, inspección de Artes con vínculo a Vida.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-lagrimas-da-vida.html"
     },
     {
       "id": "lei-11-343",
