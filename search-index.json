@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T20:53:41.868Z",
+  "updatedAt": "2026-08-02T21:05:37.784Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Backspace — invenção do apagar e a tentação do «tudo de ruim»",
+      "url": "/posts/post-inspecao-palavra-backspace.html",
+      "excerpt": "Palavras: «backspace» (*back* + *space*, ~1899) — da tecla tipográfica à metáfora de apagar tudo de ruim sem inspecionar.",
+      "text": "Inspeção: Backspace — invenção do apagar e a tentação do «tudo de ruim» Palavras: «backspace» (*back* + *space*, ~1899) — da tecla tipográfica à metáfora de apagar tudo de ruim sem inspecionar. inspecao ## Escopo\n\nInspeção editorial e cultural da palavra **backspace** (ing. *back* + *space*) — tecla e metáfora de **apagar o que veio atrás**. Nasceu na máquina de escrever (fim do séc. XIX) para fazer o carro **voltar um espaço**; no computador passou a **apagar o carácter anterior**. No laboratório BudGanja, a ficha pergunta: quando o backspace é ofício (corrigir typo, rever rascunho) e quando vira tentação de apagar **tudo de ruim** — [medo](/posts/post-inspecao-palavra-medo.html), [raiva](/posts/post-inspecao-palavra-raiva.html), erro, [proibição](/posts/post-inspecao-palavra-proibicao-proibicionismo.html), roubo de crédito — sem inspecionar.\n\n> **Nota metodológica:** auditoria independente. Étimo de trabalho: inglês *back* («para trás») + *space* («espaço tipográfico») — atestado ~1899 em teclados de escrever ([Etymonline](https://www.etymonline.com/word/backspace); [Wikipédia · Backspace](https://en.wikipedia.org/wiki/Backspace)). **Ficha de palavra ≠ manual de teclado** — inspecionamos o vocábulo como invenção técnica **e** como figura cultural do apagar. Sem afiliação a fabricantes.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **backspace** (também ⌫ · *Backspace* · *←*) |\n| Classe | Substantivo / tecla / verbo informal (*to backspace*) |\n| Étimo | Ingl. *back* + *space* (~1899, teclado tipográfico) |\n| Família | *space* · *delete* · *rub out* · *erase* · *undo* |\n| Cognatos / rótulos | pt. *retrocesso* · *apagar* · esp. *retroceso* · fr. *retour arrière* |\n| Tipo BudGanja | Palavra — invenção do apagar + tentação de sumir com o ruim |\n| Elo Palavras | [gesto](/posts/post-inspecao-palavra-gesto.html) · [verdade](/posts/post-inspecao-palavra-verdade.html) · [criatividade](/posts/post-inspecao-palavra-criatividade.html) · [passar](/pos"
     },
     {
       "title": "Inspeção: Faça o melhor! — mantra do laboratório",
@@ -1764,6 +1770,12 @@
       "url": "/posts/post-inspecao-palavra-balde.html",
       "excerpt": "Recipiente com asa — volume e transporte no cultivo; no Q&A Tamara, utensílio da narrativa ártica.",
       "text": "Balde Recipiente com asa — volume e transporte no cultivo; no Q&A Tamara, utensílio da narrativa ártica. lexico guia palavras glossário balde"
+    },
+    {
+      "title": "Backspace",
+      "url": "/posts/post-inspecao-palavra-backspace.html",
+      "excerpt": "Inglês *back* + *space* (~1899) — tecla que volta/apaga; no BudGanja, ofício de rever × tentação de apagar tudo de ruim.",
+      "text": "Backspace Inglês *back* + *space* (~1899) — tecla que volta/apaga; no BudGanja, ofício de rever × tentação de apagar tudo de ruim. lexico guia palavras glossário backspace"
     },
     {
       "title": "Barbatimão",

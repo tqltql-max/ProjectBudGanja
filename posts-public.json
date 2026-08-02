@@ -2774,6 +2774,25 @@
     "seriesLabel": "Barbatimão"
   },
   {
+    "title": "Inspeção: Backspace — invenção do apagar e a tentação do «tudo de ruim»",
+    "titleEn": "Inspection: Backspace — invention of erase and the temptation of “everything bad”",
+    "titleEs": "Inspección: Backspace — invención del borrar y la tentación de «todo lo malo»",
+    "excerpt": "Palavras: «backspace» (*back* + *space*, ~1899) — da tecla tipográfica à metáfora de apagar tudo de ruim sem inspecionar.",
+    "excerptEn": "Words: “backspace” (*back* + *space*, ~1899) — from the typewriter key to the metaphor of erasing everything bad without inspecting.",
+    "excerptEs": "Palabras: «backspace» (*back* + *space*, ~1899) — de la tecla tipográfica a la metáfora de borrar todo lo malo sin inspeccionar.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-backspace",
+    "url": "/posts/post-inspecao-palavra-backspace.html",
+    "date": "2026-08-02T21:10:00.000Z",
+    "filename": "posts/post-inspecao-palavra-backspace.html",
+    "coverImage": "/imagens/inspecoes/backspace-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 24,
+    "seriesLabel": "Backspace · palavra"
+  },
+  {
     "title": "Inspeção: Substância controlada — meta-rótulo das listas",
     "titleEn": "Inspection: Substância controlada — meta-label of the lists",
     "titleEs": "Inspección: Substancia controlada — meta-rótulo de las listas",

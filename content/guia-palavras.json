@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T20:53:30.215Z",
+  "updatedAt": "2026-08-02T21:05:27.886Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -294,6 +294,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-balde.html"
+    },
+    {
+      "id": "backspace",
+      "word": "Backspace",
+      "simple": "Inglês *back* + *space* (~1899) — tecla que volta/apaga; no BudGanja, ofício de rever × tentação de apagar tudo de ruim.",
+      "simpleEn": "English *back* + *space* (~1899) — key that steps back/erases; in BudGanja, craft of revision vs temptation to erase everything bad.",
+      "simpleEs": "Inglés *back* + *space* (~1899) — tecla que retrocede/borra; en BudGanja, oficio de revisar × tentación de borrar todo lo malo.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-backspace.html"
     },
     {
       "id": "barbatimao",

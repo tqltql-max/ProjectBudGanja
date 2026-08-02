@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T20:53:30.203Z",
+  "updatedAt": "2026-08-02T21:05:27.883Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2803,6 +2803,30 @@
         "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
       ],
       "notes": "Mantra canónico do laboratório; poema Vida faca-o-melhor."
+    },
+    {
+      "id": "palavra-backspace",
+      "title": "Backspace — invenção do apagar e «tudo de ruim»",
+      "titleEn": "Backspace — invention of erase and “everything bad”",
+      "titleEs": "Backspace — invención del borrar y «todo lo malo»",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: «backspace» (*back* + *space*) — tecla tipográfica e metáfora de apagar o difícil sem inspecionar.",
+      "whyEn": "Words: “backspace” (*back* + *space*) — typewriter key and metaphor for erasing the hard without inspecting.",
+      "whyEs": "Palabras: «backspace» (*back* + *space*) — tecla tipográfica y metáfora de borrar lo difícil sin inspeccionar.",
+      "suggestedSlug": "inspecao-palavra-backspace",
+      "doneHref": "/posts/post-inspecao-palavra-backspace.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Backspace",
+        "https://www.etymonline.com/word/backspace",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-verdade.html",
+        "/posts/post-pesquisa-oficio-roubo-proibicao.html",
+        "/vida/"
+      ],
+      "notes": "Backspace bom = rever; backspace mau = amnésia / silenciamento."
     }
   ]
 }
