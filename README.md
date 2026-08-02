@@ -50,6 +50,8 @@ Detalhes: [`docs/GIT.md`](docs/GIT.md) · copie `.env.example` → `.env`
 
 ## Scripts
 
+Lista completa (todos os `npm run …`): **[docs/log-comandos-npm.md](docs/log-comandos-npm.md)**.
+
 | Comando | Descrição |
 |---------|-----------|
 | `npm start` | Servidor local na porta 8080 |
