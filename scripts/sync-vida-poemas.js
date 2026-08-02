@@ -24,6 +24,11 @@ const {
   poemBomDiaInvernoEn,
   poemBomDiaInvernoEs
 } = require('../lib/bom-dia-inverno-inspecao-post.js');
+const {
+  poemArvoreDaVidaPt,
+  poemArvoreDaVidaEn,
+  poemArvoreDaVidaEs
+} = require('../lib/palavras-inspecoes-posts.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -115,6 +120,27 @@ const doc = {
       bodyEs: poemBomDiaInvernoEs(),
       inspectionHref: '/posts/post-inspecao-arte-bom-dia-inverno.html',
       tags: ['poesia', 'vida', 'inverno', 'mudinha', 'gelo']
+    },
+    {
+      id: 'arvore-da-vida',
+      slug: 'arvore-da-vida',
+      title: 'Árvore da Vida',
+      titleEn: 'Tree of Life',
+      titleEs: 'Árbol de la Vida',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'A fase sénior — semente e mudinha guardadas na madeira; ficar e faça o melhor.',
+      teaserEn:
+        'The senior phase — seed and seedling kept in the wood; stay and do your best.',
+      teaserEs:
+        'La fase sénior — semilla y plantita guardadas en la madera; quedarse y haz lo mejor.',
+      body: poemArvoreDaVidaPt(),
+      bodyEn: poemArvoreDaVidaEn(),
+      bodyEs: poemArvoreDaVidaEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-arvore-da-vida.html',
+      tags: ['poesia', 'vida', 'árvore', 'sénior', 'semente']
     }
   ]
 };

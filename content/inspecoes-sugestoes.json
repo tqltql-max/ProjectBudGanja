@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T21:10:17.127Z",
+  "updatedAt": "2026-08-02T21:16:11.846Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2853,6 +2853,28 @@
         "/vida/"
       ],
       "notes": "Par único Cap. 25 — complementaridade de ofício; evitar preconceito «sinistra»."
+    },
+    {
+      "id": "palavra-arvore-da-vida",
+      "title": "Árvore da Vida — fase sénior do arco",
+      "titleEn": "Tree of Life — senior phase of the arc",
+      "titleEs": "Árbol de la Vida — fase sénior del arco",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: «Árvore da Vida» — fecha o arco semente → mudinha → árvore no laboratório.",
+      "whyEn": "Words: “Árvore da Vida” — closes the seed → seedling → tree arc in the lab.",
+      "whyEs": "Palabras: «Árvore da Vida» — cierra el arco semilla → plantita → árbol en el laboratorio.",
+      "suggestedSlug": "inspecao-palavra-arvore-da-vida",
+      "doneHref": "/posts/post-inspecao-palavra-arvore-da-vida.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/%C3%81rvore_da_vida",
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-conto-vida-laboratorio.html",
+        "/vida/"
+      ],
+      "notes": "Sénior ≠ fim do ofício — ainda há gesto e mãos."
     }
   ]
 }

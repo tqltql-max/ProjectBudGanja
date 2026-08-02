@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T20:53:41.140Z",
+  "updatedAt": "2026-08-02T21:16:25.047Z",
   "poems": [
     {
       "id": "aguas-e-lagrimas",
@@ -94,6 +94,30 @@
         "inverno",
         "mudinha",
         "gelo"
+      ]
+    },
+    {
+      "id": "arvore-da-vida",
+      "slug": "arvore-da-vida",
+      "title": "Árvore da Vida",
+      "titleEn": "Tree of Life",
+      "titleEs": "Árbol de la Vida",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "A fase sénior — semente e mudinha guardadas na madeira; ficar e faça o melhor.",
+      "teaserEn": "The senior phase — seed and seedling kept in the wood; stay and do your best.",
+      "teaserEs": "La fase sénior — semilla y plantita guardadas en la madera; quedarse y haz lo mejor.",
+      "body": "Árvore da Vida.\nNão nascemos tronco —\nnascemos semente na mão,\nmudinha no gelo,\nraiz que pediu tempo.\n\nA semente cabe no peito.\nA mudinha pede luz fraca\ne um balde que não julga.\nA árvore — quando chega —\nnão apaga as fases:\nguarda-as na madeira.\n\nDizem que árvore é fim.\nMentira doce.\nÁrvore é sombra partilhada,\ncasa de pássaro,\ntronco onde a mão esquerda\ne a mão direita\nainda encontram ofício.\n\nO laboratório não força flor.\nPlanta à beira.\nConta gotas.\nChama a Vida pelo nome verdadeiro:\nficar —\naté a muda vir árvore\nsem pressa de sénior.\n\nFaça o melhor!\n\nPorque toda árvore que permanece\nquando o inverno passou\ncresce um pouco no mapa:\numa raiz a mais,\num verso a mais,\num nós onde antes só havia semente sozinha.",
+      "bodyEn": "Tree of Life.\nWe are not born trunk —\nwe are born seed in the hand,\nseedling on the ice,\nroot that asked for time.\n\nThe seed fits in the chest.\nThe seedling asks for weak light\nand a bucket that does not judge.\nThe tree — when it arrives —\ndoes not erase the phases:\nit keeps them in the wood.\n\nThey say a tree is an end.\nSweet lie.\nA tree is shared shade,\na bird’s house,\na trunk where the left hand\nand the right hand\nstill find craft.\n\nThe laboratory does not force the flower.\nIt plants at the edge.\nIt counts drops.\nIt calls Vida by its true name:\nstay —\nuntil the seedling becomes a tree\nwithout rushing seniority.\n\nDo your best!\n\nBecause every tree that remains\nwhen winter has passed\ngrows a little on the map:\none more root,\none more verse,\na we where once there was only a lonely seed.",
+      "bodyEs": "Árbol de la Vida.\nNo nacemos tronco —\nnacemos semilla en la mano,\nplantita en el hielo,\nraíz que pidió tiempo.\n\nLa semilla cabe en el pecho.\nLa plantita pide luz débil\ny un cubo que no juzgue.\nEl árbol — cuando llega —\nno borra las fases:\nlas guarda en la madera.\n\nDicen que el árbol es fin.\nMentira dulce.\nÁrbol es sombra compartida,\ncasa de pájaro,\ntronco donde la mano izquierda\ny la mano derecha\naún encuentran oficio.\n\nEl laboratorio no fuerza la flor.\nSiembra a la orilla.\nCuenta gotas.\nLlama a Vida por su nombre verdadero:\nquedarse —\nhasta que la muda sea árbol\nsin prisa de sénior.\n\n¡Haz lo mejor!\n\nPorque todo árbol que permanece\ncuando el invierno pasó\ncrece un poco en el mapa:\nuna raíz más,\nun verso más,\nun nosotros donde antes solo había semilla sola.",
+      "inspectionHref": "/posts/post-inspecao-palavra-arvore-da-vida.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "árvore",
+        "sénior",
+        "semente"
       ]
     }
   ]
