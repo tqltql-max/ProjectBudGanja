@@ -491,7 +491,7 @@ body[data-page="vida"] {
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-    animation: learnWordSheen 0.85s ease-in-out;
+    animation: learnWordSheen 0.28s ease-out;
     filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.35));
 }
 

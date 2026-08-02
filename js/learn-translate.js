@@ -148,9 +148,10 @@
 
     chars.forEach(function (span, i) {
       var finalCh = i < target.length ? target.charAt(i) : '';
-      var steps = 3 + (i % 4);
+      // Rápido: 1–2 frames de scramble por letra, stagger curto.
+      var steps = finalCh ? 1 + (i % 2) : 0;
       var step = 0;
-      var delay = i * 42;
+      var delay = i * 12;
 
       schedule(wordEl, function tick() {
         if (step < steps && finalCh) {
@@ -159,7 +160,7 @@
             ? randomChar(charset, upper)
             : finalCh;
           step += 1;
-          schedule(wordEl, tick, 28);
+          schedule(wordEl, tick, 14);
           return;
         }
         span.textContent = finalCh;
@@ -168,7 +169,7 @@
           schedule(wordEl, function () {
             setPlainText(wordEl, target);
             wordEl.classList.add('is-translated');
-          }, 80);
+          }, 20);
         }
       }, delay);
     });
@@ -188,12 +189,12 @@
       wordEl.removeAttribute('aria-label');
       return;
     }
-    // Snap back with a short sheen (no full scramble on revert — keeps it snappy)
+    // Snap back imediato (só um flash de sheen)
     schedule(wordEl, function () {
       setPlainText(wordEl, src);
       wordEl.removeAttribute('data-learn-shown');
       wordEl.removeAttribute('aria-label');
-    }, 180);
+    }, 40);
   }
 
   function activateWord(wordEl) {
@@ -208,7 +209,7 @@
       wordEl.classList.add('is-sheen', 'is-unknown');
       schedule(wordEl, function () {
         wordEl.classList.remove('is-sheen');
-      }, 500);
+      }, 160);
       return;
     }
     wordEl.classList.remove('is-unknown');
@@ -350,7 +351,7 @@
         revertWord(leaving);
         state.activeWord = null;
       }
-    }, 220);
+    }, 80);
   }
 
   function onFocusIn(e) {
@@ -367,7 +368,7 @@
         revertWord(leaving);
         state.activeWord = null;
       }
-    }, 220);
+    }, 80);
   }
 
   function onToolbarClick(e) {
