@@ -11,6 +11,11 @@ const {
   poemEn,
   poemEs
 } = require('../lib/aguas-e-lagrimas-inspecao-post.js');
+const {
+  poemVingancaPt,
+  poemVingancaEn,
+  poemVingancaEs
+} = require('../lib/expressoes-ditados-inspecoes-posts.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -38,6 +43,28 @@ const doc = {
       bodyEs: poemEs(),
       inspectionHref: '/posts/post-inspecao-arte-aguas-e-lagrimas.html',
       tags: ['poesia', 'vida', 'mar', 'lágrima']
+    },
+    {
+      id: 'vinganca-nunca-e-plena',
+      slug: 'vinganca-nunca-e-plena',
+      title: 'A vingança nunca é plena',
+      titleEn: 'Revenge Is Never Complete',
+      titleEs: 'La venganza nunca es plena',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Do ditado ao verso: sentido comum das palavras vermelhas e o aviso de não beber o rancor sozinho.',
+      teaserEn:
+        'From saying to verse: everyday senses of the red words, and the warning not to drink the grudge alone.',
+      teaserEs:
+        'Del dicho al verso: sentidos comunes de las palabras rojas y el aviso de no beber el rencor solo.',
+      body: poemVingancaPt(),
+      bodyEn: poemVingancaEn(),
+      bodyEs: poemVingancaEs(),
+      inspectionHref:
+        '/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html',
+      tags: ['poesia', 'vida', 'vingança', 'aviso', 'rancor']
     }
   ]
 };

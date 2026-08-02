@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T20:15:41.794Z",
+  "updatedAt": "2026-08-02T20:23:27.239Z",
   "poems": [
     {
       "id": "aguas-e-lagrimas",
@@ -22,6 +22,30 @@
         "vida",
         "mar",
         "lágrima"
+      ]
+    },
+    {
+      "id": "vinganca-nunca-e-plena",
+      "slug": "vinganca-nunca-e-plena",
+      "title": "A vingança nunca é plena",
+      "titleEn": "Revenge Is Never Complete",
+      "titleEs": "La venganza nunca es plena",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Do ditado ao verso: sentido comum das palavras vermelhas e o aviso de não beber o rancor sozinho.",
+      "teaserEn": "From saying to verse: everyday senses of the red words, and the warning not to drink the grudge alone.",
+      "teaserEs": "Del dicho al verso: sentidos comunes de las palabras rojas y el aviso de no beber el rencor solo.",
+      "body": "Disseram na vizinhança, com voz de brincadeira,\nque a vingança nunca é plena —\npromete fechar a conta\ne deixa o peito em aberto.\n\nComum: desforra, olho por olho, revidar o golpe.\nLab: a conta não fecha.\nQuem bebe a dose\npensa que o outro morre primeiro.\n\nMata — no dicionário — tira a vida.\nAqui mata outro jeito:\nesvazia a alma,\ntira o nome verdadeiro do centro,\ndeixa o espírito sem água para a planta.\n\nVeneno — no mundo — adoecer, matar.\nVeneno — nesta frase — o rancor\nque ocupa o lugar do cuidado,\nque corrompe por dentro\nenquanto a mão ainda aponta para fora.\n\nRessentimento é mágoa que não passa.\nRancor é a garrafa que a gente guarda\ncomo se fosse justiça.\nNão é.\nÉ dose.\nÉ aviso.\n\nO laboratório não condena a raiva —\na raiva tem ofício, tem limite, tem cor.\nO laboratório inspeciona o veneno\npara não confundir fogo com veneno,\nemoção com retaliação,\nficar com revidar.\n\nSeu Madruga já avisava no pátio:\nnunca é plena.\nNós, na trilha Vida, traduzimos o ditado\nem verso e em método —\nnão para apagar a mágoa,\nmas para não beber sozinho\no que poderia ser partilha.\n\nPlanta à beira do rancor.\nConta gotas.\nChama a alma pelo nome comum\ne pelo nome BudGanja:\ncentro íntimo —\nainda vivo —\nainda capaz de ficar.",
+      "bodyEn": "They said it in the yard, half as a joke,\nthat revenge is never complete —\nit promises to settle the score\nand leaves the chest open.\n\nEveryday: payback, eye for eye, strike back.\nLab: the account never closes.\nWhoever drinks the dose\nthinks the other dies first.\n\nTo kill — in the dictionary — takes a life.\nHere it kills another way:\nit empties the soul,\ntakes the true name from the center,\nleaves the spirit without water for the plant.\n\nPoison — in the world — to sicken, to kill.\nPoison — in this saying — the grudge\nthat takes the place of care,\nthat corrupts from within\nwhile the hand still points outward.\n\nResentment is a hurt that will not pass.\nA grudge is the bottle we keep\nas if it were justice.\nIt is not.\nIt is a dose.\nIt is a warning.\n\nThe laboratory does not condemn anger —\nanger has a craft, a limit, a color.\nThe laboratory inspects the poison\nso we do not confuse fire with venom,\nemotion with retaliation,\nstaying with striking back.\n\nSeu Madruga already warned in the courtyard:\nnever complete.\nWe, on the Vida path, turn the saying\ninto verse and method —\nnot to erase the hurt,\nbut so we do not drink alone\nwhat could have been sharing.\n\nPlant at the edge of the grudge.\nCount the drops.\nCall the soul by its everyday name\nand by its BudGanja name:\nintimate center —\nstill alive —\nstill able to stay.",
+      "bodyEs": "Lo dijeron en el patio, a medias en broma,\nque la venganza nunca es plena —\npromete cerrar la cuenta\ny deja el pecho abierto.\n\nComún: desquite, ojo por ojo, devolver el golpe.\nLab: la cuenta no cierra.\nQuien bebe la dosis\ncree que el otro muere primero.\n\nMatar — en el diccionario — quitar la vida.\nAquí mata de otro modo:\nvacía el alma,\nquita el nombre verdadero del centro,\ndeja el espíritu sin agua para la planta.\n\nVeneno — en el mundo — enfermar, matar.\nVeneno — en esta frase — el rencor\nque ocupa el lugar del cuidado,\nque corrompe por dentro\nmientras la mano aún señala afuera.\n\nEl resentimiento es una herida que no pasa.\nEl rencor es la botella que guardamos\ncomo si fuera justicia.\nNo lo es.\nEs dosis.\nEs aviso.\n\nEl laboratorio no condena la rabia —\nla rabia tiene oficio, límite, color.\nEl laboratorio inspecciona el veneno\npara no confundir fuego con veneno,\nemoción con retaliación,\nquedarse con devolver el golpe.\n\nDon Ramón ya avisaba en el patio:\nnunca es plena.\nNosotros, en la senda Vida, traducimos el dicho\nen verso y en método —\nno para borrar la herida,\nsino para no beber solos\nlo que podría ser compartida.\n\nSiembra a la orilla del rencor.\nCuenta gotas.\nLlama al alma por su nombre común\ny por su nombre BudGanja:\ncentro íntimo —\naún vivo —\naún capaz de quedarse.",
+      "inspectionHref": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "vingança",
+        "aviso",
+        "rancor"
       ]
     }
   ]
