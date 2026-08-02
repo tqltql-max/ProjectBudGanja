@@ -227,7 +227,7 @@
     "videos": {
       "label": "Vídeos",
       "tileLabel": "Vídeos",
-      "description": "Canal do laboratório e aulas dos canais inspecionados."
+      "description": "Canal do laboratório, aulas dos canais inspecionados e divulgação (Dr. Lair Ribeiro)."
     },
     "videos-menu": {
       "label": "Vídeos",
@@ -525,7 +525,7 @@
     "videos": {
       "eyebrow": "Canal YouTube",
       "title": "Vídeos",
-      "subtitle": "Assista aqui no site — canal do laboratório e aulas dos canais inspecionados.",
+      "subtitle": "Assista aqui no site — canal do laboratório, aulas dos canais inspecionados e divulgação (Dr. Lair Ribeiro).",
       "loading": "Carregando vídeos...",
       "loadMore": "Carregar mais",
       "empty": "Nenhum vídeo disponível.",

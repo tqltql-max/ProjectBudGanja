@@ -229,7 +229,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "label": "Videos",
         "tileLabel": "Videos",
-        "description": "Lab channel and lectures from inspected partner channels."
+        "description": "Lab channel, lectures from inspected partner channels, and outreach (Dr. Lair Ribeiro)."
       },
       "videos-menu": {
         "label": "Videos",
@@ -527,7 +527,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "eyebrow": "YouTube channel",
         "title": "Videos",
-        "subtitle": "Watch here on the site — the lab channel and lectures from inspected partner channels.",
+        "subtitle": "Watch here on the site — the lab channel, lectures from inspected partner channels, and outreach (Dr. Lair Ribeiro).",
         "loading": "Loading videos…",
         "loadMore": "Load more",
         "empty": "No videos available.",
@@ -1042,7 +1042,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "label": "Videos",
         "tileLabel": "Videos",
-        "description": "Canal del laboratorio y clases de los canales inspeccionados."
+        "description": "Canal del laboratorio, clases de los canales inspeccionados y divulgación (Dr. Lair Ribeiro)."
       },
       "videos-menu": {
         "label": "Videos",
@@ -1340,7 +1340,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "eyebrow": "Canal de YouTube",
         "title": "Videos",
-        "subtitle": "Míralos aquí en el sitio — canal del laboratorio y clases de los canales inspeccionados.",
+        "subtitle": "Míralos aquí en el sitio — canal del laboratorio, clases de los canales inspeccionados y divulgación (Dr. Lair Ribeiro).",
         "loading": "Cargando videos…",
         "loadMore": "Cargar más",
         "empty": "Ningún video disponible.",
@@ -1855,7 +1855,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "label": "Vídeos",
         "tileLabel": "Vídeos",
-        "description": "Canal do laboratório e aulas dos canais inspecionados."
+        "description": "Canal do laboratório, aulas dos canais inspecionados e divulgação (Dr. Lair Ribeiro)."
       },
       "videos-menu": {
         "label": "Vídeos",
@@ -2153,7 +2153,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "eyebrow": "Canal YouTube",
         "title": "Vídeos",
-        "subtitle": "Assista aqui no site — canal do laboratório e aulas dos canais inspecionados.",
+        "subtitle": "Assista aqui no site — canal do laboratório, aulas dos canais inspecionados e divulgação (Dr. Lair Ribeiro).",
         "loading": "Carregando vídeos...",
         "loadMore": "Carregar mais",
         "empty": "Nenhum vídeo disponível.",

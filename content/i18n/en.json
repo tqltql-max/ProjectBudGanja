@@ -227,7 +227,7 @@
     "videos": {
       "label": "Videos",
       "tileLabel": "Videos",
-      "description": "Lab channel and lectures from inspected partner channels."
+      "description": "Lab channel, lectures from inspected partner channels, and outreach (Dr. Lair Ribeiro)."
     },
     "videos-menu": {
       "label": "Videos",
@@ -525,7 +525,7 @@
     "videos": {
       "eyebrow": "YouTube channel",
       "title": "Videos",
-      "subtitle": "Watch here on the site — the lab channel and lectures from inspected partner channels.",
+      "subtitle": "Watch here on the site — the lab channel, lectures from inspected partner channels, and outreach (Dr. Lair Ribeiro).",
       "loading": "Loading videos…",
       "loadMore": "Load more",
       "empty": "No videos available.",

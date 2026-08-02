@@ -51,6 +51,14 @@
     'canal-movrecam': 'movrecam',
     canabinall: 'canabinall',
     'canal-canabinall': 'canabinall',
+    lair: 'lair',
+    'canal-lair': 'lair',
+    'dr-lair': 'lair',
+    drlair: 'lair',
+    'lair-ribeiro': 'lair',
+    drlairribeiro: 'lair',
+    drlairribeirooficiall: 'lair',
+    'divulgacao-lair': 'lair',
     all: 'all',
     todos: 'all'
   };
@@ -63,7 +71,36 @@
     'conceitos-basicos': 'conceitos',
     'conceitos-básicos': 'conceitos',
     'plantas-sagradas': 'plantas-sagradas',
-    'plantas sagradas': 'plantas-sagradas'
+    'plantas sagradas': 'plantas-sagradas',
+    cannabis: 'cannabis',
+    acucar: 'acucar',
+    açucar: 'acucar',
+    'gluten-leite': 'gluten-leite',
+    'glúten-leite': 'gluten-leite',
+    diabetes: 'diabetes',
+    cerebro: 'cerebro',
+    cérebro: 'cerebro',
+    coracao: 'coracao',
+    coração: 'coracao',
+    inflamacao: 'inflamacao',
+    inflamação: 'inflamacao',
+    hormonios: 'hormonios',
+    hormônios: 'hormonios',
+    longevidade: 'longevidade',
+    agua: 'agua',
+    água: 'agua',
+    oleos: 'oleos',
+    óleos: 'oleos',
+    nutricao: 'nutricao',
+    nutrição: 'nutricao',
+    exercicio: 'exercicio',
+    exercício: 'exercicio',
+    sono: 'sono',
+    imunidade: 'imunidade',
+    autoajuda: 'autoajuda',
+    lives: 'lives',
+    trailers: 'trailers',
+    outros: 'outros'
   };
 
   var TOPIC_ALIASES = {
@@ -81,7 +118,7 @@
 
   var TOPIC_ORDER = ['cultivo', 'unifesp', 'saude', 'plantas', 'ciencia'];
 
-  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor'];
+  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair'];
 
   var cachedHub = null;
   var selectedId = '';
@@ -588,6 +625,7 @@
     if (id === 'inspetor') return 'Inspetor BudGanja';
     if (id === 'movrecam') return 'MovReCam';
     if (id === 'canabinall') return 'CANABinALL';
+    if (id === 'lair') return 'Dr. Lair Ribeiro';
     return id;
   }
 
