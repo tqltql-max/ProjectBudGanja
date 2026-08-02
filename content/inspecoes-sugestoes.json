@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T11:28:58.736Z",
+  "updatedAt": "2026-08-02T11:33:48.377Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2235,11 +2235,34 @@
       "sources": [
         "https://www.escritas.org/pt/t/10787/lagrimas-da-vida",
         "https://pt.wikipedia.org/wiki/%C3%81lvares_de_Azevedo",
+        "/posts/post-inspecao-figura-alvares-de-azevedo.html",
         "/vida/",
         "/posts/post-inspecao-palavra-emocao.html",
         "/posts/post-inspecao-palavra-tristeza.html"
       ],
       "notes": "Poema ≠ culto da morte; literatura ultrarromântica com ponte ética a Vida."
+    },
+    {
+      "id": "figura-alvares-de-azevedo",
+      "title": "Álvares de Azevedo — homenagem ao poeta da Lira",
+      "titleEn": "Álvares de Azevedo — homage to the Lira poet",
+      "titleEs": "Álvares de Azevedo — homenaje al poeta de la Lira",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas × Artes: homenagem a Álvares de Azevedo com elo em Lágrimas da Vida.",
+      "whyEn": "People × Arts: homage to Álvares de Azevedo linked to Lágrimas da Vida.",
+      "whyEs": "Personas × Artes: homenaje a Álvares de Azevedo con vínculo en Lágrimas da Vida.",
+      "suggestedSlug": "inspecao-figura-alvares-de-azevedo",
+      "doneHref": "/posts/post-inspecao-figura-alvares-de-azevedo.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/%C3%81lvares_de_Azevedo",
+        "/posts/post-inspecao-arte-lagrimas-da-vida.html",
+        "https://pt.wikipedia.org/wiki/Lira_dos_vinte_anos",
+        "/vida/"
+      ],
+      "notes": "Homenagem literária; não romantizar morte precoce."
     }
   ]
 }

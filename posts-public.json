@@ -1805,6 +1805,25 @@
     "seriesLabel": "Goiaba · fruto"
   },
   {
+    "title": "Inspeção: Álvares de Azevedo — homenagem ao poeta da Lira e elo com Lágrimas da Vida",
+    "titleEn": "Inspection: Álvares de Azevedo — homage to the Lira poet and link to Lágrimas da Vida",
+    "titleEs": "Inspección: Álvares de Azevedo — homenaje al poeta de la Lira y vínculo con Lágrimas da Vida",
+    "excerpt": "Pessoas × Artes: homenagem a Álvares de Azevedo (1831–1852) — ofício ultrarromântico, com elo principal no poema Lágrimas da Vida; distinto do Legado canábico.",
+    "excerptEn": "People × Arts: homage to Álvares de Azevedo (1831–1852) — ultra-romantic craft, with primary link to the poem Lágrimas da Vida; distinct from cannabis Legacy.",
+    "excerptEs": "Personas × Artes: homenaje a Álvares de Azevedo (1831–1852) — oficio ultrarromántico, con vínculo principal en el poema Lágrimas da Vida; distinto del Legado cannábico.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-figura-alvares-de-azevedo",
+    "url": "/posts/post-inspecao-figura-alvares-de-azevedo.html",
+    "date": "2026-08-02T14:00:00.000Z",
+    "filename": "posts/post-inspecao-figura-alvares-de-azevedo.html",
+    "coverImage": "/imagens/inspecoes/alvares-de-azevedo-cover.jpg",
+    "category": "inspecao",
+    "series": "pessoas-historia",
+    "seriesOrder": 10,
+    "seriesLabel": "Álvares de Azevedo · pessoa"
+  },
+  {
     "title": "Inspeção: Venom — o filme de 2018, a simbiose e o «nós»",
     "titleEn": "Inspection: Venom — the 2018 film, symbiosis and “we”",
     "titleEs": "Inspección: Venom — el filme de 2018, la simbiosis y el «nosotros»",

@@ -1,13 +1,15 @@
 'use strict';
 
 /**
- * Injeta / actualiza «Lágrimas da Vida» na série Artes · poesia.
- * Uso: node scripts/upsert-arte-lagrimas-da-vida.js
+ * Injeta / actualiza a homenagem a Álvares de Azevedo (série Pessoas).
+ * Uso: node scripts/upsert-figura-alvares-de-azevedo.js
  */
 
 const fs = require('fs');
 const path = require('path');
-const { buildLagrimasDaVidaPost } = require('../lib/lagrimas-da-vida-inspecao-post.js');
+const {
+  buildAlvaresDeAzevedoPost
+} = require('../lib/alvares-de-azevedo-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_FILE = path.join(ROOT, 'posts.json');
@@ -52,7 +54,7 @@ async function syncSql(post) {
 }
 
 async function main() {
-  const post = buildLagrimasDaVidaPost();
+  const post = buildAlvaresDeAzevedoPost();
   const posts = JSON.parse(fs.readFileSync(POSTS_FILE, 'utf8'));
   upsertPost(posts, post);
   fs.writeFileSync(POSTS_FILE, JSON.stringify(posts, null, 2) + '\n', 'utf8');
@@ -61,71 +63,71 @@ async function main() {
   writeI18n(i18n, post);
   fs.writeFileSync(I18N_FILE, JSON.stringify(i18n, null, 2) + '\n', 'utf8');
 
+  const href = '/posts/post-' + post.slug + '.html';
+  const lagrimasHref = '/posts/post-inspecao-arte-lagrimas-da-vida.html';
+
   if (fs.existsSync(SUG_FILE)) {
     const sug = JSON.parse(fs.readFileSync(SUG_FILE, 'utf8'));
     const items = Array.isArray(sug.items) ? sug.items : [];
-    const sugId = 'arte-lagrimas-da-vida';
-    const href = '/posts/post-' + post.slug + '.html';
+    const sugId = 'figura-alvares-de-azevedo';
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Lágrimas da Vida — Álvares de Azevedo e a máscara que chora',
-      titleEn: 'Lágrimas da Vida — Álvares de Azevedo and the mask that weeps',
-      titleEs: 'Lágrimas da Vida — Álvares de Azevedo y la máscara que llora',
-      tipo: 'arte',
+      title: 'Álvares de Azevedo — homenagem ao poeta da Lira',
+      titleEn: 'Álvares de Azevedo — homage to the Lira poet',
+      titleEs: 'Álvares de Azevedo — homenaje al poeta de la Lira',
+      tipo: 'pessoas',
       priority: 2,
       status: 'feita',
-      why: 'Artes · poesia: «Lágrimas da Vida» (*Lira*) — ultrarromantismo; elo com /vida/.',
-      whyEn: 'Arts · poetry: “Lágrimas da Vida” (*Lira*) — ultra-romanticism; link to /vida/.',
-      whyEs: 'Artes · poesía: «Lágrimas da Vida» (*Lira*) — ultrarromanticismo; vínculo con /vida/.',
+      why: 'Pessoas × Artes: homenagem a Álvares de Azevedo com elo em Lágrimas da Vida.',
+      whyEn: 'People × Arts: homage to Álvares de Azevedo linked to Lágrimas da Vida.',
+      whyEs: 'Personas × Artes: homenaje a Álvares de Azevedo con vínculo en Lágrimas da Vida.',
       suggestedSlug: post.slug,
       doneHref: href,
-      seriesHint: 'artes-cultura',
+      seriesHint: 'pessoas-historia',
       sources: [
         post.sourceUrl,
-        'https://pt.wikipedia.org/wiki/%C3%81lvares_de_Azevedo',
-        '/posts/post-inspecao-figura-alvares-de-azevedo.html',
-        '/vida/',
-        '/posts/post-inspecao-palavra-emocao.html',
-        '/posts/post-inspecao-palavra-tristeza.html'
+        lagrimasHref,
+        'https://pt.wikipedia.org/wiki/Lira_dos_vinte_anos',
+        '/vida/'
       ],
-      notes: 'Poema ≠ culto da morte; literatura ultrarromântica com ponte ética a Vida.'
+      notes: 'Homenagem literária; não romantizar morte precoce.'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);
     sug.items = items;
     sug.updatedAt = new Date().toISOString();
     fs.writeFileSync(SUG_FILE, JSON.stringify(sug, null, 2) + '\n', 'utf8');
-    console.log('Sugestões actualizadas (arte-lagrimas-da-vida)');
+    console.log('Sugestões actualizadas (figura-alvares-de-azevedo)');
   }
 
   if (fs.existsSync(GUIA_FILE)) {
     const guia = JSON.parse(fs.readFileSync(GUIA_FILE, 'utf8'));
     const items = Array.isArray(guia.items) ? guia.items : [];
     const entry = {
-      id: 'lagrimas-da-vida',
-      word: 'Lágrimas da Vida',
+      id: 'alvares-de-azevedo',
+      word: 'Álvares de Azevedo',
       simple:
-        'Poema de Álvares de Azevedo (*Lira dos Vinte Anos*) — lágrima sob a máscara do sorriso; no site, inspeção de Artes com elo à trilha Vida.',
+        'Poeta ultrarromântico brasileiro (1831–1852), autor da *Lira dos Vinte Anos*; no site, homenagem em Pessoas com elo ao poema Lágrimas da Vida.',
       simpleEn:
-        'Poem by Álvares de Azevedo (*Lira dos Vinte Anos*) — a tear under a smiling mask; on the site, an Arts inspection linked to Vida.',
+        'Brazilian ultra-romantic poet (1831–1852), author of *Lira dos Vinte Anos*; on the site, a People homage linked to Lágrimas da Vida.',
       simpleEs:
-        'Poema de Álvares de Azevedo (*Lira dos Vinte Anos*) — lágrima bajo la máscara de la sonrisa; en el sitio, inspección de Artes con vínculo a Vida.',
+        'Poeta ultrarromántico brasileño (1831–1852), autor de *Lira dos Vinte Anos*; en el sitio, homenaje en Personas con vínculo al poema Lágrimas da Vida.',
       group: 'lexico',
       fromTitle: false,
-      href: '/posts/post-inspecao-arte-lagrimas-da-vida.html'
+      href
     };
     const gi = items.findIndex((x) => x.id === entry.id);
     if (gi >= 0) items[gi] = Object.assign({}, items[gi], entry);
     else {
-      const after = items.findIndex((x) => x.id === 'lei-11-343');
-      if (after >= 0) items.splice(after, 0, entry);
+      const after = items.findIndex((x) => x.id === 'lagrimas-da-vida');
+      if (after >= 0) items.splice(after + 1, 0, entry);
       else items.push(entry);
     }
     guia.items = items;
     guia.updatedAt = new Date().toISOString();
     fs.writeFileSync(GUIA_FILE, JSON.stringify(guia, null, 2) + '\n', 'utf8');
-    console.log('Guia de palavras actualizado (lagrimas-da-vida)');
+    console.log('Guia de palavras actualizado (alvares-de-azevedo)');
   }
 
   try {

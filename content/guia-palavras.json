@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T11:28:58.738Z",
+  "updatedAt": "2026-08-02T11:33:48.380Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1454,6 +1454,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-arte-lagrimas-da-vida.html"
+    },
+    {
+      "id": "alvares-de-azevedo",
+      "word": "Álvares de Azevedo",
+      "simple": "Poeta ultrarromântico brasileiro (1831–1852), autor da *Lira dos Vinte Anos*; no site, homenagem em Pessoas com elo ao poema Lágrimas da Vida.",
+      "simpleEn": "Brazilian ultra-romantic poet (1831–1852), author of *Lira dos Vinte Anos*; on the site, a People homage linked to Lágrimas da Vida.",
+      "simpleEs": "Poeta ultrarromántico brasileño (1831–1852), autor de *Lira dos Vinte Anos*; en el sitio, homenaje en Personas con vínculo al poema Lágrimas da Vida.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-alvares-de-azevedo.html"
     },
     {
       "id": "lei-11-343",
