@@ -1,5 +1,24 @@
 [
   {
+    "title": "Inspeção: A vingança nunca é plena — mata a alma e a envenena",
+    "titleEn": "Inspection: Revenge is never complete — it kills the soul and poisons it",
+    "titleEs": "Inspección: La venganza nunca es plena — mata el alma y la envenena",
+    "excerpt": "Expressões: «A vingança nunca é plena, mata a alma e a envenena» — ditado popular via Seu Madruga (*Chaves*); o rancor como veneno que o próprio sujeito ingere.",
+    "excerptEn": "Sayings: “A vingança nunca é plena…” — popular line via Seu Madruga (*El Chavo*); resentment as poison you drink yourself.",
+    "excerptEs": "Dichos: «A vingança nunca é plena…» — frase popular vía Don Ramón (*El Chavo*); el rencor como veneno que uno mismo bebe.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-expressao-vinganca-mata-alma-envenena",
+    "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+    "date": "2026-08-02T20:00:00.000Z",
+    "filename": "posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+    "coverImage": "/imagens/inspecoes/vinganca-alma-envenena-cover.jpg",
+    "category": "inspecao",
+    "series": "expressoes-ditados",
+    "seriesOrder": 1,
+    "seriesLabel": "Vingança · expressão"
+  },
+  {
     "title": "Inspeção: Caseína — leite bovino e proteína nociva ao organismo",
     "titleEn": "Inspection: Casein — cow’s milk and a protein harmful to the body",
     "titleEs": "Inspección: Caseína — leche bovina y proteína nociva para el organismo",
@@ -1805,6 +1824,25 @@
     "seriesLabel": "Goiaba · fruto"
   },
   {
+    "title": "Inspeção: Ramón Valdés — Seu Madruga e os devidos méritos",
+    "titleEn": "Inspection: Ramón Valdés — Seu Madruga and due credit",
+    "titleEs": "Inspección: Ramón Valdés — Don Ramón y los méritos debidos",
+    "excerpt": "Pessoas: homenagem a Ramón Valdés (1923–1988) — o actor que deu dignidade cómica ao Seu Madruga; ofício, ética sem sermão e legado infantil latino-americano.",
+    "excerptEn": "People: homage to Ramón Valdés (1923–1988) — the actor who gave comic dignity to Seu Madruga; craft, ethics without sermon and Latin American childhood legacy.",
+    "excerptEs": "Personas: homenaje a Ramón Valdés (1923–1988) — el actor que dio dignidad cómica a Don Ramón; oficio, ética sin sermón y legado infantil latinoamericano.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-figura-ramon-valdes",
+    "url": "/posts/post-inspecao-figura-ramon-valdes.html",
+    "date": "2026-08-02T21:00:00.000Z",
+    "filename": "posts/post-inspecao-figura-ramon-valdes.html",
+    "coverImage": "/imagens/inspecoes/ramon-valdes-cover.jpg",
+    "category": "inspecao",
+    "series": "pessoas-historia",
+    "seriesOrder": 10,
+    "seriesLabel": "Ramón Valdés · pessoa"
+  },
+  {
     "title": "Inspeção: Álvares de Azevedo — homenagem ao poeta da Lira e elo com Lágrimas da Vida",
     "titleEn": "Inspection: Álvares de Azevedo — homage to the Lira poet and link to Lágrimas da Vida",
     "titleEs": "Inspección: Álvares de Azevedo — homenaje al poeta de la Lira y vínculo con Lágrimas da Vida",
@@ -2069,6 +2107,25 @@
     "series": "plantas-frutos",
     "seriesOrder": 12,
     "seriesLabel": "Morango · fruto"
+  },
+  {
+    "title": "Inspeção: Cruzamento — Raiva, Emoção, Venom e Vida no mapa de Divertida Mente",
+    "titleEn": "Inspection: Cross-map — Anger, Emotion, Venom and Vida through Inside Out",
+    "titleEs": "Inspección: Cruce — Rabia, Emoción, Venom y Vida en el mapa de Divertida Mente",
+    "excerpt": "Artes · cruzamento: Raiva × Emoção × Venom × Vida lidos com Alegria, Tristeza, Raiva, Medo e Nojinho — ofício de cada sentimento vs veneno do rancor; rede com Divertida Mente e o «ficar» da Vida.",
+    "excerptEn": "Arts · cross-map: Anger × Emotion × Venom × Vida read through Joy, Sadness, Anger, Fear and Disgust — each feeling’s office vs resentment’s poison; links to Inside Out and Vida’s “stay”.",
+    "excerptEs": "Artes · cruce: Rabia × Emoción × Venom × Vida con Alegría, Tristeza, Rabia, Miedo y Nojinho — oficio de cada sentimiento vs veneno del rencor; red con Divertida Mente y el «quedarse» de Vida.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-cruzamento-raiva-venom-vida-divertida",
+    "url": "/posts/post-inspecao-cruzamento-raiva-venom-vida-divertida.html",
+    "date": "2026-08-02T21:30:00.000Z",
+    "filename": "posts/post-inspecao-cruzamento-raiva-venom-vida-divertida.html",
+    "coverImage": "/imagens/inspecoes/cruzamento-raiva-venom-vida-cover.jpg",
+    "category": "inspecao",
+    "series": "artes-cultura",
+    "seriesOrder": 13,
+    "seriesLabel": "Cruzamento · sala de comando"
   },
   {
     "title": "Inspeção: Alegria — a palavra amarela da Riley",
@@ -2392,6 +2449,25 @@
     "series": "plantas-medicinais",
     "seriesOrder": 19,
     "seriesLabel": "Jambu"
+  },
+  {
+    "title": "Inspeção: Chaves (El Chavo del Ocho) — a turma e o bem que ensina",
+    "titleEn": "Inspection: El Chavo del Ocho — the cast and what it teaches",
+    "titleEs": "Inspección: El Chavo del Ocho — la tropa y lo bueno que enseña",
+    "excerpt": "Artes: *Chaves* / *El Chavo del Ocho* — homenagem à turma inteira, méritos de cada pilar e recomendação mediada para crianças aprenderem partilha, desculpa e amizade.",
+    "excerptEn": "Arts: *El Chavo del Ocho* — homage to the whole cast, merits of each pillar and a mediated recommendation for children to learn sharing, apology and friendship.",
+    "excerptEs": "Artes: *El Chavo del Ocho* — homenaje a toda la tropa, méritos de cada pilar y recomendación mediada para que los niños aprendan a compartir, pedir perdón y amistad.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-serie-chaves-el-chavo",
+    "url": "/posts/post-inspecao-serie-chaves-el-chavo.html",
+    "date": "2026-08-02T21:30:00.000Z",
+    "filename": "posts/post-inspecao-serie-chaves-el-chavo.html",
+    "coverImage": "/imagens/inspecoes/chaves-el-chavo-cover.jpg",
+    "category": "inspecao",
+    "series": "artes-cultura",
+    "seriesOrder": 20,
+    "seriesLabel": "Chaves · Artes"
   },
   {
     "title": "Inspeção: Criatividade — a palavra de fazer nascer no laboratório",

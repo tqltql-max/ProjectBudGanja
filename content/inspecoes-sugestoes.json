@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T13:02:29.022Z",
+  "updatedAt": "2026-08-02T13:34:38.634Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2354,6 +2354,94 @@
         "/posts/post-inspecao-palavra-criatividade.html"
       ],
       "notes": "Gesto ≠ pose — acto com método e cuidado."
+    },
+    {
+      "id": "expressao-vinganca-alma-envenena",
+      "title": "A vingança nunca é plena — mata a alma e a envenena",
+      "titleEn": "Revenge is never complete — it kills the soul and poisons it",
+      "titleEs": "La venganza nunca es plena — mata el alma y la envenena",
+      "tipo": "expressao",
+      "priority": 1,
+      "status": "feita",
+      "why": "Expressões: ditado popular (Seu Madruga / Chaves) — vingança, alma e metáfora do veneno.",
+      "whyEn": "Sayings: popular line (Seu Madruga / El Chavo) — revenge, soul and poison metaphor.",
+      "whyEs": "Dichos: frase popular (Don Ramón / El Chavo) — venganza, alma y metáfora del veneno.",
+      "suggestedSlug": "inspecao-expressao-vinganca-mata-alma-envenena",
+      "doneHref": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/biblioteca/inspecoes/#inspecoes-expressoes",
+        "/posts/post-inspecao-palavra-raiva.html",
+        "/posts/post-inspecao-filme-venom.html",
+        "/vida/"
+      ],
+      "notes": "Abre a série Expressões e Ditados populares."
+    },
+    {
+      "id": "figura-ramon-valdes",
+      "title": "Ramón Valdés — Seu Madruga e os devidos méritos",
+      "titleEn": "Ramón Valdés — Seu Madruga and due credit",
+      "titleEs": "Ramón Valdés — Don Ramón y los méritos debidos",
+      "tipo": "pessoas",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pessoas: homenagem a Ramón Valdés / Seu Madruga — ofício, dignidade e legado infantil.",
+      "whyEn": "People: homage to Ramón Valdés / Seu Madruga — craft, dignity and childhood legacy.",
+      "whyEs": "Personas: homenaje a Ramón Valdés / Don Ramón — oficio, dignidad y legado infantil.",
+      "suggestedSlug": "inspecao-figura-ramon-valdes",
+      "doneHref": "/posts/post-inspecao-figura-ramon-valdes.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Ram%C3%B3n_Vald%C3%A9s",
+        "/posts/post-inspecao-serie-chaves-el-chavo.html",
+        "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+      ],
+      "notes": "Homenagem com méritos explícitos."
+    },
+    {
+      "id": "serie-chaves-el-chavo",
+      "title": "Chaves (El Chavo del Ocho) — a turma e o bem que ensina",
+      "titleEn": "El Chavo del Ocho — the cast and what it teaches",
+      "titleEs": "El Chavo del Ocho — la tropa y lo bueno que enseña",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes: programa + méritos da turma + recomendação mediada para crianças.",
+      "whyEn": "Arts: show + cast merits + mediated kids recommendation.",
+      "whyEs": "Artes: programa + méritos de la tropa + recomendación infantil mediada.",
+      "suggestedSlug": "inspecao-serie-chaves-el-chavo",
+      "doneHref": "/posts/post-inspecao-serie-chaves-el-chavo.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/El_Chavo_del_Ocho",
+        "/posts/post-inspecao-figura-ramon-valdes.html",
+        "/vida/"
+      ],
+      "notes": "Recomendação infantil com mediação parental."
+    },
+    {
+      "id": "cruzamento-raiva-venom-vida-divertida",
+      "title": "Cruzamento — Raiva, Emoção, Venom e Vida no mapa de Divertida Mente",
+      "titleEn": "Cross-map — Anger, Emotion, Venom and Vida through Inside Out",
+      "titleEs": "Cruce — Rabia, Emoción, Venom y Vida en el mapa de Divertida Mente",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes · cruzamento: Raiva × Emoção × Venom × Vida com os cinco sentimentos de Divertida Mente.",
+      "whyEn": "Arts · cross-map: Anger × Emotion × Venom × Vida with Inside Out’s five feelings.",
+      "whyEs": "Artes · cruce: Rabia × Emoción × Venom × Vida con los cinco sentimientos de Divertida Mente.",
+      "suggestedSlug": "inspecao-cruzamento-raiva-venom-vida-divertida",
+      "doneHref": "/posts/post-inspecao-cruzamento-raiva-venom-vida-divertida.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-filme-divertida-mente.html",
+        "/posts/post-inspecao-palavra-raiva.html",
+        "/posts/post-inspecao-palavra-emocao.html",
+        "/posts/post-inspecao-filme-venom.html",
+        "/vida/",
+        "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+      ],
+      "notes": "Mapa emocional: ofício vs veneno; rede Divertida Mente + Vida."
     }
   ]
 }
