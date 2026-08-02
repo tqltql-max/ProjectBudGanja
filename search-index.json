@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T11:36:34.854Z",
+  "updatedAt": "2026-08-02T12:09:18.212Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Criatividade — a palavra de fazer nascer no laboratório",
+      "url": "/posts/post-inspecao-palavra-criatividade.html",
+      "excerpt": "Palavras: «criatividade» (latim *creāre*) — inventar com método no BudGanja: cultivo, Vida, fichas, poemas e ferramentas.",
+      "text": "Inspeção: Criatividade — a palavra de fazer nascer no laboratório Palavras: «criatividade» (latim *creāre*) — inventar com método no BudGanja: cultivo, Vida, fichas, poemas e ferramentas. inspecao ## Escopo\n\nInspeção editorial e linguística da palavra **criatividade** — do latim *creāre* («fazer nascer, produzir») à capacidade de **inventar relações novas** entre cuidado, ciência e cultura. No Inspetor BudGanja, a criatividade não é enfeite: é o método que faz germinar fichas, solo, poemas e ferramentas.\n\n> **Nota metodológica:** auditoria independente. Étimo de trabalho: latim *creāre* → *creātīvus* / inglês *creativity* → português **criatividade** (e o verbo **criar**). Fontes de apoio: [Wikcionário · creativity](https://en.wiktionary.org/wiki/creativity), [Wikipédia · Criatividade](https://pt.wikipedia.org/wiki/Criatividade). **Ficha de palavra ≠ tratado de psicologia cognitiva** — aqui inspecionamos o **vocábulo** e a sua rede no laboratório (cultivo, [Vida](/vida/), inspeções, artes). Sem afiliação comercial.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **criatividade** |\n| Classe | Substantivo feminino |\n| Étimo (hipótese forte) | Latim *creāre* («criar, fazer nascer») → *creātio* / *creātīvus* → ing. *creativity* → PT *criatividade* |\n| Família | *criar* · *criação* · *criador/a* · *criativo/a* · *recriar* |\n| Cognatos | esp. *creatividad* · fr. *créativité* · ing. *creativity* · it. *creatività* |\n| Tipo BudGanja | Palavra — inventar método, cultivo e cultura sem abandonar o rigor |\n| Elo catálogo | [Plantas](/plantas/) · [cultivo](/guia/cultivo-basico.html) · [calculadoras](/calculadoras/) |\n| Elo Palavras | [caminho](/posts/post-inspecao-palavra-caminho.html) · [simbiose](/posts/post-inspecao-palavra-simbiose.html) · [emoção](/posts/post-inspecao-palavra-emocao.html) |\n| Elo Artes / Vida | [Águas e Lágrimas](/posts/post-inspecao-arte-aguas-e-lagrimas.html) · [Alice](/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html) "
     },
     {
       "title": "Inspeção: Águas do Mar e Lágrimas — poesia do laboratório entre oceano e peito",
@@ -2718,6 +2724,12 @@
       "url": "/posts/post-inspecao-palavra-simbiose.html",
       "excerpt": "Viver juntos (*syn* + *bíos*) — relação entre organismos; no senso comum vira «os dois ganham»; no site, elo de solo vivo, plantas e metáfora cultural (Venom).",
       "text": "Simbiose Viver juntos (*syn* + *bíos*) — relação entre organismos; no senso comum vira «os dois ganham»; no site, elo de solo vivo, plantas e metáfora cultural (Venom). lexico guia palavras glossário simbiose"
+    },
+    {
+      "title": "Criatividade",
+      "url": "/posts/post-inspecao-palavra-criatividade.html",
+      "excerpt": "Do latim *creāre* (fazer nascer) — inventar com método; no BudGanja, cultivar, nomear, compor e medir.",
+      "text": "Criatividade Do latim *creāre* (fazer nascer) — inventar com método; no BudGanja, cultivar, nomear, compor e medir. lexico guia palavras glossário criatividade"
     },
     {
       "title": "Sintético",
