@@ -5161,6 +5161,31 @@ html[data-theme="light"] .admin-studio-filters .select-dark {
     opacity: 0.5;
 }
 
+.post-card-ficha {
+    display: inline-flex;
+    margin: 0.55rem 1rem 0.9rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    background: rgba(61, 92, 40, 0.18);
+    color: #f0d78c;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.post-card-ficha:hover,
+.post-card-ficha:focus-visible {
+    border-color: rgba(212, 175, 55, 0.75);
+    color: #fef9d7;
+    outline: none;
+}
+
+.inspecoes-hub .post-card-ficha {
+    margin-left: 0;
+}
+
 .post-card-date {
     display: block;
     font-size: 0.8rem;
@@ -11165,6 +11190,33 @@ body[data-page="comunidade"] {
 
 .comunidade-card--plant {
     border-color: rgba(212, 175, 55, 0.32);
+}
+
+.comunidade-plant-links {
+    display: grid;
+    gap: 0.45rem;
+    margin: 0.15rem 0 0.55rem;
+    padding: 0.65rem 0.75rem;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.28);
+    background: rgba(61, 92, 40, 0.18);
+}
+
+.comunidade-plant-links-label {
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.35;
+    color: rgba(244, 237, 216, 0.86);
+}
+
+.comunidade-plant-links-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.comunidade-lab-links {
+    justify-content: center;
 }
 
 .comunidade-compose {

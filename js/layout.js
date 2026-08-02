@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '308';
+const ASSET_V = '309';
 
 let deferredInstallPrompt = null;
 let installFloatingBtn = null;

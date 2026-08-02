@@ -106,6 +106,7 @@ function buildHub(catalog) {
       const unifesp = p.relatedUnifesp
         ? '<span class="planta-card-badge">UNIFESP</span>'
         : '';
+      const inspecaoHref = '/posts/post-inspecao-planta-' + p.slug + '.html';
       return `                <article class="planta-card" data-tags="${escapeHtml(tagAttrs)}" data-search="${escapeHtml(searchBlob)}" data-nome-pt="${escapeHtml(loc['pt-BR'].nomePopular)}" data-nome-en="${escapeHtml(loc.en.nomePopular)}" data-nome-es="${escapeHtml(loc.es.nomePopular)}" data-summary-pt="${escapeHtml(loc['pt-BR'].summary)}" data-summary-en="${escapeHtml(loc.en.summary)}" data-summary-es="${escapeHtml(loc.es.summary)}">
                     <a class="planta-card-link" href="${escapeHtml(getPlantUrl(p))}">
                         <h2 class="planta-card-title" data-planta-nome>${escapeHtml(p.nomePopular)}</h2>
@@ -113,6 +114,7 @@ function buildHub(catalog) {
                         <p class="planta-card-summary" data-planta-summary>${escapeHtml(p.summary)}</p>
                         ${unifesp}
                     </a>
+                    <a class="planta-card-inspection" href="${escapeHtml(inspecaoHref)}" data-i18n="pages.plantas.cardInspection">Planta inspecionada</a>
                 </article>`;
     })
     .join('\n');
@@ -163,14 +165,29 @@ function buildPlantPage(plant, catalog) {
     .join(' ');
   const localeJson = JSON.stringify(plantLocalePayload(plant)).replace(/</g, '\\u003c');
 
+  const ownInspectionHref = '/posts/post-inspecao-planta-' + plant.slug + '.html';
+  const ownInspectionLabel = 'Inspeção: ' + (plant.nomePopular || plant.slug);
   const relatedInspections = Array.isArray(plant.relatedInspections)
     ? plant.relatedInspections.filter((r) => r && r.href && r.label)
     : [];
-  const relatedScienceBlock = relatedInspections.length
+  const hasOwnInspectionLink = relatedInspections.some(
+    (r) => String(r.href || '').indexOf('inspecao-planta-' + plant.slug) !== -1
+  );
+  const scienceLinks = hasOwnInspectionLink
+    ? relatedInspections
+    : [
+        {
+          href: ownInspectionHref,
+          label: ownInspectionLabel,
+          labelEn: 'Inspection: ' + (plant.nomePopular || plant.slug),
+          labelEs: 'Inspección: ' + (plant.nomePopular || plant.slug)
+        }
+      ].concat(relatedInspections);
+  const relatedScienceBlock = scienceLinks.length
     ? `            <div class="planta-related-science">
                 <h3 data-i18n="pages.plantas.relatedScience">Leituras inspecionadas no laboratório</h3>
                 <ul class="info-list">
-${relatedInspections
+${scienceLinks
   .map((r) => {
     const labelEn = escapeHtml(r.labelEn || r.label);
     const labelEs = escapeHtml(r.labelEs || r.label);
@@ -232,10 +249,11 @@ ${unifespBlock}
         <section class="info-panel">
             <h2 data-i18n="pages.plantas.continueLab">Continuar no laboratório</h2>
             <ul class="info-list">
+                <li><a href="${escapeHtml(ownInspectionHref)}" data-i18n="pages.plantas.openInspection">Abrir inspeção desta planta</a></li>
                 <li><a href="/cultivo/?plant=${escapeHtml(plant.slug)}" data-i18n="pages.plantas.startDiary">Iniciar pesquisa no diário</a><span data-i18n="pages.plantas.startDiaryHint"> — criar ou abrir o diário desta espécie</span></li>
                 <li><a href="/plantas/" data-i18n="pages.plantas.backCatalog">Voltar ao catálogo</a></li>
                 <li><a href="/biblioteca/unifesp/" data-i18n="pages.plantas.relatedCourse">Curso UNIFESP</a></li>
-                <li><a href="/biblioteca/inspecoes/" data-i18n="pages.plantas.relatedInspections">Inspeções</a></li>
+                <li><a href="/biblioteca/inspecoes/#inspecoes-plantas" data-i18n="pages.plantas.relatedInspections">Inspeções</a></li>
                 <li><a href="/calculadoras/" data-i18n="pages.plantas.relatedTools">Ferramentas de cultivo</a></li>
             </ul>
         </section>`;

@@ -474,6 +474,8 @@ window.__I18N_LOCALES__ = {
         "cautions": "Cautions",
         "relatedScience": "Inspected readings from the lab",
         "continueLab": "Continue in the lab",
+        "openInspection": "Open this plant’s inspection",
+        "cardInspection": "Inspected plant",
         "startDiary": "Start research in the diary",
         "startDiaryHint": " — create or open this species’ diary",
         "backCatalog": "Back to catalog",
@@ -583,6 +585,7 @@ window.__I18N_LOCALES__ = {
         "chipArts": "Arts",
         "chipVida": "Vida",
         "chipSuggestions": "Suggestions",
+        "openFicha": "Open plant sheet",
         "filtersLabel": "Filter by series",
         "filterAll": "All",
         "searchLabel": "Search",
@@ -710,6 +713,8 @@ window.__I18N_LOCALES__ = {
         "eyebrow": "Community",
         "title": "Feed Vivo",
         "subtitle": "Open feed for everyone — identify plants and share your diary. Plant content only.",
+        "ctaInspected": "Inspected plants",
+        "ctaCatalog": "Plant catalog",
         "docTitle": "Feed Vivo | Inspetor BudGanja"
       },
       "giveaways": {
@@ -1266,6 +1271,8 @@ window.__I18N_LOCALES__ = {
         "cautions": "Cuidados",
         "relatedScience": "Lecturas inspeccionadas en el laboratorio",
         "continueLab": "Continuar en el laboratorio",
+        "openInspection": "Abrir la inspección de esta planta",
+        "cardInspection": "Planta inspeccionada",
         "startDiary": "Iniciar investigación en el diario",
         "startDiaryHint": " — crear o abrir el diario de esta especie",
         "backCatalog": "Volver al catálogo",
@@ -1375,6 +1382,7 @@ window.__I18N_LOCALES__ = {
         "chipArts": "Artes",
         "chipVida": "Vida",
         "chipSuggestions": "Sugerencias",
+        "openFicha": "Abrir ficha",
         "filtersLabel": "Filtrar por serie",
         "filterAll": "Todas",
         "searchLabel": "Buscar",
@@ -1502,6 +1510,8 @@ window.__I18N_LOCALES__ = {
         "eyebrow": "Comunidad",
         "title": "Feed Vivo",
         "subtitle": "Feed abierto a todos — identifica plantas y comparte el diario. Solo contenido vegetal.",
+        "ctaInspected": "Plantas inspeccionadas",
+        "ctaCatalog": "Catálogo de plantas",
         "docTitle": "Feed Vivo | Inspetor BudGanja"
       },
       "giveaways": {
@@ -2058,6 +2068,8 @@ window.__I18N_LOCALES__ = {
         "cautions": "Cuidados",
         "relatedScience": "Leituras inspecionadas no laboratório",
         "continueLab": "Continuar no laboratório",
+        "openInspection": "Abrir inspeção desta planta",
+        "cardInspection": "Planta inspecionada",
         "startDiary": "Iniciar pesquisa no diário",
         "startDiaryHint": " — criar ou abrir o diário desta espécie",
         "backCatalog": "Voltar ao catálogo",
@@ -2167,6 +2179,7 @@ window.__I18N_LOCALES__ = {
         "chipArts": "Artes",
         "chipVida": "Vida",
         "chipSuggestions": "Sugestões",
+        "openFicha": "Abrir ficha",
         "filtersLabel": "Filtrar por série",
         "filterAll": "Todas",
         "searchLabel": "Buscar",
@@ -2294,6 +2307,8 @@ window.__I18N_LOCALES__ = {
         "eyebrow": "Comunidade",
         "title": "Feed Vivo",
         "subtitle": "Feed aberto a todos — identifica plantas e partilha o diário. Só conteúdo vegetal.",
+        "ctaInspected": "Plantas inspecionadas",
+        "ctaCatalog": "Catálogo de plantas",
         "docTitle": "Feed Vivo | Inspetor BudGanja"
       },
       "giveaways": {

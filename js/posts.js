@@ -310,6 +310,25 @@ function renderPostCards(container, posts, options) {
     link.appendChild(excerpt);
     link.appendChild(date);
     card.appendChild(link);
+
+    var tipo = resolveInspecaoTipo(p);
+    var fichaHref = '';
+    if ((tipo === 'planta' || tipo === 'fruto') && p.sourceUrl && String(p.sourceUrl).indexOf('/plantas/') === 0) {
+      fichaHref = String(p.sourceUrl);
+    } else if (tipo === 'planta' || tipo === 'fruto') {
+      var slugMatch = String(p.slug || '').match(/^inspecao-planta-(.+)$/i);
+      if (slugMatch) fichaHref = '/plantas/' + slugMatch[1] + '/';
+    }
+    if (fichaHref) {
+      var ficha = document.createElement('a');
+      ficha.className = 'post-card-ficha';
+      ficha.href = fichaHref;
+      ficha.textContent = (window.BudGanjaI18n && typeof window.BudGanjaI18n.t === 'function')
+        ? window.BudGanjaI18n.t('pages.inspections.openFicha', 'Abrir ficha')
+        : 'Abrir ficha';
+      card.appendChild(ficha);
+    }
+
     container.appendChild(card);
   });
 

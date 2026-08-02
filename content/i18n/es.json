@@ -472,6 +472,8 @@
       "cautions": "Cuidados",
       "relatedScience": "Lecturas inspeccionadas en el laboratorio",
       "continueLab": "Continuar en el laboratorio",
+      "openInspection": "Abrir la inspección de esta planta",
+      "cardInspection": "Planta inspeccionada",
       "startDiary": "Iniciar investigación en el diario",
       "startDiaryHint": " — crear o abrir el diario de esta especie",
       "backCatalog": "Volver al catálogo",
@@ -581,6 +583,7 @@
       "chipArts": "Artes",
       "chipVida": "Vida",
       "chipSuggestions": "Sugerencias",
+      "openFicha": "Abrir ficha",
       "filtersLabel": "Filtrar por serie",
       "filterAll": "Todas",
       "searchLabel": "Buscar",
@@ -708,6 +711,8 @@
       "eyebrow": "Comunidad",
       "title": "Feed Vivo",
       "subtitle": "Feed abierto a todos — identifica plantas y comparte el diario. Solo contenido vegetal.",
+      "ctaInspected": "Plantas inspeccionadas",
+      "ctaCatalog": "Catálogo de plantas",
       "docTitle": "Feed Vivo | Inspetor BudGanja"
     },
     "giveaways": {

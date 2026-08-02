@@ -130,6 +130,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function plantLabLinksHtml(post) {
+    const name = String(post.plantName || post.plantSlug || '').trim();
+    if (post.plantSlug && post.plantInspectionUrl && post.plantFichaUrl) {
+      return (
+        '<div class="comunidade-plant-links">' +
+        '<p class="comunidade-plant-links-label">Planta no laboratório' +
+        (name ? ': <strong>' + escapeHtml(name) + '</strong>' : '') +
+        '</p>' +
+        '<div class="comunidade-plant-links-actions">' +
+        '<a class="botao botao-sm" href="' + escapeHtml(post.plantInspectionUrl) + '">Planta inspecionada</a>' +
+        '<a class="botao botao-outline botao-sm" href="' + escapeHtml(post.plantFichaUrl) + '">Ficha</a>' +
+        '</div>' +
+        '</div>'
+      );
+    }
+    if (post.kind === 'plant_id') {
+      return (
+        '<div class="comunidade-plant-links">' +
+        '<p class="comunidade-plant-links-label">Compare com as plantas já inspecionadas</p>' +
+        '<div class="comunidade-plant-links-actions">' +
+        '<a class="botao botao-sm" href="/biblioteca/inspecoes/#inspecoes-plantas">Plantas inspecionadas</a>' +
+        '<a class="botao botao-outline botao-sm" href="/plantas/">Catálogo</a>' +
+        '</div>' +
+        '</div>'
+      );
+    }
+    return '';
+  }
+
   function renderPostCard(post) {
     const isPlantId = post.kind === 'plant_id';
     const plantBadge = isPlantId
@@ -170,6 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
       '</div>' +
       '<div class="comunidade-card-badges">' + plantBadge + staffMark + phase + help + '</div>' +
       (showCaption ? '<p class="comunidade-card-caption">' + escapeHtml(captionText) + '</p>' : '') +
+      plantLabLinksHtml(post) +
       '<button type="button" class="botao botao-outline botao-sm comunidade-comments-toggle" data-post-id="' + escapeHtml(post.id) + '" aria-expanded="' + (openByDefault ? 'true' : 'false') + '">' +
       commentToggleLabel(isPlantId, count, openByDefault) +
       '</button>' +
