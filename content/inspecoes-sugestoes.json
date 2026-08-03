@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:46:36.987Z",
+  "updatedAt": "2026-08-03T13:47:19.751Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3513,6 +3513,56 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 68 — fresta viva; sem sermão; tipografia epseramja → esperança."
+    },
+    {
+      "id": "palavra-fantasioso",
+      "title": "Fantasioso — fantasia, imaginação e ≠ fantástico",
+      "titleEn": "Fantasioso — fantasy, imagination and ≠ fantástico",
+      "titleEs": "Fantasioso — fantasía, imaginación y ≠ fantástico",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: fantasioso (fantasia + -oso) — imaginativo / crítica leve; tipografia fantatioso → fantasioso; ≠ fantástico (Cap. irmã).",
+      "whyEn": "Words: fantasioso (fantasia + -oso) — fanciful / mild critique; typo fantatioso → fantasioso; ≠ fantástico (sister Cap.).",
+      "whyEs": "Palabras: fantasioso (fantasia + -oso) — imaginativo / crítica leve; tipografía fantatioso → fantasioso; ≠ fantástico (Cap. hermana).",
+      "suggestedSlug": "inspecao-palavra-fantasioso",
+      "doneHref": "/posts/post-inspecao-palavra-fantasioso.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/fantasioso",
+        "https://pt.wiktionary.org/wiki/fantasia",
+        "https://en.wiktionary.org/wiki/fanciful",
+        "/posts/post-inspecao-palavra-criatividade.html",
+        "/posts/post-inspecao-palavra-fantastico.html",
+        "/posts/post-inspecao-palavra-verdade.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 69 — fantasioso ≠ fantástico (Cap. irmã); rede só com slugs existentes."
+    },
+    {
+      "id": "palavra-planta",
+      "title": "Planta — ser vivo, cultivo e Farmácia Viva",
+      "titleEn": "Planta — living being, cultivation and Farmácia Viva",
+      "titleEs": "Planta — ser vivo, cultivo y Farmácia Viva",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: planta (lat. planta / plantare) — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; sem listar espécies.",
+      "whyEn": "Words: planta (Lat. planta / plantare) — living vegetal being; plural plantas in hub; cultivation and Farmácia Viva; no species list.",
+      "whyEs": "Palabras: planta (lat. planta / plantare) — ser vivo vegetal; plural plantas en el hub; cultivo y Farmácia Viva; sin listar especies.",
+      "suggestedSlug": "inspecao-palavra-planta",
+      "doneHref": "/posts/post-inspecao-palavra-planta.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/planta",
+        "https://pt.wikipedia.org/wiki/Planta",
+        "/plantas/",
+        "/posts/post-inspecao-guia-farmacia-viva.html",
+        "/cultivo/",
+        "/posts/post-inspecao-palavra-animal.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 70 — planta como conceito; plural plantas no corpo; sem duplicar especies."
     }
   ]
 }

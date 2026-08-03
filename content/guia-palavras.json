@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:46:36.999Z",
+  "updatedAt": "2026-08-03T13:47:19.756Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -124,6 +124,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-fantastico.html"
+    },
+    {
+      "id": "fantasioso",
+      "word": "fantasioso",
+      "simple": "Fantasia + -oso — imaginativo / fanciful; elogio ou crítica leve («não seja fantasioso»); ≠ fantástico (Cap. irmã); Faça o melhor com rasto.",
+      "simpleEn": "Fantasia + -oso — fanciful / imaginative; praise or mild critique; ≠ fantástico (sister Cap.); Do your best with a trail.",
+      "simpleEs": "Fantasia + -oso — imaginativo; elogio o crítica leve; ≠ fantástico (Cap. hermana); Haz lo mejor con rastro.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-fantasioso.html"
     },
     {
       "id": "especial",
@@ -434,6 +444,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-animal.html"
+    },
+    {
+      "id": "planta",
+      "word": "planta",
+      "simple": "Lat. planta / plantare — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; ficha de palavra ≠ lista de espécies.",
+      "simpleEn": "Lat. planta / plantare — living vegetal being; plural plantas in the hub; cultivation and Farmácia Viva; word sheet ≠ species list.",
+      "simpleEs": "Lat. planta / plantare — ser vivo vegetal; plural plantas en el hub; cultivo y Farmácia Viva; ficha de palabra ≠ lista de especies.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-planta.html"
     },
     {
       "id": "anvisa",
@@ -2398,9 +2418,9 @@
     {
       "id": "plantas",
       "word": "Plantas",
-      "simple": "Seres vivos do reino vegetal — no site, catálogo fitoterápico brasileiro.",
-      "simpleEn": "Living beings of the plant kingdom — on the site, a Brazilian phytotherapy catalog.",
-      "simpleEs": "Seres vivos del reino vegetal — en el sitio, catálogo fitoterapéutico brasileño.",
+      "simple": "Seres vivos do reino vegetal — hub /plantas/; conceito lexical na ficha planta.",
+      "simpleEn": "Living beings of the plant kingdom — /plantas/ hub; lexical concept in the planta sheet.",
+      "simpleEs": "Seres vivos del reino vegetal — hub /plantas/; concepto léxico en la ficha planta.",
       "group": "titulo",
       "fromTitle": true,
       "href": "/plantas/"

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:46:54.980Z",
+  "updatedAt": "2026-08-03T13:47:24.272Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,18 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Planta — ser vivo, cultivo e Farmácia Viva",
+      "url": "/posts/post-inspecao-palavra-planta.html",
+      "excerpt": "Palavras: «planta» (lat. *planta* / *plantare*) — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; sem listar espécies.",
+      "text": "Inspeção: Planta — ser vivo, cultivo e Farmácia Viva Palavras: «planta» (lat. *planta* / *plantare*) — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; sem listar espécies. inspecao ## Escopo\n\nInspeção editorial da palavra **planta** — substantivo do português para o **ser vivo vegetal** (e, no plural **plantas**, o conjunto e o catálogo). Esta ficha cobre o **objeto**, os **sentidos** (vivo · cultivo · farmácia · metáfora), o elo com o hub [Plantas](/plantas/) e a [Farmácia Viva](/posts/post-inspecao-guia-farmacia-viva.html), sem duplicar fichas de espécie. Tom: **ofício cálido** — a planta como ser que cresce, não só «insumo». Elos: [animal](/posts/post-inspecao-palavra-animal.html), [simbiose](/posts/post-inspecao-palavra-simbiose.html), [cultivo](/cultivo/), [Vida](/vida/).\n\n> **Nota metodológica:** auditoria independente do Inspetor BudGanja. Fontes: [Wikcionário · planta](https://pt.wiktionary.org/wiki/planta), [Wikipédia · Planta](https://pt.wikipedia.org/wiki/Planta), [Wikcionário · planta (latim)](https://en.wiktionary.org/wiki/planta#Latin), série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). Étimo de trabalho: latim *planta* («sola do pé; rebento / muda; planta») ↔ *plantare* («plantar»). **Ficha de palavra ≠ monografia botânica nem lista de espécies.** As fichas `inspecao-planta-*` (ex.: [Cannabis sativa](/posts/post-inspecao-planta-cannabis-sativa.html)) tratam espécies; aqui inspecionamos o **vocábulo**. Sem afiliação comercial.\n\n## 1. Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **planta** (plural **plantas**) |\n| Classe | Substantivo feminino |\n| Étimo (trabalho) | Lat. *planta* («rebento; planta; sola») · *plantare* («plantar») — confiança: alta |\n| Família | *plantar* · *plantação* · *plantio* · *transplantar* · *implantação* (fig.) |\n| Cognatos | esp. *planta* · fr. *plante* · it. *pianta* · ing. *plant* · lat. *planta* |\n| Tipo BudGanja | Palavra — ser vivo vegetal × cultura de cultivo × farmácia "
+    },
+    {
+      "title": "Inspeção: Fantasioso — fantasia, imaginação e ≠ fantástico",
+      "url": "/posts/post-inspecao-palavra-fantasioso.html",
+      "excerpt": "Palavras: «fantasioso» (fantasia + -oso) — imaginativo / crítica leve «não seja fantasioso»; tipografia fantatioso → fantasioso; ≠ fantástico (Cap. irmã).",
+      "text": "Inspeção: Fantasioso — fantasia, imaginação e ≠ fantástico Palavras: «fantasioso» (fantasia + -oso) — imaginativo / crítica leve «não seja fantasioso»; tipografia fantatioso → fantasioso; ≠ fantástico (Cap. irmã). inspecao ## Escopo\n\nInspeção editorial da palavra **fantasioso** — adjetivo (também substantivado: «um fantasioso»). Étimo: *fantasia* + sufixo *-oso* («cheio de») → «cheio de fantasia». No português do Brasil nomeia a **pessoa ou ideia imaginativa / fanciful** — pode ser **elogio** («mente fantasiosa») ou **crítica leve** («não seja fantasioso»). Gatilho tipográfico: *fantatioso* → **fantasioso**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · fantasioso](https://pt.wiktionary.org/wiki/fantasioso), [fantasia](https://pt.wiktionary.org/wiki/fantasia), [fanciful (EN)](https://en.wiktionary.org/wiki/fanciful), série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). **Esta ficha ≠ ficha de [fantástico](/posts/post-inspecao-palavra-fantastico.html).** *Fantástico* = admirável / extraordinário / género — Cap. irmã, eixos distintos. *Maravilhoso* ainda sem Cap. — sem elo morto. Rede: [criatividade](/posts/post-inspecao-palavra-criatividade.html) · [fabuloso](/posts/post-inspecao-palavra-fabuloso.html) · [fantástico](/posts/post-inspecao-palavra-fantastico.html) · [genial](/posts/post-inspecao-palavra-genial.html) · [especial](/posts/post-inspecao-palavra-especial.html). Sem afiliação comercial.\n\n## 1. Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **fantasioso** |\n| Classe | Adjetivo (pessoa / ideia / plano); às vezes substantivo («o fantasioso») |\n| Étimo (trabalho) | Gr. *phantasía* → lat. *phantasia* → PT *fantasia* + *-oso* («cheio de») → *fantasioso* — confiança: alta |\n| Família | *fantasia* · *fantasiar* · *fantasia* (roupa / imaginação) · *fantasma* (mesmo tronco grego, sentido distinto) |\n| Cognatos | esp. *fantasioso* · fr. *fantaisiste* · ing. *fanciful* / *flighty* (sentido próximo, não cognato dir"
     },
     {
       "title": "Inspeção: Esperança — afecto vivo, espera com ofício e Faça o melhor!",
@@ -1826,6 +1838,12 @@
       "text": "fantástico Lat. phantasticus / fantasia — imaginação e elogio BR «fantástico!»; escala com legal, genial, maravilhoso; Faça o melhor depois do uau. lexico guia palavras glossário fantastico"
     },
     {
+      "title": "fantasioso",
+      "url": "/posts/post-inspecao-palavra-fantasioso.html",
+      "excerpt": "Fantasia + -oso — imaginativo / fanciful; elogio ou crítica leve («não seja fantasioso»); ≠ fantástico (Cap. irmã); Faça o melhor com rasto.",
+      "text": "fantasioso Fantasia + -oso — imaginativo / fanciful; elogio ou crítica leve («não seja fantasioso»); ≠ fantástico (Cap. irmã); Faça o melhor com rasto. lexico guia palavras glossário fantasioso"
+    },
+    {
       "title": "especial",
       "url": "/posts/post-inspecao-palavra-especial.html",
       "excerpt": "Lat. specialis (≠ Tupi) — particular / em especial; uso oral e ofício BR; porta para a rede das palavras originárias já fichadas; Faça o melhor!",
@@ -2010,6 +2028,12 @@
       "url": "/posts/post-inspecao-palavra-animal.html",
       "excerpt": "Ser vivo que não é planta — também palavra de carinho ou insulto, conforme o tom.",
       "text": "Animal Ser vivo que não é planta — também palavra de carinho ou insulto, conforme o tom. lexico guia palavras glossário animal"
+    },
+    {
+      "title": "planta",
+      "url": "/posts/post-inspecao-palavra-planta.html",
+      "excerpt": "Lat. planta / plantare — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; ficha de palavra ≠ lista de espécies.",
+      "text": "planta Lat. planta / plantare — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; ficha de palavra ≠ lista de espécies. lexico guia palavras glossário planta"
     },
     {
       "title": "ANVISA",
@@ -3190,8 +3214,8 @@
     {
       "title": "Plantas",
       "url": "/plantas/",
-      "excerpt": "Seres vivos do reino vegetal — no site, catálogo fitoterápico brasileiro.",
-      "text": "Plantas Seres vivos do reino vegetal — no site, catálogo fitoterápico brasileiro. titulo guia palavras glossário plantas"
+      "excerpt": "Seres vivos do reino vegetal — hub /plantas/; conceito lexical na ficha planta.",
+      "text": "Plantas Seres vivos do reino vegetal — hub /plantas/; conceito lexical na ficha planta. titulo guia palavras glossário plantas"
     },
     {
       "title": "Portaria",
