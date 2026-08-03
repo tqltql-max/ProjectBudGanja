@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T18:01:00.251Z",
+  "updatedAt": "2026-08-03T21:08:54.053Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1694,6 +1694,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-gesto.html"
+    },
+    {
+      "id": "meneia",
+      "word": "meneia",
+      "simple": "Forma viva de menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto/mãos; Faça o melhor!",
+      "simpleEn": "Living form of menear (*manear* ← hand) — body sway and craft; links gesto/mãos; Do your best!",
+      "simpleEs": "Forma viva de menear (*manear* ← mano) — balanceo del cuerpo y oficio; vínculos gesto/mãos; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-meneia.html"
     },
     {
       "id": "tempo",

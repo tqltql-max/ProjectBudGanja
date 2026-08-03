@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T18:00:33.386Z",
+  "updatedAt": "2026-08-03T21:08:54.050Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4686,6 +4686,29 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 108 — per- ≠ pro-; palavra ≠ relatório clínico."
+    },
+    {
+      "id": "palavra-meneia",
+      "title": "Meneia — balanço, corpo e a mão no étimo",
+      "titleEn": "Meneia — sway, body, and the hand in the etymon",
+      "titleEs": "Meneia — balanceo, cuerpo y la mano en el étimo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: «meneia» / menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto e mãos; Faça o melhor!",
+      "whyEn": "Words: “meneia” / menear (*manear* ← hand) — body sway and craft; links gesto and mãos; Do your best!",
+      "whyEs": "Palabras: «meneia» / menear (*manear* ← mano) — balanceo del cuerpo y oficio; vínculos gesto y mãos; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-meneia",
+      "doneHref": "/posts/post-inspecao-palavra-meneia.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/menear",
+        "https://www.aulete.com.br/menear",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Forma viva de menear; irmã rítmica de gesto."
     }
   ]
 }
