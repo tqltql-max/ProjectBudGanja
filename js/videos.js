@@ -51,6 +51,12 @@
     'canal-movrecam': 'movrecam',
     canabinall: 'canabinall',
     'canal-canabinall': 'canabinall',
+    disneyjr: 'disneyjr',
+    'canal-disneyjr': 'disneyjr',
+    'disney-jr': 'disneyjr',
+    disneyjrbr: 'disneyjr',
+    'disney-jr-brasil': 'disneyjr',
+    desenhos: 'disneyjr',
     lair: 'lair',
     'canal-lair': 'lair',
     'dr-lair': 'lair',
@@ -146,7 +152,7 @@
 
   var TOPIC_ORDER = ['cultivo', 'unifesp', 'saude', 'plantas', 'ciencia'];
 
-  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis'];
+  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'disneyjr'];
 
   var cachedHub = null;
   var selectedId = '';
@@ -655,6 +661,7 @@
     if (id === 'canabinall') return 'CANABinALL';
     if (id === 'lair') return 'Dr. Lair Ribeiro';
     if (id === 'davis') return 'William Davis, MD';
+    if (id === 'disneyjr') return 'Disney Jr. Brasil';
     return id;
   }
 
@@ -681,6 +688,7 @@
     if (id === 'saude') return i18n('pages.videos.topicSaude', 'Saúde e usos');
     if (id === 'plantas') return i18n('pages.videos.topicPlantas', 'Plantas');
     if (id === 'ciencia') return i18n('pages.videos.topicCiencia', 'Ciência');
+    if (id === 'desenhos') return i18n('pages.videos.topicDesenhos', 'Desenhos');
     var opts = (cachedHub && cachedHub.topicOptions) || [];
     for (var i = 0; i < opts.length; i++) {
       if (opts[i].id === id) return opts[i].label;

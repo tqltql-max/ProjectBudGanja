@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T23:02:24.818Z",
+  "updatedAt": "2026-08-03T23:07:42.625Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4733,6 +4733,28 @@
         "/posts/post-inspecao-amyr-klink.html"
       ],
       "notes": "Génese 2016; Moana 2 / live-action = ecos."
+    },
+    {
+      "id": "canal-disneyjr",
+      "title": "Disney Jr. Brasil — desenhos e o oceano",
+      "titleEn": "Disney Jr. Brasil — cartoons and the ocean",
+      "titleEs": "Disney Jr. Brasil — dibujos y el océano",
+      "tipo": "canal",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canais: @disneyjrbr — desenhos PT; âncora Aqui no mar; elo Moana.",
+      "whyEn": "Channels: @disneyjrbr — PT cartoons; anchor Aqui no mar; Moana link.",
+      "whyEs": "Canales: @disneyjrbr — dibujos PT; ancla Aqui no mar; vínculo Moana.",
+      "suggestedSlug": "inspecao-canal-disneyjr",
+      "doneHref": "/posts/post-inspecao-canal-disneyjr.html",
+      "seriesHint": "canal-disneyjr",
+      "sources": [
+        "https://www.youtube.com/@disneyjrbr",
+        "https://www.youtube.com/watch?v=0u1w_A8J6Hw",
+        "/posts/post-inspecao-filme-moana.html",
+        "/videos/?channel=disneyjr"
+      ],
+      "notes": "Hub /videos/?channel=disneyjr · tema Desenhos."
     }
   ]
 }
