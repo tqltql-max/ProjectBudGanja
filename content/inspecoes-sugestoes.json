@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T14:32:27.563Z",
+  "updatedAt": "2026-08-03T14:33:07.172Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2209,9 +2209,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: «simbiose» (*syn* + *bíōsis*) — biologia, solo vivo e metáfora (Venom / «nós»).",
-      "whyEn": "Words: “simbiose” (*syn* + *bíōsis*) — biology, living soil, and metaphor (Venom / “we”).",
-      "whyEs": "Palabras: «simbiose» (*syn* + *bíōsis*) — biología, suelo vivo y metáfora (Venom / «nosotros»).",
+      "why": "Palavras: «simbiose» (*syn* + *bíōsis*) — biologia, solo vivo, Venom/«nós» e ofício humano×assistente («você»).",
+      "whyEn": "Words: “simbiose” (*syn* + *bíōsis*) — biology, living soil, Venom/“we”, and human×assistant craft (“you”).",
+      "whyEs": "Palabras: «simbiose» (*syn* + *bíōsis*) — biología, suelo vivo, Venom/«nosotros» y oficio humano×asistente («tú»).",
       "suggestedSlug": "inspecao-palavra-simbiose",
       "doneHref": "/posts/post-inspecao-palavra-simbiose.html",
       "seriesHint": "palavras-origem",
@@ -2219,9 +2219,11 @@
         "/plantas/",
         "/guia/cultivo-basico.html",
         "/posts/post-inspecao-filme-venom.html",
-        "/posts/post-inspecao-palavra-animal.html"
+        "/posts/post-inspecao-palavra-animal.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-expressao-muito-obrigado.html"
       ],
-      "notes": "Palavra ≠ tratado de ecologia; metáfora cultural é camada, não definição."
+      "notes": "Palavra ≠ ecologia; metáfora cultural/ofício é camada — humano guarda verdade e gesto."
     },
     {
       "id": "arte-lagrimas-da-vida",

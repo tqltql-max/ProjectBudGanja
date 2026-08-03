@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T14:32:27.570Z",
+  "updatedAt": "2026-08-03T14:33:07.177Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2838,9 +2838,9 @@
     {
       "id": "simbiose",
       "word": "Simbiose",
-      "simple": "Viver juntos (*syn* + *bíos*) — relação entre organismos; no senso comum vira «os dois ganham»; no site, elo de solo vivo, plantas e metáfora cultural (Venom).",
-      "simpleEn": "Living together (*syn* + *bíos*) — relation between organisms; in common speech often “both win”; on the site, living soil, plants and cultural metaphor (Venom).",
-      "simpleEs": "Vivir juntos (*syn* + *bíos*) — relación entre organismos; en el habla común suele ser «los dos ganan»; en el sitio, suelo vivo, plantas y metáfora cultural (Venom).",
+      "simple": "Viver juntos (*syn* + *bíos*) — organismos, solo vivo, Venom/«nós» e ofício humano×assistente («você»); humano decide.",
+      "simpleEn": "Living together (*syn* + *bíos*) — organisms, living soil, Venom/“we”, and human×assistant craft (“you”); human decides.",
+      "simpleEs": "Vivir juntos (*syn* + *bíos*) — organismos, suelo vivo, Venom/«nosotros» y oficio humano×asistente («tú»); decide el humano.",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-simbiose.html"
