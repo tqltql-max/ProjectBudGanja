@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:57:21.552Z",
+  "updatedAt": "2026-08-03T14:00:05.676Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3938,6 +3938,29 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 79 — cover plural mensagens; elos gesto / lingua-portuguesa / sinal se existirem."
+    },
+    {
+      "id": "expressao-duasakdiqujdocedomadur",
+      "title": "duasakdiqujdocedomadur — Deus ajuda quem cedo madruga",
+      "titleEn": "duasakdiqujdocedomadur — God helps those who rise early",
+      "titleEs": "duasakdiqujdocedomadur — Dios ayuda a quien madruga",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: nome lab do ditado «Deus ajuda quem cedo madruga»; diligência com aurora; elos Faça o melhor!, caminho, jesusamando.",
+      "whyEn": "Sayings: lab name for “Deus ajuda quem cedo madruga”; dawn diligence; links Do your best!, caminho, jesusamando.",
+      "whyEs": "Dichos: nombre lab de «Deus ajuda quem cedo madruga»; diligencia del alba; vínculos ¡Haz lo mejor!, caminho, jesusamando.",
+      "suggestedSlug": "inspecao-expressao-duasakdiqujdocedomadur",
+      "doneHref": "/posts/post-inspecao-expressao-duasakdiqujdocedomadur.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-expressao-jesusamando.html",
+        "/posts/post-inspecao-expressao-meudeusdoceu.html",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html"
+      ],
+      "notes": "Cap. 6 Expressões — ditado Deus ajuda quem cedo madruga → duasakdiqujdocedomadur."
     }
   ]
 }

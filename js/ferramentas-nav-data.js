@@ -117,12 +117,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório sobre substratos biodegradáveis."
             },
             {
-              "label": "Pesquisa: Da molécula ao lixo — fármacos, industrialização e desigualdade",
-              "tileLabel": "Pesquisa: Da molécula ao lixo —…",
-              "href": "/posts/post-pesquisa-molecula-ao-lixo.html",
+              "label": "Pesquisa: Ofício sob roubo e proibição — mapa do mantra",
+              "tileLabel": "Pesquisa: Ofício sob roubo e pr…",
+              "href": "/posts/post-pesquisa-oficio-roubo-proibicao.html",
               "icon": "📋",
-              "slug": "post-pesquisa-molecula-ao-lixo",
-              "description": "Mapa preliminar: drogas e derivados industriais no ciclo extrair→descartar — resíduos, exagero, desperdício e dano a plantas, animais e pessoas."
+              "slug": "post-pesquisa-oficio-roubo-proibicao",
+              "description": "Mapa preliminar: ofício (gesto, inspeção) sob apropriação e silenciamento — resposta editorial «Faça o melhor!» sem rancor."
             },
             {
               "label": "Pesquisa: Insumos orgânicos vs industrializados — influência no fruto final",
@@ -133,12 +133,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Como insumos orgânicos vs industriais alteram o fruto — e como as substâncias químicas cortam elos entre espécies (solo, polinizadores, predadores), separando-nos da vida orgânica."
             },
             {
-              "label": "Pesquisa: Ofício sob roubo e proibição — mapa do mantra",
-              "tileLabel": "Pesquisa: Ofício sob roubo e pr…",
-              "href": "/posts/post-pesquisa-oficio-roubo-proibicao.html",
+              "label": "Pesquisa: Da molécula ao lixo — fármacos, industrialização e desigualdade",
+              "tileLabel": "Pesquisa: Da molécula ao lixo —…",
+              "href": "/posts/post-pesquisa-molecula-ao-lixo.html",
               "icon": "📋",
-              "slug": "post-pesquisa-oficio-roubo-proibicao",
-              "description": "Mapa preliminar: ofício (gesto, inspeção) sob apropriação e silenciamento — resposta editorial «Faça o melhor!» sem rancor."
+              "slug": "post-pesquisa-molecula-ao-lixo",
+              "description": "Mapa preliminar: drogas e derivados industriais no ciclo extrair→descartar — resíduos, exagero, desperdício e dano a plantas, animais e pessoas."
             },
             {
               "label": "Super Solo: Guia de Uso",
@@ -183,94 +183,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Canais, equipamentos, insumos e formação."
             },
             {
-              "label": "Inspeção: A vingança nunca é plena — mata a alma e a envenena",
-              "tileLabel": "Inspeção: A vingança nunca é pl…",
-              "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-expressao-vinganca-mata-alma-envenena",
-              "description": "Expressões: «A vingança nunca é plena, mata a alma e a envenena» — ditado popular via Seu Madruga (*Chaves*); o rancor como veneno que o próprio sujeito ingere."
-            },
-            {
-              "label": "Inspeção: Caseína — leite bovino e proteína nociva ao organismo",
-              "tileLabel": "Inspeção: Caseína — leite bovin…",
-              "href": "/posts/post-inspecao-derivado-caseina.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-caseina",
-              "description": "Produtos nocivos: caseína do leite (*Bos taurus*) — A1/BCM-7, inflamação (limites de evidência) e laticínios ultraprocessados versus leite tradicional. Elo com glúten e ficha da vaca."
-            },
-            {
-              "label": "Inspeção: Produção animal — Galinha",
-              "tileLabel": "Inspeção: Produção animal — Gal…",
-              "href": "/posts/post-inspecao-animal-galinha.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-galinha",
-              "description": "Relatório educacional de Galinha (*Gallus gallus domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Animal — Cão",
-              "tileLabel": "Inspeção: Animal — Cão",
-              "href": "/posts/post-inspecao-animal-cao.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-cao",
-              "description": "Relatório educacional de Cão (*Canis lupus familiaris): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Send Me On My Way — a canção Rusted Root e o caminho",
-              "tileLabel": "Inspeção: Send Me On My Way — a…",
-              "href": "/posts/post-inspecao-arte-send-me-on-my-way.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-arte-send-me-on-my-way",
-              "description": "Ficha fundadora Artes: Send Me On My Way começa na génese Rusted Root (1992 *Cruel Sun*, 1994 *When I Woke*, Hot 100 #72) — caminho e optimismo; BudGanja Radio como eco secundário de abertura da casa."
-            },
-            {
-              "label": "Inspeção: Dr. Lair Ribeiro — cannabinoides, açúcar e cruzamento com a cana",
-              "tileLabel": "Inspeção: Dr. Lair Ribeiro — ca…",
-              "href": "/posts/post-inspecao-divulgacao-lair-ribeiro.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-divulgacao-lair-ribeiro",
-              "description": "Divulgação: IDs do canal, textos canábicos, limites públicos, varredura açúcar/frutose e catálogo temático completo dos ~887 vídeos do canal — elo com a ficha Derivados da cana-de-açúcar."
-            },
-            {
-              "label": "Inspeção: Heródoto — método da pesquisa e a palavra passar",
-              "tileLabel": "Inspeção: Heródoto — método da …",
-              "href": "/posts/post-inspecao-figura-herodoto.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-herodoto",
-              "description": "Ficha fundadora da série Pessoas: Heródoto de Halicarnasso, *historie* como investigação do que se passou — elo metodológico com a palavra «passar» na série Palavras."
-            },
-            {
-              "label": "Inspeção: Maconha — origem da palavra e transformação no Brasil",
-              "tileLabel": "Inspeção: Maconha — origem da p…",
-              "href": "/posts/post-inspecao-palavra-maconha.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-maconha",
-              "description": "Ficha fundadora da série Palavras: etimologia afro-atlântica de «maconha», viagem histórica, mudança de sentido e elo com *Cannabis sativa* no catálogo medicinal."
-            },
-            {
-              "label": "Inspeção: Cana-de-açúcar — origem da planta, açúcar refinado e cruzamento Lair",
-              "tileLabel": "Inspeção: Cana-de-açúcar — orig…",
-              "href": "/posts/post-inspecao-derivado-cana-de-acucar.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-cana-de-acucar",
-              "description": "Derivados de risco: origem da cana, OMS (açúcares livres) e cruzamento com a divulgação do Dr. Lair Ribeiro — portal (sacarose da cana) + varredura de 887 vídeos do canal (açúcar, frutose, diabesidade)."
-            },
-            {
-              "label": "Vida — O Laboratório e a Sementinha",
-              "tileLabel": "Vida — O Laboratório e a Sement…",
-              "href": "/posts/post-inspecao-conto-vida-laboratorio.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-conto-vida-laboratorio",
-              "description": "Conto do laboratório: o Inspetor, a Dona Maria, a Joaninha Joana e os Three Little Birds ensinam a cuidar de uma semente com ciência, natureza e amizade."
-            },
-            {
-              "label": "Inspeção: Padre Ticão — Antônio Luiz Marchioni",
-              "tileLabel": "Inspeção: Padre Ticão — Antônio…",
-              "href": "/posts/post-inspecao-padre-ticao.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-padre-ticao",
-              "description": "Homenagem documental ao Padre Ticão (Antônio Luiz Marchioni, 1952–2021): pároco de Ermelino Matarazzo, líder popular da zona leste e fundador do MovReCam — mérito máximo na democratização da educação sobre cannabis medicinal no Brasil."
-            },
-            {
               "label": "Inspeção: Planta — Babosa — gel foliar e polissacarídeos",
               "tileLabel": "Inspeção: Planta — Babosa — gel…",
               "href": "/posts/post-inspecao-planta-babosa.html",
@@ -285,126 +197,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-abacate",
               "description": "*Persea americana* — polpa rica em MUFA, persina defensiva e etimologia náuatle *āhuacatl*; separar planta inteira de derivados industriais."
-            },
-            {
-              "label": "Inspeção: Artigo — Cannabis na adolescência e neurodesenvolvimento (JAMA Psychiatry)",
-              "tileLabel": "Inspeção: Artigo — Cannabis na …",
-              "href": "/posts/post-inspecao-artigo-albaugh-cannabis-neurodesenvolvimento.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-artigo-albaugh-cannabis-neurodesenvolvimento",
-              "description": "Auditoria editorial do estudo longitudinal IMAGEN (Albaugh et al., 2021): 799 adolescentes naïve, 1598 RM, afinamento cortical pré-frontal dose-dependente e sobreposição com densidade de receptores CB1."
-            },
-            {
-              "label": "Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal",
-              "tileLabel": "Inspeção: Curso UNIFESP — Canna…",
-              "href": "/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-curso-unifesp-cannabis-medicinal",
-              "description": "Auditoria do XIV Curso de extensão da UNIFESP em parceria com o MovReCam — 10 mil vagas gratuitas, 57 h EaD via YouTube, certificado com 75% de presença e grade clínica, legislativa e de cultivo."
-            },
-            {
-              "label": "Inspeção: Sistema de Ventilação da Tenda",
-              "tileLabel": "Inspeção: Sistema de Ventilação…",
-              "href": "/posts/post-inspecao-ventilacao-tenda.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-ventilacao-tenda",
-              "description": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório."
-            },
-            {
-              "label": "Inspeção: Faça o melhor! — mantra do laboratório",
-              "tileLabel": "Inspeção: Faça o melhor! — mant…",
-              "href": "/posts/post-inspecao-expressao-faca-o-melhor.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-expressao-faca-o-melhor",
-              "description": "Expressões: «Faça o melhor!» — mantra Vida; ofício diário e resposta ao roubo e à proibição que tentam calar o projecto de inspeção."
-            },
-            {
-              "label": "Inspeção: Artigo — O trigo engorda e adoece? (Brouns et al., 2013)",
-              "tileLabel": "Inspeção: Artigo — O trigo engo…",
-              "href": "/posts/post-inspecao-artigo-brouns-trigo-obesidade-2013.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-artigo-brouns-trigo-obesidade-2013",
-              "description": "Auditoria do artigo de Brouns, van Buul & Shewry (Journal of Cereal Science, 2013) que examina as teses populares anti-trigo (incl. Barriga de Trigo / Davis) e conclui que o trigo integral não explica a obesidade na população geral."
-            },
-            {
-              "label": "Inspeção: Derivados da galinha — ultraprocessados e química industrial",
-              "tileLabel": "Inspeção: Derivados da galinha …",
-              "href": "/posts/post-inspecao-derivado-galinha.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-galinha",
-              "description": "Derivados de risco: separar galinha/ovo/carne frescos de nuggets e ultraprocessados industriais de frango."
-            },
-            {
-              "label": "Inspeção: Produção animal — Vaca / boi",
-              "tileLabel": "Inspeção: Produção animal — Vac…",
-              "href": "/posts/post-inspecao-animal-vaca.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-vaca",
-              "description": "Relatório educacional de Vaca / boi (*Bos taurus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Animal — Gato",
-              "tileLabel": "Inspeção: Animal — Gato",
-              "href": "/posts/post-inspecao-animal-gato.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-gato",
-              "description": "Relatório educacional de Gato (*Felis catus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Derivados do abacate — açúcar, aditivos e química industrial",
-              "tileLabel": "Inspeção: Derivados do abacate …",
-              "href": "/posts/post-inspecao-derivado-abacate.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-abacate",
-              "description": "Derivados de risco: do fruto (*Persea americana*) ao ultraprocessado — óleo, guacamole de prateleira e sobremesas; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
-            },
-            {
-              "label": "Inspeção: Só os Loucos Sabem — a canção CBJr e o recomeço",
-              "tileLabel": "Inspeção: Só os Loucos Sabem — …",
-              "href": "/posts/post-inspecao-arte-so-os-loucos-sabem.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-arte-so-os-loucos-sabem",
-              "description": "Artes: Só os Loucos Sabem começa no álbum de estúdio Camisa 10 Joga Bola Até na Chuva (2009, Chorão/Thiago Castanho) — recomeço e paz; ao vivo Chegou Quem Faltava e BudGanja Radio como ecos secundários."
-            },
-            {
-              "label": "Inspeção: Gregorio Duvivier — o método da palavra e a série Palavras",
-              "tileLabel": "Inspeção: Gregorio Duvivier — o…",
-              "href": "/posts/post-inspecao-figura-duvivier.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-duvivier",
-              "description": "Pessoas × Palavras: Gregorio Duvivier (Letras, poesia, Greg News, O Céu da Língua) — o ofício da linguagem cruzado com a ficha maconha e o hub de vocábulos."
-            },
-            {
-              "label": "Inspeção: Passar — verbo da passagem, do acontecido e da travessia",
-              "tileLabel": "Inspeção: Passar — verbo da pas…",
-              "href": "/posts/post-inspecao-palavra-passar.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-passar",
-              "description": "Palavras × Pessoas: «passar» (latim *passāre*) — atravessar, o que se passou, o tempo — elo metodológico com Heródoto e o ofício de *historie*."
-            },
-            {
-              "label": "Vida — O Inspetor, detetive botânico",
-              "tileLabel": "Vida — O Inspetor, detetive bot…",
-              "href": "/posts/post-inspecao-personagem-inspetor.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-personagem-inspetor",
-              "description": "Detetive botânico de chapéu engraçado e braço de bronze: mede luz e clima para a planta crescer feliz."
-            },
-            {
-              "label": "Inspeção: CEBRID — centro e medicina canabinoide",
-              "tileLabel": "Inspeção: CEBRID — centro e med…",
-              "href": "/posts/post-inspecao-cebrid.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-cebrid",
-              "description": "Ficha institucional do CEBRID (UNIFESP): legado Carlini, continuidade Nappo e curso Medicina Canabinoide — complementar ao SIEX/MovReCam, sem confundir os dois formatos."
-            },
-            {
-              "label": "Inspeção: Prof. Elisaldo Carlini — pioneiro da cannabis medicinal",
-              "tileLabel": "Inspeção: Prof. Elisaldo Carlin…",
-              "href": "/posts/post-inspecao-elisaldo-carlini.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-elisaldo-carlini",
-              "description": "Homenagem documental ao Prof. Emérito Elisaldo Luiz de Araújo Carlini (1930–2020): médico e psicofarmacologista da UNIFESP, fundador do CEBRID — mérito máximo na ciência e na democratização do conhecimento sobre cannabis medicinal no Brasil."
             },
             {
               "label": "Inspeção: Fruto — Coco — água, polpa e óleo da drupa tropical",
@@ -423,110 +215,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Capítulos florais ricos em flavonoides e óleo essencial — chá calmante clássico com perfil químico documentado."
             },
             {
-              "label": "Inspeção: Equipamentos Mars Hydro Brasil",
-              "tileLabel": "Inspeção: Equipamentos Mars Hyd…",
-              "href": "/posts/post-inspecao-marshydro-brasil.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-marshydro-brasil",
-              "description": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório."
-            },
-            {
-              "label": "Inspeção: Artigo — As duas faces do trigo (Wieser, Koehler & Scherf, 2020)",
-              "tileLabel": "Inspeção: Artigo — As duas face…",
-              "href": "/posts/post-inspecao-artigo-wieser-duas-faces-trigo-2020.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-artigo-wieser-duas-faces-trigo-2020",
-              "description": "Auditoria da revisão Frontiers in Nutrition (2020): trigo como alimento básico nutritivo vs. doenças relacionadas com o trigo (WRDs) e a confusão gerada por livros como Barriga de Trigo."
-            },
-            {
-              "label": "Inspeção: Derivados do coco — açúcar, óleo e química industrial",
-              "tileLabel": "Inspeção: Derivados do coco — a…",
-              "href": "/posts/post-inspecao-derivado-coco.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-coco",
-              "description": "Derivados de risco: do fruto (*Cocos nucifera*) ao ultraprocessado — água adoçada, leite UHT, óleo refinado e doces; mapa de açúcares livres + lípidos + aditivos, cruzado com a ficha planta e com a cana."
-            },
-            {
-              "label": "Inspeção: Celular — os riscos para a saúde das crianças (sociedade e mundo)",
-              "tileLabel": "Inspeção: Celular — os riscos p…",
-              "href": "/posts/post-inspecao-celular-riscos-saude-criancas.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-celular-riscos-saude-criancas",
-              "description": "Verificação do smartphone como equipamento social: riscos à saúde infantil (sono, visão, mente, aprendizagem), limites SBP/guia federal 2025, Lei 15.100/2025 e enquadramento mundial (UNESCO)."
-            },
-            {
-              "label": "Inspeção: Derivados da vaca — carnes processadas e laticínios industriais",
-              "tileLabel": "Inspeção: Derivados da vaca — c…",
-              "href": "/posts/post-inspecao-derivado-vaca.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-vaca",
-              "description": "Produtos nocivos / derivados: bovino fresco versus carnes processadas e laticínios industriais. Elo com a ficha da caseína."
-            },
-            {
-              "label": "Inspeção: Caminho — a palavra que liga o laboratório BudGanja",
-              "tileLabel": "Inspeção: Caminho — a palavra q…",
-              "href": "/posts/post-inspecao-palavra-caminho.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-caminho",
-              "description": "Palavras: «caminho» (latim vulgar *cammīnus*) — via, método e hub lexical que relaciona passar, Send Me On My Way, Heródoto, Artes, cultivo e o mapa de inspeções."
-            },
-            {
-              "label": "Inspeção: Produção animal — Porco",
-              "tileLabel": "Inspeção: Produção animal — Por…",
-              "href": "/posts/post-inspecao-animal-porco.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-porco",
-              "description": "Relatório educacional de Porco (*Sus scrofa domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Animal — Cavalo",
-              "tileLabel": "Inspeção: Animal — Cavalo",
-              "href": "/posts/post-inspecao-animal-cavalo.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-cavalo",
-              "description": "Relatório educacional de Cavalo (*Equus ferus caballus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: ESAPP — Agronomia em Paraguaçu Paulista",
-              "tileLabel": "Inspeção: ESAPP — Agronomia em …",
-              "href": "/posts/post-inspecao-esapp-agronomia-paraguacu-paulista.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-esapp-agronomia-paraguacu-paulista",
-              "description": "Ficha institucional da ESAPP (Paraguaçu Paulista/SP): curso de Agronomia, Fazenda Modelo e tradição desde 1974 — onde o Inspetor BudGanja pretende cursar graduação, complementar ao XIV Curso UNIFESP."
-            },
-            {
-              "label": "Inspeção: The Matrix — a obra Wachowski e a pergunta do real",
-              "tileLabel": "Inspeção: The Matrix — a obra W…",
-              "href": "/posts/post-inspecao-filme-the-matrix.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-filme-the-matrix",
-              "description": "Artes · cinema: The Matrix (1999, Wachowski) — génese do filme, influências (Baudrillard, cyberpunk, anime) e pergunta «o que é real?»; Keanu Reeves como elo secundário em Pessoas."
-            },
-            {
-              "label": "Inspeção: Chorão — letra urbana, Charlie Brown Jr. e a série Palavras",
-              "tileLabel": "Inspeção: Chorão — letra urbana…",
-              "href": "/posts/post-inspecao-figura-chorao.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-chorao",
-              "description": "Pessoas × Palavras: Chorão (Alexandre Magno Abrão), letrista do Charlie Brown Jr. — poesia urbana, gíria e refrão cruzados com a ficha maconha e o hub de vocábulos."
-            },
-            {
-              "label": "Vida — Dona Maria, mestra do solo",
-              "tileLabel": "Vida — Dona Maria, mestra do so…",
-              "href": "/posts/post-inspecao-personagem-dona-maria.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-personagem-dona-maria",
-              "description": "Mãe do Inspetor e guardiã do Super Solo: o coração orgânico do laboratório — terra viva e carinho."
-            },
-            {
-              "label": "Inspeção: Dr. Sidarta Ribeiro — Revolução Canabinóide",
-              "tileLabel": "Inspeção: Dr. Sidarta Ribeiro —…",
-              "href": "/posts/post-inspecao-sidarta-ribeiro.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-sidarta-ribeiro",
-              "description": "Ficha de legado vivo: Sidarta Ribeiro (UFRN/ICe) — neurocientista e divulgador; aulas «Revolução Canabinóide» no acervo MovReCam e ponte entre evidência endocanabinoide e o curso UNIFESP."
-            },
-            {
               "label": "Inspeção: Planta — Capim-limão — citral e gramínea aromática",
               "tileLabel": "Inspeção: Planta — Capim-limão …",
               "href": "/posts/post-inspecao-planta-capim-limao.html",
@@ -535,92 +223,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Folhas de *Cymbopogon citratus* — citral dominante, chás digestivos e culinária tailandesa/brasileira."
             },
             {
-              "label": "Inspeção: Fruto — Laranja",
-              "tileLabel": "Inspeção: Fruto — Laranja",
+              "label": "Inspeção: Fruto — Laranja — fruto inteiro vs suco industrial",
+              "tileLabel": "Inspeção: Fruto — Laranja — fru…",
               "href": "/posts/post-inspecao-planta-laranja.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-laranja",
-              "description": "Relatório educacional de Laranja (*Citrus × sinensis (L.) Osbeck): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
-            },
-            {
-              "label": "Inspeção: Canal CANABinALL — Profa. Dra. Eliana Rodrigues",
-              "tileLabel": "Inspeção: Canal CANABinALL — Pr…",
-              "href": "/posts/post-inspecao-canal-canabinall.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-canal-canabinall",
-              "description": "Auditoria do canal CANABinALL (@canabinall) — 139 vídeos catalogados; divulgação científica UNIFESP sob curadoria da Profa. Dra. Eliana Rodrigues (CEE), com destaque a Conceitos básicos #1 e à série Plantas Sagradas."
-            },
-            {
-              "label": "Inspeção: Artigo — Dietas ultraprocessadas, calorias e peso (Hall et al., 2019)",
-              "tileLabel": "Inspeção: Artigo — Dietas ultra…",
-              "href": "/posts/post-inspecao-artigo-hall-ultraprocessados-2019.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-artigo-hall-ultraprocessados-2019",
-              "description": "Auditoria do RCT inpatient NIH (Hall et al., Cell Metabolism 2019): dieta ultraprocessada aumentou ~508 kcal/dia e +0,9 kg em 2 semanas vs. dieta não processada emparelhada — eixo central do chocolate industrial."
-            },
-            {
-              "label": "Inspeção: Glúten / farinha — trigo e proteína nociva ao organismo",
-              "tileLabel": "Inspeção: Glúten / farinha — tr…",
-              "href": "/posts/post-inspecao-derivado-gluten.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-gluten",
-              "description": "Produtos nocivos: glúten e farinha de trigo — celíaca, sensibilidade e ultraprocessados versus cereal tradicional. Elo com caseína, açúcar e chocolate industrial."
-            },
-            {
-              "label": "Inspeção: Ganja — da rota índica à marca e à gíria global",
-              "tileLabel": "Inspeção: Ganja — da rota índic…",
-              "href": "/posts/post-inspecao-palavra-ganja.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-ganja",
-              "description": "Palavras: «ganja» — originalidade cultural índica/caribenha coberta por gíria e marketing (incl. BudGanja); mudança sem apagar a rota."
-            },
-            {
-              "label": "Inspeção: Derivados do porco — embutidos e química industrial",
-              "tileLabel": "Inspeção: Derivados do porco — …",
-              "href": "/posts/post-inspecao-derivado-porco.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-porco",
-              "description": "Derivados de risco: carne de porco fresca e charcutaria artesanal versus embutidos industriais."
-            },
-            {
-              "label": "Inspeção: Produção animal — Tilápia",
-              "tileLabel": "Inspeção: Produção animal — Til…",
-              "href": "/posts/post-inspecao-animal-peixe-tilapia.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-peixe-tilapia",
-              "description": "Relatório educacional de Tilápia (*Oreochromis niloticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Alice no País das Maravilhas — o livro de Carroll e o buraco do coelho",
-              "tileLabel": "Inspeção: Alice no País das Mar…",
-              "href": "/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-filme-alice-no-pais-das-maravilhas",
-              "description": "Artes: Alice no País das Maravilhas começa no livro de Lewis Carroll (1865) — génese no Tâmisa, nonsense e curiosidade; Disney 1951 como adaptação. Metáforas literárias, sem romantizar substâncias."
-            },
-            {
-              "label": "Inspeção: Keanu Reeves — presença, treino e elo com The Matrix",
-              "tileLabel": "Inspeção: Keanu Reeves — presen…",
-              "href": "/posts/post-inspecao-figura-keanu-reeves.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-keanu-reeves",
-              "description": "Pessoas × Artes: Keanu Reeves — método actoral e presença física, com elo principal no filme The Matrix (1999); distinto do Legado canábico."
-            },
-            {
-              "label": "Vida — DJ Brisa, a voz da harmonia",
-              "tileLabel": "Vida — DJ Brisa, a voz da harmo…",
-              "href": "/posts/post-inspecao-personagem-dj-brisa.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-personagem-dj-brisa",
-              "description": "Arara DJ da Rádio BudGanja: torna o aprendizado leve, animado e cheio de boa vibração."
-            },
-            {
-              "label": "Inspeção: Profa. Solange Nappo — CEBRID",
-              "tileLabel": "Inspeção: Profa. Solange Nappo …",
-              "href": "/posts/post-inspecao-solange-nappo.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-solange-nappo",
-              "description": "Ficha de legado vivo: Solange Nappo (UNIFESP) — coordenadora do CEBRID após Carlini; saúde colectiva, prevenção (PREVINA) e formação em cannabis medicinal."
+              "description": "*Citrus × sinensis* — laranja doce: crédito ao fruto inteiro e sumo fresco; separar concentrados, néctares e refrigerantes «de laranja»."
             },
             {
               "label": "Inspeção: Planta — Carqueja — flavonoides e amargor nativo",
@@ -639,78 +247,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Açaí (*Euterpe oleracea Mart.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
-              "label": "Inspeção: Artigo — Efeitos GI da caseína A1 vs A2 (Brooke-Taylor et al., 2017)",
-              "tileLabel": "Inspeção: Artigo — Efeitos GI d…",
-              "href": "/posts/post-inspecao-artigo-brooke-taylor-caseina-a1-a2-2017.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-artigo-brooke-taylor-caseina-a1-a2-2017",
-              "description": "Auditoria da revisão sistemática Advances in Nutrition (2017): 39 estudos sobre β-caseína A1 vs A2, trânsito intestinal, BCM-7 e desconforto digestivo — elo científico da ficha Caseína e do chocolate ao leite."
-            },
-            {
-              "label": "Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite",
-              "tileLabel": "Inspeção: Chocolate industrial …",
-              "href": "/posts/post-inspecao-derivado-chocolate.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-chocolate",
-              "description": "Produtos nocivos: chocolate industrial como matriz que junta cacau, açúcar, farinha/trigo/glúten, leite/caseína, Barriga de Trigo (Davis) e o léxico catalogado — hub que relaciona tudo."
-            },
-            {
-              "label": "Inspeção: Diamba — cognato afro-brasileiro apagado pelo estigma",
-              "tileLabel": "Inspeção: Diamba — cognato afro…",
-              "href": "/posts/post-inspecao-palavra-diamba.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-diamba",
-              "description": "Palavras: «diamba» (e liamba/riamba) — originalidade bantu/afro-brasileira coberta pelo léxico pejorativo de maconha e pelo latinismo clínico."
-            },
-            {
-              "label": "Inspeção: Derivados do peixe — empanados e ultraprocessados",
-              "tileLabel": "Inspeção: Derivados do peixe — …",
-              "href": "/posts/post-inspecao-derivado-peixe.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-peixe",
-              "description": "Derivados de risco: filé fresco de tilápia versus empanados e ultraprocessados de peixe."
-            },
-            {
-              "label": "Inspeção: Produção animal — Abelha",
-              "tileLabel": "Inspeção: Produção animal — Abe…",
-              "href": "/posts/post-inspecao-animal-abelha.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-abelha",
-              "description": "Relatório educacional de Abelha (*Apis mellifera): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Jostein Gaarder — filosofia narrada e elo com O Dia do Curinga",
-              "tileLabel": "Inspeção: Jostein Gaarder — fil…",
-              "href": "/posts/post-inspecao-figura-jostein-gaarder.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-jostein-gaarder",
-              "description": "Pessoas × Artes: Jostein Gaarder — método de ensinar filosofia pela narrativa, com elo principal no livro O Dia do Curinga (1990); distinto do Legado canábico."
-            },
-            {
-              "label": "Inspeção: O Dia do Curinga — o livro de Gaarder e a pergunta do curinga",
-              "tileLabel": "Inspeção: O Dia do Curinga — o …",
-              "href": "/posts/post-inspecao-arte-o-dia-do-curinga.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-arte-o-dia-do-curinga",
-              "description": "Artes: O Dia do Curinga (*Kabalmysteriet*, 1990) — romance filosófico de Jostein Gaarder; curiosidade, viagem e metáfora da Bebida Púrpura. Autor em Pessoas."
-            },
-            {
-              "label": "Vida — Joaninha Joana, guardiã biológica",
-              "tileLabel": "Vida — Joaninha Joana, guardiã …",
-              "href": "/posts/post-inspecao-personagem-joaninha-joana.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-personagem-joaninha-joana",
-              "description": "Pet da Dona Maria e ícone do controle biológico: protege as folhas sem veneno químico."
-            },
-            {
-              "label": "Inspeção: Profa. Dra. Eliana Rodrigues",
-              "tileLabel": "Inspeção: Profa. Dra. Eliana Ro…",
-              "href": "/posts/post-inspecao-eliana-rodrigues.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-eliana-rodrigues",
-              "description": "Ficha de legado vivo: Eliana Rodrigues (UNIFESP) — CEE, coordenação RTC do curso SIEX/MovReCam e curadoria do CANABinALL; mérito máximo na extensão académica canábica."
-            },
-            {
               "label": "Inspeção: Planta — Cavalinha — sílica e remineralizante",
               "tileLabel": "Inspeção: Planta — Cavalinha — …",
               "href": "/posts/post-inspecao-planta-cavalinha.html",
@@ -725,70 +261,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-manga",
               "description": "Relatório educacional de Manga (*Mangifera indica L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
-            },
-            {
-              "label": "Inspeção: Diretriz OMS — Ingestão de açúcares livres (2015)",
-              "tileLabel": "Inspeção: Diretriz OMS — Ingest…",
-              "href": "/posts/post-inspecao-artigo-oms-acucares-livres-2015.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-artigo-oms-acucares-livres-2015",
-              "description": "Auditoria da diretriz WHO 2015 sobre açúcares livres (<10% da energia; condicional <5%): âncora global para cana, chocolate industrial e divulgação Lair — não é paper único, é norma de saúde pública."
-            },
-            {
-              "label": "Análise: danos dos produtos nocivos × vídeos catalogados",
-              "tileLabel": "Análise: danos dos produtos noc…",
-              "href": "/posts/post-inspecao-derivado-analise-danos-videos.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-analise-danos-videos",
-              "description": "Onde o acervo de vídeos do projecto sustenta (ou não) a rede açúcar · farinha · leite · chocolate: quase todo o discurso está no Lair; MovReCam/CANABinALL quase não entram neste eixo."
-            },
-            {
-              "label": "Inspeção: Cannabis — latinismo técnico e hierarquia de registos",
-              "tileLabel": "Inspeção: Cannabis — latinismo …",
-              "href": "/posts/post-inspecao-palavra-cannabis.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-cannabis",
-              "description": "Palavras: «cannabis» — originalidade botânica/grega-latina; segunda camada «palavra limpa» que pode apagar maconha/diamba ou ainda soar a «droga» na imprensa."
-            },
-            {
-              "label": "Inspeção: Derivados da abelha — mel adulterado e açúcares industriais",
-              "tileLabel": "Inspeção: Derivados da abelha —…",
-              "href": "/posts/post-inspecao-derivado-abelha.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-abelha",
-              "description": "Derivados de risco: mel de qualidade e própolis versus mel adulterado com xaropes industriais."
-            },
-            {
-              "label": "Inspeção: Anthony Henman — antropologia da diamba e elo com Diamba Sarabamba",
-              "tileLabel": "Inspeção: Anthony Henman — antr…",
-              "href": "/posts/post-inspecao-figura-anthony-henman.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-anthony-henman",
-              "description": "Pessoas × Artes: Anthony Henman — método etnobotânico e antiproibicionista, com elo principal na antologia Diamba Sarabamba (1986); distinto do Legado canábico."
-            },
-            {
-              "label": "Inspeção: Diamba Sarabamba — a coletânea pioneira de 1986 sobre a maconha no Brasil",
-              "tileLabel": "Inspeção: Diamba Sarabamba — a …",
-              "href": "/posts/post-inspecao-arte-diamba-sarabamba.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-arte-diamba-sarabamba",
-              "description": "Artes: Diamba Sarabamba (Ground, 1986) — coletânea de Henman e Pessoa Jr.; arquivo pioneiro do debate brasileiro sobre a diamba/maconha. Organizador em Pessoas."
-            },
-            {
-              "label": "Vida — Three Little Birds, o esquadrão da alegria",
-              "tileLabel": "Vida — Three Little Birds, o es…",
-              "href": "/posts/post-inspecao-personagem-three-little-birds.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-personagem-three-little-birds",
-              "description": "Trio de pássaros-IA: contas precisas, diário organizado e DJ Brisa na harmonia — do semente ao sênior."
-            },
-            {
-              "label": "Inspeção: Gabrielle Dainezi — coordenação do curso UNIFESP",
-              "tileLabel": "Inspeção: Gabrielle Dainezi — c…",
-              "href": "/posts/post-inspecao-gabrielle-dainezi.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-gabrielle-dainezi",
-              "description": "Ficha de legado vivo: Gabrielle Dainezi — coordenação do curso UNIFESP/MovReCam premiado (CannaPortugal 2025); continuidade do fio Ticão–Carlini na extensão."
             },
             {
               "label": "Inspeção: Planta — Erva-cidreira — citral e verbena brasileira",
@@ -807,36 +279,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Banana (*Musa spp.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
-              "label": "Inspeção: Marijuana — do nome popular à arma da proibição",
-              "tileLabel": "Inspeção: Marijuana — do nome p…",
-              "href": "/posts/post-inspecao-palavra-marijuana.html",
+              "label": "Inspeção: duasakdiqujdocedomadur — Deus ajuda quem cedo madruga",
+              "tileLabel": "Inspeção: duasakdiqujdocedomadu…",
+              "href": "/posts/post-inspecao-expressao-duasakdiqujdocedomadur.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-marijuana",
-              "description": "Palavras: «marijuana» / marihuana — originalidade mexicana/espanhola coberta pela propaganda proibicionista EUA (xenofobia e pânico moral)."
-            },
-            {
-              "label": "Inspeção: Nick Tosches — prosa afiada e elo com A Última Casa de Ópio",
-              "tileLabel": "Inspeção: Nick Tosches — prosa …",
-              "href": "/posts/post-inspecao-figura-nick-tosches.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-nick-tosches",
-              "description": "Pessoas × Artes: Nick Tosches — método jornalístico-literário, com elo principal no livro A Última Casa de Ópio (2002); distinto do Legado canábico."
-            },
-            {
-              "label": "Inspeção: A Última Casa de Ópio — a procura de Tosches e a crítica ao placebo",
-              "tileLabel": "Inspeção: A Última Casa de Ópio…",
-              "href": "/posts/post-inspecao-arte-a-ultima-casa-de-opio.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-arte-a-ultima-casa-de-opio",
-              "description": "Artes: A Última Casa de Ópio (*The Last Opium Den*, 2002) — livro-reportagem de Nick Tosches; viagem, memória das dens e crítica ao consumismo. Autor em Pessoas. Sem romantizar ópio."
-            },
-            {
-              "label": "Inspeção: Amyr Klink — navegador e legado de caminho",
-              "tileLabel": "Inspeção: Amyr Klink — navegado…",
-              "href": "/posts/post-inspecao-amyr-klink.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-amyr-klink",
-              "description": "Ficha de legado: Amyr Klink — pioneiro da travessia a remo do Atlântico Sul (1984); planeamento, risco e ofício que continua na filha Tamara."
+              "slug": "post-inspecao-expressao-duasakdiqujdocedomadur",
+              "description": "Expressões: duasakdiqujdocedomadur — nome lab de «Deus ajuda quem cedo madruga»; diligência com aurora; elos Faça o melhor!, caminho, jesusamando, meudeusdoceu"
             },
             {
               "label": "Inspeção: Planta — Espinheira-santa — friedelina e triterpenos",
@@ -855,38 +303,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Maçã (*Malus domestica Borkh.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
-              "label": "Inspeção: Erva — do sentido botânico amplo ao eufemismo",
-              "tileLabel": "Inspeção: Erva — do sentido bot…",
-              "href": "/posts/post-inspecao-palavra-erva.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-erva",
-              "description": "Palavras: «erva» — originalidade (planta herbácea, chá, tempero) coberta pelo eufemismo de cannabis; prejuízo à literacia do catálogo medicinal."
-            },
-            {
-              "label": "Inspeção: Annie Leonard — divulgação da economia dos materiais e elo com A História das Coisas",
-              "tileLabel": "Inspeção: Annie Leonard — divul…",
-              "href": "/posts/post-inspecao-figura-annie-leonard.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-annie-leonard",
-              "description": "Pessoas × Artes: Annie Leonard — método de explicar a economia linear das coisas, com elo principal no livro A História das Coisas (2010); distinto do Legado canábico."
-            },
-            {
-              "label": "Inspeção: A História das Coisas — o livro de Leonard e a máquina extrair-fazer-descartar",
-              "tileLabel": "Inspeção: A História das Coisas…",
-              "href": "/posts/post-inspecao-arte-a-historia-das-coisas.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-arte-a-historia-das-coisas",
-              "description": "Artes: A História das Coisas (*The Story of Stuff*, 2010/2011) — livro de Annie Leonard sobre a economia linear das coisas; vídeo 2007 como precursor. Autora em Pessoas."
-            },
-            {
-              "label": "Inspeção: Tamara Klink — legado vivo no Ártico",
-              "tileLabel": "Inspeção: Tamara Klink — legado…",
-              "href": "/posts/post-inspecao-tamara-klink.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-tamara-klink",
-              "description": "Ficha de legado vivo: Tamara Klink — filha de Amyr; Atlântico, invernagem ártica e Passagem Noroeste em solitário; crédito junto do pai no hub Legado."
-            },
-            {
               "label": "Inspeção: Planta — Guaco — cumarina e trepadeira respiratória",
               "tileLabel": "Inspeção: Planta — Guaco — cuma…",
               "href": "/posts/post-inspecao-planta-guaco.html",
@@ -903,38 +319,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Abacaxi (*Ananas comosus (L.) Merr.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
-              "label": "Inspeção: William Davis — cardiologista de Barriga de Trigo e o método anti-trigo",
-              "tileLabel": "Inspeção: William Davis — cardi…",
-              "href": "/posts/post-inspecao-figura-william-davis.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-william-davis",
-              "description": "Pessoas × Artes: William Davis — cardiologista preventivo e autor de Barriga de Trigo (*Wheat Belly*, 2011); método de divulgação sobre trigo/glúten. Livro em Artes; elo em Glúten / farinha."
-            },
-            {
-              "label": "Inspeção: Barriga de Trigo — o livro de William Davis e a tese do trigo moderno",
-              "tileLabel": "Inspeção: Barriga de Trigo — o …",
-              "href": "/posts/post-inspecao-arte-barriga-de-trigo.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-arte-barriga-de-trigo",
-              "description": "Artes: Barriga de Trigo (*Wheat Belly*, 2011) — best-seller de William Davis sobre trigo, glúten, amilopectina A e gordura visceral. Autor em Pessoas; elo em Glúten / farinha."
-            },
-            {
-              "label": "Inspeção: Divertida Mente — as emoções da Riley e a mensagem que importa",
-              "tileLabel": "Inspeção: Divertida Mente — as …",
-              "href": "/posts/post-inspecao-filme-divertida-mente.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-filme-divertida-mente",
-              "description": "Artes: Divertida Mente (Pixar, 2015) — literacia emocional com carinho; Alegria, Tristeza, Raiva, Medo e Nojinho em rede com a série Palavras. Todas as emoções importam."
-            },
-            {
-              "label": "Inspeção: Droga — do remédio ao ilícito no senso comum",
-              "tileLabel": "Inspeção: Droga — do remédio ao…",
-              "href": "/posts/post-inspecao-palavra-droga.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-droga",
-              "description": "Palavras: «droga» — originalidade farmacêutica/medicinal (eco de phármakon) coberta pelo sentido de ilícito, vício e crime."
-            },
-            {
               "label": "Inspeção: Planta — Hortelã — mentol e mentona",
               "tileLabel": "Inspeção: Planta — Hortelã — me…",
               "href": "/posts/post-inspecao-planta-hortela.html",
@@ -943,44 +327,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Mentha spicata* (hortelã-verde) — mentol, mentona e chás digestivos de cultivo doméstico."
             },
             {
-              "label": "Inspeção: Fruto — Goiaba",
-              "tileLabel": "Inspeção: Fruto — Goiaba",
+              "label": "Inspeção: Fruto — Goiaba — vitamina C, pectina e goiabada",
+              "tileLabel": "Inspeção: Fruto — Goiaba — vita…",
               "href": "/posts/post-inspecao-planta-goiaba.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-goiaba",
-              "description": "Relatório educacional de Goiaba (*Psidium guajava L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
-            },
-            {
-              "label": "Inspeção: Ramón Valdés — Seu Madruga e os devidos méritos",
-              "tileLabel": "Inspeção: Ramón Valdés — Seu Ma…",
-              "href": "/posts/post-inspecao-figura-ramon-valdes.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-ramon-valdes",
-              "description": "Pessoas: homenagem a Ramón Valdés (1923–1988) — o actor que deu dignidade cómica ao Seu Madruga; ofício, ética sem sermão e legado cultural latino-americano."
-            },
-            {
-              "label": "Inspeção: Álvares de Azevedo — homenagem ao poeta da Lira e elo com Lágrimas da Vida",
-              "tileLabel": "Inspeção: Álvares de Azevedo — …",
-              "href": "/posts/post-inspecao-figura-alvares-de-azevedo.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-alvares-de-azevedo",
-              "description": "Pessoas × Artes: homenagem a Álvares de Azevedo (1831–1852) — ofício ultrarromântico, com elo principal no poema Lágrimas da Vida; distinto do Legado canábico."
-            },
-            {
-              "label": "Inspeção: Venom — o filme de 2018, a simbiose e o «nós»",
-              "tileLabel": "Inspeção: Venom — o filme de 20…",
-              "href": "/posts/post-inspecao-filme-venom.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-filme-venom",
-              "description": "Artes · cinema: Venom (2018, Fleischer / Hardy) — entrada SSU, génese do personagem nos comics Marvel, simbiose e «nós» como parábola de agência partilhada."
-            },
-            {
-              "label": "Inspeção: Cânhamo — fibra industrial coberta pela confusão com «droga»",
-              "tileLabel": "Inspeção: Cânhamo — fibra indus…",
-              "href": "/posts/post-inspecao-palavra-canhamo.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-canhamo",
-              "description": "Palavras: «cânhamo» — originalidade técnica (fibra/óleo industrial) coberta pela confusão moral com maconha/droga."
+              "description": "*Psidium guajava* — fruto brasileiro de quintal rico em vitamina C e fibra; separar goiaba inteira de goiabada, polpas e néctares industriais."
             },
             {
               "label": "Inspeção: Planta — Boldo — falso-boldo brasileiro",
@@ -999,22 +351,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Cacau (*Theobroma cacao L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
-              "label": "Inspeção: Lágrimas da Vida — o poema de Álvares de Azevedo e a máscara que chora",
-              "tileLabel": "Inspeção: Lágrimas da Vida — o …",
-              "href": "/posts/post-inspecao-arte-lagrimas-da-vida.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-arte-lagrimas-da-vida",
-              "description": "Artes · poesia: «Lágrimas da Vida» (Álvares de Azevedo, *Lira dos Vinte Anos*) — ultrarromantismo, lágrima escondida e elo com a trilha Vida."
-            },
-            {
-              "label": "Inspeção: Coelho — a palavra da toca e da entrada na investigação",
-              "tileLabel": "Inspeção: Coelho — a palavra da…",
-              "href": "/posts/post-inspecao-palavra-coelho.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-coelho",
-              "description": "Palavras: «coelho» (latim *cuniculus*) — animal, Coelho Branco e buraco do coelho como metáfora de entrada; elos com Alice, caminho, passar e Matrix."
-            },
-            {
               "label": "Inspeção: Planta — Melissa — citral e melissa officinalis",
               "tileLabel": "Inspeção: Planta — Melissa — ci…",
               "href": "/posts/post-inspecao-planta-melissa.html",
@@ -1029,30 +365,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-uva",
               "description": "Relatório educacional de Uva (*Vitis vinifera L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
-            },
-            {
-              "label": "Inspeção: Canal MovReCam — aulas UNIFESP",
-              "tileLabel": "Inspeção: Canal MovReCam — aula…",
-              "href": "/posts/post-inspecao-canal-movrecam.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-canal-movrecam",
-              "description": "Auditoria do canal MovReCam — 285 vídeos catalogados, com embeds das aulas da XIV edição UNIFESP para revisão in-page."
-            },
-            {
-              "label": "Inspeção: Águas do Mar e Lágrimas — poesia do laboratório entre oceano e peito",
-              "tileLabel": "Inspeção: Águas do Mar e Lágrim…",
-              "href": "/posts/post-inspecao-arte-aguas-e-lagrimas.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-arte-aguas-e-lagrimas",
-              "description": "Artes · poesia original: o sal do mar e o da lágrima — máscara, porto no olho e o universo Vida que ensina a ficar."
-            },
-            {
-              "label": "Inspeção: Emoção — o hub lexical da Riley (Divertida Mente)",
-              "tileLabel": "Inspeção: Emoção — o hub lexica…",
-              "href": "/posts/post-inspecao-palavra-emocao.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-emocao",
-              "description": "Palavras: «emoção» (*ēmovēre*) — hub das cinco emoções da Riley em Divertida Mente; literacia do sentir com elos a Alegria, Tristeza, Raiva, Medo e Nojinho."
             },
             {
               "label": "Inspeção: Planta — Alecrim — ácidos diterpênicos e cineol",
@@ -1071,22 +383,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Morango (*Fragaria × ananassa Duchesne): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
-              "label": "Inspeção: Cruzamento — Raiva, Emoção, Venom e Vida no mapa de Divertida Mente",
-              "tileLabel": "Inspeção: Cruzamento — Raiva, E…",
-              "href": "/posts/post-inspecao-cruzamento-raiva-venom-vida-divertida.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-cruzamento-raiva-venom-vida-divertida",
-              "description": "Artes · cruzamento: Raiva × Emoção × Venom × Vida lidos com Alegria, Tristeza, Raiva, Medo e Nojinho — ofício de cada sentimento vs veneno do rancor; rede com Divertida Mente e o «ficar» da Vida."
-            },
-            {
-              "label": "Inspeção: Alegria — a palavra amarela da Riley",
-              "tileLabel": "Inspeção: Alegria — a palavra a…",
-              "href": "/posts/post-inspecao-palavra-alegria.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-alegria",
-              "description": "Palavras: «alegria» — emoção-âncora de Divertida Mente; quer o bem de Riley e aprende a partilhar o comando com a Tristeza."
-            },
-            {
               "label": "Inspeção: Planta — Gengibre — gingeróis e rizoma picante",
               "tileLabel": "Inspeção: Planta — Gengibre — g…",
               "href": "/posts/post-inspecao-planta-gengibre.html",
@@ -1101,22 +397,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-maracuja-fruta",
               "description": "Relatório educacional de Maracujá (fruta) (*Passiflora edulis Sims): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
-            },
-            {
-              "label": "Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo",
-              "tileLabel": "Divulgação: Bom dia, Inverno — …",
-              "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-arte-bom-dia-inverno",
-              "description": "Bom dia, Inverno como mudinha da Vida: invernagem no gelo, léxico, Artes irmãs (Águas / Lágrimas) e Legado Klink."
-            },
-            {
-              "label": "Inspeção: Tristeza — a palavra azul que também cuida",
-              "tileLabel": "Inspeção: Tristeza — a palavra …",
-              "href": "/posts/post-inspecao-palavra-tristeza.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-tristeza",
-              "description": "Palavras: «tristeza» — em Divertida Mente, a emoção que abre o pedido de ajuda; sem ela a Alegria não basta."
             },
             {
               "label": "Inspeção: Planta — Cúrcuma — açafrão-da-terra e curcumina",
@@ -1135,12 +415,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Tomatinho cereja (*Solanum lycopersicum* var. *cerasiforme*) — primeiro cultivo do Diário da Sementinha: fruto fresco vs ultraprocessados «tomato»."
             },
             {
-              "label": "Inspeção: Raiva — a palavra vermelha da sala de comando",
-              "tileLabel": "Inspeção: Raiva — a palavra ver…",
-              "href": "/posts/post-inspecao-palavra-raiva.html",
+              "label": "Inspeção: Fruto — Melancia — água na polpa, citrulina e verão BR",
+              "tileLabel": "Inspeção: Fruto — Melancia — ág…",
+              "href": "/posts/post-inspecao-planta-melancia.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-raiva",
-              "description": "Palavras: «raiva» — em Divertida Mente, fogo de limite e indignação; emoção com ofício, não vilania."
+              "slug": "post-inspecao-planta-melancia",
+              "description": "*Citrullus lanatus* — melancia / melão-d'água: polpa aquosa de verão, citrulina e cultura de feira; separar fruto inteiro de sucos e ultraprocessados «watermelon»."
             },
             {
               "label": "Inspeção: Planta — Unha-de-gato — alcaloides oxindólicos",
@@ -1151,14 +431,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Uncaria tomentosa* — casca amazônica rica em alcaloides oxindólicos pentacíclicos; fitoterapia imunomoduladora popular."
             },
             {
-              "label": "Inspeção: Medo — a palavra roxa da vigilância interior",
-              "tileLabel": "Inspeção: Medo — a palavra roxa…",
-              "href": "/posts/post-inspecao-palavra-medo.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-medo",
-              "description": "Palavras: «medo» — em Divertida Mente, a emoção da segurança e do ensaio do risco; ofício protetor."
-            },
-            {
               "label": "Inspeção: Planta — Sucupira — furanoditerpenos do Cerrado",
               "tileLabel": "Inspeção: Planta — Sucupira — f…",
               "href": "/posts/post-inspecao-planta-sucupira.html",
@@ -1167,12 +439,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Pterodon emarginatus* — sementes e óleo fixo do Cerrado; furanoditerpenos (sucupirins) na medicina popular."
             },
             {
-              "label": "Inspeção: Nojinho — a palavra verde da aversão que protege",
-              "tileLabel": "Inspeção: Nojinho — a palavra v…",
-              "href": "/posts/post-inspecao-palavra-nojinho.html",
+              "label": "Inspeção: Fruto — Mamão — papaína, polpa tropical e cultivo familiar",
+              "tileLabel": "Inspeção: Fruto — Mamão — papaí…",
+              "href": "/posts/post-inspecao-planta-mamao.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-nojinho",
-              "description": "Palavras: «nojinho» — forma BR de Divertida Mente para Disgust; aversão protetora com humor e limite."
+              "slug": "post-inspecao-planta-mamao",
+              "description": "*Carica papaya* — mamão brasileiro: polpa doce, papaína do látex e elo UNIFESP/SUS; separar fruto inteiro de néctares e ultraprocessados."
             },
             {
               "label": "Inspeção: Planta — Copaíba — óleo-resina e β-cariofileno",
@@ -1183,36 +455,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Copaifera langsdorffii* — óleo-resina amazônica; β-cariofileno e ácidos copaíbicos na tradição tópica e oral."
             },
             {
-              "label": "Inspeção: Animal — a palavra do alento, do vivo e do duplo sentido",
-              "tileLabel": "Inspeção: Animal — a palavra do…",
-              "href": "/posts/post-inspecao-palavra-animal.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-animal",
-              "description": "Palavras: «animal» (latim *anima* → *animal*) — ser vivo, catálogo Animais e o segundo sentido social (insulto / intensificador); elo com coelho."
-            },
-            {
               "label": "Inspeção: Planta — Andiroba — limonoides e óleo amazônico",
               "tileLabel": "Inspeção: Planta — Andiroba — l…",
               "href": "/posts/post-inspecao-planta-andiroba.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-andiroba",
               "description": "*Carapa guianensis* — óleo de sementes rico em limonoides (andirobina); tradição tópica e repelente."
-            },
-            {
-              "label": "Inspeção: Simbiose — a palavra do viver juntos",
-              "tileLabel": "Inspeção: Simbiose — a palavra …",
-              "href": "/posts/post-inspecao-palavra-simbiose.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-simbiose",
-              "description": "Palavras: «simbiose» (grego *syn* + *bíōsis*) — coabitação de vidas, mutualismo popular, solo vivo e metáfora cultural (Venom / «nós»)."
-            },
-            {
-              "label": "Inspeção: Guia de Palavras — auditoria das 139 entradas e do acervo",
-              "tileLabel": "Inspeção: Guia de Palavras — au…",
-              "href": "/posts/post-inspecao-guia-palavras-cobertura.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-guia-palavras-cobertura",
-              "description": "Cobertura do glossário BudGanja cruzada com inspeções, plantas, páginas e rascunhos XIV — hrefs, profundidade e lacunas."
             },
             {
               "label": "Inspeção: Planta — Jambu — espilanthol e anestesia oral",
@@ -1223,52 +471,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Acmella oleracea* — alquilamidas (espilanthol) causam dormência oral; erva da culinária paraense."
             },
             {
-              "label": "Inspeção: Chaves (El Chavo del Ocho) — a turma e o bem que ensina",
-              "tileLabel": "Inspeção: Chaves (El Chavo del …",
-              "href": "/posts/post-inspecao-serie-chaves-el-chavo.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-serie-chaves-el-chavo",
-              "description": "Artes: *Chaves* / *El Chavo del Ocho* — homenagem à turma inteira e méritos de cada pilar: partilha, desculpa e amizade."
-            },
-            {
-              "label": "Inspeção: Criatividade — a palavra de fazer nascer no laboratório",
-              "tileLabel": "Inspeção: Criatividade — a pala…",
-              "href": "/posts/post-inspecao-palavra-criatividade.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-criatividade",
-              "description": "Palavras: «criatividade» (latim *creāre*) — inventar com método no BudGanja: cultivo, Vida, fichas, poemas e ferramentas."
-            },
-            {
-              "label": "Inspeção: Entorpecente e Narcótico — classificação legal no laboratório",
-              "tileLabel": "Inspeção: Entorpecente e Narcót…",
-              "href": "/posts/post-inspecao-palavra-entorpecente-narcotico.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-entorpecente-narcotico",
-              "description": "Palavras: entorpecente × narcótico — rótulos de controlo e clínica, distintos de droga no senso comum e da rede de nomes (maconha, cannabis, ganja…)."
-            },
-            {
               "label": "Inspeção: Planta — Mulungu — alcaloides eritrínicos calmantes",
               "tileLabel": "Inspeção: Planta — Mulungu — al…",
               "href": "/posts/post-inspecao-planta-mulungu.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-mulungu",
               "description": "*Erythrina mulungu* — casca com alcaloides eritrínicos; chá calmante da tradição brasileira."
-            },
-            {
-              "label": "Inspeção: Verdade — a palavra de verificar no laboratório",
-              "tileLabel": "Inspeção: Verdade — a palavra d…",
-              "href": "/posts/post-inspecao-palavra-verdade.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-verdade",
-              "description": "Palavras: «verdade» (latim *vērĭtās*) — afirmar com método no BudGanja: citar, medir e não fabricar evidência."
-            },
-            {
-              "label": "Inspeção: Psicotrópico — classe clínica e controlo no laboratório",
-              "tileLabel": "Inspeção: Psicotrópico — classe…",
-              "href": "/posts/post-inspecao-palavra-psicotropico.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-psicotropico",
-              "description": "Palavra: psicotrópico — rótulo clínico/de controlo sobre substâncias que actuam no sistema nervoso; distinto de entorpecente, narcótico e droga no senso comum."
             },
             {
               "label": "Inspeção: Planta — Maracujá — flavonoides e passiflorina",
@@ -1279,44 +487,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Passiflora incarnata* — flavonoides e alcaloides traço; chá calmante clássico da fitoterapia."
             },
             {
-              "label": "Inspeção: Gesto — a palavra que liga o laboratório inteiro",
-              "tileLabel": "Inspeção: Gesto — a palavra que…",
-              "href": "/posts/post-inspecao-palavra-gesto.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-gesto",
-              "description": "Palavras: «gesto» / «gestos» (latim *gestus*) — o acto mínimo no BudGanja: cultivar, inspecionar, narrar, medir, ficar e partilhar."
-            },
-            {
-              "label": "Inspeção: Lista F — âncora brasileira das listas de controlo",
-              "tileLabel": "Inspeção: Lista F — âncora bras…",
-              "href": "/posts/post-inspecao-palavra-lista-f.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-lista-f",
-              "description": "Palavra: Lista F — âncora brasileira das listas de substâncias controladas; o laboratório indexa o tipo de linguagem, não o anexo integral da portaria."
-            },
-            {
               "label": "Inspeção: Planta — Calêndula — flavonoides e pomadas cutâneas",
               "tileLabel": "Inspeção: Planta — Calêndula — …",
               "href": "/posts/post-inspecao-planta-calendula.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-calendula",
               "description": "*Calendula officinalis* — pétalas ricas em triterpenos e flavonoides; uso tópico em pele irritada."
-            },
-            {
-              "label": "Inspeção: Balde — volume, transporte e o gesto de regar",
-              "tileLabel": "Inspeção: Balde — volume, trans…",
-              "href": "/posts/post-inspecao-palavra-balde.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-balde",
-              "description": "Palavras: «balde» (recipiente de origem duvidosa) e «em/de balde» (árabe *bāṭil*) — utensílio de volume no cultivo BudGanja, sem confundir com «em vão»."
-            },
-            {
-              "label": "Inspeção: Estupefaciente — rótulo internacional vizinho de narcótico",
-              "tileLabel": "Inspeção: Estupefaciente — rótu…",
-              "href": "/posts/post-inspecao-palavra-estupefaciente.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-estupefaciente",
-              "description": "Palavra: estupefaciente — rótulo internacional/ONU vizinho de narcótico; o laboratório separa-o de entorpecente nas listas brasileiras modernas."
             },
             {
               "label": "Inspeção: Planta — Barbatimão — proantocianidinas adstringentes",
@@ -1327,44 +503,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Stryphnodendron adstringens* — casca rica em taninos e proantocianidinas; adstringente do Cerrado."
             },
             {
-              "label": "Inspeção: Backspace — invenção do apagar e a tentação do «tudo de ruim»",
-              "tileLabel": "Inspeção: Backspace — invenção …",
-              "href": "/posts/post-inspecao-palavra-backspace.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-backspace",
-              "description": "Palavras: «backspace» (*back* + *space*, ~1899) — da tecla tipográfica à metáfora de apagar tudo de ruim sem inspecionar."
-            },
-            {
-              "label": "Inspeção: Substância controlada — meta-rótulo das listas",
-              "tileLabel": "Inspeção: Substância controlada…",
-              "href": "/posts/post-inspecao-palavra-substancia-controlada.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-substancia-controlada",
-              "description": "Palavra: substância controlada — meta-rótulo do que as listas fazem; distinto de droga no senso comum e dos nomes populares da cannabis."
-            },
-            {
               "label": "Inspeção: Planta — Jaborandi — pilocarpina e glaucoma histórico",
               "tileLabel": "Inspeção: Planta — Jaborandi — …",
               "href": "/posts/post-inspecao-planta-jaborandi.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-jaborandi",
               "description": "*Pilocarpus microphyllus* — folhas fonte histórica de pilocarpina; alcaloide imidazólico miótico."
-            },
-            {
-              "label": "Inspeção: Mão esquerda / mão direita — complementaridade do ofício",
-              "tileLabel": "Inspeção: Mão esquerda / mão di…",
-              "href": "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-mao-esquerda-direita",
-              "description": "Palavras: «mão esquerda» / «mão direita» (lat. *manus*) — ferramentas do gesto, do cultivo e do teclado; complementaridade, não moral dualista."
-            },
-            {
-              "label": "Inspeção: Ilícito — polo jurídico do duplo sentido de droga",
-              "tileLabel": "Inspeção: Ilícito — polo jurídi…",
-              "href": "/posts/post-inspecao-palavra-ilicito.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-ilicito",
-              "description": "Palavra: ilícito — polo jurídico que fecha o contraste com droga (remédio ↔ ilícito no senso comum) e com substância controlada."
             },
             {
               "label": "Inspeção: Planta — Ipecacuanha — emetina e xarope histórico",
@@ -1375,36 +519,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Carapichea ipecacuanha* — raiz com emetina e cephaeline; farmacopeia histórica como emético e antiamébico."
             },
             {
-              "label": "Inspeção: Árvore da Vida — a fase sénior do arco semente–mudinha–árvore",
-              "tileLabel": "Inspeção: Árvore da Vida — a fa…",
-              "href": "/posts/post-inspecao-palavra-arvore-da-vida.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-arvore-da-vida",
-              "description": "Palavras: «Árvore da Vida» / «árvore» (lat. *arbor*) — figura sénior do laboratório: semente → mudinha → árvore, com poema e ofício contínuo."
-            },
-            {
-              "label": "Inspeção: Opioide e Opiáceo — tradição clínica por trás de narcótico",
-              "tileLabel": "Inspeção: Opioide e Opiáceo — t…",
-              "href": "/posts/post-inspecao-palavra-opioide-opiaceo.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-opioide-opiaceo",
-              "description": "Palavras: opioide × opiáceo — tradição clínica (ópio / analgésicos) que explica parte do rótulo narcótico; distinta da rede de nomes da cannabis."
-            },
-            {
               "label": "Inspeção: Planta — Pfaffia (ginseng-brasileiro) — ecdisteroides e ginseng-brasileiro",
               "tileLabel": "Inspeção: Planta — Pfaffia (gin…",
               "href": "/posts/post-inspecao-planta-pfaffia.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-pfaffia",
               "description": "*Pfaffia glomerata* — raiz rica em ecdisteroides e pfaffic acids; «ginseng-brasileiro» adaptogénico popular."
-            },
-            {
-              "label": "Inspeção: Depressor — classe de efeito no sistema nervoso",
-              "tileLabel": "Inspeção: Depressor — classe de…",
-              "href": "/posts/post-inspecao-palavra-depressor.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-depressor",
-              "description": "Palavra: depressor — classe de efeito (diminui actividade do SNC); distinta de entorpecente (lista) e de psicoativo (Guia técnico)."
             },
             {
               "label": "Inspeção: Planta — Aroeira — pimenta-rosa e óleos resinosos",
@@ -1415,28 +535,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Schinus terebinthifolia* — frutos «pimenta-rosa» e folhas com óleos essenciais e taninos; tradição tópica e culinária."
             },
             {
-              "label": "Inspeção: Estimulante — classe de efeito no sistema nervoso",
-              "tileLabel": "Inspeção: Estimulante — classe …",
-              "href": "/posts/post-inspecao-palavra-estimulante.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-estimulante",
-              "description": "Palavra: estimulante — classe de efeito (aumenta actividade do SNC); par de depressor e alucinógeno; distinta de entorpecente."
-            },
-            {
               "label": "Inspeção: Planta — Quina — quinina e antimalárico histórico",
               "tileLabel": "Inspeção: Planta — Quina — quin…",
               "href": "/posts/post-inspecao-planta-quina.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-quina",
               "description": "*Cinchona* spp. — casca fonte histórica de quinina; capítulo fundacional da quimioterapia antimalárica."
-            },
-            {
-              "label": "Inspeção: Alucinógeno — classe de efeito e literacia XIV",
-              "tileLabel": "Inspeção: Alucinógeno — classe …",
-              "href": "/posts/post-inspecao-palavra-alucinogeno.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-alucinogeno",
-              "description": "Palavra: alucinógeno — classe de efeito (altera percepção); distinta de psicoativo, psicodélico e entorpecente; elo com ayahuasca/cogumelo no Guia."
             },
             {
               "label": "Inspeção: Planta — Cannabis (medicinal) — canabinoides THC/CBD e contexto clínico",
@@ -1447,100 +551,596 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Cannabis sativa* L. — fitocanabinoides (THC, CBD), terpenos e uso medicinal regulamentado; cautela legal e neurodesenvolvimento."
             },
             {
-              "label": "Inspeção: Proibição e Proibicionismo — camada política da classificação",
-              "tileLabel": "Inspeção: Proibição e Proibicio…",
-              "href": "/posts/post-inspecao-palavra-proibicao-proibicionismo.html",
+              "label": "Inspeção: Genial — engenho do projecto BudGanja e o risco do culto vazio",
+              "tileLabel": "Inspeção: Genial — engenho do p…",
+              "href": "/posts/post-inspecao-palavra-genial.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-proibicao-proibicionismo",
-              "description": "Palavras: proibição × proibicionismo — camada política/histórica das listas e do estigma; elo com ilícito, maconha e formação Sidarta/CEBRID."
+              "slug": "post-inspecao-palavra-genial",
+              "description": "Palavras: «genial» — engenho no projecto BudGanja; escala com legal, maravilhoso e fantástico; Faça o melhor! ≠ seja génio; culto vazio = ressalva."
             },
             {
-              "label": "Inspeção: ANVISA — instituição no mapa regulatório BudGanja",
-              "tileLabel": "Inspeção: ANVISA — instituição …",
-              "href": "/posts/post-inspecao-palavra-anvisa.html",
+              "label": "Inspeção: Coração — órgão, afeto, centro, coragem e Faça o melhor!",
+              "tileLabel": "Inspeção: Coração — órgão, afet…",
+              "href": "/posts/post-inspecao-palavra-coracao.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-anvisa",
-              "description": "Palavra: ANVISA — agência reguladora no mapa institucional do laboratório; elo com portaria, lista F e cannabis medicinal, sem parecer jurídico."
+              "slug": "post-inspecao-palavra-coracao",
+              "description": "Palavras: «coração» (lat. *cor*) — órgão, afeto, centro e coragem; elo mãos/esquerdo; Faça o melhor de coração."
             },
             {
-              "label": "Inspeção: Portaria — forma normativa das listas de controlo",
-              "tileLabel": "Inspeção: Portaria — forma norm…",
-              "href": "/posts/post-inspecao-palavra-portaria.html",
+              "label": "Inspeção: Memorável — o que fica na memória e o elogio com rasto",
+              "tileLabel": "Inspeção: Memorável — o que fic…",
+              "href": "/posts/post-inspecao-palavra-memoravel.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-portaria",
-              "description": "Palavra: portaria — forma normativa que materializa listas e regras; elo com ANVISA, Lista F e entorpecente, sem reproduzir o texto oficial."
+              "slug": "post-inspecao-palavra-memoravel",
+              "description": "Palavras: «memorável» (lat. memorabilis) — digno de memória; elogio BR; eixo retenção ≠ escala legal/genial/maravilhoso/fantástico; Faça o melhor!"
             },
             {
-              "label": "Inspeção: Guia HC e seletividade — mapa para advogados (com HC × sem HC)",
-              "tileLabel": "Inspeção: Guia HC e seletividad…",
-              "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
+              "label": "Inspeção: Incrível — incredibilis, elogio BR e a escala legal→genial",
+              "tileLabel": "Inspeção: Incrível — incredibil…",
+              "href": "/posts/post-inspecao-palavra-incrivel.html",
               "icon": "🔍",
-              "slug": "post-inspecao-guia-hc-seletividade-advogados",
-              "description": "Guia para advogados: habeas corpus / salvo-conduto no cultivo medicinal vs repressão sem HC — seletividade de classe, âncoras STJ/STF e rede BudGanja de classificação legal. Não é parecer jurídico."
+              "slug": "post-inspecao-palavra-incrivel",
+              "description": "Palavras: «incrível» (lat. *incredibilis*) — incredulidade e elogio BR «uau»; escala com fichas existentes (legal, genial, fantástico…); Faça o melhor!"
             },
             {
-              "label": "Inspeção: Guia cannabis medicinal — mapa para médicos (acesso × seletividade)",
-              "tileLabel": "Inspeção: Guia cannabis medicin…",
-              "href": "/posts/post-inspecao-guia-cannabis-medicos.html",
+              "label": "Inspeção: Fruto — fructus, frutos e os frutos do trabalho",
+              "tileLabel": "Inspeção: Fruto — fructus, frut…",
+              "href": "/posts/post-inspecao-palavra-fruto.html",
               "icon": "🔍",
-              "slug": "post-inspecao-guia-cannabis-medicos",
-              "description": "Guia para médicos: receita, laudo, produto ANVISA/importação e papel no HC — seletividade de quem vira paciente de facto. Elo com o guia para advogados. Não é protocolo clínico."
+              "slug": "post-inspecao-palavra-fruto",
+              "description": "Palavras: «fruto» (lat. *fructus*) — órgão botânico, plural frutos, contraste com fruta, figurado «frutos do trabalho»; elos plantas/simbiose; Faça o melhor!"
             },
             {
-              "label": "Inspeção: Guia cannabis medicinal — mapa para farmacêuticos (dispensação × seletividade)",
-              "tileLabel": "Inspeção: Guia cannabis medicin…",
-              "href": "/posts/post-inspecao-guia-cannabis-farmaceuticos.html",
+              "label": "Inspeção: Respeito — olhar de novo, prática social e Faça o melhor!",
+              "tileLabel": "Inspeção: Respeito — olhar de n…",
+              "href": "/posts/post-inspecao-palavra-respeito.html",
               "icon": "🔍",
-              "slug": "post-inspecao-guia-cannabis-farmaceuticos",
-              "description": "Guia para farmacêuticos: produto regulado, importação, limites da farmácia vs óleo/HC, CRF/ANVISA e seletividade de quem chega ao balcão. Não é protocolo clínico."
+              "slug": "post-inspecao-palavra-respeito",
+              "description": "Palavras: «respeito» (lat. *respectus* / *respicere*) — consideração e prática social, sem sermão; elo verdade/gesto; contraste com vingança; Faça o melhor!"
             },
             {
-              "label": "Inspeção: Guia associações de pacientes — cultivo institucional × seletividade",
-              "tileLabel": "Inspeção: Guia associações de p…",
-              "href": "/posts/post-inspecao-guia-associacoes-pacientes.html",
+              "label": "Inspeção: Maravilhoso — maravilha, assombro, elogio BR e Faça o melhor!",
+              "tileLabel": "Inspeção: Maravilhoso — maravil…",
+              "href": "/posts/post-inspecao-palavra-maravilhoso.html",
               "icon": "🔍",
-              "slug": "post-inspecao-guia-associacoes-pacientes",
-              "description": "Guia para associações: cultivo/produção institucional (RDC/PJ), custo de ser membro-paciente, contraste com HC individual e seletividade. Não é manual de licenciamento."
+              "slug": "post-inspecao-palavra-maravilhoso",
+              "description": "Palavras: «maravilhoso» (de maravilha / lat. *mirabilia*) — assombro e elogio BR; escala com legal, genial e aff; Faça o melhor! depois do «uau»."
             },
             {
-              "label": "Inspeção: Guia Defensoria e acesso gratuito — seletividade sem honorários",
-              "tileLabel": "Inspeção: Guia Defensoria e ace…",
-              "href": "/posts/post-inspecao-guia-defensoria-acesso.html",
+              "label": "Inspeção: Pipoca — tupi pi'poka, milho que estoura, rua e cinema",
+              "tileLabel": "Inspeção: Pipoca — tupi pi'poka…",
+              "href": "/posts/post-inspecao-palavra-pipoca.html",
               "icon": "🔍",
-              "slug": "post-inspecao-guia-defensoria-acesso",
-              "description": "Guia para Defensoria e quem não tem advogado particular: mesmos filtros de HC/seletividade (laudo, tempo, tipificação porte×tráfico) sem o preço do particular. Não é parecer."
+              "slug": "post-inspecao-palavra-pipoca",
+              "description": "Palavras: «pipoca» (tupi *pi'poka*) — milho→calor→estouro; rua e cinema BR; transformação com ofício; Faça o melhor!"
             },
             {
-              "label": "Inspeção: Lei 11.343/2006 — âncora tipológica da Lei de Drogas",
-              "tileLabel": "Inspeção: Lei 11.343/2006 — ânc…",
-              "href": "/posts/post-inspecao-palavra-lei-11-343.html",
+              "label": "Inspeção: Fantasioso — fantasia, imaginação e ≠ fantástico",
+              "tileLabel": "Inspeção: Fantasioso — fantasia…",
+              "href": "/posts/post-inspecao-palavra-fantasioso.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-lei-11-343",
-              "description": "Palavra-âncora: Lei 11.343/2006 — fundo tipológico onde cai quem não tem estatuto processual/sanitário (HC, produto ANVISA). Não é o texto integral da lei."
+              "slug": "post-inspecao-palavra-fantasioso",
+              "description": "Palavras: «fantasioso» (fantasia + -oso) — imaginativo / crítica leve «não seja fantasioso»; tipografia fantatioso → fantasioso; ≠ fantástico (Cap. irmã)."
             },
             {
-              "label": "Inspeção: Porte × Tráfico — par semântico da seletividade na rua",
-              "tileLabel": "Inspeção: Porte × Tráfico — par…",
-              "href": "/posts/post-inspecao-palavra-porte-trafico.html",
+              "label": "Inspeção: Vida — facto, tempo, modo e Faça o melhor!",
+              "tileLabel": "Inspeção: Vida — facto, tempo, …",
+              "href": "/posts/post-inspecao-palavra-vida.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-porte-trafico",
-              "description": "Par: porte × tráfico — o mesmo volume pode ser lido como uso ou mercancia conforme contexto, classe e olhar policial; elo com Tema 506 e seletividade."
+              "slug": "post-inspecao-palavra-vida",
+              "description": "Palavras: «vida» (lat. *vīta*) — facto de viver, tempo e modo; distinta da trilha /vida/ e da Árvore da Vida; elos alegria/coração/esperança; Faça o melhor!"
             },
             {
-              "label": "Inspeção: Descriminalização — atipicidade penal ≠ legalização",
-              "tileLabel": "Inspeção: Descriminalização — a…",
-              "href": "/posts/post-inspecao-palavra-descriminalizacao.html",
+              "label": "Inspeção: Ídolo — admiração, imagem, média e Faça o melhor!",
+              "tileLabel": "Inspeção: Ídolo — admiração, im…",
+              "href": "/posts/post-inspecao-palavra-idolo.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-descriminalizacao",
-              "description": "Palavra: descriminalização — no debate brasileiro, frequentemente aponta à atipicidade penal do porte (Tema 506); não é legalização nem autorização de cultivo."
+              "slug": "post-inspecao-palavra-idolo",
+              "description": "Palavras: «ídolo» (gr. eídōlon) — celebridade, culto lexical, idolatrar e cultura de média; admirar com ofício; Faça o melhor!"
             },
             {
-              "label": "Inspeção: RDC × Autorização sanitária — camada ANVISA do acesso",
-              "tileLabel": "Inspeção: RDC × Autorização san…",
-              "href": "/posts/post-inspecao-palavra-rdc-autorizacao-sanitaria.html",
+              "label": "Inspeção: Magnífico — magnificus, elogio BR e Faça o melhor!",
+              "tileLabel": "Inspeção: Magnífico — magnificu…",
+              "href": "/posts/post-inspecao-palavra-magnifico.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-rdc-autorizacao-sanitaria",
-              "description": "Par: RDC × autorização sanitária — normas ANVISA (incl. marcos 2026 de cultivo/produção institucional) distintas de HC individual e de descriminalização do porte."
+              "slug": "post-inspecao-palavra-magnifico",
+              "description": "Palavras: «magnífico» (lat. *magnificus* / *magnificent*) — elogio BR quotidiano; escala com legal, genial, fabuloso, fantástico, incrível, maravilhoso; tipografia mafianioddpo → magnífico."
+            },
+            {
+              "label": "Inspeção: Inseto — vida, ecologia, cultura e Faça o melhor!",
+              "tileLabel": "Inspeção: Inseto — vida, ecolog…",
+              "href": "/posts/post-inspecao-palavra-inseto.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-inseto",
+              "description": "Palavras: «inseto» / «insetos» — lat. insectum; vida, ecologia e cultura; elos joaninha, abelha, animal, simbiose; contraste buguei; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Selvagem — silva, natureza e o limiar do domesticado",
+              "tileLabel": "Inspeção: Selvagem — silva, nat…",
+              "href": "/posts/post-inspecao-palavra-selvagem.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-selvagem",
+              "description": "Palavras: «selvagem» (lat. silvaticus ← silva) — natureza, selvagem × domesticado, «bicho selvagem»; elos planta/animal/inseto; sem romantizar dano; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Sinal — marca, aviso, gesto e dar sinal",
+              "tileLabel": "Inspeção: Sinal — marca, aviso,…",
+              "href": "/posts/post-inspecao-palavra-sinal.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-sinal",
+              "description": "Palavras: «sinal» (lat. *signum*) — marca, trânsito, corpo, aviso e «dar sinal»; tipografia singlam → sinal; elos gesto, risco, verdade; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Skill — empréstimo EN, habilidade e craft sem LinkedIn",
+              "tileLabel": "Inspeção: Skill — empréstimo EN…",
+              "href": "/posts/post-inspecao-palavra-skill.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-skill",
+              "description": "Palavras: «skill» — empréstimo EN→BR; habilidade/craft; anti-badge LinkedIn; elos multitask e genial; tipografia skgll → skill; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Passado — tempo decorrido, memória e o rasto que inspeciona",
+              "tileLabel": "Inspeção: Passado — tempo decor…",
+              "href": "/posts/post-inspecao-palavra-passado.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-passado",
+              "description": "Palavras: «passado» (de passar / lat. passāre) — tempo já decorrido; memória × história; ≠ futuro; elos memorável, verdade, língua; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Total — tōtus, completude e gíria BR «total!»",
+              "tileLabel": "Inspeção: Total — tōtus, comple…",
+              "href": "/posts/post-inspecao-palavra-total.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-total",
+              "description": "Palavras: «total» (lat. *tōtus*) — correcção de toal; completo/soma e gíria BR «total!»; escala com legal e fantástico."
+            },
+            {
+              "label": "Inspeção: Mensagem — comunicação, SMS/chat e deixar rasto",
+              "tileLabel": "Inspeção: Mensagem — comunicaçã…",
+              "href": "/posts/post-inspecao-palavra-mensagem.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mensagem",
+              "description": "Palavras: «mensagem» / «mensagens» (lat. *mittere* → *message*) — comunicação; era SMS/chat; «deixar mensagem»; sinal ≠ mensagem; tipografia sm,enajsos."
+            },
+            {
+              "label": "Inspeção: Esperança — afecto vivo, espera com ofício e Faça o melhor!",
+              "tileLabel": "Inspeção: Esperança — afecto vi…",
+              "href": "/posts/post-inspecao-palavra-esperanca.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-esperanca",
+              "description": "Palavras: «esperança» (lat. *spēs* / *sperantia*) — afecto vivo BR; esperar × esperança; rede com alegria, medo, tristeza; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Fabuloso — fábula, elogio BR e Faça o melhor!",
+              "tileLabel": "Inspeção: Fabuloso — fábula, el…",
+              "href": "/posts/post-inspecao-palavra-fabuloso.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-fabuloso",
+              "description": "Palavras: «fabuloso» (lat. *fābula* / *fabulous*) — elogio BR quotidiano; escala com genial, fantástico, incrível, maravilhoso, magnífico; tipografia fabsulkaoso → fabuloso."
+            },
+            {
+              "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
+              "tileLabel": "Inspeção: Eletrizante — carga, …",
+              "href": "/posts/post-inspecao-palavra-eletrizante.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-eletrizante",
+              "description": "Palavras: «eletrizante» (eletro- + intensidade) — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo → eletrizante; elos fogo e escala de louvor."
+            },
+            {
+              "label": "Inspeção: Inacreditável — beyond belief, elogio BR e Faça o melhor!",
+              "tileLabel": "Inspeção: Inacreditável — beyon…",
+              "href": "/posts/post-inspecao-palavra-inacreditavel.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-inacreditavel",
+              "description": "Palavras: «inacreditável» (in- + acreditável ← credere) — incredulidade e elogio BR «beyond belief»; escala com incrível, fabuloso e genial; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Fantástico — fantasia, elogio BR «fantástico!» e Faça o melhor!",
+              "tileLabel": "Inspeção: Fantástico — fantasia…",
+              "href": "/posts/post-inspecao-palavra-fantastico.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-fantastico",
+              "description": "Palavras: «fantástico» (lat. *phantasticus* / fantasia) — correcção de fantisico; eixos fantasia e elogio BR; escala com legal, genial e maravilhoso."
+            },
+            {
+              "label": "Inspeção: Planta — ser vivo, cultivo e Farmácia Viva",
+              "tileLabel": "Inspeção: Planta — ser vivo, cu…",
+              "href": "/posts/post-inspecao-palavra-planta.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-planta",
+              "description": "Palavras: «planta» (lat. *planta* / *plantare*) — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; sem listar espécies."
+            },
+            {
+              "label": "Inspeção: Legal — lei, gíria BR «bacana» e Faça o melhor!",
+              "tileLabel": "Inspeção: Legal — lei, gíria BR…",
+              "href": "/posts/post-inspecao-palavra-legal.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-legal",
+              "description": "Palavras: «legal» (lat. *legālis*) — eixo jurídico e gíria BR «bacana»; contraste com inglês; elos ilícito, Lei 11.343, descriminalização, risco e verdade."
+            },
+            {
+              "label": "Inspeção: ausdhuashduas — riso online e oralidade BR",
+              "tileLabel": "Inspeção: ausdhuashduas — riso …",
+              "href": "/posts/post-inspecao-expressao-ausdhuashduas.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-ausdhuashduas",
+              "description": "Expressões: ausdhuashduas — nome lab do riso tipado BR; substitui kkkk… e «risas online»; elos jesusamando, meudeusdoceu, aff, Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Multitask — empréstimo, parece×é e correção de ofício",
+              "tileLabel": "Inspeção: Multitask — empréstim…",
+              "href": "/posts/post-inspecao-palavra-multitask.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-multitask",
+              "description": "Palavras: «multitask» / «multitarefa» — empréstimo EN→BR; o que parece vs o que é; correção: ≠ fazer tudo bem ao mesmo tempo; Faça o melhor! com método."
+            },
+            {
+              "label": "Inspeção: deu certo, galera — celebração colectiva e oralidade BR",
+              "tileLabel": "Inspeção: deu certo, galera — c…",
+              "href": "/posts/post-inspecao-expressao-deu-certo-galera.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-deu-certo-galera",
+              "description": "Expressões: «deu certo, galera» / deucer galerra — celebração colectiva; contraste com aff e buguei; elos genial, jesusamando, meudeusdoceu, Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Buguei — do inseto ao «deu ruim» e Faça o melhor!",
+              "tileLabel": "Inspeção: Buguei — do inseto ao…",
+              "href": "/posts/post-inspecao-palavra-buguei.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-buguei",
+              "description": "Palavras: «buguei» — de bug (inseto) à falha e ao peito; como o sentido foi alterado para parecer ruim; Faça o melhor! depois do tranco."
+            },
+            {
+              "label": "Inspeção: meudeusdoceu — assombro alto e oralidade BR",
+              "tileLabel": "Inspeção: meudeusdoceu — assomb…",
+              "href": "/posts/post-inspecao-expressao-meudeusdoceu.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-meudeusdoceu",
+              "description": "Expressões: «meudeusdoceu» — meu Deus do céu colado; assombro alto; escala com aff e jesusamando; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Fogo — elemento, ardor, cuidado e Faça o melhor!",
+              "tileLabel": "Inspeção: Fogo — elemento, ardo…",
+              "href": "/posts/post-inspecao-palavra-fogo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-fogo",
+              "description": "Palavras: «fogo» (lat. *focus*) — elemento e metáfora; elos água, raiva e cultivo; Faça o melhor! com medida."
+            },
+            {
+              "label": "Inspeção: jesusamando — assombro, afeto e oralidade BR",
+              "tileLabel": "Inspeção: jesusamando — assombr…",
+              "href": "/posts/post-inspecao-expressao-jesusamando.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-jesusamando",
+              "description": "Expressões: «jesusamando» — sopro BR de assombro e afeto; contraste com aff; elo língua portuguesa e Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Mão esquerda / mão direita — complementaridade do ofício",
+              "tileLabel": "Inspeção: Mão esquerda / mão di…",
+              "href": "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mao-esquerda-direita",
+              "description": "Palavras: «mão esquerda» / «mão direita» (*manus*) — par de ofício; mão direita × coração (gesto × cuidado); elo esquerdo; sem moral dualista."
+            },
+            {
+              "label": "Inspeção: Língua portuguesa — originalidade, alterações no tempo e Faça o melhor!",
+              "tileLabel": "Inspeção: Língua portuguesa — o…",
+              "href": "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-lingua-portuguesa",
+              "description": "Palavras: língua portuguesa — originalidade; alterações ao longo do tempo (latim → BR → digital); para que serve; Faça o melhor! nesta língua."
+            },
+            {
+              "label": "Inspeção: Esquerdo — relação com as mãos, criação e Faça o melhor!",
+              "tileLabel": "Inspeção: Esquerdo — relação co…",
+              "href": "/posts/post-inspecao-palavra-esquerdo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-esquerdo",
+              "description": "Palavras: «esquerdo» — lado de ofício × ficha irmã mãos (esquerda×direita); criação, anti-estigma e Faça o melhor! nesta mão."
+            },
+            {
+              "label": "Inspeção: Já — o relógio da frase e o par com aff",
+              "tileLabel": "Inspeção: Já — o relógio da fra…",
+              "href": "/posts/post-inspecao-palavra-ja.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-ja",
+              "description": "Palavras: «já» (lat. *iam*) — tempo e urgência; par oral com «aff»; fecho vazio = ressalva; Faça o melhor! continua."
+            },
+            {
+              "label": "Inspeção: Ayrton Senna — homenagem completa ao Brasil e ao Faça o melhor!",
+              "tileLabel": "Inspeção: Ayrton Senna — homena…",
+              "href": "/posts/post-inspecao-figura-ayrton-senna.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-ayrton-senna",
+              "description": "Pessoas × Expressões: homenagem completa a Ayrton Senna (1960–1994) — tricampeão, ofício, filantropia e elo principal no mantra Faça o melhor!; sem romantizar a morte."
+            },
+            {
+              "label": "Inspeção: Lavar — das mãos à alma",
+              "tileLabel": "Inspeção: Lavar — das mãos à al…",
+              "href": "/posts/post-inspecao-palavra-lavar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-lavar",
+              "description": "Palavras: «lavar» (lat. *lavāre*) — mãos com água até «lavar a alma»: cuidado com método; fuga e vingança = ressalva."
+            },
+            {
+              "label": "Inspeção: Aff — exasperação e o risco de fechar sem método",
+              "tileLabel": "Inspeção: Aff — exasperação e o…",
+              "href": "/posts/post-inspecao-palavra-aff.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-aff",
+              "description": "Palavras: «aff» — interjeição BR de enfado; inspeção severa: termómetro ok, veredicto final sem relatório = reprovado."
+            },
+            {
+              "label": "Inspeção: Árvore da Vida — a fase sénior do arco semente–mudinha–árvore",
+              "tileLabel": "Inspeção: Árvore da Vida — a fa…",
+              "href": "/posts/post-inspecao-palavra-arvore-da-vida.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-arvore-da-vida",
+              "description": "Palavras: «Árvore da Vida» / «árvore» (lat. *arbor*) — figura sénior do laboratório: semente → mudinha → árvore, com poema e ofício contínuo."
+            },
+            {
+              "label": "Inspeção: Faça o melhor! — mantra do laboratório",
+              "tileLabel": "Inspeção: Faça o melhor! — mant…",
+              "href": "/posts/post-inspecao-expressao-faca-o-melhor.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-faca-o-melhor",
+              "description": "Expressões: «Faça o melhor!» — mantra Vida; ofício diário e resposta ao roubo e à proibição que tentam calar o projecto de inspeção."
+            },
+            {
+              "label": "Inspeção: Cruzamento — Raiva, Emoção, Venom e Vida no mapa de Divertida Mente",
+              "tileLabel": "Inspeção: Cruzamento — Raiva, E…",
+              "href": "/posts/post-inspecao-cruzamento-raiva-venom-vida-divertida.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-cruzamento-raiva-venom-vida-divertida",
+              "description": "Artes · cruzamento: Raiva × Emoção × Venom × Vida lidos com Alegria, Tristeza, Raiva, Medo e Nojinho — ofício de cada sentimento vs veneno do rancor; rede com Divertida Mente e o «ficar» da Vida."
+            },
+            {
+              "label": "Inspeção: Chaves (El Chavo del Ocho) — a turma e o bem que ensina",
+              "tileLabel": "Inspeção: Chaves (El Chavo del …",
+              "href": "/posts/post-inspecao-serie-chaves-el-chavo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-serie-chaves-el-chavo",
+              "description": "Artes: *Chaves* / *El Chavo del Ocho* — homenagem à turma inteira e méritos de cada pilar: partilha, desculpa e amizade."
+            },
+            {
+              "label": "Inspeção: Backspace — invenção do apagar e a tentação do «tudo de ruim»",
+              "tileLabel": "Inspeção: Backspace — invenção …",
+              "href": "/posts/post-inspecao-palavra-backspace.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-backspace",
+              "description": "Palavras: «backspace» (*back* + *space*, ~1899) — da tecla tipográfica à metáfora de apagar tudo de ruim sem inspecionar."
+            },
+            {
+              "label": "Inspeção: Ramón Valdés — Seu Madruga e os devidos méritos",
+              "tileLabel": "Inspeção: Ramón Valdés — Seu Ma…",
+              "href": "/posts/post-inspecao-figura-ramon-valdes.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-ramon-valdes",
+              "description": "Pessoas: homenagem a Ramón Valdés (1923–1988) — o actor que deu dignidade cómica ao Seu Madruga; ofício, ética sem sermão e legado cultural latino-americano."
+            },
+            {
+              "label": "Inspeção: Livro — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Livro — léxico Tamara…",
+              "href": "/posts/post-inspecao-palavra-livro.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-livro",
+              "description": "Objecto e ofício — *Bom dia, Inverno* (Companhia das Letras): a invernagem vira página."
+            },
+            {
+              "label": "Inspeção: Anzol — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Anzol — léxico Tamara…",
+              "href": "/posts/post-inspecao-palavra-anzol.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-anzol",
+              "description": "Ferramenta de pesca na narrativa — gesto concreto de sobrevivência no gelo."
+            },
+            {
+              "label": "Inspeção: Groenlândia — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Groenlândia — léxico …",
+              "href": "/posts/post-inspecao-palavra-groenlandia.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-groenlandia",
+              "description": "Palco da invernagem ártica de Tamara — gelo, animais e o livro *Bom dia, Inverno*."
+            },
+            {
+              "label": "Inspeção: Solitário — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Solitário — léxico Ta…",
+              "href": "/posts/post-inspecao-palavra-solitario.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-solitario",
+              "description": "Navegar e invernar sozinha — não isolamento romântico: método, medo e escrita."
+            },
+            {
+              "label": "Inspeção: Risco — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Risco — léxico Tamara…",
+              "href": "/posts/post-inspecao-palavra-risco.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-risco",
+              "description": "Perigo calculado da travessia e da invernagem — Amyr planeia; Tamara assume o próprio."
+            },
+            {
+              "label": "Inspeção: Congelado — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Congelado — léxico Ta…",
+              "href": "/posts/post-inspecao-palavra-congelado.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-congelado",
+              "description": "Estado do mar preso — o barco deixa de «passar» e passa a *ficar*; elo com Vida."
+            },
+            {
+              "label": "Inspeção: Neve — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Neve — léxico Tamara …",
+              "href": "/posts/post-inspecao-palavra-neve.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-neve",
+              "description": "Cobertura branca do Ártico — paisagem e ruído branco da narrativa de Tamara."
+            },
+            {
+              "label": "Inspeção: Água — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Água — léxico Tamara …",
+              "href": "/posts/post-inspecao-palavra-agua.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-agua",
+              "description": "Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem."
+            },
+            {
+              "label": "Inspeção: Navegar — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Navegar — léxico Tama…",
+              "href": "/posts/post-inspecao-palavra-navegar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-navegar",
+              "description": "Conduzir o barco e a própria rota — ofício Klink; no BudGanja liga a caminho e gesto."
+            },
+            {
+              "label": "Inspeção: Invernagem — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Invernagem — léxico T…",
+              "href": "/posts/post-inspecao-palavra-invernagem.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-invernagem",
+              "description": "Permanecer o inverno inteiro no gelo — feito âncora de Tamara no Ártico; eixo do livro."
+            },
+            {
+              "label": "Inspeção: Inverno — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Inverno — léxico Tama…",
+              "href": "/posts/post-inspecao-palavra-inverno.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-inverno",
+              "description": "Estação e título — *Bom dia, Inverno*: cumprimentar o frio sem romantizar o isolamento."
+            },
+            {
+              "label": "Inspeção: Gelo — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Gelo — léxico Tamara …",
+              "href": "/posts/post-inspecao-palavra-gelo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-gelo",
+              "description": "Água sólida que prende o barco — matéria da invernagem ártica narrada em *Bom dia, Inverno*."
+            },
+            {
+              "label": "Inspeção: Mar — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Mar — léxico Tamara /…",
+              "href": "/posts/post-inspecao-palavra-mar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mar",
+              "description": "Oceano e horizonte — no laboratório cruza com caminho, Vida e a travessia solitária de Tamara."
+            },
+            {
+              "label": "Inspeção: Barco — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Barco — léxico Tamara…",
+              "href": "/posts/post-inspecao-palavra-barco.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-barco",
+              "description": "Embarcação — no universo Tamara é casa, oficina e corpo da invernagem; elo do livro *Bom dia, Inverno*."
+            },
+            {
+              "label": "Inspeção: A vingança nunca é plena — mata a alma e a envenena",
+              "tileLabel": "Inspeção: A vingança nunca é pl…",
+              "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-vinganca-mata-alma-envenena",
+              "description": "Expressões: «A vingança nunca é plena, mata a alma e a envenena» — ditado popular via Seu Madruga (*Chaves*); o rancor como veneno que o próprio sujeito ingere."
+            },
+            {
+              "label": "Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo",
+              "tileLabel": "Divulgação: Bom dia, Inverno — …",
+              "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-bom-dia-inverno",
+              "description": "Bom dia, Inverno como mudinha da Vida: invernagem no gelo, léxico, Artes irmãs (Águas / Lágrimas) e Legado Klink."
+            },
+            {
+              "label": "Inspeção: Balde — volume, transporte e o gesto de regar",
+              "tileLabel": "Inspeção: Balde — volume, trans…",
+              "href": "/posts/post-inspecao-palavra-balde.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-balde",
+              "description": "Palavras: «balde» (recipiente de origem duvidosa) e «em/de balde» (árabe *bāṭil*) — utensílio de volume no cultivo BudGanja, sem confundir com «em vão»."
+            },
+            {
+              "label": "Inspeção: Gesto — a palavra que liga o laboratório inteiro",
+              "tileLabel": "Inspeção: Gesto — a palavra que…",
+              "href": "/posts/post-inspecao-palavra-gesto.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-gesto",
+              "description": "Palavras: «gesto» / «gestos» (latim *gestus*) — o acto mínimo no BudGanja: cultivar, inspecionar, narrar, medir, ficar e partilhar."
+            },
+            {
+              "label": "Inspeção: Verdade — a palavra de verificar no laboratório",
+              "tileLabel": "Inspeção: Verdade — a palavra d…",
+              "href": "/posts/post-inspecao-palavra-verdade.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-verdade",
+              "description": "Palavras: «verdade» (latim *vērĭtās*) — afirmar com método no BudGanja: citar, medir e não fabricar evidência."
+            },
+            {
+              "label": "Inspeção: Criatividade — a palavra de fazer nascer no laboratório",
+              "tileLabel": "Inspeção: Criatividade — a pala…",
+              "href": "/posts/post-inspecao-palavra-criatividade.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-criatividade",
+              "description": "Palavras: «criatividade» (latim *creāre*) — inventar com método no BudGanja: cultivo, Vida, fichas, poemas e ferramentas."
+            },
+            {
+              "label": "Inspeção: Águas do Mar e Lágrimas — poesia do laboratório entre oceano e peito",
+              "tileLabel": "Inspeção: Águas do Mar e Lágrim…",
+              "href": "/posts/post-inspecao-arte-aguas-e-lagrimas.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-aguas-e-lagrimas",
+              "description": "Artes · poesia original: o sal do mar e o da lágrima — máscara, porto no olho e o universo Vida que ensina a ficar."
+            },
+            {
+              "label": "Inspeção: Álvares de Azevedo — homenagem ao poeta da Lira e elo com Lágrimas da Vida",
+              "tileLabel": "Inspeção: Álvares de Azevedo — …",
+              "href": "/posts/post-inspecao-figura-alvares-de-azevedo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-alvares-de-azevedo",
+              "description": "Pessoas × Artes: homenagem a Álvares de Azevedo (1831–1852) — ofício ultrarromântico, com elo principal no poema Lágrimas da Vida; distinto do Legado canábico."
+            },
+            {
+              "label": "Inspeção: Guia Farmácia Viva — plantas medicinais e cannabis no SUS",
+              "tileLabel": "Inspeção: Guia Farmácia Viva — …",
+              "href": "/posts/post-inspecao-guia-farmacia-viva.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-guia-farmacia-viva",
+              "description": "Resumo da Aula 5 XIV (Jaqueline): Farmácia Viva como política do SUS, Portaria 886/2010, modalidades e o lugar da cannabis na cadeia pública."
+            },
+            {
+              "label": "Inspeção: Guia canabiméticos — modular o SEC por via exógena",
+              "tileLabel": "Inspeção: Guia canabiméticos — …",
+              "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-guia-canabimeticos-modulacao",
+              "description": "Resumo da Aula 7 XIV (Eliana): modulação exógena, CB1/CB2, canabiméticos e moléculas em pesquisa — irmão do guia de meditação (via endógena)."
+            },
+            {
+              "label": "Inspeção: Lágrimas da Vida — o poema de Álvares de Azevedo e a máscara que chora",
+              "tileLabel": "Inspeção: Lágrimas da Vida — o …",
+              "href": "/posts/post-inspecao-arte-lagrimas-da-vida.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-lagrimas-da-vida",
+              "description": "Artes · poesia: «Lágrimas da Vida» (Álvares de Azevedo, *Lira dos Vinte Anos*) — ultrarromantismo, lágrima escondida e elo com a trilha Vida."
+            },
+            {
+              "label": "Inspeção: Guia palavras — léxico «Da molécula ao lixo» (destaque e justificação)",
+              "tileLabel": "Inspeção: Guia palavras — léxic…",
+              "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-guia-palavras-molecula-ao-lixo",
+              "description": "As 23 palavras novas do Guia ligadas à pesquisa molécula→lixo: destaque, famílias semânticas e por que cada uma entra no catálogo."
+            },
+            {
+              "label": "Inspeção: Guia quimiotipos — THC, CBD, CBG e a composição da cannabis",
+              "tileLabel": "Inspeção: Guia quimiotipos — TH…",
+              "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-guia-quimiotipos-cannabis",
+              "description": "Resumo da Aula 10 XIV (Diogo): metabólitos, biossíntese, cinco quimiotipos e literacia fitoterápico × isolado. Não é laudo nem protocolo."
+            },
+            {
+              "label": "Inspeção: Simbiose — a palavra do viver juntos",
+              "tileLabel": "Inspeção: Simbiose — a palavra …",
+              "href": "/posts/post-inspecao-palavra-simbiose.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-simbiose",
+              "description": "Palavras: «simbiose» (grego *syn* + *bíōsis*) — coabitação de vidas, mutualismo popular, solo vivo e metáfora cultural (Venom / «nós»)."
             },
             {
               "label": "Inspeção: Guia meditação — modular o endocanabinoidoma (via endógena)",
@@ -1552,148 +1152,884 @@ window.__BIBLIOTECA_NAV__ = {
               "featured": true
             },
             {
-              "label": "Inspeção: Guia quimiotipos — THC, CBD, CBG e a composição da cannabis",
-              "tileLabel": "Inspeção: Guia quimiotipos — TH…",
-              "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html",
+              "label": "Inspeção: Guia Defensoria e acesso gratuito — seletividade sem honorários",
+              "tileLabel": "Inspeção: Guia Defensoria e ace…",
+              "href": "/posts/post-inspecao-guia-defensoria-acesso.html",
               "icon": "🔍",
-              "slug": "post-inspecao-guia-quimiotipos-cannabis",
-              "description": "Resumo da Aula 10 XIV (Diogo): metabólitos, biossíntese, cinco quimiotipos e literacia fitoterápico × isolado. Não é laudo nem protocolo."
+              "slug": "post-inspecao-guia-defensoria-acesso",
+              "description": "Guia para Defensoria e quem não tem advogado particular: mesmos filtros de HC/seletividade (laudo, tempo, tipificação porte×tráfico) sem o preço do particular. Não é parecer."
             },
             {
-              "label": "Inspeção: Guia canabiméticos — modular o SEC por via exógena",
-              "tileLabel": "Inspeção: Guia canabiméticos — …",
-              "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html",
+              "label": "Inspeção: Guia associações de pacientes — cultivo institucional × seletividade",
+              "tileLabel": "Inspeção: Guia associações de p…",
+              "href": "/posts/post-inspecao-guia-associacoes-pacientes.html",
               "icon": "🔍",
-              "slug": "post-inspecao-guia-canabimeticos-modulacao",
-              "description": "Resumo da Aula 7 XIV (Eliana): modulação exógena, CB1/CB2, canabiméticos e moléculas em pesquisa — irmão do guia de meditação (via endógena)."
+              "slug": "post-inspecao-guia-associacoes-pacientes",
+              "description": "Guia para associações: cultivo/produção institucional (RDC/PJ), custo de ser membro-paciente, contraste com HC individual e seletividade. Não é manual de licenciamento."
             },
             {
-              "label": "Inspeção: Guia Farmácia Viva — plantas medicinais e cannabis no SUS",
-              "tileLabel": "Inspeção: Guia Farmácia Viva — …",
-              "href": "/posts/post-inspecao-guia-farmacia-viva.html",
+              "label": "Inspeção: Venom — o filme de 2018, a simbiose e o «nós»",
+              "tileLabel": "Inspeção: Venom — o filme de 20…",
+              "href": "/posts/post-inspecao-filme-venom.html",
               "icon": "🔍",
-              "slug": "post-inspecao-guia-farmacia-viva",
-              "description": "Resumo da Aula 5 XIV (Jaqueline): Farmácia Viva como política do SUS, Portaria 886/2010, modalidades e o lugar da cannabis na cadeia pública."
+              "slug": "post-inspecao-filme-venom",
+              "description": "Artes · cinema: Venom (2018, Fleischer / Hardy) — entrada SSU, génese do personagem nos comics Marvel, simbiose e «nós» como parábola de agência partilhada."
             },
             {
-              "label": "Inspeção: Guia palavras — léxico «Da molécula ao lixo» (destaque e justificação)",
-              "tileLabel": "Inspeção: Guia palavras — léxic…",
-              "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html",
+              "label": "Inspeção: Guia cannabis medicinal — mapa para farmacêuticos (dispensação × seletividade)",
+              "tileLabel": "Inspeção: Guia cannabis medicin…",
+              "href": "/posts/post-inspecao-guia-cannabis-farmaceuticos.html",
               "icon": "🔍",
-              "slug": "post-inspecao-guia-palavras-molecula-ao-lixo",
-              "description": "As 23 palavras novas do Guia ligadas à pesquisa molécula→lixo: destaque, famílias semânticas e por que cada uma entra no catálogo."
+              "slug": "post-inspecao-guia-cannabis-farmaceuticos",
+              "description": "Guia para farmacêuticos: produto regulado, importação, limites da farmácia vs óleo/HC, CRF/ANVISA e seletividade de quem chega ao balcão. Não é protocolo clínico."
             },
             {
-              "label": "Inspeção: Barco — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Barco — léxico Tamara…",
-              "href": "/posts/post-inspecao-palavra-barco.html",
+              "label": "Inspeção: RDC × Autorização sanitária — camada ANVISA do acesso",
+              "tileLabel": "Inspeção: RDC × Autorização san…",
+              "href": "/posts/post-inspecao-palavra-rdc-autorizacao-sanitaria.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-barco",
-              "description": "Embarcação — no universo Tamara é casa, oficina e corpo da invernagem; elo do livro *Bom dia, Inverno*."
+              "slug": "post-inspecao-palavra-rdc-autorizacao-sanitaria",
+              "description": "Par: RDC × autorização sanitária — normas ANVISA (incl. marcos 2026 de cultivo/produção institucional) distintas de HC individual e de descriminalização do porte."
             },
             {
-              "label": "Inspeção: Mar — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Mar — léxico Tamara /…",
-              "href": "/posts/post-inspecao-palavra-mar.html",
+              "label": "Inspeção: Descriminalização — atipicidade penal ≠ legalização",
+              "tileLabel": "Inspeção: Descriminalização — a…",
+              "href": "/posts/post-inspecao-palavra-descriminalizacao.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-mar",
-              "description": "Oceano e horizonte — no laboratório cruza com caminho, Vida e a travessia solitária de Tamara."
+              "slug": "post-inspecao-palavra-descriminalizacao",
+              "description": "Palavra: descriminalização — no debate brasileiro, frequentemente aponta à atipicidade penal do porte (Tema 506); não é legalização nem autorização de cultivo."
             },
             {
-              "label": "Inspeção: Gelo — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Gelo — léxico Tamara …",
-              "href": "/posts/post-inspecao-palavra-gelo.html",
+              "label": "Inspeção: Porte × Tráfico — par semântico da seletividade na rua",
+              "tileLabel": "Inspeção: Porte × Tráfico — par…",
+              "href": "/posts/post-inspecao-palavra-porte-trafico.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-gelo",
-              "description": "Água sólida que prende o barco — matéria da invernagem ártica narrada em *Bom dia, Inverno*."
+              "slug": "post-inspecao-palavra-porte-trafico",
+              "description": "Par: porte × tráfico — o mesmo volume pode ser lido como uso ou mercancia conforme contexto, classe e olhar policial; elo com Tema 506 e seletividade."
             },
             {
-              "label": "Inspeção: Inverno — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Inverno — léxico Tama…",
-              "href": "/posts/post-inspecao-palavra-inverno.html",
+              "label": "Inspeção: Lei 11.343/2006 — âncora tipológica da Lei de Drogas",
+              "tileLabel": "Inspeção: Lei 11.343/2006 — ânc…",
+              "href": "/posts/post-inspecao-palavra-lei-11-343.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-inverno",
-              "description": "Estação e título — *Bom dia, Inverno*: cumprimentar o frio sem romantizar o isolamento."
+              "slug": "post-inspecao-palavra-lei-11-343",
+              "description": "Palavra-âncora: Lei 11.343/2006 — fundo tipológico onde cai quem não tem estatuto processual/sanitário (HC, produto ANVISA). Não é o texto integral da lei."
             },
             {
-              "label": "Inspeção: Invernagem — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Invernagem — léxico T…",
-              "href": "/posts/post-inspecao-palavra-invernagem.html",
+              "label": "Inspeção: Guia cannabis medicinal — mapa para médicos (acesso × seletividade)",
+              "tileLabel": "Inspeção: Guia cannabis medicin…",
+              "href": "/posts/post-inspecao-guia-cannabis-medicos.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-invernagem",
-              "description": "Permanecer o inverno inteiro no gelo — feito âncora de Tamara no Ártico; eixo do livro."
+              "slug": "post-inspecao-guia-cannabis-medicos",
+              "description": "Guia para médicos: receita, laudo, produto ANVISA/importação e papel no HC — seletividade de quem vira paciente de facto. Elo com o guia para advogados. Não é protocolo clínico."
             },
             {
-              "label": "Inspeção: Navegar — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Navegar — léxico Tama…",
-              "href": "/posts/post-inspecao-palavra-navegar.html",
+              "label": "Inspeção: Guia HC e seletividade — mapa para advogados (com HC × sem HC)",
+              "tileLabel": "Inspeção: Guia HC e seletividad…",
+              "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-navegar",
-              "description": "Conduzir o barco e a própria rota — ofício Klink; no BudGanja liga a caminho e gesto."
+              "slug": "post-inspecao-guia-hc-seletividade-advogados",
+              "description": "Guia para advogados: habeas corpus / salvo-conduto no cultivo medicinal vs repressão sem HC — seletividade de classe, âncoras STJ/STF e rede BudGanja de classificação legal. Não é parecer jurídico."
             },
             {
-              "label": "Inspeção: Água — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Água — léxico Tamara …",
-              "href": "/posts/post-inspecao-palavra-agua.html",
+              "label": "Inspeção: Portaria — forma normativa das listas de controlo",
+              "tileLabel": "Inspeção: Portaria — forma norm…",
+              "href": "/posts/post-inspecao-palavra-portaria.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-agua",
-              "description": "Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem."
+              "slug": "post-inspecao-palavra-portaria",
+              "description": "Palavra: portaria — forma normativa que materializa listas e regras; elo com ANVISA, Lista F e entorpecente, sem reproduzir o texto oficial."
             },
             {
-              "label": "Inspeção: Neve — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Neve — léxico Tamara …",
-              "href": "/posts/post-inspecao-palavra-neve.html",
+              "label": "Inspeção: ANVISA — instituição no mapa regulatório BudGanja",
+              "tileLabel": "Inspeção: ANVISA — instituição …",
+              "href": "/posts/post-inspecao-palavra-anvisa.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-neve",
-              "description": "Cobertura branca do Ártico — paisagem e ruído branco da narrativa de Tamara."
+              "slug": "post-inspecao-palavra-anvisa",
+              "description": "Palavra: ANVISA — agência reguladora no mapa institucional do laboratório; elo com portaria, lista F e cannabis medicinal, sem parecer jurídico."
             },
             {
-              "label": "Inspeção: Congelado — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Congelado — léxico Ta…",
-              "href": "/posts/post-inspecao-palavra-congelado.html",
+              "label": "Inspeção: Proibição e Proibicionismo — camada política da classificação",
+              "tileLabel": "Inspeção: Proibição e Proibicio…",
+              "href": "/posts/post-inspecao-palavra-proibicao-proibicionismo.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-congelado",
-              "description": "Estado do mar preso — o barco deixa de «passar» e passa a *ficar*; elo com Vida."
+              "slug": "post-inspecao-palavra-proibicao-proibicionismo",
+              "description": "Palavras: proibição × proibicionismo — camada política/histórica das listas e do estigma; elo com ilícito, maconha e formação Sidarta/CEBRID."
             },
             {
-              "label": "Inspeção: Risco — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Risco — léxico Tamara…",
-              "href": "/posts/post-inspecao-palavra-risco.html",
+              "label": "Inspeção: Alucinógeno — classe de efeito e literacia XIV",
+              "tileLabel": "Inspeção: Alucinógeno — classe …",
+              "href": "/posts/post-inspecao-palavra-alucinogeno.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-risco",
-              "description": "Perigo calculado da travessia e da invernagem — Amyr planeia; Tamara assume o próprio."
+              "slug": "post-inspecao-palavra-alucinogeno",
+              "description": "Palavra: alucinógeno — classe de efeito (altera percepção); distinta de psicoativo, psicodélico e entorpecente; elo com ayahuasca/cogumelo no Guia."
             },
             {
-              "label": "Inspeção: Solitário — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Solitário — léxico Ta…",
-              "href": "/posts/post-inspecao-palavra-solitario.html",
+              "label": "Inspeção: Estimulante — classe de efeito no sistema nervoso",
+              "tileLabel": "Inspeção: Estimulante — classe …",
+              "href": "/posts/post-inspecao-palavra-estimulante.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-solitario",
-              "description": "Navegar e invernar sozinha — não isolamento romântico: método, medo e escrita."
+              "slug": "post-inspecao-palavra-estimulante",
+              "description": "Palavra: estimulante — classe de efeito (aumenta actividade do SNC); par de depressor e alucinógeno; distinta de entorpecente."
             },
             {
-              "label": "Inspeção: Groenlândia — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Groenlândia — léxico …",
-              "href": "/posts/post-inspecao-palavra-groenlandia.html",
+              "label": "Inspeção: Depressor — classe de efeito no sistema nervoso",
+              "tileLabel": "Inspeção: Depressor — classe de…",
+              "href": "/posts/post-inspecao-palavra-depressor.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-groenlandia",
-              "description": "Palco da invernagem ártica de Tamara — gelo, animais e o livro *Bom dia, Inverno*."
+              "slug": "post-inspecao-palavra-depressor",
+              "description": "Palavra: depressor — classe de efeito (diminui actividade do SNC); distinta de entorpecente (lista) e de psicoativo (Guia técnico)."
             },
             {
-              "label": "Inspeção: Anzol — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Anzol — léxico Tamara…",
-              "href": "/posts/post-inspecao-palavra-anzol.html",
+              "label": "Inspeção: Opioide e Opiáceo — tradição clínica por trás de narcótico",
+              "tileLabel": "Inspeção: Opioide e Opiáceo — t…",
+              "href": "/posts/post-inspecao-palavra-opioide-opiaceo.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-anzol",
-              "description": "Ferramenta de pesca na narrativa — gesto concreto de sobrevivência no gelo."
+              "slug": "post-inspecao-palavra-opioide-opiaceo",
+              "description": "Palavras: opioide × opiáceo — tradição clínica (ópio / analgésicos) que explica parte do rótulo narcótico; distinta da rede de nomes da cannabis."
             },
             {
-              "label": "Inspeção: Livro — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Livro — léxico Tamara…",
-              "href": "/posts/post-inspecao-palavra-livro.html",
+              "label": "Inspeção: Ilícito — polo jurídico do duplo sentido de droga",
+              "tileLabel": "Inspeção: Ilícito — polo jurídi…",
+              "href": "/posts/post-inspecao-palavra-ilicito.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-livro",
-              "description": "Objecto e ofício — *Bom dia, Inverno* (Companhia das Letras): a invernagem vira página."
+              "slug": "post-inspecao-palavra-ilicito",
+              "description": "Palavra: ilícito — polo jurídico que fecha o contraste com droga (remédio ↔ ilícito no senso comum) e com substância controlada."
+            },
+            {
+              "label": "Inspeção: Substância controlada — meta-rótulo das listas",
+              "tileLabel": "Inspeção: Substância controlada…",
+              "href": "/posts/post-inspecao-palavra-substancia-controlada.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-substancia-controlada",
+              "description": "Palavra: substância controlada — meta-rótulo do que as listas fazem; distinto de droga no senso comum e dos nomes populares da cannabis."
+            },
+            {
+              "label": "Inspeção: Estupefaciente — rótulo internacional vizinho de narcótico",
+              "tileLabel": "Inspeção: Estupefaciente — rótu…",
+              "href": "/posts/post-inspecao-palavra-estupefaciente.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-estupefaciente",
+              "description": "Palavra: estupefaciente — rótulo internacional/ONU vizinho de narcótico; o laboratório separa-o de entorpecente nas listas brasileiras modernas."
+            },
+            {
+              "label": "Inspeção: Lista F — âncora brasileira das listas de controlo",
+              "tileLabel": "Inspeção: Lista F — âncora bras…",
+              "href": "/posts/post-inspecao-palavra-lista-f.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-lista-f",
+              "description": "Palavra: Lista F — âncora brasileira das listas de substâncias controladas; o laboratório indexa o tipo de linguagem, não o anexo integral da portaria."
+            },
+            {
+              "label": "Inspeção: Psicotrópico — classe clínica e controlo no laboratório",
+              "tileLabel": "Inspeção: Psicotrópico — classe…",
+              "href": "/posts/post-inspecao-palavra-psicotropico.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-psicotropico",
+              "description": "Palavra: psicotrópico — rótulo clínico/de controlo sobre substâncias que actuam no sistema nervoso; distinto de entorpecente, narcótico e droga no senso comum."
+            },
+            {
+              "label": "Inspeção: Diretriz OMS — Ingestão de açúcares livres (2015)",
+              "tileLabel": "Inspeção: Diretriz OMS — Ingest…",
+              "href": "/posts/post-inspecao-artigo-oms-acucares-livres-2015.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-artigo-oms-acucares-livres-2015",
+              "description": "Auditoria da diretriz WHO 2015 sobre açúcares livres (<10% da energia; condicional <5%): âncora global para cana, chocolate industrial e divulgação Lair — não é paper único, é norma de saúde pública."
+            },
+            {
+              "label": "Inspeção: Artigo — Efeitos GI da caseína A1 vs A2 (Brooke-Taylor et al., 2017)",
+              "tileLabel": "Inspeção: Artigo — Efeitos GI d…",
+              "href": "/posts/post-inspecao-artigo-brooke-taylor-caseina-a1-a2-2017.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-artigo-brooke-taylor-caseina-a1-a2-2017",
+              "description": "Auditoria da revisão sistemática Advances in Nutrition (2017): 39 estudos sobre β-caseína A1 vs A2, trânsito intestinal, BCM-7 e desconforto digestivo — elo científico da ficha Caseína e do chocolate ao leite."
+            },
+            {
+              "label": "Inspeção: Artigo — Dietas ultraprocessadas, calorias e peso (Hall et al., 2019)",
+              "tileLabel": "Inspeção: Artigo — Dietas ultra…",
+              "href": "/posts/post-inspecao-artigo-hall-ultraprocessados-2019.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-artigo-hall-ultraprocessados-2019",
+              "description": "Auditoria do RCT inpatient NIH (Hall et al., Cell Metabolism 2019): dieta ultraprocessada aumentou ~508 kcal/dia e +0,9 kg em 2 semanas vs. dieta não processada emparelhada — eixo central do chocolate industrial."
+            },
+            {
+              "label": "Inspeção: Entorpecente e Narcótico — classificação legal no laboratório",
+              "tileLabel": "Inspeção: Entorpecente e Narcót…",
+              "href": "/posts/post-inspecao-palavra-entorpecente-narcotico.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-entorpecente-narcotico",
+              "description": "Palavras: entorpecente × narcótico — rótulos de controlo e clínica, distintos de droga no senso comum e da rede de nomes (maconha, cannabis, ganja…)."
+            },
+            {
+              "label": "Inspeção: Artigo — As duas faces do trigo (Wieser, Koehler & Scherf, 2020)",
+              "tileLabel": "Inspeção: Artigo — As duas face…",
+              "href": "/posts/post-inspecao-artigo-wieser-duas-faces-trigo-2020.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-artigo-wieser-duas-faces-trigo-2020",
+              "description": "Auditoria da revisão Frontiers in Nutrition (2020): trigo como alimento básico nutritivo vs. doenças relacionadas com o trigo (WRDs) e a confusão gerada por livros como Barriga de Trigo."
+            },
+            {
+              "label": "Inspeção: Guia de Palavras — auditoria das 139 entradas e do acervo",
+              "tileLabel": "Inspeção: Guia de Palavras — au…",
+              "href": "/posts/post-inspecao-guia-palavras-cobertura.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-guia-palavras-cobertura",
+              "description": "Cobertura do glossário BudGanja cruzada com inspeções, plantas, páginas e rascunhos XIV — hrefs, profundidade e lacunas."
+            },
+            {
+              "label": "Inspeção: Artigo — O trigo engorda e adoece? (Brouns et al., 2013)",
+              "tileLabel": "Inspeção: Artigo — O trigo engo…",
+              "href": "/posts/post-inspecao-artigo-brouns-trigo-obesidade-2013.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-artigo-brouns-trigo-obesidade-2013",
+              "description": "Auditoria do artigo de Brouns, van Buul & Shewry (Journal of Cereal Science, 2013) que examina as teses populares anti-trigo (incl. Barriga de Trigo / Davis) e conclui que o trigo integral não explica a obesidade na população geral."
+            },
+            {
+              "label": "Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite",
+              "tileLabel": "Inspeção: Chocolate industrial …",
+              "href": "/posts/post-inspecao-derivado-chocolate.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-chocolate",
+              "description": "Produtos nocivos: chocolate industrial como matriz que junta cacau, açúcar, farinha/trigo/glúten, leite/caseína, Barriga de Trigo (Davis) e o léxico catalogado — hub que relaciona tudo."
+            },
+            {
+              "label": "Inspeção: William Davis — cardiologista de Barriga de Trigo e o método anti-trigo",
+              "tileLabel": "Inspeção: William Davis — cardi…",
+              "href": "/posts/post-inspecao-figura-william-davis.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-william-davis",
+              "description": "Pessoas × Artes: William Davis — cardiologista preventivo e autor de Barriga de Trigo (*Wheat Belly*, 2011); método de divulgação sobre trigo/glúten. Livro em Artes; elo em Glúten / farinha."
+            },
+            {
+              "label": "Inspeção: Barriga de Trigo — o livro de William Davis e a tese do trigo moderno",
+              "tileLabel": "Inspeção: Barriga de Trigo — o …",
+              "href": "/posts/post-inspecao-arte-barriga-de-trigo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-barriga-de-trigo",
+              "description": "Artes: Barriga de Trigo (*Wheat Belly*, 2011) — best-seller de William Davis sobre trigo, glúten, amilopectina A e gordura visceral. Autor em Pessoas; elo em Glúten / farinha."
+            },
+            {
+              "label": "Análise: danos dos produtos nocivos × vídeos catalogados",
+              "tileLabel": "Análise: danos dos produtos noc…",
+              "href": "/posts/post-inspecao-derivado-analise-danos-videos.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-analise-danos-videos",
+              "description": "Onde o acervo de vídeos do projecto sustenta (ou não) a rede açúcar · farinha · leite · chocolate: quase todo o discurso está no Lair; MovReCam/CANABinALL quase não entram neste eixo."
+            },
+            {
+              "label": "Inspeção: Glúten / farinha — trigo e proteína nociva ao organismo",
+              "tileLabel": "Inspeção: Glúten / farinha — tr…",
+              "href": "/posts/post-inspecao-derivado-gluten.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-gluten",
+              "description": "Produtos nocivos: glúten e farinha de trigo — celíaca, sensibilidade e ultraprocessados versus cereal tradicional. Elo com caseína, açúcar e chocolate industrial."
+            },
+            {
+              "label": "Inspeção: Caseína — leite bovino e proteína nociva ao organismo",
+              "tileLabel": "Inspeção: Caseína — leite bovin…",
+              "href": "/posts/post-inspecao-derivado-caseina.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-caseina",
+              "description": "Produtos nocivos: caseína do leite (*Bos taurus*) — A1/BCM-7, inflamação (limites de evidência) e laticínios ultraprocessados versus leite tradicional. Elo com glúten e ficha da vaca."
+            },
+            {
+              "label": "Inspeção: Nojinho — a palavra verde da aversão que protege",
+              "tileLabel": "Inspeção: Nojinho — a palavra v…",
+              "href": "/posts/post-inspecao-palavra-nojinho.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-nojinho",
+              "description": "Palavras: «nojinho» — forma BR de Divertida Mente para Disgust; aversão protetora com humor e limite."
+            },
+            {
+              "label": "Inspeção: Medo — a palavra roxa da vigilância interior",
+              "tileLabel": "Inspeção: Medo — a palavra roxa…",
+              "href": "/posts/post-inspecao-palavra-medo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-medo",
+              "description": "Palavras: «medo» — em Divertida Mente, a emoção da segurança e do ensaio do risco; ofício protetor."
+            },
+            {
+              "label": "Inspeção: Raiva — a palavra vermelha da sala de comando",
+              "tileLabel": "Inspeção: Raiva — a palavra ver…",
+              "href": "/posts/post-inspecao-palavra-raiva.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-raiva",
+              "description": "Palavras: «raiva» — em Divertida Mente, fogo de limite e indignação; emoção com ofício, não vilania."
+            },
+            {
+              "label": "Inspeção: Tristeza — a palavra azul que também cuida",
+              "tileLabel": "Inspeção: Tristeza — a palavra …",
+              "href": "/posts/post-inspecao-palavra-tristeza.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-tristeza",
+              "description": "Palavras: «tristeza» — em Divertida Mente, a emoção que abre o pedido de ajuda; sem ela a Alegria não basta."
+            },
+            {
+              "label": "Inspeção: Alegria — a palavra amarela da Riley",
+              "tileLabel": "Inspeção: Alegria — a palavra a…",
+              "href": "/posts/post-inspecao-palavra-alegria.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-alegria",
+              "description": "Palavras: «alegria» — emoção-âncora de Divertida Mente; quer o bem de Riley e aprende a partilhar o comando com a Tristeza."
+            },
+            {
+              "label": "Inspeção: Emoção — o hub lexical da Riley (Divertida Mente)",
+              "tileLabel": "Inspeção: Emoção — o hub lexica…",
+              "href": "/posts/post-inspecao-palavra-emocao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-emocao",
+              "description": "Palavras: «emoção» (*ēmovēre*) — hub das cinco emoções da Riley em Divertida Mente; literacia do sentir com elos a Alegria, Tristeza, Raiva, Medo e Nojinho."
+            },
+            {
+              "label": "Inspeção: Divertida Mente — as emoções da Riley e a mensagem que importa",
+              "tileLabel": "Inspeção: Divertida Mente — as …",
+              "href": "/posts/post-inspecao-filme-divertida-mente.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-divertida-mente",
+              "description": "Artes: Divertida Mente (Pixar, 2015) — literacia emocional com carinho; Alegria, Tristeza, Raiva, Medo e Nojinho em rede com a série Palavras. Todas as emoções importam."
+            },
+            {
+              "label": "Inspeção: Animal — a palavra do alento, do vivo e do duplo sentido",
+              "tileLabel": "Inspeção: Animal — a palavra do…",
+              "href": "/posts/post-inspecao-palavra-animal.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-animal",
+              "description": "Palavras: «animal» (latim *anima* → *animal*) — ser vivo, catálogo Animais e o segundo sentido social (insulto / intensificador); elo com coelho."
+            },
+            {
+              "label": "Inspeção: Derivados do coco — açúcar, óleo e química industrial",
+              "tileLabel": "Inspeção: Derivados do coco — a…",
+              "href": "/posts/post-inspecao-derivado-coco.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-coco",
+              "description": "Derivados de risco: do fruto (*Cocos nucifera*) ao ultraprocessado — água adoçada, leite UHT, óleo refinado e doces; mapa de açúcares livres + lípidos + aditivos, cruzado com a ficha planta e com a cana."
+            },
+            {
+              "label": "Inspeção: Coelho — a palavra da toca e da entrada na investigação",
+              "tileLabel": "Inspeção: Coelho — a palavra da…",
+              "href": "/posts/post-inspecao-palavra-coelho.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-coelho",
+              "description": "Palavras: «coelho» (latim *cuniculus*) — animal, Coelho Branco e buraco do coelho como metáfora de entrada; elos com Alice, caminho, passar e Matrix."
+            },
+            {
+              "label": "Inspeção: Cânhamo — fibra industrial coberta pela confusão com «droga»",
+              "tileLabel": "Inspeção: Cânhamo — fibra indus…",
+              "href": "/posts/post-inspecao-palavra-canhamo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-canhamo",
+              "description": "Palavras: «cânhamo» — originalidade técnica (fibra/óleo industrial) coberta pela confusão moral com maconha/droga."
+            },
+            {
+              "label": "Inspeção: Droga — do remédio ao ilícito no senso comum",
+              "tileLabel": "Inspeção: Droga — do remédio ao…",
+              "href": "/posts/post-inspecao-palavra-droga.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-droga",
+              "description": "Palavras: «droga» — originalidade farmacêutica/medicinal (eco de phármakon) coberta pelo sentido de ilícito, vício e crime."
+            },
+            {
+              "label": "Inspeção: Erva — do sentido botânico amplo ao eufemismo",
+              "tileLabel": "Inspeção: Erva — do sentido bot…",
+              "href": "/posts/post-inspecao-palavra-erva.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-erva",
+              "description": "Palavras: «erva» — originalidade (planta herbácea, chá, tempero) coberta pelo eufemismo de cannabis; prejuízo à literacia do catálogo medicinal."
+            },
+            {
+              "label": "Inspeção: Marijuana — do nome popular à arma da proibição",
+              "tileLabel": "Inspeção: Marijuana — do nome p…",
+              "href": "/posts/post-inspecao-palavra-marijuana.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-marijuana",
+              "description": "Palavras: «marijuana» / marihuana — originalidade mexicana/espanhola coberta pela propaganda proibicionista EUA (xenofobia e pânico moral)."
+            },
+            {
+              "label": "Inspeção: Cannabis — latinismo técnico e hierarquia de registos",
+              "tileLabel": "Inspeção: Cannabis — latinismo …",
+              "href": "/posts/post-inspecao-palavra-cannabis.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-cannabis",
+              "description": "Palavras: «cannabis» — originalidade botânica/grega-latina; segunda camada «palavra limpa» que pode apagar maconha/diamba ou ainda soar a «droga» na imprensa."
+            },
+            {
+              "label": "Inspeção: Diamba — cognato afro-brasileiro apagado pelo estigma",
+              "tileLabel": "Inspeção: Diamba — cognato afro…",
+              "href": "/posts/post-inspecao-palavra-diamba.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-diamba",
+              "description": "Palavras: «diamba» (e liamba/riamba) — originalidade bantu/afro-brasileira coberta pelo léxico pejorativo de maconha e pelo latinismo clínico."
+            },
+            {
+              "label": "Inspeção: Ganja — da rota índica à marca e à gíria global",
+              "tileLabel": "Inspeção: Ganja — da rota índic…",
+              "href": "/posts/post-inspecao-palavra-ganja.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-ganja",
+              "description": "Palavras: «ganja» — originalidade cultural índica/caribenha coberta por gíria e marketing (incl. BudGanja); mudança sem apagar a rota."
+            },
+            {
+              "label": "Inspeção: Celular — os riscos para a saúde das crianças (sociedade e mundo)",
+              "tileLabel": "Inspeção: Celular — os riscos p…",
+              "href": "/posts/post-inspecao-celular-riscos-saude-criancas.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-celular-riscos-saude-criancas",
+              "description": "Verificação do smartphone como equipamento social: riscos à saúde infantil (sono, visão, mente, aprendizagem), limites SBP/guia federal 2025, Lei 15.100/2025 e enquadramento mundial (UNESCO)."
+            },
+            {
+              "label": "Inspeção: Derivados da galinha — ultraprocessados e química industrial",
+              "tileLabel": "Inspeção: Derivados da galinha …",
+              "href": "/posts/post-inspecao-derivado-galinha.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-galinha",
+              "description": "Derivados de risco: separar galinha/ovo/carne frescos de nuggets e ultraprocessados industriais de frango."
+            },
+            {
+              "label": "Inspeção: Derivados da vaca — carnes processadas e laticínios industriais",
+              "tileLabel": "Inspeção: Derivados da vaca — c…",
+              "href": "/posts/post-inspecao-derivado-vaca.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-vaca",
+              "description": "Produtos nocivos / derivados: bovino fresco versus carnes processadas e laticínios industriais. Elo com a ficha da caseína."
+            },
+            {
+              "label": "Inspeção: Derivados do porco — embutidos e química industrial",
+              "tileLabel": "Inspeção: Derivados do porco — …",
+              "href": "/posts/post-inspecao-derivado-porco.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-porco",
+              "description": "Derivados de risco: carne de porco fresca e charcutaria artesanal versus embutidos industriais."
+            },
+            {
+              "label": "Inspeção: Derivados do peixe — empanados e ultraprocessados",
+              "tileLabel": "Inspeção: Derivados do peixe — …",
+              "href": "/posts/post-inspecao-derivado-peixe.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-peixe",
+              "description": "Derivados de risco: filé fresco de tilápia versus empanados e ultraprocessados de peixe."
+            },
+            {
+              "label": "Inspeção: Derivados da abelha — mel adulterado e açúcares industriais",
+              "tileLabel": "Inspeção: Derivados da abelha —…",
+              "href": "/posts/post-inspecao-derivado-abelha.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-abelha",
+              "description": "Derivados de risco: mel de qualidade e própolis versus mel adulterado com xaropes industriais."
+            },
+            {
+              "label": "Inspeção: Caminho — a palavra que liga o laboratório BudGanja",
+              "tileLabel": "Inspeção: Caminho — a palavra q…",
+              "href": "/posts/post-inspecao-palavra-caminho.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-caminho",
+              "description": "Palavras: «caminho» (latim vulgar *cammīnus*) — via, método e hub lexical que relaciona passar, Send Me On My Way, Heródoto, Artes, cultivo e o mapa de inspeções."
+            },
+            {
+              "label": "Inspeção: Produção animal — Galinha",
+              "tileLabel": "Inspeção: Produção animal — Gal…",
+              "href": "/posts/post-inspecao-animal-galinha.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-galinha",
+              "description": "Relatório educacional de Galinha (*Gallus gallus domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+            },
+            {
+              "label": "Inspeção: Produção animal — Vaca / boi",
+              "tileLabel": "Inspeção: Produção animal — Vac…",
+              "href": "/posts/post-inspecao-animal-vaca.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-vaca",
+              "description": "Relatório educacional de Vaca / boi (*Bos taurus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+            },
+            {
+              "label": "Inspeção: Produção animal — Porco",
+              "tileLabel": "Inspeção: Produção animal — Por…",
+              "href": "/posts/post-inspecao-animal-porco.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-porco",
+              "description": "Relatório educacional de Porco (*Sus scrofa domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+            },
+            {
+              "label": "Inspeção: Produção animal — Tilápia",
+              "tileLabel": "Inspeção: Produção animal — Til…",
+              "href": "/posts/post-inspecao-animal-peixe-tilapia.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-peixe-tilapia",
+              "description": "Relatório educacional de Tilápia (*Oreochromis niloticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+            },
+            {
+              "label": "Inspeção: Produção animal — Abelha",
+              "tileLabel": "Inspeção: Produção animal — Abe…",
+              "href": "/posts/post-inspecao-animal-abelha.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-abelha",
+              "description": "Relatório educacional de Abelha (*Apis mellifera): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+            },
+            {
+              "label": "Inspeção: Animal — Cão",
+              "tileLabel": "Inspeção: Animal — Cão",
+              "href": "/posts/post-inspecao-animal-cao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-cao",
+              "description": "Relatório educacional de Cão (*Canis lupus familiaris): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+            },
+            {
+              "label": "Inspeção: Animal — Gato",
+              "tileLabel": "Inspeção: Animal — Gato",
+              "href": "/posts/post-inspecao-animal-gato.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-gato",
+              "description": "Relatório educacional de Gato (*Felis catus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+            },
+            {
+              "label": "Inspeção: Animal — Cavalo",
+              "tileLabel": "Inspeção: Animal — Cavalo",
+              "href": "/posts/post-inspecao-animal-cavalo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-cavalo",
+              "description": "Relatório educacional de Cavalo (*Equus ferus caballus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+            },
+            {
+              "label": "Inspeção: Annie Leonard — divulgação da economia dos materiais e elo com A História das Coisas",
+              "tileLabel": "Inspeção: Annie Leonard — divul…",
+              "href": "/posts/post-inspecao-figura-annie-leonard.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-annie-leonard",
+              "description": "Pessoas × Artes: Annie Leonard — método de explicar a economia linear das coisas, com elo principal no livro A História das Coisas (2010); distinto do Legado canábico."
+            },
+            {
+              "label": "Inspeção: A História das Coisas — o livro de Leonard e a máquina extrair-fazer-descartar",
+              "tileLabel": "Inspeção: A História das Coisas…",
+              "href": "/posts/post-inspecao-arte-a-historia-das-coisas.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-a-historia-das-coisas",
+              "description": "Artes: A História das Coisas (*The Story of Stuff*, 2010/2011) — livro de Annie Leonard sobre a economia linear das coisas; vídeo 2007 como precursor. Autora em Pessoas."
+            },
+            {
+              "label": "Inspeção: Nick Tosches — prosa afiada e elo com A Última Casa de Ópio",
+              "tileLabel": "Inspeção: Nick Tosches — prosa …",
+              "href": "/posts/post-inspecao-figura-nick-tosches.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-nick-tosches",
+              "description": "Pessoas × Artes: Nick Tosches — método jornalístico-literário, com elo principal no livro A Última Casa de Ópio (2002); distinto do Legado canábico."
+            },
+            {
+              "label": "Inspeção: A Última Casa de Ópio — a procura de Tosches e a crítica ao placebo",
+              "tileLabel": "Inspeção: A Última Casa de Ópio…",
+              "href": "/posts/post-inspecao-arte-a-ultima-casa-de-opio.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-a-ultima-casa-de-opio",
+              "description": "Artes: A Última Casa de Ópio (*The Last Opium Den*, 2002) — livro-reportagem de Nick Tosches; viagem, memória das dens e crítica ao consumismo. Autor em Pessoas. Sem romantizar ópio."
+            },
+            {
+              "label": "Inspeção: Anthony Henman — antropologia da diamba e elo com Diamba Sarabamba",
+              "tileLabel": "Inspeção: Anthony Henman — antr…",
+              "href": "/posts/post-inspecao-figura-anthony-henman.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-anthony-henman",
+              "description": "Pessoas × Artes: Anthony Henman — método etnobotânico e antiproibicionista, com elo principal na antologia Diamba Sarabamba (1986); distinto do Legado canábico."
+            },
+            {
+              "label": "Inspeção: Tamara Klink — legado vivo no Ártico",
+              "tileLabel": "Inspeção: Tamara Klink — legado…",
+              "href": "/posts/post-inspecao-tamara-klink.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-tamara-klink",
+              "description": "Ficha de legado vivo: Tamara Klink — filha de Amyr; Atlântico, invernagem ártica e Passagem Noroeste em solitário; crédito junto do pai no hub Legado."
+            },
+            {
+              "label": "Inspeção: Diamba Sarabamba — a coletânea pioneira de 1986 sobre a maconha no Brasil",
+              "tileLabel": "Inspeção: Diamba Sarabamba — a …",
+              "href": "/posts/post-inspecao-arte-diamba-sarabamba.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-diamba-sarabamba",
+              "description": "Artes: Diamba Sarabamba (Ground, 1986) — coletânea de Henman e Pessoa Jr.; arquivo pioneiro do debate brasileiro sobre a diamba/maconha. Organizador em Pessoas."
+            },
+            {
+              "label": "Inspeção: Amyr Klink — navegador e legado de caminho",
+              "tileLabel": "Inspeção: Amyr Klink — navegado…",
+              "href": "/posts/post-inspecao-amyr-klink.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-amyr-klink",
+              "description": "Ficha de legado: Amyr Klink — pioneiro da travessia a remo do Atlântico Sul (1984); planeamento, risco e ofício que continua na filha Tamara."
+            },
+            {
+              "label": "Inspeção: Jostein Gaarder — filosofia narrada e elo com O Dia do Curinga",
+              "tileLabel": "Inspeção: Jostein Gaarder — fil…",
+              "href": "/posts/post-inspecao-figura-jostein-gaarder.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-jostein-gaarder",
+              "description": "Pessoas × Artes: Jostein Gaarder — método de ensinar filosofia pela narrativa, com elo principal no livro O Dia do Curinga (1990); distinto do Legado canábico."
+            },
+            {
+              "label": "Inspeção: O Dia do Curinga — o livro de Gaarder e a pergunta do curinga",
+              "tileLabel": "Inspeção: O Dia do Curinga — o …",
+              "href": "/posts/post-inspecao-arte-o-dia-do-curinga.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-o-dia-do-curinga",
+              "description": "Artes: O Dia do Curinga (*Kabalmysteriet*, 1990) — romance filosófico de Jostein Gaarder; curiosidade, viagem e metáfora da Bebida Púrpura. Autor em Pessoas."
+            },
+            {
+              "label": "Inspeção: Alice no País das Maravilhas — o livro de Carroll e o buraco do coelho",
+              "tileLabel": "Inspeção: Alice no País das Mar…",
+              "href": "/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-alice-no-pais-das-maravilhas",
+              "description": "Artes: Alice no País das Maravilhas começa no livro de Lewis Carroll (1865) — génese no Tâmisa, nonsense e curiosidade; Disney 1951 como adaptação. Metáforas literárias, sem romantizar substâncias."
+            },
+            {
+              "label": "Inspeção: ESAPP — Agronomia em Paraguaçu Paulista",
+              "tileLabel": "Inspeção: ESAPP — Agronomia em …",
+              "href": "/posts/post-inspecao-esapp-agronomia-paraguacu-paulista.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-esapp-agronomia-paraguacu-paulista",
+              "description": "Ficha institucional da ESAPP (Paraguaçu Paulista/SP): curso de Agronomia, Fazenda Modelo e tradição desde 1974 — onde o Inspetor BudGanja pretende cursar graduação, complementar ao XIV Curso UNIFESP."
+            },
+            {
+              "label": "Inspeção: Derivados do abacate — açúcar, aditivos e química industrial",
+              "tileLabel": "Inspeção: Derivados do abacate …",
+              "href": "/posts/post-inspecao-derivado-abacate.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-abacate",
+              "description": "Derivados de risco: do fruto (*Persea americana*) ao ultraprocessado — óleo, guacamole de prateleira e sobremesas; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
+            },
+            {
+              "label": "Inspeção: Keanu Reeves — presença, treino e elo com The Matrix",
+              "tileLabel": "Inspeção: Keanu Reeves — presen…",
+              "href": "/posts/post-inspecao-figura-keanu-reeves.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-keanu-reeves",
+              "description": "Pessoas × Artes: Keanu Reeves — método actoral e presença física, com elo principal no filme The Matrix (1999); distinto do Legado canábico."
+            },
+            {
+              "label": "Inspeção: The Matrix — a obra Wachowski e a pergunta do real",
+              "tileLabel": "Inspeção: The Matrix — a obra W…",
+              "href": "/posts/post-inspecao-filme-the-matrix.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-the-matrix",
+              "description": "Artes · cinema: The Matrix (1999, Wachowski) — génese do filme, influências (Baudrillard, cyberpunk, anime) e pergunta «o que é real?»; Keanu Reeves como elo secundário em Pessoas."
+            },
+            {
+              "label": "Inspeção: Só os Loucos Sabem — a canção CBJr e o recomeço",
+              "tileLabel": "Inspeção: Só os Loucos Sabem — …",
+              "href": "/posts/post-inspecao-arte-so-os-loucos-sabem.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-so-os-loucos-sabem",
+              "description": "Artes: Só os Loucos Sabem começa no álbum de estúdio Camisa 10 Joga Bola Até na Chuva (2009, Chorão/Thiago Castanho) — recomeço e paz; ao vivo Chegou Quem Faltava e BudGanja Radio como ecos secundários."
+            },
+            {
+              "label": "Inspeção: Send Me On My Way — a canção Rusted Root e o caminho",
+              "tileLabel": "Inspeção: Send Me On My Way — a…",
+              "href": "/posts/post-inspecao-arte-send-me-on-my-way.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-send-me-on-my-way",
+              "description": "Ficha fundadora Artes: Send Me On My Way começa na génese Rusted Root (1992 *Cruel Sun*, 1994 *When I Woke*, Hot 100 #72) — caminho e optimismo; BudGanja Radio como eco secundário de abertura da casa."
+            },
+            {
+              "label": "Inspeção: Dr. Lair Ribeiro — cannabinoides, açúcar e cruzamento com a cana",
+              "tileLabel": "Inspeção: Dr. Lair Ribeiro — ca…",
+              "href": "/posts/post-inspecao-divulgacao-lair-ribeiro.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-divulgacao-lair-ribeiro",
+              "description": "Divulgação: IDs do canal, textos canábicos, limites públicos, varredura açúcar/frutose e catálogo temático completo dos ~887 vídeos do canal — elo com a ficha Derivados da cana-de-açúcar."
+            },
+            {
+              "label": "Inspeção: Chorão — letra urbana, Charlie Brown Jr. e a série Palavras",
+              "tileLabel": "Inspeção: Chorão — letra urbana…",
+              "href": "/posts/post-inspecao-figura-chorao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-chorao",
+              "description": "Pessoas × Palavras: Chorão (Alexandre Magno Abrão), letrista do Charlie Brown Jr. — poesia urbana, gíria e refrão cruzados com a ficha maconha e o hub de vocábulos."
+            },
+            {
+              "label": "Inspeção: Gregorio Duvivier — o método da palavra e a série Palavras",
+              "tileLabel": "Inspeção: Gregorio Duvivier — o…",
+              "href": "/posts/post-inspecao-figura-duvivier.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-duvivier",
+              "description": "Pessoas × Palavras: Gregorio Duvivier (Letras, poesia, Greg News, O Céu da Língua) — o ofício da linguagem cruzado com a ficha maconha e o hub de vocábulos."
+            },
+            {
+              "label": "Inspeção: Heródoto — método da pesquisa e a palavra passar",
+              "tileLabel": "Inspeção: Heródoto — método da …",
+              "href": "/posts/post-inspecao-figura-herodoto.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-herodoto",
+              "description": "Ficha fundadora da série Pessoas: Heródoto de Halicarnasso, *historie* como investigação do que se passou — elo metodológico com a palavra «passar» na série Palavras."
+            },
+            {
+              "label": "Inspeção: Passar — verbo da passagem, do acontecido e da travessia",
+              "tileLabel": "Inspeção: Passar — verbo da pas…",
+              "href": "/posts/post-inspecao-palavra-passar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-passar",
+              "description": "Palavras × Pessoas: «passar» (latim *passāre*) — atravessar, o que se passou, o tempo — elo metodológico com Heródoto e o ofício de *historie*."
+            },
+            {
+              "label": "Inspeção: Maconha — origem da palavra e transformação no Brasil",
+              "tileLabel": "Inspeção: Maconha — origem da p…",
+              "href": "/posts/post-inspecao-palavra-maconha.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-maconha",
+              "description": "Ficha fundadora da série Palavras: etimologia afro-atlântica de «maconha», viagem histórica, mudança de sentido e elo com *Cannabis sativa* no catálogo medicinal."
+            },
+            {
+              "label": "Inspeção: Cana-de-açúcar — origem da planta, açúcar refinado e cruzamento Lair",
+              "tileLabel": "Inspeção: Cana-de-açúcar — orig…",
+              "href": "/posts/post-inspecao-derivado-cana-de-acucar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-cana-de-acucar",
+              "description": "Derivados de risco: origem da cana, OMS (açúcares livres) e cruzamento com a divulgação do Dr. Lair Ribeiro — portal (sacarose da cana) + varredura de 887 vídeos do canal (açúcar, frutose, diabesidade)."
+            },
+            {
+              "label": "Vida — Three Little Birds, o esquadrão da alegria",
+              "tileLabel": "Vida — Three Little Birds, o es…",
+              "href": "/posts/post-inspecao-personagem-three-little-birds.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-personagem-three-little-birds",
+              "description": "Trio de pássaros-IA: contas precisas, diário organizado e DJ Brisa na harmonia — do semente ao sênior."
+            },
+            {
+              "label": "Vida — Joaninha Joana, guardiã biológica",
+              "tileLabel": "Vida — Joaninha Joana, guardiã …",
+              "href": "/posts/post-inspecao-personagem-joaninha-joana.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-personagem-joaninha-joana",
+              "description": "Pet da Dona Maria e ícone do controle biológico: protege as folhas sem veneno químico."
+            },
+            {
+              "label": "Vida — DJ Brisa, a voz da harmonia",
+              "tileLabel": "Vida — DJ Brisa, a voz da harmo…",
+              "href": "/posts/post-inspecao-personagem-dj-brisa.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-personagem-dj-brisa",
+              "description": "Arara DJ da Rádio BudGanja: torna o aprendizado leve, animado e cheio de boa vibração."
+            },
+            {
+              "label": "Vida — Dona Maria, mestra do solo",
+              "tileLabel": "Vida — Dona Maria, mestra do so…",
+              "href": "/posts/post-inspecao-personagem-dona-maria.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-personagem-dona-maria",
+              "description": "Mãe do Inspetor e guardiã do Super Solo: o coração orgânico do laboratório — terra viva e carinho."
+            },
+            {
+              "label": "Vida — O Inspetor, detetive botânico",
+              "tileLabel": "Vida — O Inspetor, detetive bot…",
+              "href": "/posts/post-inspecao-personagem-inspetor.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-personagem-inspetor",
+              "description": "Detetive botânico de chapéu engraçado e braço de bronze: mede luz e clima para a planta crescer feliz."
+            },
+            {
+              "label": "Vida — O Laboratório e a Sementinha",
+              "tileLabel": "Vida — O Laboratório e a Sement…",
+              "href": "/posts/post-inspecao-conto-vida-laboratorio.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-conto-vida-laboratorio",
+              "description": "Conto do laboratório: o Inspetor, a Dona Maria, a Joaninha Joana e os Three Little Birds ensinam a cuidar de uma semente com ciência, natureza e amizade."
+            },
+            {
+              "label": "Inspeção: Gabrielle Dainezi — coordenação do curso UNIFESP",
+              "tileLabel": "Inspeção: Gabrielle Dainezi — c…",
+              "href": "/posts/post-inspecao-gabrielle-dainezi.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-gabrielle-dainezi",
+              "description": "Ficha de legado vivo: Gabrielle Dainezi — coordenação do curso UNIFESP/MovReCam premiado (CannaPortugal 2025); continuidade do fio Ticão–Carlini na extensão."
+            },
+            {
+              "label": "Inspeção: Profa. Dra. Eliana Rodrigues",
+              "tileLabel": "Inspeção: Profa. Dra. Eliana Ro…",
+              "href": "/posts/post-inspecao-eliana-rodrigues.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-eliana-rodrigues",
+              "description": "Ficha de legado vivo: Eliana Rodrigues (UNIFESP) — CEE, coordenação RTC do curso SIEX/MovReCam e curadoria do CANABinALL; mérito máximo na extensão académica canábica."
+            },
+            {
+              "label": "Inspeção: CEBRID — centro e medicina canabinoide",
+              "tileLabel": "Inspeção: CEBRID — centro e med…",
+              "href": "/posts/post-inspecao-cebrid.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-cebrid",
+              "description": "Ficha institucional do CEBRID (UNIFESP): legado Carlini, continuidade Nappo e curso Medicina Canabinoide — complementar ao SIEX/MovReCam, sem confundir os dois formatos."
+            },
+            {
+              "label": "Inspeção: Profa. Solange Nappo — CEBRID",
+              "tileLabel": "Inspeção: Profa. Solange Nappo …",
+              "href": "/posts/post-inspecao-solange-nappo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-solange-nappo",
+              "description": "Ficha de legado vivo: Solange Nappo (UNIFESP) — coordenadora do CEBRID após Carlini; saúde colectiva, prevenção (PREVINA) e formação em cannabis medicinal."
+            },
+            {
+              "label": "Inspeção: Dr. Sidarta Ribeiro — Revolução Canabinóide",
+              "tileLabel": "Inspeção: Dr. Sidarta Ribeiro —…",
+              "href": "/posts/post-inspecao-sidarta-ribeiro.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-sidarta-ribeiro",
+              "description": "Ficha de legado vivo: Sidarta Ribeiro (UFRN/ICe) — neurocientista e divulgador; aulas «Revolução Canabinóide» no acervo MovReCam e ponte entre evidência endocanabinoide e o curso UNIFESP."
+            },
+            {
+              "label": "Inspeção: Prof. Elisaldo Carlini — pioneiro da cannabis medicinal",
+              "tileLabel": "Inspeção: Prof. Elisaldo Carlin…",
+              "href": "/posts/post-inspecao-elisaldo-carlini.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-elisaldo-carlini",
+              "description": "Homenagem documental ao Prof. Emérito Elisaldo Luiz de Araújo Carlini (1930–2020): médico e psicofarmacologista da UNIFESP, fundador do CEBRID — mérito máximo na ciência e na democratização do conhecimento sobre cannabis medicinal no Brasil."
+            },
+            {
+              "label": "Inspeção: Padre Ticão — Antônio Luiz Marchioni",
+              "tileLabel": "Inspeção: Padre Ticão — Antônio…",
+              "href": "/posts/post-inspecao-padre-ticao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-padre-ticao",
+              "description": "Homenagem documental ao Padre Ticão (Antônio Luiz Marchioni, 1952–2021): pároco de Ermelino Matarazzo, líder popular da zona leste e fundador do MovReCam — mérito máximo na democratização da educação sobre cannabis medicinal no Brasil."
+            },
+            {
+              "label": "Inspeção: Artigo — Cannabis na adolescência e neurodesenvolvimento (JAMA Psychiatry)",
+              "tileLabel": "Inspeção: Artigo — Cannabis na …",
+              "href": "/posts/post-inspecao-artigo-albaugh-cannabis-neurodesenvolvimento.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-artigo-albaugh-cannabis-neurodesenvolvimento",
+              "description": "Auditoria editorial do estudo longitudinal IMAGEN (Albaugh et al., 2021): 799 adolescentes naïve, 1598 RM, afinamento cortical pré-frontal dose-dependente e sobreposição com densidade de receptores CB1."
+            },
+            {
+              "label": "Inspeção: Canal CANABinALL — Profa. Dra. Eliana Rodrigues",
+              "tileLabel": "Inspeção: Canal CANABinALL — Pr…",
+              "href": "/posts/post-inspecao-canal-canabinall.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-canal-canabinall",
+              "description": "Auditoria do canal CANABinALL (@canabinall) — 139 vídeos catalogados; divulgação científica UNIFESP sob curadoria da Profa. Dra. Eliana Rodrigues (CEE), com destaque a Conceitos básicos #1 e à série Plantas Sagradas."
+            },
+            {
+              "label": "Inspeção: Canal MovReCam — aulas UNIFESP",
+              "tileLabel": "Inspeção: Canal MovReCam — aula…",
+              "href": "/posts/post-inspecao-canal-movrecam.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-canal-movrecam",
+              "description": "Auditoria do canal MovReCam — 285 vídeos catalogados, com embeds das aulas da XIV edição UNIFESP para revisão in-page."
+            },
+            {
+              "label": "Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal",
+              "tileLabel": "Inspeção: Curso UNIFESP — Canna…",
+              "href": "/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-curso-unifesp-cannabis-medicinal",
+              "description": "Auditoria do XIV Curso de extensão da UNIFESP em parceria com o MovReCam — 10 mil vagas gratuitas, 57 h EaD via YouTube, certificado com 75% de presença e grade clínica, legislativa e de cultivo."
+            },
+            {
+              "label": "Inspeção: Equipamentos Mars Hydro Brasil",
+              "tileLabel": "Inspeção: Equipamentos Mars Hyd…",
+              "href": "/posts/post-inspecao-marshydro-brasil.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-marshydro-brasil",
+              "description": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório."
+            },
+            {
+              "label": "Inspeção: Sistema de Ventilação da Tenda",
+              "tileLabel": "Inspeção: Sistema de Ventilação…",
+              "href": "/posts/post-inspecao-ventilacao-tenda.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-ventilacao-tenda",
+              "description": "Verificação de fluxo de ar, ruído e trocas térmicas no duto de exaustão e filtro de carvão do laboratório."
             }
           ]
         },
