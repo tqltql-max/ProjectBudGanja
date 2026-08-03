@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:26:31.179Z",
+  "updatedAt": "2026-08-03T16:31:14.904Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2294,6 +2294,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-mensagem.html"
+    },
+    {
+      "id": "sugestao",
+      "word": "sugestão",
+      "simple": "Lat. suggestio — ato de sugerir / palpite; no lab, item da fila de inspeções; Faça o melhor nesta proposta.",
+      "simpleEn": "Lat. suggestio — act of suggesting / tip; in the lab, inspection-queue item; Do your best in this proposal.",
+      "simpleEs": "Lat. suggestio — acto de sugerir / tip; en el lab, ítem de la cola de inspecciones; Haz lo mejor en esta propuesta.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sugestao.html"
     },
     {
       "id": "metabolito-secundario",

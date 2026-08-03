@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:26:31.176Z",
+  "updatedAt": "2026-08-03T16:31:14.901Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4327,6 +4327,28 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 96 — hipérbole ≠ insulto ≠ clínica."
+    },
+    {
+      "id": "palavra-sugestao",
+      "title": "Sugestão — proposta, palpite e fila de ofício",
+      "titleEn": "Sugestão — proposal, tip and craft queue",
+      "titleEs": "Sugestão — propuesta, tip y cola de oficio",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: sugestão (lat. suggestio) — propor; meta-lab da fila; Faça o melhor!",
+      "whyEn": "Words: sugestão (Lat. suggestio) — propose; meta-lab queue; Do your best!",
+      "whyEs": "Palabras: sugestão (lat. suggestio) — proponer; meta-lab de cola; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-sugestao",
+      "doneHref": "/posts/post-inspecao-palavra-sugestao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/sugest%C3%A3o",
+        "/posts/post-inspecao-palavra-mensagem.html",
+        "/posts/post-inspecao-palavra-objetos.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 97 — proposta ≠ ordem; fila editorial."
     }
   ]
 }

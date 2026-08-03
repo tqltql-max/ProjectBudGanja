@@ -1786,6 +1786,25 @@
     "seriesLabel": "Insana · palavra"
   },
   {
+    "title": "Inspeção: Sugestão — proposta, palpite e fila de ofício",
+    "titleEn": "Inspection: Sugestão — proposal, tip and craft queue",
+    "titleEs": "Inspección: Sugestão — propuesta, tip y cola de oficio",
+    "excerpt": "Palavras: «sugestão» (lat. *suggestio*) — ato de sugerir; meta-lab da fila de inspeções; Faça o melhor!",
+    "excerptEn": "Words: “sugestão” (Lat. *suggestio*) — act of suggesting; meta-lab inspection queue; Do your best!",
+    "excerptEs": "Palabras: «sugestão» (lat. *suggestio*) — acto de sugerir; meta-lab de la cola de inspecciones; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-sugestao",
+    "url": "/posts/post-inspecao-palavra-sugestao.html",
+    "date": "2026-08-03T18:15:00.000Z",
+    "filename": "posts/post-inspecao-palavra-sugestao.html",
+    "coverImage": "/imagens/inspecoes/sugestao-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 97,
+    "seriesLabel": "Sugestão · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",
