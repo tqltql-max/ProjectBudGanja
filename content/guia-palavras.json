@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:59:13.161Z",
+  "updatedAt": "2026-08-03T16:05:24.966Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -86,6 +86,16 @@
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
+      "id": "aff",
+      "word": "Aff",
+      "simple": "Interjeição BR de enfado — no laboratório: termómetro ok; fechar sem inspecionar = reprovado (inspeção severa).",
+      "simpleEn": "Brazilian exasperation interjection — in the lab: thermometer ok; closing without inspecting = fail (severe inspection).",
+      "simpleEs": "Interjección BR de hastío — en el laboratorio: termómetro ok; cerrar sin inspeccionar = reprobado (inspección severa).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-aff.html"
+    },
+    {
       "id": "agua",
       "word": "Água",
       "simple": "Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem.",
@@ -94,136 +104,6 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-agua.html"
-    },
-    {
-      "id": "fogo",
-      "word": "fogo",
-      "simple": "Lat. focus — lareira / chama; elemento e metáfora; equilibrar com água; raiva com ofício; Faça o melhor com medida.",
-      "simpleEn": "Lat. focus — hearth / flame; element and metaphor; balance with water; anger with craft; Do your best with measure.",
-      "simpleEs": "Lat. focus — hogar / llama; elemento y metáfora; equilibrar con agua; ira con oficio; Haz lo mejor con medida.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-fogo.html"
-    },
-    {
-      "id": "pipoca",
-      "word": "pipoca",
-      "simple": "Tupi pi'poka — milho que estoura; rua e cinema BR; transformação com calor certo; Faça o melhor!",
-      "simpleEn": "Tupi pi'poka — corn that pops; BR street and cinema; craftful heat; Do your best!",
-      "simpleEs": "Tupí pi'poka — maíz que estalla; calle y cine BR; calor con oficio; ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-pipoca.html"
-    },
-    {
-      "id": "idolo",
-      "word": "ídolo",
-      "simple": "Gr. eídōlon — imagem → pessoa admirada; culto lexical, idolatrar e média; admirar com ofício; Faça o melhor!",
-      "simpleEn": "Gk. eídōlon — image → admired person; lexical cult sense, idolatrar and media; admire with craft; Do your best!",
-      "simpleEs": "Gr. eídōlon — imagen → persona admirada; culto léxico, idolatrar y medios; admirar con oficio; ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-idolo.html"
-    },
-    {
-      "id": "eletrizante",
-      "word": "eletrizante",
-      "simple": "Eletro- + intensidade — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo; elos fogo e escala de louvor; Faça o melhor com rasto.",
-      "simpleEn": "Eletro- + intensity — charge metaphor and BR hype; typo eleltrioxsamndo; links to fogo and praise scale; Do your best with a trail.",
-      "simpleEs": "Eletro- + intensidad — metáfora de carga y hype BR; tipografía eleltrioxsamndo; vínculos a fogo y escala; Haz lo mejor con rastro.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-eletrizante.html"
-    },
-    {
-      "id": "interruptor",
-      "word": "interruptor",
-      "simple": "Lat. interrumpere — ligar/desligar × corte de fluxo; derivações interromper/interrupção; elos sinal/gesto/eletrizante; Faça o melhor com o clique.",
-      "simpleEn": "Lat. interrumpere — on/off × flow cut; derivatives interromper/interrupção; links sinal/gesto/eletrizante; Do your best with the click.",
-      "simpleEs": "Lat. interrumpere — encender/apagar × corte de flujo; derivaciones interromper/interrupção; vínculos sinal/gesto/eletrizante; Haz lo mejor con el clic.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-interruptor.html"
-    },
-    {
-      "id": "fantastico",
-      "word": "fantástico",
-      "simple": "Lat. phantasticus / fantasia — imaginação e elogio BR «fantástico!»; escala com legal, genial, maravilhoso; Faça o melhor depois do uau.",
-      "simpleEn": "Lat. phantasticus / fantasy — imagination and BR praise “fantástico!”; scale with legal, genial, maravilhoso; Do your best after the wow.",
-      "simpleEs": "Lat. phantasticus / fantasía — imaginación y elogio BR «¡fantástico!»; escala con legal, genial, maravilhoso; Haz lo mejor después del guau.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-fantastico.html"
-    },
-    {
-      "id": "total",
-      "word": "total",
-      "simple": "Lat. tōtus — inteiro/soma; gíria BR «total!» (acordo/louvor); escala com legal e fantástico; Faça o melhor!",
-      "simpleEn": "Lat. tōtus — whole/sum; BR slang “total!” (agreement/praise); scale with legal and fantástico; Do your best!",
-      "simpleEs": "Lat. tōtus — entero/suma; jerga BR «¡total!» (acuerdo/elogio); escala con legal y fantástico; ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-total.html"
-    },
-    {
-      "id": "fantasioso",
-      "word": "fantasioso",
-      "simple": "Fantasia + -oso — imaginativo / fanciful; elogio ou crítica leve («não seja fantasioso»); ≠ fantástico (Cap. irmã); Faça o melhor com rasto.",
-      "simpleEn": "Fantasia + -oso — fanciful / imaginative; praise or mild critique; ≠ fantástico (sister Cap.); Do your best with a trail.",
-      "simpleEs": "Fantasia + -oso — imaginativo; elogio o crítica leve; ≠ fantástico (Cap. hermana); Haz lo mejor con rastro.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-fantasioso.html"
-    },
-    {
-      "id": "especial",
-      "word": "especial",
-      "simple": "Lat. specialis (≠ Tupi) — particular / em especial; uso oral e ofício BR; porta para a rede das palavras originárias já fichadas; Faça o melhor!",
-      "simpleEn": "Lat. specialis (≠ Tupi) — particular / especially; BR oral and craft use; door into the originary-words network on file; Do your best!",
-      "simpleEs": "Lat. specialis (≠ tupí) — particular / en especial; uso oral y oficio BR; puerta a la red de palabras originarias ya fichadas; ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-especial.html"
-    },
-    {
-      "id": "memoravel",
-      "word": "memorável",
-      "simple": "Lat. memorabilis — digno de memória; elogio BR com rasto; retenção ≠ escala genial/especial; Faça o melhor!",
-      "simpleEn": "Lat. memorabilis — worth remembering; BR praise with a trace; retention ≠ genial/especial scale; Do your best!",
-      "simpleEs": "Lat. memorabilis — digno de memoria; elogio BR con rastro; retención ≠ escala genial/especial; ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-memoravel.html"
-    },
-    {
-      "id": "passado",
-      "word": "passado",
-      "simple": "De passar / lat. passāre — tempo já decorrido; memória × história; elos memorável, verdade, língua; Faça o melhor!",
-      "simpleEn": "From passar / Lat. passāre — elapsed time; memory × history; links memorável, truth, language; Do your best!",
-      "simpleEs": "De passar / lat. passāre — tiempo trascurrido; memoria × historia; vínculos memorável, verdad, lengua; ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-passado.html"
-    },
-    {
-      "id": "incrivel",
-      "word": "incrível",
-      "simple": "Lat. incredibilis — inacreditável e elogio BR «uau»; escala legal → especial → genial → incrível; Faça o melhor!",
-      "simpleEn": "Lat. incredibilis — unbelievable and BR praise “wow”; scale legal → especial → genial → incrível; Do your best!",
-      "simpleEs": "Lat. incredibilis — inacreditável y elogio BR «uau»; escala legal → especial → genial → incrível; ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-incrivel.html"
-    },
-    {
-      "id": "inacreditavel",
-      "word": "inacreditável",
-      "simple": "in- + acreditável (← credere) — não acreditável / elogio BR «beyond belief»; irmão de incrível; Faça o melhor depois do «não acredito».",
-      "simpleEn": "in- + acreditável (← credere) — unbelievable / BR praise “beyond belief”; sister of incrível; Do your best after the wow.",
-      "simpleEs": "in- + acreditável (← credere) — increíble / elogio BR «beyond belief»; hermana de incrível; Haz lo mejor después del «no lo creo».",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-inacreditavel.html"
     },
     {
       "id": "aguas-e-lagrimas",
@@ -244,326 +124,6 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/plantas/alecrim/"
-    },
-    {
-      "id": "aff",
-      "word": "Aff",
-      "simple": "Interjeição BR de enfado — no laboratório: termómetro ok; fechar sem inspecionar = reprovado (inspeção severa).",
-      "simpleEn": "Brazilian exasperation interjection — in the lab: thermometer ok; closing without inspecting = fail (severe inspection).",
-      "simpleEs": "Interjección BR de hastío — en el laboratorio: termómetro ok; cerrar sin inspeccionar = reprobado (inspección severa).",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-aff.html"
-    },
-    {
-      "id": "valeu",
-      "word": "valeu",
-      "simple": "De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de muitoobrigado; gesto, respeito; Faça o melhor — e valeu.",
-      "simpleEn": "From valer ← Lat. valēre — light thanks / oral close BR; sister of muitoobrigado; gesture, respect; Do your best — and valeu.",
-      "simpleEs": "De valer ← lat. valēre — gratitud ligera / cierre oral BR; hermana de muitoobrigado; gesto, respeito; Haz lo mejor — y valeu.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-valeu.html"
-    },
-    {
-      "id": "muitoobrigado",
-      "word": "muitoobrigado",
-      "simple": "Expressão oral BR — gratidão reforçada; étimo obligare × memória escravidão/cana; gesto, respeito; depois Faça o melhor!",
-      "simpleEn": "Brazilian oral saying — reinforced gratitude; etymon obligare × slavery/cane memory; gesture, respect; then Do your best!",
-      "simpleEs": "Expresión oral BR — gratitud reforzada; étimo obligare × memoria esclavitud/caña; gesto, respeito; luego ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-expressao-muito-obrigado.html"
-    },
-    {
-      "id": "eojsofaorforap",
-      "word": "eojsofaorforap",
-      "simple": "Expressão oral BR — nome lab de «eu só falo a verdade»; substitui o rótulo plano; elo verdade; depois Faça o melhor!",
-      "simpleEn": "Brazilian oral saying — lab name for “I only speak the truth”; replaces plain label; truth; then Do your best!",
-      "simpleEs": "Expresión oral BR — nombre lab de «eu só falo a verdade»; sustituye etiqueta plana; verdade; luego ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-expressao-eojsofaorforap.html"
-    },
-    {
-      "id": "maravilhoso",
-      "word": "maravilhoso",
-      "simple": "De maravilha (lat. mirabilia) — assombro e elogio BR («que maravilhoso!»); na escala aff ← legal ← genial ← maravilhoso; depois do uau, Faça o melhor!",
-      "simpleEn": "From maravilha (Lat. mirabilia) — wonder and BR praise; scale aff ← legal ← genial ← maravilhoso; after the wow, Do your best!",
-      "simpleEs": "De maravilha (lat. mirabilia) — asombro y elogio BR; escala aff ← legal ← genial ← maravilhoso; después del guau, ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-maravilhoso.html"
-    },
-    {
-      "id": "magnifico",
-      "word": "magnífico",
-      "simple": "Lat. magnificus / magnificent — elogio BR quotidiano («que grande!»); escala com legal, genial, fabuloso, fantástico, incrível, maravilhoso; Faça o melhor com rasto.",
-      "simpleEn": "Lat. magnificus / magnificent — everyday BR praise; scale with legal, genial, fabuloso, fantástico, incrível, maravilhoso; Do your best with a trail.",
-      "simpleEs": "Lat. magnificus / magnificent — elogio BR cotidiano; escala con legal, genial, fabuloso, fantástico, incrível, maravilloso; Haz lo mejor con rastro.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-magnifico.html"
-    },
-    {
-      "id": "ausdhuashduas",
-      "word": "ausdhuashduas",
-      "simple": "Expressão oral BR — nome lab do riso tipado (substitui kkkk… e «risas online»); contraste com aff; depois Faça o melhor!",
-      "simpleEn": "Brazilian oral saying — lab name for typed laughter (replaces kkkk… / online laughs); contrast with aff; then Do your best!",
-      "simpleEs": "Expresión oral BR — nombre lab de la risa tipada (sustituye kkkk… y «risas online»); contraste con aff; luego ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-expressao-ausdhuashduas.html"
-    },
-    {
-      "id": "duasakdiqujdocedomadur",
-      "word": "duasakdiqujdocedomadur",
-      "simple": "Expressão / ditado BR — nome lab de «Deus ajuda quem cedo madruga»; diligência com aurora; depois Faça o melhor!",
-      "simpleEn": "Brazilian proverb — lab name for “Deus ajuda quem cedo madruga”; dawn diligence; then Do your best!",
-      "simpleEs": "Dicho BR — nombre lab de «Deus ajuda quem cedo madruga»; diligencia del alba; luego ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-expressao-duasakdiqujdocedomadur.html"
-    },
-    {
-      "id": "buguei",
-      "word": "buguei",
-      "simple": "De bug (inseto) à falha e ao peito BR; o sentido foi puxado para «ruim»; depois do tranco, Faça o melhor!",
-      "simpleEn": "From bug (insect) to fault and the BR chest; sense pulled toward “bad”; after the stall, Do your best!",
-      "simpleEs": "De bug (insecto) al fallo y al pecho BR; el sentido se tiró a «malo»; después del tranco, ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-buguei.html"
-    },
-    {
-      "id": "inseto",
-      "word": "inseto",
-      "simple": "Lat. insectum — lemma inseto / plural insetos; vida, ecologia e cultura; elos joaninha, abelha, animal, simbiose; contraste buguei.",
-      "simpleEn": "Lat. insectum — lemma inseto / plural insetos; life, ecology and culture; links ladybug, bee, animal, symbiosis; contrast buguei.",
-      "simpleEs": "Lat. insectum — lema inseto / plural insetos; vida, ecología y cultura; vínculos joaninha, abeja, animal, simbiosis; contraste buguei.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-inseto.html"
-    },
-    {
-      "id": "selvagem",
-      "word": "selvagem",
-      "simple": "Lat. silvaticus ← silva — da mata; selvagem × domesticado; «bicho selvagem»; elos planta/animal/inseto; sem romantizar dano.",
-      "simpleEn": "Lat. silvaticus ← silva — of the forest; wild vs domesticated; plant/animal/insect links; no romance of harm.",
-      "simpleEs": "Lat. silvaticus ← silva — del bosque; salvaje × domesticado; vínculos planta/animal/insecto; sin romantizar daño.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-selvagem.html"
-    },
-    {
-      "id": "daninha",
-      "word": "daninha",
-      "simple": "Dano + -inha — planta daninha como juízo de lugar no cultivo; elos planta/selvagem; Faça o melhor com o juízo certo.",
-      "simpleEn": "Dano + -inha — weed as place-judgment in cultivation; links planta/selvagem; Do your best with the right judgment.",
-      "simpleEs": "Dano + -inha — planta daninha como juicio de lugar; vínculos planta/selvagem; Haz lo mejor con el juicio correcto.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-daninha.html"
-    },
-    {
-      "id": "multitarefa",
-      "word": "multitarefa",
-      "simple": "Forma PT irmã de multitask — mesma correção: não é fazer tudo bem ao mesmo tempo; método e limites.",
-      "simpleEn": "PT sister of multitask — same correction: not doing everything well at once; method and limits.",
-      "simpleEs": "Forma PT hermana de multitask — misma corrección: no es hacerlo todo bien a la vez; método y límites.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-multitask.html"
-    },
-    {
-      "id": "multitask",
-      "word": "multitask",
-      "simple": "Empréstimo EN→BR; parece «tudo bem ao mesmo tempo»; ofício = uma com método ou paralelo com limites; Faça o melhor!",
-      "simpleEn": "EN→BR loan; seems “everything well at once”; craft = one with method or limited parallel; Do your best!",
-      "simpleEs": "Préstamo EN→BR; parece «todo bien a la vez»; oficio = una con método o paralelo con límites; ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-multitask.html"
-    },
-    {
-      "id": "habilidade",
-      "word": "habilidade",
-      "simple": "Irmã PT de skill — capacidade treinável; no lab preferir rasto ao badge; ver ficha skill.",
-      "simpleEn": "PT sister of skill — trainable capacity; lab prefers trail over badge; see skill sheet.",
-      "simpleEs": "Hermana PT de skill — capacidad entrenable; el lab prefiere rastro a insignia; ver ficha skill.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-skill.html"
-    },
-    {
-      "id": "skill",
-      "word": "skill",
-      "simple": "Empréstimo EN→BR; habilidade/craft com rasto; anti-badge LinkedIn; elos multitask e genial; Faça o melhor!",
-      "simpleEn": "EN→BR loan; habilidade/craft with a trail; anti-LinkedIn badge; links multitask and genial; Do your best!",
-      "simpleEs": "Préstamo EN→BR; habilidade/oficio con rastro; anti-insignia LinkedIn; vínculos multitask y genial; ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-skill.html"
-    },
-    {
-      "id": "jesusudavi",
-      "word": "jesusudavi",
-      "simple": "Expressão oral BR — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala entre aff e jesusamando.",
-      "simpleEn": "Brazilian oral saying — replaces meudeusdoceu; meu Deus do céu; high awe; between aff and jesusamando.",
-      "simpleEs": "Expresión oral BR — sustituye meudeusdoceu; meu Deus do céu; asombro alto; entre aff y jesusamando.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-expressao-jesusudavi.html"
-    },
-    {
-      "id": "filho-de-deus",
-      "word": "filho de deus",
-      "simple": "Expressão — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; respeito à fé, sem proselitismo; depois Faça o melhor!",
-      "simpleEn": "Saying — theological title, BR oral intensity and dignity/care metaphor; respect for faith, no proselytizing; then Do your best!",
-      "simpleEs": "Expresión — título teológico, intensidad oral BR y metáfora de dignidad/cuidado; respeto a la fe, sin proselitismo; luego ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-expressao-filho-de-deus.html"
-    },
-    {
-      "id": "deu-certo-galera",
-      "word": "deu certo, galera",
-      "simple": "Expressão oral BR — deucer galerra; celebração colectiva de acerto; contraste com aff e buguei; depois Faça o melhor!",
-      "simpleEn": "Brazilian oral saying — deucer galerra; collective celebration of success; contrast with aff and buguei; then Do your best!",
-      "simpleEs": "Expresión oral BR — deucer galerra; celebración colectiva de acierto; contraste con aff y buguei; luego ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-expressao-deu-certo-galera.html"
-    },
-    {
-      "id": "jesusamando",
-      "word": "jesusamando",
-      "simple": "Expressão oral BR — assombro e afeto num sopro; contraste com aff; depois, Faça o melhor!",
-      "simpleEn": "Brazilian oral saying — awe and affection in one breath; contrast with aff; then Do your best!",
-      "simpleEs": "Expresión oral BR — asombro y afecto en un soplo; contraste con aff; luego ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-expressao-jesusamando.html"
-    },
-    {
-      "id": "jesusmanando",
-      "word": "jesusmanando",
-      "simple": "Grafia comum por lapso de «jesusamando» — mesma ficha (assombro e afeto).",
-      "simpleEn": "Common misspelling of “jesusamando” — same sheet (awe and affection).",
-      "simpleEs": "Grafía común por lapsus de «jesusamando» — misma ficha (asombro y afecto).",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-expressao-jesusamando.html"
-    },
-    {
-      "id": "ja",
-      "word": "já",
-      "simple": "Latim *iam* — advérbio de tempo/urgência; no BudGanja, par oral com «aff»; fecho vazio («já deu») = ressalva.",
-      "simpleEn": "Latin *iam* — adverb of time/urgency; in BudGanja, oral pair with “aff”; empty close = caveat.",
-      "simpleEs": "Latín *iam* — adverbio de tiempo/urgencia; en BudGanja, par oral con «aff»; cierre vacío = salvedad.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-ja.html"
-    },
-    {
-      "id": "prosseguir",
-      "word": "prosseguir",
-      "simple": "Lat. prōsequī — continuar × retomar BR; derivações prosseguimento; elos sempre/já/caminho; Faça o melhor e prossiga.",
-      "simpleEn": "Lat. prōsequī — continue × resume BR; derivatives prosseguimento; links sempre/já/caminho; Do your best and proceed.",
-      "simpleEs": "Lat. prōsequī — continuar × retomar BR; derivaciones prosseguimento; vínculos sempre/já/caminho; Haz lo mejor y prosigue.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-prosseguir.html"
-    },
-    {
-      "id": "sempre",
-      "word": "sempre",
-      "simple": "Lat. semper — duração × hábito × promessa BR; elos já/prosseguir/caminho; Faça o melhor sempre que puder.",
-      "simpleEn": "Lat. semper — duration × habit × promise BR; links já/prosseguir/caminho; Do your best whenever you can.",
-      "simpleEs": "Lat. semper — duración × hábito × promesa BR; vínculos já/prosseguir/caminho; Haz lo mejor siempre que puedas.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-sempre.html"
-    },
-    {
-      "id": "pular",
-      "word": "pular",
-      "simple": "Lat. pullāre — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar/backspace/já; Faça o melhor com o pulo certo.",
-      "simpleEn": "Lat. pullāre — jump × skip BR; derivatives pulo/pulinho/pulada; links passar/backspace/já; Do your best with the right leap.",
-      "simpleEs": "Lat. pullāre — salto × omitir BR; derivaciones pulo/pulinho/pulada; vínculos passar/backspace/já; Haz lo mejor con el salto correcto.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-pular.html"
-    },
-    {
-      "id": "genial",
-      "word": "genial",
-      "simple": "*Gênio* + *-al* — elogio de engenho no BR; no BudGanja, celebra o feito com método; culto vazio = ressalva.",
-      "simpleEn": "*Gênio* + *-al* — BR praise of ingenuity; in BudGanja, celebrate the deed with method; empty cult = caveat.",
-      "simpleEs": "*Gênio* + *-al* — elogio BR de ingenio; en BudGanja, celebrar el hecho con método; culto vacío = salvedad.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-genial.html"
-    },
-    {
-      "id": "fabuloso",
-      "word": "fabuloso",
-      "simple": "Lat. fābula / fabulous — elogio BR quotidiano («que demais!»); escala com genial, legal, especial; Faça o melhor com rasto.",
-      "simpleEn": "Lat. fābula / fabulous — everyday BR praise; scale with genial, legal, especial; Do your best with a trail.",
-      "simpleEs": "Lat. fābula / fabulous — elogio BR cotidiano; escala con genial, legal, especial; Haz lo mejor con rastro.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-fabuloso.html"
-    },
-    {
-      "id": "lingua-portuguesa",
-      "word": "língua portuguesa",
-      "simple": "Meio do Inspetor BudGanja: originalidade; alterações no tempo (latim → BR → digital); nomear, inspecionar, cuidar; Faça o melhor nesta língua.",
-      "simpleEn": "Medium of Inspetor BudGanja: originality; changes over time (Latin → BR → digital); name, inspect, care; Do your best in this language.",
-      "simpleEs": "Medio de Inspetor BudGanja: originalidad; cambios en el tiempo (latín → BR → digital); nombrar, inspeccionar, cuidar; Haz lo mejor en esta lengua.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-lingua-portuguesa.html"
-    },
-    {
-      "id": "esquerdo",
-      "word": "esquerdo",
-      "simple": "Lado / ofício (esquerda); no BudGanja: objeto, criação e finalidade sem estigma; Faça o melhor nesta mão.",
-      "simpleEn": "Side / craft (left); in BudGanja: object, creation and purpose without stigma; Do your best with this hand.",
-      "simpleEs": "Lado / oficio (izquierda); en BudGanja: objeto, creación y finalidad sin estigma; Haz lo mejor con esta mano.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-esquerdo.html"
-    },
-    {
-      "id": "coracao",
-      "word": "coração",
-      "simple": "Lat. cor — órgão, afeto, centro e coragem; elo mãos/esquerdo (gesto cultural, não dogma); Faça o melhor de coração.",
-      "simpleEn": "Lat. cor — organ, affect, center and courage; hands/esquerdo link (cultural gesture, not dogma); Do your best from the heart.",
-      "simpleEs": "Lat. cor — órgano, afecto, centro y coraje; vínculo manos/esquerdo (gesto cultural, no dogma); Haz lo mejor de corazón.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-coracao.html"
-    },
-    {
-      "id": "inspiracao",
-      "word": "inspiração",
-      "simple": "Lat. īnspīrātiō — sopro × ideia BR; elos criatividade/gesto/esperança; Faça o melhor com o sopro.",
-      "simpleEn": "Lat. īnspīrātiō — breath × idea BR; links creativity/gesture/hope; Do your best with the breath.",
-      "simpleEs": "Lat. īnspīrātiō — aliento × idea BR; vínculos creatividad/gesto/esperanza; Haz lo mejor con el soplo.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-inspiracao.html"
-    },
-    {
-      "id": "esperanca",
-      "word": "esperança",
-      "simple": "Lat. spēs / sperantia — afecto vivo BR; esperar × esperança; fresta junto a medo/tristeza; Faça o melhor com ofício.",
-      "simpleEn": "Lat. spēs / sperantia — lived BR hope; wait vs hope; crack of light beside fear/sadness; Do your best with craft.",
-      "simpleEs": "Lat. spēs / sperantia — esperanza vivida BR; esperar × esperança; rendija junto a miedo/tristeza; Haz lo mejor con oficio.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-esperanca.html"
     },
     {
       "id": "alegria",
@@ -636,16 +196,6 @@
       "href": "/posts/post-inspecao-palavra-animal.html"
     },
     {
-      "id": "planta",
-      "word": "planta",
-      "simple": "Lat. planta / plantare — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; ficha de palavra ≠ lista de espécies.",
-      "simpleEn": "Lat. planta / plantare — living vegetal being; plural plantas in the hub; cultivation and Farmácia Viva; word sheet ≠ species list.",
-      "simpleEs": "Lat. planta / plantare — ser vivo vegetal; plural plantas en el hub; cultivo y Farmácia Viva; ficha de palabra ≠ lista de especies.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-planta.html"
-    },
-    {
       "id": "anvisa",
       "word": "ANVISA",
       "simple": "Agência reguladora de vigilância sanitária — nó institucional do mapa de portarias e listas; não é nome da planta.",
@@ -706,6 +256,16 @@
       "href": "/posts/post-inspecao-guia-associacoes-pacientes.html"
     },
     {
+      "id": "ausdhuashduas",
+      "word": "ausdhuashduas",
+      "simple": "Expressão oral BR — nome lab do riso tipado (substitui kkkk… e «risas online»); contraste com aff; depois Faça o melhor!",
+      "simpleEn": "Brazilian oral saying — lab name for typed laughter (replaces kkkk… / online laughs); contrast with aff; then Do your best!",
+      "simpleEs": "Expresión oral BR — nombre lab de la risa tipada (sustituye kkkk… y «risas online»); contraste con aff; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-ausdhuashduas.html"
+    },
+    {
       "id": "autocultivo",
       "word": "Autocultivo",
       "simple": "Cultivo próprio da planta — no Brasil, zona de disputa entre saúde (HC/salvo-conduto) e risco penal sem amparo processual.",
@@ -744,6 +304,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "ayrton-senna",
+      "word": "Ayrton Senna",
+      "simple": "Piloto brasileiro tricampeão de F1 (1960–1994); no site, homenagem em Pessoas com elo ao mantra Faça o melhor! e ao Instituto.",
+      "simpleEn": "Brazilian three-time F1 champion (1960–1994); on the site, a People homage linked to Do your best! and the Instituto.",
+      "simpleEs": "Piloto brasileño tricampeón de F1 (1960–1994); en el sitio, homenaje en Personas con vínculo a ¡Haz lo mejor! y al Instituto.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-ayrton-senna.html"
     },
     {
       "id": "babosa",
@@ -874,6 +444,16 @@
       "group": "marca",
       "fromTitle": true,
       "href": "/"
+    },
+    {
+      "id": "buguei",
+      "word": "buguei",
+      "simple": "De bug (inseto) à falha e ao peito BR; o sentido foi puxado para «ruim»; depois do tranco, Faça o melhor!",
+      "simpleEn": "From bug (insect) to fault and the BR chest; sense pulled toward “bad”; after the stall, Do your best!",
+      "simpleEs": "De bug (insecto) al fallo y al pecho BR; el sentido se tiró a «malo»; después del tranco, ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-buguei.html"
     },
     {
       "id": "cacau",
@@ -1116,6 +696,16 @@
       "href": "/posts/post-inspecao-cebrid.html"
     },
     {
+      "id": "cha-plantas",
+      "word": "chá de plantas",
+      "simple": "Manual BudGanja: infusão / decoção caseira — tempos, proporções de ofício e segurança; elos Plantas e Farmácia Viva.",
+      "simpleEn": "BudGanja manual: home infusion / decoction — times, craft ratios and safety; links Plants and Living Pharmacy.",
+      "simpleEs": "Manual BudGanja: infusión / decocción casera — tiempos, proporciones y seguridad; vínculos Plantas y Farmacia Viva.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-preparo-cha-plantas.html"
+    },
+    {
       "id": "charas",
       "word": "Charas",
       "simple": "Resina tradicional obtida esfregando flores femininas — forma etnobotânica citada junto de ganja e bhang. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -1216,6 +806,16 @@
       "href": "/plantas/copaiba/"
     },
     {
+      "id": "coracao",
+      "word": "coração",
+      "simple": "Lat. cor — órgão, afeto, centro e coragem; elo mãos/esquerdo (gesto cultural, não dogma); Faça o melhor de coração.",
+      "simpleEn": "Lat. cor — organ, affect, center and courage; hands/esquerdo link (cultural gesture, not dogma); Do your best from the heart.",
+      "simpleEs": "Lat. cor — órgano, afecto, centro y coraje; vínculo manos/esquerdo (gesto cultural, no dogma); Haz lo mejor de corazón.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-coracao.html"
+    },
+    {
       "id": "crf",
       "word": "CRF",
       "simple": "Conselho Regional de Farmácia — perímetro ético/profissional da dispensação; não autoriza cultivo nem substitui ANVISA ou HC.",
@@ -1264,6 +864,26 @@
       "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-associacoes-pacientes.html"
+    },
+    {
+      "id": "daninha",
+      "word": "daninha",
+      "simple": "Dano + -inha — planta daninha como juízo de lugar no cultivo; elos planta/selvagem; Faça o melhor com o juízo certo.",
+      "simpleEn": "Dano + -inha — weed as place-judgment in cultivation; links planta/selvagem; Do your best with the right judgment.",
+      "simpleEs": "Dano + -inha — planta daninha como juicio de lugar; vínculos planta/selvagem; Haz lo mejor con el juicio correcto.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-daninha.html"
+    },
+    {
+      "id": "decocao",
+      "word": "decoção",
+      "simple": "Fervura suave de raízes/cascas/sementes duras, ~10–20 min — modo do manual de chá de plantas.",
+      "simpleEn": "Gentle boil of roots/bark/hard seeds, ~10–20 min — plant-tea manual mode.",
+      "simpleEs": "Hervor suave de raíces/cortezas/semillas duras, ~10–20 min — modo del manual de tisana.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-preparo-cha-plantas.html"
     },
     {
       "id": "defensoria-publica",
@@ -1334,6 +954,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
+    },
+    {
+      "id": "deu-certo-galera",
+      "word": "deu certo, galera",
+      "simple": "Expressão oral BR — deucer galerra; celebração colectiva de acerto; contraste com aff e buguei; depois Faça o melhor!",
+      "simpleEn": "Brazilian oral saying — deucer galerra; collective celebration of success; contrast with aff and buguei; then Do your best!",
+      "simpleEs": "Expresión oral BR — deucer galerra; celebración colectiva de acierto; contraste con aff y buguei; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-deu-certo-galera.html"
     },
     {
       "id": "diamba",
@@ -1416,6 +1046,16 @@
       "href": "/posts/post-inspecao-guia-farmacia-viva.html"
     },
     {
+      "id": "duasakdiqujdocedomadur",
+      "word": "duasakdiqujdocedomadur",
+      "simple": "Expressão / ditado BR — nome lab de «Deus ajuda quem cedo madruga»; diligência com aurora; depois Faça o melhor!",
+      "simpleEn": "Brazilian proverb — lab name for “Deus ajuda quem cedo madruga”; dawn diligence; then Do your best!",
+      "simpleEs": "Dicho BR — nombre lab de «Deus ajuda quem cedo madruga»; diligencia del alba; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-duasakdiqujdocedomadur.html"
+    },
+    {
       "id": "ecbome",
       "word": "eCBome",
       "simple": "Abreviatura de endocanabinoidoma — rede ampliada do sistema endocanabinoide; objecto da modulação endógena (meditação/PIC) e exógena na grade XIV.",
@@ -1454,6 +1094,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
+    },
+    {
+      "id": "eletrizante",
+      "word": "eletrizante",
+      "simple": "Eletro- + intensidade — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo; elos fogo e escala de louvor; Faça o melhor com rasto.",
+      "simpleEn": "Eletro- + intensity — charge metaphor and BR hype; typo eleltrioxsamndo; links to fogo and praise scale; Do your best with a trail.",
+      "simpleEs": "Eletro- + intensidad — metáfora de carga y hype BR; tipografía eleltrioxsamndo; vínculos a fogo y escala; Haz lo mejor con rastro.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-eletrizante.html"
     },
     {
       "id": "eletroacupuntura",
@@ -1516,6 +1166,16 @@
       "href": "/posts/post-inspecao-palavra-entorpecente-narcotico.html"
     },
     {
+      "id": "eojsofaorforap",
+      "word": "eojsofaorforap",
+      "simple": "Expressão oral BR — nome lab de «eu só falo a verdade»; substitui o rótulo plano; elo verdade; depois Faça o melhor!",
+      "simpleEn": "Brazilian oral saying — lab name for “I only speak the truth”; replaces plain label; truth; then Do your best!",
+      "simpleEs": "Expresión oral BR — nombre lab de «eu só falo a verdade»; sustituye etiqueta plana; verdade; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-eojsofaorforap.html"
+    },
+    {
       "id": "equinacea",
       "word": "Equinácea",
       "simple": "Echinacea — planta citada entre as que modulam receptores do sistema endocanabinoide. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -1556,6 +1216,26 @@
       "href": "/plantas/erva-cidreira/"
     },
     {
+      "id": "especial",
+      "word": "especial",
+      "simple": "Lat. specialis (≠ Tupi) — particular / em especial; uso oral e ofício BR; porta para a rede das palavras originárias já fichadas; Faça o melhor!",
+      "simpleEn": "Lat. specialis (≠ Tupi) — particular / especially; BR oral and craft use; door into the originary-words network on file; Do your best!",
+      "simpleEs": "Lat. specialis (≠ tupí) — particular / en especial; uso oral y oficio BR; puerta a la red de palabras originarias ya fichadas; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-especial.html"
+    },
+    {
+      "id": "esperanca",
+      "word": "esperança",
+      "simple": "Lat. spēs / sperantia — afecto vivo BR; esperar × esperança; fresta junto a medo/tristeza; Faça o melhor com ofício.",
+      "simpleEn": "Lat. spēs / sperantia — lived BR hope; wait vs hope; crack of light beside fear/sadness; Do your best with craft.",
+      "simpleEs": "Lat. spēs / sperantia — esperanza vivida BR; esperar × esperança; rendija junto a miedo/tristeza; Haz lo mejor con oficio.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-esperanca.html"
+    },
+    {
       "id": "espinheira-santa",
       "word": "Espinheira-santa",
       "simple": "Maytenus ilicifolia — Mata Atlântica; folhas na tradição gástrica brasileira; taninos e triterpenos em contexto educacional. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -1574,6 +1254,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-mao-esquerda-direita.html"
+    },
+    {
+      "id": "esquerdo",
+      "word": "esquerdo",
+      "simple": "Lado / ofício (esquerda); no BudGanja: objeto, criação e finalidade sem estigma; Faça o melhor nesta mão.",
+      "simpleEn": "Side / craft (left); in BudGanja: object, creation and purpose without stigma; Do your best with this hand.",
+      "simpleEs": "Lado / oficio (izquierda); en BudGanja: objeto, creación y finalidad sin estigma; Haz lo mejor con esta mano.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-esquerdo.html"
     },
     {
       "id": "estaca",
@@ -1666,6 +1356,36 @@
       "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
+      "id": "fabuloso",
+      "word": "fabuloso",
+      "simple": "Lat. fābula / fabulous — elogio BR quotidiano («que demais!»); escala com genial, legal, especial; Faça o melhor com rasto.",
+      "simpleEn": "Lat. fābula / fabulous — everyday BR praise; scale with genial, legal, especial; Do your best with a trail.",
+      "simpleEs": "Lat. fābula / fabulous — elogio BR cotidiano; escala con genial, legal, especial; Haz lo mejor con rastro.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-fabuloso.html"
+    },
+    {
+      "id": "fantasioso",
+      "word": "fantasioso",
+      "simple": "Fantasia + -oso — imaginativo / fanciful; elogio ou crítica leve («não seja fantasioso»); ≠ fantástico (Cap. irmã); Faça o melhor com rasto.",
+      "simpleEn": "Fantasia + -oso — fanciful / imaginative; praise or mild critique; ≠ fantástico (sister Cap.); Do your best with a trail.",
+      "simpleEs": "Fantasia + -oso — imaginativo; elogio o crítica leve; ≠ fantástico (Cap. hermana); Haz lo mejor con rastro.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-fantasioso.html"
+    },
+    {
+      "id": "fantastico",
+      "word": "fantástico",
+      "simple": "Lat. phantasticus / fantasia — imaginação e elogio BR «fantástico!»; escala com legal, genial, maravilhoso; Faça o melhor depois do uau.",
+      "simpleEn": "Lat. phantasticus / fantasy — imagination and BR praise “fantástico!”; scale with legal, genial, maravilhoso; Do your best after the wow.",
+      "simpleEs": "Lat. phantasticus / fantasía — imaginación y elogio BR «¡fantástico!»; escala con legal, genial, maravilhoso; Haz lo mejor después del guau.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-fantastico.html"
+    },
+    {
       "id": "farmacia-viva",
       "word": "Farmácia Viva",
       "simple": "Serviço exclusivo do SUS (Portaria 886/2010) de cultivo/orientação/processamento de plantas medicinais — Aula 5 XIV (Jaqueline Guimarães).",
@@ -1716,6 +1436,16 @@
       "href": "/calculadoras/"
     },
     {
+      "id": "filho-de-deus",
+      "word": "filho de deus",
+      "simple": "Expressão — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; respeito à fé, sem proselitismo; depois Faça o melhor!",
+      "simpleEn": "Saying — theological title, BR oral intensity and dignity/care metaphor; respect for faith, no proselytizing; then Do your best!",
+      "simpleEs": "Expresión — título teológico, intensidad oral BR y metáfora de dignidad/cuidado; respeto a la fe, sin proselitismo; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-filho-de-deus.html"
+    },
+    {
       "id": "fitocanabinoide",
       "word": "Fitocanabinoide",
       "simple": "Canabinoide de planta (sobretudo cannabis) — na grade XIV é a camada de modulação exógena, distinta da via endógena (meditação, estilo de vida, PIC).",
@@ -1756,14 +1486,14 @@
       "href": "/guia/cultivo-basico.html"
     },
     {
-      "id": "fruto",
-      "word": "fruto",
-      "simple": "Lat. fructus — órgão botânico, plural frutos, contraste com fruta; figurado «frutos do trabalho»; elos plantas/simbiose.",
-      "simpleEn": "Lat. fructus — botanical organ, plural frutos, contrast with culinary fruta; figurative fruits of labor; plant/simbiose links.",
-      "simpleEs": "Lat. fructus — órgano botánico, plural frutos, contraste con fruta; figurado frutos del trabajo; vínculos plantas/simbiose.",
+      "id": "fogo",
+      "word": "fogo",
+      "simple": "Lat. focus — lareira / chama; elemento e metáfora; equilibrar com água; raiva com ofício; Faça o melhor com medida.",
+      "simpleEn": "Lat. focus — hearth / flame; element and metaphor; balance with water; anger with craft; Do your best with measure.",
+      "simpleEs": "Lat. focus — hogar / llama; elemento y metáfora; equilibrar con agua; ira con oficio; Haz lo mejor con medida.",
       "group": "lexico",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-fruto.html"
+      "href": "/posts/post-inspecao-palavra-fogo.html"
     },
     {
       "id": "francisco-matos",
@@ -1774,6 +1504,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-farmacia-viva.html"
+    },
+    {
+      "id": "fruto",
+      "word": "fruto",
+      "simple": "Lat. fructus — órgão botânico, plural frutos, contraste com fruta; figurado «frutos do trabalho»; elos plantas/simbiose.",
+      "simpleEn": "Lat. fructus — botanical organ, plural frutos, contrast with culinary fruta; figurative fruits of labor; plant/simbiose links.",
+      "simpleEs": "Lat. fructus — órgano botánico, plural frutos, contraste con fruta; figurado frutos del trabajo; vínculos plantas/simbiose.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-fruto.html"
     },
     {
       "id": "frutos",
@@ -1826,6 +1566,16 @@
       "href": "/posts/post-inspecao-palavra-gelo.html"
     },
     {
+      "id": "genial",
+      "word": "genial",
+      "simple": "*Gênio* + *-al* — elogio de engenho no BR; no BudGanja, celebra o feito com método; culto vazio = ressalva.",
+      "simpleEn": "*Gênio* + *-al* — BR praise of ingenuity; in BudGanja, celebrate the deed with method; empty cult = caveat.",
+      "simpleEs": "*Gênio* + *-al* — elogio BR de ingenio; en BudGanja, celebrar el hecho con método; culto vacío = salvedad.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-genial.html"
+    },
+    {
       "id": "gesto",
       "word": "Gesto",
       "simple": "Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade.",
@@ -1834,36 +1584,6 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-gesto.html"
-    },
-    {
-      "id": "mensagem",
-      "word": "mensagem",
-      "simple": "Lat. mittere → message — conteúdo enviado; plural mensagens; SMS/chat; deixar mensagem; sinal ≠ mensagem.",
-      "simpleEn": "Lat. mittere → message — content sent; plural mensagens; SMS/chat; leave a message; signal ≠ message.",
-      "simpleEs": "Lat. mittere → message — contenido enviado; plural mensagens; SMS/chat; dejar mensaje; señal ≠ mensaje.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-mensagem.html"
-    },
-    {
-      "id": "sinal",
-      "word": "sinal",
-      "simple": "Lat. signum — marca, aviso, trânsito e «dar sinal»; elos gesto, risco, verdade; Faça o melhor!",
-      "simpleEn": "Lat. signum — mark, warning, traffic and “dar sinal”; links gesto, risco, verdade; Do your best!",
-      "simpleEs": "Lat. signum — marca, aviso, tráfico y «dar sinal»; vínculos gesto, risco, verdade; ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-sinal.html"
-    },
-    {
-      "id": "respeito",
-      "word": "respeito",
-      "simple": "Lat. respectus / respicere — olhar de novo; consideração e prática social (sem sermão); elo verdade/gesto; contraste com vingança.",
-      "simpleEn": "Lat. respectus / respicere — look again; consideration and social practice (no sermon); truth/gesture; contrast with revenge.",
-      "simpleEs": "Lat. respectus / respicere — volver a mirar; consideración y práctica social (sin sermón); verdad/gesto; contraste con venganza.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-respeito.html"
     },
     {
       "id": "gluten",
@@ -1936,6 +1656,16 @@
       "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html"
     },
     {
+      "id": "habilidade",
+      "word": "habilidade",
+      "simple": "Irmã PT de skill — capacidade treinável; no lab preferir rasto ao badge; ver ficha skill.",
+      "simpleEn": "PT sister of skill — trainable capacity; lab prefers trail over badge; see skill sheet.",
+      "simpleEs": "Hermana PT de skill — capacidad entrenable; el lab prefiere rastro a insignia; ver ficha skill.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-skill.html"
+    },
+    {
       "id": "hiperatividade-sec",
       "word": "Hiperatividade do SEC",
       "simple": "Polo oposto à hipoatividade — excesso de sinalização do sistema endocanabinoide; a grade XIV fala em equilibrar hiper × hipo via estilo de vida e PIC.",
@@ -1976,6 +1706,16 @@
       "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
+      "id": "idolo",
+      "word": "ídolo",
+      "simple": "Gr. eídōlon — imagem → pessoa admirada; culto lexical, idolatrar e média; admirar com ofício; Faça o melhor!",
+      "simpleEn": "Gk. eídōlon — image → admired person; lexical cult sense, idolatrar and media; admire with craft; Do your best!",
+      "simpleEs": "Gr. eídōlon — imagen → persona admirada; culto léxico, idolatrar y medios; admirar con oficio; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-idolo.html"
+    },
+    {
       "id": "ilicito",
       "word": "Ilícito",
       "simple": "Polo jurídico «fora da lei» — fecha o contraste com droga (remédio ↔ ilícito no senso comum); não é o nome da planta.",
@@ -1986,16 +1726,6 @@
       "href": "/posts/post-inspecao-palavra-ilicito.html"
     },
     {
-      "id": "legal",
-      "word": "legal",
-      "simple": "Lat. legalis — conforme a lei; no BR também «bacana/ok»; separar eixo jurídico da gíria; Faça o melhor com a palavra certa.",
-      "simpleEn": "Lat. legalis — lawful; in BR also “cool/ok”; separate juridical axis from slang; Do your best with the right word.",
-      "simpleEs": "Lat. legalis — conforme a la ley; en BR también «bacán/ok»; separar eje jurídico de la jerga; Haz lo mejor con la palabra correcta.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-legal.html"
-    },
-    {
       "id": "importacao-anvisa",
       "word": "Importação ANVISA",
       "simple": "Via sanitária para produtos de cannabis autorizados — cara e burocrática; não equivale a autocultivo nem a HC.",
@@ -2004,6 +1734,46 @@
       "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-cannabis-medicos.html"
+    },
+    {
+      "id": "inacreditavel",
+      "word": "inacreditável",
+      "simple": "in- + acreditável (← credere) — não acreditável / elogio BR «beyond belief»; irmão de incrível; Faça o melhor depois do «não acredito».",
+      "simpleEn": "in- + acreditável (← credere) — unbelievable / BR praise “beyond belief”; sister of incrível; Do your best after the wow.",
+      "simpleEs": "in- + acreditável (← credere) — increíble / elogio BR «beyond belief»; hermana de incrível; Haz lo mejor después del «no lo creo».",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-inacreditavel.html"
+    },
+    {
+      "id": "incrivel",
+      "word": "incrível",
+      "simple": "Lat. incredibilis — inacreditável e elogio BR «uau»; escala legal → especial → genial → incrível; Faça o melhor!",
+      "simpleEn": "Lat. incredibilis — unbelievable and BR praise “wow”; scale legal → especial → genial → incrível; Do your best!",
+      "simpleEs": "Lat. incredibilis — inacreditável y elogio BR «uau»; escala legal → especial → genial → incrível; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-incrivel.html"
+    },
+    {
+      "id": "infusao",
+      "word": "infusão",
+      "simple": "Água quente (fora do fogo) sobre folhas/flores, 5–15 min tampado — modo do manual de chá de plantas.",
+      "simpleEn": "Hot water (off boil) over leaves/flowers, 5–15 min covered — plant-tea manual mode.",
+      "simpleEs": "Agua caliente (fuera del fuego) sobre hojas/flores, 5–15 min tapado — modo del manual de tisana.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-preparo-cha-plantas.html"
+    },
+    {
+      "id": "inseto",
+      "word": "inseto",
+      "simple": "Lat. insectum — lemma inseto / plural insetos; vida, ecologia e cultura; elos joaninha, abelha, animal, simbiose; contraste buguei.",
+      "simpleEn": "Lat. insectum — lemma inseto / plural insetos; life, ecology and culture; links ladybug, bee, animal, symbiosis; contrast buguei.",
+      "simpleEs": "Lat. insectum — lema inseto / plural insetos; vida, ecología y cultura; vínculos joaninha, abeja, animal, simbiosis; contraste buguei.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-inseto.html"
     },
     {
       "id": "inspecao",
@@ -2036,6 +1806,26 @@
       "href": "/posts/post-inspecao-personagem-inspetor.html"
     },
     {
+      "id": "inspiracao",
+      "word": "inspiração",
+      "simple": "Lat. īnspīrātiō — sopro × ideia BR; elos criatividade/gesto/esperança; Faça o melhor com o sopro.",
+      "simpleEn": "Lat. īnspīrātiō — breath × idea BR; links creativity/gesture/hope; Do your best with the breath.",
+      "simpleEs": "Lat. īnspīrātiō — aliento × idea BR; vínculos creatividad/gesto/esperanza; Haz lo mejor con el soplo.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-inspiracao.html"
+    },
+    {
+      "id": "interruptor",
+      "word": "interruptor",
+      "simple": "Lat. interrumpere — ligar/desligar × corte de fluxo; derivações interromper/interrupção; elos sinal/gesto/eletrizante; Faça o melhor com o clique.",
+      "simpleEn": "Lat. interrumpere — on/off × flow cut; derivatives interromper/interrupção; links sinal/gesto/eletrizante; Do your best with the click.",
+      "simpleEs": "Lat. interrumpere — encender/apagar × corte de flujo; derivaciones interromper/interrupção; vínculos sinal/gesto/eletrizante; Haz lo mejor con el clic.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-interruptor.html"
+    },
+    {
       "id": "invernagem",
       "word": "Invernagem",
       "simple": "Permanecer o inverno inteiro no gelo — feito âncora de Tamara no Ártico; eixo do livro.",
@@ -2066,6 +1856,16 @@
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
+      "id": "ja",
+      "word": "já",
+      "simple": "Latim *iam* — advérbio de tempo/urgência; no BudGanja, par oral com «aff»; fecho vazio («já deu») = ressalva.",
+      "simpleEn": "Latin *iam* — adverb of time/urgency; in BudGanja, oral pair with “aff”; empty close = caveat.",
+      "simpleEs": "Latín *iam* — adverbio de tiempo/urgencia; en BudGanja, par oral con «aff»; cierre vacío = salvedad.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-ja.html"
+    },
+    {
       "id": "jambu",
       "word": "Jambu",
       "simple": "Acmella oleracea — jambu amazônico; spilanthol provoca formigamento; culinária paraense e tradição oral. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -2074,6 +1874,36 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/plantas/jambu/"
+    },
+    {
+      "id": "jesusamando",
+      "word": "jesusamando",
+      "simple": "Expressão oral BR — assombro e afeto num sopro; contraste com aff; depois, Faça o melhor!",
+      "simpleEn": "Brazilian oral saying — awe and affection in one breath; contrast with aff; then Do your best!",
+      "simpleEs": "Expresión oral BR — asombro y afecto en un soplo; contraste con aff; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-jesusamando.html"
+    },
+    {
+      "id": "jesusmanando",
+      "word": "jesusmanando",
+      "simple": "Grafia comum por lapso de «jesusamando» — mesma ficha (assombro e afeto).",
+      "simpleEn": "Common misspelling of “jesusamando” — same sheet (awe and affection).",
+      "simpleEs": "Grafía común por lapsus de «jesusamando» — misma ficha (asombro y afecto).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-jesusamando.html"
+    },
+    {
+      "id": "jesusudavi",
+      "word": "jesusudavi",
+      "simple": "Expressão oral BR — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala entre aff e jesusamando.",
+      "simpleEn": "Brazilian oral saying — replaces meudeusdoceu; meu Deus do céu; high awe; between aff and jesusamando.",
+      "simpleEs": "Expresión oral BR — sustituye meudeusdoceu; meu Deus do céu; asombro alto; entre aff y jesusamando.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-jesusudavi.html"
     },
     {
       "id": "judicializacao",
@@ -2166,6 +1996,16 @@
       "href": "/biblioteca/inspecoes/"
     },
     {
+      "id": "legal",
+      "word": "legal",
+      "simple": "Lat. legalis — conforme a lei; no BR também «bacana/ok»; separar eixo jurídico da gíria; Faça o melhor com a palavra certa.",
+      "simpleEn": "Lat. legalis — lawful; in BR also “cool/ok”; separate juridical axis from slang; Do your best with the right word.",
+      "simpleEs": "Lat. legalis — conforme a la ley; en BR también «bacán/ok»; separar eje jurídico de la jerga; Haz lo mejor con la palabra correcta.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-legal.html"
+    },
+    {
       "id": "lei-11-343",
       "word": "Lei 11.343/2006",
       "simple": "Lei de Drogas — âncora tipológica onde cai quem não tem estatuto processual (HC) ou sanitário (ANVISA); não é o nome da planta.",
@@ -2174,6 +2014,16 @@
       "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-lei-11-343.html"
+    },
+    {
+      "id": "lingua-portuguesa",
+      "word": "língua portuguesa",
+      "simple": "Meio do Inspetor BudGanja: originalidade; alterações no tempo (latim → BR → digital); nomear, inspecionar, cuidar; Faça o melhor nesta língua.",
+      "simpleEn": "Medium of Inspetor BudGanja: originality; changes over time (Latin → BR → digital); name, inspect, care; Do your best in this language.",
+      "simpleEs": "Medio de Inspetor BudGanja: originalidad; cambios en el tiempo (latín → BR → digital); nombrar, inspeccionar, cuidar; Haz lo mejor en esta lengua.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-lingua-portuguesa.html"
     },
     {
       "id": "lista-f",
@@ -2216,6 +2066,16 @@
       "href": "/calculadoras/luximetro.html"
     },
     {
+      "id": "maceracao",
+      "word": "maceração",
+      "simple": "Extracção a frio (horas) quando o calor forte não convém — citado no manual de chá de plantas.",
+      "simpleEn": "Cold extract (hours) when strong heat is unsuitable — cited in the plant-tea manual.",
+      "simpleEs": "Extracción en frío (horas) cuando el calor fuerte no conviene — citado en el manual de tisana.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-preparo-cha-plantas.html"
+    },
+    {
       "id": "maconha",
       "word": "Maconha",
       "simple": "Nome popular afro-atlântico da planta no Brasil — carregado de estigma no século XX.",
@@ -2224,6 +2084,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-maconha.html"
+    },
+    {
+      "id": "magnifico",
+      "word": "magnífico",
+      "simple": "Lat. magnificus / magnificent — elogio BR quotidiano («que grande!»); escala com legal, genial, fabuloso, fantástico, incrível, maravilhoso; Faça o melhor com rasto.",
+      "simpleEn": "Lat. magnificus / magnificent — everyday BR praise; scale with legal, genial, fabuloso, fantástico, incrível, maravilhoso; Do your best with a trail.",
+      "simpleEs": "Lat. magnificus / magnificent — elogio BR cotidiano; escala con legal, genial, fabuloso, fantástico, incrível, maravilloso; Haz lo mejor con rastro.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-magnifico.html"
     },
     {
       "id": "mamao",
@@ -2274,6 +2144,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/plantas/maracuja/"
+    },
+    {
+      "id": "maravilhoso",
+      "word": "maravilhoso",
+      "simple": "De maravilha (lat. mirabilia) — assombro e elogio BR («que maravilhoso!»); na escala aff ← legal ← genial ← maravilhoso; depois do uau, Faça o melhor!",
+      "simpleEn": "From maravilha (Lat. mirabilia) — wonder and BR praise; scale aff ← legal ← genial ← maravilhoso; after the wow, Do your best!",
+      "simpleEs": "De maravilha (lat. mirabilia) — asombro y elogio BR; escala aff ← legal ← genial ← maravilhoso; después del guau, ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-maravilhoso.html"
     },
     {
       "id": "marijuana",
@@ -2366,6 +2246,26 @@
       "href": "/plantas/melissa/"
     },
     {
+      "id": "memoravel",
+      "word": "memorável",
+      "simple": "Lat. memorabilis — digno de memória; elogio BR com rasto; retenção ≠ escala genial/especial; Faça o melhor!",
+      "simpleEn": "Lat. memorabilis — worth remembering; BR praise with a trace; retention ≠ genial/especial scale; Do your best!",
+      "simpleEs": "Lat. memorabilis — digno de memoria; elogio BR con rastro; retención ≠ escala genial/especial; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-memoravel.html"
+    },
+    {
+      "id": "mensagem",
+      "word": "mensagem",
+      "simple": "Lat. mittere → message — conteúdo enviado; plural mensagens; SMS/chat; deixar mensagem; sinal ≠ mensagem.",
+      "simpleEn": "Lat. mittere → message — content sent; plural mensagens; SMS/chat; leave a message; signal ≠ message.",
+      "simpleEs": "Lat. mittere → message — contenido enviado; plural mensagens; SMS/chat; dejar mensaje; señal ≠ mensaje.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mensagem.html"
+    },
+    {
       "id": "metabolito-secundario",
       "word": "Metabólito secundário",
       "simple": "Pigmentos, terpenos, alcaloides… — o que mais diferencia quimiotipos na Aula 10, face aos metabólitos primários.",
@@ -2434,6 +2334,36 @@
       "group": "tecnico",
       "fromTitle": true,
       "href": "/posts/post-inspecao-canal-movrecam.html"
+    },
+    {
+      "id": "muitoobrigado",
+      "word": "muitoobrigado",
+      "simple": "Expressão oral BR — gratidão reforçada; étimo obligare × memória escravidão/cana; gesto, respeito; depois Faça o melhor!",
+      "simpleEn": "Brazilian oral saying — reinforced gratitude; etymon obligare × slavery/cane memory; gesture, respect; then Do your best!",
+      "simpleEs": "Expresión oral BR — gratitud reforzada; étimo obligare × memoria esclavitud/caña; gesto, respeito; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-muito-obrigado.html"
+    },
+    {
+      "id": "multitarefa",
+      "word": "multitarefa",
+      "simple": "Forma PT irmã de multitask — mesma correção: não é fazer tudo bem ao mesmo tempo; método e limites.",
+      "simpleEn": "PT sister of multitask — same correction: not doing everything well at once; method and limits.",
+      "simpleEs": "Forma PT hermana de multitask — misma corrección: no es hacerlo todo bien a la vez; método y límites.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-multitask.html"
+    },
+    {
+      "id": "multitask",
+      "word": "multitask",
+      "simple": "Empréstimo EN→BR; parece «tudo bem ao mesmo tempo»; ofício = uma com método ou paralelo com limites; Faça o melhor!",
+      "simpleEn": "EN→BR loan; seems “everything well at once”; craft = one with method or limited parallel; Do your best!",
+      "simpleEs": "Préstamo EN→BR; parece «todo bien a la vez»; oficio = una con método o paralelo con límites; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-multitask.html"
     },
     {
       "id": "mulungu",
@@ -2576,6 +2506,16 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "passado",
+      "word": "passado",
+      "simple": "De passar / lat. passāre — tempo já decorrido; memória × história; elos memorável, verdade, língua; Faça o melhor!",
+      "simpleEn": "From passar / Lat. passāre — elapsed time; memory × history; links memorável, truth, language; Do your best!",
+      "simpleEs": "De passar / lat. passāre — tiempo trascurrido; memoria × historia; vínculos memorável, verdad, lengua; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-passado.html"
+    },
+    {
       "id": "passar",
       "word": "Passar",
       "simple": "Verbo da passagem: o que aconteceu, o que atravessa, o que se transmite.",
@@ -2634,6 +2574,26 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "pipoca",
+      "word": "pipoca",
+      "simple": "Tupi pi'poka — milho que estoura; rua e cinema BR; transformação com calor certo; Faça o melhor!",
+      "simpleEn": "Tupi pi'poka — corn that pops; BR street and cinema; craftful heat; Do your best!",
+      "simpleEs": "Tupí pi'poka — maíz que estalla; calle y cine BR; calor con oficio; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-pipoca.html"
+    },
+    {
+      "id": "planta",
+      "word": "planta",
+      "simple": "Lat. planta / plantare — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; ficha de palavra ≠ lista de espécies.",
+      "simpleEn": "Lat. planta / plantare — living vegetal being; plural plantas in the hub; cultivation and Farmácia Viva; word sheet ≠ species list.",
+      "simpleEs": "Lat. planta / plantare — ser vivo vegetal; plural plantas en el hub; cultivo y Farmácia Viva; ficha de palabra ≠ lista de especies.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-planta.html"
     },
     {
       "id": "plantas",
@@ -2726,6 +2686,16 @@
       "href": "/posts/post-inspecao-palavra-proibicao-proibicionismo.html"
     },
     {
+      "id": "prosseguir",
+      "word": "prosseguir",
+      "simple": "Lat. prōsequī — continuar × retomar BR; derivações prosseguimento; elos sempre/já/caminho; Faça o melhor e prossiga.",
+      "simpleEn": "Lat. prōsequī — continue × resume BR; derivatives prosseguimento; links sempre/já/caminho; Do your best and proceed.",
+      "simpleEs": "Lat. prōsequī — continuar × retomar BR; derivaciones prosseguimento; vínculos sempre/já/caminho; Haz lo mejor y prosigue.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-prosseguir.html"
+    },
+    {
       "id": "psicoativo",
       "word": "Psicoativo",
       "simple": "Substância que altera mente, percepção ou humor — nas aulas, não é sinónimo automático de alucinógeno. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -2754,6 +2724,16 @@
       "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-psicotropico.html"
+    },
+    {
+      "id": "pular",
+      "word": "pular",
+      "simple": "Lat. pullāre — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar/backspace/já; Faça o melhor com o pulo certo.",
+      "simpleEn": "Lat. pullāre — jump × skip BR; derivatives pulo/pulinho/pulada; links passar/backspace/já; Do your best with the right leap.",
+      "simpleEs": "Lat. pullāre — salto × omitir BR; derivaciones pulo/pulinho/pulada; vínculos passar/backspace/já; Haz lo mejor con el salto correcto.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-pular.html"
     },
     {
       "id": "quimiotipo",
@@ -2826,6 +2806,16 @@
       "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
+      "id": "respeito",
+      "word": "respeito",
+      "simple": "Lat. respectus / respicere — olhar de novo; consideração e prática social (sem sermão); elo verdade/gesto; contraste com vingança.",
+      "simpleEn": "Lat. respectus / respicere — look again; consideration and social practice (no sermon); truth/gesture; contrast with revenge.",
+      "simpleEs": "Lat. respectus / respicere — volver a mirar; consideración y práctica social (sin sermón); verdad/gesto; contraste con venganza.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-respeito.html"
+    },
+    {
       "id": "retiro",
       "word": "Retiro",
       "simple": "Contexto intensivo de prática (ex. 4 dias Isha Yoga / Inner Engineering no estudo citado) — distinto da rotina diária de 10 min; indexar ≠ endossar escola comercial.",
@@ -2896,6 +2886,16 @@
       "href": "/posts/post-inspecao-guia-hc-seletividade-advogados.html"
     },
     {
+      "id": "selvagem",
+      "word": "selvagem",
+      "simple": "Lat. silvaticus ← silva — da mata; selvagem × domesticado; «bicho selvagem»; elos planta/animal/inseto; sem romantizar dano.",
+      "simpleEn": "Lat. silvaticus ← silva — of the forest; wild vs domesticated; plant/animal/insect links; no romance of harm.",
+      "simpleEs": "Lat. silvaticus ← silva — del bosque; salvaje × domesticado; vínculos planta/animal/insecto; sin romantizar daño.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-selvagem.html"
+    },
+    {
       "id": "sementinha",
       "word": "Sementinha",
       "simple": "Semente pequena — personagem-símbolo do conto Vida e do diário familiar.",
@@ -2904,6 +2904,16 @@
       "group": "titulo",
       "fromTitle": true,
       "href": "/vida/diario/"
+    },
+    {
+      "id": "sempre",
+      "word": "sempre",
+      "simple": "Lat. semper — duração × hábito × promessa BR; elos já/prosseguir/caminho; Faça o melhor sempre que puder.",
+      "simpleEn": "Lat. semper — duration × habit × promise BR; links já/prosseguir/caminho; Do your best whenever you can.",
+      "simpleEs": "Lat. semper — duración × hábito × promesa BR; vínculos já/prosseguir/caminho; Haz lo mejor siempre que puedas.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sempre.html"
     },
     {
       "id": "silenciamento",
@@ -2926,6 +2936,16 @@
       "href": "/posts/post-inspecao-palavra-simbiose.html"
     },
     {
+      "id": "sinal",
+      "word": "sinal",
+      "simple": "Lat. signum — marca, aviso, trânsito e «dar sinal»; elos gesto, risco, verdade; Faça o melhor!",
+      "simpleEn": "Lat. signum — mark, warning, traffic and “dar sinal”; links gesto, risco, verdade; Do your best!",
+      "simpleEs": "Lat. signum — marca, aviso, tráfico y «dar sinal»; vínculos gesto, risco, verdade; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sinal.html"
+    },
+    {
       "id": "sintetico",
       "word": "Sintético",
       "simple": "Camada XIV de moléculas de laboratório (ex. linha Mechoulam / HU) — modulação exógena distinta da autonomia endógena (meditação, estilo de vida, PIC).",
@@ -2944,6 +2964,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "skill",
+      "word": "skill",
+      "simple": "Empréstimo EN→BR; habilidade/craft com rasto; anti-badge LinkedIn; elos multitask e genial; Faça o melhor!",
+      "simpleEn": "EN→BR loan; habilidade/craft with a trail; anti-LinkedIn badge; links multitask and genial; Do your best!",
+      "simpleEs": "Préstamo EN→BR; habilidade/oficio con rastro; anti-insignia LinkedIn; vínculos multitask y genial; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-skill.html"
     },
     {
       "id": "soja",
@@ -3056,6 +3086,26 @@
       "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
+      "id": "tisana",
+      "word": "tisana",
+      "simple": "Chá de plantas (infusão ou decoção) — no lab, distinto do chá preto de Camellia; ver manual de preparo.",
+      "simpleEn": "Herbal tea (infusion or decoction) — in the lab, distinct from Camellia black tea; see prep manual.",
+      "simpleEs": "Tisana (infusión o decocción) — en el lab, distinta del té negro de Camellia; ver manual de preparación.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-preparo-cha-plantas.html"
+    },
+    {
+      "id": "total",
+      "word": "total",
+      "simple": "Lat. tōtus — inteiro/soma; gíria BR «total!» (acordo/louvor); escala com legal e fantástico; Faça o melhor!",
+      "simpleEn": "Lat. tōtus — whole/sum; BR slang “total!” (agreement/praise); scale with legal and fantástico; Do your best!",
+      "simpleEs": "Lat. tōtus — entero/suma; jerga BR «¡total!» (acuerdo/elogio); escala con legal y fantástico; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-total.html"
+    },
+    {
       "id": "trafico",
       "word": "Tráfico",
       "simple": "Tipificação quando há indícios de mercancia — rótulo que, com porte, opera a seletividade na rua e no inquérito.",
@@ -3146,6 +3196,16 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "valeu",
+      "word": "valeu",
+      "simple": "De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de muitoobrigado; gesto, respeito; Faça o melhor — e valeu.",
+      "simpleEn": "From valer ← Lat. valēre — light thanks / oral close BR; sister of muitoobrigado; gesture, respect; Do your best — and valeu.",
+      "simpleEs": "De valer ← lat. valēre — gratitud ligera / cierre oral BR; hermana de muitoobrigado; gesto, respeito; Haz lo mejor — y valeu.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-valeu.html"
+    },
+    {
       "id": "verdade",
       "word": "Verdade",
       "simple": "Do latim *vērĭtās* / *vērus* — o que se pode verificar; no BudGanja, citar, medir e não fabricar evidência.",
@@ -3224,16 +3284,6 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
-    },
-    {
-      "id": "ayrton-senna",
-      "word": "Ayrton Senna",
-      "simple": "Piloto brasileiro tricampeão de F1 (1960–1994); no site, homenagem em Pessoas com elo ao mantra Faça o melhor! e ao Instituto.",
-      "simpleEn": "Brazilian three-time F1 champion (1960–1994); on the site, a People homage linked to Do your best! and the Instituto.",
-      "simpleEs": "Piloto brasileño tricampeón de F1 (1960–1994); en el sitio, homenaje en Personas con vínculo a ¡Haz lo mejor! y al Instituto.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-figura-ayrton-senna.html"
     }
   ]
 }

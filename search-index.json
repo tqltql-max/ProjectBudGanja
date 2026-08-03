@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:59:24.391Z",
+  "updatedAt": "2026-08-03T16:05:35.351Z",
   "items": [
     {
       "title": "Início",
@@ -648,6 +648,12 @@
       "url": "/posts/post-inspecao-guia-farmacia-viva.html",
       "excerpt": "Resumo da Aula 5 XIV (Jaqueline): Farmácia Viva como política do SUS, Portaria 886/2010, modalidades e o lugar da cannabis na cadeia pública.",
       "text": "Inspeção: Guia Farmácia Viva — plantas medicinais e cannabis no SUS Resumo da Aula 5 XIV (Jaqueline): Farmácia Viva como política do SUS, Portaria 886/2010, modalidades e o lugar da cannabis na cadeia pública. inspecao ## Escopo\n\nInspeção-guia a partir do **resumo da Aula 5** do XIV Curso — **A Farmácia Viva e a Cannabis sativa L.** (Jaqueline Guimarães). Objecto: **política pública do SUS**, cadeia produtiva (cultivo → processamento → dispensação) e enquadramento da cannabis nesse serviço.\n\n> **Nota metodológica:** rascunhos XIV. **Não é manual de implantação municipal nem parecer jurídico.** Portarias e decretos mudam — confirmar no Ministério da Saúde / secretarias.\n\n## Público e uso\n\n| Campo | Valor |\n|-------|-------|\n| Âncora | [Livro XIV · Aula 5](/biblioteca/unifesp/livro-xiv.html#aula-5) |\n| Docente | Jaqueline Guimarães (farmacêutica · Farmácias Vivas) |\n| Elo acesso | [Farmacêuticos](/posts/post-inspecao-guia-cannabis-farmaceuticos.html) · [Associações](/posts/post-inspecao-guia-associacoes-pacientes.html) |\n| Pergunta-guia | O que é Farmácia Viva no SUS e onde a cannabis entra nessa cadeia? |\n\n## Tese central\n\n**Farmácia Viva** é serviço **exclusivo do SUS** (Portaria 886/2010): cultivo, orientação, beneficiamento e, conforme modalidade, manipulação/dispensação de plantas medicinais — com princípios de biodiversidade, saberes tradicionais e evidência. A aula liga isso à possibilidade de incluir **Cannabis sativa** na lógica de acesso público a plantas, sem confundir com associação de pacientes ou farmácia privada.\n\n## Hipóteses\n\n- **H1:** Farmácia Viva ≠ horto caseiro — é **política pública** com gestão municipal/estadual.\n- **H2:** Modalidades (tipo 1–3 no decreto cearense citado) diferem por cultivo / beneficiamento / manipulação.\n- **H3:** **RENISUS** lista plantas de interesse para pesquisa/validação — elo ciência × tradição.\n- **H4:** Mentor histórico: Prof. Francisco José de Abreu Matos (UFC, 1983 → reconhecimento federal 2010).\n- **H5:** Cannabis "
+    },
+    {
+      "title": "Inspeção: Guia — preparar chá de plantas (infusão e decoção)",
+      "url": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
+      "excerpt": "Manual: infusão e decoção caseiras — material, tempos, proporções de ofício, segurança e elos com Plantas; Faça o melhor!",
+      "text": "Inspeção: Guia — preparar chá de plantas (infusão e decoção) Manual: infusão e decoção caseiras — material, tempos, proporções de ofício, segurança e elos com Plantas; Faça o melhor! inspecao ## Escopo\n\nManual BudGanja de **como preparar chá de plantas** em casa: **infusão**, **decoção**, proporções de ofício, higiene e limites de segurança. Serve quem [cultiva](/cultivo/) ou usa o catálogo [Plantas](/plantas/) — sem virar receita médica.\n\n> **Nota metodológica (ler primeiro):** auditoria de ofício caseiro. **Não é bula, não substitui médico, farmacêutico nem orientação de Farmácia Viva.** Identificar a [planta](/posts/post-inspecao-palavra-planta.html) com certeza; dose e espécie mudam o risco. Cannabis e plantas com alcaloides fortes **não** entram neste manual como «chá livre». Tom: [Faça o melhor!](/posts/post-inspecao-expressao-faca-o-melhor.html) — o melhor possível **neste copo**, hoje.\n\n## Público e uso\n\n| Campo | Valor |\n|-------|-------|\n| Público | Cultivadores caseiros, leitores do hub Plantas, ofício de chá culinário / tradicional |\n| Tipo BudGanja | Inspeção-guia — manual de preparo |\n| Grupo Guia | [Técnico](/guia/palavras.html?group=tecnico) |\n| Elo vivo | [Plantas](/plantas/) · [planta](/posts/post-inspecao-palavra-planta.html) · [Farmácia Viva](/posts/post-inspecao-guia-farmacia-viva.html) |\n| Pergunta-guia | Como preparar chá com ofício: água, tempo, parte da planta e cuidado? |\n| Data | 2026-08-03 |\n\n## 1. Três modos (mapa rápido)\n\n| Modo | Quando usar | Água | Tempo típico (ofício) |\n|------|-------------|------|------------------------|\n| **Infusão** | Folhas, flores, partes tenras | Quente (já fervida, fora do fogo) | 5–15 min tampado |\n| **Decocção** | Raízes, cascas, sementes duras, rizomas | Em ebulição suave | 10–20 min (às vezes mais) |\n| **Maceração** | Extrair a frio / evitar calor forte | Fria ou morna | Horas (ex.: noite) |\n\n**Tisana** no lab = chá de plantas (infusão ou decoção caseira), sem confundir com chá preto de *Camellia sinen"
     },
     {
       "title": "Pesquisa: Insumos orgânicos vs industrializados — influência no fruto final",
@@ -1988,88 +1994,16 @@
       "text": "AEA Sigla de anandamida (N-araquidonoiletanolamida) — endocanabinoide cujo aumento aparece em estudos de exercício e, observacionalmente, de meditação/yoga. tecnico guia palavras glossário aea"
     },
     {
+      "title": "Aff",
+      "url": "/posts/post-inspecao-palavra-aff.html",
+      "excerpt": "Interjeição BR de enfado — no laboratório: termómetro ok; fechar sem inspecionar = reprovado (inspeção severa).",
+      "text": "Aff Interjeição BR de enfado — no laboratório: termómetro ok; fechar sem inspecionar = reprovado (inspeção severa). lexico guia palavras glossário aff"
+    },
+    {
       "title": "Água",
       "url": "/posts/post-inspecao-palavra-agua.html",
       "excerpt": "Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem.",
       "text": "Água Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem. lexico guia palavras glossário agua"
-    },
-    {
-      "title": "fogo",
-      "url": "/posts/post-inspecao-palavra-fogo.html",
-      "excerpt": "Lat. focus — lareira / chama; elemento e metáfora; equilibrar com água; raiva com ofício; Faça o melhor com medida.",
-      "text": "fogo Lat. focus — lareira / chama; elemento e metáfora; equilibrar com água; raiva com ofício; Faça o melhor com medida. lexico guia palavras glossário fogo"
-    },
-    {
-      "title": "pipoca",
-      "url": "/posts/post-inspecao-palavra-pipoca.html",
-      "excerpt": "Tupi pi'poka — milho que estoura; rua e cinema BR; transformação com calor certo; Faça o melhor!",
-      "text": "pipoca Tupi pi'poka — milho que estoura; rua e cinema BR; transformação com calor certo; Faça o melhor! lexico guia palavras glossário pipoca"
-    },
-    {
-      "title": "ídolo",
-      "url": "/posts/post-inspecao-palavra-idolo.html",
-      "excerpt": "Gr. eídōlon — imagem → pessoa admirada; culto lexical, idolatrar e média; admirar com ofício; Faça o melhor!",
-      "text": "ídolo Gr. eídōlon — imagem → pessoa admirada; culto lexical, idolatrar e média; admirar com ofício; Faça o melhor! lexico guia palavras glossário idolo"
-    },
-    {
-      "title": "eletrizante",
-      "url": "/posts/post-inspecao-palavra-eletrizante.html",
-      "excerpt": "Eletro- + intensidade — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo; elos fogo e escala de louvor; Faça o melhor com rasto.",
-      "text": "eletrizante Eletro- + intensidade — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo; elos fogo e escala de louvor; Faça o melhor com rasto. lexico guia palavras glossário eletrizante"
-    },
-    {
-      "title": "interruptor",
-      "url": "/posts/post-inspecao-palavra-interruptor.html",
-      "excerpt": "Lat. interrumpere — ligar/desligar × corte de fluxo; derivações interromper/interrupção; elos sinal/gesto/eletrizante; Faça o melhor com o clique.",
-      "text": "interruptor Lat. interrumpere — ligar/desligar × corte de fluxo; derivações interromper/interrupção; elos sinal/gesto/eletrizante; Faça o melhor com o clique. lexico guia palavras glossário interruptor"
-    },
-    {
-      "title": "fantástico",
-      "url": "/posts/post-inspecao-palavra-fantastico.html",
-      "excerpt": "Lat. phantasticus / fantasia — imaginação e elogio BR «fantástico!»; escala com legal, genial, maravilhoso; Faça o melhor depois do uau.",
-      "text": "fantástico Lat. phantasticus / fantasia — imaginação e elogio BR «fantástico!»; escala com legal, genial, maravilhoso; Faça o melhor depois do uau. lexico guia palavras glossário fantastico"
-    },
-    {
-      "title": "total",
-      "url": "/posts/post-inspecao-palavra-total.html",
-      "excerpt": "Lat. tōtus — inteiro/soma; gíria BR «total!» (acordo/louvor); escala com legal e fantástico; Faça o melhor!",
-      "text": "total Lat. tōtus — inteiro/soma; gíria BR «total!» (acordo/louvor); escala com legal e fantástico; Faça o melhor! lexico guia palavras glossário total"
-    },
-    {
-      "title": "fantasioso",
-      "url": "/posts/post-inspecao-palavra-fantasioso.html",
-      "excerpt": "Fantasia + -oso — imaginativo / fanciful; elogio ou crítica leve («não seja fantasioso»); ≠ fantástico (Cap. irmã); Faça o melhor com rasto.",
-      "text": "fantasioso Fantasia + -oso — imaginativo / fanciful; elogio ou crítica leve («não seja fantasioso»); ≠ fantástico (Cap. irmã); Faça o melhor com rasto. lexico guia palavras glossário fantasioso"
-    },
-    {
-      "title": "especial",
-      "url": "/posts/post-inspecao-palavra-especial.html",
-      "excerpt": "Lat. specialis (≠ Tupi) — particular / em especial; uso oral e ofício BR; porta para a rede das palavras originárias já fichadas; Faça o melhor!",
-      "text": "especial Lat. specialis (≠ Tupi) — particular / em especial; uso oral e ofício BR; porta para a rede das palavras originárias já fichadas; Faça o melhor! lexico guia palavras glossário especial"
-    },
-    {
-      "title": "memorável",
-      "url": "/posts/post-inspecao-palavra-memoravel.html",
-      "excerpt": "Lat. memorabilis — digno de memória; elogio BR com rasto; retenção ≠ escala genial/especial; Faça o melhor!",
-      "text": "memorável Lat. memorabilis — digno de memória; elogio BR com rasto; retenção ≠ escala genial/especial; Faça o melhor! lexico guia palavras glossário memoravel"
-    },
-    {
-      "title": "passado",
-      "url": "/posts/post-inspecao-palavra-passado.html",
-      "excerpt": "De passar / lat. passāre — tempo já decorrido; memória × história; elos memorável, verdade, língua; Faça o melhor!",
-      "text": "passado De passar / lat. passāre — tempo já decorrido; memória × história; elos memorável, verdade, língua; Faça o melhor! lexico guia palavras glossário passado"
-    },
-    {
-      "title": "incrível",
-      "url": "/posts/post-inspecao-palavra-incrivel.html",
-      "excerpt": "Lat. incredibilis — inacreditável e elogio BR «uau»; escala legal → especial → genial → incrível; Faça o melhor!",
-      "text": "incrível Lat. incredibilis — inacreditável e elogio BR «uau»; escala legal → especial → genial → incrível; Faça o melhor! lexico guia palavras glossário incrivel"
-    },
-    {
-      "title": "inacreditável",
-      "url": "/posts/post-inspecao-palavra-inacreditavel.html",
-      "excerpt": "in- + acreditável (← credere) — não acreditável / elogio BR «beyond belief»; irmão de incrível; Faça o melhor depois do «não acredito».",
-      "text": "inacreditável in- + acreditável (← credere) — não acreditável / elogio BR «beyond belief»; irmão de incrível; Faça o melhor depois do «não acredito». lexico guia palavras glossário inacreditavel"
     },
     {
       "title": "Águas do Mar e Lágrimas",
@@ -2082,198 +2016,6 @@
       "url": "/plantas/alecrim/",
       "excerpt": "Salvia rosmarinus — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Alecrim Salvia rosmarinus — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário alecrim"
-    },
-    {
-      "title": "Aff",
-      "url": "/posts/post-inspecao-palavra-aff.html",
-      "excerpt": "Interjeição BR de enfado — no laboratório: termómetro ok; fechar sem inspecionar = reprovado (inspeção severa).",
-      "text": "Aff Interjeição BR de enfado — no laboratório: termómetro ok; fechar sem inspecionar = reprovado (inspeção severa). lexico guia palavras glossário aff"
-    },
-    {
-      "title": "valeu",
-      "url": "/posts/post-inspecao-palavra-valeu.html",
-      "excerpt": "De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de muitoobrigado; gesto, respeito; Faça o melhor — e valeu.",
-      "text": "valeu De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de muitoobrigado; gesto, respeito; Faça o melhor — e valeu. lexico guia palavras glossário valeu"
-    },
-    {
-      "title": "muitoobrigado",
-      "url": "/posts/post-inspecao-expressao-muito-obrigado.html",
-      "excerpt": "Expressão oral BR — gratidão reforçada; étimo obligare × memória escravidão/cana; gesto, respeito; depois Faça o melhor!",
-      "text": "muitoobrigado Expressão oral BR — gratidão reforçada; étimo obligare × memória escravidão/cana; gesto, respeito; depois Faça o melhor! lexico guia palavras glossário muitoobrigado"
-    },
-    {
-      "title": "eojsofaorforap",
-      "url": "/posts/post-inspecao-expressao-eojsofaorforap.html",
-      "excerpt": "Expressão oral BR — nome lab de «eu só falo a verdade»; substitui o rótulo plano; elo verdade; depois Faça o melhor!",
-      "text": "eojsofaorforap Expressão oral BR — nome lab de «eu só falo a verdade»; substitui o rótulo plano; elo verdade; depois Faça o melhor! lexico guia palavras glossário eojsofaorforap"
-    },
-    {
-      "title": "maravilhoso",
-      "url": "/posts/post-inspecao-palavra-maravilhoso.html",
-      "excerpt": "De maravilha (lat. mirabilia) — assombro e elogio BR («que maravilhoso!»); na escala aff ← legal ← genial ← maravilhoso; depois do uau, Faça o melhor!",
-      "text": "maravilhoso De maravilha (lat. mirabilia) — assombro e elogio BR («que maravilhoso!»); na escala aff ← legal ← genial ← maravilhoso; depois do uau, Faça o melhor! lexico guia palavras glossário maravilhoso"
-    },
-    {
-      "title": "magnífico",
-      "url": "/posts/post-inspecao-palavra-magnifico.html",
-      "excerpt": "Lat. magnificus / magnificent — elogio BR quotidiano («que grande!»); escala com legal, genial, fabuloso, fantástico, incrível, maravilhoso; Faça o melhor com rasto.",
-      "text": "magnífico Lat. magnificus / magnificent — elogio BR quotidiano («que grande!»); escala com legal, genial, fabuloso, fantástico, incrível, maravilhoso; Faça o melhor com rasto. lexico guia palavras glossário magnifico"
-    },
-    {
-      "title": "ausdhuashduas",
-      "url": "/posts/post-inspecao-expressao-ausdhuashduas.html",
-      "excerpt": "Expressão oral BR — nome lab do riso tipado (substitui kkkk… e «risas online»); contraste com aff; depois Faça o melhor!",
-      "text": "ausdhuashduas Expressão oral BR — nome lab do riso tipado (substitui kkkk… e «risas online»); contraste com aff; depois Faça o melhor! lexico guia palavras glossário ausdhuashduas"
-    },
-    {
-      "title": "duasakdiqujdocedomadur",
-      "url": "/posts/post-inspecao-expressao-duasakdiqujdocedomadur.html",
-      "excerpt": "Expressão / ditado BR — nome lab de «Deus ajuda quem cedo madruga»; diligência com aurora; depois Faça o melhor!",
-      "text": "duasakdiqujdocedomadur Expressão / ditado BR — nome lab de «Deus ajuda quem cedo madruga»; diligência com aurora; depois Faça o melhor! lexico guia palavras glossário duasakdiqujdocedomadur"
-    },
-    {
-      "title": "buguei",
-      "url": "/posts/post-inspecao-palavra-buguei.html",
-      "excerpt": "De bug (inseto) à falha e ao peito BR; o sentido foi puxado para «ruim»; depois do tranco, Faça o melhor!",
-      "text": "buguei De bug (inseto) à falha e ao peito BR; o sentido foi puxado para «ruim»; depois do tranco, Faça o melhor! lexico guia palavras glossário buguei"
-    },
-    {
-      "title": "inseto",
-      "url": "/posts/post-inspecao-palavra-inseto.html",
-      "excerpt": "Lat. insectum — lemma inseto / plural insetos; vida, ecologia e cultura; elos joaninha, abelha, animal, simbiose; contraste buguei.",
-      "text": "inseto Lat. insectum — lemma inseto / plural insetos; vida, ecologia e cultura; elos joaninha, abelha, animal, simbiose; contraste buguei. lexico guia palavras glossário inseto"
-    },
-    {
-      "title": "selvagem",
-      "url": "/posts/post-inspecao-palavra-selvagem.html",
-      "excerpt": "Lat. silvaticus ← silva — da mata; selvagem × domesticado; «bicho selvagem»; elos planta/animal/inseto; sem romantizar dano.",
-      "text": "selvagem Lat. silvaticus ← silva — da mata; selvagem × domesticado; «bicho selvagem»; elos planta/animal/inseto; sem romantizar dano. lexico guia palavras glossário selvagem"
-    },
-    {
-      "title": "daninha",
-      "url": "/posts/post-inspecao-palavra-daninha.html",
-      "excerpt": "Dano + -inha — planta daninha como juízo de lugar no cultivo; elos planta/selvagem; Faça o melhor com o juízo certo.",
-      "text": "daninha Dano + -inha — planta daninha como juízo de lugar no cultivo; elos planta/selvagem; Faça o melhor com o juízo certo. lexico guia palavras glossário daninha"
-    },
-    {
-      "title": "multitarefa",
-      "url": "/posts/post-inspecao-palavra-multitask.html",
-      "excerpt": "Forma PT irmã de multitask — mesma correção: não é fazer tudo bem ao mesmo tempo; método e limites.",
-      "text": "multitarefa Forma PT irmã de multitask — mesma correção: não é fazer tudo bem ao mesmo tempo; método e limites. lexico guia palavras glossário multitarefa"
-    },
-    {
-      "title": "multitask",
-      "url": "/posts/post-inspecao-palavra-multitask.html",
-      "excerpt": "Empréstimo EN→BR; parece «tudo bem ao mesmo tempo»; ofício = uma com método ou paralelo com limites; Faça o melhor!",
-      "text": "multitask Empréstimo EN→BR; parece «tudo bem ao mesmo tempo»; ofício = uma com método ou paralelo com limites; Faça o melhor! lexico guia palavras glossário multitask"
-    },
-    {
-      "title": "habilidade",
-      "url": "/posts/post-inspecao-palavra-skill.html",
-      "excerpt": "Irmã PT de skill — capacidade treinável; no lab preferir rasto ao badge; ver ficha skill.",
-      "text": "habilidade Irmã PT de skill — capacidade treinável; no lab preferir rasto ao badge; ver ficha skill. lexico guia palavras glossário habilidade"
-    },
-    {
-      "title": "skill",
-      "url": "/posts/post-inspecao-palavra-skill.html",
-      "excerpt": "Empréstimo EN→BR; habilidade/craft com rasto; anti-badge LinkedIn; elos multitask e genial; Faça o melhor!",
-      "text": "skill Empréstimo EN→BR; habilidade/craft com rasto; anti-badge LinkedIn; elos multitask e genial; Faça o melhor! lexico guia palavras glossário skill"
-    },
-    {
-      "title": "jesusudavi",
-      "url": "/posts/post-inspecao-expressao-jesusudavi.html",
-      "excerpt": "Expressão oral BR — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala entre aff e jesusamando.",
-      "text": "jesusudavi Expressão oral BR — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala entre aff e jesusamando. lexico guia palavras glossário jesusudavi"
-    },
-    {
-      "title": "filho de deus",
-      "url": "/posts/post-inspecao-expressao-filho-de-deus.html",
-      "excerpt": "Expressão — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; respeito à fé, sem proselitismo; depois Faça o melhor!",
-      "text": "filho de deus Expressão — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; respeito à fé, sem proselitismo; depois Faça o melhor! lexico guia palavras glossário filho-de-deus"
-    },
-    {
-      "title": "deu certo, galera",
-      "url": "/posts/post-inspecao-expressao-deu-certo-galera.html",
-      "excerpt": "Expressão oral BR — deucer galerra; celebração colectiva de acerto; contraste com aff e buguei; depois Faça o melhor!",
-      "text": "deu certo, galera Expressão oral BR — deucer galerra; celebração colectiva de acerto; contraste com aff e buguei; depois Faça o melhor! lexico guia palavras glossário deu-certo-galera"
-    },
-    {
-      "title": "jesusamando",
-      "url": "/posts/post-inspecao-expressao-jesusamando.html",
-      "excerpt": "Expressão oral BR — assombro e afeto num sopro; contraste com aff; depois, Faça o melhor!",
-      "text": "jesusamando Expressão oral BR — assombro e afeto num sopro; contraste com aff; depois, Faça o melhor! lexico guia palavras glossário jesusamando"
-    },
-    {
-      "title": "jesusmanando",
-      "url": "/posts/post-inspecao-expressao-jesusamando.html",
-      "excerpt": "Grafia comum por lapso de «jesusamando» — mesma ficha (assombro e afeto).",
-      "text": "jesusmanando Grafia comum por lapso de «jesusamando» — mesma ficha (assombro e afeto). lexico guia palavras glossário jesusmanando"
-    },
-    {
-      "title": "já",
-      "url": "/posts/post-inspecao-palavra-ja.html",
-      "excerpt": "Latim *iam* — advérbio de tempo/urgência; no BudGanja, par oral com «aff»; fecho vazio («já deu») = ressalva.",
-      "text": "já Latim *iam* — advérbio de tempo/urgência; no BudGanja, par oral com «aff»; fecho vazio («já deu») = ressalva. lexico guia palavras glossário ja"
-    },
-    {
-      "title": "prosseguir",
-      "url": "/posts/post-inspecao-palavra-prosseguir.html",
-      "excerpt": "Lat. prōsequī — continuar × retomar BR; derivações prosseguimento; elos sempre/já/caminho; Faça o melhor e prossiga.",
-      "text": "prosseguir Lat. prōsequī — continuar × retomar BR; derivações prosseguimento; elos sempre/já/caminho; Faça o melhor e prossiga. lexico guia palavras glossário prosseguir"
-    },
-    {
-      "title": "sempre",
-      "url": "/posts/post-inspecao-palavra-sempre.html",
-      "excerpt": "Lat. semper — duração × hábito × promessa BR; elos já/prosseguir/caminho; Faça o melhor sempre que puder.",
-      "text": "sempre Lat. semper — duração × hábito × promessa BR; elos já/prosseguir/caminho; Faça o melhor sempre que puder. lexico guia palavras glossário sempre"
-    },
-    {
-      "title": "pular",
-      "url": "/posts/post-inspecao-palavra-pular.html",
-      "excerpt": "Lat. pullāre — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar/backspace/já; Faça o melhor com o pulo certo.",
-      "text": "pular Lat. pullāre — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar/backspace/já; Faça o melhor com o pulo certo. lexico guia palavras glossário pular"
-    },
-    {
-      "title": "genial",
-      "url": "/posts/post-inspecao-palavra-genial.html",
-      "excerpt": "*Gênio* + *-al* — elogio de engenho no BR; no BudGanja, celebra o feito com método; culto vazio = ressalva.",
-      "text": "genial *Gênio* + *-al* — elogio de engenho no BR; no BudGanja, celebra o feito com método; culto vazio = ressalva. lexico guia palavras glossário genial"
-    },
-    {
-      "title": "fabuloso",
-      "url": "/posts/post-inspecao-palavra-fabuloso.html",
-      "excerpt": "Lat. fābula / fabulous — elogio BR quotidiano («que demais!»); escala com genial, legal, especial; Faça o melhor com rasto.",
-      "text": "fabuloso Lat. fābula / fabulous — elogio BR quotidiano («que demais!»); escala com genial, legal, especial; Faça o melhor com rasto. lexico guia palavras glossário fabuloso"
-    },
-    {
-      "title": "língua portuguesa",
-      "url": "/posts/post-inspecao-palavra-lingua-portuguesa.html",
-      "excerpt": "Meio do Inspetor BudGanja: originalidade; alterações no tempo (latim → BR → digital); nomear, inspecionar, cuidar; Faça o melhor nesta língua.",
-      "text": "língua portuguesa Meio do Inspetor BudGanja: originalidade; alterações no tempo (latim → BR → digital); nomear, inspecionar, cuidar; Faça o melhor nesta língua. lexico guia palavras glossário lingua-portuguesa"
-    },
-    {
-      "title": "esquerdo",
-      "url": "/posts/post-inspecao-palavra-esquerdo.html",
-      "excerpt": "Lado / ofício (esquerda); no BudGanja: objeto, criação e finalidade sem estigma; Faça o melhor nesta mão.",
-      "text": "esquerdo Lado / ofício (esquerda); no BudGanja: objeto, criação e finalidade sem estigma; Faça o melhor nesta mão. lexico guia palavras glossário esquerdo"
-    },
-    {
-      "title": "coração",
-      "url": "/posts/post-inspecao-palavra-coracao.html",
-      "excerpt": "Lat. cor — órgão, afeto, centro e coragem; elo mãos/esquerdo (gesto cultural, não dogma); Faça o melhor de coração.",
-      "text": "coração Lat. cor — órgão, afeto, centro e coragem; elo mãos/esquerdo (gesto cultural, não dogma); Faça o melhor de coração. lexico guia palavras glossário coracao"
-    },
-    {
-      "title": "inspiração",
-      "url": "/posts/post-inspecao-palavra-inspiracao.html",
-      "excerpt": "Lat. īnspīrātiō — sopro × ideia BR; elos criatividade/gesto/esperança; Faça o melhor com o sopro.",
-      "text": "inspiração Lat. īnspīrātiō — sopro × ideia BR; elos criatividade/gesto/esperança; Faça o melhor com o sopro. lexico guia palavras glossário inspiracao"
-    },
-    {
-      "title": "esperança",
-      "url": "/posts/post-inspecao-palavra-esperanca.html",
-      "excerpt": "Lat. spēs / sperantia — afecto vivo BR; esperar × esperança; fresta junto a medo/tristeza; Faça o melhor com ofício.",
-      "text": "esperança Lat. spēs / sperantia — afecto vivo BR; esperar × esperança; fresta junto a medo/tristeza; Faça o melhor com ofício. lexico guia palavras glossário esperanca"
     },
     {
       "title": "Alegria",
@@ -2318,12 +2060,6 @@
       "text": "Animal Ser vivo que não é planta — também palavra de carinho ou insulto, conforme o tom. lexico guia palavras glossário animal"
     },
     {
-      "title": "planta",
-      "url": "/posts/post-inspecao-palavra-planta.html",
-      "excerpt": "Lat. planta / plantare — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; ficha de palavra ≠ lista de espécies.",
-      "text": "planta Lat. planta / plantare — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; ficha de palavra ≠ lista de espécies. lexico guia palavras glossário planta"
-    },
-    {
       "title": "ANVISA",
       "url": "/posts/post-inspecao-palavra-anvisa.html",
       "excerpt": "Agência reguladora de vigilância sanitária — nó institucional do mapa de portarias e listas; não é nome da planta.",
@@ -2360,6 +2096,12 @@
       "text": "Associação de pacientes Organização colectiva de acesso terapêutico à cannabis — actor híbrido (cuidado + direito + sanitário); distinta de farmácia e de tráfico. classificacao guia palavras glossário associacao-pacientes"
     },
     {
+      "title": "ausdhuashduas",
+      "url": "/posts/post-inspecao-expressao-ausdhuashduas.html",
+      "excerpt": "Expressão oral BR — nome lab do riso tipado (substitui kkkk… e «risas online»); contraste com aff; depois Faça o melhor!",
+      "text": "ausdhuashduas Expressão oral BR — nome lab do riso tipado (substitui kkkk… e «risas online»); contraste com aff; depois Faça o melhor! lexico guia palavras glossário ausdhuashduas"
+    },
+    {
       "title": "Autocultivo",
       "url": "/posts/post-inspecao-guia-hc-seletividade-advogados.html",
       "excerpt": "Cultivo próprio da planta — no Brasil, zona de disputa entre saúde (HC/salvo-conduto) e risco penal sem amparo processual.",
@@ -2382,6 +2124,12 @@
       "url": "/biblioteca/unifesp/livro-xiv.html",
       "excerpt": "Bebida ritual amazónica (Banisteriopsis + Psychotria) — citada nos rascunhos das aulas XIV entre psicoativos vegetais.",
       "text": "Ayahuasca Bebida ritual amazónica (Banisteriopsis + Psychotria) — citada nos rascunhos das aulas XIV entre psicoativos vegetais. tecnico guia palavras glossário ayahuasca"
+    },
+    {
+      "title": "Ayrton Senna",
+      "url": "/posts/post-inspecao-figura-ayrton-senna.html",
+      "excerpt": "Piloto brasileiro tricampeão de F1 (1960–1994); no site, homenagem em Pessoas com elo ao mantra Faça o melhor! e ao Instituto.",
+      "text": "Ayrton Senna Piloto brasileiro tricampeão de F1 (1960–1994); no site, homenagem em Pessoas com elo ao mantra Faça o melhor! e ao Instituto. lexico guia palavras glossário ayrton-senna"
     },
     {
       "title": "Babosa",
@@ -2460,6 +2208,12 @@
       "url": "/",
       "excerpt": "Nome da marca do laboratório — junta «bud» (botão/flor) e «ganja» (nome índico da planta).",
       "text": "BudGanja Nome da marca do laboratório — junta «bud» (botão/flor) e «ganja» (nome índico da planta). marca guia palavras glossário budganja"
+    },
+    {
+      "title": "buguei",
+      "url": "/posts/post-inspecao-palavra-buguei.html",
+      "excerpt": "De bug (inseto) à falha e ao peito BR; o sentido foi puxado para «ruim»; depois do tranco, Faça o melhor!",
+      "text": "buguei De bug (inseto) à falha e ao peito BR; o sentido foi puxado para «ruim»; depois do tranco, Faça o melhor! lexico guia palavras glossário buguei"
     },
     {
       "title": "Cacau",
@@ -2606,6 +2360,12 @@
       "text": "CEBRID Centro UNIFESP de informação sobre drogas psicotrópicas e medicina canabinoide. tecnico guia palavras glossário cebrid"
     },
     {
+      "title": "chá de plantas",
+      "url": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
+      "excerpt": "Manual BudGanja: infusão / decoção caseira — tempos, proporções de ofício e segurança; elos Plantas e Farmácia Viva.",
+      "text": "chá de plantas Manual BudGanja: infusão / decoção caseira — tempos, proporções de ofício e segurança; elos Plantas e Farmácia Viva. tecnico guia palavras glossário cha-plantas"
+    },
+    {
       "title": "Charas",
       "url": "/biblioteca/unifesp/livro-xiv.html",
       "excerpt": "Resina tradicional obtida esfregando flores femininas — forma etnobotânica citada junto de ganja e bhang. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -2666,6 +2426,12 @@
       "text": "Copaíba Copaifera — óleo-resina amazônico/cerrado rico em β-cariofileno e diterpenos; tradição tópica e oral popular. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário copaiba"
     },
     {
+      "title": "coração",
+      "url": "/posts/post-inspecao-palavra-coracao.html",
+      "excerpt": "Lat. cor — órgão, afeto, centro e coragem; elo mãos/esquerdo (gesto cultural, não dogma); Faça o melhor de coração.",
+      "text": "coração Lat. cor — órgão, afeto, centro e coragem; elo mãos/esquerdo (gesto cultural, não dogma); Faça o melhor de coração. lexico guia palavras glossário coracao"
+    },
+    {
       "title": "CRF",
       "url": "/posts/post-inspecao-guia-cannabis-farmaceuticos.html",
       "excerpt": "Conselho Regional de Farmácia — perímetro ético/profissional da dispensação; não autoriza cultivo nem substitui ANVISA ou HC.",
@@ -2694,6 +2460,18 @@
       "url": "/posts/post-inspecao-guia-associacoes-pacientes.html",
       "excerpt": "Cultivo/produção sob pessoa jurídica e regras ANVISA (marcos RDC) — distinto do autocultivo caseiro com HC individual.",
       "text": "Cultivo institucional Cultivo/produção sob pessoa jurídica e regras ANVISA (marcos RDC) — distinto do autocultivo caseiro com HC individual. classificacao guia palavras glossário cultivo-institucional"
+    },
+    {
+      "title": "daninha",
+      "url": "/posts/post-inspecao-palavra-daninha.html",
+      "excerpt": "Dano + -inha — planta daninha como juízo de lugar no cultivo; elos planta/selvagem; Faça o melhor com o juízo certo.",
+      "text": "daninha Dano + -inha — planta daninha como juízo de lugar no cultivo; elos planta/selvagem; Faça o melhor com o juízo certo. lexico guia palavras glossário daninha"
+    },
+    {
+      "title": "decoção",
+      "url": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
+      "excerpt": "Fervura suave de raízes/cascas/sementes duras, ~10–20 min — modo do manual de chá de plantas.",
+      "text": "decoção Fervura suave de raízes/cascas/sementes duras, ~10–20 min — modo do manual de chá de plantas. tecnico guia palavras glossário decocao"
     },
     {
       "title": "Defensoria Pública",
@@ -2736,6 +2514,12 @@
       "url": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html",
       "excerpt": "Uso ou produção em excesso sem necessidade — mecanismo central (com o exagero) no ciclo industrial da pesquisa.",
       "text": "Desperdício Uso ou produção em excesso sem necessidade — mecanismo central (com o exagero) no ciclo industrial da pesquisa. tecnico guia palavras glossário desperdicio"
+    },
+    {
+      "title": "deu certo, galera",
+      "url": "/posts/post-inspecao-expressao-deu-certo-galera.html",
+      "excerpt": "Expressão oral BR — deucer galerra; celebração colectiva de acerto; contraste com aff e buguei; depois Faça o melhor!",
+      "text": "deu certo, galera Expressão oral BR — deucer galerra; celebração colectiva de acerto; contraste com aff e buguei; depois Faça o melhor! lexico guia palavras glossário deu-certo-galera"
     },
     {
       "title": "Diamba",
@@ -2786,6 +2570,12 @@
       "text": "Droga vegetal Planta medicinal processada/preparada para uso — etapa da cadeia Farmácia Viva distinta do fitofármaco isolado. tecnico guia palavras glossário droga-vegetal"
     },
     {
+      "title": "duasakdiqujdocedomadur",
+      "url": "/posts/post-inspecao-expressao-duasakdiqujdocedomadur.html",
+      "excerpt": "Expressão / ditado BR — nome lab de «Deus ajuda quem cedo madruga»; diligência com aurora; depois Faça o melhor!",
+      "text": "duasakdiqujdocedomadur Expressão / ditado BR — nome lab de «Deus ajuda quem cedo madruga»; diligência com aurora; depois Faça o melhor! lexico guia palavras glossário duasakdiqujdocedomadur"
+    },
+    {
       "title": "eCBome",
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Abreviatura de endocanabinoidoma — rede ampliada do sistema endocanabinoide; objecto da modulação endógena (meditação/PIC) e exógena na grade XIV.",
@@ -2808,6 +2598,12 @@
       "url": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html",
       "excerpt": "Resíduo líquido/gasoso da síntese ou fabrico — externalidade típica da etapa industrial no mapa BudGanja.",
       "text": "Efluente Resíduo líquido/gasoso da síntese ou fabrico — externalidade típica da etapa industrial no mapa BudGanja. tecnico guia palavras glossário efluente"
+    },
+    {
+      "title": "eletrizante",
+      "url": "/posts/post-inspecao-palavra-eletrizante.html",
+      "excerpt": "Eletro- + intensidade — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo; elos fogo e escala de louvor; Faça o melhor com rasto.",
+      "text": "eletrizante Eletro- + intensidade — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo; elos fogo e escala de louvor; Faça o melhor com rasto. lexico guia palavras glossário eletrizante"
     },
     {
       "title": "Eletroacupuntura",
@@ -2846,6 +2642,12 @@
       "text": "Entorpecente Termo jurídico-policial: substância que entorpece (diminui sensação ou reação) e entra em listas de controle — distinto de «droga» no senso comum e de «narcótico» (rótulo médico/legal antigo). classificacao guia palavras glossário entorpecente"
     },
     {
+      "title": "eojsofaorforap",
+      "url": "/posts/post-inspecao-expressao-eojsofaorforap.html",
+      "excerpt": "Expressão oral BR — nome lab de «eu só falo a verdade»; substitui o rótulo plano; elo verdade; depois Faça o melhor!",
+      "text": "eojsofaorforap Expressão oral BR — nome lab de «eu só falo a verdade»; substitui o rótulo plano; elo verdade; depois Faça o melhor! lexico guia palavras glossário eojsofaorforap"
+    },
+    {
       "title": "Equinácea",
       "url": "/biblioteca/unifesp/livro-xiv.html",
       "excerpt": "Echinacea — planta citada entre as que modulam receptores do sistema endocanabinoide. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -2870,6 +2672,18 @@
       "text": "Erva-cidreira Lippia alba — erva-cidreira brasileira; folhas com óleos essenciais (citral/carvona conforme quimiotipo) em chás e banhos. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário erva-cidreira"
     },
     {
+      "title": "especial",
+      "url": "/posts/post-inspecao-palavra-especial.html",
+      "excerpt": "Lat. specialis (≠ Tupi) — particular / em especial; uso oral e ofício BR; porta para a rede das palavras originárias já fichadas; Faça o melhor!",
+      "text": "especial Lat. specialis (≠ Tupi) — particular / em especial; uso oral e ofício BR; porta para a rede das palavras originárias já fichadas; Faça o melhor! lexico guia palavras glossário especial"
+    },
+    {
+      "title": "esperança",
+      "url": "/posts/post-inspecao-palavra-esperanca.html",
+      "excerpt": "Lat. spēs / sperantia — afecto vivo BR; esperar × esperança; fresta junto a medo/tristeza; Faça o melhor com ofício.",
+      "text": "esperança Lat. spēs / sperantia — afecto vivo BR; esperar × esperança; fresta junto a medo/tristeza; Faça o melhor com ofício. lexico guia palavras glossário esperanca"
+    },
+    {
       "title": "Espinheira-santa",
       "url": "/plantas/espinheira-santa/",
       "excerpt": "Maytenus ilicifolia — Mata Atlântica; folhas na tradição gástrica brasileira; taninos e triterpenos em contexto educacional. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -2880,6 +2694,12 @@
       "url": "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
       "excerpt": "Lado esquerdo / mão esquerda — no BudGanja, papel de ofício (apoiar, estabilizar) sem moral «sinistra».",
       "text": "Esquerda Lado esquerdo / mão esquerda — no BudGanja, papel de ofício (apoiar, estabilizar) sem moral «sinistra». lexico guia palavras glossário esquerda"
+    },
+    {
+      "title": "esquerdo",
+      "url": "/posts/post-inspecao-palavra-esquerdo.html",
+      "excerpt": "Lado / ofício (esquerda); no BudGanja: objeto, criação e finalidade sem estigma; Faça o melhor nesta mão.",
+      "text": "esquerdo Lado / ofício (esquerda); no BudGanja: objeto, criação e finalidade sem estigma; Faça o melhor nesta mão. lexico guia palavras glossário esquerdo"
     },
     {
       "title": "Estaca",
@@ -2936,6 +2756,24 @@
       "text": "Externalidade Custo ou dano deslocado para fora do preço (resíduos, doença, habitat) — mapa central da pesquisa Da molécula ao lixo. tecnico guia palavras glossário externalidade"
     },
     {
+      "title": "fabuloso",
+      "url": "/posts/post-inspecao-palavra-fabuloso.html",
+      "excerpt": "Lat. fābula / fabulous — elogio BR quotidiano («que demais!»); escala com genial, legal, especial; Faça o melhor com rasto.",
+      "text": "fabuloso Lat. fābula / fabulous — elogio BR quotidiano («que demais!»); escala com genial, legal, especial; Faça o melhor com rasto. lexico guia palavras glossário fabuloso"
+    },
+    {
+      "title": "fantasioso",
+      "url": "/posts/post-inspecao-palavra-fantasioso.html",
+      "excerpt": "Fantasia + -oso — imaginativo / fanciful; elogio ou crítica leve («não seja fantasioso»); ≠ fantástico (Cap. irmã); Faça o melhor com rasto.",
+      "text": "fantasioso Fantasia + -oso — imaginativo / fanciful; elogio ou crítica leve («não seja fantasioso»); ≠ fantástico (Cap. irmã); Faça o melhor com rasto. lexico guia palavras glossário fantasioso"
+    },
+    {
+      "title": "fantástico",
+      "url": "/posts/post-inspecao-palavra-fantastico.html",
+      "excerpt": "Lat. phantasticus / fantasia — imaginação e elogio BR «fantástico!»; escala com legal, genial, maravilhoso; Faça o melhor depois do uau.",
+      "text": "fantástico Lat. phantasticus / fantasia — imaginação e elogio BR «fantástico!»; escala com legal, genial, maravilhoso; Faça o melhor depois do uau. lexico guia palavras glossário fantastico"
+    },
+    {
       "title": "Farmácia Viva",
       "url": "/posts/post-inspecao-guia-farmacia-viva.html",
       "excerpt": "Serviço exclusivo do SUS (Portaria 886/2010) de cultivo/orientação/processamento de plantas medicinais — Aula 5 XIV (Jaqueline Guimarães).",
@@ -2966,6 +2804,12 @@
       "text": "Ferramentas Calculadoras e utilitários do laboratório (luz, clima, solo, EC…). titulo guia palavras glossário ferramentas"
     },
     {
+      "title": "filho de deus",
+      "url": "/posts/post-inspecao-expressao-filho-de-deus.html",
+      "excerpt": "Expressão — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; respeito à fé, sem proselitismo; depois Faça o melhor!",
+      "text": "filho de deus Expressão — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; respeito à fé, sem proselitismo; depois Faça o melhor! lexico guia palavras glossário filho-de-deus"
+    },
+    {
       "title": "Fitocanabinoide",
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Canabinoide de planta (sobretudo cannabis) — na grade XIV é a camada de modulação exógena, distinta da via endógena (meditação, estilo de vida, PIC).",
@@ -2990,16 +2834,22 @@
       "text": "Floração Fase reprodutiva em que a planta concentra flores e tricomas — «ciência da floração» no guia de cultivo. tecnico guia palavras glossário floracao"
     },
     {
-      "title": "fruto",
-      "url": "/posts/post-inspecao-palavra-fruto.html",
-      "excerpt": "Lat. fructus — órgão botânico, plural frutos, contraste com fruta; figurado «frutos do trabalho»; elos plantas/simbiose.",
-      "text": "fruto Lat. fructus — órgão botânico, plural frutos, contraste com fruta; figurado «frutos do trabalho»; elos plantas/simbiose. lexico guia palavras glossário fruto"
+      "title": "fogo",
+      "url": "/posts/post-inspecao-palavra-fogo.html",
+      "excerpt": "Lat. focus — lareira / chama; elemento e metáfora; equilibrar com água; raiva com ofício; Faça o melhor com medida.",
+      "text": "fogo Lat. focus — lareira / chama; elemento e metáfora; equilibrar com água; raiva com ofício; Faça o melhor com medida. lexico guia palavras glossário fogo"
     },
     {
       "title": "Francisco José de Abreu Matos",
       "url": "/posts/post-inspecao-guia-farmacia-viva.html",
       "excerpt": "Farmacologista da UFC, mentor do projecto Farmácias Vivas (1983) — citado na Aula 5 como origem da política.",
       "text": "Francisco José de Abreu Matos Farmacologista da UFC, mentor do projecto Farmácias Vivas (1983) — citado na Aula 5 como origem da política. tecnico guia palavras glossário francisco-matos"
+    },
+    {
+      "title": "fruto",
+      "url": "/posts/post-inspecao-palavra-fruto.html",
+      "excerpt": "Lat. fructus — órgão botânico, plural frutos, contraste com fruta; figurado «frutos do trabalho»; elos plantas/simbiose.",
+      "text": "fruto Lat. fructus — órgão botânico, plural frutos, contraste com fruta; figurado «frutos do trabalho»; elos plantas/simbiose. lexico guia palavras glossário fruto"
     },
     {
       "title": "Frutos",
@@ -3032,28 +2882,16 @@
       "text": "Gelo Água sólida que prende o barco — matéria da invernagem ártica narrada em *Bom dia, Inverno*. lexico guia palavras glossário gelo"
     },
     {
+      "title": "genial",
+      "url": "/posts/post-inspecao-palavra-genial.html",
+      "excerpt": "*Gênio* + *-al* — elogio de engenho no BR; no BudGanja, celebra o feito com método; culto vazio = ressalva.",
+      "text": "genial *Gênio* + *-al* — elogio de engenho no BR; no BudGanja, celebra o feito com método; culto vazio = ressalva. lexico guia palavras glossário genial"
+    },
+    {
       "title": "Gesto",
       "url": "/posts/post-inspecao-palavra-gesto.html",
       "excerpt": "Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade.",
       "text": "Gesto Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade. lexico guia palavras glossário gesto"
-    },
-    {
-      "title": "mensagem",
-      "url": "/posts/post-inspecao-palavra-mensagem.html",
-      "excerpt": "Lat. mittere → message — conteúdo enviado; plural mensagens; SMS/chat; deixar mensagem; sinal ≠ mensagem.",
-      "text": "mensagem Lat. mittere → message — conteúdo enviado; plural mensagens; SMS/chat; deixar mensagem; sinal ≠ mensagem. lexico guia palavras glossário mensagem"
-    },
-    {
-      "title": "sinal",
-      "url": "/posts/post-inspecao-palavra-sinal.html",
-      "excerpt": "Lat. signum — marca, aviso, trânsito e «dar sinal»; elos gesto, risco, verdade; Faça o melhor!",
-      "text": "sinal Lat. signum — marca, aviso, trânsito e «dar sinal»; elos gesto, risco, verdade; Faça o melhor! lexico guia palavras glossário sinal"
-    },
-    {
-      "title": "respeito",
-      "url": "/posts/post-inspecao-palavra-respeito.html",
-      "excerpt": "Lat. respectus / respicere — olhar de novo; consideração e prática social (sem sermão); elo verdade/gesto; contraste com vingança.",
-      "text": "respeito Lat. respectus / respicere — olhar de novo; consideração e prática social (sem sermão); elo verdade/gesto; contraste com vingança. lexico guia palavras glossário respeito"
     },
     {
       "title": "Glúten",
@@ -3098,6 +2936,12 @@
       "text": "Habeas corpus Remédio constitucional («remédio heroico») usado como HC preventivo / salvo-conduto no cultivo medicinal — filtro de acesso à justiça. classificacao guia palavras glossário habeas-corpus"
     },
     {
+      "title": "habilidade",
+      "url": "/posts/post-inspecao-palavra-skill.html",
+      "excerpt": "Irmã PT de skill — capacidade treinável; no lab preferir rasto ao badge; ver ficha skill.",
+      "text": "habilidade Irmã PT de skill — capacidade treinável; no lab preferir rasto ao badge; ver ficha skill. lexico guia palavras glossário habilidade"
+    },
+    {
       "title": "Hiperatividade do SEC",
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Polo oposto à hipoatividade — excesso de sinalização do sistema endocanabinoide; a grade XIV fala em equilibrar hiper × hipo via estilo de vida e PIC.",
@@ -3122,22 +2966,46 @@
       "text": "Iatrogenia Dano causado pela própria intervenção terapêutica — risco do estágio «uso» na cadeia fármaco/droga. tecnico guia palavras glossário iatrogenia"
     },
     {
+      "title": "ídolo",
+      "url": "/posts/post-inspecao-palavra-idolo.html",
+      "excerpt": "Gr. eídōlon — imagem → pessoa admirada; culto lexical, idolatrar e média; admirar com ofício; Faça o melhor!",
+      "text": "ídolo Gr. eídōlon — imagem → pessoa admirada; culto lexical, idolatrar e média; admirar com ofício; Faça o melhor! lexico guia palavras glossário idolo"
+    },
+    {
       "title": "Ilícito",
       "url": "/posts/post-inspecao-palavra-ilicito.html",
       "excerpt": "Polo jurídico «fora da lei» — fecha o contraste com droga (remédio ↔ ilícito no senso comum); não é o nome da planta.",
       "text": "Ilícito Polo jurídico «fora da lei» — fecha o contraste com droga (remédio ↔ ilícito no senso comum); não é o nome da planta. classificacao guia palavras glossário ilicito"
     },
     {
-      "title": "legal",
-      "url": "/posts/post-inspecao-palavra-legal.html",
-      "excerpt": "Lat. legalis — conforme a lei; no BR também «bacana/ok»; separar eixo jurídico da gíria; Faça o melhor com a palavra certa.",
-      "text": "legal Lat. legalis — conforme a lei; no BR também «bacana/ok»; separar eixo jurídico da gíria; Faça o melhor com a palavra certa. lexico guia palavras glossário legal"
-    },
-    {
       "title": "Importação ANVISA",
       "url": "/posts/post-inspecao-guia-cannabis-medicos.html",
       "excerpt": "Via sanitária para produtos de cannabis autorizados — cara e burocrática; não equivale a autocultivo nem a HC.",
       "text": "Importação ANVISA Via sanitária para produtos de cannabis autorizados — cara e burocrática; não equivale a autocultivo nem a HC. classificacao guia palavras glossário importacao-anvisa"
+    },
+    {
+      "title": "inacreditável",
+      "url": "/posts/post-inspecao-palavra-inacreditavel.html",
+      "excerpt": "in- + acreditável (← credere) — não acreditável / elogio BR «beyond belief»; irmão de incrível; Faça o melhor depois do «não acredito».",
+      "text": "inacreditável in- + acreditável (← credere) — não acreditável / elogio BR «beyond belief»; irmão de incrível; Faça o melhor depois do «não acredito». lexico guia palavras glossário inacreditavel"
+    },
+    {
+      "title": "incrível",
+      "url": "/posts/post-inspecao-palavra-incrivel.html",
+      "excerpt": "Lat. incredibilis — inacreditável e elogio BR «uau»; escala legal → especial → genial → incrível; Faça o melhor!",
+      "text": "incrível Lat. incredibilis — inacreditável e elogio BR «uau»; escala legal → especial → genial → incrível; Faça o melhor! lexico guia palavras glossário incrivel"
+    },
+    {
+      "title": "infusão",
+      "url": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
+      "excerpt": "Água quente (fora do fogo) sobre folhas/flores, 5–15 min tampado — modo do manual de chá de plantas.",
+      "text": "infusão Água quente (fora do fogo) sobre folhas/flores, 5–15 min tampado — modo do manual de chá de plantas. tecnico guia palavras glossário infusao"
+    },
+    {
+      "title": "inseto",
+      "url": "/posts/post-inspecao-palavra-inseto.html",
+      "excerpt": "Lat. insectum — lemma inseto / plural insetos; vida, ecologia e cultura; elos joaninha, abelha, animal, simbiose; contraste buguei.",
+      "text": "inseto Lat. insectum — lemma inseto / plural insetos; vida, ecologia e cultura; elos joaninha, abelha, animal, simbiose; contraste buguei. lexico guia palavras glossário inseto"
     },
     {
       "title": "Inspeção",
@@ -3158,6 +3026,18 @@
       "text": "Inspetor Quem observa, verifica e documenta com método — personagem e marca do site. marca guia palavras glossário inspetor"
     },
     {
+      "title": "inspiração",
+      "url": "/posts/post-inspecao-palavra-inspiracao.html",
+      "excerpt": "Lat. īnspīrātiō — sopro × ideia BR; elos criatividade/gesto/esperança; Faça o melhor com o sopro.",
+      "text": "inspiração Lat. īnspīrātiō — sopro × ideia BR; elos criatividade/gesto/esperança; Faça o melhor com o sopro. lexico guia palavras glossário inspiracao"
+    },
+    {
+      "title": "interruptor",
+      "url": "/posts/post-inspecao-palavra-interruptor.html",
+      "excerpt": "Lat. interrumpere — ligar/desligar × corte de fluxo; derivações interromper/interrupção; elos sinal/gesto/eletrizante; Faça o melhor com o clique.",
+      "text": "interruptor Lat. interrumpere — ligar/desligar × corte de fluxo; derivações interromper/interrupção; elos sinal/gesto/eletrizante; Faça o melhor com o clique. lexico guia palavras glossário interruptor"
+    },
+    {
       "title": "Invernagem",
       "url": "/posts/post-inspecao-palavra-invernagem.html",
       "excerpt": "Permanecer o inverno inteiro no gelo — feito âncora de Tamara no Ártico; eixo do livro.",
@@ -3176,10 +3056,34 @@
       "text": "Isolado Princípio activo purificado (ex. CBD ~98%) — na grade XIV entra na modulação exógena (sintéticos/isolados), contraste com a via endógena da meditação/PIC. tecnico guia palavras glossário isolado"
     },
     {
+      "title": "já",
+      "url": "/posts/post-inspecao-palavra-ja.html",
+      "excerpt": "Latim *iam* — advérbio de tempo/urgência; no BudGanja, par oral com «aff»; fecho vazio («já deu») = ressalva.",
+      "text": "já Latim *iam* — advérbio de tempo/urgência; no BudGanja, par oral com «aff»; fecho vazio («já deu») = ressalva. lexico guia palavras glossário ja"
+    },
+    {
       "title": "Jambu",
       "url": "/plantas/jambu/",
       "excerpt": "Acmella oleracea — jambu amazônico; spilanthol provoca formigamento; culinária paraense e tradição oral. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Jambu Acmella oleracea — jambu amazônico; spilanthol provoca formigamento; culinária paraense e tradição oral. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário jambu"
+    },
+    {
+      "title": "jesusamando",
+      "url": "/posts/post-inspecao-expressao-jesusamando.html",
+      "excerpt": "Expressão oral BR — assombro e afeto num sopro; contraste com aff; depois, Faça o melhor!",
+      "text": "jesusamando Expressão oral BR — assombro e afeto num sopro; contraste com aff; depois, Faça o melhor! lexico guia palavras glossário jesusamando"
+    },
+    {
+      "title": "jesusmanando",
+      "url": "/posts/post-inspecao-expressao-jesusamando.html",
+      "excerpt": "Grafia comum por lapso de «jesusamando» — mesma ficha (assombro e afeto).",
+      "text": "jesusmanando Grafia comum por lapso de «jesusamando» — mesma ficha (assombro e afeto). lexico guia palavras glossário jesusmanando"
+    },
+    {
+      "title": "jesusudavi",
+      "url": "/posts/post-inspecao-expressao-jesusudavi.html",
+      "excerpt": "Expressão oral BR — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala entre aff e jesusamando.",
+      "text": "jesusudavi Expressão oral BR — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala entre aff e jesusamando. lexico guia palavras glossário jesusudavi"
     },
     {
       "title": "Judicialização",
@@ -3236,10 +3140,22 @@
       "text": "Legado O que fica de quem veio antes — pessoas, CEBRID, curso e canais fundadores. hub guia palavras glossário legado"
     },
     {
+      "title": "legal",
+      "url": "/posts/post-inspecao-palavra-legal.html",
+      "excerpt": "Lat. legalis — conforme a lei; no BR também «bacana/ok»; separar eixo jurídico da gíria; Faça o melhor com a palavra certa.",
+      "text": "legal Lat. legalis — conforme a lei; no BR também «bacana/ok»; separar eixo jurídico da gíria; Faça o melhor com a palavra certa. lexico guia palavras glossário legal"
+    },
+    {
       "title": "Lei 11.343/2006",
       "url": "/posts/post-inspecao-palavra-lei-11-343.html",
       "excerpt": "Lei de Drogas — âncora tipológica onde cai quem não tem estatuto processual (HC) ou sanitário (ANVISA); não é o nome da planta.",
       "text": "Lei 11.343/2006 Lei de Drogas — âncora tipológica onde cai quem não tem estatuto processual (HC) ou sanitário (ANVISA); não é o nome da planta. classificacao guia palavras glossário lei-11-343"
+    },
+    {
+      "title": "língua portuguesa",
+      "url": "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+      "excerpt": "Meio do Inspetor BudGanja: originalidade; alterações no tempo (latim → BR → digital); nomear, inspecionar, cuidar; Faça o melhor nesta língua.",
+      "text": "língua portuguesa Meio do Inspetor BudGanja: originalidade; alterações no tempo (latim → BR → digital); nomear, inspecionar, cuidar; Faça o melhor nesta língua. lexico guia palavras glossário lingua-portuguesa"
     },
     {
       "title": "Lista F",
@@ -3266,10 +3182,22 @@
       "text": "Luxímetro Ferramenta para medir a luz — no site, também com a câmara do telemóvel. tecnico guia palavras glossário luximetro"
     },
     {
+      "title": "maceração",
+      "url": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
+      "excerpt": "Extracção a frio (horas) quando o calor forte não convém — citado no manual de chá de plantas.",
+      "text": "maceração Extracção a frio (horas) quando o calor forte não convém — citado no manual de chá de plantas. tecnico guia palavras glossário maceracao"
+    },
+    {
       "title": "Maconha",
       "url": "/posts/post-inspecao-palavra-maconha.html",
       "excerpt": "Nome popular afro-atlântico da planta no Brasil — carregado de estigma no século XX.",
       "text": "Maconha Nome popular afro-atlântico da planta no Brasil — carregado de estigma no século XX. lexico guia palavras glossário maconha"
+    },
+    {
+      "title": "magnífico",
+      "url": "/posts/post-inspecao-palavra-magnifico.html",
+      "excerpt": "Lat. magnificus / magnificent — elogio BR quotidiano («que grande!»); escala com legal, genial, fabuloso, fantástico, incrível, maravilhoso; Faça o melhor com rasto.",
+      "text": "magnífico Lat. magnificus / magnificent — elogio BR quotidiano («que grande!»); escala com legal, genial, fabuloso, fantástico, incrível, maravilhoso; Faça o melhor com rasto. lexico guia palavras glossário magnifico"
     },
     {
       "title": "Mamão",
@@ -3300,6 +3228,12 @@
       "url": "/plantas/maracuja/",
       "excerpt": "Passiflora — folhas/partes aéreas em chás e fitoterápicos; flavonoides C-glicosídeos na tradição calmante. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Maracujá Passiflora — folhas/partes aéreas em chás e fitoterápicos; flavonoides C-glicosídeos na tradição calmante. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário maracuja"
+    },
+    {
+      "title": "maravilhoso",
+      "url": "/posts/post-inspecao-palavra-maravilhoso.html",
+      "excerpt": "De maravilha (lat. mirabilia) — assombro e elogio BR («que maravilhoso!»); na escala aff ← legal ← genial ← maravilhoso; depois do uau, Faça o melhor!",
+      "text": "maravilhoso De maravilha (lat. mirabilia) — assombro e elogio BR («que maravilhoso!»); na escala aff ← legal ← genial ← maravilhoso; depois do uau, Faça o melhor! lexico guia palavras glossário maravilhoso"
     },
     {
       "title": "Marijuana",
@@ -3356,6 +3290,18 @@
       "text": "Melissa Melissa officinalis — balm europeu adaptado; citral e ácidos fenólicos em chás calmantes. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário melissa"
     },
     {
+      "title": "memorável",
+      "url": "/posts/post-inspecao-palavra-memoravel.html",
+      "excerpt": "Lat. memorabilis — digno de memória; elogio BR com rasto; retenção ≠ escala genial/especial; Faça o melhor!",
+      "text": "memorável Lat. memorabilis — digno de memória; elogio BR com rasto; retenção ≠ escala genial/especial; Faça o melhor! lexico guia palavras glossário memoravel"
+    },
+    {
+      "title": "mensagem",
+      "url": "/posts/post-inspecao-palavra-mensagem.html",
+      "excerpt": "Lat. mittere → message — conteúdo enviado; plural mensagens; SMS/chat; deixar mensagem; sinal ≠ mensagem.",
+      "text": "mensagem Lat. mittere → message — conteúdo enviado; plural mensagens; SMS/chat; deixar mensagem; sinal ≠ mensagem. lexico guia palavras glossário mensagem"
+    },
+    {
       "title": "Metabólito secundário",
       "url": "/posts/post-inspecao-guia-quimiotipos-cannabis.html",
       "excerpt": "Pigmentos, terpenos, alcaloides… — o que mais diferencia quimiotipos na Aula 10, face aos metabólitos primários.",
@@ -3396,6 +3342,24 @@
       "url": "/posts/post-inspecao-canal-movrecam.html",
       "excerpt": "Movimento de Reabilitação de Cannabis Medicinal — canal e origem comunitária do curso.",
       "text": "MovReCam Movimento de Reabilitação de Cannabis Medicinal — canal e origem comunitária do curso. tecnico guia palavras glossário movrecam"
+    },
+    {
+      "title": "muitoobrigado",
+      "url": "/posts/post-inspecao-expressao-muito-obrigado.html",
+      "excerpt": "Expressão oral BR — gratidão reforçada; étimo obligare × memória escravidão/cana; gesto, respeito; depois Faça o melhor!",
+      "text": "muitoobrigado Expressão oral BR — gratidão reforçada; étimo obligare × memória escravidão/cana; gesto, respeito; depois Faça o melhor! lexico guia palavras glossário muitoobrigado"
+    },
+    {
+      "title": "multitarefa",
+      "url": "/posts/post-inspecao-palavra-multitask.html",
+      "excerpt": "Forma PT irmã de multitask — mesma correção: não é fazer tudo bem ao mesmo tempo; método e limites.",
+      "text": "multitarefa Forma PT irmã de multitask — mesma correção: não é fazer tudo bem ao mesmo tempo; método e limites. lexico guia palavras glossário multitarefa"
+    },
+    {
+      "title": "multitask",
+      "url": "/posts/post-inspecao-palavra-multitask.html",
+      "excerpt": "Empréstimo EN→BR; parece «tudo bem ao mesmo tempo»; ofício = uma com método ou paralelo com limites; Faça o melhor!",
+      "text": "multitask Empréstimo EN→BR; parece «tudo bem ao mesmo tempo»; ofício = uma com método ou paralelo com limites; Faça o melhor! lexico guia palavras glossário multitask"
     },
     {
       "title": "Mulungu",
@@ -3482,6 +3446,12 @@
       "text": "Papoula Papaver somniferum — fonte histórica do ópio; contraste com cannabis e outras plantas. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário papoula"
     },
     {
+      "title": "passado",
+      "url": "/posts/post-inspecao-palavra-passado.html",
+      "excerpt": "De passar / lat. passāre — tempo já decorrido; memória × história; elos memorável, verdade, língua; Faça o melhor!",
+      "text": "passado De passar / lat. passāre — tempo já decorrido; memória × história; elos memorável, verdade, língua; Faça o melhor! lexico guia palavras glossário passado"
+    },
+    {
       "title": "Passar",
       "url": "/posts/post-inspecao-palavra-passar.html",
       "excerpt": "Verbo da passagem: o que aconteceu, o que atravessa, o que se transmite.",
@@ -3516,6 +3486,18 @@
       "url": "/biblioteca/unifesp/livro-xiv.html",
       "excerpt": "Piper nigrum — planta citada entre as que agem no endocanabinoidoma (ex. CB2). Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Pimenta-do-reino Piper nigrum — planta citada entre as que agem no endocanabinoidoma (ex. CB2). Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário pimenta-do-reino"
+    },
+    {
+      "title": "pipoca",
+      "url": "/posts/post-inspecao-palavra-pipoca.html",
+      "excerpt": "Tupi pi'poka — milho que estoura; rua e cinema BR; transformação com calor certo; Faça o melhor!",
+      "text": "pipoca Tupi pi'poka — milho que estoura; rua e cinema BR; transformação com calor certo; Faça o melhor! lexico guia palavras glossário pipoca"
+    },
+    {
+      "title": "planta",
+      "url": "/posts/post-inspecao-palavra-planta.html",
+      "excerpt": "Lat. planta / plantare — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; ficha de palavra ≠ lista de espécies.",
+      "text": "planta Lat. planta / plantare — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; ficha de palavra ≠ lista de espécies. lexico guia palavras glossário planta"
     },
     {
       "title": "Plantas",
@@ -3572,6 +3554,12 @@
       "text": "Proibicionismo Doutrina política que naturaliza a proibição — camada histórica do debate; indexar ≠ endossar. classificacao guia palavras glossário proibicionismo"
     },
     {
+      "title": "prosseguir",
+      "url": "/posts/post-inspecao-palavra-prosseguir.html",
+      "excerpt": "Lat. prōsequī — continuar × retomar BR; derivações prosseguimento; elos sempre/já/caminho; Faça o melhor e prossiga.",
+      "text": "prosseguir Lat. prōsequī — continuar × retomar BR; derivações prosseguimento; elos sempre/já/caminho; Faça o melhor e prossiga. lexico guia palavras glossário prosseguir"
+    },
+    {
       "title": "Psicoativo",
       "url": "/biblioteca/unifesp/livro-xiv.html",
       "excerpt": "Substância que altera mente, percepção ou humor — nas aulas, não é sinónimo automático de alucinógeno. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -3588,6 +3576,12 @@
       "url": "/posts/post-inspecao-palavra-psicotropico.html",
       "excerpt": "Rótulo clínico/institucional: substância que actua no sistema nervoso — distinto de entorpecente (lista) e de droga no senso comum.",
       "text": "Psicotrópico Rótulo clínico/institucional: substância que actua no sistema nervoso — distinto de entorpecente (lista) e de droga no senso comum. classificacao guia palavras glossário psicotropico"
+    },
+    {
+      "title": "pular",
+      "url": "/posts/post-inspecao-palavra-pular.html",
+      "excerpt": "Lat. pullāre — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar/backspace/já; Faça o melhor com o pulo certo.",
+      "text": "pular Lat. pullāre — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar/backspace/já; Faça o melhor com o pulo certo. lexico guia palavras glossário pular"
     },
     {
       "title": "Quimiotipo",
@@ -3632,6 +3626,12 @@
       "text": "Resíduo farmacêutico Sobras, metabolitos e embalagens de medicamentos no ambiente (água, lixo) — caso-âncora 3 da pesquisa. tecnico guia palavras glossário residuo-farmaceutico"
     },
     {
+      "title": "respeito",
+      "url": "/posts/post-inspecao-palavra-respeito.html",
+      "excerpt": "Lat. respectus / respicere — olhar de novo; consideração e prática social (sem sermão); elo verdade/gesto; contraste com vingança.",
+      "text": "respeito Lat. respectus / respicere — olhar de novo; consideração e prática social (sem sermão); elo verdade/gesto; contraste com vingança. lexico guia palavras glossário respeito"
+    },
+    {
       "title": "Retiro",
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Contexto intensivo de prática (ex. 4 dias Isha Yoga / Inner Engineering no estudo citado) — distinto da rotina diária de 10 min; indexar ≠ endossar escola comercial.",
@@ -3674,10 +3674,22 @@
       "text": "Seletividade penal Mecanismo estrutural: a mesma conduta é lida como saúde ou crime conforme classe, cor, território e acesso a advogado/HC. classificacao guia palavras glossário seletividade-penal"
     },
     {
+      "title": "selvagem",
+      "url": "/posts/post-inspecao-palavra-selvagem.html",
+      "excerpt": "Lat. silvaticus ← silva — da mata; selvagem × domesticado; «bicho selvagem»; elos planta/animal/inseto; sem romantizar dano.",
+      "text": "selvagem Lat. silvaticus ← silva — da mata; selvagem × domesticado; «bicho selvagem»; elos planta/animal/inseto; sem romantizar dano. lexico guia palavras glossário selvagem"
+    },
+    {
       "title": "Sementinha",
       "url": "/vida/diario/",
       "excerpt": "Semente pequena — personagem-símbolo do conto Vida e do diário familiar.",
       "text": "Sementinha Semente pequena — personagem-símbolo do conto Vida e do diário familiar. titulo guia palavras glossário sementinha"
+    },
+    {
+      "title": "sempre",
+      "url": "/posts/post-inspecao-palavra-sempre.html",
+      "excerpt": "Lat. semper — duração × hábito × promessa BR; elos já/prosseguir/caminho; Faça o melhor sempre que puder.",
+      "text": "sempre Lat. semper — duração × hábito × promessa BR; elos já/prosseguir/caminho; Faça o melhor sempre que puder. lexico guia palavras glossário sempre"
     },
     {
       "title": "Silenciamento",
@@ -3692,6 +3704,12 @@
       "text": "Simbiose Viver juntos (*syn* + *bíos*) — organismos, solo vivo, Venom/«nós» e ofício humano×assistente («você»); humano decide. lexico guia palavras glossário simbiose"
     },
     {
+      "title": "sinal",
+      "url": "/posts/post-inspecao-palavra-sinal.html",
+      "excerpt": "Lat. signum — marca, aviso, trânsito e «dar sinal»; elos gesto, risco, verdade; Faça o melhor!",
+      "text": "sinal Lat. signum — marca, aviso, trânsito e «dar sinal»; elos gesto, risco, verdade; Faça o melhor! lexico guia palavras glossário sinal"
+    },
+    {
       "title": "Sintético",
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Camada XIV de moléculas de laboratório (ex. linha Mechoulam / HU) — modulação exógena distinta da autonomia endógena (meditação, estilo de vida, PIC).",
@@ -3702,6 +3720,12 @@
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Conjunto clássico de receptores (CB1/CB2), endocanabinoides e enzimas que ajuda a manter o equilíbrio do organismo — núcleo do mapa de modulação (meditação, estilo de vida, cannabis).",
       "text": "Sistema endocanabinoide Conjunto clássico de receptores (CB1/CB2), endocanabinoides e enzimas que ajuda a manter o equilíbrio do organismo — núcleo do mapa de modulação (meditação, estilo de vida, cannabis). tecnico guia palavras glossário sistema-endocanabinoide"
+    },
+    {
+      "title": "skill",
+      "url": "/posts/post-inspecao-palavra-skill.html",
+      "excerpt": "Empréstimo EN→BR; habilidade/craft com rasto; anti-badge LinkedIn; elos multitask e genial; Faça o melhor!",
+      "text": "skill Empréstimo EN→BR; habilidade/craft com rasto; anti-badge LinkedIn; elos multitask e genial; Faça o melhor! lexico guia palavras glossário skill"
     },
     {
       "title": "Soja",
@@ -3770,6 +3794,18 @@
       "text": "THC Δ9-tetrahidrocanabinol — fitocanabinoide majoritário do quimiotipo 1; na grade XIV também contraste com anandamida endógena e com CBD isolado. tecnico guia palavras glossário thc"
     },
     {
+      "title": "tisana",
+      "url": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
+      "excerpt": "Chá de plantas (infusão ou decoção) — no lab, distinto do chá preto de Camellia; ver manual de preparo.",
+      "text": "tisana Chá de plantas (infusão ou decoção) — no lab, distinto do chá preto de Camellia; ver manual de preparo. tecnico guia palavras glossário tisana"
+    },
+    {
+      "title": "total",
+      "url": "/posts/post-inspecao-palavra-total.html",
+      "excerpt": "Lat. tōtus — inteiro/soma; gíria BR «total!» (acordo/louvor); escala com legal e fantástico; Faça o melhor!",
+      "text": "total Lat. tōtus — inteiro/soma; gíria BR «total!» (acordo/louvor); escala com legal e fantástico; Faça o melhor! lexico guia palavras glossário total"
+    },
+    {
       "title": "Tráfico",
       "url": "/posts/post-inspecao-palavra-porte-trafico.html",
       "excerpt": "Tipificação quando há indícios de mercancia — rótulo que, com porte, opera a seletividade na rua e no inquérito.",
@@ -3824,6 +3860,12 @@
       "text": "Valeriana Raiz tradicional de chás para o sono — exemplo de planta depressora da atividade mental. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário valeriana"
     },
     {
+      "title": "valeu",
+      "url": "/posts/post-inspecao-palavra-valeu.html",
+      "excerpt": "De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de muitoobrigado; gesto, respeito; Faça o melhor — e valeu.",
+      "text": "valeu De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de muitoobrigado; gesto, respeito; Faça o melhor — e valeu. lexico guia palavras glossário valeu"
+    },
+    {
       "title": "Verdade",
       "url": "/posts/post-inspecao-palavra-verdade.html",
       "excerpt": "Do latim *vērĭtās* / *vērus* — o que se pode verificar; no BudGanja, citar, medir e não fabricar evidência.",
@@ -3870,12 +3912,6 @@
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Prática corpo-mente no bloco XIV de PIC endógenas; retiros intensivos (ex. 4 dias) aparecem em estudos observacionais com ↑ AEA, 2-AG e BDNF.",
       "text": "Yoga Prática corpo-mente no bloco XIV de PIC endógenas; retiros intensivos (ex. 4 dias) aparecem em estudos observacionais com ↑ AEA, 2-AG e BDNF. tecnico guia palavras glossário yoga"
-    },
-    {
-      "title": "Ayrton Senna",
-      "url": "/posts/post-inspecao-figura-ayrton-senna.html",
-      "excerpt": "Piloto brasileiro tricampeão de F1 (1960–1994); no site, homenagem em Pessoas com elo ao mantra Faça o melhor! e ao Instituto.",
-      "text": "Ayrton Senna Piloto brasileiro tricampeão de F1 (1960–1994); no site, homenagem em Pessoas com elo ao mantra Faça o melhor! e ao Instituto. lexico guia palavras glossário ayrton-senna"
     }
   ]
 }

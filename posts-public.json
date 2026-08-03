@@ -1672,6 +1672,25 @@
     "seriesLabel": "Daninha · palavra"
   },
   {
+    "title": "Inspeção: Guia — preparar chá de plantas (infusão e decoção)",
+    "titleEn": "Inspection: Guide — preparing plant tea (infusion and decoction)",
+    "titleEs": "Inspección: Guía — preparar tisana de plantas (infusión y decocción)",
+    "excerpt": "Manual: infusão e decoção caseiras — material, tempos, proporções de ofício, segurança e elos com Plantas; Faça o melhor!",
+    "excerptEn": "Manual: home infusion and decoction — gear, times, craft ratios, safety, links to Plants; Do your best!",
+    "excerptEs": "Manual: infusión y decocción caseras — material, tiempos, proporciones, seguridad y vínculos con Plantas; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-guia-preparo-cha-plantas",
+    "url": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
+    "date": "2026-08-03T16:30:00.000Z",
+    "filename": "posts/post-inspecao-guia-preparo-cha-plantas.html",
+    "coverImage": "/imagens/inspecoes/cha-plantas-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 91,
+    "seriesLabel": "Guia · chá de plantas · preparo"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",

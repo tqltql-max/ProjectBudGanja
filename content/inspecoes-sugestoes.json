@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:59:13.158Z",
+  "updatedAt": "2026-08-03T16:05:24.949Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4197,6 +4197,27 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 90 — weed ≠ maconha; juízo relativo ao plano."
+    },
+    {
+      "id": "guia-preparo-cha-plantas",
+      "title": "Guia — preparar chá de plantas",
+      "titleEn": "Guide — preparing plant tea",
+      "titleEs": "Guía — preparar tisana de plantas",
+      "tipo": "guia",
+      "priority": 2,
+      "status": "feita",
+      "why": "Manual: infusão/decoção caseira, proporções, segurança; elos Plantas e Farmácia Viva.",
+      "whyEn": "Manual: home infusion/decoction, ratios, safety; links Plants and Living Pharmacy.",
+      "whyEs": "Manual: infusión/decocción casera, proporciones, seguridad; vínculos Plantas y Farmacia Viva.",
+      "suggestedSlug": "inspecao-guia-preparo-cha-plantas",
+      "doneHref": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-guia-preparo-cha-plantas.html",
+        "/plantas/",
+        "/posts/post-inspecao-guia-farmacia-viva.html"
+      ],
+      "notes": "Cap. 91 — não é bula; cannabis fora do chá livre."
     }
   ]
 }

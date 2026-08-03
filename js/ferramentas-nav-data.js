@@ -64,6 +64,15 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Glossário simples: títulos do site e léxico inspecionado."
             },
             {
+              "label": "Chá de plantas",
+              "tileLabel": "Chá de plantas",
+              "href": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
+              "icon": "🍵",
+              "slug": "guia-preparo-cha-plantas",
+              "featured": true,
+              "description": "Manual: infusão, decoção, proporções e segurança no preparo caseiro."
+            },
+            {
               "label": "Clonadoras",
               "tileLabel": "Clonadoras",
               "icon": "🌱",
@@ -885,6 +894,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-daninha",
               "description": "Palavras: «daninha» (*dano* + *-inha*) — planta daninha como juízo de lugar; elos planta, cultivo, selvagem; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Guia — preparar chá de plantas (infusão e decoção)",
+              "tileLabel": "Inspeção: Guia — preparar chá d…",
+              "href": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-guia-preparo-cha-plantas",
+              "description": "Manual: infusão e decoção caseiras — material, tempos, proporções de ofício, segurança e elos com Plantas; Faça o melhor!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
