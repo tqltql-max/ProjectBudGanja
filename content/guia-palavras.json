@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:36:45.603Z",
+  "updatedAt": "2026-08-03T13:39:35.570Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -154,6 +154,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-expressao-meudeusdoceu.html"
+    },
+    {
+      "id": "filho-de-deus",
+      "word": "filho de deus",
+      "simple": "Expressão — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; respeito à fé, sem proselitismo; depois Faça o melhor!",
+      "simpleEn": "Saying — theological title, BR oral intensity and dignity/care metaphor; respect for faith, no proselytizing; then Do your best!",
+      "simpleEs": "Expresión — título teológico, intensidad oral BR y metáfora de dignidad/cuidado; respeto a la fe, sin proselitismo; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-filho-de-deus.html"
     },
     {
       "id": "deu-certo-galera",

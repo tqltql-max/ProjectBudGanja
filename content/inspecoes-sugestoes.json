@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:36:45.599Z",
+  "updatedAt": "2026-08-03T13:39:35.700Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3152,6 +3152,29 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 5 Expressões — termómetro de acerto partilhado."
+    },
+    {
+      "id": "expressao-filho-de-deus",
+      "title": "filho de deus — título, oralidade e dignidade",
+      "titleEn": "filho de deus — title, orality and dignity",
+      "titleEs": "filho de deus — título, oralidad y dignidad",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: título teológico × intensidade oral BR × metáfora de dignidade/cuidado; sem proselitismo.",
+      "whyEn": "Sayings: theological title × BR oral intensity × dignity/care metaphor; no proselytizing.",
+      "whyEs": "Dichos: título teológico × intensidad oral BR × metáfora de dignidad/cuidado; sin proselitismo.",
+      "suggestedSlug": "inspecao-expressao-filho-de-deus",
+      "doneHref": "/posts/post-inspecao-expressao-filho-de-deus.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-jesusamando.html",
+        "/posts/post-inspecao-expressao-meudeusdoceu.html",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-padre-ticao.html"
+      ],
+      "notes": "Cap. 6 Expressões — mapa de usos; ficha ≠ catecismo."
     }
   ]
 }

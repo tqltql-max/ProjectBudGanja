@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:37:01.696Z",
+  "updatedAt": "2026-08-03T13:39:40.526Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Especial — latim vivo, uso BR e palavras originárias do Brasil",
+      "url": "/posts/post-inspecao-palavra-especial.html",
+      "excerpt": "Palavras: «especial» — Lat. specialis (≠ Tupi); usos orais/ofício BR; meta «em especial»; rede das palavras originárias / BR-marcadas já fichadas; Faça o melhor!",
+      "text": "Inspeção: Especial — latim vivo, uso BR e palavras originárias do Brasil Palavras: «especial» — Lat. specialis (≠ Tupi); usos orais/ofício BR; meta «em especial»; rede das palavras originárias / BR-marcadas já fichadas; Faça o melhor! inspecao ## Escopo\n\nInspeção editorial da palavra **especial** — e, **em especial**, do que o laboratório faz com ela no português do Brasil. Esta ficha cobre o **objeto** (Latim *specialis*, **não** étimo tupi), os **usos orais e de ofício** no BR, o meta-quadro **«em especial»**, e uma secção substancial **«Palavras originárias do Brasil»**: mapa das fichas já existentes (afro-atlânticas, contacto, oralidade BR) — sem fingir que *especial* seja indígena.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · especial](https://pt.wiktionary.org/wiki/especial), [specialis (EN)](https://en.wiktionary.org/wiki/specialis), [língua portuguesa](/posts/post-inspecao-palavra-lingua-portuguesa.html), [Duvivier](/posts/post-inspecao-figura-duvivier.html), série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). **Ficha ≠ dicionário académico completo.** Sem afiliação comercial.\n\n**Aviso etimológico (obrigatório):** **especial ≠ Tupi / ≠ «palavra originária indígena»**. O étimo de trabalho é latim *specialis* ← *species* («espécie; tipo»). O que é brasileiro nesta ficha é o **uso** (oralidade, ofício, rede de sentido) — não a genealogia lexical.\n\n## 1. Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **especial** |\n| Locução âncora | **em especial** («de modo particular; sobretudo») |\n| Classe | Adjectivo · também advérbio em locuções (*em especial*) |\n| Étimo (trabalho) | Latim *specialis* («próprio de uma espécie; particular») ← *species* — confiança: **alta** |\n| O que **não** é | Étimo tupi, guarani ou «nativismo» folclórico — **reprovado** como hipótese |\n| Família | *espécie* · *específico* · *especialidade* · *especialmente* · *especialista* |\n| Cognatos | esp. *especial* · fr. *spécial* · it. *sp"
     },
     {
       "title": "Inspeção: deu certo, galera — celebração colectiva e oralidade BR",
@@ -1770,6 +1776,12 @@
       "url": "/posts/post-inspecao-expressao-meudeusdoceu.html",
       "excerpt": "Expressão oral BR — meu Deus do céu colado; assombro alto; escala entre aff e jesusamando; depois Faça o melhor!",
       "text": "meudeusdoceu Expressão oral BR — meu Deus do céu colado; assombro alto; escala entre aff e jesusamando; depois Faça o melhor! lexico guia palavras glossário meudeusdoceu"
+    },
+    {
+      "title": "filho de deus",
+      "url": "/posts/post-inspecao-expressao-filho-de-deus.html",
+      "excerpt": "Expressão — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; respeito à fé, sem proselitismo; depois Faça o melhor!",
+      "text": "filho de deus Expressão — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; respeito à fé, sem proselitismo; depois Faça o melhor! lexico guia palavras glossário filho-de-deus"
     },
     {
       "title": "deu certo, galera",

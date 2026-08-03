@@ -3401,6 +3401,25 @@
     "seriesLabel": "Guia · cannabis medicinal · farmacêuticos"
   },
   {
+    "title": "Inspeção: Especial — latim vivo, uso BR e palavras originárias do Brasil",
+    "titleEn": "Inspection: Especial — living Latin, BR use, and Brazil’s originary words",
+    "titleEs": "Inspección: Especial — latín vivo, uso BR y palabras originarias de Brasil",
+    "excerpt": "Palavras: «especial» — Lat. specialis (≠ Tupi); usos orais/ofício BR; meta «em especial»; rede das palavras originárias / BR-marcadas já fichadas; Faça o melhor!",
+    "excerptEn": "Words: “especial” — Lat. specialis (≠ Tupi); BR oral/craft use; “em especial” meta-frame; network of originary / BR-marked sheets already on file; Do your best!",
+    "excerptEs": "Palabras: «especial» — lat. specialis (≠ tupí); uso oral/oficio BR; meta «em especial»; red de fichas originarias / marcadas en BR; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-especial",
+    "url": "/posts/post-inspecao-palavra-especial.html",
+    "date": "2026-08-03T20:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-especial.html",
+    "coverImage": "/imagens/inspecoes/especial-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 36,
+    "seriesLabel": "Especial · palavra"
+  },
+  {
     "title": "Inspeção: Guia associações de pacientes — cultivo institucional × seletividade",
     "titleEn": "Inspection: Patient associations guide — institutional grow × selectivity",
     "titleEs": "Inspección: Guía asociaciones de pacientes — cultivo institucional × selectividad",
