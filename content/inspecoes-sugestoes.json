@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:09:32.924Z",
+  "updatedAt": "2026-08-03T16:15:53.342Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4240,6 +4240,28 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 92 — ≠ cinta ID (amor); folga no aperto."
+    },
+    {
+      "id": "palavra-cinzeiro",
+      "title": "Cinzeiro — lugar da cinza e ofício do fogo",
+      "titleEn": "Cinzeiro — ash place and fire craft",
+      "titleEs": "Cinzeiro — lugar de la ceniza y oficio del fuego",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: cinzeiro (cinza+-eiro) — recipiente/monte; fogo/gesto/risco; Faça o melhor!",
+      "whyEn": "Words: cinzeiro (cinza+-eiro) — ashtray/heap; fogo/gesto/risco; Do your best!",
+      "whyEs": "Palabras: cinzeiro (cinza+-eiro) — cenicero/montón; fogo/gesto/risco; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-cinzeiro",
+      "doneHref": "/posts/post-inspecao-palavra-cinzeiro.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/cinzeiro",
+        "/posts/post-inspecao-palavra-fogo.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 93 — grafia canónica cinzeiro (pedido Cinzerio)."
     }
   ]
 }
