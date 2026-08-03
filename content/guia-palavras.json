@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T12:17:42.869Z",
+  "updatedAt": "2026-08-03T12:30:21.396Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2714,6 +2714,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "ayrton-senna",
+      "word": "Ayrton Senna",
+      "simple": "Piloto brasileiro tricampeão de F1 (1960–1994); no site, homenagem em Pessoas com elo ao mantra Faça o melhor! e ao Instituto.",
+      "simpleEn": "Brazilian three-time F1 champion (1960–1994); on the site, a People homage linked to Do your best! and the Instituto.",
+      "simpleEs": "Piloto brasileño tricampeón de F1 (1960–1994); en el sitio, homenaje en Personas con vínculo a ¡Haz lo mejor! y al Instituto.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-ayrton-senna.html"
     }
   ]
 }

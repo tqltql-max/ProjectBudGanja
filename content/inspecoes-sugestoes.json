@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T12:17:42.867Z",
+  "updatedAt": "2026-08-03T12:30:35.031Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2923,6 +2923,28 @@
         "/posts/post-inspecao-palavra-balde.html"
       ],
       "notes": "Cap. 28 — complementaridade das mãos; ressalva «lavar as mãos» = fuga."
+    },
+    {
+      "id": "figura-ayrton-senna",
+      "title": "Ayrton Senna — homenagem completa e Faça o melhor!",
+      "titleEn": "Ayrton Senna — full homage and Do your best!",
+      "titleEs": "Ayrton Senna — homenaje completo y ¡Haz lo mejor!",
+      "tipo": "pessoas",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pessoas × Expressões: homenagem a Senna com elo no mantra Faça o melhor!; ofício, Brasil, Instituto.",
+      "whyEn": "People × Expressions: Senna homage linked to Do your best!; craft, Brazil, Instituto.",
+      "whyEs": "Personas × Expresiones: homenaje a Senna con vínculo en ¡Haz lo mejor!; oficio, Brasil, Instituto.",
+      "suggestedSlug": "inspecao-figura-ayrton-senna",
+      "doneHref": "/posts/post-inspecao-figura-ayrton-senna.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Ayrton_Senna",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "https://www.institutoayrtonsenna.org.br/",
+        "/vida/#poema=faca-o-melhor"
+      ],
+      "notes": "Homenagem completa; não romantizar a morte em Ímola."
     }
   ]
 }
