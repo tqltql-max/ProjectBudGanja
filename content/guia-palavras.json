@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:18:36.173Z",
+  "updatedAt": "2026-08-03T16:26:31.179Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -506,36 +506,6 @@
       "href": "/posts/post-inspecao-palavra-caminho.html"
     },
     {
-      "id": "objetos",
-      "word": "objetos",
-      "simple": "Lat. obiectum — plural de objeto; no lab, o foco do «objeto inspecionado»; Faça o melhor neste objeto.",
-      "simpleEn": "Lat. obiectum — plural of objeto; in the lab, focus of the inspected object; Do your best on this object.",
-      "simpleEs": "Lat. obiectum — plural de objeto; en el lab, el foco del «objeto inspeccionado»; Haz lo mejor en este objeto.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-objetos.html"
-    },
-    {
-      "id": "cinta",
-      "word": "cinta",
-      "simple": "Lat. cincta / cingere — faixa que segura; no cultivo, tutor com folga; ≠ sinta; Faça o melhor neste aperto.",
-      "simpleEn": "Lat. cincta / cingere — band that holds; in cultivation, stake with slack; ≠ sinta; Do your best on this grip.",
-      "simpleEs": "Lat. cincta / cingere — banda que sujeta; en cultivo, tutor con holgura; ≠ sinta; Haz lo mejor en este apriete.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-cinta.html"
-    },
-    {
-      "id": "cinzeiro",
-      "word": "cinzeiro",
-      "simple": "Cinza + -eiro — recipiente ou monte da cinza; elos fogo/gesto/risco; Faça o melhor no fim do fogo.",
-      "simpleEn": "Cinza + -eiro — ashtray or ash heap; links fogo/gesto/risco; Do your best at the end of the fire.",
-      "simpleEs": "Cinza + -eiro — cenicero o montón de ceniza; vínculos fogo/gesto/risco; Haz lo mejor al final del fuego.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-cinzeiro.html"
-    },
-    {
       "id": "camomila",
       "word": "Camomila",
       "simple": "Capítulos de Matricaria chamomilla — tradição de chás calmantes; marcadores como apigenina e óleo azul (camazuleno) em contexto educacional. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -754,6 +724,26 @@
       "group": "tecnico",
       "fromTitle": true,
       "href": "/posts/post-inspecao-derivado-chocolate.html"
+    },
+    {
+      "id": "cinta",
+      "word": "cinta",
+      "simple": "Lat. cincta / cingere — faixa que segura; no cultivo, tutor com folga; ≠ sinta; Faça o melhor neste aperto.",
+      "simpleEn": "Lat. cincta / cingere — band that holds; in cultivation, stake with slack; ≠ sinta; Do your best on this grip.",
+      "simpleEs": "Lat. cincta / cingere — banda que sujeta; en cultivo, tutor con holgura; ≠ sinta; Haz lo mejor en este apriete.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-cinta.html"
+    },
+    {
+      "id": "cinzeiro",
+      "word": "cinzeiro",
+      "simple": "Cinza + -eiro — recipiente ou monte da cinza; elos fogo/gesto/risco; Faça o melhor no fim do fogo.",
+      "simpleEn": "Cinza + -eiro — ashtray or ash heap; links fogo/gesto/risco; Do your best at the end of the fire.",
+      "simpleEs": "Cinza + -eiro — cenicero o montón de ceniza; vínculos fogo/gesto/risco; Haz lo mejor al final del fuego.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-cinzeiro.html"
     },
     {
       "id": "clonadora",
@@ -1786,6 +1776,16 @@
       "href": "/posts/post-inspecao-palavra-incrivel.html"
     },
     {
+      "id": "insana",
+      "word": "insana",
+      "simple": "Lat. insanus (in- + sanus) — intensidade/excesso no BR; ≠ diagnóstico; verdade e respeito; Faça o melhor.",
+      "simpleEn": "Lat. insanus (in- + sanus) — intensity/excess in BR; ≠ diagnosis; truth and respect; Do your best.",
+      "simpleEs": "Lat. insanus (in- + sanus) — intensidad/exceso en BR; ≠ diagnóstico; verdad y respeto; Haz lo mejor.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-insana.html"
+    },
+    {
       "id": "infusao",
       "word": "infusão",
       "simple": "Água quente (fora do fogo) sobre folhas/flores, 5–15 min tampado — modo do manual de chá de plantas.",
@@ -2446,6 +2446,16 @@
       "href": "/posts/post-inspecao-palavra-nojinho.html"
     },
     {
+      "id": "objetos",
+      "word": "objetos",
+      "simple": "Lat. obiectum — plural de objeto; no lab, o foco do «objeto inspecionado»; Faça o melhor neste objeto.",
+      "simpleEn": "Lat. obiectum — plural of objeto; in the lab, focus of the inspected object; Do your best on this object.",
+      "simpleEs": "Lat. obiectum — plural de objeto; en el lab, el foco del «objeto inspeccionado»; Haz lo mejor en este objeto.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-objetos.html"
+    },
+    {
       "id": "oficio-editorial",
       "word": "Ofício editorial",
       "simple": "Método repetível do laboratório (inspecionar, citar, limitar, publicar) — eixo da pesquisa Ofício sob roubo e proibição.",
@@ -2806,6 +2816,16 @@
       "href": "/posts/post-inspecao-palavra-rdc-autorizacao-sanitaria.html"
     },
     {
+      "id": "receitas-plantas",
+      "word": "receitas de plantas",
+      "simple": "Guia BudGanja lote 1: oito tisanas de ofício com elos ao catálogo Plantas e ao manual de chá.",
+      "simpleEn": "BudGanja guide batch 1: eight craft herbal teas linked to the Plants catalog and tea manual.",
+      "simpleEs": "Guía BudGanja lote 1: ocho tisanas de oficio con vínculos al catálogo Plantas y al manual de té.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-receitas-plantas.html"
+    },
+    {
       "id": "receituario",
       "word": "Receituário",
       "simple": "Acto médico de prescrição — abre vias de produto regulado/importação; não autoriza sozinho o cultivo caseiro.",
@@ -3124,6 +3144,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-preparo-cha-plantas.html"
+    },
+    {
+      "id": "tisana-receita",
+      "word": "tisana (receita)",
+      "simple": "Receita de chá de plantas no guia de receitas — medida, tempo e aviso; ver também manual de preparo.",
+      "simpleEn": "Herbal-tea recipe in the recipes guide — measure, time and caution; see also the prep manual.",
+      "simpleEs": "Receta de tisana en la guía de recetas — medida, tiempo y aviso; ver también el manual de preparación.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-guia-receitas-plantas.html"
     },
     {
       "id": "total",

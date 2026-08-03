@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:18:36.170Z",
+  "updatedAt": "2026-08-03T16:26:31.176Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4284,6 +4284,49 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 94 — um objeto por ficha; plural pede ordem."
+    },
+    {
+      "id": "guia-receitas-plantas",
+      "title": "Guia — receitas de plantas (lote 1)",
+      "titleEn": "Guide — plant recipes (batch 1)",
+      "titleEs": "Guía — recetas de plantas (lote 1)",
+      "tipo": "guia",
+      "priority": 2,
+      "status": "feita",
+      "why": "Oito tisanas de ofício com elos Plantas + manual de chá; Faça o melhor!",
+      "whyEn": "Eight craft herbal teas linked to Plants + tea manual; Do your best!",
+      "whyEs": "Ocho tisanas de oficio con vínculos Plantas + manual de té; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-guia-receitas-plantas",
+      "doneHref": "/posts/post-inspecao-guia-receitas-plantas.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-guia-receitas-plantas.html",
+        "/posts/post-inspecao-guia-preparo-cha-plantas.html",
+        "/plantas/"
+      ],
+      "notes": "Cap. 95 — não é bula; cannabis fora."
+    },
+    {
+      "id": "palavra-insana",
+      "title": "Insana — intensidade, juízo e cuidado",
+      "titleEn": "Insana — intensity, judgment and care",
+      "titleEs": "Insana — intensidad, juicio y cuidado",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: insana (in-+sanus) — intensidade BR; ≠ diagnóstico; verdade/respeito; Faça o melhor!",
+      "whyEn": "Words: insana (in-+sanus) — BR intensity; ≠ diagnosis; truth/respect; Do your best!",
+      "whyEs": "Palabras: insana (in-+sanus) — intensidad BR; ≠ diagnóstico; verdad/respeto; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-insana",
+      "doneHref": "/posts/post-inspecao-palavra-insana.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/insano",
+        "/posts/post-inspecao-palavra-verdade.html",
+        "/posts/post-inspecao-palavra-respeito.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 96 — hipérbole ≠ insulto ≠ clínica."
     }
   ]
 }
