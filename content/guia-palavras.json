@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:31:14.904Z",
+  "updatedAt": "2026-08-03T16:37:39.764Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -834,6 +834,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-coracao.html"
+    },
+    {
+      "id": "alma",
+      "word": "alma",
+      "simple": "Lat. anima — centro vivo; chegar na alma; elos tudo/coração/vida; Faça o melhor até tocar.",
+      "simpleEn": "Lat. anima — living center; reaching the soul; links tudo/coração/vida; Do your best until it touches.",
+      "simpleEs": "Lat. anima — centro vivo; llegar al alma; vínculos tudo/corazón/vida; Haz lo mejor hasta tocar.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-alma.html"
+    },
+    {
+      "id": "nap",
+      "word": "nap",
+      "simple": "EN — sono curto / power nap no BR; pausa de ofício; elos gesto/alma; Faça o melhor depois de parar.",
+      "simpleEn": "EN — short sleep / power nap in BR; craft pause; links gesto/alma; Do your best after stopping.",
+      "simpleEs": "EN — sueño corto / power nap en BR; pausa de oficio; vínculos gesto/alma; Haz lo mejor después de parar.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-nap.html"
     },
     {
       "id": "crf",
@@ -3174,6 +3194,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-total.html"
+    },
+    {
+      "id": "tudo",
+      "word": "tudo",
+      "simple": "Família totus — totalidade e o essencial; no lab, foco para não perder a alma; Faça o melhor.",
+      "simpleEn": "Totus family — totality and the essential; in the lab, focus so the soul is not lost; Do your best.",
+      "simpleEs": "Familia totus — totalidad y lo esencial; en el lab, foco para no perder el alma; Haz lo mejor.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-tudo.html"
     },
     {
       "id": "trafico",

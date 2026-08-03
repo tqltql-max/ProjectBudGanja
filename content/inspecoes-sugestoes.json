@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:31:14.901Z",
+  "updatedAt": "2026-08-03T16:37:39.761Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4349,6 +4349,68 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 97 — proposta ≠ ordem; fila editorial."
+    },
+    {
+      "id": "palavra-tudo",
+      "title": "Tudo — totalidade, essencial e foco",
+      "titleEn": "Tudo — totality, essential and focus",
+      "titleEs": "Tudo — totalidad, esencial y foco",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: tudo (totus) — totalidade/essencial; elos objetos/alma; Faça o melhor!",
+      "whyEn": "Words: tudo (totus) — totality/essential; links objetos/alma; Do your best!",
+      "whyEs": "Palabras: tudo (totus) — totalidad/esencial; vínculos objetos/alma; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-tudo",
+      "doneHref": "/posts/post-inspecao-palavra-tudo.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/tudo",
+        "/posts/post-inspecao-palavra-alma.html"
+      ],
+      "notes": "Cap. 98"
+    },
+    {
+      "id": "palavra-alma",
+      "title": "Alma — centro vivo e chegar por dentro",
+      "titleEn": "Alma — living center and reaching within",
+      "titleEs": "Alma — centro vivo y llegar por dentro",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: alma (anima) — centro vivo; chegar na alma; elos tudo/coração/vida; Faça o melhor!",
+      "whyEn": "Words: alma (anima) — living center; reaching the soul; links tudo/coração/vida; Do your best!",
+      "whyEs": "Palabras: alma (anima) — centro vivo; llegar al alma; vínculos tudo/corazón/vida; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-alma",
+      "doneHref": "/posts/post-inspecao-palavra-alma.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/alma",
+        "/posts/post-inspecao-palavra-tudo.html",
+        "/vida/"
+      ],
+      "notes": "Cap. 99"
+    },
+    {
+      "id": "palavra-nap",
+      "title": "Nap — sono curto e pausa de ofício",
+      "titleEn": "Nap — short sleep and craft pause",
+      "titleEs": "Nap — sueño corto y pausa de oficio",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: nap (EN) — cochilo/power nap; gesto/alma/vida; Faça o melhor!",
+      "whyEn": "Words: nap (EN) — short sleep/power nap; gesto/alma/vida; Do your best!",
+      "whyEs": "Palabras: nap (EN) — siesta corta/power nap; gesto/alma/vida; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-nap",
+      "doneHref": "/posts/post-inspecao-palavra-nap.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wiktionary.org/wiki/nap",
+        "/posts/post-inspecao-palavra-alma.html",
+        "/posts/post-inspecao-palavra-gesto.html"
+      ],
+      "notes": "Cap. 100 — ≠ húngaro nap (dia)."
     }
   ]
 }
