@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T21:08:54.050Z",
+  "updatedAt": "2026-08-03T23:02:24.818Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4709,6 +4709,30 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Forma viva de menear; irmã rítmica de gesto."
+    },
+    {
+      "id": "arte-filme-moana",
+      "title": "Moana — o desenho do oceano, da vocação e da ilha",
+      "titleEn": "Moana — the ocean, vocation, and the island cartoon",
+      "titleEs": "Moana — el dibujo del océano, la vocación y la isla",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Artes · desenho: Moana (2016, Disney) — oceano, navegar e cuidado da ilha; elos mar/caminho/Vida.",
+      "whyEn": "Arts · animation: Moana (2016, Disney) — ocean, sailing and island care; links mar/caminho/Vida.",
+      "whyEs": "Artes · dibujo: Moana (2016, Disney) — océano, navegar y cuidado de la isla; vínculos mar/caminho/Vida.",
+      "suggestedSlug": "inspecao-filme-moana",
+      "doneHref": "/posts/post-inspecao-filme-moana.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Moana_(filme)",
+        "https://en.wikipedia.org/wiki/Moana_(2016_film)",
+        "https://www.youtube.com/watch?v=LKFuXEt8JUA",
+        "/posts/post-inspecao-palavra-mar.html",
+        "/posts/post-inspecao-palavra-navegar.html",
+        "/posts/post-inspecao-amyr-klink.html"
+      ],
+      "notes": "Génese 2016; Moana 2 / live-action = ecos."
     }
   ]
 }
