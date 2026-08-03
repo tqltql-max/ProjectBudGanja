@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:47:19.751Z",
+  "updatedAt": "2026-08-03T13:47:31.352Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3563,6 +3563,29 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 70 — planta como conceito; plural plantas no corpo; sem duplicar especies."
+    },
+    {
+      "id": "palavra-idolo",
+      "title": "Ídolo — admiração, imagem, média e Faça o melhor!",
+      "titleEn": "Ídolo — admiration, image, media and Do your best!",
+      "titleEs": "Ídolo — admiración, imagen, medios y ¡Haz lo mejor!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: ídolo (gr. eídōlon) — celebridade, culto lexical, idolatrar e média; admirar com ofício; Faça o melhor!",
+      "whyEn": "Words: ídolo (Gk. eídōlon) — celebrity, lexical cult sense, idolatrar and media; admire with craft; Do your best!",
+      "whyEs": "Palabras: ídolo (gr. eídōlon) — celebridad, culto léxico, idolatrar y medios; admirar con oficio; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-idolo",
+      "doneHref": "/posts/post-inspecao-palavra-idolo.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/%C3%ADdolo",
+        "https://pt.wikipedia.org/wiki/%C3%8Ddolo",
+        "/posts/post-inspecao-figura-ayrton-senna.html",
+        "/posts/post-inspecao-palavra-genial.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 71 — imagem → pessoa admirada; sem sermão; elos Senna/Chorão/genial."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:47:19.756Z",
+  "updatedAt": "2026-08-03T13:47:31.359Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -104,6 +104,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-fogo.html"
+    },
+    {
+      "id": "idolo",
+      "word": "ídolo",
+      "simple": "Gr. eídōlon — imagem → pessoa admirada; culto lexical, idolatrar e média; admirar com ofício; Faça o melhor!",
+      "simpleEn": "Gk. eídōlon — image → admired person; lexical cult sense, idolatrar and media; admire with craft; Do your best!",
+      "simpleEs": "Gr. eídōlon — imagen → persona admirada; culto léxico, idolatrar y medios; admirar con oficio; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-idolo.html"
     },
     {
       "id": "eletrizante",
