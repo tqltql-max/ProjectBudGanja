@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:46:19.892Z",
+  "updatedAt": "2026-08-03T13:46:36.999Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -354,6 +354,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-coracao.html"
+    },
+    {
+      "id": "esperanca",
+      "word": "esperança",
+      "simple": "Lat. spēs / sperantia — afecto vivo BR; esperar × esperança; fresta junto a medo/tristeza; Faça o melhor com ofício.",
+      "simpleEn": "Lat. spēs / sperantia — lived BR hope; wait vs hope; crack of light beside fear/sadness; Do your best with craft.",
+      "simpleEs": "Lat. spēs / sperantia — esperanza vivida BR; esperar × esperança; rendija junto a miedo/tristeza; Haz lo mejor con oficio.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-esperanca.html"
     },
     {
       "id": "alegria",
