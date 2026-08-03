@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T23:22:08.436Z",
+  "updatedAt": "2026-08-03T23:31:37.968Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1564,6 +1564,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-expressao-filho-de-deus.html"
+    },
+    {
+      "id": "deus-abencoe",
+      "word": "Deus abençoe",
+      "simple": "Expressão — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; respeito à fé, sem proselitismo; depois Faça o melhor!",
+      "simpleEn": "Saying — BR blessing and farewell; tipography Deus Abenço → Deus abençoe; respect for faith, no proselytizing; then Do your best!",
+      "simpleEs": "Expresión — bendición y despedida BR; tipografía Deus Abenço → Deus abençoe; respeto a la fe, sin proselitismo; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-deus-abencoe.html"
     },
     {
       "id": "fitocanabinoide",

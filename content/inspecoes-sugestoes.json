@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T23:22:08.433Z",
+  "updatedAt": "2026-08-03T23:31:37.963Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4800,6 +4800,28 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 111 — tipografia fia → mãe; oral NE fia ≠ mãe."
+    },
+    {
+      "id": "expressao-deus-abencoe",
+      "title": "Deus abençoe — bênção, despedida e tipografia Deus Abenço",
+      "titleEn": "Deus abençoe — blessing, farewell and tipography Deus Abenço",
+      "titleEs": "Deus abençoe — bendición, despedida y tipografía Deus Abenço",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: Deus abençoe — bênção/despedida BR; tipografia Deus Abenço → Deus abençoe; sem proselitismo.",
+      "whyEn": "Sayings: Deus abençoe — BR blessing/farewell; tipography Deus Abenço → Deus abençoe; no proselytizing.",
+      "whyEs": "Dichos: Deus abençoe — bendición/despedida BR; tipografía Deus Abenço → Deus abençoe; sin proselitismo.",
+      "suggestedSlug": "inspecao-expressao-deus-abencoe",
+      "doneHref": "/posts/post-inspecao-expressao-deus-abencoe.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-jesusamando.html",
+        "/posts/post-inspecao-expressao-filho-de-deus.html",
+        "/posts/post-inspecao-expressao-muito-obrigado.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 11 Expressões — tipografia Deus Abenço → Deus abençoe; ficha ≠ catecismo."
     }
   ]
 }
