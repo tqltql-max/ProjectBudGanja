@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:06:10.476Z",
+  "updatedAt": "2026-08-03T13:12:26.123Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -124,6 +124,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-aff.html"
+    },
+    {
+      "id": "jesusamando",
+      "word": "jesusamando",
+      "simple": "Expressão oral BR — assombro e afeto num sopro; contraste com aff; depois, Faça o melhor!",
+      "simpleEn": "Brazilian oral saying — awe and affection in one breath; contrast with aff; then Do your best!",
+      "simpleEs": "Expresión oral BR — asombro y afecto en un soplo; contraste con aff; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-jesusamando.html"
     },
     {
       "id": "ja",

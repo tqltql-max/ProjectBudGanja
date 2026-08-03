@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:06:10.473Z",
+  "updatedAt": "2026-08-03T13:12:26.120Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3033,6 +3033,28 @@
         "/guia/palavras.html"
       ],
       "notes": "Cap. 32 — meio do laboratório; eixo temporal (latim→BR→digital)."
+    },
+    {
+      "id": "expressao-jesusamando",
+      "title": "jesusamando — assombro, afeto e oralidade BR",
+      "titleEn": "jesusamando — awe, affection and Brazilian orality",
+      "titleEs": "jesusamando — asombro, afecto y oralidad BR",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: sopro BR de assombro e afeto; contraste com aff; elo língua e Faça o melhor!",
+      "whyEn": "Sayings: Brazilian breath of awe and affection; contrast with aff; language + Do your best!",
+      "whyEs": "Dichos: soplo BR de asombro y afecto; contraste con aff; lengua + ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-expressao-jesusamando",
+      "doneHref": "/posts/post-inspecao-expressao-jesusamando.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-palavra-aff.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/biblioteca/inspecoes/#inspecoes-expressoes"
+      ],
+      "notes": "Cap. 3 Expressões — pivot desde historiografia (palavra)."
     }
   ]
 }
