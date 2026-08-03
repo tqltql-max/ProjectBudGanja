@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:24:03.884Z",
+  "updatedAt": "2026-08-03T13:28:31.918Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3078,6 +3078,28 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 33 — lareira × labareda; par com água."
+    },
+    {
+      "id": "expressao-meudeusdoceu",
+      "title": "meudeusdoceu — assombro alto e oralidade BR",
+      "titleEn": "meudeusdoceu — high awe and Brazilian orality",
+      "titleEs": "meudeusdoceu — asombro alto y oralidad BR",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: meu Deus do céu colado; assombro alto; escala aff × meudeusdoceu × jesusamando.",
+      "whyEn": "Sayings: meu Deus do céu as one word; high awe; scale aff × meudeusdoceu × jesusamando.",
+      "whyEs": "Dichos: meu Deus do céu pegado; asombro alto; escala aff × meudeusdoceu × jesusamando.",
+      "suggestedSlug": "inspecao-expressao-meudeusdoceu",
+      "doneHref": "/posts/post-inspecao-expressao-meudeusdoceu.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-jesusamando.html",
+        "/posts/post-inspecao-palavra-aff.html",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 4 Expressões — termómetro de espanto."
     }
   ]
 }

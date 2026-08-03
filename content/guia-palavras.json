@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:24:03.887Z",
+  "updatedAt": "2026-08-03T13:28:31.922Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -134,6 +134,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-aff.html"
+    },
+    {
+      "id": "meudeusdoceu",
+      "word": "meudeusdoceu",
+      "simple": "Expressão oral BR — meu Deus do céu colado; assombro alto; escala entre aff e jesusamando; depois Faça o melhor!",
+      "simpleEn": "Brazilian oral saying — meu Deus do céu as one word; high awe; between aff and jesusamando; then Do your best!",
+      "simpleEs": "Expresión oral BR — meu Deus do céu pegado; asombro alto; entre aff y jesusamando; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-meudeusdoceu.html"
     },
     {
       "id": "jesusamando",
