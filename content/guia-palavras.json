@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T14:33:07.177Z",
+  "updatedAt": "2026-08-03T15:00:21.639Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -254,6 +254,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-expressao-muito-obrigado.html"
+    },
+    {
+      "id": "eojsofaorforap",
+      "word": "eojsofaorforap",
+      "simple": "Expressão oral BR — nome lab de «eu só falo a verdade»; substitui o rótulo plano; elo verdade; depois Faça o melhor!",
+      "simpleEn": "Brazilian oral saying — lab name for “I only speak the truth”; replaces plain label; truth; then Do your best!",
+      "simpleEs": "Expresión oral BR — nombre lab de «eu só falo a verdade»; sustituye etiqueta plana; verdade; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-eojsofaorforap.html"
     },
     {
       "id": "maravilhoso",

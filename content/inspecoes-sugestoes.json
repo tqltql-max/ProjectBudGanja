@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T14:33:07.172Z",
+  "updatedAt": "2026-08-03T15:00:21.636Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3181,7 +3181,7 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html",
         "/posts/post-inspecao-padre-ticao.html"
       ],
-      "notes": "Cap. 6 Expressões — mapa de usos; ficha ≠ catecismo."
+      "notes": "Cap. 9 Expressões — mapa de usos; ficha ≠ catecismo."
     },
     {
       "id": "palavra-especial",
@@ -4010,6 +4010,29 @@
         "/posts/post-inspecao-palavra-verdade.html"
       ],
       "notes": "Ideia a partir do Cap. 8 Expressões (muitoobrigado × escravidão)."
+    },
+    {
+      "id": "expressao-eojsofaorforap",
+      "title": "eojsofaorforap — eu só falo a verdade",
+      "titleEn": "eojsofaorforap — I only speak the truth",
+      "titleEs": "eojsofaorforap — solo digo la verdad",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: nome lab de «eu só falo a verdade»; substitui o rótulo plano; elos verdade, gesto.",
+      "whyEn": "Sayings: lab name for “I only speak the truth”; replaces plain label; truth, gesture.",
+      "whyEs": "Dichos: nombre lab de «eu só falo a verdade»; sustituye etiqueta plana; verdade, gesto.",
+      "suggestedSlug": "inspecao-expressao-eojsofaorforap",
+      "doneHref": "/posts/post-inspecao-expressao-eojsofaorforap.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-palavra-verdade.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-expressao-ausdhuashduas.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html"
+      ],
+      "notes": "Cap. 10 Expressões — rótulo plano «eu só falo a verdade» → eojsofaorforap."
     }
   ]
 }
