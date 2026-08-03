@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:42:25.551Z",
+  "updatedAt": "2026-08-03T13:43:27.636Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -106,6 +106,46 @@
       "href": "/posts/post-inspecao-palavra-fogo.html"
     },
     {
+      "id": "fantastico",
+      "word": "fantástico",
+      "simple": "Lat. phantasticus / fantasia — imaginação e elogio BR «fantástico!»; escala com legal, genial, maravilhoso; Faça o melhor depois do uau.",
+      "simpleEn": "Lat. phantasticus / fantasy — imagination and BR praise “fantástico!”; scale with legal, genial, maravilhoso; Do your best after the wow.",
+      "simpleEs": "Lat. phantasticus / fantasía — imaginación y elogio BR «¡fantástico!»; escala con legal, genial, maravilhoso; Haz lo mejor después del guau.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-fantastico.html"
+    },
+    {
+      "id": "especial",
+      "word": "especial",
+      "simple": "Lat. specialis (≠ Tupi) — particular / em especial; uso oral e ofício BR; porta para a rede das palavras originárias já fichadas; Faça o melhor!",
+      "simpleEn": "Lat. specialis (≠ Tupi) — particular / especially; BR oral and craft use; door into the originary-words network on file; Do your best!",
+      "simpleEs": "Lat. specialis (≠ tupí) — particular / en especial; uso oral y oficio BR; puerta a la red de palabras originarias ya fichadas; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-especial.html"
+    },
+    {
+      "id": "memoravel",
+      "word": "memorável",
+      "simple": "Lat. memorabilis — digno de memória; elogio BR com rasto; retenção ≠ escala genial/especial; Faça o melhor!",
+      "simpleEn": "Lat. memorabilis — worth remembering; BR praise with a trace; retention ≠ genial/especial scale; Do your best!",
+      "simpleEs": "Lat. memorabilis — digno de memoria; elogio BR con rastro; retención ≠ escala genial/especial; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-memoravel.html"
+    },
+    {
+      "id": "incrivel",
+      "word": "incrível",
+      "simple": "Lat. incredibilis — inacreditável e elogio BR «uau»; escala legal → especial → genial → incrível; Faça o melhor!",
+      "simpleEn": "Lat. incredibilis — unbelievable and BR praise “wow”; scale legal → especial → genial → incrível; Do your best!",
+      "simpleEs": "Lat. incredibilis — inacreditável y elogio BR «uau»; escala legal → especial → genial → incrível; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-incrivel.html"
+    },
+    {
       "id": "aguas-e-lagrimas",
       "word": "Águas do Mar e Lágrimas",
       "simple": "Poesia original BudGanja: o sal do mar e o da lágrima; elo com Vida, Lágrimas da Vida e Álvares de Azevedo.",
@@ -134,6 +174,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-aff.html"
+    },
+    {
+      "id": "ausdhuashduas",
+      "word": "ausdhuashduas",
+      "simple": "Expressão oral BR — nome lab do riso tipado (substitui kkkk… e «risas online»); contraste com aff; depois Faça o melhor!",
+      "simpleEn": "Brazilian oral saying — lab name for typed laughter (replaces kkkk… / online laughs); contrast with aff; then Do your best!",
+      "simpleEs": "Expresión oral BR — nombre lab de la risa tipada (sustituye kkkk… y «risas online»); contraste con aff; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-ausdhuashduas.html"
     },
     {
       "id": "buguei",
@@ -244,6 +294,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-esquerdo.html"
+    },
+    {
+      "id": "coracao",
+      "word": "coração",
+      "simple": "Lat. cor — órgão, afeto, centro e coragem; elo mãos/esquerdo (gesto cultural, não dogma); Faça o melhor de coração.",
+      "simpleEn": "Lat. cor — organ, affect, center and courage; hands/esquerdo link (cultural gesture, not dogma); Do your best from the heart.",
+      "simpleEs": "Lat. cor — órgano, afecto, centro y coraje; vínculo manos/esquerdo (gesto cultural, no dogma); Haz lo mejor de corazón.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-coracao.html"
     },
     {
       "id": "alegria",
@@ -1496,6 +1556,16 @@
       "href": "/posts/post-inspecao-palavra-gesto.html"
     },
     {
+      "id": "respeito",
+      "word": "respeito",
+      "simple": "Lat. respectus / respicere — olhar de novo; consideração e prática social (sem sermão); elo verdade/gesto; contraste com vingança.",
+      "simpleEn": "Lat. respectus / respicere — look again; consideration and social practice (no sermon); truth/gesture; contrast with revenge.",
+      "simpleEs": "Lat. respectus / respicere — volver a mirar; consideración y práctica social (sin sermón); verdad/gesto; contraste con venganza.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-respeito.html"
+    },
+    {
       "id": "gluten",
       "word": "Glúten",
       "simple": "Proteína do trigo e de outros cereais — no site, ficha de produto nocivo.",
@@ -1614,6 +1684,16 @@
       "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-ilicito.html"
+    },
+    {
+      "id": "legal",
+      "word": "legal",
+      "simple": "Lat. legalis — conforme a lei; no BR também «bacana/ok»; separar eixo jurídico da gíria; Faça o melhor com a palavra certa.",
+      "simpleEn": "Lat. legalis — lawful; in BR also “cool/ok”; separate juridical axis from slang; Do your best with the right word.",
+      "simpleEs": "Lat. legalis — conforme a la ley; en BR también «bacán/ok»; separar eje jurídico de la jerga; Haz lo mejor con la palabra correcta.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-legal.html"
     },
     {
       "id": "importacao-anvisa",

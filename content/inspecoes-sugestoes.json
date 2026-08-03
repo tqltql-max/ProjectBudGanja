@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:42:25.546Z",
+  "updatedAt": "2026-08-03T13:43:27.639Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3222,7 +3222,7 @@
         "/posts/post-inspecao-palavra-descriminalizacao.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 42 — lei × gíria; não confundir eixos."
+      "notes": "Cap. 37 — lei × gíria; não confundir eixos."
     },
     {
       "id": "palavra-fabuloso",
@@ -3247,6 +3247,149 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 35 — elogio BR; rede só com slugs existentes."
+    },
+    {
+      "id": "palavra-respeito",
+      "title": "Respeito — olhar de novo, prática social e Faça o melhor!",
+      "titleEn": "Respeito — looking again, social practice and Do your best!",
+      "titleEs": "Respeito — volver a mirar, práctica social y ¡Haz lo mejor!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: respeito (lat. respectus / respicere) — consideração e prática social, sem sermão; elo verdade/gesto; contraste vingança.",
+      "whyEn": "Words: respeito (Lat. respectus / respicere) — consideration and social practice, no sermon; truth/gesture; contrast with revenge.",
+      "whyEs": "Palabras: respeito (lat. respectus / respicere) — consideración y práctica social, sin sermón; verdad/gesto; contraste venganza.",
+      "suggestedSlug": "inspecao-palavra-respeito",
+      "doneHref": "/posts/post-inspecao-palavra-respeito.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/respeito",
+        "https://pt.wikipedia.org/wiki/Respeito",
+        "/posts/post-inspecao-palavra-verdade.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 65 — respeito como prática; sem sermão."
+    },
+    {
+      "id": "palavra-incrivel",
+      "title": "Incrível — incredibilis, elogio BR e a escala legal→genial",
+      "titleEn": "Incrível — incredibilis, BR praise, and the legal→genial scale",
+      "titleEs": "Incrível — incredibilis, elogio BR y la escala legal→genial",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: incrível (lat. incredibilis) — incredulidade e elogio BR; escala legal/especial/genial; Faça o melhor!",
+      "whyEn": "Words: incrível (Lat. incredibilis) — unbelief and BR praise; legal/especial/genial scale; Do your best!",
+      "whyEs": "Palabras: incrível (lat. incredibilis) — incredulidad y elogio BR; escala legal/especial/genial; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-incrivel",
+      "doneHref": "/posts/post-inspecao-palavra-incrivel.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/incr%C3%ADvel",
+        "https://en.wiktionary.org/wiki/incredibilis",
+        "/posts/post-inspecao-palavra-legal.html",
+        "/posts/post-inspecao-palavra-genial.html",
+        "/posts/post-inspecao-palavra-especial.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 48 — incredibilis × elogio BR; escala sem fichas mortas (maravilhoso/fantástico)."
+    },
+    {
+      "id": "palavra-coracao",
+      "title": "Coração — órgão, afeto, centro, coragem e Faça o melhor!",
+      "titleEn": "Coração — organ, affect, center, courage and Do your best!",
+      "titleEs": "Coração — órgano, afecto, centro, coraje y ¡Haz lo mejor!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: coração (lat. cor) — órgão, afeto, centro, coragem; elo mãos/esquerdo; Faça o melhor de coração.",
+      "whyEn": "Words: coração (Lat. cor) — organ, affect, center, courage; hands/esquerdo; Do your best from the heart.",
+      "whyEs": "Palabras: coração (lat. cor) — órgano, afecto, centro, coraje; manos/esquerdo; Haz lo mejor de corazón.",
+      "suggestedSlug": "inspecao-palavra-coracao",
+      "doneHref": "/posts/post-inspecao-palavra-coracao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/cora%C3%A7%C3%A3o",
+        "https://pt.wikipedia.org/wiki/Cora%C3%A7%C3%A3o",
+        "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
+        "/posts/post-inspecao-palavra-esquerdo.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 35 — peito × mãos (complementaridade); sem dogma anatómico."
+    },
+    {
+      "id": "palavra-fantastico",
+      "title": "Fantástico — fantasia, elogio BR e Faça o melhor!",
+      "titleEn": "Fantástico — fantasy, BR praise and Do your best!",
+      "titleEs": "Fantástico — fantasía, elogio BR y ¡Haz lo mejor!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: fantástico (phantasticus/fantasia) — correcção de fantisico; eixos fantasia e elogio BR; escala legal/genial/maravilhoso.",
+      "whyEn": "Words: fantástico (phantasticus/fantasy) — typo fix from fantisico; fantasy and BR praise; scale legal/genial/maravilhoso.",
+      "whyEs": "Palabras: fantástico (phantasticus/fantasía) — corrección de fantisico; fantasía y elogio BR; escala legal/genial/maravilhoso.",
+      "suggestedSlug": "inspecao-palavra-fantastico",
+      "doneHref": "/posts/post-inspecao-palavra-fantastico.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/fant%C3%A1stico",
+        "https://pt.wiktionary.org/wiki/fantasia",
+        "/posts/post-inspecao-palavra-genial.html",
+        "/posts/post-inspecao-palavra-maravilhoso.html",
+        "/posts/post-inspecao-palavra-legal.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 50 — fantisico → fantástico; escala de elogio."
+    },
+    {
+      "id": "palavra-memoravel",
+      "title": "Memorável — o que fica na memória e o elogio com rasto",
+      "titleEn": "Memorável — what sticks in memory and praise with a trace",
+      "titleEs": "Memorável — lo que queda en la memoria y el elogio con rastro",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: memorável (lat. memorabilis) — retenção digna; elogio BR; ≠ escala genial/especial; Faça o melhor!",
+      "whyEn": "Words: memorável (Lat. memorabilis) — worthy retention; BR praise; ≠ genial/especial scale; Do your best!",
+      "whyEs": "Palabras: memorável (lat. memorabilis) — retención digna; elogio BR; ≠ escala genial/especial; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-memoravel",
+      "doneHref": "/posts/post-inspecao-palavra-memoravel.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/memor%C3%A1vel",
+        "https://en.wiktionary.org/wiki/memorabilis",
+        "/posts/post-inspecao-palavra-genial.html",
+        "/posts/post-inspecao-palavra-especial.html",
+        "/posts/post-inspecao-palavra-livro.html",
+        "/posts/post-inspecao-filme-divertida-mente.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 36 — memorabilis; retenção ≠ intensidade."
+    },
+    {
+      "id": "expressao-ausdhuashduas",
+      "title": "ausdhuashduas — riso online e oralidade BR",
+      "titleEn": "ausdhuashduas — online laughter and Brazilian orality",
+      "titleEs": "ausdhuashduas — risa online y oralidad BR",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: nome lab do riso tipado; substitui kkkk… e «risas online»; elos jesusamando, meudeusdoceu, aff.",
+      "whyEn": "Sayings: lab name for typed laughter; replaces kkkk… and online laughs; links jesusamando, meudeusdoceu, aff.",
+      "whyEs": "Dichos: nombre lab de la risa tipada; sustituye kkkk… y «risas online»; vínculos jesusamando, meudeusdoceu, aff.",
+      "suggestedSlug": "inspecao-expressao-ausdhuashduas",
+      "doneHref": "/posts/post-inspecao-expressao-ausdhuashduas.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-jesusamando.html",
+        "/posts/post-inspecao-expressao-meudeusdoceu.html",
+        "/posts/post-inspecao-palavra-aff.html",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 6 Expressões — riso tipado / kkkk → ausdhuashduas."
     }
   ]
 }
