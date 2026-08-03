@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:15:53.342Z",
+  "updatedAt": "2026-08-03T16:18:36.170Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4262,6 +4262,28 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 93 — grafia canónica cinzeiro (pedido Cinzerio)."
+    },
+    {
+      "id": "palavra-objetos",
+      "title": "Objetos — o que fica diante e o foco da ficha",
+      "titleEn": "Objetos — what stands before and the sheet’s focus",
+      "titleEs": "Objetos — lo que queda delante y el foco de la ficha",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: objetos (lat. obiectum) — plural; meta-lab do objeto inspecionado; Faça o melhor!",
+      "whyEn": "Words: objetos (Lat. obiectum) — plural; meta-lab inspected object; Do your best!",
+      "whyEs": "Palabras: objetos (lat. obiectum) — plural; meta-lab del objeto inspeccionado; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-objetos",
+      "doneHref": "/posts/post-inspecao-palavra-objetos.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/objeto",
+        "/posts/post-inspecao-palavra-verdade.html",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 94 — um objeto por ficha; plural pede ordem."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:15:53.346Z",
+  "updatedAt": "2026-08-03T16:18:36.173Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -504,6 +504,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-caminho.html"
+    },
+    {
+      "id": "objetos",
+      "word": "objetos",
+      "simple": "Lat. obiectum — plural de objeto; no lab, o foco do «objeto inspecionado»; Faça o melhor neste objeto.",
+      "simpleEn": "Lat. obiectum — plural of objeto; in the lab, focus of the inspected object; Do your best on this object.",
+      "simpleEs": "Lat. obiectum — plural de objeto; en el lab, el foco del «objeto inspeccionado»; Haz lo mejor en este objeto.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-objetos.html"
     },
     {
       "id": "cinta",

@@ -1729,6 +1729,25 @@
     "seriesLabel": "Cinzeiro · palavra"
   },
   {
+    "title": "Inspeção: Objetos — o que fica diante e o foco da ficha",
+    "titleEn": "Inspection: Objetos — what stands before and the sheet’s focus",
+    "titleEs": "Inspección: Objetos — lo que queda delante y el foco de la ficha",
+    "excerpt": "Palavras: «objetos» (lat. *obiectum*) — plural de objeto; meta-lab do objeto inspecionado; Faça o melhor!",
+    "excerptEn": "Words: “objetos” (Lat. *obiectum*) — plural of objeto; meta-lab inspected object; Do your best!",
+    "excerptEs": "Palabras: «objetos» (lat. *obiectum*) — plural de objeto; meta-lab del objeto inspeccionado; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-objetos",
+    "url": "/posts/post-inspecao-palavra-objetos.html",
+    "date": "2026-08-03T17:20:00.000Z",
+    "filename": "posts/post-inspecao-palavra-objetos.html",
+    "coverImage": "/imagens/inspecoes/objetos-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 94,
+    "seriesLabel": "Objetos · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",
