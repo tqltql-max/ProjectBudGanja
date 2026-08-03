@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:57:36.999Z",
+  "updatedAt": "2026-08-03T15:59:13.158Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4174,6 +4174,29 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 89 — irmã leve de muitoobrigado."
+    },
+    {
+      "id": "palavra-daninha",
+      "title": "Daninha — juízo de cultivo e planta viva",
+      "titleEn": "Daninha — cultivation judgment and living plant",
+      "titleEs": "Daninha — juicio de cultivo y planta viva",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: daninha (dano+-inha) — planta daninha como juízo de lugar; planta/cultivo/selvagem; Faça o melhor!",
+      "whyEn": "Words: daninha (dano+-inha) — weed as place-judgment; planta/cultivo/selvagem; Do your best!",
+      "whyEs": "Palabras: daninha (dano+-inha) — planta daninha como juicio de lugar; planta/cultivo/selvagem; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-daninha",
+      "doneHref": "/posts/post-inspecao-palavra-daninha.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/daninha",
+        "/posts/post-inspecao-palavra-planta.html",
+        "/cultivo/",
+        "/posts/post-inspecao-palavra-selvagem.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 90 — weed ≠ maconha; juízo relativo ao plano."
     }
   ]
 }

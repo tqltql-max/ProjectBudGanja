@@ -1653,6 +1653,25 @@
     "seriesLabel": "Valeu · palavra"
   },
   {
+    "title": "Inspeção: Daninha — juízo de cultivo e planta viva",
+    "titleEn": "Inspection: Daninha — cultivation judgment and living plant",
+    "titleEs": "Inspección: Daninha — juicio de cultivo y planta viva",
+    "excerpt": "Palavras: «daninha» (*dano* + *-inha*) — planta daninha como juízo de lugar; elos planta, cultivo, selvagem; Faça o melhor!",
+    "excerptEn": "Words: “daninha” (*dano* + *-inha*) — weed as place-judgment; links planta, cultivo, selvagem; Do your best!",
+    "excerptEs": "Palabras: «daninha» (*dano* + *-inha*) — planta daninha como juicio de lugar; vínculos planta, cultivo, selvagem; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-daninha",
+    "url": "/posts/post-inspecao-palavra-daninha.html",
+    "date": "2026-08-03T16:10:00.000Z",
+    "filename": "posts/post-inspecao-palavra-daninha.html",
+    "coverImage": "/imagens/inspecoes/daninha-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 90,
+    "seriesLabel": "Daninha · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",

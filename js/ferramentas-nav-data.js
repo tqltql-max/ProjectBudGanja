@@ -239,6 +239,22 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Citrus × sinensis* — laranja doce: crédito ao fruto inteiro e sumo fresco; separar concentrados, néctares e refrigerantes «de laranja»."
             },
             {
+              "label": "Inspeção: meudeusdoceu — substituída por jesusudavi",
+              "tileLabel": "Inspeção: meudeusdoceu — substi…",
+              "href": "/posts/post-inspecao-expressao-meudeusdoceu.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-meudeusdoceu",
+              "description": "Expressões: meudeusdoceu — nome lab antigo; ofício migrado para jesusudavi (meu Deus do céu / assombro alto)."
+            },
+            {
+              "label": "Inspeção: jesusudavi — assombro alto (substitui meudeusdoceu)",
+              "tileLabel": "Inspeção: jesusudavi — assombro…",
+              "href": "/posts/post-inspecao-expressao-jesusudavi.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-jesusudavi",
+              "description": "Expressões: «jesusudavi» — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala aff × jesusamando; Faça o melhor!"
+            },
+            {
               "label": "Inspeção: Planta — Carqueja — flavonoides e amargor nativo",
               "tileLabel": "Inspeção: Planta — Carqueja — f…",
               "href": "/posts/post-inspecao-planta-carqueja.html",
@@ -253,6 +269,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-acai",
               "description": "Relatório educacional de Açaí (*Euterpe oleracea Mart.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: deu certo, galera — celebração colectiva e oralidade BR",
+              "tileLabel": "Inspeção: deu certo, galera — c…",
+              "href": "/posts/post-inspecao-expressao-deu-certo-galera.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-deu-certo-galera",
+              "description": "Expressões: «deu certo, galera» / deucer galerra — celebração colectiva; contraste com aff e buguei; elos genial, jesusamando, meudeusdoceu, Faça o melhor!"
             },
             {
               "label": "Inspeção: Planta — Cavalinha — sílica e remineralizante",
@@ -319,6 +343,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Expressões: «muitoobrigado» — gratidão reforçada; étimo obligare × memória da escravidão/cana; elos gesto, respeito, jesusamando; Faça o melhor!"
             },
             {
+              "label": "Inspeção: Erva — substituída por planta / plantas",
+              "tileLabel": "Inspeção: Erva — substituída po…",
+              "href": "/posts/post-inspecao-palavra-erva.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-erva",
+              "description": "Palavras: «erva» — ficha antiga; ofício migrado para planta / plantas (hub e Farmácia Viva)."
+            },
+            {
               "label": "Inspeção: Planta — Guaco — cumarina e trepadeira respiratória",
               "tileLabel": "Inspeção: Planta — Guaco — cuma…",
               "href": "/posts/post-inspecao-planta-guaco.html",
@@ -335,6 +367,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Abacaxi (*Ananas comosus (L.) Merr.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
+              "label": "Inspeção: filho de deus — título, oralidade e dignidade",
+              "tileLabel": "Inspeção: filho de deus — títul…",
+              "href": "/posts/post-inspecao-expressao-filho-de-deus.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-filho-de-deus",
+              "description": "Expressões: «filho de deus» — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; sem proselitismo; Faça o melhor!"
+            },
+            {
               "label": "Inspeção: Planta — Hortelã — mentol e mentona",
               "tileLabel": "Inspeção: Planta — Hortelã — me…",
               "href": "/posts/post-inspecao-planta-hortela.html",
@@ -349,6 +389,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-goiaba",
               "description": "*Psidium guajava* — fruto brasileiro de quintal rico em vitamina C e fibra; separar goiaba inteira de goiabada, polpas e néctares industriais."
+            },
+            {
+              "label": "Inspeção: eojsofaorforap — eu só falo a verdade",
+              "tileLabel": "Inspeção: eojsofaorforap — eu s…",
+              "href": "/posts/post-inspecao-expressao-eojsofaorforap.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-eojsofaorforap",
+              "description": "Expressões: eojsofaorforap — nome lab de «eu só falo a verdade»; substitui o rótulo plano; elos verdade, gesto; Faça o melhor!"
             },
             {
               "label": "Inspeção: Planta — Boldo — falso-boldo brasileiro",
@@ -479,6 +527,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Carapa guianensis* — óleo de sementes rico em limonoides (andirobina); tradição tópica e repelente."
             },
             {
+              "label": "Inspeção: Simbiose — a palavra do viver juntos",
+              "tileLabel": "Inspeção: Simbiose — a palavra …",
+              "href": "/posts/post-inspecao-palavra-simbiose.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-simbiose",
+              "description": "Palavras: «simbiose» (grego *syn* + *bíōsis*) — coabitação de vidas, solo vivo, Venom/«nós» e ofício humano×assistente («você»); Faça o melhor!"
+            },
+            {
               "label": "Inspeção: Planta — Jambu — espilanthol e anestesia oral",
               "tileLabel": "Inspeção: Planta — Jambu — espi…",
               "href": "/posts/post-inspecao-planta-jambu.html",
@@ -575,6 +631,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «genial» — engenho no projecto BudGanja; escala com legal, maravilhoso e fantástico; Faça o melhor! ≠ seja génio; culto vazio = ressalva."
             },
             {
+              "label": "Inspeção: Buguei — do inseto ao «deu ruim» e Faça o melhor!",
+              "tileLabel": "Inspeção: Buguei — do inseto ao…",
+              "href": "/posts/post-inspecao-palavra-buguei.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-buguei",
+              "description": "Palavras: «buguei» — de bug (inseto) à falha e ao peito; como o sentido foi alterado para parecer ruim; Faça o melhor! depois do tranco."
+            },
+            {
               "label": "Inspeção: Coração — órgão, afeto, centro, coragem e Faça o melhor!",
               "tileLabel": "Inspeção: Coração — órgão, afet…",
               "href": "/posts/post-inspecao-palavra-coracao.html",
@@ -591,6 +655,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «memorável» (lat. memorabilis) — digno de memória; elogio BR; eixo retenção ≠ escala legal/genial/maravilhoso/fantástico; Faça o melhor!"
             },
             {
+              "label": "Inspeção: Multitask — empréstimo, parece×é e correção de ofício",
+              "tileLabel": "Inspeção: Multitask — empréstim…",
+              "href": "/posts/post-inspecao-palavra-multitask.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-multitask",
+              "description": "Palavras: «multitask» / «multitarefa» — empréstimo EN→BR; o que parece vs o que é; correção: ≠ fazer tudo bem ao mesmo tempo; Faça o melhor! com método."
+            },
+            {
               "label": "Inspeção: Incrível — incredibilis, elogio BR e a escala legal→genial",
               "tileLabel": "Inspeção: Incrível — incredibil…",
               "href": "/posts/post-inspecao-palavra-incrivel.html",
@@ -605,6 +677,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-fruto",
               "description": "Palavras: «fruto» (lat. *fructus*) — órgão botânico, plural frutos, contraste com fruta, figurado «frutos do trabalho»; elos plantas/simbiose; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Inacreditável — beyond belief, elogio BR e Faça o melhor!",
+              "tileLabel": "Inspeção: Inacreditável — beyon…",
+              "href": "/posts/post-inspecao-palavra-inacreditavel.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-inacreditavel",
+              "description": "Palavras: «inacreditável» (in- + acreditável ← credere) — incredulidade e elogio BR «beyond belief»; escala com incrível, fabuloso e genial; Faça o melhor!"
             },
             {
               "label": "Inspeção: Respeito — olhar de novo, prática social e Faça o melhor!",
@@ -735,22 +815,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «fabuloso» (lat. *fābula* / *fabulous*) — elogio BR quotidiano; escala com genial, fantástico, incrível, maravilhoso, magnífico; tipografia fabsulkaoso → fabuloso."
             },
             {
-              "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
-              "tileLabel": "Inspeção: Eletrizante — carga, …",
-              "href": "/posts/post-inspecao-palavra-eletrizante.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-eletrizante",
-              "description": "Palavras: «eletrizante» (eletro- + intensidade) — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo → eletrizante; elos fogo e escala de louvor."
-            },
-            {
-              "label": "Inspeção: Inacreditável — beyond belief, elogio BR e Faça o melhor!",
-              "tileLabel": "Inspeção: Inacreditável — beyon…",
-              "href": "/posts/post-inspecao-palavra-inacreditavel.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-inacreditavel",
-              "description": "Palavras: «inacreditável» (in- + acreditável ← credere) — incredulidade e elogio BR «beyond belief»; escala com incrível, fabuloso e genial; Faça o melhor!"
-            },
-            {
               "label": "Inspeção: Fantástico — fantasia, elogio BR «fantástico!» e Faça o melhor!",
               "tileLabel": "Inspeção: Fantástico — fantasia…",
               "href": "/posts/post-inspecao-palavra-fantastico.html",
@@ -767,6 +831,70 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «planta» (lat. *planta* / *plantare*) — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; sem listar espécies."
             },
             {
+              "label": "Inspeção: Inspiração — sopro, ideia acesa e Faça o melhor!",
+              "tileLabel": "Inspeção: Inspiração — sopro, i…",
+              "href": "/posts/post-inspecao-palavra-inspiracao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-inspiracao",
+              "description": "Palavras: «inspiração» (lat. *īnspīrātiō*) — sopro × ideia BR; elos criatividade, gesto, esperança; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Pular — salto, omissão e derivações",
+              "tileLabel": "Inspeção: Pular — salto, omissã…",
+              "href": "/posts/post-inspecao-palavra-pular.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-pular",
+              "description": "Palavras: «pular» (lat. *pullāre*) — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar, backspace, já; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Interruptor — ligar, cortar e derivações",
+              "tileLabel": "Inspeção: Interruptor — ligar, …",
+              "href": "/posts/post-inspecao-palavra-interruptor.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-interruptor",
+              "description": "Palavras: «interruptor» (lat. *interrumpere*) — ligar/desligar × corte de fluxo; derivações interromper/interrupção; elos sinal, gesto, eletrizante; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Sempre — duração, hábito e Faça o melhor!",
+              "tileLabel": "Inspeção: Sempre — duração, háb…",
+              "href": "/posts/post-inspecao-palavra-sempre.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-sempre",
+              "description": "Palavras: «sempre» (lat. *semper*) — duração × hábito × promessa BR; elos já, prosseguir, caminho; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Prosseguir — continuar, retomar e Faça o melhor!",
+              "tileLabel": "Inspeção: Prosseguir — continua…",
+              "href": "/posts/post-inspecao-palavra-prosseguir.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-prosseguir",
+              "description": "Palavras: «prosseguir» (lat. *prōsequī*) — continuar × retomar BR; derivações prosseguimento; elos sempre, já, caminho; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Valeu — gratidão leve e fecho oral BR",
+              "tileLabel": "Inspeção: Valeu — gratidão leve…",
+              "href": "/posts/post-inspecao-palavra-valeu.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-valeu",
+              "description": "Palavras: «valeu» (de *valer* ← lat. *valēre*) — gratidão leve BR; elos muitoobrigado, gesto, respeito; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Daninha — juízo de cultivo e planta viva",
+              "tileLabel": "Inspeção: Daninha — juízo de cu…",
+              "href": "/posts/post-inspecao-palavra-daninha.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-daninha",
+              "description": "Palavras: «daninha» (*dano* + *-inha*) — planta daninha como juízo de lugar; elos planta, cultivo, selvagem; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
+              "tileLabel": "Inspeção: Eletrizante — carga, …",
+              "href": "/posts/post-inspecao-palavra-eletrizante.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-eletrizante",
+              "description": "Palavras: «eletrizante» (eletro- + intensidade) — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo → eletrizante; elos fogo e escala de louvor."
+            },
+            {
               "label": "Inspeção: Legal — lei, gíria BR «bacana» e Faça o melhor!",
               "tileLabel": "Inspeção: Legal — lei, gíria BR…",
               "href": "/posts/post-inspecao-palavra-legal.html",
@@ -781,38 +909,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-expressao-ausdhuashduas",
               "description": "Expressões: ausdhuashduas — nome lab do riso tipado BR; substitui kkkk… e «risas online»; elos jesusamando, meudeusdoceu, aff, Faça o melhor!"
-            },
-            {
-              "label": "Inspeção: Multitask — empréstimo, parece×é e correção de ofício",
-              "tileLabel": "Inspeção: Multitask — empréstim…",
-              "href": "/posts/post-inspecao-palavra-multitask.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-multitask",
-              "description": "Palavras: «multitask» / «multitarefa» — empréstimo EN→BR; o que parece vs o que é; correção: ≠ fazer tudo bem ao mesmo tempo; Faça o melhor! com método."
-            },
-            {
-              "label": "Inspeção: deu certo, galera — celebração colectiva e oralidade BR",
-              "tileLabel": "Inspeção: deu certo, galera — c…",
-              "href": "/posts/post-inspecao-expressao-deu-certo-galera.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-expressao-deu-certo-galera",
-              "description": "Expressões: «deu certo, galera» / deucer galerra — celebração colectiva; contraste com aff e buguei; elos genial, jesusamando, meudeusdoceu, Faça o melhor!"
-            },
-            {
-              "label": "Inspeção: Buguei — do inseto ao «deu ruim» e Faça o melhor!",
-              "tileLabel": "Inspeção: Buguei — do inseto ao…",
-              "href": "/posts/post-inspecao-palavra-buguei.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-buguei",
-              "description": "Palavras: «buguei» — de bug (inseto) à falha e ao peito; como o sentido foi alterado para parecer ruim; Faça o melhor! depois do tranco."
-            },
-            {
-              "label": "Inspeção: meudeusdoceu — assombro alto e oralidade BR",
-              "tileLabel": "Inspeção: meudeusdoceu — assomb…",
-              "href": "/posts/post-inspecao-expressao-meudeusdoceu.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-expressao-meudeusdoceu",
-              "description": "Expressões: «meudeusdoceu» — meu Deus do céu colado; assombro alto; escala com aff e jesusamando; Faça o melhor!"
             },
             {
               "label": "Inspeção: Fogo — elemento, ardor, cuidado e Faça o melhor!",
@@ -1141,14 +1237,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-guia-quimiotipos-cannabis",
               "description": "Resumo da Aula 10 XIV (Diogo): metabólitos, biossíntese, cinco quimiotipos e literacia fitoterápico × isolado. Não é laudo nem protocolo."
-            },
-            {
-              "label": "Inspeção: Simbiose — a palavra do viver juntos",
-              "tileLabel": "Inspeção: Simbiose — a palavra …",
-              "href": "/posts/post-inspecao-palavra-simbiose.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-simbiose",
-              "description": "Palavras: «simbiose» (grego *syn* + *bíōsis*) — coabitação de vidas, mutualismo popular, solo vivo e metáfora cultural (Venom / «nós»)."
             },
             {
               "label": "Inspeção: Guia meditação — modular o endocanabinoidoma (via endógena)",
@@ -1534,14 +1622,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-droga",
               "description": "Palavras: «droga» — originalidade farmacêutica/medicinal (eco de phármakon) coberta pelo sentido de ilícito, vício e crime."
-            },
-            {
-              "label": "Inspeção: Erva — do sentido botânico amplo ao eufemismo",
-              "tileLabel": "Inspeção: Erva — do sentido bot…",
-              "href": "/posts/post-inspecao-palavra-erva.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-erva",
-              "description": "Palavras: «erva» — originalidade (planta herbácea, chá, tempero) coberta pelo eufemismo de cannabis; prejuízo à literacia do catálogo medicinal."
             },
             {
               "label": "Inspeção: Marijuana — do nome popular à arma da proibição",

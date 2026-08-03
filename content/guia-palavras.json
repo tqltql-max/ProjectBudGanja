@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:57:37.003Z",
+  "updatedAt": "2026-08-03T15:59:13.161Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -354,6 +354,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-selvagem.html"
+    },
+    {
+      "id": "daninha",
+      "word": "daninha",
+      "simple": "Dano + -inha — planta daninha como juízo de lugar no cultivo; elos planta/selvagem; Faça o melhor com o juízo certo.",
+      "simpleEn": "Dano + -inha — weed as place-judgment in cultivation; links planta/selvagem; Do your best with the right judgment.",
+      "simpleEs": "Dano + -inha — planta daninha como juicio de lugar; vínculos planta/selvagem; Haz lo mejor con el juicio correcto.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-daninha.html"
     },
     {
       "id": "multitarefa",
