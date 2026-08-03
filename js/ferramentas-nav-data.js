@@ -904,6 +904,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Manual: infusão e decoção caseiras — material, tempos, proporções de ofício, segurança e elos com Plantas; Faça o melhor!"
             },
             {
+              "label": "Inspeção: Cinta — faixa que cinge e suporte no cultivo",
+              "tileLabel": "Inspeção: Cinta — faixa que cin…",
+              "href": "/posts/post-inspecao-palavra-cinta.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-cinta",
+              "description": "Palavras: «cinta» (lat. *cincta* / *cingere*) — faixa que segura; tutoramento com gesto; ≠ sinta; Faça o melhor!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",

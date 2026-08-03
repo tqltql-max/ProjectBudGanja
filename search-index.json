@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:05:35.351Z",
+  "updatedAt": "2026-08-03T16:09:43.715Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Cinta — faixa que cinge e suporte no cultivo",
+      "url": "/posts/post-inspecao-palavra-cinta.html",
+      "excerpt": "Palavras: «cinta» (lat. *cincta* / *cingere*) — faixa que segura; tutoramento com gesto; ≠ sinta; Faça o melhor!",
+      "text": "Inspeção: Cinta — faixa que cinge e suporte no cultivo Palavras: «cinta» (lat. *cincta* / *cingere*) — faixa que segura; tutoramento com gesto; ≠ sinta; Faça o melhor! inspecao ## Escopo\n\nInspeção editorial da palavra **cinta** — no português do Brasil, a **faixa** ou **banda** que **cinge**, **segura** ou **amarra**: cintura, correia, tira, e no ofício de cultivo a **cinta / fita** que tutora ou marca a [planta](/posts/post-inspecao-palavra-planta.html) sem a estrangular. Esta ficha cobre o **objeto**, o eixo **suporte × cuidado**, a distinção **cinta ≠ sinta** e o falso amigo **cinta** (indonésio «amor»), e o fecho [Faça o melhor!](/posts/post-inspecao-expressao-faca-o-melhor.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · cinta](https://pt.wiktionary.org/wiki/cinta), [cingir](https://pt.wiktionary.org/wiki/cingir), série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). **Ficha ≠ manual de tutoramento nem catálogo de fitas.** Tom: Inspetor BudGanja — *cinta* nomeia o que **envolve e segura**; no lab, o [gesto](/posts/post-inspecao-palavra-gesto.html) decide se segura ou fere. Sem afiliação comercial.\n\n## 1. Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **cinta** |\n| Classe | Substantivo feminino (também formas do verbo *cintar* / particípio de *cingir*) |\n| Étimo (trabalho) | lat. *cincta* / família de *cingere* («cingir, rodear») → pt. *cinta*, esp. *cinta*, gal. *cinta* — confiança: **alta** |\n| Família | *cintura* · *cinturão* · *cintar* · *cingir* · *cinto* |\n| Cognatos / paralelos | esp. *cinta* · fr. *ceinture* (cintura/cinto) · ing. *belt* / *tape* / *strap* (conforme sentido) |\n| Tipo BudGanja | Palavra — suporte / faixa × ofício vivo |\n| Elo ofício | [gesto](/posts/post-inspecao-palavra-gesto.html) · [cultivo](/cultivo/) · [planta](/posts/post-inspecao-palavra-planta.html) · [risco](/posts/post-inspecao-palavra-risco.html) |\n| Elo léxico | [sinal](/posts/post-inspecao-palavra-sinal.html) · [cami"
     },
     {
       "title": "Inspeção: Daninha — juízo de cultivo e planta viva",
@@ -2244,6 +2250,12 @@
       "url": "/posts/post-inspecao-palavra-caminho.html",
       "excerpt": "Via por onde se anda — no laboratório, a palavra que liga pesquisa, vida e travessia.",
       "text": "Caminho Via por onde se anda — no laboratório, a palavra que liga pesquisa, vida e travessia. lexico guia palavras glossário caminho"
+    },
+    {
+      "title": "cinta",
+      "url": "/posts/post-inspecao-palavra-cinta.html",
+      "excerpt": "Lat. cincta / cingere — faixa que segura; no cultivo, tutor com folga; ≠ sinta; Faça o melhor neste aperto.",
+      "text": "cinta Lat. cincta / cingere — faixa que segura; no cultivo, tutor com folga; ≠ sinta; Faça o melhor neste aperto. lexico guia palavras glossário cinta"
     },
     {
       "title": "Camomila",

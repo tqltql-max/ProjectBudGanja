@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:05:24.966Z",
+  "updatedAt": "2026-08-03T16:09:32.928Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -504,6 +504,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-caminho.html"
+    },
+    {
+      "id": "cinta",
+      "word": "cinta",
+      "simple": "Lat. cincta / cingere — faixa que segura; no cultivo, tutor com folga; ≠ sinta; Faça o melhor neste aperto.",
+      "simpleEn": "Lat. cincta / cingere — band that holds; in cultivation, stake with slack; ≠ sinta; Do your best on this grip.",
+      "simpleEs": "Lat. cincta / cingere — banda que sujeta; en cultivo, tutor con holgura; ≠ sinta; Haz lo mejor en este apriete.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-cinta.html"
     },
     {
       "id": "camomila",

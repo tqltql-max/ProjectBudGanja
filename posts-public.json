@@ -1691,6 +1691,25 @@
     "seriesLabel": "Guia · chá de plantas · preparo"
   },
   {
+    "title": "Inspeção: Cinta — faixa que cinge e suporte no cultivo",
+    "titleEn": "Inspection: Cinta — girding band and cultivation support",
+    "titleEs": "Inspección: Cinta — banda que ciñe y soporte en el cultivo",
+    "excerpt": "Palavras: «cinta» (lat. *cincta* / *cingere*) — faixa que segura; tutoramento com gesto; ≠ sinta; Faça o melhor!",
+    "excerptEn": "Words: “cinta” (Lat. *cincta* / *cingere*) — band that holds; staking with craft; ≠ sinta; Do your best!",
+    "excerptEs": "Palabras: «cinta» (lat. *cincta* / *cingere*) — banda que sujeta; tutorado con oficio; ≠ sinta; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-cinta",
+    "url": "/posts/post-inspecao-palavra-cinta.html",
+    "date": "2026-08-03T16:45:00.000Z",
+    "filename": "posts/post-inspecao-palavra-cinta.html",
+    "coverImage": "/imagens/inspecoes/cinta-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 92,
+    "seriesLabel": "Cinta · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",

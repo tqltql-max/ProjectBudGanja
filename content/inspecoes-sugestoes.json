@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:05:24.949Z",
+  "updatedAt": "2026-08-03T16:09:32.924Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4218,6 +4218,28 @@
         "/posts/post-inspecao-guia-farmacia-viva.html"
       ],
       "notes": "Cap. 91 — não é bula; cannabis fora do chá livre."
+    },
+    {
+      "id": "palavra-cinta",
+      "title": "Cinta — faixa que cinge e suporte no cultivo",
+      "titleEn": "Cinta — girding band and cultivation support",
+      "titleEs": "Cinta — banda que ciñe y soporte en el cultivo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: cinta (*cingere*) — faixa/suporte; gesto no tutoramento; ≠ sinta; Faça o melhor!",
+      "whyEn": "Words: cinta (*cingere*) — band/support; staking craft; ≠ sinta; Do your best!",
+      "whyEs": "Palabras: cinta (*cingere*) — banda/soporte; oficio de tutorado; ≠ sinta; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-cinta",
+      "doneHref": "/posts/post-inspecao-palavra-cinta.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/cinta",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/cultivo/",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 92 — ≠ cinta ID (amor); folga no aperto."
     }
   ]
 }
