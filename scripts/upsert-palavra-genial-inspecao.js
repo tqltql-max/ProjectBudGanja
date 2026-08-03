@@ -85,10 +85,14 @@ async function main() {
       sources: [
         'https://pt.wiktionary.org/wiki/genial',
         '/posts/post-inspecao-palavra-criatividade.html',
+        '/posts/post-inspecao-palavra-legal.html',
+        '/posts/post-inspecao-palavra-maravilhoso.html',
+        '/posts/post-inspecao-palavra-fantastico.html',
+        '/posts/post-inspecao-palavra-idolo.html',
         '/posts/post-inspecao-expressao-faca-o-melhor.html',
         '/posts/post-inspecao-figura-ayrton-senna.html'
       ],
-      notes: 'Cap. 30 — falso amigo EN genial (amável).'
+      notes: 'Cap. 30 — falso amigo EN genial (amável); escala legal → genial → maravilhoso / fantástico; contraste ídolo.'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);
