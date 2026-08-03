@@ -72,15 +72,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Língua portuguesa — originalidade, para que serve e Faça o melhor!',
-      titleEn: 'Portuguese language — originality, purpose and Do your best!',
-      titleEs: 'Lengua portuguesa — originalidad, para qué sirve y ¡Haz lo mejor!',
+      title: 'Língua portuguesa — originalidade, alterações no tempo e Faça o melhor!',
+      titleEn: 'Portuguese language — originality, changes over time and Do your best!',
+      titleEs: 'Lengua portuguesa — originalidad, cambios en el tiempo y ¡Haz lo mejor!',
       tipo: 'palavra',
       priority: 1,
       status: 'feita',
-      why: 'Língua do projecto: originalidade (raiz×BR×criação); para que serve; Faça o melhor nesta língua.',
-      whyEn: 'Project language: originality; purpose; Do your best in this language.',
-      whyEs: 'Lengua del proyecto: originalidad; para qué sirve; Haz lo mejor en esta lengua.',
+      why: 'Língua do projecto: originalidade; alterações ao longo do tempo; para que serve; Faça o melhor nesta língua.',
+      whyEn: 'Project language: originality; changes over time; purpose; Do your best in this language.',
+      whyEs: 'Lengua del proyecto: originalidad; cambios en el tiempo; para qué sirve; Haz lo mejor en esta lengua.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -91,7 +91,7 @@ async function main() {
         '/posts/post-inspecao-expressao-faca-o-melhor.html',
         '/guia/palavras.html'
       ],
-      notes: 'Cap. 32 — meio do laboratório inteiro.'
+      notes: 'Cap. 32 — meio do laboratório; eixo temporal (latim→BR→digital).'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);
@@ -108,11 +108,11 @@ async function main() {
       id: 'lingua-portuguesa',
       word: 'língua portuguesa',
       simple:
-        'Meio do Inspetor BudGanja: originalidade (raiz × BR × criação); serve para nomear, inspecionar e cuidar; Faça o melhor nesta língua.',
+        'Meio do Inspetor BudGanja: originalidade; alterações no tempo (latim → BR → digital); nomear, inspecionar, cuidar; Faça o melhor nesta língua.',
       simpleEn:
-        'Medium of Inspetor BudGanja: originality; serves to name, inspect and care; Do your best in this language.',
+        'Medium of Inspetor BudGanja: originality; changes over time (Latin → BR → digital); name, inspect, care; Do your best in this language.',
       simpleEs:
-        'Medio de Inspetor BudGanja: originalidad; sirve para nombrar, inspeccionar y cuidar; Haz lo mejor en esta lengua.',
+        'Medio de Inspetor BudGanja: originalidad; cambios en el tiempo (latín → BR → digital); nombrar, inspeccionar, cuidar; Haz lo mejor en esta lengua.',
       group: 'lexico',
       fromTitle: false,
       href

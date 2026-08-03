@@ -30,11 +30,11 @@ async function main() {
   <rect width="1200" height="630" fill="url(#g)"/>
   <rect x="0" y="0" width="1200" height="6" fill="url(#stripe)"/>
   <circle cx="600" cy="240" r="240" fill="url(#glow)"/>
-  <text x="600" y="90" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#dfc262" letter-spacing="4">PALAVRAS · ORIGINALIDADE · PARA QUE SERVE</text>
+  <text x="600" y="90" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#dfc262" letter-spacing="4">PALAVRAS · ORIGINALIDADE · TEMPO</text>
   <text x="600" y="280" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="52" font-weight="700" fill="#fff8e0">língua portuguesa</text>
-  <text x="600" y="360" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="rgba(200,210,220,0.95)">raiz · travessia · BR · ofício da palavra</text>
+  <text x="600" y="360" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="rgba(200,210,220,0.95)">latim · travessia · BR · digital</text>
   <text x="600" y="500" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" fill="#c8b8a0">faça o melhor nesta língua</text>
-  <text x="600" y="560" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#dfc262">nomear · inspecionar · cuidar · partilhar</text>
+  <text x="600" y="560" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#dfc262">mudança ≠ decadência · caminho</text>
 </svg>`);
 
   await sharp(bg).jpeg({ quality: 84, mozjpeg: true }).toFile(OUT);

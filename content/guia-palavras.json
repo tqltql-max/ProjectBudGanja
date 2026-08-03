@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:03:15.191Z",
+  "updatedAt": "2026-08-03T13:06:10.476Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -148,9 +148,9 @@
     {
       "id": "lingua-portuguesa",
       "word": "língua portuguesa",
-      "simple": "Meio do Inspetor BudGanja: originalidade (raiz × BR × criação); serve para nomear, inspecionar e cuidar; Faça o melhor nesta língua.",
-      "simpleEn": "Medium of Inspetor BudGanja: originality; serves to name, inspect and care; Do your best in this language.",
-      "simpleEs": "Medio de Inspetor BudGanja: originalidad; sirve para nombrar, inspeccionar y cuidar; Haz lo mejor en esta lengua.",
+      "simple": "Meio do Inspetor BudGanja: originalidade; alterações no tempo (latim → BR → digital); nomear, inspecionar, cuidar; Faça o melhor nesta língua.",
+      "simpleEn": "Medium of Inspetor BudGanja: originality; changes over time (Latin → BR → digital); name, inspect, care; Do your best in this language.",
+      "simpleEs": "Medio de Inspetor BudGanja: originalidad; cambios en el tiempo (latín → BR → digital); nombrar, inspeccionar, cuidar; Haz lo mejor en esta lengua.",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-lingua-portuguesa.html"
