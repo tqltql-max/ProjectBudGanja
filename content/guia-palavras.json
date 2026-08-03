@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:51:23.045Z",
+  "updatedAt": "2026-08-03T13:51:40.815Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -144,6 +144,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-fantastico.html"
+    },
+    {
+      "id": "total",
+      "word": "total",
+      "simple": "Lat. tōtus — inteiro/soma; gíria BR «total!» (acordo/louvor); escala com legal e fantástico; Faça o melhor!",
+      "simpleEn": "Lat. tōtus — whole/sum; BR slang “total!” (agreement/praise); scale with legal and fantástico; Do your best!",
+      "simpleEs": "Lat. tōtus — entero/suma; jerga BR «¡total!» (acuerdo/elogio); escala con legal y fantástico; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-total.html"
     },
     {
       "id": "fantasioso",

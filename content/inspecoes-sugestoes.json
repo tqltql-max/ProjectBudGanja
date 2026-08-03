@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:51:23.035Z",
+  "updatedAt": "2026-08-03T13:51:40.808Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3889,6 +3889,30 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 77 — tipografia psasafo → passado; filho de passar."
+    },
+    {
+      "id": "palavra-total",
+      "title": "Total — tōtus, completude e gíria BR «total!»",
+      "titleEn": "Total — tōtus, completeness and BR slang “total!”",
+      "titleEs": "Total — tōtus, completud y jerga BR «¡total!»",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: total (lat. tōtus) — correcção de toal; completo/soma e gíria BR «total!»; escala legal/fantástico.",
+      "whyEn": "Words: total (Lat. tōtus) — typo fix from toal; whole/sum and BR slang “total!”; scale legal/fantástico.",
+      "whyEs": "Palabras: total (lat. tōtus) — corrección de toal; entero/suma y jerga BR «¡total!»; escala legal/fantástico.",
+      "suggestedSlug": "inspecao-palavra-total",
+      "doneHref": "/posts/post-inspecao-palavra-total.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/total",
+        "https://en.wiktionary.org/wiki/totus#Latin",
+        "/posts/post-inspecao-palavra-legal.html",
+        "/posts/post-inspecao-palavra-fantastico.html",
+        "/posts/post-inspecao-palavra-genial.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 78 — toal → total; lote passado/skill/total; escala de elogio/acordo."
     }
   ]
 }
