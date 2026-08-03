@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:51:40.815Z",
+  "updatedAt": "2026-08-03T13:52:15.402Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1734,6 +1734,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-gesto.html"
+    },
+    {
+      "id": "mensagem",
+      "word": "mensagem",
+      "simple": "Lat. mittere → message — conteúdo enviado; plural mensagens; SMS/chat; deixar mensagem; sinal ≠ mensagem.",
+      "simpleEn": "Lat. mittere → message — content sent; plural mensagens; SMS/chat; leave a message; signal ≠ message.",
+      "simpleEs": "Lat. mittere → message — contenido enviado; plural mensagens; SMS/chat; dejar mensaje; señal ≠ mensaje.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mensagem.html"
     },
     {
       "id": "sinal",

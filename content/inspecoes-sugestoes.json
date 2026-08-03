@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:51:40.808Z",
+  "updatedAt": "2026-08-03T13:52:15.395Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3749,7 +3749,7 @@
         "/posts/post-inspecao-palavra-maravilhoso.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 1 — elogio BR; rede só com slugs existentes; alt. máfia rejeitada."
+      "notes": "Cap. 72 — elogio BR; rede só com slugs existentes; alt. máfia rejeitada."
     },
     {
       "id": "fruto-melancia",
@@ -3913,6 +3913,31 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 78 — toal → total; lote passado/skill/total; escala de elogio/acordo."
+    },
+    {
+      "id": "palavra-mensagem",
+      "title": "Mensagem — comunicação, SMS/chat e deixar rasto",
+      "titleEn": "Mensagem — communication, SMS/chat and leaving a trace",
+      "titleEs": "Mensagem — comunicación, SMS/chat y dejar rastro",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: mensagem / mensagens (lat. mittere → message) — comunicação; SMS/chat; deixar mensagem; sinal ≠ mensagem; tipografia sm,enajsos.",
+      "whyEn": "Words: mensagem / mensagens (Lat. mittere → message) — communication; SMS/chat; leave a message; signal ≠ message; typo sm,enajsos.",
+      "whyEs": "Palabras: mensagem / mensagens (lat. mittere → message) — comunicación; SMS/chat; dejar mensaje; señal ≠ mensaje; tipografía sm,enajsos.",
+      "suggestedSlug": "inspecao-palavra-mensagem",
+      "doneHref": "/posts/post-inspecao-palavra-mensagem.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/mensagem",
+        "https://en.wiktionary.org/wiki/message",
+        "https://pt.wikipedia.org/wiki/Mensagem",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-palavra-sinal.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 79 — cover plural mensagens; elos gesto / lingua-portuguesa / sinal se existirem."
     }
   ]
 }
