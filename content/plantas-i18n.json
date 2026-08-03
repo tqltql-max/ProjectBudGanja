@@ -779,26 +779,34 @@
     "laranja": {
       "nomePopularEn": "Orange",
       "nomePopularEs": "Naranja",
-      "summaryEn": "Citrus: whole fruit vs concentrate juice, nectars and “orange” soft drinks with sugar and additives.",
-      "summaryEs": "Cítrico: fruto entero vs jugo concentrado, néctares y refrescos «de naranja» con azúcar y aditivos.",
+      "summaryEn": "Hybrid citrus (*Citrus × sinensis*): credit whole fruit and fresh juice; this sheet separates concentrates, nectars and “orange” soft drinks with sugar and additives.",
+      "summaryEs": "Cítrico híbrido (*Citrus × sinensis*): crédito al fruto entero y jugo fresco; la ficha separa concentrados, néctares y refrescos «de naranja» con azúcar y aditivos.",
       "partsUsedEn": [
-        "Fruit (pulp / natural juice)",
-        "Low-process culinary uses"
+        "Fruit (pulp / segments)",
+        "Freshly squeezed natural juice (low process)",
+        "Peel / zest in cooking (essential oil — dose)",
+        "Home culinary uses without ultra-processing"
       ],
       "partsUsedEs": [
-        "Fruto (pulpa / jugo natural)",
-        "Usso culinario de bajo procesamiento"
+        "Fruto (pulpa / gajos)",
+        "Jugo natural exprimido (bajo procesamiento)",
+        "Cáscara / zest en cocina (aceite esencial — dosis)",
+        "Uso culinario doméstico sin ultraprocesamiento"
       ],
       "traditionalUsesEn": [
         "Whole / fresh fruit",
-        "Home cooking without ultra-processing"
+        "Fresh home-squeezed juice (no concentrate or syrup)",
+        "Home cooking (zest, artisanal preserves without industrial additives)",
+        "Mediterranean and tropical food ethnobotany (Rutaceae / *Citrus*)"
       ],
       "traditionalUsesEs": [
         "Fruto entero / fresco",
-        "Cocina casera sin ultraprocesamiento"
+        "Jugo fresco casero (sin concentrado ni jarabe)",
+        "Cocina casera (zest, confituras artesanales sin aditivos industriales)",
+        "Etnobotánica alimentaria mediterránea y tropical (Rutaceae / *Citrus*)"
       ],
-      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
-      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+      "cautionsEn": "Fresh fruit is common food. Even “natural” juice concentrates sugar without pulp fiber — dose matters. Industrial derivatives belong in Risk derivatives. Educational — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. El jugo, aunque «natural», concentra azúcar sin fibra — importa la dosis. Los derivados industriales entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
     },
     "acai": {
       "nomePopularEn": "Açaí",
@@ -1039,6 +1047,68 @@
       ],
       "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
       "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "mamao": {
+      "nomePopularEn": "Papaya",
+      "nomePopularEs": "Papaya / mamón",
+      "summaryEn": "Everyday tropical fruit (*Carica papaya*): sweet pulp, seeds and latex with papain — whole fruit vs sugary nectars and industrial snacks; UNIFESP link (papain in wound care).",
+      "summaryEs": "Fruto tropical cotidiano (*Carica papaya*): pulpa dulce, semillas y látex con papaína — fruto entero vs néctares azucarados y snacks industriales; vínculo UNIFESP (papaína en heridas).",
+      "partsUsedEn": [
+        "Fruit (ripe pulp)",
+        "Seeds (culinary / folk use, with caution)",
+        "Latex / papain (clinical and industrial context — not self-medication)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa madura)",
+        "Semillas (culinaria / tradición popular, con cautela)",
+        "Látex / papaína (contexto clínico e industrial — no automedicación)",
+        "Uso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Fresh fruit (breakfast, dessert, home juice)",
+        "Tropical and Brazilian cooking",
+        "Latex papain cited in SUS wound protocols (UNIFESP training context)",
+        "Family growing in warm climates — fast-growing plant"
+      ],
+      "traditionalUsesEs": [
+        "Consumo del fruto fresco (desayuno, postre, jugo casero)",
+        "Cocina tropical y brasileña",
+        "Papaína del látex citada en protocolos de heridas del SUS (contexto formativo UNIFESP)",
+        "Cultivo familiar en clima cálido — planta de crecimiento rápido"
+      ],
+      "cautionsEn": "Ripe pulp is common food. Raw latex can irritate skin and mucosa. Excess seeds and extracts: avoid self-medication. Industrial derivatives with sugar and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "La pulpa madura es alimento común. El látex crudo puede irritar piel y mucosa. Semillas en exceso y extractos: evitar automedicación. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "melancia": {
+      "nomePopularEn": "Watermelon",
+      "nomePopularEs": "Sandía",
+      "summaryEn": "Summer cucurbit (*Citrullus lanatus*): refreshing watery pulp — this sheet separates whole watermelon from juices, nectars and ultra-processed «watermelon»; market, beach and light home-grow culture.",
+      "summaryEs": "Cucurbitácea de verano (*Citrullus lanatus*): pulpa acuosa refrescante — la ficha separa la sandía entera de jugos, néctares y ultraprocesados «watermelon»; cultura de feria, playa y cultivo familiar ligero.",
+      "partsUsedEn": [
+        "Fruit (fresh pulp)",
+        "Seeds (toasted / traditional cooking, in moderation)",
+        "Low-process culinary uses (homemade juice, salad)"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa fresca)",
+        "Semillas (tostadas / cocina tradicional, con moderación)",
+        "Usos culinarios de bajo procesamiento (jugo casero, ensalada)"
+      ],
+      "traditionalUsesEn": [
+        "Fresh fruit (summer, market, beach)",
+        "Homemade juice and salad without ultra-processing",
+        "Food culture of watermelon",
+        "Family growing in warm climates — vine with space and pollination"
+      ],
+      "traditionalUsesEs": [
+        "Fruto fresco (verano, feria, playa)",
+        "Jugo y ensalada caseros sin ultraprocesamiento",
+        "Cultura alimentaria de la sandía",
+        "Cultivo familiar en clima cálido — enredadera con espacio y polinización"
+      ],
+      "cautionsEn": "Ripe pulp is common food — natural fruit sugar counts in daily dose. Excess seeds and extracts: no self-medication. Green plant parts are not the food focus of this sheet. Industrial derivatives with sugar/syrups/additives belong in Risk derivatives. Educational — not professional advice.",
+      "cautionsEs": "La pulpa madura es alimento común — el azúcar natural cuenta en la dosis diaria. Semillas en exceso y extractos: sin automedicación. Partes verdes no son el foco alimentario. Derivados industriales entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
     }
   }
 }

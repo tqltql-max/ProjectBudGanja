@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T05:03:11.143Z",
+  "updatedAt": "2026-08-03T13:50:38.698Z",
   "disclaimer": "Fichas educacionais de plantas fitoterápicas e medicinais do Brasil. Não substituem orientação profissional de saúde nem aconselhamento jurídico.",
   "plants": [
     {
@@ -879,16 +879,20 @@
       "nomeCientifico": "Citrus × sinensis (L.) Osbeck",
       "familia": "Rutaceae",
       "hubCategory": "fruto",
-      "summary": "Citrino: fruto inteiro vs suco concentrado, néctares e refrigerantes «de laranja» com açúcar e aditivos.",
+      "summary": "Citrino híbrido (*Citrus × sinensis*): crédito ao fruto inteiro e sumo fresco; a ficha separa concentrados, néctares e refrigerantes «de laranja» com açúcar e aditivos.",
       "partsUsed": [
-        "Fruto (polpa / sumo natural)",
-        "Preparações culinárias de baixo processamento"
+        "Fruto (polpa / gomos)",
+        "Sumo natural espremido (baixo processamento)",
+        "Casca / zest em culinária (óleo essencial — dose)",
+        "Preparações culinárias domésticas sem ultraprocessamento"
       ],
       "traditionalUses": [
         "Consumo do fruto inteiro ou fresco",
-        "Culinária doméstica sem ultraprocessamento"
+        "Sumo fresco caseiro (sem concentrado nem xarope)",
+        "Culinária doméstica (zest, compotas artesanais sem aditivos industriais)",
+        "Etnobotânica alimentar mediterrânica e tropical (Rutaceae / *Citrus*)"
       ],
-      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "cautions": "Fruto fresco é alimento comum. Sumo mesmo «natural» concentra açúcar sem fibra da polpa — dose importa. Derivados industriais (concentrado, néctar, refrigerante, aromas) entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
       "tags": [
         "alimento",
         "frutos",
@@ -1246,6 +1250,83 @@
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/tomatinho-cereja-cover.jpg",
       "relatedInspections": []
+    },
+    {
+      "id": "melancia",
+      "slug": "melancia",
+      "nomePopular": "Melancia",
+      "nomeCientifico": "Citrullus lanatus (Thunb.) Matsum. & Nakai",
+      "familia": "Cucurbitaceae",
+      "hubCategory": "fruto",
+      "summary": "Cucurbitácea de verão (*Citrullus lanatus*): fruto refrescante de polpa aquosa — a ficha separa a melancia inteira dos sucos, néctares e ultraprocessados «watermelon»; cultura de feira, praia e cultivo familiar com sol na trepadeira e água na polpa.",
+      "partsUsed": [
+        "Fruto (polpa fresca)",
+        "Sementes (torradas / culinária tradicional, com moderação)",
+        "Preparações culinárias de baixo processamento (suco caseiro, salada)"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto fresco (verão, feira, praia)",
+        "Suco e salada caseiros sem ultraprocessamento",
+        "Cultura alimentar brasileira do melão-d'água",
+        "Cultivo familiar em clima quente — trepadeira com espaço e polinização"
+      ],
+      "cautions": "Polpa madura é alimento comum — açúcar natural da fruta conta na dose diária. Sementes em excesso e extratos: sem automedicação. Folhas e partes verdes da cucurbitácea não são o foco alimentar desta ficha. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "tropicais",
+        "verao",
+        "cucurbitaceae",
+        "cultivo-familiar",
+        "hidrante"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/melancia-cover.jpg",
+      "relatedInspections": []
+    },
+    {
+      "id": "mamao",
+      "slug": "mamao",
+      "nomePopular": "Mamão",
+      "nomeCientifico": "Carica papaya L.",
+      "familia": "Caricaceae",
+      "hubCategory": "fruto",
+      "summary": "Fruto tropical cotidiano (*Carica papaya*): polpa doce, sementes e látex com papaína — a ficha separa o mamão inteiro dos néctares, polpas adoçadas e snacks industriais; elo UNIFESP (papaína em feridas).",
+      "partsUsed": [
+        "Fruto (polpa madura)",
+        "Sementes (culinária / tradição popular, com cautela)",
+        "Látex / papaína (contexto clínico e industrial — não automedicação)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto fresco (café da manhã, sobremesa, suco caseiro)",
+        "Culinária tropical e brasileira (saladas de fruta, doces caseiros)",
+        "Papaína do látex citada em protocolos de feridas no SUS (contexto formativo UNIFESP)",
+        "Cultivo familiar em clima quente — planta de crescimento rápido"
+      ],
+      "cautions": "Polpa madura é alimento comum. Látex cru pode irritar pele e mucosa — não é brinquedo de cozinha. Sementes em excesso e extratos: evitar automedicação. Folhas e partes verdes não substituem orientação clínica. Derivados industriais com açúcar e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "tropicais",
+        "papaina",
+        "unifesp",
+        "cultivo-familiar"
+      ],
+      "relatedUnifesp": true,
+      "cover": "/imagens/plantas/mamao-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/biblioteca/unifesp/livro-xiv.html",
+          "label": "Rascunhos XIV UNIFESP — papaína / farmácias vivas",
+          "labelEn": "XIV UNIFESP drafts — papain / living pharmacies",
+          "labelEs": "Borradores XIV UNIFESP — papaína / farmacias vivas"
+        }
+      ]
     }
   ]
 }
