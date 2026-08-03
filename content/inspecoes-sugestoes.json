@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:14:07.093Z",
+  "updatedAt": "2026-08-03T15:18:40.829Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4081,6 +4081,30 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 85 — inclui derivações; gatilho lab skip inspecao → pular."
+    },
+    {
+      "id": "palavra-interruptor",
+      "title": "Interruptor — ligar, cortar e derivações",
+      "titleEn": "Interruptor — switch, cut and derivatives",
+      "titleEs": "Interruptor — encender, cortar y derivaciones",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: interruptor (lat. interrumpere) — ligar/desligar × corte; interromper/interrupção; sinal/gesto/eletrizante; Faça o melhor!",
+      "whyEn": "Words: interruptor (Lat. interrumpere) — on/off × cut; interromper/interrupção; sinal/gesto/eletrizante; Do your best!",
+      "whyEs": "Palabras: interruptor (lat. interrumpere) — encender/apagar × corte; interromper/interrupção; sinal/gesto/eletrizante; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-interruptor",
+      "doneHref": "/posts/post-inspecao-palavra-interruptor.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/interruptor",
+        "https://pt.wiktionary.org/wiki/interromper",
+        "/posts/post-inspecao-palavra-sinal.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-eletrizante.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 86 — tipografia Imtupidor → interruptor; inclui derivações."
     }
   ]
 }

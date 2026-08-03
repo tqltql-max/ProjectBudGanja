@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:14:07.096Z",
+  "updatedAt": "2026-08-03T15:18:40.832Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -134,6 +134,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-eletrizante.html"
+    },
+    {
+      "id": "interruptor",
+      "word": "interruptor",
+      "simple": "Lat. interrumpere — ligar/desligar × corte de fluxo; derivações interromper/interrupção; elos sinal/gesto/eletrizante; Faça o melhor com o clique.",
+      "simpleEn": "Lat. interrumpere — on/off × flow cut; derivatives interromper/interrupção; links sinal/gesto/eletrizante; Do your best with the click.",
+      "simpleEs": "Lat. interrumpere — encender/apagar × corte de flujo; derivaciones interromper/interrupção; vínculos sinal/gesto/eletrizante; Haz lo mejor con el clic.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-interruptor.html"
     },
     {
       "id": "fantastico",

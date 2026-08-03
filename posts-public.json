@@ -1520,6 +1520,25 @@
     "seriesLabel": "Pular · palavra"
   },
   {
+    "title": "Inspeção: Interruptor — ligar, cortar e derivações",
+    "titleEn": "Inspection: Interruptor — switch, cut and derivatives",
+    "titleEs": "Inspección: Interruptor — encender, cortar y derivaciones",
+    "excerpt": "Palavras: «interruptor» (lat. *interrumpere*) — ligar/desligar × corte de fluxo; derivações interromper/interrupção; elos sinal, gesto, eletrizante; Faça o melhor!",
+    "excerptEn": "Words: “interruptor” (Lat. *interrumpere*) — on/off × flow cut; derivatives interromper/interrupção; links sinal, gesto, eletrizante; Do your best!",
+    "excerptEs": "Palabras: «interruptor» (lat. *interrumpere*) — encender/apagar × corte de flujo; derivaciones interromper/interrupção; vínculos sinal, gesto, eletrizante; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-interruptor",
+    "url": "/posts/post-inspecao-palavra-interruptor.html",
+    "date": "2026-08-03T15:20:00.000Z",
+    "filename": "posts/post-inspecao-palavra-interruptor.html",
+    "coverImage": "/imagens/inspecoes/interruptor-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 86,
+    "seriesLabel": "Interruptor · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",
