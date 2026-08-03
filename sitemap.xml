@@ -28,6 +28,11 @@
   <url><loc>https://inspetorbudganja.com.br/equipamentos/manual-clonadora.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/equipamentos/manual-hidrocloradora.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/biblioteca/pesquisas/substratos.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-pipoca.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-expressao-deu-certo-galera.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-inseto.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-fruto.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-idolo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-planta.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-fantasioso.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-esperanca.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -293,6 +298,7 @@
   <url><loc>https://inspetorbudganja.com.br/plantas/morango/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/plantas/maracuja-fruta/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/plantas/tomatinho-cereja/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/mamao/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/animais/galinha/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/animais/vaca/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/animais/porco/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>

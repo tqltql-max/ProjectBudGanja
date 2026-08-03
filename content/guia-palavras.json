@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:47:31.359Z",
+  "updatedAt": "2026-08-03T13:48:36.652Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -104,6 +104,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-fogo.html"
+    },
+    {
+      "id": "pipoca",
+      "word": "pipoca",
+      "simple": "Tupi pi'poka — milho que estoura; rua e cinema BR; transformação com calor certo; Faça o melhor!",
+      "simpleEn": "Tupi pi'poka — corn that pops; BR street and cinema; craftful heat; Do your best!",
+      "simpleEs": "Tupí pi'poka — maíz que estalla; calle y cine BR; calor con oficio; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-pipoca.html"
     },
     {
       "id": "idolo",
@@ -244,6 +254,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-buguei.html"
+    },
+    {
+      "id": "inseto",
+      "word": "inseto",
+      "simple": "Lat. insectum — lemma inseto / plural insetos; vida, ecologia e cultura; elos joaninha, abelha, animal, simbiose; contraste buguei.",
+      "simpleEn": "Lat. insectum — lemma inseto / plural insetos; life, ecology and culture; links ladybug, bee, animal, symbiosis; contrast buguei.",
+      "simpleEs": "Lat. insectum — lema inseto / plural insetos; vida, ecología y cultura; vínculos joaninha, abeja, animal, simbiosis; contraste buguei.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-inseto.html"
     },
     {
       "id": "multitarefa",
@@ -1576,6 +1596,16 @@
       "href": "/guia/cultivo-basico.html"
     },
     {
+      "id": "fruto",
+      "word": "fruto",
+      "simple": "Lat. fructus — órgão botânico, plural frutos, contraste com fruta; figurado «frutos do trabalho»; elos plantas/simbiose.",
+      "simpleEn": "Lat. fructus — botanical organ, plural frutos, contrast with culinary fruta; figurative fruits of labor; plant/simbiose links.",
+      "simpleEs": "Lat. fructus — órgano botánico, plural frutos, contraste con fruta; figurado frutos del trabajo; vínculos plantas/simbiose.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-fruto.html"
+    },
+    {
       "id": "francisco-matos",
       "word": "Francisco José de Abreu Matos",
       "simple": "Farmacologista da UFC, mentor do projecto Farmácias Vivas (1983) — citado na Aula 5 como origem da política.",
@@ -1588,9 +1618,9 @@
     {
       "id": "frutos",
       "word": "Frutos",
-      "simple": "Parte da planta que carrega a semente — no hub, fichas de frutas inspecionadas.",
-      "simpleEn": "The plant part that carries the seed — in the hub, inspected fruit sheets.",
-      "simpleEs": "Parte de la planta que lleva la semilla — en el hub, fichas de frutas inspeccionadas.",
+      "simple": "Parte da planta que carrega a semente — hub de fichas de frutas; lema lexical em Inspeção: Fruto.",
+      "simpleEn": "The plant part that carries the seed — hub of fruit sheets; lexical lemma in Inspection: Fruto.",
+      "simpleEs": "Parte de la planta que lleva la semilla — hub de fichas de frutas; lema léxico en Inspección: Fruto.",
       "group": "hub",
       "fromTitle": true,
       "href": "/biblioteca/inspecoes/"
@@ -2018,12 +2048,12 @@
     {
       "id": "mamao",
       "word": "Mamão",
-      "simple": "Carica papaya — fonte de papaína; citada em protocolos de feridas no SUS. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Carica papaya — source of papain; cited in wound protocols in the SUS. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Carica papaya — fuente de papaína; citada en protocolos de heridas en el SUS. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Carica papaya — fruto tropical; papaína do látex citada em feridas no SUS (UNIFESP). Inspeção de fruto no laboratório.",
+      "simpleEn": "Carica papaya — tropical fruit; latex papain cited in SUS wound care (UNIFESP). Lab fruit inspection.",
+      "simpleEs": "Carica papaya — fruto tropical; papaína del látex citada en heridas del SUS (UNIFESP). Inspección de fruto en el laboratorio.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-planta-mamao.html"
     },
     {
       "id": "mantra-lab",
