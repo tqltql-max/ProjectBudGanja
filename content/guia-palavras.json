@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:21:58.792Z",
+  "updatedAt": "2026-08-03T15:27:37.825Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -254,6 +254,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-aff.html"
+    },
+    {
+      "id": "valeu",
+      "word": "valeu",
+      "simple": "De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de muitoobrigado; gesto, respeito; Faça o melhor — e valeu.",
+      "simpleEn": "From valer ← Lat. valēre — light thanks / oral close BR; sister of muitoobrigado; gesture, respect; Do your best — and valeu.",
+      "simpleEs": "De valer ← lat. valēre — gratitud ligera / cierre oral BR; hermana de muitoobrigado; gesto, respeito; Haz lo mejor — y valeu.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-valeu.html"
     },
     {
       "id": "muitoobrigado",

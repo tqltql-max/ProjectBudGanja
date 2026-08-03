@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:21:58.788Z",
+  "updatedAt": "2026-08-03T15:27:37.821Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4151,6 +4151,29 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 88 — tipografia Proceguir → prosseguir; par com sempre."
+    },
+    {
+      "id": "palavra-valeu",
+      "title": "Valeu — gratidão leve e fecho oral BR",
+      "titleEn": "Valeu — light thanks and Brazilian oral close",
+      "titleEs": "Valeu — gratitud ligera y cierre oral BR",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: valeu (valer ← lat. valēre) — gratidão leve BR; elos muitoobrigado/gesto/respeito; Faça o melhor!",
+      "whyEn": "Words: valeu (valer ← Lat. valēre) — light BR thanks; links muitoobrigado/gesture/respect; Do your best!",
+      "whyEs": "Palabras: valeu (valer ← lat. valēre) — gratitud ligera BR; vínculos muitoobrigado/gesto/respeito; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-valeu",
+      "doneHref": "/posts/post-inspecao-palavra-valeu.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/valer",
+        "/posts/post-inspecao-expressao-muito-obrigado.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-respeito.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 89 — irmã leve de muitoobrigado."
     }
   ]
 }
