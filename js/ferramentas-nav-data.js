@@ -73,6 +73,15 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Manual: infusão, decoção, proporções e segurança no preparo caseiro."
             },
             {
+              "label": "Receitas de plantas",
+              "tileLabel": "Receitas de plantas",
+              "href": "/posts/post-inspecao-guia-receitas-plantas.html",
+              "icon": "🌿",
+              "slug": "guia-receitas-plantas",
+              "featured": true,
+              "description": "Lote 1: oito tisanas de ofício com elos ao catálogo Plantas."
+            },
+            {
               "label": "Clonadoras",
               "tileLabel": "Clonadoras",
               "icon": "🌱",
@@ -192,6 +201,22 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Canais, equipamentos, insumos e formação."
             },
             {
+              "label": "Inspeção: Endocanabinoidoma — mapa neurocientífico do ofício",
+              "tileLabel": "Inspeção: Endocanabinoidoma — m…",
+              "href": "/posts/post-inspecao-neurociencia-endocanabinoidoma.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-neurociencia-endocanabinoidoma",
+              "description": "Neurociências Cap. 1: endocanabinoidoma / ECS — receptores, ligandos e elos com Sidarta, Carlini, Albaugh e UNIFESP. Ficha educativa, não clínica."
+            },
+            {
+              "label": "Inspeção: Maconha — origem da palavra e transformação no Brasil",
+              "tileLabel": "Inspeção: Maconha — origem da p…",
+              "href": "/posts/post-inspecao-palavra-maconha.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-maconha",
+              "description": "Ficha fundadora da série Palavras: etimologia afro-atlântica de «maconha», viagem histórica, mudança de sentido e elo com *Cannabis sativa* no catálogo medicinal."
+            },
+            {
               "label": "Inspeção: Planta — Babosa — gel foliar e polissacarídeos",
               "tileLabel": "Inspeção: Planta — Babosa — gel…",
               "href": "/posts/post-inspecao-planta-babosa.html",
@@ -206,6 +231,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-abacate",
               "description": "*Persea americana* — polpa rica em MUFA, persina defensiva e etimologia náuatle *āhuacatl*; separar planta inteira de derivados industriais."
+            },
+            {
+              "label": "Homenagem: Miguel Nicolelis — pioneiro das interfaces cérebro-máquina",
+              "tileLabel": "Homenagem: Miguel Nicolelis — p…",
+              "href": "/posts/post-inspecao-neurociencia-miguel-nicolelis.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-neurociencia-miguel-nicolelis",
+              "description": "Neurociências Cap. 2: homenagem documental a Miguel Nicolelis — interfaces cérebro-máquina, Projeto Andar de Novo e o pontapé da Copa 2014. Mérito e limites, sem hagiografia."
             },
             {
               "label": "Inspeção: Fruto — Coco — água, polpa e óleo da drupa tropical",
@@ -440,6 +473,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Uva (*Vitis vinifera L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
+              "label": "Inspeção: Renato Russo — Legião Urbana, letra geracional e a série Palavras",
+              "tileLabel": "Inspeção: Renato Russo — Legião…",
+              "href": "/posts/post-inspecao-figura-renato-russo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-renato-russo",
+              "description": "Pessoas × Palavras: Renato Russo e a Legião Urbana — letra geracional do rock BR cruzada com a ficha tempo (Tempo Perdido) e o hub de vocábulos."
+            },
+            {
               "label": "Inspeção: Planta — Alecrim — ácidos diterpênicos e cineol",
               "tileLabel": "Inspeção: Planta — Alecrim — ác…",
               "href": "/posts/post-inspecao-planta-alecrim.html",
@@ -662,6 +703,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-memoravel",
               "description": "Palavras: «memorável» (lat. memorabilis) — digno de memória; elogio BR; eixo retenção ≠ escala legal/genial/maravilhoso/fantástico; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Moana — o desenho do oceano, da vocação e da ilha",
+              "tileLabel": "Inspeção: Moana — o desenho do …",
+              "href": "/posts/post-inspecao-filme-moana.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-moana",
+              "description": "Artes · desenho: Moana (2016, Disney / Clements & Musker) — oceano, navegar e cuidado da ilha; elos mar/caminho/Vida; Faça o melhor!"
             },
             {
               "label": "Inspeção: Multitask — empréstimo, parece×é e correção de ofício",
@@ -910,6 +959,134 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-cinta",
               "description": "Palavras: «cinta» (lat. *cincta* / *cingere*) — faixa que segura; tutoramento com gesto; ≠ sinta; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Cinzeiro — lugar da cinza e ofício do fogo",
+              "tileLabel": "Inspeção: Cinzeiro — lugar da c…",
+              "href": "/posts/post-inspecao-palavra-cinzeiro.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-cinzeiro",
+              "description": "Palavras: «cinzeiro» (*cinza* + *-eiro*) — recipiente/monte da cinza; elos fogo, gesto, risco; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Objetos — o que fica diante e o foco da ficha",
+              "tileLabel": "Inspeção: Objetos — o que fica …",
+              "href": "/posts/post-inspecao-palavra-objetos.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-objetos",
+              "description": "Palavras: «objetos» (lat. *obiectum*) — plural de objeto; meta-lab do objeto inspecionado; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Guia — receitas de plantas (lote 1 · tisanas)",
+              "tileLabel": "Inspeção: Guia — receitas de pl…",
+              "href": "/posts/post-inspecao-guia-receitas-plantas.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-guia-receitas-plantas",
+              "description": "Oito receitas de ofício (camomila, hortelã, melissa, capim-limão, erva-cidreira, alecrim, gengibre, maracujá); elo ao manual de chá; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Insana — intensidade, juízo e cuidado",
+              "tileLabel": "Inspeção: Insana — intensidade,…",
+              "href": "/posts/post-inspecao-palavra-insana.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-insana",
+              "description": "Palavras: «insana» (lat. *insanus* = *in-* + *sanus*) — excesso/intensidade BR; ≠ diagnóstico; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Sugestão — proposta, palpite e fila de ofício",
+              "tileLabel": "Inspeção: Sugestão — proposta, …",
+              "href": "/posts/post-inspecao-palavra-sugestao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-sugestao",
+              "description": "Palavras: «sugestão» (lat. *suggestio*) — ato de sugerir; meta-lab da fila de inspeções; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Tudo — totalidade, essencial e foco",
+              "tileLabel": "Inspeção: Tudo — totalidade, es…",
+              "href": "/posts/post-inspecao-palavra-tudo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-tudo",
+              "description": "Palavras: «tudo» (família *totus*) — todas as coisas / o essencial; elos objetos, alma; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Alma — centro vivo e chegar por dentro",
+              "tileLabel": "Inspeção: Alma — centro vivo e …",
+              "href": "/posts/post-inspecao-palavra-alma.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-alma",
+              "description": "Palavras: «alma» (lat. *anima*) — centro vivo; chegar na alma; elos tudo, coração, vida; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Nap — sono curto e pausa de ofício",
+              "tileLabel": "Inspeção: Nap — sono curto e pa…",
+              "href": "/posts/post-inspecao-palavra-nap.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-nap",
+              "description": "Palavras: «nap» (EN) — cochilo / power nap no BR; elos gesto, alma, vida; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Pedi a mão — ajuda, pedido e gesto aberto",
+              "tileLabel": "Inspeção: Pedi a mão — ajuda, p…",
+              "href": "/posts/post-inspecao-palavra-pedi-mao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-pedi-mao",
+              "description": "Palavras: «pedi a mão» (*pedimao*) — pedir ajuda ou compromisso; elos mãos, gesto, respeito; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Pattern — molde, padrão e repetição",
+              "tileLabel": "Inspeção: Pattern — molde, padr…",
+              "href": "/posts/post-inspecao-palavra-pattern.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-pattern",
+              "description": "Palavras: «pattern» (EN) — molde / padrão / design pattern no BR; elos gesto, caminho, risco; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Patrão — chefe, poder e respeito",
+              "tileLabel": "Inspeção: Patrão — chefe, poder…",
+              "href": "/posts/post-inspecao-palavra-patrao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-patrao",
+              "description": "Palavras: «patrão» — chefe/empregador (lat. patronus); elos respeito, pattern, gesto; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: EXIT — saída, limiar e salvação de ofício",
+              "tileLabel": "Inspeção: EXIT — saída, limiar …",
+              "href": "/posts/post-inspecao-palavra-exit.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-exit",
+              "description": "Palavras: «EXIT» (lat. *exīre* / *exitus*) — saída, quit, teatro; no lab, salvação = sair do aperto; elos caminho, risco, alma, vida; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Tempo — cronologia, clima, compasso e o instante certo",
+              "tileLabel": "Inspeção: Tempo — cronologia, c…",
+              "href": "/posts/post-inspecao-palavra-tempo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-tempo",
+              "description": "Palavras: «tempo» (lat. tempus) — cronologia, clima e compasso musical no BR; kairós × chronos; elos caminho, vida, sempre, passado, alma; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Perseguição — caça, opressão e o seguir que aperta",
+              "tileLabel": "Inspeção: Perseguição — caça, o…",
+              "href": "/posts/post-inspecao-palavra-perseguicao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-perseguicao",
+              "description": "Palavras: «perseguição» (lat. *persequī*) — caça × opressão × obsessão; contraste prosseguir; elos caminho, risco, EXIT; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Relação — o entre, o relato e a proporção",
+              "tileLabel": "Inspeção: Relação — o entre, o …",
+              "href": "/posts/post-inspecao-palavra-relacao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-relacao",
+              "description": "Palavras: «relação» (lat. *relatĭō*) — vínculo × relato × proporção; elos simbiose, respeito, gesto; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Meneia — balanço, corpo e a mão no étimo",
+              "tileLabel": "Inspeção: Meneia — balanço, cor…",
+              "href": "/posts/post-inspecao-palavra-meneia.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-meneia",
+              "description": "Palavras: «meneia» / menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto e mãos; Faça o melhor!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
@@ -1975,14 +2152,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-passar",
               "description": "Palavras × Pessoas: «passar» (latim *passāre*) — atravessar, o que se passou, o tempo — elo metodológico com Heródoto e o ofício de *historie*."
-            },
-            {
-              "label": "Inspeção: Maconha — origem da palavra e transformação no Brasil",
-              "tileLabel": "Inspeção: Maconha — origem da p…",
-              "href": "/posts/post-inspecao-palavra-maconha.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-maconha",
-              "description": "Ficha fundadora da série Palavras: etimologia afro-atlântica de «maconha», viagem histórica, mudança de sentido e elo com *Cannabis sativa* no catálogo medicinal."
             },
             {
               "label": "Inspeção: Cana-de-açúcar — origem da planta, açúcar refinado e cruzamento Lair",
