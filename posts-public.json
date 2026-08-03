@@ -76,6 +76,25 @@
     "seriesLabel": "Camomila"
   },
   {
+    "title": "Inspeção: jesusamando — assombro, afeto e oralidade BR",
+    "titleEn": "Inspection: jesusamando — awe, affection and Brazilian orality",
+    "titleEs": "Inspección: jesusamando — asombro, afecto y oralidad BR",
+    "excerpt": "Expressões: «jesusamando» — sopro BR de assombro e afeto; contraste com aff; elo língua portuguesa e Faça o melhor!",
+    "excerptEn": "Sayings: “jesusamando” — Brazilian breath of awe and affection; contrast with aff; Portuguese language and Do your best!",
+    "excerptEs": "Dichos: «jesusamando» — soplo BR de asombro y afecto; contraste con aff; lengua portuguesa y ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-expressao-jesusamando",
+    "url": "/posts/post-inspecao-expressao-jesusamando.html",
+    "date": "2026-08-03T16:30:00.000Z",
+    "filename": "posts/post-inspecao-expressao-jesusamando.html",
+    "coverImage": "/imagens/inspecoes/jesusamando-cover.jpg",
+    "category": "inspecao",
+    "series": "expressoes-ditados",
+    "seriesOrder": 3,
+    "seriesLabel": "jesusamando · expressão"
+  },
+  {
     "title": "Inspeção: Planta — Capim-limão — citral e gramínea aromática",
     "titleEn": "Inspection: Plant — Lemongrass — citral and aromatic grass",
     "titleEs": "Inspección: Planta — Hierba limón — citral y gramínea aromática",
@@ -1480,25 +1499,6 @@
     "series": "palavras-origem",
     "seriesOrder": null,
     "seriesLabel": "Fogo · palavra"
-  },
-  {
-    "title": "Inspeção: jesusamando — assombro, afeto e oralidade BR",
-    "titleEn": "Inspection: jesusamando — awe, affection and Brazilian orality",
-    "titleEs": "Inspección: jesusamando — asombro, afecto y oralidad BR",
-    "excerpt": "Expressões: «jesusamando» — sopro BR de assombro e afeto; contraste com aff; elo língua portuguesa e Faça o melhor!",
-    "excerptEn": "Sayings: “jesusamando” — Brazilian breath of awe and affection; contrast with aff; Portuguese language and Do your best!",
-    "excerptEs": "Dichos: «jesusamando» — soplo BR de asombro y afecto; contraste con aff; lengua portuguesa y ¡Haz lo mejor!",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-expressao-jesusamando",
-    "url": "/posts/post-inspecao-expressao-jesusamando.html",
-    "date": "2026-08-03T16:30:00.000Z",
-    "filename": "posts/post-inspecao-expressao-jesusamando.html",
-    "coverImage": "/imagens/inspecoes/jesusamando-cover.jpg",
-    "category": "inspecao",
-    "series": "expressoes-ditados",
-    "seriesOrder": null,
-    "seriesLabel": "jesusamando · expressão"
   },
   {
     "title": "Inspeção: Mão esquerda / mão direita — complementaridade do ofício",

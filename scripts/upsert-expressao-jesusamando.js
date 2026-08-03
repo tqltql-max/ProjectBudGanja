@@ -92,19 +92,20 @@ async function main() {
       tipo: 'expressao',
       priority: 2,
       status: 'feita',
-      why: 'Expressões: sopro BR de assombro e afeto; contraste com aff; elo língua e Faça o melhor!',
-      whyEn: 'Sayings: Brazilian breath of awe and affection; contrast with aff; language + Do your best!',
-      whyEs: 'Dichos: soplo BR de asombro y afecto; contraste con aff; lengua + ¡Haz lo mejor!',
+      why: 'Expressões: sopro BR de assombro e afeto; contraste com aff e meudeusdoceu; nota de campo (cuidado/carona); Faça o melhor!',
+      whyEn: 'Sayings: Brazilian breath of awe and affection; contrast with aff and meudeusdoceu; field note (care/ride); Do your best!',
+      whyEs: 'Dichos: soplo BR de asombro y afecto; contraste con aff y meudeusdoceu; nota de campo (cuidado/aventón); ¡Haz lo mejor!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'expressoes-ditados',
       sources: [
         '/posts/post-inspecao-palavra-lingua-portuguesa.html',
         '/posts/post-inspecao-palavra-aff.html',
+        '/posts/post-inspecao-expressao-meudeusdoceu.html',
         '/posts/post-inspecao-expressao-faca-o-melhor.html',
         '/biblioteca/inspecoes/#inspecoes-expressoes'
       ],
-      notes: 'Cap. 3 Expressões — pivot desde historiografia (palavra).'
+      notes: 'Cap. 3 Expressões — nota de campo 2026-08-03: calor em contexto de cuidado (vs meudeusdoceu = espanto).'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);
