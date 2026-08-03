@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:40:26.992Z",
+  "updatedAt": "2026-08-03T16:44:16.235Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4433,6 +4433,28 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 101 — uma mão = ajuda; a mão = compromisso."
+    },
+    {
+      "id": "palavra-pattern",
+      "title": "Pattern — molde, padrão e repetição",
+      "titleEn": "Pattern — mold, template and repetition",
+      "titleEs": "Pattern — molde, plantilla y repetición",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: pattern (EN) — molde/padrão/design pattern; gesto/caminho/risco; Faça o melhor!",
+      "whyEn": "Words: pattern (EN) — mold/template/design pattern; gesto/caminho/risco; Do your best!",
+      "whyEs": "Palabras: pattern (EN) — molde/plantilla/design pattern; gesto/caminho/risco; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-pattern",
+      "doneHref": "/posts/post-inspecao-palavra-pattern.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wiktionary.org/wiki/pattern",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 102 — loan EN; padrão PT em texto formal."
     }
   ]
 }

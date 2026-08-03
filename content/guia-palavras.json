@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:40:26.996Z",
+  "updatedAt": "2026-08-03T16:44:16.238Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -504,6 +504,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-caminho.html"
+    },
+    {
+      "id": "pattern",
+      "word": "pattern",
+      "simple": "EN — molde / padrão / design pattern no BR; repetição reconhecível; elos gesto/caminho; Faça o melhor com o molde certo.",
+      "simpleEn": "EN — mold / template / design pattern in BR; recognizable repetition; links gesto/caminho; Do your best with the right mold.",
+      "simpleEs": "EN — molde / plantilla / design pattern en BR; repetición reconocible; vínculos gesto/caminho; Haz lo mejor con el molde correcto.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-pattern.html"
     },
     {
       "id": "camomila",

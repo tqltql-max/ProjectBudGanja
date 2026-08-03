@@ -1881,6 +1881,25 @@
     "seriesLabel": "Pedi a mão · palavra"
   },
   {
+    "title": "Inspeção: Pattern — molde, padrão e repetição",
+    "titleEn": "Inspection: Pattern — mold, template and repetition",
+    "titleEs": "Inspección: Pattern — molde, plantilla y repetición",
+    "excerpt": "Palavras: «pattern» (EN) — molde / padrão / design pattern no BR; elos gesto, caminho, risco; Faça o melhor!",
+    "excerptEn": "Words: “pattern” (EN) — mold / template / design pattern in BR use; links gesto, caminho, risco; Do your best!",
+    "excerptEs": "Palabras: «pattern» (EN) — molde / plantilla / design pattern en uso BR; vínculos gesto, caminho, risco; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-pattern",
+    "url": "/posts/post-inspecao-palavra-pattern.html",
+    "date": "2026-08-03T20:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-pattern.html",
+    "coverImage": "/imagens/inspecoes/pattern-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 102,
+    "seriesLabel": "Pattern · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",
