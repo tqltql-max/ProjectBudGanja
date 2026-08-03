@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T12:50:58.063Z",
+  "updatedAt": "2026-08-03T12:55:21.820Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -144,6 +144,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-genial.html"
+    },
+    {
+      "id": "esquerdo",
+      "word": "esquerdo",
+      "simple": "Lado / ofício (esquerda); no BudGanja: objeto, criação e finalidade sem estigma; Faça o melhor nesta mão.",
+      "simpleEn": "Side / craft (left); in BudGanja: object, creation and purpose without stigma; Do your best with this hand.",
+      "simpleEs": "Lado / oficio (izquierda); en BudGanja: objeto, creación y finalidad sin estigma; Haz lo mejor con esta mano.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-esquerdo.html"
     },
     {
       "id": "alegria",

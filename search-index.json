@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T12:51:08.576Z",
+  "updatedAt": "2026-08-03T12:55:33.756Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Esquerdo — objeto, criação, finalidade e Faça o melhor!",
+      "url": "/posts/post-inspecao-palavra-esquerdo.html",
+      "excerpt": "Palavras: «esquerdo / esquerda» — objeto (lado de ofício), criação (gesto), finalidade (orientar · complementar · cuidar) e Faça o melhor!; anti-estigma; elo mãos.",
+      "text": "Inspeção: Esquerdo — objeto, criação, finalidade e Faça o melhor! Palavras: «esquerdo / esquerda» — objeto (lado de ofício), criação (gesto), finalidade (orientar · complementar · cuidar) e Faça o melhor!; anti-estigma; elo mãos. inspecao ## Escopo\n\nInspeção editorial da palavra **esquerdo** (e da forma **esquerda**) — lado, mão e metáfora de ofício. Esta ficha cobre **tudo o que o laboratório precisa**: o **objeto**, a **criação**, a **finalidade** e o fecho [Faça o melhor!](/posts/post-inspecao-expressao-faca-o-melhor.html). Elo irmão obrigatório: [mão esquerda × mão direita](/posts/post-inspecao-palavra-mao-esquerda-direita.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · esquerdo](https://pt.wiktionary.org/wiki/esquerdo), [esquerda](https://pt.wiktionary.org/wiki/esquerda), ficha [mãos](/posts/post-inspecao-palavra-mao-esquerda-direita.html). Campo semântico lat. *sinistra* = lado esquerdo — o BudGanja **recusa** o estigma moral («sinistra» = má). Ficha ≠ anatomia clínica nem ranking de lateralidade.\n\n## 1. Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **esquerdo** · **esquerda** |\n| Classe | Adjetivo · substantivo (lado / mão / política, conforme contexto) |\n| Étimo (trabalho) | Tradição romance / ibérica; campo lat. *sinistra* (lado esquerdo) — confiança: alta no uso espacial |\n| Família | *esquerda* · *esquerdo* · *à esquerda* · esp. *izquierdo* · fr. *gauche* · it. *sinistro* (cuidado: falso amigo moral) |\n| Tipo BudGanja | Palavra — lado de ofício + criação; anti-estigma |\n| Elo principal | [mão esquerda × direita](/posts/post-inspecao-palavra-mao-esquerda-direita.html) · [gesto](/posts/post-inspecao-palavra-gesto.html) · [Faça o melhor!](/posts/post-inspecao-expressao-faca-o-melhor.html) |\n| Elo criação | [criatividade](/posts/post-inspecao-palavra-criatividade.html) · [genial](/posts/post-inspecao-palavra-genial.html) · [caminho](/posts/post-inspecao-palavra-caminho.html) |\n| Elo projecto | [Vida](/vid"
     },
     {
       "title": "Inspeção: Genial — engenho do projecto BudGanja e o risco do culto vazio",
@@ -1722,6 +1728,12 @@
       "url": "/posts/post-inspecao-palavra-genial.html",
       "excerpt": "*Gênio* + *-al* — elogio de engenho no BR; no BudGanja, celebra o feito com método; culto vazio = ressalva.",
       "text": "genial *Gênio* + *-al* — elogio de engenho no BR; no BudGanja, celebra o feito com método; culto vazio = ressalva. lexico guia palavras glossário genial"
+    },
+    {
+      "title": "esquerdo",
+      "url": "/posts/post-inspecao-palavra-esquerdo.html",
+      "excerpt": "Lado / ofício (esquerda); no BudGanja: objeto, criação e finalidade sem estigma; Faça o melhor nesta mão.",
+      "text": "esquerdo Lado / ofício (esquerda); no BudGanja: objeto, criação e finalidade sem estigma; Faça o melhor nesta mão. lexico guia palavras glossário esquerdo"
     },
     {
       "title": "Alegria",
