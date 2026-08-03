@@ -646,7 +646,8 @@
     "coverImage": "/imagens/inspecoes/buguei-palavra-cover.jpg",
     "category": "inspecao",
     "series": "palavras-origem",
-    "seriesLabel": "Buguei · palavra"
+    "seriesLabel": "Buguei · palavra",
+    "seriesOrder": 34
   },
   {
     "slug": "inspecao-expressao-meudeusdoceu",
