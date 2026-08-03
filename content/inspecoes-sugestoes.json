@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:27:37.821Z",
+  "updatedAt": "2026-08-03T15:54:09.120Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3090,26 +3090,26 @@
       "notes": "Cap. 33 — lareira × labareda; par com água."
     },
     {
-      "id": "expressao-meudeusdoceu",
-      "title": "meudeusdoceu — assombro alto e oralidade BR",
-      "titleEn": "meudeusdoceu — high awe and Brazilian orality",
-      "titleEs": "meudeusdoceu — asombro alto y oralidad BR",
+      "id": "expressao-jesusudavi",
+      "title": "jesusudavi — assombro alto (substitui meudeusdoceu)",
+      "titleEn": "jesusudavi — high awe (replaces meudeusdoceu)",
+      "titleEs": "jesusudavi — asombro alto (sustituye meudeusdoceu)",
       "tipo": "expressao",
       "priority": 2,
       "status": "feita",
-      "why": "Expressões: meu Deus do céu colado; assombro alto; escala aff × meudeusdoceu × jesusamando.",
-      "whyEn": "Sayings: meu Deus do céu as one word; high awe; scale aff × meudeusdoceu × jesusamando.",
-      "whyEs": "Dichos: meu Deus do céu pegado; asombro alto; escala aff × meudeusdoceu × jesusamando.",
-      "suggestedSlug": "inspecao-expressao-meudeusdoceu",
-      "doneHref": "/posts/post-inspecao-expressao-meudeusdoceu.html",
+      "why": "Expressões: jesusudavi substitui meudeusdoceu; meu Deus do céu; assombro; escala aff × jesusamando.",
+      "whyEn": "Sayings: jesusudavi replaces meudeusdoceu; meu Deus do céu; awe; scale aff × jesusamando.",
+      "whyEs": "Dichos: jesusudavi sustituye meudeusdoceu; meu Deus do céu; asombro; escala aff × jesusamando.",
+      "suggestedSlug": "inspecao-expressao-jesusudavi",
+      "doneHref": "/posts/post-inspecao-expressao-jesusudavi.html",
       "seriesHint": "expressoes-ditados",
       "sources": [
         "/posts/post-inspecao-expressao-jesusamando.html",
+        "/posts/post-inspecao-expressao-meudeusdoceu.html",
         "/posts/post-inspecao-palavra-aff.html",
-        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 4 Expressões — termómetro de espanto."
+      "notes": "Cap. 4 Expressões — troca lab meudeusdoceu → jesusudavi."
     },
     {
       "id": "palavra-buguei",

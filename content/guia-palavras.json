@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:27:37.825Z",
+  "updatedAt": "2026-08-03T15:54:09.125Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -396,14 +396,14 @@
       "href": "/posts/post-inspecao-palavra-skill.html"
     },
     {
-      "id": "meudeusdoceu",
-      "word": "meudeusdoceu",
-      "simple": "Expressão oral BR — meu Deus do céu colado; assombro alto; escala entre aff e jesusamando; depois Faça o melhor!",
-      "simpleEn": "Brazilian oral saying — meu Deus do céu as one word; high awe; between aff and jesusamando; then Do your best!",
-      "simpleEs": "Expresión oral BR — meu Deus do céu pegado; asombro alto; entre aff y jesusamando; luego ¡Haz lo mejor!",
+      "id": "jesusudavi",
+      "word": "jesusudavi",
+      "simple": "Expressão oral BR — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala entre aff e jesusamando.",
+      "simpleEn": "Brazilian oral saying — replaces meudeusdoceu; meu Deus do céu; high awe; between aff and jesusamando.",
+      "simpleEs": "Expresión oral BR — sustituye meudeusdoceu; meu Deus do céu; asombro alto; entre aff y jesusamando.",
       "group": "lexico",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-expressao-meudeusdoceu.html"
+      "href": "/posts/post-inspecao-expressao-jesusudavi.html"
     },
     {
       "id": "filho-de-deus",
