@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:28:31.918Z",
+  "updatedAt": "2026-08-03T13:36:45.599Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2839,9 +2839,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: «mão esquerda» / «mão direita» (*manus*) — ferramentas do gesto e do teclado; complementaridade, não moral dualista.",
-      "whyEn": "Words: “mão esquerda” / “mão direita” (*manus*) — tools of gesture and typing; complementarity, not moral dualism.",
-      "whyEs": "Palabras: «mão esquerda» / «mão direita» (*manus*) — herramientas del gesto y el teclado; complementariedad, no dualismo moral.",
+      "why": "Palavras: «mão esquerda» / «mão direita» (*manus*) — complementaridade de ofício; secção mão direita × coração (gesto × cuidado); anti-estigma.",
+      "whyEn": "Words: “mão esquerda” / “mão direita” (*manus*) — craft complementarity; right hand × heart (gesture × care); anti-stigma.",
+      "whyEs": "Palabras: «mão esquerda» / «mão direita» (*manus*) — complementariedad de oficio; mano derecha × corazón (gesto × cuidado); anti-estigma.",
       "suggestedSlug": "inspecao-palavra-mao-esquerda-direita",
       "doneHref": "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
       "seriesHint": "palavras-origem",
@@ -2850,12 +2850,15 @@
         "https://pt.wiktionary.org/wiki/esquerda",
         "https://pt.wiktionary.org/wiki/direita",
         "https://en.wiktionary.org/wiki/manus#Latin",
+        "https://pt.wikipedia.org/wiki/Cora%C3%A7%C3%A3o",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-backspace.html",
+        "/posts/post-inspecao-palavra-esquerdo.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html",
-        "/vida/"
+        "/vida/",
+        "/vida/diario/"
       ],
-      "notes": "Par único Cap. 25 — complementaridade de ofício; evitar preconceito «sinistra»."
+      "notes": "Par único Cap. 25 — complementaridade de ofício; secção mão direita × coração; evitar preconceito «sinistra»."
     },
     {
       "id": "palavra-arvore-da-vida",
@@ -3100,6 +3103,55 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 4 Expressões — termómetro de espanto."
+    },
+    {
+      "id": "palavra-buguei",
+      "title": "Buguei — do inseto ao «deu ruim» e Faça o melhor!",
+      "titleEn": "Buguei — from insect to “it went bad” and Do your best!",
+      "titleEs": "Buguei — del insecto al «salió mal» y ¡Haz lo mejor!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: buguei — bug (inseto) → falha → peito; alteração que parece ruim; Faça o melhor depois do tranco.",
+      "whyEn": "Words: buguei — bug (insect) → fault → chest; shift that sounds bad; Do your best after the stall.",
+      "whyEs": "Palabras: buguei — bug (insecto) → fallo → pecho; alteración que suena mala; Haz lo mejor después del tranco.",
+      "suggestedSlug": "inspecao-palavra-buguei",
+      "doneHref": "/posts/post-inspecao-palavra-buguei.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Software_bug",
+        "https://en.wiktionary.org/wiki/bug",
+        "https://pt.wikipedia.org/wiki/Inseto",
+        "/posts/post-inspecao-palavra-animal.html",
+        "/posts/post-inspecao-palavra-aff.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 34 — inseto × pejorativo × desbugar com ofício."
+    },
+    {
+      "id": "expressao-deu-certo-galera",
+      "title": "deu certo, galera — celebração colectiva e oralidade BR",
+      "titleEn": "deu certo, galera — collective celebration and Brazilian orality",
+      "titleEs": "deu certo, galera — celebración colectiva y oralidad BR",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: deucer galerra; celebração colectiva; contraste aff × buguei × deu certo, galera.",
+      "whyEn": "Sayings: deucer galerra; collective celebration; contrast aff × buguei × deu certo, galera.",
+      "whyEs": "Dichos: deucer galerra; celebración colectiva; contraste aff × buguei × deu certo, galera.",
+      "suggestedSlug": "inspecao-expressao-deu-certo-galera",
+      "doneHref": "/posts/post-inspecao-expressao-deu-certo-galera.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-jesusamando.html",
+        "/posts/post-inspecao-expressao-meudeusdoceu.html",
+        "/posts/post-inspecao-palavra-aff.html",
+        "/posts/post-inspecao-palavra-buguei.html",
+        "/posts/post-inspecao-palavra-genial.html",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 5 Expressões — termómetro de acerto partilhado."
     }
   ]
 }

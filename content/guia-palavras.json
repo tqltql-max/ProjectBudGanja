@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:28:31.922Z",
+  "updatedAt": "2026-08-03T13:36:45.603Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -136,6 +136,16 @@
       "href": "/posts/post-inspecao-palavra-aff.html"
     },
     {
+      "id": "buguei",
+      "word": "buguei",
+      "simple": "De bug (inseto) à falha e ao peito BR; o sentido foi puxado para «ruim»; depois do tranco, Faça o melhor!",
+      "simpleEn": "From bug (insect) to fault and the BR chest; sense pulled toward “bad”; after the stall, Do your best!",
+      "simpleEs": "De bug (insecto) al fallo y al pecho BR; el sentido se tiró a «malo»; después del tranco, ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-buguei.html"
+    },
+    {
       "id": "meudeusdoceu",
       "word": "meudeusdoceu",
       "simple": "Expressão oral BR — meu Deus do céu colado; assombro alto; escala entre aff e jesusamando; depois Faça o melhor!",
@@ -146,11 +156,31 @@
       "href": "/posts/post-inspecao-expressao-meudeusdoceu.html"
     },
     {
+      "id": "deu-certo-galera",
+      "word": "deu certo, galera",
+      "simple": "Expressão oral BR — deucer galerra; celebração colectiva de acerto; contraste com aff e buguei; depois Faça o melhor!",
+      "simpleEn": "Brazilian oral saying — deucer galerra; collective celebration of success; contrast with aff and buguei; then Do your best!",
+      "simpleEs": "Expresión oral BR — deucer galerra; celebración colectiva de acierto; contraste con aff y buguei; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-deu-certo-galera.html"
+    },
+    {
       "id": "jesusamando",
       "word": "jesusamando",
       "simple": "Expressão oral BR — assombro e afeto num sopro; contraste com aff; depois, Faça o melhor!",
       "simpleEn": "Brazilian oral saying — awe and affection in one breath; contrast with aff; then Do your best!",
       "simpleEs": "Expresión oral BR — asombro y afecto en un soplo; contraste con aff; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-jesusamando.html"
+    },
+    {
+      "id": "jesusmanando",
+      "word": "jesusmanando",
+      "simple": "Grafia comum por lapso de «jesusamando» — mesma ficha (assombro e afeto).",
+      "simpleEn": "Common misspelling of “jesusamando” — same sheet (awe and affection).",
+      "simpleEs": "Grafía común por lapsus de «jesusamando» — misma ficha (asombro y afecto).",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-expressao-jesusamando.html"
@@ -988,9 +1018,9 @@
     {
       "id": "direita",
       "word": "Direita",
-      "simple": "Lado direito / mão direita — no BudGanja, papel de ofício (executar, precisar) em complementaridade com a esquerda.",
-      "simpleEn": "Right side / right hand — in BudGanja, a craft role (execute, refine) complementary to the left.",
-      "simpleEs": "Lado derecho / mano derecha — en BudGanja, papel de oficio (ejecutar, precisar) en complementariedad con la izquierda.",
+      "simple": "Lado direito / mão direita — ofício (executar, precisar); elo metáfora mão direita × coração (gesto × cuidado), sem moral dualista.",
+      "simpleEn": "Right side / right hand — craft (execute, refine); metaphor right hand × heart (gesture × care), no moral dualism.",
+      "simpleEs": "Lado derecho / mano derecha — oficio (ejecutar, precisar); metáfora mano derecha × corazón (gesto × cuidado), sin dualismo moral.",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-mao-esquerda-direita.html"
