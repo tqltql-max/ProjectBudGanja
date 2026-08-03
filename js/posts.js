@@ -37,6 +37,8 @@ var SERIES_LABELS = {
   'pesquisa-comunidade': 'Comunidade',
   'canal-movrecam': 'Canal MovReCam',
   'canal-canabinall': 'Canal CANABinALL',
+  'canal-disneyjr': 'Disney Jr. · Canais',
+  'canal-vevo': 'VEVO · Canais',
   'verificacao-equipamento': 'Equipamentos',
   'formacao-academica': 'Extensão académica',
   'loja-cultivo': 'Lojas de cultivo',

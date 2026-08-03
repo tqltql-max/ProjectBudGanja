@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T23:02:39.849Z",
+  "updatedAt": "2026-08-03T23:10:46.786Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,18 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: canal VEVO — rede de videoclipes oficiais",
+      "url": "/posts/post-inspecao-canal-vevo.html",
+      "excerpt": "Canais: VEVO — rede de clipes oficiais no YouTube; âncora Three Little Birds (BobMarleyVEVO); elos Artes e Rádio.",
+      "text": "Inspeção: canal VEVO — rede de videoclipes oficiais Canais: VEVO — rede de clipes oficiais no YouTube; âncora Three Little Birds (BobMarleyVEVO); elos Artes e Rádio. inspecao ## Escopo\n\nInspeção editorial da **rede VEVO** — plataforma de **videoclipes oficiais** das grandes gravadoras, alojada sobretudo no YouTube. No laboratório BudGanja **não** é um canal parceiro de aulas (como [MovReCam](/posts/post-inspecao-canal-movrecam.html) ou [CANABinALL](/posts/post-inspecao-canal-canabinall.html)): é a **infraestrutura de clipes licenciados** que alimenta embeds e faixas da [BudGanja Radio](/radio/) e das fichas [Artes](/biblioteca/inspecoes/#inspecoes-artes).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikipedia · Vevo](https://en.wikipedia.org/wiki/Vevo); hub [YouTube @VEVO](https://www.youtube.com/@VEVO); canais-artista com sufixo **VEVO** (ex. [BobMarleyVEVO](https://www.youtube.com/@BobMarleyVEVO), [RustedRootVEVO](https://www.youtube.com/@RustedRootVEVO), [charliebrownjrVEVO](https://www.youtube.com/@charliebrownjrVEVO)). Crédito: Vevo / Universal Music Group / Sony Music / Warner Music e titulares das obras — **sem afiliação**. Ficha ≠ inventário de todos os canais *VEVO nem endosso comercial. **Hierarquia:** a **canção** (Artes) vem primeiro; o canal VEVO é **transporte oficial** do clipe, não génese da obra.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome | **VEVO** (também Vevo) |\n| Tipo | Rede / marca de **videoclipes oficiais** (não um único artista) |\n| Hub YouTube | [@VEVO](https://www.youtube.com/@VEVO) |\n| Site | [vevo.com](https://www.vevo.com/) |\n| Lançamento | **8 de dezembro de 2009** (joint venture UMG + Sony; EMI no arranque; Warner em licença posterior) |\n| Forma no YouTube | Canais por artista com sufixo **VEVO** + hub de marca |\n| Missão (leitura BudGanja) | Garantir **fonte oficial** do clipe quando o laboratório cita ou adapta música |\n| Tipo BudGanja | Canal — **rede musical**; elo Artes · Rádio · Vida |\n| Ví"
+    },
+    {
+      "title": "Inspeção: canal Disney Jr. Brasil — desenhos e o oceano",
+      "url": "/posts/post-inspecao-canal-disneyjr.html",
+      "excerpt": "Canais: Disney Jr. Brasil (@disneyjrbr) — desenhos em PT; âncora «Aqui no mar»; elo Moana / mar / navegar.",
+      "text": "Inspeção: canal Disney Jr. Brasil — desenhos e o oceano Canais: Disney Jr. Brasil (@disneyjrbr) — desenhos em PT; âncora «Aqui no mar»; elo Moana / mar / navegar. inspecao ## Escopo\n\nInspeção editorial do canal **[Disney Jr. Brasil](https://www.youtube.com/@disneyjrbr)** (@disneyjrbr) — arquivo oficial de **desenhos** Disney Jr. em português. No laboratório BudGanja entra como **hub de Artes · desenho infantil**: músicas com letra, episódios e clipes que conversam com a ficha [Moana](/posts/post-inspecao-filme-moana.html) (oceano, vocação, ilha) e com o léxico [mar](/posts/post-inspecao-palavra-mar.html) / [navegar](/posts/post-inspecao-palavra-navegar.html) / [caminho](/posts/post-inspecao-palavra-caminho.html).\n\n> **Nota metodológica:** auditoria independente. Catálogo espelhado em [Vídeos · Disney Jr.](/videos/?channel=disneyjr) (120 itens recentes no hub — o canal YouTube tem milhares; o laboratório **não** inventaria tudo). Crédito: Disney Jr. Brasil / The Walt Disney Company — **sem afiliação**. Ficha ≠ guia parental completo nem endosso de marca. Âncora editorial: **«Aqui no mar»** ([Pequena Sereia](https://www.youtube.com/watch?v=0u1w_A8J6Hw)) — desenho clássico do oceano que liga o canal à rede Moana.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Canal | **Disney Jr. Brasil** (@disneyjrbr) |\n| Channel ID | `UCunkR_ekffRWZppVa1E6tIA` |\n| URL | [https://www.youtube.com/@disneyjrbr](https://www.youtube.com/@disneyjrbr) |\n| Missão (leitura BudGanja) | Canal oficial Disney Jr. Brasil — desenhos, músicas e episódios infantis em português; no BudGanja entra como hub de Artes · desenho (elo Moana, oceano e literacia lúdica). |\n| Itens no hub | **120** (recorte recente + âncora) |\n| Vídeo âncora | [Aqui no mar | com letra | A Pequena Sereia](https://www.youtube.com/watch?v=0u1w_A8J6Hw) |\n| Tipo BudGanja | Canal — **desenhos** · Artes lúdica · elo Moana |\n| Elo Artes | [Moana (2016)](/posts/post-inspecao-filme-moana.html) · [Divertida Mente](/posts/p"
     },
     {
       "title": "Inspeção: Moana — o desenho do oceano, da vocação e da ilha",

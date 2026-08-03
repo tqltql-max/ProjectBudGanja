@@ -646,6 +646,25 @@
     "seriesLabel": "Uva · fruto"
   },
   {
+    "title": "Inspeção: canal Disney Jr. Brasil — desenhos e o oceano",
+    "titleEn": "Inspection: Disney Jr. Brasil channel — cartoons and the ocean",
+    "titleEs": "Inspección: canal Disney Jr. Brasil — dibujos y el océano",
+    "excerpt": "Canais: Disney Jr. Brasil (@disneyjrbr) — desenhos em PT; âncora «Aqui no mar»; elo Moana / mar / navegar.",
+    "excerptEn": "Channels: Disney Jr. Brasil (@disneyjrbr) — PT cartoons; anchor “Aqui no mar”; link Moana / mar / navegar.",
+    "excerptEs": "Canales: Disney Jr. Brasil (@disneyjrbr) — dibujos en PT; ancla «Aqui no mar»; vínculo Moana / mar / navegar.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-canal-disneyjr",
+    "url": "/posts/post-inspecao-canal-disneyjr.html",
+    "date": "2026-08-03T23:30:00.000Z",
+    "filename": "posts/post-inspecao-canal-disneyjr.html",
+    "coverImage": "/imagens/inspecoes/disneyjr-canal-cover.jpg",
+    "category": "inspecao",
+    "series": "canal-disneyjr",
+    "seriesOrder": 12,
+    "seriesLabel": "Disney Jr. · Canais"
+  },
+  {
     "title": "Inspeção: Renato Russo — Legião Urbana, letra geracional e a série Palavras",
     "titleEn": "Inspection: Renato Russo — Legião Urbana, generational lyrics and the Words series",
     "titleEs": "Inspección: Renato Russo — Legião Urbana, letra generacional y la serie Palabras",
@@ -701,6 +720,25 @@
     "series": "plantas-frutos",
     "seriesOrder": 12,
     "seriesLabel": "Morango · fruto"
+  },
+  {
+    "title": "Inspeção: canal VEVO — rede de videoclipes oficiais",
+    "titleEn": "Inspection: VEVO channel — official music-video network",
+    "titleEs": "Inspección: canal VEVO — red de videoclips oficiales",
+    "excerpt": "Canais: VEVO — rede de clipes oficiais no YouTube; âncora Three Little Birds (BobMarleyVEVO); elos Artes e Rádio.",
+    "excerptEn": "Channels: VEVO — official YouTube music-video network; anchor Three Little Birds (BobMarleyVEVO); Arts and Radio links.",
+    "excerptEs": "Canales: VEVO — red de clips oficiales en YouTube; ancla Three Little Birds (BobMarleyVEVO); vínculos Artes y Radio.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-canal-vevo",
+    "url": "/posts/post-inspecao-canal-vevo.html",
+    "date": "2026-08-04T00:10:00.000Z",
+    "filename": "posts/post-inspecao-canal-vevo.html",
+    "coverImage": "/imagens/inspecoes/vevo-canal-cover.jpg",
+    "category": "inspecao",
+    "series": "canal-vevo",
+    "seriesOrder": 13,
+    "seriesLabel": "VEVO · Canais"
   },
   {
     "title": "Inspeção: Planta — Gengibre — gingeróis e rizoma picante",

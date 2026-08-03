@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T23:07:42.625Z",
+  "updatedAt": "2026-08-03T23:10:32.563Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4755,6 +4755,29 @@
         "/videos/?channel=disneyjr"
       ],
       "notes": "Hub /videos/?channel=disneyjr · tema Desenhos."
+    },
+    {
+      "id": "canal-vevo",
+      "title": "VEVO — rede de videoclipes oficiais",
+      "titleEn": "VEVO — official music-video network",
+      "titleEs": "VEVO — red de videoclips oficiales",
+      "tipo": "canal",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canais: rede VEVO — clipes oficiais; âncora Three Little Birds; elos Artes/Rádio.",
+      "whyEn": "Channels: VEVO network — official clips; Three Little Birds anchor; Arts/Radio links.",
+      "whyEs": "Canales: red VEVO — clips oficiales; ancla Three Little Birds; vínculos Artes/Radio.",
+      "suggestedSlug": "inspecao-canal-vevo",
+      "doneHref": "/posts/post-inspecao-canal-vevo.html",
+      "seriesHint": "canal-vevo",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vevo",
+        "https://www.youtube.com/@VEVO",
+        "https://www.youtube.com/watch?v=HNBCVM4KbUM",
+        "/radio/",
+        "/posts/post-inspecao-arte-send-me-on-my-way.html"
+      ],
+      "notes": "Rede meta (não um artista). Distinto de MovReCam/CANABinALL/Disney Jr."
     }
   ]
 }

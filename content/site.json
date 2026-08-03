@@ -487,6 +487,14 @@
                   "description": "Relatório educacional de Uva (*Vitis vinifera L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
                 },
                 {
+                  "label": "Inspeção: canal Disney Jr. Brasil — desenhos e o oceano",
+                  "tileLabel": "Inspeção: canal Disney Jr. Bras…",
+                  "href": "/posts/post-inspecao-canal-disneyjr.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-canal-disneyjr",
+                  "description": "Canais: Disney Jr. Brasil (@disneyjrbr) — desenhos em PT; âncora «Aqui no mar»; elo Moana / mar / navegar."
+                },
+                {
                   "label": "Inspeção: Renato Russo — Legião Urbana, letra geracional e a série Palavras",
                   "tileLabel": "Inspeção: Renato Russo — Legião…",
                   "href": "/posts/post-inspecao-figura-renato-russo.html",
@@ -509,6 +517,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-morango",
                   "description": "Relatório educacional de Morango (*Fragaria × ananassa Duchesne): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: canal VEVO — rede de videoclipes oficiais",
+                  "tileLabel": "Inspeção: canal VEVO — rede de …",
+                  "href": "/posts/post-inspecao-canal-vevo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-canal-vevo",
+                  "description": "Canais: VEVO — rede de clipes oficiais no YouTube; âncora Three Little Birds (BobMarleyVEVO); elos Artes e Rádio."
                 },
                 {
                   "label": "Inspeção: Planta — Gengibre — gingeróis e rizoma picante",
