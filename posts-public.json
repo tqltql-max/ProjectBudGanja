@@ -3135,6 +3135,25 @@
     "seriesLabel": "Cannabis (medicinal)"
   },
   {
+    "title": "Inspeção: Genial — engenho, elogio e o risco do culto vazio",
+    "titleEn": "Inspection: Genial — ingenuity, praise and the risk of empty cult",
+    "titleEs": "Inspección: Genial — ingenio, elogio y el riesgo del culto vacío",
+    "excerpt": "Palavras: «genial» (*gênio* + *-al*) — elogio de engenho no BR; com método sim; culto vazio / sem inspeção = ressalva; Faça o melhor! ≠ seja génio.",
+    "excerptEn": "Words: “genial” (*gênio* + *-al*) — BR praise of ingenuity; with method yes; empty cult = caveat; Do your best! ≠ be a genius.",
+    "excerptEs": "Palabras: «genial» (*gênio* + *-al*) — elogio BR de ingenio; con método sí; culto vacío = salvedad; ¡Haz lo mejor! ≠ sé un genio.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-genial",
+    "url": "/posts/post-inspecao-palavra-genial.html",
+    "date": "2026-08-03T14:20:00.000Z",
+    "filename": "posts/post-inspecao-palavra-genial.html",
+    "coverImage": "/imagens/inspecoes/genial-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 30,
+    "seriesLabel": "Genial · palavra"
+  },
+  {
     "title": "Inspeção: Proibição e Proibicionismo — camada política da classificação",
     "titleEn": "Inspection: Proibição and Proibicionismo — political layer of classification",
     "titleEs": "Inspección: Prohibición y Prohibicionismo — capa política de la clasificación",

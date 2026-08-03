@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T12:40:24.788Z",
+  "updatedAt": "2026-08-03T12:43:47.799Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2966,6 +2966,28 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 29 — par oral aff×já; não confundir com código ja (japonês)."
+    },
+    {
+      "id": "palavra-genial",
+      "title": "Genial — engenho, elogio e culto vazio",
+      "titleEn": "Genial — ingenuity, praise and empty cult",
+      "titleEs": "Genial — ingenio, elogio y culto vacío",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: «genial» — elogio de engenho; com método sim; culto vazio = ressalva; elo Faça o melhor / criatividade.",
+      "whyEn": "Words: “genial” — praise of ingenuity; method yes; empty cult = caveat; link Do your best / creativity.",
+      "whyEs": "Palabras: «genial» — elogio de ingenio; método sí; culto vacío = salvedad; vínculo Haz lo mejor / creatividad.",
+      "suggestedSlug": "inspecao-palavra-genial",
+      "doneHref": "/posts/post-inspecao-palavra-genial.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/genial",
+        "/posts/post-inspecao-palavra-criatividade.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-figura-ayrton-senna.html"
+      ],
+      "notes": "Cap. 30 — falso amigo EN genial (amável)."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T12:40:36.692Z",
+  "updatedAt": "2026-08-03T12:43:59.430Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Genial — engenho, elogio e o risco do culto vazio",
+      "url": "/posts/post-inspecao-palavra-genial.html",
+      "excerpt": "Palavras: «genial» (*gênio* + *-al*) — elogio de engenho no BR; com método sim; culto vazio / sem inspeção = ressalva; Faça o melhor! ≠ seja génio.",
+      "text": "Inspeção: Genial — engenho, elogio e o risco do culto vazio Palavras: «genial» (*gênio* + *-al*) — elogio de engenho no BR; com método sim; culto vazio / sem inspeção = ressalva; Faça o melhor! ≠ seja génio. inspecao ## Escopo\n\nInspeção editorial da palavra **genial** — adjetivo (e interjeição de elogio no português do Brasil). Morfologia: [gênio](https://pt.wiktionary.org/wiki/g%C3%AAnio) + *-al*. Nomeia o que parece **nascido do engenho** — ideia luminosa, solução elegante, obra que acerta. No laboratório, «genial!» é festa legítima; **não** substitui o [gesto](/posts/post-inspecao-palavra-gesto.html) nem o mantra [Faça o melhor!](/posts/post-inspecao-expressao-faca-o-melhor.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · genial](https://pt.wiktionary.org/wiki/genial), [gênio](https://pt.wiktionary.org/wiki/g%C3%AAnio), uso oral BR contemporâneo. **Ficha ≠ culto do génio inato.** Distinto do inglês *genial* («amável / clima ameno») — falso amigo parcial. Sem afiliação a rankings de IQ.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **genial** |\n| Classe | Adjetivo · interjeição de elogio (uso oral BR) |\n| Étimo | *gênio* + *-al* ← lat. *genius* (espírito tutelar / engenho) — confiança: alta |\n| Família | *gênio* · *genialmente* · *genialidade* · fr. *génial* · esp. *genial* · it. *geniale* |\n| Falso amigo EN | Ingl. *genial* ≈ amável / temperado — **não** o elogio BR «genial!» |\n| Tipo BudGanja | Palavra — elogio de engenho; risco de flattery vazia ou culto do génio |\n| Elo principal | [criatividade](/posts/post-inspecao-palavra-criatividade.html) · [Faça o melhor!](/posts/post-inspecao-expressao-faca-o-melhor.html) |\n| Elo ofício | [gesto](/posts/post-inspecao-palavra-gesto.html) · [verdade](/posts/post-inspecao-palavra-verdade.html) · [caminho](/posts/post-inspecao-palavra-caminho.html) · [Ayrton Senna](/posts/post-inspecao-figura-ayrton-senna.html) |\n| Data | 2026-08-03 |\n\n## Hipóteses e método\n\n**H1:** "
     },
     {
       "title": "Inspeção: Já — o relógio da frase e o par com aff",
@@ -1710,6 +1716,12 @@
       "url": "/posts/post-inspecao-palavra-ja.html",
       "excerpt": "Latim *iam* — advérbio de tempo/urgência; no BudGanja, par oral com «aff»; fecho vazio («já deu») = ressalva.",
       "text": "já Latim *iam* — advérbio de tempo/urgência; no BudGanja, par oral com «aff»; fecho vazio («já deu») = ressalva. lexico guia palavras glossário ja"
+    },
+    {
+      "title": "genial",
+      "url": "/posts/post-inspecao-palavra-genial.html",
+      "excerpt": "*Gênio* + *-al* — elogio de engenho no BR; no BudGanja, celebra o feito com método; culto vazio = ressalva.",
+      "text": "genial *Gênio* + *-al* — elogio de engenho no BR; no BudGanja, celebra o feito com método; culto vazio = ressalva. lexico guia palavras glossário genial"
     },
     {
       "title": "Alegria",

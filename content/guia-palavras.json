@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T12:40:24.791Z",
+  "updatedAt": "2026-08-03T12:43:47.801Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -134,6 +134,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-ja.html"
+    },
+    {
+      "id": "genial",
+      "word": "genial",
+      "simple": "*Gênio* + *-al* — elogio de engenho no BR; no BudGanja, celebra o feito com método; culto vazio = ressalva.",
+      "simpleEn": "*Gênio* + *-al* — BR praise of ingenuity; in BudGanja, celebrate the deed with method; empty cult = caveat.",
+      "simpleEs": "*Gênio* + *-al* — elogio BR de ingenio; en BudGanja, celebrar el hecho con método; culto vacío = salvedad.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-genial.html"
     },
     {
       "id": "alegria",
