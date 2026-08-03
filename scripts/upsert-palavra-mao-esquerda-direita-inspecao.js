@@ -89,9 +89,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: «mão esquerda» / «mão direita» (*manus*) — ferramentas do gesto e do teclado; complementaridade, não moral dualista.',
-      whyEn: 'Words: “mão esquerda” / “mão direita” (*manus*) — tools of gesture and typing; complementarity, not moral dualism.',
-      whyEs: 'Palabras: «mão esquerda» / «mão direita» (*manus*) — herramientas del gesto y el teclado; complementariedad, no dualismo moral.',
+      why: 'Palavras: «mão esquerda» / «mão direita» (*manus*) — complementaridade de ofício; secção mão direita × coração (gesto × cuidado); anti-estigma.',
+      whyEn: 'Words: “mão esquerda” / “mão direita” (*manus*) — craft complementarity; right hand × heart (gesture × care); anti-stigma.',
+      whyEs: 'Palabras: «mão esquerda» / «mão direita» (*manus*) — complementariedad de oficio; mano derecha × corazón (gesto × cuidado); anti-estigma.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -100,12 +100,15 @@ async function main() {
         'https://pt.wiktionary.org/wiki/esquerda',
         'https://pt.wiktionary.org/wiki/direita',
         'https://en.wiktionary.org/wiki/manus#Latin',
+        'https://pt.wikipedia.org/wiki/Cora%C3%A7%C3%A3o',
         '/posts/post-inspecao-palavra-gesto.html',
         '/posts/post-inspecao-palavra-backspace.html',
+        '/posts/post-inspecao-palavra-esquerdo.html',
         '/posts/post-inspecao-expressao-faca-o-melhor.html',
-        '/vida/'
+        '/vida/',
+        '/vida/diario/'
       ],
-      notes: 'Par único Cap. 25 — complementaridade de ofício; evitar preconceito «sinistra».'
+      notes: 'Par único Cap. 25 — complementaridade de ofício; secção mão direita × coração; evitar preconceito «sinistra».'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);
@@ -164,11 +167,11 @@ async function main() {
           id: 'direita',
           word: 'Direita',
           simple:
-            'Lado direito / mão direita — no BudGanja, papel de ofício (executar, precisar) em complementaridade com a esquerda.',
+            'Lado direito / mão direita — ofício (executar, precisar); elo metáfora mão direita × coração (gesto × cuidado), sem moral dualista.',
           simpleEn:
-            'Right side / right hand — in BudGanja, a craft role (execute, refine) complementary to the left.',
+            'Right side / right hand — craft (execute, refine); metaphor right hand × heart (gesture × care), no moral dualism.',
           simpleEs:
-            'Lado derecho / mano derecha — en BudGanja, papel de oficio (ejecutar, precisar) en complementariedad con la izquierda.'
+            'Lado derecho / mano derecha — oficio (ejecutar, precisar); metáfora mano derecha × corazón (gesto × cuidado), sin dualismo moral.'
         },
         shared
       ),
