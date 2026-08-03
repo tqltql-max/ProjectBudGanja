@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:04:09.215Z",
+  "updatedAt": "2026-08-03T15:14:07.093Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4057,6 +4057,30 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 84 — sopro vivo; tipografia spnresoarpi → inspiração."
+    },
+    {
+      "id": "palavra-pular",
+      "title": "Pular — salto, omissão e derivações",
+      "titleEn": "Pular — jump, skip and derivatives",
+      "titleEs": "Pular — salto, omisión y derivaciones",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: pular (lat. pullāre) — salto × omitir; pulo/pulinho/pulada; passar/backspace/já; Faça o melhor!",
+      "whyEn": "Words: pular (Lat. pullāre) — jump × skip; pulo/pulinho/pulada; passar/backspace/já; Do your best!",
+      "whyEs": "Palabras: pular (lat. pullāre) — salto × omitir; pulo/pulinho/pulada; passar/backspace/já; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-pular",
+      "doneHref": "/posts/post-inspecao-palavra-pular.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/pular",
+        "https://pt.wiktionary.org/wiki/pulo",
+        "/posts/post-inspecao-palavra-passar.html",
+        "/posts/post-inspecao-palavra-backspace.html",
+        "/posts/post-inspecao-palavra-ja.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 85 — inclui derivações; gatilho lab skip inspecao → pular."
     }
   ]
 }

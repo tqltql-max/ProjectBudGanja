@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:04:09.218Z",
+  "updatedAt": "2026-08-03T15:14:07.096Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -434,6 +434,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-ja.html"
+    },
+    {
+      "id": "pular",
+      "word": "pular",
+      "simple": "Lat. pullāre — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar/backspace/já; Faça o melhor com o pulo certo.",
+      "simpleEn": "Lat. pullāre — jump × skip BR; derivatives pulo/pulinho/pulada; links passar/backspace/já; Do your best with the right leap.",
+      "simpleEs": "Lat. pullāre — salto × omitir BR; derivaciones pulo/pulinho/pulada; vínculos passar/backspace/já; Haz lo mejor con el salto correcto.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-pular.html"
     },
     {
       "id": "genial",
