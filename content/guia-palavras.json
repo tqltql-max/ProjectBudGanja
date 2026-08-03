@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:37:39.764Z",
+  "updatedAt": "2026-08-03T16:40:26.996Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1624,6 +1624,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-gesto.html"
+    },
+    {
+      "id": "pedi-mao",
+      "word": "pedi a mão",
+      "simple": "Pedir + mão — ajuda («uma mão») ou compromisso («a mão»); elos mãos/gesto; Faça o melhor ao pedir e ao dar.",
+      "simpleEn": "Ask + hand — help (“uma mão”) or commitment (“a mão”); links hands/gesture; Do your best asking and giving.",
+      "simpleEs": "Pedir + mano — ayuda («uma mão») o compromiso («a mão»); vínculos manos/gesto; Haz lo mejor al pedir y dar.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-pedi-mao.html"
     },
     {
       "id": "gluten",

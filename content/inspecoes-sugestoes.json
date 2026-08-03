@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:37:39.761Z",
+  "updatedAt": "2026-08-03T16:40:26.992Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4411,6 +4411,28 @@
         "/posts/post-inspecao-palavra-gesto.html"
       ],
       "notes": "Cap. 100 — ≠ húngaro nap (dia)."
+    },
+    {
+      "id": "palavra-pedi-mao",
+      "title": "Pedi a mão — ajuda, pedido e gesto aberto",
+      "titleEn": "Pedi a mão — help, asking and open gesture",
+      "titleEs": "Pedi a mão — ayuda, pedido y gesto abierto",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: pedi a mão (pedimao) — ajuda ou compromisso; mãos/gesto/respeito; Faça o melhor!",
+      "whyEn": "Words: pedi a mão (pedimao) — help or commitment; hands/gesture/respect; Do your best!",
+      "whyEs": "Palabras: pedi a mão (pedimao) — ayuda o compromiso; manos/gesto/respeto; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-pedi-mao",
+      "doneHref": "/posts/post-inspecao-palavra-pedi-mao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/m%C3%A3o",
+        "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 101 — uma mão = ajuda; a mão = compromisso."
     }
   ]
 }
