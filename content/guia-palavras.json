@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T14:00:05.679Z",
+  "updatedAt": "2026-08-03T14:22:16.126Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -244,6 +244,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-aff.html"
+    },
+    {
+      "id": "muitoobrigado",
+      "word": "muitoobrigado",
+      "simple": "Expressão oral BR — gratidão reforçada (muito obrigado colado); contraste com aff; elos gesto e jesusamando; depois Faça o melhor!",
+      "simpleEn": "Brazilian oral saying — reinforced gratitude (thank you very much as one word); contrast with aff; gesture + jesusamando; then Do your best!",
+      "simpleEs": "Expresión oral BR — gratitud reforzada (muchas gracias pegado); contraste con aff; gesto + jesusamando; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-muito-obrigado.html"
     },
     {
       "id": "maravilhoso",

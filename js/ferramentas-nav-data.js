@@ -215,6 +215,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Capítulos florais ricos em flavonoides e óleo essencial — chá calmante clássico com perfil químico documentado."
             },
             {
+              "label": "Inspeção: jesusamando — assombro, afeto e oralidade BR",
+              "tileLabel": "Inspeção: jesusamando — assombr…",
+              "href": "/posts/post-inspecao-expressao-jesusamando.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-jesusamando",
+              "description": "Expressões: «jesusamando» — sopro BR de assombro e afeto; contraste com aff; elo língua portuguesa e Faça o melhor!"
+            },
+            {
               "label": "Inspeção: Planta — Capim-limão — citral e gramínea aromática",
               "tileLabel": "Inspeção: Planta — Capim-limão …",
               "href": "/posts/post-inspecao-planta-capim-limao.html",
@@ -301,6 +309,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-maca",
               "description": "Relatório educacional de Maçã (*Malus domestica Borkh.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: muitoobrigado — gratidão reforçada e oralidade BR",
+              "tileLabel": "Inspeção: muitoobrigado — grati…",
+              "href": "/posts/post-inspecao-expressao-muito-obrigado.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-muito-obrigado",
+              "description": "Expressões: «muitoobrigado» — gratidão reforçada (muito obrigado); contraste com aff; elos gesto, respeito, jesusamando; Faça o melhor!"
             },
             {
               "label": "Inspeção: Planta — Guaco — cumarina e trepadeira respiratória",
@@ -805,14 +821,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-fogo",
               "description": "Palavras: «fogo» (lat. *focus*) — elemento e metáfora; elos água, raiva e cultivo; Faça o melhor! com medida."
-            },
-            {
-              "label": "Inspeção: jesusamando — assombro, afeto e oralidade BR",
-              "tileLabel": "Inspeção: jesusamando — assombr…",
-              "href": "/posts/post-inspecao-expressao-jesusamando.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-expressao-jesusamando",
-              "description": "Expressões: «jesusamando» — sopro BR de assombro e afeto; contraste com aff; elo língua portuguesa e Faça o melhor!"
             },
             {
               "label": "Inspeção: Mão esquerda / mão direita — complementaridade do ofício",

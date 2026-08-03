@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T14:16:45.990Z",
+  "updatedAt": "2026-08-03T14:22:16.122Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3962,6 +3962,29 @@
         "/posts/post-inspecao-palavra-lingua-portuguesa.html"
       ],
       "notes": "Cap. 6 Expressões — ditado Deus ajuda quem cedo madruga → duasakdiqujdocedomadur."
+    },
+    {
+      "id": "expressao-muito-obrigado",
+      "title": "muitoobrigado — gratidão reforçada e oralidade BR",
+      "titleEn": "muitoobrigado — reinforced gratitude and Brazilian orality",
+      "titleEs": "muitoobrigado — gratitud reforzada y oralidad BR",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: muito obrigado colado; gratidão reforçada; elos gesto, respeito, jesusamando; contraste aff.",
+      "whyEn": "Sayings: muito obrigado as one word; reinforced gratitude; links gesture, respect, jesusamando; contrast aff.",
+      "whyEs": "Dichos: muito obrigado pegado; gratitud reforzada; vínculos gesto, respeito, jesusamando; contraste aff.",
+      "suggestedSlug": "inspecao-expressao-muito-obrigado",
+      "doneHref": "/posts/post-inspecao-expressao-muito-obrigado.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-jesusamando.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-respeito.html",
+        "/posts/post-inspecao-palavra-aff.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 8 Expressões — gratidão reforçada / muito obrigado → muitoobrigado."
     }
   ]
 }
