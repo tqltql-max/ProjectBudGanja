@@ -969,6 +969,25 @@
     "seriesLabel": "Memorável · palavra"
   },
   {
+    "title": "Inspeção: Multitask — empréstimo, parece×é e correção de ofício",
+    "titleEn": "Inspection: Multitask — loanword, seems×is and craft correction",
+    "titleEs": "Inspección: Multitask — préstamo, parece×es y corrección de oficio",
+    "excerpt": "Palavras: «multitask» / «multitarefa» — empréstimo EN→BR; o que parece vs o que é; correção: ≠ fazer tudo bem ao mesmo tempo; Faça o melhor! com método.",
+    "excerptEn": "Words: “multitask” / “multitarefa” — EN→BR loan; seems vs is; correction: ≠ doing everything well at once; Do your best! with method.",
+    "excerptEs": "Palabras: «multitask» / «multitarefa» — préstamo EN→BR; parece vs es; corrección: ≠ hacerlo todo bien a la vez; ¡Haz lo mejor! con método.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-multitask",
+    "url": "/posts/post-inspecao-palavra-multitask.html",
+    "date": "2026-08-03T19:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-multitask.html",
+    "coverImage": "/imagens/inspecoes/multitask-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 47,
+    "seriesLabel": "Multitask · palavra"
+  },
+  {
     "title": "Inspeção: Incrível — incredibilis, elogio BR e a escala legal→genial",
     "titleEn": "Inspection: Incrível — incredibilis, BR praise, and the legal→genial scale",
     "titleEs": "Inspección: Incrível — incredibilis, elogio BR y la escala legal→genial",
@@ -1423,25 +1442,6 @@
     "series": "expressoes-ditados",
     "seriesOrder": null,
     "seriesLabel": "ausdhuashduas · expressão"
-  },
-  {
-    "title": "Inspeção: Multitask — empréstimo, parece×é e correção de ofício",
-    "titleEn": "Inspection: Multitask — loanword, seems×is and craft correction",
-    "titleEs": "Inspección: Multitask — préstamo, parece×es y corrección de oficio",
-    "excerpt": "Palavras: «multitask» / «multitarefa» — empréstimo EN→BR; o que parece vs o que é; correção: ≠ fazer tudo bem ao mesmo tempo; Faça o melhor! com método.",
-    "excerptEn": "Words: “multitask” / “multitarefa” — EN→BR loan; seems vs is; correction: ≠ doing everything well at once; Do your best! with method.",
-    "excerptEs": "Palabras: «multitask» / «multitarefa» — préstamo EN→BR; parece vs es; corrección: ≠ hacerlo todo bien a la vez; ¡Haz lo mejor! con método.",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-palavra-multitask",
-    "url": "/posts/post-inspecao-palavra-multitask.html",
-    "date": "2026-08-03T19:00:00.000Z",
-    "filename": "posts/post-inspecao-palavra-multitask.html",
-    "coverImage": "/imagens/inspecoes/multitask-palavra-cover.jpg",
-    "category": "inspecao",
-    "series": "palavras-origem",
-    "seriesOrder": null,
-    "seriesLabel": "Multitask · palavra"
   },
   {
     "title": "Inspeção: deu certo, galera — celebração colectiva e oralidade BR",
