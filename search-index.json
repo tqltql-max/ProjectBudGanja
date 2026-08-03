@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T23:10:46.786Z",
+  "updatedAt": "2026-08-03T23:22:29.426Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Mãe — origem, cuidado e tipografia fia → mãe",
+      "url": "/posts/post-inspecao-palavra-mae.html",
+      "excerpt": "Palavras: «mãe» (lat. *mater*) — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria, alma, coração; Faça o melhor!",
+      "text": "Inspeção: Mãe — origem, cuidado e tipografia fia → mãe Palavras: «mãe» (lat. *mater*) — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria, alma, coração; Faça o melhor! inspecao ## Escopo\n\nInspeção editorial da palavra **mãe** — quem **gera, cria e guarda**; no português do Brasil, centro de afecto, autoridade doméstica e metáfora de origem («língua-mãe», «casa-mãe»). Pedido do lab: **alterar** a forma **fia** para a forma canónica **mãe** — tipografia e ofício, sem confundir com o oral nordestino *fia* (= *filha*).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · mãe](https://pt.wiktionary.org/wiki/m%C3%A3e), série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras), personagem [Dona Maria](/posts/post-inspecao-personagem-dona-maria.html) no hub [Vida](/vida/). **Ficha ≠ biografia clínica nem sermão familiar.** Tom: Inspetor BudGanja — *mãe* nomeia vínculo e cuidado; ofício honra sem idolatrar. Sem afiliação religiosa exclusiva.\n\n## 1. Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **mãe** |\n| Classe | Substantivo feminino |\n| Étimo (trabalho) | lat. *mater* → pt. *mãe* — confiança: **alta** |\n| Família | *maternal* · *materno* · *madrinha* · *madrasta* · *matriz* |\n| Cognatos / paralelos | esp. *madre* · fr. *mère* · it. *madre* · ing. *mother* · lat. *mater* |\n| Tipografia lab | **fia → mãe** (forma canónica desta ficha) |\n| Tipo BudGanja | Palavra — origem × cuidado × vínculo |\n| Elo vivo | [alma](/posts/post-inspecao-palavra-alma.html) · [coração](/posts/post-inspecao-palavra-coracao.html) · [vida](/posts/post-inspecao-palavra-vida.html) · [respeito](/posts/post-inspecao-palavra-respeito.html) |\n| Elo ofício | [gesto](/posts/post-inspecao-palavra-gesto.html) · [verdade](/posts/post-inspecao-palavra-verdade.html) · [relação](/posts/post-inspecao-palavra-relacao.html) · [língua portuguesa](/posts/post-inspecao-palavra-lingua-portuguesa.html) |\n| Elo narrativa | [Dona Maria](/posts/post-in"
     },
     {
       "title": "Inspeção: canal VEVO — rede de videoclipes oficiais",
@@ -2622,6 +2628,12 @@
       "url": "/posts/post-inspecao-palavra-coracao.html",
       "excerpt": "Lat. cor — órgão, afeto, centro e coragem; elo mãos/esquerdo (gesto cultural, não dogma); Faça o melhor de coração.",
       "text": "coração Lat. cor — órgão, afeto, centro e coragem; elo mãos/esquerdo (gesto cultural, não dogma); Faça o melhor de coração. lexico guia palavras glossário coracao"
+    },
+    {
+      "title": "mãe",
+      "url": "/posts/post-inspecao-palavra-mae.html",
+      "excerpt": "Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor!",
+      "text": "mãe Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor! lexico guia palavras glossário mae"
     },
     {
       "title": "alma",

@@ -2147,6 +2147,25 @@
     "seriesLabel": "Meneia · palavra"
   },
   {
+    "title": "Inspeção: Mãe — origem, cuidado e tipografia fia → mãe",
+    "titleEn": "Inspection: Mãe — origin, care and tipography fia → mãe",
+    "titleEs": "Inspección: Mãe — origen, cuidado y tipografía fia → mãe",
+    "excerpt": "Palavras: «mãe» (lat. *mater*) — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria, alma, coração; Faça o melhor!",
+    "excerptEn": "Words: “mãe” (Lat. *mater*) — origin and care; tipography fia → mãe; NE fia (= daughter) ≠ mother; links Dona Maria, alma; Do your best!",
+    "excerptEs": "Palabras: «mãe» (lat. *mater*) — origen y cuidado; tipografía fia → mãe; fia NE (= hija) ≠ madre; vínculos Dona Maria, alma; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-mae",
+    "url": "/posts/post-inspecao-palavra-mae.html",
+    "date": "2026-08-03T23:20:00.000Z",
+    "filename": "posts/post-inspecao-palavra-mae.html",
+    "coverImage": "/imagens/inspecoes/mae-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 111,
+    "seriesLabel": "Mãe · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",

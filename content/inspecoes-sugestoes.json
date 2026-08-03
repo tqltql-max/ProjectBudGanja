@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T23:10:32.563Z",
+  "updatedAt": "2026-08-03T23:22:08.433Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4778,6 +4778,28 @@
         "/posts/post-inspecao-arte-send-me-on-my-way.html"
       ],
       "notes": "Rede meta (não um artista). Distinto de MovReCam/CANABinALL/Disney Jr."
+    },
+    {
+      "id": "palavra-mae",
+      "title": "Mãe — origem, cuidado e tipografia fia → mãe",
+      "titleEn": "Mãe — origin, care and tipography fia → mãe",
+      "titleEs": "Mãe — origen, cuidado y tipografía fia → mãe",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: mãe (lat. mater) — origem/cuidado; tipografia fia → mãe; fia NE (= filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor!",
+      "whyEn": "Words: mãe (Lat. mater) — origin/care; tipography fia → mãe; NE fia (= daughter) ≠ mother; Dona Maria/alma; Do your best!",
+      "whyEs": "Palabras: mãe (lat. mater) — origen/cuidado; tipografía fia → mãe; fia NE (= hija) ≠ madre; Dona Maria/alma; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-mae",
+      "doneHref": "/posts/post-inspecao-palavra-mae.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/m%C3%A3e",
+        "/posts/post-inspecao-personagem-dona-maria.html",
+        "/posts/post-inspecao-palavra-alma.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 111 — tipografia fia → mãe; oral NE fia ≠ mãe."
     }
   ]
 }

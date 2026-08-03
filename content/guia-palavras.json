@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T21:08:54.053Z",
+  "updatedAt": "2026-08-03T23:22:08.436Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -904,6 +904,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-coracao.html"
+    },
+    {
+      "id": "mae",
+      "word": "mãe",
+      "simple": "Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor!",
+      "simpleEn": "Lat. mater — origin and care; tipography fia → mãe; NE fia (= daughter) ≠ mother; Dona Maria/alma; Do your best!",
+      "simpleEs": "Lat. mater — origen y cuidado; tipografía fia → mãe; fia NE (= hija) ≠ madre; Dona Maria/alma; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mae.html"
     },
     {
       "id": "alma",
