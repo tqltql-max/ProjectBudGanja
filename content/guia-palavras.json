@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:51:07.475Z",
+  "updatedAt": "2026-08-03T13:51:23.045Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -176,6 +176,16 @@
       "href": "/posts/post-inspecao-palavra-memoravel.html"
     },
     {
+      "id": "passado",
+      "word": "passado",
+      "simple": "De passar / lat. passāre — tempo já decorrido; memória × história; elos memorável, verdade, língua; Faça o melhor!",
+      "simpleEn": "From passar / Lat. passāre — elapsed time; memory × history; links memorável, truth, language; Do your best!",
+      "simpleEs": "De passar / lat. passāre — tiempo trascurrido; memoria × historia; vínculos memorável, verdad, lengua; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-passado.html"
+    },
+    {
       "id": "incrivel",
       "word": "incrível",
       "simple": "Lat. incredibilis — inacreditável e elogio BR «uau»; escala legal → especial → genial → incrível; Faça o melhor!",
@@ -236,6 +246,16 @@
       "href": "/posts/post-inspecao-palavra-maravilhoso.html"
     },
     {
+      "id": "magnifico",
+      "word": "magnífico",
+      "simple": "Lat. magnificus / magnificent — elogio BR quotidiano («que grande!»); escala com legal, genial, fabuloso, fantástico, incrível, maravilhoso; Faça o melhor com rasto.",
+      "simpleEn": "Lat. magnificus / magnificent — everyday BR praise; scale with legal, genial, fabuloso, fantástico, incrível, maravilhoso; Do your best with a trail.",
+      "simpleEs": "Lat. magnificus / magnificent — elogio BR cotidiano; escala con legal, genial, fabuloso, fantástico, incrível, maravilloso; Haz lo mejor con rastro.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-magnifico.html"
+    },
+    {
       "id": "ausdhuashduas",
       "word": "ausdhuashduas",
       "simple": "Expressão oral BR — nome lab do riso tipado (substitui kkkk… e «risas online»); contraste com aff; depois Faça o melhor!",
@@ -266,6 +286,16 @@
       "href": "/posts/post-inspecao-palavra-inseto.html"
     },
     {
+      "id": "selvagem",
+      "word": "selvagem",
+      "simple": "Lat. silvaticus ← silva — da mata; selvagem × domesticado; «bicho selvagem»; elos planta/animal/inseto; sem romantizar dano.",
+      "simpleEn": "Lat. silvaticus ← silva — of the forest; wild vs domesticated; plant/animal/insect links; no romance of harm.",
+      "simpleEs": "Lat. silvaticus ← silva — del bosque; salvaje × domesticado; vínculos planta/animal/insecto; sin romantizar daño.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-selvagem.html"
+    },
+    {
       "id": "multitarefa",
       "word": "multitarefa",
       "simple": "Forma PT irmã de multitask — mesma correção: não é fazer tudo bem ao mesmo tempo; método e limites.",
@@ -284,6 +314,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-multitask.html"
+    },
+    {
+      "id": "habilidade",
+      "word": "habilidade",
+      "simple": "Irmã PT de skill — capacidade treinável; no lab preferir rasto ao badge; ver ficha skill.",
+      "simpleEn": "PT sister of skill — trainable capacity; lab prefers trail over badge; see skill sheet.",
+      "simpleEs": "Hermana PT de skill — capacidad entrenable; el lab prefiere rastro a insignia; ver ficha skill.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-skill.html"
+    },
+    {
+      "id": "skill",
+      "word": "skill",
+      "simple": "Empréstimo EN→BR; habilidade/craft com rasto; anti-badge LinkedIn; elos multitask e genial; Faça o melhor!",
+      "simpleEn": "EN→BR loan; habilidade/craft with a trail; anti-LinkedIn badge; links multitask and genial; Do your best!",
+      "simpleEs": "Préstamo EN→BR; habilidade/oficio con rastro; anti-insignia LinkedIn; vínculos multitask y genial; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-skill.html"
     },
     {
       "id": "meudeusdoceu",
@@ -1676,6 +1726,16 @@
       "href": "/posts/post-inspecao-palavra-gesto.html"
     },
     {
+      "id": "sinal",
+      "word": "sinal",
+      "simple": "Lat. signum — marca, aviso, trânsito e «dar sinal»; elos gesto, risco, verdade; Faça o melhor!",
+      "simpleEn": "Lat. signum — mark, warning, traffic and “dar sinal”; links gesto, risco, verdade; Do your best!",
+      "simpleEs": "Lat. signum — marca, aviso, tráfico y «dar sinal»; vínculos gesto, risco, verdade; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sinal.html"
+    },
+    {
       "id": "respeito",
       "word": "respeito",
       "simple": "Lat. respectus / respicere — olhar de novo; consideração e prática social (sem sermão); elo verdade/gesto; contraste com vingança.",
@@ -2997,10 +3057,20 @@
     },
     {
       "id": "vida",
-      "word": "Vida",
-      "simple": "Trilha Vida do laboratório — conto, personagens e Diário da Sementinha.",
-      "simpleEn": "The lab’s Vida trail — story, characters and Little Seed Diary.",
-      "simpleEs": "Trama familiar del laboratorio — cuento, personajes y Diario de la Semillita.",
+      "word": "vida",
+      "simple": "Lat. vīta — facto de viver, tempo e modo; ficha lexical distinta da trilha /vida/ e da Árvore da Vida; elos alegria/coração/esperança.",
+      "simpleEn": "Lat. vīta — fact of living, time and mode; lexical sheet distinct from the Vida trail and Tree of Life; alegria/coração/esperança links.",
+      "simpleEs": "Lat. vīta — hecho de vivir, tiempo y modo; ficha léxica distinta de la trama /vida/ y del Árbol de la Vida; vínculos alegria/coração/esperança.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-vida.html"
+    },
+    {
+      "id": "vida-trilha",
+      "word": "Vida (trilha)",
+      "simple": "Secção Vida do laboratório — contos, poemas e Diário da Sementinha (≠ ficha lexical «vida»).",
+      "simpleEn": "Lab Vida section — stories, poems and Little Seed Diary (≠ lexical “vida” sheet).",
+      "simpleEs": "Sección Vida del laboratorio — cuentos, poemas y Diario de la Semillita (≠ ficha léxica «vida»).",
       "group": "titulo",
       "fromTitle": true,
       "href": "/vida/"

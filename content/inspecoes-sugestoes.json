@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:51:07.794Z",
+  "updatedAt": "2026-08-03T13:51:23.035Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3635,7 +3635,7 @@
         "/posts/post-inspecao-palavra-simbiose.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 72 — lema fruto; plural + figurado; sem duplicar pesquisa/slug de espécie."
+      "notes": "Cap. 49 — lema fruto; plural + figurado; sem duplicar pesquisa/slug de espécie."
     },
     {
       "id": "palavra-pipoca",
@@ -3658,7 +3658,237 @@
         "/posts/post-inspecao-palavra-alegria.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 74 — tupi pi'poka; rua/cinema; sem sermonário junk-food; ≠ coca/pouca/roça."
+      "notes": "Cap. 68 — tupi pi'poka; rua/cinema; sem sermonário junk-food; ≠ coca/pouca/roça."
+    },
+    {
+      "id": "palavra-vida",
+      "title": "Vida — facto, tempo, modo e Faça o melhor!",
+      "titleEn": "Vida — fact, time, mode and Do your best!",
+      "titleEs": "Vida — hecho, tiempo, modo y ¡Haz lo mejor!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: vida (lat. vīta) — facto, tempo e modo; distinta da trilha /vida/ e da Árvore da Vida; elos alegria/coração/esperança.",
+      "whyEn": "Words: vida (Lat. vīta) — fact, time and mode; distinct from Vida trail and Tree of Life; alegria/coração/esperança links.",
+      "whyEs": "Palabras: vida (lat. vīta) — hecho, tiempo y modo; distinta de la trama /vida/ y del Árbol de la Vida; vínculos alegria/coração/esperança.",
+      "suggestedSlug": "inspecao-palavra-vida",
+      "doneHref": "/posts/post-inspecao-palavra-vida.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/vida",
+        "https://pt.wikipedia.org/wiki/Vida",
+        "/posts/post-inspecao-palavra-alegria.html",
+        "/posts/post-inspecao-palavra-coracao.html",
+        "/posts/post-inspecao-palavra-esperanca.html",
+        "/vida/",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 69 — palavra ≠ trilha /vida/ ≠ Árvore da Vida; sem sermão."
+    },
+    {
+      "id": "fruto-mamao",
+      "title": "Mamão — fruto vs indústria",
+      "titleEn": "Papaya — fruit vs industry",
+      "titleEs": "Papaya / mamón — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Mamão no hub — crédito ao fruto inteiro; sofrimento industrial = néctar, polpa adoçada, doce, snacks «papaya»; elo papaína/UNIFESP.",
+      "whyEn": "Fruits: Papaya on hub — credit whole fruit; industrial path = nectar, sweetened pulp, sweets, papaya snacks; papain/UNIFESP link.",
+      "whyEs": "Frutos: Papaya en el hub — crédito al fruto entero; vía industrial = néctar, pulpa endulzada, dulces, snacks; vínculo papaína/UNIFESP.",
+      "suggestedSlug": "inspecao-planta-mamao",
+      "doneHref": "/posts/post-inspecao-planta-mamao.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Mam%C3%A3o",
+        "/plantas/mamao/"
+      ],
+      "notes": "Não confundir com mamona (Ricinus). hubCategory: fruto; par com Derivados quando aplicável."
+    },
+    {
+      "id": "derivado-mamao",
+      "title": "Derivados do Mamão — néctar, polpa adoçada, doce, snacks «papaya»",
+      "titleEn": "Papaya derivatives — nectar, sweetened pulp, sweets, papaya snacks",
+      "titleEs": "Derivados de Papaya — néctar, pulpa endulzada, dulces, snacks «papaya»",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: Mamão inteiro vs matriz industrial (néctar, polpa adoçada, doce, snacks); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole Papaya vs industrial matrix (nectar, sweetened pulp, sweets, snacks); cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: Papaya entera vs matriz industrial; cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-mamao",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Mam%C3%A3o",
+        "/posts/post-inspecao-planta-mamao.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Não confundir com mamona."
+    },
+    {
+      "id": "palavra-magnifico",
+      "title": "Magnífico — magnificus, elogio BR e Faça o melhor!",
+      "titleEn": "Magnífico — magnificus, BR praise and Do your best!",
+      "titleEs": "Magnífico — magnificus, elogio BR y ¡Haz lo mejor!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: magnífico (lat. magnificus / magnificent) — elogio BR; escala legal/genial/fabuloso/fantástico/incrível/maravilhoso; tipografia mafianioddpo → magnífico.",
+      "whyEn": "Words: magnífico (Lat. magnificus / magnificent) — BR praise; scale legal/genial/fabuloso/fantástico/incrível/maravilhoso; typo mafianioddpo → magnífico.",
+      "whyEs": "Palabras: magnífico (lat. magnificus / magnificent) — elogio BR; escala legal/genial/fabuloso/fantástico/incrível/maravilhoso; tipografía mafianioddpo → magnífico.",
+      "suggestedSlug": "inspecao-palavra-magnifico",
+      "doneHref": "/posts/post-inspecao-palavra-magnifico.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/magn%C3%ADfico",
+        "https://en.wiktionary.org/wiki/magnificus",
+        "https://pt.wiktionary.org/wiki/magno",
+        "/posts/post-inspecao-palavra-genial.html",
+        "/posts/post-inspecao-palavra-fabuloso.html",
+        "/posts/post-inspecao-palavra-maravilhoso.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 1 — elogio BR; rede só com slugs existentes; alt. máfia rejeitada."
+    },
+    {
+      "id": "fruto-melancia",
+      "title": "Melancia — fruto vs indústria",
+      "titleEn": "Watermelon — fruit vs industry",
+      "titleEs": "Sandía — fruto vs industria",
+      "tipo": "fruto",
+      "priority": 3,
+      "status": "feita",
+      "why": "Frutos: Melancia no hub — crédito ao fruto inteiro (polpa aquosa de verão); sofrimento industrial = sucos, néctares e ultraprocessados «watermelon».",
+      "whyEn": "Fruits: Watermelon on hub — credit whole fruit (summer watery pulp); industrial path = juices, nectars and ultra-processed «watermelon».",
+      "whyEs": "Frutos: Sandía en el hub — crédito al fruto entero; vía industrial = jugos, néctares y ultraprocesados «watermelon».",
+      "suggestedSlug": "inspecao-planta-melancia",
+      "doneHref": "/posts/post-inspecao-planta-melancia.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Melancia",
+        "/plantas/melancia/"
+      ],
+      "notes": "hubCategory: fruto; Cap. 16; elos palavra planta/fruto; par Derivados quando aplicável."
+    },
+    {
+      "id": "derivado-melancia",
+      "title": "Derivados da melancia — sucos, néctares e ultraprocessados",
+      "titleEn": "Watermelon derivatives — juices, nectars and ultra-processed",
+      "titleEs": "Derivados de la sandía — jugos, néctares y ultraprocesados",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: melancia inteira vs matriz industrial (suco, néctar, snacks «watermelon»); cruzar com cana/açúcares livres.",
+      "whyEn": "Risk derivatives: whole watermelon vs industrial matrix; cross free sugars / sugarcane.",
+      "whyEs": "Derivados de riesgo: sandía entera vs matriz industrial; cruzar azúcares libres / caña.",
+      "suggestedSlug": "inspecao-derivado-melancia",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Melancia",
+        "/posts/post-inspecao-planta-melancia.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose."
+    },
+    {
+      "id": "palavra-sinal",
+      "title": "Sinal — marca, aviso, gesto e dar sinal",
+      "titleEn": "Sinal — mark, warning, gesture and giving a signal",
+      "titleEs": "Sinal — marca, aviso, gesto y dar señal",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: sinal (lat. signum) — marca, trânsito, corpo, aviso e «dar sinal»; tipografia singlam → sinal; elos gesto, risco, verdade.",
+      "whyEn": "Words: sinal (Lat. signum) — mark, traffic, body, warning and “dar sinal”; typed singlam → sinal; links gesto, risco, verdade.",
+      "whyEs": "Palabras: sinal (lat. signum) — marca, tráfico, cuerpo, aviso y «dar sinal»; tipografía singlam → sinal; vínculos gesto, risco, verdade.",
+      "suggestedSlug": "inspecao-palavra-sinal",
+      "doneHref": "/posts/post-inspecao-palavra-sinal.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/sinal",
+        "https://en.wiktionary.org/wiki/signum#Latin",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-risco.html",
+        "/posts/post-inspecao-palavra-verdade.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 75 — signum; trânsito/corpo/aviso; «dar sinal»; tipografia singlam → sinal (não slang)."
+    },
+    {
+      "id": "palavra-selvagem",
+      "title": "Selvagem — silva, natureza e o limiar do domesticado",
+      "titleEn": "Selvagem — silva, nature, and the edge of the domesticated",
+      "titleEs": "Selvagem — silva, naturaleza y el umbral de lo domesticado",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: selvagem (lat. silvaticus ← silva) — natureza; selvagem × domesticado; bicho selvagem; elos planta/animal/inseto; sem romantizar dano.",
+      "whyEn": "Words: selvagem (Lat. silvaticus ← silva) — nature; wild vs domesticated; plant/animal/insect links; no romance of harm.",
+      "whyEs": "Palabras: selvagem (lat. silvaticus ← silva) — naturaleza; salvaje × domesticado; vínculos planta/animal/insecto; sin romantizar daño.",
+      "suggestedSlug": "inspecao-palavra-selvagem",
+      "doneHref": "/posts/post-inspecao-palavra-selvagem.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/selvagem",
+        "https://pt.wiktionary.org/wiki/silva#Latim",
+        "/posts/post-inspecao-palavra-planta.html",
+        "/posts/post-inspecao-palavra-animal.html",
+        "/posts/post-inspecao-palavra-inseto.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 74 — tipografia silvaogsn → selvagem; cluster natureza; não romantizar dano."
+    },
+    {
+      "id": "palavra-skill",
+      "title": "Skill — empréstimo EN, habilidade e craft sem LinkedIn",
+      "titleEn": "Skill — EN loan, habilidade and craft without LinkedIn",
+      "titleEs": "Skill — préstamo EN, habilidade y oficio sin LinkedIn",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: skill — EN→BR; habilidade/craft; anti-badge LinkedIn; elos multitask/genial; tipografia skgll → skill.",
+      "whyEn": "Words: skill — EN→BR; habilidade/craft; anti-LinkedIn badge; links multitask/genial; typo skgll → skill.",
+      "whyEs": "Palabras: skill — EN→BR; habilidade/oficio; anti-insignia LinkedIn; vínculos multitask/genial; tipografía skgll → skill.",
+      "suggestedSlug": "inspecao-palavra-skill",
+      "doneHref": "/posts/post-inspecao-palavra-skill.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Skill",
+        "https://en.wiktionary.org/wiki/skill",
+        "https://pt.wiktionary.org/wiki/skill",
+        "/posts/post-inspecao-palavra-multitask.html",
+        "/posts/post-inspecao-palavra-genial.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 76 — empréstimo EN; habilidade/craft; anti-LinkedIn; elos multitask/genial; skgll → skill."
+    },
+    {
+      "id": "palavra-passado",
+      "title": "Passado — tempo decorrido, memória e o rasto que inspeciona",
+      "titleEn": "Passado — elapsed time, memory and the trace you inspect",
+      "titleEs": "Passado — tiempo trascurrido, memoria y el rastro que se inspecciona",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: passado (de passar / lat. passāre) — tempo decorrido; memória × história; elos memorável/verdade/língua; Faça o melhor!",
+      "whyEn": "Words: passado (from passar / Lat. passāre) — elapsed time; memory × history; memorável/truth/language; Do your best!",
+      "whyEs": "Palabras: passado (de passar / lat. passāre) — tiempo trascurrido; memoria × historia; memorável/verdad/lengua; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-passado",
+      "doneHref": "/posts/post-inspecao-palavra-passado.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/passado",
+        "https://pt.wiktionary.org/wiki/passar",
+        "/posts/post-inspecao-palavra-passar.html",
+        "/posts/post-inspecao-palavra-memoravel.html",
+        "/posts/post-inspecao-palavra-verdade.html",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 77 — tipografia psasafo → passado; filho de passar."
     }
   ]
 }
