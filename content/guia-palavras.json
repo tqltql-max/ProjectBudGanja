@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:54:09.125Z",
+  "updatedAt": "2026-08-03T15:57:37.003Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1528,12 +1528,12 @@
     {
       "id": "erva",
       "word": "Erva",
-      "simple": "Planta pequena sem tronco lenhoso — e também eufemismo popular para cannabis.",
-      "simpleEn": "A small non-woody plant — and also a popular euphemism for cannabis.",
-      "simpleEs": "Planta pequeña sin tronco leñoso — y también eufemismo popular para cannabis.",
+      "simple": "Ficha antiga — ofício migrado para planta / plantas (hub e Farmácia Viva).",
+      "simpleEn": "Old sheet — office moved to planta / plantas (hub and Farmácia Viva).",
+      "simpleEs": "Ficha antigua — oficio migrado a planta / plantas (hub y Farmácia Viva).",
       "group": "lexico",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-erva.html"
+      "href": "/posts/post-inspecao-palavra-planta.html"
     },
     {
       "id": "erva-cidreira",

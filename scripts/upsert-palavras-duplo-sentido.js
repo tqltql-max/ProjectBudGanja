@@ -91,7 +91,7 @@ async function main() {
       ['palavra-diamba', 'Diamba — cognato afro-brasileiro apagado pelo estigma'],
       ['palavra-cannabis', 'Cannabis — latinismo técnico e hierarquia de registos'],
       ['palavra-marijuana', 'Marijuana — do nome popular à arma da proibição'],
-      ['palavra-erva', 'Erva — do sentido botânico amplo ao eufemismo'],
+      ['palavra-erva', 'Erva — substituída por planta / plantas'],
       ['palavra-droga', 'Droga — do remédio ao ilícito no senso comum'],
       ['palavra-canhamo', 'Cânhamo — fibra industrial coberta pela confusão com droga']
     ];

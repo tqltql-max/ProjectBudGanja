@@ -380,6 +380,25 @@
     "seriesLabel": "muitoobrigado · expressão"
   },
   {
+    "title": "Inspeção: Erva — substituída por planta / plantas",
+    "titleEn": "Inspection: Erva — replaced by planta / plantas",
+    "titleEs": "Inspección: Erva — sustituida por planta / plantas",
+    "excerpt": "Palavras: «erva» — ficha antiga; ofício migrado para planta / plantas (hub e Farmácia Viva).",
+    "excerptEn": "Words: “erva” — old sheet; office moved to planta / plantas (hub and Farmácia Viva).",
+    "excerptEs": "Palabras: «erva» — ficha antigua; oficio migrado a planta / plantas (hub y Farmácia Viva).",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-erva",
+    "url": "/posts/post-inspecao-palavra-erva.html",
+    "date": "2026-08-01T22:30:00.000Z",
+    "filename": "posts/post-inspecao-palavra-erva.html",
+    "coverImage": "/imagens/inspecoes/planta-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 8,
+    "seriesLabel": "Erva · substituída"
+  },
+  {
     "title": "Inspeção: Planta — Guaco — cumarina e trepadeira respiratória",
     "titleEn": "Inspection: Plant — Guaco — coumarin and respiratory vine",
     "titleEs": "Inspección: Planta — Guaco — cumarina y enredadera respiratoria",
@@ -3437,25 +3456,6 @@
     "series": "palavras-origem",
     "seriesOrder": null,
     "seriesLabel": "Droga · palavra"
-  },
-  {
-    "title": "Inspeção: Erva — do sentido botânico amplo ao eufemismo",
-    "titleEn": "Inspection: Erva — from broad botanical sense to euphemism",
-    "titleEs": "Inspección: Erva — del sentido botánico amplio al eufemismo",
-    "excerpt": "Palavras: «erva» — originalidade (planta herbácea, chá, tempero) coberta pelo eufemismo de cannabis; prejuízo à literacia do catálogo medicinal.",
-    "excerptEn": "Words: “erva” — originality (herb, tea, seasoning) overlaid by cannabis euphemism; harms medicinal-catalog literacy.",
-    "excerptEs": "Palabras: «erva» — originalidad (hierba, té, condimento) tapada por eufemismo de cannabis.",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-palavra-erva",
-    "url": "/posts/post-inspecao-palavra-erva.html",
-    "date": "2026-08-01T22:30:00.000Z",
-    "filename": "posts/post-inspecao-palavra-erva.html",
-    "coverImage": "/imagens/inspecoes/erva-palavra-cover.jpg",
-    "category": "inspecao",
-    "series": "palavras-origem",
-    "seriesOrder": null,
-    "seriesLabel": "Erva · palavra"
   },
   {
     "title": "Inspeção: Marijuana — do nome popular à arma da proibição",
