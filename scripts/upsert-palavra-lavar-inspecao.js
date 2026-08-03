@@ -70,15 +70,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Lavar — ofício das mãos com água',
-      titleEn: 'Lavar — craft of hands with water',
-      titleEs: 'Lavar — oficio de las manos con agua',
+      title: 'Lavar — das mãos à alma',
+      titleEn: 'Lavar — from the hands to the soul',
+      titleEs: 'Lavar — de las manos al alma',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: «lavar» (lat. *lavāre*) — gesto das mãos; elo mão esquerda × direita, balde, água.',
-      whyEn: 'Words: “lavar” (Lat. *lavāre*) — hand gesture; link left/right hand, bucket, water.',
-      whyEs: 'Palabras: «lavar» (lat. *lavāre*) — gesto de las manos; enlace izquierda/derecha, balde, agua.',
+      why: 'Palavras: «lavar» até «lavar a alma» — mãos, água, lágrima; cuidado com método; fuga/vingança = ressalva.',
+      whyEn: 'Words: “lavar” up to “wash the soul” — hands, water, tear; care with method; evasion/revenge = caveat.',
+      whyEs: 'Palabras: «lavar» hasta «lavar el alma» — manos, agua, lágrima; cuidado con método; fuga/venganza = salvedad.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -106,11 +106,11 @@ async function main() {
       id: 'lavar',
       word: 'Lavar',
       simple:
-        'Latim *lavāre* — limpar com água; no BudGanja, ofício das mãos (esquerda × direita) com balde e cuidado.',
+        'Latim *lavāre* — mãos com água até «lavar a alma»: cuidado com método; «lavar as mãos» / fuga = ressalva.',
       simpleEn:
-        'Latin *lavāre* — clean with water; in BudGanja, craft of the hands (left × right) with bucket and care.',
+        'Latin *lavāre* — hands with water up to “wash the soul”: care with method; washing hands of it = caveat.',
       simpleEs:
-        'Latín *lavāre* — limpiar con agua; en BudGanja, oficio de las manos (izquierda × derecha) con balde y cuidado.',
+        'Latín *lavāre* — manos con agua hasta «lavar el alma»: cuidado con método; lavarse las manos = salvedad.',
       group: 'lexico',
       fromTitle: false,
       href
