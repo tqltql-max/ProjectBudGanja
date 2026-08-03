@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:18:40.832Z",
+  "updatedAt": "2026-08-03T15:21:58.792Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -444,6 +444,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-ja.html"
+    },
+    {
+      "id": "prosseguir",
+      "word": "prosseguir",
+      "simple": "Lat. prōsequī — continuar × retomar BR; derivações prosseguimento; elos sempre/já/caminho; Faça o melhor e prossiga.",
+      "simpleEn": "Lat. prōsequī — continue × resume BR; derivatives prosseguimento; links sempre/já/caminho; Do your best and proceed.",
+      "simpleEs": "Lat. prōsequī — continuar × retomar BR; derivaciones prosseguimento; vínculos sempre/já/caminho; Haz lo mejor y prosigue.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-prosseguir.html"
+    },
+    {
+      "id": "sempre",
+      "word": "sempre",
+      "simple": "Lat. semper — duração × hábito × promessa BR; elos já/prosseguir/caminho; Faça o melhor sempre que puder.",
+      "simpleEn": "Lat. semper — duration × habit × promise BR; links já/prosseguir/caminho; Do your best whenever you can.",
+      "simpleEs": "Lat. semper — duración × hábito × promesa BR; vínculos já/prosseguir/caminho; Haz lo mejor siempre que puedas.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sempre.html"
     },
     {
       "id": "pular",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:18:40.829Z",
+  "updatedAt": "2026-08-03T15:21:58.788Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4105,6 +4105,52 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 86 — tipografia Imtupidor → interruptor; inclui derivações."
+    },
+    {
+      "id": "palavra-sempre",
+      "title": "Sempre — duração, hábito e Faça o melhor!",
+      "titleEn": "Sempre — duration, habit and Do your best!",
+      "titleEs": "Sempre — duración, hábito y ¡Haz lo mejor!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: sempre (lat. semper) — duração × hábito × promessa; elos já/prosseguir/caminho; Faça o melhor!",
+      "whyEn": "Words: sempre (Lat. semper) — duration × habit × promise; links já/prosseguir/caminho; Do your best!",
+      "whyEs": "Palabras: sempre (lat. semper) — duración × hábito × promesa; vínculos já/prosseguir/caminho; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-sempre",
+      "doneHref": "/posts/post-inspecao-palavra-sempre.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/sempre",
+        "/posts/post-inspecao-palavra-ja.html",
+        "/posts/post-inspecao-palavra-prosseguir.html",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 87 — par com prosseguir."
+    },
+    {
+      "id": "palavra-prosseguir",
+      "title": "Prosseguir — continuar, retomar e Faça o melhor!",
+      "titleEn": "Prosseguir — continue, resume and Do your best!",
+      "titleEs": "Prosseguir — continuar, retomar y ¡Haz lo mejor!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: prosseguir (lat. prōsequī) — continuar × retomar; prosseguimento; elos sempre/já/caminho; Faça o melhor!",
+      "whyEn": "Words: prosseguir (Lat. prōsequī) — continue × resume; prosseguimento; links sempre/já/caminho; Do your best!",
+      "whyEs": "Palabras: prosseguir (lat. prōsequī) — continuar × retomar; prosseguimento; vínculos sempre/já/caminho; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-prosseguir",
+      "doneHref": "/posts/post-inspecao-palavra-prosseguir.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/prosseguir",
+        "/posts/post-inspecao-palavra-sempre.html",
+        "/posts/post-inspecao-palavra-ja.html",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 88 — tipografia Proceguir → prosseguir; par com sempre."
     }
   ]
 }
