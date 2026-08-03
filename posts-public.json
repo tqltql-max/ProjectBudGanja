@@ -3002,6 +3002,25 @@
     "seriesLabel": "Aroeira"
   },
   {
+    "title": "Inspeção: Lavar — ofício das mãos com água",
+    "titleEn": "Inspection: Lavar — the craft of hands with water",
+    "titleEs": "Inspección: Lavar — oficio de las manos con agua",
+    "excerpt": "Palavras: «lavar» (lat. *lavāre*) — gesto das mãos com água; higiene e cuidado no laboratório; «lavar as mãos» como fuga = ressalva.",
+    "excerptEn": "Words: “lavar” (Lat. *lavāre*) — hands with water; lab care and hygiene; “wash one’s hands of it” as evasion = caveat.",
+    "excerptEs": "Palabras: «lavar» (lat. *lavāre*) — manos con agua; cuidado e higiene; «lavarse las manos» como fuga = salvedad.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-lavar",
+    "url": "/posts/post-inspecao-palavra-lavar.html",
+    "date": "2026-08-03T12:15:00.000Z",
+    "filename": "posts/post-inspecao-palavra-lavar.html",
+    "coverImage": "/imagens/inspecoes/lavar-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 28,
+    "seriesLabel": "Lavar · palavra"
+  },
+  {
     "title": "Inspeção: Estimulante — classe de efeito no sistema nervoso",
     "titleEn": "Inspection: Estimulante — effect class on the nervous system",
     "titleEs": "Inspección: Estimulante — clase de efecto en el sistema nervioso",

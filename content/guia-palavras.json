@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T22:55:30.621Z",
+  "updatedAt": "2026-08-03T12:15:18.165Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1644,6 +1644,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html"
+    },
+    {
+      "id": "lavar",
+      "word": "Lavar",
+      "simple": "Latim *lavāre* — limpar com água; no BudGanja, ofício das mãos (esquerda × direita) com balde e cuidado.",
+      "simpleEn": "Latin *lavāre* — clean with water; in BudGanja, craft of the hands (left × right) with bucket and care.",
+      "simpleEs": "Latín *lavāre* — limpiar con agua; en BudGanja, oficio de las manos (izquierda × derecha) con balde y cuidado.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-lavar.html"
     },
     {
       "id": "legado",

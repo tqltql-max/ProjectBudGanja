@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T22:55:30.618Z",
+  "updatedAt": "2026-08-03T12:15:18.161Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2900,6 +2900,29 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 27 — tom severo; não patologizar o enfado."
+    },
+    {
+      "id": "palavra-lavar",
+      "title": "Lavar — ofício das mãos com água",
+      "titleEn": "Lavar — craft of hands with water",
+      "titleEs": "Lavar — oficio de las manos con agua",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: «lavar» (lat. *lavāre*) — gesto das mãos; elo mão esquerda × direita, balde, água.",
+      "whyEn": "Words: “lavar” (Lat. *lavāre*) — hand gesture; link left/right hand, bucket, water.",
+      "whyEs": "Palabras: «lavar» (lat. *lavāre*) — gesto de las manos; enlace izquierda/derecha, balde, agua.",
+      "suggestedSlug": "inspecao-palavra-lavar",
+      "doneHref": "/posts/post-inspecao-palavra-lavar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/lavar",
+        "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-agua.html",
+        "/posts/post-inspecao-palavra-balde.html"
+      ],
+      "notes": "Cap. 28 — complementaridade das mãos; ressalva «lavar as mãos» = fuga."
     }
   ]
 }
