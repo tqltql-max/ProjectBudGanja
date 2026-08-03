@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:44:54.558Z",
+  "updatedAt": "2026-08-03T13:46:19.884Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2987,10 +2987,14 @@
       "sources": [
         "https://pt.wiktionary.org/wiki/genial",
         "/posts/post-inspecao-palavra-criatividade.html",
+        "/posts/post-inspecao-palavra-legal.html",
+        "/posts/post-inspecao-palavra-maravilhoso.html",
+        "/posts/post-inspecao-palavra-fantastico.html",
+        "/posts/post-inspecao-palavra-idolo.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html",
         "/posts/post-inspecao-figura-ayrton-senna.html"
       ],
-      "notes": "Cap. 30 — falso amigo EN genial (amável)."
+      "notes": "Cap. 30 — falso amigo EN genial (amável); escala legal → genial → maravilhoso / fantástico; contraste ídolo."
     },
     {
       "id": "palavra-esquerdo",
@@ -3246,7 +3250,7 @@
         "/posts/post-inspecao-palavra-legal.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 35 — elogio BR; rede só com slugs existentes."
+      "notes": "Cap. 49 — elogio BR; rede só com slugs existentes."
     },
     {
       "id": "palavra-respeito",
@@ -3438,6 +3442,54 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 47 — empréstimo × parece/é × correção anti-hype."
+    },
+    {
+      "id": "palavra-maravilhoso",
+      "title": "Maravilhoso — maravilha, assombro, elogio BR e Faça o melhor!",
+      "titleEn": "Maravilhoso — marvel, wonder, BR praise and Do your best!",
+      "titleEs": "Maravilhoso — maravilla, asombro, elogio BR y ¡Haz lo mejor!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: maravilhoso — de maravilha/mirabilia; assombro e elogio BR; escala legal/genial/aff; Faça o melhor depois do uau.",
+      "whyEn": "Words: maravilhoso — from maravilha/mirabilia; wonder and BR praise; scale legal/genial/aff; Do your best after the wow.",
+      "whyEs": "Palabras: maravilhoso — de maravilha/mirabilia; asombro y elogio BR; escala legal/genial/aff; Haz lo mejor después del guau.",
+      "suggestedSlug": "inspecao-palavra-maravilhoso",
+      "doneHref": "/posts/post-inspecao-palavra-maravilhoso.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/maravilhoso",
+        "https://pt.wiktionary.org/wiki/maravilha",
+        "/posts/post-inspecao-palavra-legal.html",
+        "/posts/post-inspecao-palavra-genial.html",
+        "/posts/post-inspecao-palavra-aff.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 67 — maravilha × assombro × escala de elogio."
+    },
+    {
+      "id": "palavra-eletrizante",
+      "title": "Eletrizante — carga, hype BR e Faça o melhor!",
+      "titleEn": "Eletrizante — charge, BR hype and Do your best!",
+      "titleEs": "Eletrizante — carga, hype BR y ¡Haz lo mejor!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: eletrizante (eletro- + intensidade) — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo → eletrizante.",
+      "whyEn": "Words: eletrizante (eletro- + intensity) — charge metaphor and BR hype; typo eleltrioxsamndo → eletrizante.",
+      "whyEs": "Palabras: eletrizante (eletro- + intensidad) — metáfora de carga y hype BR; tipografía eleltrioxsamndo → eletrizante.",
+      "suggestedSlug": "inspecao-palavra-eletrizante",
+      "doneHref": "/posts/post-inspecao-palavra-eletrizante.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/eletrizante",
+        "https://pt.wiktionary.org/wiki/eletrizar",
+        "https://en.wiktionary.org/wiki/electrifying",
+        "/posts/post-inspecao-palavra-fogo.html",
+        "/posts/post-inspecao-palavra-genial.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 43 — carga/hype; rede só com slugs existentes (fogo + escala)."
     }
   ]
 }

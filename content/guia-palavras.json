@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:44:54.565Z",
+  "updatedAt": "2026-08-03T13:46:19.892Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -106,6 +106,16 @@
       "href": "/posts/post-inspecao-palavra-fogo.html"
     },
     {
+      "id": "eletrizante",
+      "word": "eletrizante",
+      "simple": "Eletro- + intensidade — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo; elos fogo e escala de louvor; Faça o melhor com rasto.",
+      "simpleEn": "Eletro- + intensity — charge metaphor and BR hype; typo eleltrioxsamndo; links to fogo and praise scale; Do your best with a trail.",
+      "simpleEs": "Eletro- + intensidad — metáfora de carga y hype BR; tipografía eleltrioxsamndo; vínculos a fogo y escala; Haz lo mejor con rastro.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-eletrizante.html"
+    },
+    {
       "id": "fantastico",
       "word": "fantástico",
       "simple": "Lat. phantasticus / fantasia — imaginação e elogio BR «fantástico!»; escala com legal, genial, maravilhoso; Faça o melhor depois do uau.",
@@ -184,6 +194,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-aff.html"
+    },
+    {
+      "id": "maravilhoso",
+      "word": "maravilhoso",
+      "simple": "De maravilha (lat. mirabilia) — assombro e elogio BR («que maravilhoso!»); na escala aff ← legal ← genial ← maravilhoso; depois do uau, Faça o melhor!",
+      "simpleEn": "From maravilha (Lat. mirabilia) — wonder and BR praise; scale aff ← legal ← genial ← maravilhoso; after the wow, Do your best!",
+      "simpleEs": "De maravilha (lat. mirabilia) — asombro y elogio BR; escala aff ← legal ← genial ← maravilhoso; después del guau, ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-maravilhoso.html"
     },
     {
       "id": "ausdhuashduas",
