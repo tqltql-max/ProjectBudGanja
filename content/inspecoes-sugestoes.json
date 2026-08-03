@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:43:27.639Z",
+  "updatedAt": "2026-08-03T13:44:54.558Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3291,10 +3291,10 @@
         "https://en.wiktionary.org/wiki/incredibilis",
         "/posts/post-inspecao-palavra-legal.html",
         "/posts/post-inspecao-palavra-genial.html",
-        "/posts/post-inspecao-palavra-especial.html",
+        "/posts/post-inspecao-palavra-fantastico.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 48 — incredibilis × elogio BR; escala sem fichas mortas (maravilhoso/fantástico)."
+      "notes": "Cap. 48 — incredibilis × elogio BR; escala só com fichas existentes."
     },
     {
       "id": "palavra-coracao",
@@ -3341,7 +3341,7 @@
         "/posts/post-inspecao-palavra-legal.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 50 — fantisico → fantástico; escala de elogio."
+      "notes": "Cap. 66 — fantisico → fantástico; escala de elogio."
     },
     {
       "id": "palavra-memoravel",
@@ -3377,7 +3377,7 @@
       "priority": 2,
       "status": "feita",
       "why": "Expressões: nome lab do riso tipado; substitui kkkk… e «risas online»; elos jesusamando, meudeusdoceu, aff.",
-      "whyEn": "Sayings: lab name for typed laughter; replaces kkkk… and online laughs; links jesusamando, meudeusdoceu, aff.",
+      "whyEn": "Sayings: lab name for typed laughter; replaces kkkk… and “online laughs”; links jesusamando, meudeusdoceu, aff.",
       "whyEs": "Dichos: nombre lab de la risa tipada; sustituye kkkk… y «risas online»; vínculos jesusamando, meudeusdoceu, aff.",
       "suggestedSlug": "inspecao-expressao-ausdhuashduas",
       "doneHref": "/posts/post-inspecao-expressao-ausdhuashduas.html",
@@ -3390,6 +3390,54 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 6 Expressões — riso tipado / kkkk → ausdhuashduas."
+    },
+    {
+      "id": "palavra-inacreditavel",
+      "title": "Inacreditável — beyond belief, elogio BR e Faça o melhor!",
+      "titleEn": "Inacreditável — beyond belief, BR praise, and Do your best!",
+      "titleEs": "Inacreditável — más allá de lo creíble, elogio BR y ¡Haz lo mejor!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: inacreditável (in- + acreditável ← credere) — incredulidade e elogio BR; escala com incrível/fabuloso/genial; gatilho ianfreditala.",
+      "whyEn": "Words: inacreditável (in- + acreditável ← credere) — unbelief and BR praise; scale with incrível/fabuloso/genial; trigger ianfreditala.",
+      "whyEs": "Palabras: inacreditável (in- + acreditável ← credere) — incredulidad y elogio BR; escala con incrível/fabuloso/genial; gatillo ianfreditala.",
+      "suggestedSlug": "inspecao-palavra-inacreditavel",
+      "doneHref": "/posts/post-inspecao-palavra-inacreditavel.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/inacredit%C3%A1vel",
+        "https://pt.wiktionary.org/wiki/acreditar",
+        "/posts/post-inspecao-palavra-incrivel.html",
+        "/posts/post-inspecao-palavra-genial.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 64 — beyond belief × elogio; irmão de incrível."
+    },
+    {
+      "id": "palavra-multitask",
+      "title": "Multitask — empréstimo, parece×é e correção de ofício",
+      "titleEn": "Multitask — loanword, seems×is and craft correction",
+      "titleEs": "Multitask — préstamo, parece×es y corrección de oficio",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: multitask/multitarefa — EN→BR; ≠ fazer tudo bem ao mesmo tempo; uma com método ou paralelo limitado; anti-hype.",
+      "whyEn": "Words: multitask/multitarefa — EN→BR; ≠ doing everything well at once; one with method or limited parallel; anti-hype.",
+      "whyEs": "Palabras: multitask/multitarefa — EN→BR; ≠ hacerlo todo bien a la vez; una con método o paralelo limitado; anti-hype.",
+      "suggestedSlug": "inspecao-palavra-multitask",
+      "doneHref": "/posts/post-inspecao-palavra-multitask.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Human_multitasking",
+        "https://en.wiktionary.org/wiki/multitask",
+        "https://pt.wiktionary.org/wiki/multitarefa",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-verdade.html",
+        "/posts/post-inspecao-palavra-buguei.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 47 — empréstimo × parece/é × correção anti-hype."
     }
   ]
 }

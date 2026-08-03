@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:43:27.636Z",
+  "updatedAt": "2026-08-03T13:44:54.565Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -146,6 +146,16 @@
       "href": "/posts/post-inspecao-palavra-incrivel.html"
     },
     {
+      "id": "inacreditavel",
+      "word": "inacreditável",
+      "simple": "in- + acreditável (← credere) — não acreditável / elogio BR «beyond belief»; irmão de incrível; Faça o melhor depois do «não acredito».",
+      "simpleEn": "in- + acreditável (← credere) — unbelievable / BR praise “beyond belief”; sister of incrível; Do your best after the wow.",
+      "simpleEs": "in- + acreditável (← credere) — increíble / elogio BR «beyond belief»; hermana de incrível; Haz lo mejor después del «no lo creo».",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-inacreditavel.html"
+    },
+    {
       "id": "aguas-e-lagrimas",
       "word": "Águas do Mar e Lágrimas",
       "simple": "Poesia original BudGanja: o sal do mar e o da lágrima; elo com Vida, Lágrimas da Vida e Álvares de Azevedo.",
@@ -194,6 +204,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-buguei.html"
+    },
+    {
+      "id": "multitarefa",
+      "word": "multitarefa",
+      "simple": "Forma PT irmã de multitask — mesma correção: não é fazer tudo bem ao mesmo tempo; método e limites.",
+      "simpleEn": "PT sister of multitask — same correction: not doing everything well at once; method and limits.",
+      "simpleEs": "Forma PT hermana de multitask — misma corrección: no es hacerlo todo bien a la vez; método y límites.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-multitask.html"
+    },
+    {
+      "id": "multitask",
+      "word": "multitask",
+      "simple": "Empréstimo EN→BR; parece «tudo bem ao mesmo tempo»; ofício = uma com método ou paralelo com limites; Faça o melhor!",
+      "simpleEn": "EN→BR loan; seems “everything well at once”; craft = one with method or limited parallel; Do your best!",
+      "simpleEs": "Préstamo EN→BR; parece «todo bien a la vez»; oficio = una con método o paralelo con límites; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-multitask.html"
     },
     {
       "id": "meudeusdoceu",
