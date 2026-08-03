@@ -62,7 +62,9 @@ const QUERY_OVERRIDES = {
   uva: ['Vitis vinifera', 'Grape'],
   morango: ['Fragaria × ananassa', 'Strawberry'],
   'maracuja-fruta': ['Passiflora edulis'],
-  'tomatinho-cereja': ['Cherry tomato', 'Solanum lycopersicum', 'Tomato']
+  'tomatinho-cereja': ['Cherry tomato', 'Solanum lycopersicum', 'Tomato'],
+  mamao: ['Carica papaya', 'Papaya'],
+  melancia: ['Citrullus lanatus', 'Watermelon']
 };
 
 function parseArgs(argv) {

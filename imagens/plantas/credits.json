@@ -1,8 +1,8 @@
 {
-  "tomatinho-cereja": {
-    "credit": "Wikipedia · Cherry tomato",
-    "source": "https://en.wikipedia.org/wiki/Cherry_tomato",
-    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/1/10/Tomates_cerises_Luc_Viatour.jpg",
-    "cover": "/imagens/plantas/tomatinho-cereja-cover.jpg"
+  "melancia": {
+    "credit": "Wikipedia · Watermelon",
+    "source": "https://en.wikipedia.org/wiki/Watermelon",
+    "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/4/47/Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg",
+    "cover": "/imagens/plantas/melancia-cover.jpg"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T14:22:16.122Z",
+  "updatedAt": "2026-08-03T14:29:25.595Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3971,20 +3971,43 @@
       "tipo": "expressao",
       "priority": 2,
       "status": "feita",
-      "why": "Expressões: muito obrigado colado; gratidão reforçada; elos gesto, respeito, jesusamando; contraste aff.",
-      "whyEn": "Sayings: muito obrigado as one word; reinforced gratitude; links gesture, respect, jesusamando; contrast aff.",
-      "whyEs": "Dichos: muito obrigado pegado; gratitud reforzada; vínculos gesto, respeito, jesusamando; contraste aff.",
+      "why": "Expressões: muitoobrigado; gratidão reforçada; étimo obligare × escravidão/cana; elos gesto, respeito, jesusamando.",
+      "whyEn": "Sayings: muitoobrigado; reinforced gratitude; etymon obligare × slavery/cane; gesture, respect, jesusamando.",
+      "whyEs": "Dichos: muitoobrigado; gratitud reforzada; étimo obligare × esclavitud/caña; gesto, respeito, jesusamando.",
       "suggestedSlug": "inspecao-expressao-muito-obrigado",
       "doneHref": "/posts/post-inspecao-expressao-muito-obrigado.html",
       "seriesHint": "expressoes-ditados",
       "sources": [
+        "https://pt.wiktionary.org/wiki/obrigado",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
         "/posts/post-inspecao-expressao-jesusamando.html",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-respeito.html",
         "/posts/post-inspecao-palavra-aff.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 8 Expressões — gratidão reforçada / muito obrigado → muitoobrigado."
+      "notes": "Cap. 8 Expressões — gratidão + mapa obligare/escravidão/cana; sem equivalência agradecer=escravizar."
+    },
+    {
+      "id": "palavra-escravidao",
+      "title": "Escravidão — vínculo, memória BR e léxico do obrigar",
+      "titleEn": "Slavery — bond, Brazilian memory and the lexicon of obliging",
+      "titleEs": "Esclavitud — vínculo, memoria BR y léxico del obligar",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "ideia",
+      "why": "Palavras: escravidão — elo com muitoobrigado (obligare), cana/engenhos e verdade histórica; sem reduzir gratidão a crime.",
+      "whyEn": "Words: slavery — link to muitoobrigado (obligare), cane/mills and historical truth; without reducing gratitude to crime.",
+      "whyEs": "Palabras: esclavitud — vínculo con muitoobrigado (obligare), caña/ingenios y verdad histórica; sin reducir gratitud a crimen.",
+      "suggestedSlug": "inspecao-palavra-escravidao",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-expressao-muito-obrigado.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-palavra-verdade.html"
+      ],
+      "notes": "Ideia a partir do Cap. 8 Expressões (muitoobrigado × escravidão)."
     }
   ]
 }

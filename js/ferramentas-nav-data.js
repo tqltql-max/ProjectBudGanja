@@ -316,7 +316,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-muito-obrigado.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-muito-obrigado",
-              "description": "Expressões: «muitoobrigado» — gratidão reforçada (muito obrigado); contraste com aff; elos gesto, respeito, jesusamando; Faça o melhor!"
+              "description": "Expressões: «muitoobrigado» — gratidão reforçada; étimo obligare × memória da escravidão/cana; elos gesto, respeito, jesusamando; Faça o melhor!"
             },
             {
               "label": "Inspeção: Planta — Guaco — cumarina e trepadeira respiratória",
