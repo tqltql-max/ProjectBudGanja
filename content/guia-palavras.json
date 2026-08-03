@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:00:21.639Z",
+  "updatedAt": "2026-08-03T15:04:09.218Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -484,6 +484,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-coracao.html"
+    },
+    {
+      "id": "inspiracao",
+      "word": "inspiração",
+      "simple": "Lat. īnspīrātiō — sopro × ideia BR; elos criatividade/gesto/esperança; Faça o melhor com o sopro.",
+      "simpleEn": "Lat. īnspīrātiō — breath × idea BR; links creativity/gesture/hope; Do your best with the breath.",
+      "simpleEs": "Lat. īnspīrātiō — aliento × idea BR; vínculos creatividad/gesto/esperanza; Haz lo mejor con el soplo.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-inspiracao.html"
     },
     {
       "id": "esperanca",

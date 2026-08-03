@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:00:21.636Z",
+  "updatedAt": "2026-08-03T15:04:09.215Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4033,6 +4033,30 @@
         "/posts/post-inspecao-palavra-lingua-portuguesa.html"
       ],
       "notes": "Cap. 10 Expressões — rótulo plano «eu só falo a verdade» → eojsofaorforap."
+    },
+    {
+      "id": "palavra-inspiracao",
+      "title": "Inspiração — sopro, ideia acesa e Faça o melhor!",
+      "titleEn": "Inspiração — breath, lit idea and Do your best!",
+      "titleEs": "Inspiração — aliento, idea encendida y ¡Haz lo mejor!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: inspiração (lat. īnspīrātiō) — sopro × ideia BR; criatividade/gesto/esperança; Faça o melhor!",
+      "whyEn": "Words: inspiração (Lat. īnspīrātiō) — breath × idea BR; creativity/gesture/hope; Do your best!",
+      "whyEs": "Palabras: inspiração (lat. īnspīrātiō) — aliento × idea BR; creatividad/gesto/esperanza; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-inspiracao",
+      "doneHref": "/posts/post-inspecao-palavra-inspiracao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/inspira%C3%A7%C3%A3o",
+        "https://pt.wiktionary.org/wiki/inspirar",
+        "/posts/post-inspecao-palavra-criatividade.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-esperanca.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 84 — sopro vivo; tipografia spnresoarpi → inspiração."
     }
   ]
 }
