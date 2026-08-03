@@ -3211,6 +3211,25 @@
     "seriesLabel": "ANVISA · classificação"
   },
   {
+    "title": "Inspeção: Língua portuguesa — originalidade, para que serve e Faça o melhor!",
+    "titleEn": "Inspection: Portuguese language — originality, purpose and Do your best!",
+    "titleEs": "Inspección: Lengua portuguesa — originalidad, para qué sirve y ¡Haz lo mejor!",
+    "excerpt": "Palavras: língua portuguesa — originalidade (raiz × BR × criação); para que serve (nomear · inspecionar · cuidar); Faça o melhor! nesta língua.",
+    "excerptEn": "Words: Portuguese language — originality (root × BR × creation); what it is for (name · inspect · care); Do your best! in this language.",
+    "excerptEs": "Palabras: lengua portuguesa — originalidad (raíz × BR × creación); para qué sirve (nombrar · inspeccionar · cuidar); ¡Haz lo mejor! en esta lengua.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-lingua-portuguesa",
+    "url": "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+    "date": "2026-08-03T15:30:00.000Z",
+    "filename": "posts/post-inspecao-palavra-lingua-portuguesa.html",
+    "coverImage": "/imagens/inspecoes/lingua-portuguesa-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 32,
+    "seriesLabel": "Língua portuguesa · palavra"
+  },
+  {
     "title": "Inspeção: Portaria — forma normativa das listas de controlo",
     "titleEn": "Inspection: Portaria — normative form of control lists",
     "titleEs": "Inspección: Portaria — forma normativa de las listas de control",

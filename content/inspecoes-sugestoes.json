@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T12:55:21.817Z",
+  "updatedAt": "2026-08-03T13:03:15.189Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3010,6 +3010,29 @@
         "/posts/post-inspecao-palavra-gesto.html"
       ],
       "notes": "Cap. 31 — quatro eixos; complementar mão esquerda×direita."
+    },
+    {
+      "id": "palavra-lingua-portuguesa",
+      "title": "Língua portuguesa — originalidade, para que serve e Faça o melhor!",
+      "titleEn": "Portuguese language — originality, purpose and Do your best!",
+      "titleEs": "Lengua portuguesa — originalidad, para qué sirve y ¡Haz lo mejor!",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Língua do projecto: originalidade (raiz×BR×criação); para que serve; Faça o melhor nesta língua.",
+      "whyEn": "Project language: originality; purpose; Do your best in this language.",
+      "whyEs": "Lengua del proyecto: originalidad; para qué sirve; Haz lo mejor en esta lengua.",
+      "suggestedSlug": "inspecao-palavra-lingua-portuguesa",
+      "doneHref": "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/L%C3%ADngua_portuguesa",
+        "https://pt.wikipedia.org/wiki/Portugu%C3%AAs_brasileiro",
+        "/posts/post-inspecao-figura-duvivier.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/guia/palavras.html"
+      ],
+      "notes": "Cap. 32 — meio do laboratório inteiro."
     }
   ]
 }

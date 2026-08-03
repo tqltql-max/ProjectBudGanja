@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T12:55:21.820Z",
+  "updatedAt": "2026-08-03T13:03:15.191Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -144,6 +144,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-genial.html"
+    },
+    {
+      "id": "lingua-portuguesa",
+      "word": "língua portuguesa",
+      "simple": "Meio do Inspetor BudGanja: originalidade (raiz × BR × criação); serve para nomear, inspecionar e cuidar; Faça o melhor nesta língua.",
+      "simpleEn": "Medium of Inspetor BudGanja: originality; serves to name, inspect and care; Do your best in this language.",
+      "simpleEs": "Medio de Inspetor BudGanja: originalidad; sirve para nombrar, inspeccionar y cuidar; Haz lo mejor en esta lengua.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-lingua-portuguesa.html"
     },
     {
       "id": "esquerdo",
