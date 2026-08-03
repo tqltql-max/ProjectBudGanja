@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:39:35.570Z",
+  "updatedAt": "2026-08-03T13:42:25.551Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -214,6 +214,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-genial.html"
+    },
+    {
+      "id": "fabuloso",
+      "word": "fabuloso",
+      "simple": "Lat. fābula / fabulous — elogio BR quotidiano («que demais!»); escala com genial, legal, especial; Faça o melhor com rasto.",
+      "simpleEn": "Lat. fābula / fabulous — everyday BR praise; scale with genial, legal, especial; Do your best with a trail.",
+      "simpleEs": "Lat. fābula / fabulous — elogio BR cotidiano; escala con genial, legal, especial; Haz lo mejor con rastro.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-fabuloso.html"
     },
     {
       "id": "lingua-portuguesa",

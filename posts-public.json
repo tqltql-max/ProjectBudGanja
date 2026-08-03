@@ -1406,6 +1406,25 @@
     "seriesLabel": "Manga · fruto"
   },
   {
+    "title": "Inspeção: filho de deus — título, oralidade e dignidade",
+    "titleEn": "Inspection: filho de deus — title, orality and dignity",
+    "titleEs": "Inspección: filho de deus — título, oralidad y dignidad",
+    "excerpt": "Expressões: «filho de deus» — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; sem proselitismo; Faça o melhor!",
+    "excerptEn": "Sayings: “filho de deus” — theological title, BR oral intensity and dignity/care metaphor; no proselytizing; Do your best!",
+    "excerptEs": "Dichos: «filho de deus» — título teológico, intensidad oral BR y metáfora de dignidad/cuidado; sin proselitismo; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-expressao-filho-de-deus",
+    "url": "/posts/post-inspecao-expressao-filho-de-deus.html",
+    "date": "2026-08-03T18:30:00.000Z",
+    "filename": "posts/post-inspecao-expressao-filho-de-deus.html",
+    "coverImage": "/imagens/inspecoes/filho-de-deus-cover.jpg",
+    "category": "inspecao",
+    "series": "expressoes-ditados",
+    "seriesOrder": 6,
+    "seriesLabel": "filho de deus · expressão"
+  },
+  {
     "title": "Inspeção: Diretriz OMS — Ingestão de açúcares livres (2015)",
     "titleEn": "Inspection: WHO guideline — Free sugars intake (2015)",
     "titleEs": "Inspección: Directriz OMS — Ingesta de azúcares libres (2015)",
@@ -3380,6 +3399,25 @@
     "series": "palavras-origem",
     "seriesOrder": 34,
     "seriesLabel": "Guia · cannabis medicinal · médicos"
+  },
+  {
+    "title": "Inspeção: Fabuloso — fábula, elogio BR e Faça o melhor!",
+    "titleEn": "Inspection: Fabuloso — fable, BR praise and Do your best!",
+    "titleEs": "Inspección: Fabuloso — fábula, elogio BR y ¡Haz lo mejor!",
+    "excerpt": "Palavras: «fabuloso» (lat. *fābula* / *fabulous*) — elogio BR quotidiano; escala com genial, legal e especial; tipografia fabsulkaoso → fabuloso.",
+    "excerptEn": "Words: “fabuloso” (Lat. *fābula* / *fabulous*) — everyday BR praise; scale with genial, legal and especial; typo fabsulkaoso → fabuloso.",
+    "excerptEs": "Palabras: «fabuloso» (lat. *fābula* / *fabulous*) — elogio BR cotidiano; escala con genial, legal y especial; tipografía fabsulkaoso → fabuloso.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-fabuloso",
+    "url": "/posts/post-inspecao-palavra-fabuloso.html",
+    "date": "2026-08-03T22:10:00.000Z",
+    "filename": "posts/post-inspecao-palavra-fabuloso.html",
+    "coverImage": "/imagens/inspecoes/fabuloso-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 35,
+    "seriesLabel": "Fabuloso · palavra"
   },
   {
     "title": "Inspeção: Guia cannabis medicinal — mapa para farmacêuticos (dispensação × seletividade)",
