@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T12:30:35.031Z",
+  "updatedAt": "2026-08-03T12:40:24.788Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2945,6 +2945,27 @@
         "/vida/#poema=faca-o-melhor"
       ],
       "notes": "Homenagem completa; não romantizar a morte em Ímola."
+    },
+    {
+      "id": "palavra-ja",
+      "title": "Já — o relógio da frase e o par com aff",
+      "titleEn": "Já — the sentence’s clock and the pair with aff",
+      "titleEs": "Já — el reloj de la frase y el par con aff",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: «já» × «aff» — tempo/urgência e enfado; fecho vazio = ressalva; Faça o melhor.",
+      "whyEn": "Words: “já” × “aff” — time/urgency and exasperation; empty close = caveat; Do your best.",
+      "whyEs": "Palabras: «já» × «aff» — tiempo/urgencia y hastío; cierre vacío = salvedad; Haz lo mejor.",
+      "suggestedSlug": "inspecao-palavra-ja",
+      "doneHref": "/posts/post-inspecao-palavra-ja.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/j%C3%A1",
+        "/posts/post-inspecao-palavra-aff.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 29 — par oral aff×já; não confundir com código ja (japonês)."
     }
   ]
 }

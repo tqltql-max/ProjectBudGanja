@@ -3078,6 +3078,25 @@
     "seriesLabel": "Quina"
   },
   {
+    "title": "Inspeção: Já — o relógio da frase e o par com aff",
+    "titleEn": "Inspection: Já — the sentence’s clock and the pair with aff",
+    "titleEs": "Inspección: Já — el reloj de la frase y el par con aff",
+    "excerpt": "Palavras: «já» (lat. *iam*) — tempo e urgência; par oral com «aff»; fecho vazio = ressalva; Faça o melhor! continua.",
+    "excerptEn": "Words: “já” (Lat. *iam*) — time and urgency; oral pair with “aff”; empty close = caveat; Do your best! continues.",
+    "excerptEs": "Palabras: «já» (lat. *iam*) — tiempo y urgencia; par oral con «aff»; cierre vacío = salvedad; ¡Haz lo mejor! sigue.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-ja",
+    "url": "/posts/post-inspecao-palavra-ja.html",
+    "date": "2026-08-03T14:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-ja.html",
+    "coverImage": "/imagens/inspecoes/ja-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 29,
+    "seriesLabel": "Já · palavra"
+  },
+  {
     "title": "Inspeção: Alucinógeno — classe de efeito e literacia XIV",
     "titleEn": "Inspection: Alucinógeno — effect class and XIV literacy",
     "titleEs": "Inspección: Alucinógeno — clase de efecto y literacia XIV",

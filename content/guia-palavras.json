@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T12:30:21.396Z",
+  "updatedAt": "2026-08-03T12:40:24.791Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -124,6 +124,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-aff.html"
+    },
+    {
+      "id": "ja",
+      "word": "já",
+      "simple": "Latim *iam* — advérbio de tempo/urgência; no BudGanja, par oral com «aff»; fecho vazio («já deu») = ressalva.",
+      "simpleEn": "Latin *iam* — adverb of time/urgency; in BudGanja, oral pair with “aff”; empty close = caveat.",
+      "simpleEs": "Latín *iam* — adverbio de tiempo/urgencia; en BudGanja, par oral con «aff»; cierre vacío = salvedad.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-ja.html"
     },
     {
       "id": "alegria",
