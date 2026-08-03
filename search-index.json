@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:20:44.790Z",
+  "updatedAt": "2026-08-03T13:24:15.730Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Fogo — elemento, ardor, cuidado e Faça o melhor!",
+      "url": "/posts/post-inspecao-palavra-fogo.html",
+      "excerpt": "Palavras: «fogo» (lat. *focus*) — elemento e metáfora; elos água, raiva e cultivo; Faça o melhor! com medida.",
+      "text": "Inspeção: Fogo — elemento, ardor, cuidado e Faça o melhor! Palavras: «fogo» (lat. *focus*) — elemento e metáfora; elos água, raiva e cultivo; Faça o melhor! com medida. inspecao ## Escopo\n\nInspeção editorial da palavra **fogo** — elemento, calor, luz e metáfora de ofício (e de perigo). Esta ficha cobre o **objeto**, os **usos** (físicos e figurados), o **cuidado** no laboratório e o fecho [Faça o melhor!](/posts/post-inspecao-expressao-faca-o-melhor.html). Elos naturais: [água](/posts/post-inspecao-palavra-agua.html) (par clássico), [raiva](/posts/post-inspecao-palavra-raiva.html) (fogo do peito), [cultivo](/cultivo/) (luz / calor medidos).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · fogo](https://pt.wiktionary.org/wiki/fogo), [Wikipédia · Fogo](https://pt.wikipedia.org/wiki/Fogo), série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). **Ficha ≠ manual de segurança contra incêndios** — mapa lexical e de ofício. Sem afiliação comercial.\n\n## 1. Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **fogo** |\n| Classe | Substantivo masculino |\n| Étimo (trabalho) | Latim *focus* («lareira; fogão; ponto») → PT *fogo* — confiança: alta |\n| Família | *fogueira* · *fogão* · *fogoso* · *à prova de fogo* · *pegar fogo* · *jogo* (etimo distinto) |\n| Cognatos | esp. *fuego* · fr. *feu* · it. *fuoco* · ing. *fire* (germânico; sentido paralelo) |\n| Tipo BudGanja | Palavra — elemento × metáfora × cuidado |\n| Elo elemento | [água](/posts/post-inspecao-palavra-agua.html) · [gelo](/posts/post-inspecao-palavra-gelo.html) · [neve](/posts/post-inspecao-palavra-neve.html) |\n| Elo afecto | [raiva](/posts/post-inspecao-palavra-raiva.html) — fogo de limite (não vilania) |\n| Elo ofício | [gesto](/posts/post-inspecao-palavra-gesto.html) · [verdade](/posts/post-inspecao-palavra-verdade.html) · [criatividade](/posts/post-inspecao-palavra-criatividade.html) · [Faça o melhor!](/posts/post-inspecao-expressao-faca-o-melhor.html) |\n| Elo projecto | ["
     },
     {
       "title": "Inspeção: jesusamando — assombro, afeto e oralidade BR",
@@ -1710,6 +1716,12 @@
       "url": "/posts/post-inspecao-palavra-agua.html",
       "excerpt": "Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem.",
       "text": "Água Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem. lexico guia palavras glossário agua"
+    },
+    {
+      "title": "fogo",
+      "url": "/posts/post-inspecao-palavra-fogo.html",
+      "excerpt": "Lat. focus — lareira / chama; elemento e metáfora; equilibrar com água; raiva com ofício; Faça o melhor com medida.",
+      "text": "fogo Lat. focus — lareira / chama; elemento e metáfora; equilibrar com água; raiva com ofício; Faça o melhor com medida. lexico guia palavras glossário fogo"
     },
     {
       "title": "Águas do Mar e Lágrimas",

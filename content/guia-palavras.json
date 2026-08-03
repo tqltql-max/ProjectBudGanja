@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:20:17.449Z",
+  "updatedAt": "2026-08-03T13:24:03.887Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -94,6 +94,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-agua.html"
+    },
+    {
+      "id": "fogo",
+      "word": "fogo",
+      "simple": "Lat. focus — lareira / chama; elemento e metáfora; equilibrar com água; raiva com ofício; Faça o melhor com medida.",
+      "simpleEn": "Lat. focus — hearth / flame; element and metaphor; balance with water; anger with craft; Do your best with measure.",
+      "simpleEs": "Lat. focus — hogar / llama; elemento y metáfora; equilibrar con agua; ira con oficio; Haz lo mejor con medida.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-fogo.html"
     },
     {
       "id": "aguas-e-lagrimas",

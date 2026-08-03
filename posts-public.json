@@ -3268,6 +3268,25 @@
     "seriesLabel": "Portaria · classificação"
   },
   {
+    "title": "Inspeção: Fogo — elemento, ardor, cuidado e Faça o melhor!",
+    "titleEn": "Inspection: Fogo — element, ardor, care and Do your best!",
+    "titleEs": "Inspección: Fogo — elemento, ardor, cuidado y ¡Haz lo mejor!",
+    "excerpt": "Palavras: «fogo» (lat. *focus*) — elemento e metáfora; elos água, raiva e cultivo; Faça o melhor! com medida.",
+    "excerptEn": "Words: “fogo” (Lat. *focus*) — element and metaphor; links água, raiva and cultivo; Do your best! with measure.",
+    "excerptEs": "Palabras: «fogo» (lat. *focus*) — elemento y metáfora; vínculos água, raiva y cultivo; ¡Haz lo mejor! con medida.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-fogo",
+    "url": "/posts/post-inspecao-palavra-fogo.html",
+    "date": "2026-08-03T17:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-fogo.html",
+    "coverImage": "/imagens/inspecoes/fogo-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 33,
+    "seriesLabel": "Fogo · palavra"
+  },
+  {
     "title": "Inspeção: Guia HC e seletividade — mapa para advogados (com HC × sem HC)",
     "titleEn": "Inspection: HC & selectivity guide — map for lawyers (with HC vs without HC)",
     "titleEs": "Inspección: Guía HC y selectividad — mapa para abogados (con HC × sin HC)",
