@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:50:03.701Z",
+  "updatedAt": "2026-08-03T17:08:32.503Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -104,6 +104,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-agua.html"
+    },
+    {
+      "id": "pato",
+      "word": "pato",
+      "simple": "Árabe-hispânico — ave aquática, pagar o pato e pato no tucupi; elos animal/água/jambu; Faça o melhor!",
+      "simpleEn": "Arabic-Hispanic — waterbird, take the blame and duck in tucupi; links animal/água/jambu; Do your best!",
+      "simpleEs": "Árabe-hispánico — ave acuática, pagar el pato y pato en tucupi; vínculos animal/água/jambu; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-pato.html"
     },
     {
       "id": "aguas-e-lagrimas",
@@ -506,6 +516,26 @@
       "href": "/posts/post-inspecao-palavra-caminho.html"
     },
     {
+      "id": "perseguicao",
+      "word": "perseguição",
+      "simple": "Lat. persequī — caça, opressão e obsessão; contraste prosseguir; elos caminho/risco/EXIT; Faça o melhor!",
+      "simpleEn": "Lat. persequī — chase, oppression and obsession; contrast prosseguir; links caminho/risco/EXIT; Do your best!",
+      "simpleEs": "Lat. persequī — caza, opresión y obsesión; contraste prosseguir; vínculos caminho/risco/EXIT; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-perseguicao.html"
+    },
+    {
+      "id": "exit",
+      "word": "EXIT",
+      "simple": "EN/lat. exīre · exitus — saída, quit, teatro; no lab BudGanja, salvação = ofício de sair do aperto; elos caminho/alma/risco; Faça o melhor!",
+      "simpleEn": "EN/Lat. exīre · exitus — way out, quit, theatre; in the BudGanja lab, salvation = craft of leaving the squeeze; links caminho/alma/risco; Do your best!",
+      "simpleEs": "EN/lat. exīre · exitus — salida, quit, teatro; en el lab BudGanja, salvación = oficio de salir del aprieto; vínculos caminho/alma/risco; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-exit.html"
+    },
+    {
       "id": "pattern",
       "word": "pattern",
       "simple": "EN — molde / padrão / design pattern no BR; repetição reconhecível; elos gesto/caminho; Faça o melhor com o molde certo.",
@@ -524,6 +554,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-patrao.html"
+    },
+    {
+      "id": "puta",
+      "word": "puta",
+      "simple": "Lat. vulg. putta «menina» → pejorativo; no BR também intensificador («puta festa»); elo PQP; inspecionar com respeito.",
+      "simpleEn": "VL putta “girl” → pejorative; in BR also intensifier; link PQP; inspect with respect.",
+      "simpleEs": "Lat. vulg. putta «niña» → peyorativo; en BR también intensificador; vínculo PQP; inspeccionar con respeto.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-puta.html"
+    },
+    {
+      "id": "pariu",
+      "word": "pariu",
+      "simple": "De parir / lat. pariō «dar à luz»; peça de puta que pariu; separar parto e palavrão.",
+      "simpleEn": "From parir / Lat. pariō “give birth”; piece of puta que pariu; separate birth and swear.",
+      "simpleEs": "De parir / lat. pariō «dar a luz»; pieza de puta que pariu; separar parto y taco.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-pariu.html"
     },
     {
       "id": "camomila",
@@ -1644,6 +1694,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-gesto.html"
+    },
+    {
+      "id": "tempo",
+      "word": "tempo",
+      "simple": "Lat. tempus — cronologia, clima («tempo bom») e compasso musical na mesma palavra; kairós × chronos; elos sempre/passado/alma; Faça o melhor com o tempo que se tem.",
+      "simpleEn": "Lat. tempus — chronology, weather and musical beat share the same word; kairós × chronos; links sempre/passado/alma; Do your best with the time you have.",
+      "simpleEs": "Lat. tempus — cronología, clima y compás musical en la misma palabra; kairós × chronos; vínculos sempre/passado/alma; Haz lo mejor con el tiempo que tienes.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-tempo.html"
     },
     {
       "id": "pedi-mao",

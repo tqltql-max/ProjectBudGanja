@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:50:03.698Z",
+  "updatedAt": "2026-08-03T17:08:32.499Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4477,6 +4477,175 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 103 — mesma raiz que pattern/padrão."
+    },
+    {
+      "id": "neurociencia-endocanabinoidoma",
+      "title": "Endocanabinoidoma — mapa neurocientífico do ofício",
+      "titleEn": "Endocannabinoidome — neuroscience craft map",
+      "titleEs": "Endocannabinoidoma — mapa neurocientífico del oficio",
+      "tipo": "neurociencia",
+      "priority": 1,
+      "status": "feita",
+      "why": "Neurociências Cap. 1: ECS / endocanabinoidoma — mapa de ofício; elos Sidarta/Carlini/Albaugh.",
+      "whyEn": "Neuroscience Cap. 1: ECS / endocannabinoidome — craft map; links Sidarta/Carlini/Albaugh.",
+      "whyEs": "Neurociencias Cap. 1: ECS / endocannabinoidoma — mapa de oficio; vínculos Sidarta/Carlini/Albaugh.",
+      "suggestedSlug": "inspecao-neurociencia-endocanabinoidoma",
+      "doneHref": "/posts/post-inspecao-neurociencia-endocanabinoidoma.html",
+      "seriesHint": "neurociencias",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Endocannabinoid_system",
+        "/posts/post-inspecao-sidarta-ribeiro.html",
+        "/posts/post-inspecao-artigo-albaugh-cannabis-neurodesenvolvimento.html",
+        "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+      ],
+      "notes": "Abre chip Neurociências no hub."
+    },
+    {
+      "id": "palavra-puta",
+      "title": "Puta — de menina a tabu a intensificador",
+      "titleEn": "Puta — from girl to taboo to intensifier",
+      "titleEs": "Puta — de niña a tabú a intensificador",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: puta — putta; pejorativo/intensificador; elos pariu/PQP/respeito; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-puta",
+      "doneHref": "/posts/post-inspecao-palavra-puta.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/puta",
+        "/posts/post-inspecao-expressao-puta-que-pariu.html"
+      ],
+      "notes": "Cap. 104"
+    },
+    {
+      "id": "palavra-pariu",
+      "title": "Pariu — do latim pariō ao sopro do palavrão",
+      "titleEn": "Pariu — from Latin pariō to the swear breath",
+      "titleEs": "Pariu — del latín pariō al soplo del taco",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: pariu — pariō/parir; peça de PQP; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-pariu",
+      "doneHref": "/posts/post-inspecao-palavra-pariu.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/parir",
+        "/posts/post-inspecao-expressao-puta-que-pariu.html"
+      ],
+      "notes": "Cap. 105"
+    },
+    {
+      "id": "expressao-puta-que-pariu",
+      "title": "puta que pariu — válvula de pico e ofício da boca",
+      "titleEn": "puta que pariu — peak valve and craft of speech",
+      "titleEs": "puta que pariu — válvula de pico y oficio de la boca",
+      "tipo": "expressao",
+      "priority": 1,
+      "status": "feita",
+      "why": "Expressões: PQP — pico BR; peças puta+pariu; respeito; Faça o melhor!",
+      "suggestedSlug": "inspecao-expressao-puta-que-pariu",
+      "doneHref": "/posts/post-inspecao-expressao-puta-que-pariu.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/puta_que_pariu",
+        "/posts/post-inspecao-palavra-puta.html",
+        "/posts/post-inspecao-palavra-pariu.html"
+      ],
+      "notes": "Cap. 11"
+    },
+    {
+      "id": "palavra-exit",
+      "title": "EXIT — saída, limiar e salvação de ofício",
+      "titleEn": "EXIT — way out, threshold and craft-salvation",
+      "titleEs": "EXIT — salida, umbral y salvación de oficio",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: EXIT (lat. exīre/exitus) — saída/quit/teatro; no lab, salvação = sair do aperto; caminho/risco/alma; Faça o melhor!",
+      "whyEn": "Words: EXIT (Lat. exīre/exitus) — exit/quit/theatre; lab salvation = leaving the squeeze; caminho/risco/alma; Do your best!",
+      "whyEs": "Palabras: EXIT (lat. exīre/exitus) — salida/quit/teatro; salvación lab = salir del aprieto; caminho/risco/alma; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-exit",
+      "doneHref": "/posts/post-inspecao-palavra-exit.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wiktionary.org/wiki/exit",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-palavra-alma.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 106 — «essa é a salvação»; ofício sem sermão."
+    },
+    {
+      "id": "palavra-pato",
+      "title": "Pato — a palavra da ave, da culpa e da água",
+      "titleEn": "Pato — the word of the bird, blame, and water",
+      "titleEs": "Pato — la palabra del ave, de la culpa y del agua",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: pato (árabe-hispânico) — ave, pagar o pato, jambu/tucupi; animal/água/coelho; Faça o melhor!",
+      "whyEn": "Words: pato (Arabic-Hispanic) — bird, take the blame, jambu/tucupi; animal/água/coelho; Do your best!",
+      "whyEs": "Palabras: pato (árabe-hispánico) — ave, pagar el pato, jambu/tucupi; animal/água/coelho; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-pato",
+      "doneHref": "/posts/post-inspecao-palavra-pato.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/pato",
+        "/posts/post-inspecao-palavra-animal.html",
+        "/posts/post-inspecao-palavra-agua.html",
+        "/posts/post-inspecao-palavra-coelho.html",
+        "/posts/post-inspecao-planta-jambu.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 107 — ave ≠ gíria; étimo árabe ≠ lat. anas."
+    },
+    {
+      "id": "palavra-tempo",
+      "title": "Tempo — cronologia, clima, compasso e o instante certo",
+      "titleEn": "Tempo — chronology, weather, beat and the right moment",
+      "titleEs": "Tempo — cronología, clima, compás y el instante justo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: tempo (lat. tempus) — cronologia/clima/compasso; kairós × chronos; sempre/passado/vida/alma; Faça o melhor!",
+      "whyEn": "Words: tempo (Lat. tempus) — chronology/weather/beat; kairós × chronos; sempre/passado/vida/alma; Do your best!",
+      "whyEs": "Palabras: tempo (lat. tempus) — cronología/clima/compás; kairós × chronos; sempre/passado/vida/alma; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-tempo",
+      "doneHref": "/posts/post-inspecao-palavra-tempo.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/tempo",
+        "/posts/post-inspecao-palavra-sempre.html",
+        "/posts/post-inspecao-palavra-passado.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 107 — cronos/clima/compasso/posse; kairós comparação sem linhagem."
+    },
+    {
+      "id": "palavra-perseguicao",
+      "title": "Perseguição — caça, opressão e o seguir que aperta",
+      "titleEn": "Perseguição — chase, oppression, and the follow that squeezes",
+      "titleEs": "Perseguição — caza, opresión y el seguir que aprieta",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: perseguição (lat. persequī) — caça/opressão/obsessão; contraste prosseguir; caminho/risco/EXIT; Faça o melhor!",
+      "whyEn": "Words: perseguição (Lat. persequī) — chase/oppression/obsession; contrast prosseguir; caminho/risco/EXIT; Do your best!",
+      "whyEs": "Palabras: perseguição (lat. persequī) — caza/opresión/obsesión; contraste prosseguir; caminho/risco/EXIT; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-perseguicao",
+      "doneHref": "/posts/post-inspecao-palavra-perseguicao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/persegui%C3%A7%C3%A3o",
+        "/posts/post-inspecao-palavra-prosseguir.html",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-palavra-risco.html",
+        "/posts/post-inspecao-palavra-exit.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 108 — per- ≠ pro-; palavra ≠ relatório clínico."
     }
   ]
 }

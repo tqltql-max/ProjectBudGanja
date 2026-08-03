@@ -42,6 +42,7 @@ var SERIES_LABELS = {
   'loja-cultivo': 'Lojas de cultivo',
   'insumos-cultivo': 'Insumos de cultivo',
   'artigos-cientificos': 'Artigos científicos',
+  'neurociencias': 'Neurociências',
   'legado-pessoas': 'Legado',
   'plantas-medicinais': 'Plantas medicinais',
   'plantas-frutos': 'Frutos',
@@ -85,6 +86,10 @@ function seriesBadgeHtml(post, options) {
   if (options.hub && (post.series === 'artigos-cientificos' || post.series.indexOf('artigo') === 0)) {
     var artigo = post.seriesLabel || 'Artigo';
     return '<span class="post-card-series" data-series="' + post.series + '">' + artigo + '</span>';
+  }
+  if (options.hub && (post.series === 'neurociencias' || /inspecao-neurociencia-/i.test(post.slug || ''))) {
+    var neuro = post.seriesLabel || 'Neurociência';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + neuro + '</span>';
   }
   if (options.hub && (post.series === 'legado-pessoas' || post.series.indexOf('legado') === 0)) {
     var legado = post.seriesLabel || 'Legado';
@@ -150,6 +155,7 @@ function resolveInspecaoTipo(post) {
   if (series === 'loja-cultivo' || series.indexOf('loja-') === 0 || /inspecao-loja-/i.test(slug)) return 'loja';
   if (series === 'insumos-cultivo' || series.indexOf('insumo') === 0 || /inspecao-insumo-/i.test(slug)) return 'insumo';
   if (series === 'artigos-cientificos' || series.indexOf('artigo') === 0 || /inspecao-artigo-/i.test(slug)) return 'artigo';
+  if (series === 'neurociencias' || /inspecao-neurociencia-/i.test(slug)) return 'neurociencia';
   if (
     series === 'plantas-derivados-risco' ||
     series === 'animais-derivados-risco' ||
@@ -364,6 +370,7 @@ var HUB_CHIP_ANCHOR = {
   loja: 'lojas',
   insumo: 'insumos',
   artigo: 'artigos',
+  neurociencia: 'neurociencias',
   pessoa: 'pessoas',
   planta: 'plantas',
   fruto: 'frutos',
@@ -383,6 +390,8 @@ var HUB_ANCHOR_TO_TIPO = {
   canais: 'canal',
   cursos: 'curso',
   artigos: 'artigo',
+  neurociencias: 'neurociencia',
+  neurociencia: 'neurociencia',
   plantas: 'planta',
   frutos: 'fruto',
   derivados: 'derivado',
@@ -402,6 +411,13 @@ var INSPECAO_HUB_TIPOS = [
   { id: 'canal', labelKey: 'pages.inspections.chipChannels', fallback: 'Canais', sort: 'label' },
   { id: 'curso', labelKey: 'pages.inspections.chipCourses', fallback: 'Cursos', sort: 'seriesOrder' },
   { id: 'artigo', labelKey: 'pages.inspections.chipArticles', fallback: 'Artigos', sort: 'seriesOrder' },
+  {
+    id: 'neurociencia',
+    labelKey: 'pages.inspections.chipNeuroscience',
+    fallback: 'Neurociências',
+    sort: 'seriesOrder',
+    keepVisible: true
+  },
   { id: 'planta', labelKey: 'pages.inspections.chipPlants', fallback: 'Plantas', sort: 'seriesOrder' },
   { id: 'fruto', labelKey: 'pages.inspections.chipFruits', fallback: 'Frutos', sort: 'seriesOrder', keepVisible: true },
   { id: 'animal', labelKey: 'pages.inspections.chipAnimals', fallback: 'Animais', sort: 'seriesOrder', keepVisible: true },
