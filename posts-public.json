@@ -1330,6 +1330,25 @@
     "seriesLabel": "Fabuloso · palavra"
   },
   {
+    "title": "Inspeção: Fantástico — fantasia, elogio BR «fantástico!» e Faça o melhor!",
+    "titleEn": "Inspection: Fantástico — fantasy, BR praise “fantástico!” and Do your best!",
+    "titleEs": "Inspección: Fantástico — fantasía, elogio BR «¡fantástico!» y ¡Haz lo mejor!",
+    "excerpt": "Palavras: «fantástico» (lat. *phantasticus* / fantasia) — correcção de fantisico; eixos fantasia e elogio BR; escala com legal, genial e maravilhoso.",
+    "excerptEn": "Words: “fantástico” (Lat. *phantasticus* / fantasy) — typo fix from fantisico; fantasy and BR praise axes; scale with legal, genial and maravilhoso.",
+    "excerptEs": "Palabras: «fantástico» (lat. *phantasticus* / fantasía) — corrección de fantisico; ejes fantasía y elogio BR; escala con legal, genial y maravilhoso.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-fantastico",
+    "url": "/posts/post-inspecao-palavra-fantastico.html",
+    "date": "2026-08-03T22:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-fantastico.html",
+    "coverImage": "/imagens/inspecoes/fantastico-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 82,
+    "seriesLabel": "Fantástico · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",
@@ -1366,25 +1385,6 @@
     "series": "palavras-origem",
     "seriesOrder": null,
     "seriesLabel": "Inacreditável · palavra"
-  },
-  {
-    "title": "Inspeção: Fantástico — fantasia, elogio BR «fantástico!» e Faça o melhor!",
-    "titleEn": "Inspection: Fantástico — fantasy, BR praise “fantástico!” and Do your best!",
-    "titleEs": "Inspección: Fantástico — fantasía, elogio BR «¡fantástico!» y ¡Haz lo mejor!",
-    "excerpt": "Palavras: «fantástico» (lat. *phantasticus* / fantasia) — correcção de fantisico; eixos fantasia e elogio BR; escala com legal, genial e maravilhoso.",
-    "excerptEn": "Words: “fantástico” (Lat. *phantasticus* / fantasy) — typo fix from fantisico; fantasy and BR praise axes; scale with legal, genial and maravilhoso.",
-    "excerptEs": "Palabras: «fantástico» (lat. *phantasticus* / fantasía) — corrección de fantisico; ejes fantasía y elogio BR; escala con legal, genial y maravilhoso.",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-palavra-fantastico",
-    "url": "/posts/post-inspecao-palavra-fantastico.html",
-    "date": "2026-08-03T22:00:00.000Z",
-    "filename": "posts/post-inspecao-palavra-fantastico.html",
-    "coverImage": "/imagens/inspecoes/fantastico-palavra-cover.jpg",
-    "category": "inspecao",
-    "series": "palavras-origem",
-    "seriesOrder": null,
-    "seriesLabel": "Fantástico · palavra"
   },
   {
     "title": "Inspeção: Planta — ser vivo, cultivo e Farmácia Viva",
