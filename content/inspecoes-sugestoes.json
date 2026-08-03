@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:44:16.235Z",
+  "updatedAt": "2026-08-03T16:50:03.698Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4455,6 +4455,28 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 102 — loan EN; padrão PT em texto formal."
+    },
+    {
+      "id": "palavra-patrao",
+      "title": "Patrão — chefe, poder e respeito",
+      "titleEn": "Patrão — boss, power and respect",
+      "titleEs": "Patrão — jefe, poder y respeto",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: patrão — chefe/empregador (patronus); respeito/pattern/gesto; Faça o melhor!",
+      "whyEn": "Words: patrão — boss/employer (patronus); respeito/pattern/gesto; Do your best!",
+      "whyEs": "Palabras: patrão — jefe/empleador (patronus); respeito/pattern/gesto; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-patrao",
+      "doneHref": "/posts/post-inspecao-palavra-patrao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/patr%C3%A3o",
+        "/posts/post-inspecao-palavra-pattern.html",
+        "/posts/post-inspecao-palavra-respeito.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 103 — mesma raiz que pattern/padrão."
     }
   ]
 }

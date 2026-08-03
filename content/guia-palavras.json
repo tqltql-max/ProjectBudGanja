@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:44:16.238Z",
+  "updatedAt": "2026-08-03T16:50:03.701Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -514,6 +514,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-pattern.html"
+    },
+    {
+      "id": "patrao",
+      "word": "patrão",
+      "simple": "Chefe / empregador (lat. patronus); mesma raiz de padrão e pattern; elos respeito/gesto; Faça o melhor com ou sem olhar.",
+      "simpleEn": "Boss / employer (Lat. patronus); same root as padrão and pattern; links respeito/gesto; Do your best with or without watching.",
+      "simpleEs": "Jefe / empleador (lat. patronus); misma raíz que padrão y pattern; vínculos respeito/gesto; Haz lo mejor con o sin mirada.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-patrao.html"
     },
     {
       "id": "camomila",
