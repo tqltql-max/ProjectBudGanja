@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T17:08:32.503Z",
+  "updatedAt": "2026-08-03T18:01:00.251Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1704,6 +1704,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-tempo.html"
+    },
+    {
+      "id": "renato-russo",
+      "word": "Renato Russo",
+      "simple": "Letrista e voz da Legião Urbana (1960–1996); no site, inspeção em Pessoas com elo na ficha tempo (Tempo Perdido).",
+      "simpleEn": "Lyricist and voice of Legião Urbana (1960–1996); on the site, a People inspection linked to the tempo sheet (Tempo Perdido).",
+      "simpleEs": "Letrista y voz de Legião Urbana (1960–1996); en el sitio, inspección en Personas con vínculo en la ficha tempo (Tempo Perdido).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-renato-russo.html"
     },
     {
       "id": "pedi-mao",

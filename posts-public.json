@@ -1,5 +1,24 @@
 [
   {
+    "title": "Inspeção: Renato Russo — Legião Urbana, letra geracional e a série Palavras",
+    "titleEn": "Inspection: Renato Russo — Legião Urbana, generational lyrics and the Words series",
+    "titleEs": "Inspección: Renato Russo — Legião Urbana, letra generacional y la serie Palabras",
+    "excerpt": "Pessoas × Palavras: Renato Russo e a Legião Urbana — letra geracional do rock BR cruzada com a ficha tempo (Tempo Perdido) e o hub de vocábulos.",
+    "excerptEn": "People × Words: Renato Russo and Legião Urbana — generational Brazilian rock lyrics crossed with the tempo sheet (Tempo Perdido) and the Words hub.",
+    "excerptEs": "Personas × Palabras: Renato Russo y Legião Urbana — letra generacional del rock BR cruzada con la ficha tempo (Tempo Perdido) y el hub de vocablos.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-figura-renato-russo",
+    "url": "/posts/post-inspecao-figura-renato-russo.html",
+    "date": "2026-08-03T17:00:00.000Z",
+    "filename": "posts/post-inspecao-figura-renato-russo.html",
+    "coverImage": "/imagens/inspecoes/renato-russo-cover.jpg",
+    "category": "inspecao",
+    "series": "pessoas-historia",
+    "seriesOrder": 12,
+    "seriesLabel": "Renato Russo · pessoa"
+  },
+  {
     "title": "Inspeção: Planta — Babosa — gel foliar e polissacarídeos",
     "titleEn": "Inspection: Plant — Aloe — leaf gel and polysaccharides",
     "titleEs": "Inspección: Planta — Sábila — gel foliar y polisacáridos",
@@ -4575,7 +4594,7 @@
     "coverImage": "/imagens/inspecoes/maconha-palavra-cover.jpg",
     "category": "inspecao",
     "series": "palavras-origem",
-    "seriesOrder": null,
+    "seriesOrder": 1,
     "seriesLabel": "Maconha · palavra"
   },
   {

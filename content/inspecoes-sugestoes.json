@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T17:08:32.499Z",
+  "updatedAt": "2026-08-03T18:00:33.386Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -389,6 +389,46 @@
         "https://pt.wikipedia.org/wiki/Chor%C3%A3o_(cantor)",
         "/posts/post-inspecao-palavra-maconha.html"
       ]
+    },
+    {
+      "id": "figura-renato-russo",
+      "title": "Renato Russo — Legião Urbana, letra geracional e série Palavras",
+      "titleEn": "Renato Russo — Legião Urbana, generational lyrics and Words series",
+      "titleEs": "Renato Russo — Legião Urbana, letra generacional y serie Palabras",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas × Palavras: letrista da Legião Urbana — letra geracional cruzada com a ficha tempo (Tempo Perdido).",
+      "whyEn": "People × Words: Legião Urbana lyricist — generational lyrics crossed with the tempo sheet (Tempo Perdido).",
+      "whyEs": "Personas × Palabras: letrista de Legião Urbana — letra generacional cruzada con la ficha tempo (Tempo Perdido).",
+      "suggestedSlug": "inspecao-figura-renato-russo",
+      "doneHref": "/posts/post-inspecao-figura-renato-russo.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Renato_Russo",
+        "/posts/post-inspecao-palavra-tempo.html",
+        "/posts/post-inspecao-palavra-maconha.html"
+      ],
+      "notes": "Inclui a banda Legião Urbana como laboratório; não romantizar AIDS nem dependência."
+    },
+    {
+      "id": "arte-legiao-urbana",
+      "title": "Legião Urbana — discografia e elo com Renato Russo",
+      "titleEn": "Legião Urbana — discography and link to Renato Russo",
+      "titleEs": "Legião Urbana — discografía y vínculo con Renato Russo",
+      "tipo": "arte",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Foco na obra/banda (álbuns, formação); biografia do letrista já em Pessoas.",
+      "whyEn": "Focus on the band/work (albums, lineup); lyricist bio already in People.",
+      "whyEs": "Foco en la obra/banda (álbumes, formación); biografía del letrista ya en Personas.",
+      "suggestedSlug": "inspecao-arte-legiao-urbana",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Legi%C3%A3o_Urbana",
+        "/posts/post-inspecao-figura-renato-russo.html"
+      ],
+      "notes": "Foco na obra, não na biografia (já em Pessoas)."
     },
     {
       "id": "palavra-passar",
