@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:52:15.395Z",
+  "updatedAt": "2026-08-03T13:52:46.674Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -1367,7 +1367,7 @@
         "https://pt.wikipedia.org/wiki/Laranja",
         "/plantas/laranja/"
       ],
-      "notes": "hubCategory: fruto; par com Derivados quando aplicável."
+      "notes": "hubCategory: fruto; Cap. 3; notas Cap + elos melancia/mamão/goiaba."
     },
     {
       "id": "derivado-laranja",
@@ -3250,7 +3250,7 @@
         "/posts/post-inspecao-palavra-legal.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 49 — elogio BR; rede só com slugs existentes."
+      "notes": "Cap. 1 — elogio BR; rede só com slugs existentes."
     },
     {
       "id": "palavra-respeito",
@@ -3512,7 +3512,7 @@
         "/posts/post-inspecao-palavra-medo.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 68 — fresta viva; sem sermão; tipografia epseramja → esperança."
+      "notes": "Cap. 80 — fresta viva; sem sermão; tipografia epseramja → esperança."
     },
     {
       "id": "palavra-fantasioso",
@@ -3683,7 +3683,7 @@
         "/vida/",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 69 — palavra ≠ trilha /vida/ ≠ Árvore da Vida; sem sermão."
+      "notes": "Cap. 70 — palavra ≠ trilha /vida/ ≠ Árvore da Vida; sem sermão."
     },
     {
       "id": "fruto-mamao",
