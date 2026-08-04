@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:26:16.300Z",
+  "updatedAt": "2026-08-04T17:32:01.248Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -124,6 +124,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-arte-aguas-e-lagrimas.html"
+    },
+    {
+      "id": "origami",
+      "word": "origami",
+      "simple": "Japonês ori (dobrar) + kami (papel) — arte de dobrar papel; dedicatória BudGanja a Tom Jobim.",
+      "simpleEn": "Japanese ori (fold) + kami (paper) — paper-folding art; BudGanja dedication to Tom Jobim.",
+      "simpleEs": "Japonés ori (doblar) + kami (papel) — arte de doblar papel; dedicatoria BudGanja a Tom Jobim.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-tom-jobim.html"
+    },
+    {
+      "id": "tom-jobim",
+      "word": "Tom Jobim",
+      "simple": "Compositor da bossa — palavra-música; Águas de Março; dedicatória lab «Adoro origami».",
+      "simpleEn": "Bossa composer — word-music; Waters of March; lab dedication “I love origami”.",
+      "simpleEs": "Compositor de la bossa — palabra-música; Águas de Março; dedicatoria lab «Adoro origami».",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-tom-jobim.html"
     },
     {
       "id": "alecrim",

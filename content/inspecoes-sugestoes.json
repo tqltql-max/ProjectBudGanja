@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:26:16.295Z",
+  "updatedAt": "2026-08-04T17:32:01.243Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -389,6 +389,28 @@
         "https://pt.wikipedia.org/wiki/Chor%C3%A3o_(cantor)",
         "/posts/post-inspecao-palavra-maconha.html"
       ]
+    },
+    {
+      "id": "figura-tom-jobim",
+      "title": "Tom Jobim — bossa, Águas de Março e «Adoro origami»",
+      "titleEn": "Tom Jobim — bossa, Waters of March, and “I love origami”",
+      "titleEs": "Tom Jobim — bossa, Águas de Março y «Adoro origami»",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas: método palavra-música; dedicatória lab origami (dobrar papel).",
+      "whyEn": "People: word-music craft; lab origami dedication (fold paper).",
+      "whyEs": "Personas: oficio palabra-música; dedicatoria lab origami (doblar papel).",
+      "suggestedSlug": "inspecao-figura-tom-jobim",
+      "doneHref": "/posts/post-inspecao-figura-tom-jobim.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Ant%C3%B4nio_Carlos_Jobim",
+        "https://pt.wikipedia.org/wiki/Origami",
+        "/posts/post-inspecao-arte-aguas-e-lagrimas.html",
+        "/posts/post-inspecao-palavra-agua.html"
+      ],
+      "notes": "«Adoro origami» = dedicatória editorial BudGanja, não citação documentada de manuscrito Jobim."
     },
     {
       "id": "figura-renato-russo",
