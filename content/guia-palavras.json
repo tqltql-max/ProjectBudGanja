@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T14:22:13.463Z",
+  "updatedAt": "2026-08-04T14:24:33.547Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1724,6 +1724,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-gesto.html"
+    },
+    {
+      "id": "grok",
+      "word": "Grok",
+      "simple": "Heinlein *to grok* — compreender por dentro × tom de ofício; elo oral com Deus (abençoe / dignidade / assombro); humano decide.",
+      "simpleEn": "Heinlein *to grok* — understand deeply × craft tone; oral link to Deus; human decides.",
+      "simpleEs": "Heinlein *to grok* — comprender por dentro × tono de oficio; vínculo oral con Deus; decide el humano.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-grok.html"
     },
     {
       "id": "meneia",

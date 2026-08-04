@@ -2204,6 +2204,25 @@
     "seriesLabel": "Mãe · palavra"
   },
   {
+    "title": "Inspeção: Grok — compreender por dentro × falar limpo",
+    "titleEn": "Inspection: Grok — understand deeply × speak clean",
+    "titleEs": "Inspección: Grok — comprender por dentro × hablar limpio",
+    "excerpt": "Palavras: «Grok» (Heinlein *to grok*) — compreensão íntima × tom de ofício; relação de forma de se expressar com Deus (abençoe / filho / meudeusdoceu / jesusamando); Faça o melhor!",
+    "excerptEn": "Words: “Grok” (Heinlein *to grok*) — deep understanding × craft tone; expression link to Deus oralidade; Do your best!",
+    "excerptEs": "Palabras: «Grok» (Heinlein *to grok*) — comprensión íntima × tono de oficio; vínculo de expresión con oralidad de Deus; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-grok",
+    "url": "/posts/post-inspecao-palavra-grok.html",
+    "date": "2026-08-04T14:20:00.000Z",
+    "filename": "posts/post-inspecao-palavra-grok.html",
+    "coverImage": "/imagens/inspecoes/grok-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 112,
+    "seriesLabel": "Grok · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",

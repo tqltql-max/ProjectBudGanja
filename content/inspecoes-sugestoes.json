@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T14:22:13.459Z",
+  "updatedAt": "2026-08-04T14:24:33.542Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4844,6 +4844,31 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 12 Expressões — tipografia dois pouvi → dois ouvidos; ficha ≠ sermão."
+    },
+    {
+      "id": "palavra-grok",
+      "title": "Grok — compreender por dentro × falar limpo (Deus × tom)",
+      "titleEn": "Grok — understand deeply × speak clean (Deus × tone)",
+      "titleEs": "Grok — comprender por dentro × hablar limpio (Deus × tono)",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: Grok (Heinlein to grok) — compreensão íntima × tom de ofício; relação de forma de se expressar com Deus; Faça o melhor!",
+      "whyEn": "Words: Grok (Heinlein to grok) — deep understanding × craft tone; expression link to Deus; Do your best!",
+      "whyEs": "Palabras: Grok (Heinlein to grok) — comprensión íntima × tono de oficio; vínculo de expresión con Deus; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-grok",
+      "doneHref": "/posts/post-inspecao-palavra-grok.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wiktionary.org/wiki/grok",
+        "/posts/post-inspecao-palavra-simbiose.html",
+        "/posts/post-inspecao-expressao-deus-abencoe.html",
+        "/posts/post-inspecao-expressao-filho-de-deus.html",
+        "/posts/post-inspecao-expressao-meudeusdoceu.html",
+        "/posts/post-inspecao-expressao-jesusamando.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 112 — grock→Grok; relacionar Deus×Grok na forma de se expressar; ficha ≠ catecismo."
     }
   ]
 }
