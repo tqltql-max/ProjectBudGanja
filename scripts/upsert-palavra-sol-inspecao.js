@@ -1,13 +1,13 @@
 'use strict';
 
 /**
- * Injeta palavra «luz» na série Palavras.
- * Uso: node scripts/upsert-palavra-luz-inspecao.js
+ * Injeta palavra «sol» na série Palavras.
+ * Uso: node scripts/upsert-palavra-sol-inspecao.js
  */
 
 const fs = require('fs');
 const path = require('path');
-const { buildLuzPost } = require('../lib/luz-inspecao-post.js');
+const { buildSolPost } = require('../lib/sol-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_FILE = path.join(ROOT, 'posts.json');
@@ -49,11 +49,11 @@ async function syncSql(post) {
 
 async function main() {
   const posts = JSON.parse(fs.readFileSync(POSTS_FILE, 'utf8'));
-  const existing = posts.find((p) => p.slug === 'inspecao-palavra-luz');
+  const existing = posts.find((p) => p.slug === 'inspecao-palavra-sol');
   const seriesOrder = existing
     ? Number(existing.seriesOrder) || nextPalavrasOrder(posts)
     : nextPalavrasOrder(posts);
-  const post = buildLuzPost(seriesOrder);
+  const post = buildSolPost(seriesOrder);
 
   upsertPost(posts, post);
   fs.writeFileSync(POSTS_FILE, JSON.stringify(posts, null, 2) + '\n', 'utf8');
@@ -74,62 +74,62 @@ async function main() {
   if (fs.existsSync(SUG_FILE)) {
     const sug = JSON.parse(fs.readFileSync(SUG_FILE, 'utf8'));
     const items = Array.isArray(sug.items) ? sug.items : [];
-    const sugId = 'palavra-luz';
+    const sugId = 'palavra-sol';
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Luz — efeito do circuito e claridade',
-      titleEn: 'Luz — circuit effect and clarity',
-      titleEs: 'Luz — efecto del circuito y claridad',
+      title: 'Sol — astro, luz natural e ciclo',
+      titleEn: 'Sol — star, natural light and cycle',
+      titleEs: 'Sol — astro, luz natural y ciclo',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: luz (lat. lux) — claridade e efeito do clique; tríade circuito + sol; cultivo; Faça o melhor!',
-      whyEn: 'Words: luz (Lat. lux) — clarity and click effect; circuit triad + sol; grow; Do your best!',
-      whyEs: 'Palabras: luz (lat. lux) — claridad y efecto del clic; tríada circuito + sol; cultivo; ¡Haz lo mejor!',
+      why: 'Palavras: sol (lat. sol) — astro e luz natural; elo luz; contraste interruptor; ≠ solitário; Faça o melhor!',
+      whyEn: 'Words: sol (Lat. sol) — star and natural light; link luz; contrast interruptor; ≠ solitário; Do your best!',
+      whyEs: 'Palabras: sol (lat. sol) — astro y luz natural; vínculo luz; contraste interruptor; ≠ solitário; ¡Haz lo mejor!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
       sources: [
         post.sourceUrl,
-        'https://en.wiktionary.org/wiki/lux#Latin',
+        'https://en.wiktionary.org/wiki/sol#Latin',
+        '/posts/post-inspecao-palavra-luz.html',
         '/posts/post-inspecao-palavra-interruptor.html',
-        '/posts/post-inspecao-palavra-ligar-desligar.html',
-        '/posts/post-inspecao-palavra-sol.html',
         '/posts/post-inspecao-palavra-fogo.html',
+        '/posts/post-inspecao-palavra-solitario.html',
         '/posts/post-inspecao-expressao-faca-o-melhor.html'
       ],
-      notes: 'Cap. ' + post.seriesOrder + ' — tríade circuito: peça × verbo × efeito (luz).'
+      notes: 'Cap. ' + post.seriesOrder + ' — fonte natural vs luz de circuito; ≠ solitário.'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);
     sug.items = items;
     sug.updatedAt = new Date().toISOString();
     fs.writeFileSync(SUG_FILE, JSON.stringify(sug, null, 2) + '\n', 'utf8');
-    console.log('Sugestões actualizadas (palavra-luz)');
+    console.log('Sugestões actualizadas (palavra-sol)');
   }
 
   if (fs.existsSync(GUIA_FILE)) {
     const guia = JSON.parse(fs.readFileSync(GUIA_FILE, 'utf8'));
     const items = Array.isArray(guia.items) ? guia.items : [];
     const entry = {
-      id: 'luz',
-      word: 'luz',
+      id: 'sol',
+      word: 'sol',
       simple:
-        'Lat. lux — claridade e efeito do clique; tríade circuito + sol (fonte natural); Faça o melhor com a luz certa.',
+        'Lat. sol — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Faça o melhor com a luz do dia.',
       simpleEn:
-        'Lat. lux — clarity and click effect; circuit triad + sol (natural source); Do your best with the right light.',
+        'Lat. sol — star and natural light; link luz; contrast with interruptor; ≠ solitário; Do your best with daylight.',
       simpleEs:
-        'Lat. lux — claridad y efecto del clic; tríada circuito + sol (fuente natural); Haz lo mejor con la luz cierta.',
+        'Lat. sol — astro y luz natural; vínculo luz; contraste con interruptor; ≠ solitário; Haz lo mejor con la luz del día.',
       group: 'lexico',
       fromTitle: false,
       href
     };
-    const gi = items.findIndex((x) => x.id === entry.id || x.word === 'luz');
+    const gi = items.findIndex((x) => x.id === entry.id || x.word === 'sol');
     if (gi >= 0) items[gi] = Object.assign({}, items[gi], entry);
     else {
       const after = items.findIndex(
-        (x) => x.id === 'ligar' || x.id === 'desligar' || x.id === 'interruptor' || x.id === 'fogo'
+        (x) => x.id === 'luz' || x.id === 'fogo' || x.id === 'interruptor'
       );
       if (after >= 0) items.splice(after + 1, 0, entry);
       else items.push(entry);
@@ -137,29 +137,25 @@ async function main() {
     guia.items = items;
     guia.updatedAt = new Date().toISOString();
     fs.writeFileSync(GUIA_FILE, JSON.stringify(guia, null, 2) + '\n', 'utf8');
-    console.log('Guia de palavras actualizado (luz)');
+    console.log('Guia de palavras actualizado (sol)');
   }
 
   const glossPath = path.join(ROOT, 'js', 'learn-glossary.js');
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    luz: { gloss: "Lat. lux — claridade e efeito do clique; tríade circuito + sol; cultivo; Faça o melhor!", href: "/posts/post-inspecao-palavra-luz.html", en: "light", es: "luz", fr: "lumiere", it: "luce", de: "Licht", el: "fos", la: "lux", yo: "imole", sw: "nuru", gez: "berhan", nl: "licht", pl: "swiatlo", ru: "svet", uk: "svitlo", zh: "guang", ja: "hikari", ko: "빛", ar: "daw", he: "or", hi: "prakash", tr: "isik", sv: "ljus", da: "lys", no: "lys", fi: "valo", cs: "svetlo", ro: "lumina", hu: "feny", ca: "llum", gl: "luz", eu: "argi", gn: "tendy", qu: "kancha", eo: "lumo", vi: "anh sang", id: "cahaya", th: "light", hr: "svjetlo", sk: "svetlo", ga: "solas", cy: "golau", ha: "haske", am: "birhan", fa: "nur", bn: "alo", zu: "ukukhanya" },';
-    if (/luz:\s*\{/.test(gloss)) {
-      gloss = gloss.replace(/    luz:\s*\{[\s\S]*?\},/, entryLine);
+      '    sol: { gloss: "Lat. sol — astro e luz natural; elo luz; contraste interruptor; ≠ solitário; Faça o melhor!", href: "/posts/post-inspecao-palavra-sol.html", en: "sun", es: "sol", fr: "soleil", it: "sole", de: "Sonne", el: "ilios", la: "sol", yo: "oorun", sw: "jua", gez: "dahay", nl: "zon", pl: "slonce", ru: "solntse", uk: "sontse", zh: "taiyang", ja: "taiyo", ko: "태양", ar: "shams", he: "shemesh", hi: "suraj", tr: "gunes", sv: "sol", da: "sol", no: "sol", fi: "aurinko", cs: "slunce", ro: "soare", hu: "nap", ca: "sol", gl: "sol", eu: "eguzki", gn: "kuarahy", qu: "inti", eo: "suno", vi: "mat troi", id: "matahari", th: "sun", hr: "sunce", sk: "slnko", ga: "grian", cy: "haul", ha: "rana", am: "tsehày", fa: "khorshid", bn: "surjo", zu: "ilanga" },';
+    // Avoid matching solitario/solitário
+    if (/\n    sol:\s*\{/.test(gloss)) {
+      gloss = gloss.replace(/\n    sol:\s*\{[\s\S]*?\},/, '\n' + entryLine);
       fs.writeFileSync(glossPath, gloss);
-      console.log('Glossário actualizado (luz · existente)');
+      console.log('Glossário actualizado (sol · existente)');
     } else {
-      const reLigar = /(ligar:\s*\{[\s\S]*?zu:\s*"[^"]*"\s*\},?\r?\n)/;
-      const reInt = /(interruptor:\s*\{[\s\S]*?zu:\s*"[^"]*"\s*\},?\r?\n)/;
-      if (reLigar.test(gloss)) {
-        gloss = gloss.replace(reLigar, '$1' + entryLine + '\n');
+      const reLuz = /(luz:\s*\{[\s\S]*?zu:\s*"[^"]*"\s*\},?\r?\n)/;
+      if (reLuz.test(gloss)) {
+        gloss = gloss.replace(reLuz, '$1' + entryLine + '\n');
         fs.writeFileSync(glossPath, gloss);
-        console.log('Glossário actualizado (luz · após ligar)');
-      } else if (reInt.test(gloss)) {
-        gloss = gloss.replace(reInt, '$1' + entryLine + '\n');
-        fs.writeFileSync(glossPath, gloss);
-        console.log('Glossário actualizado (luz · após interruptor)');
+        console.log('Glossário actualizado (sol · após luz)');
       } else {
         console.warn('Aviso: glossário — ponto de inserção não encontrado');
       }
