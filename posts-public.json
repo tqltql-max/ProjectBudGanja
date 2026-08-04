@@ -2299,6 +2299,25 @@
     "seriesLabel": "Papel de enrolar · tabaco · palavra"
   },
   {
+    "title": "Inspeção: Maçaneta — torcer, abrir, mãos, porta/janela e ligar a luz",
+    "titleEn": "Inspection: Maçaneta — twist, open, hands, door/window, and switching light",
+    "titleEs": "Inspección: Maçaneta — torcer, abrir, manos, puerta/ventana y encender la luz",
+    "excerpt": "Palavras: maçaneta — gesto torcer/abrir × mão E/D × porta/janela × ligar/desligar luz; elos gesto, interruptor; Faça o melhor!",
+    "excerptEn": "Words: maçaneta — twist/open × hands × door/window × on/off light; links gesto, interruptor; Do your best!",
+    "excerptEs": "Palabras: maçaneta — torcer/abrir × manos × puerta/ventana × ligar/desligar luz; vínculos gesto, interruptor; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-macaneta",
+    "url": "/posts/post-inspecao-palavra-macaneta.html",
+    "date": "2026-08-04T21:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-macaneta.html",
+    "coverImage": "/imagens/inspecoes/macaneta-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 115,
+    "seriesLabel": "Maçaneta · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",

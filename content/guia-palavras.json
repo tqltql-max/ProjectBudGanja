@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:23:29.799Z",
+  "updatedAt": "2026-08-04T17:26:16.300Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1754,6 +1754,36 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-gesto.html"
+    },
+    {
+      "id": "janela",
+      "word": "janela",
+      "simple": "Vão para ar e vista — elo maçaneta/fecho; cruzamento com porta e luz.",
+      "simpleEn": "Window for air and view — links handle/latch; crossing with door and light.",
+      "simpleEs": "Vano para aire y vista — vínculo manilla; cruce con puerta y luz.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-macaneta.html"
+    },
+    {
+      "id": "porta",
+      "word": "porta",
+      "simple": "Limiar para passar — elo maçaneta, caminho, passar; cruzamento com janela e luz.",
+      "simpleEn": "Door threshold — links maçaneta, path, pass; crossing with window and light.",
+      "simpleEs": "Umbral para pasar — vínculo maçaneta, camino, pasar; cruce con ventana y luz.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-macaneta.html"
+    },
+    {
+      "id": "macaneta",
+      "word": "maçaneta",
+      "simple": "Puxador/fecho da porta — gesto torcer/abrir; elo mãos, porta/janela, interruptor e ligar/desligar.",
+      "simpleEn": "Doorknob/handle — twist/open gesture; links hands, door/window, switch, on/off.",
+      "simpleEs": "Manilla/pomo — gesto torcer/abrir; vínculo manos, puerta/ventana, interruptor, ligar/desligar.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-macaneta.html"
     },
     {
       "id": "desligar",

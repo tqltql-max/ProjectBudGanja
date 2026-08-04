@@ -1169,6 +1169,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: papel de enrolar × tabaco — planta americana e mortalha europeia; elos cinzeiro, fogo, maconha; Faça o melhor!"
             },
             {
+              "label": "Inspeção: Maçaneta — torcer, abrir, mãos, porta/janela e ligar a luz",
+              "tileLabel": "Inspeção: Maçaneta — torcer, ab…",
+              "href": "/posts/post-inspecao-palavra-macaneta.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-macaneta",
+              "description": "Palavras: maçaneta — gesto torcer/abrir × mão E/D × porta/janela × ligar/desligar luz; elos gesto, interruptor; Faça o melhor!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",

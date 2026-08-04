@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:23:29.795Z",
+  "updatedAt": "2026-08-04T17:26:16.295Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4963,6 +4963,29 @@
         "/posts/post-inspecao-palavra-maconha.html"
       ],
       "notes": "Cap. 114 — ficha ≠ incentivo ao fumo; lore Rizla/Napoleão com ressalva."
+    },
+    {
+      "id": "palavra-macaneta",
+      "title": "Maçaneta — torcer/abrir × mãos × porta/janela × luz",
+      "titleEn": "Maçaneta — twist/open × hands × door/window × light",
+      "titleEs": "Maçaneta — torcer/abrir × manos × puerta/ventana × luz",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Cruzamento: gesto torcer/abrir, mãos E/D, porta/janela, ligar/desligar luz.",
+      "whyEn": "Crossing: twist/open gesture, L/R hands, door/window, on/off light.",
+      "whyEs": "Cruce: gesto torcer/abrir, manos I/D, puerta/ventana, ligar/desligar luz.",
+      "suggestedSlug": "inspecao-palavra-macaneta",
+      "doneHref": "/posts/post-inspecao-palavra-macaneta.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/ma%C3%A7aneta",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
+        "/posts/post-inspecao-palavra-interruptor.html",
+        "/posts/post-inspecao-palavra-ligar-desligar.html"
+      ],
+      "notes": "Cap. 115 — maçaneta + mapa de cruzamento."
     }
   ]
 }

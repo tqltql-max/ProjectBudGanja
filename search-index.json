@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:23:40.763Z",
+  "updatedAt": "2026-08-04T17:26:27.596Z",
   "items": [
     {
       "title": "Início",
@@ -150,6 +150,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Maçaneta — torcer, abrir, mãos, porta/janela e ligar a luz",
+      "url": "/posts/post-inspecao-palavra-macaneta.html",
+      "excerpt": "Palavras: maçaneta — gesto torcer/abrir × mão E/D × porta/janela × ligar/desligar luz; elos gesto, interruptor; Faça o melhor!",
+      "text": "Inspeção: Maçaneta — torcer, abrir, mãos, porta/janela e ligar a luz Palavras: maçaneta — gesto torcer/abrir × mão E/D × porta/janela × ligar/desligar luz; elos gesto, interruptor; Faça o melhor! inspecao ## Escopo\n\nInspeção editorial da palavra **maçaneta** — e do **cruzamento de ofício** pedido ao laboratório: **gesto de torcer e abrir** × **mão esquerda / mão direita** × **porta e janela** × **[ligar / desligar](/posts/post-inspecao-palavra-ligar-desligar.html) a luz e a energia**. A maçaneta é o **ponto onde a mão pousa** na [porta](https://pt.wiktionary.org/wiki/porta) (e, por extensão, em fechos de [janela](https://pt.wiktionary.org/wiki/janela)); o [interruptor](/posts/post-inspecao-palavra-interruptor.html) é o ponto irmão na parede da luz. Esta ficha nomeia o utensílio e **mapeia a relação** com [gesto](/posts/post-inspecao-palavra-gesto.html), [mãos](/posts/post-inspecao-palavra-mao-esquerda-direita.html) e o par [ligar × desligar](/posts/post-inspecao-palavra-ligar-desligar.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · maçaneta](https://pt.wiktionary.org/wiki/ma%C3%A7aneta), [porta](https://pt.wiktionary.org/wiki/porta), [janela](https://pt.wiktionary.org/wiki/janela), fichas [gesto](/posts/post-inspecao-palavra-gesto.html), [mão E/D](/posts/post-inspecao-palavra-mao-esquerda-direita.html), [interruptor](/posts/post-inspecao-palavra-interruptor.html), [ligar × desligar](/posts/post-inspecao-palavra-ligar-desligar.html). **Ficha ≠ manual de serralharia nem de electricidade.** Tom: Inspetor BudGanja — torcer/abrir/ligar/desligar são [gestos](/posts/post-inspecao-palavra-gesto.html) com ofício e [risco](/posts/post-inspecao-palavra-risco.html).\n\n## 1. Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **maçaneta** |\n| Classe | Substantivo feminino |\n| Étimo (trabalho) | De *maçã* + *-eta* (diminutivo) — puxador/fecho em forma (ou memória) de maçã; via romance — confiança: **média–alta** (forma PT viva; deta"
     },
     {
       "title": "Inspeção: Papel de enrolar e tabaco — origem do papel e origem da planta",
@@ -3180,6 +3186,24 @@
       "url": "/posts/post-inspecao-palavra-gesto.html",
       "excerpt": "Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade.",
       "text": "Gesto Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade. lexico guia palavras glossário gesto"
+    },
+    {
+      "title": "janela",
+      "url": "/posts/post-inspecao-palavra-macaneta.html",
+      "excerpt": "Vão para ar e vista — elo maçaneta/fecho; cruzamento com porta e luz.",
+      "text": "janela Vão para ar e vista — elo maçaneta/fecho; cruzamento com porta e luz. lexico guia palavras glossário janela"
+    },
+    {
+      "title": "porta",
+      "url": "/posts/post-inspecao-palavra-macaneta.html",
+      "excerpt": "Limiar para passar — elo maçaneta, caminho, passar; cruzamento com janela e luz.",
+      "text": "porta Limiar para passar — elo maçaneta, caminho, passar; cruzamento com janela e luz. lexico guia palavras glossário porta"
+    },
+    {
+      "title": "maçaneta",
+      "url": "/posts/post-inspecao-palavra-macaneta.html",
+      "excerpt": "Puxador/fecho da porta — gesto torcer/abrir; elo mãos, porta/janela, interruptor e ligar/desligar.",
+      "text": "maçaneta Puxador/fecho da porta — gesto torcer/abrir; elo mãos, porta/janela, interruptor e ligar/desligar. lexico guia palavras glossário macaneta"
     },
     {
       "title": "desligar",
