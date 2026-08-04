@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:58:46.836Z",
+  "updatedAt": "2026-08-04T18:02:50.813Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1686,11 +1686,21 @@
       "href": "/posts/post-inspecao-palavra-fogo.html"
     },
     {
+      "id": "sol",
+      "word": "sol",
+      "simple": "Lat. sol — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Faça o melhor com a luz do dia.",
+      "simpleEn": "Lat. sol — star and natural light; link luz; contrast with interruptor; ≠ solitário; Do your best with daylight.",
+      "simpleEs": "Lat. sol — astro y luz natural; vínculo luz; contraste con interruptor; ≠ solitário; Haz lo mejor con la luz del día.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sol.html"
+    },
+    {
       "id": "luz",
       "word": "luz",
-      "simple": "Lat. lux — claridade e efeito do clique; tríade com interruptor e ligar × desligar; cultivo; Faça o melhor com a luz certa.",
-      "simpleEn": "Lat. lux — clarity and click effect; triad with interruptor and ligar × desligar; grow; Do your best with the right light.",
-      "simpleEs": "Lat. lux — claridad y efecto del clic; tríada con interruptor y ligar × desligar; cultivo; Haz lo mejor con la luz cierta.",
+      "simple": "Lat. lux — claridade e efeito do clique; tríade circuito + sol (fonte natural); Faça o melhor com a luz certa.",
+      "simpleEn": "Lat. lux — clarity and click effect; circuit triad + sol (natural source); Do your best with the right light.",
+      "simpleEs": "Lat. lux — claridad y efecto del clic; tríada circuito + sol (fuente natural); Haz lo mejor con la luz cierta.",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-luz.html"

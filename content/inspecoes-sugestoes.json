@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:58:46.832Z",
+  "updatedAt": "2026-08-04T18:02:50.809Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5044,9 +5044,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: luz (lat. lux) — claridade e efeito do clique; tríade interruptor × ligar/desligar; cultivo; Faça o melhor!",
-      "whyEn": "Words: luz (Lat. lux) — clarity and click effect; triad interruptor × ligar/desligar; grow; Do your best!",
-      "whyEs": "Palabras: luz (lat. lux) — claridad y efecto del clic; tríada interruptor × ligar/desligar; cultivo; ¡Haz lo mejor!",
+      "why": "Palavras: luz (lat. lux) — claridade e efeito do clique; tríade circuito + sol; cultivo; Faça o melhor!",
+      "whyEn": "Words: luz (Lat. lux) — clarity and click effect; circuit triad + sol; grow; Do your best!",
+      "whyEs": "Palabras: luz (lat. lux) — claridad y efecto del clic; tríada circuito + sol; cultivo; ¡Haz lo mejor!",
       "suggestedSlug": "inspecao-palavra-luz",
       "doneHref": "/posts/post-inspecao-palavra-luz.html",
       "seriesHint": "palavras-origem",
@@ -5055,10 +5055,36 @@
         "https://en.wiktionary.org/wiki/lux#Latin",
         "/posts/post-inspecao-palavra-interruptor.html",
         "/posts/post-inspecao-palavra-ligar-desligar.html",
+        "/posts/post-inspecao-palavra-sol.html",
         "/posts/post-inspecao-palavra-fogo.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 116 — tríade circuito: peça × verbo × efeito (luz)."
+    },
+    {
+      "id": "palavra-sol",
+      "title": "Sol — astro, luz natural e ciclo",
+      "titleEn": "Sol — star, natural light and cycle",
+      "titleEs": "Sol — astro, luz natural y ciclo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: sol (lat. sol) — astro e luz natural; elo luz; contraste interruptor; ≠ solitário; Faça o melhor!",
+      "whyEn": "Words: sol (Lat. sol) — star and natural light; link luz; contrast interruptor; ≠ solitário; Do your best!",
+      "whyEs": "Palabras: sol (lat. sol) — astro y luz natural; vínculo luz; contraste interruptor; ≠ solitário; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-sol",
+      "doneHref": "/posts/post-inspecao-palavra-sol.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/sol",
+        "https://en.wiktionary.org/wiki/sol#Latin",
+        "/posts/post-inspecao-palavra-luz.html",
+        "/posts/post-inspecao-palavra-interruptor.html",
+        "/posts/post-inspecao-palavra-fogo.html",
+        "/posts/post-inspecao-palavra-solitario.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 117 — fonte natural vs luz de circuito; ≠ solitário."
     }
   ]
 }
