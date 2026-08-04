@@ -29,6 +29,11 @@ const {
   poemArvoreDaVidaEn,
   poemArvoreDaVidaEs
 } = require('../lib/palavras-inspecoes-posts.js');
+const {
+  poemCultivoOInicioPt,
+  poemCultivoOInicioEn,
+  poemCultivoOInicioEs
+} = require('../lib/cultivo-o-inicio-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -141,6 +146,27 @@ const doc = {
       bodyEs: poemArvoreDaVidaEs(),
       inspectionHref: '/posts/post-inspecao-palavra-arvore-da-vida.html',
       tags: ['poesia', 'vida', 'árvore', 'sénior', 'semente']
+    },
+    {
+      id: 'o-inicio',
+      slug: 'o-inicio',
+      title: 'O Início',
+      titleEn: 'The Beginning',
+      titleEs: 'El Inicio',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Semente e dossel × tanques de guerra — fundação de vida, não de blindagem; ficar e faça o melhor.',
+      teaserEn:
+        'Seed and canopy × war tanks — foundation of life, not armor; stay and do your best.',
+      teaserEs:
+        'Semilla y dosel × tanques de guerra — fundación de vida, no de blindaje; quedarse y haz lo mejor.',
+      body: poemCultivoOInicioPt(),
+      bodyEn: poemCultivoOInicioEn(),
+      bodyEs: poemCultivoOInicioEs(),
+      inspectionHref: '/posts/post-inspecao-arte-o-inicio.html',
+      tags: ['poesia', 'vida', 'cultivo', 'semente', 'início', 'tanque', 'guerra']
     }
   ]
 };

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T22:36:26.858Z",
+  "updatedAt": "2026-08-04T17:14:16.138Z",
   "poems": [
     {
       "id": "aguas-e-lagrimas",
@@ -118,6 +118,32 @@
         "árvore",
         "sénior",
         "semente"
+      ]
+    },
+    {
+      "id": "o-inicio",
+      "slug": "o-inicio",
+      "title": "O Início",
+      "titleEn": "The Beginning",
+      "titleEs": "El Inicio",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Semente e dossel × tanques de guerra — fundação de vida, não de blindagem; ficar e faça o melhor.",
+      "teaserEn": "Seed and canopy × war tanks — foundation of life, not armor; stay and do your best.",
+      "teaserEs": "Semilla y dosel × tanques de guerra — fundación de vida, no de blindaje; quedarse y haz lo mejor.",
+      "body": "O segredo do sucesso é o segredo.\nNão cai do céu quando a flor aparece —\nganha-se antes,\nna semana quieta\nem que a semente ainda dorme.\n\nDespertar.\nÁgua, escuro, tempo.\nA radícula aponta para baixo\ncomo quem pergunta ao chão:\nposso ficar?\n\nNão se força a muda.\nEspera-se o torrão —\nraiz que abraça o substrato\naté sair inteira,\nsem desmoronar na mão.\n\nNo indoor, a luz vira estação.\nDezoito horas: verão eterno —\nsó crescer.\nDoze e doze: outono na mesa —\nhora de flor.\n\nFolha de leque,\npainel solar da fase vega:\ncaptam luz,\nalimentam a arquitetura\nque ainda não é flor —\nmas já é fundação.\n\nDizem que estrutura é blindagem.\nMentira de guerra.\nTanque de guerra avança e esmaga.\nDossel homogéneo espalha e partilha.\nUm nasce para fechar o mundo —\no outro para abrir luz\naté o galho que vivia na sombra.\n\nPoda apical.\nLST.\nRede.\nNão para ferir —\npara espalhar a luz.\nNão montamos tanque —\nmontamos casa verde\nonde a máquina é biologia,\nnão canhão.\n\nO laboratório não apressa a floração.\nPlanta à beira.\nConta gotas.\nChama a Vida pelo nome verdadeiro:\nficar —\ndesde a sementinha adormecida\naté o dossel homogéneo —\nsem lagarta de aço no peito.\n\nFaça o melhor!\n\nPorque toda colheita que enche o olho\ncomeçou no discreto:\numa pontinha branca,\num vaso maior na hora certa,\numa luz que ensinou o tempo —\ne um nós onde antes só havia semente sozinha,\nnão um campo de batalha.",
+      "bodyEn": "The secret of success is the secret.\nIt does not fall from the sky when the flower appears —\nit is won earlier,\nin the quiet week\nwhen the seed still sleeps.\n\nAwaken.\nWater, dark, time.\nThe radicle points downward\nas if asking the soil:\nmay I stay?\n\nDo not force the seedling.\nWait for the root ball —\nroots that hug the medium\nuntil they leave whole,\nwithout crumbling in the hand.\n\nIndoors, light becomes season.\nEighteen hours: endless summer —\nonly grow.\nTwelve and twelve: autumn on the table —\ntime to flower.\n\nFan leaf,\nsolar panel of the veg stage:\nthey catch light,\nfeed the architecture\nthat is not yet flower —\nbut already foundation.\n\nThey say structure is armor.\nWar’s lie.\nA war tank advances and crushes.\nAn even canopy spreads and shares.\nOne is born to close the world —\nthe other to open light\nto the branch that lived in shade.\n\nTopping.\nLST.\nNet.\nNot to wound —\nto spread the light.\nWe do not build a tank —\nwe build a green house\nwhere the machine is biology,\nnot a cannon.\n\nThe laboratory does not rush flowering.\nIt plants at the edge.\nIt counts drops.\nIt calls Vida by its true name:\nstay —\nfrom the sleeping seed\nto the even canopy —\nwith no steel caterpillar in the chest.\n\nDo your best!\n\nBecause every harvest that fills the eye\nbegan in the discreet:\na white tip,\na larger pot at the right hour,\na light that taught time —\nand a we where once there was only a lonely seed,\nnot a battlefield.",
+      "bodyEs": "El secreto del éxito es el secreto.\nNo cae del cielo cuando aparece la flor —\nse gana antes,\nen la semana quieta\nen que la semilla aún duerme.\n\nDespertar.\nAgua, oscuridad, tiempo.\nLa radícula apunta hacia abajo\ncomo quien pregunta al suelo:\n¿puedo quedarme?\n\nNo se fuerza la muda.\nSe espera el cepellón —\nraíz que abraza el sustrato\nhasta salir entero,\nsin desmoronarse en la mano.\n\nEn indoor, la luz se vuelve estación.\nDieciocho horas: verano eterno —\nsolo crecer.\nDoce y doce: otoño en la mesa —\nhora de flor.\n\nHoja de abanico,\npanel solar de la fase veg:\ncaptan luz,\nalimentan la arquitectura\nque aún no es flor —\npero ya es fundación.\n\nDicen que estructura es blindaje.\nMentira de guerra.\nEl tanque de guerra avanza y aplasta.\nEl dosel homogéneo reparte y comparte.\nUno nace para cerrar el mundo —\nel otro para abrir luz\nhasta la rama que vivía en la sombra.\n\nPoda apical.\nLST.\nRed.\nNo para herir —\npara repartir la luz.\nNo montamos tanque —\nmontamos casa verde\ndonde la máquina es biología,\nno cañón.\n\nEl laboratorio no apresura la floración.\nSiembra a la orilla.\nCuenta gotas.\nLlama a Vida por su nombre verdadero:\nquedarse —\ndesde la semillita dormida\nhasta el dosel homogéneo —\nsin oruga de acero en el pecho.\n\n¡Haz lo mejor!\n\nPorque toda cosecha que llena el ojo\nempezó en lo discreto:\nuna puntita blanca,\nuna maceta mayor a la hora justa,\nuna luz que enseñó el tiempo —\ny un nosotros donde antes solo había semilla sola,\nno un campo de batalla.",
+      "inspectionHref": "/posts/post-inspecao-arte-o-inicio.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "cultivo",
+        "semente",
+        "início",
+        "tanque",
+        "guerra"
       ]
     }
   ]

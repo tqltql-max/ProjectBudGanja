@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:03:03.977Z",
+  "updatedAt": "2026-08-04T17:14:06.654Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -254,6 +254,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-arvore-da-vida.html"
+    },
+    {
+      "id": "o-inicio",
+      "word": "O Início",
+      "simple": "Poesia original BudGanja: legenda do cultivo × tanques de guerra — dossel partilha luz; blindagem esmaga.",
+      "simpleEn": "Original BudGanja poem: grow caption × war tanks — canopy shares light; armor crushes.",
+      "simpleEs": "Poesía original BudGanja: leyenda del cultivo × tanques de guerra — el dosel reparte luz; el blindaje aplasta.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-o-inicio.html"
     },
     {
       "id": "associacao-pacientes",
@@ -1728,9 +1738,9 @@
     {
       "id": "desligar",
       "word": "desligar",
-      "simple": "Des- + ligar — apagar/cortar/sair do fluxo; par com ligar; elo interruptor e risco; Faça o melhor inclusive ao pausar.",
-      "simpleEn": "Des- + ligar — turn off/cut/leave the flow; pair with ligar; links interruptor and risco; Do your best even when pausing.",
-      "simpleEs": "Des- + ligar — apagar/cortar/salir del flujo; par con ligar; vínculos interruptor y risco; Haz lo mejor incluso al pausar.",
+      "simple": "Des- + ligar — verbos do circuito com ligar; par lab com interruptor; Faça o melhor inclusive ao pausar.",
+      "simpleEn": "Des- + ligar — circuit verbs with ligar; lab pair with interruptor; Do your best even when pausing.",
+      "simpleEs": "Des- + ligar — verbos del circuito con ligar; par lab con interruptor; Haz lo mejor incluso al pausar.",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-ligar-desligar.html"
@@ -1738,9 +1748,9 @@
     {
       "id": "ligar",
       "word": "ligar",
-      "simple": "Lat. ligare — acender/conectar/telefonar; par com desligar; elo interruptor e gesto; Faça o melhor com o clique.",
-      "simpleEn": "Lat. ligare — turn on/connect/call; pair with desligar; links interruptor and gesto; Do your best with the click.",
-      "simpleEs": "Lat. ligare — encender/conectar/llamar; par con desligar; vínculos interruptor y gesto; Haz lo mejor con el clic.",
+      "simple": "Lat. ligare — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor com o clique.",
+      "simpleEn": "Lat. ligare — circuit verbs; lab pair with interruptor (device × gesture); Do your best with the click.",
+      "simpleEs": "Lat. ligare — verbos del circuito; par lab con interruptor (pieza × gesto); Haz lo mejor con el clic.",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-ligar-desligar.html"
@@ -2038,9 +2048,9 @@
     {
       "id": "interruptor",
       "word": "interruptor",
-      "simple": "Lat. interrumpere — ligar/desligar × corte de fluxo; derivações interromper/interrupção; elos sinal/gesto/eletrizante; Faça o melhor com o clique.",
-      "simpleEn": "Lat. interrumpere — on/off × flow cut; derivatives interromper/interrupção; links sinal/gesto/eletrizante; Do your best with the click.",
-      "simpleEs": "Lat. interrumpere — encender/apagar × corte de flujo; derivaciones interromper/interrupção; vínculos sinal/gesto/eletrizante; Haz lo mejor con el clic.",
+      "simple": "Lat. interrumpere — peça do circuito; par lab com ligar × desligar; derivações interromper/interrupção; Faça o melhor com o clique.",
+      "simpleEn": "Lat. interrumpere — circuit device; lab pair with ligar × desligar; derivatives interromper/interrupção; Do your best with the click.",
+      "simpleEs": "Lat. interrumpere — pieza del circuito; par lab con ligar × desligar; derivaciones interromper/interrupção; Haz lo mejor con el clic.",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-interruptor.html"

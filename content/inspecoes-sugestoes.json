@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:03:03.973Z",
+  "updatedAt": "2026-08-04T17:14:06.651Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4130,21 +4130,22 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: interruptor (lat. interrumpere) — ligar/desligar × corte; interromper/interrupção; sinal/gesto/eletrizante; Faça o melhor!",
-      "whyEn": "Words: interruptor (Lat. interrumpere) — on/off × cut; interromper/interrupção; sinal/gesto/eletrizante; Do your best!",
-      "whyEs": "Palabras: interruptor (lat. interrumpere) — encender/apagar × corte; interromper/interrupção; sinal/gesto/eletrizante; ¡Haz lo mejor!",
+      "why": "Palavras: interruptor (lat. interrumpere) — peça do circuito; par lab com ligar × desligar; interromper/interrupção; Faça o melhor!",
+      "whyEn": "Words: interruptor (Lat. interrumpere) — circuit device; lab pair with ligar × desligar; interromper/interrupção; Do your best!",
+      "whyEs": "Palabras: interruptor (lat. interrumpere) — pieza del circuito; par lab con ligar × desligar; interromper/interrupção; ¡Haz lo mejor!",
       "suggestedSlug": "inspecao-palavra-interruptor",
       "doneHref": "/posts/post-inspecao-palavra-interruptor.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/interruptor",
         "https://pt.wiktionary.org/wiki/interromper",
+        "/posts/post-inspecao-palavra-ligar-desligar.html",
         "/posts/post-inspecao-palavra-sinal.html",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-eletrizante.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 86 — tipografia Imtupidor → interruptor; inclui derivações."
+      "notes": "Cap. 86 — tipografia Imtupidor → interruptor; par lab com ligar × desligar."
     },
     {
       "id": "palavra-sempre",
@@ -4878,9 +4879,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: ligar × desligar (lat. ligare) — acender/apagar × conectar/cortar; elos interruptor, gesto, sinal; Faça o melhor!",
-      "whyEn": "Words: ligar × desligar (Lat. ligare) — on/off × connect/cut; links interruptor, gesto, sinal; Do your best!",
-      "whyEs": "Palabras: ligar × desligar (lat. ligare) — encender/apagar × conectar/cortar; vínculos interruptor, gesto, sinal; ¡Haz lo mejor!",
+      "why": "Palavras: ligar × desligar (lat. ligare) — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor!",
+      "whyEn": "Words: ligar × desligar (Lat. ligare) — circuit verbs; lab pair with interruptor (device × gesture); Do your best!",
+      "whyEs": "Palabras: ligar × desligar (lat. ligare) — verbos del circuito; par lab con interruptor (pieza × gesto); ¡Haz lo mejor!",
       "suggestedSlug": "inspecao-palavra-ligar-desligar",
       "doneHref": "/posts/post-inspecao-palavra-ligar-desligar.html",
       "seriesHint": "palavras-origem",
@@ -4892,7 +4893,30 @@
         "/posts/post-inspecao-palavra-sinal.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 113 — par verbal do interruptor; tipografia Desligar e Ligar."
+      "notes": "Cap. 113 — par lab verbal do interruptor (peça × gesto)."
+    },
+    {
+      "id": "arte-o-inicio",
+      "title": "O Início — poesia a partir do vídeo de cultivo",
+      "titleEn": "The Beginning — poetry from the grow video",
+      "titleEs": "El Inicio — poesía a partir del vídeo de cultivo",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Poesia original: legenda do cultivo × metáfora dos tanques de guerra (dossel ≠ blindagem).",
+      "whyEn": "Original poetry: grow caption × war-tank metaphor (canopy ≠ armor).",
+      "whyEs": "Poesía original: leyenda del cultivo × metáfora de tanques de guerra (dosel ≠ blindaje).",
+      "suggestedSlug": "inspecao-arte-o-inicio",
+      "doneHref": "/posts/post-inspecao-arte-o-inicio.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-o-inicio.html",
+        "/videos/#38uUEL1B-v4",
+        "https://www.youtube.com/watch?v=38uUEL1B-v4",
+        "/vida/",
+        "/guia/cultivo-basico.html"
+      ],
+      "notes": "Verso BudGanja; fonte = legenda YouTube PT do canal."
     }
   ]
 }
