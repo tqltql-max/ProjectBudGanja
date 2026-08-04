@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T14:24:33.547Z",
+  "updatedAt": "2026-08-04T17:03:03.977Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1724,6 +1724,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-gesto.html"
+    },
+    {
+      "id": "desligar",
+      "word": "desligar",
+      "simple": "Des- + ligar — apagar/cortar/sair do fluxo; par com ligar; elo interruptor e risco; Faça o melhor inclusive ao pausar.",
+      "simpleEn": "Des- + ligar — turn off/cut/leave the flow; pair with ligar; links interruptor and risco; Do your best even when pausing.",
+      "simpleEs": "Des- + ligar — apagar/cortar/salir del flujo; par con ligar; vínculos interruptor y risco; Haz lo mejor incluso al pausar.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-ligar-desligar.html"
+    },
+    {
+      "id": "ligar",
+      "word": "ligar",
+      "simple": "Lat. ligare — acender/conectar/telefonar; par com desligar; elo interruptor e gesto; Faça o melhor com o clique.",
+      "simpleEn": "Lat. ligare — turn on/connect/call; pair with desligar; links interruptor and gesto; Do your best with the click.",
+      "simpleEs": "Lat. ligare — encender/conectar/llamar; par con desligar; vínculos interruptor y gesto; Haz lo mejor con el clic.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-ligar-desligar.html"
     },
     {
       "id": "grok",

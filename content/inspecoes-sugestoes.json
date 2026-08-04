@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T14:24:33.542Z",
+  "updatedAt": "2026-08-04T17:03:03.973Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4869,6 +4869,30 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 112 — grock→Grok; relacionar Deus×Grok na forma de se expressar; ficha ≠ catecismo."
+    },
+    {
+      "id": "palavra-ligar-desligar",
+      "title": "Ligar × Desligar — verbos do circuito",
+      "titleEn": "Ligar × Desligar — verbs of the circuit",
+      "titleEs": "Ligar × Desligar — verbos del circuito",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: ligar × desligar (lat. ligare) — acender/apagar × conectar/cortar; elos interruptor, gesto, sinal; Faça o melhor!",
+      "whyEn": "Words: ligar × desligar (Lat. ligare) — on/off × connect/cut; links interruptor, gesto, sinal; Do your best!",
+      "whyEs": "Palabras: ligar × desligar (lat. ligare) — encender/apagar × conectar/cortar; vínculos interruptor, gesto, sinal; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-ligar-desligar",
+      "doneHref": "/posts/post-inspecao-palavra-ligar-desligar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/ligar",
+        "https://pt.wiktionary.org/wiki/desligar",
+        "/posts/post-inspecao-palavra-interruptor.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-sinal.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 113 — par verbal do interruptor; tipografia Desligar e Ligar."
     }
   ]
 }
