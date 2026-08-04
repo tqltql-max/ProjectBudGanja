@@ -94,6 +94,7 @@ async function main() {
         post.sourceUrl,
         'https://en.wiktionary.org/wiki/sol#Latin',
         '/posts/post-inspecao-palavra-luz.html',
+        '/posts/post-inspecao-palavra-noite.html',
         '/posts/post-inspecao-palavra-interruptor.html',
         '/posts/post-inspecao-palavra-fogo.html',
         '/posts/post-inspecao-palavra-solitario.html',

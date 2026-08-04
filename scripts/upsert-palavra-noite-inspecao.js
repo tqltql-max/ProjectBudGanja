@@ -1,13 +1,13 @@
 'use strict';
 
 /**
- * Injeta palavra «luz» na série Palavras.
- * Uso: node scripts/upsert-palavra-luz-inspecao.js
+ * Injeta palavra «noite» na série Palavras.
+ * Uso: node scripts/upsert-palavra-noite-inspecao.js
  */
 
 const fs = require('fs');
 const path = require('path');
-const { buildLuzPost } = require('../lib/luz-inspecao-post.js');
+const { buildNoitePost } = require('../lib/noite-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_FILE = path.join(ROOT, 'posts.json');
@@ -49,11 +49,11 @@ async function syncSql(post) {
 
 async function main() {
   const posts = JSON.parse(fs.readFileSync(POSTS_FILE, 'utf8'));
-  const existing = posts.find((p) => p.slug === 'inspecao-palavra-luz');
+  const existing = posts.find((p) => p.slug === 'inspecao-palavra-noite');
   const seriesOrder = existing
     ? Number(existing.seriesOrder) || nextPalavrasOrder(posts)
     : nextPalavrasOrder(posts);
-  const post = buildLuzPost(seriesOrder);
+  const post = buildNoitePost(seriesOrder);
 
   upsertPost(posts, post);
   fs.writeFileSync(POSTS_FILE, JSON.stringify(posts, null, 2) + '\n', 'utf8');
@@ -74,93 +74,89 @@ async function main() {
   if (fs.existsSync(SUG_FILE)) {
     const sug = JSON.parse(fs.readFileSync(SUG_FILE, 'utf8'));
     const items = Array.isArray(sug.items) ? sug.items : [];
-    const sugId = 'palavra-luz';
+    const sugId = 'palavra-noite';
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Luz — efeito do circuito e claridade',
-      titleEn: 'Luz — circuit effect and clarity',
-      titleEs: 'Luz — efecto del circuito y claridad',
+      title: 'Noite — ciclo, escuro e fotoperíodo',
+      titleEn: 'Noite — cycle, dark and photoperiod',
+      titleEs: 'Noite — ciclo, oscuridad y fotoperiodo',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: luz (lat. lux) — claridade e efeito do clique; tríade circuito + sol; cultivo; Faça o melhor!',
-      whyEn: 'Words: luz (Lat. lux) — clarity and click effect; circuit triad + sol; grow; Do your best!',
-      whyEs: 'Palabras: luz (lat. lux) — claridad y efecto del clic; tríada circuito + sol; cultivo; ¡Haz lo mejor!',
+      why: 'Palavras: noite (lat. nox) — fase escura do ciclo; par com sol; elos luz e interruptor; cultivo; Faça o melhor!',
+      whyEn: 'Words: noite (Lat. nox) — dark phase of the cycle; pair with sol; links luz and interruptor; grow; Do your best!',
+      whyEs: 'Palabras: noite (lat. nox) — fase oscura del ciclo; par con sol; vínculos luz e interruptor; cultivo; ¡Haz lo mejor!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
       sources: [
         post.sourceUrl,
-        'https://en.wiktionary.org/wiki/lux#Latin',
-        '/posts/post-inspecao-palavra-interruptor.html',
-        '/posts/post-inspecao-palavra-ligar-desligar.html',
+        'https://en.wiktionary.org/wiki/nox#Latin',
         '/posts/post-inspecao-palavra-sol.html',
-        '/posts/post-inspecao-palavra-noite.html',
-        '/posts/post-inspecao-palavra-fogo.html',
+        '/posts/post-inspecao-palavra-luz.html',
+        '/posts/post-inspecao-palavra-interruptor.html',
         '/posts/post-inspecao-expressao-faca-o-melhor.html'
       ],
-      notes: 'Cap. ' + post.seriesOrder + ' — tríade circuito: peça × verbo × efeito (luz).'
+      notes: 'Cap. ' + post.seriesOrder + ' — par sol × noite; fotoperíodo; circuito artificial.'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);
     sug.items = items;
     sug.updatedAt = new Date().toISOString();
     fs.writeFileSync(SUG_FILE, JSON.stringify(sug, null, 2) + '\n', 'utf8');
-    console.log('Sugestões actualizadas (palavra-luz)');
+    console.log('Sugestões actualizadas (palavra-noite)');
   }
 
   if (fs.existsSync(GUIA_FILE)) {
     const guia = JSON.parse(fs.readFileSync(GUIA_FILE, 'utf8'));
     const items = Array.isArray(guia.items) ? guia.items : [];
     const entry = {
-      id: 'luz',
-      word: 'luz',
+      id: 'noite',
+      word: 'noite',
       simple:
-        'Lat. lux — claridade e efeito do clique; tríade circuito + sol (fonte natural); Faça o melhor com a luz certa.',
+        'Lat. nox — fase escura do ciclo; par com sol; elos luz e interruptor; fotoperíodo; Faça o melhor com a noite certa.',
       simpleEn:
-        'Lat. lux — clarity and click effect; circuit triad + sol (natural source); Do your best with the right light.',
+        'Lat. nox — dark phase of the cycle; pair with sol; links luz and interruptor; photoperiod; Do your best with the right night.',
       simpleEs:
-        'Lat. lux — claridad y efecto del clic; tríada circuito + sol (fuente natural); Haz lo mejor con la luz cierta.',
+        'Lat. nox — fase oscura del ciclo; par con sol; vínculos luz e interruptor; fotoperiodo; Haz lo mejor con la noche cierta.',
       group: 'lexico',
       fromTitle: false,
       href
     };
-    const gi = items.findIndex((x) => x.id === entry.id || x.word === 'luz');
+    const gi = items.findIndex((x) => x.id === entry.id || x.word === 'noite');
     if (gi >= 0) items[gi] = Object.assign({}, items[gi], entry);
     else {
-      const after = items.findIndex(
-        (x) => x.id === 'ligar' || x.id === 'desligar' || x.id === 'interruptor' || x.id === 'fogo'
-      );
+      const after = items.findIndex((x) => x.id === 'sol' || x.id === 'luz' || x.id === 'inverno');
       if (after >= 0) items.splice(after + 1, 0, entry);
       else items.push(entry);
     }
     guia.items = items;
     guia.updatedAt = new Date().toISOString();
     fs.writeFileSync(GUIA_FILE, JSON.stringify(guia, null, 2) + '\n', 'utf8');
-    console.log('Guia de palavras actualizado (luz)');
+    console.log('Guia de palavras actualizado (noite)');
   }
 
   const glossPath = path.join(ROOT, 'js', 'learn-glossary.js');
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    luz: { gloss: "Lat. lux — claridade e efeito do clique; tríade circuito + sol; cultivo; Faça o melhor!", href: "/posts/post-inspecao-palavra-luz.html", en: "light", es: "luz", fr: "lumiere", it: "luce", de: "Licht", el: "fos", la: "lux", yo: "imole", sw: "nuru", gez: "berhan", nl: "licht", pl: "swiatlo", ru: "svet", uk: "svitlo", zh: "guang", ja: "hikari", ko: "빛", ar: "daw", he: "or", hi: "prakash", tr: "isik", sv: "ljus", da: "lys", no: "lys", fi: "valo", cs: "svetlo", ro: "lumina", hu: "feny", ca: "llum", gl: "luz", eu: "argi", gn: "tendy", qu: "kancha", eo: "lumo", vi: "anh sang", id: "cahaya", th: "light", hr: "svjetlo", sk: "svetlo", ga: "solas", cy: "golau", ha: "haske", am: "birhan", fa: "nur", bn: "alo", zu: "ukukhanya" },';
-    if (/luz:\s*\{/.test(gloss)) {
-      gloss = gloss.replace(/    luz:\s*\{[\s\S]*?\},/, entryLine);
+      '    noite: { gloss: "Lat. nox — fase escura do ciclo; par com sol; elos luz e interruptor; fotoperíodo; Faça o melhor!", href: "/posts/post-inspecao-palavra-noite.html", en: "night", es: "noche", fr: "nuit", it: "notte", de: "Nacht", el: "nyxta", la: "nox", yo: "oru", sw: "usiku", gez: "lelit", nl: "nacht", pl: "noc", ru: "noch", uk: "nich", zh: "ye", ja: "yoru", ko: "밤", ar: "layl", he: "layla", hi: "raat", tr: "gece", sv: "natt", da: "nat", no: "natt", fi: "yo", cs: "noc", ro: "noapte", hu: "ejjel", ca: "nit", gl: "noite", eu: "gau", gn: "pyhare", qu: "tuta", eo: "nokto", vi: "dem", id: "malam", th: "night", hr: "noc", sk: "noc", ga: "oiche", cy: "nos", ha: "dare", am: "lelit", fa: "shab", bn: "rat", zu: "ubusuku" },';
+    if (/noite:\s*\{/.test(gloss)) {
+      gloss = gloss.replace(/    noite:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);
-      console.log('Glossário actualizado (luz · existente)');
+      console.log('Glossário actualizado (noite · existente)');
     } else {
-      const reLigar = /(ligar:\s*\{[\s\S]*?zu:\s*"[^"]*"\s*\},?\r?\n)/;
-      const reInt = /(interruptor:\s*\{[\s\S]*?zu:\s*"[^"]*"\s*\},?\r?\n)/;
-      if (reLigar.test(gloss)) {
-        gloss = gloss.replace(reLigar, '$1' + entryLine + '\n');
+      const reSol = /(sol:\s*\{[\s\S]*?zu:\s*"[^"]*"\s*\},?\r?\n)/;
+      const reLuz = /(luz:\s*\{[\s\S]*?zu:\s*"[^"]*"\s*\},?\r?\n)/;
+      if (reSol.test(gloss)) {
+        gloss = gloss.replace(reSol, '$1' + entryLine + '\n');
         fs.writeFileSync(glossPath, gloss);
-        console.log('Glossário actualizado (luz · após ligar)');
-      } else if (reInt.test(gloss)) {
-        gloss = gloss.replace(reInt, '$1' + entryLine + '\n');
+        console.log('Glossário actualizado (noite · após sol)');
+      } else if (reLuz.test(gloss)) {
+        gloss = gloss.replace(reLuz, '$1' + entryLine + '\n');
         fs.writeFileSync(glossPath, gloss);
-        console.log('Glossário actualizado (luz · após interruptor)');
+        console.log('Glossário actualizado (noite · após luz)');
       } else {
         console.warn('Aviso: glossário — ponto de inserção não encontrado');
       }

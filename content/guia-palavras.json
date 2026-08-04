@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T18:13:39.512Z",
+  "updatedAt": "2026-08-04T18:33:35.806Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1704,6 +1704,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-sol.html"
+    },
+    {
+      "id": "noite",
+      "word": "noite",
+      "simple": "Lat. nox — fase escura do ciclo; par com sol; elos luz e interruptor; fotoperíodo; Faça o melhor com a noite certa.",
+      "simpleEn": "Lat. nox — dark phase of the cycle; pair with sol; links luz and interruptor; photoperiod; Do your best with the right night.",
+      "simpleEs": "Lat. nox — fase oscura del ciclo; par con sol; vínculos luz e interruptor; fotoperiodo; Haz lo mejor con la noche cierta.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-noite.html"
     },
     {
       "id": "luz",

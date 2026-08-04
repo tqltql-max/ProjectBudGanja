@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T18:13:39.509Z",
+  "updatedAt": "2026-08-04T18:33:35.802Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5056,6 +5056,7 @@
         "/posts/post-inspecao-palavra-interruptor.html",
         "/posts/post-inspecao-palavra-ligar-desligar.html",
         "/posts/post-inspecao-palavra-sol.html",
+        "/posts/post-inspecao-palavra-noite.html",
         "/posts/post-inspecao-palavra-fogo.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
@@ -5079,6 +5080,7 @@
         "https://pt.wiktionary.org/wiki/sol",
         "https://en.wiktionary.org/wiki/sol#Latin",
         "/posts/post-inspecao-palavra-luz.html",
+        "/posts/post-inspecao-palavra-noite.html",
         "/posts/post-inspecao-palavra-interruptor.html",
         "/posts/post-inspecao-palavra-fogo.html",
         "/posts/post-inspecao-palavra-solitario.html",
@@ -5108,6 +5110,30 @@
         "/vida/"
       ],
       "notes": "Obra primeiro (1970); eco poético BudGanja distinto da letra Free."
+    },
+    {
+      "id": "palavra-noite",
+      "title": "Noite — ciclo, escuro e fotoperíodo",
+      "titleEn": "Noite — cycle, dark and photoperiod",
+      "titleEs": "Noite — ciclo, oscuridad y fotoperiodo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: noite (lat. nox) — fase escura do ciclo; par com sol; elos luz e interruptor; cultivo; Faça o melhor!",
+      "whyEn": "Words: noite (Lat. nox) — dark phase of the cycle; pair with sol; links luz and interruptor; grow; Do your best!",
+      "whyEs": "Palabras: noite (lat. nox) — fase oscura del ciclo; par con sol; vínculos luz e interruptor; cultivo; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-noite",
+      "doneHref": "/posts/post-inspecao-palavra-noite.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/noite",
+        "https://en.wiktionary.org/wiki/nox#Latin",
+        "/posts/post-inspecao-palavra-sol.html",
+        "/posts/post-inspecao-palavra-luz.html",
+        "/posts/post-inspecao-palavra-interruptor.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 118 — par sol × noite; fotoperíodo; circuito artificial."
     }
   ]
 }
