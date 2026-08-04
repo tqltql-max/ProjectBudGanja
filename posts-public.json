@@ -1558,6 +1558,25 @@
     "seriesLabel": "Fruto · palavra"
   },
   {
+    "title": "Inspeção: Risco — perigo calculado, traço e ofício",
+    "titleEn": "Inspection: Risco — calculated danger, stroke and craft",
+    "titleEs": "Inspección: Risco — peligro calculado, trazo y oficio",
+    "excerpt": "Palavras: «risco» — perigo calculado × traço (*riscar*); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Faça o melhor!",
+    "excerptEn": "Words: “risco” — calculated danger × stroke (*riscar*); links medo, sinal, caminho, EXIT, Tamara/Amyr; Do your best!",
+    "excerptEs": "Palabras: «risco» — peligro calculado × trazo (*riscar*); vínculos medo, sinal, caminho, EXIT, Tamara/Amyr; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-risco",
+    "url": "/posts/post-inspecao-palavra-risco.html",
+    "date": "2026-08-04T15:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-risco.html",
+    "coverImage": "/imagens/inspecoes/risco-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 59,
+    "seriesLabel": "Risco · palavra"
+  },
+  {
     "title": "Inspeção: Inacreditável — beyond belief, elogio BR e Faça o melhor!",
     "titleEn": "Inspection: Inacreditável — beyond belief, BR praise and Do your best!",
     "titleEs": "Inspección: Inacreditável — más allá de lo creíble, elogio BR y ¡Haz lo mejor!",
@@ -2905,25 +2924,6 @@
     "series": "palavras-origem",
     "seriesOrder": null,
     "seriesLabel": "Solitário · palavra"
-  },
-  {
-    "title": "Inspeção: Risco — léxico Tamara / Bom dia, Inverno",
-    "titleEn": "Inspection: Risco — Tamara / Bom dia, Inverno lexicon",
-    "titleEs": "Inspección: Risco — léxico Tamara / Bom dia, Inverno",
-    "excerpt": "Perigo calculado da travessia e da invernagem — Amyr planeia; Tamara assume o próprio.",
-    "excerptEn": "Calculated danger of crossing and overwintering — Amyr plans; Tamara owns her own.",
-    "excerptEs": "Peligro calculado de la travesía y la invernada — Amyr planifica; Tamara asume el suyo.",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-palavra-risco",
-    "url": "/posts/post-inspecao-palavra-risco.html",
-    "date": "2026-08-02T20:10:00.000Z",
-    "filename": "posts/post-inspecao-palavra-risco.html",
-    "coverImage": "/imagens/inspecoes/bom-dia-inverno-cover.jpg",
-    "category": "inspecao",
-    "series": "palavras-origem",
-    "seriesOrder": null,
-    "seriesLabel": "Risco · palavra"
   },
   {
     "title": "Inspeção: Congelado — léxico Tamara / Bom dia, Inverno",

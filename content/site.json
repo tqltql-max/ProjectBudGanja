@@ -871,6 +871,14 @@
                   "description": "Palavras: «fruto» (lat. *fructus*) — órgão botânico, plural frutos, contraste com fruta, figurado «frutos do trabalho»; elos plantas/simbiose; Faça o melhor!"
                 },
                 {
+                  "label": "Inspeção: Risco — perigo calculado, traço e ofício",
+                  "tileLabel": "Inspeção: Risco — perigo calcul…",
+                  "href": "/posts/post-inspecao-palavra-risco.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-risco",
+                  "description": "Palavras: «risco» — perigo calculado × traço (*riscar*); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Faça o melhor!"
+                },
+                {
                   "label": "Inspeção: Inacreditável — beyond belief, elogio BR e Faça o melhor!",
                   "tileLabel": "Inspeção: Inacreditável — beyon…",
                   "href": "/posts/post-inspecao-palavra-inacreditavel.html",
@@ -1429,14 +1437,6 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-solitario",
                   "description": "Navegar e invernar sozinha — não isolamento romântico: método, medo e escrita."
-                },
-                {
-                  "label": "Inspeção: Risco — léxico Tamara / Bom dia, Inverno",
-                  "tileLabel": "Inspeção: Risco — léxico Tamara…",
-                  "href": "/posts/post-inspecao-palavra-risco.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-palavra-risco",
-                  "description": "Perigo calculado da travessia e da invernagem — Amyr planeia; Tamara assume o próprio."
                 },
                 {
                   "label": "Inspeção: Congelado — léxico Tamara / Bom dia, Inverno",

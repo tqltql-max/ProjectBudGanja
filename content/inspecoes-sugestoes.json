@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:32:01.243Z",
+  "updatedAt": "2026-08-04T17:35:07.434Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2746,24 +2746,28 @@
     },
     {
       "id": "palavra-risco",
-      "title": "Risco — léxico Tamara / Bom dia, Inverno",
-      "titleEn": "Inspection: Risco — Tamara / Bom dia, Inverno lexicon",
-      "titleEs": "Inspección: Risco — léxico Tamara / Bom dia, Inverno",
+      "title": "Risco — perigo calculado, traço e ofício",
+      "titleEn": "Risco — calculated danger, stroke and craft",
+      "titleEs": "Risco — peligro calculado, trazo y oficio",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Perigo calculado da travessia e da invernagem — Amyr planeia; Tamara assume o próprio.",
-      "whyEn": "Calculated danger of crossing and overwintering — Amyr plans; Tamara owns her own.",
-      "whyEs": "Peligro calculado de la travesía y la invernada — Amyr planifica; Tamara asume el suyo.",
+      "why": "Palavras: risco — perigo calculado × traço (riscar); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Faça o melhor!",
+      "whyEn": "Words: risco — calculated danger × stroke (riscar); links medo, sinal, caminho, EXIT, Tamara/Amyr; Do your best!",
+      "whyEs": "Palabras: risco — peligro calculado × trazo (riscar); vínculos medo, sinal, caminho, EXIT, Tamara/Amyr; ¡Haz lo mejor!",
       "suggestedSlug": "inspecao-palavra-risco",
       "doneHref": "/posts/post-inspecao-palavra-risco.html",
       "seriesHint": "palavras-origem",
       "sources": [
-        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "https://pt.wiktionary.org/wiki/risco",
+        "https://en.wiktionary.org/wiki/rischio",
+        "/posts/post-inspecao-palavra-medo.html",
+        "/posts/post-inspecao-palavra-sinal.html",
         "/posts/post-inspecao-tamara-klink.html",
-        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Lote Tamara / Bom dia, Inverno"
+      "notes": "Cap. 59 — ficha completa (antes lote Tamara curto); perigo × traço; medo ≠ risco."
     },
     {
       "id": "palavra-solitario",
@@ -5008,6 +5012,27 @@
         "/posts/post-inspecao-palavra-ligar-desligar.html"
       ],
       "notes": "Cap. 115 — maçaneta + mapa de cruzamento."
+    },
+    {
+      "id": "expressao-como-os-ricos-transformam-as-coisas",
+      "title": "Como os ricos transformam as coisas — ciclo e poder",
+      "titleEn": "How the rich transform things — cycle and power",
+      "titleEs": "Cómo los ricos transforman las cosas — ciclo y poder",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Frase-mapa do ciclo das coisas; elo História das Coisas / Annie Leonard.",
+      "whyEn": "Map-phrase for the stuff cycle; link Story of Stuff / Annie Leonard.",
+      "whyEs": "Frase-mapa del ciclo; vínculo Historia de las cosas / Annie Leonard.",
+      "suggestedSlug": "inspecao-expressao-como-os-ricos-transformam-as-coisas",
+      "doneHref": "/posts/post-inspecao-expressao-como-os-ricos-transformam-as-coisas.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-como-os-ricos-transformam-as-coisas.html",
+        "/posts/post-inspecao-arte-a-historia-das-coisas.html",
+        "/posts/post-inspecao-figura-annie-leonard.html"
+      ],
+      "notes": "Cap. 13 — tipografia osricostramsorandascoisas → canónica; não panfleto de ódio."
     }
   ]
 }

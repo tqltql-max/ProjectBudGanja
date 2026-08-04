@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:32:01.248Z",
+  "updatedAt": "2026-08-04T17:35:07.438Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2736,6 +2736,16 @@
       "href": "/posts/post-inspecao-palavra-objetos.html"
     },
     {
+      "id": "como-os-ricos-transformam-as-coisas",
+      "word": "Como os ricos transformam as coisas",
+      "simple": "Frase-mapa: poder sobre o ciclo extrair→fazer→descartar; elo História das Coisas.",
+      "simpleEn": "Map-phrase: power over extract→make→dispose; link Story of Stuff.",
+      "simpleEs": "Frase-mapa: poder sobre el ciclo; vínculo Historia de las cosas.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-como-os-ricos-transformam-as-coisas.html"
+    },
+    {
       "id": "oficio-editorial",
       "word": "Ofício editorial",
       "simple": "Método repetível do laboratório (inspecionar, citar, limitar, publicar) — eixo da pesquisa Ofício sob roubo e proibição.",
@@ -3168,9 +3178,9 @@
     {
       "id": "risco",
       "word": "Risco",
-      "simple": "Perigo calculado da travessia e da invernagem — Amyr planeia; Tamara assume o próprio.",
-      "simpleEn": "Calculated danger of crossing and overwintering — Amyr plans; Tamara owns her own.",
-      "simpleEs": "Peligro calculado de la travesía y la invernada — Amyr planifica; Tamara asume el suyo.",
+      "simple": "Perigo calculado × traço (*riscar*); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Faça o melhor!",
+      "simpleEn": "Calculated danger × stroke (*riscar*); links medo, sinal, caminho, EXIT, Tamara/Amyr; Do your best!",
+      "simpleEs": "Peligro calculado × trazo (*riscar*); vínculos medo, sinal, caminho, EXIT, Tamara/Amyr; ¡Haz lo mejor!",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-risco.html"
