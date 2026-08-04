@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:14:06.654Z",
+  "updatedAt": "2026-08-04T17:19:54.074Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -264,6 +264,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-arte-o-inicio.html"
+    },
+    {
+      "id": "killing-in-the-name",
+      "word": "Killing in the Name",
+      "simple": "Canção RATM (1992): matar no nome da ordem; elo BudGanja com O Início, raiva nomeada e proibição.",
+      "simpleEn": "RATM song (1992): killing in the name of order; BudGanja link to O Início, named rage, prohibition.",
+      "simpleEs": "Canción RATM (1992): matar en el nombre del orden; vínculo BudGanja con O Início, rabia nombrada y prohibición.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-killing-in-the-name.html"
     },
     {
       "id": "associacao-pacientes",

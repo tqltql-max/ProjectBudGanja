@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:14:16.138Z",
+  "updatedAt": "2026-08-04T17:20:05.864Z",
   "poems": [
     {
       "id": "aguas-e-lagrimas",
@@ -144,6 +144,31 @@
         "início",
         "tanque",
         "guerra"
+      ]
+    },
+    {
+      "id": "killing-in-the-name",
+      "slug": "killing-in-the-name",
+      "title": "Killing in the Name",
+      "titleEn": "Killing in the Name",
+      "titleEs": "Killing in the Name",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja da RATM — raiva nomeada contra a máquina; não tanque, não matar no nome; faça o melhor.",
+      "teaserEn": "BudGanja echo of RATM — named rage against the machine; no tank, no killing in the name; do your best.",
+      "teaserEs": "Eco BudGanja de RATM — rabia nombrada contra la máquina; no tanque, no matar en el nombre; haz lo mejor.",
+      "body": "Killing in the Name.\nNão pedimos a letra emprestada —\npedimos o ofício de ouvir\nquando matam em nome de alguma coisa\ne chamam isso de ordem.\n\nRage Against the Machine.\nHá máquina de guerra —\ntanque, lista, proibição —\nque avança e esmaga.\nHá máquina biológica —\nfolha de leque, dossel, luz —\nque espalha e partilha.\n\nA raiva tem ofício.\nNomeada, inspeciona.\nArmada em vingança,\nenvenena a alma.\nO laboratório não confunde os dois.\n\nNão montamos tanque.\nNão matamos no nome.\nPlantamos à beira.\nContamos gotas.\nChamamos a Vida pelo nome verdadeiro:\nficar —\ne dizer não\nà máquina que pede sangue\ncomo se fosse lei.\n\nFaça o melhor!\n\nPorque toda vez que alguém permanece\nsem matar em nome de ninguém,\no universo cresce um pouco:\num verso a mais,\num dossel a mais,\num nós onde antes só havia blindagem.",
+      "bodyEn": "Killing in the Name.\nWe do not borrow the lyric —\nwe ask for the craft of listening\nwhen they kill in the name of something\nand call it order.\n\nRage Against the Machine.\nThere is a war machine —\ntank, list, prohibition —\nthat advances and crushes.\nThere is a biological machine —\nfan leaf, canopy, light —\nthat spreads and shares.\n\nAnger has a craft.\nNamed, it inspects.\nArmed as revenge,\nit poisons the soul.\nThe laboratory does not confuse the two.\n\nWe do not build a tank.\nWe do not kill in the name.\nWe plant at the edge.\nWe count drops.\nWe call Vida by its true name:\nstay —\nand say no\nto the machine that asks for blood\nas if it were law.\n\nDo your best!\n\nBecause every time someone remains\nwithout killing in anyone’s name,\nthe universe grows a little:\none more verse,\none more canopy,\na we where once there was only armor.",
+      "bodyEs": "Killing in the Name.\nNo pedimos prestada la letra —\npedimos el oficio de oír\ncuando matan en nombre de algo\ny lo llaman orden.\n\nRage Against the Machine.\nHay máquina de guerra —\ntanque, lista, prohibición —\nque avanza y aplasta.\nHay máquina biológica —\nhoja de abanico, dosel, luz —\nque reparte y comparte.\n\nLa rabia tiene oficio.\nNombrada, inspecciona.\nArmada en venganza,\nenvenena el alma.\nEl laboratorio no confunde las dos.\n\nNo montamos tanque.\nNo matamos en el nombre.\nSembramos a la orilla.\nContamos gotas.\nLlamamos a Vida por su nombre verdadero:\nquedarse —\ny decir no\na la máquina que pide sangre\ncomo si fuera ley.\n\n¡Haz lo mejor!\n\nPorque cada vez que alguien permanece\nsin matar en nombre de nadie,\nel universo crece un poco:\nun verso más,\nun dosel más,\nun nosotros donde antes solo había blindaje.",
+      "inspectionHref": "/posts/post-inspecao-arte-killing-in-the-name.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "rage",
+        "máquina",
+        "raiva",
+        "proibição"
       ]
     }
   ]

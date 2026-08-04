@@ -34,6 +34,11 @@ const {
   poemCultivoOInicioEn,
   poemCultivoOInicioEs
 } = require('../lib/cultivo-o-inicio-inspecao-post.js');
+const {
+  poemKillingInTheNamePt,
+  poemKillingInTheNameEn,
+  poemKillingInTheNameEs
+} = require('../lib/killing-in-the-name-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -167,6 +172,27 @@ const doc = {
       bodyEs: poemCultivoOInicioEs(),
       inspectionHref: '/posts/post-inspecao-arte-o-inicio.html',
       tags: ['poesia', 'vida', 'cultivo', 'semente', 'início', 'tanque', 'guerra']
+    },
+    {
+      id: 'killing-in-the-name',
+      slug: 'killing-in-the-name',
+      title: 'Killing in the Name',
+      titleEn: 'Killing in the Name',
+      titleEs: 'Killing in the Name',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja da RATM — raiva nomeada contra a máquina; não tanque, não matar no nome; faça o melhor.',
+      teaserEn:
+        'BudGanja echo of RATM — named rage against the machine; no tank, no killing in the name; do your best.',
+      teaserEs:
+        'Eco BudGanja de RATM — rabia nombrada contra la máquina; no tanque, no matar en el nombre; haz lo mejor.',
+      body: poemKillingInTheNamePt(),
+      bodyEn: poemKillingInTheNameEn(),
+      bodyEs: poemKillingInTheNameEs(),
+      inspectionHref: '/posts/post-inspecao-arte-killing-in-the-name.html',
+      tags: ['poesia', 'vida', 'rage', 'máquina', 'raiva', 'proibição']
     }
   ]
 };

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:14:06.651Z",
+  "updatedAt": "2026-08-04T17:19:54.070Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4917,6 +4917,29 @@
         "/guia/cultivo-basico.html"
       ],
       "notes": "Verso BudGanja; fonte = legenda YouTube PT do canal."
+    },
+    {
+      "id": "arte-killing-in-the-name",
+      "title": "Killing in the Name — RATM e a máquina que mata no nome",
+      "titleEn": "Killing in the Name — RATM and the machine that kills in the name",
+      "titleEs": "Killing in the Name — RATM y la máquina que mata en el nombre",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canção 1992: raiva contra a máquina × O Início (tanques) e proibição.",
+      "whyEn": "1992 song: rage against the machine × O Início (tanks) and prohibition.",
+      "whyEs": "Canción 1992: rabia contra la máquina × O Início (tanques) y prohibición.",
+      "suggestedSlug": "inspecao-arte-killing-in-the-name",
+      "doneHref": "/posts/post-inspecao-arte-killing-in-the-name.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-killing-in-the-name.html",
+        "https://www.youtube.com/watch?v=bWXazVhlyxQ",
+        "https://en.wikipedia.org/wiki/Killing_in_the_Name",
+        "/posts/post-inspecao-arte-o-inicio.html",
+        "/vida/"
+      ],
+      "notes": "Obra primeiro (1992); eco poético BudGanja distinto da letra RATM."
     }
   ]
 }
