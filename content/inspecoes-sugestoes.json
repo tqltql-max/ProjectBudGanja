@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:19:54.070Z",
+  "updatedAt": "2026-08-04T17:23:29.795Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4940,6 +4940,29 @@
         "/vida/"
       ],
       "notes": "Obra primeiro (1992); eco poético BudGanja distinto da letra RATM."
+    },
+    {
+      "id": "palavra-papel-enrolar-tabaco",
+      "title": "Papel de enrolar × tabaco — dupla origem",
+      "titleEn": "Rolling paper × tobacco — dual origin",
+      "titleEs": "Papel de liar × tabaco — doble origen",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Origem do papel (Europa/mortalha) e origem do tabaco (Américas).",
+      "whyEn": "Origin of rolling paper (Europe) and of tobacco (Americas).",
+      "whyEs": "Origen del papel de liar (Europa) y del tabaco (Américas).",
+      "suggestedSlug": "inspecao-palavra-papel-enrolar-tabaco",
+      "doneHref": "/posts/post-inspecao-palavra-papel-enrolar-tabaco.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Tabaco",
+        "https://en.wikipedia.org/wiki/Rolling_paper",
+        "https://en.wikipedia.org/wiki/Rizla",
+        "/posts/post-inspecao-palavra-cinzeiro.html",
+        "/posts/post-inspecao-palavra-maconha.html"
+      ],
+      "notes": "Cap. 114 — ficha ≠ incentivo ao fumo; lore Rizla/Napoleão com ressalva."
     }
   ]
 }

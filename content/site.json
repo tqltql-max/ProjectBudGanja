@@ -471,6 +471,14 @@
                   "description": "Relatório educacional de Cacau (*Theobroma cacao L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
                 },
                 {
+                  "label": "Inspeção: Deus abençoe — bênção, despedida e tipografia Deus Abenço",
+                  "tileLabel": "Inspeção: Deus abençoe — bênção…",
+                  "href": "/posts/post-inspecao-expressao-deus-abencoe.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-expressao-deus-abencoe",
+                  "description": "Expressões: «Deus abençoe» — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; sem proselitismo; Faça o melhor!"
+                },
+                {
                   "label": "Inspeção: Planta — Melissa — citral e melissa officinalis",
                   "tileLabel": "Inspeção: Planta — Melissa — ci…",
                   "href": "/posts/post-inspecao-planta-melissa.html",
@@ -485,6 +493,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-uva",
                   "description": "Relatório educacional de Uva (*Vitis vinifera L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Deus deu dois ouvidos e uma boca — proporção, escuta e tipografia pouvi",
+                  "tileLabel": "Inspeção: Deus deu dois ouvidos…",
+                  "href": "/posts/post-inspecao-expressao-deus-deu-dois-ouvidos.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-expressao-deus-deu-dois-ouvidos",
+                  "description": "Expressões: «Deus deu dois ouvidos e uma boca» — ouvir 2× / falar 1×; tipografia dois pouvi → dois ouvidos; sem proselitismo; Faça o melhor!"
                 },
                 {
                   "label": "Inspeção: canal Disney Jr. Brasil — desenhos e o oceano",
@@ -743,12 +759,28 @@
                   "description": "Artes · desenho: Moana (2016, Disney / Clements & Musker) — oceano, navegar e cuidado da ilha; elos mar/caminho/Vida; Faça o melhor!"
                 },
                 {
+                  "label": "Inspeção: O Início — poesia do laboratório a partir do cultivo",
+                  "tileLabel": "Inspeção: O Início — poesia do …",
+                  "href": "/posts/post-inspecao-arte-o-inicio.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-o-inicio",
+                  "description": "Artes · poesia: semente e dossel × tanques de guerra — fundação de vida, não de blindagem; verso a partir da legenda de Cultivo O Inicio."
+                },
+                {
                   "label": "Inspeção: Multitask — empréstimo, parece×é e correção de ofício",
                   "tileLabel": "Inspeção: Multitask — empréstim…",
                   "href": "/posts/post-inspecao-palavra-multitask.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-multitask",
                   "description": "Palavras: «multitask» / «multitarefa» — empréstimo EN→BR; o que parece vs o que é; correção: ≠ fazer tudo bem ao mesmo tempo; Faça o melhor! com método."
+                },
+                {
+                  "label": "Inspeção: Killing in the Name — Rage Against the Machine e a máquina que mata no nome",
+                  "tileLabel": "Inspeção: Killing in the Name —…",
+                  "href": "/posts/post-inspecao-arte-killing-in-the-name.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-killing-in-the-name",
+                  "description": "Artes · canção 1992: RATM — matar no nome da ordem × raiva nomeada; elo com O Início (tanques × dossel) e proibição."
                 },
                 {
                   "label": "Inspeção: Incrível — incredibilis, elogio BR e a escala legal→genial",
@@ -940,7 +972,7 @@
                   "href": "/posts/post-inspecao-palavra-interruptor.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-interruptor",
-                  "description": "Palavras: «interruptor» (lat. *interrumpere*) — ligar/desligar × corte de fluxo; derivações interromper/interrupção; elos sinal, gesto, eletrizante; Faça o melhor!"
+                  "description": "Palavras: «interruptor» (lat. *interrumpere*) — peça do circuito; par lab com ligar × desligar; derivações interromper/interrupção; Faça o melhor!"
                 },
                 {
                   "label": "Inspeção: Sempre — duração, hábito e Faça o melhor!",
@@ -1117,6 +1149,38 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-meneia",
                   "description": "Palavras: «meneia» / menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto e mãos; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Mãe — origem, cuidado e tipografia fia → mãe",
+                  "tileLabel": "Inspeção: Mãe — origem, cuidado…",
+                  "href": "/posts/post-inspecao-palavra-mae.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-mae",
+                  "description": "Palavras: «mãe» (lat. *mater*) — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria, alma, coração; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Grok — compreender por dentro × falar limpo",
+                  "tileLabel": "Inspeção: Grok — compreender po…",
+                  "href": "/posts/post-inspecao-palavra-grok.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-grok",
+                  "description": "Palavras: «Grok» (Heinlein *to grok*) — compreensão íntima × tom de ofício; relação de forma de se expressar com Deus (abençoe / filho / meudeusdoceu / jesusamando); Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Ligar × Desligar — verbos do circuito",
+                  "tileLabel": "Inspeção: Ligar × Desligar — ve…",
+                  "href": "/posts/post-inspecao-palavra-ligar-desligar.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-ligar-desligar",
+                  "description": "Palavras: «ligar» × «desligar» (lat. *ligāre*) — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Papel de enrolar e tabaco — origem do papel e origem da planta",
+                  "tileLabel": "Inspeção: Papel de enrolar e ta…",
+                  "href": "/posts/post-inspecao-palavra-papel-enrolar-tabaco.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-papel-enrolar-tabaco",
+                  "description": "Palavras: papel de enrolar × tabaco — planta americana e mortalha europeia; elos cinzeiro, fogo, maconha; Faça o melhor!"
                 },
                 {
                   "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",

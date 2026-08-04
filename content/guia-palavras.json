@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:19:54.074Z",
+  "updatedAt": "2026-08-04T17:23:29.799Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -834,6 +834,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-cinzeiro.html"
+    },
+    {
+      "id": "papel-de-enrolar",
+      "word": "papel de enrolar",
+      "simple": "Mortalha / seda — papel fino para enrolar; origem europeia industrial (ex. Rizla); elo tabaco e cinzeiro.",
+      "simpleEn": "Rolling paper — thin paper for rolling; modern European industry (e.g. Rizla); links tobacco and cinzeiro.",
+      "simpleEs": "Papel de liar — papel fino; origen europea industrial (p. ej. Rizla); vínculo tabaco y cinzeiro.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-papel-enrolar-tabaco.html"
     },
     {
       "id": "clonadora",
@@ -3327,13 +3337,13 @@
     },
     {
       "id": "tabaco",
-      "word": "Tabaco",
-      "simple": "Nicotiana — planta e produto de uso ritual/comercial; nicotina é o alcalóide principal. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Nicotiana — plant and ritual/commercial product; nicotine is the main alkaloid. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Nicotiana — planta y producto de uso ritual/comercial; nicotina es el alcaloide principal. Citada en los borradores de las clases XIV (curso UNIFESP).",
-      "group": "tecnico",
+      "word": "tabaco",
+      "simple": "Planta americana (Nicotiana); vocábulo via espanhol; distinto de maconha; elo papel de enrolar.",
+      "simpleEn": "American plant (Nicotiana); word via Spanish; distinct from maconha; link to rolling paper.",
+      "simpleEs": "Planta americana (Nicotiana); vocablo vía español; distinto de maconha; vínculo papel de liar.",
+      "group": "lexico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-inspecao-palavra-papel-enrolar-tabaco.html"
     },
     {
       "id": "terpeno",
