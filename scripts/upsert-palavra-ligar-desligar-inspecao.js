@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: ligar × desligar (lat. ligare) — acender/apagar × conectar/cortar; elos interruptor, gesto, sinal; Faça o melhor!',
-      whyEn: 'Words: ligar × desligar (Lat. ligare) — on/off × connect/cut; links interruptor, gesto, sinal; Do your best!',
-      whyEs: 'Palabras: ligar × desligar (lat. ligare) — encender/apagar × conectar/cortar; vínculos interruptor, gesto, sinal; ¡Haz lo mejor!',
+      why: 'Palavras: ligar × desligar (lat. ligare) — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor!',
+      whyEn: 'Words: ligar × desligar (Lat. ligare) — circuit verbs; lab pair with interruptor (device × gesture); Do your best!',
+      whyEs: 'Palabras: ligar × desligar (lat. ligare) — verbos del circuito; par lab con interruptor (pieza × gesto); ¡Haz lo mejor!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -98,7 +98,7 @@ async function main() {
         '/posts/post-inspecao-palavra-sinal.html',
         '/posts/post-inspecao-expressao-faca-o-melhor.html'
       ],
-      notes: 'Cap. ' + post.seriesOrder + ' — par verbal do interruptor; tipografia Desligar e Ligar.'
+      notes: 'Cap. ' + post.seriesOrder + ' — par lab verbal do interruptor (peça × gesto).'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);
@@ -116,11 +116,11 @@ async function main() {
         id: 'ligar',
         word: 'ligar',
         simple:
-          'Lat. ligare — acender/conectar/telefonar; par com desligar; elo interruptor e gesto; Faça o melhor com o clique.',
+          'Lat. ligare — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor com o clique.',
         simpleEn:
-          'Lat. ligare — turn on/connect/call; pair with desligar; links interruptor and gesto; Do your best with the click.',
+          'Lat. ligare — circuit verbs; lab pair with interruptor (device × gesture); Do your best with the click.',
         simpleEs:
-          'Lat. ligare — encender/conectar/llamar; par con desligar; vínculos interruptor y gesto; Haz lo mejor con el clic.',
+          'Lat. ligare — verbos del circuito; par lab con interruptor (pieza × gesto); Haz lo mejor con el clic.',
         group: 'lexico',
         fromTitle: false,
         href
@@ -129,11 +129,11 @@ async function main() {
         id: 'desligar',
         word: 'desligar',
         simple:
-          'Des- + ligar — apagar/cortar/sair do fluxo; par com ligar; elo interruptor e risco; Faça o melhor inclusive ao pausar.',
+          'Des- + ligar — verbos do circuito com ligar; par lab com interruptor; Faça o melhor inclusive ao pausar.',
         simpleEn:
-          'Des- + ligar — turn off/cut/leave the flow; pair with ligar; links interruptor and risco; Do your best even when pausing.',
+          'Des- + ligar — circuit verbs with ligar; lab pair with interruptor; Do your best even when pausing.',
         simpleEs:
-          'Des- + ligar — apagar/cortar/salir del flujo; par con ligar; vínculos interruptor y risco; Haz lo mejor incluso al pausar.',
+          'Des- + ligar — verbos del circuito con ligar; par lab con interruptor; Haz lo mejor incluso al pausar.',
         group: 'lexico',
         fromTitle: false,
         href
@@ -160,9 +160,9 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLigar =
-      '    ligar: { gloss: "Lat. ligare — acender/conectar/telefonar; par com desligar; elo interruptor e gesto; Faça o melhor!", href: "/posts/post-inspecao-palavra-ligar-desligar.html", en: "to turn on / connect / call", es: "encender / conectar / llamar", fr: "allumer / lier", it: "accendere / legare", de: "einschalten / verbinden", el: "anoigo", la: "ligare", yo: "tan", sw: "washa", gez: "ʾanbara", nl: "aanzetten", pl: "wlaczyc", ru: "vklyuchit", uk: "vklyuchyty", zh: "dakai", ja: "on", ko: "켜다", ar: "yushaghghil", he: "lehadlik", hi: "on", tr: "acmak", sv: "satta pa", da: "taende", no: "skru pa", fi: "kytkea", cs: "zapnout", ro: "aprinde", hu: "bekapcsol", ca: "encendre", gl: "acender", eu: "piztu", gn: "moĩ", qu: "rawray", eo: "sxalti", vi: "bat", id: "nyalakan", th: "on", hr: "upaliti", sk: "zapnut", ga: "las", cy: "troi ymlaen", ha: "kunna", am: "anqa", fa: "roshan", bn: "on", zu: "layitha" },';
+      '    ligar: { gloss: "Lat. ligare — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor!", href: "/posts/post-inspecao-palavra-ligar-desligar.html", en: "to turn on / connect / call", es: "encender / conectar / llamar", fr: "allumer / lier", it: "accendere / legare", de: "einschalten / verbinden", el: "anoigo", la: "ligare", yo: "tan", sw: "washa", gez: "ʾanbara", nl: "aanzetten", pl: "wlaczyc", ru: "vklyuchit", uk: "vklyuchyty", zh: "dakai", ja: "on", ko: "켜다", ar: "yushaghghil", he: "lehadlik", hi: "on", tr: "acmak", sv: "satta pa", da: "taende", no: "skru pa", fi: "kytkea", cs: "zapnout", ro: "aprinde", hu: "bekapcsol", ca: "encendre", gl: "acender", eu: "piztu", gn: "moĩ", qu: "rawray", eo: "sxalti", vi: "bat", id: "nyalakan", th: "on", hr: "upaliti", sk: "zapnut", ga: "las", cy: "troi ymlaen", ha: "kunna", am: "anqa", fa: "roshan", bn: "on", zu: "layitha" },';
     const entryDesligar =
-      '    desligar: { gloss: "Des- + ligar — apagar/cortar/sair do fluxo; par com ligar; elo interruptor e risco; Faça o melhor!", href: "/posts/post-inspecao-palavra-ligar-desligar.html", en: "to turn off / disconnect", es: "apagar / desconectar", fr: "eteindre / delier", it: "spegnere", de: "ausschalten", el: "svino", la: "deligare", yo: "pa", sw: "zima", gez: "ʾatfaʾa", nl: "uitzetten", pl: "wylaczyc", ru: "vyklyuchit", uk: "vyklyuchyty", zh: "guanbi", ja: "off", ko: "끄다", ar: "yutfi", he: "lekbót", hi: "off", tr: "kapatmak", sv: "stanga av", da: "slukke", no: "skru av", fi: "sammuttaa", cs: "vypnout", ro: "stinge", hu: "kikapcsol", ca: "apagar", gl: "apagar", eu: "itzali", gn: "mbogue", qu: "wañuchiy", eo: "malSxalti", vi: "tat", id: "matikan", th: "off", hr: "ugasiti", sk: "vypnut", ga: "múch", cy: "diffodd", ha: "kashe", am: "atfa", fa: "khamush", bn: "off", zu: "cima" },';
+      '    desligar: { gloss: "Des- + ligar — verbos do circuito; par lab com interruptor; Faça o melhor!", href: "/posts/post-inspecao-palavra-ligar-desligar.html", en: "to turn off / disconnect", es: "apagar / desconectar", fr: "eteindre / delier", it: "spegnere", de: "ausschalten", el: "svino", la: "deligare", yo: "pa", sw: "zima", gez: "ʾatfaʾa", nl: "uitzetten", pl: "wylaczyc", ru: "vyklyuchit", uk: "vyklyuchyty", zh: "guanbi", ja: "off", ko: "끄다", ar: "yutfi", he: "lekbót", hi: "off", tr: "kapatmak", sv: "stanga av", da: "slukke", no: "skru av", fi: "sammuttaa", cs: "vypnout", ro: "stinge", hu: "kikapcsol", ca: "apagar", gl: "apagar", eu: "itzali", gn: "mbogue", qu: "wañuchiy", eo: "malSxalti", vi: "tat", id: "matikan", th: "off", hr: "ugasiti", sk: "vypnut", ga: "múch", cy: "diffodd", ha: "kashe", am: "atfa", fa: "khamush", bn: "off", zu: "cima" },';
     const entryLine = entryLigar + '\n' + entryDesligar;
     if (/ligar:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    ligar:\s*\{[\s\S]*?\},/, entryLigar);
