@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T23:31:37.968Z",
+  "updatedAt": "2026-08-04T14:22:13.463Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1564,6 +1564,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-expressao-filho-de-deus.html"
+    },
+    {
+      "id": "deus-deu-dois-ouvidos",
+      "word": "Deus deu dois ouvidos e uma boca",
+      "simple": "Expressão — ditado de proporção (ouvir 2× / falar 1×); tipografia dois pouvi → dois ouvidos; respeito à fé cultural, sem proselitismo; depois Faça o melhor!",
+      "simpleEn": "Saying — proportion proverb (listen 2× / speak 1×); tipography dois pouvi → dois ouvidos; respect for cultural faith, no proselytizing; then Do your best!",
+      "simpleEs": "Expresión — dicho de proporción (oír 2× / hablar 1×); tipografía dois pouvi → dois ouvidos; respeto a la fe cultural, sin proselitismo; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-deus-deu-dois-ouvidos.html"
     },
     {
       "id": "deus-abencoe",

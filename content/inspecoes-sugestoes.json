@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T23:31:37.963Z",
+  "updatedAt": "2026-08-04T14:22:13.459Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4822,6 +4822,28 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 11 Expressões — tipografia Deus Abenço → Deus abençoe; ficha ≠ catecismo."
+    },
+    {
+      "id": "expressao-deus-deu-dois-ouvidos",
+      "title": "Deus deu dois ouvidos e uma boca — proporção, escuta e tipografia pouvi",
+      "titleEn": "Deus deu dois ouvidos e uma boca — proportion, listening and tipography pouvi",
+      "titleEs": "Deus deu dois ouvidos e uma boca — proporción, escucha y tipografía pouvi",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: Deus deu dois ouvidos e uma boca — ouvir 2× / falar 1×; tipografia dois pouvi → dois ouvidos; sem proselitismo.",
+      "whyEn": "Sayings: Deus deu dois ouvidos e uma boca — listen 2× / speak 1×; tipography dois pouvi → dois ouvidos; no proselytizing.",
+      "whyEs": "Dichos: Deus deu dois ouvidos e uma boca — oír 2× / hablar 1×; tipografía dois pouvi → dois ouvidos; sin proselitismo.",
+      "suggestedSlug": "inspecao-expressao-deus-deu-dois-ouvidos",
+      "doneHref": "/posts/post-inspecao-expressao-deus-deu-dois-ouvidos.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-deus-abencoe.html",
+        "/posts/post-inspecao-expressao-filho-de-deus.html",
+        "/posts/post-inspecao-palavra-mensagem.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 12 Expressões — tipografia dois pouvi → dois ouvidos; ficha ≠ sermão."
     }
   ]
 }
