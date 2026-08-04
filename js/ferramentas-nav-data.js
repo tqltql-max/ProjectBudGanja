@@ -369,6 +369,22 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Expressões: duasakdiqujdocedomadur — nome lab de «Deus ajuda quem cedo madruga»; diligência com aurora; elos Faça o melhor!, caminho, jesusamando, meudeusdoceu"
             },
             {
+              "label": "Inspeção: Nick Tosches — prosa afiada e elo com A Última Casa de Ópio",
+              "tileLabel": "Inspeção: Nick Tosches — prosa …",
+              "href": "/posts/post-inspecao-figura-nick-tosches.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-nick-tosches",
+              "description": "Pessoas × Artes: Nick Tosches — método jornalístico-literário, com elo principal no livro A Última Casa de Ópio (2002); distinto do Legado canábico."
+            },
+            {
+              "label": "Inspeção: A Última Casa de Ópio — a procura de Tosches e a crítica ao placebo",
+              "tileLabel": "Inspeção: A Última Casa de Ópio…",
+              "href": "/posts/post-inspecao-arte-a-ultima-casa-de-opio.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-a-ultima-casa-de-opio",
+              "description": "Artes: A Última Casa de Ópio (*The Last Opium Den*, 2002) — livro-reportagem de Nick Tosches; viagem, memória das dens e crítica ao consumismo. Autor em Pessoas. Sem romantizar ópio."
+            },
+            {
               "label": "Inspeção: Planta — Espinheira-santa — friedelina e triterpenos",
               "tileLabel": "Inspeção: Planta — Espinheira-s…",
               "href": "/posts/post-inspecao-planta-espinheira-santa.html",
@@ -399,6 +415,22 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-erva",
               "description": "Palavras: «erva» — ficha antiga; ofício migrado para planta / plantas (hub e Farmácia Viva)."
+            },
+            {
+              "label": "Inspeção: Annie Leonard — divulgação da economia dos materiais e elo com A História das Coisas",
+              "tileLabel": "Inspeção: Annie Leonard — divul…",
+              "href": "/posts/post-inspecao-figura-annie-leonard.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-annie-leonard",
+              "description": "Pessoas × Artes: Annie Leonard — método de explicar a economia linear das coisas, com elo principal no livro A História das Coisas (2010); distinto do Legado canábico."
+            },
+            {
+              "label": "Inspeção: A História das Coisas — o livro de Leonard e a máquina extrair-fazer-descartar",
+              "tileLabel": "Inspeção: A História das Coisas…",
+              "href": "/posts/post-inspecao-arte-a-historia-das-coisas.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-a-historia-das-coisas",
+              "description": "Artes: A História das Coisas (*The Story of Stuff*, 2010/2011) — livro de Annie Leonard sobre a economia linear das coisas; vídeo 2007 como precursor. Autora em Pessoas."
             },
             {
               "label": "Inspeção: Planta — Guaco — cumarina e trepadeira respiratória",
@@ -543,6 +575,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-morango",
               "description": "Relatório educacional de Morango (*Fragaria × ananassa Duchesne): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: Como os ricos transformam as coisas — poder, ciclo e História das Coisas",
+              "tileLabel": "Inspeção: Como os ricos transfo…",
+              "href": "/posts/post-inspecao-expressao-como-os-ricos-transformam-as-coisas.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-como-os-ricos-transformam-as-coisas",
+              "description": "Expressões: «Como os ricos transformam as coisas» (tipografia osricostramsorandascoisas) — mapa do poder sobre o ciclo das coisas; elo Annie Leonard."
             },
             {
               "label": "Inspeção: Tom Jobim — bossa, Águas de Março e a dedicatória «Adoro origami»",
@@ -849,6 +889,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «incrível» (lat. *incredibilis*) — incredulidade e elogio BR «uau»; escala com fichas existentes (legal, genial, fantástico…); Faça o melhor!"
             },
             {
+              "label": "Inspeção: All Right Now — Free e o agora depois do silêncio",
+              "tileLabel": "Inspeção: All Right Now — Free …",
+              "href": "/posts/post-inspecao-arte-all-right-now.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-all-right-now",
+              "description": "Artes · canção 1970: Free — All Right Now nasce no camarim após Durham; elo BudGanja com já, legal e esperança — estar bem agora."
+            },
+            {
               "label": "Inspeção: Fruto — fructus, frutos e os frutos do trabalho",
               "tileLabel": "Inspeção: Fruto — fructus, frut…",
               "href": "/posts/post-inspecao-palavra-fruto.html",
@@ -1038,7 +1086,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-interruptor.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-interruptor",
-              "description": "Palavras: «interruptor» (lat. *interrumpere*) — peça do circuito; par lab com ligar × desligar; derivações interromper/interrupção; Faça o melhor!"
+              "description": "Palavras: «interruptor» (lat. *interrumpere*) — peça do circuito; tríade com ligar × desligar e luz; Faça o melhor!"
             },
             {
               "label": "Inspeção: Sempre — duração, hábito e Faça o melhor!",
@@ -1238,7 +1286,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-ligar-desligar.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-ligar-desligar",
-              "description": "Palavras: «ligar» × «desligar» (lat. *ligāre*) — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor!"
+              "description": "Palavras: «ligar» × «desligar» (lat. *ligāre*) — verbos do circuito; tríade com interruptor e luz; Faça o melhor!"
             },
             {
               "label": "Inspeção: Papel de enrolar e tabaco — origem do papel e origem da planta",
@@ -1255,6 +1303,22 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-macaneta",
               "description": "Palavras: maçaneta — gesto torcer/abrir × mão E/D × porta/janela × ligar/desligar luz; elos gesto, interruptor; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Luz — efeito do circuito e claridade",
+              "tileLabel": "Inspeção: Luz — efeito do circu…",
+              "href": "/posts/post-inspecao-palavra-luz.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-luz",
+              "description": "Palavras: «luz» (lat. *lūx*) — claridade e efeito do clique; tríade circuito + sol (fonte natural); Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Sol — astro, luz natural e ciclo",
+              "tileLabel": "Inspeção: Sol — astro, luz natu…",
+              "href": "/posts/post-inspecao-palavra-sol.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-sol",
+              "description": "Palavras: «sol» (lat. *sōl*) — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Faça o melhor!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
@@ -2072,38 +2136,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-animal-cavalo",
               "description": "Relatório educacional de Cavalo (*Equus ferus caballus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Annie Leonard — divulgação da economia dos materiais e elo com A História das Coisas",
-              "tileLabel": "Inspeção: Annie Leonard — divul…",
-              "href": "/posts/post-inspecao-figura-annie-leonard.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-annie-leonard",
-              "description": "Pessoas × Artes: Annie Leonard — método de explicar a economia linear das coisas, com elo principal no livro A História das Coisas (2010); distinto do Legado canábico."
-            },
-            {
-              "label": "Inspeção: A História das Coisas — o livro de Leonard e a máquina extrair-fazer-descartar",
-              "tileLabel": "Inspeção: A História das Coisas…",
-              "href": "/posts/post-inspecao-arte-a-historia-das-coisas.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-arte-a-historia-das-coisas",
-              "description": "Artes: A História das Coisas (*The Story of Stuff*, 2010/2011) — livro de Annie Leonard sobre a economia linear das coisas; vídeo 2007 como precursor. Autora em Pessoas."
-            },
-            {
-              "label": "Inspeção: Nick Tosches — prosa afiada e elo com A Última Casa de Ópio",
-              "tileLabel": "Inspeção: Nick Tosches — prosa …",
-              "href": "/posts/post-inspecao-figura-nick-tosches.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-nick-tosches",
-              "description": "Pessoas × Artes: Nick Tosches — método jornalístico-literário, com elo principal no livro A Última Casa de Ópio (2002); distinto do Legado canábico."
-            },
-            {
-              "label": "Inspeção: A Última Casa de Ópio — a procura de Tosches e a crítica ao placebo",
-              "tileLabel": "Inspeção: A Última Casa de Ópio…",
-              "href": "/posts/post-inspecao-arte-a-ultima-casa-de-opio.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-arte-a-ultima-casa-de-opio",
-              "description": "Artes: A Última Casa de Ópio (*The Last Opium Den*, 2002) — livro-reportagem de Nick Tosches; viagem, memória das dens e crítica ao consumismo. Autor em Pessoas. Sem romantizar ópio."
             },
             {
               "label": "Inspeção: Anthony Henman — antropologia da diamba e elo com Diamba Sarabamba",

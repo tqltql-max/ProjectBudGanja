@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T18:02:50.809Z",
+  "updatedAt": "2026-08-04T18:13:39.509Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5085,6 +5085,29 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 117 — fonte natural vs luz de circuito; ≠ solitário."
+    },
+    {
+      "id": "arte-all-right-now",
+      "title": "All Right Now — Free e o agora depois do silêncio",
+      "titleEn": "All Right Now — Free and the now after silence",
+      "titleEs": "All Right Now — Free y el ahora después del silencio",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canção 1970: Free — consolação no camarim após Durham × já / legal.",
+      "whyEn": "1970 song: Free — dressing-room consolation after Durham × já / legal.",
+      "whyEs": "Canción 1970: Free — consuelo en el camerino tras Durham × já / legal.",
+      "suggestedSlug": "inspecao-arte-all-right-now",
+      "doneHref": "/posts/post-inspecao-arte-all-right-now.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-all-right-now.html",
+        "https://www.youtube.com/watch?v=7cQ4jNDRTOo",
+        "https://en.wikipedia.org/wiki/All_Right_Now",
+        "/posts/post-inspecao-palavra-ja.html",
+        "/vida/"
+      ],
+      "notes": "Obra primeiro (1970); eco poético BudGanja distinto da letra Free."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T18:02:50.813Z",
+  "updatedAt": "2026-08-04T18:13:39.512Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -294,6 +294,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-arte-killing-in-the-name.html"
+    },
+    {
+      "id": "all-right-now",
+      "word": "All Right Now",
+      "simple": "Canção Free (1970): está tudo bem agora — génese após silêncio em Durham; elo BudGanja com já e legal.",
+      "simpleEn": "Free song (1970): all right now — genesis after silence in Durham; BudGanja link to já and legal.",
+      "simpleEs": "Canción Free (1970): está bien ahora — génesis tras silencio en Durham; vínculo BudGanja con já y legal.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-all-right-now.html"
     },
     {
       "id": "associacao-pacientes",

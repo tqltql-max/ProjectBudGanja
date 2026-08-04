@@ -39,6 +39,11 @@ const {
   poemKillingInTheNameEn,
   poemKillingInTheNameEs
 } = require('../lib/killing-in-the-name-inspecao-post.js');
+const {
+  poemAllRightNowPt,
+  poemAllRightNowEn,
+  poemAllRightNowEs
+} = require('../lib/all-right-now-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -193,6 +198,27 @@ const doc = {
       bodyEs: poemKillingInTheNameEs(),
       inspectionHref: '/posts/post-inspecao-arte-killing-in-the-name.html',
       tags: ['poesia', 'vida', 'rage', 'máquina', 'raiva', 'proibição']
+    },
+    {
+      id: 'all-right-now',
+      slug: 'all-right-now',
+      title: 'All Right Now',
+      titleEn: 'All Right Now',
+      titleEs: 'All Right Now',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja da Free — o agora depois do silêncio; ficar, já, e faça o melhor.',
+      teaserEn:
+        'BudGanja echo of Free — the now after silence; stay, already, and do your best.',
+      teaserEs:
+        'Eco BudGanja de Free — el ahora después del silencio; quedarse, ya, y haz lo mejor.',
+      body: poemAllRightNowPt(),
+      bodyEn: poemAllRightNowEn(),
+      bodyEs: poemAllRightNowEs(),
+      inspectionHref: '/posts/post-inspecao-arte-all-right-now.html',
+      tags: ['poesia', 'vida', 'free', 'agora', 'já', 'esperança']
     }
   ]
 };
