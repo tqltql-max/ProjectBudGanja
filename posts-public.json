@@ -2074,9 +2074,9 @@
     "title": "Inspeção: Interruptor — ligar, cortar e derivações",
     "titleEn": "Inspection: Interruptor — switch, cut and derivatives",
     "titleEs": "Inspección: Interruptor — encender, cortar y derivaciones",
-    "excerpt": "Palavras: «interruptor» (lat. *interrumpere*) — peça do circuito; par lab com ligar × desligar; derivações interromper/interrupção; Faça o melhor!",
-    "excerptEn": "Words: “interruptor” (Lat. *interrumpere*) — circuit device; lab pair with ligar × desligar; derivatives interromper/interrupção; Do your best!",
-    "excerptEs": "Palabras: «interruptor» (lat. *interrumpere*) — pieza del circuito; par lab con ligar × desligar; derivaciones interromper/interrupção; ¡Haz lo mejor!",
+    "excerpt": "Palavras: «interruptor» (lat. *interrumpere*) — peça do circuito; tríade com ligar × desligar e luz; Faça o melhor!",
+    "excerptEn": "Words: “interruptor” (Lat. *interrumpere*) — circuit device; triad with ligar × desligar and luz; Do your best!",
+    "excerptEs": "Palabras: «interruptor» (lat. *interrumpere*) — pieza del circuito; tríada con ligar × desligar y luz; ¡Haz lo mejor!",
     "hasBodyEn": true,
     "hasBodyEs": true,
     "slug": "inspecao-palavra-interruptor",
@@ -2087,7 +2087,7 @@
     "category": "inspecao",
     "series": "palavras-origem",
     "seriesOrder": 86,
-    "seriesLabel": "Interruptor · ligar × desligar"
+    "seriesLabel": "Interruptor · ligar · luz"
   },
   {
     "title": "Inspeção: Sempre — duração, hábito e Faça o melhor!",
@@ -2549,9 +2549,9 @@
     "title": "Inspeção: Ligar × Desligar — verbos do circuito",
     "titleEn": "Inspection: Ligar × Desligar — verbs of the circuit",
     "titleEs": "Inspección: Ligar × Desligar — verbos del circuito",
-    "excerpt": "Palavras: «ligar» × «desligar» (lat. *ligāre*) — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor!",
-    "excerptEn": "Words: “ligar” × “desligar” (Lat. *ligāre*) — circuit verbs; lab pair with interruptor (device × gesture); Do your best!",
-    "excerptEs": "Palabras: «ligar» × «desligar» (lat. *ligāre*) — verbos del circuito; par lab con interruptor (pieza × gesto); ¡Haz lo mejor!",
+    "excerpt": "Palavras: «ligar» × «desligar» (lat. *ligāre*) — verbos do circuito; tríade com interruptor e luz; Faça o melhor!",
+    "excerptEn": "Words: “ligar” × “desligar” (Lat. *ligāre*) — circuit verbs; triad with interruptor and luz; Do your best!",
+    "excerptEs": "Palabras: «ligar» × «desligar» (lat. *ligāre*) — verbos del circuito; tríada con interruptor y luz; ¡Haz lo mejor!",
     "hasBodyEn": true,
     "hasBodyEs": true,
     "slug": "inspecao-palavra-ligar-desligar",
@@ -2562,7 +2562,7 @@
     "category": "inspecao",
     "series": "palavras-origem",
     "seriesOrder": 113,
-    "seriesLabel": "Ligar × Desligar · interruptor"
+    "seriesLabel": "Ligar × Desligar · interruptor · luz"
   },
   {
     "title": "Inspeção: Papel de enrolar e tabaco — origem do papel e origem da planta",
@@ -2601,6 +2601,25 @@
     "series": "palavras-origem",
     "seriesOrder": 115,
     "seriesLabel": "Maçaneta · palavra"
+  },
+  {
+    "title": "Inspeção: Luz — efeito do circuito e claridade",
+    "titleEn": "Inspection: Luz — circuit effect and clarity",
+    "titleEs": "Inspección: Luz — efecto del circuito y claridad",
+    "excerpt": "Palavras: «luz» (lat. *lūx*) — claridade e efeito do clique; tríade com interruptor e ligar × desligar; cultivo; Faça o melhor!",
+    "excerptEn": "Words: “luz” (Lat. *lūx*) — clarity and click effect; triad with interruptor and ligar × desligar; grow; Do your best!",
+    "excerptEs": "Palabras: «luz» (lat. *lūx*) — claridad y efecto del clic; tríada con interruptor y ligar × desligar; cultivo; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-luz",
+    "url": "/posts/post-inspecao-palavra-luz.html",
+    "date": "2026-08-04T18:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-luz.html",
+    "coverImage": "/imagens/inspecoes/luz-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 116,
+    "seriesLabel": "Luz · interruptor · ligar"
   },
   {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",

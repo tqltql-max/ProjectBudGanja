@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:35:07.438Z",
+  "updatedAt": "2026-08-04T17:58:46.836Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1684,6 +1684,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-fogo.html"
+    },
+    {
+      "id": "luz",
+      "word": "luz",
+      "simple": "Lat. lux — claridade e efeito do clique; tríade com interruptor e ligar × desligar; cultivo; Faça o melhor com a luz certa.",
+      "simpleEn": "Lat. lux — clarity and click effect; triad with interruptor and ligar × desligar; grow; Do your best with the right light.",
+      "simpleEs": "Lat. lux — claridad y efecto del clic; tríada con interruptor y ligar × desligar; cultivo; Haz lo mejor con la luz cierta.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-luz.html"
     },
     {
       "id": "francisco-matos",

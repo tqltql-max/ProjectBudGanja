@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:35:53.913Z",
+  "updatedAt": "2026-08-04T17:58:46.832Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4156,9 +4156,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: interruptor (lat. interrumpere) — peça do circuito; par lab com ligar × desligar; interromper/interrupção; Faça o melhor!",
-      "whyEn": "Words: interruptor (Lat. interrumpere) — circuit device; lab pair with ligar × desligar; interromper/interrupção; Do your best!",
-      "whyEs": "Palabras: interruptor (lat. interrumpere) — pieza del circuito; par lab con ligar × desligar; interromper/interrupção; ¡Haz lo mejor!",
+      "why": "Palavras: interruptor (lat. interrumpere) — peça do circuito; tríade com ligar × desligar e luz; Faça o melhor!",
+      "whyEn": "Words: interruptor (Lat. interrumpere) — circuit device; triad with ligar × desligar and luz; Do your best!",
+      "whyEs": "Palabras: interruptor (lat. interrumpere) — pieza del circuito; tríada con ligar × desligar y luz; ¡Haz lo mejor!",
       "suggestedSlug": "inspecao-palavra-interruptor",
       "doneHref": "/posts/post-inspecao-palavra-interruptor.html",
       "seriesHint": "palavras-origem",
@@ -4166,6 +4166,7 @@
         "https://pt.wiktionary.org/wiki/interruptor",
         "https://pt.wiktionary.org/wiki/interromper",
         "/posts/post-inspecao-palavra-ligar-desligar.html",
+        "/posts/post-inspecao-palavra-luz.html",
         "/posts/post-inspecao-palavra-sinal.html",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-eletrizante.html",
@@ -4905,9 +4906,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: ligar × desligar (lat. ligare) — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor!",
-      "whyEn": "Words: ligar × desligar (Lat. ligare) — circuit verbs; lab pair with interruptor (device × gesture); Do your best!",
-      "whyEs": "Palabras: ligar × desligar (lat. ligare) — verbos del circuito; par lab con interruptor (pieza × gesto); ¡Haz lo mejor!",
+      "why": "Palavras: ligar × desligar (lat. ligare) — verbos do circuito; tríade com interruptor e luz; Faça o melhor!",
+      "whyEn": "Words: ligar × desligar (Lat. ligare) — circuit verbs; triad with interruptor and luz; Do your best!",
+      "whyEs": "Palabras: ligar × desligar (lat. ligare) — verbos del circuito; tríada con interruptor y luz; ¡Haz lo mejor!",
       "suggestedSlug": "inspecao-palavra-ligar-desligar",
       "doneHref": "/posts/post-inspecao-palavra-ligar-desligar.html",
       "seriesHint": "palavras-origem",
@@ -4915,6 +4916,7 @@
         "https://pt.wiktionary.org/wiki/ligar",
         "https://pt.wiktionary.org/wiki/desligar",
         "/posts/post-inspecao-palavra-interruptor.html",
+        "/posts/post-inspecao-palavra-luz.html",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-sinal.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
@@ -5033,6 +5035,30 @@
         "/posts/post-inspecao-figura-annie-leonard.html"
       ],
       "notes": "Cap. 13 — tipografia osricostramsorandascoisas → canónica; não panfleto de ódio."
+    },
+    {
+      "id": "palavra-luz",
+      "title": "Luz — efeito do circuito e claridade",
+      "titleEn": "Luz — circuit effect and clarity",
+      "titleEs": "Luz — efecto del circuito y claridad",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: luz (lat. lux) — claridade e efeito do clique; tríade interruptor × ligar/desligar; cultivo; Faça o melhor!",
+      "whyEn": "Words: luz (Lat. lux) — clarity and click effect; triad interruptor × ligar/desligar; grow; Do your best!",
+      "whyEs": "Palabras: luz (lat. lux) — claridad y efecto del clic; tríada interruptor × ligar/desligar; cultivo; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-luz",
+      "doneHref": "/posts/post-inspecao-palavra-luz.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/luz",
+        "https://en.wiktionary.org/wiki/lux#Latin",
+        "/posts/post-inspecao-palavra-interruptor.html",
+        "/posts/post-inspecao-palavra-ligar-desligar.html",
+        "/posts/post-inspecao-palavra-fogo.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 116 — tríade circuito: peça × verbo × efeito (luz)."
     }
   ]
 }
