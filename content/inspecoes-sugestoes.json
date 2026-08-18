@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T05:52:04.594Z",
+  "updatedAt": "2026-08-18T08:32:35.389Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5513,6 +5513,45 @@
         "https://www.youtube.com/watch?v=cjJLEYMzpjc"
       ],
       "notes": "Separado de Friends. Sitcom ≠ manual de conquista. Final = recepção."
+    },
+    {
+      "id": "canal-tamaraklink",
+      "title": "Tamara Klink — canal, Sardinha e família",
+      "titleEn": "Tamara Klink — channel, Sardinha and family",
+      "titleEs": "Tamara Klink — canal, Sardinha y familia",
+      "tipo": "canal",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canais: @TamaraKlink — catálogo; avó Ana Francesca nomeou o Sardinha; pai Amyr junto.",
+      "whyEn": "Channels: @TamaraKlink — 140 videos; distinct from the legacy sheet; hub /videos/?channel=tamara.",
+      "whyEs": "Canales: @TamaraKlink — 140 vídeos; distinta de la ficha de legado; hub /videos/?channel=tamara.",
+      "suggestedSlug": "inspecao-canal-tamaraklink",
+      "doneHref": "/posts/post-inspecao-canal-tamaraklink.html",
+      "seriesHint": "canal-tamaraklink",
+      "sources": [
+        "https://www.youtube.com/@TamaraKlink",
+        "/videos/?channel=tamara",
+        "/posts/post-inspecao-tamara-klink.html"
+      ],
+      "notes": "Pessoa ≠ canal. Indexar ≠ endosso. Lista integral na ficha do canal."
+    },
+    {
+      "id": "canal-amyrklink",
+      "title": "Amyr Klink — canal do pai, junto da Tamara",
+      "titleEn": "Amyr Klink — father’s channel, next to Tamara",
+      "titleEs": "Amyr Klink — canal del padre, junto a Tamara",
+      "tipo": "canal",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canais: @amyrklinkoficial — catálogo do pai; no hub junto da Tamara.",
+      "suggestedSlug": "inspecao-canal-amyrklink",
+      "doneHref": "/posts/post-inspecao-canal-amyrklink.html",
+      "seriesHint": "canal-amyrklink",
+      "sources": [
+        "https://www.youtube.com/@amyrklinkoficial",
+        "/videos/?channel=amyr",
+        "/posts/post-inspecao-amyr-klink.html"
+      ]
     }
   ]
 }

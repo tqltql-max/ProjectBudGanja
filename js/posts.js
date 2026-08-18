@@ -38,6 +38,8 @@ var SERIES_LABELS = {
   'canal-movrecam': 'Canal MovReCam',
   'canal-canabinall': 'Canal CANABinALL',
   'canal-disneyjr': 'Disney Jr. · Canais',
+  'canal-tamaraklink': 'Tamara Klink · Canais',
+  'canal-amyrklink': 'Amyr Klink · Canais',
   'canal-zangado': 'Zangado · Canais',
   'canal-vevo': 'VEVO · Canais',
   'verificacao-equipamento': 'Equipamentos',
