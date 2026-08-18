@@ -19,6 +19,25 @@
     "seriesLabel": "Bom dia, Inverno · livro"
   },
   {
+    "title": "Inspeção: Rockstar Games — estúdio das cidades de ecrã",
+    "titleEn": "Inspection: Rockstar Games — studio of on-screen cities",
+    "titleEs": "Inspección: Rockstar Games — estudio de las ciudades de pantalla",
+    "excerpt": "Estúdio/rótulo Rockstar Games (Take-Two, NY, 1998): rede de studios, GTA/Red Dead, RAGE — distinto do Caderno GTA 6. Ficção de crime ≠ manual de crime.",
+    "excerptEn": "Rockstar Games label/studio (Take-Two, NYC, 1998): studio network, GTA/Red Dead, RAGE — distinct from GTA 6 notebook. Crime fiction ≠ crime manual.",
+    "excerptEs": "Sello/estudio Rockstar Games (Take-Two, NY, 1998): red de studios, GTA/Red Dead, RAGE — distinto del cuaderno GTA 6. Ficción de crimen ≠ manual de crimen.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-estudio-rockstar",
+    "url": "/posts/post-inspecao-estudio-rockstar.html",
+    "date": "2026-08-18T21:00:00.000Z",
+    "filename": "posts/post-inspecao-estudio-rockstar.html",
+    "coverImage": "/imagens/inspecoes/rockstar-estudio-cover.jpg",
+    "category": "inspecao",
+    "series": "cadernos-jogo",
+    "seriesOrder": 0,
+    "seriesLabel": "Rockstar Games · estúdio"
+  },
+  {
     "title": "Caderno de jogo 1: GTA 6 — a cidade anunciada",
     "titleEn": "Game notebook 1: GTA 6 — the announced city",
     "titleEs": "Cuaderno de juego 1: GTA 6 — la ciudad anunciada",

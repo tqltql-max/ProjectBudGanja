@@ -204,7 +204,7 @@ function resolveInspecaoTipo(post) {
   ) {
     return 'arte';
   }
-  if (series === 'cadernos-jogo' || /inspecao-jogo-/i.test(slug)) {
+  if (series === 'cadernos-jogo' || /inspecao-jogo-|inspecao-estudio-/i.test(slug)) {
     return 'jogo';
   }
   if (

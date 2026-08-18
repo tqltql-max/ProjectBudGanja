@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T19:22:37.558Z",
+  "updatedAt": "2026-08-18T19:30:07.385Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5600,6 +5600,30 @@
         "/videos/?channel=paulinho"
       ],
       "notes": "Pessoa ≠ canal. Ficção de jogo ≠ manual de crime. Modder = raiz 2015."
+    },
+    {
+      "id": "estudio-rockstar",
+      "title": "Rockstar Games — estúdio das cidades de ecrã",
+      "titleEn": "Rockstar Games — studio of on-screen cities",
+      "titleEs": "Rockstar Games — estudio de las ciudades de pantalla",
+      "tipo": "jogo",
+      "priority": 2,
+      "status": "feita",
+      "why": "Estúdio/rótulo Take-Two (NY, 1998): rede de studios, GTA/Red Dead — distinto do Caderno GTA 6.",
+      "whyEn": "Take-Two label/studio (NYC, 1998): studio network, GTA/Red Dead — distinct from GTA 6 notebook.",
+      "whyEs": "Sello/estudio Take-Two (NY, 1998): red de studios, GTA/Red Dead — distinto del cuaderno GTA 6.",
+      "suggestedSlug": "inspecao-estudio-rockstar",
+      "doneHref": "/posts/post-inspecao-estudio-rockstar.html",
+      "seriesHint": "cadernos-jogo",
+      "sources": [
+        "https://www.rockstargames.com/",
+        "https://pt.wikipedia.org/wiki/Rockstar_Games",
+        "https://en.wikipedia.org/wiki/Rockstar_Games",
+        "/posts/post-inspecao-jogo-gta6.html",
+        "/posts/post-inspecao-canal-paulinho.html",
+        "/posts/post-inspecao-canal-zangado.html"
+      ],
+      "notes": "Estúdio ≠ título. Ficção de crime ≠ manual de crime."
     }
   ]
 }
