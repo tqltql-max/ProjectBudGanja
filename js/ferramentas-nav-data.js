@@ -73,15 +73,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Manual: infusão, decoção, proporções e segurança no preparo caseiro."
             },
             {
-              "label": "Receitas de plantas",
-              "tileLabel": "Receitas de plantas",
-              "href": "/posts/post-inspecao-guia-receitas-plantas.html",
-              "icon": "🌿",
-              "slug": "guia-receitas-plantas",
-              "featured": true,
-              "description": "Lote 1: oito tisanas de ofício com elos ao catálogo Plantas."
-            },
-            {
               "label": "Clonadoras",
               "tileLabel": "Clonadoras",
               "icon": "🌱",
@@ -199,6 +190,23 @@ window.__BIBLIOTECA_NAV__ = {
               "slug": "inspecoes",
               "featured": true,
               "description": "Canais, equipamentos, insumos e formação."
+            },
+            {
+              "label": "Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo",
+              "tileLabel": "Divulgação: Bom dia, Inverno — …",
+              "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-bom-dia-inverno",
+              "description": "Bom dia, Inverno como mudinha da Vida: invernagem no gelo, léxico, Artes irmãs (Águas / Lágrimas) e Legado Klink.",
+              "featured": true
+            },
+            {
+              "label": "Caderno de jogo 1: GTA 6 — a cidade anunciada",
+              "tileLabel": "Caderno de jogo 1: GTA 6 — a ci…",
+              "href": "/posts/post-inspecao-jogo-gta6.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-jogo-gta6",
+              "description": "Primeiro caderno de jogo: Grand Theft Auto VI ainda em pré-estreia (19 nov. 2026) — Vice City / Leonida, Lucia e Jason, hype e método. Sem walkthrough."
             },
             {
               "label": "Inspeção: Endocanabinoidoma — mapa neurocientífico do ofício",
@@ -623,6 +631,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-maracuja-fruta",
               "description": "Relatório educacional de Maracujá (fruta) (*Passiflora edulis Sims): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: canal Zangado — crítica gamer, sagas e primeira meia hora",
+              "tileLabel": "Inspeção: canal Zangado — críti…",
+              "href": "/posts/post-inspecao-canal-zangado.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-canal-zangado",
+              "description": "Canais: Zangado (@zangadoreview) — crítico gamer BR desde 2006; sagas, vale ou não vale a pena e primeira meia hora; catálogo na página Games."
             },
             {
               "label": "Inspeção: Tristeza — a palavra azul que também cuida",
@@ -1318,7 +1334,23 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-sol.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-sol",
-              "description": "Palavras: «sol» (lat. *sōl*) — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Faça o melhor!"
+              "description": "Palavras: «sol» (lat. *sōl*) — astro e luz natural; par com noite; elo luz; contraste interruptor; ≠ solitário; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Noite — ciclo, escuro e fotoperíodo",
+              "tileLabel": "Inspeção: Noite — ciclo, escuro…",
+              "href": "/posts/post-inspecao-palavra-noite.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-noite",
+              "description": "Palavras: «noite» (lat. *nox*) — fase escura do ciclo; par com sol; elos luz e interruptor; cultivo; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Sozinho — sozna, sozinha e ofício",
+              "tileLabel": "Inspeção: Sozinho — sozna, sozi…",
+              "href": "/posts/post-inspecao-palavra-sozna.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-sozna",
+              "description": "Palavras: **sozinho** (lat. *sōlus* + *-zinho*) — par **sozinha**; forma oral **sozna**; ≠ solitário; Faça o melhor!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
@@ -1567,14 +1599,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-expressao-vinganca-mata-alma-envenena",
               "description": "Expressões: «A vingança nunca é plena, mata a alma e a envenena» — ditado popular via Seu Madruga (*Chaves*); o rancor como veneno que o próprio sujeito ingere."
-            },
-            {
-              "label": "Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo",
-              "tileLabel": "Divulgação: Bom dia, Inverno — …",
-              "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-arte-bom-dia-inverno",
-              "description": "Bom dia, Inverno como mudinha da Vida: invernagem no gelo, léxico, Artes irmãs (Águas / Lágrimas) e Legado Klink."
             },
             {
               "label": "Inspeção: Balde — volume, transporte e o gesto de regar",
@@ -2458,6 +2482,15 @@ window.__BIBLIOTECA_NAV__ = {
               "slug": "videos",
               "featured": true,
               "description": "Canal @InspetorBudGanja."
+            },
+            {
+              "label": "Games",
+              "tileLabel": "Games",
+              "href": "/jogos/",
+              "icon": "🎮",
+              "slug": "games",
+              "featured": true,
+              "description": "Cadernos de jogo, Zangado e Paulinho o LOKO."
             },
             {
               "label": "Cultivo de Cannabis O Inicio",

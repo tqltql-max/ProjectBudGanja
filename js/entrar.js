@@ -290,7 +290,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   if (!config.googleEnabled || !config.googleClientId) {
-    showNotice('Login com Google não configurado no servidor. Pode usar a conta local acima.');
+    const googleLabel = document.getElementById('entrar-google-label');
+    if (googleLabel) {
+      googleLabel.textContent = 'Google em breve — use e-mail e senha';
+    }
     return;
   }
 

@@ -1,11 +1,11 @@
 {
   "siteName": "Inspetor BudGanja",
-  "siteTagline": "Laboratório de fitoterapia brasileira",
-  "footerText": "© 2026 Inspetor BudGanja. Conteúdo educacional sobre plantas medicinais do Brasil.",
-  "privacyUpdated": "1 de agosto de 2026",
-  "ogImage": "/imagens/og-default.jpg",
-  "contactEmail": "tql.tql@gmail.com",
-  "youtubeChannelUrl": "/videos/",
+  "siteTagline": "Laboratório de cultivo",
+  "footerText": "© 2026 Inspetor BudGanja. Conteúdo educacional.",
+  "privacyUpdated": "26 de junho de 2026",
+  "ogImage": "/imagens/background-hero.png",
+  "contactEmail": "inspetorbudganja@gmail.com",
+  "youtubeChannelUrl": "https://www.youtube.com/@InspetorBudGanja",
   "youtubeChannelLabel": "Canal @InspetorBudGanja",
   "youtubeJardimUrl": "",
   "youtubeJardimLabel": "",
@@ -85,15 +85,6 @@
                   "slug": "guia-preparo-cha-plantas",
                   "featured": true,
                   "description": "Manual: infusão, decoção, proporções e segurança no preparo caseiro."
-                },
-                {
-                  "label": "Receitas de plantas",
-                  "tileLabel": "Receitas de plantas",
-                  "href": "/posts/post-inspecao-guia-receitas-plantas.html",
-                  "icon": "🌿",
-                  "slug": "guia-receitas-plantas",
-                  "featured": true,
-                  "description": "Lote 1: oito tisanas de ofício com elos ao catálogo Plantas."
                 },
                 {
                   "label": "Clonadoras",
@@ -213,6 +204,23 @@
                   "slug": "inspecoes",
                   "featured": true,
                   "description": "Canais, equipamentos, insumos e formação."
+                },
+                {
+                  "label": "Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo",
+                  "tileLabel": "Divulgação: Bom dia, Inverno — …",
+                  "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-bom-dia-inverno",
+                  "description": "Bom dia, Inverno como mudinha da Vida: invernagem no gelo, léxico, Artes irmãs (Águas / Lágrimas) e Legado Klink.",
+                  "featured": true
+                },
+                {
+                  "label": "Caderno de jogo 1: GTA 6 — a cidade anunciada",
+                  "tileLabel": "Caderno de jogo 1: GTA 6 — a ci…",
+                  "href": "/posts/post-inspecao-jogo-gta6.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-jogo-gta6",
+                  "description": "Primeiro caderno de jogo: Grand Theft Auto VI ainda em pré-estreia (19 nov. 2026) — Vice City / Leonida, Lucia e Jason, hype e método. Sem walkthrough."
                 },
                 {
                   "label": "Inspeção: Endocanabinoidoma — mapa neurocientífico do ofício",
@@ -637,6 +645,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-maracuja-fruta",
                   "description": "Relatório educacional de Maracujá (fruta) (*Passiflora edulis Sims): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: canal Zangado — crítica gamer, sagas e primeira meia hora",
+                  "tileLabel": "Inspeção: canal Zangado — críti…",
+                  "href": "/posts/post-inspecao-canal-zangado.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-canal-zangado",
+                  "description": "Canais: Zangado (@zangadoreview) — crítico gamer BR desde 2006; sagas, vale ou não vale a pena e primeira meia hora; catálogo na página Games."
                 },
                 {
                   "label": "Inspeção: Tristeza — a palavra azul que também cuida",
@@ -1332,7 +1348,23 @@
                   "href": "/posts/post-inspecao-palavra-sol.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-sol",
-                  "description": "Palavras: «sol» (lat. *sōl*) — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Faça o melhor!"
+                  "description": "Palavras: «sol» (lat. *sōl*) — astro e luz natural; par com noite; elo luz; contraste interruptor; ≠ solitário; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Noite — ciclo, escuro e fotoperíodo",
+                  "tileLabel": "Inspeção: Noite — ciclo, escuro…",
+                  "href": "/posts/post-inspecao-palavra-noite.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-noite",
+                  "description": "Palavras: «noite» (lat. *nox*) — fase escura do ciclo; par com sol; elos luz e interruptor; cultivo; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Sozinho — sozna, sozinha e ofício",
+                  "tileLabel": "Inspeção: Sozinho — sozna, sozi…",
+                  "href": "/posts/post-inspecao-palavra-sozna.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-sozna",
+                  "description": "Palavras: **sozinho** (lat. *sōlus* + *-zinho*) — par **sozinha**; forma oral **sozna**; ≠ solitário; Faça o melhor!"
                 },
                 {
                   "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
@@ -1581,14 +1613,6 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-expressao-vinganca-mata-alma-envenena",
                   "description": "Expressões: «A vingança nunca é plena, mata a alma e a envenena» — ditado popular via Seu Madruga (*Chaves*); o rancor como veneno que o próprio sujeito ingere."
-                },
-                {
-                  "label": "Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo",
-                  "tileLabel": "Divulgação: Bom dia, Inverno — …",
-                  "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-arte-bom-dia-inverno",
-                  "description": "Bom dia, Inverno como mudinha da Vida: invernagem no gelo, léxico, Artes irmãs (Águas / Lágrimas) e Legado Klink."
                 },
                 {
                   "label": "Inspeção: Balde — volume, transporte e o gesto de regar",
@@ -2474,6 +2498,15 @@
                   "description": "Canal @InspetorBudGanja."
                 },
                 {
+                  "label": "Games",
+                  "tileLabel": "Games",
+                  "href": "/jogos/",
+                  "icon": "🎮",
+                  "slug": "games",
+                  "featured": true,
+                  "description": "Cadernos de jogo, Zangado e Paulinho o LOKO."
+                },
+                {
                   "label": "Cultivo de Cannabis O Inicio",
                   "tileLabel": "Cultivo de Cannabis O Inicio",
                   "href": "/videos/#38uUEL1B-v4",
@@ -2636,12 +2669,8 @@
       "href": "/"
     },
     {
-      "label": "Plantas",
-      "href": "/plantas/"
-    },
-    {
-      "label": "Curso UNIFESP",
-      "href": "/biblioteca/unifesp/"
+      "label": "Guia de Cultivo",
+      "href": "/guia/cultivo-basico.html"
     },
     {
       "label": "Pesquisas",
@@ -2652,32 +2681,20 @@
       "href": "/biblioteca/inspecoes/"
     },
     {
-      "label": "Vídeos",
-      "href": "/videos/"
-    },
-    {
       "label": "Equipamentos",
       "href": "/equipamentos/"
     },
     {
-      "label": "Ferramentas",
+      "label": "Calculadoras",
       "href": "/calculadoras/"
     },
     {
-      "label": "Diário de pesquisas",
-      "href": "/cultivo/"
+      "label": "Luxímetro",
+      "href": "/calculadoras/luximetro.html"
     },
     {
-      "label": "Comunidade",
-      "href": "/comunidade/"
-    },
-    {
-      "label": "BudGanja Radio",
-      "href": "/radio/"
-    },
-    {
-      "label": "Sorteios",
-      "href": "/sorteios/"
+      "label": "Últimos vídeos",
+      "href": "/videos/"
     }
   ],
   "footerGroups": [
@@ -2685,24 +2702,20 @@
       "title": "Biblioteca",
       "links": [
         {
-          "label": "Plantas",
-          "href": "/plantas/"
+          "label": "Guia de Cultivo",
+          "href": "/guia/cultivo-basico.html"
         },
         {
-          "label": "Curso UNIFESP",
-          "href": "/biblioteca/unifesp/"
-        },
-        {
-          "label": "Inspeções",
-          "href": "/biblioteca/inspecoes/"
+          "label": "Últimos vídeos",
+          "href": "/videos/"
         },
         {
           "label": "Pesquisas",
           "href": "/biblioteca/pesquisas/"
         },
         {
-          "label": "Vídeos",
-          "href": "/videos/"
+          "label": "Inspeções",
+          "href": "/biblioteca/inspecoes/"
         },
         {
           "label": "Equipamentos",
@@ -2714,7 +2727,7 @@
       "title": "Ferramentas",
       "links": [
         {
-          "label": "Ferramentas",
+          "label": "Calculadoras",
           "href": "/calculadoras/"
         },
         {
@@ -2722,29 +2735,12 @@
           "href": "/calculadoras/luximetro.html"
         },
         {
-          "label": "Solo",
-          "href": "/calculadoras/super-solo.html"
+          "label": "Clonadora de 6 estacas",
+          "href": "/equipamentos/clonadora-6-estacas.html"
         },
         {
-          "label": "Diário de pesquisas",
-          "href": "/cultivo/"
-        }
-      ]
-    },
-    {
-      "title": "Comunidade",
-      "links": [
-        {
-          "label": "Feed Vivo",
-          "href": "/comunidade/"
-        },
-        {
-          "label": "BudGanja Radio",
-          "href": "/radio/"
-        },
-        {
-          "label": "Sorteios",
-          "href": "/sorteios/"
+          "label": "Clonadora de 12 estacas",
+          "href": "/equipamentos/clonadora-12-estacas.html"
         }
       ]
     },
@@ -2758,6 +2754,10 @@
         {
           "label": "Contato",
           "href": "/info/contato.html"
+        },
+        {
+          "label": "Sorteios",
+          "href": "/sorteios/"
         },
         {
           "label": "Privacidade",

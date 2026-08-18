@@ -1,0 +1,376 @@
+/* Broto — bichinho-planta virtual (página Games) */
+
+.jogos-page .jogos-broto {
+    margin: 8px 0 0;
+}
+
+.broto-app {
+    --broto-leaf: #6db33f;
+    --broto-leaf-dark: #3d7a22;
+    --broto-skin: #8fd35a;
+    --broto-skin-deep: #5aa332;
+    --broto-pot: #c47848;
+    --broto-pot-rim: #e0a06a;
+    max-width: 420px;
+    margin: 14px auto 0;
+    padding: 14px 14px 16px;
+    border-radius: var(--radius-xl);
+    background:
+        linear-gradient(180deg, rgba(18, 28, 14, 0.92) 0%, rgba(12, 14, 10, 0.96) 100%);
+    border: 1px solid rgba(212, 175, 55, 0.28);
+    box-shadow: var(--shadow-glow);
+}
+
+.broto-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 12px;
+    margin-bottom: 10px;
+}
+
+.broto-name {
+    width: min(12ch, 46vw);
+    border: 0;
+    border-bottom: 1px dashed rgba(240, 208, 96, 0.45);
+    background: transparent;
+    color: var(--color-accent-light);
+    font: inherit;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.02em;
+    padding: 0 2px 2px;
+}
+
+.broto-name:focus {
+    outline: none;
+    border-bottom-color: var(--color-accent);
+}
+
+.broto-stage-label,
+.broto-age {
+    margin: 0;
+    font-size: 0.78rem;
+    color: var(--color-text-soft);
+}
+
+.broto-stage-label {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+.broto-room {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    border-radius: 18px;
+    background:
+        linear-gradient(180deg, #6ec8ff 0%, #bfe7ff 38%, #efe4b8 62%, #7a5a32 63%, #4a341c 100%);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="light"] .broto-room {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.broto-app[data-mood="sleep"] .broto-room {
+    background:
+        linear-gradient(180deg, #1a2340 0%, #3a3f6a 40%, #5a4060 62%, #3a2814 63%, #24180e 100%);
+}
+
+.broto-window {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    width: 58px;
+    height: 48px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #fff6c2, #ffd36a);
+    box-shadow: 0 0 24px rgba(255, 220, 110, 0.55);
+    border: 3px solid #d8c48a;
+}
+
+.broto-app[data-mood="sleep"] .broto-window {
+    background: linear-gradient(180deg, #dce7ff, #8ea2d8);
+    box-shadow: 0 0 16px rgba(180, 200, 255, 0.35);
+}
+
+.broto-speech {
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    max-width: 62%;
+    margin: 0;
+    padding: 8px 12px;
+    border-radius: 14px 14px 14px 4px;
+    background: #fffdf4;
+    color: #2a2214;
+    font-size: 0.86rem;
+    font-weight: 600;
+    line-height: 1.25;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    z-index: 2;
+}
+
+.broto-pet {
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    width: 210px;
+    height: 250px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.broto-pet:focus-visible {
+    outline: var(--focus-ring);
+    outline-offset: 4px;
+    border-radius: 20px;
+}
+
+.broto-svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.broto-body-wrap,
+.broto-plant {
+    transform-origin: 100px 190px;
+    animation: broto-idle 2.6s ease-in-out infinite;
+}
+
+.broto-app[data-mood="sad"] .broto-body-wrap,
+.broto-app[data-mood="sad"] .broto-plant,
+.broto-app[data-mood="thirsty"] .broto-body-wrap {
+    animation-duration: 4.2s;
+}
+
+.broto-app[data-mood="sleep"] .broto-body-wrap,
+.broto-app[data-mood="sleep"] .broto-plant {
+    animation: none;
+}
+
+.broto-app.is-petting .broto-body-wrap,
+.broto-app.is-petting .broto-plant {
+    animation: broto-wiggle 0.45s ease;
+}
+
+.broto-leaf {
+    fill: var(--broto-leaf);
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.broto-stem {
+    fill: none;
+    stroke: var(--broto-leaf-dark);
+    stroke-width: 5;
+    stroke-linecap: round;
+}
+
+.broto-body {
+    fill: var(--broto-skin);
+}
+
+.broto-belly {
+    fill: rgba(255, 255, 255, 0.28);
+}
+
+.broto-eye {
+    fill: #1c1a16;
+}
+
+.broto-shine {
+    fill: #fff;
+}
+
+.broto-mouth {
+    fill: none;
+    stroke: #3a2a18;
+    stroke-width: 3.5;
+    stroke-linecap: round;
+}
+
+.broto-blush {
+    fill: #f09aa0;
+    opacity: 0.55;
+}
+
+.broto-shadow {
+    fill: rgba(40, 24, 8, 0.28);
+}
+
+.broto-pot path {
+    fill: var(--broto-pot);
+}
+
+.broto-pot rect {
+    fill: var(--broto-pot-rim);
+}
+
+.broto-app[data-stage="seed"] .broto-leaf {
+    transform-origin: 100px 100px;
+    transform: scale(0.35);
+}
+
+.broto-app[data-stage="sprout"] .broto-leaf--l {
+    transform: translate(6px, 8px) scale(0.72);
+}
+
+.broto-app[data-stage="sprout"] .broto-leaf--r {
+    transform: translate(-6px, 8px) scale(0.72);
+}
+
+.broto-app[data-stage="leaf"] .broto-leaf--l {
+    transform: translate(-4px, -6px) scale(1.12);
+}
+
+.broto-app[data-stage="leaf"] .broto-leaf--r {
+    transform: translate(4px, -6px) scale(1.12);
+}
+
+.broto-app[data-stage="tree"] .broto-leaf--l {
+    transform: translate(-8px, -14px) scale(1.28);
+}
+
+.broto-app[data-stage="tree"] .broto-leaf--r {
+    transform: translate(8px, -14px) scale(1.28);
+}
+
+
+.broto-app[data-mood="sleep"] .broto-eye {
+    ry: 2;
+}
+
+.broto-app[data-mood="sleep"] .broto-shine,
+.broto-app[data-mood="sleep"] .broto-blush {
+    opacity: 0;
+}
+
+.broto-app[data-mood="happy"] .broto-blush {
+    opacity: 0.7;
+}
+
+.broto-app[data-mood="dirty"] .broto-body {
+    fill: #7aa84a;
+}
+
+.broto-app[data-mood="thirsty"] .broto-leaf {
+    fill: #b8c45a;
+}
+
+.broto-app[data-mood="sad"] .broto-body-wrap {
+    transform: translateY(8px);
+}
+
+@keyframes broto-idle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+@keyframes broto-wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-7deg); }
+    75% { transform: rotate(7deg); }
+}
+
+.broto-playfield {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+}
+
+.broto-drop {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #fff6b0, #f0c030 55%, #c98a12);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    animation: broto-fall 2.1s linear forwards;
+}
+
+@keyframes broto-fall {
+    from { transform: translateY(-10px); }
+    to { transform: translateY(250px); }
+}
+
+.broto-stats {
+    list-style: none;
+    margin: 14px 0 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.broto-stats li {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.broto-bar {
+    display: block;
+    height: 10px;
+    border-radius: 99px;
+    background: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+}
+
+.broto-bar i {
+    display: block;
+    width: 0;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #6db33f, #d4af37);
+    transition: width 0.35s ease;
+}
+
+.broto-stats li.is-low .broto-bar i {
+    background: linear-gradient(90deg, #e74c3c, #f39c12);
+}
+
+.broto-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.broto-actions .botao {
+    min-height: 42px;
+}
+
+.broto-actions .botao[data-action="sleep"] {
+    grid-column: 1 / -1;
+}
+
+.broto-actions .botao:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.broto-hint {
+    min-height: 1.3em;
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--color-text-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .broto-body-wrap,
+    .broto-plant,
+    .broto-drop {
+        animation: none !important;
+    }
+}

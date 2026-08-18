@@ -5,6 +5,7 @@
   <url><loc>https://inspetorbudganja.com.br/guia/cultivo-basico.html</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
   <url><loc>https://inspetorbudganja.com.br/guia/palavras.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://inspetorbudganja.com.br/videos/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/jogos/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://inspetorbudganja.com.br/biblioteca/pesquisas/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://inspetorbudganja.com.br/biblioteca/inspecoes/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://inspetorbudganja.com.br/biblioteca/unifesp/</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
@@ -28,6 +29,10 @@
   <url><loc>https://inspetorbudganja.com.br/equipamentos/manual-clonadora.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/equipamentos/manual-hidrocloradora.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/biblioteca/pesquisas/substratos.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-canal-zangado.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-jogo-gta6.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-sozna.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-noite.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-arte-all-right-now.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-sol.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-luz.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T18:33:35.802Z",
+  "updatedAt": "2026-08-18T02:15:46.279Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5134,6 +5134,72 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 118 — par sol × noite; fotoperíodo; circuito artificial."
+    },
+    {
+      "id": "palavra-sozna",
+      "title": "Sozinho — sozna, sozinha e ofício",
+      "titleEn": "Sozinho — sozna, sozinha and craft",
+      "titleEs": "Sozinho — sozna, sozinha y oficio",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: sozinho (lat. solus + -zinho) — par sozinha; forma oral sozna; ≠ solitário; Faça o melhor!",
+      "whyEn": "Words: sozinho (Lat. solus + -zinho) — pair sozinha; oral sozna; ≠ solitário; Do your best!",
+      "whyEs": "Palabras: sozinho (lat. solus + -zinho) — par sozinha; oral sozna; ≠ solitário; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-sozna",
+      "doneHref": "/posts/post-inspecao-palavra-sozna.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/sozinho",
+        "https://pt.wiktionary.org/wiki/s%C3%B3",
+        "/posts/post-inspecao-palavra-solitario.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 119 — lemma sozinho; par sozinha; forma oral sozna."
+    },
+    {
+      "id": "jogo-gta6-caderno-1",
+      "title": "GTA 6 — caderno 1, a cidade anunciada",
+      "titleEn": "GTA 6 — notebook 1, the announced city",
+      "titleEs": "GTA 6 — cuaderno 1, la ciudad anunciada",
+      "tipo": "jogo",
+      "priority": 2,
+      "status": "feita",
+      "why": "Caderno de jogo 1: GTA 6 pré-estreia (19 nov. 2026) — Vice City / Leonida, Lucia e Jason; sem walkthrough.",
+      "whyEn": "Game notebook 1: GTA 6 pre-release (19 Nov 2026) — Vice City / Leonida, Lucia and Jason; no walkthrough.",
+      "whyEs": "Cuaderno 1: GTA 6 preestreno (19 nov. 2026) — Vice City / Leonida, Lucia y Jason; sin walkthrough.",
+      "suggestedSlug": "inspecao-jogo-gta6",
+      "doneHref": "/posts/post-inspecao-jogo-gta6.html",
+      "seriesHint": "cadernos-jogo",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Grand_Theft_Auto_VI",
+        "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI",
+        "https://www.rockstargames.com/VI",
+        "https://www.youtube.com/watch?v=QdBZYXl_BXg"
+      ],
+      "notes": "Cap. 1 — primeiro caderno da série."
+    },
+    {
+      "id": "canal-zangado",
+      "title": "Zangado — crítica gamer, sagas e primeira meia hora",
+      "titleEn": "Zangado — game critique, sagas and first half hour",
+      "titleEs": "Zangado — crítica gamer, sagas y primera media hora",
+      "tipo": "canal",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canais: @zangadoreview — crítico gamer BR; sagas / vale a pena / meia hora; página Games.",
+      "whyEn": "Channels: @zangadoreview — BR game critic; sagas / worth playing / half hour; Games page.",
+      "whyEs": "Canales: @zangadoreview — crítico gamer BR; sagas / vale la pena / media hora; página Games.",
+      "suggestedSlug": "inspecao-canal-zangado",
+      "doneHref": "/posts/post-inspecao-canal-zangado.html",
+      "seriesHint": "canal-zangado",
+      "sources": [
+        "https://www.youtube.com/@zangadoreview",
+        "https://www.uol.com.br/start/listas/e-ae-10-fatos-sobre-zangado-um-dos-maiores-youtubers-do-brasil.htm",
+        "/jogos/?canal=zangado",
+        "/videos/?channel=zangado"
+      ],
+      "notes": "Hub /jogos/?canal=zangado · formatos de mérito no catálogo."
     }
   ]
 }

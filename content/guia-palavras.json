@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T18:33:35.806Z",
+  "updatedAt": "2026-08-18T00:17:36.841Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2574,6 +2574,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-medo.html"
+    },
+    {
+      "id": "sozinho",
+      "word": "sozinho",
+      "simple": "Lat. sōlus + -zinho — estado só (masc.); par sozinha; forma oral sozna; ≠ solitário; Faça o melhor sem vergonha.",
+      "simpleEn": "Lat. sōlus + -zinho — alone (masc.); pair sozinha; oral sozna; ≠ solitário; Do your best without shame.",
+      "simpleEs": "Lat. sōlus + -zinho — solo (masc.); par sozinha; oral sozna; ≠ solitário; Haz lo mejor sin vergüenza.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sozna.html"
+    },
+    {
+      "id": "sozna",
+      "word": "sozna",
+      "simple": "Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — estado só; ≠ solitário; Faça o melhor sem vergonha.",
+      "simpleEn": "Oral form of sozinho / sozinha (Lat. sōlus + -zinho/-zinha) — alone; ≠ solitário; Do your best without shame.",
+      "simpleEs": "Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — solo/sola; ≠ solitário; Haz lo mejor sin vergüenza.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sozna.html"
     },
     {
       "id": "melissa",

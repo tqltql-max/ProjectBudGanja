@@ -106,6 +106,18 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('build:paulinho', 'build-paulinho-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:paulinho:', e.message);
+  }
+
+  try {
+    runStep('build:zangado', 'build-zangado-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:zangado:', e.message);
+  }
+
+  try {
     runStep('build:videos-hub', 'build-videos-hub.js');
   } catch (e) {
     console.warn('Aviso build:videos-hub:', e.message);

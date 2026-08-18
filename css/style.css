@@ -9,6 +9,7 @@
 @import url("pages/home.css");
 @import url("pages/plantas.css");
 @import url("pages/animais.css");
+@import url("pages/jogos-broto.css");
 @import url("luximetro.css");
 @import url("learn-translate.css");
 
@@ -10247,6 +10248,28 @@ html[data-theme="light"] .header-group-divider {
 
 .videos-channel-section:last-child {
     margin-bottom: 0;
+}
+
+.jogos-page .jogos-cadernos,
+.jogos-page .jogos-paulinho,
+.jogos-page .jogos-canais {
+    margin: 28px 0 0;
+}
+
+.jogos-page .jogos-channel-head {
+    margin-top: 8px;
+}
+
+.jogos-page .jogos-creator-chips {
+    margin-bottom: 4px;
+}
+
+.jogos-page .inspecoes-hub-section-desc a + a {
+    margin-left: 12px;
+}
+
+.jogos-page .jogos-cadernos .inspecoes-list {
+    margin-top: 12px;
 }
 
 .videos-channel-section-head {

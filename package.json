@@ -44,6 +44,8 @@
     "build:movrecam": "node scripts/build-movrecam-catalog.js",
     "build:canabinall": "node scripts/build-canabinall-catalog.js",
     "build:disneyjr": "node scripts/build-disneyjr-catalog.js",
+    "build:paulinho": "node scripts/build-paulinho-catalog.js",
+    "build:zangado": "node scripts/build-zangado-catalog.js",
     "build:william-davis": "node scripts/build-william-davis-catalog.js",
     "fetch:xiv-transcripts": "node scripts/fetch-xiv-transcripts.js",
     "build:xiv-livro": "node scripts/build-xiv-livro.js"

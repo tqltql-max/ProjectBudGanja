@@ -61,3 +61,6 @@ scripts/tmp-*/
 
 # Fontes de imagem temporárias
 imagens/**/_src/
+
+# Local Netlify folder
+.netlify

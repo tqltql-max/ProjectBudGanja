@@ -126,5 +126,16 @@ CALCULADORAS.forEach((c) => {
   assert('URL ' + c.slug, url.startsWith('/calculadoras/') && url.endsWith('.html'));
 });
 
+const { categorizeTitle: catZangado } = require('../lib/zangado-categories.js');
+assert('zangado saga', catZangado('A SAGA DE POKEMON') === 'sagas');
+assert(
+  'zangado vale a pena',
+  catZangado("Assassin's Creed Black Flag Resynced : Vale ou Não a Pena Jogar!?") === 'vale-a-pena'
+);
+assert('zangado meia hora', catZangado('Beast of Reincarnation : A Primeira Meia Hora (PC)[4K]') === 'primeira-meia-hora');
+assert('zangado especial', catZangado('Especial Devilman : Go Nagai, Inspirações, Mangás, Games e Mais.') === 'especiais' || catZangado('Especial Devilman : Go Nagai, Inspirações, Mangás, Games e Mais.') === 'nerd-extra');
+assert('zangado nao vale', catZangado('MindsEye: NOT Worth Playing!') === 'nao-vale');
+assert('zangado bate-papo', catZangado('BATE PAPO COM O TIO ZANGADO!!! #41') === 'bate-papo');
+
 console.log('\n=== Resultado: ' + passed + ' OK, ' + failed + ' falhas ===');
 process.exit(failed ? 1 : 0);

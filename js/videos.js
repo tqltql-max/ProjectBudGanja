@@ -57,6 +57,13 @@
     disneyjrbr: 'disneyjr',
     'disney-jr-brasil': 'disneyjr',
     desenhos: 'disneyjr',
+    paulinho: 'paulinho',
+    'paulinho-loko': 'paulinho',
+    paulinholoko: 'paulinho',
+    zangado: 'zangado',
+    zangadoreview: 'zangado',
+    'canal-zangado': 'zangado',
+    'tio-zangado': 'zangado',
     lair: 'lair',
     'canal-lair': 'lair',
     'dr-lair': 'lair',
@@ -134,7 +141,22 @@
     suplementos: 'suplementos',
     undoctored: 'undoctored',
     programas: 'programas',
-    entrevistas: 'entrevistas'
+    entrevistas: 'entrevistas',
+    sagas: 'sagas',
+    'vale-a-pena': 'vale-a-pena',
+    'primeira-meia-hora': 'primeira-meia-hora',
+    'nao-vale': 'nao-vale',
+    trilogias: 'trilogias',
+    demo: 'demo',
+    unboxing: 'unboxing',
+    'bate-papo': 'bate-papo',
+    minuto: 'minuto',
+    'nerd-extra': 'nerd-extra',
+    retrospectiva: 'retrospectiva',
+    gameplay: 'gameplay',
+    lives: 'lives',
+    listas: 'listas',
+    especiais: 'especiais'
   };
 
   var TOPIC_ALIASES = {
@@ -152,7 +174,7 @@
 
   var TOPIC_ORDER = ['cultivo', 'unifesp', 'saude', 'plantas', 'ciencia'];
 
-  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'disneyjr'];
+  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'disneyjr', 'zangado', 'paulinho'];
 
   var cachedHub = null;
   var selectedId = '';
@@ -662,6 +684,8 @@
     if (id === 'lair') return 'Dr. Lair Ribeiro';
     if (id === 'davis') return 'William Davis, MD';
     if (id === 'disneyjr') return 'Disney Jr. Brasil';
+    if (id === 'zangado') return 'Zangado';
+    if (id === 'paulinho') return 'Paulinho o LOKO';
     return id;
   }
 

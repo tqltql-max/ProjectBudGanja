@@ -1,7 +1,5 @@
 const path = require('path');
 const { connectLambda } = require('@netlify/blobs');
-const { createAppStore } = require('../../lib/create-store.js');
-const { handleApiRequest } = require('../../lib/api-handler.js');
 
 const ROOT = path.resolve(__dirname, '../..');
 
@@ -25,15 +23,112 @@ function resolveApiPath(event) {
 }
 
 exports.handler = async (event) => {
-  connectLambda(event);
+  const apiPath = resolveApiPath(event);
+  const method = event.httpMethod || 'GET';
+  const lightAuth = (apiPath === '/api/auth/registration-status' || apiPath === '/api/auth/config') && method === 'GET';
+  try {
+    connectLambda(event);
+  } catch (e) {
+    if (!lightAuth) {
+      return {
+        statusCode: 503,
+        headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+        body: JSON.stringify({ error: 'Servidor de contas indisponível. Tente novamente em instantes.' })
+      };
+    }
+  }
 
-  const store = await createAppStore({ root: ROOT, netlify: true });
+  if (apiPath === '/api/auth/registration-status' && method === 'GET') {
+    const {
+      areNewRegistrationsAllowed,
+      REGISTRATION_CLOSED_MESSAGE
+    } = require('../../lib/registration-gate.js');
+    const open = areNewRegistrationsAllowed();
+    return {
+      statusCode: 200,
+      headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+      body: JSON.stringify({
+        open: open,
+        message: open ? '' : REGISTRATION_CLOSED_MESSAGE
+      })
+    };
+  }
+
+  if (apiPath === '/api/auth/config' && method === 'GET') {
+    const { getGoogleClientId, getGoogleClientSecret } = require('../../lib/utils.js');
+    const googleClientId = getGoogleClientId();
+    return {
+      statusCode: 200,
+      headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+      body: JSON.stringify({
+        googleEnabled: !!googleClientId,
+        googleClientId: googleClientId || null,
+        googleRedirectEnabled: !!(googleClientId && getGoogleClientSecret())
+      })
+    };
+  }
+
+  const { isLightAuthRoute, handleLightAuth } = require('../../lib/auth-api-light.js');
+  if (isLightAuthRoute(apiPath, method)) {
+    let authStore;
+    try {
+      const { createAppStore } = require('../../lib/create-store.js');
+      authStore = await createAppStore({ root: ROOT, netlify: true });
+    } catch (e) {
+      return {
+        statusCode: 503,
+        headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+        body: JSON.stringify({ error: 'Servidor de contas indisponível. Tente novamente em instantes.' })
+      };
+    }
+    try {
+      const response = await handleLightAuth(event, authStore, apiPath);
+      if (!response) {
+        return {
+          statusCode: 404,
+          headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+          body: JSON.stringify({ error: 'Rota não encontrada.' })
+        };
+      }
+      const outHeaders = Object.assign({ 'Cache-Control': 'no-store' }, response.headers || {});
+      if (response.setCookies && response.setCookies.length) {
+        outHeaders['Set-Cookie'] = response.setCookies;
+      }
+      return {
+        statusCode: response.statusCode,
+        headers: outHeaders,
+        body: response.body
+      };
+    } catch (e) {
+      return {
+        statusCode: 400,
+        headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+        body: JSON.stringify({ error: 'Pedido inválido.' })
+      };
+    }
+  }
+
+  let store;
+  let handleApiRequest;
+  try {
+    const { createAppStore } = require('../../lib/create-store.js');
+    store = await createAppStore({ root: ROOT, netlify: true });
+    handleApiRequest = require('../../lib/api-handler.js').handleApiRequest;
+  } catch (e) {
+    return {
+      statusCode: 503,
+      headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+      body: JSON.stringify({
+        error: 'Servidor de contas indisponível. Tente novamente em instantes.'
+      })
+    };
+  }
 
   const query = (event.rawQuery || event.rawUrl || '').split('?')[1] || '';
 
   const response = await handleApiRequest({
-    method: event.httpMethod,
-    path: resolveApiPath(event),
+    method: method,
+    path: apiPath,
     headers: event.headers || {},
     body: event.body,
     isBase64Encoded: event.isBase64Encoded,

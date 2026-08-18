@@ -38,6 +38,7 @@ var SERIES_LABELS = {
   'canal-movrecam': 'Canal MovReCam',
   'canal-canabinall': 'Canal CANABinALL',
   'canal-disneyjr': 'Disney Jr. · Canais',
+  'canal-zangado': 'Zangado · Canais',
   'canal-vevo': 'VEVO · Canais',
   'verificacao-equipamento': 'Equipamentos',
   'formacao-academica': 'Extensão académica',
@@ -56,6 +57,7 @@ var SERIES_LABELS = {
   'pessoas-historia': 'Pessoas',
   'divulgacao-saude': 'Divulgação',
   'artes-cultura': 'Artes',
+  'cadernos-jogo': 'Cadernos de jogo',
   'vida-contos': 'Vida',
   'expressoes-ditados': 'Expressões',
   '': 'Todas as séries'
@@ -120,6 +122,10 @@ function seriesBadgeHtml(post, options) {
   if (options.hub && (post.series === 'artes-cultura' || /inspecao-arte-|inspecao-filme-|inspecao-serie-/i.test(post.slug || ''))) {
     var arte = post.seriesLabel || 'Arte';
     return '<span class="post-card-series" data-series="' + post.series + '">' + arte + '</span>';
+  }
+  if (options.hub && (post.series === 'cadernos-jogo' || /inspecao-jogo-/i.test(post.slug || ''))) {
+    var jogo = post.seriesLabel || 'Caderno de jogo';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + jogo + '</span>';
   }
   if (options.hub && (post.series === 'vida-contos' || /inspecao-conto-|inspecao-personagem-/i.test(post.slug || ''))) {
     var vida = post.seriesLabel || 'Vida';
@@ -195,6 +201,9 @@ function resolveInspecaoTipo(post) {
   ) {
     return 'arte';
   }
+  if (series === 'cadernos-jogo' || /inspecao-jogo-/i.test(slug)) {
+    return 'jogo';
+  }
   if (
     series === 'vida-contos' ||
     series.indexOf('vida') === 0 ||
@@ -223,8 +232,13 @@ function resolveInspecaoTipo(post) {
   return 'canal';
 }
 
+var INSPECOES_PINNED_SLUG = 'inspecao-arte-bom-dia-inverno';
+
 function sortBySeriesOrder(posts) {
   return posts.slice().sort(function (a, b) {
+    var aPin = a && a.slug === INSPECOES_PINNED_SLUG ? 0 : 1;
+    var bPin = b && b.slug === INSPECOES_PINNED_SLUG ? 0 : 1;
+    if (aPin !== bPin) return aPin - bPin;
     var ao = a.seriesOrder == null ? 999 : Number(a.seriesOrder);
     var bo = b.seriesOrder == null ? 999 : Number(b.seriesOrder);
     if (ao !== bo) return ao - bo;
@@ -381,6 +395,7 @@ var HUB_CHIP_ANCHOR = {
   pessoas: 'pessoas-historia',
   divulgacao: 'divulgacao',
   arte: 'artes',
+  jogo: 'jogos',
   conto: 'vida',
   expressao: 'expressoes',
   sugestoes: 'sugestoes'
@@ -400,6 +415,8 @@ var HUB_ANCHOR_TO_TIPO = {
   palavras: 'palavra',
   divulgacao: 'divulgacao',
   artes: 'arte',
+  jogos: 'jogo',
+  jogo: 'jogo',
   vida: 'conto',
   contos: 'conto',
   expressoes: 'expressao',
@@ -428,6 +445,7 @@ var INSPECAO_HUB_TIPOS = [
   { id: 'palavra', labelKey: 'pages.inspections.chipWords', fallback: 'Palavras', sort: 'seriesOrder', keepVisible: true },
   { id: 'divulgacao', labelKey: 'pages.inspections.chipOutreach', fallback: 'Divulgação', sort: 'seriesOrder' },
   { id: 'arte', labelKey: 'pages.inspections.chipArts', fallback: 'Artes', sort: 'seriesOrder', keepVisible: true },
+  { id: 'jogo', labelKey: 'pages.inspections.chipGames', fallback: 'Cadernos de jogo', sort: 'seriesOrder', keepVisible: true },
   { id: 'conto', labelKey: 'pages.inspections.chipVida', fallback: 'Vida', sort: 'seriesOrder', keepVisible: true },
   {
     id: 'expressao',
@@ -521,6 +539,7 @@ function sortedHubPosts(posts, tipo) {
 
 function setInspecoesPanels(tipo) {
   var artes = document.getElementById('inspecoes-artes');
+  var jogos = document.getElementById('inspecoes-jogos');
   var palavras = document.getElementById('inspecoes-palavras');
   var expressoes = document.getElementById('inspecoes-expressoes');
   var sugs = document.getElementById('inspecoes-sugestoes');
@@ -528,6 +547,7 @@ function setInspecoesPanels(tipo) {
   var searchWrap = document.querySelector('.inspecoes-search-wrap');
 
   if (artes) artes.hidden = tipo !== 'arte';
+  if (jogos) jogos.hidden = tipo !== 'jogo';
   if (palavras) palavras.hidden = tipo !== 'palavra';
   if (expressoes) expressoes.hidden = tipo !== 'expressao';
   if (sugs) sugs.hidden = tipo !== 'sugestoes';
