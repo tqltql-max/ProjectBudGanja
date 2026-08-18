@@ -33,6 +33,8 @@
   var CREATORS = [
     {
       id: 'zangado',
+      slugs: ['zangado', 'zangadoreview', 'tio-zangado'],
+      href: '/jogos/zangado/',
       catalogUrl: '/content/channels/zangadoreview.json',
       hubId: 'zangado',
       nameKey: 'pages.games.zangadoTitle',
@@ -46,47 +48,147 @@
       emptyFallback: 'Nenhum vídeo do Zangado no catálogo ainda.'
     },
     {
-      id: 'paulinho',
+      id: 'aleff',
+      slugs: ['aleff', 'aleph', 'paulinho', 'paulinho-loko', 'paulinholoko'],
+      href: '/jogos/aleff/',
       catalogUrl: '/content/channels/paulinholoko.json',
       hubId: 'paulinho',
-      nameKey: 'pages.games.paulinhoTitle',
-      nameFallback: 'Paulinho o LOKO',
+      nameKey: 'pages.games.aleffTitle',
+      nameFallback: 'Aleff',
       descKey: 'pages.games.paulinhoDesc',
-      descFallback: 'Todos os vídeos na ordem de postagem, separados por história. Crédito: Paulinho o LOKO — sem afiliação.',
+      descFallback:
+        'Arquivo de histórias na ordem de postagem. Crédito à pessoa: Aleff (Aliffe Henrique de Carvalho) — sem afiliação.',
       yt: 'https://www.youtube.com/@PaulinhoLOKOoficial',
-      inspection: '',
+      inspection: '/posts/post-inspecao-figura-aleff.html',
       emptyKey: 'pages.games.emptyVideos',
-      emptyFallback: 'Nenhum vídeo do Paulinho no catálogo ainda.'
+      emptyFallback: 'Nenhum vídeo do Aleff no catálogo ainda.'
     }
   ];
 
+  var HUB_NAMES = [
+    { href: '/jogos/aleff/', nameKey: 'pages.games.aleffTitle', nameFallback: 'Aleff' },
+    { href: '/jogos/zangado/', nameKey: 'pages.games.zangadoTitle', nameFallback: 'Zangado' },
+    { href: '/jogos/broto/', nameKey: 'pages.games.brotoTitle', nameFallback: 'Broto' },
+    { href: '/jogos/cadernos/', nameKey: 'pages.games.notebooksTitle', nameFallback: 'Cadernos' }
+  ];
+
   var catalog = null;
-  var activeCreator = 'zangado';
+  var activeCreator = null;
   var activeCategory = '';
   var activeQuery = '';
-  var playingId = '';
   var visibleCount = 0;
   var searchTimer = null;
   var bound = false;
 
-  function creatorById(id) {
-    for (var i = 0; i < CREATORS.length; i++) {
-      if (CREATORS[i].id === id) return CREATORS[i];
-    }
-    return CREATORS[0];
+  function pageMode() {
+    var attr = String(document.body.getAttribute('data-jogos') || '');
+    if (attr) return attr;
+    var parts = pathParts();
+    if (parts[0] !== 'jogos') return 'hub';
+    if (!parts[1] || parts[1] === 'index.html') return 'hub';
+    if (parts[1] === 'video.html') return 'watch';
+    if (parts[1] === 'broto') return 'broto';
+    if (parts[1] === 'cadernos') return 'cadernos';
+    if (parts[2] && isValidVideoId(parts[2].replace(/\.html$/i, ''))) return 'watch';
+    if (creatorBySlug(parts[1])) return 'catalog';
+    return 'hub';
   }
 
-  function readCreatorFromUrl() {
+  function creatorBySlug(raw) {
+    var slug = String(raw || '').toLowerCase();
+    for (var i = 0; i < CREATORS.length; i++) {
+      if (CREATORS[i].id === slug) return CREATORS[i];
+      if (CREATORS[i].slugs.indexOf(slug) !== -1) return CREATORS[i];
+    }
+    return null;
+  }
+
+  function creatorById(id) {
+    return creatorBySlug(id) || CREATORS[0];
+  }
+
+  function pathParts() {
+    return String(window.location.pathname || '')
+      .replace(/\/+$/, '')
+      .split('/')
+      .filter(Boolean);
+  }
+
+  function queryParam(name) {
     try {
-      var params = new URLSearchParams(window.location.search);
-      var raw = String(params.get('canal') || params.get('channel') || '').toLowerCase();
-      if (raw === 'zangado' || raw === 'zangadoreview' || raw === 'tio-zangado') return 'zangado';
-      if (raw === 'paulinho' || raw === 'paulinho-loko' || raw === 'paulinholoko') return 'paulinho';
-    } catch (e) { /* ignore */ }
-    var hash = String(window.location.hash || '').replace(/^#/, '').toLowerCase();
-    if (hash === 'zangado' || hash === 'jogos-zangado') return 'zangado';
-    if (hash === 'paulinho' || hash === 'jogos-paulinho') return 'paulinho';
-    return 'zangado';
+      return new URLSearchParams(window.location.search).get(name) || '';
+    } catch (e) {
+      return '';
+    }
+  }
+
+  function resolveCreatorFromLocation() {
+    var fromAttr = document.body.getAttribute('data-creator');
+    var fromQuery = queryParam('canal') || queryParam('channel');
+    var parts = pathParts();
+    var fromPath = parts[0] === 'jogos' && parts[1] ? parts[1] : '';
+    return creatorBySlug(fromAttr) || creatorBySlug(fromQuery) || creatorBySlug(fromPath);
+  }
+
+  function resolveVideoId() {
+    var fromQuery = queryParam('id') || queryParam('v');
+    if (isValidVideoId(fromQuery)) return fromQuery;
+    var parts = pathParts();
+    var last = parts[parts.length - 1] || '';
+    if (last === 'video.html') return '';
+    return isValidVideoId(last) ? last : '';
+  }
+
+  function videoHref(creator, id) {
+    return creator.href + encodeURIComponent(id);
+  }
+
+  function redirectLegacyHub() {
+    if (pageMode() !== 'hub') return false;
+    var raw = String(queryParam('canal') || queryParam('channel') || '').toLowerCase();
+    var creator = creatorBySlug(raw);
+    if (!creator) return false;
+    window.location.replace(creator.href);
+    return true;
+  }
+
+  function renderHub() {
+    var nav = document.getElementById('jogos-names');
+    if (!nav) return;
+    nav.setAttribute('aria-label', i18n('pages.games.namesLabel', 'Nomes'));
+    nav.innerHTML = HUB_NAMES.map(function (item) {
+      return (
+        '<a class="jogos-name" href="' +
+        escapeHtml(item.href) +
+        '">' +
+        escapeHtml(i18n(item.nameKey, item.nameFallback)) +
+        '</a>'
+      );
+    }).join('');
+  }
+
+  function renderChannelMeta(creator) {
+    var title = document.getElementById('jogos-catalog-title');
+    var desc = document.getElementById('jogos-catalog-desc');
+    var yt = document.getElementById('jogos-channel-yt');
+    var insp = document.getElementById('jogos-channel-inspection');
+    if (title) title.textContent = i18n(creator.nameKey, creator.nameFallback);
+    if (desc) desc.textContent = i18n(creator.descKey, creator.descFallback);
+    if (yt) {
+      yt.href = creator.yt;
+      yt.hidden = !creator.yt;
+    }
+    if (insp) {
+      if (creator.inspection) {
+        insp.href = creator.inspection;
+        insp.hidden = false;
+      } else {
+        insp.hidden = true;
+      }
+    }
+    if (document.title && creator) {
+      document.title = i18n(creator.nameKey, creator.nameFallback) + ' | ' + i18n('pages.games.docTitle', 'Jogos | Inspetor BudGanja');
+    }
   }
 
   function categoryLabel(id) {
@@ -172,57 +274,11 @@
       .join('');
   }
 
-  function renderCreators() {
-    var nav = document.getElementById('jogos-creators');
-    if (!nav) return;
-    nav.innerHTML =
-      '<div class="videos-filters jogos-creator-chips" role="tablist" aria-label="' +
-      escapeHtml(i18n('pages.games.creatorsLabel', 'Escolher canal')) +
-      '">' +
-      CREATORS.map(function (c) {
-        var on = activeCreator === c.id;
-        return (
-          '<button type="button" class="videos-filter-chip' +
-          (on ? ' is-active' : '') +
-          '" role="tab" data-creator="' +
-          escapeHtml(c.id) +
-          '" aria-selected="' +
-          (on ? 'true' : 'false') +
-          '">' +
-          escapeHtml(i18n(c.nameKey, c.nameFallback)) +
-          '</button>'
-        );
-      }).join('') +
-      '</div>';
-  }
-
-  function renderChannelMeta() {
-    var c = creatorById(activeCreator);
-    var desc = document.getElementById('jogos-channel-desc');
-    var yt = document.getElementById('jogos-channel-yt');
-    var insp = document.getElementById('jogos-channel-inspection');
-    var title = document.getElementById('jogos-paulinho-title');
-    if (title) title.textContent = i18n(c.nameKey, c.nameFallback);
-    if (desc) desc.textContent = i18n(c.descKey, c.descFallback);
-    if (yt) {
-      yt.href = c.yt;
-      yt.hidden = !c.yt;
-    }
-    if (insp) {
-      if (c.inspection) {
-        insp.href = c.inspection;
-        insp.hidden = false;
-      } else {
-        insp.hidden = true;
-      }
-    }
-  }
-
   function renderFilters() {
     var nav = document.getElementById('jogos-filters');
     if (!nav || !catalog) return;
     var cats = catalog.categories || [];
-    var chips =
+    nav.innerHTML =
       '<div class="videos-filters" role="toolbar" aria-label="' +
       escapeHtml(i18n('pages.games.filtersLabel', 'Filtrar por tipo')) +
       '">' +
@@ -254,55 +310,18 @@
         })
         .join('') +
       '</div>';
-    nav.innerHTML = chips;
   }
 
-  function embedHtml(id) {
-    return (
-      '<div class="video-embed">' +
-      '<iframe src="https://www.youtube-nocookie.com/embed/' +
-      escapeHtml(id) +
-      '?autoplay=1&rel=0" title="YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' +
-      '</div>'
-    );
-  }
-
-  function cardHtml(v, playing) {
+  function cardHtml(creator, v) {
     var title = v.title || '';
     var thumb = v.thumb || (isValidVideoId(v.id) ? 'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg' : '');
-    if (playing) {
-      return (
-        '<article class="video-card card is-playing" data-video-id="' +
-        escapeHtml(v.id) +
-        '">' +
-        embedHtml(v.id) +
-        '<div class="video-card-body">' +
-        '<h2 class="video-card-title videos-player-title">' +
-        escapeHtml(title) +
-        '</h2>' +
-        '<span class="video-card-date">' +
-        escapeHtml(formatDate(v.published)) +
-        '</span>' +
-        '</div>' +
-        '<div class="video-card-actions">' +
-        '<button type="button" class="botao botao-outline botao-sm" data-stop-video>' +
-        escapeHtml(i18n('pages.videos.closePlayer', 'Fechar vídeo')) +
-        '</button>' +
-        '<a class="botao botao-outline botao-sm" href="' +
-        escapeHtml(v.url || 'https://www.youtube.com/watch?v=' + v.id) +
-        '" target="_blank" rel="noopener noreferrer">' +
-        escapeHtml(i18n('pages.videos.continueOnYoutube', 'Continuar no YouTube')) +
-        '</a>' +
-        '</div>' +
-        '</article>'
-      );
-    }
+    var href = videoHref(creator, v.id);
     return (
       '<article class="video-card card" data-video-id="' +
       escapeHtml(v.id) +
       '">' +
-      '<button type="button" class="video-card-link" aria-label="' +
-      escapeHtml(i18n('pages.videos.watchHere', 'Assistir') + ': ' + title) +
+      '<a class="video-card-link" href="' +
+      escapeHtml(href) +
       '">' +
       '<span class="video-card-media">' +
       (thumb
@@ -318,7 +337,7 @@
       escapeHtml(formatDate(v.published)) +
       '</span>' +
       '</span>' +
-      '</button>' +
+      '</a>' +
       '</article>'
     );
   }
@@ -326,11 +345,10 @@
   function renderVideos() {
     var grid = document.getElementById('jogos-videos');
     var more = document.getElementById('jogos-load-more');
-    if (!grid) return;
-    var c = creatorById(activeCreator);
+    if (!grid || !activeCreator) return;
     if (!catalog || !catalog.videos) {
       grid.innerHTML =
-        '<p class="empty-message">' + escapeHtml(i18n(c.emptyKey, c.emptyFallback)) + '</p>';
+        '<p class="empty-message">' + escapeHtml(i18n(activeCreator.emptyKey, activeCreator.emptyFallback)) + '</p>';
       if (more) more.hidden = true;
       return;
     }
@@ -348,20 +366,15 @@
       return;
     }
     var slice = list.slice(0, visibleCount);
-    grid.innerHTML = slice
-      .map(function (v) {
-        return cardHtml(v, v.id === playingId);
-      })
-      .join('');
+    grid.innerHTML =
+      '<div class="videos-grid">' +
+      slice
+        .map(function (v) {
+          return cardHtml(activeCreator, v);
+        })
+        .join('') +
+      '</div>';
     if (more) more.hidden = slice.length >= list.length;
-  }
-
-  function setCategory(id) {
-    activeCategory = id || '';
-    playingId = '';
-    visibleCount = PAGE_SIZE;
-    renderFilters();
-    renderVideos();
   }
 
   function catalogFromHub(hub, creator) {
@@ -411,51 +424,87 @@
       })
       .then(function (doc) {
         catalog = doc;
-        renderFilters();
-        renderVideos();
+        if (pageMode() === 'catalog') {
+          renderFilters();
+          renderVideos();
+        }
+        return doc;
       })
       .catch(function () {
         catalog = null;
-        renderFilters();
-        renderVideos();
+        if (pageMode() === 'catalog') {
+          renderFilters();
+          renderVideos();
+        }
+        return null;
       });
   }
 
-  function setCreator(id, pushUrl) {
-    var next = creatorById(id).id;
-    activeCreator = next;
-    activeCategory = '';
-    playingId = '';
-    visibleCount = PAGE_SIZE;
-    if (pushUrl) {
-      try {
-        var url = new URL(window.location.href);
-        url.searchParams.set('canal', next);
-        window.history.replaceState({}, '', url.pathname + url.search + url.hash);
-      } catch (e) { /* ignore */ }
+  function findVideo(id) {
+    var list = (catalog && catalog.videos) || [];
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].id === id) return list[i];
     }
-    renderCreators();
-    renderChannelMeta();
-    loadCatalog(creatorById(next));
+    return null;
   }
 
-  function bind() {
+  function renderWatch(creator, video, id) {
+    var box = document.getElementById('jogos-watch');
+    var back = document.getElementById('jogos-back');
+    if (back) {
+      back.href = creator ? creator.href : '/jogos/';
+      back.textContent = creator
+        ? i18n(creator.nameKey, creator.nameFallback)
+        : i18n('pages.games.backToGames', 'Jogos');
+    }
+    if (!box) return;
+    if (!isValidVideoId(id)) {
+      box.innerHTML =
+        '<p class="empty-message">' +
+        escapeHtml(i18n('pages.games.videoMissing', 'Vídeo não encontrado.')) +
+        '</p>';
+      return;
+    }
+    var title = (video && video.title) || i18n('pages.games.videoFallbackTitle', 'Vídeo');
+    var date = video && video.published ? formatDate(video.published) : '';
+    var yt = (video && video.url) || 'https://www.youtube.com/watch?v=' + id;
+    document.title = title + ' | ' + i18n('pages.games.docTitle', 'Jogos | Inspetor BudGanja');
+    box.innerHTML =
+      '<div class="jogos-watch-player">' +
+      '<div class="video-embed">' +
+      '<iframe src="https://www.youtube-nocookie.com/embed/' +
+      escapeHtml(id) +
+      '?rel=0" title="' +
+      escapeHtml(title) +
+      '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' +
+      '</div>' +
+      '<h1 class="jogos-watch-title">' +
+      escapeHtml(title) +
+      '</h1>' +
+      (date ? '<p class="jogos-watch-date">' + escapeHtml(date) + '</p>' : '') +
+      '<p class="jogos-watch-actions">' +
+      '<a class="botao botao-outline" href="' +
+      escapeHtml(yt) +
+      '" target="_blank" rel="noopener noreferrer">' +
+      escapeHtml(i18n('pages.videos.continueOnYoutube', 'Continuar no YouTube')) +
+      '</a>' +
+      '</p>' +
+      '</div>';
+  }
+
+  function setCategory(id) {
+    activeCategory = id || '';
+    visibleCount = PAGE_SIZE;
+    renderFilters();
+    renderVideos();
+  }
+
+  function bindCatalog() {
     if (bound) return;
     bound = true;
-    var creators = document.getElementById('jogos-creators');
     var nav = document.getElementById('jogos-filters');
-    var grid = document.getElementById('jogos-videos');
     var more = document.getElementById('jogos-load-more');
     var search = document.getElementById('jogos-search');
-
-    if (creators) {
-      creators.addEventListener('click', function (e) {
-        var btn = e.target.closest('[data-creator]');
-        if (!btn) return;
-        setCreator(btn.getAttribute('data-creator') || 'zangado', true);
-      });
-    }
-
     if (nav) {
       nav.addEventListener('click', function (e) {
         var btn = e.target.closest('[data-category]');
@@ -463,37 +512,17 @@
         setCategory(btn.getAttribute('data-category') || '');
       });
     }
-
-    if (grid) {
-      grid.addEventListener('click', function (e) {
-        var stop = e.target.closest('[data-stop-video]');
-        if (stop) {
-          playingId = '';
-          renderVideos();
-          return;
-        }
-        var btn = e.target.closest('.video-card-link');
-        if (!btn) return;
-        var card = btn.closest('[data-video-id]');
-        if (!card) return;
-        playingId = card.getAttribute('data-video-id') || '';
-        renderVideos();
-      });
-    }
-
     if (more) {
       more.addEventListener('click', function () {
         visibleCount += PAGE_SIZE;
         renderVideos();
       });
     }
-
     if (search) {
       search.addEventListener('input', function () {
         window.clearTimeout(searchTimer);
         searchTimer = window.setTimeout(function () {
           activeQuery = search.value || '';
-          playingId = '';
           visibleCount = PAGE_SIZE;
           renderVideos();
         }, 180);
@@ -501,13 +530,7 @@
     }
   }
 
-  function load() {
-    visibleCount = PAGE_SIZE;
-    bind();
-    activeCreator = readCreatorFromUrl();
-    renderCreators();
-    renderChannelMeta();
-
+  function loadNotebooks() {
     fetch('/posts-public.json')
       .then(function (r) {
         return r.ok ? r.json() : [];
@@ -518,8 +541,40 @@
       .catch(function () {
         renderNotebooks([]);
       });
+  }
 
-    loadCatalog(creatorById(activeCreator));
+  function load() {
+    if (redirectLegacyHub()) return;
+    var mode = pageMode();
+    if (mode === 'hub') {
+      renderHub();
+      return;
+    }
+    if (mode === 'cadernos') {
+      loadNotebooks();
+      return;
+    }
+    if (mode === 'catalog') {
+      activeCreator = resolveCreatorFromLocation() || CREATORS[0];
+      visibleCount = PAGE_SIZE;
+      bindCatalog();
+      renderChannelMeta(activeCreator);
+      loadCatalog(activeCreator);
+      return;
+    }
+    if (mode === 'watch') {
+      activeCreator = resolveCreatorFromLocation();
+      var videoId = resolveVideoId();
+      if (activeCreator) {
+        loadCatalog(activeCreator).then(function () {
+          renderWatch(activeCreator, findVideo(videoId), videoId);
+        });
+      } else if (isValidVideoId(videoId)) {
+        renderWatch(null, { id: videoId, title: '', url: 'https://www.youtube.com/watch?v=' + videoId }, videoId);
+      } else {
+        renderWatch(null, null, '');
+      }
+    }
   }
 
   if (document.readyState === 'loading') {

@@ -76,6 +76,26 @@ async function main() {
     const rawFile = path.join(TRANSCRIPTS_DIR, String(n).padStart(2, '0') + '-' + v.id + '.json');
     process.stdout.write('[' + (i + 1) + '/' + videos.length + '] Aula ' + n + ' ' + v.id + ' … ');
     try {
+      if (fs.existsSync(rawFile)) {
+        const cached = JSON.parse(fs.readFileSync(rawFile, 'utf8'));
+        if (cached && cached.body) {
+          chapters.push({
+            aulaNumber: n,
+            videoId: v.id,
+            title: v.title,
+            heading,
+            url: v.url || 'https://www.youtube.com/watch?v=' + v.id,
+            published: v.published || '',
+            lang: cached.lang || 'pt',
+            status: 'ok',
+            segmentCount: Array.isArray(cached.segments) ? cached.segments.length : 0,
+            charCount: cached.body.length,
+            body: cached.body
+          });
+          console.log('CACHE', cached.body.length, 'chars');
+          continue;
+        }
+      }
       const { segments, lang } = await fetchSegments(YoutubeTranscript, v.id);
       const body = cleanCaptionText(segments);
       const chapter = {

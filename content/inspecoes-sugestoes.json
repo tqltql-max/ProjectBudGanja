@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T02:15:46.279Z",
+  "updatedAt": "2026-08-18T05:52:04.594Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5200,6 +5200,319 @@
         "/videos/?channel=zangado"
       ],
       "notes": "Hub /jogos/?canal=zangado · formatos de mérito no catálogo."
+    },
+    {
+      "id": "figura-aleff",
+      "title": "Aleff — Aliffe de Machado, pessoa antes do ecrã",
+      "titleEn": "Aleff — Aliffe from Machado, the person before the screen",
+      "titleEs": "Aleff — Aliffe de Machado, la persona antes de la pantalla",
+      "tipo": "pessoas",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pessoas: Aliffe / Aleff — mineiro de Machado; pessoa especial, não persona de ecrã.",
+      "whyEn": "People: Aliffe / Aleff — from Machado; a special person, not an on-screen persona.",
+      "whyEs": "Personas: Aliffe / Aleff — de Machado; persona especial, no persona de pantalla.",
+      "suggestedSlug": "inspecao-figura-aleff",
+      "doneHref": "/posts/post-inspecao-figura-aleff.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Paulinho_o_Loko",
+        "/posts/post-inspecao-palavra-respeito.html",
+        "/posts/post-inspecao-palavra-idolo.html",
+        "/jogos/?canal=paulinho"
+      ],
+      "notes": "Pessoa especial. Não reduzir a streamer. Catálogo de jogos é satélite."
+    },
+    {
+      "id": "arte-de-volta-para-o-futuro",
+      "title": "De Volta para o Futuro — 1985 e homenagem aos actores",
+      "titleEn": "Back to the Future — 1985 and homage to the actors",
+      "titleEs": "Back to the Future — 1985 y homenaje a los actores",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes: filme 1985 + crédito às pessoas (Fox, Lloyd e o elenco).",
+      "whyEn": "Arts: 1985 film + credit to the people (Fox, Lloyd and the cast).",
+      "whyEs": "Artes: filme 1985 + crédito a las personas (Fox, Lloyd y el elenco).",
+      "suggestedSlug": "inspecao-filme-de-volta-para-o-futuro",
+      "doneHref": "/posts/post-inspecao-filme-de-volta-para-o-futuro.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Back_to_the_Future",
+        "/posts/post-inspecao-figura-michael-j-fox.html",
+        "/posts/post-inspecao-figura-christopher-lloyd.html",
+        "https://www.youtube.com/watch?v=qvsgGtivCgs"
+      ],
+      "notes": "Homenagem aos actores. Pessoa ≠ personagem."
+    },
+    {
+      "id": "figura-michael-j-fox",
+      "title": "Michael J. Fox — presença, ofício e De Volta para o Futuro",
+      "titleEn": "Michael J. Fox — presence, craft and Back to the Future",
+      "titleEs": "Michael J. Fox — presencia, oficio y Back to the Future",
+      "tipo": "pessoas",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pessoas × Artes: Michael J. Fox — pessoa, não personagem nem ficha de doença.",
+      "whyEn": "People × Arts: Michael J. Fox — the person, not the character or a disease sheet.",
+      "whyEs": "Personas × Artes: Michael J. Fox — la persona, no el personaje ni ficha de enfermedad.",
+      "suggestedSlug": "inspecao-figura-michael-j-fox",
+      "doneHref": "/posts/post-inspecao-figura-michael-j-fox.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Michael_J._Fox",
+        "/posts/post-inspecao-filme-de-volta-para-o-futuro.html",
+        "https://www.michaeljfox.org/"
+      ]
+    },
+    {
+      "id": "figura-christopher-lloyd",
+      "title": "Christopher Lloyd — presença, improviso e De Volta para o Futuro",
+      "titleEn": "Christopher Lloyd — presence, improvisation and Back to the Future",
+      "titleEs": "Christopher Lloyd — presencia, improvisación y Back to the Future",
+      "tipo": "pessoas",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pessoas × Artes: Christopher Lloyd — pessoa, não persona do Doc.",
+      "whyEn": "People × Arts: Christopher Lloyd — the person, not the Doc persona.",
+      "whyEs": "Personas × Artes: Christopher Lloyd — la persona, no la persona de Doc.",
+      "suggestedSlug": "inspecao-figura-christopher-lloyd",
+      "doneHref": "/posts/post-inspecao-figura-christopher-lloyd.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Christopher_Lloyd",
+        "/posts/post-inspecao-filme-de-volta-para-o-futuro.html"
+      ]
+    },
+    {
+      "id": "arte-delorean",
+      "title": "DeLorean — o carro de Dunmurry e a camada de 1985",
+      "titleEn": "DeLorean — the Dunmurry car and the 1985 layer",
+      "titleEs": "DeLorean — el coche de Dunmurry y la capa de 1985",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes · objecto: DMC DeLorean real (Giugiaro, 1981–82); filme como camada, não origem.",
+      "whyEn": "Arts · object: real DMC DeLorean (Giugiaro, 1981–82); film as layer, not origin.",
+      "whyEs": "Artes · objeto: DeLorean DMC real (Giugiaro, 1981–82); filme como capa, no origen.",
+      "suggestedSlug": "inspecao-delorean",
+      "doneHref": "/posts/post-inspecao-delorean.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/DeLorean_DMC-12",
+        "/posts/post-inspecao-filme-de-volta-para-o-futuro.html",
+        "https://pt.wikipedia.org/wiki/John_DeLorean"
+      ],
+      "notes": "Carro real primeiro. 88 mph é guião. Ficção ≠ manual."
+    },
+    {
+      "id": "arte-filme-questao-de-tempo",
+      "title": "Questão de Tempo — o filme de 2013 e o destaque para o autor",
+      "titleEn": "About Time — the 2013 film and the highlight on the author",
+      "titleEs": "About Time — el filme de 2013 y el destaque para el autor",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes: About Time / Questão de Tempo (2013) + crédito ao autor Richard Curtis.",
+      "whyEn": "Arts: About Time (2013) + credit to author Richard Curtis.",
+      "whyEs": "Artes: About Time / Questão de Tempo (2013) + crédito al autor Richard Curtis.",
+      "suggestedSlug": "inspecao-filme-questao-de-tempo",
+      "doneHref": "/posts/post-inspecao-filme-questao-de-tempo.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://en.wikipedia.org/wiki/About_Time_(2013_film)",
+        "/posts/post-inspecao-figura-richard-curtis.html",
+        "https://www.youtube.com/watch?v=7lCDEYXw3mM"
+      ],
+      "notes": "Destaque para o autor. Filme = texto (sem livro prévio). Pessoa ≠ personagem."
+    },
+    {
+      "id": "figura-richard-curtis",
+      "title": "Richard Curtis — o autor, o ofício da escrita e Questão de Tempo",
+      "titleEn": "Richard Curtis — the author, the craft of writing and About Time",
+      "titleEs": "Richard Curtis — el autor, el oficio de la escritura y About Time",
+      "tipo": "pessoas",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pessoas × Artes: Richard Curtis — autor de Questão de Tempo; pessoa, não marca de rom-com.",
+      "whyEn": "People × Arts: Richard Curtis — author of About Time; the person, not a rom-com brand.",
+      "whyEs": "Personas × Artes: Richard Curtis — autor de About Time; la persona, no la marca rom-com.",
+      "suggestedSlug": "inspecao-figura-richard-curtis",
+      "doneHref": "/posts/post-inspecao-figura-richard-curtis.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Richard_Curtis",
+        "/posts/post-inspecao-filme-questao-de-tempo.html",
+        "https://www.comicrelief.com/meet-the-team/richard-curtis/"
+      ]
+    },
+    {
+      "id": "arte-filme-um-sonho-de-liberdade",
+      "title": "Um Sonho de Liberdade — a novela de King e o filme de 1994",
+      "titleEn": "The Shawshank Redemption — King’s novella and the 1994 film",
+      "titleEs": "Cadena perpetua — la novela de King y el filme de 1994",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes: Um Sonho de Liberdade (1994) — novela King 1982 primeiro; Darabont adapta.",
+      "whyEn": "Arts: The Shawshank Redemption (1994) — King 1982 novella first; Darabont adapts.",
+      "whyEs": "Artes: Um Sonho de Liberdade (1994) — novela King 1982 primero; Darabont adapta.",
+      "suggestedSlug": "inspecao-filme-um-sonho-de-liberdade",
+      "doneHref": "/posts/post-inspecao-filme-um-sonho-de-liberdade.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Um_Sonho_de_Liberdade",
+        "/posts/post-inspecao-figura-stephen-king.html",
+        "https://www.youtube.com/watch?v=6hB3S9bIacs"
+      ],
+      "notes": "Literatura primeiro. Ficção de prisão ≠ manual. Pessoa ≠ personagem."
+    },
+    {
+      "id": "figura-stephen-king",
+      "title": "Stephen King — o autor, a novela e Um Sonho de Liberdade",
+      "titleEn": "Stephen King — the author, the novella and The Shawshank Redemption",
+      "titleEs": "Stephen King — el autor, la novela y Cadena perpetua",
+      "tipo": "pessoas",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pessoas × Artes: Stephen King — autor da novela; pessoa, não marca de horror.",
+      "whyEn": "People × Arts: Stephen King — novella author; the person, not a horror brand.",
+      "whyEs": "Personas × Artes: Stephen King — autor de la novela; la persona, no la marca de terror.",
+      "suggestedSlug": "inspecao-figura-stephen-king",
+      "doneHref": "/posts/post-inspecao-figura-stephen-king.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Stephen_King",
+        "/posts/post-inspecao-filme-um-sonho-de-liberdade.html"
+      ]
+    },
+    {
+      "id": "arte-filme-encontro-marcado",
+      "title": "Encontro Marcado — a peça de 1924 e o filme de 1998",
+      "titleEn": "Meet Joe Black — the 1924 play and the 1998 film",
+      "titleEs": "Meet Joe Black — la obra de 1924 y el filme de 1998",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes: Encontro Marcado (1998) — peça Casella 1924 primeiro; remake de Death Takes a Holiday.",
+      "whyEn": "Arts: Meet Joe Black (1998) — Casella 1924 play first; remake of Death Takes a Holiday.",
+      "whyEs": "Artes: Encontro Marcado (1998) — obra Casella 1924 primero; remake de Death Takes a Holiday.",
+      "suggestedSlug": "inspecao-filme-encontro-marcado",
+      "doneHref": "/posts/post-inspecao-filme-encontro-marcado.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Meet_Joe_Black",
+        "https://en.wikipedia.org/wiki/Death_Takes_a_Holiday",
+        "https://www.youtube.com/watch?v=_zIOjl93WrU"
+      ],
+      "notes": "Teatro primeiro. Ficção da Morte ≠ manual. Pessoa ≠ personagem."
+    },
+    {
+      "id": "arte-filme-coracao-valente",
+      "title": "Coração Valente — a lenda de Wallace e o filme de 1995",
+      "titleEn": "Braveheart — the Wallace legend and the 1995 film",
+      "titleEs": "Braveheart — la leyenda de Wallace y el filme de 1995",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes: Coração Valente (1995) — lenda/Blind Harry primeiro; épico ≠ crónica. Ficha própria.",
+      "whyEn": "Arts: Braveheart (1995) — legend first; epic ≠ chronicle. Own sheet.",
+      "whyEs": "Artes: Coração Valente (1995) — leyenda primero; épica ≠ crónica. Ficha propia.",
+      "suggestedSlug": "inspecao-filme-coracao-valente",
+      "doneHref": "/posts/post-inspecao-filme-coracao-valente.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Braveheart",
+        "/posts/post-inspecao-filme-a-paixao-de-cristo.html",
+        "https://www.youtube.com/watch?v=nMft5QDOHek",
+        "/posts/post-inspecao-figura-mel-gibson.html"
+      ],
+      "notes": "Separado de A Paixão de Cristo. Ficção histórica ≠ manual."
+    },
+    {
+      "id": "arte-filme-a-paixao-de-cristo",
+      "title": "A Paixão de Cristo — os Evangelhos e o filme de 2004",
+      "titleEn": "The Passion of the Christ — the Gospels and the 2004 film",
+      "titleEs": "La Pasión de Cristo — los Evangelios y el filme de 2004",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes: A Paixão de Cristo (2004) — Evangelhos primeiro; adaptação ≠ catecismo. Ficha própria.",
+      "whyEn": "Arts: The Passion of the Christ (2004) — Gospels first; adaptation ≠ catechism. Own sheet.",
+      "whyEs": "Artes: A Paixão de Cristo (2004) — Evangelios primero; adaptación ≠ catecismo. Ficha propia.",
+      "suggestedSlug": "inspecao-filme-a-paixao-de-cristo",
+      "doneHref": "/posts/post-inspecao-filme-a-paixao-de-cristo.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/A_Paix%C3%A3o_de_Cristo",
+        "/posts/post-inspecao-filme-coracao-valente.html",
+        "https://www.youtube.com/watch?v=4Aif1qEB_JU",
+        "/posts/post-inspecao-figura-mel-gibson.html"
+      ],
+      "notes": "Separado de Coração Valente. Sem proselitismo. Controvérsia = recepção."
+    },
+    {
+      "id": "figura-mel-gibson",
+      "title": "Mel Gibson — ofício de ecrã, realização e as duas obras",
+      "titleEn": "Mel Gibson — screen craft, directing and the two works",
+      "titleEs": "Mel Gibson — oficio de pantalla, dirección y las dos obras",
+      "tipo": "pessoas",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pessoas × Artes: Mel Gibson — actor / realizador / Icon; elos em Coração Valente e A Paixão de Cristo, fichas separadas.",
+      "whyEn": "People × Arts: Mel Gibson — actor / director / Icon; links to Braveheart and The Passion of the Christ, separate sheets.",
+      "whyEs": "Personas × Artes: Mel Gibson — actor / director / Icon; vínculos en Braveheart y A Paixão de Cristo, fichas separadas.",
+      "suggestedSlug": "inspecao-figura-mel-gibson",
+      "doneHref": "/posts/post-inspecao-figura-mel-gibson.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Mel_Gibson",
+        "/posts/post-inspecao-filme-coracao-valente.html",
+        "/posts/post-inspecao-filme-a-paixao-de-cristo.html"
+      ],
+      "notes": "Pessoa e ofício. Wallace ≠ Gibson; Jesus no ecrã ≠ Gibson. Sem dossiê de escândalo."
+    },
+    {
+      "id": "arte-serie-friends",
+      "title": "Friends — a turma de 1994 e a série que é o texto",
+      "titleEn": "Friends — the 1994 ensemble and the series as the text",
+      "titleEs": "Friends — la tropa de 1994 y la serie como texto",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes: Friends (1994–2004) — Crane / Kauffman; a série é a génese. Ficha própria.",
+      "whyEn": "Arts: Friends (1994–2004) — Crane / Kauffman; the series is the origin. Own sheet.",
+      "whyEs": "Artes: Friends (1994–2004) — Crane / Kauffman; la serie es el origen. Ficha propia.",
+      "suggestedSlug": "inspecao-serie-friends",
+      "doneHref": "/posts/post-inspecao-serie-friends.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Friends",
+        "/posts/post-inspecao-serie-how-i-met-your-mother.html",
+        "https://www.youtube.com/watch?v=sLisEEwYZvw"
+      ],
+      "notes": "Separado de How I Met Your Mother. Sitcom ≠ manual. Pessoa ≠ personagem."
+    },
+    {
+      "id": "arte-serie-how-i-met-your-mother",
+      "title": "How I Met Your Mother — o relato, o tempo e a série de 2005",
+      "titleEn": "How I Met Your Mother — the telling, time and the 2005 series",
+      "titleEs": "How I Met Your Mother — el relato, el tiempo y la serie de 2005",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes: How I Met Your Mother (2005–2014) — Bays / Thomas; a série é a génese. Ficha própria.",
+      "whyEn": "Arts: How I Met Your Mother (2005–2014) — Bays / Thomas; the series is the origin. Own sheet.",
+      "whyEs": "Artes: How I Met Your Mother (2005–2014) — Bays / Thomas; la serie es el origen. Ficha propia.",
+      "suggestedSlug": "inspecao-serie-how-i-met-your-mother",
+      "doneHref": "/posts/post-inspecao-serie-how-i-met-your-mother.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/How_I_Met_Your_Mother",
+        "/posts/post-inspecao-serie-friends.html",
+        "https://www.youtube.com/watch?v=cjJLEYMzpjc"
+      ],
+      "notes": "Separado de Friends. Sitcom ≠ manual de conquista. Final = recepção."
     }
   ]
 }

@@ -63,9 +63,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (urlError) {
     const errorMessages = {
       invalid_client: 'Google rejeitou o Client ID. Verifique as credenciais no Google Cloud.',
-      redirect_not_configured: 'Adicione GOOGLE_CLIENT_SECRET no .env e reinicie o site.',
+      redirect_not_configured:
+        'Login com Google ainda não está configurado no servidor. Use e-mail e senha por agora.',
       invalid_state: 'A ligação expirou ou o navegador bloqueou cookies. Tente novamente.',
       access_denied: 'Login cancelado.',
+      rate_limited: 'Muitas tentativas de login. Aguarde alguns minutos e tente de novo.',
+      server_error: 'O servidor falhou ao falar com o Google. Tente de novo ou use e-mail e senha.',
       registration_closed:
         'Cadastros novos temporariamente indisponíveis no momento. Contas já existentes podem entrar normalmente.'
     };
@@ -290,9 +293,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   if (!config.googleEnabled || !config.googleClientId) {
+    if (redirectBtn) {
+      redirectBtn.hidden = true;
+      redirectBtn.removeAttribute('href');
+      redirectBtn.setAttribute('aria-disabled', 'true');
+    }
+    if (btnWrap) btnWrap.hidden = true;
     const googleLabel = document.getElementById('entrar-google-label');
     if (googleLabel) {
       googleLabel.textContent = 'Google em breve — use e-mail e senha';
+    }
+    if (!urlError) {
+      showNotice('Login com Google ainda não está configurado no servidor. Use e-mail e senha.');
     }
     return;
   }

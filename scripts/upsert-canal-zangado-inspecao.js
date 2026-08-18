@@ -93,10 +93,10 @@ async function main() {
       sources: [
         'https://www.youtube.com/@zangadoreview',
         'https://www.uol.com.br/start/listas/e-ae-10-fatos-sobre-zangado-um-dos-maiores-youtubers-do-brasil.htm',
-        '/jogos/?canal=zangado',
+        '/jogos/zangado/',
         '/videos/?channel=zangado'
       ],
-      notes: 'Hub /jogos/?canal=zangado · formatos de mérito no catálogo.'
+      notes: 'Hub /jogos/zangado/ · formatos de mérito no catálogo.'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);

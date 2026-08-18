@@ -137,5 +137,44 @@ assert('zangado especial', catZangado('Especial Devilman : Go Nagai, Inspiraçõ
 assert('zangado nao vale', catZangado('MindsEye: NOT Worth Playing!') === 'nao-vale');
 assert('zangado bate-papo', catZangado('BATE PAPO COM O TIO ZANGADO!!! #41') === 'bate-papo');
 
+const {
+  handleGoogleStart,
+  encodeOAuthState,
+  decodeOAuthReturnTo,
+  toNetlifyResponse
+} = require('../lib/auth-google-start.js');
+const prevGoogleId = process.env.GOOGLE_CLIENT_ID;
+const prevGoogleSecret = process.env.GOOGLE_CLIENT_SECRET;
+delete process.env.GOOGLE_CLIENT_ID;
+delete process.env.GOOGLE_CLIENT_SECRET;
+const startMissing = handleGoogleStart({ headers: {}, query: '' });
+assert(
+  'google/start sem credenciais redireciona para entrar',
+  startMissing.statusCode === 302 && String(startMissing.headers.Location).includes('redirect_not_configured')
+);
+process.env.GOOGLE_CLIENT_ID = 'test-client.apps.googleusercontent.com';
+process.env.GOOGLE_CLIENT_SECRET = 'test-secret';
+const startOk = handleGoogleStart({
+  headers: { host: 'inspetorbudganja.com.br', 'x-forwarded-proto': 'https' },
+  query: 'returnTo=/perfil.html'
+});
+assert(
+  'google/start com credenciais vai ao Google',
+  startOk.statusCode === 302 && String(startOk.headers.Location).startsWith('https://accounts.google.com/o/oauth2/v2/auth')
+);
+assert('google/start define cookie de state', Array.isArray(startOk.setCookies) && startOk.setCookies.length === 1);
+const netlifyStart = toNetlifyResponse(startOk);
+assert(
+  'google/start Netlify usa Set-Cookie string',
+  typeof netlifyStart.headers['Set-Cookie'] === 'string' && netlifyStart.headers['Set-Cookie'].includes('budganja_oauth_state=')
+);
+const encoded = encodeOAuthState('/biblioteca/');
+assert('oauth state decodifica returnTo', decodeOAuthReturnTo(encoded) === '/biblioteca/');
+assert('oauth state rejeita returnTo externo', decodeOAuthReturnTo(encodeOAuthState('https://evil.test')) === '/perfil.html');
+if (prevGoogleId == null) delete process.env.GOOGLE_CLIENT_ID;
+else process.env.GOOGLE_CLIENT_ID = prevGoogleId;
+if (prevGoogleSecret == null) delete process.env.GOOGLE_CLIENT_SECRET;
+else process.env.GOOGLE_CLIENT_SECRET = prevGoogleSecret;
+
 console.log('\n=== Resultado: ' + passed + ' OK, ' + failed + ' falhas ===');
 process.exit(failed ? 1 : 0);

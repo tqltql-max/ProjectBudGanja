@@ -64,6 +64,96 @@ body[data-page="home"] .hero-content {
     animation: none !important;
 }
 
+body[data-page="home"] .hero.hero--inverno {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: auto;
+    background-color: #cfd6de;
+    background-image: none;
+    padding: 0;
+}
+
+body[data-page="home"] .hero.hero--inverno::before,
+body[data-page="home"] .hero.hero--inverno::after {
+    display: none;
+    content: none;
+}
+
+body[data-page="home"] .hero--inverno .hero-cover-link {
+    display: block;
+    width: 100%;
+    line-height: 0;
+}
+
+body[data-page="home"] .hero--inverno .hero-cover {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: min(78vh, 820px);
+    object-fit: cover;
+    object-position: center 45%;
+    animation: home-inverno-in 0.7s ease both;
+}
+
+@keyframes home-inverno-in {
+    from { opacity: 0.55; }
+    to { opacity: 1; }
+}
+
+body[data-page="home"] .hero--inverno .hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 1.1rem var(--space-page-x) 1.35rem;
+    background: #0c1208;
+    text-align: center;
+}
+
+body[data-page="home"] .hero--inverno .hero-title,
+body[data-page="home"] .hero--inverno .hero-content h1 {
+    margin: 0;
+    font-size: clamp(1.45rem, 3.6vw, 2.15rem);
+}
+
+body[data-page="home"] .hero--inverno .hero-subtitle {
+    margin: 0;
+    max-width: 36rem;
+}
+
+body[data-page="home"] .hero--inverno .hero-actions {
+    margin-top: 0.65rem;
+    justify-content: center;
+}
+
+body[data-page="home"] .hero--inverno .hero-actions .botao-home {
+    width: auto;
+    min-width: 12rem;
+}
+
+@media (max-width: 720px) {
+    body[data-page="home"] .hero.hero--inverno {
+        height: auto;
+        min-height: 0;
+        max-height: none;
+    }
+
+    body[data-page="home"] .hero--inverno .hero-cover {
+        max-height: min(58vh, 420px);
+    }
+}
+
 body[data-page="home"] .hero-subtitle,
 body[data-page="home"] .hero-content .hero-subtitle,
 body[data-page="home"] .hero-content p.hero-subtitle {
@@ -539,6 +629,14 @@ body[data-page="home"] .home-card--videos {
     --card-accent-strong: rgba(192, 57, 43, 0.34);
     --card-accent-border: rgba(231, 76, 60, 0.45);
     --card-label: #ffe8e8;
+}
+
+body[data-page="home"] .home-card--games {
+    --card-accent: #9ad15f;
+    --card-accent-soft: rgba(124, 186, 90, 0.16);
+    --card-accent-strong: rgba(90, 140, 48, 0.34);
+    --card-accent-border: rgba(154, 209, 95, 0.48);
+    --card-label: #eef8d8;
 }
 
 body[data-page="home"] .home-card--biblioteca {

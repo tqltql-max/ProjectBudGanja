@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T00:17:36.841Z",
+  "updatedAt": "2026-08-18T05:52:04.606Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3704,6 +3704,156 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "aleff",
+      "word": "Aleff",
+      "simple": "Aliffe Henrique de Carvalho (Aleff), de Machado (MG); no site, ficha em Pessoas — a pessoa, não a persona de ecrã.",
+      "simpleEn": "Aliffe Henrique de Carvalho (Aleff), from Machado (MG); on the site, a People sheet — the person, not the on-screen persona.",
+      "simpleEs": "Aliffe Henrique de Carvalho (Aleff), de Machado (MG); en el sitio, ficha en Personas — la persona, no la persona de pantalla.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-aleff.html"
+    },
+    {
+      "id": "de-volta-para-o-futuro",
+      "word": "De Volta para o Futuro",
+      "simple": "Filme de 1985 (Zemeckis/Gale); no site, inspeção em Artes com homenagem aos actores e fichas de Fox e Lloyd.",
+      "simpleEn": "1985 film (Zemeckis/Gale); on the site, an Arts inspection honoring the actors, with Fox and Lloyd sheets.",
+      "simpleEs": "Filme de 1985 (Zemeckis/Gale); en el sitio, inspección en Artes con homenaje a los actores y fichas de Fox y Lloyd.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-de-volta-para-o-futuro.html"
+    },
+    {
+      "id": "michael-j-fox",
+      "word": "Michael J. Fox",
+      "simple": "Actor (Michael Andrew Fox); no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não personagem.",
+      "simpleEn": "Actor (Michael Andrew Fox); on the site, a People sheet linked to Back to the Future — the person, not the character.",
+      "simpleEs": "Actor (Michael Andrew Fox); en el sitio, ficha en Personas con vínculo en Back to the Future — la persona, no el personaje.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-michael-j-fox.html"
+    },
+    {
+      "id": "christopher-lloyd",
+      "word": "Christopher Lloyd",
+      "simple": "Actor; no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não persona do Doc.",
+      "simpleEn": "Actor; on the site, a People sheet linked to Back to the Future — the person, not the Doc persona.",
+      "simpleEs": "Actor; en el sitio, ficha en Personas con vínculo en Back to the Future — la persona, no la persona de Doc.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-christopher-lloyd.html"
+    },
+    {
+      "id": "delorean",
+      "word": "DeLorean",
+      "simple": "Coupé DMC (Giugiaro, Dunmurry, 1981–82); no site, inspeção de objecto em Artes — o carro real; a máquina do filme é camada.",
+      "simpleEn": "DMC coupe (Giugiaro, Dunmurry, 1981–82); on the site, an Arts object sheet — the real car; the film machine is a layer.",
+      "simpleEs": "Cupé DMC (Giugiaro, Dunmurry, 1981–82); en el sitio, ficha de objeto en Artes — el coche real; la máquina del filme es capa.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-delorean.html"
+    },
+    {
+      "id": "questao-de-tempo",
+      "word": "Questão de Tempo",
+      "simple": "Filme de 2013 (About Time); no site, inspeção em Artes com destaque para o autor Richard Curtis.",
+      "simpleEn": "2013 film (About Time); on the site, an Arts inspection highlighting author Richard Curtis.",
+      "simpleEs": "Filme de 2013 (About Time); en el sitio, inspección en Artes con destaque para el autor Richard Curtis.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-questao-de-tempo.html"
+    },
+    {
+      "id": "richard-curtis",
+      "word": "Richard Curtis",
+      "simple": "Argumentista e realizador; no site, ficha em Pessoas com elo em Questão de Tempo — autor, não marca.",
+      "simpleEn": "Screenwriter and director; on the site, a People sheet linked to About Time — the author, not the brand.",
+      "simpleEs": "Guionista y director; en el sitio, ficha en Personas con vínculo en About Time — el autor, no la marca.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-richard-curtis.html"
+    },
+    {
+      "id": "um-sonho-de-liberdade",
+      "word": "Um Sonho de Liberdade",
+      "simple": "Filme de 1994 (The Shawshank Redemption); no site, inspeção em Artes com génese na novela de Stephen King (1982).",
+      "simpleEn": "1994 film (The Shawshank Redemption); on the site, an Arts inspection rooted in Stephen King’s 1982 novella.",
+      "simpleEs": "Filme de 1994 (The Shawshank Redemption); en el sitio, inspección en Artes con origen en la novela de Stephen King (1982).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-um-sonho-de-liberdade.html"
+    },
+    {
+      "id": "stephen-king",
+      "word": "Stephen King",
+      "simple": "Escritor; no site, ficha em Pessoas com elo em Um Sonho de Liberdade — autor, não marca de horror.",
+      "simpleEn": "Writer; on the site, a People sheet linked to The Shawshank Redemption — the author, not the horror brand.",
+      "simpleEs": "Escritor; en el sitio, ficha en Personas con vínculo en Um Sonho de Liberdade — el autor, no la marca de terror.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-stephen-king.html"
+    },
+    {
+      "id": "encontro-marcado",
+      "word": "Encontro Marcado",
+      "simple": "Filme de 1998 (Meet Joe Black); no site, inspeção em Artes com génese na peça de Alberto Casella (1924).",
+      "simpleEn": "1998 film (Meet Joe Black); on the site, an Arts inspection rooted in Alberto Casella’s 1924 play.",
+      "simpleEs": "Filme de 1998 (Meet Joe Black); en el sitio, inspección en Artes con origen en la obra de Alberto Casella (1924).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-encontro-marcado.html"
+    },
+    {
+      "id": "coracao-valente",
+      "word": "Coração Valente",
+      "simple": "Filme de 1995 (Braveheart); no site, inspeção em Artes com génese na lenda de Wallace / Blind Harry. Ficha própria, distinta de A Paixão de Cristo.",
+      "simpleEn": "1995 film (Braveheart); on the site, an Arts inspection rooted in the Wallace / Blind Harry legend. Own sheet, distinct from The Passion of the Christ.",
+      "simpleEs": "Filme de 1995 (Braveheart); en el sitio, inspección en Artes con origen en la leyenda de Wallace. Ficha propia, distinta de A Paixão de Cristo.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-coracao-valente.html"
+    },
+    {
+      "id": "a-paixao-de-cristo",
+      "word": "A Paixão de Cristo",
+      "simple": "Filme de 2004; no site, inspeção em Artes com génese nos Evangelhos. Ficha própria, distinta de Coração Valente.",
+      "simpleEn": "2004 film; on the site, an Arts inspection rooted in the Gospels. Own sheet, distinct from Braveheart.",
+      "simpleEs": "Filme de 2004; en el sitio, inspección en Artes con origen en los Evangelios. Ficha propia, distinta de Braveheart.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-a-paixao-de-cristo.html"
+    },
+    {
+      "id": "mel-gibson",
+      "word": "Mel Gibson",
+      "simple": "Actor e realizador; no site, ficha em Pessoas com elos em Coração Valente (1995) e A Paixão de Cristo (2004) — ofício, não cartaz nem dossiê.",
+      "simpleEn": "Actor and director; on the site, a People sheet linked to Braveheart (1995) and The Passion of the Christ (2004) — craft, not a poster or a dossier.",
+      "simpleEs": "Actor y director; en el sitio, ficha en Personas con vínculos en Braveheart (1995) y A Paixão de Cristo (2004) — oficio, no cartel ni dossier.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-mel-gibson.html"
+    },
+    {
+      "id": "friends",
+      "word": "Friends",
+      "simple": "Sitcom de 1994–2004; no site, inspeção em Artes — Crane / Kauffman; a série é o texto. Ficha própria, distinta de How I Met Your Mother.",
+      "simpleEn": "1994–2004 sitcom; on the site, an Arts inspection — Crane / Kauffman; the series is the text. Own sheet, distinct from How I Met Your Mother.",
+      "simpleEs": "Sitcom de 1994–2004; en el sitio, inspección en Artes — Crane / Kauffman. Ficha propia, distinta de How I Met Your Mother.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-serie-friends.html"
+    },
+    {
+      "id": "how-i-met-your-mother",
+      "word": "How I Met Your Mother",
+      "simple": "Sitcom de 2005–2014; no site, inspeção em Artes — Bays / Thomas; relato e tempo. Ficha própria, distinta de Friends.",
+      "simpleEn": "2005–2014 sitcom; on the site, an Arts inspection — Bays / Thomas; telling and time. Own sheet, distinct from Friends.",
+      "simpleEs": "Sitcom de 2005–2014; en el sitio, inspección en Artes — Bays / Thomas. Ficha propia, distinta de Friends.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-serie-how-i-met-your-mother.html"
     }
   ]
 }

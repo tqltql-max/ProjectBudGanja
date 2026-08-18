@@ -240,7 +240,14 @@ function resRedirect(res, location) {
   res.end();
 }
 
+function jogosWatchPath(pathname) {
+  const m = /^\/jogos\/(zangado|aleff|aleph|paulinho)\/([a-zA-Z0-9_-]{11})\/?$/.exec(String(pathname || ''));
+  return m ? '/jogos/video.html' : null;
+}
+
 function legacyRedirectFor(staticPath) {
+  if (staticPath === '/jogos/paulinho' || staticPath === '/jogos/paulinho/') return '/jogos/aleff/';
+  if (staticPath === '/jogos/aleph' || staticPath === '/jogos/aleph/') return '/jogos/aleff/';
   if (staticPath === '/calculadoras.html') return '/calculadoras/';
   if (staticPath === '/luximetro.html') return '/calculadoras/luximetro.html';
   if (staticPath === '/equipamentos.html') return '/equipamentos/';
@@ -477,6 +484,19 @@ const server = http.createServer((req, res) => {
         return serveDevModeApi(res, req);
       }
       const queryStr = (req.url.split('?')[1] || '');
+      if (url === '/api/auth/google/start' && req.method === 'GET') {
+        const { handleGoogleStart } = require('../lib/auth-google-start.js');
+        const started = handleGoogleStart({
+          headers: req.headers,
+          query: queryStr
+        });
+        setSecurityHeaders(res, req);
+        Object.entries(started.headers || {}).forEach(([k, v]) => res.setHeader(k, v));
+        (started.setCookies || []).forEach((c) => res.appendHeader('Set-Cookie', c));
+        res.writeHead(started.statusCode || started.status || 302);
+        res.end(started.body || '');
+        return;
+      }
       const sendApi = (body) => handleApiRequest({
         method: req.method,
         path: url,
@@ -519,6 +539,19 @@ const server = http.createServer((req, res) => {
     if (staticPath === '/equipamentos') staticPath = '/equipamentos/';
     if (staticPath === '/sorteios') staticPath = '/sorteios/';
     if (staticPath === '/videos') staticPath = '/videos/';
+    if (staticPath === '/jogos') staticPath = '/jogos/';
+    if ((url === '/jogos/' || url === '/jogos') && qs) {
+      const params = new URLSearchParams(qs.startsWith('?') ? qs.slice(1) : qs);
+      const canal = String(params.get('canal') || params.get('channel') || '').toLowerCase();
+      if (canal === 'zangado' || canal === 'zangadoreview' || canal === 'tio-zangado') {
+        return resRedirect(res, '/jogos/zangado/');
+      }
+      if (canal === 'paulinho' || canal === 'aleff' || canal === 'aleph' || canal === 'paulinholoko' || canal === 'paulinho-loko') {
+        return resRedirect(res, '/jogos/aleff/');
+      }
+    }
+    const jogosWatch = jogosWatchPath(url);
+    if (jogosWatch) staticPath = jogosWatch;
     if (staticPath === '/biblioteca') staticPath = '/biblioteca/';
     if (staticPath === '/biblioteca/pesquisas') staticPath = '/biblioteca/pesquisas/';
     if (staticPath === '/biblioteca/inspecoes') staticPath = '/biblioteca/inspecoes/';
@@ -606,20 +639,20 @@ function listenOnAvailablePort(startPort, onReady) {
   tryListen(basePort, 0);
 }
 
+listenOnAvailablePort(PORT, (effectivePort) => {
+  console.log('Server running at http://localhost:' + effectivePort);
+  console.log('Admin login: http://localhost:' + effectivePort + '/login.html');
+  if (isDevModeEnabled()) {
+    console.log('Modo desenvolvimento ATIVO — visitantes veem tela em construção (admin autenticado passa).');
+    console.log('Desative com SITE_DEV_MODE=0 no .env');
+  }
+});
+
 createAppStore({ root: ROOT, netlify: false }).then((store) => {
   appStore = store;
   const backend = store.backend || process.env.STORE_BACKEND || 'sql';
-  listenOnAvailablePort(PORT, (effectivePort) => {
-    console.log('Server running at http://localhost:' + effectivePort);
-    console.log('Admin login: http://localhost:' + effectivePort + '/login.html');
-    console.log('Store backend:', backend);
-    if (isDevModeEnabled()) {
-      console.log('Modo desenvolvimento ATIVO — visitantes veem tela em construção (admin autenticado passa).');
-      console.log('Desative com SITE_DEV_MODE=0 no .env');
-    }
-    auditStartupSecurity();
-  });
+  console.log('Store backend:', backend);
+  auditStartupSecurity();
 }).catch((err) => {
   console.error('Failed to initialize store:', err);
-  process.exit(1);
 });

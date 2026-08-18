@@ -174,7 +174,12 @@
 
   var TOPIC_ORDER = ['cultivo', 'unifesp', 'saude', 'plantas', 'ciencia'];
 
-  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'disneyjr', 'zangado', 'paulinho'];
+  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'disneyjr'];
+  var GAMES_CHANNELS = { zangado: true, paulinho: true };
+
+  function isGamesChannel(id) {
+    return !!GAMES_CHANNELS[id];
+  }
 
   var cachedHub = null;
   var selectedId = '';
@@ -598,6 +603,10 @@
       list = list.filter(function (v) {
         return v.channel === channel;
       });
+    } else {
+      list = list.filter(function (v) {
+        return !isGamesChannel(v.channel);
+      });
     }
     if (series) {
       list = list.filter(function (v) {
@@ -659,7 +668,7 @@
         grouped = grouped.concat(sortChannelVideos(chunk, id));
       }
       var rest = list.filter(function (v) {
-        return CHANNEL_ORDER.indexOf(v.channel) < 0;
+        return CHANNEL_ORDER.indexOf(v.channel) < 0 && !isGamesChannel(v.channel);
       });
       return grouped.concat(sortChannelVideos(rest, ''));
     }
@@ -827,6 +836,7 @@
       if (byId[CHANNEL_ORDER[j]]) ordered.push(byId[CHANNEL_ORDER[j]]);
     }
     for (var k = 0; k < list.length; k++) {
+      if (isGamesChannel(list[k].id)) continue;
       if (CHANNEL_ORDER.indexOf(list[k].id) < 0) ordered.push(list[k]);
     }
     return ordered;
@@ -856,7 +866,10 @@
 
   function renderFilters() {
     if (!filtersEl || !cachedHub) return;
-    var channels = [{ id: 'all', label: i18n('pages.videos.filterAll', 'Todos'), count: (cachedHub.videos || []).length }]
+    var labCount = ((cachedHub.videos || []).filter(function (v) {
+      return !isGamesChannel(v.channel);
+    })).length;
+    var channels = [{ id: 'all', label: i18n('pages.videos.filterAll', 'Todos'), count: labCount }]
       .concat(orderedChannels());
     // Com canal selecionado, só "Todos" + o ativo — as outras categorias ficam ocultas.
     if (activeChannel && activeChannel !== 'all') {
@@ -1416,6 +1429,12 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
+    var gamesChannel = readFilterFromUrl().channel;
+    if (isGamesChannel(gamesChannel)) {
+      window.location.replace(gamesChannel === 'paulinho' ? '/jogos/aleff/' : '/jogos/zangado/');
+      return;
+    }
+
     var grid = document.getElementById('videos-list');
     filtersEl = document.getElementById('videos-filters');
     searchEl = document.getElementById('videos-search');

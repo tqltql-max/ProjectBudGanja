@@ -29,6 +29,20 @@ function ensureAttr(html, tagRe, attr) {
   });
 }
 
+wireFile('jogos/index.html', (h) => {
+  let out = h;
+  out = out.replace(
+    /<p class="guia-badge">Jogos<\/p>/,
+    '<p class="guia-badge" data-i18n="pages.games.eyebrow">Jogos</p>'
+  );
+  out = out.replace(/<h1>Jogos<\/h1>/, '<h1 data-i18n="pages.games.title">Jogos</h1>');
+  out = out.replace(
+    /<p class="secao-subtitulo">([\s\S]*?)<\/p>/,
+    (m) => m.includes('data-i18n') ? m : '<p class="secao-subtitulo" data-i18n="pages.games.subtitle">$1</p>'.replace('$1', m.replace(/<\/?p[^>]*>/g, ''))
+  );
+  return out;
+});
+
 // videos
 wireFile('videos/index.html', (h) => {
   let out = h;

@@ -18,10 +18,6 @@
     <meta name="twitter:description" content="Laboratório de fitoterapia brasileira: plantas medicinais, formação UNIFESP e cultivo responsável.">
     <meta name="twitter:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
     <link rel="canonical" href="https://inspetorbudganja.com.br/">
-
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="BudGanja">
     <link rel="icon" href="/imagens/favicon-32.v313.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/imagens/favicon-48.v313.png" sizes="48x48" type="image/png">
     <link rel="icon" href="/imagens/favicon-16.v313.png" sizes="16x16" type="image/png">
@@ -31,8 +27,11 @@
     <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v313.png">
     <link rel="manifest" href="/manifest.json?v=313">
     <meta name="theme-color" content="#a68628">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BudGanja">
     <link rel="stylesheet" href="/css/style.css?v=313">
-    <link rel="preload" as="image" type="image/webp" href="/imagens/background-hero-960.webp?v=7f1482449a" imagesrcset="/imagens/background-hero-640.webp?v=7f1482449a 640w, /imagens/background-hero-960.webp?v=7f1482449a 960w, /imagens/background-hero.webp?v=7f1482449a 1400w" imagesizes="100vw" fetchpriority="high">
+    <link rel="preload" as="image" href="/imagens/inspecoes/bom-dia-inverno-cover.jpg" fetchpriority="high">
     <title>Início | Inspetor BudGanja</title>
 </head>
 <body data-page="home">
@@ -40,44 +39,23 @@
 
     <main id="main-content">
     <div class="lab-atmosphere" aria-hidden="true"></div>
-    <section class="hero">
-        <picture>
-            <source
-                type="image/avif"
-                srcset="/imagens/background-hero-640.avif?v=7f1482449a 640w, /imagens/background-hero-960.avif?v=7f1482449a 960w, /imagens/background-hero.avif?v=7f1482449a 1400w"
-                sizes="100vw">
-            <source
-                type="image/webp"
-                srcset="/imagens/background-hero-640.webp?v=7f1482449a 640w, /imagens/background-hero-960.webp?v=7f1482449a 960w, /imagens/background-hero.webp?v=7f1482449a 1400w"
-                sizes="100vw">
-            <img class="hero-media" src="/imagens/background-hero.jpg?v=7f1482449a" alt="" width="1400" height="440" decoding="async" fetchpriority="high">
-        </picture>
-        <span class="hero-shine" aria-hidden="true"></span>
+    <section class="hero hero--inverno">
+        <a class="hero-cover-link" href="/posts/post-inspecao-arte-bom-dia-inverno.html">
+            <img
+                class="hero-cover"
+                src="/imagens/inspecoes/bom-dia-inverno-cover.jpg"
+                alt="Bom dia, Inverno — Tamara Klink"
+                width="1200"
+                height="630"
+                decoding="async"
+                fetchpriority="high">
+        </a>
         <div class="hero-content">
-            <p class="hero-eyebrow" data-i18n="pages.home.heroEyebrow">Fitoterapia brasileira · educação e cultivo responsável</p>
             <h1 class="hero-title" data-i18n="pages.home.heroTitle">Inspetor BudGanja</h1>
-            <p class="hero-subtitle" data-i18n="pages.home.heroSubtitle">Plantas medicinais do Brasil, extensão académica e laboratório prático num só lugar.</p>
-        </div>
-    </section>
-
-    <section id="home-promo-banner" class="home-announcement home-announcement--promo">
-        <div class="conteudo home-announcement-inner home-announcement-inner--promo">
-            <a href="/posts/post-inspecao-arte-bom-dia-inverno.html" class="home-promo-cover-link" aria-hidden="true" tabindex="-1">
-                <img
-                    class="home-promo-cover"
-                    src="/imagens/inspecoes/bom-dia-inverno-cover.jpg"
-                    alt=""
-                    width="1200"
-                    height="630"
-                    decoding="async"
-                >
-            </a>
-            <div class="home-announcement-copy">
-                <p class="home-announcement-badge" data-i18n="pages.home.promoBadge">Divulgação</p>
-                <h2 data-i18n="pages.home.promoTitle">Bom dia, Inverno — Tamara Klink</h2>
-                <p class="home-announcement-prize" data-i18n="pages.home.promoText">Invernagem ártica no laboratório: livro, léxico e mapa do site.</p>
+            <p class="hero-subtitle" data-i18n="pages.home.heroSubtitle">Bom dia, Inverno — Tamara Klink.</p>
+            <div class="hero-actions">
+                <a href="/posts/post-inspecao-arte-bom-dia-inverno.html" class="botao botao-home" data-i18n="pages.home.promoJoin">Abrir divulgação</a>
             </div>
-            <a href="/posts/post-inspecao-arte-bom-dia-inverno.html" class="botao botao-home" data-i18n="pages.home.promoJoin">Abrir divulgação</a>
         </div>
     </section>
 
@@ -105,6 +83,12 @@
                     <h3 data-i18n="pages.home.cardVideosTitle">Vídeos</h3>
                     <p data-i18n="pages.home.cardVideosText">Conteúdo do canal @InspetorBudGanja — inspeções, tutoriais e novidades do laboratório.</p>
                     <a href="/videos/" class="botao botao-home" data-i18n="pages.home.cardVideosBtn">Ver vídeos</a>
+                </article>
+                <article class="card home-card home-card--games has-hover-tip" data-tip="Zangado e Paulinho o LOKO — página só de jogos." data-i18n-tip="pages.home.cardGamesTip">
+                    <div class="card-icon card-icon--games" aria-hidden="true">🎮</div>
+                    <h3 data-i18n="pages.home.cardGamesTitle">Jogos</h3>
+                    <p data-i18n="pages.home.cardGamesText">Zangado e Paulinho o LOKO — catálogos na página de jogos, separados dos vídeos do laboratório.</p>
+                    <a href="/jogos/" class="botao botao-home" data-i18n="pages.home.cardGamesBtn">Abrir jogos</a>
                 </article>
                 <article class="card home-card home-card--biblioteca has-hover-tip" data-auth-only hidden data-tip="Inspeções, UNIFESP, guias, pesquisas, plantas e animais." data-i18n-tip="pages.home.cardBibliotecaTip">
                     <div class="card-icon card-icon--biblioteca" aria-hidden="true">📚</div>
@@ -217,9 +201,7 @@
     </main>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=313"></script>
     <script src="/js/i18n-data.js?v=313"></script>
-    <script src="/js/page-translations-data.js?v=313"></script>
     <script src="/js/i18n.js?v=313"></script>
     <script src="/js/ferramentas-nav-data.js?v=313"></script>
     <script src="/js/layout.js?v=313"></script>

@@ -25,7 +25,11 @@ function resolveApiPath(event) {
 exports.handler = async (event) => {
   const apiPath = resolveApiPath(event);
   const method = event.httpMethod || 'GET';
-  const lightAuth = (apiPath === '/api/auth/registration-status' || apiPath === '/api/auth/config') && method === 'GET';
+  const lightAuth = (
+    apiPath === '/api/auth/registration-status'
+    || apiPath === '/api/auth/config'
+    || apiPath === '/api/auth/google/start'
+  ) && method === 'GET';
   try {
     connectLambda(event);
   } catch (e) {
@@ -66,6 +70,80 @@ exports.handler = async (event) => {
         googleRedirectEnabled: !!(googleClientId && getGoogleClientSecret())
       })
     };
+  }
+
+  // Caminho leve: não abre Turso/blobs. O store no cold start estourava o timeout (502).
+  if (apiPath === '/api/auth/google/start' && method === 'GET') {
+    try {
+      const { handleGoogleStart, toNetlifyResponse } = require('../../lib/auth-google-start.js');
+      const query = event.rawQuery
+        || (event.rawUrl && String(event.rawUrl).includes('?') ? String(event.rawUrl).split('?')[1] : '')
+        || new URLSearchParams(event.queryStringParameters || {}).toString();
+      return toNetlifyResponse(handleGoogleStart({
+        headers: event.headers || {},
+        query
+      }));
+    } catch (e) {
+      return {
+        statusCode: 302,
+        headers: { Location: '/entrar.html?error=server_error', 'Cache-Control': 'no-store' },
+        body: ''
+      };
+    }
+  }
+
+  const { isGoogleAuthRoute, handleGoogleAuth } = require('../../lib/auth-google-oauth.js');
+  if (isGoogleAuthRoute(apiPath, method)) {
+    const { getGoogleClientId, getGoogleClientSecret } = require('../../lib/utils.js');
+    if (apiPath === '/api/auth/google/start' && method === 'GET' && (!getGoogleClientId() || !getGoogleClientSecret())) {
+      return {
+        statusCode: 302,
+        headers: { Location: '/entrar.html?error=redirect_not_configured', 'Cache-Control': 'no-store' },
+        body: ''
+      };
+    }
+    let authStore = null;
+    try {
+      const { createAppStore } = require('../../lib/create-store.js');
+      authStore = await createAppStore({ root: ROOT, netlify: true });
+    } catch (e) {
+      authStore = null;
+    }
+    try {
+      const query = event.rawQuery
+        || (event.rawUrl && String(event.rawUrl).includes('?') ? String(event.rawUrl).split('?')[1] : '')
+        || new URLSearchParams(event.queryStringParameters || {}).toString();
+      const response = await handleGoogleAuth({
+        method,
+        path: apiPath,
+        headers: event.headers || {},
+        body: event.body,
+        isBase64Encoded: event.isBase64Encoded,
+        query
+      }, { store: authStore });
+      if (!response) {
+        return {
+          statusCode: 404,
+          headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+          body: JSON.stringify({ error: 'Rota não encontrada.' })
+        };
+      }
+      const outHeaders = Object.assign({ 'Cache-Control': 'no-store' }, response.headers || {});
+      if (response.setCookies && response.setCookies.length) {
+        outHeaders['Set-Cookie'] = response.setCookies;
+      }
+      return {
+        statusCode: response.statusCode || response.status || 302,
+        headers: outHeaders,
+        body: response.body || ''
+      };
+    } catch (e) {
+      return {
+        statusCode: 302,
+        headers: { Location: '/entrar.html?error=server_error', 'Cache-Control': 'no-store' },
+        body: ''
+      };
+    }
   }
 
   const { isLightAuthRoute, handleLightAuth } = require('../../lib/auth-api-light.js');
@@ -124,25 +202,35 @@ exports.handler = async (event) => {
     };
   }
 
-  const query = (event.rawQuery || event.rawUrl || '').split('?')[1] || '';
+  const query = event.rawQuery
+    || (event.rawUrl && String(event.rawUrl).includes('?') ? String(event.rawUrl).split('?')[1] : '')
+    || '';
 
-  const response = await handleApiRequest({
-    method: method,
-    path: apiPath,
-    headers: event.headers || {},
-    body: event.body,
-    isBase64Encoded: event.isBase64Encoded,
-    query
-  }, { store, root: null, fsFallback: ROOT });
+  try {
+    const response = await handleApiRequest({
+      method: method,
+      path: apiPath,
+      headers: event.headers || {},
+      body: event.body,
+      isBase64Encoded: event.isBase64Encoded,
+      query
+    }, { store, root: null, fsFallback: ROOT });
 
-  const outHeaders = Object.assign({ 'Cache-Control': 'no-store' }, response.headers || {});
-  if (response.setCookies && response.setCookies.length) {
-    outHeaders['Set-Cookie'] = response.setCookies;
+    const outHeaders = Object.assign({ 'Cache-Control': 'no-store' }, response.headers || {});
+    if (response.setCookies && response.setCookies.length) {
+      outHeaders['Set-Cookie'] = response.setCookies;
+    }
+
+    return {
+      statusCode: response.status,
+      headers: outHeaders,
+      body: response.body
+    };
+  } catch (e) {
+    return {
+      statusCode: 500,
+      headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+      body: JSON.stringify({ error: 'Servidor indisponível. Tente novamente em instantes.' })
+    };
   }
-
-  return {
-    statusCode: response.status,
-    headers: outHeaders,
-    body: response.body
-  };
 };
