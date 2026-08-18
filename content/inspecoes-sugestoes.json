@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T08:32:35.389Z",
+  "updatedAt": "2026-08-18T17:07:28.187Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5552,6 +5552,30 @@
         "/videos/?channel=amyr",
         "/posts/post-inspecao-amyr-klink.html"
       ]
+    },
+    {
+      "id": "site-tamaraklink",
+      "title": "tamaraklink.com — carta náutica digital do Ártico",
+      "titleEn": "tamaraklink.com — digital nautical chart of the Arctic",
+      "titleEs": "tamaraklink.com — carta náutica digital del Ártico",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Site oficial: mapa de expedições, Lectures, tracking PredictWind — distinto da ficha de pessoa e do canal YouTube.",
+      "whyEn": "Official site: expedition map, Lectures, PredictWind tracking — distinct from person sheet and YouTube channel.",
+      "whyEs": "Sitio oficial: mapa de expediciones, Lectures, tracking PredictWind — distinto de la ficha de persona y del canal de YouTube.",
+      "suggestedSlug": "inspecao-site-tamaraklink",
+      "doneHref": "/posts/post-inspecao-site-tamaraklink.html",
+      "seriesHint": "legado-pessoas",
+      "sources": [
+        "https://www.tamaraklink.com/",
+        "https://www.tamaraklink.com/items-1",
+        "https://www.tamaraklink.com/lectures-2",
+        "https://www.tamaraklink.com/contact",
+        "/posts/post-inspecao-tamara-klink.html",
+        "/posts/post-inspecao-canal-tamaraklink.html"
+      ],
+      "notes": "Site ≠ pessoa ≠ canal. Indexar ≠ endosso."
     }
   ]
 }

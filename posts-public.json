@@ -665,6 +665,25 @@
     "seriesLabel": "Abacaxi · fruto"
   },
   {
+    "title": "Inspeção: tamaraklink.com — carta náutica digital do Ártico",
+    "titleEn": "Inspection: tamaraklink.com — digital nautical chart of the Arctic",
+    "titleEs": "Inspección: tamaraklink.com — carta náutica digital del Ártico",
+    "excerpt": "Site oficial de Tamara Klink: mapa de expedições (Mar do Norte → Passagem Noroeste), Lectures, tracking PredictWind do Sardinha 2 — distinto da ficha de pessoa e do canal YouTube.",
+    "excerptEn": "Tamara Klink’s official site: expedition map (North Sea → Northwest Passage), Lectures, PredictWind tracking of Sardinha 2 — distinct from person sheet and YouTube channel.",
+    "excerptEs": "Sitio oficial de Tamara Klink: mapa de expediciones (Mar del Norte → Paso del Noroeste), Lectures, tracking PredictWind del Sardinha 2 — distinto de la ficha de persona y del canal de YouTube.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-site-tamaraklink",
+    "url": "/posts/post-inspecao-site-tamaraklink.html",
+    "date": "2026-08-18T18:00:00.000Z",
+    "filename": "posts/post-inspecao-site-tamaraklink.html",
+    "coverImage": "/imagens/inspecoes/tamara-klink-cover.jpg",
+    "category": "inspecao",
+    "series": "legado-pessoas",
+    "seriesOrder": 9,
+    "seriesLabel": "Tamara Klink · site"
+  },
+  {
     "title": "Inspeção: filho de deus — título, oralidade e dignidade",
     "titleEn": "Inspection: filho de deus — title, orality and dignity",
     "titleEs": "Inspección: filho de deus — título, oralidad y dignidad",

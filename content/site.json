@@ -1,11 +1,11 @@
 {
   "siteName": "Inspetor BudGanja",
-  "siteTagline": "Laboratório de cultivo",
-  "footerText": "© 2026 Inspetor BudGanja. Conteúdo educacional.",
-  "privacyUpdated": "26 de junho de 2026",
-  "ogImage": "/imagens/background-hero.png",
-  "contactEmail": "inspetorbudganja@gmail.com",
-  "youtubeChannelUrl": "https://www.youtube.com/@InspetorBudGanja",
+  "siteTagline": "Laboratório de fitoterapia brasileira",
+  "footerText": "© 2026 Inspetor BudGanja. Conteúdo educacional sobre plantas medicinais do Brasil.",
+  "privacyUpdated": "1 de agosto de 2026",
+  "ogImage": "/imagens/og-default.jpg",
+  "contactEmail": "tql.tql@gmail.com",
+  "youtubeChannelUrl": "/videos/",
   "youtubeChannelLabel": "Canal @InspetorBudGanja",
   "youtubeJardimUrl": "",
   "youtubeJardimLabel": "",
@@ -62,6 +62,15 @@
               "description": "Conto familiar: cuidar de plantas com ciência, natureza e amizade."
             },
             {
+              "label": "Bom dia, Inverno",
+              "tileLabel": "Inverno",
+              "href": "/inverno/",
+              "icon": "❄️",
+              "slug": "inverno",
+              "featured": true,
+              "description": "Divulgação do livro de Tamara Klink — fazer circular."
+            },
+            {
               "label": "Guias",
               "tileLabel": "Guias",
               "icon": "📚",
@@ -85,6 +94,15 @@
                   "slug": "guia-preparo-cha-plantas",
                   "featured": true,
                   "description": "Manual: infusão, decoção, proporções e segurança no preparo caseiro."
+                },
+                {
+                  "label": "Receitas de plantas",
+                  "tileLabel": "Receitas de plantas",
+                  "href": "/posts/post-inspecao-guia-receitas-plantas.html",
+                  "icon": "🌿",
+                  "slug": "guia-receitas-plantas",
+                  "featured": true,
+                  "description": "Lote 1: oito tisanas de ofício com elos ao catálogo Plantas."
                 },
                 {
                   "label": "Clonadoras",
@@ -407,6 +425,14 @@
                   "description": "Artes: A Última Casa de Ópio (*The Last Opium Den*, 2002) — livro-reportagem de Nick Tosches; viagem, memória das dens e crítica ao consumismo. Autor em Pessoas. Sem romantizar ópio."
                 },
                 {
+                  "label": "Inspeção: Amyr Klink — navegador e legado de caminho",
+                  "tileLabel": "Inspeção: Amyr Klink — navegado…",
+                  "href": "/posts/post-inspecao-amyr-klink.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-amyr-klink",
+                  "description": "Ficha de legado: Amyr Klink — pioneiro da travessia a remo do Atlântico Sul (1984); planeamento, risco e ofício que continua na filha Tamara."
+                },
+                {
                   "label": "Inspeção: Planta — Espinheira-santa — friedelina e triterpenos",
                   "tileLabel": "Inspeção: Planta — Espinheira-s…",
                   "href": "/posts/post-inspecao-planta-espinheira-santa.html",
@@ -455,6 +481,14 @@
                   "description": "Artes: A História das Coisas (*The Story of Stuff*, 2010/2011) — livro de Annie Leonard sobre a economia linear das coisas; vídeo 2007 como precursor. Autora em Pessoas."
                 },
                 {
+                  "label": "Inspeção: Tamara Klink — legado vivo no Ártico",
+                  "tileLabel": "Inspeção: Tamara Klink — legado…",
+                  "href": "/posts/post-inspecao-tamara-klink.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-tamara-klink",
+                  "description": "Ficha de legado vivo: Tamara Klink — filha de Amyr; Atlântico, invernagem ártica e Passagem Noroeste em solitário; crédito junto do pai no hub Legado."
+                },
+                {
                   "label": "Inspeção: Planta — Guaco — cumarina e trepadeira respiratória",
                   "tileLabel": "Inspeção: Planta — Guaco — cuma…",
                   "href": "/posts/post-inspecao-planta-guaco.html",
@@ -469,6 +503,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-abacaxi",
                   "description": "Relatório educacional de Abacaxi (*Ananas comosus (L.) Merr.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: tamaraklink.com — carta náutica digital do Ártico",
+                  "tileLabel": "Inspeção: tamaraklink.com — car…",
+                  "href": "/posts/post-inspecao-site-tamaraklink.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-site-tamaraklink",
+                  "description": "Site oficial de Tamara Klink: mapa de expedições (Mar do Norte → Passagem Noroeste), Lectures, tracking PredictWind do Sardinha 2 — distinto da ficha de pessoa e do canal YouTube."
                 },
                 {
                   "label": "Inspeção: filho de deus — título, oralidade e dignidade",
@@ -615,6 +657,14 @@
                   "description": "Relatório educacional de Morango (*Fragaria × ananassa Duchesne): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
                 },
                 {
+                  "label": "Inspeção: canal Tamara Klink — arquivo de travessias e léxico",
+                  "tileLabel": "Inspeção: canal Tamara Klink — …",
+                  "href": "/posts/post-inspecao-canal-tamaraklink.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-canal-tamaraklink",
+                  "description": "Canais: Tamara Klink (@TamaraKlink) — catálogo YouTube; avó Ana Francesca nomeou o Sardinha; pai Amyr junto no hub."
+                },
+                {
                   "label": "Inspeção: Michael J. Fox — presença, ofício e elo com De Volta para o Futuro",
                   "tileLabel": "Inspeção: Michael J. Fox — pres…",
                   "href": "/posts/post-inspecao-figura-michael-j-fox.html",
@@ -669,6 +719,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-maracuja-fruta",
                   "description": "Relatório educacional de Maracujá (fruta) (*Passiflora edulis Sims): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: canal Amyr Klink — ofício do pai, junto da Tamara",
+                  "tileLabel": "Inspeção: canal Amyr Klink — of…",
+                  "href": "/posts/post-inspecao-canal-amyrklink.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-canal-amyrklink",
+                  "description": "Canais: Amyr Klink (@amyrklinkoficial) — catálogo YouTube do pai; no hub aparece junto dos vídeos da Tamara."
                 },
                 {
                   "label": "Inspeção: Christopher Lloyd — presença, improviso e elo com De Volta para o Futuro",
@@ -2312,28 +2370,12 @@
                   "description": "Pessoas × Artes: Anthony Henman — método etnobotânico e antiproibicionista, com elo principal na antologia Diamba Sarabamba (1986); distinto do Legado canábico."
                 },
                 {
-                  "label": "Inspeção: Tamara Klink — legado vivo no Ártico",
-                  "tileLabel": "Inspeção: Tamara Klink — legado…",
-                  "href": "/posts/post-inspecao-tamara-klink.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-tamara-klink",
-                  "description": "Ficha de legado vivo: Tamara Klink — filha de Amyr; Atlântico, invernagem ártica e Passagem Noroeste em solitário; crédito junto do pai no hub Legado."
-                },
-                {
                   "label": "Inspeção: Diamba Sarabamba — a coletânea pioneira de 1986 sobre a maconha no Brasil",
                   "tileLabel": "Inspeção: Diamba Sarabamba — a …",
                   "href": "/posts/post-inspecao-arte-diamba-sarabamba.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-arte-diamba-sarabamba",
                   "description": "Artes: Diamba Sarabamba (Ground, 1986) — coletânea de Henman e Pessoa Jr.; arquivo pioneiro do debate brasileiro sobre a diamba/maconha. Organizador em Pessoas."
-                },
-                {
-                  "label": "Inspeção: Amyr Klink — navegador e legado de caminho",
-                  "tileLabel": "Inspeção: Amyr Klink — navegado…",
-                  "href": "/posts/post-inspecao-amyr-klink.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-amyr-klink",
-                  "description": "Ficha de legado: Amyr Klink — pioneiro da travessia a remo do Atlântico Sul (1984); planeamento, risco e ofício que continua na filha Tamara."
                 },
                 {
                   "label": "Inspeção: Jostein Gaarder — filosofia narrada e elo com O Dia do Curinga",
@@ -2789,8 +2831,12 @@
       "href": "/"
     },
     {
-      "label": "Guia de Cultivo",
-      "href": "/guia/cultivo-basico.html"
+      "label": "Plantas",
+      "href": "/plantas/"
+    },
+    {
+      "label": "Curso UNIFESP",
+      "href": "/biblioteca/unifesp/"
     },
     {
       "label": "Pesquisas",
@@ -2801,20 +2847,32 @@
       "href": "/biblioteca/inspecoes/"
     },
     {
+      "label": "Vídeos",
+      "href": "/videos/"
+    },
+    {
       "label": "Equipamentos",
       "href": "/equipamentos/"
     },
     {
-      "label": "Calculadoras",
+      "label": "Ferramentas",
       "href": "/calculadoras/"
     },
     {
-      "label": "Luxímetro",
-      "href": "/calculadoras/luximetro.html"
+      "label": "Diário de pesquisas",
+      "href": "/cultivo/"
     },
     {
-      "label": "Últimos vídeos",
-      "href": "/videos/"
+      "label": "Comunidade",
+      "href": "/comunidade/"
+    },
+    {
+      "label": "BudGanja Radio",
+      "href": "/radio/"
+    },
+    {
+      "label": "Sorteios",
+      "href": "/sorteios/"
     }
   ],
   "footerGroups": [
@@ -2822,20 +2880,24 @@
       "title": "Biblioteca",
       "links": [
         {
-          "label": "Guia de Cultivo",
-          "href": "/guia/cultivo-basico.html"
+          "label": "Plantas",
+          "href": "/plantas/"
         },
         {
-          "label": "Últimos vídeos",
-          "href": "/videos/"
+          "label": "Curso UNIFESP",
+          "href": "/biblioteca/unifesp/"
+        },
+        {
+          "label": "Inspeções",
+          "href": "/biblioteca/inspecoes/"
         },
         {
           "label": "Pesquisas",
           "href": "/biblioteca/pesquisas/"
         },
         {
-          "label": "Inspeções",
-          "href": "/biblioteca/inspecoes/"
+          "label": "Vídeos",
+          "href": "/videos/"
         },
         {
           "label": "Equipamentos",
@@ -2847,7 +2909,7 @@
       "title": "Ferramentas",
       "links": [
         {
-          "label": "Calculadoras",
+          "label": "Ferramentas",
           "href": "/calculadoras/"
         },
         {
@@ -2855,12 +2917,29 @@
           "href": "/calculadoras/luximetro.html"
         },
         {
-          "label": "Clonadora de 6 estacas",
-          "href": "/equipamentos/clonadora-6-estacas.html"
+          "label": "Solo",
+          "href": "/calculadoras/super-solo.html"
         },
         {
-          "label": "Clonadora de 12 estacas",
-          "href": "/equipamentos/clonadora-12-estacas.html"
+          "label": "Diário de pesquisas",
+          "href": "/cultivo/"
+        }
+      ]
+    },
+    {
+      "title": "Comunidade",
+      "links": [
+        {
+          "label": "Feed Vivo",
+          "href": "/comunidade/"
+        },
+        {
+          "label": "BudGanja Radio",
+          "href": "/radio/"
+        },
+        {
+          "label": "Sorteios",
+          "href": "/sorteios/"
         }
       ]
     },
@@ -2874,10 +2953,6 @@
         {
           "label": "Contato",
           "href": "/info/contato.html"
-        },
-        {
-          "label": "Sorteios",
-          "href": "/sorteios/"
         },
         {
           "label": "Privacidade",
