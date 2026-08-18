@@ -106,6 +106,30 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('build:paulinho', 'build-paulinho-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:paulinho:', e.message);
+  }
+
+  try {
+    runStep('build:zangado', 'build-zangado-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:zangado:', e.message);
+  }
+
+  try {
+    runStep('build:tamara', 'build-tamara-klink-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:tamara:', e.message);
+  }
+
+  try {
+    runStep('build:amyr', 'build-amyr-klink-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:amyr:', e.message);
+  }
+
+  try {
     runStep('build:videos-hub', 'build-videos-hub.js');
   } catch (e) {
     console.warn('Aviso build:videos-hub:', e.message);

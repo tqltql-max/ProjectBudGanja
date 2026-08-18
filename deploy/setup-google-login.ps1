@@ -48,7 +48,10 @@ Write-Host '  2. Credentials → Create credentials → OAuth client ID → Web 
 Write-Host '  3. Authorized JavaScript origins:'
 Write-Host '       https://inspetorbudganja.com.br'
 Write-Host '       http://localhost:8080'
-Write-Host '  4. Copie o Client ID (....apps.googleusercontent.com)'
+Write-Host '  4. Authorized redirect URIs:'
+Write-Host '       https://inspetorbudganja.com.br/api/auth/google/callback'
+Write-Host '       http://localhost:8080/api/auth/google/callback'
+Write-Host '  5. Copie o Client ID e o Client Secret'
 Write-Host ''
 
 $open = Read-Host 'Abrir Google Cloud Console agora? [S/n]'
@@ -70,6 +73,19 @@ if ($clientId -and $clientId.Trim()) {
 } else {
   Write-Host 'GOOGLE_CLIENT_ID nao alterado.' -ForegroundColor Yellow
 }
+
+Write-Host ''
+$clientSecret = Read-Host 'Cole aqui o GOOGLE_CLIENT_SECRET (ou Enter para saltar)'
+if ($clientSecret -and $clientSecret.Trim()) {
+  Set-EnvKey $EnvFile 'GOOGLE_CLIENT_SECRET' $clientSecret.Trim()
+  Write-Host 'GOOGLE_CLIENT_SECRET guardado no .env' -ForegroundColor Green
+} else {
+  Write-Host 'GOOGLE_CLIENT_SECRET nao alterado.' -ForegroundColor Yellow
+}
+
+Write-Host ''
+Write-Host 'Producao Netlify: Site settings → Environment variables →' -ForegroundColor Cyan
+Write-Host '  GOOGLE_CLIENT_ID e GOOGLE_CLIENT_SECRET, depois Redeploy.' -ForegroundColor Cyan
 
 if (-not (Get-Content $EnvFile -Encoding UTF8 | Where-Object { $_ -match '^\s*SITE_URL\s*=' })) {
   Set-EnvKey $EnvFile 'SITE_URL' 'https://inspetorbudganja.com.br'

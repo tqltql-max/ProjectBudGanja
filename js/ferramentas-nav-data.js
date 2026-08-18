@@ -73,15 +73,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Manual: infusão, decoção, proporções e segurança no preparo caseiro."
             },
             {
-              "label": "Receitas de plantas",
-              "tileLabel": "Receitas de plantas",
-              "href": "/posts/post-inspecao-guia-receitas-plantas.html",
-              "icon": "🌿",
-              "slug": "guia-receitas-plantas",
-              "featured": true,
-              "description": "Lote 1: oito tisanas de ofício com elos ao catálogo Plantas."
-            },
-            {
               "label": "Clonadoras",
               "tileLabel": "Clonadoras",
               "icon": "🌱",
@@ -199,6 +190,23 @@ window.__BIBLIOTECA_NAV__ = {
               "slug": "inspecoes",
               "featured": true,
               "description": "Canais, equipamentos, insumos e formação."
+            },
+            {
+              "label": "Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo",
+              "tileLabel": "Divulgação: Bom dia, Inverno — …",
+              "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-bom-dia-inverno",
+              "description": "Bom dia, Inverno como mudinha da Vida: invernagem no gelo, léxico, Artes irmãs (Águas / Lágrimas) e Legado Klink.",
+              "featured": true
+            },
+            {
+              "label": "Caderno de jogo 1: GTA 6 — a cidade anunciada",
+              "tileLabel": "Caderno de jogo 1: GTA 6 — a ci…",
+              "href": "/posts/post-inspecao-jogo-gta6.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-jogo-gta6",
+              "description": "Primeiro caderno de jogo: Grand Theft Auto VI ainda em pré-estreia (19 nov. 2026) — Vice City / Leonida, Lucia e Jason, hype e método. Sem walkthrough."
             },
             {
               "label": "Inspeção: Endocanabinoidoma — mapa neurocientífico do ofício",
@@ -505,6 +513,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Cacau (*Theobroma cacao L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
+              "label": "Inspeção: Canal MovReCam — aulas UNIFESP",
+              "tileLabel": "Inspeção: Canal MovReCam — aula…",
+              "href": "/posts/post-inspecao-canal-movrecam.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-canal-movrecam",
+              "description": "Auditoria do canal MovReCam — 290 vídeos catalogados, com embeds das aulas da XIV edição UNIFESP para revisão in-page."
+            },
+            {
               "label": "Inspeção: Deus abençoe — bênção, despedida e tipografia Deus Abenço",
               "tileLabel": "Inspeção: Deus abençoe — bênção…",
               "href": "/posts/post-inspecao-expressao-deus-abencoe.html",
@@ -527,6 +543,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-uva",
               "description": "Relatório educacional de Uva (*Vitis vinifera L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: Aleff — Aliffe de Machado, pessoa antes do ecrã",
+              "tileLabel": "Inspeção: Aleff — Aliffe de Mac…",
+              "href": "/posts/post-inspecao-figura-aleff.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-aleff",
+              "description": "Pessoas: Aliffe Henrique de Carvalho (Aleff) — mineiro de Machado; o recorte é a pessoa, não a persona de ecrã. O nome público Paulinho o LOKO fica como crédito, não como redução."
             },
             {
               "label": "Inspeção: Deus deu dois ouvidos e uma boca — proporção, escuta e tipografia pouvi",
@@ -577,6 +601,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Morango (*Fragaria × ananassa Duchesne): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
+              "label": "Inspeção: Michael J. Fox — presença, ofício e elo com De Volta para o Futuro",
+              "tileLabel": "Inspeção: Michael J. Fox — pres…",
+              "href": "/posts/post-inspecao-figura-michael-j-fox.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-michael-j-fox",
+              "description": "Pessoas × Artes: Michael J. Fox (Michael Andrew Fox) — timing, skate e coragem de ofício; elo principal em De Volta para o Futuro (1985). Pessoa, não personagem nem ficha de doença."
+            },
+            {
               "label": "Inspeção: Como os ricos transformam as coisas — poder, ciclo e História das Coisas",
               "tileLabel": "Inspeção: Como os ricos transfo…",
               "href": "/posts/post-inspecao-expressao-como-os-ricos-transformam-as-coisas.html",
@@ -625,6 +657,22 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Maracujá (fruta) (*Passiflora edulis Sims): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
+              "label": "Inspeção: Christopher Lloyd — presença, improviso e elo com De Volta para o Futuro",
+              "tileLabel": "Inspeção: Christopher Lloyd — p…",
+              "href": "/posts/post-inspecao-figura-christopher-lloyd.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-christopher-lloyd",
+              "description": "Pessoas × Artes: Christopher Lloyd — recusou, leu e inventou o Doc sem se apagar; elo principal em De Volta para o Futuro (1985). Pessoa, não persona."
+            },
+            {
+              "label": "Inspeção: canal Zangado — crítica gamer, sagas e primeira meia hora",
+              "tileLabel": "Inspeção: canal Zangado — críti…",
+              "href": "/posts/post-inspecao-canal-zangado.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-canal-zangado",
+              "description": "Canais: Zangado (@zangadoreview) — crítico gamer BR desde 2006; sagas, vale ou não vale a pena e primeira meia hora; catálogo na página Games."
+            },
+            {
               "label": "Inspeção: Tristeza — a palavra azul que também cuida",
               "tileLabel": "Inspeção: Tristeza — a palavra …",
               "href": "/posts/post-inspecao-palavra-tristeza.html",
@@ -647,6 +695,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-tomatinho-cereja",
               "description": "Tomatinho cereja (*Solanum lycopersicum* var. *cerasiforme*) — primeiro cultivo do Diário da Sementinha: fruto fresco vs ultraprocessados «tomato»."
+            },
+            {
+              "label": "Inspeção: Richard Curtis — o autor, o ofício da escrita e Questão de Tempo",
+              "tileLabel": "Inspeção: Richard Curtis — o au…",
+              "href": "/posts/post-inspecao-figura-richard-curtis.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-richard-curtis",
+              "description": "Pessoas × Artes: Richard Curtis — argumentista que escreve e realiza Questão de Tempo (2013); o filme é o texto, sem livro prévio. Pessoa e autor, não marca de rom-com."
             },
             {
               "label": "Inspeção: Raiva — a palavra vermelha da sala de comando",
@@ -673,6 +729,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Uncaria tomentosa* — casca amazônica rica em alcaloides oxindólicos pentacíclicos; fitoterapia imunomoduladora popular."
             },
             {
+              "label": "Inspeção: Stephen King — o autor, a novela e Um Sonho de Liberdade",
+              "tileLabel": "Inspeção: Stephen King — o auto…",
+              "href": "/posts/post-inspecao-figura-stephen-king.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-stephen-king",
+              "description": "Pessoas × Artes: Stephen King — autor de Rita Hayworth and Shawshank Redemption (1982); elo em Um Sonho de Liberdade (1994). Pessoa e autor, não marca de horror."
+            },
+            {
               "label": "Inspeção: Medo — a palavra roxa da vigilância interior",
               "tileLabel": "Inspeção: Medo — a palavra roxa…",
               "href": "/posts/post-inspecao-palavra-medo.html",
@@ -695,6 +759,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-mamao",
               "description": "*Carica papaya* — mamão brasileiro: polpa doce, papaína do látex e elo UNIFESP/SUS; separar fruto inteiro de néctares e ultraprocessados."
+            },
+            {
+              "label": "Inspeção: Mel Gibson — ofício de ecrã, realização e as duas obras",
+              "tileLabel": "Inspeção: Mel Gibson — ofício d…",
+              "href": "/posts/post-inspecao-figura-mel-gibson.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-mel-gibson",
+              "description": "Pessoas × Artes: Mel Gibson — actor, realizador e Icon; elos em Coração Valente (1995) e A Paixão de Cristo (2004), fichas separadas. Pessoa e ofício, não cartaz nem dossiê."
             },
             {
               "label": "Inspeção: Nojinho — a palavra verde da aversão que protege",
@@ -903,6 +975,78 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-fruto",
               "description": "Palavras: «fruto» (lat. *fructus*) — órgão botânico, plural frutos, contraste com fruta, figurado «frutos do trabalho»; elos plantas/simbiose; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: De Volta para o Futuro — o filme de 1985 e a homenagem aos actores",
+              "tileLabel": "Inspeção: De Volta para o Futur…",
+              "href": "/posts/post-inspecao-filme-de-volta-para-o-futuro.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-de-volta-para-o-futuro",
+              "description": "Artes · cinema: De Volta para o Futuro (1985, Zemeckis/Gale) — a obra e o crédito às pessoas: Michael J. Fox, Christopher Lloyd e o elenco, tratados como gente, não como persona."
+            },
+            {
+              "label": "Inspeção: DeLorean — o carro de Dunmurry e a camada de 1985",
+              "tileLabel": "Inspeção: DeLorean — o carro de…",
+              "href": "/posts/post-inspecao-delorean.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-delorean",
+              "description": "Artes · objecto: DeLorean DMC (Giugiaro, Dunmurry, 1981–82) — o carro real primeiro; a máquina de De Volta para o Futuro é camada de ficção, não origem."
+            },
+            {
+              "label": "Inspeção: Questão de Tempo — o filme de 2013 e o destaque para o autor",
+              "tileLabel": "Inspeção: Questão de Tempo — o …",
+              "href": "/posts/post-inspecao-filme-questao-de-tempo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-questao-de-tempo",
+              "description": "Artes · cinema: Questão de Tempo / About Time (2013) — guião e realização de Richard Curtis; sem livro prévio, o filme é o texto. Destaque para o autor; elenco com crédito, não como centro."
+            },
+            {
+              "label": "Inspeção: Um Sonho de Liberdade — a novela de King e o filme de 1994",
+              "tileLabel": "Inspeção: Um Sonho de Liberdade…",
+              "href": "/posts/post-inspecao-filme-um-sonho-de-liberdade.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-um-sonho-de-liberdade",
+              "description": "Artes · cinema: Um Sonho de Liberdade / The Shawshank Redemption (1994, Darabont) — génese na novela de Stephen King (1982); o filme é adaptação. Autor em Pessoas; elenco com crédito."
+            },
+            {
+              "label": "Inspeção: Encontro Marcado — a peça de 1924 e o filme de 1998",
+              "tileLabel": "Inspeção: Encontro Marcado — a …",
+              "href": "/posts/post-inspecao-filme-encontro-marcado.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-encontro-marcado",
+              "description": "Artes · cinema: Encontro Marcado / Meet Joe Black (1998, Brest) — génese na peça de Alberto Casella (1924) e em Death Takes a Holiday (1934); o filme é remake. Morte, tempo e vida ordinária."
+            },
+            {
+              "label": "Inspeção: Coração Valente — a lenda de Wallace e o filme de 1995",
+              "tileLabel": "Inspeção: Coração Valente — a l…",
+              "href": "/posts/post-inspecao-filme-coracao-valente.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-coracao-valente",
+              "description": "Artes · cinema: Coração Valente / Braveheart (1995) — lenda de Blind Harry e Wallace; guião de Randall Wallace; Gibson realiza e interpreta. Épico ≠ crónica. Ficha própria, distinta de A Paixão de Cristo."
+            },
+            {
+              "label": "Inspeção: A Paixão de Cristo — os Evangelhos e o filme de 2004",
+              "tileLabel": "Inspeção: A Paixão de Cristo — …",
+              "href": "/posts/post-inspecao-filme-a-paixao-de-cristo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-a-paixao-de-cristo",
+              "description": "Artes · cinema: A Paixão de Cristo (2004, Gibson / Fitzgerald) — génese nos Evangelhos; Emmerich como camada secundária. Adaptação ≠ catecismo. Ficha própria, distinta de Coração Valente."
+            },
+            {
+              "label": "Inspeção: Friends — a turma de 1994 e a série que é o texto",
+              "tileLabel": "Inspeção: Friends — a turma de …",
+              "href": "/posts/post-inspecao-serie-friends.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-serie-friends",
+              "description": "Artes · sitcom: Friends (1994–2004, Crane / Kauffman) — a série é a génese; ensemble com crédito. Ficha própria, distinta de How I Met Your Mother."
+            },
+            {
+              "label": "Inspeção: How I Met Your Mother — o relato, o tempo e a série de 2005",
+              "tileLabel": "Inspeção: How I Met Your Mother…",
+              "href": "/posts/post-inspecao-serie-how-i-met-your-mother.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-serie-how-i-met-your-mother",
+              "description": "Artes · sitcom: How I Met Your Mother (2005–2014, Bays / Thomas) — a série é a génese; moldura do tempo e da mãe. Ficha própria, distinta de Friends."
             },
             {
               "label": "Inspeção: Risco — perigo calculado, traço e ofício",
@@ -1318,7 +1462,23 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-sol.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-sol",
-              "description": "Palavras: «sol» (lat. *sōl*) — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Faça o melhor!"
+              "description": "Palavras: «sol» (lat. *sōl*) — astro e luz natural; par com noite; elo luz; contraste interruptor; ≠ solitário; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Noite — ciclo, escuro e fotoperíodo",
+              "tileLabel": "Inspeção: Noite — ciclo, escuro…",
+              "href": "/posts/post-inspecao-palavra-noite.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-noite",
+              "description": "Palavras: «noite» (lat. *nox*) — fase escura do ciclo; par com sol; elos luz e interruptor; cultivo; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Sozinho — sozna, sozinha e ofício",
+              "tileLabel": "Inspeção: Sozinho — sozna, sozi…",
+              "href": "/posts/post-inspecao-palavra-sozna.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-sozna",
+              "description": "Palavras: **sozinho** (lat. *sōlus* + *-zinho*) — par **sozinha**; forma oral **sozna**; ≠ solitário; Faça o melhor!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
@@ -1567,14 +1727,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-expressao-vinganca-mata-alma-envenena",
               "description": "Expressões: «A vingança nunca é plena, mata a alma e a envenena» — ditado popular via Seu Madruga (*Chaves*); o rancor como veneno que o próprio sujeito ingere."
-            },
-            {
-              "label": "Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo",
-              "tileLabel": "Divulgação: Bom dia, Inverno — …",
-              "href": "/posts/post-inspecao-arte-bom-dia-inverno.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-arte-bom-dia-inverno",
-              "description": "Bom dia, Inverno como mudinha da Vida: invernagem no gelo, léxico, Artes irmãs (Águas / Lágrimas) e Legado Klink."
             },
             {
               "label": "Inspeção: Balde — volume, transporte e o gesto de regar",
@@ -2410,14 +2562,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Auditoria do canal CANABinALL (@canabinall) — 139 vídeos catalogados; divulgação científica UNIFESP sob curadoria da Profa. Dra. Eliana Rodrigues (CEE), com destaque a Conceitos básicos #1 e à série Plantas Sagradas."
             },
             {
-              "label": "Inspeção: Canal MovReCam — aulas UNIFESP",
-              "tileLabel": "Inspeção: Canal MovReCam — aula…",
-              "href": "/posts/post-inspecao-canal-movrecam.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-canal-movrecam",
-              "description": "Auditoria do canal MovReCam — 285 vídeos catalogados, com embeds das aulas da XIV edição UNIFESP para revisão in-page."
-            },
-            {
               "label": "Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal",
               "tileLabel": "Inspeção: Curso UNIFESP — Canna…",
               "href": "/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html",
@@ -2458,6 +2602,15 @@ window.__BIBLIOTECA_NAV__ = {
               "slug": "videos",
               "featured": true,
               "description": "Canal @InspetorBudGanja."
+            },
+            {
+              "label": "Jogos",
+              "tileLabel": "Jogos",
+              "href": "/jogos/",
+              "icon": "🎮",
+              "slug": "games",
+              "featured": true,
+              "description": "Zangado e Paulinho o LOKO — página só deles."
             },
             {
               "label": "Cultivo de Cannabis O Inicio",

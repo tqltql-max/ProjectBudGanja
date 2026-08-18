@@ -139,5 +139,9 @@ Par tipográfico (já em Caracteres-tipograficos.txt)
 « » · — … → — usados nas citações desta frase e na trilha Vida.
 
 ---
+Categoria no Guia de Palavras (só as vermelhas):
+  /guia/palavras.html?group=aviso
+  node scripts/upsert-guia-palavras-aviso.js
+
 Atalho de verificação
 node scripts/patch-learn-palavras-aviso.js

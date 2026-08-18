@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T18:33:35.806Z",
+  "updatedAt": "2026-08-18T08:04:59.787Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -42,6 +42,12 @@
       "label": "Técnico e formação",
       "labelEn": "Technical & training",
       "labelEs": "Técnico y formación"
+    },
+    {
+      "id": "aviso",
+      "label": "Palavras de aviso",
+      "labelEn": "Warning words",
+      "labelEs": "Palabras de aviso"
     }
   ],
   "items": [
@@ -2576,6 +2582,26 @@
       "href": "/posts/post-inspecao-palavra-medo.html"
     },
     {
+      "id": "sozinho",
+      "word": "sozinho",
+      "simple": "Lat. sōlus + -zinho — estado só (masc.); par sozinha; forma oral sozna; ≠ solitário; Faça o melhor sem vergonha.",
+      "simpleEn": "Lat. sōlus + -zinho — alone (masc.); pair sozinha; oral sozna; ≠ solitário; Do your best without shame.",
+      "simpleEs": "Lat. sōlus + -zinho — solo (masc.); par sozinha; oral sozna; ≠ solitário; Haz lo mejor sin vergüenza.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sozna.html"
+    },
+    {
+      "id": "sozna",
+      "word": "sozna",
+      "simple": "Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — estado só; ≠ solitário; Faça o melhor sem vergonha.",
+      "simpleEn": "Oral form of sozinho / sozinha (Lat. sōlus + -zinho/-zinha) — alone; ≠ solitário; Do your best without shame.",
+      "simpleEs": "Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — solo/sola; ≠ solitário; Haz lo mejor sin vergüenza.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sozna.html"
+    },
+    {
       "id": "melissa",
       "word": "Melissa",
       "simple": "Melissa officinalis — balm europeu adaptado; citral e ácidos fenólicos em chás calmantes. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -3684,6 +3710,256 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "aleff",
+      "word": "Aleff",
+      "simple": "Aliffe Henrique de Carvalho (Aleff), de Machado (MG); no site, ficha em Pessoas — a pessoa, não a persona de ecrã.",
+      "simpleEn": "Aliffe Henrique de Carvalho (Aleff), from Machado (MG); on the site, a People sheet — the person, not the on-screen persona.",
+      "simpleEs": "Aliffe Henrique de Carvalho (Aleff), de Machado (MG); en el sitio, ficha en Personas — la persona, no la persona de pantalla.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-aleff.html"
+    },
+    {
+      "id": "de-volta-para-o-futuro",
+      "word": "De Volta para o Futuro",
+      "simple": "Filme de 1985 (Zemeckis/Gale); no site, inspeção em Artes com homenagem aos actores e fichas de Fox e Lloyd.",
+      "simpleEn": "1985 film (Zemeckis/Gale); on the site, an Arts inspection honoring the actors, with Fox and Lloyd sheets.",
+      "simpleEs": "Filme de 1985 (Zemeckis/Gale); en el sitio, inspección en Artes con homenaje a los actores y fichas de Fox y Lloyd.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-de-volta-para-o-futuro.html"
+    },
+    {
+      "id": "michael-j-fox",
+      "word": "Michael J. Fox",
+      "simple": "Actor (Michael Andrew Fox); no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não personagem.",
+      "simpleEn": "Actor (Michael Andrew Fox); on the site, a People sheet linked to Back to the Future — the person, not the character.",
+      "simpleEs": "Actor (Michael Andrew Fox); en el sitio, ficha en Personas con vínculo en Back to the Future — la persona, no el personaje.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-michael-j-fox.html"
+    },
+    {
+      "id": "christopher-lloyd",
+      "word": "Christopher Lloyd",
+      "simple": "Actor; no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não persona do Doc.",
+      "simpleEn": "Actor; on the site, a People sheet linked to Back to the Future — the person, not the Doc persona.",
+      "simpleEs": "Actor; en el sitio, ficha en Personas con vínculo en Back to the Future — la persona, no la persona de Doc.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-christopher-lloyd.html"
+    },
+    {
+      "id": "delorean",
+      "word": "DeLorean",
+      "simple": "Coupé DMC (Giugiaro, Dunmurry, 1981–82); no site, inspeção de objecto em Artes — o carro real; a máquina do filme é camada.",
+      "simpleEn": "DMC coupe (Giugiaro, Dunmurry, 1981–82); on the site, an Arts object sheet — the real car; the film machine is a layer.",
+      "simpleEs": "Cupé DMC (Giugiaro, Dunmurry, 1981–82); en el sitio, ficha de objeto en Artes — el coche real; la máquina del filme es capa.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-delorean.html"
+    },
+    {
+      "id": "questao-de-tempo",
+      "word": "Questão de Tempo",
+      "simple": "Filme de 2013 (About Time); no site, inspeção em Artes com destaque para o autor Richard Curtis.",
+      "simpleEn": "2013 film (About Time); on the site, an Arts inspection highlighting author Richard Curtis.",
+      "simpleEs": "Filme de 2013 (About Time); en el sitio, inspección en Artes con destaque para el autor Richard Curtis.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-questao-de-tempo.html"
+    },
+    {
+      "id": "richard-curtis",
+      "word": "Richard Curtis",
+      "simple": "Argumentista e realizador; no site, ficha em Pessoas com elo em Questão de Tempo — autor, não marca.",
+      "simpleEn": "Screenwriter and director; on the site, a People sheet linked to About Time — the author, not the brand.",
+      "simpleEs": "Guionista y director; en el sitio, ficha en Personas con vínculo en About Time — el autor, no la marca.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-richard-curtis.html"
+    },
+    {
+      "id": "um-sonho-de-liberdade",
+      "word": "Um Sonho de Liberdade",
+      "simple": "Filme de 1994 (The Shawshank Redemption); no site, inspeção em Artes com génese na novela de Stephen King (1982).",
+      "simpleEn": "1994 film (The Shawshank Redemption); on the site, an Arts inspection rooted in Stephen King’s 1982 novella.",
+      "simpleEs": "Filme de 1994 (The Shawshank Redemption); en el sitio, inspección en Artes con origen en la novela de Stephen King (1982).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-um-sonho-de-liberdade.html"
+    },
+    {
+      "id": "stephen-king",
+      "word": "Stephen King",
+      "simple": "Escritor; no site, ficha em Pessoas com elo em Um Sonho de Liberdade — autor, não marca de horror.",
+      "simpleEn": "Writer; on the site, a People sheet linked to The Shawshank Redemption — the author, not the horror brand.",
+      "simpleEs": "Escritor; en el sitio, ficha en Personas con vínculo en Um Sonho de Liberdade — el autor, no la marca de terror.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-stephen-king.html"
+    },
+    {
+      "id": "encontro-marcado",
+      "word": "Encontro Marcado",
+      "simple": "Filme de 1998 (Meet Joe Black); no site, inspeção em Artes com génese na peça de Alberto Casella (1924).",
+      "simpleEn": "1998 film (Meet Joe Black); on the site, an Arts inspection rooted in Alberto Casella’s 1924 play.",
+      "simpleEs": "Filme de 1998 (Meet Joe Black); en el sitio, inspección en Artes con origen en la obra de Alberto Casella (1924).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-encontro-marcado.html"
+    },
+    {
+      "id": "coracao-valente",
+      "word": "Coração Valente",
+      "simple": "Filme de 1995 (Braveheart); no site, inspeção em Artes com génese na lenda de Wallace / Blind Harry. Ficha própria, distinta de A Paixão de Cristo.",
+      "simpleEn": "1995 film (Braveheart); on the site, an Arts inspection rooted in the Wallace / Blind Harry legend. Own sheet, distinct from The Passion of the Christ.",
+      "simpleEs": "Filme de 1995 (Braveheart); en el sitio, inspección en Artes con origen en la leyenda de Wallace. Ficha propia, distinta de A Paixão de Cristo.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-coracao-valente.html"
+    },
+    {
+      "id": "a-paixao-de-cristo",
+      "word": "A Paixão de Cristo",
+      "simple": "Filme de 2004; no site, inspeção em Artes com génese nos Evangelhos. Ficha própria, distinta de Coração Valente.",
+      "simpleEn": "2004 film; on the site, an Arts inspection rooted in the Gospels. Own sheet, distinct from Braveheart.",
+      "simpleEs": "Filme de 2004; en el sitio, inspección en Artes con origen en los Evangelios. Ficha propia, distinta de Braveheart.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-a-paixao-de-cristo.html"
+    },
+    {
+      "id": "mel-gibson",
+      "word": "Mel Gibson",
+      "simple": "Actor e realizador; no site, ficha em Pessoas com elos em Coração Valente (1995) e A Paixão de Cristo (2004) — ofício, não cartaz nem dossiê.",
+      "simpleEn": "Actor and director; on the site, a People sheet linked to Braveheart (1995) and The Passion of the Christ (2004) — craft, not a poster or a dossier.",
+      "simpleEs": "Actor y director; en el sitio, ficha en Personas con vínculos en Braveheart (1995) y A Paixão de Cristo (2004) — oficio, no cartel ni dossier.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-mel-gibson.html"
+    },
+    {
+      "id": "friends",
+      "word": "Friends",
+      "simple": "Sitcom de 1994–2004; no site, inspeção em Artes — Crane / Kauffman; a série é o texto. Ficha própria, distinta de How I Met Your Mother.",
+      "simpleEn": "1994–2004 sitcom; on the site, an Arts inspection — Crane / Kauffman; the series is the text. Own sheet, distinct from How I Met Your Mother.",
+      "simpleEs": "Sitcom de 1994–2004; en el sitio, inspección en Artes — Crane / Kauffman. Ficha propia, distinta de How I Met Your Mother.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-serie-friends.html"
+    },
+    {
+      "id": "how-i-met-your-mother",
+      "word": "How I Met Your Mother",
+      "simple": "Sitcom de 2005–2014; no site, inspeção em Artes — Bays / Thomas; relato e tempo. Ficha própria, distinta de Friends.",
+      "simpleEn": "2005–2014 sitcom; on the site, an Arts inspection — Bays / Thomas; telling and time. Own sheet, distinct from Friends.",
+      "simpleEs": "Sitcom de 2005–2014; en el sitio, inspección en Artes — Bays / Thomas. Ficha propia, distinta de Friends.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-serie-how-i-met-your-mother.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-vinganca",
+      "word": "vingança",
+      "simple": "Aviso vermelho · Retaliação. Comum: desforra. BudGanja: promete equilíbrio e cobra o preço em quem a cultiva.",
+      "simpleEn": "Red warning · Retaliation. Everyday: payback. BudGanja: promises balance and charges the one who grows it.",
+      "simpleEs": "Aviso rojo · Retaliación. Común: desquite. BudGanja: promete equilibrio y cobra el precio en quien la cultiva.",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-retaliacao",
+      "word": "retaliação",
+      "simple": "Aviso vermelho · Retaliação. Comum: olho por olho. BudGanja: conta que a frase diz nunca fechar («nunca é plena»).",
+      "simpleEn": "Red warning · Retaliation. Everyday: eye for an eye. BudGanja: a bill the saying says never closes.",
+      "simpleEs": "Aviso rojo · Retaliación. Común: ojo por ojo. BudGanja: cuenta que el dicho dice que nunca cierra.",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-revidar",
+      "word": "revidar",
+      "simple": "Aviso vermelho · Retaliação. Comum: devolver o golpe. BudGanja: impulso que a oralidade avisa contra.",
+      "simpleEn": "Red warning · Retaliation. Everyday: strike back. BudGanja: the impulse orality warns against.",
+      "simpleEs": "Aviso rojo · Retaliación. Común: devolver el golpe. BudGanja: impulso que la oralidad avisa contra.",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-matar",
+      "word": "matar / mata",
+      "simple": "Aviso vermelho · Dano à vida. Comum: tirar a vida. BudGanja: na frase = esvaziar o centro íntimo, não homicídio literal.",
+      "simpleEn": "Red warning · Harm to life. Everyday: to kill. BudGanja: in the saying = emptying the inner centre, not literal homicide.",
+      "simpleEs": "Aviso rojo · Daño a la vida. Común: quitar la vida. BudGanja: en la frase = vaciar el centro íntimo, no homicidio literal.",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-veneno",
+      "word": "veneno",
+      "simple": "Aviso vermelho · Toxina. Comum: substância tóxica. BudGanja: carga afectiva no lugar do cuidado — ≠ toxina de planta.",
+      "simpleEn": "Red warning · Toxin. Everyday: poisonous substance. BudGanja: affective load in place of care — ≠ plant toxin.",
+      "simpleEs": "Aviso rojo · Toxina. Común: sustancia tóxica. BudGanja: carga afectiva en lugar del cuidado — ≠ toxina de planta.",
+      "href": "/posts/post-inspecao-filme-venom.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-envenenar",
+      "word": "envenenar / envenena",
+      "simple": "Aviso vermelho · Toxina. Comum: aplicar veneno. BudGanja: corrompe por dentro — dose que fica no próprio sujeito.",
+      "simpleEn": "Red warning · Toxin. Everyday: to poison. BudGanja: corrupts from within — a dose that stays in the subject.",
+      "simpleEs": "Aviso rojo · Toxina. Común: aplicar veneno. BudGanja: corrompe por dentro — dosis que queda en el propio sujeto.",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-corromper",
+      "word": "corromper",
+      "simple": "Aviso vermelho · Toxina. Comum: estragar. BudGanja: segundo dano da frase («envenena»).",
+      "simpleEn": "Red warning · Toxin. Everyday: to spoil. BudGanja: the saying’s second harm («envenena»).",
+      "simpleEs": "Aviso rojo · Toxina. Común: estropear. BudGanja: segundo daño de la frase («envenena»).",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-rancor",
+      "word": "rancor",
+      "simple": "Aviso vermelho · Afecto tóxico. Comum: mágoa guardada. BudGanja: o ditado trata-o como dose auto-ingerida.",
+      "simpleEn": "Red warning · Toxic affect. Everyday: a stored grudge. BudGanja: the saying treats it as a self-ingested dose.",
+      "simpleEs": "Aviso rojo · Afecto tóxico. Común: rencor guardado. BudGanja: el dicho lo trata como dosis autoingerida.",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-ressentimento",
+      "word": "ressentimento",
+      "simple": "Aviso vermelho · Afecto tóxico. Comum: mágoa persistente. BudGanja: ferida que continua a actuar — nutriente do rancor.",
+      "simpleEn": "Red warning · Toxic affect. Everyday: lingering hurt. BudGanja: a wound that keeps acting — fuel for the grudge.",
+      "simpleEs": "Aviso rojo · Afecto tóxico. Común: herida persistente. BudGanja: herida que sigue actuando — nutriente del rencor.",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-esvaziar",
+      "word": "esvaziar",
+      "simple": "Aviso vermelho · Esvaziamento. Comum: deixar vazio. BudGanja: primeiro dano da frase («mata a alma»).",
+      "simpleEn": "Red warning · Emptying. Everyday: to empty. BudGanja: the saying’s first harm («mata a alma»).",
+      "simpleEs": "Aviso rojo · Vaciado. Común: dejar vacío. BudGanja: primer daño de la frase («mata a alma»).",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
     }
   ]
 }

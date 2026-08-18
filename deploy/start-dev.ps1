@@ -30,7 +30,7 @@ function Stop-ExistingDevProcesses([bool]$stopTunnel) {
 
   if ($stopTunnel) {
     Get-CimInstance Win32_Process -Filter "Name = 'cloudflared.exe'" -ErrorAction SilentlyContinue |
-      Where-Object { $_.CommandLine -like '*tunnel run budganja*' } |
+      Where-Object { $_.CommandLine -like '*tunnel run*' } |
       ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
   }
 }
@@ -51,7 +51,7 @@ Write-Host 'Para parar: Stop-Process -Id' $nodeJob.Id
 
 $tunnelJob = $null
 if ($Tunnel) {
-  $tunnelJob = Start-Process -FilePath 'cloudflared' -ArgumentList 'tunnel','run','budganja' -WindowStyle Minimized -PassThru
+  $tunnelJob = Start-Process -FilePath 'cloudflared' -ArgumentList 'tunnel','run','budganja-pc' -WindowStyle Minimized -PassThru
   Write-Host 'Publico:    ' $env:SITE_URL -ForegroundColor Green
   Write-Host 'Processo: cloudflared PID' $tunnelJob.Id -ForegroundColor Green
   Write-Host 'Para parar: Stop-Process -Id' $nodeJob.Id ',' $tunnelJob.Id

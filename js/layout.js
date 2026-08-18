@@ -736,6 +736,7 @@ const DEFAULT_SITE = {
     { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
     { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
     { label: 'Vídeos', href: '/videos/' },
+    { label: 'Jogos', href: '/jogos/' },
     { label: 'Equipamentos', href: '/equipamentos/' },
     { label: 'Ferramentas', href: '/calculadoras/' },
     { label: 'Comunidade', href: '/comunidade/' },
@@ -752,6 +753,7 @@ const DEFAULT_SITE = {
         { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
         { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
         { label: 'Vídeos', href: '/videos/' },
+        { label: 'Jogos', href: '/jogos/' },
         { label: 'Equipamentos', href: '/equipamentos/' }
       ]
     },
@@ -802,6 +804,8 @@ function translateFooterLabel(label) {
     'Diário de pesquisas': 'nav.growDiary',
     'Últimos vídeos': 'nav.videos',
     'Vídeos': 'nav.videos',
+    'Games': 'nav.games',
+    'Jogos': 'nav.games',
     'Comunidade': 'nav.community',
     'Feed da comunidade': 'nav.communityFeed',
     'Rádio': 'nav.radio',
@@ -968,6 +972,7 @@ function resolveNavTileSlug(child) {
   const href = safeHref(child.href);
   if (href.includes('guia/cultivo')) return 'guia-cultivo';
   if (href.includes('/videos')) return 'videos';
+  if (href.includes('/jogos')) return 'games';
   if (href.includes('pesquisas')) return 'pesquisas';
   if (href.includes('inspecoes')) return 'inspecoes';
   if (href.includes('clonadora-6')) return 'clonadora-6';
@@ -1296,6 +1301,14 @@ function getSiteHubNav(authState) {
         tip: i18n('nav.quickVideosTip', 'Últimos vídeos do canal'),
         prefixes: '/videos',
         tone: 'videos'
+      },
+      {
+        href: '/jogos/',
+        icon: '🎮',
+        label: i18n('nav.games', 'Jogos'),
+        tip: i18n('nav.quickGamesTip', 'Zangado e Paulinho o LOKO'),
+        prefixes: '/jogos',
+        tone: 'games'
       }
   ].filter(function (item) { return navItemAllowed(item, authState); });
 
@@ -1357,6 +1370,13 @@ function getSiteHubNav(authState) {
             label: i18n('nav.videos', 'Vídeos'),
             prefixes: '/videos',
             tone: 'videos'
+          },
+          {
+            href: '/jogos/',
+            icon: '🎮',
+            label: i18n('nav.games', 'Jogos'),
+            prefixes: '/jogos',
+            tone: 'games'
           }
   ].filter(function (item) { return navItemAllowed(item, authState); });
 

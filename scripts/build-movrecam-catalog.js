@@ -256,6 +256,22 @@ async function buildCatalog() {
 
   let videos = await enrichMissingTitles([...byId.values()]);
 
+  videos = videos.map((v) => {
+    if (v.published) return v;
+    const rel = String(v.publishedRelative || '');
+    const pt = rel.match(/h[aá]\s+(\d+)\s+(hora|horas|dia|dias|semana|semanas|m[eê]s|meses)/i);
+    if (!pt) return v;
+    const n = Number(pt[1]);
+    const unit = pt[2].toLowerCase();
+    const d = new Date();
+    if (unit.startsWith('hora')) d.setHours(d.getHours() - n);
+    else if (unit.startsWith('dia')) d.setDate(d.getDate() - n);
+    else if (unit.startsWith('semana')) d.setDate(d.getDate() - n * 7);
+    else d.setMonth(d.getMonth() - n);
+    d.setUTCHours(22, 30, 6, 0);
+    return Object.assign({}, v, { published: d.toISOString() });
+  });
+
   videos.sort((a, b) => {
     if (a.published && b.published) return new Date(b.published) - new Date(a.published);
     if (a.published) return -1;

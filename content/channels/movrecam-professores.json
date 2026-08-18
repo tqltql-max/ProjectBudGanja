@@ -1,13 +1,13 @@
 {
   "channelId": "UCGvVEwpsxRlq18Uh2HYocbg",
-  "channelUrl": "https://www.youtube.com/@MovReCam",
+  "channelUrl": "https://www.youtube.com/c/MovReCam",
   "channelName": "MovReCam",
-  "catalogVideoCount": 285,
-  "taggedVideoCount": 192,
-  "untaggedVideoCount": 93,
-  "professorCount": 56,
+  "catalogVideoCount": 290,
+  "taggedVideoCount": 195,
+  "untaggedVideoCount": 95,
+  "professorCount": 57,
   "method": "Classificação exclusiva por regex no título do vídeo MovReCam (professores / palestrantes nomeados). Umário vídeo pode ter vários professores.",
-  "categorizedAt": "2026-08-02T20:53:40.997Z",
+  "categorizedAt": "2026-08-18T05:52:20.410Z",
   "summary": [
     {
       "id": "eliana",
@@ -46,12 +46,6 @@
       "inspectionUrl": null
     },
     {
-      "id": "nivaldo-vanni",
-      "label": "Nivaldo Vanni",
-      "count": 8,
-      "inspectionUrl": null
-    },
-    {
       "id": "wilson-lessa",
       "label": "Wilson Lessa",
       "count": 8,
@@ -68,6 +62,12 @@
       "label": "Gabrielle Dainezi",
       "count": 7,
       "inspectionUrl": "/posts/post-inspecao-gabrielle-dainezi.html"
+    },
+    {
+      "id": "nivaldo-vanni",
+      "label": "Nivaldo Vanni",
+      "count": 7,
+      "inspectionUrl": null
     },
     {
       "id": "luciana-surjus",
@@ -130,8 +130,26 @@
       "inspectionUrl": null
     },
     {
+      "id": "kassia-martins",
+      "label": "Kassia Martins",
+      "count": 4,
+      "inspectionUrl": null
+    },
+    {
       "id": "leandro-ramires",
       "label": "Leandro Ramires",
+      "count": 4,
+      "inspectionUrl": null
+    },
+    {
+      "id": "manoela-hisae",
+      "label": "Manoela Hisae",
+      "count": 4,
+      "inspectionUrl": null
+    },
+    {
+      "id": "margarete-mota",
+      "label": "Margarete Mota",
       "count": 4,
       "inspectionUrl": null
     },
@@ -166,26 +184,8 @@
       "inspectionUrl": null
     },
     {
-      "id": "kassia-martins",
-      "label": "Kassia Martins",
-      "count": 3,
-      "inspectionUrl": null
-    },
-    {
       "id": "kaya-mind",
       "label": "Kaya Mind",
-      "count": 3,
-      "inspectionUrl": null
-    },
-    {
-      "id": "manoela-hisae",
-      "label": "Manoela Hisae",
-      "count": 3,
-      "inspectionUrl": null
-    },
-    {
-      "id": "margarete-mota",
-      "label": "Margarete Mota",
       "count": 3,
       "inspectionUrl": null
     },
@@ -259,6 +259,12 @@
       "id": "ursula-catarino",
       "label": "Úrsula Catarino",
       "count": 2,
+      "inspectionUrl": null
+    },
+    {
+      "id": "ana-rouver",
+      "label": "Ana Rouver",
+      "count": 1,
       "inspectionUrl": null
     },
     {
@@ -786,56 +792,6 @@
       ]
     },
     {
-      "id": "nivaldo-vanni",
-      "label": "Nivaldo Vanni",
-      "labelEn": "Nivaldo Vanni",
-      "labelEs": "Nivaldo Vanni",
-      "inspectionUrl": null,
-      "count": 8,
-      "videos": [
-        {
-          "id": "a2ISO25aweU",
-          "title": "10ª Aula - A Cannabis na Odontologia, Dr. Nivaldo e Dra. Monique",
-          "url": "https://www.youtube.com/watch?v=a2ISO25aweU"
-        },
-        {
-          "id": "2uo2iGSR_SM",
-          "title": "14ª aula - Cannabis na Odontologia e para dor Orofacial Dr. Nivaldo Vaninni e Guilherme Martins",
-          "url": "https://www.youtube.com/watch?v=2uo2iGSR_SM"
-        },
-        {
-          "id": "W6KeT8FoKA8",
-          "title": "17ª Aula - A Cannabis sativa L. na Odontologia do sono, dor orofacial, bruxismo - Dr. Nivaldo Vanni",
-          "url": "https://www.youtube.com/watch?v=W6KeT8FoKA8"
-        },
-        {
-          "id": "hCLKqYAwGQU",
-          "title": "17ª Aula: Odontologia e a Cannabis sativa L. - Professor Nivaldo Vanni",
-          "url": "https://www.youtube.com/watch?v=hCLKqYAwGQU"
-        },
-        {
-          "id": "gHQKDcbdQfA",
-          "title": "21ª Aula: Aplicações Clínicas da Cannabis sativa L. na Odontologia (2ª Parte) - Dr. Nivaldo Vanni",
-          "url": "https://www.youtube.com/watch?v=gHQKDcbdQfA"
-        },
-        {
-          "id": "NfaKgiBgT_c",
-          "title": "25 e 26ª Aulas: Aplicações Clínicas da Cannabis na Odontologia - Dr. Gui Martins e Dr. Nivaldo Vanni",
-          "url": "https://www.youtube.com/watch?v=NfaKgiBgT_c"
-        },
-        {
-          "id": "i6BNlhf_xDU",
-          "title": "7ª aula: Odontologia e a Cannabis sativa L. - Professor Nivaldo Vanni",
-          "url": "https://www.youtube.com/watch?v=i6BNlhf_xDU"
-        },
-        {
-          "id": "hLZ5Tkg6Sy8",
-          "title": "9ª Aula - Uso da Cannabis na Odontologia - Dr. Nivaldo Vanini e Dr. Guilherme Martins",
-          "url": "https://www.youtube.com/watch?v=hLZ5Tkg6Sy8"
-        }
-      ]
-    },
-    {
       "id": "wilson-lessa",
       "label": "Wilson Lessa",
       "labelEn": "Wilson Lessa",
@@ -978,6 +934,51 @@
       ]
     },
     {
+      "id": "nivaldo-vanni",
+      "label": "Nivaldo Vanni",
+      "labelEn": "Nivaldo Vanni",
+      "labelEs": "Nivaldo Vanni",
+      "inspectionUrl": null,
+      "count": 7,
+      "videos": [
+        {
+          "id": "a2ISO25aweU",
+          "title": "10ª Aula - A Cannabis na Odontologia, Dr. Nivaldo e Dra. Monique",
+          "url": "https://www.youtube.com/watch?v=a2ISO25aweU"
+        },
+        {
+          "id": "2uo2iGSR_SM",
+          "title": "14ª aula - Cannabis na Odontologia e para dor Orofacial Dr. Nivaldo Vaninni e Guilherme Martins",
+          "url": "https://www.youtube.com/watch?v=2uo2iGSR_SM"
+        },
+        {
+          "id": "W6KeT8FoKA8",
+          "title": "17ª Aula - A Cannabis sativa L. na Odontologia do sono, dor orofacial, bruxismo - Dr. Nivaldo Vanni",
+          "url": "https://www.youtube.com/watch?v=W6KeT8FoKA8"
+        },
+        {
+          "id": "hCLKqYAwGQU",
+          "title": "17ª Aula: Odontologia e a Cannabis sativa L. - Professor Nivaldo Vanni",
+          "url": "https://www.youtube.com/watch?v=hCLKqYAwGQU"
+        },
+        {
+          "id": "gHQKDcbdQfA",
+          "title": "21ª Aula: Aplicações Clínicas da Cannabis sativa L. na Odontologia (2ª Parte) - Dr. Nivaldo Vanni",
+          "url": "https://www.youtube.com/watch?v=gHQKDcbdQfA"
+        },
+        {
+          "id": "i6BNlhf_xDU",
+          "title": "7ª aula: Odontologia e a Cannabis sativa L. - Professor Nivaldo Vanni",
+          "url": "https://www.youtube.com/watch?v=i6BNlhf_xDU"
+        },
+        {
+          "id": "hLZ5Tkg6Sy8",
+          "title": "9ª Aula - Uso da Cannabis na Odontologia - Dr. Nivaldo Vanini e Dr. Guilherme Martins",
+          "url": "https://www.youtube.com/watch?v=hLZ5Tkg6Sy8"
+        }
+      ]
+    },
+    {
       "id": "luciana-surjus",
       "label": "Luciana Surjus",
       "labelEn": "Luciana Surjus",
@@ -1003,7 +1004,7 @@
         },
         {
           "id": "WlbZiufzx08",
-          "title": "4ª Aula: Sistema Único de Saúde (SUS) e a Cannabis sativa L. - Profª Luciana Surjus",
+          "title": "4th Class: Unified Health System (SUS) and Cannabis sativa L. - Prof. Luciana Surjus",
           "url": "https://www.youtube.com/watch?v=WlbZiufzx08"
         },
         {
@@ -1123,14 +1124,14 @@
           "url": "https://www.youtube.com/watch?v=naPJhvS2EGE"
         },
         {
-          "id": "qB4gcDcDL74",
-          "title": "18ª Aula: Uso da Cannabis na Veterinária - Profª Aline Goulart e Aline Mendes",
-          "url": "https://www.youtube.com/watch?v=qB4gcDcDL74"
-        },
-        {
           "id": "F-jSFnOQ5j8",
           "title": "Class 20: Use of Cannabis in Veterinary Medicine - Prof. Aline Goulart and Aline Mendes",
           "url": "https://www.youtube.com/watch?v=F-jSFnOQ5j8"
+        },
+        {
+          "id": "qB4gcDcDL74",
+          "title": "Lecture 18: Use of Cannabis in Veterinary Medicine - Prof. Aline Goulart and Aline Mendes",
+          "url": "https://www.youtube.com/watch?v=qB4gcDcDL74"
         }
       ]
     },
@@ -1183,13 +1184,8 @@
           "url": "https://www.youtube.com/watch?v=hvrcwAiiRsQ"
         },
         {
-          "id": "6BiW9vLAOpE",
-          "title": "10ª Aula: Alzheimer e Parkinson e a Cannabis sativa L. - Profª Denise Pedra",
-          "url": "https://www.youtube.com/watch?v=6BiW9vLAOpE"
-        },
-        {
           "id": "DL1YRyez5UE",
-          "title": "13ª aula - Cannabis nas doenças de Alzheimer e Parkinson, com a Dra. Denise Pedra",
+          "title": "13th Class - Cannabis for Alzheimer's and Parkinson's Diseases, with Dr. Denise Pedra",
           "url": "https://www.youtube.com/watch?v=DL1YRyez5UE"
         },
         {
@@ -1201,6 +1197,11 @@
           "id": "_6SjnDd-On4",
           "title": "7ª Aula: Alzheimer e Parkinson e a Cannabis sativa L. - Profª Denise Pedra",
           "url": "https://www.youtube.com/watch?v=_6SjnDd-On4"
+        },
+        {
+          "id": "6BiW9vLAOpE",
+          "title": "Class 10: Alzheimer's and Parkinson's and Cannabis sativa L. - Prof. Denise Pedra",
+          "url": "https://www.youtube.com/watch?v=6BiW9vLAOpE"
         }
       ]
     },
@@ -1253,11 +1254,6 @@
           "url": "https://www.youtube.com/watch?v=2g9a-XTeK2k"
         },
         {
-          "id": "qB4gcDcDL74",
-          "title": "18ª Aula: Uso da Cannabis na Veterinária - Profª Aline Goulart e Aline Mendes",
-          "url": "https://www.youtube.com/watch?v=qB4gcDcDL74"
-        },
-        {
           "id": "_42ZheUUfjY",
           "title": "29ª e 30ª aulas: O uso da Cannabis na veterinária - Dra. Magda Medeiros e Dra. Aline Goulart",
           "url": "https://www.youtube.com/watch?v=_42ZheUUfjY"
@@ -1266,6 +1262,11 @@
           "id": "F-jSFnOQ5j8",
           "title": "Class 20: Use of Cannabis in Veterinary Medicine - Prof. Aline Goulart and Aline Mendes",
           "url": "https://www.youtube.com/watch?v=F-jSFnOQ5j8"
+        },
+        {
+          "id": "qB4gcDcDL74",
+          "title": "Lecture 18: Use of Cannabis in Veterinary Medicine - Prof. Aline Goulart and Aline Mendes",
+          "url": "https://www.youtube.com/watch?v=qB4gcDcDL74"
         }
       ]
     },
@@ -1330,6 +1331,39 @@
       ]
     },
     {
+      "id": "kassia-martins",
+      "label": "Kassia Martins",
+      "labelEn": "Kassia Martins",
+      "labelEs": "Kassia Martins",
+      "inspectionUrl": null,
+      "count": 4,
+      "videos": [
+        {
+          "id": "n7dc7UvcoKE",
+          "title": "9ª Aula - Reações Adversas da Cannabis sativa L.  - Dra. Kassia Martins",
+          "url": "https://www.youtube.com/watch?v=n7dc7UvcoKE",
+          "published": "2026-07-16T22:30:06+00:00"
+        },
+        {
+          "id": "dNcVCa1_7Ig",
+          "title": "8ª Aula - Aplicações Clinicas da Cannabis sativa L.  - Dra. Kassia Martins",
+          "url": "https://www.youtube.com/watch?v=dNcVCa1_7Ig",
+          "published": "2026-07-14T22:30:06+00:00"
+        },
+        {
+          "id": "1ZWv9Oq5KzA",
+          "title": "14ª aula - Epilepsia e a Cannabis sativa L. - Dra. Kassia Martins",
+          "url": "https://www.youtube.com/watch?v=1ZWv9Oq5KzA",
+          "published": "2026-08-05T22:30:06.000Z"
+        },
+        {
+          "id": "PGTChgzBLH0",
+          "title": "Lesson 7: Clinical Applications of Cannabis sativa L.: Kassia Martins",
+          "url": "https://www.youtube.com/watch?v=PGTChgzBLH0"
+        }
+      ]
+    },
+    {
       "id": "leandro-ramires",
       "label": "Leandro Ramires",
       "labelEn": "Leandro Ramires",
@@ -1356,6 +1390,69 @@
           "id": "-9rtgrcHzF0",
           "title": "Lesson 14: The use of Cannabis sativa L. in geriatrics - Dr. Leandro Ramires",
           "url": "https://www.youtube.com/watch?v=-9rtgrcHzF0"
+        }
+      ]
+    },
+    {
+      "id": "manoela-hisae",
+      "label": "Manoela Hisae",
+      "labelEn": "Manoela Hisae",
+      "labelEs": "Manoela Hisae",
+      "inspectionUrl": null,
+      "count": 4,
+      "videos": [
+        {
+          "id": "PkDVTnU24bc",
+          "title": "4ª Aula   O SUS e a Cannabis sativa L - Profª Luciana Surjus e Dra. Manoela Hisae",
+          "url": "https://www.youtube.com/watch?v=PkDVTnU24bc",
+          "published": "2026-06-25T23:30:06+00:00"
+        },
+        {
+          "id": "q87Vdd8_Fs8",
+          "title": "11ª Aula: A Cannabis sativa L. e o Autismo - TEA - Dra. Eliane Nunes e Dra. Manoela Hisae",
+          "url": "https://www.youtube.com/watch?v=q87Vdd8_Fs8"
+        },
+        {
+          "id": "k40seVas2lw",
+          "title": "16ª Aula: Cannabis sativa L. e o Transtorno do Espectro Autista - Dra. Manoela Hisae",
+          "url": "https://www.youtube.com/watch?v=k40seVas2lw",
+          "published": "2026-08-12T22:30:06.000Z"
+        },
+        {
+          "id": "tzq0dD31dUk",
+          "title": "9ª Aula: Cannabis sativa L. e o Autismo - Dra. Eliane Nunes e Dra. Manoela Hisae",
+          "url": "https://www.youtube.com/watch?v=tzq0dD31dUk"
+        }
+      ]
+    },
+    {
+      "id": "margarete-mota",
+      "label": "Margarete Mota",
+      "labelEn": "Margarete Mota",
+      "labelEs": "Margarete Mota",
+      "inspectionUrl": null,
+      "count": 4,
+      "videos": [
+        {
+          "id": "PVrI8XZ3lVo",
+          "title": "15ª Aula: A Cannabis na medicina Ayurveda - Margarete Mota",
+          "url": "https://www.youtube.com/watch?v=PVrI8XZ3lVo",
+          "published": "2026-08-07T22:30:06.000Z"
+        },
+        {
+          "id": "QkiqL7bWS48",
+          "title": "16ª Aula: A Cannabis sativa L na Medicina Ayurveda - Profª Margarete Mota",
+          "url": "https://www.youtube.com/watch?v=QkiqL7bWS48"
+        },
+        {
+          "id": "fSHBkVM_wrs",
+          "title": "18ª Aula: A Cannabis sativa L na Medicina Ayurveda - Profª Margarete Mota",
+          "url": "https://www.youtube.com/watch?v=fSHBkVM_wrs"
+        },
+        {
+          "id": "hhNA1n_fmog",
+          "title": "Class 28: Cannabis (Vijaya) in Ayurveda Medicine - Margarete Mota",
+          "url": "https://www.youtube.com/watch?v=hhNA1n_fmog"
         }
       ]
     },
@@ -1487,33 +1584,6 @@
       ]
     },
     {
-      "id": "kassia-martins",
-      "label": "Kassia Martins",
-      "labelEn": "Kassia Martins",
-      "labelEs": "Kassia Martins",
-      "inspectionUrl": null,
-      "count": 3,
-      "videos": [
-        {
-          "id": "n7dc7UvcoKE",
-          "title": "9ª Aula - Reações Adversas da Cannabis sativa L.  - Dra. Kassia Martins",
-          "url": "https://www.youtube.com/watch?v=n7dc7UvcoKE",
-          "published": "2026-07-16T22:30:06+00:00"
-        },
-        {
-          "id": "dNcVCa1_7Ig",
-          "title": "8ª Aula - Aplicações Clinicas da Cannabis sativa L.  - Dra. Kassia Martins",
-          "url": "https://www.youtube.com/watch?v=dNcVCa1_7Ig",
-          "published": "2026-07-14T22:30:06+00:00"
-        },
-        {
-          "id": "PGTChgzBLH0",
-          "title": "Lesson 7: Clinical Applications of Cannabis sativa L.: Kassia Martins",
-          "url": "https://www.youtube.com/watch?v=PGTChgzBLH0"
-        }
-      ]
-    },
-    {
       "id": "kaya-mind",
       "label": "Kaya Mind",
       "labelEn": "Kaya Mind",
@@ -1537,57 +1607,6 @@
           "id": "WdFySlIebb0",
           "title": "40ª Aula: Mercado brasileiro e mercado mundial da Cannabis: prospecção e desenvolvimento - Kaya Mind",
           "url": "https://www.youtube.com/watch?v=WdFySlIebb0"
-        }
-      ]
-    },
-    {
-      "id": "manoela-hisae",
-      "label": "Manoela Hisae",
-      "labelEn": "Manoela Hisae",
-      "labelEs": "Manoela Hisae",
-      "inspectionUrl": null,
-      "count": 3,
-      "videos": [
-        {
-          "id": "PkDVTnU24bc",
-          "title": "4ª Aula   O SUS e a Cannabis sativa L - Profª Luciana Surjus e Dra. Manoela Hisae",
-          "url": "https://www.youtube.com/watch?v=PkDVTnU24bc",
-          "published": "2026-06-25T23:30:06+00:00"
-        },
-        {
-          "id": "q87Vdd8_Fs8",
-          "title": "11ª Aula: A Cannabis sativa L. e o Autismo - TEA - Dra. Eliane Nunes e Dra. Manoela Hisae",
-          "url": "https://www.youtube.com/watch?v=q87Vdd8_Fs8"
-        },
-        {
-          "id": "tzq0dD31dUk",
-          "title": "9ª Aula: Cannabis sativa L. e o Autismo - Dra. Eliane Nunes e Dra. Manoela Hisae",
-          "url": "https://www.youtube.com/watch?v=tzq0dD31dUk"
-        }
-      ]
-    },
-    {
-      "id": "margarete-mota",
-      "label": "Margarete Mota",
-      "labelEn": "Margarete Mota",
-      "labelEs": "Margarete Mota",
-      "inspectionUrl": null,
-      "count": 3,
-      "videos": [
-        {
-          "id": "QkiqL7bWS48",
-          "title": "16ª Aula: A Cannabis sativa L na Medicina Ayurveda - Profª Margarete Mota",
-          "url": "https://www.youtube.com/watch?v=QkiqL7bWS48"
-        },
-        {
-          "id": "fSHBkVM_wrs",
-          "title": "18ª Aula: A Cannabis sativa L na Medicina Ayurveda - Profª Margarete Mota",
-          "url": "https://www.youtube.com/watch?v=fSHBkVM_wrs"
-        },
-        {
-          "id": "hhNA1n_fmog",
-          "title": "Class 28: Cannabis (Vijaya) in Ayurveda Medicine - Margarete Mota",
-          "url": "https://www.youtube.com/watch?v=hhNA1n_fmog"
         }
       ]
     },
@@ -1799,7 +1818,7 @@
       "videos": [
         {
           "id": "vwn_7M3yGvY",
-          "title": "6ª Aula: Uso da Cannabis sativa L. nas Epilepsias - Professor Pedro Melo",
+          "title": "6th Class: Use of Cannabis sativa L. in Epilepsy - Professor Pedro Melo",
           "url": "https://www.youtube.com/watch?v=vwn_7M3yGvY"
         },
         {
@@ -1846,6 +1865,22 @@
           "id": "0CL-W8s4t-E",
           "title": "4ª aula - Farmácia Viva / Prof. Jaqueline Guimarães - Sus / Dra. Úrsula Catarino",
           "url": "https://www.youtube.com/watch?v=0CL-W8s4t-E"
+        }
+      ]
+    },
+    {
+      "id": "ana-rouver",
+      "label": "Ana Rouver",
+      "labelEn": "Ana Rouver",
+      "labelEs": "Ana Rouver",
+      "inspectionUrl": null,
+      "count": 1,
+      "videos": [
+        {
+          "id": "gOKqEKc0768",
+          "title": "13ª aula - Compostos canabinoides e o tratamento da Doença de Parkinson - Dra. Ana Rouver",
+          "url": "https://www.youtube.com/watch?v=gOKqEKc0768",
+          "published": "2026-08-04T22:30:06.000Z"
         }
       ]
     },

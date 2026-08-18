@@ -57,6 +57,25 @@
     disneyjrbr: 'disneyjr',
     'disney-jr-brasil': 'disneyjr',
     desenhos: 'disneyjr',
+    tamara: 'tamara',
+    'canal-tamara': 'tamara',
+    'canal-tamaraklink': 'tamara',
+    'tamara-klink': 'tamara',
+    tamaraklink: 'tamara',
+    klink: 'tamara',
+    'familia-klink': 'tamara',
+    amyr: 'amyr',
+    'canal-amyrklink': 'amyr',
+    'amyr-klink': 'amyr',
+    amyrklink: 'amyr',
+    amyrklinkoficial: 'amyr',
+    paulinho: 'paulinho',
+    'paulinho-loko': 'paulinho',
+    paulinholoko: 'paulinho',
+    zangado: 'zangado',
+    zangadoreview: 'zangado',
+    'canal-zangado': 'zangado',
+    'tio-zangado': 'zangado',
     lair: 'lair',
     'canal-lair': 'lair',
     'dr-lair': 'lair',
@@ -134,7 +153,53 @@
     suplementos: 'suplementos',
     undoctored: 'undoctored',
     programas: 'programas',
-    entrevistas: 'entrevistas'
+    entrevistas: 'entrevistas',
+    sagas: 'sagas',
+    'vale-a-pena': 'vale-a-pena',
+    'primeira-meia-hora': 'primeira-meia-hora',
+    'nao-vale': 'nao-vale',
+    trilogias: 'trilogias',
+    demo: 'demo',
+    unboxing: 'unboxing',
+    'bate-papo': 'bate-papo',
+    minuto: 'minuto',
+    'nerd-extra': 'nerd-extra',
+    retrospectiva: 'retrospectiva',
+    gameplay: 'gameplay',
+    lives: 'lives',
+    listas: 'listas',
+    especiais: 'especiais',
+    noroeste: 'noroeste',
+    artico: 'artico',
+    invernagem: 'invernagem',
+    atlantico: 'atlantico',
+    palavras: 'palavras',
+    barco: 'barco',
+    arquitetura: 'arquitetura',
+    palestra: 'palestra',
+    vlog: 'vlog',
+    saudade: 'saudade',
+    mar: 'mar',
+    reflexao: 'reflexao',
+    'familia-pai': 'familia-pai',
+    pai: 'familia-pai',
+    'familia-avo': 'familia-avo',
+    avo: 'familia-avo',
+    avó: 'familia-avo',
+    vovo: 'familia-avo',
+    vovó: 'familia-avo',
+    sardinha: 'sardinha',
+    'familia-mae': 'familia-mae',
+    mae: 'familia-mae',
+    mãe: 'familia-mae',
+    'familia-irmas': 'familia-irmas',
+    irmas: 'familia-irmas',
+    irmãs: 'familia-irmas',
+    paratii: 'paratii',
+    antartida: 'antartida',
+    antártida: 'antartida',
+    livro: 'livro',
+    familia: 'familia'
   };
 
   var TOPIC_ALIASES = {
@@ -152,7 +217,12 @@
 
   var TOPIC_ORDER = ['cultivo', 'unifesp', 'saude', 'plantas', 'ciencia'];
 
-  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'disneyjr'];
+  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'tamara', 'amyr', 'disneyjr'];
+  var GAMES_CHANNELS = { zangado: true, paulinho: true };
+
+  function isGamesChannel(id) {
+    return !!GAMES_CHANNELS[id];
+  }
 
   var cachedHub = null;
   var selectedId = '';
@@ -574,7 +644,12 @@
     var list = videos || [];
     if (channel && channel !== 'all') {
       list = list.filter(function (v) {
+        if (channel === 'tamara') return v.channel === 'tamara' || v.channel === 'amyr';
         return v.channel === channel;
+      });
+    } else {
+      list = list.filter(function (v) {
+        return !isGamesChannel(v.channel);
       });
     }
     if (series) {
@@ -637,7 +712,7 @@
         grouped = grouped.concat(sortChannelVideos(chunk, id));
       }
       var rest = list.filter(function (v) {
-        return CHANNEL_ORDER.indexOf(v.channel) < 0;
+        return CHANNEL_ORDER.indexOf(v.channel) < 0 && !isGamesChannel(v.channel);
       });
       return grouped.concat(sortChannelVideos(rest, ''));
     }
@@ -662,6 +737,10 @@
     if (id === 'lair') return 'Dr. Lair Ribeiro';
     if (id === 'davis') return 'William Davis, MD';
     if (id === 'disneyjr') return 'Disney Jr. Brasil';
+    if (id === 'tamara') return 'Tamara Klink';
+    if (id === 'amyr') return 'Amyr Klink';
+    if (id === 'zangado') return 'Zangado';
+    if (id === 'paulinho') return 'Paulinho o LOKO';
     return id;
   }
 
@@ -803,6 +882,7 @@
       if (byId[CHANNEL_ORDER[j]]) ordered.push(byId[CHANNEL_ORDER[j]]);
     }
     for (var k = 0; k < list.length; k++) {
+      if (isGamesChannel(list[k].id)) continue;
       if (CHANNEL_ORDER.indexOf(list[k].id) < 0) ordered.push(list[k]);
     }
     return ordered;
@@ -832,7 +912,10 @@
 
   function renderFilters() {
     if (!filtersEl || !cachedHub) return;
-    var channels = [{ id: 'all', label: i18n('pages.videos.filterAll', 'Todos'), count: (cachedHub.videos || []).length }]
+    var labCount = ((cachedHub.videos || []).filter(function (v) {
+      return !isGamesChannel(v.channel);
+    })).length;
+    var channels = [{ id: 'all', label: i18n('pages.videos.filterAll', 'Todos'), count: labCount }]
       .concat(orderedChannels());
     // Com canal selecionado, só "Todos" + o ativo — as outras categorias ficam ocultas.
     if (activeChannel && activeChannel !== 'all') {
@@ -1392,6 +1475,12 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
+    var gamesChannel = readFilterFromUrl().channel;
+    if (isGamesChannel(gamesChannel)) {
+      window.location.replace(gamesChannel === 'paulinho' ? '/jogos/aleff/' : '/jogos/zangado/');
+      return;
+    }
+
     var grid = document.getElementById('videos-list');
     filtersEl = document.getElementById('videos-filters');
     searchEl = document.getElementById('videos-search');

@@ -44,9 +44,12 @@ function formatDateCompact(iso) {
   }
 }
 
+var HOME_PINNED_SLUG = 'inspecao-arte-bom-dia-inverno';
+
 /**
  * Últimas do laboratório: ordena por data, mas garante diversidade de categorias
  * (ex.: uma pesquisa não fica enterrada sob várias inspeções do mesmo dia).
+ * A divulgação Bom dia, Inverno fica sempre no início.
  */
 function pickHomeLatestPosts(posts, limit) {
   const max = Math.max(1, Number(limit) || 4);
@@ -55,6 +58,9 @@ function pickHomeLatestPosts(posts, limit) {
   });
   if (!sorted.length) return [];
 
+  const pinned = sorted.find(function (p) {
+    return p && p.slug === HOME_PINNED_SLUG;
+  });
   const windowSize = Math.min(sorted.length, 36);
   const window = sorted.slice(0, windowSize);
   const picked = [];
@@ -70,6 +76,8 @@ function pickHomeLatestPosts(posts, limit) {
     picked.push(p);
   }
 
+  if (pinned) take(pinned);
+
   ['pesquisa', 'inspecao', 'equipamento'].forEach(function (cat) {
     if (picked.length >= max) return;
     const hit = window.find(function (p) {
@@ -83,9 +91,12 @@ function pickHomeLatestPosts(posts, limit) {
     take(p);
   });
 
-  return picked.sort(function (a, b) {
+  const rest = picked.filter(function (p) {
+    return !pinned || p.slug !== HOME_PINNED_SLUG;
+  }).sort(function (a, b) {
     return new Date(b.date) - new Date(a.date);
   });
+  return pinned ? [pinned].concat(rest) : rest;
 }
 
 function renderHomePostCards(container, posts) {

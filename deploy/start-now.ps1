@@ -21,7 +21,7 @@ function Stop-ExistingSite {
     ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
 
   Get-CimInstance Win32_Process -Filter "Name = 'cloudflared.exe'" -ErrorAction SilentlyContinue |
-    Where-Object { $_.CommandLine -like '*tunnel run budganja*' } |
+    Where-Object { $_.CommandLine -like '*tunnel run*' } |
     ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
 
   Start-Sleep -Seconds 1
@@ -47,7 +47,7 @@ npm run build
 
 $nodeJob = Start-Process -FilePath 'node' -ArgumentList 'server/index.js' -WorkingDirectory $Root -WindowStyle Minimized -PassThru
 Start-Sleep -Seconds 2
-$tunnelJob = Start-Process -FilePath 'cloudflared' -ArgumentList 'tunnel','run','budganja' -WindowStyle Minimized -PassThru
+$tunnelJob = Start-Process -FilePath 'cloudflared' -ArgumentList 'tunnel','run','budganja-pc' -WindowStyle Minimized -PassThru
 Start-Sleep -Seconds 4
 
 Write-Host ''

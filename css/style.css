@@ -10,6 +10,7 @@
 @import url("pages/home.css");
 @import url("pages/plantas.css");
 @import url("pages/animais.css");
+@import url("pages/jogos-broto.css");
 @import url("luximetro.css");
 @import url("learn-translate.css");
 
@@ -631,6 +632,17 @@ img, video, svg {
     --hq-icon-bg: linear-gradient(145deg, rgba(231, 76, 60, 0.35), rgba(192, 57, 43, 0.15));
     --hq-icon-border: rgba(231, 76, 60, 0.4);
     --hq-icon-shadow: 0 3px 10px rgba(231, 76, 60, 0.18);
+}
+
+.header-quick-link--games {
+    --hq-accent: #9ad15f;
+    --hq-accent-soft: rgba(124, 186, 90, 0.16);
+    --hq-accent-strong: rgba(90, 140, 48, 0.34);
+    --hq-accent-border: rgba(154, 209, 95, 0.45);
+    --hq-label: #eef8d8;
+    --hq-icon-bg: linear-gradient(145deg, rgba(154, 209, 95, 0.35), rgba(90, 140, 48, 0.16));
+    --hq-icon-border: rgba(154, 209, 95, 0.4);
+    --hq-icon-shadow: 0 3px 10px rgba(124, 186, 90, 0.18);
 }
 
 .header-quick-link--ferramentas {
@@ -1972,6 +1984,7 @@ body.mobile-menu-open {
 .nav-app-tile--watts-m2 { --tile-icon-bg: rgba(230, 126, 34, 0.24); --tile-icon-border: rgba(230, 126, 34, 0.38); }
 .nav-app-tile--guia-cultivo { --tile-icon-bg: rgba(46, 204, 113, 0.22); --tile-icon-border: rgba(46, 204, 113, 0.38); }
 .nav-app-tile--videos { --tile-icon-bg: rgba(231, 76, 60, 0.22); --tile-icon-border: rgba(231, 76, 60, 0.35); }
+.nav-app-tile--games { --tile-icon-bg: rgba(154, 209, 95, 0.22); --tile-icon-border: rgba(154, 209, 95, 0.38); }
 .nav-app-tile--pesquisas { --tile-icon-bg: rgba(52, 152, 219, 0.22); --tile-icon-border: rgba(52, 152, 219, 0.35); }
 .nav-app-tile--inspecoes { --tile-icon-bg: rgba(149, 165, 166, 0.24); --tile-icon-border: rgba(149, 165, 166, 0.38); }
 .nav-app-tile--equipamentos { --tile-icon-bg: rgba(139, 90, 43, 0.26); --tile-icon-border: rgba(139, 90, 43, 0.4); }
@@ -7167,6 +7180,7 @@ body[data-page="home"] .features {
 .card-icon--equipamentos,
 .card-icon--comunidade,
 .card-icon--videos,
+.card-icon--games,
 .card-icon--radio,
 .card-icon--sorteios,
 .card-icon--plantas,
@@ -7250,6 +7264,12 @@ body[data-page="home"] .features {
     background: linear-gradient(145deg, rgba(231, 76, 60, 0.35), rgba(192, 57, 43, 0.15));
     border: 1px solid rgba(231, 76, 60, 0.4);
     box-shadow: 0 3px 10px rgba(231, 76, 60, 0.18);
+}
+
+.card-icon--games {
+    background: linear-gradient(145deg, rgba(154, 209, 95, 0.35), rgba(90, 140, 48, 0.16));
+    border: 1px solid rgba(154, 209, 95, 0.42);
+    box-shadow: 0 3px 10px rgba(124, 186, 90, 0.18);
 }
 
 .card-icon--radio {
@@ -9483,6 +9503,17 @@ body[data-page="apresentacao-unifesp"] .apresentacao-ask .botao[download] {
     --mm-icon-shadow: 0 3px 10px rgba(231, 76, 60, 0.18);
 }
 
+.mobile-menu-link--games {
+    --mm-accent: #9ad15f;
+    --mm-accent-soft: rgba(124, 186, 90, 0.16);
+    --mm-accent-strong: rgba(90, 140, 48, 0.34);
+    --mm-accent-border: rgba(154, 209, 95, 0.45);
+    --mm-label: #eef8d8;
+    --mm-icon-bg: linear-gradient(145deg, rgba(154, 209, 95, 0.35), rgba(90, 140, 48, 0.16));
+    --mm-icon-border: rgba(154, 209, 95, 0.4);
+    --mm-icon-shadow: 0 3px 10px rgba(124, 186, 90, 0.18);
+}
+
 .mobile-menu-link--ferramentas {
     --mm-accent: #f4d03f;
     --mm-accent-soft: rgba(241, 196, 15, 0.14);
@@ -10250,6 +10281,103 @@ html[data-theme="light"] .header-group-divider {
     margin-bottom: 0;
 }
 
+.jogos-page .jogos-cadernos,
+.jogos-page .jogos-paulinho,
+.jogos-page .jogos-canais {
+    margin: 28px 0 0;
+}
+
+.jogos-page .jogos-back {
+    margin: 0 0 8px;
+}
+
+.jogos-page .jogos-back a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.jogos-page .jogos-back a:hover,
+.jogos-page .jogos-back a:focus-visible {
+    color: var(--color-accent-light);
+}
+
+.jogos-page .jogos-name-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 18px 0 0;
+    padding: 0;
+}
+
+.jogos-page .jogos-name {
+    display: block;
+    padding: 18px 0;
+    border-bottom: 2px solid rgba(154, 209, 95, 0.28);
+    color: var(--color-accent-light);
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    text-decoration: none;
+}
+
+.jogos-page .jogos-name:hover,
+.jogos-page .jogos-name:focus-visible {
+    border-bottom-color: #9ad15f;
+    color: #eef8d8;
+    outline: none;
+}
+
+.jogos-page .jogos-catalog-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin: 8px 0 0;
+}
+
+.jogos-page .jogos-catalog-links a {
+    color: var(--color-text-muted);
+}
+
+.jogos-watch-page .jogos-watch-player {
+    max-width: 920px;
+}
+
+.jogos-watch-page .jogos-watch-title {
+    margin: 16px 0 6px;
+    font-size: clamp(1.25rem, 2.4vw, 1.7rem);
+    letter-spacing: -0.02em;
+}
+
+.jogos-watch-page .jogos-watch-date {
+    margin: 0 0 14px;
+    color: var(--color-text-muted);
+}
+
+.jogos-page .jogos-channel-picks {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 8px 0 4px;
+}
+
+.jogos-page .jogos-channel-head {
+    margin-top: 8px;
+}
+
+.jogos-page .jogos-creator-chips {
+    margin-bottom: 4px;
+}
+
+.jogos-page .inspecoes-hub-section-desc a + a {
+    margin-left: 12px;
+}
+
+.jogos-page .jogos-cadernos .inspecoes-list {
+    margin-top: 12px;
+}
+
 .videos-channel-section-head {
     display: flex;
     flex-wrap: wrap;
@@ -10470,6 +10598,11 @@ html[data-theme="light"] .header-group-divider {
     gap: 20px;
 }
 
+.jogos-page .videos-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
 .videos-page .video-card.card {
     padding: 0;
     overflow: hidden;
@@ -10679,6 +10812,11 @@ html[data-theme="light"] .header-group-divider {
         gap: 16px;
     }
 
+    .jogos-page .videos-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
     .video-card-actions .botao {
         flex: 1 1 calc(50% - 8px);
     }
@@ -10782,6 +10920,12 @@ html[data-theme="light"] .botao-google {
     text-decoration: none;
     color: #1a1a1a;
     box-shadow: none;
+}
+
+.botao-google[hidden],
+.entrar-google-btn[hidden],
+.login-google-section[hidden] {
+    display: none !important;
 }
 
 .entrar-google-btn:hover {
@@ -13074,6 +13218,7 @@ a.palavras-duplo-word:focus-visible {
 .biblioteca-hub-card--animais { --bib-accent: #e59866; --bib-soft: rgba(230, 126, 34, 0.14); }
 .biblioteca-hub-card--vida { --bib-accent: #52be80; --bib-soft: rgba(46, 204, 113, 0.14); }
 .biblioteca-hub-card--videos { --bib-accent: #ff6b6b; --bib-soft: rgba(231, 76, 60, 0.14); }
+.biblioteca-hub-card--games { --bib-accent: #9ad15f; --bib-soft: rgba(124, 186, 90, 0.14); }
 .biblioteca-hub-card--comunidade { --bib-accent: #58d68d; --bib-soft: rgba(39, 174, 96, 0.14); }
 
 /* Guia de Palavras — glossário simples */
@@ -13173,6 +13318,23 @@ a.palavras-duplo-word:focus-visible {
     color: #fef9d7;
     font-weight: 700;
     line-height: 1.2;
+}
+
+.guia-palavras-item--aviso {
+    border-left-color: #e23a2c;
+    background: rgba(40, 14, 12, 0.55);
+}
+
+.guia-palavras-item--aviso .guia-palavras-word {
+    text-decoration: underline;
+    text-decoration-color: #e23a2c;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.14em;
+}
+
+.guia-palavras-item--aviso .guia-palavras-group {
+    color: #ffb4a8;
+    border-color: rgba(226, 58, 44, 0.45);
 }
 
 .guia-palavras-badge {
