@@ -72,7 +72,7 @@ async function main() {
   writeI18n(i18n, tamara);
   fs.writeFileSync(I18N_FILE, JSON.stringify(i18n, null, 2) + '\n', 'utf8');
 
-  const href = POST_HREF;
+  const href = '/inverno/';
 
   if (fs.existsSync(SUG_FILE)) {
     const sug = JSON.parse(fs.readFileSync(SUG_FILE, 'utf8'));
@@ -147,7 +147,7 @@ async function main() {
   }
 
   const update = {
-    id: 'bom-dia-inverno-2026-08-cover-tt',
+    id: 'bom-dia-inverno-2026-08-circular',
     href: href,
     image: '/imagens/inspecoes/bom-dia-inverno-cover.jpg',
     imageAlt: {
@@ -159,9 +159,9 @@ async function main() {
     mark: 'TT',
     markHidden: true,
     linkLabel: {
-      'pt-BR': 'Ver divulgação',
-      en: 'Open promotion',
-      es: 'Ver divulgación'
+      'pt-BR': 'Entrar no gelo',
+      en: 'Step onto the ice',
+      es: 'Entrar al hielo'
     },
     label: {
       'pt-BR': 'Divulgação',
@@ -169,15 +169,14 @@ async function main() {
       es: 'Divulgación'
     },
     title: {
-      'pt-BR': 'Bom dia, Inverno — Tamara Klink no laboratório',
-      en: 'Bom dia, Inverno — Tamara Klink in the lab',
-      es: 'Bom dia, Inverno — Tamara Klink en el laboratorio'
+      'pt-BR': 'Bom dia, Inverno — façam o livro circular',
+      en: 'Bom dia, Inverno — let the book circulate',
+      es: 'Bom dia, Inverno — hagan circular el libro'
     },
     text: {
-      'pt-BR':
-        'Capa oficial: a foto que ela tirou com o drone, controle na mão esquerda, no gelo da invernagem.',
-      en: 'Official cover: the photo she took with a drone, controller in her left hand, on the overwintering ice.',
-      es: 'Portada oficial: la foto que ella tomó con el dron, control en la mano izquierda, sobre el hielo de la invernada.'
+      'pt-BR': 'Oito meses no gelo. Tamara pediu: empresta, doa, deixa o papel viver.',
+      en: 'Eight months on the ice. Tamara asked: lend, donate, let the paper live.',
+      es: 'Ocho meses en el hielo. Tamara pidió: presta, dona, deja vivir el papel.'
     },
     cta: {
       'pt-BR': 'Depois',

@@ -272,6 +272,11 @@
       "tileLabel": "Vida",
       "description": "Conto do laboratório: cuidar de plantas com ciência, natureza e amizade."
     },
+    "inverno": {
+      "label": "Bom dia, Inverno",
+      "tileLabel": "Inverno",
+      "description": "Divulgação do livro de Tamara Klink — fazer circular."
+    },
     "post-guia-calculadora-super-solo": {
       "label": "Super Solo: Guia de Uso",
       "tileLabel": "Super Solo: Guia de Uso",
@@ -442,8 +447,8 @@
       "pillarCommunityText": "Vídeos, sorteios e novidades no canal @InspetorBudGanja.",
       "promoBadge": "Divulgação",
       "promoTitle": "Bom dia, Inverno — Tamara Klink",
-      "promoText": "Invernagem ártica no laboratório: livro, léxico e mapa do site.",
-      "promoJoin": "Abrir divulgação",
+      "promoText": "Oito meses no gelo. O livro pede para circular.",
+      "promoJoin": "Bom dia, Inverno",
       "giveawayBadge": "🎁 Sorteio ativo",
       "giveawayTitle": "Sorteio do laboratório",
       "giveawayJoin": "Participar agora",
@@ -590,6 +595,7 @@
       "chipChannels": "Canais",
       "chipCourses": "Cursos",
       "chipArticles": "Artigos",
+      "chipNeuroscience": "Neurociências",
       "chipPlants": "Plantas",
       "chipFruits": "Frutos",
       "chipAnimals": "Animais",
@@ -627,6 +633,8 @@
       "sectionCoursesDesc": "Análise de programas de extensão e formação — carga horária, acesso, grade e valor prático.",
       "sectionArticles": "Artigos",
       "sectionArticlesDesc": "Auditoria editorial de artigos científicos peer-reviewed — desenho, achados, limites e utilidade educativa.",
+      "sectionNeuroscience": "Neurociências",
+      "sectionNeuroscienceDesc": "Mapas do ofício cerebral e canabinóide — sistemas, evidência e limites educativos, distintos de Artigos (paper a paper) e do Legado (biografia).",
       "sectionPlants": "Plantas",
       "sectionPlantsDesc": "Relatórios educacionais sobre espécies do catálogo de plantas medicinais — ficha, usos tradicionais, cuidados e ligação à extensão UNIFESP.",
       "sectionFruits": "Frutos",
@@ -656,6 +664,7 @@
       "sugTipoCanal": "Canal",
       "sugTipoCurso": "Curso",
       "sugTipoArtigo": "Artigo",
+      "sugTipoNeurociencia": "Neurociência",
       "sugTipoEquipamento": "Equipamento",
       "sugTipoDivulgacao": "Divulgação",
       "sugTipoLoja": "Loja",
@@ -799,7 +808,8 @@
       "learnToneCaution": "Uso cauteloso",
       "learnMundane": "Comum",
       "learnLabGloss": "BudGanja",
-      "ctaDiary": "Diário da Sementinha"
+      "ctaDiary": "Diário da Sementinha",
+      "ctaInverno": "Bom dia, Inverno"
     },
     "about": {
       "eyebrow": "Sobre",
@@ -896,6 +906,38 @@
       "linkLibrary": "Biblioteca",
       "linkInspections": "Inspeções de Palavras",
       "docTitle": "Guia de Palavras | Inspetor BudGanja"
+    },
+    "inverno": {
+      "brand": "Inspetor BudGanja",
+      "lead": "Oito meses no gelo. O livro pede para circular.",
+      "coverAlt": "Capa de Bom dia, Inverno, de Tamara Klink — Companhia das Letras",
+      "ctaCirculate": "Fazer o livro circular",
+      "ctaLexicon": "Léxico do gelo",
+      "circulateKicker": "Pedido da autora",
+      "circulateTitle": "Façam o livro circular",
+      "circulateLead": "Tamara pediu que os exemplares já impressos cumpram o tempo: empresta, doa, deixa o papel viver. Já há muitos Bom dia, Inverno no Brasil.",
+      "step1Title": "Empresta",
+      "step1Text": "A quem ainda não leu — família, colega, a mesa do lado.",
+      "step2Title": "Doa a uma biblioteca",
+      "step2Text": "Principalmente se o título ainda não estiver no acervo do bairro.",
+      "step3Title": "Se ainda não chegou a ti",
+      "step3Text": "Pede emprestado primeiro. A editora e o site da Tamara ficam para quando não houver outro caminho.",
+      "linkTamaraSite": "tamaraklink.com",
+      "linkEditora": "Companhia das Letras",
+      "lexiconKicker": "Laboratório",
+      "lexiconTitle": "Léxico do gelo",
+      "lexiconLead": "Toca numa palavra. O gelo nomeia o ofício: ficar quando o barco não passa.",
+      "openWord": "Abrir ficha",
+      "poemKicker": "Poema do laboratório",
+      "poemTitle": "Bom dia, Inverno",
+      "poemLead": "Verso BudGanja em diálogo com a obra — não é texto do livro.",
+      "poemBody": "Bom dia, Inverno.\\nNão pedimos sol a mais —\\npedimos só ficar\\nquando o gelo prende o barco\\ne o peito ainda cabe na mão.\\n\\nA semente não grita.\\nA mudinha também não.\\nEla só pede tempo:\\nluz fraca, água certa,\\num balde que não julga o enjoo.\\n\\nDizem que o inverno é fim.\\nMentira antiga.\\nInverno é estação —\\nfase em que não se força flor,\\nfase em que se inspeciona a raiz.\\n\\nTamara já sabia no gelo:\\npartir, ficar, escrever.\\nNós, neste universo novo,\\naprendemos a cumprimentar a estação difícil —\\nnão para negar o medo,\\nmas para não deixar a mudinha\\npassar sozinha.\\n\\nFaça o melhor!",
+      "poemVida": "Ler na página Vida",
+      "mapKicker": "Mapa",
+      "mapTitle": "No laboratório",
+      "mapLead": "Divulgação independente — sem afiliação editorial. Mérito a Tamara.",
+      "linkInspection": "Inspeção da obra",
+      "linkQa": "Q&A"
     }
   }
 }

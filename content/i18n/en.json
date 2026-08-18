@@ -267,6 +267,11 @@
       "tileLabel": "Vida",
       "description": "Lab story: caring for plants with science, nature and friendship."
     },
+    "inverno": {
+      "label": "Bom dia, Inverno",
+      "tileLabel": "Winter",
+      "description": "Promotion of Tamara Klink’s book — let it circulate."
+    },
     "post-guia-calculadora-super-solo": {
       "label": "Super Soil: usage guide",
       "tileLabel": "Super Soil: usage guide",
@@ -442,8 +447,8 @@
       "pillarCommunityText": "Videos, giveaways and news on @InspetorBudGanja.",
       "promoBadge": "Promotion",
       "promoTitle": "Bom dia, Inverno — Tamara Klink",
-      "promoText": "Arctic overwintering in the lab: book, lexicon and site map.",
-      "promoJoin": "Open promotion",
+      "promoText": "Eight months on the ice. The book asks to circulate.",
+      "promoJoin": "Bom dia, Inverno",
       "giveawayBadge": "🎁 Active giveaway",
       "giveawayTitle": "Lab giveaway",
       "giveawayJoin": "Join now",
@@ -590,6 +595,7 @@
       "chipChannels": "Channels",
       "chipCourses": "Courses",
       "chipArticles": "Articles",
+      "chipNeuroscience": "Neuroscience",
       "chipPlants": "Plants",
       "chipFruits": "Fruits",
       "chipAnimals": "Animals",
@@ -627,6 +633,8 @@
       "sectionCoursesDesc": "Analysis of extension and training programs — hours, access, syllabus and practical value.",
       "sectionArticles": "Articles",
       "sectionArticlesDesc": "Editorial audit of peer-reviewed scientific papers — design, findings, limits and educational value.",
+      "sectionNeuroscience": "Neuroscience",
+      "sectionNeuroscienceDesc": "Maps of brain and cannabinoid craft — systems, evidence and educational limits, distinct from Articles (paper by paper) and Legacy (biography).",
       "sectionPlants": "Plants",
       "sectionPlantsDesc": "Educational reports on species from the medicinal plants catalog — profile, traditional uses, cautions and UNIFESP links.",
       "sectionFruits": "Fruits",
@@ -655,6 +663,7 @@
       "sugTipoCanal": "Channel",
       "sugTipoCurso": "Course",
       "sugTipoArtigo": "Article",
+      "sugTipoNeurociencia": "Neuroscience",
       "sugTipoEquipamento": "Equipment",
       "sugTipoDivulgacao": "Outreach",
       "sugTipoLoja": "Shop",
@@ -799,7 +808,8 @@
       "learnToneCaution": "Use with caution",
       "learnMundane": "Everyday",
       "learnLabGloss": "BudGanja",
-      "ctaDiary": "Little Seed Diary"
+      "ctaDiary": "Little Seed Diary",
+      "ctaInverno": "Bom dia, Inverno"
     },
     "about": {
       "eyebrow": "About",
@@ -896,6 +906,38 @@
       "linkLibrary": "Library",
       "linkInspections": "Word inspections",
       "docTitle": "Words Guide | Inspetor BudGanja"
+    },
+    "inverno": {
+      "brand": "Inspetor BudGanja",
+      "lead": "Eight months on the ice. The book asks to circulate.",
+      "coverAlt": "Cover of Bom dia, Inverno, by Tamara Klink — Companhia das Letras",
+      "ctaCirculate": "Let the book circulate",
+      "ctaLexicon": "Ice lexicon",
+      "circulateKicker": "The author’s request",
+      "circulateTitle": "Let the book circulate",
+      "circulateLead": "Tamara asked for copies already printed to live out their time: lend, donate, let the paper work. Many Bom dia, Inverno copies are already in Brazil.",
+      "step1Title": "Lend it",
+      "step1Text": "To someone who has not read it yet — family, a colleague, the next table.",
+      "step2Title": "Donate to a library",
+      "step2Text": "Especially if the title is not yet in the neighborhood collection.",
+      "step3Title": "If it has not reached you yet",
+      "step3Text": "Borrow first. The publisher and Tamara’s site are for when there is no other path.",
+      "linkTamaraSite": "tamaraklink.com",
+      "linkEditora": "Companhia das Letras",
+      "lexiconKicker": "Laboratory",
+      "lexiconTitle": "Ice lexicon",
+      "lexiconLead": "Touch a word. Ice names the craft: stay when the boat cannot pass.",
+      "openWord": "Open sheet",
+      "poemKicker": "Lab poem",
+      "poemTitle": "Good Morning, Winter",
+      "poemLead": "A BudGanja verse in dialogue with the work — not text from the book.",
+      "poemBody": "Good morning, Winter.\\nWe do not ask for more sun —\\nwe only ask to stay\\nwhen the ice holds the boat\\nand the chest still fits in a hand.\\n\\nThe seed does not shout.\\nNeither does the seedling.\\nIt only asks for time:\\nweak light, right water,\\na bucket that does not judge the nausea.\\n\\nThey say winter is an end.\\nOld lie.\\nWinter is a season —\\na phase when you do not force the flower,\\na phase when you inspect the root.\\n\\nTamara already knew on the ice:\\nleave, stay, write.\\nIn this new universe of ours\\nwe learn to greet the hard season —\\nnot to deny the fear,\\nbut so the seedling\\ndoes not pass alone.\\n\\nDo your best!",
+      "poemVida": "Read on Vida",
+      "mapKicker": "Map",
+      "mapTitle": "In the lab",
+      "mapLead": "Independent promotion — no publisher affiliation. Credit to Tamara.",
+      "linkInspection": "Work inspection",
+      "linkQa": "Q&A"
     }
   }
 }

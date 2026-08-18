@@ -505,16 +505,9 @@ const server = http.createServer((req, res) => {
       });
     }
 
-    // Campanha: entrada do site → página de divulgação (home continua em /index.html)
-    if (url === '/' || url === '') {
-      return resRedirect(res, '/posts/post-inspecao-arte-bom-dia-inverno.html');
-    }
-    if (url === '/inicio' || url === '/inicio/') {
-      return resRedirect(res, '/index.html');
-    }
-
     let staticPath = url;
     if (staticPath === '/') staticPath = '/index.html';
+    if (staticPath === '/inverno') staticPath = '/inverno/';
     if (staticPath === '/calculadoras') staticPath = '/calculadoras/';
     if (staticPath === '/equipamentos') staticPath = '/equipamentos/';
     if (staticPath === '/sorteios') staticPath = '/sorteios/';

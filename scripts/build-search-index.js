@@ -29,6 +29,7 @@ const STATIC_PAGES = [
   { url: '/videos/', title: 'Últimos vídeos', desc: 'Vídeos recentes do canal YouTube', keywords: 'youtube vídeo canal' },
   { url: '/radio/', title: 'BudGanja Radio', desc: 'Playlist BudGanja Radio do laboratório', keywords: 'rádio budganja playlist' },
   { url: '/vida/', title: 'Vida — conto familiar', desc: 'Conto familiar do Laboratório BudGanja: cuidar de plantas com ciência, natureza e amizade', keywords: 'vida conto infantil família plantas semente inspetor dona maria' },
+  { url: '/inverno/', title: 'Bom dia, Inverno — Tamara Klink', desc: 'Divulgação do livro: oito meses no gelo. Empresta, doa, faz circular.', keywords: 'tamara klink bom dia inverno livro gelo invernagem groenlandia circular' },
   { url: '/info/sobre.html', title: 'Sobre', desc: 'Propósito e metodologia do projeto', keywords: 'sobre missão fitoterapia' },
   { url: '/info/contato.html', title: 'Contato', desc: 'E-mail e perguntas frequentes', keywords: 'contato email' },
   { url: '/info/privacidade.html', title: 'Privacidade', desc: 'LGPD e dados de sorteios', keywords: 'privacidade lgpd' },
