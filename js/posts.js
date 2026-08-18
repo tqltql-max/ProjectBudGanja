@@ -41,6 +41,7 @@ var SERIES_LABELS = {
   'canal-tamaraklink': 'Tamara Klink · Canais',
   'canal-amyrklink': 'Amyr Klink · Canais',
   'canal-zangado': 'Zangado · Canais',
+  'canal-paulinho': 'Paulinho o LOKO · Canais',
   'canal-vevo': 'VEVO · Canais',
   'verificacao-equipamento': 'Equipamentos',
   'formacao-academica': 'Extensão académica',

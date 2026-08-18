@@ -1292,6 +1292,25 @@
     "seriesLabel": "Tomatinho Cereja · fruto"
   },
   {
+    "title": "Inspeção: canal Paulinho o LOKO — arquivo GTA RP, Anti-RP e raiz Modder",
+    "titleEn": "Inspection: Paulinho o LOKO channel — GTA RP archive, Anti-RP and Modder root",
+    "titleEs": "Inspección: canal Paulinho o LOKO — archivo GTA RP, Anti-RP y raíz Modder",
+    "excerpt": "Canais: @PaulinhoLOKOoficial + Modder (origem) — arquivo Games de GTA RP / Anti-RP; distinto da ficha de pessoa Aleff e da crítica Zangado.",
+    "excerptEn": "Channels: @PaulinhoLOKOoficial + Modder (origin) — Games archive of GTA RP / Anti-RP; distinct from Aleff person sheet and Zangado critique.",
+    "excerptEs": "Canales: @PaulinhoLOKOoficial + Modder (origen) — archivo Games de GTA RP / Anti-RP; distinto de la ficha de persona Aleff y de la crítica Zangado.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-canal-paulinho",
+    "url": "/posts/post-inspecao-canal-paulinho.html",
+    "date": "2026-08-18T20:00:00.000Z",
+    "filename": "posts/post-inspecao-canal-paulinho.html",
+    "coverImage": "/imagens/inspecoes/aleff-cover.jpg",
+    "category": "inspecao",
+    "series": "canal-paulinho",
+    "seriesOrder": 15,
+    "seriesLabel": "Paulinho o LOKO · Canais"
+  },
+  {
     "title": "Inspeção: Richard Curtis — o autor, o ofício da escrita e Questão de Tempo",
     "titleEn": "Inspection: Richard Curtis — the author, the craft of writing and About Time",
     "titleEs": "Inspección: Richard Curtis — el autor, el oficio de la escritura y About Time",

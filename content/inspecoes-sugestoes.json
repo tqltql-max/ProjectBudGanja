@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T17:07:28.187Z",
+  "updatedAt": "2026-08-18T19:22:37.558Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5219,7 +5219,7 @@
         "https://pt.wikipedia.org/wiki/Paulinho_o_Loko",
         "/posts/post-inspecao-palavra-respeito.html",
         "/posts/post-inspecao-palavra-idolo.html",
-        "/jogos/?canal=paulinho"
+        "/jogos/aleff/"
       ],
       "notes": "Pessoa especial. Não reduzir a streamer. Catálogo de jogos é satélite."
     },
@@ -5576,6 +5576,30 @@
         "/posts/post-inspecao-canal-tamaraklink.html"
       ],
       "notes": "Site ≠ pessoa ≠ canal. Indexar ≠ endosso."
+    },
+    {
+      "id": "canal-paulinho",
+      "title": "Paulinho o LOKO — canal GTA RP, Anti-RP e raiz Modder",
+      "titleEn": "Paulinho o LOKO — GTA RP channel, Anti-RP and Modder root",
+      "titleEs": "Paulinho o LOKO — canal GTA RP, Anti-RP y raíz Modder",
+      "tipo": "canal",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canais: @PaulinhoLOKOoficial + Modder (UC57…) — arquivo Games; distinto da ficha de pessoa Aleff.",
+      "whyEn": "Channels: @PaulinhoLOKOoficial + Modder (UC57…) — Games archive; distinct from Aleff person sheet.",
+      "whyEs": "Canales: @PaulinhoLOKOoficial + Modder (UC57…) — archivo Games; distinto de la ficha de persona Aleff.",
+      "suggestedSlug": "inspecao-canal-paulinho",
+      "doneHref": "/posts/post-inspecao-canal-paulinho.html",
+      "seriesHint": "canal-paulinho",
+      "sources": [
+        "https://www.youtube.com/@PaulinhoLOKOoficial",
+        "https://www.youtube.com/channel/UC57rWqVJ7yGluT4cGrgfkgg",
+        "https://pt.wikipedia.org/wiki/Paulinho_o_Loko",
+        "/posts/post-inspecao-figura-aleff.html",
+        "/jogos/aleff/",
+        "/videos/?channel=paulinho"
+      ],
+      "notes": "Pessoa ≠ canal. Ficção de jogo ≠ manual de crime. Modder = raiz 2015."
     }
   ]
 }
