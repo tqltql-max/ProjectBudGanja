@@ -86,18 +86,22 @@ body[data-page="home"] .hero.hero--inverno::after {
 }
 
 body[data-page="home"] .hero--inverno .hero-cover-link {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     line-height: 0;
 }
 
 body[data-page="home"] .hero--inverno .hero-cover {
     display: block;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     height: auto;
     max-height: min(78vh, 820px);
-    object-fit: cover;
-    object-position: center 45%;
+    margin-inline: auto;
+    object-fit: contain;
+    object-position: center center;
     animation: home-inverno-in 0.7s ease both;
 }
 

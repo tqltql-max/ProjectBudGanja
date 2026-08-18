@@ -570,6 +570,20 @@
     if (label) {
       label.textContent = t('pages.vida.learnLabel', 'Aprender idiomas');
     }
+    var legendDanger = state.toolbar.querySelector('[data-learn-legend-danger]');
+    if (legendDanger) {
+      legendDanger.textContent = t(
+        'pages.vida.learnLegendDanger',
+        'Traço vermelho: palavra de aviso — retaliação, dano, toxina ou afecto que cobra o preço em quem o cultiva. Não é proibição: é literacia (sentido comum + leitura BudGanja).'
+      );
+    }
+    var legendLink = state.toolbar.querySelector('[data-learn-legend-link]');
+    if (legendLink) {
+      legendLink.textContent = t(
+        'pages.vida.learnLegendLink',
+        'Abrir categoria Palavras de aviso'
+      );
+    }
   }
 
   function forcePtPostBody() {
@@ -807,7 +821,12 @@
       '<button type="button" class="learn-toolbar-btn" data-learn-lang="zu" aria-pressed="false" title="isiZulu">ZU</button>' +
       '</div>' +
       '</div>' +
-      '<p class="learn-toolbar-hint" data-learn-hint></p>';
+      '<p class="learn-toolbar-hint" data-learn-hint></p>' +
+      '<p class="learn-toolbar-legend">' +
+      '<span class="learn-legend-swatch learn-legend-swatch--danger" aria-hidden="true"></span>' +
+      '<span data-learn-legend-danger></span> ' +
+      '<a class="learn-toolbar-legend-link" href="/guia/palavras.html?group=aviso" data-learn-legend-link></a>' +
+      '</p>';
     return bar;
   }
 

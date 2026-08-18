@@ -148,19 +148,65 @@ body.learn-mode-active .learn-mode-on {
     border-bottom-color: rgba(230, 160, 110, 1);
 }
 
-/* Palavras de aviso (catálogo Vida/Palavras-aviso.txt) — mesmo com tradução */
+.learn-toolbar-legend {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem 0.55rem;
+    margin: 0.45rem 0 0;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    color: rgba(244, 237, 216, 0.78);
+}
+
+.learn-legend-swatch {
+    display: inline-block;
+    width: 0.95em;
+    height: 0.28em;
+    border-radius: 1px;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+.learn-legend-swatch--danger {
+    background: #e23a2c;
+    box-shadow: 0 0 0 1px rgba(226, 58, 44, 0.35);
+}
+
+.learn-toolbar-legend-link {
+    color: #ffb4a8;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #e23a2c;
+    text-underline-offset: 0.16em;
+}
+
+.learn-toolbar-legend-link:hover,
+.learn-toolbar-legend-link:focus-visible {
+    color: #ffd0c8;
+    outline: none;
+}
+
+/* Palavras de aviso (catálogo Vida/Palavras-aviso.txt) — traço vermelho sólido */
 .learn-mode-active .learn-word--danger,
-.learn-mode-on .learn-word--danger {
-    background: rgba(180, 64, 48, 0.16);
-    border-bottom: 2px solid rgba(200, 72, 56, 0.9);
+.learn-mode-on .learn-word--danger,
+.learn-mode-active .learn-word--danger.learn-word--unknown,
+.learn-mode-on .learn-word--danger.learn-word--unknown {
+    background: rgba(226, 58, 44, 0.16);
+    border-bottom: 2px solid #e23a2c;
     border-radius: 0.12em;
+    text-decoration: underline;
+    text-decoration-color: #e23a2c;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.14em;
+    color: inherit;
 }
 
 .learn-mode-active .learn-word--danger:hover,
 .learn-mode-active .learn-word--danger:focus-visible,
 .learn-mode-on .learn-word--danger:hover,
 .learn-mode-on .learn-word--danger:focus-visible {
-    background: rgba(180, 64, 48, 0.28);
+    background: rgba(226, 58, 44, 0.28);
 }
 
 .learn-mode-active .learn-word--caution,

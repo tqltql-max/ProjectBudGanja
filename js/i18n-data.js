@@ -883,6 +883,8 @@ window.__I18N_LOCALES__ = {
         "learnToneCaution": "Use with caution",
         "learnMundane": "Everyday",
         "learnLabGloss": "BudGanja",
+        "learnLegendDanger": "Red underline: warning word — retaliation, harm, toxin or affect that charges the price in the one who grows it. Not a ban: literacy (everyday sense + BudGanja reading).",
+        "learnLegendLink": "Open Warning words category",
         "ctaDiary": "Little Seed Diary"
       },
       "about": {
@@ -1868,6 +1870,8 @@ window.__I18N_LOCALES__ = {
         "learnToneCaution": "Uso cauteloso",
         "learnMundane": "Común",
         "learnLabGloss": "BudGanja",
+        "learnLegendDanger": "Trazo rojo: palabra de aviso — retaliación, daño, toxina o afecto que cobra el precio en quien lo cultiva. No es prohibición: es literacia (sentido común + lectura BudGanja).",
+        "learnLegendLink": "Abrir categoría Palabras de aviso",
         "ctaDiary": "Diario de la Semillita"
       },
       "about": {
@@ -2853,6 +2857,8 @@ window.__I18N_LOCALES__ = {
         "learnToneCaution": "Uso cauteloso",
         "learnMundane": "Comum",
         "learnLabGloss": "BudGanja",
+        "learnLegendDanger": "Traço vermelho: palavra de aviso — retaliação, dano, toxina ou afecto que cobra o preço em quem o cultiva. Não é proibição: é literacia (sentido comum + leitura BudGanja).",
+        "learnLegendLink": "Abrir categoria Palavras de aviso",
         "ctaDiary": "Diário da Sementinha"
       },
       "about": {

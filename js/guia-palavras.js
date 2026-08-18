@@ -163,7 +163,9 @@
               '</a>';
           }
           return (
-            '<li class="guia-palavras-item" data-group="' +
+            '<li class="guia-palavras-item' +
+            (item.group === 'aviso' ? ' guia-palavras-item--aviso' : '') +
+            '" data-group="' +
             escapeHtml(item.group || '') +
             '">' +
             '<div class="guia-palavras-item-head">' +

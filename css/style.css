@@ -13319,6 +13319,23 @@ a.palavras-duplo-word:focus-visible {
     line-height: 1.2;
 }
 
+.guia-palavras-item--aviso {
+    border-left-color: #e23a2c;
+    background: rgba(40, 14, 12, 0.55);
+}
+
+.guia-palavras-item--aviso .guia-palavras-word {
+    text-decoration: underline;
+    text-decoration-color: #e23a2c;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.14em;
+}
+
+.guia-palavras-item--aviso .guia-palavras-group {
+    color: #ffb4a8;
+    border-color: rgba(226, 58, 44, 0.45);
+}
+
 .guia-palavras-badge {
     font-size: 0.68rem;
     letter-spacing: 0.04em;
