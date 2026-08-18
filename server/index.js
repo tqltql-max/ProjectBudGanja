@@ -484,19 +484,6 @@ const server = http.createServer((req, res) => {
         return serveDevModeApi(res, req);
       }
       const queryStr = (req.url.split('?')[1] || '');
-      if (url === '/api/auth/google/start' && req.method === 'GET') {
-        const { handleGoogleStart } = require('../lib/auth-google-start.js');
-        const started = handleGoogleStart({
-          headers: req.headers,
-          query: queryStr
-        });
-        setSecurityHeaders(res, req);
-        Object.entries(started.headers || {}).forEach(([k, v]) => res.setHeader(k, v));
-        (started.setCookies || []).forEach((c) => res.appendHeader('Set-Cookie', c));
-        res.writeHead(started.statusCode || started.status || 302);
-        res.end(started.body || '');
-        return;
-      }
       const sendApi = (body) => handleApiRequest({
         method: req.method,
         path: url,
@@ -507,7 +494,7 @@ const server = http.createServer((req, res) => {
         setSecurityHeaders(res, req);
         Object.entries(response.headers || {}).forEach(([k, v]) => res.setHeader(k, v));
         (response.setCookies || []).forEach((c) => res.appendHeader('Set-Cookie', c));
-        res.writeHead(response.status);
+        res.writeHead(response.statusCode || response.status || 500);
         res.end(response.body);
       }).catch(() => {
         setSecurityHeaders(res, req);
@@ -632,20 +619,20 @@ function listenOnAvailablePort(startPort, onReady) {
   tryListen(basePort, 0);
 }
 
-listenOnAvailablePort(PORT, (effectivePort) => {
-  console.log('Server running at http://localhost:' + effectivePort);
-  console.log('Admin login: http://localhost:' + effectivePort + '/login.html');
-  if (isDevModeEnabled()) {
-    console.log('Modo desenvolvimento ATIVO — visitantes veem tela em construção (admin autenticado passa).');
-    console.log('Desative com SITE_DEV_MODE=0 no .env');
-  }
-});
-
 createAppStore({ root: ROOT, netlify: false }).then((store) => {
   appStore = store;
   const backend = store.backend || process.env.STORE_BACKEND || 'sql';
-  console.log('Store backend:', backend);
-  auditStartupSecurity();
+  listenOnAvailablePort(PORT, (effectivePort) => {
+    console.log('Server running at http://localhost:' + effectivePort);
+    console.log('Admin login: http://localhost:' + effectivePort + '/login.html');
+    console.log('Store backend:', backend);
+    if (isDevModeEnabled()) {
+      console.log('Modo desenvolvimento ATIVO — visitantes veem tela em construção (admin autenticado passa).');
+      console.log('Desative com SITE_DEV_MODE=0 no .env');
+    }
+    auditStartupSecurity();
+  });
 }).catch((err) => {
   console.error('Failed to initialize store:', err);
+  process.exit(1);
 });

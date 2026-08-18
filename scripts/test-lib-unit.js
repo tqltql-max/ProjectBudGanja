@@ -141,6 +141,7 @@ const {
   handleGoogleStart,
   encodeOAuthState,
   decodeOAuthReturnTo,
+  verifyOAuthState,
   toNetlifyResponse
 } = require('../lib/auth-google-start.js');
 const prevGoogleId = process.env.GOOGLE_CLIENT_ID;
@@ -171,6 +172,11 @@ assert(
 const encoded = encodeOAuthState('/biblioteca/');
 assert('oauth state decodifica returnTo', decodeOAuthReturnTo(encoded) === '/biblioteca/');
 assert('oauth state rejeita returnTo externo', decodeOAuthReturnTo(encodeOAuthState('https://evil.test')) === '/perfil.html');
+assert(
+  'oauth state assinado verifica sem cookie',
+  verifyOAuthState(encoded) && verifyOAuthState(encoded).returnTo === '/biblioteca/'
+);
+assert('oauth state forjado falha', verifyOAuthState(encoded.slice(0, -3) + 'xxx') == null);
 if (prevGoogleId == null) delete process.env.GOOGLE_CLIENT_ID;
 else process.env.GOOGLE_CLIENT_ID = prevGoogleId;
 if (prevGoogleSecret == null) delete process.env.GOOGLE_CLIENT_SECRET;
