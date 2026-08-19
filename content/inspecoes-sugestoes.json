@@ -67,16 +67,16 @@
       "tipo": "pessoa",
       "priority": 1,
       "status": "feita",
-      "why": "Continuidade do CEBRID após Carlini; coordenação do curso UNIFESP; elo directo com a linha científica do laboratório.",
-      "whyEn": "CEBRID continuity after Carlini; UNIFESP course coordination; direct link to the lab’s scientific line.",
-      "whyEs": "Continuidad del CEBRID tras Carlini; coordinación del curso UNIFESP; vínculo directo con la línea científica del laboratorio.",
+      "why": "Continuidade dos trabalhos de pesquisa no CEBRID após o legado do Prof. Carlini; coordenação do curso de extensão da UNIFESP; elo directo com as linhas científicas do laboratório.",
+      "whyEn": "Continuity of CEBRID research after Prof. Carlini’s legacy; UNIFESP extension-course coordination; direct link to the lab’s scientific lines.",
+      "whyEs": "Continuidad de la investigación del CEBRID tras el legado del Prof. Carlini; coordinación del curso de extensión de la UNIFESP; vínculo directo con las líneas científicas del laboratorio.",
       "suggestedSlug": "inspecao-solange-nappo",
       "seriesHint": "legado-pessoas",
       "sources": [
         "https://www.cebrid.com.br/",
         "https://portal.unifesp.br/destaques/curso-sobre-cannabis-medicinal-da-unifesp-e-movrecam-ganha-premio-internacional"
       ],
-      "notes": "Cruzar com inspeções Carlini, curso UNIFESP e CANABinALL.",
+      "notes": "Cruzar com inspeções Carlini, CEBRID, curso UNIFESP, Eliana Rodrigues e Gabrielle Dainezi.",
       "doneHref": "/posts/post-inspecao-solange-nappo.html"
     },
     {

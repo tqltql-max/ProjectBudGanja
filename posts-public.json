@@ -152,6 +152,25 @@
     "seriesLabel": "Nicolelis · homenagem"
   },
   {
+    "title": "Inspeção: Prof. Elisaldo Carlini — pioneiro da cannabis medicinal",
+    "titleEn": "Inspection: Prof. Elisaldo Carlini — medicinal cannabis pioneer",
+    "titleEs": "Inspección: Prof. Elisaldo Carlini — pionero del cannabis medicinal",
+    "excerpt": "Homenagem documental ao Prof. Emérito Elisaldo Luiz de Araújo Carlini (1930–2020): médico e psicofarmacologista da UNIFESP, fundador do CEBRID — mérito máximo na ciência e na democratização do conhecimento sobre cannabis medicinal no Brasil.",
+    "excerptEn": "Documentary tribute to Professor Emeritus Elisaldo Luiz de Araújo Carlini (1930–2020): UNIFESP physician and psychopharmacologist, CEBRID founder — maximum credit for science and democratizing medicinal-cannabis knowledge in Brazil.",
+    "excerptEs": "Homenaje documental al Prof. Emérito Elisaldo Luiz de Araújo Carlini (1930–2020): médico y psicofarmacólogo de la UNIFESP, fundador del CEBRID — mérito máximo en la ciencia y la democratización del conocimiento sobre cannabis medicinal en Brasil.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-elisaldo-carlini",
+    "url": "/posts/post-inspecao-elisaldo-carlini.html",
+    "date": "2026-07-31T17:00:00.000Z",
+    "filename": "posts/post-inspecao-elisaldo-carlini.html",
+    "coverImage": "/imagens/inspecoes/elisaldo-carlini-cover.jpg",
+    "category": "inspecao",
+    "series": "legado-pessoas",
+    "seriesOrder": 2,
+    "seriesLabel": "Elisaldo Carlini · legado"
+  },
+  {
     "title": "Inspeção: Fruto — Coco — água, polpa e óleo da drupa tropical",
     "titleEn": "Inspection: Fruit — Coconut — water, pulp and oil of the tropical drupe",
     "titleEs": "Inspección: Fruto — Coco — agua, pulpa y aceite de la drupa tropical",
@@ -302,6 +321,25 @@
     "series": "expressoes-ditados",
     "seriesOrder": 4,
     "seriesLabel": "jesusudavi · expressão"
+  },
+  {
+    "title": "Inspeção: Profa. Solange Nappo — CEBRID",
+    "titleEn": "Inspection: Prof. Solange Nappo — CEBRID",
+    "titleEs": "Inspección: Profa. Solange Nappo — CEBRID",
+    "excerpt": "Ficha de legado vivo: Solange Nappo (UNIFESP) — continuidade do CEBRID após Carlini, coordenação do curso de extensão SIEX/MovReCam e elo científico do laboratório.",
+    "excerptEn": "Living-legacy sheet: Solange Nappo (UNIFESP) — CEBRID continuity after Carlini, SIEX/MovReCam extension-course coordination, and a scientific link for the lab.",
+    "excerptEs": "Ficha de legado vivo: Solange Nappo (UNIFESP) — continuidad del CEBRID tras Carlini, coordinación del curso de extensión SIEX/MovReCam y eslabón científico del laboratorio.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-solange-nappo",
+    "url": "/posts/post-inspecao-solange-nappo.html",
+    "date": "2026-07-31T20:00:00.000Z",
+    "filename": "posts/post-inspecao-solange-nappo.html",
+    "coverImage": "/imagens/inspecoes/solange-nappo-cover.jpg",
+    "category": "inspecao",
+    "series": "legado-pessoas",
+    "seriesOrder": 4,
+    "seriesLabel": "Solange Nappo · legado"
   },
   {
     "title": "Inspeção: Planta — Carqueja — flavonoides e amargor nativo",
@@ -5662,25 +5700,6 @@
     "seriesLabel": "CEBRID · formação"
   },
   {
-    "title": "Inspeção: Profa. Solange Nappo — CEBRID",
-    "titleEn": "Inspection: Prof. Solange Nappo — CEBRID",
-    "titleEs": "Inspección: Profa. Solange Nappo — CEBRID",
-    "excerpt": "Ficha de legado vivo: Solange Nappo (UNIFESP) — coordenadora do CEBRID após Carlini; saúde colectiva, prevenção (PREVINA) e formação em cannabis medicinal.",
-    "excerptEn": "Living-legacy sheet: Solange Nappo (UNIFESP) — CEBRID coordinator after Carlini; collective health, prevention (PREVINA), and medicinal-cannabis training.",
-    "excerptEs": "Ficha de legado vivo: Solange Nappo (UNIFESP) — coordinadora del CEBRID tras Carlini; salud colectiva, prevención (PREVINA) y formación en cannabis medicinal.",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-solange-nappo",
-    "url": "/posts/post-inspecao-solange-nappo.html",
-    "date": "2026-07-31T20:00:00.000Z",
-    "filename": "posts/post-inspecao-solange-nappo.html",
-    "coverImage": "/imagens/inspecoes/solange-nappo-cover.jpg",
-    "category": "inspecao",
-    "series": "legado-pessoas",
-    "seriesOrder": null,
-    "seriesLabel": "Solange Nappo · legado"
-  },
-  {
     "title": "Inspeção: Dr. Sidarta Ribeiro — Revolução Canabinóide",
     "titleEn": "Inspection: Dr. Sidarta Ribeiro — Cannabinoid Revolution",
     "titleEs": "Inspección: Dr. Sidarta Ribeiro — Revolución cannabinóide",
@@ -5698,25 +5717,6 @@
     "series": "legado-pessoas",
     "seriesOrder": null,
     "seriesLabel": "Sidarta Ribeiro · legado"
-  },
-  {
-    "title": "Inspeção: Prof. Elisaldo Carlini — pioneiro da cannabis medicinal",
-    "titleEn": "Inspection: Prof. Elisaldo Carlini — medicinal cannabis pioneer",
-    "titleEs": "Inspección: Prof. Elisaldo Carlini — pionero del cannabis medicinal",
-    "excerpt": "Homenagem documental ao Prof. Emérito Elisaldo Luiz de Araújo Carlini (1930–2020): médico e psicofarmacologista da UNIFESP, fundador do CEBRID — mérito máximo na ciência e na democratização do conhecimento sobre cannabis medicinal no Brasil.",
-    "excerptEn": "Documentary tribute to Professor Emeritus Elisaldo Luiz de Araújo Carlini (1930–2020): UNIFESP physician and psychopharmacologist, CEBRID founder — maximum credit for science and democratizing medicinal-cannabis knowledge in Brazil.",
-    "excerptEs": "Homenaje documental al Prof. Emérito Elisaldo Luiz de Araújo Carlini (1930–2020): médico y psicofarmacólogo de la UNIFESP, fundador del CEBRID — mérito máximo en la ciencia y la democratización del conocimiento sobre cannabis medicinal en Brasil.",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-elisaldo-carlini",
-    "url": "/posts/post-inspecao-elisaldo-carlini.html",
-    "date": "2026-07-31T17:00:00.000Z",
-    "filename": "posts/post-inspecao-elisaldo-carlini.html",
-    "coverImage": "/imagens/inspecoes/elisaldo-carlini-cover.jpg",
-    "category": "inspecao",
-    "series": "legado-pessoas",
-    "seriesOrder": null,
-    "seriesLabel": "Elisaldo Carlini · legado"
   },
   {
     "title": "Inspeção: Padre Ticão — Antônio Luiz Marchioni",
