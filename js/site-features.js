@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var HOME = '/inverno/';
+  var HOME = '/vida/';
 
   var BREADCRUMBS = {
     'guia/cultivo-basico.html': [{ label: 'Início', href: HOME }, { label: 'Guia de Cultivo' }],

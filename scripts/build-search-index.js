@@ -9,7 +9,8 @@ const OUT = path.join(ROOT, 'search-index.json');
 const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registry.js');
 
 const STATIC_PAGES = [
-  { url: '/inverno/', title: 'Início — Bom dia, Inverno', desc: 'Página inicial: divulgação do livro de Tamara Klink. Oito meses no gelo. Empresta, doa, faz circular.', keywords: 'home inicio inverno tamara klink livro gelo invernagem groenlandia circular' },
+  { url: '/vida/', title: 'Início — Vida', desc: 'Página inicial: conto familiar do Laboratório BudGanja. Cuidar de plantas com ciência, natureza e amizade.', keywords: 'home inicio vida conto familiar plantas semente inspetor dona maria' },
+  { url: '/inverno/', title: 'Bom dia, Inverno', desc: 'Divulgação do livro de Tamara Klink. Oito meses no gelo. Empresta, doa, faz circular.', keywords: 'inverno tamara klink livro gelo invernagem groenlandia circular' },
   { url: '/index.html', title: 'Laboratório', desc: 'Laboratório de fitoterapia brasileira — plantas medicinais, UNIFESP e cultivo responsável', keywords: 'laboratório fitoterapia plantas' },
   { url: '/plantas/', title: 'Plantas fitoterápicas', desc: 'Catálogo curado de plantas medicinais e fitoterápicas do Brasil', keywords: 'plantas fitoterapia medicinal babosa camomila cannabis' },
   { url: '/animais/', title: 'Animais', desc: 'Catálogo de animais: criação, companhia e derivados industriais de risco', keywords: 'animais produção galinha vaca porco abelha derivados indústria' },
@@ -30,7 +31,6 @@ const STATIC_PAGES = [
   { url: '/guia/palavras.html', title: 'Guia de Palavras', desc: 'Glossário simples dos títulos do site e do léxico inspecionado', keywords: 'palavras glossário significado maconha ganja inspetor budganja' },
   { url: '/videos/', title: 'Últimos vídeos', desc: 'Vídeos recentes do canal YouTube', keywords: 'youtube vídeo canal' },
   { url: '/radio/', title: 'BudGanja Radio', desc: 'Playlist BudGanja Radio do laboratório', keywords: 'rádio budganja playlist' },
-  { url: '/vida/', title: 'Vida — conto familiar', desc: 'Conto familiar do Laboratório BudGanja: cuidar de plantas com ciência, natureza e amizade', keywords: 'vida conto infantil família plantas semente inspetor dona maria' },
   { url: '/info/sobre.html', title: 'Sobre', desc: 'Propósito e metodologia do projeto', keywords: 'sobre missão fitoterapia' },
   { url: '/info/contato.html', title: 'Contato', desc: 'E-mail e perguntas frequentes', keywords: 'contato email' },
   { url: '/info/privacidade.html', title: 'Privacidade', desc: 'LGPD e dados de sorteios', keywords: 'privacidade lgpd' },

@@ -1,11 +1,17 @@
 {
-  "updatedAt": "2026-08-19T10:07:51.829Z",
+  "updatedAt": "2026-08-19T10:15:21.083Z",
   "items": [
     {
-      "title": "Início — Bom dia, Inverno",
+      "title": "Início — Vida",
+      "url": "/vida/",
+      "excerpt": "Página inicial: conto familiar do Laboratório BudGanja. Cuidar de plantas com ciência, natureza e amizade.",
+      "text": "Início — Vida Página inicial: conto familiar do Laboratório BudGanja. Cuidar de plantas com ciência, natureza e amizade. home inicio vida conto familiar plantas semente inspetor dona maria"
+    },
+    {
+      "title": "Bom dia, Inverno",
       "url": "/inverno/",
-      "excerpt": "Página inicial: divulgação do livro de Tamara Klink. Oito meses no gelo. Empresta, doa, faz circular.",
-      "text": "Início — Bom dia, Inverno Página inicial: divulgação do livro de Tamara Klink. Oito meses no gelo. Empresta, doa, faz circular. home inicio inverno tamara klink livro gelo invernagem groenlandia circular"
+      "excerpt": "Divulgação do livro de Tamara Klink. Oito meses no gelo. Empresta, doa, faz circular.",
+      "text": "Bom dia, Inverno Divulgação do livro de Tamara Klink. Oito meses no gelo. Empresta, doa, faz circular. inverno tamara klink livro gelo invernagem groenlandia circular"
     },
     {
       "title": "Laboratório",
@@ -108,12 +114,6 @@
       "url": "/radio/",
       "excerpt": "Playlist BudGanja Radio do laboratório",
       "text": "BudGanja Radio Playlist BudGanja Radio do laboratório rádio budganja playlist"
-    },
-    {
-      "title": "Vida — conto familiar",
-      "url": "/vida/",
-      "excerpt": "Conto familiar do Laboratório BudGanja: cuidar de plantas com ciência, natureza e amizade",
-      "text": "Vida — conto familiar Conto familiar do Laboratório BudGanja: cuidar de plantas com ciência, natureza e amizade vida conto infantil família plantas semente inspetor dona maria"
     },
     {
       "title": "Sobre",
