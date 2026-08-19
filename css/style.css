@@ -1163,10 +1163,6 @@ button.header-quick-link {
         display: none;
     }
 
-    .header-quick-link--brand .header-quick-link-label {
-        display: inline;
-    }
-
     .header-quick-link {
         padding: 6px 8px;
     }
@@ -1341,6 +1337,8 @@ body.mobile-menu-open {
     --hq-icon-border: rgba(212, 175, 55, 0.55);
     --hq-icon-shadow: 0 3px 10px rgba(212, 175, 55, 0.22);
     max-width: 100%;
+    padding: 5px 6px;
+    gap: 0;
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -1348,8 +1346,7 @@ body.mobile-menu-open {
 }
 
 .header-quick-link--brand .header-quick-link-label {
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: none;
 }
 
 .header-quick-link--brand .header-quick-link-icon {
