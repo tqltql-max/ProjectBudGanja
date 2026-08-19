@@ -498,7 +498,7 @@
   function pageShareSkipped() {
     var page = (document.body && document.body.dataset.page) || '';
     if (/admin/i.test(page)) return true;
-    if (page === 'entrar' || page === 'login' || page === 'radio' || page === 'home') return true;
+    if (page === 'entrar' || page === 'login' || page === 'radio' || page === 'home' || page === 'vida') return true;
     return false;
   }
 

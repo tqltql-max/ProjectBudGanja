@@ -44,6 +44,11 @@ const {
   poemAllRightNowEn,
   poemAllRightNowEs
 } = require('../lib/all-right-now-inspecao-post.js');
+const {
+  poemSementeFoiPlantadaPt,
+  poemSementeFoiPlantadaEn,
+  poemSementeFoiPlantadaEs
+} = require('../lib/semente-foi-plantada-poem.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -219,6 +224,27 @@ const doc = {
       bodyEs: poemAllRightNowEs(),
       inspectionHref: '/posts/post-inspecao-arte-all-right-now.html',
       tags: ['poesia', 'vida', 'free', 'agora', 'já', 'esperança']
+    },
+    {
+      id: 'a-semente-foi-plantada',
+      slug: 'a-semente-foi-plantada',
+      title: 'A semente foi plantada',
+      titleEn: 'The Seed Was Planted',
+      titleEs: 'La semilla fue plantada',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Encerramento da Vida — a semente sai da palma, fica na terra, e o mantra: faça o melhor.',
+      teaserEn:
+        'Vida’s closing — the seed leaves the palm, stays in the soil, and the mantra: do your best.',
+      teaserEs:
+        'Cierre de Vida — la semilla sale de la palma, queda en la tierra, y el mantra: haz lo mejor.',
+      body: poemSementeFoiPlantadaPt(),
+      bodyEn: poemSementeFoiPlantadaEn(),
+      bodyEs: poemSementeFoiPlantadaEs(),
+      inspectionHref: '/posts/post-inspecao-conto-vida-laboratorio.html',
+      tags: ['poesia', 'vida', 'semente', 'plantada', 'ficar']
     }
   ]
 };

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T07:53:48.225Z",
+  "updatedAt": "2026-08-19T11:26:01.739Z",
   "poems": [
     {
       "id": "aguas-e-lagrimas",
@@ -194,6 +194,30 @@
         "agora",
         "já",
         "esperança"
+      ]
+    },
+    {
+      "id": "a-semente-foi-plantada",
+      "slug": "a-semente-foi-plantada",
+      "title": "A semente foi plantada",
+      "titleEn": "The Seed Was Planted",
+      "titleEs": "La semilla fue plantada",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Encerramento da Vida — a semente sai da palma, fica na terra, e o mantra: faça o melhor.",
+      "teaserEn": "Vida’s closing — the seed leaves the palm, stays in the soil, and the mantra: do your best.",
+      "teaserEs": "Cierre de Vida — la semilla sale de la palma, queda en la tierra, y el mantra: haz lo mejor.",
+      "body": "A semente foi plantada.\nNão pedimos flor hoje —\npedimos só o ofício:\nmão na terra,\nágua certa,\nficar.\n\nA Dona Maria fez a cama.\nO Inspetor mediu a luz.\nA Joana ficou de guarda.\nOs passarinhos cantaram\ncomo quem diz:\njá está.\n\nDizem que plantar é o fim da espera.\nMentira doce.\nPlantar é o início —\na semente some da mão\npara aparecer no tempo.\n\nNão se força o broto.\nEspera-se o torrão.\nConta-se a gota.\nCumprimenta-se o inverno\nquando ele chega cedo demais.\n\nO laboratório não apressa a terra.\nPlanta à beira.\nConta gotas.\nChama a Vida pelo nome verdadeiro:\nficar.\n\nFaça o melhor!\n\nPorque toda semente que permanece\nquando a terra fecha em volta\ncresce um pouco no mapa:\numa raiz a mais,\num verso a mais,\num nós onde antes só havia\nsemente na palma.",
+      "bodyEn": "The seed was planted.\nWe do not ask for flower today —\nwe ask only for the craft:\nhand in the soil,\nright water,\nstay.\n\nDona Maria made the bed.\nThe Inspector measured the light.\nJoana kept watch.\nThe little birds sang\nas if to say:\nit is already done.\n\nThey say planting is the end of waiting.\nSweet lie.\nPlanting is the beginning —\nthe seed leaves the hand\nto appear in time.\n\nDo not force the sprout.\nWait for the root ball.\nCount the drop.\nGreet winter\nwhen it arrives too soon.\n\nThe laboratory does not rush the earth.\nIt plants at the edge.\nIt counts drops.\nIt calls Vida by its true name:\nstay.\n\nDo your best!\n\nBecause every seed that remains\nwhen the soil closes around it\ngrows a little on the map:\none more root,\none more verse,\na we where once there was only\na seed in the palm.",
+      "bodyEs": "La semilla fue plantada.\nNo pedimos flor hoy —\npedimos solo el oficio:\nmano en la tierra,\nagua justa,\nquedarse.\n\nDoña Maria hizo la cama.\nEl Inspector midió la luz.\nJoana quedó de guardia.\nLos pajaritos cantaron\ncomo quien dice:\nya está.\n\nDicen que plantar es el fin de la espera.\nMentira dulce.\nPlantar es el inicio —\nla semilla sale de la mano\npara aparecer en el tiempo.\n\nNo se fuerza el brote.\nSe espera el cepellón.\nSe cuenta la gota.\nSe saluda al invierno\ncuando llega demasiado pronto.\n\nEl laboratorio no apresura la tierra.\nSiembra a la orilla.\nCuenta gotas.\nLlama a Vida por su nombre verdadero:\nquedarse.\n\n¡Haz lo mejor!\n\nPorque toda semilla que permanece\ncuando la tierra cierra alrededor\ncrece un poco en el mapa:\nuna raíz más,\nun verso más,\nun nosotros donde antes solo había\nsemilla en la palma.",
+      "inspectionHref": "/posts/post-inspecao-conto-vida-laboratorio.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "semente",
+        "plantada",
+        "ficar"
       ]
     }
   ]

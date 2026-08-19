@@ -44,51 +44,55 @@ body[data-page="apresentacao-unifesp"] {
     left: 0;
     right: 0;
     width: 100%;
-    height: min(88vh, 760px);
+    height: min(42vh, 360px);
     pointer-events: none;
     z-index: 0;
     overflow: hidden;
     background:
-        radial-gradient(ellipse 70% 50% at 18% 12%, rgba(110, 231, 197, 0.16), transparent 58%),
-        radial-gradient(ellipse 50% 40% at 88% 8%, rgba(94, 200, 255, 0.14), transparent 52%);
+        radial-gradient(ellipse 70% 50% at 18% 12%, rgba(110, 231, 197, 0.12), transparent 58%),
+        radial-gradient(ellipse 50% 40% at 88% 8%, rgba(94, 200, 255, 0.1), transparent 52%);
 }
 
 .vida-hero {
     position: relative;
     z-index: 1;
-    isolation: isolate;
-    min-height: min(48vh, 420px);
-    margin: 0 0 clamp(1.1rem, 3vw, 1.8rem);
-    display: grid;
-    align-items: end;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0.35rem;
     overflow: hidden;
 }
 
 .vida-hero-art {
-    position: absolute;
-    inset: 0;
+    position: relative;
     margin: 0;
-    z-index: 0;
+    width: 100%;
+    max-height: min(38vh, 340px);
     overflow: hidden;
+    background: #071018;
+    line-height: 0;
 }
 
 .vida-hero-art::after {
     content: "";
     position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(180deg, rgba(7, 16, 24, 0.18) 0%, rgba(7, 16, 24, 0.08) 28%, rgba(7, 16, 24, 0.55) 68%, rgba(7, 16, 24, 0.96) 100%),
-        linear-gradient(90deg, rgba(7, 16, 24, 0.35) 0%, transparent 42%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 28%;
+    background: linear-gradient(180deg, transparent, rgba(7, 16, 24, 0.55));
     pointer-events: none;
 }
 
 .vida-hero-art img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: min(38vh, 340px);
     object-fit: cover;
-    object-position: center 28%;
-    transform: scale(1.04);
+    object-position: center 38%;
+}
+
+.vida-hero .article-share {
+    display: none;
 }
 
 .vida-hero-copy {
@@ -96,15 +100,15 @@ body[data-page="apresentacao-unifesp"] {
     z-index: 1;
     width: min(1080px, calc(100% - 2 * var(--space-page-x, 1.25rem)));
     margin: 0 auto;
-    padding: clamp(3.4rem, 7vw, 5rem) 0 clamp(1.15rem, 3vw, 1.8rem);
+    padding: 1.15rem 0 0.35rem;
     text-align: left;
 }
 
 .vida-hero-brand {
-    margin: 0 0 0.7rem;
-    font-size: 0.74rem;
+    margin: 0 0 0.35rem;
+    font-size: 0.7rem;
     font-weight: 800;
-    letter-spacing: 0.28em;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--vida-ice);
 }
@@ -112,10 +116,10 @@ body[data-page="apresentacao-unifesp"] {
 .vida-hero h1 {
     margin: 0;
     font-family: "Fraunces", Georgia, serif;
-    font-size: clamp(2.15rem, 8vw, 4.4rem);
+    font-size: clamp(1.85rem, 6vw, 3.1rem);
     font-weight: 700;
-    letter-spacing: -0.045em;
-    line-height: 0.92;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
     background: linear-gradient(180deg, #f7fbff 0%, #7dffd0 52%, #7eb8ff 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -123,11 +127,11 @@ body[data-page="apresentacao-unifesp"] {
 }
 
 .vida-hero-sub {
-    margin: 0.7rem 0 0;
-    max-width: 38ch;
-    font-size: clamp(0.92rem, 2vw, 1.08rem);
+    margin: 0.5rem 0 0;
+    max-width: 46ch;
+    font-size: clamp(0.92rem, 2vw, 1.05rem);
     line-height: 1.45;
-    color: rgba(244, 248, 252, 0.88);
+    color: rgba(244, 248, 252, 0.82);
 }
 
 .vida-hero-actions {
@@ -135,11 +139,11 @@ body[data-page="apresentacao-unifesp"] {
     flex-wrap: wrap;
     gap: 0.55rem;
     justify-content: flex-start;
-    margin-top: 1rem;
+    margin-top: 0.9rem;
 }
 
 .vida-hero-actions .botao {
-    min-width: 8.5rem;
+    min-width: 9rem;
 }
 
 .vida-hero-actions .botao-home--secondary {
@@ -163,7 +167,7 @@ body[data-page="apresentacao-unifesp"] {
 .vida-section {
     position: relative;
     z-index: 1;
-    padding: clamp(1.75rem, 4vw, 2.5rem) 0;
+    padding: clamp(1.2rem, 3vw, 1.85rem) 0;
     animation: vida-fade-up 0.8s 0.1s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -188,8 +192,8 @@ body[data-page="apresentacao-unifesp"] {
 }
 
 .vida-note {
-    margin: 0 0 1.5rem;
-    padding: 0.95rem 1.2rem;
+    margin: 0 0 0.85rem;
+    padding: 0.7rem 1rem;
     border-left: 3px solid var(--vida-leaf);
     background: rgba(110, 231, 197, 0.08);
     border-radius: 0 16px 16px 0;
@@ -199,8 +203,8 @@ body[data-page="apresentacao-unifesp"] {
 }
 
 .vida-connect {
-    margin: 0 0 1.75rem;
-    padding: 1.45rem 1.5rem 1.55rem;
+    margin: 0 0 1.1rem;
+    padding: 1.15rem 1.25rem 1.25rem;
     border-radius: 22px;
     border: 1px solid rgba(126, 232, 210, 0.22);
     background:
@@ -222,8 +226,8 @@ body[data-page="apresentacao-unifesp"] {
 .vida-mantra-banner {
     position: relative;
     z-index: 1;
-    margin: 0 0 1.75rem;
-    padding: clamp(1.6rem, 4vw, 2.35rem) 1.4rem;
+    margin: 0 0 1.1rem;
+    padding: clamp(1.15rem, 3vw, 1.7rem) 1.2rem;
     text-align: center;
     border-radius: 24px;
     border: 1px solid rgba(126, 232, 210, 0.28);
@@ -740,15 +744,26 @@ body[data-page="apresentacao-unifesp"] {
     text-decoration: none;
 }
 
+.vida-explore-chips {
+    gap: 0.45rem;
+}
+
+.vida-explore-chips .botao {
+    min-width: 0;
+    padding: 0.42rem 0.85rem;
+    font-size: 0.86rem;
+}
+
 @media (max-width: 700px) {
-    .vida-hero {
-        min-height: min(38vh, 280px);
+    .vida-hero-art,
+    .vida-hero-art img {
+        max-height: min(32vh, 240px);
+        height: min(32vh, 240px);
     }
 
     .vida-hero-copy {
         text-align: center;
-        padding-top: clamp(3.2rem, 10vw, 4.2rem);
-        padding-bottom: 1rem;
+        padding: 0.95rem 0 0.25rem;
     }
 
     .vida-hero-sub {
@@ -764,6 +779,24 @@ body[data-page="apresentacao-unifesp"] {
     .vida-hero-actions .botao {
         flex: 1 1 calc(50% - 0.4rem);
         min-width: 0;
+    }
+
+    .vida-chars {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 0.75rem;
+        padding-bottom: 0.4rem;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .vida-char {
+        flex: 0 0 min(78%, 260px);
+        scroll-snap-align: start;
+    }
+
+    .vida-inverno-card-media img {
+        max-height: 160px;
     }
 }
 

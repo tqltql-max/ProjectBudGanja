@@ -13,9 +13,9 @@
   "backgroundColor": "#000000",
   "enableNotifications": false,
   "startUrl": "/vida/",
-  "iconUrl": "https://inspetorbudganja.com.br/imagens/icon-512.v328.png",
-  "maskableIconUrl": "https://inspetorbudganja.com.br/imagens/icon-512-maskable.v328.png",
-  "monochromeIconUrl": "https://inspetorbudganja.com.br/imagens/icon-512.v328.png",
+  "iconUrl": "https://inspetorbudganja.com.br/imagens/icon-512.v329.png",
+  "maskableIconUrl": "https://inspetorbudganja.com.br/imagens/icon-512-maskable.v329.png",
+  "monochromeIconUrl": "https://inspetorbudganja.com.br/imagens/icon-512.v329.png",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
     "path": "./android.keystore",

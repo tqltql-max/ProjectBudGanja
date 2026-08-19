@@ -18,8 +18,12 @@
 
 body[data-page="vida"] .learn-toolbar {
     width: auto;
-    margin-left: var(--space-page-x, 1.25rem);
-    margin-right: var(--space-page-x, 1.25rem);
+    margin: 0 0 1.25rem;
+}
+
+body[data-page="vida"] .learn-toolbar-actions {
+    max-height: 4.6rem;
+    overflow-y: auto;
 }
 
 .learn-toolbar-row {
