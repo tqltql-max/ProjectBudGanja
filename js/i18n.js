@@ -365,6 +365,7 @@
       main.querySelector('[data-inspecao-grid]') ||
       main.querySelector('#plantas-grid') ||
       main.querySelector('#animais-grid') ||
+      main.querySelector('#fungos-grid') ||
       main.querySelector('#videos-player') ||
       document.body.dataset.page === 'equipamentos' ||
       document.body.dataset.page === 'cultivo' ||
@@ -372,6 +373,8 @@
       document.body.dataset.page === 'videos' ||
       document.body.dataset.page === 'animais' ||
       document.body.dataset.page === 'animal' ||
+      document.body.dataset.page === 'fungos' ||
+      document.body.dataset.page === 'fungo' ||
       document.body.dataset.postSlug
     ) {
       return;
@@ -417,7 +420,7 @@
   }
 
   function applyPlantPageTranslations() {
-    if (!document.body || document.body.dataset.page !== 'planta') return;
+    if (!document.body || (document.body.dataset.page !== 'planta' && document.body.dataset.page !== 'fungo')) return;
     var dataEl = document.getElementById('planta-i18n-data');
     if (!dataEl) return;
     var payload = null;
@@ -462,7 +465,7 @@
   }
 
   function applyPlantHubTranslations() {
-    if (!document.body || document.body.dataset.page !== 'plantas') return;
+    if (!document.body || (document.body.dataset.page !== 'plantas' && document.body.dataset.page !== 'fungos')) return;
     var attrNome =
       currentLocale === 'en' ? 'data-nome-en' : currentLocale === 'es' ? 'data-nome-es' : 'data-nome-pt';
     var attrSummary =
@@ -558,6 +561,8 @@
     plantas: 'plantas',
     animais: 'animais',
     animal: 'animais',
+    fungos: 'fungos',
+    fungo: 'fungos',
     videos: 'videos',
     inspecoes: 'inspections',
     pesquisas: 'research',

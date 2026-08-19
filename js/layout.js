@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '333';
+const ASSET_V = '334';
 const HOME = '/vida/';
 
 let deferredInstallPrompt = null;
@@ -733,6 +733,7 @@ const DEFAULT_SITE = {
     { label: 'Início', href: HOME },
     { label: 'Plantas', href: '/plantas/' },
     { label: 'Animais', href: '/animais/' },
+    { label: 'Fungos', href: '/fungos/' },
     { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
     { label: 'Cadernos de Engenharia', href: '/biblioteca/cadernos/' },
     { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
@@ -750,7 +751,8 @@ const DEFAULT_SITE = {
       title: 'Biblioteca',
       links: [
         { label: 'Plantas', href: '/plantas/' },
-    { label: 'Animais', href: '/animais/' },
+        { label: 'Animais', href: '/animais/' },
+        { label: 'Fungos', href: '/fungos/' },
         { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
         { label: 'Cadernos de Engenharia', href: '/biblioteca/cadernos/' },
         { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
@@ -818,6 +820,7 @@ function translateFooterLabel(label) {
     'Contato': 'nav.contact',
     'Plantas': 'nav.plants',
     'Animais': 'nav.animals',
+    'Fungos': 'nav.fungi',
     'UNIFESP': 'nav.unifesp'
   };
   return map[label] ? i18n(map[label], label) : label;
@@ -1265,6 +1268,14 @@ function getSiteHubNav(authState) {
         tone: 'comunidade'
       },
       {
+        href: '/fungos/',
+        icon: '🍄',
+        label: i18n('nav.fungi', 'Fungos'),
+        tip: i18n('nav.quickFungiTip', 'Catálogo de fungos: identificação e enquadramento — não é cultivo'),
+        prefixes: '/fungos',
+        tone: 'comunidade'
+      },
+      {
         href: '/biblioteca/unifesp/',
         icon: '🎓',
         label: i18n('nav.unifesp', 'UNIFESP'),
@@ -1359,6 +1370,13 @@ function getSiteHubNav(authState) {
             icon: '🐾',
             label: i18n('nav.animals', 'Animais'),
             prefixes: '/animais',
+            tone: 'comunidade'
+          },
+          {
+            href: '/fungos/',
+            icon: '🍄',
+            label: i18n('nav.fungi', 'Fungos'),
+            prefixes: '/fungos',
             tone: 'comunidade'
           },
           {

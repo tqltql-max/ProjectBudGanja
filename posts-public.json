@@ -38,6 +38,25 @@
     "seriesLabel": "Rockstar Games · estúdio"
   },
   {
+    "title": "Inspeção: Fungo — Psilocybe cubensis — identificação, UNIFESP e listas controladas",
+    "titleEn": "Inspection: Fungus — Psilocybe cubensis — identification, UNIFESP and controlled lists",
+    "titleEs": "Inspección: Hongo — Psilocybe cubensis — identificación, UNIFESP y listas controladas",
+    "excerpt": "Fungos Cap. 1: *Psilocybe cubensis* — basidioma cosmopolita, esporada púrpura, azulamento; XIV UNIFESP; psilocibina/psilocina listadas. Ficha educativa, não cultivo.",
+    "excerptEn": "Fungi Cap. 1: *Psilocybe cubensis* — cosmopolitan basidioma, purple print, bluing; UNIFESP XIV; listed psilocybin/psilocin. Educational sheet, not a grow guide.",
+    "excerptEs": "Hongos Cap. 1: *Psilocybe cubensis* — basidioma cosmopolita, esporada púrpura, azulado; XIV UNIFESP; psilocibina/psilocina listadas. Ficha educativa, no cultivo.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-fungo-psilocybe-cubensis",
+    "url": "/posts/post-inspecao-fungo-psilocybe-cubensis.html",
+    "date": "2026-08-19T16:00:00.000Z",
+    "filename": "posts/post-inspecao-fungo-psilocybe-cubensis.html",
+    "coverImage": "/imagens/fungos/psilocybe-cubensis-cover.jpg",
+    "category": "inspecao",
+    "series": "fungos-catalogo",
+    "seriesOrder": 1,
+    "seriesLabel": "Psilocybe cubensis · fungo"
+  },
+  {
     "title": "Caderno de jogo 1: GTA 6 — a cidade anunciada",
     "titleEn": "Game notebook 1: GTA 6 — the announced city",
     "titleEs": "Cuaderno de juego 1: GTA 6 — la ciudad anunciada",

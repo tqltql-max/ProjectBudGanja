@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T15:11:52.727Z",
+  "updatedAt": "2026-08-19T15:39:28.195Z",
   "items": [
     {
       "title": "Início — Vida",
@@ -2036,6 +2036,12 @@
       "text": "Inspeção: Fruto — Mamão — papaína, polpa tropical e cultivo familiar *Carica papaya* — mamão brasileiro: polpa doce, papaína do látex e elo UNIFESP/SUS; separar fruto inteiro de néctares e ultraprocessados. inspecao ## Escopo\n\nInspeção educacional do **fruto** **Mamão** (*Carica papaya L.*) a partir do catálogo de plantas do Inspetor BudGanja. Este relatório reúne a ficha pública com o método verificável do laboratório — **não** é protocolo clínico e **não substitui** orientação profissional de saúde.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/plantas/mamao/](/plantas/mamao/). Conteúdo apenas educacional.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Mamão** |\n| Nome científico | *Carica papaya L.* |\n| Família | Caricaceae |\n| Categoria no hub | Frutos |\n| Slug no catálogo | `mamao` |\n| Data da inspeção | 2026-07-31 |\n\n## Resumo\n\nFruto tropical cotidiano (*Carica papaya*): polpa doce, sementes e látex com papaína — a ficha separa o mamão inteiro dos néctares, polpas adoçadas e snacks industriais; elo UNIFESP (papaína em feridas).\n\n## Partes usadas\n\n- Fruto (polpa madura)\n- Sementes (culinária / tradição popular, com cautela)\n- Látex / papaína (contexto clínico e industrial — não automedicação)\n- Preparações culinárias de baixo processamento\n\n## Usos tradicionais (catálogo)\n\n- Consumo do fruto fresco (café da manhã, sobremesa, suco caseiro)\n- Culinária tropical e brasileira (saladas de fruta, doces caseiros)\n- Papaína do látex citada em protocolos de feridas no SUS (contexto formativo UNIFESP)\n- Cultivo familiar em clima quente — planta de crescimento rápido\n\n## Cuidados\n\nPolpa madura é alimento comum. Látex cru pode irritar pele e mucosa — não é brinquedo de cozinha. Sementes em excesso e extratos: evitar automedicação. Folhas e partes verdes não substituem orientação clínica. Derivados industriais com açúcar e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui ori"
     },
     {
+      "title": "Inspeção: Fungo — Psilocybe cubensis — identificação, UNIFESP e listas controladas",
+      "url": "/posts/post-inspecao-fungo-psilocybe-cubensis.html",
+      "excerpt": "Fungos Cap. 1: *Psilocybe cubensis* — basidioma cosmopolita, esporada púrpura, azulamento; XIV UNIFESP; psilocibina/psilocina listadas. Ficha educativa, não cultivo.",
+      "text": "Inspeção: Fungo — Psilocybe cubensis — identificação, UNIFESP e listas controladas Fungos Cap. 1: *Psilocybe cubensis* — basidioma cosmopolita, esporada púrpura, azulamento; XIV UNIFESP; psilocibina/psilocina listadas. Ficha educativa, não cultivo. inspecao ## Escopo\n\nInspeção educacional do **fungo** **Psilocybe cubensis** (*Psilocybe cubensis (Earle) Singer*) a partir do catálogo de fungos do Inspetor BudGanja. Este relatório reúne a ficha pública com o método verificável do laboratório — **não** é protocolo clínico, **não** é guia de cultivo e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/fungos/psilocybe-cubensis/](/fungos/psilocybe-cubensis/). Conteúdo apenas educacional.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Psilocybe cubensis** |\n| Nome científico | *Psilocybe cubensis (Earle) Singer* |\n| Família | Hymenogastraceae |\n| Reino | Fungi |\n| Categoria no hub | Fungos |\n| Slug no catálogo | `psilocybe-cubensis` |\n| Data da inspeção | 2026-08-19 |\n\n## Resumo\n\nPsilocybe cubensis — espécie cosmopolita de Psilocybe mais citada na divulgação contemporânea; no XIV UNIFESP entra como fungo psicadélico de ofício, distinta das espécies mazatecas clássicas. Ficha de identificação e enquadramento — não é cultivo nem dose.\n\n## Partes / caracteres de ofício\n\n- Basidioma (chapéu + estipe) — objecto de identificação micológica\n- Esporada púrpura-escura — carácter diagnóstico (não é receita)\n- Psilocibina / psilocina — substâncias nomeadas no mapa, sem extracção\n\n## Contexto tradicional e formativo (catálogo)\n\n- Nomeada no XIV Curso UNIFESP junto de Psilocybe caerulescens como exemplo de fungo psicadélico\n- Espécie-tipo da divulgação contemporânea de «cogumelos mágicos» — distinta das espécies mazatecas clássicas (P. mexicana e afins)\n- Objecto de etnomicologia e psicofarmacologia pública — catalogar ≠ endossar uso\n\n## Cuidados\n\nPsilocibina e psilocina são substâ"
+    },
+    {
       "title": "Babosa (Aloe vera)",
       "url": "/plantas/babosa/",
       "excerpt": "Suculenta (*Aloe vera*) amplamente cultivada; gel foliar rico em polissacarídeos — tradição tópica; látex com antraquinonas (aloína) exige cautela na ingestão.",
@@ -2352,6 +2358,12 @@
       "url": "/animais/cavalo/",
       "excerpt": "Equídeo de trabalho, desporto e companhia — tradição rural brasileira e ética do bem-estar equino.",
       "text": "Cavalo Equus ferus caballus Equidae Equídeo de trabalho, desporto e companhia — tradição rural brasileira e ética do bem-estar equino. companhia trabalho rural Tração e transporte histórico Pastoreio Hipismo e lazer animal produção indústria derivado"
+    },
+    {
+      "title": "Psilocybe cubensis (Psilocybe cubensis (Earle) Singer)",
+      "url": "/fungos/psilocybe-cubensis/",
+      "excerpt": "Psilocybe cubensis — espécie cosmopolita de Psilocybe mais citada na divulgação contemporânea; no XIV UNIFESP entra como fungo psicadélico de ofício, distinta das espécies mazatecas clássicas. Ficha de identificação e enquadramento — não é cultivo nem dose.",
+      "text": "Psilocybe cubensis Psilocybe cubensis (Earle) Singer Hymenogastraceae Psilocybe cubensis — espécie cosmopolita de Psilocybe mais citada na divulgação contemporânea; no XIV UNIFESP entra como fungo psicadélico de ofício, distinta das espécies mazatecas clássicas. Ficha de identificação e enquadramento — não é cultivo nem dose. psilocybe psicadelico unifesp hymenogastraceae identificacao lista-controlada Nomeada no XIV Curso UNIFESP junto de Psilocybe caerulescens como exemplo de fungo psicadélico Espécie-tipo da divulgação contemporânea de «cogumelos mágicos» — distinta das espécies mazatecas clássicas (P. mexicana e afins) Objecto de etnomicologia e psicofarmacologia pública — catalogar ≠ endossar uso fungo cogumelo micologia identificação"
     },
     {
       "title": "2-AG",

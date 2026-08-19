@@ -110,6 +110,30 @@ function buildIndex() {
   } catch (e) { /* optional */ }
 
   try {
+    const { readFungos, getFungoUrl } = require('../lib/fungos-service.js');
+    const catalog = readFungos();
+    catalog.fungi.forEach((fungo) => {
+      items.push({
+        title: fungo.nomePopular + (fungo.nomeCientifico ? ' (' + fungo.nomeCientifico + ')' : ''),
+        url: getFungoUrl(fungo),
+        excerpt: fungo.summary || '',
+        text: [
+          fungo.nomePopular,
+          fungo.nomeCientifico,
+          fungo.familia,
+          fungo.summary,
+          (fungo.tags || []).join(' '),
+          (fungo.traditionalUses || []).join(' '),
+          'fungo cogumelo micologia identificação'
+        ]
+          .filter(Boolean)
+          .join(' ')
+          .slice(0, 2000)
+      });
+    });
+  } catch (e) { /* optional */ }
+
+  try {
     const guia = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'guia-palavras.json'), 'utf8'));
     (guia.items || []).forEach((entry) => {
       if (!entry || !entry.word) return;

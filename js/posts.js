@@ -54,6 +54,7 @@ var SERIES_LABELS = {
   'plantas-frutos': 'Frutos',
   'plantas-derivados-risco': 'Produtos nocivos',
   'animais-catalogo': 'Animais',
+  'fungos-catalogo': 'Fungos',
   'animais-producao': 'Produção animal',
   'animais-derivados-risco': 'Produtos nocivos',
   'palavras-origem': 'Palavras',
@@ -177,6 +178,7 @@ function resolveInspecaoTipo(post) {
   }
   if (series === 'animais-producao') return 'producao';
   if (series === 'animais-catalogo' || /inspecao-animal-/i.test(slug)) return 'animal';
+  if (series === 'fungos-catalogo' || /inspecao-fungo-/i.test(slug)) return 'fungo';
   if (
     series === 'palavras-origem' ||
     series.indexOf('palavra') === 0 ||
@@ -359,6 +361,11 @@ function renderPostCards(container, posts, options) {
     } else if (tipo === 'planta' || tipo === 'fruto') {
       var slugMatch = String(p.slug || '').match(/^inspecao-planta-(.+)$/i);
       if (slugMatch) fichaHref = '/plantas/' + slugMatch[1] + '/';
+    } else if (tipo === 'fungo' && p.sourceUrl && String(p.sourceUrl).indexOf('/fungos/') === 0) {
+      fichaHref = String(p.sourceUrl);
+    } else if (tipo === 'fungo') {
+      var fungoMatch = String(p.slug || '').match(/^inspecao-fungo-(.+)$/i);
+      if (fungoMatch) fichaHref = '/fungos/' + fungoMatch[1] + '/';
     }
     if (fichaHref) {
       var ficha = document.createElement('a');
@@ -393,6 +400,8 @@ var HUB_CHIP_ANCHOR = {
   pessoa: 'pessoas',
   planta: 'plantas',
   fruto: 'frutos',
+  animal: 'animais',
+  fungo: 'fungos',
   derivado: 'derivados',
   palavra: 'palavras',
   pessoas: 'pessoas-historia',
@@ -414,6 +423,8 @@ var HUB_ANCHOR_TO_TIPO = {
   neurociencia: 'neurociencia',
   plantas: 'planta',
   frutos: 'fruto',
+  animais: 'animal',
+  fungos: 'fungo',
   derivados: 'derivado',
   palavras: 'palavra',
   divulgacao: 'divulgacao',
@@ -443,6 +454,7 @@ var INSPECAO_HUB_TIPOS = [
   { id: 'planta', labelKey: 'pages.inspections.chipPlants', fallback: 'Plantas', sort: 'seriesOrder' },
   { id: 'fruto', labelKey: 'pages.inspections.chipFruits', fallback: 'Frutos', sort: 'seriesOrder', keepVisible: true },
   { id: 'animal', labelKey: 'pages.inspections.chipAnimals', fallback: 'Animais', sort: 'seriesOrder', keepVisible: true },
+  { id: 'fungo', labelKey: 'pages.inspections.chipFungi', fallback: 'Fungos', sort: 'seriesOrder', keepVisible: true },
   { id: 'producao', labelKey: 'pages.inspections.chipAnimalProduction', fallback: 'Produção animal', sort: 'seriesOrder', keepVisible: true },
   { id: 'derivado', labelKey: 'pages.inspections.chipDerivatives', fallback: 'Produtos nocivos', sort: 'seriesOrder' },
   { id: 'palavra', labelKey: 'pages.inspections.chipWords', fallback: 'Palavras', sort: 'seriesOrder', keepVisible: true },

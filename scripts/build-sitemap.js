@@ -25,6 +25,7 @@ const STATIC = [
   { loc: '/biblioteca/cadernos/', priority: '0.8', changefreq: 'weekly' },
   { loc: '/plantas/', priority: '0.95', changefreq: 'weekly' },
   { loc: '/animais/', priority: '0.95', changefreq: 'weekly' },
+  { loc: '/fungos/', priority: '0.95', changefreq: 'weekly' },
   { loc: '/vida/diario/', priority: '0.8', changefreq: 'monthly' },
   { loc: '/comunidade/', priority: '0.9', changefreq: 'daily' },
   { loc: '/radio/', priority: '0.8', changefreq: 'weekly' },
@@ -77,6 +78,18 @@ function buildSitemap() {
     catalog.animals.forEach((animal) => {
       urls.push({
         loc: getAnimalUrl(animal),
+        priority: '0.75',
+        changefreq: 'monthly'
+      });
+    });
+  } catch (e) { /* optional */ }
+
+  try {
+    const { readFungos, getFungoUrl } = require('../lib/fungos-service.js');
+    const catalog = readFungos();
+    catalog.fungi.forEach((fungo) => {
+      urls.push({
+        loc: getFungoUrl(fungo),
         priority: '0.75',
         changefreq: 'monthly'
       });

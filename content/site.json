@@ -44,6 +44,15 @@
               "description": "Catálogo de animais: criação, companhia e derivados industriais."
             },
             {
+              "label": "Fungos",
+              "tileLabel": "Fungos",
+              "href": "/fungos/",
+              "icon": "🍄",
+              "slug": "fungos",
+              "featured": true,
+              "description": "Catálogo de fungos: identificação e enquadramento — não é cultivo nem uso."
+            },
+            {
               "label": "Curso UNIFESP",
               "tileLabel": "UNIFESP",
               "href": "/biblioteca/unifesp/",
@@ -256,6 +265,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-estudio-rockstar",
                   "description": "Estúdio/rótulo Rockstar Games (Take-Two, NY, 1998): rede de studios, GTA/Red Dead, RAGE — distinto do Caderno GTA 6. Ficção de crime ≠ manual de crime."
+                },
+                {
+                  "label": "Inspeção: Fungo — Psilocybe cubensis — identificação, UNIFESP e listas controladas",
+                  "tileLabel": "Inspeção: Fungo — Psilocybe cub…",
+                  "href": "/posts/post-inspecao-fungo-psilocybe-cubensis.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-fungo-psilocybe-cubensis",
+                  "description": "Fungos Cap. 1: *Psilocybe cubensis* — basidioma cosmopolita, esporada púrpura, azulamento; XIV UNIFESP; psilocibina/psilocina listadas. Ficha educativa, não cultivo."
                 },
                 {
                   "label": "Caderno de jogo 1: GTA 6 — a cidade anunciada",

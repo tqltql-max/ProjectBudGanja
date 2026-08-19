@@ -178,6 +178,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('build:fungos', 'build-fungos.js');
+  } catch (e) {
+    console.warn('Aviso build:fungos:', e.message);
+  }
+
+  try {
     runStep('build:search', 'build-search-index.js');
   } catch (e) {
     console.warn('Aviso build:search:', e.message);

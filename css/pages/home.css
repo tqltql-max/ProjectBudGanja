@@ -666,6 +666,14 @@
     --card-label: #e8fff0;
 }
 
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--fungos {
+    --card-accent: #5ad2be;
+    --card-accent-soft: rgba(90, 210, 190, 0.14);
+    --card-accent-strong: rgba(70, 160, 180, 0.32);
+    --card-accent-border: rgba(90, 210, 190, 0.42);
+    --card-label: #e8fffa;
+}
+
 :is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--cultivo,
 :is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--pesquisas {
     --card-accent: #1abc9c;

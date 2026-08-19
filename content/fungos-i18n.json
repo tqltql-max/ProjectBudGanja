@@ -1,0 +1,34 @@
+{
+  "disclaimerEn": "Educational fungus sheets. They do not replace professional mycological identification, health advice or legal counsel. This catalog is not a cultivation or use protocol.",
+  "disclaimerEs": "Fichas educativas de hongos. No sustituyen identificación micológica profesional, orientación de salud ni consejo jurídico. Este catálogo no es protocolo de cultivo ni de uso.",
+  "fungi": {
+    "psilocybe-cubensis": {
+      "nomePopularEn": "Psilocybe cubensis",
+      "nomePopularEs": "Psilocybe cubensis",
+      "summaryEn": "*Psilocybe cubensis* — the cosmopolitan *Psilocybe* most cited in contemporary outreach; in UNIFESP XIV it is named as a psychedelic fungus of craft, distinct from classic Mazatec species. Identification and framing sheet — not a grow guide or a dose.",
+      "summaryEs": "*Psilocybe cubensis* — la especie cosmopolita de *Psilocybe* más citada en la divulgación contemporánea; en el XIV UNIFESP entra como hongo psicodélico de oficio, distinta de las especies mazatecas clásicas. Ficha de identificación y encuadre — no es cultivo ni dosis.",
+      "partsUsedEn": [
+        "Basidioma (cap + stipe) — object of mycological identification",
+        "Purple-dark spore print — diagnostic character (not a recipe)",
+        "Psilocybin / psilocin — named on the map, no extraction"
+      ],
+      "partsUsedEs": [
+        "Basidioma (sombrero + estípite) — objeto de identificación micológica",
+        "Esporada púrpura-oscura — carácter diagnóstico (no es receta)",
+        "Psilocibina / psilocina — sustancias nombradas en el mapa, sin extracción"
+      ],
+      "traditionalUsesEn": [
+        "Named in UNIFESP XIV alongside *Psilocybe caerulescens* as an example of a psychedelic fungus",
+        "Type-species of contemporary “magic mushroom” outreach — distinct from classic Mazatec species (*P. mexicana* and kin)",
+        "Object of ethnomycology and public psychopharmacology — indexing ≠ endorsing use"
+      ],
+      "traditionalUsesEs": [
+        "Nombrada en el XIV UNIFESP junto a *Psilocybe caerulescens* como ejemplo de hongo psicodélico",
+        "Especie-tipo de la divulgación contemporánea de «hongos mágicos» — distinta de las especies mazatecas clásicas (*P. mexicana* y afines)",
+        "Objeto de etnomícología y psicofarmacología pública — catalogar ≠ respaldar uso"
+      ],
+      "cautionsEn": "Psilocybin and psilocin are controlled in Brazil (SVS/MS Ordinance 344/1998 and updates — check current lists). Sheet ≠ cultivation, dose, extraction or use protocol. Confusion with *Galerina* and other toxic basidiomata can be fatal — field ID needs an expert. Does not replace a physician, pharmacist, mycologist or lawyer.",
+      "cautionsEs": "Psilocibina y psilocina están controladas en Brasil (Portaria SVS/MS 344/1998 y actualizaciones — conferir listas vigentes). Ficha ≠ protocolo de cultivo, dosis, extracción o uso. Confusión con *Galerina* y otros basidiomas tóxicos puede ser fatal — la identificación de campo exige perito. No sustituye médico, farmacéutico, micólogo ni abogado."
+    }
+  }
+}
