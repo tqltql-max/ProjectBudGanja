@@ -1,14 +1,15 @@
 (function () {
   'use strict';
 
-  var HOME = '/';
+  var HOME = '/inverno/';
 
   var BREADCRUMBS = {
     'guia/cultivo-basico.html': [{ label: 'Início', href: HOME }, { label: 'Guia de Cultivo' }],
     'biblioteca/pesquisas/index.html': [{ label: 'Início', href: HOME }, { label: 'Pesquisas' }],
     'biblioteca/inspecoes/index.html': [{ label: 'Início', href: HOME }, { label: 'Inspeções' }],
     'equipamentos/index.html': [{ label: 'Início', href: HOME }, { label: 'Equipamentos' }],
-    'index.html': [{ label: 'Início' }],
+    'index.html': [{ label: 'Início', href: HOME }, { label: 'Laboratório' }],
+    'inverno/index.html': [{ label: 'Início' }],
     'calculadoras/index.html': [{ label: 'Início', href: HOME }, { label: 'Ferramentas' }],
     'calculadoras/luximetro.html': [{ label: 'Início', href: HOME }, { label: 'Ferramentas', href: '/calculadoras/' }, { label: 'Luxímetro' }],
     'sorteios/index.html': [{ label: 'Início', href: HOME }, { label: 'Sorteios' }],

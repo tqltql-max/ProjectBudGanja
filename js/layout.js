@@ -1,6 +1,7 @@
 // Layout.js - Dynamic header and footer injection
 
 const ASSET_V = '313';
+const HOME = '/inverno/';
 
 let deferredInstallPrompt = null;
 let installFloatingBtn = null;
@@ -729,7 +730,7 @@ const DEFAULT_SITE = {
     }
   ],
   footerLinks: [
-    { label: 'Início', href: '/' },
+    { label: 'Início', href: HOME },
     { label: 'Plantas', href: '/plantas/' },
     { label: 'Animais', href: '/animais/' },
     { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
@@ -1324,10 +1325,10 @@ function getSiteHubNav(authState) {
 
   const exploreLinks = [
           {
-            href: '/',
+            href: HOME,
             icon: '🏠',
             label: i18n('common.home', 'Início'),
-            prefixes: '/',
+            prefixes: '/inverno',
             exact: true,
             tone: 'inicio'
           },
@@ -1598,7 +1599,7 @@ function buildHeaderHTML(site, authState) {
     '<div class="header-chrome header-chrome--main">' +
     '<div class="header-brand-group">' +
     '<div class="logo">' +
-    '<a href="/" class="header-quick-link header-quick-link--brand logo-link" aria-label="' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '">' +
+    '<a href="' + HOME + '" class="header-quick-link header-quick-link--brand logo-link" aria-label="' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '">' +
     '<span class="header-quick-link-icon" aria-hidden="true">' +
     '<img class="logo-mark-img" src="/imagens/app-icon.v' + ASSET_V + '.png" alt="" width="28" height="28" decoding="async">' +
     '</span>' +
@@ -1896,7 +1897,7 @@ function buildFooterHTML(site) {
 
   const brandHtml =
     '<div class="footer-brand">' +
-    '<a href="/" class="footer-brand-link">' +
+    '<a href="' + HOME + '" class="footer-brand-link">' +
     '<img class="footer-brand-icon" src="/imagens/app-icon.v' + ASSET_V + '.png" alt="" width="32" height="32" loading="lazy" decoding="async">' +
     '<span class="footer-brand-name">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
     '</a>' +

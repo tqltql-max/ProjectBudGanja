@@ -1,9 +1,9 @@
 {
   "name": "Inspetor BudGanja",
   "short_name": "BudGanja",
-  "description": "Fitoterapia brasileira, plantas medicinais, curso UNIFESP, inspeções e BudGanja Radio.",
+  "description": "Laboratório de inspeção. Plantas, ofício e cultura, com método.",
   "id": "/",
-  "start_url": "/",
+  "start_url": "/inverno/",
   "scope": "/",
   "display": "standalone",
   "display_override": [

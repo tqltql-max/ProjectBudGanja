@@ -1,11 +1,17 @@
 {
-  "updatedAt": "2026-08-19T04:59:05.197Z",
+  "updatedAt": "2026-08-19T06:53:12.427Z",
   "items": [
     {
-      "title": "Início",
-      "url": "/",
+      "title": "Início — Bom dia, Inverno",
+      "url": "/inverno/",
+      "excerpt": "Página inicial: divulgação do livro de Tamara Klink. Oito meses no gelo. Empresta, doa, faz circular.",
+      "text": "Início — Bom dia, Inverno Página inicial: divulgação do livro de Tamara Klink. Oito meses no gelo. Empresta, doa, faz circular. home inicio inverno tamara klink livro gelo invernagem groenlandia circular"
+    },
+    {
+      "title": "Laboratório",
+      "url": "/index.html",
       "excerpt": "Laboratório de fitoterapia brasileira — plantas medicinais, UNIFESP e cultivo responsável",
-      "text": "Início Laboratório de fitoterapia brasileira — plantas medicinais, UNIFESP e cultivo responsável home fitoterapia plantas"
+      "text": "Laboratório Laboratório de fitoterapia brasileira — plantas medicinais, UNIFESP e cultivo responsável laboratório fitoterapia plantas"
     },
     {
       "title": "Plantas fitoterápicas",
@@ -108,12 +114,6 @@
       "url": "/vida/",
       "excerpt": "Conto familiar do Laboratório BudGanja: cuidar de plantas com ciência, natureza e amizade",
       "text": "Vida — conto familiar Conto familiar do Laboratório BudGanja: cuidar de plantas com ciência, natureza e amizade vida conto infantil família plantas semente inspetor dona maria"
-    },
-    {
-      "title": "Bom dia, Inverno — Tamara Klink",
-      "url": "/inverno/",
-      "excerpt": "Divulgação do livro: oito meses no gelo. Empresta, doa, faz circular.",
-      "text": "Bom dia, Inverno — Tamara Klink Divulgação do livro: oito meses no gelo. Empresta, doa, faz circular. tamara klink bom dia inverno livro gelo invernagem groenlandia circular"
     },
     {
       "title": "Sobre",

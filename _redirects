@@ -1,7 +1,7 @@
-# Campanha Bom dia, Inverno — entrada do site aponta para a divulgação
-/ /posts/post-inspecao-arte-bom-dia-inverno.html 302
-/inicio /index.html 302
-/inicio/ /index.html 302
+# Página inicial: hub Bom dia, Inverno
+/ /inverno/ 302
+/inicio /inverno/ 302
+/inicio/ /inverno/ 302
 
 /calculadoras.html /calculadoras/ 301
 /luximetro.html /calculadoras/luximetro.html 301

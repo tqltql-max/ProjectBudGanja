@@ -12,7 +12,8 @@ const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registr
 
 const STATIC = [
   { loc: '/', priority: '1.0', changefreq: 'weekly' },
-  { loc: '/index.html', priority: '1.0', changefreq: 'weekly' },
+  { loc: '/inverno/', priority: '1.0', changefreq: 'weekly' },
+  { loc: '/index.html', priority: '0.6', changefreq: 'weekly' },
   { loc: '/guia/cultivo-basico.html', priority: '0.95', changefreq: 'monthly' },
   { loc: '/guia/palavras.html', priority: '0.9', changefreq: 'monthly' },
   { loc: '/videos/', priority: '0.9', changefreq: 'weekly' },
@@ -24,7 +25,6 @@ const STATIC = [
   { loc: '/plantas/', priority: '0.95', changefreq: 'weekly' },
   { loc: '/animais/', priority: '0.95', changefreq: 'weekly' },
   { loc: '/vida/', priority: '0.9', changefreq: 'monthly' },
-  { loc: '/inverno/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/vida/diario/', priority: '0.8', changefreq: 'monthly' },
   { loc: '/comunidade/', priority: '0.9', changefreq: 'daily' },
   { loc: '/radio/', priority: '0.8', changefreq: 'weekly' },
