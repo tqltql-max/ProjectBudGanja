@@ -979,7 +979,7 @@
       "learnHintEn": "Passe numa palavra: o brilho dourado traduz para English.",
       "learnHintEs": "Passe numa palavra: o brilho dourado traduz para español.",
       "docTitle": "Vida | Inspetor BudGanja",
-      "learnHintOn": "Passe numa palavra: o brilho dourado traduz para {lang}. Traço pontilhado = sem tradução. Traço sólido vermelho = palavra perigosa — mostra o significado, não a tradução; tracejado âmbar = uso cauteloso.",
+      "learnHintOn": "Rato: traduz e volta ao português. Drone: o feixe deixa a tradução no texto ({lang}). Traço pontilhado = sem tradução. Traço sólido vermelho = palavra perigosa — mostra o significado, não a tradução; tracejado âmbar = uso cauteloso.",
       "learnNoTranslation": "Sem tradução neste idioma",
       "learnOpenLink": "Duplo clique para abrir a referência",
       "learnToneDanger": "Palavra perigosa — uso com cuidado",

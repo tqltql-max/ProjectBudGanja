@@ -288,9 +288,18 @@
 }
 
 .site-drone-word.is-translated,
-.site-drone-word.learn-word--known.is-translated {
+.site-drone-word.learn-word--known.is-translated,
+.learn-word--drone-kept.is-translated {
     color: #f0d060;
+    -webkit-text-fill-color: #f0d060;
     font-weight: 700;
+}
+
+.learn-word--drone-kept.is-translated {
+    text-decoration: underline;
+    text-decoration-color: rgba(126, 232, 210, 0.7);
+    text-underline-offset: 0.16em;
+    text-decoration-thickness: 2px;
 }
 
 .site-drone-emotion {

@@ -256,6 +256,13 @@ body.learn-mode-active .learn-mode-on {
     font-weight: 700;
 }
 
+.learn-word--drone-kept.is-translated {
+    text-decoration: underline;
+    text-decoration-color: rgba(126, 232, 210, 0.7);
+    text-underline-offset: 0.16em;
+    text-decoration-thickness: 2px;
+}
+
 .learn-word.is-unknown.is-sheen,
 .learn-word--unknown.is-sheen {
     background: rgba(196, 112, 72, 0.32);

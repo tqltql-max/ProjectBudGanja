@@ -979,7 +979,7 @@
       "learnHintEn": "Pasa por una palabra: el brillo dorado la traduce al inglés.",
       "learnHintEs": "Pasa por una palabra: el brillo dorado la traduce al español.",
       "docTitle": "Vida | Inspetor BudGanja",
-      "learnHintOn": "Pasa por una palabra: el brillo dorado la traduce al {lang}. Subrayado punteado = sin traducción. Rojo sólido = palabra peligrosa — muestra el significado, no la traducción; ámbar discontinuo = uso cauteloso.",
+      "learnHintOn": "Ratón: traduce y vuelve al portugués. Dron: el haz deja la traducción en el texto ({lang}). Subrayado punteado = sin traducción. Rojo sólido = palabra peligrosa — muestra el significado, no la traducción; ámbar discontinuo = uso cauteloso.",
       "learnNoTranslation": "Sin traducción en este idioma",
       "learnOpenLink": "Doble clic para abrir la referencia",
       "learnToneDanger": "Palabra peligrosa — usar con cuidado",

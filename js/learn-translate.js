@@ -372,7 +372,7 @@
     var lang = options.lang || state.lang;
     if (!lang) return false;
     if (!options.force && state.activeWord === wordEl) return true;
-    if (state.activeWord && state.activeWord !== wordEl && !state.activeWord.hasAttribute('data-drone-held')) {
+    if (state.activeWord && state.activeWord !== wordEl && !state.activeWord.hasAttribute('data-drone-held') && !state.activeWord.hasAttribute('data-drone-kept')) {
       revertWord(state.activeWord);
     }
     var prevLang = state.lang;
@@ -515,6 +515,7 @@
   function unwrapAll() {
     var scope = state.scope || state.root || document;
     scope.querySelectorAll('.learn-word').forEach(function (el) {
+      if (el.hasAttribute('data-drone-kept')) return;
       clearTimers(el);
       var text = el.getAttribute('data-learn-src') || el.textContent || '';
       el.replaceWith(document.createTextNode(text));
@@ -598,7 +599,7 @@
         var name = names[state.lang] || state.lang;
         hint.textContent = t(
           'pages.vida.learnHintOn',
-          'Passe numa palavra: o brilho dourado traduz para {lang}. Traço pontilhado = sem tradução.'
+          'Rato: traduz e volta ao português. Drone: o feixe deixa a tradução no texto ({lang}). Traço pontilhado = sem tradução.'
         ).replace('{lang}', name);
       }
     }
@@ -760,7 +761,7 @@
 
   function onPointerOut(e) {
     if (!state.lang || !state.activeWord) return;
-    if (state.activeWord.hasAttribute('data-drone-held')) return;
+    if (state.activeWord.hasAttribute('data-drone-held') || state.activeWord.hasAttribute('data-drone-kept')) return;
     var related = e.relatedTarget;
     if (related && state.activeWord.contains(related)) return;
     if (related && related.closest && related.closest('.learn-word') === state.activeWord) {
@@ -768,7 +769,7 @@
     }
     var leaving = state.activeWord;
     schedule(leaving, function () {
-      if (state.activeWord === leaving && !leaving.hasAttribute('data-drone-held')) {
+      if (state.activeWord === leaving && !leaving.hasAttribute('data-drone-held') && !leaving.hasAttribute('data-drone-kept')) {
         revertWord(leaving);
         state.activeWord = null;
       }
@@ -783,10 +784,10 @@
 
   function onFocusOut() {
     if (!state.lang || !state.activeWord) return;
-    if (state.activeWord.hasAttribute('data-drone-held')) return;
+    if (state.activeWord.hasAttribute('data-drone-held') || state.activeWord.hasAttribute('data-drone-kept')) return;
     var leaving = state.activeWord;
     schedule(leaving, function () {
-      if (state.activeWord === leaving && !leaving.hasAttribute('data-drone-held')) {
+      if (state.activeWord === leaving && !leaving.hasAttribute('data-drone-held') && !leaving.hasAttribute('data-drone-kept')) {
         revertWord(leaving);
         state.activeWord = null;
       }
