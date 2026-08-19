@@ -762,6 +762,46 @@
     return (entry && entry.href) || '';
   }
 
+  var HQ_EMOTION = {
+    alegria: 'alegria', alegre: 'alegria', feliz: 'alegria', felicidade: 'alegria',
+    joy: 'alegria', alegría: 'alegria',
+    tristeza: 'tristeza', triste: 'tristeza', sadness: 'tristeza',
+    raiva: 'raiva', ira: 'raiva', anger: 'raiva', ódio: 'raiva', odio: 'raiva',
+    medo: 'medo', fear: 'medo', receio: 'medo', pânico: 'medo', panico: 'medo', miedo: 'medo',
+    nojinho: 'nojinho', nojo: 'nojinho', asco: 'nojinho', disgust: 'nojinho', enjoo: 'nojinho',
+    emoção: 'emocao', emocao: 'emocao', emotion: 'emocao', emoción: 'emocao'
+  };
+
+  var TONE_EMOTION = {
+    joy: 'alegria',
+    warm: 'alegria',
+    hope: 'alegria',
+    calm: 'tristeza',
+    caution: 'tristeza',
+    danger: 'raiva',
+    awe: 'medo',
+    truth: 'nojinho'
+  };
+
+  function emotionOf(word) {
+    var key = normalizeKey(word);
+    if (!key) return '';
+    if (HQ_EMOTION[key]) return HQ_EMOTION[key];
+    var bare = stripAccents(key);
+    if (HQ_EMOTION[bare]) return HQ_EMOTION[bare];
+    var entry = findEntry(word);
+    if (entry && entry.tone && TONE_EMOTION[entry.tone]) return TONE_EMOTION[entry.tone];
+    return '';
+  }
+
+  function hqEmotionOf(word) {
+    var key = normalizeKey(word);
+    if (!key) return '';
+    if (HQ_EMOTION[key]) return HQ_EMOTION[key];
+    var bare = stripAccents(key);
+    return HQ_EMOTION[bare] || '';
+  }
+
   var TOKEN_RE = /([A-Za-zÀ-ÿ]+(?:['’-][A-Za-zÀ-ÿ]+)?)|([^A-Za-zÀ-ÿ]+)/g;
 
   function translatePhrase(text, lang) {
@@ -785,6 +825,8 @@
     mundaneOf: mundaneOf,
     categoryOf: categoryOf,
     hrefOf: hrefOf,
+    emotionOf: emotionOf,
+    hqEmotionOf: hqEmotionOf,
     findEntry: findEntry,
     normalizeKey: normalizeKey,
     translatePhrase: translatePhrase,

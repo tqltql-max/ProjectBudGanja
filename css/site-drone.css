@@ -204,6 +204,108 @@
     color: #fff4c4;
 }
 
+.site-drone-tip-emotion {
+    margin: 0 0 0.2rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: inherit;
+    opacity: 0.92;
+}
+
+.site-drone-tip[data-emotion="alegria"] {
+    border-color: rgba(242, 208, 75, 0.62);
+}
+.site-drone-tip[data-emotion="alegria"] .site-drone-tip-word,
+.site-drone-tip[data-emotion="alegria"] .site-drone-tip-emotion {
+    color: #f2d04b;
+}
+
+.site-drone-tip[data-emotion="tristeza"] {
+    border-color: rgba(61, 126, 219, 0.62);
+}
+.site-drone-tip[data-emotion="tristeza"] .site-drone-tip-word,
+.site-drone-tip[data-emotion="tristeza"] .site-drone-tip-emotion {
+    color: #8bb4ff;
+}
+
+.site-drone-tip[data-emotion="raiva"] {
+    border-color: rgba(226, 58, 44, 0.62);
+}
+.site-drone-tip[data-emotion="raiva"] .site-drone-tip-word,
+.site-drone-tip[data-emotion="raiva"] .site-drone-tip-emotion {
+    color: #ff8a7a;
+}
+
+.site-drone-tip[data-emotion="medo"] {
+    border-color: rgba(123, 94, 167, 0.62);
+}
+.site-drone-tip[data-emotion="medo"] .site-drone-tip-word,
+.site-drone-tip[data-emotion="medo"] .site-drone-tip-emotion {
+    color: #c9b0ef;
+}
+
+.site-drone-tip[data-emotion="nojinho"] {
+    border-color: rgba(90, 154, 60, 0.62);
+}
+.site-drone-tip[data-emotion="nojinho"] .site-drone-tip-word,
+.site-drone-tip[data-emotion="nojinho"] .site-drone-tip-emotion {
+    color: #9fd46a;
+}
+
+.site-drone-tip[data-emotion="emocao"] {
+    border-color: rgba(226, 193, 90, 0.55);
+}
+.site-drone-tip[data-emotion="emocao"] .site-drone-tip-word {
+    background: linear-gradient(90deg, #f2d04b, #8bb4ff, #ff8a7a, #c9b0ef, #9fd46a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.site-drone-emotion {
+    border-radius: 0.12em;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.14em;
+}
+
+.site-drone-emotion--alegria {
+    color: #f2d04b;
+    background: rgba(242, 208, 75, 0.16);
+    text-decoration-color: #f2d04b;
+}
+
+.site-drone-emotion--tristeza {
+    color: #8bb4ff;
+    background: rgba(61, 126, 219, 0.16);
+    text-decoration-color: #3d7edb;
+}
+
+.site-drone-emotion--raiva {
+    color: #ff8a7a;
+    background: rgba(226, 58, 44, 0.16);
+    text-decoration-color: #e23a2c;
+}
+
+.site-drone-emotion--medo {
+    color: #c9b0ef;
+    background: rgba(123, 94, 167, 0.18);
+    text-decoration-color: #7b5ea7;
+}
+
+.site-drone-emotion--nojinho {
+    color: #9fd46a;
+    background: rgba(90, 154, 60, 0.16);
+    text-decoration-color: #5a9a3c;
+}
+
+.site-drone-emotion--emocao {
+    background: linear-gradient(90deg, rgba(242, 208, 75, 0.18), rgba(61, 126, 219, 0.14), rgba(226, 58, 44, 0.14), rgba(123, 94, 167, 0.14), rgba(90, 154, 60, 0.16));
+    text-decoration-color: #e2c15a;
+}
+
 body.site-drone-on #inverno-drone,
 body.site-drone-ready #inverno-drone {
     display: none !important;

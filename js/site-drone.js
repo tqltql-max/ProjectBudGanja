@@ -36,7 +36,8 @@
     y: 0,
     tx: 0,
     ty: 0,
-    currentSrc: ''
+    currentSrc: '',
+    wrapping: false
   };
 
   function t(key, fallback) {
@@ -165,6 +166,22 @@
     );
   }
 
+  function emotionOf(src) {
+    var g = glossary();
+    if (g && typeof g.emotionOf === 'function') return g.emotionOf(src) || '';
+    return '';
+  }
+
+  function emotionLabel(emotion) {
+    if (emotion === 'alegria') return t('common.emotionAlegria', 'Alegria');
+    if (emotion === 'tristeza') return t('common.emotionTristeza', 'Tristeza');
+    if (emotion === 'raiva') return t('common.emotionRaiva', 'Raiva');
+    if (emotion === 'medo') return t('common.emotionMedo', 'Medo');
+    if (emotion === 'nojinho') return t('common.emotionNojinho', 'Nojinho');
+    if (emotion === 'emocao') return t('common.emotionEmocao', 'Emoção');
+    return '';
+  }
+
   function meaningOf(src) {
     var g = glossary();
     if (!g || !src) return null;
@@ -180,7 +197,8 @@
       mundane: entry.mundane || '',
       category: entry.category || '',
       href: entry.href || '',
-      tone: entry.tone || ''
+      tone: entry.tone || '',
+      emotion: emotionOf(src)
     };
   }
 
@@ -189,11 +207,18 @@
     if (!info) {
       state.tip.hidden = true;
       state.tip.innerHTML = '';
+      state.tip.removeAttribute('data-emotion');
       return;
     }
     var langName = LANG_NAMES[info.lang] || info.lang;
+    var emotion = info.emotion || emotionOf(info.src) || '';
+    var emotionName = emotionLabel(emotion);
+    state.tip.setAttribute('data-emotion', emotion);
     var parts = [];
     parts.push('<p class="site-drone-tip-word">' + escapeHtml(info.src) + '</p>');
+    if (emotionName) {
+      parts.push('<p class="site-drone-tip-emotion">' + escapeHtml(emotionName) + '</p>');
+    }
     if (info.translation) {
       parts.push(
         '<p class="site-drone-tip-tr"><span>' + escapeHtml(langName) + '</span> ' +
@@ -273,7 +298,7 @@
   function wordAtPointer(clientX, clientY) {
     var hit = document.elementFromPoint(clientX, clientY);
     if (hit && hit.closest) {
-      var wrapped = hit.closest('.learn-word');
+      var wrapped = hit.closest('.learn-word, .site-drone-emotion');
       if (wrapped) return wrapped.getAttribute('data-learn-src') || wrapped.textContent || '';
       if (shouldSkipNode(hit)) return '';
     }
@@ -293,6 +318,61 @@
       var text = el.getAttribute('data-learn-src') || el.textContent || '';
       el.replaceWith(document.createTextNode(text));
     });
+  }
+
+  function wrapEmotionWords() {
+    var g = glossary();
+    var root = document.getElementById('main-content') || document.body;
+    if (!g || !root || state.wrapping) return;
+    state.wrapping = true;
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (node) {
+        if (shouldSkipNode(node)) return NodeFilter.FILTER_REJECT;
+        if (node.parentElement && node.parentElement.closest && node.parentElement.closest('.learn-word, .site-drone-emotion')) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        if (!node.nodeValue || !/\S/.test(node.nodeValue)) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var nodes = [];
+    var n;
+    while ((n = walker.nextNode())) nodes.push(n);
+    nodes.forEach(function (node) {
+      var text = node.nodeValue;
+      var re = /[A-Za-zÀ-ÿ]+(?:['’-][A-Za-zÀ-ÿ]+)*/g;
+      var m;
+      var parts = [];
+      var last = 0;
+      var changed = false;
+      while ((m = re.exec(text)) !== null) {
+        var emotion = emotionOf(m[0]);
+        if (!emotion) continue;
+        if (m[0].length < 4 && !(g.hqEmotionOf && g.hqEmotionOf(m[0]))) continue;
+        changed = true;
+        if (m.index > last) parts.push({ t: text.slice(last, m.index) });
+        parts.push({ w: m[0], emotion: emotion });
+        last = m.index + m[0].length;
+      }
+      if (!changed) return;
+      if (last < text.length) parts.push({ t: text.slice(last) });
+      var frag = document.createDocumentFragment();
+      parts.forEach(function (part) {
+        if (part.t) {
+          frag.appendChild(document.createTextNode(part.t));
+          return;
+        }
+        var span = document.createElement('span');
+        span.className = 'site-drone-emotion site-drone-emotion--' + part.emotion;
+        span.setAttribute('data-learn-src', part.w);
+        span.setAttribute('data-drone-own', 'page');
+        span.setAttribute('data-emotion', part.emotion);
+        span.textContent = part.w;
+        frag.appendChild(span);
+      });
+      if (node.parentNode) node.parentNode.replaceChild(frag, node);
+    });
+    state.wrapping = false;
   }
 
   function inspectAt(clientX, clientY) {
@@ -493,6 +573,7 @@
     ensureGlossary(function () {
       if (!state.on) return;
       unwrapOwnMarks();
+      wrapEmotionWords();
       state.reduced = !!(global.matchMedia && global.matchMedia('(prefers-reduced-motion: reduce)').matches);
       state.flying = true;
       applyPose();
