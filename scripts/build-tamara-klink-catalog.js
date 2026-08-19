@@ -5,8 +5,11 @@
  * Uso: node scripts/build-tamara-klink-catalog.js
  */
 
-const { buildChannelCatalogFromUrl, saveCatalog } = require('../lib/youtube-channel-catalog.js');
+const fs = require('fs');
+const { buildChannelCatalogFromUrl, saveCatalog, catalogPath } = require('../lib/youtube-channel-catalog.js');
 const { stampCatalog } = require('../lib/tamara-categories.js');
+
+const SLUG = 'tamaraklink';
 
 async function main() {
   const { catalog, slug, path: outPath } = await buildChannelCatalogFromUrl(
@@ -25,6 +28,11 @@ async function main() {
 }
 
 main().catch((err) => {
-  console.error(err);
+  console.error('build:tamara falhou:', err.message);
+  const out = catalogPath(SLUG);
+  if (fs.existsSync(out)) {
+    console.warn('Mantendo catálogo existente.');
+    process.exit(0);
+  }
   process.exit(1);
 });

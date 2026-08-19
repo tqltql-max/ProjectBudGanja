@@ -3,11 +3,18 @@
   "channelUrl": "https://www.youtube.com/@TamaraKlink",
   "channelName": "Tamara Klink",
   "handle": "@TamaraKlink",
-  "inspectedAt": "2026-08-18T08:10:28.971Z",
-  "videoCount": 140,
+  "inspectedAt": "2026-08-19T06:44:24.114Z",
+  "videoCount": 141,
   "mission": "Velejo, inverno e escrevo — arquivo público de travessias, ofício e léxico.",
   "partnerCodes": [],
   "videos": [
+    {
+      "id": "m5viYezAnjg",
+      "title": "🇧🇷 Morsas + 🇫🇷 Morses + 🇺🇸 Walruses",
+      "published": "2026-08-18T22:07:55+00:00",
+      "url": "https://www.youtube.com/watch?v=m5viYezAnjg",
+      "category": "palavras"
+    },
     {
       "id": "HO0dvsk-D5Y",
       "title": "Nome 🇧🇷 🇫🇷 🇺🇸",
@@ -33,8 +40,8 @@
       "id": "zo136_VFkGk",
       "title": "BERING SEA",
       "url": "https://www.youtube.com/watch?v=zo136_VFkGk",
-      "views": "3,8 mil visualizações",
-      "publishedRelative": "há 3 dias",
+      "views": "4,1 mil visualizações",
+      "publishedRelative": "há 4 dias",
       "published": "2026-08-14T22:00:05+00:00",
       "category": "artico"
     },
@@ -107,7 +114,7 @@
       "id": "LEdJ7WrMu1Y",
       "title": "⛵️Solo Northwest Passage",
       "url": "https://www.youtube.com/watch?v=LEdJ7WrMu1Y",
-      "views": "9,3 mil visualizações",
+      "views": "9,4 mil visualizações",
       "publishedRelative": "há 11 meses",
       "published": "2025-09-14T04:32:32+00:00",
       "category": "noroeste"
@@ -125,7 +132,7 @@
       "id": "QZw8a8TDJfQ",
       "title": "🇧🇷 Do pequeno ao grande / 🇫🇷 Du petit au grand / 🇺🇸 From small to big",
       "url": "https://www.youtube.com/watch?v=QZw8a8TDJfQ",
-      "views": "9,2 mil visualizações",
+      "views": "9,3 mil visualizações",
       "publishedRelative": "há 1 ano",
       "category": "palavras"
     },
@@ -341,7 +348,7 @@
       "id": "kPA43DG09jM",
       "title": "CONHECI AS OCEANÓGRAFAS DE TRINDADE",
       "url": "https://www.youtube.com/watch?v=kPA43DG09jM",
-      "views": "8.4K views",
+      "views": "8.5K views",
       "publishedRelative": "8 years ago",
       "category": "atlantico"
     },
@@ -621,7 +628,7 @@
       "id": "OfTCpd4T0sk",
       "title": "MÊS 9: JUNHO - MENSAGEM NA GARRAFA  / MONTH 9: JUNE  - MESSAGE IN A BOTTLE",
       "url": "https://www.youtube.com/watch?v=OfTCpd4T0sk",
-      "views": "8,6 mil visualizações",
+      "views": "8,7 mil visualizações",
       "publishedRelative": "há 2 anos",
       "category": "invernagem"
     },
@@ -669,7 +676,7 @@
       "id": "V5IZFqbePm0",
       "title": "Nós, o Atlântico em solitário - Documentário ep 01",
       "url": "https://www.youtube.com/watch?v=V5IZFqbePm0",
-      "views": "517K views",
+      "views": "518K views",
       "publishedRelative": "3 years ago",
       "category": "atlantico"
     },
@@ -933,7 +940,7 @@
       "id": "kE4zau6wh1E",
       "title": "SINTO SUA FALTA (diário)",
       "url": "https://www.youtube.com/watch?v=kE4zau6wh1E",
-      "views": "2.9K views",
+      "views": "3K views",
       "publishedRelative": "6 years ago",
       "category": "saudade"
     },
@@ -1146,7 +1153,7 @@
     {
       "id": "palavras",
       "label": "Léxico trilingue",
-      "count": 7
+      "count": 8
     },
     {
       "id": "barco",
