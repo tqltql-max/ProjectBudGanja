@@ -366,14 +366,22 @@
     });
   }
 
-  function activateWord(wordEl) {
-    if (!wordEl || !state.lang) return;
-    if (state.activeWord === wordEl) return;
-    if (state.activeWord) revertWord(state.activeWord);
+  function activateWord(wordEl, options) {
+    options = options || {};
+    if (!wordEl) return false;
+    var lang = options.lang || state.lang;
+    if (!lang) return false;
+    if (!options.force && state.activeWord === wordEl) return true;
+    if (state.activeWord && state.activeWord !== wordEl && !state.activeWord.hasAttribute('data-drone-held')) {
+      revertWord(state.activeWord);
+    }
+    var prevLang = state.lang;
+    state.lang = lang;
     state.activeWord = wordEl;
+    if (options.sticky) wordEl.setAttribute('data-drone-held', '1');
     var src = wordEl.getAttribute('data-learn-src') || '';
     var g = glossary();
-    var translated = g ? g.lookup(src, state.lang, true) : '';
+    var translated = g ? g.lookup(src, lang, true) : '';
     var tone = wordTone(g, src);
     var gloss = wordGloss(g, src);
     var mundane = wordMundane(g, src);
@@ -390,13 +398,23 @@
       schedule(wordEl, function () {
         wordEl.classList.remove('is-sheen');
       }, 160);
-      return;
+      state.lang = prevLang;
+      return false;
     }
     wordEl.classList.remove('is-unknown', 'learn-word--unknown');
     wordEl.classList.add('learn-word--known');
     if (tip) wordEl.setAttribute('title', tip);
     else wordEl.removeAttribute('title');
     morphTo(wordEl, shown);
+    state.lang = prevLang;
+    return true;
+  }
+
+  function revealWord(wordEl, options) {
+    options = options || {};
+    options.sticky = true;
+    options.force = true;
+    return activateWord(wordEl, options);
   }
 
   function wrapTextNode(node) {
@@ -742,6 +760,7 @@
 
   function onPointerOut(e) {
     if (!state.lang || !state.activeWord) return;
+    if (state.activeWord.hasAttribute('data-drone-held')) return;
     var related = e.relatedTarget;
     if (related && state.activeWord.contains(related)) return;
     if (related && related.closest && related.closest('.learn-word') === state.activeWord) {
@@ -749,7 +768,7 @@
     }
     var leaving = state.activeWord;
     schedule(leaving, function () {
-      if (state.activeWord === leaving) {
+      if (state.activeWord === leaving && !leaving.hasAttribute('data-drone-held')) {
         revertWord(leaving);
         state.activeWord = null;
       }
@@ -764,9 +783,10 @@
 
   function onFocusOut() {
     if (!state.lang || !state.activeWord) return;
+    if (state.activeWord.hasAttribute('data-drone-held')) return;
     var leaving = state.activeWord;
     schedule(leaving, function () {
-      if (state.activeWord === leaving) {
+      if (state.activeWord === leaving && !leaving.hasAttribute('data-drone-held')) {
         revertWord(leaving);
         state.activeWord = null;
       }
@@ -983,6 +1003,8 @@
     getLang: function () {
       return state.lang;
     },
+    revealWord: revealWord,
+    revertWord: revertWord,
     remount: remount
   };
 })(typeof window !== 'undefined' ? window : globalThis);

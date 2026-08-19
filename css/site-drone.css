@@ -287,6 +287,12 @@
     color: transparent;
 }
 
+.site-drone-word.is-translated,
+.site-drone-word.learn-word--known.is-translated {
+    color: #f0d060;
+    font-weight: 700;
+}
+
 .site-drone-emotion {
     border-radius: 0.12em;
     text-decoration: underline;

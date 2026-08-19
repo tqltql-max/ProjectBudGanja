@@ -1,7 +1,7 @@
 /**
- * Drone de inspeção — segue o ponteiro em qualquer página e mostra
- * o significado da palavra no popup, no idioma do site (ou no idioma
- * do modo Aprender, se estiver ligado). O texto da página não muda.
+ * Drone de inspeção — segue o ponteiro em qualquer página, traduz a
+ * palavra no texto (no idioma do Aprender ou do site) e mostra o
+ * significado no popup.
  */
 (function (global) {
   'use strict';
@@ -48,7 +48,8 @@
     drawnRot: null,
     inspectX: 0,
     inspectY: 0,
-    inspectQueued: false
+    inspectQueued: false,
+    heldEl: null
   };
 
   function t(key, fallback) {
@@ -106,8 +107,10 @@
     return 'pt';
   }
 
-  function isPt(lang) {
-    return !lang || lang === 'pt' || lang === 'pt-BR';
+  function morphLang() {
+    var lang = targetLang();
+    if (!isPt(lang)) return lang;
+    return 'en';
   }
 
   function glossary() {
@@ -135,6 +138,25 @@
     script.onload = done;
     script.onerror = done;
     document.body.appendChild(script);
+  }
+
+  function ensureLearnTranslate(done) {
+    if (global.BudGanjaLearnTranslate && typeof global.BudGanjaLearnTranslate.revealWord === 'function') {
+      done();
+      return;
+    }
+    if (document.querySelector('script[src*="learn-translate.js"]')) {
+      var tries = 0;
+      var wait = global.setInterval(function () {
+        tries += 1;
+        if ((global.BudGanjaLearnTranslate && global.BudGanjaLearnTranslate.revealWord) || tries > 40) {
+          global.clearInterval(wait);
+          done();
+        }
+      }, 50);
+      return;
+    }
+    done();
   }
 
   function escapeHtml(s) {
@@ -198,8 +220,8 @@
     if (!g || !src) return null;
     var entry = typeof g.findEntry === 'function' ? g.findEntry(src) : null;
     if (!entry) return null;
-    var lang = targetLang();
-    var translation = isPt(lang) ? '' : (g.lookup(src, lang, true) || '');
+    var lang = morphLang();
+    var translation = g.lookup(src, lang, true) || '';
     return {
       src: src,
       lang: lang,
@@ -321,11 +343,12 @@
   function wordHitAt(clientX, clientY) {
     var hit = document.elementFromPoint(clientX, clientY);
     if (hit && hit.closest) {
-      var wrapped = hit.closest('.learn-word, .site-drone-emotion');
+      var wrapped = hit.closest('.learn-word, .site-drone-emotion, .site-drone-word');
       if (wrapped) {
         return {
           word: (wrapped.getAttribute('data-learn-src') || wrapped.textContent || '').trim(),
-          rect: wrapped.getBoundingClientRect()
+          rect: wrapped.getBoundingClientRect(),
+          el: wrapped
         };
       }
       if (shouldSkipNode(hit)) return null;
@@ -341,11 +364,17 @@
       wordRange.setStart(range.startContainer, bounds.start);
       wordRange.setEnd(range.startContainer, bounds.end);
     } catch (e) {
-      return { word: bounds.word, rect: fallbackRect(clientX, clientY) };
+      return { word: bounds.word, rect: fallbackRect(clientX, clientY), node: range.startContainer, start: bounds.start, end: bounds.end };
     }
     var rect = wordRange.getBoundingClientRect();
     if (!rect.width && !rect.height) rect = fallbackRect(clientX, clientY);
-    return { word: bounds.word, rect: rect };
+    return {
+      word: bounds.word,
+      rect: rect,
+      node: range.startContainer,
+      start: bounds.start,
+      end: bounds.end
+    };
   }
 
   function clearAbductGhost() {
@@ -378,6 +407,67 @@
       if (el.parentNode) el.parentNode.removeChild(el);
       if (state.abductEl === el) state.abductEl = null;
     });
+  }
+
+  function wrapWordHit(hit) {
+    if (!hit || !hit.word) return null;
+    if (hit.el && hit.el.isConnected) return hit.el;
+    if (!hit.node || hit.start == null || hit.end == null || !hit.node.parentNode) return null;
+    var range = document.createRange();
+    try {
+      range.setStart(hit.node, hit.start);
+      range.setEnd(hit.node, hit.end);
+      var span = document.createElement('span');
+      span.className = 'learn-word site-drone-word';
+      span.setAttribute('data-learn-src', hit.word);
+      span.setAttribute('data-drone-own', 'page');
+      range.surroundContents(span);
+      hit.el = span;
+      hit.node = null;
+      return span;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function releaseHeldWord() {
+    var el = state.heldEl;
+    state.heldEl = null;
+    if (!el || !el.isConnected) return;
+    el.removeAttribute('data-drone-held');
+    var src = el.getAttribute('data-learn-src') || '';
+    var api = global.BudGanjaLearnTranslate;
+    if (api && typeof api.revertWord === 'function') {
+      api.revertWord(el);
+      return;
+    }
+    if (src) el.textContent = src;
+    el.classList.remove('is-translated', 'is-sheen', 'learn-word--known');
+    el.removeAttribute('data-learn-shown');
+  }
+
+  function revealHit(hit) {
+    if (!hit || !hit.word) return;
+    var lang = morphLang();
+    if (!lang) return;
+    var g = glossary();
+    if (!g || !g.findEntry || !g.findEntry(hit.word)) return;
+    var el = wrapWordHit(hit);
+    if (!el) return;
+    if (state.heldEl && state.heldEl !== el) releaseHeldWord();
+    state.heldEl = el;
+    el.setAttribute('data-drone-held', '1');
+    var api = global.BudGanjaLearnTranslate;
+    if (api && typeof api.revealWord === 'function') {
+      api.revealWord(el, { lang: lang });
+      return;
+    }
+    var translated = g.lookup(hit.word, lang, true) || '';
+    if (translated && translated !== hit.word) {
+      el.textContent = translated;
+      el.classList.add('is-translated', 'learn-word--known');
+      el.setAttribute('data-learn-shown', translated);
+    }
   }
 
   function finishAbduct() {
@@ -414,6 +504,7 @@
   function abductAt(clientX, clientY) {
     if (!state.drone || !state.on) return;
     var hit = wordHitAt(clientX, clientY);
+    revealHit(hit);
     var next = clampToPad(clientX - SIZE * 0.28, clientY - SIZE * 0.95);
     state.rush = true;
     state.following = true;
@@ -487,7 +578,7 @@
     var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode: function (node) {
         if (shouldSkipNode(node)) return NodeFilter.FILTER_REJECT;
-        if (node.parentElement && node.parentElement.closest && node.parentElement.closest('.learn-word, .site-drone-emotion')) {
+        if (node.parentElement && node.parentElement.closest && node.parentElement.closest('.learn-word, .site-drone-emotion, .site-drone-word')) {
           return NodeFilter.FILTER_REJECT;
         }
         if (!node.nodeValue || !/\S/.test(node.nodeValue)) return NodeFilter.FILTER_REJECT;
@@ -645,6 +736,7 @@
     state.pendingAbduct = null;
     state.abductHold = false;
     clearAbductGhost();
+    releaseHeldWord();
     unwrapOwnMarks();
     if (state.drone) {
       state.drone.classList.remove('is-lit', 'is-abducting');
@@ -725,20 +817,23 @@
     }
     ensureGlossary(function () {
       if (!state.on) return;
-      unwrapOwnMarks();
-      wrapEmotionWords();
-      state.reduced = !!(global.matchMedia && global.matchMedia('(prefers-reduced-motion: reduce)').matches);
-      state.flying = true;
-      applyPose();
-      if (!state.reduced) global.requestAnimationFrame(tick);
-      if (state.pendingAbduct) {
-        var pending = state.pendingAbduct;
-        state.pendingAbduct = null;
-        abductAt(pending.x, pending.y);
-      }
-      try {
-        global.dispatchEvent(new CustomEvent('budganja:drone-change', { detail: { on: true } }));
-      } catch (err) { /* ignore */ }
+      ensureLearnTranslate(function () {
+        if (!state.on) return;
+        unwrapOwnMarks();
+        wrapEmotionWords();
+        state.reduced = !!(global.matchMedia && global.matchMedia('(prefers-reduced-motion: reduce)').matches);
+        state.flying = true;
+        applyPose();
+        if (!state.reduced) global.requestAnimationFrame(tick);
+        if (state.pendingAbduct) {
+          var pending = state.pendingAbduct;
+          state.pendingAbduct = null;
+          abductAt(pending.x, pending.y);
+        }
+        try {
+          global.dispatchEvent(new CustomEvent('budganja:drone-change', { detail: { on: true } }));
+        } catch (err) { /* ignore */ }
+      });
     });
   }
 
@@ -769,7 +864,13 @@
     if (!state.drone || !state.drone.isConnected) return;
     var el = event.target;
     if (!el || !el.closest) return;
-    if (el.closest('[data-drone-toggle], #site-drone, .site-drone, a, button, input, textarea, select, label, .mobile-menu, #site-header, #site-footer, .learn-toolbar, .site-drone-tip')) {
+    if (el.closest('[data-drone-toggle], #site-drone, .site-drone, input, textarea, select, label, .mobile-menu, #site-header, #site-footer, .learn-toolbar, .site-drone-tip')) {
+      return;
+    }
+    var wordEl = el.closest('.learn-word, .site-drone-emotion, .site-drone-word');
+    if (wordEl) {
+      event.preventDefault();
+    } else if (el.closest('a, button')) {
       return;
     }
     if (!state.on) {
