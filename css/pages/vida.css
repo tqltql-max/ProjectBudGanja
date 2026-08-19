@@ -126,6 +126,15 @@ body[data-page="apresentacao-unifesp"] {
     color: transparent;
 }
 
+.vida-hero h1 .is-drone-over {
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    color: #7dffd0;
+    -webkit-text-fill-color: #7dffd0;
+    text-shadow: 0 0 12px rgba(94, 200, 255, 0.5);
+}
+
 .vida-hero-sub {
     margin: 0.5rem 0 0;
     max-width: 46ch;

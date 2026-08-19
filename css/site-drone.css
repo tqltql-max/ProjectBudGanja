@@ -395,6 +395,20 @@ body.site-drone-on .botao-outline.is-drone-over {
         0 8px 22px rgba(94, 200, 255, 0.32);
 }
 
+body.site-drone-on .site-drone-lit.is-drone-over,
+body.site-drone-on .learn-word.is-drone-over,
+body.site-drone-on .site-drone-word.is-drone-over,
+body.site-drone-on .site-drone-emotion.is-drone-over {
+    color: #7dffd0;
+    -webkit-text-fill-color: #7dffd0;
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    text-shadow: 0 0 12px rgba(94, 200, 255, 0.5);
+    font-weight: 700;
+    text-decoration-color: #5ec8ff;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .site-drone-prop,
     .site-drone-craft {

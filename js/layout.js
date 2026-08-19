@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '330';
+const ASSET_V = '331';
 const HOME = '/vida/';
 
 let deferredInstallPrompt = null;

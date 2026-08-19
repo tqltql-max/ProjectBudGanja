@@ -50,10 +50,12 @@
     inspectY: 0,
     inspectQueued: false,
     heldEl: null,
-    litButton: null
+    litButton: null,
+    litText: null
   };
 
   var BUTTON_SEL = 'a.botao, .botao, .botao-home';
+  var WORD_WRAP_SEL = '.learn-word, .site-drone-emotion, .site-drone-word, .site-drone-lit';
 
   function t(key, fallback) {
     if (global.BudGanjaI18n && typeof global.BudGanjaI18n.t === 'function') {
@@ -346,7 +348,7 @@
   function wordHitAt(clientX, clientY) {
     var hit = document.elementFromPoint(clientX, clientY);
     if (hit && hit.closest) {
-      var wrapped = hit.closest('.learn-word, .site-drone-emotion, .site-drone-word');
+      var wrapped = hit.closest(WORD_WRAP_SEL);
       if (wrapped) {
         return {
           word: (wrapped.getAttribute('data-learn-src') || wrapped.textContent || '').trim(),
@@ -531,7 +533,7 @@
   }
 
   function unwrapOwnMarks() {
-    document.querySelectorAll('[data-drone-own]').forEach(function (el) {
+    document.querySelectorAll('[data-drone-own], [data-drone-lit]').forEach(function (el) {
       var text = el.getAttribute('data-learn-src') || el.textContent || '';
       el.replaceWith(document.createTextNode(text));
     });
@@ -581,7 +583,7 @@
     var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode: function (node) {
         if (shouldSkipNode(node)) return NodeFilter.FILTER_REJECT;
-        if (node.parentElement && node.parentElement.closest && node.parentElement.closest('.learn-word, .site-drone-emotion, .site-drone-word')) {
+        if (node.parentElement && node.parentElement.closest && node.parentElement.closest(WORD_WRAP_SEL)) {
           return NodeFilter.FILTER_REJECT;
         }
         if (!node.nodeValue || !/\S/.test(node.nodeValue)) return NodeFilter.FILTER_REJECT;
@@ -663,6 +665,41 @@
     if (state.litButton) state.litButton.classList.add('is-drone-over');
   }
 
+  function unwrapLitText(el) {
+    if (!el || !el.isConnected) return;
+    el.classList.remove('is-drone-over');
+    if (el.getAttribute('data-drone-lit') !== '1') return;
+    var text = el.textContent || '';
+    if (el.parentNode) el.replaceWith(document.createTextNode(text));
+  }
+
+  function setLitText(el) {
+    if (state.litText === el) return;
+    unwrapLitText(state.litText);
+    state.litText = el || null;
+    if (state.litText) state.litText.classList.add('is-drone-over');
+  }
+
+  function wrapLitWord(hit) {
+    if (!hit || !hit.word) return null;
+    if (hit.el && hit.el.isConnected) return hit.el;
+    if (!hit.node || hit.start == null || hit.end == null || !hit.node.parentNode) return null;
+    var parent = hit.node.parentElement;
+    if (parent && parent.closest && parent.closest(BUTTON_SEL + ', ' + SKIP_SEL)) return null;
+    try {
+      var range = document.createRange();
+      range.setStart(hit.node, hit.start);
+      range.setEnd(hit.node, hit.end);
+      var span = document.createElement('span');
+      span.className = 'site-drone-lit';
+      span.setAttribute('data-drone-lit', '1');
+      range.surroundContents(span);
+      return span;
+    } catch (e) {
+      return null;
+    }
+  }
+
   function buttonAtPoint(clientX, clientY) {
     if (!document.elementsFromPoint) {
       var hit = document.elementFromPoint(clientX, clientY);
@@ -681,33 +718,58 @@
     return null;
   }
 
-  function lightButtonsNearDrone() {
+  function withDronePassThrough(fn) {
+    if (!state.drone) return fn();
+    var prev = state.drone.style.pointerEvents;
+    state.drone.style.pointerEvents = 'none';
+    try {
+      return fn();
+    } finally {
+      state.drone.style.pointerEvents = prev;
+    }
+  }
+
+  function lightTargetsNearDrone() {
     if (!state.on || !state.drone) {
       setLitButton(null);
+      setLitText(null);
       return;
     }
-    var btn = buttonAtPoint(state.inspectX, state.inspectY)
-      || buttonAtPoint(state.x + SIZE * 0.5, state.y + SIZE * 0.55)
-      || buttonAtPoint(state.x + SIZE * 0.5, state.y + SIZE + 24);
-    setLitButton(btn);
+    withDronePassThrough(function () {
+      var btn = buttonAtPoint(state.inspectX, state.inspectY)
+        || buttonAtPoint(state.x + SIZE * 0.5, state.y + SIZE * 0.55)
+        || buttonAtPoint(state.x + SIZE * 0.5, state.y + SIZE + 24);
+      setLitButton(btn);
+      if (btn) {
+        setLitText(null);
+        return;
+      }
+      var hit = wordHitAt(state.inspectX, state.inspectY)
+        || wordHitAt(state.x + SIZE * 0.5, state.y + SIZE + 24);
+      if (!hit || !hit.word) {
+        setLitText(null);
+        return;
+      }
+      setLitText(wrapLitWord(hit));
+    });
   }
 
   function tick() {
     if (!state.on || !state.flying) return;
     global.requestAnimationFrame(tick);
     if ((state.paused || state.caught) && !state.rush) {
-      lightButtonsNearDrone();
+      lightTargetsNearDrone();
       return;
     }
     if (state.reduced && !state.rush) {
-      lightButtonsNearDrone();
+      lightTargetsNearDrone();
       return;
     }
     var ease = state.rush ? 0.26 : (state.following ? 0.09 : 0.018);
     state.x += (state.tx - state.x) * ease;
     state.y += (state.ty - state.y) * ease;
     applyPose();
-    lightButtonsNearDrone();
+    lightTargetsNearDrone();
     if (state.rush && Math.hypot(state.tx - state.x, state.ty - state.y) < 12) {
       finishAbduct();
     }
@@ -783,8 +845,9 @@
     state.abductHold = false;
     clearAbductGhost();
     releaseHeldWord();
-    unwrapOwnMarks();
     setLitButton(null);
+    setLitText(null);
+    unwrapOwnMarks();
     if (state.drone) {
       state.drone.classList.remove('is-lit', 'is-abducting');
       state.drone.setAttribute('aria-pressed', 'false');
@@ -895,7 +958,7 @@
       state.inspectQueued = false;
       if (!state.on || state.rush || state.abductHold) return;
       inspectAt(state.inspectX, state.inspectY);
-      lightButtonsNearDrone();
+      lightTargetsNearDrone();
     });
   }
 
@@ -907,7 +970,7 @@
       aimAtPointer(event.clientX, event.clientY);
       inspectAt(event.clientX, event.clientY);
     }
-    lightButtonsNearDrone();
+    lightTargetsNearDrone();
   }
 
   function onPageClick(event) {
@@ -918,7 +981,7 @@
     if (el.closest('[data-drone-toggle], #site-drone, .site-drone, input, textarea, select, label, .mobile-menu, #site-header, #site-footer, .learn-toolbar, .site-drone-tip')) {
       return;
     }
-    var wordEl = el.closest('.learn-word, .site-drone-emotion, .site-drone-word');
+    var wordEl = el.closest(WORD_WRAP_SEL);
     if (wordEl) {
       event.preventDefault();
     } else if (el.closest('a, button')) {
