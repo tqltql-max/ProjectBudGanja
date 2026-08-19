@@ -81,7 +81,32 @@
     global.dispatchEvent(new CustomEvent('budganja:locale-change', { detail: { locale: next } }));
   }
 
+  function setMetaContent(attr, key, value) {
+    if (!value || !document.head) return;
+    var el = document.head.querySelector('meta[' + attr + '="' + key + '"]');
+    if (!el) {
+      el = document.createElement('meta');
+      el.setAttribute(attr, key);
+      document.head.appendChild(el);
+    }
+    el.setAttribute('content', value);
+  }
+
+  function applyHomeBrandMeta() {
+    if (!document.body || document.body.dataset.page !== 'home') return;
+    var meta = t('pages.home.metaDescription', '');
+    var og = t('pages.home.ogDescription', '');
+    if (meta) setMetaContent('name', 'description', meta);
+    if (og) {
+      setMetaContent('property', 'og:description', og);
+      setMetaContent('name', 'twitter:description', og);
+    } else if (meta) {
+      setMetaContent('name', 'twitter:description', meta);
+    }
+  }
+
   function applyDomTranslations() {
+    applyHomeBrandMeta();
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var key = el.getAttribute('data-i18n');
       if (!key) return;

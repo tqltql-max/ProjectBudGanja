@@ -436,7 +436,7 @@ async function isServerAvailable() {
 
 const DEFAULT_SITE = {
   siteName: 'Inspetor BudGanja',
-  siteTagline: 'Laboratório de cultivo',
+  siteTagline: 'Laboratório de inspeção.',
   footerText: '© 2026 Inspetor BudGanja. Conteúdo educacional.',
   privacyUpdated: '26 de junho de 2026',
   ogImage: '/imagens/background-hero.svg',
@@ -1101,7 +1101,7 @@ function buildHeaderHTML(site, authState) {
     '</span>' +
     '<span class="logo-copy">' +
     '<span class="logo-name">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
-    (tagline ? '<span class="logo-tagline">' + escapeNavText(tagline) + '</span>' : '') +
+    (tagline ? '<span class="logo-tagline">' + escapeNavText(i18n('footer.tagline', tagline)) + '</span>' : '') +
     '</span></a></div>' +
     buildDesktopQuickNavHTML() +
     '<nav id="primary-nav" class="primary-nav" aria-label="' + escapeNavText(i18n('common.mobileNav', 'Navegação principal')) + '">' +
@@ -1318,7 +1318,7 @@ function buildFooterHTML(site) {
     '<div class="footer-bar">' +
     '<p class="footer-copy">' + escapeNavText(i18n('footer.copy', config.footerText || DEFAULT_SITE.footerText)) + '</p>' +
     '<p class="footer-legal">' +
-    escapeNavText(i18n('common.footerLegal', 'Conteúdo educacional.')) +
+    escapeNavText(i18n('common.footerLegal', 'Conteúdo educacional. Inspeção, não receita.')) +
     ' · <a href="/info/privacidade.html">' + escapeNavText(i18n('common.footerPrivacy', 'Privacidade')) + '</a>' +
     ' · ' + escapeNavText(i18n('common.footerUpdated', 'atualizado em')) + ' ' + escapeNavText(privacyDate) +
     '</p>' +
@@ -1343,7 +1343,9 @@ function injectSeoMeta(site) {
   const pageUrl = window.location.href.split('#')[0];
   const title = document.title || OG_SITE_NAME;
   const descMeta = head.querySelector('meta[name="description"]');
+  const ogDescMeta = head.querySelector('meta[property="og:description"]');
   const description = descMeta ? descMeta.getAttribute('content') : '';
+  const socialDescription = (ogDescMeta && ogDescMeta.getAttribute('content')) || description;
 
   function ensureMeta(attr, key, value) {
     if (!value) return;
@@ -1362,7 +1364,7 @@ function injectSeoMeta(site) {
   ensureMeta('property', 'og:site_name', OG_SITE_NAME);
   ensureMeta('name', 'twitter:card', 'summary_large_image');
   ensureMeta('name', 'twitter:title', title);
-  ensureMeta('name', 'twitter:description', description);
+  ensureMeta('name', 'twitter:description', socialDescription);
   ensureMeta('name', 'twitter:image', imageUrl);
 
   if (!head.querySelector('link[rel="canonical"]')) {
@@ -1381,7 +1383,7 @@ function injectSeoMeta(site) {
       '@type': 'Organization',
       name: OG_SITE_NAME,
       url: absoluteUrl('index.html'),
-      description: description,
+      description: socialDescription || description,
       sameAs: [site.youtubeChannelUrl || DEFAULT_SITE.youtubeChannelUrl]
     });
     head.appendChild(script);

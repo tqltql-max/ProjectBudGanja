@@ -25,7 +25,7 @@ window.__I18N_LOCALES__ = {
       "loading": "Loading…",
       "featured": "Featured",
       "recent": "recent",
-      "footerLegal": "Educational content.",
+      "footerLegal": "Educational content. Inspection, not a prescription.",
       "footerPrivacy": "Privacy",
       "footerUpdated": "updated on",
       "adminArea": "Admin area",
@@ -65,7 +65,7 @@ window.__I18N_LOCALES__ = {
       "groupLibrary": "Library",
       "groupTools": "Tools",
       "groupAbout": "About us",
-      "tagline": "Growing laboratory",
+      "tagline": "Inspection lab.",
       "copy": "© 2026 Inspetor BudGanja. Educational content."
     },
     "menu": {
@@ -156,10 +156,12 @@ window.__I18N_LOCALES__ = {
     "pages": {
       "home": {
         "heroEyebrow": "Digital lab · educational content",
-        "heroTitle": "Welcome to the Laboratory",
-        "heroSubtitle": "Grab your tools — let's get to work!",
-        "areasTitle": "What We Do",
-        "areasSubtitle": "Growing library, calculators, giveaways and more — pick an area to explore.",
+        "heroTitle": "Inspetor BudGanja",
+        "heroSubtitle": "Inspection lab.",
+        "metaDescription": "Inspection lab. Plants, craft, and culture — with method.",
+        "ogDescription": "Inspetor BudGanja — inspection lab. Plants, craft, and culture.",
+        "areasTitle": "The lab",
+        "areasSubtitle": "Study, growing, and a way of looking.",
         "cardGuiaTitle": "Basic Growing Guide",
         "cardGuiaText": "Video trail by @InspetorBudGanja — from soil to flowering, step by step.",
         "cardGuiaBtn": "Open guide",
@@ -240,7 +242,7 @@ window.__I18N_LOCALES__ = {
       "loading": "Cargando…",
       "featured": "Destacado",
       "recent": "recientes",
-      "footerLegal": "Contenido educativo.",
+      "footerLegal": "Contenido educativo. Inspección, no receta.",
       "footerPrivacy": "Privacidad",
       "footerUpdated": "actualizado el",
       "adminArea": "Área administrativa",
@@ -280,7 +282,7 @@ window.__I18N_LOCALES__ = {
       "groupLibrary": "Biblioteca",
       "groupTools": "Herramientas",
       "groupAbout": "Sobre nosotros",
-      "tagline": "Laboratorio de cultivo",
+      "tagline": "Laboratorio de inspección.",
       "copy": "© 2026 Inspetor BudGanja. Contenido educativo."
     },
     "menu": {
@@ -371,10 +373,12 @@ window.__I18N_LOCALES__ = {
     "pages": {
       "home": {
         "heroEyebrow": "Laboratorio digital · contenido educativo",
-        "heroTitle": "Bienvenido al Laboratorio",
-        "heroSubtitle": "¡Toma tus herramientas y manos a la obra!",
-        "areasTitle": "Nuestras Áreas",
-        "areasSubtitle": "Biblioteca de cultivo, calculadoras, sorteos y más — elige un área para explorar.",
+        "heroTitle": "Inspetor BudGanja",
+        "heroSubtitle": "Laboratorio de inspección.",
+        "metaDescription": "Laboratorio de inspección. Plantas, oficio y cultura, con método.",
+        "ogDescription": "Inspetor BudGanja — laboratorio de inspección. Plantas, oficio y cultura.",
+        "areasTitle": "El laboratorio",
+        "areasSubtitle": "Estudio, cultivo y una forma de mirar.",
         "cardGuiaTitle": "Guía básica de cultivo",
         "cardGuiaText": "Ruta en video del canal @InspetorBudGanja — del suelo a la floración, paso a paso.",
         "cardGuiaBtn": "Abrir guía",
@@ -455,7 +459,7 @@ window.__I18N_LOCALES__ = {
       "loading": "Carregando…",
       "featured": "Destaque",
       "recent": "recentes",
-      "footerLegal": "Conteúdo educacional.",
+      "footerLegal": "Conteúdo educacional. Inspeção, não receita.",
       "footerPrivacy": "Privacidade",
       "footerUpdated": "atualizado em",
       "adminArea": "Área administrativa",
@@ -495,7 +499,7 @@ window.__I18N_LOCALES__ = {
       "groupLibrary": "Biblioteca",
       "groupTools": "Ferramentas",
       "groupAbout": "Sobre nós",
-      "tagline": "Laboratório de cultivo",
+      "tagline": "Laboratório de inspeção.",
       "copy": "© 2026 Inspetor BudGanja. Conteúdo educacional."
     },
     "menu": {
@@ -586,10 +590,12 @@ window.__I18N_LOCALES__ = {
     "pages": {
       "home": {
         "heroEyebrow": "Laboratório digital · conteúdo educacional",
-        "heroTitle": "Bem-vindo ao Laboratório",
-        "heroSubtitle": "Pegue suas Ferramentas e vamos ao trabalho!",
-        "areasTitle": "Nossas Áreas de Atuação",
-        "areasSubtitle": "Biblioteca de Cultivo, ferramentas, sorteios e mais — escolha uma área para explorar.",
+        "heroTitle": "Inspetor BudGanja",
+        "heroSubtitle": "Laboratório de inspeção.",
+        "metaDescription": "Laboratório de inspeção. Plantas, ofício e cultura, com método.",
+        "ogDescription": "Inspetor BudGanja — laboratório de inspeção. Plantas, ofício e cultura.",
+        "areasTitle": "O laboratório",
+        "areasSubtitle": "Estudo, cultivo e o jeito de olhar.",
         "cardGuiaTitle": "Guia de Cultivo Básico",
         "cardGuiaText": "Trilha em vídeo do canal @InspetorBudGanja — do solo à floração, passo a passo.",
         "cardGuiaBtn": "Abrir guia",

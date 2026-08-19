@@ -1,7 +1,7 @@
 {
   "name": "Inspetor BudGanja",
   "short_name": "BudGanja",
-  "description": "Biblioteca de Cultivo, ferramentas, sorteios e inspeções técnicas para cultivo vegetal.",
+  "description": "Laboratório de inspeção. Plantas, ofício e cultura, com método.",
   "id": "/",
   "start_url": "/index.html",
   "scope": "/",
