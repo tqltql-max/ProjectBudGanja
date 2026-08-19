@@ -270,6 +270,22 @@
     return (entry && entry.gloss) || '';
   }
 
+  function shortenMeaning(text) {
+    var cut = String(text || '').trim();
+    if (!cut) return '';
+    cut = cut.split(/\s+[—–]\s+/)[0];
+    cut = cut.split(';')[0].trim();
+    if (cut.length > 80) {
+      var space = cut.lastIndexOf(' ', 80);
+      cut = (space > 28 ? cut.slice(0, space) : cut.slice(0, 80)).replace(/[.,;:]+$/, '') + '…';
+    }
+    return cut;
+  }
+
+  function meaningForDisplay(g, src) {
+    return shortenMeaning(wordMundane(g, src) || wordGloss(g, src));
+  }
+
   function wordMundane(g, src) {
     if (!g || !src) return '';
     if (typeof g.mundaneOf === 'function') return g.mundaneOf(src) || '';
@@ -362,8 +378,10 @@
     var gloss = wordGloss(g, src);
     var mundane = wordMundane(g, src);
     var category = wordCategory(g, src);
-    var tip = buildWordTip(src, !!translated, gloss, tone, mundane, category);
-    if (!translated) {
+    var meaning = tone === 'danger' ? meaningForDisplay(g, src) : '';
+    var shown = meaning || translated;
+    var tip = buildWordTip(src, !!(translated || meaning), gloss, tone, mundane, category);
+    if (!shown) {
       wordEl.classList.add('is-sheen', 'is-unknown', 'learn-word--unknown');
       wordEl.classList.remove('learn-word--known');
       if (tip) wordEl.setAttribute('title', tip);
@@ -378,7 +396,7 @@
     wordEl.classList.add('learn-word--known');
     if (tip) wordEl.setAttribute('title', tip);
     else wordEl.removeAttribute('title');
-    morphTo(wordEl, translated);
+    morphTo(wordEl, shown);
   }
 
   function wrapTextNode(node) {
