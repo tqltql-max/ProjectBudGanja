@@ -7,7 +7,7 @@
   'use strict';
 
   var STORAGE_KEY = 'budganja-drone';
-  var SIZE = 104;
+  var SIZE = 54;
   var SKIP_SEL = 'script, style, textarea, input, select, option, code, pre, svg, button, a.botao, .site-drone, .inverno-drone, .learn-toolbar, #site-header, #site-footer, .header-bar, .mobile-menu';
   var WORD_CHARS = /[A-Za-zÀ-ÿ]/;
   var LANG_NAMES = {
@@ -42,7 +42,13 @@
     abductHit: null,
     abductEl: null,
     pendingAbduct: null,
-    abductHold: false
+    abductHold: false,
+    drawnX: null,
+    drawnY: null,
+    drawnRot: null,
+    inspectX: 0,
+    inspectY: 0,
+    inspectQueued: false
   };
 
   function t(key, fallback) {
@@ -141,7 +147,7 @@
 
   function droneSvg() {
     return (
-      '<svg class="site-drone-body" viewBox="0 0 120 88" width="120" height="88" aria-hidden="true">' +
+      '<svg class="site-drone-body" viewBox="0 0 120 88" width="53" height="38" aria-hidden="true">' +
       '<defs>' +
       '<linearGradient id="site-drone-hull" x1="0" y1="0" x2="0" y2="1">' +
       '<stop offset="0%" stop-color="#eef3f8"/>' +
@@ -437,6 +443,42 @@
     });
   }
 
+  function wrapNodeEmotions(node, g) {
+    if (!node || !node.parentNode) return;
+    var text = node.nodeValue;
+    var re = /[A-Za-zÀ-ÿ]+(?:['’-][A-Za-zÀ-ÿ]+)*/g;
+    var m;
+    var parts = [];
+    var last = 0;
+    var changed = false;
+    while ((m = re.exec(text)) !== null) {
+      var emotion = emotionOf(m[0]);
+      if (!emotion) continue;
+      if (m[0].length < 4 && !(g.hqEmotionOf && g.hqEmotionOf(m[0]))) continue;
+      changed = true;
+      if (m.index > last) parts.push({ t: text.slice(last, m.index) });
+      parts.push({ w: m[0], emotion: emotion });
+      last = m.index + m[0].length;
+    }
+    if (!changed) return;
+    if (last < text.length) parts.push({ t: text.slice(last) });
+    var frag = document.createDocumentFragment();
+    parts.forEach(function (part) {
+      if (part.t) {
+        frag.appendChild(document.createTextNode(part.t));
+        return;
+      }
+      var span = document.createElement('span');
+      span.className = 'site-drone-emotion site-drone-emotion--' + part.emotion;
+      span.setAttribute('data-learn-src', part.w);
+      span.setAttribute('data-drone-own', 'page');
+      span.setAttribute('data-emotion', part.emotion);
+      span.textContent = part.w;
+      frag.appendChild(span);
+    });
+    node.parentNode.replaceChild(frag, node);
+  }
+
   function wrapEmotionWords() {
     var g = glossary();
     var root = document.getElementById('main-content') || document.body;
@@ -455,41 +497,21 @@
     var nodes = [];
     var n;
     while ((n = walker.nextNode())) nodes.push(n);
-    nodes.forEach(function (node) {
-      var text = node.nodeValue;
-      var re = /[A-Za-zÀ-ÿ]+(?:['’-][A-Za-zÀ-ÿ]+)*/g;
-      var m;
-      var parts = [];
-      var last = 0;
-      var changed = false;
-      while ((m = re.exec(text)) !== null) {
-        var emotion = emotionOf(m[0]);
-        if (!emotion) continue;
-        if (m[0].length < 4 && !(g.hqEmotionOf && g.hqEmotionOf(m[0]))) continue;
-        changed = true;
-        if (m.index > last) parts.push({ t: text.slice(last, m.index) });
-        parts.push({ w: m[0], emotion: emotion });
-        last = m.index + m[0].length;
+    var i = 0;
+    function step() {
+      if (!state.on) {
+        state.wrapping = false;
+        return;
       }
-      if (!changed) return;
-      if (last < text.length) parts.push({ t: text.slice(last) });
-      var frag = document.createDocumentFragment();
-      parts.forEach(function (part) {
-        if (part.t) {
-          frag.appendChild(document.createTextNode(part.t));
-          return;
-        }
-        var span = document.createElement('span');
-        span.className = 'site-drone-emotion site-drone-emotion--' + part.emotion;
-        span.setAttribute('data-learn-src', part.w);
-        span.setAttribute('data-drone-own', 'page');
-        span.setAttribute('data-emotion', part.emotion);
-        span.textContent = part.w;
-        frag.appendChild(span);
-      });
-      if (node.parentNode) node.parentNode.replaceChild(frag, node);
-    });
-    state.wrapping = false;
+      var end = Math.min(i + 28, nodes.length);
+      for (; i < end; i++) wrapNodeEmotions(nodes[i], g);
+      if (i < nodes.length) {
+        global.requestAnimationFrame(step);
+        return;
+      }
+      state.wrapping = false;
+    }
+    global.requestAnimationFrame(step);
   }
 
   function inspectAt(clientX, clientY) {
@@ -528,10 +550,16 @@
 
   function applyPose() {
     if (!state.drone) return;
-    var bank = Math.max(-18, Math.min(18, (state.tx - state.x) * 0.14));
-    state.drone.style.setProperty('--drone-x', Math.round(state.x) + 'px');
-    state.drone.style.setProperty('--drone-y', Math.round(state.y) + 'px');
-    state.drone.style.setProperty('--drone-rot', bank.toFixed(1) + 'deg');
+    var bank = Math.max(-14, Math.min(14, (state.tx - state.x) * 0.16));
+    var x = Math.round(state.x);
+    var y = Math.round(state.y);
+    var rot = bank.toFixed(1);
+    if (state.drawnX === x && state.drawnY === y && state.drawnRot === rot) return;
+    state.drawnX = x;
+    state.drawnY = y;
+    state.drawnRot = rot;
+    state.drone.style.transform = 'translate3d(' + x + 'px,' + y + 'px,0) rotate(' + rot + 'deg)';
+    state.drone.style.setProperty('--drone-rot', rot + 'deg');
   }
 
   function tick() {
@@ -551,14 +579,13 @@
   function aimAtPointer(clientX, clientY) {
     if (!state.on || state.reduced || state.rush || state.abductHold) return;
     state.following = true;
-    var near = Math.hypot(clientX - (state.x + SIZE / 2), clientY - (state.y + SIZE / 2)) < 58;
+    var near = Math.hypot(clientX - (state.x + SIZE / 2), clientY - (state.y + SIZE / 2)) < 36;
     state.caught = near || state.paused;
     if (!state.caught) {
       var next = clampToPad(clientX - SIZE * 0.28, clientY - SIZE * 0.92);
       state.tx = next.x;
       state.ty = next.y;
     }
-    inspectAt(clientX, clientY);
   }
 
   function mountDrone() {
@@ -717,13 +744,23 @@
 
   function onPointerMove(event) {
     if (!state.on) return;
+    state.inspectX = event.clientX;
+    state.inspectY = event.clientY;
     aimAtPointer(event.clientX, event.clientY);
+    if (state.inspectQueued || state.rush || state.abductHold) return;
+    state.inspectQueued = true;
+    global.requestAnimationFrame(function () {
+      state.inspectQueued = false;
+      if (!state.on || state.rush || state.abductHold) return;
+      inspectAt(state.inspectX, state.inspectY);
+    });
   }
 
   function onPointerDown(event) {
     if (!state.on) return;
     if (event.pointerType === 'touch' || event.pointerType === 'pen') {
       aimAtPointer(event.clientX, event.clientY);
+      inspectAt(event.clientX, event.clientY);
     }
   }
 
