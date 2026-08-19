@@ -253,6 +253,7 @@ const siteUpdatePath = path.join(ROOT, 'content', 'site-update.json');
 if (fs.existsSync(siteUpdatePath)) {
   try {
     siteUpdate = JSON.parse(fs.readFileSync(siteUpdatePath, 'utf8'));
+    if (siteUpdate && siteUpdate.enabled === false) siteUpdate = null;
   } catch (e) {
     console.warn('stamp-assets: site-update.json inválido —', e.message);
   }

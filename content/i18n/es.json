@@ -153,6 +153,8 @@
     "quickToolsTip": "Calculadoras y equipos",
     "quickGrowTip": "Diario de investigaciones y registros de cultivo",
     "quickCommunityTip": "Feed de fotos del diario de cultivo",
+    "lab": "Mapa del laboratorio",
+    "labTip": "Todas las salas del laboratorio en un solo pasillo",
     "tagline": "Laboratorio de inspección"
   },
   "footer": {
@@ -941,7 +943,17 @@
       "learnLegendDanger": "Trazo rojo: palabra de aviso — retaliación, daño, toxina o afecto que cobra el precio en quien lo cultiva. No es prohibición: es literacia (sentido común + lectura BudGanja).",
       "learnLegendLink": "Abrir categoría Palabras de aviso",
       "ctaDiary": "Diario de la Semillita",
-      "ctaInverno": "Bom dia, Inverno"
+      "ctaInverno": "Bom dia, Inverno",
+      "ctaLab": "Mapa del laboratorio",
+      "invernoEyebrow": "Libro en el hielo",
+      "invernoCardText": "Ocho meses en el hielo. Tamara pidió: presta, dona, deja vivir el papel.",
+      "invernoCardCta": "Entrar al hielo"
+    },
+    "laboratorio": {
+      "heroEyebrow": "Todas las salas en un solo pasillo",
+      "heroTitle": "Mapa del laboratorio",
+      "heroSubtitle": "Estudio, cultivo y una forma de mirar — elige una sala y entra.",
+      "docTitle": "Mapa del laboratorio | Inspetor BudGanja"
     },
     "about": {
       "eyebrow": "Acerca de",

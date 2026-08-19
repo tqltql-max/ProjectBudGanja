@@ -155,6 +155,8 @@ window.__I18N_LOCALES__ = {
       "quickToolsTip": "Calculators and equipment",
       "quickGrowTip": "Research diary and grow logs",
       "quickCommunityTip": "Research diary photo feed",
+      "lab": "Lab map",
+      "labTip": "Every room of the lab in one corridor",
       "tagline": "Inspection lab"
     },
     "footer": {
@@ -943,7 +945,17 @@ window.__I18N_LOCALES__ = {
         "learnLegendDanger": "Red underline: warning word — retaliation, harm, toxin or affect that charges the price in the one who grows it. Not a ban: literacy (everyday sense + BudGanja reading).",
         "learnLegendLink": "Open Warning words category",
         "ctaDiary": "Little Seed Diary",
-        "ctaInverno": "Bom dia, Inverno"
+        "ctaInverno": "Bom dia, Inverno",
+        "ctaLab": "Lab map",
+        "invernoEyebrow": "Book on the ice",
+        "invernoCardText": "Eight months on the ice. Tamara asked: lend, donate, let the paper live.",
+        "invernoCardCta": "Step onto the ice"
+      },
+      "laboratorio": {
+        "heroEyebrow": "Every room in one corridor",
+        "heroTitle": "Lab map",
+        "heroSubtitle": "Study, growing, and a way of looking — pick a room and go in.",
+        "docTitle": "Lab map | Inspetor BudGanja"
       },
       "about": {
         "eyebrow": "About",
@@ -1263,6 +1275,8 @@ window.__I18N_LOCALES__ = {
       "quickToolsTip": "Calculadoras y equipos",
       "quickGrowTip": "Diario de investigaciones y registros de cultivo",
       "quickCommunityTip": "Feed de fotos del diario de cultivo",
+      "lab": "Mapa del laboratorio",
+      "labTip": "Todas las salas del laboratorio en un solo pasillo",
       "tagline": "Laboratorio de inspección"
     },
     "footer": {
@@ -2051,7 +2065,17 @@ window.__I18N_LOCALES__ = {
         "learnLegendDanger": "Trazo rojo: palabra de aviso — retaliación, daño, toxina o afecto que cobra el precio en quien lo cultiva. No es prohibición: es literacia (sentido común + lectura BudGanja).",
         "learnLegendLink": "Abrir categoría Palabras de aviso",
         "ctaDiary": "Diario de la Semillita",
-        "ctaInverno": "Bom dia, Inverno"
+        "ctaInverno": "Bom dia, Inverno",
+        "ctaLab": "Mapa del laboratorio",
+        "invernoEyebrow": "Libro en el hielo",
+        "invernoCardText": "Ocho meses en el hielo. Tamara pidió: presta, dona, deja vivir el papel.",
+        "invernoCardCta": "Entrar al hielo"
+      },
+      "laboratorio": {
+        "heroEyebrow": "Todas las salas en un solo pasillo",
+        "heroTitle": "Mapa del laboratorio",
+        "heroSubtitle": "Estudio, cultivo y una forma de mirar — elige una sala y entra.",
+        "docTitle": "Mapa del laboratorio | Inspetor BudGanja"
       },
       "about": {
         "eyebrow": "Acerca de",
@@ -2371,6 +2395,8 @@ window.__I18N_LOCALES__ = {
       "quickGiveawaysTip": "Promoções ativas do laboratório",
       "quickGrowTip": "Diário de pesquisas e registos de cultivo",
       "quickCommunityTip": "Feed de fotos do diário de pesquisas",
+      "lab": "Mapa do laboratório",
+      "labTip": "Todas as salas do laboratório num só corredor",
       "tagline": "Laboratório de inspeção"
     },
     "footer": {
@@ -3159,7 +3185,17 @@ window.__I18N_LOCALES__ = {
         "learnLegendDanger": "Traço vermelho: palavra de aviso — retaliação, dano, toxina ou afecto que cobra o preço em quem o cultiva. Não é proibição: é literacia (sentido comum + leitura BudGanja).",
         "learnLegendLink": "Abrir categoria Palavras de aviso",
         "ctaDiary": "Diário da Sementinha",
-        "ctaInverno": "Bom dia, Inverno"
+        "ctaInverno": "Bom dia, Inverno",
+        "ctaLab": "Mapa do laboratório",
+        "invernoEyebrow": "Livro no gelo",
+        "invernoCardText": "Oito meses no gelo. Tamara pediu: empresta, doa, deixa o papel viver.",
+        "invernoCardCta": "Entrar no gelo"
+      },
+      "laboratorio": {
+        "heroEyebrow": "Todas as salas num só corredor",
+        "heroTitle": "Mapa do laboratório",
+        "heroSubtitle": "Estudo, cultivo e o jeito de olhar — escolha uma sala e entre.",
+        "docTitle": "Mapa do laboratório | Inspetor BudGanja"
       },
       "about": {
         "eyebrow": "Sobre",

@@ -153,6 +153,8 @@
     "quickGiveawaysTip": "Promoções ativas do laboratório",
     "quickGrowTip": "Diário de pesquisas e registos de cultivo",
     "quickCommunityTip": "Feed de fotos do diário de pesquisas",
+    "lab": "Mapa do laboratório",
+    "labTip": "Todas as salas do laboratório num só corredor",
     "tagline": "Laboratório de inspeção"
   },
   "footer": {
@@ -941,7 +943,17 @@
       "learnLegendDanger": "Traço vermelho: palavra de aviso — retaliação, dano, toxina ou afecto que cobra o preço em quem o cultiva. Não é proibição: é literacia (sentido comum + leitura BudGanja).",
       "learnLegendLink": "Abrir categoria Palavras de aviso",
       "ctaDiary": "Diário da Sementinha",
-      "ctaInverno": "Bom dia, Inverno"
+      "ctaInverno": "Bom dia, Inverno",
+      "ctaLab": "Mapa do laboratório",
+      "invernoEyebrow": "Livro no gelo",
+      "invernoCardText": "Oito meses no gelo. Tamara pediu: empresta, doa, deixa o papel viver.",
+      "invernoCardCta": "Entrar no gelo"
+    },
+    "laboratorio": {
+      "heroEyebrow": "Todas as salas num só corredor",
+      "heroTitle": "Mapa do laboratório",
+      "heroSubtitle": "Estudo, cultivo e o jeito de olhar — escolha uma sala e entre.",
+      "docTitle": "Mapa do laboratório | Inspetor BudGanja"
     },
     "about": {
       "eyebrow": "Sobre",

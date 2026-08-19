@@ -153,6 +153,8 @@
     "quickToolsTip": "Calculators and equipment",
     "quickGrowTip": "Research diary and grow logs",
     "quickCommunityTip": "Research diary photo feed",
+    "lab": "Lab map",
+    "labTip": "Every room of the lab in one corridor",
     "tagline": "Inspection lab"
   },
   "footer": {
@@ -941,7 +943,17 @@
       "learnLegendDanger": "Red underline: warning word — retaliation, harm, toxin or affect that charges the price in the one who grows it. Not a ban: literacy (everyday sense + BudGanja reading).",
       "learnLegendLink": "Open Warning words category",
       "ctaDiary": "Little Seed Diary",
-      "ctaInverno": "Bom dia, Inverno"
+      "ctaInverno": "Bom dia, Inverno",
+      "ctaLab": "Lab map",
+      "invernoEyebrow": "Book on the ice",
+      "invernoCardText": "Eight months on the ice. Tamara asked: lend, donate, let the paper live.",
+      "invernoCardCta": "Step onto the ice"
+    },
+    "laboratorio": {
+      "heroEyebrow": "Every room in one corridor",
+      "heroTitle": "Lab map",
+      "heroSubtitle": "Study, growing, and a way of looking — pick a room and go in.",
+      "docTitle": "Lab map | Inspetor BudGanja"
     },
     "about": {
       "eyebrow": "About",

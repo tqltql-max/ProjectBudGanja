@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '326';
+const ASSET_V = '327';
 const HOME = '/vida/';
 
 let deferredInstallPrompt = null;
@@ -1328,9 +1328,16 @@ function getSiteHubNav(authState) {
             href: HOME,
             icon: '🏠',
             label: i18n('common.home', 'Início'),
-            prefixes: '/inverno',
+            prefixes: '/vida',
             exact: true,
             tone: 'inicio'
+          },
+          {
+            href: '/laboratorio/',
+            icon: '🗺️',
+            label: i18n('nav.lab', 'Mapa do laboratório'),
+            prefixes: '/laboratorio',
+            tone: 'pesquisas'
           },
           {
             href: '/biblioteca/',
@@ -1530,75 +1537,8 @@ function buildHeaderHTML(site, authState) {
     '<ul id="site-search-results" class="site-search-results"></ul>' +
     '</div>';
 
-  // Cluster: rádio + plantas + animais + idioma (no mobile ficam juntos ao centro).
-  const plantsQuickLink =
-    '<a href="/plantas/" class="header-quick-link header-quick-link--plants header-plants-link"' +
-    ' data-active-prefixes="/plantas"' +
-    ' data-tip="' + escapeNavText(i18n('nav.quickPlantsTip', 'Catálogo de plantas fitoterápicas do Brasil')) + '"' +
-    ' aria-label="' + escapeNavText(i18n('nav.plants', 'Plantas')) + '"' +
-    ' title="' + escapeNavText(i18n('nav.plants', 'Plantas')) + '">' +
-    '<span class="header-quick-link-icon" aria-hidden="true">' +
-    '<svg class="header-plants-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
-    '<path d="M12 22V11"></path>' +
-    '<path d="M12 11c-3.5-1.5-6-5-6-9 4 0 7.5 2.5 9 6"></path>' +
-    '<path d="M12 11c3.5-1.5 6-5 6-9-4 0-7.5 2.5-9 6"></path>' +
-    '</svg></span></a>';
-
-  const animalsQuickLink =
-    '<a href="/animais/" class="header-quick-link header-quick-link--animals header-animals-link"' +
-    ' data-active-prefixes="/animais"' +
-    ' data-tip="' + escapeNavText(i18n('nav.quickAnimalsTip', 'Catálogo de animais: criação, companhia e derivados industriais')) + '"' +
-    ' aria-label="' + escapeNavText(i18n('nav.animals', 'Animais')) + '"' +
-    ' title="' + escapeNavText(i18n('nav.animals', 'Animais')) + '">' +
-    '<span class="header-quick-link-icon" aria-hidden="true">' +
-    '<svg class="header-animals-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
-    '<path d="M11 5c-.5-1.5-1.5-3-3.5-3S4 4 4 6.5 5.5 10 8 10"></path>' +
-    '<path d="M13 5c.5-1.5 1.5-3 3.5-3S20 4 20 6.5 18.5 10 16 10"></path>' +
-    '<path d="M8 10c-2 1-3.5 3-3.5 5.5S6.5 20 10 20h4c3.5 0 5.5-2 5.5-4.5S18 11 16 10"></path>' +
-    '<circle cx="9.5" cy="14" r="0.8" fill="currentColor" stroke="none"></circle>' +
-    '<circle cx="14.5" cy="14" r="0.8" fill="currentColor" stroke="none"></circle>' +
-    '</svg></span></a>';
-
-  const radioLangCluster =
-    '<div class="header-cluster header-cluster--community-lang">' +
-    '<div id="header-radio-host" class="header-radio-host"></div>' +
-    plantsQuickLink +
-    animalsQuickLink +
-    buildLangSwitcherHTML('header') +
-    '</div>';
-
-  const communityMark =
-    '<a href="/comunidade/" class="header-community-mark"' +
-    ' data-active-prefixes="/comunidade"' +
-    ' data-tip="' + escapeNavText(i18n('nav.quickCommunityTip', 'Feed de fotos do diário de pesquisas')) + '"' +
-    ' aria-label="' + escapeNavText(i18n('nav.community', 'Comunidade')) + '"' +
-    ' title="' + escapeNavText(i18n('nav.community', 'Comunidade')) + '">' +
-    '<span class="header-community-mark-media" aria-hidden="true">' +
-    '<img class="header-community-mark-img" src="/biblioteca/imagens/foto-comunidade.png" alt="" width="40" height="40" decoding="async">' +
-    '</span>' +
-    '<span class="header-community-mark-label">' + escapeNavText(i18n('nav.community', 'Comunidade')) + '</span>' +
-    '</a>';
-
-  const droneOn = (function () {
-    try { return localStorage.getItem('budganja-drone') === '1'; } catch (e) { return false; }
-  })();
-  const droneLabel = droneOn
-    ? i18n('common.droneOff', 'Desativar drone')
-    : i18n('common.droneOn', 'Ativar drone');
-  const droneToggle =
-    '<button type="button" class="header-quick-link header-quick-link--drone' + (droneOn ? ' is-active' : '') + '" data-drone-toggle aria-pressed="' + (droneOn ? 'true' : 'false') + '" aria-label="' + escapeNavText(droneLabel) + '" title="' + escapeNavText(droneLabel) + '">' +
-    '<span class="header-quick-link-icon" aria-hidden="true">' +
-    '<svg class="header-drone-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
-    '<circle cx="6" cy="6" r="2.2"></circle><circle cx="18" cy="6" r="2.2"></circle>' +
-    '<circle cx="6" cy="18" r="2.2"></circle><circle cx="18" cy="18" r="2.2"></circle>' +
-    '<path d="M8 7.4 L10.6 10 M16 7.4 L13.4 10 M8 16.6 L10.6 14 M16 16.6 L13.4 14"></path>' +
-    '<ellipse cx="12" cy="12" rx="3.2" ry="2.1"></ellipse>' +
-    '<circle cx="12" cy="12" r="0.9" fill="currentColor" stroke="none"></circle>' +
-    '</svg></span></button>';
-
   const headerToolbar =
     '<div class="header-toolbar">' +
-    droneToggle +
     '<button type="button" class="header-quick-link header-quick-link--search" id="search-toggle" aria-expanded="false" aria-label="' + escapeNavText(i18n('common.searchOpen', 'Buscar no site')) + '" title="' + escapeNavText(i18n('common.searchShortcut', 'Buscar (Ctrl+K)')) + '">' +
     '<span class="header-quick-link-icon" aria-hidden="true">' +
     '<svg class="header-search-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">' +
@@ -1614,7 +1554,7 @@ function buildHeaderHTML(site, authState) {
     '<ul>' + navLinks + '</ul>' +
     '</nav>' +
     '<div class="header-bar">' +
-    '<div class="header-chrome header-chrome--main">' +
+    '<div class="header-chrome header-chrome--main header-chrome--slim">' +
     '<div class="header-brand-group">' +
     '<div class="logo">' +
     '<a href="' + HOME + '" class="header-quick-link header-quick-link--brand logo-link" aria-label="' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '">' +
@@ -1623,12 +1563,8 @@ function buildHeaderHTML(site, authState) {
     '</span>' +
     '<span class="header-quick-link-label">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
     '</a></div>' +
-    communityMark +
     '</div>' +
-    '<span class="header-chrome-sep" aria-hidden="true"></span>' +
-    radioLangCluster +
-    buildDesktopQuickNavHTML(authState) +
-    '<span class="header-chrome-sep header-chrome-sep--end" aria-hidden="true"></span>' +
+    '<div id="header-radio-host" class="header-radio-host"></div>' +
     '<div class="header-right">' +
     '<div class="header-utilities">' +
     headerToolbar +
@@ -2034,7 +1970,7 @@ function injectSeoMeta(site) {
     head.appendChild(canonical);
   }
 
-  if (document.body.dataset.page === 'home' && !document.getElementById('jsonld-org')) {
+  if ((document.body.dataset.page === 'home' || document.body.dataset.page === 'laboratorio' || document.body.dataset.page === 'vida') && !document.getElementById('jsonld-org')) {
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.id = 'jsonld-org';
@@ -2042,7 +1978,7 @@ function injectSeoMeta(site) {
       '@context': 'https://schema.org',
       '@type': 'Organization',
       name: OG_SITE_NAME,
-      url: absoluteUrl('index.html'),
+      url: absoluteUrl(HOME),
       description: description,
       sameAs: [
         'https://www.youtube.com/@InspetorBudGanja',

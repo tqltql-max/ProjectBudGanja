@@ -11,7 +11,7 @@ const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registr
 const STATIC_PAGES = [
   { url: '/vida/', title: 'Início — Vida', desc: 'Página inicial: conto familiar do Laboratório BudGanja. Cuidar de plantas com ciência, natureza e amizade.', keywords: 'home inicio vida conto familiar plantas semente inspetor dona maria' },
   { url: '/inverno/', title: 'Bom dia, Inverno', desc: 'Divulgação do livro de Tamara Klink. Oito meses no gelo. Empresta, doa, faz circular.', keywords: 'inverno tamara klink livro gelo invernagem groenlandia circular' },
-  { url: '/index.html', title: 'Laboratório', desc: 'Laboratório de fitoterapia brasileira — plantas medicinais, UNIFESP e cultivo responsável', keywords: 'laboratório fitoterapia plantas' },
+  { url: '/laboratorio/', title: 'Mapa do laboratório', desc: 'Todas as salas do Laboratório BudGanja: biblioteca, plantas, ferramentas, comunidade e o conto Vida.', keywords: 'laboratório mapa fitoterapia plantas unifesp cultivo vida' },
   { url: '/plantas/', title: 'Plantas fitoterápicas', desc: 'Catálogo curado de plantas medicinais e fitoterápicas do Brasil', keywords: 'plantas fitoterapia medicinal babosa camomila cannabis' },
   { url: '/animais/', title: 'Animais', desc: 'Catálogo de animais: criação, companhia e derivados industriais de risco', keywords: 'animais produção galinha vaca porco abelha derivados indústria' },
   { url: '/biblioteca/unifesp/', title: 'Curso UNIFESP', desc: 'Hub do XIV curso de extensão UNIFESP sobre cannabis medicinal', keywords: 'unifesp curso cannabis medicinal siex formação' },

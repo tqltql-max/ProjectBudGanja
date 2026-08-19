@@ -152,8 +152,12 @@
     if (el && el.parentNode) el.parentNode.removeChild(el);
   }
 
+  function isSiteUpdateEnabled(update) {
+    return !!(update && update.id && update.enabled !== false);
+  }
+
   function buildUpdateHtml(update) {
-    if (!update || !update.id || wasUpdateDismissed(update.id)) return '';
+    if (!isSiteUpdateEnabled(update) || wasUpdateDismissed(update.id)) return '';
     var title = pickLocalized(update.title, '');
     var text = pickLocalized(update.text, '');
     var href = update.href ? String(update.href) : '';
@@ -403,7 +407,7 @@
       updateConsent(true);
       loadGtag();
       loadSiteUpdate(function (update) {
-        if (update && update.id && !wasUpdateDismissed(update.id)) {
+        if (isSiteUpdateEnabled(update) && !wasUpdateDismissed(update.id)) {
           showUpdateBanner(update);
         }
       });
@@ -412,7 +416,7 @@
     if (consent === 'denied') {
       updateConsent(false);
       loadSiteUpdate(function (update) {
-        if (update && update.id && !wasUpdateDismissed(update.id)) {
+        if (isSiteUpdateEnabled(update) && !wasUpdateDismissed(update.id)) {
           showUpdateBanner(update);
         }
       });

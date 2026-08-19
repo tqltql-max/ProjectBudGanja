@@ -13,8 +13,8 @@ const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registr
 const STATIC = [
   { loc: '/', priority: '1.0', changefreq: 'weekly' },
   { loc: '/vida/', priority: '1.0', changefreq: 'weekly' },
+  { loc: '/laboratorio/', priority: '0.85', changefreq: 'weekly' },
   { loc: '/inverno/', priority: '0.85', changefreq: 'weekly' },
-  { loc: '/index.html', priority: '0.6', changefreq: 'weekly' },
   { loc: '/guia/cultivo-basico.html', priority: '0.95', changefreq: 'monthly' },
   { loc: '/guia/palavras.html', priority: '0.9', changefreq: 'monthly' },
   { loc: '/videos/', priority: '0.9', changefreq: 'weekly' },

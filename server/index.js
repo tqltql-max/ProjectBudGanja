@@ -247,6 +247,7 @@ function jogosWatchPath(pathname) {
 
 function legacyRedirectFor(staticPath) {
   if (staticPath === '/' || staticPath === '/inicio' || staticPath === '/inicio/') return '/vida/';
+  if (staticPath === '/index.html') return '/laboratorio/';
   if (staticPath === '/jogos/paulinho' || staticPath === '/jogos/paulinho/') return '/jogos/aleff/';
   if (staticPath === '/jogos/aleph' || staticPath === '/jogos/aleph/') return '/jogos/aleff/';
   if (staticPath === '/calculadoras.html') return '/calculadoras/';
@@ -517,6 +518,7 @@ const server = http.createServer((req, res) => {
     if (staticPath === '/') staticPath = '/index.html';
     if (staticPath === '/inverno') staticPath = '/inverno/';
     if (staticPath === '/vida') staticPath = '/vida/';
+    if (staticPath === '/laboratorio') staticPath = '/laboratorio/';
     if (staticPath === '/calculadoras') staticPath = '/calculadoras/';
     if (staticPath === '/equipamentos') staticPath = '/equipamentos/';
     if (staticPath === '/sorteios') staticPath = '/sorteios/';

@@ -1,6 +1,6 @@
 /* Home — layout limpo na paleta do banner (sem efeitos especiais) */
 
-body[data-page="home"] {
+:is(body[data-page="home"], body[data-page="laboratorio"]) {
     --home-cream: #f4f8fc;
     --home-amber: #c8f4ff;
     --home-gold: #7dffd0;
@@ -12,16 +12,16 @@ body[data-page="home"] {
     background: transparent;
 }
 
-body[data-page="home"] #main-content {
+:is(body[data-page="home"], body[data-page="laboratorio"]) #main-content {
     position: relative;
     isolation: isolate;
 }
 
-body[data-page="home"] .lab-atmosphere {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .lab-atmosphere {
     opacity: 0.16;
 }
 
-body[data-page="home"] .hero-eyebrow {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero-eyebrow {
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.18em;
@@ -35,8 +35,8 @@ body[data-page="home"] .hero-eyebrow {
     -webkit-text-stroke: 0;
 }
 
-body[data-page="home"] .hero-title,
-body[data-page="home"] .hero-content h1 {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero-title,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero-content h1 {
     margin: 0 0 10px;
     font-size: clamp(1.6rem, 4.2vw, 2.4rem);
     font-weight: 800;
@@ -53,17 +53,17 @@ body[data-page="home"] .hero-content h1 {
     animation: none !important;
 }
 
-body[data-page="home"] .hero-title::after,
-body[data-page="home"] .hero-content h1::after {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero-title::after,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero-content h1::after {
     display: none;
     content: none;
 }
 
-body[data-page="home"] .hero-content {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero-content {
     animation: none !important;
 }
 
-body[data-page="home"] .hero.hero--inverno {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero.hero--inverno {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -78,13 +78,13 @@ body[data-page="home"] .hero.hero--inverno {
     padding: 0;
 }
 
-body[data-page="home"] .hero.hero--inverno::before,
-body[data-page="home"] .hero.hero--inverno::after {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero.hero--inverno::before,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero.hero--inverno::after {
     display: none;
     content: none;
 }
 
-body[data-page="home"] .hero--inverno .hero-cover-link {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero--inverno .hero-cover-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,7 @@ body[data-page="home"] .hero--inverno .hero-cover-link {
     line-height: 0;
 }
 
-body[data-page="home"] .hero--inverno .hero-cover {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero--inverno .hero-cover {
     display: block;
     width: auto;
     max-width: 100%;
@@ -109,7 +109,7 @@ body[data-page="home"] .hero--inverno .hero-cover {
     to { opacity: 1; }
 }
 
-body[data-page="home"] .hero--inverno .hero-content {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero--inverno .hero-content {
     position: relative;
     z-index: 2;
     display: flex;
@@ -124,42 +124,42 @@ body[data-page="home"] .hero--inverno .hero-content {
     text-align: center;
 }
 
-body[data-page="home"] .hero--inverno .hero-title,
-body[data-page="home"] .hero--inverno .hero-content h1 {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero--inverno .hero-title,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero--inverno .hero-content h1 {
     margin: 0;
     font-size: clamp(1.45rem, 3.6vw, 2.15rem);
 }
 
-body[data-page="home"] .hero--inverno .hero-subtitle {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero--inverno .hero-subtitle {
     margin: 0;
     max-width: 36rem;
 }
 
-body[data-page="home"] .hero--inverno .hero-actions {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero--inverno .hero-actions {
     margin-top: 0.65rem;
     justify-content: center;
 }
 
-body[data-page="home"] .hero--inverno .hero-actions .botao-home {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero--inverno .hero-actions .botao-home {
     width: auto;
     min-width: 12rem;
 }
 
 @media (max-width: 720px) {
-    body[data-page="home"] .hero.hero--inverno {
+    :is(body[data-page="home"], body[data-page="laboratorio"]) .hero.hero--inverno {
         height: auto;
         min-height: 0;
         max-height: none;
     }
 
-    body[data-page="home"] .hero--inverno .hero-cover {
+    :is(body[data-page="home"], body[data-page="laboratorio"]) .hero--inverno .hero-cover {
         max-height: min(58vh, 420px);
     }
 }
 
-body[data-page="home"] .hero-subtitle,
-body[data-page="home"] .hero-content .hero-subtitle,
-body[data-page="home"] .hero-content p.hero-subtitle {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero-subtitle,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero-content .hero-subtitle,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .hero-content p.hero-subtitle {
     margin: 0.55rem auto 0;
     max-width: 38rem;
     padding: 0;
@@ -181,34 +181,34 @@ body[data-page="home"] .hero-content p.hero-subtitle {
     animation: none !important;
 }
 
-body[data-page="home"] .home-pillars,
-body[data-page="home"] .home-channels,
-body[data-page="home"] .features,
-body[data-page="home"] .home-latest,
-body[data-page="home"] .home-announcement {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillars,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-channels,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .features,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-latest,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-announcement {
     position: relative;
     z-index: 1;
 }
 
-body[data-page="home"] .home-pillars {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillars {
     padding: clamp(0.85rem, 2.5vw, 1.35rem) 0 clamp(0.35rem, 1.5vw, 0.75rem);
     animation: none;
 }
 
-body[data-page="home"] .home-pillars .conteudo-wide {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillars .conteudo-wide {
     display: grid;
     gap: 0.75rem;
     grid-template-columns: 1fr;
 }
 
 @media (min-width: 820px) {
-    body[data-page="home"] .home-pillars .conteudo-wide {
+    :is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillars .conteudo-wide {
         grid-template-columns: 1fr;
         max-width: 52rem;
     }
 }
 
-body[data-page="home"] .home-pillar {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillar {
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
@@ -219,17 +219,17 @@ body[data-page="home"] .home-pillar {
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.24);
 }
 
-body[data-page="home"] .home-pillar--unifesp {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillar--unifesp {
     border-color: rgba(223, 194, 98, 0.35);
 }
 
-body[data-page="home"] .home-pillar-row {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillar-row {
     display: flex;
     align-items: flex-start;
     gap: 0.85rem;
 }
 
-body[data-page="home"] .home-pillar-logo {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillar-logo {
     flex: 0 0 auto;
     display: block;
     width: 4.25rem;
@@ -242,12 +242,12 @@ body[data-page="home"] .home-pillar-logo {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-body[data-page="home"] .home-pillar-copy {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillar-copy {
     min-width: 0;
     flex: 1;
 }
 
-body[data-page="home"] .home-pillar-eyebrow {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillar-eyebrow {
     margin: 0 0 0.2rem;
     font-size: 0.65rem;
     font-weight: 700;
@@ -256,7 +256,7 @@ body[data-page="home"] .home-pillar-eyebrow {
     color: var(--home-moss);
 }
 
-body[data-page="home"] .home-pillar h2 {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillar h2 {
     margin: 0 0 0.3rem;
     font-size: clamp(1.05rem, 2.2vw, 1.25rem);
     font-weight: 800;
@@ -269,42 +269,42 @@ body[data-page="home"] .home-pillar h2 {
     filter: none;
 }
 
-body[data-page="home"] .home-pillar p:not(.home-pillar-eyebrow) {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillar p:not(.home-pillar-eyebrow) {
     margin: 0;
     color: var(--color-text-muted, #ccc);
     font-size: 0.9rem;
     line-height: 1.4;
 }
 
-body[data-page="home"] .home-pillar-actions {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillar-actions {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-body[data-page="home"] .home-pillar-actions .botao-home {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillar-actions .botao-home {
     padding: 0.45rem 0.9rem;
     font-size: 0.88rem;
 }
 
 @media (max-width: 480px) {
-    body[data-page="home"] .home-pillar-logo {
+    :is(body[data-page="home"], body[data-page="laboratorio"]) .home-pillar-logo {
         width: 3.5rem;
         height: 3.5rem;
     }
 }
 
-body[data-page="home"] .home-channels {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-channels {
     padding: clamp(0.75rem, 2.5vw, 1.5rem) 0 clamp(0.5rem, 2vw, 1rem);
 }
 
-body[data-page="home"] .home-channels-head {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-channels-head {
     margin: 0 auto 1rem;
     max-width: 40rem;
     text-align: center;
 }
 
-body[data-page="home"] .home-channels-head h2 {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-channels-head h2 {
     margin: 0 0 0.4rem;
     font-size: clamp(1.2rem, 2.6vw, 1.45rem);
     font-weight: 800;
@@ -316,48 +316,48 @@ body[data-page="home"] .home-channels-head h2 {
     filter: none;
 }
 
-body[data-page="home"] .home-channels-head .section-subtitle {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-channels-head .section-subtitle {
     margin: 0;
     color: var(--color-text-muted, #ccc);
     line-height: 1.5;
 }
 
-body[data-page="home"] .home-channels-grid {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-channels-grid {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr;
 }
 
-body[data-page="home"] .home-vida {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida {
     padding-top: clamp(1.25rem, 3.5vw, 2.25rem);
     padding-bottom: clamp(1.25rem, 3.5vw, 2.25rem);
 }
 
-body[data-page="home"] .home-vida-head {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-head {
     max-width: 36rem;
     margin-bottom: 1.35rem;
 }
 
-body[data-page="home"] .home-vida-grid {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-grid {
     max-width: 960px;
     margin: 0 auto;
     align-items: stretch;
 }
 
 @media (min-width: 820px) {
-    body[data-page="home"] .home-vida-grid {
+    :is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-grid {
         grid-template-columns: 1fr 1fr;
         gap: 1.15rem;
         max-width: 1100px;
     }
 }
 
-body[data-page="home"] .home-vida-video {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-video {
     animation-delay: 0.14s;
 }
 
-body[data-page="home"] .home-vida-video,
-body[data-page="home"] .home-vida-card {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-video,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-card {
     border-color: rgba(212, 175, 55, 0.32);
     background:
         linear-gradient(165deg, rgba(28, 36, 16, 0.94), rgba(12, 16, 10, 0.96));
@@ -367,7 +367,7 @@ body[data-page="home"] .home-vida-card {
     animation: home-vida-rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-body[data-page="home"] .home-vida-card {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-card {
     animation-delay: 0.08s;
 }
 
@@ -376,14 +376,14 @@ body[data-page="home"] .home-vida-card {
     to { opacity: 1; transform: translateY(0); }
 }
 
-body[data-page="home"] .home-vida-embed {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-embed {
     margin-bottom: 1rem;
     border-radius: 14px;
     border-color: rgba(212, 175, 55, 0.28);
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
 }
 
-body[data-page="home"] .home-vida-cover {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-cover {
     display: block;
     position: relative;
     width: 100%;
@@ -396,7 +396,7 @@ body[data-page="home"] .home-vida-cover {
     text-decoration: none;
 }
 
-body[data-page="home"] .home-vida-cover img {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-cover img {
     display: block;
     width: 100%;
     height: 100%;
@@ -405,22 +405,22 @@ body[data-page="home"] .home-vida-cover img {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    body[data-page="home"] .home-vida-cover:hover img {
+    :is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-cover:hover img {
         transform: scale(1.03);
     }
 }
 
-body[data-page="home"] .home-vida-video h3,
-body[data-page="home"] .home-vida-card h3 {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-video h3,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-card h3 {
     letter-spacing: -0.02em;
 }
 
-body[data-page="home"] .home-vida-video p:not(.home-pillar-eyebrow),
-body[data-page="home"] .home-vida-card p:not(.home-pillar-eyebrow) {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-video p:not(.home-pillar-eyebrow),
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-vida-card p:not(.home-pillar-eyebrow) {
     flex: 1;
 }
 
-body[data-page="home"] .home-channel {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-channel {
     border-radius: 20px;
     border: 1px solid rgba(122, 150, 25, 0.28);
     padding: clamp(1.15rem, 2.8vw, 1.55rem);
@@ -431,11 +431,11 @@ body[data-page="home"] .home-channel {
     text-align: center;
 }
 
-body[data-page="home"] .home-channel .home-pillar-actions {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-channel .home-pillar-actions {
     justify-content: center;
 }
 
-body[data-page="home"] .home-channel-embed {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-channel-embed {
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -446,8 +446,8 @@ body[data-page="home"] .home-channel-embed {
     border: 1px solid rgba(122, 150, 25, 0.2);
 }
 
-body[data-page="home"] .home-channel-embed iframe,
-body[data-page="home"] .home-channel-embed .yt-facade {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-channel-embed iframe,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-channel-embed .yt-facade {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -456,7 +456,7 @@ body[data-page="home"] .home-channel-embed .yt-facade {
 }
 
 /* Partilhar só nos dois embeds da home — ícone à esquerda */
-body[data-page="home"] .home-embed-share {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-embed-share {
     position: absolute;
     left: 10px;
     bottom: 10px;
@@ -476,33 +476,33 @@ body[data-page="home"] .home-embed-share {
     transition: opacity 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
-body[data-page="home"] .home-embed-share:hover,
-body[data-page="home"] .home-embed-share:focus-visible {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-embed-share:hover,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-embed-share:focus-visible {
     opacity: 0.95;
     background: rgba(0, 0, 0, 0.7);
     outline: none;
 }
 
-body[data-page="home"] .home-embed-share.is-copied {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-embed-share.is-copied {
     border-color: rgba(39, 174, 96, 0.55);
     background: rgba(39, 174, 96, 0.28);
 }
 
-body[data-page="home"] .home-embed-share .article-share-icon {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-embed-share .article-share-icon {
     display: grid;
     place-items: center;
 }
 
-body[data-page="home"] .home-embed-share .article-share-icon svg {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-embed-share .article-share-icon svg {
     width: 15px;
     height: 15px;
 }
 
-body[data-page="home"] .home-channel-embed .yt-facade .video-card-play {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-channel-embed .yt-facade .video-card-play {
     inset: auto auto 12px 54px;
 }
 
-body[data-page="home"] .home-channel h3 {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-channel h3 {
     margin: 0 0 0.45rem;
     font-size: clamp(1.1rem, 2.2vw, 1.3rem);
     font-weight: 800;
@@ -510,26 +510,26 @@ body[data-page="home"] .home-channel h3 {
     color: var(--home-cream);
 }
 
-body[data-page="home"] .home-channel p:not(.home-pillar-eyebrow) {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-channel p:not(.home-pillar-eyebrow) {
     margin: 0 0 1rem;
     color: var(--color-text-muted, #ccc);
     line-height: 1.5;
 }
 
-body[data-page="home"] .features {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .features {
     padding-top: clamp(1.5rem, 4vw, 2.5rem);
     padding-bottom: clamp(1.5rem, 4vw, 2.5rem);
     background: transparent;
     animation: none;
 }
 
-body[data-page="home"] .features-head {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .features-head {
     text-align: center;
     margin-bottom: 0.35rem;
 }
 
-body[data-page="home"] .features-title,
-body[data-page="home"] .features h2 {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .features-title,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .features h2 {
     font-weight: 800;
     letter-spacing: -0.02em;
     color: var(--home-cream);
@@ -543,14 +543,14 @@ body[data-page="home"] .features h2 {
     animation: none !important;
 }
 
-body[data-page="home"] .features-title::after,
-body[data-page="home"] .features h2::after {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .features-title::after,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .features h2::after {
     display: none;
     content: none;
 }
 
-body[data-page="home"] .features-subtitle,
-body[data-page="home"] .features .section-subtitle {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .features-subtitle,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .features .section-subtitle {
     color: var(--color-text-muted, #ccc);
     max-width: 42ch;
     margin-left: auto;
@@ -565,7 +565,7 @@ body[data-page="home"] .features .section-subtitle {
     animation: none !important;
 }
 
-body[data-page="home"] .home-card {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card {
     --card-accent: #d4af37;
     --card-accent-soft: rgba(212, 175, 55, 0.14);
     --card-accent-strong: rgba(212, 175, 55, 0.28);
@@ -582,12 +582,12 @@ body[data-page="home"] .home-card {
     transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
 }
 
-body[data-page="home"] .home-card::before {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card::before {
     display: none;
     content: none;
 }
 
-body[data-page="home"] .home-card:hover {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card:hover {
     transform: translateY(-2px);
     border-color: var(--card-accent);
     box-shadow:
@@ -595,7 +595,7 @@ body[data-page="home"] .home-card:hover {
         0 14px 34px rgba(0, 0, 0, 0.32);
 }
 
-body[data-page="home"] .home-card h3 {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card h3 {
     position: relative;
     color: var(--card-label);
     background: none;
@@ -607,26 +607,26 @@ body[data-page="home"] .home-card h3 {
     animation: none !important;
 }
 
-body[data-page="home"] .home-card p {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card p {
     position: relative;
     color: var(--color-text-muted, #ccc);
 }
 
-body[data-page="home"] .home-card .botao-home {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card .botao-home {
     position: relative;
     border-color: var(--card-accent-border);
     color: var(--card-label);
     background: linear-gradient(145deg, var(--card-accent-strong), var(--card-accent-soft));
 }
 
-body[data-page="home"] .home-card .botao-home:hover,
-body[data-page="home"] .home-card .botao-home:focus-visible {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card .botao-home:hover,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card .botao-home:focus-visible {
     border-color: var(--card-accent);
     color: #fff;
 }
 
 /* Cores alinhadas ao menu hambúrguer */
-body[data-page="home"] .home-card--videos {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--videos {
     --card-accent: #ff6b6b;
     --card-accent-soft: rgba(231, 76, 60, 0.16);
     --card-accent-strong: rgba(192, 57, 43, 0.34);
@@ -634,7 +634,7 @@ body[data-page="home"] .home-card--videos {
     --card-label: #ffe8e8;
 }
 
-body[data-page="home"] .home-card--games {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--games {
     --card-accent: #9ad15f;
     --card-accent-soft: rgba(124, 186, 90, 0.16);
     --card-accent-strong: rgba(90, 140, 48, 0.34);
@@ -642,7 +642,7 @@ body[data-page="home"] .home-card--games {
     --card-label: #eef8d8;
 }
 
-body[data-page="home"] .home-card--biblioteca {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--biblioteca {
     --card-accent: #dfc262;
     --card-accent-soft: rgba(223, 194, 98, 0.16);
     --card-accent-strong: rgba(212, 175, 55, 0.34);
@@ -650,7 +650,7 @@ body[data-page="home"] .home-card--biblioteca {
     --card-label: #fef6d4;
 }
 
-body[data-page="home"] .home-card--inspecoes {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--inspecoes {
     --card-accent: #85c1e9;
     --card-accent-soft: rgba(93, 173, 226, 0.14);
     --card-accent-strong: rgba(93, 173, 226, 0.32);
@@ -658,7 +658,7 @@ body[data-page="home"] .home-card--inspecoes {
     --card-label: #eef7ff;
 }
 
-body[data-page="home"] .home-card--plantas {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--plantas {
     --card-accent: #58d68d;
     --card-accent-soft: rgba(39, 174, 96, 0.14);
     --card-accent-strong: rgba(39, 174, 96, 0.32);
@@ -666,8 +666,8 @@ body[data-page="home"] .home-card--plantas {
     --card-label: #e8fff0;
 }
 
-body[data-page="home"] .home-card--cultivo,
-body[data-page="home"] .home-card--pesquisas {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--cultivo,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--pesquisas {
     --card-accent: #1abc9c;
     --card-accent-soft: rgba(26, 188, 156, 0.14);
     --card-accent-strong: rgba(22, 160, 133, 0.32);
@@ -675,7 +675,7 @@ body[data-page="home"] .home-card--pesquisas {
     --card-label: #e8fff8;
 }
 
-body[data-page="home"] .home-card--sementinha {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--sementinha {
     --card-accent: #e67e22;
     --card-accent-soft: rgba(230, 126, 34, 0.16);
     --card-accent-strong: rgba(211, 84, 0, 0.34);
@@ -683,7 +683,7 @@ body[data-page="home"] .home-card--sementinha {
     --card-label: #ffe8d4;
 }
 
-body[data-page="home"] .home-card--comunidade {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--comunidade {
     --card-accent: #d4af37;
     --card-accent-soft: rgba(212, 175, 55, 0.14);
     --card-accent-strong: rgba(212, 175, 55, 0.32);
@@ -691,15 +691,15 @@ body[data-page="home"] .home-card--comunidade {
     --card-label: #fef0b5;
 }
 
-body[data-page="home"] .home-latest {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-latest {
     animation: none;
     background: transparent;
     padding-bottom: clamp(2rem, 5vw, 3.5rem);
 }
 
-body[data-page="home"] .home-latest-head h2,
-body[data-page="home"] .home-latest h2,
-body[data-page="home"] .home-latest--compact h2 {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-latest-head h2,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-latest h2,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-latest--compact h2 {
     font-weight: 800;
     letter-spacing: -0.02em;
     color: var(--home-cream);
@@ -713,12 +713,12 @@ body[data-page="home"] .home-latest--compact h2 {
     animation: none !important;
 }
 
-body[data-page="home"] .home-latest-list,
-body[data-page="home"] .home-latest-item {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-latest-list,
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-latest-item {
     border-color: rgba(122, 150, 25, 0.22);
 }
 
-body[data-page="home"] .home-announcement-inner {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-announcement-inner {
     border-radius: 20px;
     border: 1px solid rgba(223, 194, 98, 0.35);
     background: rgba(20, 26, 12, 0.92);
@@ -727,14 +727,14 @@ body[data-page="home"] .home-announcement-inner {
     -webkit-backdrop-filter: none;
 }
 
-body[data-page="home"] .home-announcement-inner--promo {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-announcement-inner--promo {
     display: grid;
     grid-template-columns: minmax(0, 140px) minmax(0, 1fr) auto;
     align-items: center;
     gap: 1rem 1.25rem;
 }
 
-body[data-page="home"] .home-promo-cover-link {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-promo-cover-link {
     display: block;
     width: min(140px, 28vw);
     border-radius: 12px;
@@ -742,7 +742,7 @@ body[data-page="home"] .home-promo-cover-link {
     border: 1px solid rgba(223, 194, 98, 0.28);
 }
 
-body[data-page="home"] .home-promo-cover {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-promo-cover {
     display: block;
     width: 100%;
     height: 88px;
@@ -750,17 +750,17 @@ body[data-page="home"] .home-promo-cover {
 }
 
 @media (max-width: 720px) {
-    body[data-page="home"] .home-announcement-inner--promo {
+    :is(body[data-page="home"], body[data-page="laboratorio"]) .home-announcement-inner--promo {
         grid-template-columns: minmax(0, 96px) minmax(0, 1fr);
     }
 
-    body[data-page="home"] .home-announcement-inner--promo .botao-home {
+    :is(body[data-page="home"], body[data-page="laboratorio"]) .home-announcement-inner--promo .botao-home {
         grid-column: 1 / -1;
         justify-self: start;
     }
 }
 
-body[data-page="home"] .home-announcement-inner h2 {
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-announcement-inner h2 {
     color: var(--home-cream);
     background: none;
     -webkit-background-clip: unset;
@@ -769,3 +769,103 @@ body[data-page="home"] .home-announcement-inner h2 {
     -webkit-text-stroke: 0;
     filter: none;
 }
+
+/* Mapa do laboratório — hero cinematográfico (equipa) */
+body[data-page="laboratorio"] #main-content {
+    max-width: none;
+}
+
+body[data-page="laboratorio"] #site-header {
+    background: linear-gradient(180deg, rgba(7, 16, 24, 0.42), rgba(7, 16, 24, 0.06));
+    border-bottom-color: transparent;
+    box-shadow: none;
+}
+
+body[data-page="laboratorio"] #site-header.is-scrolled {
+    background: rgba(7, 16, 24, 0.86);
+    border-bottom-color: var(--color-header-border);
+    box-shadow: 0 10px 32px rgba(0, 16, 28, 0.42);
+}
+
+body[data-page="laboratorio"] .hero.hero--lab {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    min-height: min(72vh, 640px);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #071018;
+}
+
+body[data-page="laboratorio"] .hero.hero--lab::before,
+body[data-page="laboratorio"] .hero.hero--lab::after {
+    display: none;
+}
+
+body[data-page="laboratorio"] .hero-lab-art {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    z-index: 0;
+}
+
+body[data-page="laboratorio"] .hero-lab-art::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(7, 16, 24, 0.18) 0%, rgba(7, 16, 24, 0.12) 32%, rgba(7, 16, 24, 0.72) 78%, rgba(7, 16, 24, 0.96) 100%),
+        linear-gradient(90deg, rgba(7, 16, 24, 0.4) 0%, transparent 48%);
+    pointer-events: none;
+}
+
+body[data-page="laboratorio"] .hero--lab .hero-cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 28%;
+}
+
+body[data-page="laboratorio"] .hero--lab .hero-content {
+    position: relative;
+    z-index: 1;
+    width: min(1080px, calc(100% - 2 * var(--space-page-x, 1.25rem)));
+    margin: 0 auto;
+    padding: clamp(5.5rem, 12vw, 7.5rem) 0 clamp(1.8rem, 4vw, 2.8rem);
+    background: transparent;
+    text-align: left;
+    align-items: flex-start;
+}
+
+body[data-page="laboratorio"] .hero--lab .hero-title,
+body[data-page="laboratorio"] .hero--lab .hero-content h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(2.4rem, 7vw, 4.6rem);
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+    background: linear-gradient(180deg, #f7fbff 0%, #7dffd0 52%, #7eb8ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+body[data-page="laboratorio"] .hero--lab .hero-subtitle {
+    max-width: 42ch;
+    color: rgba(244, 248, 252, 0.88);
+}
+
+body[data-page="laboratorio"] .hero--lab .hero-actions {
+    justify-content: flex-start;
+}
+
+@media (max-width: 720px) {
+    body[data-page="laboratorio"] .hero.hero--lab {
+        min-height: min(62vh, 520px);
+    }
+}
+
