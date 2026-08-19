@@ -6188,7 +6188,7 @@
     "excerptEs": "*Carica papaya* — papaya brasileña: pulpa dulce, papaína del látex y vínculo UNIFESP/SUS; separar fruto entero de néctares y ultraprocesados.",
     "slug": "inspecao-planta-mamao",
     "date": "2026-07-31T14:00:00.000Z",
-    "coverImage": "imagens/plantas/mamao-cover.jpg",
+    "coverImage": "/imagens/plantas/mamao-cover.jpg",
     "category": "inspecao",
     "format": "markdown",
     "published": true,

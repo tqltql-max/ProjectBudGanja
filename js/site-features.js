@@ -10,7 +10,7 @@
     'equipamentos/index.html': [{ label: 'Início', href: HOME }, { label: 'Equipamentos' }],
     'index.html': [{ label: 'Início', href: HOME }, { label: 'Laboratório', href: '/laboratorio/' }],
     'laboratorio/index.html': [{ label: 'Início', href: HOME }, { label: 'Laboratório' }],
-    'inverno/index.html': [{ label: 'Início' }],
+    'inverno/index.html': [{ label: 'Início', href: HOME }, { label: 'Bom dia, Inverno' }],
     'calculadoras/index.html': [{ label: 'Início', href: HOME }, { label: 'Ferramentas' }],
     'calculadoras/luximetro.html': [{ label: 'Início', href: HOME }, { label: 'Ferramentas', href: '/calculadoras/' }, { label: 'Luxímetro' }],
     'sorteios/index.html': [{ label: 'Início', href: HOME }, { label: 'Sorteios' }],

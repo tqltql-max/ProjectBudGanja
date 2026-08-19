@@ -1,7 +1,8 @@
-# Página inicial: hub Bom dia, Inverno
-/ /inverno/ 302
-/inicio /inverno/ 302
-/inicio/ /inverno/ 302
+# Página inicial: conto Vida
+/ /vida/ 302
+/inicio /vida/ 302
+/inicio/ /vida/ 302
+/index.html /vida/ 302
 
 /calculadoras.html /calculadoras/ 301
 /luximetro.html /calculadoras/luximetro.html 301
