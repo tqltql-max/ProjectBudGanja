@@ -1615,6 +1615,25 @@
     "seriesLabel": "Copaíba"
   },
   {
+    "title": "Inspeção: Paulo Coelho — ofício de parábola e elo com O Alquimista",
+    "titleEn": "Inspection: Paulo Coelho — parable craft and link to The Alchemist",
+    "titleEs": "Inspección: Paulo Coelho — oficio de parábola y vínculo con El alquimista",
+    "excerpt": "Pessoas × Artes: Paulo Coelho — método de escrever a parábola de viagem, com elo principal no livro O Alquimista (1988); distinto do Legado canábico e do léxico animal «coelho».",
+    "excerptEn": "People × Arts: Paulo Coelho — writing the journey parable, with primary link to The Alchemist (1988); distinct from cannabis Legacy and from the lab word «coelho» (rabbit).",
+    "excerptEs": "Personas × Artes: Paulo Coelho — método de escribir la parábola de viaje, con vínculo principal en O Alquimista (1988); distinto del Legado cannábico y del léxico animal «coelho».",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-figura-paulo-coelho",
+    "url": "/posts/post-inspecao-figura-paulo-coelho.html",
+    "date": "2026-08-19T16:45:00.000Z",
+    "filename": "posts/post-inspecao-figura-paulo-coelho.html",
+    "coverImage": "/imagens/inspecoes/paulo-coelho-cover.jpg",
+    "category": "inspecao",
+    "series": "pessoas-historia",
+    "seriesOrder": 18,
+    "seriesLabel": "Paulo Coelho · pessoa"
+  },
+  {
     "title": "Inspeção: Planta — Andiroba — limonoides e óleo amazônico",
     "titleEn": "Inspection: Plant — Andiroba — limonoids and Amazonian oil",
     "titleEs": "Inspección: Planta — Andiroba — limonoides y aceite amazónico",
@@ -2259,6 +2278,25 @@
     "series": "artes-cultura",
     "seriesOrder": 52,
     "seriesLabel": "Questão de Tempo · Artes"
+  },
+  {
+    "title": "Inspeção: O Alquimista — o livro de Paulo Coelho e a Lenda Pessoal",
+    "titleEn": "Inspection: The Alchemist — Paulo Coelho’s book and the Personal Legend",
+    "titleEs": "Inspección: El alquimista — el libro de Paulo Coelho y la Leyenda Personal",
+    "excerpt": "Artes: O Alquimista (1988) — parábola de viagem de Paulo Coelho; Lenda Pessoal, omens e tesouro. Autor em Pessoas. Alquimia = metáfora, não protocolo.",
+    "excerptEn": "Arts: The Alchemist (1988) — Paulo Coelho’s journey parable; Personal Legend, omens and treasure. Author in People. Alchemy = metaphor, not a protocol.",
+    "excerptEs": "Artes: O Alquimista (1988) — parábola de viaje de Paulo Coelho; Leyenda Personal, omens y tesoro. Autor en Personas. Alquimia = metáfora, no protocolo.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-arte-o-alquimista",
+    "url": "/posts/post-inspecao-arte-o-alquimista.html",
+    "date": "2026-08-19T16:30:00.000Z",
+    "filename": "posts/post-inspecao-arte-o-alquimista.html",
+    "coverImage": "/imagens/inspecoes/o-alquimista-cover.jpg",
+    "category": "inspecao",
+    "series": "artes-cultura",
+    "seriesOrder": 53,
+    "seriesLabel": "O Alquimista · Artes"
   },
   {
     "title": "Inspeção: Um Sonho de Liberdade — a novela de King e o filme de 1994",

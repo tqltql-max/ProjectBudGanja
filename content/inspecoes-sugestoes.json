@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T16:18:18.065Z",
+  "updatedAt": "2026-08-19T16:45:26.988Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5699,6 +5699,46 @@
         "/vida/"
       ],
       "notes": "Obra primeiro (1995); Spotify como referência pedida; eco poético distinto da letra."
+    },
+    {
+      "id": "arte-o-alquimista",
+      "title": "O Alquimista — o livro de Paulo Coelho e a Lenda Pessoal",
+      "titleEn": "The Alchemist — Paulo Coelho’s book and the Personal Legend",
+      "titleEs": "El alquimista — el libro de Paulo Coelho y la Leyenda Personal",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Artes: O Alquimista (1988) — livro primeiro; autor em Paulo Coelho (Pessoas).",
+      "whyEn": "Arts: The Alchemist (1988) — book first; author in Paulo Coelho (People).",
+      "whyEs": "Artes: O Alquimista (1988) — libro primero; autor en Paulo Coelho (Personas).",
+      "suggestedSlug": "inspecao-arte-o-alquimista",
+      "doneHref": "/posts/post-inspecao-arte-o-alquimista.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/O_Alquimista",
+        "/posts/post-inspecao-figura-paulo-coelho.html"
+      ],
+      "notes": "Alquimia = metáfora literária; ≠ protocolo; copyright — sem citação longa."
+    },
+    {
+      "id": "figura-paulo-coelho",
+      "title": "Paulo Coelho — ofício de parábola e elo com O Alquimista",
+      "titleEn": "Paulo Coelho — parable craft and link to The Alchemist",
+      "titleEs": "Paulo Coelho — oficio de parábola y vínculo con El alquimista",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas × Artes: método de parábola de Coelho com elo em O Alquimista.",
+      "whyEn": "People × Arts: Coelho’s parable method linked to The Alchemist.",
+      "whyEs": "Personas × Artes: método de parábola de Coelho con vínculo en O Alquimista.",
+      "suggestedSlug": "inspecao-figura-paulo-coelho",
+      "doneHref": "/posts/post-inspecao-figura-paulo-coelho.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Paulo_Coelho",
+        "/posts/post-inspecao-arte-o-alquimista.html"
+      ],
+      "notes": "Pessoas ≠ Legado; ≠ léxico animal coelho; livro fica em Artes."
     }
   ]
 }

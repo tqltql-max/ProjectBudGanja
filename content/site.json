@@ -923,6 +923,14 @@
                   "description": "*Copaifera langsdorffii* — óleo-resina amazônica; β-cariofileno e ácidos copaíbicos na tradição tópica e oral."
                 },
                 {
+                  "label": "Inspeção: Paulo Coelho — ofício de parábola e elo com O Alquimista",
+                  "tileLabel": "Inspeção: Paulo Coelho — ofício…",
+                  "href": "/posts/post-inspecao-figura-paulo-coelho.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-figura-paulo-coelho",
+                  "description": "Pessoas × Artes: Paulo Coelho — método de escrever a parábola de viagem, com elo principal no livro O Alquimista (1988); distinto do Legado canábico e do léxico animal «coelho»."
+                },
+                {
                   "label": "Inspeção: Planta — Andiroba — limonoides e óleo amazônico",
                   "tileLabel": "Inspeção: Planta — Andiroba — l…",
                   "href": "/posts/post-inspecao-planta-andiroba.html",
@@ -1147,12 +1155,28 @@
                   "description": "Palavras: «fruto» (lat. *fructus*) — órgão botânico, plural frutos, contraste com fruta, figurado «frutos do trabalho»; elos plantas/simbiose; Faça o melhor!"
                 },
                 {
+                  "label": "Inspeção: Under Pressure — Queen, Bowie e o aperto sem esmagar",
+                  "tileLabel": "Inspeção: Under Pressure — Quee…",
+                  "href": "/posts/post-inspecao-arte-under-pressure.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-under-pressure",
+                  "description": "Artes · canção 1981: Queen + David Bowie — Under Pressure nasce na jam de Montreux; elo BudGanja com coração, medo e esperança — medir o aperto sem esmagar."
+                },
+                {
                   "label": "Inspeção: De Volta para o Futuro — o filme de 1985 e a homenagem aos actores",
                   "tileLabel": "Inspeção: De Volta para o Futur…",
                   "href": "/posts/post-inspecao-filme-de-volta-para-o-futuro.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-filme-de-volta-para-o-futuro",
                   "description": "Artes · cinema: De Volta para o Futuro (1985, Zemeckis/Gale) — a obra e o crédito às pessoas: Michael J. Fox, Christopher Lloyd e o elenco, tratados como gente, não como persona."
+                },
+                {
+                  "label": "Inspeção: Upside Down — Jack Johnson e o olhar de cabeça para baixo",
+                  "tileLabel": "Inspeção: Upside Down — Jack Jo…",
+                  "href": "/posts/post-inspecao-arte-upside-down.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-upside-down",
+                  "description": "Artes · canção 2006: Jack Johnson — Upside Down nasce na trilha de Curious George; elo BudGanja com criatividade, alegria e caminho — inverter o olhar para inspecionar."
                 },
                 {
                   "label": "Inspeção: DeLorean — o carro de Dunmurry e a camada de 1985",
@@ -1163,12 +1187,28 @@
                   "description": "Artes · objecto: DeLorean DMC (Giugiaro, Dunmurry, 1981–82) — o carro real primeiro; a máquina de De Volta para o Futuro é camada de ficção, não origem."
                 },
                 {
+                  "label": "Inspeção: How Bizarre — OMC e o ofício de nomear o estranho",
+                  "tileLabel": "Inspeção: How Bizarre — OMC e o…",
+                  "href": "/posts/post-inspecao-arte-how-bizarre.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-how-bizarre",
+                  "description": "Artes · canção 1995: OMC (Ōtara) — How Bizarre mistura hip-hop e mariachi; elo BudGanja com criatividade, alegria e caminho — nomear o bizarro sem apagar o bairro."
+                },
+                {
                   "label": "Inspeção: Questão de Tempo — o filme de 2013 e o destaque para o autor",
                   "tileLabel": "Inspeção: Questão de Tempo — o …",
                   "href": "/posts/post-inspecao-filme-questao-de-tempo.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-filme-questao-de-tempo",
                   "description": "Artes · cinema: Questão de Tempo / About Time (2013) — guião e realização de Richard Curtis; sem livro prévio, o filme é o texto. Destaque para o autor; elenco com crédito, não como centro."
+                },
+                {
+                  "label": "Inspeção: O Alquimista — o livro de Paulo Coelho e a Lenda Pessoal",
+                  "tileLabel": "Inspeção: O Alquimista — o livr…",
+                  "href": "/posts/post-inspecao-arte-o-alquimista.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-o-alquimista",
+                  "description": "Artes: O Alquimista (1988) — parábola de viagem de Paulo Coelho; Lenda Pessoal, omens e tesouro. Autor em Pessoas. Alquimia = metáfora, não protocolo."
                 },
                 {
                   "label": "Inspeção: Um Sonho de Liberdade — a novela de King e o filme de 1994",

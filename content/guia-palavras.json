@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T16:18:18.070Z",
+  "updatedAt": "2026-08-19T16:45:26.993Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -240,6 +240,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-figura-alvares-de-azevedo.html"
+    },
+    {
+      "id": "o-alquimista",
+      "word": "O Alquimista",
+      "simple": "Romance de Paulo Coelho (1988) — parábola da Lenda Pessoal; no site, ficha em Artes (livro primeiro), autor em Pessoas.",
+      "simpleEn": "Paulo Coelho novel (1988) — Personal Legend parable; on the site, Arts sheet (book first), author in People.",
+      "simpleEs": "Novela de Paulo Coelho (1988) — parábola de la Leyenda Personal; en el sitio, ficha en Artes (libro primero), autor en Personas.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-o-alquimista.html"
     },
     {
       "id": "anandamida",
@@ -3030,6 +3040,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-patrao.html"
+    },
+    {
+      "id": "paulo-coelho",
+      "word": "Paulo Coelho",
+      "simple": "Romancista e letrista brasileiro (n. 1947); no site, ficha em Pessoas com elo ao livro O Alquimista. Distinto do léxico animal «coelho».",
+      "simpleEn": "Brazilian novelist and lyricist (b. 1947); on the site, People sheet linked to The Alchemist. Distinct from the lab word «coelho» (rabbit).",
+      "simpleEs": "Novelista y letrista brasileño (n. 1947); en el sitio, ficha en Personas con vínculo a O Alquimista. Distinto del léxico animal «coelho».",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-paulo-coelho.html"
     },
     {
       "id": "pattern",
