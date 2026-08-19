@@ -6,72 +6,153 @@ body[data-page="vida"],
 body[data-page="apresentacao-unifesp"],
 .vida-page {
     --vida-gold: #dfc262;
-    --vida-leaf: #7cb342;
-    --vida-leaf-deep: #3d6b28;
-    --vida-soil: #5c4030;
-    --vida-cream: #f4edd8;
-    --vida-ink: #12180e;
-    --vida-panel: rgba(14, 20, 10, 0.78);
+    --vida-ice: #c8f4ff;
+    --vida-leaf: #6ee7c5;
+    --vida-leaf-deep: #3db8c8;
+    --vida-soil: #0a2230;
+    --vida-cream: #f4f8fc;
+    --vida-ink: #071018;
+    --vida-panel: rgba(8, 22, 32, 0.72);
 }
 
 body[data-page="vida"],
 body[data-page="apresentacao-unifesp"] {
-    background:
-        radial-gradient(ellipse 90% 60% at 15% 10%, rgba(212, 175, 55, 0.14), transparent 55%),
-        radial-gradient(ellipse 70% 50% at 90% 20%, rgba(124, 179, 66, 0.12), transparent 50%),
-        radial-gradient(ellipse 60% 40% at 50% 100%, rgba(90, 64, 48, 0.35), transparent 55%),
-        #0e140a;
+    background: var(--color-bg, #071018);
 }
 
 .vida-page {
     position: relative;
     isolation: isolate;
     width: 100%;
-    max-width: min(920px, 100%);
+    max-width: none;
     margin: 0 auto;
     padding: 0 0 clamp(2.5rem, 6vw, 4rem);
     font-family: "Nunito", system-ui, sans-serif;
     overflow-x: clip;
 }
 
+.vida-flow {
+    position: relative;
+    z-index: 1;
+    width: min(1080px, calc(100% - 2 * var(--space-page-x, 1.25rem)));
+    margin: 0 auto;
+}
+
 .vida-atmosphere {
     position: absolute;
-    top: -2rem;
+    top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: min(72vh, 640px);
+    height: min(88vh, 760px);
     pointer-events: none;
     z-index: 0;
     overflow: hidden;
     background:
-        radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.18), transparent 40%),
-        radial-gradient(circle at 80% 20%, rgba(124, 179, 66, 0.16), transparent 42%),
-        linear-gradient(180deg, rgba(20, 32, 14, 0.2), transparent 70%);
-    animation: vida-breathe 10s ease-in-out infinite alternate;
+        radial-gradient(ellipse 70% 50% at 18% 12%, rgba(110, 231, 197, 0.16), transparent 58%),
+        radial-gradient(ellipse 50% 40% at 88% 8%, rgba(94, 200, 255, 0.14), transparent 52%);
 }
 
-.vida-atmosphere::after {
+.vida-hero {
+    position: relative;
+    z-index: 1;
+    isolation: isolate;
+    min-height: min(88vh, 760px);
+    margin: 0 0 clamp(1.5rem, 4vw, 2.5rem);
+    display: grid;
+    align-items: end;
+    overflow: hidden;
+}
+
+.vida-hero-art {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.vida-hero-art::after {
     content: "";
     position: absolute;
     inset: 0;
-    background-image:
-        radial-gradient(circle at 12% 70%, rgba(124, 179, 66, 0.2) 0 2px, transparent 3px),
-        radial-gradient(circle at 70% 40%, rgba(223, 194, 98, 0.22) 0 1.5px, transparent 3px),
-        radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.08) 0 1px, transparent 2px);
-    background-size: 180px 180px, 140px 140px, 90px 90px;
-    opacity: 0.7;
-    animation: vida-drift 28s linear infinite;
+    background:
+        linear-gradient(180deg, rgba(7, 16, 24, 0.18) 0%, rgba(7, 16, 24, 0.08) 28%, rgba(7, 16, 24, 0.55) 68%, rgba(7, 16, 24, 0.96) 100%),
+        linear-gradient(90deg, rgba(7, 16, 24, 0.35) 0%, transparent 42%);
+    pointer-events: none;
 }
 
-@keyframes vida-breathe {
-    from { opacity: 0.75; transform: scale(1); }
-    to { opacity: 1; transform: scale(1.03); }
+.vida-hero-art img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 28%;
+    transform: scale(1.04);
 }
 
-@keyframes vida-drift {
-    from { background-position: 0 0, 0 0, 0 0; }
-    to { background-position: 40px 20px, -30px 40px, 20px -30px; }
+.vida-hero-copy {
+    position: relative;
+    z-index: 1;
+    width: min(1080px, calc(100% - 2 * var(--space-page-x, 1.25rem)));
+    margin: 0 auto;
+    padding: clamp(5.5rem, 12vw, 8rem) 0 clamp(2rem, 5vw, 3.25rem);
+    text-align: left;
+}
+
+.vida-hero-brand {
+    margin: 0 0 0.7rem;
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--vida-ice);
+}
+
+.vida-hero h1 {
+    margin: 0;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(3.2rem, 12vw, 7.2rem);
+    font-weight: 700;
+    letter-spacing: -0.045em;
+    line-height: 0.92;
+    background: linear-gradient(180deg, #f7fbff 0%, #7dffd0 52%, #7eb8ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.vida-hero-sub {
+    margin: 1.1rem 0 0;
+    max-width: 38ch;
+    font-size: clamp(1.02rem, 2.2vw, 1.18rem);
+    line-height: 1.5;
+    color: rgba(244, 248, 252, 0.88);
+}
+
+.vida-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: flex-start;
+    margin-top: 1.6rem;
+}
+
+.vida-hero-actions .botao {
+    min-width: 10rem;
+}
+
+.vida-hero-actions .botao-home--secondary {
+    background: rgba(7, 16, 24, 0.45);
+    border: 1px solid rgba(200, 244, 255, 0.35);
+    color: #f4f8fc;
+    box-shadow: none;
+}
+
+.vida-hero-actions .botao-home--secondary:hover {
+    background: rgba(10, 34, 48, 0.7);
+    border-color: rgba(126, 232, 210, 0.5);
+    color: #f4f8fc;
 }
 
 @keyframes vida-fade-up {
@@ -79,81 +160,10 @@ body[data-page="apresentacao-unifesp"] {
     to { opacity: 1; transform: translateY(0); }
 }
 
-.vida-hero {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    padding: clamp(2.5rem, 8vw, 4.5rem) var(--space-page-x, 1.25rem) 1.5rem;
-    min-height: min(78vh, 620px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    animation: vida-fade-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-.vida-hero-brand {
-    margin: 0 0 0.6rem;
-    font-size: 0.78rem;
-    font-weight: 800;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--vida-gold);
-}
-
-.vida-hero h1 {
-    margin: 0;
-    font-family: "Fraunces", Georgia, serif;
-    font-size: clamp(2.4rem, 8vw, 3.75rem);
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    line-height: 1.05;
-    background: linear-gradient(180deg, #fef9d7 0%, #dfc262 48%, #7cb342 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.vida-hero-sub {
-    margin: 1rem auto 0;
-    max-width: 36ch;
-    font-size: 1.05rem;
-    line-height: 1.5;
-    color: rgba(244, 237, 216, 0.88);
-}
-
-.vida-hero-art {
-    margin: 1.5rem 0 0;
-    width: min(100%, 52rem);
-    border-radius: 18px;
-    overflow: hidden;
-    border: 1px solid rgba(212, 175, 55, 0.28);
-    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.4);
-    animation: vida-fade-up 0.85s 0.06s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-.vida-hero-art img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.vida-hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    justify-content: center;
-    margin-top: 1.75rem;
-}
-
-.vida-hero-actions .botao {
-    min-width: 10rem;
-}
-
 .vida-section {
     position: relative;
     z-index: 1;
-    padding: clamp(1.75rem, 4vw, 2.5rem) var(--space-page-x, 1.25rem);
+    padding: clamp(1.75rem, 4vw, 2.5rem) 0;
     animation: vida-fade-up 0.8s 0.1s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -173,29 +183,31 @@ body[data-page="apresentacao-unifesp"] {
 .vida-section-lead {
     margin: 0 0 1.5rem;
     max-width: 48ch;
-    color: rgba(244, 237, 216, 0.72);
+    color: rgba(244, 248, 252, 0.68);
     line-height: 1.5;
 }
 
 .vida-note {
     margin: 0 0 1.5rem;
-    padding: 0.85rem 1.1rem;
-    border-left: 3px solid var(--vida-gold);
-    background: rgba(212, 175, 55, 0.08);
-    border-radius: 0 12px 12px 0;
-    color: rgba(244, 237, 216, 0.85);
+    padding: 0.95rem 1.2rem;
+    border-left: 3px solid var(--vida-leaf);
+    background: rgba(110, 231, 197, 0.08);
+    border-radius: 0 16px 16px 0;
+    color: rgba(244, 248, 252, 0.85);
     font-size: 0.92rem;
     line-height: 1.45;
 }
 
 .vida-connect {
     margin: 0 0 1.75rem;
-    padding: 1.35rem 1.4rem 1.45rem;
-    border-radius: 18px;
-    border: 1px solid rgba(223, 194, 98, 0.28);
+    padding: 1.45rem 1.5rem 1.55rem;
+    border-radius: 22px;
+    border: 1px solid rgba(126, 232, 210, 0.22);
     background:
-        linear-gradient(145deg, rgba(36, 48, 22, 0.95), rgba(12, 16, 10, 0.96));
-    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.32);
+        linear-gradient(165deg, rgba(12, 32, 44, 0.88), rgba(7, 16, 24, 0.94));
+    box-shadow:
+        0 1px 0 rgba(244, 248, 252, 0.06) inset,
+        0 18px 44px rgba(0, 16, 28, 0.28);
 }
 
 .vida-connect-eyebrow {
@@ -213,17 +225,16 @@ body[data-page="apresentacao-unifesp"] {
     margin: 0 0 1.75rem;
     padding: clamp(1.6rem, 4vw, 2.35rem) 1.4rem;
     text-align: center;
-    border-radius: 22px;
-    border: 1px solid rgba(223, 194, 98, 0.45);
+    border-radius: 24px;
+    border: 1px solid rgba(126, 232, 210, 0.28);
     background:
-        radial-gradient(ellipse 80% 90% at 50% 0%, rgba(223, 194, 98, 0.22), transparent 55%),
-        radial-gradient(ellipse 70% 80% at 50% 100%, rgba(124, 179, 66, 0.16), transparent 50%),
-        linear-gradient(160deg, rgba(42, 56, 24, 0.98), rgba(10, 14, 8, 0.98));
+        radial-gradient(ellipse 80% 90% at 50% 0%, rgba(110, 231, 197, 0.16), transparent 55%),
+        radial-gradient(ellipse 70% 80% at 50% 100%, rgba(94, 200, 255, 0.1), transparent 50%),
+        linear-gradient(160deg, rgba(12, 32, 44, 0.94), rgba(7, 16, 24, 0.96));
     box-shadow:
-        0 0 0 1px rgba(223, 194, 98, 0.08) inset,
-        0 18px 48px rgba(0, 0, 0, 0.38);
+        0 1px 0 rgba(244, 248, 252, 0.08) inset,
+        0 18px 48px rgba(0, 16, 28, 0.32);
     overflow: hidden;
-    animation: vida-mantra-glow 5.5s ease-in-out infinite alternate;
 }
 
 .vida-mantra-banner::before,
@@ -233,7 +244,7 @@ body[data-page="apresentacao-unifesp"] {
     left: 50%;
     width: min(12rem, 48%);
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--vida-gold), transparent);
+    background: linear-gradient(90deg, transparent, var(--vida-leaf), transparent);
     opacity: 0.7;
     pointer-events: none;
 }
@@ -271,7 +282,7 @@ body[data-page="apresentacao-unifesp"] {
 .vida-mantra-link {
     display: inline-block;
     color: var(--vida-cream);
-    background: linear-gradient(120deg, #fff6d0 0%, var(--vida-gold) 42%, #b8e07a 100%);
+    background: linear-gradient(120deg, #f7fbff 0%, #7dffd0 42%, #dfc262 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -302,27 +313,6 @@ body[data-page="apresentacao-unifesp"] {
 .vida-mantra-sub a:focus-visible {
     text-decoration: underline;
     text-underline-offset: 0.15em;
-}
-
-@keyframes vida-mantra-glow {
-    from {
-        box-shadow:
-            0 0 0 1px rgba(223, 194, 98, 0.08) inset,
-            0 18px 48px rgba(0, 0, 0, 0.38),
-            0 0 28px rgba(223, 194, 98, 0.08);
-    }
-    to {
-        box-shadow:
-            0 0 0 1px rgba(223, 194, 98, 0.16) inset,
-            0 22px 56px rgba(0, 0, 0, 0.42),
-            0 0 42px rgba(124, 179, 66, 0.18);
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .vida-mantra-banner {
-        animation: none;
-    }
 }
 
 .vida-connect h2 {
@@ -366,19 +356,19 @@ body[data-page="apresentacao-unifesp"] {
 }
 
 .vida-story-beat {
-    padding: 1.15rem 1.25rem;
-    border-radius: 18px;
-    border: 1px solid rgba(124, 179, 66, 0.22);
+    padding: 1.2rem 1.3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(126, 232, 210, 0.18);
     background:
-        linear-gradient(155deg, rgba(28, 40, 18, 0.92), rgba(12, 16, 10, 0.94));
-    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.28);
+        linear-gradient(155deg, rgba(12, 32, 44, 0.9), rgba(7, 16, 24, 0.94));
+    box-shadow: 0 12px 36px rgba(0, 16, 28, 0.22);
     transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.28s ease;
 }
 
 @media (hover: hover) and (pointer: fine) {
     .vida-story-beat:hover {
         transform: translateY(-3px);
-        border-color: rgba(223, 194, 98, 0.4);
+        border-color: rgba(126, 232, 210, 0.45);
     }
 }
 
@@ -386,12 +376,12 @@ body[data-page="apresentacao-unifesp"] {
     margin: 0 0 0.45rem;
     font-family: "Fraunces", Georgia, serif;
     font-size: 1.2rem;
-    color: var(--vida-gold);
+    color: var(--vida-ice);
 }
 
 .vida-story-beat p {
     margin: 0;
-    color: rgba(244, 237, 216, 0.9);
+    color: rgba(244, 248, 252, 0.88);
     line-height: 1.55;
     font-size: 1.02rem;
 }
@@ -478,9 +468,9 @@ body[data-page="apresentacao-unifesp"] {
 
 .vida-lesson {
     padding: 1rem 1.05rem;
-    border-radius: 14px;
-    border: 1px solid rgba(212, 175, 55, 0.2);
-    background: rgba(20, 28, 14, 0.85);
+    border-radius: 16px;
+    border: 1px solid rgba(126, 232, 210, 0.18);
+    background: rgba(10, 26, 36, 0.78);
 }
 
 .vida-lesson strong {
@@ -514,8 +504,8 @@ body[data-page="apresentacao-unifesp"] {
     align-items: start;
     padding: 0.85rem 1rem;
     border-radius: 14px;
-    background: rgba(18, 26, 12, 0.9);
-    border: 1px solid rgba(124, 179, 66, 0.18);
+    background: rgba(10, 26, 36, 0.82);
+    border: 1px solid rgba(126, 232, 210, 0.16);
 }
 
 .vida-phases li::before {
@@ -528,7 +518,7 @@ body[data-page="apresentacao-unifesp"] {
     font-weight: 800;
     font-size: 0.9rem;
     color: var(--vida-ink);
-    background: linear-gradient(145deg, #dfc262, #7cb342);
+    background: linear-gradient(145deg, #7dffd0, #5ec8ff);
 }
 
 .vida-phases strong {
@@ -558,9 +548,9 @@ body[data-page="apresentacao-unifesp"] {
     gap: 0.35rem;
     padding: 1rem 1.1rem;
     border-radius: 16px;
-    border: 1px solid rgba(223, 194, 98, 0.28);
+    border: 1px solid rgba(126, 232, 210, 0.22);
     background:
-        linear-gradient(160deg, rgba(223, 194, 98, 0.1), rgba(18, 26, 12, 0.92));
+        linear-gradient(160deg, rgba(110, 231, 197, 0.1), rgba(7, 16, 24, 0.92));
     color: inherit;
     font: inherit;
     transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
@@ -663,18 +653,50 @@ body[data-page="apresentacao-unifesp"] {
     text-decoration: none;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 700px) {
     .vida-hero {
-        min-height: auto;
-        padding-top: 2rem;
+        min-height: min(78vh, 560px);
+    }
+
+    .vida-hero-copy {
+        text-align: center;
+        padding-top: clamp(4.5rem, 18vw, 6.5rem);
+    }
+
+    .vida-hero-sub {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .vida-hero-actions {
         width: 100%;
+        justify-content: center;
     }
 
     .vida-hero-actions .botao {
         flex: 1 1 100%;
+    }
+}
+
+body[data-page="vida"] #main-content.conteudo {
+    max-width: none;
+}
+
+body[data-page="vida"] #site-header {
+    background: linear-gradient(180deg, rgba(7, 16, 24, 0.42), rgba(7, 16, 24, 0.06));
+    border-bottom-color: transparent;
+    box-shadow: none;
+}
+
+body[data-page="vida"] #site-header.is-scrolled {
+    background: rgba(7, 16, 24, 0.86);
+    border-bottom-color: var(--color-header-border);
+    box-shadow: 0 10px 32px rgba(0, 16, 28, 0.42);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .vida-hero-art img {
+        transform: none;
     }
 }
 
