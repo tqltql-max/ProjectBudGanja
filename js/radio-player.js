@@ -169,6 +169,11 @@
     radio: svg(
       '<path d="M3.24 6.15C2.51 6.43 2 7.17 2 8v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8c0-1.11-.89-2-2-2H8.3l8.26-3.34L15.88 1 3.24 6.15zM7 20c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm13-8h-2v-2h-2v2H4V8h16v4z"/>'
     ),
+    boat: svg(
+      '<path d="M3.1 16.4h17.8c.45 0 .72.52.43.88C20.3 18.7 18.4 19.7 16 19.7H8c-2.4 0-4.3-1-5.33-2.42-.29-.36-.02-.88.43-.88z"/>' +
+      '<path d="M12.15 3.15c.28-.4.85-.2.85.32V15.6H7.05c-.5 0-.75-.6-.42-.95l5.52-11.5z"/>' +
+      '<path d="M13.35 6.2 19.1 15.6h-5.75V6.55c0-.52.6-.78.99-.35z"/>'
+    ),
     close: svg('<path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>'),
     expand: svg('<path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>'),
     share: svg('<path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/>'),
@@ -191,6 +196,9 @@
       ICONS.radio +
       '<span class="radio-mini-fab-dot" aria-hidden="true"></span>' +
       '</button>' +
+      '<a class="radio-mini-boat" href="/inverno/" data-radio-boat>' +
+      ICONS.boat +
+      '</a>' +
       '<button type="button" class="radio-mini-skip" data-radio-fab-next>' +
       ICONS.next +
       '</button>' +
@@ -235,6 +243,7 @@
     var artistEl = root.querySelector('[data-radio-artist]');
     var homeLink = root.querySelector('[data-radio-home]');
     var btnFab = root.querySelector('[data-radio-fab]');
+    var btnBoat = root.querySelector('[data-radio-boat]');
     var btnFabNext = root.querySelector('[data-radio-fab-next]');
     if (homeLink && meta.homeHref) homeLink.setAttribute('href', meta.homeHref);
     var openLink = root.querySelector('[data-radio-open]');
@@ -311,6 +320,10 @@
       if (homeLink) homeLink.textContent = radioLabel();
       if (btnPrev) btnPrev.setAttribute('aria-label', tr('radio.prev', 'Faixa anterior'));
       if (btnNext) btnNext.setAttribute('aria-label', tr('radio.next', 'Faixa seguinte'));
+      if (btnBoat) {
+        btnBoat.setAttribute('aria-label', tr('radio.boat', 'Barquinho — Bom dia, Inverno'));
+        btnBoat.setAttribute('title', tr('radio.boat', 'Barquinho — Bom dia, Inverno'));
+      }
       if (btnFabNext) {
         btnFabNext.setAttribute('aria-label', tr('radio.next', 'Faixa seguinte'));
         btnFabNext.setAttribute('title', tr('radio.next', 'Faixa seguinte'));

@@ -9175,6 +9175,11 @@ body[data-page="apresentacao-unifesp"] .apresentacao-ask .botao[download] {
         margin-left: 0;
     }
 
+    #site-header .header-cluster--community-lang .radio-mini--header .radio-mini-boat {
+        height: 100%;
+        color: #f5e6b8;
+    }
+
     #site-header .header-cluster--community-lang .radio-mini--header.is-playing .radio-mini-fab,
     #site-header .header-cluster--community-lang .radio-mini--header.is-playing .radio-mini-skip {
         border: none;
@@ -9187,6 +9192,11 @@ body[data-page="apresentacao-unifesp"] .apresentacao-ask .botao[download] {
     #site-header .header-cluster--community-lang .radio-mini--header .radio-mini-skip:hover,
     #site-header .header-cluster--community-lang .radio-mini--header .radio-mini-skip:focus-visible {
         background: rgba(212, 175, 55, 0.18);
+    }
+
+    #site-header .header-cluster--community-lang .radio-mini--header .radio-mini-boat:hover,
+    #site-header .header-cluster--community-lang .radio-mini--header .radio-mini-boat:focus-visible {
+        color: #ffe9a0;
     }
 
     #site-header .header-cluster--community-lang .header-plants-link,
@@ -11114,6 +11124,52 @@ html[data-theme="light"] .botao-google {
     color: inherit;
     background: transparent;
     border: 0;
+}
+
+.radio-mini-boat {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 22px;
+    height: 34px;
+    margin: 0 1px;
+    padding: 0;
+    color: #f5e6b8;
+    text-decoration: none;
+}
+
+.radio-mini--header.radio-mini--toggle .radio-mini-boat {
+    display: inline-flex;
+}
+
+.radio-mini-boat svg {
+    width: 18px;
+    height: 18px;
+    animation: radio-mini-boat-bob 2.8s ease-in-out infinite;
+}
+
+.radio-mini-boat:hover,
+.radio-mini-boat:focus-visible {
+    color: #ffe9a0;
+    outline: none;
+}
+
+.radio-mini-boat:focus-visible svg {
+    outline: var(--focus-ring);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+@keyframes radio-mini-boat-bob {
+    0%, 100% { transform: translateY(1px) rotate(-8deg); }
+    50% { transform: translateY(-1.5px) rotate(8deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .radio-mini-boat svg {
+        animation: none;
+    }
 }
 
 .radio-mini--header.radio-mini--toggle .radio-mini-skip {
