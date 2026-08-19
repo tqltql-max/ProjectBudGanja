@@ -37,7 +37,12 @@
     tx: 0,
     ty: 0,
     currentSrc: '',
-    wrapping: false
+    wrapping: false,
+    rush: false,
+    abductHit: null,
+    abductEl: null,
+    pendingAbduct: null,
+    abductHold: false
   };
 
   function t(key, fallback) {
@@ -296,21 +301,133 @@
   }
 
   function wordAtPointer(clientX, clientY) {
+    var hit = wordHitAt(clientX, clientY);
+    if (!hit || !hit.word) return '';
+    var g = glossary();
+    if (g && g.findEntry(hit.word)) return hit.word;
+    return '';
+  }
+
+  function fallbackRect(clientX, clientY) {
+    return { left: clientX - 18, top: clientY - 10, width: 36, height: 18 };
+  }
+
+  function wordHitAt(clientX, clientY) {
     var hit = document.elementFromPoint(clientX, clientY);
     if (hit && hit.closest) {
       var wrapped = hit.closest('.learn-word, .site-drone-emotion');
-      if (wrapped) return wrapped.getAttribute('data-learn-src') || wrapped.textContent || '';
-      if (shouldSkipNode(hit)) return '';
+      if (wrapped) {
+        return {
+          word: (wrapped.getAttribute('data-learn-src') || wrapped.textContent || '').trim(),
+          rect: wrapped.getBoundingClientRect()
+        };
+      }
+      if (shouldSkipNode(hit)) return null;
     }
     var range = rangeFromPoint(clientX, clientY);
-    if (!range || !range.startContainer || range.startContainer.nodeType !== 3) return '';
-    if (shouldSkipNode(range.startContainer)) return '';
+    if (!range || !range.startContainer || range.startContainer.nodeType !== 3) return null;
+    if (shouldSkipNode(range.startContainer)) return null;
     var text = range.startContainer.nodeValue || '';
     var bounds = wordBounds(text, range.startOffset);
-    if (!bounds) return '';
-    var g = glossary();
-    if (!g || !g.findEntry(bounds.word)) return '';
-    return bounds.word;
+    if (!bounds) return null;
+    var wordRange = document.createRange();
+    try {
+      wordRange.setStart(range.startContainer, bounds.start);
+      wordRange.setEnd(range.startContainer, bounds.end);
+    } catch (e) {
+      return { word: bounds.word, rect: fallbackRect(clientX, clientY) };
+    }
+    var rect = wordRange.getBoundingClientRect();
+    if (!rect.width && !rect.height) rect = fallbackRect(clientX, clientY);
+    return { word: bounds.word, rect: rect };
+  }
+
+  function clearAbductGhost() {
+    if (state.abductEl && state.abductEl.parentNode) {
+      state.abductEl.parentNode.removeChild(state.abductEl);
+    }
+    state.abductEl = null;
+  }
+
+  function spawnAbductGhost(word, rect, emotion) {
+    clearAbductGhost();
+    if (!rect) return;
+    var el = document.createElement('span');
+    el.className = 'site-drone-abduct' + (emotion ? ' site-drone-abduct--' + emotion : '');
+    el.textContent = word;
+    el.style.left = Math.round(rect.left) + 'px';
+    el.style.top = Math.round(rect.top) + 'px';
+    el.style.minWidth = Math.max(8, Math.round(rect.width)) + 'px';
+    el.style.height = Math.max(14, Math.round(rect.height)) + 'px';
+    el.style.fontSize = Math.max(13, Math.round(rect.height * 0.88)) + 'px';
+    var cx = rect.left + rect.width / 2;
+    var cy = rect.top + rect.height / 2;
+    var dx = state.x + SIZE * 0.5 - cx;
+    var dy = state.y + SIZE * 0.52 - cy;
+    el.style.setProperty('--abduct-dx', Math.round(dx) + 'px');
+    el.style.setProperty('--abduct-dy', Math.round(dy) + 'px');
+    document.body.appendChild(el);
+    state.abductEl = el;
+    el.addEventListener('animationend', function () {
+      if (el.parentNode) el.parentNode.removeChild(el);
+      if (state.abductEl === el) state.abductEl = null;
+    });
+  }
+
+  function finishAbduct() {
+    state.rush = false;
+    state.caught = true;
+    state.abductHold = true;
+    var hit = state.abductHit;
+    if (hit && hit.word) {
+      if (!state.reduced) spawnAbductGhost(hit.word, hit.rect, emotionOf(hit.word));
+      var info = meaningOf(hit.word);
+      if (!info) {
+        info = {
+          src: hit.word,
+          lang: targetLang(),
+          translation: '',
+          gloss: '',
+          mundane: '',
+          category: '',
+          href: '',
+          tone: '',
+          emotion: emotionOf(hit.word)
+        };
+      }
+      state.currentSrc = hit.word;
+      fillTip(info);
+    }
+    global.setTimeout(function () {
+      if (state.drone) state.drone.classList.remove('is-abducting');
+      state.caught = false;
+      state.abductHold = false;
+    }, 880);
+  }
+
+  function abductAt(clientX, clientY) {
+    if (!state.drone || !state.on) return;
+    var hit = wordHitAt(clientX, clientY);
+    var next = clampToPad(clientX - SIZE * 0.28, clientY - SIZE * 0.95);
+    state.rush = true;
+    state.following = true;
+    state.caught = false;
+    state.paused = false;
+    state.tx = next.x;
+    state.ty = next.y;
+    state.abductHit = hit;
+    state.drone.classList.add('is-abducting', 'is-lit');
+    if (state.reduced) {
+      state.x = next.x;
+      state.y = next.y;
+      applyPose();
+      finishAbduct();
+      return;
+    }
+    if (!state.flying) {
+      state.flying = true;
+      global.requestAnimationFrame(tick);
+    }
   }
 
   function unwrapOwnMarks() {
@@ -420,15 +537,19 @@
   function tick() {
     if (!state.on || !state.flying) return;
     global.requestAnimationFrame(tick);
-    if (state.paused || state.caught || state.reduced) return;
-    var ease = state.following ? 0.09 : 0.018;
+    if ((state.paused || state.caught) && !state.rush) return;
+    if (state.reduced && !state.rush) return;
+    var ease = state.rush ? 0.26 : (state.following ? 0.09 : 0.018);
     state.x += (state.tx - state.x) * ease;
     state.y += (state.ty - state.y) * ease;
     applyPose();
+    if (state.rush && Math.hypot(state.tx - state.x, state.ty - state.y) < 12) {
+      finishAbduct();
+    }
   }
 
   function aimAtPointer(clientX, clientY) {
-    if (!state.on || state.reduced) return;
+    if (!state.on || state.reduced || state.rush || state.abductHold) return;
     state.following = true;
     var near = Math.hypot(clientX - (state.x + SIZE / 2), clientY - (state.y + SIZE / 2)) < 58;
     state.caught = near || state.paused;
@@ -492,9 +613,14 @@
   function dimDrone() {
     fillTip(null);
     state.currentSrc = '';
+    state.rush = false;
+    state.abductHit = null;
+    state.pendingAbduct = null;
+    state.abductHold = false;
+    clearAbductGhost();
     unwrapOwnMarks();
     if (state.drone) {
-      state.drone.classList.remove('is-lit');
+      state.drone.classList.remove('is-lit', 'is-abducting');
       state.drone.setAttribute('aria-pressed', 'false');
     }
   }
@@ -578,6 +704,11 @@
       state.flying = true;
       applyPose();
       if (!state.reduced) global.requestAnimationFrame(tick);
+      if (state.pendingAbduct) {
+        var pending = state.pendingAbduct;
+        state.pendingAbduct = null;
+        abductAt(pending.x, pending.y);
+      }
       try {
         global.dispatchEvent(new CustomEvent('budganja:drone-change', { detail: { on: true } }));
       } catch (err) { /* ignore */ }
@@ -596,6 +727,22 @@
     }
   }
 
+  function onPageClick(event) {
+    if (event.button !== 0) return;
+    if (!state.drone || !state.drone.isConnected) return;
+    var el = event.target;
+    if (!el || !el.closest) return;
+    if (el.closest('[data-drone-toggle], #site-drone, .site-drone, a, button, input, textarea, select, label, .mobile-menu, #site-header, #site-footer, .learn-toolbar, .site-drone-tip')) {
+      return;
+    }
+    if (!state.on) {
+      state.pendingAbduct = { x: event.clientX, y: event.clientY };
+      setOn(true);
+      return;
+    }
+    abductAt(event.clientX, event.clientY);
+  }
+
   function onToggleClick(event) {
     var btn = event.target && event.target.closest ? event.target.closest('[data-drone-toggle]') : null;
     if (!btn) return;
@@ -606,6 +753,7 @@
   function boot() {
     state.reduced = !!(global.matchMedia && global.matchMedia('(prefers-reduced-motion: reduce)').matches);
     document.addEventListener('click', onToggleClick);
+    document.addEventListener('click', onPageClick);
     document.addEventListener('pointermove', onPointerMove, { passive: true });
     document.addEventListener('pointerdown', onPointerDown, { passive: true });
     document.documentElement.addEventListener('mouseleave', function () {

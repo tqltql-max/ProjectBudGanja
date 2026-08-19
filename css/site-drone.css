@@ -63,6 +63,60 @@
     animation: site-drone-light-pulse 1.7s ease-in-out infinite;
 }
 
+.site-drone.is-abducting .site-drone-light {
+    opacity: 1;
+    height: 13.5rem;
+    animation: site-drone-light-pulse 0.55s ease-in-out infinite;
+}
+
+.site-drone-abduct {
+    position: fixed;
+    z-index: 81;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 0.12em;
+    pointer-events: none;
+    font-family: inherit;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #ffe9a0;
+    white-space: nowrap;
+    text-shadow: 0 0 10px rgba(126, 200, 255, 0.85);
+    animation: site-drone-abduct 0.72s ease-in forwards;
+}
+
+.site-drone-abduct--alegria { color: #f2d04b; }
+.site-drone-abduct--tristeza { color: #8bb4ff; }
+.site-drone-abduct--raiva { color: #ff8a7a; }
+.site-drone-abduct--medo { color: #c9b0ef; }
+.site-drone-abduct--nojinho { color: #9fd46a; }
+
+@keyframes site-drone-abduct {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+        filter: brightness(1.1);
+    }
+    62% {
+        transform: translate(calc(var(--abduct-dx, 0px) * 0.72), calc(var(--abduct-dy, 0px) * 0.72)) scale(0.78);
+        opacity: 1;
+        filter: brightness(1.45);
+    }
+    100% {
+        transform: translate(var(--abduct-dx, 0px), var(--abduct-dy, 0px)) scale(0.18);
+        opacity: 0;
+        filter: brightness(2);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-drone-abduct {
+        animation: none;
+        display: none;
+    }
+}
+
 @keyframes site-drone-light-pulse {
     0%, 100% { opacity: 0.78; }
     50% { opacity: 1; }
@@ -361,5 +415,9 @@ body.site-drone-ready #inverno-drone {
         transform: none;
         right: 0;
         bottom: 110%;
+    }
+    .site-drone-abduct {
+        animation: none;
+        display: none;
     }
 }
