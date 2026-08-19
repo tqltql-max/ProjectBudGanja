@@ -1252,6 +1252,22 @@ function filterAdminOnlyNav(items, authState) {
 function getSiteHubNav(authState) {
   const quick = [
       {
+        href: '/videos/',
+        icon: '▶',
+        label: i18n('nav.videos', 'Vídeos'),
+        tip: i18n('nav.quickVideosTip', 'Últimos vídeos do canal'),
+        prefixes: '/videos',
+        tone: 'videos'
+      },
+      {
+        href: '/radio/',
+        icon: '📻',
+        label: i18n('nav.radio', 'BudGanja Radio'),
+        tip: i18n('nav.quickRadioTip', 'Playlist BudGanja Radio'),
+        prefixes: '/radio',
+        tone: 'radio'
+      },
+      {
         href: '/plantas/',
         icon: '🌿',
         label: i18n('nav.plants', 'Plantas'),
@@ -1315,14 +1331,6 @@ function getSiteHubNav(authState) {
         tip: i18n('nav.quickCalculatorsTip', 'VPD, pH, EC, luxímetro e mais'),
         prefixes: '/calculadoras',
         tone: 'ferramentas'
-      },
-      {
-        href: '/videos/',
-        icon: '▶',
-        label: i18n('nav.videos', 'Vídeos'),
-        tip: i18n('nav.quickVideosTip', 'Últimos vídeos do canal'),
-        prefixes: '/videos',
-        tone: 'videos'
       },
       {
         href: '/jogos/',
