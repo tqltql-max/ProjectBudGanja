@@ -733,6 +733,7 @@ const DEFAULT_SITE = {
     { label: 'Plantas', href: '/plantas/' },
     { label: 'Animais', href: '/animais/' },
     { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
+    { label: 'Cadernos de Engenharia', href: '/biblioteca/cadernos/' },
     { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
     { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
     { label: 'Vídeos', href: '/videos/' },
@@ -750,6 +751,7 @@ const DEFAULT_SITE = {
         { label: 'Plantas', href: '/plantas/' },
     { label: 'Animais', href: '/animais/' },
         { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
+        { label: 'Cadernos de Engenharia', href: '/biblioteca/cadernos/' },
         { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
         { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
         { label: 'Vídeos', href: '/videos/' },
@@ -1270,6 +1272,14 @@ function getSiteHubNav(authState) {
         tone: 'inspecoes'
       },
       {
+        href: '/biblioteca/cadernos/',
+        icon: '📓',
+        label: i18n('nav.cadernosEngenharia', 'Cadernos'),
+        tip: i18n('nav.quickCadernosTip', 'Cadernos de engenharia — um por matéria, método Cornell'),
+        prefixes: '/biblioteca/cadernos',
+        tone: 'inspecoes'
+      },
+      {
         href: '/biblioteca/',
         icon: '📚',
         label: i18n('nav.library', 'Biblioteca'),
@@ -1348,6 +1358,13 @@ function getSiteHubNav(authState) {
             icon: '🎓',
             label: i18n('nav.unifesp', 'Curso UNIFESP'),
             prefixes: '/biblioteca/unifesp',
+            tone: 'inspecoes'
+          },
+          {
+            href: '/biblioteca/cadernos/',
+            icon: '📓',
+            label: i18n('nav.cadernosEngenharia', 'Cadernos'),
+            prefixes: '/biblioteca/cadernos',
             tone: 'inspecoes'
           },
           {

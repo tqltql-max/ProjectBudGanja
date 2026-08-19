@@ -567,6 +567,7 @@
     comunidade: 'community',
     sorteios: 'giveaways',
     unifesp: 'unifesp',
+    'cadernos-engenharia': 'cadernosEngenharia',
     sobre: 'about',
     contato: 'contact',
     privacidade: 'privacy',

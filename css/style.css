@@ -13212,6 +13212,7 @@ a.palavras-duplo-word:focus-visible {
 
 .biblioteca-hub-card--inspecoes { --bib-accent: #85c1e9; --bib-soft: rgba(93, 173, 226, 0.14); }
 .biblioteca-hub-card--unifesp { --bib-accent: #bb8fce; --bib-soft: rgba(155, 89, 182, 0.14); }
+.biblioteca-hub-card--cadernos { --bib-accent: #c9a227; --bib-soft: rgba(201, 162, 39, 0.16); }
 .biblioteca-hub-card--palavras { --bib-accent: #f5b041; --bib-soft: rgba(243, 156, 18, 0.14); }
 .biblioteca-hub-card--pesquisas { --bib-accent: #5dade2; --bib-soft: rgba(52, 152, 219, 0.14); }
 .biblioteca-hub-card--plantas { --bib-accent: #58d68d; --bib-soft: rgba(39, 174, 96, 0.14); }
