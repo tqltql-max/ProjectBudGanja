@@ -1257,7 +1257,7 @@ function getSiteHubNav(authState) {
         label: i18n('nav.plants', 'Plantas'),
         tip: i18n('nav.quickPlantsTip', 'Catálogo de plantas fitoterápicas do Brasil'),
         prefixes: '/plantas',
-        tone: 'comunidade'
+        tone: 'plantas'
       },
       {
         href: '/animais/',
@@ -1265,7 +1265,7 @@ function getSiteHubNav(authState) {
         label: i18n('nav.animals', 'Animais'),
         tip: i18n('nav.quickAnimalsTip', 'Catálogo de animais: criação, companhia e derivados industriais'),
         prefixes: '/animais',
-        tone: 'comunidade'
+        tone: 'animais'
       },
       {
         href: '/fungos/',
@@ -1273,7 +1273,7 @@ function getSiteHubNav(authState) {
         label: i18n('nav.fungi', 'Fungos'),
         tip: i18n('nav.quickFungiTip', 'Catálogo de fungos: identificação e enquadramento — não é cultivo'),
         prefixes: '/fungos',
-        tone: 'comunidade'
+        tone: 'fungos'
       },
       {
         href: '/biblioteca/unifesp/',
@@ -1566,6 +1566,19 @@ function buildHeaderHTML(site, authState) {
     headerSearch +
     '</div>';
 
+  const headerBoat =
+    '<a href="/inverno/" class="header-quick-link header-quick-link--inverno header-quick-link--boat"' +
+    ' data-active-prefixes="/inverno"' +
+    ' data-tip="' + escapeNavText(i18n('nav.quickInvernoTip', 'O barco no gelo — Tamara e o ofício de ficar')) + '"' +
+    ' aria-label="' + escapeNavText(i18n('nav.inverno', 'Bom dia, Inverno')) + '"' +
+    ' title="' + escapeNavText(i18n('nav.inverno', 'Bom dia, Inverno')) + '">' +
+    '<span class="header-quick-link-icon" aria-hidden="true">' +
+    '<svg class="header-boat-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">' +
+    '<path d="M3.1 16.4h17.8c.45 0 .72.52.43.88C20.3 18.7 18.4 19.7 16 19.7H8c-2.4 0-4.3-1-5.33-2.42-.29-.36-.02-.88.43-.88z"/>' +
+    '<path d="M12.15 3.15c.28-.4.85-.2.85.32V15.6H7.05c-.5 0-.75-.6-.42-.95l5.52-11.5z"/>' +
+    '<path d="M13.35 6.2 19.1 15.6h-5.75V6.55c0-.52.6-.78.99-.35z"/>' +
+    '</svg></span></a>';
+
   return (
     '<a class="skip-link" href="#main-content">' + escapeNavText(i18n('common.skipLink', 'Ir para o conteúdo')) + '</a>' +
     '<nav id="primary-nav" class="primary-nav" aria-label="' + escapeNavText(i18n('common.mobileNav', 'Navegação principal')) + '">' +
@@ -1583,10 +1596,14 @@ function buildHeaderHTML(site, authState) {
     '</a></div>' +
     '</div>' +
     '<div id="header-radio-host" class="header-radio-host"></div>' +
+    '<span class="header-chrome-sep" aria-hidden="true"></span>' +
+    buildDesktopQuickNavHTML(authState) +
+    '<span class="header-chrome-sep header-chrome-sep--end" aria-hidden="true"></span>' +
     '<div class="header-right">' +
     '<div class="header-utilities">' +
     headerToolbar +
     '</div>' +
+    headerBoat +
     '<button type="button" class="header-quick-link header-quick-link--menu menu-toggle" aria-label="' + escapeNavText(i18n('common.menuOpen', 'Abrir menu')) + '" aria-expanded="false" aria-controls="mobile-menu">' +
     '<span class="header-quick-link-icon" aria-hidden="true">' +
     '<span class="menu-toggle-bars"><span></span><span></span><span></span></span>' +
@@ -2413,7 +2430,7 @@ function injectLayout(site, authState) {
       enhanceHoverTips(navPanel);
     }
     if (quickNav) {
-      markQuickNavActive(quickNav);
+      markQuickNavActive(headerContainer);
       enhanceHoverTips(quickNav);
     }
 
