@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T16:07:29.471Z",
+  "updatedAt": "2026-08-19T16:18:18.070Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -200,6 +200,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-arte-upside-down.html"
+    },
+    {
+      "id": "how-bizarre",
+      "word": "How Bizarre",
+      "simple": "Canção OMC (1995): nomear o bizarro da vida — génese em Ōtara; elo BudGanja com criatividade, alegria e caminho.",
+      "simpleEn": "OMC song (1995): naming life’s bizarre — genesis in Ōtara; BudGanja link to creativity, joy and path.",
+      "simpleEs": "Canción OMC (1995): nombrar lo bizarro de la vida — génesis en Ōtara; vínculo BudGanja con creatividad, alegría y camino.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-how-bizarre.html"
     },
     {
       "id": "alma",

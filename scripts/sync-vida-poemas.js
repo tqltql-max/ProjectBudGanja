@@ -55,6 +55,11 @@ const {
   poemUpsideDownEs
 } = require('../lib/upside-down-inspecao-post.js');
 const {
+  poemHowBizarrePt,
+  poemHowBizarreEn,
+  poemHowBizarreEs
+} = require('../lib/how-bizarre-inspecao-post.js');
+const {
   poemSementeFoiPlantadaPt,
   poemSementeFoiPlantadaEn,
   poemSementeFoiPlantadaEs
@@ -276,6 +281,27 @@ const doc = {
       bodyEs: poemUpsideDownEs(),
       inspectionHref: '/posts/post-inspecao-arte-upside-down.html',
       tags: ['poesia', 'vida', 'johnson', 'curiosidade', 'ângulo', 'alegria']
+    },
+    {
+      id: 'how-bizarre',
+      slug: 'how-bizarre',
+      title: 'How Bizarre',
+      titleEn: 'How Bizarre',
+      titleEs: 'How Bizarre',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja da OMC — nomear o estranho sem rir da vida nem entrar em pânico; criatividade, alegria, e faça o melhor.',
+      teaserEn:
+        'BudGanja echo of OMC — name the strange without laughing at life or panicking; creativity, joy, and do your best.',
+      teaserEs:
+        'Eco BudGanja de OMC — nombrar lo extraño sin reírse de la vida ni entrar en pánico; creatividad, alegría, y haz lo mejor.',
+      body: poemHowBizarrePt(),
+      bodyEn: poemHowBizarreEn(),
+      bodyEs: poemHowBizarreEs(),
+      inspectionHref: '/posts/post-inspecao-arte-how-bizarre.html',
+      tags: ['poesia', 'vida', 'omc', 'bizarro', 'ōtara', 'alegria']
     },
     {
       id: 'a-semente-foi-plantada',

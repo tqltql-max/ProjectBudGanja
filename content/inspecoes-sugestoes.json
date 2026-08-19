@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T16:07:29.467Z",
+  "updatedAt": "2026-08-19T16:18:18.065Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5674,6 +5674,31 @@
         "/vida/"
       ],
       "notes": "Obra primeiro (2006); filme e livros Rey como contexto; eco poético distinto da letra."
+    },
+    {
+      "id": "arte-how-bizarre",
+      "title": "How Bizarre — OMC e o ofício de nomear o estranho",
+      "titleEn": "How Bizarre — OMC and the craft of naming the strange",
+      "titleEs": "How Bizarre — OMC y el oficio de nombrar lo extraño",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canção 1995: OMC / Ōtara — nomear o bizarro × criatividade / alegria / caminho.",
+      "whyEn": "1995 song: OMC / Ōtara — name the bizarre × creativity / joy / path.",
+      "whyEs": "Canción 1995: OMC / Ōtara — nombrar lo bizarro × creatividad / alegría / camino.",
+      "suggestedSlug": "inspecao-arte-how-bizarre",
+      "doneHref": "/posts/post-inspecao-arte-how-bizarre.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-how-bizarre.html",
+        "https://open.spotify.com/track/46q5BtHso0ECuTKeq70ZhW",
+        "https://www.youtube.com/watch?v=qceCB4OL-8k",
+        "https://music.youtube.com/watch?v=qceCB4OL-8k",
+        "https://en.wikipedia.org/wiki/How_Bizarre_%28song%29",
+        "/posts/post-inspecao-palavra-criatividade.html",
+        "/vida/"
+      ],
+      "notes": "Obra primeiro (1995); Spotify como referência pedida; eco poético distinto da letra."
     }
   ]
 }

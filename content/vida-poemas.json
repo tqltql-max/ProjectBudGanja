@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T16:08:47.366Z",
+  "updatedAt": "2026-08-19T16:19:23.694Z",
   "poems": [
     {
       "id": "aguas-e-lagrimas",
@@ -243,6 +243,31 @@
         "johnson",
         "curiosidade",
         "ângulo",
+        "alegria"
+      ]
+    },
+    {
+      "id": "how-bizarre",
+      "slug": "how-bizarre",
+      "title": "How Bizarre",
+      "titleEn": "How Bizarre",
+      "titleEs": "How Bizarre",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja da OMC — nomear o estranho sem rir da vida nem entrar em pânico; criatividade, alegria, e faça o melhor.",
+      "teaserEn": "BudGanja echo of OMC — name the strange without laughing at life or panicking; creativity, joy, and do your best.",
+      "teaserEs": "Eco BudGanja de OMC — nombrar lo extraño sin reírse de la vida ni entrar en pánico; creatividad, alegría, y haz lo mejor.",
+      "body": "How Bizarre.\nNão pedimos a letra emprestada —\npedimos o ofício de nomear o estranho\nsem transformar a vida em piada\nnem em pânico.\n\nOMC. Pauly. Ōtara.\nHouve um bairro a que chamaram clube de milionários\npor ironia —\ne um groove que saiu dali sem pedir licença ao mapa.\nHouve trompete de mariachi no hip-hop,\nImpala a deslizar no clipe,\nvoz que conta o bizarro\ncomo quem inspeciona a rua:\nnão para rir do vizinho,\npara ver o que o rádio fingia não existir.\n\nO laboratório conhece esse nome.\nDia que não fecha.\nMistura que «não deveria» funcionar.\nCaminho que parece torto\naté alguém ficar e medir.\nE ainda assim: chamar as coisas pelo nome.\nFicar legal com o inexplicável.\nDar o passo sem apagar a origem.\n\nFaça o melhor!\n\nPorque toda vez que alguém nomeia o bizarro\ne inspeciona com alegria\nem vez de esmagar ou de zombar,\no universo cresce um pouco:\num verso a mais,\num dossel a mais,\numa rua onde o estranho também cabe no ofício.",
+      "bodyEn": "How Bizarre.\nWe do not borrow the lyric —\nwe ask for the craft of naming the strange\nwithout turning life into a joke\nor into panic.\n\nOMC. Pauly. Ōtara.\nThere was a suburb they called a millionaires’ club\nas irony —\nand a groove that left there without asking the map for permission.\nThere was a mariachi trumpet in the hip-hop,\nan Impala sliding through the clip,\na voice that tells the bizarre\nthe way one inspects a street:\nnot to laugh at the neighbour,\nto see what the radio pretended not to exist.\n\nThe laboratory knows that name.\nA day that will not close.\nA mix that “should not” work.\nA path that looks crooked\nuntil someone stays and measures.\nAnd still: call things by their name.\nStay alright with the inexplicable.\nTake the step without erasing the origin.\n\nDo your best!\n\nBecause every time someone names the bizarre\nand inspects with joy\ninstead of crushing or mocking,\nthe universe grows a little:\none more verse,\none more canopy,\na street where the strange also fits the craft.",
+      "bodyEs": "How Bizarre.\nNo pedimos prestada la letra —\npedimos el oficio de nombrar lo extraño\nsin transformar la vida en chiste\nni en pánico.\n\nOMC. Pauly. Ōtara.\nHubo un barrio al que llamaron club de millonarios\npor ironía —\ny un groove que salió de allí sin pedirle permiso al mapa.\nHubo trompeta de mariachi en el hip-hop,\nImpala deslizándose en el clip,\nvoz que cuenta lo bizarro\ncomo quien inspecciona la calle:\nno para reírse del vecino,\npara ver lo que la radio fingía que no existía.\n\nEl laboratorio conoce ese nombre.\nDía que no cierra.\nMezcla que «no debería» funcionar.\nCamino que parece torcido\nhasta que alguien se queda y mide.\nY aun así: llamar a las cosas por su nombre.\nQuedarse legal con lo inexplicable.\nDar el paso sin borrar el origen.\n\n¡Haz lo mejor!\n\nPorque cada vez que alguien nombra lo bizarro\ne inspecciona con alegría\nen vez de aplastar o de burlarse,\nel universo crece un poco:\nun verso más,\nun dosel más,\nuna calle donde lo extraño también cabe en el oficio.",
+      "inspectionHref": "/posts/post-inspecao-arte-how-bizarre.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "omc",
+        "bizarro",
+        "ōtara",
         "alegria"
       ]
     },
