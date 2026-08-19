@@ -6,7 +6,7 @@
  */
 (function (global) {
   // URLs com .v{N}. — evita o oval verde antigo em /imagens/icon-192.png (cache CDN).
-  var ICON_V = '327';
+  var ICON_V = '328';
 
   function artworkList() {
     var origin = (global.location && global.location.origin) || '';
