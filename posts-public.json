@@ -1900,6 +1900,25 @@
     "seriesLabel": "Memorável · palavra"
   },
   {
+    "title": "Inspeção: Defensoria Pública — acesso gratuito à justiça e Faça o melhor!",
+    "titleEn": "Inspection: Defensoria Pública — free access to justice and Faça o melhor!",
+    "titleEs": "Inspección: Defensoria Pública — acceso gratuito a la justicia y Faça o melhor!",
+    "excerpt": "Guia de acesso: Defensoria Pública e a assistência jurídica gratuita no cultivo medicinal; critérios de hipossuficiência, laudos, HC e os filtros que restam sem honorários. Não é parecer.",
+    "excerptEn": "Access guide: Defensoria Pública and free legal aid for medicinal cultivation; means-test, medical reports, HC and remaining filters without private fees. Not legal advice.",
+    "excerptEs": "Guía de acceso: Defensoria Pública y la asistencia jurídica gratuita en el cultivo medicinal; hiposuficiencia, informes, HC y filtros que quedan sin honorarios. No es asesoría.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-guia-defensoria-acesso",
+    "url": "/posts/post-inspecao-guia-defensoria-acesso.html",
+    "date": "2026-08-19T03:00:00.000Z",
+    "filename": "posts/post-inspecao-guia-defensoria-acesso.html",
+    "coverImage": "/imagens/og-default.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 37,
+    "seriesLabel": "Guia · Defensoria · acesso gratuito"
+  },
+  {
     "title": "Inspeção: Moana — o desenho do oceano, da vocação e da ilha",
     "titleEn": "Inspection: Moana — the ocean, vocation, and the island cartoon",
     "titleEs": "Inspección: Moana — el dibujo del océano, la vocación y la isla",
@@ -4102,25 +4121,6 @@
     "series": "pesquisa-laboratorio",
     "seriesOrder": null,
     "seriesLabel": "Laboratório"
-  },
-  {
-    "title": "Inspeção: Guia Defensoria e acesso gratuito — seletividade sem honorários",
-    "titleEn": "Inspection: Public Defender & free-access guide — selectivity without fees",
-    "titleEs": "Inspección: Guía Defensoría y acceso gratuito — selectividad sin honorarios",
-    "excerpt": "Guia para Defensoria e quem não tem advogado particular: mesmos filtros de HC/seletividade (laudo, tempo, tipificação porte×tráfico) sem o preço do particular. Não é parecer.",
-    "excerptEn": "Guide for Public Defenders and those without private counsel: same HC/selectivity filters without private fees. Not legal advice.",
-    "excerptEs": "Guía para Defensoría y quien no tiene abogado particular: mismos filtros de HC/selectividad sin honorarios. No es asesoría.",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-guia-defensoria-acesso",
-    "url": "/posts/post-inspecao-guia-defensoria-acesso.html",
-    "date": "2026-08-02T11:30:00.000Z",
-    "filename": "posts/post-inspecao-guia-defensoria-acesso.html",
-    "coverImage": "/imagens/og-default.jpg",
-    "category": "inspecao",
-    "series": "palavras-origem",
-    "seriesOrder": null,
-    "seriesLabel": "Guia · Defensoria · acesso gratuito"
   },
   {
     "title": "Inspeção: Guia associações de pacientes — cultivo institucional × seletividade",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T19:22:37.562Z",
+  "updatedAt": "2026-08-19T03:08:34.078Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -64,9 +64,9 @@
     {
       "id": "acesso-gratuito-justica",
       "word": "Acesso gratuito à justiça",
-      "simple": "Caminho sem honorários particulares — necessário, mas insuficiente sozinho contra a seletividade do estatuto paciente.",
-      "simpleEn": "Path without private fees — necessary but not enough alone against patient-status selectivity.",
-      "simpleEs": "Camino sin honorarios particulares — necesario pero insuficiente solo frente a la selectividad del estatuto paciente.",
+      "simple": "Caminho sem honorários particulares — necessário, mas insuficiente sozinho contra a seletividade do estatuto paciente (laudo, tempo, sobrecarga da Defensoria).",
+      "simpleEn": "Path without private fees — necessary but not enough alone against patient-status selectivity (reports, time, Defender overload).",
+      "simpleEs": "Camino sin honorarios particulares — necesario pero insuficiente solo frente a la selectividad del estatuto paciente (informe, tiempo, sobrecarga).",
       "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-defensoria-acesso.html"
@@ -1074,9 +1074,9 @@
     {
       "id": "defensoria-publica",
       "word": "Defensoria Pública",
-      "simple": "Assistência jurídica gratuita do Estado — porta pública do HC/defesa; não apaga filtros de laudo, tempo e tipificação (porte×tráfico).",
-      "simpleEn": "State free legal aid — public door to HC/defense; does not erase report, time and charging filters.",
-      "simpleEs": "Asistencia jurídica gratuita del Estado — puerta pública al HC/defensa; no borra filtros de informe, tiempo y tipificación.",
+      "simple": "Assistência jurídica gratuita do Estado — porta pública do HC/defesa; não apaga filtros de laudo, tempo, triagem local e tipificação (porte×tráfico).",
+      "simpleEn": "State free legal aid — public door to HC/defense; does not erase report, time, local screening and charging filters.",
+      "simpleEs": "Asistencia jurídica gratuita del Estado — puerta pública al HC/defensa; no borra filtros de informe, tiempo, triaje local y tipificación.",
       "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-defensoria-acesso.html"

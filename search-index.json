@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T03:00:34.992Z",
+  "updatedAt": "2026-08-19T03:07:20.271Z",
   "items": [
     {
       "title": "Início",
@@ -1076,10 +1076,10 @@
       "text": "Pesquisa: Da molécula ao lixo — fármacos, industrialização e desigualdade Mapa preliminar: drogas e derivados industriais no ciclo extrair→descartar — resíduos, exagero, desperdício e dano a plantas, animais e pessoas. pesquisa ## Escopo\n\nPesquisa-mapa do laboratório BudGanja: relacionar **drogas / fármacos / derivados industriais** com o ciclo **extrair → fabricar → vender → descartar**, e com os danos que esse ciclo **externaliza** — resíduos, acumulação de lixo, exagero de oferta, desperdício e pressão sobre **plantas, animais e pessoas**.\n\n> **Nota metodológica:** auditoria editorial independente. **Não é aconselhamento médico, jurídico nem denúncia criminal.** Não afirma «controlo populacional» planeado por conspiração. O objecto é o **mapa de externalidades** documentáveis (economia dos materiais, farmacovigilância, desigualdade). Indexar fontes ≠ endossar cada tese política. Sem afiliação com indústria farmacêutica, ONGs ou Estados.\n\n## Pergunta-guia\n\nComo o mesmo padrão industrial (molécula ou commodity → produto → resíduo) concentra lucro e desloca custo para ecossistemas e corpos — e o que o laboratório **pode** e **não pode** concluir com as fichas já publicadas?\n\n## Estado\n\n**Relatório preliminar · pesquisa em andamento** (`pesquisa-laboratorio`). Degrau 1: quadro + três casos + rede BudGanja. Degraus futuros: um caso aprofundado de cada vez, com fontes primárias.\n\n## Metadados\n\n| Campo | Valor |\n|-------|-------|\n| Tipo | Pesquisa documental / mapa de elos |\n| Série | Laboratório |\n| Unidade | Inspetor BudGanja (editorial) |\n| Âncora cultural | [A História das Coisas](/posts/post-inspecao-arte-a-historia-das-coisas.html) · [Annie Leonard](/posts/post-inspecao-figura-annie-leonard.html) |\n| Hub | [Pesquisas](/biblioteca/pesquisas/) |\n| Data | 2026-08-02 |\n\n## Hipóteses (fracas)\n\n- **H1:** «Droga», «fármaco» e «produto industrializado» partilham, em graus diferentes, a **cadeia linear** extrair→fazer→descartar.\n- **H2:** O preço de prateleira **omite** re"
     },
     {
-      "title": "Inspeção: Guia Defensoria e acesso gratuito — seletividade sem honorários",
+      "title": "Inspeção: Defensoria Pública — acesso gratuito à justiça e Faça o melhor!",
       "url": "/posts/post-inspecao-guia-defensoria-acesso.html",
-      "excerpt": "Guia para Defensoria e quem não tem advogado particular: mesmos filtros de HC/seletividade (laudo, tempo, tipificação porte×tráfico) sem o preço do particular. Não é parecer.",
-      "text": "Inspeção: Guia Defensoria e acesso gratuito — seletividade sem honorários Guia para Defensoria e quem não tem advogado particular: mesmos filtros de HC/seletividade (laudo, tempo, tipificação porte×tráfico) sem o preço do particular. Não é parecer. inspecao ## Escopo\n\nInspeção-guia do laboratório BudGanja para **Defensoria Pública, núcleos de prática jurídica e quem não tem advogado particular**: espelho do [guia HC para advogados](/posts/post-inspecao-guia-hc-seletividade-advogados.html) — mesma tese de **seletividade**, com foco em **acesso gratuito** e nos filtros que restam mesmo sem honorários (laudo, tempo, deslocamento, estigma).\n\n> **Nota metodológica (ler primeiro):** auditoria editorial independente. **Não é parecer jurídico, não é peça, não substitui a Defensoria local nem o juiz do caso.** Indexar ≠ endossar. Objecto = **literacia do projecto** para quem atende a ponta pobre da seletividade.\n\n## Público e uso\n\n| Campo | Valor |\n|-------|-------|\n| Público | Defensores, estagiários, núcleos universitários, pacientes sem rede |\n| Tipo BudGanja | Inspeção-guia — acesso gratuito × classificação |\n| Par completo | [HC × seletividade — advogados](/posts/post-inspecao-guia-hc-seletividade-advogados.html) |\n| Grupo Guia | [Classificação legal](/guia/palavras.html?group=classificacao) |\n| Data | 2026-08-02 |\n\n## Tese central (uma frase)\n\nTirar o preço do advogado **não apaga** a seletividade: sem laudo, sem tempo para judicializar, sem literacia de [porte × tráfico](/posts/post-inspecao-palavra-porte-trafico.html), a pessoa continua na [Lei 11.343](/posts/post-inspecao-palavra-lei-11-343.html) / abordagem — a Defensoria é a porta pública; o laboratório mapeia o **vocabulário** e os **filtros restantes**.\n\n## Hipóteses\n\n**H1:** HC medicinal documentado continua a exigir **prova terapêutica** — custo médico pode ser o novo filtro.  \n**H2:** a ponta pobre concentra tipificações de [tráfico](/posts/post-inspecao-palavra-porte-trafico.html) onde a ponta rica concentra"
+      "excerpt": "Guia de acesso: Defensoria Pública e a assistência jurídica gratuita no cultivo medicinal; critérios de hipossuficiência, laudos, HC e os filtros que restam sem honorários. Não é parecer.",
+      "text": "Inspeção: Defensoria Pública — acesso gratuito à justiça e Faça o melhor! Guia de acesso: Defensoria Pública e a assistência jurídica gratuita no cultivo medicinal; critérios de hipossuficiência, laudos, HC e os filtros que restam sem honorários. Não é parecer. inspecao ## Escopo\n\nInspeção-guia do laboratório BudGanja para **pacientes, defensores e operadores do direito**: mapa conceitual e institucional do papel da **Defensoria Pública** como porta de entrada para o **acesso gratuito à justiça** no cultivo medicinal de cannabis no Brasil — critérios de triagem social, filtros que restam sem honorários, e os limites práticos do remédio constitucional face à omissão do Estado. Espelho do [guia HC para advogados](/posts/post-inspecao-guia-hc-seletividade-advogados.html): mesma tese de **seletividade**, com foco em quem **não compra** advogado particular.\n\n> **Nota metodológica (ler primeiro):** auditoria editorial independente. **Não é parecer jurídico, não substitui consulta formal à Defensoria ou advogado cadastrado, e não é peça processual.** O laboratório documenta o fluxo institucional a partir da literatura de acesso à justiça e das âncoras públicas. Indexar ≠ endossar. Confirmar os critérios locais de hipossuficiência em cada núcleo estadual ou federal. Jurisprudência e tabelas de renda mudam.\n\n## Público e Uso\n\n| Parâmetro | Mapeamento no ecossistema |\n|-----------|---------------------------|\n| **Público-alvo** | Pacientes de baixa renda, defensores públicos, núcleos de prática jurídica e estudantes de direito |\n| **Tipo de inspeção** | Inspeção-guia — acesso à justiça × direito à saúde |\n| **Grupo classificação** | [Classificação legal](/guia/palavras.html?group=classificacao) |\n| **Par completo** | [HC × seletividade — advogados](/posts/post-inspecao-guia-hc-seletividade-advogados.html) |\n| **Pergunta-guia** | Como o paciente sem recursos financeiros disputa o estatuto jurídico de cultivo/uso medicinal através do Estado — e o que a triagem **não** garante? "
     },
     {
       "title": "Inspeção: Guia associações de pacientes — cultivo institucional × seletividade",
@@ -2354,10 +2354,16 @@
       "text": "2-AG 2-Araquidonoilglicerol — endocanabinoide central; na grade XIV sobe junto com anandamida/BDNF em contextos de meditação, yoga e exercício (estudos observacionais). tecnico guia palavras glossário dois-ag"
     },
     {
+      "title": "A Paixão de Cristo",
+      "url": "/posts/post-inspecao-filme-a-paixao-de-cristo.html",
+      "excerpt": "Filme de 2004; no site, inspeção em Artes com génese nos Evangelhos. Ficha própria, distinta de Coração Valente.",
+      "text": "A Paixão de Cristo Filme de 2004; no site, inspeção em Artes com génese nos Evangelhos. Ficha própria, distinta de Coração Valente. lexico guia palavras glossário a-paixao-de-cristo"
+    },
+    {
       "title": "Acesso gratuito à justiça",
       "url": "/posts/post-inspecao-guia-defensoria-acesso.html",
-      "excerpt": "Caminho sem honorários particulares — necessário, mas insuficiente sozinho contra a seletividade do estatuto paciente.",
-      "text": "Acesso gratuito à justiça Caminho sem honorários particulares — necessário, mas insuficiente sozinho contra a seletividade do estatuto paciente. classificacao guia palavras glossário acesso-gratuito-justica"
+      "excerpt": "Caminho sem honorários particulares — necessário, mas insuficiente sozinho contra a seletividade do estatuto paciente (laudo, tempo, sobrecarga da Defensoria).",
+      "text": "Acesso gratuito à justiça Caminho sem honorários particulares — necessário, mas insuficiente sozinho contra a seletividade do estatuto paciente (laudo, tempo, sobrecarga da Defensoria). classificacao guia palavras glossário acesso-gratuito-justica"
     },
     {
       "title": "Açúcar",
@@ -2384,34 +2390,22 @@
       "text": "Água Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem. lexico guia palavras glossário agua"
     },
     {
-      "title": "pato",
-      "url": "/posts/post-inspecao-palavra-pato.html",
-      "excerpt": "Árabe-hispânico — ave aquática, pagar o pato e pato no tucupi; elos animal/água/jambu; Faça o melhor!",
-      "text": "pato Árabe-hispânico — ave aquática, pagar o pato e pato no tucupi; elos animal/água/jambu; Faça o melhor! lexico guia palavras glossário pato"
-    },
-    {
       "title": "Águas do Mar e Lágrimas",
       "url": "/posts/post-inspecao-arte-aguas-e-lagrimas.html",
       "excerpt": "Poesia original BudGanja: o sal do mar e o da lágrima; elo com Vida, Lágrimas da Vida e Álvares de Azevedo.",
       "text": "Águas do Mar e Lágrimas Poesia original BudGanja: o sal do mar e o da lágrima; elo com Vida, Lágrimas da Vida e Álvares de Azevedo. lexico guia palavras glossário aguas-e-lagrimas"
     },
     {
-      "title": "origami",
-      "url": "/posts/post-inspecao-figura-tom-jobim.html",
-      "excerpt": "Japonês ori (dobrar) + kami (papel) — arte de dobrar papel; dedicatória BudGanja a Tom Jobim.",
-      "text": "origami Japonês ori (dobrar) + kami (papel) — arte de dobrar papel; dedicatória BudGanja a Tom Jobim. lexico guia palavras glossário origami"
-    },
-    {
-      "title": "Tom Jobim",
-      "url": "/posts/post-inspecao-figura-tom-jobim.html",
-      "excerpt": "Compositor da bossa — palavra-música; Águas de Março; dedicatória lab «Adoro origami».",
-      "text": "Tom Jobim Compositor da bossa — palavra-música; Águas de Março; dedicatória lab «Adoro origami». lexico guia palavras glossário tom-jobim"
-    },
-    {
       "title": "Alecrim",
       "url": "/plantas/alecrim/",
       "excerpt": "Salvia rosmarinus — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Alecrim Salvia rosmarinus — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário alecrim"
+    },
+    {
+      "title": "Aleff",
+      "url": "/posts/post-inspecao-figura-aleff.html",
+      "excerpt": "Aliffe Henrique de Carvalho (Aleff), de Machado (MG); no site, ficha em Pessoas — a pessoa, não a persona de ecrã.",
+      "text": "Aleff Aliffe Henrique de Carvalho (Aleff), de Machado (MG); no site, ficha em Pessoas — a pessoa, não a persona de ecrã. lexico guia palavras glossário aleff"
     },
     {
       "title": "Alegria",
@@ -2424,6 +2418,18 @@
       "url": "/biblioteca/unifesp/livro-xiv.html",
       "excerpt": "Gossypium — fibra vegetal; contraste histórico com o cânhamo. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Algodão Gossypium — fibra vegetal; contraste histórico com o cânhamo. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário algodao"
+    },
+    {
+      "title": "All Right Now",
+      "url": "/posts/post-inspecao-arte-all-right-now.html",
+      "excerpt": "Canção Free (1970): está tudo bem agora — génese após silêncio em Durham; elo BudGanja com já e legal.",
+      "text": "All Right Now Canção Free (1970): está tudo bem agora — génese após silêncio em Durham; elo BudGanja com já e legal. lexico guia palavras glossário all-right-now"
+    },
+    {
+      "title": "alma",
+      "url": "/posts/post-inspecao-palavra-alma.html",
+      "excerpt": "Lat. anima — centro vivo; chegar na alma; elos tudo/coração/vida; Faça o melhor até tocar.",
+      "text": "alma Lat. anima — centro vivo; chegar na alma; elos tudo/coração/vida; Faça o melhor até tocar. lexico guia palavras glossário alma"
     },
     {
       "title": "Alucinógeno",
@@ -2484,24 +2490,6 @@
       "url": "/posts/post-inspecao-palavra-arvore-da-vida.html",
       "excerpt": "Latim *arbor* — figura sénior do arco semente → mudinha → árvore no BudGanja; sombra e ofício contínuo.",
       "text": "Árvore da Vida Latim *arbor* — figura sénior do arco semente → mudinha → árvore no BudGanja; sombra e ofício contínuo. lexico guia palavras glossário arvore-da-vida"
-    },
-    {
-      "title": "O Início",
-      "url": "/posts/post-inspecao-arte-o-inicio.html",
-      "excerpt": "Poesia original BudGanja: legenda do cultivo × tanques de guerra — dossel partilha luz; blindagem esmaga.",
-      "text": "O Início Poesia original BudGanja: legenda do cultivo × tanques de guerra — dossel partilha luz; blindagem esmaga. lexico guia palavras glossário o-inicio"
-    },
-    {
-      "title": "Killing in the Name",
-      "url": "/posts/post-inspecao-arte-killing-in-the-name.html",
-      "excerpt": "Canção RATM (1992): matar no nome da ordem; elo BudGanja com O Início, raiva nomeada e proibição.",
-      "text": "Killing in the Name Canção RATM (1992): matar no nome da ordem; elo BudGanja com O Início, raiva nomeada e proibição. lexico guia palavras glossário killing-in-the-name"
-    },
-    {
-      "title": "All Right Now",
-      "url": "/posts/post-inspecao-arte-all-right-now.html",
-      "excerpt": "Canção Free (1970): está tudo bem agora — génese após silêncio em Durham; elo BudGanja com já e legal.",
-      "text": "All Right Now Canção Free (1970): está tudo bem agora — génese após silêncio em Durham; elo BudGanja com já e legal. lexico guia palavras glossário all-right-now"
     },
     {
       "title": "Associação de pacientes",
@@ -2660,42 +2648,6 @@
       "text": "Caminho Via por onde se anda — no laboratório, a palavra que liga pesquisa, vida e travessia. lexico guia palavras glossário caminho"
     },
     {
-      "title": "perseguição",
-      "url": "/posts/post-inspecao-palavra-perseguicao.html",
-      "excerpt": "Lat. persequī — caça, opressão e obsessão; contraste prosseguir; elos caminho/risco/EXIT; Faça o melhor!",
-      "text": "perseguição Lat. persequī — caça, opressão e obsessão; contraste prosseguir; elos caminho/risco/EXIT; Faça o melhor! lexico guia palavras glossário perseguicao"
-    },
-    {
-      "title": "EXIT",
-      "url": "/posts/post-inspecao-palavra-exit.html",
-      "excerpt": "EN/lat. exīre · exitus — saída, quit, teatro; no lab BudGanja, salvação = ofício de sair do aperto; elos caminho/alma/risco; Faça o melhor!",
-      "text": "EXIT EN/lat. exīre · exitus — saída, quit, teatro; no lab BudGanja, salvação = ofício de sair do aperto; elos caminho/alma/risco; Faça o melhor! lexico guia palavras glossário exit"
-    },
-    {
-      "title": "pattern",
-      "url": "/posts/post-inspecao-palavra-pattern.html",
-      "excerpt": "EN — molde / padrão / design pattern no BR; repetição reconhecível; elos gesto/caminho; Faça o melhor com o molde certo.",
-      "text": "pattern EN — molde / padrão / design pattern no BR; repetição reconhecível; elos gesto/caminho; Faça o melhor com o molde certo. lexico guia palavras glossário pattern"
-    },
-    {
-      "title": "patrão",
-      "url": "/posts/post-inspecao-palavra-patrao.html",
-      "excerpt": "Chefe / empregador (lat. patronus); mesma raiz de padrão e pattern; elos respeito/gesto; Faça o melhor com ou sem olhar.",
-      "text": "patrão Chefe / empregador (lat. patronus); mesma raiz de padrão e pattern; elos respeito/gesto; Faça o melhor com ou sem olhar. lexico guia palavras glossário patrao"
-    },
-    {
-      "title": "puta",
-      "url": "/posts/post-inspecao-palavra-puta.html",
-      "excerpt": "Lat. vulg. putta «menina» → pejorativo; no BR também intensificador («puta festa»); elo PQP; inspecionar com respeito.",
-      "text": "puta Lat. vulg. putta «menina» → pejorativo; no BR também intensificador («puta festa»); elo PQP; inspecionar com respeito. lexico guia palavras glossário puta"
-    },
-    {
-      "title": "pariu",
-      "url": "/posts/post-inspecao-palavra-pariu.html",
-      "excerpt": "De parir / lat. pariō «dar à luz»; peça de puta que pariu; separar parto e palavrão.",
-      "text": "pariu De parir / lat. pariō «dar à luz»; peça de puta que pariu; separar parto e palavrão. lexico guia palavras glossário pariu"
-    },
-    {
       "title": "Camomila",
       "url": "/plantas/camomila/",
       "excerpt": "Capítulos de Matricaria chamomilla — tradição de chás calmantes; marcadores como apigenina e óleo azul (camazuleno) em contexto educacional. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -2828,6 +2780,12 @@
       "text": "Chocolate Matriz industrial que junta cacau, açúcar, farinha e leite — hub de Produtos nocivos. tecnico guia palavras glossário chocolate"
     },
     {
+      "title": "Christopher Lloyd",
+      "url": "/posts/post-inspecao-figura-christopher-lloyd.html",
+      "excerpt": "Actor; no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não persona do Doc.",
+      "text": "Christopher Lloyd Actor; no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não persona do Doc. lexico guia palavras glossário christopher-lloyd"
+    },
+    {
       "title": "cinta",
       "url": "/posts/post-inspecao-palavra-cinta.html",
       "excerpt": "Lat. cincta / cingere — faixa que segura; no cultivo, tutor com folga; ≠ sinta; Faça o melhor neste aperto.",
@@ -2838,12 +2796,6 @@
       "url": "/posts/post-inspecao-palavra-cinzeiro.html",
       "excerpt": "Cinza + -eiro — recipiente ou monte da cinza; elos fogo/gesto/risco; Faça o melhor no fim do fogo.",
       "text": "cinzeiro Cinza + -eiro — recipiente ou monte da cinza; elos fogo/gesto/risco; Faça o melhor no fim do fogo. lexico guia palavras glossário cinzeiro"
-    },
-    {
-      "title": "papel de enrolar",
-      "url": "/posts/post-inspecao-palavra-papel-enrolar-tabaco.html",
-      "excerpt": "Mortalha / seda — papel fino para enrolar; origem europeia industrial (ex. Rizla); elo tabaco e cinzeiro.",
-      "text": "papel de enrolar Mortalha / seda — papel fino para enrolar; origem europeia industrial (ex. Rizla); elo tabaco e cinzeiro. lexico guia palavras glossário papel-de-enrolar"
     },
     {
       "title": "Clonadora",
@@ -2876,6 +2828,12 @@
       "text": "Commodity Bem tratado como mercadoria escalável (açúcar, planta medicinal industrializada, etc.) — deixa de ser só organismo/cultura. tecnico guia palavras glossário commodity"
     },
     {
+      "title": "Como os ricos transformam as coisas",
+      "url": "/posts/post-inspecao-expressao-como-os-ricos-transformam-as-coisas.html",
+      "excerpt": "Frase-mapa: poder sobre o ciclo extrair→fazer→descartar; elo História das Coisas.",
+      "text": "Como os ricos transformam as coisas Frase-mapa: poder sobre o ciclo extrair→fazer→descartar; elo História das Coisas. lexico guia palavras glossário como-os-ricos-transformam-as-coisas"
+    },
+    {
       "title": "Comunidade",
       "url": "/comunidade/",
       "excerpt": "Espaço social do laboratório — Feed Vivo, identificação de plantas e partilha do diário.",
@@ -2900,22 +2858,16 @@
       "text": "coração Lat. cor — órgão, afeto, centro e coragem; elo mãos/esquerdo (gesto cultural, não dogma); Faça o melhor de coração. lexico guia palavras glossário coracao"
     },
     {
-      "title": "mãe",
-      "url": "/posts/post-inspecao-palavra-mae.html",
-      "excerpt": "Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor!",
-      "text": "mãe Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor! lexico guia palavras glossário mae"
+      "title": "Coração Valente",
+      "url": "/posts/post-inspecao-filme-coracao-valente.html",
+      "excerpt": "Filme de 1995 (Braveheart); no site, inspeção em Artes com génese na lenda de Wallace / Blind Harry. Ficha própria, distinta de A Paixão de Cristo.",
+      "text": "Coração Valente Filme de 1995 (Braveheart); no site, inspeção em Artes com génese na lenda de Wallace / Blind Harry. Ficha própria, distinta de A Paixão de Cristo. lexico guia palavras glossário coracao-valente"
     },
     {
-      "title": "alma",
-      "url": "/posts/post-inspecao-palavra-alma.html",
-      "excerpt": "Lat. anima — centro vivo; chegar na alma; elos tudo/coração/vida; Faça o melhor até tocar.",
-      "text": "alma Lat. anima — centro vivo; chegar na alma; elos tudo/coração/vida; Faça o melhor até tocar. lexico guia palavras glossário alma"
-    },
-    {
-      "title": "nap",
-      "url": "/posts/post-inspecao-palavra-nap.html",
-      "excerpt": "EN — sono curto / power nap no BR; pausa de ofício; elos gesto/alma; Faça o melhor depois de parar.",
-      "text": "nap EN — sono curto / power nap no BR; pausa de ofício; elos gesto/alma; Faça o melhor depois de parar. lexico guia palavras glossário nap"
+      "title": "corromper",
+      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+      "excerpt": "Aviso vermelho · Toxina. Comum: estragar. BudGanja: segundo dano da frase («envenena»).",
+      "text": "corromper Aviso vermelho · Toxina. Comum: estragar. BudGanja: segundo dano da frase («envenena»). aviso guia palavras glossário aviso-corromper"
     },
     {
       "title": "CRF",
@@ -2954,6 +2906,12 @@
       "text": "daninha Dano + -inha — planta daninha como juízo de lugar no cultivo; elos planta/selvagem; Faça o melhor com o juízo certo. lexico guia palavras glossário daninha"
     },
     {
+      "title": "De Volta para o Futuro",
+      "url": "/posts/post-inspecao-filme-de-volta-para-o-futuro.html",
+      "excerpt": "Filme de 1985 (Zemeckis/Gale); no site, inspeção em Artes com homenagem aos actores e fichas de Fox e Lloyd.",
+      "text": "De Volta para o Futuro Filme de 1985 (Zemeckis/Gale); no site, inspeção em Artes com homenagem aos actores e fichas de Fox e Lloyd. lexico guia palavras glossário de-volta-para-o-futuro"
+    },
+    {
       "title": "decoção",
       "url": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
       "excerpt": "Fervura suave de raízes/cascas/sementes duras, ~10–20 min — modo do manual de chá de plantas.",
@@ -2962,8 +2920,14 @@
     {
       "title": "Defensoria Pública",
       "url": "/posts/post-inspecao-guia-defensoria-acesso.html",
-      "excerpt": "Assistência jurídica gratuita do Estado — porta pública do HC/defesa; não apaga filtros de laudo, tempo e tipificação (porte×tráfico).",
-      "text": "Defensoria Pública Assistência jurídica gratuita do Estado — porta pública do HC/defesa; não apaga filtros de laudo, tempo e tipificação (porte×tráfico). classificacao guia palavras glossário defensoria-publica"
+      "excerpt": "Assistência jurídica gratuita do Estado — porta pública do HC/defesa; não apaga filtros de laudo, tempo, triagem local e tipificação (porte×tráfico).",
+      "text": "Defensoria Pública Assistência jurídica gratuita do Estado — porta pública do HC/defesa; não apaga filtros de laudo, tempo, triagem local e tipificação (porte×tráfico). classificacao guia palavras glossário defensoria-publica"
+    },
+    {
+      "title": "DeLorean",
+      "url": "/posts/post-inspecao-delorean.html",
+      "excerpt": "Coupé DMC (Giugiaro, Dunmurry, 1981–82); no site, inspeção de objecto em Artes — o carro real; a máquina do filme é camada.",
+      "text": "DeLorean Coupé DMC (Giugiaro, Dunmurry, 1981–82); no site, inspeção de objecto em Artes — o carro real; a máquina do filme é camada. lexico guia palavras glossário delorean"
     },
     {
       "title": "Depressor",
@@ -2996,6 +2960,12 @@
       "text": "Desigualdade territorial Quem lucra na cadeia vs quem absorve extracção, efluente e lixo — pólo ético nomeado na pesquisa (sem conspiração). tecnico guia palavras glossário desigualdade-territorial"
     },
     {
+      "title": "desligar",
+      "url": "/posts/post-inspecao-palavra-ligar-desligar.html",
+      "excerpt": "Des- + ligar — verbos do circuito com ligar; par lab com interruptor; Faça o melhor inclusive ao pausar.",
+      "text": "desligar Des- + ligar — verbos do circuito com ligar; par lab com interruptor; Faça o melhor inclusive ao pausar. lexico guia palavras glossário desligar"
+    },
+    {
       "title": "Desperdício",
       "url": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html",
       "excerpt": "Uso ou produção em excesso sem necessidade — mecanismo central (com o exagero) no ciclo industrial da pesquisa.",
@@ -3006,6 +2976,18 @@
       "url": "/posts/post-inspecao-expressao-deu-certo-galera.html",
       "excerpt": "Expressão oral BR — deucer galerra; celebração colectiva de acerto; contraste com aff e buguei; depois Faça o melhor!",
       "text": "deu certo, galera Expressão oral BR — deucer galerra; celebração colectiva de acerto; contraste com aff e buguei; depois Faça o melhor! lexico guia palavras glossário deu-certo-galera"
+    },
+    {
+      "title": "Deus abençoe",
+      "url": "/posts/post-inspecao-expressao-deus-abencoe.html",
+      "excerpt": "Expressão — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; respeito à fé, sem proselitismo; depois Faça o melhor!",
+      "text": "Deus abençoe Expressão — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; respeito à fé, sem proselitismo; depois Faça o melhor! lexico guia palavras glossário deus-abencoe"
+    },
+    {
+      "title": "Deus deu dois ouvidos e uma boca",
+      "url": "/posts/post-inspecao-expressao-deus-deu-dois-ouvidos.html",
+      "excerpt": "Expressão — ditado de proporção (ouvir 2× / falar 1×); tipografia dois pouvi → dois ouvidos; respeito à fé cultural, sem proselitismo; depois Faça o melhor!",
+      "text": "Deus deu dois ouvidos e uma boca Expressão — ditado de proporção (ouvir 2× / falar 1×); tipografia dois pouvi → dois ouvidos; respeito à fé cultural, sem proselitismo; depois Faça o melhor! lexico guia palavras glossário deus-deu-dois-ouvidos"
     },
     {
       "title": "Diamba",
@@ -3104,6 +3086,12 @@
       "text": "Emoção Sentimento forte do corpo e da mente — hub lexical da Riley (Divertida Mente). lexico guia palavras glossário emocao"
     },
     {
+      "title": "Encontro Marcado",
+      "url": "/posts/post-inspecao-filme-encontro-marcado.html",
+      "excerpt": "Filme de 1998 (Meet Joe Black); no site, inspeção em Artes com génese na peça de Alberto Casella (1924).",
+      "text": "Encontro Marcado Filme de 1998 (Meet Joe Black); no site, inspeção em Artes com génese na peça de Alberto Casella (1924). lexico guia palavras glossário encontro-marcado"
+    },
+    {
       "title": "Endocanabinoide",
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Mensageiro que o próprio corpo produz (ex. anandamida, 2-AG) e que age nos receptores canabinoides — pode subir com exercício e, em estudos, com meditação.",
@@ -3126,6 +3114,12 @@
       "url": "/posts/post-inspecao-palavra-entorpecente-narcotico.html",
       "excerpt": "Termo jurídico-policial: substância que entorpece (diminui sensação ou reação) e entra em listas de controle — distinto de «droga» no senso comum e de «narcótico» (rótulo médico/legal antigo).",
       "text": "Entorpecente Termo jurídico-policial: substância que entorpece (diminui sensação ou reação) e entra em listas de controle — distinto de «droga» no senso comum e de «narcótico» (rótulo médico/legal antigo). classificacao guia palavras glossário entorpecente"
+    },
+    {
+      "title": "envenenar / envenena",
+      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+      "excerpt": "Aviso vermelho · Toxina. Comum: aplicar veneno. BudGanja: corrompe por dentro — dose que fica no próprio sujeito.",
+      "text": "envenenar / envenena Aviso vermelho · Toxina. Comum: aplicar veneno. BudGanja: corrompe por dentro — dose que fica no próprio sujeito. aviso guia palavras glossário aviso-envenenar"
     },
     {
       "title": "eojsofaorforap",
@@ -3218,6 +3212,12 @@
       "text": "Estupefaciente Rótulo internacional/de tratados, vizinho de narcótico — não é sinónimo exacto de entorpecente nas listas brasileiras modernas. classificacao guia palavras glossário estupefaciente"
     },
     {
+      "title": "esvaziar",
+      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+      "excerpt": "Aviso vermelho · Esvaziamento. Comum: deixar vazio. BudGanja: primeiro dano da frase («mata a alma»).",
+      "text": "esvaziar Aviso vermelho · Esvaziamento. Comum: deixar vazio. BudGanja: primeiro dano da frase («mata a alma»). aviso guia palavras glossário aviso-esvaziar"
+    },
+    {
       "title": "Etnobotânica",
       "url": "/biblioteca/unifesp/livro-xiv.html",
       "excerpt": "Ciência da relação entre culturas e plantas — usos medicinais, rituais e nomes populares. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -3234,6 +3234,12 @@
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Camada de estilo de vida na grade XIV — ~30 min de corrida/bike associados a ↑ AEA; irmão metabólico da PIC (meditação/yoga).",
       "text": "Exercício Camada de estilo de vida na grade XIV — ~30 min de corrida/bike associados a ↑ AEA; irmão metabólico da PIC (meditação/yoga). tecnico guia palavras glossário exercicio"
+    },
+    {
+      "title": "EXIT",
+      "url": "/posts/post-inspecao-palavra-exit.html",
+      "excerpt": "EN/lat. exīre · exitus — saída, quit, teatro; no lab BudGanja, salvação = ofício de sair do aperto; elos caminho/alma/risco; Faça o melhor!",
+      "text": "EXIT EN/lat. exīre · exitus — saída, quit, teatro; no lab BudGanja, salvação = ofício de sair do aperto; elos caminho/alma/risco; Faça o melhor! lexico guia palavras glossário exit"
     },
     {
       "title": "Externalidade",
@@ -3296,18 +3302,6 @@
       "text": "filho de deus Expressão — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; respeito à fé, sem proselitismo; depois Faça o melhor! lexico guia palavras glossário filho-de-deus"
     },
     {
-      "title": "Deus deu dois ouvidos e uma boca",
-      "url": "/posts/post-inspecao-expressao-deus-deu-dois-ouvidos.html",
-      "excerpt": "Expressão — ditado de proporção (ouvir 2× / falar 1×); tipografia dois pouvi → dois ouvidos; respeito à fé cultural, sem proselitismo; depois Faça o melhor!",
-      "text": "Deus deu dois ouvidos e uma boca Expressão — ditado de proporção (ouvir 2× / falar 1×); tipografia dois pouvi → dois ouvidos; respeito à fé cultural, sem proselitismo; depois Faça o melhor! lexico guia palavras glossário deus-deu-dois-ouvidos"
-    },
-    {
-      "title": "Deus abençoe",
-      "url": "/posts/post-inspecao-expressao-deus-abencoe.html",
-      "excerpt": "Expressão — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; respeito à fé, sem proselitismo; depois Faça o melhor!",
-      "text": "Deus abençoe Expressão — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; respeito à fé, sem proselitismo; depois Faça o melhor! lexico guia palavras glossário deus-abencoe"
-    },
-    {
       "title": "Fitocanabinoide",
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Canabinoide de planta (sobretudo cannabis) — na grade XIV é a camada de modulação exógena, distinta da via endógena (meditação, estilo de vida, PIC).",
@@ -3338,28 +3332,16 @@
       "text": "fogo Lat. focus — lareira / chama; elemento e metáfora; equilibrar com água; raiva com ofício; Faça o melhor com medida. lexico guia palavras glossário fogo"
     },
     {
-      "title": "sol",
-      "url": "/posts/post-inspecao-palavra-sol.html",
-      "excerpt": "Lat. sol — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Faça o melhor com a luz do dia.",
-      "text": "sol Lat. sol — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Faça o melhor com a luz do dia. lexico guia palavras glossário sol"
-    },
-    {
-      "title": "noite",
-      "url": "/posts/post-inspecao-palavra-noite.html",
-      "excerpt": "Lat. nox — fase escura do ciclo; par com sol; elos luz e interruptor; fotoperíodo; Faça o melhor com a noite certa.",
-      "text": "noite Lat. nox — fase escura do ciclo; par com sol; elos luz e interruptor; fotoperíodo; Faça o melhor com a noite certa. lexico guia palavras glossário noite"
-    },
-    {
-      "title": "luz",
-      "url": "/posts/post-inspecao-palavra-luz.html",
-      "excerpt": "Lat. lux — claridade e efeito do clique; tríade circuito + sol (fonte natural); Faça o melhor com a luz certa.",
-      "text": "luz Lat. lux — claridade e efeito do clique; tríade circuito + sol (fonte natural); Faça o melhor com a luz certa. lexico guia palavras glossário luz"
-    },
-    {
       "title": "Francisco José de Abreu Matos",
       "url": "/posts/post-inspecao-guia-farmacia-viva.html",
       "excerpt": "Farmacologista da UFC, mentor do projecto Farmácias Vivas (1983) — citado na Aula 5 como origem da política.",
       "text": "Francisco José de Abreu Matos Farmacologista da UFC, mentor do projecto Farmácias Vivas (1983) — citado na Aula 5 como origem da política. tecnico guia palavras glossário francisco-matos"
+    },
+    {
+      "title": "Friends",
+      "url": "/posts/post-inspecao-serie-friends.html",
+      "excerpt": "Sitcom de 1994–2004; no site, inspeção em Artes — Crane / Kauffman; a série é o texto. Ficha própria, distinta de How I Met Your Mother.",
+      "text": "Friends Sitcom de 1994–2004; no site, inspeção em Artes — Crane / Kauffman; a série é o texto. Ficha própria, distinta de How I Met Your Mother. lexico guia palavras glossário friends"
     },
     {
       "title": "fruto",
@@ -3410,66 +3392,6 @@
       "text": "Gesto Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade. lexico guia palavras glossário gesto"
     },
     {
-      "title": "janela",
-      "url": "/posts/post-inspecao-palavra-macaneta.html",
-      "excerpt": "Vão para ar e vista — elo maçaneta/fecho; cruzamento com porta e luz.",
-      "text": "janela Vão para ar e vista — elo maçaneta/fecho; cruzamento com porta e luz. lexico guia palavras glossário janela"
-    },
-    {
-      "title": "porta",
-      "url": "/posts/post-inspecao-palavra-macaneta.html",
-      "excerpt": "Limiar para passar — elo maçaneta, caminho, passar; cruzamento com janela e luz.",
-      "text": "porta Limiar para passar — elo maçaneta, caminho, passar; cruzamento com janela e luz. lexico guia palavras glossário porta"
-    },
-    {
-      "title": "maçaneta",
-      "url": "/posts/post-inspecao-palavra-macaneta.html",
-      "excerpt": "Puxador/fecho da porta — gesto torcer/abrir; elo mãos, porta/janela, interruptor e ligar/desligar.",
-      "text": "maçaneta Puxador/fecho da porta — gesto torcer/abrir; elo mãos, porta/janela, interruptor e ligar/desligar. lexico guia palavras glossário macaneta"
-    },
-    {
-      "title": "desligar",
-      "url": "/posts/post-inspecao-palavra-ligar-desligar.html",
-      "excerpt": "Des- + ligar — verbos do circuito com ligar; par lab com interruptor; Faça o melhor inclusive ao pausar.",
-      "text": "desligar Des- + ligar — verbos do circuito com ligar; par lab com interruptor; Faça o melhor inclusive ao pausar. lexico guia palavras glossário desligar"
-    },
-    {
-      "title": "ligar",
-      "url": "/posts/post-inspecao-palavra-ligar-desligar.html",
-      "excerpt": "Lat. ligare — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor com o clique.",
-      "text": "ligar Lat. ligare — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor com o clique. lexico guia palavras glossário ligar"
-    },
-    {
-      "title": "Grok",
-      "url": "/posts/post-inspecao-palavra-grok.html",
-      "excerpt": "Heinlein *to grok* — compreender por dentro × tom de ofício; elo oral com Deus (abençoe / dignidade / assombro); humano decide.",
-      "text": "Grok Heinlein *to grok* — compreender por dentro × tom de ofício; elo oral com Deus (abençoe / dignidade / assombro); humano decide. lexico guia palavras glossário grok"
-    },
-    {
-      "title": "meneia",
-      "url": "/posts/post-inspecao-palavra-meneia.html",
-      "excerpt": "Forma viva de menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto/mãos; Faça o melhor!",
-      "text": "meneia Forma viva de menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto/mãos; Faça o melhor! lexico guia palavras glossário meneia"
-    },
-    {
-      "title": "tempo",
-      "url": "/posts/post-inspecao-palavra-tempo.html",
-      "excerpt": "Lat. tempus — cronologia, clima («tempo bom») e compasso musical na mesma palavra; kairós × chronos; elos sempre/passado/alma; Faça o melhor com o tempo que se tem.",
-      "text": "tempo Lat. tempus — cronologia, clima («tempo bom») e compasso musical na mesma palavra; kairós × chronos; elos sempre/passado/alma; Faça o melhor com o tempo que se tem. lexico guia palavras glossário tempo"
-    },
-    {
-      "title": "Renato Russo",
-      "url": "/posts/post-inspecao-figura-renato-russo.html",
-      "excerpt": "Letrista e voz da Legião Urbana (1960–1996); no site, inspeção em Pessoas com elo na ficha tempo (Tempo Perdido).",
-      "text": "Renato Russo Letrista e voz da Legião Urbana (1960–1996); no site, inspeção em Pessoas com elo na ficha tempo (Tempo Perdido). lexico guia palavras glossário renato-russo"
-    },
-    {
-      "title": "pedi a mão",
-      "url": "/posts/post-inspecao-palavra-pedi-mao.html",
-      "excerpt": "Pedir + mão — ajuda («uma mão») ou compromisso («a mão»); elos mãos/gesto; Faça o melhor ao pedir e ao dar.",
-      "text": "pedi a mão Pedir + mão — ajuda («uma mão») ou compromisso («a mão»); elos mãos/gesto; Faça o melhor ao pedir e ao dar. lexico guia palavras glossário pedi-mao"
-    },
-    {
       "title": "Glúten",
       "url": "/posts/post-inspecao-derivado-gluten.html",
       "excerpt": "Proteína do trigo e de outros cereais — no site, ficha de produto nocivo.",
@@ -3480,6 +3402,12 @@
       "url": "/posts/post-inspecao-palavra-groenlandia.html",
       "excerpt": "Palco da invernagem ártica de Tamara — gelo, animais e o livro *Bom dia, Inverno*.",
       "text": "Groenlândia Palco da invernagem ártica de Tamara — gelo, animais e o livro *Bom dia, Inverno*. tecnico guia palavras glossário groenlandia"
+    },
+    {
+      "title": "Grok",
+      "url": "/posts/post-inspecao-palavra-grok.html",
+      "excerpt": "Heinlein *to grok* — compreender por dentro × tom de ofício; elo oral com Deus (abençoe / dignidade / assombro); humano decide.",
+      "text": "Grok Heinlein *to grok* — compreender por dentro × tom de ofício; elo oral com Deus (abençoe / dignidade / assombro); humano decide. lexico guia palavras glossário grok"
     },
     {
       "title": "Guaco",
@@ -3536,6 +3464,12 @@
       "text": "Hortelã Mentha spicata (e afins) — mentol/óleos mentolados em chás e culinária; espécie e quimiotipo importam. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário hortela"
     },
     {
+      "title": "How I Met Your Mother",
+      "url": "/posts/post-inspecao-serie-how-i-met-your-mother.html",
+      "excerpt": "Sitcom de 2005–2014; no site, inspeção em Artes — Bays / Thomas; relato e tempo. Ficha própria, distinta de Friends.",
+      "text": "How I Met Your Mother Sitcom de 2005–2014; no site, inspeção em Artes — Bays / Thomas; relato e tempo. Ficha própria, distinta de Friends. lexico guia palavras glossário how-i-met-your-mother"
+    },
+    {
       "title": "Iatrogenia",
       "url": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html",
       "excerpt": "Dano causado pela própria intervenção terapêutica — risco do estágio «uso» na cadeia fármaco/droga.",
@@ -3572,16 +3506,16 @@
       "text": "incrível Lat. incredibilis — inacreditável e elogio BR «uau»; escala legal → especial → genial → incrível; Faça o melhor! lexico guia palavras glossário incrivel"
     },
     {
-      "title": "insana",
-      "url": "/posts/post-inspecao-palavra-insana.html",
-      "excerpt": "Lat. insanus (in- + sanus) — intensidade/excesso no BR; ≠ diagnóstico; verdade e respeito; Faça o melhor.",
-      "text": "insana Lat. insanus (in- + sanus) — intensidade/excesso no BR; ≠ diagnóstico; verdade e respeito; Faça o melhor. lexico guia palavras glossário insana"
-    },
-    {
       "title": "infusão",
       "url": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
       "excerpt": "Água quente (fora do fogo) sobre folhas/flores, 5–15 min tampado — modo do manual de chá de plantas.",
       "text": "infusão Água quente (fora do fogo) sobre folhas/flores, 5–15 min tampado — modo do manual de chá de plantas. tecnico guia palavras glossário infusao"
+    },
+    {
+      "title": "insana",
+      "url": "/posts/post-inspecao-palavra-insana.html",
+      "excerpt": "Lat. insanus (in- + sanus) — intensidade/excesso no BR; ≠ diagnóstico; verdade e respeito; Faça o melhor.",
+      "text": "insana Lat. insanus (in- + sanus) — intensidade/excesso no BR; ≠ diagnóstico; verdade e respeito; Faça o melhor. lexico guia palavras glossário insana"
     },
     {
       "title": "inseto",
@@ -3650,6 +3584,12 @@
       "text": "Jambu Acmella oleracea — jambu amazônico; spilanthol provoca formigamento; culinária paraense e tradição oral. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário jambu"
     },
     {
+      "title": "janela",
+      "url": "/posts/post-inspecao-palavra-macaneta.html",
+      "excerpt": "Vão para ar e vista — elo maçaneta/fecho; cruzamento com porta e luz.",
+      "text": "janela Vão para ar e vista — elo maçaneta/fecho; cruzamento com porta e luz. lexico guia palavras glossário janela"
+    },
+    {
       "title": "jesusamando",
       "url": "/posts/post-inspecao-expressao-jesusamando.html",
       "excerpt": "Expressão oral BR — assombro e afeto num sopro; contraste com aff; depois, Faça o melhor!",
@@ -3678,6 +3618,12 @@
       "url": "/biblioteca/unifesp/livro-xiv.html",
       "excerpt": "Nome popular de Mimosa (ex. hostilis/tenuiflora) — tradição ritual e etnobotânica no Brasil. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Jurema Nome popular de Mimosa (ex. hostilis/tenuiflora) — tradição ritual e etnobotânica no Brasil. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário jurema"
+    },
+    {
+      "title": "Killing in the Name",
+      "url": "/posts/post-inspecao-arte-killing-in-the-name.html",
+      "excerpt": "Canção RATM (1992): matar no nome da ordem; elo BudGanja com O Início, raiva nomeada e proibição.",
+      "text": "Killing in the Name Canção RATM (1992): matar no nome da ordem; elo BudGanja com O Início, raiva nomeada e proibição. lexico guia palavras glossário killing-in-the-name"
     },
     {
       "title": "Laboratório",
@@ -3734,6 +3680,12 @@
       "text": "Lei 11.343/2006 Lei de Drogas — âncora tipológica onde cai quem não tem estatuto processual (HC) ou sanitário (ANVISA); não é o nome da planta. classificacao guia palavras glossário lei-11-343"
     },
     {
+      "title": "ligar",
+      "url": "/posts/post-inspecao-palavra-ligar-desligar.html",
+      "excerpt": "Lat. ligare — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor com o clique.",
+      "text": "ligar Lat. ligare — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor com o clique. lexico guia palavras glossário ligar"
+    },
+    {
       "title": "língua portuguesa",
       "url": "/posts/post-inspecao-palavra-lingua-portuguesa.html",
       "excerpt": "Meio do Inspetor BudGanja: originalidade; alterações no tempo (latim → BR → digital); nomear, inspecionar, cuidar; Faça o melhor nesta língua.",
@@ -3764,6 +3716,18 @@
       "text": "Luxímetro Ferramenta para medir a luz — no site, também com a câmara do telemóvel. tecnico guia palavras glossário luximetro"
     },
     {
+      "title": "luz",
+      "url": "/posts/post-inspecao-palavra-luz.html",
+      "excerpt": "Lat. lux — claridade e efeito do clique; tríade circuito + sol (fonte natural); Faça o melhor com a luz certa.",
+      "text": "luz Lat. lux — claridade e efeito do clique; tríade circuito + sol (fonte natural); Faça o melhor com a luz certa. lexico guia palavras glossário luz"
+    },
+    {
+      "title": "maçaneta",
+      "url": "/posts/post-inspecao-palavra-macaneta.html",
+      "excerpt": "Puxador/fecho da porta — gesto torcer/abrir; elo mãos, porta/janela, interruptor e ligar/desligar.",
+      "text": "maçaneta Puxador/fecho da porta — gesto torcer/abrir; elo mãos, porta/janela, interruptor e ligar/desligar. lexico guia palavras glossário macaneta"
+    },
+    {
       "title": "maceração",
       "url": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
       "excerpt": "Extracção a frio (horas) quando o calor forte não convém — citado no manual de chá de plantas.",
@@ -3774,6 +3738,12 @@
       "url": "/posts/post-inspecao-palavra-maconha.html",
       "excerpt": "Nome popular afro-atlântico da planta no Brasil — carregado de estigma no século XX.",
       "text": "Maconha Nome popular afro-atlântico da planta no Brasil — carregado de estigma no século XX. lexico guia palavras glossário maconha"
+    },
+    {
+      "title": "mãe",
+      "url": "/posts/post-inspecao-palavra-mae.html",
+      "excerpt": "Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor!",
+      "text": "mãe Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor! lexico guia palavras glossário mae"
     },
     {
       "title": "magnífico",
@@ -3830,6 +3800,12 @@
       "text": "Massagem PIC no mesmo bloco XIV da meditação e da eletroacupuntura — citada em revisões com efeitos canabiméticos / regulação do SEC (literacia, não protocolo). tecnico guia palavras glossário massagem"
     },
     {
+      "title": "matar / mata",
+      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+      "excerpt": "Aviso vermelho · Dano à vida. Comum: tirar a vida. BudGanja: na frase = esvaziar o centro íntimo, não homicídio literal.",
+      "text": "matar / mata Aviso vermelho · Dano à vida. Comum: tirar a vida. BudGanja: na frase = esvaziar o centro íntimo, não homicídio literal. aviso guia palavras glossário aviso-matar"
+    },
+    {
       "title": "Matéria-prima",
       "url": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html",
       "excerpt": "Planta, animal, minério ou petróleo no início da cadeia — primeiro estágio do quadro da molécula ao lixo.",
@@ -3866,16 +3842,10 @@
       "text": "Medo Alerta interior que protege do perigo — a emoção roxa da Riley. lexico guia palavras glossário medo"
     },
     {
-      "title": "sozinho",
-      "url": "/posts/post-inspecao-palavra-sozna.html",
-      "excerpt": "Lat. sōlus + -zinho — estado só (masc.); par sozinha; forma oral sozna; ≠ solitário; Faça o melhor sem vergonha.",
-      "text": "sozinho Lat. sōlus + -zinho — estado só (masc.); par sozinha; forma oral sozna; ≠ solitário; Faça o melhor sem vergonha. lexico guia palavras glossário sozinho"
-    },
-    {
-      "title": "sozna",
-      "url": "/posts/post-inspecao-palavra-sozna.html",
-      "excerpt": "Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — estado só; ≠ solitário; Faça o melhor sem vergonha.",
-      "text": "sozna Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — estado só; ≠ solitário; Faça o melhor sem vergonha. lexico guia palavras glossário sozna"
+      "title": "Mel Gibson",
+      "url": "/posts/post-inspecao-figura-mel-gibson.html",
+      "excerpt": "Actor e realizador; no site, ficha em Pessoas com elos em Coração Valente (1995) e A Paixão de Cristo (2004) — ofício, não cartaz nem dossiê.",
+      "text": "Mel Gibson Actor e realizador; no site, ficha em Pessoas com elos em Coração Valente (1995) e A Paixão de Cristo (2004) — ofício, não cartaz nem dossiê. lexico guia palavras glossário mel-gibson"
     },
     {
       "title": "Melissa",
@@ -3890,22 +3860,28 @@
       "text": "memorável Lat. memorabilis — digno de memória; elogio BR com rasto; retenção ≠ escala genial/especial; Faça o melhor! lexico guia palavras glossário memoravel"
     },
     {
+      "title": "meneia",
+      "url": "/posts/post-inspecao-palavra-meneia.html",
+      "excerpt": "Forma viva de menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto/mãos; Faça o melhor!",
+      "text": "meneia Forma viva de menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto/mãos; Faça o melhor! lexico guia palavras glossário meneia"
+    },
+    {
       "title": "mensagem",
       "url": "/posts/post-inspecao-palavra-mensagem.html",
       "excerpt": "Lat. mittere → message — conteúdo enviado; plural mensagens; SMS/chat; deixar mensagem; sinal ≠ mensagem.",
       "text": "mensagem Lat. mittere → message — conteúdo enviado; plural mensagens; SMS/chat; deixar mensagem; sinal ≠ mensagem. lexico guia palavras glossário mensagem"
     },
     {
-      "title": "sugestão",
-      "url": "/posts/post-inspecao-palavra-sugestao.html",
-      "excerpt": "Lat. suggestio — ato de sugerir / palpite; no lab, item da fila de inspeções; Faça o melhor nesta proposta.",
-      "text": "sugestão Lat. suggestio — ato de sugerir / palpite; no lab, item da fila de inspeções; Faça o melhor nesta proposta. lexico guia palavras glossário sugestao"
-    },
-    {
       "title": "Metabólito secundário",
       "url": "/posts/post-inspecao-guia-quimiotipos-cannabis.html",
       "excerpt": "Pigmentos, terpenos, alcaloides… — o que mais diferencia quimiotipos na Aula 10, face aos metabólitos primários.",
       "text": "Metabólito secundário Pigmentos, terpenos, alcaloides… — o que mais diferencia quimiotipos na Aula 10, face aos metabólitos primários. tecnico guia palavras glossário metabolito-secundario"
+    },
+    {
+      "title": "Michael J. Fox",
+      "url": "/posts/post-inspecao-figura-michael-j-fox.html",
+      "excerpt": "Actor (Michael Andrew Fox); no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não personagem.",
+      "text": "Michael J. Fox Actor (Michael Andrew Fox); no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não personagem. lexico guia palavras glossário michael-j-fox"
     },
     {
       "title": "Microplástico",
@@ -3968,6 +3944,12 @@
       "text": "Mulungu Erythrina mulungu — casca com alcaloides eritrínicos; tradição de chás calmantes (sedação popular). Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário mulungu"
     },
     {
+      "title": "nap",
+      "url": "/posts/post-inspecao-palavra-nap.html",
+      "excerpt": "EN — sono curto / power nap no BR; pausa de ofício; elos gesto/alma; Faça o melhor depois de parar.",
+      "text": "nap EN — sono curto / power nap no BR; pausa de ofício; elos gesto/alma; Faça o melhor depois de parar. lexico guia palavras glossário nap"
+    },
+    {
       "title": "Narcótico",
       "url": "/posts/post-inspecao-palavra-entorpecente-narcotico.html",
       "excerpt": "Termo médico/legal antigo e amplo: substância associada a sono ou entorpecimento — não é sinónimo exacto de «entorpecente» nas listas modernas de controle.",
@@ -3986,22 +3968,28 @@
       "text": "Neve Cobertura branca do Ártico — paisagem e ruído branco da narrativa de Tamara. lexico guia palavras glossário neve"
     },
     {
+      "title": "noite",
+      "url": "/posts/post-inspecao-palavra-noite.html",
+      "excerpt": "Lat. nox — fase escura do ciclo; par com sol; elos luz e interruptor; fotoperíodo; Faça o melhor com a noite certa.",
+      "text": "noite Lat. nox — fase escura do ciclo; par com sol; elos luz e interruptor; fotoperíodo; Faça o melhor com a noite certa. lexico guia palavras glossário noite"
+    },
+    {
       "title": "Nojinho",
       "url": "/posts/post-inspecao-palavra-nojinho.html",
       "excerpt": "Aversão que afasta do que parece sujo ou perigoso — a emoção verde da Riley.",
       "text": "Nojinho Aversão que afasta do que parece sujo ou perigoso — a emoção verde da Riley. lexico guia palavras glossário nojinho"
     },
     {
+      "title": "O Início",
+      "url": "/posts/post-inspecao-arte-o-inicio.html",
+      "excerpt": "Poesia original BudGanja: legenda do cultivo × tanques de guerra — dossel partilha luz; blindagem esmaga.",
+      "text": "O Início Poesia original BudGanja: legenda do cultivo × tanques de guerra — dossel partilha luz; blindagem esmaga. lexico guia palavras glossário o-inicio"
+    },
+    {
       "title": "objetos",
       "url": "/posts/post-inspecao-palavra-objetos.html",
       "excerpt": "Lat. obiectum — plural de objeto; no lab, o foco do «objeto inspecionado»; Faça o melhor neste objeto.",
       "text": "objetos Lat. obiectum — plural de objeto; no lab, o foco do «objeto inspecionado»; Faça o melhor neste objeto. lexico guia palavras glossário objetos"
-    },
-    {
-      "title": "Como os ricos transformam as coisas",
-      "url": "/posts/post-inspecao-expressao-como-os-ricos-transformam-as-coisas.html",
-      "excerpt": "Frase-mapa: poder sobre o ciclo extrair→fazer→descartar; elo História das Coisas.",
-      "text": "Como os ricos transformam as coisas Frase-mapa: poder sobre o ciclo extrair→fazer→descartar; elo História das Coisas. lexico guia palavras glossário como-os-ricos-transformam-as-coisas"
     },
     {
       "title": "Ofício editorial",
@@ -4034,6 +4022,12 @@
       "text": "Orégano Erva culinária com terpenos que modulam o sistema endocanabinoide. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário oregano"
     },
     {
+      "title": "origami",
+      "url": "/posts/post-inspecao-figura-tom-jobim.html",
+      "excerpt": "Japonês ori (dobrar) + kami (papel) — arte de dobrar papel; dedicatória BudGanja a Tom Jobim.",
+      "text": "origami Japonês ori (dobrar) + kami (papel) — arte de dobrar papel; dedicatória BudGanja a Tom Jobim. lexico guia palavras glossário origami"
+    },
+    {
       "title": "Orto terapêutico",
       "url": "/posts/post-inspecao-guia-farmacia-viva.html",
       "excerpt": "Horto de plantas medicinais ligado à Farmácia Viva / educação comunitária — modalidade tipo 1 no discurso da Aula 5.",
@@ -4052,10 +4046,22 @@
       "text": "Palavras Unidades da língua — no laboratório, série de inspeções sobre origem e sentido. hub guia palavras glossário palavras"
     },
     {
+      "title": "papel de enrolar",
+      "url": "/posts/post-inspecao-palavra-papel-enrolar-tabaco.html",
+      "excerpt": "Mortalha / seda — papel fino para enrolar; origem europeia industrial (ex. Rizla); elo tabaco e cinzeiro.",
+      "text": "papel de enrolar Mortalha / seda — papel fino para enrolar; origem europeia industrial (ex. Rizla); elo tabaco e cinzeiro. lexico guia palavras glossário papel-de-enrolar"
+    },
+    {
       "title": "Papoula",
       "url": "/biblioteca/unifesp/livro-xiv.html",
       "excerpt": "Papaver somniferum — fonte histórica do ópio; contraste com cannabis e outras plantas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Papoula Papaver somniferum — fonte histórica do ópio; contraste com cannabis e outras plantas. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário papoula"
+    },
+    {
+      "title": "pariu",
+      "url": "/posts/post-inspecao-palavra-pariu.html",
+      "excerpt": "De parir / lat. pariō «dar à luz»; peça de puta que pariu; separar parto e palavrão.",
+      "text": "pariu De parir / lat. pariō «dar à luz»; peça de puta que pariu; separar parto e palavrão. lexico guia palavras glossário pariu"
     },
     {
       "title": "passado",
@@ -4074,6 +4080,36 @@
       "url": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html",
       "excerpt": "Direito exclusivo sobre molécula/processo — mecanismo que concentra valor no pólo industrial da pesquisa.",
       "text": "Patente Direito exclusivo sobre molécula/processo — mecanismo que concentra valor no pólo industrial da pesquisa. tecnico guia palavras glossário patente"
+    },
+    {
+      "title": "pato",
+      "url": "/posts/post-inspecao-palavra-pato.html",
+      "excerpt": "Árabe-hispânico — ave aquática, pagar o pato e pato no tucupi; elos animal/água/jambu; Faça o melhor!",
+      "text": "pato Árabe-hispânico — ave aquática, pagar o pato e pato no tucupi; elos animal/água/jambu; Faça o melhor! lexico guia palavras glossário pato"
+    },
+    {
+      "title": "patrão",
+      "url": "/posts/post-inspecao-palavra-patrao.html",
+      "excerpt": "Chefe / empregador (lat. patronus); mesma raiz de padrão e pattern; elos respeito/gesto; Faça o melhor com ou sem olhar.",
+      "text": "patrão Chefe / empregador (lat. patronus); mesma raiz de padrão e pattern; elos respeito/gesto; Faça o melhor com ou sem olhar. lexico guia palavras glossário patrao"
+    },
+    {
+      "title": "pattern",
+      "url": "/posts/post-inspecao-palavra-pattern.html",
+      "excerpt": "EN — molde / padrão / design pattern no BR; repetição reconhecível; elos gesto/caminho; Faça o melhor com o molde certo.",
+      "text": "pattern EN — molde / padrão / design pattern no BR; repetição reconhecível; elos gesto/caminho; Faça o melhor com o molde certo. lexico guia palavras glossário pattern"
+    },
+    {
+      "title": "pedi a mão",
+      "url": "/posts/post-inspecao-palavra-pedi-mao.html",
+      "excerpt": "Pedir + mão — ajuda («uma mão») ou compromisso («a mão»); elos mãos/gesto; Faça o melhor ao pedir e ao dar.",
+      "text": "pedi a mão Pedir + mão — ajuda («uma mão») ou compromisso («a mão»); elos mãos/gesto; Faça o melhor ao pedir e ao dar. lexico guia palavras glossário pedi-mao"
+    },
+    {
+      "title": "perseguição",
+      "url": "/posts/post-inspecao-palavra-perseguicao.html",
+      "excerpt": "Lat. persequī — caça, opressão e obsessão; contraste prosseguir; elos caminho/risco/EXIT; Faça o melhor!",
+      "text": "perseguição Lat. persequī — caça, opressão e obsessão; contraste prosseguir; elos caminho/risco/EXIT; Faça o melhor! lexico guia palavras glossário perseguicao"
     },
     {
       "title": "Pesquisas",
@@ -4116,6 +4152,12 @@
       "url": "/plantas/",
       "excerpt": "Seres vivos do reino vegetal — hub /plantas/; conceito lexical na ficha planta.",
       "text": "Plantas Seres vivos do reino vegetal — hub /plantas/; conceito lexical na ficha planta. titulo guia palavras glossário plantas"
+    },
+    {
+      "title": "porta",
+      "url": "/posts/post-inspecao-palavra-macaneta.html",
+      "excerpt": "Limiar para passar — elo maçaneta, caminho, passar; cruzamento com janela e luz.",
+      "text": "porta Limiar para passar — elo maçaneta, caminho, passar; cruzamento com janela e luz. lexico guia palavras glossário porta"
     },
     {
       "title": "Portaria",
@@ -4196,6 +4238,18 @@
       "text": "pular Lat. pullāre — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar/backspace/já; Faça o melhor com o pulo certo. lexico guia palavras glossário pular"
     },
     {
+      "title": "puta",
+      "url": "/posts/post-inspecao-palavra-puta.html",
+      "excerpt": "Lat. vulg. putta «menina» → pejorativo; no BR também intensificador («puta festa»); elo PQP; inspecionar com respeito.",
+      "text": "puta Lat. vulg. putta «menina» → pejorativo; no BR também intensificador («puta festa»); elo PQP; inspecionar com respeito. lexico guia palavras glossário puta"
+    },
+    {
+      "title": "Questão de Tempo",
+      "url": "/posts/post-inspecao-filme-questao-de-tempo.html",
+      "excerpt": "Filme de 2013 (About Time); no site, inspeção em Artes com destaque para o autor Richard Curtis.",
+      "text": "Questão de Tempo Filme de 2013 (About Time); no site, inspeção em Artes com destaque para o autor Richard Curtis. lexico guia palavras glossário questao-de-tempo"
+    },
+    {
       "title": "Quimiotipo",
       "url": "/posts/post-inspecao-guia-quimiotipos-cannabis.html",
       "excerpt": "Classificação de variantes de cannabis pelo fitocanabinoide majoritário (THC, CBD, CBG…) — cinco tipos na Aula 10 XIV (Diogo).",
@@ -4212,6 +4266,12 @@
       "url": "/posts/post-inspecao-palavra-raiva.html",
       "excerpt": "Fúria que avisa limite ultrapassado — a emoção vermelha da Riley.",
       "text": "Raiva Fúria que avisa limite ultrapassado — a emoção vermelha da Riley. lexico guia palavras glossário raiva"
+    },
+    {
+      "title": "rancor",
+      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+      "excerpt": "Aviso vermelho · Afecto tóxico. Comum: mágoa guardada. BudGanja: o ditado trata-o como dose auto-ingerida.",
+      "text": "rancor Aviso vermelho · Afecto tóxico. Comum: mágoa guardada. BudGanja: o ditado trata-o como dose auto-ingerida. aviso guia palavras glossário aviso-rancor"
     },
     {
       "title": "RDC",
@@ -4232,6 +4292,12 @@
       "text": "Receituário Acto médico de prescrição — abre vias de produto regulado/importação; não autoriza sozinho o cultivo caseiro. classificacao guia palavras glossário receituario"
     },
     {
+      "title": "Renato Russo",
+      "url": "/posts/post-inspecao-figura-renato-russo.html",
+      "excerpt": "Letrista e voz da Legião Urbana (1960–1996); no site, inspeção em Pessoas com elo na ficha tempo (Tempo Perdido).",
+      "text": "Renato Russo Letrista e voz da Legião Urbana (1960–1996); no site, inspeção em Pessoas com elo na ficha tempo (Tempo Perdido). lexico guia palavras glossário renato-russo"
+    },
+    {
       "title": "RENISUS",
       "url": "/posts/post-inspecao-guia-farmacia-viva.html",
       "excerpt": "Relação de plantas de interesse ao SUS para pesquisa/validação do saber tradicional — citada na Aula 5 (~71 espécies no discurso da aula).",
@@ -4250,10 +4316,34 @@
       "text": "respeito Lat. respectus / respicere — olhar de novo; consideração e prática social (sem sermão); elo verdade/gesto; contraste com vingança. lexico guia palavras glossário respeito"
     },
     {
+      "title": "ressentimento",
+      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+      "excerpt": "Aviso vermelho · Afecto tóxico. Comum: mágoa persistente. BudGanja: ferida que continua a actuar — nutriente do rancor.",
+      "text": "ressentimento Aviso vermelho · Afecto tóxico. Comum: mágoa persistente. BudGanja: ferida que continua a actuar — nutriente do rancor. aviso guia palavras glossário aviso-ressentimento"
+    },
+    {
+      "title": "retaliação",
+      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+      "excerpt": "Aviso vermelho · Retaliação. Comum: olho por olho. BudGanja: conta que a frase diz nunca fechar («nunca é plena»).",
+      "text": "retaliação Aviso vermelho · Retaliação. Comum: olho por olho. BudGanja: conta que a frase diz nunca fechar («nunca é plena»). aviso guia palavras glossário aviso-retaliacao"
+    },
+    {
       "title": "Retiro",
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Contexto intensivo de prática (ex. 4 dias Isha Yoga / Inner Engineering no estudo citado) — distinto da rotina diária de 10 min; indexar ≠ endossar escola comercial.",
       "text": "Retiro Contexto intensivo de prática (ex. 4 dias Isha Yoga / Inner Engineering no estudo citado) — distinto da rotina diária de 10 min; indexar ≠ endossar escola comercial. tecnico guia palavras glossário retiro"
+    },
+    {
+      "title": "revidar",
+      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+      "excerpt": "Aviso vermelho · Retaliação. Comum: devolver o golpe. BudGanja: impulso que a oralidade avisa contra.",
+      "text": "revidar Aviso vermelho · Retaliação. Comum: devolver o golpe. BudGanja: impulso que a oralidade avisa contra. aviso guia palavras glossário aviso-revidar"
+    },
+    {
+      "title": "Richard Curtis",
+      "url": "/posts/post-inspecao-figura-richard-curtis.html",
+      "excerpt": "Argumentista e realizador; no site, ficha em Pessoas com elo em Questão de Tempo — autor, não marca.",
+      "text": "Richard Curtis Argumentista e realizador; no site, ficha em Pessoas com elo em Questão de Tempo — autor, não marca. lexico guia palavras glossário richard-curtis"
     },
     {
       "title": "Rimonabant",
@@ -4352,6 +4442,12 @@
       "text": "Soja Glycine max — leguminosa citada em contexto agrícola/alimentar e fitoterapia (isoflavonas). Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário soja"
     },
     {
+      "title": "sol",
+      "url": "/posts/post-inspecao-palavra-sol.html",
+      "excerpt": "Lat. sol — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Faça o melhor com a luz do dia.",
+      "text": "sol Lat. sol — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Faça o melhor com a luz do dia. lexico guia palavras glossário sol"
+    },
+    {
       "title": "Solitário",
       "url": "/posts/post-inspecao-palavra-solitario.html",
       "excerpt": "Navegar e invernar sozinha — não isolamento romântico: método, medo e escrita.",
@@ -4370,6 +4466,24 @@
       "text": "Sorteios Sorteios do laboratório — prémios e avisos para a comunidade. titulo guia palavras glossário sorteios"
     },
     {
+      "title": "sozinho",
+      "url": "/posts/post-inspecao-palavra-sozna.html",
+      "excerpt": "Lat. sōlus + -zinho — estado só (masc.); par sozinha; forma oral sozna; ≠ solitário; Faça o melhor sem vergonha.",
+      "text": "sozinho Lat. sōlus + -zinho — estado só (masc.); par sozinha; forma oral sozna; ≠ solitário; Faça o melhor sem vergonha. lexico guia palavras glossário sozinho"
+    },
+    {
+      "title": "sozna",
+      "url": "/posts/post-inspecao-palavra-sozna.html",
+      "excerpt": "Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — estado só; ≠ solitário; Faça o melhor sem vergonha.",
+      "text": "sozna Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — estado só; ≠ solitário; Faça o melhor sem vergonha. lexico guia palavras glossário sozna"
+    },
+    {
+      "title": "Stephen King",
+      "url": "/posts/post-inspecao-figura-stephen-king.html",
+      "excerpt": "Escritor; no site, ficha em Pessoas com elo em Um Sonho de Liberdade — autor, não marca de horror.",
+      "text": "Stephen King Escritor; no site, ficha em Pessoas com elo em Um Sonho de Liberdade — autor, não marca de horror. lexico guia palavras glossário stephen-king"
+    },
+    {
       "title": "Substância controlada",
       "url": "/posts/post-inspecao-palavra-substancia-controlada.html",
       "excerpt": "Meta-rótulo do estatuto regulatório (listas, receituário) — distinto de ilícito automático e dos nomes populares.",
@@ -4380,6 +4494,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Base onde a planta cresce — terra, fibra de coco, misturas biodegradáveis…",
       "text": "Substrato Base onde a planta cresce — terra, fibra de coco, misturas biodegradáveis… tecnico guia palavras glossário substrato"
+    },
+    {
+      "title": "sugestão",
+      "url": "/posts/post-inspecao-palavra-sugestao.html",
+      "excerpt": "Lat. suggestio — ato de sugerir / palpite; no lab, item da fila de inspeções; Faça o melhor nesta proposta.",
+      "text": "sugestão Lat. suggestio — ato de sugerir / palpite; no lab, item da fila de inspeções; Faça o melhor nesta proposta. lexico guia palavras glossário sugestao"
     },
     {
       "title": "Sugestões",
@@ -4398,6 +4518,12 @@
       "url": "/posts/post-inspecao-palavra-papel-enrolar-tabaco.html",
       "excerpt": "Planta americana (Nicotiana); vocábulo via espanhol; distinto de maconha; elo papel de enrolar.",
       "text": "tabaco Planta americana (Nicotiana); vocábulo via espanhol; distinto de maconha; elo papel de enrolar. lexico guia palavras glossário tabaco"
+    },
+    {
+      "title": "tempo",
+      "url": "/posts/post-inspecao-palavra-tempo.html",
+      "excerpt": "Lat. tempus — cronologia, clima («tempo bom») e compasso musical na mesma palavra; kairós × chronos; elos sempre/passado/alma; Faça o melhor com o tempo que se tem.",
+      "text": "tempo Lat. tempus — cronologia, clima («tempo bom») e compasso musical na mesma palavra; kairós × chronos; elos sempre/passado/alma; Faça o melhor com o tempo que se tem. lexico guia palavras glossário tempo"
     },
     {
       "title": "Terpeno",
@@ -4424,16 +4550,16 @@
       "text": "tisana (receita) Receita de chá de plantas no guia de receitas — medida, tempo e aviso; ver também manual de preparo. tecnico guia palavras glossário tisana-receita"
     },
     {
+      "title": "Tom Jobim",
+      "url": "/posts/post-inspecao-figura-tom-jobim.html",
+      "excerpt": "Compositor da bossa — palavra-música; Águas de Março; dedicatória lab «Adoro origami».",
+      "text": "Tom Jobim Compositor da bossa — palavra-música; Águas de Março; dedicatória lab «Adoro origami». lexico guia palavras glossário tom-jobim"
+    },
+    {
       "title": "total",
       "url": "/posts/post-inspecao-palavra-total.html",
       "excerpt": "Lat. tōtus — inteiro/soma; gíria BR «total!» (acordo/louvor); escala com legal e fantástico; Faça o melhor!",
       "text": "total Lat. tōtus — inteiro/soma; gíria BR «total!» (acordo/louvor); escala com legal e fantástico; Faça o melhor! lexico guia palavras glossário total"
-    },
-    {
-      "title": "tudo",
-      "url": "/posts/post-inspecao-palavra-tudo.html",
-      "excerpt": "Família totus — totalidade e o essencial; no lab, foco para não perder a alma; Faça o melhor.",
-      "text": "tudo Família totus — totalidade e o essencial; no lab, foco para não perder a alma; Faça o melhor. lexico guia palavras glossário tudo"
     },
     {
       "title": "Tráfico",
@@ -4460,10 +4586,22 @@
       "text": "Tristeza Sentimento azul que também ajuda a cuidar e a pedir ajuda — emoção da Riley. lexico guia palavras glossário tristeza"
     },
     {
+      "title": "tudo",
+      "url": "/posts/post-inspecao-palavra-tudo.html",
+      "excerpt": "Família totus — totalidade e o essencial; no lab, foco para não perder a alma; Faça o melhor.",
+      "text": "tudo Família totus — totalidade e o essencial; no lab, foco para não perder a alma; Faça o melhor. lexico guia palavras glossário tudo"
+    },
+    {
       "title": "Ultraprocessado",
       "url": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html",
       "excerpt": "Alimento de desenho industrial (formulacões, aditivos, marketing) — caso-âncora de commodity que adoece na pesquisa molécula→lixo.",
       "text": "Ultraprocessado Alimento de desenho industrial (formulacões, aditivos, marketing) — caso-âncora de commodity que adoece na pesquisa molécula→lixo. tecnico guia palavras glossário ultraprocessado"
+    },
+    {
+      "title": "Um Sonho de Liberdade",
+      "url": "/posts/post-inspecao-filme-um-sonho-de-liberdade.html",
+      "excerpt": "Filme de 1994 (The Shawshank Redemption); no site, inspeção em Artes com génese na novela de Stephen King (1982).",
+      "text": "Um Sonho de Liberdade Filme de 1994 (The Shawshank Redemption); no site, inspeção em Artes com génese na novela de Stephen King (1982). lexico guia palavras glossário um-sonho-de-liberdade"
     },
     {
       "title": "Unha-de-gato",
@@ -4494,6 +4632,12 @@
       "url": "/posts/post-inspecao-palavra-valeu.html",
       "excerpt": "De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de muitoobrigado; gesto, respeito; Faça o melhor — e valeu.",
       "text": "valeu De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de muitoobrigado; gesto, respeito; Faça o melhor — e valeu. lexico guia palavras glossário valeu"
+    },
+    {
+      "title": "veneno",
+      "url": "/posts/post-inspecao-filme-venom.html",
+      "excerpt": "Aviso vermelho · Toxina. Comum: substância tóxica. BudGanja: carga afectiva no lugar do cuidado — ≠ toxina de planta.",
+      "text": "veneno Aviso vermelho · Toxina. Comum: substância tóxica. BudGanja: carga afectiva no lugar do cuidado — ≠ toxina de planta. aviso guia palavras glossário aviso-veneno"
     },
     {
       "title": "Verdade",
@@ -4532,6 +4676,12 @@
       "text": "Vídeos Aulas e clips do Inspetor, MovReCam, CANABinALL e divulgação (Lair). titulo guia palavras glossário videos"
     },
     {
+      "title": "vingança",
+      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
+      "excerpt": "Aviso vermelho · Retaliação. Comum: desforra. BudGanja: promete equilíbrio e cobra o preço em quem a cultiva.",
+      "text": "vingança Aviso vermelho · Retaliação. Comum: desforra. BudGanja: promete equilíbrio e cobra o preço em quem a cultiva. aviso guia palavras glossário aviso-vinganca"
+    },
+    {
       "title": "William Davis",
       "url": "/posts/post-inspecao-figura-william-davis.html",
       "excerpt": "Cardiologista autor de Barriga de Trigo — divulgação anti-trigo (Pessoas).",
@@ -4542,156 +4692,6 @@
       "url": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
       "excerpt": "Prática corpo-mente no bloco XIV de PIC endógenas; retiros intensivos (ex. 4 dias) aparecem em estudos observacionais com ↑ AEA, 2-AG e BDNF.",
       "text": "Yoga Prática corpo-mente no bloco XIV de PIC endógenas; retiros intensivos (ex. 4 dias) aparecem em estudos observacionais com ↑ AEA, 2-AG e BDNF. tecnico guia palavras glossário yoga"
-    },
-    {
-      "title": "Aleff",
-      "url": "/posts/post-inspecao-figura-aleff.html",
-      "excerpt": "Aliffe Henrique de Carvalho (Aleff), de Machado (MG); no site, ficha em Pessoas — a pessoa, não a persona de ecrã.",
-      "text": "Aleff Aliffe Henrique de Carvalho (Aleff), de Machado (MG); no site, ficha em Pessoas — a pessoa, não a persona de ecrã. lexico guia palavras glossário aleff"
-    },
-    {
-      "title": "De Volta para o Futuro",
-      "url": "/posts/post-inspecao-filme-de-volta-para-o-futuro.html",
-      "excerpt": "Filme de 1985 (Zemeckis/Gale); no site, inspeção em Artes com homenagem aos actores e fichas de Fox e Lloyd.",
-      "text": "De Volta para o Futuro Filme de 1985 (Zemeckis/Gale); no site, inspeção em Artes com homenagem aos actores e fichas de Fox e Lloyd. lexico guia palavras glossário de-volta-para-o-futuro"
-    },
-    {
-      "title": "Michael J. Fox",
-      "url": "/posts/post-inspecao-figura-michael-j-fox.html",
-      "excerpt": "Actor (Michael Andrew Fox); no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não personagem.",
-      "text": "Michael J. Fox Actor (Michael Andrew Fox); no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não personagem. lexico guia palavras glossário michael-j-fox"
-    },
-    {
-      "title": "Christopher Lloyd",
-      "url": "/posts/post-inspecao-figura-christopher-lloyd.html",
-      "excerpt": "Actor; no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não persona do Doc.",
-      "text": "Christopher Lloyd Actor; no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não persona do Doc. lexico guia palavras glossário christopher-lloyd"
-    },
-    {
-      "title": "DeLorean",
-      "url": "/posts/post-inspecao-delorean.html",
-      "excerpt": "Coupé DMC (Giugiaro, Dunmurry, 1981–82); no site, inspeção de objecto em Artes — o carro real; a máquina do filme é camada.",
-      "text": "DeLorean Coupé DMC (Giugiaro, Dunmurry, 1981–82); no site, inspeção de objecto em Artes — o carro real; a máquina do filme é camada. lexico guia palavras glossário delorean"
-    },
-    {
-      "title": "Questão de Tempo",
-      "url": "/posts/post-inspecao-filme-questao-de-tempo.html",
-      "excerpt": "Filme de 2013 (About Time); no site, inspeção em Artes com destaque para o autor Richard Curtis.",
-      "text": "Questão de Tempo Filme de 2013 (About Time); no site, inspeção em Artes com destaque para o autor Richard Curtis. lexico guia palavras glossário questao-de-tempo"
-    },
-    {
-      "title": "Richard Curtis",
-      "url": "/posts/post-inspecao-figura-richard-curtis.html",
-      "excerpt": "Argumentista e realizador; no site, ficha em Pessoas com elo em Questão de Tempo — autor, não marca.",
-      "text": "Richard Curtis Argumentista e realizador; no site, ficha em Pessoas com elo em Questão de Tempo — autor, não marca. lexico guia palavras glossário richard-curtis"
-    },
-    {
-      "title": "Um Sonho de Liberdade",
-      "url": "/posts/post-inspecao-filme-um-sonho-de-liberdade.html",
-      "excerpt": "Filme de 1994 (The Shawshank Redemption); no site, inspeção em Artes com génese na novela de Stephen King (1982).",
-      "text": "Um Sonho de Liberdade Filme de 1994 (The Shawshank Redemption); no site, inspeção em Artes com génese na novela de Stephen King (1982). lexico guia palavras glossário um-sonho-de-liberdade"
-    },
-    {
-      "title": "Stephen King",
-      "url": "/posts/post-inspecao-figura-stephen-king.html",
-      "excerpt": "Escritor; no site, ficha em Pessoas com elo em Um Sonho de Liberdade — autor, não marca de horror.",
-      "text": "Stephen King Escritor; no site, ficha em Pessoas com elo em Um Sonho de Liberdade — autor, não marca de horror. lexico guia palavras glossário stephen-king"
-    },
-    {
-      "title": "Encontro Marcado",
-      "url": "/posts/post-inspecao-filme-encontro-marcado.html",
-      "excerpt": "Filme de 1998 (Meet Joe Black); no site, inspeção em Artes com génese na peça de Alberto Casella (1924).",
-      "text": "Encontro Marcado Filme de 1998 (Meet Joe Black); no site, inspeção em Artes com génese na peça de Alberto Casella (1924). lexico guia palavras glossário encontro-marcado"
-    },
-    {
-      "title": "Coração Valente",
-      "url": "/posts/post-inspecao-filme-coracao-valente.html",
-      "excerpt": "Filme de 1995 (Braveheart); no site, inspeção em Artes com génese na lenda de Wallace / Blind Harry. Ficha própria, distinta de A Paixão de Cristo.",
-      "text": "Coração Valente Filme de 1995 (Braveheart); no site, inspeção em Artes com génese na lenda de Wallace / Blind Harry. Ficha própria, distinta de A Paixão de Cristo. lexico guia palavras glossário coracao-valente"
-    },
-    {
-      "title": "A Paixão de Cristo",
-      "url": "/posts/post-inspecao-filme-a-paixao-de-cristo.html",
-      "excerpt": "Filme de 2004; no site, inspeção em Artes com génese nos Evangelhos. Ficha própria, distinta de Coração Valente.",
-      "text": "A Paixão de Cristo Filme de 2004; no site, inspeção em Artes com génese nos Evangelhos. Ficha própria, distinta de Coração Valente. lexico guia palavras glossário a-paixao-de-cristo"
-    },
-    {
-      "title": "Mel Gibson",
-      "url": "/posts/post-inspecao-figura-mel-gibson.html",
-      "excerpt": "Actor e realizador; no site, ficha em Pessoas com elos em Coração Valente (1995) e A Paixão de Cristo (2004) — ofício, não cartaz nem dossiê.",
-      "text": "Mel Gibson Actor e realizador; no site, ficha em Pessoas com elos em Coração Valente (1995) e A Paixão de Cristo (2004) — ofício, não cartaz nem dossiê. lexico guia palavras glossário mel-gibson"
-    },
-    {
-      "title": "Friends",
-      "url": "/posts/post-inspecao-serie-friends.html",
-      "excerpt": "Sitcom de 1994–2004; no site, inspeção em Artes — Crane / Kauffman; a série é o texto. Ficha própria, distinta de How I Met Your Mother.",
-      "text": "Friends Sitcom de 1994–2004; no site, inspeção em Artes — Crane / Kauffman; a série é o texto. Ficha própria, distinta de How I Met Your Mother. lexico guia palavras glossário friends"
-    },
-    {
-      "title": "How I Met Your Mother",
-      "url": "/posts/post-inspecao-serie-how-i-met-your-mother.html",
-      "excerpt": "Sitcom de 2005–2014; no site, inspeção em Artes — Bays / Thomas; relato e tempo. Ficha própria, distinta de Friends.",
-      "text": "How I Met Your Mother Sitcom de 2005–2014; no site, inspeção em Artes — Bays / Thomas; relato e tempo. Ficha própria, distinta de Friends. lexico guia palavras glossário how-i-met-your-mother"
-    },
-    {
-      "title": "vingança",
-      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
-      "excerpt": "Aviso vermelho · Retaliação. Comum: desforra. BudGanja: promete equilíbrio e cobra o preço em quem a cultiva.",
-      "text": "vingança Aviso vermelho · Retaliação. Comum: desforra. BudGanja: promete equilíbrio e cobra o preço em quem a cultiva. aviso guia palavras glossário aviso-vinganca"
-    },
-    {
-      "title": "retaliação",
-      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
-      "excerpt": "Aviso vermelho · Retaliação. Comum: olho por olho. BudGanja: conta que a frase diz nunca fechar («nunca é plena»).",
-      "text": "retaliação Aviso vermelho · Retaliação. Comum: olho por olho. BudGanja: conta que a frase diz nunca fechar («nunca é plena»). aviso guia palavras glossário aviso-retaliacao"
-    },
-    {
-      "title": "revidar",
-      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
-      "excerpt": "Aviso vermelho · Retaliação. Comum: devolver o golpe. BudGanja: impulso que a oralidade avisa contra.",
-      "text": "revidar Aviso vermelho · Retaliação. Comum: devolver o golpe. BudGanja: impulso que a oralidade avisa contra. aviso guia palavras glossário aviso-revidar"
-    },
-    {
-      "title": "matar / mata",
-      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
-      "excerpt": "Aviso vermelho · Dano à vida. Comum: tirar a vida. BudGanja: na frase = esvaziar o centro íntimo, não homicídio literal.",
-      "text": "matar / mata Aviso vermelho · Dano à vida. Comum: tirar a vida. BudGanja: na frase = esvaziar o centro íntimo, não homicídio literal. aviso guia palavras glossário aviso-matar"
-    },
-    {
-      "title": "veneno",
-      "url": "/posts/post-inspecao-filme-venom.html",
-      "excerpt": "Aviso vermelho · Toxina. Comum: substância tóxica. BudGanja: carga afectiva no lugar do cuidado — ≠ toxina de planta.",
-      "text": "veneno Aviso vermelho · Toxina. Comum: substância tóxica. BudGanja: carga afectiva no lugar do cuidado — ≠ toxina de planta. aviso guia palavras glossário aviso-veneno"
-    },
-    {
-      "title": "envenenar / envenena",
-      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
-      "excerpt": "Aviso vermelho · Toxina. Comum: aplicar veneno. BudGanja: corrompe por dentro — dose que fica no próprio sujeito.",
-      "text": "envenenar / envenena Aviso vermelho · Toxina. Comum: aplicar veneno. BudGanja: corrompe por dentro — dose que fica no próprio sujeito. aviso guia palavras glossário aviso-envenenar"
-    },
-    {
-      "title": "corromper",
-      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
-      "excerpt": "Aviso vermelho · Toxina. Comum: estragar. BudGanja: segundo dano da frase («envenena»).",
-      "text": "corromper Aviso vermelho · Toxina. Comum: estragar. BudGanja: segundo dano da frase («envenena»). aviso guia palavras glossário aviso-corromper"
-    },
-    {
-      "title": "rancor",
-      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
-      "excerpt": "Aviso vermelho · Afecto tóxico. Comum: mágoa guardada. BudGanja: o ditado trata-o como dose auto-ingerida.",
-      "text": "rancor Aviso vermelho · Afecto tóxico. Comum: mágoa guardada. BudGanja: o ditado trata-o como dose auto-ingerida. aviso guia palavras glossário aviso-rancor"
-    },
-    {
-      "title": "ressentimento",
-      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
-      "excerpt": "Aviso vermelho · Afecto tóxico. Comum: mágoa persistente. BudGanja: ferida que continua a actuar — nutriente do rancor.",
-      "text": "ressentimento Aviso vermelho · Afecto tóxico. Comum: mágoa persistente. BudGanja: ferida que continua a actuar — nutriente do rancor. aviso guia palavras glossário aviso-ressentimento"
-    },
-    {
-      "title": "esvaziar",
-      "url": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
-      "excerpt": "Aviso vermelho · Esvaziamento. Comum: deixar vazio. BudGanja: primeiro dano da frase («mata a alma»).",
-      "text": "esvaziar Aviso vermelho · Esvaziamento. Comum: deixar vazio. BudGanja: primeiro dano da frase («mata a alma»). aviso guia palavras glossário aviso-esvaziar"
     }
   ]
 }
