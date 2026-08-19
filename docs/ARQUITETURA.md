@@ -47,7 +47,7 @@ O que parece “extenso” na raiz é, na maior parte, o **site publicado**. O c
 | **Pipeline** | `scripts/` | `npm run build`, migrações, sync páginas ↔ BD |
 | **Conteúdo / seed** | `content/` | JSON de site, páginas, guia, sorteio (espelho da BD) |
 | **Base de dados** | `data/budganja.db` | SQLite local (não versionado) |
-| **Deploy** | `deploy/`, `netlify/` | Túnel Cloudflare, TWA Android, functions Netlify |
+| **Deploy** | `deploy/`, `netlify/`, `functions/`, `wrangler.toml` | Túnel Cloudflare, Cloudflare Pages, TWA Android, functions Netlify |
 | **Uploads** | `uploads/` | Imagens enviadas pelo admin |
 
 ## `lib/` — mapa rápido
@@ -96,7 +96,7 @@ Um layout `apps/web` + `packages/api` só compensa se o projeto crescer para **v
 | `login.html`, `admin.html` | URLs fixas do admin |
 | `sw.js`, `manifest.json` | PWA na raiz por convenção |
 | `posts.json` | Fonte legada / espelho de metadados |
-| `netlify.toml`, `_redirects` | Config de hosting |
+| `netlify.toml`, `_redirects`, `wrangler.toml`, `_headers` | Config de hosting (Netlify + Cloudflare Pages) |
 
 ## Resumo
 

@@ -64,3 +64,7 @@ imagens/**/_src/
 
 # Local Netlify folder
 .netlify
+
+# Cloudflare Pages / Wrangler
+.wrangler/
+.dev.vars

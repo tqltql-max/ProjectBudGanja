@@ -58,6 +58,8 @@ Lista completa (todos os `npm run …`): **[docs/log-comandos-npm.md](docs/log-c
 | `npm run start:quick` | Arranque rápido local (sem migrate/build) |
 | `npm run start:quick:tunnel` | Arranque rápido local + túnel Cloudflare (sem migrate/build) |
 | `npm run deploy:online` | Build + servidor + túnel para publicar online num comando só |
+| `npm run pages:dev` | Pré-visualização Cloudflare Pages (precisa `.dev.vars` + Turso) |
+| `npm run pages:deploy` | Build + publicação na Cloudflare Pages |
 | `npm run build` | Build completo: posts, páginas, guia, YouTube, busca, sitemap |
 | `npm run build:posts` | Regenera HTML dos posts a partir de `posts.json` |
 | `npm run sync:pages` | Sincroniza `content/pages.json` a partir dos HTML |
@@ -133,9 +135,34 @@ O Digital Asset Links já fica em `deploy/android/assetlinks.config.json` (finge
 4. `npm run build` — publica `/.well-known/assetlinks.json`
 5. `.\deploy\android\build-twa.ps1` — gera `.aab` para a Play Console
 
-## Publicar — inspetorbudganja.com.br (Registro.br)
+## Publicar — inspetorbudganja.com.br
 
-Modo prático: **Cloudflare + túnel no PC Windows** (pasta `deploy/`).
+### Cloudflare Pages (recomendado — site sempre ligado)
+
+O PC **não** precisa ficar ligado. Estáticos na Cloudflare; API em Pages Functions + Turso.
+
+1. `npx wrangler login` (uma vez, browser da Cloudflare)
+2. Copie `.dev.vars.example` → `.dev.vars` e preencha Turso / senhas (só local)
+3. No [dashboard Turso](https://turso.tech) (ou o que já usa no Netlify), copie `TURSO_DATABASE_URL` e `TURSO_AUTH_TOKEN`
+4. ```powershell
+   .\deploy\cloudflare-pages.ps1
+   ```
+   ou `npm run pages:deploy`
+5. Dashboard → **Workers & Pages** → `inspetor-budganja` → **Settings → Variables** (Production):
+   - `TURSO_DATABASE_URL`, `TURSO_AUTH_TOKEN`
+   - `RESEARCH_PASS`, `ADMIN_USER`, `ADMIN_EMAILS`
+   - `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`
+   - `GEMINI_API_KEY` (opcional)
+6. **Custom domains** → `inspetorbudganja.com.br` e `www` (a zona DNS já na Cloudflare)
+7. Uploads (opcional): `npx wrangler r2 bucket create budganja-uploads` e descomente `[[r2_buckets]]` em `wrangler.toml`
+
+Pré-visualização local do modo Pages: `npm run pages:dev` (não substitui `npm start` para desenvolvimento do dia-a-dia).
+
+**URL canónica:** https://inspetorbudganja.com.br · Admin: `/login.html`
+
+### Túnel no PC Windows (alternativa)
+
+O domínio aponta para `localhost:8080` neste computador. Se o PC desligar, o site cai.
 
 1. [Cloudflare](https://dash.cloudflare.com) → Add site → `inspetorbudganja.com.br`
 2. [Registro.br](https://registro.br) → **Alterar servidores DNS** → 2 nameservers da Cloudflare
@@ -157,7 +184,7 @@ Modo prático: **Cloudflare + túnel no PC Windows** (pasta `deploy/`).
    .\deploy\start-site.ps1
    ```
 
-**URL canónica:** https://inspetorbudganja.com.br · Admin: `/login.html`
+O PC deve ficar ligado (PM2: `pm2 status`).
 
 ### Domínios alias (.com)
 
@@ -177,7 +204,7 @@ Opcional: Redirect Rule 301 na edge → `https://inspetorbudganja.com.br${uri}`.
 
 `SITE_URL` continua `https://inspetorbudganja.com.br`.
 
-O PC deve ficar ligado (PM2: `pm2 status`).
+Com **Cloudflare Pages**, em vez do CNAME do túnel, adicione cada domínio em **Custom domains** (não use túnel e Pages no mesmo hostname ao mesmo tempo).
 
 ### Testes locais
 

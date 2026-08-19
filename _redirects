@@ -42,5 +42,10 @@
 /lib/*             /404 404!
 /scripts/*         /404 404!
 /server/*          /404 404!
+/functions/*       /404 404!
 /_*                /404 404!
 /deploy/*          /404 404!
+/wrangler.toml     /404 404!
+
+https://inspectorbudganja.com/* https://www.inspectorbudganja.com/:splat 301!
+https://inspectorbudganja.com/ https://www.inspectorbudganja.com/ 301!

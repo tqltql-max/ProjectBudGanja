@@ -15,6 +15,8 @@ npm run start:dev
 npm run start:quick
 npm run start:quick:tunnel
 npm run deploy:online
+npm run pages:dev
+npm run pages:deploy
 ```
 
 | Comando | O que faz |
@@ -23,6 +25,8 @@ npm run deploy:online
 | `npm run start:quick` | Arranque rápido local (sem migrate/build) |
 | `npm run start:quick:tunnel` | Local + túnel Cloudflare |
 | `npm run deploy:online` | Build + servidor + túnel (`deploy/start-site.ps1`) |
+| `npm run pages:dev` | Pré-visualização Cloudflare Pages |
+| `npm run pages:deploy` | Build + deploy Cloudflare Pages (`deploy/cloudflare-pages.ps1`) |
 
 ---
 

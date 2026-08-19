@@ -1,0 +1,12 @@
+# Copie para .dev.vars (não versionar) — usado por `npm run pages:dev`
+# Os mesmos valores de produção da Cloudflare Pages / .env
+
+TURSO_DATABASE_URL=
+TURSO_AUTH_TOKEN=
+ADMIN_USER=admin
+RESEARCH_PASS=
+ADMIN_EMAILS=inspetorbudganja@gmail.com
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GEMINI_API_KEY=
+SITE_URL=https://inspetorbudganja.com.br

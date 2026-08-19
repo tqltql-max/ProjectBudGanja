@@ -9,6 +9,8 @@
     "start:quick": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-dev.ps1",
     "start:quick:tunnel": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-dev.ps1 -Tunnel",
     "deploy:online": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-site.ps1",
+    "pages:dev": "npx wrangler pages dev",
+    "pages:deploy": "npm run build && npx wrangler pages deploy",
     "build": "node scripts/build.js",
     "stamp:hero": "node scripts/stamp-assets.js",
     "optimize:hero": "node scripts/optimize-hero.js",
