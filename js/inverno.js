@@ -96,10 +96,7 @@
     var el = document.getElementById('inverno-poem');
     if (!el) return;
     var raw = t('pages.inverno.poemBody', el.textContent || '');
-    var stanzas = String(raw).replace(/\\n/g, '\n').split(/\n{2,}/);
-    el.innerHTML = stanzas.map(function (block) {
-      return '<p>' + block.replace(/</g, '&lt;').replace(/\n/g, '<br>') + '</p>';
-    }).join('');
+    el.textContent = String(raw).replace(/\\n/g, '\n').replace(/\r\n/g, '\n').trim();
   }
 
   function initSnow() {

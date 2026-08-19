@@ -353,24 +353,15 @@ body[data-page="inverno"] #main-content {
 
 .inverno-poem {
     margin: 1.4rem 0 0;
-    padding: 1.2rem 1.2rem 1.3rem;
-    border: 1px solid rgba(232, 238, 244, 0.1);
-    background: rgba(232, 238, 244, 0.04);
-    font-style: italic;
-    font-size: 1.08rem;
-    line-height: 1.65;
-    color: var(--inverno-ice);
-}
-
-.inverno-poem p {
-    margin: 0 0 1rem;
-}
-
-.inverno-poem p:last-child {
-    margin-bottom: 0;
+    padding: 0;
+    border: 0;
+    background: none;
     font-style: normal;
-    font-weight: 700;
-    color: var(--inverno-gold);
+    font-weight: 400;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--inverno-ice);
+    white-space: pre-line;
 }
 
 .inverno-map {
