@@ -1,14 +1,13 @@
 /**
- * Drone de inspeção — segue o ponteiro em qualquer página,
- * sublinha a vermelho as palavras do glossário e mostra o significado
- * no idioma do site (ou no idioma do modo Aprender, se estiver ligado).
+ * Drone de inspeção — segue o ponteiro em qualquer página e mostra
+ * o significado da palavra no popup, no idioma do site (ou no idioma
+ * do modo Aprender, se estiver ligado). O texto da página não muda.
  */
 (function (global) {
   'use strict';
 
   var STORAGE_KEY = 'budganja-drone';
   var SIZE = 104;
-  var CATCH = 72;
   var SKIP_SEL = 'script, style, textarea, input, select, option, code, pre, svg, button, a.botao, .site-drone, .inverno-drone, .learn-toolbar, #site-header, #site-footer, .header-bar, .mobile-menu';
   var WORD_CHARS = /[A-Za-zÀ-ÿ]/;
   var LANG_NAMES = {
@@ -37,9 +36,7 @@
     y: 0,
     tx: 0,
     ty: 0,
-    currentWord: null,
-    currentSrc: '',
-    wrapping: false
+    currentSrc: ''
   };
 
   function t(key, fallback) {
@@ -273,72 +270,25 @@
     return { start: start, end: end, word: text.slice(start, end) };
   }
 
-  function wrapAt(textNode, start, end, src) {
-    var parent = textNode.parentNode;
-    if (!parent) return null;
-    var text = textNode.nodeValue;
-    var span = document.createElement('span');
-    span.className = 'learn-word learn-word--danger site-drone-mark';
-    span.setAttribute('data-learn-src', src);
-    span.setAttribute('data-drone-own', 'hover');
-    span.textContent = text.slice(start, end);
-    var before = text.slice(0, start);
-    var after = text.slice(end);
-    if (before) parent.insertBefore(document.createTextNode(before), textNode);
-    parent.insertBefore(span, textNode);
-    if (after) parent.insertBefore(document.createTextNode(after), textNode);
-    parent.removeChild(textNode);
-    return span;
-  }
-
-  function nearestMarked(clientX, clientY) {
-    var nodes = document.querySelectorAll('.learn-word--danger, .learn-word[data-learn-tone="danger"], .site-drone-mark');
-    var best = null;
-    var bestD = CATCH;
-    for (var i = 0; i < nodes.length; i++) {
-      var el = nodes[i];
-      var r = el.getBoundingClientRect();
-      if (!r.width && !r.height) continue;
-      var cx = r.left + r.width / 2;
-      var cy = r.top + r.height / 2;
-      var d = Math.hypot(clientX - cx, clientY - cy);
-      if (d < bestD) {
-        bestD = d;
-        best = el;
-      }
-    }
-    return best;
-  }
-
   function wordAtPointer(clientX, clientY) {
     var hit = document.elementFromPoint(clientX, clientY);
     if (hit && hit.closest) {
       var wrapped = hit.closest('.learn-word');
-      if (wrapped) return wrapped;
-      if (shouldSkipNode(hit)) return null;
+      if (wrapped) return wrapped.getAttribute('data-learn-src') || wrapped.textContent || '';
+      if (shouldSkipNode(hit)) return '';
     }
     var range = rangeFromPoint(clientX, clientY);
-    if (!range || !range.startContainer || range.startContainer.nodeType !== 3) return null;
-    if (shouldSkipNode(range.startContainer)) return null;
+    if (!range || !range.startContainer || range.startContainer.nodeType !== 3) return '';
+    if (shouldSkipNode(range.startContainer)) return '';
     var text = range.startContainer.nodeValue || '';
     var bounds = wordBounds(text, range.startOffset);
-    if (!bounds) return null;
+    if (!bounds) return '';
     var g = glossary();
-    if (!g || !g.findEntry(bounds.word)) return null;
-    var parent = range.startContainer.parentElement;
-    if (parent && parent.closest && parent.closest('.learn-word')) return parent.closest('.learn-word');
-    return wrapAt(range.startContainer, bounds.start, bounds.end, bounds.word);
+    if (!g || !g.findEntry(bounds.word)) return '';
+    return bounds.word;
   }
 
-  function clearHoverMarks(except) {
-    document.querySelectorAll('[data-drone-own="hover"]').forEach(function (el) {
-      if (el === except) return;
-      var text = el.getAttribute('data-learn-src') || el.textContent || '';
-      el.replaceWith(document.createTextNode(text));
-    });
-  }
-
-  function clearOwnMarks() {
+  function unwrapOwnMarks() {
     document.querySelectorAll('[data-drone-own]').forEach(function (el) {
       var text = el.getAttribute('data-learn-src') || el.textContent || '';
       el.replaceWith(document.createTextNode(text));
@@ -347,21 +297,17 @@
 
   function inspectAt(clientX, clientY) {
     if (!state.on) return;
-    var wordEl = nearestMarked(clientX, clientY) || wordAtPointer(clientX, clientY);
-    if (!wordEl) {
-      if (state.currentWord) {
-        clearHoverMarks(null);
-        state.currentWord = null;
+    var hit = document.elementFromPoint(clientX, clientY);
+    if (hit && hit.closest && hit.closest('#site-drone, .site-drone')) return;
+    var src = wordAtPointer(clientX, clientY);
+    if (!src) {
+      if (state.currentSrc) {
         state.currentSrc = '';
         fillTip(null);
       }
       return;
     }
-    var src = wordEl.getAttribute('data-learn-src') || wordEl.textContent || '';
-    if (state.currentSrc === src && state.currentWord === wordEl) return;
-    clearHoverMarks(wordEl);
-    wordEl.classList.add('site-drone-mark');
-    state.currentWord = wordEl;
+    if (state.currentSrc === src) return;
     state.currentSrc = src;
     fillTip(meaningOf(src));
   }
@@ -465,9 +411,8 @@
 
   function dimDrone() {
     fillTip(null);
-    state.currentWord = null;
     state.currentSrc = '';
-    clearOwnMarks();
+    unwrapOwnMarks();
     if (state.drone) {
       state.drone.classList.remove('is-lit');
       state.drone.setAttribute('aria-pressed', 'false');
@@ -494,58 +439,6 @@
     try {
       global.dispatchEvent(new CustomEvent('budganja:drone-change', { detail: { on: false } }));
     } catch (err) { /* ignore */ }
-  }
-
-  function wrapDangerWords() {
-    var g = glossary();
-    var root = document.getElementById('main-content') || document.body;
-    if (!g || !root || state.wrapping) return;
-    state.wrapping = true;
-    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
-      acceptNode: function (node) {
-        if (shouldSkipNode(node)) return NodeFilter.FILTER_REJECT;
-        if (node.parentElement && node.parentElement.closest && node.parentElement.closest('.learn-word')) {
-          return NodeFilter.FILTER_REJECT;
-        }
-        if (!node.nodeValue || !/\S/.test(node.nodeValue)) return NodeFilter.FILTER_REJECT;
-        return NodeFilter.FILTER_ACCEPT;
-      }
-    });
-    var nodes = [];
-    var n;
-    while ((n = walker.nextNode())) nodes.push(n);
-    nodes.forEach(function (node) {
-      var text = node.nodeValue;
-      var re = /[A-Za-zÀ-ÿ]+(?:['’-][A-Za-zÀ-ÿ]+)*/g;
-      var m;
-      var parts = [];
-      var last = 0;
-      var changed = false;
-      while ((m = re.exec(text)) !== null) {
-        if (g.toneOf(m[0]) !== 'danger') continue;
-        changed = true;
-        if (m.index > last) parts.push({ t: text.slice(last, m.index) });
-        parts.push({ w: m[0] });
-        last = m.index + m[0].length;
-      }
-      if (!changed) return;
-      if (last < text.length) parts.push({ t: text.slice(last) });
-      var frag = document.createDocumentFragment();
-      parts.forEach(function (part) {
-        if (part.t) {
-          frag.appendChild(document.createTextNode(part.t));
-          return;
-        }
-        var span = document.createElement('span');
-        span.className = 'learn-word learn-word--danger site-drone-mark';
-        span.setAttribute('data-learn-src', part.w);
-        span.setAttribute('data-drone-own', 'page');
-        span.textContent = part.w;
-        frag.appendChild(span);
-      });
-      if (node.parentNode) node.parentNode.replaceChild(frag, node);
-    });
-    state.wrapping = false;
   }
 
   function syncButtons() {
@@ -599,7 +492,7 @@
     }
     ensureGlossary(function () {
       if (!state.on) return;
-      wrapDangerWords();
+      unwrapOwnMarks();
       state.reduced = !!(global.matchMedia && global.matchMedia('(prefers-reduced-motion: reduce)').matches);
       state.flying = true;
       applyPose();

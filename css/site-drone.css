@@ -204,17 +204,6 @@
     color: #fff4c4;
 }
 
-.site-drone-mark,
-body.site-drone-on .learn-word--danger {
-    background: rgba(226, 58, 44, 0.16);
-    border-bottom: 2px solid #e23a2c;
-    border-radius: 0.12em;
-    text-decoration: underline;
-    text-decoration-color: #e23a2c;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.14em;
-}
-
 body.site-drone-on #inverno-drone,
 body.site-drone-ready #inverno-drone {
     display: none !important;
