@@ -15,7 +15,7 @@ const ICON_BLOCK = `    <link rel="icon" href="/imagens/favicon-32.v${ASSET_VERS
     <link rel="icon" href="/favicon.v${ASSET_VERSION}.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v${ASSET_VERSION}.png">
     <link rel="manifest" href="/manifest.json?v=${ASSET_VERSION}">
-    <meta name="theme-color" content="#a68628">`;
+    <meta name="theme-color" content="#0a2230">`;
 const ICON_LINE_RE =
   /^\s*<link[^>]*(?:rel=["'](?:icon|shortcut icon|apple-touch-icon|manifest)["']|href=["'][^"']*favicon)[^>]*>\s*$/gim;
 const THEME_LINE_RE = /^\s*<meta\s+name=["']theme-color["'][^>]*>\s*$/gim;

@@ -1,14 +1,14 @@
 /* Home — layout limpo na paleta do banner (sem efeitos especiais) */
 
 body[data-page="home"] {
-    --home-cream: #fef9d7;
-    --home-amber: #f5d885;
-    --home-gold: #dfc262;
-    --home-moss: #c2b168;
-    --home-lime: #7a9619;
-    --home-olive: #4e5e15;
-    --home-forest: #1b2a0e;
-    --home-ink: #0c1208;
+    --home-cream: #f4f8fc;
+    --home-amber: #c8f4ff;
+    --home-gold: #7dffd0;
+    --home-moss: #9be7ff;
+    --home-lime: #5ec8ff;
+    --home-olive: #3db8c8;
+    --home-forest: #0e2230;
+    --home-ink: #071018;
     background: transparent;
 }
 
@@ -17,9 +17,8 @@ body[data-page="home"] #main-content {
     isolation: isolate;
 }
 
-/* Sem drift da atmosfera na home */
 body[data-page="home"] .lab-atmosphere {
-    animation: none;
+    opacity: 0.16;
 }
 
 body[data-page="home"] .hero-eyebrow {
@@ -27,7 +26,7 @@ body[data-page="home"] .hero-eyebrow {
     font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: #2a3a12;
+    color: #9be7ff;
     text-shadow: none;
     filter: none;
     animation: none !important;
@@ -74,7 +73,7 @@ body[data-page="home"] .hero.hero--inverno {
     min-height: 0;
     max-height: none;
     aspect-ratio: auto;
-    background-color: #cfd6de;
+    background-color: #e8eef4;
     background-image: none;
     padding: 0;
 }
@@ -121,7 +120,7 @@ body[data-page="home"] .hero--inverno .hero-content {
     max-width: none;
     margin: 0;
     padding: 1.1rem var(--space-page-x) 1.35rem;
-    background: #0c1208;
+    background: #071018;
     text-align: center;
 }
 

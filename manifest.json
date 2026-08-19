@@ -10,24 +10,24 @@
     "standalone",
     "browser"
   ],
-  "background_color": "#000000",
-  "theme_color": "#a68628",
+  "background_color": "#071018",
+  "theme_color": "#0a2230",
   "orientation": "any",
   "icons": [
     {
-      "src": "/imagens/icon-192.v322.png",
+      "src": "/imagens/icon-192.v323.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/imagens/icon-512.v322.png",
+      "src": "/imagens/icon-512.v323.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/imagens/icon-512-maskable.v322.png",
+      "src": "/imagens/icon-512-maskable.v323.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

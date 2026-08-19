@@ -7,11 +7,11 @@ body[data-page="inverno"] {
     --inverno-mist: #9eb0c2;
     --inverno-deep: #0b1218;
     --inverno-ink: #d7e2ec;
-    --inverno-gold: #e2c15a;
-    --inverno-suit: #f0d24a;
+    --inverno-gold: #7dffd0;
+    --inverno-suit: #9be7ff;
     background:
         radial-gradient(ellipse 80% 50% at 10% 0%, rgba(158, 176, 194, 0.12), transparent 55%),
-        radial-gradient(ellipse 50% 40% at 90% 20%, rgba(226, 193, 90, 0.08), transparent 50%),
+        radial-gradient(ellipse 50% 40% at 90% 20%, rgba(94, 200, 255, 0.12), transparent 50%),
         var(--inverno-deep);
     color: var(--inverno-ink);
 }

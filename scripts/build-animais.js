@@ -24,7 +24,7 @@ const ICON_HEAD = `    <link rel="icon" href="/imagens/favicon-32.v${ASSET_VERSI
     <link rel="icon" href="/favicon.v${ASSET_VERSION}.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v${ASSET_VERSION}.png">
     <link rel="manifest" href="/manifest.json?v=${ASSET_VERSION}">
-    <meta name="theme-color" content="#a68628">`;
+    <meta name="theme-color" content="#0a2230">`;
 
 const SCRIPTS = `  <script src="/js/app-version-check.js?v=${ASSET_VERSION}"></script>
     <script src="/js/i18n-data.js?v=${ASSET_VERSION}"></script>

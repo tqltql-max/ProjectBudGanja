@@ -1,5 +1,46 @@
-/* Atmosfera partilhada do laboratório (rádio → resto do site)
-   Paleta do banner: creme central, âmbar e verdes oliva/floresta */
+/* Aurora boreal em todo o site — noite polar, branco de neve, cortinas verdes/ciano/violeta */
+
+body {
+    isolation: isolate;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    inset: -18% -8% auto -8%;
+    height: 78vh;
+    z-index: -1;
+    pointer-events: none;
+    will-change: transform, opacity;
+}
+
+body::before {
+    background:
+        radial-gradient(ellipse 55% 42% at 18% 8%, rgba(90, 255, 210, 0.38), transparent 58%),
+        radial-gradient(ellipse 48% 36% at 78% 4%, rgba(96, 186, 255, 0.32), transparent 54%),
+        radial-gradient(ellipse 42% 30% at 52% -4%, rgba(244, 248, 252, 0.22), transparent 50%);
+    animation: aurora-north 22s ease-in-out infinite alternate;
+}
+
+body::after {
+    background:
+        radial-gradient(ellipse 50% 38% at 62% 18%, rgba(176, 132, 255, 0.26), transparent 56%),
+        radial-gradient(ellipse 40% 32% at 88% 28%, rgba(255, 130, 214, 0.16), transparent 52%),
+        radial-gradient(ellipse 70% 28% at 40% 0%, rgba(70, 230, 190, 0.18), transparent 60%);
+    mix-blend-mode: screen;
+    animation: aurora-south 28s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-north {
+    from { transform: translate3d(-4%, 0, 0) scale(1); opacity: 0.72; }
+    to { transform: translate3d(6%, 4%, 0) scale(1.08); opacity: 1; }
+}
+
+@keyframes aurora-south {
+    from { transform: translate3d(5%, 2%, 0) scale(1.04); opacity: 0.55; }
+    to { transform: translate3d(-6%, -2%, 0) scale(1); opacity: 0.9; }
+}
 
 .lab-atmosphere,
 .radio-atmosphere {
@@ -7,19 +48,10 @@
     inset: 0;
     z-index: -1;
     pointer-events: none;
+    opacity: 0.22;
     background:
-        radial-gradient(ellipse 70% 45% at 50% -8%, rgba(254, 249, 215, 0.16), transparent 58%),
-        radial-gradient(ellipse 55% 40% at 82% 58%, rgba(109, 144, 77, 0.2), transparent 52%),
-        radial-gradient(ellipse 50% 38% at 12% 78%, rgba(78, 94, 21, 0.28), transparent 48%),
-        radial-gradient(ellipse 40% 30% at 50% 40%, rgba(223, 194, 98, 0.08), transparent 55%),
-        linear-gradient(180deg, rgba(12, 18, 8, 0.52) 0%, rgba(10, 14, 8, 0.88) 45%, var(--color-bg, #1a1a1a) 100%),
+        linear-gradient(180deg, rgba(7, 16, 24, 0.15) 0%, rgba(7, 16, 24, 0.72) 70%, var(--color-bg, #071018) 100%),
         url("/imagens/background-hero.png?v=7f1482449a") center top / cover no-repeat;
-    animation: lab-atmosphere-drift 28s ease-in-out infinite alternate;
-}
-
-@keyframes lab-atmosphere-drift {
-    from { background-position: center top, 80% 60%, 10% 80%, center, center 0%; }
-    to { background-position: center top, 70% 55%, 18% 75%, center, center 8%; }
 }
 
 @keyframes lab-fade-up {
@@ -47,31 +79,70 @@
     font-weight: 700;
     letter-spacing: 0.22em;
     text-transform: uppercase;
-    color: #c2b168;
+    color: #9be7ff;
 }
 
 .lab-title-gold {
-    background: linear-gradient(180deg, #fef9d7 0%, #dfc262 52%, #7a9619 100%);
+    background: linear-gradient(180deg, #f7fbff 0%, #7dffd0 48%, #7eb8ff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
 .lab-glass {
-    border: 1px solid rgba(122, 150, 25, 0.32);
+    border: 1px solid rgba(126, 232, 210, 0.28);
     background:
-        linear-gradient(165deg, rgba(22, 28, 14, 0.9), rgba(10, 14, 8, 0.94));
+        linear-gradient(165deg, rgba(12, 28, 40, 0.82), rgba(7, 16, 24, 0.92));
     box-shadow:
-        0 1px 0 rgba(254, 249, 215, 0.04) inset,
-        0 18px 48px rgba(0, 0, 0, 0.35);
+        0 1px 0 rgba(244, 248, 252, 0.08) inset,
+        0 18px 48px rgba(0, 16, 28, 0.4);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
 }
 
+html[data-theme="light"] body::before {
+    opacity: 0.48;
+}
+
+html[data-theme="light"] body::after {
+    opacity: 0.38;
+    mix-blend-mode: multiply;
+}
+
+html[data-theme="light"] .lab-atmosphere,
+html[data-theme="light"] .radio-atmosphere {
+    opacity: 0.08;
+}
+
+body:is(
+    [data-page="admin"],
+    [data-page="admin-db"],
+    [data-page="comunidade-admin"],
+    [data-page="pesquisas-admin"],
+    [data-page="usuarios-admin"],
+    [data-page="sorteios-admin"],
+    [data-page="emails-admin"]
+)::before,
+body:is(
+    [data-page="admin"],
+    [data-page="admin-db"],
+    [data-page="comunidade-admin"],
+    [data-page="pesquisas-admin"],
+    [data-page="usuarios-admin"],
+    [data-page="sorteios-admin"],
+    [data-page="emails-admin"]
+)::after {
+    opacity: 0.28;
+}
+
 @media (prefers-reduced-motion: reduce) {
+    body::before,
+    body::after,
     .lab-atmosphere,
     .radio-atmosphere,
-    .lab-fade-up {
+    .lab-fade-up,
+    .botao,
+    .calculator button {
         animation: none !important;
     }
 }

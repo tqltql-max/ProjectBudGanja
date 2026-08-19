@@ -127,7 +127,8 @@ function stampManifestIcons() {
   if (!fs.existsSync(manifestPath)) return;
   const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
   const v = ASSET_VERSION;
-  manifest.background_color = '#000000';
+  manifest.background_color = '#071018';
+  manifest.theme_color = '#0a2230';
   manifest.icons = [
     {
       src: `/imagens/icon-192.v${v}.png`,
