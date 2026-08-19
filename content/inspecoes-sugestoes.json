@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T07:38:31.346Z",
+  "updatedAt": "2026-08-19T16:07:29.467Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5626,6 +5626,54 @@
         "/posts/post-inspecao-canal-zangado.html"
       ],
       "notes": "Estúdio ≠ título. Ficção de crime ≠ manual de crime."
+    },
+    {
+      "id": "arte-under-pressure",
+      "title": "Under Pressure — Queen, Bowie e o aperto sem esmagar",
+      "titleEn": "Under Pressure — Queen, Bowie and the squeeze without crushing",
+      "titleEs": "Under Pressure — Queen, Bowie y el aprieto sin aplastar",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canção 1981: Queen + Bowie — jam de Montreux × coração / medo / esperança.",
+      "whyEn": "1981 song: Queen + Bowie — Montreux jam × heart / fear / hope.",
+      "whyEs": "Canción 1981: Queen + Bowie — jam de Montreux × corazón / miedo / esperanza.",
+      "suggestedSlug": "inspecao-arte-under-pressure",
+      "doneHref": "/posts/post-inspecao-arte-under-pressure.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-under-pressure.html",
+        "https://www.youtube.com/watch?v=BaxnrepwXck",
+        "https://music.youtube.com/watch?v=BaxnrepwXck",
+        "https://en.wikipedia.org/wiki/Under_Pressure",
+        "/posts/post-inspecao-palavra-coracao.html",
+        "/vida/"
+      ],
+      "notes": "Obra primeiro (1981); eco poético BudGanja distinto da letra Queen/Bowie."
+    },
+    {
+      "id": "arte-upside-down",
+      "title": "Upside Down — Jack Johnson e o olhar de cabeça para baixo",
+      "titleEn": "Upside Down — Jack Johnson and the upside-down gaze",
+      "titleEs": "Upside Down — Jack Johnson y la mirada al revés",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canção 2006: Jack Johnson / Curious George — inverter o olhar × criatividade / alegria.",
+      "whyEn": "2006 song: Jack Johnson / Curious George — invert the gaze × creativity / joy.",
+      "whyEs": "Canción 2006: Jack Johnson / Curious George — invertir la mirada × creatividad / alegría.",
+      "suggestedSlug": "inspecao-arte-upside-down",
+      "doneHref": "/posts/post-inspecao-arte-upside-down.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-upside-down.html",
+        "https://www.youtube.com/watch?v=e2vLWbaOITw",
+        "https://music.youtube.com/watch?v=e2vLWbaOITw",
+        "https://en.wikipedia.org/wiki/Upside_Down_%28Jack_Johnson_song%29",
+        "/posts/post-inspecao-palavra-criatividade.html",
+        "/vida/"
+      ],
+      "notes": "Obra primeiro (2006); filme e livros Rey como contexto; eco poético distinto da letra."
     }
   ]
 }

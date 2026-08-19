@@ -66,29 +66,26 @@ body[data-page="apresentacao-unifesp"] {
     position: relative;
     margin: 0;
     width: 100%;
-    max-height: min(38vh, 340px);
+    max-height: none;
     overflow: hidden;
     background: #071018;
     line-height: 0;
+    text-align: center;
 }
 
 .vida-hero-art::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 28%;
-    background: linear-gradient(180deg, transparent, rgba(7, 16, 24, 0.55));
-    pointer-events: none;
+    content: none;
 }
 
 .vida-hero-art img {
     display: block;
-    width: 100%;
-    height: min(38vh, 340px);
-    object-fit: cover;
-    object-position: center 38%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: min(46vh, 480px);
+    margin-inline: auto;
+    object-fit: contain;
+    object-position: center center;
 }
 
 .vida-hero .article-share {
@@ -785,8 +782,9 @@ body.site-drone-on .vida-hero-actions .botao-home--secondary.is-drone-over {
 @media (max-width: 700px) {
     .vida-hero-art,
     .vida-hero-art img {
-        max-height: min(32vh, 240px);
-        height: min(32vh, 240px);
+        width: 100%;
+        max-height: none;
+        height: auto;
     }
 
     .vida-hero-copy {

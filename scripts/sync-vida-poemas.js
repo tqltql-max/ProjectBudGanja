@@ -45,6 +45,16 @@ const {
   poemAllRightNowEs
 } = require('../lib/all-right-now-inspecao-post.js');
 const {
+  poemUnderPressurePt,
+  poemUnderPressureEn,
+  poemUnderPressureEs
+} = require('../lib/under-pressure-inspecao-post.js');
+const {
+  poemUpsideDownPt,
+  poemUpsideDownEn,
+  poemUpsideDownEs
+} = require('../lib/upside-down-inspecao-post.js');
+const {
   poemSementeFoiPlantadaPt,
   poemSementeFoiPlantadaEn,
   poemSementeFoiPlantadaEs
@@ -224,6 +234,48 @@ const doc = {
       bodyEs: poemAllRightNowEs(),
       inspectionHref: '/posts/post-inspecao-arte-all-right-now.html',
       tags: ['poesia', 'vida', 'free', 'agora', 'já', 'esperança']
+    },
+    {
+      id: 'under-pressure',
+      slug: 'under-pressure',
+      title: 'Under Pressure',
+      titleEn: 'Under Pressure',
+      titleEs: 'Under Pressure',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja de Queen e Bowie — medir o aperto sem esmagar o peito; coração, medo, e faça o melhor.',
+      teaserEn:
+        'BudGanja echo of Queen and Bowie — measure the squeeze without crushing the chest; heart, fear, and do your best.',
+      teaserEs:
+        'Eco BudGanja de Queen y Bowie — medir el aprieto sin aplastar el pecho; corazón, miedo, y haz lo mejor.',
+      body: poemUnderPressurePt(),
+      bodyEn: poemUnderPressureEn(),
+      bodyEs: poemUnderPressureEs(),
+      inspectionHref: '/posts/post-inspecao-arte-under-pressure.html',
+      tags: ['poesia', 'vida', 'queen', 'bowie', 'pressão', 'coração']
+    },
+    {
+      id: 'upside-down',
+      slug: 'upside-down',
+      title: 'Upside Down',
+      titleEn: 'Upside Down',
+      titleEs: 'Upside Down',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja de Jack Johnson — inverter o olhar sem virar a casa; criatividade, alegria, e faça o melhor.',
+      teaserEn:
+        'BudGanja echo of Jack Johnson — invert the gaze without turning the house over; creativity, joy, and do your best.',
+      teaserEs:
+        'Eco BudGanja de Jack Johnson — invertir la mirada sin voltear la casa; creatividad, alegría, y haz lo mejor.',
+      body: poemUpsideDownPt(),
+      bodyEn: poemUpsideDownEn(),
+      bodyEs: poemUpsideDownEs(),
+      inspectionHref: '/posts/post-inspecao-arte-upside-down.html',
+      tags: ['poesia', 'vida', 'johnson', 'curiosidade', 'ângulo', 'alegria']
     },
     {
       id: 'a-semente-foi-plantada',

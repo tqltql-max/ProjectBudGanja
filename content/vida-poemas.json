@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T15:11:51.846Z",
+  "updatedAt": "2026-08-19T16:08:47.366Z",
   "poems": [
     {
       "id": "aguas-e-lagrimas",
@@ -194,6 +194,56 @@
         "agora",
         "já",
         "esperança"
+      ]
+    },
+    {
+      "id": "under-pressure",
+      "slug": "under-pressure",
+      "title": "Under Pressure",
+      "titleEn": "Under Pressure",
+      "titleEs": "Under Pressure",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja de Queen e Bowie — medir o aperto sem esmagar o peito; coração, medo, e faça o melhor.",
+      "teaserEn": "BudGanja echo of Queen and Bowie — measure the squeeze without crushing the chest; heart, fear, and do your best.",
+      "teaserEs": "Eco BudGanja de Queen y Bowie — medir el aprieto sin aplastar el pecho; corazón, miedo, y haz lo mejor.",
+      "body": "Under Pressure.\nNão pedimos a letra emprestada —\npedimos o ofício de medir a pressão\nsem esmagar o peito.\n\nQueen. Bowie.\nHouve um estúdio em Montreux —\ndois ofícios na mesma mesa,\num baixo que ficou no pulso do século.\nHouve rua, houve aperto,\nhouve a pergunta que o laboratório também faz:\ncomo ficar humano\nquando o mundo aperta.\n\nO laboratório conhece essa pressão.\nInspeção que aperta o prazo.\nPlanta que espera o ar certo.\nDia que parece demasiado cheio.\nE ainda assim: ficar.\nDar cuidado uma vez mais.\nChamar a Vida pelo nome verdadeiro:\ncoração —\nsem transformar o aperto em tanque,\nsem beber o rancor como se fosse justiça.\n\nFaça o melhor!\n\nPorque toda vez que alguém mede a pressão\ne responde com cuidado\nem vez de esmagar,\no universo cresce um pouco:\num verso a mais,\num dossel a mais,\numa rua onde ainda cabe ficar.",
+      "bodyEn": "Under Pressure.\nWe do not borrow the lyric —\nwe ask for the craft of measuring pressure\nwithout crushing the chest.\n\nQueen. Bowie.\nThere was a studio in Montreux —\ntwo crafts at the same table,\na bassline that stayed in the century’s pulse.\nThere was a street, there was a squeeze,\nthere was the question the laboratory also asks:\nhow to stay human\nwhen the world tightens.\n\nThe laboratory knows that pressure.\nAn inspection that tightens the deadline.\nA plant waiting for the right air.\nA day that feels too full.\nAnd still: stay.\nGive care one more time.\nCall Vida by its true name:\nheart —\nwithout turning the squeeze into a tank,\nwithout drinking the grudge as if it were justice.\n\nDo your best!\n\nBecause every time someone measures the pressure\nand answers with care\ninstead of crushing,\nthe universe grows a little:\none more verse,\none more canopy,\na street where there is still room to stay.",
+      "bodyEs": "Under Pressure.\nNo pedimos prestada la letra —\npedimos el oficio de medir la presión\nsin aplastar el pecho.\n\nQueen. Bowie.\nHubo un estudio en Montreux —\ndos oficios en la misma mesa,\nun bajo que se quedó en el pulso del siglo.\nHubo calle, hubo aprieto,\nhubo la pregunta que el laboratorio también hace:\ncómo seguir siendo humano\ncuando el mundo aprieta.\n\nEl laboratorio conoce esa presión.\nInspección que aprieta el plazo.\nPlanta que espera el aire justo.\nDía que parece demasiado lleno.\nY aun así: quedarse.\nDar cuidado una vez más.\nLlamar a Vida por su nombre verdadero:\ncorazón —\nsin transformar el aprieto en tanque,\nsin beber el rencor como si fuera justicia.\n\n¡Haz lo mejor!\n\nPorque cada vez que alguien mide la presión\ny responde con cuidado\nen vez de aplastar,\nel universo crece un poco:\nun verso más,\nun dosel más,\nuna calle donde aún cabe quedarse.",
+      "inspectionHref": "/posts/post-inspecao-arte-under-pressure.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "queen",
+        "bowie",
+        "pressão",
+        "coração"
+      ]
+    },
+    {
+      "id": "upside-down",
+      "slug": "upside-down",
+      "title": "Upside Down",
+      "titleEn": "Upside Down",
+      "titleEs": "Upside Down",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja de Jack Johnson — inverter o olhar sem virar a casa; criatividade, alegria, e faça o melhor.",
+      "teaserEn": "BudGanja echo of Jack Johnson — invert the gaze without turning the house over; creativity, joy, and do your best.",
+      "teaserEs": "Eco BudGanja de Jack Johnson — invertir la mirada sin voltear la casa; creatividad, alegría, y haz lo mejor.",
+      "body": "Upside Down.\nNão pedimos a letra emprestada —\npedimos o ofício de virar o olhar\nsem virar a casa.\n\nJack Johnson.\nHouve um macaco que não fala\ne um violão que narra.\nHouve esboço a preto e branco\ne um cavaquinho a marcar o passo.\nHouve o mundo de cabeça para baixo —\nnão para cair,\npara ver o outro lado da mesma rua.\n\nO laboratório conhece essa inversão.\nInspeção que muda de ângulo.\nPlanta que se vê pela raiz.\nDia que parece ao contrário\naté alguém olhar de novo.\nE ainda assim: ficar curioso.\nDar o passo com cuidado.\nChamar a Vida pelo nome verdadeiro:\nolhar —\nsem transformar a volta em confusão,\nsem achar que o mundo é erro\nsó porque está de pernas para o ar.\n\nFaça o melhor!\n\nPorque toda vez que alguém inverte o olhar\ne inspeciona com alegria\nem vez de fechar a porta,\no universo cresce um pouco:\num verso a mais,\num dossel a mais,\numa rua onde o céu também cabe no chão.",
+      "bodyEn": "Upside Down.\nWe do not borrow the lyric —\nwe ask for the craft of turning the gaze\nwithout turning the house over.\n\nJack Johnson.\nThere was a monkey who does not speak\nand a guitar that narrates.\nThere were black-and-white sketches\nand a cavaquinho keeping time.\nThere was the world upside down —\nnot to fall,\nto see the other side of the same street.\n\nThe laboratory knows that inversion.\nAn inspection that changes angle.\nA plant seen from the root.\nA day that looks backwards\nuntil someone looks again.\nAnd still: stay curious.\nTake the step with care.\nCall Vida by its true name:\nlooking —\nwithout turning the flip into confusion,\nwithout calling the world a mistake\njust because it stands on its head.\n\nDo your best!\n\nBecause every time someone inverts the gaze\nand inspects with joy\ninstead of closing the door,\nthe universe grows a little:\none more verse,\none more canopy,\na street where the sky also fits on the ground.",
+      "bodyEs": "Upside Down.\nNo pedimos prestada la letra —\npedimos el oficio de voltear la mirada\nsin voltear la casa.\n\nJack Johnson.\nHubo un mono que no habla\ny una guitarra que narra.\nHubo bocetos en blanco y negro\ny un cavaquinho marcando el paso.\nHubo el mundo al revés —\nno para caer,\npara ver el otro lado de la misma calle.\n\nEl laboratorio conoce esa inversión.\nInspección que cambia de ángulo.\nPlanta que se ve por la raíz.\nDía que parece al contrario\nhasta que alguien mira de nuevo.\nY aun así: quedarse curioso.\nDar el paso con cuidado.\nLlamar a Vida por su nombre verdadero:\nmirar —\nsin transformar el vuelco en confusión,\nsin creer que el mundo es error\nsolo porque está de cabeza.\n\n¡Haz lo mejor!\n\nPorque cada vez que alguien invierte la mirada\ne inspecciona con alegría\nen vez de cerrar la puerta,\nel universo crece un poco:\nun verso más,\nun dosel más,\nuna calle donde el cielo también cabe en el suelo.",
+      "inspectionHref": "/posts/post-inspecao-arte-upside-down.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "johnson",
+        "curiosidade",
+        "ângulo",
+        "alegria"
       ]
     },
     {

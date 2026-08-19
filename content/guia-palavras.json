@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T07:38:31.187Z",
+  "updatedAt": "2026-08-19T16:07:29.471Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -180,6 +180,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-arte-all-right-now.html"
+    },
+    {
+      "id": "under-pressure",
+      "word": "Under Pressure",
+      "simple": "Canção Queen + Bowie (1981): o aperto da vida moderna — génese na jam de Montreux; elo BudGanja com coração, medo e esperança.",
+      "simpleEn": "Queen + Bowie song (1981): modern life’s squeeze — genesis in the Montreux jam; BudGanja link to heart, fear and hope.",
+      "simpleEs": "Canción Queen + Bowie (1981): el aprieto de la vida moderna — génesis en la jam de Montreux; vínculo BudGanja con corazón, miedo y esperanza.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-under-pressure.html"
+    },
+    {
+      "id": "upside-down",
+      "word": "Upside Down",
+      "simple": "Canção Jack Johnson (2006): o mundo de cabeça para baixo — génese na trilha de Curious George; elo BudGanja com criatividade, alegria e caminho.",
+      "simpleEn": "Jack Johnson song (2006): the world upside down — genesis on the Curious George soundtrack; BudGanja link to creativity, joy and path.",
+      "simpleEs": "Canción Jack Johnson (2006): el mundo al revés — génesis en la banda sonora de Curious George; vínculo BudGanja con creatividad, alegría y camino.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-upside-down.html"
     },
     {
       "id": "alma",
