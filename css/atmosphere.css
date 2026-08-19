@@ -1,52 +1,53 @@
-/* Aurora boreal em todo o site — noite polar, branco de neve, cortinas verdes/ciano/violeta */
-
-body {
-    isolation: isolate;
-}
+/* Aurora boreal — camada leve atrás do conteúdo (sem isolation/will-change/blend) */
 
 body::before,
 body::after {
     content: "";
     position: fixed;
-    inset: -18% -8% auto -8%;
-    height: 78vh;
-    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 62vh;
+    z-index: 0;
     pointer-events: none;
-    will-change: transform, opacity;
 }
 
 body::before {
     background:
-        radial-gradient(ellipse 55% 42% at 18% 8%, rgba(90, 255, 210, 0.38), transparent 58%),
-        radial-gradient(ellipse 48% 36% at 78% 4%, rgba(96, 186, 255, 0.32), transparent 54%),
-        radial-gradient(ellipse 42% 30% at 52% -4%, rgba(244, 248, 252, 0.22), transparent 50%);
-    animation: aurora-north 22s ease-in-out infinite alternate;
+        radial-gradient(ellipse 55% 42% at 18% 8%, rgba(90, 255, 210, 0.28), transparent 58%),
+        radial-gradient(ellipse 48% 36% at 78% 4%, rgba(96, 186, 255, 0.22), transparent 54%),
+        radial-gradient(ellipse 42% 30% at 52% -4%, rgba(244, 248, 252, 0.14), transparent 50%);
+    animation: aurora-north 36s ease-in-out infinite alternate;
 }
 
 body::after {
     background:
-        radial-gradient(ellipse 50% 38% at 62% 18%, rgba(176, 132, 255, 0.26), transparent 56%),
-        radial-gradient(ellipse 40% 32% at 88% 28%, rgba(255, 130, 214, 0.16), transparent 52%),
-        radial-gradient(ellipse 70% 28% at 40% 0%, rgba(70, 230, 190, 0.18), transparent 60%);
-    mix-blend-mode: screen;
-    animation: aurora-south 28s ease-in-out infinite alternate;
+        radial-gradient(ellipse 50% 38% at 62% 18%, rgba(176, 132, 255, 0.16), transparent 56%),
+        radial-gradient(ellipse 40% 32% at 88% 28%, rgba(255, 130, 214, 0.1), transparent 52%),
+        radial-gradient(ellipse 70% 28% at 40% 0%, rgba(70, 230, 190, 0.12), transparent 60%);
+    animation: aurora-south 48s ease-in-out infinite alternate;
+}
+
+#main-content {
+    position: relative;
+    z-index: 1;
 }
 
 @keyframes aurora-north {
-    from { transform: translate3d(-4%, 0, 0) scale(1); opacity: 0.72; }
-    to { transform: translate3d(6%, 4%, 0) scale(1.08); opacity: 1; }
+    from { transform: translate3d(-2%, 0, 0); opacity: 0.78; }
+    to { transform: translate3d(3%, 2%, 0); opacity: 1; }
 }
 
 @keyframes aurora-south {
-    from { transform: translate3d(5%, 2%, 0) scale(1.04); opacity: 0.55; }
-    to { transform: translate3d(-6%, -2%, 0) scale(1); opacity: 0.9; }
+    from { transform: translate3d(2%, 1%, 0); opacity: 0.62; }
+    to { transform: translate3d(-3%, -1%, 0); opacity: 0.92; }
 }
 
 .lab-atmosphere,
 .radio-atmosphere {
     position: fixed;
     inset: 0;
-    z-index: -1;
+    z-index: 0;
     pointer-events: none;
     opacity: 0.22;
     background:
@@ -96,17 +97,14 @@ body::after {
     box-shadow:
         0 1px 0 rgba(244, 248, 252, 0.08) inset,
         0 18px 48px rgba(0, 16, 28, 0.4);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
 }
 
 html[data-theme="light"] body::before {
-    opacity: 0.48;
+    opacity: 0.42;
 }
 
 html[data-theme="light"] body::after {
-    opacity: 0.38;
-    mix-blend-mode: multiply;
+    opacity: 0.32;
 }
 
 html[data-theme="light"] .lab-atmosphere,
@@ -132,17 +130,16 @@ body:is(
     [data-page="sorteios-admin"],
     [data-page="emails-admin"]
 )::after {
-    opacity: 0.28;
+    opacity: 0.22;
+    animation: none;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media (max-width: 700px), (prefers-reduced-motion: reduce) {
     body::before,
     body::after,
     .lab-atmosphere,
     .radio-atmosphere,
-    .lab-fade-up,
-    .botao,
-    .calculator button {
+    .lab-fade-up {
         animation: none !important;
     }
 }

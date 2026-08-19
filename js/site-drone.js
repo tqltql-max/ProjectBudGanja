@@ -873,11 +873,7 @@
     } else if (el.closest('a, button')) {
       return;
     }
-    if (!state.on) {
-      state.pendingAbduct = { x: event.clientX, y: event.clientY };
-      setOn(true);
-      return;
-    }
+    if (!state.on) return;
     abductAt(event.clientX, event.clientY);
   }
 

@@ -13,7 +13,7 @@
 @import url("pages/jogos-broto.css");
 @import url("luximetro.css");
 @import url("learn-translate.css");
-@import url("site-drone.css?v=323");
+@import url("site-drone.css?v=324");
 
 /* Design tokens */
 :root {
@@ -1310,8 +1310,6 @@ body.mobile-menu-open {
     min-height: 36px;
     color: #071018;
     background: var(--gradient-accent);
-    background-size: 220% 220%;
-    animation: aurora-btn 9s ease-in-out infinite;
     box-shadow: none;
 }
 
@@ -1319,7 +1317,6 @@ body.mobile-menu-open {
 .header-profile-link--guest:focus-visible {
     color: #071018;
     background: var(--gradient-accent-hover);
-    background-size: 220% 220%;
     transform: none;
 }
 
@@ -2782,8 +2779,6 @@ nav ul li a:focus,
     display: inline-block;
     padding: 12px 24px;
     background: var(--gradient-accent);
-    background-size: 220% 220%;
-    animation: aurora-btn 9s ease-in-out infinite;
     color: #071018;
     text-decoration: none;
     border-radius: var(--radius-sm);
@@ -2801,7 +2796,6 @@ nav ul li a:focus,
 .botao:hover,
 .calculator button:hover {
     background: var(--gradient-accent-hover);
-    background-size: 220% 220%;
     color: #071018;
     border-color: rgba(126, 232, 210, 0.45);
     transform: translateY(-2px);
@@ -2809,11 +2803,6 @@ nav ul li a:focus,
         0 0 0 1px rgba(126, 232, 210, 0.22),
         0 10px 32px rgba(94, 200, 255, 0.42);
     filter: brightness(1.06);
-}
-
-@keyframes aurora-btn {
-    0%, 100% { background-position: 0% 40%; }
-    50% { background-position: 100% 60%; }
 }
 
 .botao-sm {
@@ -2824,8 +2813,6 @@ nav ul li a:focus,
 
 .botao-outline {
     background: transparent;
-    background-size: auto;
-    animation: none;
     color: var(--color-accent-light);
     border: 1px solid rgba(126, 232, 210, 0.55);
     box-shadow: none;
