@@ -193,16 +193,52 @@ Faça o melhor!</blockquote>
         </section>
 
         <button type="button" class="inverno-drone" id="inverno-drone" data-i18n-aria="pages.inverno.droneAria" aria-label="Drone da Tamara — toca para seguir o gelo">
-            <span class="inverno-drone-rotor inverno-drone-rotor--nw" aria-hidden="true"></span>
-            <span class="inverno-drone-rotor inverno-drone-rotor--ne" aria-hidden="true"></span>
-            <span class="inverno-drone-rotor inverno-drone-rotor--sw" aria-hidden="true"></span>
-            <span class="inverno-drone-rotor inverno-drone-rotor--se" aria-hidden="true"></span>
-            <svg class="inverno-drone-body" viewBox="0 0 64 64" width="64" height="64" aria-hidden="true">
-                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke-width="2.2" d="M18 18 L28 28 M46 18 L36 28 M18 46 L28 36 M46 46 L36 36"/>
-                    <rect x="26" y="26" width="12" height="12" rx="2.5" fill="currentColor" stroke="none"/>
-                    <circle cx="32" cy="32" r="3.2" fill="#0b1218" stroke="none"/>
-                    <path d="M30 26 L32 20 L34 26" fill="currentColor" stroke="none"/>
+            <svg class="inverno-drone-body" viewBox="0 0 120 88" width="120" height="88" aria-hidden="true">
+                <defs>
+                    <linearGradient id="inverno-drone-hull" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#eef3f8"/>
+                        <stop offset="42%" stop-color="#9aa7b6"/>
+                        <stop offset="100%" stop-color="#2b333c"/>
+                    </linearGradient>
+                    <radialGradient id="inverno-drone-disc" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="rgba(244,247,251,0.06)"/>
+                        <stop offset="62%" stop-color="rgba(226,193,90,0.16)"/>
+                        <stop offset="100%" stop-color="rgba(226,193,90,0.55)"/>
+                    </radialGradient>
+                </defs>
+                <ellipse cx="60" cy="80" rx="26" ry="5" fill="#05080c" opacity="0.42"/>
+                <g class="inverno-drone-craft">
+                    <path d="M44 40 L26 24 M76 40 L94 24 M42 48 L20 60 M78 48 L100 60" fill="none" stroke="#3a4450" stroke-width="4.2" stroke-linecap="round"/>
+                    <g transform="translate(26 24)">
+                        <circle r="13.5" fill="url(#inverno-drone-disc)"/>
+                        <g class="inverno-drone-prop"><path d="M-12 0 H12 M0 -12 V12" fill="none" stroke="#f4e08a" stroke-width="1.35" stroke-linecap="round"/></g>
+                        <circle r="3.4" fill="#12181f" stroke="#e2c15a" stroke-width="1.1"/>
+                    </g>
+                    <g transform="translate(94 24)">
+                        <circle r="13.5" fill="url(#inverno-drone-disc)"/>
+                        <g class="inverno-drone-prop inverno-drone-prop--rev"><path d="M-12 0 H12 M0 -12 V12" fill="none" stroke="#f4e08a" stroke-width="1.35" stroke-linecap="round"/></g>
+                        <circle r="3.4" fill="#12181f" stroke="#e2c15a" stroke-width="1.1"/>
+                    </g>
+                    <g transform="translate(20 60)">
+                        <circle r="13.5" fill="url(#inverno-drone-disc)"/>
+                        <g class="inverno-drone-prop inverno-drone-prop--rev"><path d="M-12 0 H12 M0 -12 V12" fill="none" stroke="#f4e08a" stroke-width="1.35" stroke-linecap="round"/></g>
+                        <circle r="3.4" fill="#12181f" stroke="#e2c15a" stroke-width="1.1"/>
+                    </g>
+                    <g transform="translate(100 60)">
+                        <circle r="13.5" fill="url(#inverno-drone-disc)"/>
+                        <g class="inverno-drone-prop"><path d="M-12 0 H12 M0 -12 V12" fill="none" stroke="#f4e08a" stroke-width="1.35" stroke-linecap="round"/></g>
+                        <circle r="3.4" fill="#12181f" stroke="#e2c15a" stroke-width="1.1"/>
+                    </g>
+                    <ellipse cx="60" cy="44" rx="23" ry="12" fill="url(#inverno-drone-hull)" stroke="#e2c15a" stroke-width="1.15"/>
+                    <rect x="46" y="38" width="28" height="11" rx="4" fill="#10161c"/>
+                    <path d="M49 43.5 H71" fill="none" stroke="#f0d24a" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M54 34 L60 26 L66 34" fill="#c9d3de" stroke="#e2c15a" stroke-width="0.9" stroke-linejoin="round"/>
+                    <circle cx="74" cy="39" r="1.7" fill="#7ec8ff"/>
+                    <g class="inverno-drone-cam">
+                        <circle cx="60" cy="58" r="7" fill="#0b1218" stroke="#e2c15a" stroke-width="1.7"/>
+                        <circle cx="60" cy="58" r="3.6" fill="#1a3c4e"/>
+                        <circle cx="58.2" cy="56.2" r="1.15" fill="#f4e08a" opacity="0.75"/>
+                    </g>
                 </g>
             </svg>
         </button>

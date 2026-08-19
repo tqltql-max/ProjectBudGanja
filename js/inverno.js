@@ -175,7 +175,7 @@
     var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var sections = ['circular', 'lexico', 'poema', 'mapa'];
     var nextIndex = 0;
-    var size = 70;
+    var size = 104;
 
     function goToNext() {
       var id = sections[nextIndex % sections.length];
@@ -211,12 +211,10 @@
     }
 
     function apply() {
-      var dx = tx - x;
-      var dy = ty - y;
-      var rot = Math.atan2(dy, dx) * 180 / Math.PI + 90;
+      var bank = Math.max(-16, Math.min(16, (tx - x) * 0.12));
       drone.style.setProperty('--drone-x', Math.round(x) + 'px');
       drone.style.setProperty('--drone-y', Math.round(y) + 'px');
-      drone.style.setProperty('--drone-rot', rot.toFixed(1) + 'deg');
+      drone.style.setProperty('--drone-rot', bank.toFixed(1) + 'deg');
     }
 
     function tick() {

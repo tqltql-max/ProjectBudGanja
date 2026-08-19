@@ -422,67 +422,65 @@ body[data-page="inverno"] #main-content {
 .inverno-drone {
     position: fixed;
     z-index: 42;
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 6.4rem;
+    height: 4.7rem;
     display: grid;
     place-items: center;
     padding: 0;
-    border: 1px solid rgba(226, 193, 90, 0.45);
-    border-radius: 50%;
-    background:
-        radial-gradient(circle at 35% 30%, rgba(244, 247, 251, 0.18), transparent 46%),
-        rgba(11, 18, 24, 0.82);
+    border: 0;
+    border-radius: 1.2rem;
+    background: transparent;
     color: var(--inverno-suit);
-    box-shadow:
-        0 0 0 6px rgba(11, 18, 24, 0.28),
-        0 10px 28px rgba(8, 14, 20, 0.45);
     cursor: pointer;
     left: 0;
     top: 0;
-    transform: translate3d(var(--drone-x, 72vw), var(--drone-y, 62vh), 0) rotate(var(--drone-rot, 0deg));
-    transition: box-shadow 0.2s ease, background 0.2s ease;
+    filter: drop-shadow(0 10px 16px rgba(8, 14, 20, 0.45));
+    transform: translate3d(var(--drone-x, 72vw), var(--drone-y, 62vh), 0) rotate(var(--drone-rot, -8deg));
+    transition: filter 0.2s ease;
 }
 
 .inverno-drone:hover,
 .inverno-drone:focus-visible {
-    background: rgba(11, 18, 24, 0.94);
-    box-shadow:
-        0 0 0 7px rgba(226, 193, 90, 0.18),
-        0 12px 32px rgba(8, 14, 20, 0.55);
+    filter:
+        drop-shadow(0 0 10px rgba(226, 193, 90, 0.35))
+        drop-shadow(0 12px 18px rgba(8, 14, 20, 0.5));
+}
+
+.inverno-drone:focus-visible {
+    outline: 2px solid var(--inverno-gold);
+    outline-offset: 4px;
 }
 
 .inverno-drone-body {
-    position: relative;
-    z-index: 1;
     display: block;
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 6.2rem;
+    height: 4.55rem;
     margin: 0;
-    grid-area: 1 / 1;
+    overflow: visible;
 }
 
-.inverno-drone-rotor {
-    position: absolute;
-    width: 0.95rem;
-    height: 0.95rem;
-    border-radius: 50%;
-    background:
-        repeating-conic-gradient(
-            from 0deg,
-            rgba(244, 247, 251, 0.08) 0 12deg,
-            rgba(226, 193, 90, 0.7) 12deg 18deg
-        );
-    animation: inverno-rotor 0.28s linear infinite;
-    pointer-events: none;
+.inverno-drone-craft {
+    transform-origin: 60px 44px;
+    animation: inverno-drone-bob 2.6s ease-in-out infinite;
 }
 
-.inverno-drone-rotor--nw { top: 0.42rem; left: 0.42rem; }
-.inverno-drone-rotor--ne { top: 0.42rem; right: 0.42rem; }
-.inverno-drone-rotor--sw { bottom: 0.42rem; left: 0.42rem; }
-.inverno-drone-rotor--se { bottom: 0.42rem; right: 0.42rem; animation-direction: reverse; }
+.inverno-drone-prop {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: inverno-rotor 0.22s linear infinite;
+}
+
+.inverno-drone-prop--rev {
+    animation-direction: reverse;
+}
 
 @keyframes inverno-rotor {
     to { transform: rotate(360deg); }
+}
+
+@keyframes inverno-drone-bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
 }
 
 @keyframes inverno-rise {
@@ -499,9 +497,9 @@ body[data-page="inverno"] #main-content {
     .inverno-cta:hover {
         transform: none;
     }
-    .inverno-drone-rotor {
+    .inverno-drone-prop,
+    .inverno-drone-craft {
         animation: none;
-        opacity: 0.55;
     }
     .inverno-drone {
         right: 1rem;
