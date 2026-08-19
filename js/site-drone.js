@@ -49,8 +49,11 @@
     inspectX: 0,
     inspectY: 0,
     inspectQueued: false,
-    heldEl: null
+    heldEl: null,
+    litButton: null
   };
+
+  var BUTTON_SEL = 'a.botao, .botao, .botao-home';
 
   function t(key, fallback) {
     if (global.BudGanjaI18n && typeof global.BudGanjaI18n.t === 'function') {
@@ -653,15 +656,58 @@
     state.drone.style.setProperty('--drone-rot', rot + 'deg');
   }
 
+  function setLitButton(el) {
+    if (state.litButton === el) return;
+    if (state.litButton) state.litButton.classList.remove('is-drone-over');
+    state.litButton = el || null;
+    if (state.litButton) state.litButton.classList.add('is-drone-over');
+  }
+
+  function buttonAtPoint(clientX, clientY) {
+    if (!document.elementsFromPoint) {
+      var hit = document.elementFromPoint(clientX, clientY);
+      if (!hit || !hit.closest) return null;
+      if (hit.closest('#site-drone, .site-drone')) return null;
+      return hit.closest(BUTTON_SEL);
+    }
+    var stack = document.elementsFromPoint(clientX, clientY);
+    for (var i = 0; i < stack.length; i++) {
+      var node = stack[i];
+      if (!node || !node.closest) continue;
+      if (node.closest('#site-drone, .site-drone, .site-drone-tip')) continue;
+      var btn = node.closest(BUTTON_SEL);
+      if (btn) return btn;
+    }
+    return null;
+  }
+
+  function lightButtonsNearDrone() {
+    if (!state.on || !state.drone) {
+      setLitButton(null);
+      return;
+    }
+    var btn = buttonAtPoint(state.inspectX, state.inspectY)
+      || buttonAtPoint(state.x + SIZE * 0.5, state.y + SIZE * 0.55)
+      || buttonAtPoint(state.x + SIZE * 0.5, state.y + SIZE + 24);
+    setLitButton(btn);
+  }
+
   function tick() {
     if (!state.on || !state.flying) return;
     global.requestAnimationFrame(tick);
-    if ((state.paused || state.caught) && !state.rush) return;
-    if (state.reduced && !state.rush) return;
+    if ((state.paused || state.caught) && !state.rush) {
+      lightButtonsNearDrone();
+      return;
+    }
+    if (state.reduced && !state.rush) {
+      lightButtonsNearDrone();
+      return;
+    }
     var ease = state.rush ? 0.26 : (state.following ? 0.09 : 0.018);
     state.x += (state.tx - state.x) * ease;
     state.y += (state.ty - state.y) * ease;
     applyPose();
+    lightButtonsNearDrone();
     if (state.rush && Math.hypot(state.tx - state.x, state.ty - state.y) < 12) {
       finishAbduct();
     }
@@ -738,6 +784,7 @@
     clearAbductGhost();
     releaseHeldWord();
     unwrapOwnMarks();
+    setLitButton(null);
     if (state.drone) {
       state.drone.classList.remove('is-lit', 'is-abducting');
       state.drone.setAttribute('aria-pressed', 'false');
@@ -848,15 +895,19 @@
       state.inspectQueued = false;
       if (!state.on || state.rush || state.abductHold) return;
       inspectAt(state.inspectX, state.inspectY);
+      lightButtonsNearDrone();
     });
   }
 
   function onPointerDown(event) {
     if (!state.on) return;
+    state.inspectX = event.clientX;
+    state.inspectY = event.clientY;
     if (event.pointerType === 'touch' || event.pointerType === 'pen') {
       aimAtPointer(event.clientX, event.clientY);
       inspectAt(event.clientX, event.clientY);
     }
+    lightButtonsNearDrone();
   }
 
   function onPageClick(event) {

@@ -373,6 +373,28 @@ body.site-drone-ready #inverno-drone {
     height: 1.1rem;
 }
 
+/* Botões sob o feixe do drone — aurora de gelo, sem animar background-position */
+body.site-drone-on .botao.is-drone-over,
+body.site-drone-on .botao-home.is-drone-over {
+    background: var(--gradient-accent-hover, linear-gradient(125deg, #7dffc3 0%, #8b7cff 32%, #5ec8ff 62%, #3ee0c0 100%));
+    color: #071018;
+    border-color: rgba(126, 232, 210, 0.55);
+    box-shadow:
+        0 0 0 1px rgba(126, 232, 210, 0.28),
+        0 8px 24px rgba(94, 200, 255, 0.38);
+    filter: brightness(1.04);
+}
+
+body.site-drone-on .botao-home--secondary.is-drone-over,
+body.site-drone-on .botao-outline.is-drone-over {
+    background: var(--gradient-accent, linear-gradient(125deg, #3ee0c0 0%, #5ec8ff 28%, #8b7cff 55%, #f0abfc 78%, #7dffc3 100%));
+    color: #071018;
+    border-color: rgba(126, 232, 210, 0.5);
+    box-shadow:
+        0 0 0 1px rgba(126, 232, 210, 0.22),
+        0 8px 22px rgba(94, 200, 255, 0.32);
+}
+
 @media (prefers-reduced-motion: reduce) {
     .site-drone-prop,
     .site-drone-craft {

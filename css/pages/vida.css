@@ -153,10 +153,15 @@ body[data-page="apresentacao-unifesp"] {
     box-shadow: none;
 }
 
-.vida-hero-actions .botao-home--secondary:hover {
-    background: rgba(10, 34, 48, 0.7);
-    border-color: rgba(126, 232, 210, 0.5);
-    color: #f4f8fc;
+.vida-hero-actions .botao-home--secondary:hover,
+.vida-hero-actions .botao-home--secondary:focus-visible,
+body.site-drone-on .vida-hero-actions .botao-home--secondary.is-drone-over {
+    background: var(--gradient-accent);
+    border-color: rgba(126, 232, 210, 0.55);
+    color: #071018;
+    box-shadow:
+        0 0 0 1px rgba(126, 232, 210, 0.22),
+        0 8px 22px rgba(94, 200, 255, 0.32);
 }
 
 @keyframes vida-fade-up {

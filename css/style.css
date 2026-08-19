@@ -13,7 +13,7 @@
 @import url("pages/jogos-broto.css");
 @import url("luximetro.css");
 @import url("learn-translate.css");
-@import url("site-drone.css?v=326");
+@import url("site-drone.css?v=330");
 
 /* Design tokens */
 :root {
@@ -2816,7 +2816,7 @@ nav ul li a:focus,
     font-size: 0.95rem;
     line-height: 1.2;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, background 0.22s ease, color 0.22s ease, border-color 0.22s ease;
     box-shadow: var(--shadow-accent);
     cursor: pointer;
     border: none;
