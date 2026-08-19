@@ -35,7 +35,7 @@
     "loading": "Carregando…",
     "featured": "Destaque",
     "recent": "recentes",
-    "footerLegal": "Conteúdo educacional.",
+    "footerLegal": "Conteúdo educacional. Inspeção, não receita.",
     "footerPrivacy": "Privacidade",
     "footerUpdated": "atualizado em",
     "cookieConsentAria": "Consentimento de cookies e métricas",
@@ -139,7 +139,8 @@
     "quickToolsTip": "Ferramentas e equipamentos",
     "quickGiveawaysTip": "Promoções ativas do laboratório",
     "quickGrowTip": "Diário de pesquisas e registos de cultivo",
-    "quickCommunityTip": "Feed de fotos do diário de pesquisas"
+    "quickCommunityTip": "Feed de fotos do diário de pesquisas",
+    "tagline": "Laboratório de inspeção"
   },
   "footer": {
     "groupLibrary": "Biblioteca",
@@ -361,9 +362,9 @@
     "home": {
       "heroEyebrow": "Fitoterapia brasileira · educação e cultivo responsável",
       "heroTitle": "Inspetor BudGanja",
-      "heroSubtitle": "Bom dia, Inverno — Tamara Klink.",
-      "areasTitle": "Laboratório e comunidade",
-      "areasSubtitle": "Biblioteca, vídeos, plantas, diário e feed da comunidade — apoios ao estudo e ao cultivo responsável.",
+      "heroSubtitle": "Laboratório de inspeção.",
+      "areasTitle": "O laboratório",
+      "areasSubtitle": "Estudo, cultivo e o jeito de olhar.",
       "cardBibliotecaTitle": "Biblioteca",
       "cardBibliotecaText": "Acervo do laboratório — inspeções, curso UNIFESP, Guia de Palavras, pesquisas e catálogos.",
       "cardBibliotecaBtn": "Abrir biblioteca",
@@ -1031,8 +1032,17 @@
     },
     "inverno": {
       "brand": "Inspetor BudGanja",
+      "author": "Tamara Klink · Companhia das Letras",
       "lead": "Oito meses no gelo. O livro pede para circular.",
       "coverAlt": "Capa de Bom dia, Inverno, de Tamara Klink — Companhia das Letras",
+      "factMonthsValue": "8",
+      "factMonthsLabel": "meses no gelo",
+      "factColdValue": "−40 °C",
+      "factColdLabel": "no fiorde",
+      "factFirstValue": "1ª",
+      "factFirstLabel": "invernagem feminina solo",
+      "factPlaceValue": "2023–24",
+      "factPlaceLabel": "Groenlândia",
       "ctaCirculate": "Fazer o livro circular",
       "ctaLexicon": "Léxico do gelo",
       "circulateKicker": "Pedido da autora",
@@ -1059,7 +1069,19 @@
       "mapTitle": "No laboratório",
       "mapLead": "Divulgação independente — sem afiliação editorial. Mérito a Tamara.",
       "linkInspection": "Inspeção da obra",
-      "linkQa": "Q&A"
+      "linkQa": "Q&A",
+      "mapPerson": "Pessoa",
+      "mapPersonText": "Ofício da invernagem.",
+      "mapWork": "Obra",
+      "mapWorkText": "A mudinha no mapa Artes.",
+      "mapLegacy": "Legado",
+      "mapLegacyText": "Pai e tensão do caminho.",
+      "mapQaText": "Balde, gelo e gesto.",
+      "mapVida": "Vida",
+      "mapVidaText": "Ficar, registar, cuidar.",
+      "mapSite": "Site",
+      "mapSiteText": "Carta náutica da autora.",
+      "droneAria": "Drone da Tamara — toca para seguir o gelo"
     }
   }
 }

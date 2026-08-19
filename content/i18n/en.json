@@ -35,7 +35,7 @@
     "loading": "Loading…",
     "featured": "Featured",
     "recent": "recent",
-    "footerLegal": "Educational content.",
+    "footerLegal": "Educational content. Inspection, not a prescription.",
     "footerPrivacy": "Privacy",
     "footerUpdated": "updated on",
     "cookieConsentAria": "Cookie and analytics consent",
@@ -139,7 +139,8 @@
     "quickGiveawaysTip": "Active lab promotions",
     "quickToolsTip": "Calculators and equipment",
     "quickGrowTip": "Research diary and grow logs",
-    "quickCommunityTip": "Research diary photo feed"
+    "quickCommunityTip": "Research diary photo feed",
+    "tagline": "Inspection lab"
   },
   "footer": {
     "groupLibrary": "Library",
@@ -361,9 +362,9 @@
     "home": {
       "heroEyebrow": "Brazilian phytotherapy · education and responsible growing",
       "heroTitle": "Inspetor BudGanja",
-      "heroSubtitle": "Bom dia, Inverno — Tamara Klink.",
-      "areasTitle": "Lab and community",
-      "areasSubtitle": "Library, videos, plants, diary and community feed — support for study and responsible growing.",
+      "heroSubtitle": "Inspection lab.",
+      "areasTitle": "The lab",
+      "areasSubtitle": "Study, growing, and a way of looking.",
       "cardBibliotecaTitle": "Library",
       "cardBibliotecaText": "Lab archive — inspections, UNIFESP course, Words Guide, research and catalogs.",
       "cardBibliotecaBtn": "Open library",
@@ -1031,8 +1032,17 @@
     },
     "inverno": {
       "brand": "Inspetor BudGanja",
+      "author": "Tamara Klink · Companhia das Letras",
       "lead": "Eight months on the ice. The book asks to circulate.",
       "coverAlt": "Cover of Bom dia, Inverno, by Tamara Klink — Companhia das Letras",
+      "factMonthsValue": "8",
+      "factMonthsLabel": "months on ice",
+      "factColdValue": "−40 °C",
+      "factColdLabel": "in the fjord",
+      "factFirstValue": "1st",
+      "factFirstLabel": "recorded female solo overwinter",
+      "factPlaceValue": "2023–24",
+      "factPlaceLabel": "Greenland",
       "ctaCirculate": "Let the book circulate",
       "ctaLexicon": "Ice lexicon",
       "circulateKicker": "The author’s request",
@@ -1059,7 +1069,19 @@
       "mapTitle": "In the lab",
       "mapLead": "Independent promotion — no publisher affiliation. Credit to Tamara.",
       "linkInspection": "Work inspection",
-      "linkQa": "Q&A"
+      "linkQa": "Q&A",
+      "mapPerson": "Person",
+      "mapPersonText": "The craft of overwintering.",
+      "mapWork": "Work",
+      "mapWorkText": "The seedling on the Arts map.",
+      "mapLegacy": "Legacy",
+      "mapLegacyText": "Father and the tension of the path.",
+      "mapQaText": "Bucket, ice and gesture.",
+      "mapVida": "Vida",
+      "mapVidaText": "Stay, record, care.",
+      "mapSite": "Site",
+      "mapSiteText": "The author’s nautical chart.",
+      "droneAria": "Tamara’s drone — tap to follow the ice"
     }
   }
 }

@@ -35,7 +35,7 @@
     "loading": "Cargando…",
     "featured": "Destacado",
     "recent": "recientes",
-    "footerLegal": "Contenido educativo.",
+    "footerLegal": "Contenido educativo. Inspección, no receta.",
     "footerPrivacy": "Privacidad",
     "footerUpdated": "actualizado el",
     "cookieConsentAria": "Consentimiento de cookies y métricas",
@@ -139,7 +139,8 @@
     "quickGiveawaysTip": "Promociones activas del laboratorio",
     "quickToolsTip": "Calculadoras y equipos",
     "quickGrowTip": "Diario de investigaciones y registros de cultivo",
-    "quickCommunityTip": "Feed de fotos del diario de cultivo"
+    "quickCommunityTip": "Feed de fotos del diario de cultivo",
+    "tagline": "Laboratorio de inspección"
   },
   "footer": {
     "groupLibrary": "Biblioteca",
@@ -361,9 +362,9 @@
     "home": {
       "heroEyebrow": "Fitoterapia brasileña · educación y cultivo responsable",
       "heroTitle": "Inspetor BudGanja",
-      "heroSubtitle": "Bom dia, Inverno — Tamara Klink.",
-      "areasTitle": "Laboratorio y comunidad",
-      "areasSubtitle": "Biblioteca, videos, plantas, diario y feed de la comunidad — apoyo al estudio y al cultivo responsable.",
+      "heroSubtitle": "Laboratorio de inspección.",
+      "areasTitle": "El laboratorio",
+      "areasSubtitle": "Estudio, cultivo y la forma de mirar.",
       "cardBibliotecaTitle": "Biblioteca",
       "cardBibliotecaText": "Acervo del laboratorio — inspecciones, curso UNIFESP, Guía de Palabras, investigaciones y catálogos.",
       "cardBibliotecaBtn": "Abrir biblioteca",
@@ -1031,8 +1032,17 @@
     },
     "inverno": {
       "brand": "Inspetor BudGanja",
+      "author": "Tamara Klink · Companhia das Letras",
       "lead": "Ocho meses en el hielo. El libro pide circular.",
       "coverAlt": "Portada de Bom dia, Inverno, de Tamara Klink — Companhia das Letras",
+      "factMonthsValue": "8",
+      "factMonthsLabel": "meses en el hielo",
+      "factColdValue": "−40 °C",
+      "factColdLabel": "en el fiordo",
+      "factFirstValue": "1.ª",
+      "factFirstLabel": "invernada femenina en solitario",
+      "factPlaceValue": "2023–24",
+      "factPlaceLabel": "Groenlandia",
       "ctaCirculate": "Hacer circular el libro",
       "ctaLexicon": "Léxico del hielo",
       "circulateKicker": "Pedido de la autora",
@@ -1059,7 +1069,19 @@
       "mapTitle": "En el laboratorio",
       "mapLead": "Divulgación independiente — sin afiliación editorial. Crédito a Tamara.",
       "linkInspection": "Inspección de la obra",
-      "linkQa": "Q&A"
+      "linkQa": "Q&A",
+      "mapPerson": "Persona",
+      "mapPersonText": "Oficio de la invernada.",
+      "mapWork": "Obra",
+      "mapWorkText": "La plantita en el mapa Artes.",
+      "mapLegacy": "Legado",
+      "mapLegacyText": "Padre y tensión del camino.",
+      "mapQaText": "Cubo, hielo y gesto.",
+      "mapVida": "Vida",
+      "mapVidaText": "Quedarse, registrar, cuidar.",
+      "mapSite": "Sitio",
+      "mapSiteText": "Carta náutica de la autora.",
+      "droneAria": "Dron de Tamara — toca para seguir el hielo"
     }
   }
 }

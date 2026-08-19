@@ -526,6 +526,12 @@
       '.unifesp-hub-header, .comunidade-header, .sorteios-header, ' +
       'main.conteudo-interno > header, main.conteudo > header, main > header'
     );
+    var winterSlot = document.getElementById('inverno-share-slot');
+    if (winterSlot && !winterSlot.querySelector('[data-post-share]')) {
+      winterSlot.appendChild(buildShareWrap('common.sharePageAria', 'Compartilhar esta página'));
+      return;
+    }
+
     if (hubHeader && !hubHeader.querySelector('[data-post-share]')) {
       var hubH1 = hubHeader.querySelector('h1');
       if (hubH1) {

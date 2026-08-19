@@ -68,6 +68,17 @@
     } catch (e) { /* ignore */ }
   }
 
+  function currentPath() {
+    return (location.pathname || '/').replace(/\/+$/, '') || '/';
+  }
+
+  function updateHrefMatchesPage(href) {
+    if (!href) return false;
+    var target = String(href).split('#')[0].replace(/\/+$/, '') || '/';
+    var path = currentPath();
+    return path === target || path.indexOf(target + '/') === 0;
+  }
+
   function wasUpdateDismissed(id) {
     if (!id) return true;
     try {
@@ -146,6 +157,10 @@
     var title = pickLocalized(update.title, '');
     var text = pickLocalized(update.text, '');
     var href = update.href ? String(update.href) : '';
+    if (updateHrefMatchesPage(href)) {
+      rememberUpdateDismissed(update.id);
+      return '';
+    }
     var linkLabel = pickLocalized(update.linkLabel, t('common.siteUpdateOpen', 'Abrir'));
     var image = update.image ? String(update.image) : '';
     var imageAlt = pickLocalized(update.imageAlt, title || 'Capa');

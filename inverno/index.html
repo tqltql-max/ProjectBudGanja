@@ -53,7 +53,27 @@
             <div class="inverno-hero-copy">
                 <p class="inverno-brand" data-i18n="pages.inverno.brand">Inspetor BudGanja</p>
                 <h1 id="inverno-title">Bom dia, Inverno</h1>
+                <p class="inverno-author" data-i18n="pages.inverno.author">Tamara Klink · Companhia das Letras</p>
                 <p class="inverno-lead" data-i18n="pages.inverno.lead">Oito meses no gelo. O livro pede para circular.</p>
+                <dl class="inverno-facts">
+                    <div>
+                        <dd data-i18n="pages.inverno.factMonthsValue">8</dd>
+                        <dt data-i18n="pages.inverno.factMonthsLabel">meses no gelo</dt>
+                    </div>
+                    <div>
+                        <dd data-i18n="pages.inverno.factColdValue">−40 °C</dd>
+                        <dt data-i18n="pages.inverno.factColdLabel">no fiorde</dt>
+                    </div>
+                    <div>
+                        <dd data-i18n="pages.inverno.factFirstValue">1ª</dd>
+                        <dt data-i18n="pages.inverno.factFirstLabel">invernagem feminina solo</dt>
+                    </div>
+                    <div>
+                        <dd data-i18n="pages.inverno.factPlaceValue">2023–24</dd>
+                        <dt data-i18n="pages.inverno.factPlaceLabel">Groenlândia</dt>
+                    </div>
+                </dl>
+                <div id="inverno-share-slot" class="inverno-share-slot"></div>
                 <div class="inverno-hero-actions">
                     <a class="inverno-cta" href="#circular" data-i18n="pages.inverno.ctaCirculate">Fazer o livro circular</a>
                     <a class="inverno-cta inverno-cta--ghost" href="#lexico" data-i18n="pages.inverno.ctaLexicon">Léxico do gelo</a>
@@ -90,17 +110,19 @@
             <h2 id="lexico-title" data-i18n="pages.inverno.lexiconTitle">Léxico do gelo</h2>
             <p class="inverno-section-lead" data-i18n="pages.inverno.lexiconLead">Toca numa palavra. O gelo nomeia o ofício: ficar quando o barco não passa.</p>
             <div id="inverno-words" class="inverno-words" role="list"></div>
-            <p id="inverno-word-read" class="inverno-word-read" hidden></p>
-            <p class="inverno-word-open" hidden>
-                <a id="inverno-word-link" href="#" data-i18n="pages.inverno.openWord">Abrir ficha</a>
-            </p>
+            <aside class="inverno-word-panel" aria-live="polite">
+                <p id="inverno-word-read" class="inverno-word-read"></p>
+                <p class="inverno-word-open">
+                    <a id="inverno-word-link" href="/posts/post-inspecao-palavra-invernagem.html" data-i18n="pages.inverno.openWord">Abrir ficha</a>
+                </p>
+            </aside>
         </section>
 
         <section id="poema" class="inverno-section inverno-section--poem" aria-labelledby="poema-title">
             <p class="inverno-kicker" data-i18n="pages.inverno.poemKicker">Poema do laboratório</p>
             <h2 id="poema-title" data-i18n="pages.inverno.poemTitle">Bom dia, Inverno</h2>
             <p class="inverno-section-lead" data-i18n="pages.inverno.poemLead">Verso BudGanja em diálogo com a obra — não é texto do livro.</p>
-            <blockquote class="inverno-poem" data-i18n="pages.inverno.poemBody">Bom dia, Inverno.
+            <blockquote id="inverno-poem" class="inverno-poem" data-i18n="pages.inverno.poemBody">Bom dia, Inverno.
 Não pedimos sol a mais —
 pedimos só ficar
 quando o gelo prende o barco
@@ -132,18 +154,58 @@ Faça o melhor!</blockquote>
             </p>
         </section>
 
-        <section class="inverno-section" aria-labelledby="mapa-title">
+        <section id="mapa" class="inverno-section" aria-labelledby="mapa-title">
             <p class="inverno-kicker" data-i18n="pages.inverno.mapKicker">Mapa</p>
             <h2 id="mapa-title" data-i18n="pages.inverno.mapTitle">No laboratório</h2>
             <p class="inverno-section-lead" data-i18n="pages.inverno.mapLead">Divulgação independente — sem afiliação editorial. Mérito a Tamara.</p>
-            <p class="inverno-links">
-                <a href="/posts/post-inspecao-tamara-klink.html">Tamara Klink</a>
-                <a href="/posts/post-inspecao-arte-bom-dia-inverno.html" data-i18n="pages.inverno.linkInspection">Inspeção da obra</a>
-                <a href="/posts/post-inspecao-amyr-klink.html">Amyr Klink</a>
-                <a href="https://www.youtube.com/watch?v=V3GSlr5sp7c" target="_blank" rel="noopener noreferrer" data-i18n="pages.inverno.linkQa">Q&amp;A</a>
-                <a href="/vida/">Vida</a>
-            </p>
+            <nav class="inverno-map" aria-label="Mapa do laboratório">
+                <a class="inverno-map-card" href="/posts/post-inspecao-tamara-klink.html">
+                    <span class="inverno-map-kicker" data-i18n="pages.inverno.mapPerson">Pessoa</span>
+                    <strong>Tamara Klink</strong>
+                    <span data-i18n="pages.inverno.mapPersonText">Ofício da invernagem.</span>
+                </a>
+                <a class="inverno-map-card" href="/posts/post-inspecao-arte-bom-dia-inverno.html">
+                    <span class="inverno-map-kicker" data-i18n="pages.inverno.mapWork">Obra</span>
+                    <strong data-i18n="pages.inverno.linkInspection">Inspeção da obra</strong>
+                    <span data-i18n="pages.inverno.mapWorkText">A mudinha no mapa Artes.</span>
+                </a>
+                <a class="inverno-map-card" href="/posts/post-inspecao-amyr-klink.html">
+                    <span class="inverno-map-kicker" data-i18n="pages.inverno.mapLegacy">Legado</span>
+                    <strong>Amyr Klink</strong>
+                    <span data-i18n="pages.inverno.mapLegacyText">Pai e tensão do caminho.</span>
+                </a>
+                <a class="inverno-map-card" href="https://www.youtube.com/watch?v=V3GSlr5sp7c" target="_blank" rel="noopener noreferrer">
+                    <span class="inverno-map-kicker">YouTube</span>
+                    <strong data-i18n="pages.inverno.linkQa">Q&amp;A</strong>
+                    <span data-i18n="pages.inverno.mapQaText">Balde, gelo e gesto.</span>
+                </a>
+                <a class="inverno-map-card" href="/vida/">
+                    <span class="inverno-map-kicker">Vida</span>
+                    <strong data-i18n="pages.inverno.mapVida">Vida</strong>
+                    <span data-i18n="pages.inverno.mapVidaText">Ficar, registar, cuidar.</span>
+                </a>
+                <a class="inverno-map-card" href="https://www.tamaraklink.com" target="_blank" rel="noopener noreferrer">
+                    <span class="inverno-map-kicker" data-i18n="pages.inverno.mapSite">Site</span>
+                    <strong>tamaraklink.com</strong>
+                    <span data-i18n="pages.inverno.mapSiteText">Carta náutica da autora.</span>
+                </a>
+            </nav>
         </section>
+
+        <button type="button" class="inverno-drone" id="inverno-drone" data-i18n-aria="pages.inverno.droneAria" aria-label="Drone da Tamara — toca para seguir o gelo">
+            <span class="inverno-drone-rotor inverno-drone-rotor--nw" aria-hidden="true"></span>
+            <span class="inverno-drone-rotor inverno-drone-rotor--ne" aria-hidden="true"></span>
+            <span class="inverno-drone-rotor inverno-drone-rotor--sw" aria-hidden="true"></span>
+            <span class="inverno-drone-rotor inverno-drone-rotor--se" aria-hidden="true"></span>
+            <svg class="inverno-drone-body" viewBox="0 0 64 64" width="64" height="64" aria-hidden="true">
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke-width="2.2" d="M18 18 L28 28 M46 18 L36 28 M18 46 L28 36 M46 46 L36 36"/>
+                    <rect x="26" y="26" width="12" height="12" rx="2.5" fill="currentColor" stroke="none"/>
+                    <circle cx="32" cy="32" r="3.2" fill="#0b1218" stroke="none"/>
+                    <path d="M30 26 L32 20 L34 26" fill="currentColor" stroke="none"/>
+                </g>
+            </svg>
+        </button>
     </main>
 
     <div id="site-footer"></div>

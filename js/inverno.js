@@ -79,6 +79,29 @@
     link.textContent = t('pages.inverno.openWord', 'Abrir ficha') + ' · ' + field(word, 'label');
   }
 
+  function wordFromHash() {
+    var hash = (location.hash || '').replace(/^#/, '');
+    if (hash.indexOf('lexico=') === 0) return hash.slice(7);
+    return '';
+  }
+
+  function selectDefaultWord() {
+    var wanted = wordFromHash() || 'invernagem';
+    var word = WORDS.filter(function (w) { return w.id === wanted; })[0] || WORDS[4];
+    var btn = document.querySelector('.inverno-word[data-id="' + word.id + '"]');
+    if (word && btn) selectWord(word, btn);
+  }
+
+  function renderPoem() {
+    var el = document.getElementById('inverno-poem');
+    if (!el) return;
+    var raw = t('pages.inverno.poemBody', el.textContent || '');
+    var stanzas = String(raw).replace(/\\n/g, '\n').split(/\n{2,}/);
+    el.innerHTML = stanzas.map(function (block) {
+      return '<p>' + block.replace(/</g, '&lt;').replace(/\n/g, '<br>') + '</p>';
+    }).join('');
+  }
+
   function initSnow() {
     var canvas = document.querySelector('.inverno-snow');
     var hero = document.querySelector('.inverno-hero');
@@ -145,9 +168,93 @@
     requestAnimationFrame(tick);
   }
 
+  function initDrone() {
+    var drone = document.getElementById('inverno-drone');
+    if (!drone) return;
+
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var sections = ['circular', 'lexico', 'poema', 'mapa'];
+    var nextIndex = 0;
+    var size = 70;
+
+    function goToNext() {
+      var id = sections[nextIndex % sections.length];
+      nextIndex += 1;
+      var target = document.getElementById(id);
+      if (!target) return;
+      target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+    }
+
+    drone.addEventListener('click', goToNext);
+    if (reduced) return;
+
+    var x = Math.min(window.innerWidth * 0.78, window.innerWidth - size - 24);
+    var y = Math.min(window.innerHeight * 0.58, window.innerHeight - size - 96);
+    var tx = x;
+    var ty = y;
+    var paused = false;
+    var flying = true;
+
+    function pad() {
+      return {
+        left: 16,
+        top: 88,
+        right: window.innerWidth - size - 16,
+        bottom: window.innerHeight - size - 88
+      };
+    }
+
+    function pickTarget() {
+      var p = pad();
+      tx = p.left + Math.random() * Math.max(40, p.right - p.left);
+      ty = p.top + Math.random() * Math.max(40, p.bottom - p.top);
+    }
+
+    function apply() {
+      var dx = tx - x;
+      var dy = ty - y;
+      var rot = Math.atan2(dy, dx) * 180 / Math.PI + 90;
+      drone.style.setProperty('--drone-x', Math.round(x) + 'px');
+      drone.style.setProperty('--drone-y', Math.round(y) + 'px');
+      drone.style.setProperty('--drone-rot', rot.toFixed(1) + 'deg');
+    }
+
+    function tick() {
+      if (!flying) return;
+      requestAnimationFrame(tick);
+      if (paused) return;
+      x += (tx - x) * 0.018;
+      y += (ty - y) * 0.018;
+      if (Math.abs(tx - x) < 8 && Math.abs(ty - y) < 8) pickTarget();
+      apply();
+    }
+
+    drone.addEventListener('mouseenter', function () { paused = true; });
+    drone.addEventListener('mouseleave', function () { paused = false; });
+    drone.addEventListener('focus', function () { paused = true; });
+    drone.addEventListener('blur', function () { paused = false; });
+    window.addEventListener('resize', function () {
+      var p = pad();
+      x = Math.min(Math.max(x, p.left), p.right);
+      y = Math.min(Math.max(y, p.top), p.bottom);
+      pickTarget();
+    });
+    document.addEventListener('visibilitychange', function () {
+      flying = document.visibilityState !== 'hidden';
+      if (flying) requestAnimationFrame(tick);
+    });
+
+    pickTarget();
+    apply();
+    requestAnimationFrame(tick);
+  }
+
   function boot() {
     renderWords();
+    selectDefaultWord();
+    renderPoem();
     initSnow();
+    initDrone();
   }
 
   if (document.readyState === 'loading') {
@@ -161,7 +268,11 @@
     var on = document.querySelector('.inverno-word.is-on');
     if (on) currentId = on.dataset.id || '';
     renderWords();
-    if (!currentId) return;
+    renderPoem();
+    if (!currentId) {
+      selectDefaultWord();
+      return;
+    }
     var word = WORDS.filter(function (w) { return w.id === currentId; })[0];
     var btn = document.querySelector('.inverno-word[data-id="' + currentId + '"]');
     if (word && btn) selectWord(word, btn);
