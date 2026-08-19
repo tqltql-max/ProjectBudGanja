@@ -169,7 +169,9 @@ function parseAnyVideo(item) {
 function extractVideosTab(data) {
   const tabs = data.contents?.twoColumnBrowseResultsRenderer?.tabs || [];
   const tab =
-    tabs.find((t) => String(t.tabRenderer?.title || '').toLowerCase() === 'vídeos') || tabs[1];
+    tabs.find((t) => String(t.tabRenderer?.title || '').toLowerCase() === 'vídeos') ||
+    tabs.find((t) => String(t.tabRenderer?.title || '').toLowerCase() === 'videos') ||
+    tabs[1];
   const grid = tab?.tabRenderer?.content?.richGridRenderer?.contents || [];
   const videos = grid.map(parseAnyVideo).filter(Boolean);
   const token =
@@ -203,6 +205,7 @@ async function fetchAllChannelVideos() {
         ?.continuationCommand?.token || null;
     if (!more.length) break;
     all.push(...more);
+    if (all.length % 120 === 0) console.log('  …', all.length, 'vídeos');
     await sleep(120);
   }
 
@@ -241,8 +244,13 @@ async function buildCatalog() {
   } catch (e) {
     console.warn('Página /videos falhou:', e.message);
   }
-  const xml = await fetchText('https://www.youtube.com/feeds/videos.xml?channel_id=' + channelId);
-  const rssVideos = parseRssVideos(xml);
+  let rssVideos = [];
+  try {
+    const xml = await fetchText('https://www.youtube.com/feeds/videos.xml?channel_id=' + channelId);
+    rssVideos = parseRssVideos(xml);
+  } catch (e) {
+    console.warn('RSS indisponível para', channelId + ':', e.message);
+  }
 
   const byId = new Map();
   (catalog.videos || []).forEach((v) => {
@@ -285,10 +293,7 @@ async function buildCatalog() {
     return 0;
   });
 
-  videos = videos.map((v, index) => {
-    const next = Object.assign({}, v, { pageIndex: index });
-    return next;
-  });
+  videos = videos.map((v, index) => Object.assign({}, v, { pageIndex: index }));
 
   const next = {
     channelId,
@@ -305,7 +310,12 @@ async function buildCatalog() {
 
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, JSON.stringify(next, null, 2) + '\n', 'utf8');
+  const counts = {};
+  videos.forEach((v) => {
+    counts[v.category] = (counts[v.category] || 0) + 1;
+  });
   console.log('paulinholoko.json:', videos.length, 'vídeos (canal', channelId + ')');
+  console.log('categorias:', JSON.stringify(counts));
 }
 
 buildCatalog().catch((e) => {

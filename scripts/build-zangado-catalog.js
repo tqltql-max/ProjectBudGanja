@@ -244,8 +244,13 @@ async function buildCatalog() {
   } catch (e) {
     console.warn('Página /videos falhou:', e.message);
   }
-  const xml = await fetchText('https://www.youtube.com/feeds/videos.xml?channel_id=' + channelId);
-  const rssVideos = parseRssVideos(xml);
+  let rssVideos = [];
+  try {
+    const xml = await fetchText('https://www.youtube.com/feeds/videos.xml?channel_id=' + channelId);
+    rssVideos = parseRssVideos(xml);
+  } catch (e) {
+    console.warn('RSS indisponível para', channelId + ':', e.message);
+  }
 
   const byId = new Map();
   (catalog.videos || []).forEach((v) => {
