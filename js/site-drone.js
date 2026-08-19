@@ -66,10 +66,18 @@
     }
   }
 
+  function isDismissed() {
+    try {
+      return localStorage.getItem(STORAGE_KEY) === 'hidden';
+    } catch (e) {
+      return false;
+    }
+  }
+
   function saveFlag(on) {
     try {
       if (on) localStorage.setItem(STORAGE_KEY, '1');
-      else localStorage.removeItem(STORAGE_KEY);
+      else if (localStorage.getItem(STORAGE_KEY) !== 'hidden') localStorage.removeItem(STORAGE_KEY);
     } catch (e) { /* ignore */ }
   }
 
@@ -154,8 +162,8 @@
       '<rect x="46" y="38" width="28" height="11" rx="4" fill="#10161c"/>' +
       '<path d="M49 43.5 H71" fill="none" stroke="#f0d24a" stroke-width="2" stroke-linecap="round"/>' +
       '<path d="M54 34 L60 26 L66 34" fill="#c9d3de" stroke="#e2c15a" stroke-width="0.9" stroke-linejoin="round"/>' +
-      '<circle cx="74" cy="39" r="1.7" fill="#7ec8ff"/>' +
-      '<g class="site-drone-cam"><circle cx="60" cy="58" r="7" fill="#0b1218" stroke="#e2c15a" stroke-width="1.7"/><circle cx="60" cy="58" r="3.6" fill="#1a3c4e"/><circle cx="58.2" cy="56.2" r="1.15" fill="#f4e08a" opacity="0.75"/></g>' +
+      '<circle class="site-drone-led" cx="74" cy="39" r="1.7" fill="#3a5560"/>' +
+      '<g class="site-drone-cam"><circle cx="60" cy="58" r="7" fill="#0b1218" stroke="#e2c15a" stroke-width="1.7"/><circle class="site-drone-lens" cx="60" cy="58" r="3.6" fill="#1a3c4e"/><circle cx="58.2" cy="56.2" r="1.15" fill="#f4e08a" opacity="0.75"/></g>' +
       '</g></svg>'
     );
   }
@@ -412,9 +420,13 @@
     btn.type = 'button';
     btn.id = 'site-drone';
     btn.className = 'site-drone';
-    btn.setAttribute('aria-label', t('common.droneAria', 'Drone de inspeção — voa até uma palavra vermelha para ler o significado'));
-    btn.innerHTML = '<div class="site-drone-tip" hidden></div>' + droneSvg();
+    btn.setAttribute('aria-pressed', 'false');
+    var aria = t('common.droneAria', 'Drone de inspeção — clique para ligar a luz; botão do meio esconde o drone');
+    btn.setAttribute('aria-label', aria);
+    btn.title = aria;
+    btn.innerHTML = '<div class="site-drone-tip" hidden></div><span class="site-drone-light" aria-hidden="true"></span>' + droneSvg();
     document.body.appendChild(btn);
+    document.body.classList.add('site-drone-ready');
     state.drone = btn;
     state.tip = btn.querySelector('.site-drone-tip');
     var p = pad();
@@ -425,25 +437,63 @@
     applyPose();
     btn.addEventListener('click', function (event) {
       if (event.target && event.target.closest && event.target.closest('.site-drone-tip-link')) return;
-      if (state.currentWord) {
-        var info = meaningOf(state.currentSrc);
-        if (info && info.href) {
-          window.location.href = info.href;
-          return;
-        }
-      }
+      event.preventDefault();
+      event.stopPropagation();
+      setOn(!state.on);
+    });
+    btn.addEventListener('auxclick', function (event) {
+      if (event.button !== 1) return;
+      event.preventDefault();
+      event.stopPropagation();
+      dismissDrone();
+    });
+    btn.addEventListener('mouseup', function (event) {
+      if (event.button !== 1) return;
+      event.preventDefault();
+      event.stopPropagation();
+      dismissDrone();
+    });
+    btn.addEventListener('mousedown', function (event) {
+      if (event.button === 1) event.preventDefault();
+    });
+    btn.addEventListener('pointerdown', function (event) {
+      if (event.button === 1) event.preventDefault();
     });
     btn.addEventListener('mouseenter', function () { state.paused = true; });
     btn.addEventListener('mouseleave', function () { state.paused = false; });
   }
 
-  function unmountDrone() {
-    if (state.drone && state.drone.parentNode) state.drone.parentNode.removeChild(state.drone);
-    state.drone = null;
-    state.tip = null;
+  function dimDrone() {
+    fillTip(null);
     state.currentWord = null;
     state.currentSrc = '';
     clearOwnMarks();
+    if (state.drone) {
+      state.drone.classList.remove('is-lit');
+      state.drone.setAttribute('aria-pressed', 'false');
+    }
+  }
+
+  function dismissDrone() {
+    try {
+      localStorage.setItem(STORAGE_KEY, 'hidden');
+    } catch (e) { /* ignore */ }
+    state.on = false;
+    state.flying = false;
+    state.following = false;
+    state.caught = false;
+    document.body.classList.remove('site-drone-on');
+    dimDrone();
+    if (state.drone && state.drone.parentNode) {
+      state.drone.parentNode.removeChild(state.drone);
+    }
+    state.drone = null;
+    state.tip = null;
+    document.body.classList.remove('site-drone-ready');
+    syncButtons();
+    try {
+      global.dispatchEvent(new CustomEvent('budganja:drone-change', { detail: { on: false } }));
+    } catch (err) { /* ignore */ }
   }
 
   function wrapDangerWords() {
@@ -514,17 +564,34 @@
 
   function setOn(on) {
     var next = !!on;
-    if (next === state.on && state.drone) {
+    mountDrone();
+    if (next === state.on) {
+      if (state.drone) {
+        state.drone.classList.toggle('is-lit', next);
+        state.drone.setAttribute('aria-pressed', next ? 'true' : 'false');
+      }
       syncButtons();
       return;
     }
     state.on = next;
     saveFlag(next);
     document.body.classList.toggle('site-drone-on', next);
+    if (state.drone) {
+      state.drone.classList.toggle('is-lit', next);
+      state.drone.setAttribute('aria-pressed', next ? 'true' : 'false');
+      state.drone.setAttribute(
+        'aria-label',
+        next
+          ? t('common.droneOff', 'Desativar drone')
+          : t('common.droneOn', 'Ativar drone')
+      );
+    }
     syncButtons();
     if (!next) {
       state.flying = false;
-      unmountDrone();
+      state.following = false;
+      state.caught = false;
+      dimDrone();
       try {
         global.dispatchEvent(new CustomEvent('budganja:drone-change', { detail: { on: false } }));
       } catch (e) { /* ignore */ }
@@ -532,7 +599,6 @@
     }
     ensureGlossary(function () {
       if (!state.on) return;
-      mountDrone();
       wrapDangerWords();
       state.reduced = !!(global.matchMedia && global.matchMedia('(prefers-reduced-motion: reduce)').matches);
       state.flying = true;
@@ -588,11 +654,16 @@
       if (state.drone) {
         state.drone.setAttribute(
           'aria-label',
-          t('common.droneAria', 'Drone de inspeção — voa até uma palavra vermelha para ler o significado')
+          state.on
+            ? t('common.droneOff', 'Desativar drone')
+            : t('common.droneOn', 'Ativar drone')
         );
       }
     });
-    setOn(loadFlag());
+    if (!isDismissed()) {
+      mountDrone();
+      setOn(loadFlag());
+    }
   }
 
   if (document.readyState === 'loading') {
@@ -603,6 +674,7 @@
 
   global.BudGanjaDrone = {
     setOn: setOn,
+    dismiss: dismissDrone,
     isOn: function () { return state.on; }
   };
 })(typeof window !== 'undefined' ? window : globalThis);

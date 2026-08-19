@@ -14,7 +14,7 @@
     "themeLight": "Switch to light theme",
     "droneOn": "Turn drone on",
     "droneOff": "Turn drone off",
-    "droneAria": "Inspection drone — fly to a red word to read its meaning",
+    "droneAria": "Inspection drone — click to turn on the light; middle-click hides the drone",
     "droneMeaning": "Meaning",
     "droneOpenFicha": "Open card",
     "droneNoTranslation": "No translation in this language — Portuguese sense stays.",

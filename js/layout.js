@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '315';
+const ASSET_V = '317';
 const HOME = '/inverno/';
 
 let deferredInstallPrompt = null;

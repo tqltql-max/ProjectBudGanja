@@ -14,7 +14,7 @@
     "themeLight": "Activar tema claro",
     "droneOn": "Activar dron",
     "droneOff": "Desactivar dron",
-    "droneAria": "Dron de inspección — vuela hasta una palabra roja para leer el significado",
+    "droneAria": "Dron de inspección — clic para encender la luz; clic central oculta el dron",
     "droneMeaning": "Significado",
     "droneOpenFicha": "Abrir ficha",
     "droneNoTranslation": "Sin traducción en este idioma — queda el sentido en portugués.",

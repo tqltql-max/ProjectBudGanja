@@ -15,9 +15,74 @@
     cursor: pointer;
     left: 0;
     top: 0;
-    filter: drop-shadow(0 10px 16px rgba(8, 14, 20, 0.45));
+    overflow: visible;
+    filter: drop-shadow(0 8px 12px rgba(8, 14, 20, 0.4));
     transform: translate3d(var(--drone-x, 72vw), var(--drone-y, 62vh), 0) rotate(var(--drone-rot, -8deg));
-    transition: filter 0.2s ease;
+    transition: filter 0.28s ease;
+}
+
+.site-drone:hover,
+.site-drone:focus-visible {
+    filter:
+        drop-shadow(0 0 10px rgba(226, 193, 90, 0.35))
+        drop-shadow(0 12px 18px rgba(8, 14, 20, 0.5));
+}
+
+.site-drone.is-lit {
+    filter:
+        drop-shadow(0 0 16px rgba(255, 232, 140, 0.55))
+        drop-shadow(0 0 28px rgba(126, 200, 255, 0.35))
+        drop-shadow(0 12px 18px rgba(8, 14, 20, 0.5));
+}
+
+.site-drone-light {
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    z-index: 0;
+    width: 8.4rem;
+    height: 10.5rem;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(-50%);
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 244, 180, 0.62) 0%,
+            rgba(255, 220, 110, 0.28) 28%,
+            rgba(126, 200, 255, 0.12) 58%,
+            rgba(126, 200, 255, 0) 100%
+        );
+    clip-path: polygon(46% 0, 54% 0, 100% 100%, 0 100%);
+    filter: blur(0.4px);
+    transition: opacity 0.22s ease;
+}
+
+.site-drone.is-lit .site-drone-light {
+    opacity: 1;
+    animation: site-drone-light-pulse 1.7s ease-in-out infinite;
+}
+
+@keyframes site-drone-light-pulse {
+    0%, 100% { opacity: 0.78; }
+    50% { opacity: 1; }
+}
+
+.site-drone.is-lit .site-drone-led {
+    fill: #7ec8ff;
+    filter: drop-shadow(0 0 4px #7ec8ff);
+}
+
+.site-drone.is-lit .site-drone-lens {
+    fill: #7ec8ff;
+}
+
+.site-drone .site-drone-prop {
+    animation-duration: 0.85s;
+}
+
+.site-drone.is-lit .site-drone-prop {
+    animation-duration: 0.16s;
 }
 
 .site-drone:hover,
@@ -34,6 +99,8 @@
 
 .site-drone-body {
     display: block;
+    position: relative;
+    z-index: 1;
     width: 6.2rem;
     height: 4.55rem;
     margin: 0;
@@ -148,7 +215,8 @@ body.site-drone-on .learn-word--danger {
     text-underline-offset: 0.14em;
 }
 
-body.site-drone-on #inverno-drone {
+body.site-drone-on #inverno-drone,
+body.site-drone-ready #inverno-drone {
     display: none !important;
 }
 
@@ -187,7 +255,8 @@ body.site-drone-on #inverno-drone {
 
 @media (prefers-reduced-motion: reduce) {
     .site-drone-prop,
-    .site-drone-craft {
+    .site-drone-craft,
+    .site-drone.is-lit .site-drone-light {
         animation: none;
     }
     .site-drone {
