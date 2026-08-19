@@ -68,3 +68,8 @@ imagens/**/_src/
 # Cloudflare Pages / Wrangler
 .wrangler/
 .dev.vars
+_pages-dist/
+
+# Áudio acima do limite de 25 MiB da Cloudflare Pages
+*.m4a
+*.mp3

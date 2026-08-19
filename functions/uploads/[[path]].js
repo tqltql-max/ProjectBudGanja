@@ -1,7 +1,8 @@
-import { createRequire } from 'node:module';
+import * as pagesHandler from '../../lib/cloudflare-pages-handler.js';
 
-const require = createRequire(import.meta.url);
-const { handleCloudflarePagesRequest } = require('../../lib/cloudflare-pages-handler.js');
+const handleCloudflarePagesRequest =
+  pagesHandler.handleCloudflarePagesRequest ||
+  (pagesHandler.default && pagesHandler.default.handleCloudflarePagesRequest);
 
 export async function onRequest(context) {
   return handleCloudflarePagesRequest(context, { kind: 'uploads' });
