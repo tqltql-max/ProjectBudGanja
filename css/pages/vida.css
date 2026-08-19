@@ -127,12 +127,15 @@ body[data-page="apresentacao-unifesp"] {
 }
 
 .vida-hero h1 .is-drone-over {
-    background: none;
-    -webkit-background-clip: border-box;
-    background-clip: border-box;
-    color: #7dffd0;
-    -webkit-text-fill-color: #7dffd0;
-    text-shadow: 0 0 12px rgba(94, 200, 255, 0.5);
+    background: linear-gradient(180deg, #f4f8fc 0%, #c8f4ff 42%, #7dffd0 100%);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    color: #071018;
+    -webkit-text-fill-color: #071018;
+    text-shadow: none;
+    box-shadow:
+        0 0 0 2px rgba(94, 200, 255, 0.55),
+        0 0 16px rgba(126, 232, 210, 0.55);
 }
 
 .vida-hero-sub {
@@ -163,14 +166,25 @@ body[data-page="apresentacao-unifesp"] {
 }
 
 .vida-hero-actions .botao-home--secondary:hover,
-.vida-hero-actions .botao-home--secondary:focus-visible,
-body.site-drone-on .vida-hero-actions .botao-home--secondary.is-drone-over {
+.vida-hero-actions .botao-home--secondary:focus-visible {
     background: var(--gradient-accent);
     border-color: rgba(126, 232, 210, 0.55);
     color: #071018;
     box-shadow:
         0 0 0 1px rgba(126, 232, 210, 0.22),
         0 8px 22px rgba(94, 200, 255, 0.32);
+}
+
+body.site-drone-on .vida-hero-actions .botao-home--secondary.is-drone-over {
+    background: var(--gradient-accent);
+    border-color: #c8f4ff;
+    color: #071018;
+    outline: 2px solid rgba(200, 244, 255, 0.85);
+    outline-offset: 3px;
+    box-shadow:
+        0 0 0 1px rgba(126, 232, 210, 0.4),
+        0 0 20px rgba(94, 200, 255, 0.5),
+        0 10px 26px rgba(62, 224, 192, 0.36);
 }
 
 @keyframes vida-fade-up {
