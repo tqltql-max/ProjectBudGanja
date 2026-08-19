@@ -51,7 +51,7 @@ Write-Host 'Para parar: Stop-Process -Id' $nodeJob.Id
 
 $tunnelJob = $null
 if ($Tunnel) {
-  $tunnelJob = Start-Process -FilePath 'cloudflared' -ArgumentList 'tunnel','run','budganja-pc' -WindowStyle Minimized -PassThru
+  $tunnelJob = Start-Process -FilePath 'cloudflared' -ArgumentList 'tunnel','run','budganja' -WindowStyle Minimized -PassThru
   Write-Host 'Publico:    ' $env:SITE_URL -ForegroundColor Green
   Write-Host 'Processo: cloudflared PID' $tunnelJob.Id -ForegroundColor Green
   Write-Host 'Para parar: Stop-Process -Id' $nodeJob.Id ',' $tunnelJob.Id

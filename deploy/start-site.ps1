@@ -44,7 +44,7 @@ if ($names -contains "budganja") {
 if ($names -contains "tunnel") {
   pm2 restart tunnel
 } else {
-  pm2 start cloudflared --name tunnel -- tunnel run budganja-pc
+  pm2 start cloudflared --name tunnel -- tunnel run budganja
 }
 
 pm2 save

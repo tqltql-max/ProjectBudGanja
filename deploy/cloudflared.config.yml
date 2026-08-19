@@ -1,9 +1,17 @@
-tunnel: 87be5433-d54b-4036-be87-a557783e0f59
-credentials-file: C:\Users\Usuario\.cloudflared\87be5433-d54b-4036-be87-a557783e0f59.json
+tunnel: deccb19c-bdf3-477d-a251-279dc4b5b584
+credentials-file: C:\Users\tiago\.cloudflared\deccb19c-bdf3-477d-a251-279dc4b5b584.json
 
 ingress:
   - hostname: inspetorbudganja.com.br
     service: http://localhost:8080
   - hostname: www.inspetorbudganja.com.br
+    service: http://localhost:8080
+  - hostname: inspetorbudganja.com
+    service: http://localhost:8080
+  - hostname: www.inspetorbudganja.com
+    service: http://localhost:8080
+  - hostname: inspectorbudganja.com
+    service: http://localhost:8080
+  - hostname: www.inspectorbudganja.com
     service: http://localhost:8080
   - service: http_status:404
