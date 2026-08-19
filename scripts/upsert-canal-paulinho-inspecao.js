@@ -1,12 +1,13 @@
 'use strict';
 
 /**
- * Injeta inspeção + i18n do canal Paulinho o LOKO (+ Modder).
+ * Injeta inspeção + i18n do canal Paulinho o LOKO.
  * Uso: node scripts/upsert-canal-paulinho-inspecao.js
  */
 
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 const { buildPaulinhoCanalPost } = require('../lib/paulinho-canal-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
@@ -63,6 +64,15 @@ async function syncSql(post) {
 }
 
 async function main() {
+  try {
+    execFileSync(process.execPath, [path.join(__dirname, 'generate-paulinho-canal-cover.js')], {
+      cwd: ROOT,
+      stdio: 'inherit'
+    });
+  } catch (e) {
+    console.warn('Aviso capa:', e.message);
+  }
+
   const post = buildPaulinhoCanalPost();
   const posts = JSON.parse(fs.readFileSync(POSTS_FILE, 'utf8'));
   upsertPost(posts, post);
@@ -80,18 +90,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Paulinho o LOKO — canal GTA RP, Anti-RP e raiz Modder',
-      titleEn: 'Paulinho o LOKO — GTA RP channel, Anti-RP and Modder root',
-      titleEs: 'Paulinho o LOKO — canal GTA RP, Anti-RP y raíz Modder',
+      title: 'Paulinho o LOKO — GTA RP, Anti-RP e arquivo de servidor',
+      titleEn: 'Paulinho o LOKO — GTA RP, Anti-RP and server archive',
+      titleEs: 'Paulinho o LOKO — GTA RP, Anti-RP y archivo de servidor',
       tipo: 'canal',
       priority: 2,
       status: 'feita',
-      why:
-        'Canais: @PaulinhoLOKOoficial + Modder (UC57…) — arquivo Games; distinto da ficha de pessoa Aleff.',
-      whyEn:
-        'Channels: @PaulinhoLOKOoficial + Modder (UC57…) — Games archive; distinct from Aleff person sheet.',
-      whyEs:
-        'Canales: @PaulinhoLOKOoficial + Modder (UC57…) — archivo Games; distinto de la ficha de persona Aleff.',
+      why: 'Canais: @PaulinhoLOKOoficial — arquivo GTA RP / Anti-RP; sagas de servidor; página Games.',
+      whyEn: 'Channels: @PaulinhoLOKOoficial — GTA RP / Anti-RP archive; server stories; Games page.',
+      whyEs: 'Canales: @PaulinhoLOKOoficial — archivo GTA RP / Anti-RP; historias de servidor; página Games.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'canal-paulinho',
@@ -103,7 +110,7 @@ async function main() {
         '/jogos/aleff/',
         '/videos/?channel=paulinho'
       ],
-      notes: 'Pessoa ≠ canal. Ficção de jogo ≠ manual de crime. Modder = raiz 2015.'
+      notes: 'Hub /jogos/aleff/ · temas de mérito no catálogo. Pessoa ≠ canal.'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);

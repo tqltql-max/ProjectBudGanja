@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T19:30:07.385Z",
+  "updatedAt": "2026-08-19T04:56:19.625Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5220,7 +5220,8 @@
         "https://pt.wikipedia.org/wiki/Paulinho_o_Loko",
         "/posts/post-inspecao-palavra-respeito.html",
         "/posts/post-inspecao-palavra-idolo.html",
-        "/jogos/aleff/"
+        "/jogos/aleff/",
+        "/posts/post-inspecao-canal-paulinho.html"
       ],
       "notes": "Pessoa especial. Não reduzir a streamer. Catálogo de jogos é satélite."
     },
@@ -5580,15 +5581,15 @@
     },
     {
       "id": "canal-paulinho",
-      "title": "Paulinho o LOKO — canal GTA RP, Anti-RP e raiz Modder",
-      "titleEn": "Paulinho o LOKO — GTA RP channel, Anti-RP and Modder root",
-      "titleEs": "Paulinho o LOKO — canal GTA RP, Anti-RP y raíz Modder",
+      "title": "Paulinho o LOKO — GTA RP, Anti-RP e arquivo de servidor",
+      "titleEn": "Paulinho o LOKO — GTA RP, Anti-RP and server archive",
+      "titleEs": "Paulinho o LOKO — GTA RP, Anti-RP y archivo de servidor",
       "tipo": "canal",
       "priority": 2,
       "status": "feita",
-      "why": "Canais: @PaulinhoLOKOoficial + Modder (UC57…) — arquivo Games; distinto da ficha de pessoa Aleff.",
-      "whyEn": "Channels: @PaulinhoLOKOoficial + Modder (UC57…) — Games archive; distinct from Aleff person sheet.",
-      "whyEs": "Canales: @PaulinhoLOKOoficial + Modder (UC57…) — archivo Games; distinto de la ficha de persona Aleff.",
+      "why": "Canais: @PaulinhoLOKOoficial — arquivo GTA RP / Anti-RP; sagas de servidor; página Games.",
+      "whyEn": "Channels: @PaulinhoLOKOoficial — GTA RP / Anti-RP archive; server stories; Games page.",
+      "whyEs": "Canales: @PaulinhoLOKOoficial — archivo GTA RP / Anti-RP; historias de servidor; página Games.",
       "suggestedSlug": "inspecao-canal-paulinho",
       "doneHref": "/posts/post-inspecao-canal-paulinho.html",
       "seriesHint": "canal-paulinho",
@@ -5600,7 +5601,7 @@
         "/jogos/aleff/",
         "/videos/?channel=paulinho"
       ],
-      "notes": "Pessoa ≠ canal. Ficção de jogo ≠ manual de crime. Modder = raiz 2015."
+      "notes": "Hub /jogos/aleff/ · temas de mérito no catálogo. Pessoa ≠ canal."
     },
     {
       "id": "estudio-rockstar",

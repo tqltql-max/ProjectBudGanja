@@ -59,7 +59,7 @@
       descFallback:
         'Arquivo de histórias na ordem de postagem. Crédito à pessoa: Aleff (Aliffe Henrique de Carvalho) — sem afiliação.',
       yt: 'https://www.youtube.com/@PaulinhoLOKOoficial',
-      inspection: '/posts/post-inspecao-figura-aleff.html',
+      inspection: '/posts/post-inspecao-canal-paulinho.html',
       emptyKey: 'pages.games.emptyVideos',
       emptyFallback: 'Nenhum vídeo do Aleff no catálogo ainda.'
     }
