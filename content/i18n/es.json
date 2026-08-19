@@ -20,7 +20,7 @@
     "loading": "Cargando…",
     "featured": "Destacado",
     "recent": "recientes",
-    "footerLegal": "Contenido educativo.",
+    "footerLegal": "Contenido educativo. Inspección, no receta.",
     "footerPrivacy": "Privacidad",
     "footerUpdated": "actualizado el",
     "adminArea": "Área administrativa",
@@ -60,7 +60,7 @@
     "groupLibrary": "Biblioteca",
     "groupTools": "Herramientas",
     "groupAbout": "Sobre nosotros",
-    "tagline": "Laboratorio de cultivo",
+    "tagline": "Laboratorio de inspección.",
     "copy": "© 2026 Inspetor BudGanja. Contenido educativo."
   },
   "menu": {
@@ -86,10 +86,12 @@
   "pages": {
     "home": {
       "heroEyebrow": "Laboratorio digital · contenido educativo",
-      "heroTitle": "Bienvenido al Laboratorio",
-      "heroSubtitle": "¡Toma tus herramientas y manos a la obra!",
-      "areasTitle": "Nuestras Áreas",
-      "areasSubtitle": "Biblioteca de cultivo, calculadoras, sorteos y más — elige un área para explorar.",
+      "heroTitle": "Inspetor BudGanja",
+      "heroSubtitle": "Laboratorio de inspección.",
+      "metaDescription": "Laboratorio de inspección. Plantas, oficio y cultura, con método.",
+      "ogDescription": "Inspetor BudGanja — laboratorio de inspección. Plantas, oficio y cultura.",
+      "areasTitle": "El laboratorio",
+      "areasSubtitle": "Estudio, cultivo y una forma de mirar.",
       "cardGuiaTitle": "Guía básica de cultivo",
       "cardGuiaText": "Ruta en video del canal @InspetorBudGanja — del suelo a la floración, paso a paso.",
       "cardGuiaBtn": "Abrir guía",

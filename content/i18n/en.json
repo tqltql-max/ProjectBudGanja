@@ -20,7 +20,7 @@
     "loading": "Loading…",
     "featured": "Featured",
     "recent": "recent",
-    "footerLegal": "Educational content.",
+    "footerLegal": "Educational content. Inspection, not a prescription.",
     "footerPrivacy": "Privacy",
     "footerUpdated": "updated on",
     "adminArea": "Admin area",
@@ -60,7 +60,7 @@
     "groupLibrary": "Library",
     "groupTools": "Tools",
     "groupAbout": "About us",
-    "tagline": "Growing laboratory",
+    "tagline": "Inspection lab.",
     "copy": "© 2026 Inspetor BudGanja. Educational content."
   },
   "menu": {
@@ -86,10 +86,12 @@
   "pages": {
     "home": {
       "heroEyebrow": "Digital lab · educational content",
-      "heroTitle": "Welcome to the Laboratory",
-      "heroSubtitle": "Grab your tools — let's get to work!",
-      "areasTitle": "What We Do",
-      "areasSubtitle": "Growing library, calculators, giveaways and more — pick an area to explore.",
+      "heroTitle": "Inspetor BudGanja",
+      "heroSubtitle": "Inspection lab.",
+      "metaDescription": "Inspection lab. Plants, craft, and culture — with method.",
+      "ogDescription": "Inspetor BudGanja — inspection lab. Plants, craft, and culture.",
+      "areasTitle": "The lab",
+      "areasSubtitle": "Study, growing, and a way of looking.",
       "cardGuiaTitle": "Basic Growing Guide",
       "cardGuiaText": "Video trail by @InspetorBudGanja — from soil to flowering, step by step.",
       "cardGuiaBtn": "Open guide",

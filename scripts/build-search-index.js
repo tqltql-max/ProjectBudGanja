@@ -9,7 +9,7 @@ const OUT = path.join(ROOT, 'search-index.json');
 const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registry.js');
 
 const STATIC_PAGES = [
-  { url: '/', title: 'Início', desc: 'Laboratório digital de cultivo vegetal', keywords: 'home laboratório' },
+  { url: '/', title: 'Início', desc: 'Inspetor BudGanja — laboratório de inspeção. Plantas, ofício e cultura.', keywords: 'home laboratório inspeção' },
   { url: '/biblioteca/inspecoes/', title: 'Inspeções — Guia de Cultivo Básico', desc: 'Série de inspeções com relatórios e vídeos @InspetorBudGanja', keywords: 'guia cultivo inspeção vídeo' },
   { url: '/biblioteca/pesquisas/', title: 'Pesquisas', desc: 'Relatórios e estudos técnicos', keywords: 'pesquisa relatório' },
   { url: '/biblioteca/inspecoes/', title: 'Inspeções', desc: 'Verificações de campo e inspeções técnicas', keywords: 'inspeção campo' },
