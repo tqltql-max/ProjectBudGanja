@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T03:08:34.078Z",
+  "updatedAt": "2026-08-19T07:38:31.187Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -62,6 +62,16 @@
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
+      "id": "a-paixao-de-cristo",
+      "word": "A Paixão de Cristo",
+      "simple": "Filme de 2004; no site, inspeção em Artes com génese nos Evangelhos. Ficha própria, distinta de Coração Valente.",
+      "simpleEn": "2004 film; on the site, an Arts inspection rooted in the Gospels. Own sheet, distinct from Braveheart.",
+      "simpleEs": "Filme de 2004; en el sitio, inspección en Artes con origen en los Evangelios. Ficha propia, distinta de Braveheart.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-a-paixao-de-cristo.html"
+    },
+    {
       "id": "acesso-gratuito-justica",
       "word": "Acesso gratuito à justiça",
       "simple": "Caminho sem honorários particulares — necessário, mas insuficiente sozinho contra a seletividade do estatuto paciente (laudo, tempo, sobrecarga da Defensoria).",
@@ -112,16 +122,6 @@
       "href": "/posts/post-inspecao-palavra-agua.html"
     },
     {
-      "id": "pato",
-      "word": "pato",
-      "simple": "Árabe-hispânico — ave aquática, pagar o pato e pato no tucupi; elos animal/água/jambu; Faça o melhor!",
-      "simpleEn": "Arabic-Hispanic — waterbird, take the blame and duck in tucupi; links animal/água/jambu; Do your best!",
-      "simpleEs": "Árabe-hispánico — ave acuática, pagar el pato y pato en tucupi; vínculos animal/água/jambu; ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-pato.html"
-    },
-    {
       "id": "aguas-e-lagrimas",
       "word": "Águas do Mar e Lágrimas",
       "simple": "Poesia original BudGanja: o sal do mar e o da lágrima; elo com Vida, Lágrimas da Vida e Álvares de Azevedo.",
@@ -132,26 +132,6 @@
       "href": "/posts/post-inspecao-arte-aguas-e-lagrimas.html"
     },
     {
-      "id": "origami",
-      "word": "origami",
-      "simple": "Japonês ori (dobrar) + kami (papel) — arte de dobrar papel; dedicatória BudGanja a Tom Jobim.",
-      "simpleEn": "Japanese ori (fold) + kami (paper) — paper-folding art; BudGanja dedication to Tom Jobim.",
-      "simpleEs": "Japonés ori (doblar) + kami (papel) — arte de doblar papel; dedicatoria BudGanja a Tom Jobim.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-figura-tom-jobim.html"
-    },
-    {
-      "id": "tom-jobim",
-      "word": "Tom Jobim",
-      "simple": "Compositor da bossa — palavra-música; Águas de Março; dedicatória lab «Adoro origami».",
-      "simpleEn": "Bossa composer — word-music; Waters of March; lab dedication “I love origami”.",
-      "simpleEs": "Compositor de la bossa — palabra-música; Águas de Março; dedicatoria lab «Adoro origami».",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-figura-tom-jobim.html"
-    },
-    {
       "id": "alecrim",
       "word": "Alecrim",
       "simple": "Salvia rosmarinus — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -160,6 +140,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/plantas/alecrim/"
+    },
+    {
+      "id": "aleff",
+      "word": "Aleff",
+      "simple": "Aliffe Henrique de Carvalho (Aleff), de Machado (MG); no site, ficha em Pessoas — a pessoa, não a persona de ecrã.",
+      "simpleEn": "Aliffe Henrique de Carvalho (Aleff), from Machado (MG); on the site, a People sheet — the person, not the on-screen persona.",
+      "simpleEs": "Aliffe Henrique de Carvalho (Aleff), de Machado (MG); en el sitio, ficha en Personas — la persona, no la persona de pantalla.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-aleff.html"
     },
     {
       "id": "alegria",
@@ -180,6 +170,26 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "all-right-now",
+      "word": "All Right Now",
+      "simple": "Canção Free (1970): está tudo bem agora — génese após silêncio em Durham; elo BudGanja com já e legal.",
+      "simpleEn": "Free song (1970): all right now — genesis after silence in Durham; BudGanja link to já and legal.",
+      "simpleEs": "Canción Free (1970): está bien ahora — génesis tras silencio en Durham; vínculo BudGanja con já y legal.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-all-right-now.html"
+    },
+    {
+      "id": "alma",
+      "word": "alma",
+      "simple": "Lat. anima — centro vivo; chegar na alma; elos tudo/coração/vida; Faça o melhor até tocar.",
+      "simpleEn": "Lat. anima — living center; reaching the soul; links tudo/coração/vida; Do your best until it touches.",
+      "simpleEs": "Lat. anima — centro vivo; llegar al alma; vínculos tudo/corazón/vida; Haz lo mejor hasta tocar.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-alma.html"
     },
     {
       "id": "alucinogeno",
@@ -280,36 +290,6 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-arvore-da-vida.html"
-    },
-    {
-      "id": "o-inicio",
-      "word": "O Início",
-      "simple": "Poesia original BudGanja: legenda do cultivo × tanques de guerra — dossel partilha luz; blindagem esmaga.",
-      "simpleEn": "Original BudGanja poem: grow caption × war tanks — canopy shares light; armor crushes.",
-      "simpleEs": "Poesía original BudGanja: leyenda del cultivo × tanques de guerra — el dosel reparte luz; el blindaje aplasta.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-arte-o-inicio.html"
-    },
-    {
-      "id": "killing-in-the-name",
-      "word": "Killing in the Name",
-      "simple": "Canção RATM (1992): matar no nome da ordem; elo BudGanja com O Início, raiva nomeada e proibição.",
-      "simpleEn": "RATM song (1992): killing in the name of order; BudGanja link to O Início, named rage, prohibition.",
-      "simpleEs": "Canción RATM (1992): matar en el nombre del orden; vínculo BudGanja con O Início, rabia nombrada y prohibición.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-arte-killing-in-the-name.html"
-    },
-    {
-      "id": "all-right-now",
-      "word": "All Right Now",
-      "simple": "Canção Free (1970): está tudo bem agora — génese após silêncio em Durham; elo BudGanja com já e legal.",
-      "simpleEn": "Free song (1970): all right now — genesis after silence in Durham; BudGanja link to já and legal.",
-      "simpleEs": "Canción Free (1970): está bien ahora — génesis tras silencio en Durham; vínculo BudGanja con já y legal.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-arte-all-right-now.html"
     },
     {
       "id": "associacao-pacientes",
@@ -572,66 +552,6 @@
       "href": "/posts/post-inspecao-palavra-caminho.html"
     },
     {
-      "id": "perseguicao",
-      "word": "perseguição",
-      "simple": "Lat. persequī — caça, opressão e obsessão; contraste prosseguir; elos caminho/risco/EXIT; Faça o melhor!",
-      "simpleEn": "Lat. persequī — chase, oppression and obsession; contrast prosseguir; links caminho/risco/EXIT; Do your best!",
-      "simpleEs": "Lat. persequī — caza, opresión y obsesión; contraste prosseguir; vínculos caminho/risco/EXIT; ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-perseguicao.html"
-    },
-    {
-      "id": "exit",
-      "word": "EXIT",
-      "simple": "EN/lat. exīre · exitus — saída, quit, teatro; no lab BudGanja, salvação = ofício de sair do aperto; elos caminho/alma/risco; Faça o melhor!",
-      "simpleEn": "EN/Lat. exīre · exitus — way out, quit, theatre; in the BudGanja lab, salvation = craft of leaving the squeeze; links caminho/alma/risco; Do your best!",
-      "simpleEs": "EN/lat. exīre · exitus — salida, quit, teatro; en el lab BudGanja, salvación = oficio de salir del aprieto; vínculos caminho/alma/risco; ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-exit.html"
-    },
-    {
-      "id": "pattern",
-      "word": "pattern",
-      "simple": "EN — molde / padrão / design pattern no BR; repetição reconhecível; elos gesto/caminho; Faça o melhor com o molde certo.",
-      "simpleEn": "EN — mold / template / design pattern in BR; recognizable repetition; links gesto/caminho; Do your best with the right mold.",
-      "simpleEs": "EN — molde / plantilla / design pattern en BR; repetición reconocible; vínculos gesto/caminho; Haz lo mejor con el molde correcto.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-pattern.html"
-    },
-    {
-      "id": "patrao",
-      "word": "patrão",
-      "simple": "Chefe / empregador (lat. patronus); mesma raiz de padrão e pattern; elos respeito/gesto; Faça o melhor com ou sem olhar.",
-      "simpleEn": "Boss / employer (Lat. patronus); same root as padrão and pattern; links respeito/gesto; Do your best with or without watching.",
-      "simpleEs": "Jefe / empleador (lat. patronus); misma raíz que padrão y pattern; vínculos respeito/gesto; Haz lo mejor con o sin mirada.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-patrao.html"
-    },
-    {
-      "id": "puta",
-      "word": "puta",
-      "simple": "Lat. vulg. putta «menina» → pejorativo; no BR também intensificador («puta festa»); elo PQP; inspecionar com respeito.",
-      "simpleEn": "VL putta “girl” → pejorative; in BR also intensifier; link PQP; inspect with respect.",
-      "simpleEs": "Lat. vulg. putta «niña» → peyorativo; en BR también intensificador; vínculo PQP; inspeccionar con respeto.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-puta.html"
-    },
-    {
-      "id": "pariu",
-      "word": "pariu",
-      "simple": "De parir / lat. pariō «dar à luz»; peça de puta que pariu; separar parto e palavrão.",
-      "simpleEn": "From parir / Lat. pariō “give birth”; piece of puta que pariu; separate birth and swear.",
-      "simpleEs": "De parir / lat. pariō «dar a luz»; pieza de puta que pariu; separar parto y taco.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-pariu.html"
-    },
-    {
       "id": "camomila",
       "word": "Camomila",
       "simple": "Capítulos de Matricaria chamomilla — tradição de chás calmantes; marcadores como apigenina e óleo azul (camazuleno) em contexto educacional. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -680,6 +600,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "canabinoide-sintetico",
+      "word": "Canabinoide sintético",
+      "simple": "Molécula canabinoide feita em laboratório humano — fármaco registado ou agonista ilícito; não é fitocanabinoide da flor. Sem receita de síntese.",
+      "simpleEn": "Cannabinoid made in a human lab — licensed drug or illicit agonist; not a flower phytocannabinoid. No synthesis recipe.",
+      "simpleEs": "Cannabinoide hecho en laboratorio humano — fármaco registrado o agonista ilícito; no es fitocannabinoide de la flor.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-fitocanabinoides.html"
     },
     {
       "id": "canhamo",
@@ -792,6 +722,26 @@
       "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
     },
     {
+      "id": "cbda",
+      "word": "CBDA",
+      "simple": "Ácido canabidiólico — forma ácida do CBD na planta viva; estudar à parte do CBD neutro (pesquisa Fitocanabinoides).",
+      "simpleEn": "Cannabidiolic acid — acidic form of CBD in the living plant; study apart from neutral CBD.",
+      "simpleEs": "Ácido cannabidiólico — forma ácida del CBD en la planta viva; estudiar aparte del CBD neutro.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-fitocanabinoides.html"
+    },
+    {
+      "id": "cbdv",
+      "word": "CBDV",
+      "simple": "Canabidivarina — varin do CBD; investigada em epilepsia/neuro. Não substitui fármaco prescrito (pesquisa Fitocanabinoides).",
+      "simpleEn": "Cannabidivarin — CBD’s varin; researched in epilepsy/neuro. Does not replace a prescribed drug.",
+      "simpleEs": "Cannabidivarina — varin del CBD; investigada en epilepsia/neuro. No sustituye fármaco prescrito.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-fitocanabinoides.html"
+    },
+    {
       "id": "cbg",
       "word": "CBG",
       "simple": "Canabigerol — fitocanabinoide majoritário do quimiotipo 4 na classificação da Aula 10 XIV.",
@@ -800,6 +750,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
+    },
+    {
+      "id": "cbga",
+      "word": "CBGA",
+      "simple": "Ácido canabigerólico — nó-mãe da via clássica; ramifica a THCA, CBDA e CBCA nas enzimas da planta (pesquisa Fitocanabinoides).",
+      "simpleEn": "Cannabigerolic acid — mother node of the classic path; branches to THCA, CBDA and CBCA (Phytocannabinoids research).",
+      "simpleEs": "Ácido cannabigerólico — nodo madre de la vía clásica; ramifica a THCA, CBDA y CBCA.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-fitocanabinoides.html"
     },
     {
       "id": "cbn",
@@ -852,6 +812,16 @@
       "href": "/posts/post-inspecao-derivado-chocolate.html"
     },
     {
+      "id": "christopher-lloyd",
+      "word": "Christopher Lloyd",
+      "simple": "Actor; no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não persona do Doc.",
+      "simpleEn": "Actor; on the site, a People sheet linked to Back to the Future — the person, not the Doc persona.",
+      "simpleEs": "Actor; en el sitio, ficha en Personas con vínculo en Back to the Future — la persona, no la persona de Doc.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-christopher-lloyd.html"
+    },
+    {
       "id": "cinta",
       "word": "cinta",
       "simple": "Lat. cincta / cingere — faixa que segura; no cultivo, tutor com folga; ≠ sinta; Faça o melhor neste aperto.",
@@ -870,16 +840,6 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-cinzeiro.html"
-    },
-    {
-      "id": "papel-de-enrolar",
-      "word": "papel de enrolar",
-      "simple": "Mortalha / seda — papel fino para enrolar; origem europeia industrial (ex. Rizla); elo tabaco e cinzeiro.",
-      "simpleEn": "Rolling paper — thin paper for rolling; modern European industry (e.g. Rizla); links tobacco and cinzeiro.",
-      "simpleEs": "Papel de liar — papel fino; origen europea industrial (p. ej. Rizla); vínculo tabaco y cinzeiro.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-papel-enrolar-tabaco.html"
     },
     {
       "id": "clonadora",
@@ -932,6 +892,16 @@
       "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
+      "id": "como-os-ricos-transformam-as-coisas",
+      "word": "Como os ricos transformam as coisas",
+      "simple": "Frase-mapa: poder sobre o ciclo extrair→fazer→descartar; elo História das Coisas.",
+      "simpleEn": "Map-phrase: power over extract→make→dispose; link Story of Stuff.",
+      "simpleEs": "Frase-mapa: poder sobre el ciclo; vínculo Historia de las cosas.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-como-os-ricos-transformam-as-coisas.html"
+    },
+    {
       "id": "comunidade",
       "word": "Comunidade",
       "simple": "Espaço social do laboratório — Feed Vivo, identificação de plantas e partilha do diário.",
@@ -972,34 +942,24 @@
       "href": "/posts/post-inspecao-palavra-coracao.html"
     },
     {
-      "id": "mae",
-      "word": "mãe",
-      "simple": "Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor!",
-      "simpleEn": "Lat. mater — origin and care; tipography fia → mãe; NE fia (= daughter) ≠ mother; Dona Maria/alma; Do your best!",
-      "simpleEs": "Lat. mater — origen y cuidado; tipografía fia → mãe; fia NE (= hija) ≠ madre; Dona Maria/alma; ¡Haz lo mejor!",
+      "id": "coracao-valente",
+      "word": "Coração Valente",
+      "simple": "Filme de 1995 (Braveheart); no site, inspeção em Artes com génese na lenda de Wallace / Blind Harry. Ficha própria, distinta de A Paixão de Cristo.",
+      "simpleEn": "1995 film (Braveheart); on the site, an Arts inspection rooted in the Wallace / Blind Harry legend. Own sheet, distinct from The Passion of the Christ.",
+      "simpleEs": "Filme de 1995 (Braveheart); en el sitio, inspección en Artes con origen en la leyenda de Wallace. Ficha propia, distinta de A Paixão de Cristo.",
       "group": "lexico",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-mae.html"
+      "href": "/posts/post-inspecao-filme-coracao-valente.html"
     },
     {
-      "id": "alma",
-      "word": "alma",
-      "simple": "Lat. anima — centro vivo; chegar na alma; elos tudo/coração/vida; Faça o melhor até tocar.",
-      "simpleEn": "Lat. anima — living center; reaching the soul; links tudo/coração/vida; Do your best until it touches.",
-      "simpleEs": "Lat. anima — centro vivo; llegar al alma; vínculos tudo/corazón/vida; Haz lo mejor hasta tocar.",
-      "group": "lexico",
+      "group": "aviso",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-alma.html"
-    },
-    {
-      "id": "nap",
-      "word": "nap",
-      "simple": "EN — sono curto / power nap no BR; pausa de ofício; elos gesto/alma; Faça o melhor depois de parar.",
-      "simpleEn": "EN — short sleep / power nap in BR; craft pause; links gesto/alma; Do your best after stopping.",
-      "simpleEs": "EN — sueño corto / power nap en BR; pausa de oficio; vínculos gesto/alma; Haz lo mejor después de parar.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-nap.html"
+      "id": "aviso-corromper",
+      "word": "corromper",
+      "simple": "Aviso vermelho · Toxina. Comum: estragar. BudGanja: segundo dano da frase («envenena»).",
+      "simpleEn": "Red warning · Toxin. Everyday: to spoil. BudGanja: the saying’s second harm («envenena»).",
+      "simpleEs": "Aviso rojo · Toxina. Común: estropear. BudGanja: segundo daño de la frase («envenena»).",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
     },
     {
       "id": "crf",
@@ -1062,6 +1022,16 @@
       "href": "/posts/post-inspecao-palavra-daninha.html"
     },
     {
+      "id": "de-volta-para-o-futuro",
+      "word": "De Volta para o Futuro",
+      "simple": "Filme de 1985 (Zemeckis/Gale); no site, inspeção em Artes com homenagem aos actores e fichas de Fox e Lloyd.",
+      "simpleEn": "1985 film (Zemeckis/Gale); on the site, an Arts inspection honoring the actors, with Fox and Lloyd sheets.",
+      "simpleEs": "Filme de 1985 (Zemeckis/Gale); en el sitio, inspección en Artes con homenaje a los actores y fichas de Fox y Lloyd.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-de-volta-para-o-futuro.html"
+    },
+    {
       "id": "decocao",
       "word": "decoção",
       "simple": "Fervura suave de raízes/cascas/sementes duras, ~10–20 min — modo do manual de chá de plantas.",
@@ -1082,6 +1052,16 @@
       "href": "/posts/post-inspecao-guia-defensoria-acesso.html"
     },
     {
+      "id": "delorean",
+      "word": "DeLorean",
+      "simple": "Coupé DMC (Giugiaro, Dunmurry, 1981–82); no site, inspeção de objecto em Artes — o carro real; a máquina do filme é camada.",
+      "simpleEn": "DMC coupe (Giugiaro, Dunmurry, 1981–82); on the site, an Arts object sheet — the real car; the film machine is a layer.",
+      "simpleEs": "Cupé DMC (Giugiaro, Dunmurry, 1981–82); en el sitio, ficha de objeto en Artes — el coche real; la máquina del filme es capa.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-delorean.html"
+    },
+    {
       "id": "depressor",
       "word": "Depressor",
       "simple": "Classe de efeito: diminui a actividade do sistema nervoso central — distinta de entorpecente (categoria de lista).",
@@ -1094,12 +1074,12 @@
     {
       "id": "descarboxilacao",
       "word": "Descarboxilação",
-      "simple": "Passo (calor/química) que converte ácidos (THCA/CBDA…) nas formas «ativas» THC/CBD usadas em óleos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
-      "simpleEn": "Step (heat/chemistry) that converts acids (THCA/CBDA…) into the «active» THC/CBD forms used in oils. Cited in the XIV lesson drafts (UNIFESP course).",
-      "simpleEs": "Paso (calor/química) que convierte ácidos (THCA/CBDA…) en las formas «activas» THC/CBD usadas en aceites. Citada en los borradores de las clases XIV (curso UNIFESP).",
+      "simple": "Perda do grupo ácido (o «A») com calor, luz ou tempo — THCA→THC, CBDA→CBD; literacia de laudo, não receita de cozinha.",
+      "simpleEn": "Loss of the acid group with heat, light or time — THCA→THC, CBDA→CBD; lab-label literacy, not a kitchen recipe.",
+      "simpleEs": "Pérdida del grupo ácido con calor, luz o tiempo — THCA→THC, CBDA→CBD; literacia de laudo, no receta de cocina.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/biblioteca/unifesp/livro-xiv.html"
+      "href": "/posts/post-pesquisa-fitocanabinoides.html"
     },
     {
       "id": "descarte",
@@ -1132,6 +1112,16 @@
       "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
     },
     {
+      "id": "desligar",
+      "word": "desligar",
+      "simple": "Des- + ligar — verbos do circuito com ligar; par lab com interruptor; Faça o melhor inclusive ao pausar.",
+      "simpleEn": "Des- + ligar — circuit verbs with ligar; lab pair with interruptor; Do your best even when pausing.",
+      "simpleEs": "Des- + ligar — verbos del circuito con ligar; par lab con interruptor; Haz lo mejor incluso al pausar.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-ligar-desligar.html"
+    },
+    {
       "id": "desperdicio",
       "word": "Desperdício",
       "simple": "Uso ou produção em excesso sem necessidade — mecanismo central (com o exagero) no ciclo industrial da pesquisa.",
@@ -1150,6 +1140,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-expressao-deu-certo-galera.html"
+    },
+    {
+      "id": "deus-abencoe",
+      "word": "Deus abençoe",
+      "simple": "Expressão — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; respeito à fé, sem proselitismo; depois Faça o melhor!",
+      "simpleEn": "Saying — BR blessing and farewell; tipography Deus Abenço → Deus abençoe; respect for faith, no proselytizing; then Do your best!",
+      "simpleEs": "Expresión — bendición y despedida BR; tipografía Deus Abenço → Deus abençoe; respeto a la fe, sin proselitismo; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-deus-abencoe.html"
+    },
+    {
+      "id": "deus-deu-dois-ouvidos",
+      "word": "Deus deu dois ouvidos e uma boca",
+      "simple": "Expressão — ditado de proporção (ouvir 2× / falar 1×); tipografia dois pouvi → dois ouvidos; respeito à fé cultural, sem proselitismo; depois Faça o melhor!",
+      "simpleEn": "Saying — proportion proverb (listen 2× / speak 1×); tipography dois pouvi → dois ouvidos; respect for cultural faith, no proselytizing; then Do your best!",
+      "simpleEs": "Expresión — dicho de proporción (oír 2× / hablar 1×); tipografía dois pouvi → dois ouvidos; respeto a la fe cultural, sin proselitismo; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-deus-deu-dois-ouvidos.html"
     },
     {
       "id": "diamba",
@@ -1312,6 +1322,16 @@
       "href": "/posts/post-inspecao-palavra-emocao.html"
     },
     {
+      "id": "encontro-marcado",
+      "word": "Encontro Marcado",
+      "simple": "Filme de 1998 (Meet Joe Black); no site, inspeção em Artes com génese na peça de Alberto Casella (1924).",
+      "simpleEn": "1998 film (Meet Joe Black); on the site, an Arts inspection rooted in Alberto Casella’s 1924 play.",
+      "simpleEs": "Filme de 1998 (Meet Joe Black); en el sitio, inspección en Artes con origen en la obra de Alberto Casella (1924).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-encontro-marcado.html"
+    },
+    {
       "id": "endocanabinoide",
       "word": "Endocanabinoide",
       "simple": "Mensageiro que o próprio corpo produz (ex. anandamida, 2-AG) e que age nos receptores canabinoides — pode subir com exercício e, em estudos, com meditação.",
@@ -1350,6 +1370,16 @@
       "group": "classificacao",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-entorpecente-narcotico.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-envenenar",
+      "word": "envenenar / envenena",
+      "simple": "Aviso vermelho · Toxina. Comum: aplicar veneno. BudGanja: corrompe por dentro — dose que fica no próprio sujeito.",
+      "simpleEn": "Red warning · Toxin. Everyday: to poison. BudGanja: corrupts from within — a dose that stays in the subject.",
+      "simpleEs": "Aviso rojo · Toxina. Común: aplicar veneno. BudGanja: corrompe por dentro — dosis que queda en el propio sujeto.",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
     },
     {
       "id": "eojsofaorforap",
@@ -1502,6 +1532,16 @@
       "href": "/posts/post-inspecao-palavra-estupefaciente.html"
     },
     {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-esvaziar",
+      "word": "esvaziar",
+      "simple": "Aviso vermelho · Esvaziamento. Comum: deixar vazio. BudGanja: primeiro dano da frase («mata a alma»).",
+      "simpleEn": "Red warning · Emptying. Everyday: to empty. BudGanja: the saying’s first harm («mata a alma»).",
+      "simpleEs": "Aviso rojo · Vaciado. Común: dejar vacío. BudGanja: primer daño de la frase («mata a alma»).",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+    },
+    {
       "id": "etnobotanica",
       "word": "Etnobotânica",
       "simple": "Ciência da relação entre culturas e plantas — usos medicinais, rituais e nomes populares. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -1530,6 +1570,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "id": "exit",
+      "word": "EXIT",
+      "simple": "EN/lat. exīre · exitus — saída, quit, teatro; no lab BudGanja, salvação = ofício de sair do aperto; elos caminho/alma/risco; Faça o melhor!",
+      "simpleEn": "EN/Lat. exīre · exitus — way out, quit, theatre; in the BudGanja lab, salvation = craft of leaving the squeeze; links caminho/alma/risco; Do your best!",
+      "simpleEs": "EN/lat. exīre · exitus — salida, quit, teatro; en el lab BudGanja, salvación = oficio de salir del aprieto; vínculos caminho/alma/risco; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-exit.html"
     },
     {
       "id": "externalidade",
@@ -1632,34 +1682,14 @@
       "href": "/posts/post-inspecao-expressao-filho-de-deus.html"
     },
     {
-      "id": "deus-deu-dois-ouvidos",
-      "word": "Deus deu dois ouvidos e uma boca",
-      "simple": "Expressão — ditado de proporção (ouvir 2× / falar 1×); tipografia dois pouvi → dois ouvidos; respeito à fé cultural, sem proselitismo; depois Faça o melhor!",
-      "simpleEn": "Saying — proportion proverb (listen 2× / speak 1×); tipography dois pouvi → dois ouvidos; respect for cultural faith, no proselytizing; then Do your best!",
-      "simpleEs": "Expresión — dicho de proporción (oír 2× / hablar 1×); tipografía dois pouvi → dois ouvidos; respeto a la fe cultural, sin proselitismo; luego ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-expressao-deus-deu-dois-ouvidos.html"
-    },
-    {
-      "id": "deus-abencoe",
-      "word": "Deus abençoe",
-      "simple": "Expressão — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; respeito à fé, sem proselitismo; depois Faça o melhor!",
-      "simpleEn": "Saying — BR blessing and farewell; tipography Deus Abenço → Deus abençoe; respect for faith, no proselytizing; then Do your best!",
-      "simpleEs": "Expresión — bendición y despedida BR; tipografía Deus Abenço → Deus abençoe; respeto a la fe, sin proselitismo; luego ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-expressao-deus-abencoe.html"
-    },
-    {
       "id": "fitocanabinoide",
       "word": "Fitocanabinoide",
-      "simple": "Canabinoide de planta (sobretudo cannabis) — na grade XIV é a camada de modulação exógena, distinta da via endógena (meditação, estilo de vida, PIC).",
-      "simpleEn": "Plant cannabinoid (especially cannabis) — in XIV the exogenous modulation layer, distinct from the endogenous path (meditation, lifestyle, PIC).",
-      "simpleEs": "Cannabinoide de planta (sobre todo cannabis) — en el XIV es la capa de modulación exógena, distinta de la vía endógena (meditación, estilo de vida, PIC).",
+      "simple": "Canabinoide de planta (sobretudo cannabis) — catálogo de ofício: ácidos na flor, neutros com calor/tempo, distintos do endocanabinoide e do sintético.",
+      "simpleEn": "Plant cannabinoid (especially cannabis) — craft catalogue: acids in the flower, neutrals with heat/time, distinct from endo- and synthetics.",
+      "simpleEs": "Cannabinoide de planta (sobre todo cannabis) — catálogo de oficio: ácidos en la flor, neutros con calor/tiempo, distintos del endo y del sintético.",
       "group": "tecnico",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+      "href": "/posts/post-pesquisa-fitocanabinoides.html"
     },
     {
       "id": "fitofarmaco",
@@ -1702,36 +1732,6 @@
       "href": "/posts/post-inspecao-palavra-fogo.html"
     },
     {
-      "id": "sol",
-      "word": "sol",
-      "simple": "Lat. sol — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Faça o melhor com a luz do dia.",
-      "simpleEn": "Lat. sol — star and natural light; link luz; contrast with interruptor; ≠ solitário; Do your best with daylight.",
-      "simpleEs": "Lat. sol — astro y luz natural; vínculo luz; contraste con interruptor; ≠ solitário; Haz lo mejor con la luz del día.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-sol.html"
-    },
-    {
-      "id": "noite",
-      "word": "noite",
-      "simple": "Lat. nox — fase escura do ciclo; par com sol; elos luz e interruptor; fotoperíodo; Faça o melhor com a noite certa.",
-      "simpleEn": "Lat. nox — dark phase of the cycle; pair with sol; links luz and interruptor; photoperiod; Do your best with the right night.",
-      "simpleEs": "Lat. nox — fase oscura del ciclo; par con sol; vínculos luz e interruptor; fotoperiodo; Haz lo mejor con la noche cierta.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-noite.html"
-    },
-    {
-      "id": "luz",
-      "word": "luz",
-      "simple": "Lat. lux — claridade e efeito do clique; tríade circuito + sol (fonte natural); Faça o melhor com a luz certa.",
-      "simpleEn": "Lat. lux — clarity and click effect; circuit triad + sol (natural source); Do your best with the right light.",
-      "simpleEs": "Lat. lux — claridad y efecto del clic; tríada circuito + sol (fuente natural); Haz lo mejor con la luz cierta.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-luz.html"
-    },
-    {
       "id": "francisco-matos",
       "word": "Francisco José de Abreu Matos",
       "simple": "Farmacologista da UFC, mentor do projecto Farmácias Vivas (1983) — citado na Aula 5 como origem da política.",
@@ -1740,6 +1740,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-farmacia-viva.html"
+    },
+    {
+      "id": "friends",
+      "word": "Friends",
+      "simple": "Sitcom de 1994–2004; no site, inspeção em Artes — Crane / Kauffman; a série é o texto. Ficha própria, distinta de How I Met Your Mother.",
+      "simpleEn": "1994–2004 sitcom; on the site, an Arts inspection — Crane / Kauffman; the series is the text. Own sheet, distinct from How I Met Your Mother.",
+      "simpleEs": "Sitcom de 1994–2004; en el sitio, inspección en Artes — Crane / Kauffman. Ficha propia, distinta de How I Met Your Mother.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-serie-friends.html"
     },
     {
       "id": "fruto",
@@ -1822,106 +1832,6 @@
       "href": "/posts/post-inspecao-palavra-gesto.html"
     },
     {
-      "id": "janela",
-      "word": "janela",
-      "simple": "Vão para ar e vista — elo maçaneta/fecho; cruzamento com porta e luz.",
-      "simpleEn": "Window for air and view — links handle/latch; crossing with door and light.",
-      "simpleEs": "Vano para aire y vista — vínculo manilla; cruce con puerta y luz.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-macaneta.html"
-    },
-    {
-      "id": "porta",
-      "word": "porta",
-      "simple": "Limiar para passar — elo maçaneta, caminho, passar; cruzamento com janela e luz.",
-      "simpleEn": "Door threshold — links maçaneta, path, pass; crossing with window and light.",
-      "simpleEs": "Umbral para pasar — vínculo maçaneta, camino, pasar; cruce con ventana y luz.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-macaneta.html"
-    },
-    {
-      "id": "macaneta",
-      "word": "maçaneta",
-      "simple": "Puxador/fecho da porta — gesto torcer/abrir; elo mãos, porta/janela, interruptor e ligar/desligar.",
-      "simpleEn": "Doorknob/handle — twist/open gesture; links hands, door/window, switch, on/off.",
-      "simpleEs": "Manilla/pomo — gesto torcer/abrir; vínculo manos, puerta/ventana, interruptor, ligar/desligar.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-macaneta.html"
-    },
-    {
-      "id": "desligar",
-      "word": "desligar",
-      "simple": "Des- + ligar — verbos do circuito com ligar; par lab com interruptor; Faça o melhor inclusive ao pausar.",
-      "simpleEn": "Des- + ligar — circuit verbs with ligar; lab pair with interruptor; Do your best even when pausing.",
-      "simpleEs": "Des- + ligar — verbos del circuito con ligar; par lab con interruptor; Haz lo mejor incluso al pausar.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-ligar-desligar.html"
-    },
-    {
-      "id": "ligar",
-      "word": "ligar",
-      "simple": "Lat. ligare — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor com o clique.",
-      "simpleEn": "Lat. ligare — circuit verbs; lab pair with interruptor (device × gesture); Do your best with the click.",
-      "simpleEs": "Lat. ligare — verbos del circuito; par lab con interruptor (pieza × gesto); Haz lo mejor con el clic.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-ligar-desligar.html"
-    },
-    {
-      "id": "grok",
-      "word": "Grok",
-      "simple": "Heinlein *to grok* — compreender por dentro × tom de ofício; elo oral com Deus (abençoe / dignidade / assombro); humano decide.",
-      "simpleEn": "Heinlein *to grok* — understand deeply × craft tone; oral link to Deus; human decides.",
-      "simpleEs": "Heinlein *to grok* — comprender por dentro × tono de oficio; vínculo oral con Deus; decide el humano.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-grok.html"
-    },
-    {
-      "id": "meneia",
-      "word": "meneia",
-      "simple": "Forma viva de menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto/mãos; Faça o melhor!",
-      "simpleEn": "Living form of menear (*manear* ← hand) — body sway and craft; links gesto/mãos; Do your best!",
-      "simpleEs": "Forma viva de menear (*manear* ← mano) — balanceo del cuerpo y oficio; vínculos gesto/mãos; ¡Haz lo mejor!",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-meneia.html"
-    },
-    {
-      "id": "tempo",
-      "word": "tempo",
-      "simple": "Lat. tempus — cronologia, clima («tempo bom») e compasso musical na mesma palavra; kairós × chronos; elos sempre/passado/alma; Faça o melhor com o tempo que se tem.",
-      "simpleEn": "Lat. tempus — chronology, weather and musical beat share the same word; kairós × chronos; links sempre/passado/alma; Do your best with the time you have.",
-      "simpleEs": "Lat. tempus — cronología, clima y compás musical en la misma palabra; kairós × chronos; vínculos sempre/passado/alma; Haz lo mejor con el tiempo que tienes.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-tempo.html"
-    },
-    {
-      "id": "renato-russo",
-      "word": "Renato Russo",
-      "simple": "Letrista e voz da Legião Urbana (1960–1996); no site, inspeção em Pessoas com elo na ficha tempo (Tempo Perdido).",
-      "simpleEn": "Lyricist and voice of Legião Urbana (1960–1996); on the site, a People inspection linked to the tempo sheet (Tempo Perdido).",
-      "simpleEs": "Letrista y voz de Legião Urbana (1960–1996); en el sitio, inspección en Personas con vínculo en la ficha tempo (Tempo Perdido).",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-figura-renato-russo.html"
-    },
-    {
-      "id": "pedi-mao",
-      "word": "pedi a mão",
-      "simple": "Pedir + mão — ajuda («uma mão») ou compromisso («a mão»); elos mãos/gesto; Faça o melhor ao pedir e ao dar.",
-      "simpleEn": "Ask + hand — help (“uma mão”) or commitment (“a mão”); links hands/gesture; Do your best asking and giving.",
-      "simpleEs": "Pedir + mano — ayuda («uma mão») o compromiso («a mão»); vínculos manos/gesto; Haz lo mejor al pedir y dar.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-pedi-mao.html"
-    },
-    {
       "id": "gluten",
       "word": "Glúten",
       "simple": "Proteína do trigo e de outros cereais — no site, ficha de produto nocivo.",
@@ -1940,6 +1850,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-groenlandia.html"
+    },
+    {
+      "id": "grok",
+      "word": "Grok",
+      "simple": "Heinlein *to grok* — compreender por dentro × tom de ofício; elo oral com Deus (abençoe / dignidade / assombro); humano decide.",
+      "simpleEn": "Heinlein *to grok* — understand deeply × craft tone; oral link to Deus; human decides.",
+      "simpleEs": "Heinlein *to grok* — comprender por dentro × tono de oficio; vínculo oral con Deus; decide el humano.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-grok.html"
     },
     {
       "id": "guaco",
@@ -2032,6 +1952,16 @@
       "href": "/plantas/hortela/"
     },
     {
+      "id": "how-i-met-your-mother",
+      "word": "How I Met Your Mother",
+      "simple": "Sitcom de 2005–2014; no site, inspeção em Artes — Bays / Thomas; relato e tempo. Ficha própria, distinta de Friends.",
+      "simpleEn": "2005–2014 sitcom; on the site, an Arts inspection — Bays / Thomas; telling and time. Own sheet, distinct from Friends.",
+      "simpleEs": "Sitcom de 2005–2014; en el sitio, inspección en Artes — Bays / Thomas. Ficha propia, distinta de Friends.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-serie-how-i-met-your-mother.html"
+    },
+    {
       "id": "iatrogenia",
       "word": "Iatrogenia",
       "simple": "Dano causado pela própria intervenção terapêutica — risco do estágio «uso» na cadeia fármaco/droga.",
@@ -2092,16 +2022,6 @@
       "href": "/posts/post-inspecao-palavra-incrivel.html"
     },
     {
-      "id": "insana",
-      "word": "insana",
-      "simple": "Lat. insanus (in- + sanus) — intensidade/excesso no BR; ≠ diagnóstico; verdade e respeito; Faça o melhor.",
-      "simpleEn": "Lat. insanus (in- + sanus) — intensity/excess in BR; ≠ diagnosis; truth and respect; Do your best.",
-      "simpleEs": "Lat. insanus (in- + sanus) — intensidad/exceso en BR; ≠ diagnóstico; verdad y respeto; Haz lo mejor.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-insana.html"
-    },
-    {
       "id": "infusao",
       "word": "infusão",
       "simple": "Água quente (fora do fogo) sobre folhas/flores, 5–15 min tampado — modo do manual de chá de plantas.",
@@ -2110,6 +2030,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-preparo-cha-plantas.html"
+    },
+    {
+      "id": "insana",
+      "word": "insana",
+      "simple": "Lat. insanus (in- + sanus) — intensidade/excesso no BR; ≠ diagnóstico; verdade e respeito; Faça o melhor.",
+      "simpleEn": "Lat. insanus (in- + sanus) — intensity/excess in BR; ≠ diagnosis; truth and respect; Do your best.",
+      "simpleEs": "Lat. insanus (in- + sanus) — intensidad/exceso en BR; ≠ diagnóstico; verdad y respeto; Haz lo mejor.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-insana.html"
     },
     {
       "id": "inseto",
@@ -2222,6 +2152,16 @@
       "href": "/plantas/jambu/"
     },
     {
+      "id": "janela",
+      "word": "janela",
+      "simple": "Vão para ar e vista — elo maçaneta/fecho; cruzamento com porta e luz.",
+      "simpleEn": "Window for air and view — links handle/latch; crossing with door and light.",
+      "simpleEs": "Vano para aire y vista — vínculo manilla; cruce con puerta y luz.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-macaneta.html"
+    },
+    {
       "id": "jesusamando",
       "word": "jesusamando",
       "simple": "Expressão oral BR — assombro e afeto num sopro; contraste com aff; depois, Faça o melhor!",
@@ -2270,6 +2210,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "killing-in-the-name",
+      "word": "Killing in the Name",
+      "simple": "Canção RATM (1992): matar no nome da ordem; elo BudGanja com O Início, raiva nomeada e proibição.",
+      "simpleEn": "RATM song (1992): killing in the name of order; BudGanja link to O Início, named rage, prohibition.",
+      "simpleEs": "Canción RATM (1992): matar en el nombre del orden; vínculo BudGanja con O Início, rabia nombrada y prohibición.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-killing-in-the-name.html"
     },
     {
       "id": "laboratorio",
@@ -2362,6 +2312,16 @@
       "href": "/posts/post-inspecao-palavra-lei-11-343.html"
     },
     {
+      "id": "ligar",
+      "word": "ligar",
+      "simple": "Lat. ligare — verbos do circuito; par lab com interruptor (peça × gesto); Faça o melhor com o clique.",
+      "simpleEn": "Lat. ligare — circuit verbs; lab pair with interruptor (device × gesture); Do your best with the click.",
+      "simpleEs": "Lat. ligare — verbos del circuito; par lab con interruptor (pieza × gesto); Haz lo mejor con el clic.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-ligar-desligar.html"
+    },
+    {
       "id": "lingua-portuguesa",
       "word": "língua portuguesa",
       "simple": "Meio do Inspetor BudGanja: originalidade; alterações no tempo (latim → BR → digital); nomear, inspecionar, cuidar; Faça o melhor nesta língua.",
@@ -2412,6 +2372,26 @@
       "href": "/calculadoras/luximetro.html"
     },
     {
+      "id": "luz",
+      "word": "luz",
+      "simple": "Lat. lux — claridade e efeito do clique; tríade circuito + sol (fonte natural); Faça o melhor com a luz certa.",
+      "simpleEn": "Lat. lux — clarity and click effect; circuit triad + sol (natural source); Do your best with the right light.",
+      "simpleEs": "Lat. lux — claridad y efecto del clic; tríada circuito + sol (fuente natural); Haz lo mejor con la luz cierta.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-luz.html"
+    },
+    {
+      "id": "macaneta",
+      "word": "maçaneta",
+      "simple": "Puxador/fecho da porta — gesto torcer/abrir; elo mãos, porta/janela, interruptor e ligar/desligar.",
+      "simpleEn": "Doorknob/handle — twist/open gesture; links hands, door/window, switch, on/off.",
+      "simpleEs": "Manilla/pomo — gesto torcer/abrir; vínculo manos, puerta/ventana, interruptor, ligar/desligar.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-macaneta.html"
+    },
+    {
       "id": "maceracao",
       "word": "maceração",
       "simple": "Extracção a frio (horas) quando o calor forte não convém — citado no manual de chá de plantas.",
@@ -2430,6 +2410,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-maconha.html"
+    },
+    {
+      "id": "mae",
+      "word": "mãe",
+      "simple": "Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor!",
+      "simpleEn": "Lat. mater — origin and care; tipography fia → mãe; NE fia (= daughter) ≠ mother; Dona Maria/alma; Do your best!",
+      "simpleEs": "Lat. mater — origen y cuidado; tipografía fia → mãe; fia NE (= hija) ≠ madre; Dona Maria/alma; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mae.html"
     },
     {
       "id": "magnifico",
@@ -2522,6 +2512,16 @@
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
     },
     {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-matar",
+      "word": "matar / mata",
+      "simple": "Aviso vermelho · Dano à vida. Comum: tirar a vida. BudGanja: na frase = esvaziar o centro íntimo, não homicídio literal.",
+      "simpleEn": "Red warning · Harm to life. Everyday: to kill. BudGanja: in the saying = emptying the inner centre, not literal homicide.",
+      "simpleEs": "Aviso rojo · Daño a la vida. Común: quitar la vida. BudGanja: en la frase = vaciar el centro íntimo, no homicidio literal.",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+    },
+    {
       "id": "materia-prima",
       "word": "Matéria-prima",
       "simple": "Planta, animal, minério ou petróleo no início da cadeia — primeiro estágio do quadro da molécula ao lixo.",
@@ -2582,24 +2582,14 @@
       "href": "/posts/post-inspecao-palavra-medo.html"
     },
     {
-      "id": "sozinho",
-      "word": "sozinho",
-      "simple": "Lat. sōlus + -zinho — estado só (masc.); par sozinha; forma oral sozna; ≠ solitário; Faça o melhor sem vergonha.",
-      "simpleEn": "Lat. sōlus + -zinho — alone (masc.); pair sozinha; oral sozna; ≠ solitário; Do your best without shame.",
-      "simpleEs": "Lat. sōlus + -zinho — solo (masc.); par sozinha; oral sozna; ≠ solitário; Haz lo mejor sin vergüenza.",
+      "id": "mel-gibson",
+      "word": "Mel Gibson",
+      "simple": "Actor e realizador; no site, ficha em Pessoas com elos em Coração Valente (1995) e A Paixão de Cristo (2004) — ofício, não cartaz nem dossiê.",
+      "simpleEn": "Actor and director; on the site, a People sheet linked to Braveheart (1995) and The Passion of the Christ (2004) — craft, not a poster or a dossier.",
+      "simpleEs": "Actor y director; en el sitio, ficha en Personas con vínculos en Braveheart (1995) y A Paixão de Cristo (2004) — oficio, no cartel ni dossier.",
       "group": "lexico",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-sozna.html"
-    },
-    {
-      "id": "sozna",
-      "word": "sozna",
-      "simple": "Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — estado só; ≠ solitário; Faça o melhor sem vergonha.",
-      "simpleEn": "Oral form of sozinho / sozinha (Lat. sōlus + -zinho/-zinha) — alone; ≠ solitário; Do your best without shame.",
-      "simpleEs": "Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — solo/sola; ≠ solitário; Haz lo mejor sin vergüenza.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-sozna.html"
+      "href": "/posts/post-inspecao-figura-mel-gibson.html"
     },
     {
       "id": "melissa",
@@ -2622,6 +2612,16 @@
       "href": "/posts/post-inspecao-palavra-memoravel.html"
     },
     {
+      "id": "meneia",
+      "word": "meneia",
+      "simple": "Forma viva de menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto/mãos; Faça o melhor!",
+      "simpleEn": "Living form of menear (*manear* ← hand) — body sway and craft; links gesto/mãos; Do your best!",
+      "simpleEs": "Forma viva de menear (*manear* ← mano) — balanceo del cuerpo y oficio; vínculos gesto/mãos; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-meneia.html"
+    },
+    {
       "id": "mensagem",
       "word": "mensagem",
       "simple": "Lat. mittere → message — conteúdo enviado; plural mensagens; SMS/chat; deixar mensagem; sinal ≠ mensagem.",
@@ -2632,16 +2632,6 @@
       "href": "/posts/post-inspecao-palavra-mensagem.html"
     },
     {
-      "id": "sugestao",
-      "word": "sugestão",
-      "simple": "Lat. suggestio — ato de sugerir / palpite; no lab, item da fila de inspeções; Faça o melhor nesta proposta.",
-      "simpleEn": "Lat. suggestio — act of suggesting / tip; in the lab, inspection-queue item; Do your best in this proposal.",
-      "simpleEs": "Lat. suggestio — acto de sugerir / tip; en el lab, ítem de la cola de inspecciones; Haz lo mejor en esta propuesta.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-sugestao.html"
-    },
-    {
       "id": "metabolito-secundario",
       "word": "Metabólito secundário",
       "simple": "Pigmentos, terpenos, alcaloides… — o que mais diferencia quimiotipos na Aula 10, face aos metabólitos primários.",
@@ -2650,6 +2640,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
+    },
+    {
+      "id": "michael-j-fox",
+      "word": "Michael J. Fox",
+      "simple": "Actor (Michael Andrew Fox); no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não personagem.",
+      "simpleEn": "Actor (Michael Andrew Fox); on the site, a People sheet linked to Back to the Future — the person, not the character.",
+      "simpleEs": "Actor (Michael Andrew Fox); en el sitio, ficha en Personas con vínculo en Back to the Future — la persona, no el personaje.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-michael-j-fox.html"
     },
     {
       "id": "microplastico",
@@ -2752,6 +2752,16 @@
       "href": "/plantas/mulungu/"
     },
     {
+      "id": "nap",
+      "word": "nap",
+      "simple": "EN — sono curto / power nap no BR; pausa de ofício; elos gesto/alma; Faça o melhor depois de parar.",
+      "simpleEn": "EN — short sleep / power nap in BR; craft pause; links gesto/alma; Do your best after stopping.",
+      "simpleEs": "EN — sueño corto / power nap en BR; pausa de oficio; vínculos gesto/alma; Haz lo mejor después de parar.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-nap.html"
+    },
+    {
       "id": "narcotico",
       "word": "Narcótico",
       "simple": "Termo médico/legal antigo e amplo: substância associada a sono ou entorpecimento — não é sinónimo exacto de «entorpecente» nas listas modernas de controle.",
@@ -2782,6 +2792,16 @@
       "href": "/posts/post-inspecao-palavra-neve.html"
     },
     {
+      "id": "noite",
+      "word": "noite",
+      "simple": "Lat. nox — fase escura do ciclo; par com sol; elos luz e interruptor; fotoperíodo; Faça o melhor com a noite certa.",
+      "simpleEn": "Lat. nox — dark phase of the cycle; pair with sol; links luz and interruptor; photoperiod; Do your best with the right night.",
+      "simpleEs": "Lat. nox — fase oscura del ciclo; par con sol; vínculos luz e interruptor; fotoperiodo; Haz lo mejor con la noche cierta.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-noite.html"
+    },
+    {
       "id": "nojinho",
       "word": "Nojinho",
       "simple": "Aversão que afasta do que parece sujo ou perigoso — a emoção verde da Riley.",
@@ -2792,6 +2812,16 @@
       "href": "/posts/post-inspecao-palavra-nojinho.html"
     },
     {
+      "id": "o-inicio",
+      "word": "O Início",
+      "simple": "Poesia original BudGanja: legenda do cultivo × tanques de guerra — dossel partilha luz; blindagem esmaga.",
+      "simpleEn": "Original BudGanja poem: grow caption × war tanks — canopy shares light; armor crushes.",
+      "simpleEs": "Poesía original BudGanja: leyenda del cultivo × tanques de guerra — el dosel reparte luz; el blindaje aplasta.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-o-inicio.html"
+    },
+    {
       "id": "objetos",
       "word": "objetos",
       "simple": "Lat. obiectum — plural de objeto; no lab, o foco do «objeto inspecionado»; Faça o melhor neste objeto.",
@@ -2800,16 +2830,6 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-objetos.html"
-    },
-    {
-      "id": "como-os-ricos-transformam-as-coisas",
-      "word": "Como os ricos transformam as coisas",
-      "simple": "Frase-mapa: poder sobre o ciclo extrair→fazer→descartar; elo História das Coisas.",
-      "simpleEn": "Map-phrase: power over extract→make→dispose; link Story of Stuff.",
-      "simpleEs": "Frase-mapa: poder sobre el ciclo; vínculo Historia de las cosas.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-expressao-como-os-ricos-transformam-as-coisas.html"
     },
     {
       "id": "oficio-editorial",
@@ -2862,6 +2882,16 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "origami",
+      "word": "origami",
+      "simple": "Japonês ori (dobrar) + kami (papel) — arte de dobrar papel; dedicatória BudGanja a Tom Jobim.",
+      "simpleEn": "Japanese ori (fold) + kami (paper) — paper-folding art; BudGanja dedication to Tom Jobim.",
+      "simpleEs": "Japonés ori (doblar) + kami (papel) — arte de doblar papel; dedicatoria BudGanja a Tom Jobim.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-tom-jobim.html"
+    },
+    {
       "id": "orto-terapeutico",
       "word": "Orto terapêutico",
       "simple": "Horto de plantas medicinais ligado à Farmácia Viva / educação comunitária — modalidade tipo 1 no discurso da Aula 5.",
@@ -2892,6 +2922,16 @@
       "href": "/posts/post-inspecao-guia-palavras-cobertura.html"
     },
     {
+      "id": "papel-de-enrolar",
+      "word": "papel de enrolar",
+      "simple": "Mortalha / seda — papel fino para enrolar; origem europeia industrial (ex. Rizla); elo tabaco e cinzeiro.",
+      "simpleEn": "Rolling paper — thin paper for rolling; modern European industry (e.g. Rizla); links tobacco and cinzeiro.",
+      "simpleEs": "Papel de liar — papel fino; origen europea industrial (p. ej. Rizla); vínculo tabaco y cinzeiro.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-papel-enrolar-tabaco.html"
+    },
+    {
       "id": "papoula",
       "word": "Papoula",
       "simple": "Papaver somniferum — fonte histórica do ópio; contraste com cannabis e outras plantas. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -2900,6 +2940,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/biblioteca/unifesp/livro-xiv.html"
+    },
+    {
+      "id": "pariu",
+      "word": "pariu",
+      "simple": "De parir / lat. pariō «dar à luz»; peça de puta que pariu; separar parto e palavrão.",
+      "simpleEn": "From parir / Lat. pariō “give birth”; piece of puta que pariu; separate birth and swear.",
+      "simpleEs": "De parir / lat. pariō «dar a luz»; pieza de puta que pariu; separar parto y taco.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-pariu.html"
     },
     {
       "id": "passado",
@@ -2930,6 +2980,56 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
+    },
+    {
+      "id": "pato",
+      "word": "pato",
+      "simple": "Árabe-hispânico — ave aquática, pagar o pato e pato no tucupi; elos animal/água/jambu; Faça o melhor!",
+      "simpleEn": "Arabic-Hispanic — waterbird, take the blame and duck in tucupi; links animal/água/jambu; Do your best!",
+      "simpleEs": "Árabe-hispánico — ave acuática, pagar el pato y pato en tucupi; vínculos animal/água/jambu; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-pato.html"
+    },
+    {
+      "id": "patrao",
+      "word": "patrão",
+      "simple": "Chefe / empregador (lat. patronus); mesma raiz de padrão e pattern; elos respeito/gesto; Faça o melhor com ou sem olhar.",
+      "simpleEn": "Boss / employer (Lat. patronus); same root as padrão and pattern; links respeito/gesto; Do your best with or without watching.",
+      "simpleEs": "Jefe / empleador (lat. patronus); misma raíz que padrão y pattern; vínculos respeito/gesto; Haz lo mejor con o sin mirada.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-patrao.html"
+    },
+    {
+      "id": "pattern",
+      "word": "pattern",
+      "simple": "EN — molde / padrão / design pattern no BR; repetição reconhecível; elos gesto/caminho; Faça o melhor com o molde certo.",
+      "simpleEn": "EN — mold / template / design pattern in BR; recognizable repetition; links gesto/caminho; Do your best with the right mold.",
+      "simpleEs": "EN — molde / plantilla / design pattern en BR; repetición reconocible; vínculos gesto/caminho; Haz lo mejor con el molde correcto.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-pattern.html"
+    },
+    {
+      "id": "pedi-mao",
+      "word": "pedi a mão",
+      "simple": "Pedir + mão — ajuda («uma mão») ou compromisso («a mão»); elos mãos/gesto; Faça o melhor ao pedir e ao dar.",
+      "simpleEn": "Ask + hand — help (“uma mão”) or commitment (“a mão”); links hands/gesture; Do your best asking and giving.",
+      "simpleEs": "Pedir + mano — ayuda («uma mão») o compromiso («a mão»); vínculos manos/gesto; Haz lo mejor al pedir y dar.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-pedi-mao.html"
+    },
+    {
+      "id": "perseguicao",
+      "word": "perseguição",
+      "simple": "Lat. persequī — caça, opressão e obsessão; contraste prosseguir; elos caminho/risco/EXIT; Faça o melhor!",
+      "simpleEn": "Lat. persequī — chase, oppression and obsession; contrast prosseguir; links caminho/risco/EXIT; Do your best!",
+      "simpleEs": "Lat. persequī — caza, opresión y obsesión; contraste prosseguir; vínculos caminho/risco/EXIT; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-perseguicao.html"
     },
     {
       "id": "pesquisas",
@@ -3000,6 +3100,16 @@
       "group": "titulo",
       "fromTitle": true,
       "href": "/plantas/"
+    },
+    {
+      "id": "porta",
+      "word": "porta",
+      "simple": "Limiar para passar — elo maçaneta, caminho, passar; cruzamento com janela e luz.",
+      "simpleEn": "Door threshold — links maçaneta, path, pass; crossing with window and light.",
+      "simpleEs": "Umbral para pasar — vínculo maçaneta, camino, pasar; cruce con ventana y luz.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-macaneta.html"
     },
     {
       "id": "portaria",
@@ -3132,6 +3242,26 @@
       "href": "/posts/post-inspecao-palavra-pular.html"
     },
     {
+      "id": "puta",
+      "word": "puta",
+      "simple": "Lat. vulg. putta «menina» → pejorativo; no BR também intensificador («puta festa»); elo PQP; inspecionar com respeito.",
+      "simpleEn": "VL putta “girl” → pejorative; in BR also intensifier; link PQP; inspect with respect.",
+      "simpleEs": "Lat. vulg. putta «niña» → peyorativo; en BR también intensificador; vínculo PQP; inspeccionar con respeto.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-puta.html"
+    },
+    {
+      "id": "questao-de-tempo",
+      "word": "Questão de Tempo",
+      "simple": "Filme de 2013 (About Time); no site, inspeção em Artes com destaque para o autor Richard Curtis.",
+      "simpleEn": "2013 film (About Time); on the site, an Arts inspection highlighting author Richard Curtis.",
+      "simpleEs": "Filme de 2013 (About Time); en el sitio, inspección en Artes con destaque para el autor Richard Curtis.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-questao-de-tempo.html"
+    },
+    {
       "id": "quimiotipo",
       "word": "Quimiotipo",
       "simple": "Classificação de variantes de cannabis pelo fitocanabinoide majoritário (THC, CBD, CBG…) — cinco tipos na Aula 10 XIV (Diogo).",
@@ -3160,6 +3290,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-raiva.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-rancor",
+      "word": "rancor",
+      "simple": "Aviso vermelho · Afecto tóxico. Comum: mágoa guardada. BudGanja: o ditado trata-o como dose auto-ingerida.",
+      "simpleEn": "Red warning · Toxic affect. Everyday: a stored grudge. BudGanja: the saying treats it as a self-ingested dose.",
+      "simpleEs": "Aviso rojo · Afecto tóxico. Común: rencor guardado. BudGanja: el dicho lo trata como dosis autoingerida.",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
     },
     {
       "id": "rdc",
@@ -3192,6 +3332,16 @@
       "href": "/posts/post-inspecao-guia-cannabis-medicos.html"
     },
     {
+      "id": "renato-russo",
+      "word": "Renato Russo",
+      "simple": "Letrista e voz da Legião Urbana (1960–1996); no site, inspeção em Pessoas com elo na ficha tempo (Tempo Perdido).",
+      "simpleEn": "Lyricist and voice of Legião Urbana (1960–1996); on the site, a People inspection linked to the tempo sheet (Tempo Perdido).",
+      "simpleEs": "Letrista y voz de Legião Urbana (1960–1996); en el sitio, inspección en Personas con vínculo en la ficha tempo (Tempo Perdido).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-renato-russo.html"
+    },
+    {
       "id": "renisus",
       "word": "RENISUS",
       "simple": "Relação de plantas de interesse ao SUS para pesquisa/validação do saber tradicional — citada na Aula 5 (~71 espécies no discurso da aula).",
@@ -3222,6 +3372,26 @@
       "href": "/posts/post-inspecao-palavra-respeito.html"
     },
     {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-ressentimento",
+      "word": "ressentimento",
+      "simple": "Aviso vermelho · Afecto tóxico. Comum: mágoa persistente. BudGanja: ferida que continua a actuar — nutriente do rancor.",
+      "simpleEn": "Red warning · Toxic affect. Everyday: lingering hurt. BudGanja: a wound that keeps acting — fuel for the grudge.",
+      "simpleEs": "Aviso rojo · Afecto tóxico. Común: herida persistente. BudGanja: herida que sigue actuando — nutriente del rencor.",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-retaliacao",
+      "word": "retaliação",
+      "simple": "Aviso vermelho · Retaliação. Comum: olho por olho. BudGanja: conta que a frase diz nunca fechar («nunca é plena»).",
+      "simpleEn": "Red warning · Retaliation. Everyday: eye for an eye. BudGanja: a bill the saying says never closes.",
+      "simpleEs": "Aviso rojo · Retaliación. Común: ojo por ojo. BudGanja: cuenta que el dicho dice que nunca cierra.",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+    },
+    {
       "id": "retiro",
       "word": "Retiro",
       "simple": "Contexto intensivo de prática (ex. 4 dias Isha Yoga / Inner Engineering no estudo citado) — distinto da rotina diária de 10 min; indexar ≠ endossar escola comercial.",
@@ -3230,6 +3400,26 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-revidar",
+      "word": "revidar",
+      "simple": "Aviso vermelho · Retaliação. Comum: devolver o golpe. BudGanja: impulso que a oralidade avisa contra.",
+      "simpleEn": "Red warning · Retaliation. Everyday: strike back. BudGanja: the impulse orality warns against.",
+      "simpleEs": "Aviso rojo · Retaliación. Común: devolver el golpe. BudGanja: impulso que la oralidad avisa contra.",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+    },
+    {
+      "id": "richard-curtis",
+      "word": "Richard Curtis",
+      "simple": "Argumentista e realizador; no site, ficha em Pessoas com elo em Questão de Tempo — autor, não marca.",
+      "simpleEn": "Screenwriter and director; on the site, a People sheet linked to About Time — the author, not the brand.",
+      "simpleEs": "Guionista y director; en el sitio, ficha en Personas con vínculo en About Time — el autor, no la marca.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-richard-curtis.html"
     },
     {
       "id": "rimonabant",
@@ -3322,6 +3512,16 @@
       "href": "/posts/post-inspecao-palavra-sempre.html"
     },
     {
+      "id": "serie-varin",
+      "word": "Série varin",
+      "simple": "Fitocanabinoides de cadeia lateral C3 (propil) — THCV, CBDV, CBGV — distintos da série pentil (C5) do THC/CBD clássicos.",
+      "simpleEn": "C3 (propyl) side-chain phytocannabinoids — THCV, CBDV, CBGV — distinct from the classic C5 pentyl series.",
+      "simpleEs": "Fitocannabinoides de cadena lateral C3 (propilo) — THCV, CBDV, CBGV — distintos de la serie pentilo C5.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-fitocanabinoides.html"
+    },
+    {
       "id": "silenciamento",
       "word": "Silenciamento",
       "simple": "Calar o projecto de inspeção ou negar a origem — par tóxico com a apropriação no mapa Ofício sob roubo e proibição.",
@@ -3392,6 +3592,16 @@
       "href": "/biblioteca/unifesp/livro-xiv.html"
     },
     {
+      "id": "sol",
+      "word": "sol",
+      "simple": "Lat. sol — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Faça o melhor com a luz do dia.",
+      "simpleEn": "Lat. sol — star and natural light; link luz; contrast with interruptor; ≠ solitário; Do your best with daylight.",
+      "simpleEs": "Lat. sol — astro y luz natural; vínculo luz; contraste con interruptor; ≠ solitário; Haz lo mejor con la luz del día.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sol.html"
+    },
+    {
       "id": "solitario",
       "word": "Solitário",
       "simple": "Navegar e invernar sozinha — não isolamento romântico: método, medo e escrita.",
@@ -3422,6 +3632,36 @@
       "href": "/sorteios/"
     },
     {
+      "id": "sozinho",
+      "word": "sozinho",
+      "simple": "Lat. sōlus + -zinho — estado só (masc.); par sozinha; forma oral sozna; ≠ solitário; Faça o melhor sem vergonha.",
+      "simpleEn": "Lat. sōlus + -zinho — alone (masc.); pair sozinha; oral sozna; ≠ solitário; Do your best without shame.",
+      "simpleEs": "Lat. sōlus + -zinho — solo (masc.); par sozinha; oral sozna; ≠ solitário; Haz lo mejor sin vergüenza.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sozna.html"
+    },
+    {
+      "id": "sozna",
+      "word": "sozna",
+      "simple": "Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — estado só; ≠ solitário; Faça o melhor sem vergonha.",
+      "simpleEn": "Oral form of sozinho / sozinha (Lat. sōlus + -zinho/-zinha) — alone; ≠ solitário; Do your best without shame.",
+      "simpleEs": "Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — solo/sola; ≠ solitário; Haz lo mejor sin vergüenza.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sozna.html"
+    },
+    {
+      "id": "stephen-king",
+      "word": "Stephen King",
+      "simple": "Escritor; no site, ficha em Pessoas com elo em Um Sonho de Liberdade — autor, não marca de horror.",
+      "simpleEn": "Writer; on the site, a People sheet linked to The Shawshank Redemption — the author, not the horror brand.",
+      "simpleEs": "Escritor; en el sitio, ficha en Personas con vínculo en Um Sonho de Liberdade — el autor, no la marca de terror.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-stephen-king.html"
+    },
+    {
       "id": "substancia-controlada",
       "word": "Substância controlada",
       "simple": "Meta-rótulo do estatuto regulatório (listas, receituário) — distinto de ilícito automático e dos nomes populares.",
@@ -3440,6 +3680,16 @@
       "group": "tecnico",
       "fromTitle": true,
       "href": "/biblioteca/pesquisas/substratos.html"
+    },
+    {
+      "id": "sugestao",
+      "word": "sugestão",
+      "simple": "Lat. suggestio — ato de sugerir / palpite; no lab, item da fila de inspeções; Faça o melhor nesta proposta.",
+      "simpleEn": "Lat. suggestio — act of suggesting / tip; in the lab, inspection-queue item; Do your best in this proposal.",
+      "simpleEs": "Lat. suggestio — acto de sugerir / tip; en el lab, ítem de la cola de inspecciones; Haz lo mejor en esta propuesta.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sugestao.html"
     },
     {
       "id": "sugestoes",
@@ -3472,6 +3722,16 @@
       "href": "/posts/post-inspecao-palavra-papel-enrolar-tabaco.html"
     },
     {
+      "id": "tempo",
+      "word": "tempo",
+      "simple": "Lat. tempus — cronologia, clima («tempo bom») e compasso musical na mesma palavra; kairós × chronos; elos sempre/passado/alma; Faça o melhor com o tempo que se tem.",
+      "simpleEn": "Lat. tempus — chronology, weather and musical beat share the same word; kairós × chronos; links sempre/passado/alma; Do your best with the time you have.",
+      "simpleEs": "Lat. tempus — cronología, clima y compás musical en la misma palabra; kairós × chronos; vínculos sempre/passado/alma; Haz lo mejor con el tiempo que tienes.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-tempo.html"
+    },
+    {
       "id": "terpeno",
       "word": "Terpeno",
       "simple": "Metabólito secundário (via mevalonato/MEP) — cheiro/cor e modulação; partilha vias com a biossíntese de fitocanabinoides (Aula 10).",
@@ -3490,6 +3750,26 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html"
+    },
+    {
+      "id": "thca",
+      "word": "THCA",
+      "simple": "Ácido Δ9-tetrahidrocanabinólico — forma predominante na flor fresca; não é o mesmo perfil do Δ9-THC após descarboxilação.",
+      "simpleEn": "Δ9-tetrahydrocannabinolic acid — main form in fresh flower; not the same profile as decarboxylated Δ9-THC.",
+      "simpleEs": "Ácido Δ9-tetrahidrocannabinólico — forma predominante en flor fresca; no es el mismo perfil del Δ9-THC.",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-fitocanabinoides.html"
+    },
+    {
+      "id": "thcv",
+      "word": "THCV",
+      "simple": "Tetrahidrocanabivarina — série propil (C3); perfil distinto do THC nas doses descritas na literatura; não é «dieta em gotas».",
+      "simpleEn": "Tetrahydrocannabivarin — propyl (C3) series; profile distinct from THC in the literature; not “diet drops”.",
+      "simpleEs": "Tetrahidrocannabivarina — serie propilo (C3); perfil distinto del THC; no es «dieta en gotas».",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/posts/post-pesquisa-fitocanabinoides.html"
     },
     {
       "id": "tisana",
@@ -3512,6 +3792,16 @@
       "href": "/posts/post-inspecao-guia-receitas-plantas.html"
     },
     {
+      "id": "tom-jobim",
+      "word": "Tom Jobim",
+      "simple": "Compositor da bossa — palavra-música; Águas de Março; dedicatória lab «Adoro origami».",
+      "simpleEn": "Bossa composer — word-music; Waters of March; lab dedication “I love origami”.",
+      "simpleEs": "Compositor de la bossa — palabra-música; Águas de Março; dedicatoria lab «Adoro origami».",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-tom-jobim.html"
+    },
+    {
       "id": "total",
       "word": "total",
       "simple": "Lat. tōtus — inteiro/soma; gíria BR «total!» (acordo/louvor); escala com legal e fantástico; Faça o melhor!",
@@ -3520,16 +3810,6 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-total.html"
-    },
-    {
-      "id": "tudo",
-      "word": "tudo",
-      "simple": "Família totus — totalidade e o essencial; no lab, foco para não perder a alma; Faça o melhor.",
-      "simpleEn": "Totus family — totality and the essential; in the lab, focus so the soul is not lost; Do your best.",
-      "simpleEs": "Familia totus — totalidad y lo esencial; en el lab, foco para no perder el alma; Haz lo mejor.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-tudo.html"
     },
     {
       "id": "trafico",
@@ -3572,6 +3852,16 @@
       "href": "/posts/post-inspecao-palavra-tristeza.html"
     },
     {
+      "id": "tudo",
+      "word": "tudo",
+      "simple": "Família totus — totalidade e o essencial; no lab, foco para não perder a alma; Faça o melhor.",
+      "simpleEn": "Totus family — totality and the essential; in the lab, focus so the soul is not lost; Do your best.",
+      "simpleEs": "Familia totus — totalidad y lo esencial; en el lab, foco para no perder el alma; Haz lo mejor.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-tudo.html"
+    },
+    {
       "id": "ultraprocessado",
       "word": "Ultraprocessado",
       "simple": "Alimento de desenho industrial (formulacões, aditivos, marketing) — caso-âncora de commodity que adoece na pesquisa molécula→lixo.",
@@ -3580,6 +3870,16 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html"
+    },
+    {
+      "id": "um-sonho-de-liberdade",
+      "word": "Um Sonho de Liberdade",
+      "simple": "Filme de 1994 (The Shawshank Redemption); no site, inspeção em Artes com génese na novela de Stephen King (1982).",
+      "simpleEn": "1994 film (The Shawshank Redemption); on the site, an Arts inspection rooted in Stephen King’s 1982 novella.",
+      "simpleEs": "Filme de 1994 (The Shawshank Redemption); en el sitio, inspección en Artes con origen en la novela de Stephen King (1982).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-um-sonho-de-liberdade.html"
     },
     {
       "id": "unha-de-gato",
@@ -3630,6 +3930,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-valeu.html"
+    },
+    {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-veneno",
+      "word": "veneno",
+      "simple": "Aviso vermelho · Toxina. Comum: substância tóxica. BudGanja: carga afectiva no lugar do cuidado — ≠ toxina de planta.",
+      "simpleEn": "Red warning · Toxin. Everyday: poisonous substance. BudGanja: affective load in place of care — ≠ plant toxin.",
+      "simpleEs": "Aviso rojo · Toxina. Común: sustancia tóxica. BudGanja: carga afectiva en lugar del cuidado — ≠ toxina de planta.",
+      "href": "/posts/post-inspecao-filme-venom.html"
     },
     {
       "id": "verdade",
@@ -3692,6 +4002,16 @@
       "href": "/videos/"
     },
     {
+      "group": "aviso",
+      "fromTitle": false,
+      "id": "aviso-vinganca",
+      "word": "vingança",
+      "simple": "Aviso vermelho · Retaliação. Comum: desforra. BudGanja: promete equilíbrio e cobra o preço em quem a cultiva.",
+      "simpleEn": "Red warning · Retaliation. Everyday: payback. BudGanja: promises balance and charges the one who grows it.",
+      "simpleEs": "Aviso rojo · Retaliación. Común: desquite. BudGanja: promete equilibrio y cobra el precio en quien la cultiva.",
+      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
+    },
+    {
       "id": "william-davis",
       "word": "William Davis",
       "simple": "Cardiologista autor de Barriga de Trigo — divulgação anti-trigo (Pessoas).",
@@ -3710,256 +4030,6 @@
       "group": "tecnico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html"
-    },
-    {
-      "id": "aleff",
-      "word": "Aleff",
-      "simple": "Aliffe Henrique de Carvalho (Aleff), de Machado (MG); no site, ficha em Pessoas — a pessoa, não a persona de ecrã.",
-      "simpleEn": "Aliffe Henrique de Carvalho (Aleff), from Machado (MG); on the site, a People sheet — the person, not the on-screen persona.",
-      "simpleEs": "Aliffe Henrique de Carvalho (Aleff), de Machado (MG); en el sitio, ficha en Personas — la persona, no la persona de pantalla.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-figura-aleff.html"
-    },
-    {
-      "id": "de-volta-para-o-futuro",
-      "word": "De Volta para o Futuro",
-      "simple": "Filme de 1985 (Zemeckis/Gale); no site, inspeção em Artes com homenagem aos actores e fichas de Fox e Lloyd.",
-      "simpleEn": "1985 film (Zemeckis/Gale); on the site, an Arts inspection honoring the actors, with Fox and Lloyd sheets.",
-      "simpleEs": "Filme de 1985 (Zemeckis/Gale); en el sitio, inspección en Artes con homenaje a los actores y fichas de Fox y Lloyd.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-filme-de-volta-para-o-futuro.html"
-    },
-    {
-      "id": "michael-j-fox",
-      "word": "Michael J. Fox",
-      "simple": "Actor (Michael Andrew Fox); no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não personagem.",
-      "simpleEn": "Actor (Michael Andrew Fox); on the site, a People sheet linked to Back to the Future — the person, not the character.",
-      "simpleEs": "Actor (Michael Andrew Fox); en el sitio, ficha en Personas con vínculo en Back to the Future — la persona, no el personaje.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-figura-michael-j-fox.html"
-    },
-    {
-      "id": "christopher-lloyd",
-      "word": "Christopher Lloyd",
-      "simple": "Actor; no site, ficha em Pessoas com elo em De Volta para o Futuro — pessoa, não persona do Doc.",
-      "simpleEn": "Actor; on the site, a People sheet linked to Back to the Future — the person, not the Doc persona.",
-      "simpleEs": "Actor; en el sitio, ficha en Personas con vínculo en Back to the Future — la persona, no la persona de Doc.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-figura-christopher-lloyd.html"
-    },
-    {
-      "id": "delorean",
-      "word": "DeLorean",
-      "simple": "Coupé DMC (Giugiaro, Dunmurry, 1981–82); no site, inspeção de objecto em Artes — o carro real; a máquina do filme é camada.",
-      "simpleEn": "DMC coupe (Giugiaro, Dunmurry, 1981–82); on the site, an Arts object sheet — the real car; the film machine is a layer.",
-      "simpleEs": "Cupé DMC (Giugiaro, Dunmurry, 1981–82); en el sitio, ficha de objeto en Artes — el coche real; la máquina del filme es capa.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-delorean.html"
-    },
-    {
-      "id": "questao-de-tempo",
-      "word": "Questão de Tempo",
-      "simple": "Filme de 2013 (About Time); no site, inspeção em Artes com destaque para o autor Richard Curtis.",
-      "simpleEn": "2013 film (About Time); on the site, an Arts inspection highlighting author Richard Curtis.",
-      "simpleEs": "Filme de 2013 (About Time); en el sitio, inspección en Artes con destaque para el autor Richard Curtis.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-filme-questao-de-tempo.html"
-    },
-    {
-      "id": "richard-curtis",
-      "word": "Richard Curtis",
-      "simple": "Argumentista e realizador; no site, ficha em Pessoas com elo em Questão de Tempo — autor, não marca.",
-      "simpleEn": "Screenwriter and director; on the site, a People sheet linked to About Time — the author, not the brand.",
-      "simpleEs": "Guionista y director; en el sitio, ficha en Personas con vínculo en About Time — el autor, no la marca.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-figura-richard-curtis.html"
-    },
-    {
-      "id": "um-sonho-de-liberdade",
-      "word": "Um Sonho de Liberdade",
-      "simple": "Filme de 1994 (The Shawshank Redemption); no site, inspeção em Artes com génese na novela de Stephen King (1982).",
-      "simpleEn": "1994 film (The Shawshank Redemption); on the site, an Arts inspection rooted in Stephen King’s 1982 novella.",
-      "simpleEs": "Filme de 1994 (The Shawshank Redemption); en el sitio, inspección en Artes con origen en la novela de Stephen King (1982).",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-filme-um-sonho-de-liberdade.html"
-    },
-    {
-      "id": "stephen-king",
-      "word": "Stephen King",
-      "simple": "Escritor; no site, ficha em Pessoas com elo em Um Sonho de Liberdade — autor, não marca de horror.",
-      "simpleEn": "Writer; on the site, a People sheet linked to The Shawshank Redemption — the author, not the horror brand.",
-      "simpleEs": "Escritor; en el sitio, ficha en Personas con vínculo en Um Sonho de Liberdade — el autor, no la marca de terror.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-figura-stephen-king.html"
-    },
-    {
-      "id": "encontro-marcado",
-      "word": "Encontro Marcado",
-      "simple": "Filme de 1998 (Meet Joe Black); no site, inspeção em Artes com génese na peça de Alberto Casella (1924).",
-      "simpleEn": "1998 film (Meet Joe Black); on the site, an Arts inspection rooted in Alberto Casella’s 1924 play.",
-      "simpleEs": "Filme de 1998 (Meet Joe Black); en el sitio, inspección en Artes con origen en la obra de Alberto Casella (1924).",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-filme-encontro-marcado.html"
-    },
-    {
-      "id": "coracao-valente",
-      "word": "Coração Valente",
-      "simple": "Filme de 1995 (Braveheart); no site, inspeção em Artes com génese na lenda de Wallace / Blind Harry. Ficha própria, distinta de A Paixão de Cristo.",
-      "simpleEn": "1995 film (Braveheart); on the site, an Arts inspection rooted in the Wallace / Blind Harry legend. Own sheet, distinct from The Passion of the Christ.",
-      "simpleEs": "Filme de 1995 (Braveheart); en el sitio, inspección en Artes con origen en la leyenda de Wallace. Ficha propia, distinta de A Paixão de Cristo.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-filme-coracao-valente.html"
-    },
-    {
-      "id": "a-paixao-de-cristo",
-      "word": "A Paixão de Cristo",
-      "simple": "Filme de 2004; no site, inspeção em Artes com génese nos Evangelhos. Ficha própria, distinta de Coração Valente.",
-      "simpleEn": "2004 film; on the site, an Arts inspection rooted in the Gospels. Own sheet, distinct from Braveheart.",
-      "simpleEs": "Filme de 2004; en el sitio, inspección en Artes con origen en los Evangelios. Ficha propia, distinta de Braveheart.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-filme-a-paixao-de-cristo.html"
-    },
-    {
-      "id": "mel-gibson",
-      "word": "Mel Gibson",
-      "simple": "Actor e realizador; no site, ficha em Pessoas com elos em Coração Valente (1995) e A Paixão de Cristo (2004) — ofício, não cartaz nem dossiê.",
-      "simpleEn": "Actor and director; on the site, a People sheet linked to Braveheart (1995) and The Passion of the Christ (2004) — craft, not a poster or a dossier.",
-      "simpleEs": "Actor y director; en el sitio, ficha en Personas con vínculos en Braveheart (1995) y A Paixão de Cristo (2004) — oficio, no cartel ni dossier.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-figura-mel-gibson.html"
-    },
-    {
-      "id": "friends",
-      "word": "Friends",
-      "simple": "Sitcom de 1994–2004; no site, inspeção em Artes — Crane / Kauffman; a série é o texto. Ficha própria, distinta de How I Met Your Mother.",
-      "simpleEn": "1994–2004 sitcom; on the site, an Arts inspection — Crane / Kauffman; the series is the text. Own sheet, distinct from How I Met Your Mother.",
-      "simpleEs": "Sitcom de 1994–2004; en el sitio, inspección en Artes — Crane / Kauffman. Ficha propia, distinta de How I Met Your Mother.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-serie-friends.html"
-    },
-    {
-      "id": "how-i-met-your-mother",
-      "word": "How I Met Your Mother",
-      "simple": "Sitcom de 2005–2014; no site, inspeção em Artes — Bays / Thomas; relato e tempo. Ficha própria, distinta de Friends.",
-      "simpleEn": "2005–2014 sitcom; on the site, an Arts inspection — Bays / Thomas; telling and time. Own sheet, distinct from Friends.",
-      "simpleEs": "Sitcom de 2005–2014; en el sitio, inspección en Artes — Bays / Thomas. Ficha propia, distinta de Friends.",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-serie-how-i-met-your-mother.html"
-    },
-    {
-      "group": "aviso",
-      "fromTitle": false,
-      "id": "aviso-vinganca",
-      "word": "vingança",
-      "simple": "Aviso vermelho · Retaliação. Comum: desforra. BudGanja: promete equilíbrio e cobra o preço em quem a cultiva.",
-      "simpleEn": "Red warning · Retaliation. Everyday: payback. BudGanja: promises balance and charges the one who grows it.",
-      "simpleEs": "Aviso rojo · Retaliación. Común: desquite. BudGanja: promete equilibrio y cobra el precio en quien la cultiva.",
-      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
-    },
-    {
-      "group": "aviso",
-      "fromTitle": false,
-      "id": "aviso-retaliacao",
-      "word": "retaliação",
-      "simple": "Aviso vermelho · Retaliação. Comum: olho por olho. BudGanja: conta que a frase diz nunca fechar («nunca é plena»).",
-      "simpleEn": "Red warning · Retaliation. Everyday: eye for an eye. BudGanja: a bill the saying says never closes.",
-      "simpleEs": "Aviso rojo · Retaliación. Común: ojo por ojo. BudGanja: cuenta que el dicho dice que nunca cierra.",
-      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
-    },
-    {
-      "group": "aviso",
-      "fromTitle": false,
-      "id": "aviso-revidar",
-      "word": "revidar",
-      "simple": "Aviso vermelho · Retaliação. Comum: devolver o golpe. BudGanja: impulso que a oralidade avisa contra.",
-      "simpleEn": "Red warning · Retaliation. Everyday: strike back. BudGanja: the impulse orality warns against.",
-      "simpleEs": "Aviso rojo · Retaliación. Común: devolver el golpe. BudGanja: impulso que la oralidad avisa contra.",
-      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
-    },
-    {
-      "group": "aviso",
-      "fromTitle": false,
-      "id": "aviso-matar",
-      "word": "matar / mata",
-      "simple": "Aviso vermelho · Dano à vida. Comum: tirar a vida. BudGanja: na frase = esvaziar o centro íntimo, não homicídio literal.",
-      "simpleEn": "Red warning · Harm to life. Everyday: to kill. BudGanja: in the saying = emptying the inner centre, not literal homicide.",
-      "simpleEs": "Aviso rojo · Daño a la vida. Común: quitar la vida. BudGanja: en la frase = vaciar el centro íntimo, no homicidio literal.",
-      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
-    },
-    {
-      "group": "aviso",
-      "fromTitle": false,
-      "id": "aviso-veneno",
-      "word": "veneno",
-      "simple": "Aviso vermelho · Toxina. Comum: substância tóxica. BudGanja: carga afectiva no lugar do cuidado — ≠ toxina de planta.",
-      "simpleEn": "Red warning · Toxin. Everyday: poisonous substance. BudGanja: affective load in place of care — ≠ plant toxin.",
-      "simpleEs": "Aviso rojo · Toxina. Común: sustancia tóxica. BudGanja: carga afectiva en lugar del cuidado — ≠ toxina de planta.",
-      "href": "/posts/post-inspecao-filme-venom.html"
-    },
-    {
-      "group": "aviso",
-      "fromTitle": false,
-      "id": "aviso-envenenar",
-      "word": "envenenar / envenena",
-      "simple": "Aviso vermelho · Toxina. Comum: aplicar veneno. BudGanja: corrompe por dentro — dose que fica no próprio sujeito.",
-      "simpleEn": "Red warning · Toxin. Everyday: to poison. BudGanja: corrupts from within — a dose that stays in the subject.",
-      "simpleEs": "Aviso rojo · Toxina. Común: aplicar veneno. BudGanja: corrompe por dentro — dosis que queda en el propio sujeto.",
-      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
-    },
-    {
-      "group": "aviso",
-      "fromTitle": false,
-      "id": "aviso-corromper",
-      "word": "corromper",
-      "simple": "Aviso vermelho · Toxina. Comum: estragar. BudGanja: segundo dano da frase («envenena»).",
-      "simpleEn": "Red warning · Toxin. Everyday: to spoil. BudGanja: the saying’s second harm («envenena»).",
-      "simpleEs": "Aviso rojo · Toxina. Común: estropear. BudGanja: segundo daño de la frase («envenena»).",
-      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
-    },
-    {
-      "group": "aviso",
-      "fromTitle": false,
-      "id": "aviso-rancor",
-      "word": "rancor",
-      "simple": "Aviso vermelho · Afecto tóxico. Comum: mágoa guardada. BudGanja: o ditado trata-o como dose auto-ingerida.",
-      "simpleEn": "Red warning · Toxic affect. Everyday: a stored grudge. BudGanja: the saying treats it as a self-ingested dose.",
-      "simpleEs": "Aviso rojo · Afecto tóxico. Común: rencor guardado. BudGanja: el dicho lo trata como dosis autoingerida.",
-      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
-    },
-    {
-      "group": "aviso",
-      "fromTitle": false,
-      "id": "aviso-ressentimento",
-      "word": "ressentimento",
-      "simple": "Aviso vermelho · Afecto tóxico. Comum: mágoa persistente. BudGanja: ferida que continua a actuar — nutriente do rancor.",
-      "simpleEn": "Red warning · Toxic affect. Everyday: lingering hurt. BudGanja: a wound that keeps acting — fuel for the grudge.",
-      "simpleEs": "Aviso rojo · Afecto tóxico. Común: herida persistente. BudGanja: herida que sigue actuando — nutriente del rencor.",
-      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
-    },
-    {
-      "group": "aviso",
-      "fromTitle": false,
-      "id": "aviso-esvaziar",
-      "word": "esvaziar",
-      "simple": "Aviso vermelho · Esvaziamento. Comum: deixar vazio. BudGanja: primeiro dano da frase («mata a alma»).",
-      "simpleEn": "Red warning · Emptying. Everyday: to empty. BudGanja: the saying’s first harm («mata a alma»).",
-      "simpleEs": "Aviso rojo · Vaciado. Común: dejar vacío. BudGanja: primer daño de la frase («mata a alma»).",
-      "href": "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
     }
   ]
 }

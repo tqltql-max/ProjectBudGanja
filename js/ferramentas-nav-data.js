@@ -39,6 +39,15 @@ window.__BIBLIOTECA_NAV__ = {
           "description": "Hub do XIV curso de extensão sobre cannabis medicinal."
         },
         {
+          "label": "Cadernos de Engenharia",
+          "tileLabel": "Cadernos",
+          "href": "/biblioteca/cadernos/",
+          "icon": "📓",
+          "slug": "cadernos-engenharia",
+          "featured": true,
+          "description": "Um caderno por matéria, método Cornell — anotações do curso de engenharia."
+        },
+        {
           "label": "Vida",
           "tileLabel": "Vida",
           "href": "/vida/",
@@ -46,6 +55,15 @@ window.__BIBLIOTECA_NAV__ = {
           "slug": "vida",
           "featured": true,
           "description": "Conto familiar: cuidar de plantas com ciência, natureza e amizade."
+        },
+        {
+          "label": "Bom dia, Inverno",
+          "tileLabel": "Inverno",
+          "href": "/inverno/",
+          "icon": "❄️",
+          "slug": "inverno",
+          "featured": true,
+          "description": "Divulgação do livro de Tamara Klink — fazer circular."
         },
         {
           "label": "Guias",
@@ -71,6 +89,15 @@ window.__BIBLIOTECA_NAV__ = {
               "slug": "guia-preparo-cha-plantas",
               "featured": true,
               "description": "Manual: infusão, decoção, proporções e segurança no preparo caseiro."
+            },
+            {
+              "label": "Receitas de plantas",
+              "tileLabel": "Receitas de plantas",
+              "href": "/posts/post-inspecao-guia-receitas-plantas.html",
+              "icon": "🌿",
+              "slug": "guia-receitas-plantas",
+              "featured": true,
+              "description": "Lote 1: oito tisanas de ofício com elos ao catálogo Plantas."
             },
             {
               "label": "Clonadoras",
@@ -124,6 +151,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "📄",
               "slug": "substratos",
               "description": "Relatório sobre substratos biodegradáveis."
+            },
+            {
+              "label": "Pesquisa: Fitocanabinoides — catálogo da CBGA ao CBN",
+              "tileLabel": "Pesquisa: Fitocanabinoides — ca…",
+              "href": "/posts/post-pesquisa-fitocanabinoides.html",
+              "icon": "📋",
+              "slug": "post-pesquisa-fitocanabinoides",
+              "description": "Catálogo de ofício: ácidos e neutros, mãe CBGA, THC/CBD/CBG/CBC/CBN e série varin — literacia química ligada a quimiotipos e ao endocanabinoidoma. Não é bula nem extração."
             },
             {
               "label": "Pesquisa: Ofício sob roubo e proibição — mapa do mantra",
@@ -201,6 +236,14 @@ window.__BIBLIOTECA_NAV__ = {
               "featured": true
             },
             {
+              "label": "Inspeção: Rockstar Games — estúdio das cidades de ecrã",
+              "tileLabel": "Inspeção: Rockstar Games — estú…",
+              "href": "/posts/post-inspecao-estudio-rockstar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-estudio-rockstar",
+              "description": "Estúdio/rótulo Rockstar Games (Take-Two, NY, 1998): rede de studios, GTA/Red Dead, RAGE — distinto do Caderno GTA 6. Ficção de crime ≠ manual de crime."
+            },
+            {
               "label": "Caderno de jogo 1: GTA 6 — a cidade anunciada",
               "tileLabel": "Caderno de jogo 1: GTA 6 — a ci…",
               "href": "/posts/post-inspecao-jogo-gta6.html",
@@ -247,6 +290,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-neurociencia-miguel-nicolelis",
               "description": "Neurociências Cap. 2: homenagem documental a Miguel Nicolelis — interfaces cérebro-máquina, Projeto Andar de Novo e o pontapé da Copa 2014. Mérito e limites, sem hagiografia."
+            },
+            {
+              "label": "Inspeção: Prof. Elisaldo Carlini — pioneiro da cannabis medicinal",
+              "tileLabel": "Inspeção: Prof. Elisaldo Carlin…",
+              "href": "/posts/post-inspecao-elisaldo-carlini.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-elisaldo-carlini",
+              "description": "Homenagem documental ao Prof. Emérito Elisaldo Luiz de Araújo Carlini (1930–2020): médico e psicofarmacologista da UNIFESP, fundador do CEBRID — mérito máximo na ciência e na democratização do conhecimento sobre cannabis medicinal no Brasil."
             },
             {
               "label": "Inspeção: Fruto — Coco — água, polpa e óleo da drupa tropical",
@@ -311,6 +362,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-expressao-jesusudavi",
               "description": "Expressões: «jesusudavi» — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala aff × jesusamando; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Profa. Solange Nappo — CEBRID",
+              "tileLabel": "Inspeção: Profa. Solange Nappo …",
+              "href": "/posts/post-inspecao-solange-nappo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-solange-nappo",
+              "description": "Ficha de legado vivo: Solange Nappo (UNIFESP) — continuidade do CEBRID após Carlini, coordenação do curso de extensão SIEX/MovReCam e elo científico do laboratório."
             },
             {
               "label": "Inspeção: Planta — Carqueja — flavonoides e amargor nativo",
@@ -393,6 +452,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes: A Última Casa de Ópio (*The Last Opium Den*, 2002) — livro-reportagem de Nick Tosches; viagem, memória das dens e crítica ao consumismo. Autor em Pessoas. Sem romantizar ópio."
             },
             {
+              "label": "Inspeção: Amyr Klink — navegador e legado de caminho",
+              "tileLabel": "Inspeção: Amyr Klink — navegado…",
+              "href": "/posts/post-inspecao-amyr-klink.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-amyr-klink",
+              "description": "Ficha de legado: Amyr Klink — pioneiro da travessia a remo do Atlântico Sul (1984); planeamento, risco e ofício que continua na filha Tamara."
+            },
+            {
               "label": "Inspeção: Planta — Espinheira-santa — friedelina e triterpenos",
               "tileLabel": "Inspeção: Planta — Espinheira-s…",
               "href": "/posts/post-inspecao-planta-espinheira-santa.html",
@@ -441,6 +508,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes: A História das Coisas (*The Story of Stuff*, 2010/2011) — livro de Annie Leonard sobre a economia linear das coisas; vídeo 2007 como precursor. Autora em Pessoas."
             },
             {
+              "label": "Inspeção: Tamara Klink — legado vivo no Ártico",
+              "tileLabel": "Inspeção: Tamara Klink — legado…",
+              "href": "/posts/post-inspecao-tamara-klink.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-tamara-klink",
+              "description": "Ficha de legado vivo: Tamara Klink — filha de Amyr; Atlântico, invernagem ártica e Passagem Noroeste em solitário; crédito junto do pai no hub Legado."
+            },
+            {
               "label": "Inspeção: Planta — Guaco — cumarina e trepadeira respiratória",
               "tileLabel": "Inspeção: Planta — Guaco — cuma…",
               "href": "/posts/post-inspecao-planta-guaco.html",
@@ -455,6 +530,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-abacaxi",
               "description": "Relatório educacional de Abacaxi (*Ananas comosus (L.) Merr.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: tamaraklink.com — carta náutica digital do Ártico",
+              "tileLabel": "Inspeção: tamaraklink.com — car…",
+              "href": "/posts/post-inspecao-site-tamaraklink.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-site-tamaraklink",
+              "description": "Site oficial de Tamara Klink: mapa de expedições (Mar do Norte → Passagem Noroeste), Lectures, tracking PredictWind do Sardinha 2 — distinto da ficha de pessoa e do canal YouTube."
             },
             {
               "label": "Inspeção: filho de deus — título, oralidade e dignidade",
@@ -601,6 +684,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Morango (*Fragaria × ananassa Duchesne): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
+              "label": "Inspeção: canal Tamara Klink — arquivo de travessias e léxico",
+              "tileLabel": "Inspeção: canal Tamara Klink — …",
+              "href": "/posts/post-inspecao-canal-tamaraklink.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-canal-tamaraklink",
+              "description": "Canais: Tamara Klink (@TamaraKlink) — catálogo YouTube; avó Ana Francesca nomeou o Sardinha; pai Amyr junto no hub."
+            },
+            {
               "label": "Inspeção: Michael J. Fox — presença, ofício e elo com De Volta para o Futuro",
               "tileLabel": "Inspeção: Michael J. Fox — pres…",
               "href": "/posts/post-inspecao-figura-michael-j-fox.html",
@@ -657,6 +748,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Maracujá (fruta) (*Passiflora edulis Sims): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
+              "label": "Inspeção: canal Amyr Klink — ofício do pai, junto da Tamara",
+              "tileLabel": "Inspeção: canal Amyr Klink — of…",
+              "href": "/posts/post-inspecao-canal-amyrklink.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-canal-amyrklink",
+              "description": "Canais: Amyr Klink (@amyrklinkoficial) — catálogo YouTube do pai; no hub aparece junto dos vídeos da Tamara."
+            },
+            {
               "label": "Inspeção: Christopher Lloyd — presença, improviso e elo com De Volta para o Futuro",
               "tileLabel": "Inspeção: Christopher Lloyd — p…",
               "href": "/posts/post-inspecao-figura-christopher-lloyd.html",
@@ -695,6 +794,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-tomatinho-cereja",
               "description": "Tomatinho cereja (*Solanum lycopersicum* var. *cerasiforme*) — primeiro cultivo do Diário da Sementinha: fruto fresco vs ultraprocessados «tomato»."
+            },
+            {
+              "label": "Inspeção: canal Paulinho o LOKO — GTA RP, Anti-RP e arquivo de servidor",
+              "tileLabel": "Inspeção: canal Paulinho o LOKO…",
+              "href": "/posts/post-inspecao-canal-paulinho.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-canal-paulinho",
+              "description": "Canais: Paulinho o LOKO (@PaulinhoLOKOoficial) — arquivo GTA RP / Anti-RP desde 2015; catálogo na página Games."
             },
             {
               "label": "Inspeção: Richard Curtis — o autor, o ofício da escrita e Questão de Tempo",
@@ -919,6 +1026,38 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-memoravel",
               "description": "Palavras: «memorável» (lat. memorabilis) — digno de memória; elogio BR; eixo retenção ≠ escala legal/genial/maravilhoso/fantástico; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Defensoria Pública — acesso gratuito à justiça e Faça o melhor!",
+              "tileLabel": "Inspeção: Defensoria Pública — …",
+              "href": "/posts/post-inspecao-guia-defensoria-acesso.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-guia-defensoria-acesso",
+              "description": "Guia de acesso: Defensoria Pública e a assistência jurídica gratuita no cultivo medicinal; critérios de hipossuficiência, laudos, HC e os filtros que restam sem honorários. Não é parecer."
+            },
+            {
+              "label": "Inspeção: Guia quimiotipos — THC, CBD, CBG e a composição da cannabis",
+              "tileLabel": "Inspeção: Guia quimiotipos — TH…",
+              "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-guia-quimiotipos-cannabis",
+              "description": "Resumo da Aula 10 XIV (Diogo): metabólitos, biossíntese, cinco quimiotipos e literacia fitoterápico × isolado. Não é laudo nem protocolo."
+            },
+            {
+              "label": "Inspeção: Guia canabiméticos — modular o SEC por via exógena",
+              "tileLabel": "Inspeção: Guia canabiméticos — …",
+              "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-guia-canabimeticos-modulacao",
+              "description": "Resumo da Aula 7 XIV (Eliana): modulação exógena, CB1/CB2, canabiméticos e moléculas em pesquisa — irmão do guia de meditação (via endógena)."
+            },
+            {
+              "label": "Inspeção: Guia Farmácia Viva — plantas medicinais e cannabis no SUS",
+              "tileLabel": "Inspeção: Guia Farmácia Viva — …",
+              "href": "/posts/post-inspecao-guia-farmacia-viva.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-guia-farmacia-viva",
+              "description": "Resumo da Aula 5 XIV (Jaqueline): Farmácia Viva como política do SUS, Portaria 886/2010, modalidades e o lugar da cannabis na cadeia pública."
             },
             {
               "label": "Inspeção: Moana — o desenho do oceano, da vocação e da ilha",
@@ -1777,22 +1916,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Pessoas × Artes: homenagem a Álvares de Azevedo (1831–1852) — ofício ultrarromântico, com elo principal no poema Lágrimas da Vida; distinto do Legado canábico."
             },
             {
-              "label": "Inspeção: Guia Farmácia Viva — plantas medicinais e cannabis no SUS",
-              "tileLabel": "Inspeção: Guia Farmácia Viva — …",
-              "href": "/posts/post-inspecao-guia-farmacia-viva.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-guia-farmacia-viva",
-              "description": "Resumo da Aula 5 XIV (Jaqueline): Farmácia Viva como política do SUS, Portaria 886/2010, modalidades e o lugar da cannabis na cadeia pública."
-            },
-            {
-              "label": "Inspeção: Guia canabiméticos — modular o SEC por via exógena",
-              "tileLabel": "Inspeção: Guia canabiméticos — …",
-              "href": "/posts/post-inspecao-guia-canabimeticos-modulacao.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-guia-canabimeticos-modulacao",
-              "description": "Resumo da Aula 7 XIV (Eliana): modulação exógena, CB1/CB2, canabiméticos e moléculas em pesquisa — irmão do guia de meditação (via endógena)."
-            },
-            {
               "label": "Inspeção: Lágrimas da Vida — o poema de Álvares de Azevedo e a máscara que chora",
               "tileLabel": "Inspeção: Lágrimas da Vida — o …",
               "href": "/posts/post-inspecao-arte-lagrimas-da-vida.html",
@@ -1809,14 +1932,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "As 23 palavras novas do Guia ligadas à pesquisa molécula→lixo: destaque, famílias semânticas e por que cada uma entra no catálogo."
             },
             {
-              "label": "Inspeção: Guia quimiotipos — THC, CBD, CBG e a composição da cannabis",
-              "tileLabel": "Inspeção: Guia quimiotipos — TH…",
-              "href": "/posts/post-inspecao-guia-quimiotipos-cannabis.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-guia-quimiotipos-cannabis",
-              "description": "Resumo da Aula 10 XIV (Diogo): metabólitos, biossíntese, cinco quimiotipos e literacia fitoterápico × isolado. Não é laudo nem protocolo."
-            },
-            {
               "label": "Inspeção: Guia meditação — modular o endocanabinoidoma (via endógena)",
               "tileLabel": "Inspeção: Guia meditação — modu…",
               "href": "/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html",
@@ -1824,14 +1939,6 @@ window.__BIBLIOTECA_NAV__ = {
               "slug": "post-inspecao-guia-meditacao-endocanabinoidoma",
               "description": "Como a meditação, o yoga e o mindfulness entram no mapa XIV de modulação endógena do endocanabinoidoma (AEA/2-AG/BDNF). Elo Eliana Rodrigues · SEC. Não é protocolo clínico.",
               "featured": true
-            },
-            {
-              "label": "Inspeção: Guia Defensoria e acesso gratuito — seletividade sem honorários",
-              "tileLabel": "Inspeção: Guia Defensoria e ace…",
-              "href": "/posts/post-inspecao-guia-defensoria-acesso.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-guia-defensoria-acesso",
-              "description": "Guia para Defensoria e quem não tem advogado particular: mesmos filtros de HC/seletividade (laudo, tempo, tipificação porte×tráfico) sem o preço do particular. Não é parecer."
             },
             {
               "label": "Inspeção: Guia associações de pacientes — cultivo institucional × seletividade",
@@ -2298,28 +2405,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Pessoas × Artes: Anthony Henman — método etnobotânico e antiproibicionista, com elo principal na antologia Diamba Sarabamba (1986); distinto do Legado canábico."
             },
             {
-              "label": "Inspeção: Tamara Klink — legado vivo no Ártico",
-              "tileLabel": "Inspeção: Tamara Klink — legado…",
-              "href": "/posts/post-inspecao-tamara-klink.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-tamara-klink",
-              "description": "Ficha de legado vivo: Tamara Klink — filha de Amyr; Atlântico, invernagem ártica e Passagem Noroeste em solitário; crédito junto do pai no hub Legado."
-            },
-            {
               "label": "Inspeção: Diamba Sarabamba — a coletânea pioneira de 1986 sobre a maconha no Brasil",
               "tileLabel": "Inspeção: Diamba Sarabamba — a …",
               "href": "/posts/post-inspecao-arte-diamba-sarabamba.html",
               "icon": "🔍",
               "slug": "post-inspecao-arte-diamba-sarabamba",
               "description": "Artes: Diamba Sarabamba (Ground, 1986) — coletânea de Henman e Pessoa Jr.; arquivo pioneiro do debate brasileiro sobre a diamba/maconha. Organizador em Pessoas."
-            },
-            {
-              "label": "Inspeção: Amyr Klink — navegador e legado de caminho",
-              "tileLabel": "Inspeção: Amyr Klink — navegado…",
-              "href": "/posts/post-inspecao-amyr-klink.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-amyr-klink",
-              "description": "Ficha de legado: Amyr Klink — pioneiro da travessia a remo do Atlântico Sul (1984); planeamento, risco e ofício que continua na filha Tamara."
             },
             {
               "label": "Inspeção: Jostein Gaarder — filosofia narrada e elo com O Dia do Curinga",
@@ -2514,28 +2605,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Ficha institucional do CEBRID (UNIFESP): legado Carlini, continuidade Nappo e curso Medicina Canabinoide — complementar ao SIEX/MovReCam, sem confundir os dois formatos."
             },
             {
-              "label": "Inspeção: Profa. Solange Nappo — CEBRID",
-              "tileLabel": "Inspeção: Profa. Solange Nappo …",
-              "href": "/posts/post-inspecao-solange-nappo.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-solange-nappo",
-              "description": "Ficha de legado vivo: Solange Nappo (UNIFESP) — coordenadora do CEBRID após Carlini; saúde colectiva, prevenção (PREVINA) e formação em cannabis medicinal."
-            },
-            {
               "label": "Inspeção: Dr. Sidarta Ribeiro — Revolução Canabinóide",
               "tileLabel": "Inspeção: Dr. Sidarta Ribeiro —…",
               "href": "/posts/post-inspecao-sidarta-ribeiro.html",
               "icon": "🔍",
               "slug": "post-inspecao-sidarta-ribeiro",
               "description": "Ficha de legado vivo: Sidarta Ribeiro (UFRN/ICe) — neurocientista e divulgador; aulas «Revolução Canabinóide» no acervo MovReCam e ponte entre evidência endocanabinoide e o curso UNIFESP."
-            },
-            {
-              "label": "Inspeção: Prof. Elisaldo Carlini — pioneiro da cannabis medicinal",
-              "tileLabel": "Inspeção: Prof. Elisaldo Carlin…",
-              "href": "/posts/post-inspecao-elisaldo-carlini.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-elisaldo-carlini",
-              "description": "Homenagem documental ao Prof. Emérito Elisaldo Luiz de Araújo Carlini (1930–2020): médico e psicofarmacologista da UNIFESP, fundador do CEBRID — mérito máximo na ciência e na democratização do conhecimento sobre cannabis medicinal no Brasil."
             },
             {
               "label": "Inspeção: Padre Ticão — Antônio Luiz Marchioni",
