@@ -10,6 +10,16 @@ const crypto = require('crypto');
 const { ROOT } = require('../lib/paths.js');
 const { ASSET_VERSION } = require('../lib/asset-version.js');
 
+function safeWriteFile(file, content) {
+  try {
+    require('fs').writeFileSync(file, content);
+    return true;
+  } catch (err) {
+    console.warn('stamp-assets: não gravou ' + path.relative(ROOT, file) + ' — ' + err.message);
+    return false;
+  }
+}
+
 function listHtmlFiles(dir, acc) {
   acc = acc || [];
   const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -104,12 +114,13 @@ function stampHtml(content) {
 }
 
 let changedHtml = 0;
+let skippedHtml = 0;
 for (const file of listHtmlFiles(ROOT)) {
   const original = fs.readFileSync(file, 'utf8');
   const updated = stampHtml(original);
   if (updated !== original) {
-    fs.writeFileSync(file, updated);
-    changedHtml++;
+    if (safeWriteFile(file, updated)) changedHtml++;
+    else skippedHtml++;
   }
 }
 
@@ -122,7 +133,7 @@ if (fs.existsSync(layoutPath)) {
     `$1${ASSET_VERSION}$2`
   );
   if (next !== layout) {
-    fs.writeFileSync(layoutPath, next);
+    safeWriteFile(layoutPath, next);
   }
 }
 
@@ -134,7 +145,7 @@ if (fs.existsSync(versionCheckPath)) {
     `$1${ASSET_VERSION}$2`
   );
   if (next !== versionCheck) {
-    fs.writeFileSync(versionCheckPath, next);
+    safeWriteFile(versionCheckPath, next);
   }
 }
 
@@ -147,7 +158,7 @@ if (fs.existsSync(radioMediaPath)) {
     `$1${ASSET_VERSION}$2`
   );
   if (next !== radioMedia) {
-    fs.writeFileSync(radioMediaPath, next);
+    safeWriteFile(radioMediaPath, next);
   }
 }
 
@@ -160,7 +171,7 @@ if (fs.existsSync(swPath)) {
     `$1${ASSET_VERSION}$2`
   );
   if (next !== sw) {
-    fs.writeFileSync(swPath, next);
+    safeWriteFile(swPath, next);
   }
 }
 
@@ -174,7 +185,7 @@ if (fs.existsSync(manifestPath)) {
     '$1$2'
   );
   if (next !== manifest) {
-    fs.writeFileSync(manifestPath, next);
+    safeWriteFile(manifestPath, next);
   }
 }
 
@@ -198,7 +209,7 @@ for (const file of listHtmlFiles(ROOT)) {
       `$1${ASSET_VERSION}$2`
     );
   if (next !== html) {
-    fs.writeFileSync(file, next);
+    safeWriteFile(file, next);
   }
 }
 
@@ -247,7 +258,7 @@ if (fs.existsSync(siteUpdatePath)) {
   }
 }
 
-fs.writeFileSync(
+safeWriteFile(
   versionPath,
   JSON.stringify({
     version: ASSET_VERSION,
@@ -268,7 +279,7 @@ function stampHeroInCssFile(cssPath) {
     `$1?v=${heroCacheKey}$2`
   );
   if (nextCss !== css) {
-    fs.writeFileSync(cssPath, nextCss);
+    safeWriteFile(cssPath, nextCss);
   }
 }
 stampHeroInCssFile(path.join(ROOT, 'css', 'style.css'));
@@ -295,12 +306,18 @@ for (const file of listHtmlFiles(ROOT)) {
   );
   nextHtml = nextHtml.replace(/<img\b[^>]*\bhero-media\b[^>]*>/gi, stampHeroMediaAttrs);
   if (nextHtml !== html) {
-    fs.writeFileSync(file, nextHtml);
+    try {
+      safeWriteFile(file, nextHtml);
+    } catch (err) {
+      skippedHtml++;
+      console.warn('stamp-assets: não gravou hero em ' + path.relative(ROOT, file) + ' — ' + err.message);
+    }
   }
 }
 
 console.log(
   'stamp-assets: versão v' + ASSET_VERSION + ' aplicada (' + changedHtml + ' HTML atualizados)' +
+  (skippedHtml ? ', ' + skippedHtml + ' ignorados' : '') +
   '; hero ?v=' + heroCacheKey +
   (heroWidth && heroHeight ? ' (' + heroWidth + '×' + heroHeight + ')' : '') +
   '.'

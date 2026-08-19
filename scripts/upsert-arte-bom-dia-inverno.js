@@ -147,7 +147,7 @@ async function main() {
   }
 
   const update = {
-    id: 'bom-dia-inverno-2026-08-circular',
+    id: 'bom-dia-inverno-2026-08-popup',
     href: href,
     image: '/imagens/inspecoes/bom-dia-inverno-cover.jpg',
     imageAlt: {

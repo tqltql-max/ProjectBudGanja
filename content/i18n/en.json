@@ -12,6 +12,13 @@
     "themeToggle": "Toggle light/dark theme",
     "themeDark": "Switch to dark theme",
     "themeLight": "Switch to light theme",
+    "droneOn": "Turn drone on",
+    "droneOff": "Turn drone off",
+    "droneAria": "Inspection drone — fly to a red word to read its meaning",
+    "droneMeaning": "Meaning",
+    "droneOpenFicha": "Open card",
+    "droneNoTranslation": "No translation in this language — Portuguese sense stays.",
+    "droneNoMeaning": "This word has no card yet.",
     "menuOpen": "Open navigation menu",
     "menuClose": "Close navigation menu",
     "mobileNav": "Navigation",
@@ -1034,7 +1041,7 @@
       "brand": "Inspetor BudGanja",
       "author": "Tamara Klink · Companhia das Letras",
       "lead": "Eight months on the ice. The book asks to circulate.",
-      "coverAlt": "Cover of Bom dia, Inverno, by Tamara Klink — Companhia das Letras",
+      "coverAlt": "Cover of Bom dia, Inverno: Tamara on the ice, drone controller in her left hand — aerial shot from her own drone",
       "factMonthsValue": "8",
       "factMonthsLabel": "months on ice",
       "factColdValue": "−40 °C",
@@ -1081,7 +1088,15 @@
       "mapVidaText": "Stay, record, care.",
       "mapSite": "Site",
       "mapSiteText": "The author’s nautical chart.",
-      "droneAria": "Tamara’s drone — tap to follow the ice"
+      "droneAria": "Tamara’s drone — tap to hear the cover: the controller in the left hand",
+      "coverKicker": "The cover",
+      "coverTitle": "The drone in the left hand",
+      "coverLead": "There was no photographer on the ice. The camera is in the sky because she sent it there.",
+      "coverCaption": "Cover detail: controller in the left hand; looking up at the camera she is flying.",
+      "coverDetailAlt": "Tamara Klink on the ice, yellow suit, drone controller in her left hand — detail from the Bom dia, Inverno cover",
+      "coverP1": "The cover of <em>Bom dia, Inverno</em> is seen from above: Tamara in yellow, the boat locked in the fjord, the right leg greeting winter. The drone takes the shot. The dark rectangle — the controller — is in the <a href=\"/posts/post-inspecao-palavra-mao-esquerda-direita.html\">left hand</a>.",
+      "coverP2": "Solo overwintering. Nobody on the ice to take the portrait. She lifts the camera, looks at it, and the left thumb is still on the sticks. The photo keeps the craft: fly, stay, record.",
+      "coverP3": "The drone that flies on this page is the same gesture. Tap it: it brings you here, to the hand that still steers the view from above."
     }
   }
 }

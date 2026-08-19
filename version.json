@@ -1,13 +1,13 @@
 {
-  "version": "313",
+  "version": "315",
   "hero": "7f1482449a",
   "heroSize": {
     "width": 1400,
     "height": 440
   },
-  "builtAt": "2026-08-18T14:06:56.734Z",
+  "builtAt": "2026-08-19T07:53:50.409Z",
   "update": {
-    "id": "bom-dia-inverno-2026-08-circular",
+    "id": "bom-dia-inverno-2026-08-popup",
     "href": "/inverno/",
     "image": "/imagens/inspecoes/bom-dia-inverno-cover.jpg",
     "imageAlt": {

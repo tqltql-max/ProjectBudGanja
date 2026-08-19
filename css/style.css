@@ -13,6 +13,7 @@
 @import url("pages/jogos-broto.css");
 @import url("luximetro.css");
 @import url("learn-translate.css");
+@import url("site-drone.css");
 
 /* Design tokens */
 :root {
@@ -6735,6 +6736,7 @@ body[data-page="home"] .botao-home.has-hover-tip {
     overflow: hidden;
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
     line-height: 0;
+    cursor: pointer;
 }
 
 .cookie-consent-update-cover-link:focus-visible {

@@ -231,6 +231,60 @@ body[data-page="inverno"] #main-content {
     color: var(--inverno-mist);
 }
 
+.inverno-cover-shot {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 1.35rem;
+}
+
+.inverno-cover-shot figure {
+    margin: 0;
+}
+
+.inverno-cover-shot img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: 12% 88%;
+    border-radius: 12px;
+    border: 1px solid rgba(232, 238, 244, 0.14);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    background: #0b1218;
+}
+
+.inverno-cover-shot figcaption {
+    margin-top: 0.55rem;
+    font-size: 0.86rem;
+    line-height: 1.4;
+    color: var(--inverno-mist);
+}
+
+.inverno-cover-copy {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.inverno-cover-copy p {
+    margin: 0;
+    font-size: 1.02rem;
+    line-height: 1.6;
+    color: var(--inverno-ink);
+}
+
+.inverno-cover-copy a {
+    color: var(--inverno-gold);
+    text-underline-offset: 3px;
+}
+
+@media (min-width: 760px) {
+    .inverno-cover-shot {
+        grid-template-columns: minmax(14rem, 19rem) minmax(0, 1fr);
+        align-items: start;
+        gap: 1.8rem;
+    }
+}
+
 .inverno-steps {
     margin: 1.5rem 0 0;
     padding: 0;

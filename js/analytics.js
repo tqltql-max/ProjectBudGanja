@@ -157,10 +157,8 @@
     var title = pickLocalized(update.title, '');
     var text = pickLocalized(update.text, '');
     var href = update.href ? String(update.href) : '';
-    if (updateHrefMatchesPage(href)) {
-      rememberUpdateDismissed(update.id);
-      return '';
-    }
+    var alreadyOnPage = updateHrefMatchesPage(href);
+    var linkHref = alreadyOnPage ? '' : href;
     var linkLabel = pickLocalized(update.linkLabel, t('common.siteUpdateOpen', 'Abrir'));
     var image = update.image ? String(update.image) : '';
     var imageAlt = pickLocalized(update.imageAlt, title || 'Capa');
@@ -176,13 +174,13 @@
         escapeHtml(imageAlt) +
         '" width="320" height="480" loading="eager" decoding="async">';
       imageHtml =
-        href && href.charAt(0) === '/'
+        linkHref && linkHref.charAt(0) === '/'
           ? '<a class="cookie-consent-update-cover-link" href="' +
-            escapeHtml(href) +
+            escapeHtml(linkHref) +
             '" data-update-dismiss="1">' +
             imgTag +
             '</a>'
-          : '<div class="cookie-consent-update-cover-wrap">' + imgTag + '</div>';
+          : '<div class="cookie-consent-update-cover-wrap" data-update-dismiss="1">' + imgTag + '</div>';
     }
     var markHtml = '';
     if (mark) {
@@ -196,10 +194,10 @@
         '</span>';
     }
     var linkHtml = '';
-    if (href && href.charAt(0) === '/' && !imageHtml) {
+    if (linkHref && linkHref.charAt(0) === '/' && !imageHtml) {
       linkHtml =
         '<p class="cookie-consent-update-link"><a class="cookie-consent-update-cta" href="' +
-        escapeHtml(href) +
+        escapeHtml(linkHref) +
         '">' +
         escapeHtml(linkLabel) +
         '</a></p>';
@@ -268,8 +266,9 @@
     var actions;
     if (mode === 'update') {
       var updateHref = update && update.href ? String(update.href) : '';
+      var alreadyOnPage = updateHrefMatchesPage(updateHref);
       var primaryCta = '';
-      if (updateHref && updateHref.charAt(0) === '/') {
+      if (updateHref && updateHref.charAt(0) === '/' && !alreadyOnPage) {
         primaryCta =
           '<a class="botao cookie-consent-accept cookie-consent-update-cta" href="' +
           escapeHtml(updateHref) +
@@ -279,16 +278,19 @@
       } else {
         primaryCta =
           '<button type="button" class="botao cookie-consent-accept" data-update-dismiss="1">' +
-          escapeHtml(pickLocalized(update && update.cta, t('common.siteUpdateGotIt', 'Aceitar'))) +
+          escapeHtml(
+            pickLocalized(
+              update && update.linkLabel,
+              pickLocalized(update && update.cta, t('common.siteUpdateGotIt', 'Aceitar'))
+            )
+          ) +
           '</button>';
       }
       actions =
         '<div class="cookie-consent-actions">' +
-        (primaryCta.indexOf('<a ') === 0
-          ? '<button type="button" class="botao botao-outline cookie-consent-deny" data-update-dismiss="1">' +
-            escapeHtml(pickLocalized(update && update.cta, t('common.siteUpdateGotIt', 'Depois'))) +
-            '</button>'
-          : '') +
+        '<button type="button" class="botao botao-outline cookie-consent-deny" data-update-dismiss="1">' +
+        escapeHtml(pickLocalized(update && update.cta, t('common.siteUpdateGotIt', 'Depois'))) +
+        '</button>' +
         primaryCta +
         '</div>';
     } else {

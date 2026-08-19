@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '313';
+const ASSET_V = '315';
 const HOME = '/inverno/';
 
 let deferredInstallPrompt = null;
@@ -1579,8 +1579,26 @@ function buildHeaderHTML(site, authState) {
     '<span class="header-community-mark-label">' + escapeNavText(i18n('nav.community', 'Comunidade')) + '</span>' +
     '</a>';
 
+  const droneOn = (function () {
+    try { return localStorage.getItem('budganja-drone') === '1'; } catch (e) { return false; }
+  })();
+  const droneLabel = droneOn
+    ? i18n('common.droneOff', 'Desativar drone')
+    : i18n('common.droneOn', 'Ativar drone');
+  const droneToggle =
+    '<button type="button" class="header-quick-link header-quick-link--drone' + (droneOn ? ' is-active' : '') + '" data-drone-toggle aria-pressed="' + (droneOn ? 'true' : 'false') + '" aria-label="' + escapeNavText(droneLabel) + '" title="' + escapeNavText(droneLabel) + '">' +
+    '<span class="header-quick-link-icon" aria-hidden="true">' +
+    '<svg class="header-drone-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+    '<circle cx="6" cy="6" r="2.2"></circle><circle cx="18" cy="6" r="2.2"></circle>' +
+    '<circle cx="6" cy="18" r="2.2"></circle><circle cx="18" cy="18" r="2.2"></circle>' +
+    '<path d="M8 7.4 L10.6 10 M16 7.4 L13.4 10 M8 16.6 L10.6 14 M16 16.6 L13.4 14"></path>' +
+    '<ellipse cx="12" cy="12" rx="3.2" ry="2.1"></ellipse>' +
+    '<circle cx="12" cy="12" r="0.9" fill="currentColor" stroke="none"></circle>' +
+    '</svg></span></button>';
+
   const headerToolbar =
     '<div class="header-toolbar">' +
+    droneToggle +
     '<button type="button" class="header-quick-link header-quick-link--search" id="search-toggle" aria-expanded="false" aria-label="' + escapeNavText(i18n('common.searchOpen', 'Buscar no site')) + '" title="' + escapeNavText(i18n('common.searchShortcut', 'Buscar (Ctrl+K)')) + '">' +
     '<span class="header-quick-link-icon" aria-hidden="true">' +
     '<svg class="header-search-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">' +
@@ -1682,6 +1700,17 @@ function buildMobileUtilsHTML(authState, hideAuthNav) {
     '<button type="button" class="mobile-menu-util mobile-menu-util--search" data-mobile-search-open>' +
     '<span class="mobile-menu-util-icon" aria-hidden="true">⌕</span>' +
     '<span>' + escapeNavText(i18n('common.searchOpen', 'Buscar no site')) + '</span></button>'
+  );
+  const droneOnMobile = (function () {
+    try { return localStorage.getItem('budganja-drone') === '1'; } catch (e) { return false; }
+  })();
+  const droneMobileLabel = droneOnMobile
+    ? i18n('common.droneOff', 'Desativar drone')
+    : i18n('common.droneOn', 'Ativar drone');
+  links.push(
+    '<button type="button" class="mobile-menu-util' + (droneOnMobile ? ' is-active' : '') + '" data-drone-toggle aria-pressed="' + (droneOnMobile ? 'true' : 'false') + '">' +
+    '<span class="mobile-menu-util-icon" aria-hidden="true">✈</span>' +
+    '<span data-drone-toggle-label>' + escapeNavText(droneMobileLabel) + '</span></button>'
   );
   links.push(buildLangSwitcherHTML('mobile'));
   if (!isStandaloneApp()) {
@@ -2500,6 +2529,13 @@ document.addEventListener('DOMContentLoaded', async function () {
     feat.id = 'site-features-js';
     feat.src = '/js/site-features.js?v=' + ASSET_V;
     document.body.appendChild(feat);
+  }
+
+  if (!document.querySelector('script[src*="site-drone.js"]')) {
+    const drone = document.createElement('script');
+    drone.id = 'site-drone-js';
+    drone.src = '/js/site-drone.js?v=' + ASSET_V;
+    document.body.appendChild(drone);
   }
 
   function loadRadioPlayerScript() {

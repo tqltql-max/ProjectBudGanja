@@ -170,7 +170,7 @@
     if (!drone) return;
 
     var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var sections = ['circular', 'lexico', 'poema', 'mapa'];
+    var sections = ['capa', 'circular', 'lexico', 'poema', 'mapa'];
     var nextIndex = 0;
     var size = 104;
 
@@ -191,6 +191,9 @@
     var ty = y;
     var paused = false;
     var flying = true;
+    var following = false;
+    var caught = false;
+    var catchRadius = 58;
 
     function pad() {
       return {
@@ -201,6 +204,14 @@
       };
     }
 
+    function clampToPad(px, py) {
+      var p = pad();
+      return {
+        x: Math.min(Math.max(px, p.left), p.right),
+        y: Math.min(Math.max(py, p.top), p.bottom)
+      };
+    }
+
     function pickTarget() {
       var p = pad();
       tx = p.left + Math.random() * Math.max(40, p.right - p.left);
@@ -208,22 +219,45 @@
     }
 
     function apply() {
-      var bank = Math.max(-16, Math.min(16, (tx - x) * 0.12));
+      var bank = Math.max(-18, Math.min(18, (tx - x) * 0.14));
       drone.style.setProperty('--drone-x', Math.round(x) + 'px');
       drone.style.setProperty('--drone-y', Math.round(y) + 'px');
       drone.style.setProperty('--drone-rot', bank.toFixed(1) + 'deg');
     }
 
+    function aimAtPointer(clientX, clientY) {
+      following = true;
+      caught = Math.hypot(clientX - (x + size / 2), clientY - (y + size / 2)) < catchRadius;
+      if (caught || paused) return;
+      var next = clampToPad(clientX - size * 0.28, clientY - size * 0.92);
+      tx = next.x;
+      ty = next.y;
+    }
+
     function tick() {
       if (!flying) return;
       requestAnimationFrame(tick);
-      if (paused) return;
-      x += (tx - x) * 0.018;
-      y += (ty - y) * 0.018;
-      if (Math.abs(tx - x) < 8 && Math.abs(ty - y) < 8) pickTarget();
+      if (paused || caught) return;
+      var ease = following ? 0.09 : 0.018;
+      x += (tx - x) * ease;
+      y += (ty - y) * ease;
+      if (!following && Math.abs(tx - x) < 8 && Math.abs(ty - y) < 8) pickTarget();
       apply();
     }
 
+    window.addEventListener('pointermove', function (event) {
+      aimAtPointer(event.clientX, event.clientY);
+    }, { passive: true });
+    window.addEventListener('pointerdown', function (event) {
+      if (event.pointerType === 'touch' || event.pointerType === 'pen') {
+        aimAtPointer(event.clientX, event.clientY);
+      }
+    }, { passive: true });
+    document.documentElement.addEventListener('mouseleave', function () {
+      following = false;
+      caught = false;
+      pickTarget();
+    });
     drone.addEventListener('mouseenter', function () { paused = true; });
     drone.addEventListener('mouseleave', function () { paused = false; });
     drone.addEventListener('focus', function () { paused = true; });
@@ -232,7 +266,7 @@
       var p = pad();
       x = Math.min(Math.max(x, p.left), p.right);
       y = Math.min(Math.max(y, p.top), p.bottom);
-      pickTarget();
+      if (!following) pickTarget();
     });
     document.addEventListener('visibilitychange', function () {
       flying = document.visibilityState !== 'hidden';

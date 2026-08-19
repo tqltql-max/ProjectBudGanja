@@ -12,6 +12,13 @@
     "themeToggle": "Alternar tema claro/oscuro",
     "themeDark": "Activar tema oscuro",
     "themeLight": "Activar tema claro",
+    "droneOn": "Activar dron",
+    "droneOff": "Desactivar dron",
+    "droneAria": "Dron de inspección — vuela hasta una palabra roja para leer el significado",
+    "droneMeaning": "Significado",
+    "droneOpenFicha": "Abrir ficha",
+    "droneNoTranslation": "Sin traducción en este idioma — queda el sentido en portugués.",
+    "droneNoMeaning": "Esta palabra aún no tiene ficha.",
     "menuOpen": "Abrir menú de navegación",
     "menuClose": "Cerrar menú de navegación",
     "mobileNav": "Navegación",
@@ -1034,7 +1041,7 @@
       "brand": "Inspetor BudGanja",
       "author": "Tamara Klink · Companhia das Letras",
       "lead": "Ocho meses en el hielo. El libro pide circular.",
-      "coverAlt": "Portada de Bom dia, Inverno, de Tamara Klink — Companhia das Letras",
+      "coverAlt": "Portada de Bom dia, Inverno: Tamara en el hielo, mando del dron en la mano izquierda — vista aérea de su propio dron",
       "factMonthsValue": "8",
       "factMonthsLabel": "meses en el hielo",
       "factColdValue": "−40 °C",
@@ -1081,7 +1088,15 @@
       "mapVidaText": "Quedarse, registrar, cuidar.",
       "mapSite": "Sitio",
       "mapSiteText": "Carta náutica de la autora.",
-      "droneAria": "Dron de Tamara — toca para seguir el hielo"
+      "droneAria": "Dron de Tamara — toca para oír la portada: el mando en la mano izquierda",
+      "coverKicker": "La portada",
+      "coverTitle": "El dron en la mano izquierda",
+      "coverLead": "En el hielo no había fotógrafo. La cámara está en el cielo porque ella la mandó al cielo.",
+      "coverCaption": "Detalle de la portada: mando en la mano izquierda; la mirada hacia la cámara que ella misma vuela.",
+      "coverDetailAlt": "Tamara Klink en el hielo, traje amarillo, mando del dron en la mano izquierda — detalle de la portada de Bom dia, Inverno",
+      "coverP1": "La portada de <em>Bom dia, Inverno</em> se ve desde arriba: Tamara de amarillo, el barco preso en el fiordo, la pierna derecha saludando al invierno. Quien dispara es el dron. Quien sostiene el mando — el rectángulo oscuro — es la <a href=\"/posts/post-inspecao-palavra-mao-esquerda-direita.html\">mano izquierda</a>.",
+      "coverP2": "Invernada en solitario. No hay nadie en el hielo para hacer el retrato. Ella sube la cámara, la mira, y el pulgar izquierdo sigue en los sticks. La foto guarda el oficio: volar, quedarse, registrar.",
+      "coverP3": "El dron que recorre esta página es el mismo gesto. Tócalo: te trae hasta aquí, a la mano que aún conduce la mirada de arriba."
     }
   }
 }

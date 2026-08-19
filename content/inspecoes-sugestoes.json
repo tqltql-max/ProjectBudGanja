@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T04:56:19.625Z",
+  "updatedAt": "2026-08-19T07:38:31.346Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2545,10 +2545,10 @@
       "whyEn": "Book + thematic lexicon (boat, sea, ice, bucket, path) + UOL/Roda Viva image.",
       "whyEs": "Libro + léxico temático (barco, mar, hielo, balde, camino) + imagen UOL/Roda Viva.",
       "suggestedSlug": "inspecao-arte-bom-dia-inverno",
-      "doneHref": "/posts/post-inspecao-arte-bom-dia-inverno.html",
+      "doneHref": "/inverno/",
       "seriesHint": "artes-cultura",
       "sources": [
-        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/inverno/",
         "/posts/post-inspecao-tamara-klink.html",
         "/posts/post-inspecao-palavra-balde.html",
         "/guia/palavras.html",
