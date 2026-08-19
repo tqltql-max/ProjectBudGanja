@@ -1229,7 +1229,7 @@ body.mobile-menu-open {
 .header-brand-group {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 2px;
     flex-shrink: 0;
     min-width: 0;
     max-width: 100%;

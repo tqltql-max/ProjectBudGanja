@@ -1594,6 +1594,7 @@ function buildHeaderHTML(site, authState) {
     '</span>' +
     '<span class="header-quick-link-label">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
     '</a></div>' +
+    headerBoat +
     '</div>' +
     '<div id="header-radio-host" class="header-radio-host"></div>' +
     '<span class="header-chrome-sep" aria-hidden="true"></span>' +
@@ -1603,7 +1604,6 @@ function buildHeaderHTML(site, authState) {
     '<div class="header-utilities">' +
     headerToolbar +
     '</div>' +
-    headerBoat +
     '<button type="button" class="header-quick-link header-quick-link--menu menu-toggle" aria-label="' + escapeNavText(i18n('common.menuOpen', 'Abrir menu')) + '" aria-expanded="false" aria-controls="mobile-menu">' +
     '<span class="header-quick-link-icon" aria-hidden="true">' +
     '<span class="menu-toggle-bars"><span></span><span></span><span></span></span>' +
