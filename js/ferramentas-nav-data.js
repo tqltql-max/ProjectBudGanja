@@ -493,6 +493,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Manga (*Mangifera indica L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
+              "label": "Inspeção: filho de deus — título, oralidade e dignidade",
+              "tileLabel": "Inspeção: filho de deus — títul…",
+              "href": "/posts/post-inspecao-expressao-filho-de-deus.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-filho-de-deus",
+              "description": "Expressões: «filho de deus» — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; sem proselitismo; Faça o melhor!"
+            },
+            {
               "label": "Análise: danos dos produtos nocivos × vídeos catalogados",
               "tileLabel": "Análise: danos dos produtos noc…",
               "href": "/posts/post-inspecao-derivado-analise-danos-videos.html",
@@ -627,14 +635,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-site-tamaraklink",
               "description": "Site oficial de Tamara Klink: mapa de expedições (Mar do Norte → Passagem Noroeste), Lectures, tracking PredictWind do Sardinha 2 — distinto da ficha de pessoa e do canal YouTube."
-            },
-            {
-              "label": "Inspeção: filho de deus — título, oralidade e dignidade",
-              "tileLabel": "Inspeção: filho de deus — títul…",
-              "href": "/posts/post-inspecao-expressao-filho-de-deus.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-expressao-filho-de-deus",
-              "description": "Expressões: «filho de deus» — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; sem proselitismo; Faça o melhor!"
             },
             {
               "label": "Inspeção: Divertida Mente — as emoções da Riley e a mensagem que importa",
@@ -981,6 +981,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Carica papaya* — mamão brasileiro: polpa doce, papaína do látex e elo UNIFESP/SUS; separar fruto inteiro de néctares e ultraprocessados."
             },
             {
+              "label": "Inspeção: os doze apóstolos — conjunto, envio e ofício",
+              "tileLabel": "Inspeção: os doze apóstolos — c…",
+              "href": "/posts/post-inspecao-expressao-os-doze-apostolos.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-os-doze-apostolos",
+              "description": "Expressões: «os doze apóstolos» — conjunto nomeado, frase viva BR e ofício de envio; listas divergentes; Tomé inspecciona; Faça o melhor!"
+            },
+            {
               "label": "Inspeção: nossa senhora, ambulância, sirene, Jesus Cristo — código vermelho oral",
               "tileLabel": "Inspeção: nossa senhora, ambulâ…",
               "href": "/posts/post-inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo.html",
@@ -1027,6 +1035,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-andiroba",
               "description": "*Carapa guianensis* — óleo de sementes rico em limonoides (andirobina); tradição tópica e repelente."
+            },
+            {
+              "label": "Inspeção: Leonardo da Vinci — ofício de olhar e elo com a Santa Ceia",
+              "tileLabel": "Inspeção: Leonardo da Vinci — o…",
+              "href": "/posts/post-inspecao-figura-leonardo-da-vinci.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-leonardo-da-vinci",
+              "description": "Pessoas × Artes: Leonardo da Vinci — olhar, desenhar, ensaiar; elo principal no mural Santa Ceia / A Última Ceia (1495–1498). Distinto do Legado e do Código Da Vinci."
             },
             {
               "label": "Inspeção: Simbiose — a palavra do viver juntos",
@@ -1139,6 +1155,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-figura-steve-jobs",
               "description": "Pessoas: Steve Jobs (1955–2011). A fala documentada é limite de tecnologia em casa e iPad não usado (2010) — não «celular só aos 18». Elo palavra Jobs, ídolo e ficha do celular."
+            },
+            {
+              "label": "Inspeção: Lucas — médico de homens e de almas",
+              "tileLabel": "Inspeção: Lucas — médico de hom…",
+              "href": "/posts/post-inspecao-figura-lucas-evangelista.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-lucas-evangelista",
+              "description": "Pessoas: Lucas Evangelista — médico amado (Col 4,14) e epíteto «de almas» (tradição); fora dos Doze; corpo e alma sem partir o templo; Faça o melhor!"
             },
             {
               "label": "Inspeção: Buguei — do inseto ao «deu ruim» e Faça o melhor!",
@@ -1405,6 +1429,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes · canção 1995: Mamonas Assassinas — Vira-Vira; paródia do género (vira), não de um povo. Par de Pelados em Santos: o outro clipe."
             },
             {
+              "label": "Inspeção: Santa Ceia — A Última Ceia de Leonardo da Vinci",
+              "tileLabel": "Inspeção: Santa Ceia — A Última…",
+              "href": "/posts/post-inspecao-arte-santa-ceia.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-santa-ceia",
+              "description": "Artes · pintura: Santa Ceia / A Última Ceia (1495–1498, Leonardo) — Evangelhos primeiro; mural ≠ sacramento ≠ Código Da Vinci. Autor em Pessoas. Faça o melhor!"
+            },
+            {
               "label": "Inspeção: Inacreditável — beyond belief, elogio BR e Faça o melhor!",
               "tileLabel": "Inspeção: Inacreditável — beyon…",
               "href": "/posts/post-inspecao-palavra-inacreditavel.html",
@@ -1523,6 +1555,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-mensagem",
               "description": "Palavras: «mensagem» / «mensagens» (lat. *mittere* → *message*) — comunicação; era SMS/chat; «deixar mensagem»; sinal ≠ mensagem; tipografia sm,enajsos."
+            },
+            {
+              "label": "Inspeção: The Chosen — a série sobre Jesus, os escolhidos e onde assistir",
+              "tileLabel": "Inspeção: The Chosen — a série …",
+              "href": "/posts/post-inspecao-serie-the-chosen.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-serie-the-chosen",
+              "description": "Artes · série: The Chosen / Os Escolhidos (2019–, Dallas Jenkins) — Evangelhos primeiro; dramatização do ministério. Onde assistir: app e site oficiais (grátis), Prime e Netflix no catálogo BR. Ficha própria, distinta de A Paixão de Cristo."
             },
             {
               "label": "Inspeção: Esperança — afecto vivo, espera com ofício e Faça o melhor!",
@@ -1955,6 +1995,46 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-isotonico",
               "description": "Palavras: «isotônico» — isola o tônico (tónos); iso- = igual; osmose × músculo × gôndola; ≠ chá, sílaba, água tónica; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Moçambique — o país, o tónos em BI e o lapso esqueiro biq",
+              "tileLabel": "Inspeção: Moçambique — o país, …",
+              "href": "/posts/post-inspecao-palavra-mocambique.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mocambique",
+              "description": "Palavras: «Moçambique» — país lusófono; étimo Mussa Bin Bique; tónico em BI; lapso esqueiro biq = Biq × isqueiro BIC; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Isqueiro BIC — tónos do polegar e o lapso esqueiro biq",
+              "tileLabel": "Inspeção: Isqueiro BIC — tónos …",
+              "href": "/posts/post-inspecao-palavra-isqueiro-bic.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-isqueiro-bic",
+              "description": "Palavras: «isqueiro BIC» — isca+eiro; marca 1973; tónos = tensão (~42 N); lapso esqueiro biq ≠ Moçambique; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Tónos — a raiz grega da tensão, distinta de tônico",
+              "tileLabel": "Inspeção: Tónos — a raiz grega …",
+              "href": "/posts/post-inspecao-palavra-tonos.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-tonos",
+              "description": "Palavras: «tónos» (τόνος) — raiz da tensão; ≠ mapa PT tônico; tríade vomitar / commitar; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Vomitar — largar o que não fica, antes do commit",
+              "tileLabel": "Inspeção: Vomitar — largar o qu…",
+              "href": "/posts/post-inspecao-palavra-vomitar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-vomitar",
+              "description": "Palavras: «vomitar» (lat. vomitare) — corpo × metáfora × mito XIV; tríade tónos / commitar; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Commitar — gravar o rasto (comitar ≠ cometer)",
+              "tileLabel": "Inspeção: Commitar — gravar o r…",
+              "href": "/posts/post-inspecao-palavra-commitar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-commitar",
+              "description": "Palavras: «commitar» (*comitar*) — calco git; ≠ cometer; tríade tónos / vomitar; Faça o melhor depois do snapshot!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",

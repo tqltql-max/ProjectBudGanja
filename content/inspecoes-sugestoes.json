@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T22:59:04.120Z",
+  "updatedAt": "2026-08-20T23:11:49.642Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6533,6 +6533,69 @@
         "/posts/post-inspecao-padre-ticao.html"
       ],
       "notes": "Cap. 32 Pessoas — Lucas ≠ Doze; «de almas» não é versículo."
+    },
+    {
+      "id": "palavra-tonos",
+      "title": "Tónos — a raiz grega da tensão, distinta de tônico",
+      "titleEn": "Tónos — the Greek root of tension, distinct from tônico",
+      "titleEs": "Tónos — la raíz griega de la tensión, distinta de tônico",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: tónos (τόνος) — raiz da tensão; ≠ mapa PT tônico; tríade vomitar / commitar; Faça o melhor!",
+      "whyEn": "Words: tónos (τόνος) — root of tension; ≠ PT map tônico; triad vomitar / commitar; Do your best!",
+      "whyEs": "Palabras: tónos (τόνος) — raíz de la tensión; ≠ mapa PT tônico; tríada vomitar / commitar; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-tonos",
+      "doneHref": "/posts/post-inspecao-palavra-tonos.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wiktionary.org/wiki/%CF%84%CF%8C%CE%BD%CE%BF%CF%82",
+        "/posts/post-inspecao-palavra-tonico.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 145 — tríade tónos / vomitar / commitar."
+    },
+    {
+      "id": "palavra-vomitar",
+      "title": "Vomitar — largar o que não fica, antes do commit",
+      "titleEn": "Vomitar — release what must not stay, before the commit",
+      "titleEs": "Vomitar — soltar lo que no queda, antes del commit",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: vomitar (lat. vomitare) — corpo × metáfora × mito XIV; tríade tónos / commitar; Faça o melhor!",
+      "whyEn": "Words: vomitar (Lat. vomitare) — body × metaphor × XIV myth; triad tónos / commitar; Do your best!",
+      "whyEs": "Palabras: vomitar (lat. vomitare) — cuerpo × metáfora × mito XIV; tríada tónos / commitar; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-vomitar",
+      "doneHref": "/posts/post-inspecao-palavra-vomitar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/vomitar",
+        "/posts/post-inspecao-palavra-tonico.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 146 — tríade tónos / vomitar / commitar."
+    },
+    {
+      "id": "palavra-commitar",
+      "title": "Commitar — gravar o rasto (comitar ≠ cometer)",
+      "titleEn": "Commitar — record the trace (comitar ≠ cometer)",
+      "titleEs": "Commitar — grabar el rastro (comitar ≠ cometer)",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: commitar (comitar) — calco git; ≠ cometer; tríade tónos / vomitar; Faça o melhor depois do snapshot!",
+      "whyEn": "Words: commitar (comitar) — git calque; ≠ cometer; triad tónos / vomitar; Do your best after the snapshot!",
+      "whyEs": "Palabras: commitar (comitar) — calco git; ≠ cometer; tríada tónos / vomitar; ¡Haz lo mejor después del snapshot!",
+      "suggestedSlug": "inspecao-palavra-commitar",
+      "doneHref": "/posts/post-inspecao-palavra-commitar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wiktionary.org/wiki/commit",
+        "/posts/post-inspecao-palavra-tonico.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 147 — tríade tónos / vomitar / commitar."
     }
   ]
 }
