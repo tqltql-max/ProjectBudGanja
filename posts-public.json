@@ -304,6 +304,25 @@
     "seriesLabel": "ESAPP · graduação"
   },
   {
+    "title": "Inspeção: Mercado Play — TV grátis do Mercado Livre e filmes legais no player",
+    "titleEn": "Inspection: Mercado Play — Mercado Livre’s free TV and legal films on their player",
+    "titleEs": "Inspección: Mercado Play — la TV gratis de Mercado Livre y filmes legales en su reproductor",
+    "excerpt": "Lojas · streaming: Mercado Play (play.mercadolivre.com.br) — AVOD BR 2023; grátis com anúncios ≠ domínio público; indicação datada só no player oficial; aluguel e Max/Globoplay de fora; sem endosso.",
+    "excerptEn": "Shops · streaming: Mercado Play — BR AVOD 2023; free-with-ads ≠ public domain; dated pointers only to the official player; rental and partner apps excluded; no endorsement.",
+    "excerptEs": "Tiendas · streaming: Mercado Play — AVOD BR 2023; gratis con anuncios ≠ dominio público; indicaciones fechadas solo al player oficial; alquiler y apps socias fuera; sin endoso.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-loja-mercado-play",
+    "url": "/posts/post-inspecao-loja-mercado-play.html",
+    "date": "2026-08-20T06:45:00.000Z",
+    "filename": "posts/post-inspecao-loja-mercado-play.html",
+    "coverImage": "/imagens/inspecoes/mercado-play-cover.jpg",
+    "category": "inspecao",
+    "series": "loja-streaming",
+    "seriesOrder": 3,
+    "seriesLabel": "Mercado Play · TV grátis"
+  },
+  {
     "title": "Inspeção: jesusamando — assombro, afeto e oralidade BR",
     "titleEn": "Inspection: jesusamando — awe, affection and Brazilian orality",
     "titleEs": "Inspección: jesusamando — asombro, afecto y oralidad BR",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T05:09:52.041Z",
+  "updatedAt": "2026-08-20T06:31:42.061Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6140,6 +6140,32 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. Expressões — fórmula de morada × inteireza; tipografia caixa alta → canónica com vírgula."
+    },
+    {
+      "id": "loja-mercado-play",
+      "title": "Mercado Play — TV grátis do Mercado Livre e filmes legais no player",
+      "titleEn": "Mercado Play — Mercado Livre’s free TV and legal films on their player",
+      "titleEs": "Mercado Play — la TV gratis de Mercado Livre y filmes legales en su reproductor",
+      "tipo": "loja",
+      "priority": 2,
+      "status": "feita",
+      "why": "Lojas · streaming: play.mercadolivre.com.br — AVOD 2023; grátis com anúncios ≠ domínio público; indicação datada só no player oficial; aluguel e Max/Globoplay de fora.",
+      "whyEn": "Shops · streaming: Mercado Play — 2023 AVOD; free-with-ads ≠ public domain; dated official-player pointers; rental and partner apps out.",
+      "whyEs": "Tiendas · streaming: Mercado Play — AVOD 2023; gratis con anuncios ≠ dominio público; indicaciones fechadas al player oficial; alquiler y apps socias fuera.",
+      "suggestedSlug": "inspecao-loja-mercado-play",
+      "doneHref": "/posts/post-inspecao-loja-mercado-play.html",
+      "seriesHint": "loja-streaming",
+      "sources": [
+        "https://play.mercadolivre.com.br/",
+        "https://play.mercadolivre.com.br/filtrar/filmes",
+        "https://play.mercadolivre.com.br/mercado-play-tv",
+        "https://play.mercadolivre.com.br/assistir/a-era-do-gelo/5051e6a2251a4028877bda541ffb481e",
+        "https://www1.folha.uol.com.br/mercado/2023/08/mercado-livre-lanca-servico-de-streaming-com-filmes-de-graca.shtml",
+        "/posts/post-inspecao-loja-filmicca.html",
+        "/posts/post-inspecao-palavra-pipoca.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "AVOD ≠ PD. It (2017) na home é aluguel. Catálogo roda."
     }
   ]
 }
