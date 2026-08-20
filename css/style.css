@@ -796,14 +796,14 @@ img, video, svg {
 }
 
 .header-quick-link--comunidade {
-    --hq-accent: #d4af37;
-    --hq-accent-soft: rgba(212, 175, 55, 0.14);
-    --hq-accent-strong: rgba(212, 175, 55, 0.32);
-    --hq-accent-border: rgba(212, 175, 55, 0.48);
-    --hq-label: #f5e6b8;
-    --hq-icon-bg: linear-gradient(145deg, rgba(232, 197, 71, 0.4), rgba(184, 148, 40, 0.18));
-    --hq-icon-border: rgba(212, 175, 55, 0.55);
-    --hq-icon-shadow: 0 3px 10px rgba(212, 175, 55, 0.22);
+    --hq-accent: #7ee8d2;
+    --hq-accent-soft: rgba(126, 232, 210, 0.14);
+    --hq-accent-strong: rgba(126, 232, 210, 0.28);
+    --hq-accent-border: rgba(126, 232, 210, 0.42);
+    --hq-label: #e8f8ff;
+    --hq-icon-bg: linear-gradient(145deg, rgba(126, 232, 210, 0.28), rgba(10, 34, 48, 0.5));
+    --hq-icon-border: rgba(126, 232, 210, 0.4);
+    --hq-icon-shadow: 0 2px 8px rgba(0, 16, 28, 0.28);
 }
 
 .header-quick-link--sorteios {
@@ -829,14 +829,14 @@ img, video, svg {
 }
 
 .header-quick-link--search {
-    --hq-accent: #d4af37;
-    --hq-accent-soft: rgba(212, 175, 55, 0.14);
-    --hq-accent-strong: rgba(212, 175, 55, 0.32);
-    --hq-accent-border: rgba(212, 175, 55, 0.48);
-    --hq-label: #f5e6b8;
-    --hq-icon-bg: linear-gradient(145deg, rgba(232, 197, 71, 0.4), rgba(184, 148, 40, 0.18));
-    --hq-icon-border: rgba(212, 175, 55, 0.55);
-    --hq-icon-shadow: 0 3px 10px rgba(212, 175, 55, 0.22);
+    --hq-accent: #7ee8d2;
+    --hq-accent-soft: rgba(126, 232, 210, 0.14);
+    --hq-accent-strong: rgba(126, 232, 210, 0.28);
+    --hq-accent-border: rgba(126, 232, 210, 0.4);
+    --hq-label: #e8f8ff;
+    --hq-icon-bg: linear-gradient(145deg, rgba(126, 232, 210, 0.22), rgba(10, 34, 48, 0.55));
+    --hq-icon-border: rgba(126, 232, 210, 0.38);
+    --hq-icon-shadow: 0 2px 8px rgba(0, 16, 28, 0.28);
     padding: 5px 6px;
     flex-shrink: 0;
     border: none;
@@ -846,14 +846,14 @@ img, video, svg {
 }
 
 .header-quick-link--lang {
-    --hq-accent: #d4af37;
-    --hq-accent-soft: rgba(212, 175, 55, 0.14);
-    --hq-accent-strong: rgba(212, 175, 55, 0.32);
-    --hq-accent-border: rgba(212, 175, 55, 0.48);
-    --hq-label: #f5e6b8;
-    --hq-icon-bg: linear-gradient(145deg, rgba(232, 197, 71, 0.4), rgba(184, 148, 40, 0.18));
-    --hq-icon-border: rgba(212, 175, 55, 0.55);
-    --hq-icon-shadow: 0 3px 10px rgba(212, 175, 55, 0.22);
+    --hq-accent: #7ee8d2;
+    --hq-accent-soft: rgba(126, 232, 210, 0.14);
+    --hq-accent-strong: rgba(126, 232, 210, 0.28);
+    --hq-accent-border: rgba(126, 232, 210, 0.4);
+    --hq-label: #e8f8ff;
+    --hq-icon-bg: linear-gradient(145deg, rgba(126, 232, 210, 0.22), rgba(10, 34, 48, 0.55));
+    --hq-icon-border: rgba(126, 232, 210, 0.38);
+    --hq-icon-shadow: 0 2px 8px rgba(0, 16, 28, 0.28);
     padding: 5px 8px 5px 6px;
     flex-shrink: 0;
     border: none;
@@ -1055,14 +1055,14 @@ img, video, svg {
 }
 
 .header-quick-link--menu {
-    --hq-accent: #d4af37;
-    --hq-accent-soft: rgba(212, 175, 55, 0.14);
-    --hq-accent-strong: rgba(212, 175, 55, 0.32);
-    --hq-accent-border: rgba(212, 175, 55, 0.48);
-    --hq-label: #f5e6b8;
-    --hq-icon-bg: linear-gradient(145deg, rgba(232, 197, 71, 0.4), rgba(184, 148, 40, 0.18));
-    --hq-icon-border: rgba(212, 175, 55, 0.55);
-    --hq-icon-shadow: 0 3px 10px rgba(212, 175, 55, 0.22);
+    --hq-accent: #7ee8d2;
+    --hq-accent-soft: rgba(126, 232, 210, 0.14);
+    --hq-accent-strong: rgba(126, 232, 210, 0.28);
+    --hq-accent-border: rgba(126, 232, 210, 0.4);
+    --hq-label: #e8f8ff;
+    --hq-icon-bg: linear-gradient(145deg, rgba(126, 232, 210, 0.22), rgba(10, 34, 48, 0.55));
+    --hq-icon-border: rgba(126, 232, 210, 0.38);
+    --hq-icon-shadow: 0 2px 8px rgba(0, 16, 28, 0.28);
     padding: 5px 6px;
     flex-shrink: 0;
     border: none;
@@ -1235,6 +1235,13 @@ body.mobile-menu-open {
     max-width: 100%;
 }
 
+.header-brand-pair {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    flex-shrink: 0;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -1276,7 +1283,7 @@ body.mobile-menu-open {
     overflow: hidden;
     flex-shrink: 0;
     background: #0a0c0a;
-    border: 1.5px solid rgba(245, 230, 184, 0.55);
+    border: 1.5px solid rgba(126, 232, 210, 0.4);
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.35);
 }
 
@@ -1292,34 +1299,34 @@ body.mobile-menu-open {
     font-weight: 700;
     letter-spacing: -0.01em;
     white-space: nowrap;
-    color: #f5e6b8;
+    color: #e8f8ff;
 }
 
 .header-community-mark:hover,
 .header-community-mark:focus-visible {
     transform: translateY(-1px);
-    border-color: rgba(245, 230, 184, 0.75);
+    border-color: rgba(126, 232, 210, 0.65);
     background:
-        linear-gradient(145deg, rgba(232, 197, 71, 0.42), rgba(40, 32, 12, 0.65));
+        linear-gradient(145deg, rgba(126, 232, 210, 0.32), rgba(10, 34, 48, 0.7));
     box-shadow:
-        0 0 0 1px rgba(212, 175, 55, 0.22),
-        0 6px 18px rgba(212, 175, 55, 0.28);
+        0 0 0 1px rgba(126, 232, 210, 0.2),
+        0 6px 18px rgba(0, 16, 28, 0.32);
     outline: none;
-    color: #ffe9a0;
+    color: #e8f8ff;
 }
 
 .header-community-mark:hover .header-community-mark-label,
 .header-community-mark:focus-visible .header-community-mark-label {
-    color: #ffe9a0;
+    color: #f4f8fc;
 }
 
 .header-community-mark.is-active {
-    border-color: rgba(245, 230, 184, 0.85);
+    border-color: rgba(126, 232, 210, 0.7);
     background:
-        linear-gradient(145deg, rgba(232, 197, 71, 0.5), rgba(48, 38, 14, 0.72));
+        linear-gradient(145deg, rgba(126, 232, 210, 0.38), rgba(10, 34, 48, 0.75));
     box-shadow:
-        0 0 0 1px rgba(212, 175, 55, 0.28),
-        0 0 18px rgba(212, 175, 55, 0.32);
+        0 0 0 1px rgba(126, 232, 210, 0.24),
+        0 0 18px rgba(94, 200, 255, 0.18);
 }
 
 .header-community-mark .app-tile-tip {
@@ -1328,16 +1335,16 @@ body.mobile-menu-open {
 }
 
 .header-quick-link--brand {
-    --hq-accent: #d4af37;
-    --hq-accent-soft: rgba(212, 175, 55, 0.14);
-    --hq-accent-strong: rgba(212, 175, 55, 0.32);
-    --hq-accent-border: rgba(212, 175, 55, 0.48);
-    --hq-label: #f5e6b8;
-    --hq-icon-bg: linear-gradient(145deg, rgba(26, 20, 8, 0.92), rgba(40, 32, 12, 0.75));
-    --hq-icon-border: rgba(212, 175, 55, 0.55);
-    --hq-icon-shadow: 0 3px 10px rgba(212, 175, 55, 0.22);
+    --hq-accent: #e8f4f8;
+    --hq-accent-soft: rgba(244, 248, 252, 0.08);
+    --hq-accent-strong: rgba(244, 248, 252, 0.16);
+    --hq-accent-border: rgba(244, 248, 252, 0.14);
+    --hq-label: #e8f8ff;
+    --hq-icon-bg: #000000;
+    --hq-icon-border: rgba(244, 248, 252, 0.12);
+    --hq-icon-shadow: none;
     max-width: 100%;
-    padding: 5px 6px;
+    padding: 4px 2px;
     gap: 0;
     font-size: 0.78rem;
     font-weight: 700;
@@ -1352,8 +1359,22 @@ body.mobile-menu-open {
 .header-quick-link--brand .header-quick-link-icon {
     width: 1.85rem;
     height: 1.85rem;
-    padding: 2px;
+    padding: 0;
     overflow: hidden;
+    background: #000;
+    border: none;
+    box-shadow: none;
+}
+
+.header-brand-pair .header-quick-link--boat {
+    padding: 4px 4px 4px 0;
+}
+
+.header-quick-link--brand:hover .header-quick-link-icon,
+.header-quick-link--brand:focus-visible .header-quick-link-icon,
+.header-quick-link--brand.is-active .header-quick-link-icon {
+    box-shadow: none;
+    transform: none;
 }
 
 .logo-mark-img {
@@ -7390,9 +7411,9 @@ html[data-theme="light"] .meta-info {
 }
 
 .card-icon--comunidade {
-    background: linear-gradient(145deg, rgba(212, 175, 55, 0.35), rgba(166, 134, 40, 0.16));
-    border: 1px solid rgba(212, 175, 55, 0.45);
-    box-shadow: 0 3px 10px rgba(212, 175, 55, 0.18);
+    background: linear-gradient(145deg, rgba(126, 232, 210, 0.28), rgba(10, 34, 48, 0.5));
+    border: 1px solid rgba(126, 232, 210, 0.4);
+    box-shadow: 0 3px 10px rgba(0, 16, 28, 0.28);
 }
 
 .card-icon--sementinha {
@@ -9631,7 +9652,7 @@ body[data-page="apresentacao-unifesp"] .apresentacao-ask .botao[download] {
     --mm-label: #f4f8fc;
     --mm-icon-bg: linear-gradient(145deg, rgba(110, 231, 197, 0.32), rgba(94, 200, 255, 0.14));
     --mm-icon-border: rgba(126, 232, 210, 0.4);
-    --mm-icon-shadow: 0 3px 10px rgba(212, 175, 55, 0.22);
+    --mm-icon-shadow: 0 3px 10px rgba(94, 200, 255, 0.2);
 }
 
 .mobile-menu-link--pesquisas {

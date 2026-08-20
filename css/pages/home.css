@@ -692,11 +692,11 @@
 }
 
 :is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--comunidade {
-    --card-accent: #d4af37;
-    --card-accent-soft: rgba(212, 175, 55, 0.14);
-    --card-accent-strong: rgba(212, 175, 55, 0.32);
-    --card-accent-border: rgba(212, 175, 55, 0.45);
-    --card-label: #fef0b5;
+    --card-accent: #7ee8d2;
+    --card-accent-soft: rgba(126, 232, 210, 0.14);
+    --card-accent-strong: rgba(126, 232, 210, 0.28);
+    --card-accent-border: rgba(126, 232, 210, 0.42);
+    --card-label: #e8f8ff;
 }
 
 :is(body[data-page="home"], body[data-page="laboratorio"]) .home-latest {

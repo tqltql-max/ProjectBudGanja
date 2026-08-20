@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '335';
+const ASSET_V = '336';
 const HOME = '/vida/';
 
 let deferredInstallPrompt = null;
@@ -1595,6 +1595,7 @@ function buildHeaderHTML(site, authState) {
     '<div class="header-bar">' +
     '<div class="header-chrome header-chrome--main header-chrome--slim">' +
     '<div class="header-brand-group">' +
+    '<div class="header-brand-pair">' +
     '<div class="logo">' +
     '<a href="' + HOME + '" class="header-quick-link header-quick-link--brand logo-link" aria-label="' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '">' +
     '<span class="header-quick-link-icon" aria-hidden="true">' +
@@ -1603,7 +1604,7 @@ function buildHeaderHTML(site, authState) {
     '<span class="header-quick-link-label">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
     '</a></div>' +
     headerBoat +
-    '</div>' +
+    '</div></div>' +
     '<div id="header-radio-host" class="header-radio-host"></div>' +
     '<span class="header-chrome-sep" aria-hidden="true"></span>' +
     buildDesktopQuickNavHTML(authState) +
