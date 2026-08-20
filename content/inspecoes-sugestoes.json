@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T21:54:14.704Z",
+  "updatedAt": "2026-08-20T22:08:14.018Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6358,6 +6358,29 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 135 — iso- + tônico isolado."
+    },
+    {
+      "id": "jogo-sos-grand-bazaar-caderno-2",
+      "title": "Story of Seasons Grand Bazaar — caderno 2, a quinta legal",
+      "titleEn": "Story of Seasons Grand Bazaar — notebook 2, the legal farm",
+      "titleEs": "Story of Seasons Grand Bazaar — cuaderno 2, la granja legal",
+      "tipo": "jogo",
+      "priority": 2,
+      "status": "feita",
+      "why": "Caderno de jogo 2: indicação legal SoS Grand Bazaar (Zephyr Town) — Steam/Nintendo oficiais; elo Vida/cultivo; sem dump.",
+      "whyEn": "Game notebook 2: legal SoS Grand Bazaar pointer (Zephyr Town) — official Steam/Nintendo; Vida/cultivation; no dump.",
+      "whyEs": "Cuaderno 2: indicación legal SoS Grand Bazaar (Zephyr Town) — Steam/Nintendo oficiales; Vida/cultivo; sin dump.",
+      "suggestedSlug": "inspecao-jogo-sos-grand-bazaar",
+      "doneHref": "/posts/post-inspecao-jogo-sos-grand-bazaar.html",
+      "seriesHint": "cadernos-jogo",
+      "sources": [
+        "https://www.storyofseasons.com/grandbazaar/",
+        "https://store.steampowered.com/app/2508780/STORY_OF_SEASONS_Grand_Bazaar/",
+        "https://www.nintendo.com/us/store/products/story-of-seasons-grand-bazaar-switch/",
+        "https://en.wikipedia.org/wiki/Harvest_Moon_DS:_Grand_Bazaar",
+        "https://www.youtube.com/watch?v=TkMvN7PciFc"
+      ],
+      "notes": "Cap. 2 — indicação de cópia legal."
     }
   ]
 }

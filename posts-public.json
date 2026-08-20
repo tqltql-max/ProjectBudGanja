@@ -190,6 +190,25 @@
     "seriesLabel": "Abacate · fruto"
   },
   {
+    "title": "Caderno de jogo 2: Story of Seasons Grand Bazaar — a quinta legal",
+    "titleEn": "Game notebook 2: Story of Seasons Grand Bazaar — the legal farm",
+    "titleEs": "Cuaderno de juego 2: Story of Seasons Grand Bazaar — la granja legal",
+    "excerpt": "Indicação de cópia legal: farming sim da Marvelous (Zephyr Town, 27 ago. 2025) — Steam e Nintendo oficiais. Sem walkthrough, sem dump. Elo com Vida e cultivo.",
+    "excerptEn": "Legal-copy pointer: Marvelous farming sim (Zephyr Town, 27 Aug 2025) — official Steam and Nintendo. No walkthrough, no dump. Tied to Vida and cultivation.",
+    "excerptEs": "Indicación de copia legal: farming sim de Marvelous (Zephyr Town, 27 ago. 2025) — Steam y Nintendo oficiales. Sin walkthrough ni dump. Elo con Vida y cultivo.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-jogo-sos-grand-bazaar",
+    "url": "/posts/post-inspecao-jogo-sos-grand-bazaar.html",
+    "date": "2026-08-20T22:10:00.000Z",
+    "filename": "posts/post-inspecao-jogo-sos-grand-bazaar.html",
+    "coverImage": "/imagens/inspecoes/sos-grand-bazaar-caderno-cover.jpg",
+    "category": "inspecao",
+    "series": "cadernos-jogo",
+    "seriesOrder": 2,
+    "seriesLabel": "Grand Bazaar · Caderno 2"
+  },
+  {
     "title": "Inspeção: FILMICCA — streaming com curadoria, site e o catálogo declarado",
     "titleEn": "Inspection: FILMICCA — curated streaming, the site, and the declared catalogue",
     "titleEs": "Inspección: FILMICCA — streaming con curaduría, el sitio y el catálogo declarado",
@@ -4064,6 +4083,25 @@
     "series": "palavras-origem",
     "seriesOrder": 134,
     "seriesLabel": "Tônico · palavra"
+  },
+  {
+    "title": "Inspeção: Isotônico — iso- + tônico, tensão igual",
+    "titleEn": "Inspection: Isotônico — iso- + tônico, equal tension",
+    "titleEs": "Inspección: Isotônico — iso- + tônico, tensión igual",
+    "excerpt": "Palavras: «isotônico» — isola o tônico (tónos); iso- = igual; osmose × músculo × gôndola; ≠ chá, sílaba, água tónica; Faça o melhor!",
+    "excerptEn": "Words: “isotônico” — isolates tônico (tónos); iso- = equal; osmosis × muscle × shelf; ≠ herb, stress, tonic water; Do your best!",
+    "excerptEs": "Palabras: «isotônico» — aísla el tônico (tónos); iso- = igual; ósmosis × músculo × góndola; ≠ té, sílaba, agua tónica; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-isotonico",
+    "url": "/posts/post-inspecao-palavra-isotonico.html",
+    "date": "2026-08-20T22:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-isotonico.html",
+    "coverImage": "/imagens/inspecoes/isotonico-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 135,
+    "seriesLabel": "Isotônico · palavra"
   },
   {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
