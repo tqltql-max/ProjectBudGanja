@@ -285,6 +285,25 @@
     "seriesLabel": "Camomila"
   },
   {
+    "title": "Inspeção: ESAPP — Agronomia em Paraguaçu Paulista",
+    "titleEn": "Inspection: ESAPP — Agronomy in Paraguaçu Paulista",
+    "titleEs": "Inspección: ESAPP — Agronomía en Paraguaçu Paulista",
+    "excerpt": "Ficha institucional da ESAPP (Paraguaçu Paulista/SP): Agronomia, Fazenda Modelo, biblioteca Célio Rodrigues Siqueira, D.A.F.A.G. e áreas de desporto/lazer — onde o Inspetor BudGanja pretende cursar graduação.",
+    "excerptEn": "Institutional sheet on ESAPP (Paraguaçu Paulista/SP): Agronomy, Model Farm, Célio Rodrigues Siqueira library, D.A.F.A.G. and sport/leisure areas — where Inspector BudGanja intends to study.",
+    "excerptEs": "Ficha institucional de la ESAPP (Paraguaçu Paulista/SP): Agronomía, Fazenda Modelo, biblioteca Célio Rodrigues Siqueira, D.A.F.A.G. y deporte/ocio — donde el Inspector BudGanja pretende cursar grado.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-esapp-agronomia-paraguacu-paulista",
+    "url": "/posts/post-inspecao-esapp-agronomia-paraguacu-paulista.html",
+    "date": "2026-08-20T18:00:00.000Z",
+    "filename": "posts/post-inspecao-esapp-agronomia-paraguacu-paulista.html",
+    "coverImage": "/imagens/inspecoes/esapp-cover.jpg",
+    "category": "inspecao",
+    "series": "formacao-academica",
+    "seriesOrder": 3,
+    "seriesLabel": "ESAPP · graduação"
+  },
+  {
     "title": "Inspeção: jesusamando — assombro, afeto e oralidade BR",
     "titleEn": "Inspection: jesusamando — awe, affection and Brazilian orality",
     "titleEs": "Inspección: jesusamando — asombro, afecto y oralidad BR",
@@ -5812,25 +5831,6 @@
     "series": "artes-cultura",
     "seriesOrder": null,
     "seriesLabel": "Alice no País das Maravilhas · Artes"
-  },
-  {
-    "title": "Inspeção: ESAPP — Agronomia em Paraguaçu Paulista",
-    "titleEn": "Inspection: ESAPP — Agronomy in Paraguaçu Paulista",
-    "titleEs": "Inspección: ESAPP — Agronomía en Paraguaçu Paulista",
-    "excerpt": "Ficha institucional da ESAPP (Paraguaçu Paulista/SP): curso de Agronomia, Fazenda Modelo e tradição desde 1974 — onde o Inspetor BudGanja pretende cursar graduação, complementar ao XIV Curso UNIFESP.",
-    "excerptEn": "Institutional sheet on ESAPP (Paraguaçu Paulista/SP): Agronomy program, Model Farm, and tradition since 1974 — where Inspector BudGanja intends to pursue an undergraduate degree, complementing the 14th UNIFESP Course.",
-    "excerptEs": "Ficha institucional de la ESAPP (Paraguaçu Paulista/SP): curso de Agronomía, Fazenda Modelo y tradición desde 1974 — donde el Inspector BudGanja pretende cursar grado, complementario al XIV Curso UNIFESP.",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-esapp-agronomia-paraguacu-paulista",
-    "url": "/posts/post-inspecao-esapp-agronomia-paraguacu-paulista.html",
-    "date": "2026-08-01T18:00:00.000Z",
-    "filename": "posts/post-inspecao-esapp-agronomia-paraguacu-paulista.html",
-    "coverImage": "/imagens/inspecoes/esapp-cover.jpg",
-    "category": "inspecao",
-    "series": "formacao-academica",
-    "seriesOrder": null,
-    "seriesLabel": "ESAPP · graduação"
   },
   {
     "title": "Inspeção: Derivados do abacate — açúcar, aditivos e química industrial",
