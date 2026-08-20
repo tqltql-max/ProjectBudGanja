@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T22:39:07.834Z",
+  "updatedAt": "2026-08-20T22:59:04.126Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1976,6 +1976,22 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-expressao-templo-de-cristo-corpo-e-alma.html"
+    },
+    {
+      "id": "lucas-evangelista",
+      "word": "Lucas, médico de homens e de almas",
+      "simple": "Pessoa — Lucas Evangelista; médico amado (Col 4,14) e epíteto «de almas» (tradição); não é um dos Doze; corpo e alma sem partir o templo; Faça o melhor!",
+      "simpleEn": "Person — Luke the Evangelist; beloved physician (Col 4:14) and “of souls” epithet (tradition); not one of the Twelve; body and soul without splitting the temple; Do your best!",
+      "simpleEs": "Persona — Lucas el Evangelista; médico amado (Col 4,14) y epíteto «de almas» (tradición); no es uno de los Doce; cuerpo y alma sin partir el templo; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-lucas-evangelista.html",
+      "history": "Lucas (gr. Loukâs) é o companheiro de Paulo a quem Colossenses 4,14 chama «o médico amado». A tradição atribui-lhe o Evangelho segundo Lucas e os Atos dos Apóstolos. O epíteto «médico de homens e de almas» costura o ofício textual com a piedade: tratar o corpo sem abandonar a alma. Não é um dos Doze.",
+      "curiosities": "O pedido chegou «lucas medico de homens e de almas» (sem acento em médico). A ficha honra o pedido e ancora São Lucas / Lucas Evangelista. O boi alado é símbolo iconográfico, não mascote do lab.",
+      "historyEn": "Luke (Gk. Loukâs) is Paul’s companion whom Colossians 4:14 calls “the beloved physician.” Tradition attributes to him the Gospel of Luke and Acts. The epithet “physician of men and of souls” stitches the textual craft to piety: treat the body without abandoning the soul. He is not one of the Twelve.",
+      "curiositiesEn": "The request arrived as “lucas medico de homens e de almas” (unaccented médico). The sheet honors the request and anchors Saint Luke / Luke the Evangelist. The winged ox is iconography, not a lab mascot.",
+      "historyEs": "Lucas (gr. Loukâs) es el compañero de Pablo a quien Colosenses 4,14 llama «el médico amado». La tradición le atribuye el Evangelio según Lucas y los Hechos. El epíteto «médico de hombres y de almas» cose el oficio textual con la piedad: tratar el cuerpo sin abandonar el alma. No es uno de los Doce.",
+      "curiositiesEs": "El pedido llegó como «lucas medico de homens e de almas» (médico sin acento). La ficha honra el pedido y ancla San Lucas / Lucas el Evangelista. El buey alado es iconografía, no mascota del lab."
     },
     {
       "id": "os-doze-apostolos",

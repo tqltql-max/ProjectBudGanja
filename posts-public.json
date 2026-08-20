@@ -2204,6 +2204,25 @@
     "seriesLabel": "Steve Jobs · pessoa"
   },
   {
+    "title": "Inspeção: Lucas — médico de homens e de almas",
+    "titleEn": "Inspection: Luke — physician of men and of souls",
+    "titleEs": "Inspección: Lucas — médico de hombres y de almas",
+    "excerpt": "Pessoas: Lucas Evangelista — médico amado (Col 4,14) e epíteto «de almas» (tradição); fora dos Doze; corpo e alma sem partir o templo; Faça o melhor!",
+    "excerptEn": "People: Luke the Evangelist — beloved physician (Col 4:14) and “of souls” epithet (tradition); not one of the Twelve; body and soul without splitting the temple; Do your best!",
+    "excerptEs": "Personas: Lucas el Evangelista — médico amado (Col 4,14) y epíteto «de almas» (tradición); fuera de los Doce; cuerpo y alma sin partir el templo; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-figura-lucas-evangelista",
+    "url": "/posts/post-inspecao-figura-lucas-evangelista.html",
+    "date": "2026-08-20T23:15:00.000Z",
+    "filename": "posts/post-inspecao-figura-lucas-evangelista.html",
+    "coverImage": "/imagens/inspecoes/lucas-evangelista-cover.jpg",
+    "category": "inspecao",
+    "series": "pessoas-historia",
+    "seriesOrder": 32,
+    "seriesLabel": "Lucas Evangelista · pessoa"
+  },
+  {
     "title": "Inspeção: Buguei — do inseto ao «deu ruim» e Faça o melhor!",
     "titleEn": "Inspection: Buguei — from insect to “it went bad” and Do your best!",
     "titleEs": "Inspección: Buguei — del insecto al «salió mal» y ¡Haz lo mejor!",

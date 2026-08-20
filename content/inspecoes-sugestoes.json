@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T22:39:07.827Z",
+  "updatedAt": "2026-08-20T22:59:04.120Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6467,7 +6467,7 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html",
         "/posts/post-inspecao-palavra-idolo.html"
       ],
-      "notes": "Cap. 18 Expressões — mesa dos Doze; ficha ≠ santoral."
+      "notes": "Cap. 17 Expressões — mesa dos Doze; ficha ≠ santoral."
     },
     {
       "id": "palavra-mocambique",
@@ -6510,6 +6510,29 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 144 — cluster Moçambique / isqueiro BIC / tónos / esqueiro biq."
+    },
+    {
+      "id": "figura-lucas-evangelista",
+      "title": "Lucas — médico de homens e de almas",
+      "titleEn": "Luke — physician of men and of souls",
+      "titleEs": "Lucas — médico de hombres y de almas",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas: Lucas Evangelista; médico amado (Col 4,14) × «de almas» (tradição); fora dos Doze; corpo e alma sem partir o templo; Faça o melhor!",
+      "whyEn": "People: Luke the Evangelist; beloved physician (Col 4:14) × “of souls” (tradition); not of the Twelve; body and soul without splitting the temple; Do your best!",
+      "whyEs": "Personas: Lucas el Evangelista; médico amado (Col 4,14) × «de almas» (tradición); fuera de los Doce; cuerpo y alma sin partir el templo; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-figura-lucas-evangelista",
+      "doneHref": "/posts/post-inspecao-figura-lucas-evangelista.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Lucas_o_Evangelista",
+        "/posts/post-inspecao-expressao-os-doze-apostolos.html",
+        "/posts/post-inspecao-expressao-templo-de-cristo-corpo-e-alma.html",
+        "/posts/post-inspecao-palavra-alma.html",
+        "/posts/post-inspecao-padre-ticao.html"
+      ],
+      "notes": "Cap. 32 Pessoas — Lucas ≠ Doze; «de almas» não é versículo."
     }
   ]
 }

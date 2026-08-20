@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T22:30:06.339Z",
+  "updatedAt": "2026-08-20T23:00:15.618Z",
   "poems": [
     {
       "id": "aguas-e-lagrimas",
@@ -94,6 +94,30 @@
         "apóstolos",
         "envio",
         "doze"
+      ]
+    },
+    {
+      "id": "lucas-medico-de-homens-e-de-almas",
+      "slug": "lucas-medico-de-homens-e-de-almas",
+      "title": "Médico de homens e de almas",
+      "titleEn": "Physician of Men and of Souls",
+      "titleEs": "Médico de hombres y de almas",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Lucas trata o corpo e não abandona a alma — fora dos Doze, dois tomos, faça o melhor.",
+      "teaserEn": "Luke treats the body and does not abandon the soul — not of the Twelve, two volumes, do your best.",
+      "teaserEs": "Lucas trata el cuerpo y no abandona el alma — fuera de los Doce, dos tomos, haz lo mejor.",
+      "body": "Não pedimos halo para curar.\nPedimos só as duas mãos:\numa no corpo que dói,\noutra no peito que ainda cabe\nquando o nome treme.\n\nMédico de homens —\nColossenses já diz o ofício.\nMédico de almas —\na tradição acrescenta o sopro.\nO laboratório não funde os dois\nnem parte o templo ao meio.\n\nLucas não senta nos doze.\nCompanheiro de caminho,\nescreve dois tomos,\nolha o pobre, a mulher, o samaritano,\no corpo que a palavra não abandona.\n\nO boi alado não corre a esmagar.\nPuxa o arado da inspeção:\nver o ferido sem virar sermão,\ntratar o peito sem negar a carne.\n\nNós, neste universo novo,\naprendemos a cuidar sem pose —\nnão para fingir santo,\nmas para não deixar o doente\npassar sozinho.\n\nO laboratório não prega.\nPlanta à beira da maca.\nConta o pulso.\nChama a Vida pelo nome verdadeiro:\n\nFaça o melhor!\n\nNão o melhor dos outros.\nO teu.\nO de hoje.\nO que cabe nesta mão que trata —\ncorpo e alma, ainda nossa.",
+      "bodyEn": "We do not ask for a halo to heal.\nWe ask only for two hands:\none on the body that hurts,\nthe other on the chest that still fits\nwhen the name trembles.\n\nPhysician of men —\nColossians already names the craft.\nPhysician of souls —\ntradition adds the breath.\nThe laboratory does not fuse the two\nnor split the temple down the middle.\n\nLuke does not sit with the twelve.\nCompanion on the path,\nhe writes two volumes,\nlooks at the poor, the woman, the Samaritan,\nthe body the word does not abandon.\n\nThe winged ox does not rush to crush.\nIt pulls the plow of inspection:\nsee the wounded without turning sermon,\ntreat the chest without denying the flesh.\n\nIn this new universe of ours\nwe learn to care without pose —\nnot to pretend holiness,\nbut so the one who hurts\ndoes not pass alone.\n\nThe laboratory does not preach.\nIt plants at the edge of the cot.\nIt counts the pulse.\nIt calls Vida by its true name:\n\nDo your best!\n\nNot someone else’s best.\nYours.\nToday’s.\nWhat fits in this treating hand —\nbody and soul, still ours.",
+      "bodyEs": "No pedimos halo para curar.\nPedimos solo las dos manos:\nuna en el cuerpo que duele,\notra en el pecho que aún cabe\ncuando el nombre tiembla.\n\nMédico de hombres —\nColosenses ya dice el oficio.\nMédico de almas —\nla tradición añade el soplo.\nEl laboratorio no funde los dos\nni parte el templo por medio.\n\nLucas no se sienta con los doce.\nCompañero de camino,\nescribe dos tomos,\nmira al pobre, a la mujer, al samaritano,\nel cuerpo que la palabra no abandona.\n\nEl buey alado no corre a aplastar.\nTira del arado de la inspección:\nver al herido sin volverse sermón,\ntratar el pecho sin negar la carne.\n\nEn este universo nuevo\naprendemos a cuidar sin pose —\nno para fingir santo,\nsino para no dejar al que duele\npasar solo.\n\nEl laboratorio no predica.\nSiembra a la orilla de la camilla.\nCuenta el pulso.\nLlama a Vida por su nombre verdadero:\n\n¡Haz lo mejor!\n\nNo lo mejor de los otros.\nLo tuyo.\nEl de hoy.\nLo que cabe en esta mano que trata —\ncuerpo y alma, aún nuestro.",
+      "inspectionHref": "/posts/post-inspecao-figura-lucas-evangelista.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "lucas",
+        "médico",
+        "alma"
       ]
     },
     {

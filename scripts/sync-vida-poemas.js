@@ -94,6 +94,11 @@ const {
   poemDozeApostolosEn,
   poemDozeApostolosEs
 } = require('../lib/doze-apostolos-inspecao-post.js');
+const {
+  poemLucasPt,
+  poemLucasEn,
+  poemLucasEs
+} = require('../lib/lucas-evangelista-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -185,6 +190,27 @@ const doc = {
       bodyEs: poemDozeApostolosEs(),
       inspectionHref: '/posts/post-inspecao-expressao-os-doze-apostolos.html',
       tags: ['poesia', 'vida', 'apóstolos', 'envio', 'doze']
+    },
+    {
+      id: 'lucas-medico-de-homens-e-de-almas',
+      slug: 'lucas-medico-de-homens-e-de-almas',
+      title: 'Médico de homens e de almas',
+      titleEn: 'Physician of Men and of Souls',
+      titleEs: 'Médico de hombres y de almas',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Lucas trata o corpo e não abandona a alma — fora dos Doze, dois tomos, faça o melhor.',
+      teaserEn:
+        'Luke treats the body and does not abandon the soul — not of the Twelve, two volumes, do your best.',
+      teaserEs:
+        'Lucas trata el cuerpo y no abandona el alma — fuera de los Doce, dos tomos, haz lo mejor.',
+      body: poemLucasPt(),
+      bodyEn: poemLucasEn(),
+      bodyEs: poemLucasEs(),
+      inspectionHref: '/posts/post-inspecao-figura-lucas-evangelista.html',
+      tags: ['poesia', 'vida', 'lucas', 'médico', 'alma']
     },
     {
       id: 'bom-dia-inverno',
