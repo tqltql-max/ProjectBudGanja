@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T02:33:51.864Z",
+  "updatedAt": "2026-08-20T03:58:57.490Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3906,6 +3906,16 @@
       "curiositiesEn": "To name, inspect and care: the sheet reads changes in time (Latin → BR → digital) without museum purism.",
       "historyEs": "Lengua portuguesa nombra el idioma nacido del latín tardío en Gallaecia y Portugal, luego pluralizado en Brasil y África. El Inspector la trata como medio de originalidad.",
       "curiositiesEs": "Nombrar, inspeccionar y cuidar: la ficha lee alteraciones en el tiempo (latín → BR → digital) sin purismo de museo."
+    },
+    {
+      "id": "mequetrefe",
+      "word": "Mequetrefe",
+      "simple": "Porta Palavra #5 (Gregorio): mequetrefe e todas as peças do vídeo nesta página — jururu, pinimba, cooper, lorota, brechó.",
+      "simpleEn": "Porta Palavra #5 (Gregorio): mequetrefe and every word from the video on this page.",
+      "simpleEs": "Porta Palavra #5 (Gregorio): mequetrefe y todas las piezas del vídeo en esta página.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mequetrefe.html"
     },
     {
       "id": "lista-f",
