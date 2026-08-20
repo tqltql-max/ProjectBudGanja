@@ -147,6 +147,16 @@ async function main() {
         console.warn('Aviso: ponto de inserção do glossário não encontrado');
       }
     }
+    gloss = fs.readFileSync(glossPath, 'utf8');
+    if (gloss.includes('genial: {') && !gloss.includes('geneo: {')) {
+      const aliases =
+        '    geneo: { gloss: "Lapso oral de gênio / génio da lâmpada — ver ficha genial (≠ gêmeos).", href: "/posts/post-inspecao-palavra-genial.html", en: "slip of génio", es: "lapsus de genio" },\n' +
+        '    "gênio da lâmpada": { gloss: "Génio do conto de Aladim — desejo sem rasto; ver genial e abracadabra; ≠ gêmeos.", href: "/posts/post-inspecao-palavra-genial.html", en: "genie of the lamp", es: "genio de la lámpara" },\n' +
+        '    "genio da lampada": { gloss: "Grafia sem acento do génio da lâmpada — ver genial.", href: "/posts/post-inspecao-palavra-genial.html", en: "genie of the lamp", es: "genio de la lámpara" },\n';
+      gloss = gloss.replace(/(genial:\s*\{[\s\S]*?zu:\s*"[^"]*"\s*\},?\r?\n)/, '$1' + aliases);
+      fs.writeFileSync(glossPath, gloss);
+      console.log('Glossário actualizado (aliases geneo / lâmpada)');
+    }
   }
 
   try {
