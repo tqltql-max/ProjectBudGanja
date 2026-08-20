@@ -1085,7 +1085,7 @@
     "guiaPalavras": {
       "eyebrow": "Library · Guides",
       "title": "Words Guide",
-      "subtitle": "Simple meanings — site titles and inspected lexicon.",
+      "subtitle": "Simple meanings, history and curiosities — site titles and inspected lexicon.",
       "loading": "Loading words…",
       "loadError": "Could not load the glossary.",
       "searchLabel": "Search",
@@ -1101,6 +1101,9 @@
       "openPage": "Open page",
       "linkLibrary": "Library",
       "linkInspections": "Word inspections",
+      "historyLabel": "History",
+      "curiositiesLabel": "Curiosities",
+      "moreLabel": "History and curiosities",
       "docTitle": "Words Guide | Inspetor BudGanja"
     },
     "inverno": {

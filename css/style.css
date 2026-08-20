@@ -13581,6 +13581,50 @@ a.palavras-duplo-word:focus-visible {
     color: rgba(244, 237, 216, 0.88);
 }
 
+.guia-palavras-more {
+    margin: 0.15rem 0 0;
+    padding: 0.15rem 0 0;
+}
+
+.guia-palavras-more summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #dfc262;
+}
+
+.guia-palavras-more summary::-webkit-details-marker {
+    display: none;
+}
+
+.guia-palavras-more summary::before {
+    content: '▸ ';
+    display: inline-block;
+    transition: transform 0.12s ease;
+}
+
+.guia-palavras-more[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.guia-palavras-history,
+.guia-palavras-curiosities {
+    margin: 0.45rem 0 0;
+    line-height: 1.45;
+    font-size: 0.88rem;
+    color: rgba(244, 237, 216, 0.82);
+}
+
+.guia-palavras-extra-label {
+    display: inline;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(223, 194, 98, 0.85);
+    font-weight: 700;
+}
+
 .guia-palavras-actions {
     margin: 0.15rem 0 0;
     padding-top: 0.35rem;

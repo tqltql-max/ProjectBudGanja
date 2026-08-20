@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T02:20:30.483Z",
+  "updatedAt": "2026-08-20T02:33:51.858Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5965,6 +5965,28 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. Expressões — pedir bença ≠ dar Deus abençoe; tipografia amem → amém."
+    },
+    {
+      "id": "palavra-vassoura",
+      "title": "Vassoura — varrer, cabo e o conto que não é receita",
+      "titleEn": "Vassoura — sweeping, the handle, and the tale that is not a recipe",
+      "titleEs": "Vassoura — barrer, el mango y el cuento que no es receta",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: vassoura (versōria) — utensílio; folclore XIV sem receita; cacau; Faça o melhor!",
+      "whyEn": "Words: vassoura (versōria) — broom; XIV folklore, no recipe; cacao; Do your best!",
+      "whyEs": "Palabras: vassoura (versōria) — escoba; folclore XIV sin receta; cacao; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-vassoura",
+      "doneHref": "/posts/post-inspecao-palavra-vassoura.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/vassoura",
+        "/posts/post-inspecao-palavra-esfregar.html",
+        "/biblioteca/unifesp/livro-xiv.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 127 — história e curiosidades; tropano = documentar ≠ receitar."
     }
   ]
 }

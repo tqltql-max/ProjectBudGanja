@@ -1087,7 +1087,7 @@ window.__I18N_LOCALES__ = {
       "guiaPalavras": {
         "eyebrow": "Library · Guides",
         "title": "Words Guide",
-        "subtitle": "Simple meanings — site titles and inspected lexicon.",
+        "subtitle": "Simple meanings, history and curiosities — site titles and inspected lexicon.",
         "loading": "Loading words…",
         "loadError": "Could not load the glossary.",
         "searchLabel": "Search",
@@ -1103,6 +1103,9 @@ window.__I18N_LOCALES__ = {
         "openPage": "Open page",
         "linkLibrary": "Library",
         "linkInspections": "Word inspections",
+        "historyLabel": "History",
+        "curiositiesLabel": "Curiosities",
+        "moreLabel": "History and curiosities",
         "docTitle": "Words Guide | Inspetor BudGanja"
       },
       "inverno": {
@@ -2255,7 +2258,7 @@ window.__I18N_LOCALES__ = {
       "guiaPalavras": {
         "eyebrow": "Biblioteca · Guías",
         "title": "Guía de Palabras",
-        "subtitle": "Significados simples — títulos del sitio y léxico inspeccionado.",
+        "subtitle": "Significados simples, historia y curiosidades — títulos del sitio y léxico inspeccionado.",
         "loading": "Cargando palabras…",
         "loadError": "No se pudo cargar el glosario.",
         "searchLabel": "Buscar",
@@ -2271,6 +2274,9 @@ window.__I18N_LOCALES__ = {
         "openPage": "Abrir página",
         "linkLibrary": "Biblioteca",
         "linkInspections": "Inspecciones de Palabras",
+        "historyLabel": "Historia",
+        "curiositiesLabel": "Curiosidades",
+        "moreLabel": "Historia y curiosidades",
         "docTitle": "Guía de Palabras | Inspetor BudGanja"
       },
       "inverno": {
@@ -3423,7 +3429,7 @@ window.__I18N_LOCALES__ = {
       "guiaPalavras": {
         "eyebrow": "Biblioteca · Guias",
         "title": "Guia de Palavras",
-        "subtitle": "Significados simples — títulos do site e léxico inspecionado.",
+        "subtitle": "Significados simples, história e curiosidades — títulos do site e léxico inspecionado.",
         "loading": "Carregando palavras…",
         "loadError": "Não foi possível carregar o glossário.",
         "searchLabel": "Buscar",
@@ -3439,6 +3445,9 @@ window.__I18N_LOCALES__ = {
         "openPage": "Abrir página",
         "linkLibrary": "Biblioteca",
         "linkInspections": "Inspeções de Palavras",
+        "historyLabel": "História",
+        "curiositiesLabel": "Curiosidades",
+        "moreLabel": "História e curiosidades",
         "docTitle": "Guia de Palavras | Inspetor BudGanja"
       },
       "inverno": {

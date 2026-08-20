@@ -57,7 +57,19 @@
       if (activeGroup !== 'all' && item.group !== activeGroup) return false;
       if (!q) return true;
       var hay = normalize(
-        [item.word, item.simple, item.simpleEn, item.simpleEs, item.id].join(' ')
+        [
+          item.word,
+          item.simple,
+          item.simpleEn,
+          item.simpleEs,
+          item.history,
+          item.historyEn,
+          item.historyEs,
+          item.curiosities,
+          item.curiositiesEn,
+          item.curiositiesEs,
+          item.id
+        ].join(' ')
       );
       return hay.indexOf(q) >= 0;
     });
@@ -142,6 +154,31 @@
         .map(function (item) {
           var word = escapeHtml(item.word || item.id);
           var meaning = escapeHtml(localizedField(item, 'simple'));
+          var history = escapeHtml(localizedField(item, 'history'));
+          var curiosities = escapeHtml(localizedField(item, 'curiosities'));
+          var extra = '';
+          if (history || curiosities) {
+            extra =
+              '<details class="guia-palavras-more">' +
+              '<summary>' +
+              escapeHtml(i18n('pages.guiaPalavras.moreLabel', 'História e curiosidades')) +
+              '</summary>' +
+              (history
+                ? '<p class="guia-palavras-history"><span class="guia-palavras-extra-label">' +
+                  escapeHtml(i18n('pages.guiaPalavras.historyLabel', 'História')) +
+                  '</span> ' +
+                  history +
+                  '</p>'
+                : '') +
+              (curiosities
+                ? '<p class="guia-palavras-curiosities"><span class="guia-palavras-extra-label">' +
+                  escapeHtml(i18n('pages.guiaPalavras.curiositiesLabel', 'Curiosidades')) +
+                  '</span> ' +
+                  curiosities +
+                  '</p>'
+                : '') +
+              '</details>';
+          }
           var group = escapeHtml(groupLabel(item.group));
           var titleBadge = item.fromTitle
             ? '<span class="guia-palavras-badge">' +
@@ -180,6 +217,7 @@
             '<p class="guia-palavras-simple">' +
             meaning +
             '</p>' +
+            extra +
             (link ? '<p class="guia-palavras-actions">' + link + '</p>' : '') +
             '</li>'
           );

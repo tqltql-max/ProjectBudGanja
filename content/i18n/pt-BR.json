@@ -1085,7 +1085,7 @@
     "guiaPalavras": {
       "eyebrow": "Biblioteca · Guias",
       "title": "Guia de Palavras",
-      "subtitle": "Significados simples — títulos do site e léxico inspecionado.",
+      "subtitle": "Significados simples, história e curiosidades — títulos do site e léxico inspecionado.",
       "loading": "Carregando palavras…",
       "loadError": "Não foi possível carregar o glossário.",
       "searchLabel": "Buscar",
@@ -1101,6 +1101,9 @@
       "openPage": "Abrir página",
       "linkLibrary": "Biblioteca",
       "linkInspections": "Inspeções de Palavras",
+      "historyLabel": "História",
+      "curiositiesLabel": "Curiosidades",
+      "moreLabel": "História e curiosidades",
       "docTitle": "Guia de Palavras | Inspetor BudGanja"
     },
     "inverno": {
