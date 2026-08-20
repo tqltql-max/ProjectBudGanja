@@ -946,6 +946,15 @@
     if (!state.toolbar) {
       state.toolbar = buildToolbar();
       state.toolbar.addEventListener('click', onToolbarClick);
+      var actions = state.toolbar.querySelector('.learn-toolbar-actions');
+      if (actions) {
+        actions.addEventListener('wheel', function (e) {
+          e.stopPropagation();
+        }, { passive: true });
+        actions.addEventListener('touchmove', function (e) {
+          e.stopPropagation();
+        }, { passive: true });
+      }
     }
     if (!state.toolbar.isConnected) placeToolbar(root);
 

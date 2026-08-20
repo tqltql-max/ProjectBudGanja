@@ -717,9 +717,17 @@
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
 
+    menu.addEventListener('wheel', function (e) {
+      e.stopPropagation();
+    }, { passive: true });
+    menu.addEventListener('touchmove', function (e) {
+      e.stopPropagation();
+    }, { passive: true });
+
     menu.querySelectorAll('[data-lang]').forEach(function (opt) {
       opt.addEventListener('click', function (e) {
         e.preventDefault();
+        e.stopPropagation();
         setLocale(opt.getAttribute('data-lang'));
         closeMenu();
       });

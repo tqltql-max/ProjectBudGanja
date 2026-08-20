@@ -21,15 +21,10 @@ body[data-page="vida"] .learn-toolbar {
     margin: 0 0 1.25rem;
 }
 
-body[data-page="vida"] .learn-toolbar-actions {
-    max-height: 4.6rem;
-    overflow-y: auto;
-}
-
 .learn-toolbar-row {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 0.65rem 1rem;
 }
@@ -42,10 +37,31 @@ body[data-page="vida"] .learn-toolbar-actions {
 }
 
 .learn-toolbar-actions {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     gap: 0.28rem;
+    width: 100%;
     max-width: 100%;
+    min-height: 0;
+    max-height: min(42vh, 16rem);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(223, 194, 98, 0.55) rgba(0, 0, 0, 0.22);
+    padding: 0.05rem 0.2rem 0.15rem 0;
+}
+
+.learn-toolbar-actions::-webkit-scrollbar {
+    width: 8px;
+}
+
+.learn-toolbar-actions::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: rgba(223, 194, 98, 0.5);
 }
 
 .learn-toolbar-btn {

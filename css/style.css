@@ -1012,9 +1012,12 @@ img, video, svg {
 }
 
 .mobile-menu-util-lang .lang-switcher-menu {
-    left: 0;
-    right: 0;
+    position: relative;
+    top: 8px;
+    left: auto;
+    right: auto;
     min-width: 0;
+    max-height: min(45vh, 16rem);
 }
 
 .lang-switcher-btn {
@@ -1029,6 +1032,7 @@ img, video, svg {
     top: calc(100% + 8px);
     right: 0;
     min-width: 148px;
+    max-height: min(70vh, 22rem);
     margin: 0;
     padding: 6px;
     list-style: none;
@@ -1037,6 +1041,22 @@ img, video, svg {
     background: var(--color-surface, rgba(18, 24, 18, 0.96));
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
     z-index: calc(var(--z-nav-dropdown, 1200) + 2);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(143, 181, 128, 0.5) transparent;
+}
+
+.lang-switcher-menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.lang-switcher-menu::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: rgba(143, 181, 128, 0.45);
 }
 
 .lang-switcher-menu[hidden] {
