@@ -59,13 +59,13 @@ const MIME = {
 
 const MAX_BODY_BYTES = 2 * 1024 * 1024;
 const MAX_UPLOAD_BYTES = 6 * 1024 * 1024;
+const MAX_ICONS_BODY_BYTES = 12 * 1024 * 1024; // PNG até 8 MB em data-URL JSON
 const MAX_CULTIVO_MEDIA_BODY_BYTES = 40 * 1024 * 1024;
 const MAX_CULTIVO_STATE_BODY_BYTES = 8 * 1024 * 1024;
 
 function bodyLimitForApi(url) {
-  if (url === '/api/upload' || url === '/api/admin/update-icons') {
-    return MAX_UPLOAD_BYTES;
-  }
+  if (url === '/api/admin/update-icons') return MAX_ICONS_BODY_BYTES;
+  if (url === '/api/upload') return MAX_UPLOAD_BYTES;
   if (url === '/api/cultivo/photo') return MAX_CULTIVO_MEDIA_BODY_BYTES;
   if (url === '/api/cultivo') return MAX_CULTIVO_STATE_BODY_BYTES;
   return MAX_BODY_BYTES;
