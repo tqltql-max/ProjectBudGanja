@@ -103,7 +103,7 @@
     "backTo": "← Voltar para {label}",
     "publishedOn": "Publicado em {date}",
     "categoryInspection": "Inspeções",
-    "categoryEquipment": "Equipamentos",
+    "categoryEquipment": "Objetos",
     "categoryResearch": "Pesquisas"
   },
   "nav": {
@@ -113,7 +113,7 @@
     "research": "Pesquisas",
     "inspections": "Inspeções",
     "academicExtension": "Extensão acadêmica",
-    "equipment": "Equipamentos",
+    "equipment": "Objetos",
     "calculators": "Ferramentas",
     "luxMeter": "Luxímetro",
     "videos": "Vídeos",
@@ -154,7 +154,7 @@
     "quickEquipmentTip": "Clonadoras e guias de montagem",
     "quickCalculatorsTip": "VPD, pH, EC, luxímetro e mais",
     "quickVideosTip": "Últimos vídeos do canal",
-    "quickToolsTip": "Ferramentas e equipamentos",
+    "quickToolsTip": "Ferramentas e objectos",
     "quickGiveawaysTip": "Promoções ativas do laboratório",
     "quickGrowTip": "Diário de pesquisas e registos de cultivo",
     "quickCommunityTip": "Feed de fotos do diário de pesquisas",
@@ -223,13 +223,18 @@
       "description": "Relatórios de campo e laboratório."
     },
     "equipamentos-menu": {
-      "label": "Equipamentos",
-      "tileLabel": "Equipamentos"
+      "label": "Objetos",
+      "tileLabel": "Objetos"
     },
     "equipamentos": {
-      "label": "Clonadoras caseiras",
+      "label": "Todos os objectos",
       "tileLabel": "Índice",
-      "description": "Guias de montagem documentados."
+      "description": "Catálogo de objectos do laboratório."
+    },
+    "objetos": {
+      "label": "Todos os objectos",
+      "tileLabel": "Índice",
+      "description": "Catálogo de objectos do laboratório."
     },
     "calculadoras": {
       "label": "Ferramentas",
@@ -437,9 +442,9 @@
       "cardInspectionsTitle": "Inspeções",
       "cardInspectionsText": "Relatórios técnicos com método verificável — guia, canais e cursos.",
       "cardInspectionsBtn": "Ver Inspeções",
-      "cardEquipTitle": "Equipamentos",
-      "cardEquipText": "Montagem caseira com peças de mercado — manuais completos de clonadora e hidrocloradora.",
-      "cardEquipBtn": "Ver Equipamentos",
+      "cardEquipTitle": "Objetos",
+      "cardEquipText": "Catálogo de objectos do laboratório — clonadoras, fichas de coisas e inspeções de verificação.",
+      "cardEquipBtn": "Ver Objetos",
       "cardCalcTitle": "Ferramentas",
       "cardCalcText": "Utilitários para otimizar o cultivo: VPD, DLI, EC, luxímetro e muito mais.",
       "cardCalcBtn": "Ver Ferramentas",
@@ -466,7 +471,7 @@
       "latestPlantas": "Plantas →",
       "latestUnifesp": "UNIFESP →",
       "youtubeTitle": "Acompanhe no YouTube",
-      "youtubeText": "Inspeções, tutoriais de equipamentos e sorteios ao vivo no canal oficial do laboratório.",
+      "youtubeText": "Inspeções, tutoriais de objectos e sorteios ao vivo no canal oficial do laboratório.",
       "youtubeSubscribe": "Inscrever-se no canal",
       "youtubeGiveaways": "Ver sorteios",
       "aboutTitle": "Sobre o Inspetor BudGanja",
@@ -491,7 +496,7 @@
       "giveawayOn": "Sorteio em",
       "latestEmpty": "Novas publicações em breve.",
       "catInspection": "Inspeção",
-      "catEquipment": "Equipamento",
+      "catEquipment": "Objecto",
       "catResearch": "Pesquisa",
       "cardCultivoTip": "Documente o cultivo de qualquer planta — diário, roteiro e plano.",
       "cardPlantasTip": "Fichas de espécies usadas na medicina popular brasileira.",
@@ -500,7 +505,7 @@
       "cardCalcTip": "Utilitários para ambiente de cultivo: VPD, DLI, EC, luxímetro e mais.",
       "cardResearchTip": "Pesquisas do laboratório e estudos submetidos pela comunidade e aprovados para publicação.",
       "cardInspectionsTip": "Relatórios de inspeção, verificações de campo e formação.",
-      "cardEquipTip": "Equipamentos documentados com materiais acessíveis e manuais completos.",
+      "cardEquipTip": "Catálogo de objectos — clonadoras, fichas de coisas e inspeções de verificação.",
       "cardCommunityTip": "Partilhe fotos do diário e peça ajuda à comunidade.",
       "cardVideosTip": "Inspeções, tutoriais e novidades do canal no YouTube.",
       "cardGamesTip": "Zangado e Paulinho o LOKO — página só de jogos.",
@@ -728,7 +733,7 @@
     "inspections": {
       "eyebrow": "Biblioteca",
       "title": "Inspeções",
-      "subtitle": "Relatórios técnicos com método verificável — legado, pessoas, canais, cursos, artigos, plantas medicinais, frutos, fungos, produtos nocivos (caseína, glúten, açúcar…), palavras, divulgação, artes e equipamentos.",
+      "subtitle": "Relatórios técnicos com método verificável — legado, pessoas, canais, cursos, artigos, plantas medicinais, frutos, fungos, produtos nocivos (caseína, glúten, açúcar…), palavras, divulgação, artes e objectos.",
       "loading": "Carregando…",
       "loadMore": "Carregar mais",
       "empty": "Nenhuma inspeção publicada ainda.",
@@ -748,6 +753,7 @@
       "chipPeopleHistory": "Pessoas",
       "chipOutreach": "Divulgação",
       "chipArts": "Artes",
+      "chipObjects": "Objetos",
       "chipGames": "Cadernos de jogo",
       "chipVida": "Vida",
       "chipExpressions": "Expressões",
@@ -845,9 +851,12 @@
     },
     "equipment": {
       "eyebrow": "Laboratório",
-      "title": "Equipamentos",
-      "subtitle": "Clonadoras caseiras documentadas — escolha conforme orçamento e quantidade de estacas. Materiais de loja comum (pet shop, jardinagem ou construção leve).",
-      "docTitle": "Equipamentos | Inspetor BudGanja",
+      "title": "Objetos",
+      "subtitle": "Catálogo de objectos do laboratório — o que fica diante para ser inspecionado. Clonadoras documentadas e fichas de coisas já no projecto. Léxico: <a href=\"/posts/post-inspecao-palavra-objetos.html\">objetos</a>.",
+      "docTitle": "Objetos | Inspetor BudGanja",
+      "catalogLab": "Ofício do laboratório",
+      "catalogSheets": "Fichas no projecto",
+      "catalogSheetsLead": "Objectos já inspecionados noutros eixos — Palavras, Artes, verificação. Aqui entram no catálogo como coisa.",
       "cloner6Title": "Clonadora de 6 estacas",
       "cloner6Body": "Pote de sorvete, bucha de louça e bombinha de ar — bolhas na água, <strong>24 h por dia</strong> até enraizar. Projeto de <strong>baixo custo</strong> e montagem fácil.",
       "cloner6Cta": "Ver guia de montagem",
@@ -856,7 +865,7 @@
       "cloner12Body": "Balde, bomba submersa e kit de microaspersores — água borrifada nas raízes, <strong>24 h por dia</strong> até o transplante. Projeto de <strong>custo moderado a alto</strong>.",
       "cloner12Cta": "Ver guia de montagem",
       "cloner12Alt": "Clonadora caseira de 12 estacas com balde e aspersores",
-      "publications": "Publicações de Equipamentos",
+      "publications": "Publicações de objectos",
       "loading": "Carregando publicações..."
     },
     "cultivo": {

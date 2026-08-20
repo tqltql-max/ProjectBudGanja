@@ -7,7 +7,8 @@
     'guia/cultivo-basico.html': [{ label: 'Início', href: HOME }, { label: 'Guia de Cultivo' }],
     'biblioteca/pesquisas/index.html': [{ label: 'Início', href: HOME }, { label: 'Pesquisas' }],
     'biblioteca/inspecoes/index.html': [{ label: 'Início', href: HOME }, { label: 'Inspeções' }],
-    'equipamentos/index.html': [{ label: 'Início', href: HOME }, { label: 'Equipamentos' }],
+    'objetos/index.html': [{ label: 'Início', href: HOME }, { label: 'Objetos' }],
+    'equipamentos/index.html': [{ label: 'Início', href: HOME }, { label: 'Objetos', href: '/objetos/' }],
     'index.html': [{ label: 'Início', href: HOME }, { label: 'Laboratório', href: '/laboratorio/' }],
     'laboratorio/index.html': [{ label: 'Início', href: HOME }, { label: 'Laboratório' }],
     'inverno/index.html': [{ label: 'Bom dia, Inverno' }],
@@ -24,17 +25,17 @@
     'info/sobre.html': [{ label: 'Início', href: HOME }, { label: 'Sobre' }],
     'info/contato.html': [{ label: 'Início', href: HOME }, { label: 'Contato' }],
     'info/privacidade.html': [{ label: 'Início', href: HOME }, { label: 'Privacidade' }],
-    'equipamentos/clonadora-6-estacas.html': [{ label: 'Início', href: HOME }, { label: 'Equipamentos', href: '/equipamentos/' }, { label: 'Clonadora de 6 estacas' }],
-    'equipamentos/clonadora-12-estacas.html': [{ label: 'Início', href: HOME }, { label: 'Equipamentos', href: '/equipamentos/' }, { label: 'Clonadora de 12 estacas' }],
-    'equipamentos/manual-clonadora.html': [{ label: 'Início', href: HOME }, { label: 'Equipamentos', href: '/equipamentos/' }, { label: 'Clonadoras' }],
-    'equipamentos/manual-hidrocloradora.html': [{ label: 'Início', href: HOME }, { label: 'Equipamentos', href: '/equipamentos/' }, { label: 'Clonadora de 12 estacas', href: '/equipamentos/clonadora-12-estacas.html' }],
+    'equipamentos/clonadora-6-estacas.html': [{ label: 'Início', href: HOME }, { label: 'Objetos', href: '/objetos/' }, { label: 'Clonadora de 6 estacas' }],
+    'equipamentos/clonadora-12-estacas.html': [{ label: 'Início', href: HOME }, { label: 'Objetos', href: '/objetos/' }, { label: 'Clonadora de 12 estacas' }],
+    'equipamentos/manual-clonadora.html': [{ label: 'Início', href: HOME }, { label: 'Objetos', href: '/objetos/' }, { label: 'Clonadoras' }],
+    'equipamentos/manual-hidrocloradora.html': [{ label: 'Início', href: HOME }, { label: 'Objetos', href: '/objetos/' }, { label: 'Clonadora de 12 estacas', href: '/equipamentos/clonadora-12-estacas.html' }],
     'biblioteca/pesquisas/substratos.html': [{ label: 'Início', href: HOME }, { label: 'Pesquisas', href: '/biblioteca/pesquisas/' }, { label: 'Substratos' }]
   };
 
   var POST_PARENT = {
     pesquisa: { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
     inspecao: { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
-    equipamento: { label: 'Equipamentos', href: '/equipamentos/' }
+    equipamento: { label: 'Objetos', href: '/objetos/' }
   };
 
   function currentPage() {
@@ -78,6 +79,7 @@
       'Pesquisas': 'nav.research',
       'Inspeções': 'nav.inspections',
       'Equipamentos': 'nav.equipment',
+      'Objetos': 'nav.equipment',
       'Calculadoras': 'nav.calculators',
       'Ferramentas': 'nav.calculators',
       'Sorteios': 'nav.giveaways',

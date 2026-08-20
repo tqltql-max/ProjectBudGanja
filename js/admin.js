@@ -215,13 +215,13 @@ function insertAtCursor(textarea, text) {
 }
 
 function listingUrl(category) {
-  if (category === 'equipamento') return '/equipamentos/';
+  if (category === 'equipamento') return '/objetos/';
   if (category === 'inspecao') return '/biblioteca/inspecoes/';
   return '/biblioteca/pesquisas/';
 }
 
 function categoryLabel(category) {
-  if (category === 'equipamento') return 'Equipamentos';
+  if (category === 'equipamento') return 'Objetos';
   if (category === 'inspecao') return 'Inspeções';
   return 'Pesquisas';
 }

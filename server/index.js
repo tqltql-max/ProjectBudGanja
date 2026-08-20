@@ -251,7 +251,7 @@ function legacyRedirectFor(staticPath) {
   if (staticPath === '/jogos/aleph' || staticPath === '/jogos/aleph/') return '/jogos/aleff/';
   if (staticPath === '/calculadoras.html') return '/calculadoras/';
   if (staticPath === '/luximetro.html') return '/calculadoras/luximetro.html';
-  if (staticPath === '/equipamentos.html') return '/equipamentos/';
+  if (staticPath === '/equipamentos.html' || staticPath === '/equipamentos' || staticPath === '/equipamentos/') return '/objetos/';
   if (staticPath === '/manual-clonadora.html') return '/equipamentos/manual-clonadora.html';
   if (staticPath === '/manual-hidrocloradora.html') return '/equipamentos/manual-hidrocloradora.html';
   if (staticPath === '/pesquisas.html') return '/biblioteca/pesquisas/';
@@ -303,7 +303,7 @@ function serveManagedHtml(res, filename) {
   let transform = null;
   if (filename === 'biblioteca/pesquisas/index.html') {
     transform = (body) => injectPostsPlaceholder(body, '<!-- POSTS_PLACEHOLDER -->', 'pesquisa');
-  } else if (filename === 'equipamentos/index.html') {
+  } else if (filename === 'objetos/index.html' || filename === 'equipamentos/index.html') {
     transform = (body) => injectPostsPlaceholder(body, '<!-- EQUIPMENT_POSTS_PLACEHOLDER -->', 'equipamento');
   } else if (filename === 'biblioteca/inspecoes/index.html') {
     transform = (body) => injectPostsPlaceholder(body, '<!-- INSPECTION_POSTS_PLACEHOLDER -->', 'inspecao');
@@ -519,6 +519,7 @@ const server = http.createServer((req, res) => {
     if (staticPath === '/vida') staticPath = '/vida/';
     if (staticPath === '/laboratorio') staticPath = '/laboratorio/';
     if (staticPath === '/calculadoras') staticPath = '/calculadoras/';
+    if (staticPath === '/objetos') staticPath = '/objetos/';
     if (staticPath === '/equipamentos') staticPath = '/equipamentos/';
     if (staticPath === '/sorteios') staticPath = '/sorteios/';
     if (staticPath === '/videos') staticPath = '/videos/';

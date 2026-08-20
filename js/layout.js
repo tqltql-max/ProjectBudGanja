@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '338';
+const ASSET_V = '340';
 const HOME = '/inverno/';
 
 let deferredInstallPrompt = null;
@@ -740,7 +740,7 @@ const DEFAULT_SITE = {
     { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
     { label: 'Vídeos', href: '/videos/' },
     { label: 'Jogos', href: '/jogos/' },
-    { label: 'Equipamentos', href: '/equipamentos/' },
+    { label: 'Objetos', href: '/objetos/' },
     { label: 'Ferramentas', href: '/calculadoras/' },
     { label: 'Comunidade', href: '/comunidade/' },
     { label: 'BudGanja Radio', href: '/radio/' },
@@ -759,7 +759,7 @@ const DEFAULT_SITE = {
         { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
         { label: 'Vídeos', href: '/videos/' },
         { label: 'Jogos', href: '/jogos/' },
-        { label: 'Equipamentos', href: '/equipamentos/' }
+        { label: 'Objetos', href: '/objetos/' }
       ]
     },
     {
@@ -802,6 +802,7 @@ function translateFooterLabel(label) {
     'Extensão académica': 'nav.academicExtension',
     'Extensão acadêmica': 'nav.academicExtension',
     'Equipamentos': 'nav.equipment',
+    'Objetos': 'nav.equipment',
     'Calculadoras': 'nav.calculators',
     'Ferramentas': 'nav.calculators',
     'Luxímetro': 'nav.luxMeter',
@@ -984,6 +985,7 @@ function resolveNavTileSlug(child) {
   if (href.includes('clonadora-6')) return 'clonadora-6';
   if (href.includes('clonadora-12')) return 'clonadora-12';
   if (href.includes('manual-clonadora')) return 'manual-clonadora';
+  if (href.includes('objetos')) return 'objetos';
   if (href.includes('equipamentos')) return 'equipamentos';
   if (href.includes('sorteios')) return 'sorteios';
   if (href.includes('calculadoras')) return 'calculadoras';
@@ -1449,10 +1451,10 @@ function getSiteHubNav(authState) {
             tone: 'ferramentas'
           },
           {
-            href: '/equipamentos/',
+            href: '/objetos/',
             icon: '🛠️',
-            label: i18n('nav.equipment', 'Equipamentos'),
-            prefixes: '/equipamentos',
+            label: i18n('nav.equipment', 'Objetos'),
+            prefixes: '/objetos,/equipamentos',
             tone: 'equipamentos'
           },
           {
@@ -1604,6 +1606,7 @@ function buildHeaderHTML(site, authState) {
     '<div class="header-right">' +
     '<div class="header-utilities">' +
     headerToolbar +
+    buildLangSwitcherHTML('header') +
     '</div>' +
     '<button type="button" class="header-quick-link header-quick-link--menu menu-toggle" aria-label="' + escapeNavText(i18n('common.menuOpen', 'Abrir menu')) + '" aria-expanded="false" aria-controls="mobile-menu">' +
     '<span class="header-quick-link-icon" aria-hidden="true">' +
@@ -1633,6 +1636,31 @@ function buildMobileNavSectionHTML(navItem) {
   );
 }
 
+function currentLangCode() {
+  const api = window.BudGanjaI18n;
+  const locale = (api && typeof api.getLocale === 'function') ? api.getLocale() : 'pt-BR';
+  const meta = (api && typeof api.getLocaleMeta === 'function') ? api.getLocaleMeta(locale) : null;
+  return (meta && meta.short) || String(locale).slice(0, 2).toUpperCase();
+}
+
+function buildLangOptionsHTML() {
+  const api = window.BudGanjaI18n;
+  const locales = (api && Array.isArray(api.SUPPORTED) && api.SUPPORTED.length)
+    ? api.SUPPORTED
+    : ['pt-BR', 'en', 'es', 'fr'];
+  return locales.map(function (code) {
+    const meta = (api && typeof api.getLocaleMeta === 'function') ? api.getLocaleMeta(code) : null;
+    const name = (meta && meta.name) || code;
+    return (
+      '<li><button type="button" class="lang-switcher-option" data-lang="' +
+      escapeNavText(code) +
+      '" role="option">' +
+      escapeNavText(name) +
+      '</button></li>'
+    );
+  }).join('');
+}
+
 function buildLangSwitcherHTML(variant) {
   const isHeader = variant === 'header';
   const rootClass = isHeader
@@ -1641,6 +1669,7 @@ function buildLangSwitcherHTML(variant) {
   const btnClass = isHeader
     ? 'lang-switcher-btn header-quick-link header-quick-link--lang'
     : 'lang-switcher-btn mobile-menu-util';
+  const code = currentLangCode();
   const btnInner = isHeader
     ? (
       '<span class="header-quick-link-icon" aria-hidden="true">' +
@@ -1650,18 +1679,20 @@ function buildLangSwitcherHTML(variant) {
       '<path d="M12 3a14 14 0 0 1 0 18"></path>' +
       '<path d="M12 3a14 14 0 0 0 0 18"></path>' +
       '</svg></span>' +
-      '<span class="lang-switcher-code">EN</span>'
+      '<span class="lang-switcher-code">' + escapeNavText(code) + '</span>'
     )
-    : 'EN';
+    : (
+      '<span class="mobile-menu-util-icon" aria-hidden="true">🌐</span>' +
+      '<span>' + escapeNavText(i18n('common.langLabel', 'Idioma')) +
+      ' · <span class="lang-switcher-code">' + escapeNavText(code) + '</span></span>'
+    );
   return (
     '<div class="' + rootClass + '">' +
     '<button type="button" class="' + btnClass + '" aria-haspopup="listbox" aria-expanded="false" title="' +
-    escapeNavText(i18n('common.langChoose', 'Choose language')) + '" aria-label="' +
-    escapeNavText(i18n('common.langChoose', 'Choose language')) + '">' + btnInner + '</button>' +
+    escapeNavText(i18n('common.langChoose', 'Escolher idioma')) + '" aria-label="' +
+    escapeNavText(i18n('common.langChoose', 'Escolher idioma')) + '">' + btnInner + '</button>' +
     '<ul class="lang-switcher-menu" hidden role="listbox">' +
-    '<li><button type="button" class="lang-switcher-option" data-lang="en" role="option">English</button></li>' +
-    '<li><button type="button" class="lang-switcher-option" data-lang="pt-BR" role="option">Português</button></li>' +
-    '<li><button type="button" class="lang-switcher-option" data-lang="es" role="option">Español</button></li>' +
+    buildLangOptionsHTML() +
     '</ul></div>'
   );
 }
@@ -2330,7 +2361,7 @@ async function enrichBibliotecaWithPosts(navPanel) {
   const categoryLabels = {
     pesquisa: 'Pesquisas',
     inspecao: 'Inspeções',
-    equipamento: 'Equipamentos'
+    equipamento: 'Objetos'
   };
 
   const grouped = { pesquisa: [], inspecao: [], equipamento: [] };

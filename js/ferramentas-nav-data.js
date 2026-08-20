@@ -357,6 +357,22 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Capítulos florais ricos em flavonoides e óleo essencial — chá calmante clássico com perfil químico documentado."
             },
             {
+              "label": "Inspeção: ESAPP — Agronomia em Paraguaçu Paulista",
+              "tileLabel": "Inspeção: ESAPP — Agronomia em …",
+              "href": "/posts/post-inspecao-esapp-agronomia-paraguacu-paulista.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-esapp-agronomia-paraguacu-paulista",
+              "description": "Ficha institucional da ESAPP (Paraguaçu Paulista/SP): Agronomia, Fazenda Modelo, biblioteca Célio Rodrigues Siqueira, D.A.F.A.G. e áreas de desporto/lazer — onde o Inspetor BudGanja pretende cursar graduação."
+            },
+            {
+              "label": "Inspeção: Mercado Play — TV grátis do Mercado Livre e filmes legais no player",
+              "tileLabel": "Inspeção: Mercado Play — TV grá…",
+              "href": "/posts/post-inspecao-loja-mercado-play.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-loja-mercado-play",
+              "description": "Lojas · streaming: Mercado Play (play.mercadolivre.com.br) — AVOD BR 2023; grátis com anúncios ≠ domínio público; indicação datada só no player oficial; aluguel e Max/Globoplay de fora; sem endosso."
+            },
+            {
               "label": "Inspeção: jesusamando — assombro, afeto e oralidade BR",
               "tileLabel": "Inspeção: jesusamando — assombr…",
               "href": "/posts/post-inspecao-expressao-jesusamando.html",
@@ -917,6 +933,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Uncaria tomentosa* — casca amazônica rica em alcaloides oxindólicos pentacíclicos; fitoterapia imunomoduladora popular."
             },
             {
+              "label": "Inspeção: o templo de Cristo, corpo e alma — morada, inteireza e ofício",
+              "tileLabel": "Inspeção: o templo de Cristo, c…",
+              "href": "/posts/post-inspecao-expressao-templo-de-cristo-corpo-e-alma.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-templo-de-cristo-corpo-e-alma",
+              "description": "Expressões: «o templo de Cristo, corpo e alma» — morada, nome e inteireza; peças templo · Cristo · corpo · alma; sem catecismo; Faça o melhor!"
+            },
+            {
               "label": "Inspeção: Stephen King — o autor, a novela e Um Sonho de Liberdade",
               "tileLabel": "Inspeção: Stephen King — o auto…",
               "href": "/posts/post-inspecao-figura-stephen-king.html",
@@ -1317,12 +1341,36 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes · sitcom: How I Met Your Mother (2005–2014, Bays / Thomas) — a série é a génese; moldura do tempo e da mãe. Ficha própria, distinta de Friends."
             },
             {
+              "label": "Inspeção: Bitter Sweet Symphony — The Verve e o ofício do doce-amargo",
+              "tileLabel": "Inspeção: Bitter Sweet Symphony…",
+              "href": "/posts/post-inspecao-arte-bitter-sweet-symphony.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-bitter-sweet-symphony",
+              "description": "Artes · canção 1997: The Verve — Bitter Sweet Symphony (*Urban Hymns*); elo BudGanja com vida, legal e caminho — o doce e o amargo no mesmo pulso; Rockin'1000 como afterlife colectivo."
+            },
+            {
               "label": "Inspeção: Risco — perigo calculado, traço e ofício",
               "tileLabel": "Inspeção: Risco — perigo calcul…",
               "href": "/posts/post-inspecao-palavra-risco.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-risco",
               "description": "Palavras: «risco» — perigo calculado × traço (*riscar*); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Every Breath You Take — The Police e o ofício de olhar sem possuir",
+              "tileLabel": "Inspeção: Every Breath You Take…",
+              "href": "/posts/post-inspecao-arte-every-breath-you-take.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-every-breath-you-take",
+              "description": "Artes · canção 1983: The Police — Every Breath You Take (*Synchronicity*); elo BudGanja com perseguição, medo e coração — o hino que o rádio ouviu como amor e Sting nomeou como vigilância."
+            },
+            {
+              "label": "Inspeção: The Middle — Jimmy Eat World e o ofício de não se apagar",
+              "tileLabel": "Inspeção: The Middle — Jimmy Ea…",
+              "href": "/posts/post-inspecao-arte-the-middle.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-the-middle",
+              "description": "Artes · canção 2001: Jimmy Eat World — The Middle (*Bleed American*); elo BudGanja com caminho, já e esperança — ficar no meio da viagem sem se escrever fora."
             },
             {
               "label": "Inspeção: Inacreditável — beyond belief, elogio BR e Faça o melhor!",
@@ -1819,6 +1867,46 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-mequetrefe",
               "description": "Palavras: todas as peças de Porta Palavra #5 (Gregorio) nesta página — mequetrefe, jururu, pinimba, cooper, lorota, brechó; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Paraguai — o país, a grafia Paraguay e o lapso PARAGYACYY",
+              "tileLabel": "Inspeção: Paraguai — o país, a …",
+              "href": "/posts/post-inspecao-palavra-paraguai.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-paraguai",
+              "description": "Palavras: «Paraguai» / Paraguay — país no Cone Sul; lapso PARAGYACYY mistura com Paraguaçu (BR); ≠ guerra nem canhão; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Paraguaçu — topónimo brasileiro, Paraguaçu Paulista e o som que não é o país",
+              "tileLabel": "Inspeção: Paraguaçu — topónimo …",
+              "href": "/posts/post-inspecao-palavra-paraguacu.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-paraguacu",
+              "description": "Palavras: «Paraguaçu» — lugar BR (tupi); Paraguaçu Paulista e ESAPP; ≠ Paraguai / Paraguay; lapso PARAGYACYY; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Guerra do Paraguai — o nome de 1864–1870, a Tríplice Aliança e a memória em disputa",
+              "tileLabel": "Inspeção: Guerra do Paraguai — …",
+              "href": "/posts/post-inspecao-palavra-guerra-do-paraguai.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-guerra-do-paraguai",
+              "description": "Palavras: Guerra do Paraguai / Paraguay — 1864–1870; Tríplice Aliança; números e culpas em disputa; elos troféus e canhão El Cristiano; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Troféus de guerra — espólio, museu e o caso El Cristiano",
+              "tileLabel": "Inspeção: Troféus de guerra — e…",
+              "href": "/posts/post-inspecao-palavra-trofeus-de-guerra.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-trofeus-de-guerra",
+              "description": "Palavras: troféus de guerra (*tropaeum*) — espólio ≠ verdade da guerra; caso canhão El Cristiano (devolução autorizada, entrega não fechada); Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Canhão — El Cristiano, o lapso canjão e o troféu ainda no Rio",
+              "tileLabel": "Inspeção: Canhão — El Cristiano…",
+              "href": "/posts/post-inspecao-palavra-canhao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-canhao",
+              "description": "Palavras: canhão (*canna*); peça El Cristiano da Guerra do Paraguai; troféu no MHN; devolução autorizada (ago. 2026) ≠ entrega; Faça o melhor!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
@@ -2606,14 +2694,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes: Alice no País das Maravilhas começa no livro de Lewis Carroll (1865) — génese no Tâmisa, nonsense e curiosidade; Disney 1951 como adaptação. Metáforas literárias, sem romantizar substâncias."
             },
             {
-              "label": "Inspeção: ESAPP — Agronomia em Paraguaçu Paulista",
-              "tileLabel": "Inspeção: ESAPP — Agronomia em …",
-              "href": "/posts/post-inspecao-esapp-agronomia-paraguacu-paulista.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-esapp-agronomia-paraguacu-paulista",
-              "description": "Ficha institucional da ESAPP (Paraguaçu Paulista/SP): curso de Agronomia, Fazenda Modelo e tradição desde 1974 — onde o Inspetor BudGanja pretende cursar graduação, complementar ao XIV Curso UNIFESP."
-            },
-            {
               "label": "Inspeção: Derivados do abacate — açúcar, aditivos e química industrial",
               "tileLabel": "Inspeção: Derivados do abacate …",
               "href": "/posts/post-inspecao-derivado-abacate.html",
@@ -2964,20 +3044,20 @@ window.__FERRAMENTAS_NAV__ = {
           ]
         },
         {
-          "label": "Equipamentos",
-          "tileLabel": "Equipamentos",
+          "label": "Objetos",
+          "tileLabel": "Objetos",
           "icon": "🛠️",
           "slug": "equipamentos-menu",
           "submenu": true,
           "children": [
             {
-              "label": "Todos os equipamentos",
+              "label": "Todos os objectos",
               "tileLabel": "Índice",
-              "href": "/equipamentos/",
+              "href": "/objetos/",
               "icon": "🛠️",
-              "slug": "equipamentos",
+              "slug": "objetos",
               "featured": true,
-              "description": "Clonadoras caseiras documentadas."
+              "description": "Catálogo de objectos do laboratório — clonadoras e fichas de coisas."
             },
             {
               "label": "Clonadoras",

@@ -29,7 +29,7 @@ const STATIC = [
   { loc: '/vida/diario/', priority: '0.8', changefreq: 'monthly' },
   { loc: '/comunidade/', priority: '0.9', changefreq: 'daily' },
   { loc: '/radio/', priority: '0.8', changefreq: 'weekly' },
-  { loc: '/equipamentos/', priority: '0.9', changefreq: 'monthly' },
+  { loc: '/objetos/', priority: '0.9', changefreq: 'monthly' },
   { loc: '/calculadoras/', priority: '0.8', changefreq: 'monthly' },
   ...CALCULADORAS.map((c) => ({
     loc: getCalculadoraUrl(c),

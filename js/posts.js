@@ -43,7 +43,7 @@ var SERIES_LABELS = {
   'canal-zangado': 'Zangado · Canais',
   'canal-paulinho': 'Paulinho o LOKO · Canais',
   'canal-vevo': 'VEVO · Canais',
-  'verificacao-equipamento': 'Equipamentos',
+  'verificacao-equipamento': 'Objetos',
   'formacao-academica': 'Extensão académica',
   'loja-cultivo': 'Lojas de cultivo',
   'loja-dermocosmetico': 'Lojas · dermocosmético',
@@ -78,7 +78,7 @@ function seriesBadgeHtml(post, options) {
     return '<span class="post-card-series" data-series="' + post.series + '">' + canal + '</span>';
   }
   if (options.hub && post.series === 'verificacao-equipamento') {
-    var eq = post.seriesLabel || 'Equipamento';
+    var eq = post.seriesLabel || 'Objeto';
     return '<span class="post-card-series" data-series="' + post.series + '">' + eq + '</span>';
   }
   if (options.hub && (post.series.indexOf('formacao') === 0 || post.series.indexOf('curso') === 0)) {
@@ -291,7 +291,7 @@ function renderPostCards(container, posts, options) {
   options = options || {};
   if (!posts.length) {
     var page = document.body.dataset.page;
-    var category = page === 'inspecoes' ? 'inspecao' : page === 'equipamentos' ? 'equipamento' : 'pesquisa';
+    var category = page === 'inspecoes' ? 'inspecao' : (page === 'objetos' || page === 'equipamentos') ? 'equipamento' : 'pesquisa';
     var ctas = {
       pesquisa: { text: 'Abrir diário de pesquisas', href: '/cultivo/' },
       inspecao: { text: 'Ver vídeos', href: '/videos/', external: false },
@@ -393,7 +393,7 @@ function filterByInspecaoTipo(posts, tipo) {
 /** Âncora hash → id de filtro (modelo /videos/). */
 var HUB_CHIP_ANCHOR = {
   canal: 'canais',
-  equipamento: 'equipamentos',
+  equipamento: 'objetos',
   curso: 'cursos',
   loja: 'lojas',
   insumo: 'insumos',
@@ -439,6 +439,8 @@ var HUB_ANCHOR_TO_TIPO = {
   contos: 'conto',
   expressoes: 'expressao',
   ditados: 'expressao',
+  objetos: 'equipamento',
+  equipamentos: 'equipamento',
   sugestoes: 'sugestoes'
 };
 
@@ -465,6 +467,13 @@ var INSPECAO_HUB_TIPOS = [
   { id: 'palavra', labelKey: 'pages.inspections.chipWords', fallback: 'Palavras', sort: 'seriesOrder', keepVisible: true },
   { id: 'divulgacao', labelKey: 'pages.inspections.chipOutreach', fallback: 'Divulgação', sort: 'seriesOrder' },
   { id: 'arte', labelKey: 'pages.inspections.chipArts', fallback: 'Artes', sort: 'seriesOrder', keepVisible: true },
+  {
+    id: 'equipamento',
+    labelKey: 'pages.inspections.chipObjects',
+    fallback: 'Objetos',
+    sort: 'seriesOrder',
+    keepVisible: true
+  },
   { id: 'jogo', labelKey: 'pages.inspections.chipGames', fallback: 'Cadernos de jogo', sort: 'seriesOrder', keepVisible: true },
   { id: 'conto', labelKey: 'pages.inspections.chipVida', fallback: 'Vida', sort: 'seriesOrder', keepVisible: true },
   {
@@ -1238,7 +1247,7 @@ function getPublicationConfig() {
   if (page === 'pesquisas') {
     return { category: 'pesquisa', pesquisasHub: true };
   }
-  if (page === 'equipamentos') {
+  if (page === 'objetos' || page === 'equipamentos') {
     return { category: 'equipamento', container: '.publications-equipamentos' };
   }
   if (page === 'inspecoes') {

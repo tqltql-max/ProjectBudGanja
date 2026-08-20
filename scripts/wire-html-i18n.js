@@ -106,17 +106,11 @@ wireFile('calculadoras/index.html', (h) => {
   return out;
 });
 
-// equipamentos
-wireFile('equipamentos/index.html', (h) => {
+// objetos (legado: equipamentos)
+wireFile('objetos/index.html', (h) => {
   let out = h;
-  out = out.replace(/<h1>Equipamentos<\/h1>/, '<h1 data-i18n="pages.equipment.title">Equipamentos</h1>');
-  out = out.replace(
-    /<p class="secao-subtitulo">([\s\S]*?)<\/p>/,
-    (m, text) => {
-      if (m.includes('data-i18n')) return m;
-      return '<p class="secao-subtitulo" data-i18n="pages.equipment.subtitle">' + text + '</p>';
-    }
-  );
+  out = out.replace(/<h1>Objetos<\/h1>/, '<h1 data-i18n="pages.equipment.title">Objetos</h1>');
+  out = out.replace(/<h1>Equipamentos<\/h1>/, '<h1 data-i18n="pages.equipment.title">Objetos</h1>');
   return out;
 });
 

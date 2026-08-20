@@ -103,7 +103,7 @@
     "backTo": "← Back to {label}",
     "publishedOn": "Published on {date}",
     "categoryInspection": "Inspections",
-    "categoryEquipment": "Equipment",
+    "categoryEquipment": "Objects",
     "categoryResearch": "Research"
   },
   "nav": {
@@ -113,7 +113,7 @@
     "research": "Research",
     "inspections": "Inspections",
     "academicExtension": "Academic extension",
-    "equipment": "Equipment",
+    "equipment": "Objects",
     "calculators": "Tools",
     "luxMeter": "Lux meter",
     "videos": "Videos",
@@ -155,7 +155,7 @@
     "quickCalculatorsTip": "VPD, pH, EC, lux meter and more",
     "quickVideosTip": "Latest channel videos",
     "quickGiveawaysTip": "Active lab promotions",
-    "quickToolsTip": "Calculators and equipment",
+    "quickToolsTip": "Tools and objects",
     "quickGrowTip": "Research diary and grow logs",
     "quickCommunityTip": "Research diary photo feed",
     "lab": "Lab map",
@@ -218,13 +218,18 @@
       "description": "Field and lab inspection reports."
     },
     "equipamentos-menu": {
-      "label": "Equipment",
-      "tileLabel": "Equipment"
+      "label": "Objects",
+      "tileLabel": "Objects"
     },
     "equipamentos": {
-      "label": "DIY cloners",
+      "label": "All objects",
       "tileLabel": "Index",
-      "description": "Documented build guides."
+      "description": "Lab objects catalogue."
+    },
+    "objetos": {
+      "label": "All objects",
+      "tileLabel": "Index",
+      "description": "Lab objects catalogue."
     },
     "calculadoras": {
       "label": "Calculators",
@@ -437,9 +442,9 @@
       "cardInspectionsTitle": "Inspections",
       "cardInspectionsText": "Technical reports with a verifiable method — guide, channels and courses.",
       "cardInspectionsBtn": "View inspections",
-      "cardEquipTitle": "DIY Equipment",
-      "cardEquipText": "Home builds with off-the-shelf parts — full cloner and hydrocloner manuals.",
-      "cardEquipBtn": "View equipment",
+      "cardEquipTitle": "Objects",
+      "cardEquipText": "Lab objects catalogue — cloners, thing-sheets and verification inspections.",
+      "cardEquipBtn": "View objects",
       "cardCalcTitle": "Tools",
       "cardCalcText": "Tools to optimize your grow: VPD, DLI, EC, lux meter and more.",
       "cardCalcBtn": "View tools",
@@ -466,7 +471,7 @@
       "latestPlantas": "Plants →",
       "latestUnifesp": "UNIFESP →",
       "youtubeTitle": "Follow on YouTube",
-      "youtubeText": "Inspections, equipment tutorials and live giveaways on the official lab channel.",
+      "youtubeText": "Inspections, object tutorials and live giveaways on the official lab channel.",
       "youtubeSubscribe": "Subscribe to the channel",
       "youtubeGiveaways": "View giveaways",
       "aboutTitle": "About Inspetor BudGanja",
@@ -500,7 +505,7 @@
       "cardCalcTip": "Environment tools: VPD, DLI, EC, lux meter and more.",
       "cardResearchTip": "Lab research and community studies approved for publication.",
       "cardInspectionsTip": "Inspection reports, field checks and training.",
-      "cardEquipTip": "Documented builds with accessible materials and full manuals.",
+      "cardEquipTip": "Objects catalogue — cloners, thing-sheets and verification inspections.",
       "cardCommunityTip": "Share diary photos and ask the community for help.",
       "cardVideosTip": "Inspections, tutorials and channel updates on YouTube.",
       "cardGamesTip": "Zangado and Paulinho o LOKO — games page only.",
@@ -728,7 +733,7 @@
     "inspections": {
       "eyebrow": "Library",
       "title": "Inspections",
-      "subtitle": "Technical reports with a verifiable method — legacy, people, channels, courses, articles, medicinal plants, fruits, fungi, harmful products (casein, gluten, sugar…), words, outreach, arts and equipment.",
+      "subtitle": "Technical reports with a verifiable method — legacy, people, channels, courses, articles, medicinal plants, fruits, fungi, harmful products (casein, gluten, sugar…), words, outreach, arts and objects.",
       "loading": "Loading…",
       "loadMore": "Load more",
       "empty": "No inspections published yet.",
@@ -748,6 +753,7 @@
       "chipPeopleHistory": "People",
       "chipOutreach": "Outreach",
       "chipArts": "Arts",
+      "chipObjects": "Objects",
       "chipGames": "Game notebooks",
       "chipVida": "Vida",
       "chipExpressions": "Sayings",
@@ -845,9 +851,12 @@
     },
     "equipment": {
       "eyebrow": "Lab",
-      "title": "Equipment",
-      "subtitle": "Documented home cloners — pick by budget and cutting count. Materials from ordinary shops (pet stores, gardening or light hardware).",
-      "docTitle": "Equipment | Inspetor BudGanja",
+      "title": "Objects",
+      "subtitle": "Lab objects catalogue — what sits in front to be inspected. Documented cloners and thing-sheets already in the project. Lexicon: <a href=\"/posts/post-inspecao-palavra-objetos.html\">objetos</a>.",
+      "docTitle": "Objects | Inspetor BudGanja",
+      "catalogLab": "Lab craft",
+      "catalogSheets": "Sheets in the project",
+      "catalogSheetsLead": "Objects already inspected on other axes — Words, Arts, verification. Here they enter the catalogue as a thing.",
       "cloner6Title": "6-cutting cloner",
       "cloner6Body": "Ice cream tub, kitchen sponge and air pump — bubbles in the water, <strong>24 hours a day</strong> until roots form. A <strong>low-cost</strong>, easy build.",
       "cloner6Cta": "View build guide",
@@ -856,7 +865,7 @@
       "cloner12Body": "Bucket, submersible pump and micro-sprayer kit — mist on the roots, <strong>24 hours a day</strong> until transplant. A <strong>moderate to high cost</strong> project.",
       "cloner12Cta": "View build guide",
       "cloner12Alt": "DIY 12-cutting cloner with bucket and sprayers",
-      "publications": "Equipment publications",
+      "publications": "Object publications",
       "loading": "Loading publications…"
     },
     "cultivo": {

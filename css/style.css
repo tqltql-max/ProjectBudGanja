@@ -284,6 +284,7 @@ img, video, svg {
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
     transition: min-height 0.25s ease, padding 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
     width: 100%;
+    overflow: visible;
 }
 
 @media (min-width: 1025px) and (max-width: 1120px) {
@@ -524,6 +525,7 @@ img, video, svg {
     flex: 1 1 auto;
     min-width: 0;
     max-width: 100%;
+    overflow: visible;
 }
 
 .header-radio-host {
@@ -956,6 +958,18 @@ img, video, svg {
     letter-spacing: 0.06em;
     color: var(--hq-label, #d8f5e4);
     line-height: 1;
+    white-space: nowrap;
+}
+
+@media (max-width: 380px) {
+    .lang-switcher--header .lang-switcher-code {
+        display: none;
+    }
+
+    .header-quick-link--lang {
+        padding: 5px 6px;
+        gap: 0;
+    }
 }
 
 .lang-switcher--header .lang-switcher-menu {
@@ -2131,7 +2145,8 @@ body.mobile-menu-open {
 .nav-app-tile--games { --tile-icon-bg: rgba(154, 209, 95, 0.22); --tile-icon-border: rgba(154, 209, 95, 0.38); }
 .nav-app-tile--pesquisas { --tile-icon-bg: rgba(52, 152, 219, 0.22); --tile-icon-border: rgba(52, 152, 219, 0.35); }
 .nav-app-tile--inspecoes { --tile-icon-bg: rgba(149, 165, 166, 0.24); --tile-icon-border: rgba(149, 165, 166, 0.38); }
-.nav-app-tile--equipamentos { --tile-icon-bg: rgba(139, 90, 43, 0.26); --tile-icon-border: rgba(139, 90, 43, 0.4); }
+.nav-app-tile--equipamentos,
+.nav-app-tile--objetos { --tile-icon-bg: rgba(139, 90, 43, 0.26); --tile-icon-border: rgba(139, 90, 43, 0.4); }
 .nav-app-tile--sorteios { --tile-icon-bg: rgba(241, 196, 15, 0.24); --tile-icon-border: rgba(241, 196, 15, 0.38); }
 .nav-app-tile--manual-clonadora { --tile-icon-bg: rgba(155, 89, 182, 0.22); --tile-icon-border: rgba(155, 89, 182, 0.35); }
 .nav-app-tile--clonadora-6 { --tile-icon-bg: rgba(46, 204, 113, 0.2); --tile-icon-border: rgba(46, 204, 113, 0.35); }
@@ -2889,6 +2904,50 @@ nav ul li a:focus,
 
 .item-lista:hover {
     border-color: rgba(39, 174, 96, 0.2);
+}
+
+.objetos-catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+    margin: 8px 0 32px;
+}
+
+.objetos-catalog-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: inherit;
+    background: var(--gradient-card);
+    border: var(--border-subtle);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    transition: transform var(--transition-smooth), border-color var(--transition-fast);
+}
+
+.objetos-catalog-card:hover {
+    border-color: rgba(39, 174, 96, 0.28);
+    transform: translateY(-2px);
+}
+
+.objetos-catalog-kicker {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent, #27ae60);
+    font-weight: 700;
+}
+
+.objetos-catalog-card strong {
+    font-size: 1.15rem;
+}
+
+.objetos-catalog-card span:last-child {
+    font-size: 0.92rem;
+    opacity: 0.86;
+    line-height: 1.4;
 }
 
 .item-lista img {

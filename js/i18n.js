@@ -4,16 +4,54 @@
   // v2: limpa preferências antigas presas em EN durante o período com default errado.
   var STORAGE_KEY = 'budganja-lang-v2';
   var LEGACY_STORAGE_KEY = 'budganja-lang';
-  var SUPPORTED = ['en', 'pt-BR', 'es'];
   var LOCALES = global.__I18N_LOCALES__ || {};
+  var PREFERRED_ORDER = [
+    'pt-BR', 'en', 'es', 'fr', 'de', 'it', 'nl', 'pl', 'ru', 'tr',
+    'ar', 'hi', 'id', 'vi', 'ja', 'ko', 'zh-CN'
+  ];
+  var RTL_LOCALES = { ar: 1, he: 1, fa: 1, ur: 1 };
+  var SUPPORTED = Object.keys(LOCALES).length
+    ? Object.keys(LOCALES).sort(function (a, b) {
+        var ia = PREFERRED_ORDER.indexOf(a);
+        var ib = PREFERRED_ORDER.indexOf(b);
+        if (ia === -1 && ib === -1) return a.localeCompare(b);
+        if (ia === -1) return 1;
+        if (ib === -1) return -1;
+        return ia - ib;
+      })
+    : ['pt-BR', 'en', 'es', 'fr'];
   var currentLocale = 'pt-BR';
 
+  function isSupported(locale) {
+    return SUPPORTED.indexOf(locale) !== -1;
+  }
+
+  function pickSupported(code) {
+    return isSupported(code) ? code : '';
+  }
+
   function normalizeLocale(input) {
-    var raw = String(input || '').trim().toLowerCase();
+    var raw = String(input || '').trim().replace(/_/g, '-').toLowerCase();
     if (!raw) return '';
-    if (raw === 'pt' || raw.indexOf('pt-') === 0) return 'pt-BR';
-    if (raw.indexOf('en') === 0) return 'en';
-    if (raw.indexOf('es') === 0) return 'es';
+    var i;
+    for (i = 0; i < SUPPORTED.length; i++) {
+      if (SUPPORTED[i].toLowerCase() === raw) return SUPPORTED[i];
+    }
+    if (
+      raw.indexOf('zh-hant') === 0 ||
+      raw.indexOf('zh-tw') === 0 ||
+      raw.indexOf('zh-hk') === 0 ||
+      raw.indexOf('zh-mo') === 0
+    ) {
+      return pickSupported('zh-TW') || pickSupported('zh-CN');
+    }
+    if (raw.indexOf('zh') === 0) return pickSupported('zh-CN');
+    var lang = raw.split('-')[0];
+    if (lang === 'pt') return pickSupported('pt-BR');
+    for (i = 0; i < SUPPORTED.length; i++) {
+      var s = SUPPORTED[i].toLowerCase();
+      if (s === lang || s.indexOf(lang + '-') === 0) return SUPPORTED[i];
+    }
     return '';
   }
 
@@ -36,6 +74,30 @@
     return 'pt-BR';
   }
 
+  function persistLocale(locale) {
+    try {
+      localStorage.setItem(STORAGE_KEY, locale);
+      localStorage.removeItem(LEGACY_STORAGE_KEY);
+    } catch (e) { /* ignore */ }
+  }
+
+  function detectFromNavigator() {
+    var list = [];
+    try {
+      if (global.navigator && global.navigator.languages && global.navigator.languages.length) {
+        list = Array.prototype.slice.call(global.navigator.languages);
+      } else if (global.navigator && global.navigator.language) {
+        list = [global.navigator.language];
+      }
+    } catch (e) { /* ignore */ }
+    var i;
+    for (i = 0; i < list.length; i++) {
+      var loc = normalizeLocale(list[i]);
+      if (loc && isSupported(loc)) return loc;
+    }
+    return '';
+  }
+
   function detectLocale() {
     try {
       var params = new URLSearchParams((global.location && global.location.search) || '');
@@ -43,17 +105,30 @@
       // Só usa a query quando há valor real (ex.: link partilhado ?lang=en).
       if (rawQuery) {
         var fromQuery = normalizeLocale(rawQuery);
-        if (fromQuery && SUPPORTED.indexOf(fromQuery) !== -1) return fromQuery;
+        if (fromQuery && isSupported(fromQuery)) {
+          persistLocale(fromQuery);
+          return fromQuery;
+        }
       }
     } catch (e) { /* ignore */ }
 
     try {
       var saved = localStorage.getItem(STORAGE_KEY);
-      if (saved && SUPPORTED.indexOf(saved) !== -1) return saved;
+      if (saved && isSupported(saved)) return saved;
     } catch (e) { /* ignore */ }
+
+    var fromBrowser = detectFromNavigator();
+    if (fromBrowser) return fromBrowser;
 
     // Padrão por domínio: .com.br → PT, inspectorbudganja.com → EN.
     return defaultLocaleForHost();
+  }
+
+  function applyDocumentLang(locale) {
+    if (!document.documentElement) return;
+    document.documentElement.lang = locale;
+    var rtl = !!(RTL_LOCALES[locale] || String(locale).indexOf('ar') === 0);
+    document.documentElement.dir = rtl ? 'rtl' : 'ltr';
   }
 
   function clearLocaleFromUrl() {
@@ -117,14 +192,11 @@
   }
 
   function setLocale(locale, options) {
-    var next = SUPPORTED.indexOf(locale) !== -1 ? locale : 'pt-BR';
+    var next = isSupported(locale) ? locale : 'pt-BR';
     if (next === currentLocale && !(options && options.force)) return;
     currentLocale = next;
-    try {
-      localStorage.setItem(STORAGE_KEY, next);
-      localStorage.removeItem(LEGACY_STORAGE_KEY);
-    } catch (e) { /* ignore */ }
-    if (document.documentElement) document.documentElement.lang = next;
+    persistLocale(next);
+    applyDocumentLang(next);
     // Não grava ?lang= na URL (ficava preso em EN). Limpa query antiga ao escolher no seletor.
     if (!(options && options.skipUrl)) clearLocaleFromUrl();
     applyDomTranslations();
@@ -188,7 +260,7 @@
 
     var categoryKeyFallback = {
       'posts.categoryInspection': 'Inspections',
-      'posts.categoryEquipment': 'Equipment',
+      'posts.categoryEquipment': 'Objects',
       'posts.categoryResearch': 'Research'
     };
 
@@ -362,12 +434,14 @@
     // Hubs com conteúdo dinâmico — não substituir o main inteiro.
     if (
       main.querySelector('.publications-equipamentos') ||
+      main.querySelector('#objetos-catalog') ||
       main.querySelector('[data-inspecao-grid]') ||
       main.querySelector('#plantas-grid') ||
       main.querySelector('#animais-grid') ||
       main.querySelector('#fungos-grid') ||
       main.querySelector('#videos-player') ||
       document.body.dataset.page === 'equipamentos' ||
+      document.body.dataset.page === 'objetos' ||
       document.body.dataset.page === 'cultivo' ||
       document.body.dataset.page === 'comunidade' ||
       document.body.dataset.page === 'videos' ||
@@ -386,6 +460,7 @@
       // aliases comuns
       if (key === 'biblioteca/unifesp/') entry = map['biblioteca/unifesp/index.html'];
       if (key === 'equipamentos/') entry = map['equipamentos/index.html'];
+      if (key === 'objetos/') entry = map['objetos/index.html'] || map['equipamentos/index.html'];
     }
     if (!entry) return;
 
@@ -568,6 +643,7 @@
     pesquisas: 'research',
     calculadora: 'tools',
     equipamentos: 'equipment',
+    objetos: 'equipment',
     cultivo: 'cultivo',
     comunidade: 'community',
     sorteios: 'giveaways',
@@ -592,6 +668,20 @@
     if (docTitle) document.title = docTitle;
   }
 
+  function localeOptionsHtml() {
+    return SUPPORTED.map(function (code) {
+      var meta = getLocaleMeta(code);
+      var name = (meta && meta.name) || code;
+      return (
+        '<li><button type="button" class="lang-switcher-option" data-lang="' +
+        code +
+        '" role="option">' +
+        name +
+        '</button></li>'
+      );
+    }).join('');
+  }
+
   function mountLanguageSwitcher(root) {
     if (!root || root.getAttribute('data-lang-mounted') === '1') return;
     root.setAttribute('data-lang-mounted', '1');
@@ -599,13 +689,13 @@
     var btn = root.querySelector('.lang-switcher-btn');
     var menu = root.querySelector('.lang-switcher-menu');
     if (!btn || !menu) return;
+    menu.innerHTML = localeOptionsHtml();
 
     function syncActive() {
       var meta = getLocaleMeta(currentLocale);
       var code = meta.short || currentLocale.slice(0, 2).toUpperCase();
       var codeEl = btn.querySelector('.lang-switcher-code');
       if (codeEl) codeEl.textContent = code;
-      else btn.textContent = code;
       btn.setAttribute('aria-label', t('common.langChoose', 'Choose language'));
       btn.setAttribute('title', t('common.langChoose', 'Choose language'));
       menu.querySelectorAll('[data-lang]').forEach(function (opt) {
@@ -649,17 +739,13 @@
 
   function init() {
     currentLocale = detectLocale();
-    if (document.documentElement) document.documentElement.lang = currentLocale;
-    try {
-      localStorage.setItem(STORAGE_KEY, currentLocale);
-      localStorage.removeItem(LEGACY_STORAGE_KEY);
-    } catch (e) { /* ignore */ }
+    applyDocumentLang(currentLocale);
     applyDomTranslations();
     initLanguageSwitcher();
   }
 
   currentLocale = detectLocale();
-  if (document.documentElement) document.documentElement.lang = currentLocale;
+  applyDocumentLang(currentLocale);
 
   global.BudGanjaI18n = {
     SUPPORTED: SUPPORTED,
@@ -671,7 +757,8 @@
     apply: applyDomTranslations,
     init: init,
     initLanguageSwitcher: initLanguageSwitcher,
-    localizeNavTree: localizeNavTree
+    localizeNavTree: localizeNavTree,
+    normalizeLocale: normalizeLocale
   };
 
   function localizeNavTree(items) {
