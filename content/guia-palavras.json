@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T03:58:57.490Z",
+  "updatedAt": "2026-08-20T04:47:24.949Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4956,6 +4956,56 @@
       "curiositiesEn": "The sheet treats the infinitive as crossing craft, distinct from the noun passado.",
       "historyEs": "Pasar viene del latín passare — el verbo del paso: lo que ocurrió, lo que atraviesa, lo que se transmite. En el Ártico, el barco que aún pasa.",
       "curiositiesEs": "La ficha trata el infinitivo como oficio de travesía, distinto del sustantivo passado."
+    },
+    {
+      "id": "paraguai",
+      "word": "Paraguai",
+      "simple": "País (PT Paraguai / ES-EN Paraguay / guarani Paraguái); PARAGYACYY = lapso com Paraguaçu; ≠ município paulista; Faça o melhor neste mapa.",
+      "simpleEn": "País (PT Paraguai / ES-EN Paraguay / guarani Paraguái); PARAGYACYY = lapso com Paraguaçu; ≠ município paulista; Faça o melhor neste mapa.",
+      "simpleEs": "País (PT Paraguai / ES-EN Paraguay / guarani Paraguái); PARAGYACYY = lapso com Paraguaçu; ≠ município paulista; Faça o melhor neste mapa.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-paraguai.html"
+    },
+    {
+      "id": "guerra-do-paraguai",
+      "word": "Guerra do Paraguai",
+      "simple": "Nome PT do conflito 1864–1870; Tríplice Aliança; narrativas e mortos em disputa; ≠ mapa de Paraguaçu; Faça o melhor nesta memória.",
+      "simpleEn": "Nome PT do conflito 1864–1870; Tríplice Aliança; narrativas e mortos em disputa; ≠ mapa de Paraguaçu; Faça o melhor nesta memória.",
+      "simpleEs": "Nome PT do conflito 1864–1870; Tríplice Aliança; narrativas e mortos em disputa; ≠ mapa de Paraguaçu; Faça o melhor nesta memória.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-guerra-do-paraguai.html"
+    },
+    {
+      "id": "trofeus-de-guerra",
+      "word": "Troféus de guerra",
+      "simple": "Lat. tropaeum — espólio em museu ≠ laudo histórico; caso El Cristiano; ≠ inventário completo; Faça o melhor neste bronze.",
+      "simpleEn": "Lat. tropaeum — espólio em museu ≠ laudo histórico; caso El Cristiano; ≠ inventário completo; Faça o melhor neste bronze.",
+      "simpleEs": "Lat. tropaeum — espólio em museu ≠ laudo histórico; caso El Cristiano; ≠ inventário completo; Faça o melhor neste bronze.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-trofeus-de-guerra.html"
+    },
+    {
+      "id": "canhao",
+      "word": "Canhão",
+      "simple": "Lat. canna — tubo de artilharia; El Cristiano no MHN Rio; canjão = boca; devolução ainda em trâmite; Faça o melhor neste bronze.",
+      "simpleEn": "Lat. canna — tubo de artilharia; El Cristiano no MHN Rio; canjão = boca; devolução ainda em trâmite; Faça o melhor neste bronze.",
+      "simpleEs": "Lat. canna — tubo de artilharia; El Cristiano no MHN Rio; canjão = boca; devolução ainda em trâmite; Faça o melhor neste bronze.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-canhao.html"
+    },
+    {
+      "id": "paraguacu",
+      "word": "Paraguaçu",
+      "simple": "Topónimo BR (tupi); Paraguaçu Paulista e ESAPP em São Paulo; ≠ país Paraguai; PARAGYACYY cola os dois; Faça o melhor neste lugar.",
+      "simpleEn": "Topónimo BR (tupi); Paraguaçu Paulista e ESAPP em São Paulo; ≠ país Paraguai; PARAGYACYY cola os dois; Faça o melhor neste lugar.",
+      "simpleEs": "Topónimo BR (tupi); Paraguaçu Paulista e ESAPP em São Paulo; ≠ país Paraguai; PARAGYACYY cola os dois; Faça o melhor neste lugar.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-paraguacu.html"
     },
     {
       "id": "patente",

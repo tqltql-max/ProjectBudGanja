@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T04:36:08.328Z",
+  "updatedAt": "2026-08-20T04:47:24.946Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6014,53 +6014,109 @@
       "notes": "Cap. 128 — todas as palavras do vídeo nesta página; âncora 4Ot7Mqlhlbo."
     },
     {
-      "id": "loja-principia",
-      "title": "Principia — marca, rótulo e o claim dos dermatologistas",
-      "titleEn": "Principia — brand, label, and the dermatologist claim",
-      "titleEs": "Principia — marca, etiqueta y el claim de los dermatólogos",
-      "tipo": "loja",
+      "id": "palavra-paraguai",
+      "title": "Paraguai — o país, Paraguay e o lapso PARAGYACYY",
+      "titleEn": "Paraguai — the country, Paraguay, and the slip PARAGYACYY",
+      "titleEs": "Paraguai — el país, Paraguay y el lapsus PARAGYACYY",
+      "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Lojas: Principia — «mais recomendada pelos dermatologistas» auditado (Memed 2ª prescrita no recorte); concentrações no rótulo; sem endosso clínico.",
-      "whyEn": "Shops: Principia — “most recommended by dermatologists” audited; concentrations on the label; no clinical endorsement.",
-      "whyEs": "Tiendas: Principia — «la más recomendada por dermatólogos» auditado; concentraciones en la etiqueta; sin endoso clínico.",
-      "suggestedSlug": "inspecao-loja-principia",
-      "doneHref": "/posts/post-inspecao-loja-principia.html",
-      "seriesHint": "loja-dermocosmetico",
+      "why": "Palavras: Paraguai = país; Paraguay = grafia; PARAGYACYY = lapso país × Paraguaçu; ≠ guerra como único sentido; Faça o melhor!",
+      "whyEn": "Palavras: Paraguai = país; Paraguay = grafia; PARAGYACYY = lapso país × Paraguaçu; ≠ guerra como único sentido; Faça o melhor!",
+      "whyEs": "Palavras: Paraguai = país; Paraguay = grafia; PARAGYACYY = lapso país × Paraguaçu; ≠ guerra como único sentido; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-paraguai",
+      "doneHref": "/posts/post-inspecao-palavra-paraguai.html",
+      "seriesHint": "palavras-origem",
       "sources": [
-        "https://www.principiaskin.com/",
-        "https://panoramafarmaceutico.com.br/dermocosmeticos-de-alta-performance/",
-        "/posts/post-inspecao-palavra-anvisa.html",
-        "/posts/post-inspecao-palavra-risco.html",
+        "https://pt.wikipedia.org/wiki/Paraguai",
+        "/posts/post-inspecao-palavra-paraguai.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Claim ≠ facto. Cosmético ≠ medicamento."
+      "notes": "Cap. 129 — cluster Paraguai / canhão / PARAGYACYY."
     },
     {
-      "id": "loja-filmicca",
-      "title": "FILMICCA — streaming com curadoria, site e catálogo declarado",
-      "titleEn": "FILMICCA — curated streaming, the site, and the declared catalogue",
-      "titleEs": "FILMICCA — streaming con curaduría, el sitio y el catálogo declarado",
-      "tipo": "loja",
+      "id": "palavra-paraguacu",
+      "title": "Paraguaçu — topónimo brasileiro, Paraguaçu Paulista e o som que não é o país",
+      "titleEn": "Paraguaçu — Brazilian place-name, Paraguaçu Paulista, and the sound that is not the country",
+      "titleEs": "Paraguaçu — topónimo brasileño, Paraguaçu Paulista y el sonido que no es el país",
+      "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Lojas · streaming: filmicca.com.br — plataforma BR (ex-Supo Mungam, 2021); curadoria humana é claim; catálogo/preços datados; só Brasil; sem endosso.",
-      "whyEn": "Shops · streaming: filmicca.com.br — BR platform (ex-Supo Mungam, 2021); human curation is a claim; dated catalogue/prices; Brazil only; no endorsement.",
-      "whyEs": "Tiendas · streaming: filmicca.com.br — plataforma BR (ex-Supo Mungam, 2021); la curaduría humana es claim; catálogo/precios fechados; solo Brasil; sin endoso.",
-      "suggestedSlug": "inspecao-loja-filmicca",
-      "doneHref": "/posts/post-inspecao-loja-filmicca.html",
-      "seriesHint": "loja-streaming",
+      "why": "Palavras: Paraguaçu = lugar BR (tupi); Paraguaçu Paulista / ESAPP; ≠ Paraguai; lapso PARAGYACYY; Faça o melhor!",
+      "whyEn": "Palavras: Paraguaçu = lugar BR (tupi); Paraguaçu Paulista / ESAPP; ≠ Paraguai; lapso PARAGYACYY; Faça o melhor!",
+      "whyEs": "Palavras: Paraguaçu = lugar BR (tupi); Paraguaçu Paulista / ESAPP; ≠ Paraguai; lapso PARAGYACYY; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-paraguacu",
+      "doneHref": "/posts/post-inspecao-palavra-paraguacu.html",
+      "seriesHint": "palavras-origem",
       "sources": [
-        "https://www.filmicca.com.br/",
-        "https://www.filmicca.com.br/sobre",
-        "https://www.filmicca.com.br/ajuda/o-que-e-a-filmicca",
-        "https://www.filmicca.com.br/termos-de-uso",
-        "https://loja.filmicca.com.br/pages/sobre",
-        "https://pt.wikipedia.org/wiki/Filmicca",
-        "/posts/post-inspecao-palavra-pipoca.html",
+        "https://pt.wikipedia.org/wiki/Paragua%C3%A7u_Paulista",
+        "/posts/post-inspecao-palavra-paraguai.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Site ≠ filme. Indexar ≠ endosso. FAQ ~400 vs imprensa ~630: datar."
+      "notes": "Cap. 130 — cluster Paraguai / canhão / PARAGYACYY."
+    },
+    {
+      "id": "palavra-guerra-do-paraguai",
+      "title": "Guerra do Paraguai — o nome de 1864–1870, a Tríplice Aliança e a memória em disputa",
+      "titleEn": "Guerra do Paraguai — the 1864–1870 name, the Triple Alliance, and contested memory",
+      "titleEs": "Guerra do Paraguai — el nombre 1864–1870, la Triple Alianza y la memoria en disputa",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: Guerra do Paraguai = 1864–1870; também Guerra Grande / Tríplice Aliança; mortos em intervalo; ≠ Paraguaçu; Faça o melhor!",
+      "whyEn": "Palavras: Guerra do Paraguai = 1864–1870; também Guerra Grande / Tríplice Aliança; mortos em intervalo; ≠ Paraguaçu; Faça o melhor!",
+      "whyEs": "Palavras: Guerra do Paraguai = 1864–1870; também Guerra Grande / Tríplice Aliança; mortos em intervalo; ≠ Paraguaçu; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-guerra-do-paraguai",
+      "doneHref": "/posts/post-inspecao-palavra-guerra-do-paraguai.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Guerra_do_Paraguai",
+        "/posts/post-inspecao-palavra-paraguai.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 131 — cluster Paraguai / canhão / PARAGYACYY."
+    },
+    {
+      "id": "palavra-trofeus-de-guerra",
+      "title": "Troféus de guerra — espólio, museu e o caso El Cristiano",
+      "titleEn": "War trophies — spoils, museum, and the El Cristiano case",
+      "titleEs": "Trofeos de guerra — botín, museo y el caso El Cristiano",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: troféus de guerra (*tropaeum*) — espólio ≠ verdade; El Cristiano = caso; trofeis/geurra = lapsos; Faça o melhor!",
+      "whyEn": "Palavras: troféus de guerra (*tropaeum*) — espólio ≠ verdade; El Cristiano = caso; trofeis/geurra = lapsos; Faça o melhor!",
+      "whyEs": "Palavras: troféus de guerra (*tropaeum*) — espólio ≠ verdade; El Cristiano = caso; trofeis/geurra = lapsos; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-trofeus-de-guerra",
+      "doneHref": "/posts/post-inspecao-palavra-trofeus-de-guerra.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/trof%C3%A9u",
+        "/posts/post-inspecao-palavra-paraguai.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 132 — cluster Paraguai / canhão / PARAGYACYY."
+    },
+    {
+      "id": "palavra-canhao",
+      "title": "Canhão — El Cristiano, o lapso canjão e o troféu ainda no Rio",
+      "titleEn": "Cannon — El Cristiano, the slip canjão, and the trophy still in Rio",
+      "titleEs": "Cañón — El Cristiano, el lapsus canjão y el trofeo aún en Río",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: canhão (*canna*); canjão = lapso; El Cristiano = peça MHN; devolução 2026 = trâmite, não feito; Faça o melhor!",
+      "whyEn": "Palavras: canhão (*canna*); canjão = lapso; El Cristiano = peça MHN; devolução 2026 = trâmite, não feito; Faça o melhor!",
+      "whyEs": "Palavras: canhão (*canna*); canjão = lapso; El Cristiano = peça MHN; devolução 2026 = trâmite, não feito; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-canhao",
+      "doneHref": "/posts/post-inspecao-palavra-canhao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/canh%C3%A3o",
+        "/posts/post-inspecao-palavra-paraguai.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 133 — cluster Paraguai / canhão / PARAGYACYY."
     }
   ]
 }
