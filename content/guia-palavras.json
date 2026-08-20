@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T22:29:52.741Z",
+  "updatedAt": "2026-08-20T22:39:07.834Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -5100,6 +5100,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-paraguai.html"
+    },
+    {
+      "id": "mocambique",
+      "word": "Moçambique",
+      "simple": "País lusófono (PT Moçambique / EN Mozambique / sw. Msumbiji); étimo Mussa Bin Bique; tónico em BI; lapso esqueiro biq ≠ isqueiro BIC; Faça o melhor neste mapa.",
+      "simpleEn": "País lusófono (PT Moçambique / EN Mozambique / sw. Msumbiji); étimo Mussa Bin Bique; tónico em BI; lapso esqueiro biq ≠ isqueiro BIC; Faça o melhor neste mapa.",
+      "simpleEs": "País lusófono (PT Moçambique / EN Mozambique / sw. Msumbiji); étimo Mussa Bin Bique; tónico em BI; lapso esqueiro biq ≠ isqueiro BIC; Faça o melhor neste mapa.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mocambique.html"
+    },
+    {
+      "id": "isqueiro-bic",
+      "word": "isqueiro BIC",
+      "simple": "Isca + -eiro (lat. esca); marca BIC 1973; tónos do polegar (~42 N); lapso esqueiro biq cola ao Biq de Moçambique; ≠ país; Faça o melhor nesta chama.",
+      "simpleEn": "Isca + -eiro (lat. esca); marca BIC 1973; tónos do polegar (~42 N); lapso esqueiro biq cola ao Biq de Moçambique; ≠ país; Faça o melhor nesta chama.",
+      "simpleEs": "Isca + -eiro (lat. esca); marca BIC 1973; tónos do polegar (~42 N); lapso esqueiro biq cola ao Biq de Moçambique; ≠ país; Faça o melhor nesta chama.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-isqueiro-bic.html"
     },
     {
       "id": "guerra-do-paraguai",

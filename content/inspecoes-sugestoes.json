@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T22:29:52.733Z",
+  "updatedAt": "2026-08-20T22:39:07.827Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6468,6 +6468,48 @@
         "/posts/post-inspecao-palavra-idolo.html"
       ],
       "notes": "Cap. 18 Expressões — mesa dos Doze; ficha ≠ santoral."
+    },
+    {
+      "id": "palavra-mocambique",
+      "title": "Moçambique — o país, o tónos em BI e o lapso esqueiro biq",
+      "titleEn": "Moçambique — the country, the tónos on BI, and the slip esqueiro biq",
+      "titleEs": "Moçambique — el país, el tónos en BI y el lapsus esqueiro biq",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: Moçambique = país; tónico em BI; esqueiro biq = Biq × isqueiro BIC; ≠ marca como étimo; Faça o melhor!",
+      "whyEn": "Palavras: Moçambique = país; tónico em BI; esqueiro biq = Biq × isqueiro BIC; ≠ marca como étimo; Faça o melhor!",
+      "whyEs": "Palavras: Moçambique = país; tónico em BI; esqueiro biq = Biq × isqueiro BIC; ≠ marca como étimo; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-mocambique",
+      "doneHref": "/posts/post-inspecao-palavra-mocambique.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Mo%C3%A7ambique",
+        "/posts/post-inspecao-palavra-tonico.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 143 — cluster Moçambique / isqueiro BIC / tónos / esqueiro biq."
+    },
+    {
+      "id": "palavra-isqueiro-bic",
+      "title": "Isqueiro BIC — tónos do polegar e o lapso esqueiro biq",
+      "titleEn": "BIC lighter — thumb tónos and the slip esqueiro biq",
+      "titleEs": "Encendedor BIC — tónos del pulgar y el lapsus esqueiro biq",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: isqueiro BIC = utensílio + marca 1973; tónos = tensão (~42 N); esqueiro biq ≠ Moçambique; Faça o melhor!",
+      "whyEn": "Palavras: isqueiro BIC = utensílio + marca 1973; tónos = tensão (~42 N); esqueiro biq ≠ Moçambique; Faça o melhor!",
+      "whyEs": "Palavras: isqueiro BIC = utensílio + marca 1973; tónos = tensão (~42 N); esqueiro biq ≠ Moçambique; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-isqueiro-bic",
+      "doneHref": "/posts/post-inspecao-palavra-isqueiro-bic.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Isqueiro",
+        "/posts/post-inspecao-palavra-tonico.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 144 — cluster Moçambique / isqueiro BIC / tónos / esqueiro biq."
     }
   ]
 }
