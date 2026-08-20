@@ -89,6 +89,11 @@ const {
   poemSementeFoiPlantadaEn,
   poemSementeFoiPlantadaEs
 } = require('../lib/semente-foi-plantada-poem.js');
+const {
+  poemDozeApostolosPt,
+  poemDozeApostolosEn,
+  poemDozeApostolosEs
+} = require('../lib/doze-apostolos-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -159,6 +164,27 @@ const doc = {
       bodyEs: poemFacaOMelhorEs(),
       inspectionHref: '/posts/post-inspecao-expressao-faca-o-melhor.html',
       tags: ['poesia', 'vida', 'mantra', 'melhor', 'ofício']
+    },
+    {
+      id: 'os-doze-apostolos',
+      slug: 'os-doze-apostolos',
+      title: 'Os doze',
+      titleEn: 'The Twelve',
+      titleEs: 'Los doce',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Doze assentos, um envio — Tomé vê, Pedro levanta, a mesa não é pedestal: faça o melhor.',
+      teaserEn:
+        'Twelve seats, one sending — Thomas sees, Peter rises, the table is not a pedestal: do your best.',
+      teaserEs:
+        'Doce asientos, un envío — Tomás ve, Pedro se levanta, la mesa no es pedestal: haz lo mejor.',
+      body: poemDozeApostolosPt(),
+      bodyEn: poemDozeApostolosEn(),
+      bodyEs: poemDozeApostolosEs(),
+      inspectionHref: '/posts/post-inspecao-expressao-os-doze-apostolos.html',
+      tags: ['poesia', 'vida', 'apóstolos', 'envio', 'doze']
     },
     {
       id: 'bom-dia-inverno',

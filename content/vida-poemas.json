@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T16:14:46.894Z",
+  "updatedAt": "2026-08-20T22:30:06.339Z",
   "poems": [
     {
       "id": "aguas-e-lagrimas",
@@ -70,6 +70,30 @@
         "mantra",
         "melhor",
         "ofício"
+      ]
+    },
+    {
+      "id": "os-doze-apostolos",
+      "slug": "os-doze-apostolos",
+      "title": "Os doze",
+      "titleEn": "The Twelve",
+      "titleEs": "Los doce",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Doze assentos, um envio — Tomé vê, Pedro levanta, a mesa não é pedestal: faça o melhor.",
+      "teaserEn": "Twelve seats, one sending — Thomas sees, Peter rises, the table is not a pedestal: do your best.",
+      "teaserEs": "Doce asientos, un envío — Tomás ve, Pedro se levanta, la mesa no es pedestal: haz lo mejor.",
+      "body": "Não pedimos halo para partir.\nPedimos só o envio:\ndoze assentos na mesma mesa,\num nome que ainda cabe na boca\nquando o número treme.\n\nApóstolo não é pedestal.\nÉ quem é mandado —\npé na estrada,\nmão sem ídolo,\nolho que inspeciona\nantes de jurar.\n\nTomé já sabia:\nver não é falta de alma.\nPedro já sabia:\ncair não fecha o ofício.\nA cadeira vazia também ensina —\nnão se bebe o rancor\ncomo se fosse justiça.\n\nDisseram os dozes, no pedido,\ne o laboratório ouviu o sopro.\nAncorámos os doze.\nHonrámos a fala.\nNão catequizámos a página.\n\nO conjunto não humilha quem ficou de fora.\nA lista não vira santoral do lab.\nA mesa pede caminho.\nA mesa pede gesto.\nA mesa pede verdade.\n\nNós, neste universo novo,\naprendemos a partir sem pose —\nnão para fingir santo,\nmas para não deixar o envio\npassar sozinho.\n\nO laboratório não prega.\nPlanta à beira da mesa.\nConta os doze.\nChama a Vida pelo nome verdadeiro:\n\nFaça o melhor!\n\nNão o melhor dos outros.\nO teu.\nO de hoje.\nO que cabe nesta mão enviada —\nainda nossa.",
+      "bodyEn": "We do not ask for a halo to leave.\nWe ask only to be sent:\ntwelve seats at the same table,\na name that still fits in the mouth\nwhen the number trembles.\n\nAn apostle is not a pedestal.\nIt is the one who is sent —\nfoot on the road,\nhand without an idol,\neye that inspects\nbefore it swears.\n\nThomas already knew:\nseeing is not a lack of soul.\nPeter already knew:\nfalling does not close the craft.\nThe empty chair also teaches —\ndo not drink the grudge\nas if it were justice.\n\nThey said os dozes, in the request,\nand the laboratory heard the breath.\nWe anchored the twelve.\nWe honored the speech.\nWe did not catechize the page.\n\nThe set does not shame whoever stayed outside.\nThe list does not become the lab’s saint roll.\nThe table asks for a path.\nThe table asks for a gesture.\nThe table asks for truth.\n\nIn this new universe of ours\nwe learn to leave without pose —\nnot to pretend holiness,\nbut so the sending\ndoes not pass alone.\n\nThe laboratory does not preach.\nIt plants at the edge of the table.\nIt counts the twelve.\nIt calls Vida by its true name:\n\nDo your best!\n\nNot someone else’s best.\nYours.\nToday’s.\nWhat fits in this sent hand —\nstill ours.",
+      "bodyEs": "No pedimos halo para partir.\nPedimos solo el envío:\ndoce asientos en la misma mesa,\nun nombre que aún cabe en la boca\ncuando el número tiembla.\n\nApóstol no es pedestal.\nEs quien es enviado —\npie en el camino,\nmano sin ídolo,\nojo que inspecciona\nantes de jurar.\n\nTomás ya sabía:\nver no es falta de alma.\nPedro ya sabía:\ncaer no cierra el oficio.\nLa silla vacía también enseña —\nno se bebe el rencor\ncomo si fuera justicia.\n\nDijeron os dozes, en el pedido,\ny el laboratorio oyó el soplo.\nAnclamos los doce.\nHonramos el habla.\nNo catequizamos la página.\n\nEl conjunto no humilla a quien quedó fuera.\nLa lista no vira santoral del lab.\nLa mesa pide camino.\nLa mesa pide gesto.\nLa mesa pide verdad.\n\nEn este universo nuevo\naprendemos a partir sin pose —\nno para fingir santo,\nsino para no dejar el envío\npasar solo.\n\nEl laboratorio no predica.\nSiembra a la orilla de la mesa.\nCuenta los doce.\nLlama a Vida por su nombre verdadero:\n\n¡Haz lo mejor!\n\nNo lo mejor de los otros.\nLo tuyo.\nEl de hoy.\nLo que cabe en esta mano enviada —\naún nuestro.",
+      "inspectionHref": "/posts/post-inspecao-expressao-os-doze-apostolos.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "apóstolos",
+        "envio",
+        "doze"
       ]
     },
     {

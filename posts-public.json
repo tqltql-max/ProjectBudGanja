@@ -1786,6 +1786,25 @@
     "seriesLabel": "Mamão · fruto"
   },
   {
+    "title": "Inspeção: os doze apóstolos — conjunto, envio e ofício",
+    "titleEn": "Inspection: the twelve apostles — set, sending and craft",
+    "titleEs": "Inspección: los doce apóstoles — conjunto, envío y oficio",
+    "excerpt": "Expressões: «os doze apóstolos» — conjunto nomeado, frase viva BR e ofício de envio; listas divergentes; Tomé inspecciona; Faça o melhor!",
+    "excerptEn": "Sayings: “os doze apóstolos” — named set, living BR phrase and craft of being sent; divergent lists; Thomas inspects; Do your best!",
+    "excerptEs": "Dichos: «os doze apóstolos» — conjunto nombrado, frase viva BR y oficio de envío; listas divergentes; Tomás inspecciona; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-expressao-os-doze-apostolos",
+    "url": "/posts/post-inspecao-expressao-os-doze-apostolos.html",
+    "date": "2026-08-20T22:30:00.000Z",
+    "filename": "posts/post-inspecao-expressao-os-doze-apostolos.html",
+    "coverImage": "/imagens/inspecoes/doze-apostolos-cover.jpg",
+    "category": "inspecao",
+    "series": "expressoes-ditados",
+    "seriesOrder": 17,
+    "seriesLabel": "os doze apóstolos · expressão"
+  },
+  {
     "title": "Inspeção: nossa senhora, ambulância, sirene, Jesus Cristo — código vermelho oral",
     "titleEn": "Inspection: nossa senhora, ambulance, siren, Jesus Christ — oral code red",
     "titleEs": "Inspección: nossa senhora, ambulancia, sirena, Jesucristo — código rojo oral",
@@ -1860,25 +1879,6 @@
     "series": "plantas-medicinais",
     "seriesOrder": 17,
     "seriesLabel": "Copaíba"
-  },
-  {
-    "title": "Inspeção: os doze apóstolos — conjunto, envio e ofício",
-    "titleEn": "Inspection: the twelve apostles — set, sending and craft",
-    "titleEs": "Inspección: los doce apóstoles — conjunto, envío y oficio",
-    "excerpt": "Expressões: «os doze apóstolos» — conjunto nomeado, frase viva BR e ofício de envio; listas divergentes; Tomé inspecciona; Faça o melhor!",
-    "excerptEn": "Sayings: “os doze apóstolos” — named set, living BR phrase and craft of being sent; divergent lists; Thomas inspects; Do your best!",
-    "excerptEs": "Dichos: «os doze apóstolos» — conjunto nombrado, frase viva BR y oficio de envío; listas divergentes; Tomás inspecciona; ¡Haz lo mejor!",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-expressao-os-doze-apostolos",
-    "url": "/posts/post-inspecao-expressao-os-doze-apostolos.html",
-    "date": "2026-08-20T22:30:00.000Z",
-    "filename": "posts/post-inspecao-expressao-os-doze-apostolos.html",
-    "coverImage": "/imagens/inspecoes/doze-apostolos-cover.jpg",
-    "category": "inspecao",
-    "series": "expressoes-ditados",
-    "seriesOrder": 18,
-    "seriesLabel": "os doze apóstolos · expressão"
   },
   {
     "title": "Inspeção: Paulo Coelho — ofício de parábola e elo com O Alquimista",
