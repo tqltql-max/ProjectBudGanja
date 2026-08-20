@@ -1900,6 +1900,25 @@
     "seriesLabel": "Genial · palavra"
   },
   {
+    "title": "Inspeção: Steve Jobs — ofício, casa sem iPad e o mito do celular aos 18",
+    "titleEn": "Inspection: Steve Jobs — craft, a low-tech home, and the “phone at 18” myth",
+    "titleEs": "Inspección: Steve Jobs — oficio, casa sin iPad y el mito del móvil a los 18",
+    "excerpt": "Pessoas: Steve Jobs (1955–2011). A fala documentada é limite de tecnologia em casa e iPad não usado (2010) — não «celular só aos 18». Elo palavra Jobs, ídolo e ficha do celular.",
+    "excerptEn": "People: Steve Jobs (1955–2011). The documented line is a home tech limit and unused iPad (2010) — not “phones only after 18.” Links word Jobs, ídolo and the phone sheet.",
+    "excerptEs": "Personas: Steve Jobs (1955–2011). Lo documentado es límite de tecnología en casa e iPad no usado (2010) — no «móvil solo a los 18». Vínculos palabra Jobs, ídolo y ficha del celular.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-figura-steve-jobs",
+    "url": "/posts/post-inspecao-figura-steve-jobs.html",
+    "date": "2026-08-19T22:15:00.000Z",
+    "filename": "posts/post-inspecao-figura-steve-jobs.html",
+    "coverImage": "/imagens/inspecoes/steve-jobs-cover.jpg",
+    "category": "inspecao",
+    "series": "pessoas-historia",
+    "seriesOrder": 31,
+    "seriesLabel": "Steve Jobs · pessoa"
+  },
+  {
     "title": "Inspeção: Buguei — do inseto ao «deu ruim» e Faça o melhor!",
     "titleEn": "Inspection: Buguei — from insect to “it went bad” and Do your best!",
     "titleEs": "Inspección: Buguei — del insecto al «salió mal» y ¡Haz lo mejor!",
@@ -3437,6 +3456,25 @@
     "series": "palavras-origem",
     "seriesOrder": 119,
     "seriesLabel": "Sozinho · sozna · sozinha"
+  },
+  {
+    "title": "Inspeção: Jobs — trabalhos em inglês, nome próprio e ofício sem pedestal",
+    "titleEn": "Inspection: Jobs — English work, proper name, craft without a pedestal",
+    "titleEs": "Inspección: Jobs — trabajos en inglés, nombre propio y oficio sin pedestal",
+    "excerpt": "Palavras: «Jobs» — EN jobs (trabalhos) × Steve Jobs no BR; anti-culto de fundador; elos skill, ídolo e criatividade; Faça o melhor!",
+    "excerptEn": "Words: “Jobs” — EN jobs (work) × Steve Jobs in BR; anti-founder cult; links skill, ídolo and criatividade; Do your best!",
+    "excerptEs": "Palabras: «Jobs» — EN jobs (trabajos) × Steve Jobs en BR; anti-culto de fundador; vínculos skill, ídolo y criatividade; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-jobs",
+    "url": "/posts/post-inspecao-palavra-jobs.html",
+    "date": "2026-08-19T22:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-jobs.html",
+    "coverImage": "/imagens/inspecoes/jobs-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 120,
+    "seriesLabel": "Jobs · palavra"
   },
   {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",

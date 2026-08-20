@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T16:45:26.993Z",
+  "updatedAt": "2026-08-20T01:07:27.131Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1860,6 +1860,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-genial.html"
+    },
+    {
+      "id": "jobs",
+      "word": "Jobs",
+      "simple": "EN jobs (trabalhos) × nome próprio no BR (Steve Jobs); ofício sem pedestal; elos skill e ídolo; Faça o melhor!",
+      "simpleEn": "EN jobs (work) × proper name in BR (Steve Jobs); craft without a pedestal; links skill and ídolo; Do your best!",
+      "simpleEs": "EN jobs (trabajos) × nombre propio en BR (Steve Jobs); oficio sin pedestal; vínculos skill e ídolo; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-jobs.html"
+    },
+    {
+      "id": "steve-jobs",
+      "word": "Steve Jobs",
+      "simple": "Pessoa (1955–2011): ofício Apple; limite de tech em casa (iPad 2010). O «celular só aos 18» é meme — não a citação documentada.",
+      "simpleEn": "Person (1955–2011): Apple craft; home tech limit (iPad 2010). “Phone only after 18” is a meme — not the documented quote.",
+      "simpleEs": "Persona (1955–2011): oficio Apple; límite de tech en casa (iPad 2010). «Móvil solo a los 18» es meme — no la cita documentada.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-steve-jobs.html"
     },
     {
       "id": "gesto",

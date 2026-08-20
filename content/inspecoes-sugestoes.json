@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T16:45:26.988Z",
+  "updatedAt": "2026-08-20T01:07:27.127Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5739,6 +5739,54 @@
         "/posts/post-inspecao-arte-o-alquimista.html"
       ],
       "notes": "Pessoas ≠ Legado; ≠ léxico animal coelho; livro fica em Artes."
+    },
+    {
+      "id": "palavra-jobs",
+      "title": "Jobs — trabalhos EN, nome próprio e ofício sem pedestal",
+      "titleEn": "Jobs — EN work, proper name, craft without a pedestal",
+      "titleEs": "Jobs — trabajos EN, nombre propio y oficio sin pedestal",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: Jobs — EN jobs (trabalhos) × Steve Jobs no BR; anti-culto de fundador; elos skill/ídolo/criatividade; Faça o melhor!",
+      "whyEn": "Words: Jobs — EN jobs (work) × Steve Jobs in BR; anti-founder cult; links skill/ídolo/criatividade; Do your best!",
+      "whyEs": "Palabras: Jobs — EN jobs (trabajos) × Steve Jobs en BR; anti-culto de fundador; vínculos skill/ídolo/criatividade; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-jobs",
+      "doneHref": "/posts/post-inspecao-palavra-jobs.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Steve_Jobs",
+        "https://en.wiktionary.org/wiki/job",
+        "https://pt.wikipedia.org/wiki/Steve_Jobs",
+        "/posts/post-inspecao-palavra-skill.html",
+        "/posts/post-inspecao-palavra-idolo.html",
+        "/posts/post-inspecao-palavra-criatividade.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 120 — jobs EN × Jobs BR; ficha ≠ biografia; anti-pedestal; elos skill/ídolo."
+    },
+    {
+      "id": "figura-steve-jobs",
+      "title": "Steve Jobs — ofício, limite em casa e o mito do celular aos 18",
+      "titleEn": "Steve Jobs — craft, home limit, and the phone-at-18 myth",
+      "titleEs": "Steve Jobs — oficio, límite en casa y el mito del móvil a los 18",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas: Steve Jobs; fala NYT 2010/2014 (iPad + limite em casa) ≠ «celular aos 18»; elos palavra Jobs, ídolo, celular-crianças.",
+      "whyEn": "People: Steve Jobs; NYT 2010/2014 (iPad + home limit) ≠ “phone at 18”; links word Jobs, ídolo, kids-phone sheet.",
+      "whyEs": "Personas: Steve Jobs; NYT 2010/2014 (iPad + límite en casa) ≠ «móvil a los 18»; vínculos palabra Jobs, ídolo, ficha celular.",
+      "suggestedSlug": "inspecao-figura-steve-jobs",
+      "doneHref": "/posts/post-inspecao-figura-steve-jobs.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Steve_Jobs",
+        "https://www.nytimes.com/2014/09/11/fashion/steve-jobs-apple-was-a-low-tech-parent.html",
+        "/posts/post-inspecao-palavra-jobs.html",
+        "/posts/post-inspecao-palavra-idolo.html",
+        "/posts/post-inspecao-celular-riscos-saude-criancas.html"
+      ],
+      "notes": "Cap. 31 — «18» é meme; facto = limite em casa / iPad 2010; Eve ~13 na morte do pai."
     }
   ]
 }

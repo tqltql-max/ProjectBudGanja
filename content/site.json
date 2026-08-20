@@ -1043,6 +1043,14 @@
                   "description": "Palavras: «genial» — engenho no projecto BudGanja; escala com legal, maravilhoso e fantástico; Faça o melhor! ≠ seja génio; culto vazio = ressalva."
                 },
                 {
+                  "label": "Inspeção: Steve Jobs — ofício, casa sem iPad e o mito do celular aos 18",
+                  "tileLabel": "Inspeção: Steve Jobs — ofício, …",
+                  "href": "/posts/post-inspecao-figura-steve-jobs.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-figura-steve-jobs",
+                  "description": "Pessoas: Steve Jobs (1955–2011). A fala documentada é limite de tecnologia em casa e iPad não usado (2010) — não «celular só aos 18». Elo palavra Jobs, ídolo e ficha do celular."
+                },
+                {
                   "label": "Inspeção: Buguei — do inseto ao «deu ruim» e Faça o melhor!",
                   "tileLabel": "Inspeção: Buguei — do inseto ao…",
                   "href": "/posts/post-inspecao-palavra-buguei.html",
@@ -1689,6 +1697,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-sozna",
                   "description": "Palavras: **sozinho** (lat. *sōlus* + *-zinho*) — par **sozinha**; forma oral **sozna**; ≠ solitário; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Jobs — trabalhos em inglês, nome próprio e ofício sem pedestal",
+                  "tileLabel": "Inspeção: Jobs — trabalhos em i…",
+                  "href": "/posts/post-inspecao-palavra-jobs.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-jobs",
+                  "description": "Palavras: «Jobs» — EN jobs (trabalhos) × Steve Jobs no BR; anti-culto de fundador; elos skill, ídolo e criatividade; Faça o melhor!"
                 },
                 {
                   "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
