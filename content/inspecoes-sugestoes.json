@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T06:31:42.061Z",
+  "updatedAt": "2026-08-20T13:39:50.758Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6166,6 +6166,81 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "AVOD ≠ PD. It (2017) na home é aluguel. Catálogo roda."
+    },
+    {
+      "id": "arte-bitter-sweet-symphony",
+      "title": "Bitter Sweet Symphony — The Verve e o ofício do doce-amargo",
+      "titleEn": "Bitter Sweet Symphony — The Verve and the craft of the bittersweet",
+      "titleEs": "Bitter Sweet Symphony — The Verve y el oficio de lo agridulce",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canção 1997: The Verve / Urban Hymns — doce-amargo × vida / legal / caminho; Rockin'1000 como afterlife.",
+      "whyEn": "1997 song: The Verve / Urban Hymns — bittersweet × life / legal / path; Rockin'1000 as afterlife.",
+      "whyEs": "Canción 1997: The Verve / Urban Hymns — agridulce × vida / legal / camino; Rockin'1000 como afterlife.",
+      "suggestedSlug": "inspecao-arte-bitter-sweet-symphony",
+      "doneHref": "/posts/post-inspecao-arte-bitter-sweet-symphony.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-bitter-sweet-symphony.html",
+        "https://www.youtube.com/watch?v=iE_CGC8LGUQ",
+        "https://www.youtube.com/watch?v=1lyu1KKwC74",
+        "https://open.spotify.com/track/57iDDD9N9tTWe75x6qhStw",
+        "https://en.wikipedia.org/wiki/Bitter_Sweet_Symphony",
+        "/posts/post-inspecao-palavra-legal.html",
+        "/vida/"
+      ],
+      "notes": "Obra primeiro (1997); vídeo pedido = Rockin'1000 (cover colectivo); eco poético distinto da letra."
+    },
+    {
+      "id": "arte-every-breath-you-take",
+      "title": "Every Breath You Take — The Police e o ofício de olhar sem possuir",
+      "titleEn": "Every Breath You Take — The Police and the craft of looking without owning",
+      "titleEs": "Every Breath You Take — The Police y el oficio de mirar sin poseer",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canção 1983: The Police / Synchronicity — vigilância × perseguição / medo / coração.",
+      "whyEn": "1983 song: The Police / Synchronicity — surveillance × pursuit / fear / heart.",
+      "whyEs": "Canción 1983: The Police / Synchronicity — vigilancia × persecución / miedo / corazón.",
+      "suggestedSlug": "inspecao-arte-every-breath-you-take",
+      "doneHref": "/posts/post-inspecao-arte-every-breath-you-take.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-every-breath-you-take.html",
+        "https://www.youtube.com/watch?v=OMOGaugKpzs",
+        "https://music.youtube.com/watch?v=OMOGaugKpzs",
+        "https://open.spotify.com/track/1JSTJqkT5qHq8MDJnJbRE1",
+        "https://en.wikipedia.org/wiki/Every_Breath_You_Take",
+        "/posts/post-inspecao-palavra-perseguicao.html",
+        "/vida/"
+      ],
+      "notes": "Obra primeiro (1983); clipe oficial pedido; eco poético distinto da letra; não endossa vigilância."
+    },
+    {
+      "id": "arte-the-middle",
+      "title": "The Middle — Jimmy Eat World e o ofício de não se apagar",
+      "titleEn": "The Middle — Jimmy Eat World and the craft of not writing yourself off",
+      "titleEs": "The Middle — Jimmy Eat World y el oficio de no apagarse",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canção 2001: Jimmy Eat World / Bleed American — o meio da viagem × caminho / já / esperança.",
+      "whyEn": "2001 song: Jimmy Eat World / Bleed American — the middle of the ride × path / já / hope.",
+      "whyEs": "Canción 2001: Jimmy Eat World / Bleed American — el medio del viaje × camino / já / esperanza.",
+      "suggestedSlug": "inspecao-arte-the-middle",
+      "doneHref": "/posts/post-inspecao-arte-the-middle.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-the-middle.html",
+        "https://open.spotify.com/track/6GG73Jik4jUlQCkKg9JuGO",
+        "https://www.youtube.com/watch?v=oKsxPW6i3pM",
+        "https://music.youtube.com/watch?v=oKsxPW6i3pM",
+        "https://en.wikipedia.org/wiki/The_Middle_(Jimmy_Eat_World_song)",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/vida/"
+      ],
+      "notes": "Obra primeiro (2001); Spotify como referência pedida; eco poético distinto da letra."
     }
   ]
 }

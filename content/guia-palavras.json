@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T05:09:52.046Z",
+  "updatedAt": "2026-08-20T13:39:50.765Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -322,6 +322,36 @@
       "curiositiesEn": "The sheet crosses the track with creativity, joy and path — a vocabulary of wonder, not diagnosis.",
       "historyEs": "How Bizarre, del grupo neozelandés OMC, salió en 1995 desde Ōtara. El título inglés elige nombrar lo bizarro en vez de suavizarlo.",
       "curiositiesEs": "La ficha cruza el tema con creatividad, alegría y camino — vocabulario de asombro, no de diagnóstico."
+    },
+    {
+      "id": "bitter-sweet-symphony",
+      "word": "Bitter Sweet Symphony",
+      "simple": "Canção The Verve (1997): o doce e o amargo no mesmo pulso — génese em Urban Hymns; elo BudGanja com vida, legal e caminho.",
+      "simpleEn": "The Verve song (1997): sweet and bitter in the same pulse — genesis on Urban Hymns; BudGanja link to life, legal and path.",
+      "simpleEs": "Canción The Verve (1997): lo dulce y lo amargo en el mismo pulso — génesis en Urban Hymns; vínculo BudGanja con vida, legal y camino.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-bitter-sweet-symphony.html"
+    },
+    {
+      "id": "every-breath-you-take",
+      "word": "Every Breath You Take",
+      "simple": "Canção The Police (1983): o hino que o rádio ouviu como amor e Sting nomeou como vigilância — elo BudGanja com perseguição, medo e coração.",
+      "simpleEn": "The Police song (1983): the anthem radio heard as love and Sting named as surveillance — BudGanja link to pursuit, fear and heart.",
+      "simpleEs": "Canción The Police (1983): el himno que la radio oyó como amor y Sting nombró como vigilancia — vínculo BudGanja con persecución, miedo y corazón.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-every-breath-you-take.html"
+    },
+    {
+      "id": "the-middle",
+      "word": "The Middle",
+      "simple": "Canção Jimmy Eat World (2001): ficar no meio da viagem sem se escrever fora — génese em Bleed American; elo BudGanja com caminho, já e esperança.",
+      "simpleEn": "Jimmy Eat World song (2001): stay in the middle of the ride without writing yourself off — genesis on Bleed American; BudGanja link to path, já and hope.",
+      "simpleEs": "Canción Jimmy Eat World (2001): quedarse en medio del viaje sin escribirse fuera — génesis en Bleed American; vínculo BudGanja con camino, já y esperanza.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-the-middle.html"
     },
     {
       "id": "alma",

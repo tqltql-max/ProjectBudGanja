@@ -60,6 +60,21 @@ const {
   poemHowBizarreEs
 } = require('../lib/how-bizarre-inspecao-post.js');
 const {
+  poemBitterSweetSymphonyPt,
+  poemBitterSweetSymphonyEn,
+  poemBitterSweetSymphonyEs
+} = require('../lib/bitter-sweet-symphony-inspecao-post.js');
+const {
+  poemEveryBreathYouTakePt,
+  poemEveryBreathYouTakeEn,
+  poemEveryBreathYouTakeEs
+} = require('../lib/every-breath-you-take-inspecao-post.js');
+const {
+  poemTheMiddlePt,
+  poemTheMiddleEn,
+  poemTheMiddleEs
+} = require('../lib/the-middle-inspecao-post.js');
+const {
   poemSementeFoiPlantadaPt,
   poemSementeFoiPlantadaEn,
   poemSementeFoiPlantadaEs
@@ -302,6 +317,69 @@ const doc = {
       bodyEs: poemHowBizarreEs(),
       inspectionHref: '/posts/post-inspecao-arte-how-bizarre.html',
       tags: ['poesia', 'vida', 'omc', 'bizarro', 'ōtara', 'alegria']
+    },
+    {
+      id: 'bitter-sweet-symphony',
+      slug: 'bitter-sweet-symphony',
+      title: 'Bitter Sweet Symphony',
+      titleEn: 'Bitter Sweet Symphony',
+      titleEs: 'Bitter Sweet Symphony',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja da Verve — o doce e o amargo no mesmo pulso; vida, legal, e faça o melhor.',
+      teaserEn:
+        'BudGanja echo of The Verve — sweet and bitter in the same pulse; life, legal, and do your best.',
+      teaserEs:
+        'Eco BudGanja de The Verve — lo dulce y lo amargo en el mismo pulso; vida, legal, y haz lo mejor.',
+      body: poemBitterSweetSymphonyPt(),
+      bodyEn: poemBitterSweetSymphonyEn(),
+      bodyEs: poemBitterSweetSymphonyEs(),
+      inspectionHref: '/posts/post-inspecao-arte-bitter-sweet-symphony.html',
+      tags: ['poesia', 'vida', 'verve', 'doce', 'amargo', 'legal']
+    },
+    {
+      id: 'every-breath-you-take',
+      slug: 'every-breath-you-take',
+      title: 'Every Breath You Take',
+      titleEn: 'Every Breath You Take',
+      titleEs: 'Every Breath You Take',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja da Police — olhar sem possuir; perseguição, coração, e faça o melhor.',
+      teaserEn:
+        'BudGanja echo of The Police — look without owning; pursuit, heart, and do your best.',
+      teaserEs:
+        'Eco BudGanja de The Police — mirar sin poseer; persecución, corazón, y haz lo mejor.',
+      body: poemEveryBreathYouTakePt(),
+      bodyEn: poemEveryBreathYouTakeEn(),
+      bodyEs: poemEveryBreathYouTakeEs(),
+      inspectionHref: '/posts/post-inspecao-arte-every-breath-you-take.html',
+      tags: ['poesia', 'vida', 'police', 'olhar', 'perseguição', 'coração']
+    },
+    {
+      id: 'the-middle',
+      slug: 'the-middle',
+      title: 'The Middle',
+      titleEn: 'The Middle',
+      titleEs: 'The Middle',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja de Jimmy Eat World — ficar no meio da viagem sem se apagar; caminho, já, e faça o melhor.',
+      teaserEn:
+        'BudGanja echo of Jimmy Eat World — stay in the middle of the ride without erasing yourself; path, já, and do your best.',
+      teaserEs:
+        'Eco BudGanja de Jimmy Eat World — quedarse en medio del viaje sin apagarse; camino, já, y haz lo mejor.',
+      body: poemTheMiddlePt(),
+      bodyEn: poemTheMiddleEn(),
+      bodyEs: poemTheMiddleEs(),
+      inspectionHref: '/posts/post-inspecao-arte-the-middle.html',
+      tags: ['poesia', 'vida', 'jimmy-eat-world', 'meio', 'caminho', 'já']
     },
     {
       id: 'a-semente-foi-plantada',
