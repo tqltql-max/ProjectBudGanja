@@ -1767,6 +1767,25 @@
     "seriesLabel": "Mamão · fruto"
   },
   {
+    "title": "Inspeção: nossa senhora, ambulância, sirene, Jesus Cristo — código vermelho oral",
+    "titleEn": "Inspection: nossa senhora, ambulance, siren, Jesus Christ — oral code red",
+    "titleEs": "Inspección: nossa senhora, ambulancia, sirena, Jesucristo — código rojo oral",
+    "excerpt": "Expressões: nossa senhora, ambulância, sirene, Jesus Cristo — empilhamento céu+SAMU; escala acima de jesusudavi; Faça o melhor!",
+    "excerptEn": "Sayings: Our Lady, ambulance, siren, Jesus Christ — heaven+SAMU stack; above jesusudavi; Do your best!",
+    "excerptEs": "Dichos: Nuestra Señora, ambulancia, sirena, Jesucristo — apilamiento cielo+SAMU; sobre jesusudavi; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo",
+    "url": "/posts/post-inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo.html",
+    "date": "2026-08-20T21:40:00.000Z",
+    "filename": "posts/post-inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo.html",
+    "coverImage": "/imagens/inspecoes/nossa-senhora-ambulancia-cover.jpg",
+    "category": "inspecao",
+    "series": "expressoes-ditados",
+    "seriesOrder": 17,
+    "seriesLabel": "nossa senhora ambulância · expressão"
+  },
+  {
     "title": "Inspeção: Mel Gibson — ofício de ecrã, realização e as duas obras",
     "titleEn": "Inspection: Mel Gibson — screen craft, directing and the two works",
     "titleEs": "Inspección: Mel Gibson — oficio de pantalla, dirección y las dos obras",
@@ -4026,6 +4045,25 @@
     "series": "palavras-origem",
     "seriesOrder": 133,
     "seriesLabel": "Canhão · palavra"
+  },
+  {
+    "title": "Inspeção: Tônico — tônicos da palavra e os outros sentidos de tónos",
+    "titleEn": "Inspection: Tônico — word stress, lab tone, and the other senses of tónos",
+    "titleEs": "Inspección: Tônico — tónicos de la palabra y los otros sentidos de tónos",
+    "excerpt": "Palavras: «tônico» (gr. tónos) — sílaba tônica × tom do lab × planta × Ayurveda × crise × música × músculo × cosmética × água tónica; Faça o melhor!",
+    "excerptEn": "Words: “tônico” (Gr. tónos) — stress × lab tone × herb × Ayurveda × seizure × music × muscle × cosmetic × tonic water; Do your best!",
+    "excerptEs": "Palabras: «tônico» (gr. tónos) — sílaba × tono lab × planta × Ayurveda × crisis × música × músculo × cosmética × agua tónica; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-tonico",
+    "url": "/posts/post-inspecao-palavra-tonico.html",
+    "date": "2026-08-20T21:50:00.000Z",
+    "filename": "posts/post-inspecao-palavra-tonico.html",
+    "coverImage": "/imagens/inspecoes/tonico-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 134,
+    "seriesLabel": "Tônico · palavra"
   },
   {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",

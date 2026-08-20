@@ -987,6 +987,14 @@
                   "description": "*Carica papaya* — mamão brasileiro: polpa doce, papaína do látex e elo UNIFESP/SUS; separar fruto inteiro de néctares e ultraprocessados."
                 },
                 {
+                  "label": "Inspeção: nossa senhora, ambulância, sirene, Jesus Cristo — código vermelho oral",
+                  "tileLabel": "Inspeção: nossa senhora, ambulâ…",
+                  "href": "/posts/post-inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo",
+                  "description": "Expressões: nossa senhora, ambulância, sirene, Jesus Cristo — empilhamento céu+SAMU; escala acima de jesusudavi; Faça o melhor!"
+                },
+                {
                   "label": "Inspeção: Mel Gibson — ofício de ecrã, realização e as duas obras",
                   "tileLabel": "Inspeção: Mel Gibson — ofício d…",
                   "href": "/posts/post-inspecao-figura-mel-gibson.html",
@@ -1385,6 +1393,22 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-arte-the-middle",
                   "description": "Artes · canção 2001: Jimmy Eat World — The Middle (*Bleed American*); elo BudGanja com caminho, já e esperança — ficar no meio da viagem sem se escrever fora."
+                },
+                {
+                  "label": "Inspeção: Pelados em Santos — Mamonas e o ofício de rir sem esmagar",
+                  "tileLabel": "Inspeção: Pelados em Santos — M…",
+                  "href": "/posts/post-inspecao-arte-pelados-em-santos.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-pelados-em-santos",
+                  "description": "Artes · canção 1995: Mamonas Assassinas — Pelados em Santos; elo BudGanja com alegria, língua e objectos. Sabiam de tudo e cairam no lugar certo — ou não."
+                },
+                {
+                  "label": "Inspeção: Vira-Vira — Mamonas e o ofício de virar sem esmagar",
+                  "tileLabel": "Inspeção: Vira-Vira — Mamonas e…",
+                  "href": "/posts/post-inspecao-arte-vira-vira.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-vira-vira",
+                  "description": "Artes · canção 1995: Mamonas Assassinas — Vira-Vira; paródia do género (vira), não de um povo. Par de Pelados em Santos: o outro clipe."
                 },
                 {
                   "label": "Inspeção: Inacreditável — beyond belief, elogio BR e Faça o melhor!",
@@ -1921,6 +1945,22 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-canhao",
                   "description": "Palavras: canhão (*canna*); peça El Cristiano da Guerra do Paraguai; troféu no MHN; devolução autorizada (ago. 2026) ≠ entrega; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Tônico — tônicos da palavra e os outros sentidos de tónos",
+                  "tileLabel": "Inspeção: Tônico — tônicos da p…",
+                  "href": "/posts/post-inspecao-palavra-tonico.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-tonico",
+                  "description": "Palavras: «tônico» (gr. tónos) — sílaba tônica × tom do lab × planta × Ayurveda × crise × música × músculo × cosmética × água tónica; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Isotônico — iso- + tônico, tensão igual",
+                  "tileLabel": "Inspeção: Isotônico — iso- + tô…",
+                  "href": "/posts/post-inspecao-palavra-isotonico.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-isotonico",
+                  "description": "Palavras: «isotônico» — isola o tônico (tónos); iso- = igual; osmose × músculo × gôndola; ≠ chá, sílaba, água tónica; Faça o melhor!"
                 },
                 {
                   "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",

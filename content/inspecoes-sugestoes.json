@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T16:12:28.062Z",
+  "updatedAt": "2026-08-20T21:54:14.704Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6291,6 +6291,73 @@
         "/vida/"
       ],
       "notes": "Obra primeiro (1995); Spotify do álbum, não do filme 2023; sátira do género; eco poético distinto da letra."
+    },
+    {
+      "id": "expressao-nossa-senhora-ambulancia",
+      "title": "nossa senhora, ambulância, sirene, Jesus Cristo — código vermelho oral",
+      "titleEn": "nossa senhora, ambulance, siren, Jesus Christ — oral code red",
+      "titleEs": "nossa senhora, ambulancia, sirena, Jesucristo — código rojo oral",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: empilhamento céu+SAMU+sirene+Jesus Cristo; escala acima de jesusudavi; Faça o melhor!",
+      "whyEn": "Sayings: heaven+SAMU+siren+Jesus Christ stack; above jesusudavi; Do your best!",
+      "whyEs": "Dichos: apilamiento cielo+SAMU+sirena+Jesucristo; sobre jesusudavi; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo",
+      "doneHref": "/posts/post-inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-jesusudavi.html",
+        "/posts/post-inspecao-expressao-puta-que-pariu.html",
+        "/posts/post-inspecao-palavra-medo.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 17 Expressões — código vermelho oral BR."
+    },
+    {
+      "id": "palavra-tonico",
+      "title": "Tônico — tônicos da palavra e os outros sentidos de tónos",
+      "titleEn": "Tônico — word stress, lab tone, and the other senses of tónos",
+      "titleEs": "Tônico — tónicos de la palabra y los otros sentidos de tónos",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: tônico — sílaba tônica × tom do lab × planta × Ayurveda × crise × música × músculo × cosmética × água tónica.",
+      "whyEn": "Words: tônico — stress × lab tone × herb × Ayurveda × seizure × music × muscle × cosmetic × tonic water.",
+      "whyEs": "Palabras: tônico — sílaba × tono lab × planta × Ayurveda × crisis × música × músculo × cosmética × agua tónica.",
+      "suggestedSlug": "inspecao-palavra-tonico",
+      "doneHref": "/posts/post-inspecao-palavra-tonico.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/t%C3%B4nico",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-planta-pfaffia.html",
+        "/posts/post-inspecao-expressao-jesusudavi.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 134 — mapa de sentidos; não fundir ofícios."
+    },
+    {
+      "id": "palavra-isotonico",
+      "title": "Isotônico — iso- + tônico, tensão igual",
+      "titleEn": "Isotônico — iso- + tônico, equal tension",
+      "titleEs": "Isotônico — iso- + tônico, tensión igual",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: isotônico — isola o tônico; osmose × músculo × gôndola; ≠ chá/sílaba/água tónica.",
+      "whyEn": "Words: isotônico — isolates tônico; osmosis × muscle × shelf; ≠ herb/stress/tonic water.",
+      "whyEs": "Palabras: isotônico — aísla el tônico; ósmosis × músculo × góndola; ≠ té/sílaba/agua tónica.",
+      "suggestedSlug": "inspecao-palavra-isotonico",
+      "doneHref": "/posts/post-inspecao-palavra-isotonico.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/isot%C3%B4nico",
+        "/posts/post-inspecao-palavra-tonico.html",
+        "/posts/post-inspecao-palavra-agua.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 135 — iso- + tônico isolado."
     }
   ]
 }
