@@ -90,6 +90,26 @@
   force = true
 
 [[redirects]]
+  from = "/"
+  to = "/inverno/"
+  status = 302
+
+[[redirects]]
+  from = "/inicio"
+  to = "/inverno/"
+  status = 302
+
+[[redirects]]
+  from = "/inicio/"
+  to = "/inverno/"
+  status = 302
+
+[[redirects]]
+  from = "/index.html"
+  to = "/inverno/"
+  status = 302
+
+[[redirects]]
   from = "/inverno"
   to = "/inverno/"
   status = 301

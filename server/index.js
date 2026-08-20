@@ -364,7 +364,7 @@ function serveStatic(req, res, staticPath) {
       || pageName === 'version.json'
       || pageName === 'manifest.json'
       || pageName === 'js/app-version-check.js';
-    res.setHeader('Cache-Control', (headerOpts || neverCache) ? 'no-store, no-cache, must-revalidate' : getCacheControl(ext, requested));
+    res.setHeader('Cache-Control', (headerOpts.noStore || neverCache) ? 'no-store, no-cache, must-revalidate' : getCacheControl(ext, requested));
     // Pedir à Cloudflare para não reter ícones “envenenados” (ex.: oval verde immutable).
     if (/no-cache/i.test(res.getHeader('Cache-Control') || '')) {
       res.setHeader('CDN-Cache-Control', 'no-store');
