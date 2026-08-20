@@ -381,11 +381,37 @@ document.addEventListener('DOMContentLoaded', () => {
   const media = window.BudGanjaMediaUpload || null;
 
   function apiErrorMessage(res, data, fallback) {
-    if (data && data.error) return String(data.error);
-    if (res && res.status === 413) return 'Foto demasiado grande para o servidor. Tente uma foto mais leve.';
+    const raw = data && data.error ? String(data.error) : '';
+    const lower = raw.toLowerCase();
+    if (lower.indexOf('authentication required') !== -1) {
+      return 'Sessão expirada. Entre de novo e tente publicar.';
+    }
+    if (lower.indexOf('formato de mídia inválido') !== -1 || lower.indexOf('formato de midia inválido') !== -1) {
+      return 'Esta foto não foi aceite. Tire de novo em JPEG ou escolha outra da galeria.';
+    }
+    if (lower.indexOf('sessão actual') !== -1 || lower.indexOf('sessao actual') !== -1) {
+      return 'A foto não ficou ligada à sua conta. Entre de novo e envie outra vez.';
+    }
+    if (raw) return raw;
+    if (res && (res.status === 413 || res.status === 524)) {
+      return 'Foto demasiado grande para o servidor. Tente uma foto mais leve.';
+    }
     if (res && res.status === 401) return 'Sessão expirada. Entre de novo e tente publicar.';
+    if (res && (res.status === 502 || res.status === 504 || res.status === 522)) {
+      return 'O envio da foto falhou no servidor. Tente uma foto mais leve ou tente de novo.';
+    }
     if (res && res.status >= 500) return 'Erro no servidor ao enviar a foto. Tente de novo dentro de instantes.';
     return fallback;
+  }
+
+  async function readResponseJson(res) {
+    const text = await res.text();
+    if (!text) return {};
+    try {
+      return JSON.parse(text);
+    } catch (e) {
+      return {};
+    }
   }
 
   function syncPlantPhotoUi(hasPhoto) {
@@ -478,43 +504,57 @@ document.addEventListener('DOMContentLoaded', () => {
       if (plantSubmit) plantSubmit.disabled = true;
       setPlantStatus('A preparar foto…');
       try {
-        const data = typeof media.prepareAndReadDataUrl === 'function'
+        let data = typeof media.prepareAndReadDataUrl === 'function'
           ? await media.prepareAndReadDataUrl(pendingFile)
           : media.normalizeImageDataUrl(
             await media.readFileAsDataUrl(await media.prepareImageForUpload(pendingFile)),
             pendingFile
           );
-        if (!/^data:image\/(png|jpeg|jpg|webp|gif);base64,/i.test(String(data || ''))) {
+        data = String(data || '').replace(/\s+/g, '');
+        if (!/^data:image\/(png|jpeg|jpg|webp|gif);base64,[A-Za-z0-9+/]/i.test(data)) {
           setPlantStatus('Formato de foto inválido após otimização. Tire de novo em JPEG.', true);
           return;
         }
         setPlantStatus('A enviar foto…');
-        const upRes = await fetch('/api/cultivo/photo', {
+        let upRes = await fetch('/api/cultivo/photo', {
           method: 'POST',
           credentials: 'include',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ data })
+          body: JSON.stringify({ data: data })
         });
-        const upData = await upRes.json().catch(() => ({}));
+        let upData = await readResponseJson(upRes);
+        if (upRes.status === 413 && typeof media.prepareAndReadDataUrl === 'function') {
+          setPlantStatus('Foto grande — a reduzir e enviar de novo…');
+          data = await media.prepareAndReadDataUrl(pendingFile, { targetBytes: 380 * 1024, maxSide: 1280 });
+          data = String(data || '').replace(/\s+/g, '');
+          upRes = await fetch('/api/cultivo/photo', {
+            method: 'POST',
+            credentials: 'include',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ data: data })
+          });
+          upData = await readResponseJson(upRes);
+        }
         if (!upRes.ok) {
           setPlantStatus(apiErrorMessage(upRes, upData, 'Não foi possível enviar a foto.'), true);
           return;
         }
-        if (!upData.url || String(upData.url).indexOf('/uploads/') !== 0) {
+        if (!upData.url || String(upData.url).indexOf('/uploads/') === -1) {
           setPlantStatus('O servidor não devolveu o URL da foto.', true);
           return;
         }
+        const photoUrl = String(upData.url).trim();
         setPlantStatus('A publicar pedido…');
         const res = await fetch('/api/community/plant-id', {
           method: 'POST',
           credentials: 'include',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            photoUrl: upData.url,
+            photoUrl: photoUrl,
             caption: plantCaption ? plantCaption.value : ''
           })
         });
-        const payload = await res.json().catch(() => ({}));
+        const payload = await readResponseJson(res);
         if (!res.ok) {
           setPlantStatus(apiErrorMessage(res, payload, 'Não foi possível publicar.'), true);
           return;
