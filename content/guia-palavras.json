@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T01:07:27.131Z",
+  "updatedAt": "2026-08-20T01:44:40.204Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -110,6 +110,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-aff.html"
+    },
+    {
+      "id": "abracadabra",
+      "word": "Abracadabra",
+      "simple": "Fórmula de palco / amuleto; «abacadabra» é lapso oral da mesma palavra; a boca encena, as mãos fazem; elos gesto e skill; Faça o melhor!",
+      "simpleEn": "Stage formula / amulet; “abacadabra” is the oral slip of the same word; speech cues, hands do; links gesture and skill; Do your best!",
+      "simpleEs": "Fórmula de escenario / amuleto; «abacadabra» es el lapsus oral de la misma palabra; la boca señala, las manos hacen; vínculos gesto y skill; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-abracadabra.html"
     },
     {
       "id": "agua",
@@ -1862,6 +1872,16 @@
       "href": "/posts/post-inspecao-palavra-genial.html"
     },
     {
+      "id": "gemeos",
+      "word": "Gêmeos",
+      "simple": "Lat. geminus — par / signo Gemini; ≠ gênio (genius) nem génio da lâmpada; grafia gemeos; elos relação e genial; Faça o melhor em cada mão.",
+      "simpleEn": "Lat. geminus — twins / Gemini sign; ≠ gênio (genius) or lamp genie; typed gemeos; links relação and genial; Do your best in each hand.",
+      "simpleEs": "Lat. geminus — gemelos / signo Géminis; ≠ gênio ni genio de la lámpara; grafía gemeos; vínculos relação y genial; Haz lo mejor en cada mano.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-gemeos.html"
+    },
+    {
       "id": "jobs",
       "word": "Jobs",
       "simple": "EN jobs (trabalhos) × nome próprio no BR (Steve Jobs); ofício sem pedestal; elos skill e ídolo; Faça o melhor!",
@@ -1890,6 +1910,36 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-gesto.html"
+    },
+    {
+      "id": "esfregar",
+      "word": "Esfregar",
+      "simple": "Lat. fricare — atrito; no conto, cue da palma na lâmpada; no quarto, não é o clique; elos gesto e ligar; Faça o melhor nesta mão.",
+      "simpleEn": "Lat. fricare — atrito; no conto, cue da palma na lâmpada; no quarto, não é o clique; elos gesto e ligar; Faça o melhor nesta mão.",
+      "simpleEs": "Lat. fricare — atrito; no conto, cue da palma na lâmpada; no quarto, não é o clique; elos gesto e ligar; Faça o melhor nesta mão.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-esfregar.html"
+    },
+    {
+      "id": "desejos",
+      "word": "Desejos",
+      "simple": "Lat. desiderium — vontade viva × pack do conto; apontar ≠ cumprir; quota em três; elos lâmpada e esfregar; Faça o melhor sem pack.",
+      "simpleEn": "Lat. desiderium — vontade viva × pack do conto; apontar ≠ cumprir; quota em três; elos lâmpada e esfregar; Faça o melhor sem pack.",
+      "simpleEs": "Lat. desiderium — vontade viva × pack do conto; apontar ≠ cumprir; quota em três; elos lâmpada e esfregar; Faça o melhor sem pack.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-desejos.html"
+    },
+    {
+      "id": "tres",
+      "word": "Três",
+      "simple": "Lat. trēs — cardinal 3 / tres; no mapa da lâmpada, teto popular dos três desejos; não é método; Faça o melhor neste um.",
+      "simpleEn": "Lat. trēs — cardinal 3 / tres; no mapa da lâmpada, teto popular dos três desejos; não é método; Faça o melhor neste um.",
+      "simpleEs": "Lat. trēs — cardinal 3 / tres; no mapa da lâmpada, teto popular dos três desejos; não é método; Faça o melhor neste um.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-tres.html"
     },
     {
       "id": "gluten",
@@ -2440,6 +2490,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-luz.html"
+    },
+    {
+      "id": "lampada",
+      "word": "Lâmpada",
+      "simple": "Gr./lat. lampas — vaso de luz no quarto × vaso de desejo no conto; lampada = boca; génio mora dentro; ≠ gêmeos; Faça o melhor neste soquete.",
+      "simpleEn": "Gr./lat. lampas — vaso de luz no quarto × vaso de desejo no conto; lampada = boca; génio mora dentro; ≠ gêmeos; Faça o melhor neste soquete.",
+      "simpleEs": "Gr./lat. lampas — vaso de luz no quarto × vaso de desejo no conto; lampada = boca; génio mora dentro; ≠ gêmeos; Faça o melhor neste soquete.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-lampada.html"
     },
     {
       "id": "macaneta",

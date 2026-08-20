@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T01:07:27.127Z",
+  "updatedAt": "2026-08-20T01:44:40.202Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5787,6 +5787,139 @@
         "/posts/post-inspecao-celular-riscos-saude-criancas.html"
       ],
       "notes": "Cap. 31 — «18» é meme; facto = limite em casa / iPad 2010; Eve ~13 na morte do pai."
+    },
+    {
+      "id": "palavra-abracadabra",
+      "title": "Abracadabra — fórmula, palco e o lapso abacadabra",
+      "titleEn": "Abracadabra — formula, stage, and the slip abacadabra",
+      "titleEs": "Abracadabra — fórmula, escenario y el lapsus abacadabra",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: abracadabra (âncora) × abacadabra (oral); amuleto × palco × anti-atalho; elos gesto/skill/verdade; Faça o melhor!",
+      "whyEn": "Words: abracadabra (anchor) × abacadabra (oral); amulet × stage × anti-shortcut; links gesture/skill/truth; Do your best!",
+      "whyEs": "Palabras: abracadabra (ancla) × abacadabra (oral); amuleto × escenario × anti-atajo; vínculos gesto/skill/verdad; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-abracadabra",
+      "doneHref": "/posts/post-inspecao-palavra-abracadabra.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Abracadabra",
+        "https://pt.wiktionary.org/wiki/abracadabra",
+        "https://en.wikipedia.org/wiki/Abracadabra",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-skill.html",
+        "/posts/post-inspecao-palavra-verdade.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 121 — âncora abracadabra; alias abacadabra; ficha ≠ grimório."
+    },
+    {
+      "id": "palavra-gemeos",
+      "title": "Gêmeos — par, signo Gemini e a armadilha com gênio",
+      "titleEn": "Gêmeos — twins, Gemini, and the trap with gênio",
+      "titleEs": "Gêmeos — gemelos, Gemini y la trampa con gênio",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: gêmeos (geminus) ≠ gênio (genius); signo Gemini; ≠ lâmpada de Aladim; elos relação/genial; Faça o melhor!",
+      "whyEn": "Words: gêmeos (geminus) ≠ gênio (genius); Gemini sign; ≠ Aladdin lamp; links relação/genial; Do your best!",
+      "whyEs": "Palabras: gêmeos (geminus) ≠ gênio (genius); signo Gemini; ≠ lámpara de Aladino; vínculos relação/genial; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-gemeos",
+      "doneHref": "/posts/post-inspecao-palavra-gemeos.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/g%C3%AAmeo",
+        "https://en.wiktionary.org/wiki/Gemini",
+        "/posts/post-inspecao-palavra-genial.html",
+        "/posts/post-inspecao-palavra-abracadabra.html",
+        "/posts/post-inspecao-palavra-relacao.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 122 — geminus ≠ genius; alias gemeos/gemini; ficha ≠ horóscopo."
+    },
+    {
+      "id": "palavra-lampada",
+      "title": "Lâmpada — vaso de luz, vaso de desejo e o lapso lampada",
+      "titleEn": "Lâmpada — vessel of light, vessel of wish, and the slip lampada",
+      "titleEs": "Lâmpada — vaso de luz, vaso de deseo y el lapsus lampada",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: lâmpada (lampas) = vaso; lampada = boca; génio = inquilino; ≠ gêmeos; elos luz/esfregar/desejos; Faça o melhor!",
+      "whyEn": "Palavras: lâmpada (lampas) = vaso; lampada = boca; génio = inquilino; ≠ gêmeos; elos luz/esfregar/desejos; Faça o melhor!",
+      "whyEs": "Palavras: lâmpada (lampas) = vaso; lampada = boca; génio = inquilino; ≠ gêmeos; elos luz/esfregar/desejos; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-lampada",
+      "doneHref": "/posts/post-inspecao-palavra-lampada.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/l%C3%A2mpada",
+        "/posts/post-inspecao-palavra-lampada.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 123 — cluster Aladim / lâmpada."
+    },
+    {
+      "id": "palavra-esfregar",
+      "title": "Esfregar — fricção, cue da lâmpada e o clique que não é",
+      "titleEn": "Esfregar — friction, lamp cue, and the click it is not",
+      "titleEs": "Esfregar — fricción, señal de la lámpara y el clic que no es",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: esfregar (*fricare*) — cue táctil do conto ≠ ligar; elos lâmpada/gesto/desejos; Faça o melhor nesta palma.",
+      "whyEn": "Palavras: esfregar (*fricare*) — cue táctil do conto ≠ ligar; elos lâmpada/gesto/desejos; Faça o melhor nesta palma.",
+      "whyEs": "Palavras: esfregar (*fricare*) — cue táctil do conto ≠ ligar; elos lâmpada/gesto/desejos; Faça o melhor nesta palma.",
+      "suggestedSlug": "inspecao-palavra-esfregar",
+      "doneHref": "/posts/post-inspecao-palavra-esfregar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/esfregar",
+        "/posts/post-inspecao-palavra-lampada.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 124 — cluster Aladim / lâmpada."
+    },
+    {
+      "id": "palavra-desejos",
+      "title": "Desejos — vontade, pack da lâmpada e o ofício que não pede",
+      "titleEn": "Desejos — will, lamp pack, and the craft that does not ask",
+      "titleEs": "Desejos — voluntad, pack de la lámpara y el oficio que no pide",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: desejos (*desiderium*) — vontade × pack do génio; quota muitas vezes três; ≠ gesto; Faça o melhor sem pack.",
+      "whyEn": "Palavras: desejos (*desiderium*) — vontade × pack do génio; quota muitas vezes três; ≠ gesto; Faça o melhor sem pack.",
+      "whyEs": "Palavras: desejos (*desiderium*) — vontade × pack do génio; quota muitas vezes três; ≠ gesto; Faça o melhor sem pack.",
+      "suggestedSlug": "inspecao-palavra-desejos",
+      "doneHref": "/posts/post-inspecao-palavra-desejos.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/desejo",
+        "/posts/post-inspecao-palavra-lampada.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 125 — cluster Aladim / lâmpada."
+    },
+    {
+      "id": "palavra-tres",
+      "title": "Três — o 3, a quota dos desejos e o teto que não é método",
+      "titleEn": "Três — 3, the wish quota, and the cap that is not a method",
+      "titleEs": "Três — el 3, la cuota de deseos y el tope que no es método",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: três / 3 — cardinal (*trēs*) e quota popular dos três desejos; ≠ lei do clássico; Faça o melhor neste um.",
+      "whyEn": "Palavras: três / 3 — cardinal (*trēs*) e quota popular dos três desejos; ≠ lei do clássico; Faça o melhor neste um.",
+      "whyEs": "Palavras: três / 3 — cardinal (*trēs*) e quota popular dos três desejos; ≠ lei do clássico; Faça o melhor neste um.",
+      "suggestedSlug": "inspecao-palavra-tres",
+      "doneHref": "/posts/post-inspecao-palavra-tres.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/tr%C3%AAs",
+        "/posts/post-inspecao-palavra-lampada.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 126 — cluster Aladim / lâmpada."
     }
   ]
 }
