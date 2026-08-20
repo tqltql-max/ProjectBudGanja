@@ -1,19 +1,19 @@
 'use strict';
 
 /**
- * Injeta / actualiza «Pelados em Santos» (Artes · Mamonas Assassinas).
- * Uso: node scripts/upsert-arte-pelados-em-santos.js
+ * Injeta / actualiza «Vira-Vira» (Artes · Mamonas Assassinas).
+ * Uso: node scripts/upsert-arte-vira-vira.js
  */
 
 const fs = require('fs');
 const path = require('path');
 const {
-  buildPeladosEmSantosPost,
+  buildViraViraPost,
   YT,
   YT_MUSIC,
   SPOTIFY,
   WIKI
-} = require('../lib/pelados-em-santos-inspecao-post.js');
+} = require('../lib/vira-vira-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_FILE = path.join(ROOT, 'posts.json');
@@ -71,7 +71,7 @@ async function syncSql(post) {
 
 async function main() {
   const posts = JSON.parse(fs.readFileSync(POSTS_FILE, 'utf8'));
-  const post = buildPeladosEmSantosPost();
+  const post = buildViraViraPost();
   post.seriesOrder = nextArtesOrder(posts, post.seriesOrder, post.slug);
   upsertPost(posts, post);
   fs.writeFileSync(POSTS_FILE, JSON.stringify(posts, null, 2) + '\n', 'utf8');
@@ -85,45 +85,45 @@ async function main() {
   if (fs.existsSync(SUG_FILE)) {
     const sug = JSON.parse(fs.readFileSync(SUG_FILE, 'utf8'));
     const items = Array.isArray(sug.items) ? sug.items : [];
-    const sugId = 'arte-pelados-em-santos';
+    const sugId = 'arte-vira-vira';
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Pelados em Santos — Mamonas e o ofício de rir sem esmagar',
-      titleEn: 'Pelados em Santos — Mamonas and the craft of laughing without crushing',
-      titleEs: 'Pelados em Santos — Mamonas y el oficio de reír sin aplastar',
+      title: 'Vira-Vira — Mamonas e o ofício de virar sem esmagar',
+      titleEn: 'Vira-Vira — Mamonas and the craft of turning without crushing',
+      titleEs: 'Vira-Vira — Mamonas y el oficio de virar sin aplastar',
       tipo: 'arte',
       priority: 2,
       status: 'feita',
-      why: 'Canção 1995: Mamonas / EMI — Brasília amarela × alegria / língua / objectos; sabiam e cairam no lugar certo — ou não.',
-      whyEn: '1995 song: Mamonas / EMI — yellow Brasília × joy / language / objects; they knew and fell in the right place — or not.',
-      whyEs: 'Canción 1995: Mamonas / EMI — Brasília amarilla × alegría / lengua / objetos; lo sabían y cayeron en el lugar justo — o no.',
+      why: 'Canção 1995: Mamonas / EMI — paródia do vira (género), não de um povo; par de Pelados (o outro clipe).',
+      whyEn: '1995 song: Mamonas / EMI — parody of the vira (genre), not a people; pair with Pelados (the other clip).',
+      whyEs: 'Canción 1995: Mamonas / EMI — parodia del vira (género), no de un pueblo; par de Pelados (el otro clip).',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'artes-cultura',
-      sources: [href, SPOTIFY, YT, YT_MUSIC, WIKI, '/objetos/', '/vida/'],
-      notes: 'Obra primeiro (1995); Spotify pedido; queda em tensão (ou não); eco poético distinto da letra.'
+      sources: [href, SPOTIFY, YT, YT_MUSIC, WIKI, '/posts/post-inspecao-arte-pelados-em-santos.html', '/vida/'],
+      notes: 'Obra primeiro (1995); Spotify do álbum, não do filme 2023; sátira do género; eco poético distinto da letra.'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);
     sug.items = items;
     sug.updatedAt = new Date().toISOString();
     fs.writeFileSync(SUG_FILE, JSON.stringify(sug, null, 2) + '\n', 'utf8');
-    console.log('Sugestões actualizadas (arte-pelados-em-santos)');
+    console.log('Sugestões actualizadas (arte-vira-vira)');
   }
 
   if (fs.existsSync(GUIA_FILE)) {
     const guia = JSON.parse(fs.readFileSync(GUIA_FILE, 'utf8'));
     const items = Array.isArray(guia.items) ? guia.items : [];
     const entry = {
-      id: 'pelados-em-santos',
-      word: 'Pelados em Santos',
+      id: 'vira-vira',
+      word: 'Vira-Vira',
       simple:
-        'Canção Mamonas Assassinas (1995): rir da ostentação sem esmagar — Brasília amarela no mapa; sabiam e cairam no lugar certo — ou não.',
+        'Canção Mamonas Assassinas (1995): paródia do vira (género), não de um povo — o outro clipe, par de Pelados em Santos.',
       simpleEn:
-        'Mamonas Assassinas song (1995): laugh at ostentation without crushing — yellow Brasília on the map; they knew and fell in the right place — or not.',
+        'Mamonas Assassinas song (1995): parody of the vira (genre), not a people — the other clip, pair with Pelados em Santos.',
       simpleEs:
-        'Canción Mamonas Assassinas (1995): reír de la ostentación sin aplastar — Brasília amarilla en el mapa; lo sabían y cayeron en el lugar justo — o no.',
+        'Canción Mamonas Assassinas (1995): parodia del vira (género), no de un pueblo — el otro videoclip, par de Pelados em Santos.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -131,14 +131,14 @@ async function main() {
     const gi = items.findIndex((x) => x.id === entry.id);
     if (gi >= 0) items[gi] = Object.assign({}, items[gi], entry);
     else {
-      const after = items.findIndex((x) => x.id === 'the-middle');
+      const after = items.findIndex((x) => x.id === 'pelados-em-santos');
       if (after >= 0) items.splice(after + 1, 0, entry);
       else items.push(entry);
     }
     guia.items = items;
     guia.updatedAt = new Date().toISOString();
     fs.writeFileSync(GUIA_FILE, JSON.stringify(guia, null, 2) + '\n', 'utf8');
-    console.log('Guia de palavras actualizado (pelados-em-santos)');
+    console.log('Guia de palavras actualizado (vira-vira)');
   }
 
   try {

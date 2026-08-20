@@ -80,6 +80,11 @@ const {
   poemPeladosEmSantosEs
 } = require('../lib/pelados-em-santos-inspecao-post.js');
 const {
+  poemViraViraPt,
+  poemViraViraEn,
+  poemViraViraEs
+} = require('../lib/vira-vira-inspecao-post.js');
+const {
   poemSementeFoiPlantadaPt,
   poemSementeFoiPlantadaEn,
   poemSementeFoiPlantadaEs
@@ -406,6 +411,27 @@ const doc = {
       bodyEs: poemPeladosEmSantosEs(),
       inspectionHref: '/posts/post-inspecao-arte-pelados-em-santos.html',
       tags: ['poesia', 'vida', 'mamonas', 'santos', 'alegria', 'verdade']
+    },
+    {
+      id: 'vira-vira',
+      slug: 'vira-vira',
+      title: 'Vira-Vira',
+      titleEn: 'Vira-Vira',
+      titleEs: 'Vira-Vira',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja dos Mamonas — virar o género sem esmagar o vizinho; o outro clipe; faça o melhor.',
+      teaserEn:
+        'BudGanja echo of Mamonas — turn the genre without crushing the neighbour; the other clip; do your best.',
+      teaserEs:
+        'Eco BudGanja de Mamonas — virar el género sin aplastar al vecino; el otro videoclip; haz lo mejor.',
+      body: poemViraViraPt(),
+      bodyEn: poemViraViraEn(),
+      bodyEs: poemViraViraEs(),
+      inspectionHref: '/posts/post-inspecao-arte-vira-vira.html',
+      tags: ['poesia', 'vida', 'mamonas', 'vira', 'alegria', 'respeito']
     },
     {
       id: 'a-semente-foi-plantada',

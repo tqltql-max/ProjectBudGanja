@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T15:57:47.828Z",
+  "updatedAt": "2026-08-20T16:12:28.062Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6266,6 +6266,31 @@
         "/vida/"
       ],
       "notes": "Obra primeiro (1995); Spotify pedido; queda em tensão (ou não); eco poético distinto da letra."
+    },
+    {
+      "id": "arte-vira-vira",
+      "title": "Vira-Vira — Mamonas e o ofício de virar sem esmagar",
+      "titleEn": "Vira-Vira — Mamonas and the craft of turning without crushing",
+      "titleEs": "Vira-Vira — Mamonas y el oficio de virar sin aplastar",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canção 1995: Mamonas / EMI — paródia do vira (género), não de um povo; par de Pelados (o outro clipe).",
+      "whyEn": "1995 song: Mamonas / EMI — parody of the vira (genre), not a people; pair with Pelados (the other clip).",
+      "whyEs": "Canción 1995: Mamonas / EMI — parodia del vira (género), no de un pueblo; par de Pelados (el otro clip).",
+      "suggestedSlug": "inspecao-arte-vira-vira",
+      "doneHref": "/posts/post-inspecao-arte-vira-vira.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-vira-vira.html",
+        "https://open.spotify.com/track/2XGRcNVv7uJozHCRLl7SG8",
+        "https://www.youtube.com/watch?v=1WjI3DLOk4c",
+        "https://music.youtube.com/watch?v=1WjI3DLOk4c",
+        "https://pt.wikipedia.org/wiki/Vira-Vira",
+        "/posts/post-inspecao-arte-pelados-em-santos.html",
+        "/vida/"
+      ],
+      "notes": "Obra primeiro (1995); Spotify do álbum, não do filme 2023; sátira do género; eco poético distinto da letra."
     }
   ]
 }

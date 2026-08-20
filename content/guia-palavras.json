@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T15:57:47.835Z",
+  "updatedAt": "2026-08-20T16:12:28.069Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -362,6 +362,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-arte-pelados-em-santos.html"
+    },
+    {
+      "id": "vira-vira",
+      "word": "Vira-Vira",
+      "simple": "Canção Mamonas Assassinas (1995): paródia do vira (género), não de um povo — o outro clipe, par de Pelados em Santos.",
+      "simpleEn": "Mamonas Assassinas song (1995): parody of the vira (genre), not a people — the other clip, pair with Pelados em Santos.",
+      "simpleEs": "Canción Mamonas Assassinas (1995): parodia del vira (género), no de un pueblo — el otro videoclip, par de Pelados em Santos.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-vira-vira.html"
     },
     {
       "id": "alma",
