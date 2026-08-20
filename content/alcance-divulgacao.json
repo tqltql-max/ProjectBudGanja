@@ -1,0 +1,36 @@
+{
+  "updatedAt": "2026-08-20T22:15:00.000Z",
+  "note": "Registro de divulgação comunitária do laboratório — alcance declarado pelo aluno, sem nomes de terceiros. Não conta visualizações confirmadas.",
+  "events": [
+    {
+      "id": "xiv-aula-11-whatsapp-amigos-2026-08-20",
+      "date": "2026-08-20",
+      "timeLocal": "19:15",
+      "timezone": "America/Sao_Paulo",
+      "channel": "whatsapp",
+      "format": "audio",
+      "audience": {
+        "kind": "group",
+        "label": "grupo de amigos",
+        "count": 20
+      },
+      "subject": {
+        "kind": "aula-xiv",
+        "edition": 14,
+        "aula": 11,
+        "title": "Psicodélicos — Profª Dra. Eliana Rodrigues",
+        "youtubeId": "dV-6qKW1HXg",
+        "youtubeUrl": "https://www.youtube.com/watch?v=dV-6qKW1HXg",
+        "siteUrl": "/videos/?channel=movrecam&series=xiv#dV-6qKW1HXg",
+        "draftUrl": "/biblioteca/unifesp/livro-xiv.html#aula-11"
+      },
+      "message": {
+        "medium": "audio",
+        "transcriptRaw": "e ai galera asssisti essa aula ai é muioto boa voces vao gostar tenho certeza",
+        "transcript": "E aí galera, assisti essa aula aí, é muito boa, vocês vão gostar, tenho certeza."
+      },
+      "reachDeclared": 20,
+      "reachNote": "Alcance potencial do grupo (20 pessoas). Não conta visualizações confirmadas."
+    }
+  ]
+}
