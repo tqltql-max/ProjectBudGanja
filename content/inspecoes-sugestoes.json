@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T01:44:40.202Z",
+  "updatedAt": "2026-08-20T01:51:55.131Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5920,6 +5920,29 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 126 — cluster Aladim / lâmpada."
+    },
+    {
+      "id": "expressao-fim-da-linha",
+      "title": "fim da linha — fita, vida e confeito de chocolate",
+      "titleEn": "end of the line — tape, life and candy-coated chocolate",
+      "titleEs": "fin de la línea — cinta, vida y confite de chocolate",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: fim da linha — limite da fita, da vida e da esteira; caso M&M's (casca=fita, núcleo=vida); elos cinta, vida, chocolate.",
+      "whyEn": "Sayings: fim da linha — tape, life and factory belt; M&M's-format case; links cinta, vida, chocolate.",
+      "whyEs": "Dichos: fim da linha — cinta, vida y línea de fábrica; caso formato M&M's; vínculos cinta, vida, chocolate.",
+      "suggestedSlug": "inspecao-expressao-fim-da-linha",
+      "doneHref": "/posts/post-inspecao-expressao-fim-da-linha.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-palavra-cinta.html",
+        "/posts/post-inspecao-palavra-vida.html",
+        "/posts/post-inspecao-derivado-chocolate.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/vida/"
+      ],
+      "notes": "Cap. Expressões — locução fim da linha; caso de laboratório = confeito casca+chocolate; sem afiliação Mars/M&M's."
     }
   ]
 }

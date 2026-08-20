@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T01:44:40.204Z",
+  "updatedAt": "2026-08-20T01:51:54.523Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -860,6 +860,16 @@
       "group": "tecnico",
       "fromTitle": true,
       "href": "/posts/post-inspecao-derivado-chocolate.html"
+    },
+    {
+      "id": "fim-da-linha",
+      "word": "fim da linha",
+      "simple": "Expressão — limite da fita, da vida e da esteira; caso lab = confeito casca colorida + chocolate (formato M&M's); depois Faça o melhor!",
+      "simpleEn": "Saying — limit of the tape, of life and of the belt; lab case = colored shell + chocolate (M&M's format); then Do your best!",
+      "simpleEs": "Expresión — límite de la cinta, de la vida y de la línea; caso lab = cáscara de color + chocolate (formato M&M's); luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-fim-da-linha.html"
     },
     {
       "id": "christopher-lloyd",

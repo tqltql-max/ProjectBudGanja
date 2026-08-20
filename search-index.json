@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T01:47:09.576Z",
+  "updatedAt": "2026-08-20T02:12:53.111Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -162,6 +162,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: fim da linha — fita, vida e o confeito de chocolate",
+      "url": "/posts/post-inspecao-expressao-fim-da-linha.html",
+      "excerpt": "Expressões: «fim da linha» — limite da fita, da vida e da esteira; caso de laboratório = confeito casca colorida + chocolate (formato M&M's); elos cinta, vida, chocolate industrial.",
+      "text": "Inspeção: fim da linha — fita, vida e o confeito de chocolate Expressões: «fim da linha» — limite da fita, da vida e da esteira; caso de laboratório = confeito casca colorida + chocolate (formato M&M's); elos cinta, vida, chocolate industrial. inspecao ## Escopo\n\nInspeção editorial da locução **«[fim da linha](/posts/post-inspecao-expressao-fim-da-linha.html)»** — fim de percurso, de opções, de [fita](/posts/post-inspecao-palavra-cinta.html), de [vida](/posts/post-inspecao-palavra-vida.html) e de **esteira de fábrica**. O caso de laboratório é o **confeito de chocolate com casca colorida** (formato popular **M&M's**): a casca envolve como fita; o núcleo é o chocolate (a [vida](/posts/post-inspecao-palavra-vida.html) que a casca protege até o último gesto). Série Expressões; elos [cinta / fita](/posts/post-inspecao-palavra-cinta.html), palavra [vida](/posts/post-inspecao-palavra-vida.html) / trilha [Vida](/vida/), hub [chocolate industrial](/posts/post-inspecao-derivado-chocolate.html); fecho [Faça o melhor!](/posts/post-inspecao-expressao-faca-o-melhor.html).\n\n> **Nota metodológica:** auditoria independente BudGanja. Objecto = a **locução viva** e o **formato** do confeito (casca + núcleo), não a marca. **Sem afiliação com Mars / M&M's.** Ficha ≠ manual de fábrica, ≠ sermão de morte, ≠ aconselhamento médico. Indexar o formato ≠ endossar o snack.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Expressão | **fim da linha** |\n| Tipo | Locução / ditado de oralidade BR — termo · limite · esteira |\n| Núcleo semântico | Fim de percurso · resto da [fita](/posts/post-inspecao-palavra-cinta.html) · arco da [vida](/posts/post-inspecao-palavra-vida.html) · último da linha |\n| Caso de laboratório | Confeito casca colorida + chocolate (formato M&M's) |\n| Tipo BudGanja | Expressão — limite × suporte × vivo |\n| Elo fita | [cinta](/posts/post-inspecao-palavra-cinta.html) · [gesto](/posts/post-inspecao-palavra-gesto.html) · [risco](/posts/post-inspecao-palavra-risco.ht"
     },
     {
       "title": "Inspeção: Três — o 3, a quota dos desejos e o teto que não é método",
@@ -2928,6 +2934,12 @@
       "url": "/posts/post-inspecao-derivado-chocolate.html",
       "excerpt": "Matriz industrial que junta cacau, açúcar, farinha e leite — hub de Produtos nocivos.",
       "text": "Chocolate Matriz industrial que junta cacau, açúcar, farinha e leite — hub de Produtos nocivos. tecnico guia palavras glossário chocolate"
+    },
+    {
+      "title": "fim da linha",
+      "url": "/posts/post-inspecao-expressao-fim-da-linha.html",
+      "excerpt": "Expressão — limite da fita, da vida e da esteira; caso lab = confeito casca colorida + chocolate (formato M&M's); depois Faça o melhor!",
+      "text": "fim da linha Expressão — limite da fita, da vida e da esteira; caso lab = confeito casca colorida + chocolate (formato M&M's); depois Faça o melhor! lexico guia palavras glossário fim-da-linha"
     },
     {
       "title": "Christopher Lloyd",
