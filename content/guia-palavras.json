@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T04:47:24.949Z",
+  "updatedAt": "2026-08-20T05:09:52.046Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1906,6 +1906,16 @@
       "curiositiesEn": "The sheet asks respect for faith without proselytism — and the craft close: Do your best!",
       "historyEs": "Dios te bendiga / Deus abençoe es fórmula de bendición y despedida en el portugués de Brasil, de la tradición cristiana popular. La tipografía lab corrige Deus Abenço a la forma verbal viva.",
       "curiositiesEs": "La ficha pide respeto a la fe sin proselitismo — y el cierre de oficio: ¡Haz lo mejor!"
+    },
+    {
+      "id": "templo-de-cristo-corpo-e-alma",
+      "word": "o templo de Cristo, corpo e alma",
+      "simple": "Expressão — morada, Cristo e inteireza (corpo + alma); mapa cultural sem catecismo; não usar o templo para envergonhar o corpo; depois Faça o melhor!",
+      "simpleEn": "Saying — dwelling, Christ and wholeness (body + soul); cultural map, no catechism; temple is not a weapon against the body; then Do your best!",
+      "simpleEs": "Expresión — morada, Cristo y entereza (cuerpo + alma); mapa cultural sin catecismo; el templo no es arma contra el cuerpo; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-templo-de-cristo-corpo-e-alma.html"
     },
     {
       "id": "a-benca",

@@ -1634,6 +1634,25 @@
     "seriesLabel": "Unha-de-gato"
   },
   {
+    "title": "Inspeção: o templo de Cristo, corpo e alma — morada, inteireza e ofício",
+    "titleEn": "Inspection: the temple of Christ, body and soul — dwelling, wholeness and craft",
+    "titleEs": "Inspección: el templo de Cristo, cuerpo y alma — morada, entereza y oficio",
+    "excerpt": "Expressões: «o templo de Cristo, corpo e alma» — morada, nome e inteireza; peças templo · Cristo · corpo · alma; sem catecismo; Faça o melhor!",
+    "excerptEn": "Sayings: “o templo de Cristo, corpo e alma” — dwelling, name and wholeness; pieces temple · Christ · body · soul; no catechism; Do your best!",
+    "excerptEs": "Dichos: «o templo de Cristo, corpo e alma» — morada, nombre y entereza; piezas templo · Cristo · cuerpo · alma; sin catecismo; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-expressao-templo-de-cristo-corpo-e-alma",
+    "url": "/posts/post-inspecao-expressao-templo-de-cristo-corpo-e-alma.html",
+    "date": "2026-08-20T05:10:00.000Z",
+    "filename": "posts/post-inspecao-expressao-templo-de-cristo-corpo-e-alma.html",
+    "coverImage": "/imagens/inspecoes/templo-de-cristo-corpo-e-alma-cover.jpg",
+    "category": "inspecao",
+    "series": "expressoes-ditados",
+    "seriesOrder": 16,
+    "seriesLabel": "templo de Cristo · corpo e alma · expressão"
+  },
+  {
     "title": "Inspeção: Stephen King — o autor, a novela e Um Sonho de Liberdade",
     "titleEn": "Inspection: Stephen King — the author, the novella and The Shawshank Redemption",
     "titleEs": "Inspección: Stephen King — el autor, la novela y Cadena perpetua",

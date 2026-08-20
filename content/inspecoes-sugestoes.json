@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T04:47:24.946Z",
+  "updatedAt": "2026-08-20T05:09:52.041Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6117,6 +6117,29 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 133 — cluster Paraguai / canhão / PARAGYACYY."
+    },
+    {
+      "id": "expressao-templo-de-cristo-corpo-e-alma",
+      "title": "o templo de Cristo, corpo e alma — morada, inteireza e ofício",
+      "titleEn": "the temple of Christ, body and soul — dwelling, wholeness and craft",
+      "titleEs": "el templo de Cristo, cuerpo y alma — morada, entereza y oficio",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: templo · Cristo · corpo e alma — morada, nome e inteireza; sem catecismo; anti-vergonha do corpo.",
+      "whyEn": "Sayings: temple · Christ · body and soul — dwelling, name and wholeness; no catechism; no shaming the body.",
+      "whyEs": "Dichos: templo · Cristo · cuerpo y alma — morada, nombre y entereza; sin catecismo; sin vergüenza del cuerpo.",
+      "suggestedSlug": "inspecao-expressao-templo-de-cristo-corpo-e-alma",
+      "doneHref": "/posts/post-inspecao-expressao-templo-de-cristo-corpo-e-alma.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/templo",
+        "/posts/post-inspecao-palavra-alma.html",
+        "/posts/post-inspecao-expressao-filho-de-deus.html",
+        "/posts/post-inspecao-expressao-deus-abencoe.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. Expressões — fórmula de morada × inteireza; tipografia caixa alta → canónica com vírgula."
     }
   ]
 }
