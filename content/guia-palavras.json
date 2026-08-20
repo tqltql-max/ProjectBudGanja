@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T01:51:54.523Z",
+  "updatedAt": "2026-08-20T02:20:30.487Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1210,6 +1210,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-expressao-deus-abencoe.html"
+    },
+    {
+      "id": "a-benca",
+      "word": "a bença",
+      "simple": "Expressão — pedido BR de bênção (pai/mãe); sequência Deus te abençoe · dorme com Deus · amém; irmã de Deus abençoe; depois Faça o melhor!",
+      "simpleEn": "Saying — BR request for a blessing; sequence God bless you · sleep with God · amen; sister of Deus abençoe; then Do your best!",
+      "simpleEs": "Expresión — pedido BR de bendición; secuencia Dios te bendiga · duerme con Dios · amén; hermana de Deus abençoe; luego ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-a-benca.html"
     },
     {
       "id": "deus-deu-dois-ouvidos",

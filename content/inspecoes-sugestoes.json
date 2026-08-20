@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T01:51:55.131Z",
+  "updatedAt": "2026-08-20T02:20:30.483Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5943,6 +5943,28 @@
         "/vida/"
       ],
       "notes": "Cap. Expressões — locução fim da linha; caso de laboratório = confeito casca+chocolate; sem afiliação Mars/M&M's."
+    },
+    {
+      "id": "expressao-a-benca",
+      "title": "a bença — pedir bênção, dorme com Deus e amém",
+      "titleEn": "a bença — asking a blessing, sleep with God and amen",
+      "titleEs": "a bença — pedir la bendición, duerme con Dios y amén",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: a bença — pedido BR; sequência Deus te abençoe · dorme com Deus · amém; irmã de Deus abençoe; sem catecismo.",
+      "whyEn": "Sayings: a bença — BR request; God bless you · sleep with God · amen; sister of Deus abençoe; no catechism.",
+      "whyEs": "Dichos: a bença — pedido BR; Dios te bendiga · duerme con Dios · amén; hermana de Deus abençoe; sin catecismo.",
+      "suggestedSlug": "inspecao-expressao-a-benca",
+      "doneHref": "/posts/post-inspecao-expressao-a-benca.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-deus-abencoe.html",
+        "/posts/post-inspecao-palavra-mae.html",
+        "/posts/post-inspecao-palavra-noite.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. Expressões — pedir bença ≠ dar Deus abençoe; tipografia amem → amém."
     }
   ]
 }
