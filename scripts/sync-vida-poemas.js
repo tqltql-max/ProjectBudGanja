@@ -75,6 +75,11 @@ const {
   poemTheMiddleEs
 } = require('../lib/the-middle-inspecao-post.js');
 const {
+  poemPeladosEmSantosPt,
+  poemPeladosEmSantosEn,
+  poemPeladosEmSantosEs
+} = require('../lib/pelados-em-santos-inspecao-post.js');
+const {
   poemSementeFoiPlantadaPt,
   poemSementeFoiPlantadaEn,
   poemSementeFoiPlantadaEs
@@ -380,6 +385,27 @@ const doc = {
       bodyEs: poemTheMiddleEs(),
       inspectionHref: '/posts/post-inspecao-arte-the-middle.html',
       tags: ['poesia', 'vida', 'jimmy-eat-world', 'meio', 'caminho', 'já']
+    },
+    {
+      id: 'pelados-em-santos',
+      slug: 'pelados-em-santos',
+      title: 'Pelados em Santos',
+      titleEn: 'Pelados em Santos',
+      titleEs: 'Pelados em Santos',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja dos Mamonas — rir do ofício; sabiam e cairam no lugar certo — ou não; faça o melhor.',
+      teaserEn:
+        'BudGanja echo of Mamonas — laugh at the craft; they knew and fell in the right place — or not; do your best.',
+      teaserEs:
+        'Eco BudGanja de Mamonas — reír del oficio; lo sabían y cayeron en el lugar justo — o no; haz lo mejor.',
+      body: poemPeladosEmSantosPt(),
+      bodyEn: poemPeladosEmSantosEn(),
+      bodyEs: poemPeladosEmSantosEs(),
+      inspectionHref: '/posts/post-inspecao-arte-pelados-em-santos.html',
+      tags: ['poesia', 'vida', 'mamonas', 'santos', 'alegria', 'verdade']
     },
     {
       id: 'a-semente-foi-plantada',

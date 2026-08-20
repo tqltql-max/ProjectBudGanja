@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T13:39:50.765Z",
+  "updatedAt": "2026-08-20T15:57:47.835Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -352,6 +352,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-arte-the-middle.html"
+    },
+    {
+      "id": "pelados-em-santos",
+      "word": "Pelados em Santos",
+      "simple": "Canção Mamonas Assassinas (1995): rir da ostentação sem esmagar — Brasília amarela no mapa; sabiam e cairam no lugar certo — ou não.",
+      "simpleEn": "Mamonas Assassinas song (1995): laugh at ostentation without crushing — yellow Brasília on the map; they knew and fell in the right place — or not.",
+      "simpleEs": "Canción Mamonas Assassinas (1995): reír de la ostentación sin aplastar — Brasília amarilla en el mapa; lo sabían y cayeron en el lugar justo — o no.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-pelados-em-santos.html"
     },
     {
       "id": "alma",

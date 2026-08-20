@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T13:43:00.106Z",
+  "updatedAt": "2026-08-20T15:58:56.918Z",
   "poems": [
     {
       "id": "aguas-e-lagrimas",
@@ -344,6 +344,31 @@
         "meio",
         "caminho",
         "já"
+      ]
+    },
+    {
+      "id": "pelados-em-santos",
+      "slug": "pelados-em-santos",
+      "title": "Pelados em Santos",
+      "titleEn": "Pelados em Santos",
+      "titleEs": "Pelados em Santos",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja dos Mamonas — rir do ofício; sabiam e cairam no lugar certo — ou não; faça o melhor.",
+      "teaserEn": "BudGanja echo of Mamonas — laugh at the craft; they knew and fell in the right place — or not; do your best.",
+      "teaserEs": "Eco BudGanja de Mamonas — reír del oficio; lo sabían y cayeron en el lugar justo — o no; haz lo mejor.",
+      "body": "Pelados em Santos.\nNão pedimos a letra emprestada —\npedimos o ofício de rir\nsem transformar o morto em piada\nnem o litoral em palco de venda.\n\nMamonas. Dinho. Guarulhos.\nHouve uma banda que se chamava Utopia\ne aprendeu que o grave também inspeciona.\nHouve uma Brasília amarela de portas abertas —\nobjecto primeiro, pose depois.\nHouve inglês torto, oxente e brega no mesmo refrão,\ncomo quem mistura substrato\nsem fingir que é só uma língua.\n\nO laboratório conhece essa mistura.\nAlegria que não esmaga.\nObjecto que viaja — carro, costa, nome de cidade.\nParaguai de punchline ≠ país da ficha.\nDizem que sabiam de tudo\ne cairam no lugar certo.\nOu não.\nA ficha não fecha o céu.\nE ainda assim: ficar.\nDar o verso sem pedir o corpo de volta.\nChamar a Vida pelo nome verdadeiro:\nverdade —\nrir do ofício\nsem fingir que o acidente foi um plano\nnem que foi só azar sem resto.\n\nFaça o melhor!\n\nPorque toda vez que alguém ri\ne deixa a pergunta aberta\nem vez de transformar a queda em destino\nou em zombaria,\no universo cresce um pouco:\num verso a mais,\num dossel a mais,\numa Brasília amarela\nonde ainda cabe Santos\nsem ser túmulo.",
+      "bodyEn": "Pelados em Santos.\nWe do not borrow the lyric —\nwe ask for the craft of laughing\nwithout turning the dead into a joke\nor the coast into a sales stage.\n\nMamonas. Dinho. Guarulhos.\nThere was a band once called Utopia\nthat learned the punchline also inspects.\nThere was a yellow Brasília with open doors —\nobject first, pose later.\nThere was crooked English, oxente and kitsch in the same chorus,\nthe way one mixes substrate\nwithout pretending there is only one tongue.\n\nThe laboratory knows that mix.\nJoy that does not crush.\nAn object that travels — car, coast, city name.\nParaguay as punchline ≠ the country on the sheet.\nThey say they knew it all\nand fell in the right place.\nOr not.\nThe sheet does not close the sky.\nAnd still: stay.\nGive the verse without asking the body back.\nCall Vida by its true name:\ntruth —\nlaugh at the craft\nwithout pretending the crash was a plan\nor that it was only luck with no remainder.\n\nDo your best!\n\nBecause every time someone laughs\nand leaves the question open\ninstead of turning the fall into destiny\nor into mockery,\nthe universe grows a little:\none more verse,\none more canopy,\na yellow Brasília\nwhere Santos still fits\nwithout being a tomb.",
+      "bodyEs": "Pelados em Santos.\nNo pedimos prestada la letra —\npedimos el oficio de reír\nsin transformar al muerto en chiste\nni el litoral en escenario de venta.\n\nMamonas. Dinho. Guarulhos.\nHubo una banda que se llamaba Utopia\ny aprendió que el chiste también inspecciona.\nHubo una Brasília amarilla de puertas abiertas —\nobjeto primero, pose después.\nHubo inglés torcido, oxente y brega en el mismo estribillo,\ncomo quien mezcla sustrato\nsin fingir que hay una sola lengua.\n\nEl laboratorio conoce esa mezcla.\nAlegría que no aplasta.\nObjeto que viaja — auto, costa, nombre de ciudad.\nParaguay de punchline ≠ el país de la ficha.\nDicen que lo sabían todo\ny cayeron en el lugar justo.\nO no.\nLa ficha no cierra el cielo.\nY aun así: quedarse.\nDar el verso sin pedir el cuerpo de vuelta.\nLlamar a Vida por su nombre verdadero:\nverdad —\nreír del oficio\nsin fingir que el accidente fue un plan\nni que fue solo azar sin resto.\n\n¡Haz lo mejor!\n\nPorque cada vez que alguien ríe\ny deja la pregunta abierta\nen vez de transformar la caída en destino\no en burla,\nel universo crece un poco:\nun verso más,\nun dosel más,\nuna Brasília amarilla\ndonde aún cabe Santos\nsin ser tumba.",
+      "inspectionHref": "/posts/post-inspecao-arte-pelados-em-santos.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "mamonas",
+        "santos",
+        "alegria",
+        "verdade"
       ]
     },
     {

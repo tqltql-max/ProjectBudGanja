@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T13:39:50.758Z",
+  "updatedAt": "2026-08-20T15:57:47.828Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6241,6 +6241,31 @@
         "/vida/"
       ],
       "notes": "Obra primeiro (2001); Spotify como referência pedida; eco poético distinto da letra."
+    },
+    {
+      "id": "arte-pelados-em-santos",
+      "title": "Pelados em Santos — Mamonas e o ofício de rir sem esmagar",
+      "titleEn": "Pelados em Santos — Mamonas and the craft of laughing without crushing",
+      "titleEs": "Pelados em Santos — Mamonas y el oficio de reír sin aplastar",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canção 1995: Mamonas / EMI — Brasília amarela × alegria / língua / objectos; sabiam e cairam no lugar certo — ou não.",
+      "whyEn": "1995 song: Mamonas / EMI — yellow Brasília × joy / language / objects; they knew and fell in the right place — or not.",
+      "whyEs": "Canción 1995: Mamonas / EMI — Brasília amarilla × alegría / lengua / objetos; lo sabían y cayeron en el lugar justo — o no.",
+      "suggestedSlug": "inspecao-arte-pelados-em-santos",
+      "doneHref": "/posts/post-inspecao-arte-pelados-em-santos.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-pelados-em-santos.html",
+        "https://open.spotify.com/track/2iJpjciYl8vfQbb543b5Pb",
+        "https://www.youtube.com/watch?v=Nz7101ulkK0",
+        "https://music.youtube.com/watch?v=Nz7101ulkK0",
+        "https://pt.wikipedia.org/wiki/Pelados_em_Santos",
+        "/objetos/",
+        "/vida/"
+      ],
+      "notes": "Obra primeiro (1995); Spotify pedido; queda em tensão (ou não); eco poético distinto da letra."
     }
   ]
 }
