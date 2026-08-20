@@ -1,7 +1,7 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '336';
-const HOME = '/vida/';
+const ASSET_V = '338';
+const HOME = '/inverno/';
 
 let deferredInstallPrompt = null;
 let installFloatingBtn = null;
@@ -1347,7 +1347,7 @@ function getSiteHubNav(authState) {
             href: HOME,
             icon: '🏠',
             label: i18n('common.home', 'Início'),
-            prefixes: '/vida',
+            prefixes: '/inverno',
             exact: true,
             tone: 'inicio'
           },
@@ -1575,7 +1575,7 @@ function buildHeaderHTML(site, authState) {
     '</div>';
 
   const headerBoat =
-    '<a href="/inverno/" class="header-quick-link header-quick-link--inverno header-quick-link--boat"' +
+    '<a href="' + HOME + '" class="header-quick-link header-quick-link--brand header-quick-link--boat logo-link"' +
     ' data-active-prefixes="/inverno"' +
     ' data-tip="' + escapeNavText(i18n('nav.quickInvernoTip', 'O barco no gelo — Tamara e o ofício de ficar')) + '"' +
     ' aria-label="' + escapeNavText(i18n('nav.inverno', 'Bom dia, Inverno')) + '"' +
@@ -1595,16 +1595,8 @@ function buildHeaderHTML(site, authState) {
     '<div class="header-bar">' +
     '<div class="header-chrome header-chrome--main header-chrome--slim">' +
     '<div class="header-brand-group">' +
-    '<div class="header-brand-pair">' +
-    '<div class="logo">' +
-    '<a href="' + HOME + '" class="header-quick-link header-quick-link--brand logo-link" aria-label="' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '">' +
-    '<span class="header-quick-link-icon" aria-hidden="true">' +
-    '<img class="logo-mark-img" src="/imagens/app-icon.v' + ASSET_V + '.png" alt="" width="28" height="28" decoding="async">' +
-    '</span>' +
-    '<span class="header-quick-link-label">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
-    '</a></div>' +
     headerBoat +
-    '</div></div>' +
+    '</div>' +
     '<div id="header-radio-host" class="header-radio-host"></div>' +
     '<span class="header-chrome-sep" aria-hidden="true"></span>' +
     buildDesktopQuickNavHTML(authState) +

@@ -1235,13 +1235,6 @@ body.mobile-menu-open {
     max-width: 100%;
 }
 
-.header-brand-pair {
-    display: inline-flex;
-    align-items: center;
-    gap: 0;
-    flex-shrink: 0;
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -1334,45 +1327,35 @@ body.mobile-menu-open {
     transform: translateX(-50%);
 }
 
-.header-quick-link--brand {
-    --hq-accent: #e8f4f8;
-    --hq-accent-soft: rgba(244, 248, 252, 0.08);
-    --hq-accent-strong: rgba(244, 248, 252, 0.16);
-    --hq-accent-border: rgba(244, 248, 252, 0.14);
-    --hq-label: #e8f8ff;
-    --hq-icon-bg: #000000;
-    --hq-icon-border: rgba(244, 248, 252, 0.12);
+.header-quick-link--brand.header-quick-link--boat {
+    --hq-accent: #7ee8d2;
+    --hq-accent-soft: rgba(126, 232, 210, 0.14);
+    --hq-accent-strong: rgba(126, 232, 210, 0.28);
+    --hq-accent-border: rgba(126, 232, 210, 0.4);
+    --hq-label: #e8fffa;
+    --hq-icon-bg: transparent;
+    --hq-icon-border: transparent;
     --hq-icon-shadow: none;
-    max-width: 100%;
-    padding: 4px 2px;
+    padding: 4px;
     gap: 0;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: var(--hq-label);
 }
 
-.header-quick-link--brand .header-quick-link-label {
-    display: none;
-}
-
-.header-quick-link--brand .header-quick-link-icon {
+.header-quick-link--brand.header-quick-link--boat .header-quick-link-icon {
     width: 1.85rem;
     height: 1.85rem;
-    padding: 0;
-    overflow: hidden;
-    background: #000;
+    background: none;
     border: none;
     box-shadow: none;
 }
 
-.header-brand-pair .header-quick-link--boat {
-    padding: 4px 4px 4px 0;
+.header-quick-link--brand.header-quick-link--boat .header-boat-svg {
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
-.header-quick-link--brand:hover .header-quick-link-icon,
-.header-quick-link--brand:focus-visible .header-quick-link-icon,
-.header-quick-link--brand.is-active .header-quick-link-icon {
+.header-quick-link--brand.header-quick-link--boat:hover .header-quick-link-icon,
+.header-quick-link--brand.header-quick-link--boat:focus-visible .header-quick-link-icon,
+.header-quick-link--brand.header-quick-link--boat.is-active .header-quick-link-icon {
     box-shadow: none;
     transform: none;
 }
@@ -9098,9 +9081,8 @@ body[data-page="apresentacao-unifesp"] .apresentacao-ask .botao[download] {
         justify-content: flex-start;
     }
 
-    .header-quick-link--brand {
-        font-size: 0.72rem;
-        padding: 5px 8px 5px 5px;
+    .header-quick-link--brand.header-quick-link--boat {
+        padding: 4px;
     }
 
     .header-right {
@@ -10064,8 +10046,8 @@ html[data-theme="light"] .mobile-menu-link.is-active {
         display: none;
     }
 
-    .header-quick-link--brand {
-        padding: 5px 6px;
+    .header-quick-link--brand.header-quick-link--boat {
+        padding: 4px;
         gap: 0;
     }
 }
