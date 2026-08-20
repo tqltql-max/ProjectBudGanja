@@ -38,6 +38,25 @@
     "seriesLabel": "Rockstar Games · estúdio"
   },
   {
+    "title": "Inspeção: Principia — marca, rótulo e o claim dos dermatologistas",
+    "titleEn": "Inspection: Principia — brand, label, and the dermatologist claim",
+    "titleEs": "Inspección: Principia — marca, etiqueta y el claim de los dermatólogos",
+    "excerpt": "Lojas: Principia (dermocosmético BR) — concentrações no rótulo; «mais recomendada pelos dermatologistas» auditado (Memed: 2ª mais prescrita no recorte); sem endosso clínico.",
+    "excerptEn": "Shops: Principia (BR dermocosmetic) — concentrations on the label; “most recommended by dermatologists” audited (Memed: 2nd most prescribed in the clip); no clinical endorsement.",
+    "excerptEs": "Tiendas: Principia (dermocosmético BR) — concentraciones en la etiqueta; «la más recomendada por dermatólogos» auditado (Memed: 2.ª más prescrita en el recorte); sin endoso clínico.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-loja-principia",
+    "url": "/posts/post-inspecao-loja-principia.html",
+    "date": "2026-08-20T04:30:00.000Z",
+    "filename": "posts/post-inspecao-loja-principia.html",
+    "coverImage": "/imagens/inspecoes/principia-marca-cover.jpg",
+    "category": "inspecao",
+    "series": "loja-dermocosmetico",
+    "seriesOrder": 1,
+    "seriesLabel": "Principia · marca"
+  },
+  {
     "title": "Inspeção: Fungo — Psilocybe cubensis — identificação, UNIFESP e listas controladas",
     "titleEn": "Inspection: Fungus — Psilocybe cubensis — identification, UNIFESP and controlled lists",
     "titleEs": "Inspección: Hongo — Psilocybe cubensis — identificación, UNIFESP y listas controladas",
@@ -169,6 +188,25 @@
     "series": "plantas-frutos",
     "seriesOrder": 1,
     "seriesLabel": "Abacate · fruto"
+  },
+  {
+    "title": "Inspeção: FILMICCA — streaming com curadoria, site e o catálogo declarado",
+    "titleEn": "Inspection: FILMICCA — curated streaming, the site, and the declared catalogue",
+    "titleEs": "Inspección: FILMICCA — streaming con curaduría, el sitio y el catálogo declarado",
+    "excerpt": "Lojas · streaming: FILMICCA (filmicca.com.br) — plataforma BR 2021 (ex-Supo Mungam); curadoria humana é claim; catálogo e preços datados; só Brasil; sem endosso.",
+    "excerptEn": "Shops · streaming: FILMICCA (filmicca.com.br) — BR platform 2021 (ex-Supo Mungam); “human curation” is a claim; catalogue and prices dated; Brazil only; no endorsement.",
+    "excerptEs": "Tiendas · streaming: FILMICCA (filmicca.com.br) — plataforma BR 2021 (ex-Supo Mungam); la curaduría humana es claim; catálogo y precios fechados; solo Brasil; sin endoso.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-loja-filmicca",
+    "url": "/posts/post-inspecao-loja-filmicca.html",
+    "date": "2026-08-20T06:15:00.000Z",
+    "filename": "posts/post-inspecao-loja-filmicca.html",
+    "coverImage": "/imagens/inspecoes/filmicca-cover.jpg",
+    "category": "inspecao",
+    "series": "loja-streaming",
+    "seriesOrder": 2,
+    "seriesLabel": "FILMICCA · streaming"
   },
   {
     "title": "Homenagem: Miguel Nicolelis — pioneiro das interfaces cérebro-máquina",
@@ -3722,6 +3760,25 @@
     "series": "palavras-origem",
     "seriesOrder": 127,
     "seriesLabel": "Vassoura · palavra"
+  },
+  {
+    "title": "Inspeção: Porta Palavra #5 — mequetrefe e o brechó do dicionário",
+    "titleEn": "Inspection: Porta Palavra #5 — mequetrefe and the dictionary thrift shop",
+    "titleEs": "Inspección: Porta Palavra #5 — mequetrefe y el rastro del diccionario",
+    "excerpt": "Palavras: todas as peças de Porta Palavra #5 (Gregorio) nesta página — mequetrefe, jururu, pinimba, cooper, lorota, brechó; Faça o melhor!",
+    "excerptEn": "Words: every piece of Porta Palavra #5 (Gregorio) on this page — mequetrefe, jururu, pinimba, cooper, lorota, thrift shop; Do your best!",
+    "excerptEs": "Palabras: todas las piezas de Porta Palavra #5 (Gregorio) en esta página — mequetrefe, jururu, pinimba, cooper, lorota, rastro; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-mequetrefe",
+    "url": "/posts/post-inspecao-palavra-mequetrefe.html",
+    "date": "2026-08-20T04:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-mequetrefe.html",
+    "coverImage": "/imagens/inspecoes/mequetrefe-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 128,
+    "seriesLabel": "Mequetrefe · Porta Palavra #5"
   },
   {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",

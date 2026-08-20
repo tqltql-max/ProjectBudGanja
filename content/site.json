@@ -267,6 +267,14 @@
                   "description": "Estúdio/rótulo Rockstar Games (Take-Two, NY, 1998): rede de studios, GTA/Red Dead, RAGE — distinto do Caderno GTA 6. Ficção de crime ≠ manual de crime."
                 },
                 {
+                  "label": "Inspeção: Principia — marca, rótulo e o claim dos dermatologistas",
+                  "tileLabel": "Inspeção: Principia — marca, ró…",
+                  "href": "/posts/post-inspecao-loja-principia.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-loja-principia",
+                  "description": "Lojas: Principia (dermocosmético BR) — concentrações no rótulo; «mais recomendada pelos dermatologistas» auditado (Memed: 2ª mais prescrita no recorte); sem endosso clínico."
+                },
+                {
                   "label": "Inspeção: Fungo — Psilocybe cubensis — identificação, UNIFESP e listas controladas",
                   "tileLabel": "Inspeção: Fungo — Psilocybe cub…",
                   "href": "/posts/post-inspecao-fungo-psilocybe-cubensis.html",
@@ -291,6 +299,14 @@
                   "description": "Neurociências Cap. 1: endocanabinoidoma / ECS — receptores, ligandos e elos com Sidarta, Carlini, Albaugh e UNIFESP. Ficha educativa, não clínica."
                 },
                 {
+                  "label": "Inspeção: Caseína — leite bovino e proteína nociva ao organismo",
+                  "tileLabel": "Inspeção: Caseína — leite bovin…",
+                  "href": "/posts/post-inspecao-derivado-caseina.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-caseina",
+                  "description": "Produtos nocivos: caseína do leite (*Bos taurus*) — A1/BCM-7, inflamação (limites de evidência) e laticínios ultraprocessados versus leite tradicional. Elo com glúten e ficha da vaca."
+                },
+                {
                   "label": "Inspeção: Maconha — origem da palavra e transformação no Brasil",
                   "tileLabel": "Inspeção: Maconha — origem da p…",
                   "href": "/posts/post-inspecao-palavra-maconha.html",
@@ -313,6 +329,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-abacate",
                   "description": "*Persea americana* — polpa rica em MUFA, persina defensiva e etimologia náuatle *āhuacatl*; separar planta inteira de derivados industriais."
+                },
+                {
+                  "label": "Inspeção: FILMICCA — streaming com curadoria, site e o catálogo declarado",
+                  "tileLabel": "Inspeção: FILMICCA — streaming …",
+                  "href": "/posts/post-inspecao-loja-filmicca.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-loja-filmicca",
+                  "description": "Lojas · streaming: FILMICCA (filmicca.com.br) — plataforma BR 2021 (ex-Supo Mungam); curadoria humana é claim; catálogo e preços datados; só Brasil; sem endosso."
                 },
                 {
                   "label": "Homenagem: Miguel Nicolelis — pioneiro das interfaces cérebro-máquina",
@@ -395,6 +419,14 @@
                   "description": "Expressões: «jesusudavi» — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala aff × jesusamando; Faça o melhor!"
                 },
                 {
+                  "label": "Inspeção: Glúten / farinha — trigo e proteína nociva ao organismo",
+                  "tileLabel": "Inspeção: Glúten / farinha — tr…",
+                  "href": "/posts/post-inspecao-derivado-gluten.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-gluten",
+                  "description": "Produtos nocivos: glúten e farinha de trigo — celíaca, sensibilidade e ultraprocessados versus cereal tradicional. Elo com caseína, açúcar e chocolate industrial."
+                },
+                {
                   "label": "Inspeção: Profa. Solange Nappo — CEBRID",
                   "tileLabel": "Inspeção: Profa. Solange Nappo …",
                   "href": "/posts/post-inspecao-solange-nappo.html",
@@ -427,6 +459,14 @@
                   "description": "Expressões: «deu certo, galera» / deucer galerra — celebração colectiva; contraste com aff e buguei; elos genial, jesusamando, meudeusdoceu, Faça o melhor!"
                 },
                 {
+                  "label": "Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite",
+                  "tileLabel": "Inspeção: Chocolate industrial …",
+                  "href": "/posts/post-inspecao-derivado-chocolate.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-chocolate",
+                  "description": "Produtos nocivos: chocolate industrial como matriz que junta cacau, açúcar, farinha/trigo/glúten, leite/caseína, Barriga de Trigo (Davis) e o léxico catalogado — hub que relaciona tudo."
+                },
+                {
                   "label": "Inspeção: Planta — Cavalinha — sílica e remineralizante",
                   "tileLabel": "Inspeção: Planta — Cavalinha — …",
                   "href": "/posts/post-inspecao-planta-cavalinha.html",
@@ -441,6 +481,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-manga",
                   "description": "Relatório educacional de Manga (*Mangifera indica L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Análise: danos dos produtos nocivos × vídeos catalogados",
+                  "tileLabel": "Análise: danos dos produtos noc…",
+                  "href": "/posts/post-inspecao-derivado-analise-danos-videos.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-analise-danos-videos",
+                  "description": "Onde o acervo de vídeos do projecto sustenta (ou não) a rede açúcar · farinha · leite · chocolate: quase todo o discurso está no Lair; MovReCam/CANABinALL quase não entram neste eixo."
                 },
                 {
                   "label": "Inspeção: Planta — Erva-cidreira — citral e verbena brasileira",
@@ -779,6 +827,14 @@
                   "description": "Relatório educacional de Maracujá (fruta) (*Passiflora edulis Sims): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
                 },
                 {
+                  "label": "Inspeção: fim da linha — fita, vida e o confeito de chocolate",
+                  "tileLabel": "Inspeção: fim da linha — fita, …",
+                  "href": "/posts/post-inspecao-expressao-fim-da-linha.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-expressao-fim-da-linha",
+                  "description": "Expressões: «fim da linha» — limite da fita, da vida e da esteira; caso de laboratório = confeito casca colorida + chocolate (formato M&M's); elos cinta, vida, chocolate industrial."
+                },
+                {
                   "label": "Inspeção: canal Amyr Klink — ofício do pai, junto da Tamara",
                   "tileLabel": "Inspeção: canal Amyr Klink — of…",
                   "href": "/posts/post-inspecao-canal-amyrklink.html",
@@ -825,6 +881,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-tomatinho-cereja",
                   "description": "Tomatinho cereja (*Solanum lycopersicum* var. *cerasiforme*) — primeiro cultivo do Diário da Sementinha: fruto fresco vs ultraprocessados «tomato»."
+                },
+                {
+                  "label": "Inspeção: a bença — pedir bênção, dorme com Deus e amém",
+                  "tileLabel": "Inspeção: a bença — pedir bênçã…",
+                  "href": "/posts/post-inspecao-expressao-a-benca.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-expressao-a-benca",
+                  "description": "Expressões: «a bença» — pedido BR de bênção; sequência Deus te abençoe · dorme com Deus · amém (tipografia amem); irmã de Deus abençoe; sem catecismo."
                 },
                 {
                   "label": "Inspeção: canal Paulinho o LOKO — GTA RP, Anti-RP e arquivo de servidor",
@@ -1707,6 +1771,70 @@
                   "description": "Palavras: «Jobs» — EN jobs (trabalhos) × Steve Jobs no BR; anti-culto de fundador; elos skill, ídolo e criatividade; Faça o melhor!"
                 },
                 {
+                  "label": "Inspeção: Abracadabra — fórmula, palco e o lapso «abacadabra»",
+                  "tileLabel": "Inspeção: Abracadabra — fórmula…",
+                  "href": "/posts/post-inspecao-palavra-abracadabra.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-abracadabra",
+                  "description": "Palavras: «abracadabra» — âncora escrita; «abacadabra» = lapso oral; amuleto romano × cue de palco × anti-atalho; elos gesto, skill e verdade; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Gêmeos — par, signo Gemini e a armadilha com «gênio»",
+                  "tileLabel": "Inspeção: Gêmeos — par, signo G…",
+                  "href": "/posts/post-inspecao-palavra-gemeos.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-gemeos",
+                  "description": "Palavras: «gêmeos» (gemeos) — lat. geminus (par) ≠ genius (engenho / lâmpada); signo Gemini; elos relação e genial; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Lâmpada — vaso de luz, vaso de desejo e o lapso «lampada»",
+                  "tileLabel": "Inspeção: Lâmpada — vaso de luz…",
+                  "href": "/posts/post-inspecao-palavra-lampada.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-lampada",
+                  "description": "Palavras: «lâmpada» (lampada) — vaso de luz no quarto × lâmpada de Aladim; génio = inquilino; ≠ gêmeos; elos luz, ligar e abracadabra; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Esfregar — fricção, cue da lâmpada e o clique que não é",
+                  "tileLabel": "Inspeção: Esfregar — fricção, c…",
+                  "href": "/posts/post-inspecao-palavra-esfregar.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-esfregar",
+                  "description": "Palavras: «esfregar» (*fricare*) — gesto do conto na lâmpada de Aladim × clique do interruptor; ≠ ligar; elos gesto, desejos e três; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Desejos — vontade, pack da lâmpada e o ofício que não pede",
+                  "tileLabel": "Inspeção: Desejos — vontade, pa…",
+                  "href": "/posts/post-inspecao-palavra-desejos.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-desejos",
+                  "description": "Palavras: «desejos» (*desiderium*) — vontade viva × pack do génio; quota muitas vezes três; ≠ gesto; elos lâmpada, esfregar e três; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Três — o 3, a quota dos desejos e o teto que não é método",
+                  "tileLabel": "Inspeção: Três — o 3, a quota d…",
+                  "href": "/posts/post-inspecao-palavra-tres.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-tres",
+                  "description": "Palavras: «três» / 3 — cardinal (*trēs*) e quota popular dos três desejos da lâmpada; ≠ lei do clássico; elos desejos, esfregar e lâmpada; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Vassoura — varrer, cabo e o conto que não é receita",
+                  "tileLabel": "Inspeção: Vassoura — varrer, ca…",
+                  "href": "/posts/post-inspecao-palavra-vassoura.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-vassoura",
+                  "description": "Palavras: «vassoura» (lat. versōria) — utensílio de varrer × folclore da bruxa (hipótese XIV, sem receita) × vassoura-de-bruxa do cacau; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Porta Palavra #5 — mequetrefe e o brechó do dicionário",
+                  "tileLabel": "Inspeção: Porta Palavra #5 — me…",
+                  "href": "/posts/post-inspecao-palavra-mequetrefe.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-mequetrefe",
+                  "description": "Palavras: todas as peças de Porta Palavra #5 (Gregorio) nesta página — mequetrefe, jururu, pinimba, cooper, lorota, brechó; Faça o melhor!"
+                },
+                {
                   "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
                   "tileLabel": "Inspeção: Eletrizante — carga, …",
                   "href": "/posts/post-inspecao-palavra-eletrizante.html",
@@ -2252,14 +2380,6 @@
                   "description": "Auditoria do artigo de Brouns, van Buul & Shewry (Journal of Cereal Science, 2013) que examina as teses populares anti-trigo (incl. Barriga de Trigo / Davis) e conclui que o trigo integral não explica a obesidade na população geral."
                 },
                 {
-                  "label": "Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite",
-                  "tileLabel": "Inspeção: Chocolate industrial …",
-                  "href": "/posts/post-inspecao-derivado-chocolate.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-derivado-chocolate",
-                  "description": "Produtos nocivos: chocolate industrial como matriz que junta cacau, açúcar, farinha/trigo/glúten, leite/caseína, Barriga de Trigo (Davis) e o léxico catalogado — hub que relaciona tudo."
-                },
-                {
                   "label": "Inspeção: William Davis — cardiologista de Barriga de Trigo e o método anti-trigo",
                   "tileLabel": "Inspeção: William Davis — cardi…",
                   "href": "/posts/post-inspecao-figura-william-davis.html",
@@ -2274,30 +2394,6 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-arte-barriga-de-trigo",
                   "description": "Artes: Barriga de Trigo (*Wheat Belly*, 2011) — best-seller de William Davis sobre trigo, glúten, amilopectina A e gordura visceral. Autor em Pessoas; elo em Glúten / farinha."
-                },
-                {
-                  "label": "Análise: danos dos produtos nocivos × vídeos catalogados",
-                  "tileLabel": "Análise: danos dos produtos noc…",
-                  "href": "/posts/post-inspecao-derivado-analise-danos-videos.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-derivado-analise-danos-videos",
-                  "description": "Onde o acervo de vídeos do projecto sustenta (ou não) a rede açúcar · farinha · leite · chocolate: quase todo o discurso está no Lair; MovReCam/CANABinALL quase não entram neste eixo."
-                },
-                {
-                  "label": "Inspeção: Glúten / farinha — trigo e proteína nociva ao organismo",
-                  "tileLabel": "Inspeção: Glúten / farinha — tr…",
-                  "href": "/posts/post-inspecao-derivado-gluten.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-derivado-gluten",
-                  "description": "Produtos nocivos: glúten e farinha de trigo — celíaca, sensibilidade e ultraprocessados versus cereal tradicional. Elo com caseína, açúcar e chocolate industrial."
-                },
-                {
-                  "label": "Inspeção: Caseína — leite bovino e proteína nociva ao organismo",
-                  "tileLabel": "Inspeção: Caseína — leite bovin…",
-                  "href": "/posts/post-inspecao-derivado-caseina.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-derivado-caseina",
-                  "description": "Produtos nocivos: caseína do leite (*Bos taurus*) — A1/BCM-7, inflamação (limites de evidência) e laticínios ultraprocessados versus leite tradicional. Elo com glúten e ficha da vaca."
                 },
                 {
                   "label": "Inspeção: Animal — a palavra do alento, do vivo e do duplo sentido",

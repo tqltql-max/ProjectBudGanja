@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T02:33:51.858Z",
+  "updatedAt": "2026-08-20T04:36:08.328Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -369,7 +369,8 @@
       "seriesHint": "pessoas-historia",
       "sources": [
         "https://pt.wikipedia.org/wiki/Greg%C3%B3rio_Duvivier",
-        "/posts/post-inspecao-palavra-maconha.html"
+        "/posts/post-inspecao-palavra-maconha.html",
+        "/posts/post-inspecao-palavra-mequetrefe.html"
       ]
     },
     {
@@ -5987,6 +5988,79 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 127 — história e curiosidades; tropano = documentar ≠ receitar."
+    },
+    {
+      "id": "palavra-mequetrefe",
+      "title": "Porta Palavra #5 — mequetrefe e o brechó do dicionário",
+      "titleEn": "Porta Palavra #5 — mequetrefe and the dictionary thrift shop",
+      "titleEs": "Porta Palavra #5 — mequetrefe y el rastro del diccionario",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: todas as peças de Porta Palavra #5 nesta página — mequetrefe, jururu, pinimba, cooper, lorota, brechó.",
+      "whyEn": "Words: every Porta Palavra #5 piece on one page — mequetrefe, jururu, pinimba, cooper, lorota, thrift shop.",
+      "whyEs": "Palabras: todas las piezas de Porta Palavra #5 en una página — mequetrefe, jururu, pinimba, cooper, lorota, rastro.",
+      "suggestedSlug": "inspecao-palavra-mequetrefe",
+      "doneHref": "/posts/post-inspecao-palavra-mequetrefe.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://www.youtube.com/watch?v=4Ot7Mqlhlbo",
+        "https://pt.wiktionary.org/wiki/mequetrefe",
+        "https://www.dicio.com.br/mequetrefe/",
+        "/posts/post-inspecao-figura-duvivier.html",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 128 — todas as palavras do vídeo nesta página; âncora 4Ot7Mqlhlbo."
+    },
+    {
+      "id": "loja-principia",
+      "title": "Principia — marca, rótulo e o claim dos dermatologistas",
+      "titleEn": "Principia — brand, label, and the dermatologist claim",
+      "titleEs": "Principia — marca, etiqueta y el claim de los dermatólogos",
+      "tipo": "loja",
+      "priority": 2,
+      "status": "feita",
+      "why": "Lojas: Principia — «mais recomendada pelos dermatologistas» auditado (Memed 2ª prescrita no recorte); concentrações no rótulo; sem endosso clínico.",
+      "whyEn": "Shops: Principia — “most recommended by dermatologists” audited; concentrations on the label; no clinical endorsement.",
+      "whyEs": "Tiendas: Principia — «la más recomendada por dermatólogos» auditado; concentraciones en la etiqueta; sin endoso clínico.",
+      "suggestedSlug": "inspecao-loja-principia",
+      "doneHref": "/posts/post-inspecao-loja-principia.html",
+      "seriesHint": "loja-dermocosmetico",
+      "sources": [
+        "https://www.principiaskin.com/",
+        "https://panoramafarmaceutico.com.br/dermocosmeticos-de-alta-performance/",
+        "/posts/post-inspecao-palavra-anvisa.html",
+        "/posts/post-inspecao-palavra-risco.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Claim ≠ facto. Cosmético ≠ medicamento."
+    },
+    {
+      "id": "loja-filmicca",
+      "title": "FILMICCA — streaming com curadoria, site e catálogo declarado",
+      "titleEn": "FILMICCA — curated streaming, the site, and the declared catalogue",
+      "titleEs": "FILMICCA — streaming con curaduría, el sitio y el catálogo declarado",
+      "tipo": "loja",
+      "priority": 2,
+      "status": "feita",
+      "why": "Lojas · streaming: filmicca.com.br — plataforma BR (ex-Supo Mungam, 2021); curadoria humana é claim; catálogo/preços datados; só Brasil; sem endosso.",
+      "whyEn": "Shops · streaming: filmicca.com.br — BR platform (ex-Supo Mungam, 2021); human curation is a claim; dated catalogue/prices; Brazil only; no endorsement.",
+      "whyEs": "Tiendas · streaming: filmicca.com.br — plataforma BR (ex-Supo Mungam, 2021); la curaduría humana es claim; catálogo/precios fechados; solo Brasil; sin endoso.",
+      "suggestedSlug": "inspecao-loja-filmicca",
+      "doneHref": "/posts/post-inspecao-loja-filmicca.html",
+      "seriesHint": "loja-streaming",
+      "sources": [
+        "https://www.filmicca.com.br/",
+        "https://www.filmicca.com.br/sobre",
+        "https://www.filmicca.com.br/ajuda/o-que-e-a-filmicca",
+        "https://www.filmicca.com.br/termos-de-uso",
+        "https://loja.filmicca.com.br/pages/sobre",
+        "https://pt.wikipedia.org/wiki/Filmicca",
+        "/posts/post-inspecao-palavra-pipoca.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Site ≠ filme. Indexar ≠ endosso. FAQ ~400 vs imprensa ~630: datar."
     }
   ]
 }
