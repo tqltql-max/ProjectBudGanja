@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T21:54:14.709Z",
+  "updatedAt": "2026-08-20T22:27:26.583Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -82,6 +82,16 @@
       "curiositiesEn": "In the lab the Arts sheet keeps the film apart from Braveheart: same craftsperson, different texts and centuries.",
       "historyEs": "The Passion of the Christ se estrenó en 2004, dirigida por Mel Gibson a partir de los Evangelios de la Pasión. El título brasileño fija «Paixão» en el sentido litúrgico de sufrimiento, no de romance.",
       "curiositiesEs": "En el laboratorio la ficha de Artes separa la película de Braveheart: la misma persona en el oficio, textos y siglos distintos."
+    },
+    {
+      "id": "santa-ceia",
+      "word": "Santa Ceia",
+      "simple": "Pintura mural de Leonardo da Vinci (1495–1498, Milão); no site, inspeção em Artes (A Última Ceia / Santa Ceia). Evangelhos primeiro; mural ≠ sacramento. Autor em Pessoas.",
+      "simpleEn": "Leonardo da Vinci mural (1495–1498, Milan); on the site, an Arts inspection (The Last Supper). Gospels first; mural ≠ sacrament. Author in People.",
+      "simpleEs": "Mural de Leonardo da Vinci (1495–1498, Milán); en el sitio, inspección en Artes (La última cena). Evangelios primero; mural ≠ sacramento. Autor en Personas.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-santa-ceia.html"
     },
     {
       "id": "acesso-gratuito-justica",
@@ -1966,6 +1976,22 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-expressao-templo-de-cristo-corpo-e-alma.html"
+    },
+    {
+      "id": "os-doze-apostolos",
+      "word": "os doze apóstolos",
+      "simple": "Expressão — conjunto nomeado da tradição cristã e frase viva BR; apóstolo = enviado, não ídolo; Tomé inspecciona; ficha ≠ catecismo; Faça o melhor!",
+      "simpleEn": "Saying — named set in Christian tradition and living BR phrase; apostle = one sent, not an idol; Thomas inspects; sheet ≠ catechism; Do your best!",
+      "simpleEs": "Expresión — conjunto nombrado de la tradición cristiana y frase viva BR; apóstol = enviado, no ídolo; Tomás inspecciona; ficha ≠ catecismo; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-os-doze-apostolos.html",
+      "history": "Apóstolo vem do grego apóstolos, «enviado». Os Evangelhos e Atos nomeiam um grupo de doze com listas que divergem em um ou dois nomes; Matias restaura a quota depois de Judas; Paulo é apóstolo e não um dos Doze. No Brasil a frase vive em igrejas, topónimos e na metáfora de equipa completa.",
+      "curiosities": "O pedido chegou «os dozes apostulos»: dozes por analogia com os dois / os três; apostulos sem acento. A ficha honra o pedido e ancora os doze apóstolos. Tomé é par de ofício do laboratório: inspecionar antes de jurar.",
+      "historyEn": "Apostle comes from Greek apóstolos, “one sent”. The Gospels and Acts name a group of twelve with lists that diverge on one or two names; Matthias restores the quota after Judas; Paul is an apostle and not one of the Twelve. In Brazil the phrase lives in churches, place-names and as a metaphor for a complete team.",
+      "curiositiesEn": "The request arrived as “os dozes apostulos”: dozes by analogy with os dois / os três; apostulos unaccented. The sheet honors the request and anchors os doze apóstolos. Thomas is craft-kin of the lab: inspect before swearing.",
+      "historyEs": "Apóstol viene del griego apóstolos, «enviado». Los Evangelios y Hechos nombran un grupo de doce con listas que divergen en uno o dos nombres; Matías restaura la cuota después de Judas; Pablo es apóstol y no uno de los Doce. En Brasil la frase vive en iglesias, topónimos y como metáfora de equipo completo.",
+      "curiositiesEs": "El pedido llegó como «os dozes apostulos»: dozes por analogía con os dois / os três; apostulos sin acento. La ficha honra el pedido y ancla os doze apóstolos. Tomás es par de oficio del laboratorio: inspeccionar antes de jurar."
     },
     {
       "id": "a-benca",
@@ -5180,6 +5206,16 @@
       "curiositiesEs": "Autor inspeccionado × obra inspeccionada: dos objetos, un nombre civil."
     },
     {
+      "id": "leonardo-da-vinci",
+      "word": "Leonardo da Vinci",
+      "simple": "Pintor e desenhador (1452–1519); no site, ficha em Pessoas com elo ao mural Santa Ceia / A Última Ceia. Distinto do romance Código Da Vinci.",
+      "simpleEn": "Painter and draughtsman (1452–1519); on the site, People sheet linked to The Last Supper mural. Distinct from The Da Vinci Code novel.",
+      "simpleEs": "Pintor y dibujante (1452–1519); en el sitio, ficha en Personas con vínculo a La última cena. Distinto de la novela El código Da Vinci.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-leonardo-da-vinci.html"
+    },
+    {
       "id": "pattern",
       "word": "pattern",
       "simple": "EN — molde / padrão / design pattern no BR; repetição reconhecível; elos gesto/caminho; Faça o melhor com o molde certo.",
@@ -6842,6 +6878,26 @@
       "curiositiesEn": "Literacy of a cited practice — no asana protocol in this glossary.",
       "historyEs": "Yoga viene del sánscrito yoga (unión, yugo) y nombra la práctica cuerpo-mente. En el bloque XIV de PIC endógenas, retiros intensivos (p. ej. 4 días) aparecen en estudios observacionales con AEA/2-AG/BDNF.",
       "curiositiesEs": "Literacia de práctica citada — sin protocolo de āsana en este glosario."
+    },
+    {
+      "id": "the-chosen",
+      "word": "The Chosen",
+      "simple": "Série de 2019– sobre o ministério de Jesus (Os Escolhidos); no site, inspeção em Artes — Dallas Jenkins; Evangelhos primeiro. Onde assistir: app e site oficiais. Ficha própria, distinta de A Paixão de Cristo.",
+      "simpleEn": "2019– series on Jesus’s ministry (The Chosen); on the site, an Arts inspection — Dallas Jenkins; Gospels first. Watch: official app and site. Own sheet, distinct from The Passion of the Christ.",
+      "simpleEs": "Serie de 2019– sobre el ministerio de Jesús (Os Escolhidos); en el sitio, inspección en Artes — Dallas Jenkins. Dónde ver: app y web oficiales. Ficha propia, distinta de A Paixão de Cristo.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-serie-the-chosen.html"
+    },
+    {
+      "id": "os-escolhidos",
+      "word": "Os Escolhidos",
+      "simple": "Título BR/PT de The Chosen; no site, a mesma inspeção em Artes — série sobre Jesus; app oficial para assistir. Distinta de A Paixão de Cristo.",
+      "simpleEn": "BR/PT title of The Chosen; same Arts inspection on the site — Jesus series; official app to watch. Distinct from The Passion of the Christ.",
+      "simpleEs": "Título BR/PT de The Chosen; la misma inspección en Artes — serie sobre Jesús; app oficial para ver. Distinta de A Paixão de Cristo.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-serie-the-chosen.html"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T22:08:14.018Z",
+  "updatedAt": "2026-08-20T22:27:26.577Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3249,7 +3249,7 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html",
         "/posts/post-inspecao-padre-ticao.html"
       ],
-      "notes": "Cap. 9 Expressões — mapa de usos; ficha ≠ catecismo."
+      "notes": "Cap. 6 Expressões — mapa de usos; ficha ≠ catecismo."
     },
     {
       "id": "palavra-especial",
@@ -5427,8 +5427,7 @@
       "sources": [
         "https://pt.wikipedia.org/wiki/Braveheart",
         "/posts/post-inspecao-filme-a-paixao-de-cristo.html",
-        "https://www.youtube.com/watch?v=nMft5QDOHek",
-        "/posts/post-inspecao-figura-mel-gibson.html"
+        "https://www.youtube.com/watch?v=nMft5QDOHek"
       ],
       "notes": "Separado de A Paixão de Cristo. Ficção histórica ≠ manual."
     },
@@ -5449,8 +5448,7 @@
       "sources": [
         "https://pt.wikipedia.org/wiki/A_Paix%C3%A3o_de_Cristo",
         "/posts/post-inspecao-filme-coracao-valente.html",
-        "https://www.youtube.com/watch?v=4Aif1qEB_JU",
-        "/posts/post-inspecao-figura-mel-gibson.html"
+        "https://www.youtube.com/watch?v=4Aif1qEB_JU"
       ],
       "notes": "Separado de Coração Valente. Sem proselitismo. Controvérsia = recepção."
     },
@@ -6381,6 +6379,95 @@
         "https://www.youtube.com/watch?v=TkMvN7PciFc"
       ],
       "notes": "Cap. 2 — indicação de cópia legal."
+    },
+    {
+      "id": "arte-santa-ceia",
+      "title": "Santa Ceia — A Última Ceia de Leonardo da Vinci",
+      "titleEn": "The Last Supper — Leonardo da Vinci’s mural in Milan",
+      "titleEs": "La última cena — el mural de Leonardo da Vinci en Milán",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes: Santa Ceia / A Última Ceia (1495–1498) — Evangelhos primeiro; mural ≠ sacramento. Autor em Leonardo da Vinci (Pessoas).",
+      "whyEn": "Arts: The Last Supper (1495–1498) — Gospels first; mural ≠ sacrament. Author in Leonardo da Vinci (People).",
+      "whyEs": "Artes: La última cena (1495–1498) — Evangelios primero; mural ≠ sacramento. Autor en Leonardo da Vinci (Personas).",
+      "suggestedSlug": "inspecao-arte-santa-ceia",
+      "doneHref": "/posts/post-inspecao-arte-santa-ceia.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/A_%C3%9Altima_Ceia_%28Leonardo_da_Vinci%29",
+        "/posts/post-inspecao-figura-leonardo-da-vinci.html",
+        "/posts/post-inspecao-filme-a-paixao-de-cristo.html",
+        "https://www.youtube.com/watch?v=XCg7o4onjxs"
+      ],
+      "notes": "João ≠ Madalena. Técnica a seco. Ficha própria, distinta de A Paixão de Cristo."
+    },
+    {
+      "id": "figura-leonardo-da-vinci",
+      "title": "Leonardo da Vinci — ofício de olhar e elo com a Santa Ceia",
+      "titleEn": "Leonardo da Vinci — the craft of looking and the Last Supper",
+      "titleEs": "Leonardo da Vinci — el oficio de mirar y La última cena",
+      "tipo": "pessoas",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pessoas × Artes: método de inspeção visual de Leonardo com elo na Santa Ceia.",
+      "whyEn": "People × Arts: Leonardo’s visual inspection craft linked to The Last Supper.",
+      "whyEs": "Personas × Artes: oficio de inspección visual de Leonardo con vínculo en La última cena.",
+      "suggestedSlug": "inspecao-figura-leonardo-da-vinci",
+      "doneHref": "/posts/post-inspecao-figura-leonardo-da-vinci.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Leonardo_da_Vinci",
+        "/posts/post-inspecao-arte-santa-ceia.html"
+      ],
+      "notes": "Pessoas ≠ Legado; ≠ Código Da Vinci; mural fica em Artes."
+    },
+    {
+      "id": "arte-serie-the-chosen",
+      "title": "The Chosen — a série sobre Jesus, os escolhidos e onde assistir",
+      "titleEn": "The Chosen — the Jesus series, the called, and where to watch",
+      "titleEs": "The Chosen — la serie sobre Jesús, los elegidos y dónde verla",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes · série: The Chosen / Os Escolhidos (2019–, Jenkins) — Evangelhos primeiro; app oficial como via legal; distinta de A Paixão de Cristo.",
+      "whyEn": "Arts · series: The Chosen (2019–, Jenkins) — Gospels first; official app as legal path; distinct from The Passion of the Christ.",
+      "whyEs": "Artes · serie: The Chosen (2019–, Jenkins) — Evangelios primero; app oficial como vía legal; distinta de A Paixão de Cristo.",
+      "suggestedSlug": "inspecao-serie-the-chosen",
+      "doneHref": "/posts/post-inspecao-serie-the-chosen.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/The_Chosen",
+        "https://en.wikipedia.org/wiki/The_Chosen_(TV_series)",
+        "https://www.youtube.com/watch?v=K1-FoFj8Jbo",
+        "https://watch.thechosen.tv/",
+        "/posts/post-inspecao-filme-a-paixao-de-cristo.html",
+        "/posts/post-inspecao-expressao-filho-de-deus.html"
+      ],
+      "notes": "Separado de A Paixão de Cristo. Dramatização ≠ catecismo. Sem pirataria."
+    },
+    {
+      "id": "expressao-os-doze-apostolos",
+      "title": "os doze apóstolos — conjunto, envio e ofício",
+      "titleEn": "the twelve apostles — set, sending and craft",
+      "titleEs": "los doce apóstoles — conjunto, envío y oficio",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: os Doze como conjunto nomeado e frase viva BR; apóstolo = enviado; Tomé inspecciona; sem catecismo; Faça o melhor!",
+      "whyEn": "Sayings: the Twelve as named set and living BR phrase; apostle = one sent; Thomas inspects; no catechism; Do your best!",
+      "whyEs": "Dichos: los Doce como conjunto nombrado y frase viva BR; apóstol = enviado; Tomás inspecciona; sin catecismo; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-expressao-os-doze-apostolos",
+      "doneHref": "/posts/post-inspecao-expressao-os-doze-apostolos.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-filho-de-deus.html",
+        "/posts/post-inspecao-expressao-templo-de-cristo-corpo-e-alma.html",
+        "/posts/post-inspecao-filme-a-paixao-de-cristo.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-idolo.html"
+      ],
+      "notes": "Cap. 18 Expressões — mesa dos Doze; ficha ≠ santoral."
     }
   ]
 }
