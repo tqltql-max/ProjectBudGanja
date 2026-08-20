@@ -27,7 +27,23 @@ npm run build
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
 Write-Host "`nDeploy Cloudflare Pages..." -ForegroundColor Cyan
-npx wrangler pages deploy
+$dist = Join-Path $Root '_pages-dist'
+Write-Host "A copiar ficheiros publicaveis (sem JDK local)..." -ForegroundColor Gray
+New-Item -ItemType Directory -Path $dist -Force | Out-Null
+$robocopyArgs = @(
+  $Root, $dist, '/MIR', '/NFL', '/NDL', '/NJH', '/NJS', '/nc', '/ns', '/np',
+  '/XD', 'tools', 'node_modules', '.git', '.wrangler', '.cursor', 'data', 'uploads',
+  '.netlify', '_pages-dist', 'deploy', 'netlify', 'docs', 'scripts', 'lib', 'server',
+  'functions', 'peraguacu',
+  '/XF', '*.mp3', '*.m4a', '*.wip-bak'
+)
+& robocopy @robocopyArgs | Out-Null
+if ($LASTEXITCODE -ge 8) {
+  Write-Host "Falha ao preparar pasta de envio (robocopy $LASTEXITCODE)." -ForegroundColor Red
+  exit $LASTEXITCODE
+}
+
+npx wrangler pages deploy $dist --commit-dirty=true --project-name inspetor-budganja --branch main
 if ($LASTEXITCODE -ne 0) {
   Write-Host "`nSe pediu login:  npx wrangler login" -ForegroundColor Yellow
   Write-Host "Depois volte a correr este script." -ForegroundColor Yellow
