@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T13:39:27.426Z",
+  "updatedAt": "2026-08-21T13:47:25.914Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6666,18 +6666,18 @@
       "notes": "Cap. 149 — cluster Tanzânia / Taz Manaia / Taz-Mania / relação."
     },
     {
-      "id": "palavra-xioomi",
-      "title": "xioomi — Xiaomi, milheto e a marca sem pedestal",
-      "titleEn": "xioomi — Xiaomi, millet, brand without a pedestal",
-      "titleEs": "xioomi — Xiaomi, mijo y la marca sin pedestal",
+      "id": "palavra-xiaomi",
+      "title": "Xiaomi — milheto, marca e ofício sem pedestal",
+      "titleEn": "Xiaomi — millet, brand, craft without a pedestal",
+      "titleEs": "Xiaomi — mijo, marca y oficio sin pedestal",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: xioomi — rasto oral BR de Xiaomi (小米, milheto); marca × grão × ídolo tech; elos Jobs/objetos/celular; Faça o melhor!",
-      "whyEn": "Words: xioomi — BR oral trail of Xiaomi (小米, millet); brand × grain × tech idol; links Jobs/objects/phone; Do your best!",
-      "whyEs": "Palabras: xioomi — rastro oral BR de Xiaomi (小米, mijo); marca × grano × ídolo tech; vínculos Jobs/objetos/celular; ¡Haz lo mejor!",
-      "suggestedSlug": "inspecao-palavra-xioomi",
-      "doneHref": "/posts/post-inspecao-palavra-xioomi.html",
+      "why": "Palavras: Xiaomi (*xioomi* → Xiaomi) — 小米 milheto; marca × grão × ídolo tech; elos Jobs/objetos/celular; Faça o melhor!",
+      "whyEn": "Words: Xiaomi (*xioomi* → Xiaomi) — 小米 millet; brand × grain × tech idol; links Jobs/objects/phone; Do your best!",
+      "whyEs": "Palabras: Xiaomi (*xioomi* → Xiaomi) — 小米 mijo; marca × grano × ídolo tech; vínculos Jobs/objetos/celular; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-xiaomi",
+      "doneHref": "/posts/post-inspecao-palavra-xiaomi.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://en.wikipedia.org/wiki/Xiaomi",
@@ -6689,7 +6689,7 @@
         "/posts/post-inspecao-celular-riscos-saude-criancas.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 150 — xioomi oral × Xiaomi marca × 小米 milheto; ficha ≠ review; anti-pedestal."
+      "notes": "Cap. 150 — Xiaomi grafia certa; xioomi rasto oral; 小米 milheto; ficha ≠ review; anti-pedestal."
     },
     {
       "id": "app-the-chosen",

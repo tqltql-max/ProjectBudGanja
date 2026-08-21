@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Injeta palavra «xioomi» (Xiaomi / 小米) na série Palavras.
+ * Injeta palavra «Xiaomi» (小米; rasto oral xioomi) na série Palavras.
  * Uso: node scripts/upsert-palavra-xioomi-inspecao.js
  */
 
@@ -69,6 +69,29 @@ function upsertGloss(glossPath, key, entryLine, afterKeys) {
   console.warn('Aviso: glossário — inserção falhou para', key);
 }
 
+function writeOldSlugRedirect() {
+  const dest = '/posts/post-inspecao-palavra-xiaomi.html';
+  const out = path.join(ROOT, 'posts', 'post-inspecao-palavra-xioomi.html');
+  const html =
+    '<!DOCTYPE html>\n<html lang="pt-BR">\n<head>\n' +
+    '<meta charset="UTF-8">\n' +
+    '<meta http-equiv="refresh" content="0; url=' +
+    dest +
+    '">\n' +
+    '<link rel="canonical" href="' +
+    dest +
+    '">\n' +
+    '<title>Xiaomi</title>\n' +
+    '<script>location.replace(' +
+    JSON.stringify(dest) +
+    ');</script>\n' +
+    '</head>\n<body>\n<p>A ficha certa é <a href="' +
+    dest +
+    '">Xiaomi</a> (*xioomi* → Xiaomi).</p>\n</body>\n</html>\n';
+  fs.writeFileSync(out, html, 'utf8');
+  console.log('Redirect:', path.relative(ROOT, out), '→', dest);
+}
+
 async function syncSql(post) {
   require('../lib/load-env.js');
   if (String(process.env.STORE_BACKEND || '').toLowerCase() === 'fs') return;
@@ -78,6 +101,10 @@ async function syncSql(post) {
   const { createSqlStore } = require('../lib/store-sql.js');
   const store = await createSqlStore(ROOT);
   const posts = await store.getPosts();
+  const oldIdx = posts.findIndex((p) => p.slug === 'inspecao-palavra-xioomi');
+  if (oldIdx >= 0 && post.slug !== 'inspecao-palavra-xioomi') {
+    posts.splice(oldIdx, 1);
+  }
   upsertPost(posts, post);
   await store.setPosts(posts);
   console.log('SQL store actualizado:', post.slug);
@@ -85,16 +112,30 @@ async function syncSql(post) {
 
 async function main() {
   const posts = JSON.parse(fs.readFileSync(POSTS_FILE, 'utf8'));
-  const existing = posts.find((p) => p.slug === 'inspecao-palavra-xioomi');
+  const existing = posts.find(
+    (p) =>
+      p.slug === 'inspecao-palavra-xiaomi' ||
+      p.slug === 'inspecao-palavra-xioomi'
+  );
   const seriesOrder = existing
     ? Number(existing.seriesOrder) || nextPalavrasOrder(posts)
     : nextPalavrasOrder(posts);
   const post = buildXioomiPost(seriesOrder);
 
+  const oldSlug = 'inspecao-palavra-xioomi';
+  if (post.slug !== oldSlug) {
+    const oldIdx = posts.findIndex((p) => p.slug === oldSlug);
+    if (oldIdx >= 0) {
+      posts.splice(oldIdx, 1);
+      console.log('Removido slug antigo', oldSlug);
+    }
+  }
+
   upsertPost(posts, post);
   fs.writeFileSync(POSTS_FILE, JSON.stringify(posts, null, 2) + '\n', 'utf8');
 
   const i18n = JSON.parse(fs.readFileSync(I18N_FILE, 'utf8'));
+  if (i18n[oldSlug] && post.slug !== oldSlug) delete i18n[oldSlug];
   writeI18n(i18n, post);
   fs.writeFileSync(I18N_FILE, JSON.stringify(i18n, null, 2) + '\n', 'utf8');
 
@@ -103,19 +144,21 @@ async function main() {
   if (fs.existsSync(SUG_FILE)) {
     const sug = JSON.parse(fs.readFileSync(SUG_FILE, 'utf8'));
     const items = Array.isArray(sug.items) ? sug.items : [];
-    const sugId = 'palavra-xioomi';
-    const si = items.findIndex((x) => x.id === sugId);
+    const sugId = 'palavra-xiaomi';
+    const si = items.findIndex(
+      (x) => x.id === sugId || x.id === 'palavra-xioomi'
+    );
     const entry = {
       id: sugId,
-      title: 'xioomi — Xiaomi, milheto e a marca sem pedestal',
-      titleEn: 'xioomi — Xiaomi, millet, brand without a pedestal',
-      titleEs: 'xioomi — Xiaomi, mijo y la marca sin pedestal',
+      title: 'Xiaomi — milheto, marca e ofício sem pedestal',
+      titleEn: 'Xiaomi — millet, brand, craft without a pedestal',
+      titleEs: 'Xiaomi — mijo, marca y oficio sin pedestal',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: xioomi — rasto oral BR de Xiaomi (小米, milheto); marca × grão × ídolo tech; elos Jobs/objetos/celular; Faça o melhor!',
-      whyEn: 'Words: xioomi — BR oral trail of Xiaomi (小米, millet); brand × grain × tech idol; links Jobs/objects/phone; Do your best!',
-      whyEs: 'Palabras: xioomi — rastro oral BR de Xiaomi (小米, mijo); marca × grano × ídolo tech; vínculos Jobs/objetos/celular; ¡Haz lo mejor!',
+      why: 'Palavras: Xiaomi (*xioomi* → Xiaomi) — 小米 milheto; marca × grão × ídolo tech; elos Jobs/objetos/celular; Faça o melhor!',
+      whyEn: 'Words: Xiaomi (*xioomi* → Xiaomi) — 小米 millet; brand × grain × tech idol; links Jobs/objects/phone; Do your best!',
+      whyEs: 'Palabras: Xiaomi (*xioomi* → Xiaomi) — 小米 mijo; marca × grano × ídolo tech; vínculos Jobs/objetos/celular; ¡Haz lo mejor!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -132,47 +175,50 @@ async function main() {
       notes:
         'Cap. ' +
         post.seriesOrder +
-        ' — xioomi oral × Xiaomi marca × 小米 milheto; ficha ≠ review; anti-pedestal.'
+        ' — Xiaomi grafia certa; xioomi rasto oral; 小米 milheto; ficha ≠ review; anti-pedestal.'
     };
-    if (si >= 0) items[si] = Object.assign({}, items[si], entry);
-    else items.push(entry);
+    if (si >= 0) {
+      items[si] = Object.assign({}, items[si], entry);
+      items[si].id = sugId;
+    } else items.push(entry);
     sug.items = items;
     sug.updatedAt = new Date().toISOString();
     fs.writeFileSync(SUG_FILE, JSON.stringify(sug, null, 2) + '\n', 'utf8');
-    console.log('Sugestões actualizadas (palavra-xioomi)');
+    console.log('Sugestões actualizadas (palavra-xiaomi)');
   }
 
   if (fs.existsSync(GUIA_FILE)) {
     const guia = JSON.parse(fs.readFileSync(GUIA_FILE, 'utf8'));
     const items = Array.isArray(guia.items) ? guia.items : [];
     const entry = {
-      id: 'xioomi',
-      word: 'xioomi',
+      id: 'xiaomi',
+      word: 'Xiaomi',
       simple:
-        'Rasto oral BR de Xiaomi (小米, milheto); marca × grão × ídolo tech; elos Jobs e celular; Faça o melhor!',
+        'Grafia certa da marca (小米, milheto); rasto oral xioomi; marca × grão × ídolo tech; elos Jobs e celular; Faça o melhor!',
       simpleEn:
-        'BR oral trail of Xiaomi (小米, millet); brand × grain × tech idol; links Jobs and phone; Do your best!',
+        'Correct brand spelling (小米, millet); oral trail xioomi; brand × grain × tech idol; links Jobs and phone; Do your best!',
       simpleEs:
-        'Rastro oral BR de Xiaomi (小米, mijo); marca × grano × ídolo tech; vínculos Jobs y celular; ¡Haz lo mejor!',
+        'Grafía correcta de la marca (小米, mijo); rastro oral xioomi; marca × grano × ídolo tech; vínculos Jobs y celular; ¡Haz lo mejor!',
       group: 'lexico',
       fromTitle: false,
       href,
       history:
-        'Xiaomi transcreve o chinês 小米 (xiǎomǐ): milheto, cereal miúdo. A marca (Pequim, 2010) sentou o grão no telemóvel. No BR a boca faz xioomi / xiômi — rasto, não erro.',
+        'Xiaomi transcreve o chinês 小米 (xiǎomǐ): milheto, cereal miúdo. A marca (Pequim, 2010) sentou o grão no telemóvel. No BR a boca faz xioomi / xiômi — rasto; a ficha ancora em Xiaomi.',
       curiosities:
-        'Lei Jun foi comparado a Steve Jobs no palco; o lab recusa o pedestal. O risco do ecrã na criança não muda com o logótipo. Aliases: Xiaomi, xiomi, xiaome.',
+        'Lei Jun foi comparado a Steve Jobs no palco; o lab recusa o pedestal. O risco do ecrã na criança não muda com o logótipo. Aliases: xioomi, xiomi, xiaome.',
       historyEn:
-        'Xiaomi transcribes Chinese 小米 (xiǎomǐ): millet, a small grain. The 2010 Beijing brand sat the grain on the handset. In Brazil the mouth makes xioomi — a trail, not a typo.',
+        'Xiaomi transcribes Chinese 小米 (xiǎomǐ): millet. The 2010 Beijing brand sat the grain on the handset. In Brazil the mouth makes xioomi — a trail; the sheet anchors on Xiaomi.',
       curiositiesEn:
-        'Lei Jun was compared to Steve Jobs on stage; the lab refuses the pedestal. Screen risk for children does not change with the logo. Aliases: Xiaomi, xiomi, xiaome.',
+        'Lei Jun was compared to Steve Jobs on stage; the lab refuses the pedestal. Screen risk for children does not change with the logo. Aliases: xioomi, xiomi, xiaome.',
       historyEs:
-        'Xiaomi transcribe el chino 小米 (xiǎomǐ): mijo, cereal menudo. La marca (Pekín, 2010) sentó el grano en el teléfono. En BR la boca hace xioomi — rastro, no error.',
+        'Xiaomi transcribe el chino 小米 (xiǎomǐ): mijo. La marca (Pekín, 2010) sentó el grano en el teléfono. En BR la boca hace xioomi — rastro; la ficha ancla en Xiaomi.',
       curiositiesEs:
-        'Lei Jun fue comparado con Steve Jobs en el escenario; el lab rechaza el pedestal. El riesgo de pantalla en niños no cambia con el logo. Alias: Xiaomi, xiomi, xiaome.'
+        'Lei Jun fue comparado con Steve Jobs en el escenario; el lab rechaza el pedestal. El riesgo de pantalla en niños no cambia con el logo. Alias: xioomi, xiomi, xiaome.'
     };
     const gi = items.findIndex(
       (x) =>
-        x.id === entry.id ||
+        x.id === 'xiaomi' ||
+        x.id === 'xioomi' ||
         x.word === 'xioomi' ||
         x.word === 'Xiaomi' ||
         x.word === 'xiaomi'
@@ -188,33 +234,33 @@ async function main() {
     guia.items = items;
     guia.updatedAt = new Date().toISOString();
     fs.writeFileSync(GUIA_FILE, JSON.stringify(guia, null, 2) + '\n', 'utf8');
-    console.log('Guia de palavras actualizado (xioomi)');
+    console.log('Guia de palavras actualizado (Xiaomi)');
   }
 
   const glossPath = path.join(ROOT, 'js', 'learn-glossary.js');
   upsertGloss(
     glossPath,
-    'xioomi',
-    '    xioomi: { tone: "caution", category: "Marca", mundane: "Rasto oral BR de Xiaomi — telemóvel / IoT; étimo 小米 milheto.", gloss: "Camadas: oral × marca × grão × ídolo tech; elos Jobs/objetos/celular; sem pedestal; Faça o melhor!", href: "/posts/post-inspecao-palavra-xioomi.html", en: "xioomi / Xiaomi", es: "xioomi / Xiaomi", fr: "xioomi / Xiaomi", it: "xioomi / Xiaomi", de: "xioomi / Xiaomi", el: "xioomi / Xiaomi", la: "Xiaomi / milium", yo: "xioomi / Xiaomi", sw: "xioomi / Xiaomi", gez: "xioomi / Xiaomi", nl: "xioomi / Xiaomi", pl: "xioomi / Xiaomi", ru: "xioomi / Xiaomi", uk: "xioomi / Xiaomi", zh: "小米", ja: "Xiaomi / シャオミ", ko: "샤오미", ar: "شاومي", he: "שיאומי", hi: "शाओमी", tr: "Xiaomi", sv: "xioomi / Xiaomi", da: "xioomi / Xiaomi", no: "xioomi / Xiaomi", fi: "xioomi / Xiaomi", cs: "xioomi / Xiaomi", ro: "xioomi / Xiaomi", hu: "xioomi / Xiaomi", ca: "xioomi / Xiaomi", gl: "xioomi / Xiaomi", eu: "xioomi / Xiaomi", gn: "xioomi / Xiaomi", qu: "xioomi / Xiaomi", eo: "xioomi / Xiaomi", vi: "Xiaomi", id: "Xiaomi", th: "เสียวหมี่", hr: "xioomi / Xiaomi", sk: "xioomi / Xiaomi", ga: "xioomi / Xiaomi", cy: "xioomi / Xiaomi", ha: "xioomi / Xiaomi", am: "xioomi / Xiaomi", fa: "شیائومی", bn: "শাওমি", zu: "xioomi / Xiaomi" },',
+    'xiaomi',
+    '    xiaomi: { tone: "caution", category: "Marca", mundane: "Grafia certa da marca — telemóvel / IoT; étimo 小米 milheto.", gloss: "xioomi → Xiaomi; camadas: marca × grão × ídolo tech; elos Jobs/objetos/celular; sem pedestal; Faça o melhor!", href: "/posts/post-inspecao-palavra-xiaomi.html", en: "Xiaomi", es: "Xiaomi", fr: "Xiaomi", it: "Xiaomi", de: "Xiaomi", el: "Xiaomi", la: "Xiaomi / milium", yo: "Xiaomi", sw: "Xiaomi", gez: "Xiaomi", nl: "Xiaomi", pl: "Xiaomi", ru: "Xiaomi", uk: "Xiaomi", zh: "小米", ja: "Xiaomi / シャオミ", ko: "샤오미", ar: "شاومي", he: "שיאומי", hi: "शाओमी", tr: "Xiaomi", sv: "Xiaomi", da: "Xiaomi", no: "Xiaomi", fi: "Xiaomi", cs: "Xiaomi", ro: "Xiaomi", hu: "Xiaomi", ca: "Xiaomi", gl: "Xiaomi", eu: "Xiaomi", gn: "Xiaomi", qu: "Xiaomi", eo: "Xiaomi", vi: "Xiaomi", id: "Xiaomi", th: "เสียวหมี่", hr: "Xiaomi", sk: "Xiaomi", ga: "Xiaomi", cy: "Xiaomi", ha: "Xiaomi", am: "Xiaomi", fa: "شیائومی", bn: "শাওমি", zu: "Xiaomi" },',
     ['jobs', 'skill']
   );
   upsertGloss(
     glossPath,
-    'xiaomi',
-    '    xiaomi: { gloss: "Grafia canónica da marca — ver xioomi (rasto oral BR; 小米 milheto).", href: "/posts/post-inspecao-palavra-xioomi.html", en: "Xiaomi", es: "Xiaomi" },',
-    ['xioomi', 'jobs']
+    'xioomi',
+    '    xioomi: { gloss: "Rasto oral / teclado BR — ver Xiaomi (grafia certa; 小米 milheto).", href: "/posts/post-inspecao-palavra-xiaomi.html", en: "xioomi (Xiaomi trail)", es: "xioomi (rastro Xiaomi)" },',
+    ['xiaomi', 'jobs']
   );
   upsertGloss(
     glossPath,
     'xiomi',
-    '    xiomi: { gloss: "Variante oral / teclado de Xiaomi — ver xioomi.", href: "/posts/post-inspecao-palavra-xioomi.html", en: "xiomi (Xiaomi trail)", es: "xiomi (rastro Xiaomi)" },',
-    ['xiaomi', 'xioomi']
+    '    xiomi: { gloss: "Variante oral / teclado de Xiaomi — ver Xiaomi.", href: "/posts/post-inspecao-palavra-xiaomi.html", en: "xiomi (Xiaomi trail)", es: "xiomi (rastro Xiaomi)" },',
+    ['xioomi', 'xiaomi']
   );
   upsertGloss(
     glossPath,
     'xiaome',
-    '    xiaome: { gloss: "Variante oral / teclado de Xiaomi — ver xioomi.", href: "/posts/post-inspecao-palavra-xioomi.html", en: "xiaome (Xiaomi trail)", es: "xiaome (rastro Xiaomi)" },',
-    ['xiomi', 'xiaomi']
+    '    xiaome: { gloss: "Variante oral / teclado de Xiaomi — ver Xiaomi.", href: "/posts/post-inspecao-palavra-xiaomi.html", en: "xiaome (Xiaomi trail)", es: "xiaome (rastro Xiaomi)" },',
+    ['xiomi', 'xioomi']
   );
 
   try {
@@ -222,6 +268,8 @@ async function main() {
   } catch (e) {
     console.warn('Aviso SQL store:', e.message);
   }
+
+  writeOldSlugRedirect();
 
   console.log('OK:', post.title, '| Cap.', post.seriesOrder);
 }

@@ -1,13 +1,13 @@
 'use strict';
 
-/** Capa 1200×630 — xioomi / Xiaomi (Palavras). */
+/** Capa 1200×630 — Xiaomi (Palavras). *xioomi* → Xiaomi. */
 const fs = require('fs');
 const path = require('path');
 const { ROOT } = require('../lib/paths.js');
 
 async function main() {
   const sharp = require('sharp');
-  const OUT = path.join(ROOT, 'imagens/inspecoes/xioomi-palavra-cover.jpg');
+  const OUT = path.join(ROOT, 'imagens/inspecoes/xiaomi-palavra-cover.jpg');
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
 
   const bg = Buffer.from(`<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
@@ -35,9 +35,9 @@ async function main() {
   <circle cx="782" cy="450" r="4.5" fill="rgba(200,130,45,0.5)"/>
   <ellipse cx="752" cy="468" rx="9" ry="5" fill="rgba(180,110,35,0.45)"/>
   <text x="600" y="82" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#e88828" letter-spacing="3">PALAVRAS · MARCA · MILHETO</text>
-  <text x="600" y="248" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="72" font-weight="700" fill="#f4efe4">xioomi</text>
-  <text x="600" y="322" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="rgba(232,200,150,0.95)">Xiaomi · 小米 · milheto</text>
-  <text x="600" y="540" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="22" fill="#d8b070">rasto oral BR · sem pedestal</text>
+  <text x="600" y="248" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="72" font-weight="700" fill="#f4efe4">Xiaomi</text>
+  <text x="600" y="322" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="rgba(232,200,150,0.95)">小米 · milheto · xioomi → Xiaomi</text>
+  <text x="600" y="540" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="22" fill="#d8b070">grafia certa · sem pedestal</text>
   <text x="600" y="588" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#e88828">Jobs · objetos · faça o melhor neste aparelho</text>
 </svg>`);
 
