@@ -292,6 +292,11 @@
   var loadMoreBtn = null;
   var PAGE_SIZE = 12;
   var visibleCount = 0;
+  var ytPlayerGen = 0;
+  var sequenceMessageBound = false;
+  var lastSequenceAdvance = 0;
+  var sequenceIgnoreUntil = 0;
+  var UP_NEXT_LIMIT = 48;
   function resolveChannel(raw) {
     var key = String(raw || '')
       .trim()
@@ -437,12 +442,12 @@
     return 'pt';
   }
 
-  function embedSrc(id, autoplay) {
+  function embedSrc(id, autoplay, playlistIds) {
     var cc = youtubeCcLangPref();
     var src =
       'https://www.youtube-nocookie.com/embed/' +
       encodeURIComponent(id) +
-      '?rel=0&modestbranding=1&playsinline=1&hl=' +
+      '?rel=0&modestbranding=1&playsinline=1&enablejsapi=1&hl=' +
       encodeURIComponent(cc) +
       '&cc_load_policy=1&cc_lang_pref=' +
       encodeURIComponent(cc);
@@ -450,6 +455,14 @@
       src += '&origin=' + encodeURIComponent(window.location.origin);
     } catch (e) { /* ignore */ }
     if (autoplay) src += '&autoplay=1';
+    if (playlistIds && playlistIds.length) {
+      var ids = [];
+      var i;
+      for (i = 0; i < playlistIds.length && ids.length < 40; i++) {
+        if (isValidVideoId(playlistIds[i]) && playlistIds[i] !== id) ids.push(playlistIds[i]);
+      }
+      if (ids.length) src += '&playlist=' + ids.join(',');
+    }
     return src;
   }
 
@@ -647,11 +660,17 @@
 
   function renderEmbed(id, title, autoplay) {
     var safeTitle = escapeHtml(title || i18n('pages.videos.nowPlaying', 'Vídeo do YouTube'));
+    var playlistIds = [];
+    if (autoplay) {
+      playlistIds = playbackQueue(lastFiltered, id).map(function (v) {
+        return v.id;
+      });
+    }
     if (autoplay) {
       return (
         '<div class="video-embed is-playing">' +
-        '<iframe src="' +
-        escapeHtml(embedSrc(id, true)) +
+        '<iframe id="videos-yt-player" src="' +
+        escapeHtml(embedSrc(id, true, playlistIds)) +
         '" title="' +
         safeTitle +
         '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ' +
@@ -845,6 +864,7 @@
 
   function stopInlinePlayer(opts) {
     opts = opts || {};
+    teardownYtPlayer();
     playingId = '';
     if (opts.clearHash !== false) {
       writeFilterToUrl(activeChannel, activeSeries, '', opts.replaceUrl !== false);
@@ -854,6 +874,123 @@
       bindPlayingCardActions();
     }
     syncActiveCards();
+  }
+
+  function teardownYtPlayer() {
+    ytPlayerGen += 1;
+  }
+
+  function youtubeMessageOrigin(origin) {
+    var o = String(origin || '');
+    return o.indexOf('youtube.com') !== -1 || o.indexOf('youtube-nocookie.com') !== -1;
+  }
+
+  function bindSequenceMessage() {
+    if (sequenceMessageBound) return;
+    sequenceMessageBound = true;
+    window.addEventListener('message', function (e) {
+      if (!playingId || !youtubeMessageOrigin(e.origin)) return;
+      var data = e.data;
+      if (typeof data === 'string') {
+        try {
+          data = JSON.parse(data);
+        } catch (err) {
+          return;
+        }
+      }
+      if (!data || typeof data !== 'object') return;
+      var state = null;
+      if (data.event === 'onStateChange') state = data.info;
+      else if (data.event === 'infoDelivery' && data.info && typeof data.info.playerState === 'number') {
+        state = data.info.playerState;
+      }
+      if (state !== 0) return;
+      if (Date.now() < sequenceIgnoreUntil) return;
+      var now = Date.now();
+      if (now - lastSequenceAdvance < 1600) return;
+      lastSequenceAdvance = now;
+      sequenceIgnoreUntil = now + 2800;
+      advanceSequence();
+    });
+  }
+
+  function bindSequencePlayer() {
+    if (!gridEl || !playingId) return;
+    bindSequenceMessage();
+    var iframe = gridEl.querySelector('#videos-yt-player, .video-card.is-playing iframe');
+    if (!iframe) return;
+    iframe.id = 'videos-yt-player';
+    var gen = ytPlayerGen;
+    sequenceIgnoreUntil = Math.max(sequenceIgnoreUntil, Date.now() + 2000);
+    function handshake() {
+      if (gen !== ytPlayerGen || !iframe.isConnected || !iframe.contentWindow) return;
+      try {
+        iframe.contentWindow.postMessage(
+          JSON.stringify({ event: 'listening', id: iframe.id }),
+          '*'
+        );
+      } catch (e) { /* ignore */ }
+    }
+    iframe.addEventListener('load', handshake);
+    handshake();
+    var tries = 0;
+    var timer = window.setInterval(function () {
+      if (gen !== ytPlayerGen || ++tries > 24) {
+        window.clearInterval(timer);
+        return;
+      }
+      handshake();
+    }, 350);
+  }
+
+  function sameChannelVideos(videos, video) {
+    var list = videos || [];
+    var ch = video && video.channel;
+    if (!ch) return list.slice();
+    return list.filter(function (v) {
+      if (ch === 'tamara' || activeChannel === 'tamara') {
+        return v.channel === 'tamara' || v.channel === 'amyr';
+      }
+      return v.channel === ch;
+    });
+  }
+
+  function sequenceVideos(videos, currentId) {
+    var list = videos || [];
+    if (!currentId || !list.length) return list.slice();
+    var idx = -1;
+    var i;
+    for (i = 0; i < list.length; i++) {
+      if (list[i] && list[i].id === currentId) {
+        idx = i;
+        break;
+      }
+    }
+    if (idx < 0) return list.slice();
+    return list.slice(idx + 1).concat(list.slice(0, idx));
+  }
+
+  function nextVideoInSequence(currentId) {
+    var playing = findVideo(lastFiltered || [], currentId) || findVideo((cachedHub && cachedHub.videos) || [], currentId);
+    var queue = sequenceVideos(sameChannelVideos(lastFiltered || [], playing), currentId);
+    return queue[0] || null;
+  }
+
+  function advanceSequence() {
+    if (!playingId) return;
+    var next = nextVideoInSequence(playingId);
+    if (!next || next.id === playingId) return;
+    selectById(next.id, { fromSequence: true });
+  }
+
+  function adoptChannelForPlayback(video) {
+    if (!video || !video.channel || isGamesChannel(video.channel)) return false;
+    var ch = video.channel;
+    if (activeChannel === 'tamara' && (ch === 'tamara' || ch === 'amyr')) return false;
+    if (activeChannel === ch) return false;
+    activeChannel = ch;
+    activeSeries = '';
+    return true;
   }
 
   function bindPlayingCardActions() {
@@ -881,6 +1018,8 @@
         card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }, 40);
     }
+    bindSequencePlayer();
+    bindInfiniteRow();
   }
 
   function renderPlayingActions(video) {
@@ -1142,6 +1281,41 @@
     );
   }
 
+  function renderUpNextRow(videos) {
+    if (!videos || !videos.length) return '';
+    return (
+      '<div class="videos-infinite-row-wrap">' +
+      '<p class="videos-infinite-row-label">' +
+      escapeHtml(i18n('pages.videos.upNext', 'A seguir')) +
+      ' <span class="videos-infinite-row-hint">' +
+      escapeHtml(i18n('pages.videos.upNextHint', 'Mais do mesmo canal · sequência automática')) +
+      '</span></p>' +
+      '<div class="videos-infinite-row" data-videos-infinite-row role="list">' +
+      videos
+        .map(function (v) {
+          return renderVideoCard(v);
+        })
+        .join('') +
+      '</div></div>'
+    );
+  }
+
+  function bindInfiniteRow() {
+    var row = gridEl && gridEl.querySelector('[data-videos-infinite-row]');
+    if (!row || row.dataset.scrollBound === '1') return;
+    row.dataset.scrollBound = '1';
+    row.addEventListener('scroll', function () {
+      if (row.scrollLeft + row.clientWidth < row.scrollWidth - 180) return;
+      if (hasMoreVideos(lastFiltered)) loadMoreVideos({ keepPlayer: true });
+    });
+  }
+
+  function playbackQueue(videos, currentId) {
+    var playing = findVideo(videos, currentId) || findVideo((cachedHub && cachedHub.videos) || [], currentId);
+    var pool = sameChannelVideos(videos, playing);
+    return sequenceVideos(pool, currentId);
+  }
+
   function renderChannelSection(channelId, videos, totalCount) {
     if (!videos.length) return '';
     var meta = findChannelMeta(channelId);
@@ -1250,7 +1424,67 @@
     visibleCount = Math.max(visibleCount, pagesNeeded * PAGE_SIZE);
   }
 
-  function renderGrid(videos) {
+  function listHeadingHtml(videos) {
+    var heading = channelLabel(activeChannel);
+    if (activeSeries) heading += ' · ' + seriesLabel(activeSeries);
+    if (activeTopic) heading += ' · ' + topicLabel(activeTopic);
+    return (
+      '<p class="videos-list-heading">' +
+      escapeHtml(heading) +
+      ' <span class="videos-list-count">(' +
+      videos.length +
+      ')</span></p>'
+    );
+  }
+
+  function renderPlaybackCatalog(videos, opts) {
+    opts = opts || {};
+    var playing = findVideo(videos, playingId) || findVideo((cachedHub && cachedHub.videos) || [], playingId);
+    if (!playing) return;
+    var queue = playbackQueue(videos, playingId);
+    var rowTake = Math.min(Math.max(visibleCount, Math.min(UP_NEXT_LIMIT, queue.length)), queue.length);
+    var rowVideos = queue.slice(0, rowTake);
+    var gridVideos = queue.slice(0, Math.min(visibleCount, queue.length));
+
+    var playerHtml = renderVideoCard(playing);
+    var rowHtml = renderUpNextRow(rowVideos);
+    var gridHtml =
+      '<div class="videos-grid">' +
+      gridVideos.map(renderVideoCard).join('') +
+      '</div>';
+
+    var playerBlock = gridEl.querySelector('[data-videos-player-block]');
+    var rowEl = gridEl.querySelector('[data-videos-infinite-row]');
+    var catalogGrid = gridEl.querySelector('.videos-grid');
+    if (opts.keepPlayer && playerBlock && playerBlock.querySelector('iframe')) {
+      var savedScroll = rowEl ? rowEl.scrollLeft : 0;
+      var wrap = rowEl && rowEl.parentElement;
+      if (wrap && wrap.classList.contains('videos-infinite-row-wrap')) {
+        wrap.outerHTML = rowHtml;
+      } else {
+        playerBlock.insertAdjacentHTML('afterend', rowHtml);
+      }
+      rowEl = gridEl.querySelector('[data-videos-infinite-row]');
+      if (rowEl) rowEl.scrollLeft = savedScroll;
+      if (catalogGrid) catalogGrid.outerHTML = gridHtml;
+      else gridEl.insertAdjacentHTML('beforeend', gridHtml);
+      bindInfiniteRow();
+      syncLoadMoreButton(videos);
+      return;
+    }
+
+    gridEl.innerHTML =
+      listHeadingHtml(videos) +
+      '<div class="videos-player-block" data-videos-player-block>' +
+      playerHtml +
+      '</div>' +
+      rowHtml +
+      gridHtml;
+    syncLoadMoreButton(videos);
+  }
+
+  function renderGrid(videos, opts) {
+    opts = opts || {};
     if (!gridEl) return;
     if (!videos.length) {
       visibleCount = 0;
@@ -1268,6 +1502,14 @@
     }
 
     if (visibleCount < 1) visibleCount = Math.min(PAGE_SIZE, videos.length);
+
+    var playingNow =
+      playingId &&
+      (findVideo(videos, playingId) || findVideo((cachedHub && cachedHub.videos) || [], playingId));
+    if (playingNow) {
+      renderPlaybackCatalog(videos, opts);
+      return;
+    }
 
     if (activeChannel === 'all') {
       var take = perChannelTake(visibleCount);
@@ -1293,33 +1535,33 @@
 
     visibleCount = Math.min(visibleCount, videos.length);
     var slice = videos.slice(0, visibleCount);
-    var heading = channelLabel(activeChannel);
-    if (activeSeries) heading += ' · ' + seriesLabel(activeSeries);
-    if (activeTopic) heading += ' · ' + topicLabel(activeTopic);
 
     gridEl.innerHTML =
-      '<p class="videos-list-heading">' +
-      escapeHtml(heading) +
-      ' <span class="videos-list-count">(' +
-      videos.length +
-      ')</span></p>' +
+      listHeadingHtml(videos) +
       '<div class="videos-grid">' +
       slice.map(renderVideoCard).join('') +
       '</div>';
     syncLoadMoreButton(videos);
   }
 
-  function loadMoreVideos() {
+  var loadMoreLock = false;
+
+  function loadMoreVideos(opts) {
+    opts = opts || {};
+    if (loadMoreLock) return;
     if (!lastFiltered.length) return;
     if (!hasMoreVideos(lastFiltered)) {
       syncLoadMoreButton(lastFiltered);
       return;
     }
+    loadMoreLock = true;
     if (loadMoreBtn) loadMoreBtn.disabled = true;
     visibleCount += PAGE_SIZE;
-    renderGrid(lastFiltered);
-    bindPlayingCardActions();
+    renderGrid(lastFiltered, { keepPlayer: opts.keepPlayer !== false && !!playingId });
+    if (!opts.keepPlayer) bindPlayingCardActions();
+    else bindInfiniteRow();
     syncActiveCards();
+    loadMoreLock = false;
   }
 
   function injectVideoJsonLd(videos) {
@@ -1364,17 +1606,21 @@
     );
 
     if (requested) {
-      var inView = findVideo(filtered, requested);
-      if (!inView) {
-        var anywhere = findVideo(all, requested);
-        if (anywhere) {
-          if (activeChannel !== 'all') {
-            activeChannel = anywhere.channel || 'all';
-            activeSeries = '';
-          }
-          if (activeTopic && (anywhere.topics || []).indexOf(activeTopic) < 0) {
-            activeTopic = '';
-          }
+      var anywhere = findVideo(filtered, requested) || findVideo(all, requested);
+      if (anywhere) {
+        var changed = false;
+        if (opts.openPlayer || opts.autoplay) {
+          changed = adoptChannelForPlayback(anywhere);
+        } else if (!findVideo(filtered, requested) && activeChannel !== 'all') {
+          activeChannel = anywhere.channel || 'all';
+          activeSeries = '';
+          changed = true;
+        }
+        if (activeTopic && (anywhere.topics || []).indexOf(activeTopic) < 0) {
+          activeTopic = '';
+          changed = true;
+        }
+        if (changed) {
           filtered = sortForView(
             filterVideos(all, activeChannel, activeSeries, activeTopic),
             activeChannel,
@@ -1408,6 +1654,10 @@
       playingId = '';
     }
 
+    if (playingId) {
+      visibleCount = Math.min(Math.max(visibleCount, UP_NEXT_LIMIT), filtered.length);
+    }
+
     if (selectedId && !findVideo(filtered, selectedId) && selectedId !== playingId) {
       selectedId = '';
     }
@@ -1425,7 +1675,8 @@
     );
   }
 
-  function selectById(id) {
+  function selectById(id, opts) {
+    opts = opts || {};
     if (!cachedHub) return;
     gridEl = document.getElementById('videos-list') || gridEl;
     if (!gridEl) return;
@@ -1436,16 +1687,15 @@
       findVideo(all, id);
     if (!video) return;
 
-    if (video.channel && video.channel !== activeChannel && activeChannel !== 'all') {
-      activeChannel = video.channel;
-      activeSeries = '';
-    }
+    teardownYtPlayer();
+    sequenceIgnoreUntil = Date.now() + 2800;
+    if (!opts.fromSequence) adoptChannelForPlayback(video);
 
     applyView({
       requestedId: id,
       openPlayer: true,
       autoplay: true,
-      replaceUrl: false
+      replaceUrl: !!opts.fromSequence
     });
   }
 

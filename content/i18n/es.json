@@ -643,6 +643,8 @@
       "shareWhatsApp": "WhatsApp",
       "shareWhatsAppAria": "Enviar por WhatsApp para ver en el chat",
       "nowPlaying": "Video de YouTube",
+      "upNext": "A continuación",
+      "upNextHint": "Más del mismo canal · secuencia automática",
       "filtersLabel": "Filtrar por canal",
       "seriesLabel": "Filtrar por serie",
       "topicsLabel": "Filtrar por tema",

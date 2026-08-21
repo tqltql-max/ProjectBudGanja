@@ -11025,6 +11025,59 @@ html[data-theme="light"] .header-group-divider {
     gap: 20px;
 }
 
+.videos-player-block {
+    margin: 0 0 18px;
+}
+
+.videos-player-block .video-card.is-playing {
+    grid-column: auto;
+}
+
+.videos-infinite-row-wrap {
+    margin: 0 0 28px;
+}
+
+.videos-infinite-row-label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px 12px;
+    margin: 0 0 10px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--color-text, #fff);
+}
+
+.videos-infinite-row-hint {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.videos-infinite-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px 2px 12px;
+    scrollbar-width: thin;
+}
+
+.videos-infinite-row .video-card.card {
+    flex: 0 0 min(220px, 72vw);
+    scroll-snap-align: start;
+    margin: 0;
+}
+
+.videos-infinite-row .video-card-summary {
+    display: none;
+}
+
 .jogos-page .videos-grid {
     grid-template-columns: 1fr 1fr;
     gap: 14px;
