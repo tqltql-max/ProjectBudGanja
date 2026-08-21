@@ -618,7 +618,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-muito-obrigado.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-muito-obrigado",
-              "description": "Expressões: «muitoobrigado» — gratidão reforçada; étimo obligare × memória da escravidão/cana; elos gesto, respeito, jesusamando; Faça o melhor!"
+              "description": "Expressões: «Muito obrigado!» / muitoobrigado — gratidão reforçada; étimo obligare × memória da escravidão/cana; elos gesto, valeu, jesusamando; Faça o melhor!"
             },
             {
               "label": "Inspeção: Erva — substituída por planta / plantas",

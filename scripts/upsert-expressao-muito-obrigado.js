@@ -68,7 +68,10 @@ function insertGlossary(gloss) {
       '", en: "thank you", es: "gracias" },\n',
     '    obrigada: { gloss: "Forma curta (género) — ver muitoobrigado.", href: "' +
       href +
-      '", en: "thank you (f)", es: "gracias (f)" },\n'
+      '", en: "thank you (f)", es: "gracias (f)" },\n',
+    '    "muito obrigado!": { gloss: "Forma com exclamação — ver muitoobrigado.", href: "' +
+      href +
+      '", en: "thank you very much!", es: "¡muchas gracias!" },\n'
   ];
 
   let next = gloss;
@@ -90,6 +93,19 @@ function insertGlossary(gloss) {
     if (!inserted) console.warn('Aviso: glossário — ponto de inserção não encontrado');
   } else {
     console.log('Glossário já tinha muitoobrigado');
+    if (!next.includes('"muito obrigado!":')) {
+      const reObrigada =
+        /(obrigada: \{ gloss: "Forma curta \(género\) — ver muitoobrigado\."[\s\S]*?},?\r?\n)/;
+      if (reObrigada.test(next)) {
+        next = next.replace(
+          reObrigada,
+          '$1    "muito obrigado!": { gloss: "Forma com exclamação — ver muitoobrigado.", href: "' +
+            href +
+            '", en: "thank you very much!", es: "¡muchas gracias!" },\n'
+        );
+        console.log('Glossário: alias «muito obrigado!»');
+      }
+    }
   }
   return next;
 }
@@ -119,7 +135,7 @@ async function main() {
       tipo: 'expressao',
       priority: 2,
       status: 'feita',
-      why: 'Expressões: muito obrigado colado; gratidão reforçada; elos gesto, respeito, jesusamando; contraste aff.',
+      why: 'Expressões: Muito obrigado! / muitoobrigado; gratidão reforçada; étimo obligare × escravidão/cana; elos gesto, valeu, jesusamando.',
       whyEn: 'Sayings: muito obrigado as one word; reinforced gratitude; links gesture, respect, jesusamando; contrast aff.',
       whyEs: 'Dichos: muito obrigado pegado; gratitud reforzada; vínculos gesto, respeito, jesusamando; contraste aff.',
       suggestedSlug: post.slug,
@@ -149,7 +165,7 @@ async function main() {
       id: 'muitoobrigado',
       word: 'muitoobrigado',
       simple:
-        'Expressão oral BR — gratidão reforçada (muito obrigado colado); contraste com aff; elos gesto e jesusamando; depois Faça o melhor!',
+        'Expressão oral BR — «Muito obrigado!» / muitoobrigado: gratidão reforçada; étimo obligare (ligar); irmã leve valeu; depois Faça o melhor!',
       simpleEn:
         'Brazilian oral saying — reinforced gratitude (thank you very much as one word); contrast with aff; gesture + jesusamando; then Do your best!',
       simpleEs:

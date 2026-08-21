@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T20:09:04.210Z",
+  "updatedAt": "2026-08-21T20:24:52.509Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4089,22 +4089,20 @@
       "tipo": "expressao",
       "priority": 2,
       "status": "feita",
-      "why": "Expressões: muitoobrigado; gratidão reforçada; étimo obligare × escravidão/cana; elos gesto, respeito, jesusamando.",
-      "whyEn": "Sayings: muitoobrigado; reinforced gratitude; etymon obligare × slavery/cane; gesture, respect, jesusamando.",
-      "whyEs": "Dichos: muitoobrigado; gratitud reforzada; étimo obligare × esclavitud/caña; gesto, respeito, jesusamando.",
+      "why": "Expressões: Muito obrigado! / muitoobrigado; gratidão reforçada; étimo obligare × escravidão/cana; elos gesto, valeu, jesusamando.",
+      "whyEn": "Sayings: muito obrigado as one word; reinforced gratitude; links gesture, respect, jesusamando; contrast aff.",
+      "whyEs": "Dichos: muito obrigado pegado; gratitud reforzada; vínculos gesto, respeito, jesusamando; contraste aff.",
       "suggestedSlug": "inspecao-expressao-muito-obrigado",
       "doneHref": "/posts/post-inspecao-expressao-muito-obrigado.html",
       "seriesHint": "expressoes-ditados",
       "sources": [
-        "https://pt.wiktionary.org/wiki/obrigado",
-        "/posts/post-inspecao-derivado-cana-de-acucar.html",
         "/posts/post-inspecao-expressao-jesusamando.html",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-respeito.html",
         "/posts/post-inspecao-palavra-aff.html",
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
-      "notes": "Cap. 8 Expressões — gratidão + mapa obligare/escravidão/cana; sem equivalência agradecer=escravizar."
+      "notes": "Cap. 8 Expressões — gratidão reforçada / muito obrigado → muitoobrigado."
     },
     {
       "id": "palavra-escravidao",

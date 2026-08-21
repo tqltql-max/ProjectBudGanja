@@ -3,7 +3,7 @@
   "channelUrl": "https://www.youtube.com/@zangadoreview",
   "channelName": "Zangado",
   "handle": "@zangadoreview",
-  "inspectedAt": "2026-08-21T20:10:58.305Z",
+  "inspectedAt": "2026-08-21T20:26:07.956Z",
   "videoCount": 1420,
   "mission": "Canal 100% gamer — reviews, sagas e primeira meia hora com método. No BudGanja entra na página Games. Crédito: Thiago / Zangado — sem afiliação.",
   "categories": [
@@ -45,7 +45,7 @@
       "label": "Trilogias",
       "labelEn": "Trilogies",
       "labelEs": "Trilogías",
-      "count": 13
+      "count": 12
     },
     {
       "id": "demo",
@@ -125,7 +125,7 @@
       "label": "Outros",
       "labelEn": "Other",
       "labelEs": "Otros",
-      "count": 240
+      "count": 241
     }
   ],
   "videos": [
@@ -7265,13 +7265,13 @@
     },
     {
       "id": "_MStzbwawfs",
-      "title": "TRILOGIA STREETS OF RAGE : UM CLÁSSICO DA PORRADARIA!",
+      "title": "STREETS OF RAGE TRILOGY: A CLASSIC OF FIGHTING!",
       "url": "https://www.youtube.com/watch?v=_MStzbwawfs",
       "publishedRelative": "6 years ago",
       "pageIndex": 714,
       "published": "2020-08-17T14:09:36.070Z",
       "thumb": "https://i.ytimg.com/vi/_MStzbwawfs/hqdefault.jpg",
-      "category": "trilogias"
+      "category": "outros"
     },
     {
       "id": "CidStOIydOE",
