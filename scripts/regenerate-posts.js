@@ -4,6 +4,7 @@ const { buildPostHtml, normalizePosts } = require('../lib/posts-service.js');
 const { publishStaticAssets } = require('../lib/publish-static.js');
 const { mergeGuiaInspecoesPosts } = require('../lib/merge-guia-inspecoes.js');
 const { ROOT } = require('../lib/paths.js');
+const { writeFileRetrySync } = require('../lib/fs-write-retry.js');
 const postsPath = path.join(ROOT, 'posts.json');
 const posts = mergeGuiaInspecoesPosts(JSON.parse(fs.readFileSync(postsPath, 'utf8')));
 
@@ -29,7 +30,7 @@ for (const post of posts) {
   if (post.published === false) continue;
   const out = path.join(ROOT, post.filename);
   fs.mkdirSync(path.dirname(out), { recursive: true });
-  fs.writeFileSync(out, buildPostHtml(post), 'utf8');
+  writeFileRetrySync(out, buildPostHtml(post), 'utf8');
   console.log('Generated', post.filename);
 }
 

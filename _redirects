@@ -48,5 +48,9 @@
 /deploy/*          /404 404!
 /wrangler.toml     /404 404!
 
+https://inspetorbudganja.com/* https://inspetorbudganja.com.br/:splat 301!
+https://inspetorbudganja.com/ https://inspetorbudganja.com.br/ 301!
+https://www.inspetorbudganja.com/* https://inspetorbudganja.com.br/:splat 301!
+https://www.inspetorbudganja.com/ https://inspetorbudganja.com.br/ 301!
 https://inspectorbudganja.com/* https://www.inspectorbudganja.com/:splat 301!
 https://inspectorbudganja.com/ https://www.inspectorbudganja.com/ 301!

@@ -37,24 +37,23 @@ Write-Host "A testar hostnames (sem criar CNAME .com via cloudflared)..." -Foreg
 $aliasFail = @()
 foreach ($h in ($canonical + $aliases)) {
   $url = "https://$h/"
-  try {
-    $resp = Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 20 -MaximumRedirection 0 -ErrorAction Stop
-    Write-Host ("  OK  {0}  HTTP {1}" -f $h, [int]$resp.StatusCode) -ForegroundColor Green
-  } catch {
-    $status = $null
-    $location = $null
-    $resp = $_.Exception.Response
-    if ($resp) {
-      $status = [int]$resp.StatusCode
-      $location = $resp.Headers['Location']
-    }
-    if ($status -ge 300 -and $status -lt 400) {
+  $curlOut = & curl.exe -sI -o - --max-time 20 --max-redirs 0 $url 2>&1 | Out-String
+  $status = $null
+  $location = $null
+  if ($curlOut -match 'HTTP/\S+\s+(\d+)') { $status = [int]$Matches[1] }
+  if ($curlOut -match '(?im)^Location:\s*(\S+)') { $location = $Matches[1].Trim() }
+
+  if ($status -ge 200 -and $status -lt 400) {
+    if ($location) {
       Write-Host ("  OK  {0}  HTTP {1} → {2}" -f $h, $status, $location) -ForegroundColor Green
     } else {
-      $aliasFail += $h
-      $detail = if ($status) { "HTTP $status" } else { $_.Exception.Message }
-      Write-Host ("  FALTA {0}  {1}" -f $h, $detail) -ForegroundColor Red
+      Write-Host ("  OK  {0}  HTTP {1}" -f $h, $status) -ForegroundColor Green
     }
+  } else {
+    $aliasFail += $h
+    $detail = if ($status) { "HTTP $status" } else { ($curlOut -split "`n" | Select-Object -First 1).Trim() }
+    if ($status -eq 530) { $detail = "HTTP 530 (tunel desligado)" }
+    Write-Host ("  FALTA {0}  {1}" -f $h, $detail) -ForegroundColor Red
   }
 }
 

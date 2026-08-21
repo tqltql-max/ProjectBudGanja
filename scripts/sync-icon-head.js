@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const { ROOT } = require('../lib/paths.js');
 const { ASSET_VERSION } = require('../lib/asset-version.js');
+const { writeFileRetrySync } = require('../lib/fs-write-retry.js');
 
 // 32/48 primeiro (aba do browser). ICO/SVG com NOME versionado — Cloudflare
 // ainda serve /imagens/icon-192.png antigo (oval verde, immutable ~23 dias).
@@ -50,7 +51,7 @@ function syncFile(file) {
   next = next.replace(/(\r?\n){3,}/g, '\n\n');
 
   if (next === html) return false;
-  fs.writeFileSync(file, next);
+  writeFileRetrySync(file, next);
   return true;
 }
 

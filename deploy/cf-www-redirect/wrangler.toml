@@ -1,0 +1,9 @@
+name = "inspetor-www-com-redirect"
+main = "index.js"
+compatibility_date = "2026-08-21"
+account_id = "2fd524035aa4225a0c0da2a0b9ffaaae"
+workers_dev = false
+
+[[routes]]
+pattern = "www.inspetorbudganja.com/*"
+zone_name = "inspetorbudganja.com"
