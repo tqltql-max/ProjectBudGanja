@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T17:40:07.529Z",
+  "updatedAt": "2026-08-21T17:48:40.200Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7168,6 +7168,111 @@
       "suggestedSlug": "inspecao-palavra-exaustor",
       "doneHref": "/posts/post-inspecao-palavra-exaustor.html",
       "seriesHint": "palavras-origem"
+    },
+    {
+      "id": "palavra-sinais",
+      "title": "Sinais — o campo do corpo",
+      "titleEn": "Sinais — the body-signal field",
+      "titleEs": "Sinais — el campo del cuerpo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: sinais — plural de sinal; mapa do corpo (barriga, orelha, mama, cabelo).",
+      "whyEn": "Palavras: sinais — plural de sinal; mapa do corpo (barriga, orelha, mama, cabelo).",
+      "whyEs": "Palavras: sinais — plural de sinal; mapa do corpo (barriga, orelha, mama, cabelo).",
+      "suggestedSlug": "inspecao-palavra-sinais",
+      "doneHref": "/posts/post-inspecao-palavra-sinais.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/sinal",
+        "/posts/post-inspecao-palavra-sinal.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 165 — cluster sinais do corpo."
+    },
+    {
+      "id": "palavra-barriga",
+      "title": "Barriga — sinal de satisfação",
+      "titleEn": "Barriga — signal of satisfaction",
+      "titleEs": "Barriga — señal de satisfacción",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: barriga — ventre como sinal de satisfação; ≠ Barriga de Trigo.",
+      "whyEn": "Palavras: barriga — ventre como sinal de satisfação; ≠ Barriga de Trigo.",
+      "whyEs": "Palavras: barriga — ventre como sinal de satisfação; ≠ Barriga de Trigo.",
+      "suggestedSlug": "inspecao-palavra-barriga",
+      "doneHref": "/posts/post-inspecao-palavra-barriga.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/barriga",
+        "/posts/post-inspecao-palavra-sinal.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 166 — cluster sinais do corpo."
+    },
+    {
+      "id": "palavra-orelha",
+      "title": "Orelha — pulga atrás, curiosidade",
+      "titleEn": "Orelha — flea behind, curiosity",
+      "titleEs": "Orelha — pulga detrás, curiosidad",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: orelha — pulga atrás da orelha = curiosidade.",
+      "whyEn": "Palavras: orelha — pulga atrás da orelha = curiosidade.",
+      "whyEs": "Palavras: orelha — pulga atrás da orelha = curiosidade.",
+      "suggestedSlug": "inspecao-palavra-orelha",
+      "doneHref": "/posts/post-inspecao-palavra-orelha.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/orelha",
+        "/posts/post-inspecao-palavra-sinal.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 167 — cluster sinais do corpo."
+    },
+    {
+      "id": "palavra-mama",
+      "title": "Mama — teta, sinal de algo fácil",
+      "titleEn": "Mama — teat, signal of something easy",
+      "titleEs": "Mama — teta, señal de algo fácil",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: mama = teta — sinal de algo fácil; ≠ mamão ≠ mãe.",
+      "whyEn": "Palavras: mama = teta — sinal de algo fácil; ≠ mamão ≠ mãe.",
+      "whyEs": "Palavras: mama = teta — sinal de algo fácil; ≠ mamão ≠ mãe.",
+      "suggestedSlug": "inspecao-palavra-mama",
+      "doneHref": "/posts/post-inspecao-palavra-mama.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/mama",
+        "/posts/post-inspecao-palavra-sinal.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 168 — cluster sinais do corpo."
+    },
+    {
+      "id": "palavra-cabelo",
+      "title": "Cabelo — deixa com as mulheres",
+      "titleEn": "Cabelo — leave it with women",
+      "titleEs": "Cabelo — déjalo con las mujeres",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: cabelo — deferência: deixa com as mulheres, elas sabem mais; ≠ despejo.",
+      "whyEn": "Palavras: cabelo — deferência: deixa com as mulheres, elas sabem mais; ≠ despejo.",
+      "whyEs": "Palavras: cabelo — deferência: deixa com as mulheres, elas sabem mais; ≠ despejo.",
+      "suggestedSlug": "inspecao-palavra-cabelo",
+      "doneHref": "/posts/post-inspecao-palavra-cabelo.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/cabelo",
+        "/posts/post-inspecao-palavra-sinal.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 169 — cluster sinais do corpo."
     }
   ]
 }

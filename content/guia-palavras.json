@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T17:40:07.535Z",
+  "updatedAt": "2026-08-21T17:48:40.210Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -6388,6 +6388,56 @@
       "curiositiesEn": "Do your best in the named warning: a signal is not a full message.",
       "historyEs": "Señal viene del latín signum — marca, aviso, tránsito y «dar señal». Eslabones con gesto, riesgo y verdad.",
       "curiositiesEs": "Haz lo mejor en el aviso nombrado: señal no es mensaje completo."
+    },
+    {
+      "id": "sinais",
+      "word": "sinais",
+      "simple": "Plural de sinal — campo do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres; Faça o melhor!",
+      "simpleEn": "Plural de sinal — campo do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres; Faça o melhor!",
+      "simpleEs": "Plural de sinal — campo do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres; Faça o melhor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sinais.html"
+    },
+    {
+      "id": "barriga",
+      "word": "barriga",
+      "simple": "Ventre como sinal de satisfação (o bastante); ≠ livro Barriga de Trigo; mapa sinais; Faça o melhor!",
+      "simpleEn": "Ventre como sinal de satisfação (o bastante); ≠ livro Barriga de Trigo; mapa sinais; Faça o melhor!",
+      "simpleEs": "Ventre como sinal de satisfação (o bastante); ≠ livro Barriga de Trigo; mapa sinais; Faça o melhor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-barriga.html"
+    },
+    {
+      "id": "orelha",
+      "word": "orelha",
+      "simple": "Orelha — pulga atrás = curiosidade; elos inseto, dois ouvidos; mapa sinais; Faça o melhor!",
+      "simpleEn": "Orelha — pulga atrás = curiosidade; elos inseto, dois ouvidos; mapa sinais; Faça o melhor!",
+      "simpleEs": "Orelha — pulga atrás = curiosidade; elos inseto, dois ouvidos; mapa sinais; Faça o melhor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-orelha.html"
+    },
+    {
+      "id": "mama",
+      "word": "mama",
+      "simple": "Mama = teta — sinal de algo fácil (à mão); ≠ mamão ≠ mãe; mapa sinais; Faça o melhor!",
+      "simpleEn": "Mama = teta — sinal de algo fácil (à mão); ≠ mamão ≠ mãe; mapa sinais; Faça o melhor!",
+      "simpleEs": "Mama = teta — sinal de algo fácil (à mão); ≠ mamão ≠ mãe; mapa sinais; Faça o melhor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mama.html"
+    },
+    {
+      "id": "cabelo",
+      "word": "cabelo",
+      "simple": "Cabelo — sinal de deferência: a gente deixa com as mulheres, elas sabem mais; ≠ despejo; mapa sinais; Faça o melhor!",
+      "simpleEn": "Cabelo — sinal de deferência: a gente deixa com as mulheres, elas sabem mais; ≠ despejo; mapa sinais; Faça o melhor!",
+      "simpleEs": "Cabelo — sinal de deferência: a gente deixa com as mulheres, elas sabem mais; ≠ despejo; mapa sinais; Faça o melhor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-cabelo.html"
     },
     {
       "id": "sintetico",
