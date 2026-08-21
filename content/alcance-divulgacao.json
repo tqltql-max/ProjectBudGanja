@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T10:12:00.000Z",
+  "updatedAt": "2026-08-21T10:19:00.000Z",
   "note": "Registro de divulgação comunitária do laboratório — alcance declarado pelo aluno, sem nomes de terceiros. Não conta visualizações confirmadas pelo YouTube Analytics.",
   "events": [
     {
@@ -46,6 +46,39 @@
         "source": "youtube",
         "note": "Pico declarado de 13 pessoas online no vídeo do YouTube, na manhã seguinte ao envio. Atribuído ao compartilhamento do link da aula. Não são visitas ao site do laboratório."
       }
+    },
+    {
+      "id": "bom-dia-inverno-app-whatsapp-2026-08-21",
+      "date": "2026-08-21",
+      "timeLocal": "07:19",
+      "timezone": "America/Sao_Paulo",
+      "channel": "whatsapp",
+      "format": "app-native-share",
+      "audience": {
+        "kind": "group",
+        "label": "grupo de amigos",
+        "count": 20
+      },
+      "subject": {
+        "kind": "obra-lab",
+        "title": "Bom dia, Inverno — Tamara Klink",
+        "siteUrl": "/inverno/",
+        "inspectionUrl": "/posts/post-inspecao-arte-bom-dia-inverno.html"
+      },
+      "shared": {
+        "kind": "app-native-share",
+        "via": "botão Compartilhar do app",
+        "url": "https://inspetorbudganja.com.br/inverno/",
+        "title": "Bom dia, Inverno",
+        "text": "Bom dia, Inverno — Tamara Klink. Oito meses no gelo da Groenlândia. No laboratório BudGanja o livro pede para circular: empresta, doa, fica.",
+        "note": "Partilhado pelo botão Compartilhar do próprio app, na página /inverno/. Desta vez foi o laboratório, não o YouTube."
+      },
+      "message": {
+        "medium": "app-share",
+        "transcript": "Bom dia a todos."
+      },
+      "reachDeclared": 20,
+      "reachNote": "Alcance potencial do grupo (20 pessoas). Não conta visitas confirmadas ao site."
     }
   ]
 }
