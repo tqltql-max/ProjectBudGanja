@@ -10586,6 +10586,12 @@ html[data-theme="light"] .header-group-divider {
     color: var(--color-text-muted);
 }
 
+.jogos-page .jogos-catalog-links a.jogos-channel-kick {
+    color: var(--color-accent, #d4af37);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
 .jogos-watch-page .jogos-watch-player {
     max-width: 920px;
 }

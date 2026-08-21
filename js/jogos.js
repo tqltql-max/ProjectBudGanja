@@ -57,8 +57,9 @@
       nameFallback: 'Aleff',
       descKey: 'pages.games.paulinhoDesc',
       descFallback:
-        'Arquivo de histórias na ordem de postagem. Crédito à pessoa: Aleff (Aliffe Henrique de Carvalho) — sem afiliação.',
+        'Live em kick.com/paulinholokobr. Arquivo de histórias no YouTube, na ordem de postagem. Crédito à pessoa: Aleff (Aliffe Henrique de Carvalho) — sem afiliação.',
       yt: 'https://www.youtube.com/@PaulinhoLOKOoficial',
+      kick: 'https://kick.com/paulinholokobr',
       inspection: '/posts/post-inspecao-canal-paulinho.html',
       emptyKey: 'pages.games.emptyVideos',
       emptyFallback: 'Nenhum vídeo do Aleff no catálogo ainda.'
@@ -171,9 +172,18 @@
     var title = document.getElementById('jogos-catalog-title');
     var desc = document.getElementById('jogos-catalog-desc');
     var yt = document.getElementById('jogos-channel-yt');
+    var kick = document.getElementById('jogos-channel-kick');
     var insp = document.getElementById('jogos-channel-inspection');
     if (title) title.textContent = i18n(creator.nameKey, creator.nameFallback);
     if (desc) desc.textContent = i18n(creator.descKey, creator.descFallback);
+    if (kick) {
+      if (creator.kick) {
+        kick.href = creator.kick;
+        kick.hidden = false;
+      } else {
+        kick.hidden = true;
+      }
+    }
     if (yt) {
       yt.href = creator.yt;
       yt.hidden = !creator.yt;

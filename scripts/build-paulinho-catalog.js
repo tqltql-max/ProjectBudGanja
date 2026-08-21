@@ -300,6 +300,8 @@ async function buildCatalog() {
     channelUrl: CHANNEL_URL,
     channelName: 'Paulinho o LOKO',
     handle: CHANNEL_HANDLE,
+    kickUrl: 'https://kick.com/paulinholokobr',
+    kickHandle: 'PaulinhoLOKObr',
     inspectedAt: new Date().toISOString(),
     videoCount: videos.length,
     mission:

@@ -96,13 +96,14 @@ async function main() {
       tipo: 'canal',
       priority: 2,
       status: 'feita',
-      why: 'Canais: @PaulinhoLOKOoficial — arquivo GTA RP / Anti-RP; sagas de servidor; página Games.',
-      whyEn: 'Channels: @PaulinhoLOKOoficial — GTA RP / Anti-RP archive; server stories; Games page.',
-      whyEs: 'Canales: @PaulinhoLOKOoficial — archivo GTA RP / Anti-RP; historias de servidor; página Games.',
+      why: 'Canais: live no Kick (PaulinhoLOKObr) + arquivo YouTube (@PaulinhoLOKOoficial) — GTA RP / Anti-RP; sagas de servidor; página Games.',
+      whyEn: 'Channels: live on Kick (PaulinhoLOKObr) + YouTube archive (@PaulinhoLOKOoficial) — GTA RP / Anti-RP; server stories; Games page.',
+      whyEs: 'Canales: live en Kick (PaulinhoLOKObr) + archivo YouTube (@PaulinhoLOKOoficial) — GTA RP / Anti-RP; historias de servidor; página Games.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'canal-paulinho',
       sources: [
+        'https://kick.com/paulinholokobr',
         'https://www.youtube.com/@PaulinhoLOKOoficial',
         'https://www.youtube.com/channel/UC57rWqVJ7yGluT4cGrgfkgg',
         'https://pt.wikipedia.org/wiki/Paulinho_o_Loko',
@@ -110,7 +111,7 @@ async function main() {
         '/jogos/aleff/',
         '/videos/?channel=paulinho'
       ],
-      notes: 'Hub /jogos/aleff/ · temas de mérito no catálogo. Pessoa ≠ canal.'
+      notes: 'Hub /jogos/aleff/ · live no Kick (PaulinhoLOKObr) · temas de mérito no catálogo. Pessoa ≠ canal. Live ≠ arquivo.'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);
