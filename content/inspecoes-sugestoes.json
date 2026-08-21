@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T20:36:38.076Z",
+  "updatedAt": "2026-08-21T20:56:07.483Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7344,6 +7344,30 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 172 — premere; panela = vaso; válvula = alívio; escape de motor recusado; P de Perigo se válvula presa."
+    },
+    {
+      "id": "planta-alecrim-do-campo",
+      "title": "Alecrim-do-campo — artepillina C e própolis verde",
+      "titleEn": "Field rosemary — artepillin C and green propolis",
+      "titleEs": "Alecrim-do-campo — artepilina C y propóleo verde",
+      "tipo": "planta",
+      "priority": 2,
+      "status": "feita",
+      "why": "Plantas: Alecrim-do-campo (*Baccharis dracunculifolia*) — foto de campo 21 ago 2026; distinguir do alecrim de cozinha; elo própolis verde / abelha.",
+      "whyEn": "Plants: Field rosemary (*Baccharis dracunculifolia*) — field photo 21 Aug 2026; distinguish from kitchen rosemary; green propolis / bee link.",
+      "whyEs": "Plantas: Alecrim-do-campo (*Baccharis dracunculifolia*) — foto de campo 21 ago 2026; distinguir del romero de cocina; vínculo propóleo verde / abeja.",
+      "suggestedSlug": "inspecao-planta-alecrim-do-campo",
+      "doneHref": "/posts/post-inspecao-planta-alecrim-do-campo.html",
+      "seriesHint": "plantas-medicinais",
+      "sources": [
+        "https://notebook.google.com/notebook/2b56e328-3c46-4586-b079-6d480f280267",
+        "https://doi.org/10.3389/fphar.2022.1048688",
+        "/plantas/alecrim-do-campo/",
+        "/posts/post-inspecao-planta-alecrim.html",
+        "/posts/post-inspecao-planta-carqueja.html",
+        "/posts/post-inspecao-animal-abelha.html"
+      ],
+      "notes": "Cap. 30; foto de campo do inspetor; guia terapêutico popular lido com cautela (não copiar alegações clínicas)."
     }
   ]
 }

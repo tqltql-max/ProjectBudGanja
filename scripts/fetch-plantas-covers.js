@@ -32,6 +32,7 @@ const QUERY_OVERRIDES = {
   boldo: ['Plectranthus barbatus', 'Coleus barbatus'],
   melissa: ['Melissa officinalis'],
   alecrim: ['Salvia rosmarinus', 'Rosmarinus officinalis'],
+  'alecrim-do-campo': ['Baccharis dracunculifolia'],
   gengibre: ['Zingiber officinale'],
   curcuma: ['Curcuma longa'],
   'unha-de-gato': ['Uncaria tomentosa'],

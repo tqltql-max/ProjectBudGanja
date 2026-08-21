@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T20:38:08.684Z",
+  "updatedAt": "2026-08-21T20:58:08.217Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -162,6 +162,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Planta — Alecrim-do-campo — artepillina C e própolis verde",
+      "url": "/posts/post-inspecao-planta-alecrim-do-campo.html",
+      "excerpt": "*Baccharis dracunculifolia* — alecrim dourado / vassourinha do Cerrado; fonte botânica da própolis verde (artepillina C). Foto de campo do inspetor (21 ago 2026).",
+      "text": "Inspeção: Planta — Alecrim-do-campo — artepillina C e própolis verde *Baccharis dracunculifolia* — alecrim dourado / vassourinha do Cerrado; fonte botânica da própolis verde (artepillina C). Foto de campo do inspetor (21 ago 2026). inspecao ## Escopo\n\nInspeção educacional de **Alecrim-do-campo** (*Baccharis dracunculifolia DC.*) a partir do catálogo de plantas do Inspetor BudGanja. Este relatório reúne a ficha pública com o método verificável do laboratório — **não** é protocolo clínico e **não substitui** orientação profissional de saúde.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/plantas/alecrim-do-campo/](/plantas/alecrim-do-campo/). Conteúdo apenas educacional.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Alecrim-do-campo** |\n| Nome científico | *Baccharis dracunculifolia DC.* |\n| Família | Asteraceae |\n| Categoria no hub | Plantas medicinais |\n| Slug no catálogo | `alecrim-do-campo` |\n| Data da inspeção | 2026-08-21 |\n\n## Resumo\n\nArbusto nativo do Cerrado (*Baccharis dracunculifolia*) — alecrim dourado / vassourinha; fonte botânica da própolis verde (artepillina C). Não confundir com o alecrim de cozinha (*Salvia rosmarinus*).\n\n## Partes usadas\n\n- Folhas e ápices vegetativos (infusão tradicional)\n- Flores / inflorescências amarelo-ouro\n- Resina dos brotos (colheita pelas abelhas → própolis verde)\n\n## Usos tradicionais (catálogo)\n\n- Infusão popular de folhas e flores (ofício cultural, não posologia clínica)\n- Tradição digestiva, respiratória e de bochechos antissépticos\n- Fonte botânica da própolis verde brasileira (*Apis mellifera*)\n- Espécie pioneira em recuperação de áreas degradadas (contexto ecológico)\n\n## Cuidados\n\nContraindicado em gravidez e lactação. Não recomendado a menores de 12 anos. Diabéticos sob hipoglicemiantes: monitorizar glicose — o chá não substitui fármaco. Evitar uso excessivo ou prolongado sem orientação. Não confundir com alecrim de cozinha (*Salvia rosmarinus*) nem"
     },
     {
       "title": "Inspeção: Impressão · Pressão — panela e a válvula de escape",
@@ -2816,6 +2822,12 @@
       "text": "Mamão Carica papaya L. Caricaceae Fruto tropical cotidiano (*Carica papaya*): polpa doce, sementes e látex com papaína — a ficha separa o mamão inteiro dos néctares, polpas adoçadas e snacks industriais; elo UNIFESP (papaína em feridas). alimento frutos frutifera culinaria tropicais papaina unifesp cultivo-familiar Consumo do fruto fresco (café da manhã, sobremesa, suco caseiro) Culinária tropical e brasileira (saladas de fruta, doces caseiros) Papaína do látex citada em protocolos de feridas no SUS (contexto formativo UNIFESP) Cultivo familiar em clima quente — planta de crescimento rápido planta fitoterapia medicinal"
     },
     {
+      "title": "Alecrim-do-campo (Baccharis dracunculifolia DC.)",
+      "url": "/plantas/alecrim-do-campo/",
+      "excerpt": "Arbusto nativo do Cerrado (*Baccharis dracunculifolia*) — alecrim dourado / vassourinha; fonte botânica da própolis verde (artepillina C). Não confundir com o alecrim de cozinha (*Salvia rosmarinus*).",
+      "text": "Alecrim-do-campo Baccharis dracunculifolia DC. Asteraceae Arbusto nativo do Cerrado (*Baccharis dracunculifolia*) — alecrim dourado / vassourinha; fonte botânica da própolis verde (artepillina C). Não confundir com o alecrim de cozinha (*Salvia rosmarinus*). nativa cerrado baccharis propolis cha aromatica asteraceae campo Infusão popular de folhas e flores (ofício cultural, não posologia clínica) Tradição digestiva, respiratória e de bochechos antissépticos Fonte botânica da própolis verde brasileira (*Apis mellifera*) Espécie pioneira em recuperação de áreas degradadas (contexto ecológico) planta fitoterapia medicinal"
+    },
+    {
       "title": "Galinha (Gallus gallus domesticus)",
       "url": "/animais/galinha/",
       "excerpt": "Ave de criação: ovo e carne frescos versus nuggets, embutidos e ultraprocessados de frango da indústria.",
@@ -2934,6 +2946,12 @@
       "url": "/plantas/alecrim/",
       "excerpt": "Salvia rosmarinus — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. Citada nos rascunhos das aulas XIV (curso UNIFESP).",
       "text": "Alecrim Salvia rosmarinus — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário alecrim"
+    },
+    {
+      "title": "Alecrim-do-campo",
+      "url": "/plantas/alecrim-do-campo/",
+      "excerpt": "Baccharis dracunculifolia — alecrim dourado / vassourinha do Cerrado; fonte da própolis verde (artepillina C). Não é o alecrim de cozinha (*Salvia rosmarinus*).",
+      "text": "Alecrim-do-campo Baccharis dracunculifolia — alecrim dourado / vassourinha do Cerrado; fonte da própolis verde (artepillina C). Não é o alecrim de cozinha (*Salvia rosmarinus*). tecnico guia palavras glossário alecrim-do-campo"
     },
     {
       "title": "Aleff",

@@ -2413,6 +2413,25 @@
     "seriesLabel": "Cannabis (medicinal)"
   },
   {
+    "title": "Inspeção: Planta — Alecrim-do-campo — artepillina C e própolis verde",
+    "titleEn": "Inspection: Plant — Field rosemary (alecrim-do-campo) — artepillin C and green propolis",
+    "titleEs": "Inspección: Planta — Alecrim-do-campo (romero de campo) — artepilina C y propóleo verde",
+    "excerpt": "*Baccharis dracunculifolia* — alecrim dourado / vassourinha do Cerrado; fonte botânica da própolis verde (artepillina C). Foto de campo do inspetor (21 ago 2026).",
+    "excerptEn": "*Baccharis dracunculifolia* — Brazilian field rosemary / vassourinha of the Cerrado; botanical source of green propolis (artepillin C). Inspector field photo (21 Aug 2026).",
+    "excerptEs": "*Baccharis dracunculifolia* — romero de campo / vassourinha del Cerrado; fuente botánica del propóleo verde (artepilina C). Foto de campo del inspector (21 ago 2026).",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-planta-alecrim-do-campo",
+    "url": "/posts/post-inspecao-planta-alecrim-do-campo.html",
+    "date": "2026-08-21T14:00:00.000Z",
+    "filename": "posts/post-inspecao-planta-alecrim-do-campo.html",
+    "coverImage": "/imagens/plantas/alecrim-do-campo-cover.jpg",
+    "category": "inspecao",
+    "series": "plantas-medicinais",
+    "seriesOrder": 30,
+    "seriesLabel": "Alecrim-do-campo"
+  },
+  {
     "title": "Inspeção: Genial — engenho do projecto BudGanja e o risco do culto vazio",
     "titleEn": "Inspection: Genial — BudGanja project ingenuity and the risk of empty cult",
     "titleEs": "Inspección: Genial — ingenio del proyecto BudGanja y el riesgo del culto vacío",

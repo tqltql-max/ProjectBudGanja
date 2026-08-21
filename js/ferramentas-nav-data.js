@@ -1245,6 +1245,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Cannabis sativa* L. — fitocanabinoides (THC, CBD), terpenos e uso medicinal regulamentado; cautela legal e neurodesenvolvimento."
             },
             {
+              "label": "Inspeção: Planta — Alecrim-do-campo — artepillina C e própolis verde",
+              "tileLabel": "Inspeção: Planta — Alecrim-do-c…",
+              "href": "/posts/post-inspecao-planta-alecrim-do-campo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-alecrim-do-campo",
+              "description": "*Baccharis dracunculifolia* — alecrim dourado / vassourinha do Cerrado; fonte botânica da própolis verde (artepillina C). Foto de campo do inspetor (21 ago 2026)."
+            },
+            {
               "label": "Inspeção: Genial — engenho do projecto BudGanja e o risco do culto vazio",
               "tileLabel": "Inspeção: Genial — engenho do p…",
               "href": "/posts/post-inspecao-palavra-genial.html",

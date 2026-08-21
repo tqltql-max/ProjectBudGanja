@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T20:36:38.086Z",
+  "updatedAt": "2026-08-21T20:56:07.489Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -215,11 +215,27 @@
       "fromTitle": false,
       "href": "/plantas/alecrim/",
       "history": "Alecrim vem do árabe al-iklil (coroa / alecrim) e nomeia Salvia rosmarinus, antes Rosmarinus officinalis. Lineu descreveu o género no século XVIII; a reclassificação em Salvia é de 2017.",
-      "curiosities": "Nos rascunhos das aulas XIV o arbusto entra como planta de cozinha e de cineol — catálogo etnobotânico, não receita de cultivo.",
+      "curiosities": "Nos rascunhos das aulas XIV o arbusto entra como planta de cozinha e de cineol — catálogo etnobotânico, não receita de cultivo. Não confundir com o alecrim-do-campo (*Baccharis dracunculifolia*), fonte da própolis verde.",
       "historyEn": "Portuguese alecrim comes from Arabic al-iklil (crown / rosemary) and names Salvia rosmarinus, formerly Rosmarinus officinalis. Linnaeus described the genus in the 18th century; the move into Salvia is from 2017.",
       "curiositiesEn": "In the XIV lesson drafts the shrub enters as a kitchen plant and a cineole marker — ethnobotanical catalogue, not a grow recipe.",
       "historyEs": "Alecrim viene del árabe al-iklil (corona / romero) y nombra Salvia rosmarinus, antes Rosmarinus officinalis. Linneo describió el género en el siglo XVIII; la reclasificación en Salvia es de 2017.",
       "curiositiesEs": "En los borradores de las clases XIV el arbusto entra como planta de cocina y de cineol — catálogo etnobotánico, no receta de cultivo."
+    },
+    {
+      "id": "alecrim-do-campo",
+      "word": "Alecrim-do-campo",
+      "simple": "Baccharis dracunculifolia — alecrim dourado / vassourinha do Cerrado; fonte da própolis verde (artepillina C). Não é o alecrim de cozinha (*Salvia rosmarinus*).",
+      "simpleEn": "Baccharis dracunculifolia — Cerrado field rosemary / vassourinha; source of green propolis (artepillin C). Not kitchen rosemary (*Salvia rosmarinus*).",
+      "simpleEs": "Baccharis dracunculifolia — romero de campo / vassourinha del Cerrado; fuente del propóleo verde (artepilina C). No es el romero de cocina (*Salvia rosmarinus*).",
+      "group": "tecnico",
+      "fromTitle": false,
+      "href": "/plantas/alecrim-do-campo/",
+      "history": "Alecrim-do-campo, alecrim dourado e vassourinha nomeiam Baccharis dracunculifolia (Asteraceae), arbusto nativo da América do Sul. O epíteto dracunculifolia descreve a folha estreita. As abelhas colhem a resina dos brotos para a própolis verde brasileira.",
+      "curiosities": "A foto de campo do inspetor (21 de agosto de 2026) documenta o arbusto em jardim doméstico. A inspeção separa ofício de chá popular de alegação clínica — o guia terapêutico consultado não vira protocolo do laboratório.",
+      "historyEn": "Field rosemary, golden rosemary and vassourinha name Baccharis dracunculifolia (Asteraceae), a South American shrub. The epithet dracunculifolia describes the narrow leaf. Bees collect bud resin for Brazilian green propolis.",
+      "curiositiesEn": "The inspector field photo (21 August 2026) documents the shrub in a home garden. The inspection keeps folk tea craft apart from clinical claims.",
+      "historyEs": "Alecrim-do-campo, alecrim dourado y vassourinha nombran Baccharis dracunculifolia (Asteraceae), arbusto nativo de Sudamérica. El epíteto dracunculifolia describe la hoja estrecha. Las abejas recolectan la resina de los brotes para el propóleo verde brasileño.",
+      "curiositiesEs": "La foto de campo del inspector (21 de agosto de 2026) documenta el arbusto en jardín doméstico. La inspección separa el oficio de té popular de la alegación clínica."
     },
     {
       "id": "aleff",
