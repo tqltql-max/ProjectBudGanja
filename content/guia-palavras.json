@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T12:28:41.637Z",
+  "updatedAt": "2026-08-21T13:07:05.970Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -7028,6 +7028,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-patinete-eletrico-criancas.html"
+    },
+    {
+      "id": "the-chosen-app",
+      "word": "app The Chosen",
+      "simple": "Aplicativo oficial gratuito para assistir The Chosen / Os Escolhidos (Come and See); na Play: net.comeandsee.thechosen. Distinto da ficha da série e do site osescolhidos.tv.",
+      "simpleEn": "Official free app to watch The Chosen (Come and See); on Play: net.comeandsee.thechosen. Distinct from the series sheet and osescolhidos.tv.",
+      "simpleEs": "App oficial gratuito para ver The Chosen (Come and See); en Play: net.comeandsee.thechosen. Distinto de la ficha de la serie y de osescolhidos.tv.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-app-the-chosen.html"
+    },
+    {
+      "id": "osescolhidos-tv",
+      "word": "osescolhidos.tv",
+      "simple": "Site The Chosen Brasil — porta de anúncio, FAQ e igrejas; o player oficial é o app (Play/iOS) ou watch.thechosen.tv. Ver inspeção do app.",
+      "simpleEn": "The Chosen Brazil site — ads, FAQ and churches door; the official player is the app (Play/iOS) or watch.thechosen.tv. See the app inspection.",
+      "simpleEs": "Sitio The Chosen Brasil — puerta de anuncio, FAQ e iglesias; el reproductor oficial es el app (Play/iOS) o watch.thechosen.tv. Ver la inspección del app.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-app-the-chosen.html"
     }
   ]
 }

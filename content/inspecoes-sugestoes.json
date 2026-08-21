@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T12:28:41.631Z",
+  "updatedAt": "2026-08-21T13:07:05.964Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6466,7 +6466,9 @@
         "https://www.youtube.com/watch?v=K1-FoFj8Jbo",
         "https://watch.thechosen.tv/",
         "/posts/post-inspecao-filme-a-paixao-de-cristo.html",
-        "/posts/post-inspecao-expressao-filho-de-deus.html"
+        "/posts/post-inspecao-expressao-filho-de-deus.html",
+        "/posts/post-inspecao-app-the-chosen.html",
+        "https://play.google.com/store/apps/details?id=net.comeandsee.thechosen"
       ],
       "notes": "Separado de A Paixão de Cristo. Dramatização ≠ catecismo. Sem pirataria."
     },
@@ -6688,6 +6690,32 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 150 — xioomi oral × Xiaomi marca × 小米 milheto; ficha ≠ review; anti-pedestal."
+    },
+    {
+      "id": "app-the-chosen",
+      "title": "app The Chosen — a via oficial gratuita",
+      "titleEn": "The Chosen app — the official free watch path",
+      "titleEs": "app The Chosen — la vía oficial gratuita",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes · app: player oficial Come and See (Play net.comeandsee.thechosen); distinto da série e de osescolhidos.tv.",
+      "whyEn": "Arts · app: official Come and See player (Play net.comeandsee.thechosen); distinct from the series and osescolhidos.tv.",
+      "whyEs": "Artes · app: reproductor oficial Come and See (Play net.comeandsee.thechosen); distinto de la serie y de osescolhidos.tv.",
+      "suggestedSlug": "inspecao-app-the-chosen",
+      "doneHref": "/posts/post-inspecao-app-the-chosen.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=net.comeandsee.thechosen",
+        "https://play.google.com/store/apps/details?id=net.comeandsee.thechosen&hl=pt_BR",
+        "https://apps.apple.com/app/the-chosen/id6443956656",
+        "https://watch.thechosen.tv/",
+        "https://osescolhidos.tv/",
+        "https://www.comeandseefoundation.org/",
+        "https://www.comeandseefoundation.org/privacy",
+        "/posts/post-inspecao-serie-the-chosen.html"
+      ],
+      "notes": "App ≠ série ≠ site BR. Livre de anúncios ≠ sem dados. Sem pirataria."
     }
   ]
 }
