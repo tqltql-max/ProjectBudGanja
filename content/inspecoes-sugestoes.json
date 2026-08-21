@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T20:24:52.509Z",
+  "updatedAt": "2026-08-21T20:36:38.076Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7320,6 +7320,30 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 171 — kólla ≠ collum ≠ Cola; pipa sem linha cortante = brinquedo; cerol = literacia, sem fabrico."
+    },
+    {
+      "id": "palavra-impressao-pressao",
+      "title": "Impressão · Pressão — panela e a válvula de escape",
+      "titleEn": "Impression · Pressure — cooker and the release valve",
+      "titleEs": "Impresión · Presión — olla y la válvula de escape",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: impressão = pressão para dentro; objecto panela de pressão + válvula de escape; ≠ inspiração; ficha ≠ anular válvula.",
+      "whyEn": "Words: impression = pressure inward; pressure cooker + release valve; ≠ inspiration; sheet ≠ blocking the valve.",
+      "whyEs": "Palabras: impresión = presión hacia dentro; olla a presión + válvula de escape; ≠ inspiración.",
+      "suggestedSlug": "inspecao-palavra-impressao-pressao",
+      "doneHref": "/posts/post-inspecao-palavra-impressao-pressao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/impress%C3%A3o",
+        "https://pt.wikipedia.org/wiki/Panela_de_press%C3%A3o",
+        "/posts/post-inspecao-palavra-inspiracao.html",
+        "/posts/post-inspecao-palavra-risco.html",
+        "/posts/post-inspecao-palavra-aff.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 172 — premere; panela = vaso; válvula = alívio; escape de motor recusado; P de Perigo se válvula presa."
     }
   ]
 }

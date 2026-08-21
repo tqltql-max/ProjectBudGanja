@@ -5035,6 +5035,25 @@
     "seriesLabel": "Cola · Colar · palavra"
   },
   {
+    "title": "Inspeção: Impressão · Pressão — panela e a válvula de escape",
+    "titleEn": "Inspection: Impression · Pressure — cooker and the release valve",
+    "titleEs": "Inspección: Impresión · Presión — olla y la válvula de escape",
+    "excerpt": "Palavras: impressão = pressão para dentro (premere); objecto panela de pressão + válvula de escape; ≠ inspiração; ficha ≠ anular válvula; Faça o melhor!",
+    "excerptEn": "Words: impression = pressure inward (premere); pressure-cooker + release valve; ≠ inspiration; sheet ≠ how to block a valve; Do your best!",
+    "excerptEs": "Palabras: impresión = presión hacia dentro; olla a presión + válvula de escape; ≠ inspiración; ficha ≠ anular válvula; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-impressao-pressao",
+    "url": "/posts/post-inspecao-palavra-impressao-pressao.html",
+    "date": "2026-08-21T20:40:00.000Z",
+    "filename": "posts/post-inspecao-palavra-impressao-pressao.html",
+    "coverImage": "/imagens/inspecoes/impressao-pressao-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 172,
+    "seriesLabel": "Impressão · Pressão · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",

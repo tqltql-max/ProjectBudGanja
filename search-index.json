@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T20:30:02.538Z",
+  "updatedAt": "2026-08-21T20:38:08.684Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -162,6 +162,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Impressão · Pressão — panela e a válvula de escape",
+      "url": "/posts/post-inspecao-palavra-impressao-pressao.html",
+      "excerpt": "Palavras: impressão = pressão para dentro (premere); objecto panela de pressão + válvula de escape; ≠ inspiração; ficha ≠ anular válvula; Faça o melhor!",
+      "text": "Inspeção: Impressão · Pressão — panela e a válvula de escape Palavras: impressão = pressão para dentro (premere); objecto panela de pressão + válvula de escape; ≠ inspiração; ficha ≠ anular válvula; Faça o melhor! inspecao ## Escopo\n\nInspeção editorial da família **[impressão / pressão](/posts/post-inspecao-palavra-impressao-pressao.html)**. Pedido de campo: *Impresssao* · *Pressao* · objecto **panela de pressão** · **válvula de escape**. O laboratório não funde os ofícios. A âncora é o étimo *premere* («apertar»): **pressão** é a força; **impressão** é a marca **para dentro**; a **panela** é o vaso que segura essa força; a **válvula de escape** é a peça que a deixa sair antes de virar [risco](/posts/post-inspecao-palavra-risco.html) sem mapa.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · impressão](https://pt.wiktionary.org/wiki/impress%C3%A3o), [pressão](https://pt.wiktionary.org/wiki/press%C3%A3o), [Wikipédia · Panela de pressão](https://pt.wikipedia.org/wiki/Panela_de_press%C3%A3o), [Denis Papin](https://pt.wikipedia.org/wiki/Denis_Papin). Série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras); objecto também no mapa de [objetos](/objetos/). **Ficha ≠ manual de cozinha, ≠ protocolo clínico (tensão arterial), ≠ como tampar ou anular a válvula.** Nomear o perigo da panela com válvula bloqueada ≠ ensinar a fazê-la explodir. Sem afiliação comercial.\n\n**Gatilho tipográfico:** *Impresssao* / *Pressao* → **impressão** / **pressão**.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Formas âncora | **impressão** · **pressão** |\n| Objecto de cozinha | **panela de pressão** |\n| Peça crítica | **válvula de escape** (alívio / segurança da panela) |\n| Tipo BudGanja | Palavra + objecto — *premere* × marca × vaso × alívio |\n| Não é | [inspiração](/posts/post-inspecao-palavra-inspiracao.html) (*spīrāre*) · escape de motor · receita · laudo médico |\n| Elo léxico | [língua portuguesa](/posts/post-inspecao-palavra-lingua-portuguesa."
     },
     {
       "title": "Inspeção: Cola · Colar — colante, cortante, cerol, pipa, linha e o Brasil com P de Perigo",
@@ -4296,6 +4302,36 @@
       "url": "/posts/post-inspecao-palavra-inspiracao.html",
       "excerpt": "Lat. īnspīrātiō — sopro × ideia BR; elos criatividade/gesto/esperança; Faça o melhor com o sopro.",
       "text": "inspiração Lat. īnspīrātiō — sopro × ideia BR; elos criatividade/gesto/esperança; Faça o melhor com o sopro. lexico guia palavras glossário inspiracao"
+    },
+    {
+      "title": "válvula de escape",
+      "url": "/posts/post-inspecao-palavra-impressao-pressao.html",
+      "excerpt": "Nesta ficha: alívio da panela de pressão. Elo oral: aff. Escape de motor = outro objecto. Não anular a peça.",
+      "text": "válvula de escape Nesta ficha: alívio da panela de pressão. Elo oral: aff. Escape de motor = outro objecto. Não anular a peça. lexico guia palavras glossário valvula-de-escape"
+    },
+    {
+      "title": "panela de pressão",
+      "url": "/posts/post-inspecao-palavra-impressao-pressao.html",
+      "excerpt": "Objecto: vaso que segura vapor. Antecedente Papin. Válvula de escape livre = ofício; presa = P de Perigo. Ficha ≠ receita.",
+      "text": "panela de pressão Objecto: vaso que segura vapor. Antecedente Papin. Válvula de escape livre = ofício; presa = P de Perigo. Ficha ≠ receita. lexico guia palavras glossário panela-de-pressao"
+    },
+    {
+      "title": "impressionado",
+      "url": "/posts/post-inspecao-palavra-impressao-pressao.html",
+      "excerpt": "Quem recebeu a marca — peito impresso. Crédito: muitoobrigado. Ver impressão/pressão.",
+      "text": "impressionado Quem recebeu a marca — peito impresso. Crédito: muitoobrigado. Ver impressão/pressão. lexico guia palavras glossário impressionado"
+    },
+    {
+      "title": "pressão",
+      "url": "/posts/post-inspecao-palavra-impressao-pressao.html",
+      "excerpt": "Força (lat. pressio / premere). Física, social, do peito — e o que a panela de pressão segura. O mapa calculado é risco.",
+      "text": "pressão Força (lat. pressio / premere). Física, social, do peito — e o que a panela de pressão segura. O mapa calculado é risco. lexico guia palavras glossário pressao"
+    },
+    {
+      "title": "impressão",
+      "url": "/posts/post-inspecao-palavra-impressao-pressao.html",
+      "excerpt": "Marca de pressão para dentro (lat. imprimere); papel, peito, memória; ≠ inspiração; família da panela nesta ficha.",
+      "text": "impressão Marca de pressão para dentro (lat. imprimere); papel, peito, memória; ≠ inspiração; família da panela nesta ficha. lexico guia palavras glossário impressao"
     },
     {
       "title": "interruptor",
