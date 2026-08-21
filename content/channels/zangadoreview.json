@@ -3,7 +3,7 @@
   "channelUrl": "https://www.youtube.com/@zangadoreview",
   "channelName": "Zangado",
   "handle": "@zangadoreview",
-  "inspectedAt": "2026-08-21T19:56:11.646Z",
+  "inspectedAt": "2026-08-21T20:10:58.305Z",
   "videoCount": 1420,
   "mission": "Canal 100% gamer — reviews, sagas e primeira meia hora com método. No BudGanja entra na página Games. Crédito: Thiago / Zangado — sem afiliação.",
   "categories": [
@@ -45,7 +45,7 @@
       "label": "Trilogias",
       "labelEn": "Trilogies",
       "labelEs": "Trilogías",
-      "count": 12
+      "count": 13
     },
     {
       "id": "demo",
@@ -125,7 +125,7 @@
       "label": "Outros",
       "labelEn": "Other",
       "labelEs": "Otros",
-      "count": 241
+      "count": 240
     }
   ],
   "videos": [
@@ -133,7 +133,7 @@
       "id": "50KgKprM-FY",
       "title": "[CompletoZ #93] : The Last Guardian (2016) Gameplay Completo (Ps4/Ps5)",
       "url": "https://www.youtube.com/watch?v=50KgKprM-FY",
-      "publishedRelative": "há 5 horas",
+      "publishedRelative": "há 6 horas",
       "pageIndex": 0,
       "published": "2026-08-21T14:00:09+00:00",
       "thumb": "https://i.ytimg.com/vi/50KgKprM-FY/hqdefault.jpg",
@@ -7265,13 +7265,13 @@
     },
     {
       "id": "_MStzbwawfs",
-      "title": "STREETS OF RAGE TRILOGY: A CLASSIC OF FIGHTING!",
+      "title": "TRILOGIA STREETS OF RAGE : UM CLÁSSICO DA PORRADARIA!",
       "url": "https://www.youtube.com/watch?v=_MStzbwawfs",
       "publishedRelative": "6 years ago",
       "pageIndex": 714,
       "published": "2020-08-17T14:09:36.070Z",
       "thumb": "https://i.ytimg.com/vi/_MStzbwawfs/hqdefault.jpg",
-      "category": "outros"
+      "category": "trilogias"
     },
     {
       "id": "CidStOIydOE",

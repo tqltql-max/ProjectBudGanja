@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T19:56:25.319Z",
+  "updatedAt": "2026-08-21T20:11:10.857Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -162,6 +162,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Cola · Colar — colante, cortante, cerol, pipa, linha e o Brasil com P de Perigo",
+      "url": "/posts/post-inspecao-palavra-cola-colar.html",
+      "excerpt": "Palavras: cola/colar (kólla ≠ pescoço ≠ noz); cadeia BR colante·cortante·cerol·pipa·linha; Brasil com P de Perigo; ficha ≠ receita; Faça o melhor!",
+      "text": "Inspeção: Cola · Colar — colante, cortante, cerol, pipa, linha e o Brasil com P de Perigo Palavras: cola/colar (kólla ≠ pescoço ≠ noz); cadeia BR colante·cortante·cerol·pipa·linha; Brasil com P de Perigo; ficha ≠ receita; Faça o melhor! inspecao ## Escopo\n\nInspeção editorial da família **[cola / colar](/posts/post-inspecao-palavra-cola-colar.html)** — e de tudo o que o pedido de campo colou à volta: **colante**, **cortante**, **cerol**, **pipa**, **linha**, **perigo**. O laboratório não funde os étimos. A âncora é a palavra; o caso brasileiro que pede carimbo é a **linha de pipa**. Veredicto de chão: **Brasil com P de Perigo** — literacia pública, não pânico, não receita.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · cola](https://pt.wiktionary.org/wiki/cola), [colar](https://pt.wiktionary.org/wiki/colar), [Wikipédia · Cerol](https://pt.wikipedia.org/wiki/Cerol), [Pipa (brinquedo)](https://pt.wikipedia.org/wiki/Pipa_(brinquedo)). Série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). **Ficha ≠ manual de cerol, ≠ protocolo clínico, ≠ código penal comentado.** Nomear a mistura pública (adesivo + abrasivo na linha) ≠ ensinar a fazê-la. Pipa sem linha cortante continua brinquedo. Sem afiliação comercial.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Formas âncora | **cola** · **colar** |\n| Família pedida | **colante** · **cortante** · **cerol** · **pipa** · **linha** · **perigo** |\n| Carimbo de chão | **Brasil com P de Perigo** |\n| Tipo BudGanja | Palavra — homógrafos × cadeia da pipa × literacia de dano |\n| Não é | Receita · marca de refrigerante como definição · jóia · [risco](/posts/post-inspecao-palavra-risco.html) (mapa calculado) |\n| Elo léxico | [língua portuguesa](/posts/post-inspecao-palavra-lingua-portuguesa.html) · [aglutinação](/posts/post-inspecao-palavra-aglutinacao.html) (cola gramatical) · [glúten](/posts/post-inspecao-derivado-gluten.html) (lat. *gluten* = cola) |\n| Elo peito | [medo](/posts/post-ins"
     },
     {
       "title": "Inspeção: Sexta-feira 13 — apenas mais um dia qualquer",
@@ -4458,6 +4464,54 @@
       "url": "/posts/post-inspecao-palavra-aglutinacao.html",
       "excerpt": "Composição por fusão (planalto, embora, aguardente); cara+alho só parece isto — o nome certo é trocadilho; ≠ polimorfismo; Faça o melhor na solda.",
       "text": "Aglutinação Composição por fusão (planalto, embora, aguardente); cara+alho só parece isto — o nome certo é trocadilho; ≠ polimorfismo; Faça o melhor na solda. lexico guia palavras glossário aglutinacao"
+    },
+    {
+      "title": "perigo",
+      "url": "/posts/post-inspecao-palavra-cola-colar.html",
+      "excerpt": "Ameaça imediata (periculum). Caso desta ficha: linha de pipa com cerol — Brasil com P. O mapa calculado é risco.",
+      "text": "perigo Ameaça imediata (periculum). Caso desta ficha: linha de pipa com cerol — Brasil com P. O mapa calculado é risco. lexico guia palavras glossário perigo-cola"
+    },
+    {
+      "title": "linha",
+      "url": "/posts/post-inspecao-palavra-cola-colar.html",
+      "excerpt": "Nesta ficha: o fio da pipa. Linha cortante / cerol = P de Perigo. Outros sentidos (fila, verso, pesca) = outro mapa.",
+      "text": "linha Nesta ficha: o fio da pipa. Linha cortante / cerol = P de Perigo. Outros sentidos (fila, verso, pesca) = outro mapa. lexico guia palavras glossário linha-pipa"
+    },
+    {
+      "title": "pipa",
+      "url": "/posts/post-inspecao-palavra-cola-colar.html",
+      "excerpt": "Brinquedo aéreo (papagaio, raia). Sem linha cortante continua pipa; o perigo é o cerol, não o papel no céu.",
+      "text": "pipa Brinquedo aéreo (papagaio, raia). Sem linha cortante continua pipa; o perigo é o cerol, não o papel no céu. lexico guia palavras glossário pipa"
+    },
+    {
+      "title": "cerol",
+      "url": "/posts/post-inspecao-palavra-cola-colar.html",
+      "excerpt": "Nome BR do revestimento que torna a linha de pipa colante e cortante; literacia de dano, não receita; leis locais; Brasil com P.",
+      "text": "cerol Nome BR do revestimento que torna a linha de pipa colante e cortante; literacia de dano, não receita; leis locais; Brasil com P. lexico guia palavras glossário cerol"
+    },
+    {
+      "title": "cortante",
+      "url": "/posts/post-inspecao-palavra-cola-colar.html",
+      "excerpt": "Que corta. Na pipa BR: a linha que corta outra — e, na rua, vira P de Perigo.",
+      "text": "cortante Que corta. Na pipa BR: a linha que corta outra — e, na rua, vira P de Perigo. lexico guia palavras glossário cortante"
+    },
+    {
+      "title": "colante",
+      "url": "/posts/post-inspecao-palavra-cola-colar.html",
+      "excerpt": "Que cola. Na pipa BR: a linha que pega — par do cortante; elo cerol.",
+      "text": "colante Que cola. Na pipa BR: a linha que pega — par do cortante; elo cerol. lexico guia palavras glossário colante"
+    },
+    {
+      "title": "colar",
+      "url": "/posts/post-inspecao-palavra-cola-colar.html",
+      "excerpt": "Verbo: pegar / copiar na prova / andar junto; substantivo jóia = collum (pescoço) — outro étimo; cadeia pipa nesta ficha.",
+      "text": "colar Verbo: pegar / copiar na prova / andar junto; substantivo jóia = collum (pescoço) — outro étimo; cadeia pipa nesta ficha. lexico guia palavras glossário colar"
+    },
+    {
+      "title": "cola",
+      "url": "/posts/post-inspecao-palavra-cola-colar.html",
+      "excerpt": "Grude (gr. kólla); no BR também cola de prova e, na rua, o início da cadeia cerol/pipa; ≠ refrigerante; Brasil com P de Perigo.",
+      "text": "cola Grude (gr. kólla); no BR também cola de prova e, na rua, o início da cadeia cerol/pipa; ≠ refrigerante; Brasil com P de Perigo. lexico guia palavras glossário cola"
     },
     {
       "title": "Mequetrefe",

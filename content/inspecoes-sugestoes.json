@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T18:07:19.790Z",
+  "updatedAt": "2026-08-21T20:09:04.210Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7298,6 +7298,30 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 170 — 13 nov. 2026 é sexta e é um dia qualquer; franquia = elo de estreia, não o objecto."
+    },
+    {
+      "id": "palavra-cola-colar",
+      "title": "Cola · Colar — Brasil com P de Perigo",
+      "titleEn": "Cola · Colar — Brazil with P for Danger",
+      "titleEs": "Cola · Colar — Brasil con P de Peligro",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: cola/colar + colante, cortante, cerol, pipa, linha; Brasil com P de Perigo; ficha ≠ receita.",
+      "whyEn": "Words: cola/colar + sticky, cutting, cerol, kite, line; Brazil with P for Danger; not a recipe.",
+      "whyEs": "Palabras: cola/colar + colante, cortante, cerol, cometa, línea; Brasil con P de Peligro; no es receta.",
+      "suggestedSlug": "inspecao-palavra-cola-colar",
+      "doneHref": "/posts/post-inspecao-palavra-cola-colar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/cola",
+        "https://pt.wikipedia.org/wiki/Cerol",
+        "https://pt.wikipedia.org/wiki/Pipa_(brinquedo)",
+        "/posts/post-inspecao-palavra-risco.html",
+        "/posts/post-inspecao-palavra-aglutinacao.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 171 — kólla ≠ collum ≠ Cola; pipa sem linha cortante = brinquedo; cerol = literacia, sem fabrico."
     }
   ]
 }
