@@ -335,6 +335,35 @@ body[data-page="inverno"] #main-content {
     line-height: 1.5;
 }
 
+.inverno-lab-note {
+    margin-top: 1.75rem;
+    padding: 1.15rem 1.2rem 1.25rem;
+    background: rgba(125, 255, 208, 0.05);
+    border: 1px solid rgba(125, 255, 208, 0.18);
+    border-left: 3px solid var(--inverno-gold);
+}
+
+.inverno-lab-note .inverno-kicker {
+    margin-bottom: 0.35rem;
+}
+
+.inverno-lab-note h3 {
+    margin: 0;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(1.35rem, 3.5vw, 1.7rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: var(--inverno-ice);
+}
+
+.inverno-lab-note p {
+    margin: 0.65rem 0 0;
+    font-size: 1.02rem;
+    line-height: 1.58;
+    color: var(--inverno-ink);
+}
+
 .inverno-links {
     display: flex;
     flex-wrap: wrap;
