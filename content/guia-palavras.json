@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T17:21:56.711Z",
+  "updatedAt": "2026-08-21T17:40:07.535Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3044,6 +3044,58 @@
       "curiositiesEs": "El laboratorio pide equilibrar con agua y tratar la rabia con oficio: Haz lo mejor con medida."
     },
     {
+      "id": "incendio",
+      "word": "incêndio",
+      "simple": "Lat. incendium — evento descontrolado; ≠ fogo (focus, elemento); eixo do cluster da tenda; Faça o melhor!",
+      "href": "/posts/post-inspecao-palavra-incendio.html",
+      "group": "lexico",
+      "fromTitle": false,
+      "history": "Incendere: atear. Incêndio é o fogo que saiu da lareira.",
+      "curiosities": "Controle de incêndio impede o evento; não romantiza a chama."
+    },
+    {
+      "id": "extintor",
+      "word": "extintor",
+      "simple": "Lat. exstinguere — objecto de controle que apaga; último gesto; ≠ NR-23; Faça o melhor!",
+      "href": "/posts/post-inspecao-palavra-extintor.html",
+      "group": "lexico",
+      "fromTitle": false,
+      "history": "Extinguir: fazer cessar a chama. No lab, o primeiro gesto é desligar a carga.",
+      "curiosities": "Cilindro vermelho na foto não inspeciona o driver."
+    },
+    {
+      "id": "objetos-perigosos-incendio",
+      "word": "objectos perigosos para controle de incêndio",
+      "simple": "Mapa lab: perigo × corte × nome de marca — Mars Hydro / Vivosun e os objectos da tenda; ≠ manual de bombeiros; Faça o melhor!",
+      "simpleEn": "Lab map: hazard × cut × brand name — Mars Hydro / Vivosun and tent objects; not a fire-crew manual; Do your best!",
+      "simpleEs": "Mapa lab: peligro × corte × marca — Mars Hydro / Vivosun y objetos de la carpa; no es manual de bomberos; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-objetos-perigosos-incendio.html",
+      "history": "Composto de ofício: objecto (lat. objectum) + perigo (periculum) + controle (fr. contrôle) + incêndio (incendium). Distingue o que pode acender do que corta ou apaga.",
+      "curiosities": "A marca no painel não é certificado. marshydrobr e Vivosun entram pela origem da palavra e pela verificação de catálogo."
+    },
+    {
+      "id": "tenda",
+      "word": "tenda",
+      "simple": "Lat. tendere — recinto indoor (grow tent) que fecha luz e calor; ≠ cofre ignífugo; Faça o melhor!",
+      "href": "/posts/post-inspecao-palavra-tenda.html",
+      "group": "lexico",
+      "fromTitle": false,
+      "history": "Esticar pano (tendere) virou a caixa Oxford/Mylar do cultivo indoor.",
+      "curiosities": "Reflexão de catálogo não substitui o luxímetro."
+    },
+    {
+      "id": "exaustor",
+      "word": "exaustor",
+      "simple": "Lat. exhaurīre — motor que esgota o ar da tenda; circulação ≠ extração; Faça o melhor!",
+      "href": "/posts/post-inspecao-palavra-exaustor.html",
+      "group": "lexico",
+      "fromTitle": false,
+      "history": "Exaurir o ar velho: inline, duto, carvão. Motor continua objecto eléctrico.",
+      "curiosities": "AeroLight (Vivosun) circula no painel; não troca o volume da tenda."
+    },
+    {
       "id": "francisco-matos",
       "word": "Francisco José de Abreu Matos",
       "simple": "Farmacologista da UFC, mentor do projecto Farmácias Vivas (1983) — citado na Aula 5 como origem da política.",
@@ -4302,6 +4354,26 @@
       "curiositiesEs": "La boca (lampada) no es el interruptor: la ficha separa objeto, mito y clic."
     },
     {
+      "id": "fonte",
+      "word": "fonte",
+      "simple": "Lat. fons — nascente; no indoor é o driver/PSU, perigo escondido atrás do painel; Faça o melhor!",
+      "href": "/posts/post-inspecao-palavra-fonte.html",
+      "group": "lexico",
+      "fromTitle": false,
+      "history": "A palavra da água passou a nomear a fonte de alimentação do LED.",
+      "curiosities": "Eco com Hydro em Mars Hydro: água no nome, calor no cabo."
+    },
+    {
+      "id": "extensao",
+      "word": "extensão",
+      "simple": "Lat. extendere — régua/benjamim que estica a tomada até à tenda; perigo banal; Faça o melhor!",
+      "href": "/posts/post-inspecao-palavra-extensao.html",
+      "group": "lexico",
+      "fromTitle": false,
+      "history": "Esticar (extendere) o cabo não estica o ampere da parede.",
+      "curiosities": "Partilha o gesto de esticar com a tenda (tendere)."
+    },
+    {
       "id": "macaneta",
       "word": "maçaneta",
       "simple": "Puxador/fecho da porta — gesto torcer/abrir; elo mãos, porta/janela, interruptor e ligar/desligar.",
@@ -4460,6 +4532,18 @@
       "curiositiesEn": "The lexical sheet covers the element; Greenland and ice cover the Arctic stage.",
       "historyEs": "Mar viene del latín mare — océano y horizonte. En el laboratorio cruza camino, Vida y la travesía solitaria de Tamara.",
       "curiositiesEs": "La ficha léxica cubre el elemento; Groenlandia y hielo cubren el escenario ártico."
+    },
+    {
+      "id": "mars-hydro",
+      "word": "Mars Hydro",
+      "simple": "Marca LED indoor: Mars (planeta/deus) + Hydro (água); rasto marshydrobr; marca ≠ controle de incêndio; Faça o melhor!",
+      "simpleEn": "Indoor LED brand: Mars (planet/god) + Hydro (water); marshydrobr trail; brand ≠ fire control; Do your best!",
+      "simpleEs": "Marca LED indoor: Mars (planeta/dios) + Hydro (agua); rastro marshydrobr; marca ≠ control de incendio; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mars-hydro.html",
+      "history": "Mars Hydro (2009, Shenzhen) cola o latim Mārs ao grego hýdōr. O domínio marshydrobr é o rasto Brasil, não a grafia da marca.",
+      "curiosities": "Hydro no nome não molha o cabo. Catálogo: inspeção de equipamentos Mars Hydro Brasil."
     },
     {
       "id": "maracuja",
@@ -6384,6 +6468,18 @@
       "curiositiesEn": "Do your best with daylight: the lexical sheet is the star, not isolation.",
       "historyEs": "Sol viene del latín sol — el astro y la luz natural. Eslabón con luz; contraste con interruptor; no se colapsa en solitario.",
       "curiositiesEs": "Haz lo mejor con la luz del día: la ficha léxica es el astro, no el aislamiento."
+    },
+    {
+      "id": "vivosun",
+      "word": "Vivosun",
+      "simple": "Marca indoor: vivo + sun = sol vivo; rasto BR por revenda; marca ≠ astro nem laudo; Faça o melhor!",
+      "simpleEn": "Indoor brand: vivo + sun = living sun; Brazil via resellers; brand ≠ star or certificate; Do your best!",
+      "simpleEs": "Marca indoor: vivo + sun = sol vivo; Brasil por revenda; marca ≠ astro ni laudo; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-vivosun.html",
+      "history": "Portmanteau romance+inglês: vivo (lat. vīvus) + sun. Linha pública: HPS ~2009, tenda 2014, LED 2021, AeroLight 2022.",
+      "curiosities": "Red Dot é prémio de design. No BR não há espelho .com.br oficial nesta inspeção."
     },
     {
       "id": "solitario",

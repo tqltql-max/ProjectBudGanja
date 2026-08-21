@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T17:21:56.705Z",
+  "updatedAt": "2026-08-21T17:40:07.529Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7062,6 +7062,112 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 155 — dois REM (sono × sigla lab); sinais ≠ signo ≠ mensagem; ≠ polissonografia."
+    },
+    {
+      "id": "palavra-objetos-perigosos-incendio",
+      "title": "Objectos perigosos para controle de incêndio — mapa da tenda",
+      "titleEn": "Dangerous objects for fire control — the tent map",
+      "titleEs": "Objetos peligrosos para control de incendio — el mapa de la carpa",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Mapa perigo × corte × marca: Mars Hydro / Vivosun e todos os objectos da tenda.",
+      "suggestedSlug": "inspecao-palavra-objetos-perigosos-incendio",
+      "doneHref": "/posts/post-inspecao-palavra-objetos-perigosos-incendio.html",
+      "seriesHint": "palavras-origem"
+    },
+    {
+      "id": "palavra-mars-hydro",
+      "title": "Mars Hydro — Marte, água e o rasto marshydrobr",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Origem da palavra Mars Hydro (*marshydrobr*); marca ≠ controle de incêndio.",
+      "suggestedSlug": "inspecao-palavra-mars-hydro",
+      "doneHref": "/posts/post-inspecao-palavra-mars-hydro.html",
+      "seriesHint": "palavras-origem"
+    },
+    {
+      "id": "palavra-vivosun",
+      "title": "Vivosun — sol vivo, marca e o cabo na tenda",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Origem da palavra Vivosun (vivo + sun); irmã de Mars Hydro no cluster de incêndio.",
+      "suggestedSlug": "inspecao-palavra-vivosun",
+      "doneHref": "/posts/post-inspecao-palavra-vivosun.html",
+      "seriesHint": "palavras-origem"
+    },
+    {
+      "id": "verificacao-vivosun",
+      "title": "Equipamentos Vivosun",
+      "tipo": "equipamento",
+      "priority": 2,
+      "status": "feita",
+      "why": "Catálogo Vivosun visível no BR (revenda) — AeroLight, tendas, GrowHub; cruzar ao lab.",
+      "suggestedSlug": "inspecao-vivosun",
+      "doneHref": "/posts/post-inspecao-vivosun.html",
+      "seriesHint": "verificacao-equipamento"
+    },
+    {
+      "id": "palavra-tenda",
+      "title": "Tenda — recinto, Mylar e o calor fechado",
+      "tipo": "palavra",
+      "priority": 3,
+      "status": "feita",
+      "suggestedSlug": "inspecao-palavra-tenda",
+      "doneHref": "/posts/post-inspecao-palavra-tenda.html",
+      "seriesHint": "palavras-origem"
+    },
+    {
+      "id": "palavra-extintor",
+      "title": "Extintor — apagar, classe e o último gesto",
+      "tipo": "palavra",
+      "priority": 3,
+      "status": "feita",
+      "suggestedSlug": "inspecao-palavra-extintor",
+      "doneHref": "/posts/post-inspecao-palavra-extintor.html",
+      "seriesHint": "palavras-origem"
+    },
+    {
+      "id": "palavra-incendio",
+      "title": "Incêndio — o evento, não o elemento",
+      "tipo": "palavra",
+      "priority": 3,
+      "status": "feita",
+      "suggestedSlug": "inspecao-palavra-incendio",
+      "doneHref": "/posts/post-inspecao-palavra-incendio.html",
+      "seriesHint": "palavras-origem"
+    },
+    {
+      "id": "palavra-fonte",
+      "title": "Fonte — a nascente que agora é o driver",
+      "tipo": "palavra",
+      "priority": 3,
+      "status": "feita",
+      "suggestedSlug": "inspecao-palavra-fonte",
+      "doneHref": "/posts/post-inspecao-palavra-fonte.html",
+      "seriesHint": "palavras-origem"
+    },
+    {
+      "id": "palavra-extensao",
+      "title": "Extensão — esticar a tomada até à tenda",
+      "tipo": "palavra",
+      "priority": 3,
+      "status": "feita",
+      "suggestedSlug": "inspecao-palavra-extensao",
+      "doneHref": "/posts/post-inspecao-palavra-extensao.html",
+      "seriesHint": "palavras-origem"
+    },
+    {
+      "id": "palavra-exaustor",
+      "title": "Exaustor — esgotar o ar, não o motor",
+      "tipo": "palavra",
+      "priority": 3,
+      "status": "feita",
+      "suggestedSlug": "inspecao-palavra-exaustor",
+      "doneHref": "/posts/post-inspecao-palavra-exaustor.html",
+      "seriesHint": "palavras-origem"
     }
   ]
 }

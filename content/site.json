@@ -379,6 +379,22 @@
                   "description": "Capítulos florais ricos em flavonoides e óleo essencial — chá calmante clássico com perfil químico documentado."
                 },
                 {
+                  "label": "Inspeção: Equipamentos Mars Hydro Brasil",
+                  "tileLabel": "Inspeção: Equipamentos Mars Hyd…",
+                  "href": "/posts/post-inspecao-marshydro-brasil.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-marshydro-brasil",
+                  "description": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório."
+                },
+                {
+                  "label": "Inspeção: Equipamentos Vivosun",
+                  "tileLabel": "Inspeção: Equipamentos Vivosun",
+                  "href": "/posts/post-inspecao-vivosun.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-vivosun",
+                  "description": "Auditoria do catálogo Vivosun visível no Brasil — AeroLight, tendas, AeroWave e GrowHub por revenda, cruzada ao laboratório e ao mapa de incêndio."
+                },
+                {
                   "label": "Inspeção: ESAPP — Agronomia em Paraguaçu Paulista",
                   "tileLabel": "Inspeção: ESAPP — Agronomia em …",
                   "href": "/posts/post-inspecao-esapp-agronomia-paraguacu-paulista.html",
@@ -2211,6 +2227,86 @@
                   "description": "Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; irmã aglutinação; Faça o melhor!"
                 },
                 {
+                  "label": "Inspeção: Sinais REM — o campo, o sono e a sigla do laboratório",
+                  "tileLabel": "Inspeção: Sinais REM — o campo,…",
+                  "href": "/posts/post-inspecao-palavra-sinais-rem.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-sinais-rem",
+                  "description": "Palavras: «sinais REM» — plural de sinal; sono Rapid Eye Movement × sigla lab Relaxamento·Endocanabinoide·Modular; elos gesto, nap, eCBome; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Objectos perigosos para controle de incêndio — mapa da tenda",
+                  "tileLabel": "Inspeção: Objectos perigosos pa…",
+                  "href": "/posts/post-inspecao-palavra-objetos-perigosos-incendio.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-objetos-perigosos-incendio",
+                  "description": "Palavras: mapa perigo × corte × marca — Mars Hydro / Vivosun e todos os objectos da tenda; ≠ manual de bombeiros; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Mars Hydro — Marte, água e o rasto marshydrobr",
+                  "tileLabel": "Inspeção: Mars Hydro — Marte, á…",
+                  "href": "/posts/post-inspecao-palavra-mars-hydro.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-mars-hydro",
+                  "description": "Palavras: «Mars Hydro» (*marshydrobr*) — Mārs + hýdōr; marca ≠ controle de incêndio; elos tenda, fonte, Vivosun; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Vivosun — sol vivo, marca e o cabo na tenda",
+                  "tileLabel": "Inspeção: Vivosun — sol vivo, m…",
+                  "href": "/posts/post-inspecao-palavra-vivosun.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-vivosun",
+                  "description": "Palavras: «Vivosun» (*vivo* + *sun*) — sol vivo no nome; marca ≠ controle de incêndio; elos Mars Hydro, tenda, fonte; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Tenda — recinto, Mylar e o calor fechado",
+                  "tileLabel": "Inspeção: Tenda — recinto, Myla…",
+                  "href": "/posts/post-inspecao-palavra-tenda.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-tenda",
+                  "description": "Palavras: «tenda» (lat. tendere) — grow tent concentra luz e calor; objecto do cluster de incêndio; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Extintor — apagar, classe e o último gesto",
+                  "tileLabel": "Inspeção: Extintor — apagar, cl…",
+                  "href": "/posts/post-inspecao-palavra-extintor.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-extintor",
+                  "description": "Palavras: «extintor» (lat. exstinguere) — objecto de controle; ≠ NR-23; elos incêndio, interruptor; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Incêndio — o evento, não o elemento",
+                  "tileLabel": "Inspeção: Incêndio — o evento, …",
+                  "href": "/posts/post-inspecao-palavra-incendio.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-incendio",
+                  "description": "Palavras: «incêndio» (lat. incendium) ≠ fogo (focus); evento descontrolado; eixo do cluster da tenda; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Fonte — a nascente que agora é o driver",
+                  "tileLabel": "Inspeção: Fonte — a nascente qu…",
+                  "href": "/posts/post-inspecao-palavra-fonte.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-fonte",
+                  "description": "Palavras: «fonte» (lat. fons) — no indoor é o driver; perigo escondido do cluster; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Extensão — esticar a tomada até à tenda",
+                  "tileLabel": "Inspeção: Extensão — esticar a …",
+                  "href": "/posts/post-inspecao-palavra-extensao.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-extensao",
+                  "description": "Palavras: «extensão» (lat. extendere) — régua/benjamim; perigo banal do cluster; Faça o melhor!"
+                },
+                {
+                  "label": "Inspeção: Exaustor — esgotar o ar, não o motor",
+                  "tileLabel": "Inspeção: Exaustor — esgotar o …",
+                  "href": "/posts/post-inspecao-palavra-exaustor.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-exaustor",
+                  "description": "Palavras: «exaustor» (lat. exhaurīre) — motor inline na tenda; perigo × clima; elos ventilação, Mars/Vivosun; Faça o melhor!"
+                },
+                {
                   "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
                   "tileLabel": "Inspeção: Eletrizante — carga, …",
                   "href": "/posts/post-inspecao-palavra-eletrizante.html",
@@ -3194,14 +3290,6 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-curso-unifesp-cannabis-medicinal",
                   "description": "Auditoria do XIV Curso de extensão da UNIFESP em parceria com o MovReCam — 10 mil vagas gratuitas, 57 h EaD via YouTube, certificado com 75% de presença e grade clínica, legislativa e de cultivo."
-                },
-                {
-                  "label": "Inspeção: Equipamentos Mars Hydro Brasil",
-                  "tileLabel": "Inspeção: Equipamentos Mars Hyd…",
-                  "href": "/posts/post-inspecao-marshydro-brasil.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-marshydro-brasil",
-                  "description": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório."
                 },
                 {
                   "label": "Inspeção: Sistema de Ventilação da Tenda",
