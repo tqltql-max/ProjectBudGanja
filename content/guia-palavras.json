@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T10:57:07.043Z",
+  "updatedAt": "2026-08-21T11:01:43.529Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -5174,6 +5174,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-mocambique.html"
+    },
+    {
+      "id": "tanzania",
+      "word": "Tanzânia",
+      "simple": "País (PT Tanzânia / EN-sw. Tanzania); étimo Tanganica + Zanzibar + -ia (1964); Taz = alcunha; ≠ Tasmânia; relação com o lapso Taz Manaia; Faça o melhor neste mapa.",
+      "simpleEn": "País (PT Tanzânia / EN-sw. Tanzania); étimo Tanganica + Zanzibar + -ia (1964); Taz = alcunha; ≠ Tasmânia; relação com o lapso Taz Manaia; Faça o melhor neste mapa.",
+      "simpleEs": "País (PT Tanzânia / EN-sw. Tanzania); étimo Tanganica + Zanzibar + -ia (1964); Taz = alcunha; ≠ Tasmânia; relação com o lapso Taz Manaia; Faça o melhor neste mapa.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-tanzania.html"
+    },
+    {
+      "id": "taz-manaia",
+      "word": "Taz Manaia",
+      "simple": "Lapso de Taz-Mania (série) escrito como nome; Taz = Tanzânia e/ou diabo-da-Tasmânia; manaia māori ≠ meneia; ≠ biografia; relação lexical com Tanzânia; Faça o melhor neste entre.",
+      "simpleEn": "Lapso de Taz-Mania (série) escrito como nome; Taz = Tanzânia e/ou diabo-da-Tasmânia; manaia māori ≠ meneia; ≠ biografia; relação lexical com Tanzânia; Faça o melhor neste entre.",
+      "simpleEs": "Lapso de Taz-Mania (série) escrito como nome; Taz = Tanzânia e/ou diabo-da-Tasmânia; manaia māori ≠ meneia; ≠ biografia; relação lexical com Tanzânia; Faça o melhor neste entre.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-taz-manaia.html"
     },
     {
       "id": "isqueiro-bic",

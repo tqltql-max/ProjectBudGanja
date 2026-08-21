@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T10:57:07.037Z",
+  "updatedAt": "2026-08-21T11:01:43.526Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6620,6 +6620,48 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 147 — tríade tónos / vomitar / commitar."
+    },
+    {
+      "id": "palavra-tanzania",
+      "title": "Tanzânia — o país, o Taz e a relação com Taz Manaia",
+      "titleEn": "Tanzânia — the country, Taz, and the relation with Taz Manaia",
+      "titleEs": "Tanzânia — el país, el Taz y la relación con Taz Manaia",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: Tanzânia = Tan+Zan+-ia (1964); Taz = hipocorístico; ≠ Tasmânia; relação com Taz Manaia; Faça o melhor!",
+      "whyEn": "Palavras: Tanzânia = Tan+Zan+-ia (1964); Taz = hipocorístico; ≠ Tasmânia; relação com Taz Manaia; Faça o melhor!",
+      "whyEs": "Palavras: Tanzânia = Tan+Zan+-ia (1964); Taz = hipocorístico; ≠ Tasmânia; relação com Taz Manaia; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-tanzania",
+      "doneHref": "/posts/post-inspecao-palavra-tanzania.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Tanz%C3%A2nia",
+        "/posts/post-inspecao-palavra-relacao.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 148 — cluster Tanzânia / Taz Manaia / Taz-Mania / relação."
+    },
+    {
+      "id": "palavra-taz-manaia",
+      "title": "Taz Manaia — o lapso Taz-Mania, o manaia e a relação com Tanzânia",
+      "titleEn": "Taz Manaia — the Taz-Mania slip, the manaia, and the relation with Tanzania",
+      "titleEs": "Taz Manaia — el lapsus Taz-Mania, el manaia y la relación con Tanzania",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: Taz Manaia = lapso Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Faça o melhor!",
+      "whyEn": "Palavras: Taz Manaia = lapso Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Faça o melhor!",
+      "whyEs": "Palavras: Taz Manaia = lapso Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-taz-manaia",
+      "doneHref": "/posts/post-inspecao-palavra-taz-manaia.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Taz-Mania",
+        "/posts/post-inspecao-palavra-relacao.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 149 — cluster Tanzânia / Taz Manaia / Taz-Mania / relação."
     }
   ]
 }

@@ -2045,6 +2045,22 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «commitar» (*comitar*) — calco git; ≠ cometer; tríade tónos / vomitar; Faça o melhor depois do snapshot!"
             },
             {
+              "label": "Inspeção: Tanzânia — o país, o Taz e a relação com Taz Manaia",
+              "tileLabel": "Inspeção: Tanzânia — o país, o …",
+              "href": "/posts/post-inspecao-palavra-tanzania.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-tanzania",
+              "description": "Palavras: «Tanzânia» — país (Tan+Zan+-ia, 1964); Taz = hipocorístico; ≠ Tasmânia; relação com o lapso Taz Manaia; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Taz Manaia — o lapso Taz-Mania, o manaia e a relação com Tanzânia",
+              "tileLabel": "Inspeção: Taz Manaia — o lapso …",
+              "href": "/posts/post-inspecao-palavra-taz-manaia.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-taz-manaia",
+              "description": "Palavras: «Taz Manaia» — lapso de Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Faça o melhor!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",
