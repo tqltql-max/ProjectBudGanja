@@ -914,7 +914,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-canal-paulinho.html",
               "icon": "🔍",
               "slug": "post-inspecao-canal-paulinho",
-              "description": "Canais: Paulinho o LOKO (@PaulinhoLOKOoficial) — arquivo GTA RP / Anti-RP desde 2015; catálogo na página Games."
+              "description": "Canais: Paulinho o LOKO — live no Kick (PaulinhoLOKObr) e arquivo YouTube (@PaulinhoLOKOoficial); GTA RP / Anti-RP; catálogo na página Games."
             },
             {
               "label": "Inspeção: Richard Curtis — o autor, o ofício da escrita e Questão de Tempo",
@@ -2059,6 +2059,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-taz-manaia",
               "description": "Palavras: «Taz Manaia» — lapso de Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: xioomi — Xiaomi, milheto e a marca sem pedestal",
+              "tileLabel": "Inspeção: xioomi — Xiaomi, milh…",
+              "href": "/posts/post-inspecao-palavra-xioomi.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-xioomi",
+              "description": "Palavras: «xioomi» — rasto oral BR de Xiaomi (小米, milheto); marca × grão × ídolo tech; elos Jobs, objetos e celular; Faça o melhor!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
