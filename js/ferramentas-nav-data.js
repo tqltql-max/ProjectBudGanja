@@ -1069,6 +1069,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Copaifera langsdorffii* — óleo-resina amazônica; β-cariofileno e ácidos copaíbicos na tradição tópica e oral."
             },
             {
+              "label": "Inspeção: canal Slivki Show — experiências visuais e a Aranha Rodrigo",
+              "tileLabel": "Inspeção: canal Slivki Show — e…",
+              "href": "/posts/post-inspecao-canal-slivki.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-canal-slivki",
+              "description": "Canais (especial): Slivki Show (@slivkishowen) — arquivo EN de experiências e life hacks; destaque Aranha Rodrigo (saltadora). Aranha ≠ inseto. Hub /videos/?channel=slivki&series=rodrigo."
+            },
+            {
               "label": "Inspeção: Toda criança nasce cientista — recado de campo e mensagem da mãe",
               "tileLabel": "Inspeção: Toda criança nasce ci…",
               "href": "/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html",
@@ -1123,6 +1131,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-mulungu",
               "description": "*Erythrina mulungu* — casca com alcaloides eritrínicos; chá calmante da tradição brasileira."
+            },
+            {
+              "label": "Inspeção: Aranha Rodrigo — saltadora nomeada do Slivki Show",
+              "tileLabel": "Inspeção: Aranha Rodrigo — salt…",
+              "href": "/posts/post-inspecao-animal-aranha-rodrigo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-aranha-rodrigo",
+              "description": "Animais (destaque): Aranha Rodrigo — saltadora (Salticidae) com nome próprio no @slivkishowen; aranha ≠ inseto; série encontro / muda / espelho / vs bosque. Sem protocolo de maneio."
             },
             {
               "label": "Inspeção: Planta — Maracujá — flavonoides e passiflorina",
@@ -2123,6 +2139,38 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-xiaomi",
               "description": "Palavras: «Xiaomi» (*xioomi* → Xiaomi) — 小米 milheto; marca × grão × ídolo tech; elos Jobs, objetos e celular; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Cuca — história infantil, cantiga e o bicho do Sítio",
+              "tileLabel": "Inspeção: Cuca — história infan…",
+              "href": "/posts/post-inspecao-palavra-cuca.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-cuca",
+              "description": "Palavras: Cuca — folclore e Sítio do Picapau Amarelo; cantiga de ninar; diminutivo cucuca; medo com respeito. Não é ficha de streamer."
+            },
+            {
+              "label": "Inspeção: Trocadilho — cara + alho, e por que não é polimorfismo",
+              "tileLabel": "Inspeção: Trocadilho — cara + a…",
+              "href": "/posts/post-inspecao-palavra-trocadilho.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-trocadilho",
+              "description": "Palavras: trocadilho (calembur) — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; irmãs aglutinação e Tanzânia; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Aglutinação — a solda gramatical (e por que cara+alho só parece)",
+              "tileLabel": "Inspeção: Aglutinação — a solda…",
+              "href": "/posts/post-inspecao-palavra-aglutinacao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-aglutinacao",
+              "description": "Palavras: aglutinação — composição por fusão (planalto, embora); cara+alho é máscara, o nome certo é trocadilho; ≠ polimorfismo; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Polimorfismo — várias formas do mesmo (não é cara+alho)",
+              "tileLabel": "Inspeção: Polimorfismo — várias…",
+              "href": "/posts/post-inspecao-palavra-polimorfismo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-polimorfismo",
+              "description": "Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; irmã aglutinação; Faça o melhor!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",

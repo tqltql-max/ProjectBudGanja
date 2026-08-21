@@ -44,6 +44,7 @@ var SERIES_LABELS = {
   'canal-paulinho': 'Paulinho o LOKO · Canais',
   'canal-vevo': 'VEVO · Canais',
   'canal-icl': 'ICL · Canais',
+  'canal-slivki': 'Slivki Show · Canais',
   'canal-richard-rasmussen': 'Richard Rasmussen · Canais',
   'verificacao-equipamento': 'Objetos',
   'formacao-academica': 'Extensão académica',

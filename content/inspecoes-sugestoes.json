@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T15:29:11.849Z",
+  "updatedAt": "2026-08-21T16:00:42.295Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6870,6 +6870,111 @@
         "/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html"
       ],
       "notes": "Cap. 151 — conto ≠ canal; cucuca = diminutivo da Cuca."
+    },
+    {
+      "id": "palavra-trocadilho",
+      "title": "Trocadilho — cara+alho, e por que não é polimorfismo",
+      "titleEn": "Trocadilho — cara+alho, and why it is not polymorphism",
+      "titleEs": "Trocadilho — cara+alho, y por qué no es polimorfismo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: trocadilho (calembur) — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; Faça o melhor!",
+      "whyEn": "Palavras: trocadilho (calembur) — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; Faça o melhor!",
+      "whyEs": "Palavras: trocadilho (calembur) — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-trocadilho",
+      "doneHref": "/posts/post-inspecao-palavra-trocadilho.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Trocadilho",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 152 — cluster trocadilho / aglutinação / polimorfismo / cara+alho."
+    },
+    {
+      "id": "palavra-aglutinacao",
+      "title": "Aglutinação — a solda gramatical (cara+alho só parece)",
+      "titleEn": "Agglutination — grammatical fusion (cara+alho only looks like it)",
+      "titleEs": "Aglutinación — la soldadura gramatical (cara+alho solo parece)",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: aglutinação — composição por fusão (planalto, embora); cara+alho é máscara, o nome certo é trocadilho; Faça o melhor!",
+      "whyEn": "Palavras: aglutinação — composição por fusão (planalto, embora); cara+alho é máscara, o nome certo é trocadilho; Faça o melhor!",
+      "whyEs": "Palavras: aglutinação — composição por fusão (planalto, embora); cara+alho é máscara, o nome certo é trocadilho; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-aglutinacao",
+      "doneHref": "/posts/post-inspecao-palavra-aglutinacao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Composi%C3%A7%C3%A3o_(lingu%C3%ADstica)",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 153 — cluster trocadilho / aglutinação / polimorfismo / cara+alho."
+    },
+    {
+      "id": "palavra-polimorfismo",
+      "title": "Polimorfismo — várias formas do mesmo (não é cara+alho)",
+      "titleEn": "Polymorphism — many forms of the same (not cara+alho)",
+      "titleEs": "Polimorfismo — varias formas de lo mismo (no es cara+alho)",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; Faça o melhor!",
+      "whyEn": "Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; Faça o melhor!",
+      "whyEs": "Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; Faça o melhor!",
+      "suggestedSlug": "inspecao-palavra-polimorfismo",
+      "doneHref": "/posts/post-inspecao-palavra-polimorfismo.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Polimorfismo",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 154 — cluster trocadilho / aglutinação / polimorfismo / cara+alho."
+    },
+    {
+      "id": "canal-slivki",
+      "title": "Slivki Show — experiências visuais e a Aranha Rodrigo",
+      "titleEn": "Slivki Show — visual experiments and Rodrigo the spider",
+      "titleEs": "Slivki Show — experimentos visuales y la araña Rodrigo",
+      "tipo": "canal",
+      "priority": 1,
+      "status": "feita",
+      "why": "Canais (especial): @slivkishowen — life hacks e experiências; destaque Aranha Rodrigo. Aranha ≠ inseto.",
+      "whyEn": "Channels (special): @slivkishowen — life hacks and experiments; highlight Rodrigo the jumping spider. Spider ≠ insect.",
+      "whyEs": "Canales (especial): @slivkishowen — life hacks y experimentos; destaque araña Rodrigo. Araña ≠ insecto.",
+      "suggestedSlug": "inspecao-canal-slivki",
+      "doneHref": "/posts/post-inspecao-canal-slivki.html",
+      "seriesHint": "canal-slivki",
+      "sources": [
+        "https://www.youtube.com/@slivkishowen",
+        "/posts/post-inspecao-animal-aranha-rodrigo.html",
+        "/videos/?channel=slivki&series=rodrigo"
+      ],
+      "notes": "Inspeção especial: canal + ser nomeado. Recorte EN ≠ arquivo UA/RU. Indexar ≠ endosso."
+    },
+    {
+      "id": "aranha-rodrigo",
+      "title": "Aranha Rodrigo — saltadora nomeada do Slivki Show",
+      "titleEn": "Rodrigo the spider — named jumping spider on Slivki Show",
+      "titleEs": "Araña Rodrigo — saltadora nombrada de Slivki Show",
+      "tipo": "animal",
+      "priority": 1,
+      "status": "feita",
+      "why": "Destaque: saltadora (Salticidae) com nome próprio; aranha ≠ inseto; série encontro / muda / espelho / vs bosque.",
+      "whyEn": "Highlight: named jumping spider (Salticidae); spider ≠ insect; series meet / molt / mirror / vs forest.",
+      "whyEs": "Destaque: saltadora (Salticidae) con nombre; araña ≠ insecto; serie encuentro / muda / espejo / vs bosque.",
+      "suggestedSlug": "inspecao-animal-aranha-rodrigo",
+      "doneHref": "/posts/post-inspecao-animal-aranha-rodrigo.html",
+      "seriesHint": "animais-catalogo",
+      "sources": [
+        "https://www.youtube.com/watch?v=VEWy9VgN1cU",
+        "https://pt.wikipedia.org/wiki/Salticidae",
+        "/posts/post-inspecao-canal-slivki.html"
+      ],
+      "notes": "Ser ≠ canal. Sem protocolo de maneio. Título «smartest» ≠ paper."
     }
   ]
 }

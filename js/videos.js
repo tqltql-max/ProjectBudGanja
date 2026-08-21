@@ -57,6 +57,10 @@
     disneyjrbr: 'disneyjr',
     'disney-jr-brasil': 'disneyjr',
     desenhos: 'disneyjr',
+    slivki: 'slivki',
+    'canal-slivki': 'slivki',
+    slivkishow: 'slivki',
+    slivkishowen: 'slivki',
     tamara: 'tamara',
     'canal-tamara': 'tamara',
     'canal-tamaraklink': 'tamara',
@@ -223,7 +227,21 @@
     biomas: 'biomas',
     mundo: 'mundo',
     indigena: 'indigena',
-    indígena: 'indigena'
+    indígena: 'indigena',
+    rodrigo: 'rodrigo',
+    'aranha-rodrigo': 'rodrigo',
+    aranha: 'rodrigo',
+    cookie: 'cookie',
+    terrario: 'terrario',
+    terrários: 'terrario',
+    floresta: 'floresta',
+    experiencias: 'experiencias',
+    experiências: 'experiencias',
+    gadgets: 'gadgets',
+    aliexpress: 'gadgets',
+    comida: 'comida',
+    lifehacks: 'lifehacks',
+    'life-hacks': 'lifehacks'
   };
 
   var TOPIC_ALIASES = {
@@ -245,7 +263,7 @@
 
   var TOPIC_ORDER = ['cultivo', 'unifesp', 'saude', 'plantas', 'ciencia', 'desenhos', 'natureza'];
 
-  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'tamara', 'amyr', 'rasmussen', 'disneyjr'];
+  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'tamara', 'amyr', 'rasmussen', 'disneyjr', 'slivki'];
   var GAMES_CHANNELS = { zangado: true, paulinho: true, hopejoy: true };
 
   function isGamesChannel(id) {
@@ -768,6 +786,7 @@
     if (id === 'tamara') return 'Tamara Klink';
     if (id === 'amyr') return 'Amyr Klink';
     if (id === 'rasmussen') return 'Richard Rasmussen';
+    if (id === 'slivki') return 'Slivki Show';
     if (id === 'zangado') return 'Zangado';
     if (id === 'paulinho') return 'Paulinho o LOKO';
     return id;
