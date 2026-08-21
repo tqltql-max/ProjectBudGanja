@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T13:47:25.920Z",
+  "updatedAt": "2026-08-21T15:29:11.856Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -494,6 +494,16 @@
       "curiositiesEn": "The lexical sheet refuses to collapse the word into the Animais hub: one spoken word, another catalogue.",
       "historyEs": "Animal viene del latín animal, de anima — ser animado. En portugués también oscila entre cariño e insulto, según el tono.",
       "curiositiesEs": "La ficha léxica se niega a colapsar el vocablo en el hub Animais: una palabra de boca, otro de catálogo."
+    },
+    {
+      "id": "cuca",
+      "word": "cuca",
+      "simple": "História infantil BR — cantiga de ninar e Cuca do Sítio; diminutivo cucuca; medo com respeito.",
+      "simpleEn": "Brazilian children’s lore — lullaby and Sítio’s Cuca; diminutive cucuca; fear with respect.",
+      "simpleEs": "Historia infantil BR — nana y Cuca del Sítio; diminutivo cucuca; miedo con respeto.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-cuca.html"
     },
     {
       "id": "anvisa",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T14:55:56.137Z",
+  "updatedAt": "2026-08-21T15:30:41.659Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -162,6 +162,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Cuca — história infantil, cantiga e o bicho do Sítio",
+      "url": "/posts/post-inspecao-palavra-cuca.html",
+      "excerpt": "Palavras: Cuca — folclore e Sítio do Picapau Amarelo; cantiga de ninar; diminutivo cucuca; medo com respeito. Não é ficha de streamer.",
+      "text": "Inspeção: Cuca — história infantil, cantiga e o bicho do Sítio Palavras: Cuca — folclore e Sítio do Picapau Amarelo; cantiga de ninar; diminutivo cucuca; medo com respeito. Não é ficha de streamer. inspecao ## Escopo\n\nInspeção editorial da palavra e da figura **Cuca** — o **bicho de história infantil** brasileiro (folclore + *Sítio do Picapau Amarelo*) e, no português vivo, também a **cabeça** («ficar de cuca»). Recorte: **conto para criança**, cantiga de ninar, e o diminutivo **cucuca**. Não é biografia de streamer nem guia de susto.\n\n> **Nota metodológica:** auditoria independente do Inspetor BudGanja. Fontes: [Wikcionário · cuca](https://pt.wiktionary.org/wiki/cuca), [Wikipédia · Cuca (folclore)](https://pt.wikipedia.org/wiki/Cuca_(folclore)), [Coca (folclore)](https://pt.wikipedia.org/wiki/Coca_(folclore)), [Sítio do Picapau Amarelo](https://pt.wikipedia.org/wiki/S%C3%ADtio_do_Picapau_Amarelo). Crédito a Monteiro Lobato e à tradição oral — **sem afiliação**. **Ficha ≠ protocolo de medo.** [Respeito](/posts/post-inspecao-palavra-respeito.html) à criança: o conto nomeia o [medo](/posts/post-inspecao-palavra-medo.html); não o usa para humilhar.\n\n## 1. Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra / figura | **Cuca** (diminutivo oral: **cucuca**) |\n| Classe | Substantivo feminino (personagem) · também gíria («cuca» = cabeça) |\n| Tipo BudGanja | Palavra — história infantil × folclore × [medo](/posts/post-inspecao-palavra-medo.html) com [respeito](/posts/post-inspecao-palavra-respeito.html) |\n| História âncora | Cantiga «nana neném, que a Cuca vem pegar» · Cuca do *Sítio* (cabeça de jacaré) |\n| Elo criança | [Toda criança nasce cientista](/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html) · [celular / ecrãs](/posts/post-inspecao-celular-riscos-saude-criancas.html) · [Disney Jr.](/posts/post-inspecao-canal-disneyjr.html) |\n| Elo conto | [Alice](/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html) · [Divertida Mente](/posts/p"
     },
     {
       "title": "Inspeção: canal Richard Rasmussen Selvagem — fauna, expedições e o ecrã",
@@ -2880,6 +2886,12 @@
       "url": "/posts/post-inspecao-palavra-animal.html",
       "excerpt": "Ser vivo que não é planta — também palavra de carinho ou insulto, conforme o tom.",
       "text": "Animal Ser vivo que não é planta — também palavra de carinho ou insulto, conforme o tom. lexico guia palavras glossário animal"
+    },
+    {
+      "title": "cuca",
+      "url": "/posts/post-inspecao-palavra-cuca.html",
+      "excerpt": "História infantil BR — cantiga de ninar e Cuca do Sítio; diminutivo cucuca; medo com respeito.",
+      "text": "cuca História infantil BR — cantiga de ninar e Cuca do Sítio; diminutivo cucuca; medo com respeito. lexico guia palavras glossário cuca"
     },
     {
       "title": "ANVISA",

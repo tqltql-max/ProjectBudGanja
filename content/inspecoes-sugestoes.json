@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T14:27:23.871Z",
+  "updatedAt": "2026-08-21T15:29:11.849Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6848,6 +6848,28 @@
         "https://pt.wikipedia.org/wiki/Instituto_Conhecimento_Liberta"
       ],
       "notes": "Cursos ≠ canal. Indexar ≠ endosso político. Não misturar com /videos/ de cultivo."
+    },
+    {
+      "id": "palavra-cuca",
+      "title": "Cuca — história infantil, cantiga e o bicho do Sítio",
+      "titleEn": "Cuca — children’s tale, lullaby and the Sítio bogey",
+      "titleEs": "Cuca — historia infantil, nana y el bicho del Sítio",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: Cuca — folclore + Sítio; cantiga de ninar; cucuca diminutivo; medo com respeito.",
+      "whyEn": "Words: Cuca — folklore + Sítio; lullaby; diminutive cucuca; fear with respect.",
+      "whyEs": "Palabras: Cuca — folclore + Sítio; nana; diminutivo cucuca; miedo con respeto.",
+      "suggestedSlug": "inspecao-palavra-cuca",
+      "doneHref": "/posts/post-inspecao-palavra-cuca.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/cuca",
+        "https://pt.wikipedia.org/wiki/Cuca_(folclore)",
+        "/posts/post-inspecao-palavra-medo.html",
+        "/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html"
+      ],
+      "notes": "Cap. 151 — conto ≠ canal; cucuca = diminutivo da Cuca."
     }
   ]
 }
