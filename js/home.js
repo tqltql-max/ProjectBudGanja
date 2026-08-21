@@ -44,12 +44,12 @@ function formatDateCompact(iso) {
   }
 }
 
-var HOME_PINNED_SLUG = 'inspecao-arte-bom-dia-inverno';
+var HOME_PINNED_SLUGS = ['inspecao-arte-bom-dia-inverno', 'inspecao-canal-paulinho'];
 
 /**
  * Últimas do laboratório: ordena por data, mas garante diversidade de categorias
  * (ex.: uma pesquisa não fica enterrada sob várias inspeções do mesmo dia).
- * A divulgação Bom dia, Inverno fica sempre no início.
+ * Divulgações (Bom dia, Inverno e Paulinho) ficam sempre no início.
  */
 function pickHomeLatestPosts(posts, limit) {
   const max = Math.max(1, Number(limit) || 4);
@@ -58,9 +58,11 @@ function pickHomeLatestPosts(posts, limit) {
   });
   if (!sorted.length) return [];
 
-  const pinned = sorted.find(function (p) {
-    return p && p.slug === HOME_PINNED_SLUG;
-  });
+  const pinned = HOME_PINNED_SLUGS.map(function (slug) {
+    return sorted.find(function (p) {
+      return p && p.slug === slug;
+    });
+  }).filter(Boolean);
   const windowSize = Math.min(sorted.length, 36);
   const window = sorted.slice(0, windowSize);
   const picked = [];
@@ -76,7 +78,7 @@ function pickHomeLatestPosts(posts, limit) {
     picked.push(p);
   }
 
-  if (pinned) take(pinned);
+  pinned.forEach(take);
 
   ['pesquisa', 'inspecao', 'equipamento'].forEach(function (cat) {
     if (picked.length >= max) return;
@@ -92,11 +94,11 @@ function pickHomeLatestPosts(posts, limit) {
   });
 
   const rest = picked.filter(function (p) {
-    return !pinned || p.slug !== HOME_PINNED_SLUG;
+    return HOME_PINNED_SLUGS.indexOf(p.slug) < 0;
   }).sort(function (a, b) {
     return new Date(b.date) - new Date(a.date);
   });
-  return pinned ? [pinned].concat(rest) : rest;
+  return pinned.concat(rest);
 }
 
 function renderHomePostCards(container, posts) {
@@ -195,7 +197,8 @@ async function loadSorteioBanner() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (document.body.dataset.page !== 'home') return;
+  var page = document.body.dataset.page;
+  if (page !== 'home' && page !== 'laboratorio') return;
   loadSorteioBanner();
   loadLatestPosts();
   window.addEventListener('budganja:locale-change', function () {

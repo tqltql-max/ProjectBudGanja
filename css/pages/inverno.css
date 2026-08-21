@@ -277,6 +277,19 @@ body[data-page="inverno"] #main-content {
     text-underline-offset: 3px;
 }
 
+.inverno-divulga-shot img {
+    aspect-ratio: 16 / 9;
+    object-position: center;
+}
+
+.inverno-divulga .inverno-hero-actions {
+    margin-top: 0.35rem;
+}
+
+.inverno-divulga .inverno-lab-note {
+    margin-top: 1.5rem;
+}
+
 @media (min-width: 760px) {
     .inverno-cover-shot {
         grid-template-columns: minmax(14rem, 19rem) minmax(0, 1fr);
