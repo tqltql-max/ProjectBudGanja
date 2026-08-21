@@ -3,32 +3,48 @@
   "channelUrl": "https://www.youtube.com/@amyrklinkoficial",
   "channelName": "Amyr Klink",
   "handle": "@amyrklinkoficial",
-  "inspectedAt": "2026-08-19T07:53:47.830Z",
-  "videoCount": 183,
+  "inspectedAt": "2026-08-21T14:55:54.858Z",
+  "videoCount": 185,
   "mission": "",
   "partnerCodes": [],
   "videos": [
     {
+      "id": "PIOjcKFn3YA",
+      "title": "Episódio 15: National Geographic, Amyr Klink - Histórias que os Objetos Contam",
+      "url": "https://www.youtube.com/watch?v=PIOjcKFn3YA",
+      "views": "4,6 mil visualizações",
+      "publishedRelative": "há 1 dia",
+      "published": "2026-08-20T01:27:36+00:00"
+    },
+    {
+      "id": "UkvHvgg9NXk",
+      "title": "Episódio 15: National Geographic, Amyr Klink - Histórias que os Objetos Contam",
+      "url": "https://www.youtube.com/watch?v=UkvHvgg9NXk",
+      "views": "1 mil visualizações",
+      "publishedRelative": "há 2 horas",
+      "published": "2026-08-19T23:00:22+00:00"
+    },
+    {
       "id": "ig0A_FFoNG0",
       "title": "Episódio 14: Cinto, Amyr Klink - Histórias que os Objetos Contam",
       "url": "https://www.youtube.com/watch?v=ig0A_FFoNG0",
-      "views": "5,7 mil visualizações",
-      "publishedRelative": "há 5 dias",
+      "views": "6,1 mil visualizações",
+      "publishedRelative": "há 8 dias",
       "published": "2026-08-13T12:18:55+00:00"
     },
     {
       "id": "gwdt-PJf83U",
       "title": "Episódio 13: Roldanas, Amyr Klink - Histórias que os Objetos Contam",
       "url": "https://www.youtube.com/watch?v=gwdt-PJf83U",
-      "views": "7,5 mil visualizações",
-      "publishedRelative": "há 12 dias",
+      "views": "7,7 mil visualizações",
+      "publishedRelative": "há 2 semanas",
       "published": "2026-08-07T00:44:18+00:00"
     },
     {
       "id": "TNDeCYh2ToQ",
       "title": "Episódio 12: Cabos, Amyr Klink - Histórias que os Objetos Contam",
       "url": "https://www.youtube.com/watch?v=TNDeCYh2ToQ",
-      "views": "13 mil visualizações",
+      "views": "14 mil visualizações",
       "publishedRelative": "há 2 semanas",
       "published": "2026-07-31T18:55:27+00:00"
     },
@@ -54,7 +70,7 @@
       "id": "fdPFVNc7i00",
       "title": "Episódio 11: Madeiras, Amyr Klink - Histórias que os Objetos Contam",
       "url": "https://www.youtube.com/watch?v=fdPFVNc7i00",
-      "views": "22 mil visualizações",
+      "views": "23 mil visualizações",
       "publishedRelative": "há 1 mês",
       "published": "2026-07-15T18:34:21+00:00"
     },
@@ -103,7 +119,7 @@
       "title": "Episódio 05: Facas de Ostra, Amyr Klink - Histórias que os Objetos Contam",
       "url": "https://www.youtube.com/watch?v=aDSMsTeeMeM",
       "views": "29 mil visualizações",
-      "publishedRelative": "há 2 meses",
+      "publishedRelative": "há 3 meses",
       "published": "2026-05-21T13:19:35+00:00"
     },
     {
@@ -322,7 +338,7 @@
       "id": "iXc8xr2xyAw",
       "title": "Amyr Klink - Energy Pathways Programs on Canal Futura | Episode 04",
       "url": "https://www.youtube.com/watch?v=iXc8xr2xyAw",
-      "views": "562 views",
+      "views": "566 views",
       "publishedRelative": "10 years ago"
     },
     {
@@ -357,7 +373,7 @@
       "id": "9RzpOtnDuk8",
       "title": "Amyr Klink - Entrevista para o canal PUCPR - parte I",
       "url": "https://www.youtube.com/watch?v=9RzpOtnDuk8",
-      "views": "830 views",
+      "views": "831 views",
       "publishedRelative": "9 years ago"
     },
     {
@@ -476,7 +492,7 @@
       "id": "xTj53_d5iSw",
       "title": "Amyr Klink - teaser de divulgação de palestra",
       "url": "https://www.youtube.com/watch?v=xTj53_d5iSw",
-      "views": "847 views",
+      "views": "848 views",
       "publishedRelative": "8 years ago"
     },
     {
@@ -588,15 +604,15 @@
       "id": "IwmIrJOyNU0",
       "title": "DIÁRIO DE BORDO - 6 - 1.039 km de uma monotonia emocionante",
       "url": "https://www.youtube.com/watch?v=IwmIrJOyNU0",
-      "views": "1.7K views",
+      "views": "1.8K views",
       "publishedRelative": "8 years ago"
     },
     {
       "id": "C5Hz6mtYXFg",
       "title": "Diário de bordo - dia 10 - Vento, caranguejo e pisco em Punta Arenas",
       "url": "https://www.youtube.com/watch?v=C5Hz6mtYXFg",
-      "views": "1,5 mil visualizações",
-      "publishedRelative": "há 8 anos"
+      "views": "1.5K views",
+      "publishedRelative": "8 years ago"
     },
     {
       "id": "pVdtNjj4Cg8",
@@ -644,7 +660,7 @@
       "id": "4r3hT6nUshE",
       "title": "DIÁRIO DE BORDO – 1º dia, os primeiros passos",
       "url": "https://www.youtube.com/watch?v=4r3hT6nUshE",
-      "views": "3.4K views",
+      "views": "3.5K views",
       "publishedRelative": "8 years ago"
     },
     {
@@ -714,14 +730,14 @@
       "id": "8abNd4fkawk",
       "title": "Doc. Brasil - TV Cultura - Parte 3",
       "url": "https://www.youtube.com/watch?v=8abNd4fkawk",
-      "views": "390 views",
+      "views": "391 views",
       "publishedRelative": "16 years ago"
     },
     {
       "id": "t_JHhmrT36g",
       "title": "Doc. Brasil - TV Cultura - Parte 4",
       "url": "https://www.youtube.com/watch?v=t_JHhmrT36g",
-      "views": "432 views",
+      "views": "433 views",
       "publishedRelative": "16 years ago"
     },
     {
@@ -861,14 +877,14 @@
       "id": "sWKMZGCeKbE",
       "title": "Espaço Mix - 12/03/2007 - Parte 1",
       "url": "https://www.youtube.com/watch?v=sWKMZGCeKbE",
-      "views": "484 views",
+      "views": "485 views",
       "publishedRelative": "16 years ago"
     },
     {
       "id": "xRaNdWLF36k",
       "title": "Espaço Mix - 12/03/2007 - Parte 2",
       "url": "https://www.youtube.com/watch?v=xRaNdWLF36k",
-      "views": "213 views",
+      "views": "214 views",
       "publishedRelative": "16 years ago"
     },
     {
@@ -952,35 +968,35 @@
       "id": "-nXCwrRYMmg",
       "title": "Jornal da Tribuna - Parte 1",
       "url": "https://www.youtube.com/watch?v=-nXCwrRYMmg",
-      "views": "410 views",
+      "views": "411 views",
       "publishedRelative": "16 years ago"
     },
     {
       "id": "tH6ElsUoElQ",
       "title": "Jornal da Tribuna - Parte 2",
       "url": "https://www.youtube.com/watch?v=tH6ElsUoElQ",
-      "views": "484 views",
+      "views": "485 views",
       "publishedRelative": "16 years ago"
     },
     {
       "id": "Z-EECauoXos",
       "title": "Jornal da Tribuna - Parte 3",
       "url": "https://www.youtube.com/watch?v=Z-EECauoXos",
-      "views": "394 views",
+      "views": "395 views",
       "publishedRelative": "16 years ago"
     },
     {
       "id": "7Zd8HfKbP2Q",
       "title": "Jornal da Tribuna - Parte 4",
       "url": "https://www.youtube.com/watch?v=7Zd8HfKbP2Q",
-      "views": "349 views",
+      "views": "350 views",
       "publishedRelative": "16 years ago"
     },
     {
       "id": "rC0EoljN2PE",
       "title": "Litoral Record",
       "url": "https://www.youtube.com/watch?v=rC0EoljN2PE",
-      "views": "208 views",
+      "views": "209 views",
       "publishedRelative": "16 years ago"
     },
     {
@@ -1029,14 +1045,14 @@
       "id": "YaL-qzkOp_4",
       "title": "Planeta ESPN Amyr Klink -- Aquecimento global - Parte 4",
       "url": "https://www.youtube.com/watch?v=YaL-qzkOp_4",
-      "views": "297 views",
+      "views": "298 views",
       "publishedRelative": "16 years ago"
     },
     {
       "id": "TdG9axjh8mo",
       "title": "Planeta EXPN Amyr Klink -- Aquecimento global - Parte 1",
       "url": "https://www.youtube.com/watch?v=TdG9axjh8mo",
-      "views": "466 views",
+      "views": "467 views",
       "publishedRelative": "16 years ago"
     },
     {
@@ -1050,35 +1066,35 @@
       "id": "-4ocw62tD3A",
       "title": "Planeta EXPN Amyr Klink -- Aquecimento global - Parte 3",
       "url": "https://www.youtube.com/watch?v=-4ocw62tD3A",
-      "views": "327 views",
+      "views": "328 views",
       "publishedRelative": "16 years ago"
     },
     {
       "id": "tNF5bx3XS6U",
       "title": "Pontapé Inicial",
       "url": "https://www.youtube.com/watch?v=tNF5bx3XS6U",
-      "views": "296 views",
+      "views": "297 views",
       "publishedRelative": "16 years ago"
     },
     {
       "id": "KKELlxoXQTQ",
       "title": "Programa - Estilo Náutico Parte 1",
       "url": "https://www.youtube.com/watch?v=KKELlxoXQTQ",
-      "views": "185 views",
+      "views": "186 views",
       "publishedRelative": "16 years ago"
     },
     {
       "id": "BzpM1iAdUBE",
       "title": "Programa - Estilo Náutico Parte 2",
       "url": "https://www.youtube.com/watch?v=BzpM1iAdUBE",
-      "views": "167 views",
+      "views": "168 views",
       "publishedRelative": "16 years ago"
     },
     {
       "id": "wZ_AY0FIo-Q",
       "title": "Programa Estilo Náutico - Parte 3",
       "url": "https://www.youtube.com/watch?v=wZ_AY0FIo-Q",
-      "views": "205 views",
+      "views": "206 views",
       "publishedRelative": "16 years ago"
     },
     {
@@ -1092,7 +1108,7 @@
       "id": "M4fLf7ZjU-Q",
       "title": "Programa Juca Kfouri - Parte 11",
       "url": "https://www.youtube.com/watch?v=M4fLf7ZjU-Q",
-      "views": "259 views",
+      "views": "261 views",
       "publishedRelative": "10 years ago"
     },
     {
@@ -1232,7 +1248,7 @@
       "id": "1wH39pfU62w",
       "title": "TV Globo - Capitulo Único - Parte 5",
       "url": "https://www.youtube.com/watch?v=1wH39pfU62w",
-      "views": "679 views",
+      "views": "680 views",
       "publishedRelative": "16 years ago"
     },
     {
@@ -1253,21 +1269,21 @@
       "id": "elmKFPE9ftU",
       "title": "TV Globo - Single Episode - Part 3",
       "url": "https://www.youtube.com/watch?v=elmKFPE9ftU",
-      "views": "973 views",
+      "views": "974 views",
       "publishedRelative": "16 years ago"
     },
     {
       "id": "NPMPWmRfmlY",
       "title": "TV Globo - Single Episode - Part 4",
       "url": "https://www.youtube.com/watch?v=NPMPWmRfmlY",
-      "views": "771 views",
+      "views": "772 views",
       "publishedRelative": "16 years ago"
     },
     {
       "id": "XsAhipXvrI0",
       "title": "TV Globo - Single Episode - Part 6",
       "url": "https://www.youtube.com/watch?v=XsAhipXvrI0",
-      "views": "525 views",
+      "views": "526 views",
       "publishedRelative": "16 years ago"
     },
     {
@@ -1288,7 +1304,7 @@
       "id": "PI3bfKJN3bI",
       "title": "Walk with Giants Walk with Amyr Klink",
       "url": "https://www.youtube.com/watch?v=PI3bfKJN3bI",
-      "views": "916 views",
+      "views": "917 views",
       "publishedRelative": "9 years ago"
     },
     {
