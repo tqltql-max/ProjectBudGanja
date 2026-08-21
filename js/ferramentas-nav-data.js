@@ -669,6 +669,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Psidium guajava* — fruto brasileiro de quintal rico em vitamina C e fibra; separar goiaba inteira de goiabada, polpas e néctares industriais."
             },
             {
+              "label": "Inspeção: Richard Rasmussen — ofício selvagem no ecrã brasileiro",
+              "tileLabel": "Inspeção: Richard Rasmussen — o…",
+              "href": "/posts/post-inspecao-richard-rasmussen.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-richard-rasmussen",
+              "description": "Legado: Richard Rasmussen — biólogo (CRBio) e apresentador de fauna; YouTube @RichardRasmussenSelvagem; mérito de ofício e limites públicos; pessoa ≠ canal."
+            },
+            {
               "label": "Inspeção: eojsofaorforap — eu só falo a verdade",
               "tileLabel": "Inspeção: eojsofaorforap — eu s…",
               "href": "/posts/post-inspecao-expressao-eojsofaorforap.html",
@@ -947,6 +955,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-unha-de-gato",
               "description": "*Uncaria tomentosa* — casca amazônica rica em alcaloides oxindólicos pentacíclicos; fitoterapia imunomoduladora popular."
+            },
+            {
+              "label": "Inspeção: canal Richard Rasmussen Selvagem — fauna, expedições e o ecrã",
+              "tileLabel": "Inspeção: canal Richard Rasmuss…",
+              "href": "/posts/post-inspecao-canal-richard-rasmussen.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-canal-richard-rasmussen",
+              "description": "Canais: Richard Rasmussen (@RichardRasmussenSelvagem) — arquivo YouTube de fauna e expedições desde 2016; hub /videos; distinto da ficha de pessoa."
             },
             {
               "label": "Inspeção: o templo de Cristo, corpo e alma — morada, inteireza e ofício",
@@ -2077,12 +2093,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «Taz Manaia» — lapso de Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Faça o melhor!"
             },
             {
-              "label": "Inspeção: xioomi — Xiaomi, milheto e a marca sem pedestal",
-              "tileLabel": "Inspeção: xioomi — Xiaomi, milh…",
-              "href": "/posts/post-inspecao-palavra-xioomi.html",
+              "label": "Inspeção: Xiaomi — milheto, marca e ofício sem pedestal",
+              "tileLabel": "Inspeção: Xiaomi — milheto, mar…",
+              "href": "/posts/post-inspecao-palavra-xiaomi.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-xioomi",
-              "description": "Palavras: «xioomi» — rasto oral BR de Xiaomi (小米, milheto); marca × grão × ídolo tech; elos Jobs, objetos e celular; Faça o melhor!"
+              "slug": "post-inspecao-palavra-xiaomi",
+              "description": "Palavras: «Xiaomi» (*xioomi* → Xiaomi) — 小米 milheto; marca × grão × ídolo tech; elos Jobs, objetos e celular; Faça o melhor!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",

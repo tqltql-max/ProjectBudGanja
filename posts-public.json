@@ -1045,6 +1045,25 @@
     "seriesLabel": "Goiaba · fruto"
   },
   {
+    "title": "Inspeção: Richard Rasmussen — ofício selvagem no ecrã brasileiro",
+    "titleEn": "Inspection: Richard Rasmussen — wild craft on Brazilian screens",
+    "titleEs": "Inspección: Richard Rasmussen — oficio salvaje en la pantalla brasileña",
+    "excerpt": "Legado: Richard Rasmussen — biólogo (CRBio) e apresentador de fauna; YouTube @RichardRasmussenSelvagem; mérito de ofício e limites públicos; pessoa ≠ canal.",
+    "excerptEn": "Legacy: Richard Rasmussen — biologist (CRBio) and wildlife presenter; YouTube @RichardRasmussenSelvagem; craft merit and public limits; person ≠ channel.",
+    "excerptEs": "Legado: Richard Rasmussen — biólogo (CRBio) y presentador de fauna; YouTube @RichardRasmussenSelvagem; mérito de oficio y límites públicos; persona ≠ canal.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-richard-rasmussen",
+    "url": "/posts/post-inspecao-richard-rasmussen.html",
+    "date": "2026-08-21T14:15:00.000Z",
+    "filename": "posts/post-inspecao-richard-rasmussen.html",
+    "coverImage": "/imagens/inspecoes/richard-rasmussen-cover.jpg",
+    "category": "inspecao",
+    "series": "legado-pessoas",
+    "seriesOrder": 10,
+    "seriesLabel": "Richard Rasmussen · legado"
+  },
+  {
     "title": "Inspeção: eojsofaorforap — eu só falo a verdade",
     "titleEn": "Inspection: eojsofaorforap — I only speak the truth",
     "titleEs": "Inspección: eojsofaorforap — solo digo la verdad",
@@ -1708,6 +1727,25 @@
     "series": "plantas-medicinais",
     "seriesOrder": 15,
     "seriesLabel": "Unha-de-gato"
+  },
+  {
+    "title": "Inspeção: canal Richard Rasmussen Selvagem — fauna, expedições e o ecrã",
+    "titleEn": "Inspection: Richard Rasmussen Selvagem channel — wildlife, expeditions and the screen",
+    "titleEs": "Inspección: canal Richard Rasmussen Selvagem — fauna, expediciones y la pantalla",
+    "excerpt": "Canais: Richard Rasmussen (@RichardRasmussenSelvagem) — arquivo YouTube de fauna e expedições desde 2016; hub /videos; distinto da ficha de pessoa.",
+    "excerptEn": "Channels: Richard Rasmussen (@RichardRasmussenSelvagem) — YouTube wildlife and expedition archive since 2016; /videos hub; distinct from the person sheet.",
+    "excerptEs": "Canales: Richard Rasmussen (@RichardRasmussenSelvagem) — archivo YouTube de fauna y expediciones desde 2016; hub /videos; distinto de la ficha de persona.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-canal-richard-rasmussen",
+    "url": "/posts/post-inspecao-canal-richard-rasmussen.html",
+    "date": "2026-08-21T14:20:00.000Z",
+    "filename": "posts/post-inspecao-canal-richard-rasmussen.html",
+    "coverImage": "/imagens/inspecoes/richard-rasmussen-canal-cover.jpg",
+    "category": "inspecao",
+    "series": "canal-richard-rasmussen",
+    "seriesOrder": 16,
+    "seriesLabel": "Richard Rasmussen · Canais"
   },
   {
     "title": "Inspeção: o templo de Cristo, corpo e alma — morada, inteireza e ofício",

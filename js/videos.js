@@ -69,6 +69,12 @@
     'amyr-klink': 'amyr',
     amyrklink: 'amyr',
     amyrklinkoficial: 'amyr',
+    rasmussen: 'rasmussen',
+    'canal-richard-rasmussen': 'rasmussen',
+    'richard-rasmussen': 'rasmussen',
+    richardrasmussen: 'rasmussen',
+    richardrasmussenselvagem: 'rasmussen',
+    'selvagem-canal': 'rasmussen',
     paulinho: 'paulinho',
     'paulinho-loko': 'paulinho',
     paulinholoko: 'paulinho',
@@ -199,7 +205,25 @@
     antartida: 'antartida',
     antártida: 'antartida',
     livro: 'livro',
-    familia: 'familia'
+    familia: 'familia',
+    recebe: 'recebe',
+    expedicao: 'expedicao',
+    expedições: 'expedicao',
+    serpentes: 'serpentes',
+    felinos: 'felinos',
+    caes: 'caes',
+    cães: 'caes',
+    aves: 'aves',
+    repteis: 'repteis',
+    répteis: 'repteis',
+    peixes: 'peixes',
+    agro: 'agro',
+    criacao: 'criacao',
+    criação: 'criacao',
+    biomas: 'biomas',
+    mundo: 'mundo',
+    indigena: 'indigena',
+    indígena: 'indigena'
   };
 
   var TOPIC_ALIASES = {
@@ -212,12 +236,16 @@
     'saude-e-usos': 'saude',
     plantas: 'plantas',
     ciencia: 'ciencia',
-    ciência: 'ciencia'
+    ciência: 'ciencia',
+    natureza: 'natureza',
+    nature: 'natureza',
+    fauna: 'natureza',
+    selvagem: 'natureza'
   };
 
-  var TOPIC_ORDER = ['cultivo', 'unifesp', 'saude', 'plantas', 'ciencia'];
+  var TOPIC_ORDER = ['cultivo', 'unifesp', 'saude', 'plantas', 'ciencia', 'desenhos', 'natureza'];
 
-  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'tamara', 'amyr', 'disneyjr'];
+  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'tamara', 'amyr', 'rasmussen', 'disneyjr'];
   var GAMES_CHANNELS = { zangado: true, paulinho: true, hopejoy: true };
 
   function isGamesChannel(id) {
@@ -739,6 +767,7 @@
     if (id === 'disneyjr') return 'Disney Jr. Brasil';
     if (id === 'tamara') return 'Tamara Klink';
     if (id === 'amyr') return 'Amyr Klink';
+    if (id === 'rasmussen') return 'Richard Rasmussen';
     if (id === 'zangado') return 'Zangado';
     if (id === 'paulinho') return 'Paulinho o LOKO';
     return id;
@@ -768,6 +797,7 @@
     if (id === 'plantas') return i18n('pages.videos.topicPlantas', 'Plantas');
     if (id === 'ciencia') return i18n('pages.videos.topicCiencia', 'Ciência');
     if (id === 'desenhos') return i18n('pages.videos.topicDesenhos', 'Desenhos');
+    if (id === 'natureza') return i18n('pages.videos.topicNatureza', 'Natureza');
     var opts = (cachedHub && cachedHub.topicOptions) || [];
     for (var i = 0; i < opts.length; i++) {
       if (opts[i].id === id) return opts[i].label;
@@ -1644,7 +1674,9 @@
                   { id: 'unifesp', label: 'Aulas UNIFESP' },
                   { id: 'saude', label: 'Saúde e usos' },
                   { id: 'plantas', label: 'Plantas' },
-                  { id: 'ciencia', label: 'Ciência' }
+                  { id: 'ciencia', label: 'Ciência' },
+                  { id: 'desenhos', label: 'Desenhos' },
+                  { id: 'natureza', label: 'Natureza' }
                 ]
               };
             });

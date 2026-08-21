@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T13:47:25.914Z",
+  "updatedAt": "2026-08-21T14:08:58.676Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6739,6 +6739,48 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 18 Expressões — mensagem da mãe; crédito Arleu / CNN."
+    },
+    {
+      "id": "richard-rasmussen",
+      "title": "Richard Rasmussen — ofício selvagem no ecrã BR",
+      "titleEn": "Richard Rasmussen — wild craft on Brazilian screens",
+      "titleEs": "Richard Rasmussen — oficio salvaje en la pantalla BR",
+      "tipo": "pessoa",
+      "priority": 1,
+      "status": "feita",
+      "why": "Legado Cap. 10 — biólogo CRBio; TV + YouTube; pessoa ≠ canal; limites públicos.",
+      "whyEn": "Legacy Cap. 10 — CRBio biologist; TV + YouTube; person ≠ channel; public limits.",
+      "whyEs": "Legado Cap. 10 — biólogo CRBio; TV + YouTube; persona ≠ canal; límites públicos.",
+      "suggestedSlug": "inspecao-richard-rasmussen",
+      "doneHref": "/posts/post-inspecao-richard-rasmussen.html",
+      "seriesHint": "legado-pessoas",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Richard_Rasmussen",
+        "https://www.youtube.com/@RichardRasmussenSelvagem",
+        "/posts/post-inspecao-palavra-selvagem.html"
+      ],
+      "notes": "Inspeção especial: pessoa + canal. Indexar ≠ endosso político."
+    },
+    {
+      "id": "canal-richard-rasmussen",
+      "title": "Richard Rasmussen Selvagem — arquivo YouTube de fauna",
+      "titleEn": "Richard Rasmussen Selvagem — YouTube wildlife archive",
+      "titleEs": "Richard Rasmussen Selvagem — archivo YouTube de fauna",
+      "tipo": "canal",
+      "priority": 1,
+      "status": "feita",
+      "why": "Canais: @RichardRasmussenSelvagem — expedições, serpentes, biomas; hub /videos/?channel=rasmussen.",
+      "whyEn": "Channels: @RichardRasmussenSelvagem — expeditions, snakes, biomes; hub /videos/?channel=rasmussen.",
+      "whyEs": "Canales: @RichardRasmussenSelvagem — expediciones, serpientes, biomas; hub /videos/?channel=rasmussen.",
+      "suggestedSlug": "inspecao-canal-richard-rasmussen",
+      "doneHref": "/posts/post-inspecao-canal-richard-rasmussen.html",
+      "seriesHint": "canal-richard-rasmussen",
+      "sources": [
+        "https://www.youtube.com/@RichardRasmussenSelvagem",
+        "/posts/post-inspecao-richard-rasmussen.html",
+        "/videos/?channel=rasmussen"
+      ],
+      "notes": "Pessoa ≠ canal. Catalogar ≠ endosso. Lista classificada na ficha do canal."
     }
   ]
 }
