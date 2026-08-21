@@ -413,6 +413,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Citrus × sinensis* — laranja doce: crédito ao fruto inteiro e sumo fresco; separar concentrados, néctares e refrigerantes «de laranja»."
             },
             {
+              "label": "Inspeção: ICL Cursos — Instituto Conhecimento Liberta",
+              "tileLabel": "Inspeção: ICL Cursos — Institut…",
+              "href": "/posts/post-inspecao-icl-cursos.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-icl-cursos",
+              "description": "Ficha da plataforma de cursos do ICL (icl.com.br): assinatura, pós FESPSP, cursos ≠ canal YouTube. Sem afiliação. Catalogar ≠ endosso político."
+            },
+            {
               "label": "Inspeção: Patinete eléctrico — locomoção a bateria, crianças e perigos",
               "tileLabel": "Inspeção: Patinete eléctrico — …",
               "href": "/posts/post-inspecao-patinete-eletrico-criancas.html",
@@ -467,6 +475,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-acai",
               "description": "Relatório educacional de Açaí (*Euterpe oleracea Mart.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: plataformas de ensino GOV.BR — Canal Educação, MEC Idiomas e MEC Livros",
+              "tileLabel": "Inspeção: plataformas de ensino…",
+              "href": "/posts/post-inspecao-plataformas-ensino-govbr.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-plataformas-ensino-govbr",
+              "description": "Mapa gratuito do MEC com login gov.br: Canal Educação (vídeos), MEC Idiomas (inglês/espanhol), MEC Livros (biblioteca), AVAMEC e MEC Enem. Sem afiliação. Catalogar ≠ endosso político."
             },
             {
               "label": "Inspeção: deu certo, galera — celebração colectiva e oralidade BR",
@@ -669,12 +685,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Psidium guajava* — fruto brasileiro de quintal rico em vitamina C e fibra; separar goiaba inteira de goiabada, polpas e néctares industriais."
             },
             {
-              "label": "Inspeção: Richard Rasmussen — ofício selvagem no ecrã brasileiro",
-              "tileLabel": "Inspeção: Richard Rasmussen — o…",
+              "label": "Inspeção: Richard Rasmussen — respeito ao ofício selvagem no ecrã brasileiro",
+              "tileLabel": "Inspeção: Richard Rasmussen — r…",
               "href": "/posts/post-inspecao-richard-rasmussen.html",
               "icon": "🔍",
               "slug": "post-inspecao-richard-rasmussen",
-              "description": "Legado: Richard Rasmussen — biólogo (CRBio) e apresentador de fauna; YouTube @RichardRasmussenSelvagem; mérito de ofício e limites públicos; pessoa ≠ canal."
+              "description": "Legado: Richard Rasmussen — biólogo (CRBio) e apresentador de fauna; respeito de ofício (*respicere*: olhar de novo); YouTube @RichardRasmussenSelvagem; pessoa ≠ canal."
             },
             {
               "label": "Inspeção: eojsofaorforap — eu só falo a verdade",
@@ -962,7 +978,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-canal-richard-rasmussen.html",
               "icon": "🔍",
               "slug": "post-inspecao-canal-richard-rasmussen",
-              "description": "Canais: Richard Rasmussen (@RichardRasmussenSelvagem) — arquivo YouTube de fauna e expedições desde 2016; hub /videos; distinto da ficha de pessoa."
+              "description": "Canais: Richard Rasmussen (@RichardRasmussenSelvagem) — arquivo YouTube de fauna e expedições desde 2016; respeito de arquivo; hub /videos; distinto da ficha de pessoa."
             },
             {
               "label": "Inspeção: o templo de Cristo, corpo e alma — morada, inteireza e ofício",
@@ -1003,6 +1019,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-mamao",
               "description": "*Carica papaya* — mamão brasileiro: polpa doce, papaína do látex e elo UNIFESP/SUS; separar fruto inteiro de néctares e ultraprocessados."
+            },
+            {
+              "label": "Inspeção: canal ICL — jornalismo YouTube do Conhecimento Liberta",
+              "tileLabel": "Inspeção: canal ICL — jornalism…",
+              "href": "/posts/post-inspecao-canal-icl.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-canal-icl",
+              "description": "Canais: Instituto Conhecimento Liberta — jornalismo ao vivo (~8 h/dia); recorte classificado; cursos ≠ canal. Fora do hub de cultivo. Catalogar ≠ endosso."
             },
             {
               "label": "Inspeção: os doze apóstolos — conjunto, envio e ofício",

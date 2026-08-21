@@ -1,7 +1,31 @@
 {
-  "updatedAt": "2026-08-21T14:15:49.978Z",
+  "updatedAt": "2026-08-21T14:27:23.871Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
+    {
+      "id": "plataformas-ensino-govbr",
+      "title": "Plataformas de ensino GOV.BR — Canal Educação, MEC Idiomas e MEC Livros",
+      "titleEn": "GOV.BR learning platforms — Canal Educação, MEC Idiomas and MEC Livros",
+      "titleEs": "Plataformas de enseñanza GOV.BR — Canal Educação, MEC Idiomas y MEC Livros",
+      "tipo": "curso",
+      "priority": 2,
+      "status": "feita",
+      "why": "Mapa gratuito do MEC (login gov.br): vídeos, idiomas, livros, AVAMEC e MEC Enem. Distinto do SIEX e do ICL.",
+      "whyEn": "Free MEC map (gov.br login): video, languages, books, AVAMEC and MEC Enem. Distinct from SIEX and ICL.",
+      "whyEs": "Mapa gratuito del MEC (login gov.br): vídeo, idiomas, libros, AVAMEC y MEC Enem. Distinto del SIEX y del ICL.",
+      "suggestedSlug": "inspecao-plataformas-ensino-govbr",
+      "doneHref": "/posts/post-inspecao-plataformas-ensino-govbr.html",
+      "seriesHint": "formacao-academica",
+      "sources": [
+        "https://www.gov.br/mec/pt-br",
+        "https://meclivros.mec.gov.br/",
+        "https://www.gov.br/mec/pt-br/acesso-a-informacao/perguntas-frequentes/mec-idiomas",
+        "https://www.youtube.com/@canaleducacaobr",
+        "https://avamec.mec.gov.br/",
+        "https://app.mecenem.mec.gov.br"
+      ],
+      "notes": "Sem afiliação. Catalogar ≠ endosso político. Canal Educação fora do hub /videos/ de cultivo."
+    },
     {
       "id": "patinete-eletrico-criancas",
       "title": "Patinete eléctrico — locomoção a bateria, crianças e perigos",
@@ -6748,9 +6772,9 @@
       "tipo": "pessoa",
       "priority": 1,
       "status": "feita",
-      "why": "Legado Cap. 10 — biólogo CRBio; TV + YouTube; pessoa ≠ canal; limites públicos.",
-      "whyEn": "Legacy Cap. 10 — CRBio biologist; TV + YouTube; person ≠ channel; public limits.",
-      "whyEs": "Legado Cap. 10 — biólogo CRBio; TV + YouTube; persona ≠ canal; límites públicos.",
+      "why": "Legado Cap. 10 — biólogo CRBio; TV + YouTube; respeito de ofício; pessoa ≠ canal.",
+      "whyEn": "Legacy Cap. 10 — CRBio biologist; TV + YouTube; craft respect; person ≠ channel.",
+      "whyEs": "Legado Cap. 10 — biólogo CRBio; TV + YouTube; respeto de oficio; persona ≠ canal.",
       "suggestedSlug": "inspecao-richard-rasmussen",
       "doneHref": "/posts/post-inspecao-richard-rasmussen.html",
       "seriesHint": "legado-pessoas",
