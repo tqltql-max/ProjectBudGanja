@@ -53,6 +53,7 @@
     "build:amyr": "node scripts/build-amyr-klink-catalog.js",
     "build:william-davis": "node scripts/build-william-davis-catalog.js",
     "build:slivki": "node scripts/build-slivki-catalog.js",
+    "build:manualdomundo": "node scripts/build-manual-do-mundo-catalog.js",
     "fetch:xiv-transcripts": "node scripts/fetch-xiv-transcripts.js",
     "build:xiv-livro": "node scripts/build-xiv-livro.js"
   },

@@ -45,6 +45,7 @@ var SERIES_LABELS = {
   'canal-vevo': 'VEVO · Canais',
   'canal-icl': 'ICL · Canais',
   'canal-slivki': 'Slivki Show · Canais',
+  'canal-manual-do-mundo': 'Manual do Mundo · Canais',
   'canal-richard-rasmussen': 'Richard Rasmussen · Canais',
   'verificacao-equipamento': 'Objetos',
   'formacao-academica': 'Extensão académica',

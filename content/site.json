@@ -731,6 +731,14 @@
                   "description": "Relatório educacional de Cacau (*Theobroma cacao L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
                 },
                 {
+                  "label": "Inspeção: Iberê Thenório — ofício de ciência no ecrã brasileiro",
+                  "tileLabel": "Inspeção: Iberê Thenório — ofíc…",
+                  "href": "/posts/post-inspecao-ibere-thenorio.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-ibere-thenorio",
+                  "description": "Legado: Iberê Thenório — jornalista (ECA-USP), cofundador do Manual do Mundo (2008) com Mariana Fulfaro; pessoa ≠ canal; destaque Manual Maker."
+                },
+                {
                   "label": "Inspeção: Canal MovReCam — aulas UNIFESP",
                   "tileLabel": "Inspeção: Canal MovReCam — aula…",
                   "href": "/posts/post-inspecao-canal-movrecam.html",
@@ -1115,6 +1123,14 @@
                   "description": "*Carapa guianensis* — óleo de sementes rico em limonoides (andirobina); tradição tópica e repelente."
                 },
                 {
+                  "label": "Inspeção: canal Manual do Mundo — ciência no ecrã e o Manual Maker",
+                  "tileLabel": "Inspeção: canal Manual do Mundo…",
+                  "href": "/posts/post-inspecao-canal-manual-do-mundo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-canal-manual-do-mundo",
+                  "description": "Canais (especial): Manual do Mundo (@manualdomundo) — arquivo BR de ciência e experiências; destaque Manual Maker (Arduino, 3D, laser). Pessoa ≠ canal. Hub /videos/?channel=manualdomundo&series=maker."
+                },
+                {
                   "label": "Inspeção: Leonardo da Vinci — ofício de olhar e elo com a Santa Ceia",
                   "tileLabel": "Inspeção: Leonardo da Vinci — o…",
                   "href": "/posts/post-inspecao-figura-leonardo-da-vinci.html",
@@ -1281,6 +1297,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-guia-defensoria-acesso",
                   "description": "Guia de acesso: Defensoria Pública e a assistência jurídica gratuita no cultivo medicinal; critérios de hipossuficiência, laudos, HC e os filtros que restam sem honorários. Não é parecer."
+                },
+                {
+                  "label": "Inspeção: Manual Maker — ofício Arduino, 3D e laser no Manual do Mundo",
+                  "tileLabel": "Inspeção: Manual Maker — ofício…",
+                  "href": "/posts/post-inspecao-manual-maker.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-manual-maker",
+                  "description": "Formação (destaque): Manual Maker — Arduino, impressão 3D e corte a laser no @manualdomundo; série ≠ loja; série ≠ canal à parte. Hub /videos/?channel=manualdomundo&series=maker."
                 },
                 {
                   "label": "Inspeção: Guia quimiotipos — THC, CBD, CBG e a composição da cannabis",

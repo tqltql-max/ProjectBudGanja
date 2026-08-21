@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T16:00:42.295Z",
+  "updatedAt": "2026-08-21T16:54:43.618Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6975,6 +6975,68 @@
         "/posts/post-inspecao-canal-slivki.html"
       ],
       "notes": "Ser ≠ canal. Sem protocolo de maneio. Título «smartest» ≠ paper."
+    },
+    {
+      "id": "canal-manual-do-mundo",
+      "title": "Manual do Mundo — ciência no ecrã e o Manual Maker",
+      "titleEn": "Manual do Mundo — science on screen and Manual Maker",
+      "titleEs": "Manual do Mundo — ciencia en pantalla y Manual Maker",
+      "tipo": "canal",
+      "priority": 1,
+      "status": "feita",
+      "why": "Canais (especial): @manualdomundo — ciência e experiências; destaque Manual Maker. Pessoa ≠ canal.",
+      "whyEn": "Channels (special): @manualdomundo — science and experiments; highlight Manual Maker. Person ≠ channel.",
+      "whyEs": "Canales (especial): @manualdomundo — ciencia y experimentos; destaque Manual Maker. Persona ≠ canal.",
+      "suggestedSlug": "inspecao-canal-manual-do-mundo",
+      "doneHref": "/posts/post-inspecao-canal-manual-do-mundo.html",
+      "seriesHint": "canal-manual-do-mundo",
+      "sources": [
+        "https://www.youtube.com/@manualdomundo",
+        "/posts/post-inspecao-ibere-thenorio.html",
+        "/videos/?channel=manualdomundo&series=maker"
+      ],
+      "notes": "Inspeção especial: canal + pessoa + Maker. Maker ≠ loja. Indexar ≠ endosso."
+    },
+    {
+      "id": "ibere-thenorio",
+      "title": "Iberê Thenório — ofício de ciência no ecrã brasileiro",
+      "titleEn": "Iberê Thenório — science craft on Brazilian screens",
+      "titleEs": "Iberê Thenório — oficio de ciencia en la pantalla brasileña",
+      "tipo": "pessoa",
+      "priority": 1,
+      "status": "feita",
+      "why": "Legado: jornalista (ECA-USP), cofundador do Manual do Mundo (2008) com Mariana Fulfaro; pessoa ≠ canal.",
+      "whyEn": "Legacy: journalist (ECA-USP), co-founder of Manual do Mundo (2008) with Mariana Fulfaro; person ≠ channel.",
+      "whyEs": "Legado: periodista (ECA-USP), cofundador de Manual do Mundo (2008) con Mariana Fulfaro; persona ≠ canal.",
+      "suggestedSlug": "inspecao-ibere-thenorio",
+      "doneHref": "/posts/post-inspecao-ibere-thenorio.html",
+      "seriesHint": "legado-pessoas",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Iberê_Thenório",
+        "/posts/post-inspecao-canal-manual-do-mundo.html"
+      ],
+      "notes": "Pessoa ≠ canal. Guinness é recorde de inscritos, não paper."
+    },
+    {
+      "id": "manual-maker",
+      "title": "Manual Maker — Arduino, 3D e laser no Manual do Mundo",
+      "titleEn": "Manual Maker — Arduino, 3D and laser on Manual do Mundo",
+      "titleEs": "Manual Maker — Arduino, 3D y láser en Manual do Mundo",
+      "tipo": "formacao",
+      "priority": 1,
+      "status": "feita",
+      "why": "Destaque: série de ofício (Arduino, 3D, laser) no mesmo canal; Maker ≠ loja; Maker ≠ canal à parte.",
+      "whyEn": "Highlight: craft series (Arduino, 3D, laser) on the same channel; Maker ≠ shop; Maker ≠ separate channel.",
+      "whyEs": "Destaque: serie de oficio (Arduino, 3D, láser) en el mismo canal; Maker ≠ tienda; Maker ≠ otro canal.",
+      "suggestedSlug": "inspecao-manual-maker",
+      "doneHref": "/posts/post-inspecao-manual-maker.html",
+      "seriesHint": "formacao-academica",
+      "sources": [
+        "https://www.youtube.com/@manualdomundo",
+        "/posts/post-inspecao-canal-manual-do-mundo.html",
+        "/videos/?channel=manualdomundo&series=maker"
+      ],
+      "notes": "Série ≠ loja manualmaker.com.br. Sem protocolo de solda."
     }
   ]
 }

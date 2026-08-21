@@ -61,6 +61,13 @@
     'canal-slivki': 'slivki',
     slivkishow: 'slivki',
     slivkishowen: 'slivki',
+    manualdomundo: 'manualdomundo',
+    'canal-manual-do-mundo': 'manualdomundo',
+    'manual-do-mundo': 'manualdomundo',
+    mdm: 'manualdomundo',
+    iberethenorio: 'manualdomundo',
+    ibere: 'manualdomundo',
+    manualmaker: 'manualdomundo',
     tamara: 'tamara',
     'canal-tamara': 'tamara',
     'canal-tamaraklink': 'tamara',
@@ -263,7 +270,7 @@
 
   var TOPIC_ORDER = ['cultivo', 'unifesp', 'saude', 'plantas', 'ciencia', 'desenhos', 'natureza'];
 
-  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'tamara', 'amyr', 'rasmussen', 'disneyjr', 'slivki'];
+  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'tamara', 'amyr', 'rasmussen', 'disneyjr', 'slivki', 'manualdomundo'];
   var GAMES_CHANNELS = { zangado: true, paulinho: true, hopejoy: true };
 
   function isGamesChannel(id) {
@@ -787,6 +794,7 @@
     if (id === 'amyr') return 'Amyr Klink';
     if (id === 'rasmussen') return 'Richard Rasmussen';
     if (id === 'slivki') return 'Slivki Show';
+    if (id === 'manualdomundo') return 'Manual do Mundo';
     if (id === 'zangado') return 'Zangado';
     if (id === 'paulinho') return 'Paulinho o LOKO';
     return id;
