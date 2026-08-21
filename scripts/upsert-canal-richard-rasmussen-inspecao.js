@@ -13,6 +13,7 @@ const { saveCatalog } = require('../lib/youtube-channel-catalog.js');
 const { buildRasmussenCanalPost } = require('../lib/richard-rasmussen-canal-inspecao-post.js');
 const { buildRasmussenPessoaPost } = require('../lib/richard-rasmussen-inspecao-post.js');
 const { buildSelvagemPost } = require('../lib/selvagem-inspecao-post.js');
+const { buildRespeitoPost } = require('../lib/respeito-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_FILE = path.join(ROOT, 'posts.json');
@@ -85,16 +86,19 @@ async function main() {
   const pessoa = buildRasmussenPessoaPost();
   const canal = buildRasmussenCanalPost();
   const selvagem = buildSelvagemPost();
+  const respeito = buildRespeitoPost();
   const posts = JSON.parse(fs.readFileSync(POSTS_FILE, 'utf8'));
   upsertPost(posts, pessoa);
   upsertPost(posts, canal);
   upsertPost(posts, selvagem);
+  upsertPost(posts, respeito);
   fs.writeFileSync(POSTS_FILE, JSON.stringify(posts, null, 2) + '\n', 'utf8');
 
   const i18n = JSON.parse(fs.readFileSync(I18N_FILE, 'utf8'));
   writeI18n(i18n, pessoa);
   writeI18n(i18n, canal);
   writeI18n(i18n, selvagem);
+  writeI18n(i18n, respeito);
   fs.writeFileSync(I18N_FILE, JSON.stringify(i18n, null, 2) + '\n', 'utf8');
 
   if (fs.existsSync(SUG_FILE)) {
@@ -108,9 +112,9 @@ async function main() {
       tipo: 'pessoa',
       priority: 1,
       status: 'feita',
-      why: 'Legado Cap. 10 — biólogo CRBio; TV + YouTube; pessoa ≠ canal; limites públicos.',
-      whyEn: 'Legacy Cap. 10 — CRBio biologist; TV + YouTube; person ≠ channel; public limits.',
-      whyEs: 'Legado Cap. 10 — biólogo CRBio; TV + YouTube; persona ≠ canal; límites públicos.',
+      why: 'Legado Cap. 10 — biólogo CRBio; TV + YouTube; respeito de ofício; pessoa ≠ canal.',
+      whyEn: 'Legacy Cap. 10 — CRBio biologist; TV + YouTube; craft respect; person ≠ channel.',
+      whyEs: 'Legado Cap. 10 — biólogo CRBio; TV + YouTube; respeto de oficio; persona ≠ canal.',
       suggestedSlug: pessoa.slug,
       doneHref: '/posts/post-' + pessoa.slug + '.html',
       seriesHint: 'legado-pessoas',
@@ -148,7 +152,7 @@ async function main() {
     console.log('Sugestões actualizadas (richard-rasmussen)');
   }
 
-  for (const post of [pessoa, canal, selvagem]) {
+  for (const post of [pessoa, canal, selvagem, respeito]) {
     try {
       await syncSql(post);
     } catch (e) {
