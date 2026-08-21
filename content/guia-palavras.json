@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T17:48:40.210Z",
+  "updatedAt": "2026-08-21T18:07:19.798Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4720,6 +4720,22 @@
       "curiositiesEn": "The lexical sheet reads the etymon; the film lends the pedagogical face.",
       "historyEs": "Miedo viene del latín metus — alerta que protege del peligro. En Intensamente (2015) es la emoción morada de Riley.",
       "curiositiesEs": "La ficha léxica lee el étimo; la película presta el rostro pedagógico."
+    },
+    {
+      "id": "sexta-feira-13",
+      "word": "sexta-feira 13",
+      "simple": "Data, não azar: quando o 13 cai à sexta; 13 de novembro de 2026 é um dia qualquer; estreias da franquia no dia 13 = calendário, não o objecto; Faça o melhor!",
+      "simpleEn": "A date, not a curse: when the 13th falls on Friday; 13 November 2026 is an ordinary day; franchise openings on the 13th = calendar, not the object; Do your best!",
+      "simpleEs": "Fecha, no mala suerte: cuando el 13 cae en viernes; el 13 de noviembre de 2026 es un día cualquiera; estrenos de la franquicia el 13 = calendario, no el objeto; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sexta-feira-13.html",
+      "history": "Sexta-feira 13 nomeia a coincidência calendário (weekday + dia 13). A superstição é folclore; a franquia de terror usou algumas sextas-feiras 13 como data de estreia EUA — agenda comercial, não destino.",
+      "curiosities": "Em 2026 o 13 cai à sexta em fevereiro, março e novembro. O laboratório trata os três como dias iguais.",
+      "historyEn": "Friday the 13th names a calendar coincidence (weekday + the 13th). Superstition is folklore; the horror franchise used some Friday the 13ths as US opening dates — a commercial calendar, not fate.",
+      "curiositiesEn": "In 2026 the 13th falls on Friday in February, March and November. The lab treats all three as equal days.",
+      "historyEs": "Viernes 13 nombra la coincidencia de calendario (día de la semana + el 13). La superstición es folclore; la franquicia usó algunos viernes 13 como estreno EUA — agenda comercial, no destino.",
+      "curiositiesEs": "En 2026 el 13 cae en viernes en febrero, marzo y noviembre. El laboratorio trata los tres como días iguales."
     },
     {
       "id": "mel-gibson",

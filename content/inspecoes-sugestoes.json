@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T17:48:40.200Z",
+  "updatedAt": "2026-08-21T18:07:19.790Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7273,6 +7273,31 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 169 — cluster sinais do corpo."
+    },
+    {
+      "id": "palavra-sexta-feira-13",
+      "title": "Sexta-feira 13 — apenas mais um dia qualquer",
+      "titleEn": "Friday the 13th — just another ordinary day",
+      "titleEs": "Viernes 13 — solo un día cualquiera",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: sexta-feira 13 — data, não azar; 13 nov. 2026; estreias da franquia no dia 13 = calendário.",
+      "whyEn": "Words: sexta-feira 13 (Friday the 13th) — a date, not a curse; 13 Nov 2026; franchise openings on the 13th = calendar.",
+      "whyEs": "Palabras: sexta-feira 13 — fecha, no mala suerte; 13 nov. 2026; estrenos de la franquicia el 13 = calendario.",
+      "suggestedSlug": "inspecao-palavra-sexta-feira-13",
+      "doneHref": "/posts/post-inspecao-palavra-sexta-feira-13.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Sexta-feira_13",
+        "https://en.wikipedia.org/wiki/Friday_the_13th",
+        "https://en.wikipedia.org/wiki/Friday_the_13th_(franchise)",
+        "/posts/post-inspecao-palavra-tempo.html",
+        "/posts/post-inspecao-palavra-medo.html",
+        "/posts/post-inspecao-palavra-risco.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 170 — 13 nov. 2026 é sexta e é um dia qualquer; franquia = elo de estreia, não o objecto."
     }
   ]
 }
