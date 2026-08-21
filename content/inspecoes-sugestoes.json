@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T16:54:43.618Z",
+  "updatedAt": "2026-08-21T17:21:56.705Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7037,6 +7037,31 @@
         "/videos/?channel=manualdomundo&series=maker"
       ],
       "notes": "Série ≠ loja manualmaker.com.br. Sem protocolo de solda."
+    },
+    {
+      "id": "palavra-sinais-rem",
+      "title": "Sinais REM — o campo, o sono e a sigla do laboratório",
+      "titleEn": "Sinais REM — the field, sleep, and the lab acronym",
+      "titleEs": "Sinais REM — el campo, el sueño y la sigla del laboratorio",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: sinais REM — plural de sinal; sono Rapid Eye Movement × sigla lab Relaxamento·Endocanabinoide·Modular; elos gesto, nap, eCBome.",
+      "whyEn": "Words: sinais REM — plural of sinal; Rapid Eye Movement sleep × lab acronym Relaxation·Endocannabinoid·Modular; links gesto, nap, eCBome.",
+      "whyEs": "Palabras: sinais REM — plural de sinal; sueño Rapid Eye Movement × sigla lab Relajación·Endocanabinoide·Modular; vínculos gesto, nap, eCBome.",
+      "suggestedSlug": "inspecao-palavra-sinais-rem",
+      "doneHref": "/posts/post-inspecao-palavra-sinais-rem.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Sono_REM",
+        "https://en.wikipedia.org/wiki/Rapid_eye_movement_sleep",
+        "/posts/post-inspecao-palavra-sinal.html",
+        "/posts/post-inspecao-palavra-nap.html",
+        "/posts/post-inspecao-sidarta-ribeiro.html",
+        "/posts/post-inspecao-neurociencia-endocanabinoidoma.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 155 — dois REM (sono × sigla lab); sinais ≠ signo ≠ mensagem; ≠ polissonografia."
     }
   ]
 }

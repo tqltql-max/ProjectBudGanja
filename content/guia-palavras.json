@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T16:00:21.977Z",
+  "updatedAt": "2026-08-21T17:21:56.711Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3266,6 +3266,22 @@
       "curiositiesEn": "The sheet treats the word as a craft unit: what the hand does and what can be cited.",
       "historyEs": "Gesto viene del latín gestus — el acto mínimo del cuerpo. En BudGanja la palabra liga Vida, cultivo, inspecciones, herramientas y comunidad.",
       "curiositiesEs": "La ficha trata el vocablo como unidad de oficio: lo que la mano hace y lo que se puede citar."
+    },
+    {
+      "id": "sinais-rem",
+      "word": "sinais REM",
+      "simple": "Plural de sinal + dois REM: sono Rapid Eye Movement × sigla lab Relaxamento·Endocanabinoide·Modular; elos gesto, nap, eCBome; Faça o melhor!",
+      "simpleEn": "Plural of sinal + two REM: Rapid Eye Movement sleep × lab acronym Relaxation·Endocannabinoid·Modular; links gesto, nap, eCBome; Do your best!",
+      "simpleEs": "Plural de sinal + dos REM: sueño Rapid Eye Movement × sigla lab Relajación·Endocanabinoide·Modular; vínculos gesto, nap, eCBome; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sinais-rem.html",
+      "history": "Sinais é o plural de sinal (lat. signum). REM científico = Rapid Eye Movement (Aserinsky & Kleitman, 1953). REM lab = Relaxamento · Endocanabinoide · Modular — mapa de ofício, não acrónimo clínico.",
+      "curiosities": "As mesmas letras, dois objectos: misturar sono e sigla vira ruído.",
+      "historyEn": "Sinais is the plural of sinal (Lat. signum). Scientific REM = Rapid Eye Movement (1953). Lab REM = Relaxation · Endocannabinoid · Modular — a craft map, not a clinical acronym.",
+      "curiositiesEn": "Same letters, two objects: mixing sleep and the acronym becomes noise.",
+      "historyEs": "Sinais es el plural de sinal (lat. signum). REM científico = Rapid Eye Movement (1953). REM lab = Relajación · Endocanabinoide · Modular — mapa de oficio, no acrónimo clínico.",
+      "curiositiesEs": "Las mismas letras, dos objetos: mezclar sueño y sigla vira ruido."
     },
     {
       "id": "esfregar",
