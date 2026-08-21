@@ -1570,7 +1570,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-serie-the-chosen.html",
               "icon": "🔍",
               "slug": "post-inspecao-serie-the-chosen",
-              "description": "Artes · série: The Chosen / Os Escolhidos (2019–, Dallas Jenkins) — Evangelhos primeiro; dramatização do ministério. Onde assistir: app e site oficiais (grátis), Prime e Netflix no catálogo BR. Ficha própria, distinta de A Paixão de Cristo."
+              "description": "Artes · série: The Chosen / Os Escolhidos (2019–, Dallas Jenkins) — Evangelhos primeiro; dramatização do ministério. Onde assistir: **app oficial** (ficha própria), watch.thechosen.tv, Prime e Netflix no catálogo BR. Distinta de A Paixão de Cristo."
             },
             {
               "label": "Inspeção: Esperança — afecto vivo, espera com ofício e Faça o melhor!",
@@ -1579,6 +1579,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-esperanca",
               "description": "Palavras: «esperança» (lat. *spēs* / *sperantia*) — afecto vivo BR; esperar × esperança; rede com alegria, medo, tristeza; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: app The Chosen — a via oficial gratuita",
+              "tileLabel": "Inspeção: app The Chosen — a vi…",
+              "href": "/posts/post-inspecao-app-the-chosen.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-app-the-chosen",
+              "description": "Artes · app: The Chosen (Come and See) — player oficial grátis na Play e no App Store. Listing net.comeandsee.thechosen; sem anúncios no player (claim); dados declarados. Distinto da ficha da série e do site osescolhidos.tv."
             },
             {
               "label": "Inspeção: Fabuloso — fábula, elogio BR e Faça o melhor!",
@@ -3094,7 +3102,7 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🎮",
               "slug": "games",
               "featured": true,
-              "description": "Zangado e Paulinho o LOKO — página só deles."
+              "description": "GTA RP, Zangado e Paulinho — página só de jogos."
             },
             {
               "label": "Cultivo de Cannabis O Inicio",

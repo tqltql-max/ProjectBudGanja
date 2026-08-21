@@ -14,6 +14,7 @@ const TIMEOUT = 8000;
 const PROTECTED_PAGES = new Set([
   'admin.html',
   'pesquisas-admin.html',
+  'gtarp-admin.html',
   'usuarios-admin.html',
   'sorteios-admin.html',
   'info/apresentacao-unifesp.html',

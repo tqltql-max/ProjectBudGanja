@@ -218,7 +218,7 @@
   var TOPIC_ORDER = ['cultivo', 'unifesp', 'saude', 'plantas', 'ciencia'];
 
   var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'tamara', 'amyr', 'disneyjr'];
-  var GAMES_CHANNELS = { zangado: true, paulinho: true };
+  var GAMES_CHANNELS = { zangado: true, paulinho: true, hopejoy: true };
 
   function isGamesChannel(id) {
     return !!GAMES_CHANNELS[id];
@@ -1477,7 +1477,13 @@
   document.addEventListener('DOMContentLoaded', function () {
     var gamesChannel = readFilterFromUrl().channel;
     if (isGamesChannel(gamesChannel)) {
-      window.location.replace(gamesChannel === 'paulinho' ? '/jogos/aleff/' : '/jogos/zangado/');
+      window.location.replace(
+        gamesChannel === 'paulinho'
+          ? '/jogos/aleff/'
+          : gamesChannel === 'hopejoy'
+            ? '/jogos/hopejoy/'
+            : '/jogos/zangado/'
+      );
       return;
     }
 

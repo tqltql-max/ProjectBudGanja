@@ -241,7 +241,7 @@ function resRedirect(res, location) {
 }
 
 function jogosWatchPath(pathname) {
-  const m = /^\/jogos\/(zangado|aleff|aleph|paulinho)\/([a-zA-Z0-9_-]{11})\/?$/.exec(String(pathname || ''));
+  const m = /^\/jogos\/(zangado|aleff|aleph|paulinho|hopejoy)\/([a-zA-Z0-9_-]{11})\/?$/.exec(String(pathname || ''));
   return m ? '/jogos/video.html' : null;
 }
 
@@ -532,6 +532,12 @@ const server = http.createServer((req, res) => {
       }
       if (canal === 'paulinho' || canal === 'aleff' || canal === 'aleph' || canal === 'paulinholoko' || canal === 'paulinho-loko') {
         return resRedirect(res, '/jogos/aleff/');
+      }
+      if (canal === 'hopejoy' || canal === 'hope-joy' || canal === 'hopejoyoficial') {
+        return resRedirect(res, '/jogos/hopejoy/');
+      }
+      if (canal === 'gtarp' || canal === 'gta-rp' || canal === 'gta') {
+        return resRedirect(res, '/jogos/gtarp/');
       }
     }
     const jogosWatch = jogosWatchPath(url);

@@ -10586,6 +10586,181 @@ html[data-theme="light"] .header-group-divider {
     color: var(--color-text-muted);
 }
 
+.gtarp-page .gtarp-streamers {
+    margin: 28px 0 8px;
+}
+
+.gtarp-page .gtarp-streamers h2 {
+    margin: 0 0 6px;
+    font-size: clamp(1.35rem, 3vw, 1.8rem);
+    letter-spacing: -0.02em;
+    color: #eef8d8;
+}
+
+.gtarp-streamers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 16px 0 0;
+}
+
+.gtarp-streamer {
+    border: 2px solid rgba(212, 175, 55, 0.45);
+    border-radius: 12px;
+    padding: 16px 18px;
+    background: rgba(10, 34, 48, 0.55);
+}
+
+.gtarp-streamer--featured {
+    border-color: #d4af37;
+    box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.4);
+}
+
+.gtarp-streamer h3 {
+    margin: 0 0 12px;
+    font-size: 1.15rem;
+    color: #eef8d8;
+}
+
+.gtarp-streamer-actions,
+.gtarp-card-streamers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+}
+
+.gtarp-kick-btn {
+    background: #d4af37;
+    color: #0a2230;
+    border: none;
+    font-weight: 800;
+}
+
+.gtarp-kick-btn:hover,
+.gtarp-kick-btn:focus-visible {
+    background: #f0d56a;
+    color: #0a2230;
+}
+
+.gtarp-page .gtarp-roster {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 28px 0 0;
+}
+
+.gtarp-card {
+    border: 2px solid rgba(154, 209, 95, 0.28);
+    border-radius: 12px;
+    padding: 18px 20px 16px;
+    background: rgba(10, 34, 48, 0.45);
+}
+
+.gtarp-card--featured {
+    border-color: #9ad15f;
+    box-shadow: 0 0 0 1px rgba(154, 209, 95, 0.35);
+}
+
+.gtarp-card-role {
+    margin: 0 0 6px;
+    color: var(--color-accent-light);
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.gtarp-card h2 {
+    margin: 0 0 12px;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    letter-spacing: -0.03em;
+    color: #eef8d8;
+}
+
+.gtarp-streamer-label {
+    margin: 0 0 8px;
+    color: #d4af37;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.gtarp-card-blurb {
+    margin: 14px 0 10px;
+    color: var(--color-text-muted);
+    line-height: 1.45;
+}
+
+.gtarp-apply-cta {
+    margin: 8px 0 0;
+}
+
+.gtarp-apply-cta a {
+    color: #d4af37;
+    font-weight: 700;
+}
+
+.gtarp-apply {
+    margin: 40px 0 12px;
+    padding-top: 8px;
+    border-top: 2px solid rgba(154, 209, 95, 0.28);
+}
+
+.gtarp-apply h2 {
+    margin: 16px 0 8px;
+    font-size: clamp(1.35rem, 3vw, 1.8rem);
+    color: #eef8d8;
+}
+
+.gtarp-apply-form {
+    max-width: 560px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.gtarp-apply-form textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(154, 209, 95, 0.28);
+    background: rgba(10, 34, 48, 0.6);
+    color: inherit;
+    font: inherit;
+}
+
+.gtarp-honeypot {
+    position: absolute;
+    left: -9999px;
+    height: 0;
+    overflow: hidden;
+}
+
+.gtarp-card-catalog {
+    color: var(--color-accent-light);
+    font-weight: 600;
+}
+
+.gtarp-card-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin: 12px 0 0;
+}
+
+.gtarp-card-links a {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.gtarp-card-links a.jogos-channel-kick {
+    color: var(--color-accent, #d4af37);
+    font-weight: 700;
+}
+
 .jogos-page .jogos-catalog-links a.jogos-channel-kick {
     color: var(--color-accent, #d4af37);
     font-weight: 700;

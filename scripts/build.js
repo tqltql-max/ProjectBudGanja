@@ -118,6 +118,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('build:hopejoy', 'build-hopejoy-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:hopejoy:', e.message);
+  }
+
+  try {
     runStep('build:tamara', 'build-tamara-klink-catalog.js');
   } catch (e) {
     console.warn('Aviso build:tamara:', e.message);

@@ -63,10 +63,27 @@
       inspection: '/posts/post-inspecao-canal-paulinho.html',
       emptyKey: 'pages.games.emptyVideos',
       emptyFallback: 'Nenhum vídeo do Aleff no catálogo ainda.'
+    },
+    {
+      id: 'hopejoy',
+      slugs: ['hopejoy', 'hope-joy', 'hopejoyoficial'],
+      href: '/jogos/hopejoy/',
+      catalogUrl: '/content/channels/hopejoyoficial.json',
+      hubId: 'hopejoy',
+      nameKey: 'pages.games.hopejoyTitle',
+      nameFallback: 'Hope Joy',
+      descKey: 'pages.games.hopejoyDesc',
+      descFallback:
+        'Personagem do Jornal da Capital. Arquivo no YouTube, na ordem de postagem. Live no Kick. Sem afiliação. Ficção de jogo ≠ manual de crime.',
+      yt: 'https://www.youtube.com/@hopejoyoficial',
+      kick: 'https://kick.com/hopejoyoficial',
+      emptyKey: 'pages.games.emptyHopejoy',
+      emptyFallback: 'Nenhum vídeo da Hope Joy no catálogo ainda.'
     }
   ];
 
   var HUB_NAMES = [
+    { href: '/jogos/gtarp/', nameKey: 'pages.games.gtarpTitle', nameFallback: 'GTA RP' },
     { href: '/jogos/aleff/', nameKey: 'pages.games.aleffTitle', nameFallback: 'Aleff' },
     { href: '/jogos/zangado/', nameKey: 'pages.games.zangadoTitle', nameFallback: 'Zangado' },
     { href: '/jogos/broto/', nameKey: 'pages.games.brotoTitle', nameFallback: 'Broto' },
@@ -90,6 +107,7 @@
     if (parts[1] === 'video.html') return 'watch';
     if (parts[1] === 'broto') return 'broto';
     if (parts[1] === 'cadernos') return 'cadernos';
+    if (parts[1] === 'gtarp') return 'gtarp';
     if (parts[2] && isValidVideoId(parts[2].replace(/\.html$/i, ''))) return 'watch';
     if (creatorBySlug(parts[1])) return 'catalog';
     return 'hub';
@@ -166,6 +184,153 @@
         '</a>'
       );
     }).join('');
+  }
+
+  function gtarpKickLabel(c) {
+    var handle = c.kickHandle || '';
+    return handle
+      ? i18n('pages.games.openKick', 'Live no Kick') + ' · ' + handle
+      : i18n('pages.games.openKick', 'Live no Kick');
+  }
+
+  function gtarpYtLabel(c) {
+    var handle = c.ytHandle || '';
+    return handle
+      ? i18n('pages.games.openChannel', 'Abrir no YouTube') + ' · ' + handle
+      : i18n('pages.games.openChannel', 'Abrir no YouTube');
+  }
+
+  function renderGtarpHub() {
+    var box = document.getElementById('gtarp-roster');
+    var streamers = document.getElementById('gtarp-streamers-list');
+    if (!box && !streamers) return;
+    fetch('/content/gtarp-personagens.json')
+      .then(function (r) {
+        return r.ok ? r.json() : Promise.reject(new Error('roster'));
+      })
+      .then(function (doc) {
+        var chars = (doc && doc.characters) || [];
+        if (!chars.length) {
+          var empty =
+            '<p class="empty-message">' +
+            escapeHtml(i18n('pages.games.gtarpEmpty', 'Ainda sem personagens com canal no catálogo.')) +
+            '</p>';
+          if (box) box.innerHTML = empty;
+          if (streamers) streamers.innerHTML = empty;
+          return;
+        }
+        if (streamers) {
+          streamers.innerHTML = chars
+            .map(function (c) {
+              var featured = c.featured ? ' gtarp-streamer--featured' : '';
+              var kick = c.kick
+                ? '<a class="botao gtarp-kick-btn" href="' +
+                  escapeHtml(c.kick) +
+                  '" target="_blank" rel="noopener noreferrer">' +
+                  escapeHtml(gtarpKickLabel(c)) +
+                  '</a>'
+                : '';
+              var yt = c.yt
+                ? '<a class="botao botao-outline" href="' +
+                  escapeHtml(c.yt) +
+                  '" target="_blank" rel="noopener noreferrer">' +
+                  escapeHtml(gtarpYtLabel(c)) +
+                  '</a>'
+                : '';
+              var twitch = c.twitch
+                ? '<a class="botao botao-outline" href="' +
+                  escapeHtml(c.twitch) +
+                  '" target="_blank" rel="noopener noreferrer">Twitch' +
+                  (c.twitchHandle ? ' · ' + escapeHtml(c.twitchHandle) : '') +
+                  '</a>'
+                : '';
+              return (
+                '<article class="gtarp-streamer' +
+                featured +
+                '">' +
+                '<p class="gtarp-card-role">' +
+                escapeHtml(c.name || '') +
+                '</p>' +
+                '<h3>' +
+                escapeHtml(i18n('pages.games.gtarpStreamerOf', 'Canal de streamer')) +
+                '</h3>' +
+                '<p class="gtarp-streamer-actions">' +
+                kick +
+                yt +
+                twitch +
+                '</p>' +
+                '</article>'
+              );
+            })
+            .join('');
+        }
+        if (!box) return;
+        box.innerHTML = chars
+          .map(function (c) {
+            var featured = c.featured ? ' gtarp-card--featured' : '';
+            var kick = c.kick
+              ? '<a class="botao gtarp-kick-btn" href="' +
+                escapeHtml(c.kick) +
+                '" target="_blank" rel="noopener noreferrer">' +
+                escapeHtml(gtarpKickLabel(c)) +
+                '</a>'
+              : '';
+            var yt = c.yt
+              ? '<a class="botao botao-outline" href="' +
+                escapeHtml(c.yt) +
+                '" target="_blank" rel="noopener noreferrer">' +
+                escapeHtml(gtarpYtLabel(c)) +
+                '</a>'
+              : '';
+            var twitch = c.twitch
+              ? '<a class="botao botao-outline" href="' +
+                escapeHtml(c.twitch) +
+                '" target="_blank" rel="noopener noreferrer">Twitch' +
+                (c.twitchHandle ? ' · ' + escapeHtml(c.twitchHandle) : '') +
+                '</a>'
+              : '';
+            var catalog = c.href && String(c.href).charAt(0) === '/'
+              ? '<a class="gtarp-card-catalog" href="' +
+                escapeHtml(c.href) +
+                '">' +
+                escapeHtml(i18n('pages.games.gtarpOpenCatalog', 'Arquivo no site')) +
+                '</a>'
+              : '';
+            return (
+              '<article class="gtarp-card' +
+              featured +
+              '">' +
+              '<p class="gtarp-card-role">' +
+              escapeHtml(c.role || '') +
+              '</p>' +
+              '<h2>' +
+              escapeHtml(c.name || '') +
+              '</h2>' +
+              '<p class="gtarp-streamer-label">' +
+              escapeHtml(i18n('pages.games.gtarpStreamersTitle', 'Canais de streamer')) +
+              '</p>' +
+              '<p class="gtarp-card-streamers">' +
+              kick +
+              yt +
+              twitch +
+              '</p>' +
+              '<p class="gtarp-card-blurb">' +
+              escapeHtml(c.blurb || '') +
+              '</p>' +
+              catalog +
+              '</article>'
+            );
+          })
+          .join('');
+      })
+      .catch(function () {
+        var empty =
+          '<p class="empty-message">' +
+          escapeHtml(i18n('pages.games.gtarpEmpty', 'Ainda sem personagens com canal no catálogo.')) +
+          '</p>';
+        if (box) box.innerHTML = empty;
+        if (streamers) streamers.innerHTML = empty;
+      });
   }
 
   function renderChannelMeta(creator) {
@@ -553,11 +718,80 @@
       });
   }
 
+  function bindGtarpApply() {
+    var form = document.getElementById('gtarp-apply-form');
+    if (!form || form.getAttribute('data-bound')) return;
+    form.setAttribute('data-bound', '1');
+    var statusEl = document.getElementById('gtarp-apply-status');
+    var btn = document.getElementById('gtarp-apply-submit');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (statusEl) statusEl.textContent = i18n('pages.games.gtarpApplySending', 'A enviar…');
+      if (btn) btn.disabled = true;
+      var payload = {
+        characterName: (document.getElementById('gtarp-character') || {}).value || '',
+        role: (document.getElementById('gtarp-role') || {}).value || '',
+        youtubeUrl: (document.getElementById('gtarp-youtube') || {}).value || '',
+        kickUrl: (document.getElementById('gtarp-kick') || {}).value || '',
+        twitchUrl: (document.getElementById('gtarp-twitch') || {}).value || '',
+        contactName: (document.getElementById('gtarp-contact-name') || {}).value || '',
+        contactEmail: (document.getElementById('gtarp-contact-email') || {}).value || '',
+        notes: (document.getElementById('gtarp-notes') || {}).value || '',
+        adult: !!(document.getElementById('gtarp-adult') || {}).checked,
+        terms: !!(document.getElementById('gtarp-terms') || {}).checked,
+        website: (document.getElementById('gtarp-website') || {}).value || ''
+      };
+      fetch('/api/gtarp/apply', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify(payload)
+      })
+        .then(function (r) {
+          return r.json().then(function (data) {
+            return { ok: r.ok, status: r.status, data: data };
+          });
+        })
+        .then(function (res) {
+          if (btn) btn.disabled = false;
+          if (!res.ok) {
+            if (statusEl) {
+              statusEl.textContent =
+                (res.data && res.data.error) ||
+                i18n('pages.games.gtarpApplyError', 'Não foi possível enviar. Tenta de novo.');
+            }
+            return;
+          }
+          form.reset();
+          if (statusEl) {
+            statusEl.textContent = i18n(
+              'pages.games.gtarpApplyOk',
+              'Candidatura recebida. O laboratório revê e, se entrar, a personagem aparece nesta página.'
+            );
+          }
+        })
+        .catch(function () {
+          if (btn) btn.disabled = false;
+          if (statusEl) {
+            statusEl.textContent = i18n(
+              'pages.games.gtarpApplyError',
+              'Não foi possível enviar. Tenta de novo.'
+            );
+          }
+        });
+    });
+  }
+
   function load() {
     if (redirectLegacyHub()) return;
     var mode = pageMode();
     if (mode === 'hub') {
       renderHub();
+      return;
+    }
+    if (mode === 'gtarp') {
+      renderGtarpHub();
+      bindGtarpApply();
       return;
     }
     if (mode === 'cadernos') {

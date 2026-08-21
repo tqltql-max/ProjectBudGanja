@@ -19,6 +19,8 @@ const STATIC = [
   { loc: '/guia/palavras.html', priority: '0.9', changefreq: 'monthly' },
   { loc: '/videos/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/jogos/', priority: '0.9', changefreq: 'weekly' },
+  { loc: '/jogos/gtarp/', priority: '0.85', changefreq: 'weekly' },
+  { loc: '/jogos/hopejoy/', priority: '0.8', changefreq: 'weekly' },
   { loc: '/biblioteca/pesquisas/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/biblioteca/inspecoes/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/biblioteca/unifesp/', priority: '0.95', changefreq: 'monthly' },

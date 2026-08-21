@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta property="og:title" content="Submissões de pesquisas | Admin Inspetor BudGanja">
+    <meta property="og:title" content="GTA RP streamers | Admin Inspetor BudGanja">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://inspetorbudganja.com.br/pesquisas-admin.html">
+    <meta property="og:url" content="https://inspetorbudganja.com.br/gtarp-admin.html">
     <meta property="og:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
     <meta property="og:image:secure_url" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Submissões de pesquisas | Admin Inspetor BudGanja">
+    <meta name="twitter:title" content="GTA RP streamers | Admin Inspetor BudGanja">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
-    <link rel="canonical" href="https://inspetorbudganja.com.br/pesquisas-admin.html">
+    <link rel="canonical" href="https://inspetorbudganja.com.br/gtarp-admin.html">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -33,20 +33,20 @@
     <meta name="theme-color" content="#0a2230">
     <link rel="stylesheet" href="/css/style.css?v=340">
     <meta name="robots" content="noindex,nofollow">
-    <title>Submissões de pesquisas | Admin Inspetor BudGanja</title>
+    <title>GTA RP streamers | Admin Inspetor BudGanja</title>
 </head>
-<body data-page="pesquisas-admin">
+<body data-page="gtarp-admin">
     <div id="site-header"></div>
 
     <main class="conteudo-interno admin-panel">
     <header class="admin-hub-header">
       <div class="admin-hub-intro">
         <p class="admin-hub-eyebrow">Área administrativa</p>
-        <h1>Submissões de pesquisas</h1>
-        <p class="admin-hub-sub">Diários enviados pelos utilizadores para revisão e publicação em <a href="/biblioteca/pesquisas/" target="_blank" rel="noopener">Pesquisas</a>.</p>
+        <h1>GTA RP — candidaturas de streamers</h1>
+        <p class="admin-hub-sub">Fila de personagens com canal YouTube + live (Kick/Twitch). Aprovar publica em <a href="/jogos/gtarp/" target="_blank" rel="noopener">/jogos/gtarp/</a>.</p>
       </div>
       <div class="admin-hub-actions">
-        <a href="/cultivo/" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Diário de Pesquisas</a>
+        <a href="/jogos/gtarp/" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Página GTA RP</a>
         <a href="/" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Site</a>
         <button id="logout-btn" type="button" class="botao botao-outline botao-sm">Sair</button>
       </div>
@@ -54,26 +54,26 @@
 
     <nav class="admin-nav" aria-label="Secções do admin">
       <a href="/admin.html" class="admin-nav-link">Publicações</a>
-      <a href="/pesquisas-admin.html" class="admin-nav-link is-active" aria-current="page">Submissões</a>
-      <a href="/gtarp-admin.html" class="admin-nav-link">GTA RP</a>
+      <a href="/pesquisas-admin.html" class="admin-nav-link">Submissões</a>
+      <a href="/gtarp-admin.html" class="admin-nav-link is-active" aria-current="page">GTA RP</a>
       <a href="/comunidade-admin.html" class="admin-nav-link">Comunidade</a>
       <a href="/usuarios-admin.html" class="admin-nav-link">Utilizadores</a>
       <a href="/sorteios-admin.html" class="admin-nav-link">Sorteios</a>
       <a href="/info/apresentacao-unifesp.html" class="admin-nav-link">Apresentação UNIFESP</a>
     </nav>
 
-    <div id="submissions-stats" class="admin-stats-grid" aria-label="Resumo de submissões"></div>
+    <div id="gtarp-stats" class="admin-stats-grid" aria-label="Resumo de candidaturas"></div>
 
-    <section class="highlight-card admin-surface-panel" id="submissions-list-panel">
+    <section class="highlight-card admin-surface-panel" id="gtarp-list-panel">
       <div class="sorteios-admin-toolbar">
         <div>
-          <h2 class="admin-section-title" style="margin:0">Fila de revisão</h2>
-          <p class="field-hint">Aprove para criar um post em <strong>Pesquisas</strong> ou rejeite com nota ao autor.</p>
-          <p id="submissions-count" class="sorteios-admin-count">A carregar…</p>
+          <h2 class="admin-section-title" style="margin:0">Fila de streamers</h2>
+          <p class="field-hint">Aprovar acrescenta a personagem à página GTA RP (YouTube + Kick em destaque).</p>
+          <p id="gtarp-count" class="sorteios-admin-count">A carregar…</p>
         </div>
         <label class="admin-field-row">
           Estado
-          <select id="filter-submission-status" class="select-dark">
+          <select id="gtarp-filter-status" class="select-dark">
             <option value="pending">Pendentes</option>
             <option value="">Todas</option>
             <option value="approved">Aprovadas</option>
@@ -82,50 +82,47 @@
         </label>
       </div>
       <div class="sorteios-admin-table-wrap">
-        <table class="sorteios-admin-table" id="submissions-table">
+        <table class="sorteios-admin-table" id="gtarp-table">
           <thead>
             <tr>
               <th>Data</th>
-              <th>Título</th>
-              <th>Autor</th>
-              <th>Pesquisa</th>
+              <th>Personagem</th>
+              <th>YouTube</th>
+              <th>Kick</th>
               <th>Estado</th>
               <th></th>
             </tr>
           </thead>
-          <tbody id="submissions-table-body">
+          <tbody id="gtarp-table-body">
             <tr><td colspan="6">A carregar…</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <section class="highlight-card admin-studio-editor" id="submission-detail-panel" hidden>
+    <section class="highlight-card admin-studio-editor" id="gtarp-detail-panel" hidden>
       <div class="admin-editor-top">
-        <button type="button" id="submission-back-btn" class="voltar-link admin-studio-back">&larr; Voltar à lista</button>
-        <span id="submission-status-badge" class="admin-editor-badge">Pendente</span>
+        <button type="button" id="gtarp-back-btn" class="voltar-link admin-studio-back">&larr; Voltar à lista</button>
+        <span id="gtarp-status-badge" class="admin-editor-badge">Pendente</span>
       </div>
-      <p id="submission-meta" class="field-hint"></p>
-      <form id="submission-review-form" class="admin-form">
-        <label class="admin-field-full">Título da publicação
-          <input type="text" id="submission-title" required>
+      <p id="gtarp-meta" class="field-hint"></p>
+      <dl class="perfil-meta-list" id="gtarp-detail-meta"></dl>
+      <form id="gtarp-review-form" class="admin-form">
+        <label class="admin-field-full">Nome da personagem
+          <input type="text" id="gtarp-edit-name" required>
         </label>
-        <label class="admin-field-full">Resumo (card da listagem)
-          <input type="text" id="submission-excerpt" maxlength="280">
+        <label class="admin-field-full">Função no RP
+          <input type="text" id="gtarp-edit-role">
         </label>
-        <label class="admin-field-full">Conteúdo (Markdown)
-          <textarea id="submission-content" rows="18" required></textarea>
-        </label>
-        <label class="admin-checkbox">
-          <input type="checkbox" id="submission-published" checked>
-          Publicar no site ao aprovar
+        <label class="admin-field-full">Nota interna (opcional)
+          <input type="text" id="gtarp-edit-note" maxlength="400">
         </label>
         <div class="conta-actions">
-          <button type="button" class="botao botao-outline" id="submission-reject-btn">Rejeitar</button>
-          <button type="submit" class="botao" id="submission-approve-btn">Aprovar e publicar</button>
+          <button type="button" class="botao botao-outline" id="gtarp-reject-btn">Rejeitar</button>
+          <button type="submit" class="botao" id="gtarp-approve-btn">Aprovar e publicar</button>
         </div>
       </form>
-      <p id="submission-result" class="conta-status" role="status"></p>
+      <p id="gtarp-result" class="conta-status" role="status"></p>
     </section>
   </main>
 
@@ -136,7 +133,7 @@
     <script src="/js/i18n.js?v=340"></script>
     <script src="/js/ferramentas-nav-data.js?v=340"></script>
     <script src="/js/layout.js?v=340"></script>
-    <script src="/js/pesquisas-admin.js?v=340"></script>
+    <script src="/js/gtarp-admin.js?v=340"></script>
 
 </body>
 </html>
