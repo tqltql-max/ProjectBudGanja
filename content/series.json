@@ -12,6 +12,12 @@
     "sortOrder": 3.6
   },
   {
+    "id": "canal-icl",
+    "label": "ICL · Canais",
+    "category": "inspecao",
+    "sortOrder": 3.7
+  },
+  {
     "id": "verificacao-equipamento",
     "label": "Verificação de Equipamentos",
     "category": "inspecao",

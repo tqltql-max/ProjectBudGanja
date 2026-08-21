@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T14:08:58.676Z",
+  "updatedAt": "2026-08-21T14:15:49.978Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6781,6 +6781,49 @@
         "/videos/?channel=rasmussen"
       ],
       "notes": "Pessoa ≠ canal. Catalogar ≠ endosso. Lista classificada na ficha do canal."
+    },
+    {
+      "id": "icl-cursos",
+      "title": "ICL Cursos — Instituto Conhecimento Liberta",
+      "titleEn": "ICL Courses — Instituto Conhecimento Liberta",
+      "titleEs": "ICL Cursos — Instituto Conhecimento Liberta",
+      "tipo": "curso",
+      "priority": 2,
+      "status": "feita",
+      "why": "Formação privada (assinatura, pós FESPSP). Cursos ≠ canal YouTube. Catalogar ≠ endosso político.",
+      "whyEn": "Private education (subscription, FESPSP postgraduate). Courses ≠ YouTube channel. Cataloguing ≠ political endorsement.",
+      "whyEs": "Formación privada (suscripción, posgrado FESPSP). Cursos ≠ canal YouTube. Indexar ≠ respaldo político.",
+      "suggestedSlug": "inspecao-icl-cursos",
+      "doneHref": "/posts/post-inspecao-icl-cursos.html",
+      "seriesHint": "formacao-academica",
+      "sources": [
+        "https://icl.com.br/",
+        "https://pt.wikipedia.org/wiki/Instituto_Conhecimento_Liberta",
+        "https://iclnoticias.com.br/conhecimento/icl/",
+        "/posts/post-inspecao-canal-icl.html"
+      ],
+      "notes": "Não confundir com iclcursos.com.br (concursos). Sem afiliação."
+    },
+    {
+      "id": "canal-icl",
+      "title": "ICL — jornalismo YouTube do Conhecimento Liberta",
+      "titleEn": "ICL — Conhecimento Liberta YouTube journalism",
+      "titleEs": "ICL — periodismo YouTube de Conhecimento Liberta",
+      "tipo": "canal",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canais: @institutoconhecimentoliberta — ~8 h/dia de jornalismo; recorte classificado; fora do hub de cultivo.",
+      "whyEn": "Channels: @institutoconhecimentoliberta — ~8 h/day journalism; classified sample; outside the cultivation hub.",
+      "whyEs": "Canales: @institutoconhecimentoliberta — ~8 h/día de periodismo; muestra clasificada; fuera del hub de cultivo.",
+      "suggestedSlug": "inspecao-canal-icl",
+      "doneHref": "/posts/post-inspecao-canal-icl.html",
+      "seriesHint": "canal-icl",
+      "sources": [
+        "https://www.youtube.com/@institutoconhecimentoliberta",
+        "/posts/post-inspecao-icl-cursos.html",
+        "https://pt.wikipedia.org/wiki/Instituto_Conhecimento_Liberta"
+      ],
+      "notes": "Cursos ≠ canal. Indexar ≠ endosso político. Não misturar com /videos/ de cultivo."
     }
   ]
 }

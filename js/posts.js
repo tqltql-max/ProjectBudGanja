@@ -43,6 +43,8 @@ var SERIES_LABELS = {
   'canal-zangado': 'Zangado · Canais',
   'canal-paulinho': 'Paulinho o LOKO · Canais',
   'canal-vevo': 'VEVO · Canais',
+  'canal-icl': 'ICL · Canais',
+  'canal-richard-rasmussen': 'Richard Rasmussen · Canais',
   'verificacao-equipamento': 'Objetos',
   'formacao-academica': 'Extensão académica',
   'loja-cultivo': 'Lojas de cultivo',
