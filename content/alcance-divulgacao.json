@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-20T22:15:00.000Z",
-  "note": "Registro de divulgação comunitária do laboratório — alcance declarado pelo aluno, sem nomes de terceiros. Não conta visualizações confirmadas.",
+  "updatedAt": "2026-08-21T10:12:00.000Z",
+  "note": "Registro de divulgação comunitária do laboratório — alcance declarado pelo aluno, sem nomes de terceiros. Não conta visualizações confirmadas pelo YouTube Analytics.",
   "events": [
     {
       "id": "xiv-aula-11-whatsapp-amigos-2026-08-20",
@@ -24,13 +24,28 @@
         "siteUrl": "/videos/?channel=movrecam&series=xiv#dV-6qKW1HXg",
         "draftUrl": "/biblioteca/unifesp/livro-xiv.html#aula-11"
       },
+      "shared": {
+        "kind": "youtube-link",
+        "url": "https://www.youtube.com/watch?v=dV-6qKW1HXg",
+        "note": "Partilhado apenas o link do YouTube da aula (MovReCam). Não foi enviado o site do laboratório."
+      },
       "message": {
         "medium": "audio",
         "transcriptRaw": "e ai galera asssisti essa aula ai é muioto boa voces vao gostar tenho certeza",
         "transcript": "E aí galera, assisti essa aula aí, é muito boa, vocês vão gostar, tenho certeza."
       },
       "reachDeclared": 20,
-      "reachNote": "Alcance potencial do grupo (20 pessoas). Não conta visualizações confirmadas."
+      "reachNote": "Alcance potencial do grupo (20 pessoas). Não conta visualizações confirmadas.",
+      "outcome": {
+        "id": "xiv-aula-11-youtube-online-2026-08-21",
+        "date": "2026-08-21",
+        "timeLocal": "07:12",
+        "timezone": "America/Sao_Paulo",
+        "kind": "youtube-concurrent-viewers",
+        "count": 13,
+        "source": "youtube",
+        "note": "Pico declarado de 13 pessoas online no vídeo do YouTube, na manhã seguinte ao envio. Atribuído ao compartilhamento do link da aula. Não são visitas ao site do laboratório."
+      }
     }
   ]
 }
