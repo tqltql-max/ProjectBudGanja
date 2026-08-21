@@ -99,6 +99,11 @@ const {
   poemLucasEn,
   poemLucasEs
 } = require('../lib/lucas-evangelista-inspecao-post.js');
+const {
+  poemTodaCriancaNasceCientistaPt,
+  poemTodaCriancaNasceCientistaEn,
+  poemTodaCriancaNasceCientistaEs
+} = require('../lib/toda-crianca-nasce-cientista-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -106,6 +111,28 @@ const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
 const doc = {
   updatedAt: new Date().toISOString(),
   poems: [
+    {
+      id: 'toda-crianca-nasce-cientista',
+      slug: 'toda-crianca-nasce-cientista',
+      title: 'Toda criança nasce cientista',
+      titleEn: 'Every Child Is Born a Scientist',
+      titleEs: 'Toda niña y niño nace científico',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'A mãe mandou o recado — o campo devolve o método, e o mantra: faça o melhor.',
+      teaserEn:
+        'Mother sent the note — the field returns the method, and the mantra: do your best.',
+      teaserEs:
+        'La madre mandó el recado — el campo devuelve el método, y el mantra: haz lo mejor.',
+      body: poemTodaCriancaNasceCientistaPt(),
+      bodyEn: poemTodaCriancaNasceCientistaEn(),
+      bodyEs: poemTodaCriancaNasceCientistaEs(),
+      inspectionHref:
+        '/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html',
+      tags: ['poesia', 'vida', 'ciência', 'campo', 'mãe']
+    },
     {
       id: 'aguas-e-lagrimas',
       slug: 'aguas-e-lagrimas',

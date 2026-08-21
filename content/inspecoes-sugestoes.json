@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T13:07:05.964Z",
+  "updatedAt": "2026-08-21T13:39:27.426Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -6716,6 +6716,29 @@
         "/posts/post-inspecao-serie-the-chosen.html"
       ],
       "notes": "App ≠ série ≠ site BR. Livre de anúncios ≠ sem dados. Sem pirataria."
+    },
+    {
+      "id": "expressao-toda-crianca-nasce-cientista",
+      "title": "Toda criança nasce cientista — recado de campo e mensagem da mãe",
+      "titleEn": "Every child is born a scientist — field note and a mother’s message",
+      "titleEs": "Toda criança nasce cientista — recado de campo y mensaje de la madre",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: citação de Arleu (CNN / campo); chegou como mensagem da mãe; Faça o melhor!",
+      "whyEn": "Sayings: Arleu quote (CNN / field); arrived as a mother’s message; Do your best!",
+      "whyEs": "Dichos: cita de Arleu (CNN / campo); llegó como mensaje de la madre; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-expressao-toda-crianca-nasce-cientista",
+      "doneHref": "/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://www.cnnbrasil.com.br/ciencia/cupins-criam-ar-condicionado-que-funciona-melhor-do-que-usados-por-humanos/",
+        "/posts/post-inspecao-palavra-mae.html",
+        "/posts/post-inspecao-palavra-mensagem.html",
+        "/posts/post-inspecao-palavra-inseto.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 18 Expressões — mensagem da mãe; crédito Arleu / CNN."
     }
   ]
 }

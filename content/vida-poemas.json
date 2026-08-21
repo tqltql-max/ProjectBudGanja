@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-08-20T23:00:15.618Z",
+  "updatedAt": "2026-08-21T13:40:50.631Z",
   "poems": [
+    {
+      "id": "toda-crianca-nasce-cientista",
+      "slug": "toda-crianca-nasce-cientista",
+      "title": "Toda criança nasce cientista",
+      "titleEn": "Every Child Is Born a Scientist",
+      "titleEs": "Toda niña y niño nace científico",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "A mãe mandou o recado — o campo devolve o método, e o mantra: faça o melhor.",
+      "teaserEn": "Mother sent the note — the field returns the method, and the mantra: do your best.",
+      "teaserEs": "La madre mandó el recado — el campo devuelve el método, y el mantra: haz lo mejor.",
+      "body": "Toda criança nasce cientista —\nnão por diploma,\npor necessidade de mundo.\nPõe o dedo, pergunta,\nlevanta a pedra,\nnão tem vergonha do porquê.\n\nDepois a gente cresce.\nAprende a não perguntar.\nGuarda o jaleco no armário\ne chama de maturidade\no que às vezes é só medo\nde parecer criança outra vez.\n\nO campo devolve o ofício:\nmão na terra,\nolho no inseto,\npaciência de quem ainda descobre.\nNão é voltar atrás.\nÉ lembrar o método\nque já estava no peito.\n\nA mãe mandou o recado.\nO laboratório leu.\nFica.\nConta gotas.\nPlanta à beira.\nChama a Vida pelo nome verdadeiro:\n\nFaça o melhor!",
+      "bodyEn": "Every child is born a scientist —\nnot by diploma,\nby need of the world.\nA finger, a question,\na stone lifted,\nno shame in why.\n\nThen we grow.\nWe learn not to ask.\nWe put the lab coat away\nand call maturity\nwhat is sometimes only fear\nof looking like a child again.\n\nThe field gives the craft back:\nhand in the soil,\neye on the insect,\npatience of one who still discovers.\nIt is not going backwards.\nIt is remembering the method\nthat was already in the chest.\n\nThe mother sent the note.\nThe laboratory read it.\nStay.\nCount drops.\nPlant at the edge.\nCall Vida by its true name:\n\nDo your best!",
+      "bodyEs": "Toda niña y todo niño nace científico —\nno por diploma,\npor necesidad de mundo.\nPone el dedo, pregunta,\nlevanta la piedra,\nno tiene vergüenza del porqué.\n\nDespués crecemos.\nAprendemos a no preguntar.\nGuardamos la bata\ny llamamos madurez\na lo que a veces es solo miedo\nde parecer niño otra vez.\n\nEl campo devuelve el oficio:\nmano en la tierra,\nojo en el insecto,\npaciencia de quien aún descubre.\nNo es volver atrás.\nEs recordar el método\nque ya estaba en el pecho.\n\nLa madre mandó el recado.\nEl laboratorio lo leyó.\nQuédate.\nCuenta gotas.\nSiembra a la orilla.\nLlama a Vida por su nombre verdadero:\n\n¡Haz lo mejor!",
+      "inspectionHref": "/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "ciência",
+        "campo",
+        "mãe"
+      ]
+    },
     {
       "id": "aguas-e-lagrimas",
       "slug": "aguas-e-lagrimas",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T13:07:05.970Z",
+  "updatedAt": "2026-08-21T13:39:27.432Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4290,6 +4290,22 @@
       "curiositiesEn": "Links with Dona Maria and soul: Do your best in named care.",
       "historyEs": "Madre / mãe viene del latín mater — origen y cuidado. La tipografía lab restaura fia → mãe y distingue fia (NE/hija) del vocablo materno.",
       "curiositiesEs": "Eslabones con Dona Maria y alma: Haz lo mejor en el cuidado nombrado."
+    },
+    {
+      "id": "toda-crianca-nasce-cientista",
+      "word": "toda criança nasce cientista",
+      "simple": "Citação de campo — curiosidade nativa; o crescer às vezes cala; o campo devolve o método. Chegou como mensagem da mãe. Faça o melhor!",
+      "simpleEn": "Field quote — native curiosity; growing up sometimes silences it; the field returns the method. Arrived as a mother’s message. Do your best!",
+      "simpleEs": "Cita de campo — curiosidad nativa; crecer a veces calla; el campo devuelve el método. Llegó como mensaje de la madre. ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html",
+      "history": "Frase de Arleu Barbosa Viana-Junior (UEPB), publicada pela CNN Brasil a propósito de trabalho de campo no Cerrado (predação). Entrou no laboratório como mensagem da mãe. Não fundir com a coluna de Marcelo Gleiser (Folha, 2013).",
+      "curiosities": "A fórmula «toda criança nasce cientista» circula; esta ficha ancora a versão que liga a perda da curiosidade ao voltar ao campo.",
+      "historyEn": "Line by Arleu Barbosa Viana-Junior (UEPB), published by CNN Brasil from Cerrado fieldwork (predation). Entered the lab as a mother’s message. Do not merge with Gleiser’s 2013 Folha column.",
+      "curiositiesEn": "The opening “every child is born a scientist” circulates; this sheet anchors the version that ties lost curiosity to returning to the field.",
+      "historyEs": "Frase de Arleu Barbosa Viana-Junior (UEPB), publicada por CNN Brasil sobre trabajo de campo en el Cerrado (depredación). Entró al laboratorio como mensaje de la madre. No fusionar con la columna de Gleiser (Folha, 2013).",
+      "curiositiesEs": "La fórmula circula; esta ficha ancla la versión que une la pérdida de curiosidad con volver al campo."
     },
     {
       "id": "magnifico",

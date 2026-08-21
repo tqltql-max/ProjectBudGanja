@@ -1029,6 +1029,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Copaifera langsdorffii* — óleo-resina amazônica; β-cariofileno e ácidos copaíbicos na tradição tópica e oral."
             },
             {
+              "label": "Inspeção: Toda criança nasce cientista — recado de campo e mensagem da mãe",
+              "tileLabel": "Inspeção: Toda criança nasce ci…",
+              "href": "/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-toda-crianca-nasce-cientista",
+              "description": "Expressões: Toda criança nasce cientista — citação de Arleu Barbosa Viana-Junior (CNN / campo no Cerrado); chegou como mensagem da mãe; Faça o melhor!"
+            },
+            {
               "label": "Inspeção: Paulo Coelho — ofício de parábola e elo com O Alquimista",
               "tileLabel": "Inspeção: Paulo Coelho — ofício…",
               "href": "/posts/post-inspecao-figura-paulo-coelho.html",

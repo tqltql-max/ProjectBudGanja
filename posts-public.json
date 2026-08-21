@@ -1900,6 +1900,25 @@
     "seriesLabel": "Copaíba"
   },
   {
+    "title": "Inspeção: Toda criança nasce cientista — recado de campo e mensagem da mãe",
+    "titleEn": "Inspection: Every child is born a scientist — field note and a mother’s message",
+    "titleEs": "Inspección: Toda niña y niño nace científico — recado de campo y mensaje de la madre",
+    "excerpt": "Expressões: Toda criança nasce cientista — citação de Arleu Barbosa Viana-Junior (CNN / campo no Cerrado); chegou como mensagem da mãe; Faça o melhor!",
+    "excerptEn": "Sayings: Every child is born a scientist — Arleu Barbosa Viana-Junior (CNN / Cerrado field); arrived as a mother’s message; Do your best!",
+    "excerptEs": "Dichos: Toda criança nasce cientista — cita de Arleu Barbosa Viana-Junior (CNN / campo en el Cerrado); llegó como mensaje de la madre; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-expressao-toda-crianca-nasce-cientista",
+    "url": "/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html",
+    "date": "2026-08-21T13:40:00.000Z",
+    "filename": "posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html",
+    "coverImage": "/imagens/inspecoes/toda-crianca-nasce-cientista-cover.jpg",
+    "category": "inspecao",
+    "series": "expressoes-ditados",
+    "seriesOrder": 18,
+    "seriesLabel": "toda criança nasce cientista · expressão"
+  },
+  {
     "title": "Inspeção: Paulo Coelho — ofício de parábola e elo com O Alquimista",
     "titleEn": "Inspection: Paulo Coelho — parable craft and link to The Alchemist",
     "titleEs": "Inspección: Paulo Coelho — oficio de parábola y vínculo con El alquimista",
