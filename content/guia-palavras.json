@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T11:01:43.529Z",
+  "updatedAt": "2026-08-21T12:10:51.392Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3208,6 +3208,22 @@
       "curiositiesEn": "Links with skill and ídolo: Do your best in the named work, not in the cult.",
       "historyEs": "Jobs en inglés es el plural de job (trabajo); en BR el mismo grafema evoca el nombre de Steve Jobs. El laboratorio inspecciona el vocablo de oficio sin pedestal.",
       "curiositiesEs": "Eslabones con skill e ídolo: Haz lo mejor en el trabajo nombrado, no en el culto."
+    },
+    {
+      "id": "xioomi",
+      "word": "xioomi",
+      "simple": "Rasto oral BR de Xiaomi (小米, milheto); marca × grão × ídolo tech; elos Jobs e celular; Faça o melhor!",
+      "simpleEn": "BR oral trail of Xiaomi (小米, millet); brand × grain × tech idol; links Jobs and phone; Do your best!",
+      "simpleEs": "Rastro oral BR de Xiaomi (小米, mijo); marca × grano × ídolo tech; vínculos Jobs y celular; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-xioomi.html",
+      "history": "Xiaomi transcreve o chinês 小米 (xiǎomǐ): milheto, cereal miúdo. A marca (Pequim, 2010) sentou o grão no telemóvel. No BR a boca faz xioomi / xiômi — rasto, não erro.",
+      "curiosities": "Lei Jun foi comparado a Steve Jobs no palco; o lab recusa o pedestal. O risco do ecrã na criança não muda com o logótipo. Aliases: Xiaomi, xiomi, xiaome.",
+      "historyEn": "Xiaomi transcribes Chinese 小米 (xiǎomǐ): millet, a small grain. The 2010 Beijing brand sat the grain on the handset. In Brazil the mouth makes xioomi — a trail, not a typo.",
+      "curiositiesEn": "Lei Jun was compared to Steve Jobs on stage; the lab refuses the pedestal. Screen risk for children does not change with the logo. Aliases: Xiaomi, xiomi, xiaome.",
+      "historyEs": "Xiaomi transcribe el chino 小米 (xiǎomǐ): mijo, cereal menudo. La marca (Pekín, 2010) sentó el grano en el teléfono. En BR la boca hace xioomi — rastro, no error.",
+      "curiositiesEs": "Lei Jun fue comparado con Steve Jobs en el escenario; el lab rechaza el pedestal. El riesgo de pantalla en niños no cambia con el logo. Alias: Xiaomi, xiomi, xiaome."
     },
     {
       "id": "steve-jobs",
