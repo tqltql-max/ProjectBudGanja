@@ -1,7 +1,31 @@
 {
-  "updatedAt": "2026-08-20T23:11:49.642Z",
+  "updatedAt": "2026-08-21T10:57:07.037Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
+    {
+      "id": "patinete-eletrico-criancas",
+      "title": "Patinete eléctrico — locomoção a bateria, crianças e perigos",
+      "titleEn": "Electric scooter — battery locomotion, children and hazards",
+      "titleEs": "Patinete eléctrico — locomoción a batería, niñas/os y peligros",
+      "tipo": "equipamento",
+      "priority": 1,
+      "status": "feita",
+      "why": "Objetos: patinete eléctrico — locomoção a bateria; INMETRO ≤24 V × CONTRAN 996; célula ≠ BYD Blade; quedas, via e fogo; sem endosso.",
+      "whyEn": "Objects: e-scooter as battery locomotion; INMETRO ≤24 V vs CONTRAN 996; cell ≠ BYD Blade; falls, traffic and fire; no endorsement.",
+      "whyEs": "Objetos: patinete eléctrico; INMETRO ≤24 V × CONTRAN 996; celda ≠ BYD Blade; caídas, vía y fuego; sin endoso.",
+      "suggestedSlug": "inspecao-patinete-eletrico-criancas",
+      "doneHref": "/posts/post-inspecao-patinete-eletrico-criancas.html",
+      "seriesHint": "verificacao-equipamento",
+      "sources": [
+        "https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes/Resolucao9962023.pdf",
+        "https://www.gov.br/inmetro/pt-br/acesso-a-informacao/perguntas-frequentes/avaliacao-da-conformidade/brinquedos/brinquedos-eletricos-devem-ser-certificados",
+        "https://en.wikipedia.org/wiki/BYD_Company",
+        "/posts/post-inspecao-celular-riscos-saude-criancas.html",
+        "/posts/post-inspecao-palavra-risco.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Brinquedo ≠ via. Célula industrial ≠ pack de marketplace. Sem idade mágica."
+    },
     {
       "id": "celular-riscos-saude-criancas",
       "title": "Celular — riscos para a saúde das crianças",

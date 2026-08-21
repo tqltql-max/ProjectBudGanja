@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T23:11:49.649Z",
+  "updatedAt": "2026-08-21T10:57:07.043Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -6982,6 +6982,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-serie-the-chosen.html"
+    },
+    {
+      "id": "patinete",
+      "word": "Patinete",
+      "simple": "Objecto de locomoção; na ficha, o eléctrico a bateria — não é brinquedo com motor; INMETRO ≤24 V × via (CONTRAN 996); perigos infantis: queda, célula, rua.",
+      "simpleEn": "Locomotion object; on the site, the battery e-scooter — not a motorized toy; INMETRO ≤24 V vs road (CONTRAN 996); child hazards: falls, cell, traffic.",
+      "simpleEs": "Objeto de locomoción; en el sitio, el eléctrico a batería — no es juguete con motor; INMETRO ≤24 V × vía (CONTRAN 996); peligros infantiles: caída, celda, calle.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-patinete-eletrico-criancas.html"
     }
   ]
 }

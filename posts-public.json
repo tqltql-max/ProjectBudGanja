@@ -418,6 +418,25 @@
     "seriesLabel": "Laranja · fruto"
   },
   {
+    "title": "Inspeção: Patinete eléctrico — locomoção a bateria, crianças e perigos",
+    "titleEn": "Inspection: Electric scooter — battery locomotion, children and hazards",
+    "titleEs": "Inspección: Patinete eléctrico — locomoción a batería, niñas/os y peligros",
+    "excerpt": "Objetos: patinete eléctrico como locomoção a bateria — não é brinquedo com motor; INMETRO ≤24 V × CONTRAN 996; célula ≠ BYD Blade; quedas, via e fogo; sem endosso.",
+    "excerptEn": "Objects: e-scooter as battery locomotion — not a motorized toy; INMETRO ≤24 V vs CONTRAN 996; cell ≠ BYD Blade; falls, traffic and fire; no endorsement.",
+    "excerptEs": "Objetos: patinete eléctrico como locomoción a batería — no es juguete con motor; INMETRO ≤24 V × CONTRAN 996; celda ≠ BYD Blade; caídas, vía y fuego; sin endoso.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-patinete-eletrico-criancas",
+    "url": "/posts/post-inspecao-patinete-eletrico-criancas.html",
+    "date": "2026-08-21T10:50:00.000Z",
+    "filename": "posts/post-inspecao-patinete-eletrico-criancas.html",
+    "coverImage": "/imagens/inspecoes/patinete-eletrico-criancas-cover.jpg",
+    "category": "inspecao",
+    "series": "verificacao-equipamento",
+    "seriesOrder": 4,
+    "seriesLabel": "Patinete · crianças"
+  },
+  {
     "title": "Inspeção: meudeusdoceu — substituída por jesusudavi",
     "titleEn": "Inspection: meudeusdoceu — replaced by jesusudavi",
     "titleEs": "Inspección: meudeusdoceu — sustituida por jesusudavi",
