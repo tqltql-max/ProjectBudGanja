@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T17:16:49.127Z",
+  "updatedAt": "2026-08-22T17:25:31.145Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8264,6 +8264,50 @@
         "https://pt.wiktionary.org/wiki/n%C3%A9ctar"
       ],
       "notes": "Cap. 27 — Deusus = deuses; sem teologia, sem marca."
+    },
+    {
+      "id": "palavra-sonhar-sonar",
+      "title": "Sonhar × sonar — o sonho, o eco, e o ñ que falta",
+      "titleEn": "Sonhar × sonar — the dream, the echo, and the missing ñ",
+      "titleEs": "Sonhar × sonar — el sueño, el eco, y la ñ que falta",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: sonhar (lat. somniāre) × sonar (aparelho / ES soar); orelha cola o h; Valeu !!!",
+      "whyEn": "Words: sonhar (Lat. somniāre) × sonar (device / ES to sound); the ear glues the h; Valeu !!!",
+      "whyEs": "Palabras: sonhar (lat. somniāre) × sonar (aparato / ES emitir sonido); la oreja pega la h; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-sonhar",
+      "doneHref": "/posts/post-inspecao-palavra-sonhar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/sonhar",
+        "https://pt.wiktionary.org/wiki/sonar",
+        "/posts/post-inspecao-palavra-sinais-rem.html",
+        "/posts/post-inspecao-palavra-relacao.html"
+      ],
+      "notes": "Cap. 211 — sonho ≠ eco; ES soñar leva ñ."
+    },
+    {
+      "id": "palavra-balancar",
+      "title": "Balançar — o gesto, a balança e o peso",
+      "titleEn": "Balançar — the gesture, the scale, and the weight",
+      "titleEs": "Balançar — el gesto, la báscula y el peso",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: balançar (gesto, bilanx) × balança × peso (pendere); gatilho BAÇANÇAR; ≠ dieta ≠ meneia; Valeu !!!",
+      "whyEn": "Words: balançar (gesture, bilanx) × scale × weight (pendere); slip BAÇANÇAR; ≠ diet ≠ meneia; Valeu !!!",
+      "whyEs": "Palabras: balançar (gesto, bilanx) × báscula × peso (pendere); lapsus BAÇANÇAR; ≠ dieta ≠ meneia; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-balancar",
+      "doneHref": "/posts/post-inspecao-palavra-balancar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/balançar",
+        "https://pt.wiktionary.org/wiki/balan%C3%A7a",
+        "https://pt.wiktionary.org/wiki/peso",
+        "/posts/post-inspecao-palavra-meneia.html"
+      ],
+      "notes": "Cap. 212 — gesto ≠ instrumento ≠ kg."
     }
   ]
 }

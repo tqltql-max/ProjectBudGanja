@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T17:16:49.134Z",
+  "updatedAt": "2026-08-22T17:25:31.151Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3636,6 +3636,16 @@
       "curiositiesEs": "La ficha trata el vocablo como unidad de oficio: lo que la mano hace y lo que se puede citar."
     },
     {
+      "id": "balancar",
+      "word": "balançar",
+      "simple": "Gesto de oscilar (bilanx). Elos: balança (instrumento) e peso (pendere). Gatilho BAÇANÇAR. ≠ dieta ≠ meneia. Valeu !!!",
+      "simpleEn": "Swing/rock gesture (bilanx). Links: scale and weight (pendere). Slip BAÇANÇAR. ≠ diet ≠ meneia. Valeu !!!",
+      "simpleEs": "Gesto de oscilar (bilanx). Vínculos: báscula y peso (pendere). Lapsus BAÇANÇAR. ≠ dieta ≠ meneia. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-balancar.html"
+    },
+    {
       "id": "sinais-rem",
       "word": "sinais REM",
       "simple": "Plural de sinal + dois REM: sono Rapid Eye Movement × sigla lab Relaxamento·Endocanabinoide·Modular; elos gesto, nap, eCBome; Valeu !!!",
@@ -3650,6 +3660,16 @@
       "curiositiesEn": "Same letters, two objects: mixing sleep and the acronym becomes noise.",
       "historyEs": "Sinais es el plural de sinal (lat. signum). REM científico = Rapid Eye Movement (1953). REM lab = Relajación · Endocanabinoide · Modular — mapa de oficio, no acrónimo clínico.",
       "curiositiesEs": "Las mismas letras, dos objetos: mezclar sueño y sigla vira ruido."
+    },
+    {
+      "id": "sonhar",
+      "word": "sonhar",
+      "simple": "Lat. somniāre — verbo do sonho. Relação com sonar (aparelho / ES soar). Orelha cola o h; soñar leva ñ. Valeu !!!",
+      "simpleEn": "Lat. somniāre — to dream. Relation to sonar (device / ES to sound). The ear glues the h; soñar keeps ñ. Valeu !!!",
+      "simpleEs": "Lat. somniāre — verbo del sueño. Relación con sonar (aparato / ES emitir sonido). La oreja pega la h; soñar lleva ñ. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sonhar.html"
     },
     {
       "id": "esfregar",
