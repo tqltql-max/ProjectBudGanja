@@ -56,7 +56,7 @@ async function syncSql(post) {
 function insertGlossary(gloss) {
   const href = '/posts/post-inspecao-expressao-muito-obrigado.html';
   const main =
-    '    muitoobrigado: { tone: "warm", category: "Gratidão", mundane: "Fórmula BR de gratidão reforçada (muito obrigado, colado).", gloss: "Termómetro de crédito afectivo — contraste com aff; elos gesto e jesusamando; depois Faça o melhor!", href: "' +
+    '    muitoobrigado: { tone: "warm", category: "Gratidão", mundane: "Fórmula BR de gratidão reforçada (muito obrigado, colado).", gloss: "Termómetro de crédito afectivo — contraste com aff; elos gesto e jesusamado; depois Faça o melhor!", href: "' +
     href +
     '", en: "thank you very much", es: "muchas gracias", fr: "merci beaucoup", it: "grazie mille", de: "vielen Dank", el: "ευχαριστώ πολύ", la: "gratias maximas", yo: "o ṣeun gan", sw: "asante sana", gez: "ameseginalehu", nl: "heel erg bedankt", pl: "bardzo dziękuję", ru: "большое спасибо", uk: "дуже дякую", zh: "非常感谢", ja: "どうもありがとう", ko: "정말 감사합니다", ar: "شكرا جزيلا", he: "תודה רבה", hi: "बहुत धन्यवाद", tr: "çok teşekkürler", sv: "tack så mycket", da: "mange tak", no: "tusen takk", fi: "kiitos paljon", cs: "moc děkuji", ro: "mulțumesc mult", hu: "nagyon köszönöm", ca: "moltes gràcies", gl: "moitas grazas", eu: "eskerrik asko", gn: "aguayjevete", qu: "añay", eo: "dankegon", vi: "cảm ơn nhiều", id: "terima kasih banyak", th: "ขอบคุณมาก", hr: "puno hvala", sk: "ďakujem pekne", ga: "go raibh míle maith agat", cy: "diolch yn fawr", ha: "na gode sosai", am: "አመሰግናለሁ", fa: "خیلی ممنون", bn: "অনেক ধন্যবাদ", zu: "ngiyabonga kakhulu" },\n';
   const aliases = [
@@ -77,7 +77,7 @@ function insertGlossary(gloss) {
   let next = gloss;
   if (!next.includes('muitoobrigado: {')) {
     const anchors = [
-      /(jesusamando: \{[\s\S]*?zu: "Nkosi yami" },\r?\n)/,
+      /(jesusamado: \{[\s\S]*?zu: "Nkosi yami" },\r?\n)/,
       /(meudeusdoceu: \{[\s\S]*?zu: "Nkulunkulu wami" },\r?\n)/,
       /(ausdhuashduas: \{[\s\S]*?zu: "uhleko olubhaliwe" },\r?\n)/
     ];
@@ -135,14 +135,14 @@ async function main() {
       tipo: 'expressao',
       priority: 2,
       status: 'feita',
-      why: 'Expressões: Muito obrigado! / muitoobrigado; gratidão reforçada; étimo obligare × escravidão/cana; elos gesto, valeu, jesusamando.',
-      whyEn: 'Sayings: muito obrigado as one word; reinforced gratitude; links gesture, respect, jesusamando; contrast aff.',
-      whyEs: 'Dichos: muito obrigado pegado; gratitud reforzada; vínculos gesto, respeito, jesusamando; contraste aff.',
+      why: 'Expressões: Muito obrigado! / muitoobrigado; gratidão reforçada; étimo obligare × escravidão/cana; elos gesto, valeu, jesusamado.',
+      whyEn: 'Sayings: muito obrigado as one word; reinforced gratitude; links gesture, respect, jesusamado; contrast aff.',
+      whyEs: 'Dichos: muito obrigado pegado; gratitud reforzada; vínculos gesto, respeito, jesusamado; contraste aff.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'expressoes-ditados',
       sources: [
-        '/posts/post-inspecao-expressao-jesusamando.html',
+        '/posts/post-inspecao-expressao-jesusamado.html',
         '/posts/post-inspecao-palavra-gesto.html',
         '/posts/post-inspecao-palavra-respeito.html',
         '/posts/post-inspecao-palavra-aff.html',
@@ -167,9 +167,9 @@ async function main() {
       simple:
         'Expressão oral BR — «Muito obrigado!» / muitoobrigado: gratidão reforçada; étimo obligare (ligar); irmã leve valeu; depois Faça o melhor!',
       simpleEn:
-        'Brazilian oral saying — reinforced gratitude (thank you very much as one word); contrast with aff; gesture + jesusamando; then Do your best!',
+        'Brazilian oral saying — reinforced gratitude (thank you very much as one word); contrast with aff; gesture + jesusamado; then Do your best!',
       simpleEs:
-        'Expresión oral BR — gratitud reforzada (muchas gracias pegado); contraste con aff; gesto + jesusamando; luego ¡Haz lo mejor!',
+        'Expresión oral BR — gratitud reforzada (muchas gracias pegado); contraste con aff; gesto + jesusamado; luego ¡Haz lo mejor!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -179,7 +179,7 @@ async function main() {
     else {
       const after = items.findIndex(
         (x) =>
-          x.id === 'jesusamando' ||
+          x.id === 'jesusamado' ||
           x.id === 'meudeusdoceu' ||
           x.id === 'ausdhuashduas' ||
           x.id === 'aff'

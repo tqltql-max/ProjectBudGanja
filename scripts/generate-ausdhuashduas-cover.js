@@ -28,7 +28,7 @@ async function main() {
   <text x="600" y="255" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="52" font-weight="700" fill="#fff4e8">ausdhuashduas</text>
   <text x="600" y="330" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="rgba(235,210,190,0.95)">lab name — substitui kkkk… e «risas online»</text>
   <text x="600" y="490" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="24" fill="#d0b090">depois do riso — faça o melhor</text>
-  <text x="600" y="555" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#f0b878">aff · ausdhuashduas · jesusamando · meudeusdoceu</text>
+  <text x="600" y="555" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#f0b878">aff · ausdhuashduas · jesusamado · meudeusdoceu</text>
 </svg>`);
 
   await sharp(bg).jpeg({ quality: 84, mozjpeg: true }).toFile(OUT);

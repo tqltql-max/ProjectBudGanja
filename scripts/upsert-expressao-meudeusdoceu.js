@@ -78,17 +78,17 @@ async function main() {
       tipo: 'expressao',
       priority: 2,
       status: 'feita',
-      why: 'Expressões: meu Deus do céu colado; assombro alto; escala aff × meudeusdoceu × jesusamando.',
-      whyEn: 'Sayings: meu Deus do céu as one word; high awe; scale aff × meudeusdoceu × jesusamando.',
-      whyEs: 'Dichos: meu Deus do céu pegado; asombro alto; escala aff × meudeusdoceu × jesusamando.',
+      why: 'Expressões: meu Deus do céu colado; assombro alto; escala aff × meudeusdoceu × jesusamado.',
+      whyEn: 'Sayings: meu Deus do céu as one word; high awe; scale aff × meudeusdoceu × jesusamado.',
+      whyEs: 'Dichos: meu Deus do céu pegado; asombro alto; escala aff × meudeusdoceu × jesusamado.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'expressoes-ditados',
       sources: [
-        '/posts/post-inspecao-expressao-jesusamando.html',
+        '/posts/post-inspecao-expressao-jesusamado.html',
         '/posts/post-inspecao-palavra-aff.html',
         '/posts/post-inspecao-palavra-lingua-portuguesa.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. 4 Expressões — termómetro de espanto.'
     };
@@ -107,11 +107,11 @@ async function main() {
       id: 'meudeusdoceu',
       word: 'meudeusdoceu',
       simple:
-        'Expressão oral BR — meu Deus do céu colado; assombro alto; escala entre aff e jesusamando; depois Faça o melhor!',
+        'Expressão oral BR — meu Deus do céu colado; assombro alto; escala entre aff e jesusamado; depois Valeu !!!',
       simpleEn:
-        'Brazilian oral saying — meu Deus do céu as one word; high awe; between aff and jesusamando; then Do your best!',
+        'Brazilian oral saying — meu Deus do céu as one word; high awe; between aff and jesusamado; then Valeu !!!',
       simpleEs:
-        'Expresión oral BR — meu Deus do céu pegado; asombro alto; entre aff y jesusamando; luego ¡Haz lo mejor!',
+        'Expresión oral BR — meu Deus do céu pegado; asombro alto; entre aff y jesusamado; luego ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -119,7 +119,7 @@ async function main() {
     const gi = items.findIndex((x) => x.id === entry.id);
     if (gi >= 0) items[gi] = Object.assign({}, items[gi], entry);
     else {
-      const after = items.findIndex((x) => x.id === 'jesusamando' || x.id === 'aff');
+      const after = items.findIndex((x) => x.id === 'jesusamado' || x.id === 'aff');
       if (after >= 0) items.splice(after + 1, 0, entry);
       else items.push(entry);
     }
@@ -133,9 +133,9 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     if (!gloss.includes('meudeusdoceu: {')) {
-      const re = /(jesusamando: \{[\s\S]*?zu: "Nkosi yami" },\r?\n)/;
+      const re = /(jesusamado: \{[\s\S]*?zu: "Nkosi yami" },\r?\n)/;
       const entry =
-        '    meudeusdoceu: { tone: "awe", category: "Assombro", mundane: "Exclamação BR — meu Deus do céu (colado); espanto alto.", gloss: "Termómetro de assombro — entre aff e jesusamando; depois Faça o melhor!", href: "/posts/post-inspecao-expressao-meudeusdoceu.html", en: "oh my God / good heavens", es: "Dios mío del cielo", fr: "mon Dieu", it: "mio Dio", de: "mein Gott", el: "Θεέ μου", la: "Deus meus", yo: "Ọlọ́run mi", sw: "Mungu wangu", gez: "ʼƎgziʼabəḥer", nl: "mijn God", pl: "mój Boże", ru: "Боже мой", uk: "Боже мій", zh: "我的天啊", ja: "なんてこと", ko: "맙소사", ar: "يا إلهي", he: "אלוהים אדירים", hi: "हे भगवान", tr: "aman Allahım", sv: "herregud", da: "hold da kæft", no: "herregud", fi: "voi luoja", cs: "panebože", ro: "Doamne Dumnezeule", hu: "Jóistenem", ca: "Déu meu", gl: "meu Deus do ceo", eu: "Jainkoa", gn: "che Tupã", qu: "Taytalláy", eo: "ho Dio", vi: "trời ơi", id: "ya Tuhan", th: "พระเจ้าช่วย", hr: "Bože moj", sk: "Bože môj", ga: "a Dhia", cy: "duw annwyl", ha: "Allahna", am: "አምላኬ", fa: "خدایا", bn: "হায় রে", zu: "Nkulunkulu wami" },\n';
+        '    meudeusdoceu: { tone: "awe", category: "Assombro", mundane: "Exclamação BR — meu Deus do céu (colado); espanto alto.", gloss: "Termómetro de assombro — entre aff e jesusamado; depois Valeu !!!", href: "/posts/post-inspecao-expressao-meudeusdoceu.html", en: "oh my God / good heavens", es: "Dios mío del cielo", fr: "mon Dieu", it: "mio Dio", de: "mein Gott", el: "Θεέ μου", la: "Deus meus", yo: "Ọlọ́run mi", sw: "Mungu wangu", gez: "ʼƎgziʼabəḥer", nl: "mijn God", pl: "mój Boże", ru: "Боже мой", uk: "Боже мій", zh: "我的天啊", ja: "なんてこと", ko: "맙소사", ar: "يا إلهي", he: "אלוהים אדירים", hi: "हे भगवान", tr: "aman Allahım", sv: "herregud", da: "hold da kæft", no: "herregud", fi: "voi luoja", cs: "panebože", ro: "Doamne Dumnezeule", hu: "Jóistenem", ca: "Déu meu", gl: "meu Deus do ceo", eu: "Jainkoa", gn: "che Tupã", qu: "Taytalláy", eo: "ho Dio", vi: "trời ơi", id: "ya Tuhan", th: "พระเจ้าช่วย", hr: "Bože moj", sk: "Bože môj", ga: "a Dhia", cy: "duw annwyl", ha: "Allahna", am: "አምላኬ", fa: "خدایا", bn: "হায় রে", zu: "Nkulunkulu wami" },\n';
       if (re.test(gloss)) {
         gloss = gloss.replace(re, '$1' + entry);
         fs.writeFileSync(glossPath, gloss);

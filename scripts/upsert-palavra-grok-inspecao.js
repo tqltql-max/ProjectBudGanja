@@ -89,9 +89,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: Grok (Heinlein to grok) — compreensão íntima × tom de ofício; relação de forma de se expressar com Deus; Faça o melhor!',
-      whyEn: 'Words: Grok (Heinlein to grok) — deep understanding × craft tone; expression link to Deus; Do your best!',
-      whyEs: 'Palabras: Grok (Heinlein to grok) — comprensión íntima × tono de oficio; vínculo de expresión con Deus; ¡Haz lo mejor!',
+      why: 'Palavras: Grok (Heinlein to grok) — compreensão íntima × tom de ofício; relação de forma de se expressar com Deus; Valeu !!!',
+      whyEn: 'Words: Grok (Heinlein to grok) — deep understanding × craft tone; expression link to Deus; Valeu !!!',
+      whyEs: 'Palabras: Grok (Heinlein to grok) — comprensión íntima × tono de oficio; vínculo de expresión con Deus; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -101,8 +101,8 @@ async function main() {
         '/posts/post-inspecao-expressao-deus-abencoe.html',
         '/posts/post-inspecao-expressao-filho-de-deus.html',
         '/posts/post-inspecao-expressao-meudeusdoceu.html',
-        '/posts/post-inspecao-expressao-jesusamando.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-expressao-jesusamado.html',
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -154,7 +154,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    grok: { tone: "craft", gloss: "Heinlein to grok — compreender por dentro × tom limpo; elo oral com Deus; Faça o melhor!", href: "/posts/post-inspecao-palavra-grok.html", en: "grok", es: "grok", fr: "grok", it: "grok", de: "grok", el: "grok", la: "intellegere intime", yo: "ye jinle", sw: "elewa kwa undani", gez: "ammer", nl: "grok", pl: "grok", ru: "grok", uk: "grok", zh: "grok", ja: "grok", ko: "grok", ar: "grok", he: "grok", hi: "grok", tr: "grok", sv: "grok", da: "grok", no: "grok", fi: "grok", cs: "grok", ro: "grok", hu: "grok", ca: "grok", gl: "grok", eu: "grok", gn: "grok", qu: "grok", eo: "groki", vi: "grok", id: "grok", th: "grok", hr: "grok", sk: "grok", ga: "grok", cy: "grok", ha: "grok", am: "grok", fa: "grok", bn: "grok", zu: "grok" },';
+      '    grok: { tone: "craft", gloss: "Heinlein to grok — compreender por dentro × tom limpo; elo oral com Deus; Valeu !!!", href: "/posts/post-inspecao-palavra-grok.html", en: "grok", es: "grok", fr: "grok", it: "grok", de: "grok", el: "grok", la: "intellegere intime", yo: "ye jinle", sw: "elewa kwa undani", gez: "ammer", nl: "grok", pl: "grok", ru: "grok", uk: "grok", zh: "grok", ja: "grok", ko: "grok", ar: "grok", he: "grok", hi: "grok", tr: "grok", sv: "grok", da: "grok", no: "grok", fi: "grok", cs: "grok", ro: "grok", hu: "grok", ca: "grok", gl: "grok", eu: "grok", gn: "grok", qu: "grok", eo: "groki", vi: "grok", id: "grok", th: "grok", hr: "grok", sk: "grok", ga: "grok", cy: "grok", ha: "grok", am: "grok", fa: "grok", bn: "grok", zu: "grok" },';
     if (/grok:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    grok:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

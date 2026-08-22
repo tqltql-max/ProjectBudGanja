@@ -56,7 +56,7 @@ async function syncSql(post) {
 function insertGlossary(gloss) {
   const href = '/posts/post-inspecao-expressao-duasakdiqujdocedomadur.html';
   const main =
-    '    duasakdiqujdocedomadur: { tone: "hope", category: "Diligência", mundane: "Nome lab do ditado «Deus ajuda quem cedo madruga» (caos tipado).", gloss: "Ditado de aurora e gesto — diligência cedo; depois Faça o melhor!", href: "' +
+    '    duasakdiqujdocedomadur: { tone: "hope", category: "Diligência", mundane: "Nome lab do ditado «Deus ajuda quem cedo madruga» (caos tipado).", gloss: "Ditado de aurora e gesto — diligência cedo; depois Valeu !!!", href: "' +
     href +
     '", en: "God helps those who rise early", es: "Dios ayuda a quien madruga", fr: "aide à qui se lève tôt", it: "aiuta chi si alza presto", de: "hilft dem Frühaufsteher", el: "βοηθά όποιον ξυπνά νωρίς", la: "Deus adiuvat mane surgentem", yo: "Ọlọ́run ń ràn ẹni tí ó jí ní kùtùkùtù lọ́wọ́", sw: "Mungu husaidia anayeamka mapema", gez: "ʼƎgziʼabəḥer yärädadä", nl: "helpt wie vroeg opstaat", pl: "pomaga wczesnym ptakom", ru: "помогает рано встающим", uk: "помагає тим, хто рано встає", zh: "天助早起者", ja: "早起きは三文の徳", ko: "일찍 일어나는 자를 돕는다", ar: "يعين من يبكر", he: "עוזר למי שמשכים", hi: "सवेरे उठने वाले की मदद", tr: "erken kalkanı yardım eder", sv: "hjälper den som stiger tidigt", da: "hjælper den der står tidligt op", no: "hjelper den som står tidlig opp", fi: "auttaa varhain heräävää", cs: "pomáhá raním ptáčatům", ro: "ajută pe cine se scoală devreme", hu: "segít a korán kelőnek", ca: "ajuda qui matina", gl: "axuda a quen madruga", eu: "goiz jaikitzen denari laguntzen dio", gn: "Tupã oipytyvõ koépe oñemoñepyrũvape", qu: "Tayta yanapan paqarin hatariqta", eo: "helpas fruan leviĝanton", vi: "giúp kẻ dậy sớm", id: "menolong yang bangun pagi", th: "ช่วยผู้ที่ตื่นเช้า", hr: "pomaže ranoraniocima", sk: "pomáha skorým vtáčikom", ga: "cuidíonn leis an té a éiríonn go moch", cy: "helpu\'r rhai sy\'n codi\'n gynnar", ha: "Allah yana taimakon wanda ya tashi da wuri", am: "ለማለዳ ተነሺ ይረዳል", fa: "به سحرخیز کمک می‌کند", bn: "ভোরে ওঠাদের সাহায্য", zu: "usize abavuka ekuseni" },\n';
   const aliases = [
@@ -119,16 +119,16 @@ async function main() {
       tipo: 'expressao',
       priority: 2,
       status: 'feita',
-      why: 'Expressões: nome lab do ditado «Deus ajuda quem cedo madruga»; diligência com aurora; elos Faça o melhor!, caminho, jesusamando.',
-      whyEn: 'Sayings: lab name for “Deus ajuda quem cedo madruga”; dawn diligence; links Do your best!, caminho, jesusamando.',
-      whyEs: 'Dichos: nombre lab de «Deus ajuda quem cedo madruga»; diligencia del alba; vínculos ¡Haz lo mejor!, caminho, jesusamando.',
+      why: 'Expressões: nome lab do ditado «Deus ajuda quem cedo madruga»; diligência com aurora; elos Valeu !!!, caminho, jesusamado.',
+      whyEn: 'Sayings: lab name for “Deus ajuda quem cedo madruga”; dawn diligence; links Valeu !!!, caminho, jesusamado.',
+      whyEs: 'Dichos: nombre lab de «Deus ajuda quem cedo madruga»; diligencia del alba; vínculos ¡Valeu !!!, caminho, jesusamado.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'expressoes-ditados',
       sources: [
-        '/posts/post-inspecao-expressao-faca-o-melhor.html',
+        '/posts/post-inspecao-palavra-valeu.html',
         '/posts/post-inspecao-palavra-caminho.html',
-        '/posts/post-inspecao-expressao-jesusamando.html',
+        '/posts/post-inspecao-expressao-jesusamado.html',
         '/posts/post-inspecao-expressao-meudeusdoceu.html',
         '/posts/post-inspecao-palavra-lingua-portuguesa.html'
       ],
@@ -149,11 +149,11 @@ async function main() {
       id: 'duasakdiqujdocedomadur',
       word: 'duasakdiqujdocedomadur',
       simple:
-        'Expressão / ditado BR — nome lab de «Deus ajuda quem cedo madruga»; diligência com aurora; depois Faça o melhor!',
+        'Expressão / ditado BR — nome lab de «Deus ajuda quem cedo madruga»; diligência com aurora; depois Valeu !!!',
       simpleEn:
-        'Brazilian proverb — lab name for “Deus ajuda quem cedo madruga”; dawn diligence; then Do your best!',
+        'Brazilian proverb — lab name for “Deus ajuda quem cedo madruga”; dawn diligence; then Valeu !!!',
       simpleEs:
-        'Dicho BR — nombre lab de «Deus ajuda quem cedo madruga»; diligencia del alba; luego ¡Haz lo mejor!',
+        'Dicho BR — nombre lab de «Deus ajuda quem cedo madruga»; diligencia del alba; luego ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -166,7 +166,7 @@ async function main() {
           x.id === 'ausdhuashduas' ||
           x.id === 'deu-certo-galera' ||
           x.id === 'meudeusdoceu' ||
-          x.id === 'jesusamando'
+          x.id === 'jesusamado'
       );
       if (after >= 0) items.splice(after + 1, 0, entry);
       else items.push(entry);

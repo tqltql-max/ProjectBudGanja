@@ -85,10 +85,10 @@ async function main() {
       doneHref: href,
       seriesHint: 'expressoes-ditados',
       sources: [
-        '/posts/post-inspecao-expressao-jesusamando.html',
+        '/posts/post-inspecao-expressao-jesusamado.html',
         '/posts/post-inspecao-expressao-meudeusdoceu.html',
         '/posts/post-inspecao-palavra-lingua-portuguesa.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html',
+        '/posts/post-inspecao-palavra-valeu.html',
         '/posts/post-inspecao-padre-ticao.html'
       ],
       notes: 'Cap. 6 Expressões — mapa de usos; ficha ≠ catecismo.'
@@ -108,11 +108,11 @@ async function main() {
       id: 'filho-de-deus',
       word: 'filho de deus',
       simple:
-        'Expressão — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; respeito à fé, sem proselitismo; depois Faça o melhor!',
+        'Expressão — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; respeito à fé, sem proselitismo; depois Valeu !!!',
       simpleEn:
-        'Saying — theological title, BR oral intensity and dignity/care metaphor; respect for faith, no proselytizing; then Do your best!',
+        'Saying — theological title, BR oral intensity and dignity/care metaphor; respect for faith, no proselytizing; then Valeu !!!',
       simpleEs:
-        'Expresión — título teológico, intensidad oral BR y metáfora de dignidad/cuidado; respeto a la fe, sin proselitismo; luego ¡Haz lo mejor!',
+        'Expresión — título teológico, intensidad oral BR y metáfora de dignidad/cuidado; respeto a la fe, sin proselitismo; luego ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -121,7 +121,7 @@ async function main() {
     if (gi >= 0) items[gi] = Object.assign({}, items[gi], entry);
     else {
       const after = items.findIndex(
-        (x) => x.id === 'meudeusdoceu' || x.id === 'jesusamando'
+        (x) => x.id === 'meudeusdoceu' || x.id === 'jesusamado'
       );
       if (after >= 0) items.splice(after + 1, 0, entry);
       else items.push(entry);
@@ -138,7 +138,7 @@ async function main() {
     if (!gloss.includes("'filho de deus':") && !gloss.includes('filhoDeDeus:')) {
       const re = /(meudeusdoceu: \{[\s\S]*?zu: "Nkulunkulu wami" },\r?\n)/;
       const entry =
-        '    "filho de deus": { tone: "warm", category: "Dignidade", mundane: "Título teológico / exclamação / metáfora de dignidade e cuidado.", gloss: "Mapa de usos — título × oralidade BR × cuidado; ficha ≠ catecismo; depois Faça o melhor!", href: "/posts/post-inspecao-expressao-filho-de-deus.html", en: "son of God", es: "hijo de Dios", fr: "fils de Dieu", it: "figlio di Dio", de: "Sohn Gottes", el: "υιός του Θεού", la: "Filius Dei", yo: "ọmọ Ọlọ́run", sw: "Mwana wa Mungu", gez: "Waldä ʼƎgziʼabəḥer", nl: "zoon van God", pl: "Syn Boży", ru: "Сын Божий", uk: "Син Божий", zh: "神的儿子", ja: "神の子", ko: "하느님의 아들", ar: "ابن الله", he: "בן האלוהים", hi: "ईश्वर का पुत्र", tr: "Tanrı\'nın oğlu", sv: "Guds son", da: "Guds søn", no: "Guds sønn", fi: "Jumalan poika", cs: "Boží syn", ro: "Fiul lui Dumnezeu", hu: "Isten fia", ca: "fill de Déu", gl: "fillo de Deus", eu: "Jainkoaren seme", gn: "Tupã ra\'y", qu: "Diyuspa churin", eo: "Filo de Dio", vi: "con Thiên Chúa", id: "Putra Allah", th: "บุตรของพระเจ้า", hr: "Sin Božji", sk: "Boží syn", ga: "Mac Dé", cy: "Mab Duw", ha: "Ɗan Allah", am: "የእግዚአብሔር ልጅ", fa: "پسر خدا", bn: "ঈश्वरের পুত্র", zu: "iNdodana kaNkulunkulu" },\n';
+        '    "filho de deus": { tone: "warm", category: "Dignidade", mundane: "Título teológico / exclamação / metáfora de dignidade e cuidado.", gloss: "Mapa de usos — título × oralidade BR × cuidado; ficha ≠ catecismo; depois Valeu !!!", href: "/posts/post-inspecao-expressao-filho-de-deus.html", en: "son of God", es: "hijo de Dios", fr: "fils de Dieu", it: "figlio di Dio", de: "Sohn Gottes", el: "υιός του Θεού", la: "Filius Dei", yo: "ọmọ Ọlọ́run", sw: "Mwana wa Mungu", gez: "Waldä ʼƎgziʼabəḥer", nl: "zoon van God", pl: "Syn Boży", ru: "Сын Божий", uk: "Син Божий", zh: "神的儿子", ja: "神の子", ko: "하느님의 아들", ar: "ابن الله", he: "בן האלוהים", hi: "ईश्वर का पुत्र", tr: "Tanrı\'nın oğlu", sv: "Guds son", da: "Guds søn", no: "Guds sønn", fi: "Jumalan poika", cs: "Boží syn", ro: "Fiul lui Dumnezeu", hu: "Isten fia", ca: "fill de Déu", gl: "fillo de Deus", eu: "Jainkoaren seme", gn: "Tupã ra\'y", qu: "Diyuspa churin", eo: "Filo de Dio", vi: "con Thiên Chúa", id: "Putra Allah", th: "บุตรของพระเจ้า", hr: "Sin Božji", sk: "Boží syn", ga: "Mac Dé", cy: "Mab Duw", ha: "Ɗan Allah", am: "የእግዚአብሔር ልጅ", fa: "پسر خدا", bn: "ঈश्वरের পুত্র", zu: "iNdodana kaNkulunkulu" },\n';
       if (re.test(gloss)) {
         gloss = gloss.replace(re, '$1' + entry);
         fs.writeFileSync(glossPath, gloss);

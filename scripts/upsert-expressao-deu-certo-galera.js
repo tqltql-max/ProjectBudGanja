@@ -85,13 +85,13 @@ async function main() {
       doneHref: href,
       seriesHint: 'expressoes-ditados',
       sources: [
-        '/posts/post-inspecao-expressao-jesusamando.html',
+        '/posts/post-inspecao-expressao-jesusamado.html',
         '/posts/post-inspecao-expressao-meudeusdoceu.html',
         '/posts/post-inspecao-palavra-aff.html',
         '/posts/post-inspecao-palavra-buguei.html',
         '/posts/post-inspecao-palavra-genial.html',
         '/posts/post-inspecao-palavra-lingua-portuguesa.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. 5 Expressões — termómetro de acerto partilhado.'
     };
@@ -110,11 +110,11 @@ async function main() {
       id: 'deu-certo-galera',
       word: 'deu certo, galera',
       simple:
-        'Expressão oral BR — deucer galerra; celebração colectiva de acerto; contraste com aff e buguei; depois Faça o melhor!',
+        'Expressão oral BR — deucer galerra; celebração colectiva de acerto; contraste com aff e buguei; depois Valeu !!!',
       simpleEn:
-        'Brazilian oral saying — deucer galerra; collective celebration of success; contrast with aff and buguei; then Do your best!',
+        'Brazilian oral saying — deucer galerra; collective celebration of success; contrast with aff and buguei; then Valeu !!!',
       simpleEs:
-        'Expresión oral BR — deucer galerra; celebración colectiva de acierto; contraste con aff y buguei; luego ¡Haz lo mejor!',
+        'Expresión oral BR — deucer galerra; celebración colectiva de acierto; contraste con aff y buguei; luego ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -123,7 +123,7 @@ async function main() {
     if (gi >= 0) items[gi] = Object.assign({}, items[gi], entry);
     else {
       const after = items.findIndex(
-        (x) => x.id === 'meudeusdoceu' || x.id === 'jesusamando' || x.id === 'genial'
+        (x) => x.id === 'meudeusdoceu' || x.id === 'jesusamado' || x.id === 'genial'
       );
       if (after >= 0) items.splice(after + 1, 0, entry);
       else items.push(entry);
@@ -140,7 +140,7 @@ async function main() {
     if (!gloss.includes('deuCertoGalera: {') && !gloss.includes("'deu certo, galera': {")) {
       const re = /(meudeusdoceu: \{[\s\S]*?zu: "Nkulunkulu wami" },\r?\n)/;
       const entry =
-        '    "deu certo, galera": { tone: "joy", category: "Celebração", mundane: "Exclamação BR — deucer galerra; acerto partilhado com o grupo.", gloss: "Termómetro de celebração colectiva — contraste com aff e buguei; depois Faça o melhor!", href: "/posts/post-inspecao-expressao-deu-certo-galera.html", en: "it worked, folks", es: "salió bien, gente", fr: "ça a marché, les gars", it: "è andata, gente", de: "hat geklappt, Leute", el: "πέτυχε, παιδιά", la: "successit, sodales", yo: "ó ṣiṣẹ́, ẹgbẹ́", sw: "imefanikiwa, jamii", gez: "täśänä", nl: "het lukte, lui", pl: "udało się, ekipo", ru: "получилось, народ", uk: "вийшло, люде", zh: "成了，伙计们", ja: "うまくいったよ", ko: "됐다, 얘들아", ar: "نجحت يا جماعة", he: "זה עבד, חברה", hi: "हो गया, लोगो", tr: "oldu, millet", sv: "det gick, gänget", da: "det lykkedes, folkens", no: "det gikk, gjeng", fi: "onnistui, porukka", cs: "vyšlo to, lidi", ro: "a mers, băieți", hu: "sikerült, banda", ca: "ha sortit bé, gent", gl: "deu certo, xente", eu: "atera da, jendea", gn: "ojapo porã, irũnguéra", qu: "allinmi, runakuna", eo: "sukcesis, uloj", vi: "xong rồi, mọi người", id: "berhasil, kawan", th: "ได้แล้วเพื่อน", hr: "uspjelo je, ekipo", sk: "vyšlo to, ľudia", ga: "d\'éirigh leis, a mhuintir", cy: "mi weithiodd, bobl", ha: "ya yi, jama\'a", am: "ሆነ፣ ሰዎች", fa: "شد، رفقا", bn: "হয়ে গেল, সবাই", zu: "kusebenze, bantu" },\n';
+        '    "deu certo, galera": { tone: "joy", category: "Celebração", mundane: "Exclamação BR — deucer galerra; acerto partilhado com o grupo.", gloss: "Termómetro de celebração colectiva — contraste com aff e buguei; depois Valeu !!!", href: "/posts/post-inspecao-expressao-deu-certo-galera.html", en: "it worked, folks", es: "salió bien, gente", fr: "ça a marché, les gars", it: "è andata, gente", de: "hat geklappt, Leute", el: "πέτυχε, παιδιά", la: "successit, sodales", yo: "ó ṣiṣẹ́, ẹgbẹ́", sw: "imefanikiwa, jamii", gez: "täśänä", nl: "het lukte, lui", pl: "udało się, ekipo", ru: "получилось, народ", uk: "вийшло, люде", zh: "成了，伙计们", ja: "うまくいったよ", ko: "됐다, 얘들아", ar: "نجحت يا جماعة", he: "זה עבד, חברה", hi: "हो गया, लोगो", tr: "oldu, millet", sv: "det gick, gänget", da: "det lykkedes, folkens", no: "det gikk, gjeng", fi: "onnistui, porukka", cs: "vyšlo to, lidi", ro: "a mers, băieți", hu: "sikerült, banda", ca: "ha sortit bé, gent", gl: "deu certo, xente", eu: "atera da, jendea", gn: "ojapo porã, irũnguéra", qu: "allinmi, runakuna", eo: "sukcesis, uloj", vi: "xong rồi, mọi người", id: "berhasil, kawan", th: "ได้แล้วเพื่อน", hr: "uspjelo je, ekipo", sk: "vyšlo to, ľudia", ga: "d\'éirigh leis, a mhuintir", cy: "mi weithiodd, bobl", ha: "ya yi, jama\'a", am: "ሆነ፣ ሰዎች", fa: "شد، رفقا", bn: "হয়ে গেল, সবাই", zu: "kusebenze, bantu" },\n';
       if (re.test(gloss)) {
         gloss = gloss.replace(re, '$1' + entry);
         fs.writeFileSync(glossPath, gloss);

@@ -1,13 +1,13 @@
 'use strict';
 
 /**
- * Injeta expressão «jesusamando» e remove a palavra historiografia (pivot).
- * Uso: node scripts/upsert-expressao-jesusamando.js
+ * Injeta expressão «jesusamado» e remove a palavra historiografia (pivot).
+ * Uso: node scripts/upsert-expressao-jesusamado.js
  */
 
 const fs = require('fs');
 const path = require('path');
-const { buildJesusamandoPost } = require('../lib/jesusamando-inspecao-post.js');
+const { buildJesusamandoPost } = require('../lib/jesusamado-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_FILE = path.join(ROOT, 'posts.json');
@@ -54,6 +54,7 @@ async function syncSql(post) {
   const store = await createSqlStore(ROOT);
   let posts = await store.getPosts();
   posts = removeSlug(posts, 'inspecao-palavra-historiografia');
+  posts = removeSlug(posts, 'inspecao-expressao-jesusamando');
   upsertPost(posts, post);
   await store.setPosts(posts);
   console.log('SQL store actualizado:', post.slug);
@@ -63,11 +64,13 @@ async function main() {
   const post = buildJesusamandoPost();
   let posts = JSON.parse(fs.readFileSync(POSTS_FILE, 'utf8'));
   posts = removeSlug(posts, 'inspecao-palavra-historiografia');
+  posts = removeSlug(posts, 'inspecao-expressao-jesusamando');
   upsertPost(posts, post);
   fs.writeFileSync(POSTS_FILE, JSON.stringify(posts, null, 2) + '\n', 'utf8');
 
   const i18n = JSON.parse(fs.readFileSync(I18N_FILE, 'utf8'));
   delete i18n['inspecao-palavra-historiografia'];
+  delete i18n['inspecao-expressao-jesusamando'];
   writeI18n(i18n, post);
   fs.writeFileSync(I18N_FILE, JSON.stringify(i18n, null, 2) + '\n', 'utf8');
 
@@ -82,19 +85,19 @@ async function main() {
     const sug = JSON.parse(fs.readFileSync(SUG_FILE, 'utf8'));
     let items = Array.isArray(sug.items) ? sug.items : [];
     items = items.filter((x) => x.id !== 'palavra-historiografia');
-    const sugId = 'expressao-jesusamando';
+    const sugId = 'expressao-jesusamado';
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'jesusamando — assombro, afeto e oralidade BR',
-      titleEn: 'jesusamando — awe, affection and Brazilian orality',
-      titleEs: 'jesusamando — asombro, afecto y oralidad BR',
+      title: 'jesusamado — assombro, afeto e oralidade BR',
+      titleEn: 'jesusamado — awe, affection and Brazilian orality',
+      titleEs: 'jesusamado — asombro, afecto y oralidad BR',
       tipo: 'expressao',
       priority: 2,
       status: 'feita',
-      why: 'Expressões: sopro BR de assombro e afeto; contraste com aff e meudeusdoceu; nota de campo (cuidado/carona); Faça o melhor!',
-      whyEn: 'Sayings: Brazilian breath of awe and affection; contrast with aff and meudeusdoceu; field note (care/ride); Do your best!',
-      whyEs: 'Dichos: soplo BR de asombro y afecto; contraste con aff y meudeusdoceu; nota de campo (cuidado/aventón); ¡Haz lo mejor!',
+      why: 'Expressões: sopro BR de assombro e afeto; contraste com aff e meudeusdoceu; nota de campo (cuidado/carona); Valeu !!!',
+      whyEn: 'Sayings: Brazilian breath of awe and affection; contrast with aff and meudeusdoceu; field note (care/ride); Valeu !!!',
+      whyEs: 'Dichos: soplo BR de asombro y afecto; contraste con aff y meudeusdoceu; nota de campo (cuidado/aventón); ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'expressoes-ditados',
@@ -102,7 +105,7 @@ async function main() {
         '/posts/post-inspecao-palavra-lingua-portuguesa.html',
         '/posts/post-inspecao-palavra-aff.html',
         '/posts/post-inspecao-expressao-meudeusdoceu.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html',
+        '/posts/post-inspecao-palavra-valeu.html',
         '/biblioteca/inspecoes/#inspecoes-expressoes'
       ],
       notes: 'Cap. 3 Expressões — nota de campo 2026-08-03: calor em contexto de cuidado (vs meudeusdoceu = espanto).'
@@ -112,7 +115,7 @@ async function main() {
     sug.items = items;
     sug.updatedAt = new Date().toISOString();
     fs.writeFileSync(SUG_FILE, JSON.stringify(sug, null, 2) + '\n', 'utf8');
-    console.log('Sugestões actualizadas (expressao-jesusamando)');
+    console.log('Sugestões actualizadas (expressao-jesusamado)');
   }
 
   if (fs.existsSync(GUIA_FILE)) {
@@ -120,14 +123,14 @@ async function main() {
     let items = Array.isArray(guia.items) ? guia.items : [];
     items = items.filter((x) => x.id !== 'historiografia');
     const entry = {
-      id: 'jesusamando',
-      word: 'jesusamando',
+      id: 'jesusamado',
+      word: 'jesusamado',
       simple:
-        'Expressão oral BR — assombro e afeto num sopro; contraste com aff; depois, Faça o melhor!',
+        'Expressão oral BR — assombro e afeto num sopro; contraste com aff; depois, Valeu !!!',
       simpleEn:
-        'Brazilian oral saying — awe and affection in one breath; contrast with aff; then Do your best!',
+        'Brazilian oral saying — awe and affection in one breath; contrast with aff; then Valeu !!!',
       simpleEs:
-        'Expresión oral BR — asombro y afecto en un soplo; contraste con aff; luego ¡Haz lo mejor!',
+        'Expresión oral BR — asombro y afecto en un soplo; contraste con aff; luego ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -142,20 +145,20 @@ async function main() {
     guia.items = items;
     guia.updatedAt = new Date().toISOString();
     fs.writeFileSync(GUIA_FILE, JSON.stringify(guia, null, 2) + '\n', 'utf8');
-    console.log('Guia de palavras actualizado (jesusamando; sem historiografia)');
+    console.log('Guia de palavras actualizado (jesusamado; sem historiografia)');
   }
 
   const glossPath = path.join(ROOT, 'js', 'learn-glossary.js');
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     gloss = gloss.replace(/\r?\n\s*historiografia: \{[\s\S]*?zu: "[^"]+" },/, '');
-    if (!gloss.includes('jesusamando: {')) {
+    if (!gloss.includes('jesusamado: {')) {
       const re = /(aff: \{[\s\S]*?zu: "hawu" },\r?\n)/;
       const entry =
-        '    jesusamando: { tone: "warm", category: "Afeto", mundane: "Exclamação BR de assombro/afeto (Jesus amando, colado).", gloss: "Sopro de calor e espanto — contraste com aff; depois Faça o melhor!", href: "/posts/post-inspecao-expressao-jesusamando.html", en: "good heavens (affectionate)", es: "¡Dios mío! (cálido)", fr: "mon Dieu (affectueux)", it: "oddio (affettuoso)", de: "ach du liebe Güte", el: "Θεέ μου", la: "Iesu amans", yo: "Jesu ńfẹ́", sw: "Yesu anapenda", gez: "Iyesus yäwäddädä", nl: "lieve help", pl: "o rany", ru: "боже мой", uk: "боже мій", zh: "我的天", ja: "まあ", ko: "아이고", ar: "يا إلهي", he: "אלי", hi: "हे भगवान", tr: "aman Tanrım", sv: "du milde", da: "hold da op", no: "du milde", fi: "voi luoja", cs: "proboha", ro: "Doamne", hu: "Jézusom", ca: "Déu meu", gl: "meu Deus", eu: "Jainkoa", gn: "che Tupã", qu: "Tayta", eo: "dia mia", vi: "ối trời", id: "ya ampun", th: "พระเจ้าช่วย", hr: "Bože", sk: "bože môj", ga: "a Thiarna", cy: "duw annwyl", ha: "Allah", am: "እግዚአብሔር", fa: "خدایا", bn: "হে প্রভু", zu: "Nkosi yami" },\n';
+        '    jesusamado: { tone: "warm", category: "Afeto", mundane: "Exclamação BR de assombro/afeto (Jesus amando, colado).", gloss: "Sopro de calor e espanto — contraste com aff; depois Valeu !!!", href: "/posts/post-inspecao-expressao-jesusamado.html", en: "good heavens (affectionate)", es: "¡Dios mío! (cálido)", fr: "mon Dieu (affectueux)", it: "oddio (affettuoso)", de: "ach du liebe Güte", el: "Θεέ μου", la: "Iesu amans", yo: "Jesu ńfẹ́", sw: "Yesu anapenda", gez: "Iyesus yäwäddädä", nl: "lieve help", pl: "o rany", ru: "боже мой", uk: "боже мій", zh: "我的天", ja: "まあ", ko: "아이고", ar: "يا إلهي", he: "אלי", hi: "हे भगवान", tr: "aman Tanrım", sv: "du milde", da: "hold da op", no: "du milde", fi: "voi luoja", cs: "proboha", ro: "Doamne", hu: "Jézusom", ca: "Déu meu", gl: "meu Deus", eu: "Jainkoa", gn: "che Tupã", qu: "Tayta", eo: "dia mia", vi: "ối trời", id: "ya ampun", th: "พระเจ้าช่วย", hr: "Bože", sk: "bože môj", ga: "a Thiarna", cy: "duw annwyl", ha: "Allah", am: "እግዚአብሔር", fa: "خدایا", bn: "হে প্রভু", zu: "Nkosi yami" },\n';
       if (re.test(gloss)) {
         gloss = gloss.replace(re, '$1' + entry);
-        console.log('Glossário actualizado (jesusamando)');
+        console.log('Glossário actualizado (jesusamado)');
       } else {
         console.warn('Aviso: glossário — inserção não encontrada');
       }

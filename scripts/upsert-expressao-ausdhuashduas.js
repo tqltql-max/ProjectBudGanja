@@ -56,7 +56,7 @@ async function syncSql(post) {
 function insertGlossary(gloss) {
   const href = '/posts/post-inspecao-expressao-ausdhuashduas.html';
   const main =
-    '    ausdhuashduas: { tone: "joy", category: "Riso", mundane: "Onomatopeia BR de riso tipado (lab); substitui kkkk… e «risas online».", gloss: "Nome lab do riso online — caos de teclado; contraste com aff; depois Faça o melhor!", href: "' +
+    '    ausdhuashduas: { tone: "joy", category: "Riso", mundane: "Onomatopeia BR de riso tipado (lab); substitui kkkk… e «risas online».", gloss: "Nome lab do riso online — caos de teclado; contraste com aff; depois Valeu !!!", href: "' +
     href +
     '", en: "typed lol / hahaha (BR chaos)", es: "jajaja tipado (caos BR)", fr: "mdr / haha (chaos BR)", it: "ahahah tipizzato", de: "getipptes Lachen", el: "χαχαχα", la: "risus scriptus", yo: "ẹ̀rín kọ̀mpútà", sw: "kicheko cha chati", gez: "śəḥəq", nl: "getypt gelach", pl: "pisany śmiech", ru: "смех в чате", uk: "сміх у чаті", zh: "键盘笑声", ja: "打ち笑い", ko: "타자 웃음", ar: "ضحكة مكتوبة", he: "צחוק מוקלד", hi: "टाइप हँसी", tr: "yazılı kahkaha", sv: "skrivet skratt", da: "skrevet latter", no: "skrevet latter", fi: "kirjoitettu nauru", cs: "psaný smích", ro: "râs tastat", hu: "gépelő nevetés", ca: "riure escrit", gl: "risa tipada", eu: "idatzizko barre", gn: "puka haihái", qu: "asitay qillqa", eo: "tajpita rido", vi: "cười gõ phím", id: "tawa ketik", th: "หัวเราะพิมพ์", hr: "tipkani smijeh", sk: "písaný smiech", ga: "gáire clóscríofa", cy: "chwerthin teipio", ha: "dariya rubutu", am: "የታይፕ ሳቅ", fa: "خنده تایپی", bn: "টাইপ হাসি", zu: "uhleko olubhaliwe" },\n';
   const aliases = [
@@ -79,7 +79,7 @@ function insertGlossary(gloss) {
     const anchors = [
       /("deu certo, galera": \{[\s\S]*?zu: "[^"]+" },\r?\n)/,
       /(meudeusdoceu: \{[\s\S]*?zu: "Nkulunkulu wami" },\r?\n)/,
-      /(jesusamando: \{[\s\S]*?zu: "Nkosi yami" },\r?\n)/
+      /(jesusamado: \{[\s\S]*?zu: "Nkosi yami" },\r?\n)/
     ];
     let inserted = false;
     for (const re of anchors) {
@@ -122,18 +122,18 @@ async function main() {
       tipo: 'expressao',
       priority: 2,
       status: 'feita',
-      why: 'Expressões: nome lab do riso tipado; substitui kkkk… e «risas online»; elos jesusamando, meudeusdoceu, aff.',
-      whyEn: 'Sayings: lab name for typed laughter; replaces kkkk… and “online laughs”; links jesusamando, meudeusdoceu, aff.',
-      whyEs: 'Dichos: nombre lab de la risa tipada; sustituye kkkk… y «risas online»; vínculos jesusamando, meudeusdoceu, aff.',
+      why: 'Expressões: nome lab do riso tipado; substitui kkkk… e «risas online»; elos jesusamado, meudeusdoceu, aff.',
+      whyEn: 'Sayings: lab name for typed laughter; replaces kkkk… and “online laughs”; links jesusamado, meudeusdoceu, aff.',
+      whyEs: 'Dichos: nombre lab de la risa tipada; sustituye kkkk… y «risas online»; vínculos jesusamado, meudeusdoceu, aff.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'expressoes-ditados',
       sources: [
-        '/posts/post-inspecao-expressao-jesusamando.html',
+        '/posts/post-inspecao-expressao-jesusamado.html',
         '/posts/post-inspecao-expressao-meudeusdoceu.html',
         '/posts/post-inspecao-palavra-aff.html',
         '/posts/post-inspecao-palavra-lingua-portuguesa.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. 6 Expressões — riso tipado / kkkk → ausdhuashduas.'
     };
@@ -152,11 +152,11 @@ async function main() {
       id: 'ausdhuashduas',
       word: 'ausdhuashduas',
       simple:
-        'Expressão oral BR — nome lab do riso tipado (substitui kkkk… e «risas online»); contraste com aff; depois Faça o melhor!',
+        'Expressão oral BR — nome lab do riso tipado (substitui kkkk… e «risas online»); contraste com aff; depois Valeu !!!',
       simpleEn:
-        'Brazilian oral saying — lab name for typed laughter (replaces kkkk… / online laughs); contrast with aff; then Do your best!',
+        'Brazilian oral saying — lab name for typed laughter (replaces kkkk… / online laughs); contrast with aff; then Valeu !!!',
       simpleEs:
-        'Expresión oral BR — nombre lab de la risa tipada (sustituye kkkk… y «risas online»); contraste con aff; luego ¡Haz lo mejor!',
+        'Expresión oral BR — nombre lab de la risa tipada (sustituye kkkk… y «risas online»); contraste con aff; luego ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -168,7 +168,7 @@ async function main() {
         (x) =>
           x.id === 'deu-certo-galera' ||
           x.id === 'meudeusdoceu' ||
-          x.id === 'jesusamando' ||
+          x.id === 'jesusamado' ||
           x.id === 'aff'
       );
       if (after >= 0) items.splice(after + 1, 0, entry);

@@ -56,7 +56,7 @@ async function syncSql(post) {
 function insertGlossary(gloss) {
   const href = '/posts/post-inspecao-expressao-eojsofaorforap.html';
   const main =
-    '    eojsofaorforap: { tone: "truth", category: "Verdade", mundane: "Nome lab de «eu só falo a verdade» (caos tipado); substitui o rótulo plano.", gloss: "Compromisso de fala verificável — elo verdade e gesto; depois Faça o melhor!", href: "' +
+    '    eojsofaorforap: { tone: "truth", category: "Verdade", mundane: "Nome lab de «eu só falo a verdade» (caos tipado); substitui o rótulo plano.", gloss: "Compromisso de fala verificável — elo verdade e gesto; depois Valeu !!!", href: "' +
     href +
     '", en: "I only speak the truth", es: "solo digo la verdad", fr: "je ne dis que la vérité", it: "dico solo la verità", de: "ich sage nur die Wahrheit", el: "λέω μόνο την αλήθεια", la: "veritatem solum dico", yo: "òtítọ́ nìkan ni mo ń sọ", sw: "nasema ukweli tu", gez: "ḥaqq bəča ʼəbl", nl: "ik spreek alleen de waarheid", pl: "mówię tylko prawdę", ru: "говорю только правду", uk: "кажу лише правду", zh: "我只说实话", ja: "真実だけを言う", ko: "진실만 말한다", ar: "أقول الحقيقة فقط", he: "אני אומר רק אמת", hi: "मैं केवल सच बोलता हूँ", tr: "sadece gerçeği söylerim", sv: "jag talar bara sanning", da: "jeg siger kun sandheden", no: "jeg sier bare sannheten", fi: "puhun vain totta", cs: "říkám jen pravdu", ro: "spun doar adevărul", hu: "csak az igazat mondom", ca: "només dic la veritat", gl: "só falo a verdade", eu: "egia bakarrik esaten dut", gn: "añe\'ẽnte añete", qu: "chiqalla rimani", eo: "mi diras nur la veron", vi: "tôi chỉ nói sự thật", id: "saya hanya bilang kebenaran", th: "ฉันพูดแต่ความจริง", hr: "govorim samo istinu", sk: "hovorím len pravdu", ga: "ní deirim ach an fhírinne", cy: "dim ond y gwir a ddwedaf", ha: "gaskiya kawai nake faɗa", am: "እውነት ብቻ ነው የምናገረው", fa: "فقط حقیقت می‌گویم", bn: "আমি শুধু সত্য বলি", zu: "ngikhuluma iqiniso kuphela" },\n';
   const aliases = [
@@ -74,8 +74,8 @@ function insertGlossary(gloss) {
   let next = gloss;
   if (!next.includes('eojsofaorforap: {')) {
     const anchors = [
-      /(muitoobrigado: \{[\s\S]*?zu: "[^"]+" },\r?\n)/,
-      /(jesusamando: \{[\s\S]*?zu: "Nkosi yami" },\r?\n)/,
+      /(Gratidão: \{[\s\S]*?zu: "[^"]+" },\r?\n)/,
+      /(jesusamado: \{[\s\S]*?zu: "Nkosi yami" },\r?\n)/,
       /(ausdhuashduas: \{[\s\S]*?zu: "[^"]+" },\r?\n)/
     ];
     let inserted = false;
@@ -129,7 +129,7 @@ async function main() {
         '/posts/post-inspecao-palavra-verdade.html',
         '/posts/post-inspecao-palavra-gesto.html',
         '/posts/post-inspecao-expressao-ausdhuashduas.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html',
+        '/posts/post-inspecao-palavra-valeu.html',
         '/posts/post-inspecao-palavra-lingua-portuguesa.html'
       ],
       notes: 'Cap. 10 Expressões — rótulo plano «eu só falo a verdade» → eojsofaorforap.'
@@ -149,11 +149,11 @@ async function main() {
       id: 'eojsofaorforap',
       word: 'eojsofaorforap',
       simple:
-        'Expressão oral BR — nome lab de «eu só falo a verdade»; substitui o rótulo plano; elo verdade; depois Faça o melhor!',
+        'Expressão oral BR — nome lab de «eu só falo a verdade»; substitui o rótulo plano; elo verdade; depois Valeu !!!',
       simpleEn:
-        'Brazilian oral saying — lab name for “I only speak the truth”; replaces plain label; truth; then Do your best!',
+        'Brazilian oral saying — lab name for “I only speak the truth”; replaces plain label; truth; then Valeu !!!',
       simpleEs:
-        'Expresión oral BR — nombre lab de «eu só falo a verdade»; sustituye etiqueta plana; verdade; luego ¡Haz lo mejor!',
+        'Expresión oral BR — nombre lab de «eu só falo a verdade»; sustituye etiqueta plana; verdade; luego ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -162,7 +162,7 @@ async function main() {
     if (gi >= 0) items[gi] = Object.assign({}, items[gi], entry);
     else {
       const after = items.findIndex(
-        (x) => x.id === 'verdade' || x.id === 'muitoobrigado' || x.id === 'ausdhuashduas'
+        (x) => x.id === 'verdade' || x.id === 'Gratidão' || x.id === 'ausdhuashduas'
       );
       if (after >= 0) items.splice(after + 1, 0, entry);
       else items.push(entry);

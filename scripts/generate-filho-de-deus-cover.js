@@ -28,7 +28,7 @@ async function main() {
   <text x="600" y="270" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="46" font-weight="700" fill="#f5f0e4">filho de deus</text>
   <text x="600" y="345" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="rgba(220,210,190,0.95)">título · oralidade · cuidado</text>
   <text x="600" y="500" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="24" fill="#b8a878">respeito à fé — sem catecismo</text>
-  <text x="600" y="560" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#d2be8c">jesusamando · meudeusdoceu · faça o melhor</text>
+  <text x="600" y="560" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#d2be8c">jesusamado · meudeusdoceu · faça o melhor</text>
 </svg>`);
 
   await sharp(bg).jpeg({ quality: 84, mozjpeg: true }).toFile(OUT);

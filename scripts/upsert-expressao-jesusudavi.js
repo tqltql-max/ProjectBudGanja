@@ -78,17 +78,17 @@ async function main() {
       tipo: 'expressao',
       priority: 2,
       status: 'feita',
-      why: 'Expressões: jesusudavi substitui meudeusdoceu; meu Deus do céu; assombro; escala aff × jesusamando.',
-      whyEn: 'Sayings: jesusudavi replaces meudeusdoceu; meu Deus do céu; awe; scale aff × jesusamando.',
-      whyEs: 'Dichos: jesusudavi sustituye meudeusdoceu; meu Deus do céu; asombro; escala aff × jesusamando.',
+      why: 'Expressões: jesusudavi substitui meudeusdoceu; meu Deus do céu; assombro; escala aff × jesusamado.',
+      whyEn: 'Sayings: jesusudavi replaces meudeusdoceu; meu Deus do céu; awe; scale aff × jesusamado.',
+      whyEs: 'Dichos: jesusudavi sustituye meudeusdoceu; meu Deus do céu; asombro; escala aff × jesusamado.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'expressoes-ditados',
       sources: [
-        '/posts/post-inspecao-expressao-jesusamando.html',
+        '/posts/post-inspecao-expressao-jesusamado.html',
         '/posts/post-inspecao-expressao-meudeusdoceu.html',
         '/posts/post-inspecao-palavra-aff.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. 4 Expressões — troca lab meudeusdoceu → jesusudavi.'
     };
@@ -109,11 +109,11 @@ async function main() {
       id: 'jesusudavi',
       word: 'jesusudavi',
       simple:
-        'Expressão oral BR — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala entre aff e jesusamando.',
+        'Expressão oral BR — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala entre aff e jesusamado.',
       simpleEn:
-        'Brazilian oral saying — replaces meudeusdoceu; meu Deus do céu; high awe; between aff and jesusamando.',
+        'Brazilian oral saying — replaces meudeusdoceu; meu Deus do céu; high awe; between aff and jesusamado.',
       simpleEs:
-        'Expresión oral BR — sustituye meudeusdoceu; meu Deus do céu; asombro alto; entre aff y jesusamando.',
+        'Expresión oral BR — sustituye meudeusdoceu; meu Deus do céu; asombro alto; entre aff y jesusamado.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -122,7 +122,7 @@ async function main() {
     if (gi >= 0) {
       items[gi] = Object.assign({}, items[gi], entry);
     } else {
-      const after = items.findIndex((x) => x.id === 'jesusamando' || x.id === 'aff');
+      const after = items.findIndex((x) => x.id === 'jesusamado' || x.id === 'aff');
       if (after >= 0) items.splice(after + 1, 0, entry);
       else items.push(entry);
     }
@@ -149,7 +149,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryJesusudavi =
-      '    jesusudavi: { tone: "awe", category: "Assombro", mundane: "Lab que substitui meudeusdoceu — meu Deus do céu; espanto alto.", gloss: "Termómetro de assombro — entre aff e jesusamando; substitui meudeusdoceu; depois Faça o melhor!", href: "/posts/post-inspecao-expressao-jesusudavi.html", en: "oh my God / good heavens", es: "Dios mío del cielo", fr: "mon Dieu", it: "mio Dio", de: "mein Gott", el: "Thee mou", la: "Deus meus", yo: "Olorun mi", sw: "Mungu wangu", gez: "Egziabher", nl: "mijn God", pl: "moj Boze", ru: "Bozhe moi", uk: "Bozhe mii", zh: "oh my", ja: "nantekoto", ko: "mapsosa", ar: "ya ilahi", he: "elohim", hi: "he bhagwan", tr: "aman Allahim", sv: "herregud", da: "hold da", no: "herregud", fi: "voi luoja", cs: "paneboze", ro: "Doamne", hu: "Joistenem", ca: "Deu meu", gl: "meu Deus", eu: "Jainkoa", gn: "che Tupa", qu: "Taytallay", eo: "ho Dio", vi: "troi oi", id: "ya Tuhan", th: "oh my", hr: "Boze moj", sk: "Boze moj", ga: "a Dhia", cy: "duw annwyl", ha: "Allahna", am: "amlake", fa: "khodaya", bn: "hay re", zu: "Nkulunkulu wami" },';
+      '    jesusudavi: { tone: "awe", category: "Assombro", mundane: "Lab que substitui meudeusdoceu — meu Deus do céu; espanto alto.", gloss: "Termómetro de assombro — entre aff e jesusamado; substitui meudeusdoceu; depois Valeu !!!", href: "/posts/post-inspecao-expressao-jesusudavi.html", en: "oh my God / good heavens", es: "Dios mío del cielo", fr: "mon Dieu", it: "mio Dio", de: "mein Gott", el: "Thee mou", la: "Deus meus", yo: "Olorun mi", sw: "Mungu wangu", gez: "Egziabher", nl: "mijn God", pl: "moj Boze", ru: "Bozhe moi", uk: "Bozhe mii", zh: "oh my", ja: "nantekoto", ko: "mapsosa", ar: "ya ilahi", he: "elohim", hi: "he bhagwan", tr: "aman Allahim", sv: "herregud", da: "hold da", no: "herregud", fi: "voi luoja", cs: "paneboze", ro: "Doamne", hu: "Joistenem", ca: "Deu meu", gl: "meu Deus", eu: "Jainkoa", gn: "che Tupa", qu: "Taytallay", eo: "ho Dio", vi: "troi oi", id: "ya Tuhan", th: "oh my", hr: "Boze moj", sk: "Boze moj", ga: "a Dhia", cy: "duw annwyl", ha: "Allahna", am: "amlake", fa: "khodaya", bn: "hay re", zu: "Nkulunkulu wami" },';
     const entryOld =
       '    meudeusdoceu: { tone: "awe", category: "Assombro", mundane: "Nome lab antigo — ver jesusudavi.", gloss: "Substituída por jesusudavi — mesmo ofício (meu Deus do céu).", href: "/posts/post-inspecao-expressao-jesusudavi.html", en: "oh my God (old lab name)", es: "Dios mío (nombre lab antiguo)" },';
 
@@ -158,7 +158,7 @@ async function main() {
     } else if (/meudeusdoceu:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    meudeusdoceu:\s*\{[\s\S]*?\},/, entryJesusudavi + '\n' + entryOld);
     } else {
-      const re = /(jesusamando:\s*\{[\s\S]*?zu:\s*"[^"]*"\s*\},?\r?\n)/;
+      const re = /(jesusamado:\s*\{[\s\S]*?zu:\s*"[^"]*"\s*\},?\r?\n)/;
       if (re.test(gloss)) {
         gloss = gloss.replace(re, '$1' + entryJesusudavi + '\n' + entryOld + '\n');
       }

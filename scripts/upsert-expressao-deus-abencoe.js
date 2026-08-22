@@ -87,10 +87,10 @@ async function main() {
       doneHref: href,
       seriesHint: 'expressoes-ditados',
       sources: [
-        '/posts/post-inspecao-expressao-jesusamando.html',
+        '/posts/post-inspecao-expressao-jesusamado.html',
         '/posts/post-inspecao-expressao-filho-de-deus.html',
-        '/posts/post-inspecao-expressao-muito-obrigado.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-gratidao.html',
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. 11 Expressões — tipografia Deus Abenço → Deus abençoe; ficha ≠ catecismo.'
     };
@@ -109,11 +109,11 @@ async function main() {
       id: 'deus-abencoe',
       word: 'Deus abençoe',
       simple:
-        'Expressão — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; respeito à fé, sem proselitismo; depois Faça o melhor!',
+        'Expressão — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; respeito à fé, sem proselitismo; depois Valeu !!!',
       simpleEn:
-        'Saying — BR blessing and farewell; tipography Deus Abenço → Deus abençoe; respect for faith, no proselytizing; then Do your best!',
+        'Saying — BR blessing and farewell; tipography Deus Abenço → Deus abençoe; respect for faith, no proselytizing; then Valeu !!!',
       simpleEs:
-        'Expresión — bendición y despedida BR; tipografía Deus Abenço → Deus abençoe; respeto a la fe, sin proselitismo; luego ¡Haz lo mejor!',
+        'Expresión — bendición y despedida BR; tipografía Deus Abenço → Deus abençoe; respeto a la fe, sin proselitismo; luego ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -126,7 +126,7 @@ async function main() {
       const after = items.findIndex(
         (x) =>
           x.id === 'filho-de-deus' ||
-          x.id === 'jesusamando' ||
+          x.id === 'jesusamado' ||
           x.id === 'muito-obrigado'
       );
       if (after >= 0) items.splice(after + 1, 0, entry);
@@ -141,7 +141,7 @@ async function main() {
   const glossPath = path.join(ROOT, 'js', 'learn-glossary.js');
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
-    const entry = `    "deus abençoe": { tone: "warm", category: "Bênção", mundane: "Bênção / despedida BR — desejo de bem.", gloss: "Bênção viva — tipografia Deus Abenço → Deus abençoe; ficha ≠ catecismo; depois Faça o melhor!", href: "/posts/post-inspecao-expressao-deus-abencoe.html", en: "God bless / may God bless you", es: "Dios te bendiga", fr: "Que Dieu te bénisse", it: "Dio ti benedica", de: "Gott segne dich", el: "ο Θεός να σε ευλογεί", la: "Deus te benedicat", yo: "Ọlọ́run kí ó bùkún", sw: "Mungu akubariki", gez: "ʼƎgziʼabəḥer yəbärəkəka", nl: "God zegene je", pl: "Niech Bóg ci błogosławi", ru: "Бог благословит", uk: "Бог благословить", zh: "愿上帝保佑你", ja: "神のご加護を", ko: "신의 축복을", ar: "بارك الله فيك", he: "אלוהים יברך אותך", hi: "भगवान आपको आशीर्वाद दें", tr: "Tanrı seni kutsasın", sv: "Gud välsigne dig", da: "Gud velsigne dig", no: "Gud velsigne deg", fi: "Jumala siunatkoon sinua", cs: "Bůh tě požehnej", ro: "Dumnezeu să te binecuvânteze", hu: "Isten áldjon meg", ca: "Déu et beneeixi", gl: "Deus te bendiga", eu: "Jainkoak bedeinka zaitzala", gn: "Tupã toñemoĩnde", qu: "Diyus qanman bendiciyasunki", eo: "Dio benu vin", vi: "Chúa phù hộ", id: "Tuhan memberkati", th: "ขอพระเจ้าอวยพร", hr: "Bog te blagoslovio", sk: "Boh ťa žehnaj", ga: "Go mbeannaí Dia thú", cy: "Duw a'th fendithio", ha: "Allah ya albarkace ka", am: "እግዚአብሔር ይባርክህ", fa: "خدا برکت دهد", bn: "ঈশ্বর তোমাকে আশীর্বাদ করুন", zu: "UNkulunkulu akubusise" },`;
+    const entry = `    "deus abençoe": { tone: "warm", category: "Bênção", mundane: "Bênção / despedida BR — desejo de bem.", gloss: "Bênção viva — tipografia Deus Abenço → Deus abençoe; ficha ≠ catecismo; depois Valeu !!!", href: "/posts/post-inspecao-expressao-deus-abencoe.html", en: "God bless / may God bless you", es: "Dios te bendiga", fr: "Que Dieu te bénisse", it: "Dio ti benedica", de: "Gott segne dich", el: "ο Θεός να σε ευλογεί", la: "Deus te benedicat", yo: "Ọlọ́run kí ó bùkún", sw: "Mungu akubariki", gez: "ʼƎgziʼabəḥer yəbärəkəka", nl: "God zegene je", pl: "Niech Bóg ci błogosławi", ru: "Бог благословит", uk: "Бог благословить", zh: "愿上帝保佑你", ja: "神のご加護を", ko: "신의 축복을", ar: "بارك الله فيك", he: "אלוהים יברך אותך", hi: "भगवान आपको आशीर्वाद दें", tr: "Tanrı seni kutsasın", sv: "Gud välsigne dig", da: "Gud velsigne dig", no: "Gud velsigne deg", fi: "Jumala siunatkoon sinua", cs: "Bůh tě požehnej", ro: "Dumnezeu să te binecuvânteze", hu: "Isten áldjon meg", ca: "Déu et beneeixi", gl: "Deus te bendiga", eu: "Jainkoak bedeinka zaitzala", gn: "Tupã toñemoĩnde", qu: "Diyus qanman bendiciyasunki", eo: "Dio benu vin", vi: "Chúa phù hộ", id: "Tuhan memberkati", th: "ขอพระเจ้าอวยพร", hr: "Bog te blagoslovio", sk: "Boh ťa žehnaj", ga: "Go mbeannaí Dia thú", cy: "Duw a'th fendithio", ha: "Allah ya albarkace ka", am: "እግዚአብሔር ይባርክህ", fa: "خدا برکت دهد", bn: "ঈশ্বর তোমাকে আশীর্বাদ করুন", zu: "UNkulunkulu akubusise" },`;
     const alias = `    "deus abenço": { gloss: "Tipografia / oral truncado → ver «Deus abençoe» (canónico).", href: "/posts/post-inspecao-expressao-deus-abencoe.html", en: "see Deus abençoe", es: "ver Deus abençoe", fr: "voir Deus abençoe", it: "vedi Deus abençoe", de: "siehe Deus abençoe", el: "βλ. Deus abençoe", la: "vide Deus abençoe", yo: "Deus abençoe", sw: "Deus abençoe", gez: "Deus abençoe", nl: "zie Deus abençoe", pl: "zob. Deus abençoe", ru: "см. Deus abençoe", uk: "див. Deus abençoe", zh: "见 Deus abençoe", ja: "Deus abençoe を参照", ko: "Deus abençoe 참조", ar: "انظر Deus abençoe", he: "ראה Deus abençoe", hi: "Deus abençoe देखें", tr: "Deus abençoe bak", sv: "se Deus abençoe", da: "se Deus abençoe", no: "se Deus abençoe", fi: "ks. Deus abençoe", cs: "viz Deus abençoe", ro: "vezi Deus abençoe", hu: "lásd Deus abençoe", ca: "vegeu Deus abençoe", gl: "ver Deus abençoe", eu: "ikusi Deus abençoe", gn: "Deus abençoe", qu: "Deus abençoe", eo: "vidu Deus abençoe", vi: "xem Deus abençoe", id: "lihat Deus abençoe", th: "ดู Deus abençoe", hr: "vidi Deus abençoe", sk: "pozri Deus abençoe", ga: "féach Deus abençoe", cy: "gweler Deus abençoe", ha: "duba Deus abençoe", am: "Deus abençoe", fa: "Deus abençoe", bn: "Deus abençoe", zu: "Deus abençoe" },`;
 
     if (/"deus abençoe":\s*\{/.test(gloss)) {
@@ -153,10 +153,10 @@ async function main() {
         gloss = gloss.replace(re, '$1\n' + entry);
         console.log('Glossário: deus abençoe após filho de deus');
       } else {
-        const re2 = /(jesusamando:\s*\{[\s\S]*?\},)/;
+        const re2 = /(jesusamado:\s*\{[\s\S]*?\},)/;
         if (re2.test(gloss)) {
           gloss = gloss.replace(re2, '$1\n' + entry);
-          console.log('Glossário: deus abençoe após jesusamando');
+          console.log('Glossário: deus abençoe após jesusamado');
         } else {
           console.warn('Aviso: glossário — ponto de inserção não encontrado');
         }

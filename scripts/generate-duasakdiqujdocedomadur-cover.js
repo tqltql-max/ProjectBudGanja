@@ -32,7 +32,7 @@ async function main() {
   <text x="600" y="230" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="40" font-weight="700" fill="#fff6e8">duasakdiqujdocedomadur</text>
   <text x="600" y="300" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="rgba(240,220,190,0.95)">Deus ajuda quem cedo madruga</text>
   <text x="600" y="470" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="22" fill="#d0b080">gesto cedo — depois faça o melhor</text>
-  <text x="600" y="540" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#e8b860">caminho · gesto · jesusamando · meudeusdoceu</text>
+  <text x="600" y="540" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#e8b860">caminho · gesto · jesusamado · meudeusdoceu</text>
 </svg>`);
 
   await sharp(bg).jpeg({ quality: 84, mozjpeg: true }).toFile(OUT);

@@ -28,7 +28,7 @@ async function main() {
   <text x="600" y="90" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#e0c090" letter-spacing="4">EXPRESSÕES · ASSOMBRO · TROCA LAB</text>
   <text x="600" y="240" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="64" font-weight="700" fill="#fff6e0">jesusudavi</text>
   <text x="600" y="320" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="rgba(240,220,190,0.95)">substitui meudeusdoceu · meu Deus do céu</text>
-  <text x="600" y="500" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="24" fill="#d8b878">aff · jesusudavi · jesusamando</text>
+  <text x="600" y="500" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="24" fill="#d8b878">aff · jesusudavi · jesusamado</text>
   <text x="600" y="560" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#e0c090">faça o melhor depois do pico</text>
 </svg>`);
 

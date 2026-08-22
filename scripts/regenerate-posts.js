@@ -16,6 +16,11 @@ const POST_REDIRECTS = [
     from: 'posts/post-inspecao-palavra-xioomi.html',
     to: '/posts/post-inspecao-palavra-xiaomi.html',
     label: 'Xiaomi'
+  },
+  {
+    from: 'posts/post-inspecao-expressao-jesusamando.html',
+    to: '/posts/post-inspecao-expressao-jesusamado.html',
+    label: 'jesusamado'
   }
 ];
 for (const r of POST_REDIRECTS) keep.add(r.from);
