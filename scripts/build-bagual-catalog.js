@@ -18,6 +18,7 @@ async function main() {
     {
       slug: SLUG,
       includeShorts: false,
+      persist: false,
       extras: {
         kickUrl: 'https://kick.com/poderosobagual',
         kickHandle: 'poderosobagual',
