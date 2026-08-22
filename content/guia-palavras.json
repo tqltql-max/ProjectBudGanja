@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:43:18.011Z",
+  "updatedAt": "2026-08-22T06:48:40.850Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1668,6 +1668,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-no.html"
+    },
+    {
+      "id": "node",
+      "word": "node",
+      "simple": "Lat. nodus — ponto de junção EN→BR; ≠ nuds/nudes (lat. nudus); ES nudos = nós; elos nó/conexão/script; Valeu !!!",
+      "simpleEn": "Lat. nodus — EN junction point; ≠ nuds/nudes (Lat. nudus); ES nudos = knots; links nó/conexão/script; Valeu !!!",
+      "simpleEs": "Lat. nodus — punto de juntura EN→BR; ≠ nuds/nudes (lat. nudus); ES nudos = nudos/laços; vínculos nó/conexão/script; ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-node.html"
+    },
+    {
+      "id": "nuds",
+      "word": "nuds",
+      "simple": "Grafia de chat de nudes ← lat. nudus «nu»; a orelha cola em nodes; não é plural técnico de node; ver ficha node.",
+      "simpleEn": "Chat spelling of nudes ← Lat. nudus “bare”; the ear glues it to nodes; not the technical plural of node; see node.",
+      "simpleEs": "Grafía de chat de nudes ← lat. nudus «desnudo»; el oído pega a nodes; no es el plural técnico de node; ver node.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-node.html"
     },
     {
       "id": "no-na-vida",

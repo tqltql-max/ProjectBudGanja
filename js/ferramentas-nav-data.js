@@ -1406,6 +1406,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Stryphnodendron adstringens* — casca rica em taninos e proantocianidinas; adstringente do Cerrado."
             },
             {
+              "label": "Inspeção: A orelha cola o que a boca juntou",
+              "tileLabel": "Inspeção: A orelha cola o que a…",
+              "href": "/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou",
+              "description": "Expressões: a orelha cola o que a boca juntou — ofício do lab; dois eixos, duas frases; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Planta — Jaborandi — pilocarpina e glaucoma histórico",
               "tileLabel": "Inspeção: Planta — Jaborandi — …",
               "href": "/posts/post-inspecao-planta-jaborandi.html",
@@ -2788,6 +2796,22 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-bode",
               "description": "Palavras: bode — macho caprino (étimo incerto), bode expiatório e gíria BR; elo preguiça; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Escravidão — o nome do cativeiro",
+              "tileLabel": "Inspeção: Escravidão — o nome d…",
+              "href": "/posts/post-inspecao-palavra-escravidao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-escravidao",
+              "description": "Palavras: escravidão (sclavus + -idão) — cativeiro legalizado, cana, diáspora; reconhecimento em sala à parte; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Node · nuds — orelha cola, étimo corta",
+              "tileLabel": "Inspeção: Node · nuds — orelha …",
+              "href": "/posts/post-inspecao-palavra-node.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-node",
+              "description": "Palavras: «node» (lat. *nodus*) × «nuds/nudes» (lat. *nudus*) — uma letra; ES nudos ≠ EN nudes; elos nó/conexão/script; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

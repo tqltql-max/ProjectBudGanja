@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:43:14.058Z",
+  "updatedAt": "2026-08-22T06:48:40.843Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8118,6 +8118,32 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 24 Expressões — cola de frase; corte: duas frases."
+    },
+    {
+      "id": "palavra-node",
+      "title": "Node · nuds — orelha cola, étimo corta",
+      "titleEn": "Node · nuds — the ear glues, the etymon cuts",
+      "titleEs": "Node · nuds — el oído pega, el étimo corta",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: node (lat. nodus) × nuds/nudes (lat. nudus) — uma letra; ES nudos ≠ EN nudes; elos nó/conexão/script.",
+      "whyEn": "Words: node (Lat. nodus) × nuds/nudes (Lat. nudus) — one letter; ES nudos ≠ EN nudes; links nó/conexão/script.",
+      "whyEs": "Palabras: node (lat. nodus) × nuds/nudes (lat. nudus) — una letra; ES nudos ≠ EN nudes; vínculos nó/conexão/script.",
+      "suggestedSlug": "inspecao-palavra-node",
+      "doneHref": "/posts/post-inspecao-palavra-node.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wiktionary.org/wiki/node",
+        "https://en.wiktionary.org/wiki/nodus#Latin",
+        "https://en.wiktionary.org/wiki/nudus#Latin",
+        "https://en.wiktionary.org/wiki/nude",
+        "/posts/post-inspecao-palavra-no.html",
+        "/posts/post-inspecao-palavra-conexao.html",
+        "/posts/post-inspecao-palavra-script.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 208 — nodus × nudus; orelha cola nodes/nudes; Node.js = nós de rede."
     }
   ]
 }
