@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T20:56:07.483Z",
+  "updatedAt": "2026-08-22T02:41:02.188Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7368,6 +7368,30 @@
         "/posts/post-inspecao-animal-abelha.html"
       ],
       "notes": "Cap. 30; foto de campo do inspetor; guia terapêutico popular lido com cautela (não copiar alegações clínicas)."
+    },
+    {
+      "id": "palavra-etimologia",
+      "title": "Etimologia — o ofício de perguntar de onde veio",
+      "titleEn": "Etymology — the craft of asking where it came from",
+      "titleEs": "Etimología — el oficio de preguntar de dónde vino",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: etimologia (étymon + lógos) — método da série; étimo ≠ popular (cara+alho); Faça o melhor!",
+      "whyEn": "Words: etymology (étymon + lógos) — method of the series; etymon ≠ folk (cara+alho); Do your best!",
+      "whyEs": "Palabras: etimología (étymon + lógos) — método de la serie; étimo ≠ popular (cara+alho); ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-etimologia",
+      "doneHref": "/posts/post-inspecao-palavra-etimologia.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Etimologia",
+        "/posts/post-inspecao-palavra-trocadilho.html",
+        "/posts/post-inspecao-palavra-aglutinacao.html",
+        "/posts/post-inspecao-palavra-polimorfismo.html",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 173 — ficha do método da série; cita cluster cara+alho."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T20:56:07.489Z",
+  "updatedAt": "2026-08-22T02:41:02.191Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4326,6 +4326,22 @@
       "curiositiesEn": "O pedido de campo perguntou se cara+alho era polimorfismo. O laboratório honra o instinto («outro significado») e corrige: esse jogo é trocadilho. Vários sentidos de uma forma chamam-se polissemia ou homonímia — ainda outro mapa.",
       "historyEs": "Polimorfismo junta o grego poly- (muitos) e morphē (forma). Vive na biologia (vários fenótipos), na programação (mesmo método, vários tipos) e, à margem linguística, na alomorfia.",
       "curiositiesEs": "O pedido de campo perguntou se cara+alho era polimorfismo. O laboratório honra o instinto («outro significado») e corrige: esse jogo é trocadilho. Vários sentidos de uma forma chamam-se polissemia ou homonímia — ainda outro mapa."
+    },
+    {
+      "id": "etimologia",
+      "word": "Etimologia",
+      "simple": "Étymon + lógos — ofício de perguntar de onde veio; étimo ≠ etimologia popular (cara+alho); método da série Palavras; irmãs aglutinação e polimorfismo.",
+      "simpleEn": "Étymon + lógos — craft of asking where a word came from; etymon ≠ folk etymology; method of the Palavras series.",
+      "simpleEs": "Étymon + lógos — oficio de preguntar de dónde vino; étimo ≠ etimología popular; método de la serie Palabras.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-etimologia.html",
+      "history": "Do grego etymología: étymon (sentido verdadeiro) + lógos (palavra / estudo). O laboratório usa este ofício em todas as fichas Palavras; a palavra ela mesma passa a ter ficha própria.",
+      "curiosities": "Etimologia popular é o mecanismo de cara+alho (história que encaixa demais) — não é o étimo. Aglutinação escolar (planalto) é fusão que é origem. Polimorfismo é outro mapa.",
+      "historyEn": "From Greek etymología: étymon (true sense) + lógos (word / study). The lab uses this craft on every Palavras sheet; the word itself now has its own file.",
+      "curiositiesEn": "Folk etymology is the cara+alho mechanism (a story that fits too well) — not the etymon. School agglutination (planalto) is fusion that is origin. Polymorphism is another map.",
+      "historyEs": "Del griego etymología: étymon (sentido verdadero) + lógos (palabra / estudio). El laboratorio usa este oficio en todas las fichas Palabras.",
+      "curiositiesEs": "Etimología popular es el mecanismo de cara+alho (historia que encaja demasiado) — no es el étimo. Aglutinación escolar (planalto) es fusión que es origen."
     },
     {
       "id": "aglutinacao",

@@ -2489,6 +2489,25 @@
     "seriesLabel": "Lucas Evangelista · pessoa"
   },
   {
+    "title": "Inspeção: Língua portuguesa — originalidade, alterações no tempo e Faça o melhor!",
+    "titleEn": "Inspection: Portuguese language — originality, changes over time and Do your best!",
+    "titleEs": "Inspección: Lengua portuguesa — originalidad, cambios en el tiempo y ¡Haz lo mejor!",
+    "excerpt": "Palavras: língua portuguesa — originalidade; alterações ao longo do tempo (latim → BR → digital); para que serve; Faça o melhor! nesta língua.",
+    "excerptEn": "Words: Portuguese language — originality; changes over time (Latin → BR → digital); purpose; Do your best! in this language.",
+    "excerptEs": "Palabras: lengua portuguesa — originalidad; cambios a lo largo del tiempo (latín → BR → digital); para qué sirve; ¡Haz lo mejor! en esta lengua.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-lingua-portuguesa",
+    "url": "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+    "date": "2026-08-03T15:30:00.000Z",
+    "filename": "posts/post-inspecao-palavra-lingua-portuguesa.html",
+    "coverImage": "/imagens/inspecoes/lingua-portuguesa-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 32,
+    "seriesLabel": "Língua portuguesa · palavra"
+  },
+  {
     "title": "Inspeção: Buguei — do inseto ao «deu ruim» e Faça o melhor!",
     "titleEn": "Inspection: Buguei — from insect to “it went bad” and Do your best!",
     "titleEs": "Inspección: Buguei — del insecto al «salió mal» y ¡Haz lo mejor!",
@@ -5073,6 +5092,25 @@
     "seriesLabel": "Impressão · Pressão · palavra"
   },
   {
+    "title": "Inspeção: Etimologia — o ofício de perguntar de onde veio",
+    "titleEn": "Inspection: Etymology — the craft of asking where it came from",
+    "titleEs": "Inspección: Etimología — el oficio de preguntar de dónde vino",
+    "excerpt": "Palavras: etimologia (étymon + lógos) — método da série; étimo ≠ etimologia popular (cara+alho); irmãs aglutinação e polimorfismo; Faça o melhor!",
+    "excerptEn": "Words: etymology (étymon + lógos) — method of the series; etymon ≠ folk etymology (cara+alho); sisters agglutination and polymorphism; Do your best!",
+    "excerptEs": "Palabras: etimología (étymon + lógos) — método de la serie; étimo ≠ etimología popular (cara+alho); hermanas aglutinación y polimorfismo; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-etimologia",
+    "url": "/posts/post-inspecao-palavra-etimologia.html",
+    "date": "2026-08-22T02:40:00.000Z",
+    "filename": "posts/post-inspecao-palavra-etimologia.html",
+    "coverImage": "/imagens/inspecoes/etimologia-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 173,
+    "seriesLabel": "Etimologia · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",
@@ -5166,25 +5204,6 @@
     "series": "palavras-origem",
     "seriesOrder": null,
     "seriesLabel": "Mãos · palavra"
-  },
-  {
-    "title": "Inspeção: Língua portuguesa — originalidade, alterações no tempo e Faça o melhor!",
-    "titleEn": "Inspection: Portuguese language — originality, changes over time and Do your best!",
-    "titleEs": "Inspección: Lengua portuguesa — originalidad, cambios en el tiempo y ¡Haz lo mejor!",
-    "excerpt": "Palavras: língua portuguesa — originalidade; alterações ao longo do tempo (latim → BR → digital); para que serve; Faça o melhor! nesta língua.",
-    "excerptEn": "Words: Portuguese language — originality; changes over time (Latin → BR → digital); purpose; Do your best! in this language.",
-    "excerptEs": "Palabras: lengua portuguesa — originalidad; cambios a lo largo del tiempo (latín → BR → digital); para qué sirve; ¡Haz lo mejor! en esta lengua.",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-palavra-lingua-portuguesa",
-    "url": "/posts/post-inspecao-palavra-lingua-portuguesa.html",
-    "date": "2026-08-03T15:30:00.000Z",
-    "filename": "posts/post-inspecao-palavra-lingua-portuguesa.html",
-    "coverImage": "/imagens/inspecoes/lingua-portuguesa-cover.jpg",
-    "category": "inspecao",
-    "series": "palavras-origem",
-    "seriesOrder": null,
-    "seriesLabel": "Língua portuguesa · palavra"
   },
   {
     "title": "Inspeção: Esquerdo — relação com as mãos, criação e Faça o melhor!",
