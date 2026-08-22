@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:20:31.914Z",
+  "updatedAt": "2026-08-22T06:29:07.043Z",
   "poems": [
     {
       "id": "barquinhos-de-papel",
@@ -95,6 +95,30 @@
         "lemniscata",
         "corpo",
         "infinito"
+      ]
+    },
+    {
+      "id": "em-pe",
+      "slug": "em-pe",
+      "title": "Em pé",
+      "titleEn": "Standing",
+      "titleEs": "De pie",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Em pé não é o pé sozinho — o oito erguido chama-se caminho, e o mantra: faça o melhor.",
+      "teaserEn": "Standing is not the foot alone — the standing eight is called a path, and the mantra: do your best.",
+      "teaserEs": "De pie no es el pie solo — el ocho erguido se llama camino, y el mantra: haz lo mejor.",
+      "body": "Em pé não é o pé sozinho.\nÉ o corpo que não deita.\nO oito deitado chama-se infinito.\nO oito em pé chama-se caminho:\no que está em cima fala com o que está em baixo.\n\nKassia pensou o corpo\ne ergueu a fita.\nNão baptizou a locução.\nO laboratório guarda o gesto:\nrodar a lemniscata\naté ela ficar em pé.\n\nNão é eternidade de cartaz.\nNão é o cruzamento — esse é o elo.\nÉ a postura.\nÉ o vai-e-vem.\n\nValeu !!!\nem pé,\nsem fingir que o infinito cabe numa ficha.",
+      "bodyEn": "Standing is not the foot alone.\nIt is the body that does not lie down.\nThe eight lying down is called infinity.\nThe eight standing up is called a path:\nwhat is above speaks with what is below.\n\nKassia thought of the body\nand stood the ribbon up.\nShe did not baptise the locution.\nThe lab keeps the gesture:\nturn the lemniscate\nuntil it stands.\n\nIt is not poster eternity.\nIt is not the crossing — that is the link.\nIt is the posture.\nIt is the to-and-fro.\n\nValeu !!!\nstanding,\nwithout pretending infinity fits on a sheet.",
+      "bodyEs": "De pie no es el pie solo.\nEs el cuerpo que no se acuesta.\nEl ocho acostado se llama infinito.\nEl ocho de pie se llama camino:\nlo de arriba habla con lo de abajo.\n\nKassia pensó el cuerpo\ny levantó la cinta.\nNo bautizó la locución.\nEl laboratorio guarda el gesto:\ngirar la lemniscata\nhasta que quede de pie.\n\nNo es eternidad de cartel.\nNo es el cruce — ese es el eslabón.\nEs la postura.\nEs el vaivén.\n\nValeu !!!\nde pie,\nsin fingir que el infinito cabe en una ficha.",
+      "inspectionHref": "/posts/post-inspecao-expressao-em-pe.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "lemniscata",
+        "corpo",
+        "postura"
       ]
     },
     {

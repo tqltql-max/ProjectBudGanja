@@ -1390,6 +1390,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Calendula officinalis* — pétalas ricas em triterpenos e flavonoides; uso tópico em pele irritada."
             },
             {
+              "label": "Inspeção: em pé — o oito erguido, o corpo como caminho",
+              "tileLabel": "Inspeção: em pé — o oito erguid…",
+              "href": "/posts/post-inspecao-expressao-em-pe.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-em-pe",
+              "description": "Expressões: «em pé» — postura vertical; oito erguido da lemniscata; aula XIV Kassia (corpo); Valeu !!!"
+            },
+            {
               "label": "Inspeção: Planta — Barbatimão — proantocianidinas adstringentes",
               "tileLabel": "Inspeção: Planta — Barbatimão —…",
               "href": "/posts/post-inspecao-planta-barbatimao.html",
@@ -2764,6 +2772,22 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-lemniscata",
               "description": "Palavras: lemniscata — curva-fita (λημνίσκος); ≠ infinito-conceito; OCR lemeniscata; posturas em pé × deitado; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Preguiça — o estado, o animal e o que não é descanso",
+              "tileLabel": "Inspeção: Preguiça — o estado, …",
+              "href": "/posts/post-inspecao-palavra-preguica.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-preguica",
+              "description": "Palavras: preguiça (lat. pigritia) — relutância, pecado e bicho-preguiça; descanso ≠ vício; elo bode; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Bode — o caprino, o expiatório e o mau humor",
+              "tileLabel": "Inspeção: Bode — o caprino, o e…",
+              "href": "/posts/post-inspecao-palavra-bode.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-bode",
+              "description": "Palavras: bode — macho caprino (étimo incerto), bode expiatório e gíria BR; elo preguiça; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

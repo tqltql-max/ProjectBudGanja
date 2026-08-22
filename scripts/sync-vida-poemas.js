@@ -115,6 +115,11 @@ const {
   poemEmPeEDeitadoEs
 } = require('../lib/em-pe-e-deitado-inspecao-post.js');
 const {
+  poemEmPePt,
+  poemEmPeEn,
+  poemEmPeEs
+} = require('../lib/em-pe-inspecao-post.js');
+const {
   maraPoemPt,
   maraPoemEn,
   maraPoemEs
@@ -210,6 +215,27 @@ const doc = {
       bodyEs: poemEmPeEDeitadoEs(),
       inspectionHref: '/posts/post-inspecao-expressao-em-pe-e-deitado.html',
       tags: ['poesia', 'vida', 'lemniscata', 'corpo', 'infinito']
+    },
+    {
+      id: 'em-pe',
+      slug: 'em-pe',
+      title: 'Em pé',
+      titleEn: 'Standing',
+      titleEs: 'De pie',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Em pé não é o pé sozinho — o oito erguido chama-se caminho, e o mantra: faça o melhor.',
+      teaserEn:
+        'Standing is not the foot alone — the standing eight is called a path, and the mantra: do your best.',
+      teaserEs:
+        'De pie no es el pie solo — el ocho erguido se llama camino, y el mantra: haz lo mejor.',
+      body: poemEmPePt(),
+      bodyEn: poemEmPeEn(),
+      bodyEs: poemEmPeEs(),
+      inspectionHref: '/posts/post-inspecao-expressao-em-pe.html',
+      tags: ['poesia', 'vida', 'lemniscata', 'corpo', 'postura']
     },
     {
       id: 'aguas-e-lagrimas',

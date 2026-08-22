@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:23:16.867Z",
+  "updatedAt": "2026-08-22T06:28:38.556Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4554,6 +4554,22 @@
       "curiositiesEn": "In UNIFESP XIV lesson 8, Dr. Kassia Martins stands the lemniscate up as a symbol of up↔down communication in the ECS. The lab relates the crossing to this saying — it does not claim she used these words. Greek sýmbolon was already a fitting token.",
       "historyEs": "Elo viene del latín anellus (anillito); ligação de ligāre (atar). La locución insiste en el anillo que de verdad junta. El campo trajo simbuklo — gatillo de oído para símbolo do infinito (lemniscata, el ocho acostado).",
       "curiositiesEs": "En la 8.ª aula del XIV Curso UNIFESP, la Dra. Kassia Martins pone la lemniscata de pie como símbolo de comunicación arriba↔abajo del SEC. El laboratorio relaciona el cruce con esta locución — no afirma que ella usara esas palabras. El griego sýmbolon ya era un token que encaja."
+    },
+    {
+      "id": "em-pe",
+      "word": "em pé",
+      "simple": "Locução — postura vertical; oito erguido da lemniscata; aula XIV Kassia (corpo). Valeu !!!",
+      "simpleEn": "Locution — standing; the standing eight of the lemniscate; UNIFESP XIV Kassia (body). Valeu !!!",
+      "simpleEs": "Locución — de pie; el ocho erguido de la lemniscata; aula XIV Kassia (cuerpo). ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-em-pe.html",
+      "history": "Em pé vem de pēs, pedis (pé, apoio). A locução nomeia quem está erguido — não sentado, não deitado. Variante de pé. No laboratório, é o oito vertical da lemniscata.",
+      "curiosities": "Na 8.ª aula do XIV Curso UNIFESP, Dra. Kassia Martins põe a lemniscata em pé quando pensa o corpo: comunicação cima↔baixo. O par fica em em pé e deitado; o cruzamento em elo de ligação.",
+      "historyEn": "Portuguese em pé comes from pēs, pedis (foot, support). The locution names who is upright — not sitting, not lying. Variant de pé. In the lab it is the standing eight of the lemniscate.",
+      "curiositiesEn": "In UNIFESP XIV lesson 8, Dr. Kassia Martins stands the lemniscate up when she thinks of the body: up↔down communication. The pair stays on em pé e deitado; the crossing on elo de ligação.",
+      "historyEs": "Em pé viene de pēs, pedis (pie, apoyo). La locución nombra a quien está erguido. Variante de pé. En el laboratorio es el ocho de pie de la lemniscata.",
+      "curiositiesEs": "En la 8.ª aula del XIV Curso UNIFESP, la Dra. Kassia Martins pone la lemniscata de pie cuando piensa el cuerpo. El par queda en em pé e deitado; el cruce en elo de ligação."
     },
     {
       "id": "em-pe-e-deitado",
