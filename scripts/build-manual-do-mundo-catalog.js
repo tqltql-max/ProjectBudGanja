@@ -11,7 +11,7 @@ const { stampCatalog } = require('../lib/manual-do-mundo-categories.js');
 async function main() {
   const { catalog, slug, path: outPath } = await buildChannelCatalogFromUrl(
     'https://www.youtube.com/@manualdomundo',
-    { maxVideos: 8000 }
+    { maxVideos: 8000, persist: false }
   );
   const stamped = stampCatalog(
     Object.assign({}, catalog, {

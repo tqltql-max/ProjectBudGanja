@@ -12,7 +12,7 @@ const { stampCatalog } = require('../lib/icl-categories.js');
 async function main() {
   const { catalog, slug, path: outPath } = await buildChannelCatalogFromUrl(
     'https://www.youtube.com/@institutoconhecimentoliberta',
-    { maxVideos: 350 }
+    { maxVideos: 350, persist: false }
   );
   const stamped = stampCatalog(
     Object.assign({}, catalog, {

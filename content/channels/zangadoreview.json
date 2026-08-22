@@ -3,9 +3,11 @@
   "channelUrl": "https://www.youtube.com/@zangadoreview",
   "channelName": "Zangado",
   "handle": "@zangadoreview",
-  "inspectedAt": "2026-08-22T03:36:25.429Z",
+  "inspectedAt": "2026-08-22T04:14:19.034Z",
+  "fullCrawledAt": "2026-08-22T04:01:56.795Z",
   "videoCount": 1420,
   "mission": "Canal 100% gamer — reviews, sagas e primeira meia hora com método. No BudGanja entra na página Games. Crédito: Thiago / Zangado — sem afiliação.",
+  "partnerCodes": [],
   "categories": [
     {
       "id": "sagas",
@@ -133,11 +135,12 @@
       "id": "50KgKprM-FY",
       "title": "[CompletoZ #93] : The Last Guardian (2016) Gameplay Completo (Ps4/Ps5)",
       "url": "https://www.youtube.com/watch?v=50KgKprM-FY",
-      "publishedRelative": "há 13 horas",
+      "publishedRelative": "há 14 horas",
       "pageIndex": 0,
-      "published": "2026-08-21T14:00:09+00:00",
+      "published": "2026-08-21T14:14:19.027Z",
       "thumb": "https://i.ytimg.com/vi/50KgKprM-FY/hqdefault.jpg",
-      "category": "gameplay"
+      "category": "gameplay",
+      "views": "4 mil visualizações"
     },
     {
       "id": "RK9axeduV-o",
@@ -154,9 +157,21 @@
       "url": "https://www.youtube.com/watch?v=jDDJ1rbSyE0",
       "publishedRelative": "há 2 dias",
       "pageIndex": 2,
-      "published": "2026-08-19T14:00:07+00:00",
+      "published": "2026-08-20T04:14:19.027Z",
       "thumb": "https://i.ytimg.com/vi/jDDJ1rbSyE0/hqdefault.jpg",
-      "category": "gameplay"
+      "category": "gameplay",
+      "views": "12 mil visualizações"
+    },
+    {
+      "id": "uLDunmRrKyk",
+      "title": "Round 6 Versão Industrial? Machine Party Gameplay (PC)[4K]",
+      "url": "https://www.youtube.com/watch?v=uLDunmRrKyk",
+      "publishedRelative": "há 4 dias",
+      "pageIndex": 3,
+      "published": "2026-08-18T04:14:19.028Z",
+      "thumb": "https://i.ytimg.com/vi/uLDunmRrKyk/hqdefault.jpg",
+      "category": "especiais",
+      "views": "10 mil visualizações"
     },
     {
       "id": "wnnQycgQFIE",
@@ -165,7 +180,7 @@
       "url": "https://www.youtube.com/watch?v=wnnQycgQFIE",
       "thumb": "https://i.ytimg.com/vi/wnnQycgQFIE/hqdefault.jpg",
       "category": "lives",
-      "pageIndex": 3
+      "pageIndex": 4
     },
     {
       "id": "ANMQ1lRCnA0",
@@ -174,17 +189,7 @@
       "url": "https://www.youtube.com/watch?v=ANMQ1lRCnA0",
       "thumb": "https://i.ytimg.com/vi/ANMQ1lRCnA0/hqdefault.jpg",
       "category": "lives",
-      "pageIndex": 4
-    },
-    {
-      "id": "uLDunmRrKyk",
-      "title": "Round 6 Versão Industrial? Machine Party Gameplay (PC)[4K]",
-      "url": "https://www.youtube.com/watch?v=uLDunmRrKyk",
-      "publishedRelative": "há 4 dias",
-      "pageIndex": 5,
-      "published": "2026-08-17T14:00:31+00:00",
-      "thumb": "https://i.ytimg.com/vi/uLDunmRrKyk/hqdefault.jpg",
-      "category": "especiais"
+      "pageIndex": 5
     },
     {
       "id": "maGI8jM2k-U",
@@ -192,9 +197,10 @@
       "url": "https://www.youtube.com/watch?v=maGI8jM2k-U",
       "publishedRelative": "há 6 dias",
       "pageIndex": 6,
-      "published": "2026-08-15T13:00:36+00:00",
+      "published": "2026-08-16T04:14:19.028Z",
       "thumb": "https://i.ytimg.com/vi/maGI8jM2k-U/hqdefault.jpg",
-      "category": "gameplay"
+      "category": "gameplay",
+      "views": "81 mil visualizações"
     },
     {
       "id": "cH65d7-__XE",
@@ -202,9 +208,10 @@
       "url": "https://www.youtube.com/watch?v=cH65d7-__XE",
       "publishedRelative": "há 8 dias",
       "pageIndex": 7,
-      "published": "2026-08-13T14:00:13+00:00",
+      "published": "2026-08-14T04:14:19.028Z",
       "thumb": "https://i.ytimg.com/vi/cH65d7-__XE/hqdefault.jpg",
-      "category": "gameplay"
+      "category": "gameplay",
+      "views": "12 mil visualizações"
     },
     {
       "id": "hVURhFLeukI",
@@ -212,9 +219,10 @@
       "url": "https://www.youtube.com/watch?v=hVURhFLeukI",
       "publishedRelative": "há 10 dias",
       "pageIndex": 8,
-      "published": "2026-08-11T13:00:21+00:00",
+      "published": "2026-08-12T04:14:19.028Z",
       "thumb": "https://i.ytimg.com/vi/hVURhFLeukI/hqdefault.jpg",
-      "category": "gameplay"
+      "category": "gameplay",
+      "views": "12 mil visualizações"
     },
     {
       "id": "kTwIKc2cd_k",
@@ -231,9 +239,10 @@
       "url": "https://www.youtube.com/watch?v=OUjunJachyA",
       "publishedRelative": "há 12 dias",
       "pageIndex": 10,
-      "published": "2026-08-09T13:00:37+00:00",
+      "published": "2026-08-10T04:14:19.028Z",
       "thumb": "https://i.ytimg.com/vi/OUjunJachyA/hqdefault.jpg",
-      "category": "nerd-extra"
+      "category": "nerd-extra",
+      "views": "22 mil visualizações"
     },
     {
       "id": "HfaDUQI7T2c",
@@ -241,9 +250,10 @@
       "url": "https://www.youtube.com/watch?v=HfaDUQI7T2c",
       "publishedRelative": "há 2 semanas",
       "pageIndex": 11,
-      "published": "2026-08-07T11:00:23+00:00",
+      "published": "2026-08-08T04:14:19.028Z",
       "thumb": "https://i.ytimg.com/vi/HfaDUQI7T2c/hqdefault.jpg",
-      "category": "gameplay"
+      "category": "gameplay",
+      "views": "35 mil visualizações"
     },
     {
       "id": "3PGhktPjxBo",
@@ -251,9 +261,10 @@
       "url": "https://www.youtube.com/watch?v=3PGhktPjxBo",
       "publishedRelative": "há 2 semanas",
       "pageIndex": 12,
-      "published": "2026-08-06T14:00:01+00:00",
+      "published": "2026-08-08T04:14:19.028Z",
       "thumb": "https://i.ytimg.com/vi/3PGhktPjxBo/hqdefault.jpg",
-      "category": "gameplay"
+      "category": "gameplay",
+      "views": "22 mil visualizações"
     },
     {
       "id": "cDQcXhdhxCw",
@@ -261,9 +272,21 @@
       "url": "https://www.youtube.com/watch?v=cDQcXhdhxCw",
       "publishedRelative": "há 2 semanas",
       "pageIndex": 13,
-      "published": "2026-08-04T11:00:37+00:00",
+      "published": "2026-08-08T04:14:19.028Z",
       "thumb": "https://i.ytimg.com/vi/cDQcXhdhxCw/hqdefault.jpg",
-      "category": "primeira-meia-hora"
+      "category": "primeira-meia-hora",
+      "views": "45 mil visualizações"
+    },
+    {
+      "id": "eJknsMmtR_U",
+      "title": "DragonSword - Awakening : A Primeira Meia Hora (PC)[4K]",
+      "url": "https://www.youtube.com/watch?v=eJknsMmtR_U",
+      "publishedRelative": "há 2 semanas",
+      "pageIndex": 14,
+      "published": "2026-08-08T04:14:19.028Z",
+      "thumb": "https://i.ytimg.com/vi/eJknsMmtR_U/hqdefault.jpg",
+      "category": "primeira-meia-hora",
+      "views": "45 mil visualizações"
     },
     {
       "id": "x6lOBWOk8H0",
@@ -272,17 +295,7 @@
       "url": "https://www.youtube.com/watch?v=x6lOBWOk8H0",
       "thumb": "https://i.ytimg.com/vi/x6lOBWOk8H0/hqdefault.jpg",
       "category": "bate-papo",
-      "pageIndex": 14
-    },
-    {
-      "id": "eJknsMmtR_U",
-      "title": "DragonSword - Awakening : A Primeira Meia Hora (PC)[4K]",
-      "url": "https://www.youtube.com/watch?v=eJknsMmtR_U",
-      "publishedRelative": "há 2 semanas",
-      "pageIndex": 15,
-      "published": "2026-08-02T13:00:08+00:00",
-      "thumb": "https://i.ytimg.com/vi/eJknsMmtR_U/hqdefault.jpg",
-      "category": "primeira-meia-hora"
+      "pageIndex": 15
     },
     {
       "id": "QxIxIcZKIj4",
@@ -290,9 +303,10 @@
       "url": "https://www.youtube.com/watch?v=QxIxIcZKIj4",
       "publishedRelative": "há 3 semanas",
       "pageIndex": 16,
-      "published": "2026-07-31T14:00:26+00:00",
+      "published": "2026-08-01T04:14:19.028Z",
       "thumb": "https://i.ytimg.com/vi/QxIxIcZKIj4/hqdefault.jpg",
-      "category": "gameplay"
+      "category": "gameplay",
+      "views": "56 mil visualizações"
     },
     {
       "id": "VCUJzeZcspQ",
@@ -300,9 +314,43 @@
       "url": "https://www.youtube.com/watch?v=VCUJzeZcspQ",
       "publishedRelative": "há 3 semanas",
       "pageIndex": 17,
-      "published": "2026-07-29T15:00:10+00:00",
+      "published": "2026-08-01T04:14:19.028Z",
       "thumb": "https://i.ytimg.com/vi/VCUJzeZcspQ/hqdefault.jpg",
-      "category": "primeira-meia-hora"
+      "category": "primeira-meia-hora",
+      "views": "65 mil visualizações"
+    },
+    {
+      "id": "E91CZA5C-Dg",
+      "title": "Splatoon Raiders - Combate contra Salmonids e Exploração! (Nintendo Switch 2)[4K]",
+      "url": "https://www.youtube.com/watch?v=E91CZA5C-Dg",
+      "publishedRelative": "há 3 semanas",
+      "pageIndex": 18,
+      "published": "2026-08-01T04:14:19.028Z",
+      "thumb": "https://i.ytimg.com/vi/E91CZA5C-Dg/hqdefault.jpg",
+      "category": "gameplay",
+      "views": "13 mil visualizações"
+    },
+    {
+      "id": "UkYHvzq2VH0",
+      "title": "Avatar Legends: The Fighting Game - A Lenda de Aang em Combate! (PC)[4K]",
+      "url": "https://www.youtube.com/watch?v=UkYHvzq2VH0",
+      "publishedRelative": "há 3 semanas",
+      "pageIndex": 19,
+      "published": "2026-08-01T04:14:19.028Z",
+      "thumb": "https://i.ytimg.com/vi/UkYHvzq2VH0/hqdefault.jpg",
+      "category": "gameplay",
+      "views": "71 mil visualizações"
+    },
+    {
+      "id": "CKfsGI-wiMQ",
+      "title": "Heróis em Guerra - Marvel Tokon Fighting Souls (Playstation 5 Pro)[4K]",
+      "url": "https://www.youtube.com/watch?v=CKfsGI-wiMQ",
+      "publishedRelative": "há 3 semanas",
+      "pageIndex": 20,
+      "published": "2026-08-01T04:14:19.028Z",
+      "thumb": "https://i.ytimg.com/vi/CKfsGI-wiMQ/hqdefault.jpg",
+      "category": "nerd-extra",
+      "views": "84 mil visualizações"
     },
     {
       "id": "fh2IQ1mmMGQ",
@@ -311,57 +359,29 @@
       "url": "https://www.youtube.com/watch?v=fh2IQ1mmMGQ",
       "thumb": "https://i.ytimg.com/vi/fh2IQ1mmMGQ/hqdefault.jpg",
       "category": "bate-papo",
-      "pageIndex": 18
-    },
-    {
-      "id": "UkYHvzq2VH0",
-      "title": "Avatar Legends: The Fighting Game - A Lenda de Aang em Combate! (PC)[4K]",
-      "url": "https://www.youtube.com/watch?v=UkYHvzq2VH0",
-      "publishedRelative": "há 3 semanas",
-      "pageIndex": 19,
-      "published": "2026-07-28T02:09:36.067Z",
-      "thumb": "https://i.ytimg.com/vi/UkYHvzq2VH0/hqdefault.jpg",
-      "category": "gameplay"
-    },
-    {
-      "id": "CKfsGI-wiMQ",
-      "title": "Heróis em Guerra - Marvel Tokon Fighting Souls (Playstation 5 Pro)[4K]",
-      "url": "https://www.youtube.com/watch?v=CKfsGI-wiMQ",
-      "publishedRelative": "há 3 semanas",
-      "pageIndex": 20,
-      "published": "2026-07-28T02:09:36.067Z",
-      "thumb": "https://i.ytimg.com/vi/CKfsGI-wiMQ/hqdefault.jpg",
-      "category": "nerd-extra"
+      "pageIndex": 21
     },
     {
       "id": "zrC247-3L68",
       "title": "[CompletoZ #91] : Halo | Campaign Evolved (2026) Gameplay Completo (Ps5/Xbox/PC)",
       "url": "https://www.youtube.com/watch?v=zrC247-3L68",
       "publishedRelative": "há 4 semanas",
-      "pageIndex": 21,
-      "published": "2026-07-28T02:09:36.067Z",
+      "pageIndex": 22,
+      "published": "2026-07-25T04:14:19.028Z",
       "thumb": "https://i.ytimg.com/vi/zrC247-3L68/hqdefault.jpg",
-      "category": "gameplay"
+      "category": "gameplay",
+      "views": "35 mil visualizações"
     },
     {
       "id": "jQboChosEnQ",
       "title": "Titanfall + Splitgate? Empulse é o Novo Shooter Frenético da Steam!(PC)[4K]",
       "url": "https://www.youtube.com/watch?v=jQboChosEnQ",
       "publishedRelative": "há 4 semanas",
-      "pageIndex": 22,
-      "published": "2026-07-28T02:09:36.067Z",
-      "thumb": "https://i.ytimg.com/vi/jQboChosEnQ/hqdefault.jpg",
-      "category": "gameplay"
-    },
-    {
-      "id": "E91CZA5C-Dg",
-      "title": "Splatoon Raiders - Combate contra Salmonids e Exploração! (Nintendo Switch 2)[4K]",
-      "url": "https://www.youtube.com/watch?v=E91CZA5C-Dg",
-      "publishedRelative": "há 3 semanas",
       "pageIndex": 23,
-      "published": "2026-07-28T02:09:36.066Z",
-      "thumb": "https://i.ytimg.com/vi/E91CZA5C-Dg/hqdefault.jpg",
-      "category": "gameplay"
+      "published": "2026-07-25T04:14:19.028Z",
+      "thumb": "https://i.ytimg.com/vi/jQboChosEnQ/hqdefault.jpg",
+      "category": "gameplay",
+      "views": "8,7 mil visualizações"
     },
     {
       "id": "mfsRl5PbkVY",
@@ -369,9 +389,10 @@
       "url": "https://www.youtube.com/watch?v=mfsRl5PbkVY",
       "publishedRelative": "há 1 mês",
       "pageIndex": 24,
-      "published": "2026-07-21T02:09:36.067Z",
+      "published": "2026-07-22T17:40:43.028Z",
       "thumb": "https://i.ytimg.com/vi/mfsRl5PbkVY/hqdefault.jpg",
-      "category": "gameplay"
+      "category": "gameplay",
+      "views": "112 mil visualizações"
     },
     {
       "id": "lkUoNj2D1Nw",
@@ -379,46 +400,127 @@
       "url": "https://www.youtube.com/watch?v=lkUoNj2D1Nw",
       "publishedRelative": "há 1 mês",
       "pageIndex": 25,
-      "published": "2026-07-21T02:09:36.067Z",
+      "published": "2026-07-22T17:40:43.028Z",
       "thumb": "https://i.ytimg.com/vi/lkUoNj2D1Nw/hqdefault.jpg",
-      "category": "gameplay"
+      "category": "gameplay",
+      "views": "19 mil visualizações"
+    },
+    {
+      "id": "OKdfm8APcdU",
+      "title": "A Indústria de Games está Colapsando. GTA 6 Pode Mudar Tudo?",
+      "url": "https://www.youtube.com/watch?v=OKdfm8APcdU",
+      "publishedRelative": "há 1 mês",
+      "pageIndex": 26,
+      "published": "2026-07-22T17:40:43.028Z",
+      "thumb": "https://i.ytimg.com/vi/OKdfm8APcdU/hqdefault.jpg",
+      "category": "especiais",
+      "views": "99 mil visualizações"
+    },
+    {
+      "id": "qWmgUEjUAwY",
+      "title": "BOMBANANA! - Macacos, risadas, explosões e amizade em teste! (PC)[4K]",
+      "url": "https://www.youtube.com/watch?v=qWmgUEjUAwY",
+      "publishedRelative": "há 1 mês",
+      "pageIndex": 27,
+      "published": "2026-07-22T17:40:43.028Z",
+      "thumb": "https://i.ytimg.com/vi/qWmgUEjUAwY/hqdefault.jpg",
+      "category": "gameplay",
+      "views": "13 mil visualizações"
+    },
+    {
+      "id": "K2szI_fbb4k",
+      "title": "Doom: The Dark Ages | Revelações (DLC) : A Primeira Meia Hora (PC)[4K]",
+      "url": "https://www.youtube.com/watch?v=K2szI_fbb4k",
+      "publishedRelative": "há 1 mês",
+      "pageIndex": 28,
+      "published": "2026-07-22T17:40:43.028Z",
+      "thumb": "https://i.ytimg.com/vi/K2szI_fbb4k/hqdefault.jpg",
+      "category": "primeira-meia-hora",
+      "views": "38 mil visualizações"
+    },
+    {
+      "id": "w4ETOWhDQX0",
+      "title": "Palworld : 2 Anos Depois + Os Pals Cresceram! ( ͡° ͜ʖ ͡°) (PC)[2K]",
+      "url": "https://www.youtube.com/watch?v=w4ETOWhDQX0",
+      "publishedRelative": "há 1 mês",
+      "pageIndex": 29,
+      "published": "2026-07-22T17:40:43.028Z",
+      "thumb": "https://i.ytimg.com/vi/w4ETOWhDQX0/hqdefault.jpg",
+      "category": "retrospectiva",
+      "views": "48 mil visualizações"
+    },
+    {
+      "id": "UebNh9kyGIA",
+      "title": "Assassin's Creed Black Flag Resynced : Vale ou Não a Pena Jogar!?",
+      "url": "https://www.youtube.com/watch?v=UebNh9kyGIA",
+      "publishedRelative": "há 1 mês",
+      "pageIndex": 30,
+      "published": "2026-07-22T17:40:43.028Z",
+      "thumb": "https://i.ytimg.com/vi/UebNh9kyGIA/hqdefault.jpg",
+      "category": "vale-a-pena",
+      "views": "175 mil visualizações"
+    },
+    {
+      "id": "HQ1qNcjvJDI",
+      "title": "Assassin's Creed Black Flag Resynced : Gameplay Comparativo (2013-2026)(Playstation 5 Pro)[4K]",
+      "url": "https://www.youtube.com/watch?v=HQ1qNcjvJDI",
+      "publishedRelative": "há 1 mês",
+      "pageIndex": 31,
+      "published": "2026-07-22T17:40:43.028Z",
+      "thumb": "https://i.ytimg.com/vi/HQ1qNcjvJDI/hqdefault.jpg",
+      "category": "gameplay",
+      "views": "52 mil visualizações"
+    },
+    {
+      "id": "UtnbtFlDx8o",
+      "title": "GRAIN ROT - Robôs, Loot, Caos Cooperativo e Extração! (PC)[4K]",
+      "url": "https://www.youtube.com/watch?v=UtnbtFlDx8o",
+      "publishedRelative": "há 1 mês",
+      "pageIndex": 32,
+      "published": "2026-07-22T17:40:43.028Z",
+      "thumb": "https://i.ytimg.com/vi/UtnbtFlDx8o/hqdefault.jpg",
+      "category": "gameplay",
+      "views": "11 mil visualizações"
     },
     {
       "id": "pZgw21s_xPA",
       "title": "Echoes of Aincrad : A Primeira Meia Hora (PC)[4K]",
       "url": "https://www.youtube.com/watch?v=pZgw21s_xPA",
       "publishedRelative": "há 1 mês",
-      "pageIndex": 26,
-      "published": "2026-07-18T15:36:00.068Z",
+      "pageIndex": 33,
+      "published": "2026-07-22T17:40:43.028Z",
       "thumb": "https://i.ytimg.com/vi/pZgw21s_xPA/hqdefault.jpg",
-      "category": "primeira-meia-hora"
+      "category": "primeira-meia-hora",
+      "views": "131 mil visualizações"
     },
     {
       "id": "j_HIamIcwZQ",
       "title": "[CompletoZ #89-2] : Grand Theft Auto V Enhanced (2013-2025) Gameplay Completo (Ps3/Ps4/Ps5/Xbox/PC)",
       "url": "https://www.youtube.com/watch?v=j_HIamIcwZQ",
       "publishedRelative": "há 1 mês",
-      "pageIndex": 27,
-      "published": "2026-07-18T15:36:00.068Z",
+      "pageIndex": 34,
+      "published": "2026-07-22T17:40:43.028Z",
       "thumb": "https://i.ytimg.com/vi/j_HIamIcwZQ/hqdefault.jpg",
-      "category": "gameplay"
+      "category": "gameplay",
+      "views": "21 mil visualizações"
     },
     {
       "id": "fZojoxojAa8",
       "title": "Hold Your King - Tutorial de como perder amigos (PC)[4K]",
       "url": "https://www.youtube.com/watch?v=fZojoxojAa8",
       "publishedRelative": "há 1 mês",
-      "pageIndex": 28,
-      "published": "2026-07-18T15:36:00.068Z",
+      "pageIndex": 35,
+      "published": "2026-07-22T17:40:43.028Z",
       "thumb": "https://i.ytimg.com/vi/fZojoxojAa8/hqdefault.jpg",
-      "category": "gameplay"
+      "category": "gameplay",
+      "views": "14 mil visualizações"
     },
     {
       "id": "t_A6uK06jvY",
       "title": "[CompletoZ #89-1] : Grand Theft Auto V Enhanced (2013-2025) Gameplay Completo (Ps3/Ps4/Ps5/Xbox/PC)",
       "url": "https://www.youtube.com/watch?v=t_A6uK06jvY",
       "publishedRelative": "1 month ago",
-      "pageIndex": 29,
+      "pageIndex": 36,
       "published": "2026-07-18T15:36:00.068Z",
       "thumb": "https://i.ytimg.com/vi/t_A6uK06jvY/hqdefault.jpg",
       "category": "gameplay"
@@ -428,7 +530,7 @@
       "title": "This Indie Sold 7 MILLION in 12 Days! Meccha Chameleon Gameplay (PC)[4K]",
       "url": "https://www.youtube.com/watch?v=5j7uHjaOPMI",
       "publishedRelative": "1 month ago",
-      "pageIndex": 30,
+      "pageIndex": 37,
       "published": "2026-07-18T15:36:00.068Z",
       "thumb": "https://i.ytimg.com/vi/5j7uHjaOPMI/hqdefault.jpg",
       "category": "gameplay"
@@ -438,7 +540,7 @@
       "title": "They Are Here: Alien Abduction Horror - When the Varginha Alien meets ET Bilu! (PC)[4K]",
       "url": "https://www.youtube.com/watch?v=yuve24Z3zNY",
       "publishedRelative": "1 month ago",
-      "pageIndex": 31,
+      "pageIndex": 38,
       "published": "2026-07-18T15:36:00.068Z",
       "thumb": "https://i.ytimg.com/vi/yuve24Z3zNY/hqdefault.jpg",
       "category": "gameplay"
@@ -448,7 +550,7 @@
       "title": "The Evolution of STAR FOX in 33 Years!",
       "url": "https://www.youtube.com/watch?v=Lf553CSi9zw",
       "publishedRelative": "2 months ago",
-      "pageIndex": 32,
+      "pageIndex": 39,
       "published": "2026-07-18T15:36:00.068Z",
       "thumb": "https://i.ytimg.com/vi/Lf553CSi9zw/hqdefault.jpg",
       "category": "sagas"
@@ -458,79 +560,9 @@
       "title": "SAND: Raiders of Sophie - The New Extraction PvPvE (PC) [4K]",
       "url": "https://www.youtube.com/watch?v=cvuUgc_iEUY",
       "publishedRelative": "2 months ago",
-      "pageIndex": 33,
+      "pageIndex": 40,
       "published": "2026-07-18T15:36:00.068Z",
       "thumb": "https://i.ytimg.com/vi/cvuUgc_iEUY/hqdefault.jpg",
-      "category": "gameplay"
-    },
-    {
-      "id": "OKdfm8APcdU",
-      "title": "A Indústria de Games está Colapsando. GTA 6 Pode Mudar Tudo?",
-      "url": "https://www.youtube.com/watch?v=OKdfm8APcdU",
-      "publishedRelative": "há 1 mês",
-      "pageIndex": 34,
-      "published": "2026-07-18T15:36:00.067Z",
-      "thumb": "https://i.ytimg.com/vi/OKdfm8APcdU/hqdefault.jpg",
-      "category": "especiais"
-    },
-    {
-      "id": "qWmgUEjUAwY",
-      "title": "BOMBANANA! - Macacos, risadas, explosões e amizade em teste! (PC)[4K]",
-      "url": "https://www.youtube.com/watch?v=qWmgUEjUAwY",
-      "publishedRelative": "há 1 mês",
-      "pageIndex": 35,
-      "published": "2026-07-18T15:36:00.067Z",
-      "thumb": "https://i.ytimg.com/vi/qWmgUEjUAwY/hqdefault.jpg",
-      "category": "gameplay"
-    },
-    {
-      "id": "K2szI_fbb4k",
-      "title": "Doom: The Dark Ages | Revelações (DLC) : A Primeira Meia Hora (PC)[4K]",
-      "url": "https://www.youtube.com/watch?v=K2szI_fbb4k",
-      "publishedRelative": "há 1 mês",
-      "pageIndex": 36,
-      "published": "2026-07-18T15:36:00.067Z",
-      "thumb": "https://i.ytimg.com/vi/K2szI_fbb4k/hqdefault.jpg",
-      "category": "primeira-meia-hora"
-    },
-    {
-      "id": "w4ETOWhDQX0",
-      "title": "Palworld : 2 Anos Depois + Os Pals Cresceram! ( ͡° ͜ʖ ͡°) (PC)[2K]",
-      "url": "https://www.youtube.com/watch?v=w4ETOWhDQX0",
-      "publishedRelative": "há 1 mês",
-      "pageIndex": 37,
-      "published": "2026-07-18T15:36:00.067Z",
-      "thumb": "https://i.ytimg.com/vi/w4ETOWhDQX0/hqdefault.jpg",
-      "category": "retrospectiva"
-    },
-    {
-      "id": "UebNh9kyGIA",
-      "title": "Assassin's Creed Black Flag Resynced : Vale ou Não a Pena Jogar!?",
-      "url": "https://www.youtube.com/watch?v=UebNh9kyGIA",
-      "publishedRelative": "há 1 mês",
-      "pageIndex": 38,
-      "published": "2026-07-18T15:36:00.067Z",
-      "thumb": "https://i.ytimg.com/vi/UebNh9kyGIA/hqdefault.jpg",
-      "category": "vale-a-pena"
-    },
-    {
-      "id": "HQ1qNcjvJDI",
-      "title": "Assassin's Creed Black Flag Resynced : Gameplay Comparativo (2013-2026)(Playstation 5 Pro)[4K]",
-      "url": "https://www.youtube.com/watch?v=HQ1qNcjvJDI",
-      "publishedRelative": "há 1 mês",
-      "pageIndex": 39,
-      "published": "2026-07-18T15:36:00.067Z",
-      "thumb": "https://i.ytimg.com/vi/HQ1qNcjvJDI/hqdefault.jpg",
-      "category": "gameplay"
-    },
-    {
-      "id": "UtnbtFlDx8o",
-      "title": "GRAIN ROT - Robôs, Loot, Caos Cooperativo e Extração! (PC)[4K]",
-      "url": "https://www.youtube.com/watch?v=UtnbtFlDx8o",
-      "publishedRelative": "há 1 mês",
-      "pageIndex": 40,
-      "published": "2026-07-18T15:36:00.067Z",
-      "thumb": "https://i.ytimg.com/vi/UtnbtFlDx8o/hqdefault.jpg",
       "category": "gameplay"
     },
     {

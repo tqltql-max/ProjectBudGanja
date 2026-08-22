@@ -10,7 +10,8 @@ const { stampCatalog } = require('../lib/slivki-categories.js');
 
 async function main() {
   const { catalog, slug, path: outPath } = await buildChannelCatalogFromUrl(
-    'https://www.youtube.com/@slivkishowen'
+    'https://www.youtube.com/@slivkishowen',
+    { persist: false }
   );
   const stamped = stampCatalog(
     Object.assign({}, catalog, {

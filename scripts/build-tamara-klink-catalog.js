@@ -13,7 +13,8 @@ const SLUG = 'tamaraklink';
 
 async function main() {
   const { catalog, slug, path: outPath } = await buildChannelCatalogFromUrl(
-    'https://www.youtube.com/@TamaraKlink'
+    'https://www.youtube.com/@TamaraKlink',
+    { persist: false }
   );
   const stamped = stampCatalog(catalog);
   saveCatalog(slug, stamped);
