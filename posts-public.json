@@ -2774,6 +2774,25 @@
     "seriesLabel": "Barbatimão"
   },
   {
+    "title": "Inspeção: A orelha cola o que a boca juntou",
+    "titleEn": "Inspection: The ear glues what the mouth joined",
+    "titleEs": "Inspección: El oído pega lo que la boca juntó",
+    "excerpt": "Expressões: a orelha cola o que a boca juntou — ofício do lab; dois eixos, duas frases; Valeu !!!",
+    "excerptEn": "Sayings: the ear glues what the mouth joined — lab craft; two axes, two sentences; Valeu !!!",
+    "excerptEs": "Dichos: el oído pega lo que la boca juntó — oficio del lab; dos ejes, dos frases; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou",
+    "url": "/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html",
+    "date": "2026-08-22T07:00:00.000Z",
+    "filename": "posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html",
+    "coverImage": "/imagens/inspecoes/orelha-cola-boca-juntou-cover.jpg",
+    "category": "inspecao",
+    "series": "expressoes-ditados",
+    "seriesOrder": 24,
+    "seriesLabel": "orelha cola · expressão"
+  },
+  {
     "title": "Inspeção: Planta — Jaborandi — pilocarpina e glaucoma histórico",
     "titleEn": "Inspection: Plant — Jaborandi — pilocarpine and historical glaucoma",
     "titleEs": "Inspección: Planta — Jaborandi — pilocarpina y glaucoma histórico",
@@ -6059,6 +6078,25 @@
     "series": "palavras-origem",
     "seriesOrder": 206,
     "seriesLabel": "Bode · palavra"
+  },
+  {
+    "title": "Inspeção: Escravidão — o nome do cativeiro",
+    "titleEn": "Inspection: Escravidão — the name of bondage",
+    "titleEs": "Inspección: Escravidão — el nombre del cautiverio",
+    "excerpt": "Palavras: escravidão (sclavus + -idão) — cativeiro legalizado, cana, diáspora; reconhecimento em sala à parte; Valeu !!!",
+    "excerptEn": "Words: escravidão (sclavus + -idão) — legalized bondage, cane, diaspora; thanks in another room; Valeu !!!",
+    "excerptEs": "Palabras: escravidão (sclavus + -idão) — cautiverio legalizado, caña, diáspora; reconocimiento en otra sala; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-escravidao",
+    "url": "/posts/post-inspecao-palavra-escravidao.html",
+    "date": "2026-08-22T06:40:00.000Z",
+    "filename": "posts/post-inspecao-palavra-escravidao.html",
+    "coverImage": "/imagens/inspecoes/escravidao-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 207,
+    "seriesLabel": "Escravidão · palavra"
   },
   {
     "title": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

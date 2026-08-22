@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:28:38.549Z",
+  "updatedAt": "2026-08-22T06:43:14.058Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4108,24 +4108,27 @@
     },
     {
       "id": "palavra-escravidao",
-      "title": "Escravidão — vínculo, memória BR e léxico do obrigar",
-      "titleEn": "Slavery — bond, Brazilian memory and the lexicon of obliging",
-      "titleEs": "Esclavitud — vínculo, memoria BR y léxico del obligar",
+      "title": "Escravidão — o nome do cativeiro",
+      "titleEn": "Escravidão — the name of bondage",
+      "titleEs": "Escravidão — el nombre del cautiverio",
       "tipo": "palavra",
       "priority": 2,
-      "status": "ideia",
-      "why": "Palavras: escravidão — elo com Gratidão (obligare), cana/engenhos e verdade histórica; sem reduzir gratidão a crime.",
-      "whyEn": "Words: slavery — link to Gratidão (obligare), cane/mills and historical truth; without reducing gratitude to crime.",
-      "whyEs": "Palabras: esclavitud — vínculo con Gratidão (obligare), caña/ingenios y verdad histórica; sin reducir gratitud a crimen.",
+      "status": "feita",
+      "why": "Palavras: escravidão (sclavus + -idão) — cativeiro legalizado, cana, diáspora; reconhecimento em sala à parte; Valeu !!!",
+      "whyEn": "Words: escravidão (sclavus + -idão) — legalized bondage, cane, diaspora; thanks in another room; Valeu !!!",
+      "whyEs": "Palabras: escravidão (sclavus + -idão) — cautiverio legalizado, caña, diáspora; reconocimiento en otra sala; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-escravidao",
       "seriesHint": "palavras-origem",
       "sources": [
+        "https://pt.wiktionary.org/wiki/escravid%C3%A3o",
         "/posts/post-inspecao-palavra-gratidao.html",
+        "/posts/post-inspecao-expressao-muito-obrigado.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
-        "/posts/post-inspecao-palavra-verdade.html"
+        "/posts/post-inspecao-palavra-verdade.html",
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
-      "notes": "Ideia a partir do Cap. 8 Expressões (Gratidão × escravidão)."
+      "notes": "Cap. 207 — dois eixos, duas frases; lei da época ≠ art. 149.",
+      "doneHref": "/posts/post-inspecao-palavra-escravidao.html"
     },
     {
       "id": "expressao-eojsofaorforap",
@@ -8091,6 +8094,30 @@
         "/posts/post-inspecao-expressao-elo-de-ligacao.html"
       ],
       "notes": "Cap. 23 Expressões — postura vertical; oito erguido."
+    },
+    {
+      "id": "expressao-a-orelha-cola-o-que-a-boca-juntou",
+      "title": "A orelha cola o que a boca juntou",
+      "titleEn": "The ear glues what the mouth joined",
+      "titleEs": "El oído pega lo que la boca juntó",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: a orelha cola o que a boca juntou — ofício do lab; dois eixos, duas frases; Valeu !!!",
+      "whyEn": "Sayings: the ear glues what the mouth joined — lab craft; two axes, two sentences; Valeu !!!",
+      "whyEs": "Dichos: el oído pega lo que la boca juntó — oficio del lab; dos ejes, dos frases; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou",
+      "doneHref": "/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/orelha",
+        "https://pt.wiktionary.org/wiki/boca",
+        "https://pt.wiktionary.org/wiki/cola",
+        "/posts/post-inspecao-palavra-cola-colar.html",
+        "/posts/post-inspecao-palavra-escravidao.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 24 Expressões — cola de frase; corte: duas frases."
     }
   ]
 }

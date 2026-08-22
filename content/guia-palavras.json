@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:28:38.556Z",
+  "updatedAt": "2026-08-22T06:43:18.011Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4812,6 +4812,22 @@
       "curiositiesEs": "El laboratorio sella Brasil con P de Perigo: la cometa queda, la línea cortante no. Ficha ≠ receta. Cola de zapatero es otro P (tolueno), solo literacia."
     },
     {
+      "id": "a-orelha-cola-o-que-a-boca-juntou",
+      "word": "a orelha cola o que a boca juntou",
+      "simple": "Ofício do lab — a boca junta dois objectos num sopro; a orelha cola; corte: duas frases. Valeu !!!",
+      "simpleEn": "Lab craft — the mouth joins two objects in one breath; the ear glues; cut: two sentences. Valeu !!!",
+      "simpleEs": "Oficio del lab — la boca junta dos objetos en un soplo; el oído pega; corte: dos frases. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html",
+      "history": "A orelha cola o que a boca juntou é ofício do laboratório, não ditado de pátio. Nomeia a cola de frase: dois objectos no mesmo sopro; o ouvido pega o par, mesmo quando a boca veio negar.",
+      "curiosities": "O corte é duas frases, dois pontos. Distinto de «a orelha cola; o étimo corta», que é tesoura de som × origem (link / Klink). Caso de campo: escravidão fechada com dois eixos em salas apartadas.",
+      "historyEn": "“The ear glues what the mouth joined” is lab craft, not an old yard proverb. It names phrase-glue: two objects in one breath; the ear takes the pair, even when the mouth came to deny.",
+      "curiositiesEn": "The cut is two sentences, two stops. Distinct from “the ear glues; the etymon cuts”, which is sound × origin scissors (link / Klink). Field case: escravidão closed with two axes in separate rooms.",
+      "historyEs": "«El oído pega lo que la boca juntó» es oficio del laboratorio, no dicho de patio. Nombra la cola de frase: dos objetos en un soplo; el oído toma el par, incluso cuando la boca vino a negar.",
+      "curiositiesEs": "El corte son dos frases, dos puntos. Distinto de «el oído pega; el étimo corta», tijera de sonido × origen (link / Klink). Caso de campo: escravidão cerrada con dos ejes en salas apartadas."
+    },
+    {
       "id": "mequetrefe",
       "word": "Mequetrefe",
       "simple": "Porta Palavra #5 (Gregorio): mequetrefe e todas as peças do vídeo nesta página — jururu, pinimba, cooper, lorota, brechó.",
@@ -5572,6 +5588,22 @@
       "curiositiesEn": "Do not merge with graça, gratificação, or grátis. Links: Gratidão and valeu sheets. Piece method: like veneno.",
       "historyEs": "Gratidão viene del latín tardío grātitūdō, de grātus (agradable, reconocido) + sufijo de cualidad -tūdō. En el laboratorio nombra la cualidad; obrigado (obligare) y valeu (valēre) son soplos con otros étimos. Grato es el adjetivo.",
       "curiositiesEs": "No fusionar con graça, gratificação ni grátis. Vínculos: fichas Gratidão y valeu. Método de piezas: como veneno."
+    },
+    {
+      "id": "escravidao",
+      "word": "escravidão",
+      "simple": "Escravo + -idão ← sclavus — cativeiro que a lei permitiu; engenho/cana; reconhecimento noutra sala; Valeu !!!",
+      "simpleEn": "Escravo + -idão ← sclavus — bondage the law allowed; cane mills; thanks in another room; Valeu !!!",
+      "simpleEs": "Escravo + -idão ← sclavus — cautiverio que la ley permitió; ingenio/caña; reconocimiento en otra sala; ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-escravidao.html",
+      "history": "Escravidão junta escravo (lat. med. sclavus) com o sufixo -idão. No Brasil o vocábulo nomeia o cativeiro dos engenhos e do tráfico atlântico — não o agradecimento.",
+      "curiosities": "O laboratório separa o vocábulo do engenho do vocábulo do reconhecimento: dois eixos, duas frases. A orelha cola o que a boca juntou — ficha própria.",
+      "historyEn": "Portuguese escravidão joins escravo (Med. Lat. sclavus) with the suffix -idão. In Brazil the word names mill bondage and the Atlantic trade — not thanks.",
+      "curiositiesEn": "The lab keeps the mill word apart from the thanks word: two axes, two sentences. The ear glues what the mouth joined — a sheet of its own.",
+      "historyEs": "Escravidão junta escravo (lat. med. sclavus) con el sufijo -idão. En Brasil el vocablo nombra el cautiverio de los ingenios y del tráfico atlántico — no el agradecimiento.",
+      "curiositiesEs": "El laboratorio separa el vocablo del ingenio del vocablo del reconocimiento: dos ejes, dos frases. El oído pega lo que la boca juntó — ficha propia."
     },
     {
       "id": "multitarefa",
