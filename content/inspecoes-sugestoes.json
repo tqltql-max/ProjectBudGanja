@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T17:59:08.965Z",
+  "updatedAt": "2026-08-22T18:30:52.622Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8370,6 +8370,46 @@
         "/posts/post-inspecao-palavra-sangue.html"
       ],
       "notes": "Cap. 215 — par sangue."
+    },
+    {
+      "id": "palavra-pedra",
+      "title": "Pedra — πέτρα; Pedro no mesmo tronco; a orelha cola perdão",
+      "titleEn": "Pedra — πέτρα; Pedro same stem; the ear glues perdão",
+      "titleEs": "Pedra — πέτρα; Pedro el mismo tronco; el oído pega perdão",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: pedra ← πέτρα / petra. Pedro mesmo étimo. Perdão (perdonare) é cola de orelha. Irmã gesso.",
+      "whyEn": "Words: pedra ← πέτρα / petra. Pedro same etymon. Perdão (perdonare) is ear-glue. Sister gesso.",
+      "whyEs": "Palabras: pedra ← πέτρα / petra. Pedro el mismo étimo. Perdão es cola de oído. Hermana gesso.",
+      "suggestedSlug": "inspecao-palavra-pedra",
+      "doneHref": "/posts/post-inspecao-palavra-pedra.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/pedra",
+        "/posts/post-inspecao-palavra-gesso.html"
+      ],
+      "notes": "Cap. 216 — par gesso."
+    },
+    {
+      "id": "palavra-gesso",
+      "title": "Gesso — γύψος; braço direito quebrado → ingessado",
+      "titleEn": "Gesso — γύψος; broken right arm → in plaster",
+      "titleEs": "Gesso — γύψος; brazo derecho quebrado → enyesado",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: gesso ← γύψος. ≠ geologia (γῆ). Quebrado → ingessado (gatilho ingessadado). Braço direito. Irmã pedra.",
+      "whyEn": "Words: gesso ← γύψος. ≠ geology (γῆ). Broken → in plaster (slip ingessadado). Right arm. Sister pedra.",
+      "whyEs": "Palabras: gesso ← γύψος. ≠ geología (γῆ). Quebrado → enyesado (lapsus ingessadado). Brazo derecho. Hermana pedra.",
+      "suggestedSlug": "inspecao-palavra-gesso",
+      "doneHref": "/posts/post-inspecao-palavra-gesso.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/gesso",
+        "/posts/post-inspecao-palavra-pedra.html"
+      ],
+      "notes": "Cap. 217 — par pedra."
     }
   ]
 }
