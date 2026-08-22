@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:19:36.831Z",
+  "updatedAt": "2026-08-22T06:23:16.867Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -225,7 +225,7 @@
       "fromTitle": false,
       "href": "/plantas/alecrim/",
       "history": "Alecrim vem do árabe al-iklil (coroa / alecrim) e nomeia Salvia rosmarinus, antes Rosmarinus officinalis. Lineu descreveu o género no século XVIII; a reclassificação em Salvia é de 2017.",
-      "curiosities": "Nos rascunhos das aulas XIV o arbusto entra como planta de cozinha e de cineol — catálogo etnobotânico, não receita de cultivo. Não confundir com o alecrim-do-campo (*Baccharis dracunculifolia*), fonte da própolis verde.",
+      "curiosities": "Nos rascunhos das aulas XIV o arbusto entra como planta de cozinha e de cineol — catálogo etnobotânico, não receita de cultivo.",
       "historyEn": "Portuguese alecrim comes from Arabic al-iklil (crown / rosemary) and names Salvia rosmarinus, formerly Rosmarinus officinalis. Linnaeus described the genus in the 18th century; the move into Salvia is from 2017.",
       "curiositiesEn": "In the XIV lesson drafts the shrub enters as a kitchen plant and a cineole marker — ethnobotanical catalogue, not a grow recipe.",
       "historyEs": "Alecrim viene del árabe al-iklil (corona / romero) y nombra Salvia rosmarinus, antes Rosmarinus officinalis. Linneo describió el género en el siglo XVIII; la reclasificación en Salvia es de 2017.",
@@ -606,6 +606,38 @@
       "curiositiesEn": "The lexical sheet refuses to collapse the word into the Animais hub: one spoken word, another catalogue.",
       "historyEs": "Animal viene del latín animal, de anima — ser animado. En portugués también oscila entre cariño e insulto, según el tono.",
       "curiositiesEs": "La ficha léxica se niega a colapsar el vocablo en el hub Animais: una palabra de boca, otro de catálogo."
+    },
+    {
+      "id": "bode",
+      "word": "bode",
+      "simple": "Macho caprino (étimo incerto) — bode expiatório e gíria BR; ≠ adega ES; elo preguiça; Valeu !!!",
+      "simpleEn": "Billy goat (uncertain etymon) — scapegoat and BR slang; ≠ Spanish wine cellar; link preguiça; Valeu !!!",
+      "simpleEs": "Macho cabrío (étimo incerto) — chivo expiatorio y jerga BR; ≠ bodega ES; vínculo preguiça; ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-bode.html",
+      "history": "Bode nomeia o macho caprino em português; o étimo é incerto (substrato hispânico), distinto de cabra (lat. capra) e do espanhol bode (adega). No BR também é o expiatório e a gíria «estar de bode».",
+      "curiosities": "A inspeção cruza o caprino com preguiça: dois animais que a fala moralizou — luxúria/irritação versus acédia; Valeu !!! sem fazer de ninguém o bode.",
+      "historyEn": "Portuguese bode names the billy goat; the etymon is uncertain (Hispanic substrate), distinct from cabra (Lat. capra) and from Spanish bode (wine cellar). In Brazil it is also the scapegoat and the slang «estar de bode».",
+      "curiositiesEn": "The inspection crosses the goat with preguiça: two animals speech moralized — lust/irritation versus sloth; Valeu !!! without making anyone the scapegoat.",
+      "historyEs": "Bode nombra el macho cabrío en portugués; el étimo es incierto (sustrato hispánico), distinto de cabra (lat. capra) y del español bode (bodega). En BR también es el chivo expiatorio y la jerga «estar de bode».",
+      "curiositiesEs": "La inspección cruza el caprino con preguiça: dos animales que el habla moralizó — lujuria/irritación versus acidia; Valeu !!! sin hacer de nadie el chivo."
+    },
+    {
+      "id": "preguica",
+      "word": "preguiça",
+      "simple": "Lat. pigritia — relutância, pecado capital e bicho-preguiça; descanso ≠ vício; elo bode; Valeu !!!",
+      "simpleEn": "Lat. pigritia — reluctance, capital sin and the sloth; rest ≠ vice; link bode; Valeu !!!",
+      "simpleEs": "Lat. pigritia — renuencia, pecado capital y perezoso; descanso ≠ vicio; vínculo bode; ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-preguica.html",
+      "history": "Preguiça vem do latim pigritia (piger: lento, relutante). No português cola o estado e o pecado com o bicho-preguiça (Folivora), mamífero baptizado pelo vício.",
+      "curiosities": "O laboratório corta: ecologia lenta ≠ pecado; nap e colchão não são esta palavra. O par com bode mapeia projecções — Valeu !!! sem se acusar.",
+      "historyEn": "Portuguese preguiça comes from Latin pigritia (piger: slow, reluctant). The language glues the state and the sin to the sloth (Folivora), a mammal named after the vice.",
+      "curiositiesEn": "The lab cuts: slow ecology ≠ sin; nap and mattress are not this word. The pair with bode maps projections — Valeu !!! without self-accusation.",
+      "historyEs": "Preguiça viene del latín pigritia (piger: lento, renuente). En portugués pega el estado y el pecado con el perezoso (Folivora), mamífero bautizado por el vicio.",
+      "curiositiesEs": "El laboratorio corta: ecología lenta ≠ pecado; nap y colchón no son esta palabra. El par con bode mapea proyecciones — Valeu !!! sin acusarse."
     },
     {
       "id": "cuca",
@@ -4052,12 +4084,12 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-impressao-pressao.html",
-      "history": "Impressão e pressão vêm do latim premere (apertar). Impressão é in- + pressão: a marca para dentro. Expressão aperta para fora. Inspiração (spirare) é outro étimo.",
-      "curiosities": "O objecto desta ficha é a panela de pressão e a válvula de escape. Escape preso = P de Perigo. Aff é a válvula oral. Ficha ≠ anular a peça.",
-      "historyEn": "Impressão and pressão come from Latin premere (to press). Impression is in- + pressure: the inward mark. Expression presses out. Inspiration (spirare) is another etymon.",
-      "curiositiesEn": "This sheet’s object is the pressure cooker and the release valve. A blocked valve = P for Danger. Aff is the oral valve. Sheet ≠ how to disable the part.",
-      "historyEs": "Impressão y pressão vienen del latín premere. La impresión es in- + presión: la marca hacia dentro. La expresión aprieta hacia fuera. Inspiración (spirare) es otro étimo.",
-      "curiositiesEs": "El objeto de esta ficha es la olla a presión y la válvula de escape. Válvula presa = P de Perigo. Aff es la válvula oral. Ficha ≠ anular la pieza."
+      "history": "Nesta ficha a válvula de escape é o alívio da panela de pressão: deixa sair o excesso para o vaso não mentir que aguenta tudo.",
+      "curiosities": "Aff é a válvula oral; PQP a de pico. Escape de motor ou turbo é outro objecto. O laboratório recusa ensinar a anular a peça.",
+      "historyEn": "On this sheet the release valve is the cooker’s relief: it lets excess out so the vessel does not pretend it can hold everything.",
+      "curiositiesEn": "Aff is the oral valve; PQP the peak valve. Car exhaust is another object. The lab refuses to teach disabling the part.",
+      "historyEs": "En esta ficha la válvula de escape es el alivio de la olla: deja salir el exceso para que el vaso no mienta.",
+      "curiositiesEs": "Aff es la válvula oral; PQP la de pico. El escape del motor es otro objeto. El laboratorio rechaza enseñar a anular la pieza."
     },
     {
       "id": "panela-de-pressao",
@@ -4068,12 +4100,12 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-impressao-pressao.html",
-      "history": "Impressão e pressão vêm do latim premere (apertar). Impressão é in- + pressão: a marca para dentro. Expressão aperta para fora. Inspiração (spirare) é outro étimo.",
-      "curiosities": "O objecto desta ficha é a panela de pressão e a válvula de escape. Escape preso = P de Perigo. Aff é a válvula oral. Ficha ≠ anular a peça.",
-      "historyEn": "Impressão and pressão come from Latin premere (to press). Impression is in- + pressure: the inward mark. Expression presses out. Inspiration (spirare) is another etymon.",
-      "curiositiesEn": "This sheet’s object is the pressure cooker and the release valve. A blocked valve = P for Danger. Aff is the oral valve. Sheet ≠ how to disable the part.",
-      "historyEs": "Impressão y pressão vienen del latín premere. La impresión es in- + presión: la marca hacia dentro. La expresión aprieta hacia fuera. Inspiración (spirare) es otro étimo.",
-      "curiositiesEs": "El objeto de esta ficha es la olla a presión y la válvula de escape. Válvula presa = P de Perigo. Aff es la válvula oral. Ficha ≠ anular la pieza."
+      "history": "A panela de pressão é o vaso doméstico que segura vapor. O antecedente clássico é o digestor de Denis Papin (séc. XVII).",
+      "curiosities": "No Brasil é utensílio e notícia quando falha. Válvula livre = ofício; válvula presa = P de Perigo. Ficha ≠ receita nem truque.",
+      "historyEn": "The pressure cooker is the household vessel that holds steam. The classic ancestor is Denis Papin’s digester (17th century).",
+      "curiositiesEn": "In Brazil it is both a utensil and news when it fails. A free valve = craft; a blocked valve = P for Danger. Sheet ≠ recipe.",
+      "historyEs": "La olla a presión es el vaso doméstico que sujeta vapor. El antecedente clásico es el digestor de Denis Papin (s. XVII).",
+      "curiositiesEs": "En Brasil es utensilio y noticia cuando falla. Válvula libre = oficio; presa = P de Perigo. Ficha ≠ receta."
     },
     {
       "id": "impressionado",
@@ -4084,12 +4116,12 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-impressao-pressao.html",
-      "history": "Impressão e pressão vêm do latim premere (apertar). Impressão é in- + pressão: a marca para dentro. Expressão aperta para fora. Inspiração (spirare) é outro étimo.",
-      "curiosities": "O objecto desta ficha é a panela de pressão e a válvula de escape. Escape preso = P de Perigo. Aff é a válvula oral. Ficha ≠ anular a peça.",
-      "historyEn": "Impressão and pressão come from Latin premere (to press). Impression is in- + pressure: the inward mark. Expression presses out. Inspiration (spirare) is another etymon.",
-      "curiositiesEn": "This sheet’s object is the pressure cooker and the release valve. A blocked valve = P for Danger. Aff is the oral valve. Sheet ≠ how to disable the part.",
-      "historyEs": "Impressão y pressão vienen del latín premere. La impresión es in- + presión: la marca hacia dentro. La expresión aprieta hacia fuera. Inspiración (spirare) es otro étimo.",
-      "curiositiesEs": "El objeto de esta ficha es la olla a presión y la válvula de escape. Válvula presa = P de Perigo. Aff es la válvula oral. Ficha ≠ anular la pieza."
+      "history": "Impressionado é o particípio vivo: quem recebeu a impressão. Mesma família de premere, não de spirare.",
+      "curiosities": "No fio do laboratório o peito marcado devolve crédito (Gratidão) e segue o ofício (Valeu !!!).",
+      "historyEn": "Impressionado is the living participle: the one who received the impression. Same family as premere, not spirare.",
+      "curiositiesEn": "In the lab thread a marked chest returns credit (Gratidão) and continues the craft (Valeu !!!).",
+      "historyEs": "Impressionado es el participio vivo: quien recibió la impresión. Misma familia de premere, no de spirare.",
+      "curiositiesEs": "En el hilo del laboratorio el pecho marcado devuelve crédito (Gratidão) y sigue el oficio (¡Valeu !!!)."
     },
     {
       "id": "pressao",
@@ -4100,12 +4132,12 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-impressao-pressao.html",
-      "history": "Impressão e pressão vêm do latim premere (apertar). Impressão é in- + pressão: a marca para dentro. Expressão aperta para fora. Inspiração (spirare) é outro étimo.",
-      "curiosities": "O objecto desta ficha é a panela de pressão e a válvula de escape. Escape preso = P de Perigo. Aff é a válvula oral. Ficha ≠ anular a peça.",
-      "historyEn": "Impressão and pressão come from Latin premere (to press). Impression is in- + pressure: the inward mark. Expression presses out. Inspiration (spirare) is another etymon.",
-      "curiositiesEn": "This sheet’s object is the pressure cooker and the release valve. A blocked valve = P for Danger. Aff is the oral valve. Sheet ≠ how to disable the part.",
-      "historyEs": "Impressão y pressão vienen del latín premere. La impresión es in- + presión: la marca hacia dentro. La expresión aprieta hacia fuera. Inspiración (spirare) es otro étimo.",
-      "curiositiesEs": "El objeto de esta ficha es la olla a presión y la válvula de escape. Válvula presa = P de Perigo. Aff es la válvula oral. Ficha ≠ anular la pieza."
+      "history": "Pressão vem do latim pressio ← premere / pressare — a força do aperto. Física, social, do peito, e o que a panela segura.",
+      "curiosities": "O mapa calculado é risco. Tensão arterial fica fora: ficha ≠ diagnóstico. Escape preso na panela = P de Perigo.",
+      "historyEn": "Portuguese pressão comes from Latin pressio ← premere — the force of the press. Physics, social life, the chest, and what the cooker holds.",
+      "curiositiesEn": "The calculated map is risco. Blood pressure stays off this sheet: not a diagnosis. A blocked cooker valve = P for Danger.",
+      "historyEs": "Pressão viene del latín pressio ← premere — la fuerza del apriete. Física, social, pecho, y lo que la olla sujeta.",
+      "curiositiesEs": "El mapa calculado es risco. La tensión arterial queda fuera: ficha ≠ diagnóstico. Válvula presa = P de Perigo."
     },
     {
       "id": "impressao",
@@ -4116,12 +4148,12 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-impressao-pressao.html",
-      "history": "Impressão e pressão vêm do latim premere (apertar). Impressão é in- + pressão: a marca para dentro. Expressão aperta para fora. Inspiração (spirare) é outro étimo.",
-      "curiosities": "O objecto desta ficha é a panela de pressão e a válvula de escape. Escape preso = P de Perigo. Aff é a válvula oral. Ficha ≠ anular a peça.",
-      "historyEn": "Impressão and pressão come from Latin premere (to press). Impression is in- + pressure: the inward mark. Expression presses out. Inspiration (spirare) is another etymon.",
-      "curiositiesEn": "This sheet’s object is the pressure cooker and the release valve. A blocked valve = P for Danger. Aff is the oral valve. Sheet ≠ how to disable the part.",
-      "historyEs": "Impressão y pressão vienen del latín premere. La impresión es in- + presión: la marca hacia dentro. La expresión aprieta hacia fuera. Inspiración (spirare) es otro étimo.",
-      "curiositiesEs": "El objeto de esta ficha es la olla a presión y la válvula de escape. Válvula presa = P de Perigo. Aff es la válvula oral. Ficha ≠ anular la pieza."
+      "history": "Impressão vem do latim impressio ← imprimere (in- + premere): apertar para dentro. A irmã expressão aperta para fora. Inspiração (spirare) é outro étimo.",
+      "curiosities": "No laboratório a marca pode ser papel, peito ou memória. Impressionado = quem recebeu o rasto. Teclado Impresssao = a mesma palavra.",
+      "historyEn": "Portuguese impressão comes from Latin impressio ← imprimere (in- + premere): to press inward. Sister expressão presses outward. Inspiration (spirare) is another etymon.",
+      "curiositiesEn": "In the lab the mark can be paper, chest or memory. Impressionado = the one who received the trace. Typed Impresssao = the same word.",
+      "historyEs": "Impressão viene del latín impressio ← imprimere: apretar hacia dentro. La hermana expressão aprieta hacia fuera. Inspiración (spirare) es otro étimo.",
+      "curiositiesEs": "En el laboratorio la marca puede ser papel, pecho o memoria. Impressionado = quien recibió el rastro. Teclado Impresssao = la misma palabra."
     },
     {
       "id": "interruptor",
@@ -4644,12 +4676,12 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-cola-colar.html",
-      "history": "Cola vem do grego kólla via latim vulgar colla (grude). Colar de pescoço vem de collum — outro étimo. No Brasil a mesma família desemboca na linha de pipa: colante, cortante, cerol.",
-      "curiosities": "O laboratório carimba Brasil com P de Perigo: pipa fica, linha cortante não. Ficha ≠ receita. Cola de sapateiro é outro P (tolueno), só literacia.",
-      "historyEn": "Cola comes from Greek kólla via Vulgar Latin colla (glue). The necklace colar comes from collum — another etymon. In Brazil the glue family meets the kite line: sticky, cutting, cerol.",
-      "curiositiesEn": "The lab stamps Brazil with P for Perigo: the kite stays, the cutting line does not. Sheet ≠ recipe. Shoe glue is another P (toluene), literacy only.",
-      "historyEs": "Cola viene del griego kólla vía latín vulgar colla. El collar viene de collum — otro étimo. En Brasil la familia desemboca en la línea de cometa: colante, cortante, cerol.",
-      "curiositiesEs": "El laboratorio sella Brasil con P de Perigo: la cometa queda, la línea cortante no. Ficha ≠ receta. Cola de zapatero es otro P, solo literacia."
+      "history": "Perigo vem do latim periculum — ameaça já no caminho, distinta do risco (perigo com contorno e mapa).",
+      "curiosities": "Brasil com P de Perigo: o caso desta ficha é a linha de pipa com cerol. Medo é o peito; risco é o cálculo; perigo é o fio na rua.",
+      "historyEn": "Portuguese perigo comes from Latin periculum — a threat already in the path, distinct from risco (danger with a contour and a map).",
+      "curiositiesEn": "Brazil with P for Perigo: this sheet’s case is the cerol kite line. Fear is the chest; risk is the calculation; danger is the string in the street.",
+      "historyEs": "Perigo viene del latín periculum — amenaza ya en el camino, distinta de risco (peligro con contorno y mapa).",
+      "curiositiesEs": "Brasil con P de Perigo: el caso de esta ficha es la línea de cometa con cerol. Miedo es el pecho; riesgo es el cálculo; peligro es el hilo en la calle."
     },
     {
       "id": "linha-pipa",
@@ -4660,12 +4692,12 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-cola-colar.html",
-      "history": "Cola vem do grego kólla via latim vulgar colla (grude). Colar de pescoço vem de collum — outro étimo. No Brasil a mesma família desemboca na linha de pipa: colante, cortante, cerol.",
-      "curiosities": "O laboratório carimba Brasil com P de Perigo: pipa fica, linha cortante não. Ficha ≠ receita. Cola de sapateiro é outro P (tolueno), só literacia.",
-      "historyEn": "Cola comes from Greek kólla via Vulgar Latin colla (glue). The necklace colar comes from collum — another etymon. In Brazil the glue family meets the kite line: sticky, cutting, cerol.",
-      "curiositiesEn": "The lab stamps Brazil with P for Perigo: the kite stays, the cutting line does not. Sheet ≠ recipe. Shoe glue is another P (toluene), literacy only.",
-      "historyEs": "Cola viene del griego kólla vía latín vulgar colla. El collar viene de collum — otro étimo. En Brasil la familia desemboca en la línea de cometa: colante, cortante, cerol.",
-      "curiositiesEs": "El laboratorio sella Brasil con P de Perigo: la cometa queda, la línea cortante no. Ficha ≠ receta. Cola de zapatero es otro P, solo literacia."
+      "history": "Nesta ficha linha é o fio da pipa. Fila, verso e linha de pesca são outros ofícios da mesma forma.",
+      "curiosities": "Linha cortante / cerol recebe o carimbo P de Perigo. A pipa pode subir com linha que seja só linha.",
+      "historyEn": "On this sheet linha is the kite string. A queue, a verse and fishing line are other jobs of the same form.",
+      "curiositiesEn": "A cutting line / cerol receives the P for Perigo stamp. The kite can rise on a line that is only a line.",
+      "historyEs": "En esta ficha linha es el hilo de la cometa. Fila, verso y línea de pesca son otros oficios de la misma forma.",
+      "curiositiesEs": "La línea cortante / cerol recibe el sello P de Perigo. La cometa puede subir con una línea que sea solo línea."
     },
     {
       "id": "pipa",
@@ -4676,12 +4708,12 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-cola-colar.html",
-      "history": "Cola vem do grego kólla via latim vulgar colla (grude). Colar de pescoço vem de collum — outro étimo. No Brasil a mesma família desemboca na linha de pipa: colante, cortante, cerol.",
-      "curiosities": "O laboratório carimba Brasil com P de Perigo: pipa fica, linha cortante não. Ficha ≠ receita. Cola de sapateiro é outro P (tolueno), só literacia.",
-      "historyEn": "Cola comes from Greek kólla via Vulgar Latin colla (glue). The necklace colar comes from collum — another etymon. In Brazil the glue family meets the kite line: sticky, cutting, cerol.",
-      "curiositiesEn": "The lab stamps Brazil with P for Perigo: the kite stays, the cutting line does not. Sheet ≠ recipe. Shoe glue is another P (toluene), literacy only.",
-      "historyEs": "Cola viene del griego kólla vía latín vulgar colla. El collar viene de collum — otro étimo. En Brasil la familia desemboca en la línea de cometa: colante, cortante, cerol.",
-      "curiositiesEs": "El laboratorio sella Brasil con P de Perigo: la cometa queda, la línea cortante no. Ficha ≠ receta. Cola de zapatero es otro P, solo literacia."
+      "history": "Pipa nomeia o brinquedo aéreo (também papagaio, raia, pandorga). Outros mapas — cachimbo, anuro, pipa de vinho — ficam fora desta ficha.",
+      "curiosities": "O laboratório recusa tratar a pipa como inimiga: o objecto perigoso é a linha cortante, não o papel no céu.",
+      "historyEn": "Pipa names the aerial toy (also papagaio, raia, pandorga). Other maps — pipe, toad, wine cask — stay off this sheet.",
+      "curiositiesEn": "The lab refuses to treat the kite as the enemy: the dangerous object is the cutting line, not paper in the sky.",
+      "historyEs": "Pipa nombra el juguete aéreo (también papagaio, raia, pandorga). Otros mapas — pipa, anuro, cuba — quedan fuera de esta ficha.",
+      "curiositiesEs": "El laboratorio rechaza tratar la cometa como enemiga: el objeto peligroso es la línea cortante, no el papel en el cielo."
     },
     {
       "id": "cerol",
@@ -4692,12 +4724,12 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-cola-colar.html",
-      "history": "Cola vem do grego kólla via latim vulgar colla (grude). Colar de pescoço vem de collum — outro étimo. No Brasil a mesma família desemboca na linha de pipa: colante, cortante, cerol.",
-      "curiosities": "O laboratório carimba Brasil com P de Perigo: pipa fica, linha cortante não. Ficha ≠ receita. Cola de sapateiro é outro P (tolueno), só literacia.",
-      "historyEn": "Cola comes from Greek kólla via Vulgar Latin colla (glue). The necklace colar comes from collum — another etymon. In Brazil the glue family meets the kite line: sticky, cutting, cerol.",
-      "curiositiesEn": "The lab stamps Brazil with P for Perigo: the kite stays, the cutting line does not. Sheet ≠ recipe. Shoe glue is another P (toluene), literacy only.",
-      "historyEs": "Cola viene del griego kólla vía latín vulgar colla. El collar viene de collum — otro étimo. En Brasil la familia desemboca en la línea de cometa: colante, cortante, cerol.",
-      "curiositiesEs": "El laboratorio sella Brasil con P de Perigo: la cometa queda, la línea cortante no. Ficha ≠ receta. Cola de zapatero es otro P, solo literacia."
+      "history": "Cerol é o nome brasileiro do revestimento que torna a linha de pipa colante e cortante. Fontes públicas descrevem adesivo mais abrasivo no fio — literacia, não receita.",
+      "curiosities": "Leis municipais e estaduais proíbem fabrico, venda e uso em muitos sítios. O pico cruza férias escolares. Pipa sem isto continua brinquedo.",
+      "historyEn": "Cerol is the Brazilian name for the coating that makes a kite line sticky and cutting. Public sources describe adhesive plus abrasive on the string — literacy, not a recipe.",
+      "curiositiesEn": "Municipal and state laws ban manufacture, sale and use in many places. Peaks cross school holidays. A kite without it remains a toy.",
+      "historyEs": "Cerol es el nombre brasileño del revestimiento que hace la línea de cometa colante y cortante. Fuentes públicas describen adhesivo más abrasivo en el hilo — literacia, no receta.",
+      "curiositiesEs": "Leyes municipales y estatales prohíben fabrico, venta y uso en muchos sitios. El pico cruza vacaciones escolares. La cometa sin esto sigue siendo juguete."
     },
     {
       "id": "cortante",
@@ -4708,12 +4740,12 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-cola-colar.html",
-      "history": "Cola vem do grego kólla via latim vulgar colla (grude). Colar de pescoço vem de collum — outro étimo. No Brasil a mesma família desemboca na linha de pipa: colante, cortante, cerol.",
-      "curiosities": "O laboratório carimba Brasil com P de Perigo: pipa fica, linha cortante não. Ficha ≠ receita. Cola de sapateiro é outro P (tolueno), só literacia.",
-      "historyEn": "Cola comes from Greek kólla via Vulgar Latin colla (glue). The necklace colar comes from collum — another etymon. In Brazil the glue family meets the kite line: sticky, cutting, cerol.",
-      "curiositiesEn": "The lab stamps Brazil with P for Perigo: the kite stays, the cutting line does not. Sheet ≠ recipe. Shoe glue is another P (toluene), literacy only.",
-      "historyEs": "Cola viene del griego kólla vía latín vulgar colla. El collar viene de collum — otro étimo. En Brasil la familia desemboca en la línea de cometa: colante, cortante, cerol.",
-      "curiositiesEs": "El laboratorio sella Brasil con P de Perigo: la cometa queda, la línea cortante no. Ficha ≠ receta. Cola de zapatero es otro P, solo literacia."
+      "history": "Cortante é o que corta. Na pipa brasileira a linha cortante deixa o céu e atravessa a rua — o capítulo do P de Perigo.",
+      "curiosities": "O adjectivo escolar (faca cortante) aqui vira dano público. Antena na moto é defesa de quem passa, não elogio do cerol.",
+      "historyEn": "Cortante is what cuts. On the Brazilian kite the cutting line leaves the sky and crosses the street — the P for Perigo chapter.",
+      "curiositiesEn": "The school adjective (a sharp knife) here becomes public harm. A motorcycle line-cutter is defence for those passing, not praise of cerol.",
+      "historyEs": "Cortante es lo que corta. En la cometa brasileña la línea cortante deja el cielo y cruza la calle — el capítulo del P de Perigo.",
+      "curiositiesEs": "El adjetivo escolar (cuchillo cortante) aquí vira daño público. La antena en la moto es defensa de quien pasa, no elogio del cerol."
     },
     {
       "id": "colante",
@@ -4724,12 +4756,12 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-cola-colar.html",
-      "history": "Cola vem do grego kólla via latim vulgar colla (grude). Colar de pescoço vem de collum — outro étimo. No Brasil a mesma família desemboca na linha de pipa: colante, cortante, cerol.",
-      "curiosities": "O laboratório carimba Brasil com P de Perigo: pipa fica, linha cortante não. Ficha ≠ receita. Cola de sapateiro é outro P (tolueno), só literacia.",
-      "historyEn": "Cola comes from Greek kólla via Vulgar Latin colla (glue). The necklace colar comes from collum — another etymon. In Brazil the glue family meets the kite line: sticky, cutting, cerol.",
-      "curiositiesEn": "The lab stamps Brazil with P for Perigo: the kite stays, the cutting line does not. Sheet ≠ recipe. Shoe glue is another P (toluene), literacy only.",
-      "historyEs": "Cola viene del griego kólla vía latín vulgar colla. El collar viene de collum — otro étimo. En Brasil la familia desemboca en la línea de cometa: colante, cortante, cerol.",
-      "curiositiesEs": "El laboratorio sella Brasil con P de Perigo: la cometa queda, la línea cortante no. Ficha ≠ receta. Cola de zapatero es otro P, solo literacia."
+      "history": "Colante é o adjectivo do que cola. No léxico da pipa brasileira descreve a linha que pega — o par do cortante.",
+      "curiosities": "Sem o pegar, o abrasivo não fica no fio. O laboratório nomeia o par, não ensina o fabrico.",
+      "historyEn": "Colante is the adjective of what sticks. In Brazilian kite speech it names the line that grips — the pair of cutting.",
+      "curiositiesEn": "Without the grip, the abrasive does not stay on the string. The lab names the pair; it does not teach manufacture.",
+      "historyEs": "Colante es el adjetivo de lo que pega. En el léxico de la cometa brasileña nombra la línea que adhiere — el par de lo cortante.",
+      "curiositiesEs": "Sin el pegar, el abrasivo no queda en el hilo. El laboratorio nombra el par; no enseña el fabrico."
     },
     {
       "id": "colar",
@@ -4740,12 +4772,12 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-cola-colar.html",
-      "history": "Cola vem do grego kólla via latim vulgar colla (grude). Colar de pescoço vem de collum — outro étimo. No Brasil a mesma família desemboca na linha de pipa: colante, cortante, cerol.",
-      "curiosities": "O laboratório carimba Brasil com P de Perigo: pipa fica, linha cortante não. Ficha ≠ receita. Cola de sapateiro é outro P (tolueno), só literacia.",
-      "historyEn": "Cola comes from Greek kólla via Vulgar Latin colla (glue). The necklace colar comes from collum — another etymon. In Brazil the glue family meets the kite line: sticky, cutting, cerol.",
-      "curiositiesEn": "The lab stamps Brazil with P for Perigo: the kite stays, the cutting line does not. Sheet ≠ recipe. Shoe glue is another P (toluene), literacy only.",
-      "historyEs": "Cola viene del griego kólla vía latín vulgar colla. El collar viene de collum — otro étimo. En Brasil la familia desemboca en la línea de cometa: colante, cortante, cerol.",
-      "curiositiesEs": "El laboratorio sella Brasil con P de Perigo: la cometa queda, la línea cortante no. Ficha ≠ receta. Cola de zapatero es otro P, solo literacia."
+      "history": "O verbo colar segue a cola (grude, copiar na prova, andar junto). O substantivo jóia vem de collum (pescoço) — homógrafo, outro étimo.",
+      "curiosities": "Nesta ficha o colar de pescoço só se declara para não o misturar com a linha no pescoço da rua.",
+      "historyEn": "The verb colar follows glue (to stick, to cheat, to hang out). The necklace noun comes from collum (neck) — a homograph, another etymon.",
+      "curiositiesEn": "On this sheet the necklace is named only so it is not mixed with the line at street neck height.",
+      "historyEs": "El verbo colar sigue el pegamento (pegar, copiar, juntarse). El collar viene de collum (cuello) — homógrafo, otro étimo.",
+      "curiositiesEs": "En esta ficha el collar solo se declara para no mezclarlo con la línea a la altura del cuello en la calle."
     },
     {
       "id": "cola",
@@ -4756,12 +4788,12 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-cola-colar.html",
-      "history": "Cola vem do grego kólla via latim vulgar colla (grude). Colar de pescoço vem de collum — outro étimo. No Brasil a mesma família desemboca na linha de pipa: colante, cortante, cerol.",
+      "history": "Cola vem do grego kólla via latim vulgar colla — o grude. No Brasil a mesma família desemboca na linha de pipa (colante, cortante, cerol). Refrigerante e noz-de-cola são outra raiz.",
       "curiosities": "O laboratório carimba Brasil com P de Perigo: pipa fica, linha cortante não. Ficha ≠ receita. Cola de sapateiro é outro P (tolueno), só literacia.",
-      "historyEn": "Cola comes from Greek kólla via Vulgar Latin colla (glue). The necklace colar comes from collum — another etymon. In Brazil the glue family meets the kite line: sticky, cutting, cerol.",
+      "historyEn": "Portuguese cola comes from Greek kólla via Vulgar Latin colla — glue. In Brazil the same family meets the kite line (sticky, cutting, cerol). The soda and kola nut are another root.",
       "curiositiesEn": "The lab stamps Brazil with P for Perigo: the kite stays, the cutting line does not. Sheet ≠ recipe. Shoe glue is another P (toluene), literacy only.",
-      "historyEs": "Cola viene del griego kólla vía latín vulgar colla. El collar viene de collum — otro étimo. En Brasil la familia desemboca en la línea de cometa: colante, cortante, cerol.",
-      "curiositiesEs": "El laboratorio sella Brasil con P de Perigo: la cometa queda, la línea cortante no. Ficha ≠ receta. Cola de zapatero es otro P, solo literacia."
+      "historyEs": "Cola viene del griego kólla vía latín vulgar colla — el pegamento. En Brasil la misma familia desemboca en la línea de cometa (colante, cortante, cerol). El refresco y la nuez de cola son otra raíz.",
+      "curiositiesEs": "El laboratorio sella Brasil con P de Perigo: la cometa queda, la línea cortante no. Ficha ≠ receta. Cola de zapatero es otro P (tolueno), solo literacia."
     },
     {
       "id": "mequetrefe",
@@ -5583,11 +5615,11 @@
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-nap.html",
       "history": "Nap é inglês para sono curto; power nap circulou no BR corporativo. O laboratório trata a pausa como ofício, elos com gesto e alma.",
-      "curiosities": "Valeu !!! depois de parar: o vocábulo não é preguiça inspecionada, é teto de atenção.",
+      "curiosities": "Valeu !!! depois de parar: nap não é a preguiça da ficha irmã — é teto de atenção.",
       "historyEn": "Nap is English for a short sleep; power nap circulated in corporate Brazil. The lab treats the pause as craft, links with gesture and soul.",
-      "curiositiesEn": "Valeu !!! after stopping: the word is not inspected laziness, it is an attention ceiling.",
+      "curiositiesEn": "Valeu !!! after stopping: nap is not the laziness of the sibling sheet — it is an attention ceiling.",
       "historyEs": "Nap es inglés para sueño corto; power nap circuló en el BR corporativo. El laboratorio trata la pausa como oficio, eslabones con gesto y alma.",
-      "curiositiesEs": "Valeu !!! después de parar: el vocablo no es pereza inspeccionada, es techo de atención."
+      "curiositiesEs": "Valeu !!! después de parar: nap no es la pereza de la ficha hermana — es techo de atención."
     },
     {
       "id": "narcotico",
@@ -5791,7 +5823,7 @@
       "fromTitle": false,
       "href": "/posts/post-inspecao-figura-tom-jobim.html",
       "history": "Origami junta o japonês ori (dobrar) a kami (papel). A dedicatória BudGanja a Tom Jobim («Adoro origami») cruza a palavra-música com o gesto de dobrar.",
-      "curiosities": "A ficha trata o vocábulo como arte de papel — ofício de vinco, não metáfora vazia. Aula: /origami/ (mãos reais; filmar sem fala).",
+      "curiosities": "A ficha trata o vocábulo como arte de papel — ofício de vinco, não metáfora vazia.",
       "historyEn": "Origami joins Japanese ori (to fold) to kami (paper). BudGanja’s dedication to Tom Jobim («I love origami») crosses the music-word with the folding gesture.",
       "curiositiesEn": "The sheet treats the word as paper art — crease craft, not an empty metaphor.",
       "historyEs": "Origami junta el japonés ori (doblar) a kami (papel). La dedicatoria BudGanja a Tom Jobim («Adoro origami») cruza la palabra-música con el gesto de doblar.",

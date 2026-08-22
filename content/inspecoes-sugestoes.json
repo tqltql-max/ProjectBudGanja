@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:19:36.824Z",
+  "updatedAt": "2026-08-22T06:23:06.628Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8019,6 +8019,54 @@
         "/posts/post-inspecao-expressao-elo-de-ligacao.html"
       ],
       "notes": "Cap. 204 Palavras — nome da curva; posturas na expressão irmã."
+    },
+    {
+      "id": "palavra-preguica",
+      "title": "Preguiça — o estado, o animal e o que não é descanso",
+      "titleEn": "Preguiça — the state, the animal, and what rest is not",
+      "titleEs": "Preguiça — el estado, el animal y lo que no es descanso",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: preguiça (lat. pigritia) — relutância, pecado e bicho-preguiça; descanso ≠ vício; elo bode; Valeu !!!",
+      "whyEn": "Words: preguiça (Lat. pigritia) — reluctance, sin and the sloth; rest ≠ vice; link bode; Valeu !!!",
+      "whyEs": "Palabras: preguiça (lat. pigritia) — renuencia, pecado y perezoso; descanso ≠ vicio; vínculo bode; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-preguica",
+      "doneHref": "/posts/post-inspecao-palavra-preguica.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/pregui%C3%A7a",
+        "https://pt.wikipedia.org/wiki/Pregui%C3%A7a",
+        "/posts/post-inspecao-palavra-bode.html",
+        "/posts/post-inspecao-palavra-nap.html",
+        "/posts/post-inspecao-palavra-animal.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 205 — pigritia; animal ≠ pecado; nap/colchão ≠ esta palavra; par com bode."
+    },
+    {
+      "id": "palavra-bode",
+      "title": "Bode — o caprino, o expiatório e o mau humor",
+      "titleEn": "Bode — the billy goat, the scapegoat, and the bad mood",
+      "titleEs": "Bode — el macho cabrío, el chivo expiatorio y el mal humor",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: bode — macho caprino (étimo incerto), bode expiatório e gíria BR; elo preguiça; Valeu !!!",
+      "whyEn": "Words: bode — billy goat (uncertain etymon), scapegoat and BR slang; link preguiça; Valeu !!!",
+      "whyEs": "Palabras: bode — macho cabrío (étimo incerto), chivo expiatorio y jerga BR; vínculo preguiça; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-bode",
+      "doneHref": "/posts/post-inspecao-palavra-bode.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/bode",
+        "https://pt.wiktionary.org/wiki/bode_expiat%C3%B3rio",
+        "/posts/post-inspecao-palavra-preguica.html",
+        "/posts/post-inspecao-palavra-animal.html",
+        "/posts/post-inspecao-palavra-pato.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 206 — ≠ capra; ≠ adega ES; par com preguiça; pagar o pato ≈ expiatório."
     }
   ]
 }
