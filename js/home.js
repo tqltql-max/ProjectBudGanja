@@ -44,12 +44,16 @@ function formatDateCompact(iso) {
   }
 }
 
-var HOME_PINNED_SLUGS = ['inspecao-arte-bom-dia-inverno', 'inspecao-canal-paulinho'];
+var HOME_PINNED_SLUGS = [
+  'inspecao-palavra-teoria-das-cordas',
+  'inspecao-arte-bom-dia-inverno',
+  'inspecao-canal-paulinho'
+];
 
 /**
  * Últimas do laboratório: ordena por data, mas garante diversidade de categorias
  * (ex.: uma pesquisa não fica enterrada sob várias inspeções do mesmo dia).
- * Divulgações (Bom dia, Inverno e Paulinho) ficam sempre no início.
+ * Destaques (teoria das cordas, Bom dia, Inverno e Paulinho) ficam no início.
  */
 function pickHomeLatestPosts(posts, limit) {
   const max = Math.max(1, Number(limit) || 4);

@@ -79,6 +79,19 @@ assert('merge mantém MovReCam', merged.some((p) => p.slug === 'inspecao-canal-m
 assert('merge não duplica slugs', merged.length === new Set(merged.map((p) => p.slug)).size);
 
 const inspecoes = sortPublicPosts(merged.filter((p) => p.category === 'inspecao'));
+const pinnedOrder = sortPublicPosts([
+  { slug: 'inspecao-canal-movrecam', category: 'inspecao', seriesOrder: 1, date: '2026-01-01' },
+  { slug: 'inspecao-arte-bom-dia-inverno', category: 'inspecao', seriesOrder: 2, date: '2026-01-02' },
+  { slug: 'inspecao-palavra-teoria-das-cordas', category: 'inspecao', seriesOrder: 182, date: '2026-08-22' }
+]);
+assert(
+  'pin teoria das cordas à frente',
+  pinnedOrder[0] && pinnedOrder[0].slug === 'inspecao-palavra-teoria-das-cordas'
+);
+assert(
+  'pin Bom dia, Inverno em segundo',
+  pinnedOrder[1] && pinnedOrder[1].slug === 'inspecao-arte-bom-dia-inverno'
+);
 const movrecam = inspecoes.find((p) => p.slug === 'inspecao-canal-movrecam');
 assert('MovReCam seriesOrder 11', movrecam && movrecam.seriesOrder === 11);
 
