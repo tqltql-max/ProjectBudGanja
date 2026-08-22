@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T05:57:49.635Z",
+  "updatedAt": "2026-08-22T06:05:29.236Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4506,6 +4506,22 @@
       "curiositiesEn": "Valeu !!! with the click: the word is also to phone and to «ligar» in affection.",
       "historyEs": "Ligar viene del latín ligare — atar, unir — y en el circuito es el verbo del clic. En el lab forma par con el interruptor: pieza × gesto.",
       "curiositiesEs": "Valeu !!! con el clic: el vocablo también es telefonear y «ligar» de afecto."
+    },
+    {
+      "id": "elo-de-ligacao",
+      "word": "elo de ligação",
+      "simple": "Locução — o anel que junta; simbuklo → símbolo do infinito (lemniscata); o cruzamento é o elo. Aula XIV Kassia. Valeu !!!",
+      "simpleEn": "Locution — the ring that joins; simbuklo → infinity symbol (lemniscate); the crossing is the link. UNIFESP XIV Kassia. Valeu !!!",
+      "simpleEs": "Locución — el anillo que junta; simbuklo → símbolo del infinito (lemniscata); el cruce es el eslabón. Aula XIV Kassia. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-elo-de-ligacao.html",
+      "history": "Elo vem do latim anellus (anelzinho); ligação de ligāre (atar). A locução insiste no anel que realmente junta. O pedido de campo trouxe simbuklo — gatilho de ouvido para símbolo do infinito (lemniscata, o oito deitado).",
+      "curiosities": "Na 8.ª aula do XIV Curso UNIFESP, Dra. Kassia Martins põe a lemniscata em pé como símbolo de comunicação cima↔baixo do SEC. O laboratório relaciona o cruzamento com esta locução — não afirma que ela usou as palavras. Grego sýmbolon já era um token partido que encaixa.",
+      "historyEn": "Portuguese elo comes from Latin anellus (little ring); ligação from ligāre (to bind). The locution insists the ring actually joins. The field brought simbuklo — an ear trigger for símbolo do infinito (lemniscate, the sideways eight).",
+      "curiositiesEn": "In UNIFESP XIV lesson 8, Dr. Kassia Martins stands the lemniscate up as a symbol of up↔down communication in the ECS. The lab relates the crossing to this saying — it does not claim she used these words. Greek sýmbolon was already a fitting token.",
+      "historyEs": "Elo viene del latín anellus (anillito); ligação de ligāre (atar). La locución insiste en el anillo que de verdad junta. El campo trajo simbuklo — gatillo de oído para símbolo do infinito (lemniscata, el ocho acostado).",
+      "curiositiesEs": "En la 8.ª aula del XIV Curso UNIFESP, la Dra. Kassia Martins pone la lemniscata de pie como símbolo de comunicación arriba↔abajo del SEC. El laboratorio relaciona el cruce con esta locución — no afirma que ella usara esas palabras. El griego sýmbolon ya era un token que encaja."
     },
     {
       "id": "lingua-portuguesa",

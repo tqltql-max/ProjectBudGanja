@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T05:57:49.628Z",
+  "updatedAt": "2026-08-22T06:05:29.229Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7946,6 +7946,31 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 203 — lat. cūra; ofícios tratar/secar/pároco; ≠ cuidar; corte colheita × slogan."
+    },
+    {
+      "id": "expressao-elo-de-ligacao",
+      "title": "Elo de ligação — o cruzamento do infinito, não a eternidade",
+      "titleEn": "Elo de ligação — the crossing of infinity, not eternity",
+      "titleEs": "Elo de ligação — el cruce del infinito, no la eternidad",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: elo de ligação — anel que junta; simbuklo → símbolo do infinito (lemniscata); aula XIV Kassia; Valeu !!!",
+      "whyEn": "Sayings: elo de ligação — joining ring; simbuklo → infinity symbol (lemniscate); UNIFESP XIV Kassia; Valeu !!!",
+      "whyEs": "Dichos: elo de ligação — anillo que junta; simbuklo → símbolo del infinito; aula XIV Kassia; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-elo-de-ligacao",
+      "doneHref": "/posts/post-inspecao-expressao-elo-de-ligacao.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Infinity_symbol",
+        "https://pt.wiktionary.org/wiki/elo",
+        "https://en.wikipedia.org/wiki/Lemniscate",
+        "/biblioteca/unifesp/livro-xiv.html#aula-8",
+        "/posts/post-inspecao-neurociencia-endocanabinoidoma.html",
+        "/posts/post-inspecao-palavra-link.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 21 Expressões — cruzamento da lemniscata; gatilho simbuklo; analogia Kassia creditada."
     }
   ]
 }

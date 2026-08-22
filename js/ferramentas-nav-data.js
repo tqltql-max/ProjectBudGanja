@@ -184,7 +184,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-pesquisa-oficio-roubo-proibicao.html",
               "icon": "📋",
               "slug": "post-pesquisa-oficio-roubo-proibicao",
-              "description": "Mapa preliminar: ofício (gesto, inspeção) sob apropriação e silenciamento — resposta editorial «Faça o melhor!» sem rancor."
+              "description": "Mapa preliminar: ofício (gesto, inspeção) sob apropriação e silenciamento — resposta editorial «Valeu !!!» sem rancor."
             },
             {
               "label": "Pesquisa: Insumos orgânicos vs industrializados — influência no fruto final",
@@ -243,6 +243,14 @@ window.__BIBLIOTECA_NAV__ = {
               "slug": "inspecoes",
               "featured": true,
               "description": "Canais, equipamentos, insumos e formação."
+            },
+            {
+              "label": "Inspeção: Teoria das cordas — a física, não o fio",
+              "tileLabel": "Inspeção: Teoria das cordas — a…",
+              "href": "/posts/post-inspecao-palavra-teoria-das-cordas.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-teoria-das-cordas",
+              "description": "Palavras: «teoria das cordas» — calque de *string theory*; partículas como cordas a vibrar; ≠ objecto corda; programa aberto; Valeu !!!"
             },
             {
               "label": "Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo",
@@ -374,12 +382,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Neurociências Cap. 2: homenagem documental a Miguel Nicolelis — interfaces cérebro-máquina, Projeto Andar de Novo e o pontapé da Copa 2014. Mérito e limites, sem hagiografia."
             },
             {
-              "label": "Inspeção: Faça o melhor! — mantra do laboratório",
-              "tileLabel": "Inspeção: Faça o melhor! — mant…",
+              "label": "Inspeção: Valeu !!! — mantra do laboratório",
+              "tileLabel": "Inspeção: Valeu !!! — mantra do…",
               "href": "/posts/post-inspecao-expressao-faca-o-melhor.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-faca-o-melhor",
-              "description": "Expressões: «Faça o melhor!» — mantra Vida; ofício diário e resposta ao roubo e à proibição que tentam calar o projecto de inspeção."
+              "description": "Expressões: «Valeu !!!» — mantra Vida; ofício diário e resposta ao roubo e à proibição que tentam calar o projecto de inspeção."
             },
             {
               "label": "Inspeção: Derivados da galinha — ultraprocessados e química industrial",
@@ -467,7 +475,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-jesusamando.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-jesusamando",
-              "description": "Expressões: «jesusamando» — sopro BR de assombro e afeto; contraste com aff; elo língua portuguesa e Faça o melhor!"
+              "description": "Expressões: «jesusamando» — sopro BR de assombro e afeto; contraste com aff; elo língua portuguesa e Valeu !!!"
             },
             {
               "label": "Inspeção: Derivados da vaca — carnes processadas e laticínios industriais",
@@ -555,7 +563,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-jesusudavi.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-jesusudavi",
-              "description": "Expressões: «jesusudavi» — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala aff × jesusamando; Faça o melhor!"
+              "description": "Expressões: «jesusudavi» — substitui meudeusdoceu; meu Deus do céu; assombro alto; escala aff × jesusamando; Valeu !!!"
             },
             {
               "label": "Inspeção: Glúten / farinha — trigo e proteína nociva ao organismo",
@@ -627,7 +635,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-deu-certo-galera.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-deu-certo-galera",
-              "description": "Expressões: «deu certo, galera» / deucer galerra — celebração colectiva; contraste com aff e buguei; elos genial, jesusamando, meudeusdoceu, Faça o melhor!"
+              "description": "Expressões: «deu certo, galera» / deucer galerra — celebração colectiva; contraste com aff e buguei; elos genial, jesusamando, meudeusdoceu, Valeu !!!"
             },
             {
               "label": "Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite",
@@ -675,7 +683,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-filho-de-deus.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-filho-de-deus",
-              "description": "Expressões: «filho de deus» — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; sem proselitismo; Faça o melhor!"
+              "description": "Expressões: «filho de deus» — título teológico, intensidade oral BR e metáfora de dignidade/cuidado; sem proselitismo; Valeu !!!"
             },
             {
               "label": "Análise: danos dos produtos nocivos × vídeos catalogados",
@@ -723,7 +731,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-duasakdiqujdocedomadur.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-duasakdiqujdocedomadur",
-              "description": "Expressões: duasakdiqujdocedomadur — nome lab de «Deus ajuda quem cedo madruga»; diligência com aurora; elos Faça o melhor!, caminho, jesusamando, meudeusdoceu"
+              "description": "Expressões: duasakdiqujdocedomadur — nome lab de «Deus ajuda quem cedo madruga»; diligência com aurora; elos Valeu !!!, caminho, jesusamando, meudeusdoceu"
             },
             {
               "label": "Inspeção: Nick Tosches — prosa afiada e elo com A Última Casa de Ópio",
@@ -766,12 +774,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Maçã (*Malus domestica Borkh.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
-              "label": "Inspeção: muitoobrigado — gratidão reforçada e oralidade BR",
-              "tileLabel": "Inspeção: muitoobrigado — grati…",
+              "label": "Inspeção: Gratidão — gratidão reforçada e oralidade BR",
+              "tileLabel": "Inspeção: Gratidão — gratidão r…",
               "href": "/posts/post-inspecao-expressao-muito-obrigado.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-muito-obrigado",
-              "description": "Expressões: «Muito obrigado!» / muitoobrigado — gratidão reforçada; étimo obligare × memória da escravidão/cana; elos gesto, valeu, jesusamando; Faça o melhor!"
+              "description": "Expressões: «Gratidão!» / Gratidão — gratidão reforçada; étimo obligare × memória da escravidão/cana; elos gesto, valeu, jesusamando; Valeu !!!"
             },
             {
               "label": "Inspeção: Erva — substituída por planta / plantas",
@@ -867,7 +875,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-eojsofaorforap.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-eojsofaorforap",
-              "description": "Expressões: eojsofaorforap — nome lab de «eu só falo a verdade»; substitui o rótulo plano; elos verdade, gesto; Faça o melhor!"
+              "description": "Expressões: eojsofaorforap — nome lab de «eu só falo a verdade»; substitui o rótulo plano; elos verdade, gesto; Valeu !!!"
             },
             {
               "label": "Inspeção: Planta — Boldo — falso-boldo brasileiro",
@@ -907,7 +915,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-deus-abencoe.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-deus-abencoe",
-              "description": "Expressões: «Deus abençoe» — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; sem proselitismo; Faça o melhor!"
+              "description": "Expressões: «Deus abençoe» — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; sem proselitismo; Valeu !!!"
             },
             {
               "label": "Inspeção: Planta — Melissa — citral e melissa officinalis",
@@ -939,7 +947,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-deus-deu-dois-ouvidos.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-deus-deu-dois-ouvidos",
-              "description": "Expressões: «Deus deu dois ouvidos e uma boca» — ouvir 2× / falar 1×; tipografia dois pouvi → dois ouvidos; sem proselitismo; Faça o melhor!"
+              "description": "Expressões: «Deus deu dois ouvidos e uma boca» — ouvir 2× / falar 1×; tipografia dois pouvi → dois ouvidos; sem proselitismo; Valeu !!!"
             },
             {
               "label": "Inspeção: canal Disney Jr. Brasil — desenhos e o oceano",
@@ -1171,7 +1179,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-templo-de-cristo-corpo-e-alma.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-templo-de-cristo-corpo-e-alma",
-              "description": "Expressões: «o templo de Cristo, corpo e alma» — morada, nome e inteireza; peças templo · Cristo · corpo · alma; sem catecismo; Faça o melhor!"
+              "description": "Expressões: «o templo de Cristo, corpo e alma» — morada, nome e inteireza; peças templo · Cristo · corpo · alma; sem catecismo; Valeu !!!"
             },
             {
               "label": "Inspeção: Stephen King — o autor, a novela e Um Sonho de Liberdade",
@@ -1219,7 +1227,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-os-doze-apostolos.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-os-doze-apostolos",
-              "description": "Expressões: «os doze apóstolos» — conjunto nomeado, frase viva BR e ofício de envio; listas divergentes; Tomé inspecciona; Faça o melhor!"
+              "description": "Expressões: «os doze apóstolos» — conjunto nomeado, frase viva BR e ofício de envio; listas divergentes; Tomé inspecciona; Valeu !!!"
             },
             {
               "label": "Inspeção: nossa senhora, ambulância, sirene, Jesus Cristo — código vermelho oral",
@@ -1227,7 +1235,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo",
-              "description": "Expressões: nossa senhora, ambulância, sirene, Jesus Cristo — empilhamento céu+SAMU; escala acima de jesusudavi; Faça o melhor!"
+              "description": "Expressões: nossa senhora, ambulância, sirene, Jesus Cristo — empilhamento céu+SAMU; escala acima de jesusudavi; Valeu !!!"
             },
             {
               "label": "Inspeção: Mel Gibson — ofício de ecrã, realização e as duas obras",
@@ -1267,7 +1275,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-toda-crianca-nasce-cientista",
-              "description": "Expressões: Toda criança nasce cientista — citação de Arleu Barbosa Viana-Junior (CNN / campo no Cerrado); chegou como mensagem da mãe; Faça o melhor!"
+              "description": "Expressões: Toda criança nasce cientista — citação de Arleu Barbosa Viana-Junior (CNN / campo no Cerrado); chegou como mensagem da mãe; Valeu !!!"
             },
             {
               "label": "Inspeção: Paulo Coelho — ofício de parábola e elo com O Alquimista",
@@ -1291,7 +1299,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-no-na-vida.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-no-na-vida",
-              "description": "Expressões: «nó na vida!» — laço no arco da vida; par desatar o nó; ≠ desastre; ufa depois; Faça o melhor!"
+              "description": "Expressões: «nó na vida!» — laço no arco da vida; par desatar o nó; ≠ desastre; ufa depois; Valeu !!!"
             },
             {
               "label": "Inspeção: canal Manual do Mundo — ciência no ecrã e o Manual Maker",
@@ -1315,7 +1323,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-simbiose.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-simbiose",
-              "description": "Palavras: «simbiose» (grego *syn* + *bíōsis*) — coabitação de vidas, solo vivo, Venom/«nós» e ofício humano×assistente («você»); Faça o melhor!"
+              "description": "Palavras: «simbiose» (grego *syn* + *bíōsis*) — coabitação de vidas, solo vivo, Venom/«nós» e ofício humano×assistente («você»); Valeu !!!"
             },
             {
               "label": "Inspeção: Planta — Jambu — espilanthol e anestesia oral",
@@ -1331,7 +1339,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-desatar-o-no.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-desatar-o-no",
-              "description": "Expressões: «desatar o nó» — soltar o laço na corda e na vida; ≠ desastre (*astro*); par nó na vida; ufa depois; Faça o melhor!"
+              "description": "Expressões: «desatar o nó» — soltar o laço na corda e na vida; ≠ desastre (*astro*); par nó na vida; ufa depois; Valeu !!!"
             },
             {
               "label": "Inspeção: Planta — Mulungu — alcaloides eritrínicos calmantes",
@@ -1340,6 +1348,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-mulungu",
               "description": "*Erythrina mulungu* — casca com alcaloides eritrínicos; chá calmante da tradição brasileira."
+            },
+            {
+              "label": "Inspeção: Elo de ligação — o cruzamento do infinito, não a eternidade",
+              "tileLabel": "Inspeção: Elo de ligação — o cr…",
+              "href": "/posts/post-inspecao-expressao-elo-de-ligacao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-elo-de-ligacao",
+              "description": "Expressões: «elo de ligação» — o anel que junta; *simbuklo* → símbolo do infinito (lemniscata); cruzamento = elo; aula XIV Kassia; Valeu !!!"
             },
             {
               "label": "Inspeção: Aranha Rodrigo — saltadora nomeada do Slivki Show",
@@ -1435,7 +1451,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-genial.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-genial",
-              "description": "Palavras: «genial» — engenho no projecto BudGanja; escala com legal, maravilhoso e fantástico; Faça o melhor! ≠ seja génio; culto vazio = ressalva."
+              "description": "Palavras: «genial» — engenho no projecto BudGanja; escala com legal, maravilhoso e fantástico; Valeu !!! ≠ seja génio; culto vazio = ressalva."
             },
             {
               "label": "Inspeção: Steve Jobs — ofício, casa sem iPad e o mito do celular aos 18",
@@ -1451,15 +1467,15 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-figura-lucas-evangelista.html",
               "icon": "🔍",
               "slug": "post-inspecao-figura-lucas-evangelista",
-              "description": "Pessoas: Lucas Evangelista — médico amado (Col 4,14) e epíteto «de almas» (tradição); fora dos Doze; corpo e alma sem partir o templo; Faça o melhor!"
+              "description": "Pessoas: Lucas Evangelista — médico amado (Col 4,14) e epíteto «de almas» (tradição); fora dos Doze; corpo e alma sem partir o templo; Valeu !!!"
             },
             {
-              "label": "Inspeção: Língua portuguesa — originalidade, alterações no tempo e Faça o melhor!",
+              "label": "Inspeção: Língua portuguesa — originalidade, alterações no tempo e Valeu !!!",
               "tileLabel": "Inspeção: Língua portuguesa — o…",
               "href": "/posts/post-inspecao-palavra-lingua-portuguesa.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-lingua-portuguesa",
-              "description": "Palavras: língua portuguesa — originalidade; alterações ao longo do tempo (latim → BR → digital); para que serve; Faça o melhor! nesta língua."
+              "description": "Palavras: língua portuguesa — originalidade; alterações ao longo do tempo (latim → BR → digital); para que serve; Valeu !!! nesta língua."
             },
             {
               "label": "Inspeção: William Shakespeare — ofício da palavra em palco",
@@ -1478,12 +1494,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Pessoas × Artes: Baz Luhrmann (n. 1962) — cinema-teatro (Red Curtain); elo principal em Romeu + Julieta (1996). Peça e Shakespeare em fichas irmãs."
             },
             {
-              "label": "Inspeção: Buguei — do inseto ao «deu ruim» e Faça o melhor!",
+              "label": "Inspeção: Buguei — do inseto ao «deu ruim» e Valeu !!!",
               "tileLabel": "Inspeção: Buguei — do inseto ao…",
               "href": "/posts/post-inspecao-palavra-buguei.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-buguei",
-              "description": "Palavras: «buguei» — de bug (inseto) à falha e ao peito; como o sentido foi alterado para parecer ruim; Faça o melhor! depois do tranco."
+              "description": "Palavras: «buguei» — de bug (inseto) à falha e ao peito; como o sentido foi alterado para parecer ruim; Valeu !!! depois do tranco."
             },
             {
               "label": "Inspeção: Leonardo DiCaprio — ofício de presença no ecrã",
@@ -1494,12 +1510,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Pessoas: Leonardo DiCaprio (n. 1974) — ofício de ecrã; inaugura a série Filmografias; âncora Romeu + Julieta (1996). Pessoa ≠ catálogo ≠ uma obra."
             },
             {
-              "label": "Inspeção: Coração — órgão, afeto, centro, coragem e Faça o melhor!",
+              "label": "Inspeção: Coração — órgão, afeto, centro, coragem e Valeu !!!",
               "tileLabel": "Inspeção: Coração — órgão, afet…",
               "href": "/posts/post-inspecao-palavra-coracao.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-coracao",
-              "description": "Palavras: «coração» (lat. *cor*) — órgão, afeto, centro e coragem; elo mãos/esquerdo; Faça o melhor de coração."
+              "description": "Palavras: «coração» (lat. *cor*) — órgão, afeto, centro e coragem; elo mãos/esquerdo; Valeu !!! de coração."
             },
             {
               "label": "Inspeção: Memorável — o que fica na memória e o elogio com rasto",
@@ -1507,10 +1523,10 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-memoravel.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-memoravel",
-              "description": "Palavras: «memorável» (lat. memorabilis) — digno de memória; elogio BR; eixo retenção ≠ escala legal/genial/maravilhoso/fantástico; Faça o melhor!"
+              "description": "Palavras: «memorável» (lat. memorabilis) — digno de memória; elogio BR; eixo retenção ≠ escala legal/genial/maravilhoso/fantástico; Valeu !!!"
             },
             {
-              "label": "Inspeção: Defensoria Pública — acesso gratuito à justiça e Faça o melhor!",
+              "label": "Inspeção: Defensoria Pública — acesso gratuito à justiça e Valeu !!!",
               "tileLabel": "Inspeção: Defensoria Pública — …",
               "href": "/posts/post-inspecao-guia-defensoria-acesso.html",
               "icon": "🔍",
@@ -1555,7 +1571,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-filme-moana.html",
               "icon": "🔍",
               "slug": "post-inspecao-filme-moana",
-              "description": "Artes · desenho: Moana (2016, Disney / Clements & Musker) — oceano, navegar e cuidado da ilha; elos mar/caminho/Vida; Faça o melhor!"
+              "description": "Artes · desenho: Moana (2016, Disney / Clements & Musker) — oceano, navegar e cuidado da ilha; elos mar/caminho/Vida; Valeu !!!"
             },
             {
               "label": "Inspeção: O Início — poesia do laboratório a partir do cultivo",
@@ -1571,7 +1587,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-multitask.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-multitask",
-              "description": "Palavras: «multitask» / «multitarefa» — empréstimo EN→BR; o que parece vs o que é; correção: ≠ fazer tudo bem ao mesmo tempo; Faça o melhor! com método."
+              "description": "Palavras: «multitask» / «multitarefa» — empréstimo EN→BR; o que parece vs o que é; correção: ≠ fazer tudo bem ao mesmo tempo; Valeu !!! com método."
             },
             {
               "label": "Inspeção: Killing in the Name — Rage Against the Machine e a máquina que mata no nome",
@@ -1587,7 +1603,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-incrivel.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-incrivel",
-              "description": "Palavras: «incrível» (lat. *incredibilis*) — incredulidade e elogio BR «uau»; escala com fichas existentes (legal, genial, fantástico…); Faça o melhor!"
+              "description": "Palavras: «incrível» (lat. *incredibilis*) — incredulidade e elogio BR «uau»; escala com fichas existentes (legal, genial, fantástico…); Valeu !!!"
             },
             {
               "label": "Inspeção: All Right Now — Free e o agora depois do silêncio",
@@ -1603,7 +1619,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-fruto.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-fruto",
-              "description": "Palavras: «fruto» (lat. *fructus*) — órgão botânico, plural frutos, contraste com fruta, figurado «frutos do trabalho»; elos plantas/simbiose; Faça o melhor!"
+              "description": "Palavras: «fruto» (lat. *fructus*) — órgão botânico, plural frutos, contraste com fruta, figurado «frutos do trabalho»; elos plantas/simbiose; Valeu !!!"
             },
             {
               "label": "Inspeção: Under Pressure — Queen, Bowie e o aperto sem esmagar",
@@ -1723,7 +1739,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-risco.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-risco",
-              "description": "Palavras: «risco» — perigo calculado × traço (*riscar*); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Faça o melhor!"
+              "description": "Palavras: «risco» — perigo calculado × traço (*riscar*); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Valeu !!!"
             },
             {
               "label": "Inspeção: Every Breath You Take — The Police e o ofício de olhar sem possuir",
@@ -1763,31 +1779,31 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-arte-santa-ceia.html",
               "icon": "🔍",
               "slug": "post-inspecao-arte-santa-ceia",
-              "description": "Artes · pintura: Santa Ceia / A Última Ceia (1495–1498, Leonardo) — Evangelhos primeiro; mural ≠ sacramento ≠ Código Da Vinci. Autor em Pessoas. Faça o melhor!"
+              "description": "Artes · pintura: Santa Ceia / A Última Ceia (1495–1498, Leonardo) — Evangelhos primeiro; mural ≠ sacramento ≠ Código Da Vinci. Autor em Pessoas. Valeu !!!"
             },
             {
-              "label": "Inspeção: Inacreditável — beyond belief, elogio BR e Faça o melhor!",
+              "label": "Inspeção: Inacreditável — beyond belief, elogio BR e Valeu !!!",
               "tileLabel": "Inspeção: Inacreditável — beyon…",
               "href": "/posts/post-inspecao-palavra-inacreditavel.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-inacreditavel",
-              "description": "Palavras: «inacreditável» (in- + acreditável ← credere) — incredulidade e elogio BR «beyond belief»; escala com incrível, fabuloso e genial; Faça o melhor!"
+              "description": "Palavras: «inacreditável» (in- + acreditável ← credere) — incredulidade e elogio BR «beyond belief»; escala com incrível, fabuloso e genial; Valeu !!!"
             },
             {
-              "label": "Inspeção: Respeito — olhar de novo, prática social e Faça o melhor!",
+              "label": "Inspeção: Respeito — olhar de novo, prática social e Valeu !!!",
               "tileLabel": "Inspeção: Respeito — olhar de n…",
               "href": "/posts/post-inspecao-palavra-respeito.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-respeito",
-              "description": "Palavras: «respeito» (lat. *respectus* / *respicere*) — consideração e prática social, sem sermão; elo verdade/gesto; contraste com vingança; Faça o melhor!"
+              "description": "Palavras: «respeito» (lat. *respectus* / *respicere*) — consideração e prática social, sem sermão; elo verdade/gesto; contraste com vingança; Valeu !!!"
             },
             {
-              "label": "Inspeção: Maravilhoso — maravilha, assombro, elogio BR e Faça o melhor!",
+              "label": "Inspeção: Maravilhoso — maravilha, assombro, elogio BR e Valeu !!!",
               "tileLabel": "Inspeção: Maravilhoso — maravil…",
               "href": "/posts/post-inspecao-palavra-maravilhoso.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-maravilhoso",
-              "description": "Palavras: «maravilhoso» (de maravilha / lat. *mirabilia*) — assombro e elogio BR; escala com legal, genial e aff; Faça o melhor! depois do «uau»."
+              "description": "Palavras: «maravilhoso» (de maravilha / lat. *mirabilia*) — assombro e elogio BR; escala com legal, genial e aff; Valeu !!! depois do «uau»."
             },
             {
               "label": "Inspeção: Pipoca — tupi pi'poka, milho que estoura, rua e cinema",
@@ -1795,7 +1811,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-pipoca.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-pipoca",
-              "description": "Palavras: «pipoca» (tupi *pi'poka*) — milho→calor→estouro; rua e cinema BR; transformação com ofício; Faça o melhor!"
+              "description": "Palavras: «pipoca» (tupi *pi'poka*) — milho→calor→estouro; rua e cinema BR; transformação com ofício; Valeu !!!"
             },
             {
               "label": "Inspeção: Fantasioso — fantasia, imaginação e ≠ fantástico",
@@ -1806,23 +1822,23 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «fantasioso» (fantasia + -oso) — imaginativo / crítica leve «não seja fantasioso»; tipografia fantatioso → fantasioso; ≠ fantástico (Cap. irmã)."
             },
             {
-              "label": "Inspeção: Vida — facto, tempo, modo e Faça o melhor!",
+              "label": "Inspeção: Vida — facto, tempo, modo e Valeu !!!",
               "tileLabel": "Inspeção: Vida — facto, tempo, …",
               "href": "/posts/post-inspecao-palavra-vida.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-vida",
-              "description": "Palavras: «vida» (lat. *vīta*) — facto de viver, tempo e modo; distinta da trilha /vida/ e da Árvore da Vida; elos alegria/coração/esperança; Faça o melhor!"
+              "description": "Palavras: «vida» (lat. *vīta*) — facto de viver, tempo e modo; distinta da trilha /vida/ e da Árvore da Vida; elos alegria/coração/esperança; Valeu !!!"
             },
             {
-              "label": "Inspeção: Ídolo — admiração, imagem, média e Faça o melhor!",
+              "label": "Inspeção: Ídolo — admiração, imagem, média e Valeu !!!",
               "tileLabel": "Inspeção: Ídolo — admiração, im…",
               "href": "/posts/post-inspecao-palavra-idolo.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-idolo",
-              "description": "Palavras: «ídolo» (gr. eídōlon) — celebridade, culto lexical, idolatrar e cultura de média; admirar com ofício; Faça o melhor!"
+              "description": "Palavras: «ídolo» (gr. eídōlon) — celebridade, culto lexical, idolatrar e cultura de média; admirar com ofício; Valeu !!!"
             },
             {
-              "label": "Inspeção: Magnífico — magnificus, elogio BR e Faça o melhor!",
+              "label": "Inspeção: Magnífico — magnificus, elogio BR e Valeu !!!",
               "tileLabel": "Inspeção: Magnífico — magnificu…",
               "href": "/posts/post-inspecao-palavra-magnifico.html",
               "icon": "🔍",
@@ -1830,12 +1846,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «magnífico» (lat. *magnificus* / *magnificent*) — elogio BR quotidiano; escala com legal, genial, fabuloso, fantástico, incrível, maravilhoso; tipografia mafianioddpo → magnífico."
             },
             {
-              "label": "Inspeção: Inseto — vida, ecologia, cultura e Faça o melhor!",
+              "label": "Inspeção: Inseto — vida, ecologia, cultura e Valeu !!!",
               "tileLabel": "Inspeção: Inseto — vida, ecolog…",
               "href": "/posts/post-inspecao-palavra-inseto.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-inseto",
-              "description": "Palavras: «inseto» / «insetos» — lat. insectum; vida, ecologia e cultura; elos joaninha, abelha, animal, simbiose; contraste buguei; Faça o melhor!"
+              "description": "Palavras: «inseto» / «insetos» — lat. insectum; vida, ecologia e cultura; elos joaninha, abelha, animal, simbiose; contraste buguei; Valeu !!!"
             },
             {
               "label": "Inspeção: Selvagem — silva, natureza e o limiar do domesticado",
@@ -1843,7 +1859,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-selvagem.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-selvagem",
-              "description": "Palavras: «selvagem» (lat. silvaticus ← silva) — natureza, selvagem × domesticado, «bicho selvagem»; elos planta/animal/inseto; sem romantizar dano; Faça o melhor!"
+              "description": "Palavras: «selvagem» (lat. silvaticus ← silva) — natureza, selvagem × domesticado, «bicho selvagem»; elos planta/animal/inseto; sem romantizar dano; Valeu !!!"
             },
             {
               "label": "Inspeção: Sinal — marca, aviso, gesto e dar sinal",
@@ -1851,7 +1867,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-sinal.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-sinal",
-              "description": "Palavras: «sinal» (lat. *signum*) — marca, trânsito, corpo, aviso e «dar sinal»; tipografia singlam → sinal; elos gesto, risco, verdade; Faça o melhor!"
+              "description": "Palavras: «sinal» (lat. *signum*) — marca, trânsito, corpo, aviso e «dar sinal»; tipografia singlam → sinal; elos gesto, risco, verdade; Valeu !!!"
             },
             {
               "label": "Inspeção: Skill — empréstimo EN, habilidade e craft sem LinkedIn",
@@ -1859,7 +1875,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-skill.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-skill",
-              "description": "Palavras: «skill» — empréstimo EN→BR; habilidade/craft; anti-badge LinkedIn; elos multitask e genial; tipografia skgll → skill; Faça o melhor!"
+              "description": "Palavras: «skill» — empréstimo EN→BR; habilidade/craft; anti-badge LinkedIn; elos multitask e genial; tipografia skgll → skill; Valeu !!!"
             },
             {
               "label": "Inspeção: Passado — tempo decorrido, memória e o rasto que inspeciona",
@@ -1867,7 +1883,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-passado.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-passado",
-              "description": "Palavras: «passado» (de passar / lat. passāre) — tempo já decorrido; memória × história; ≠ futuro; elos memorável, verdade, língua; Faça o melhor!"
+              "description": "Palavras: «passado» (de passar / lat. passāre) — tempo já decorrido; memória × história; ≠ futuro; elos memorável, verdade, língua; Valeu !!!"
             },
             {
               "label": "Inspeção: Total — tōtus, completude e gíria BR «total!»",
@@ -1894,12 +1910,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes · série: The Chosen / Os Escolhidos (2019–, Dallas Jenkins) — Evangelhos primeiro; dramatização do ministério. Onde assistir: **app oficial** (ficha própria), watch.thechosen.tv, Prime e Netflix no catálogo BR. Distinta de A Paixão de Cristo."
             },
             {
-              "label": "Inspeção: Esperança — afecto vivo, espera com ofício e Faça o melhor!",
+              "label": "Inspeção: Esperança — afecto vivo, espera com ofício e Valeu !!!",
               "tileLabel": "Inspeção: Esperança — afecto vi…",
               "href": "/posts/post-inspecao-palavra-esperanca.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-esperanca",
-              "description": "Palavras: «esperança» (lat. *spēs* / *sperantia*) — afecto vivo BR; esperar × esperança; rede com alegria, medo, tristeza; Faça o melhor!"
+              "description": "Palavras: «esperança» (lat. *spēs* / *sperantia*) — afecto vivo BR; esperar × esperança; rede com alegria, medo, tristeza; Valeu !!!"
             },
             {
               "label": "Inspeção: app The Chosen — a via oficial gratuita",
@@ -1910,7 +1926,7 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes · app: The Chosen (Come and See) — player oficial grátis na Play e no App Store. Listing net.comeandsee.thechosen; sem anúncios no player (claim); dados declarados. Distinto da ficha da série e do site osescolhidos.tv."
             },
             {
-              "label": "Inspeção: Fabuloso — fábula, elogio BR e Faça o melhor!",
+              "label": "Inspeção: Fabuloso — fábula, elogio BR e Valeu !!!",
               "tileLabel": "Inspeção: Fabuloso — fábula, el…",
               "href": "/posts/post-inspecao-palavra-fabuloso.html",
               "icon": "🔍",
@@ -1923,10 +1939,10 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-arte-romeu-e-julieta.html",
               "icon": "🔍",
               "slug": "post-inspecao-arte-romeu-e-julieta",
-              "description": "Artes: Romeu e Julieta (Shakespeare) — tragédia de Verona; o apelido é o nó, a pessoa não é o nome. Autor em Pessoas. Literatura, não protocolo. Faça o melhor!"
+              "description": "Artes: Romeu e Julieta (Shakespeare) — tragédia de Verona; o apelido é o nó, a pessoa não é o nome. Autor em Pessoas. Literatura, não protocolo. Valeu !!!"
             },
             {
-              "label": "Inspeção: Fantástico — fantasia, elogio BR «fantástico!» e Faça o melhor!",
+              "label": "Inspeção: Fantástico — fantasia, elogio BR «fantástico!» e Valeu !!!",
               "tileLabel": "Inspeção: Fantástico — fantasia…",
               "href": "/posts/post-inspecao-palavra-fantastico.html",
               "icon": "🔍",
@@ -1950,12 +1966,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «planta» (lat. *planta* / *plantare*) — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; sem listar espécies."
             },
             {
-              "label": "Inspeção: Inspiração — sopro, ideia acesa e Faça o melhor!",
+              "label": "Inspeção: Inspiração — sopro, ideia acesa e Valeu !!!",
               "tileLabel": "Inspeção: Inspiração — sopro, i…",
               "href": "/posts/post-inspecao-palavra-inspiracao.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-inspiracao",
-              "description": "Palavras: «inspiração» (lat. *īnspīrātiō*) — sopro × ideia BR; elos criatividade, gesto, esperança; Faça o melhor!"
+              "description": "Palavras: «inspiração» (lat. *īnspīrātiō*) — sopro × ideia BR; elos criatividade, gesto, esperança; Valeu !!!"
             },
             {
               "label": "Inspeção: Pular — salto, omissão e derivações",
@@ -1963,7 +1979,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-pular.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-pular",
-              "description": "Palavras: «pular» (lat. *pullāre*) — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar, backspace, já; Faça o melhor!"
+              "description": "Palavras: «pular» (lat. *pullāre*) — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar, backspace, já; Valeu !!!"
             },
             {
               "label": "Inspeção: Interruptor — ligar, cortar e derivações",
@@ -1971,23 +1987,23 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-interruptor.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-interruptor",
-              "description": "Palavras: «interruptor» (lat. *interrumpere*) — peça do circuito; tríade com ligar × desligar e luz; Faça o melhor!"
+              "description": "Palavras: «interruptor» (lat. *interrumpere*) — peça do circuito; tríade com ligar × desligar e luz; Valeu !!!"
             },
             {
-              "label": "Inspeção: Sempre — duração, hábito e Faça o melhor!",
+              "label": "Inspeção: Sempre — duração, hábito e Valeu !!!",
               "tileLabel": "Inspeção: Sempre — duração, háb…",
               "href": "/posts/post-inspecao-palavra-sempre.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-sempre",
-              "description": "Palavras: «sempre» (lat. *semper*) — duração × hábito × promessa BR; elos já, prosseguir, caminho; Faça o melhor!"
+              "description": "Palavras: «sempre» (lat. *semper*) — duração × hábito × promessa BR; elos já, prosseguir, caminho; Valeu !!!"
             },
             {
-              "label": "Inspeção: Prosseguir — continuar, retomar e Faça o melhor!",
+              "label": "Inspeção: Prosseguir — continuar, retomar e Valeu !!!",
               "tileLabel": "Inspeção: Prosseguir — continua…",
               "href": "/posts/post-inspecao-palavra-prosseguir.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-prosseguir",
-              "description": "Palavras: «prosseguir» (lat. *prōsequī*) — continuar × retomar BR; derivações prosseguimento; elos sempre, já, caminho; Faça o melhor!"
+              "description": "Palavras: «prosseguir» (lat. *prōsequī*) — continuar × retomar BR; derivações prosseguimento; elos sempre, já, caminho; Valeu !!!"
             },
             {
               "label": "Inspeção: Valeu — gratidão leve e fecho oral BR",
@@ -1995,7 +2011,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-valeu.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-valeu",
-              "description": "Palavras: «valeu» (de *valer* ← lat. *valēre*) — gratidão leve BR; elos muitoobrigado, gesto, respeito; Faça o melhor!"
+              "description": "Palavras: «valeu» (de *valer* ← lat. *valēre*) — gratidão leve BR; elos Gratidão, gesto, respeito; Valeu !!!"
             },
             {
               "label": "Inspeção: Daninha — juízo de cultivo e planta viva",
@@ -2003,7 +2019,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-daninha.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-daninha",
-              "description": "Palavras: «daninha» (*dano* + *-inha*) — planta daninha como juízo de lugar; elos planta, cultivo, selvagem; Faça o melhor!"
+              "description": "Palavras: «daninha» (*dano* + *-inha*) — planta daninha como juízo de lugar; elos planta, cultivo, selvagem; Valeu !!!"
             },
             {
               "label": "Inspeção: Guia — preparar chá de plantas (infusão e decoção)",
@@ -2011,7 +2027,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
               "icon": "🔍",
               "slug": "post-inspecao-guia-preparo-cha-plantas",
-              "description": "Manual: infusão e decoção caseiras — material, tempos, proporções de ofício, segurança e elos com Plantas; Faça o melhor!"
+              "description": "Manual: infusão e decoção caseiras — material, tempos, proporções de ofício, segurança e elos com Plantas; Valeu !!!"
             },
             {
               "label": "Inspeção: Cinta — faixa que cinge e suporte no cultivo",
@@ -2019,7 +2035,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-cinta.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-cinta",
-              "description": "Palavras: «cinta» (lat. *cincta* / *cingere*) — faixa que segura; tutoramento com gesto; ≠ sinta; Faça o melhor!"
+              "description": "Palavras: «cinta» (lat. *cincta* / *cingere*) — faixa que segura; tutoramento com gesto; ≠ sinta; Valeu !!!"
             },
             {
               "label": "Inspeção: Cinzeiro — lugar da cinza e ofício do fogo",
@@ -2027,7 +2043,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-cinzeiro.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-cinzeiro",
-              "description": "Palavras: «cinzeiro» (*cinza* + *-eiro*) — recipiente/monte da cinza; elos fogo, gesto, risco; Faça o melhor!"
+              "description": "Palavras: «cinzeiro» (*cinza* + *-eiro*) — recipiente/monte da cinza; elos fogo, gesto, risco; Valeu !!!"
             },
             {
               "label": "Inspeção: Objetos — o que fica diante e o foco da ficha",
@@ -2035,7 +2051,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-objetos.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-objetos",
-              "description": "Palavras: «objetos» (lat. *obiectum*) — plural de objeto; meta-lab do objeto inspecionado; Faça o melhor!"
+              "description": "Palavras: «objetos» (lat. *obiectum*) — plural de objeto; meta-lab do objeto inspecionado; Valeu !!!"
             },
             {
               "label": "Inspeção: Guia — receitas de plantas (lote 1 · tisanas)",
@@ -2043,7 +2059,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-guia-receitas-plantas.html",
               "icon": "🔍",
               "slug": "post-inspecao-guia-receitas-plantas",
-              "description": "Oito receitas de ofício (camomila, hortelã, melissa, capim-limão, erva-cidreira, alecrim, gengibre, maracujá); elo ao manual de chá; Faça o melhor!"
+              "description": "Oito receitas de ofício (camomila, hortelã, melissa, capim-limão, erva-cidreira, alecrim, gengibre, maracujá); elo ao manual de chá; Valeu !!!"
             },
             {
               "label": "Inspeção: Insana — intensidade, juízo e cuidado",
@@ -2051,7 +2067,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-insana.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-insana",
-              "description": "Palavras: «insana» (lat. *insanus* = *in-* + *sanus*) — excesso/intensidade BR; ≠ diagnóstico; Faça o melhor!"
+              "description": "Palavras: «insana» (lat. *insanus* = *in-* + *sanus*) — excesso/intensidade BR; ≠ diagnóstico; Valeu !!!"
             },
             {
               "label": "Inspeção: Sugestão — proposta, palpite e fila de ofício",
@@ -2059,7 +2075,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-sugestao.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-sugestao",
-              "description": "Palavras: «sugestão» (lat. *suggestio*) — ato de sugerir; meta-lab da fila de inspeções; Faça o melhor!"
+              "description": "Palavras: «sugestão» (lat. *suggestio*) — ato de sugerir; meta-lab da fila de inspeções; Valeu !!!"
             },
             {
               "label": "Inspeção: Tudo — totalidade, essencial e foco",
@@ -2067,7 +2083,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-tudo.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-tudo",
-              "description": "Palavras: «tudo» (família *totus*) — todas as coisas / o essencial; elos objetos, alma; Faça o melhor!"
+              "description": "Palavras: «tudo» (família *totus*) — todas as coisas / o essencial; elos objetos, alma; Valeu !!!"
             },
             {
               "label": "Inspeção: Alma — centro vivo e chegar por dentro",
@@ -2075,7 +2091,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-alma.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-alma",
-              "description": "Palavras: «alma» (lat. *anima*) — centro vivo; chegar na alma; elos tudo, coração, vida; Faça o melhor!"
+              "description": "Palavras: «alma» (lat. *anima*) — centro vivo; chegar na alma; elos tudo, coração, vida; Valeu !!!"
             },
             {
               "label": "Inspeção: Nap — sono curto e pausa de ofício",
@@ -2083,7 +2099,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-nap.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-nap",
-              "description": "Palavras: «nap» (EN) — cochilo / power nap no BR; elos gesto, alma, vida; Faça o melhor!"
+              "description": "Palavras: «nap» (EN) — cochilo / power nap no BR; elos gesto, alma, vida; Valeu !!!"
             },
             {
               "label": "Inspeção: Pedi a mão — ajuda, pedido e gesto aberto",
@@ -2091,7 +2107,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-pedi-mao.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-pedi-mao",
-              "description": "Palavras: «pedi a mão» (*pedimao*) — pedir ajuda ou compromisso; elos mãos, gesto, respeito; Faça o melhor!"
+              "description": "Palavras: «pedi a mão» (*pedimao*) — pedir ajuda ou compromisso; elos mãos, gesto, respeito; Valeu !!!"
             },
             {
               "label": "Inspeção: Pattern — molde, padrão e repetição",
@@ -2099,7 +2115,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-pattern.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-pattern",
-              "description": "Palavras: «pattern» (EN) — molde / padrão / design pattern no BR; elos gesto, caminho, risco; Faça o melhor!"
+              "description": "Palavras: «pattern» (EN) — molde / padrão / design pattern no BR; elos gesto, caminho, risco; Valeu !!!"
             },
             {
               "label": "Inspeção: Patrão — chefe, poder e respeito",
@@ -2107,7 +2123,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-patrao.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-patrao",
-              "description": "Palavras: «patrão» — chefe/empregador (lat. patronus); elos respeito, pattern, gesto; Faça o melhor!"
+              "description": "Palavras: «patrão» — chefe/empregador (lat. patronus); elos respeito, pattern, gesto; Valeu !!!"
             },
             {
               "label": "Inspeção: EXIT — saída, limiar e salvação de ofício",
@@ -2115,7 +2131,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-exit.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-exit",
-              "description": "Palavras: «EXIT» (lat. *exīre* / *exitus*) — saída, quit, teatro; no lab, salvação = sair do aperto; elos caminho, risco, alma, vida; Faça o melhor!"
+              "description": "Palavras: «EXIT» (lat. *exīre* / *exitus*) — saída, quit, teatro; no lab, salvação = sair do aperto; elos caminho, risco, alma, vida; Valeu !!!"
             },
             {
               "label": "Inspeção: Tempo — cronologia, clima, compasso e o instante certo",
@@ -2123,7 +2139,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-tempo.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-tempo",
-              "description": "Palavras: «tempo» (lat. tempus) — cronologia, clima e compasso musical no BR; kairós × chronos; elos caminho, vida, sempre, passado, alma; Faça o melhor!"
+              "description": "Palavras: «tempo» (lat. tempus) — cronologia, clima e compasso musical no BR; kairós × chronos; elos caminho, vida, sempre, passado, alma; Valeu !!!"
             },
             {
               "label": "Inspeção: Perseguição — caça, opressão e o seguir que aperta",
@@ -2131,7 +2147,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-perseguicao.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-perseguicao",
-              "description": "Palavras: «perseguição» (lat. *persequī*) — caça × opressão × obsessão; contraste prosseguir; elos caminho, risco, EXIT; Faça o melhor!"
+              "description": "Palavras: «perseguição» (lat. *persequī*) — caça × opressão × obsessão; contraste prosseguir; elos caminho, risco, EXIT; Valeu !!!"
             },
             {
               "label": "Inspeção: Relação — o entre, o relato e a proporção",
@@ -2139,7 +2155,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-relacao.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-relacao",
-              "description": "Palavras: «relação» (lat. *relatĭō*) — vínculo × relato × proporção; elos simbiose, respeito, gesto; Faça o melhor!"
+              "description": "Palavras: «relação» (lat. *relatĭō*) — vínculo × relato × proporção; elos simbiose, respeito, gesto; Valeu !!!"
             },
             {
               "label": "Inspeção: Meneia — balanço, corpo e a mão no étimo",
@@ -2147,7 +2163,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-meneia.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-meneia",
-              "description": "Palavras: «meneia» / menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto e mãos; Faça o melhor!"
+              "description": "Palavras: «meneia» / menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto e mãos; Valeu !!!"
             },
             {
               "label": "Inspeção: Mãe — origem, cuidado e tipografia fia → mãe",
@@ -2155,7 +2171,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-mae.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-mae",
-              "description": "Palavras: «mãe» (lat. *mater*) — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria, alma, coração; Faça o melhor!"
+              "description": "Palavras: «mãe» (lat. *mater*) — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria, alma, coração; Valeu !!!"
             },
             {
               "label": "Inspeção: Grok — compreender por dentro × falar limpo",
@@ -2163,7 +2179,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-grok.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-grok",
-              "description": "Palavras: «Grok» (Heinlein *to grok*) — compreensão íntima × tom de ofício; relação de forma de se expressar com Deus (abençoe / filho / meudeusdoceu / jesusamando); Faça o melhor!"
+              "description": "Palavras: «Grok» (Heinlein *to grok*) — compreensão íntima × tom de ofício; relação de forma de se expressar com Deus (abençoe / filho / meudeusdoceu / jesusamando); Valeu !!!"
             },
             {
               "label": "Inspeção: Ligar × Desligar — verbos do circuito",
@@ -2171,7 +2187,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-ligar-desligar.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-ligar-desligar",
-              "description": "Palavras: «ligar» × «desligar» (lat. *ligāre*) — verbos do circuito; tríade com interruptor e luz; Faça o melhor!"
+              "description": "Palavras: «ligar» × «desligar» (lat. *ligāre*) — verbos do circuito; tríade com interruptor e luz; Valeu !!!"
             },
             {
               "label": "Inspeção: Papel de enrolar e tabaco — origem do papel e origem da planta",
@@ -2179,7 +2195,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-papel-enrolar-tabaco.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-papel-enrolar-tabaco",
-              "description": "Palavras: papel de enrolar × tabaco — planta americana e mortalha europeia; elos cinzeiro, fogo, maconha; Faça o melhor!"
+              "description": "Palavras: papel de enrolar × tabaco — planta americana e mortalha europeia; elos cinzeiro, fogo, maconha; Valeu !!!"
             },
             {
               "label": "Inspeção: Maçaneta — torcer, abrir, mãos, porta/janela e ligar a luz",
@@ -2187,7 +2203,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-macaneta.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-macaneta",
-              "description": "Palavras: maçaneta — gesto torcer/abrir × mão E/D × porta/janela × ligar/desligar luz; elos gesto, interruptor; Faça o melhor!"
+              "description": "Palavras: maçaneta — gesto torcer/abrir × mão E/D × porta/janela × ligar/desligar luz; elos gesto, interruptor; Valeu !!!"
             },
             {
               "label": "Inspeção: Luz — efeito do circuito e claridade",
@@ -2195,7 +2211,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-luz.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-luz",
-              "description": "Palavras: «luz» (lat. *lūx*) — claridade e efeito do clique; tríade circuito + sol (fonte natural); Faça o melhor!"
+              "description": "Palavras: «luz» (lat. *lūx*) — claridade e efeito do clique; tríade circuito + sol (fonte natural); Valeu !!!"
             },
             {
               "label": "Inspeção: Sol — astro, luz natural e ciclo",
@@ -2203,7 +2219,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-sol.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-sol",
-              "description": "Palavras: «sol» (lat. *sōl*) — astro e luz natural; par com noite; elo luz; contraste interruptor; ≠ solitário; Faça o melhor!"
+              "description": "Palavras: «sol» (lat. *sōl*) — astro e luz natural; par com noite; elo luz; contraste interruptor; ≠ solitário; Valeu !!!"
             },
             {
               "label": "Inspeção: Noite — ciclo, escuro e fotoperíodo",
@@ -2211,7 +2227,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-noite.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-noite",
-              "description": "Palavras: «noite» (lat. *nox*) — fase escura do ciclo; par com sol; elos luz e interruptor; cultivo; Faça o melhor!"
+              "description": "Palavras: «noite» (lat. *nox*) — fase escura do ciclo; par com sol; elos luz e interruptor; cultivo; Valeu !!!"
             },
             {
               "label": "Inspeção: Sozinho — sozna, sozinha e ofício",
@@ -2219,7 +2235,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-sozna.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-sozna",
-              "description": "Palavras: **sozinho** (lat. *sōlus* + *-zinho*) — par **sozinha**; forma oral **sozna**; ≠ solitário; Faça o melhor!"
+              "description": "Palavras: **sozinho** (lat. *sōlus* + *-zinho*) — par **sozinha**; forma oral **sozna**; ≠ solitário; Valeu !!!"
             },
             {
               "label": "Inspeção: Jobs — trabalhos em inglês, nome próprio e ofício sem pedestal",
@@ -2227,7 +2243,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-jobs.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-jobs",
-              "description": "Palavras: «Jobs» — EN jobs (trabalhos) × Steve Jobs no BR; anti-culto de fundador; elos skill, ídolo e criatividade; Faça o melhor!"
+              "description": "Palavras: «Jobs» — EN jobs (trabalhos) × Steve Jobs no BR; anti-culto de fundador; elos skill, ídolo e criatividade; Valeu !!!"
             },
             {
               "label": "Inspeção: Abracadabra — fórmula, palco e o lapso «abacadabra»",
@@ -2235,7 +2251,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-abracadabra.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-abracadabra",
-              "description": "Palavras: «abracadabra» — âncora escrita; «abacadabra» = lapso oral; amuleto romano × cue de palco × anti-atalho; elos gesto, skill e verdade; Faça o melhor!"
+              "description": "Palavras: «abracadabra» — âncora escrita; «abacadabra» = lapso oral; amuleto romano × cue de palco × anti-atalho; elos gesto, skill e verdade; Valeu !!!"
             },
             {
               "label": "Inspeção: Gêmeos — par, signo Gemini e a armadilha com «gênio»",
@@ -2243,7 +2259,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-gemeos.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-gemeos",
-              "description": "Palavras: «gêmeos» (gemeos) — lat. geminus (par) ≠ genius (engenho / lâmpada); signo Gemini; elos relação e genial; Faça o melhor!"
+              "description": "Palavras: «gêmeos» (gemeos) — lat. geminus (par) ≠ genius (engenho / lâmpada); signo Gemini; elos relação e genial; Valeu !!!"
             },
             {
               "label": "Inspeção: Lâmpada — vaso de luz, vaso de desejo e o lapso «lampada»",
@@ -2251,7 +2267,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-lampada.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-lampada",
-              "description": "Palavras: «lâmpada» (lampada) — vaso de luz no quarto × lâmpada de Aladim; génio = inquilino; ≠ gêmeos; elos luz, ligar e abracadabra; Faça o melhor!"
+              "description": "Palavras: «lâmpada» (lampada) — vaso de luz no quarto × lâmpada de Aladim; génio = inquilino; ≠ gêmeos; elos luz, ligar e abracadabra; Valeu !!!"
             },
             {
               "label": "Inspeção: Esfregar — fricção, cue da lâmpada e o clique que não é",
@@ -2259,7 +2275,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-esfregar.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-esfregar",
-              "description": "Palavras: «esfregar» (*fricare*) — gesto do conto na lâmpada de Aladim × clique do interruptor; ≠ ligar; elos gesto, desejos e três; Faça o melhor!"
+              "description": "Palavras: «esfregar» (*fricare*) — gesto do conto na lâmpada de Aladim × clique do interruptor; ≠ ligar; elos gesto, desejos e três; Valeu !!!"
             },
             {
               "label": "Inspeção: Desejos — vontade, pack da lâmpada e o ofício que não pede",
@@ -2267,7 +2283,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-desejos.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-desejos",
-              "description": "Palavras: «desejos» (*desiderium*) — vontade viva × pack do génio; quota muitas vezes três; ≠ gesto; elos lâmpada, esfregar e três; Faça o melhor!"
+              "description": "Palavras: «desejos» (*desiderium*) — vontade viva × pack do génio; quota muitas vezes três; ≠ gesto; elos lâmpada, esfregar e três; Valeu !!!"
             },
             {
               "label": "Inspeção: Três — o 3, a quota dos desejos e o teto que não é método",
@@ -2275,7 +2291,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-tres.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-tres",
-              "description": "Palavras: «três» / 3 — cardinal (*trēs*) e quota popular dos três desejos da lâmpada; ≠ lei do clássico; elos desejos, esfregar e lâmpada; Faça o melhor!"
+              "description": "Palavras: «três» / 3 — cardinal (*trēs*) e quota popular dos três desejos da lâmpada; ≠ lei do clássico; elos desejos, esfregar e lâmpada; Valeu !!!"
             },
             {
               "label": "Inspeção: Vassoura — varrer, cabo e o conto que não é receita",
@@ -2283,7 +2299,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-vassoura.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-vassoura",
-              "description": "Palavras: «vassoura» (lat. versōria) — utensílio de varrer × folclore da bruxa (hipótese XIV, sem receita) × vassoura-de-bruxa do cacau; Faça o melhor!"
+              "description": "Palavras: «vassoura» (lat. versōria) — utensílio de varrer × folclore da bruxa (hipótese XIV, sem receita) × vassoura-de-bruxa do cacau; Valeu !!!"
             },
             {
               "label": "Inspeção: Porta Palavra #5 — mequetrefe e o brechó do dicionário",
@@ -2291,7 +2307,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-mequetrefe.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-mequetrefe",
-              "description": "Palavras: todas as peças de Porta Palavra #5 (Gregorio) nesta página — mequetrefe, jururu, pinimba, cooper, lorota, brechó; Faça o melhor!"
+              "description": "Palavras: todas as peças de Porta Palavra #5 (Gregorio) nesta página — mequetrefe, jururu, pinimba, cooper, lorota, brechó; Valeu !!!"
             },
             {
               "label": "Inspeção: Paraguai — o país, a grafia Paraguay e o lapso PARAGYACYY",
@@ -2299,7 +2315,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-paraguai.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-paraguai",
-              "description": "Palavras: «Paraguai» / Paraguay — país no Cone Sul; lapso PARAGYACYY mistura com Paraguaçu (BR); ≠ guerra nem canhão; Faça o melhor!"
+              "description": "Palavras: «Paraguai» / Paraguay — país no Cone Sul; lapso PARAGYACYY mistura com Paraguaçu (BR); ≠ guerra nem canhão; Valeu !!!"
             },
             {
               "label": "Inspeção: Paraguaçu — topónimo brasileiro, Paraguaçu Paulista e o som que não é o país",
@@ -2307,7 +2323,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-paraguacu.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-paraguacu",
-              "description": "Palavras: «Paraguaçu» — lugar BR (tupi); Paraguaçu Paulista e ESAPP; ≠ Paraguai / Paraguay; lapso PARAGYACYY; Faça o melhor!"
+              "description": "Palavras: «Paraguaçu» — lugar BR (tupi); Paraguaçu Paulista e ESAPP; ≠ Paraguai / Paraguay; lapso PARAGYACYY; Valeu !!!"
             },
             {
               "label": "Inspeção: Guerra do Paraguai — o nome de 1864–1870, a Tríplice Aliança e a memória em disputa",
@@ -2315,7 +2331,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-guerra-do-paraguai.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-guerra-do-paraguai",
-              "description": "Palavras: Guerra do Paraguai / Paraguay — 1864–1870; Tríplice Aliança; números e culpas em disputa; elos troféus e canhão El Cristiano; Faça o melhor!"
+              "description": "Palavras: Guerra do Paraguai / Paraguay — 1864–1870; Tríplice Aliança; números e culpas em disputa; elos troféus e canhão El Cristiano; Valeu !!!"
             },
             {
               "label": "Inspeção: Troféus de guerra — espólio, museu e o caso El Cristiano",
@@ -2323,7 +2339,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-trofeus-de-guerra.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-trofeus-de-guerra",
-              "description": "Palavras: troféus de guerra (*tropaeum*) — espólio ≠ verdade da guerra; caso canhão El Cristiano (devolução autorizada, entrega não fechada); Faça o melhor!"
+              "description": "Palavras: troféus de guerra (*tropaeum*) — espólio ≠ verdade da guerra; caso canhão El Cristiano (devolução autorizada, entrega não fechada); Valeu !!!"
             },
             {
               "label": "Inspeção: Canhão — El Cristiano, o lapso canjão e o troféu ainda no Rio",
@@ -2331,7 +2347,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-canhao.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-canhao",
-              "description": "Palavras: canhão (*canna*); peça El Cristiano da Guerra do Paraguai; troféu no MHN; devolução autorizada (ago. 2026) ≠ entrega; Faça o melhor!"
+              "description": "Palavras: canhão (*canna*); peça El Cristiano da Guerra do Paraguai; troféu no MHN; devolução autorizada (ago. 2026) ≠ entrega; Valeu !!!"
             },
             {
               "label": "Inspeção: Tônico — tônicos da palavra e os outros sentidos de tónos",
@@ -2339,7 +2355,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-tonico.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-tonico",
-              "description": "Palavras: «tônico» (gr. tónos) — sílaba tônica × tom do lab × planta × Ayurveda × crise × música × músculo × cosmética × água tónica; Faça o melhor!"
+              "description": "Palavras: «tônico» (gr. tónos) — sílaba tônica × tom do lab × planta × Ayurveda × crise × música × músculo × cosmética × água tónica; Valeu !!!"
             },
             {
               "label": "Inspeção: Isotônico — iso- + tônico, tensão igual",
@@ -2347,7 +2363,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-isotonico.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-isotonico",
-              "description": "Palavras: «isotônico» — isola o tônico (tónos); iso- = igual; osmose × músculo × gôndola; ≠ chá, sílaba, água tónica; Faça o melhor!"
+              "description": "Palavras: «isotônico» — isola o tônico (tónos); iso- = igual; osmose × músculo × gôndola; ≠ chá, sílaba, água tónica; Valeu !!!"
             },
             {
               "label": "Inspeção: Moçambique — o país, o tónos em BI e o lapso esqueiro biq",
@@ -2355,7 +2371,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-mocambique.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-mocambique",
-              "description": "Palavras: «Moçambique» — país lusófono; étimo Mussa Bin Bique; tónico em BI; lapso esqueiro biq = Biq × isqueiro BIC; Faça o melhor!"
+              "description": "Palavras: «Moçambique» — país lusófono; étimo Mussa Bin Bique; tónico em BI; lapso esqueiro biq = Biq × isqueiro BIC; Valeu !!!"
             },
             {
               "label": "Inspeção: Isqueiro BIC — tónos do polegar e o lapso esqueiro biq",
@@ -2363,7 +2379,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-isqueiro-bic.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-isqueiro-bic",
-              "description": "Palavras: «isqueiro BIC» — isca+eiro; marca 1973; tónos = tensão (~42 N); lapso esqueiro biq ≠ Moçambique; Faça o melhor!"
+              "description": "Palavras: «isqueiro BIC» — isca+eiro; marca 1973; tónos = tensão (~42 N); lapso esqueiro biq ≠ Moçambique; Valeu !!!"
             },
             {
               "label": "Inspeção: Tónos — a raiz grega da tensão, distinta de tônico",
@@ -2371,7 +2387,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-tonos.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-tonos",
-              "description": "Palavras: «tónos» (τόνος) — raiz da tensão; ≠ mapa PT tônico; tríade vomitar / commitar; Faça o melhor!"
+              "description": "Palavras: «tónos» (τόνος) — raiz da tensão; ≠ mapa PT tônico; tríade vomitar / commitar; Valeu !!!"
             },
             {
               "label": "Inspeção: Vomitar — largar o que não fica, antes do commit",
@@ -2379,7 +2395,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-vomitar.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-vomitar",
-              "description": "Palavras: «vomitar» (lat. vomitare) — corpo × metáfora × mito XIV; tríade tónos / commitar; Faça o melhor!"
+              "description": "Palavras: «vomitar» (lat. vomitare) — corpo × metáfora × mito XIV; tríade tónos / commitar; Valeu !!!"
             },
             {
               "label": "Inspeção: Commitar — gravar o rasto (comitar ≠ cometer)",
@@ -2387,7 +2403,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-commitar.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-commitar",
-              "description": "Palavras: «commitar» (*comitar*) — calco git; ≠ cometer; tríade tónos / vomitar; Faça o melhor depois do snapshot!"
+              "description": "Palavras: «commitar» (*comitar*) — calco git; ≠ cometer; tríade tónos / vomitar; Valeu !!! depois do snapshot!"
             },
             {
               "label": "Inspeção: Tanzânia — o país, o Taz e a relação com Taz Manaia",
@@ -2395,7 +2411,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-tanzania.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-tanzania",
-              "description": "Palavras: «Tanzânia» — país (Tan+Zan+-ia, 1964); Taz = hipocorístico; ≠ Tasmânia; relação com o lapso Taz Manaia; Faça o melhor!"
+              "description": "Palavras: «Tanzânia» — país (Tan+Zan+-ia, 1964); Taz = hipocorístico; ≠ Tasmânia; relação com o lapso Taz Manaia; Valeu !!!"
             },
             {
               "label": "Inspeção: Taz Manaia — o lapso Taz-Mania, o manaia e a relação com Tanzânia",
@@ -2403,7 +2419,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-taz-manaia.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-taz-manaia",
-              "description": "Palavras: «Taz Manaia» — lapso de Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Faça o melhor!"
+              "description": "Palavras: «Taz Manaia» — lapso de Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Valeu !!!"
             },
             {
               "label": "Inspeção: Xiaomi — milheto, marca e ofício sem pedestal",
@@ -2411,7 +2427,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-xiaomi.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-xiaomi",
-              "description": "Palavras: «Xiaomi» (*xioomi* → Xiaomi) — 小米 milheto; marca × grão × ídolo tech; elos Jobs, objetos e celular; Faça o melhor!"
+              "description": "Palavras: «Xiaomi» (*xioomi* → Xiaomi) — 小米 milheto; marca × grão × ídolo tech; elos Jobs, objetos e celular; Valeu !!!"
             },
             {
               "label": "Inspeção: Cuca — história infantil, cantiga e o bicho do Sítio",
@@ -2427,7 +2443,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-trocadilho.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-trocadilho",
-              "description": "Palavras: trocadilho (calembur) — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; irmãs aglutinação e Tanzânia; Faça o melhor!"
+              "description": "Palavras: trocadilho (calembur) — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; irmãs aglutinação e Tanzânia; Valeu !!!"
             },
             {
               "label": "Inspeção: Aglutinação — a solda gramatical (e por que cara+alho só parece)",
@@ -2435,7 +2451,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-aglutinacao.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-aglutinacao",
-              "description": "Palavras: aglutinação — composição por fusão (planalto, embora); cara+alho é máscara, o nome certo é trocadilho; ≠ polimorfismo; Faça o melhor!"
+              "description": "Palavras: aglutinação — composição por fusão (planalto, embora); cara+alho é máscara, o nome certo é trocadilho; ≠ polimorfismo; Valeu !!!"
             },
             {
               "label": "Inspeção: Polimorfismo — várias formas do mesmo (não é cara+alho)",
@@ -2443,7 +2459,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-polimorfismo.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-polimorfismo",
-              "description": "Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; irmã aglutinação; Faça o melhor!"
+              "description": "Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; irmã aglutinação; Valeu !!!"
             },
             {
               "label": "Inspeção: Sinais REM — o campo, o sono e a sigla do laboratório",
@@ -2451,7 +2467,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-sinais-rem.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-sinais-rem",
-              "description": "Palavras: «sinais REM» — plural de sinal; sono Rapid Eye Movement × sigla lab Relaxamento·Endocanabinoide·Modular; elos gesto, nap, eCBome; Faça o melhor!"
+              "description": "Palavras: «sinais REM» — plural de sinal; sono Rapid Eye Movement × sigla lab Relaxamento·Endocanabinoide·Modular; elos gesto, nap, eCBome; Valeu !!!"
             },
             {
               "label": "Inspeção: Objectos perigosos para controle de incêndio — mapa da tenda",
@@ -2459,7 +2475,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-objetos-perigosos-incendio.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-objetos-perigosos-incendio",
-              "description": "Palavras: mapa perigo × corte × marca — Mars Hydro / Vivosun e todos os objectos da tenda; ≠ manual de bombeiros; Faça o melhor!"
+              "description": "Palavras: mapa perigo × corte × marca — Mars Hydro / Vivosun e todos os objectos da tenda; ≠ manual de bombeiros; Valeu !!!"
             },
             {
               "label": "Inspeção: Mars Hydro — Marte, água e o rasto marshydrobr",
@@ -2467,7 +2483,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-mars-hydro.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-mars-hydro",
-              "description": "Palavras: «Mars Hydro» (*marshydrobr*) — Mārs + hýdōr; marca ≠ controle de incêndio; elos tenda, fonte, Vivosun; Faça o melhor!"
+              "description": "Palavras: «Mars Hydro» (*marshydrobr*) — Mārs + hýdōr; marca ≠ controle de incêndio; elos tenda, fonte, Vivosun; Valeu !!!"
             },
             {
               "label": "Inspeção: Vivosun — sol vivo, marca e o cabo na tenda",
@@ -2475,7 +2491,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-vivosun.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-vivosun",
-              "description": "Palavras: «Vivosun» (*vivo* + *sun*) — sol vivo no nome; marca ≠ controle de incêndio; elos Mars Hydro, tenda, fonte; Faça o melhor!"
+              "description": "Palavras: «Vivosun» (*vivo* + *sun*) — sol vivo no nome; marca ≠ controle de incêndio; elos Mars Hydro, tenda, fonte; Valeu !!!"
             },
             {
               "label": "Inspeção: Tenda — recinto, Mylar e o calor fechado",
@@ -2483,7 +2499,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-tenda.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-tenda",
-              "description": "Palavras: «tenda» (lat. tendere) — grow tent concentra luz e calor; objecto do cluster de incêndio; Faça o melhor!"
+              "description": "Palavras: «tenda» (lat. tendere) — grow tent concentra luz e calor; objecto do cluster de incêndio; Valeu !!!"
             },
             {
               "label": "Inspeção: Extintor — apagar, classe e o último gesto",
@@ -2491,7 +2507,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-extintor.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-extintor",
-              "description": "Palavras: «extintor» (lat. exstinguere) — objecto de controle; ≠ NR-23; elos incêndio, interruptor; Faça o melhor!"
+              "description": "Palavras: «extintor» (lat. exstinguere) — objecto de controle; ≠ NR-23; elos incêndio, interruptor; Valeu !!!"
             },
             {
               "label": "Inspeção: Incêndio — o evento, não o elemento",
@@ -2499,7 +2515,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-incendio.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-incendio",
-              "description": "Palavras: «incêndio» (lat. incendium) ≠ fogo (focus); evento descontrolado; eixo do cluster da tenda; Faça o melhor!"
+              "description": "Palavras: «incêndio» (lat. incendium) ≠ fogo (focus); evento descontrolado; eixo do cluster da tenda; Valeu !!!"
             },
             {
               "label": "Inspeção: Fonte — a nascente que agora é o driver",
@@ -2507,7 +2523,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-fonte.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-fonte",
-              "description": "Palavras: «fonte» (lat. fons) — no indoor é o driver; perigo escondido do cluster; Faça o melhor!"
+              "description": "Palavras: «fonte» (lat. fons) — no indoor é o driver; perigo escondido do cluster; Valeu !!!"
             },
             {
               "label": "Inspeção: Extensão — esticar a tomada até à tenda",
@@ -2515,7 +2531,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-extensao.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-extensao",
-              "description": "Palavras: «extensão» (lat. extendere) — régua/benjamim; perigo banal do cluster; Faça o melhor!"
+              "description": "Palavras: «extensão» (lat. extendere) — régua/benjamim; perigo banal do cluster; Valeu !!!"
             },
             {
               "label": "Inspeção: Exaustor — esgotar o ar, não o motor",
@@ -2523,7 +2539,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-exaustor.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-exaustor",
-              "description": "Palavras: «exaustor» (lat. exhaurīre) — motor inline na tenda; perigo × clima; elos ventilação, Mars/Vivosun; Faça o melhor!"
+              "description": "Palavras: «exaustor» (lat. exhaurīre) — motor inline na tenda; perigo × clima; elos ventilação, Mars/Vivosun; Valeu !!!"
             },
             {
               "label": "Inspeção: Sinais — o campo do corpo",
@@ -2531,7 +2547,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-sinais.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-sinais",
-              "description": "Palavras: «sinais» — plural de sinal; mapa do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres; Faça o melhor!"
+              "description": "Palavras: «sinais» — plural de sinal; mapa do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres; Valeu !!!"
             },
             {
               "label": "Inspeção: Barriga — sinal de satisfação",
@@ -2539,7 +2555,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-barriga.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-barriga",
-              "description": "Palavras: «barriga» — ventre como sinal de satisfação (o bastante); ≠ Barriga de Trigo; mapa sinais; Faça o melhor!"
+              "description": "Palavras: «barriga» — ventre como sinal de satisfação (o bastante); ≠ Barriga de Trigo; mapa sinais; Valeu !!!"
             },
             {
               "label": "Inspeção: Orelha — pulga atrás, curiosidade",
@@ -2547,7 +2563,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-orelha.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-orelha",
-              "description": "Palavras: «orelha» — pulga atrás da orelha = curiosidade; elos inseto, dois ouvidos; mapa sinais; Faça o melhor!"
+              "description": "Palavras: «orelha» — pulga atrás da orelha = curiosidade; elos inseto, dois ouvidos; mapa sinais; Valeu !!!"
             },
             {
               "label": "Inspeção: Mama — teta, sinal de algo fácil",
@@ -2555,7 +2571,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-mama.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-mama",
-              "description": "Palavras: «mama» = «teta» — sinal de algo fácil; ≠ mamão ≠ mãe; mapa sinais; Faça o melhor!"
+              "description": "Palavras: «mama» = «teta» — sinal de algo fácil; ≠ mamão ≠ mãe; mapa sinais; Valeu !!!"
             },
             {
               "label": "Inspeção: Cabelo — deixa com as mulheres",
@@ -2563,7 +2579,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-cabelo.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-cabelo",
-              "description": "Palavras: «cabelo» — sinal de deferência: a gente deixa com as mulheres, elas sabem mais; ≠ despejo; mapa sinais; Faça o melhor!"
+              "description": "Palavras: «cabelo» — sinal de deferência: a gente deixa com as mulheres, elas sabem mais; ≠ despejo; mapa sinais; Valeu !!!"
             },
             {
               "label": "Inspeção: Sexta-feira 13 — apenas mais um dia qualquer",
@@ -2571,7 +2587,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-sexta-feira-13.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-sexta-feira-13",
-              "description": "Palavras: «sexta-feira 13» — data, não azar; 13 de novembro de 2026 é sexta e é um dia qualquer; estreias da franquia no dia 13 = calendário, não o objecto; Faça o melhor!"
+              "description": "Palavras: «sexta-feira 13» — data, não azar; 13 de novembro de 2026 é sexta e é um dia qualquer; estreias da franquia no dia 13 = calendário, não o objecto; Valeu !!!"
             },
             {
               "label": "Inspeção: Cola · Colar — colante, cortante, cerol, pipa, linha e o Brasil com P de Perigo",
@@ -2579,7 +2595,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-cola-colar.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-cola-colar",
-              "description": "Palavras: cola/colar (kólla ≠ pescoço ≠ noz); cadeia BR colante·cortante·cerol·pipa·linha; Brasil com P de Perigo; ficha ≠ receita; Faça o melhor!"
+              "description": "Palavras: cola/colar (kólla ≠ pescoço ≠ noz); cadeia BR colante·cortante·cerol·pipa·linha; Brasil com P de Perigo; ficha ≠ receita; Valeu !!!"
             },
             {
               "label": "Inspeção: Impressão · Pressão — panela e a válvula de escape",
@@ -2587,7 +2603,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-impressao-pressao.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-impressao-pressao",
-              "description": "Palavras: impressão = pressão para dentro (premere); objecto panela de pressão + válvula de escape; ≠ inspiração; ficha ≠ anular válvula; Faça o melhor!"
+              "description": "Palavras: impressão = pressão para dentro (premere); objecto panela de pressão + válvula de escape; ≠ inspiração; ficha ≠ anular válvula; Valeu !!!"
             },
             {
               "label": "Inspeção: Etimologia — o ofício de perguntar de onde veio",
@@ -2595,7 +2611,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-etimologia.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-etimologia",
-              "description": "Palavras: etimologia (étymon + lógos) — método da série; étimo ≠ etimologia popular (cara+alho); irmãs aglutinação e polimorfismo; Faça o melhor!"
+              "description": "Palavras: etimologia (étymon + lógos) — método da série; étimo ≠ etimologia popular (cara+alho); irmãs aglutinação e polimorfismo; Valeu !!!"
             },
             {
               "label": "Inspeção: Nó — o laço na corda, antes de desatar",
@@ -2603,7 +2619,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-no.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-no",
-              "description": "Palavras: «nó» (lat. *nodus*) — laço na corda e na vida; ≠ corda ≠ codorna; elos desatar / desastre / ufa; Faça o melhor!"
+              "description": "Palavras: «nó» (lat. *nodus*) — laço na corda e na vida; ≠ corda ≠ codorna; elos desatar / desastre / ufa; Valeu !!!"
             },
             {
               "label": "Inspeção: Corda — o objecto onde mora o nó",
@@ -2611,7 +2627,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-corda.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-corda",
-              "description": "Palavras-objecto: «corda» (lat. *chorda*) — fio que recebe o nó; ≠ cinta ≠ codorna; catálogo Objetos; Faça o melhor!"
+              "description": "Palavras-objecto: «corda» (lat. *chorda*) — fio que recebe o nó; ≠ cinta ≠ codorna; catálogo Objetos; Valeu !!!"
             },
             {
               "label": "Inspeção: Desatar — soltar o nó, sem virar desastre",
@@ -2619,7 +2635,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-desatar.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-desatar",
-              "description": "Palavras: «desatar» (*des-* + *atar*) — gesto de soltar o nó; ≠ desastre (*astro*); ditado desatar o nó; ufa no fim; Faça o melhor!"
+              "description": "Palavras: «desatar» (*des-* + *atar*) — gesto de soltar o nó; ≠ desastre (*astro*); ditado desatar o nó; ufa no fim; Valeu !!!"
             },
             {
               "label": "Inspeção: Desastre — má estrela, não é desatar o nó",
@@ -2627,7 +2643,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-desastre.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-desastre",
-              "description": "Palavras: «desastre» (*dis-* + *astrum*) — má estrela; ≠ desatar; relação de ofício com desatar o nó; ufa depois; Faça o melhor!"
+              "description": "Palavras: «desastre» (*dis-* + *astrum*) — má estrela; ≠ desatar; relação de ofício com desatar o nó; ufa depois; Valeu !!!"
             },
             {
               "label": "Inspeção: Ufa — o sopro depois de desatar o nó",
@@ -2635,7 +2651,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-ufa.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-ufa",
-              "description": "Palavras: «ufa» — interjeição BR de alívio; par de aff; fecho de desatar o nó; legal (gíria) se couber; Faça o melhor!"
+              "description": "Palavras: «ufa» — interjeição BR de alívio; par de aff; fecho de desatar o nó; legal (gíria) se couber; Valeu !!!"
             },
             {
               "label": "Inspeção: Mara — o nome que chegou, a maravilha e os barquinhos de papel",
@@ -2643,7 +2659,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-mara.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-mara",
-              "description": "Palavras: «Mara» — nome que chegou sem estar na lista; cola em maravilha; étimo hebr. mārāh é camada, não veredicto; poema dos barquinhos de papel; Faça o melhor!"
+              "description": "Palavras: «Mara» — nome que chegou sem estar na lista; cola em maravilha; étimo hebr. mārāh é camada, não veredicto; poema dos barquinhos de papel; Valeu !!!"
             },
             {
               "label": "Inspeção: Orfeu — o nome, a lira e o Morpheus que não é ele",
@@ -2651,7 +2667,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-orfeu.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-orfeu",
-              "description": "Palavras: «Orfeu» (gr. Ὀρφεύς, étimo incerto) — mito da lira e Eurídice; no BR, Orfeu da Conceição / Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo (Morfeu ← morphē); Faça o melhor!"
+              "description": "Palavras: «Orfeu» (gr. Ὀρφεύς, étimo incerto) — mito da lira e Eurídice; no BR, Orfeu da Conceição / Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo (Morfeu ← morphē); Valeu !!!"
             },
             {
               "label": "Inspeção: Gratidão — qualidade de grato, não fórmula de obrigado",
@@ -2659,10 +2675,82 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-gratidao.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-gratidao",
-              "description": "Palavras: «gratidão» (lat. tardio grātitūdō ← grātus) — qualidade de quem recebe bem; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Faça o melhor!"
+              "description": "Palavras: «gratidão» (lat. tardio grātitūdō ← grātus) — qualidade de quem recebe bem; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Valeu !!!"
             },
             {
-              "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
+              "label": "Inspeção: Violão — o objecto onde as cordas afinam",
+              "tileLabel": "Inspeção: Violão — o objecto on…",
+              "href": "/posts/post-inspecao-palavra-violao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-violao",
+              "description": "Objecto: «violão» (viola + -ão) — guitarra clássica/acústica BR; ≠ guitarra eléctrica ≠ viola caipira; cordas no braço; ofício afinar; catálogo Objetos; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Link · Klink — a relação que a orelha cola e o étimo corta (Tamara)",
+              "tileLabel": "Inspeção: Link · Klink — a rela…",
+              "href": "/posts/post-inspecao-palavra-link.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-link",
+              "description": "Palavras: link (elo EN) × sobrenome Klink da Tamara; tamaraklink.com soa a «Tamara link»; metáfora de caminho ≠ origem do apelido; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Conexão — conectar + ação (e por que se escreve com x)",
+              "tileLabel": "Inspeção: Conexão — conectar + …",
+              "href": "/posts/post-inspecao-palavra-conexao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-conexao",
+              "description": "Palavras: conexão — a ação de conectar; grafia com x (não conecção); ≠ colchão; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Afinar — violão, passarinho assobiando e o tom justo",
+              "tileLabel": "Inspeção: Afinar — violão, pass…",
+              "href": "/posts/post-inspecao-palavra-afinar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-afinar",
+              "description": "Palavras: «afinar» (a- + fino ← lat. fīnis) — objecto violão; passarinho assobiando como diapasão vivo; desafinar; asoviar = assobiar; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Afinador — o objecto que lê a corda do violão",
+              "tileLabel": "Inspeção: Afinador — o objecto …",
+              "href": "/posts/post-inspecao-palavra-afinador.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-afinador",
+              "description": "Objecto: «afinador» (afinar + -dor) — clip / diapasão / app lê a corda do violão; a tarraxa escreve o tónos; muleta, não dono; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Script — sequência escrita, não destino",
+              "tileLabel": "Inspeção: Script — sequência es…",
+              "href": "/posts/post-inspecao-palavra-script.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-script",
+              "description": "Palavras: «script» (lat. scrīptum ← scrībere) — sequência escrita EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Upsert — inserir ou actualizar sem duplicar a identidade",
+              "tileLabel": "Inspeção: Upsert — inserir ou a…",
+              "href": "/posts/post-inspecao-palavra-upsert.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-upsert",
+              "description": "Palavras: «upsert» (update+insert) — chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; o lab já pratica o gesto; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Intestino — o tubo de dentro (intus) e Valeu !!!",
+              "tileLabel": "Inspeção: Intestino — o tubo de…",
+              "href": "/posts/post-inspecao-palavra-intestino.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-intestino",
+              "description": "Palavras: «intestino» (lat. *intestīnum* ← *intus*) — órgão-tubo e adj. interno; ≠ barriga; elos eCBome/UNIFESP; Valeu !!! por dentro."
+            },
+            {
+              "label": "Inspeção: Curar — cūra, tratar e secar, sem milagre",
+              "tileLabel": "Inspeção: Curar — cūra, tratar …",
+              "href": "/posts/post-inspecao-palavra-curar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-curar",
+              "description": "Palavras: «curar» (lat. cūrāre ← cūra) — tratar × secar a colheita; ≠ cuidar (cōgitāre); curar a planta ≠ a planta cura; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",
               "icon": "🔍",
@@ -2670,7 +2758,7 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «eletrizante» (eletro- + intensidade) — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo → eletrizante; elos fogo e escala de louvor."
             },
             {
-              "label": "Inspeção: Legal — lei, gíria BR «bacana» e Faça o melhor!",
+              "label": "Inspeção: Legal — lei, gíria BR «bacana» e Valeu !!!",
               "tileLabel": "Inspeção: Legal — lei, gíria BR…",
               "href": "/posts/post-inspecao-palavra-legal.html",
               "icon": "🔍",
@@ -2683,15 +2771,15 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-expressao-ausdhuashduas.html",
               "icon": "🔍",
               "slug": "post-inspecao-expressao-ausdhuashduas",
-              "description": "Expressões: ausdhuashduas — nome lab do riso tipado BR; substitui kkkk… e «risas online»; elos jesusamando, meudeusdoceu, aff, Faça o melhor!"
+              "description": "Expressões: ausdhuashduas — nome lab do riso tipado BR; substitui kkkk… e «risas online»; elos jesusamando, meudeusdoceu, aff, Valeu !!!"
             },
             {
-              "label": "Inspeção: Fogo — elemento, ardor, cuidado e Faça o melhor!",
+              "label": "Inspeção: Fogo — elemento, ardor, cuidado e Valeu !!!",
               "tileLabel": "Inspeção: Fogo — elemento, ardo…",
               "href": "/posts/post-inspecao-palavra-fogo.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-fogo",
-              "description": "Palavras: «fogo» (lat. *focus*) — elemento e metáfora; elos água, raiva e cultivo; Faça o melhor! com medida."
+              "description": "Palavras: «fogo» (lat. *focus*) — elemento e metáfora; elos água, raiva e cultivo; Valeu !!! com medida."
             },
             {
               "label": "Inspeção: Mão esquerda / mão direita — complementaridade do ofício",
@@ -2702,12 +2790,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «mão esquerda» / «mão direita» (*manus*) — par de ofício; mão direita × coração (gesto × cuidado); elo esquerdo; sem moral dualista."
             },
             {
-              "label": "Inspeção: Esquerdo — relação com as mãos, criação e Faça o melhor!",
+              "label": "Inspeção: Esquerdo — relação com as mãos, criação e Valeu !!!",
               "tileLabel": "Inspeção: Esquerdo — relação co…",
               "href": "/posts/post-inspecao-palavra-esquerdo.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-esquerdo",
-              "description": "Palavras: «esquerdo» — lado de ofício × ficha irmã mãos (esquerda×direita); criação, anti-estigma e Faça o melhor! nesta mão."
+              "description": "Palavras: «esquerdo» — lado de ofício × ficha irmã mãos (esquerda×direita); criação, anti-estigma e Valeu !!! nesta mão."
             },
             {
               "label": "Inspeção: Já — o relógio da frase e o par com aff",
@@ -2715,15 +2803,15 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-ja.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-ja",
-              "description": "Palavras: «já» (lat. *iam*) — tempo e urgência; par oral com «aff»; fecho vazio = ressalva; Faça o melhor! continua."
+              "description": "Palavras: «já» (lat. *iam*) — tempo e urgência; par oral com «aff»; fecho vazio = ressalva; Valeu !!! continua."
             },
             {
-              "label": "Inspeção: Ayrton Senna — homenagem completa ao Brasil e ao Faça o melhor!",
+              "label": "Inspeção: Ayrton Senna — homenagem completa ao Brasil e ao Valeu !!!",
               "tileLabel": "Inspeção: Ayrton Senna — homena…",
               "href": "/posts/post-inspecao-figura-ayrton-senna.html",
               "icon": "🔍",
               "slug": "post-inspecao-figura-ayrton-senna",
-              "description": "Pessoas × Expressões: homenagem completa a Ayrton Senna (1960–1994) — tricampeão, ofício, filantropia e elo principal no mantra Faça o melhor!; sem romantizar a morte."
+              "description": "Pessoas × Expressões: homenagem completa a Ayrton Senna (1960–1994) — tricampeão, ofício, filantropia e elo principal no mantra Valeu !!!; sem romantizar a morte."
             },
             {
               "label": "Inspeção: Lavar — das mãos à alma",

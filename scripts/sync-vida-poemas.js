@@ -105,6 +105,11 @@ const {
   poemTodaCriancaNasceCientistaEs
 } = require('../lib/toda-crianca-nasce-cientista-inspecao-post.js');
 const {
+  poemEloDeLigacaoPt,
+  poemEloDeLigacaoEn,
+  poemEloDeLigacaoEs
+} = require('../lib/elo-de-ligacao-inspecao-post.js');
+const {
   maraPoemPt,
   maraPoemEn,
   maraPoemEs
@@ -160,6 +165,27 @@ const doc = {
       tags: ['poesia', 'vida', 'ciência', 'campo', 'mãe']
     },
     {
+      id: 'elo-de-ligacao',
+      slug: 'elo-de-ligacao',
+      title: 'Elo de ligação',
+      titleEn: 'Connecting Link',
+      titleEs: 'Eslabón de ligación',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'O oito deitado chama-se infinito; no cruzamento mora o elo — simbuklo endereçou símbolo, e o mantra: faça o melhor.',
+      teaserEn:
+        'The eight lying down is called infinity; at the crossing lives the link — simbuklo addressed símbolo, and the mantra: do your best.',
+      teaserEs:
+        'El ocho acostado se llama infinito; en el cruce vive el eslabón — simbuklo enderezó símbolo, y el mantra: haz lo mejor.',
+      body: poemEloDeLigacaoPt(),
+      bodyEn: poemEloDeLigacaoEn(),
+      bodyEs: poemEloDeLigacaoEs(),
+      inspectionHref: '/posts/post-inspecao-expressao-elo-de-ligacao.html',
+      tags: ['poesia', 'vida', 'elo', 'infinito', 'lemniscata']
+    },
+    {
       id: 'aguas-e-lagrimas',
       slug: 'aguas-e-lagrimas',
       title: 'Águas do Mar e Lágrimas',
@@ -205,9 +231,9 @@ const doc = {
     {
       id: 'faca-o-melhor',
       slug: 'faca-o-melhor',
-      title: 'Faça o melhor!',
+      title: 'Valeu !!!',
       titleEn: 'Do Your Best!',
-      titleEs: '¡Haz lo mejor!',
+      titleEs: '¡Valeu !!!',
       author: 'Laboratório BudGanja',
       authorEn: 'BudGanja Lab',
       authorEs: 'Laboratorio BudGanja',
@@ -220,7 +246,7 @@ const doc = {
       body: poemFacaOMelhorPt(),
       bodyEn: poemFacaOMelhorEn(),
       bodyEs: poemFacaOMelhorEs(),
-      inspectionHref: '/posts/post-inspecao-expressao-faca-o-melhor.html',
+      inspectionHref: '/posts/post-inspecao-palavra-valeu.html',
       tags: ['poesia', 'vida', 'mantra', 'melhor', 'ofício']
     },
     {
