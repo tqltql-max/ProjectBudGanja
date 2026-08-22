@@ -1,6 +1,45 @@
 {
-  "updatedAt": "2026-08-21T10:19:00.000Z",
+  "updatedAt": "2026-08-21T23:23:00.000Z",
   "note": "Registro de divulgação comunitária do laboratório — alcance declarado pelo aluno, sem nomes de terceiros. Não conta visualizações confirmadas pelo YouTube Analytics.",
+  "trafficSnapshots": [
+    {
+      "id": "cloudflare-paises-24h-2026-08-21",
+      "date": "2026-08-21",
+      "timezone": "America/Sao_Paulo",
+      "kind": "cloudflare-http-by-country",
+      "window": "last-24h",
+      "source": "Cloudflare Analytics dashboard (HTTP requests by country)",
+      "uniqueVisitors": 382,
+      "requests": 11640,
+      "requestsLabel": "11.64k",
+      "countryCount": 21,
+      "countries": [
+        { "code": "BR", "namePt": "Brasil", "nameEn": "Brazil", "requestsLabel": "7.13k", "requests": 7130 },
+        { "code": "US", "namePt": "Estados Unidos", "nameEn": "United States", "requestsLabel": "2.74k", "requests": 2740 },
+        { "code": "TW", "namePt": "Taiwan", "nameEn": "Taiwan", "requestsLabel": "1.29k", "requests": 1290 },
+        { "code": "CN", "namePt": "China", "nameEn": "China", "requestsLabel": "132", "requests": 132 },
+        { "code": "GB", "namePt": "Reino Unido", "nameEn": "United Kingdom", "requestsLabel": "80", "requests": 80 },
+        { "code": "CA", "namePt": "Canadá", "nameEn": "Canada", "requestsLabel": "55", "requests": 55 },
+        { "code": "FR", "namePt": "França", "nameEn": "France", "requestsLabel": "48", "requests": 48 },
+        { "code": "NL", "namePt": "Países Baixos", "nameEn": "Netherlands", "requestsLabel": "34", "requests": 34 },
+        { "code": "DE", "namePt": "Alemanha", "nameEn": "Germany", "requestsLabel": "28", "requests": 28 },
+        { "code": "SG", "namePt": "Singapura", "nameEn": "Singapore", "requestsLabel": "27", "requests": 27 },
+        { "code": "HK", "namePt": "Hong Kong", "nameEn": "Hong Kong", "requestsLabel": "18", "requests": 18 },
+        { "code": "KR", "namePt": "Coreia do Sul", "nameEn": "South Korea", "requestsLabel": "17", "requests": 17 },
+        { "code": "JP", "namePt": "Japão", "nameEn": "Japan", "requestsLabel": "13", "requests": 13 },
+        { "code": "PL", "namePt": "Polónia", "nameEn": "Poland", "requestsLabel": "8", "requests": 8 },
+        { "code": "ID", "namePt": "Indonésia", "nameEn": "Indonesia", "requestsLabel": "5", "requests": 5 },
+        { "code": "ZA", "namePt": "África do Sul", "nameEn": "South Africa", "requestsLabel": "5", "requests": 5 },
+        { "code": "AE", "namePt": "Emirados Árabes Unidos", "nameEn": "United Arab Emirates", "requestsLabel": "4", "requests": 4 },
+        { "code": "BE", "namePt": "Bélgica", "nameEn": "Belgium", "requestsLabel": "4", "requests": 4 },
+        { "code": "TR", "namePt": "Turquia", "nameEn": "Turkey", "requestsLabel": "2", "requests": 2 },
+        { "code": "TH", "namePt": "Tailândia", "nameEn": "Thailand", "requestsLabel": "2", "requests": 2 },
+        { "code": "PH", "namePt": "Filipinas", "nameEn": "Philippines", "requestsLabel": "1", "requests": 1 }
+      ],
+      "topPathNote": "/inverno/ com 405 pedidos — terceiro caminho, no mesmo dia da partilha de Bom dia, Inverno.",
+      "note": "Pedidos HTTP por país nas últimas 24 h (live, 21 ago. 2026). Inclui crawlers e probes. Não conta visitas humanas confirmadas nem visualizações do YouTube."
+    }
+  ],
   "events": [
     {
       "id": "xiv-aula-11-whatsapp-amigos-2026-08-20",
