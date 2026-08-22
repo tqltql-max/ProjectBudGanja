@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T17:47:49.901Z",
+  "updatedAt": "2026-08-22T17:59:08.972Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -7204,6 +7204,26 @@
       "curiositiesEn": "The sheet refuses to romanticise harm or the «natural» as automatically innocent.",
       "historyEs": "Salvaje viene del latín silvaticus ← silva (monte). Contrasta con domesticado; «bicho salvaje» es extensión. Eslabones con planta, animal e insecto.",
       "curiositiesEs": "La ficha rechaza romantizar el daño o lo «natural» como inocente automático."
+    },
+    {
+      "id": "sangue",
+      "word": "sangue",
+      "simple": "Lat. sanguis — fluido da vida, parentesco e génio. ≠ água. Cruzamento com sucção na sanguessuga. Valeu !!!",
+      "simpleEn": "Lat. sanguis — fluid of life, kinship and temper. ≠ water. Crosses sucção at the leech-word. Valeu !!!",
+      "simpleEs": "Lat. sanguis — fluido de la vida, parentesco y genio. ≠ agua. Cruza sucção en la sanguijuela. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-sangue.html"
+    },
+    {
+      "id": "succao",
+      "word": "sucção",
+      "simple": "Lat. suctio ← sūgere — puxar. ≠ açúcar. Primo suco. Cruzamento com sangue na sanguessuga. Valeu !!!",
+      "simpleEn": "Lat. suctio ← sūgere — to draw in. ≠ sugar. Cousin suco. Crosses sangue at the leech-word. Valeu !!!",
+      "simpleEs": "Lat. suctio ← sūgere — pujar. ≠ azúcar. Primo suco. Cruza sangue en la sanguijuela. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-succao.html"
     },
     {
       "id": "sementinha",

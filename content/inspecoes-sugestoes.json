@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T17:47:37.627Z",
+  "updatedAt": "2026-08-22T17:59:08.965Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8330,6 +8330,46 @@
         "/posts/post-inspecao-palavra-etimologia.html"
       ],
       "notes": "Cap. 213 — ē-minēre × in-minēre; truque E/I de ofício."
+    },
+    {
+      "id": "palavra-sangue",
+      "title": "Sangue — fluido, linhagem, elo com sucção",
+      "titleEn": "Sangue — fluid, lineage, link to sucção",
+      "titleEs": "Sangue — fluido, linaje, vínculo con sucção",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: sangue ← sanguis. Fluido da vida, parentesco e génio. Cruzamento com sucção na sanguessuga.",
+      "whyEn": "Words: sangue ← sanguis. Fluid of life, kinship and temper. Crosses sucção at sanguessuga.",
+      "whyEs": "Palabras: sangue ← sanguis. Fluido de la vida, parentesco y genio. Cruza sucção en la sanguijuela.",
+      "suggestedSlug": "inspecao-palavra-sangue",
+      "doneHref": "/posts/post-inspecao-palavra-sangue.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/sangue",
+        "/posts/post-inspecao-palavra-succao.html"
+      ],
+      "notes": "Cap. 214 — par sucção."
+    },
+    {
+      "id": "palavra-succao",
+      "title": "Sucção — puxar; ≠ açúcar; elo com sangue",
+      "titleEn": "Sucção — drawing in; ≠ sugar; link to sangue",
+      "titleEs": "Sucção — pujar; ≠ azúcar; vínculo con sangue",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: sucção ← suctio / sūgere. Gatilho sucçao. ≠ açúcar. Cruzamento com sangue na sanguessuga.",
+      "whyEn": "Words: sucção ← suctio / sūgere. Trigger sucçao. ≠ sugar. Crosses sangue at sanguessuga.",
+      "whyEs": "Palabras: sucção ← suctio / sūgere. Gatillo sucçao. ≠ azúcar. Cruza sangue en la sanguijuela.",
+      "suggestedSlug": "inspecao-palavra-succao",
+      "doneHref": "/posts/post-inspecao-palavra-succao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/suc%C3%A7%C3%A3o",
+        "/posts/post-inspecao-palavra-sangue.html"
+      ],
+      "notes": "Cap. 215 — par sangue."
     }
   ]
 }

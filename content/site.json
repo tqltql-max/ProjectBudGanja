@@ -2908,6 +2908,22 @@
                   "description": "Palavras: eminente ← lat. eminens / ēminēre (salta para fora) — ≠ iminente (imminēre, paira); a orelha cola, o étimo corta; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Sangue — o fluido, a linhagem, e o elo com sucção",
+                  "tileLabel": "Inspeção: Sangue — o fluido, a …",
+                  "href": "/posts/post-inspecao-palavra-sangue.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-sangue",
+                  "description": "Palavras: sangue ← lat. sanguis — fluido da vida, parentesco e génio; ≠ água; cruzamento com sucção na sanguessuga; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Sucção — o gesto de puxar; ≠ açúcar; elo com sangue",
+                  "tileLabel": "Inspeção: Sucção — o gesto de p…",
+                  "href": "/posts/post-inspecao-palavra-succao.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-succao",
+                  "description": "Palavras: sucção ← lat. suctio / sūgere — puxar; ≠ açúcar; primo suco; cruzamento com sangue na sanguessuga; Valeu !!!"
+                },
+                {
                   "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
                   "tileLabel": "Inspeção: Eletrizante — carga, …",
                   "href": "/posts/post-inspecao-palavra-eletrizante.html",
