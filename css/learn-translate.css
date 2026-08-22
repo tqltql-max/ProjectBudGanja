@@ -153,19 +153,21 @@ body.learn-mode-active .learn-mode-on {
 
 /* Palavra com ficha (já clicável) — dourado, distinto do texto corrido. */
 .learn-mode-active .learn-word[data-learn-href],
-.learn-mode-on .learn-word[data-learn-href] {
-    color: var(--color-link-gold, #dfc262);
-    -webkit-text-fill-color: var(--color-link-gold, #dfc262);
-    text-decoration: underline;
-    text-decoration-color: color-mix(in srgb, var(--color-link-gold, #dfc262) 62%, transparent);
+.learn-mode-on .learn-word[data-learn-href],
+.post-content a[href] .learn-word {
+    color: #e8c547 !important;
+    -webkit-text-fill-color: #e8c547 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #d4af37 !important;
     text-underline-offset: 0.16em;
 }
 
 .learn-mode-active .learn-word--danger[data-learn-href],
-.learn-mode-on .learn-word--danger[data-learn-href] {
-    color: inherit;
-    -webkit-text-fill-color: inherit;
-    text-decoration-color: #e23a2c;
+.learn-mode-on .learn-word--danger[data-learn-href],
+.post-content a[href] .learn-word--danger {
+    color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+    text-decoration-color: #e23a2c !important;
 }
 
 /* Palavras sem tradução no idioma activo — sempre visíveis no modo Aprender */

@@ -13,8 +13,8 @@
 @import url("pages/fungos.css");
 @import url("pages/jogos-broto.css");
 @import url("luximetro.css");
-@import url("learn-translate.css?v=348");
-@import url("site-drone.css?v=348");
+@import url("learn-translate.css?v=349");
+@import url("site-drone.css?v=349");
 
 /* Design tokens */
 :root {
@@ -5936,13 +5936,14 @@ html[data-theme="light"] .meta-info {
 }
 
 /* Links clicáveis no texto: dourado. Visitado fica dourado (nunca roxo). */
-.post-content a:not(.botao):not(.voltar-link):link,
-.post-content a:not(.botao):not(.voltar-link):visited,
-.post-content a:not(.botao):not(.voltar-link):any-link {
-    color: var(--color-link-gold, #dfc262);
-    -webkit-text-fill-color: var(--color-link-gold, #dfc262);
-    text-decoration: underline;
-    text-decoration-color: color-mix(in srgb, var(--color-link-gold, #dfc262) 55%, transparent);
+.post-content a[href]:not(.botao):not(.voltar-link),
+.post-content a[href]:not(.botao):not(.voltar-link):link,
+.post-content a[href]:not(.botao):not(.voltar-link):visited,
+.post-content a[href]:not(.botao):not(.voltar-link):any-link {
+    color: #e8c547 !important;
+    -webkit-text-fill-color: #e8c547 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #d4af37 !important;
     text-underline-offset: 0.18em;
     text-decoration-thickness: from-font;
     text-decoration-skip-ink: auto;
@@ -5954,24 +5955,24 @@ html[data-theme="light"] .meta-info {
     -webkit-tap-highlight-color: rgba(223, 194, 98, 0.18);
 }
 
-.post-content a:not(.botao):not(.voltar-link):visited {
-    color: var(--color-link-gold-visited, #c9a227);
-    -webkit-text-fill-color: var(--color-link-gold-visited, #c9a227);
-    text-decoration-color: color-mix(in srgb, var(--color-link-gold-visited, #c9a227) 62%, transparent);
+.post-content a[href]:not(.botao):not(.voltar-link):visited {
+    color: #c9a227 !important;
+    -webkit-text-fill-color: #c9a227 !important;
+    text-decoration-color: #a68628 !important;
 }
 
-.post-content a:not(.botao):not(.voltar-link):hover,
-.post-content a:not(.botao):not(.voltar-link):focus-visible {
-    color: var(--color-link-gold-hover, #fff1a8);
-    -webkit-text-fill-color: var(--color-link-gold-hover, #fff1a8);
-    text-decoration-color: color-mix(in srgb, var(--color-link-gold-hover, #fff1a8) 85%, transparent);
+.post-content a[href]:not(.botao):not(.voltar-link):hover,
+.post-content a[href]:not(.botao):not(.voltar-link):focus-visible {
+    color: #fff1a8 !important;
+    -webkit-text-fill-color: #fff1a8 !important;
+    text-decoration-color: #f0d060 !important;
     background-color: rgba(223, 194, 98, 0.1);
     outline: none;
 }
 
-.post-content a:not(.botao):not(.voltar-link):active {
-    color: var(--color-link-gold-hover, #fff1a8);
-    -webkit-text-fill-color: var(--color-link-gold-hover, #fff1a8);
+.post-content a[href]:not(.botao):not(.voltar-link):active {
+    color: #fff1a8 !important;
+    -webkit-text-fill-color: #fff1a8 !important;
     background-color: rgba(223, 194, 98, 0.16);
 }
 
@@ -14242,4 +14243,15 @@ a.palavras-duplo-word:focus-visible {
 .origami-steps li {
     margin: 0.45rem 0;
     line-height: 1.45;
+}
+
+/* Fallback no fim da folha: vence inherit do modo Aprender e CSS antigo em cache. */
+#main-content a[href]:not(.botao):not(.voltar-link):not([class*="card"]):not(.nav-pill):not(.nav-top-link):not(.mobile-menu-link),
+.post-content a[href]:not(.botao):not(.voltar-link),
+.post-content a[href] .learn-word:not(.learn-word--danger) {
+    color: #e8c547 !important;
+    -webkit-text-fill-color: #e8c547 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #d4af37 !important;
+    text-underline-offset: 0.18em;
 }

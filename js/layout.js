@@ -1,7 +1,45 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '348';
+const ASSET_V = '349';
 const HOME = '/inverno/';
+
+(function injectClickableLinkGold() {
+  function apply() {
+    var el = document.getElementById('budganja-link-gold');
+    if (!el) {
+      el = document.createElement('style');
+      el.id = 'budganja-link-gold';
+      el.textContent =
+        '#main-content a[href]:not(.botao):not(.voltar-link):not([class*="card"]):not(.nav-pill):not(.nav-top-link):not(.mobile-menu-link),' +
+        '.post-content a[href]:not(.botao):not(.voltar-link),' +
+        '.post-content a[href] .learn-word:not(.learn-word--danger),' +
+        'body.learn-mode-active .learn-word[data-learn-href]:not(.learn-word--danger),' +
+        '.learn-mode-on .learn-word[data-learn-href]:not(.learn-word--danger){' +
+        'color:#e8c547!important;' +
+        '-webkit-text-fill-color:#e8c547!important;' +
+        'text-decoration:underline!important;' +
+        'text-decoration-color:#d4af37!important;' +
+        'text-underline-offset:0.18em;' +
+        '}' +
+        '#main-content a[href]:visited:not(.botao):not([class*="card"]),' +
+        '.post-content a[href]:visited:not(.botao){' +
+        'color:#c9a227!important;' +
+        '-webkit-text-fill-color:#c9a227!important;' +
+        '}';
+      (document.head || document.documentElement).appendChild(el);
+    }
+    document.querySelectorAll('link[rel="stylesheet"][href*="/css/"]').forEach(function (link) {
+      try {
+        var u = new URL(link.href, location.origin);
+        if (u.searchParams.get('v') === ASSET_V) return;
+        u.searchParams.set('v', ASSET_V);
+        link.href = u.pathname + u.search;
+      } catch (err) {}
+    });
+  }
+  if (document.head) apply();
+  else document.addEventListener('DOMContentLoaded', apply);
+})();
 
 let deferredInstallPrompt = null;
 let installFloatingBtn = null;
