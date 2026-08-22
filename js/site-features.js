@@ -45,31 +45,50 @@
     return path;
   }
 
-  function initTheme() {
-    var stored = localStorage.getItem('budganja-theme');
-    if (stored === 'light' || stored === 'dark') {
-      document.documentElement.setAttribute('data-theme', stored);
+  function currentTheme() {
+    return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+  }
+
+  function applyTheme(theme, persist) {
+    if (theme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
     }
-
-    var btn = document.getElementById('theme-toggle');
-    if (!btn) return;
-
-    function syncLabel() {
-      var light = document.documentElement.getAttribute('data-theme') === 'light';
-      var darkLabel = window.BudGanjaI18n ? window.BudGanjaI18n.t('common.themeDark', 'Ativar tema escuro') : 'Ativar tema escuro';
-      var lightLabel = window.BudGanjaI18n ? window.BudGanjaI18n.t('common.themeLight', 'Ativar tema claro') : 'Ativar tema claro';
-      btn.setAttribute('aria-label', light ? darkLabel : lightLabel);
-      btn.title = light ? darkLabel : lightLabel;
+    if (persist) {
+      try { localStorage.setItem('budganja-theme', theme); } catch (e) {}
     }
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', theme === 'dark' ? '#0a2230' : '#f3f7fb');
+    syncThemeButtons();
+  }
 
-    btn.addEventListener('click', function () {
-      var next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('budganja-theme', next);
-      syncLabel();
+  function syncThemeButtons() {
+    var dark = currentTheme() === 'dark';
+    var darkLabel = window.BudGanjaI18n ? window.BudGanjaI18n.t('common.themeDark', 'Ativar tema escuro') : 'Ativar tema escuro';
+    var lightLabel = window.BudGanjaI18n ? window.BudGanjaI18n.t('common.themeLight', 'Ativar tema claro') : 'Ativar tema claro';
+    var label = dark ? lightLabel : darkLabel;
+    document.querySelectorAll('[data-theme-toggle]').forEach(function (btn) {
+      btn.setAttribute('aria-label', label);
+      btn.title = label;
+      btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
     });
+  }
 
-    syncLabel();
+  var themeClickBound = false;
+
+  function initTheme() {
+    var stored = null;
+    try { stored = localStorage.getItem('budganja-theme'); } catch (e) {}
+    applyTheme(stored === 'dark' ? 'dark' : 'light', false);
+
+    if (themeClickBound) return;
+    themeClickBound = true;
+    document.addEventListener('click', function (e) {
+      var btn = e.target && e.target.closest && e.target.closest('[data-theme-toggle]');
+      if (!btn) return;
+      applyTheme(currentTheme() === 'dark' ? 'light' : 'dark', true);
+    });
   }
 
   function crumbLabel(label) {
@@ -853,6 +872,7 @@
     if (window.BudGanjaI18n) window.BudGanjaI18n.apply();
     document.querySelectorAll('.site-breadcrumbs').forEach(function (el) { el.remove(); });
     injectBreadcrumbs();
+    syncThemeButtons();
   });
 
   if (document.readyState === 'loading') {

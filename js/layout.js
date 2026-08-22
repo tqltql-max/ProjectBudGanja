@@ -1,7 +1,17 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '350';
+const ASSET_V = '351';
 const HOME = '/inverno/';
+
+(function applyStoredTheme() {
+  try {
+    if (localStorage.getItem('budganja-theme') === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+  } catch (e) {}
+})();
 
 (function injectClickableLinkGold() {
   function apply() {
@@ -1600,6 +1610,27 @@ function buildMobileHubNavHTML(authState) {
   }).join('');
 }
 
+function buildThemeToggleHTML(variant) {
+  const isHeader = variant === 'header';
+  const cls = isHeader ? 'header-theme-toggle' : 'footer-theme-toggle';
+  const id = isHeader ? ' id="theme-toggle"' : '';
+  const label = i18n('common.themeDark', 'Ativar tema escuro');
+  return (
+    '<button type="button" class="' + cls + '" data-theme-toggle' + id +
+    ' aria-pressed="false" aria-label="' + escapeNavText(label) + '" title="' + escapeNavText(label) + '">' +
+    '<span class="theme-toggle-icon theme-toggle-icon--moon" aria-hidden="true">' +
+    '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+    '<path d="M20.5 14.5A8.2 8.2 0 0 1 9.5 3.5 8.5 8.5 0 1 0 20.5 14.5z"></path>' +
+    '</svg></span>' +
+    '<span class="theme-toggle-icon theme-toggle-icon--sun" aria-hidden="true">' +
+    '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+    '<circle cx="12" cy="12" r="4"></circle>' +
+    '<path d="M12 3v1.6M12 19.4V21M4.9 4.9l1.1 1.1M18 18l1.1 1.1M3 12h1.6M19.4 12H21M4.9 19.1 6 18M18 6l1.1-1.1"></path>' +
+    '</svg></span>' +
+    '</button>'
+  );
+}
+
 function buildHeaderHTML(site, authState) {
   const config = site || DEFAULT_SITE;
   const navItems = filterAdminOnlyNav(config.nav || DEFAULT_SITE.nav, authState);
@@ -1628,6 +1659,8 @@ function buildHeaderHTML(site, authState) {
     '</svg></span></button>' +
     headerSearch +
     '</div>';
+
+  const headerThemeToggle = buildThemeToggleHTML('header');
 
   const headerBoat =
     '<a href="' + HOME + '" class="header-quick-link header-quick-link--brand header-quick-link--boat logo-link"' +
@@ -1660,6 +1693,7 @@ function buildHeaderHTML(site, authState) {
     '<div class="header-utilities">' +
     headerToolbar +
     buildLangSwitcherHTML('header') +
+    headerThemeToggle +
     '</div>' +
     '<button type="button" class="header-quick-link header-quick-link--menu menu-toggle" aria-label="' + escapeNavText(i18n('common.menuOpen', 'Abrir menu')) + '" aria-expanded="false" aria-controls="mobile-menu">' +
     '<span class="header-quick-link-icon" aria-hidden="true">' +
@@ -2033,7 +2067,9 @@ function buildFooterHTML(site) {
     groupsHtml +
     '</div>' +
     '<div class="footer-bar">' +
-    '<p class="footer-copy">' + escapeNavText(i18n('footer.copy', config.footerText || DEFAULT_SITE.footerText)) + '</p>' +
+    '<p class="footer-copy">' + escapeNavText(i18n('footer.copy', config.footerText || DEFAULT_SITE.footerText)) +
+    buildThemeToggleHTML('footer') +
+    '</p>' +
     '<div class="footer-bar-actions">' +
     '<button type="button" class="footer-install-btn" data-pwa-install>' +
     escapeNavText(i18n('common.installApp', 'Instalar app')) +

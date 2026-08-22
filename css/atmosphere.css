@@ -99,16 +99,16 @@ body::after {
         0 18px 48px rgba(0, 16, 28, 0.4);
 }
 
-html[data-theme="light"] body::before {
+html:not([data-theme="dark"]) body::before {
     opacity: 0.42;
 }
 
-html[data-theme="light"] body::after {
+html:not([data-theme="dark"]) body::after {
     opacity: 0.32;
 }
 
-html[data-theme="light"] .lab-atmosphere,
-html[data-theme="light"] .radio-atmosphere {
+html:not([data-theme="dark"]) .lab-atmosphere,
+html:not([data-theme="dark"]) .radio-atmosphere {
     opacity: 0.08;
 }
 

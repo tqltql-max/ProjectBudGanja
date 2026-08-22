@@ -282,27 +282,27 @@
   font: inherit;
 }
 
-html[data-theme="light"] .ce-method-card,
-html[data-theme="light"] .ce-lesson,
-html[data-theme="light"] .ce-picker-panel {
+html:not([data-theme="dark"]) .ce-method-card,
+html:not([data-theme="dark"]) .ce-lesson,
+html:not([data-theme="dark"]) .ce-picker-panel {
   background: #fffdf6;
   border-color: rgba(166, 134, 40, 0.28);
 }
 
-html[data-theme="light"] .ce-card {
+html:not([data-theme="dark"]) .ce-card {
   background: linear-gradient(160deg, rgba(223, 194, 98, 0.18) 0%, #fffdf6 62%);
 }
 
-html[data-theme="light"] .ce-card h3,
-html[data-theme="light"] .ce-method-card h2 {
+html:not([data-theme="dark"]) .ce-card h3,
+html:not([data-theme="dark"]) .ce-method-card h2 {
   color: #3d3210;
 }
 
-html[data-theme="light"] .ce-search,
-html[data-theme="light"] .ce-sheet textarea,
-html[data-theme="light"] .ce-lesson input,
-html[data-theme="light"] .ce-lesson textarea,
-html[data-theme="light"] .ce-custom-row input {
+html:not([data-theme="dark"]) .ce-search,
+html:not([data-theme="dark"]) .ce-sheet textarea,
+html:not([data-theme="dark"]) .ce-lesson input,
+html:not([data-theme="dark"]) .ce-lesson textarea,
+html:not([data-theme="dark"]) .ce-custom-row input {
   background: #fff;
   color: inherit;
 }
