@@ -2926,6 +2926,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: gesso ← gr. γύψος — ≠ geologia (γῆ); quebrado → ingessado (gatilho ingessadado); braço direito; irmã pedra; Valeu !!!"
             },
             {
+              "label": "Inspeção: Alívio — tornar leve; aliviado é o estado; a orelha cola veado",
+              "tileLabel": "Inspeção: Alívio — tornar leve;…",
+              "href": "/posts/post-inspecao-palavra-alivio.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-alivio",
+              "description": "Palavras: alívio ← lat. alleviāre (ad- + levis) — tornar leve; aliviado = estado; a orelha cola veado (venātus); Valeu !!!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",

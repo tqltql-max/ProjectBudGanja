@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T18:30:52.622Z",
+  "updatedAt": "2026-08-22T18:58:36.934Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8410,6 +8410,28 @@
         "/posts/post-inspecao-palavra-pedra.html"
       ],
       "notes": "Cap. 217 — par pedra."
+    },
+    {
+      "id": "palavra-alivio",
+      "title": "Alívio — tornar leve; a orelha cola veado",
+      "titleEn": "Alívio — making light; the ear glues veado",
+      "titleEs": "Alívio — aligerar; el oído pega veado",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: alívio ← alleviāre (ad- + levis). Aliviado = estado. Veado ← venātus (animal). A orelha cola; o étimo corta.",
+      "whyEn": "Words: alívio ← alleviāre (ad- + levis). Aliviado = state. Veado ← venātus (animal). The ear glues; the etymon cuts.",
+      "whyEs": "Palabras: alívio ← alleviāre (ad- + levis). Aliviado = estado. Veado ← venātus (animal). El oído pega; el étimo corta.",
+      "suggestedSlug": "inspecao-palavra-alivio",
+      "doneHref": "/posts/post-inspecao-palavra-alivio.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/alívio",
+        "https://pt.wiktionary.org/wiki/veado",
+        "/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html",
+        "/posts/post-inspecao-palavra-animal.html"
+      ],
+      "notes": "Cap. 218 — levis × venātus; gatilho aninal; animal primeiro."
     }
   ]
 }
