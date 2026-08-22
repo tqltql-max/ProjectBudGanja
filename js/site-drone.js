@@ -68,6 +68,7 @@
 
   var BUTTON_SEL = 'a.botao, .botao, .botao-home';
   var WORD_WRAP_SEL = '.learn-word, .site-drone-emotion, .site-drone-word, .site-drone-lit';
+  var droneToggleLock = 0;
 
   function t(key, fallback) {
     if (global.BudGanjaI18n && typeof global.BudGanjaI18n.t === 'function') {
@@ -350,7 +351,8 @@
     var tipW = state.tip.offsetWidth;
     var tipH = state.tip.offsetHeight;
 
-    var above = spaceAbove >= 48 || spaceAbove >= spaceBelow;
+    var above = spaceAbove >= tipH;
+    if (!above && spaceBelow < tipH) above = spaceAbove > spaceBelow;
     var avail = above ? spaceAbove : spaceBelow;
     if (tipH > avail && avail >= 64) {
       state.tip.style.maxHeight = Math.floor(avail) + 'px';
@@ -363,6 +365,18 @@
     var top = above ? droneRect.top - gap - tipH : droneRect.bottom + gap;
     var minTop = above ? topLimit : margin;
     top = Math.max(minTop, Math.min(top, vh - margin - tipH));
+    if (above && top + tipH + gap > droneRect.top) {
+      above = false;
+      avail = spaceBelow;
+      if (state.tip.offsetHeight > avail && avail >= 64) {
+        state.tip.style.maxHeight = Math.floor(avail) + 'px';
+        tipW = state.tip.offsetWidth;
+        tipH = state.tip.offsetHeight;
+        left = droneRect.left + droneRect.width / 2 - tipW / 2;
+        left = Math.max(margin, Math.min(left, vw - tipW - margin));
+      }
+      top = Math.max(margin, Math.min(droneRect.bottom + gap, vh - margin - tipH));
+    }
 
     state.tip.style.left = Math.round(left) + 'px';
     state.tip.style.top = Math.round(top) + 'px';
@@ -1110,7 +1124,10 @@
     btn.id = 'site-drone';
     btn.className = 'site-drone';
     btn.setAttribute('aria-pressed', 'false');
-    var aria = t('common.droneAria', 'Drone de inspeção — clique para ligar a luz; botão do meio esconde o drone');
+    var aria = t(
+      'common.droneAria',
+      'Drone de inspeção — clique direito para ligar ou desligar o modo aéreo e a abdução; botão do meio esconde o drone'
+    );
     btn.setAttribute('aria-label', aria);
     btn.title = aria;
     btn.innerHTML = '<span class="site-drone-light" aria-hidden="true"></span>' + droneSvg();
@@ -1131,11 +1148,22 @@
     state.tx = state.x;
     state.ty = state.y;
     applyPose();
+    function toggleAerialMode(event) {
+      if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      var now = Date.now();
+      if (now - droneToggleLock < 350) return;
+      droneToggleLock = now;
+      setOn(!state.on);
+    }
     btn.addEventListener('click', function (event) {
       if (event.target && event.target.closest && event.target.closest('.site-drone-tip-link')) return;
-      event.preventDefault();
-      event.stopPropagation();
-      setOn(!state.on);
+      toggleAerialMode(event);
+    });
+    btn.addEventListener('contextmenu', function (event) {
+      toggleAerialMode(event);
     });
     btn.addEventListener('auxclick', function (event) {
       if (event.button !== 1) return;
@@ -1150,10 +1178,10 @@
       dismissDrone();
     });
     btn.addEventListener('mousedown', function (event) {
-      if (event.button === 1) event.preventDefault();
+      if (event.button === 1 || event.button === 2) event.preventDefault();
     });
     btn.addEventListener('pointerdown', function (event) {
-      if (event.button === 1) event.preventDefault();
+      if (event.button === 1 || event.button === 2) event.preventDefault();
     });
     btn.addEventListener('mouseenter', function () { state.paused = true; });
     btn.addEventListener('mouseleave', function () { state.paused = false; });
@@ -1203,9 +1231,22 @@
     } catch (err) { /* ignore */ }
   }
 
+  function applyDroneChrome() {
+    if (!state.drone) return;
+    var hint = t(
+      'common.droneAria',
+      'Drone de inspeção — clique direito para ligar ou desligar o modo aéreo e a abdução; botão do meio esconde o drone'
+    );
+    var label = state.on
+      ? t('common.droneOff', 'Desativar modo aéreo')
+      : t('common.droneOn', 'Ativar modo aéreo');
+    state.drone.setAttribute('aria-label', label);
+    state.drone.title = hint;
+  }
+
   function syncButtons() {
-    var onLabel = t('common.droneOff', 'Desativar drone');
-    var offLabel = t('common.droneOn', 'Ativar drone');
+    var onLabel = t('common.droneOff', 'Desativar modo aéreo');
+    var offLabel = t('common.droneOn', 'Ativar modo aéreo');
     var label = state.on ? onLabel : offLabel;
     document.querySelectorAll('[data-drone-toggle]').forEach(function (btn) {
       btn.classList.toggle('is-active', state.on);
@@ -1224,6 +1265,7 @@
       if (state.drone) {
         state.drone.classList.toggle('is-lit', next);
         state.drone.setAttribute('aria-pressed', next ? 'true' : 'false');
+        applyDroneChrome();
       }
       syncButtons();
       return;
@@ -1234,12 +1276,7 @@
     if (state.drone) {
       state.drone.classList.toggle('is-lit', next);
       state.drone.setAttribute('aria-pressed', next ? 'true' : 'false');
-      state.drone.setAttribute(
-        'aria-label',
-        next
-          ? t('common.droneOff', 'Desativar drone')
-          : t('common.droneOn', 'Ativar drone')
-      );
+      applyDroneChrome();
     }
     syncButtons();
     if (!next) {
@@ -1350,14 +1387,7 @@
       syncButtons();
       syncPad();
       if (state.currentSrc) fillTip(meaningOf(state.currentSrc));
-      if (state.drone) {
-        state.drone.setAttribute(
-          'aria-label',
-          state.on
-            ? t('common.droneOff', 'Desativar drone')
-            : t('common.droneOn', 'Ativar drone')
-        );
-      }
+      if (state.drone) applyDroneChrome();
     });
     if (!isDismissed()) {
       try {

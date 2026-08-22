@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '349';
+const ASSET_V = '350';
 const HOME = '/inverno/';
 
 (function injectClickableLinkGold() {
