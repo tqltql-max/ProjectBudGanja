@@ -1,4 +1,4 @@
-# Palavras do mantra «Faça o melhor!»
+# Palavras do mantra «Valeu !!!»
 # Modo Aprender — vermelhas (apropriação / silenciamento) e âmbar (ofício).
 # Fonte para scripts/patch-learn-mantra-faca-o-melhor.js
 
