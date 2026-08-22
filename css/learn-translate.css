@@ -151,6 +151,23 @@ body.learn-mode-active .learn-mode-on {
     background: rgba(223, 194, 98, 0.12);
 }
 
+/* Palavra com ficha (já clicável) — dourado, distinto do texto corrido. */
+.learn-mode-active .learn-word[data-learn-href],
+.learn-mode-on .learn-word[data-learn-href] {
+    color: var(--color-link-gold, #dfc262);
+    -webkit-text-fill-color: var(--color-link-gold, #dfc262);
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, var(--color-link-gold, #dfc262) 62%, transparent);
+    text-underline-offset: 0.16em;
+}
+
+.learn-mode-active .learn-word--danger[data-learn-href],
+.learn-mode-on .learn-word--danger[data-learn-href] {
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+    text-decoration-color: #e23a2c;
+}
+
 /* Palavras sem tradução no idioma activo — sempre visíveis no modo Aprender */
 .learn-mode-active .learn-word--unknown,
 .learn-mode-on .learn-word--unknown {
