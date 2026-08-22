@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T05:50:04.957Z",
+  "updatedAt": "2026-08-22T05:52:50.583Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -290,6 +290,26 @@
       "href": "/posts/post-inspecao-palavra-afinar.html"
     },
     {
+      "id": "afinador",
+      "word": "afinador",
+      "simple": "Afinar + -dor — objecto que lê a corda do violão (clip / diapasão / app); a tarraxa escreve o tónos; muleta, não dono; Valeu !!!",
+      "simpleEn": "Afinar + -dor — object that reads the guitar string (clip / fork / app); the peg writes tónos; crutch, not owner; Valeu !!!",
+      "simpleEs": "Afinar + -dor — objeto que lee la cuerda del violão (clip / diapasón / app); la clavija escribe el tónos; muleta, no dueño; ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-afinador.html"
+    },
+    {
+      "id": "diapasao",
+      "word": "diapasão",
+      "simple": "Garfo (A 440) ou escala — avô do afinador; no lab o passarinho é diapasão vivo; ver afinador / afinar.",
+      "simpleEn": "Tuning fork (A 440) or range — ancestor of the tuner; in the lab the bird is a living fork; see afinador / afinar.",
+      "simpleEs": "Diapasón (A 440) o registro — abuelo del afinador; en el lab el pajarito es diapasón vivo; ver afinador / afinar.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-afinador.html"
+    },
+    {
       "id": "passarinho",
       "word": "passarinho",
       "simple": "Bicho pequeno; o assobio é diapasão vivo — não aperta cravelha; elo violão / Three Little Birds; ver afinar.",
@@ -312,12 +332,12 @@
     {
       "id": "violao",
       "word": "violão",
-      "simple": "Objecto de corda e cravelha — pede afinar antes de tocar; elo passarinho assobiando; ver ficha afinar.",
-      "simpleEn": "String object with pegs — needs tuning before playing; link to the whistling bird; see afinar.",
-      "simpleEs": "Objeto de cuerda y clavija — pide afinar antes de tocar; vínculo pajarito silbando; ver afinar.",
+      "simple": "Viola + -ão — objecto BR (guitarra clássica/acústica); ≠ guitarra eléctrica; cordas no braço; ofício afinar; Valeu !!!",
+      "simpleEn": "Viola + -ão — BR object (classical/acoustic guitar); ≠ electric guitarra; strings on the neck; tuning = afinar; Valeu !!!",
+      "simpleEs": "Viola + -ão — objeto BR (guitarra clásica/acústica); ≠ guitarra eléctrica; cuerdas en el brazo; oficio afinar; ¡Valeu !!!",
       "group": "lexico",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-afinar.html"
+      "href": "/posts/post-inspecao-palavra-violao.html"
     },
     {
       "id": "algodao",
@@ -2506,6 +2526,52 @@
       "curiositiesEn": "Speech writes comitar (one m); the sheet anchors commitar to the mm of commit. Genial and its sisters praise after the commit, not before the work.",
       "historyEs": "Commitar es calco brasileño del inglés to commit en git (del latín committere, juntar/confiar). En el laboratorio nombra la instantánea del rastro — distinto de cometer (delito/error) y de los gestos siguientes push y PR.",
       "curiositiesEs": "La boca escribe comitar (una m); la ficha ancla commitar al mm de commit. Genial y hermanas elogian después del commit, no antes del trabajo."
+    },
+    {
+      "id": "upsert",
+      "word": "upsert",
+      "simple": "Portmanteau EN update+insert — inserir se a chave é nova, actualizar se já existe; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!",
+      "simpleEn": "EN portmanteau update+insert — insert if the key is new, update if it exists; MERGE ≠ replace; BR calque upsertar; link commitar; Valeu !!!",
+      "simpleEs": "Portmanteau EN update+insert — insertar si la clave es nueva, actualizar si ya existe; MERGE ≠ replace; calco upsertar; vínculo commitar; ¡Valeu !!!",
+      "history": "Upsert é portmanteau inglês de update + insert, jargão de bases de dados (MERGE no SQL:2003; UPSERT no PostgreSQL e no MongoDB). No laboratório nomeia o gesto de não duplicar a identidade — o slug decide insert ou update.",
+      "curiosities": "Os scripts da casa já se chamam upsert-palavra-*.js: a ficha entra no catálogo pelo verbo que inspecciona. Upsertar é calco BR, como commitar; o commit grava o rasto depois do merge.",
+      "historyEn": "Upsert is an English portmanteau of update + insert, database jargon (SQL MERGE in SQL:2003; UPSERT in PostgreSQL and MongoDB). In the lab it names the gesture of not duplicating identity — the slug decides insert or update.",
+      "curiositiesEn": "House scripts are already named upsert-palavra-*.js: the sheet enters the catalogue by the verb it inspects. Upsertar is a BR calque, like commitar; the commit records the trace after the merge.",
+      "historyEs": "Upsert es un portmanteau inglés de update + insert, jerga de bases de datos (MERGE en SQL:2003; UPSERT en PostgreSQL y MongoDB). En el laboratorio nombra el gesto de no duplicar la identidad — el slug decide insert o update.",
+      "curiositiesEs": "Los scripts de la casa ya se llaman upsert-palavra-*.js: la ficha entra al catálogo por el verbo que inspecciona. Upsertar es calco BR, como commitar; el commit graba el rastro después del merge.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-upsert.html"
+    },
+    {
+      "id": "upsertar",
+      "word": "upsertar",
+      "simple": "Calco BR de to upsert — inserir ou actualizar pela chave; ≠ replace; ≠ commitar; ver ficha upsert.",
+      "simpleEn": "BR calque of to upsert — insert or update by key; ≠ replace; ≠ commitar; see upsert sheet.",
+      "simpleEs": "Calco BR de to upsert — insertar o actualizar por clave; ≠ replace; ≠ commitar; ver ficha upsert.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-upsert.html"
+    },
+    {
+      "id": "script",
+      "word": "script",
+      "simple": "Lat. scrīptum ← scrībere — sequência escrita EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar; Valeu !!!",
+      "simpleEn": "Lat. scrīptum ← scrībere — written sequence EN→BR; roteiro × code; ≠ destiny; links skill/pattern/commitar; Valeu !!!",
+      "simpleEs": "Lat. scrīptum ← scrībere — secuencia escrita EN→BR; roteiro × código; ≠ destino; vínculos skill/pattern/commitar; ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-script.html"
+    },
+    {
+      "id": "roteiro",
+      "word": "roteiro",
+      "simple": "Irmã PT de script no palco/ecrã — linhas da cena; no lab preferir roteiro em ficha formal de filme; ver ficha script.",
+      "simpleEn": "PT sister of script on stage/screen — scene lines; lab prefers roteiro in formal film sheets; see script.",
+      "simpleEs": "Hermana PT de script en escena — líneas de la escena; el lab prefiere roteiro en ficha formal de filme; ver script.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-script.html"
     },
     {
       "id": "isotonico",

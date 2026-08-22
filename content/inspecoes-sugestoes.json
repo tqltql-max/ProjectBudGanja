@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T05:50:04.950Z",
+  "updatedAt": "2026-08-22T05:52:50.577Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7798,6 +7798,105 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 198 — violão (objecto) × passarinho assobiando (diapasão vivo)."
+    },
+    {
+      "id": "objeto-violao",
+      "title": "Violão — o objecto onde as cordas afinam",
+      "titleEn": "Violão — the object where the strings are tuned",
+      "titleEs": "Violão — el objeto donde se afinan las cuerdas",
+      "tipo": "objeto",
+      "priority": 2,
+      "status": "feita",
+      "why": "Objecto: violão (viola + -ão) — guitarra clássica/acústica BR; ≠ guitarra eléctrica; elos corda/tónos/gesto; catálogo Objetos.",
+      "whyEn": "Object: violão (viola + -ão) — BR classical/acoustic guitar; ≠ electric guitarra; links corda/tónos/gesture; Objects catalog.",
+      "whyEs": "Objeto: violão (viola + -ão) — guitarra clásica/acústica BR; ≠ guitarra eléctrica; vínculos corda/tónos/gesto; catálogo Objetos.",
+      "suggestedSlug": "inspecao-palavra-violao",
+      "doneHref": "/posts/post-inspecao-palavra-violao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/viol%C3%A3o",
+        "https://pt.wikipedia.org/wiki/Viol%C3%A3o",
+        "/posts/post-inspecao-palavra-afinar.html",
+        "/posts/post-inspecao-palavra-corda.html",
+        "/posts/post-inspecao-palavra-tonos.html",
+        "/objetos/",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 183 — objecto BR; cordas no braço; ≠ eléctrica."
+    },
+    {
+      "id": "objeto-afinador",
+      "title": "Afinador — o objecto que lê a corda do violão",
+      "titleEn": "Afinador — the object that reads the guitar string",
+      "titleEs": "Afinador — el objeto que lee la cuerda del violão",
+      "tipo": "objeto",
+      "priority": 2,
+      "status": "feita",
+      "why": "Objecto: afinador (afinar + -dor) — clip / diapasão / app lê a corda do violão; tarraxa escreve tónos; muleta, não dono.",
+      "whyEn": "Object: tuner (afinar + -dor) — clip / fork / app reads the guitar string; peg writes tónos; crutch, not owner.",
+      "whyEs": "Objeto: afinador (afinar + -dor) — clip / diapasón / app lee la cuerda del violão; clavija escribe tónos; muleta, no dueño.",
+      "suggestedSlug": "inspecao-palavra-afinador",
+      "doneHref": "/posts/post-inspecao-palavra-afinador.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/afinador",
+        "https://pt.wikipedia.org/wiki/Afinador",
+        "/posts/post-inspecao-palavra-afinar.html",
+        "/posts/post-inspecao-palavra-violao.html",
+        "/posts/post-inspecao-palavra-corda.html",
+        "/objetos/",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 199 — objecto-leitor; ≠ verbo afinar ≠ tarraxa ≠ passarinho."
+    },
+    {
+      "id": "palavra-script",
+      "title": "Script — sequência escrita, não destino",
+      "titleEn": "Script — written sequence, not destiny",
+      "titleEs": "Script — secuencia escrita, no destino",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: script (lat. scrīptum ← scrībere) — sequência EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar.",
+      "whyEn": "Words: script (Lat. scrīptum ← scrībere) — sequence EN→BR; roteiro × code; ≠ destiny; links skill/pattern/commitar.",
+      "whyEs": "Palabras: script (lat. scrīptum ← scrībere) — secuencia EN→BR; roteiro × código; ≠ destino; vínculos skill/pattern/commitar.",
+      "suggestedSlug": "inspecao-palavra-script",
+      "doneHref": "/posts/post-inspecao-palavra-script.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wiktionary.org/wiki/script",
+        "https://pt.wiktionary.org/wiki/script",
+        "https://en.wiktionary.org/wiki/scriptum#Latin",
+        "/posts/post-inspecao-palavra-skill.html",
+        "/posts/post-inspecao-palavra-pattern.html",
+        "/posts/post-inspecao-palavra-commitar.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 200 — lat. scrīptum; sequência escrita; anti-destino; elos skill/pattern/commitar."
+    },
+    {
+      "id": "palavra-upsert",
+      "title": "Upsert — inserir ou actualizar sem duplicar a identidade",
+      "titleEn": "Upsert — insert or update without duplicating identity",
+      "titleEs": "Upsert — insertar o actualizar sin duplicar la identidad",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: upsert (update+insert) — chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; o lab já pratica o gesto; Valeu !!!",
+      "whyEn": "Words: upsert (update+insert) — key/slug; MERGE ≠ replace; BR calque upsertar; link commitar; the lab already does the gesture; Valeu !!!",
+      "whyEs": "Palabras: upsert (update+insert) — clave/slug; MERGE ≠ replace; calco upsertar; vínculo commitar; el lab ya practica el gesto; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-upsert",
+      "doneHref": "/posts/post-inspecao-palavra-upsert.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wiktionary.org/wiki/upsert",
+        "https://en.wikipedia.org/wiki/Merge_(SQL)",
+        "/posts/post-inspecao-palavra-commitar.html",
+        "/posts/post-inspecao-palavra-pattern.html",
+        "/posts/post-inspecao-palavra-skill.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 201 — portmanteau update+insert; identidade (slug); ≠ replace; depois commitar."
     }
   ]
 }

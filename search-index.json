@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T05:50:37.195Z",
+  "updatedAt": "2026-08-22T05:53:25.394Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -174,6 +174,30 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Upsert — inserir ou actualizar sem duplicar a identidade",
+      "url": "/posts/post-inspecao-palavra-upsert.html",
+      "excerpt": "Palavras: «upsert» (update+insert) — chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; o lab já pratica o gesto; Valeu !!!",
+      "text": "Inspeção: Upsert — inserir ou actualizar sem duplicar a identidade Palavras: «upsert» (update+insert) — chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; o lab já pratica o gesto; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da palavra **[upsert](/posts/post-inspecao-palavra-upsert.html)** — portmanteau inglês de *update* + *insert*. No ofício de bases de dados: **inserir se a identidade ainda não existe; actualizar se já existe**. Pedido de campo e ironia do lab: os scripts da casa chamam-se `upsert-palavra-*.js` — esta ficha entra no catálogo **pelo gesto que nomeia**. Cobre o **lema**, o mapa **INSERT × UPDATE × UPSERT × MERGE × REPLACE**, o calco BR **upsertar**, o elo [commitar](/posts/post-inspecao-palavra-commitar.html) (gravar o snapshot **depois** do merge) e o fecho [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wiktionary · upsert](https://en.wiktionary.org/wiki/upsert), [MERGE (SQL)](https://en.wikipedia.org/wiki/Merge_(SQL)), uso BR de oficina. **Ficha ≠ tutorial SQL, ≠ receita de corrida, ≠ licença para overwrite silencioso.** Tom: Inspetor BudGanja — *upsert* é [gesto](/posts/post-inspecao-palavra-gesto.html) de **identidade**, não botão mágico.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Forma âncora | **upsert** (EN; substantivo / verbo) |\n| Calco BR | **upsertar** (como [commitar](/posts/post-inspecao-palavra-commitar.html)) — «fazer upsert» |\n| Classe | Empréstimo de ofício (bases de dados, APIs, catálogos) |\n| Étimo (trabalho) | Portmanteau *update* + *insert* (jargão EN, séc. XX–XXI) — confiança: **alta** no blend; **média** na data exacta do primeiro uso |\n| Família | *upsert* · *upsertar* · SQL *MERGE* · *ON CONFLICT* · *ON DUPLICATE KEY* |\n| Falsos irmãos | *upar* (games, «subir de nível») · *replace* (apagar + inserir — outra política) · [commitar](/posts/post-inspecao-palavra-commitar.html) (snapshot git — **depois**) |\n| Tipo BudGanja | Pa"
+    },
+    {
+      "title": "Inspeção: Script — sequência escrita, não destino",
+      "url": "/posts/post-inspecao-palavra-script.html",
+      "excerpt": "Palavras: «script» (lat. scrīptum ← scrībere) — sequência escrita EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar; Valeu !!!",
+      "text": "Inspeção: Script — sequência escrita, não destino Palavras: «script» (lat. scrīptum ← scrībere) — sequência escrita EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da palavra **[script](/posts/post-inspecao-palavra-script.html)** — empréstimo inglês vivo no português do Brasil para a **sequência escrita** que alguém (ou um interpretador) **segue**. Esta ficha cobre o **objeto** (lat. *scrīptum* ← *scrībere* «escrever»), as camadas **código / roteiro / letra cursiva / tag HTML**, o contraste com **roteiro** e **escrito**, a **correção BudGanja** (script ≠ destino, ≠ [skill](/posts/post-inspecao-palavra-skill.html)), e o fecho [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wiktionary · script](https://en.wiktionary.org/wiki/script), [script (PT)](https://pt.wiktionary.org/wiki/script), [scrīptum](https://en.wiktionary.org/wiki/scriptum#Latin), [scripting language](https://en.wikipedia.org/wiki/Scripting_language). **Ficha ≠ curso de programação, ≠ manual de roteiro, ≠ protocolo de automação ofensiva.** Empréstimo consciente, como [skill](/posts/post-inspecao-palavra-skill.html), [pattern](/posts/post-inspecao-palavra-pattern.html) e [commitar](/posts/post-inspecao-palavra-commitar.html).\n\n## 1. Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Forma âncora | **script** (EN em uso BR) |\n| Irmãs PT | **roteiro** (cinema/palco) · **escrito** / **escritura** (herança latina) · **receita** (procedimento) |\n| Família | *scripts* · *scriptar* (verbo informal) · *JavaScript* · *shell script* · `<script>` · *screenplay* |\n| Classe | Empréstimo EN → uso BR; latim já deu *escrito* ao PT |\n| Étimo (trabalho) | Lat. *scrīptum* (n. de *scrīptus* ← *scrībere* «escrever») → FR/EN *script* → BR tech/cinema/oral — confiança: **alta** |\n| Tipo BudGanja | Palavra — sequência escrita × ofício de seguir sem virar destino |\n| Elo ofício | [gesto](/post"
+    },
+    {
+      "title": "Inspeção: Afinador — o objecto que lê a corda do violão",
+      "url": "/posts/post-inspecao-palavra-afinador.html",
+      "excerpt": "Objecto: «afinador» (afinar + -dor) — clip / diapasão / app lê a corda do violão; a tarraxa escreve o tónos; muleta, não dono; Valeu !!!",
+      "text": "Inspeção: Afinador — o objecto que lê a corda do violão Objecto: «afinador» (afinar + -dor) — clip / diapasão / app lê a corda do violão; a tarraxa escreve o tónos; muleta, não dono; Valeu !!! inspecao ## Escopo\n\nInspeção editorial do **objecto [afinador](/posts/post-inspecao-palavra-afinador.html)** — no português do Brasil, a **peça que lê o tom das [cordas](/posts/post-inspecao-palavra-corda.html) do [violão](/posts/post-inspecao-palavra-violao.html)** (clip cromático, diapasão, app, pedal). Pedido de campo: *inspeção em afinador de cordas de violão*. O verbo é [afinar](/posts/post-inspecao-palavra-afinar.html); esta ficha é a **coisa**. Entra no catálogo [Objetos](/objetos/) como muleta de ofício: **nomeia a frequência**; a mão, na tarraxa, **escreve o [tónos](/posts/post-inspecao-palavra-tonos.html)**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · afinador](https://pt.wiktionary.org/wiki/afinador), [Wikipédia · afinador](https://pt.wikipedia.org/wiki/Afinador), [electronic tuner](https://en.wikipedia.org/wiki/Electronic_tuner), [diapasão](https://pt.wiktionary.org/wiki/diapas%C3%A3o). **Ficha ≠ aula de afinação, ≠ tabela de marcas, ≠ método corda a corda.** Sem afiliação comercial. Tom: Inspetor BudGanja — o afinador **não substitui o ouvido**. Fecho: [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Objecto | **afinador** (de [cordas](/posts/post-inspecao-palavra-corda.html) de [violão](/posts/post-inspecao-palavra-violao.html)) |\n| Classe | Substantivo masculino — agente de *afinar* + *-dor* |\n| Étimo (trabalho) | *afinar* + *-dor* ← *a-* + *fino* ← lat. *fīnis* — «o que põe no tom» — confiança: **alta** ([ficha afinar](/posts/post-inspecao-palavra-afinar.html)) |\n| Família | *afinar* · *afinação* · *afinado* · *desafinar* · *diapasão* |\n| Cognatos / mapa | esp. *afinador* · ing. *tuner* / *clip-on tuner* · fr. *accordeur* (pessoa) / *accordeur électronique* |\n| "
+    },
+    {
+      "title": "Inspeção: Violão — o objecto onde as cordas afinam",
+      "url": "/posts/post-inspecao-palavra-violao.html",
+      "excerpt": "Objecto: «violão» (viola + -ão) — guitarra clássica/acústica BR; ≠ guitarra eléctrica ≠ viola caipira; cordas no braço; ofício afinar; catálogo Objetos; Valeu !!!",
+      "text": "Inspeção: Violão — o objecto onde as cordas afinam Objecto: «violão» (viola + -ão) — guitarra clássica/acústica BR; ≠ guitarra eléctrica ≠ viola caipira; cordas no braço; ofício afinar; catálogo Objetos; Valeu !!! inspecao ## Escopo\n\nInspeção editorial do **objecto [violão](/posts/post-inspecao-palavra-violao.html)** — no português do Brasil, a **guitarra clássica / acústica** de [cordas](/posts/post-inspecao-palavra-corda.html) de nylon (e, por extensão, o folk de aço quando a boca ainda diz *violão*). Pedido de campo: *inspeção objeto Violão*. Esta ficha entra no catálogo [Objetos](/objetos/) como **coisa**: caixa, braço, boca, tarraxas, seis [cordas](/posts/post-inspecao-palavra-corda.html). O ofício de pôr no tom é a ficha [afinar](/posts/post-inspecao-palavra-afinar.html); o leitor de frequência é o [afinador](/posts/post-inspecao-palavra-afinador.html). Não é aula, não é loja, não é a [guitarra](https://pt.wikipedia.org/wiki/Guitarra) eléctrica.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · violão](https://pt.wiktionary.org/wiki/viol%C3%A3o), [Wikipédia · guitarra clássica](https://pt.wikipedia.org/wiki/Viol%C3%A3o), [guitarra](https://pt.wikipedia.org/wiki/Guitarra), [viola](https://pt.wiktionary.org/wiki/viola). **Ficha ≠ método de cifras, ≠ luthieria completa, ≠ catálogo de marcas.** Sem afiliação comercial. Tom: Inspetor BudGanja — o violão é o **vaso de madeira onde as [cordas](/posts/post-inspecao-palavra-corda.html) afinam**. Fecho: [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Objecto | **violão** (BR); plural *violões* |\n| Classe | Substantivo masculino — cordofone acústico |\n| Étimo (trabalho) | *viola* + aumentativo *-ão* — «viola grande» — confiança: **alta** ([Wikcionário](https://pt.wiktionary.org/wiki/viol%C3%A3o)) |\n| Família | *viola* · *violonista* · *violão de 7 cordas* · *violão folk* |\n| Cognatos / mapa | esp. *guitarra* · ing. *classical "
     },
     {
       "title": "Inspeção: Afinar — violão, passarinho assobiando e o tom justo",
@@ -3122,6 +3146,18 @@
       "text": "afinar A- + fino ← lat. fīnis — pôr no tom; objecto violão; passarinho assobiando como diapasão vivo; desafinar; asoviar = assobiar; Valeu !!! lexico guia palavras glossário afinar"
     },
     {
+      "title": "afinador",
+      "url": "/posts/post-inspecao-palavra-afinador.html",
+      "excerpt": "Afinar + -dor — objecto que lê a corda do violão (clip / diapasão / app); a tarraxa escreve o tónos; muleta, não dono; Valeu !!!",
+      "text": "afinador Afinar + -dor — objecto que lê a corda do violão (clip / diapasão / app); a tarraxa escreve o tónos; muleta, não dono; Valeu !!! lexico guia palavras glossário afinador"
+    },
+    {
+      "title": "diapasão",
+      "url": "/posts/post-inspecao-palavra-afinador.html",
+      "excerpt": "Garfo (A 440) ou escala — avô do afinador; no lab o passarinho é diapasão vivo; ver afinador / afinar.",
+      "text": "diapasão Garfo (A 440) ou escala — avô do afinador; no lab o passarinho é diapasão vivo; ver afinador / afinar. lexico guia palavras glossário diapasao"
+    },
+    {
       "title": "passarinho",
       "url": "/posts/post-inspecao-palavra-afinar.html",
       "excerpt": "Bicho pequeno; o assobio é diapasão vivo — não aperta cravelha; elo violão / Three Little Birds; ver afinar.",
@@ -3135,9 +3171,9 @@
     },
     {
       "title": "violão",
-      "url": "/posts/post-inspecao-palavra-afinar.html",
-      "excerpt": "Objecto de corda e cravelha — pede afinar antes de tocar; elo passarinho assobiando; ver ficha afinar.",
-      "text": "violão Objecto de corda e cravelha — pede afinar antes de tocar; elo passarinho assobiando; ver ficha afinar. lexico guia palavras glossário violao"
+      "url": "/posts/post-inspecao-palavra-violao.html",
+      "excerpt": "Viola + -ão — objecto BR (guitarra clássica/acústica); ≠ guitarra eléctrica; cordas no braço; ofício afinar; Valeu !!!",
+      "text": "violão Viola + -ão — objecto BR (guitarra clássica/acústica); ≠ guitarra eléctrica; cordas no braço; ofício afinar; Valeu !!! lexico guia palavras glossário violao"
     },
     {
       "title": "Algodão",
@@ -3990,6 +4026,30 @@
       "url": "/posts/post-inspecao-palavra-commitar.html",
       "excerpt": "Calco BR de to commit (git) — gravar o rasto; grafia viva comitar; ≠ cometer; ≠ push/PR; tríade tónos / vomitar; Valeu !!! depois do snapshot!",
       "text": "commitar Calco BR de to commit (git) — gravar o rasto; grafia viva comitar; ≠ cometer; ≠ push/PR; tríade tónos / vomitar; Valeu !!! depois do snapshot! lexico guia palavras glossário commitar"
+    },
+    {
+      "title": "upsert",
+      "url": "/posts/post-inspecao-palavra-upsert.html",
+      "excerpt": "Portmanteau EN update+insert — inserir se a chave é nova, actualizar se já existe; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!",
+      "text": "upsert Portmanteau EN update+insert — inserir se a chave é nova, actualizar se já existe; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!! lexico guia palavras glossário upsert"
+    },
+    {
+      "title": "upsertar",
+      "url": "/posts/post-inspecao-palavra-upsert.html",
+      "excerpt": "Calco BR de to upsert — inserir ou actualizar pela chave; ≠ replace; ≠ commitar; ver ficha upsert.",
+      "text": "upsertar Calco BR de to upsert — inserir ou actualizar pela chave; ≠ replace; ≠ commitar; ver ficha upsert. lexico guia palavras glossário upsertar"
+    },
+    {
+      "title": "script",
+      "url": "/posts/post-inspecao-palavra-script.html",
+      "excerpt": "Lat. scrīptum ← scrībere — sequência escrita EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar; Valeu !!!",
+      "text": "script Lat. scrīptum ← scrībere — sequência escrita EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar; Valeu !!! lexico guia palavras glossário script"
+    },
+    {
+      "title": "roteiro",
+      "url": "/posts/post-inspecao-palavra-script.html",
+      "excerpt": "Irmã PT de script no palco/ecrã — linhas da cena; no lab preferir roteiro em ficha formal de filme; ver ficha script.",
+      "text": "roteiro Irmã PT de script no palco/ecrã — linhas da cena; no lab preferir roteiro em ficha formal de filme; ver ficha script. lexico guia palavras glossário roteiro"
     },
     {
       "title": "isotônico",

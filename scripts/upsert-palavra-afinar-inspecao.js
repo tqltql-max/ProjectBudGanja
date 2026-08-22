@@ -154,14 +154,14 @@ async function main() {
         id: 'violao',
         word: 'violão',
         simple:
-          'Objecto de corda e cravelha — pede afinar antes de tocar; elo passarinho assobiando; ver ficha afinar.',
+          'Viola + -ão — objecto BR (guitarra clássica/acústica); ≠ guitarra eléctrica; cordas no braço; afinar = tónos; Valeu !!!',
         simpleEn:
-          'String object with pegs — needs tuning before playing; link to the whistling bird; see afinar.',
+          'Viola + -ão — BR object (classical/acoustic guitar); ≠ electric guitarra; strings on the neck; tuning = tónos; Valeu !!!',
         simpleEs:
-          'Objeto de cuerda y clavija — pide afinar antes de tocar; vínculo pajarito silbando; ver afinar.',
+          'Viola + -ão — objeto BR (guitarra clásica/acústica); ≠ guitarra eléctrica; cuerdas en el brazo; afinar = tónos; ¡Valeu !!!',
         group: 'lexico',
         fromTitle: false,
-        href
+        href: '/posts/post-inspecao-palavra-violao.html'
       },
       ['afinar']
     );
