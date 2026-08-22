@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T04:34:13.972Z",
+  "updatedAt": "2026-08-22T05:42:16.465Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -46,7 +46,7 @@
         "https://en.wikipedia.org/wiki/BYD_Company",
         "/posts/post-inspecao-celular-riscos-saude-criancas.html",
         "/posts/post-inspecao-palavra-risco.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Brinquedo ≠ via. Célula industrial ≠ pack de marketplace. Sem idade mágica."
     },
@@ -2335,7 +2335,7 @@
         "/posts/post-inspecao-filme-venom.html",
         "/posts/post-inspecao-palavra-animal.html",
         "/posts/post-inspecao-palavra-gesto.html",
-        "/posts/post-inspecao-expressao-muito-obrigado.html"
+        "/posts/post-inspecao-palavra-gratidao.html"
       ],
       "notes": "Palavra ≠ ecologia; metáfora cultural/ofício é camada — humano guarda verdade e gesto."
     },
@@ -2804,9 +2804,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: risco — perigo calculado × traço (riscar); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Faça o melhor!",
-      "whyEn": "Words: risco — calculated danger × stroke (riscar); links medo, sinal, caminho, EXIT, Tamara/Amyr; Do your best!",
-      "whyEs": "Palabras: risco — peligro calculado × trazo (riscar); vínculos medo, sinal, caminho, EXIT, Tamara/Amyr; ¡Haz lo mejor!",
+      "why": "Palavras: risco — perigo calculado × traço (riscar); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Valeu !!!",
+      "whyEn": "Words: risco — calculated danger × stroke (riscar); links medo, sinal, caminho, EXIT, Tamara/Amyr; Valeu !!!",
+      "whyEs": "Palabras: risco — peligro calculado × trazo (riscar); vínculos medo, sinal, caminho, EXIT, Tamara/Amyr; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-risco",
       "doneHref": "/posts/post-inspecao-palavra-risco.html",
       "seriesHint": "palavras-origem",
@@ -2817,7 +2817,7 @@
         "/posts/post-inspecao-palavra-sinal.html",
         "/posts/post-inspecao-tamara-klink.html",
         "/posts/post-inspecao-arte-bom-dia-inverno.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 59 — ficha completa (antes lote Tamara curto); perigo × traço; medo ≠ risco."
     },
@@ -2907,9 +2907,9 @@
     },
     {
       "id": "expressao-faca-o-melhor",
-      "title": "Faça o melhor! — mantra do laboratório",
-      "titleEn": "Do your best! — lab mantra",
-      "titleEs": "¡Haz lo mejor! — mantra del laboratorio",
+      "title": "Valeu !!! — mantra do laboratório",
+      "titleEn": "Valeu !!! — lab mantra",
+      "titleEs": "¡Valeu !!! — mantra del laboratorio",
       "tipo": "expressao",
       "priority": 1,
       "status": "feita",
@@ -2917,7 +2917,7 @@
       "whyEn": "Sayings: Vida mantra — daily craft; reply to theft and prohibition of the inspection project.",
       "whyEs": "Dichos: mantra Vida — oficio diario; respuesta al robo y a la prohibición del proyecto de inspección.",
       "suggestedSlug": "inspecao-expressao-faca-o-melhor",
-      "doneHref": "/posts/post-inspecao-expressao-faca-o-melhor.html",
+      "doneHref": "/posts/post-inspecao-palavra-valeu.html",
       "seriesHint": "expressoes-ditados",
       "sources": [
         "/vida/",
@@ -2974,7 +2974,7 @@
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-backspace.html",
         "/posts/post-inspecao-palavra-esquerdo.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-valeu.html",
         "/vida/",
         "/vida/diario/"
       ],
@@ -3020,7 +3020,7 @@
         "https://pt.wiktionary.org/wiki/aff",
         "/posts/post-inspecao-palavra-raiva.html",
         "/posts/post-inspecao-palavra-verdade.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 27 — tom severo; não patologizar o enfado."
     },
@@ -3049,23 +3049,23 @@
     },
     {
       "id": "figura-ayrton-senna",
-      "title": "Ayrton Senna — homenagem completa e Faça o melhor!",
-      "titleEn": "Ayrton Senna — full homage and Do your best!",
-      "titleEs": "Ayrton Senna — homenaje completo y ¡Haz lo mejor!",
+      "title": "Ayrton Senna — homenagem completa e Valeu !!!",
+      "titleEn": "Ayrton Senna — full homage and Valeu !!!",
+      "titleEs": "Ayrton Senna — homenaje completo y ¡Valeu !!!",
       "tipo": "pessoas",
       "priority": 1,
       "status": "feita",
-      "why": "Pessoas × Expressões: homenagem a Senna com elo no mantra Faça o melhor!; ofício, Brasil, Instituto.",
-      "whyEn": "People × Expressions: Senna homage linked to Do your best!; craft, Brazil, Instituto.",
-      "whyEs": "Personas × Expresiones: homenaje a Senna con vínculo en ¡Haz lo mejor!; oficio, Brasil, Instituto.",
+      "why": "Pessoas × Expressões: homenagem a Senna com elo no mantra Valeu !!!; ofício, Brasil, Instituto.",
+      "whyEn": "People × Expressions: Senna homage linked to Valeu !!!; craft, Brazil, Instituto.",
+      "whyEs": "Personas × Expresiones: homenaje a Senna con vínculo en ¡Valeu !!!; oficio, Brasil, Instituto.",
       "suggestedSlug": "inspecao-figura-ayrton-senna",
       "doneHref": "/posts/post-inspecao-figura-ayrton-senna.html",
       "seriesHint": "pessoas-historia",
       "sources": [
         "https://pt.wikipedia.org/wiki/Ayrton_Senna",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-valeu.html",
         "https://www.institutoayrtonsenna.org.br/",
-        "/vida/#poema=faca-o-melhor"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Homenagem completa; não romantizar a morte em Ímola."
     },
@@ -3077,16 +3077,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: «já» × «aff» — tempo/urgência e enfado; fecho vazio = ressalva; Faça o melhor.",
-      "whyEn": "Words: “já” × “aff” — time/urgency and exasperation; empty close = caveat; Do your best.",
-      "whyEs": "Palabras: «já» × «aff» — tiempo/urgencia y hastío; cierre vacío = salvedad; Haz lo mejor.",
+      "why": "Palavras: «já» × «aff» — tempo/urgência e enfado; fecho vazio = ressalva; Valeu !!!",
+      "whyEn": "Words: “já” × “aff” — time/urgency and exasperation; empty close = caveat; Valeu !!!",
+      "whyEs": "Palabras: «já» × «aff» — tiempo/urgencia y hastío; cierre vacío = salvedad; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-ja",
       "doneHref": "/posts/post-inspecao-palavra-ja.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/j%C3%A1",
         "/posts/post-inspecao-palavra-aff.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 29 — par oral aff×já; não confundir com código ja (japonês)."
     },
@@ -3098,9 +3098,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: «genial» — elogio de engenho; com método sim; culto vazio = ressalva; elo Faça o melhor / criatividade.",
-      "whyEn": "Words: “genial” — praise of ingenuity; method yes; empty cult = caveat; link Do your best / creativity.",
-      "whyEs": "Palabras: «genial» — elogio de ingenio; método sí; culto vacío = salvedad; vínculo Haz lo mejor / creatividad.",
+      "why": "Palavras: «genial» — elogio de engenho; com método sim; culto vazio = ressalva; elo Valeu !!! / criatividade.",
+      "whyEn": "Words: “genial” — praise of ingenuity; method yes; empty cult = caveat; link Valeu !!! / creativity.",
+      "whyEs": "Palabras: «genial» — elogio de ingenio; método sí; culto vacío = salvedad; vínculo Valeu !!! / creatividad.",
       "suggestedSlug": "inspecao-palavra-genial",
       "doneHref": "/posts/post-inspecao-palavra-genial.html",
       "seriesHint": "palavras-origem",
@@ -3111,44 +3111,44 @@
         "/posts/post-inspecao-palavra-maravilhoso.html",
         "/posts/post-inspecao-palavra-fantastico.html",
         "/posts/post-inspecao-palavra-idolo.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-valeu.html",
         "/posts/post-inspecao-figura-ayrton-senna.html"
       ],
       "notes": "Cap. 30 — falso amigo EN genial (amável); escala legal → genial → maravilhoso / fantástico; contraste ídolo."
     },
     {
       "id": "palavra-esquerdo",
-      "title": "Esquerdo — objeto, criação, finalidade e Faça o melhor!",
-      "titleEn": "Esquerdo — object, creation, purpose and Do your best!",
-      "titleEs": "Esquerdo — objeto, creación, finalidad y ¡Haz lo mejor!",
+      "title": "Esquerdo — objeto, criação, finalidade e Valeu !!!",
+      "titleEn": "Esquerdo — object, creation, purpose and Valeu !!!",
+      "titleEs": "Esquerdo — objeto, creación, finalidad y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: «esquerdo» — objeto/criação/finalidade; anti-estigma; elo mãos e Faça o melhor!",
-      "whyEn": "Words: “esquerdo” — object/creation/purpose; anti-stigma; hands + Do your best!",
-      "whyEs": "Palabras: «esquerdo» — objeto/creación/finalidad; anti-estigma; manos + ¡Haz lo mejor!",
+      "why": "Palavras: «esquerdo» — objeto/criação/finalidade; anti-estigma; elo mãos e Valeu !!!",
+      "whyEn": "Words: “esquerdo” — object/creation/purpose; anti-stigma; hands + Valeu !!!",
+      "whyEs": "Palabras: «esquerdo» — objeto/creación/finalidad; anti-estigma; manos + ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-esquerdo",
       "doneHref": "/posts/post-inspecao-palavra-esquerdo.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/esquerdo",
         "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-valeu.html",
         "/posts/post-inspecao-palavra-gesto.html"
       ],
       "notes": "Cap. 31 — quatro eixos; complementar mão esquerda×direita."
     },
     {
       "id": "palavra-lingua-portuguesa",
-      "title": "Língua portuguesa — originalidade, alterações no tempo e Faça o melhor!",
-      "titleEn": "Portuguese language — originality, changes over time and Do your best!",
-      "titleEs": "Lengua portuguesa — originalidad, cambios en el tiempo y ¡Haz lo mejor!",
+      "title": "Língua portuguesa — originalidade, alterações no tempo e Valeu !!!",
+      "titleEn": "Portuguese language — originality, changes over time and Valeu !!!",
+      "titleEs": "Lengua portuguesa — originalidad, cambios en el tiempo y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 1,
       "status": "feita",
-      "why": "Língua do projecto: originalidade; alterações ao longo do tempo; para que serve; Faça o melhor nesta língua.",
-      "whyEn": "Project language: originality; changes over time; purpose; Do your best in this language.",
-      "whyEs": "Lengua del proyecto: originalidad; cambios en el tiempo; para qué sirve; Haz lo mejor en esta lengua.",
+      "why": "Língua do projecto: originalidade; alterações ao longo do tempo; para que serve; Valeu !!! nesta língua.",
+      "whyEn": "Project language: originality; changes over time; purpose; Valeu !!! in this language.",
+      "whyEs": "Lengua del proyecto: originalidad; cambios en el tiempo; para qué sirve; Valeu !!! en esta lengua.",
       "suggestedSlug": "inspecao-palavra-lingua-portuguesa",
       "doneHref": "/posts/post-inspecao-palavra-lingua-portuguesa.html",
       "seriesHint": "palavras-origem",
@@ -3156,7 +3156,7 @@
         "https://pt.wikipedia.org/wiki/L%C3%ADngua_portuguesa",
         "https://pt.wikipedia.org/wiki/Portugu%C3%AAs_brasileiro",
         "/posts/post-inspecao-figura-duvivier.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-valeu.html",
         "/guia/palavras.html"
       ],
       "notes": "Cap. 32 — meio do laboratório; eixo temporal (latim→BR→digital)."
@@ -3169,9 +3169,9 @@
       "tipo": "expressao",
       "priority": 2,
       "status": "feita",
-      "why": "Expressões: sopro BR de assombro e afeto; contraste com aff e meudeusdoceu; nota de campo (cuidado/carona); Faça o melhor!",
-      "whyEn": "Sayings: Brazilian breath of awe and affection; contrast with aff and meudeusdoceu; field note (care/ride); Do your best!",
-      "whyEs": "Dichos: soplo BR de asombro y afecto; contraste con aff y meudeusdoceu; nota de campo (cuidado/aventón); ¡Haz lo mejor!",
+      "why": "Expressões: sopro BR de assombro e afeto; contraste com aff e meudeusdoceu; nota de campo (cuidado/carona); Valeu !!!",
+      "whyEn": "Sayings: Brazilian breath of awe and affection; contrast with aff and meudeusdoceu; field note (care/ride); Valeu !!!",
+      "whyEs": "Dichos: soplo BR de asombro y afecto; contraste con aff y meudeusdoceu; nota de campo (cuidado/aventón); ¡Valeu !!!",
       "suggestedSlug": "inspecao-expressao-jesusamando",
       "doneHref": "/posts/post-inspecao-expressao-jesusamando.html",
       "seriesHint": "expressoes-ditados",
@@ -3179,22 +3179,22 @@
         "/posts/post-inspecao-palavra-lingua-portuguesa.html",
         "/posts/post-inspecao-palavra-aff.html",
         "/posts/post-inspecao-expressao-meudeusdoceu.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-valeu.html",
         "/biblioteca/inspecoes/#inspecoes-expressoes"
       ],
       "notes": "Cap. 3 Expressões — nota de campo 2026-08-03: calor em contexto de cuidado (vs meudeusdoceu = espanto)."
     },
     {
       "id": "palavra-fogo",
-      "title": "Fogo — elemento, ardor, cuidado e Faça o melhor!",
-      "titleEn": "Fogo — element, ardor, care and Do your best!",
-      "titleEs": "Fogo — elemento, ardor, cuidado y ¡Haz lo mejor!",
+      "title": "Fogo — elemento, ardor, cuidado e Valeu !!!",
+      "titleEn": "Fogo — element, ardor, care and Valeu !!!",
+      "titleEs": "Fogo — elemento, ardor, cuidado y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: fogo (lat. focus) — elemento e metáfora; elos água, raiva, cultivo; Faça o melhor com medida.",
-      "whyEn": "Words: fogo (Lat. focus) — element and metaphor; água, raiva, cultivo; Do your best with measure.",
-      "whyEs": "Palabras: fogo (lat. focus) — elemento y metáfora; água, raiva, cultivo; Haz lo mejor con medida.",
+      "why": "Palavras: fogo (lat. focus) — elemento e metáfora; elos água, raiva, cultivo; Valeu !!! com medida.",
+      "whyEn": "Words: fogo (Lat. focus) — element and metaphor; água, raiva, cultivo; Valeu !!! with measure.",
+      "whyEs": "Palabras: fogo (lat. focus) — elemento y metáfora; água, raiva, cultivo; Valeu !!! con medida.",
       "suggestedSlug": "inspecao-palavra-fogo",
       "doneHref": "/posts/post-inspecao-palavra-fogo.html",
       "seriesHint": "palavras-origem",
@@ -3203,7 +3203,7 @@
         "https://pt.wikipedia.org/wiki/Fogo",
         "/posts/post-inspecao-palavra-agua.html",
         "/posts/post-inspecao-palavra-raiva.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 33 — lareira × labareda; par com água."
     },
@@ -3225,21 +3225,21 @@
         "/posts/post-inspecao-expressao-jesusamando.html",
         "/posts/post-inspecao-expressao-meudeusdoceu.html",
         "/posts/post-inspecao-palavra-aff.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 4 Expressões — troca lab meudeusdoceu → jesusudavi."
     },
     {
       "id": "palavra-buguei",
-      "title": "Buguei — do inseto ao «deu ruim» e Faça o melhor!",
-      "titleEn": "Buguei — from insect to “it went bad” and Do your best!",
-      "titleEs": "Buguei — del insecto al «salió mal» y ¡Haz lo mejor!",
+      "title": "Buguei — do inseto ao «deu ruim» e Valeu !!!",
+      "titleEn": "Buguei — from insect to “it went bad” and Valeu !!!",
+      "titleEs": "Buguei — del insecto al «salió mal» y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: buguei — bug (inseto) → falha → peito; alteração que parece ruim; Faça o melhor depois do tranco.",
-      "whyEn": "Words: buguei — bug (insect) → fault → chest; shift that sounds bad; Do your best after the stall.",
-      "whyEs": "Palabras: buguei — bug (insecto) → fallo → pecho; alteración que suena mala; Haz lo mejor después del tranco.",
+      "why": "Palavras: buguei — bug (inseto) → falha → peito; alteração que parece ruim; Valeu !!! depois do tranco.",
+      "whyEn": "Words: buguei — bug (insect) → fault → chest; shift that sounds bad; Valeu !!! after the stall.",
+      "whyEs": "Palabras: buguei — bug (insecto) → fallo → pecho; alteración que suena mala; Valeu !!! después del tranco.",
       "suggestedSlug": "inspecao-palavra-buguei",
       "doneHref": "/posts/post-inspecao-palavra-buguei.html",
       "seriesHint": "palavras-origem",
@@ -3249,7 +3249,7 @@
         "https://pt.wikipedia.org/wiki/Inseto",
         "/posts/post-inspecao-palavra-animal.html",
         "/posts/post-inspecao-palavra-aff.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 34 — inseto × pejorativo × desbugar com ofício."
     },
@@ -3274,7 +3274,7 @@
         "/posts/post-inspecao-palavra-buguei.html",
         "/posts/post-inspecao-palavra-genial.html",
         "/posts/post-inspecao-palavra-lingua-portuguesa.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 5 Expressões — termómetro de acerto partilhado."
     },
@@ -3296,7 +3296,7 @@
         "/posts/post-inspecao-expressao-jesusamando.html",
         "/posts/post-inspecao-expressao-meudeusdoceu.html",
         "/posts/post-inspecao-palavra-lingua-portuguesa.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-valeu.html",
         "/posts/post-inspecao-padre-ticao.html"
       ],
       "notes": "Cap. 6 Expressões — mapa de usos; ficha ≠ catecismo."
@@ -3309,9 +3309,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: especial — Lat. specialis (≠ Tupi); uso BR; meta em especial; rede originárias; Faça o melhor!",
-      "whyEn": "Words: especial — Lat. specialis (≠ Tupi); BR use; em especial meta; originary network; Do your best!",
-      "whyEs": "Palabras: especial — lat. specialis (≠ tupí); uso BR; meta em especial; red originaria; ¡Haz lo mejor!",
+      "why": "Palavras: especial — Lat. specialis (≠ Tupi); uso BR; meta em especial; rede originárias; Valeu !!!",
+      "whyEn": "Words: especial — Lat. specialis (≠ Tupi); BR use; em especial meta; originary network; Valeu !!!",
+      "whyEs": "Palabras: especial — lat. specialis (≠ tupí); uso BR; meta em especial; red originaria; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-especial",
       "doneHref": "/posts/post-inspecao-palavra-especial.html",
       "seriesHint": "palavras-origem",
@@ -3321,15 +3321,15 @@
         "/posts/post-inspecao-palavra-lingua-portuguesa.html",
         "/posts/post-inspecao-palavra-maconha.html",
         "/posts/post-inspecao-palavra-diamba.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 36 — specialis × uso BR × rede originária (sem fingir tupi)."
     },
     {
       "id": "palavra-legal",
-      "title": "Legal — lei, gíria BR «bacana» e Faça o melhor!",
-      "titleEn": "Legal — law, BR slang “cool”, and Do your best!",
-      "titleEs": "Legal — ley, jerga BR «bacán» y ¡Haz lo mejor!",
+      "title": "Legal — lei, gíria BR «bacana» e Valeu !!!",
+      "titleEn": "Legal — law, BR slang “cool”, and Valeu !!!",
+      "titleEs": "Legal — ley, jerga BR «bacán» y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
@@ -3345,15 +3345,15 @@
         "/posts/post-inspecao-palavra-ilicito.html",
         "/posts/post-inspecao-palavra-lei-11-343.html",
         "/posts/post-inspecao-palavra-descriminalizacao.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 37 — lei × gíria; não confundir eixos."
     },
     {
       "id": "palavra-fabuloso",
-      "title": "Fabuloso — fábula, elogio BR e Faça o melhor!",
-      "titleEn": "Fabuloso — fable, BR praise and Do your best!",
-      "titleEs": "Fabuloso — fábula, elogio BR y ¡Haz lo mejor!",
+      "title": "Fabuloso — fábula, elogio BR e Valeu !!!",
+      "titleEn": "Fabuloso — fable, BR praise and Valeu !!!",
+      "titleEs": "Fabuloso — fábula, elogio BR y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
@@ -3369,15 +3369,15 @@
         "https://en.wiktionary.org/wiki/fabulous",
         "/posts/post-inspecao-palavra-genial.html",
         "/posts/post-inspecao-palavra-legal.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 81 — elogio BR; rede só com slugs existentes."
     },
     {
       "id": "palavra-respeito",
-      "title": "Respeito — olhar de novo, prática social e Faça o melhor!",
-      "titleEn": "Respeito — looking again, social practice and Do your best!",
-      "titleEs": "Respeito — volver a mirar, práctica social y ¡Haz lo mejor!",
+      "title": "Respeito — olhar de novo, prática social e Valeu !!!",
+      "titleEn": "Respeito — looking again, social practice and Valeu !!!",
+      "titleEs": "Respeito — volver a mirar, práctica social y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
@@ -3393,7 +3393,7 @@
         "/posts/post-inspecao-palavra-verdade.html",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 65 — respeito como prática; sem sermão."
     },
@@ -3405,9 +3405,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: incrível (lat. incredibilis) — incredulidade e elogio BR; escala legal/especial/genial; Faça o melhor!",
-      "whyEn": "Words: incrível (Lat. incredibilis) — unbelief and BR praise; legal/especial/genial scale; Do your best!",
-      "whyEs": "Palabras: incrível (lat. incredibilis) — incredulidad y elogio BR; escala legal/especial/genial; ¡Haz lo mejor!",
+      "why": "Palavras: incrível (lat. incredibilis) — incredulidade e elogio BR; escala legal/especial/genial; Valeu !!!",
+      "whyEn": "Words: incrível (Lat. incredibilis) — unbelief and BR praise; legal/especial/genial scale; Valeu !!!",
+      "whyEs": "Palabras: incrível (lat. incredibilis) — incredulidad y elogio BR; escala legal/especial/genial; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-incrivel",
       "doneHref": "/posts/post-inspecao-palavra-incrivel.html",
       "seriesHint": "palavras-origem",
@@ -3417,21 +3417,21 @@
         "/posts/post-inspecao-palavra-legal.html",
         "/posts/post-inspecao-palavra-genial.html",
         "/posts/post-inspecao-palavra-fantastico.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 48 — incredibilis × elogio BR; escala só com fichas existentes."
     },
     {
       "id": "palavra-coracao",
-      "title": "Coração — órgão, afeto, centro, coragem e Faça o melhor!",
-      "titleEn": "Coração — organ, affect, center, courage and Do your best!",
-      "titleEs": "Coração — órgano, afecto, centro, coraje y ¡Haz lo mejor!",
+      "title": "Coração — órgão, afeto, centro, coragem e Valeu !!!",
+      "titleEn": "Coração — organ, affect, center, courage and Valeu !!!",
+      "titleEs": "Coração — órgano, afecto, centro, coraje y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: coração (lat. cor) — órgão, afeto, centro, coragem; elo mãos/esquerdo; Faça o melhor de coração.",
-      "whyEn": "Words: coração (Lat. cor) — organ, affect, center, courage; hands/esquerdo; Do your best from the heart.",
-      "whyEs": "Palabras: coração (lat. cor) — órgano, afecto, centro, coraje; manos/esquerdo; Haz lo mejor de corazón.",
+      "why": "Palavras: coração (lat. cor) — órgão, afeto, centro, coragem; elo mãos/esquerdo; Valeu !!! de coração.",
+      "whyEn": "Words: coração (Lat. cor) — organ, affect, center, courage; hands/esquerdo; Valeu !!! from the heart.",
+      "whyEs": "Palabras: coração (lat. cor) — órgano, afecto, centro, coraje; manos/esquerdo; Valeu !!! de corazón.",
       "suggestedSlug": "inspecao-palavra-coracao",
       "doneHref": "/posts/post-inspecao-palavra-coracao.html",
       "seriesHint": "palavras-origem",
@@ -3440,15 +3440,15 @@
         "https://pt.wikipedia.org/wiki/Cora%C3%A7%C3%A3o",
         "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
         "/posts/post-inspecao-palavra-esquerdo.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 35 — peito × mãos (complementaridade); sem dogma anatómico."
     },
     {
       "id": "palavra-fantastico",
-      "title": "Fantástico — fantasia, elogio BR e Faça o melhor!",
-      "titleEn": "Fantástico — fantasy, BR praise and Do your best!",
-      "titleEs": "Fantástico — fantasía, elogio BR y ¡Haz lo mejor!",
+      "title": "Fantástico — fantasia, elogio BR e Valeu !!!",
+      "titleEn": "Fantástico — fantasy, BR praise and Valeu !!!",
+      "titleEs": "Fantástico — fantasía, elogio BR y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
@@ -3464,7 +3464,7 @@
         "/posts/post-inspecao-palavra-genial.html",
         "/posts/post-inspecao-palavra-maravilhoso.html",
         "/posts/post-inspecao-palavra-legal.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 82 — fantisico → fantástico; escala de elogio."
     },
@@ -3476,9 +3476,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: memorável (lat. memorabilis) — retenção digna; elogio BR; ≠ escala genial/especial; Faça o melhor!",
-      "whyEn": "Words: memorável (Lat. memorabilis) — worthy retention; BR praise; ≠ genial/especial scale; Do your best!",
-      "whyEs": "Palabras: memorável (lat. memorabilis) — retención digna; elogio BR; ≠ escala genial/especial; ¡Haz lo mejor!",
+      "why": "Palavras: memorável (lat. memorabilis) — retenção digna; elogio BR; ≠ escala genial/especial; Valeu !!!",
+      "whyEn": "Words: memorável (Lat. memorabilis) — worthy retention; BR praise; ≠ genial/especial scale; Valeu !!!",
+      "whyEs": "Palabras: memorável (lat. memorabilis) — retención digna; elogio BR; ≠ escala genial/especial; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-memoravel",
       "doneHref": "/posts/post-inspecao-palavra-memoravel.html",
       "seriesHint": "palavras-origem",
@@ -3489,7 +3489,7 @@
         "/posts/post-inspecao-palavra-especial.html",
         "/posts/post-inspecao-palavra-livro.html",
         "/posts/post-inspecao-filme-divertida-mente.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 36 — memorabilis; retenção ≠ intensidade."
     },
@@ -3512,15 +3512,15 @@
         "/posts/post-inspecao-expressao-meudeusdoceu.html",
         "/posts/post-inspecao-palavra-aff.html",
         "/posts/post-inspecao-palavra-lingua-portuguesa.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 6 Expressões — riso tipado / kkkk → ausdhuashduas."
     },
     {
       "id": "palavra-inacreditavel",
-      "title": "Inacreditável — beyond belief, elogio BR e Faça o melhor!",
-      "titleEn": "Inacreditável — beyond belief, BR praise, and Do your best!",
-      "titleEs": "Inacreditável — más allá de lo creíble, elogio BR y ¡Haz lo mejor!",
+      "title": "Inacreditável — beyond belief, elogio BR e Valeu !!!",
+      "titleEn": "Inacreditável — beyond belief, BR praise, and Valeu !!!",
+      "titleEs": "Inacreditável — más allá de lo creíble, elogio BR y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
@@ -3535,7 +3535,7 @@
         "https://pt.wiktionary.org/wiki/acreditar",
         "/posts/post-inspecao-palavra-incrivel.html",
         "/posts/post-inspecao-palavra-genial.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 64 — beyond belief × elogio; irmão de incrível."
     },
@@ -3560,21 +3560,21 @@
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-verdade.html",
         "/posts/post-inspecao-palavra-buguei.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 47 — empréstimo × parece/é × correção anti-hype."
     },
     {
       "id": "palavra-maravilhoso",
-      "title": "Maravilhoso — maravilha, assombro, elogio BR e Faça o melhor!",
-      "titleEn": "Maravilhoso — marvel, wonder, BR praise and Do your best!",
-      "titleEs": "Maravilhoso — maravilla, asombro, elogio BR y ¡Haz lo mejor!",
+      "title": "Maravilhoso — maravilha, assombro, elogio BR e Valeu !!!",
+      "titleEn": "Maravilhoso — marvel, wonder, BR praise and Valeu !!!",
+      "titleEs": "Maravilhoso — maravilla, asombro, elogio BR y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: maravilhoso — de maravilha/mirabilia; assombro e elogio BR; escala legal/genial/aff; Faça o melhor depois do uau.",
-      "whyEn": "Words: maravilhoso — from maravilha/mirabilia; wonder and BR praise; scale legal/genial/aff; Do your best after the wow.",
-      "whyEs": "Palabras: maravilhoso — de maravilha/mirabilia; asombro y elogio BR; escala legal/genial/aff; Haz lo mejor después del guau.",
+      "why": "Palavras: maravilhoso — de maravilha/mirabilia; assombro e elogio BR; escala legal/genial/aff; Valeu !!! depois do uau.",
+      "whyEn": "Words: maravilhoso — from maravilha/mirabilia; wonder and BR praise; scale legal/genial/aff; Valeu !!! after the wow.",
+      "whyEs": "Palabras: maravilhoso — de maravilha/mirabilia; asombro y elogio BR; escala legal/genial/aff; Valeu !!! después del guau.",
       "suggestedSlug": "inspecao-palavra-maravilhoso",
       "doneHref": "/posts/post-inspecao-palavra-maravilhoso.html",
       "seriesHint": "palavras-origem",
@@ -3584,15 +3584,15 @@
         "/posts/post-inspecao-palavra-legal.html",
         "/posts/post-inspecao-palavra-genial.html",
         "/posts/post-inspecao-palavra-aff.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 67 — maravilha × assombro × escala de elogio."
     },
     {
       "id": "palavra-eletrizante",
-      "title": "Eletrizante — carga, hype BR e Faça o melhor!",
-      "titleEn": "Eletrizante — charge, BR hype and Do your best!",
-      "titleEs": "Eletrizante — carga, hype BR y ¡Haz lo mejor!",
+      "title": "Eletrizante — carga, hype BR e Valeu !!!",
+      "titleEn": "Eletrizante — charge, BR hype and Valeu !!!",
+      "titleEs": "Eletrizante — carga, hype BR y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
@@ -3608,21 +3608,21 @@
         "https://en.wiktionary.org/wiki/electrifying",
         "/posts/post-inspecao-palavra-fogo.html",
         "/posts/post-inspecao-palavra-genial.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 43 — carga/hype; rede só com slugs existentes (fogo + escala)."
     },
     {
       "id": "palavra-esperanca",
-      "title": "Esperança — afecto vivo, espera com ofício e Faça o melhor!",
-      "titleEn": "Esperança — lived hope, waiting with craft and Do your best!",
-      "titleEs": "Esperança — esperanza vivida, espera con oficio y ¡Haz lo mejor!",
+      "title": "Esperança — afecto vivo, espera com ofício e Valeu !!!",
+      "titleEn": "Esperança — lived hope, waiting with craft and Valeu !!!",
+      "titleEs": "Esperança — esperanza vivida, espera con oficio y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: esperança (lat. spēs / sperantia) — afecto vivo BR; esperar × esperança; rede alegria/medo/tristeza; Faça o melhor!",
-      "whyEn": "Words: esperança (Lat. spēs / sperantia) — lived BR hope; wait vs hope; joy/fear/sadness net; Do your best!",
-      "whyEs": "Palabras: esperança (lat. spēs / sperantia) — esperanza vivida BR; esperar × esperança; red alegría/miedo/tristeza; ¡Haz lo mejor!",
+      "why": "Palavras: esperança (lat. spēs / sperantia) — afecto vivo BR; esperar × esperança; rede alegria/medo/tristeza; Valeu !!!",
+      "whyEn": "Words: esperança (Lat. spēs / sperantia) — lived BR hope; wait vs hope; joy/fear/sadness net; Valeu !!!",
+      "whyEs": "Palabras: esperança (lat. spēs / sperantia) — esperanza vivida BR; esperar × esperança; red alegría/miedo/tristeza; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-esperanca",
       "doneHref": "/posts/post-inspecao-palavra-esperanca.html",
       "seriesHint": "palavras-origem",
@@ -3631,7 +3631,7 @@
         "https://pt.wiktionary.org/wiki/esperar",
         "/posts/post-inspecao-palavra-alegria.html",
         "/posts/post-inspecao-palavra-medo.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 80 — fresta viva; sem sermão; tipografia epseramja → esperança."
     },
@@ -3656,7 +3656,7 @@
         "/posts/post-inspecao-palavra-criatividade.html",
         "/posts/post-inspecao-palavra-fantastico.html",
         "/posts/post-inspecao-palavra-verdade.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 69 — fantasioso ≠ fantástico (Cap. irmã); rede só com slugs existentes."
     },
@@ -3681,21 +3681,21 @@
         "/posts/post-inspecao-guia-farmacia-viva.html",
         "/cultivo/",
         "/posts/post-inspecao-palavra-animal.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 83 — planta como conceito; plural plantas no corpo; sem duplicar especies."
     },
     {
       "id": "palavra-idolo",
-      "title": "Ídolo — admiração, imagem, média e Faça o melhor!",
-      "titleEn": "Ídolo — admiration, image, media and Do your best!",
-      "titleEs": "Ídolo — admiración, imagen, medios y ¡Haz lo mejor!",
+      "title": "Ídolo — admiração, imagem, média e Valeu !!!",
+      "titleEn": "Ídolo — admiration, image, media and Valeu !!!",
+      "titleEs": "Ídolo — admiración, imagen, medios y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: ídolo (gr. eídōlon) — celebridade, culto lexical, idolatrar e média; admirar com ofício; Faça o melhor!",
-      "whyEn": "Words: ídolo (Gk. eídōlon) — celebrity, lexical cult sense, idolatrar and media; admire with craft; Do your best!",
-      "whyEs": "Palabras: ídolo (gr. eídōlon) — celebridad, culto léxico, idolatrar y medios; admirar con oficio; ¡Haz lo mejor!",
+      "why": "Palavras: ídolo (gr. eídōlon) — celebridade, culto lexical, idolatrar e média; admirar com ofício; Valeu !!!",
+      "whyEn": "Words: ídolo (Gk. eídōlon) — celebrity, lexical cult sense, idolatrar and media; admire with craft; Valeu !!!",
+      "whyEs": "Palabras: ídolo (gr. eídōlon) — celebridad, culto léxico, idolatrar y medios; admirar con oficio; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-idolo",
       "doneHref": "/posts/post-inspecao-palavra-idolo.html",
       "seriesHint": "palavras-origem",
@@ -3704,15 +3704,15 @@
         "https://pt.wikipedia.org/wiki/%C3%8Ddolo",
         "/posts/post-inspecao-figura-ayrton-senna.html",
         "/posts/post-inspecao-palavra-genial.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 71 — imagem → pessoa admirada; sem sermão; elos Senna/Chorão/genial."
     },
     {
       "id": "palavra-inseto",
-      "title": "Inseto — vida, ecologia, cultura e Faça o melhor!",
-      "titleEn": "Inseto — life, ecology, culture and Do your best!",
-      "titleEs": "Inseto — vida, ecología, cultura y ¡Haz lo mejor!",
+      "title": "Inseto — vida, ecologia, cultura e Valeu !!!",
+      "titleEn": "Inseto — life, ecology, culture and Valeu !!!",
+      "titleEs": "Inseto — vida, ecología, cultura y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
@@ -3730,7 +3730,7 @@
         "/posts/post-inspecao-animal-abelha.html",
         "/posts/post-inspecao-palavra-simbiose.html",
         "/posts/post-inspecao-palavra-buguei.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 73 — inseto/insetos; vida × ecologia × cultura."
     },
@@ -3754,7 +3754,7 @@
         "/biblioteca/inspecoes/#inspecoes-frutos",
         "/posts/post-pesquisa-insumos-organicos-vs-industrializados-fruto.html",
         "/posts/post-inspecao-palavra-simbiose.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 49 — lema fruto; plural + figurado; sem duplicar pesquisa/slug de espécie."
     },
@@ -3766,9 +3766,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: pipoca (tupi pi'poka) — milho→calor→estouro; rua e cinema BR; Faça o melhor!",
-      "whyEn": "Words: pipoca (Tupi pi'poka) — grain→heat→pop; BR street and cinema; Do your best!",
-      "whyEs": "Palabras: pipoca (tupí pi'poka) — grano→calor→estallido; calle y cine BR; ¡Haz lo mejor!",
+      "why": "Palavras: pipoca (tupi pi'poka) — milho→calor→estouro; rua e cinema BR; Valeu !!!",
+      "whyEn": "Words: pipoca (Tupi pi'poka) — grain→heat→pop; BR street and cinema; Valeu !!!",
+      "whyEs": "Palabras: pipoca (tupí pi'poka) — grano→calor→estallido; calle y cine BR; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-pipoca",
       "doneHref": "/posts/post-inspecao-palavra-pipoca.html",
       "seriesHint": "palavras-origem",
@@ -3777,15 +3777,15 @@
         "https://pt.wikipedia.org/wiki/Pipoca",
         "/posts/post-inspecao-palavra-fogo.html",
         "/posts/post-inspecao-palavra-alegria.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 68 — tupi pi'poka; rua/cinema; sem sermonário junk-food; ≠ coca/pouca/roça."
     },
     {
       "id": "palavra-vida",
-      "title": "Vida — facto, tempo, modo e Faça o melhor!",
-      "titleEn": "Vida — fact, time, mode and Do your best!",
-      "titleEs": "Vida — hecho, tiempo, modo y ¡Haz lo mejor!",
+      "title": "Vida — facto, tempo, modo e Valeu !!!",
+      "titleEn": "Vida — fact, time, mode and Valeu !!!",
+      "titleEs": "Vida — hecho, tiempo, modo y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
@@ -3802,7 +3802,7 @@
         "/posts/post-inspecao-palavra-coracao.html",
         "/posts/post-inspecao-palavra-esperanca.html",
         "/vida/",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 70 — palavra ≠ trilha /vida/ ≠ Árvore da Vida; sem sermão."
     },
@@ -3849,9 +3849,9 @@
     },
     {
       "id": "palavra-magnifico",
-      "title": "Magnífico — magnificus, elogio BR e Faça o melhor!",
-      "titleEn": "Magnífico — magnificus, BR praise and Do your best!",
-      "titleEs": "Magnífico — magnificus, elogio BR y ¡Haz lo mejor!",
+      "title": "Magnífico — magnificus, elogio BR e Valeu !!!",
+      "titleEn": "Magnífico — magnificus, BR praise and Valeu !!!",
+      "titleEs": "Magnífico — magnificus, elogio BR y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
@@ -3868,7 +3868,7 @@
         "/posts/post-inspecao-palavra-genial.html",
         "/posts/post-inspecao-palavra-fabuloso.html",
         "/posts/post-inspecao-palavra-maravilhoso.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 72 — elogio BR; rede só com slugs existentes; alt. máfia rejeitada."
     },
@@ -3933,7 +3933,7 @@
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-risco.html",
         "/posts/post-inspecao-palavra-verdade.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 75 — signum; trânsito/corpo/aviso; «dar sinal»; tipografia singlam → sinal (não slang)."
     },
@@ -3957,7 +3957,7 @@
         "/posts/post-inspecao-palavra-planta.html",
         "/posts/post-inspecao-palavra-animal.html",
         "/posts/post-inspecao-palavra-inseto.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 74 — tipografia silvaogsn → selvagem; cluster natureza; não romantizar dano."
     },
@@ -3982,7 +3982,7 @@
         "/posts/post-inspecao-palavra-multitask.html",
         "/posts/post-inspecao-palavra-genial.html",
         "/posts/post-inspecao-palavra-gesto.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 76 — empréstimo EN; habilidade/craft; anti-LinkedIn; elos multitask/genial; skgll → skill."
     },
@@ -3994,9 +3994,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: passado (de passar / lat. passāre) — tempo decorrido; memória × história; elos memorável/verdade/língua; Faça o melhor!",
-      "whyEn": "Words: passado (from passar / Lat. passāre) — elapsed time; memory × history; memorável/truth/language; Do your best!",
-      "whyEs": "Palabras: passado (de passar / lat. passāre) — tiempo trascurrido; memoria × historia; memorável/verdad/lengua; ¡Haz lo mejor!",
+      "why": "Palavras: passado (de passar / lat. passāre) — tempo decorrido; memória × história; elos memorável/verdade/língua; Valeu !!!",
+      "whyEn": "Words: passado (from passar / Lat. passāre) — elapsed time; memory × history; memorável/truth/language; Valeu !!!",
+      "whyEs": "Palabras: passado (de passar / lat. passāre) — tiempo trascurrido; memoria × historia; memorável/verdad/lengua; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-passado",
       "doneHref": "/posts/post-inspecao-palavra-passado.html",
       "seriesHint": "palavras-origem",
@@ -4007,7 +4007,7 @@
         "/posts/post-inspecao-palavra-memoravel.html",
         "/posts/post-inspecao-palavra-verdade.html",
         "/posts/post-inspecao-palavra-lingua-portuguesa.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 77 — tipografia psasafo → passado; filho de passar."
     },
@@ -4031,7 +4031,7 @@
         "/posts/post-inspecao-palavra-legal.html",
         "/posts/post-inspecao-palavra-fantastico.html",
         "/posts/post-inspecao-palavra-genial.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 78 — toal → total; lote passado/skill/total; escala de elogio/acordo."
     },
@@ -4056,7 +4056,7 @@
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-lingua-portuguesa.html",
         "/posts/post-inspecao-palavra-sinal.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 79 — cover plural mensagens; elos gesto / lingua-portuguesa / sinal se existirem."
     },
@@ -4068,14 +4068,14 @@
       "tipo": "expressao",
       "priority": 2,
       "status": "feita",
-      "why": "Expressões: nome lab do ditado «Deus ajuda quem cedo madruga»; diligência com aurora; elos Faça o melhor!, caminho, jesusamando.",
-      "whyEn": "Sayings: lab name for “Deus ajuda quem cedo madruga”; dawn diligence; links Do your best!, caminho, jesusamando.",
-      "whyEs": "Dichos: nombre lab de «Deus ajuda quem cedo madruga»; diligencia del alba; vínculos ¡Haz lo mejor!, caminho, jesusamando.",
+      "why": "Expressões: nome lab do ditado «Deus ajuda quem cedo madruga»; diligência com aurora; elos Valeu !!!, caminho, jesusamando.",
+      "whyEn": "Sayings: lab name for “Deus ajuda quem cedo madruga”; dawn diligence; links Valeu !!!, caminho, jesusamando.",
+      "whyEs": "Dichos: nombre lab de «Deus ajuda quem cedo madruga»; diligencia del alba; vínculos ¡Valeu !!!, caminho, jesusamando.",
       "suggestedSlug": "inspecao-expressao-duasakdiqujdocedomadur",
       "doneHref": "/posts/post-inspecao-expressao-duasakdiqujdocedomadur.html",
       "seriesHint": "expressoes-ditados",
       "sources": [
-        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-valeu.html",
         "/posts/post-inspecao-palavra-caminho.html",
         "/posts/post-inspecao-expressao-jesusamando.html",
         "/posts/post-inspecao-expressao-meudeusdoceu.html",
@@ -4085,26 +4085,26 @@
     },
     {
       "id": "expressao-muito-obrigado",
-      "title": "muitoobrigado — gratidão reforçada e oralidade BR",
-      "titleEn": "muitoobrigado — reinforced gratitude and Brazilian orality",
-      "titleEs": "muitoobrigado — gratitud reforzada y oralidad BR",
+      "title": "Gratidão — gratidão reforçada e oralidade BR",
+      "titleEn": "Gratidão — reinforced gratitude and Brazilian orality",
+      "titleEs": "Gratidão — gratitud reforzada y oralidad BR",
       "tipo": "expressao",
       "priority": 2,
       "status": "feita",
-      "why": "Expressões: Muito obrigado! / muitoobrigado; gratidão reforçada; étimo obligare × escravidão/cana; elos gesto, valeu, jesusamando.",
-      "whyEn": "Sayings: muito obrigado as one word; reinforced gratitude; links gesture, respect, jesusamando; contrast aff.",
-      "whyEs": "Dichos: muito obrigado pegado; gratitud reforzada; vínculos gesto, respeito, jesusamando; contraste aff.",
+      "why": "Expressões: Gratidão! / Gratidão; gratidão reforçada; étimo obligare × escravidão/cana; elos gesto, valeu, jesusamando.",
+      "whyEn": "Sayings: Gratidão as one word; reinforced gratitude; links gesture, respect, jesusamando; contrast aff.",
+      "whyEs": "Dichos: Gratidão pegado; gratitud reforzada; vínculos gesto, respeito, jesusamando; contraste aff.",
       "suggestedSlug": "inspecao-expressao-muito-obrigado",
-      "doneHref": "/posts/post-inspecao-expressao-muito-obrigado.html",
+      "doneHref": "/posts/post-inspecao-palavra-gratidao.html",
       "seriesHint": "expressoes-ditados",
       "sources": [
         "/posts/post-inspecao-expressao-jesusamando.html",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-respeito.html",
         "/posts/post-inspecao-palavra-aff.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
-      "notes": "Cap. 8 Expressões — gratidão reforçada / muito obrigado → muitoobrigado."
+      "notes": "Cap. 8 Expressões — gratidão reforçada / Gratidão → Gratidão."
     },
     {
       "id": "palavra-escravidao",
@@ -4114,18 +4114,18 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "ideia",
-      "why": "Palavras: escravidão — elo com muitoobrigado (obligare), cana/engenhos e verdade histórica; sem reduzir gratidão a crime.",
-      "whyEn": "Words: slavery — link to muitoobrigado (obligare), cane/mills and historical truth; without reducing gratitude to crime.",
-      "whyEs": "Palabras: esclavitud — vínculo con muitoobrigado (obligare), caña/ingenios y verdad histórica; sin reducir gratitud a crimen.",
+      "why": "Palavras: escravidão — elo com Gratidão (obligare), cana/engenhos e verdade histórica; sem reduzir gratidão a crime.",
+      "whyEn": "Words: slavery — link to Gratidão (obligare), cane/mills and historical truth; without reducing gratitude to crime.",
+      "whyEs": "Palabras: esclavitud — vínculo con Gratidão (obligare), caña/ingenios y verdad histórica; sin reducir gratitud a crimen.",
       "suggestedSlug": "inspecao-palavra-escravidao",
       "seriesHint": "palavras-origem",
       "sources": [
-        "/posts/post-inspecao-expressao-muito-obrigado.html",
+        "/posts/post-inspecao-palavra-gratidao.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
         "/posts/post-inspecao-palavra-lingua-portuguesa.html",
         "/posts/post-inspecao-palavra-verdade.html"
       ],
-      "notes": "Ideia a partir do Cap. 8 Expressões (muitoobrigado × escravidão)."
+      "notes": "Ideia a partir do Cap. 8 Expressões (Gratidão × escravidão)."
     },
     {
       "id": "expressao-eojsofaorforap",
@@ -4145,22 +4145,22 @@
         "/posts/post-inspecao-palavra-verdade.html",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-expressao-ausdhuashduas.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-valeu.html",
         "/posts/post-inspecao-palavra-lingua-portuguesa.html"
       ],
       "notes": "Cap. 10 Expressões — rótulo plano «eu só falo a verdade» → eojsofaorforap."
     },
     {
       "id": "palavra-inspiracao",
-      "title": "Inspiração — sopro, ideia acesa e Faça o melhor!",
-      "titleEn": "Inspiração — breath, lit idea and Do your best!",
-      "titleEs": "Inspiração — aliento, idea encendida y ¡Haz lo mejor!",
+      "title": "Inspiração — sopro, ideia acesa e Valeu !!!",
+      "titleEn": "Inspiração — breath, lit idea and Valeu !!!",
+      "titleEs": "Inspiração — aliento, idea encendida y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: inspiração (lat. īnspīrātiō) — sopro × ideia BR; criatividade/gesto/esperança; Faça o melhor!",
-      "whyEn": "Words: inspiração (Lat. īnspīrātiō) — breath × idea BR; creativity/gesture/hope; Do your best!",
-      "whyEs": "Palabras: inspiração (lat. īnspīrātiō) — aliento × idea BR; creatividad/gesto/esperanza; ¡Haz lo mejor!",
+      "why": "Palavras: inspiração (lat. īnspīrātiō) — sopro × ideia BR; criatividade/gesto/esperança; Valeu !!!",
+      "whyEn": "Words: inspiração (Lat. īnspīrātiō) — breath × idea BR; creativity/gesture/hope; Valeu !!!",
+      "whyEs": "Palabras: inspiração (lat. īnspīrātiō) — aliento × idea BR; creatividad/gesto/esperanza; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-inspiracao",
       "doneHref": "/posts/post-inspecao-palavra-inspiracao.html",
       "seriesHint": "palavras-origem",
@@ -4170,7 +4170,7 @@
         "/posts/post-inspecao-palavra-criatividade.html",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-esperanca.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 84 — sopro vivo; tipografia spnresoarpi → inspiração."
     },
@@ -4182,9 +4182,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: pular (lat. pullāre) — salto × omitir; pulo/pulinho/pulada; passar/backspace/já; Faça o melhor!",
-      "whyEn": "Words: pular (Lat. pullāre) — jump × skip; pulo/pulinho/pulada; passar/backspace/já; Do your best!",
-      "whyEs": "Palabras: pular (lat. pullāre) — salto × omitir; pulo/pulinho/pulada; passar/backspace/já; ¡Haz lo mejor!",
+      "why": "Palavras: pular (lat. pullāre) — salto × omitir; pulo/pulinho/pulada; passar/backspace/já; Valeu !!!",
+      "whyEn": "Words: pular (Lat. pullāre) — jump × skip; pulo/pulinho/pulada; passar/backspace/já; Valeu !!!",
+      "whyEs": "Palabras: pular (lat. pullāre) — salto × omitir; pulo/pulinho/pulada; passar/backspace/já; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-pular",
       "doneHref": "/posts/post-inspecao-palavra-pular.html",
       "seriesHint": "palavras-origem",
@@ -4194,7 +4194,7 @@
         "/posts/post-inspecao-palavra-passar.html",
         "/posts/post-inspecao-palavra-backspace.html",
         "/posts/post-inspecao-palavra-ja.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 85 — inclui derivações; gatilho lab skip inspecao → pular."
     },
@@ -4206,9 +4206,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: interruptor (lat. interrumpere) — peça do circuito; tríade com ligar × desligar e luz; Faça o melhor!",
-      "whyEn": "Words: interruptor (Lat. interrumpere) — circuit device; triad with ligar × desligar and luz; Do your best!",
-      "whyEs": "Palabras: interruptor (lat. interrumpere) — pieza del circuito; tríada con ligar × desligar y luz; ¡Haz lo mejor!",
+      "why": "Palavras: interruptor (lat. interrumpere) — peça do circuito; tríade com ligar × desligar e luz; Valeu !!!",
+      "whyEn": "Words: interruptor (Lat. interrumpere) — circuit device; triad with ligar × desligar and luz; Valeu !!!",
+      "whyEs": "Palabras: interruptor (lat. interrumpere) — pieza del circuito; tríada con ligar × desligar y luz; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-interruptor",
       "doneHref": "/posts/post-inspecao-palavra-interruptor.html",
       "seriesHint": "palavras-origem",
@@ -4220,21 +4220,21 @@
         "/posts/post-inspecao-palavra-sinal.html",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-eletrizante.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 86 — tipografia Imtupidor → interruptor; par lab com ligar × desligar."
     },
     {
       "id": "palavra-sempre",
-      "title": "Sempre — duração, hábito e Faça o melhor!",
-      "titleEn": "Sempre — duration, habit and Do your best!",
-      "titleEs": "Sempre — duración, hábito y ¡Haz lo mejor!",
+      "title": "Sempre — duração, hábito e Valeu !!!",
+      "titleEn": "Sempre — duration, habit and Valeu !!!",
+      "titleEs": "Sempre — duración, hábito y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: sempre (lat. semper) — duração × hábito × promessa; elos já/prosseguir/caminho; Faça o melhor!",
-      "whyEn": "Words: sempre (Lat. semper) — duration × habit × promise; links já/prosseguir/caminho; Do your best!",
-      "whyEs": "Palabras: sempre (lat. semper) — duración × hábito × promesa; vínculos já/prosseguir/caminho; ¡Haz lo mejor!",
+      "why": "Palavras: sempre (lat. semper) — duração × hábito × promessa; elos já/prosseguir/caminho; Valeu !!!",
+      "whyEn": "Words: sempre (Lat. semper) — duration × habit × promise; links já/prosseguir/caminho; Valeu !!!",
+      "whyEs": "Palabras: sempre (lat. semper) — duración × hábito × promesa; vínculos já/prosseguir/caminho; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-sempre",
       "doneHref": "/posts/post-inspecao-palavra-sempre.html",
       "seriesHint": "palavras-origem",
@@ -4243,21 +4243,21 @@
         "/posts/post-inspecao-palavra-ja.html",
         "/posts/post-inspecao-palavra-prosseguir.html",
         "/posts/post-inspecao-palavra-caminho.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 87 — par com prosseguir."
     },
     {
       "id": "palavra-prosseguir",
-      "title": "Prosseguir — continuar, retomar e Faça o melhor!",
-      "titleEn": "Prosseguir — continue, resume and Do your best!",
-      "titleEs": "Prosseguir — continuar, retomar y ¡Haz lo mejor!",
+      "title": "Prosseguir — continuar, retomar e Valeu !!!",
+      "titleEn": "Prosseguir — continue, resume and Valeu !!!",
+      "titleEs": "Prosseguir — continuar, retomar y ¡Valeu !!!",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: prosseguir (lat. prōsequī) — continuar × retomar; prosseguimento; elos sempre/já/caminho; Faça o melhor!",
-      "whyEn": "Words: prosseguir (Lat. prōsequī) — continue × resume; prosseguimento; links sempre/já/caminho; Do your best!",
-      "whyEs": "Palabras: prosseguir (lat. prōsequī) — continuar × retomar; prosseguimento; vínculos sempre/já/caminho; ¡Haz lo mejor!",
+      "why": "Palavras: prosseguir (lat. prōsequī) — continuar × retomar; prosseguimento; elos sempre/já/caminho; Valeu !!!",
+      "whyEn": "Words: prosseguir (Lat. prōsequī) — continue × resume; prosseguimento; links sempre/já/caminho; Valeu !!!",
+      "whyEs": "Palabras: prosseguir (lat. prōsequī) — continuar × retomar; prosseguimento; vínculos sempre/já/caminho; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-prosseguir",
       "doneHref": "/posts/post-inspecao-palavra-prosseguir.html",
       "seriesHint": "palavras-origem",
@@ -4266,7 +4266,7 @@
         "/posts/post-inspecao-palavra-sempre.html",
         "/posts/post-inspecao-palavra-ja.html",
         "/posts/post-inspecao-palavra-caminho.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 88 — tipografia Proceguir → prosseguir; par com sempre."
     },
@@ -4278,20 +4278,20 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: valeu (valer ← lat. valēre) — gratidão leve BR; elos muitoobrigado/gesto/respeito; Faça o melhor!",
-      "whyEn": "Words: valeu (valer ← Lat. valēre) — light BR thanks; links muitoobrigado/gesture/respect; Do your best!",
-      "whyEs": "Palabras: valeu (valer ← lat. valēre) — gratitud ligera BR; vínculos muitoobrigado/gesto/respeito; ¡Haz lo mejor!",
+      "why": "Palavras: valeu (valer ← lat. valēre) — gratidão leve BR; elos Gratidão/gesto/respeito; Valeu !!!",
+      "whyEn": "Words: valeu (valer ← Lat. valēre) — light BR thanks; links Gratidão/gesture/respect; Valeu !!!",
+      "whyEs": "Palabras: valeu (valer ← lat. valēre) — gratitud ligera BR; vínculos Gratidão/gesto/respeito; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-valeu",
       "doneHref": "/posts/post-inspecao-palavra-valeu.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/valer",
-        "/posts/post-inspecao-expressao-muito-obrigado.html",
+        "/posts/post-inspecao-palavra-gratidao.html",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-respeito.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
-      "notes": "Cap. 89 — irmã leve de muitoobrigado."
+      "notes": "Cap. 89 — irmã leve de Gratidão."
     },
     {
       "id": "palavra-daninha",
@@ -4301,9 +4301,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: daninha (dano+-inha) — planta daninha como juízo de lugar; planta/cultivo/selvagem; Faça o melhor!",
-      "whyEn": "Words: daninha (dano+-inha) — weed as place-judgment; planta/cultivo/selvagem; Do your best!",
-      "whyEs": "Palabras: daninha (dano+-inha) — planta daninha como juicio de lugar; planta/cultivo/selvagem; ¡Haz lo mejor!",
+      "why": "Palavras: daninha (dano+-inha) — planta daninha como juízo de lugar; planta/cultivo/selvagem; Valeu !!!",
+      "whyEn": "Words: daninha (dano+-inha) — weed as place-judgment; planta/cultivo/selvagem; Valeu !!!",
+      "whyEs": "Palabras: daninha (dano+-inha) — planta daninha como juicio de lugar; planta/cultivo/selvagem; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-daninha",
       "doneHref": "/posts/post-inspecao-palavra-daninha.html",
       "seriesHint": "palavras-origem",
@@ -4312,7 +4312,7 @@
         "/posts/post-inspecao-palavra-planta.html",
         "/cultivo/",
         "/posts/post-inspecao-palavra-selvagem.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 90 — weed ≠ maconha; juízo relativo ao plano."
     },
@@ -4345,9 +4345,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: cinta (*cingere*) — faixa/suporte; gesto no tutoramento; ≠ sinta; Faça o melhor!",
-      "whyEn": "Words: cinta (*cingere*) — band/support; staking craft; ≠ sinta; Do your best!",
-      "whyEs": "Palabras: cinta (*cingere*) — banda/soporte; oficio de tutorado; ≠ sinta; ¡Haz lo mejor!",
+      "why": "Palavras: cinta (*cingere*) — faixa/suporte; gesto no tutoramento; ≠ sinta; Valeu !!!",
+      "whyEn": "Words: cinta (*cingere*) — band/support; staking craft; ≠ sinta; Valeu !!!",
+      "whyEs": "Palabras: cinta (*cingere*) — banda/soporte; oficio de tutorado; ≠ sinta; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-cinta",
       "doneHref": "/posts/post-inspecao-palavra-cinta.html",
       "seriesHint": "palavras-origem",
@@ -4355,7 +4355,7 @@
         "https://pt.wiktionary.org/wiki/cinta",
         "/posts/post-inspecao-palavra-gesto.html",
         "/cultivo/",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 92 — ≠ cinta ID (amor); folga no aperto."
     },
@@ -4367,9 +4367,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: cinzeiro (cinza+-eiro) — recipiente/monte; fogo/gesto/risco; Faça o melhor!",
-      "whyEn": "Words: cinzeiro (cinza+-eiro) — ashtray/heap; fogo/gesto/risco; Do your best!",
-      "whyEs": "Palabras: cinzeiro (cinza+-eiro) — cenicero/montón; fogo/gesto/risco; ¡Haz lo mejor!",
+      "why": "Palavras: cinzeiro (cinza+-eiro) — recipiente/monte; fogo/gesto/risco; Valeu !!!",
+      "whyEn": "Words: cinzeiro (cinza+-eiro) — ashtray/heap; fogo/gesto/risco; Valeu !!!",
+      "whyEs": "Palabras: cinzeiro (cinza+-eiro) — cenicero/montón; fogo/gesto/risco; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-cinzeiro",
       "doneHref": "/posts/post-inspecao-palavra-cinzeiro.html",
       "seriesHint": "palavras-origem",
@@ -4377,7 +4377,7 @@
         "https://pt.wiktionary.org/wiki/cinzeiro",
         "/posts/post-inspecao-palavra-fogo.html",
         "/posts/post-inspecao-palavra-gesto.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 93 — grafia canónica cinzeiro (pedido Cinzerio)."
     },
@@ -4389,9 +4389,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: objetos (lat. obiectum) — plural; meta-lab do objeto inspecionado; Faça o melhor!",
-      "whyEn": "Words: objetos (Lat. obiectum) — plural; meta-lab inspected object; Do your best!",
-      "whyEs": "Palabras: objetos (lat. obiectum) — plural; meta-lab del objeto inspeccionado; ¡Haz lo mejor!",
+      "why": "Palavras: objetos (lat. obiectum) — plural; meta-lab do objeto inspecionado; Valeu !!!",
+      "whyEn": "Words: objetos (Lat. obiectum) — plural; meta-lab inspected object; Valeu !!!",
+      "whyEs": "Palabras: objetos (lat. obiectum) — plural; meta-lab del objeto inspeccionado; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-objetos",
       "doneHref": "/posts/post-inspecao-palavra-objetos.html",
       "seriesHint": "palavras-origem",
@@ -4399,7 +4399,7 @@
         "https://pt.wiktionary.org/wiki/objeto",
         "/posts/post-inspecao-palavra-verdade.html",
         "/posts/post-inspecao-palavra-caminho.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 94 — um objeto por ficha; plural pede ordem."
     },
@@ -4411,9 +4411,9 @@
       "tipo": "guia",
       "priority": 2,
       "status": "feita",
-      "why": "Oito tisanas de ofício com elos Plantas + manual de chá; Faça o melhor!",
-      "whyEn": "Eight craft herbal teas linked to Plants + tea manual; Do your best!",
-      "whyEs": "Ocho tisanas de oficio con vínculos Plantas + manual de té; ¡Haz lo mejor!",
+      "why": "Oito tisanas de ofício com elos Plantas + manual de chá; Valeu !!!",
+      "whyEn": "Eight craft herbal teas linked to Plants + tea manual; Valeu !!!",
+      "whyEs": "Ocho tisanas de oficio con vínculos Plantas + manual de té; ¡Valeu !!!",
       "suggestedSlug": "inspecao-guia-receitas-plantas",
       "doneHref": "/posts/post-inspecao-guia-receitas-plantas.html",
       "seriesHint": "palavras-origem",
@@ -4432,9 +4432,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: insana (in-+sanus) — intensidade BR; ≠ diagnóstico; verdade/respeito; Faça o melhor!",
-      "whyEn": "Words: insana (in-+sanus) — BR intensity; ≠ diagnosis; truth/respect; Do your best!",
-      "whyEs": "Palabras: insana (in-+sanus) — intensidad BR; ≠ diagnóstico; verdad/respeto; ¡Haz lo mejor!",
+      "why": "Palavras: insana (in-+sanus) — intensidade BR; ≠ diagnóstico; verdade/respeito; Valeu !!!",
+      "whyEn": "Words: insana (in-+sanus) — BR intensity; ≠ diagnosis; truth/respect; Valeu !!!",
+      "whyEs": "Palabras: insana (in-+sanus) — intensidad BR; ≠ diagnóstico; verdad/respeto; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-insana",
       "doneHref": "/posts/post-inspecao-palavra-insana.html",
       "seriesHint": "palavras-origem",
@@ -4442,7 +4442,7 @@
         "https://pt.wiktionary.org/wiki/insano",
         "/posts/post-inspecao-palavra-verdade.html",
         "/posts/post-inspecao-palavra-respeito.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 96 — hipérbole ≠ insulto ≠ clínica."
     },
@@ -4454,9 +4454,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: sugestão (lat. suggestio) — propor; meta-lab da fila; Faça o melhor!",
-      "whyEn": "Words: sugestão (Lat. suggestio) — propose; meta-lab queue; Do your best!",
-      "whyEs": "Palabras: sugestão (lat. suggestio) — proponer; meta-lab de cola; ¡Haz lo mejor!",
+      "why": "Palavras: sugestão (lat. suggestio) — propor; meta-lab da fila; Valeu !!!",
+      "whyEn": "Words: sugestão (Lat. suggestio) — propose; meta-lab queue; Valeu !!!",
+      "whyEs": "Palabras: sugestão (lat. suggestio) — proponer; meta-lab de cola; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-sugestao",
       "doneHref": "/posts/post-inspecao-palavra-sugestao.html",
       "seriesHint": "palavras-origem",
@@ -4464,7 +4464,7 @@
         "https://pt.wiktionary.org/wiki/sugest%C3%A3o",
         "/posts/post-inspecao-palavra-mensagem.html",
         "/posts/post-inspecao-palavra-objetos.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 97 — proposta ≠ ordem; fila editorial."
     },
@@ -4476,9 +4476,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: tudo (totus) — totalidade/essencial; elos objetos/alma; Faça o melhor!",
-      "whyEn": "Words: tudo (totus) — totality/essential; links objetos/alma; Do your best!",
-      "whyEs": "Palabras: tudo (totus) — totalidad/esencial; vínculos objetos/alma; ¡Haz lo mejor!",
+      "why": "Palavras: tudo (totus) — totalidade/essencial; elos objetos/alma; Valeu !!!",
+      "whyEn": "Words: tudo (totus) — totality/essential; links objetos/alma; Valeu !!!",
+      "whyEs": "Palabras: tudo (totus) — totalidad/esencial; vínculos objetos/alma; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-tudo",
       "doneHref": "/posts/post-inspecao-palavra-tudo.html",
       "seriesHint": "palavras-origem",
@@ -4496,9 +4496,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: alma (anima) — centro vivo; chegar na alma; elos tudo/coração/vida; Faça o melhor!",
-      "whyEn": "Words: alma (anima) — living center; reaching the soul; links tudo/coração/vida; Do your best!",
-      "whyEs": "Palabras: alma (anima) — centro vivo; llegar al alma; vínculos tudo/corazón/vida; ¡Haz lo mejor!",
+      "why": "Palavras: alma (anima) — centro vivo; chegar na alma; elos tudo/coração/vida; Valeu !!!",
+      "whyEn": "Words: alma (anima) — living center; reaching the soul; links tudo/coração/vida; Valeu !!!",
+      "whyEs": "Palabras: alma (anima) — centro vivo; llegar al alma; vínculos tudo/corazón/vida; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-alma",
       "doneHref": "/posts/post-inspecao-palavra-alma.html",
       "seriesHint": "palavras-origem",
@@ -4517,9 +4517,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: nap (EN) — cochilo/power nap; gesto/alma/vida; Faça o melhor!",
-      "whyEn": "Words: nap (EN) — short sleep/power nap; gesto/alma/vida; Do your best!",
-      "whyEs": "Palabras: nap (EN) — siesta corta/power nap; gesto/alma/vida; ¡Haz lo mejor!",
+      "why": "Palavras: nap (EN) — cochilo/power nap; gesto/alma/vida; Valeu !!!",
+      "whyEn": "Words: nap (EN) — short sleep/power nap; gesto/alma/vida; Valeu !!!",
+      "whyEs": "Palabras: nap (EN) — siesta corta/power nap; gesto/alma/vida; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-nap",
       "doneHref": "/posts/post-inspecao-palavra-nap.html",
       "seriesHint": "palavras-origem",
@@ -4538,9 +4538,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: pedi a mão (pedimao) — ajuda ou compromisso; mãos/gesto/respeito; Faça o melhor!",
-      "whyEn": "Words: pedi a mão (pedimao) — help or commitment; hands/gesture/respect; Do your best!",
-      "whyEs": "Palabras: pedi a mão (pedimao) — ayuda o compromiso; manos/gesto/respeto; ¡Haz lo mejor!",
+      "why": "Palavras: pedi a mão (pedimao) — ajuda ou compromisso; mãos/gesto/respeito; Valeu !!!",
+      "whyEn": "Words: pedi a mão (pedimao) — help or commitment; hands/gesture/respect; Valeu !!!",
+      "whyEs": "Palabras: pedi a mão (pedimao) — ayuda o compromiso; manos/gesto/respeto; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-pedi-mao",
       "doneHref": "/posts/post-inspecao-palavra-pedi-mao.html",
       "seriesHint": "palavras-origem",
@@ -4548,7 +4548,7 @@
         "https://pt.wiktionary.org/wiki/m%C3%A3o",
         "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
         "/posts/post-inspecao-palavra-gesto.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 101 — uma mão = ajuda; a mão = compromisso."
     },
@@ -4560,9 +4560,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: pattern (EN) — molde/padrão/design pattern; gesto/caminho/risco; Faça o melhor!",
-      "whyEn": "Words: pattern (EN) — mold/template/design pattern; gesto/caminho/risco; Do your best!",
-      "whyEs": "Palabras: pattern (EN) — molde/plantilla/design pattern; gesto/caminho/risco; ¡Haz lo mejor!",
+      "why": "Palavras: pattern (EN) — molde/padrão/design pattern; gesto/caminho/risco; Valeu !!!",
+      "whyEn": "Words: pattern (EN) — mold/template/design pattern; gesto/caminho/risco; Valeu !!!",
+      "whyEs": "Palabras: pattern (EN) — molde/plantilla/design pattern; gesto/caminho/risco; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-pattern",
       "doneHref": "/posts/post-inspecao-palavra-pattern.html",
       "seriesHint": "palavras-origem",
@@ -4570,7 +4570,7 @@
         "https://en.wiktionary.org/wiki/pattern",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-caminho.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 102 — loan EN; padrão PT em texto formal."
     },
@@ -4582,9 +4582,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: patrão — chefe/empregador (patronus); respeito/pattern/gesto; Faça o melhor!",
-      "whyEn": "Words: patrão — boss/employer (patronus); respeito/pattern/gesto; Do your best!",
-      "whyEs": "Palabras: patrão — jefe/empleador (patronus); respeito/pattern/gesto; ¡Haz lo mejor!",
+      "why": "Palavras: patrão — chefe/empregador (patronus); respeito/pattern/gesto; Valeu !!!",
+      "whyEn": "Words: patrão — boss/employer (patronus); respeito/pattern/gesto; Valeu !!!",
+      "whyEs": "Palabras: patrão — jefe/empleador (patronus); respeito/pattern/gesto; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-patrao",
       "doneHref": "/posts/post-inspecao-palavra-patrao.html",
       "seriesHint": "palavras-origem",
@@ -4592,7 +4592,7 @@
         "https://pt.wiktionary.org/wiki/patr%C3%A3o",
         "/posts/post-inspecao-palavra-pattern.html",
         "/posts/post-inspecao-palavra-respeito.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 103 — mesma raiz que pattern/padrão."
     },
@@ -4626,7 +4626,7 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: puta — putta; pejorativo/intensificador; elos pariu/PQP/respeito; Faça o melhor!",
+      "why": "Palavras: puta — putta; pejorativo/intensificador; elos pariu/PQP/respeito; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-puta",
       "doneHref": "/posts/post-inspecao-palavra-puta.html",
       "seriesHint": "palavras-origem",
@@ -4644,7 +4644,7 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: pariu — pariō/parir; peça de PQP; Faça o melhor!",
+      "why": "Palavras: pariu — pariō/parir; peça de PQP; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-pariu",
       "doneHref": "/posts/post-inspecao-palavra-pariu.html",
       "seriesHint": "palavras-origem",
@@ -4662,7 +4662,7 @@
       "tipo": "expressao",
       "priority": 1,
       "status": "feita",
-      "why": "Expressões: PQP — pico BR; peças puta+pariu; respeito; Faça o melhor!",
+      "why": "Expressões: PQP — pico BR; peças puta+pariu; respeito; Valeu !!!",
       "suggestedSlug": "inspecao-expressao-puta-que-pariu",
       "doneHref": "/posts/post-inspecao-expressao-puta-que-pariu.html",
       "seriesHint": "expressoes-ditados",
@@ -4681,9 +4681,9 @@
       "tipo": "palavra",
       "priority": 1,
       "status": "feita",
-      "why": "Palavras: EXIT (lat. exīre/exitus) — saída/quit/teatro; no lab, salvação = sair do aperto; caminho/risco/alma; Faça o melhor!",
-      "whyEn": "Words: EXIT (Lat. exīre/exitus) — exit/quit/theatre; lab salvation = leaving the squeeze; caminho/risco/alma; Do your best!",
-      "whyEs": "Palabras: EXIT (lat. exīre/exitus) — salida/quit/teatro; salvación lab = salir del aprieto; caminho/risco/alma; ¡Haz lo mejor!",
+      "why": "Palavras: EXIT (lat. exīre/exitus) — saída/quit/teatro; no lab, salvação = sair do aperto; caminho/risco/alma; Valeu !!!",
+      "whyEn": "Words: EXIT (Lat. exīre/exitus) — exit/quit/theatre; lab salvation = leaving the squeeze; caminho/risco/alma; Valeu !!!",
+      "whyEs": "Palabras: EXIT (lat. exīre/exitus) — salida/quit/teatro; salvación lab = salir del aprieto; caminho/risco/alma; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-exit",
       "doneHref": "/posts/post-inspecao-palavra-exit.html",
       "seriesHint": "palavras-origem",
@@ -4691,7 +4691,7 @@
         "https://en.wiktionary.org/wiki/exit",
         "/posts/post-inspecao-palavra-caminho.html",
         "/posts/post-inspecao-palavra-alma.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 106 — «essa é a salvação»; ofício sem sermão."
     },
@@ -4703,9 +4703,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: pato (árabe-hispânico) — ave, pagar o pato, jambu/tucupi; animal/água/coelho; Faça o melhor!",
-      "whyEn": "Words: pato (Arabic-Hispanic) — bird, take the blame, jambu/tucupi; animal/água/coelho; Do your best!",
-      "whyEs": "Palabras: pato (árabe-hispánico) — ave, pagar el pato, jambu/tucupi; animal/água/coelho; ¡Haz lo mejor!",
+      "why": "Palavras: pato (árabe-hispânico) — ave, pagar o pato, jambu/tucupi; animal/água/coelho; Valeu !!!",
+      "whyEn": "Words: pato (Arabic-Hispanic) — bird, take the blame, jambu/tucupi; animal/água/coelho; Valeu !!!",
+      "whyEs": "Palabras: pato (árabe-hispánico) — ave, pagar el pato, jambu/tucupi; animal/água/coelho; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-pato",
       "doneHref": "/posts/post-inspecao-palavra-pato.html",
       "seriesHint": "palavras-origem",
@@ -4715,7 +4715,7 @@
         "/posts/post-inspecao-palavra-agua.html",
         "/posts/post-inspecao-palavra-coelho.html",
         "/posts/post-inspecao-planta-jambu.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 107 — ave ≠ gíria; étimo árabe ≠ lat. anas."
     },
@@ -4727,9 +4727,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: tempo (lat. tempus) — cronologia/clima/compasso; kairós × chronos; sempre/passado/vida/alma; Faça o melhor!",
-      "whyEn": "Words: tempo (Lat. tempus) — chronology/weather/beat; kairós × chronos; sempre/passado/vida/alma; Do your best!",
-      "whyEs": "Palabras: tempo (lat. tempus) — cronología/clima/compás; kairós × chronos; sempre/passado/vida/alma; ¡Haz lo mejor!",
+      "why": "Palavras: tempo (lat. tempus) — cronologia/clima/compasso; kairós × chronos; sempre/passado/vida/alma; Valeu !!!",
+      "whyEn": "Words: tempo (Lat. tempus) — chronology/weather/beat; kairós × chronos; sempre/passado/vida/alma; Valeu !!!",
+      "whyEs": "Palabras: tempo (lat. tempus) — cronología/clima/compás; kairós × chronos; sempre/passado/vida/alma; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-tempo",
       "doneHref": "/posts/post-inspecao-palavra-tempo.html",
       "seriesHint": "palavras-origem",
@@ -4737,7 +4737,7 @@
         "https://pt.wiktionary.org/wiki/tempo",
         "/posts/post-inspecao-palavra-sempre.html",
         "/posts/post-inspecao-palavra-passado.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 107 — cronos/clima/compasso/posse; kairós comparação sem linhagem."
     },
@@ -4749,9 +4749,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: perseguição (lat. persequī) — caça/opressão/obsessão; contraste prosseguir; caminho/risco/EXIT; Faça o melhor!",
-      "whyEn": "Words: perseguição (Lat. persequī) — chase/oppression/obsession; contrast prosseguir; caminho/risco/EXIT; Do your best!",
-      "whyEs": "Palabras: perseguição (lat. persequī) — caza/opresión/obsesión; contraste prosseguir; caminho/risco/EXIT; ¡Haz lo mejor!",
+      "why": "Palavras: perseguição (lat. persequī) — caça/opressão/obsessão; contraste prosseguir; caminho/risco/EXIT; Valeu !!!",
+      "whyEn": "Words: perseguição (Lat. persequī) — chase/oppression/obsession; contrast prosseguir; caminho/risco/EXIT; Valeu !!!",
+      "whyEs": "Palabras: perseguição (lat. persequī) — caza/opresión/obsesión; contraste prosseguir; caminho/risco/EXIT; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-perseguicao",
       "doneHref": "/posts/post-inspecao-palavra-perseguicao.html",
       "seriesHint": "palavras-origem",
@@ -4761,7 +4761,7 @@
         "/posts/post-inspecao-palavra-caminho.html",
         "/posts/post-inspecao-palavra-risco.html",
         "/posts/post-inspecao-palavra-exit.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 108 — per- ≠ pro-; palavra ≠ relatório clínico."
     },
@@ -4773,9 +4773,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: «meneia» / menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto e mãos; Faça o melhor!",
-      "whyEn": "Words: “meneia” / menear (*manear* ← hand) — body sway and craft; links gesto and mãos; Do your best!",
-      "whyEs": "Palabras: «meneia» / menear (*manear* ← mano) — balanceo del cuerpo y oficio; vínculos gesto y mãos; ¡Haz lo mejor!",
+      "why": "Palavras: «meneia» / menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto e mãos; Valeu !!!",
+      "whyEn": "Words: “meneia” / menear (*manear* ← hand) — body sway and craft; links gesto and mãos; Valeu !!!",
+      "whyEs": "Palabras: «meneia» / menear (*manear* ← mano) — balanceo del cuerpo y oficio; vínculos gesto y mãos; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-meneia",
       "doneHref": "/posts/post-inspecao-palavra-meneia.html",
       "seriesHint": "palavras-origem",
@@ -4784,7 +4784,7 @@
         "https://www.aulete.com.br/menear",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Forma viva de menear; irmã rítmica de gesto."
     },
@@ -4865,9 +4865,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: mãe (lat. mater) — origem/cuidado; tipografia fia → mãe; fia NE (= filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor!",
-      "whyEn": "Words: mãe (Lat. mater) — origin/care; tipography fia → mãe; NE fia (= daughter) ≠ mother; Dona Maria/alma; Do your best!",
-      "whyEs": "Palabras: mãe (lat. mater) — origen/cuidado; tipografía fia → mãe; fia NE (= hija) ≠ madre; Dona Maria/alma; ¡Haz lo mejor!",
+      "why": "Palavras: mãe (lat. mater) — origem/cuidado; tipografia fia → mãe; fia NE (= filha) ≠ mãe; elos Dona Maria/alma; Valeu !!!",
+      "whyEn": "Words: mãe (Lat. mater) — origin/care; tipography fia → mãe; NE fia (= daughter) ≠ mother; Dona Maria/alma; Valeu !!!",
+      "whyEs": "Palabras: mãe (lat. mater) — origen/cuidado; tipografía fia → mãe; fia NE (= hija) ≠ madre; Dona Maria/alma; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-mae",
       "doneHref": "/posts/post-inspecao-palavra-mae.html",
       "seriesHint": "palavras-origem",
@@ -4875,7 +4875,7 @@
         "https://pt.wiktionary.org/wiki/m%C3%A3e",
         "/posts/post-inspecao-personagem-dona-maria.html",
         "/posts/post-inspecao-palavra-alma.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 111 — tipografia fia → mãe; oral NE fia ≠ mãe."
     },
@@ -4896,8 +4896,8 @@
       "sources": [
         "/posts/post-inspecao-expressao-jesusamando.html",
         "/posts/post-inspecao-expressao-filho-de-deus.html",
-        "/posts/post-inspecao-expressao-muito-obrigado.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-gratidao.html",
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 11 Expressões — tipografia Deus Abenço → Deus abençoe; ficha ≠ catecismo."
     },
@@ -4919,7 +4919,7 @@
         "/posts/post-inspecao-expressao-deus-abencoe.html",
         "/posts/post-inspecao-expressao-filho-de-deus.html",
         "/posts/post-inspecao-palavra-mensagem.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 12 Expressões — tipografia dois pouvi → dois ouvidos; ficha ≠ sermão."
     },
@@ -4931,9 +4931,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: Grok (Heinlein to grok) — compreensão íntima × tom de ofício; relação de forma de se expressar com Deus; Faça o melhor!",
-      "whyEn": "Words: Grok (Heinlein to grok) — deep understanding × craft tone; expression link to Deus; Do your best!",
-      "whyEs": "Palabras: Grok (Heinlein to grok) — comprensión íntima × tono de oficio; vínculo de expresión con Deus; ¡Haz lo mejor!",
+      "why": "Palavras: Grok (Heinlein to grok) — compreensão íntima × tom de ofício; relação de forma de se expressar com Deus; Valeu !!!",
+      "whyEn": "Words: Grok (Heinlein to grok) — deep understanding × craft tone; expression link to Deus; Valeu !!!",
+      "whyEs": "Palabras: Grok (Heinlein to grok) — comprensión íntima × tono de oficio; vínculo de expresión con Deus; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-grok",
       "doneHref": "/posts/post-inspecao-palavra-grok.html",
       "seriesHint": "palavras-origem",
@@ -4944,7 +4944,7 @@
         "/posts/post-inspecao-expressao-filho-de-deus.html",
         "/posts/post-inspecao-expressao-meudeusdoceu.html",
         "/posts/post-inspecao-expressao-jesusamando.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 112 — grock→Grok; relacionar Deus×Grok na forma de se expressar; ficha ≠ catecismo."
     },
@@ -4956,9 +4956,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: ligar × desligar (lat. ligare) — verbos do circuito; tríade com interruptor e luz; Faça o melhor!",
-      "whyEn": "Words: ligar × desligar (Lat. ligare) — circuit verbs; triad with interruptor and luz; Do your best!",
-      "whyEs": "Palabras: ligar × desligar (lat. ligare) — verbos del circuito; tríada con interruptor y luz; ¡Haz lo mejor!",
+      "why": "Palavras: ligar × desligar (lat. ligare) — verbos do circuito; tríade com interruptor e luz; Valeu !!!",
+      "whyEn": "Words: ligar × desligar (Lat. ligare) — circuit verbs; triad with interruptor and luz; Valeu !!!",
+      "whyEs": "Palabras: ligar × desligar (lat. ligare) — verbos del circuito; tríada con interruptor y luz; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-ligar-desligar",
       "doneHref": "/posts/post-inspecao-palavra-ligar-desligar.html",
       "seriesHint": "palavras-origem",
@@ -4969,7 +4969,7 @@
         "/posts/post-inspecao-palavra-luz.html",
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-sinal.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 113 — par lab verbal do interruptor (peça × gesto)."
     },
@@ -5094,9 +5094,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: luz (lat. lux) — claridade e efeito do clique; tríade circuito + sol; cultivo; Faça o melhor!",
-      "whyEn": "Words: luz (Lat. lux) — clarity and click effect; circuit triad + sol; grow; Do your best!",
-      "whyEs": "Palabras: luz (lat. lux) — claridad y efecto del clic; tríada circuito + sol; cultivo; ¡Haz lo mejor!",
+      "why": "Palavras: luz (lat. lux) — claridade e efeito do clique; tríade circuito + sol; cultivo; Valeu !!!",
+      "whyEn": "Words: luz (Lat. lux) — clarity and click effect; circuit triad + sol; grow; Valeu !!!",
+      "whyEs": "Palabras: luz (lat. lux) — claridad y efecto del clic; tríada circuito + sol; cultivo; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-luz",
       "doneHref": "/posts/post-inspecao-palavra-luz.html",
       "seriesHint": "palavras-origem",
@@ -5108,7 +5108,7 @@
         "/posts/post-inspecao-palavra-sol.html",
         "/posts/post-inspecao-palavra-noite.html",
         "/posts/post-inspecao-palavra-fogo.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 116 — tríade circuito: peça × verbo × efeito (luz)."
     },
@@ -5120,9 +5120,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: sol (lat. sol) — astro e luz natural; elo luz; contraste interruptor; ≠ solitário; Faça o melhor!",
-      "whyEn": "Words: sol (Lat. sol) — star and natural light; link luz; contrast interruptor; ≠ solitário; Do your best!",
-      "whyEs": "Palabras: sol (lat. sol) — astro y luz natural; vínculo luz; contraste interruptor; ≠ solitário; ¡Haz lo mejor!",
+      "why": "Palavras: sol (lat. sol) — astro e luz natural; elo luz; contraste interruptor; ≠ solitário; Valeu !!!",
+      "whyEn": "Words: sol (Lat. sol) — star and natural light; link luz; contrast interruptor; ≠ solitário; Valeu !!!",
+      "whyEs": "Palabras: sol (lat. sol) — astro y luz natural; vínculo luz; contraste interruptor; ≠ solitário; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-sol",
       "doneHref": "/posts/post-inspecao-palavra-sol.html",
       "seriesHint": "palavras-origem",
@@ -5134,7 +5134,7 @@
         "/posts/post-inspecao-palavra-interruptor.html",
         "/posts/post-inspecao-palavra-fogo.html",
         "/posts/post-inspecao-palavra-solitario.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 117 — fonte natural vs luz de circuito; ≠ solitário."
     },
@@ -5169,9 +5169,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: noite (lat. nox) — fase escura do ciclo; par com sol; elos luz e interruptor; cultivo; Faça o melhor!",
-      "whyEn": "Words: noite (Lat. nox) — dark phase of the cycle; pair with sol; links luz and interruptor; grow; Do your best!",
-      "whyEs": "Palabras: noite (lat. nox) — fase oscura del ciclo; par con sol; vínculos luz e interruptor; cultivo; ¡Haz lo mejor!",
+      "why": "Palavras: noite (lat. nox) — fase escura do ciclo; par com sol; elos luz e interruptor; cultivo; Valeu !!!",
+      "whyEn": "Words: noite (Lat. nox) — dark phase of the cycle; pair with sol; links luz and interruptor; grow; Valeu !!!",
+      "whyEs": "Palabras: noite (lat. nox) — fase oscura del ciclo; par con sol; vínculos luz e interruptor; cultivo; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-noite",
       "doneHref": "/posts/post-inspecao-palavra-noite.html",
       "seriesHint": "palavras-origem",
@@ -5181,7 +5181,7 @@
         "/posts/post-inspecao-palavra-sol.html",
         "/posts/post-inspecao-palavra-luz.html",
         "/posts/post-inspecao-palavra-interruptor.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 118 — par sol × noite; fotoperíodo; circuito artificial."
     },
@@ -5193,9 +5193,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: sozinho (lat. solus + -zinho) — par sozinha; forma oral sozna; ≠ solitário; Faça o melhor!",
-      "whyEn": "Words: sozinho (Lat. solus + -zinho) — pair sozinha; oral sozna; ≠ solitário; Do your best!",
-      "whyEs": "Palabras: sozinho (lat. solus + -zinho) — par sozinha; oral sozna; ≠ solitário; ¡Haz lo mejor!",
+      "why": "Palavras: sozinho (lat. solus + -zinho) — par sozinha; forma oral sozna; ≠ solitário; Valeu !!!",
+      "whyEn": "Words: sozinho (Lat. solus + -zinho) — pair sozinha; oral sozna; ≠ solitário; Valeu !!!",
+      "whyEs": "Palabras: sozinho (lat. solus + -zinho) — par sozinha; oral sozna; ≠ solitário; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-sozna",
       "doneHref": "/posts/post-inspecao-palavra-sozna.html",
       "seriesHint": "palavras-origem",
@@ -5203,7 +5203,7 @@
         "https://pt.wiktionary.org/wiki/sozinho",
         "https://pt.wiktionary.org/wiki/s%C3%B3",
         "/posts/post-inspecao-palavra-solitario.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 119 — lemma sozinho; par sozinha; forma oral sozna."
     },
@@ -5795,9 +5795,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: Jobs — EN jobs (trabalhos) × Steve Jobs no BR; anti-culto de fundador; elos skill/ídolo/criatividade; Faça o melhor!",
-      "whyEn": "Words: Jobs — EN jobs (work) × Steve Jobs in BR; anti-founder cult; links skill/ídolo/criatividade; Do your best!",
-      "whyEs": "Palabras: Jobs — EN jobs (trabajos) × Steve Jobs en BR; anti-culto de fundador; vínculos skill/ídolo/criatividade; ¡Haz lo mejor!",
+      "why": "Palavras: Jobs — EN jobs (trabalhos) × Steve Jobs no BR; anti-culto de fundador; elos skill/ídolo/criatividade; Valeu !!!",
+      "whyEn": "Words: Jobs — EN jobs (work) × Steve Jobs in BR; anti-founder cult; links skill/ídolo/criatividade; Valeu !!!",
+      "whyEs": "Palabras: Jobs — EN jobs (trabajos) × Steve Jobs en BR; anti-culto de fundador; vínculos skill/ídolo/criatividade; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-jobs",
       "doneHref": "/posts/post-inspecao-palavra-jobs.html",
       "seriesHint": "palavras-origem",
@@ -5808,7 +5808,7 @@
         "/posts/post-inspecao-palavra-skill.html",
         "/posts/post-inspecao-palavra-idolo.html",
         "/posts/post-inspecao-palavra-criatividade.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 120 — jobs EN × Jobs BR; ficha ≠ biografia; anti-pedestal; elos skill/ídolo."
     },
@@ -5843,9 +5843,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: abracadabra (âncora) × abacadabra (oral); amuleto × palco × anti-atalho; elos gesto/skill/verdade; Faça o melhor!",
-      "whyEn": "Words: abracadabra (anchor) × abacadabra (oral); amulet × stage × anti-shortcut; links gesture/skill/truth; Do your best!",
-      "whyEs": "Palabras: abracadabra (ancla) × abacadabra (oral); amuleto × escenario × anti-atajo; vínculos gesto/skill/verdad; ¡Haz lo mejor!",
+      "why": "Palavras: abracadabra (âncora) × abacadabra (oral); amuleto × palco × anti-atalho; elos gesto/skill/verdade; Valeu !!!",
+      "whyEn": "Words: abracadabra (anchor) × abacadabra (oral); amulet × stage × anti-shortcut; links gesture/skill/truth; Valeu !!!",
+      "whyEs": "Palabras: abracadabra (ancla) × abacadabra (oral); amuleto × escenario × anti-atajo; vínculos gesto/skill/verdad; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-abracadabra",
       "doneHref": "/posts/post-inspecao-palavra-abracadabra.html",
       "seriesHint": "palavras-origem",
@@ -5856,7 +5856,7 @@
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-palavra-skill.html",
         "/posts/post-inspecao-palavra-verdade.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 121 — âncora abracadabra; alias abacadabra; ficha ≠ grimório."
     },
@@ -5868,9 +5868,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: gêmeos (geminus) ≠ gênio (genius); signo Gemini; ≠ lâmpada de Aladim; elos relação/genial; Faça o melhor!",
-      "whyEn": "Words: gêmeos (geminus) ≠ gênio (genius); Gemini sign; ≠ Aladdin lamp; links relação/genial; Do your best!",
-      "whyEs": "Palabras: gêmeos (geminus) ≠ gênio (genius); signo Gemini; ≠ lámpara de Aladino; vínculos relação/genial; ¡Haz lo mejor!",
+      "why": "Palavras: gêmeos (geminus) ≠ gênio (genius); signo Gemini; ≠ lâmpada de Aladim; elos relação/genial; Valeu !!!",
+      "whyEn": "Words: gêmeos (geminus) ≠ gênio (genius); Gemini sign; ≠ Aladdin lamp; links relação/genial; Valeu !!!",
+      "whyEs": "Palabras: gêmeos (geminus) ≠ gênio (genius); signo Gemini; ≠ lámpara de Aladino; vínculos relação/genial; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-gemeos",
       "doneHref": "/posts/post-inspecao-palavra-gemeos.html",
       "seriesHint": "palavras-origem",
@@ -5880,7 +5880,7 @@
         "/posts/post-inspecao-palavra-genial.html",
         "/posts/post-inspecao-palavra-abracadabra.html",
         "/posts/post-inspecao-palavra-relacao.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 122 — geminus ≠ genius; alias gemeos/gemini; ficha ≠ horóscopo."
     },
@@ -5892,16 +5892,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: lâmpada (lampas) = vaso; lampada = boca; génio = inquilino; ≠ gêmeos; elos luz/esfregar/desejos; Faça o melhor!",
-      "whyEn": "Palavras: lâmpada (lampas) = vaso; lampada = boca; génio = inquilino; ≠ gêmeos; elos luz/esfregar/desejos; Faça o melhor!",
-      "whyEs": "Palavras: lâmpada (lampas) = vaso; lampada = boca; génio = inquilino; ≠ gêmeos; elos luz/esfregar/desejos; Faça o melhor!",
+      "why": "Palavras: lâmpada (lampas) = vaso; lampada = boca; génio = inquilino; ≠ gêmeos; elos luz/esfregar/desejos; Valeu !!!",
+      "whyEn": "Palavras: lâmpada (lampas) = vaso; lampada = boca; génio = inquilino; ≠ gêmeos; elos luz/esfregar/desejos; Valeu !!!",
+      "whyEs": "Palavras: lâmpada (lampas) = vaso; lampada = boca; génio = inquilino; ≠ gêmeos; elos luz/esfregar/desejos; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-lampada",
       "doneHref": "/posts/post-inspecao-palavra-lampada.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/l%C3%A2mpada",
         "/posts/post-inspecao-palavra-lampada.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 123 — cluster Aladim / lâmpada."
     },
@@ -5913,16 +5913,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: esfregar (*fricare*) — cue táctil do conto ≠ ligar; elos lâmpada/gesto/desejos; Faça o melhor nesta palma.",
-      "whyEn": "Palavras: esfregar (*fricare*) — cue táctil do conto ≠ ligar; elos lâmpada/gesto/desejos; Faça o melhor nesta palma.",
-      "whyEs": "Palavras: esfregar (*fricare*) — cue táctil do conto ≠ ligar; elos lâmpada/gesto/desejos; Faça o melhor nesta palma.",
+      "why": "Palavras: esfregar (*fricare*) — cue táctil do conto ≠ ligar; elos lâmpada/gesto/desejos; Valeu !!! nesta palma.",
+      "whyEn": "Palavras: esfregar (*fricare*) — cue táctil do conto ≠ ligar; elos lâmpada/gesto/desejos; Valeu !!! nesta palma.",
+      "whyEs": "Palavras: esfregar (*fricare*) — cue táctil do conto ≠ ligar; elos lâmpada/gesto/desejos; Valeu !!! nesta palma.",
       "suggestedSlug": "inspecao-palavra-esfregar",
       "doneHref": "/posts/post-inspecao-palavra-esfregar.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/esfregar",
         "/posts/post-inspecao-palavra-lampada.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 124 — cluster Aladim / lâmpada."
     },
@@ -5934,16 +5934,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: desejos (*desiderium*) — vontade × pack do génio; quota muitas vezes três; ≠ gesto; Faça o melhor sem pack.",
-      "whyEn": "Palavras: desejos (*desiderium*) — vontade × pack do génio; quota muitas vezes três; ≠ gesto; Faça o melhor sem pack.",
-      "whyEs": "Palavras: desejos (*desiderium*) — vontade × pack do génio; quota muitas vezes três; ≠ gesto; Faça o melhor sem pack.",
+      "why": "Palavras: desejos (*desiderium*) — vontade × pack do génio; quota muitas vezes três; ≠ gesto; Valeu !!! sem pack.",
+      "whyEn": "Palavras: desejos (*desiderium*) — vontade × pack do génio; quota muitas vezes três; ≠ gesto; Valeu !!! sem pack.",
+      "whyEs": "Palavras: desejos (*desiderium*) — vontade × pack do génio; quota muitas vezes três; ≠ gesto; Valeu !!! sem pack.",
       "suggestedSlug": "inspecao-palavra-desejos",
       "doneHref": "/posts/post-inspecao-palavra-desejos.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/desejo",
         "/posts/post-inspecao-palavra-lampada.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 125 — cluster Aladim / lâmpada."
     },
@@ -5955,16 +5955,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: três / 3 — cardinal (*trēs*) e quota popular dos três desejos; ≠ lei do clássico; Faça o melhor neste um.",
-      "whyEn": "Palavras: três / 3 — cardinal (*trēs*) e quota popular dos três desejos; ≠ lei do clássico; Faça o melhor neste um.",
-      "whyEs": "Palavras: três / 3 — cardinal (*trēs*) e quota popular dos três desejos; ≠ lei do clássico; Faça o melhor neste um.",
+      "why": "Palavras: três / 3 — cardinal (*trēs*) e quota popular dos três desejos; ≠ lei do clássico; Valeu !!! neste um.",
+      "whyEn": "Palavras: três / 3 — cardinal (*trēs*) e quota popular dos três desejos; ≠ lei do clássico; Valeu !!! neste um.",
+      "whyEs": "Palavras: três / 3 — cardinal (*trēs*) e quota popular dos três desejos; ≠ lei do clássico; Valeu !!! neste um.",
       "suggestedSlug": "inspecao-palavra-tres",
       "doneHref": "/posts/post-inspecao-palavra-tres.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/tr%C3%AAs",
         "/posts/post-inspecao-palavra-lampada.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 126 — cluster Aladim / lâmpada."
     },
@@ -5986,7 +5986,7 @@
         "/posts/post-inspecao-palavra-cinta.html",
         "/posts/post-inspecao-palavra-vida.html",
         "/posts/post-inspecao-derivado-chocolate.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-valeu.html",
         "/vida/"
       ],
       "notes": "Cap. Expressões — locução fim da linha; caso de laboratório = confeito casca+chocolate; sem afiliação Mars/M&M's."
@@ -6009,7 +6009,7 @@
         "/posts/post-inspecao-expressao-deus-abencoe.html",
         "/posts/post-inspecao-palavra-mae.html",
         "/posts/post-inspecao-palavra-noite.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. Expressões — pedir bença ≠ dar Deus abençoe; tipografia amem → amém."
     },
@@ -6021,9 +6021,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: vassoura (versōria) — utensílio; folclore XIV sem receita; cacau; Faça o melhor!",
-      "whyEn": "Words: vassoura (versōria) — broom; XIV folklore, no recipe; cacao; Do your best!",
-      "whyEs": "Palabras: vassoura (versōria) — escoba; folclore XIV sin receta; cacao; ¡Haz lo mejor!",
+      "why": "Palavras: vassoura (versōria) — utensílio; folclore XIV sem receita; cacau; Valeu !!!",
+      "whyEn": "Words: vassoura (versōria) — broom; XIV folklore, no recipe; cacao; Valeu !!!",
+      "whyEs": "Palabras: vassoura (versōria) — escoba; folclore XIV sin receta; cacao; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-vassoura",
       "doneHref": "/posts/post-inspecao-palavra-vassoura.html",
       "seriesHint": "palavras-origem",
@@ -6031,7 +6031,7 @@
         "https://pt.wiktionary.org/wiki/vassoura",
         "/posts/post-inspecao-palavra-esfregar.html",
         "/biblioteca/unifesp/livro-xiv.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 127 — história e curiosidades; tropano = documentar ≠ receitar."
     },
@@ -6055,7 +6055,7 @@
         "https://www.dicio.com.br/mequetrefe/",
         "/posts/post-inspecao-figura-duvivier.html",
         "/posts/post-inspecao-palavra-lingua-portuguesa.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 128 — todas as palavras do vídeo nesta página; âncora 4Ot7Mqlhlbo."
     },
@@ -6067,16 +6067,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: Paraguai = país; Paraguay = grafia; PARAGYACYY = lapso país × Paraguaçu; ≠ guerra como único sentido; Faça o melhor!",
-      "whyEn": "Palavras: Paraguai = país; Paraguay = grafia; PARAGYACYY = lapso país × Paraguaçu; ≠ guerra como único sentido; Faça o melhor!",
-      "whyEs": "Palavras: Paraguai = país; Paraguay = grafia; PARAGYACYY = lapso país × Paraguaçu; ≠ guerra como único sentido; Faça o melhor!",
+      "why": "Palavras: Paraguai = país; Paraguay = grafia; PARAGYACYY = lapso país × Paraguaçu; ≠ guerra como único sentido; Valeu !!!",
+      "whyEn": "Palavras: Paraguai = país; Paraguay = grafia; PARAGYACYY = lapso país × Paraguaçu; ≠ guerra como único sentido; Valeu !!!",
+      "whyEs": "Palavras: Paraguai = país; Paraguay = grafia; PARAGYACYY = lapso país × Paraguaçu; ≠ guerra como único sentido; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-paraguai",
       "doneHref": "/posts/post-inspecao-palavra-paraguai.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wikipedia.org/wiki/Paraguai",
         "/posts/post-inspecao-palavra-paraguai.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 129 — cluster Paraguai / canhão / PARAGYACYY."
     },
@@ -6088,16 +6088,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: Paraguaçu = lugar BR (tupi); Paraguaçu Paulista / ESAPP; ≠ Paraguai; lapso PARAGYACYY; Faça o melhor!",
-      "whyEn": "Palavras: Paraguaçu = lugar BR (tupi); Paraguaçu Paulista / ESAPP; ≠ Paraguai; lapso PARAGYACYY; Faça o melhor!",
-      "whyEs": "Palavras: Paraguaçu = lugar BR (tupi); Paraguaçu Paulista / ESAPP; ≠ Paraguai; lapso PARAGYACYY; Faça o melhor!",
+      "why": "Palavras: Paraguaçu = lugar BR (tupi); Paraguaçu Paulista / ESAPP; ≠ Paraguai; lapso PARAGYACYY; Valeu !!!",
+      "whyEn": "Palavras: Paraguaçu = lugar BR (tupi); Paraguaçu Paulista / ESAPP; ≠ Paraguai; lapso PARAGYACYY; Valeu !!!",
+      "whyEs": "Palavras: Paraguaçu = lugar BR (tupi); Paraguaçu Paulista / ESAPP; ≠ Paraguai; lapso PARAGYACYY; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-paraguacu",
       "doneHref": "/posts/post-inspecao-palavra-paraguacu.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wikipedia.org/wiki/Paragua%C3%A7u_Paulista",
         "/posts/post-inspecao-palavra-paraguai.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 130 — cluster Paraguai / canhão / PARAGYACYY."
     },
@@ -6109,16 +6109,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: Guerra do Paraguai = 1864–1870; também Guerra Grande / Tríplice Aliança; mortos em intervalo; ≠ Paraguaçu; Faça o melhor!",
-      "whyEn": "Palavras: Guerra do Paraguai = 1864–1870; também Guerra Grande / Tríplice Aliança; mortos em intervalo; ≠ Paraguaçu; Faça o melhor!",
-      "whyEs": "Palavras: Guerra do Paraguai = 1864–1870; também Guerra Grande / Tríplice Aliança; mortos em intervalo; ≠ Paraguaçu; Faça o melhor!",
+      "why": "Palavras: Guerra do Paraguai = 1864–1870; também Guerra Grande / Tríplice Aliança; mortos em intervalo; ≠ Paraguaçu; Valeu !!!",
+      "whyEn": "Palavras: Guerra do Paraguai = 1864–1870; também Guerra Grande / Tríplice Aliança; mortos em intervalo; ≠ Paraguaçu; Valeu !!!",
+      "whyEs": "Palavras: Guerra do Paraguai = 1864–1870; também Guerra Grande / Tríplice Aliança; mortos em intervalo; ≠ Paraguaçu; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-guerra-do-paraguai",
       "doneHref": "/posts/post-inspecao-palavra-guerra-do-paraguai.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wikipedia.org/wiki/Guerra_do_Paraguai",
         "/posts/post-inspecao-palavra-paraguai.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 131 — cluster Paraguai / canhão / PARAGYACYY."
     },
@@ -6130,16 +6130,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: troféus de guerra (*tropaeum*) — espólio ≠ verdade; El Cristiano = caso; trofeis/geurra = lapsos; Faça o melhor!",
-      "whyEn": "Palavras: troféus de guerra (*tropaeum*) — espólio ≠ verdade; El Cristiano = caso; trofeis/geurra = lapsos; Faça o melhor!",
-      "whyEs": "Palavras: troféus de guerra (*tropaeum*) — espólio ≠ verdade; El Cristiano = caso; trofeis/geurra = lapsos; Faça o melhor!",
+      "why": "Palavras: troféus de guerra (*tropaeum*) — espólio ≠ verdade; El Cristiano = caso; trofeis/geurra = lapsos; Valeu !!!",
+      "whyEn": "Palavras: troféus de guerra (*tropaeum*) — espólio ≠ verdade; El Cristiano = caso; trofeis/geurra = lapsos; Valeu !!!",
+      "whyEs": "Palavras: troféus de guerra (*tropaeum*) — espólio ≠ verdade; El Cristiano = caso; trofeis/geurra = lapsos; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-trofeus-de-guerra",
       "doneHref": "/posts/post-inspecao-palavra-trofeus-de-guerra.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/trof%C3%A9u",
         "/posts/post-inspecao-palavra-paraguai.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 132 — cluster Paraguai / canhão / PARAGYACYY."
     },
@@ -6151,16 +6151,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: canhão (*canna*); canjão = lapso; El Cristiano = peça MHN; devolução 2026 = trâmite, não feito; Faça o melhor!",
-      "whyEn": "Palavras: canhão (*canna*); canjão = lapso; El Cristiano = peça MHN; devolução 2026 = trâmite, não feito; Faça o melhor!",
-      "whyEs": "Palavras: canhão (*canna*); canjão = lapso; El Cristiano = peça MHN; devolução 2026 = trâmite, não feito; Faça o melhor!",
+      "why": "Palavras: canhão (*canna*); canjão = lapso; El Cristiano = peça MHN; devolução 2026 = trâmite, não feito; Valeu !!!",
+      "whyEn": "Palavras: canhão (*canna*); canjão = lapso; El Cristiano = peça MHN; devolução 2026 = trâmite, não feito; Valeu !!!",
+      "whyEs": "Palavras: canhão (*canna*); canjão = lapso; El Cristiano = peça MHN; devolução 2026 = trâmite, não feito; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-canhao",
       "doneHref": "/posts/post-inspecao-palavra-canhao.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/canh%C3%A3o",
         "/posts/post-inspecao-palavra-paraguai.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 133 — cluster Paraguai / canhão / PARAGYACYY."
     },
@@ -6183,7 +6183,7 @@
         "/posts/post-inspecao-palavra-alma.html",
         "/posts/post-inspecao-expressao-filho-de-deus.html",
         "/posts/post-inspecao-expressao-deus-abencoe.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. Expressões — fórmula de morada × inteireza; tipografia caixa alta → canónica com vírgula."
     },
@@ -6209,7 +6209,7 @@
         "https://www1.folha.uol.com.br/mercado/2023/08/mercado-livre-lanca-servico-de-streaming-com-filmes-de-graca.shtml",
         "/posts/post-inspecao-loja-filmicca.html",
         "/posts/post-inspecao-palavra-pipoca.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "AVOD ≠ PD. It (2017) na home é aluguel. Catálogo roda."
     },
@@ -6346,9 +6346,9 @@
       "tipo": "expressao",
       "priority": 2,
       "status": "feita",
-      "why": "Expressões: empilhamento céu+SAMU+sirene+Jesus Cristo; escala acima de jesusudavi; Faça o melhor!",
-      "whyEn": "Sayings: heaven+SAMU+siren+Jesus Christ stack; above jesusudavi; Do your best!",
-      "whyEs": "Dichos: apilamiento cielo+SAMU+sirena+Jesucristo; sobre jesusudavi; ¡Haz lo mejor!",
+      "why": "Expressões: empilhamento céu+SAMU+sirene+Jesus Cristo; escala acima de jesusudavi; Valeu !!!",
+      "whyEn": "Sayings: heaven+SAMU+siren+Jesus Christ stack; above jesusudavi; Valeu !!!",
+      "whyEs": "Dichos: apilamiento cielo+SAMU+sirena+Jesucristo; sobre jesusudavi; ¡Valeu !!!",
       "suggestedSlug": "inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo",
       "doneHref": "/posts/post-inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo.html",
       "seriesHint": "expressoes-ditados",
@@ -6356,7 +6356,7 @@
         "/posts/post-inspecao-expressao-jesusudavi.html",
         "/posts/post-inspecao-expressao-puta-que-pariu.html",
         "/posts/post-inspecao-palavra-medo.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 17 Expressões — código vermelho oral BR."
     },
@@ -6379,7 +6379,7 @@
         "/posts/post-inspecao-palavra-lingua-portuguesa.html",
         "/posts/post-inspecao-planta-pfaffia.html",
         "/posts/post-inspecao-expressao-jesusudavi.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 134 — mapa de sentidos; não fundir ofícios."
     },
@@ -6401,7 +6401,7 @@
         "https://pt.wiktionary.org/wiki/isot%C3%B4nico",
         "/posts/post-inspecao-palavra-tonico.html",
         "/posts/post-inspecao-palavra-agua.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 135 — iso- + tônico isolado."
     },
@@ -6504,9 +6504,9 @@
       "tipo": "expressao",
       "priority": 2,
       "status": "feita",
-      "why": "Expressões: os Doze como conjunto nomeado e frase viva BR; apóstolo = enviado; Tomé inspecciona; sem catecismo; Faça o melhor!",
-      "whyEn": "Sayings: the Twelve as named set and living BR phrase; apostle = one sent; Thomas inspects; no catechism; Do your best!",
-      "whyEs": "Dichos: los Doce como conjunto nombrado y frase viva BR; apóstol = enviado; Tomás inspecciona; sin catecismo; ¡Haz lo mejor!",
+      "why": "Expressões: os Doze como conjunto nomeado e frase viva BR; apóstolo = enviado; Tomé inspecciona; sem catecismo; Valeu !!!",
+      "whyEn": "Sayings: the Twelve as named set and living BR phrase; apostle = one sent; Thomas inspects; no catechism; Valeu !!!",
+      "whyEs": "Dichos: los Doce como conjunto nombrado y frase viva BR; apóstol = enviado; Tomás inspecciona; sin catecismo; ¡Valeu !!!",
       "suggestedSlug": "inspecao-expressao-os-doze-apostolos",
       "doneHref": "/posts/post-inspecao-expressao-os-doze-apostolos.html",
       "seriesHint": "expressoes-ditados",
@@ -6514,7 +6514,7 @@
         "/posts/post-inspecao-expressao-filho-de-deus.html",
         "/posts/post-inspecao-expressao-templo-de-cristo-corpo-e-alma.html",
         "/posts/post-inspecao-filme-a-paixao-de-cristo.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-valeu.html",
         "/posts/post-inspecao-palavra-idolo.html"
       ],
       "notes": "Cap. 17 Expressões — mesa dos Doze; ficha ≠ santoral."
@@ -6527,16 +6527,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: Moçambique = país; tónico em BI; esqueiro biq = Biq × isqueiro BIC; ≠ marca como étimo; Faça o melhor!",
-      "whyEn": "Palavras: Moçambique = país; tónico em BI; esqueiro biq = Biq × isqueiro BIC; ≠ marca como étimo; Faça o melhor!",
-      "whyEs": "Palavras: Moçambique = país; tónico em BI; esqueiro biq = Biq × isqueiro BIC; ≠ marca como étimo; Faça o melhor!",
+      "why": "Palavras: Moçambique = país; tónico em BI; esqueiro biq = Biq × isqueiro BIC; ≠ marca como étimo; Valeu !!!",
+      "whyEn": "Palavras: Moçambique = país; tónico em BI; esqueiro biq = Biq × isqueiro BIC; ≠ marca como étimo; Valeu !!!",
+      "whyEs": "Palavras: Moçambique = país; tónico em BI; esqueiro biq = Biq × isqueiro BIC; ≠ marca como étimo; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-mocambique",
       "doneHref": "/posts/post-inspecao-palavra-mocambique.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wikipedia.org/wiki/Mo%C3%A7ambique",
         "/posts/post-inspecao-palavra-tonico.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 143 — cluster Moçambique / isqueiro BIC / tónos / esqueiro biq."
     },
@@ -6548,16 +6548,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: isqueiro BIC = utensílio + marca 1973; tónos = tensão (~42 N); esqueiro biq ≠ Moçambique; Faça o melhor!",
-      "whyEn": "Palavras: isqueiro BIC = utensílio + marca 1973; tónos = tensão (~42 N); esqueiro biq ≠ Moçambique; Faça o melhor!",
-      "whyEs": "Palavras: isqueiro BIC = utensílio + marca 1973; tónos = tensão (~42 N); esqueiro biq ≠ Moçambique; Faça o melhor!",
+      "why": "Palavras: isqueiro BIC = utensílio + marca 1973; tónos = tensão (~42 N); esqueiro biq ≠ Moçambique; Valeu !!!",
+      "whyEn": "Palavras: isqueiro BIC = utensílio + marca 1973; tónos = tensão (~42 N); esqueiro biq ≠ Moçambique; Valeu !!!",
+      "whyEs": "Palavras: isqueiro BIC = utensílio + marca 1973; tónos = tensão (~42 N); esqueiro biq ≠ Moçambique; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-isqueiro-bic",
       "doneHref": "/posts/post-inspecao-palavra-isqueiro-bic.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wikipedia.org/wiki/Isqueiro",
         "/posts/post-inspecao-palavra-tonico.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 144 — cluster Moçambique / isqueiro BIC / tónos / esqueiro biq."
     },
@@ -6569,9 +6569,9 @@
       "tipo": "pessoas",
       "priority": 2,
       "status": "feita",
-      "why": "Pessoas: Lucas Evangelista; médico amado (Col 4,14) × «de almas» (tradição); fora dos Doze; corpo e alma sem partir o templo; Faça o melhor!",
-      "whyEn": "People: Luke the Evangelist; beloved physician (Col 4:14) × “of souls” (tradition); not of the Twelve; body and soul without splitting the temple; Do your best!",
-      "whyEs": "Personas: Lucas el Evangelista; médico amado (Col 4,14) × «de almas» (tradición); fuera de los Doce; cuerpo y alma sin partir el templo; ¡Haz lo mejor!",
+      "why": "Pessoas: Lucas Evangelista; médico amado (Col 4,14) × «de almas» (tradição); fora dos Doze; corpo e alma sem partir o templo; Valeu !!!",
+      "whyEn": "People: Luke the Evangelist; beloved physician (Col 4:14) × “of souls” (tradition); not of the Twelve; body and soul without splitting the temple; Valeu !!!",
+      "whyEs": "Personas: Lucas el Evangelista; médico amado (Col 4,14) × «de almas» (tradición); fuera de los Doce; cuerpo y alma sin partir el templo; ¡Valeu !!!",
       "suggestedSlug": "inspecao-figura-lucas-evangelista",
       "doneHref": "/posts/post-inspecao-figura-lucas-evangelista.html",
       "seriesHint": "pessoas-historia",
@@ -6592,16 +6592,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: tónos (τόνος) — raiz da tensão; ≠ mapa PT tônico; tríade vomitar / commitar; Faça o melhor!",
-      "whyEn": "Words: tónos (τόνος) — root of tension; ≠ PT map tônico; triad vomitar / commitar; Do your best!",
-      "whyEs": "Palabras: tónos (τόνος) — raíz de la tensión; ≠ mapa PT tônico; tríada vomitar / commitar; ¡Haz lo mejor!",
+      "why": "Palavras: tónos (τόνος) — raiz da tensão; ≠ mapa PT tônico; tríade vomitar / commitar; Valeu !!!",
+      "whyEn": "Words: tónos (τόνος) — root of tension; ≠ PT map tônico; triad vomitar / commitar; Valeu !!!",
+      "whyEs": "Palabras: tónos (τόνος) — raíz de la tensión; ≠ mapa PT tônico; tríada vomitar / commitar; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-tonos",
       "doneHref": "/posts/post-inspecao-palavra-tonos.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://en.wiktionary.org/wiki/%CF%84%CF%8C%CE%BD%CE%BF%CF%82",
         "/posts/post-inspecao-palavra-tonico.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 145 — tríade tónos / vomitar / commitar."
     },
@@ -6613,16 +6613,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: vomitar (lat. vomitare) — corpo × metáfora × mito XIV; tríade tónos / commitar; Faça o melhor!",
-      "whyEn": "Words: vomitar (Lat. vomitare) — body × metaphor × XIV myth; triad tónos / commitar; Do your best!",
-      "whyEs": "Palabras: vomitar (lat. vomitare) — cuerpo × metáfora × mito XIV; tríada tónos / commitar; ¡Haz lo mejor!",
+      "why": "Palavras: vomitar (lat. vomitare) — corpo × metáfora × mito XIV; tríade tónos / commitar; Valeu !!!",
+      "whyEn": "Words: vomitar (Lat. vomitare) — body × metaphor × XIV myth; triad tónos / commitar; Valeu !!!",
+      "whyEs": "Palabras: vomitar (lat. vomitare) — cuerpo × metáfora × mito XIV; tríada tónos / commitar; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-vomitar",
       "doneHref": "/posts/post-inspecao-palavra-vomitar.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/vomitar",
         "/posts/post-inspecao-palavra-tonico.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 146 — tríade tónos / vomitar / commitar."
     },
@@ -6634,16 +6634,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: commitar (comitar) — calco git; ≠ cometer; tríade tónos / vomitar; Faça o melhor depois do snapshot!",
-      "whyEn": "Words: commitar (comitar) — git calque; ≠ cometer; triad tónos / vomitar; Do your best after the snapshot!",
-      "whyEs": "Palabras: commitar (comitar) — calco git; ≠ cometer; tríada tónos / vomitar; ¡Haz lo mejor después del snapshot!",
+      "why": "Palavras: commitar (comitar) — calco git; ≠ cometer; tríade tónos / vomitar; Valeu !!! depois do snapshot!",
+      "whyEn": "Words: commitar (comitar) — git calque; ≠ cometer; triad tónos / vomitar; Valeu !!! after the snapshot!",
+      "whyEs": "Palabras: commitar (comitar) — calco git; ≠ cometer; tríada tónos / vomitar; ¡Valeu !!! después del snapshot!",
       "suggestedSlug": "inspecao-palavra-commitar",
       "doneHref": "/posts/post-inspecao-palavra-commitar.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://en.wiktionary.org/wiki/commit",
         "/posts/post-inspecao-palavra-tonico.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 147 — tríade tónos / vomitar / commitar."
     },
@@ -6655,16 +6655,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: Tanzânia = Tan+Zan+-ia (1964); Taz = hipocorístico; ≠ Tasmânia; relação com Taz Manaia; Faça o melhor!",
-      "whyEn": "Palavras: Tanzânia = Tan+Zan+-ia (1964); Taz = hipocorístico; ≠ Tasmânia; relação com Taz Manaia; Faça o melhor!",
-      "whyEs": "Palavras: Tanzânia = Tan+Zan+-ia (1964); Taz = hipocorístico; ≠ Tasmânia; relação com Taz Manaia; Faça o melhor!",
+      "why": "Palavras: Tanzânia = Tan+Zan+-ia (1964); Taz = hipocorístico; ≠ Tasmânia; relação com Taz Manaia; Valeu !!!",
+      "whyEn": "Palavras: Tanzânia = Tan+Zan+-ia (1964); Taz = hipocorístico; ≠ Tasmânia; relação com Taz Manaia; Valeu !!!",
+      "whyEs": "Palavras: Tanzânia = Tan+Zan+-ia (1964); Taz = hipocorístico; ≠ Tasmânia; relação com Taz Manaia; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-tanzania",
       "doneHref": "/posts/post-inspecao-palavra-tanzania.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wikipedia.org/wiki/Tanz%C3%A2nia",
         "/posts/post-inspecao-palavra-relacao.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 148 — cluster Tanzânia / Taz Manaia / Taz-Mania / relação."
     },
@@ -6676,16 +6676,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: Taz Manaia = lapso Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Faça o melhor!",
-      "whyEn": "Palavras: Taz Manaia = lapso Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Faça o melhor!",
-      "whyEs": "Palavras: Taz Manaia = lapso Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Faça o melhor!",
+      "why": "Palavras: Taz Manaia = lapso Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Valeu !!!",
+      "whyEn": "Palavras: Taz Manaia = lapso Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Valeu !!!",
+      "whyEs": "Palavras: Taz Manaia = lapso Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-taz-manaia",
       "doneHref": "/posts/post-inspecao-palavra-taz-manaia.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://en.wikipedia.org/wiki/Taz-Mania",
         "/posts/post-inspecao-palavra-relacao.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 149 — cluster Tanzânia / Taz Manaia / Taz-Mania / relação."
     },
@@ -6697,9 +6697,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: Xiaomi (*xioomi* → Xiaomi) — 小米 milheto; marca × grão × ídolo tech; elos Jobs/objetos/celular; Faça o melhor!",
-      "whyEn": "Words: Xiaomi (*xioomi* → Xiaomi) — 小米 millet; brand × grain × tech idol; links Jobs/objects/phone; Do your best!",
-      "whyEs": "Palabras: Xiaomi (*xioomi* → Xiaomi) — 小米 mijo; marca × grano × ídolo tech; vínculos Jobs/objetos/celular; ¡Haz lo mejor!",
+      "why": "Palavras: Xiaomi (*xioomi* → Xiaomi) — 小米 milheto; marca × grão × ídolo tech; elos Jobs/objetos/celular; Valeu !!!",
+      "whyEn": "Words: Xiaomi (*xioomi* → Xiaomi) — 小米 millet; brand × grain × tech idol; links Jobs/objects/phone; Valeu !!!",
+      "whyEs": "Palabras: Xiaomi (*xioomi* → Xiaomi) — 小米 mijo; marca × grano × ídolo tech; vínculos Jobs/objetos/celular; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-xiaomi",
       "doneHref": "/posts/post-inspecao-palavra-xiaomi.html",
       "seriesHint": "palavras-origem",
@@ -6711,7 +6711,7 @@
         "/posts/post-inspecao-palavra-idolo.html",
         "/posts/post-inspecao-palavra-objetos.html",
         "/posts/post-inspecao-celular-riscos-saude-criancas.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 150 — Xiaomi grafia certa; xioomi rasto oral; 小米 milheto; ficha ≠ review; anti-pedestal."
     },
@@ -6749,9 +6749,9 @@
       "tipo": "expressao",
       "priority": 2,
       "status": "feita",
-      "why": "Expressões: citação de Arleu (CNN / campo); chegou como mensagem da mãe; Faça o melhor!",
-      "whyEn": "Sayings: Arleu quote (CNN / field); arrived as a mother’s message; Do your best!",
-      "whyEs": "Dichos: cita de Arleu (CNN / campo); llegó como mensaje de la madre; ¡Haz lo mejor!",
+      "why": "Expressões: citação de Arleu (CNN / campo); chegou como mensagem da mãe; Valeu !!!",
+      "whyEn": "Sayings: Arleu quote (CNN / field); arrived as a mother’s message; Valeu !!!",
+      "whyEs": "Dichos: cita de Arleu (CNN / campo); llegó como mensaje de la madre; ¡Valeu !!!",
       "suggestedSlug": "inspecao-expressao-toda-crianca-nasce-cientista",
       "doneHref": "/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html",
       "seriesHint": "expressoes-ditados",
@@ -6760,7 +6760,7 @@
         "/posts/post-inspecao-palavra-mae.html",
         "/posts/post-inspecao-palavra-mensagem.html",
         "/posts/post-inspecao-palavra-inseto.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 18 Expressões — mensagem da mãe; crédito Arleu / CNN."
     },
@@ -6879,16 +6879,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: trocadilho (calembur) — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; Faça o melhor!",
-      "whyEn": "Palavras: trocadilho (calembur) — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; Faça o melhor!",
-      "whyEs": "Palavras: trocadilho (calembur) — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; Faça o melhor!",
+      "why": "Palavras: trocadilho (calembur) — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; Valeu !!!",
+      "whyEn": "Palavras: trocadilho (calembur) — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; Valeu !!!",
+      "whyEs": "Palavras: trocadilho (calembur) — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-trocadilho",
       "doneHref": "/posts/post-inspecao-palavra-trocadilho.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wikipedia.org/wiki/Trocadilho",
         "/posts/post-inspecao-palavra-lingua-portuguesa.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 152 — cluster trocadilho / aglutinação / polimorfismo / cara+alho."
     },
@@ -6900,16 +6900,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: aglutinação — composição por fusão (planalto, embora); cara+alho é máscara, o nome certo é trocadilho; Faça o melhor!",
-      "whyEn": "Palavras: aglutinação — composição por fusão (planalto, embora); cara+alho é máscara, o nome certo é trocadilho; Faça o melhor!",
-      "whyEs": "Palavras: aglutinação — composição por fusão (planalto, embora); cara+alho é máscara, o nome certo é trocadilho; Faça o melhor!",
+      "why": "Palavras: aglutinação — composição por fusão (planalto, embora); cara+alho é máscara, o nome certo é trocadilho; Valeu !!!",
+      "whyEn": "Palavras: aglutinação — composição por fusão (planalto, embora); cara+alho é máscara, o nome certo é trocadilho; Valeu !!!",
+      "whyEs": "Palavras: aglutinação — composição por fusão (planalto, embora); cara+alho é máscara, o nome certo é trocadilho; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-aglutinacao",
       "doneHref": "/posts/post-inspecao-palavra-aglutinacao.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wikipedia.org/wiki/Composi%C3%A7%C3%A3o_(lingu%C3%ADstica)",
         "/posts/post-inspecao-palavra-lingua-portuguesa.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 153 — cluster trocadilho / aglutinação / polimorfismo / cara+alho."
     },
@@ -6921,16 +6921,16 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; Faça o melhor!",
-      "whyEn": "Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; Faça o melhor!",
-      "whyEs": "Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; Faça o melhor!",
+      "why": "Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; Valeu !!!",
+      "whyEn": "Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; Valeu !!!",
+      "whyEs": "Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-polimorfismo",
       "doneHref": "/posts/post-inspecao-palavra-polimorfismo.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wikipedia.org/wiki/Polimorfismo",
         "/posts/post-inspecao-palavra-lingua-portuguesa.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 154 — cluster trocadilho / aglutinação / polimorfismo / cara+alho."
     },
@@ -7059,7 +7059,7 @@
         "/posts/post-inspecao-palavra-nap.html",
         "/posts/post-inspecao-sidarta-ribeiro.html",
         "/posts/post-inspecao-neurociencia-endocanabinoidoma.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 155 — dois REM (sono × sigla lab); sinais ≠ signo ≠ mensagem; ≠ polissonografia."
     },
@@ -7186,7 +7186,7 @@
       "sources": [
         "https://pt.wiktionary.org/wiki/sinal",
         "/posts/post-inspecao-palavra-sinal.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 165 — cluster sinais do corpo."
     },
@@ -7207,7 +7207,7 @@
       "sources": [
         "https://pt.wiktionary.org/wiki/barriga",
         "/posts/post-inspecao-palavra-sinal.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 166 — cluster sinais do corpo."
     },
@@ -7228,7 +7228,7 @@
       "sources": [
         "https://pt.wiktionary.org/wiki/orelha",
         "/posts/post-inspecao-palavra-sinal.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 167 — cluster sinais do corpo."
     },
@@ -7249,7 +7249,7 @@
       "sources": [
         "https://pt.wiktionary.org/wiki/mama",
         "/posts/post-inspecao-palavra-sinal.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 168 — cluster sinais do corpo."
     },
@@ -7270,7 +7270,7 @@
       "sources": [
         "https://pt.wiktionary.org/wiki/cabelo",
         "/posts/post-inspecao-palavra-sinal.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 169 — cluster sinais do corpo."
     },
@@ -7295,7 +7295,7 @@
         "/posts/post-inspecao-palavra-tempo.html",
         "/posts/post-inspecao-palavra-medo.html",
         "/posts/post-inspecao-palavra-risco.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 170 — 13 nov. 2026 é sexta e é um dia qualquer; franquia = elo de estreia, não o objecto."
     },
@@ -7319,7 +7319,7 @@
         "https://pt.wikipedia.org/wiki/Pipa_(brinquedo)",
         "/posts/post-inspecao-palavra-risco.html",
         "/posts/post-inspecao-palavra-aglutinacao.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 171 — kólla ≠ collum ≠ Cola; pipa sem linha cortante = brinquedo; cerol = literacia, sem fabrico."
     },
@@ -7343,7 +7343,7 @@
         "/posts/post-inspecao-palavra-inspiracao.html",
         "/posts/post-inspecao-palavra-risco.html",
         "/posts/post-inspecao-palavra-aff.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 172 — premere; panela = vaso; válvula = alívio; escape de motor recusado; P de Perigo se válvula presa."
     },
@@ -7379,9 +7379,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: etimologia (étymon + lógos) — método da série; étimo ≠ popular (cara+alho); Faça o melhor!",
-      "whyEn": "Words: etymology (étymon + lógos) — method of the series; etymon ≠ folk (cara+alho); Do your best!",
-      "whyEs": "Palabras: etimología (étymon + lógos) — método de la serie; étimo ≠ popular (cara+alho); ¡Haz lo mejor!",
+      "why": "Palavras: etimologia (étymon + lógos) — método da série; étimo ≠ popular (cara+alho); Valeu !!!",
+      "whyEn": "Words: etymology (étymon + lógos) — method of the series; etymon ≠ folk (cara+alho); Valeu !!!",
+      "whyEs": "Palabras: etimología (étymon + lógos) — método de la serie; étimo ≠ popular (cara+alho); ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-etimologia",
       "doneHref": "/posts/post-inspecao-palavra-etimologia.html",
       "seriesHint": "palavras-origem",
@@ -7391,7 +7391,7 @@
         "/posts/post-inspecao-palavra-aglutinacao.html",
         "/posts/post-inspecao-palavra-polimorfismo.html",
         "/posts/post-inspecao-palavra-lingua-portuguesa.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 173 — ficha do método da série; cita cluster cara+alho."
     },
@@ -7410,7 +7410,7 @@
       "sources": [
         "/posts/post-inspecao-palavra-corda.html",
         "/posts/post-inspecao-expressao-no-na-vida.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cluster nó/corda/desatar/desastre/ufa/codorna."
     },
@@ -7660,9 +7660,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: Mara — nome que chegou sem lista; cola em maravilha; hebr. mārāh é camada, não veredicto; poema dos barquinhos de papel; Faça o melhor!",
-      "whyEn": "Words: Mara — name that arrived unplanned; glued to maravilha; Heb. mārāh is a layer, not a verdict; paper-boat poem; Do your best!",
-      "whyEs": "Palabras: Mara — nombre que llegó sin lista; pega en maravilha; el hebr. mārāh es capa, no veredicto; poema de barquitos; ¡Haz lo mejor!",
+      "why": "Palavras: Mara — nome que chegou sem lista; cola em maravilha; hebr. mārāh é camada, não veredicto; poema dos barquinhos de papel; Valeu !!!",
+      "whyEn": "Words: Mara — name that arrived unplanned; glued to maravilha; Heb. mārāh is a layer, not a verdict; paper-boat poem; Valeu !!!",
+      "whyEs": "Palabras: Mara — nombre que llegó sin lista; pega en maravilha; el hebr. mārāh es capa, no veredicto; poema de barquitos; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-mara",
       "doneHref": "/posts/post-inspecao-palavra-mara.html",
       "seriesHint": "palavras-origem",
@@ -7672,7 +7672,7 @@
         "/posts/post-inspecao-palavra-maravilhoso.html",
         "/posts/post-inspecao-palavra-mae.html",
         "/vida/#poema=barquinhos-de-papel",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 179 — nome × maravilha × barquinho; ≠ Tamara / Maria."
     },
@@ -7709,9 +7709,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: Orfeu (gr. Ὀρφεύς) — mito da lira; BR Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo; Faça o melhor!",
-      "whyEn": "Words: Orfeu / Orpheus — lyre myth; BR Black Orpheus; ear-glue with Matrix Morpheus, not the same etymon; Do your best!",
-      "whyEs": "Palabras: Orfeu — mito de la lira; BR Orfeu Negro; pegamento de oído con Morpheus de Matrix, no el mismo étimo; ¡Haz lo mejor!",
+      "why": "Palavras: Orfeu (gr. Ὀρφεύς) — mito da lira; BR Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo; Valeu !!!",
+      "whyEn": "Words: Orfeu / Orpheus — lyre myth; BR Black Orpheus; ear-glue with Matrix Morpheus, not the same etymon; Valeu !!!",
+      "whyEs": "Palabras: Orfeu — mito de la lira; BR Orfeu Negro; pegamento de oído con Morpheus de Matrix, no el mismo étimo; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-orfeu",
       "doneHref": "/posts/post-inspecao-palavra-orfeu.html",
       "seriesHint": "palavras-origem",
@@ -7721,7 +7721,7 @@
         "https://en.wiktionary.org/wiki/Morpheus",
         "/posts/post-inspecao-filme-the-matrix.html",
         "/posts/post-inspecao-figura-tom-jobim.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 180 — Orfeu ≠ Morpheus / Morfeu; ouvido cola, étimo não."
     },
@@ -7733,9 +7733,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: gratidão (lat. tardio grātitūdō ← grātus) — qualidade; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Faça o melhor!",
-      "whyEn": "Words: gratidão (Late Lat. grātitūdō ← grātus) — named quality; ≠ obrigado ≠ valeu; Do your best!",
-      "whyEs": "Palabras: gratidão (lat. tardío grātitūdō ← grātus) — cualidad; ≠ obrigado ≠ valeu; ¡Haz lo mejor!",
+      "why": "Palavras: gratidão (lat. tardio grātitūdō ← grātus) — qualidade; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Valeu !!!",
+      "whyEn": "Words: gratidão (Late Lat. grātitūdō ← grātus) — named quality; ≠ obrigado ≠ valeu; Valeu !!!",
+      "whyEs": "Palabras: gratidão (lat. tardío grātitūdō ← grātus) — cualidad; ≠ obrigado ≠ valeu; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-gratidao",
       "doneHref": "/posts/post-inspecao-palavra-gratidao.html",
       "seriesHint": "palavras-origem",
@@ -7743,11 +7743,58 @@
         "https://pt.wiktionary.org/wiki/gratid%C3%A3o",
         "https://en.wiktionary.org/wiki/gratitude",
         "https://en.wiktionary.org/wiki/gratus",
-        "/posts/post-inspecao-expressao-muito-obrigado.html",
+        "/posts/post-inspecao-palavra-gratidao.html",
         "/posts/post-inspecao-palavra-valeu.html",
-        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 181 — Gratidão ≠ obrigado / valeu; grato é o adjectivo."
+    },
+    {
+      "id": "palavra-teoria-das-cordas",
+      "title": "Teoria das cordas — a física, não o fio",
+      "titleEn": "String theory — the physics, not the rope",
+      "titleEs": "Teoría de cuerdas — la física, no el hilo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: teoria das cordas — calque de string theory; ≠ objecto corda; programa aberto; Valeu !!!",
+      "whyEn": "Words: teoria das cordas — calque of string theory; ≠ rope object; open program; Valeu !!!",
+      "whyEs": "Palabras: teoria das cordas — calco de string theory; ≠ objeto cuerda; programa abierto; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-teoria-das-cordas",
+      "doneHref": "/posts/post-inspecao-palavra-teoria-das-cordas.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Teoria_das_cordas",
+        "https://en.wikipedia.org/wiki/String_theory",
+        "/posts/post-inspecao-palavra-corda.html",
+        "/posts/post-inspecao-palavra-pattern.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 182 — conceito de física; distinta da ficha objecto corda."
+    },
+    {
+      "id": "palavra-afinar",
+      "title": "Afinar — violão, passarinho assobiando e o tom justo",
+      "titleEn": "Afinar — guitar, whistling bird and the right pitch",
+      "titleEs": "Afinar — guitarra, pajarito silbando y el tono justo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: afinar (a- + fino ← lat. fīnis) — objecto violão; passarinho assobiando; desafinar; asoviar = assobiar; Valeu !!!",
+      "whyEn": "Words: afinar (a- + fino ← Lat. fīnis) — guitar object; whistling bird; desafinar; asoviar = whistle; Valeu !!!",
+      "whyEs": "Palabras: afinar (a- + fino ← lat. fīnis) — objeto violão; pajarito silbando; desafinar; asoviar = silbar; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-afinar",
+      "doneHref": "/posts/post-inspecao-palavra-afinar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/afinar",
+        "https://pt.wiktionary.org/wiki/fino",
+        "/posts/post-inspecao-palavra-objetos.html",
+        "/posts/post-inspecao-personagem-three-little-birds.html",
+        "/vida/",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 198 — violão (objecto) × passarinho assobiando (diapasão vivo)."
     }
   ]
 }
