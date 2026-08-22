@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T07:11:36.041Z",
+  "updatedAt": "2026-08-22T07:17:40.996Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8144,6 +8144,80 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 208 — nodus × nudus; orelha cola nodes/nudes; Node.js = nós de rede."
+    },
+    {
+      "id": "expressao-ando-indo-vindo-voltando",
+      "title": "ando, indo, vindo, voltando — o ciclo que não pousa",
+      "titleEn": "ando, indo, vindo, voltando — the cycle that does not land",
+      "titleEs": "ando, indo, vindo, voltando — el ciclo que no aterriza",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: ando, indo, vindo, voltando — ciclo oral; ando = eu ando; par loop infinito; Valeu !!!",
+      "whyEn": "Sayings: ando, indo, vindo, voltando — spoken cycle; ando = I walk; pair infinite loop; Valeu !!!",
+      "whyEs": "Dichos: ando, indo, vindo, voltando — ciclo oral; ando = yo ando; par loop infinito; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-ando-indo-vindo-voltando",
+      "doneHref": "/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/andar",
+        "https://pt.wiktionary.org/wiki/ir",
+        "https://pt.wiktionary.org/wiki/vir",
+        "https://pt.wiktionary.org/wiki/voltar",
+        "/posts/post-inspecao-expressao-loop-infinito.html",
+        "/posts/post-inspecao-palavra-loop.html",
+        "/posts/post-inspecao-palavra-exit.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 25 Expressões — sequência oral do loop; ando ≠ andando."
+    },
+    {
+      "id": "expressao-loop-infinito",
+      "title": "loop infinito — o pattern que não sai",
+      "titleEn": "loop infinito — the pattern that does not exit",
+      "titleEs": "loop infinito — el pattern que no sale",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: loop infinito — processo sem saída; caso oral ando, indo, vindo, voltando; antídoto exit; Valeu !!!",
+      "whyEn": "Sayings: loop infinito — process without exit; oral case ando, indo, vindo, voltando; antidote exit; Valeu !!!",
+      "whyEs": "Dichos: loop infinito — proceso sin salida; caso oral ando, indo, vindo, voltando; antídoto exit; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-loop-infinito",
+      "doneHref": "/posts/post-inspecao-expressao-loop-infinito.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Infinite_loop",
+        "https://en.wiktionary.org/wiki/loop",
+        "/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html",
+        "/posts/post-inspecao-palavra-loop.html",
+        "/posts/post-inspecao-palavra-exit.html",
+        "/posts/post-inspecao-expressao-fim-da-linha.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 26 Expressões — pattern sem saída; ≠ glifo ∞."
+    },
+    {
+      "id": "palavra-loop",
+      "title": "loop — o laço que regressa, ainda não é o infinito",
+      "titleEn": "loop — the bend that returns, not yet the infinite",
+      "titleEs": "loop — el lazo que regresa, aún no es el infinito",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: loop — loan EN, volta que regressa; o sem-saída fica em loop infinito; Valeu !!!",
+      "whyEn": "Words: loop — EN loan, returning bend; no-exit case on loop infinito; Valeu !!!",
+      "whyEs": "Palabras: loop — préstamo EN, vuelta que regresa; sin-salida en loop infinito; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-loop",
+      "doneHref": "/posts/post-inspecao-palavra-loop.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wiktionary.org/wiki/loop",
+        "/posts/post-inspecao-expressao-loop-infinito.html",
+        "/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html",
+        "/posts/post-inspecao-palavra-pattern.html",
+        "/posts/post-inspecao-palavra-exit.html"
+      ],
+      "notes": "Cap. 209 Palavras — peça EN; infinito na expressão irmã."
     }
   ]
 }

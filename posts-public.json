@@ -2812,6 +2812,25 @@
     "seriesLabel": "Jaborandi"
   },
   {
+    "title": "Inspeção: ando, indo, vindo, voltando — o ciclo que não pousa",
+    "titleEn": "Inspection: ando, indo, vindo, voltando — the cycle that does not land",
+    "titleEs": "Inspección: ando, indo, vindo, voltando — el ciclo que no aterriza",
+    "excerpt": "Expressões: «ando, indo, vindo, voltando» — sequência oral do loop; ando = eu ando; par loop infinito; Valeu !!!",
+    "excerptEn": "Sayings: “ando, indo, vindo, voltando” — spoken cycle of the loop; ando = I walk; pair infinite loop; Valeu !!!",
+    "excerptEs": "Dichos: «ando, indo, vindo, voltando» — secuencia oral del loop; ando = yo ando; par loop infinito; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-expressao-ando-indo-vindo-voltando",
+    "url": "/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html",
+    "date": "2026-08-22T07:20:00.000Z",
+    "filename": "posts/post-inspecao-expressao-ando-indo-vindo-voltando.html",
+    "coverImage": "/imagens/inspecoes/ando-indo-vindo-voltando-cover.jpg",
+    "category": "inspecao",
+    "series": "expressoes-ditados",
+    "seriesOrder": 25,
+    "seriesLabel": "ando, indo, vindo, voltando · expressão"
+  },
+  {
     "title": "Inspeção: Planta — Ipecacuanha — emetina e xarope histórico",
     "titleEn": "Inspection: Plant — Ipecac — emetine and historical syrup",
     "titleEs": "Inspección: Planta — Ipecacuana — emetina y jarabe histórico",
@@ -2829,6 +2848,25 @@
     "series": "plantas-medicinais",
     "seriesOrder": 25,
     "seriesLabel": "Ipecacuanha"
+  },
+  {
+    "title": "Inspeção: loop infinito — o pattern que não sai",
+    "titleEn": "Inspection: loop infinito — the pattern that does not exit",
+    "titleEs": "Inspección: loop infinito — el pattern que no sale",
+    "excerpt": "Expressões: «loop infinito» — processo sem saída; caso oral ando, indo, vindo, voltando; antídoto exit; Valeu !!!",
+    "excerptEn": "Sayings: “loop infinito” — process without exit; oral case ando, indo, vindo, voltando; antidote exit; Valeu !!!",
+    "excerptEs": "Dichos: «loop infinito» — proceso sin salida; caso oral ando, indo, vindo, voltando; antídoto exit; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-expressao-loop-infinito",
+    "url": "/posts/post-inspecao-expressao-loop-infinito.html",
+    "date": "2026-08-22T07:22:00.000Z",
+    "filename": "posts/post-inspecao-expressao-loop-infinito.html",
+    "coverImage": "/imagens/inspecoes/loop-infinito-cover.jpg",
+    "category": "inspecao",
+    "series": "expressoes-ditados",
+    "seriesOrder": 26,
+    "seriesLabel": "loop infinito · expressão"
   },
   {
     "title": "Inspeção: Planta — Pfaffia (ginseng-brasileiro) — ecdisteroides e ginseng-brasileiro",
@@ -6116,6 +6154,25 @@
     "series": "palavras-origem",
     "seriesOrder": 208,
     "seriesLabel": "Node · nuds · palavra"
+  },
+  {
+    "title": "Inspeção: loop — o laço que regressa, ainda não é o infinito",
+    "titleEn": "Inspection: loop — the bend that returns, not yet the infinite",
+    "titleEs": "Inspección: loop — el lazo que regresa, aún no es el infinito",
+    "excerpt": "Palavras: loop — loan EN, volta que regressa; o sem-saída fica em loop infinito; Valeu !!!",
+    "excerptEn": "Words: loop — EN loan, returning bend; the no-exit case lives on loop infinito; Valeu !!!",
+    "excerptEs": "Palabras: loop — préstamo EN, vuelta que regresa; el sin-salida queda en loop infinito; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-loop",
+    "url": "/posts/post-inspecao-palavra-loop.html",
+    "date": "2026-08-22T07:24:00.000Z",
+    "filename": "posts/post-inspecao-palavra-loop.html",
+    "coverImage": "/imagens/inspecoes/loop-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 209,
+    "seriesLabel": "loop · palavra"
   },
   {
     "title": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

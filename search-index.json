@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T07:12:12.461Z",
+  "updatedAt": "2026-08-22T07:18:16.394Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -174,6 +174,24 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: loop — o laço que regressa, ainda não é o infinito",
+      "url": "/posts/post-inspecao-palavra-loop.html",
+      "excerpt": "Palavras: loop — loan EN, volta que regressa; o sem-saída fica em loop infinito; Valeu !!!",
+      "text": "Inspeção: loop — o laço que regressa, ainda não é o infinito Palavras: loop — loan EN, volta que regressa; o sem-saída fica em loop infinito; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da palavra **[loop](/posts/post-inspecao-palavra-loop.html)** — loanword do inglês para **laço**, **volta que regressa**, ciclo de código ou de áudio. Pedido de campo com a expressão **[loop infinito](/posts/post-inspecao-expressao-loop-infinito.html)** e o caso oral **[ando, indo, vindo, voltando](/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html)**. Esta ficha cobre a **peça**. O *while* sem porta fica na expressão.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wiktionary · loop](https://en.wiktionary.org/wiki/loop), [PT loop](https://pt.wiktionary.org/wiki/loop), [infinite loop](https://en.wikipedia.org/wiki/Infinite_loop). **Ficha ≠ aula de estruturas de controlo.** Sem afiliação. Fecho: [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n**Gatilho:** *loop* / *lúp* / *laço* (calco) → **loop**.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **loop** (EN em uso BR) |\n| Classe | Substantivo (também verbo EN: *to loop*) |\n| Étimo (trabalho) | EN *loop* «laço / anel / volta» — confiança: **alta** no uso; origem remota discutida (poss. *leap* / formas de anel) |\n| Paralelos PT | *laço* · *ciclo* · *volta* · *bucle* (ES) |\n| Tipo BudGanja | Palavra — ciclo que regressa × ofício |\n| Caso sem saída | [loop infinito](/posts/post-inspecao-expressao-loop-infinito.html) |\n| Caso oral | [ando, indo, vindo, voltando](/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html) |\n| Antídoto | [exit](/posts/post-inspecao-palavra-exit.html) |\n| Fonte | [loop](https://en.wiktionary.org/wiki/loop) |\n| Data | 2026-08-22 |\n\n**O que é o objecto:** a **volta que encontra o próprio começo**. Cabelo, fita, faixa de áudio, *for* / *while*, ruminação. Um loop **pode** ter fim. O que não tem fim é o [loop infinito](/posts/post-inspecao-expressao"
+    },
+    {
+      "title": "Inspeção: loop infinito — o pattern que não sai",
+      "url": "/posts/post-inspecao-expressao-loop-infinito.html",
+      "excerpt": "Expressões: «loop infinito» — processo sem saída; caso oral ando, indo, vindo, voltando; antídoto exit; Valeu !!!",
+      "text": "Inspeção: loop infinito — o pattern que não sai Expressões: «loop infinito» — processo sem saída; caso oral ando, indo, vindo, voltando; antídoto exit; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da expressão **«[loop infinito](/posts/post-inspecao-expressao-loop-infinito.html)»** — o **[pattern](/posts/post-inspecao-palavra-pattern.html)** que não sai. Pedido de campo: *inspeções em expressão loop infinito*, a partir do ciclo oral **[ando, indo, vindo, voltando](/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html)**. Peça EN **[loop](/posts/post-inspecao-palavra-loop.html)** + PT **infinito**. Não é o glifo ∞ nem o conceito *eternidade*. É o **processo sem condição de paragem**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [loop](https://en.wiktionary.org/wiki/loop), [infinito](https://pt.wiktionary.org/wiki/infinito), [infinite loop](https://en.wikipedia.org/wiki/Infinite_loop), [infinity symbol](https://en.wikipedia.org/wiki/Infinity_symbol). **Ficha ≠ manual de programação, ≠ protocolo clínico, ≠ misticismo.** Sem afiliação. Fecho: [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n**Gatilho:** *loop infinito* / *laço infinito* / *while true* / *ando indo vindo voltando* → **loop infinito**.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Expressão | **loop infinito** |\n| Classe | Locução híbrida EN+PT — pattern de ciclo sem saída |\n| Peças | **[loop](/posts/post-inspecao-palavra-loop.html)** (EN) + **infinito** (PT) |\n| Caso oral | [ando, indo, vindo, voltando](/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html) |\n| Tipo BudGanja | Expressão — o *while* sem *break* |\n| Não é | [lemniscata](/posts/post-inspecao-palavra-lemniscata.html) · glifo ∞ · [tudo](/posts/post-inspecao-palavra-tudo.html) · [fim da linha](/posts/post-inspecao-expressao-fim-da-linha.html) |\n| Antídoto | [exit](/posts/post-inspecao-palavra-exit.html) — condição de paragem / saída |\n| Data | 2026-08-22 |\n\n**O que é o objecto:** a **re"
+    },
+    {
+      "title": "Inspeção: ando, indo, vindo, voltando — o ciclo que não pousa",
+      "url": "/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html",
+      "excerpt": "Expressões: «ando, indo, vindo, voltando» — sequência oral do loop; ando = eu ando; par loop infinito; Valeu !!!",
+      "text": "Inspeção: ando, indo, vindo, voltando — o ciclo que não pousa Expressões: «ando, indo, vindo, voltando» — sequência oral do loop; ando = eu ando; par loop infinito; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da expressão **«[ando, indo, vindo, voltando](/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html)»** — a **sequência oral** BR que não pousa. Pedido de campo: *ando, indo, vindo, voltando* · inspeções desse **[loop infinito](/posts/post-inspecao-expressao-loop-infinito.html)**. Quatro peças de movimento; um só ciclo. O nome do [pattern](/posts/post-inspecao-palavra-pattern.html) fica na expressão irmã; a peça EN **[loop](/posts/post-inspecao-palavra-loop.html)** na palavra. Esta ficha inspecciona a **fala que gira**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [andar](https://pt.wiktionary.org/wiki/andar), [ir](https://pt.wiktionary.org/wiki/ir), [vir](https://pt.wiktionary.org/wiki/vir), [voltar](https://pt.wiktionary.org/wiki/voltar), [gerúndio](https://pt.wikipedia.org/wiki/Ger%C3%BAndio), [infinite loop](https://en.wikipedia.org/wiki/Infinite_loop). **Ficha ≠ autoajuda, ≠ protocolo clínico, ≠ aula de conjugação.** Sem afiliação. Fecho: [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n**Gatilho:** *ando indo vindo voltando* / *andando, indo, vindo, voltando* / *indo e vindo* → **ando, indo, vindo, voltando**.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Expressão | **ando, indo, vindo, voltando** |\n| Classe | Sequência oral BR — ciclo de movimento |\n| Peças | **ando** (*eu ando*) + **indo** + **vindo** + **voltando** |\n| Variante | *andando, indo, vindo, voltando* (quatro gerúndios) |\n| Nome do pattern | [loop infinito](/posts/post-inspecao-expressao-loop-infinito.html) |\n| Peça EN | [loop](/posts/post-inspecao-palavra-loop.html) |\n| Tipo BudGanja | Expressão — o ciclo falado, não o glifo ∞ |\n| Não é | eternidade · [tudo](/posts/post-inspecao-palavra-tudo.html) · [lemniscata](/posts/post-inspecao-palav"
     },
     {
       "title": "Inspeção: jesusamado — assombro, afeto e oralidade BR",
@@ -4914,6 +4932,24 @@
       "url": "/posts/post-inspecao-expressao-em-pe-e-deitado.html",
       "excerpt": "Locução — par de posturas da lemniscata; bodiado → deitado (+ body). Deitado = ∞; em pé = corpo. Aula XIV Kassia. Valeu !!!",
       "text": "em pé e deitado Locução — par de posturas da lemniscata; bodiado → deitado (+ body). Deitado = ∞; em pé = corpo. Aula XIV Kassia. Valeu !!! lexico guia palavras glossário em-pe-e-deitado"
+    },
+    {
+      "title": "ando, indo, vindo, voltando",
+      "url": "/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html",
+      "excerpt": "Locução — ciclo oral que não pousa; ando = eu ando (não gerúndio); par loop infinito. Valeu !!!",
+      "text": "ando, indo, vindo, voltando Locução — ciclo oral que não pousa; ando = eu ando (não gerúndio); par loop infinito. Valeu !!! lexico guia palavras glossário ando-indo-vindo-voltando"
+    },
+    {
+      "title": "loop infinito",
+      "url": "/posts/post-inspecao-expressao-loop-infinito.html",
+      "excerpt": "Locução EN+PT — processo sem saída; caso oral ando, indo, vindo, voltando; ≠ glifo ∞; antídoto exit. Valeu !!!",
+      "text": "loop infinito Locução EN+PT — processo sem saída; caso oral ando, indo, vindo, voltando; ≠ glifo ∞; antídoto exit. Valeu !!! lexico guia palavras glossário loop-infinito"
+    },
+    {
+      "title": "loop",
+      "url": "/posts/post-inspecao-palavra-loop.html",
+      "excerpt": "Palavra — loan EN, laço / volta que regressa; o sem-saída fica em loop infinito. Valeu !!!",
+      "text": "loop Palavra — loan EN, laço / volta que regressa; o sem-saída fica em loop infinito. Valeu !!! lexico guia palavras glossário loop"
     },
     {
       "title": "lemniscata",

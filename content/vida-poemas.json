@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:29:07.043Z",
+  "updatedAt": "2026-08-22T07:18:15.474Z",
   "poems": [
     {
       "id": "barquinhos-de-papel",
@@ -119,6 +119,54 @@
         "lemniscata",
         "corpo",
         "postura"
+      ]
+    },
+    {
+      "id": "ando-indo-vindo-voltando",
+      "slug": "ando-indo-vindo-voltando",
+      "title": "Ando, indo, vindo, voltando",
+      "titleEn": "I Walk, Going, Coming, Returning",
+      "titleEs": "Ando, yendo, viniendo, volviendo",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Não é quatro passos — o mesmo passo que não desce no chão, e o mantra: faça o melhor.",
+      "teaserEn": "It is not four steps — the same step that does not land, and the mantra: do your best.",
+      "teaserEs": "No son cuatro pasos — el mismo paso que no baja al suelo, y el mantra: haz lo mejor.",
+      "body": "Ando.\nIndo.\nVindo.\nVoltando.\n\nNão é quatro passos.\nÉ o mesmo passo\nque não desce no chão.\n\nAndo ainda tem sujeito —\neu ando.\nIndo já perdeu o eu.\nVindo puxa de lá.\nVoltando promete casa\ne não entrega a porta.\n\nQuem diz a sequência\nri.\nQuem vive a sequência\nnão ri.\nO loop não é graça.\nÉ gerúndio sem ponto.\n\nHá um fim da linha.\nHá um exit.\nHá um Valeu !!!\nque corta o ciclo\nsem fingir que o caminho\né só ir e voltar.\n\nValeu !!!\nandando ainda —\nnão andando para sempre.",
+      "bodyEn": "I walk.\nGoing.\nComing.\nReturning.\n\nIt is not four steps.\nIt is the same step\nthat does not land.\n\nAndo still has a subject —\nI walk.\nGoing has already lost the I.\nComing pulls from there.\nReturning promises home\nand does not hand over the door.\n\nWhoever says the sequence\nlaughs.\nWhoever lives the sequence\ndoes not laugh.\nThe loop is not a joke.\nIt is a gerund without a period.\n\nThere is an end of the line.\nThere is an exit.\nThere is a Valeu !!!\nthat cuts the cycle\nwithout pretending the path\nis only going and coming back.\n\nValeu !!!\nstill walking —\nnot walking forever.",
+      "bodyEs": "Ando.\nYendo.\nViniendo.\nVolviendo.\n\nNo son cuatro pasos.\nEs el mismo paso\nque no baja al suelo.\n\nAndo todavía tiene sujeto —\nyo ando.\nYendo ya perdió el yo.\nViniendo tira de allá.\nVolviendo promete casa\ny no entrega la puerta.\n\nQuien dice la secuencia\nríe.\nQuien vive la secuencia\nno ríe.\nEl loop no es gracia.\nEs gerundio sin punto.\n\nHay un fin de la línea.\nHay un exit.\nHay un Valeu !!!\nque corta el ciclo\nsin fingir que el camino\nes solo ir y volver.\n\nValeu !!!\nandando todavía —\nno andando para siempre.",
+      "inspectionHref": "/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "loop",
+        "caminho",
+        "gerúndio"
+      ]
+    },
+    {
+      "id": "loop-infinito",
+      "slug": "loop-infinito",
+      "title": "Loop infinito",
+      "titleEn": "Infinite Loop",
+      "titleEs": "Loop infinito",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "A máquina aprendeu connosco — ando, indo, vindo, voltando; condição de paragem, e o mantra: faça o melhor.",
+      "teaserEn": "The machine learned from us — I walk, going, coming, returning; a stopping condition, and the mantra: do your best.",
+      "teaserEs": "La máquina aprendió con nosotros — ando, yendo, viniendo, volviendo; condición de parada, y el mantra: haz lo mejor.",
+      "body": "Disseram que o loop\né coisa de máquina.\nMentira de metade.\nA máquina aprendeu connosco:\nando, indo, vindo, voltando.\n\nHá um loop que calcula.\nHá outro que rumina.\nHá um terceiro no peito:\no caminho que não pousa.\n\nInfinito não é eternidade.\nÉ ausência de saída.\nO glifo ∞ deita a fita.\nO loop não deita:\nrepete.\n\nQuem nomeia o loop\njá pôs a mão no exit.\nQuem chama destino ao ciclo\naperta o while.\n\nValeu !!!\ncom condição de paragem,\nsem fingir que o sem-fim\ncabe numa ficha.",
+      "bodyEn": "They said the loop\nis a machine thing.\nHalf a lie.\nThe machine learned from us:\nI walk, going, coming, returning.\n\nThere is a loop that computes.\nThere is another that ruminates.\nThere is a third in the chest:\nthe path that does not land.\n\nInfinite is not eternity.\nIt is the absence of an exit.\nThe glyph ∞ lays the ribbon down.\nThe loop does not lie down:\nit repeats.\n\nWhoever names the loop\nhas already put a hand on exit.\nWhoever calls destiny the cycle\ntightens the while.\n\nValeu !!!\nwith a stopping condition,\nwithout pretending the endless\nfits on a sheet.",
+      "bodyEs": "Dijeron que el loop\nes cosa de máquina.\nMentira a medias.\nLa máquina aprendió con nosotros:\nando, yendo, viniendo, volviendo.\n\nHay un loop que calcula.\nHay otro que rumia.\nHay un tercero en el pecho:\nel camino que no aterriza.\n\nInfinito no es eternidad.\nEs ausencia de salida.\nEl glifo ∞ acuesta la cinta.\nEl loop no se acuesta:\nrepite.\n\nQuien nombra el loop\nya puso la mano en el exit.\nQuien llama destino al ciclo\naprieta el while.\n\nValeu !!!\ncon condición de parada,\nsin fingir que el sin-fin\ncabe en una ficha.",
+      "inspectionHref": "/posts/post-inspecao-expressao-loop-infinito.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "loop",
+        "infinito",
+        "exit"
       ]
     },
     {

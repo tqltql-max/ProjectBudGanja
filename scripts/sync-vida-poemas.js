@@ -120,6 +120,16 @@ const {
   poemEmPeEs
 } = require('../lib/em-pe-inspecao-post.js');
 const {
+  poemAndoIndoVindoVoltandoPt,
+  poemAndoIndoVindoVoltandoEn,
+  poemAndoIndoVindoVoltandoEs
+} = require('../lib/ando-indo-vindo-voltando-inspecao-post.js');
+const {
+  poemLoopInfinitoPt,
+  poemLoopInfinitoEn,
+  poemLoopInfinitoEs
+} = require('../lib/loop-infinito-inspecao-post.js');
+const {
   maraPoemPt,
   maraPoemEn,
   maraPoemEs
@@ -236,6 +246,49 @@ const doc = {
       bodyEs: poemEmPeEs(),
       inspectionHref: '/posts/post-inspecao-expressao-em-pe.html',
       tags: ['poesia', 'vida', 'lemniscata', 'corpo', 'postura']
+    },
+    {
+      id: 'ando-indo-vindo-voltando',
+      slug: 'ando-indo-vindo-voltando',
+      title: 'Ando, indo, vindo, voltando',
+      titleEn: 'I Walk, Going, Coming, Returning',
+      titleEs: 'Ando, yendo, viniendo, volviendo',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Não é quatro passos — o mesmo passo que não desce no chão, e o mantra: faça o melhor.',
+      teaserEn:
+        'It is not four steps — the same step that does not land, and the mantra: do your best.',
+      teaserEs:
+        'No son cuatro pasos — el mismo paso que no baja al suelo, y el mantra: haz lo mejor.',
+      body: poemAndoIndoVindoVoltandoPt(),
+      bodyEn: poemAndoIndoVindoVoltandoEn(),
+      bodyEs: poemAndoIndoVindoVoltandoEs(),
+      inspectionHref:
+        '/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html',
+      tags: ['poesia', 'vida', 'loop', 'caminho', 'gerúndio']
+    },
+    {
+      id: 'loop-infinito',
+      slug: 'loop-infinito',
+      title: 'Loop infinito',
+      titleEn: 'Infinite Loop',
+      titleEs: 'Loop infinito',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'A máquina aprendeu connosco — ando, indo, vindo, voltando; condição de paragem, e o mantra: faça o melhor.',
+      teaserEn:
+        'The machine learned from us — I walk, going, coming, returning; a stopping condition, and the mantra: do your best.',
+      teaserEs:
+        'La máquina aprendió con nosotros — ando, yendo, viniendo, volviendo; condición de parada, y el mantra: haz lo mejor.',
+      body: poemLoopInfinitoPt(),
+      bodyEn: poemLoopInfinitoEn(),
+      bodyEs: poemLoopInfinitoEs(),
+      inspectionHref: '/posts/post-inspecao-expressao-loop-infinito.html',
+      tags: ['poesia', 'vida', 'loop', 'infinito', 'exit']
     },
     {
       id: 'aguas-e-lagrimas',
