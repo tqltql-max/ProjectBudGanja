@@ -48,6 +48,8 @@
     "build:canabinall": "node scripts/build-canabinall-catalog.js",
     "build:disneyjr": "node scripts/build-disneyjr-catalog.js",
     "build:paulinho": "node scripts/build-paulinho-catalog.js",
+    "build:hopejoy": "node scripts/build-hopejoy-catalog.js",
+    "build:bagual": "node scripts/build-bagual-catalog.js",
     "build:zangado": "node scripts/build-zangado-catalog.js",
     "build:tamara": "node scripts/build-tamara-klink-catalog.js",
     "build:amyr": "node scripts/build-amyr-klink-catalog.js",

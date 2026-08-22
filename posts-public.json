@@ -2109,6 +2109,25 @@
     "seriesLabel": "Unha-de-gato"
   },
   {
+    "title": "Inspeção: canal Todo Poderoso Bagual — BOPE, Capital City e arquivo GTA RP",
+    "titleEn": "Inspection: Todo Poderoso Bagual channel — BOPE, Capital City and GTA RP archive",
+    "titleEs": "Inspección: canal Todo Poderoso Bagual — BOPE, Capital City y archivo GTA RP",
+    "excerpt": "Canais: Todo Poderoso Bagual — live no Kick (poderosobagual) e arquivo YouTube (@poderosobagual); personagem de BOPE no GTA RP; catálogo na página GTA RP.",
+    "excerptEn": "Channels: Todo Poderoso Bagual — live on Kick (poderosobagual) and YouTube archive (@poderosobagual); BOPE character in GTA RP; catalog on the GTA RP page.",
+    "excerptEs": "Canales: Todo Poderoso Bagual — live en Kick (poderosobagual) y archivo YouTube (@poderosobagual); personaje de BOPE en GTA RP; catálogo en GTA RP.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-canal-bagual",
+    "url": "/posts/post-inspecao-canal-bagual.html",
+    "date": "2026-08-22T05:00:00.000Z",
+    "filename": "posts/post-inspecao-canal-bagual.html",
+    "coverImage": "/imagens/inspecoes/bagual-canal-cover.jpg",
+    "category": "inspecao",
+    "series": "canal-bagual",
+    "seriesOrder": 16,
+    "seriesLabel": "Bagual · Canais"
+  },
+  {
     "title": "Inspeção: canal Richard Rasmussen Selvagem — fauna, expedições e o ecrã",
     "titleEn": "Inspection: Richard Rasmussen Selvagem channel — wildlife, expeditions and the screen",
     "titleEs": "Inspección: canal Richard Rasmussen Selvagem — fauna, expediciones y la pantalla",

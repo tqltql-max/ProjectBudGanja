@@ -42,6 +42,7 @@ var SERIES_LABELS = {
   'canal-amyrklink': 'Amyr Klink · Canais',
   'canal-zangado': 'Zangado · Canais',
   'canal-paulinho': 'Paulinho o LOKO · Canais',
+  'canal-bagual': 'Bagual · Canais',
   'canal-vevo': 'VEVO · Canais',
   'canal-icl': 'ICL · Canais',
   'canal-slivki': 'Slivki Show · Canais',

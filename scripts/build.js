@@ -124,6 +124,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('build:bagual', 'build-bagual-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:bagual:', e.message);
+  }
+
+  try {
     runStep('build:tamara', 'build-tamara-klink-catalog.js');
   } catch (e) {
     console.warn('Aviso build:tamara:', e.message);

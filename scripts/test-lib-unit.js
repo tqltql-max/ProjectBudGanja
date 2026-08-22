@@ -156,6 +156,14 @@ assert('zangado especial', catZangado('Especial Devilman : Go Nagai, Inspiraçõ
 assert('zangado nao vale', catZangado('MindsEye: NOT Worth Playing!') === 'nao-vale');
 assert('zangado bate-papo', catZangado('BATE PAPO COM O TIO ZANGADO!!! #41') === 'bate-papo');
 
+const { categorizeTitle: catBagual } = require('../lib/bagual-categories.js');
+assert('bagual bope', catBagual('Maior RESENHA no BOPE PAULINHO e BAGUAL QUIZ - GTA RP') === 'bope');
+assert(
+  'bagual clips',
+  catBagual('Eita! Paulinho o Loko deu seu FUSCA para BAGUAL [BAGUAL CLIPS]') === 'clips'
+);
+assert('bagual capital', catBagual('Bagual Resgate na Capital City') === 'capital-city');
+
 const {
   handleGoogleStart,
   encodeOAuthState,
@@ -200,6 +208,60 @@ if (prevGoogleId == null) delete process.env.GOOGLE_CLIENT_ID;
 else process.env.GOOGLE_CLIENT_ID = prevGoogleId;
 if (prevGoogleSecret == null) delete process.env.GOOGLE_CLIENT_SECRET;
 else process.env.GOOGLE_CLIENT_SECRET = prevGoogleSecret;
+
+const prevFullCatalog = process.env.YOUTUBE_CATALOG_FULL;
+delete process.env.YOUTUBE_CATALOG_FULL;
+const {
+  wantFullCrawl,
+  updateKnownStreak,
+  approxIsoFromRelative,
+  KNOWN_STREAK_STOP,
+  FULL_CRAWL_MS
+} = require('../lib/youtube-channel-catalog.js');
+
+const nowMs = Date.parse('2026-08-22T12:00:00.000Z');
+assert('approxIso: há 2 dias', approxIsoFromRelative('há 2 dias', nowMs) === '2026-08-20T12:00:00.000Z');
+assert('approxIso: 3 days ago', approxIsoFromRelative('3 days ago', nowMs) === '2026-08-19T12:00:00.000Z');
+assert('approxIso: vazio', approxIsoFromRelative('') === '');
+assert('approxIso: há um mês', !!Date.parse(approxIsoFromRelative('há um mês', nowMs)));
+
+const known = new Set(['a', 'b', 'c', 'd']);
+assert(
+  'streak: 12 conhecidos seguidos',
+  updateKnownStreak(0, Array.from({ length: 12 }, (_, i) => ({ id: 'k' + i })), new Set(Array.from({ length: 12 }, (_, i) => 'k' + i))) >=
+    KNOWN_STREAK_STOP
+);
+assert('streak: novos no topo reiniciam', updateKnownStreak(8, [{ id: 'novo' }, { id: 'a' }], known) === 1);
+assert('streak: página toda nova zera', updateKnownStreak(11, [{ id: 'x' }, { id: 'y' }], known) === 0);
+assert('streak: conhecidos no fim', updateKnownStreak(0, [{ id: 'x' }, { id: 'a' }, { id: 'b' }], known) === 2);
+
+const recent = { videos: Array.from({ length: 50 }, (_, i) => ({ id: 'v' + i })), fullCrawledAt: new Date().toISOString() };
+const stale = {
+  videos: Array.from({ length: 50 }, (_, i) => ({ id: 'v' + i })),
+  fullCrawledAt: new Date(Date.now() - FULL_CRAWL_MS - 1000).toISOString()
+};
+assert('full crawl: catálogo pequeno', wantFullCrawl({ videos: [{ id: 'a' }] }) === true);
+assert('full crawl: recente usa incremental', wantFullCrawl(recent) === false);
+assert('full crawl: janela expirada', wantFullCrawl(stale) === true);
+assert('full crawl: options.fullCrawl true', wantFullCrawl(recent, { fullCrawl: true }) === true);
+assert('full crawl: options.fullCrawl false', wantFullCrawl(stale, { fullCrawl: false }) === false);
+
+const { stampCatalog: stampPaulinho } = require('../lib/paulinho-categories.js');
+const stampedP = stampPaulinho({
+  videos: [{ id: '1', title: 'GTA RP na cidade' }],
+  kickUrl: 'https://kick.com/paulinholokobr'
+});
+assert('stamp paulinho categoriza gta-rp', stampedP.videos[0].category === 'gta-rp');
+assert('stamp paulinho mantém kick', stampedP.kickUrl === 'https://kick.com/paulinholokobr');
+
+const { stampCatalog: stampBagual } = require('../lib/bagual-categories.js');
+const stampedB = stampBagual({
+  videos: [{ id: '1', title: 'Maior RESENHA no BOPE — GTA RP' }]
+});
+assert('stamp bagual categoriza bope', stampedB.videos[0].category === 'bope');
+assert('stamp bagual kick', stampedB.kickUrl === 'https://kick.com/poderosobagual');
+if (prevFullCatalog == null) delete process.env.YOUTUBE_CATALOG_FULL;
+else process.env.YOUTUBE_CATALOG_FULL = prevFullCatalog;
 
 console.log('\n=== Resultado: ' + passed + ' OK, ' + failed + ' falhas ===');
 process.exit(failed ? 1 : 0);

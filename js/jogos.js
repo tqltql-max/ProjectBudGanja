@@ -79,6 +79,23 @@
       kick: 'https://kick.com/hopejoyoficial',
       emptyKey: 'pages.games.emptyHopejoy',
       emptyFallback: 'Nenhum vídeo da Hope Joy no catálogo ainda.'
+    },
+    {
+      id: 'bagual',
+      slugs: ['bagual', 'poderosobagual', 'todo-poderoso-bagual', 'todopoderosobagual'],
+      href: '/jogos/bagual/',
+      catalogUrl: '/content/channels/poderosobagual.json',
+      hubId: 'bagual',
+      nameKey: 'pages.games.bagualTitle',
+      nameFallback: 'Todo Poderoso Bagual',
+      descKey: 'pages.games.bagualDesc',
+      descFallback:
+        'Personagem de BOPE na Capital. Arquivo no YouTube, na ordem de postagem. Live no Kick. Sem afiliação. Personagem ≠ pessoa. Ficção de jogo ≠ manual de crime.',
+      yt: 'https://www.youtube.com/@poderosobagual',
+      kick: 'https://kick.com/poderosobagual',
+      inspection: '/posts/post-inspecao-canal-bagual.html',
+      emptyKey: 'pages.games.emptyBagual',
+      emptyFallback: 'Nenhum vídeo do Bagual no catálogo ainda.'
     }
   ];
 

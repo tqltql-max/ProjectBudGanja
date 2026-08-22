@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T03:55:58.222Z",
+  "updatedAt": "2026-08-22T04:09:03.235Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7673,6 +7673,31 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 179 — nome × maravilha × barquinho; ≠ Tamara / Maria."
+    },
+    {
+      "id": "canal-bagual",
+      "title": "Todo Poderoso Bagual — BOPE, Capital City e arquivo GTA RP",
+      "titleEn": "Todo Poderoso Bagual — BOPE, Capital City and GTA RP archive",
+      "titleEs": "Todo Poderoso Bagual — BOPE, Capital City y archivo GTA RP",
+      "tipo": "canal",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canais: live no Kick (poderosobagual) + arquivo YouTube (@poderosobagual) — personagem BOPE no GTA RP; página GTA RP.",
+      "whyEn": "Channels: live on Kick (poderosobagual) + YouTube archive (@poderosobagual) — BOPE character in GTA RP; GTA RP page.",
+      "whyEs": "Canales: live en Kick (poderosobagual) + archivo YouTube (@poderosobagual) — personaje BOPE en GTA RP; página GTA RP.",
+      "suggestedSlug": "inspecao-canal-bagual",
+      "doneHref": "/posts/post-inspecao-canal-bagual.html",
+      "seriesHint": "canal-bagual",
+      "sources": [
+        "https://kick.com/poderosobagual",
+        "https://www.youtube.com/@poderosobagual",
+        "https://www.youtube.com/watch?v=XBJ7zLpZ61k",
+        "/jogos/bagual/",
+        "/jogos/gtarp/",
+        "/jogos/hopejoy/",
+        "/posts/post-inspecao-canal-paulinho.html"
+      ],
+      "notes": "Hub /jogos/bagual/ · live no Kick (poderosobagual) · temas de mérito no catálogo. Personagem ≠ pessoa. Live ≠ arquivo. Ficção de jogo ≠ manual de crime."
     }
   ]
 }
