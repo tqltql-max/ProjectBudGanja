@@ -304,6 +304,25 @@
     "seriesLabel": "Nicolelis · homenagem"
   },
   {
+    "title": "Inspeção: Faça o melhor! — mantra do laboratório",
+    "titleEn": "Inspection: Do your best! — lab mantra",
+    "titleEs": "Inspección: ¡Haz lo mejor! — mantra del laboratorio",
+    "excerpt": "Expressões: «Faça o melhor!» — mantra Vida; ofício diário e resposta ao roubo e à proibição que tentam calar o projecto de inspeção.",
+    "excerptEn": "Sayings: “Do your best!” — Vida mantra; daily craft and a reply to theft and prohibition that try to silence the inspection project.",
+    "excerptEs": "Dichos: «¡Haz lo mejor!» — mantra Vida; oficio diario y respuesta al robo y a la prohibición que intentan callar el proyecto de inspección.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-expressao-faca-o-melhor",
+    "url": "/posts/post-inspecao-expressao-faca-o-melhor.html",
+    "date": "2026-08-02T22:30:00.000Z",
+    "filename": "posts/post-inspecao-expressao-faca-o-melhor.html",
+    "coverImage": "/imagens/inspecoes/vida-laboratorio-cover.jpg",
+    "category": "inspecao",
+    "series": "expressoes-ditados",
+    "seriesOrder": 2,
+    "seriesLabel": "Faça o melhor · mantra"
+  },
+  {
     "title": "Inspeção: Derivados da galinha — ultraprocessados e química industrial",
     "titleEn": "Inspection: Chicken derivatives — ultra-processed foods and industrial chemistry",
     "titleEs": "Inspección: Derivados del pollo — ultraprocesados y química industrial",
@@ -5719,6 +5738,25 @@
     "seriesLabel": "Orfeu · palavra"
   },
   {
+    "title": "Inspeção: Gratidão — qualidade de grato, não fórmula de obrigado",
+    "titleEn": "Inspection: Gratidão — quality of being grateful, not the obrigado formula",
+    "titleEs": "Inspección: Gratidão — cualidad de grato, no fórmula de obrigado",
+    "excerpt": "Palavras: «gratidão» (lat. tardio grātitūdō ← grātus) — qualidade de quem recebe bem; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Faça o melhor!",
+    "excerptEn": "Words: “gratidão” (Late Lat. grātitūdō ← grātus) — named quality of receiving well; pieces grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Do your best!",
+    "excerptEs": "Palabras: «gratidão» (lat. tardío grātitūdō ← grātus) — cualidad de quien recibe bien; piezas grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-gratidao",
+    "url": "/posts/post-inspecao-palavra-gratidao.html",
+    "date": "2026-08-22T04:40:00.000Z",
+    "filename": "posts/post-inspecao-palavra-gratidao.html",
+    "coverImage": "/imagens/inspecoes/gratidao-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 181,
+    "seriesLabel": "Gratidão · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",
@@ -5945,25 +5983,6 @@
     "series": "palavras-origem",
     "seriesOrder": null,
     "seriesLabel": "Árvore da Vida · palavra"
-  },
-  {
-    "title": "Inspeção: Faça o melhor! — mantra do laboratório",
-    "titleEn": "Inspection: Do your best! — lab mantra",
-    "titleEs": "Inspección: ¡Haz lo mejor! — mantra del laboratorio",
-    "excerpt": "Expressões: «Faça o melhor!» — mantra Vida; ofício diário e resposta ao roubo e à proibição que tentam calar o projecto de inspeção.",
-    "excerptEn": "Sayings: “Do your best!” — Vida mantra; daily craft and a reply to theft and prohibition that try to silence the inspection project.",
-    "excerptEs": "Dichos: «¡Haz lo mejor!» — mantra Vida; oficio diario y respuesta al robo y a la prohibición que intentan callar el proyecto de inspección.",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-expressao-faca-o-melhor",
-    "url": "/posts/post-inspecao-expressao-faca-o-melhor.html",
-    "date": "2026-08-02T22:30:00.000Z",
-    "filename": "posts/post-inspecao-expressao-faca-o-melhor.html",
-    "coverImage": "/imagens/inspecoes/vida-laboratorio-cover.jpg",
-    "category": "inspecao",
-    "series": "expressoes-ditados",
-    "seriesOrder": null,
-    "seriesLabel": "Faça o melhor · mantra"
   },
   {
     "title": "Inspeção: Cruzamento — Raiva, Emoção, Venom e Vida no mapa de Divertida Mente",

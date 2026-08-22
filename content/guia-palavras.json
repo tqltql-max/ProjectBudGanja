@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T04:12:52.894Z",
+  "updatedAt": "2026-08-22T04:34:13.979Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -5302,6 +5302,22 @@
       "curiositiesEn": "After the speech, Do your best! — the sheet reads the etymon without a guilt sermon.",
       "historyEs": "Muitoobrigado pega la gratitud reforzada; obrigado viene de obligare (ligar por deber) y en Brasil carga memoria de esclavitud y caña. El gesto pide respeto.",
       "curiositiesEs": "Después del habla, ¡Haz lo mejor! — la ficha lee el étimo sin sermón de culpa."
+    },
+    {
+      "id": "gratidao",
+      "word": "Gratidão",
+      "simple": "Lat. tardio grātitūdō ← grātus + -tūdō — qualidade de quem recebe bem; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Faça o melhor!",
+      "simpleEn": "Late Lat. grātitūdō ← grātus + -tūdō — named quality of receiving well; pieces grat- + -idão; ≠ obrigado ≠ valeu; Do your best!",
+      "simpleEs": "Lat. tardío grātitūdō ← grātus + -tūdō — cualidad de quien recibe bien; piezas grat- + -idão; ≠ obrigado ≠ valeu; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-gratidao.html",
+      "history": "Gratidão vem do latim tardio grātitūdō, de grātus (agradável, reconhecido) + sufixo de qualidade -tūdō. No laboratório é o nome da qualidade; obrigado (obligare) e valeu (valēre) são sopros com outros étimos. Grato é o adjectivo.",
+      "curiosities": "Não fundir com graça, gratificação, grátis. Elo: fichas muitoobrigado e valeu. Método das peças: como veneno.",
+      "historyEn": "Gratidão comes from Late Latin grātitūdō, from grātus (pleasing, thankful) + quality suffix -tūdō. In the lab it names the quality; obrigado (obligare) and valeu (valēre) are spoken formulas with other etymons. Grato is the adjective.",
+      "curiositiesEn": "Do not merge with graça, gratificação, or grátis. Links: muitoobrigado and valeu sheets. Piece method: like veneno.",
+      "historyEs": "Gratidão viene del latín tardío grātitūdō, de grātus (agradable, reconocido) + sufijo de cualidad -tūdō. En el laboratorio nombra la cualidad; obrigado (obligare) y valeu (valēre) son soplos con otros étimos. Grato es el adjetivo.",
+      "curiositiesEs": "No fusionar con graça, gratificação ni grátis. Vínculos: fichas muitoobrigado y valeu. Método de piezas: como veneno."
     },
     {
       "id": "multitarefa",

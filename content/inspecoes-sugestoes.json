@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T04:12:52.886Z",
+  "updatedAt": "2026-08-22T04:34:13.972Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7724,6 +7724,30 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 180 — Orfeu ≠ Morpheus / Morfeu; ouvido cola, étimo não."
+    },
+    {
+      "id": "palavra-gratidao",
+      "title": "Gratidão — qualidade de grato, não fórmula de obrigado",
+      "titleEn": "Gratidão — quality of being grateful, not the obrigado formula",
+      "titleEs": "Gratidão — cualidad de grato, no fórmula de obrigado",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: gratidão (lat. tardio grātitūdō ← grātus) — qualidade; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Faça o melhor!",
+      "whyEn": "Words: gratidão (Late Lat. grātitūdō ← grātus) — named quality; ≠ obrigado ≠ valeu; Do your best!",
+      "whyEs": "Palabras: gratidão (lat. tardío grātitūdō ← grātus) — cualidad; ≠ obrigado ≠ valeu; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-gratidao",
+      "doneHref": "/posts/post-inspecao-palavra-gratidao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/gratid%C3%A3o",
+        "https://en.wiktionary.org/wiki/gratitude",
+        "https://en.wiktionary.org/wiki/gratus",
+        "/posts/post-inspecao-expressao-muito-obrigado.html",
+        "/posts/post-inspecao-palavra-valeu.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 181 — Gratidão ≠ obrigado / valeu; grato é o adjectivo."
     }
   ]
 }

@@ -374,6 +374,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Neurociências Cap. 2: homenagem documental a Miguel Nicolelis — interfaces cérebro-máquina, Projeto Andar de Novo e o pontapé da Copa 2014. Mérito e limites, sem hagiografia."
             },
             {
+              "label": "Inspeção: Faça o melhor! — mantra do laboratório",
+              "tileLabel": "Inspeção: Faça o melhor! — mant…",
+              "href": "/posts/post-inspecao-expressao-faca-o-melhor.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-faca-o-melhor",
+              "description": "Expressões: «Faça o melhor!» — mantra Vida; ofício diário e resposta ao roubo e à proibição que tentam calar o projecto de inspeção."
+            },
+            {
               "label": "Inspeção: Derivados da galinha — ultraprocessados e química industrial",
               "tileLabel": "Inspeção: Derivados da galinha …",
               "href": "/posts/post-inspecao-derivado-galinha.html",
@@ -2646,6 +2654,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «Orfeu» (gr. Ὀρφεύς, étimo incerto) — mito da lira e Eurídice; no BR, Orfeu da Conceição / Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo (Morfeu ← morphē); Faça o melhor!"
             },
             {
+              "label": "Inspeção: Gratidão — qualidade de grato, não fórmula de obrigado",
+              "tileLabel": "Inspeção: Gratidão — qualidade …",
+              "href": "/posts/post-inspecao-palavra-gratidao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-gratidao",
+              "description": "Palavras: «gratidão» (lat. tardio grātitūdō ← grātus) — qualidade de quem recebe bem; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Faça o melhor!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",
@@ -2732,14 +2748,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-arvore-da-vida",
               "description": "Palavras: «Árvore da Vida» / «árvore» (lat. *arbor*) — figura sénior do laboratório: semente → mudinha → árvore, com poema e ofício contínuo."
-            },
-            {
-              "label": "Inspeção: Faça o melhor! — mantra do laboratório",
-              "tileLabel": "Inspeção: Faça o melhor! — mant…",
-              "href": "/posts/post-inspecao-expressao-faca-o-melhor.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-expressao-faca-o-melhor",
-              "description": "Expressões: «Faça o melhor!» — mantra Vida; ofício diário e resposta ao roubo e à proibição que tentam calar o projecto de inspeção."
             },
             {
               "label": "Inspeção: Cruzamento — Raiva, Emoção, Venom e Vida no mapa de Divertida Mente",
