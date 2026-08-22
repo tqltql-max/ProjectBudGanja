@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T05:52:50.583Z",
+  "updatedAt": "2026-08-22T05:57:49.635Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -484,6 +484,32 @@
       "curiositiesEn": "The lab links the word to heart and life: the mantra Valeu !!! asks for craft until that centre is touched, without handbook metaphysics.",
       "historyEs": "Alma viene del latín anima (soplo, centro vivo), la misma familia de animal y animar. En el portugués de Brasil también es el «llegar al alma» del habla íntima.",
       "curiositiesEs": "El laboratorio liga el vocablo a corazón y vida: el mantra ¡Valeu !!! pide oficio hasta tocar ese centro, sin metafísica de manual."
+    },
+    {
+      "id": "curar",
+      "word": "curar",
+      "simple": "Lat. cūrāre ← cūra — tratar × secar a colheita; ≠ cuidar (cōgitāre); curar a planta ≠ a planta cura; Valeu !!!",
+      "simpleEn": "Lat. cūrāre ← cūra — treat × dry the harvest; ≠ cuidar (cōgitāre); curing the plant ≠ the plant cures; Valeu !!!",
+      "simpleEs": "Lat. cūrāre ← cūra — tratar × secar la cosecha; ≠ cuidar (cōgitāre); curar la planta ≠ la planta cura; ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-curar.html",
+      "history": "Curar vem do latim cūrāre ← cūra (cuidado, trato). No português especializou: sarar o corpo, secar a colheita, e o homónimo cura (pároco).",
+      "curiosities": "Cuidar parece primo mas vem de cōgitāre (pensar). No lab, curar a planta (secagem) não é o slogan a planta cura.",
+      "historyEn": "Portuguese curar comes from Latin cūrāre ← cūra (care, charge). It specialised: heal the body, dry the harvest, and the homonym cura (parish priest).",
+      "curiositiesEn": "Cuidar looks related but comes from cōgitāre (to think). In the lab, curing the plant (drying) is not the slogan the plant cures.",
+      "historyEs": "Curar viene del latín cūrāre ← cūra (cuidado, encargo). En portugués se especializó: sanar el cuerpo, secar la cosecha, y el homónimo cura (párroco).",
+      "curiositiesEs": "Cuidar parece primo pero viene de cōgitāre (pensar). En el lab, curar la planta (secado) no es el eslogan la planta cura."
+    },
+    {
+      "id": "cura",
+      "word": "cura",
+      "simple": "Substantivo de curar (tratamento) e homónimo pároco (cura d’almas) — mesma cūra, ofícios distintos; ver curar.",
+      "simpleEn": "Noun of curar (treatment) and homonym parish priest (cura d’almas) — same cūra, distinct offices; see curar.",
+      "simpleEs": "Sustantivo de curar (tratamiento) y homónimo párroco (cura de almas) — misma cūra, oficios distintos; ver curar.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-curar.html"
     },
     {
       "id": "alucinogeno",
@@ -1796,6 +1822,22 @@
       "curiositiesEn": "The lab links the etymon to the hands and the left side as a cultural gesture, not as an anatomical craft dogma.",
       "historyEs": "Corazón viene del latín cor, cordis — órgano, afecto y coraje en la misma raíz. En el portugués de Brasil el vocablo cubre pecho y centro.",
       "curiositiesEs": "El laboratorio liga el étimo a las manos y al lado izquierdo como gesto cultural, no como dogma anatómico de oficio."
+    },
+    {
+      "id": "intestino",
+      "word": "intestino",
+      "simple": "Lat. intestinum ← intus «dentro» — tubo interno e adj. interno (guerra intestina); ≠ barriga; Valeu !!! por dentro.",
+      "simpleEn": "Lat. intestinum ← intus “within” — inner tube and inward adjective; ≠ belly; Valeu !!! from inside.",
+      "simpleEs": "Lat. intestinum ← intus «dentro» — tubo interno y adj. interno; ≠ barriga; ¡Valeu !!! por dentro.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-intestino.html",
+      "history": "Intestino vem do latim intestīnum, substantivo de intestīnus («interno»), de intus («dentro»). O mesmo étimo dá o adjectivo de conflito interno (guerra intestina) e o nome do tubo digestivo.",
+      "curiosities": "A barriga é o ventre de fora (sinal de satisfação); o intestino é o trabalho de dentro. O inglês gut feeling vive no PT mais na barriga ou no coração. Tripa é o oral; o étimo culto continua intestīnum.",
+      "historyEn": "Portuguese intestino comes from Latin intestīnum, the noun of intestīnus (“internal”), from intus (“within”). The same etymon names inward conflict (guerra intestina) and the digestive tube.",
+      "curiositiesEn": "Barriga is the outer belly (satisfaction signal); intestino is the inner work. English gut feeling maps in PT more often to barriga or coração. Tripa is the oral name; the learned etymon stays intestīnum.",
+      "historyEs": "Intestino viene del latín intestīnum, sustantivo de intestīnus («interno»), de intus («dentro»). El mismo étimo nombra el conflicto interno (guerra intestina) y el tubo digestivo.",
+      "curiositiesEs": "Barriga es el vientre de fuera (señal de satisfacción); intestino es el trabajo de dentro. El gut feeling inglés en PT vive más en barriga o coração. Tripa es el oral; el étimo culto sigue intestīnum."
     },
     {
       "id": "coracao-valente",

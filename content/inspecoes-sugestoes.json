@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T05:52:50.577Z",
+  "updatedAt": "2026-08-22T05:57:49.628Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7897,6 +7897,55 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 201 — portmanteau update+insert; identidade (slug); ≠ replace; depois commitar."
+    },
+    {
+      "id": "palavra-intestino",
+      "title": "Intestino — o tubo de dentro (intus) e Valeu !!!",
+      "titleEn": "Intestino — the inner tube (intus) and Valeu !!!",
+      "titleEs": "Intestino — el tubo de dentro (intus) y ¡Valeu !!!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: intestino (lat. intestinum ← intus) — órgão-tubo e adj. interno; ≠ barriga; elos eCBome/UNIFESP; Valeu !!! por dentro.",
+      "whyEn": "Words: intestino (Lat. intestinum ← intus) — tube-organ and inward adjective; ≠ belly; eCBome/UNIFESP; Valeu !!! from inside.",
+      "whyEs": "Palabras: intestino (lat. intestinum ← intus) — órgano-tubo y adj. interno; ≠ barriga; eCBome/UNIFESP; ¡Valeu !!! por dentro.",
+      "suggestedSlug": "inspecao-palavra-intestino",
+      "doneHref": "/posts/post-inspecao-palavra-intestino.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/intestino",
+        "https://pt.wikipedia.org/wiki/Intestino",
+        "https://en.wiktionary.org/wiki/intestinum#Latin",
+        "/posts/post-inspecao-palavra-barriga.html",
+        "/posts/post-inspecao-neurociencia-endocanabinoidoma.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 202 — intus; fora = barriga; sem clínica."
+    },
+    {
+      "id": "palavra-curar",
+      "title": "Curar — cūra, tratar e secar, sem milagre",
+      "titleEn": "Curar — cūra, to treat and to dry, without miracle",
+      "titleEs": "Curar — cūra, tratar y secar, sin milagro",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: curar (lat. cūrāre ← cūra) — tratar × secar a colheita; ≠ cuidar (cōgitāre); curar a planta ≠ a planta cura.",
+      "whyEn": "Words: curar (Lat. cūrāre ← cūra) — treat × dry the harvest; ≠ cuidar (cōgitāre); curing the plant ≠ the plant cures.",
+      "whyEs": "Palabras: curar (lat. cūrāre ← cūra) — tratar × secar la cosecha; ≠ cuidar (cōgitāre); curar la planta ≠ la planta cura.",
+      "suggestedSlug": "inspecao-palavra-curar",
+      "doneHref": "/posts/post-inspecao-palavra-curar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/curar",
+        "https://pt.wiktionary.org/wiki/cura",
+        "https://en.wiktionary.org/wiki/cura#Latin",
+        "https://pt.wiktionary.org/wiki/cuidar",
+        "/posts/post-inspecao-palavra-planta.html",
+        "/posts/post-inspecao-planta-cannabis-sativa.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 203 — lat. cūra; ofícios tratar/secar/pároco; ≠ cuidar; corte colheita × slogan."
     }
   ]
 }

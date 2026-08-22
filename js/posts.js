@@ -255,12 +255,20 @@ function resolveInspecaoTipo(post) {
   return 'canal';
 }
 
-var INSPECOES_PINNED_SLUG = 'inspecao-arte-bom-dia-inverno';
+var INSPECOES_PINNED_SLUGS = [
+  'inspecao-palavra-teoria-das-cordas',
+  'inspecao-arte-bom-dia-inverno'
+];
+
+function inspecoesPinRank(slug) {
+  var i = INSPECOES_PINNED_SLUGS.indexOf(slug);
+  return i === -1 ? 99 : i;
+}
 
 function sortBySeriesOrder(posts) {
   return posts.slice().sort(function (a, b) {
-    var aPin = a && a.slug === INSPECOES_PINNED_SLUG ? 0 : 1;
-    var bPin = b && b.slug === INSPECOES_PINNED_SLUG ? 0 : 1;
+    var aPin = inspecoesPinRank(a && a.slug);
+    var bPin = inspecoesPinRank(b && b.slug);
     if (aPin !== bPin) return aPin - bPin;
     var ao = a.seriesOrder == null ? 999 : Number(a.seriesOrder);
     var bo = b.seriesOrder == null ? 999 : Number(b.seriesOrder);
