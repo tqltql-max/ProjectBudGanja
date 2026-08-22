@@ -245,31 +245,37 @@ body.learn-mode-active .learn-mode-on {
 
 .learn-word.is-sheen,
 .learn-word.is-translated {
-    background: linear-gradient(
-        105deg,
-        rgba(254, 249, 215, 0.15) 0%,
-        rgba(223, 194, 98, 0.55) 45%,
-        rgba(124, 179, 66, 0.25) 70%,
-        rgba(254, 249, 215, 0.1) 100%
-    );
-    background-size: 220% 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    animation: learnWordSheen 0.28s ease-out;
-    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.35));
+    background: rgba(244, 248, 252, 0.1);
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+    animation: none;
+    filter: none;
 }
 
 .learn-word.is-translated {
     animation: none;
-    background-position: 100% 50%;
-    color: #f0d060;
-    -webkit-text-fill-color: #f0d060;
-    background: none;
-    filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.28));
-    font-size: 1.12em;
-    font-weight: 700;
+    background: rgba(244, 248, 252, 0.08);
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+    filter: none;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, currentColor 55%, transparent);
+    text-underline-offset: 0.16em;
+}
+
+.learn-mode-active .learn-word--danger.is-translated,
+.learn-mode-on .learn-word--danger.is-translated {
+    background: rgba(226, 58, 44, 0.16);
+    text-decoration-color: #e23a2c;
+}
+
+.learn-mode-active .learn-word--caution.is-translated,
+.learn-mode-on .learn-word--caution.is-translated {
+    background: rgba(196, 148, 64, 0.14);
+    text-decoration-style: dashed;
+    text-decoration-color: rgba(196, 148, 64, 0.95);
 }
 
 .learn-word--drone-kept.is-translated {

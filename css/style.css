@@ -13,7 +13,7 @@
 @import url("pages/fungos.css");
 @import url("pages/jogos-broto.css");
 @import url("luximetro.css");
-@import url("learn-translate.css?v=335");
+@import url("learn-translate.css?v=344");
 @import url("site-drone.css?v=343");
 
 /* Design tokens */
@@ -5932,15 +5932,38 @@ html[data-theme="light"] .meta-info {
     margin: 0 0 16px;
 }
 
-.post-content a {
-    color: var(--color-accent-light);
+/* Palavras ligadas = mesma cor do texto; visitado não muda para roxo. */
+.post-content a:link,
+.post-content a:visited,
+.post-content a:any-link {
+    color: inherit;
+    -webkit-text-fill-color: inherit;
     text-decoration: underline;
-    text-underline-offset: 3px;
-    transition: color var(--transition-fast);
+    text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+    text-underline-offset: 0.18em;
+    text-decoration-thickness: from-font;
+    text-decoration-skip-ink: auto;
+    border-radius: 0.12em;
+    transition:
+        color 0.18s ease,
+        text-decoration-color 0.18s ease,
+        background-color 0.18s ease;
+    -webkit-tap-highlight-color: rgba(244, 248, 252, 0.12);
 }
 
-.post-content a:hover {
-    color: var(--color-accent);
+.post-content a:hover,
+.post-content a:focus-visible {
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+    text-decoration-color: color-mix(in srgb, currentColor 78%, transparent);
+    background-color: rgba(244, 248, 252, 0.07);
+    outline: none;
+}
+
+.post-content a:active {
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+    background-color: rgba(244, 248, 252, 0.1);
 }
 
 .post-content ul,
