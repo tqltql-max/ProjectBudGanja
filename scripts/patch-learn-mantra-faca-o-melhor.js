@@ -85,10 +85,37 @@ const ENTRIES = {
     en: 'to silence', es: 'silenciar', fr: 'faire taire', it: 'silenziare',
     de: 'zum Schweigen bringen', el: 'φιμώνω', la: 'silere'
   }),
+  'faça': fill({
+    tone: 'caution',
+    category: 'Ofício',
+    mundane: 'Imperativo de fazer (lat. facere) — realize, produza.',
+    gloss: 'Peça do mantra: acto, não pose; nesta mão, hoje. ≠ faca (lâmina).',
+    href: HREF,
+    en: 'do (imperative)', es: 'haz', fr: 'fais', it: 'fai', de: 'tu',
+    el: 'κάνε', la: 'fac'
+  }),
+  faca: fill({
+    tone: 'caution',
+    category: 'Objecto',
+    mundane: 'Utensílio de corte; lâmina com cabo.',
+    gloss: 'Não é o Faça do mantra (ç). Sem ficha própria — a peça do ofício é faça.',
+    href: HREF,
+    en: 'knife', es: 'cuchillo', fr: 'couteau', it: 'coltello', de: 'Messer',
+    el: 'μαχαίρι', la: 'culter'
+  }),
+  fazer: fill({
+    tone: 'caution',
+    category: 'Ofício',
+    mundane: 'Realizar; produzir (lat. facere).',
+    gloss: 'Acto — não pose. No mantra: Faça o melhor; ≠ faca (lâmina).',
+    href: HREF,
+    en: 'to do', es: 'hacer', fr: 'faire', it: 'fare', de: 'tun',
+    el: 'κάνω', la: 'facere'
+  }),
   melhor: fill({
     tone: 'caution',
     category: 'Ofício',
-    mundane: 'Superior; o mais adequado.',
+    mundane: 'Superior; o mais adequado. Comparativo de bom (lat. melior).',
     gloss: 'O possível honesto nesta mão, hoje — não perfeição alheia.',
     href: HREF,
     en: 'best', es: 'mejor', fr: 'meilleur', it: 'migliore', de: 'beste',

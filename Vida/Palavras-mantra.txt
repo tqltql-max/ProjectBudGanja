@@ -25,10 +25,28 @@
    Mundano: Impedir de falar.
    BudGanja: Fechar a ficha, apagar o verso, negar a origem.
 
+## Peças da frase (como veneno — só nesta ficha)
+
+0. Faça / fazer
+   Categoria: Ofício
+   Mundano: Imperativo de fazer (lat. facere) — realizar, produzir.
+   BudGanja: Acto, não pose; nesta mão, hoje.
+   ≠ faca (lâmina) — o ç muda o objecto.
+
+0b. o
+   Categoria: Gramática (só na tabela da ficha; artigo demais comum para balão lab global)
+   Mundano: Artigo definido (lat. illum).
+   BudGanja: Aponta para este melhor concreto — não o absoluto dos outros.
+
+0c. !
+   Categoria: Pontuação (só na tabela da ficha)
+   Mundano: Exclamação.
+   BudGanja: Urgência de ofício, não grito de marketing.
+
 ## Âmbar (uso cauteloso)
 
 5. melhor
-   Mundano: Superior; o mais adequado.
+   Mundano: Superior; o mais adequado. Comparativo de bom (lat. melior).
    BudGanja: O possível honesto nesta mão, hoje — não perfeição alheia.
 
 6. mantra
