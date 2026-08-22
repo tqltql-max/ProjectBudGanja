@@ -518,6 +518,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes · cinema: The Matrix (1999, Wachowski) — génese do filme, influências (Baudrillard, cyberpunk, anime) e pergunta «o que é real?»; Keanu Reeves como elo secundário em Pessoas."
             },
             {
+              "label": "Inspeção: Chorão — letra urbana, Charlie Brown Jr. e a série Palavras",
+              "tileLabel": "Inspeção: Chorão — letra urbana…",
+              "href": "/posts/post-inspecao-figura-chorao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-chorao",
+              "description": "Pessoas × Palavras: Chorão (Alexandre Magno Abrão), letrista do Charlie Brown Jr. — poesia urbana, gíria e refrão cruzados com a ficha maconha e o hub de vocábulos."
+            },
+            {
               "label": "Inspeção: Planta — Capim-limão — citral e gramínea aromática",
               "tileLabel": "Inspeção: Planta — Capim-limão …",
               "href": "/posts/post-inspecao-planta-capim-limao.html",
@@ -1422,6 +1430,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Pilocarpus microphyllus* — folhas fonte histórica de pilocarpina; alcaloide imidazólico miótico."
             },
             {
+              "label": "Inspeção: ando, indo, vindo, voltando — o ciclo que não pousa",
+              "tileLabel": "Inspeção: ando, indo, vindo, vo…",
+              "href": "/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-ando-indo-vindo-voltando",
+              "description": "Expressões: «ando, indo, vindo, voltando» — sequência oral do loop; ando = eu ando; par loop infinito; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Planta — Ipecacuanha — emetina e xarope histórico",
               "tileLabel": "Inspeção: Planta — Ipecacuanha …",
               "href": "/posts/post-inspecao-planta-ipecacuanha.html",
@@ -1430,12 +1446,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Carapichea ipecacuanha* — raiz com emetina e cephaeline; farmacopeia histórica como emético e antiamébico."
             },
             {
+              "label": "Inspeção: loop infinito — o pattern que não sai",
+              "tileLabel": "Inspeção: loop infinito — o pat…",
+              "href": "/posts/post-inspecao-expressao-loop-infinito.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-loop-infinito",
+              "description": "Expressões: «loop infinito» — processo sem saída; caso oral ando, indo, vindo, voltando; antídoto exit; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Planta — Pfaffia (ginseng-brasileiro) — ecdisteroides e ginseng-brasileiro",
               "tileLabel": "Inspeção: Planta — Pfaffia (gin…",
               "href": "/posts/post-inspecao-planta-pfaffia.html",
               "icon": "🔍",
               "slug": "post-inspecao-planta-pfaffia",
               "description": "*Pfaffia glomerata* — raiz rica em ecdisteroides e pfaffic acids; «ginseng-brasileiro» adaptogénico popular."
+            },
+            {
+              "label": "Inspeção: néctar dos deuses — o mito, a hipérbole, e o gatilho Deusus",
+              "tileLabel": "Inspeção: néctar dos deuses — o…",
+              "href": "/posts/post-inspecao-expressao-nectar-dos-deuses.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-nectar-dos-deuses",
+              "description": "Expressões: néctar dos deuses — mito grego × hipérbole de gosto; ≠ suco de gôndola; peça néctar à parte; Valeu !!!"
             },
             {
               "label": "Inspeção: Planta — Aroeira — pimenta-rosa e óleos resinosos",
@@ -1988,6 +2020,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-planta",
               "description": "Palavras: «planta» (lat. *planta* / *plantare*) — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; sem listar espécies."
+            },
+            {
+              "label": "Inspeção: O Magnata — o filme de 2007, o roteiro de Chorão e o preço × valor",
+              "tileLabel": "Inspeção: O Magnata — o filme d…",
+              "href": "/posts/post-inspecao-filme-o-magnata.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-o-magnata",
+              "description": "Artes · cinema: O Magnata (2007, Johnny Araújo / roteiro Chorão) — skate, rock e preço × valor; obra primeiro, pessoa na ficha Chorão; Valeu !!!"
             },
             {
               "label": "Inspeção: Inspiração — sopro, ideia acesa e Valeu !!!",
@@ -2814,6 +2854,46 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «node» (lat. *nodus*) × «nuds/nudes» (lat. *nudus*) — uma letra; ES nudos ≠ EN nudes; elos nó/conexão/script; Valeu !!!"
             },
             {
+              "label": "Inspeção: loop — o laço que regressa, ainda não é o infinito",
+              "tileLabel": "Inspeção: loop — o laço que reg…",
+              "href": "/posts/post-inspecao-palavra-loop.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-loop",
+              "description": "Palavras: loop — loan EN, volta que regressa; o sem-saída fica em loop infinito; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Néctar — o suco da flor, e o gatilho Nectar / Inectar",
+              "tileLabel": "Inspeção: Néctar — o suco da fl…",
+              "href": "/posts/post-inspecao-palavra-nectar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-nectar",
+              "description": "Palavras: néctar (gr. néktar) — suco da flor; ≠ caixa de suco ≠ injetar; mito em néctar dos deuses; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Sonhar × sonar — o sonho, o eco, e o ñ que falta",
+              "tileLabel": "Inspeção: Sonhar × sonar — o so…",
+              "href": "/posts/post-inspecao-palavra-sonhar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-sonhar",
+              "description": "Palavras: sonhar (lat. somniāre) × sonar (aparelho / ES soar); orelha cola o h; soñar leva ñ; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Balançar — o gesto, a balança e o peso",
+              "tileLabel": "Inspeção: Balançar — o gesto, a…",
+              "href": "/posts/post-inspecao-palavra-balancar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-balancar",
+              "description": "Palavras: balançar (gesto, *bilanx*) × balança (instrumento) × peso (*pendere*); gatilho BAÇANÇAR; ≠ dieta ≠ meneia; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Eminente — sobressai; a orelha cola iminente",
+              "tileLabel": "Inspeção: Eminente — sobressai;…",
+              "href": "/posts/post-inspecao-palavra-eminente.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-eminente",
+              "description": "Palavras: eminente ← lat. eminens / ēminēre (salta para fora) — ≠ iminente (imminēre, paira); a orelha cola, o étimo corta; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",
@@ -3509,14 +3589,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-divulgacao-lair-ribeiro",
               "description": "Divulgação: IDs do canal, textos canábicos, limites públicos, varredura açúcar/frutose e catálogo temático completo dos ~887 vídeos do canal — elo com a ficha Derivados da cana-de-açúcar."
-            },
-            {
-              "label": "Inspeção: Chorão — letra urbana, Charlie Brown Jr. e a série Palavras",
-              "tileLabel": "Inspeção: Chorão — letra urbana…",
-              "href": "/posts/post-inspecao-figura-chorao.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-chorao",
-              "description": "Pessoas × Palavras: Chorão (Alexandre Magno Abrão), letrista do Charlie Brown Jr. — poesia urbana, gíria e refrão cruzados com a ficha maconha e o hub de vocábulos."
             },
             {
               "label": "Inspeção: Gregorio Duvivier — o método da palavra e a série Palavras",

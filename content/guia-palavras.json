@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T17:25:31.151Z",
+  "updatedAt": "2026-08-22T17:47:49.901Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2524,6 +2524,38 @@
       "curiositiesEn": "The sheet links the metaphorical charge to fire and the praise scale — no circuit manual.",
       "historyEs": "Electrizante junta electro- (griego ēlektron, ámbar) a la intensidad y, en el portugués del espectáculo, se volvió elogio de hype. La tipografía lab documenta eleltrioxsamndo.",
       "curiositiesEs": "La ficha liga la carga metafórica al fuego y a la escala de elogios — sin manual de circuito."
+    },
+    {
+      "id": "eminente",
+      "word": "eminente",
+      "simple": "Lat. eminens ← ēminēre — salta para fora / sobressai. ≠ iminente (imminēre, está a chegar). A orelha cola; o étimo corta. Valeu !!!",
+      "simpleEn": "Lat. eminens ← ēminēre — juts out / stands out. ≠ iminente (imminēre, about to happen). The ear glues; the etymon cuts. Valeu !!!",
+      "simpleEs": "Lat. eminens ← ēminēre — salta hacia fuera / sobresale. ≠ iminente (imminēre, a punto de ocurrir). El oído pega; el étimo corta. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-eminente.html",
+      "history": "Eminente vem do latim eminens, particípio de ēminēre — ē- («para fora») + minēre («saltar»). O vocábulo nomeia o que sobressai. O primo iminente vem de imminēre («pairar sobre»).",
+      "curiosities": "A orelha brasileira cola as duas; o laboratório corta com o prefixo. Truque de ofício: E de Excelente, I de Imediatamente. No cultivo, a colheita é iminente — não eminente.",
+      "historyEn": "Portuguese eminente comes from Latin eminens, participle of ēminēre — ē- (“out”) + minēre (“to jut”). The word names what stands out. Its cousin iminente comes from imminēre (“to hang over”).",
+      "curiositiesEn": "The Brazilian ear glues the pair; the lab cuts with the prefix. Craft trick: E with Excellent, I with Immediately. In cultivation, harvest is iminente — not eminente.",
+      "historyEs": "Eminente viene del latín eminens, participio de ēminēre — ē- («hacia fuera») + minēre («saltar»). El vocablo nombra lo que sobresale. El primo iminente viene de imminēre («echarse encima»).",
+      "curiositiesEs": "El oído brasileño pega las dos; el laboratorio corta con el prefijo. Truco de oficio: E de Excelente, I de Inmediatamente. En el cultivo, la cosecha es iminente — no eminente."
+    },
+    {
+      "id": "iminente",
+      "word": "iminente",
+      "simple": "Lat. imminens ← imminēre — paira / está a chegar. ≠ eminente. Corte na ficha eminente. Valeu !!!",
+      "simpleEn": "Lat. imminens ← imminēre — hangs over / about to happen. ≠ eminente. Cut on the eminente sheet. Valeu !!!",
+      "simpleEs": "Lat. imminens ← imminēre — se echa encima / a punto de ocurrir. ≠ eminente. Corte en la ficha eminente. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-eminente.html",
+      "history": "Iminente vem do latim imminens, de imminēre — in- + minēre, pairar sobre. O português perdeu um m do étimo (inglês imminent conserva mm). Não é o adjetivo eminente.",
+      "curiosities": "No mapa do laboratório o corte vive na ficha eminente: perigo iminente, colheita iminente. A orelha cola; o étimo corta.",
+      "historyEn": "Portuguese iminente comes from Latin imminens, from imminēre — in- + minēre, to hang over. Portuguese dropped an m from the etymon (English imminent keeps mm). It is not the adjective eminente.",
+      "curiositiesEn": "On the lab map the cut lives on the eminente sheet: imminent danger, imminent harvest. The ear glues; the etymon cuts.",
+      "historyEs": "Iminente viene del latín imminens, de imminēre — in- + minēre, echarse encima. El portugués perdió una m del étimo (inglés imminent conserva mm). No es el adjetivo eminente.",
+      "curiositiesEs": "En el mapa del laboratorio el corte vive en la ficha eminente: peligro inminente, cosecha inminente. El oído pega; el étimo corta."
     },
     {
       "id": "eletroacupuntura",

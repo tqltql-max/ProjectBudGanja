@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T17:25:31.145Z",
+  "updatedAt": "2026-08-22T17:47:37.627Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8308,6 +8308,28 @@
         "/posts/post-inspecao-palavra-meneia.html"
       ],
       "notes": "Cap. 212 — gesto ≠ instrumento ≠ kg."
+    },
+    {
+      "id": "palavra-eminente",
+      "title": "Eminente — sobressai; a orelha cola iminente",
+      "titleEn": "Eminente — stands out; the ear glues iminente",
+      "titleEs": "Eminente — sobresale; el oído pega iminente",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: eminente ← eminens / ēminēre (salta para fora). Par ilusório iminente (imminēre). A orelha cola; o étimo corta.",
+      "whyEn": "Words: eminente ← eminens / ēminēre (juts out). False pair iminente (imminēre). The ear glues; the etymon cuts.",
+      "whyEs": "Palabras: eminente ← eminens / ēminēre (salta hacia fuera). Par ilusorio iminente (imminēre). El oído pega; el étimo corta.",
+      "suggestedSlug": "inspecao-palavra-eminente",
+      "doneHref": "/posts/post-inspecao-palavra-eminente.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/eminente",
+        "https://pt.wiktionary.org/wiki/iminente",
+        "/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html",
+        "/posts/post-inspecao-palavra-etimologia.html"
+      ],
+      "notes": "Cap. 213 — ē-minēre × in-minēre; truque E/I de ofício."
     }
   ]
 }
