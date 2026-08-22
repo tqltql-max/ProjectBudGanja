@@ -117,6 +117,25 @@ assert(
 );
 assert('posts-public coverImage absoluto', !feed.some((p) => p.coverImage && !p.coverImage.startsWith('/') && !/^https?:/i.test(p.coverImage)));
 
+const { pickShareableInspections, PINNED_SLUGS } = require('../lib/inspecoes-share-feed.js');
+const shareFeed = JSON.parse(require('fs').readFileSync(require('path').join(ROOT, 'inspecoes-share.json'), 'utf8'));
+assert('inspecoes-share.json tem fichas', Array.isArray(shareFeed) && shareFeed.length >= 6 && shareFeed.length <= 10);
+assert(
+  'inspecoes-share só inspeções fáceis',
+  shareFeed.every((p) => p.slug && p.url && p.kind && p.coverImage)
+);
+assert(
+  'inspecoes-share inclui Bom dia, Inverno ou Romeu',
+  shareFeed.some((p) => p.slug === 'inspecao-arte-bom-dia-inverno' || p.slug === 'inspecao-arte-romeu-e-julieta')
+);
+assert(
+  'inspecoes-share sem artigos/RDC',
+  !shareFeed.some((p) => /artigo|neurociencia|rdc-|derivado-/.test(p.slug || ''))
+);
+const picked = pickShareableInspections(feed, 8);
+assert('pickShareableInspections 8', picked.length === 8);
+assert('PINNED_SLUGS tem artes e animais', PINNED_SLUGS.indexOf('inspecao-animal-cao') >= 0);
+
 assert('calculadoras registry', CALCULADORAS.length === 3);
 const cultivoLab = CALCULADORAS.find((c) => c.slug === 'cultivo-lab');
 assert('cultivo-lab featured', cultivoLab && cultivoLab.featured === true);

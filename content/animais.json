@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T01:51:55.135Z",
+  "updatedAt": "2026-08-22T03:06:30.562Z",
   "disclaimer": "Fichas educacionais sobre animais, criação e produtos associados. Não substituem orientação veterinária, zootécnica nem aconselhamento alimentar profissional.",
   "animals": [
     {
@@ -264,6 +264,53 @@
       "relatedUnifesp": false,
       "cover": null,
       "relatedInspections": []
+    },
+    {
+      "id": "codorna",
+      "slug": "codorna",
+      "nomePopular": "Codorna",
+      "nomeCientifico": "Coturnix japonica",
+      "familia": "Phasianidae",
+      "hubCategory": "producao",
+      "summary": "Ave de criação (codorna-japonesa): ovos pequenos e carne; vizinha lexical da corda — o ouvido cola, o étimo não (Coturnix ≠ chorda).",
+      "partsUsed": [
+        "Ovo",
+        "Carne"
+      ],
+      "traditionalUses": [
+        "Ovos de codorna na mesa BR",
+        "Criação familiar e coturnicultura",
+        "Carne fresca em dose pequena"
+      ],
+      "cautions": "Conteúdo educacional — não é protocolo de coturnicultura nem nutricional. Distinguir a ave da palavra corda (fio). O animal não é o vilão; o desvio industrial, quando houver, pede ficha de derivado.",
+      "tags": [
+        "producao",
+        "aves",
+        "ovos",
+        "alimento"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/inspecoes/codorna-animal-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-palavra-corda.html",
+          "label": "Inspeção: Corda — o objecto onde mora o nó",
+          "labelEn": "Inspection: Corda — the object where the knot lives",
+          "labelEs": "Inspección: Corda — el objeto donde vive el nudo"
+        },
+        {
+          "href": "/posts/post-inspecao-palavra-no.html",
+          "label": "Inspeção: Nó — o laço na corda",
+          "labelEn": "Inspection: Nó — the knot on the rope",
+          "labelEs": "Inspección: Nó — el nudo en la cuerda"
+        },
+        {
+          "href": "/posts/post-inspecao-animal-galinha.html",
+          "label": "Inspeção: Produção animal — Galinha",
+          "labelEn": "Inspection: Animal production — Chicken",
+          "labelEs": "Inspección: Producción animal — Gallina"
+        }
+      ]
     }
   ]
 }

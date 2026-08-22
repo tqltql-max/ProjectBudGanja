@@ -67,6 +67,7 @@ var SERIES_LABELS = {
   'pessoas-historia': 'Pessoas',
   'divulgacao-saude': 'Divulgação',
   'artes-cultura': 'Artes',
+  'filmografias': 'Filmografias',
   'cadernos-jogo': 'Cadernos de jogo',
   'vida-contos': 'Vida',
   'expressoes-ditados': 'Expressões',
@@ -132,6 +133,10 @@ function seriesBadgeHtml(post, options) {
   if (options.hub && (post.series === 'artes-cultura' || /inspecao-arte-|inspecao-filme-|inspecao-serie-/i.test(post.slug || ''))) {
     var arte = post.seriesLabel || 'Arte';
     return '<span class="post-card-series" data-series="' + post.series + '">' + arte + '</span>';
+  }
+  if (options.hub && (post.series === 'filmografias' || /inspecao-filmografia-/i.test(post.slug || ''))) {
+    var filo = post.seriesLabel || 'Filmografia';
+    return '<span class="post-card-series" data-series="' + post.series + '">' + filo + '</span>';
   }
   if (options.hub && (post.series === 'cadernos-jogo' || /inspecao-jogo-/i.test(post.slug || ''))) {
     var jogo = post.seriesLabel || 'Caderno de jogo';
@@ -204,6 +209,12 @@ function resolveInspecaoTipo(post) {
     /inspecao-divulgacao-/i.test(slug)
   ) {
     return 'divulgacao';
+  }
+  if (
+    series === 'filmografias' ||
+    /inspecao-filmografia-/i.test(slug)
+  ) {
+    return 'filmografia';
   }
   if (
     series === 'artes-cultura' ||
@@ -413,6 +424,7 @@ var HUB_CHIP_ANCHOR = {
   pessoas: 'pessoas-historia',
   divulgacao: 'divulgacao',
   arte: 'artes',
+  filmografia: 'filmografias',
   jogo: 'jogos',
   conto: 'vida',
   expressao: 'expressoes',
@@ -437,6 +449,7 @@ var HUB_ANCHOR_TO_TIPO = {
   palavras: 'palavra',
   divulgacao: 'divulgacao',
   artes: 'arte',
+  filmografias: 'filmografia',
   jogos: 'jogo',
   jogo: 'jogo',
   vida: 'conto',
@@ -471,6 +484,13 @@ var INSPECAO_HUB_TIPOS = [
   { id: 'palavra', labelKey: 'pages.inspections.chipWords', fallback: 'Palavras', sort: 'seriesOrder', keepVisible: true },
   { id: 'divulgacao', labelKey: 'pages.inspections.chipOutreach', fallback: 'Divulgação', sort: 'seriesOrder' },
   { id: 'arte', labelKey: 'pages.inspections.chipArts', fallback: 'Artes', sort: 'seriesOrder', keepVisible: true },
+  {
+    id: 'filmografia',
+    labelKey: 'pages.inspections.chipFilmography',
+    fallback: 'Filmografias',
+    sort: 'seriesOrder',
+    keepVisible: true
+  },
   {
     id: 'equipamento',
     labelKey: 'pages.inspections.chipObjects',
@@ -572,6 +592,7 @@ function sortedHubPosts(posts, tipo) {
 
 function setInspecoesPanels(tipo) {
   var artes = document.getElementById('inspecoes-artes');
+  var filmografias = document.getElementById('inspecoes-filmografias');
   var jogos = document.getElementById('inspecoes-jogos');
   var palavras = document.getElementById('inspecoes-palavras');
   var expressoes = document.getElementById('inspecoes-expressoes');
@@ -580,6 +601,7 @@ function setInspecoesPanels(tipo) {
   var searchWrap = document.querySelector('.inspecoes-search-wrap');
 
   if (artes) artes.hidden = tipo !== 'arte';
+  if (filmografias) filmografias.hidden = tipo !== 'filmografia';
   if (jogos) jogos.hidden = tipo !== 'jogo';
   if (palavras) palavras.hidden = tipo !== 'palavra';
   if (expressoes) expressoes.hidden = tipo !== 'expressao';
@@ -782,7 +804,11 @@ function applyInspecoesHubView(opts) {
     inspecoesVisibleCount = Math.min(INSPECOES_PAGE_SIZE, filtered.length);
   }
 
-  if (inspecoesActiveTipo === 'arte' || inspecoesActiveTipo === 'palavra') {
+  if (
+    inspecoesActiveTipo === 'arte' ||
+    inspecoesActiveTipo === 'filmografia' ||
+    inspecoesActiveTipo === 'palavra'
+  ) {
     // Cards publicados da série + painel (Artes sugestões / Palavras catálogo+sugestões).
     listEl.hidden = !filtered.length;
     if (filtered.length) {

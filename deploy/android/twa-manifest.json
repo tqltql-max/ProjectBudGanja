@@ -13,9 +13,9 @@
   "backgroundColor": "#000000",
   "enableNotifications": false,
   "startUrl": "/inverno/",
-  "iconUrl": "https://inspetorbudganja.com.br/imagens/icon-512.v342.png",
-  "maskableIconUrl": "https://inspetorbudganja.com.br/imagens/icon-512-maskable.v342.png",
-  "monochromeIconUrl": "https://inspetorbudganja.com.br/imagens/icon-512.v342.png",
+  "iconUrl": "https://inspetorbudganja.com.br/imagens/icon-512.v344.png",
+  "maskableIconUrl": "https://inspetorbudganja.com.br/imagens/icon-512-maskable.v344.png",
+  "monochromeIconUrl": "https://inspetorbudganja.com.br/imagens/icon-512.v344.png",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
     "path": "./android.keystore",

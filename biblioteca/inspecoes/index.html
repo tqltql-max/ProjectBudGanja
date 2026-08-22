@@ -18,20 +18,19 @@
     <meta name="twitter:description" content="Auditorias técnicas com método verificável: canais, cursos e equipamentos.">
     <meta name="twitter:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
     <link rel="canonical" href="https://inspetorbudganja.com.br/biblioteca/inspecoes/">
-
+    <link rel="icon" href="/imagens/favicon-32.v344.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.v344.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.v344.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/imagens/icon-192.v344.png" sizes="192x192" type="image/png">
+    <link rel="shortcut icon" href="/favicon.v344.ico" sizes="any">
+    <link rel="icon" href="/favicon.v344.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v344.png">
+    <link rel="manifest" href="/manifest.json?v=344">
+    <meta name="theme-color" content="#0a2230">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="icon" href="/imagens/favicon-32.v342.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-48.v342.png" sizes="48x48" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.v342.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="/imagens/icon-192.v342.png" sizes="192x192" type="image/png">
-    <link rel="shortcut icon" href="/favicon.v342.ico" sizes="any">
-    <link rel="icon" href="/favicon.v342.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v342.png">
-    <link rel="manifest" href="/manifest.json?v=342">
-    <meta name="theme-color" content="#0a2230">
-    <link rel="stylesheet" href="/css/style.css?v=342">
+    <link rel="stylesheet" href="/css/style.css?v=344">
     <title>Inspeções | Inspetor BudGanja</title>
 </head>
 <body data-page="inspecoes">
@@ -72,6 +71,21 @@
                 <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionArtsDesc">Filmes, séries, música, artes visuais e obras culturais ligadas a plantas, linguagem ou ao ecossistema inspecionado — fila de sugestões abaixo; relatórios publicados aparecem em cards. Distinto de Canais (YouTube) e de Pessoas (biografia).</p>
             </header>
             <div class="inspecoes-sug-filters" role="group" aria-label="Filtro de sugestões de artes">
+                <button type="button" class="inspecoes-sug-filter is-active" data-sug-filter="abertas" aria-pressed="true" data-i18n="pages.inspections.sugFilterOpen">Abertas</button>
+                <button type="button" class="inspecoes-sug-filter" data-sug-filter="feitas" aria-pressed="false" data-i18n="pages.inspections.sugFilterDone">Feitas</button>
+                <button type="button" class="inspecoes-sug-filter" data-sug-filter="todas" aria-pressed="false" data-i18n="pages.inspections.sugFilterAll">Todas</button>
+            </div>
+            <div class="inspecoes-sug-list" data-inspecoes-sugestoes-list>
+                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
+            </div>
+        </section>
+
+        <section id="inspecoes-filmografias" class="inspecoes-hub-panel inspecoes-sugestoes" data-sug-tipo="filmografia" hidden>
+            <header class="inspecoes-hub-panel-head">
+                <h2 class="category-title" data-i18n="pages.inspections.sectionFilmography">Filmografias</h2>
+                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionFilmographyDesc">Catálogos de ofício de ecrã — a lista de títulos de uma pessoa, distinta da biografia (Pessoas) e da ficha de uma só obra (Artes). A série inaugura-se com Leonardo DiCaprio.</p>
+            </header>
+            <div class="inspecoes-sug-filters" role="group" aria-label="Filtro de sugestões de filmografias">
                 <button type="button" class="inspecoes-sug-filter is-active" data-sug-filter="abertas" aria-pressed="true" data-i18n="pages.inspections.sugFilterOpen">Abertas</button>
                 <button type="button" class="inspecoes-sug-filter" data-sug-filter="feitas" aria-pressed="false" data-i18n="pages.inspections.sugFilterDone">Feitas</button>
                 <button type="button" class="inspecoes-sug-filter" data-sug-filter="todas" aria-pressed="false" data-i18n="pages.inspections.sugFilterAll">Todas</button>
@@ -153,15 +167,13 @@
     </main>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=342"></script>
-    <script src="/js/i18n-data.js?v=342"></script>
-    <script src="/js/page-translations-data.js?v=342"></script>
-    <script src="/js/i18n.js?v=342"></script>
-    <script src="/js/ferramentas-nav-data.js?v=342"></script>
-    <script src="/js/layout.js?v=342"></script>
-    <script src="/js/inspecoes-sugestoes.js?v=342"></script>
-    <script src="/js/palavras-duplo-sentido.js?v=342"></script>
-    <script src="/js/posts.js?v=342"></script>
+    <script src="/js/i18n-data.js?v=344"></script>
+    <script src="/js/i18n.js?v=344"></script>
+    <script src="/js/ferramentas-nav-data.js?v=344"></script>
+    <script src="/js/layout.js?v=344"></script>
+    <script src="/js/inspecoes-sugestoes.js?v=344"></script>
+    <script src="/js/palavras-duplo-sentido.js?v=344"></script>
+    <script src="/js/posts.js?v=344"></script>
 
 </body>
 </html>

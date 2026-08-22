@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T02:41:02.188Z",
+  "updatedAt": "2026-08-22T03:32:46.921Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7392,6 +7392,263 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html"
       ],
       "notes": "Cap. 173 — ficha do método da série; cita cluster cara+alho."
+    },
+    {
+      "id": "palavra-no",
+      "title": "Nó — o laço na corda, antes de desatar",
+      "titleEn": "Nó — the knot on the rope, before untying",
+      "titleEs": "Nó — el nudo en la cuerda, antes de desatar",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: nó (nodus) — laço na corda e na vida; ≠ corda ≠ codorna; elos desatar/desastre/ufa.",
+      "suggestedSlug": "inspecao-palavra-no",
+      "doneHref": "/posts/post-inspecao-palavra-no.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-corda.html",
+        "/posts/post-inspecao-expressao-no-na-vida.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cluster nó/corda/desatar/desastre/ufa/codorna."
+    },
+    {
+      "id": "palavra-corda",
+      "title": "Corda — o objecto onde mora o nó",
+      "titleEn": "Corda — the object where the knot lives",
+      "titleEs": "Corda — el objeto donde vive el nudo",
+      "tipo": "objeto",
+      "priority": 2,
+      "status": "feita",
+      "why": "Objecto: corda (chorda) — fio do nó; ≠ cinta ≠ codorna; catálogo Objetos.",
+      "suggestedSlug": "inspecao-palavra-corda",
+      "doneHref": "/posts/post-inspecao-palavra-corda.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/objetos/",
+        "/posts/post-inspecao-palavra-no.html"
+      ],
+      "notes": "Cartão em /objetos/."
+    },
+    {
+      "id": "palavra-desatar",
+      "title": "Desatar — soltar o nó, sem virar desastre",
+      "titleEn": "Desatar — untie the knot, without turning it into disaster",
+      "titleEs": "Desatar — soltar el nudo, sin volverse desastre",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: desatar (des-+atar); ≠ desastre; ditado desatar o nó.",
+      "suggestedSlug": "inspecao-palavra-desatar",
+      "doneHref": "/posts/post-inspecao-palavra-desatar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-expressao-desatar-o-no.html"
+      ],
+      "notes": "Verbo do cluster."
+    },
+    {
+      "id": "palavra-desastre",
+      "title": "Desastre — má estrela, não é desatar o nó",
+      "titleEn": "Desastre — ill-starred, not untying the knot",
+      "titleEs": "Desastre — mala estrella, no es desatar el nudo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: desastre (dis+astrum); ≠ desatar; relação de ofício com desatar o nó.",
+      "suggestedSlug": "inspecao-palavra-desastre",
+      "doneHref": "/posts/post-inspecao-palavra-desastre.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-expressao-desatar-o-no.html"
+      ],
+      "notes": "Étimo astro; ofício com o ditado."
+    },
+    {
+      "id": "palavra-ufa",
+      "title": "Ufa — o sopro depois de desatar o nó",
+      "titleEn": "Ufa — the puff after untying the knot",
+      "titleEs": "Ufa — el soplo después de desatar el nudo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: ufa — alívio BR; par de aff; fecho de desatar o nó; legal (gíria).",
+      "suggestedSlug": "inspecao-palavra-ufa",
+      "doneHref": "/posts/post-inspecao-palavra-ufa.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-aff.html",
+        "/posts/post-inspecao-palavra-legal.html"
+      ],
+      "notes": "Interjeição de alívio."
+    },
+    {
+      "id": "expressao-no-na-vida",
+      "title": "nó na vida! — o laço no arco",
+      "titleEn": "nó na vida! — the knot in the arc",
+      "titleEs": "nó na vida! — el nudo en el arco",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: nó na vida! — laço no arco; par desatar o nó; ≠ desastre.",
+      "suggestedSlug": "inspecao-expressao-no-na-vida",
+      "doneHref": "/posts/post-inspecao-expressao-no-na-vida.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-palavra-vida.html"
+      ],
+      "notes": "Ditado do cluster."
+    },
+    {
+      "id": "expressao-desatar-o-no",
+      "title": "desatar o nó — o ofício, não o desastre",
+      "titleEn": "desatar o nó — the craft, not the disaster",
+      "titleEs": "desatar o nó — el oficio, no el desastre",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: desatar o nó — soltar o laço; ≠ desastre; ufa depois.",
+      "suggestedSlug": "inspecao-expressao-desatar-o-no",
+      "doneHref": "/posts/post-inspecao-expressao-desatar-o-no.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-palavra-desastre.html"
+      ],
+      "notes": "Ditado-mãe do ofício."
+    },
+    {
+      "id": "animal-codorna",
+      "title": "Codorna — ave, não é a corda",
+      "titleEn": "Codorna — quail, not the rope",
+      "titleEs": "Codorna — codorniz, no es la cuerda",
+      "tipo": "animal",
+      "priority": 2,
+      "status": "feita",
+      "why": "Animais: codorna (Coturnix japonica) — produção; ≠ corda (chorda); elos galinha/nó.",
+      "suggestedSlug": "inspecao-animal-codorna",
+      "doneHref": "/posts/post-inspecao-animal-codorna.html",
+      "seriesHint": "animais-producao",
+      "sources": [
+        "/animais/codorna/",
+        "/posts/post-inspecao-palavra-corda.html"
+      ],
+      "notes": "Catálogo /animais/ + inspeção gerada."
+    },
+    {
+      "id": "figura-william-shakespeare",
+      "title": "William Shakespeare — ofício da palavra em palco",
+      "titleEn": "William Shakespeare — the craft of the word on stage",
+      "titleEs": "William Shakespeare — el oficio de la palabra en escena",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas: Shakespeare (1564–1616); elo Romeu e Julieta; capa = dossiê holográfico de campo (arte, não fonte).",
+      "suggestedSlug": "inspecao-figura-william-shakespeare",
+      "doneHref": "/posts/post-inspecao-figura-william-shakespeare.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/William_Shakespeare",
+        "/posts/post-inspecao-arte-romeu-e-julieta.html",
+        "/posts/post-inspecao-palavra-etimologia.html"
+      ],
+      "notes": "Cap. 33 Pessoas — capa holográfica ≠ prova."
+    },
+    {
+      "id": "arte-romeu-e-julieta",
+      "title": "Romeu e Julieta — o nome é o nó das casas",
+      "titleEn": "Romeo and Juliet — the name is the knot of the houses",
+      "titleEs": "Romeo y Julieta — el nombre es el nudo de las casas",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Artes: Romeu e Julieta; What’s in a name?; elo Shakespeare / nó / etimologia; literatura, não protocolo.",
+      "suggestedSlug": "inspecao-arte-romeu-e-julieta",
+      "doneHref": "/posts/post-inspecao-arte-romeu-e-julieta.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-figura-william-shakespeare.html",
+        "/posts/post-inspecao-filme-romeu-mais-julieta.html",
+        "/posts/post-inspecao-palavra-no.html",
+        "https://pt.wikipedia.org/wiki/Romeu_e_Julieta"
+      ],
+      "notes": "Cap. 82 Artes — peça primeiro; filme 1996 à parte."
+    },
+    {
+      "id": "filme-romeu-mais-julieta",
+      "title": "Romeu + Julieta (1996) — Luhrmann e DiCaprio",
+      "titleEn": "Romeo + Juliet (1996) — Luhrmann and DiCaprio",
+      "titleEs": "Romeo + Julieta (1996) — Luhrmann y DiCaprio",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Artes/cinema: Romeu + Julieta (1996, Baz Luhrmann); Leonardo DiCaprio e Claire Danes; elo da peça Shakespeare.",
+      "suggestedSlug": "inspecao-filme-romeu-mais-julieta",
+      "doneHref": "/posts/post-inspecao-filme-romeu-mais-julieta.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-romeu-e-julieta.html",
+        "/posts/post-inspecao-figura-william-shakespeare.html",
+        "https://pt.wikipedia.org/wiki/Romeu_+_Julieta"
+      ],
+      "notes": "Cap. 83 Artes — filme ≠ peça."
+    },
+    {
+      "id": "figura-baz-luhrmann",
+      "title": "Baz Luhrmann — ofício de palco no ecrã",
+      "titleEn": "Baz Luhrmann — the craft of stage on screen",
+      "titleEs": "Baz Luhrmann — el oficio de escenario en pantalla",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas: Baz Luhrmann (n. 1962); Red Curtain; elo Romeu + Julieta (1996).",
+      "suggestedSlug": "inspecao-figura-baz-luhrmann",
+      "doneHref": "/posts/post-inspecao-figura-baz-luhrmann.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "/posts/post-inspecao-filme-romeu-mais-julieta.html",
+        "/posts/post-inspecao-figura-william-shakespeare.html",
+        "https://pt.wikipedia.org/wiki/Baz_Luhrmann"
+      ],
+      "notes": "Cap. 34 Pessoas — âncora filme 1996."
+    },
+    {
+      "id": "figura-leonardo-dicaprio",
+      "title": "Leonardo DiCaprio — ofício de presença no ecrã",
+      "titleEn": "Leonardo DiCaprio — the craft of presence on screen",
+      "titleEs": "Leonardo DiCaprio — el oficio de presencia en pantalla",
+      "tipo": "pessoas",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pessoas: DiCaprio (n. 1974); âncora Romeu + Julieta (1996); inaugura Filmografias.",
+      "suggestedSlug": "inspecao-figura-leonardo-dicaprio",
+      "doneHref": "/posts/post-inspecao-figura-leonardo-dicaprio.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "/posts/post-inspecao-filme-romeu-mais-julieta.html",
+        "/posts/post-inspecao-filmografia-leonardo-dicaprio.html",
+        "/posts/post-inspecao-figura-baz-luhrmann.html",
+        "https://pt.wikipedia.org/wiki/Leonardo_DiCaprio"
+      ],
+      "notes": "Cap. 35 Pessoas — pessoa ≠ catálogo ≠ uma obra."
+    },
+    {
+      "id": "filmografia-leonardo-dicaprio",
+      "title": "Filmografia de Leonardo DiCaprio — inauguração do tipo",
+      "titleEn": "Leonardo DiCaprio filmography — founding the type",
+      "titleEs": "Filmografía de Leonardo DiCaprio — inauguración del tipo",
+      "tipo": "filmografia",
+      "priority": 2,
+      "status": "feita",
+      "why": "Filmografias (ficha 1): catálogo de longas de DiCaprio. Lista ≠ trinta inspeções de filme.",
+      "suggestedSlug": "inspecao-filmografia-leonardo-dicaprio",
+      "doneHref": "/posts/post-inspecao-filmografia-leonardo-dicaprio.html",
+      "seriesHint": "filmografias",
+      "sources": [
+        "/posts/post-inspecao-figura-leonardo-dicaprio.html",
+        "/posts/post-inspecao-filme-romeu-mais-julieta.html",
+        "https://en.wikipedia.org/wiki/Leonardo_DiCaprio_filmography"
+      ],
+      "notes": "Cap. 1 Filmografias — inauguração com DiCaprio."
     }
   ]
 }

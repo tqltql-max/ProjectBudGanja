@@ -34,6 +34,19 @@
   <url><loc>https://inspetorbudganja.com.br/equipamentos/manual-clonadora.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/equipamentos/manual-hidrocloradora.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/biblioteca/pesquisas/substratos.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-filmografia-leonardo-dicaprio.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-figura-leonardo-dicaprio.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-figura-baz-luhrmann.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-filme-romeu-mais-julieta.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-arte-romeu-e-julieta.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-figura-william-shakespeare.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-expressao-desatar-o-no.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-expressao-no-na-vida.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-ufa.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-desastre.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-desatar.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-corda.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-no.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-etimologia.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-planta-alecrim-do-campo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-impressao-pressao.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -433,6 +446,7 @@
   <url><loc>https://inspetorbudganja.com.br/posts/post-clonadora-aeroponica-documentada.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-planta-mamao.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-fungo-psilocybe-cubensis.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-animal-codorna.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/plantas/babosa/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/plantas/camomila/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/plantas/capim-limao/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
@@ -487,5 +501,6 @@
   <url><loc>https://inspetorbudganja.com.br/animais/cao/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/animais/gato/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/animais/cavalo/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/animais/codorna/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/fungos/psilocybe-cubensis/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
 </urlset>

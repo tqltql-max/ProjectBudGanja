@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '343';
+const ASSET_V = '344';
 const HOME = '/inverno/';
 
 let deferredInstallPrompt = null;
@@ -1952,7 +1952,27 @@ function buildFooterHTML(site) {
       : '') +
     '</div>';
 
+  const page = (document.body && document.body.dataset.page) || '';
+  const skipShareRail = /admin/i.test(page) || page === 'login' || page === 'entrar' ||
+    page === 'apresentacao-unifesp' || page === 'apresentacao-unifesp-print';
+
+  const shareRailHtml = skipShareRail ? '' :
+    '<section class="inspecoes-share-rail" id="inspecoes-share-rail" hidden aria-labelledby="inspecoes-share-rail-title">' +
+    '<div class="footer-shell inspecoes-share-rail-shell">' +
+    '<header class="inspecoes-share-rail-head">' +
+    '<div>' +
+    '<h2 id="inspecoes-share-rail-title">' + escapeNavText(i18n('footer.shareRailTitle', 'Inspeções para circular')) + '</h2>' +
+    '<p class="inspecoes-share-rail-lead">' + escapeNavText(i18n('footer.shareRailLead', 'Fichas curtas e fáceis de entender.')) + '</p>' +
+    '</div>' +
+    '<a class="inspecoes-share-rail-all" href="/biblioteca/inspecoes/">' +
+    escapeNavText(i18n('footer.shareRailAll', 'Todas as inspeções →')) +
+    '</a>' +
+    '</header>' +
+    '<div class="inspecoes-share-rail-track" data-inspecoes-share-track></div>' +
+    '</div></section>';
+
   return (
+    shareRailHtml +
     '<footer class="site-footer">' +
     '<div class="footer-shell">' +
     '<div class="footer-grid">' +
@@ -2532,6 +2552,13 @@ document.addEventListener('DOMContentLoaded', async function () {
     feat.id = 'site-features-js';
     feat.src = '/js/site-features.js?v=' + ASSET_V;
     document.body.appendChild(feat);
+  }
+
+  if (!document.querySelector('script[src*="inspecoes-share-rail.js"]')) {
+    const shareRail = document.createElement('script');
+    shareRail.id = 'inspecoes-share-rail-js';
+    shareRail.src = '/js/inspecoes-share-rail.js?v=' + ASSET_V;
+    document.body.appendChild(shareRail);
   }
 
   if (!document.querySelector('script[src*="site-drone.js"]')) {

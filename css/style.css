@@ -8462,6 +8462,186 @@ body:is(
 }
 
 /* Footer */
+.inspecoes-share-rail {
+    margin-top: clamp(40px, 6vw, 56px);
+    border-top: 1px solid var(--color-header-border);
+    background:
+        linear-gradient(180deg, rgba(12, 32, 42, 0.72), rgba(8, 18, 26, 0.5));
+    color: var(--color-text-soft);
+}
+
+.inspecoes-share-rail[hidden] {
+    display: none !important;
+}
+
+.inspecoes-share-rail-shell {
+    padding-bottom: clamp(12px, 2vw, 18px);
+}
+
+.inspecoes-share-rail-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 10px 18px;
+    margin-bottom: 14px;
+}
+
+.inspecoes-share-rail-head h2 {
+    margin: 0 0 4px;
+    font-size: clamp(1.05rem, 2.2vw, 1.28rem);
+    font-weight: 700;
+    color: var(--color-text);
+    letter-spacing: -0.02em;
+}
+
+.inspecoes-share-rail-lead {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    color: var(--color-text-soft);
+    max-width: 46ch;
+}
+
+.inspecoes-share-rail-all {
+    font-size: 0.84rem;
+    font-weight: 700;
+    color: var(--color-accent, #d4af37);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.inspecoes-share-rail-all:hover,
+.inspecoes-share-rail-all:focus-visible {
+    text-decoration: underline;
+    outline: none;
+}
+
+.inspecoes-share-rail-track {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 2px 2px 10px;
+    scrollbar-width: thin;
+}
+
+.inspecoes-share-rail-card {
+    flex: 0 0 min(210px, 72vw);
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(6, 14, 20, 0.55);
+    overflow: hidden;
+}
+
+.inspecoes-share-rail-link {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+.inspecoes-share-rail-cover {
+    display: block;
+    aspect-ratio: 16 / 9;
+    background: #152028;
+    overflow: hidden;
+}
+
+.inspecoes-share-rail-cover img,
+.inspecoes-share-rail-ph {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.inspecoes-share-rail-ph {
+    background: linear-gradient(135deg, #1b3340, #0e1c24);
+}
+
+.inspecoes-share-rail-badge {
+    margin: 8px 10px 0;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-accent, #d4af37);
+}
+
+.inspecoes-share-rail-title {
+    margin: 4px 10px 8px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-text);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    overflow: hidden;
+}
+
+.inspecoes-share-rail-share {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 10px 10px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(212, 175, 55, 0.38);
+    background: rgba(61, 92, 40, 0.16);
+    color: #f0d78c;
+    font: inherit;
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.inspecoes-share-rail-share:hover,
+.inspecoes-share-rail-share:focus-visible {
+    border-color: rgba(212, 175, 55, 0.75);
+    color: #fef9d7;
+    outline: none;
+}
+
+.inspecoes-share-rail-share.is-copied {
+    border-color: rgba(126, 232, 210, 0.55);
+    color: #c8fff2;
+}
+
+#site-footer:has(.inspecoes-share-rail:not([hidden])) .site-footer {
+    margin-top: 0;
+    border-top: none;
+}
+
+:is(body[data-page="home"], body[data-page="laboratorio"], body[data-page="inverno"], body[data-page="vida"]) .inspecoes-share-rail {
+    border-top-color: rgba(126, 232, 210, 0.18);
+}
+
+html[data-theme="light"] .inspecoes-share-rail {
+    background: linear-gradient(180deg, rgba(244, 248, 246, 0.95), rgba(236, 242, 238, 0.9));
+}
+
+html[data-theme="light"] .inspecoes-share-rail-card {
+    border-color: rgba(0, 0, 0, 0.08);
+    background: #fff;
+}
+
+:is(body[data-page="login"], body[data-page="entrar"]) .inspecoes-share-rail,
+body[data-page*="admin"] .inspecoes-share-rail {
+    display: none !important;
+}
+
 .site-footer {
     margin-top: clamp(40px, 6vw, 56px);
     border-top: 1px solid var(--color-header-border);

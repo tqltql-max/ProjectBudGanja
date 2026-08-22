@@ -195,7 +195,7 @@ async function main() {
     }
   }
 
-  const staticAssets = ['css/style.css', 'js/layout.js', 'js/ferramentas-nav-data.js', 'js/site-features.js', 'js/home.js', 'js/perfil.js', 'js/cultivo.js', 'js/guia-cultivo.js', 'js/videos.js', 'content/guia-cultivo.json', 'content/youtube-feed.json', 'content/videos-hub.json', 'content/inspecoes-sugestoes.json', 'js/inspecoes-sugestoes.js', 'search-index.json', 'sw.js', 'posts-public.json'];
+  const staticAssets = ['css/style.css', 'js/layout.js', 'js/ferramentas-nav-data.js', 'js/site-features.js', 'js/home.js', 'js/perfil.js', 'js/cultivo.js', 'js/guia-cultivo.js', 'js/videos.js', 'content/guia-cultivo.json', 'content/youtube-feed.json', 'content/videos-hub.json', 'content/inspecoes-sugestoes.json', 'js/inspecoes-sugestoes.js', 'js/inspecoes-share-rail.js', 'search-index.json', 'sw.js', 'posts-public.json', 'inspecoes-share.json'];
   for (const asset of staticAssets) {
     try {
       const res = await fetchUrl('/' + asset);

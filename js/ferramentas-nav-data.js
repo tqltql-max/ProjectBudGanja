@@ -253,6 +253,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Estúdio/rótulo Rockstar Games (Take-Two, NY, 1998): rede de studios, GTA/Red Dead, RAGE — distinto do Caderno GTA 6. Ficção de crime ≠ manual de crime."
             },
             {
+              "label": "Inspeção: Filmografia de Leonardo DiCaprio — catálogo que inaugura o tipo",
+              "tileLabel": "Inspeção: Filmografia de Leonar…",
+              "href": "/posts/post-inspecao-filmografia-leonardo-dicaprio.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filmografia-leonardo-dicaprio",
+              "description": "Filmografias (ficha 1): catálogo de longas de Leonardo DiCaprio como actor. Pessoa e Romeu + Julieta (1996) em fichas irmãs. Lista ≠ trinta inspeções de filme."
+            },
+            {
               "label": "Inspeção: Principia — marca, rótulo e o claim dos dermatologistas",
               "tileLabel": "Inspeção: Principia — marca, ró…",
               "href": "/posts/post-inspecao-loja-principia.html",
@@ -291,6 +299,22 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-derivado-caseina",
               "description": "Produtos nocivos: caseína do leite (*Bos taurus*) — A1/BCM-7, inflamação (limites de evidência) e laticínios ultraprocessados versus leite tradicional. Elo com glúten e ficha da vaca."
+            },
+            {
+              "label": "Inspeção: Produção animal — Galinha",
+              "tileLabel": "Inspeção: Produção animal — Gal…",
+              "href": "/posts/post-inspecao-animal-galinha.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-galinha",
+              "description": "Relatório educacional de Galinha (*Gallus gallus domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+            },
+            {
+              "label": "Inspeção: Animal — Cão",
+              "tileLabel": "Inspeção: Animal — Cão",
+              "href": "/posts/post-inspecao-animal-cao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-cao",
+              "description": "Relatório educacional de Cão (*Canis lupus familiaris): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
             },
             {
               "label": "Inspeção: Maconha — origem da palavra e transformação no Brasil",
@@ -339,6 +363,30 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-neurociencia-miguel-nicolelis",
               "description": "Neurociências Cap. 2: homenagem documental a Miguel Nicolelis — interfaces cérebro-máquina, Projeto Andar de Novo e o pontapé da Copa 2014. Mérito e limites, sem hagiografia."
+            },
+            {
+              "label": "Inspeção: Derivados da galinha — ultraprocessados e química industrial",
+              "tileLabel": "Inspeção: Derivados da galinha …",
+              "href": "/posts/post-inspecao-derivado-galinha.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-galinha",
+              "description": "Derivados de risco: separar galinha/ovo/carne frescos de nuggets e ultraprocessados industriais de frango."
+            },
+            {
+              "label": "Inspeção: Produção animal — Vaca / boi",
+              "tileLabel": "Inspeção: Produção animal — Vac…",
+              "href": "/posts/post-inspecao-animal-vaca.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-vaca",
+              "description": "Relatório educacional de Vaca / boi (*Bos taurus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+            },
+            {
+              "label": "Inspeção: Animal — Gato",
+              "tileLabel": "Inspeção: Animal — Gato",
+              "href": "/posts/post-inspecao-animal-gato.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-gato",
+              "description": "Relatório educacional de Gato (*Felis catus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
             },
             {
               "label": "Inspeção: Prof. Elisaldo Carlini — pioneiro da cannabis medicinal",
@@ -405,12 +453,36 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Expressões: «jesusamando» — sopro BR de assombro e afeto; contraste com aff; elo língua portuguesa e Faça o melhor!"
             },
             {
+              "label": "Inspeção: Derivados da vaca — carnes processadas e laticínios industriais",
+              "tileLabel": "Inspeção: Derivados da vaca — c…",
+              "href": "/posts/post-inspecao-derivado-vaca.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-vaca",
+              "description": "Produtos nocivos / derivados: bovino fresco versus carnes processadas e laticínios industriais. Elo com a ficha da caseína."
+            },
+            {
               "label": "Inspeção: Caminho — a palavra que liga o laboratório BudGanja",
               "tileLabel": "Inspeção: Caminho — a palavra q…",
               "href": "/posts/post-inspecao-palavra-caminho.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-caminho",
               "description": "Palavras: «caminho» (latim vulgar *cammīnus*) — via, método e hub lexical que relaciona passar, Send Me On My Way, Heródoto, Artes, cultivo e o mapa de inspeções."
+            },
+            {
+              "label": "Inspeção: Produção animal — Porco",
+              "tileLabel": "Inspeção: Produção animal — Por…",
+              "href": "/posts/post-inspecao-animal-porco.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-porco",
+              "description": "Relatório educacional de Porco (*Sus scrofa domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+            },
+            {
+              "label": "Inspeção: Animal — Cavalo",
+              "tileLabel": "Inspeção: Animal — Cavalo",
+              "href": "/posts/post-inspecao-animal-cavalo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-cavalo",
+              "description": "Relatório educacional de Cavalo (*Equus ferus caballus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
             },
             {
               "label": "Inspeção: Planta — Capim-limão — citral e gramínea aromática",
@@ -469,6 +541,22 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Produtos nocivos: glúten e farinha de trigo — celíaca, sensibilidade e ultraprocessados versus cereal tradicional. Elo com caseína, açúcar e chocolate industrial."
             },
             {
+              "label": "Inspeção: Derivados do porco — embutidos e química industrial",
+              "tileLabel": "Inspeção: Derivados do porco — …",
+              "href": "/posts/post-inspecao-derivado-porco.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-porco",
+              "description": "Derivados de risco: carne de porco fresca e charcutaria artesanal versus embutidos industriais."
+            },
+            {
+              "label": "Inspeção: Produção animal — Tilápia",
+              "tileLabel": "Inspeção: Produção animal — Til…",
+              "href": "/posts/post-inspecao-animal-peixe-tilapia.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-peixe-tilapia",
+              "description": "Relatório educacional de Tilápia (*Oreochromis niloticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+            },
+            {
               "label": "Inspeção: Profa. Solange Nappo — CEBRID",
               "tileLabel": "Inspeção: Profa. Solange Nappo …",
               "href": "/posts/post-inspecao-solange-nappo.html",
@@ -517,6 +605,22 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Produtos nocivos: chocolate industrial como matriz que junta cacau, açúcar, farinha/trigo/glúten, leite/caseína, Barriga de Trigo (Davis) e o léxico catalogado — hub que relaciona tudo."
             },
             {
+              "label": "Inspeção: Derivados do peixe — empanados e ultraprocessados",
+              "tileLabel": "Inspeção: Derivados do peixe — …",
+              "href": "/posts/post-inspecao-derivado-peixe.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-peixe",
+              "description": "Derivados de risco: filé fresco de tilápia versus empanados e ultraprocessados de peixe."
+            },
+            {
+              "label": "Inspeção: Produção animal — Abelha",
+              "tileLabel": "Inspeção: Produção animal — Abe…",
+              "href": "/posts/post-inspecao-animal-abelha.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-abelha",
+              "description": "Relatório educacional de Abelha (*Apis mellifera): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+            },
+            {
               "label": "Inspeção: Planta — Cavalinha — sílica e remineralizante",
               "tileLabel": "Inspeção: Planta — Cavalinha — …",
               "href": "/posts/post-inspecao-planta-cavalinha.html",
@@ -547,6 +651,22 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-derivado-analise-danos-videos",
               "description": "Onde o acervo de vídeos do projecto sustenta (ou não) a rede açúcar · farinha · leite · chocolate: quase todo o discurso está no Lair; MovReCam/CANABinALL quase não entram neste eixo."
+            },
+            {
+              "label": "Inspeção: Derivados da abelha — mel adulterado e açúcares industriais",
+              "tileLabel": "Inspeção: Derivados da abelha —…",
+              "href": "/posts/post-inspecao-derivado-abelha.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-abelha",
+              "description": "Derivados de risco: mel de qualidade e própolis versus mel adulterado com xaropes industriais."
+            },
+            {
+              "label": "Inspeção: Produção animal — Codorna",
+              "tileLabel": "Inspeção: Produção animal — Cod…",
+              "href": "/posts/post-inspecao-animal-codorna.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-codorna",
+              "description": "Relatório educacional de Codorna (*Coturnix japonica): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
             },
             {
               "label": "Inspeção: Planta — Erva-cidreira — citral e verbena brasileira",
@@ -1125,6 +1245,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Carapa guianensis* — óleo de sementes rico em limonoides (andirobina); tradição tópica e repelente."
             },
             {
+              "label": "Inspeção: nó na vida! — o laço no arco, ainda não é desastre",
+              "tileLabel": "Inspeção: nó na vida! — o laço …",
+              "href": "/posts/post-inspecao-expressao-no-na-vida.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-no-na-vida",
+              "description": "Expressões: «nó na vida!» — laço no arco da vida; par desatar o nó; ≠ desastre; ufa depois; Faça o melhor!"
+            },
+            {
               "label": "Inspeção: canal Manual do Mundo — ciência no ecrã e o Manual Maker",
               "tileLabel": "Inspeção: canal Manual do Mundo…",
               "href": "/posts/post-inspecao-canal-manual-do-mundo.html",
@@ -1155,6 +1283,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-jambu",
               "description": "*Acmella oleracea* — alquilamidas (espilanthol) causam dormência oral; erva da culinária paraense."
+            },
+            {
+              "label": "Inspeção: desatar o nó — o ofício, não o desastre",
+              "tileLabel": "Inspeção: desatar o nó — o ofíc…",
+              "href": "/posts/post-inspecao-expressao-desatar-o-no.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-desatar-o-no",
+              "description": "Expressões: «desatar o nó» — soltar o laço na corda e na vida; ≠ desastre (*astro*); par nó na vida; ufa depois; Faça o melhor!"
             },
             {
               "label": "Inspeção: Planta — Mulungu — alcaloides eritrínicos calmantes",
@@ -1277,12 +1413,44 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Pessoas: Lucas Evangelista — médico amado (Col 4,14) e epíteto «de almas» (tradição); fora dos Doze; corpo e alma sem partir o templo; Faça o melhor!"
             },
             {
+              "label": "Inspeção: Língua portuguesa — originalidade, alterações no tempo e Faça o melhor!",
+              "tileLabel": "Inspeção: Língua portuguesa — o…",
+              "href": "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-lingua-portuguesa",
+              "description": "Palavras: língua portuguesa — originalidade; alterações ao longo do tempo (latim → BR → digital); para que serve; Faça o melhor! nesta língua."
+            },
+            {
+              "label": "Inspeção: William Shakespeare — ofício da palavra em palco",
+              "tileLabel": "Inspeção: William Shakespeare —…",
+              "href": "/posts/post-inspecao-figura-william-shakespeare.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-william-shakespeare",
+              "description": "Pessoas × Artes: William Shakespeare (1564–1616) — poeta, dramaturgo e actor; elo principal em Romeu e Julieta. Capa: dossiê holográfico de campo (arte, não fonte)."
+            },
+            {
+              "label": "Inspeção: Baz Luhrmann — ofício de palco no ecrã",
+              "tileLabel": "Inspeção: Baz Luhrmann — ofício…",
+              "href": "/posts/post-inspecao-figura-baz-luhrmann.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-baz-luhrmann",
+              "description": "Pessoas × Artes: Baz Luhrmann (n. 1962) — cinema-teatro (Red Curtain); elo principal em Romeu + Julieta (1996). Peça e Shakespeare em fichas irmãs."
+            },
+            {
               "label": "Inspeção: Buguei — do inseto ao «deu ruim» e Faça o melhor!",
               "tileLabel": "Inspeção: Buguei — do inseto ao…",
               "href": "/posts/post-inspecao-palavra-buguei.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-buguei",
               "description": "Palavras: «buguei» — de bug (inseto) à falha e ao peito; como o sentido foi alterado para parecer ruim; Faça o melhor! depois do tranco."
+            },
+            {
+              "label": "Inspeção: Leonardo DiCaprio — ofício de presença no ecrã",
+              "tileLabel": "Inspeção: Leonardo DiCaprio — o…",
+              "href": "/posts/post-inspecao-figura-leonardo-dicaprio.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-leonardo-dicaprio",
+              "description": "Pessoas: Leonardo DiCaprio (n. 1974) — ofício de ecrã; inaugura a série Filmografias; âncora Romeu + Julieta (1996). Pessoa ≠ catálogo ≠ uma obra."
             },
             {
               "label": "Inspeção: Coração — órgão, afeto, centro, coragem e Faça o melhor!",
@@ -1709,12 +1877,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «fabuloso» (lat. *fābula* / *fabulous*) — elogio BR quotidiano; escala com genial, fantástico, incrível, maravilhoso, magnífico; tipografia fabsulkaoso → fabuloso."
             },
             {
+              "label": "Inspeção: Romeu e Julieta — o nome é o nó das casas",
+              "tileLabel": "Inspeção: Romeu e Julieta — o n…",
+              "href": "/posts/post-inspecao-arte-romeu-e-julieta.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-romeu-e-julieta",
+              "description": "Artes: Romeu e Julieta (Shakespeare) — tragédia de Verona; o apelido é o nó, a pessoa não é o nome. Autor em Pessoas. Literatura, não protocolo. Faça o melhor!"
+            },
+            {
               "label": "Inspeção: Fantástico — fantasia, elogio BR «fantástico!» e Faça o melhor!",
               "tileLabel": "Inspeção: Fantástico — fantasia…",
               "href": "/posts/post-inspecao-palavra-fantastico.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-fantastico",
               "description": "Palavras: «fantástico» (lat. *phantasticus* / fantasia) — correcção de fantisico; eixos fantasia e elogio BR; escala com legal, genial e maravilhoso."
+            },
+            {
+              "label": "Inspeção: Romeu + Julieta (1996) — o filme de Luhrmann e DiCaprio",
+              "tileLabel": "Inspeção: Romeu + Julieta (1996…",
+              "href": "/posts/post-inspecao-filme-romeu-mais-julieta.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-romeu-mais-julieta",
+              "description": "Artes: Romeu + Julieta (1996, Baz Luhrmann) — Leonardo DiCaprio e Claire Danes; mesmos versos, Verona Beach. Peça e autor em fichas irmãs. Literatura no ecrã, não protocolo."
             },
             {
               "label": "Inspeção: Planta — ser vivo, cultivo e Farmácia Viva",
@@ -2365,6 +2549,54 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: impressão = pressão para dentro (premere); objecto panela de pressão + válvula de escape; ≠ inspiração; ficha ≠ anular válvula; Faça o melhor!"
             },
             {
+              "label": "Inspeção: Etimologia — o ofício de perguntar de onde veio",
+              "tileLabel": "Inspeção: Etimologia — o ofício…",
+              "href": "/posts/post-inspecao-palavra-etimologia.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-etimologia",
+              "description": "Palavras: etimologia (étymon + lógos) — método da série; étimo ≠ etimologia popular (cara+alho); irmãs aglutinação e polimorfismo; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Nó — o laço na corda, antes de desatar",
+              "tileLabel": "Inspeção: Nó — o laço na corda,…",
+              "href": "/posts/post-inspecao-palavra-no.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-no",
+              "description": "Palavras: «nó» (lat. *nodus*) — laço na corda e na vida; ≠ corda ≠ codorna; elos desatar / desastre / ufa; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Corda — o objecto onde mora o nó",
+              "tileLabel": "Inspeção: Corda — o objecto ond…",
+              "href": "/posts/post-inspecao-palavra-corda.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-corda",
+              "description": "Palavras-objecto: «corda» (lat. *chorda*) — fio que recebe o nó; ≠ cinta ≠ codorna; catálogo Objetos; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Desatar — soltar o nó, sem virar desastre",
+              "tileLabel": "Inspeção: Desatar — soltar o nó…",
+              "href": "/posts/post-inspecao-palavra-desatar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-desatar",
+              "description": "Palavras: «desatar» (*des-* + *atar*) — gesto de soltar o nó; ≠ desastre (*astro*); ditado desatar o nó; ufa no fim; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Desastre — má estrela, não é desatar o nó",
+              "tileLabel": "Inspeção: Desastre — má estrela…",
+              "href": "/posts/post-inspecao-palavra-desastre.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-desastre",
+              "description": "Palavras: «desastre» (*dis-* + *astrum*) — má estrela; ≠ desatar; relação de ofício com desatar o nó; ufa depois; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Ufa — o sopro depois de desatar o nó",
+              "tileLabel": "Inspeção: Ufa — o sopro depois …",
+              "href": "/posts/post-inspecao-palavra-ufa.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-ufa",
+              "description": "Palavras: «ufa» — interjeição BR de alívio; par de aff; fecho de desatar o nó; legal (gíria) se couber; Faça o melhor!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",
@@ -2403,14 +2635,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-mao-esquerda-direita",
               "description": "Palavras: «mão esquerda» / «mão direita» (*manus*) — par de ofício; mão direita × coração (gesto × cuidado); elo esquerdo; sem moral dualista."
-            },
-            {
-              "label": "Inspeção: Língua portuguesa — originalidade, alterações no tempo e Faça o melhor!",
-              "tileLabel": "Inspeção: Língua portuguesa — o…",
-              "href": "/posts/post-inspecao-palavra-lingua-portuguesa.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-lingua-portuguesa",
-              "description": "Palavras: língua portuguesa — originalidade; alterações ao longo do tempo (latim → BR → digital); para que serve; Faça o melhor! nesta língua."
             },
             {
               "label": "Inspeção: Esquerdo — relação com as mãos, criação e Faça o melhor!",
@@ -3004,110 +3228,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-celular-riscos-saude-criancas",
               "description": "Verificação do smartphone como equipamento social: riscos à saúde infantil (sono, visão, mente, aprendizagem), limites SBP/guia federal 2025, Lei 15.100/2025 e enquadramento mundial (UNESCO)."
-            },
-            {
-              "label": "Inspeção: Derivados da galinha — ultraprocessados e química industrial",
-              "tileLabel": "Inspeção: Derivados da galinha …",
-              "href": "/posts/post-inspecao-derivado-galinha.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-galinha",
-              "description": "Derivados de risco: separar galinha/ovo/carne frescos de nuggets e ultraprocessados industriais de frango."
-            },
-            {
-              "label": "Inspeção: Derivados da vaca — carnes processadas e laticínios industriais",
-              "tileLabel": "Inspeção: Derivados da vaca — c…",
-              "href": "/posts/post-inspecao-derivado-vaca.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-vaca",
-              "description": "Produtos nocivos / derivados: bovino fresco versus carnes processadas e laticínios industriais. Elo com a ficha da caseína."
-            },
-            {
-              "label": "Inspeção: Derivados do porco — embutidos e química industrial",
-              "tileLabel": "Inspeção: Derivados do porco — …",
-              "href": "/posts/post-inspecao-derivado-porco.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-porco",
-              "description": "Derivados de risco: carne de porco fresca e charcutaria artesanal versus embutidos industriais."
-            },
-            {
-              "label": "Inspeção: Derivados do peixe — empanados e ultraprocessados",
-              "tileLabel": "Inspeção: Derivados do peixe — …",
-              "href": "/posts/post-inspecao-derivado-peixe.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-peixe",
-              "description": "Derivados de risco: filé fresco de tilápia versus empanados e ultraprocessados de peixe."
-            },
-            {
-              "label": "Inspeção: Derivados da abelha — mel adulterado e açúcares industriais",
-              "tileLabel": "Inspeção: Derivados da abelha —…",
-              "href": "/posts/post-inspecao-derivado-abelha.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-derivado-abelha",
-              "description": "Derivados de risco: mel de qualidade e própolis versus mel adulterado com xaropes industriais."
-            },
-            {
-              "label": "Inspeção: Produção animal — Galinha",
-              "tileLabel": "Inspeção: Produção animal — Gal…",
-              "href": "/posts/post-inspecao-animal-galinha.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-galinha",
-              "description": "Relatório educacional de Galinha (*Gallus gallus domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Produção animal — Vaca / boi",
-              "tileLabel": "Inspeção: Produção animal — Vac…",
-              "href": "/posts/post-inspecao-animal-vaca.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-vaca",
-              "description": "Relatório educacional de Vaca / boi (*Bos taurus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Produção animal — Porco",
-              "tileLabel": "Inspeção: Produção animal — Por…",
-              "href": "/posts/post-inspecao-animal-porco.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-porco",
-              "description": "Relatório educacional de Porco (*Sus scrofa domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Produção animal — Tilápia",
-              "tileLabel": "Inspeção: Produção animal — Til…",
-              "href": "/posts/post-inspecao-animal-peixe-tilapia.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-peixe-tilapia",
-              "description": "Relatório educacional de Tilápia (*Oreochromis niloticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Produção animal — Abelha",
-              "tileLabel": "Inspeção: Produção animal — Abe…",
-              "href": "/posts/post-inspecao-animal-abelha.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-abelha",
-              "description": "Relatório educacional de Abelha (*Apis mellifera): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Animal — Cão",
-              "tileLabel": "Inspeção: Animal — Cão",
-              "href": "/posts/post-inspecao-animal-cao.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-cao",
-              "description": "Relatório educacional de Cão (*Canis lupus familiaris): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Animal — Gato",
-              "tileLabel": "Inspeção: Animal — Gato",
-              "href": "/posts/post-inspecao-animal-gato.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-gato",
-              "description": "Relatório educacional de Gato (*Felis catus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
-            },
-            {
-              "label": "Inspeção: Animal — Cavalo",
-              "tileLabel": "Inspeção: Animal — Cavalo",
-              "href": "/posts/post-inspecao-animal-cavalo.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-animal-cavalo",
-              "description": "Relatório educacional de Cavalo (*Equus ferus caballus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
             },
             {
               "label": "Inspeção: Anthony Henman — antropologia da diamba e elo com Diamba Sarabamba",

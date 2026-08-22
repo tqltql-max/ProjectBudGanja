@@ -23,6 +23,7 @@
     palavra: 'pages.inspections.sugTipoPalavra',
     pessoas: 'pages.inspections.sugTipoPessoas',
     arte: 'pages.inspections.sugTipoArte',
+    filmografia: 'pages.inspections.sugTipoFilmografia',
     expressao: 'pages.inspections.sugTipoExpressao'
   };
   var STATUS_I18N = {
@@ -162,6 +163,7 @@
       palavra: 'Palavra',
       pessoas: 'Pessoas',
       arte: 'Arte',
+      filmografia: 'Filmografia',
       expressao: 'Expressão'
     };
     return key ? t(key, fallbacks[tipo] || tipo) : tipo;
