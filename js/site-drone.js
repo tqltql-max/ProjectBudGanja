@@ -7,8 +7,10 @@
   'use strict';
 
   var STORAGE_KEY = 'budganja-drone';
+  var CARGO_KEY = 'budganja-drone-cargo';
   var SIZE = 54;
-  var SKIP_SEL = 'script, style, textarea, input, select, option, code, pre, svg, button, a.botao, .site-drone, .inverno-drone, .learn-toolbar, #site-header, #site-footer, .header-bar, .mobile-menu';
+  var MAX_CARGO = 80;
+  var SKIP_SEL = 'script, style, textarea, input, select, option, code, pre, svg, button, a.botao, .site-drone, .inverno-drone, .learn-toolbar, #site-header, #site-footer, .header-bar, .mobile-menu, .site-drone-pad';
   var WORD_CHARS = /[A-Za-zÀ-ÿ]/;
   var LANG_NAMES = {
     en: 'English', es: 'español', fr: 'français', it: 'italiano', de: 'Deutsch',
@@ -51,7 +53,16 @@
     inspectQueued: false,
     heldEl: null,
     litButton: null,
-    litText: null
+    litText: null,
+    pad: null,
+    padChips: null,
+    padText: null,
+    padCount: null,
+    padLead: null,
+    padToggle: null,
+    cargo: [],
+    cargoDraft: '',
+    padOpen: false
   };
 
   var BUTTON_SEL = 'a.botao, .botao, .botao-home';
@@ -438,6 +449,220 @@
     state.abductEl = null;
   }
 
+  function loadCargo() {
+    try {
+      var raw = localStorage.getItem(CARGO_KEY);
+      if (!raw) return;
+      var data = JSON.parse(raw);
+      if (!data || typeof data !== 'object') return;
+      state.cargo = Array.isArray(data.words) ? data.words.filter(function (item) {
+        return item && item.word;
+      }).slice(0, MAX_CARGO) : [];
+      state.cargoDraft = typeof data.draft === 'string' ? data.draft : '';
+      state.padOpen = !!data.open;
+    } catch (e) { /* ignore */ }
+  }
+
+  function saveCargo() {
+    try {
+      localStorage.setItem(CARGO_KEY, JSON.stringify({
+        words: state.cargo,
+        draft: state.cargoDraft,
+        open: state.padOpen
+      }));
+    } catch (e) { /* ignore */ }
+  }
+
+  function cargoCountLabel() {
+    var n = state.cargo.length;
+    if (n === 1) return t('common.dronePadCountOne', '1 palavra');
+    return t('common.dronePadCountMany', n + ' palavras').replace('{n}', String(n));
+  }
+
+  function insertCargoWord(word) {
+    if (!state.padText || !word) return;
+    var ta = state.padText;
+    var start = ta.selectionStart != null ? ta.selectionStart : ta.value.length;
+    var end = ta.selectionEnd != null ? ta.selectionEnd : start;
+    var before = ta.value.slice(0, start);
+    var after = ta.value.slice(end);
+    var glue = '';
+    if (before && !/[\s\n]$/.test(before) && !/^[\s\n,.;:!?…]/.test(word)) glue = ' ';
+    ta.value = before + glue + word + after;
+    var pos = (before + glue + word).length;
+    ta.selectionStart = ta.selectionEnd = pos;
+    state.cargoDraft = ta.value;
+    saveCargo();
+    ta.focus();
+  }
+
+  function collectAbductedWord(word, emotion) {
+    word = String(word || '').replace(/\s+/g, ' ').trim();
+    if (!word) return;
+    var key = word.toLocaleLowerCase('pt-BR');
+    var found = false;
+    for (var i = 0; i < state.cargo.length; i++) {
+      if (state.cargo[i].key === key) {
+        found = true;
+        break;
+      }
+    }
+    if (!found) {
+      if (state.cargo.length >= MAX_CARGO) state.cargo.shift();
+      state.cargo.push({ word: word, key: key, emotion: emotion || '' });
+    }
+    if (state.cargo.length === 1) state.padOpen = true;
+    saveCargo();
+    syncPad();
+  }
+
+  function renderPadChips() {
+    if (!state.padChips) return;
+    if (!state.cargo.length) {
+      state.padChips.innerHTML = '';
+      return;
+    }
+    state.padChips.innerHTML = state.cargo.map(function (item) {
+      var emotion = item.emotion ? ' site-drone-pad-chip--' + escapeHtml(item.emotion) : '';
+      return (
+        '<button type="button" class="site-drone-pad-chip' + emotion + '" data-pad-word="' +
+        escapeHtml(item.word) + '" title="' +
+        escapeHtml(t('common.dronePadInsert', 'Inserir no texto')) + '">' +
+        escapeHtml(item.word) +
+        '</button>'
+      );
+    }).join('');
+  }
+
+  function syncPad() {
+    if (!state.pad) mountPad();
+    if (!state.pad) return;
+    var hasStuff = state.cargo.length > 0 || !!state.cargoDraft;
+    state.pad.hidden = !hasStuff;
+    state.pad.classList.toggle('is-open', state.padOpen && !state.pad.hidden);
+    if (state.padToggle) {
+      state.padToggle.setAttribute('aria-expanded', state.padOpen ? 'true' : 'false');
+      var count = cargoCountLabel();
+      state.padToggle.innerHTML =
+        '<span class="site-drone-pad-toggle-title">' +
+        escapeHtml(t('common.dronePadTitle', 'Palavras abdusidas')) +
+        '</span><span class="site-drone-pad-toggle-count">' +
+        escapeHtml(count) + '</span>';
+    }
+    if (state.padLead) {
+      state.padLead.textContent = state.cargo.length
+        ? t('common.dronePadLead', 'Clica numa palavra para a soltar no texto.')
+        : t('common.dronePadEmpty', 'Com o drone ligado, clica numa palavra da página para a abduzir.');
+    }
+    if (state.padText && state.padText !== document.activeElement) {
+      state.padText.value = state.cargoDraft;
+      state.padText.placeholder = t('common.dronePadPlaceholder', 'Escreve aqui com as palavras apanhadas…');
+    }
+    var copyBtn = state.pad.querySelector('[data-pad-copy]');
+    var breakBtn = state.pad.querySelector('[data-pad-break]');
+    var clearTextBtn = state.pad.querySelector('[data-pad-clear-text]');
+    var clearWordsBtn = state.pad.querySelector('[data-pad-clear]');
+    if (copyBtn) copyBtn.textContent = t('common.dronePadCopy', 'Copiar');
+    if (breakBtn) breakBtn.textContent = t('common.dronePadBreak', 'Linha nova');
+    if (clearTextBtn) clearTextBtn.textContent = t('common.dronePadClearText', 'Apagar texto');
+    if (clearWordsBtn) clearWordsBtn.textContent = t('common.dronePadClearWords', 'Soltar palavras');
+    var label = state.pad.querySelector('[data-pad-label]');
+    if (label) label.textContent = t('common.dronePadWrite', 'Texto');
+    renderPadChips();
+  }
+
+  function mountPad() {
+    if (state.pad && state.pad.isConnected) return;
+    loadCargo();
+    var pad = document.createElement('aside');
+    pad.className = 'site-drone-pad';
+    pad.setAttribute('data-learn-skip', '1');
+    pad.setAttribute('aria-label', t('common.dronePadTitle', 'Palavras abdusidas'));
+    pad.hidden = true;
+    pad.innerHTML =
+      '<button type="button" class="site-drone-pad-toggle" data-pad-toggle aria-expanded="false"></button>' +
+      '<div class="site-drone-pad-body">' +
+      '<p class="site-drone-pad-lead" data-pad-lead></p>' +
+      '<div class="site-drone-pad-chips" data-pad-chips></div>' +
+      '<label class="site-drone-pad-label" data-pad-label for="site-drone-pad-text"></label>' +
+      '<textarea id="site-drone-pad-text" class="site-drone-pad-text" rows="4" spellcheck="true"></textarea>' +
+      '<div class="site-drone-pad-actions">' +
+      '<button type="button" class="site-drone-pad-btn" data-pad-copy></button>' +
+      '<button type="button" class="site-drone-pad-btn" data-pad-break></button>' +
+      '<button type="button" class="site-drone-pad-btn" data-pad-clear-text></button>' +
+      '<button type="button" class="site-drone-pad-btn site-drone-pad-btn--ghost" data-pad-clear></button>' +
+      '</div></div>';
+    document.body.appendChild(pad);
+    state.pad = pad;
+    state.padChips = pad.querySelector('[data-pad-chips]');
+    state.padText = pad.querySelector('#site-drone-pad-text');
+    state.padLead = pad.querySelector('[data-pad-lead]');
+    state.padToggle = pad.querySelector('[data-pad-toggle]');
+    pad.addEventListener('mouseenter', function () { state.paused = true; });
+    pad.addEventListener('mouseleave', function () {
+      if (state.padText !== document.activeElement) state.paused = false;
+    });
+    pad.addEventListener('click', function (event) {
+      var toggle = event.target.closest('[data-pad-toggle]');
+      if (toggle) {
+        event.preventDefault();
+        state.padOpen = !state.padOpen;
+        saveCargo();
+        syncPad();
+        return;
+      }
+      var chip = event.target.closest('[data-pad-word]');
+      if (chip) {
+        event.preventDefault();
+        insertCargoWord(chip.getAttribute('data-pad-word') || '');
+        return;
+      }
+      if (event.target.closest('[data-pad-copy]')) {
+        event.preventDefault();
+        var text = state.padText ? state.padText.value : state.cargoDraft;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function () {
+            var btn = pad.querySelector('[data-pad-copy]');
+            if (!btn) return;
+            btn.textContent = t('common.dronePadCopied', 'Copiado');
+            global.setTimeout(function () {
+              if (btn.isConnected) btn.textContent = t('common.dronePadCopy', 'Copiar');
+            }, 1200);
+          }).catch(function () { /* ignore */ });
+        }
+        return;
+      }
+      if (event.target.closest('[data-pad-break]')) {
+        event.preventDefault();
+        insertCargoWord('\n');
+        return;
+      }
+      if (event.target.closest('[data-pad-clear-text]')) {
+        event.preventDefault();
+        state.cargoDraft = '';
+        if (state.padText) state.padText.value = '';
+        saveCargo();
+        syncPad();
+        return;
+      }
+      if (event.target.closest('[data-pad-clear]')) {
+        event.preventDefault();
+        state.cargo = [];
+        saveCargo();
+        syncPad();
+      }
+    });
+    if (state.padText) {
+      state.padText.addEventListener('input', function () {
+        state.cargoDraft = state.padText.value;
+        saveCargo();
+      });
+      state.padText.addEventListener('focus', function () { state.paused = true; });
+      state.padText.addEventListener('blur', function () { state.paused = false; });
+    }
+    syncPad();
+  }
+
   function spawnAbductGhost(word, rect, emotion) {
     clearAbductGhost();
     if (!rect) return;
@@ -562,6 +787,7 @@
     var hit = state.abductHit;
     if (hit && hit.word) {
       if (!state.reduced) spawnAbductGhost(hit.word, hit.rect, emotionOf(hit.word));
+      collectAbductedWord(hit.word, emotionOf(hit.word));
       var info = meaningOf(hit.word);
       if (!info) {
         info = {
@@ -1073,7 +1299,7 @@
     if (!state.drone || !state.drone.isConnected) return;
     var el = event.target;
     if (!el || !el.closest) return;
-    if (el.closest('[data-drone-toggle], #site-drone, .site-drone, input, textarea, select, label, .mobile-menu, #site-header, #site-footer, .learn-toolbar, .site-drone-tip')) {
+    if (el.closest('[data-drone-toggle], #site-drone, .site-drone, input, textarea, select, label, .mobile-menu, #site-header, #site-footer, .learn-toolbar, .site-drone-tip, .site-drone-pad')) {
       return;
     }
     var wordEl = el.closest(WORD_WRAP_SEL);
@@ -1116,6 +1342,7 @@
     });
     global.addEventListener('budganja:locale-change', function () {
       syncButtons();
+      syncPad();
       if (state.currentSrc) fillTip(meaningOf(state.currentSrc));
       if (state.drone) {
         state.drone.setAttribute(
@@ -1130,6 +1357,7 @@
       mountDrone();
       setOn(loadFlag());
     }
+    mountPad();
   }
 
   if (document.readyState === 'loading') {
@@ -1141,6 +1369,7 @@
   global.BudGanjaDrone = {
     setOn: setOn,
     dismiss: dismissDrone,
-    isOn: function () { return state.on; }
+    isOn: function () { return state.on; },
+    getCargo: function () { return state.cargo.slice(); }
   };
 })(typeof window !== 'undefined' ? window : globalThis);

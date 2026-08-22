@@ -439,6 +439,171 @@ body.site-drone-on .site-drone-emotion.is-drone-over {
     -webkit-box-decoration-break: clone;
 }
 
+.site-drone-pad {
+    position: fixed;
+    z-index: 72;
+    left: 0.75rem;
+    bottom: 5.6rem;
+    width: min(22.5rem, calc(100vw - 1.5rem));
+    border-radius: 12px;
+    border: 1px solid rgba(226, 193, 90, 0.38);
+    background: linear-gradient(165deg, rgba(16, 22, 28, 0.96), rgba(10, 12, 14, 0.94));
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.42);
+    color: #f4ede0;
+}
+
+.site-drone-pad[hidden] {
+    display: none;
+}
+
+.site-drone-pad-toggle {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.7rem;
+    width: 100%;
+    margin: 0;
+    padding: 0.55rem 0.8rem;
+    border: 0;
+    border-radius: 12px;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+    font: inherit;
+}
+
+.site-drone-pad.is-open .site-drone-pad-toggle {
+    border-bottom: 1px solid rgba(226, 193, 90, 0.22);
+    border-radius: 12px 12px 0 0;
+}
+
+.site-drone-pad-toggle-title {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #f4e08a;
+}
+
+.site-drone-pad-toggle-count {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(244, 237, 216, 0.68);
+}
+
+.site-drone-pad-body {
+    display: none;
+    padding: 0.65rem 0.8rem 0.8rem;
+}
+
+.site-drone-pad.is-open .site-drone-pad-body {
+    display: block;
+}
+
+.site-drone-pad-lead {
+    margin: 0 0 0.5rem;
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: rgba(244, 237, 216, 0.78);
+}
+
+.site-drone-pad-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.32rem;
+    max-height: 6.2rem;
+    overflow: auto;
+    margin: 0 0 0.55rem;
+}
+
+.site-drone-pad-chip {
+    margin: 0;
+    padding: 0.18rem 0.5rem;
+    border-radius: 999px;
+    border: 1px solid rgba(226, 193, 90, 0.42);
+    background: rgba(226, 193, 90, 0.12);
+    color: #ffe9a0;
+    font: inherit;
+    font-size: 0.78rem;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.site-drone-pad-chip:hover,
+.site-drone-pad-chip:focus-visible {
+    background: rgba(226, 193, 90, 0.28);
+    color: #fff4c4;
+}
+
+.site-drone-pad-chip--alegria { color: #f2d04b; border-color: rgba(242, 208, 75, 0.55); }
+.site-drone-pad-chip--tristeza { color: #8bb4ff; border-color: rgba(139, 180, 255, 0.55); }
+.site-drone-pad-chip--raiva { color: #ff8a7a; border-color: rgba(255, 138, 122, 0.55); }
+.site-drone-pad-chip--medo { color: #c9b0ef; border-color: rgba(201, 176, 239, 0.55); }
+.site-drone-pad-chip--nojinho { color: #9fd46a; border-color: rgba(159, 212, 106, 0.55); }
+
+.site-drone-pad-label {
+    display: block;
+    margin: 0 0 0.28rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #e2c15a;
+}
+
+.site-drone-pad-text {
+    display: block;
+    width: 100%;
+    min-height: 5.6rem;
+    margin: 0 0 0.55rem;
+    padding: 0.5rem 0.6rem;
+    border-radius: 8px;
+    border: 1px solid rgba(226, 193, 90, 0.28);
+    background: rgba(6, 8, 10, 0.72);
+    color: #f4ede0;
+    font: inherit;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    resize: vertical;
+}
+
+.site-drone-pad-text:focus {
+    outline: 2px solid rgba(226, 193, 90, 0.55);
+    outline-offset: 1px;
+}
+
+.site-drone-pad-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.site-drone-pad-btn {
+    margin: 0;
+    padding: 0.28rem 0.55rem;
+    border-radius: 999px;
+    border: 1px solid rgba(226, 193, 90, 0.42);
+    background: rgba(226, 193, 90, 0.14);
+    color: #f4e08a;
+    font: inherit;
+    font-size: 0.72rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.site-drone-pad-btn:hover,
+.site-drone-pad-btn:focus-visible {
+    background: rgba(226, 193, 90, 0.28);
+}
+
+.site-drone-pad-btn--ghost {
+    background: transparent;
+    color: rgba(244, 237, 216, 0.75);
+}
+
 @media (prefers-reduced-motion: reduce) {
     .site-drone-prop,
     .site-drone-craft {
