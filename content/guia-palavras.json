@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T03:55:58.229Z",
+  "updatedAt": "2026-08-22T04:12:52.894Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4762,6 +4762,22 @@
       "curiositiesEn": "Do not merge with Tamara (palm), Maria, mar, or Sanskrit Māra. Vida poem: paper boats.",
       "historyEs": "En Brasil Mara es antropónimo (a menudo hipocorístico de Maria y parientes). El hebreo mārāh («amarga», Rut 1:20) es capa etimológica. El pegamento pedido es maravilha — el nombre que cabe en la maravilla pequeña de los barquitos de papel.",
       "curiositiesEs": "No fusionar con Tamara (palmera), Maria, mar o el sánscrito Māra. Poema Vida: barquitos de papel."
+    },
+    {
+      "id": "orfeu",
+      "word": "Orfeu",
+      "simple": "Nome / mitónimo PT ← lat. Orpheus ← gr. Ὀρφεύς (étimo incerto); mito da lira e Eurídice; no BR, Orfeu da Conceição / Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo (Morfeu ← morphē); Faça o melhor!",
+      "simpleEn": "PT name / mythonym ← Lat. Orpheus ← Gk. Ὀρφεύς (uncertain etymon); lyre and Eurydice; in BR, Black Orpheus; ear-glue with Matrix Morpheus, not the same etymon (Morpheus ← morphē); Do your best!",
+      "simpleEs": "Nombre / mitónimo PT ← lat. Orpheus ← gr. Ὀρφεύς (étimo incerto); lira y Eurídice; en BR, Orfeu Negro; pegamento de oído con Morpheus de Matrix, no el mismo étimo (Morfeo ← morphē); ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-orfeu.html",
+      "history": "Orfeu é a forma portuguesa de Orpheus / Ὀρφεύς. O étimo grego é incerto. O mito (lira, Hades, Eurídice) e o cinema BR (Orfeu Negro) são camadas. Morpheus do Matrix herda Morfeu (μορφή, forma) — primo do ouvido, não do étimo.",
+      "curiosities": "Não fundir Orfeu com Morpheus / Morfeu, nem com Orfeo / Orphée. Elo: ficha Matrix e ficha Jobim.",
+      "historyEn": "Orfeu is the Portuguese form of Orpheus / Ὀρφεύς. The Greek etymon is uncertain. The myth (lyre, Hades, Eurydice) and BR cinema (Black Orpheus) are layers. Matrix Morpheus inherits Ovid’s Morpheus (morphē, form) — a cousin of the ear, not of the etymon.",
+      "curiositiesEn": "Do not merge Orfeu with Morpheus / Morfeu, nor with Orfeo / Orphée. Links: Matrix sheet and Jobim sheet.",
+      "historyEs": "Orfeu es la forma portuguesa de Orpheus / Ὀρφεύς. El étimo griego es incerto. El mito (lira, Hades, Eurídice) y el cine BR (Orfeu Negro) son capas. Morpheus de Matrix hereda a Morfeo (morphē, forma) — primo del oído, no del étimo.",
+      "curiositiesEs": "No fusionar Orfeu con Morpheus / Morfeo, ni con Orfeo / Orphée. Vínculos: ficha Matrix y ficha Jobim."
     },
     {
       "id": "toda-crianca-nasce-cientista",

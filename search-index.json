@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T04:10:41.207Z",
+  "updatedAt": "2026-08-22T04:13:21.558Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -174,6 +174,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Orfeu — o nome, a lira e o Morpheus que não é ele",
+      "url": "/posts/post-inspecao-palavra-orfeu.html",
+      "excerpt": "Palavras: «Orfeu» (gr. Ὀρφεύς, étimo incerto) — mito da lira e Eurídice; no BR, Orfeu da Conceição / Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo (Morfeu ← morphē); Faça o melhor!",
+      "text": "Inspeção: Orfeu — o nome, a lira e o Morpheus que não é ele Palavras: «Orfeu» (gr. Ὀρφεύς, étimo incerto) — mito da lira e Eurídice; no BR, Orfeu da Conceição / Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo (Morfeu ← morphē); Faça o melhor! inspecao ## Escopo\n\nInspeção editorial do **nome Orfeu** — antropónimo e mitónimo no português, via lat. *Orpheus*, via gr. **Ὀρφεύς** (*Orpheús*). Pedido de campo: relacionar com **Morpheus** de [The Matrix](/posts/post-inspecao-filme-the-matrix.html).\n\nO lab fiche o **vocábulo**. Não reescreve a teogonia grega, nem duplica a ficha de [Tom Jobim](/posts/post-inspecao-figura-tom-jobim.html) (*Orfeu da Conceição* / *Orfeu Negro*). O mito e o cinema BR entram como **camadas**. O Matrix entra como **contraste de ouvido** — não como o mesmo étimo.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · Orfeu](https://pt.wiktionary.org/wiki/Orfeu), [Orpheus](https://en.wiktionary.org/wiki/Orpheus), [Wikipédia · Orfeu](https://pt.wikipedia.org/wiki/Orfeu), [Morpheus](https://en.wiktionary.org/wiki/Morpheus), [Morfeu](https://pt.wikipedia.org/wiki/Morfeu), ficha [The Matrix](/posts/post-inspecao-filme-the-matrix.html). **Ficha ≠ biografia de uma pessoa viva, nem manual de descer ao Hades.** Sem afiliação com Warner Bros. / Wachowski. **Não fundir Orfeu com Morpheus / Morfeu.**\n\n## 1. Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Orfeu** (nome próprio; mitónimo) |\n| Classe | Antropónimo masculino no PT; forma culta do gr. Ὀρφεύς |\n| Via | PT **Orfeu** ← lat. *Orpheus* ← gr. **Ὀρφεύς** |\n| Tipo BudGanja | Palavra — nome × mito × ouvido Matrix |\n| Elo pedido | [Morpheus / Matrix](/posts/post-inspecao-filme-the-matrix.html) — **cola de ouvido**, não de étimo |\n| Elo BR | [Tom Jobim](/posts/post-inspecao-figura-tom-jobim.html) — *Orfeu da Conceição* → *Orfeu Negro* (1959) |\n| ≠ | **Morpheus** (Matrix) · **Morfeu** (Ovídio, μορφή) · *Orfeo* (ES/IT) · *Orphée* (FR / Cocteau) |\n| Font"
     },
     {
       "title": "Inspeção: Mara — o nome que chegou, a maravilha e os barquinhos de papel",
@@ -4818,6 +4824,12 @@
       "url": "/posts/post-inspecao-palavra-mara.html",
       "excerpt": "Nome próprio BR que chegou ao mapa; cola no som de maravilha; hebr. mārāh (amarga) é camada, não veredicto; ≠ Tamara / Maria; barquinhos de papel; Faça o melhor!",
       "text": "Mara Nome próprio BR que chegou ao mapa; cola no som de maravilha; hebr. mārāh (amarga) é camada, não veredicto; ≠ Tamara / Maria; barquinhos de papel; Faça o melhor! lexico guia palavras glossário mara"
+    },
+    {
+      "title": "Orfeu",
+      "url": "/posts/post-inspecao-palavra-orfeu.html",
+      "excerpt": "Nome / mitónimo PT ← lat. Orpheus ← gr. Ὀρφεύς (étimo incerto); mito da lira e Eurídice; no BR, Orfeu da Conceição / Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo (Morfeu ← morphē); Faça o melhor!",
+      "text": "Orfeu Nome / mitónimo PT ← lat. Orpheus ← gr. Ὀρφεύς (étimo incerto); mito da lira e Eurídice; no BR, Orfeu da Conceição / Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo (Morfeu ← morphē); Faça o melhor! lexico guia palavras glossário orfeu"
     },
     {
       "title": "toda criança nasce cientista",

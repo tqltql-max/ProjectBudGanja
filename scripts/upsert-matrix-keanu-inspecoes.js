@@ -78,9 +78,10 @@ if (fs.existsSync(SUG_FILE)) {
     sources: [
       matrix.sourceUrl,
       'https://www.youtube.com/watch?v=vKQi3bBA1y8',
-      '/posts/post-inspecao-figura-keanu-reeves.html'
+      '/posts/post-inspecao-figura-keanu-reeves.html',
+      '/posts/post-inspecao-palavra-orfeu.html'
     ],
-    notes: 'Obra ≠ biografia Keanu; metáfora da pílula é simbólica.'
+    notes: 'Obra ≠ biografia Keanu; metáfora da pílula é simbólica; Morpheus ≠ Orfeu.'
   });
 
   upsertSug(items, {

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T04:09:03.235Z",
+  "updatedAt": "2026-08-22T04:12:52.886Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -636,23 +636,25 @@
     },
     {
       "id": "arte-the-matrix",
-      "title": "The Matrix — a obra Wachowski e a pergunta do real",
-      "titleEn": "The Matrix — the Wachowski work and the question of the real",
-      "titleEs": "The Matrix — la obra Wachowski y la pregunta de lo real",
+      "title": "The Matrix — cinema, simulação e verificação",
+      "titleEn": "The Matrix — cinema, simulation and verification",
+      "titleEs": "The Matrix — cine, simulación y verificación",
       "tipo": "arte",
       "priority": 2,
       "status": "feita",
-      "why": "Artes · cinema: génese 1999 e influências primeiro; Keanu em Pessoas (secundário).",
-      "whyEn": "Arts · film: 1999 genesis and influences first; Keanu in People (secondary).",
-      "whyEs": "Artes · cine: génesis 1999 e influencias primero; Keanu en Personas (secundario).",
+      "why": "Artes · cinema: The Matrix (1999) — obra; biografia do actor em Keanu Reeves (Pessoas).",
+      "whyEn": "Arts · film: The Matrix (1999) — work; actor biography in Keanu Reeves (People).",
+      "whyEs": "Artes · cine: The Matrix (1999) — obra; biografía del actor en Keanu Reeves (Personas).",
       "suggestedSlug": "inspecao-filme-the-matrix",
       "doneHref": "/posts/post-inspecao-filme-the-matrix.html",
       "seriesHint": "artes-cultura",
       "sources": [
         "https://pt.wikipedia.org/wiki/Matrix",
-        "/posts/post-inspecao-filme-the-matrix.html"
+        "https://www.youtube.com/watch?v=vKQi3bBA1y8",
+        "/posts/post-inspecao-figura-keanu-reeves.html",
+        "/posts/post-inspecao-palavra-orfeu.html"
       ],
-      "notes": "Filme primeiro; biografia do actor fora deste recorte."
+      "notes": "Obra ≠ biografia Keanu; metáfora da pílula é simbólica; Morpheus ≠ Orfeu."
     },
     {
       "id": "figura-keanu-reeves",
@@ -7698,6 +7700,30 @@
         "/posts/post-inspecao-canal-paulinho.html"
       ],
       "notes": "Hub /jogos/bagual/ · live no Kick (poderosobagual) · temas de mérito no catálogo. Personagem ≠ pessoa. Live ≠ arquivo. Ficção de jogo ≠ manual de crime."
+    },
+    {
+      "id": "palavra-orfeu",
+      "title": "Orfeu — o nome, a lira e o Morpheus que não é ele",
+      "titleEn": "Orfeu — the name, the lyre, and the Morpheus he is not",
+      "titleEs": "Orfeu — el nombre, la lira y el Morpheus que no es él",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: Orfeu (gr. Ὀρφεύς) — mito da lira; BR Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo; Faça o melhor!",
+      "whyEn": "Words: Orfeu / Orpheus — lyre myth; BR Black Orpheus; ear-glue with Matrix Morpheus, not the same etymon; Do your best!",
+      "whyEs": "Palabras: Orfeu — mito de la lira; BR Orfeu Negro; pegamento de oído con Morpheus de Matrix, no el mismo étimo; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-orfeu",
+      "doneHref": "/posts/post-inspecao-palavra-orfeu.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/Orfeu",
+        "https://en.wiktionary.org/wiki/Orpheus",
+        "https://en.wiktionary.org/wiki/Morpheus",
+        "/posts/post-inspecao-filme-the-matrix.html",
+        "/posts/post-inspecao-figura-tom-jobim.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 180 — Orfeu ≠ Morpheus / Morfeu; ouvido cola, étimo não."
     }
   ]
 }

@@ -494,6 +494,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Cavalo (*Equus ferus caballus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
             },
             {
+              "label": "Inspeção: The Matrix — a obra Wachowski e a pergunta do real",
+              "tileLabel": "Inspeção: The Matrix — a obra W…",
+              "href": "/posts/post-inspecao-filme-the-matrix.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-the-matrix",
+              "description": "Artes · cinema: The Matrix (1999, Wachowski) — génese do filme, influências (Baudrillard, cyberpunk, anime) e pergunta «o que é real?»; Keanu Reeves como elo secundário em Pessoas."
+            },
+            {
               "label": "Inspeção: Planta — Capim-limão — citral e gramínea aromática",
               "tileLabel": "Inspeção: Planta — Capim-limão …",
               "href": "/posts/post-inspecao-planta-capim-limao.html",
@@ -564,6 +572,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-animal-peixe-tilapia",
               "description": "Relatório educacional de Tilápia (*Oreochromis niloticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+            },
+            {
+              "label": "Inspeção: Keanu Reeves — presença, treino e elo com The Matrix",
+              "tileLabel": "Inspeção: Keanu Reeves — presen…",
+              "href": "/posts/post-inspecao-figura-keanu-reeves.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-keanu-reeves",
+              "description": "Pessoas × Artes: Keanu Reeves — método actoral e presença física, com elo principal no filme The Matrix (1999); distinto do Legado canábico."
             },
             {
               "label": "Inspeção: Profa. Solange Nappo — CEBRID",
@@ -1124,6 +1140,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-unha-de-gato",
               "description": "*Uncaria tomentosa* — casca amazônica rica em alcaloides oxindólicos pentacíclicos; fitoterapia imunomoduladora popular."
+            },
+            {
+              "label": "Inspeção: canal Todo Poderoso Bagual — BOPE, Capital City e arquivo GTA RP",
+              "tileLabel": "Inspeção: canal Todo Poderoso B…",
+              "href": "/posts/post-inspecao-canal-bagual.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-canal-bagual",
+              "description": "Canais: Todo Poderoso Bagual — live no Kick (poderosobagual) e arquivo YouTube (@poderosobagual); personagem de BOPE no GTA RP; catálogo na página GTA RP."
             },
             {
               "label": "Inspeção: canal Richard Rasmussen Selvagem — fauna, expedições e o ecrã",
@@ -2614,6 +2638,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «Mara» — nome que chegou sem estar na lista; cola em maravilha; étimo hebr. mārāh é camada, não veredicto; poema dos barquinhos de papel; Faça o melhor!"
             },
             {
+              "label": "Inspeção: Orfeu — o nome, a lira e o Morpheus que não é ele",
+              "tileLabel": "Inspeção: Orfeu — o nome, a lir…",
+              "href": "/posts/post-inspecao-palavra-orfeu.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-orfeu",
+              "description": "Palavras: «Orfeu» (gr. Ὀρφεύς, étimo incerto) — mito da lira e Eurídice; no BR, Orfeu da Conceição / Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo (Morfeu ← morphē); Faça o melhor!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",
@@ -3293,22 +3325,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-derivado-abacate",
               "description": "Derivados de risco: do fruto (*Persea americana*) ao ultraprocessado — óleo, guacamole de prateleira e sobremesas; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
-            },
-            {
-              "label": "Inspeção: Keanu Reeves — presença, treino e elo com The Matrix",
-              "tileLabel": "Inspeção: Keanu Reeves — presen…",
-              "href": "/posts/post-inspecao-figura-keanu-reeves.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-keanu-reeves",
-              "description": "Pessoas × Artes: Keanu Reeves — método actoral e presença física, com elo principal no filme The Matrix (1999); distinto do Legado canábico."
-            },
-            {
-              "label": "Inspeção: The Matrix — a obra Wachowski e a pergunta do real",
-              "tileLabel": "Inspeção: The Matrix — a obra W…",
-              "href": "/posts/post-inspecao-filme-the-matrix.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-filme-the-matrix",
-              "description": "Artes · cinema: The Matrix (1999, Wachowski) — génese do filme, influências (Baudrillard, cyberpunk, anime) e pergunta «o que é real?»; Keanu Reeves como elo secundário em Pessoas."
             },
             {
               "label": "Inspeção: Só os Loucos Sabem — a canção CBJr e o recomeço",
