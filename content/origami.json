@@ -1,0 +1,29 @@
+{
+  "updatedAt": "2026-08-22T04:00:00.000Z",
+  "title": "Origami",
+  "subtitle": "Aprender a dobrar papel — mãos reais, um modelo de cada vez.",
+  "method": {
+    "hands": "A mão real dobra. O vinco fica no papel, não no prompt.",
+    "film": "Se filmar: sem fala. Só áudio local — papel, mesa, água. A voz acostuma depois; o gesto já sabe.",
+    "ai": "Vídeo de IA serve de rascunho ou capa. Para ensinar o vinco, a palma é melhor."
+  },
+  "models": [
+    {
+      "id": "barquinho-de-papel",
+      "slug": "barquinho-de-papel",
+      "href": "/origami/barquinho-de-papel/",
+      "title": "Barquinho de papel",
+      "level": "fácil",
+      "minutes": 5,
+      "cover": "/imagens/origami/barquinho-de-papel-cover.jpg",
+      "diagram": "/imagens/origami/barquinho-de-papel-passos.jpg",
+      "teaser": "A primeira aula — dobrar, soprar, flutuar. Maravilha que cabe na palma.",
+      "tags": ["papel", "água", "mara", "maravilha"],
+      "film": {
+        "speech": false,
+        "audio": "local",
+        "hands": "real"
+      }
+    }
+  ]
+}

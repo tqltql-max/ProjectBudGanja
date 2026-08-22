@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T03:32:46.928Z",
+  "updatedAt": "2026-08-22T03:55:58.229Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4748,6 +4748,22 @@
       "curiositiesEs": "Eslabones con Dona Maria y alma: Haz lo mejor en el cuidado nombrado."
     },
     {
+      "id": "mara",
+      "word": "Mara",
+      "simple": "Nome próprio BR que chegou ao mapa; cola no som de maravilha; hebr. mārāh (amarga) é camada, não veredicto; ≠ Tamara / Maria; barquinhos de papel; Faça o melhor!",
+      "simpleEn": "BR given name that arrived on the map; glued to the sound of maravilha (wonder); Heb. mārāh (bitter) is a layer, not a verdict; ≠ Tamara / Maria; paper boats; Do your best!",
+      "simpleEs": "Nombre propio BR que llegó al mapa; pega en el sonido de maravilha; hebr. mārāh (amarga) es capa, no veredicto; ≠ Tamara / Maria; barquitos de papel; ¡Haz lo mejor!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mara.html",
+      "history": "Mara no Brasil é antropónimo (muitas vezes hipocorístico de Maria e parentes). O hebraico mārāh («amarga», Rute 1:20) existe como camada etimológica. Nesta ficha o elo pedido é maravilha — o nome que cabe no assombro pequeno dos barquinhos de papel.",
+      "curiosities": "Não fundir com Tamara (palmeira), Maria, mar ou o sânscrito Māra. Poema Vida: barquinhos de papel.",
+      "historyEn": "In Brazil Mara is a given name (often a hypocoristic of Maria and kin). Hebrew mārāh (“bitter”, Ruth 1:20) is an etymological layer. This sheet’s requested glue is maravilha — the name that fits in the small wonder of paper boats.",
+      "curiositiesEn": "Do not merge with Tamara (palm), Maria, mar, or Sanskrit Māra. Vida poem: paper boats.",
+      "historyEs": "En Brasil Mara es antropónimo (a menudo hipocorístico de Maria y parientes). El hebreo mārāh («amarga», Rut 1:20) es capa etimológica. El pegamento pedido es maravilha — el nombre que cabe en la maravilla pequeña de los barquitos de papel.",
+      "curiositiesEs": "No fusionar con Tamara (palmera), Maria, mar o el sánscrito Māra. Poema Vida: barquitos de papel."
+    },
+    {
       "id": "toda-crianca-nasce-cientista",
       "word": "toda criança nasce cientista",
       "simple": "Citação de campo — curiosidade nativa; o crescer às vezes cala; o campo devolve o método. Chegou como mensagem da mãe. Faça o melhor!",
@@ -5537,7 +5553,7 @@
       "fromTitle": false,
       "href": "/posts/post-inspecao-figura-tom-jobim.html",
       "history": "Origami junta o japonês ori (dobrar) a kami (papel). A dedicatória BudGanja a Tom Jobim («Adoro origami») cruza a palavra-música com o gesto de dobrar.",
-      "curiosities": "A ficha trata o vocábulo como arte de papel — ofício de vinco, não metáfora vazia.",
+      "curiosities": "A ficha trata o vocábulo como arte de papel — ofício de vinco, não metáfora vazia. Aula: /origami/ (mãos reais; filmar sem fala).",
       "historyEn": "Origami joins Japanese ori (to fold) to kami (paper). BudGanja’s dedication to Tom Jobim («I love origami») crosses the music-word with the folding gesture.",
       "curiositiesEn": "The sheet treats the word as paper art — crease craft, not an empty metaphor.",
       "historyEs": "Origami junta el japonés ori (doblar) a kami (papel). La dedicatoria BudGanja a Tom Jobim («Adoro origami») cruza la palabra-música con el gesto de doblar.",

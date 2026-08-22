@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T03:32:46.921Z",
+  "updatedAt": "2026-08-22T03:55:58.222Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7649,6 +7649,30 @@
         "https://en.wikipedia.org/wiki/Leonardo_DiCaprio_filmography"
       ],
       "notes": "Cap. 1 Filmografias — inauguração com DiCaprio."
+    },
+    {
+      "id": "palavra-mara",
+      "title": "Mara — o nome que chegou, a maravilha e os barquinhos de papel",
+      "titleEn": "Mara — the name that arrived, wonder and paper boats",
+      "titleEs": "Mara — el nombre que llegó, la maravilla y los barquitos de papel",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: Mara — nome que chegou sem lista; cola em maravilha; hebr. mārāh é camada, não veredicto; poema dos barquinhos de papel; Faça o melhor!",
+      "whyEn": "Words: Mara — name that arrived unplanned; glued to maravilha; Heb. mārāh is a layer, not a verdict; paper-boat poem; Do your best!",
+      "whyEs": "Palabras: Mara — nombre que llegó sin lista; pega en maravilha; el hebr. mārāh es capa, no veredicto; poema de barquitos; ¡Haz lo mejor!",
+      "suggestedSlug": "inspecao-palavra-mara",
+      "doneHref": "/posts/post-inspecao-palavra-mara.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/Mara",
+        "https://pt.wiktionary.org/wiki/maravilha",
+        "/posts/post-inspecao-palavra-maravilhoso.html",
+        "/posts/post-inspecao-palavra-mae.html",
+        "/vida/#poema=barquinhos-de-papel",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html"
+      ],
+      "notes": "Cap. 179 — nome × maravilha × barquinho; ≠ Tamara / Maria."
     }
   ]
 }

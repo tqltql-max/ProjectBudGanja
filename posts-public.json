@@ -5624,6 +5624,25 @@
     "seriesLabel": "Ufa · palavra"
   },
   {
+    "title": "Inspeção: Mara — o nome que chegou, a maravilha e os barquinhos de papel",
+    "titleEn": "Inspection: Mara — the name that arrived, wonder and paper boats",
+    "titleEs": "Inspección: Mara — el nombre que llegó, la maravilla y los barquitos de papel",
+    "excerpt": "Palavras: «Mara» — nome que chegou sem estar na lista; cola em maravilha; étimo hebr. mārāh é camada, não veredicto; poema dos barquinhos de papel; Faça o melhor!",
+    "excerptEn": "Words: “Mara” — a name that arrived unplanned; glued to maravilha (wonder); Heb. mārāh is a layer, not a verdict; paper-boat poem; Do your best!",
+    "excerptEs": "Palabras: «Mara» — nombre que llegó sin lista; pega en maravilha; el hebr. mārāh es capa, no veredicto; poema de barquitos de papel; ¡Haz lo mejor!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-mara",
+    "url": "/posts/post-inspecao-palavra-mara.html",
+    "date": "2026-08-22T04:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-mara.html",
+    "coverImage": "/imagens/inspecoes/mara-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 179,
+    "seriesLabel": "Mara · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Do your best!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Haz lo mejor!",

@@ -14170,3 +14170,67 @@ a.palavras-duplo-word:focus-visible {
         grid-template-columns: 1fr;
     }
 }
+
+.origami-page {
+    padding-bottom: 3rem;
+}
+
+.origami-hero {
+    margin-bottom: 1.6rem;
+}
+
+.origami-method {
+    margin: 0 0 2rem;
+    padding: 1rem 1.15rem;
+    border: 1px solid rgba(223, 194, 98, 0.28);
+    border-radius: 12px;
+    background: rgba(10, 34, 48, 0.45);
+}
+
+.origami-method p {
+    margin: 0.4rem 0;
+    line-height: 1.5;
+}
+
+.origami-catalog h2 {
+    margin-bottom: 1rem;
+}
+
+.origami-card {
+    max-width: 36rem;
+    padding: 0 0 1.2rem;
+}
+
+.origami-card-cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+.origami-card-kicker {
+    margin: 0.85rem 0 0.2rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #dfc262;
+    font-weight: 700;
+}
+
+.origami-links {
+    margin-top: 2.2rem;
+    font-size: 0.94rem;
+}
+
+.origami-film-card h2 {
+    margin-top: 0;
+}
+
+.origami-steps {
+    padding-left: 1.3rem;
+}
+
+.origami-steps li {
+    margin: 0.45rem 0;
+    line-height: 1.45;
+}

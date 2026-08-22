@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-08-22T03:36:38.163Z",
+  "updatedAt": "2026-08-22T03:58:03.293Z",
   "poems": [
+    {
+      "id": "barquinhos-de-papel",
+      "slug": "barquinhos-de-papel",
+      "title": "Barquinhos de papel",
+      "titleEn": "Paper Boats",
+      "titleEs": "Barquitos de papel",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "A maravilha pequena — dobrar, soprar, flutuar; o nome Mara chegou, e o mantra: faça o melhor.",
+      "teaserEn": "The small wonder — fold, breathe, float; the name Mara arrived, and the mantra: do your best.",
+      "teaserEs": "La maravilla pequeña — doblar, soplar, flotar; el nombre Mara llegó, y el mantra: haz lo mejor.",
+      "body": "Dobra uma margem.\nDobra outra.\nO rio cabe na palma.\n\nNão pede motor.\nNão pede mapa.\nPede só um sopro —\ne a maravilha de flutuar\nmesmo sendo tão pouco.\n\nMara não era a rota de hoje.\nChegou.\nComo o barquinho:\nsem intenção de oceano,\ncom ofício de água.\n\nFaça o melhor!",
+      "bodyEn": "Fold one edge.\nFold the other.\nThe river fits in the palm.\n\nIt asks for no engine.\nIt asks for no map.\nIt asks only for a breath —\nand the wonder of floating\neven while being so small.\n\nMara was not today’s route.\nShe arrived.\nLike the paper boat:\nno intention of ocean,\nwith the craft of water.\n\nDo your best!",
+      "bodyEs": "Dobla un margen.\nDobla el otro.\nEl río cabe en la palma.\n\nNo pide motor.\nNo pide mapa.\nPide solo un soplo —\ny la maravilla de flotar\naunque sea tan poco.\n\nMara no era la ruta de hoy.\nLlegó.\nComo el barquito:\nsin intención de océano,\ncon oficio de agua.\n\n¡Haz lo mejor!",
+      "inspectionHref": "/posts/post-inspecao-palavra-mara.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "mara",
+        "maravilha",
+        "barquinho"
+      ]
+    },
     {
       "id": "toda-crianca-nasce-cientista",
       "slug": "toda-crianca-nasce-cientista",

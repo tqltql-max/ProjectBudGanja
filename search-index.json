@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T03:36:39.180Z",
+  "updatedAt": "2026-08-22T03:58:20.795Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -12,6 +12,18 @@
       "url": "/vida/",
       "excerpt": "Conto familiar do Laboratório BudGanja. Cuidar de plantas com ciência, natureza e amizade.",
       "text": "Vida Conto familiar do Laboratório BudGanja. Cuidar de plantas com ciência, natureza e amizade. vida conto familiar plantas semente inspetor dona maria"
+    },
+    {
+      "title": "Origami",
+      "url": "/origami/",
+      "excerpt": "Aprender a dobrar papel — mãos reais, um modelo de cada vez. Aula do barquinho.",
+      "text": "Origami Aprender a dobrar papel — mãos reais, um modelo de cada vez. Aula do barquinho. origami papel dobrar barquinho mãos aula ofício"
+    },
+    {
+      "title": "Barquinho de papel",
+      "url": "/origami/barquinho-de-papel/",
+      "excerpt": "Aula de origami: doze vincos, mãos reais. Filmar sem fala, áudio local.",
+      "text": "Barquinho de papel Aula de origami: doze vincos, mãos reais. Filmar sem fala, áudio local. barquinho papel origami aula vinco mara maravilha"
     },
     {
       "title": "Mapa do laboratório",
@@ -162,6 +174,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Mara — o nome que chegou, a maravilha e os barquinhos de papel",
+      "url": "/posts/post-inspecao-palavra-mara.html",
+      "excerpt": "Palavras: «Mara» — nome que chegou sem estar na lista; cola em maravilha; étimo hebr. mārāh é camada, não veredicto; poema dos barquinhos de papel; Faça o melhor!",
+      "text": "Inspeção: Mara — o nome que chegou, a maravilha e os barquinhos de papel Palavras: «Mara» — nome que chegou sem estar na lista; cola em maravilha; étimo hebr. mārāh é camada, não veredicto; poema dos barquinhos de papel; Faça o melhor! inspecao ## Escopo\n\nInspeção editorial do nome **Mara** — nome próprio no português do Brasil; no mapa do lab, também o som que vive **dentro** de [maravilha](/posts/post-inspecao-palavra-maravilhoso.html). Pedido de campo: a tia. Não era a ficha da lista. **Demorou a chegar. Pensou-se nela o dia inteiro. Aconteceu.**\n\nEsta ficha cobre o **objeto** (o nome), as **camadas etimológicas** sem reduzir a pessoa a nenhuma delas, o elo com **maravilha / maravilhoso**, e um poema curto — as maravilhas dos **barquinhos de papel**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · Mara](https://pt.wiktionary.org/wiki/Mara), [maravilha](https://pt.wiktionary.org/wiki/maravilha), [Livro de Rute](https://pt.wikipedia.org/wiki/Livro_de_Rute), série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). **Ficha ≠ necrológio, biografia clínica nem sermão.** O lab fiche o **nome** que chegou; não inventa vida privada. Sem afiliação religiosa exclusiva.\n\n## 1. Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Mara** (nome próprio; também grafia minúscula *mara* quando o objecto é o vocábulo) |\n| Classe | Antropónimo feminino no PT-BR (hipocorístico frequente de *Maria* / *Marlene* / *Marília* / *Amarílis*; também forma plena) |\n| Tipo BudGanja | Palavra — nome × maravilha × barquinho |\n| Chegada | Sem ser a intenção do dia — **aconteceu** |\n| Elo maravilha | [maravilhoso](/posts/post-inspecao-palavra-maravilhoso.html) ← subst. *maravilha* ← lat. *mirabilia* |\n| Elo infância / ofício pequeno | barquinho de papel · [aula de origami](/origami/barquinho-de-papel/) · [barco](/posts/post-inspecao-palavra-barco.html) · [água](/posts/post-inspecao-palavra-agua.html) · [mar](/posts/post-inspecao-palavra-mar.html) |\n| "
     },
     {
       "title": "Inspeção: Filmografia de Leonardo DiCaprio — catálogo que inaugura o tipo",
@@ -4788,6 +4806,12 @@
       "url": "/posts/post-inspecao-palavra-mae.html",
       "excerpt": "Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor!",
       "text": "mãe Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor! lexico guia palavras glossário mae"
+    },
+    {
+      "title": "Mara",
+      "url": "/posts/post-inspecao-palavra-mara.html",
+      "excerpt": "Nome próprio BR que chegou ao mapa; cola no som de maravilha; hebr. mārāh (amarga) é camada, não veredicto; ≠ Tamara / Maria; barquinhos de papel; Faça o melhor!",
+      "text": "Mara Nome próprio BR que chegou ao mapa; cola no som de maravilha; hebr. mārāh (amarga) é camada, não veredicto; ≠ Tamara / Maria; barquinhos de papel; Faça o melhor! lexico guia palavras glossário mara"
     },
     {
       "title": "toda criança nasce cientista",

@@ -1310,6 +1310,14 @@ function getSiteHubNav(authState) {
         tone: 'inspecoes'
       },
       {
+        href: '/origami/',
+        icon: '📄',
+        label: i18n('nav.origami', 'Origami'),
+        tip: i18n('nav.quickOrigamiTip', 'Dobrar papel — mãos reais, aula do barquinho'),
+        prefixes: '/origami',
+        tone: 'inspecoes'
+      },
+      {
         href: '/biblioteca/',
         icon: '📚',
         label: i18n('nav.library', 'Biblioteca'),
@@ -1401,6 +1409,13 @@ function getSiteHubNav(authState) {
             icon: '📓',
             label: i18n('nav.cadernosEngenharia', 'Cadernos'),
             prefixes: '/biblioteca/cadernos',
+            tone: 'inspecoes'
+          },
+          {
+            href: '/origami/',
+            icon: '📄',
+            label: i18n('nav.origami', 'Origami'),
+            prefixes: '/origami',
             tone: 'inspecoes'
           },
           {

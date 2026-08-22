@@ -104,6 +104,11 @@ const {
   poemTodaCriancaNasceCientistaEn,
   poemTodaCriancaNasceCientistaEs
 } = require('../lib/toda-crianca-nasce-cientista-inspecao-post.js');
+const {
+  maraPoemPt,
+  maraPoemEn,
+  maraPoemEs
+} = require('../lib/mara-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -111,6 +116,27 @@ const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
 const doc = {
   updatedAt: new Date().toISOString(),
   poems: [
+    {
+      id: 'barquinhos-de-papel',
+      slug: 'barquinhos-de-papel',
+      title: 'Barquinhos de papel',
+      titleEn: 'Paper Boats',
+      titleEs: 'Barquitos de papel',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'A maravilha pequena — dobrar, soprar, flutuar; o nome Mara chegou, e o mantra: faça o melhor.',
+      teaserEn:
+        'The small wonder — fold, breathe, float; the name Mara arrived, and the mantra: do your best.',
+      teaserEs:
+        'La maravilla pequeña — doblar, soplar, flotar; el nombre Mara llegó, y el mantra: haz lo mejor.',
+      body: maraPoemPt(),
+      bodyEn: maraPoemEn(),
+      bodyEs: maraPoemEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-mara.html',
+      tags: ['poesia', 'vida', 'mara', 'maravilha', 'barquinho']
+    },
     {
       id: 'toda-crianca-nasce-cientista',
       slug: 'toda-crianca-nasce-cientista',

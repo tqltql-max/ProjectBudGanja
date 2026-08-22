@@ -57,6 +57,15 @@ window.__BIBLIOTECA_NAV__ = {
           "description": "Um caderno por matéria, método Cornell — anotações do curso de engenharia."
         },
         {
+          "label": "Origami",
+          "tileLabel": "Origami",
+          "href": "/origami/",
+          "icon": "📄",
+          "slug": "origami",
+          "featured": true,
+          "description": "Aprender a dobrar papel — mãos reais; aula do barquinho. Sem fala, áudio local."
+        },
+        {
           "label": "Vida",
           "tileLabel": "Vida",
           "href": "/vida/",
@@ -2595,6 +2604,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-ufa",
               "description": "Palavras: «ufa» — interjeição BR de alívio; par de aff; fecho de desatar o nó; legal (gíria) se couber; Faça o melhor!"
+            },
+            {
+              "label": "Inspeção: Mara — o nome que chegou, a maravilha e os barquinhos de papel",
+              "tileLabel": "Inspeção: Mara — o nome que che…",
+              "href": "/posts/post-inspecao-palavra-mara.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mara",
+              "description": "Palavras: «Mara» — nome que chegou sem estar na lista; cola em maravilha; étimo hebr. mārāh é camada, não veredicto; poema dos barquinhos de papel; Faça o melhor!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Faça o melhor!",

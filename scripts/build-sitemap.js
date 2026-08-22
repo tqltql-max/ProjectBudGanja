@@ -14,6 +14,8 @@ const STATIC = [
   { loc: '/', priority: '1.0', changefreq: 'weekly' },
   { loc: '/inverno/', priority: '1.0', changefreq: 'weekly' },
   { loc: '/vida/', priority: '0.9', changefreq: 'weekly' },
+  { loc: '/origami/', priority: '0.85', changefreq: 'weekly' },
+  { loc: '/origami/barquinho-de-papel/', priority: '0.8', changefreq: 'monthly' },
   { loc: '/laboratorio/', priority: '0.85', changefreq: 'weekly' },
   { loc: '/guia/cultivo-basico.html', priority: '0.95', changefreq: 'monthly' },
   { loc: '/guia/palavras.html', priority: '0.9', changefreq: 'monthly' },
