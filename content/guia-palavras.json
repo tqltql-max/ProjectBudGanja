@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T16:30:38.264Z",
+  "updatedAt": "2026-08-22T17:16:49.134Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3438,6 +3438,26 @@
       "curiositiesEn": "The lexical inspection links plants and symbiosis — a word, not a recipe list.",
       "historyEs": "Fruto viene del latín fructus — órgano botánico que envuelve la semilla, distinto de la fruta de mesa. Lo figurado «frutos del trabajo» ya venía en el latín clásico.",
       "curiositiesEs": "La inspección léxica liga plantas y simbiosis — palabra, no lista de recetas."
+    },
+    {
+      "id": "nectar-dos-deuses",
+      "word": "néctar dos deuses",
+      "simple": "Expressão — mito grego × hipérbole de gosto; gatilho Deusus; ≠ suco de gôndola; palavra néctar à parte. Valeu !!!",
+      "simpleEn": "Saying — Greek myth × taste hyperbole; slip Deusus; ≠ juice carton; word néctar on its own sheet. Valeu !!!",
+      "simpleEs": "Expresión — mito griego × hipérbole; lapsus Deusus; ≠ néctar de caja; palabra néctar aparte. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-nectar-dos-deuses.html"
+    },
+    {
+      "id": "nectar",
+      "word": "néctar",
+      "simple": "Gr. néktar — suco da flor. Gatilho Nectar / Inectar. ≠ caixa de suco ≠ injetar. Mito em néctar dos deuses. Valeu !!!",
+      "simpleEn": "Gk. néktar — floral nectar. Trigger Nectar / Inectar. ≠ juice carton ≠ inject. Myth on nectar of the gods. Valeu !!!",
+      "simpleEs": "Gr. néktar — jugo de la flor. Gatillo Nectar / Inectar. ≠ caja ≠ inyectar. Mito en néctar de los dioses. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-nectar.html"
     },
     {
       "id": "frutos",
