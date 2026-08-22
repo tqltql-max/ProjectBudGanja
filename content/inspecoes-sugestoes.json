@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T18:58:36.934Z",
+  "updatedAt": "2026-08-22T20:54:00.753Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8432,6 +8432,28 @@
         "/posts/post-inspecao-palavra-animal.html"
       ],
       "notes": "Cap. 218 — levis × venātus; gatilho aninal; animal primeiro."
+    },
+    {
+      "id": "palavra-giria",
+      "title": "Gíria — fala de grupo; a orelha cola girino",
+      "titleEn": "Gíria — in-group speech; the ear glues girino",
+      "titleEs": "Gíria — habla de grupo; el oído pega girino",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: gíria (origem controversa / jerigonza). Girino ← γυρῖνος (animal). Gatilho anival gerino. Sala das gírias.",
+      "whyEn": "Words: gíria (controversial / jerigonza). Girino ← γυρῖνος (animal). Slip anival gerino. Slang room.",
+      "whyEs": "Palabras: gíria (origen controvertido / jerigonza). Girino ← γυρῖνος (animal). Lapsus anival gerino. Sala de jergas.",
+      "suggestedSlug": "inspecao-palavra-giria",
+      "doneHref": "/posts/post-inspecao-palavra-giria.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/gíria",
+        "https://pt.wiktionary.org/wiki/girino",
+        "https://pt.wikipedia.org/wiki/Girino",
+        "/posts/post-inspecao-palavra-animal.html"
+      ],
+      "notes": "Cap. 219 — jerigonza × gyrinus; animal primeiro."
     }
   ]
 }

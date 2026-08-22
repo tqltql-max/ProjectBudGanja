@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T18:58:48.558Z",
+  "updatedAt": "2026-08-22T20:54:05.112Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3730,6 +3730,38 @@
       "curiositiesEn": "Quebrado (crepāre) names the crack; ingessado the cast. Field slip: ingessadado. Right arm: anatomy, locution and the working limb in plaster. Valeu !!!",
       "historyEs": "Gesso / yeso viene del griego γύψος vía latín gypsum — el sulfato que vira pasta, placa y molde. El ojo pega GE-ología; el étimo corta (γῆ ≠ γύψος).",
       "curiositiesEs": "Quebrado nombra la grieta; ingessado el molde. Lapsus: ingessadado. Brazo derecho: anatomía, locución y el miembro de oficio enyesado. ¡Valeu !!!"
+    },
+    {
+      "id": "giria",
+      "word": "gíria",
+      "simple": "Origem controversa / jerigonza — fala de grupo. A orelha cola girino (γυρῖνος). Sala das gírias. Valeu !!!",
+      "simpleEn": "Controversial / jerigonza — in-group speech. The ear glues girino (γυρῖνος). Slang room. Valeu !!!",
+      "simpleEs": "Origen controvertido / jerigonza — habla de grupo. El oído pega girino (γυρῖνος). Sala de jergas. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-giria.html",
+      "history": "Gíria nomeia a fala de grupo. O étimo é controverso: Wikcionário aponta espanhol jerigonza (derivação regressiva); Corominas sugere *gíriga, conexo com geringonça. Machado e Cunha marcam origem obscura.",
+      "curiosities": "A orelha cola girino (γυρῖνος, a larva). Gatilho: anival gerino. Esta ficha é a sala das gírias já cortadas no laboratório. Valeu !!!",
+      "historyEn": "Portuguese gíria names in-group speech. The etymon is controversial: Wiktionary points to Spanish jerigonza (regressive derivation); Corominas suggests *gíriga, kin to geringonça. Machado and Cunha mark the origin obscure.",
+      "curiositiesEn": "The ear glues girino (γυρῖνος, the larva). Slip: anival gerino. This sheet is the room of slang layers already cut in the lab. Valeu !!!",
+      "historyEs": "Gíria nombra el habla de grupo. El étimo es controvertido: el Wikcionario apunta al español jerigonza (derivación regresiva); Corominas sugiere *gíriga, conexo con geringonça.",
+      "curiositiesEs": "El oído pega girino (γυρῖνος, la larva). Lapsus: anival gerino. Esta ficha es la sala de jergas ya cortadas en el laboratorio. ¡Valeu !!!"
+    },
+    {
+      "id": "girino",
+      "word": "girino",
+      "simple": "Gr. γυρῖνος / lat. gyrinus — larva de anfíbio. ≠ gíria. Animal primeiro. Corte na ficha gíria. Valeu !!!",
+      "simpleEn": "Gk. γυρῖνος / Lat. gyrinus — amphibian larva. ≠ gíria. Animal first. Cut on the gíria sheet. Valeu !!!",
+      "simpleEs": "Gr. γυρῖνος / lat. gyrinus — larva de anfibio. ≠ gíria. Animal primero. Corte en la ficha gíria. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-giria.html",
+      "history": "Girino vem do grego γυρῖνος via latim gyrinus — a larva redonda do anfíbio (γῦρος, círculo). Não é gíria, embora a orelha cole GI-RI.",
+      "curiosities": "Método bode: o animal fica animal. Gerino e anival são lapsos de campo. Corte na ficha gíria.",
+      "historyEn": "Portuguese girino comes from Greek γυρῖνος via Latin gyrinus — the amphibian’s round larva (γῦρος, circle). It is not gíria, though the ear glues GI-RI.",
+      "curiositiesEn": "Bode method: the animal stays animal. Gerino and anival are field slips. Cut on the gíria sheet.",
+      "historyEs": "Girino viene del griego γυρῖνος vía latín gyrinus — la larva redonda del anfibio (γῦρος, círculo). No es gíria, aunque el oído pegue GI-RI.",
+      "curiositiesEs": "Método bode: el animal queda animal. Gerino y anival son lapsus de campo. Corte en la ficha gíria."
     },
     {
       "id": "quebrado",

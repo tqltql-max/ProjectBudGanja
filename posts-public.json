@@ -6403,6 +6403,25 @@
     "seriesLabel": "Alívio · palavra"
   },
   {
+    "title": "Inspeção: Gíria — fala de grupo; a orelha cola girino (o animal)",
+    "titleEn": "Inspection: Gíria — in-group speech; the ear glues girino (the tadpole)",
+    "titleEs": "Inspección: Gíria — habla de grupo; el oído pega girino (el renacuajo)",
+    "excerpt": "Palavras: gíria (origem controversa / jerigonza) — fala de grupo; a orelha cola girino (γυρῖνος); gatilho anival gerino; Valeu !!!",
+    "excerptEn": "Words: gíria (controversial / jerigonza) — in-group speech; the ear glues girino (γυρῖνος); slip anival gerino; Valeu !!!",
+    "excerptEs": "Palabras: gíria (origen controvertido / jerigonza) — habla de grupo; el oído pega girino (γυρῖνος); lapsus anival gerino; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-giria",
+    "url": "/posts/post-inspecao-palavra-giria.html",
+    "date": "2026-08-22T21:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-giria.html",
+    "coverImage": "/imagens/inspecoes/giria-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 219,
+    "seriesLabel": "Gíria · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Valeu !!!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Valeu !!!",

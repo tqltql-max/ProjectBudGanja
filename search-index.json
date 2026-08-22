@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T18:59:59.682Z",
+  "updatedAt": "2026-08-22T20:54:40.921Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -174,6 +174,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Gíria — fala de grupo; a orelha cola girino (o animal)",
+      "url": "/posts/post-inspecao-palavra-giria.html",
+      "excerpt": "Palavras: gíria (origem controversa / jerigonza) — fala de grupo; a orelha cola girino (γυρῖνος); gatilho anival gerino; Valeu !!!",
+      "text": "Inspeção: Gíria — fala de grupo; a orelha cola girino (o animal) Palavras: gíria (origem controversa / jerigonza) — fala de grupo; a orelha cola girino (γυρῖνος); gatilho anival gerino; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da palavra **[gíria](/posts/post-inspecao-palavra-giria.html)** — a **fala de grupo**. Pedido de campo: *inspeção da palabra giria* · página dedicada às gírias · **inspeção do anival gerino**. [A orelha cola](/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html) *gíria* no [animal](/posts/post-inspecao-palavra-animal.html) **girino**. O étimo **corta**: uma é vocabulário de grupo; o outro é a **larva redonda**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · gíria](https://pt.wiktionary.org/wiki/gíria), [girino](https://pt.wiktionary.org/wiki/girino), lat. [*gyrinus*](https://en.wiktionary.org/wiki/gyrinus), [Wikipédia · Gíria](https://pt.wikipedia.org/wiki/Gíria), [Girino](https://pt.wikipedia.org/wiki/Girino), [Ciberdúvidas · origem](https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/a-origem-da-palavra-giria/10956). **Ficha ≠ dicionário de gírias BR, ≠ protocolo de herpetologia.** Étimo de *gíria*: **controverso** (média). Série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). O [animal](/posts/post-inspecao-palavra-animal.html) fica animal — método [bode](/posts/post-inspecao-palavra-bode.html). Esta ficha é a **sala** das gírias já indexadas no laboratório.\n\n**Gatilho:** *giria* / *gíria* / *anival* / *gerino* / *girino* / *palabra giria*.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **gíria** (pl. *gírias*) |\n| Classe | Substantivo feminino |\n| Étimo (trabalho) | Esp. *jerigonza* / *geringonça* — derivação regressiva; Corominas: *gíriga* — confiança: **média** (origem controversa) |\n| Família viva | *giriar* (raro) · esp. *jerga* / *jerigonza* · fr. *jargon* / *argot* · ing. *slang* / *jargon* |\n| Tipo BudGanja | Palavra — fala de grupo × par ilusóri"
     },
     {
       "title": "Inspeção: Alívio — tornar leve; aliviado é o estado; a orelha cola veado",
@@ -4668,6 +4674,18 @@
       "url": "/posts/post-inspecao-palavra-gesso.html",
       "excerpt": "Gr. γύψος — sulfato que pega. ≠ geologia. Quebrado → ingessado (ingessadado). Braço direito. Irmã pedra. Valeu !!!",
       "text": "gesso Gr. γύψος — sulfato que pega. ≠ geologia. Quebrado → ingessado (ingessadado). Braço direito. Irmã pedra. Valeu !!! lexico guia palavras glossário gesso"
+    },
+    {
+      "title": "gíria",
+      "url": "/posts/post-inspecao-palavra-giria.html",
+      "excerpt": "Origem controversa / jerigonza — fala de grupo. A orelha cola girino (γυρῖνος). Sala das gírias. Valeu !!!",
+      "text": "gíria Origem controversa / jerigonza — fala de grupo. A orelha cola girino (γυρῖνος). Sala das gírias. Valeu !!! lexico guia palavras glossário giria"
+    },
+    {
+      "title": "girino",
+      "url": "/posts/post-inspecao-palavra-giria.html",
+      "excerpt": "Gr. γυρῖνος / lat. gyrinus — larva de anfíbio. ≠ gíria. Animal primeiro. Corte na ficha gíria. Valeu !!!",
+      "text": "girino Gr. γυρῖνος / lat. gyrinus — larva de anfíbio. ≠ gíria. Animal primeiro. Corte na ficha gíria. Valeu !!! lexico guia palavras glossário girino"
     },
     {
       "title": "quebrado",
