@@ -155,12 +155,18 @@
 }
 
 .site-drone-tip {
-    position: absolute;
-    right: 70%;
-    bottom: 88%;
-    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    z-index: 2100;
     width: max-content;
-    max-width: min(18.5rem, calc(100vw - 2rem));
+    max-width: min(18.5rem, calc(100vw - 1.25rem));
+    max-height: min(70vh, calc(100vh - 1.25rem));
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
     padding: 0.7rem 0.85rem 0.75rem;
     border-radius: 12px;
     border: 1px solid rgba(226, 58, 44, 0.45);
@@ -169,7 +175,7 @@
     color: #f4ede0;
     text-align: left;
     pointer-events: auto;
-    transform: rotate(calc(var(--drone-rot, 0deg) * -1));
+    transform: none;
 }
 
 .site-drone-tip[hidden] {
@@ -447,8 +453,6 @@ body.site-drone-on .site-drone-emotion.is-drone-over {
     }
     .site-drone-tip {
         transform: none;
-        right: 0;
-        bottom: 110%;
     }
     .site-drone-abduct {
         animation: none;

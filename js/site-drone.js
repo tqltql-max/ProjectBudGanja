@@ -304,7 +304,52 @@
       );
     }
     state.tip.innerHTML = parts.join('');
+    state.tip.style.visibility = 'hidden';
     state.tip.hidden = false;
+    placeTip();
+    state.tip.style.visibility = '';
+  }
+
+  function headerBottom() {
+    var header = document.getElementById('site-header');
+    if (!header) return 0;
+    var bottom = header.getBoundingClientRect().bottom;
+    return bottom > 0 ? bottom : 0;
+  }
+
+  function placeTip() {
+    if (!state.tip || state.tip.hidden || !state.drone) return;
+    var margin = 10;
+    var gap = 8;
+    var vw = window.innerWidth;
+    var vh = window.innerHeight;
+    var droneRect = state.drone.getBoundingClientRect();
+    var topLimit = Math.max(margin, headerBottom() + 4);
+    var spaceAbove = Math.max(0, droneRect.top - topLimit - gap);
+    var spaceBelow = Math.max(0, vh - droneRect.bottom - margin - gap);
+
+    state.tip.style.maxWidth = Math.min(296, vw - margin * 2) + 'px';
+    state.tip.style.maxHeight = '';
+    var tipW = state.tip.offsetWidth;
+    var tipH = state.tip.offsetHeight;
+
+    var above = spaceAbove >= 48 || spaceAbove >= spaceBelow;
+    var avail = above ? spaceAbove : spaceBelow;
+    if (tipH > avail && avail >= 64) {
+      state.tip.style.maxHeight = Math.floor(avail) + 'px';
+      tipW = state.tip.offsetWidth;
+      tipH = state.tip.offsetHeight;
+    }
+
+    var left = droneRect.left + droneRect.width / 2 - tipW / 2;
+    left = Math.max(margin, Math.min(left, vw - tipW - margin));
+    var top = above ? droneRect.top - gap - tipH : droneRect.bottom + gap;
+    var minTop = above ? topLimit : margin;
+    top = Math.max(minTop, Math.min(top, vh - margin - tipH));
+
+    state.tip.style.left = Math.round(left) + 'px';
+    state.tip.style.top = Math.round(top) + 'px';
+    state.tip.setAttribute('data-placement', above ? 'above' : 'below');
   }
 
   function shouldSkipNode(node) {
@@ -648,7 +693,7 @@
   function inspectAt(clientX, clientY) {
     if (!state.on) return;
     var hit = document.elementFromPoint(clientX, clientY);
-    if (hit && hit.closest && hit.closest('#site-drone, .site-drone')) return;
+    if (hit && hit.closest && hit.closest('#site-drone, .site-drone, .site-drone-tip')) return;
     var src = wordAtPointer(clientX, clientY);
     if (!src) {
       if (state.currentSrc) {
@@ -691,6 +736,7 @@
     state.drawnRot = rot;
     state.drone.style.transform = 'translate3d(' + x + 'px,' + y + 'px,0) rotate(' + rot + 'deg)';
     state.drone.style.setProperty('--drone-rot', rot + 'deg');
+    placeTip();
   }
 
   function setLitButton(el) {
@@ -835,11 +881,18 @@
     var aria = t('common.droneAria', 'Drone de inspeção — clique para ligar a luz; botão do meio esconde o drone');
     btn.setAttribute('aria-label', aria);
     btn.title = aria;
-    btn.innerHTML = '<div class="site-drone-tip" hidden></div><span class="site-drone-light" aria-hidden="true"></span>' + droneSvg();
+    btn.innerHTML = '<span class="site-drone-light" aria-hidden="true"></span>' + droneSvg();
     document.body.appendChild(btn);
+    var tip = document.createElement('div');
+    tip.className = 'site-drone-tip';
+    tip.hidden = true;
+    tip.setAttribute('role', 'tooltip');
+    document.body.appendChild(tip);
     document.body.classList.add('site-drone-ready');
     state.drone = btn;
-    state.tip = btn.querySelector('.site-drone-tip');
+    state.tip = tip;
+    tip.addEventListener('mouseenter', function () { state.paused = true; });
+    tip.addEventListener('mouseleave', function () { state.paused = false; });
     var p = pad();
     state.x = Math.min(window.innerWidth * 0.78, p.right);
     state.y = Math.min(window.innerHeight * 0.58, p.bottom);
@@ -905,6 +958,9 @@
     dimDrone();
     if (state.drone && state.drone.parentNode) {
       state.drone.parentNode.removeChild(state.drone);
+    }
+    if (state.tip && state.tip.parentNode) {
+      state.tip.parentNode.removeChild(state.tip);
     }
     state.drone = null;
     state.tip = null;
@@ -1052,6 +1108,7 @@
       state.x = Math.min(Math.max(state.x, p.left), p.right);
       state.y = Math.min(Math.max(state.y, p.top), p.bottom);
       applyPose();
+      placeTip();
     });
     document.addEventListener('visibilitychange', function () {
       state.flying = state.on && document.visibilityState !== 'hidden';
