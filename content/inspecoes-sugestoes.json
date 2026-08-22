@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T05:42:16.465Z",
+  "updatedAt": "2026-08-22T05:50:04.950Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7767,7 +7767,10 @@
         "https://pt.wikipedia.org/wiki/Teoria_das_cordas",
         "https://en.wikipedia.org/wiki/String_theory",
         "/posts/post-inspecao-palavra-corda.html",
-        "/posts/post-inspecao-palavra-pattern.html",
+        "/posts/post-inspecao-palavra-afinar.html",
+        "/posts/post-inspecao-palavra-tonos.html",
+        "/posts/post-inspecao-palavra-orfeu.html",
+        "/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html",
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 182 — conceito de física; distinta da ficha objecto corda."

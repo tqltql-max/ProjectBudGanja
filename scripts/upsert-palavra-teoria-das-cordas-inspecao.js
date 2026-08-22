@@ -9,6 +9,15 @@ const fs = require('fs');
 const path = require('path');
 const { buildTeoriaDasCordasPost } = require('../lib/teoria-das-cordas-inspecao-post.js');
 const { buildCordaPost } = require('../lib/corda-inspecao-post.js');
+const { buildAfinarPost } = require('../lib/afinar-inspecao-post.js');
+const { buildTonosPost } = require('../lib/tonos-inspecao-post.js');
+const { buildOrfeuPost } = require('../lib/orfeu-inspecao-post.js');
+const { buildEtimologiaPost } = require('../lib/etimologia-inspecao-post.js');
+const { buildPolimorfismoPost } = require('../lib/polimorfismo-inspecao-post.js');
+const { buildSolPost } = require('../lib/sol-inspecao-post.js');
+const {
+  buildTodaCriancaNasceCientistaPost
+} = require('../lib/toda-crianca-nasce-cientista-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_FILE = path.join(ROOT, 'posts.json');
@@ -45,7 +54,7 @@ function writeI18n(i18n, post) {
   };
 }
 
-async function syncSql(post) {
+async function syncSqlAll(posts) {
   require('../lib/load-env.js');
   if (String(process.env.STORE_BACKEND || '').toLowerCase() === 'fs') return;
   const dbPath = path.join(ROOT, 'data', 'budganja.db');
@@ -53,10 +62,8 @@ async function syncSql(post) {
   if (!fs.existsSync(dbPath) && !hasRemote) return;
   const { createSqlStore } = require('../lib/store-sql.js');
   const store = await createSqlStore(ROOT);
-  const posts = await store.getPosts();
-  upsertPost(posts, post);
   await store.setPosts(posts);
-  console.log('SQL store actualizado:', post.slug);
+  console.log('SQL store actualizado (lote teoria das cordas)');
 }
 
 async function main() {
@@ -66,20 +73,34 @@ async function main() {
     ? Number(existing.seriesOrder) || nextPalavrasOrder(posts)
     : nextPalavrasOrder(posts);
   const post = buildTeoriaDasCordasPost(seriesOrder);
-  const cordaExisting = posts.find((p) => p.slug === 'inspecao-palavra-corda');
-  const cordaPost = buildCordaPost(
-    cordaExisting && typeof cordaExisting.seriesOrder === 'number'
-      ? cordaExisting.seriesOrder
-      : undefined
-  );
+  function keepOrder(slug, builder, arg) {
+    const existingOne = posts.find((p) => p.slug === slug);
+    const order =
+      existingOne && typeof existingOne.seriesOrder === 'number'
+        ? existingOne.seriesOrder
+        : undefined;
+    return builder.length ? builder(arg !== undefined ? arg : order) : builder();
+  }
+  const related = [
+    post,
+    keepOrder('inspecao-palavra-corda', buildCordaPost),
+    buildAfinarPost(),
+    buildTonosPost(),
+    keepOrder('inspecao-palavra-orfeu', buildOrfeuPost),
+    buildEtimologiaPost(),
+    buildPolimorfismoPost(),
+    keepOrder('inspecao-palavra-sol', buildSolPost),
+    keepOrder(
+      'inspecao-expressao-toda-crianca-nasce-cientista',
+      buildTodaCriancaNasceCientistaPost
+    )
+  ];
 
-  upsertPost(posts, post);
-  upsertPost(posts, cordaPost);
+  for (const p of related) upsertPost(posts, p);
   fs.writeFileSync(POSTS_FILE, JSON.stringify(posts, null, 2) + '\n', 'utf8');
 
   const i18n = JSON.parse(fs.readFileSync(I18N_FILE, 'utf8'));
-  writeI18n(i18n, post);
-  writeI18n(i18n, cordaPost);
+  for (const p of related) writeI18n(i18n, p);
   fs.writeFileSync(I18N_FILE, JSON.stringify(i18n, null, 2) + '\n', 'utf8');
 
   const href = '/posts/post-' + post.slug + '.html';
@@ -107,7 +128,10 @@ async function main() {
         post.sourceUrl,
         'https://en.wikipedia.org/wiki/String_theory',
         '/posts/post-inspecao-palavra-corda.html',
-        '/posts/post-inspecao-palavra-pattern.html',
+        '/posts/post-inspecao-palavra-afinar.html',
+        '/posts/post-inspecao-palavra-tonos.html',
+        '/posts/post-inspecao-palavra-orfeu.html',
+        '/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html',
         '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — conceito de física; distinta da ficha objecto corda.'
@@ -171,8 +195,7 @@ async function main() {
   }
 
   try {
-    await syncSql(post);
-    await syncSql(cordaPost);
+    await syncSqlAll(posts);
   } catch (e) {
     console.warn('Aviso SQL store:', e.message);
   }
