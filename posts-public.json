@@ -2698,6 +2698,25 @@
     "seriesLabel": "Maracujá"
   },
   {
+    "title": "Inspeção: em pé e deitado — as duas posturas da lemniscata (*bodiado*)",
+    "titleEn": "Inspection: em pé e deitado — the two postures of the lemniscate (*bodiado*)",
+    "titleEs": "Inspección: em pé e deitado — las dos posturas de la lemniscata (*bodiado*)",
+    "excerpt": "Expressões: «em pé e deitado» — par de posturas da lemniscata; *bodiado* → deitado (+ body); aula XIV Kassia; Valeu !!!",
+    "excerptEn": "Sayings: “em pé e deitado” — pair of lemniscate postures; *bodiado* → deitado (+ body); UNIFESP XIV Kassia; Valeu !!!",
+    "excerptEs": "Dichos: «em pé e deitado» — par de posturas de la lemniscata; *bodiado* → deitado (+ body); aula XIV Kassia; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-expressao-em-pe-e-deitado",
+    "url": "/posts/post-inspecao-expressao-em-pe-e-deitado.html",
+    "date": "2026-08-22T06:25:00.000Z",
+    "filename": "posts/post-inspecao-expressao-em-pe-e-deitado.html",
+    "coverImage": "/imagens/inspecoes/em-pe-e-deitado-cover.jpg",
+    "category": "inspecao",
+    "series": "expressoes-ditados",
+    "seriesOrder": 22,
+    "seriesLabel": "em pé e deitado · expressão"
+  },
+  {
     "title": "Inspeção: Planta — Calêndula — flavonoides e pomadas cutâneas",
     "titleEn": "Inspection: Plant — Calendula — flavonoids and skin ointments",
     "titleEs": "Inspección: Planta — Caléndula — flavonoides y pomadas cutáneas",
@@ -5964,6 +5983,25 @@
     "series": "palavras-origem",
     "seriesOrder": 203,
     "seriesLabel": "Curar · palavra"
+  },
+  {
+    "title": "Inspeção: Lemniscata — a fita em oito, não a eternidade",
+    "titleEn": "Inspection: Lemniscate — the ribbon in an eight, not eternity",
+    "titleEs": "Inspección: Lemniscata — la cinta en ocho, no la eternidad",
+    "excerpt": "Palavras: lemniscata — curva-fita (λημνίσκος); ≠ infinito-conceito; OCR lemeniscata; posturas em pé × deitado; Valeu !!!",
+    "excerptEn": "Words: lemniscata — ribbon-curve (λημνίσκος); ≠ infinity-as-concept; OCR lemeniscata; standing × lying; Valeu !!!",
+    "excerptEs": "Palabras: lemniscata — curva-cinta (λημνίσκος); ≠ infinito-concepto; OCR lemeniscata; de pie × acostada; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-lemniscata",
+    "url": "/posts/post-inspecao-palavra-lemniscata.html",
+    "date": "2026-08-22T06:20:00.000Z",
+    "filename": "posts/post-inspecao-palavra-lemniscata.html",
+    "coverImage": "/imagens/inspecoes/lemniscata-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 204,
+    "seriesLabel": "Lemniscata · palavra"
   },
   {
     "title": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

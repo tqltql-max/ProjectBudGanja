@@ -1374,6 +1374,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Passiflora incarnata* — flavonoides e alcaloides traço; chá calmante clássico da fitoterapia."
             },
             {
+              "label": "Inspeção: em pé e deitado — as duas posturas da lemniscata (*bodiado*)",
+              "tileLabel": "Inspeção: em pé e deitado — as …",
+              "href": "/posts/post-inspecao-expressao-em-pe-e-deitado.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-em-pe-e-deitado",
+              "description": "Expressões: «em pé e deitado» — par de posturas da lemniscata; *bodiado* → deitado (+ body); aula XIV Kassia; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Planta — Calêndula — flavonoides e pomadas cutâneas",
               "tileLabel": "Inspeção: Planta — Calêndula — …",
               "href": "/posts/post-inspecao-planta-calendula.html",
@@ -2748,6 +2756,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-curar",
               "description": "Palavras: «curar» (lat. cūrāre ← cūra) — tratar × secar a colheita; ≠ cuidar (cōgitāre); curar a planta ≠ a planta cura; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Lemniscata — a fita em oito, não a eternidade",
+              "tileLabel": "Inspeção: Lemniscata — a fita e…",
+              "href": "/posts/post-inspecao-palavra-lemniscata.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-lemniscata",
+              "description": "Palavras: lemniscata — curva-fita (λημνίσκος); ≠ infinito-conceito; OCR lemeniscata; posturas em pé × deitado; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

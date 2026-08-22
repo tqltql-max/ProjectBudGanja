@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:06:57.838Z",
+  "updatedAt": "2026-08-22T06:20:31.914Z",
   "poems": [
     {
       "id": "barquinhos-de-papel",
@@ -71,6 +71,30 @@
         "elo",
         "infinito",
         "lemniscata"
+      ]
+    },
+    {
+      "id": "em-pe-e-deitado",
+      "slug": "em-pe-e-deitado",
+      "title": "Em pé e deitado",
+      "titleEn": "Standing and Lying",
+      "titleEs": "De pie y acostada",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Bodiado endereçou deitado; o oito em pé chama-se corpo — a mesma fita, rodada, e o mantra: faça o melhor.",
+      "teaserEn": "Bodiado addressed deitado; the standing eight is called a body — the same ribbon, turned, and the mantra: do your best.",
+      "teaserEs": "Bodiado enderezó deitado; el ocho de pie se llama cuerpo — la misma cinta, girada, y el mantra: haz lo mejor.",
+      "body": "Bodiado chegou torto no ouvido.\nDeitado endereçou.\nO oito deitado chama-se infinito.\nO oito em pé chama-se corpo:\no que está em cima fala com o que está em baixo.\n\nNão é duas figuras.\nÉ a mesma fita, rodada.\nEm pé — o caminho no corpo.\nDeitado — o nome do sem-fim.\nNo cruzamento — o elo que junta.\n\nKassia não baptizou a locução.\nPôs a lemniscata em pé\nquando pensou o corpo.\nO laboratório guarda o par:\nem pé e deitado.\n\nValeu !!!\nnas duas posturas,\nsem fingir que o infinito cabe numa ficha.",
+      "bodyEn": "Bodiado arrived crooked in the ear.\nDeitado addressed it.\nThe eight lying down is called infinity.\nThe eight standing up is called a body:\nwhat is above speaks with what is below.\n\nIt is not two figures.\nIt is the same ribbon, turned.\nStanding — the path in the body.\nLying — the name of the endless.\nAt the crossing — the link that joins.\n\nKassia did not baptise the locution.\nShe stood the lemniscate up\nwhen she thought of the body.\nThe lab keeps the pair:\nstanding and lying.\n\nValeu !!!\nin both postures,\nwithout pretending infinity fits on a sheet.",
+      "bodyEs": "Bodiado llegó torcido al oído.\nDeitado lo enderezó.\nEl ocho acostado se llama infinito.\nEl ocho de pie se llama cuerpo:\nlo de arriba habla con lo de abajo.\n\nNo son dos figuras.\nEs la misma cinta, girada.\nDe pie — el camino en el cuerpo.\nAcostada — el nombre del sin-fin.\nEn el cruce — el eslabón que junta.\n\nKassia no bautizó la locución.\nPuso la lemniscata de pie\ncuando pensó el cuerpo.\nEl laboratorio guarda el par:\nde pie y acostada.\n\nValeu !!!\nen las dos posturas,\nsin fingir que el infinito cabe en una ficha.",
+      "inspectionHref": "/posts/post-inspecao-expressao-em-pe-e-deitado.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "lemniscata",
+        "corpo",
+        "infinito"
       ]
     },
     {

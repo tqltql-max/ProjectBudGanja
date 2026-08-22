@@ -110,6 +110,11 @@ const {
   poemEloDeLigacaoEs
 } = require('../lib/elo-de-ligacao-inspecao-post.js');
 const {
+  poemEmPeEDeitadoPt,
+  poemEmPeEDeitadoEn,
+  poemEmPeEDeitadoEs
+} = require('../lib/em-pe-e-deitado-inspecao-post.js');
+const {
   maraPoemPt,
   maraPoemEn,
   maraPoemEs
@@ -184,6 +189,27 @@ const doc = {
       bodyEs: poemEloDeLigacaoEs(),
       inspectionHref: '/posts/post-inspecao-expressao-elo-de-ligacao.html',
       tags: ['poesia', 'vida', 'elo', 'infinito', 'lemniscata']
+    },
+    {
+      id: 'em-pe-e-deitado',
+      slug: 'em-pe-e-deitado',
+      title: 'Em pé e deitado',
+      titleEn: 'Standing and Lying',
+      titleEs: 'De pie y acostada',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Bodiado endereçou deitado; o oito em pé chama-se corpo — a mesma fita, rodada, e o mantra: faça o melhor.',
+      teaserEn:
+        'Bodiado addressed deitado; the standing eight is called a body — the same ribbon, turned, and the mantra: do your best.',
+      teaserEs:
+        'Bodiado enderezó deitado; el ocho de pie se llama cuerpo — la misma cinta, girada, y el mantra: haz lo mejor.',
+      body: poemEmPeEDeitadoPt(),
+      bodyEn: poemEmPeEDeitadoEn(),
+      bodyEs: poemEmPeEDeitadoEs(),
+      inspectionHref: '/posts/post-inspecao-expressao-em-pe-e-deitado.html',
+      tags: ['poesia', 'vida', 'lemniscata', 'corpo', 'infinito']
     },
     {
       id: 'aguas-e-lagrimas',

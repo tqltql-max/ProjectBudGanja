@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:05:29.236Z",
+  "updatedAt": "2026-08-22T06:19:36.831Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4522,6 +4522,38 @@
       "curiositiesEn": "In UNIFESP XIV lesson 8, Dr. Kassia Martins stands the lemniscate up as a symbol of up↔down communication in the ECS. The lab relates the crossing to this saying — it does not claim she used these words. Greek sýmbolon was already a fitting token.",
       "historyEs": "Elo viene del latín anellus (anillito); ligação de ligāre (atar). La locución insiste en el anillo que de verdad junta. El campo trajo simbuklo — gatillo de oído para símbolo do infinito (lemniscata, el ocho acostado).",
       "curiositiesEs": "En la 8.ª aula del XIV Curso UNIFESP, la Dra. Kassia Martins pone la lemniscata de pie como símbolo de comunicación arriba↔abajo del SEC. El laboratorio relaciona el cruce con esta locución — no afirma que ella usara esas palabras. El griego sýmbolon ya era un token que encaja."
+    },
+    {
+      "id": "em-pe-e-deitado",
+      "word": "em pé e deitado",
+      "simple": "Locução — par de posturas da lemniscata; bodiado → deitado (+ body). Deitado = ∞; em pé = corpo. Aula XIV Kassia. Valeu !!!",
+      "simpleEn": "Locution — pair of lemniscate postures; bodiado → deitado (+ body). Lying = ∞; standing = body. UNIFESP XIV Kassia. Valeu !!!",
+      "simpleEs": "Locución — par de posturas de la lemniscata; bodiado → deitado (+ body). Acostada = ∞; de pie = cuerpo. Aula XIV Kassia. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-em-pe-e-deitado.html",
+      "history": "Em pé vem de pēs, pedis (pé); deitado é o particípio de deitar. A locução nomeia as duas posturas da mesma lemniscata: deitada = ∞; em pé = caminho no corpo. O ouvido trouxe bodiado — gatilho para deitado, com rasto do inglês body.",
+      "curiosities": "Na 8.ª aula do XIV Curso UNIFESP, Dra. Kassia Martins põe a lemniscata em pé quando pensa o corpo: comunicação cima↔baixo do SEC. O laboratório guarda o par — não afirma que ela usou as palavras. O cruzamento fica em elo de ligação.",
+      "historyEn": "Portuguese em pé comes from pēs, pedis (foot); deitado is the participle of deitar (to lie down). The locution names the two postures of the same lemniscate: lying = ∞; standing = a path in the body. The ear brought bodiado — a trigger for deitado, with a trace of English body.",
+      "curiositiesEn": "In UNIFESP XIV lesson 8, Dr. Kassia Martins stands the lemniscate up when she thinks of the body: up↔down communication in the ECS. The lab keeps the pair — it does not claim she used these words. The crossing stays on elo de ligação.",
+      "historyEs": "Em pé viene de pēs, pedis (pie); deitado es el participio de deitar. La locución nombra las dos posturas de la misma lemniscata: acostada = ∞; de pie = camino en el cuerpo. El oído trajo bodiado — gatillo para deitado, con rastro del inglés body.",
+      "curiositiesEs": "En la 8.ª aula del XIV Curso UNIFESP, la Dra. Kassia Martins pone la lemniscata de pie cuando piensa el cuerpo: comunicación arriba↔abajo del SEC. El laboratorio guarda el par — no afirma que ella usara esas palabras. El cruce queda en elo de ligação."
+    },
+    {
+      "id": "lemniscata",
+      "word": "lemniscata",
+      "simple": "Palavra — curva-fita (λημνίσκος); ≠ infinito-conceito; OCR lemeniscata. Posturas: em pé e deitado. Valeu !!!",
+      "simpleEn": "Word — ribbon-curve (λημνίσκος); ≠ infinity-as-concept; OCR lemeniscata. Postures: standing and lying. Valeu !!!",
+      "simpleEs": "Palabra — curva-cinta (λημνίσκος); ≠ infinito-concepto; OCR lemeniscata. Posturas: de pie y acostada. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-lemniscata.html",
+      "history": "Lemniscata vem do latim lemniscus (fita) ← grego λημνίσκος. É o nome da curva em oito — não o conceito de eternidade nem o glifo ∞ sozinho. OCR da aula: lemeniscata / lemenescata.",
+      "curiosities": "Wallis (1655) desenhou o glifo; Bernoulli (1694) estudou uma curva com esse ar. As posturas em pé × deitado e o cruzamento (elo de ligação) ficam nas fichas irmãs.",
+      "historyEn": "Portuguese lemniscata comes from Latin lemniscus (ribbon) ← Greek λημνίσκος. It is the name of the figure-eight curve — not eternity-as-concept and not the ∞ glyph alone. Classroom OCR: lemeniscata / lemenescata.",
+      "curiositiesEn": "Wallis (1655) drew the glyph; Bernoulli (1694) studied a curve with that look. Standing × lying postures and the crossing (elo de ligação) live on the sister sheets.",
+      "historyEs": "Lemniscata viene del latín lemniscus (cinta) ← griego λημνίσκος. Es el nombre de la curva en ocho — no el concepto de eternidad ni el glifo ∞ solo. OCR del aula: lemeniscata / lemenescata.",
+      "curiositiesEs": "Wallis (1655) dibujó el glifo; Bernoulli (1694) estudió una curva con ese aire. Las posturas de pie × acostada y el cruce (elo de ligação) quedan en las fichas hermanas."
     },
     {
       "id": "lingua-portuguesa",

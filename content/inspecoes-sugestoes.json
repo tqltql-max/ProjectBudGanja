@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:05:29.229Z",
+  "updatedAt": "2026-08-22T06:19:36.824Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7971,6 +7971,54 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 21 Expressões — cruzamento da lemniscata; gatilho simbuklo; analogia Kassia creditada."
+    },
+    {
+      "id": "expressao-em-pe-e-deitado",
+      "title": "em pé e deitado — as duas posturas da lemniscata (*bodiado*)",
+      "titleEn": "em pé e deitado — the two postures of the lemniscate (*bodiado*)",
+      "titleEs": "em pé e deitado — las dos posturas de la lemniscata (*bodiado*)",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: em pé e deitado — par de posturas da lemniscata; bodiado → deitado (+ body); aula XIV Kassia; Valeu !!!",
+      "whyEn": "Sayings: em pé e deitado — pair of lemniscate postures; bodiado → deitado (+ body); UNIFESP XIV Kassia; Valeu !!!",
+      "whyEs": "Dichos: em pé e deitado — par de posturas de la lemniscata; bodiado → deitado (+ body); aula XIV Kassia; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-em-pe-e-deitado",
+      "doneHref": "/posts/post-inspecao-expressao-em-pe-e-deitado.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Infinity_symbol",
+        "https://pt.wiktionary.org/wiki/p%C3%A9",
+        "https://pt.wiktionary.org/wiki/deitar",
+        "/biblioteca/unifesp/livro-xiv.html#aula-8",
+        "/posts/post-inspecao-palavra-lemniscata.html",
+        "/posts/post-inspecao-expressao-elo-de-ligacao.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 22 Expressões — posturas da lemniscata; gatilho bodiado."
+    },
+    {
+      "id": "palavra-lemniscata",
+      "title": "Lemniscata — a fita em oito, não a eternidade",
+      "titleEn": "Lemniscate — the ribbon in an eight, not eternity",
+      "titleEs": "Lemniscata — la cinta en ocho, no la eternidad",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: lemniscata — curva-fita (λημνίσκος); ≠ infinito-conceito; OCR lemeniscata; Valeu !!!",
+      "whyEn": "Words: lemniscata — ribbon-curve; ≠ infinity-as-concept; OCR lemeniscata; Valeu !!!",
+      "whyEs": "Palabras: lemniscata — curva-cinta; ≠ infinito-concepto; OCR lemeniscata; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-lemniscata",
+      "doneHref": "/posts/post-inspecao-palavra-lemniscata.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Lemniscata",
+        "https://en.wikipedia.org/wiki/Lemniscate",
+        "https://en.wiktionary.org/wiki/lemniscus",
+        "/posts/post-inspecao-expressao-em-pe-e-deitado.html",
+        "/posts/post-inspecao-expressao-elo-de-ligacao.html"
+      ],
+      "notes": "Cap. 204 Palavras — nome da curva; posturas na expressão irmã."
     }
   ]
 }
