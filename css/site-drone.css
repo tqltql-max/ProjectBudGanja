@@ -129,6 +129,9 @@
 
 .site-drone-craft {
     transform-origin: 60px 44px;
+}
+
+.site-drone.is-lit .site-drone-craft {
     animation: site-drone-bob 2.6s ease-in-out infinite;
 }
 

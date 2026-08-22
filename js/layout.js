@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '345';
+const ASSET_V = '346';
 const HOME = '/inverno/';
 
 let deferredInstallPrompt = null;
@@ -1720,7 +1720,7 @@ function buildMobileUtilsHTML(authState, hideAuthNav) {
     '<span>' + escapeNavText(i18n('common.searchOpen', 'Buscar no site')) + '</span></button>'
   );
   const droneOnMobile = (function () {
-    try { return localStorage.getItem('budganja-drone') === '1'; } catch (e) { return false; }
+    try { return sessionStorage.getItem('budganja-drone-move') === '1'; } catch (e) { return false; }
   })();
   const droneMobileLabel = droneOnMobile
     ? i18n('common.droneOff', 'Desativar drone')

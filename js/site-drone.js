@@ -7,6 +7,7 @@
   'use strict';
 
   var STORAGE_KEY = 'budganja-drone';
+  var MOVE_KEY = 'budganja-drone-move';
   var CARGO_KEY = 'budganja-drone-cargo';
   var SIZE = 54;
   var MAX_CARGO = 80;
@@ -86,7 +87,7 @@
 
   function loadFlag() {
     try {
-      return localStorage.getItem(STORAGE_KEY) === '1';
+      return sessionStorage.getItem(MOVE_KEY) === '1';
     } catch (e) {
       return false;
     }
@@ -102,8 +103,13 @@
 
   function saveFlag(on) {
     try {
-      if (on) localStorage.setItem(STORAGE_KEY, '1');
-      else if (localStorage.getItem(STORAGE_KEY) !== 'hidden') localStorage.removeItem(STORAGE_KEY);
+      if (on) {
+        sessionStorage.setItem(MOVE_KEY, '1');
+        if (localStorage.getItem(STORAGE_KEY) === 'hidden') localStorage.removeItem(STORAGE_KEY);
+      } else {
+        sessionStorage.removeItem(MOVE_KEY);
+      }
+      if (localStorage.getItem(STORAGE_KEY) === '1') localStorage.removeItem(STORAGE_KEY);
     } catch (e) { /* ignore */ }
   }
 
@@ -1354,8 +1360,13 @@
       }
     });
     if (!isDismissed()) {
+      try {
+        if (localStorage.getItem(STORAGE_KEY) === '1') localStorage.removeItem(STORAGE_KEY);
+      } catch (e) { /* ignore */ }
       mountDrone();
       setOn(loadFlag());
+    } else {
+      syncButtons();
     }
     mountPad();
   }
