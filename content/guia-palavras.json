@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T07:17:41.003Z",
+  "updatedAt": "2026-08-22T16:30:38.264Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -8124,6 +8124,22 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-app-the-chosen.html"
+    },
+    {
+      "id": "o-magnata",
+      "word": "O Magnata",
+      "simple": "Filme brasileiro de 2007 (Johnny Araújo; roteiro de Chorão). No site, inspeção em Artes — skate, rock e preço × valor; biografia na ficha Pessoas.",
+      "simpleEn": "2007 Brazilian film (Johnny Araújo; screenplay by Chorão). On the site, an Arts inspection — skate, rock and price vs value; biography on the People sheet.",
+      "simpleEs": "Filme brasileño de 2007 (Johnny Araújo; guion de Chorão). En el sitio, inspección en Artes — skate, rock y precio × valor; biografía en la ficha Personas.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-filme-o-magnata.html",
+      "history": "O Magnata estreou em 15 de novembro de 2007 (Gullane / Buena Vista). Roteiro de Chorão; estreia de Johnny Araújo em longa. A ficha de Artes lê a obra; a de Pessoas inspeciona o letrista.",
+      "curiosities": "Tese do laboratório: preço × valor. Trilha Charlie Brown Jr. — outra obra, outra ficha.",
+      "historyEn": "O Magnata opened on 15 November 2007 (Gullane / Buena Vista). Screenplay by Chorão; Johnny Araújo’s feature debut. The Arts sheet reads the film; People inspects the lyricist.",
+      "curiositiesEn": "Lab thesis: price vs value. Charlie Brown Jr. score is another work, another sheet.",
+      "historyEs": "O Magnata se estrenó el 15 de noviembre de 2007 (Gullane / Buena Vista). Guion de Chorão; estreno de Johnny Araújo en largometraje. Artes lee la obra; Personas inspecciona al letrista.",
+      "curiositiesEs": "Tesis del laboratorio: precio × valor. Banda sonora de Charlie Brown Jr. — otra obra, otra ficha."
     }
   ]
 }

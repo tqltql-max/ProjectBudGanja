@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T07:17:40.996Z",
+  "updatedAt": "2026-08-22T16:30:38.257Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -527,17 +527,20 @@
       "titleEs": "O Magnata (2007) — película y vínculo con Chorão",
       "tipo": "arte",
       "priority": 2,
-      "status": "ideia",
-      "why": "Longa brasileiro com Chorão; cruzar representação urbana/canábica com a ficha Pessoas.",
-      "whyEn": "Brazilian feature with Chorão; cross urban/cannabis representation with the People sheet.",
-      "whyEs": "Largometraje brasileño con Chorão; cruzar representación urbana/cannábica con la ficha Personas.",
+      "status": "feita",
+      "why": "Longa brasileiro com roteiro de Chorão; cruzar representação urbana com a ficha Pessoas — obra primeiro.",
+      "whyEn": "Brazilian feature with Chorão’s screenplay; cross urban representation with the People sheet — work first.",
+      "whyEs": "Largometraje brasileño con guion de Chorão; cruzar representación urbana con la ficha Personas — obra primero.",
       "suggestedSlug": "inspecao-filme-o-magnata",
       "seriesHint": "artes-cultura",
       "sources": [
         "https://pt.wikipedia.org/wiki/O_Magnata",
-        "/posts/post-inspecao-figura-chorao.html"
+        "https://www.gullane.com.br/projetos/o-magnata",
+        "/posts/post-inspecao-figura-chorao.html",
+        "/posts/post-inspecao-arte-so-os-loucos-sabem.html"
       ],
-      "notes": "Foco na obra, não na biografia (já em Pessoas)."
+      "notes": "Foco na obra, não na biografia (já em Pessoas). Preço × valor; não forçar cannabis no enredo.",
+      "doneHref": "/posts/post-inspecao-filme-o-magnata.html"
     },
     {
       "id": "arte-reefer-madness",

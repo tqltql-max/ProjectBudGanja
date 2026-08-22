@@ -646,6 +646,25 @@
     "seriesLabel": "The Matrix · Artes"
   },
   {
+    "title": "Inspeção: Chorão — letra urbana, Charlie Brown Jr. e a série Palavras",
+    "titleEn": "Inspection: Chorão — urban lyrics, Charlie Brown Jr. and the Words series",
+    "titleEs": "Inspección: Chorão — letra urbana, Charlie Brown Jr. y la serie Palabras",
+    "excerpt": "Pessoas × Palavras: Chorão (Alexandre Magno Abrão), letrista do Charlie Brown Jr. — poesia urbana, gíria e refrão cruzados com a ficha maconha e o hub de vocábulos.",
+    "excerptEn": "People × Words: Chorão (Alexandre Magno Abrão), Charlie Brown Jr. lyricist — urban poetry, slang and refrains crossed with the maconha sheet and the Words hub.",
+    "excerptEs": "Personas × Palabras: Chorão (Alexandre Magno Abrão), letrista de Charlie Brown Jr. — poesía urbana, jerga y estribillos cruzados con la ficha maconha y el hub de vocablos.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-figura-chorao",
+    "url": "/posts/post-inspecao-figura-chorao.html",
+    "date": "2026-08-01T08:00:00.000Z",
+    "filename": "posts/post-inspecao-figura-chorao.html",
+    "coverImage": "/imagens/inspecoes/chorao-cover.jpg",
+    "category": "inspecao",
+    "series": "pessoas-historia",
+    "seriesOrder": 3,
+    "seriesLabel": "Chorão · pessoa"
+  },
+  {
     "title": "Inspeção: Planta — Capim-limão — citral e gramínea aromática",
     "titleEn": "Inspection: Plant — Lemongrass — citral and aromatic grass",
     "titleEs": "Inspección: Planta — Hierba limón — citral y gramínea aromática",
@@ -4197,6 +4216,25 @@
     "series": "palavras-origem",
     "seriesOrder": 83,
     "seriesLabel": "Planta · palavra"
+  },
+  {
+    "title": "Inspeção: O Magnata — o filme de 2007, o roteiro de Chorão e o preço × valor",
+    "titleEn": "Inspection: O Magnata — the 2007 film, Chorão’s screenplay, and price vs value",
+    "titleEs": "Inspección: O Magnata — el filme de 2007, el guion de Chorão y el precio × valor",
+    "excerpt": "Artes · cinema: O Magnata (2007, Johnny Araújo / roteiro Chorão) — skate, rock e preço × valor; obra primeiro, pessoa na ficha Chorão; Valeu !!!",
+    "excerptEn": "Arts · film: O Magnata (2007, Johnny Araújo / Chorão screenplay) — skate, rock and price vs value; the work first, the person on the Chorão sheet; Valeu !!!",
+    "excerptEs": "Artes · cine: O Magnata (2007, Johnny Araújo / guion de Chorão) — skate, rock y precio × valor; la obra primero, la persona en la ficha Chorão; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-filme-o-magnata",
+    "url": "/posts/post-inspecao-filme-o-magnata.html",
+    "date": "2026-08-22T16:30:00.000Z",
+    "filename": "posts/post-inspecao-filme-o-magnata.html",
+    "coverImage": "/imagens/inspecoes/o-magnata-cover.jpg",
+    "category": "inspecao",
+    "series": "artes-cultura",
+    "seriesOrder": 84,
+    "seriesLabel": "O Magnata · Artes"
   },
   {
     "title": "Inspeção: Inspiração — sopro, ideia acesa e Valeu !!!",
@@ -7883,25 +7921,6 @@
     "series": "divulgacao-saude",
     "seriesOrder": null,
     "seriesLabel": "Lair Ribeiro · divulgação"
-  },
-  {
-    "title": "Inspeção: Chorão — letra urbana, Charlie Brown Jr. e a série Palavras",
-    "titleEn": "Inspection: Chorão — urban lyrics, Charlie Brown Jr. and the Words series",
-    "titleEs": "Inspección: Chorão — letra urbana, Charlie Brown Jr. y la serie Palabras",
-    "excerpt": "Pessoas × Palavras: Chorão (Alexandre Magno Abrão), letrista do Charlie Brown Jr. — poesia urbana, gíria e refrão cruzados com a ficha maconha e o hub de vocábulos.",
-    "excerptEn": "People × Words: Chorão (Alexandre Magno Abrão), Charlie Brown Jr. lyricist — urban poetry, slang and refrains crossed with the maconha sheet and the Words hub.",
-    "excerptEs": "Personas × Palabras: Chorão (Alexandre Magno Abrão), letrista de Charlie Brown Jr. — poesía urbana, jerga y estribillos cruzados con la ficha maconha y el hub de vocablos.",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-figura-chorao",
-    "url": "/posts/post-inspecao-figura-chorao.html",
-    "date": "2026-08-01T08:00:00.000Z",
-    "filename": "posts/post-inspecao-figura-chorao.html",
-    "coverImage": "/imagens/inspecoes/chorao-cover.jpg",
-    "category": "inspecao",
-    "series": "pessoas-historia",
-    "seriesOrder": null,
-    "seriesLabel": "Chorão · pessoa"
   },
   {
     "title": "Inspeção: Gregorio Duvivier — o método da palavra e a série Palavras",
