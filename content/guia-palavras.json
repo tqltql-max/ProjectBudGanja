@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T02:58:00.544Z",
+  "updatedAt": "2026-08-23T03:03:54.042Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -466,6 +466,16 @@
       "curiositiesEn": "The sheet crosses the track with creativity, joy and path — a vocabulary of wonder, not diagnosis.",
       "historyEs": "How Bizarre, del grupo neozelandés OMC, salió en 1995 desde Ōtara. El título inglés elige nombrar lo bizarro en vez de suavizarlo.",
       "curiositiesEs": "La ficha cruza el tema con creatividad, alegría y camino — vocabulario de asombro, no de diagnóstico."
+    },
+    {
+      "id": "rick-and-morty",
+      "word": "Rick and Morty",
+      "simple": "Desenho Adult Swim (2013, Harmon / Roiland) — portal e multiverso; elo BudGanja: faca o melhor nesta linha.",
+      "simpleEn": "Adult Swim cartoon (2013, Harmon / Roiland) — portal and multiverse; BudGanja link: do your best on this line.",
+      "simpleEs": "Dibujo Adult Swim (2013, Harmon / Roiland) — portal y multiverso; vínculo BudGanja: haz lo mejor en esta línea.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-desenho-rick-and-morty.html"
     },
     {
       "id": "bitter-sweet-symphony",

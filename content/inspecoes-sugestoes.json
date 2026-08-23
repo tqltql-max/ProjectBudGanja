@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T02:57:58.295Z",
+  "updatedAt": "2026-08-23T03:03:54.035Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8454,6 +8454,31 @@
         "/posts/post-inspecao-palavra-animal.html"
       ],
       "notes": "Cap. 219 — jerigonza × gyrinus; animal primeiro."
+    },
+    {
+      "id": "arte-desenho-rick-and-morty",
+      "title": "Rick and Morty — o desenho do portal e o ofício nesta linha",
+      "titleEn": "Rick and Morty — the portal cartoon and the craft on this line",
+      "titleEs": "Rick and Morty — el dibujo del portal y el oficio en esta línea",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Artes · desenho 2013: Rick and Morty — multiverso e portal; infinitas linhas nao cancelam faca o melhor nesta.",
+      "whyEn": "Arts · 2013 cartoon: Rick and Morty — multiverse and portal; infinite lines do not cancel do your best here.",
+      "whyEs": "Artes · dibujo 2013: Rick and Morty — multiverso y portal; las lineas infinitas no cancelan haz lo mejor aqui.",
+      "suggestedSlug": "inspecao-desenho-rick-and-morty",
+      "doneHref": "/posts/post-inspecao-desenho-rick-and-morty.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-desenho-rick-and-morty.html",
+        "https://www.youtube.com/watch?v=BFTSrbB2wII",
+        "https://pt.wikipedia.org/wiki/Rick_and_Morty",
+        "https://en.wikipedia.org/wiki/Rick_and_Morty",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-filme-de-volta-para-o-futuro.html",
+        "/vida/"
+      ],
+      "notes": "Cap. 9 — desenho primeiro (2013); Channel 101 2006; RikRok ≠ Rick; poema original."
     }
   ]
 }

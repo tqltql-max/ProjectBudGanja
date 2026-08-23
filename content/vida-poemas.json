@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T07:18:15.474Z",
+  "updatedAt": "2026-08-23T03:05:29.303Z",
   "poems": [
     {
       "id": "barquinhos-de-papel",
@@ -610,6 +610,31 @@
         "vira",
         "alegria",
         "respeito"
+      ]
+    },
+    {
+      "id": "rick-and-morty",
+      "slug": "rick-and-morty",
+      "title": "Rick and Morty",
+      "titleEn": "Rick and Morty",
+      "titleEs": "Rick and Morty",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja do desenho — mil portais, uma planta nesta mão; faca o melhor nesta linha.",
+      "teaserEn": "BudGanja echo of the cartoon — a thousand portals, one plant in this hand; do your best on this line.",
+      "teaserEs": "Eco BudGanja del dibujo — mil portales, una planta en esta mano; haz lo mejor en esta línea.",
+      "body": "Rick and Morty.\nNão pedimos o portal emprestado —\npedimos o ofício de ficar\nquando há mil portas\ne só uma planta nesta mão.\n\nHarmon. Roiland. Adult Swim.\nHouve um festival de curtas\nonde Doc e Marty nasciam tortos —\ne um desenho que levou o par\na um suburbio e a um número sem fim\nde linhas que não se tocam.\nHouve um portal verde,\num neto que treme,\num avô que finge que nada importa.\nHouve a tentação de chamar destino\nao que é só mais uma dimensão.\n\nO laboratório conhece esse número.\nInfinito que parece alívio\ne vira fuga.\nTeoria que vibra no quadro\ne não rega o vaso.\nLoop que troca de universo\nem vez de pôr condição de paragem.\n\nAinda assim: esta linha.\nEste dia.\nEsta gota.\nFaça o melhor.\nNão o perfeito de outro Rick.\nO possível honesto aqui.\n\nValeu !!!\n\nPorque toda vez que alguém\nnão troca de universo\nquando o ofício aperta,\no universo — este —\ncresce um pouco:\num verso a mais,\num dossel a mais,\numa rua onde o portal\nnão apaga a planta.",
+      "bodyEn": "Rick and Morty.\nWe do not borrow the portal —\nwe ask for the craft of staying\nwhen there are a thousand doors\nand only one plant in this hand.\n\nHarmon. Roiland. Adult Swim.\nThere was a short-film festival\nwhere Doc and Marty were born crooked —\nand a cartoon that took the pair\nto a suburb and to a number without end\nof lines that do not touch.\nThere was a green portal,\na grandson who shakes,\na grandfather who pretends nothing matters.\nThere was the temptation to call destiny\nwhat is only one more dimension.\n\nThe laboratory knows that number.\nInfinity that looks like relief\nand turns into flight.\nTheory that vibrates on the blackboard\nand does not water the pot.\nA loop that swaps universes\ninstead of setting a stop condition.\n\nAnd still: this line.\nThis day.\nThis drop.\nDo your best.\nNot the perfect of another Rick.\nThe honest possible here.\n\nValeu !!!\n\nBecause every time someone\ndoes not swap universes\nwhen the craft tightens,\nthe universe — this one —\ngrows a little:\none more verse,\none more canopy,\na street where the portal\ndoes not erase the plant.",
+      "bodyEs": "Rick and Morty.\nNo pedimos prestado el portal —\npedimos el oficio de quedarse\ncuando hay mil puertas\ny solo una planta en esta mano.\n\nHarmon. Roiland. Adult Swim.\nHubo un festival de cortos\ndonde Doc y Marty nacían torcidos —\ny un dibujo que llevó al par\na un suburbio y a un número sin fin\nde líneas que no se tocan.\nHubo un portal verde,\nun nieto que tiembla,\nun abuelo que finge que nada importa.\nHubo la tentación de llamar destino\na lo que es solo una dimensión más.\n\nEl laboratorio conoce ese número.\nInfinito que parece alivio\ny se vuelve huida.\nTeoría que vibra en el pizarrón\ny no riega la maceta.\nUn loop que cambia de universo\nen vez de poner condición de parada.\n\nAun así: esta línea.\nEste día.\nEsta gota.\nHaz lo mejor.\nNo lo perfecto de otro Rick.\nLo posible honesto aquí.\n\n¡Valeu !!!\n\nPorque cada vez que alguien\nno cambia de universo\ncuando el oficio aprieta,\nel universo — este —\ncrece un poco:\nun verso más,\nun dosel más,\nuna calle donde el portal\nno apaga la planta.",
+      "inspectionHref": "/posts/post-inspecao-desenho-rick-and-morty.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "desenho",
+        "portal",
+        "multiverso",
+        "ofício"
       ]
     },
     {

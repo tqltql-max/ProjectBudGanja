@@ -838,6 +838,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Abacaxi (*Ananas comosus (L.) Merr.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
+              "label": "Inspeção: Rick and Morty — o desenho do portal e o ofício nesta linha",
+              "tileLabel": "Inspeção: Rick and Morty — o de…",
+              "href": "/posts/post-inspecao-desenho-rick-and-morty.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-desenho-rick-and-morty",
+              "description": "Artes · desenho 2013: Rick and Morty (Harmon / Roiland / Adult Swim) — multiverso e portal; elo BudGanja com faça o melhor: infinitas linhas não cancelam o ofício nesta."
+            },
+            {
               "label": "Inspeção: tamaraklink.com — carta náutica digital do Ártico",
               "tileLabel": "Inspeção: tamaraklink.com — car…",
               "href": "/posts/post-inspecao-site-tamaraklink.html",

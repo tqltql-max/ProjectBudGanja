@@ -90,6 +90,11 @@ const {
   poemSementeFoiPlantadaEs
 } = require('../lib/semente-foi-plantada-poem.js');
 const {
+  poemRickAndMortyPt,
+  poemRickAndMortyEn,
+  poemRickAndMortyEs
+} = require('../lib/rick-and-morty-inspecao-post.js');
+const {
   poemDozeApostolosPt,
   poemDozeApostolosEn,
   poemDozeApostolosEs
@@ -668,6 +673,27 @@ const doc = {
       bodyEs: poemViraViraEs(),
       inspectionHref: '/posts/post-inspecao-arte-vira-vira.html',
       tags: ['poesia', 'vida', 'mamonas', 'vira', 'alegria', 'respeito']
+    },
+    {
+      id: 'rick-and-morty',
+      slug: 'rick-and-morty',
+      title: 'Rick and Morty',
+      titleEn: 'Rick and Morty',
+      titleEs: 'Rick and Morty',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja do desenho — mil portais, uma planta nesta mão; faca o melhor nesta linha.',
+      teaserEn:
+        'BudGanja echo of the cartoon — a thousand portals, one plant in this hand; do your best on this line.',
+      teaserEs:
+        'Eco BudGanja del dibujo — mil portales, una planta en esta mano; haz lo mejor en esta línea.',
+      body: poemRickAndMortyPt(),
+      bodyEn: poemRickAndMortyEn(),
+      bodyEs: poemRickAndMortyEs(),
+      inspectionHref: '/posts/post-inspecao-desenho-rick-and-morty.html',
+      tags: ['poesia', 'vida', 'desenho', 'portal', 'multiverso', 'ofício']
     },
     {
       id: 'a-semente-foi-plantada',
