@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T12:34:38.020Z",
+  "updatedAt": "2026-08-23T13:32:33.947Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2910,17 +2910,17 @@
     },
     {
       "id": "expressao-faca-o-melhor",
-      "title": "Valeu !!! — mantra do laboratório",
-      "titleEn": "Valeu !!! — lab mantra",
-      "titleEs": "¡Valeu !!! — mantra del laboratorio",
+      "title": "Faça o seu melhor — mantra do ofício",
+      "titleEn": "Do your best — craft mantra",
+      "titleEs": "Haz tu mejor — mantra de oficio",
       "tipo": "expressao",
       "priority": 1,
       "status": "feita",
-      "why": "Expressões: mantra Vida — ofício diário; resposta ao roubo e à proibição do projecto de inspeção.",
-      "whyEn": "Sayings: Vida mantra — daily craft; reply to theft and prohibition of the inspection project.",
-      "whyEs": "Dichos: mantra Vida — oficio diario; respuesta al robo y a la prohibición del proyecto de inspección.",
+      "why": "Expressões: mantra Vida — Valeu !!! · Boa!!! · faça o seu melhor (resultado > estética da frase).",
+      "whyEn": "Sayings: Vida mantra — Valeu !!! · Boa!!! · do your best (results over pretty phrasing).",
+      "whyEs": "Dichos: mantra Vida — Valeu !!! · Boa!!! · haz tu mejor (resultado > estética de la frase).",
       "suggestedSlug": "inspecao-expressao-faca-o-melhor",
-      "doneHref": "/posts/post-inspecao-palavra-valeu.html",
+      "doneHref": "/posts/post-inspecao-expressao-faca-o-melhor.html",
       "seriesHint": "expressoes-ditados",
       "sources": [
         "/vida/",
@@ -2928,7 +2928,7 @@
         "/posts/post-inspecao-palavra-gesto.html",
         "/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html"
       ],
-      "notes": "Mantra canónico do laboratório; poema Vida faca-o-melhor."
+      "notes": "Voz viva: faça o seu melhor / faça seu melhor como sempre; forma antiga faça o melhor; se dá resultado, ficou."
     },
     {
       "id": "palavra-backspace",
@@ -7183,9 +7183,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: sinais — plural de sinal; mapa do corpo (barriga, orelha, mama, cabelo).",
-      "whyEn": "Palavras: sinais — plural de sinal; mapa do corpo (barriga, orelha, mama, cabelo).",
-      "whyEs": "Palavras: sinais — plural de sinal; mapa do corpo (barriga, orelha, mama, cabelo).",
+      "why": "Palavras: sinais — plural de sinal; mapa do corpo (barriga, orelha, mama, cabelo, braços na cabeça).",
+      "whyEn": "Palavras: sinais — plural de sinal; mapa do corpo (barriga, orelha, mama, cabelo, braços na cabeça).",
+      "whyEs": "Palavras: sinais — plural de sinal; mapa do corpo (barriga, orelha, mama, cabelo, braços na cabeça).",
       "suggestedSlug": "inspecao-palavra-sinais",
       "doneHref": "/posts/post-inspecao-palavra-sinais.html",
       "seriesHint": "palavras-origem",
@@ -7474,21 +7474,25 @@
     },
     {
       "id": "palavra-ufa",
-      "title": "Ufa — o sopro depois de desatar o nó",
-      "titleEn": "Ufa — the puff after untying the knot",
-      "titleEs": "Ufa — el soplo después de desatar el nudo",
+      "title": "Ufa!!! — o sopro, que alívio",
+      "titleEn": "Ufa!!! — the puff, que alívio",
+      "titleEs": "¡Ufa!!! — el soplo, que alívio",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: ufa — alívio BR; par de aff; fecho de desatar o nó; legal (gíria).",
+      "why": "Palavras: Ufa!!! — sopro de alívio; locução que alívio; vocábulo alívio; Valeu !!!",
       "suggestedSlug": "inspecao-palavra-ufa",
       "doneHref": "/posts/post-inspecao-palavra-ufa.html",
       "seriesHint": "palavras-origem",
       "sources": [
-        "/posts/post-inspecao-palavra-aff.html",
-        "/posts/post-inspecao-palavra-legal.html"
+        "https://pt.wiktionary.org/wiki/ufa",
+        "/posts/post-inspecao-palavra-alivio.html",
+        "/posts/post-inspecao-expressao-desatar-o-no.html",
+        "/posts/post-inspecao-palavra-valeu.html"
       ],
-      "notes": "Interjeição de alívio."
+      "notes": "Cap. 178 — trocar aff por ufa; Ufa!!!; que alívio.",
+      "whyEn": "Words: Ufa!!! — puff of relief; phrase que alívio; word alívio; Valeu !!!",
+      "whyEs": "Palabras: ¡Ufa!!! — soplo de alivio; locución que alívio; vocablo alívio; ¡Valeu !!!"
     },
     {
       "id": "expressao-no-na-vida",
@@ -9119,6 +9123,135 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 261 — inspeção especial do país; cola golfo/golfe/gongo/Congo."
+    },
+    {
+      "id": "fruto-marolo",
+      "title": "Marolo — araticum do Cerrado vs maracujá / mamão / pinha",
+      "titleEn": "Marolo — Cerrado araticum vs passion fruit / papaya / sugar-apple",
+      "titleEs": "Marolo — araticum del Cerrado vs maracuyá / papaya / anón",
+      "tipo": "fruto",
+      "priority": 2,
+      "status": "feita",
+      "why": "Frutos: Marolo (*Annona crassiflora*) — crédito à polpa nativa; ≠ maracujá ≠ mamão ≠ pinha; Valeu !!!",
+      "whyEn": "Fruits: Marolo (*Annona crassiflora*) — credit native pulp; ≠ passion fruit ≠ papaya ≠ sugar-apple; Valeu !!!",
+      "whyEs": "Frutos: Marolo (*Annona crassiflora*) — crédito a la pulpa nativa; ≠ maracuyá ≠ papaya ≠ anón; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-planta-marolo",
+      "doneHref": "/posts/post-inspecao-planta-marolo.html",
+      "seriesHint": "plantas-frutos",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Annona_crassiflora",
+        "/plantas/marolo/",
+        "/posts/post-inspecao-palavra-fruto.html"
+      ],
+      "notes": "hubCategory: fruto; Cap. 17; cola de orelha marolo × maracujá."
+    },
+    {
+      "id": "derivado-marolo",
+      "title": "Derivados do marolo — polpas, néctares e licores",
+      "titleEn": "Marolo derivatives — pulps, nectars and liqueurs",
+      "titleEs": "Derivados del marolo — pulpas, néctares y licores",
+      "tipo": "derivado",
+      "priority": 3,
+      "status": "ideia",
+      "why": "Derivados de risco: marolo inteiro vs polpa adoçada, néctar e licor industrial; cruzar açúcares livres.",
+      "whyEn": "Risk derivatives: whole marolo vs sweetened pulp, nectar and industrial liqueur; cross free sugars.",
+      "whyEs": "Derivados de riesgo: marolo entero vs pulpa endulzada, néctar y licor industrial; cruzar azúcares libres.",
+      "suggestedSlug": "inspecao-derivado-marolo",
+      "seriesHint": "plantas-derivados-risco",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Annona_crassiflora",
+        "/posts/post-inspecao-planta-marolo.html",
+        "/posts/post-inspecao-derivado-cana-de-acucar.html",
+        "/biblioteca/inspecoes/#inspecoes-frutos"
+      ],
+      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Sem extracto de semente."
+    },
+    {
+      "id": "palavra-mega-sena",
+      "title": "Mega-Sena — o nome (mega + sena) e os patrocínios",
+      "titleEn": "Mega-Sena — the name and sponsorships",
+      "titleEs": "Mega-Sena — el nombre y los patrocinios",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: nome mega + sena (seis); ≠ Senna (Ayrton); patrocínios ≠ sorte; Valeu !!!",
+      "whyEn": "Words: mega + sena (six); ≠ Ayrton Senna; sponsorships ≠ luck; Valeu !!!",
+      "whyEs": "Palabras: mega + sena (seis); ≠ Ayrton Senna; patrocinios ≠ suerte; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-mega-sena",
+      "doneHref": "/posts/post-inspecao-palavra-mega-sena.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Mega-Sena",
+        "/posts/post-inspecao-figura-ayrton-senna.html",
+        "/posts/post-inspecao-palavra-catorze.html",
+        "/posts/post-inspecao-palavra-patrao.html"
+      ],
+      "notes": "Cap. 262 — um n = seis; dois n = o piloto."
+    },
+    {
+      "id": "palavra-catorze",
+      "title": "14 — catorze, dois setes",
+      "titleEn": "14 — catorze, two sevens",
+      "titleEs": "14 — catorze, dos sietes",
+      "tipo": "palavra",
+      "priority": 3,
+      "status": "feita",
+      "why": "Palavras: 14 / catorze — 2×7; ≠ Fibonacci; na Mega-Sena é só dezena.",
+      "whyEn": "Words: 14 — 2×7; not Fibonacci; in Mega-Sena just a number.",
+      "whyEs": "Palabras: 14 — 2×7; no Fibonacci; en la Mega-Sena solo una decena.",
+      "suggestedSlug": "inspecao-palavra-catorze",
+      "doneHref": "/posts/post-inspecao-palavra-catorze.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/catorze",
+        "/posts/post-inspecao-palavra-mega-sena.html"
+      ],
+      "notes": "Cap. 263 — pedido 14; elo Mega-Sena."
+    },
+    {
+      "id": "palavra-zero",
+      "title": "0 — zero, o nulo que conta",
+      "titleEn": "0 — zero, the null that still counts",
+      "titleEs": "0 — zero, el nulo que cuenta",
+      "tipo": "palavra",
+      "priority": 3,
+      "status": "feita",
+      "why": "Palavras: 0 / zero — identidade da soma; ≠ dezena da Mega-Sena; ≠ letra O.",
+      "whyEn": "Words: 0 / zero — additive identity; not a Mega-Sena dezena; ≠ letter O.",
+      "whyEs": "Palabras: 0 / zero — identidad de la suma; no es decena de la Mega-Sena; ≠ letra O.",
+      "suggestedSlug": "inspecao-palavra-zero",
+      "doneHref": "/posts/post-inspecao-palavra-zero.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/zero",
+        "/posts/post-inspecao-palavra-mega-sena.html",
+        "/posts/post-inspecao-palavra-catorze.html"
+      ],
+      "notes": "Cap. 264 — pedido 0; não joga na Mega."
+    },
+    {
+      "id": "expressao-cruzar-os-bracos-cabeca",
+      "title": "cruzar os braços em cima da cabeça — pausa da cabeça",
+      "titleEn": "arms crossed on top of the head — head pause",
+      "titleEs": "cruzar los brazos encima de la cabeza — pausa de la cabeza",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões / sinais: cruzar os braços em cima da cabeça — pausa da cabeça; ≠ X no peito; Valeu !!!",
+      "whyEn": "Sayings / signs: arms crossed on the head — head pause; ≠ chest fold; Valeu !!!",
+      "whyEs": "Dichos / señales: brazos cruzados en la cabeza — pausa de la cabeza; ≠ X en el pecho; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-cruzar-os-bracos-em-cima-da-cabeca",
+      "doneHref": "/posts/post-inspecao-expressao-cruzar-os-bracos-em-cima-da-cabeca.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/cruzar",
+        "https://pt.wiktionary.org/wiki/braço",
+        "https://pt.wiktionary.org/wiki/cabeça",
+        "/posts/post-inspecao-palavra-sinais.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 31 — gesto no mapa sinais; ≠ braços no peito."
     }
   ]
 }

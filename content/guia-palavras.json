@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T12:34:38.023Z",
+  "updatedAt": "2026-08-23T13:32:33.957Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -160,9 +160,9 @@
     {
       "id": "ufa",
       "word": "ufa",
-      "simple": "Interjeição BR de alívio; par de aff; depois de desatar o nó; legal (gíria) se couber.",
-      "simpleEn": "BR phew of relief; pair of aff; after untying the knot.",
-      "simpleEs": "Interjección BR de alivio; par de aff; después de desatar o nó.",
+      "simple": "Ufa!!! — sopro de alívio BR; locução que alívio; vocábulo na ficha alívio; Valeu !!!",
+      "simpleEn": "Ufa!!! — BR phew of relief; phrase que alívio; word on the alívio sheet; Valeu !!!",
+      "simpleEs": "¡Ufa!!! — soplo BR de alivio; locución que alívio; vocablo en la ficha alívio; ¡Valeu !!!",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-ufa.html"
@@ -3694,6 +3694,22 @@
       "curiositiesEs": "La inspección léxica liga plantas y simbiosis — palabra, no lista de recetas."
     },
     {
+      "id": "marolo",
+      "word": "marolo",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-planta-marolo.html",
+      "simple": "Annona crassiflora — araticum-do-cerrado; ≠ maracujá ≠ mamão ≠ pinha; Valeu !!!",
+      "simpleEn": "Annona crassiflora — Cerrado araticum; ≠ passion fruit ≠ papaya ≠ sugar-apple; Valeu !!!",
+      "simpleEs": "Annona crassiflora — araticum del Cerrado; ≠ maracuyá ≠ papaya ≠ anón; ¡Valeu !!!",
+      "history": "Marolo é o nome mineiro do araticum (tupi aratiku). O binómio é Annona crassiflora, nativo do Cerrado — não é maracujá nem mamão.",
+      "curiosities": "Pedido «Fruto Marolo»: a palavra fruto é outra ficha; aqui inspeciona-se a espécie. Cola de orelha com maracujá.",
+      "historyEn": "Marolo is the Minas name for araticum (Tupi aratiku). The binomial is Annona crassiflora, native to the Cerrado — not passion fruit or papaya.",
+      "curiositiesEn": "Request “Fruto Marolo”: the word fruit is another sheet; here the species is inspected. Ear glue with maracujá.",
+      "historyEs": "Marolo es el nombre mineiro del araticum (tupí aratiku). El binomio es Annona crassiflora, nativo del Cerrado.",
+      "curiositiesEs": "Pedido «Fruto Marolo»: la palabra fruto es otra ficha; aquí se inspecciona la especie. La oreja pega con maracuyá."
+    },
+    {
       "id": "nectar-dos-deuses",
       "word": "néctar dos deuses",
       "simple": "Expressão — mito grego × hipérbole de gosto; gatilho Deusus; ≠ suco de gôndola; palavra néctar à parte. Valeu !!!",
@@ -3898,6 +3914,22 @@
       "curiositiesEn": "The sheet treats the word as a craft unit: what the hand does and what can be cited.",
       "historyEs": "Gesto viene del latín gestus — el acto mínimo del cuerpo. En BudGanja la palabra liga Vida, cultivo, inspecciones, herramientas y comunidad.",
       "curiositiesEs": "La ficha trata el vocablo como unidad de oficio: lo que la mano hace y lo que se puede citar."
+    },
+    {
+      "id": "cruzar-os-bracos-em-cima-da-cabeca",
+      "word": "cruzar os braços em cima da cabeça",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-cruzar-os-bracos-em-cima-da-cabeca.html",
+      "simple": "Gesto-sinal: X dos braços no cimo da cabeça — pausa da cabeça; ≠ braços cruzados no peito; mapa sinais; Valeu !!!",
+      "simpleEn": "Body signal: arms crossed on top of the head — head pause; ≠ chest fold; sinais map; Valeu !!!",
+      "simpleEs": "Señal: brazos cruzados encima de la cabeza — pausa de la cabeza; ≠ X en el pecho; mapa sinais; ¡Valeu !!!",
+      "history": "Cruzar (lat. crux) + braços + em cima da cabeça. O X muda de sala conforme o sítio: peito = fechamento; cimo do crânio = pausa da cabeça.",
+      "curiosities": "Pedido de campo: sinais. Não fundir com mãos na nuca (à vontade) nem com cruzar os dedos (sorte).",
+      "historyEn": "Portuguese cruzar (Lat. crux) + arms + on top of the head. The X changes room by place: chest = closed; crown = head pause.",
+      "curiositiesEn": "Field request: sinais. Do not merge with hands behind the neck (ease) or crossed fingers (luck).",
+      "historyEs": "Cruzar (lat. crux) + brazos + encima de la cabeza. La X cambia de sala según el sitio: pecho = cierre; cima del cráneo = pausa de la cabeza.",
+      "curiositiesEs": "Pedido de campo: sinais. No fundir con manos en la nuca (soltura) ni con cruzar los dedos (suerte)."
     },
     {
       "id": "mindinho",
@@ -7824,9 +7856,9 @@
     {
       "id": "sinais",
       "word": "sinais",
-      "simple": "Plural de sinal — campo do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres; Valeu !!!",
-      "simpleEn": "Plural de sinal — campo do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres; Valeu !!!",
-      "simpleEs": "Plural de sinal — campo do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres; Valeu !!!",
+      "simple": "Plural de sinal — campo do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres, braços na cabeça=pausa da cabeça; Valeu !!!",
+      "simpleEn": "Plural de sinal — campo do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres, braços na cabeça=pausa da cabeça; Valeu !!!",
+      "simpleEs": "Plural de sinal — campo do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres, braços na cabeça=pausa da cabeça; Valeu !!!",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-sinais.html"
@@ -9038,6 +9070,36 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-escrever.html"
+    },
+    {
+      "id": "mega-sena",
+      "word": "Mega-Sena",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mega-sena.html",
+      "simple": "Nome: mega + sena (lat. sēnī = seis). ≠ Senna (Ayrton, dois n). Patrocínios = destinação × logo ≠ sorte. Valeu !!!",
+      "simpleEn": "Name: mega + sena (Lat. sēnī = six). ≠ Ayrton Senna (two n). Sponsorships ≠ luck. Valeu !!!",
+      "simpleEs": "Nombre: mega + sena (lat. sēnī = seis). ≠ Ayrton Senna (dos n). Patrocinios ≠ suerte. ¡Valeu !!!"
+    },
+    {
+      "id": "catorze",
+      "word": "catorze",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-catorze.html",
+      "simple": "14 — 2×7; composto; ≠ Fibonacci; na Mega-Sena é só dezena. Valeu !!!",
+      "simpleEn": "14 — 2×7; composite; not Fibonacci; in Mega-Sena just a number. Valeu !!!",
+      "simpleEs": "14 — 2×7; compuesto; no Fibonacci; en la Mega-Sena solo una decena. ¡Valeu !!!"
+    },
+    {
+      "id": "zero",
+      "word": "zero",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-zero.html",
+      "simple": "0 — nulo que conta; a+0=a; ×0 apaga; ≠ dezena da Mega-Sena; ≠ letra O. Valeu !!!",
+      "simpleEn": "0 — the null that counts; not a Mega-Sena dezena; ≠ letter O. Valeu !!!",
+      "simpleEs": "0 — el nulo que cuenta; no es decena de la Mega-Sena; ≠ letra O. ¡Valeu !!!"
     }
   ]
 }

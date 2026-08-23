@@ -37,6 +37,11 @@
   <url><loc>https://inspetorbudganja.com.br/equipamentos/manual-clonadora.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/equipamentos/manual-hidrocloradora.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://inspetorbudganja.com.br/biblioteca/pesquisas/substratos.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-expressao-cruzar-os-bracos-em-cima-da-cabeca.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-zero.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-catorze.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mega-sena.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-planta-marolo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mexico.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-expressao-mindinho.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://inspetorbudganja.com.br/posts/post-inspecao-expressao-secos-e-molhados.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -573,6 +578,7 @@
   <url><loc>https://inspetorbudganja.com.br/plantas/melancia/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/plantas/mamao/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/plantas/alecrim-do-campo/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://inspetorbudganja.com.br/plantas/marolo/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/animais/galinha/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/animais/vaca/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/animais/porco/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
