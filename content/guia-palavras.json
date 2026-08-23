@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T04:20:36.761Z",
+  "updatedAt": "2026-08-23T06:46:50.238Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3512,6 +3512,38 @@
       "curiositiesEn": "The lab asks to balance it with water and to treat anger with craft: Valeu !!! with measure.",
       "historyEs": "Fuego viene del latín focus — hogar, después llama. En portugués es elemento, metáfora y aviso de quemadura.",
       "curiositiesEs": "El laboratorio pide equilibrar con agua y tratar la rabia con oficio: Valeu !!! con medida."
+    },
+    {
+      "id": "frio",
+      "word": "frio",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-calor-frio.html",
+      "simple": "Lat. frīgus / frīgidus — qualidade fria; par calor; ≠ gelo ≠ inverno; Valeu !!! com medida.",
+      "simpleEn": "Lat. frīgus / frīgidus — cold quality; pair with calor; ≠ ice ≠ winter; Valeu !!! with measure.",
+      "simpleEs": "Lat. frīgus / frīgidus — cualidad fría; par con calor; ≠ hielo ≠ invierno; ¡Valeu !!! con medida.",
+      "history": "Frio vem do latim frīgidus / frīgus. No português é adjectivo e substantivo. Gelo (gelū / glaciēs) é outra raiz — água sólida, não sinónimo.",
+      "curiosities": "Cumprimentar o frio (Bom dia, Inverno) não é fundir frio com gelo nem com a estação. O par térmico vive no mesmo termómetro.",
+      "historyEn": "Portuguese frio comes from Latin frīgidus / frīgus. It is both adjective and noun. Ice (gelū / glaciēs) is another root — solid water, not a synonym.",
+      "curiositiesEn": "Greeting the cold (Bom dia, Inverno) is not fusing cold with ice or with the season. The thermal pair lives on the same thermometer.",
+      "historyEs": "Frio viene del latín frīgidus / frīgus. En portugués es adjetivo y sustantivo. Hielo (gelū / glaciēs) es otra raíz — agua sólida, no sinónimo.",
+      "curiositiesEs": "Saludar el frío (Bom dia, Inverno) no es fundir frío con hielo ni con la estación. El par térmico vive en el mismo termómetro."
+    },
+    {
+      "id": "calor",
+      "word": "calor",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-calor-frio.html",
+      "simple": "Lat. calor ← calēre — qualidade quente; par frio; ≠ fogo ≠ caloria; mede-se na tenda; Valeu !!!",
+      "simpleEn": "Lat. calor ← calēre — hot quality; pair with frio; ≠ fire ≠ calorie; measure in the tent; Valeu !!!",
+      "simpleEs": "Lat. calor ← calēre — cualidad caliente; par con frio; ≠ fuego ≠ caloria; se mide en la carpa; ¡Valeu !!!",
+      "history": "Calor vem do latim calor, calōris, de calēre («estar quente»). No português nomeia a qualidade, não a chama. Caloria é prima etimológica com ofício de unidade.",
+      "curiosities": "No laboratório o calor da tenda mede-se (VPD / exaustor). Fogo é a fonte; incêndio é o evento. Valeu !!! com o grau à vista.",
+      "historyEn": "Portuguese calor comes from Latin calor, calōris, from calēre (“to be warm”). It names the quality, not the flame. Calorie is an etymological cousin with a unit’s office.",
+      "curiositiesEn": "In the lab tent heat is measured (VPD / exhaust). Fire is the source; a blaze is the event. Valeu !!! with the degree in sight.",
+      "historyEs": "Calor viene del latín calor, calōris, de calēre («estar caliente»). En portugués nombra la cualidad, no la llama. Caloria es prima etimológica con oficio de unidad.",
+      "curiositiesEs": "En el laboratorio el calor de la carpa se mide (VPD / extractor). El fuego es la fuente; el incendio es el evento. ¡Valeu !!! con el grado a la vista."
     },
     {
       "id": "incendio",

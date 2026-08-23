@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T04:21:17.735Z",
+  "updatedAt": "2026-08-23T06:47:37.577Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -174,6 +174,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Calor × Frio — qualidade térmica, não fogo nem gelo",
+      "url": "/posts/post-inspecao-palavra-calor-frio.html",
+      "excerpt": "Palavras: «calor» × «frio» (lat. calor / frīgus) — grau medido; ≠ fogo ≠ gelo ≠ inverno ≠ caloria; Valeu !!!",
+      "text": "Inspeção: Calor × Frio — qualidade térmica, não fogo nem gelo Palavras: «calor» × «frio» (lat. calor / frīgus) — grau medido; ≠ fogo ≠ gelo ≠ inverno ≠ caloria; Valeu !!! inspecao ## Escopo\n\nInspeção editorial do par **[calor](/posts/post-inspecao-palavra-calor-frio.html)** × **[frio](/posts/post-inspecao-palavra-calor-frio.html)** — as **qualidades térmicas** do português (lat. *calor* / *calēre* «estar quente» × *frīgus* / *frīgidus* «frio, geada»). Pedido de campo: *calor/frio*. Esta ficha cobre o **étimo**, a **distinção com as fontes e os estados** ([fogo](/posts/post-inspecao-palavra-fogo.html), [sol](/posts/post-inspecao-palavra-sol.html), [gelo](/posts/post-inspecao-palavra-gelo.html), [inverno](/posts/post-inspecao-palavra-inverno.html)), o ofício da [tenda](/posts/post-inspecao-palavra-tenda.html) e o fecho [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · calor](https://pt.wiktionary.org/wiki/calor), [frio](https://pt.wiktionary.org/wiki/frio), [calor (lat.)](https://en.wiktionary.org/wiki/calor#Latin), [frīgus](https://en.wiktionary.org/wiki/frigus#Latin), [caloria](https://pt.wiktionary.org/wiki/caloria). **Ficha ≠ termómetro clínico, ≠ manual de climatização, ≠ dieta.** Tom: medir; [verdade](/posts/post-inspecao-palavra-verdade.html) do grau, não da pose.\n\n## 1. Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Par | **calor** × **frio** |\n| Classe | Substantivos (também adj. *frio* / *quente*) |\n| Étimo (trabalho) | Lat. *calor, calōris* ← *calēre*; lat. *frīgus* / *frīgidus* → PT *frio* — confiança **alta** |\n| Família calor | *quente* · *aquecer* · *cálido* · *caldeira* · *caloria* (prima — ofício distinto) |\n| Família frio | *esfriar* · *friagem* · *refrigerar* · *frigorífico* — **não** *gelo* (*gelū* / *glaciēs*) |\n| Tipo BudGanja | Palavra — qualidade térmica × par de ofício |\n| Elo fonte | [fogo](/posts/post-inspecao-palavra-fogo.html) · [sol](/posts/post-inspe"
     },
     {
       "title": "Inspeção: Deplorar — lastimar o dano; não é o mesmo que vomitar",
@@ -4794,6 +4800,18 @@
       "url": "/posts/post-inspecao-palavra-fogo.html",
       "excerpt": "Lat. focus — lareira / chama; elemento e metáfora; equilibrar com água; raiva com ofício; Valeu !!! com medida.",
       "text": "fogo Lat. focus — lareira / chama; elemento e metáfora; equilibrar com água; raiva com ofício; Valeu !!! com medida. lexico guia palavras glossário fogo"
+    },
+    {
+      "title": "frio",
+      "url": "/posts/post-inspecao-palavra-calor-frio.html",
+      "excerpt": "Lat. frīgus / frīgidus — qualidade fria; par calor; ≠ gelo ≠ inverno; Valeu !!! com medida.",
+      "text": "frio Lat. frīgus / frīgidus — qualidade fria; par calor; ≠ gelo ≠ inverno; Valeu !!! com medida. lexico guia palavras glossário frio"
+    },
+    {
+      "title": "calor",
+      "url": "/posts/post-inspecao-palavra-calor-frio.html",
+      "excerpt": "Lat. calor ← calēre — qualidade quente; par frio; ≠ fogo ≠ caloria; mede-se na tenda; Valeu !!!",
+      "text": "calor Lat. calor ← calēre — qualidade quente; par frio; ≠ fogo ≠ caloria; mede-se na tenda; Valeu !!! lexico guia palavras glossário calor"
     },
     {
       "title": "incêndio",

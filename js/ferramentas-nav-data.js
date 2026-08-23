@@ -3326,6 +3326,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «deplorar» (lat. dēplōrāre ← plōrāre) — luto × juízo; par vomitar por ofício, não por étimo; Valeu !!!"
             },
             {
+              "label": "Inspeção: Calor × Frio — qualidade térmica, não fogo nem gelo",
+              "tileLabel": "Inspeção: Calor × Frio — qualid…",
+              "href": "/posts/post-inspecao-palavra-calor-frio.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-calor-frio",
+              "description": "Palavras: «calor» × «frio» (lat. calor / frīgus) — grau medido; ≠ fogo ≠ gelo ≠ inverno ≠ caloria; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",

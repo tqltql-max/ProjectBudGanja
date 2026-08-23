@@ -7334,6 +7334,25 @@
     "seriesLabel": "Deplorar · palavra"
   },
   {
+    "title": "Inspeção: Calor × Frio — qualidade térmica, não fogo nem gelo",
+    "titleEn": "Inspection: Calor × Frio — thermal quality, not fire or ice",
+    "titleEs": "Inspección: Calor × Frio — cualidad térmica, no fuego ni hielo",
+    "excerpt": "Palavras: «calor» × «frio» (lat. calor / frīgus) — grau medido; ≠ fogo ≠ gelo ≠ inverno ≠ caloria; Valeu !!!",
+    "excerptEn": "Words: “calor” × “frio” (Lat. calor / frīgus) — measured degree; ≠ fire ≠ ice ≠ winter ≠ calorie; Valeu !!!",
+    "excerptEs": "Palabras: «calor» × «frio» (lat. calor / frīgus) — grado medido; ≠ fuego ≠ hielo ≠ invierno ≠ caloria; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-calor-frio",
+    "url": "/posts/post-inspecao-palavra-calor-frio.html",
+    "date": "2026-08-23T06:45:00.000Z",
+    "filename": "posts/post-inspecao-palavra-calor-frio.html",
+    "coverImage": "/imagens/inspecoes/calor-frio-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 260,
+    "seriesLabel": "Calor × Frio · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Valeu !!!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Valeu !!!",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T04:20:36.758Z",
+  "updatedAt": "2026-08-23T06:46:50.233Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -9018,6 +9018,31 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 259 — par vomitar × deplorar; plōrāre ≠ vomere."
+    },
+    {
+      "id": "palavra-calor-frio",
+      "title": "Calor × Frio — qualidade térmica, não fogo nem gelo",
+      "titleEn": "Calor × Frio — thermal quality, not fire or ice",
+      "titleEs": "Calor × Frio — cualidad térmica, no fuego ni hielo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: calor × frio (lat. calor / frīgus) — grau medido; ≠ fogo ≠ gelo ≠ inverno ≠ caloria; Valeu !!!",
+      "whyEn": "Words: calor × frio (Lat. calor / frīgus) — measured degree; ≠ fire ≠ ice ≠ winter ≠ calorie; Valeu !!!",
+      "whyEs": "Palabras: calor × frio (lat. calor / frīgus) — grado medido; ≠ fuego ≠ hielo ≠ invierno ≠ caloria; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-calor-frio",
+      "doneHref": "/posts/post-inspecao-palavra-calor-frio.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/calor",
+        "https://pt.wiktionary.org/wiki/frio",
+        "/posts/post-inspecao-palavra-fogo.html",
+        "/posts/post-inspecao-palavra-gelo.html",
+        "/posts/post-inspecao-palavra-tenda.html",
+        "/posts/post-inspecao-palavra-inverno.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 260 — par térmico; qualidade ≠ fonte ≠ estado ≠ estação."
     }
   ]
 }
