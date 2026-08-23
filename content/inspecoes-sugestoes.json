@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T02:52:10.678Z",
+  "updatedAt": "2026-08-23T02:57:58.295Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7888,9 +7888,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: opsert (boca BR de upsert) — mãos à obra (plural); chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!",
-      "whyEn": "Words: opsert (BR mouth of upsert) — mãos à obra (plural); key/slug; MERGE ≠ replace; calque upsertar; link commitar; Valeu !!!",
-      "whyEs": "Palabras: opsert (boca BR de upsert) — mãos à obra (plural); clave/slug; MERGE ≠ replace; calco upsertar; vínculo commitar; ¡Valeu !!!",
+      "why": "Palavras: opsert (boca BR de upsert) — mãos a obra (plural); chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!",
+      "whyEn": "Words: opsert (BR mouth of upsert) — mãos a obra (plural); key/slug; MERGE ≠ replace; calque upsertar; link commitar; Valeu !!!",
+      "whyEs": "Palabras: opsert (boca BR de upsert) — mãos a obra (plural); clave/slug; MERGE ≠ replace; calco upsertar; vínculo commitar; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-upsert",
       "doneHref": "/posts/post-inspecao-palavra-upsert.html",
       "seriesHint": "palavras-origem",
@@ -7902,7 +7902,7 @@
         "/posts/post-inspecao-palavra-skill.html",
         "/posts/post-inspecao-palavra-valeu.html"
       ],
-      "notes": "Cap. 201 — opsert (boca BR); mãos à obra (plural); identidade (slug); ≠ replace; depois commitar."
+      "notes": "Cap. 201 — opsert (boca BR); mãos a obra (plural); identidade (slug); ≠ replace; depois commitar."
     },
     {
       "id": "palavra-intestino",

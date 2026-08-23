@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T02:52:20.758Z",
+  "updatedAt": "2026-08-23T02:58:00.544Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2704,15 +2704,15 @@
     {
       "id": "upsert",
       "word": "upsert",
-      "simple": "Portmanteau EN update+insert — nome nosso opsert; mãos à obra (plural); inserir se a chave é nova, actualizar se já existe; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!",
-      "simpleEn": "EN portmanteau update+insert — lab name opsert; mãos à obra (plural); insert if the key is new, update if it exists; MERGE ≠ replace; BR calque upsertar; link commitar; Valeu !!!",
-      "simpleEs": "Portmanteau EN update+insert — nombre vivo opsert; mãos à obra (plural); insertar si la clave es nueva, actualizar si ya existe; MERGE ≠ replace; calco upsertar; vínculo commitar; ¡Valeu !!!",
+      "simple": "Portmanteau EN update+insert — nome nosso opsert; mãos a obra (plural); inserir se a chave é nova, actualizar se já existe; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!",
+      "simpleEn": "EN portmanteau update+insert — lab name opsert; mãos a obra (plural); insert if the key is new, update if it exists; MERGE ≠ replace; BR calque upsertar; link commitar; Valeu !!!",
+      "simpleEs": "Portmanteau EN update+insert — nombre vivo opsert; mãos a obra (plural); insertar si la clave es nueva, actualizar si ya existe; MERGE ≠ replace; calco upsertar; vínculo commitar; ¡Valeu !!!",
       "history": "Upsert é portmanteau inglês de update + insert (MERGE no SQL:2003; UPSERT no PostgreSQL e no MongoDB). No laboratório o nome nosso é opsert — boca BR do lema, como commitar tomou o git. O slug decide insert ou update.",
-      "curiosities": "Os scripts da casa continuam upsert-*.js (lema EN no disco). Grito: mãos à obra (plural — as duas; não mão à obra). Upsertar é calco, não a fala. O commit grava o rasto depois do opsert.",
+      "curiosities": "Os scripts da casa continuam upsert-*.js (lema EN no disco). Grito: mãos a obra (plural, sem crase — o acento dificulta). Upsertar é calco, não a fala. O commit grava o rasto depois do opsert.",
       "historyEn": "Upsert is an English portmanteau of update + insert (SQL MERGE in SQL:2003; UPSERT in PostgreSQL and MongoDB). In the lab the living name is opsert — BR mouth of the lemma, as commitar took git. The slug decides insert or update.",
-      "curiositiesEn": "House scripts stay upsert-*.js (EN lemma on disk). Cry: mãos à obra (plural — both hands; not mão à obra). Upsertar is a calque, not lab speech. The commit records the trace after the opsert.",
+      "curiositiesEn": "House scripts stay upsert-*.js (EN lemma on disk). Cry: mãos a obra (plural, no crase — the accent gets in the way). Upsertar is a calque, not lab speech. The commit records the trace after the opsert.",
       "historyEs": "Upsert es un portmanteau inglés de update + insert (MERGE en SQL:2003; UPSERT en PostgreSQL y MongoDB). En el laboratorio el nombre vivo es opsert — boca BR del lema, como commitar tomó el git. El slug decide insert o update.",
-      "curiositiesEs": "Los scripts de la casa siguen upsert-*.js (lema EN en disco). Grito: mãos à obra (plural — las dos; no mão à obra). Upsertar es calco, no el habla. El commit graba el rastro después del opsert.",
+      "curiositiesEs": "Los scripts de la casa siguen upsert-*.js (lema EN en disco). Grito: mãos a obra (plural, sin crasis — el acento estorba). Upsertar es calco, no el habla. El commit graba el rastro después del opsert.",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-upsert.html"
@@ -2730,18 +2730,18 @@
     {
       "id": "opsert",
       "word": "opsert",
-      "simple": "Nome nosso de upsert — boca BR do lema EN; verbo opsertar; fecho Opsert.; grito mãos à obra (plural); ≠ upsertar; ≠ replace; elo commitar; Valeu !!!",
-      "simpleEn": "Lab living name for upsert — BR mouth of the EN lemma; verb opsertar; close Opsert.; cry mãos à obra (plural); ≠ upsertar; ≠ replace; link commitar; Valeu !!!",
-      "simpleEs": "Nombre vivo de upsert — boca BR del lema EN; verbo opsertar; cierre Opsert.; grito mãos à obra (plural); ≠ upsertar; ≠ replace; vínculo commitar; ¡Valeu !!!",
+      "simple": "Nome nosso de upsert — boca BR do lema EN; verbo opsertar; fecho Opsert.; grito mãos a obra (plural); ≠ upsertar; ≠ replace; elo commitar; Valeu !!!",
+      "simpleEn": "Lab living name for upsert — BR mouth of the EN lemma; verb opsertar; close Opsert.; cry mãos a obra (plural); ≠ upsertar; ≠ replace; link commitar; Valeu !!!",
+      "simpleEs": "Nombre vivo de upsert — boca BR del lema EN; verbo opsertar; cierre Opsert.; grito mãos a obra (plural); ≠ upsertar; ≠ replace; vínculo commitar; ¡Valeu !!!",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-upsert.html",
       "history": "Opsert é o nome nosso de upsert: boca BR do lema inglês, como commitar tomou o git. Verbo opsertar; fecho Opsert. O slug decide se se levanta a ficha ou se se insere.",
-      "curiosities": "Grito: mãos à obra — plural, as duas; mão à obra (uma) fica no mapa. Upsertar é calco, não a fala. Depois do opsert vem o commitar.",
+      "curiosities": "Grito: mãos a obra — plural, sem crase; o acento da norma dificulta. Upsertar é calco, não a fala. Depois do opsert vem o commitar.",
       "historyEn": "Opsert is the lab living name of upsert: BR mouth of the English lemma, as commitar took git. Verb opsertar; close Opsert. The slug decides whether to raise the sheet or insert it.",
-      "curiositiesEn": "Cry: mãos à obra — plural, both hands; mão à obra (one hand) stays on the map. Upsertar is a calque, not speech. After the opsert comes the commitar.",
+      "curiositiesEn": "Cry: mãos a obra — plural, no crase; the accent of the dictionary form gets in the way. Upsertar is a calque, not speech. After the opsert comes the commitar.",
       "historyEs": "Opsert es el nombre vivo de upsert: boca BR del lema inglés, como commitar tomó el git. Verbo opsertar; cierre Opsert. El slug decide si se levanta la ficha o si se inserta.",
-      "curiositiesEs": "Grito: mãos à obra — plural, las dos; mão à obra (una) queda en el mapa. Upsertar es calco, no el habla. Después del opsert viene el commitar."
+      "curiositiesEs": "Grito: mãos a obra — plural, las dos; mão à obra (una) queda en el mapa. Upsertar es calco, no el habla. Después del opsert viene el commitar."
     },
     {
       "id": "opsertar",
@@ -2753,11 +2753,11 @@
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-upsert.html",
       "history": "Opsertar é o verbo de ofício de opsert: opsertar a ficha pelo slug — levantar se existe, inserir se não. Não é upsertar (calco) nem replace.",
-      "curiosities": "Depois de opsertar, commitar o rasto. Grito: mãos à obra (plural). Valeu !!!",
+      "curiosities": "Depois de opsertar, commitar o rasto. Grito: mãos a obra (plural). Valeu !!!",
       "historyEn": "Opsertar is the craft verb of opsert: opsert the sheet by slug — raise if it exists, insert if not. It is not upsertar (calque) nor replace.",
-      "curiositiesEn": "After opsertar, commitar the trace. Cry: mãos à obra (plural). Valeu !!!",
+      "curiositiesEn": "After opsertar, commitar the trace. Cry: mãos a obra (plural). Valeu !!!",
       "historyEs": "Opsertar es el verbo de oficio de opsert: opsertar la ficha por slug — levantar si existe, insertar si no. No es upsertar (calco) ni replace.",
-      "curiositiesEs": "Después de opsertar, commitar el rastro. Grito: mãos à obra (plural). ¡Valeu !!!"
+      "curiositiesEs": "Después de opsertar, commitar el rastro. Grito: mãos a obra (plural). ¡Valeu !!!"
     },
     {
       "id": "script",

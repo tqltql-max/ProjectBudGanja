@@ -103,9 +103,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: opsert (boca BR de upsert) — mãos à obra (plural); chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!',
-      whyEn: 'Words: opsert (BR mouth of upsert) — mãos à obra (plural); key/slug; MERGE ≠ replace; calque upsertar; link commitar; Valeu !!!',
-      whyEs: 'Palabras: opsert (boca BR de upsert) — mãos à obra (plural); clave/slug; MERGE ≠ replace; calco upsertar; vínculo commitar; ¡Valeu !!!',
+      why: 'Palavras: opsert (boca BR de upsert) — mãos a obra (plural); chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!',
+      whyEn: 'Words: opsert (BR mouth of upsert) — mãos a obra (plural); key/slug; MERGE ≠ replace; calque upsertar; link commitar; Valeu !!!',
+      whyEs: 'Palabras: opsert (boca BR de upsert) — mãos a obra (plural); clave/slug; MERGE ≠ replace; calco upsertar; vínculo commitar; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -120,7 +120,7 @@ async function main() {
       notes:
         'Cap. ' +
         post.seriesOrder +
-        ' — opsert (boca BR); mãos à obra (plural); identidade (slug); ≠ replace; depois commitar.'
+        ' — opsert (boca BR); mãos a obra (plural); identidade (slug); ≠ replace; depois commitar.'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);
@@ -139,23 +139,23 @@ async function main() {
         id: 'upsert',
         word: 'upsert',
         simple:
-          'Portmanteau EN update+insert — nome nosso opsert; mãos à obra (plural); inserir se a chave é nova, actualizar se já existe; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!',
+          'Portmanteau EN update+insert — nome nosso opsert; mãos a obra (plural); inserir se a chave é nova, actualizar se já existe; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!',
         simpleEn:
-          'EN portmanteau update+insert — lab name opsert; mãos à obra (plural); insert if the key is new, update if it exists; MERGE ≠ replace; BR calque upsertar; link commitar; Valeu !!!',
+          'EN portmanteau update+insert — lab name opsert; mãos a obra (plural); insert if the key is new, update if it exists; MERGE ≠ replace; BR calque upsertar; link commitar; Valeu !!!',
         simpleEs:
-          'Portmanteau EN update+insert — nombre vivo opsert; mãos à obra (plural); insertar si la clave es nueva, actualizar si ya existe; MERGE ≠ replace; calco upsertar; vínculo commitar; ¡Valeu !!!',
+          'Portmanteau EN update+insert — nombre vivo opsert; mãos a obra (plural); insertar si la clave es nueva, actualizar si ya existe; MERGE ≠ replace; calco upsertar; vínculo commitar; ¡Valeu !!!',
         history:
           'Upsert é portmanteau inglês de update + insert (MERGE no SQL:2003; UPSERT no PostgreSQL e no MongoDB). No laboratório o nome nosso é opsert — boca BR do lema, como commitar tomou o git. O slug decide insert ou update.',
         curiosities:
-          'Os scripts da casa continuam upsert-*.js (lema EN no disco). Grito: mãos à obra (plural — as duas; não mão à obra). Upsertar é calco, não a fala. O commit grava o rasto depois do opsert.',
+          'Os scripts da casa continuam upsert-*.js (lema EN no disco). Grito: mãos a obra (plural, sem crase — o acento dificulta). Upsertar é calco, não a fala. O commit grava o rasto depois do opsert.',
         historyEn:
           'Upsert is an English portmanteau of update + insert (SQL MERGE in SQL:2003; UPSERT in PostgreSQL and MongoDB). In the lab the living name is opsert — BR mouth of the lemma, as commitar took git. The slug decides insert or update.',
         curiositiesEn:
-          'House scripts stay upsert-*.js (EN lemma on disk). Cry: mãos à obra (plural — both hands; not mão à obra). Upsertar is a calque, not lab speech. The commit records the trace after the opsert.',
+          'House scripts stay upsert-*.js (EN lemma on disk). Cry: mãos a obra (plural, no crase — the accent gets in the way). Upsertar is a calque, not lab speech. The commit records the trace after the opsert.',
         historyEs:
           'Upsert es un portmanteau inglés de update + insert (MERGE en SQL:2003; UPSERT en PostgreSQL y MongoDB). En el laboratorio el nombre vivo es opsert — boca BR del lema, como commitar tomó el git. El slug decide insert o update.',
         curiositiesEs:
-          'Los scripts de la casa siguen upsert-*.js (lema EN en disco). Grito: mãos à obra (plural — las dos; no mão à obra). Upsertar es calco, no el habla. El commit graba el rastro después del opsert.',
+          'Los scripts de la casa siguen upsert-*.js (lema EN en disco). Grito: mãos a obra (plural, sin crasis — el acento estorba). Upsertar es calco, no el habla. El commit graba el rastro después del opsert.',
         group: 'lexico',
         fromTitle: false,
         href
@@ -185,11 +185,11 @@ async function main() {
         id: 'opsert',
         word: 'opsert',
         simple:
-          'Nome nosso de upsert — boca BR do lema EN; verbo opsertar; fecho Opsert.; grito mãos à obra (plural); ≠ upsertar; ≠ replace; elo commitar; Valeu !!!',
+          'Nome nosso de upsert — boca BR do lema EN; verbo opsertar; fecho Opsert.; grito mãos a obra (plural); ≠ upsertar; ≠ replace; elo commitar; Valeu !!!',
         simpleEn:
-          'Lab living name for upsert — BR mouth of the EN lemma; verb opsertar; close Opsert.; cry mãos à obra (plural); ≠ upsertar; ≠ replace; link commitar; Valeu !!!',
+          'Lab living name for upsert — BR mouth of the EN lemma; verb opsertar; close Opsert.; cry mãos a obra (plural); ≠ upsertar; ≠ replace; link commitar; Valeu !!!',
         simpleEs:
-          'Nombre vivo de upsert — boca BR del lema EN; verbo opsertar; cierre Opsert.; grito mãos à obra (plural); ≠ upsertar; ≠ replace; vínculo commitar; ¡Valeu !!!',
+          'Nombre vivo de upsert — boca BR del lema EN; verbo opsertar; cierre Opsert.; grito mãos a obra (plural); ≠ upsertar; ≠ replace; vínculo commitar; ¡Valeu !!!',
         group: 'lexico',
         fromTitle: false,
         href
@@ -225,7 +225,7 @@ async function main() {
     const hrefU = '/posts/post-inspecao-palavra-upsert.html';
     const entries = {
       upsert:
-        '    upsert: { tone: "caution", category: "Ofício", mundane: "EN — inserir se novo, actualizar se a chave já existe.", gloss: "Portmanteau update+insert; nome nosso opsert; mãos à obra (plural); MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!", href: "' +
+        '    upsert: { tone: "caution", category: "Ofício", mundane: "EN — inserir se novo, actualizar se a chave já existe.", gloss: "Portmanteau update+insert; nome nosso opsert; mãos a obra (plural); MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!", href: "' +
         hrefU +
         '", en: "upsert", es: "upsert / insertar o actualizar", fr: "upsert", it: "upsert", de: "upsert", el: "upsert", la: "inserere vel renovare", yo: "upsert", sw: "upsert", gez: "upsert", nl: "upsert", pl: "upsert", ru: "upsert", uk: "upsert", zh: "upsert", ja: "upsert", ko: "upsert", ar: "upsert", he: "upsert", hi: "upsert", tr: "upsert", sv: "upsert", da: "upsert", no: "upsert", fi: "upsert", cs: "upsert", ro: "upsert", hu: "upsert", ca: "upsert", gl: "upsert", eu: "upsert", gn: "upsert", qu: "upsert", eo: "upserti", vi: "upsert", id: "upsert", th: "upsert", hr: "upsert", sk: "upsert", ga: "upsert", cy: "upsert", ha: "upsert", am: "upsert", fa: "upsert", bn: "upsert", zu: "i-upsert" },\n',
       upsertar:
@@ -233,7 +233,7 @@ async function main() {
         hrefU +
         '", en: "to upsert", es: "hacer upsert" },\n',
       opsert:
-        '    opsert: { tone: "caution", category: "Ofício", mundane: "Nome nosso — boca BR de upsert; as duas mãos à obra.", gloss: "Opsert / opsertar / Opsert.; mãos à obra (plural, não mão à obra); lema EN upsert no ficheiro; ≠ upsertar; elo commitar; Valeu !!!", href: "' +
+        '    opsert: { tone: "caution", category: "Ofício", mundane: "Nome nosso — boca BR de upsert; mãos a obra (sem crase).", gloss: "Opsert / opsertar / Opsert.; mãos a obra (plural, sem crase; o acento dificulta); lema EN upsert no ficheiro; ≠ upsertar; elo commitar; Valeu !!!", href: "' +
         hrefU +
         '", en: "opsert (lab name of upsert)", es: "opsert" },\n',
       opsertar:

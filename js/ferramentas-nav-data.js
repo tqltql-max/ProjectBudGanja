@@ -2795,7 +2795,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-upsert.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-upsert",
-              "description": "Palavras: opsert (boca BR de upsert) — mãos à obra (plural); chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!"
+              "description": "Palavras: opsert (boca BR de upsert) — mãos a obra (plural, sem crase); chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!"
             },
             {
               "label": "Inspeção: Intestino — o tubo de dentro (intus) e Valeu !!!",
