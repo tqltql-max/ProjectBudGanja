@@ -100,6 +100,11 @@ const {
   poemElzaEs
 } = require('../lib/elza-frozen-inspecao-post.js');
 const {
+  poemMortalKombatPt,
+  poemMortalKombatEn,
+  poemMortalKombatEs
+} = require('../lib/mortal-kombat-inspecao-post.js');
+const {
   poemDozeApostolosPt,
   poemDozeApostolosEn,
   poemDozeApostolosEs
@@ -720,6 +725,27 @@ const doc = {
       bodyEs: poemElzaEs(),
       inspectionHref: '/posts/post-inspecao-desenho-elza-frozen.html',
       tags: ['poesia', 'vida', 'desenho', 'elza', 'frozen', 'gelo', 'porta']
+    },
+    {
+      id: 'mortal-kombat',
+      slug: 'mortal-kombat',
+      title: 'Mortal Kombat',
+      titleEn: 'Mortal Kombat',
+      titleEs: 'Mortal Kombat',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja do fliperama — as palavras do combate, sem colar o golpe; Valeu !!!',
+      teaserEn:
+        'BudGanja echo of the cabinet — the words of the fight, without pasting the move; Valeu !!!',
+      teaserEs:
+        'Eco BudGanja del fliperama — las palabras del combate, sin pegar el golpe; ¡Valeu !!!',
+      body: poemMortalKombatPt(),
+      bodyEn: poemMortalKombatEn(),
+      bodyEs: poemMortalKombatEs(),
+      inspectionHref: '/posts/post-inspecao-jogo-mortal-kombat.html',
+      tags: ['poesia', 'vida', 'jogo', 'kombat', 'finish', 'fight']
     },
     {
       id: 'a-semente-foi-plantada',

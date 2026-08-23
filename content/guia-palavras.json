@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T03:47:07.870Z",
+  "updatedAt": "2026-08-23T04:03:20.862Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -8520,6 +8520,96 @@
       "curiositiesEn": "Lab thesis: price vs value. Charlie Brown Jr. score is another work, another sheet.",
       "historyEs": "O Magnata se estrenó el 15 de noviembre de 2007 (Gullane / Buena Vista). Guion de Chorão; estreno de Johnny Araújo en largometraje. Artes lee la obra; Personas inspecciona al letrista.",
       "curiositiesEs": "Tesis del laboratorio: precio × valor. Banda sonora de Charlie Brown Jr. — otra obra, otra ficha."
+    },
+    {
+      "id": "fight",
+      "word": "Fight",
+      "simple": "Grito que abre o round no Mortal Kombat — não é briga na rua.",
+      "simpleEn": "Grito que abre o round no Mortal Kombat — não é briga na rua.",
+      "simpleEs": "Grito que abre o round no Mortal Kombat — não é briga na rua.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-fight.html"
+    },
+    {
+      "id": "round",
+      "word": "Round",
+      "simple": "Unidade da luta no HUD; fala viva Raund.",
+      "simpleEn": "Unidade da luta no HUD; fala viva Raund.",
+      "simpleEs": "Unidade da luta no HUD; fala viva Raund.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-round.html"
+    },
+    {
+      "id": "finish",
+      "word": "Finish",
+      "simple": "Aviso Finish Him/Her no MK — não é o fim da pessoa.",
+      "simpleEn": "Aviso Finish Him/Her no MK — não é o fim da pessoa.",
+      "simpleEs": "Aviso Finish Him/Her no MK — não é o fim da pessoa.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-finish.html"
+    },
+    {
+      "id": "fatality",
+      "word": "Fatality",
+      "simple": "Fecho letal nomeado (boca Fatallitty). Sem lista de golpes.",
+      "simpleEn": "Fecho letal nomeado (boca Fatallitty). Sem lista de golpes.",
+      "simpleEs": "Fecho letal nomeado (boca Fatallitty). Sem lista de golpes.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-fatality.html"
+    },
+    {
+      "id": "brutality",
+      "word": "Brutality",
+      "simple": "Fecho irmão da Fatality (boca Brutalititi).",
+      "simpleEn": "Fecho irmão da Fatality (boca Brutalititi).",
+      "simpleEs": "Fecho irmão da Fatality (boca Brutalititi).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-brutality.html"
+    },
+    {
+      "id": "babality",
+      "word": "Babality",
+      "simple": "Fecho satírico MK II — o rival vira bebé (boca babalitity).",
+      "simpleEn": "Fecho satírico MK II — o rival vira bebé (boca babalitity).",
+      "simpleEs": "Fecho satírico MK II — o rival vira bebé (boca babalitity).",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-babality.html"
+    },
+    {
+      "id": "hp",
+      "word": "HP",
+      "simple": "Hit points — barra de HUD. Não é a Vida do laboratório.",
+      "simpleEn": "Hit points — barra de HUD. Não é a Vida do laboratório.",
+      "simpleEs": "Hit points — barra de HUD. Não é a Vida do laboratório.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-hp.html"
+    },
+    {
+      "id": "mana",
+      "word": "Mana",
+      "simple": "Reserva de magia no HUD — contador, não rito.",
+      "simpleEn": "Reserva de magia no HUD — contador, não rito.",
+      "simpleEs": "Reserva de magia no HUD — contador, não rito.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mana.html"
+    },
+    {
+      "id": "vida-energia",
+      "word": "vida × energia",
+      "simple": "Duas barras do HUD. A Vida do laboratório é outra ficha.",
+      "simpleEn": "Duas barras do HUD. A Vida do laboratório é outra ficha.",
+      "simpleEs": "Duas barras do HUD. A Vida do laboratório é outra ficha.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-vida-energia.html"
     }
   ]
 }

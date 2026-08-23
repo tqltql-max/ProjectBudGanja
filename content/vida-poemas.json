@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T03:47:35.669Z",
+  "updatedAt": "2026-08-23T04:03:53.870Z",
   "poems": [
     {
       "id": "barquinhos-de-papel",
@@ -661,6 +661,31 @@
         "frozen",
         "gelo",
         "porta"
+      ]
+    },
+    {
+      "id": "mortal-kombat",
+      "slug": "mortal-kombat",
+      "title": "Mortal Kombat",
+      "titleEn": "Mortal Kombat",
+      "titleEs": "Mortal Kombat",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja do fliperama — as palavras do combate, sem colar o golpe; Valeu !!!",
+      "teaserEn": "BudGanja echo of the cabinet — the words of the fight, without pasting the move; Valeu !!!",
+      "teaserEs": "Eco BudGanja del fliperama — las palabras del combate, sin pegar el golpe; ¡Valeu !!!",
+      "body": "Mortal Kombat.\nNão pedimos o golpe emprestado —\npedimos o ofício das palavras\nque o fliperama gritava\nquando o round acabava\ne ainda dava tempo de escolher\no fecho.\n\nMidway. Boon. Tobias.\nHouve um K no kombat\ne um Fight depois do Raund.\nHouve um Finish que não é o fim da vida:\né o nome do aviso.\nHouve Fatallitty, Brutalititi, babalitity —\nfamília de fechos,\nuns de sangue no ecrã,\noutros de sátira no bebé.\n\nO laboratório conhece esse gabinete.\nNão cola a sequência.\nLê o vocabulário.\nO ecrã é ficção.\nO ofício é não copiar o golpe.\n\nValeu !!!\n\nPorque toda vez que alguém\nsepara Fight de luta na rua\ne Finish de acabar a pessoa,\no universo cresce um pouco:\num round a mais,\numa palavra a mais,\num jogo\nque ainda cabe no caderno.",
+      "bodyEn": "Mortal Kombat.\nWe do not borrow the move —\nwe ask for the craft of the words\nthe cabinet shouted\nwhen the round ended\nand there was still time to choose\nthe close.\n\nMidway. Boon. Tobias.\nThere was a K in kombat\nand a Fight after the Round.\nThere was a Finish that is not the end of a life:\nit is the name of the prompt.\nThere was Fatality, Brutality, Babality —\na family of closings,\nsome blood on the screen,\nsome satire in a baby.\n\nThe laboratory knows that cabinet.\nIt does not paste the sequence.\nIt reads the vocabulary.\nThe screen is fiction.\nThe craft is not copying the blow.\n\nValeu !!!\n\nBecause every time someone\nseparates Fight from a street fight\nand Finish from ending a person,\nthe universe grows a little:\none more round,\none more word,\na game\nthat still fits the notebook.",
+      "bodyEs": "Mortal Kombat.\nNo pedimos prestado el golpe —\npedimos el oficio de las palabras\nque el fliperama gritaba\ncuando el round acababa\ny aún había tiempo de elegir\nel cierre.\n\nMidway. Boon. Tobias.\nHubo una K en kombat\ny un Fight después del Raund.\nHubo un Finish que no es el fin de la vida:\nes el nombre del aviso.\nHubo Fatallitty, Brutalititi, babalitity —\nfamilia de cierres,\nunos de sangre en la pantalla,\notros de sátira en el bebé.\n\nEl laboratorio conoce ese gabinete.\nNo pega la secuencia.\nLee el vocabulario.\nLa pantalla es ficción.\nEl oficio es no copiar el golpe.\n\n¡Valeu !!!\n\nPorque cada vez que alguien\nsepara Fight de pelea en la calle\ny Finish de acabar a la persona,\nel universo crece un poco:\nun round más,\nuna palabra más,\nun juego\nque aún cabe en el cuaderno.",
+      "inspectionHref": "/posts/post-inspecao-jogo-mortal-kombat.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "jogo",
+        "kombat",
+        "finish",
+        "fight"
       ]
     },
     {

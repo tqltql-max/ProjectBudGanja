@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T03:47:07.864Z",
+  "updatedAt": "2026-08-23T04:03:20.855Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8525,6 +8525,29 @@
         "/posts/post-inspecao-palavra-gelo.html"
       ],
       "notes": "Cap. 85 — personagem primeiro; Frozen 2 = eco."
+    },
+    {
+      "id": "jogo-mortal-kombat-caderno-4",
+      "title": "Mortal Kombat — caderno 4, o fliperama e as palavras",
+      "titleEn": "Mortal Kombat — notebook 4, the cabinet and the words",
+      "titleEs": "Mortal Kombat — cuaderno 4, el fliperama y las palabras",
+      "tipo": "jogo",
+      "priority": 1,
+      "status": "feita",
+      "why": "Caderno 4: MK 1992; léxico Fight/Round/Finish/Fatality/Brutality/Babality + HUD; sem golpes.",
+      "whyEn": "Notebook 4: MK 1992 lexicon + HUD; no move list.",
+      "whyEs": "Cuaderno 4: léxico MK 1992 + HUD; sin golpes.",
+      "suggestedSlug": "inspecao-jogo-mortal-kombat",
+      "doneHref": "/posts/post-inspecao-jogo-mortal-kombat.html",
+      "seriesHint": "cadernos-jogo",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mortal_Kombat_%281992_video_game%29",
+        "https://en.wikipedia.org/wiki/Fatality_%28Mortal_Kombat%29",
+        "https://en.wikipedia.org/wiki/Mortal_Kombat_II",
+        "https://www.youtube.com/watch?v=jnMo1SUTal8",
+        "/posts/post-inspecao-jogo-mortal-kombat.html"
+      ],
+      "notes": "Cap. 4"
     }
   ]
 }
