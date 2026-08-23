@@ -94,9 +94,9 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Fabuloso — fábula, elogio BR e Faça o melhor!',
-      titleEn: 'Fabuloso — fable, BR praise and Do your best!',
-      titleEs: 'Fabuloso — fábula, elogio BR y ¡Haz lo mejor!',
+      title: 'Fabuloso — fábula, elogio BR e Valeu !!!',
+      titleEn: 'Fabuloso — fable, BR praise and Valeu !!!',
+      titleEs: 'Fabuloso — fábula, elogio BR y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
@@ -112,7 +112,7 @@ async function main() {
         'https://en.wiktionary.org/wiki/fabulous',
         '/posts/post-inspecao-palavra-genial.html',
         '/posts/post-inspecao-palavra-legal.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — elogio BR; rede só com slugs existentes.'
     };
@@ -131,11 +131,11 @@ async function main() {
       id: 'fabuloso',
       word: 'fabuloso',
       simple:
-        'Lat. fābula / fabulous — elogio BR quotidiano («que demais!»); escala com genial, legal, especial; Faça o melhor com rasto.',
+        'Lat. fābula / fabulous — elogio BR quotidiano («que demais!»); escala com genial, legal, especial; Valeu !!! com rasto.',
       simpleEn:
-        'Lat. fābula / fabulous — everyday BR praise; scale with genial, legal, especial; Do your best with a trail.',
+        'Lat. fābula / fabulous — everyday BR praise; scale with genial, legal, especial; Valeu !!! with a trail.',
       simpleEs:
-        'Lat. fābula / fabulous — elogio BR cotidiano; escala con genial, legal, especial; Haz lo mejor con rastro.',
+        'Lat. fābula / fabulous — elogio BR cotidiano; escala con genial, legal, especial; Valeu !!! con rastro.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -159,7 +159,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    fabuloso: { gloss: "Lat. fabula / fabulous — elogio BR quotidiano; escala genial/legal/especial; Faça o melhor com rasto.", href: "/posts/post-inspecao-palavra-fabuloso.html", en: "fabulous / wonderful", es: "fabuloso", fr: "fabuleux", it: "favoloso", de: "fabelhaft", el: "μυθικός", la: "fabulosus", yo: "àgbàyanu", sw: "ajabu", gez: "mənkir", nl: "fabulous", pl: "bajeczny", ru: "сказочный", uk: "казковий", zh: "极好的", ja: "素晴らしい", ko: "굉장한", ar: "رائع", he: "אגדי", hi: "शानदार", tr: "masalsı", sv: "fantastisk", da: "fabellignende", no: "eventyrlig", fi: "upea", cs: "báječný", ro: "fabulos", hu: "mesés", ca: "fabulós", gl: "fabuloso", eu: "ipuin-antzeko", gn: "porãité", qu: "musphay", eo: "fabla", vi: "tuyệt vời", id: "luar biasa", th: "มหัศจรรย์", hr: "bajkovit", sk: "rozprávkový", ga: "fínscéalach", cy: "rhyfeddol", ha: "ban mamaki", am: "አስደናቂ", fa: "افسانه‌ای", bn: "অসাধারণ", zu: "okumangalisayo" },';
+      '    fabuloso: { gloss: "Lat. fabula / fabulous — elogio BR quotidiano; escala genial/legal/especial; Valeu !!! com rasto.", href: "/posts/post-inspecao-palavra-fabuloso.html", en: "fabulous / wonderful", es: "fabuloso", fr: "fabuleux", it: "favoloso", de: "fabelhaft", el: "μυθικός", la: "fabulosus", yo: "àgbàyanu", sw: "ajabu", gez: "mənkir", nl: "fabulous", pl: "bajeczny", ru: "сказочный", uk: "казковий", zh: "极好的", ja: "素晴らしい", ko: "굉장한", ar: "رائع", he: "אגדי", hi: "शानदार", tr: "masalsı", sv: "fantastisk", da: "fabellignende", no: "eventyrlig", fi: "upea", cs: "báječný", ro: "fabulos", hu: "mesés", ca: "fabulós", gl: "fabuloso", eu: "ipuin-antzeko", gn: "porãité", qu: "musphay", eo: "fabla", vi: "tuyệt vời", id: "luar biasa", th: "มหัศจรรย์", hr: "bajkovit", sk: "rozprávkový", ga: "fínscéalach", cy: "rhyfeddol", ha: "ban mamaki", am: "አስደናቂ", fa: "افسانه‌ای", bn: "অসাধারণ", zu: "okumangalisayo" },';
     if (/fabuloso:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    fabuloso:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

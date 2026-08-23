@@ -113,9 +113,9 @@ async function main() {
       tipo: 'expressao',
       priority: 2,
       status: 'feita',
-      why: 'Expressões: empilhamento céu+SAMU+sirene+Jesus Cristo; escala acima de jesusudavi; Faça o melhor!',
-      whyEn: 'Sayings: heaven+SAMU+siren+Jesus Christ stack; above jesusudavi; Do your best!',
-      whyEs: 'Dichos: apilamiento cielo+SAMU+sirena+Jesucristo; sobre jesusudavi; ¡Haz lo mejor!',
+      why: 'Expressões: empilhamento céu+SAMU+sirene+Jesus Cristo; escala acima de jesusudavi; Valeu !!!',
+      whyEn: 'Sayings: heaven+SAMU+siren+Jesus Christ stack; above jesusudavi; Valeu !!!',
+      whyEs: 'Dichos: apilamiento cielo+SAMU+sirena+Jesucristo; sobre jesusudavi; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'expressoes-ditados',
@@ -123,7 +123,7 @@ async function main() {
         '/posts/post-inspecao-expressao-jesusudavi.html',
         '/posts/post-inspecao-expressao-puta-que-pariu.html',
         '/posts/post-inspecao-palavra-medo.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' Expressões — código vermelho oral BR.'
     };
@@ -142,11 +142,11 @@ async function main() {
       id: 'nossa-senhora-ambulancia-sirene-jesus-cristo',
       word: 'nossa senhora, ambulância, sirene, Jesus Cristo',
       simple:
-        'Expressão oral BR — empilhamento céu+SAMU+sirene; código vermelho cómico; escala acima de jesusudavi; Faça o melhor!',
+        'Expressão oral BR — empilhamento céu+SAMU+sirene; código vermelho cómico; escala acima de jesusudavi; Valeu !!!',
       simpleEn:
-        'Brazilian oral saying — heaven+SAMU+siren stack; comic code red; above jesusudavi; Do your best!',
+        'Brazilian oral saying — heaven+SAMU+siren stack; comic code red; above jesusudavi; Valeu !!!',
       simpleEs:
-        'Expresión oral BR — apilamiento cielo+SAMU+sirena; código rojo cómico; sobre jesusudavi; ¡Haz lo mejor!',
+        'Expresión oral BR — apilamiento cielo+SAMU+sirena; código rojo cómico; sobre jesusudavi; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href,
@@ -178,7 +178,7 @@ async function main() {
 
   const glossPath = path.join(ROOT, 'js', 'learn-glossary.js');
   const glossLine =
-    '    "nossa senhora, ambulância, sirene, jesus cristo": { tone: "awe", category: "Código vermelho", mundane: "Empilhamento oral BR — céu + SAMU + sirene + Jesus Cristo.", gloss: "Código vermelho cómico — acima de jesusudavi; frase ≠ emergência real; depois Faça o melhor!", href: "/posts/post-inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo.html", en: "Our Lady, ambulance, siren, Jesus Christ", es: "Nuestra Señora, ambulancia, sirena, Jesucristo", fr: "Notre-Dame, ambulance, sirène, Jésus-Christ", it: "Madonna, ambulanza, sirena, Gesù Cristo", de: "Unsere Liebe Frau, Krankenwagen, Sirene, Jesus Christus", el: "Panagia, asthenoforo, seirina, Iisous Christos", la: "Domina nostra, raeda aegrotorum, siren, Iesus Christus", yo: "Iya Wa, oko ailera, ohun keke, Jesu Kristi", sw: "Bikira Maria, gari la wagonjwa, kengele, Yesu Kristo", gez: "Egziabeher", nl: "Onze-Lieve-Vrouw, ambulance, sirene, Jezus Christus", pl: "Matka Boska, karetka, syrena, Jezus Chrystus", ru: "Bogoroditsa, skoraya, sirena, Iisus Khristos", uk: "Bohorodytsia, shvydka, syrena, Isus Khrystos", zh: "圣母 救护车 警笛 耶稣", ja: "聖母と救急車", ko: "성모님 구급차 사이렌", ar: "sayyidatuna isaf saffara al-masih", he: "gvirti ambulans sireina yeshu", hi: "mata maria ambulance", tr: "Meryem Ana ambulans siren", sv: "var Fru ambulans siren", da: "vor Frue ambulance sirene", no: "vår Frue ambulanse sirene", fi: "Neitsyt Maria ambulanssi sireeni", cs: "Panna Maria sanitka sirena", ro: "Maica Domnului ambulanta sirena", hu: "Szuz Maria menteso szirena", ca: "Mare de Deu ambulancia sirena", gl: "Nosa Señora ambulancia sirena", eu: "Andre Maria anbulantzia", gn: "Ñandejára sy ambulancia", qu: "Mamanchik ambulancia", eo: "nia Sinjorino ambulan co sireno", vi: "Duc Me xe cuu thuong coi", id: "Bunda Maria ambulans sirene", th: "พระแม่มารี รถพยาบาล", hr: "Gospa hitna sirena", sk: "Panna Maria sanitka", ga: "ar mBantiarna otharcharr", cy: "ein Harglwyddes ambiwlans", ha: "Uwar mu motar asibiti", am: "እመቤታችን አምቡላንስ", fa: "hazrat maryam ambulans", bn: "আমাদের লেডি অ্যাম্বুলেন্স", zu: "iNkosikazi yethu i-ambulensi" },';
+    '    "nossa senhora, ambulância, sirene, jesus cristo": { tone: "awe", category: "Código vermelho", mundane: "Empilhamento oral BR — céu + SAMU + sirene + Jesus Cristo.", gloss: "Código vermelho cómico — acima de jesusudavi; frase ≠ emergência real; depois Valeu !!!", href: "/posts/post-inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo.html", en: "Our Lady, ambulance, siren, Jesus Christ", es: "Nuestra Señora, ambulancia, sirena, Jesucristo", fr: "Notre-Dame, ambulance, sirène, Jésus-Christ", it: "Madonna, ambulanza, sirena, Gesù Cristo", de: "Unsere Liebe Frau, Krankenwagen, Sirene, Jesus Christus", el: "Panagia, asthenoforo, seirina, Iisous Christos", la: "Domina nostra, raeda aegrotorum, siren, Iesus Christus", yo: "Iya Wa, oko ailera, ohun keke, Jesu Kristi", sw: "Bikira Maria, gari la wagonjwa, kengele, Yesu Kristo", gez: "Egziabeher", nl: "Onze-Lieve-Vrouw, ambulance, sirene, Jezus Christus", pl: "Matka Boska, karetka, syrena, Jezus Chrystus", ru: "Bogoroditsa, skoraya, sirena, Iisus Khristos", uk: "Bohorodytsia, shvydka, syrena, Isus Khrystos", zh: "圣母 救护车 警笛 耶稣", ja: "聖母と救急車", ko: "성모님 구급차 사이렌", ar: "sayyidatuna isaf saffara al-masih", he: "gvirti ambulans sireina yeshu", hi: "mata maria ambulance", tr: "Meryem Ana ambulans siren", sv: "var Fru ambulans siren", da: "vor Frue ambulance sirene", no: "vår Frue ambulanse sirene", fi: "Neitsyt Maria ambulanssi sireeni", cs: "Panna Maria sanitka sirena", ro: "Maica Domnului ambulanta sirena", hu: "Szuz Maria menteso szirena", ca: "Mare de Deu ambulancia sirena", gl: "Nosa Señora ambulancia sirena", eu: "Andre Maria anbulantzia", gn: "Ñandejára sy ambulancia", qu: "Mamanchik ambulancia", eo: "nia Sinjorino ambulan co sireno", vi: "Duc Me xe cuu thuong coi", id: "Bunda Maria ambulans sirene", th: "พระแม่มารี รถพยาบาล", hr: "Gospa hitna sirena", sk: "Panna Maria sanitka", ga: "ar mBantiarna otharcharr", cy: "ein Harglwyddes ambiwlans", ha: "Uwar mu motar asibiti", am: "እመቤታችን አምቡላንስ", fa: "hazrat maryam ambulans", bn: "আমাদের লেডি অ্যাম্বুলেন্স", zu: "iNkosikazi yethu i-ambulensi" },';
   upsertGloss(
     glossPath,
     '    "nossa senhora, ambulância, sirene, jesus cristo":\\s*\\{[\\s\\S]*?\\},',

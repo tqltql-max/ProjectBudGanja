@@ -89,9 +89,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: pular (lat. pullāre) — salto × omitir; pulo/pulinho/pulada; passar/backspace/já; Faça o melhor!',
-      whyEn: 'Words: pular (Lat. pullāre) — jump × skip; pulo/pulinho/pulada; passar/backspace/já; Do your best!',
-      whyEs: 'Palabras: pular (lat. pullāre) — salto × omitir; pulo/pulinho/pulada; passar/backspace/já; ¡Haz lo mejor!',
+      why: 'Palavras: pular (lat. pullāre) — salto × omitir; pulo/pulinho/pulada; passar/backspace/já; Valeu !!!',
+      whyEn: 'Words: pular (Lat. pullāre) — jump × skip; pulo/pulinho/pulada; passar/backspace/já; Valeu !!!',
+      whyEs: 'Palabras: pular (lat. pullāre) — salto × omitir; pulo/pulinho/pulada; passar/backspace/já; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -101,7 +101,7 @@ async function main() {
         '/posts/post-inspecao-palavra-passar.html',
         '/posts/post-inspecao-palavra-backspace.html',
         '/posts/post-inspecao-palavra-ja.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — inclui derivações; gatilho lab skip inspecao → pular.'
     };
@@ -120,11 +120,11 @@ async function main() {
       id: 'pular',
       word: 'pular',
       simple:
-        'Lat. pullāre — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar/backspace/já; Faça o melhor com o pulo certo.',
+        'Lat. pullāre — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar/backspace/já; Valeu !!! com o pulo certo.',
       simpleEn:
-        'Lat. pullāre — jump × skip BR; derivatives pulo/pulinho/pulada; links passar/backspace/já; Do your best with the right leap.',
+        'Lat. pullāre — jump × skip BR; derivatives pulo/pulinho/pulada; links passar/backspace/já; Valeu !!! with the right leap.',
       simpleEs:
-        'Lat. pullāre — salto × omitir BR; derivaciones pulo/pulinho/pulada; vínculos passar/backspace/já; Haz lo mejor con el salto correcto.',
+        'Lat. pullāre — salto × omitir BR; derivaciones pulo/pulinho/pulada; vínculos passar/backspace/já; Valeu !!! con el salto correcto.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -148,7 +148,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryMain =
-      '    pular: { gloss: "Lat. pullāre — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar/backspace/já; Faça o melhor!", href: "/posts/post-inspecao-palavra-pular.html", en: "to jump / to skip", es: "saltar / omitir", fr: "sauter", it: "saltare", de: "springen", el: "πηδώ", la: "pullare", yo: "fo", sw: "ruka", gez: "nafasa", nl: "springen", pl: "skakac", ru: "prygat", uk: "strybaty", zh: "jump", ja: "tobu", ko: "ttuida", ar: "yaqfiz", he: "likfotz", hi: "kudna", tr: "atlamak", sv: "hoppa", da: "springe", no: "hoppe", fi: "hypata", cs: "skakat", ro: "sari", hu: "ugrani", ca: "saltar", gl: "saltar", eu: "salto", gn: "poka", qu: "pawa", eo: "salti", vi: "nhay", id: "lompat", th: "jump", hr: "skakati", sk: "skakat", ga: "leim", cy: "neidio", ha: "tsalle", am: "mezlel", fa: "paridan", bn: "lafano", zu: "gxuma" },';
+      '    pular: { gloss: "Lat. pullāre — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar/backspace/já; Valeu !!!", href: "/posts/post-inspecao-palavra-pular.html", en: "to jump / to skip", es: "saltar / omitir", fr: "sauter", it: "saltare", de: "springen", el: "πηδώ", la: "pullare", yo: "fo", sw: "ruka", gez: "nafasa", nl: "springen", pl: "skakac", ru: "prygat", uk: "strybaty", zh: "jump", ja: "tobu", ko: "ttuida", ar: "yaqfiz", he: "likfotz", hi: "kudna", tr: "atlamak", sv: "hoppa", da: "springe", no: "hoppe", fi: "hypata", cs: "skakat", ro: "sari", hu: "ugrani", ca: "saltar", gl: "saltar", eu: "salto", gn: "poka", qu: "pawa", eo: "salti", vi: "nhay", id: "lompat", th: "jump", hr: "skakati", sk: "skakat", ga: "leim", cy: "neidio", ha: "tsalle", am: "mezlel", fa: "paridan", bn: "lafano", zu: "gxuma" },';
     const entryDerivs =
       '    pulo: { gloss: "Derivação de pular — o salto; dar um pulo.", href: "/posts/post-inspecao-palavra-pular.html", en: "jump / leap", es: "salto" },\n' +
       '    pulinho: { gloss: "Diminutivo — salto pequeno / leveza.", href: "/posts/post-inspecao-palavra-pular.html", en: "little jump", es: "saltico" },\n' +

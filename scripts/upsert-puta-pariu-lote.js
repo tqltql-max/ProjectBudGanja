@@ -162,7 +162,7 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: puta — putta; pejorativo/intensificador; elos pariu/PQP/respeito; Faça o melhor!',
+      why: 'Palavras: puta — putta; pejorativo/intensificador; elos pariu/PQP/respeito; Valeu !!!',
       suggestedSlug: puta.slug,
       doneHref: '/posts/post-' + puta.slug + '.html',
       seriesHint: 'palavras-origem',
@@ -177,7 +177,7 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: pariu — pariō/parir; peça de PQP; Faça o melhor!',
+      why: 'Palavras: pariu — pariō/parir; peça de PQP; Valeu !!!',
       suggestedSlug: pariu.slug,
       doneHref: '/posts/post-' + pariu.slug + '.html',
       seriesHint: 'palavras-origem',
@@ -192,7 +192,7 @@ async function main() {
       tipo: 'expressao',
       priority: 1,
       status: 'feita',
-      why: 'Expressões: PQP — pico BR; peças puta+pariu; respeito; Faça o melhor!',
+      why: 'Expressões: PQP — pico BR; peças puta+pariu; respeito; Valeu !!!',
       suggestedSlug: pqp.slug,
       doneHref: '/posts/post-' + pqp.slug + '.html',
       seriesHint: 'expressoes-ditados',
@@ -252,13 +252,13 @@ async function main() {
   upsertGloss(
     glossPath,
     'puta',
-    '    puta: { gloss: "Lat. vulg. putta — pejorativo e intensificador BR; elo PQP; inspecionar com respeito; Faça o melhor!", href: "/posts/post-inspecao-palavra-puta.html", en: "whore / intensifier", es: "puta / intensificador", fr: "pute", it: "puttana", de: "Schimpfwort / Intensivierer", el: "poutana", la: "putta", yo: "ashewo", sw: "kahaba", gez: "zəma", nl: "hoer / intensifier", pl: "kurwa", ru: "шлюха / усилитель", uk: "повія", zh: "粗口/强调", ja: "罵倒語", ko: "욕설", ar: "عاهرة", he: "זונה", hi: "वेश्या", tr: "orospu", sv: "hora", da: "luder", no: "hore", fi: "huora", cs: "kurva", ro: "curva", hu: "kurva", ca: "puta", gl: "puta", eu: "puta", gn: "kuña vai", qu: "puta", eo: "putino", vi: "điếm", id: "pelacur", th: "คำหยาบ", hr: "kurva", sk: "kurva", ga: "striapach", cy: "putain", ha: "karuwa", am: "ጋለሞታ", fa: "فاحشه", bn: "বেশ্যা", zu: "isifebe" },',
+    '    puta: { gloss: "Lat. vulg. putta — pejorativo e intensificador BR; elo PQP; inspecionar com respeito; Valeu !!!", href: "/posts/post-inspecao-palavra-puta.html", en: "whore / intensifier", es: "puta / intensificador", fr: "pute", it: "puttana", de: "Schimpfwort / Intensivierer", el: "poutana", la: "putta", yo: "ashewo", sw: "kahaba", gez: "zəma", nl: "hoer / intensifier", pl: "kurwa", ru: "шлюха / усилитель", uk: "повія", zh: "粗口/强调", ja: "罵倒語", ko: "욕설", ar: "عاهرة", he: "זונה", hi: "वेश्या", tr: "orospu", sv: "hora", da: "luder", no: "hore", fi: "huora", cs: "kurva", ro: "curva", hu: "kurva", ca: "puta", gl: "puta", eu: "puta", gn: "kuña vai", qu: "puta", eo: "putino", vi: "điếm", id: "pelacur", th: "คำหยาบ", hr: "kurva", sk: "kurva", ga: "striapach", cy: "putain", ha: "karuwa", am: "ጋለሞታ", fa: "فاحشه", bn: "বেশ্যা", zu: "isifebe" },',
     ['patrao', 'pattern', 'respeito']
   );
   upsertGloss(
     glossPath,
     'pariu',
-    '    pariu: { gloss: "De parir / lat. pariō — dar à luz; peça de puta que pariu; Faça o melhor!", href: "/posts/post-inspecao-palavra-pariu.html", en: "gave birth", es: "parió", fr: "mit bas", it: "partorì", de: "gebar", el: "gennise", la: "peperit / pario", yo: "bi", sw: "alizaa", gez: "walädä", nl: "baarde", pl: "urodzila", ru: "родила", uk: "народила", zh: "生了", ja: "産んだ", ko: "낳았다", ar: "ولدت", he: "ילדה", hi: "जना", tr: "doğurdu", sv: "födde", da: "fødte", no: "fødte", fi: "synnytti", cs: "porodila", ro: "născu", hu: "szült", ca: "va parir", gl: "pariu", eu: "erditu", gn: "memby", qu: "wachakurqa", eo: "naskis", vi: "sinh", id: "melahirkan", th: "คลอด", hr: "rodila", sk: "porodila", ga: "rug", cy: "esgorodd", ha: "ta haifa", am: "ወለደች", fa: "زایید", bn: "প্রসব", zu: "wazala" },',
+    '    pariu: { gloss: "De parir / lat. pariō — dar à luz; peça de puta que pariu; Valeu !!!", href: "/posts/post-inspecao-palavra-pariu.html", en: "gave birth", es: "parió", fr: "mit bas", it: "partorì", de: "gebar", el: "gennise", la: "peperit / pario", yo: "bi", sw: "alizaa", gez: "walädä", nl: "baarde", pl: "urodzila", ru: "родила", uk: "народила", zh: "生了", ja: "産んだ", ko: "낳았다", ar: "ولدت", he: "ילדה", hi: "जना", tr: "doğurdu", sv: "födde", da: "fødte", no: "fødte", fi: "synnytti", cs: "porodila", ro: "născu", hu: "szült", ca: "va parir", gl: "pariu", eu: "erditu", gn: "memby", qu: "wachakurqa", eo: "naskis", vi: "sinh", id: "melahirkan", th: "คลอด", hr: "rodila", sk: "porodila", ga: "rug", cy: "esgorodd", ha: "ta haifa", am: "ወለደች", fa: "زایید", bn: "প্রসব", zu: "wazala" },',
     ['puta', 'vida', 'gesto']
   );
 

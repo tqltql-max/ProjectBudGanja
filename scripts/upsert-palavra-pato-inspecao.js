@@ -89,9 +89,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: pato (árabe-hispânico) — ave, pagar o pato, jambu/tucupi; animal/água/coelho; Faça o melhor!',
-      whyEn: 'Words: pato (Arabic-Hispanic) — bird, take the blame, jambu/tucupi; animal/água/coelho; Do your best!',
-      whyEs: 'Palabras: pato (árabe-hispánico) — ave, pagar el pato, jambu/tucupi; animal/água/coelho; ¡Haz lo mejor!',
+      why: 'Palavras: pato (árabe-hispânico) — ave, pagar o pato, jambu/tucupi; animal/água/coelho; Valeu !!!',
+      whyEn: 'Words: pato (Arabic-Hispanic) — bird, take the blame, jambu/tucupi; animal/água/coelho; Valeu !!!',
+      whyEs: 'Palabras: pato (árabe-hispánico) — ave, pagar el pato, jambu/tucupi; animal/água/coelho; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -101,7 +101,7 @@ async function main() {
         '/posts/post-inspecao-palavra-agua.html',
         '/posts/post-inspecao-palavra-coelho.html',
         '/posts/post-inspecao-planta-jambu.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — ave ≠ gíria; étimo árabe ≠ lat. anas.'
     };
@@ -120,11 +120,11 @@ async function main() {
       id: 'pato',
       word: 'pato',
       simple:
-        'Árabe-hispânico — ave aquática, pagar o pato e pato no tucupi; elos animal/água/jambu; Faça o melhor!',
+        'Árabe-hispânico — ave aquática, pagar o pato e pato no tucupi; elos animal/água/jambu; Valeu !!!',
       simpleEn:
-        'Arabic-Hispanic — waterbird, take the blame and duck in tucupi; links animal/água/jambu; Do your best!',
+        'Arabic-Hispanic — waterbird, take the blame and duck in tucupi; links animal/água/jambu; Valeu !!!',
       simpleEs:
-        'Árabe-hispánico — ave acuática, pagar el pato y pato en tucupi; vínculos animal/água/jambu; ¡Haz lo mejor!',
+        'Árabe-hispánico — ave acuática, pagar el pato y pato en tucupi; vínculos animal/água/jambu; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href

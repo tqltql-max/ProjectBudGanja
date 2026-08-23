@@ -115,11 +115,11 @@ async function main() {
       tipo: 'expressao',
       priority: 2,
       status: 'feita',
-      why: 'Expressões: os Doze como conjunto nomeado e frase viva BR; apóstolo = enviado; Tomé inspecciona; sem catecismo; Faça o melhor!',
+      why: 'Expressões: os Doze como conjunto nomeado e frase viva BR; apóstolo = enviado; Tomé inspecciona; sem catecismo; Valeu !!!',
       whyEn:
-        'Sayings: the Twelve as named set and living BR phrase; apostle = one sent; Thomas inspects; no catechism; Do your best!',
+        'Sayings: the Twelve as named set and living BR phrase; apostle = one sent; Thomas inspects; no catechism; Valeu !!!',
       whyEs:
-        'Dichos: los Doce como conjunto nombrado y frase viva BR; apóstol = enviado; Tomás inspecciona; sin catecismo; ¡Haz lo mejor!',
+        'Dichos: los Doce como conjunto nombrado y frase viva BR; apóstol = enviado; Tomás inspecciona; sin catecismo; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'expressoes-ditados',
@@ -127,7 +127,7 @@ async function main() {
         '/posts/post-inspecao-expressao-filho-de-deus.html',
         '/posts/post-inspecao-expressao-templo-de-cristo-corpo-e-alma.html',
         '/posts/post-inspecao-filme-a-paixao-de-cristo.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html',
+        '/posts/post-inspecao-palavra-valeu.html',
         '/posts/post-inspecao-palavra-idolo.html'
       ],
       notes:
@@ -150,11 +150,11 @@ async function main() {
       id: 'os-doze-apostolos',
       word: 'os doze apóstolos',
       simple:
-        'Expressão — conjunto nomeado da tradição cristã e frase viva BR; apóstolo = enviado, não ídolo; Tomé inspecciona; ficha ≠ catecismo; Faça o melhor!',
+        'Expressão — conjunto nomeado da tradição cristã e frase viva BR; apóstolo = enviado, não ídolo; Tomé inspecciona; ficha ≠ catecismo; Valeu !!!',
       simpleEn:
-        'Saying — named set in Christian tradition and living BR phrase; apostle = one sent, not an idol; Thomas inspects; sheet ≠ catechism; Do your best!',
+        'Saying — named set in Christian tradition and living BR phrase; apostle = one sent, not an idol; Thomas inspects; sheet ≠ catechism; Valeu !!!',
       simpleEs:
-        'Expresión — conjunto nombrado de la tradición cristiana y frase viva BR; apóstol = enviado, no ídolo; Tomás inspecciona; ficha ≠ catecismo; ¡Haz lo mejor!',
+        'Expresión — conjunto nombrado de la tradición cristiana y frase viva BR; apóstol = enviado, no ídolo; Tomás inspecciona; ficha ≠ catecismo; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href,
@@ -188,7 +188,7 @@ async function main() {
 
   const glossPath = path.join(ROOT, 'js', 'learn-glossary.js');
   const glossLine =
-    '    "os doze apóstolos": { tone: "warm", category: "Envio", mundane: "Conjunto nomeado da tradição cristã e frase viva BR.", gloss: "Apóstolo = enviado, não ídolo; listas divergentes; Tomé inspecciona; ficha ≠ catecismo; depois Faça o melhor!", href: "/posts/post-inspecao-expressao-os-doze-apostolos.html", en: "the twelve apostles", es: "los doce apóstoles", fr: "les douze apôtres", it: "i dodici apostoli", de: "die zwölf Apostel", el: "οι δώδεκα απόστολοι", la: "duodecim apostoli", yo: "àwọn àpóstélì méjìlá", sw: "mitume kumi na wawili", gez: "asra-orəʾtu ḥawāryat", nl: "de twaalf apostelen", pl: "dwunastu apostołów", ru: "двенадцать апостолов", uk: "дванадцять апостолів", zh: "十二使徒", ja: "十二使徒", ko: "열두 사도", ar: "الرسل الاثنا عشر", he: "שנים עשר השליחים", hi: "बारह प्रेरित", tr: "on iki havari", sv: "de tolv apostlarna", da: "de tolv apostle", no: "de tolv apostlene", fi: "kaksitoista apostolia", cs: "dvanáct apoštolů", ro: "cei doisprezece apostoli", hu: "a tizenkét apostol", ca: "els dotze apòstols", gl: "os doce apóstolos", eu: "hamabi apostoluen", gn: "pahatei apostolo", qu: "chunka iskayniyuq apostolkuna", eo: "la dek du apostoloj", vi: "mười hai tông đồ", id: "dua belas rasul", th: "อัครสาวกสิบสอง", hr: "dvanaest apostola", sk: "dvanásť apoštolov", ga: "an dá aspal déag", cy: "y deuddeg apostol", ha: "manzanni goma sha biyu", am: "ዐሥራ ሁለቱ ሐዋርያት", fa: "دوازده حواری", bn: "বারো প্রেরিত", zu: "abaphostoli abayishumi nambili" },';
+    '    "os doze apóstolos": { tone: "warm", category: "Envio", mundane: "Conjunto nomeado da tradição cristã e frase viva BR.", gloss: "Apóstolo = enviado, não ídolo; listas divergentes; Tomé inspecciona; ficha ≠ catecismo; depois Valeu !!!", href: "/posts/post-inspecao-expressao-os-doze-apostolos.html", en: "the twelve apostles", es: "los doce apóstoles", fr: "les douze apôtres", it: "i dodici apostoli", de: "die zwölf Apostel", el: "οι δώδεκα απόστολοι", la: "duodecim apostoli", yo: "àwọn àpóstélì méjìlá", sw: "mitume kumi na wawili", gez: "asra-orəʾtu ḥawāryat", nl: "de twaalf apostelen", pl: "dwunastu apostołów", ru: "двенадцать апостолов", uk: "дванадцять апостолів", zh: "十二使徒", ja: "十二使徒", ko: "열두 사도", ar: "الرسل الاثنا عشر", he: "שנים עשר השליחים", hi: "बारह प्रेरित", tr: "on iki havari", sv: "de tolv apostlarna", da: "de tolv apostle", no: "de tolv apostlene", fi: "kaksitoista apostolia", cs: "dvanáct apoštolů", ro: "cei doisprezece apostoli", hu: "a tizenkét apostol", ca: "els dotze apòstols", gl: "os doce apóstolos", eu: "hamabi apostoluen", gn: "pahatei apostolo", qu: "chunka iskayniyuq apostolkuna", eo: "la dek du apostoloj", vi: "mười hai tông đồ", id: "dua belas rasul", th: "อัครสาวกสิบสอง", hr: "dvanaest apostola", sk: "dvanásť apoštolov", ga: "an dá aspal déag", cy: "y deuddeg apostol", ha: "manzanni goma sha biyu", am: "ዐሥራ ሁለቱ ሐዋርያት", fa: "دوازده حواری", bn: "বারো প্রেরিত", zu: "abaphostoli abayishumi nambili" },';
   upsertGloss(
     glossPath,
     '    "os doze apóstolos":\\s*\\{[\\s\\S]*?\\},',

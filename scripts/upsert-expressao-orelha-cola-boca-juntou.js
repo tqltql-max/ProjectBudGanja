@@ -24,7 +24,23 @@ function nextOrder(posts, series) {
   return (orders.length ? Math.max(...orders) : 0) + 1;
 }
 
+function stampFiles(post) {
+  if (!post.filename) post.filename = 'posts/post-' + post.slug + '.html';
+  if (!post.url) post.url = '/' + String(post.filename).replace(/^\/+/, '');
+  return post;
+}
+
+function writeHtml(post) {
+  const { buildPostHtml, normalizePosts } = require('../lib/posts-service.js');
+  const [normalized] = normalizePosts([post]);
+  const out = path.join(ROOT, normalized.filename);
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  fs.writeFileSync(out, buildPostHtml(normalized), 'utf8');
+  console.log('HTML escrito', normalized.filename);
+}
+
 function upsertPost(posts, post) {
+  stampFiles(post);
   const idx = posts.findIndex((p) => p.slug === post.slug);
   if (idx >= 0) {
     posts[idx] = Object.assign({}, posts[idx], post);
@@ -90,8 +106,9 @@ async function main() {
   const order = existing
     ? Number(existing.seriesOrder) || nextOrder(posts, 'expressoes-ditados')
     : nextOrder(posts, 'expressoes-ditados');
-  const post = buildOrelhaColaPost(order);
+  const post = stampFiles(buildOrelhaColaPost(order));
   upsertPost(posts, post);
+  writeHtml(post);
   fs.writeFileSync(POSTS_FILE, JSON.stringify(posts, null, 2) + '\n', 'utf8');
 
   const i18n = JSON.parse(fs.readFileSync(I18N_FILE, 'utf8'));

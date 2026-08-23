@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 1,
       status: 'feita',
-      why: 'Palavras: EXIT (lat. exīre/exitus) — saída/quit/teatro; no lab, salvação = sair do aperto; caminho/risco/alma; Faça o melhor!',
-      whyEn: 'Words: EXIT (Lat. exīre/exitus) — exit/quit/theatre; lab salvation = leaving the squeeze; caminho/risco/alma; Do your best!',
-      whyEs: 'Palabras: EXIT (lat. exīre/exitus) — salida/quit/teatro; salvación lab = salir del aprieto; caminho/risco/alma; ¡Haz lo mejor!',
+      why: 'Palavras: EXIT (lat. exīre/exitus) — saída/quit/teatro; no lab, salvação = sair do aperto; caminho/risco/alma; Valeu !!!',
+      whyEn: 'Words: EXIT (Lat. exīre/exitus) — exit/quit/theatre; lab salvation = leaving the squeeze; caminho/risco/alma; Valeu !!!',
+      whyEs: 'Palabras: EXIT (lat. exīre/exitus) — salida/quit/teatro; salvación lab = salir del aprieto; caminho/risco/alma; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -94,7 +94,7 @@ async function main() {
         post.sourceUrl,
         '/posts/post-inspecao-palavra-caminho.html',
         '/posts/post-inspecao-palavra-alma.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — «essa é a salvação»; ofício sem sermão.'
     };
@@ -113,11 +113,11 @@ async function main() {
       id: 'exit',
       word: 'EXIT',
       simple:
-        'EN/lat. exīre · exitus — saída, quit, teatro; no lab BudGanja, salvação = ofício de sair do aperto; elos caminho/alma/risco; Faça o melhor!',
+        'EN/lat. exīre · exitus — saída, quit, teatro; no lab BudGanja, salvação = ofício de sair do aperto; elos caminho/alma/risco; Valeu !!!',
       simpleEn:
-        'EN/Lat. exīre · exitus — way out, quit, theatre; in the BudGanja lab, salvation = craft of leaving the squeeze; links caminho/alma/risco; Do your best!',
+        'EN/Lat. exīre · exitus — way out, quit, theatre; in the BudGanja lab, salvation = craft of leaving the squeeze; links caminho/alma/risco; Valeu !!!',
       simpleEs:
-        'EN/lat. exīre · exitus — salida, quit, teatro; en el lab BudGanja, salvación = oficio de salir del aprieto; vínculos caminho/alma/risco; ¡Haz lo mejor!',
+        'EN/lat. exīre · exitus — salida, quit, teatro; en el lab BudGanja, salvación = oficio de salir del aprieto; vínculos caminho/alma/risco; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -143,7 +143,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    exit: { gloss: "EN/lat. exīre·exitus — saída, quit, teatro; no lab, salvação = sair do aperto; elos caminho/alma/risco; Faça o melhor!", href: "/posts/post-inspecao-palavra-exit.html", en: "exit", es: "salida", fr: "sortie", it: "uscita", de: "Ausgang", el: "εξοδος", la: "exitus", yo: "jade", sw: "kutoka", gez: "wäṣä", nl: "uitgang", pl: "wyjscie", ru: "vykhod", uk: "vykhid", zh: "出口", ja: "出口", ko: "출구", ar: "مخرج", he: "יציאה", hi: "निकास", tr: "cikis", sv: "utgang", da: "udgang", no: "utgang", fi: "uloskaynti", cs: "vychod", ro: "iesire", hu: "kijarat", ca: "sortida", gl: "saida", eu: "irteera", gn: "ñesẽ", qu: "lluqsiy", eo: "elirejo", vi: "loi ra", id: "keluar", th: "ทางออก", hr: "izlaz", sk: "vychod", ga: "imeacht", cy: "allanfa", ha: "fitowa", am: "መውጫ", fa: "خروج", bn: "প্রস্থান", zu: "ukuphuma" },';
+      '    exit: { gloss: "EN/lat. exīre·exitus — saída, quit, teatro; no lab, salvação = sair do aperto; elos caminho/alma/risco; Valeu !!!", href: "/posts/post-inspecao-palavra-exit.html", en: "exit", es: "salida", fr: "sortie", it: "uscita", de: "Ausgang", el: "εξοδος", la: "exitus", yo: "jade", sw: "kutoka", gez: "wäṣä", nl: "uitgang", pl: "wyjscie", ru: "vykhod", uk: "vykhid", zh: "出口", ja: "出口", ko: "출구", ar: "مخرج", he: "יציאה", hi: "निकास", tr: "cikis", sv: "utgang", da: "udgang", no: "utgang", fi: "uloskaynti", cs: "vychod", ro: "iesire", hu: "kijarat", ca: "sortida", gl: "saida", eu: "irteera", gn: "ñesẽ", qu: "lluqsiy", eo: "elirejo", vi: "loi ra", id: "keluar", th: "ทางออก", hr: "izlaz", sk: "vychod", ga: "imeacht", cy: "allanfa", ha: "fitowa", am: "መውጫ", fa: "خروج", bn: "প্রস্থান", zu: "ukuphuma" },';
     if (/exit:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    exit:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

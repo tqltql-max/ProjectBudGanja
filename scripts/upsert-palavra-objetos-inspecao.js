@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: objetos (lat. obiectum) — plural; meta-lab do objeto inspecionado; Faça o melhor!',
-      whyEn: 'Words: objetos (Lat. obiectum) — plural; meta-lab inspected object; Do your best!',
-      whyEs: 'Palabras: objetos (lat. obiectum) — plural; meta-lab del objeto inspeccionado; ¡Haz lo mejor!',
+      why: 'Palavras: objetos (lat. obiectum) — plural; meta-lab do objeto inspecionado; Valeu !!!',
+      whyEn: 'Words: objetos (Lat. obiectum) — plural; meta-lab inspected object; Valeu !!!',
+      whyEs: 'Palabras: objetos (lat. obiectum) — plural; meta-lab del objeto inspeccionado; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -94,7 +94,7 @@ async function main() {
         post.sourceUrl,
         '/posts/post-inspecao-palavra-verdade.html',
         '/posts/post-inspecao-palavra-caminho.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — um objeto por ficha; plural pede ordem.'
     };
@@ -113,11 +113,11 @@ async function main() {
       id: 'objetos',
       word: 'objetos',
       simple:
-        'Lat. obiectum — plural de objeto; no lab, o foco do «objeto inspecionado»; Faça o melhor neste objeto.',
+        'Lat. obiectum — plural de objeto; no lab, o foco do «objeto inspecionado»; Valeu !!! neste objeto.',
       simpleEn:
-        'Lat. obiectum — plural of objeto; in the lab, focus of the inspected object; Do your best on this object.',
+        'Lat. obiectum — plural of objeto; in the lab, focus of the inspected object; Valeu !!! on this object.',
       simpleEs:
-        'Lat. obiectum — plural de objeto; en el lab, el foco del «objeto inspeccionado»; Haz lo mejor en este objeto.',
+        'Lat. obiectum — plural de objeto; en el lab, el foco del «objeto inspeccionado»; Valeu !!! en este objeto.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -139,7 +139,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    objetos: { gloss: "Lat. obiectum — plural de objeto; meta-lab do objeto inspecionado; Faça o melhor!", href: "/posts/post-inspecao-palavra-objetos.html", en: "objects", es: "objetos", fr: "objets", it: "oggetti", de: "Objekte", el: "antikeimena", la: "obiecta", yo: "nkan", sw: "vitu", gez: "nägärat", nl: "objecten", pl: "obiekty", ru: "obekty", uk: "obiekty", zh: "wuti", ja: "mono / object", ko: "gaekche", ar: "ashya", he: "atzamim", hi: "vastuyen", tr: "nesneler", sv: "objekt", da: "objekter", no: "objekter", fi: "objektit", cs: "objekty", ro: "obiecte", hu: "targyak", ca: "objectes", gl: "obxectos", eu: "objektuak", gn: "mba\'ekuéra", qu: "imakuna", eo: "objektoj", vi: "doi tuong", id: "objek", th: "วัตถุ", hr: "objekti", sk: "objekty", ga: "readaí", cy: "gwrthrychau", ha: "abubuwa", am: "ነገሮች", fa: "ashya", bn: "বস্তু", zu: "izinto" },';
+      '    objetos: { gloss: "Lat. obiectum — plural de objeto; meta-lab do objeto inspecionado; Valeu !!!", href: "/posts/post-inspecao-palavra-objetos.html", en: "objects", es: "objetos", fr: "objets", it: "oggetti", de: "Objekte", el: "antikeimena", la: "obiecta", yo: "nkan", sw: "vitu", gez: "nägärat", nl: "objecten", pl: "obiekty", ru: "obekty", uk: "obiekty", zh: "wuti", ja: "mono / object", ko: "gaekche", ar: "ashya", he: "atzamim", hi: "vastuyen", tr: "nesneler", sv: "objekt", da: "objekter", no: "objekter", fi: "objektit", cs: "objekty", ro: "obiecte", hu: "targyak", ca: "objectes", gl: "obxectos", eu: "objektuak", gn: "mba\'ekuéra", qu: "imakuna", eo: "objektoj", vi: "doi tuong", id: "objek", th: "วัตถุ", hr: "objekti", sk: "objekty", ga: "readaí", cy: "gwrthrychau", ha: "abubuwa", am: "ነገሮች", fa: "ashya", bn: "বস্তু", zu: "izinto" },';
     if (/objetos:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    objetos:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

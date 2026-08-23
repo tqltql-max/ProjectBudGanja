@@ -1,0 +1,306 @@
+/* Livro do laboratório — fundo escuro, letras brancas */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+body[data-page="livro"] {
+    --livro-ice: #f4f7fb;
+    --livro-mist: #c5d0da;
+    --livro-deep: #0b1218;
+    --livro-gold: #7dffd0;
+    --livro-red: #e24b4b;
+    --livro-yellow: #e8c547;
+    background: var(--livro-deep);
+    color: var(--livro-ice);
+}
+
+body[data-page="livro"] #main-content {
+    padding: 0;
+    max-width: none;
+    width: 100%;
+}
+
+.livro-page {
+    font-family: "Source Sans 3", "Segoe UI", sans-serif;
+    color: var(--livro-ice);
+}
+
+.livro-hero {
+    min-height: min(92svh, 52rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 7rem var(--space-page-x, 1.25rem) clamp(4rem, 12vw, 6.4rem);
+    background:
+        radial-gradient(ellipse 70% 50% at 12% 8%, rgba(158, 176, 194, 0.14), transparent 55%),
+        radial-gradient(ellipse 45% 40% at 88% 18%, rgba(125, 255, 208, 0.1), transparent 50%),
+        var(--livro-deep);
+}
+
+.livro-brand {
+    margin: 0 0 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--livro-gold);
+}
+
+.livro-hero h1 {
+    margin: 0;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(2.8rem, 11vw, 6.4rem);
+    font-weight: 800;
+    line-height: 0.88;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 14ch;
+}
+
+.livro-author {
+    margin: 0.85rem 0 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--livro-gold);
+}
+
+.livro-lead {
+    margin: 0.55rem 0 0;
+    max-width: 32rem;
+    font-size: clamp(1.08rem, 2.2vw, 1.32rem);
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.livro-facts {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem 1rem;
+    width: min(100%, 28rem);
+    margin: 1.2rem 0 0;
+}
+
+.livro-facts dd {
+    margin: 0;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    font-weight: 800;
+    line-height: 1;
+    color: #fff;
+}
+
+.livro-facts dt {
+    margin-top: 0.28rem;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--livro-mist);
+}
+
+.livro-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+    margin-top: 1.35rem;
+}
+
+.livro-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.7rem;
+    padding: 0.45rem 1.15rem;
+    border: 1px solid var(--livro-gold);
+    background: var(--livro-gold);
+    color: #0b1218;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.livro-cta:hover {
+    background: #fff;
+    border-color: #fff;
+}
+
+.livro-cta--ghost {
+    background: transparent;
+    color: #fff;
+    border-color: rgba(244, 247, 251, 0.45);
+}
+
+.livro-cta--ghost:hover {
+    background: rgba(244, 247, 251, 0.1);
+    color: #fff;
+}
+
+.livro-section {
+    width: min(44rem, calc(100% - 2 * var(--space-page-x, 1.25rem)));
+    margin: 0 auto;
+    padding: clamp(2.8rem, 7vw, 4.4rem) 0 0;
+}
+
+.livro-section:last-of-type {
+    padding-bottom: clamp(3.2rem, 8vw, 5.2rem);
+}
+
+.livro-kicker {
+    margin: 0 0 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--livro-gold);
+}
+
+.livro-section h2 {
+    margin: 0;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(1.9rem, 5vw, 2.6rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.livro-section-lead,
+.livro-section p {
+    margin: 0.7rem 0 0;
+    font-size: 1.06rem;
+    line-height: 1.62;
+    color: var(--livro-ice);
+}
+
+.livro-section a {
+    color: var(--livro-gold);
+    text-underline-offset: 3px;
+}
+
+.livro-dedication {
+    text-align: center;
+    padding-top: clamp(3.4rem, 9vw, 5.2rem);
+}
+
+.livro-dedication p {
+    max-width: 34rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.livro-dedication .especial {
+    margin-top: 1.4rem;
+    font-size: 1.22rem;
+    font-style: italic;
+    color: #fff;
+}
+
+.livro-field-note {
+    margin-top: 1.5rem !important;
+    font-size: 0.88rem !important;
+    color: var(--livro-mist) !important;
+}
+
+.livro-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.35rem 0 0;
+}
+
+.livro-chip {
+    appearance: none;
+    border: 1px solid rgba(244, 247, 251, 0.18);
+    background: rgba(8, 14, 20, 0.35);
+    padding: 0.42rem 0.8rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.livro-chip:hover,
+.livro-chip.is-on {
+    border-color: var(--livro-gold);
+    color: #0b1218;
+    background: var(--livro-gold);
+}
+
+.livro-chip--red { box-shadow: inset 4px 0 0 var(--livro-red); }
+.livro-chip--yellow { box-shadow: inset 4px 0 0 var(--livro-yellow); }
+.livro-chip--white { box-shadow: inset 4px 0 0 #fff; }
+
+.livro-read {
+    min-height: 4.2rem;
+    margin: 1.1rem 0 0;
+    padding: 1rem 1.1rem;
+    border: 1px solid rgba(244, 247, 251, 0.12);
+    background: rgba(244, 247, 251, 0.04);
+    color: #fff;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.livro-rooms {
+    display: grid;
+    gap: 0.7rem;
+    margin: 1.4rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.livro-rooms a {
+    display: block;
+    padding: 0.85rem 1rem;
+    border: 1px solid rgba(244, 247, 251, 0.12);
+    color: #fff;
+    text-decoration: none;
+}
+
+.livro-rooms a:hover {
+    border-color: var(--livro-gold);
+}
+
+.livro-rooms strong {
+    display: block;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.2rem;
+}
+
+.livro-rooms span {
+    display: block;
+    margin-top: 0.15rem;
+    color: var(--livro-mist);
+    font-size: 0.92rem;
+}
+
+.livro-colophon {
+    color: var(--livro-mist);
+}
+
+@media print {
+    @page { size: A4; margin: 16mm; }
+    html, body {
+        background: #0b1218 !important;
+        color: #fff !important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    #site-header,
+    #site-footer,
+    .livro-hero-actions {
+        display: none !important;
+    }
+    .livro-hero,
+    .livro-section {
+        break-inside: avoid;
+    }
+    a { color: #fff !important; text-decoration: none; }
+}

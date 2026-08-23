@@ -31,7 +31,7 @@ async function main() {
   <text x="120" y="320" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="rgba(230,210,180,0.95)">estúdio das cidades de ecrã</text>
   <text x="120" y="420" font-family="Georgia, Times New Roman, serif" font-size="22" fill="#c4a070">Nova Iorque · Take-Two · 1998</text>
   <text x="120" y="490" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#d4b896">GTA · Red Dead · RAGE · rede de studios</text>
-  <text x="120" y="560" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="rgba(212,184,150,0.8)">ficção ≠ manual · Faça o melhor!</text>
+  <text x="120" y="560" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="rgba(212,184,150,0.8)">ficção ≠ manual · Valeu !!!</text>
 </svg>`);
 
   await sharp(bg).jpeg({ quality: 84, mozjpeg: true }).toFile(OUT);

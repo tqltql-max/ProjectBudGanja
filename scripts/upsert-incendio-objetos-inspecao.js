@@ -280,11 +280,11 @@ async function main() {
           id: 'objetos-perigosos-incendio',
           word: 'objectos perigosos para controle de incêndio',
           simple:
-            'Mapa lab: perigo × corte × nome de marca — Mars Hydro / Vivosun e os objectos da tenda; ≠ manual de bombeiros; Faça o melhor!',
+            'Mapa lab: perigo × corte × nome de marca — Mars Hydro / Vivosun e os objectos da tenda; ≠ manual de bombeiros; Valeu !!!',
           simpleEn:
-            'Lab map: hazard × cut × brand name — Mars Hydro / Vivosun and tent objects; not a fire-crew manual; Do your best!',
+            'Lab map: hazard × cut × brand name — Mars Hydro / Vivosun and tent objects; not a fire-crew manual; Valeu !!!',
           simpleEs:
-            'Mapa lab: peligro × corte × marca — Mars Hydro / Vivosun y objetos de la carpa; no es manual de bomberos; ¡Haz lo mejor!',
+            'Mapa lab: peligro × corte × marca — Mars Hydro / Vivosun y objetos de la carpa; no es manual de bomberos; ¡Valeu !!!',
           group: 'lexico',
           fromTitle: false,
           href: '/posts/post-inspecao-palavra-objetos-perigosos-incendio.html',
@@ -300,11 +300,11 @@ async function main() {
           id: 'mars-hydro',
           word: 'Mars Hydro',
           simple:
-            'Marca LED indoor: Mars (planeta/deus) + Hydro (água); rasto marshydrobr; marca ≠ controle de incêndio; Faça o melhor!',
+            'Marca LED indoor: Mars (planeta/deus) + Hydro (água); rasto marshydrobr; marca ≠ controle de incêndio; Valeu !!!',
           simpleEn:
-            'Indoor LED brand: Mars (planet/god) + Hydro (water); marshydrobr trail; brand ≠ fire control; Do your best!',
+            'Indoor LED brand: Mars (planet/god) + Hydro (water); marshydrobr trail; brand ≠ fire control; Valeu !!!',
           simpleEs:
-            'Marca LED indoor: Mars (planeta/dios) + Hydro (agua); rastro marshydrobr; marca ≠ control de incendio; ¡Haz lo mejor!',
+            'Marca LED indoor: Mars (planeta/dios) + Hydro (agua); rastro marshydrobr; marca ≠ control de incendio; ¡Valeu !!!',
           group: 'lexico',
           fromTitle: false,
           href: '/posts/post-inspecao-palavra-mars-hydro.html',
@@ -320,11 +320,11 @@ async function main() {
           id: 'vivosun',
           word: 'Vivosun',
           simple:
-            'Marca indoor: vivo + sun = sol vivo; rasto BR por revenda; marca ≠ astro nem laudo; Faça o melhor!',
+            'Marca indoor: vivo + sun = sol vivo; rasto BR por revenda; marca ≠ astro nem laudo; Valeu !!!',
           simpleEn:
-            'Indoor brand: vivo + sun = living sun; Brazil via resellers; brand ≠ star or certificate; Do your best!',
+            'Indoor brand: vivo + sun = living sun; Brazil via resellers; brand ≠ star or certificate; Valeu !!!',
           simpleEs:
-            'Marca indoor: vivo + sun = sol vivo; Brasil por revenda; marca ≠ astro ni laudo; ¡Haz lo mejor!',
+            'Marca indoor: vivo + sun = sol vivo; Brasil por revenda; marca ≠ astro ni laudo; ¡Valeu !!!',
           group: 'lexico',
           fromTitle: false,
           href: '/posts/post-inspecao-palavra-vivosun.html',
@@ -340,7 +340,7 @@ async function main() {
           id: 'tenda',
           word: 'tenda',
           simple:
-            'Lat. tendere — recinto indoor (grow tent) que fecha luz e calor; ≠ cofre ignífugo; Faça o melhor!',
+            'Lat. tendere — recinto indoor (grow tent) que fecha luz e calor; ≠ cofre ignífugo; Valeu !!!',
           href: '/posts/post-inspecao-palavra-tenda.html',
           group: 'lexico',
           fromTitle: false,
@@ -354,7 +354,7 @@ async function main() {
           id: 'extintor',
           word: 'extintor',
           simple:
-            'Lat. exstinguere — objecto de controle que apaga; último gesto; ≠ NR-23; Faça o melhor!',
+            'Lat. exstinguere — objecto de controle que apaga; último gesto; ≠ NR-23; Valeu !!!',
           href: '/posts/post-inspecao-palavra-extintor.html',
           group: 'lexico',
           fromTitle: false,
@@ -368,7 +368,7 @@ async function main() {
           id: 'incendio',
           word: 'incêndio',
           simple:
-            'Lat. incendium — evento descontrolado; ≠ fogo (focus, elemento); eixo do cluster da tenda; Faça o melhor!',
+            'Lat. incendium — evento descontrolado; ≠ fogo (focus, elemento); eixo do cluster da tenda; Valeu !!!',
           href: '/posts/post-inspecao-palavra-incendio.html',
           group: 'lexico',
           fromTitle: false,
@@ -382,7 +382,7 @@ async function main() {
           id: 'fonte',
           word: 'fonte',
           simple:
-            'Lat. fons — nascente; no indoor é o driver/PSU, perigo escondido atrás do painel; Faça o melhor!',
+            'Lat. fons — nascente; no indoor é o driver/PSU, perigo escondido atrás do painel; Valeu !!!',
           href: '/posts/post-inspecao-palavra-fonte.html',
           group: 'lexico',
           fromTitle: false,
@@ -396,7 +396,7 @@ async function main() {
           id: 'extensao',
           word: 'extensão',
           simple:
-            'Lat. extendere — régua/benjamim que estica a tomada até à tenda; perigo banal; Faça o melhor!',
+            'Lat. extendere — régua/benjamim que estica a tomada até à tenda; perigo banal; Valeu !!!',
           href: '/posts/post-inspecao-palavra-extensao.html',
           group: 'lexico',
           fromTitle: false,
@@ -410,7 +410,7 @@ async function main() {
           id: 'exaustor',
           word: 'exaustor',
           simple:
-            'Lat. exhaurīre — motor que esgota o ar da tenda; circulação ≠ extração; Faça o melhor!',
+            'Lat. exhaurīre — motor que esgota o ar da tenda; circulação ≠ extração; Valeu !!!',
           href: '/posts/post-inspecao-palavra-exaustor.html',
           group: 'lexico',
           fromTitle: false,
@@ -432,17 +432,17 @@ async function main() {
     const lines = [
       [
         'incendio',
-        '    incendio: { tone: "caution", category: "Evento", mundane: "Fogo descontrolado — ≠ elemento fogo.", gloss: "Lat. incendium ← incendere; evento ≠ focus; eixo do cluster da tenda; Faça o melhor!", href: "/posts/post-inspecao-palavra-incendio.html", en: "fire (event / blaze)", es: "incendio", fr: "incendie", it: "incendio", de: "Brand", el: "pyrkagia", la: "incendium", yo: "ina nla", sw: "moto mkubwa", gez: "ʼǝsat", nl: "brand", pl: "pozar", ru: "pozhar", uk: "pozhezha", zh: "huozai", ja: "kaji", ko: "hwajae", ar: "hariq", he: "srefa", hi: "agni-kand", tr: "yangin", sv: "brand", da: "brand", no: "brann", fi: "tulipalo", cs: "pozar", ro: "incendiu", hu: "tuzesz", ca: "incendi", gl: "incendio", eu: "sute", gn: "tata vai", qu: "nina hatun", eo: "brulego", vi: "hoa hoan", id: "kebakaran", th: "fai mai", hr: "pozar", sk: "pozar", ga: "tine mor", cy: "tan", ha: "gobara", am: "esat", fa: "atash-suzi", bn: "agunlagna", zu: "umlilo omkhulu" },\n',
+        '    incendio: { tone: "caution", category: "Evento", mundane: "Fogo descontrolado — ≠ elemento fogo.", gloss: "Lat. incendium ← incendere; evento ≠ focus; eixo do cluster da tenda; Valeu !!!", href: "/posts/post-inspecao-palavra-incendio.html", en: "fire (event / blaze)", es: "incendio", fr: "incendie", it: "incendio", de: "Brand", el: "pyrkagia", la: "incendium", yo: "ina nla", sw: "moto mkubwa", gez: "ʼǝsat", nl: "brand", pl: "pozar", ru: "pozhar", uk: "pozhezha", zh: "huozai", ja: "kaji", ko: "hwajae", ar: "hariq", he: "srefa", hi: "agni-kand", tr: "yangin", sv: "brand", da: "brand", no: "brann", fi: "tulipalo", cs: "pozar", ro: "incendiu", hu: "tuzesz", ca: "incendi", gl: "incendio", eu: "sute", gn: "tata vai", qu: "nina hatun", eo: "brulego", vi: "hoa hoan", id: "kebakaran", th: "fai mai", hr: "pozar", sk: "pozar", ga: "tine mor", cy: "tan", ha: "gobara", am: "esat", fa: "atash-suzi", bn: "agunlagna", zu: "umlilo omkhulu" },\n',
         ['fogo', 'risco']
       ],
       [
         '"objectos perigosos"',
-        '    "objectos perigosos": { tone: "caution", category: "Mapa", mundane: "Cluster indoor: perigo × corte × marca.", gloss: "Mapa — Mars Hydro / Vivosun e objectos da tenda; ≠ manual de bombeiros; Faça o melhor!", href: "/posts/post-inspecao-palavra-objetos-perigosos-incendio.html", en: "dangerous objects for fire control", es: "objetos peligrosos para control de incendio" },\n',
+        '    "objectos perigosos": { tone: "caution", category: "Mapa", mundane: "Cluster indoor: perigo × corte × marca.", gloss: "Mapa — Mars Hydro / Vivosun e objectos da tenda; ≠ manual de bombeiros; Valeu !!!", href: "/posts/post-inspecao-palavra-objetos-perigosos-incendio.html", en: "dangerous objects for fire control", es: "objetos peligrosos para control de incendio" },\n',
         ['incendio', 'fogo']
       ],
       [
         'marshydro',
-        '    marshydro: { tone: "caution", category: "Marca", mundane: "Marca LED indoor — Mars + Hydro.", gloss: "marshydrobr → Mars Hydro; Marte + água; marca ≠ laudo; elos tenda/fonte; Faça o melhor!", href: "/posts/post-inspecao-palavra-mars-hydro.html", en: "Mars Hydro", es: "Mars Hydro" },\n',
+        '    marshydro: { tone: "caution", category: "Marca", mundane: "Marca LED indoor — Mars + Hydro.", gloss: "marshydrobr → Mars Hydro; Marte + água; marca ≠ laudo; elos tenda/fonte; Valeu !!!", href: "/posts/post-inspecao-palavra-mars-hydro.html", en: "Mars Hydro", es: "Mars Hydro" },\n',
         ['incendio', 'fogo']
       ],
       [
@@ -457,32 +457,32 @@ async function main() {
       ],
       [
         'vivosun',
-        '    vivosun: { tone: "caution", category: "Marca", mundane: "Marca indoor — vivo + sun.", gloss: "Sol vivo no nome; rasto BR por revenda; marca ≠ astro nem laudo; elos tenda/fonte; Faça o melhor!", href: "/posts/post-inspecao-palavra-vivosun.html", en: "Vivosun", es: "Vivosun", fr: "Vivosun", it: "Vivosun", de: "Vivosun", el: "Vivosun", la: "Vivosun", yo: "Vivosun", sw: "Vivosun", gez: "Vivosun", nl: "Vivosun", pl: "Vivosun", ru: "Vivosun", uk: "Vivosun", zh: "Vivosun", ja: "Vivosun", ko: "Vivosun", ar: "Vivosun", he: "Vivosun", hi: "Vivosun", tr: "Vivosun", sv: "Vivosun", da: "Vivosun", no: "Vivosun", fi: "Vivosun", cs: "Vivosun", ro: "Vivosun", hu: "Vivosun", ca: "Vivosun", gl: "Vivosun", eu: "Vivosun", gn: "Vivosun", qu: "Vivosun", eo: "Vivosun", vi: "Vivosun", id: "Vivosun", th: "Vivosun", hr: "Vivosun", sk: "Vivosun", ga: "Vivosun", cy: "Vivosun", ha: "Vivosun", am: "Vivosun", fa: "Vivosun", bn: "Vivosun", zu: "Vivosun" },\n',
+        '    vivosun: { tone: "caution", category: "Marca", mundane: "Marca indoor — vivo + sun.", gloss: "Sol vivo no nome; rasto BR por revenda; marca ≠ astro nem laudo; elos tenda/fonte; Valeu !!!", href: "/posts/post-inspecao-palavra-vivosun.html", en: "Vivosun", es: "Vivosun", fr: "Vivosun", it: "Vivosun", de: "Vivosun", el: "Vivosun", la: "Vivosun", yo: "Vivosun", sw: "Vivosun", gez: "Vivosun", nl: "Vivosun", pl: "Vivosun", ru: "Vivosun", uk: "Vivosun", zh: "Vivosun", ja: "Vivosun", ko: "Vivosun", ar: "Vivosun", he: "Vivosun", hi: "Vivosun", tr: "Vivosun", sv: "Vivosun", da: "Vivosun", no: "Vivosun", fi: "Vivosun", cs: "Vivosun", ro: "Vivosun", hu: "Vivosun", ca: "Vivosun", gl: "Vivosun", eu: "Vivosun", gn: "Vivosun", qu: "Vivosun", eo: "Vivosun", vi: "Vivosun", id: "Vivosun", th: "Vivosun", hr: "Vivosun", sk: "Vivosun", ga: "Vivosun", cy: "Vivosun", ha: "Vivosun", am: "Vivosun", fa: "Vivosun", bn: "Vivosun", zu: "Vivosun" },\n',
         ['"mars hydro"', 'marshydro']
       ],
       [
         'tenda',
-        '    tenda: { tone: "caution", category: "Objecto", mundane: "Recinto de cultivo indoor (grow tent).", gloss: "Lat. tendere — estica pano; fecha luz e calor; ≠ cofre ignífugo; Faça o melhor!", href: "/posts/post-inspecao-palavra-tenda.html", en: "grow tent / tent", es: "carpa de cultivo", fr: "tente", it: "tenda", de: "Zelt", el: "skini", la: "tenda", yo: "ago", sw: "hema", gez: "dǝbǝna", nl: "tent", pl: "namiot", ru: "palatka", uk: "namet", zh: "zhangpeng", ja: "tento", ko: "tenteu", ar: "khayma", he: "ohel", hi: "tambu", tr: "cadir", sv: "talt", da: "telt", no: "telt", fi: "teltta", cs: "stan", ro: "cort", hu: "sator", ca: "tenda", gl: "tenda", eu: "denda", gn: "oka", qu: "karpa", eo: "tendo", vi: "leu", id: "tenda", th: "tent", hr: "sator", sk: "stan", ga: "puball", cy: "pabell", ha: "tanti", am: "dunkwan", fa: "chador", bn: "tambu", zu: "itende" },\n',
+        '    tenda: { tone: "caution", category: "Objecto", mundane: "Recinto de cultivo indoor (grow tent).", gloss: "Lat. tendere — estica pano; fecha luz e calor; ≠ cofre ignífugo; Valeu !!!", href: "/posts/post-inspecao-palavra-tenda.html", en: "grow tent / tent", es: "carpa de cultivo", fr: "tente", it: "tenda", de: "Zelt", el: "skini", la: "tenda", yo: "ago", sw: "hema", gez: "dǝbǝna", nl: "tent", pl: "namiot", ru: "palatka", uk: "namet", zh: "zhangpeng", ja: "tento", ko: "tenteu", ar: "khayma", he: "ohel", hi: "tambu", tr: "cadir", sv: "talt", da: "telt", no: "telt", fi: "teltta", cs: "stan", ro: "cort", hu: "sator", ca: "tenda", gl: "tenda", eu: "denda", gn: "oka", qu: "karpa", eo: "tendo", vi: "leu", id: "tenda", th: "tent", hr: "sator", sk: "stan", ga: "puball", cy: "pabell", ha: "tanti", am: "dunkwan", fa: "chador", bn: "tambu", zu: "itende" },\n',
         ['vivosun', 'fogo']
       ],
       [
         'extintor',
-        '    extintor: { tone: "caution", category: "Controle", mundane: "Cilindro que apaga o incêndio.", gloss: "Lat. exstinguere — último gesto; coluna controle; ≠ NR-23; Faça o melhor!", href: "/posts/post-inspecao-palavra-extintor.html", en: "fire extinguisher", es: "extintor", fr: "extincteur", it: "estintore", de: "Feuerloscher", el: "svestiras", la: "extinctor", yo: "nkan pa ina", sw: "kizima moto", gez: "mäsfäsi", nl: "brandblusser", pl: "gasnica", ru: "ognetushitel", uk: "vognehasnyk", zh: "miehuoqi", ja: "shokaki", ko: "sohwagi", ar: "matafi", he: "maka", hi: "agni-shamak", tr: "yangin sondurucu", sv: "brandslackare", da: "brandslukker", no: "brannslukker", fi: "sammutin", cs: "hasic", ro: "extinctor", hu: "tuzolto", ca: "extintor", gl: "extintor", eu: "itzalgailu", gn: "tata mbogueha", qu: "nina wañuchi", eo: "fajrestingilo", vi: "binh chua chay", id: "alat pemadam", th: "thung dap fai", hr: "aparat", sk: "hasiaci", ga: "mucheoir", cy: "diffoddydd", ha: "majinyar wuta", am: "esat mekfel", fa: "khamush-konande", bn: "agninirbak", zu: "isicima-mlilo" },\n',
+        '    extintor: { tone: "caution", category: "Controle", mundane: "Cilindro que apaga o incêndio.", gloss: "Lat. exstinguere — último gesto; coluna controle; ≠ NR-23; Valeu !!!", href: "/posts/post-inspecao-palavra-extintor.html", en: "fire extinguisher", es: "extintor", fr: "extincteur", it: "estintore", de: "Feuerloscher", el: "svestiras", la: "extinctor", yo: "nkan pa ina", sw: "kizima moto", gez: "mäsfäsi", nl: "brandblusser", pl: "gasnica", ru: "ognetushitel", uk: "vognehasnyk", zh: "miehuoqi", ja: "shokaki", ko: "sohwagi", ar: "matafi", he: "maka", hi: "agni-shamak", tr: "yangin sondurucu", sv: "brandslackare", da: "brandslukker", no: "brannslukker", fi: "sammutin", cs: "hasic", ro: "extinctor", hu: "tuzolto", ca: "extintor", gl: "extintor", eu: "itzalgailu", gn: "tata mbogueha", qu: "nina wañuchi", eo: "fajrestingilo", vi: "binh chua chay", id: "alat pemadam", th: "thung dap fai", hr: "aparat", sk: "hasiaci", ga: "mucheoir", cy: "diffoddydd", ha: "majinyar wuta", am: "esat mekfel", fa: "khamush-konande", bn: "agninirbak", zu: "isicima-mlilo" },\n',
         ['incendio', 'tenda']
       ],
       [
         'fonte',
-        '    fonte: { tone: "caution", category: "Objecto", mundane: "No indoor: driver / fonte de alimentação do LED.", gloss: "Lat. fons — nascente; aqui é o PSU escondido; perigo do cluster; Faça o melhor!", href: "/posts/post-inspecao-palavra-fonte.html", en: "power supply / driver", es: "fuente de alimentacion", fr: "alimentation", it: "alimentatore", de: "Netzteil", el: "trofodotiko", la: "fons", yo: "agbara", sw: "chanzo cha umeme", gez: "fons", nl: "voeding", pl: "zasilacz", ru: "blok pitaniya", uk: "blok zhyvlennya", zh: "dianyuan", ja: "dengen", ko: "adeopteo", ar: "masdar", he: "snak", hi: "power supply", tr: "guc kaynagi", sv: "nataggregat", da: "stromforsyning", no: "stromforsyning", fi: "virtalahde", cs: "zdroj", ro: "sursa", hu: "tapegyseg", ca: "font", gl: "fonte", eu: "iturri", gn: "ñepyrũ", qu: "pukyu", eo: "elektroprovizo", vi: "nguon", id: "adaptor", th: "power supply", hr: "napajanje", sk: "zdroj", ga: "solathar", cy: "cyflenwad", ha: "wutar lantarki", am: "hayl", fa: "manba", bn: "power supply", zu: "umthombo" },\n',
+        '    fonte: { tone: "caution", category: "Objecto", mundane: "No indoor: driver / fonte de alimentação do LED.", gloss: "Lat. fons — nascente; aqui é o PSU escondido; perigo do cluster; Valeu !!!", href: "/posts/post-inspecao-palavra-fonte.html", en: "power supply / driver", es: "fuente de alimentacion", fr: "alimentation", it: "alimentatore", de: "Netzteil", el: "trofodotiko", la: "fons", yo: "agbara", sw: "chanzo cha umeme", gez: "fons", nl: "voeding", pl: "zasilacz", ru: "blok pitaniya", uk: "blok zhyvlennya", zh: "dianyuan", ja: "dengen", ko: "adeopteo", ar: "masdar", he: "snak", hi: "power supply", tr: "guc kaynagi", sv: "nataggregat", da: "stromforsyning", no: "stromforsyning", fi: "virtalahde", cs: "zdroj", ro: "sursa", hu: "tapegyseg", ca: "font", gl: "fonte", eu: "iturri", gn: "ñepyrũ", qu: "pukyu", eo: "elektroprovizo", vi: "nguon", id: "adaptor", th: "power supply", hr: "napajanje", sk: "zdroj", ga: "solathar", cy: "cyflenwad", ha: "wutar lantarki", am: "hayl", fa: "manba", bn: "power supply", zu: "umthombo" },\n',
         ['tenda', 'lampada']
       ],
       [
         'extensao',
-        '    extensao: { tone: "caution", category: "Objecto", mundane: "Régua / benjamim / cabo de extensão.", gloss: "Lat. extendere — estica a tomada; buracos ≠ ampere; Faça o melhor!", href: "/posts/post-inspecao-palavra-extensao.html", en: "extension cord / power strip", es: "alargador / regleta", fr: "rallonge", it: "ciabatta", de: "Verlangerung", el: "proektasi", la: "extensio", yo: "okun ina", sw: "kebo", gez: "extensio", nl: "verlengsnoer", pl: "przedluzacz", ru: "udlinitel", uk: "podovzhuvach", zh: "chatou", ja: "enchou koodo", ko: "multitab", ar: "wislat", he: "shalam", hi: "extension", tr: "uzatma", sv: "skarvsladd", da: "forlaenger", no: "skjoteledning", fi: "jatkojohto", cs: "prodluzovacka", ro: "prelungitor", hu: "hosszabbitó", ca: "allargador", gl: "extension", eu: "luzagarri", gn: "mokãnẽ", qu: "wasichay", eo: "etendilo", vi: "o cam", id: "stop kontak", th: "raka yai", hr: "produzni", sk: "predlzovacka", ga: "sreang", cy: "estyniad", ha: "waya", am: "meqenay", fa: "siadegi", bn: "extension", zu: "intambo" },\n',
+        '    extensao: { tone: "caution", category: "Objecto", mundane: "Régua / benjamim / cabo de extensão.", gloss: "Lat. extendere — estica a tomada; buracos ≠ ampere; Valeu !!!", href: "/posts/post-inspecao-palavra-extensao.html", en: "extension cord / power strip", es: "alargador / regleta", fr: "rallonge", it: "ciabatta", de: "Verlangerung", el: "proektasi", la: "extensio", yo: "okun ina", sw: "kebo", gez: "extensio", nl: "verlengsnoer", pl: "przedluzacz", ru: "udlinitel", uk: "podovzhuvach", zh: "chatou", ja: "enchou koodo", ko: "multitab", ar: "wislat", he: "shalam", hi: "extension", tr: "uzatma", sv: "skarvsladd", da: "forlaenger", no: "skjoteledning", fi: "jatkojohto", cs: "prodluzovacka", ro: "prelungitor", hu: "hosszabbitó", ca: "allargador", gl: "extension", eu: "luzagarri", gn: "mokãnẽ", qu: "wasichay", eo: "etendilo", vi: "o cam", id: "stop kontak", th: "raka yai", hr: "produzni", sk: "predlzovacka", ga: "sreang", cy: "estyniad", ha: "waya", am: "meqenay", fa: "siadegi", bn: "extension", zu: "intambo" },\n',
         ['fonte', 'interruptor']
       ],
       [
         'exaustor',
-        '    exaustor: { tone: "caution", category: "Objecto", mundane: "Ventilador inline que tira o ar da tenda.", gloss: "Lat. exhaurīre — esgotar o ar; motor continua perigo; circulação ≠ extração; Faça o melhor!", href: "/posts/post-inspecao-palavra-exaustor.html", en: "exhaust / inline fan", es: "extractor", fr: "extracteur", it: "aspiratore", de: "Abluftventilator", el: "exaeristiras", la: "exhaustor", yo: "afefe", sw: "feni", gez: "nǝfas", nl: "afzuiger", pl: "wyciag", ru: "vytyazhka", uk: "vytiazhka", zh: "paifeng", ja: "haiki", ko: "baegi", ar: "shafat", he: "sholef", hi: "exhaust", tr: "egzoz", sv: "fromluftsflakt", da: "udsugning", no: "avtrekksvifte", fi: "poistoilma", cs: "odsavac", ro: "extractor", hu: "elszivo", ca: "extractor", gl: "exaustor", eu: "ateragailu", gn: "yvytu mondoruha", qu: "wayra hurquq", eo: "elcxerpilo", vi: "quat hut", id: "exhaust", th: "phat lom", hr: "odsis", sk: "odsavac", ga: "sceithire", cy: "gwacau", ha: "fanka", am: "nefasma", fa: "havakesh", bn: "exhaust", zu: "i-fan" },\n',
+        '    exaustor: { tone: "caution", category: "Objecto", mundane: "Ventilador inline que tira o ar da tenda.", gloss: "Lat. exhaurīre — esgotar o ar; motor continua perigo; circulação ≠ extração; Valeu !!!", href: "/posts/post-inspecao-palavra-exaustor.html", en: "exhaust / inline fan", es: "extractor", fr: "extracteur", it: "aspiratore", de: "Abluftventilator", el: "exaeristiras", la: "exhaustor", yo: "afefe", sw: "feni", gez: "nǝfas", nl: "afzuiger", pl: "wyciag", ru: "vytyazhka", uk: "vytiazhka", zh: "paifeng", ja: "haiki", ko: "baegi", ar: "shafat", he: "sholef", hi: "exhaust", tr: "egzoz", sv: "fromluftsflakt", da: "udsugning", no: "avtrekksvifte", fi: "poistoilma", cs: "odsavac", ro: "extractor", hu: "elszivo", ca: "extractor", gl: "exaustor", eu: "ateragailu", gn: "yvytu mondoruha", qu: "wayra hurquq", eo: "elcxerpilo", vi: "quat hut", id: "exhaust", th: "phat lom", hr: "odsis", sk: "odsavac", ga: "sceithire", cy: "gwacau", ha: "fanka", am: "nefasma", fa: "havakesh", bn: "exhaust", zu: "i-fan" },\n',
         ['tenda', 'fonte']
       ]
     ];

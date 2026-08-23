@@ -125,7 +125,7 @@ const LANGS =
   'fr: "étymologie", it: "etimologia", de: "Etymologie", el: "ετυμολογία", la: "etymologia", yo: "itumo oro", sw: "asili ya neno", gez: "etymology", nl: "etymologie", pl: "etymologia", ru: "этимология", uk: "етимологія", zh: "词源学", ja: "語源学", ko: "어원학", ar: "علم أصول الكلمات", he: "אטימולוגיה", hi: "व्युत्पत्ति", tr: "etimoloji", sv: "etymologi", da: "etymologi", no: "etymologi", fi: "etymologia", cs: "etymologie", ro: "etimologie", hu: "etimologia", ca: "etimologia", gl: "etimoloxia", eu: "etimologia", gn: "ñe\'e rape", qu: "simi paqarimuynin", eo: "etimologio", vi: "tu nguyen hoc", id: "etimologi", th: "นิรุกติศาสตร์", hr: "etimologija", sk: "etymologia", ga: "feiniceolaiocht", cy: "etymoleg", ha: "ilimin asalin kalma", am: "የቃላት ምንጭ", fa: "ریشه‌شناسی", bn: "ব্যুৎপত্তি", zu: "umselo wegama"';
 
 const GLOSS_MAIN =
-  '    etimologia: { tone: "craft", gloss: "Étymon + lógos — ofício de perguntar de onde veio; étimo ≠ etimologia popular (cara+alho); método da série Palavras; Faça o melhor!", href: "/posts/post-inspecao-palavra-etimologia.html", en: "etymology", es: "etimología", ' +
+  '    etimologia: { tone: "craft", gloss: "Étymon + lógos — ofício de perguntar de onde veio; étimo ≠ etimologia popular (cara+alho); método da série Palavras; Valeu !!!", href: "/posts/post-inspecao-palavra-etimologia.html", en: "etymology", es: "etimología", ' +
   LANGS +
   ' },\n';
 
@@ -153,9 +153,9 @@ function upsertSug(sug, post) {
     tipo: 'palavra',
     priority: 2,
     status: 'feita',
-    why: 'Palavras: etimologia (étymon + lógos) — método da série; étimo ≠ popular (cara+alho); Faça o melhor!',
-    whyEn: 'Words: etymology (étymon + lógos) — method of the series; etymon ≠ folk (cara+alho); Do your best!',
-    whyEs: 'Palabras: etimología (étymon + lógos) — método de la serie; étimo ≠ popular (cara+alho); ¡Haz lo mejor!',
+    why: 'Palavras: etimologia (étymon + lógos) — método da série; étimo ≠ popular (cara+alho); Valeu !!!',
+    whyEn: 'Words: etymology (étymon + lógos) — method of the series; etymon ≠ folk (cara+alho); Valeu !!!',
+    whyEs: 'Palabras: etimología (étymon + lógos) — método de la serie; étimo ≠ popular (cara+alho); ¡Valeu !!!',
     suggestedSlug: post.slug,
     doneHref: href,
     seriesHint: 'palavras-origem',
@@ -165,7 +165,7 @@ function upsertSug(sug, post) {
       '/posts/post-inspecao-palavra-aglutinacao.html',
       '/posts/post-inspecao-palavra-polimorfismo.html',
       '/posts/post-inspecao-palavra-lingua-portuguesa.html',
-      '/posts/post-inspecao-expressao-faca-o-melhor.html'
+      '/posts/post-inspecao-palavra-valeu.html'
     ],
     notes: 'Cap. ' + post.seriesOrder + ' — ficha do método da série; cita cluster cara+alho.'
   };

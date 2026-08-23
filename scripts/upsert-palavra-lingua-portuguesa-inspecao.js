@@ -72,15 +72,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Língua portuguesa — originalidade, alterações no tempo e Faça o melhor!',
-      titleEn: 'Portuguese language — originality, changes over time and Do your best!',
-      titleEs: 'Lengua portuguesa — originalidad, cambios en el tiempo y ¡Haz lo mejor!',
+      title: 'Língua portuguesa — originalidade, alterações no tempo e Valeu !!!',
+      titleEn: 'Portuguese language — originality, changes over time and Valeu !!!',
+      titleEs: 'Lengua portuguesa — originalidad, cambios en el tiempo y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 1,
       status: 'feita',
-      why: 'Língua do projecto: originalidade; alterações ao longo do tempo; para que serve; Faça o melhor nesta língua.',
-      whyEn: 'Project language: originality; changes over time; purpose; Do your best in this language.',
-      whyEs: 'Lengua del proyecto: originalidad; cambios en el tiempo; para qué sirve; Haz lo mejor en esta lengua.',
+      why: 'Língua do projecto: originalidade; alterações ao longo do tempo; para que serve; Valeu !!! nesta língua.',
+      whyEn: 'Project language: originality; changes over time; purpose; Valeu !!! in this language.',
+      whyEs: 'Lengua del proyecto: originalidad; cambios en el tiempo; para qué sirve; Valeu !!! en esta lengua.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -88,7 +88,7 @@ async function main() {
         post.sourceUrl,
         'https://pt.wikipedia.org/wiki/Portugu%C3%AAs_brasileiro',
         '/posts/post-inspecao-figura-duvivier.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html',
+        '/posts/post-inspecao-palavra-valeu.html',
         '/guia/palavras.html'
       ],
       notes: 'Cap. 32 — meio do laboratório; eixo temporal (latim→BR→digital).'
@@ -108,11 +108,11 @@ async function main() {
       id: 'lingua-portuguesa',
       word: 'língua portuguesa',
       simple:
-        'Meio do Inspetor BudGanja: originalidade; alterações no tempo (latim → BR → digital); nomear, inspecionar, cuidar; Faça o melhor nesta língua.',
+        'Meio do Inspetor BudGanja: originalidade; alterações no tempo (latim → BR → digital); nomear, inspecionar, cuidar; Valeu !!! nesta língua.',
       simpleEn:
-        'Medium of Inspetor BudGanja: originality; changes over time (Latin → BR → digital); name, inspect, care; Do your best in this language.',
+        'Medium of Inspetor BudGanja: originality; changes over time (Latin → BR → digital); name, inspect, care; Valeu !!! in this language.',
       simpleEs:
-        'Medio de Inspetor BudGanja: originalidad; cambios en el tiempo (latín → BR → digital); nombrar, inspeccionar, cuidar; Haz lo mejor en esta lengua.',
+        'Medio de Inspetor BudGanja: originalidad; cambios en el tiempo (latín → BR → digital); nombrar, inspeccionar, cuidar; Valeu !!! en esta lengua.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -143,7 +143,7 @@ async function main() {
       const re = /(esquerdo: \{[\s\S]*?zu: "kwesokunxele" },\r?\n)/;
       const reGenial = /(genial: \{[\s\S]*?zu: "uhlakaniphile" },\r?\n)/;
       const entry =
-        '    português: { gloss: "Língua do laboratório — originalidade × para que serve; Faça o melhor nesta língua.", href: "/posts/post-inspecao-palavra-lingua-portuguesa.html", en: "Portuguese", es: "portugués", fr: "portugais", it: "portoghese", de: "Portugiesisch", el: "πορτογαλικά", la: "lingua Lusitana", yo: "èdè Portuguese", sw: "Kireno", gez: "portugaliñña", nl: "Portugees", pl: "portugalski", ru: "португальский", uk: "португальська", zh: "葡萄牙语", ja: "ポルトガル語", ko: "포르투갈어", ar: "البرتغالية", he: "פורטוגזית", hi: "पुर्तगाली", tr: "Portekizce", sv: "portugisiska", da: "portugisisk", no: "portugisisk", fi: "portugali", cs: "portugalština", ro: "portugheză", hu: "portugál", ca: "portuguès", gl: "portugués", eu: "portuges", gn: "poytugañe\'ẽ", qu: "purtuges simi", eo: "portugala", vi: "tiếng Bồ Đào Nha", id: "Portugis", th: "ภาษาโปรตุเกส", hr: "portugalski", sk: "portugalčina", ga: "Portaingéilis", cy: "Portiwgaleg", ha: "Harshen Portuguese", am: "ፖርቱጋልኛ", fa: "پرتغالی", bn: "পর্তুগিজ", zu: "isiPutukezi" },\n';
+        '    português: { gloss: "Língua do laboratório — originalidade × para que serve; Valeu !!! nesta língua.", href: "/posts/post-inspecao-palavra-lingua-portuguesa.html", en: "Portuguese", es: "portugués", fr: "portugais", it: "portoghese", de: "Portugiesisch", el: "πορτογαλικά", la: "lingua Lusitana", yo: "èdè Portuguese", sw: "Kireno", gez: "portugaliñña", nl: "Portugees", pl: "portugalski", ru: "португальский", uk: "португальська", zh: "葡萄牙语", ja: "ポルトガル語", ko: "포르투갈어", ar: "البرتغالية", he: "פורטוגזית", hi: "पुर्तगाली", tr: "Portekizce", sv: "portugisiska", da: "portugisisk", no: "portugisisk", fi: "portugali", cs: "portugalština", ro: "portugheză", hu: "portugál", ca: "portuguès", gl: "portugués", eu: "portuges", gn: "poytugañe\'ẽ", qu: "purtuges simi", eo: "portugala", vi: "tiếng Bồ Đào Nha", id: "Portugis", th: "ภาษาโปรตุเกส", hr: "portugalski", sk: "portugalčina", ga: "Portaingéilis", cy: "Portiwgaleg", ha: "Harshen Portuguese", am: "ፖርቱጋልኛ", fa: "پرتغالی", bn: "পর্তুগিজ", zu: "isiPutukezi" },\n';
       if (re.test(gloss)) {
         gloss = gloss.replace(re, '$1' + entry);
         fs.writeFileSync(glossPath, gloss);

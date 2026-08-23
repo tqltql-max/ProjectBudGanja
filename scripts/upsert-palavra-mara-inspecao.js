@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: Mara — nome que chegou sem lista; cola em maravilha; hebr. mārāh é camada, não veredicto; poema dos barquinhos de papel; Faça o melhor!',
-      whyEn: 'Words: Mara — name that arrived unplanned; glued to maravilha; Heb. mārāh is a layer, not a verdict; paper-boat poem; Do your best!',
-      whyEs: 'Palabras: Mara — nombre que llegó sin lista; pega en maravilha; el hebr. mārāh es capa, no veredicto; poema de barquitos; ¡Haz lo mejor!',
+      why: 'Palavras: Mara — nome que chegou sem lista; cola em maravilha; hebr. mārāh é camada, não veredicto; poema dos barquinhos de papel; Valeu !!!',
+      whyEn: 'Words: Mara — name that arrived unplanned; glued to maravilha; Heb. mārāh is a layer, not a verdict; paper-boat poem; Valeu !!!',
+      whyEs: 'Palabras: Mara — nombre que llegó sin lista; pega en maravilha; el hebr. mārāh es capa, no veredicto; poema de barquitos; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -96,7 +96,7 @@ async function main() {
         '/posts/post-inspecao-palavra-maravilhoso.html',
         '/posts/post-inspecao-palavra-mae.html',
         '/vida/#poema=barquinhos-de-papel',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — nome × maravilha × barquinho; ≠ Tamara / Maria.'
     };
@@ -115,11 +115,11 @@ async function main() {
       id: 'mara',
       word: 'Mara',
       simple:
-        'Nome próprio BR que chegou ao mapa; cola no som de maravilha; hebr. mārāh (amarga) é camada, não veredicto; ≠ Tamara / Maria; barquinhos de papel; Faça o melhor!',
+        'Nome próprio BR que chegou ao mapa; cola no som de maravilha; hebr. mārāh (amarga) é camada, não veredicto; ≠ Tamara / Maria; barquinhos de papel; Valeu !!!',
       simpleEn:
-        'BR given name that arrived on the map; glued to the sound of maravilha (wonder); Heb. mārāh (bitter) is a layer, not a verdict; ≠ Tamara / Maria; paper boats; Do your best!',
+        'BR given name that arrived on the map; glued to the sound of maravilha (wonder); Heb. mārāh (bitter) is a layer, not a verdict; ≠ Tamara / Maria; paper boats; Valeu !!!',
       simpleEs:
-        'Nombre propio BR que llegó al mapa; pega en el sonido de maravilha; hebr. mārāh (amarga) es capa, no veredicto; ≠ Tamara / Maria; barquitos de papel; ¡Haz lo mejor!',
+        'Nombre propio BR que llegó al mapa; pega en el sonido de maravilha; hebr. mārāh (amarga) es capa, no veredicto; ≠ Tamara / Maria; barquitos de papel; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href,
@@ -153,7 +153,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    mara: { gloss: "Nome BR que chegou; cola em maravilha; hebr. mārāh é camada, não veredicto; ≠ Tamara/Maria; barquinhos de papel; Faça o melhor!", href: "/posts/post-inspecao-palavra-mara.html", en: "Mara (given name)", es: "Mara (nombre)", fr: "Mara", it: "Mara", de: "Mara", yo: "Mara", sw: "Mara", gez: "Mara", el: "Μάρα", la: "Mara", nl: "Mara", pl: "Mara", ru: "Мара", uk: "Мара", zh: "玛拉", ja: "マラ", ko: "마라", ar: "مارا", he: "מרה", hi: "मारा", tr: "Mara", sv: "Mara", da: "Mara", no: "Mara", fi: "Mara", cs: "Mara", ro: "Mara", hu: "Mara", ca: "Mara", gl: "Mara", eu: "Mara", gn: "Mara", qu: "Mara", eo: "Mara", vi: "Mara", id: "Mara", th: "มารา", hr: "Mara", sk: "Mara", ga: "Mara", cy: "Mara", ha: "Mara", am: "ማራ", fa: "مارا", bn: "মারা", zu: "uMara" },';
+      '    mara: { gloss: "Nome BR que chegou; cola em maravilha; hebr. mārāh é camada, não veredicto; ≠ Tamara/Maria; barquinhos de papel; Valeu !!!", href: "/posts/post-inspecao-palavra-mara.html", en: "Mara (given name)", es: "Mara (nombre)", fr: "Mara", it: "Mara", de: "Mara", yo: "Mara", sw: "Mara", gez: "Mara", el: "Μάρα", la: "Mara", nl: "Mara", pl: "Mara", ru: "Мара", uk: "Мара", zh: "玛拉", ja: "マラ", ko: "마라", ar: "مارا", he: "מרה", hi: "मारा", tr: "Mara", sv: "Mara", da: "Mara", no: "Mara", fi: "Mara", cs: "Mara", ro: "Mara", hu: "Mara", ca: "Mara", gl: "Mara", eu: "Mara", gn: "Mara", qu: "Mara", eo: "Mara", vi: "Mara", id: "Mara", th: "มารา", hr: "Mara", sk: "Mara", ga: "Mara", cy: "Mara", ha: "Mara", am: "ማራ", fa: "مارا", bn: "মারা", zu: "uMara" },';
     if (/mara:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    mara:\s*\{[\s\S]*?\},/, entryLine);
       console.log('Glossário: mara enriquecida');
@@ -176,7 +176,7 @@ async function main() {
       const maeBlock =
         /("slug": "post-inspecao-palavra-mae",\s*"description": "[^"]*"\s*\},)/;
       const insert =
-        '$1\n            {\n              "label": "Inspeção: Mara — o nome que chegou, a maravilha e os barquinhos de papel",\n              "tileLabel": "Inspeção: Mara — o nome que che…",\n              "href": "/posts/post-inspecao-palavra-mara.html",\n              "icon": "🔍",\n              "slug": "post-inspecao-palavra-mara",\n              "description": "Palavras: «Mara» — nome que chegou sem lista; cola em maravilha; hebr. mārāh é camada, não veredicto; poema dos barquinhos de papel; Faça o melhor!"\n            },';
+        '$1\n            {\n              "label": "Inspeção: Mara — o nome que chegou, a maravilha e os barquinhos de papel",\n              "tileLabel": "Inspeção: Mara — o nome que che…",\n              "href": "/posts/post-inspecao-palavra-mara.html",\n              "icon": "🔍",\n              "slug": "post-inspecao-palavra-mara",\n              "description": "Palavras: «Mara» — nome que chegou sem lista; cola em maravilha; hebr. mārāh é camada, não veredicto; poema dos barquinhos de papel; Valeu !!!"\n            },';
       if (maeBlock.test(nav)) {
         nav = nav.replace(maeBlock, insert);
         fs.writeFileSync(navPath, nav);

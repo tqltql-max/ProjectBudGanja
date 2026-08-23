@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: patrão — chefe/empregador (patronus); respeito/pattern/gesto; Faça o melhor!',
-      whyEn: 'Words: patrão — boss/employer (patronus); respeito/pattern/gesto; Do your best!',
-      whyEs: 'Palabras: patrão — jefe/empleador (patronus); respeito/pattern/gesto; ¡Haz lo mejor!',
+      why: 'Palavras: patrão — chefe/empregador (patronus); respeito/pattern/gesto; Valeu !!!',
+      whyEn: 'Words: patrão — boss/employer (patronus); respeito/pattern/gesto; Valeu !!!',
+      whyEs: 'Palabras: patrão — jefe/empleador (patronus); respeito/pattern/gesto; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -94,7 +94,7 @@ async function main() {
         post.sourceUrl,
         '/posts/post-inspecao-palavra-pattern.html',
         '/posts/post-inspecao-palavra-respeito.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — mesma raiz que pattern/padrão.'
     };
@@ -113,11 +113,11 @@ async function main() {
       id: 'patrao',
       word: 'patrão',
       simple:
-        'Chefe / empregador (lat. patronus); mesma raiz de padrão e pattern; elos respeito/gesto; Faça o melhor com ou sem olhar.',
+        'Chefe / empregador (lat. patronus); mesma raiz de padrão e pattern; elos respeito/gesto; Valeu !!! com ou sem olhar.',
       simpleEn:
-        'Boss / employer (Lat. patronus); same root as padrão and pattern; links respeito/gesto; Do your best with or without watching.',
+        'Boss / employer (Lat. patronus); same root as padrão and pattern; links respeito/gesto; Valeu !!! with or without watching.',
       simpleEs:
-        'Jefe / empleador (lat. patronus); misma raíz que padrão y pattern; vínculos respeito/gesto; Haz lo mejor con o sin mirada.',
+        'Jefe / empleador (lat. patronus); misma raíz que padrão y pattern; vínculos respeito/gesto; Valeu !!! con o sin mirada.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -139,7 +139,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    patrao: { gloss: "Chefe / empregador (lat. patronus); mesma raiz de pattern/padrão; elos respeito/gesto; Faça o melhor!", href: "/posts/post-inspecao-palavra-patrao.html", en: "boss / employer", es: "patron / jefe", fr: "patron", it: "padrone", de: "Chef / Arbeitgeber", el: "afentiko", la: "patronus", yo: "oga", sw: "bosi", gez: "əgzi", nl: "baas", pl: "szef", ru: "хозяин", uk: "хазяїн", zh: "老板", ja: "上司", ko: "사장", ar: "رئيس", he: "בוס", hi: "मालिक", tr: "patron", sv: "chef", da: "chef", no: "sjef", fi: "pomo", cs: "sef", ro: "patron", hu: "fonok", ca: "patro", gl: "patron", eu: "nagusi", gn: "jára", qu: "apu", eo: "estro", vi: "ong chu", id: "bos", th: "เจ้านาย", hr: "sef", sk: "sef", ga: "patrún", cy: "patrwn", ha: "shugaba", am: "አለቃ", fa: "رئیس", bn: "মালিক", zu: "umphathi" },';
+      '    patrao: { gloss: "Chefe / empregador (lat. patronus); mesma raiz de pattern/padrão; elos respeito/gesto; Valeu !!!", href: "/posts/post-inspecao-palavra-patrao.html", en: "boss / employer", es: "patron / jefe", fr: "patron", it: "padrone", de: "Chef / Arbeitgeber", el: "afentiko", la: "patronus", yo: "oga", sw: "bosi", gez: "əgzi", nl: "baas", pl: "szef", ru: "хозяин", uk: "хазяїн", zh: "老板", ja: "上司", ko: "사장", ar: "رئيس", he: "בוס", hi: "मालिक", tr: "patron", sv: "chef", da: "chef", no: "sjef", fi: "pomo", cs: "sef", ro: "patron", hu: "fonok", ca: "patro", gl: "patron", eu: "nagusi", gn: "jára", qu: "apu", eo: "estro", vi: "ong chu", id: "bos", th: "เจ้านาย", hr: "sef", sk: "sef", ga: "patrún", cy: "patrwn", ha: "shugaba", am: "አለቃ", fa: "رئیس", bn: "মালিক", zu: "umphathi" },';
     if (/patrao:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    patrao:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

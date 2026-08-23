@@ -62,7 +62,7 @@ async function main() {
   fs.writeFileSync(I18N_FILE, JSON.stringify(i18n, null, 2) + '\n', 'utf8');
 
   const href = '/posts/post-' + post.slug + '.html';
-  const mantraHref = '/posts/post-inspecao-expressao-faca-o-melhor.html';
+  const mantraHref = '/posts/post-inspecao-palavra-valeu.html';
 
   if (fs.existsSync(SUG_FILE)) {
     const sug = JSON.parse(fs.readFileSync(SUG_FILE, 'utf8'));
@@ -71,15 +71,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Ayrton Senna — homenagem completa e Faça o melhor!',
-      titleEn: 'Ayrton Senna — full homage and Do your best!',
-      titleEs: 'Ayrton Senna — homenaje completo y ¡Haz lo mejor!',
+      title: 'Ayrton Senna — homenagem completa e Valeu !!!',
+      titleEn: 'Ayrton Senna — full homage and Valeu !!!',
+      titleEs: 'Ayrton Senna — homenaje completo y ¡Valeu !!!',
       tipo: 'pessoas',
       priority: 1,
       status: 'feita',
-      why: 'Pessoas × Expressões: homenagem a Senna com elo no mantra Faça o melhor!; ofício, Brasil, Instituto.',
-      whyEn: 'People × Expressions: Senna homage linked to Do your best!; craft, Brazil, Instituto.',
-      whyEs: 'Personas × Expresiones: homenaje a Senna con vínculo en ¡Haz lo mejor!; oficio, Brasil, Instituto.',
+      why: 'Pessoas × Expressões: homenagem a Senna com elo no mantra Valeu !!!; ofício, Brasil, Instituto.',
+      whyEn: 'People × Expressions: Senna homage linked to Valeu !!!; craft, Brazil, Instituto.',
+      whyEs: 'Personas × Expresiones: homenaje a Senna con vínculo en ¡Valeu !!!; oficio, Brasil, Instituto.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'pessoas-historia',
@@ -87,7 +87,7 @@ async function main() {
         post.sourceUrl,
         mantraHref,
         'https://www.institutoayrtonsenna.org.br/',
-        '/vida/#poema=faca-o-melhor'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Homenagem completa; não romantizar a morte em Ímola.'
     };
@@ -106,11 +106,11 @@ async function main() {
       id: 'ayrton-senna',
       word: 'Ayrton Senna',
       simple:
-        'Piloto brasileiro tricampeão de F1 (1960–1994); no site, homenagem em Pessoas com elo ao mantra Faça o melhor! e ao Instituto.',
+        'Piloto brasileiro tricampeão de F1 (1960–1994); no site, homenagem em Pessoas com elo ao mantra Valeu !!! e ao Instituto.',
       simpleEn:
-        'Brazilian three-time F1 champion (1960–1994); on the site, a People homage linked to Do your best! and the Instituto.',
+        'Brazilian three-time F1 champion (1960–1994); on the site, a People homage linked to Valeu !!! and the Instituto.',
       simpleEs:
-        'Piloto brasileño tricampeón de F1 (1960–1994); en el sitio, homenaje en Personas con vínculo a ¡Haz lo mejor! y al Instituto.',
+        'Piloto brasileño tricampeón de F1 (1960–1994); en el sitio, homenaje en Personas con vínculo a ¡Valeu !!! y al Instituto.',
       group: 'lexico',
       fromTitle: false,
       href

@@ -76,9 +76,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: «genial» — elogio de engenho; com método sim; culto vazio = ressalva; elo Faça o melhor / criatividade.',
-      whyEn: 'Words: “genial” — praise of ingenuity; method yes; empty cult = caveat; link Do your best / creativity.',
-      whyEs: 'Palabras: «genial» — elogio de ingenio; método sí; culto vacío = salvedad; vínculo Haz lo mejor / creatividad.',
+      why: 'Palavras: «genial» — elogio de engenho; com método sim; culto vazio = ressalva; elo Valeu !!! / criatividade.',
+      whyEn: 'Words: “genial” — praise of ingenuity; method yes; empty cult = caveat; link Valeu !!! / creativity.',
+      whyEs: 'Palabras: «genial» — elogio de ingenio; método sí; culto vacío = salvedad; vínculo Valeu !!! / creatividad.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -89,7 +89,7 @@ async function main() {
         '/posts/post-inspecao-palavra-maravilhoso.html',
         '/posts/post-inspecao-palavra-fantastico.html',
         '/posts/post-inspecao-palavra-idolo.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html',
+        '/posts/post-inspecao-palavra-valeu.html',
         '/posts/post-inspecao-figura-ayrton-senna.html'
       ],
       notes: 'Cap. 30 — falso amigo EN genial (amável); escala legal → genial → maravilhoso / fantástico; contraste ídolo.'

@@ -62,7 +62,7 @@ async function syncSql(post) {
 
 function patchGlossary(gloss) {
   const main =
-    '    mequetrefe: { tone: "warm", category: "Léxico", mundane: "Intrometido / patife / joão-ninguém; também coisa ordinária.", gloss: "Vocábulo caduco no brechó; âncora Porta Palavra #5 (Gregorio); étimo em disputa; elos língua/Duvivier; Faça o melhor!", href: "/posts/post-inspecao-palavra-mequetrefe.html", en: "busybody / nobody / rascal", es: "mequetrefe", fr: "freluquet / vaurien", it: "mezzocalzone", de: "Wichtigtuer / Niemand", el: "ασήμαντος", la: "nugator", yo: "eniyan lasan", sw: "mtu wa bure", gez: "mequetrefe", nl: "bemoeial / niemendal", pl: "nicpoń", ru: "ничтожество", uk: "нікчема", zh: "无名小卒", ja: "つまらぬ人", ko: "하찮은 사람", ar: "تافه", he: "אפס", hi: "तुच्छ व्यक्ति", tr: "zıpır / hiçe sayılan", sv: "betydelselös", da: "ubetydelig", no: "ubetydelig", fi: "mitätön", cs: "nula", ro: "fleac de om", hu: "senkiházi", ca: "mequetrefe", gl: "mequetrefe", eu: "jende kaskarra", gn: "ava ndaha\'éi", qu: "mana valeq", eo: "sensignifulo", vi: "kẻ vô danh", id: "orang tak berarti", th: "คนไม่มีค่า", hr: "ništarija", sk: "nula", ga: "duine suarach", cy: "dim byd", ha: "marar amfani", am: "ከንቱ", fa: "آدم بی‌مقدار", bn: "তুচ্ছ লোক", zu: "umuntu ongeyilutho" },\n';
+    '    mequetrefe: { tone: "warm", category: "Léxico", mundane: "Intrometido / patife / joão-ninguém; também coisa ordinária.", gloss: "Vocábulo caduco no brechó; âncora Porta Palavra #5 (Gregorio); étimo em disputa; elos língua/Duvivier; Valeu !!!", href: "/posts/post-inspecao-palavra-mequetrefe.html", en: "busybody / nobody / rascal", es: "mequetrefe", fr: "freluquet / vaurien", it: "mezzocalzone", de: "Wichtigtuer / Niemand", el: "ασήμαντος", la: "nugator", yo: "eniyan lasan", sw: "mtu wa bure", gez: "mequetrefe", nl: "bemoeial / niemendal", pl: "nicpoń", ru: "ничтожество", uk: "нікчема", zh: "无名小卒", ja: "つまらぬ人", ko: "하찮은 사람", ar: "تافه", he: "אפס", hi: "तुच्छ व्यक्ति", tr: "zıpır / hiçe sayılan", sv: "betydelselös", da: "ubetydelig", no: "ubetydelig", fi: "mitätön", cs: "nula", ro: "fleac de om", hu: "senkiházi", ca: "mequetrefe", gl: "mequetrefe", eu: "jende kaskarra", gn: "ava ndaha\'éi", qu: "mana valeq", eo: "sensignifulo", vi: "kẻ vô danh", id: "orang tak berarti", th: "คนไม่มีค่า", hr: "ništarija", sk: "nula", ga: "duine suarach", cy: "dim byd", ha: "marar amfani", am: "ከንቱ", fa: "آدم بی‌مقدار", bn: "তুচ্ছ লোক", zu: "umuntu ongeyilutho" },\n';
   const aliases =
     '    meqyetrefe: { gloss: "Lapso escrito de mequetrefe (*y* por *u*) — ver Porta Palavra #5.", href: "/posts/post-inspecao-palavra-mequetrefe.html", en: "slip of mequetrefe", es: "lapsus de mequetrefe" },\n' +
     '    mequetrefes: { gloss: "Plural de mequetrefe — ver Porta Palavra #5.", href: "/posts/post-inspecao-palavra-mequetrefe.html", en: "busybodies / nobodies", es: "mequetrefes" },\n' +
@@ -136,7 +136,7 @@ async function main() {
         'https://www.dicio.com.br/mequetrefe/',
         '/posts/post-inspecao-figura-duvivier.html',
         '/posts/post-inspecao-palavra-lingua-portuguesa.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +

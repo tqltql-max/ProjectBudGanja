@@ -102,7 +102,7 @@ async function main() {
         '/posts/post-inspecao-palavra-legal.html',
         '/posts/post-inspecao-palavra-fantastico.html',
         '/posts/post-inspecao-palavra-genial.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -124,11 +124,11 @@ async function main() {
       id: 'total',
       word: 'total',
       simple:
-        'Lat. tōtus — inteiro/soma; gíria BR «total!» (acordo/louvor); escala com legal e fantástico; Faça o melhor!',
+        'Lat. tōtus — inteiro/soma; gíria BR «total!» (acordo/louvor); escala com legal e fantástico; Valeu !!!',
       simpleEn:
-        'Lat. tōtus — whole/sum; BR slang “total!” (agreement/praise); scale with legal and fantástico; Do your best!',
+        'Lat. tōtus — whole/sum; BR slang “total!” (agreement/praise); scale with legal and fantástico; Valeu !!!',
       simpleEs:
-        'Lat. tōtus — entero/suma; jerga BR «¡total!» (acuerdo/elogio); escala con legal y fantástico; ¡Haz lo mejor!',
+        'Lat. tōtus — entero/suma; jerga BR «¡total!» (acuerdo/elogio); escala con legal y fantástico; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -156,7 +156,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const rich =
-      '    total: { gloss: "Lat. tōtus — inteiro/soma; gíria BR «total!» (acordo/louvor); escala legal/fantástico; Faça o melhor!", href: "/posts/post-inspecao-palavra-total.html", en: "total / totally (BR agreement)", es: "total", fr: "total", it: "totale", de: "total", el: "συνολικός", la: "totus", yo: "gbogbo", sw: "jumla", gez: "kʷəllu", nl: "totaal", pl: "całkowity", ru: "полный / итого", uk: "повний / підсумок", zh: "全部 / 总计", ja: "合計 / 完全", ko: "전체 / 합계", ar: "إجمالي", he: "סה״כ", hi: "कुल", tr: "toplam", sv: "total", da: "total", no: "total", fi: "kokonais-", cs: "celkový", ro: "total", hu: "teljes", ca: "total", gl: "total", eu: "guztizko", gn: "opaite", qu: "llapan", eo: "tuta", vi: "tổng", id: "total", th: "ทั้งหมด", hr: "ukupan", sk: "celkový", ga: "iomlán", cy: "cyfanswm", ha: "jimilla", am: "ጠቅላላ", fa: "کل", bn: "মোট", zu: "isonke" },';
+      '    total: { gloss: "Lat. tōtus — inteiro/soma; gíria BR «total!» (acordo/louvor); escala legal/fantástico; Valeu !!!", href: "/posts/post-inspecao-palavra-total.html", en: "total / totally (BR agreement)", es: "total", fr: "total", it: "totale", de: "total", el: "συνολικός", la: "totus", yo: "gbogbo", sw: "jumla", gez: "kʷəllu", nl: "totaal", pl: "całkowity", ru: "полный / итого", uk: "повний / підсумок", zh: "全部 / 总计", ja: "合計 / 完全", ko: "전체 / 합계", ar: "إجمالي", he: "סה״כ", hi: "कुल", tr: "toplam", sv: "total", da: "total", no: "total", fi: "kokonais-", cs: "celkový", ro: "total", hu: "teljes", ca: "total", gl: "total", eu: "guztizko", gn: "opaite", qu: "llapan", eo: "tuta", vi: "tổng", id: "total", th: "ทั้งหมด", hr: "ukupan", sk: "celkový", ga: "iomlán", cy: "cyfanswm", ha: "jimilla", am: "ጠቅላላ", fa: "کل", bn: "মোট", zu: "isonke" },';
     if (/total: \{[^}]*href: "\/posts\/post-inspecao-palavra-total\.html"/.test(gloss)) {
       console.log('Glossário já tinha total enriquecido');
     } else if (/total: \{[\s\S]*?zu: "[^"]*" },/.test(gloss)) {

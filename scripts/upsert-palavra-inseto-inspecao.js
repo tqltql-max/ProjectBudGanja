@@ -88,9 +88,9 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Inseto — vida, ecologia, cultura e Faça o melhor!',
-      titleEn: 'Inseto — life, ecology, culture and Do your best!',
-      titleEs: 'Inseto — vida, ecología, cultura y ¡Haz lo mejor!',
+      title: 'Inseto — vida, ecologia, cultura e Valeu !!!',
+      titleEn: 'Inseto — life, ecology, culture and Valeu !!!',
+      titleEs: 'Inseto — vida, ecología, cultura y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
@@ -108,7 +108,7 @@ async function main() {
         '/posts/post-inspecao-animal-abelha.html',
         '/posts/post-inspecao-palavra-simbiose.html',
         '/posts/post-inspecao-palavra-buguei.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — inseto/insetos; vida × ecologia × cultura.'
     };

@@ -91,9 +91,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: "Palavras: pipoca (tupi pi'poka) — milho→calor→estouro; rua e cinema BR; Faça o melhor!",
-      whyEn: "Words: pipoca (Tupi pi'poka) — grain→heat→pop; BR street and cinema; Do your best!",
-      whyEs: "Palabras: pipoca (tupí pi'poka) — grano→calor→estallido; calle y cine BR; ¡Haz lo mejor!",
+      why: "Palavras: pipoca (tupi pi'poka) — milho→calor→estouro; rua e cinema BR; Valeu !!!",
+      whyEn: "Words: pipoca (Tupi pi'poka) — grain→heat→pop; BR street and cinema; Valeu !!!",
+      whyEs: "Palabras: pipoca (tupí pi'poka) — grano→calor→estallido; calle y cine BR; ¡Valeu !!!",
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -102,7 +102,7 @@ async function main() {
         'https://pt.wikipedia.org/wiki/Pipoca',
         '/posts/post-inspecao-palavra-fogo.html',
         '/posts/post-inspecao-palavra-alegria.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -124,11 +124,11 @@ async function main() {
       id: 'pipoca',
       word: 'pipoca',
       simple:
-        "Tupi pi'poka — milho que estoura; rua e cinema BR; transformação com calor certo; Faça o melhor!",
+        "Tupi pi'poka — milho que estoura; rua e cinema BR; transformação com calor certo; Valeu !!!",
       simpleEn:
-        "Tupi pi'poka — corn that pops; BR street and cinema; craftful heat; Do your best!",
+        "Tupi pi'poka — corn that pops; BR street and cinema; craftful heat; Valeu !!!",
       simpleEs:
-        "Tupí pi'poka — maíz que estalla; calle y cine BR; calor con oficio; ¡Haz lo mejor!",
+        "Tupí pi'poka — maíz que estalla; calle y cine BR; calor con oficio; ¡Valeu !!!",
       group: 'lexico',
       fromTitle: false,
       href
@@ -152,7 +152,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const rich =
-      '    pipoca: { gloss: "Tupi pi\'poka — milho que estoura; rua e cinema BR; transformação com calor certo; Faça o melhor!", href: "/posts/post-inspecao-palavra-pipoca.html", en: "popcorn", es: "palomitas / pochoclos", fr: "pop-corn", it: "popcorn", de: "Popcorn", el: "ποπκόρν", la: "zea explosiva (mod.)", yo: "àgbàdo tí ó bú", sw: "bisi", gez: "popcorn", nl: "popcorn", pl: "popcorn", ru: "попкорн", uk: "попкорн", zh: "爆米花", ja: "ポップコーン", ko: "팝콘", ar: "فشار", he: "פופקורן", hi: "पॉपकॉर्न", tr: "patlamış mısır", sv: "popcorn", da: "popcorn", no: "popcorn", fi: "popcorn", cs: "popcorn", ro: "floricele", hu: "pattogatott kukorica", ca: "palomites", gl: "pipocas", eu: "krispetak", gn: "avati pytũ", qu: "sara t\'aqsna", eo: "krevmaizo", vi: "bắp rang", id: "berondong jagung", th: "ป๊อปคอร์น", hr: "kokice", sk: "popcorn", ga: "gránphlúir", cy: "reis corn", ha: "masara mai fashe", am: "ፖፕኮርን", fa: "پاپ‌کورن", bn: "পপকর্ন", zu: "uqhotho" },';
+      '    pipoca: { gloss: "Tupi pi\'poka — milho que estoura; rua e cinema BR; transformação com calor certo; Valeu !!!", href: "/posts/post-inspecao-palavra-pipoca.html", en: "popcorn", es: "palomitas / pochoclos", fr: "pop-corn", it: "popcorn", de: "Popcorn", el: "ποπκόρν", la: "zea explosiva (mod.)", yo: "àgbàdo tí ó bú", sw: "bisi", gez: "popcorn", nl: "popcorn", pl: "popcorn", ru: "попкорн", uk: "попкорн", zh: "爆米花", ja: "ポップコーン", ko: "팝콘", ar: "فشار", he: "פופקורן", hi: "पॉपकॉर्न", tr: "patlamış mısır", sv: "popcorn", da: "popcorn", no: "popcorn", fi: "popcorn", cs: "popcorn", ro: "floricele", hu: "pattogatott kukorica", ca: "palomites", gl: "pipocas", eu: "krispetak", gn: "avati pytũ", qu: "sara t\'aqsna", eo: "krevmaizo", vi: "bắp rang", id: "berondong jagung", th: "ป๊อปคอร์น", hr: "kokice", sk: "popcorn", ga: "gránphlúir", cy: "reis corn", ha: "masara mai fashe", am: "ፖፕኮርን", fa: "پاپ‌کورن", bn: "পপকর্ন", zu: "uqhotho" },';
     if (/pipoca: \{[^}]*href: "\/posts\/post-inspecao-palavra-pipoca\.html"/.test(gloss)) {
       console.log('Glossário já tinha pipoca enriquecido');
     } else if (/pipoca: \{[\s\S]*?zu: "[^"]*" },/.test(gloss)) {

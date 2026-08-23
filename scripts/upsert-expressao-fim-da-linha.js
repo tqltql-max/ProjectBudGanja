@@ -104,7 +104,7 @@ async function main() {
         '/posts/post-inspecao-palavra-cinta.html',
         '/posts/post-inspecao-palavra-vida.html',
         '/posts/post-inspecao-derivado-chocolate.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html',
+        '/posts/post-inspecao-palavra-valeu.html',
         '/vida/'
       ],
       notes:
@@ -125,11 +125,11 @@ async function main() {
       id: 'fim-da-linha',
       word: 'fim da linha',
       simple:
-        'Expressão — limite da fita, da vida e da esteira; caso lab = confeito casca colorida + chocolate (formato M&M\'s); depois Faça o melhor!',
+        'Expressão — limite da fita, da vida e da esteira; caso lab = confeito casca colorida + chocolate (formato M&M\'s); depois Valeu !!!',
       simpleEn:
-        'Saying — limit of the tape, of life and of the belt; lab case = colored shell + chocolate (M&M\'s format); then Do your best!',
+        'Saying — limit of the tape, of life and of the belt; lab case = colored shell + chocolate (M&M\'s format); then Valeu !!!',
       simpleEs:
-        'Expresión — límite de la cinta, de la vida y de la línea; caso lab = cáscara de color + chocolate (formato M&M\'s); luego ¡Haz lo mejor!',
+        'Expresión — límite de la cinta, de la vida y de la línea; caso lab = cáscara de color + chocolate (formato M&M\'s); luego ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -155,7 +155,7 @@ async function main() {
   const glossPath = path.join(ROOT, 'js', 'learn-glossary.js');
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
-    const entry = `    "fim da linha": { tone: "caution", category: "Limite", mundane: "Última paragem; esgotar opções.", gloss: "Limite da fita, da vida e da esteira; caso lab = casca colorida + chocolate (formato M&M's); depois Faça o melhor!", href: "${href}", en: "end of the line", es: "fin de la línea", fr: "fin de la ligne", it: "fine della linea", de: "Ende der Linie", el: "τέλος της γραμμής", la: "finis lineae", yo: "òpin ìlà", sw: "mwisho wa mstari", gez: "č̣erä mänger", nl: "einde van de lijn", pl: "koniec linii", ru: "конец линии", uk: "кінець лінії", zh: "终点", ja: "路線の終点", ko: "노선의 끝", ar: "نهاية الخط", he: "סוף הקו", hi: "लाइन का अंत", tr: "hattın sonu", sv: "linjens slut", da: "end of the line", no: "end of the line", fi: "linjan pää", cs: "konec linky", ro: "capăt de linie", hu: "a vonal vége", ca: "final de línia", gl: "fin da liña", eu: "lerroaren amaiera", gn: "línea paha", qu: "siq'i puchukay", eo: "fino de linio", vi: "cuối tuyến", id: "ujung jalur", th: "สุดสาย", hr: "kraj linije", sk: "koniec linky", ga: "deireadh na líne", cy: "diwedd y llinell", ha: "karshen layi", am: "የመስመር መጨረሻ", fa: "پایان خط", bn: "লাইনের শেষ", zu: "ukuphela komugqa" },`;
+    const entry = `    "fim da linha": { tone: "caution", category: "Limite", mundane: "Última paragem; esgotar opções.", gloss: "Limite da fita, da vida e da esteira; caso lab = casca colorida + chocolate (formato M&M's); depois Valeu !!!", href: "${href}", en: "end of the line", es: "fin de la línea", fr: "fin de la ligne", it: "fine della linea", de: "Ende der Linie", el: "τέλος της γραμμής", la: "finis lineae", yo: "òpin ìlà", sw: "mwisho wa mstari", gez: "č̣erä mänger", nl: "einde van de lijn", pl: "koniec linii", ru: "конец линии", uk: "кінець лінії", zh: "终点", ja: "路線の終点", ko: "노선의 끝", ar: "نهاية الخط", he: "סוף הקו", hi: "लाइन का अंत", tr: "hattın sonu", sv: "linjens slut", da: "end of the line", no: "end of the line", fi: "linjan pää", cs: "konec linky", ro: "capăt de linie", hu: "a vonal vége", ca: "final de línia", gl: "fin da liña", eu: "lerroaren amaiera", gn: "línea paha", qu: "siq'i puchukay", eo: "fino de linio", vi: "cuối tuyến", id: "ujung jalur", th: "สุดสาย", hr: "kraj linije", sk: "koniec linky", ga: "deireadh na líne", cy: "diwedd y llinell", ha: "karshen layi", am: "የመስመር መጨረሻ", fa: "پایان خط", bn: "লাইনের শেষ", zu: "ukuphela komugqa" },`;
     const aliasFita = `    fita: { gloss: "Tira / fita cassete / casca que envolve — vizinha de cinta; elo da expressão «fim da linha».", href: "/posts/post-inspecao-palavra-cinta.html", en: "tape / ribbon", es: "cinta / fita", fr: "ruban / bande", it: "nastro", de: "Band / Klebeband", el: "ταινία", la: "taenia", yo: "téèpù", sw: "tepi", gez: "šerit", nl: "tape", pl: "taśma", ru: "лента", uk: "стрічка", zh: "胶带", ja: "テープ", ko: "테이프", ar: "شريط", he: "סרט", hi: "टेप", tr: "bant", sv: "tejp", da: "tape", no: "teip", fi: "teippi", cs: "páska", ro: "bandă", hu: "szalag", ca: "cinta", gl: "fita", eu: "zinta", gn: "fita", qu: "watu", eo: "bendo", vi: "băng keo", id: "pita", th: "เทป", hr: "traka", sk: "páska", ga: "téip", cy: "tâp", ha: "tef", am: "ቴፕ", fa: "نوار", bn: "টেপ", zu: "ithephu" },`;
     const aliasMms = `    "m&ms": { gloss: "Formato de confeito (casca colorida + chocolate) — caso lab de «fim da linha»; sem afiliação de marca.", href: "${href}", en: "candy-coated chocolate (format)", es: "confite con cáscara (formato)", fr: "dragée chocolat (format)" },`;
 

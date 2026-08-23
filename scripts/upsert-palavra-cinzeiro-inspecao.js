@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: cinzeiro (cinza+-eiro) — recipiente/monte; fogo/gesto/risco; Faça o melhor!',
-      whyEn: 'Words: cinzeiro (cinza+-eiro) — ashtray/heap; fogo/gesto/risco; Do your best!',
-      whyEs: 'Palabras: cinzeiro (cinza+-eiro) — cenicero/montón; fogo/gesto/risco; ¡Haz lo mejor!',
+      why: 'Palavras: cinzeiro (cinza+-eiro) — recipiente/monte; fogo/gesto/risco; Valeu !!!',
+      whyEn: 'Words: cinzeiro (cinza+-eiro) — ashtray/heap; fogo/gesto/risco; Valeu !!!',
+      whyEs: 'Palabras: cinzeiro (cinza+-eiro) — cenicero/montón; fogo/gesto/risco; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -94,7 +94,7 @@ async function main() {
         post.sourceUrl,
         '/posts/post-inspecao-palavra-fogo.html',
         '/posts/post-inspecao-palavra-gesto.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — grafia canónica cinzeiro (pedido Cinzerio).'
     };
@@ -113,11 +113,11 @@ async function main() {
       id: 'cinzeiro',
       word: 'cinzeiro',
       simple:
-        'Cinza + -eiro — recipiente ou monte da cinza; elos fogo/gesto/risco; Faça o melhor no fim do fogo.',
+        'Cinza + -eiro — recipiente ou monte da cinza; elos fogo/gesto/risco; Valeu !!! no fim do fogo.',
       simpleEn:
-        'Cinza + -eiro — ashtray or ash heap; links fogo/gesto/risco; Do your best at the end of the fire.',
+        'Cinza + -eiro — ashtray or ash heap; links fogo/gesto/risco; Valeu !!! at the end of the fire.',
       simpleEs:
-        'Cinza + -eiro — cenicero o montón de ceniza; vínculos fogo/gesto/risco; Haz lo mejor al final del fuego.',
+        'Cinza + -eiro — cenicero o montón de ceniza; vínculos fogo/gesto/risco; Valeu !!! al final del fuego.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -139,7 +139,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    cinzeiro: { gloss: "Cinza + -eiro — recipiente/monte da cinza; elos fogo/gesto/risco; Faça o melhor!", href: "/posts/post-inspecao-palavra-cinzeiro.html", en: "ashtray", es: "cenicero", fr: "cendrier", it: "posacenere", de: "Aschenbecher", el: "τασάκι", la: "cinerarium", yo: "apo eérú", sw: "chombo cha majivu", gez: "ṣǝḥn ḥamad", nl: "asbak", pl: "popielniczka", ru: "pepel\'nitsa", uk: "popil\'nychka", zh: "yanhui gang", ja: "haizara", ko: "jaetong", ar: "minfada", he: "ma\'afera", hi: "raakhdaan", tr: "küllük", sv: "askfat", da: "askebæger", no: "askebeger", fi: "tuhkakuppi", cs: "popelnik", ro: "scrumiera", hu: "hamutarto", ca: "cendre", gl: "cineiro", eu: "hautsontzi", gn: "tuguái rysýi", qu: "uchpa wayaqa", eo: "cindrujo", vi: "gat tan", id: "asbak", th: "ที่เขี่ยบุหรี่", hr: "pepeljara", sk: "popolník", ga: "luaithreachán", cy: "blwch lludw", ha: "kwandon toka", am: "አመድ ማስቀመጫ", fa: "زيرسيگاري", bn: "অ্যাশট্রে", zu: "isitsha somlotha" },';
+      '    cinzeiro: { gloss: "Cinza + -eiro — recipiente/monte da cinza; elos fogo/gesto/risco; Valeu !!!", href: "/posts/post-inspecao-palavra-cinzeiro.html", en: "ashtray", es: "cenicero", fr: "cendrier", it: "posacenere", de: "Aschenbecher", el: "τασάκι", la: "cinerarium", yo: "apo eérú", sw: "chombo cha majivu", gez: "ṣǝḥn ḥamad", nl: "asbak", pl: "popielniczka", ru: "pepel\'nitsa", uk: "popil\'nychka", zh: "yanhui gang", ja: "haizara", ko: "jaetong", ar: "minfada", he: "ma\'afera", hi: "raakhdaan", tr: "küllük", sv: "askfat", da: "askebæger", no: "askebeger", fi: "tuhkakuppi", cs: "popelnik", ro: "scrumiera", hu: "hamutarto", ca: "cendre", gl: "cineiro", eu: "hautsontzi", gn: "tuguái rysýi", qu: "uchpa wayaqa", eo: "cindrujo", vi: "gat tan", id: "asbak", th: "ที่เขี่ยบุหรี่", hr: "pepeljara", sk: "popolník", ga: "luaithreachán", cy: "blwch lludw", ha: "kwandon toka", am: "አመድ ማስቀመጫ", fa: "زيرسيگاري", bn: "অ্যাশট্রে", zu: "isitsha somlotha" },';
     if (/cinzeiro:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    cinzeiro:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

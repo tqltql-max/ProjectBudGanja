@@ -30,7 +30,7 @@ async function main() {
   <text x="120" y="320" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="rgba(230,210,180,0.95)">a cidade anunciada</text>
   <text x="120" y="430" font-family="Georgia, Times New Roman, serif" font-size="24" fill="#c4a070">Vice City · Leonida · Lucia + Jason</text>
   <text x="120" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#d4b896">pré-estreia 19 nov. 2026 · sem walkthrough</text>
-  <text x="120" y="560" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="rgba(212,184,150,0.8)">risco · verdade · caminho · Faça o melhor!</text>
+  <text x="120" y="560" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="rgba(212,184,150,0.8)">risco · verdade · caminho · Valeu !!!</text>
 </svg>`);
 
   await sharp(bg).jpeg({ quality: 84, mozjpeg: true }).toFile(OUT);

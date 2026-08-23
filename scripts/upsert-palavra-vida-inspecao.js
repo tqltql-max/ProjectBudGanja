@@ -91,9 +91,9 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Vida — facto, tempo, modo e Faça o melhor!',
-      titleEn: 'Vida — fact, time, mode and Do your best!',
-      titleEs: 'Vida — hecho, tiempo, modo y ¡Haz lo mejor!',
+      title: 'Vida — facto, tempo, modo e Valeu !!!',
+      titleEn: 'Vida — fact, time, mode and Valeu !!!',
+      titleEs: 'Vida — hecho, tiempo, modo y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
@@ -110,7 +110,7 @@ async function main() {
         '/posts/post-inspecao-palavra-coracao.html',
         '/posts/post-inspecao-palavra-esperanca.html',
         '/vida/',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +

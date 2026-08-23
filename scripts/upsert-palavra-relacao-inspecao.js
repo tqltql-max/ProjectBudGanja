@@ -89,9 +89,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: relação (lat. relatĭō) — vínculo/relato/proporção; elos simbiose/respeito/gesto; Faça o melhor!',
-      whyEn: 'Words: relação (Lat. relatĭō) — bond/report/ratio; links simbiose/respeito/gesto; Do your best!',
-      whyEs: 'Palabras: relação (lat. relatĭō) — vínculo/relato/proporción; vínculos simbiose/respeito/gesto; ¡Haz lo mejor!',
+      why: 'Palavras: relação (lat. relatĭō) — vínculo/relato/proporção; elos simbiose/respeito/gesto; Valeu !!!',
+      whyEn: 'Words: relação (Lat. relatĭō) — bond/report/ratio; links simbiose/respeito/gesto; Valeu !!!',
+      whyEs: 'Palabras: relação (lat. relatĭō) — vínculo/relato/proporción; vínculos simbiose/respeito/gesto; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -100,7 +100,7 @@ async function main() {
         '/posts/post-inspecao-palavra-simbiose.html',
         '/posts/post-inspecao-palavra-respeito.html',
         '/posts/post-inspecao-palavra-gesto.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — relatĭō = reportar; palavra ≠ terapia.'
     };
@@ -119,11 +119,11 @@ async function main() {
       id: 'relacao',
       word: 'relação',
       simple:
-        'Lat. relatĭō — vínculo, relato e proporção; elos simbiose/respeito/gesto; Faça o melhor!',
+        'Lat. relatĭō — vínculo, relato e proporção; elos simbiose/respeito/gesto; Valeu !!!',
       simpleEn:
-        'Lat. relatĭō — bond, report and ratio; links simbiose/respeito/gesto; Do your best!',
+        'Lat. relatĭō — bond, report and ratio; links simbiose/respeito/gesto; Valeu !!!',
       simpleEs:
-        'Lat. relatĭō — vínculo, relato y proporción; vínculos simbiose/respeito/gesto; ¡Haz lo mejor!',
+        'Lat. relatĭō — vínculo, relato y proporción; vínculos simbiose/respeito/gesto; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -149,7 +149,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    relacao: { tone: "bond", gloss: "Lat. relatĭō — vínculo × relato × proporção; elos simbiose/respeito/gesto; Faça o melhor!", href: "/posts/post-inspecao-palavra-relacao.html", en: "relation / relationship", es: "relacion", fr: "relation", it: "relazione", de: "Beziehung", el: "schesi", la: "relatio", yo: "ibasepo", sw: "uhusiano", gez: "gənuñña", nl: "relatie", pl: "relacja", ru: "otnoshenie", uk: "vidnosyny", zh: "guanxi", ja: "kankei", ko: "gwangye", ar: "alaqa", he: "yahas", hi: "sambandh", tr: "iliski", sv: "relation", da: "relation", no: "relasjon", fi: "suhde", cs: "vztah", ro: "relatie", hu: "kapcsolat", ca: "relacio", gl: "relacion", eu: "harreman", gn: "joaju", qu: "rimanakuy", eo: "rilato", vi: "quan he", id: "hubungan", th: "khwam samphan", hr: "odnos", sk: "vztah", ga: "caidreamh", cy: "perthynas", ha: "alaqa", am: "gənñənət", fa: "rabete", bn: "samparka", zu: "ubudlelwano" },';
+      '    relacao: { tone: "bond", gloss: "Lat. relatĭō — vínculo × relato × proporção; elos simbiose/respeito/gesto; Valeu !!!", href: "/posts/post-inspecao-palavra-relacao.html", en: "relation / relationship", es: "relacion", fr: "relation", it: "relazione", de: "Beziehung", el: "schesi", la: "relatio", yo: "ibasepo", sw: "uhusiano", gez: "gənuñña", nl: "relatie", pl: "relacja", ru: "otnoshenie", uk: "vidnosyny", zh: "guanxi", ja: "kankei", ko: "gwangye", ar: "alaqa", he: "yahas", hi: "sambandh", tr: "iliski", sv: "relation", da: "relation", no: "relasjon", fi: "suhde", cs: "vztah", ro: "relatie", hu: "kapcsolat", ca: "relacio", gl: "relacion", eu: "harreman", gn: "joaju", qu: "rimanakuy", eo: "rilato", vi: "quan he", id: "hubungan", th: "khwam samphan", hr: "odnos", sk: "vztah", ga: "caidreamh", cy: "perthynas", ha: "alaqa", am: "gənñənət", fa: "rabete", bn: "samparka", zu: "ubudlelwano" },';
     const entryAccent =
       '    relação: { tone: "bond", gloss: "Lat. relatĭō — vínculo × relato × proporção; elos simbiose/respeito/gesto.", href: "/posts/post-inspecao-palavra-relacao.html", en: "relation / relationship", es: "relacion", fr: "relation", it: "relazione", de: "Beziehung", el: "schesi", la: "relatio", yo: "ibasepo", sw: "uhusiano", gez: "gənuñña", nl: "relatie", pl: "relacja", ru: "otnoshenie", uk: "vidnosyny", zh: "guanxi", ja: "kankei", ko: "gwangye", ar: "alaqa", he: "yahas", hi: "sambandh", tr: "iliski", sv: "relation", da: "relation", no: "relasjon", fi: "suhde", cs: "vztah", ro: "relatie", hu: "kapcsolat", ca: "relacio", gl: "relacion", eu: "harreman", gn: "joaju", qu: "rimanakuy", eo: "rilato", vi: "quan he", id: "hubungan", th: "khwam samphan", hr: "odnos", sk: "vztah", ga: "caidreamh", cy: "perthynas", ha: "alaqa", am: "gənñənət", fa: "rabete", bn: "samparka", zu: "ubudlelwano" },';
     if (/relacao:\s*\{/.test(gloss)) {

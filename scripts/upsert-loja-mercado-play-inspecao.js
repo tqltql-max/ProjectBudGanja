@@ -105,7 +105,7 @@ async function main() {
         'https://www1.folha.uol.com.br/mercado/2023/08/mercado-livre-lanca-servico-de-streaming-com-filmes-de-graca.shtml',
         '/posts/post-inspecao-loja-filmicca.html',
         '/posts/post-inspecao-palavra-pipoca.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'AVOD ≠ PD. It (2017) na home é aluguel. Catálogo roda.'
     };

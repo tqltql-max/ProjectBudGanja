@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: noite (lat. nox) — fase escura do ciclo; par com sol; elos luz e interruptor; cultivo; Faça o melhor!',
-      whyEn: 'Words: noite (Lat. nox) — dark phase of the cycle; pair with sol; links luz and interruptor; grow; Do your best!',
-      whyEs: 'Palabras: noite (lat. nox) — fase oscura del ciclo; par con sol; vínculos luz e interruptor; cultivo; ¡Haz lo mejor!',
+      why: 'Palavras: noite (lat. nox) — fase escura do ciclo; par com sol; elos luz e interruptor; cultivo; Valeu !!!',
+      whyEn: 'Words: noite (Lat. nox) — dark phase of the cycle; pair with sol; links luz and interruptor; grow; Valeu !!!',
+      whyEs: 'Palabras: noite (lat. nox) — fase oscura del ciclo; par con sol; vínculos luz e interruptor; cultivo; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -96,7 +96,7 @@ async function main() {
         '/posts/post-inspecao-palavra-sol.html',
         '/posts/post-inspecao-palavra-luz.html',
         '/posts/post-inspecao-palavra-interruptor.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — par sol × noite; fotoperíodo; circuito artificial.'
     };
@@ -115,11 +115,11 @@ async function main() {
       id: 'noite',
       word: 'noite',
       simple:
-        'Lat. nox — fase escura do ciclo; par com sol; elos luz e interruptor; fotoperíodo; Faça o melhor com a noite certa.',
+        'Lat. nox — fase escura do ciclo; par com sol; elos luz e interruptor; fotoperíodo; Valeu !!! com a noite certa.',
       simpleEn:
-        'Lat. nox — dark phase of the cycle; pair with sol; links luz and interruptor; photoperiod; Do your best with the right night.',
+        'Lat. nox — dark phase of the cycle; pair with sol; links luz and interruptor; photoperiod; Valeu !!! with the right night.',
       simpleEs:
-        'Lat. nox — fase oscura del ciclo; par con sol; vínculos luz e interruptor; fotoperiodo; Haz lo mejor con la noche cierta.',
+        'Lat. nox — fase oscura del ciclo; par con sol; vínculos luz e interruptor; fotoperiodo; Valeu !!! con la noche cierta.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -141,7 +141,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    noite: { gloss: "Lat. nox — fase escura do ciclo; par com sol; elos luz e interruptor; fotoperíodo; Faça o melhor!", href: "/posts/post-inspecao-palavra-noite.html", en: "night", es: "noche", fr: "nuit", it: "notte", de: "Nacht", el: "nyxta", la: "nox", yo: "oru", sw: "usiku", gez: "lelit", nl: "nacht", pl: "noc", ru: "noch", uk: "nich", zh: "ye", ja: "yoru", ko: "밤", ar: "layl", he: "layla", hi: "raat", tr: "gece", sv: "natt", da: "nat", no: "natt", fi: "yo", cs: "noc", ro: "noapte", hu: "ejjel", ca: "nit", gl: "noite", eu: "gau", gn: "pyhare", qu: "tuta", eo: "nokto", vi: "dem", id: "malam", th: "night", hr: "noc", sk: "noc", ga: "oiche", cy: "nos", ha: "dare", am: "lelit", fa: "shab", bn: "rat", zu: "ubusuku" },';
+      '    noite: { gloss: "Lat. nox — fase escura do ciclo; par com sol; elos luz e interruptor; fotoperíodo; Valeu !!!", href: "/posts/post-inspecao-palavra-noite.html", en: "night", es: "noche", fr: "nuit", it: "notte", de: "Nacht", el: "nyxta", la: "nox", yo: "oru", sw: "usiku", gez: "lelit", nl: "nacht", pl: "noc", ru: "noch", uk: "nich", zh: "ye", ja: "yoru", ko: "밤", ar: "layl", he: "layla", hi: "raat", tr: "gece", sv: "natt", da: "nat", no: "natt", fi: "yo", cs: "noc", ro: "noapte", hu: "ejjel", ca: "nit", gl: "noite", eu: "gau", gn: "pyhare", qu: "tuta", eo: "nokto", vi: "dem", id: "malam", th: "night", hr: "noc", sk: "noc", ga: "oiche", cy: "nos", ha: "dare", am: "lelit", fa: "shab", bn: "rat", zu: "ubusuku" },';
     if (/noite:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    noite:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

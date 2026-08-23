@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: nap (EN) — cochilo/power nap; gesto/alma/vida; Faça o melhor!',
-      whyEn: 'Words: nap (EN) — short sleep/power nap; gesto/alma/vida; Do your best!',
-      whyEs: 'Palabras: nap (EN) — siesta corta/power nap; gesto/alma/vida; ¡Haz lo mejor!',
+      why: 'Palavras: nap (EN) — cochilo/power nap; gesto/alma/vida; Valeu !!!',
+      whyEn: 'Words: nap (EN) — short sleep/power nap; gesto/alma/vida; Valeu !!!',
+      whyEs: 'Palabras: nap (EN) — siesta corta/power nap; gesto/alma/vida; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -108,11 +108,11 @@ async function main() {
       id: 'nap',
       word: 'nap',
       simple:
-        'EN — sono curto / power nap no BR; pausa de ofício; elos gesto/alma; Faça o melhor depois de parar.',
+        'EN — sono curto / power nap no BR; pausa de ofício; elos gesto/alma; Valeu !!! depois de parar.',
       simpleEn:
-        'EN — short sleep / power nap in BR; craft pause; links gesto/alma; Do your best after stopping.',
+        'EN — short sleep / power nap in BR; craft pause; links gesto/alma; Valeu !!! after stopping.',
       simpleEs:
-        'EN — sueño corto / power nap en BR; pausa de oficio; vínculos gesto/alma; Haz lo mejor después de parar.',
+        'EN — sueño corto / power nap en BR; pausa de oficio; vínculos gesto/alma; Valeu !!! después de parar.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -134,7 +134,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    nap: { gloss: "EN — sono curto / power nap; pausa de ofício; elos gesto/alma; Faça o melhor!", href: "/posts/post-inspecao-palavra-nap.html", en: "nap", es: "siesta corta", fr: "somme", it: "pisolino", de: "Nickerchen", el: "ypnako", la: "somnus brevis", yo: "oorun kukuru", sw: "usingizi mfupi", gez: "nəwam", nl: "dutje", pl: "drzemka", ru: "dremota", uk: "drymoty", zh: "xiaoshui", ja: "hirune", ko: "guljam", ar: "gafwa", he: "tnuna", hi: "jhapki", tr: "kestirme", sv: "tupplur", da: "lur", no: "blund", fi: "torkut", cs: "zdrimnuti", ro: "aţipire", hu: "szundi (≠ nap=day)", ca: "becaina", gl: "sesta", eu: "siesta", gn: "kecha\'i", qu: "puñuy", eo: "dormeto", vi: "ngu gat", id: "tidur siang", th: "งีบ", hr: "drijemez", sk: "zdriemnutie", ga: "neos", cy: "hep", ha: "barci", am: "እንቅልፍ", fa: "chort", bn: "তন্দ্রা", zu: "ukozela" },';
+      '    nap: { gloss: "EN — sono curto / power nap; pausa de ofício; elos gesto/alma; Valeu !!!", href: "/posts/post-inspecao-palavra-nap.html", en: "nap", es: "siesta corta", fr: "somme", it: "pisolino", de: "Nickerchen", el: "ypnako", la: "somnus brevis", yo: "oorun kukuru", sw: "usingizi mfupi", gez: "nəwam", nl: "dutje", pl: "drzemka", ru: "dremota", uk: "drymoty", zh: "xiaoshui", ja: "hirune", ko: "guljam", ar: "gafwa", he: "tnuna", hi: "jhapki", tr: "kestirme", sv: "tupplur", da: "lur", no: "blund", fi: "torkut", cs: "zdrimnuti", ro: "aţipire", hu: "szundi (≠ nap=day)", ca: "becaina", gl: "sesta", eu: "siesta", gn: "kecha\'i", qu: "puñuy", eo: "dormeto", vi: "ngu gat", id: "tidur siang", th: "งีบ", hr: "drijemez", sk: "zdriemnutie", ga: "neos", cy: "hep", ha: "barci", am: "እንቅልፍ", fa: "chort", bn: "তন্দ্রা", zu: "ukozela" },';
     if (/nap:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    nap:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

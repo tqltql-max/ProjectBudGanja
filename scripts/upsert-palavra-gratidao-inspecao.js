@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: gratidão (lat. tardio grātitūdō ← grātus) — qualidade; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Faça o melhor!',
-      whyEn: 'Words: gratidão (Late Lat. grātitūdō ← grātus) — named quality; ≠ obrigado ≠ valeu; Do your best!',
-      whyEs: 'Palabras: gratidão (lat. tardío grātitūdō ← grātus) — cualidad; ≠ obrigado ≠ valeu; ¡Haz lo mejor!',
+      why: 'Palavras: gratidão (lat. tardio grātitūdō ← grātus) — qualidade; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Valeu !!!',
+      whyEn: 'Words: gratidão (Late Lat. grātitūdō ← grātus) — named quality; ≠ obrigado ≠ valeu; Valeu !!!',
+      whyEs: 'Palabras: gratidão (lat. tardío grātitūdō ← grātus) — cualidad; ≠ obrigado ≠ valeu; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -94,9 +94,9 @@ async function main() {
         post.sourceUrl,
         'https://en.wiktionary.org/wiki/gratitude',
         'https://en.wiktionary.org/wiki/gratus',
-        '/posts/post-inspecao-expressao-muito-obrigado.html',
+        '/posts/post-inspecao-palavra-gratidao.html',
         '/posts/post-inspecao-palavra-valeu.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — Gratidão ≠ obrigado / valeu; grato é o adjectivo.'
     };
@@ -115,33 +115,33 @@ async function main() {
       id: 'gratidao',
       word: 'Gratidão',
       simple:
-        'Lat. tardio grātitūdō ← grātus + -tūdō — qualidade de quem recebe bem; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Faça o melhor!',
+        'Lat. tardio grātitūdō ← grātus + -tūdō — qualidade de quem recebe bem; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Valeu !!!',
       simpleEn:
-        'Late Lat. grātitūdō ← grātus + -tūdō — named quality of receiving well; pieces grat- + -idão; ≠ obrigado ≠ valeu; Do your best!',
+        'Late Lat. grātitūdō ← grātus + -tūdō — named quality of receiving well; pieces grat- + -idão; ≠ obrigado ≠ valeu; Valeu !!!',
       simpleEs:
-        'Lat. tardío grātitūdō ← grātus + -tūdō — cualidad de quien recibe bien; piezas grat- + -idão; ≠ obrigado ≠ valeu; ¡Haz lo mejor!',
+        'Lat. tardío grātitūdō ← grātus + -tūdō — cualidad de quien recibe bien; piezas grat- + -idão; ≠ obrigado ≠ valeu; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href,
       history:
         'Gratidão vem do latim tardio grātitūdō, de grātus (agradável, reconhecido) + sufixo de qualidade -tūdō. No laboratório é o nome da qualidade; obrigado (obligare) e valeu (valēre) são sopros com outros étimos. Grato é o adjectivo.',
       curiosities:
-        'Não fundir com graça, gratificação, grátis. Elo: fichas muitoobrigado e valeu. Método das peças: como veneno.',
+        'Não fundir com graça, gratificação, grátis. Elo: fichas Gratidão e valeu. Método das peças: como veneno.',
       historyEn:
         'Gratidão comes from Late Latin grātitūdō, from grātus (pleasing, thankful) + quality suffix -tūdō. In the lab it names the quality; obrigado (obligare) and valeu (valēre) are spoken formulas with other etymons. Grato is the adjective.',
       curiositiesEn:
-        'Do not merge with graça, gratificação, or grátis. Links: muitoobrigado and valeu sheets. Piece method: like veneno.',
+        'Do not merge with graça, gratificação, or grátis. Links: Gratidão and valeu sheets. Piece method: like veneno.',
       historyEs:
         'Gratidão viene del latín tardío grātitūdō, de grātus (agradable, reconocido) + sufijo de cualidad -tūdō. En el laboratorio nombra la cualidad; obrigado (obligare) y valeu (valēre) son soplos con otros étimos. Grato es el adjetivo.',
       curiositiesEs:
-        'No fusionar con graça, gratificação ni grátis. Vínculos: fichas muitoobrigado y valeu. Método de piezas: como veneno.'
+        'No fusionar con graça, gratificação ni grátis. Vínculos: fichas Gratidão y valeu. Método de piezas: como veneno.'
     };
     const gi = items.findIndex(
       (x) => x.id === entry.id || x.word === 'Gratidão' || x.word === 'gratidão'
     );
     if (gi >= 0) items[gi] = Object.assign({}, items[gi], entry);
     else {
-      const after = items.findIndex((x) => x.id === 'valeu' || x.id === 'muitoobrigado');
+      const after = items.findIndex((x) => x.id === 'valeu' || x.id === 'Gratidão');
       if (after >= 0) items.splice(after + 1, 0, entry);
       else items.push(entry);
     }
@@ -155,7 +155,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    gratidão: { tone: "warm", category: "Qualidade", mundane: "Reconhecimento do bem recebido; qualidade de ser grato.", gloss: "Lat. tardio grātitūdō ← grātus + -tūdō — qualidade nomeada; ≠ obrigado (obligare) ≠ valeu (valēre); peças grat- + -idão; Faça o melhor!", href: "/posts/post-inspecao-palavra-gratidao.html", en: "gratitude", es: "gratitud", fr: "gratitude", it: "gratitudine", de: "Dankbarkeit", el: "efgnomosini", la: "gratitudo", yo: "imoriri", sw: "shukrani", gez: "amesegena", nl: "dankbaarheid", pl: "wdziecznosc", ru: "blagodarnost", uk: "vdyachnist", zh: "ganji", ja: "kansha", ko: "gansa", ar: "imtinan", he: "hakarat toda", hi: "kritagyata", tr: "minnet", sv: "tacksamhet", da: "taknemmelighed", no: "takknemlighet", fi: "kiitollisuus", cs: "vdecnost", ro: "recunostinta", hu: "hala", ca: "gratitud", gl: "gratitude", eu: "esker on", gn: "aguyje", qu: "añay", eo: "dankemo", vi: "biet on", id: "rasa syukur", th: "khwam kata-nyu", hr: "zahvalnost", sk: "vdacnost", ga: "buiochas", cy: "diolchgarwch", ha: "godiya", am: "amesegenallo", fa: "sepas", bn: "kritoggota", zu: "ukubonga" },';
+      '    gratidão: { tone: "warm", category: "Qualidade", mundane: "Reconhecimento do bem recebido; qualidade de ser grato.", gloss: "Lat. tardio grātitūdō ← grātus + -tūdō — qualidade nomeada; ≠ obrigado (obligare) ≠ valeu (valēre); peças grat- + -idão; Valeu !!!", href: "/posts/post-inspecao-palavra-gratidao.html", en: "gratitude", es: "gratitud", fr: "gratitude", it: "gratitudine", de: "Dankbarkeit", el: "efgnomosini", la: "gratitudo", yo: "imoriri", sw: "shukrani", gez: "amesegena", nl: "dankbaarheid", pl: "wdziecznosc", ru: "blagodarnost", uk: "vdyachnist", zh: "ganji", ja: "kansha", ko: "gansa", ar: "imtinan", he: "hakarat toda", hi: "kritagyata", tr: "minnet", sv: "tacksamhet", da: "taknemmelighed", no: "takknemlighet", fi: "kiitollisuus", cs: "vdecnost", ro: "recunostinta", hu: "hala", ca: "gratitud", gl: "gratitude", eu: "esker on", gn: "aguyje", qu: "añay", eo: "dankemo", vi: "biet on", id: "rasa syukur", th: "khwam kata-nyu", hr: "zahvalnost", sk: "vdacnost", ga: "buiochas", cy: "diolchgarwch", ha: "godiya", am: "amesegenallo", fa: "sepas", bn: "kritoggota", zu: "ukubonga" },';
     const gratoLine =
       '    grato: { gloss: "Adjectivo — qualidade na pessoa; o nome é gratidão (grātus). ≠ obrigado.", href: "/posts/post-inspecao-palavra-gratidao.html", en: "grateful", es: "agradecido" },';
     const agradecerLine =
@@ -196,7 +196,7 @@ async function main() {
       const orfeuBlock =
         /("slug": "post-inspecao-palavra-orfeu",\s*"description": "[^"]*"\s*\},)/;
       const insert =
-        '$1\n            {\n              "label": "Inspeção: Gratidão — qualidade de grato, não fórmula de obrigado",\n              "tileLabel": "Inspeção: Gratidão — qualidade…",\n              "href": "/posts/post-inspecao-palavra-gratidao.html",\n              "icon": "🔍",\n              "slug": "post-inspecao-palavra-gratidao",\n              "description": "Palavras: «gratidão» (lat. tardio grātitūdō ← grātus) — qualidade de quem recebe bem; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Faça o melhor!"\n            },';
+        '$1\n            {\n              "label": "Inspeção: Gratidão — qualidade de grato, não fórmula de obrigado",\n              "tileLabel": "Inspeção: Gratidão — qualidade…",\n              "href": "/posts/post-inspecao-palavra-gratidao.html",\n              "icon": "🔍",\n              "slug": "post-inspecao-palavra-gratidao",\n              "description": "Palavras: «gratidão» (lat. tardio grātitūdō ← grātus) — qualidade de quem recebe bem; peças grat- + -idão; ≠ obrigado (obligare) ≠ valeu (valēre); Valeu !!!"\n            },';
       if (orfeuBlock.test(nav)) {
         nav = nav.replace(orfeuBlock, insert);
         fs.writeFileSync(navPath, nav);

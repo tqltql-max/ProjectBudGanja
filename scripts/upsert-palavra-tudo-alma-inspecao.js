@@ -150,9 +150,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: tudo (totus) — totalidade/essencial; elos objetos/alma; Faça o melhor!',
-      whyEn: 'Words: tudo (totus) — totality/essential; links objetos/alma; Do your best!',
-      whyEs: 'Palabras: tudo (totus) — totalidad/esencial; vínculos objetos/alma; ¡Haz lo mejor!',
+      why: 'Palavras: tudo (totus) — totalidade/essencial; elos objetos/alma; Valeu !!!',
+      whyEn: 'Words: tudo (totus) — totality/essential; links objetos/alma; Valeu !!!',
+      whyEs: 'Palabras: tudo (totus) — totalidad/esencial; vínculos objetos/alma; ¡Valeu !!!',
       suggestedSlug: tudoPost.slug,
       doneHref: '/posts/post-' + tudoPost.slug + '.html',
       seriesHint: 'palavras-origem',
@@ -167,9 +167,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: alma (anima) — centro vivo; chegar na alma; elos tudo/coração/vida; Faça o melhor!',
-      whyEn: 'Words: alma (anima) — living center; reaching the soul; links tudo/coração/vida; Do your best!',
-      whyEs: 'Palabras: alma (anima) — centro vivo; llegar al alma; vínculos tudo/corazón/vida; ¡Haz lo mejor!',
+      why: 'Palavras: alma (anima) — centro vivo; chegar na alma; elos tudo/coração/vida; Valeu !!!',
+      whyEn: 'Words: alma (anima) — living center; reaching the soul; links tudo/coração/vida; Valeu !!!',
+      whyEs: 'Palabras: alma (anima) — centro vivo; llegar al alma; vínculos tudo/corazón/vida; ¡Valeu !!!',
       suggestedSlug: almaPost.slug,
       doneHref: '/posts/post-' + almaPost.slug + '.html',
       seriesHint: 'palavras-origem',
@@ -191,11 +191,11 @@ async function main() {
         id: 'tudo',
         word: 'tudo',
         simple:
-          'Família totus — totalidade e o essencial; no lab, foco para não perder a alma; Faça o melhor.',
+          'Família totus — totalidade e o essencial; no lab, foco para não perder a alma; Valeu !!!',
         simpleEn:
-          'Totus family — totality and the essential; in the lab, focus so the soul is not lost; Do your best.',
+          'Totus family — totality and the essential; in the lab, focus so the soul is not lost; Valeu !!!',
         simpleEs:
-          'Familia totus — totalidad y lo esencial; en el lab, foco para no perder el alma; Haz lo mejor.',
+          'Familia totus — totalidad y lo esencial; en el lab, foco para no perder el alma; Valeu !!!',
         group: 'lexico',
         fromTitle: false,
         href: '/posts/post-inspecao-palavra-tudo.html'
@@ -208,11 +208,11 @@ async function main() {
         id: 'alma',
         word: 'alma',
         simple:
-          'Lat. anima — centro vivo; chegar na alma; elos tudo/coração/vida; Faça o melhor até tocar.',
+          'Lat. anima — centro vivo; chegar na alma; elos tudo/coração/vida; Valeu !!! até tocar.',
         simpleEn:
-          'Lat. anima — living center; reaching the soul; links tudo/coração/vida; Do your best until it touches.',
+          'Lat. anima — living center; reaching the soul; links tudo/coração/vida; Valeu !!! until it touches.',
         simpleEs:
-          'Lat. anima — centro vivo; llegar al alma; vínculos tudo/corazón/vida; Haz lo mejor hasta tocar.',
+          'Lat. anima — centro vivo; llegar al alma; vínculos tudo/corazón/vida; Valeu !!! hasta tocar.',
         group: 'lexico',
         fromTitle: false,
         href: '/posts/post-inspecao-palavra-alma.html'
@@ -229,13 +229,13 @@ async function main() {
   upsertGloss(
     glossPath,
     'tudo',
-    '    tudo: { gloss: "Família totus — totalidade/essencial; elos objetos/alma; Faça o melhor!", href: "/posts/post-inspecao-palavra-tudo.html", en: "everything / all", es: "todo", fr: "tout", it: "tutto", de: "alles", el: "ola", la: "totum", yo: "gbogbo", sw: "kila kitu", gez: "kʷəllu", nl: "alles", pl: "wszystko", ru: "vsyo", uk: "vse", zh: "yiqie", ja: "subete", ko: "modu", ar: "kull shay", he: "hakol", hi: "sab kuch", tr: "her sey", sv: "allt", da: "alt", no: "alt", fi: "kaikki", cs: "vse", ro: "tot", hu: "minden", ca: "tot", gl: "todo", eu: "dena", gn: "opa mba\'e", qu: "llapan", eo: "cxio", vi: "tat ca", id: "semua", th: "ทุกอย่าง", hr: "sve", sk: "vsetko", ga: "gach rud", cy: "popeth", ha: "komai", am: "ሁሉም", fa: "hame", bn: "সব", zu: "konke" },',
+    '    tudo: { gloss: "Família totus — totalidade/essencial; elos objetos/alma; Valeu !!!", href: "/posts/post-inspecao-palavra-tudo.html", en: "everything / all", es: "todo", fr: "tout", it: "tutto", de: "alles", el: "ola", la: "totum", yo: "gbogbo", sw: "kila kitu", gez: "kʷəllu", nl: "alles", pl: "wszystko", ru: "vsyo", uk: "vse", zh: "yiqie", ja: "subete", ko: "modu", ar: "kull shay", he: "hakol", hi: "sab kuch", tr: "her sey", sv: "allt", da: "alt", no: "alt", fi: "kaikki", cs: "vse", ro: "tot", hu: "minden", ca: "tot", gl: "todo", eu: "dena", gn: "opa mba\'e", qu: "llapan", eo: "cxio", vi: "tat ca", id: "semua", th: "ทุกอย่าง", hr: "sve", sk: "vsetko", ga: "gach rud", cy: "popeth", ha: "komai", am: "ሁሉም", fa: "hame", bn: "সব", zu: "konke" },',
     'total'
   );
   upsertGloss(
     glossPath,
     'alma',
-    '    alma: { gloss: "Lat. anima — centro vivo; chegar na alma; elos tudo/coração/vida; Faça o melhor!", href: "/posts/post-inspecao-palavra-alma.html", en: "soul", es: "alma", fr: "ame", it: "anima", de: "Seele", el: "psyche", la: "anima", yo: "ọkàn", sw: "roho", gez: "näfs", nl: "ziel", pl: "dusza", ru: "dusha", uk: "dusha", zh: "linghun", ja: "tamashii", ko: "yeonghon", ar: "ruh", he: "neshama", hi: "atma", tr: "ruh", sv: "sjal", da: "sjael", no: "sjel", fi: "sielu", cs: "duse", ro: "suflet", hu: "lelek", ca: "anima", gl: "alma", eu: "arima", gn: "ãnga", qu: "nuna", eo: "animo", vi: "linh hon", id: "jiwa", th: "จิตวิญญาณ", hr: "dusa", sk: "dusa", ga: "anam", cy: "enaid", ha: "rai", am: "ነፍስ", fa: "ravan", bn: "আত্মা", zu: "umphefumulo" },',
+    '    alma: { gloss: "Lat. anima — centro vivo; chegar na alma; elos tudo/coração/vida; Valeu !!!", href: "/posts/post-inspecao-palavra-alma.html", en: "soul", es: "alma", fr: "ame", it: "anima", de: "Seele", el: "psyche", la: "anima", yo: "ọkàn", sw: "roho", gez: "näfs", nl: "ziel", pl: "dusza", ru: "dusha", uk: "dusha", zh: "linghun", ja: "tamashii", ko: "yeonghon", ar: "ruh", he: "neshama", hi: "atma", tr: "ruh", sv: "sjal", da: "sjael", no: "sjel", fi: "sielu", cs: "duse", ro: "suflet", hu: "lelek", ca: "anima", gl: "alma", eu: "arima", gn: "ãnga", qu: "nuna", eo: "animo", vi: "linh hon", id: "jiwa", th: "จิตวิญญาณ", hr: "dusa", sk: "dusa", ga: "anam", cy: "enaid", ha: "rai", am: "ነፍስ", fa: "ravan", bn: "আত্মা", zu: "umphefumulo" },',
     'coracao'
   );
 

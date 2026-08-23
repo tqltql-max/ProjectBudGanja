@@ -88,9 +88,9 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Respeito — olhar de novo, prática social e Faça o melhor!',
-      titleEn: 'Respeito — looking again, social practice and Do your best!',
-      titleEs: 'Respeito — volver a mirar, práctica social y ¡Haz lo mejor!',
+      title: 'Respeito — olhar de novo, prática social e Valeu !!!',
+      titleEn: 'Respeito — looking again, social practice and Valeu !!!',
+      titleEs: 'Respeito — volver a mirar, práctica social y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
@@ -106,7 +106,7 @@ async function main() {
         '/posts/post-inspecao-palavra-verdade.html',
         '/posts/post-inspecao-palavra-gesto.html',
         '/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — respeito como prática; sem sermão.'
     };

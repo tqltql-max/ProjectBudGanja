@@ -17,6 +17,9 @@
     top: 0;
     overflow: visible;
     will-change: transform;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
     transform: translate3d(var(--drone-x, 72vw), var(--drone-y, 62vh), 0) rotate(var(--drone-rot, -8deg));
 }
 

@@ -28,7 +28,7 @@ async function main() {
   <text x="600" y="270" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="58" font-weight="700" fill="#eef6f8">memorável</text>
   <text x="600" y="350" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="rgba(200,220,230,0.95)">o que fica · ≠ escala genial / especial</text>
   <text x="600" y="500" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="24" fill="#a8c8d4">rasto depois do commit</text>
-  <text x="600" y="560" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#8ec4d4">memória · livro · diário · Faça o melhor!</text>
+  <text x="600" y="560" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#8ec4d4">memória · livro · diário · Valeu !!!</text>
 </svg>`);
 
   await sharp(bg).jpeg({ quality: 84, mozjpeg: true }).toFile(OUT);

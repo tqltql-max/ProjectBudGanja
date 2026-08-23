@@ -91,9 +91,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: incrível (lat. incredibilis) — incredulidade e elogio BR; escala legal/especial/genial; Faça o melhor!',
-      whyEn: 'Words: incrível (Lat. incredibilis) — unbelief and BR praise; legal/especial/genial scale; Do your best!',
-      whyEs: 'Palabras: incrível (lat. incredibilis) — incredulidad y elogio BR; escala legal/especial/genial; ¡Haz lo mejor!',
+      why: 'Palavras: incrível (lat. incredibilis) — incredulidade e elogio BR; escala legal/especial/genial; Valeu !!!',
+      whyEn: 'Words: incrível (Lat. incredibilis) — unbelief and BR praise; legal/especial/genial scale; Valeu !!!',
+      whyEs: 'Palabras: incrível (lat. incredibilis) — incredulidad y elogio BR; escala legal/especial/genial; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -103,7 +103,7 @@ async function main() {
         '/posts/post-inspecao-palavra-legal.html',
         '/posts/post-inspecao-palavra-genial.html',
         '/posts/post-inspecao-palavra-fantastico.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — incredibilis × elogio BR; escala só com fichas existentes.'
     };
@@ -122,11 +122,11 @@ async function main() {
       id: 'incrivel',
       word: 'incrível',
       simple:
-        'Lat. incredibilis — inacreditável e elogio BR «uau»; escala legal → especial → genial → incrível; Faça o melhor!',
+        'Lat. incredibilis — inacreditável e elogio BR «uau»; escala legal → especial → genial → incrível; Valeu !!!',
       simpleEn:
-        'Lat. incredibilis — unbelievable and BR praise “wow”; scale legal → especial → genial → incrível; Do your best!',
+        'Lat. incredibilis — unbelievable and BR praise “wow”; scale legal → especial → genial → incrível; Valeu !!!',
       simpleEs:
-        'Lat. incredibilis — inacreditável y elogio BR «uau»; escala legal → especial → genial → incrível; ¡Haz lo mejor!',
+        'Lat. incredibilis — inacreditável y elogio BR «uau»; escala legal → especial → genial → incrível; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -150,7 +150,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const rich =
-      '    incrivel: { gloss: "Lat. incredibilis — inacreditável / elogio BR «uau»; escala legal→genial; Faça o melhor!", href: "/posts/post-inspecao-palavra-incrivel.html", en: "incredible / unbelievable", es: "increíble", fr: "incroyable", it: "incredibile", de: "unglaublich", el: "απίστευτος", la: "incredibilis", yo: "àìgbàgbọ́", sw: "asiyeaminika", gez: "ዘኢይትአመን", nl: "ongelooflijk", pl: "niesamowity", ru: "невероятный", uk: "неймовірний", zh: "不可思议的", ja: "信じられない", ko: "믿을 수 없는", ar: "لا يصدق", he: "מדהים", hi: "अविश्वसनीय", tr: "inanılmaz", sv: "otrolig", da: "utrolig", no: "utrolig", fi: "uskomaton", cs: "neuvěřitelný", ro: "incredibil", hu: "hihetetlen", ca: "increïble", gl: "incríbel", eu: "sinestezina", gn: "ndaikatúiva jerovia", qu: "mana iñinapaq", eo: "nekredebla", vi: "không thể tin được", id: "luar biasa", th: "เหลือเชื่อ", hr: "nevjerojatan", sk: "neuveriteľný", ga: "dochreidte", cy: "anhygoel", ha: "abin mamaki", am: "የማይታመን", fa: "باورنکردنی", bn: "অবিশ্বাস্য", zu: "okungakholeki" },';
+      '    incrivel: { gloss: "Lat. incredibilis — inacreditável / elogio BR «uau»; escala legal→genial; Valeu !!!", href: "/posts/post-inspecao-palavra-incrivel.html", en: "incredible / unbelievable", es: "increíble", fr: "incroyable", it: "incredibile", de: "unglaublich", el: "απίστευτος", la: "incredibilis", yo: "àìgbàgbọ́", sw: "asiyeaminika", gez: "ዘኢይትአመን", nl: "ongelooflijk", pl: "niesamowity", ru: "невероятный", uk: "неймовірний", zh: "不可思议的", ja: "信じられない", ko: "믿을 수 없는", ar: "لا يصدق", he: "מדהים", hi: "अविश्वसनीय", tr: "inanılmaz", sv: "otrolig", da: "utrolig", no: "utrolig", fi: "uskomaton", cs: "neuvěřitelný", ro: "incredibil", hu: "hihetetlen", ca: "increïble", gl: "incríbel", eu: "sinestezina", gn: "ndaikatúiva jerovia", qu: "mana iñinapaq", eo: "nekredebla", vi: "không thể tin được", id: "luar biasa", th: "เหลือเชื่อ", hr: "nevjerojatan", sk: "neuveriteľný", ga: "dochreidte", cy: "anhygoel", ha: "abin mamaki", am: "የማይታመን", fa: "باورنکردنی", bn: "অবিশ্বাস্য", zu: "okungakholeki" },';
     if (/incrivel: \{[^}]*href: "\/posts\/post-inspecao-palavra-incrivel\.html"/.test(gloss)) {
       console.log('Glossário já tinha incrivel enriquecido');
     } else if (/incrivel: \{[\s\S]*?zu: "[^"]*" },/.test(gloss)) {

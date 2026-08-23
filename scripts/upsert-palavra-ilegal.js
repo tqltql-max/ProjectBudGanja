@@ -99,9 +99,9 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Ilegal — antónimo de legal, ilícito e Faça o melhor!',
-      titleEn: 'Ilegal — antonym of legal, illicit, and Do your best!',
-      titleEs: 'Ilegal — antónimo de legal, ilícito y ¡Haz lo mejor!',
+      title: 'Ilegal — antónimo de legal, ilícito e Valeu !!!',
+      titleEn: 'Ilegal — antonym of legal, illicit, and Valeu !!!',
+      titleEs: 'Ilegal — antónimo de legal, ilícito y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
@@ -118,7 +118,7 @@ async function main() {
         '/posts/post-inspecao-palavra-ilicito.html',
         '/posts/post-inspecao-palavra-lei-11-343.html',
         '/posts/post-inspecao-palavra-descriminalizacao.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — antónimo de legal; ilegal ≠ ilícito exacto; sem gíria bacana.'
     };
@@ -137,11 +137,11 @@ async function main() {
       id: 'ilegal',
       word: 'ilegal',
       simple:
-        'In- + legalis — fora da lei; antónimo de legal (eixo jurídico, não gíria «bacana»); contraste com ilícito; Faça o melhor com a palavra certa.',
+        'In- + legalis — fora da lei; antónimo de legal (eixo jurídico, não gíria «bacana»); contraste com ilícito; Valeu !!! com a palavra certa.',
       simpleEn:
-        'In- + legalis — unlawful; antonym of legal (juridical axis, not “cool” slang); contrast with illicit; Do your best with the right word.',
+        'In- + legalis — unlawful; antonym of legal (juridical axis, not “cool” slang); contrast with illicit; Valeu !!! with the right word.',
       simpleEs:
-        'In- + legalis — fuera de la ley; antónimo de legal (eje jurídico, no jerga «bacán»); contraste con ilícito; Haz lo mejor con la palabra correcta.',
+        'In- + legalis — fuera de la ley; antónimo de legal (eje jurídico, no jerga «bacán»); contraste con ilícito; Valeu !!! con la palabra correcta.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -166,7 +166,7 @@ async function main() {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     if (!gloss.includes('ilegal: {')) {
       const entry =
-        '    ilegal: { gloss: "In- + legalis — fora da lei; antónimo de legal (eixo jurídico, não gíria); contraste com ilícito; Faça o melhor com a palavra certa.", href: "/posts/post-inspecao-palavra-ilegal.html", en: "illegal / unlawful", es: "ilegal", fr: "illégal", it: "illegale", de: "illegal", el: "παράνομος", la: "illegalis", yo: "lòdì sí òfin", sw: "haramu", gez: "ዘይሕጋዊ", nl: "illegaal", pl: "nielegalny", ru: "незаконный", uk: "незаконний", zh: "非法", ja: "違法", ko: "불법", ar: "غير قانوني", he: "בלתי חוקי", hi: "अवैध", tr: "yasal olmayan", sv: "olaglig", da: "ulovlig", no: "ulovlig", fi: "laiton", cs: "nelegální", ro: "ilegal", hu: "illegális", ca: "il·legal", gl: "ilegal", eu: "ilegal", gn: "léi rehegua ndaha’éi", qu: "kamachiy contra", eo: "kontraŭleĝa", vi: "bất hợp pháp", id: "ilegal", th: "ผิดกฎหมาย", hr: "ilegalan", sk: "nelegálny", ga: "mídhleathach", cy: "anghyfreithlon", ha: "haram", am: "ህገወጥ", fa: "غیرقانونی", bn: "অবৈধ", zu: "okungekho emthethweni" },\n';
+        '    ilegal: { gloss: "In- + legalis — fora da lei; antónimo de legal (eixo jurídico, não gíria); contraste com ilícito; Valeu !!! com a palavra certa.", href: "/posts/post-inspecao-palavra-ilegal.html", en: "illegal / unlawful", es: "ilegal", fr: "illégal", it: "illegale", de: "illegal", el: "παράνομος", la: "illegalis", yo: "lòdì sí òfin", sw: "haramu", gez: "ዘይሕጋዊ", nl: "illegaal", pl: "nielegalny", ru: "незаконный", uk: "незаконний", zh: "非法", ja: "違法", ko: "불법", ar: "غير قانوني", he: "בלתי חוקי", hi: "अवैध", tr: "yasal olmayan", sv: "olaglig", da: "ulovlig", no: "ulovlig", fi: "laiton", cs: "nelegální", ro: "ilegal", hu: "illegális", ca: "il·legal", gl: "ilegal", eu: "ilegal", gn: "léi rehegua ndaha’éi", qu: "kamachiy contra", eo: "kontraŭleĝa", vi: "bất hợp pháp", id: "ilegal", th: "ผิดกฎหมาย", hr: "ilegalan", sk: "nelegálny", ga: "mídhleathach", cy: "anghyfreithlon", ha: "haram", am: "ህገወጥ", fa: "غیرقانونی", bn: "অবৈধ", zu: "okungekho emthethweni" },\n';
       const reLegal = /(legal: \{[\s\S]*?zu: "[^"]*" },\r?\n)/;
       if (reLegal.test(gloss)) {
         gloss = gloss.replace(reLegal, '$1' + entry);

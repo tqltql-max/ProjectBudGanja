@@ -34,7 +34,7 @@ async function main() {
   <text x="120" y="286" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="rgba(200,244,255,0.92)">Story of Seasons · a quinta legal</text>
   <text x="120" y="400" font-family="Georgia, Times New Roman, serif" font-size="24" fill="#c8e8b0">Zephyr Town · bazar · cultivo de ecrã</text>
   <text x="120" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#dfc262">Steam · Nintendo · loja oficial · sem dump</text>
-  <text x="120" y="545" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="rgba(223,194,98,0.82)">Vida · cultivo · Faça o melhor!</text>
+  <text x="120" y="545" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="rgba(223,194,98,0.82)">Vida · cultivo · Valeu !!!</text>
 </svg>`);
 
   await sharp(bg).jpeg({ quality: 84, mozjpeg: true }).toFile(OUT);

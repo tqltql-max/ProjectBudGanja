@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: vassoura (versōria) — utensílio; folclore XIV sem receita; cacau; Faça o melhor!',
-      whyEn: 'Words: vassoura (versōria) — broom; XIV folklore, no recipe; cacao; Do your best!',
-      whyEs: 'Palabras: vassoura (versōria) — escoba; folclore XIV sin receta; cacao; ¡Haz lo mejor!',
+      why: 'Palavras: vassoura (versōria) — utensílio; folclore XIV sem receita; cacau; Valeu !!!',
+      whyEn: 'Words: vassoura (versōria) — broom; XIV folklore, no recipe; cacao; Valeu !!!',
+      whyEs: 'Palabras: vassoura (versōria) — escoba; folclore XIV sin receta; cacao; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -94,7 +94,7 @@ async function main() {
         post.sourceUrl,
         '/posts/post-inspecao-palavra-esfregar.html',
         '/biblioteca/unifesp/livro-xiv.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — história e curiosidades; tropano = documentar ≠ receitar.'
     };
@@ -151,7 +151,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    vassoura: { gloss: "Lat. versōria — utensílio de varrer; folclore da bruxa = hipótese XIV, não receita; cacau; Faça o melhor!", href: "/posts/post-inspecao-palavra-vassoura.html", en: "broom", es: "escoba", fr: "balai", it: "scopa", de: "Besen", el: "σκούπα", la: "versoria / scopa", yo: "ìgbálẹ̀", sw: "ufagio", gez: "mäṣfäri", nl: "bezem", pl: "miotła", ru: "metla", uk: "mitla", zh: "saozhou", ja: "hoki", ko: "bitjalu", ar: "miknasa", he: "matate", hi: "jhadu", tr: "süpürge", sv: "kvast", da: "kost", no: "kost", fi: "luuta", cs: "koště", ro: "mătură", hu: "seprű", ca: "escombra", gl: "vasoira", eu: "erratz", gn: "jaguaha", qu: "pichana", eo: "balailo", vi: "chổi", id: "sapu", th: "ไม้กวาด", hr: "metla", sk: "metla", ga: "scuab", cy: "ysgubell", ha: "tsintsiya", am: "መጥረጊያ", fa: "جارو", bn: "ঝাড়ু", zu: "umshanelo" },';
+      '    vassoura: { gloss: "Lat. versōria — utensílio de varrer; folclore da bruxa = hipótese XIV, não receita; cacau; Valeu !!!", href: "/posts/post-inspecao-palavra-vassoura.html", en: "broom", es: "escoba", fr: "balai", it: "scopa", de: "Besen", el: "σκούπα", la: "versoria / scopa", yo: "ìgbálẹ̀", sw: "ufagio", gez: "mäṣfäri", nl: "bezem", pl: "miotła", ru: "metla", uk: "mitla", zh: "saozhou", ja: "hoki", ko: "bitjalu", ar: "miknasa", he: "matate", hi: "jhadu", tr: "süpürge", sv: "kvast", da: "kost", no: "kost", fi: "luuta", cs: "koště", ro: "mătură", hu: "seprű", ca: "escombra", gl: "vasoira", eu: "erratz", gn: "jaguaha", qu: "pichana", eo: "balailo", vi: "chổi", id: "sapu", th: "ไม้กวาด", hr: "metla", sk: "metla", ga: "scuab", cy: "ysgubell", ha: "tsintsiya", am: "መጥረጊያ", fa: "جارو", bn: "ঝাড়ু", zu: "umshanelo" },';
     if (/vassoura:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    vassoura:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

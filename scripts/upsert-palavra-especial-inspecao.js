@@ -76,9 +76,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: especial — Lat. specialis (≠ Tupi); uso BR; meta em especial; rede originárias; Faça o melhor!',
-      whyEn: 'Words: especial — Lat. specialis (≠ Tupi); BR use; em especial meta; originary network; Do your best!',
-      whyEs: 'Palabras: especial — lat. specialis (≠ tupí); uso BR; meta em especial; red originaria; ¡Haz lo mejor!',
+      why: 'Palavras: especial — Lat. specialis (≠ Tupi); uso BR; meta em especial; rede originárias; Valeu !!!',
+      whyEn: 'Words: especial — Lat. specialis (≠ Tupi); BR use; em especial meta; originary network; Valeu !!!',
+      whyEs: 'Palabras: especial — lat. specialis (≠ tupí); uso BR; meta em especial; red originaria; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -88,7 +88,7 @@ async function main() {
         '/posts/post-inspecao-palavra-lingua-portuguesa.html',
         '/posts/post-inspecao-palavra-maconha.html',
         '/posts/post-inspecao-palavra-diamba.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. 36 — specialis × uso BR × rede originária (sem fingir tupi).'
     };
@@ -107,11 +107,11 @@ async function main() {
       id: 'especial',
       word: 'especial',
       simple:
-        'Lat. specialis (≠ Tupi) — particular / em especial; uso oral e ofício BR; porta para a rede das palavras originárias já fichadas; Faça o melhor!',
+        'Lat. specialis (≠ Tupi) — particular / em especial; uso oral e ofício BR; porta para a rede das palavras originárias já fichadas; Valeu !!!',
       simpleEn:
-        'Lat. specialis (≠ Tupi) — particular / especially; BR oral and craft use; door into the originary-words network on file; Do your best!',
+        'Lat. specialis (≠ Tupi) — particular / especially; BR oral and craft use; door into the originary-words network on file; Valeu !!!',
       simpleEs:
-        'Lat. specialis (≠ tupí) — particular / en especial; uso oral y oficio BR; puerta a la red de palabras originarias ya fichadas; ¡Haz lo mejor!',
+        'Lat. specialis (≠ tupí) — particular / en especial; uso oral y oficio BR; puerta a la red de palabras originarias ya fichadas; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -135,7 +135,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const rich =
-      '    especial: { gloss: "Lat. specialis (≠ Tupi) — particular; uso BR; meta «em especial»; rede originárias; Faça o melhor!", href: "/posts/post-inspecao-palavra-especial.html", en: "special / especially", es: "especial", fr: "spécial", it: "speciale", de: "besonders / speziell", el: "ειδικός", la: "specialis", yo: "pàtàkì", sw: "maalum", gez: "fəṣṣum", nl: "speciaal", pl: "szczególny", ru: "особый", uk: "особливий", zh: "特别的", ja: "特別な", ko: "특별한", ar: "خاص", he: "מיוחד", hi: "विशेष", tr: "özel", sv: "speciell", da: "særlig", no: "spesiell", fi: "erityinen", cs: "zvláštní", ro: "special", hu: "különleges", ca: "especial", gl: "especial", eu: "berezi", gn: "mba\'e porã", qu: "sapaq", eo: "speciala", vi: "đặc biệt", id: "khusus", th: "พิเศษ", hr: "poseban", sk: "špeciálny", ga: "speisialta", cy: "arbennig", ha: "na musamman", am: "ልዩ", fa: "ویژه", bn: "বিশেষ", zu: "okukhethekile" },';
+      '    especial: { gloss: "Lat. specialis (≠ Tupi) — particular; uso BR; meta «em especial»; rede originárias; Valeu !!!", href: "/posts/post-inspecao-palavra-especial.html", en: "special / especially", es: "especial", fr: "spécial", it: "speciale", de: "besonders / speziell", el: "ειδικός", la: "specialis", yo: "pàtàkì", sw: "maalum", gez: "fəṣṣum", nl: "speciaal", pl: "szczególny", ru: "особый", uk: "особливий", zh: "特别的", ja: "特別な", ko: "특별한", ar: "خاص", he: "מיוחד", hi: "विशेष", tr: "özel", sv: "speciell", da: "særlig", no: "spesiell", fi: "erityinen", cs: "zvláštní", ro: "special", hu: "különleges", ca: "especial", gl: "especial", eu: "berezi", gn: "mba\'e porã", qu: "sapaq", eo: "speciala", vi: "đặc biệt", id: "khusus", th: "พิเศษ", hr: "poseban", sk: "špeciálny", ga: "speisialta", cy: "arbennig", ha: "na musamman", am: "ልዩ", fa: "ویژه", bn: "বিশেষ", zu: "okukhethekile" },';
     if (/especial: \{[^}]*href: "\/posts\/post-inspecao-palavra-especial\.html"/.test(gloss)) {
       console.log('Glossário já tinha especial enriquecido');
     } else if (/especial: \{[\s\S]*?zu: "[^"]*" },/.test(gloss)) {

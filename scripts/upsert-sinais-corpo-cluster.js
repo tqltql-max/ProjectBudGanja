@@ -174,19 +174,19 @@ const ITEMS = [
   {
     build: buildOrelhaPost,
     sugId: 'palavra-orelha',
-    sugTitle: 'Orelha — pulga atrás, curiosidade',
-    sugTitleEn: 'Orelha — flea behind, curiosity',
-    sugTitleEs: 'Orelha — pulga detrás, curiosidad',
-    why: 'Palavras: orelha — pulga atrás da orelha = curiosidade.',
+    sugTitle: 'Orelha — pulga atrás e cola da boca',
+    sugTitleEn: 'Orelha — flea behind and ear-glue',
+    sugTitleEs: 'Orelha — pulga detrás y pegamento del oído',
+    why: 'Palavras: orelha — pulga atrás = curiosidade; a orelha cola cigarro×cigarra.',
     guiaId: 'orelha',
     guiaWord: 'orelha',
     guiaSimple:
-      'Orelha — pulga atrás = curiosidade; elos inseto, dois ouvidos; mapa sinais; Valeu !!!',
+      'Orelha — pulga atrás = curiosidade; cola cigarro×cigarra; elos inseto, dois ouvidos; Valeu !!!',
     guiaAfter: ['barriga', 'sinais'],
     glossKey: 'orelha',
     glossAfter: 'barriga',
     glossMain:
-      '    orelha: { gloss: "Lat. auricula — pulga atrás da orelha = curiosidade; mapa sinais; Valeu !!!", href: "/posts/post-inspecao-palavra-orelha.html", en: "ear", es: "oreja", fr: "oreille", it: "orecchio", de: "Ohr", el: "aftí", la: "auricula", yo: "etí", sw: "sikio", gez: "ʾəzn", nl: "oor", pl: "ucho", ru: "ukho", uk: "vukho", zh: "erduo", ja: "mimi", ko: "gwi", ar: "udhun", he: "ozen", hi: "kaan", tr: "kulak", sv: "ora", da: "ore", no: "ore", fi: "korva", cs: "ucho", ro: "ureche", hu: "ful", ca: "orella", gl: "orella", eu: "belarri", gn: "nambi", qu: "rinri", eo: "orelo", vi: "tai", id: "telinga", th: "หู", hr: "uho", sk: "ucho", ga: "cluain", cy: "clust", ha: "kunne", am: "ጆሮ", fa: "gush", bn: "কান", zu: "indlebe" },\n',
+      '    orelha: { gloss: "Lat. auricula — pulga atrás = curiosidade; a orelha cola cigarro×cigarra; Valeu !!!", href: "/posts/post-inspecao-palavra-orelha.html", en: "ear", es: "oreja", fr: "oreille", it: "orecchio", de: "Ohr", el: "aftí", la: "auricula", yo: "etí", sw: "sikio", gez: "ʾəzn", nl: "oor", pl: "ucho", ru: "ukho", uk: "vukho", zh: "erduo", ja: "mimi", ko: "gwi", ar: "udhun", he: "ozen", hi: "kaan", tr: "kulak", sv: "ora", da: "ore", no: "ore", fi: "korva", cs: "ucho", ro: "ureche", hu: "ful", ca: "orella", gl: "orella", eu: "belarri", gn: "nambi", qu: "rinri", eo: "orelo", vi: "tai", id: "telinga", th: "หู", hr: "uho", sk: "ucho", ga: "cluain", cy: "clust", ha: "kunne", am: "ጆሮ", fa: "gush", bn: "কান", zu: "indlebe" },\n',
     glossAliases:
       '    pulga: { gloss: "Na fala BR, peça da locução pulga atrás da orelha — curiosidade; o bicho vai em inseto.", href: "/posts/post-inspecao-palavra-orelha.html", en: "flea (idiom)", es: "pulga (dicho)" },\n' +
       '    curiosidade: { gloss: "Sinal da orelha (pulga atrás) — inspecionar, não sentenciar.", href: "/posts/post-inspecao-palavra-orelha.html", en: "curiosity", es: "curiosidad" },\n'

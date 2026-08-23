@@ -89,9 +89,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: daninha (dano+-inha) — planta daninha como juízo de lugar; planta/cultivo/selvagem; Faça o melhor!',
-      whyEn: 'Words: daninha (dano+-inha) — weed as place-judgment; planta/cultivo/selvagem; Do your best!',
-      whyEs: 'Palabras: daninha (dano+-inha) — planta daninha como juicio de lugar; planta/cultivo/selvagem; ¡Haz lo mejor!',
+      why: 'Palavras: daninha (dano+-inha) — planta daninha como juízo de lugar; planta/cultivo/selvagem; Valeu !!!',
+      whyEn: 'Words: daninha (dano+-inha) — weed as place-judgment; planta/cultivo/selvagem; Valeu !!!',
+      whyEs: 'Palabras: daninha (dano+-inha) — planta daninha como juicio de lugar; planta/cultivo/selvagem; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -100,7 +100,7 @@ async function main() {
         '/posts/post-inspecao-palavra-planta.html',
         '/cultivo/',
         '/posts/post-inspecao-palavra-selvagem.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — weed ≠ maconha; juízo relativo ao plano.'
     };
@@ -119,11 +119,11 @@ async function main() {
       id: 'daninha',
       word: 'daninha',
       simple:
-        'Dano + -inha — planta daninha como juízo de lugar no cultivo; elos planta/selvagem; Faça o melhor com o juízo certo.',
+        'Dano + -inha — planta daninha como juízo de lugar no cultivo; elos planta/selvagem; Valeu !!! com o juízo certo.',
       simpleEn:
-        'Dano + -inha — weed as place-judgment in cultivation; links planta/selvagem; Do your best with the right judgment.',
+        'Dano + -inha — weed as place-judgment in cultivation; links planta/selvagem; Valeu !!! with the right judgment.',
       simpleEs:
-        'Dano + -inha — planta daninha como juicio de lugar; vínculos planta/selvagem; Haz lo mejor con el juicio correcto.',
+        'Dano + -inha — planta daninha como juicio de lugar; vínculos planta/selvagem; Valeu !!! con el juicio correcto.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -147,7 +147,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    daninha: { gloss: "Dano + -inha — planta daninha como juízo de lugar; elos planta/cultivo/selvagem; Faça o melhor!", href: "/posts/post-inspecao-palavra-daninha.html", en: "weed (agronomic)", es: "maleza / danina", fr: "mauvaise herbe", it: "malerba", de: "Unkraut", el: "zizanio", la: "herba noxia", yo: "ewe buburu", sw: "magugu", gez: "asar", nl: "onkruid", pl: "chwast", ru: "sorniak", uk: "burian", zh: "zacao", ja: "zasso", ko: "japcho", ar: "hashish dar", he: "esev", hi: "gajar ghas", tr: "yaban otu", sv: "ogras", da: "ukrudt", no: "ugress", fi: "rikkaruoho", cs: "plevel", ro: "buruiana", hu: "gyom", ca: "mala herba", gl: "mala herba", eu: "belar txar", gn: "kaaigo", qu: "qura", eo: "malherbo", vi: "co dai", id: "gulma", th: "weed", hr: "korov", sk: "burina", ga: "fiaile", cy: "chwyn", ha: "cive", am: "sar", fa: "alaf", bn: "agacha", zu: "ukhula" },';
+      '    daninha: { gloss: "Dano + -inha — planta daninha como juízo de lugar; elos planta/cultivo/selvagem; Valeu !!!", href: "/posts/post-inspecao-palavra-daninha.html", en: "weed (agronomic)", es: "maleza / danina", fr: "mauvaise herbe", it: "malerba", de: "Unkraut", el: "zizanio", la: "herba noxia", yo: "ewe buburu", sw: "magugu", gez: "asar", nl: "onkruid", pl: "chwast", ru: "sorniak", uk: "burian", zh: "zacao", ja: "zasso", ko: "japcho", ar: "hashish dar", he: "esev", hi: "gajar ghas", tr: "yaban otu", sv: "ogras", da: "ukrudt", no: "ugress", fi: "rikkaruoho", cs: "plevel", ro: "buruiana", hu: "gyom", ca: "mala herba", gl: "mala herba", eu: "belar txar", gn: "kaaigo", qu: "qura", eo: "malherbo", vi: "co dai", id: "gulma", th: "weed", hr: "korov", sk: "burina", ga: "fiaile", cy: "chwyn", ha: "cive", am: "sar", fa: "alaf", bn: "agacha", zu: "ukhula" },';
     if (/daninha:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    daninha:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: Orfeu (gr. Ὀρφεύς) — mito da lira; BR Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo; Faça o melhor!',
-      whyEn: 'Words: Orfeu / Orpheus — lyre myth; BR Black Orpheus; ear-glue with Matrix Morpheus, not the same etymon; Do your best!',
-      whyEs: 'Palabras: Orfeu — mito de la lira; BR Orfeu Negro; pegamento de oído con Morpheus de Matrix, no el mismo étimo; ¡Haz lo mejor!',
+      why: 'Palavras: Orfeu (gr. Ὀρφεύς) — mito da lira; BR Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo; Valeu !!!',
+      whyEn: 'Words: Orfeu / Orpheus — lyre myth; BR Black Orpheus; ear-glue with Matrix Morpheus, not the same etymon; Valeu !!!',
+      whyEs: 'Palabras: Orfeu — mito de la lira; BR Orfeu Negro; pegamento de oído con Morpheus de Matrix, no el mismo étimo; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -96,7 +96,7 @@ async function main() {
         'https://en.wiktionary.org/wiki/Morpheus',
         '/posts/post-inspecao-filme-the-matrix.html',
         '/posts/post-inspecao-figura-tom-jobim.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — Orfeu ≠ Morpheus / Morfeu; ouvido cola, étimo não.'
     };
@@ -115,11 +115,11 @@ async function main() {
       id: 'orfeu',
       word: 'Orfeu',
       simple:
-        'Nome / mitónimo PT ← lat. Orpheus ← gr. Ὀρφεύς (étimo incerto); mito da lira e Eurídice; no BR, Orfeu da Conceição / Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo (Morfeu ← morphē); Faça o melhor!',
+        'Nome / mitónimo PT ← lat. Orpheus ← gr. Ὀρφεύς (étimo incerto); mito da lira e Eurídice; no BR, Orfeu da Conceição / Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo (Morfeu ← morphē); Valeu !!!',
       simpleEn:
-        'PT name / mythonym ← Lat. Orpheus ← Gk. Ὀρφεύς (uncertain etymon); lyre and Eurydice; in BR, Black Orpheus; ear-glue with Matrix Morpheus, not the same etymon (Morpheus ← morphē); Do your best!',
+        'PT name / mythonym ← Lat. Orpheus ← Gk. Ὀρφεύς (uncertain etymon); lyre and Eurydice; in BR, Black Orpheus; ear-glue with Matrix Morpheus, not the same etymon (Morpheus ← morphē); Valeu !!!',
       simpleEs:
-        'Nombre / mitónimo PT ← lat. Orpheus ← gr. Ὀρφεύς (étimo incerto); lira y Eurídice; en BR, Orfeu Negro; pegamento de oído con Morpheus de Matrix, no el mismo étimo (Morfeo ← morphē); ¡Haz lo mejor!',
+        'Nombre / mitónimo PT ← lat. Orpheus ← gr. Ὀρφεύς (étimo incerto); lira y Eurídice; en BR, Orfeu Negro; pegamento de oído con Morpheus de Matrix, no el mismo étimo (Morfeo ← morphē); ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href,
@@ -153,9 +153,9 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    orfeu: { gloss: "Nome/mitónimo ← Ὀρφεύς (étimo incerto); lira e Eurídice; BR Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo (Morfeu ← morphē); Faça o melhor!", href: "/posts/post-inspecao-palavra-orfeu.html", en: "Orpheus", es: "Orfeo", fr: "Orphée", it: "Orfeo", de: "Orpheus", yo: "Orfeu", sw: "Orfeu", gez: "Orfeu", el: "Ορφεύς", la: "Orpheus", nl: "Orpheus", pl: "Orfeusz", ru: "Орфей", uk: "Орфей", zh: "俄耳甫斯", ja: "オルフェウス", ko: "오르페우스", ar: "أورفيوس", he: "אורפאוס", hi: "ऑर्फियस", tr: "Orfeus", sv: "Orfeus", da: "Orfeus", no: "Orfeus", fi: "Orfeus", cs: "Orfeus", ro: "Orfeu", hu: "Orfeusz", ca: "Orfeu", gl: "Orfeo", eu: "Orfeo", gn: "Orfeu", qu: "Orfeu", eo: "Orfeo", vi: "Orpheus", id: "Orfeus", th: "ออร์ฟิวส์", hr: "Orfej", sk: "Orfeus", ga: "Orpheus", cy: "Orffews", ha: "Orfeu", am: "ኦርፌውስ", fa: "اورفئوس", bn: "অর্ফিয়াস", zu: "u-Orfeu" },';
+      '    orfeu: { gloss: "Nome/mitónimo ← Ὀρφεύς (étimo incerto); lira e Eurídice; BR Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo (Morfeu ← morphē); Valeu !!!", href: "/posts/post-inspecao-palavra-orfeu.html", en: "Orpheus", es: "Orfeo", fr: "Orphée", it: "Orfeo", de: "Orpheus", yo: "Orfeu", sw: "Orfeu", gez: "Orfeu", el: "Ορφεύς", la: "Orpheus", nl: "Orpheus", pl: "Orfeusz", ru: "Орфей", uk: "Орфей", zh: "俄耳甫斯", ja: "オルフェウス", ko: "오르페우스", ar: "أورفيوس", he: "אורפאוס", hi: "ऑर्फियस", tr: "Orfeus", sv: "Orfeus", da: "Orfeus", no: "Orfeus", fi: "Orfeus", cs: "Orfeus", ro: "Orfeu", hu: "Orfeusz", ca: "Orfeu", gl: "Orfeo", eu: "Orfeo", gn: "Orfeu", qu: "Orfeu", eo: "Orfeo", vi: "Orpheus", id: "Orfeus", th: "ออร์ฟิวส์", hr: "Orfej", sk: "Orfeus", ga: "Orpheus", cy: "Orffews", ha: "Orfeu", am: "ኦርፌውስ", fa: "اورفئوس", bn: "অর্ফিয়াস", zu: "u-Orfeu" },';
     const morpheusLine =
-      '    morpheus: { gloss: "Personagem Matrix (Fishburne) ← Morfeu / μορφή morphē = forma; ≠ Orfeu (Ὀρφεύς); cola de ouvido, não de étimo; Faça o melhor!", href: "/posts/post-inspecao-filme-the-matrix.html", en: "Morpheus", es: "Morpheus", fr: "Morpheus", it: "Morpheus", de: "Morpheus", yo: "Morpheus", sw: "Morpheus", gez: "Morpheus", el: "Μορφεύς", la: "Morpheus", nl: "Morpheus", pl: "Morfeusz", ru: "Морфей", uk: "Морфей", zh: "墨菲斯", ja: "モーフィウス", ko: "모피어스", ar: "مورفيوس", he: "מורפיאוס", hi: "मॉर्फियस", tr: "Morpheus", sv: "Morpheus", da: "Morpheus", no: "Morpheus", fi: "Morpheus", cs: "Morpheus", ro: "Morpheus", hu: "Morpheus", ca: "Morpheus", gl: "Morpheus", eu: "Morpheus", gn: "Morpheus", qu: "Morpheus", eo: "Morfeuso", vi: "Morpheus", id: "Morpheus", th: "มอร์เฟียส", hr: "Morfej", sk: "Morfeus", ga: "Morpheus", cy: "Morffews", ha: "Morpheus", am: "ሞርፊየስ", fa: "مورفیوس", bn: "মর্ফিয়াস", zu: "u-Morpheus" },';
+      '    morpheus: { gloss: "Personagem Matrix (Fishburne) ← Morfeu / μορφή morphē = forma; ≠ Orfeu (Ὀρφεύς); cola de ouvido, não de étimo; Valeu !!!", href: "/posts/post-inspecao-filme-the-matrix.html", en: "Morpheus", es: "Morpheus", fr: "Morpheus", it: "Morpheus", de: "Morpheus", yo: "Morpheus", sw: "Morpheus", gez: "Morpheus", el: "Μορφεύς", la: "Morpheus", nl: "Morpheus", pl: "Morfeusz", ru: "Морфей", uk: "Морфей", zh: "墨菲斯", ja: "モーフィウス", ko: "모피어스", ar: "مورفيوس", he: "מורפיאוס", hi: "मॉर्फियस", tr: "Morpheus", sv: "Morpheus", da: "Morpheus", no: "Morpheus", fi: "Morpheus", cs: "Morpheus", ro: "Morpheus", hu: "Morpheus", ca: "Morpheus", gl: "Morpheus", eu: "Morpheus", gn: "Morpheus", qu: "Morpheus", eo: "Morfeuso", vi: "Morpheus", id: "Morpheus", th: "มอร์เฟียส", hr: "Morfej", sk: "Morfeus", ga: "Morpheus", cy: "Morffews", ha: "Morpheus", am: "ሞርፊየስ", fa: "مورفیوس", bn: "মর্ফিয়াস", zu: "u-Morpheus" },';
     if (/orfeu:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    orfeu:\s*\{[\s\S]*?\},/, entryLine);
       console.log('Glossário: orfeu enriquecida');
@@ -185,7 +185,7 @@ async function main() {
       const maraBlock =
         /("slug": "post-inspecao-palavra-mara",\s*"description": "[^"]*"\s*\},)/;
       const insert =
-        '$1\n            {\n              "label": "Inspeção: Orfeu — o nome, a lira e o Morpheus que não é ele",\n              "tileLabel": "Inspeção: Orfeu — o nome, a lir…",\n              "href": "/posts/post-inspecao-palavra-orfeu.html",\n              "icon": "🔍",\n              "slug": "post-inspecao-palavra-orfeu",\n              "description": "Palavras: «Orfeu» (gr. Ὀρφεύς) — mito da lira; BR Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo; Faça o melhor!"\n            },';
+        '$1\n            {\n              "label": "Inspeção: Orfeu — o nome, a lira e o Morpheus que não é ele",\n              "tileLabel": "Inspeção: Orfeu — o nome, a lir…",\n              "href": "/posts/post-inspecao-palavra-orfeu.html",\n              "icon": "🔍",\n              "slug": "post-inspecao-palavra-orfeu",\n              "description": "Palavras: «Orfeu» (gr. Ὀρφεύς) — mito da lira; BR Orfeu Negro; cola de ouvido com Morpheus do Matrix, não de étimo; Valeu !!!"\n            },';
       if (maraBlock.test(nav)) {
         nav = nav.replace(maraBlock, insert);
         fs.writeFileSync(navPath, nav);

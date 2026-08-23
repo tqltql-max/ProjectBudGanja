@@ -80,16 +80,16 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: «já» × «aff» — tempo/urgência e enfado; fecho vazio = ressalva; Faça o melhor.',
-      whyEn: 'Words: “já” × “aff” — time/urgency and exasperation; empty close = caveat; Do your best.',
-      whyEs: 'Palabras: «já» × «aff» — tiempo/urgencia y hastío; cierre vacío = salvedad; Haz lo mejor.',
+      why: 'Palavras: «já» × «aff» — tempo/urgência e enfado; fecho vazio = ressalva; Valeu !!!',
+      whyEn: 'Words: “já” × “aff” — time/urgency and exasperation; empty close = caveat; Valeu !!!',
+      whyEs: 'Palabras: «já» × «aff» — tiempo/urgencia y hastío; cierre vacío = salvedad; Valeu !!!',
       suggestedSlug: ja.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
       sources: [
         'https://pt.wiktionary.org/wiki/j%C3%A1',
         affHref,
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. 29 — par oral aff×já; não confundir com código ja (japonês).'
     };

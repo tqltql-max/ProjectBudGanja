@@ -142,7 +142,7 @@ async function main() {
         '/posts/post-inspecao-palavra-tempo.html',
         '/posts/post-inspecao-palavra-medo.html',
         '/posts/post-inspecao-palavra-risco.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -164,11 +164,11 @@ async function main() {
       id: 'sexta-feira-13',
       word: 'sexta-feira 13',
       simple:
-        'Data, não azar: quando o 13 cai à sexta; 13 de novembro de 2026 é um dia qualquer; estreias da franquia no dia 13 = calendário, não o objecto; Faça o melhor!',
+        'Data, não azar: quando o 13 cai à sexta; 13 de novembro de 2026 é um dia qualquer; estreias da franquia no dia 13 = calendário, não o objecto; Valeu !!!',
       simpleEn:
-        'A date, not a curse: when the 13th falls on Friday; 13 November 2026 is an ordinary day; franchise openings on the 13th = calendar, not the object; Do your best!',
+        'A date, not a curse: when the 13th falls on Friday; 13 November 2026 is an ordinary day; franchise openings on the 13th = calendar, not the object; Valeu !!!',
       simpleEs:
-        'Fecha, no mala suerte: cuando el 13 cae en viernes; el 13 de noviembre de 2026 es un día cualquiera; estrenos de la franquicia el 13 = calendario, no el objeto; ¡Haz lo mejor!',
+        'Fecha, no mala suerte: cuando el 13 cae en viernes; el 13 de noviembre de 2026 es un día cualquiera; estrenos de la franquicia el 13 = calendario, no el objeto; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href,
@@ -198,7 +198,7 @@ async function main() {
   if (fs.existsSync(GLOSS_FILE)) {
     let gloss = fs.readFileSync(GLOSS_FILE, 'utf8');
     const mainLine =
-      '    "sexta-feira 13": { tone: "caution", category: "Calendário", mundane: "Quando o dia 13 cai à sexta — só uma data.", gloss: "Data, não azar; 13 nov. 2026 é sexta e é um dia qualquer; estreias da franquia no dia 13 = calendário, não o objecto; Faça o melhor!", href: "/posts/post-inspecao-palavra-sexta-feira-13.html", en: "Friday the 13th", es: "viernes 13", fr: "vendredi 13", it: "venerdì 13", de: "Freitag der 13.", el: "Paraskevi 13", la: "dies Veneris XIII", yo: "Friday 13", sw: "Ijumaa tarehe 13", gez: "Friday 13", nl: "vrijdag de 13e", pl: "piątek 13", ru: "pyatnitsa 13", uk: "pyatnytsia 13", zh: "13hao xingqiwu", ja: "13-nichi no kinyobi", ko: "13il geumyoil", ar: "aljumua 13", he: "yom shishi 13", hi: "shukravaar 13", tr: "cuma 13", sv: "fredagen den 13:e", da: "fredag den 13.", no: "fredag den 13.", fi: "perjantai 13.", cs: "patek 13.", ro: "vineri 13", hu: "pentek 13", ca: "divendres 13", gl: "venres 13", eu: "ostiral 13", gn: "aravo 13", qu: "ch\'askachaw 13", eo: "vendredo la 13-a", vi: "thu Sau ngay 13", id: "Jumat tanggal 13", th: "ศุกร์ 13", hr: "petak 13.", sk: "piatok 13.", ga: "Aoine an 13ú", cy: "Gwener y 13eg", ha: "Jumma\'a 13", am: "Arbe 13", fa: "jome 13", bn: "শুক্রবার ১৩", zu: "uLwesihlanu 13" },\n';
+      '    "sexta-feira 13": { tone: "caution", category: "Calendário", mundane: "Quando o dia 13 cai à sexta — só uma data.", gloss: "Data, não azar; 13 nov. 2026 é sexta e é um dia qualquer; estreias da franquia no dia 13 = calendário, não o objecto; Valeu !!!", href: "/posts/post-inspecao-palavra-sexta-feira-13.html", en: "Friday the 13th", es: "viernes 13", fr: "vendredi 13", it: "venerdì 13", de: "Freitag der 13.", el: "Paraskevi 13", la: "dies Veneris XIII", yo: "Friday 13", sw: "Ijumaa tarehe 13", gez: "Friday 13", nl: "vrijdag de 13e", pl: "piątek 13", ru: "pyatnitsa 13", uk: "pyatnytsia 13", zh: "13hao xingqiwu", ja: "13-nichi no kinyobi", ko: "13il geumyoil", ar: "aljumua 13", he: "yom shishi 13", hi: "shukravaar 13", tr: "cuma 13", sv: "fredagen den 13:e", da: "fredag den 13.", no: "fredag den 13.", fi: "perjantai 13.", cs: "patek 13.", ro: "vineri 13", hu: "pentek 13", ca: "divendres 13", gl: "venres 13", eu: "ostiral 13", gn: "aravo 13", qu: "ch\'askachaw 13", eo: "vendredo la 13-a", vi: "thu Sau ngay 13", id: "Jumat tanggal 13", th: "ศุกร์ 13", hr: "petak 13.", sk: "piatok 13.", ga: "Aoine an 13ú", cy: "Gwener y 13eg", ha: "Jumma\'a 13", am: "Arbe 13", fa: "jome 13", bn: "শুক্রবার ১৩", zu: "uLwesihlanu 13" },\n';
     if (/"sexta-feira 13":\s*\{/.test(gloss)) {
       gloss = gloss.replace(
         /    "sexta-feira 13":\s*\{[\s\S]*?\},/,

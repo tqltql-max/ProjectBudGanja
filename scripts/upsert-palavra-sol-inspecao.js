@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: sol (lat. sol) — astro e luz natural; elo luz; contraste interruptor; ≠ solitário; Faça o melhor!',
-      whyEn: 'Words: sol (Lat. sol) — star and natural light; link luz; contrast interruptor; ≠ solitário; Do your best!',
-      whyEs: 'Palabras: sol (lat. sol) — astro y luz natural; vínculo luz; contraste interruptor; ≠ solitário; ¡Haz lo mejor!',
+      why: 'Palavras: sol (lat. sol) — astro e luz natural; elo luz; contraste interruptor; ≠ solitário; Valeu !!!',
+      whyEn: 'Words: sol (Lat. sol) — star and natural light; link luz; contrast interruptor; ≠ solitário; Valeu !!!',
+      whyEs: 'Palabras: sol (lat. sol) — astro y luz natural; vínculo luz; contraste interruptor; ≠ solitário; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -98,7 +98,7 @@ async function main() {
         '/posts/post-inspecao-palavra-interruptor.html',
         '/posts/post-inspecao-palavra-fogo.html',
         '/posts/post-inspecao-palavra-solitario.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — fonte natural vs luz de circuito; ≠ solitário.'
     };
@@ -117,11 +117,11 @@ async function main() {
       id: 'sol',
       word: 'sol',
       simple:
-        'Lat. sol — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Faça o melhor com a luz do dia.',
+        'Lat. sol — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Valeu !!! com a luz do dia.',
       simpleEn:
-        'Lat. sol — star and natural light; link luz; contrast with interruptor; ≠ solitário; Do your best with daylight.',
+        'Lat. sol — star and natural light; link luz; contrast with interruptor; ≠ solitário; Valeu !!! with daylight.',
       simpleEs:
-        'Lat. sol — astro y luz natural; vínculo luz; contraste con interruptor; ≠ solitário; Haz lo mejor con la luz del día.',
+        'Lat. sol — astro y luz natural; vínculo luz; contraste con interruptor; ≠ solitário; Valeu !!! con la luz del día.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -145,7 +145,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    sol: { gloss: "Lat. sol — astro e luz natural; elo luz; contraste interruptor; ≠ solitário; Faça o melhor!", href: "/posts/post-inspecao-palavra-sol.html", en: "sun", es: "sol", fr: "soleil", it: "sole", de: "Sonne", el: "ilios", la: "sol", yo: "oorun", sw: "jua", gez: "dahay", nl: "zon", pl: "slonce", ru: "solntse", uk: "sontse", zh: "taiyang", ja: "taiyo", ko: "태양", ar: "shams", he: "shemesh", hi: "suraj", tr: "gunes", sv: "sol", da: "sol", no: "sol", fi: "aurinko", cs: "slunce", ro: "soare", hu: "nap", ca: "sol", gl: "sol", eu: "eguzki", gn: "kuarahy", qu: "inti", eo: "suno", vi: "mat troi", id: "matahari", th: "sun", hr: "sunce", sk: "slnko", ga: "grian", cy: "haul", ha: "rana", am: "tsehày", fa: "khorshid", bn: "surjo", zu: "ilanga" },';
+      '    sol: { gloss: "Lat. sol — astro e luz natural; elo luz; contraste interruptor; ≠ solitário; Valeu !!!", href: "/posts/post-inspecao-palavra-sol.html", en: "sun", es: "sol", fr: "soleil", it: "sole", de: "Sonne", el: "ilios", la: "sol", yo: "oorun", sw: "jua", gez: "dahay", nl: "zon", pl: "slonce", ru: "solntse", uk: "sontse", zh: "taiyang", ja: "taiyo", ko: "태양", ar: "shams", he: "shemesh", hi: "suraj", tr: "gunes", sv: "sol", da: "sol", no: "sol", fi: "aurinko", cs: "slunce", ro: "soare", hu: "nap", ca: "sol", gl: "sol", eu: "eguzki", gn: "kuarahy", qu: "inti", eo: "suno", vi: "mat troi", id: "matahari", th: "sun", hr: "sunce", sk: "slnko", ga: "grian", cy: "haul", ha: "rana", am: "tsehày", fa: "khorshid", bn: "surjo", zu: "ilanga" },';
     // Avoid matching solitario/solitário
     if (/\n    sol:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/\n    sol:\s*\{[\s\S]*?\},/, '\n' + entryLine);

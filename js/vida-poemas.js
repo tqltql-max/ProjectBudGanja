@@ -61,8 +61,12 @@
       t === 'valeu' ||
       t === 'faça o melhor' ||
       t === 'faca o melhor' ||
+      t === 'faça o seu melhor' ||
+      t === 'faça seu melhor' ||
+      t === 'faça seu melhor como sempre' ||
       t === 'do your best' ||
-      t === 'haz lo mejor'
+      t === 'haz lo mejor' ||
+      t === 'haz tu mejor'
     );
   }
 

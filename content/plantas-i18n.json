@@ -1139,6 +1139,32 @@
       ],
       "cautionsEn": "Contraindicated in pregnancy and nursing. Not recommended under age 12. People on hypoglycemics: monitor glucose — tea does not replace medicine. Avoid excessive or prolonged use without guidance. Do not confuse with kitchen rosemary (*Salvia rosmarinus*) or carqueja (*Baccharis trimera*). Educational — avoid self-medication.",
       "cautionsEs": "Contraindicado en embarazo y lactancia. No recomendado menores de 12 años. Diabéticos con hipoglucemiantes: monitorizar glucosa — el té no sustituye fármaco. Evitar uso excesivo o prolongado sin orientación. No confundir con romero de cocina (*Salvia rosmarinus*) ni carqueja (*Baccharis trimera*). Contenido educativo — evite automedicación."
+    },
+    "marolo": {
+      "nomePopularEn": "Marolo (Cerrado araticum)",
+      "nomePopularEs": "Marolo (araticum del Cerrado)",
+      "summaryEn": "Native Cerrado Annonaceae (*Annona crassiflora*): marolo / araticum — creamy pulp, many seeds; this sheet separates the whole fruit from passion fruit, papaya, sugar-apple and soursop, and from industrial nectars and sweets.",
+      "summaryEs": "Anonácea nativa del Cerrado (*Annona crassiflora*): marolo / araticum — pulpa cremosa, muchas semillas; la ficha separa el fruto entero de maracuyá, papaya, anón y guanábana, y de néctares y dulces industriales.",
+      "partsUsedEn": [
+        "Fruit (ripe fresh pulp)",
+        "Low-process culinary uses (home sweet, juice, ice cream)"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa fresca madura)",
+        "Usos culinarios de bajo procesamiento (dulce, jugo, helado caseros)"
+      ],
+      "traditionalUsesEn": [
+        "Ripe pulp (market, yard, Cerrado / Minas Gerais)",
+        "Home sweets and juices without ultra-processing",
+        "Food culture of araticum / marolo in the Cerrado"
+      ],
+      "traditionalUsesEs": [
+        "Pulpa madura (feria, patio, Cerrado / Minas Gerais)",
+        "Dulces y jugos caseros sin ultraprocesamiento",
+        "Cultura alimentaria del araticum / marolo en el Cerrado"
+      ],
+      "cautionsEn": "Ripe pulp is traditional food. Annonaceae seeds and leaves are not a generic tea or home extract. Do not confuse with passion fruit, papaya, sugar-apple or soursop. Industrial sugary derivatives belong in Risk derivatives. Educational — not professional advice or biome management.",
+      "cautionsEs": "La pulpa madura es alimento tradicional. Semillas y hojas de Annonaceae no son té genérico ni extracto casero. No confundir con maracuyá, papaya, anón o guanábana. Derivados industriales azucarados entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
     }
   }
 }

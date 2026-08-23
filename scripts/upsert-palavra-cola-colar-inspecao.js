@@ -149,7 +149,7 @@ async function main() {
         'https://pt.wikipedia.org/wiki/Pipa_(brinquedo)',
         '/posts/post-inspecao-palavra-risco.html',
         '/posts/post-inspecao-palavra-aglutinacao.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -267,7 +267,7 @@ async function main() {
     let gloss = fs.readFileSync(GLOSS_FILE, 'utf8');
     const hrefGloss = '/posts/post-inspecao-palavra-cola-colar.html';
     const block =
-      '    cola: { tone: "caution", category: "Grude", mundane: "Substância que pega; no BR também cola de prova.", gloss: "Gr. kólla — grude; cadeia BR colante/cortante/cerol/pipa/linha; Brasil com P de Perigo; ≠ refrigerante ≠ jóia; ficha ≠ receita; Faça o melhor!", href: "' +
+      '    cola: { tone: "caution", category: "Grude", mundane: "Substância que pega; no BR também cola de prova.", gloss: "Gr. kólla — grude; cadeia BR colante/cortante/cerol/pipa/linha; Brasil com P de Perigo; ≠ refrigerante ≠ jóia; ficha ≠ receita; Valeu !!!", href: "' +
       hrefGloss +
       '", en: "glue", es: "pegamento", fr: "colle", it: "colla", de: "Kleber", el: "κόλλα", la: "colla", yo: "lemọ", sw: "gundi", gez: "cola", nl: "lijm", pl: "klej", ru: "клей", uk: "клей", zh: "胶水", ja: "のり", ko: "풀", ar: "صمغ", he: "דבק", hi: "गोंद", tr: "tutkal", sv: "lim", da: "lim", no: "lim", fi: "liima", cs: "lepidlo", ro: "clei", hu: "ragaszto", ca: "cola", gl: "cola", eu: "kola", gn: "kyta", qu: "qata", eo: "gluo", vi: "keo", id: "lem", th: "กาว", hr: "ljepilo", sk: "lepidlo", ga: "gliu", cy: "glud", ha: "manya", am: "ማጣበቂያ", fa: "چسب", bn: "আঠা", zu: "iglu" },\n' +
       '    colar: { tone: "caution", gloss: "Verbo: pegar / copiar / andar junto; jóia = collum (outro étimo); cadeia pipa nesta ficha; P de Perigo.", href: "' +

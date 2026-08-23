@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: insana (in-+sanus) — intensidade BR; ≠ diagnóstico; verdade/respeito; Faça o melhor!',
-      whyEn: 'Words: insana (in-+sanus) — BR intensity; ≠ diagnosis; truth/respect; Do your best!',
-      whyEs: 'Palabras: insana (in-+sanus) — intensidad BR; ≠ diagnóstico; verdad/respeto; ¡Haz lo mejor!',
+      why: 'Palavras: insana (in-+sanus) — intensidade BR; ≠ diagnóstico; verdade/respeito; Valeu !!!',
+      whyEn: 'Words: insana (in-+sanus) — BR intensity; ≠ diagnosis; truth/respect; Valeu !!!',
+      whyEs: 'Palabras: insana (in-+sanus) — intensidad BR; ≠ diagnóstico; verdad/respeto; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -94,7 +94,7 @@ async function main() {
         post.sourceUrl,
         '/posts/post-inspecao-palavra-verdade.html',
         '/posts/post-inspecao-palavra-respeito.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — hipérbole ≠ insulto ≠ clínica.'
     };
@@ -113,11 +113,11 @@ async function main() {
       id: 'insana',
       word: 'insana',
       simple:
-        'Lat. insanus (in- + sanus) — intensidade/excesso no BR; ≠ diagnóstico; verdade e respeito; Faça o melhor.',
+        'Lat. insanus (in- + sanus) — intensidade/excesso no BR; ≠ diagnóstico; verdade e respeito; Valeu !!!',
       simpleEn:
-        'Lat. insanus (in- + sanus) — intensity/excess in BR; ≠ diagnosis; truth and respect; Do your best.',
+        'Lat. insanus (in- + sanus) — intensity/excess in BR; ≠ diagnosis; truth and respect; Valeu !!!',
       simpleEs:
-        'Lat. insanus (in- + sanus) — intensidad/exceso en BR; ≠ diagnóstico; verdad y respeto; Haz lo mejor.',
+        'Lat. insanus (in- + sanus) — intensidad/exceso en BR; ≠ diagnóstico; verdad y respeto; Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -139,7 +139,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    insana: { gloss: "Lat. insanus (in-+sanus) — intensidade/excesso BR; ≠ diagnóstico; verdade/respeito; Faça o melhor!", href: "/posts/post-inspecao-palavra-insana.html", en: "insane (intensifier)", es: "insana", fr: "insensee", it: "insana", de: "wahnsinnig", el: "paraphron", la: "insana", yo: "asin", sw: "kichaa", gez: "dənsas", nl: "krankzinnig", pl: "szalona", ru: "bezumnaya", uk: "nenormalna", zh: "fengkuang", ja: "kichigai-kei", ko: "michin", ar: "majnuuna", he: "meshugaat", hi: "paagal", tr: "deli", sv: "vansinnig", da: "vanvittig", no: "vanvittig", fi: "hullu", cs: "silena", ro: "nebuneasca", hu: "orul", ca: "insana", gl: "insá", eu: "eroa", gn: "tavaí", qu: "muspha", eo: "freneza", vi: "dien", id: "gila", th: "บ้า", hr: "luda", sk: "silena", ga: "gealtach", cy: "gwallgof", ha: "hauka", am: "እብድ", fa: "divane", bn: "পাগল", zu: "uhlanya" },';
+      '    insana: { gloss: "Lat. insanus (in-+sanus) — intensidade/excesso BR; ≠ diagnóstico; verdade/respeito; Valeu !!!", href: "/posts/post-inspecao-palavra-insana.html", en: "insane (intensifier)", es: "insana", fr: "insensee", it: "insana", de: "wahnsinnig", el: "paraphron", la: "insana", yo: "asin", sw: "kichaa", gez: "dənsas", nl: "krankzinnig", pl: "szalona", ru: "bezumnaya", uk: "nenormalna", zh: "fengkuang", ja: "kichigai-kei", ko: "michin", ar: "majnuuna", he: "meshugaat", hi: "paagal", tr: "deli", sv: "vansinnig", da: "vanvittig", no: "vanvittig", fi: "hullu", cs: "silena", ro: "nebuneasca", hu: "orul", ca: "insana", gl: "insá", eu: "eroa", gn: "tavaí", qu: "muspha", eo: "freneza", vi: "dien", id: "gila", th: "บ้า", hr: "luda", sk: "silena", ga: "gealtach", cy: "gwallgof", ha: "hauka", am: "እብድ", fa: "divane", bn: "পাগল", zu: "uhlanya" },';
     if (/insana:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    insana:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

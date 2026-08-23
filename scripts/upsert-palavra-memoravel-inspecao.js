@@ -95,9 +95,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: memorável (lat. memorabilis) — retenção digna; elogio BR; ≠ escala genial/especial; Faça o melhor!',
-      whyEn: 'Words: memorável (Lat. memorabilis) — worthy retention; BR praise; ≠ genial/especial scale; Do your best!',
-      whyEs: 'Palabras: memorável (lat. memorabilis) — retención digna; elogio BR; ≠ escala genial/especial; ¡Haz lo mejor!',
+      why: 'Palavras: memorável (lat. memorabilis) — retenção digna; elogio BR; ≠ escala genial/especial; Valeu !!!',
+      whyEn: 'Words: memorável (Lat. memorabilis) — worthy retention; BR praise; ≠ genial/especial scale; Valeu !!!',
+      whyEs: 'Palabras: memorável (lat. memorabilis) — retención digna; elogio BR; ≠ escala genial/especial; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -108,7 +108,7 @@ async function main() {
         '/posts/post-inspecao-palavra-especial.html',
         '/posts/post-inspecao-palavra-livro.html',
         '/posts/post-inspecao-filme-divertida-mente.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — memorabilis; retenção ≠ intensidade.'
     };
@@ -127,11 +127,11 @@ async function main() {
       id: 'memoravel',
       word: 'memorável',
       simple:
-        'Lat. memorabilis — digno de memória; elogio BR com rasto; retenção ≠ escala genial/especial; Faça o melhor!',
+        'Lat. memorabilis — digno de memória; elogio BR com rasto; retenção ≠ escala genial/especial; Valeu !!!',
       simpleEn:
-        'Lat. memorabilis — worth remembering; BR praise with a trace; retention ≠ genial/especial scale; Do your best!',
+        'Lat. memorabilis — worth remembering; BR praise with a trace; retention ≠ genial/especial scale; Valeu !!!',
       simpleEs:
-        'Lat. memorabilis — digno de memoria; elogio BR con rastro; retención ≠ escala genial/especial; ¡Haz lo mejor!',
+        'Lat. memorabilis — digno de memoria; elogio BR con rastro; retención ≠ escala genial/especial; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -155,7 +155,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const rich =
-      '    memoravel: { gloss: "Lat. memorabilis — digno de memória; elogio com rasto; retenção ≠ genial/especial; Faça o melhor!", href: "/posts/post-inspecao-palavra-memoravel.html", en: "memorable", es: "memorable", fr: "mémorable", it: "memorabile", de: "denkwürdig", el: "αξέχαστος", la: "memorabilis", yo: "àárínrán", sw: "ya kukumbukwa", gez: "zäkäre", nl: "gedenkwaardig", pl: "niezapomniany", ru: "памятный", uk: "пам\'ятний", zh: "难忘的", ja: "記憶に残る", ko: "기억에 남는", ar: "لا يُنسى", he: "בלתי נשכח", hi: "यादगार", tr: "unutulmaz", sv: "minnesvärd", da: "mindeværdig", no: "minneverdig", fi: "ikimuistoinen", cs: "nezapomenutelný", ro: "memorabil", hu: "emlékezetes", ca: "memorable", gl: "memorable", eu: "ahaztezin", gn: "mandu\'arã", qu: "yuyarina", eo: "memoriginda", vi: "đáng nhớ", id: "berkesan", th: "น่าจดจำ", hr: "nezaboravan", sk: "nezabudnuteľný", ga: "i gcuimhne", cy: "cofadwy", ha: "abun tuna", am: "የማይረሳ", fa: "به‌یادماندنی", bn: "স্মরণীয়", zu: "okukhumbulekayo" },';
+      '    memoravel: { gloss: "Lat. memorabilis — digno de memória; elogio com rasto; retenção ≠ genial/especial; Valeu !!!", href: "/posts/post-inspecao-palavra-memoravel.html", en: "memorable", es: "memorable", fr: "mémorable", it: "memorabile", de: "denkwürdig", el: "αξέχαστος", la: "memorabilis", yo: "àárínrán", sw: "ya kukumbukwa", gez: "zäkäre", nl: "gedenkwaardig", pl: "niezapomniany", ru: "памятный", uk: "пам\'ятний", zh: "难忘的", ja: "記憶に残る", ko: "기억에 남는", ar: "لا يُنسى", he: "בלתי נשכח", hi: "यादगार", tr: "unutulmaz", sv: "minnesvärd", da: "mindeværdig", no: "minneverdig", fi: "ikimuistoinen", cs: "nezapomenutelný", ro: "memorabil", hu: "emlékezetes", ca: "memorable", gl: "memorable", eu: "ahaztezin", gn: "mandu\'arã", qu: "yuyarina", eo: "memoriginda", vi: "đáng nhớ", id: "berkesan", th: "น่าจดจำ", hr: "nezaboravan", sk: "nezabudnuteľný", ga: "i gcuimhne", cy: "cofadwy", ha: "abun tuna", am: "የማይረሳ", fa: "به‌یادماندنی", bn: "স্মরণীয়", zu: "okukhumbulekayo" },';
     if (/memoravel: \{[^}]*href: "\/posts\/post-inspecao-palavra-memoravel\.html"/.test(gloss)) {
       console.log('Glossário já tinha memoravel enriquecido');
     } else if (/memoravel: \{[\s\S]*?zu: "[^"]*" },/.test(gloss)) {

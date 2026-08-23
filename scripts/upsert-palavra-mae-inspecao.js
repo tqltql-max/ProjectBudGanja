@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: mãe (lat. mater) — origem/cuidado; tipografia fia → mãe; fia NE (= filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor!',
-      whyEn: 'Words: mãe (Lat. mater) — origin/care; tipography fia → mãe; NE fia (= daughter) ≠ mother; Dona Maria/alma; Do your best!',
-      whyEs: 'Palabras: mãe (lat. mater) — origen/cuidado; tipografía fia → mãe; fia NE (= hija) ≠ madre; Dona Maria/alma; ¡Haz lo mejor!',
+      why: 'Palavras: mãe (lat. mater) — origem/cuidado; tipografia fia → mãe; fia NE (= filha) ≠ mãe; elos Dona Maria/alma; Valeu !!!',
+      whyEn: 'Words: mãe (Lat. mater) — origin/care; tipography fia → mãe; NE fia (= daughter) ≠ mother; Dona Maria/alma; Valeu !!!',
+      whyEs: 'Palabras: mãe (lat. mater) — origen/cuidado; tipografía fia → mãe; fia NE (= hija) ≠ madre; Dona Maria/alma; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -94,7 +94,7 @@ async function main() {
         post.sourceUrl,
         '/posts/post-inspecao-personagem-dona-maria.html',
         '/posts/post-inspecao-palavra-alma.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — tipografia fia → mãe; oral NE fia ≠ mãe.'
     };
@@ -113,11 +113,11 @@ async function main() {
       id: 'mae',
       word: 'mãe',
       simple:
-        'Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor!',
+        'Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Valeu !!!',
       simpleEn:
-        'Lat. mater — origin and care; tipography fia → mãe; NE fia (= daughter) ≠ mother; Dona Maria/alma; Do your best!',
+        'Lat. mater — origin and care; tipography fia → mãe; NE fia (= daughter) ≠ mother; Dona Maria/alma; Valeu !!!',
       simpleEs:
-        'Lat. mater — origen y cuidado; tipografía fia → mãe; fia NE (= hija) ≠ madre; Dona Maria/alma; ¡Haz lo mejor!',
+        'Lat. mater — origen y cuidado; tipografía fia → mãe; fia NE (= hija) ≠ madre; Dona Maria/alma; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -141,7 +141,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    mãe: { gloss: "Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Faça o melhor!", href: "/posts/post-inspecao-palavra-mae.html", en: "mother", es: "madre", fr: "mère", it: "madre", de: "Mutter", yo: "ìyá", sw: "mama", gez: "əmm", el: "μητέρα", la: "mater", nl: "moeder", pl: "matka", ru: "мама", uk: "мати", zh: "母亲", ja: "母", ko: "어머니", ar: "أم", he: "אמא", hi: "माँ", tr: "anne", sv: "mamma", da: "mor", no: "mor", fi: "äiti", cs: "matka", ro: "mamă", hu: "anya", ca: "mare", gl: "nai", eu: "ama", gn: "sy", qu: "mama", eo: "patrino", vi: "me", id: "ibu", th: "แม่", hr: "majka", sk: "matka", ga: "máthair", cy: "mam", ha: "uwa", am: "enat", fa: "madar", bn: "মা", zu: "umama" },';
+      '    mãe: { gloss: "Lat. mater — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria/alma; Valeu !!!", href: "/posts/post-inspecao-palavra-mae.html", en: "mother", es: "madre", fr: "mère", it: "madre", de: "Mutter", yo: "ìyá", sw: "mama", gez: "əmm", el: "μητέρα", la: "mater", nl: "moeder", pl: "matka", ru: "мама", uk: "мати", zh: "母亲", ja: "母", ko: "어머니", ar: "أم", he: "אמא", hi: "माँ", tr: "anne", sv: "mamma", da: "mor", no: "mor", fi: "äiti", cs: "matka", ro: "mamă", hu: "anya", ca: "mare", gl: "nai", eu: "ama", gn: "sy", qu: "mama", eo: "patrino", vi: "me", id: "ibu", th: "แม่", hr: "majka", sk: "matka", ga: "máthair", cy: "mam", ha: "uwa", am: "enat", fa: "madar", bn: "মা", zu: "umama" },';
     const fiaAlias =
       '    fia: { gloss: "Tipografia / pedido → ver «mãe» (canónico). Oral NE «fia» = filha — ≠ mãe.", href: "/posts/post-inspecao-palavra-mae.html", en: "see mãe / NE daughter", es: "ver mãe / NE hija", fr: "voir mãe", it: "vedi mãe", de: "siehe mãe", el: "βλ. mãe", la: "vide mãe", yo: "mãe", sw: "mãe", gez: "mãe", nl: "zie mãe", pl: "zob. mãe", ru: "см. mãe", uk: "див. mãe", zh: "见 mãe", ja: "mãe を参照", ko: "mãe 참조", ar: "انظر mãe", he: "ראה mãe", hi: "mãe देखें", tr: "mãe bak", sv: "se mãe", da: "se mãe", no: "se mãe", fi: "ks. mãe", cs: "viz mãe", ro: "vezi mãe", hu: "lásd mãe", ca: "vegeu mãe", gl: "ver mãe", eu: "ikusi mãe", gn: "mãe", qu: "mãe", eo: "vidu mãe", vi: "xem mãe", id: "lihat mãe", th: "ดู mãe", hr: "vidi mãe", sk: "pozri mãe", ga: "féach mãe", cy: "gweler mãe", ha: "duba mãe", am: "mãe", fa: "mãe", bn: "mãe", zu: "mãe" },';
     if (/mãe:\s*\{/.test(gloss)) {

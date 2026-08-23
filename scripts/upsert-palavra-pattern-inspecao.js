@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: pattern (EN) — molde/padrão/design pattern; gesto/caminho/risco; Faça o melhor!',
-      whyEn: 'Words: pattern (EN) — mold/template/design pattern; gesto/caminho/risco; Do your best!',
-      whyEs: 'Palabras: pattern (EN) — molde/plantilla/design pattern; gesto/caminho/risco; ¡Haz lo mejor!',
+      why: 'Palavras: pattern (EN) — molde/padrão/design pattern; gesto/caminho/risco; Valeu !!!',
+      whyEn: 'Words: pattern (EN) — mold/template/design pattern; gesto/caminho/risco; Valeu !!!',
+      whyEs: 'Palabras: pattern (EN) — molde/plantilla/design pattern; gesto/caminho/risco; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -94,7 +94,7 @@ async function main() {
         post.sourceUrl,
         '/posts/post-inspecao-palavra-gesto.html',
         '/posts/post-inspecao-palavra-caminho.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — loan EN; padrão PT em texto formal.'
     };
@@ -113,11 +113,11 @@ async function main() {
       id: 'pattern',
       word: 'pattern',
       simple:
-        'EN — molde / padrão / design pattern no BR; repetição reconhecível; elos gesto/caminho; Faça o melhor com o molde certo.',
+        'EN — molde / padrão / design pattern no BR; repetição reconhecível; elos gesto/caminho; Valeu !!! com o molde certo.',
       simpleEn:
-        'EN — mold / template / design pattern in BR; recognizable repetition; links gesto/caminho; Do your best with the right mold.',
+        'EN — mold / template / design pattern in BR; recognizable repetition; links gesto/caminho; Valeu !!! with the right mold.',
       simpleEs:
-        'EN — molde / plantilla / design pattern en BR; repetición reconocible; vínculos gesto/caminho; Haz lo mejor con el molde correcto.',
+        'EN — molde / plantilla / design pattern en BR; repetición reconocible; vínculos gesto/caminho; Valeu !!! con el molde correcto.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -139,7 +139,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    pattern: { gloss: "EN — molde / padrão / design pattern; repetição reconhecível; elos gesto/caminho; Faça o melhor!", href: "/posts/post-inspecao-palavra-pattern.html", en: "pattern", es: "patron / molde", fr: "motif / modele", it: "schema / modello", de: "Muster", el: "motivo", la: "exemplar", yo: "apẹẹrẹ", sw: "muundo", gez: "məsal", nl: "patroon", pl: "wzorzec", ru: "шаблон", uk: "шаблон", zh: "模式", ja: "パターン", ko: "패턴", ar: "نمط", he: "תבנית", hi: "पैटर्न", tr: "desen / kalıp", sv: "monster", da: "monster", no: "monster", fi: "kuvio", cs: "vzor", ro: "model", hu: "minta", ca: "patro", gl: "patron", eu: "eredu", gn: "ta\'anga", qu: "rikchay", eo: "sxablono", vi: "mau", id: "pola", th: "รูปแบบ", hr: "uzorak", sk: "vzor", ga: "patrún", cy: "patrwm", ha: "tsari", am: "ስርዓት", fa: "الگو", bn: "প্যাটার্ন", zu: "iphethini" },';
+      '    pattern: { gloss: "EN — molde / padrão / design pattern; repetição reconhecível; elos gesto/caminho; Valeu !!!", href: "/posts/post-inspecao-palavra-pattern.html", en: "pattern", es: "patron / molde", fr: "motif / modele", it: "schema / modello", de: "Muster", el: "motivo", la: "exemplar", yo: "apẹẹrẹ", sw: "muundo", gez: "məsal", nl: "patroon", pl: "wzorzec", ru: "шаблон", uk: "шаблон", zh: "模式", ja: "パターン", ko: "패턴", ar: "نمط", he: "תבנית", hi: "पैटर्न", tr: "desen / kalıp", sv: "monster", da: "monster", no: "monster", fi: "kuvio", cs: "vzor", ro: "model", hu: "minta", ca: "patro", gl: "patron", eu: "eredu", gn: "ta\'anga", qu: "rikchay", eo: "sxablono", vi: "mau", id: "pola", th: "รูปแบบ", hr: "uzorak", sk: "vzor", ga: "patrún", cy: "patrwm", ha: "tsari", am: "ስርዓት", fa: "الگو", bn: "প্যাটার্ন", zu: "iphethini" },';
     if (/pattern:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    pattern:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

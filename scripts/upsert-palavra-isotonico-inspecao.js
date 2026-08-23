@@ -130,7 +130,7 @@ async function main() {
         iso.sourceUrl,
         '/posts/post-inspecao-palavra-tonico.html',
         '/posts/post-inspecao-palavra-agua.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + iso.seriesOrder + ' — iso- + tônico isolado.'
     };
@@ -149,11 +149,11 @@ async function main() {
       id: 'isotonico',
       word: 'isotônico',
       simple:
-        'iso- (igual) + tônico (tónos) — tensão igual: osmose, músculo, gôndola; isola a peça tônico; ≠ chá/sílaba/água tónica; Faça o melhor!',
+        'iso- (igual) + tônico (tónos) — tensão igual: osmose, músculo, gôndola; isola a peça tônico; ≠ chá/sílaba/água tónica; Valeu !!!',
       simpleEn:
-        'iso- (equal) + tônico (tónos) — equal tension: osmosis, muscle, shelf; isolates the tônico piece; ≠ herb/stress/tonic water; Do your best!',
+        'iso- (equal) + tônico (tónos) — equal tension: osmosis, muscle, shelf; isolates the tônico piece; ≠ herb/stress/tonic water; Valeu !!!',
       simpleEs:
-        'iso- (igual) + tônico (tónos) — tensión igual: ósmosis, músculo, góndola; aísla la pieza tônico; ≠ té/sílaba/agua tónica; ¡Haz lo mejor!',
+        'iso- (igual) + tônico (tónos) — tensión igual: ósmosis, músculo, góndola; aísla la pieza tônico; ≠ té/sílaba/agua tónica; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href,
@@ -187,7 +187,7 @@ async function main() {
   upsertGloss(
     glossPath,
     'isotonico',
-    '    isotonico: { tone: "caution", category: "Tensão igual", mundane: "iso- + tônico — osmose, músculo ou lata de gôndola.", gloss: "Isola o tônico: tensão igual; ≠ chá, sílaba, água tónica; Faça o melhor na etiqueta.", href: "/posts/post-inspecao-palavra-isotonico.html", en: "isotonic", es: "isotónico", fr: "isotonique", it: "isotonico", de: "isotonisch", el: "ισοτονικός", la: "isotonicus", yo: "iso-toniki", sw: "isotoni", gez: "isotoni", nl: "isotoon", pl: "izotoniczny", ru: "izotonicheskii", uk: "izotonichnyi", zh: "dengshen", ja: "totoatsu", ko: "deungjang", ar: "mutasawi al-tawattur", he: "izotoni", hi: "isotonic", tr: "izotonik", sv: "isoton", da: "isotonisk", no: "isotonisk", fi: "isotoninen", cs: "izotonicky", ro: "izotonic", hu: "izotonias", ca: "isotonic", gl: "isotonico", eu: "isotoniko", gn: "isotonico", qu: "isotonico", eo: "izotona", vi: "dang truong", id: "isotonik", th: "isotonic", hr: "izotonicni", sk: "izotonicky", ga: "iseatonach", cy: "isotonaidd", ha: "isotonik", am: "isotonic", fa: "izotonik", bn: "isotonic", zu: "i-isotonic" },',
+    '    isotonico: { tone: "caution", category: "Tensão igual", mundane: "iso- + tônico — osmose, músculo ou lata de gôndola.", gloss: "Isola o tônico: tensão igual; ≠ chá, sílaba, água tónica; Valeu !!! na etiqueta.", href: "/posts/post-inspecao-palavra-isotonico.html", en: "isotonic", es: "isotónico", fr: "isotonique", it: "isotonico", de: "isotonisch", el: "ισοτονικός", la: "isotonicus", yo: "iso-toniki", sw: "isotoni", gez: "isotoni", nl: "isotoon", pl: "izotoniczny", ru: "izotonicheskii", uk: "izotonichnyi", zh: "dengshen", ja: "totoatsu", ko: "deungjang", ar: "mutasawi al-tawattur", he: "izotoni", hi: "isotonic", tr: "izotonik", sv: "isoton", da: "isotonisk", no: "isotonisk", fi: "isotoninen", cs: "izotonicky", ro: "izotonic", hu: "izotonias", ca: "isotonic", gl: "isotonico", eu: "isotoniko", gn: "isotonico", qu: "isotonico", eo: "izotona", vi: "dang truong", id: "isotonik", th: "isotonic", hr: "izotonicni", sk: "izotonicky", ga: "iseatonach", cy: "isotonaidd", ha: "isotonik", am: "isotonic", fa: "izotonik", bn: "isotonic", zu: "i-isotonic" },',
     ['tonico', 'tempo']
   );
   upsertGloss(

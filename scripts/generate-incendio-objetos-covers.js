@@ -29,7 +29,7 @@ function card({ file, kicker, title, sub, foot, glow, glow2 }) {
   <text x="600" y="268" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="56" font-weight="700" fill="#f7f4ee">${title}</text>
   <text x="600" y="340" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#d8cfc4">${sub}</text>
   <text x="600" y="540" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="22" fill="#c4b8a8">${foot}</text>
-  <text x="600" y="582" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#8a7a6a">Inspetor BudGanja · Faça o melhor!</text>
+  <text x="600" y="582" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#8a7a6a">Inspetor BudGanja · Valeu !!!</text>
 </svg>`;
 }
 

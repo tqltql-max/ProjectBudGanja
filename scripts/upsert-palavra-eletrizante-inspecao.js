@@ -99,9 +99,9 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Eletrizante — carga, hype BR e Faça o melhor!',
-      titleEn: 'Eletrizante — charge, BR hype and Do your best!',
-      titleEs: 'Eletrizante — carga, hype BR y ¡Haz lo mejor!',
+      title: 'Eletrizante — carga, hype BR e Valeu !!!',
+      titleEn: 'Eletrizante — charge, BR hype and Valeu !!!',
+      titleEs: 'Eletrizante — carga, hype BR y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
@@ -117,7 +117,7 @@ async function main() {
         'https://en.wiktionary.org/wiki/electrifying',
         '/posts/post-inspecao-palavra-fogo.html',
         '/posts/post-inspecao-palavra-genial.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — carga/hype; rede só com slugs existentes (fogo + escala).'
     };
@@ -136,11 +136,11 @@ async function main() {
       id: 'eletrizante',
       word: 'eletrizante',
       simple:
-        'Eletro- + intensidade — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo; elos fogo e escala de louvor; Faça o melhor com rasto.',
+        'Eletro- + intensidade — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo; elos fogo e escala de louvor; Valeu !!! com rasto.',
       simpleEn:
-        'Eletro- + intensity — charge metaphor and BR hype; typo eleltrioxsamndo; links to fogo and praise scale; Do your best with a trail.',
+        'Eletro- + intensity — charge metaphor and BR hype; typo eleltrioxsamndo; links to fogo and praise scale; Valeu !!! with a trail.',
       simpleEs:
-        'Eletro- + intensidad — metáfora de carga y hype BR; tipografía eleltrioxsamndo; vínculos a fogo y escala; Haz lo mejor con rastro.',
+        'Eletro- + intensidad — metáfora de carga y hype BR; tipografía eleltrioxsamndo; vínculos a fogo y escala; Valeu !!! con rastro.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -168,7 +168,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    eletrizante: { gloss: "Eletro-+intensidade — metáfora de carga e hype BR (show eletrizante); tipografia eleltrioxsamndo; elos fogo/escala; Faça o melhor.", href: "/posts/post-inspecao-palavra-eletrizante.html", en: "electrifying", es: "electrizante", fr: "électrisant", it: "elettrizzante", de: "elektrisierend", el: "ηλεκτρίζων", la: "electricus (fig.)", yo: "tí ń fa agbára", sw: "yenye mshtuko", gez: "mäbraqawi", nl: "elektriserend", pl: "elektryzujący", ru: "электризующий", uk: "електризуючий", zh: "令人振奋的", ja: "電撃的な", ko: "전율적인", ar: "مثير / مذهل", he: "מחשמל", hi: "रोमांचक", tr: "elektriklendirici", sv: "elektrifierande", da: "elektriserende", no: "elektriserende", fi: "sähköistävä", cs: "elektrizující", ro: "electrizant", hu: "elektromosító", ca: "electrificant", gl: "electrizante", eu: "elektrizatzaile", gn: "tatuakuaa", qu: "kallpayuq", eo: "elektriga", vi: "náo nhiệt", id: "menggetarkan", th: "เร้าใจ", hr: "elektrizirajući", sk: "elektrizujúci", ga: "leictreachúil", cy: "trydanol", ha: "mai ban mamaki", am: "አስደሳች", fa: "هیجان‌انگیز", bn: "রোমাঞ্চকর", zu: "okushaya ugesi" },';
+      '    eletrizante: { gloss: "Eletro-+intensidade — metáfora de carga e hype BR (show eletrizante); tipografia eleltrioxsamndo; elos fogo/escala; Valeu !!!", href: "/posts/post-inspecao-palavra-eletrizante.html", en: "electrifying", es: "electrizante", fr: "électrisant", it: "elettrizzante", de: "elektrisierend", el: "ηλεκτρίζων", la: "electricus (fig.)", yo: "tí ń fa agbára", sw: "yenye mshtuko", gez: "mäbraqawi", nl: "elektriserend", pl: "elektryzujący", ru: "электризующий", uk: "електризуючий", zh: "令人振奋的", ja: "電撃的な", ko: "전율적인", ar: "مثير / مذهل", he: "מחשמל", hi: "रोमांचक", tr: "elektriklendirici", sv: "elektrifierande", da: "elektriserende", no: "elektriserende", fi: "sähköistävä", cs: "elektrizující", ro: "electrizant", hu: "elektromosító", ca: "electrificant", gl: "electrizante", eu: "elektrizatzaile", gn: "tatuakuaa", qu: "kallpayuq", eo: "elektriga", vi: "náo nhiệt", id: "menggetarkan", th: "เร้าใจ", hr: "elektrizirajući", sk: "elektrizujúci", ga: "leictreachúil", cy: "trydanol", ha: "mai ban mamaki", am: "አስደሳች", fa: "هیجان‌انگیز", bn: "রোমাঞ্চকর", zu: "okushaya ugesi" },';
     if (/eletrizante:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    eletrizante:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

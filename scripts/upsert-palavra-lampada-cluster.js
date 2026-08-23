@@ -93,16 +93,16 @@ const ITEMS = [
     sugTitle: 'Lâmpada — vaso de luz, vaso de desejo e o lapso lampada',
     sugTitleEn: 'Lâmpada — vessel of light, vessel of wish, and the slip lampada',
     sugTitleEs: 'Lâmpada — vaso de luz, vaso de deseo y el lapsus lampada',
-    why: 'Palavras: lâmpada (lampas) = vaso; lampada = boca; génio = inquilino; ≠ gêmeos; elos luz/esfregar/desejos; Faça o melhor!',
+    why: 'Palavras: lâmpada (lampas) = vaso; lampada = boca; génio = inquilino; ≠ gêmeos; elos luz/esfregar/desejos; Valeu !!!',
     guiaId: 'lampada',
     guiaWord: 'Lâmpada',
     guiaSimple:
-      'Gr./lat. lampas — vaso de luz no quarto × vaso de desejo no conto; lampada = boca; génio mora dentro; ≠ gêmeos; Faça o melhor neste soquete.',
+      'Gr./lat. lampas — vaso de luz no quarto × vaso de desejo no conto; lampada = boca; génio mora dentro; ≠ gêmeos; Valeu !!! neste soquete.',
     guiaAfter: ['luz', 'interruptor'],
     glossKey: 'lâmpada',
     glossAfter: 'luz',
     glossMain:
-      '    lâmpada: { tone: "caution", category: "Vaso", mundane: "Objecto de luz; no conto, receptáculo do génio. Grafia viva: lampada.", gloss: "Vaso (*lampas*); circuito × conto; génio = inquilino; elos luz/esfregar/desejos/três; Faça o melhor neste soquete.", href: "/posts/post-inspecao-palavra-lampada.html", en: "lamp", es: "lámpara", fr: "lampe", it: "lampada", de: "Lampe", el: "λύχνος", la: "lampas", yo: "àtùpà", sw: "taa", gez: "məbräht", nl: "lamp", pl: "lampa", ru: "лампа", uk: "лампа", zh: "灯", ja: "ランプ", ko: "램프", ar: "مصباح", he: "מנורה", hi: "दीपक", tr: "lamba", sv: "lampa", da: "lampe", no: "lampe", fi: "lamppu", cs: "lampa", ro: "lampă", hu: "lámpa", ca: "llàntia", gl: "lámpada", eu: "lanpara", gn: "lámpara", qu: "lámpara", eo: "lampo", vi: "đèn", id: "lampu", th: "โคม", hr: "lampa", sk: "lampa", ga: "lampa", cy: "lamp", ha: "fitila", am: "መብራት", fa: "چراغ", bn: "বাতি", zu: "isibani" },\n',
+      '    lâmpada: { tone: "caution", category: "Vaso", mundane: "Objecto de luz; no conto, receptáculo do génio. Grafia viva: lampada.", gloss: "Vaso (*lampas*); circuito × conto; génio = inquilino; elos luz/esfregar/desejos/três; Valeu !!! neste soquete.", href: "/posts/post-inspecao-palavra-lampada.html", en: "lamp", es: "lámpara", fr: "lampe", it: "lampada", de: "Lampe", el: "λύχνος", la: "lampas", yo: "àtùpà", sw: "taa", gez: "məbräht", nl: "lamp", pl: "lampa", ru: "лампа", uk: "лампа", zh: "灯", ja: "ランプ", ko: "램프", ar: "مصباح", he: "מנורה", hi: "दीपक", tr: "lamba", sv: "lampa", da: "lampe", no: "lampe", fi: "lamppu", cs: "lampa", ro: "lampă", hu: "lámpa", ca: "llàntia", gl: "lámpada", eu: "lanpara", gn: "lámpara", qu: "lámpara", eo: "lampo", vi: "đèn", id: "lampu", th: "โคม", hr: "lampa", sk: "lampa", ga: "lampa", cy: "lamp", ha: "fitila", am: "መብራት", fa: "چراغ", bn: "বাতি", zu: "isibani" },\n',
     glossAliases:
       '    lampada: { gloss: "Grafia sem acento de lâmpada — ver ficha do vaso.", href: "/posts/post-inspecao-palavra-lampada.html", en: "lamp (unaccented)", es: "lámpara (sin acento)" },\n' +
       '    "lampada de aladim": { gloss: "Lâmpada de Aladim sem acento — vaso de desejo; ver lâmpada, esfregar, desejos.", href: "/posts/post-inspecao-palavra-lampada.html", en: "Aladdin lamp", es: "lámpara de Aladino" },\n' +
@@ -114,16 +114,16 @@ const ITEMS = [
     sugTitle: 'Esfregar — fricção, cue da lâmpada e o clique que não é',
     sugTitleEn: 'Esfregar — friction, lamp cue, and the click it is not',
     sugTitleEs: 'Esfregar — fricción, señal de la lámpara y el clic que no es',
-    why: 'Palavras: esfregar (*fricare*) — cue táctil do conto ≠ ligar; elos lâmpada/gesto/desejos; Faça o melhor nesta palma.',
+    why: 'Palavras: esfregar (*fricare*) — cue táctil do conto ≠ ligar; elos lâmpada/gesto/desejos; Valeu !!! nesta palma.',
     guiaId: 'esfregar',
     guiaWord: 'Esfregar',
     guiaSimple:
-      'Lat. fricare — atrito; no conto, cue da palma na lâmpada; no quarto, não é o clique; elos gesto e ligar; Faça o melhor nesta mão.',
+      'Lat. fricare — atrito; no conto, cue da palma na lâmpada; no quarto, não é o clique; elos gesto e ligar; Valeu !!! nesta mão.',
     guiaAfter: ['gesto', 'lampada', 'lâmpada'],
     glossKey: 'esfregar',
     glossAfter: 'gesto',
     glossMain:
-      '    esfregar: { tone: "caution", category: "Gesto", mundane: "Fricção (limpar / aquecer); no conto, cue da lâmpada de Aladim.", gloss: "Lat. fricare — atrito; cue táctil ≠ clique / ligar; elos lâmpada, gesto, desejos; Faça o melhor nesta palma.", href: "/posts/post-inspecao-palavra-esfregar.html", en: "to rub", es: "frotar", fr: "frotter", it: "strofinare", de: "reiben", el: "τρίβω", la: "fricare", yo: "pá", sw: "sugua", gez: "mäkʷäs", nl: "wrijven", pl: "trzeć", ru: "тереть", uk: "терти", zh: "擦", ja: "こする", ko: "문지르다", ar: "يفرك", he: "לשפשף", hi: "रगड़ना", tr: "ovmak", sv: "gnida", da: "gnide", no: "gni", fi: "hieroa", cs: "třít", ro: "freca", hu: "dörzsöl", ca: "fregar", gl: "esfregar", eu: "igurtzi", gn: "johéi", qu: "khuñuy", eo: "froteti", vi: "cọ", id: "menggosok", th: "ถู", hr: "trljati", sk: "trieť", ga: "cuimilt", cy: "rhwbio", ha: "goga", am: "ማሸት", fa: "مالیدن", bn: "ঘষা", zu: "ukuhlikihla" },\n',
+      '    esfregar: { tone: "caution", category: "Gesto", mundane: "Fricção (limpar / aquecer); no conto, cue da lâmpada de Aladim.", gloss: "Lat. fricare — atrito; cue táctil ≠ clique / ligar; elos lâmpada, gesto, desejos; Valeu !!! nesta palma.", href: "/posts/post-inspecao-palavra-esfregar.html", en: "to rub", es: "frotar", fr: "frotter", it: "strofinare", de: "reiben", el: "τρίβω", la: "fricare", yo: "pá", sw: "sugua", gez: "mäkʷäs", nl: "wrijven", pl: "trzeć", ru: "тереть", uk: "терти", zh: "擦", ja: "こする", ko: "문지르다", ar: "يفرك", he: "לשפשף", hi: "रगड़ना", tr: "ovmak", sv: "gnida", da: "gnide", no: "gni", fi: "hieroa", cs: "třít", ro: "freca", hu: "dörzsöl", ca: "fregar", gl: "esfregar", eu: "igurtzi", gn: "johéi", qu: "khuñuy", eo: "froteti", vi: "cọ", id: "menggosok", th: "ถู", hr: "trljati", sk: "trieť", ga: "cuimilt", cy: "rhwbio", ha: "goga", am: "ማሸት", fa: "مالیدن", bn: "ঘষা", zu: "ukuhlikihla" },\n',
     glossAliases: ''
   },
   {
@@ -132,16 +132,16 @@ const ITEMS = [
     sugTitle: 'Desejos — vontade, pack da lâmpada e o ofício que não pede',
     sugTitleEn: 'Desejos — will, lamp pack, and the craft that does not ask',
     sugTitleEs: 'Desejos — voluntad, pack de la lámpara y el oficio que no pide',
-    why: 'Palavras: desejos (*desiderium*) — vontade × pack do génio; quota muitas vezes três; ≠ gesto; Faça o melhor sem pack.',
+    why: 'Palavras: desejos (*desiderium*) — vontade × pack do génio; quota muitas vezes três; ≠ gesto; Valeu !!! sem pack.',
     guiaId: 'desejos',
     guiaWord: 'Desejos',
     guiaSimple:
-      'Lat. desiderium — vontade viva × pack do conto; apontar ≠ cumprir; quota em três; elos lâmpada e esfregar; Faça o melhor sem pack.',
+      'Lat. desiderium — vontade viva × pack do conto; apontar ≠ cumprir; quota em três; elos lâmpada e esfregar; Valeu !!! sem pack.',
     guiaAfter: ['esfregar', 'lampada'],
     glossKey: 'desejos',
     glossAfter: 'esfregar',
     glossMain:
-      '    desejos: { tone: "caution", category: "Vontade", mundane: "Plural de desejo; no conto, o pack que o génio entrega.", gloss: "Lat. desiderium — vontade × pack da lâmpada; aponta ≠ cumpre; quota em três; Faça o melhor sem pack.", href: "/posts/post-inspecao-palavra-desejos.html", en: "wishes", es: "deseos", fr: "souhaits", it: "desideri", de: "Wünsche", el: "ευχές", la: "desideria", yo: "ìfẹ́", sw: "matamanio", gez: "fäqad", nl: "wensen", pl: "życzenia", ru: "желания", uk: "бажання", zh: "愿望", ja: "願い", ko: "소원", ar: "أمنيات", he: "משאלות", hi: "इच्छाएँ", tr: "dilekler", sv: "önskningar", da: "ønsker", no: "ønsker", fi: "toiveet", cs: "přání", ro: "dorințe", hu: "kívánságok", ca: "desitjos", gl: "desexos", eu: "desioak", gn: "jehechauka", qu: "munaykuna", eo: "deziroj", vi: "ước muốn", id: "harapan", th: "ความปรารถนา", hr: "želje", sk: "priania", ga: "mianta", cy: "dymuniadau", ha: "burin", am: "ምኞቶች", fa: "آرزوها", bn: "ইচ্ছা", zu: "izifiso" },\n',
+      '    desejos: { tone: "caution", category: "Vontade", mundane: "Plural de desejo; no conto, o pack que o génio entrega.", gloss: "Lat. desiderium — vontade × pack da lâmpada; aponta ≠ cumpre; quota em três; Valeu !!! sem pack.", href: "/posts/post-inspecao-palavra-desejos.html", en: "wishes", es: "deseos", fr: "souhaits", it: "desideri", de: "Wünsche", el: "ευχές", la: "desideria", yo: "ìfẹ́", sw: "matamanio", gez: "fäqad", nl: "wensen", pl: "życzenia", ru: "желания", uk: "бажання", zh: "愿望", ja: "願い", ko: "소원", ar: "أمنيات", he: "משאלות", hi: "इच्छाएँ", tr: "dilekler", sv: "önskningar", da: "ønsker", no: "ønsker", fi: "toiveet", cs: "přání", ro: "dorințe", hu: "kívánságok", ca: "desitjos", gl: "desexos", eu: "desioak", gn: "jehechauka", qu: "munaykuna", eo: "deziroj", vi: "ước muốn", id: "harapan", th: "ความปรารถนา", hr: "želje", sk: "priania", ga: "mianta", cy: "dymuniadau", ha: "burin", am: "ምኞቶች", fa: "آرزوها", bn: "ইচ্ছা", zu: "izifiso" },\n',
     glossAliases:
       '    desejo: { gloss: "Singular de desejos — vontade; ver ficha do pack.", href: "/posts/post-inspecao-palavra-desejos.html", en: "wish / desire", es: "deseo" },\n'
   },
@@ -151,16 +151,16 @@ const ITEMS = [
     sugTitle: 'Três — o 3, a quota dos desejos e o teto que não é método',
     sugTitleEn: 'Três — 3, the wish quota, and the cap that is not a method',
     sugTitleEs: 'Três — el 3, la cuota de deseos y el tope que no es método',
-    why: 'Palavras: três / 3 — cardinal (*trēs*) e quota popular dos três desejos; ≠ lei do clássico; Faça o melhor neste um.',
+    why: 'Palavras: três / 3 — cardinal (*trēs*) e quota popular dos três desejos; ≠ lei do clássico; Valeu !!! neste um.',
     guiaId: 'tres',
     guiaWord: 'Três',
     guiaSimple:
-      'Lat. trēs — cardinal 3 / tres; no mapa da lâmpada, teto popular dos três desejos; não é método; Faça o melhor neste um.',
+      'Lat. trēs — cardinal 3 / tres; no mapa da lâmpada, teto popular dos três desejos; não é método; Valeu !!! neste um.',
     guiaAfter: ['desejos', 'esfregar'],
     glossKey: 'três',
     glossAfter: 'desejos',
     glossMain:
-      '    três: { tone: "caution", category: "Quota", mundane: "Cardinal 3; no conto popular, a quota dos três desejos.", gloss: "Lat. trēs — 3 / tres; teto de história ≠ método; elos desejos/lâmpada/esfregar; Faça o melhor neste um.", href: "/posts/post-inspecao-palavra-tres.html", en: "three", es: "tres", fr: "trois", it: "tre", de: "drei", el: "τρία", la: "tres", yo: "ẹ̀ta", sw: "tatu", gez: "śäläst", nl: "drie", pl: "trzy", ru: "три", uk: "три", zh: "三", ja: "三", ko: "셋", ar: "ثلاثة", he: "שלוש", hi: "तीन", tr: "üç", sv: "tre", da: "tre", no: "tre", fi: "kolme", cs: "tři", ro: "trei", hu: "három", ca: "tres", gl: "tres", eu: "hiru", gn: "mbohapy", qu: "kimsa", eo: "tri", vi: "ba", id: "tiga", th: "สาม", hr: "tri", sk: "tri", ga: "trí", cy: "tri", ha: "uku", am: "ሶስት", fa: "سه", bn: "তিন", zu: "kuthathu" },\n',
+      '    três: { tone: "caution", category: "Quota", mundane: "Cardinal 3; no conto popular, a quota dos três desejos.", gloss: "Lat. trēs — 3 / tres; teto de história ≠ método; elos desejos/lâmpada/esfregar; Valeu !!! neste um.", href: "/posts/post-inspecao-palavra-tres.html", en: "three", es: "tres", fr: "trois", it: "tre", de: "drei", el: "τρία", la: "tres", yo: "ẹ̀ta", sw: "tatu", gez: "śäläst", nl: "drie", pl: "trzy", ru: "три", uk: "три", zh: "三", ja: "三", ko: "셋", ar: "ثلاثة", he: "שלוש", hi: "तीन", tr: "üç", sv: "tre", da: "tre", no: "tre", fi: "kolme", cs: "tři", ro: "trei", hu: "három", ca: "tres", gl: "tres", eu: "hiru", gn: "mbohapy", qu: "kimsa", eo: "tri", vi: "ba", id: "tiga", th: "สาม", hr: "tri", sk: "tri", ga: "trí", cy: "tri", ha: "uku", am: "ሶስት", fa: "سه", bn: "তিন", zu: "kuthathu" },\n',
     glossAliases:
       '    tres: { gloss: "Grafia sem acento de três — ver ficha da quota.", href: "/posts/post-inspecao-palavra-tres.html", en: "three (unaccented)", es: "tres" },\n' +
       '    "3": { gloss: "Algarismo de três — quota popular dos desejos da lâmpada; ver ficha três.", href: "/posts/post-inspecao-palavra-tres.html", en: "3", es: "3" },\n' +
@@ -190,7 +190,7 @@ function upsertSug(sug, post, cfg) {
     sources: [
       post.sourceUrl,
       '/posts/post-inspecao-palavra-lampada.html',
-      '/posts/post-inspecao-expressao-faca-o-melhor.html'
+      '/posts/post-inspecao-palavra-valeu.html'
     ],
     notes: 'Cap. ' + post.seriesOrder + ' — cluster Aladim / lâmpada.'
   };

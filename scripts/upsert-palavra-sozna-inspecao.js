@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: sozinho (lat. solus + -zinho) — par sozinha; forma oral sozna; ≠ solitário; Faça o melhor!',
-      whyEn: 'Words: sozinho (Lat. solus + -zinho) — pair sozinha; oral sozna; ≠ solitário; Do your best!',
-      whyEs: 'Palabras: sozinho (lat. solus + -zinho) — par sozinha; oral sozna; ≠ solitário; ¡Haz lo mejor!',
+      why: 'Palavras: sozinho (lat. solus + -zinho) — par sozinha; forma oral sozna; ≠ solitário; Valeu !!!',
+      whyEn: 'Words: sozinho (Lat. solus + -zinho) — pair sozinha; oral sozna; ≠ solitário; Valeu !!!',
+      whyEs: 'Palabras: sozinho (lat. solus + -zinho) — par sozinha; oral sozna; ≠ solitário; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -94,7 +94,7 @@ async function main() {
         post.sourceUrl,
         'https://pt.wiktionary.org/wiki/s%C3%B3',
         '/posts/post-inspecao-palavra-solitario.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — lemma sozinho; par sozinha; forma oral sozna.'
     };
@@ -114,11 +114,11 @@ async function main() {
         id: 'sozinho',
         word: 'sozinho',
         simple:
-          'Lat. sōlus + -zinho — estado só (masc.); par sozinha; forma oral sozna; ≠ solitário; Faça o melhor sem vergonha.',
+          'Lat. sōlus + -zinho — estado só (masc.); par sozinha; forma oral sozna; ≠ solitário; Valeu !!! sem vergonha.',
         simpleEn:
-          'Lat. sōlus + -zinho — alone (masc.); pair sozinha; oral sozna; ≠ solitário; Do your best without shame.',
+          'Lat. sōlus + -zinho — alone (masc.); pair sozinha; oral sozna; ≠ solitário; Valeu !!! without shame.',
         simpleEs:
-          'Lat. sōlus + -zinho — solo (masc.); par sozinha; oral sozna; ≠ solitário; Haz lo mejor sin vergüenza.',
+          'Lat. sōlus + -zinho — solo (masc.); par sozinha; oral sozna; ≠ solitário; Valeu !!! sin vergüenza.',
         group: 'lexico',
         fromTitle: false,
         href
@@ -127,11 +127,11 @@ async function main() {
         id: 'sozna',
         word: 'sozna',
         simple:
-          'Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — estado só; ≠ solitário; Faça o melhor sem vergonha.',
+          'Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — estado só; ≠ solitário; Valeu !!! sem vergonha.',
         simpleEn:
-          'Oral form of sozinho / sozinha (Lat. sōlus + -zinho/-zinha) — alone; ≠ solitário; Do your best without shame.',
+          'Oral form of sozinho / sozinha (Lat. sōlus + -zinho/-zinha) — alone; ≠ solitário; Valeu !!! without shame.',
         simpleEs:
-          'Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — solo/sola; ≠ solitário; Haz lo mejor sin vergüenza.',
+          'Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — solo/sola; ≠ solitário; Valeu !!! sin vergüenza.',
         group: 'lexico',
         fromTitle: false,
         href
@@ -156,11 +156,11 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    sozna: { gloss: "Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — estado só; ≠ solitário; Faça o melhor!", href: "/posts/post-inspecao-palavra-sozna.html", en: "alone", es: "solo", fr: "seul", it: "solo", de: "allein", el: "monos", la: "solus", yo: "nikan", sw: "peke", gez: "bahtit", nl: "alleen", pl: "sam", ru: "odin", uk: "odyn", zh: "duzi", ja: "hitori", ko: "honja", ar: "wahid", he: "levad", hi: "akela", tr: "yalniz", sv: "ensam", da: "alene", no: "alene", fi: "yksin", cs: "sam", ro: "singur", hu: "egyedul", ca: "sol", gl: "so", eu: "bakarrik", gn: "ha\'eño", qu: "sapalla", eo: "sola", vi: "mot minh", id: "sendiri", th: "alone", hr: "sam", sk: "sam", ga: "ina aonar", cy: "ar ei ben", ha: "kadai", am: "bahtit", fa: "tanha", bn: "eka", zu: "yedwa" },';
+      '    sozna: { gloss: "Forma oral de sozinho / sozinha (lat. sōlus + -zinho/-zinha) — estado só; ≠ solitário; Valeu !!!", href: "/posts/post-inspecao-palavra-sozna.html", en: "alone", es: "solo", fr: "seul", it: "solo", de: "allein", el: "monos", la: "solus", yo: "nikan", sw: "peke", gez: "bahtit", nl: "alleen", pl: "sam", ru: "odin", uk: "odyn", zh: "duzi", ja: "hitori", ko: "honja", ar: "wahid", he: "levad", hi: "akela", tr: "yalniz", sv: "ensam", da: "alene", no: "alene", fi: "yksin", cs: "sam", ro: "singur", hu: "egyedul", ca: "sol", gl: "so", eu: "bakarrik", gn: "ha\'eño", qu: "sapalla", eo: "sola", vi: "mot minh", id: "sendiri", th: "alone", hr: "sam", sk: "sam", ga: "ina aonar", cy: "ar ei ben", ha: "kadai", am: "bahtit", fa: "tanha", bn: "eka", zu: "yedwa" },';
     const sozinhaLine =
-      '    sozinha: { gloss: "Lat. sōlus + -zinha — estado só (fem.); forma oral sozna; ≠ solitário; Faça o melhor!", href: "/posts/post-inspecao-palavra-sozna.html", en: "alone", es: "sola", fr: "seule", it: "sola", de: "allein", el: "moni", la: "sola", yo: "nikan", sw: "peke", gez: "bahtit", nl: "alleen", pl: "sama", ru: "odna", uk: "odna", zh: "duzi", ja: "hitori", ko: "honja", ar: "wahida", he: "levad", hi: "akeli", tr: "yalniz", sv: "ensam", da: "alene", no: "alene", fi: "yksin", cs: "sama", ro: "singura", hu: "egyedul", ca: "sola", gl: "soa", eu: "bakarrik", gn: "ha\'eño", qu: "sapalla", eo: "sola", vi: "mot minh", id: "sendiri", th: "alone", hr: "sama", sk: "sama", ga: "ina haonar", cy: "ar ei phen", ha: "kadai", am: "bahtit", fa: "tanha", bn: "eka", zu: "wedwa" },';
+      '    sozinha: { gloss: "Lat. sōlus + -zinha — estado só (fem.); forma oral sozna; ≠ solitário; Valeu !!!", href: "/posts/post-inspecao-palavra-sozna.html", en: "alone", es: "sola", fr: "seule", it: "sola", de: "allein", el: "moni", la: "sola", yo: "nikan", sw: "peke", gez: "bahtit", nl: "alleen", pl: "sama", ru: "odna", uk: "odna", zh: "duzi", ja: "hitori", ko: "honja", ar: "wahida", he: "levad", hi: "akeli", tr: "yalniz", sv: "ensam", da: "alene", no: "alene", fi: "yksin", cs: "sama", ro: "singura", hu: "egyedul", ca: "sola", gl: "soa", eu: "bakarrik", gn: "ha\'eño", qu: "sapalla", eo: "sola", vi: "mot minh", id: "sendiri", th: "alone", hr: "sama", sk: "sama", ga: "ina haonar", cy: "ar ei phen", ha: "kadai", am: "bahtit", fa: "tanha", bn: "eka", zu: "wedwa" },';
     const sozinhoLine =
-      '    sozinho: { gloss: "Lat. sōlus + -zinho — estado só (masc.); par sozinha; forma oral sozna; ≠ solitário; Faça o melhor!", href: "/posts/post-inspecao-palavra-sozna.html", en: "alone", es: "solo", fr: "seul", it: "solo", de: "allein", yo: "nìkan", sw: "peke yake", gez: "baḥtitu", el: "μόνος", la: "solus", nl: "alleen", pl: "sam", ru: "odin", uk: "odyn", zh: "duzi", ja: "hitori", ko: "honja", ar: "wahid", he: "levad", hi: "akela", tr: "yalniz", sv: "ensam", da: "alene", no: "alene", fi: "yksin", cs: "sam", ro: "singur", hu: "egyedul", ca: "sol", gl: "so", eu: "bakarrik", gn: "ha\'eño", qu: "sapalla", eo: "sola", vi: "mot minh", id: "sendiri", th: "alone", hr: "sam", sk: "sam", ga: "ina aonar", cy: "ar ei ben", ha: "kadai", am: "bahtit", fa: "tanha", bn: "eka", zu: "yedwa" },';
+      '    sozinho: { gloss: "Lat. sōlus + -zinho — estado só (masc.); par sozinha; forma oral sozna; ≠ solitário; Valeu !!!", href: "/posts/post-inspecao-palavra-sozna.html", en: "alone", es: "solo", fr: "seul", it: "solo", de: "allein", yo: "nìkan", sw: "peke yake", gez: "baḥtitu", el: "μόνος", la: "solus", nl: "alleen", pl: "sam", ru: "odin", uk: "odyn", zh: "duzi", ja: "hitori", ko: "honja", ar: "wahid", he: "levad", hi: "akela", tr: "yalniz", sv: "ensam", da: "alene", no: "alene", fi: "yksin", cs: "sam", ro: "singur", hu: "egyedul", ca: "sol", gl: "so", eu: "bakarrik", gn: "ha\'eño", qu: "sapalla", eo: "sola", vi: "mot minh", id: "sendiri", th: "alone", hr: "sam", sk: "sam", ga: "ina aonar", cy: "ar ei ben", ha: "kadai", am: "bahtit", fa: "tanha", bn: "eka", zu: "yedwa" },';
 
     if (/sozna:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    sozna:\s*\{[\s\S]*?\},/, entryLine);

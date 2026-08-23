@@ -84,6 +84,15 @@ window.__BIBLIOTECA_NAV__ = {
           "description": "Divulgação do livro de Tamara Klink — fazer circular."
         },
         {
+          "label": "Livro do laboratório",
+          "tileLabel": "Livro",
+          "href": "/livro/",
+          "icon": "📘",
+          "slug": "livro",
+          "featured": true,
+          "description": "Página-livro do projecto — Gerar livro, dedicatória e mapa das salas."
+        },
+        {
           "label": "Guias",
           "tileLabel": "Guias",
           "icon": "📚",
@@ -3524,6 +3533,62 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-save-game",
               "description": "Palavras: Save Game = save + game; salve tudo; salvar/gravar/guardar; ≠ Load/New/backspace; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Letra X — o xis, o nexo, as salas",
+              "tileLabel": "Inspeção: Letra X — o xis, o ne…",
+              "href": "/posts/post-inspecao-palavra-letra-x.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-letra-x",
+              "description": "Palavras: letra X / xis — 24.ª; som PT vários; x de conexão = nexo; ≠ app ≠ Xiaomi; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: DSL — a sigla do cano que fica",
+              "tileLabel": "Inspeção: DSL — a sigla do cano…",
+              "href": "/posts/post-inspecao-palavra-dsl.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-dsl",
+              "description": "Palavras: DSL = Digital Subscriber Line; ≠ discada ≠ login ≠ fibra; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Log In — a porta da sessão, não o cano",
+              "tileLabel": "Inspeção: Log In — a porta da s…",
+              "href": "/posts/post-inspecao-palavra-login.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-login",
+              "description": "Palavras: Log In / login = log + in; lapso Longin; ≠ conexão ≠ discada ≠ DSL ≠ Save Game; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Internet discada — o cano que telefona",
+              "tileLabel": "Inspeção: Internet discada — o …",
+              "href": "/posts/post-inspecao-palavra-internet-discada.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-internet-discada",
+              "description": "Palavras: internet discada = dial-up; ocupa o telefone; smash niocenchcadaro; ≠ DSL ≠ login; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Isqueiro Clipper — o irmão recarregável do BIC",
+              "tileLabel": "Inspeção: Isqueiro Clipper — o …",
+              "href": "/posts/post-inspecao-palavra-isqueiro-clipper.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-isqueiro-clipper",
+              "description": "Palavras: Clipper = isqueiro Flamagas; ≠ cabelo ≠ navio ≠ clipe; par BIC; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Liberdade — o nome, as salas; ≠ bairro ≠ filme ≠ linha livre",
+              "tileLabel": "Inspeção: Liberdade — o nome, a…",
+              "href": "/posts/post-inspecao-palavra-liberdade.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-liberdade",
+              "description": "Palavras: liberdade (lībertās); livre/libre; ≠ bairro ≠ Shawshank ≠ DSL; Cantouou · Ufa!!!; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Fantasia — a faculdade; ≠ fantástico ≠ roupa ≠ filme",
+              "tileLabel": "Inspeção: Fantasia — a faculdad…",
+              "href": "/posts/post-inspecao-palavra-fantasia.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-fantasia",
+              "description": "Palavras: fantasia — gr. phantasía; substantivo da imaginação; ≠ elogio fantástico ≠ fantasioso ≠ Carnaval ≠ Disney; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

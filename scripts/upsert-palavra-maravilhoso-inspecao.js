@@ -94,15 +94,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Maravilhoso — maravilha, assombro, elogio BR e Faça o melhor!',
-      titleEn: 'Maravilhoso — marvel, wonder, BR praise and Do your best!',
-      titleEs: 'Maravilhoso — maravilla, asombro, elogio BR y ¡Haz lo mejor!',
+      title: 'Maravilhoso — maravilha, assombro, elogio BR e Valeu !!!',
+      titleEn: 'Maravilhoso — marvel, wonder, BR praise and Valeu !!!',
+      titleEs: 'Maravilhoso — maravilla, asombro, elogio BR y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: maravilhoso — de maravilha/mirabilia; assombro e elogio BR; escala legal/genial/aff; Faça o melhor depois do uau.',
-      whyEn: 'Words: maravilhoso — from maravilha/mirabilia; wonder and BR praise; scale legal/genial/aff; Do your best after the wow.',
-      whyEs: 'Palabras: maravilhoso — de maravilha/mirabilia; asombro y elogio BR; escala legal/genial/aff; Haz lo mejor después del guau.',
+      why: 'Palavras: maravilhoso — de maravilha/mirabilia; assombro e elogio BR; escala legal/genial/aff; Valeu !!! depois do uau.',
+      whyEn: 'Words: maravilhoso — from maravilha/mirabilia; wonder and BR praise; scale legal/genial/aff; Valeu !!! after the wow.',
+      whyEs: 'Palabras: maravilhoso — de maravilha/mirabilia; asombro y elogio BR; escala legal/genial/aff; Valeu !!! después del guau.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -112,7 +112,7 @@ async function main() {
         '/posts/post-inspecao-palavra-legal.html',
         '/posts/post-inspecao-palavra-genial.html',
         '/posts/post-inspecao-palavra-aff.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — maravilha × assombro × escala de elogio.'
     };
@@ -131,11 +131,11 @@ async function main() {
       id: 'maravilhoso',
       word: 'maravilhoso',
       simple:
-        'De maravilha (lat. mirabilia) — assombro e elogio BR («que maravilhoso!»); na escala aff ← legal ← genial ← maravilhoso; depois do uau, Faça o melhor!',
+        'De maravilha (lat. mirabilia) — assombro e elogio BR («que maravilhoso!»); na escala aff ← legal ← genial ← maravilhoso; depois do uau, Valeu !!!',
       simpleEn:
-        'From maravilha (Lat. mirabilia) — wonder and BR praise; scale aff ← legal ← genial ← maravilhoso; after the wow, Do your best!',
+        'From maravilha (Lat. mirabilia) — wonder and BR praise; scale aff ← legal ← genial ← maravilhoso; after the wow, Valeu !!!',
       simpleEs:
-        'De maravilha (lat. mirabilia) — asombro y elogio BR; escala aff ← legal ← genial ← maravilhoso; después del guau, ¡Haz lo mejor!',
+        'De maravilha (lat. mirabilia) — asombro y elogio BR; escala aff ← legal ← genial ← maravilhoso; después del guau, ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -161,7 +161,7 @@ async function main() {
     if (!gloss.includes('maravilhoso: {')) {
       const re = /(genial: \{[\s\S]*?zu: "uhlakaniphile" },\r?\n)/;
       const entry =
-        '    maravilhoso: { tone: "warm", category: "Assombro", mundane: "Admirável / elogio BR quente (de maravilha).", gloss: "Maravilha→assombro→elogio; escala aff←legal←genial←maravilhoso; depois Faça o melhor!", href: "/posts/post-inspecao-palavra-maravilhoso.html", en: "wonderful / marvelous", es: "maravilloso", fr: "merveilleux", it: "meraviglioso", de: "wunderbar", el: "θαυμάσιος", la: "mirabilis", yo: "iyẹnú", sw: "ajabu", gez: "dǝnk", nl: "prachtig", pl: "wspaniały", ru: "чудесный", uk: "чудовий", zh: "美妙的", ja: "素晴らしい", ko: "멋진", ar: "رائع", he: "נפלא", hi: "अद्भुत", tr: "harika", sv: "underbar", da: "vidunderlig", no: "vidunderlig", fi: "ihmeellinen", cs: "nádherný", ro: "minunat", hu: "csodálatos", ca: "meravellós", gl: "marabilloso", eu: "miragarri", gn: "iporãité", qu: "musphay", eo: "mirinda", vi: "tuyệt vời", id: "menakjubkan", th: "มหัศจรรย์", hr: "divan", sk: "úžasný", ga: "iontach", cy: "rhyfeddol", ha: "ban mamaki", am: "ድንቅ", fa: "شگفت‌انگیز", bn: "অপূর্ব", zu: "esimangalisayo" },\n' +
+        '    maravilhoso: { tone: "warm", category: "Assombro", mundane: "Admirável / elogio BR quente (de maravilha).", gloss: "Maravilha→assombro→elogio; escala aff←legal←genial←maravilhoso; depois Valeu !!!", href: "/posts/post-inspecao-palavra-maravilhoso.html", en: "wonderful / marvelous", es: "maravilloso", fr: "merveilleux", it: "meraviglioso", de: "wunderbar", el: "θαυμάσιος", la: "mirabilis", yo: "iyẹnú", sw: "ajabu", gez: "dǝnk", nl: "prachtig", pl: "wspaniały", ru: "чудесный", uk: "чудовий", zh: "美妙的", ja: "素晴らしい", ko: "멋진", ar: "رائع", he: "נפלא", hi: "अद्भुत", tr: "harika", sv: "underbar", da: "vidunderlig", no: "vidunderlig", fi: "ihmeellinen", cs: "nádherný", ro: "minunat", hu: "csodálatos", ca: "meravellós", gl: "marabilloso", eu: "miragarri", gn: "iporãité", qu: "musphay", eo: "mirinda", vi: "tuyệt vời", id: "menakjubkan", th: "มหัศจรรย์", hr: "divan", sk: "úžasný", ga: "iontach", cy: "rhyfeddol", ha: "ban mamaki", am: "ድንቅ", fa: "شگفت‌انگیز", bn: "অপূর্ব", zu: "esimangalisayo" },\n' +
         '    maravilha: { gloss: "Substantivo — espanto/prodígio; ver ficha maravilhoso.", href: "/posts/post-inspecao-palavra-maravilhoso.html", en: "marvel / wonder", es: "maravilla", fr: "merveille", it: "meraviglia", de: "Wunder", el: "θαύμα", la: "mirabilia", yo: "ìyanu", sw: "ajabu", gez: "mänfäq", nl: "wonder", pl: "cud", ru: "чудо", uk: "диво", zh: "奇迹", ja: "驚異", ko: "경이", ar: "أعجوبة", he: "פלא", hi: "आश्चर्य", tr: "harika", sv: "under", da: "vidunder", no: "under", fi: "ihme", cs: "div", ro: "minune", hu: "csoda", ca: "meravella", gl: "marabilla", eu: "mirari", gn: "mba\'e guasu", qu: "musphay", eo: "mirindaĵo", vi: "kỳ quan", id: "keajaiban", th: "ความมหัศจรรย์", hr: "čudo", sk: "zázrak", ga: "iontas", cy: "rhyfeddod", ha: "abin mamaki", am: "ድንቅ ነገር", fa: "شگفتی", bn: "বিস্ময়", zu: "isimanga" },\n';
       if (re.test(gloss)) {
         gloss = gloss.replace(re, '$1' + entry);

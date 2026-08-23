@@ -137,11 +137,11 @@ async function main() {
       tipo: 'pessoas',
       priority: 2,
       status: 'feita',
-      why: 'Pessoas: Lucas Evangelista; médico amado (Col 4,14) × «de almas» (tradição); fora dos Doze; corpo e alma sem partir o templo; Faça o melhor!',
+      why: 'Pessoas: Lucas Evangelista; médico amado (Col 4,14) × «de almas» (tradição); fora dos Doze; corpo e alma sem partir o templo; Valeu !!!',
       whyEn:
-        'People: Luke the Evangelist; beloved physician (Col 4:14) × “of souls” (tradition); not of the Twelve; body and soul without splitting the temple; Do your best!',
+        'People: Luke the Evangelist; beloved physician (Col 4:14) × “of souls” (tradition); not of the Twelve; body and soul without splitting the temple; Valeu !!!',
       whyEs:
-        'Personas: Lucas el Evangelista; médico amado (Col 4,14) × «de almas» (tradición); fuera de los Doce; cuerpo y alma sin partir el templo; ¡Haz lo mejor!',
+        'Personas: Lucas el Evangelista; médico amado (Col 4,14) × «de almas» (tradición); fuera de los Doce; cuerpo y alma sin partir el templo; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'pessoas-historia',
@@ -172,11 +172,11 @@ async function main() {
       id: 'lucas-evangelista',
       word: 'Lucas, médico de homens e de almas',
       simple:
-        'Pessoa — Lucas Evangelista; médico amado (Col 4,14) e epíteto «de almas» (tradição); não é um dos Doze; corpo e alma sem partir o templo; Faça o melhor!',
+        'Pessoa — Lucas Evangelista; médico amado (Col 4,14) e epíteto «de almas» (tradição); não é um dos Doze; corpo e alma sem partir o templo; Valeu !!!',
       simpleEn:
-        'Person — Luke the Evangelist; beloved physician (Col 4:14) and “of souls” epithet (tradition); not one of the Twelve; body and soul without splitting the temple; Do your best!',
+        'Person — Luke the Evangelist; beloved physician (Col 4:14) and “of souls” epithet (tradition); not one of the Twelve; body and soul without splitting the temple; Valeu !!!',
       simpleEs:
-        'Persona — Lucas el Evangelista; médico amado (Col 4,14) y epíteto «de almas» (tradición); no es uno de los Doce; cuerpo y alma sin partir el templo; ¡Haz lo mejor!',
+        'Persona — Lucas el Evangelista; médico amado (Col 4,14) y epíteto «de almas» (tradición); no es uno de los Doce; cuerpo y alma sin partir el templo; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href,
@@ -212,7 +212,7 @@ async function main() {
 
   const glossPath = path.join(ROOT, 'js', 'learn-glossary.js');
   const glossLine =
-    '    "lucas evangelista": { tone: "warm", category: "Cuidado", mundane: "Lucas o Evangelista — médico amado (Col 4,14) e epíteto de almas (tradição).", gloss: "Não é um dos Doze; corpo × alma sem partir o templo; ficha ≠ catecismo; depois Faça o melhor!", href: "/posts/post-inspecao-figura-lucas-evangelista.html", en: "Luke the Evangelist", es: "Lucas el Evangelista", fr: "Luc l\'évangéliste", it: "Luca evangelista", de: "Lukas der Evangelist", el: "Λουκάς ο Ευαγγελιστής", la: "Lucas evangelista", yo: "Luku Onihinhin", sw: "Luka Mwinjilisti", gez: "Luqas Wangelawi", nl: "Lucas de evangelist", pl: "Łukasz Ewangelista", ru: "евангелист Лука", uk: "євангеліст Лука", zh: "福音书作者路加", ja: "福音記者ルカ", ko: "복음사가 루카", ar: "لوقا الإنجيلي", he: "לוקאס המבשר", hi: "लूका सुसमाचार लेखक", tr: "Müjdeci Luka", sv: "evangelisten Lukas", da: "evangelisten Lukas", no: "evangelisten Lukas", fi: "evankelista Luukas", cs: "evangelista Lukáš", ro: "evanghelistul Luca", hu: "Lukács evangélista", ca: "Lluc evangelista", gl: "Lucas evanxelista", eu: "Lukas ebanjelaria", gn: "Lucas marandu porã", qu: "Lucas willaq", eo: "Luko la evangeliisto", vi: "Luca thánh sử", id: "Lukas penginjil", th: "ลูกาผู้นิพนธ์พระวรสาร", hr: "evanđelist Luka", sk: "evanjelista Lukáš", ga: "Lúcás an Soiscéalaí", cy: "Luc yr Efengylydd", ha: "Luka mai bishara", am: "ሉቃስ ወንጌላዊ", fa: "لوقا انجیل‌نویس", bn: "লুক সুসমাচার রচয়িতা", zu: "uLuka umvangeli" },';
+    '    "lucas evangelista": { tone: "warm", category: "Cuidado", mundane: "Lucas o Evangelista — médico amado (Col 4,14) e epíteto de almas (tradição).", gloss: "Não é um dos Doze; corpo × alma sem partir o templo; ficha ≠ catecismo; depois Valeu !!!", href: "/posts/post-inspecao-figura-lucas-evangelista.html", en: "Luke the Evangelist", es: "Lucas el Evangelista", fr: "Luc l\'évangéliste", it: "Luca evangelista", de: "Lukas der Evangelist", el: "Λουκάς ο Ευαγγελιστής", la: "Lucas evangelista", yo: "Luku Onihinhin", sw: "Luka Mwinjilisti", gez: "Luqas Wangelawi", nl: "Lucas de evangelist", pl: "Łukasz Ewangelista", ru: "евангелист Лука", uk: "євангеліст Лука", zh: "福音书作者路加", ja: "福音記者ルカ", ko: "복음사가 루카", ar: "لوقا الإنجيلي", he: "לוקאס המבשר", hi: "लूका सुसमाचार लेखक", tr: "Müjdeci Luka", sv: "evangelisten Lukas", da: "evangelisten Lukas", no: "evangelisten Lukas", fi: "evankelista Luukas", cs: "evangelista Lukáš", ro: "evanghelistul Luca", hu: "Lukács evangélista", ca: "Lluc evangelista", gl: "Lucas evanxelista", eu: "Lukas ebanjelaria", gn: "Lucas marandu porã", qu: "Lucas willaq", eo: "Luko la evangeliisto", vi: "Luca thánh sử", id: "Lukas penginjil", th: "ลูกาผู้นิพนธ์พระวรสาร", hr: "evanđelist Luka", sk: "evanjelista Lukáš", ga: "Lúcás an Soiscéalaí", cy: "Luc yr Efengylydd", ha: "Luka mai bishara", am: "ሉቃስ ወንጌላዊ", fa: "لوقا انجیل‌نویس", bn: "লুক সুসমাচার রচয়িতা", zu: "uLuka umvangeli" },';
   upsertGloss(
     glossPath,
     '    "lucas evangelista":\\s*\\{[\\s\\S]*?\\},',

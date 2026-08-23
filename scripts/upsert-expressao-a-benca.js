@@ -105,7 +105,7 @@ async function main() {
         '/posts/post-inspecao-expressao-deus-abencoe.html',
         '/posts/post-inspecao-palavra-mae.html',
         '/posts/post-inspecao-palavra-noite.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. Expressões — pedir bença ≠ dar Deus abençoe; tipografia amem → amém.'
@@ -125,11 +125,11 @@ async function main() {
       id: 'a-benca',
       word: 'a bença',
       simple:
-        'Expressão — pedido BR de bênção (pai/mãe); sequência Deus te abençoe · dorme com Deus · amém; irmã de Deus abençoe; depois Faça o melhor!',
+        'Expressão — pedido BR de bênção (pai/mãe); sequência Deus te abençoe · dorme com Deus · amém; irmã de Deus abençoe; depois Valeu !!!',
       simpleEn:
-        'Saying — BR request for a blessing; sequence God bless you · sleep with God · amen; sister of Deus abençoe; then Do your best!',
+        'Saying — BR request for a blessing; sequence God bless you · sleep with God · amen; sister of Deus abençoe; then Valeu !!!',
       simpleEs:
-        'Expresión — pedido BR de bendición; secuencia Dios te bendiga · duerme con Dios · amén; hermana de Deus abençoe; luego ¡Haz lo mejor!',
+        'Expresión — pedido BR de bendición; secuencia Dios te bendiga · duerme con Dios · amén; hermana de Deus abençoe; luego ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -155,7 +155,7 @@ async function main() {
     const main = `    "a bença": { tone: "warm", category: "Bênção", mundane: "Pedido oral de bênção (pai/mãe/mais velho).", gloss: "Pedir bença — sequência Deus te abençoe · dorme com Deus · amém; irmã de Deus abençoe; sem catecismo.", href: "${href}", en: "your blessing (request)", es: "la bendición (pedido)", fr: "ta bénédiction (demande)", it: "la benedizione (richiesta)", de: "den Segen (Bitte)", el: "την ευλογία (αίτηση)", la: "benedictio petita", yo: "ìbùkún (ìbéèrè)", sw: "baraka (ombi)", gez: "bərkät", nl: "je zegen (verzoek)", pl: "błogosławieństwo (prośba)", ru: "благословение (просьба)", uk: "благословення (прохання)", zh: "求祝福", ja: "祝福を乞う", ko: "축복을 구하다", ar: "طلب البركة", he: "בקשת ברכה", hi: "आशीर्वाद माँगना", tr: "hayır dua istemek", sv: "välsignelse (begäran)", da: "velsignelse (anmodning)", no: "velsignelse (forespørsel)", fi: "siunaus (pyyntö)", cs: "požehnání (prosba)", ro: "binecuvântare (cerere)", hu: "áldás (kérés)", ca: "la benedicció (petició)", gl: "a bénción (pedido)", eu: "bedeinkazioa (eskaera)", gn: "ñembo'e (jerure)", qu: "bendicion (mañakuy)", eo: "beno (peto)", vi: "xin phép lành", id: "minta berkat", th: "ขอพร", hr: "blagoslov (molba)", sk: "požehnanie (prosba)", ga: "beannacht (iarratas)", cy: "bendith (cais)", ha: "albarka (roko)", am: "በረከት መጠየቅ", fa: "طلب برکت", bn: "আশীর্বাদ চাওয়া", zu: "isibusiso (isicelo)" },`;
     const aliasBenca = `    bença: { gloss: "Oral de bênção — ver «a bença» (pedido).", href: "${href}", en: "blessing (oral)", es: "bendición (oral)" },`;
     const aliasBenca2 = `    benca: { gloss: "Tipografia sem cedilha → ver «a bença».", href: "${href}", en: "see a bença", es: "ver a bença" },`;
-    const aliasDorme = `    "dorme com deus": { tone: "warm", category: "Bênção", mundane: "Boa-noite com cuidado.", gloss: "Noite da sequência a bença — deitar sem chantagem; elo noite; depois Faça o melhor!", href: "${href}", en: "sleep with God", es: "duerme con Dios", fr: "dors avec Dieu", it: "dormi con Dio", de: "schlafe mit Gott", el: "κοιμήσου με τον Θεό", la: "dormi cum Deo", yo: "sùn pẹ̀lú Ọlọ́run", sw: "lala na Mungu", gez: "nəm ʼƎgziʼabəḥer", nl: "slaap met God", pl: "śpij z Bogiem", ru: "спи с Богом", uk: "спи з Богом", zh: "与上帝同眠", ja: "神とともに眠れ", ko: "하나님과 함께 자라", ar: "نم مع الله", he: "ישן עם אלוהים", hi: "भगवान के साथ सो", tr: "Tanrı ile uyu", sv: "sov med Gud", da: "sov med Gud", no: "sov med Gud", fi: "nuku Jumalan kanssa", cs: "spi s Bohem", ro: "dormi cu Dumnezeu", hu: "aludj Istennel", ca: "dorm amb Déu", gl: "durme con Deus", eu: "lo egin Jainkoarekin", gn: "kera Tupã ndive", qu: "Diyuswan puñuy", eo: "dormu kun Dio", vi: "ngủ cùng Chúa", id: "tidur bersama Tuhan", th: "หลับกับพระเจ้า", hr: "spavaj s Bogom", sk: "spi s Bohom", ga: "codail le Dia", cy: "cysga gyda Duw", ha: "yi barci da Allah", am: "ከእግዚአብሔር ጋር ተኛ", fa: "با خدا بخواب", bn: "ঈশ্বরের সাথে ঘুমাও", zu: "lala noNkulunkulu" },`;
+    const aliasDorme = `    "dorme com deus": { tone: "warm", category: "Bênção", mundane: "Boa-noite com cuidado.", gloss: "Noite da sequência a bença — deitar sem chantagem; elo noite; depois Valeu !!!", href: "${href}", en: "sleep with God", es: "duerme con Dios", fr: "dors avec Dieu", it: "dormi con Dio", de: "schlafe mit Gott", el: "κοιμήσου με τον Θεό", la: "dormi cum Deo", yo: "sùn pẹ̀lú Ọlọ́run", sw: "lala na Mungu", gez: "nəm ʼƎgziʼabəḥer", nl: "slaap met God", pl: "śpij z Bogiem", ru: "спи с Богом", uk: "спи з Богом", zh: "与上帝同眠", ja: "神とともに眠れ", ko: "하나님과 함께 자라", ar: "نم مع الله", he: "ישן עם אלוהים", hi: "भगवान के साथ सो", tr: "Tanrı ile uyu", sv: "sov med Gud", da: "sov med Gud", no: "sov med Gud", fi: "nuku Jumalan kanssa", cs: "spi s Bohem", ro: "dormi cu Dumnezeu", hu: "aludj Istennel", ca: "dorm amb Déu", gl: "durme con Deus", eu: "lo egin Jainkoarekin", gn: "kera Tupã ndive", qu: "Diyuswan puñuy", eo: "dormu kun Dio", vi: "ngủ cùng Chúa", id: "tidur bersama Tuhan", th: "หลับกับพระเจ้า", hr: "spavaj s Bogom", sk: "spi s Bohom", ga: "codail le Dia", cy: "cysga gyda Duw", ha: "yi barci da Allah", am: "ከእግዚአብሔር ጋር ተኛ", fa: "با خدا بخواب", bn: "ঈশ্বরের সাথে ঘুমাও", zu: "lala noNkulunkulu" },`;
     const aliasAmen = `    amém: { tone: "warm", category: "Bênção", mundane: "Selo de oração — «assim seja».", gloss: "Fecha a sequência a bença; tipografia amem → amém; não é prova de fé.", href: "${href}", en: "amen", es: "amén", fr: "amen", it: "amen", de: "Amen", el: "αμήν", la: "amen", yo: "àmíìn", sw: "amina", gez: "amen", nl: "amen", pl: "amen", ru: "аминь", uk: "амінь", zh: "阿们", ja: "アーメン", ko: "아멘", ar: "آمين", he: "אמן", hi: "आमेन", tr: "amin", sv: "amen", da: "amen", no: "amen", fi: "aamen", cs: "amen", ro: "amin", hu: "ámen", ca: "amén", gl: "amén", eu: "amen", gn: "amén", qu: "amen", eo: "amen", vi: "amen", id: "amin", th: "อาเมน", hr: "amen", sk: "amen", ga: "áiméan", cy: "amen", ha: "amin", am: "አሜን", fa: "آمین", bn: "আমেন", zu: "amen" },`;
     const aliasAmem = `    amem: { gloss: "Tipografia / oral sem acento → ver amém (selo da bença).", href: "${href}", en: "see amém", es: "ver amén" },`;
 

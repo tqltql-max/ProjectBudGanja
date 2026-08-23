@@ -76,9 +76,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: Jobs — EN jobs (trabalhos) × Steve Jobs no BR; anti-culto de fundador; elos skill/ídolo/criatividade; Faça o melhor!',
-      whyEn: 'Words: Jobs — EN jobs (work) × Steve Jobs in BR; anti-founder cult; links skill/ídolo/criatividade; Do your best!',
-      whyEs: 'Palabras: Jobs — EN jobs (trabajos) × Steve Jobs en BR; anti-culto de fundador; vínculos skill/ídolo/criatividade; ¡Haz lo mejor!',
+      why: 'Palavras: Jobs — EN jobs (trabalhos) × Steve Jobs no BR; anti-culto de fundador; elos skill/ídolo/criatividade; Valeu !!!',
+      whyEn: 'Words: Jobs — EN jobs (work) × Steve Jobs in BR; anti-founder cult; links skill/ídolo/criatividade; Valeu !!!',
+      whyEs: 'Palabras: Jobs — EN jobs (trabajos) × Steve Jobs en BR; anti-culto de fundador; vínculos skill/ídolo/criatividade; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -89,7 +89,7 @@ async function main() {
         '/posts/post-inspecao-palavra-skill.html',
         '/posts/post-inspecao-palavra-idolo.html',
         '/posts/post-inspecao-palavra-criatividade.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -111,11 +111,11 @@ async function main() {
       id: 'jobs',
       word: 'Jobs',
       simple:
-        'EN jobs (trabalhos) × nome próprio no BR (Steve Jobs); ofício sem pedestal; elos skill e ídolo; Faça o melhor!',
+        'EN jobs (trabalhos) × nome próprio no BR (Steve Jobs); ofício sem pedestal; elos skill e ídolo; Valeu !!!',
       simpleEn:
-        'EN jobs (work) × proper name in BR (Steve Jobs); craft without a pedestal; links skill and ídolo; Do your best!',
+        'EN jobs (work) × proper name in BR (Steve Jobs); craft without a pedestal; links skill and ídolo; Valeu !!!',
       simpleEs:
-        'EN jobs (trabajos) × nombre propio en BR (Steve Jobs); oficio sin pedestal; vínculos skill e ídolo; ¡Haz lo mejor!',
+        'EN jobs (trabajos) × nombre propio en BR (Steve Jobs); oficio sin pedestal; vínculos skill e ídolo; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -141,7 +141,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entry =
-      '    jobs: { tone: "caution", category: "Ofício", mundane: "EN jobs = trabalhos; no BR, atalho de Steve Jobs.", gloss: "Camadas: emprego × nome próprio × culto de fundador; elos skill/ídolo; sem pedestal; Faça o melhor!", href: "/posts/post-inspecao-palavra-jobs.html", en: "jobs / Jobs", es: "trabajos / Jobs", fr: "emplois / Jobs", it: "lavori / Jobs", de: "Jobs (Arbeit / Name)", el: "δουλειές / Jobs", la: "opera / Jobs", yo: "iṣẹ́ / Jobs", sw: "kazi / Jobs", gez: "sǝra / Jobs", nl: "banen / Jobs", pl: "prace / Jobs", ru: "работы / Jobs", uk: "роботи / Jobs", zh: "工作 / Jobs", ja: "仕事 / Jobs", ko: "일자리 / Jobs", ar: "وظائف / Jobs", he: "עבודות / Jobs", hi: "नौकरियाँ / Jobs", tr: "işler / Jobs", sv: "jobb / Jobs", da: "jobs / Jobs", no: "jobber / Jobs", fi: "työt / Jobs", cs: "práce / Jobs", ro: "joburi / Jobs", hu: "munkák / Jobs", ca: "feines / Jobs", gl: "traballos / Jobs", eu: "lanak / Jobs", gn: "mba\'apo / Jobs", qu: "llamk\'aykuna / Jobs", eo: "laboroj / Jobs", vi: "việc làm / Jobs", id: "pekerjaan / Jobs", th: "งาน / Jobs", hr: "poslovi / Jobs", sk: "práce / Jobs", ga: "poist / Jobs", cy: "swyddi / Jobs", ha: "ayyuka / Jobs", am: "ስራዎች / Jobs", fa: "شغل‌ها / Jobs", bn: "চাকরি / Jobs", zu: "imisebenzi / Jobs" },\n';
+      '    jobs: { tone: "caution", category: "Ofício", mundane: "EN jobs = trabalhos; no BR, atalho de Steve Jobs.", gloss: "Camadas: emprego × nome próprio × culto de fundador; elos skill/ídolo; sem pedestal; Valeu !!!", href: "/posts/post-inspecao-palavra-jobs.html", en: "jobs / Jobs", es: "trabajos / Jobs", fr: "emplois / Jobs", it: "lavori / Jobs", de: "Jobs (Arbeit / Name)", el: "δουλειές / Jobs", la: "opera / Jobs", yo: "iṣẹ́ / Jobs", sw: "kazi / Jobs", gez: "sǝra / Jobs", nl: "banen / Jobs", pl: "prace / Jobs", ru: "работы / Jobs", uk: "роботи / Jobs", zh: "工作 / Jobs", ja: "仕事 / Jobs", ko: "일자리 / Jobs", ar: "وظائف / Jobs", he: "עבודות / Jobs", hi: "नौकरियाँ / Jobs", tr: "işler / Jobs", sv: "jobb / Jobs", da: "jobs / Jobs", no: "jobber / Jobs", fi: "työt / Jobs", cs: "práce / Jobs", ro: "joburi / Jobs", hu: "munkák / Jobs", ca: "feines / Jobs", gl: "traballos / Jobs", eu: "lanak / Jobs", gn: "mba\'apo / Jobs", qu: "llamk\'aykuna / Jobs", eo: "laboroj / Jobs", vi: "việc làm / Jobs", id: "pekerjaan / Jobs", th: "งาน / Jobs", hr: "poslovi / Jobs", sk: "práce / Jobs", ga: "poist / Jobs", cy: "swyddi / Jobs", ha: "ayyuka / Jobs", am: "ስራዎች / Jobs", fa: "شغل‌ها / Jobs", bn: "চাকরি / Jobs", zu: "imisebenzi / Jobs" },\n';
     if (/jobs:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    jobs:\s*\{[\s\S]*?\},/, entry.trimEnd().replace(/,$/, '') + ',');
       fs.writeFileSync(glossPath, gloss);

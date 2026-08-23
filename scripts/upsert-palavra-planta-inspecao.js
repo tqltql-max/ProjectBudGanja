@@ -107,7 +107,7 @@ async function main() {
         '/posts/post-inspecao-guia-farmacia-viva.html',
         '/cultivo/',
         '/posts/post-inspecao-palavra-animal.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — planta como conceito; plural plantas no corpo; sem duplicar especies.'
     };

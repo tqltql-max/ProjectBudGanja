@@ -54,7 +54,7 @@ async function syncSql(post) {
 
 function patchGlossary(gloss) {
   const main =
-    '    abracadabra: { tone: "caution", category: "Fórmula", mundane: "Fórmula de palco / amuleto; no BR também «abacadabra» (lapso oral).", gloss: "Âncora escrita abracadabra; abacadabra = boca; cue ≠ feito; elos gesto/skill/verdade; Faça o melhor sem atalho.", href: "/posts/post-inspecao-palavra-abracadabra.html", en: "abracadabra", es: "abracadabra", fr: "abracadabra", it: "abracadabra", de: "Abrakadabra", el: "αμπρακατάμπρα", la: "abracadabra", yo: "abracadabra", sw: "abracadabra", gez: "abracadabra", nl: "abracadabra", pl: "abrakadabra", ru: "абракадабра", uk: "абракадабра", zh: "咒语", ja: "アブラカダブラ", ko: "아브라카다브라", ar: "أبراكادابرا", he: "אברקדברה", hi: "अब्राकादबरा", tr: "abrakadabra", sv: "abrakadabra", da: "abracadabra", no: "abrakadabra", fi: "hokuspokos", cs: "abrakadabra", ro: "abracadabra", hu: "abrakadabra", ca: "abracadabra", gl: "abracadabra", eu: "abrakadabra", gn: "abracadabra", qu: "abracadabra", eo: "abrakadabra", vi: "abracadabra", id: "abrakadabra", th: "อาบราคาดาบรา", hr: "abrakadabra", sk: "abrakadabra", ga: "abracadabra", cy: "abracadabra", ha: "abracadabra", am: "አብራካዳብራ", fa: "ابراکادابرا", bn: "আব্রাকাডাব্রা", zu: "abracadabra" },\n';
+    '    abracadabra: { tone: "caution", category: "Fórmula", mundane: "Fórmula de palco / amuleto; no BR também «abacadabra» (lapso oral).", gloss: "Âncora escrita abracadabra; abacadabra = boca; cue ≠ feito; elos gesto/skill/verdade; Valeu !!! sem atalho.", href: "/posts/post-inspecao-palavra-abracadabra.html", en: "abracadabra", es: "abracadabra", fr: "abracadabra", it: "abracadabra", de: "Abrakadabra", el: "αμπρακατάμπρα", la: "abracadabra", yo: "abracadabra", sw: "abracadabra", gez: "abracadabra", nl: "abracadabra", pl: "abrakadabra", ru: "абракадабра", uk: "абракадабра", zh: "咒语", ja: "アブラカダブラ", ko: "아브라카다브라", ar: "أبراكادابرا", he: "אברקדברה", hi: "अब्राकादबरा", tr: "abrakadabra", sv: "abrakadabra", da: "abracadabra", no: "abrakadabra", fi: "hokuspokos", cs: "abrakadabra", ro: "abracadabra", hu: "abrakadabra", ca: "abracadabra", gl: "abracadabra", eu: "abrakadabra", gn: "abracadabra", qu: "abracadabra", eo: "abrakadabra", vi: "abracadabra", id: "abrakadabra", th: "อาบราคาดาบรา", hr: "abrakadabra", sk: "abrakadabra", ga: "abracadabra", cy: "abracadabra", ha: "abracadabra", am: "አብራካዳብራ", fa: "ابراکادابرا", bn: "আব্রাকাডাব্রা", zu: "abracadabra" },\n';
   const aliases =
     '    abacadabra: { gloss: "Lapso oral / grafia de abracadabra — ver ficha da fórmula.", href: "/posts/post-inspecao-palavra-abracadabra.html", en: "slip of abracadabra", es: "lapsus de abracadabra" },\n' +
     '    "abra cadabra": { gloss: "Forma partida de abracadabra — ver ficha da fórmula.", href: "/posts/post-inspecao-palavra-abracadabra.html", en: "split spelling of abracadabra", es: "forma partida de abracadabra" },\n' +
@@ -110,9 +110,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: abracadabra (âncora) × abacadabra (oral); amuleto × palco × anti-atalho; elos gesto/skill/verdade; Faça o melhor!',
-      whyEn: 'Words: abracadabra (anchor) × abacadabra (oral); amulet × stage × anti-shortcut; links gesture/skill/truth; Do your best!',
-      whyEs: 'Palabras: abracadabra (ancla) × abacadabra (oral); amuleto × escenario × anti-atajo; vínculos gesto/skill/verdad; ¡Haz lo mejor!',
+      why: 'Palavras: abracadabra (âncora) × abacadabra (oral); amuleto × palco × anti-atalho; elos gesto/skill/verdade; Valeu !!!',
+      whyEn: 'Words: abracadabra (anchor) × abacadabra (oral); amulet × stage × anti-shortcut; links gesture/skill/truth; Valeu !!!',
+      whyEs: 'Palabras: abracadabra (ancla) × abacadabra (oral); amuleto × escenario × anti-atajo; vínculos gesto/skill/verdad; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: HREF,
       seriesHint: 'palavras-origem',
@@ -123,7 +123,7 @@ async function main() {
         '/posts/post-inspecao-palavra-gesto.html',
         '/posts/post-inspecao-palavra-skill.html',
         '/posts/post-inspecao-palavra-verdade.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -145,11 +145,11 @@ async function main() {
       id: 'abracadabra',
       word: 'Abracadabra',
       simple:
-        'Fórmula de palco / amuleto; «abacadabra» é lapso oral da mesma palavra; a boca encena, as mãos fazem; elos gesto e skill; Faça o melhor!',
+        'Fórmula de palco / amuleto; «abacadabra» é lapso oral da mesma palavra; a boca encena, as mãos fazem; elos gesto e skill; Valeu !!!',
       simpleEn:
-        'Stage formula / amulet; “abacadabra” is the oral slip of the same word; speech cues, hands do; links gesture and skill; Do your best!',
+        'Stage formula / amulet; “abacadabra” is the oral slip of the same word; speech cues, hands do; links gesture and skill; Valeu !!!',
       simpleEs:
-        'Fórmula de escenario / amuleto; «abacadabra» es el lapsus oral de la misma palabra; la boca señala, las manos hacen; vínculos gesto y skill; ¡Haz lo mejor!',
+        'Fórmula de escenario / amuleto; «abacadabra» es el lapsus oral de la misma palabra; la boca señala, las manos hacen; vínculos gesto y skill; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href: HREF

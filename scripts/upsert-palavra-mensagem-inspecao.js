@@ -98,7 +98,7 @@ async function main() {
     'https://pt.wikipedia.org/wiki/Mensagem',
     '/posts/post-inspecao-palavra-gesto.html',
     '/posts/post-inspecao-palavra-lingua-portuguesa.html',
-    '/posts/post-inspecao-expressao-faca-o-melhor.html'
+    '/posts/post-inspecao-palavra-valeu.html'
   ];
   if (fs.existsSync(path.join(ROOT, 'posts', 'post-inspecao-palavra-sinal.html'))) {
     sources.splice(5, 0, '/posts/post-inspecao-palavra-sinal.html');

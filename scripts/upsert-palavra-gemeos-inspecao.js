@@ -54,7 +54,7 @@ async function syncSql(post) {
 
 function patchGlossary(gloss) {
   const main =
-    '    gêmeos: { tone: "caution", category: "Par", mundane: "Irmãos nascidos juntos; também o signo Gemini. Grafia viva: gemeos.", gloss: "Lat. geminus (par) ≠ genius (gênio/genial); Gemini = o par no céu; ≠ génio da lâmpada; elos relação/genial; Faça o melhor em cada mão.", href: "/posts/post-inspecao-palavra-gemeos.html", en: "twins / Gemini", es: "gemelos / Géminis", fr: "jumeaux / Gémeaux", it: "gemelli", de: "Zwillinge", el: "δίδυμοι", la: "gemini", yo: "ìbejì", sw: "mapacha", gez: "mäntäw", nl: "tweelingen", pl: "bliźnięta", ru: "близнецы", uk: "близнюки", zh: "双子", ja: "双子", ko: "쌍둥이", ar: "توأم", he: "תאומים", hi: "जुड़वाँ", tr: "ikizler", sv: "tvillingar", da: "tvillinger", no: "tvillinger", fi: "kaksoset", cs: "dvojčata", ro: "gemeni", hu: "ikrek", ca: "bessons", gl: "xemelgos", eu: "bikiak", gn: "mokõi", qu: "iskay wawqikuna", eo: "ĝemeloj", vi: "sinh đôi", id: "kembar", th: "ฝาแฝด", hr: "blizanci", sk: "dvojčatá", ga: "cúpla", cy: "gefelliaid", ha: "tagwaye", am: "መንትዮች", fa: "دوقلو", bn: "যমজ", zu: "amawele" },\n';
+    '    gêmeos: { tone: "caution", category: "Par", mundane: "Irmãos nascidos juntos; também o signo Gemini. Grafia viva: gemeos.", gloss: "Lat. geminus (par) ≠ genius (gênio/genial); Gemini = o par no céu; ≠ génio da lâmpada; elos relação/genial; Valeu !!! em cada mão.", href: "/posts/post-inspecao-palavra-gemeos.html", en: "twins / Gemini", es: "gemelos / Géminis", fr: "jumeaux / Gémeaux", it: "gemelli", de: "Zwillinge", el: "δίδυμοι", la: "gemini", yo: "ìbejì", sw: "mapacha", gez: "mäntäw", nl: "tweelingen", pl: "bliźnięta", ru: "близнецы", uk: "близнюки", zh: "双子", ja: "双子", ko: "쌍둥이", ar: "توأم", he: "תאומים", hi: "जुड़वाँ", tr: "ikizler", sv: "tvillingar", da: "tvillinger", no: "tvillinger", fi: "kaksoset", cs: "dvojčata", ro: "gemeni", hu: "ikrek", ca: "bessons", gl: "xemelgos", eu: "bikiak", gn: "mokõi", qu: "iskay wawqikuna", eo: "ĝemeloj", vi: "sinh đôi", id: "kembar", th: "ฝาแฝด", hr: "blizanci", sk: "dvojčatá", ga: "cúpla", cy: "gefelliaid", ha: "tagwaye", am: "መንትዮች", fa: "دوقلو", bn: "যমজ", zu: "amawele" },\n';
   const aliases =
     '    gemeos: { gloss: "Grafia sem acento de gêmeos — ver ficha do par.", href: "/posts/post-inspecao-palavra-gemeos.html", en: "twins (unaccented)", es: "gemelos (sin acento)" },\n' +
     '    gêmeo: { gloss: "Singular de gêmeos — ver ficha do par.", href: "/posts/post-inspecao-palavra-gemeos.html", en: "twin", es: "gemelo" },\n' +
@@ -106,9 +106,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: gêmeos (geminus) ≠ gênio (genius); signo Gemini; ≠ lâmpada de Aladim; elos relação/genial; Faça o melhor!',
-      whyEn: 'Words: gêmeos (geminus) ≠ gênio (genius); Gemini sign; ≠ Aladdin lamp; links relação/genial; Do your best!',
-      whyEs: 'Palabras: gêmeos (geminus) ≠ gênio (genius); signo Gemini; ≠ lámpara de Aladino; vínculos relação/genial; ¡Haz lo mejor!',
+      why: 'Palavras: gêmeos (geminus) ≠ gênio (genius); signo Gemini; ≠ lâmpada de Aladim; elos relação/genial; Valeu !!!',
+      whyEn: 'Words: gêmeos (geminus) ≠ gênio (genius); Gemini sign; ≠ Aladdin lamp; links relação/genial; Valeu !!!',
+      whyEs: 'Palabras: gêmeos (geminus) ≠ gênio (genius); signo Gemini; ≠ lámpara de Aladino; vínculos relação/genial; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: HREF,
       seriesHint: 'palavras-origem',
@@ -118,7 +118,7 @@ async function main() {
         '/posts/post-inspecao-palavra-genial.html',
         '/posts/post-inspecao-palavra-abracadabra.html',
         '/posts/post-inspecao-palavra-relacao.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -140,11 +140,11 @@ async function main() {
       id: 'gemeos',
       word: 'Gêmeos',
       simple:
-        'Lat. geminus — par / signo Gemini; ≠ gênio (genius) nem génio da lâmpada; grafia gemeos; elos relação e genial; Faça o melhor em cada mão.',
+        'Lat. geminus — par / signo Gemini; ≠ gênio (genius) nem génio da lâmpada; grafia gemeos; elos relação e genial; Valeu !!! em cada mão.',
       simpleEn:
-        'Lat. geminus — twins / Gemini sign; ≠ gênio (genius) or lamp genie; typed gemeos; links relação and genial; Do your best in each hand.',
+        'Lat. geminus — twins / Gemini sign; ≠ gênio (genius) or lamp genie; typed gemeos; links relação and genial; Valeu !!! in each hand.',
       simpleEs:
-        'Lat. geminus — gemelos / signo Géminis; ≠ gênio ni genio de la lámpara; grafía gemeos; vínculos relação y genial; Haz lo mejor en cada mano.',
+        'Lat. geminus — gemelos / signo Géminis; ≠ gênio ni genio de la lámpara; grafía gemeos; vínculos relação y genial; Valeu !!! en cada mano.',
       group: 'lexico',
       fromTitle: false,
       href: HREF

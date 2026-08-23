@@ -89,20 +89,20 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: valeu (valer ← lat. valēre) — gratidão leve BR; elos muitoobrigado/gesto/respeito; Faça o melhor!',
-      whyEn: 'Words: valeu (valer ← Lat. valēre) — light BR thanks; links muitoobrigado/gesture/respect; Do your best!',
-      whyEs: 'Palabras: valeu (valer ← lat. valēre) — gratitud ligera BR; vínculos muitoobrigado/gesto/respeito; ¡Haz lo mejor!',
+      why: 'Palavras: valeu (valer ← lat. valēre) — gratidão leve BR; elos Gratidão/gesto/respeito; Valeu !!!',
+      whyEn: 'Words: valeu (valer ← Lat. valēre) — light BR thanks; links Gratidão/gesture/respect; Valeu !!!',
+      whyEs: 'Palabras: valeu (valer ← lat. valēre) — gratitud ligera BR; vínculos Gratidão/gesto/respeito; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
       sources: [
         post.sourceUrl,
-        '/posts/post-inspecao-expressao-muito-obrigado.html',
+        '/posts/post-inspecao-palavra-gratidao.html',
         '/posts/post-inspecao-palavra-gesto.html',
         '/posts/post-inspecao-palavra-respeito.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
-      notes: 'Cap. ' + post.seriesOrder + ' — irmã leve de muitoobrigado.'
+      notes: 'Cap. ' + post.seriesOrder + ' — irmã leve de Gratidão.'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);
@@ -119,11 +119,11 @@ async function main() {
       id: 'valeu',
       word: 'valeu',
       simple:
-        'De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de muitoobrigado; gesto, respeito; Faça o melhor — e valeu.',
+        'De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de Gratidão; gesto, respeito; Valeu !!! — e valeu.',
       simpleEn:
-        'From valer ← Lat. valēre — light thanks / oral close BR; sister of muitoobrigado; gesture, respect; Do your best — and valeu.',
+        'From valer ← Lat. valēre — light thanks / oral close BR; sister of Gratidão; gesture, respect; Valeu !!! — and valeu.',
       simpleEs:
-        'De valer ← lat. valēre — gratitud ligera / cierre oral BR; hermana de muitoobrigado; gesto, respeito; Haz lo mejor — y valeu.',
+        'De valer ← lat. valēre — gratitud ligera / cierre oral BR; hermana de Gratidão; gesto, respeito; Valeu !!! — y valeu.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -132,7 +132,7 @@ async function main() {
     if (gi >= 0) items[gi] = Object.assign({}, items[gi], entry);
     else {
       const after = items.findIndex(
-        (x) => x.id === 'muitoobrigado' || x.id === 'aff' || x.id === 'gesto' || x.id === 'respeito'
+        (x) => x.id === 'Gratidão' || x.id === 'aff' || x.id === 'gesto' || x.id === 'respeito'
       );
       if (after >= 0) items.splice(after + 1, 0, entry);
       else items.push(entry);
@@ -147,7 +147,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    valeu: { gloss: "De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de muitoobrigado; Faça o melhor!", href: "/posts/post-inspecao-palavra-valeu.html", en: "thanks / cheers", es: "gracias (informal)", fr: "merci", it: "grazie", de: "danke", el: "efharisto", la: "gratias", yo: "o se", sw: "asante", gez: "amesegenallo", nl: "bedankt", pl: "dzieki", ru: "spasibo", uk: "dyakuyu", zh: "thanks", ja: "arigato", ko: "gomawo", ar: "shukran", he: "toda", hi: "dhanyavad", tr: "sagol", sv: "tack", da: "tak", no: "takk", fi: "kiitos", cs: "diky", ro: "mersi", hu: "kosz", ca: "gracies", gl: "grazas", eu: "eskerrik", gn: "aguyje", qu: "añay", eo: "dankon", vi: "cam on", id: "makasih", th: "khop khun", hr: "hvala", sk: "dakujem", ga: "go raibh maith", cy: "diolch", ha: "na gode", am: "ameseginalehu", fa: "merci", bn: "dhonnobad", zu: "ngiyabonga" },';
+      '    valeu: { gloss: "De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de Gratidão; Valeu !!!", href: "/posts/post-inspecao-palavra-valeu.html", en: "thanks / cheers", es: "gracias (informal)", fr: "merci", it: "grazie", de: "danke", el: "efharisto", la: "gratias", yo: "o se", sw: "asante", gez: "amesegenallo", nl: "bedankt", pl: "dzieki", ru: "spasibo", uk: "dyakuyu", zh: "thanks", ja: "arigato", ko: "gomawo", ar: "shukran", he: "toda", hi: "dhanyavad", tr: "sagol", sv: "tack", da: "tak", no: "takk", fi: "kiitos", cs: "diky", ro: "mersi", hu: "kosz", ca: "gracies", gl: "grazas", eu: "eskerrik", gn: "aguyje", qu: "añay", eo: "dankon", vi: "cam on", id: "makasih", th: "khop khun", hr: "hvala", sk: "dakujem", ga: "go raibh maith", cy: "diolch", ha: "na gode", am: "ameseginalehu", fa: "merci", bn: "dhonnobad", zu: "ngiyabonga" },';
     if (/valeu:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    valeu:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

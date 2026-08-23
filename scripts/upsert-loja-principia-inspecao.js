@@ -102,7 +102,7 @@ async function main() {
         'https://panoramafarmaceutico.com.br/dermocosmeticos-de-alta-performance/',
         '/posts/post-inspecao-palavra-anvisa.html',
         '/posts/post-inspecao-palavra-risco.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Claim ≠ facto. Cosmético ≠ medicamento.'
     };

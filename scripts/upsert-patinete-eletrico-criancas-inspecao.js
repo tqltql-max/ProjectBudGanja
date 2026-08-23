@@ -107,7 +107,7 @@ async function main() {
         'https://en.wikipedia.org/wiki/BYD_Company',
         '/posts/post-inspecao-celular-riscos-saude-criancas.html',
         '/posts/post-inspecao-palavra-risco.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Brinquedo ≠ via. Célula industrial ≠ pack de marketplace. Sem idade mágica.'
     };
@@ -149,7 +149,7 @@ async function main() {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     if (!/patinete:\s*\{/.test(gloss)) {
       const entry =
-        '    patinete: { tone: "caution", gloss: "Objecto de locomoção; o eléctrico é bateria + motor — não brinquedo com motor; INMETRO ≤24 V × CONTRAN 996; perigos infantis: queda, célula, via; Faça o melhor!", href: "/posts/post-inspecao-patinete-eletrico-criancas.html", en: "scooter (kick / e-scooter)", es: "patinete" },\n' +
+        '    patinete: { tone: "caution", gloss: "Objecto de locomoção; o eléctrico é bateria + motor — não brinquedo com motor; INMETRO ≤24 V × CONTRAN 996; perigos infantis: queda, célula, via; Valeu !!!", href: "/posts/post-inspecao-patinete-eletrico-criancas.html", en: "scooter (kick / e-scooter)", es: "patinete" },\n' +
         '    patinetes: { gloss: "Plural de patinete — ver ficha de locomoção a bateria e perigos infantis.", href: "/posts/post-inspecao-patinete-eletrico-criancas.html", en: "scooters", es: "patinetes" },\n';
       const reRisco = /(    risco:\s*\{[\s\S]*?\},?\r?\n)/;
       if (reRisco.test(gloss)) {

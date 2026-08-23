@@ -86,7 +86,7 @@ async function main() {
         'https://pt.wiktionary.org/wiki/aff',
         '/posts/post-inspecao-palavra-raiva.html',
         '/posts/post-inspecao-palavra-verdade.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. 27 — tom severo; não patologizar o enfado.'
     };

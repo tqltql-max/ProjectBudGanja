@@ -237,7 +237,7 @@ async function main() {
       sources: [
         '/posts/post-inspecao-palavra-corda.html',
         '/posts/post-inspecao-expressao-no-na-vida.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cluster nó/corda/desatar/desastre/ufa/codorna.'
     });
@@ -461,7 +461,7 @@ async function main() {
     gloss = replaceOrInsertGloss(
       gloss,
       'nó',
-      '    nó: { tone: "craft", gloss: "Lat. nodus — laço na corda e na vida; ≠ corda ≠ codorna; elos desatar/desastre/ufa; Faça o melhor!", href: "/posts/post-inspecao-palavra-no.html", en: "knot", es: "nudo", fr: "nœud", it: "nodo", de: "Knoten", el: "κόμπος", la: "nodus", yo: "ìdì", sw: "fundo", gez: "məʕəqqəb", nl: "knoop", pl: "węzeł", ru: "узел", uk: "вузол", zh: "结", ja: "結び目", ko: "매듭", ar: "عقدة", he: "קשר", hi: "गाँठ", tr: "düğüm", sv: "knut", da: "knude", no: "knute", fi: "solmu", cs: "uzel", ro: "nod", hu: "csomó", ca: "nus", gl: "nó", eu: "korapilo", gn: "ñokã", qu: "k\'intu", eo: "nodo", vi: "nut", id: "simpul", th: "ปม", hr: "čvor", sk: "uzol", ga: "snaidhm", cy: "cwlwm", ha: "kulli", am: "ቋንጣ", fa: "گره", bn: "গ্রন্থি", zu: "ifindo" },',
+      '    nó: { tone: "craft", gloss: "Lat. nodus — laço na corda e na vida; ≠ corda ≠ codorna; elos desatar/desastre/ufa; Valeu !!!", href: "/posts/post-inspecao-palavra-no.html", en: "knot", es: "nudo", fr: "nœud", it: "nodo", de: "Knoten", el: "κόμπος", la: "nodus", yo: "ìdì", sw: "fundo", gez: "məʕəqqəb", nl: "knoop", pl: "węzeł", ru: "узел", uk: "вузол", zh: "结", ja: "結び目", ko: "매듭", ar: "عقدة", he: "קשר", hi: "गाँठ", tr: "düğüm", sv: "knut", da: "knude", no: "knute", fi: "solmu", cs: "uzel", ro: "nod", hu: "csomó", ca: "nus", gl: "nó", eu: "korapilo", gn: "ñokã", qu: "k\'intu", eo: "nodo", vi: "nut", id: "simpul", th: "ปม", hr: "čvor", sk: "uzol", ga: "snaidhm", cy: "cwlwm", ha: "kulli", am: "ቋንጣ", fa: "گره", bn: "গ্রন্থি", zu: "ifindo" },',
       'vida'
     );
     gloss = replaceOrInsertGloss(
@@ -473,43 +473,43 @@ async function main() {
     gloss = replaceOrInsertGloss(
       gloss,
       'corda',
-      '    corda: { tone: "craft", category: "Objecto", mundane: "Fio / cabo para atar.", gloss: "Lat. chorda — objecto onde mora o nó; ≠ cinta ≠ codorna; Faça o melhor!", href: "/posts/post-inspecao-palavra-corda.html", en: "rope / cord", es: "cuerda", fr: "corde", it: "corda", de: "Seil", el: "σκοινί", la: "chorda", yo: "okùn", sw: "kamba", gez: "ḥabl", nl: "touw", pl: "lina", ru: "верёвка", uk: "мотузка", zh: "绳子", ja: "ロープ", ko: "밧줄", ar: "حبل", he: "חבל", hi: "रस्सी", tr: "ip", sv: "rep", da: "reb", no: "tau", fi: "köysi", cs: "lano", ro: "funie", hu: "kötél", ca: "corda", gl: "corda", eu: "soka", gn: "soga", qu: "watu", eo: "ŝnuro", vi: "day", id: "tali", th: "เชือก", hr: "uže", sk: "lano", ga: "téad", cy: "rhaff", ha: "igiya", am: "ገመድ", fa: "طناب", bn: "দড়ি", zu: "intambo" },',
+      '    corda: { tone: "craft", category: "Objecto", mundane: "Fio / cabo para atar.", gloss: "Lat. chorda — objecto onde mora o nó; ≠ cinta ≠ codorna; Valeu !!!", href: "/posts/post-inspecao-palavra-corda.html", en: "rope / cord", es: "cuerda", fr: "corde", it: "corda", de: "Seil", el: "σκοινί", la: "chorda", yo: "okùn", sw: "kamba", gez: "ḥabl", nl: "touw", pl: "lina", ru: "верёвка", uk: "мотузка", zh: "绳子", ja: "ロープ", ko: "밧줄", ar: "حبل", he: "חבל", hi: "रस्सी", tr: "ip", sv: "rep", da: "reb", no: "tau", fi: "köysi", cs: "lano", ro: "funie", hu: "kötél", ca: "corda", gl: "corda", eu: "soka", gn: "soga", qu: "watu", eo: "ŝnuro", vi: "day", id: "tali", th: "เชือก", hr: "uže", sk: "lano", ga: "téad", cy: "rhaff", ha: "igiya", am: "ገመድ", fa: "طناب", bn: "দড়ি", zu: "intambo" },',
       'cinta'
     );
     gloss = replaceOrInsertGloss(
       gloss,
       'desatar',
-      '    desatar: { tone: "craft", gloss: "des- + atar — soltar o nó; ≠ desastre (astro); ditado desatar o nó; Faça o melhor!", href: "/posts/post-inspecao-palavra-desatar.html", en: "untie / unbind", es: "desatar", fr: "détacher", it: "sciogliere", de: "lösen", el: "λύνω", la: "solvere", yo: "tú", sw: "fungua", gez: "fäthätä", nl: "losmaken", pl: "rozwiązać", ru: "развязать", uk: "розв\'язати", zh: "解开", ja: "ほどく", ko: "풀다", ar: "فك", he: "להתיר", hi: "खोलना", tr: "çözmek", sv: "lösa upp", da: "binde op", no: "løsne", fi: "avata", cs: "rozvázat", ro: "dezlega", hu: "kiold", ca: "deslligar", gl: "desatar", eu: "askatu", gn: "pe\'a", qu: "paskay", eo: "malligi", vi: "co", id: "lepas", th: "แก้", hr: "odvezati", sk: "rozviazať", ga: "scaoil", cy: "datod", ha: "kwance", am: "ፍታ", fa: "باز کردن", bn: "খোলা", zu: "khumula" },',
+      '    desatar: { tone: "craft", gloss: "des- + atar — soltar o nó; ≠ desastre (astro); ditado desatar o nó; Valeu !!!", href: "/posts/post-inspecao-palavra-desatar.html", en: "untie / unbind", es: "desatar", fr: "détacher", it: "sciogliere", de: "lösen", el: "λύνω", la: "solvere", yo: "tú", sw: "fungua", gez: "fäthätä", nl: "losmaken", pl: "rozwiązać", ru: "развязать", uk: "розв\'язати", zh: "解开", ja: "ほどく", ko: "풀다", ar: "فك", he: "להתיר", hi: "खोलना", tr: "çözmek", sv: "lösa upp", da: "binde op", no: "løsne", fi: "avata", cs: "rozvázat", ro: "dezlega", hu: "kiold", ca: "deslligar", gl: "desatar", eu: "askatu", gn: "pe\'a", qu: "paskay", eo: "malligi", vi: "co", id: "lepas", th: "แก้", hr: "odvezati", sk: "rozviazať", ga: "scaoil", cy: "datod", ha: "kwance", am: "ፍታ", fa: "باز کردن", bn: "খোলা", zu: "khumula" },',
       'corda'
     );
     gloss = replaceOrInsertGloss(
       gloss,
       'desastre',
-      '    desastre: { tone: "caution", category: "Golpe", mundane: "Catástrofe; acontecimento grave.", gloss: "dis- + astrum — má estrela; ≠ desatar; ofício com desatar o nó; Faça o melhor!", href: "/posts/post-inspecao-palavra-desastre.html", en: "disaster", es: "desastre", fr: "désastre", it: "disastro", de: "Katastrophe", el: "καταστροφή", la: "clades", yo: "ajalu", sw: "maafa", gez: "ṭəfʾat", nl: "ramp", pl: "katastrofa", ru: "бедствие", uk: "лихо", zh: "灾难", ja: "災害", ko: "재난", ar: "كارثة", he: "אסון", hi: "आपदा", tr: "felaket", sv: "katastrof", da: "katastrofe", no: "katastrofe", fi: "katastrofi", cs: "katastrofa", ro: "dezastru", hu: "katasztrófa", ca: "desastre", gl: "desastre", eu: "hondamendi", gn: "vai", qu: "llaki", eo: "katastrofo", vi: "tham hoa", id: "bencana", th: "ภัยพิบัติ", hr: "katastrofa", sk: "katastrofa", ga: "tubaiste", cy: "trychineb", ha: "bala\'i", am: "አደጋ", fa: "فاجعه", bn: "বিপর্যয়", zu: "inhlekelele" },',
+      '    desastre: { tone: "caution", category: "Golpe", mundane: "Catástrofe; acontecimento grave.", gloss: "dis- + astrum — má estrela; ≠ desatar; ofício com desatar o nó; Valeu !!!", href: "/posts/post-inspecao-palavra-desastre.html", en: "disaster", es: "desastre", fr: "désastre", it: "disastro", de: "Katastrophe", el: "καταστροφή", la: "clades", yo: "ajalu", sw: "maafa", gez: "ṭəfʾat", nl: "ramp", pl: "katastrofa", ru: "бедствие", uk: "лихо", zh: "灾难", ja: "災害", ko: "재난", ar: "كارثة", he: "אסון", hi: "आपदा", tr: "felaket", sv: "katastrof", da: "katastrofe", no: "katastrofe", fi: "katastrofi", cs: "katastrofa", ro: "dezastru", hu: "katasztrófa", ca: "desastre", gl: "desastre", eu: "hondamendi", gn: "vai", qu: "llaki", eo: "katastrofo", vi: "tham hoa", id: "bencana", th: "ภัยพิบัติ", hr: "katastrofa", sk: "katastrofa", ga: "tubaiste", cy: "trychineb", ha: "bala\'i", am: "አደጋ", fa: "فاجعه", bn: "বিপর্যয়", zu: "inhlekelele" },',
       'desatar'
     );
     gloss = replaceOrInsertGloss(
       gloss,
       'ufa',
-      '    ufa: { tone: "craft", category: "Alívio", mundane: "Sopro de alívio ou cansaço (interjeição BR).", gloss: "Alívio depois de desatar o nó; par de aff (exasperação); legal (gíria) se couber; Faça o melhor!", href: "/posts/post-inspecao-palavra-ufa.html", en: "phew", es: "uf", fr: "ouf", it: "uffa", de: "uff", el: "αχ", la: "vah", yo: "yè", sw: "ahh", gez: "ʼǝff", nl: "foei", pl: "uff", ru: "ух", uk: "ух", zh: "呼", ja: "ふう", ko: "휴", ar: "أف", he: "אוף", hi: "उफ़", tr: "of", sv: "uff", da: "puha", no: "uff", fi: "huh", cs: "uff", ro: "uf", hu: "huh", ca: "uf", gl: "uf", eu: "uf", gn: "ái", qu: "alalaw", eo: "hu", vi: "phù", id: "huh", th: "เฮ้อ", hr: "uh", sk: "uf", ga: "och", cy: "och", ha: "kai", am: "ኧኝ", fa: "اوخ", bn: "উফ", zu: "hawu" },',
+      '    ufa: { tone: "craft", category: "Alívio", mundane: "Sopro de alívio ou cansaço (interjeição BR).", gloss: "Alívio depois de desatar o nó; par de aff (exasperação); legal (gíria) se couber; Valeu !!!", href: "/posts/post-inspecao-palavra-ufa.html", en: "phew", es: "uf", fr: "ouf", it: "uffa", de: "uff", el: "αχ", la: "vah", yo: "yè", sw: "ahh", gez: "ʼǝff", nl: "foei", pl: "uff", ru: "ух", uk: "ух", zh: "呼", ja: "ふう", ko: "휴", ar: "أف", he: "אוף", hi: "उफ़", tr: "of", sv: "uff", da: "puha", no: "uff", fi: "huh", cs: "uff", ro: "uf", hu: "huh", ca: "uf", gl: "uf", eu: "uf", gn: "ái", qu: "alalaw", eo: "hu", vi: "phù", id: "huh", th: "เฮ้อ", hr: "uh", sk: "uf", ga: "och", cy: "och", ha: "kai", am: "ኧኝ", fa: "اوخ", bn: "উফ", zu: "hawu" },',
       'aff'
     );
     gloss = replaceOrInsertGloss(
       gloss,
       '"nó na vida"',
-      '    "nó na vida": { tone: "caution", category: "Aperto", mundane: "Situação emaranhada; aperto no arco da vida.", gloss: "Expressão — laço no arco da vida; par desatar o nó; ainda não é desastre; Faça o melhor!", href: "/posts/post-inspecao-expressao-no-na-vida.html", en: "a knot in life", es: "un nudo en la vida", fr: "un nœud dans la vie", it: "un nodo nella vita", de: "ein Knoten im Leben" },',
+      '    "nó na vida": { tone: "caution", category: "Aperto", mundane: "Situação emaranhada; aperto no arco da vida.", gloss: "Expressão — laço no arco da vida; par desatar o nó; ainda não é desastre; Valeu !!!", href: "/posts/post-inspecao-expressao-no-na-vida.html", en: "a knot in life", es: "un nudo en la vida", fr: "un nœud dans la vie", it: "un nodo nella vita", de: "ein Knoten im Leben" },',
       'nó'
     );
     gloss = replaceOrInsertGloss(
       gloss,
       '"desatar o nó"',
-      '    "desatar o nó": { tone: "craft", category: "Ofício", mundane: "Resolver um problema emaranhado; soltar o laço.", gloss: "Expressão — soltar o laço; o ofício, não o desastre; ufa depois; Faça o melhor!", href: "/posts/post-inspecao-expressao-desatar-o-no.html", en: "untie the knot", es: "desatar el nudo", fr: "dénouer le nœud", it: "sciogliere il nodo", de: "den Knoten lösen" },',
+      '    "desatar o nó": { tone: "craft", category: "Ofício", mundane: "Resolver um problema emaranhado; soltar o laço.", gloss: "Expressão — soltar o laço; o ofício, não o desastre; ufa depois; Valeu !!!", href: "/posts/post-inspecao-expressao-desatar-o-no.html", en: "untie the knot", es: "desatar el nudo", fr: "dénouer le nœud", it: "sciogliere il nodo", de: "den Knoten lösen" },',
       'desatar'
     );
     gloss = replaceOrInsertGloss(
       gloss,
       'codorna',
-      '    codorna: { gloss: "Ave Coturnix — ≠ corda (fio); produção de ovos/carne; elo galinha; Faça o melhor!", href: "/posts/post-inspecao-animal-codorna.html", en: "quail", es: "codorniz", fr: "caille", it: "quaglia", de: "Wachtel", el: "ορτύκι", la: "coturnix", yo: "ẹyẹ kekere", sw: "kware", gez: "coturnix", nl: "kwartel", pl: "przepiórka", ru: "перепел", uk: "перепілка", zh: "鹌鹑", ja: "ウズラ", ko: "메추라기", ar: "سمان", he: "שליו", hi: "बटेर", tr: "bıldırcın", sv: "vaktel", da: "vagtel", no: "vaktel", fi: "viiriäinen", cs: "křepelka", ro: "prepeliță", hu: "fürj", ca: "guatlla", gl: "paspallás", eu: "gailleta", gn: "codorna", qu: "yutu", eo: "koturno", vi: "chim cut", id: "puyuh", th: "นกคุ่ม", hr: "prepelica", sk: "prepelica", ga: "gearra", cy: "sofliar", ha: "codorna", am: "ኮድርና", fa: "بلدرچین", bn: "কোয়েল", zu: "isagwili" },',
+      '    codorna: { gloss: "Ave Coturnix — ≠ corda (fio); produção de ovos/carne; elo galinha; Valeu !!!", href: "/posts/post-inspecao-animal-codorna.html", en: "quail", es: "codorniz", fr: "caille", it: "quaglia", de: "Wachtel", el: "ορτύκι", la: "coturnix", yo: "ẹyẹ kekere", sw: "kware", gez: "coturnix", nl: "kwartel", pl: "przepiórka", ru: "перепел", uk: "перепілка", zh: "鹌鹑", ja: "ウズラ", ko: "메추라기", ar: "سمان", he: "שליו", hi: "बटेर", tr: "bıldırcın", sv: "vaktel", da: "vagtel", no: "vaktel", fi: "viiriäinen", cs: "křepelka", ro: "prepeliță", hu: "fürj", ca: "guatlla", gl: "paspallás", eu: "gailleta", gn: "codorna", qu: "yutu", eo: "koturno", vi: "chim cut", id: "puyuh", th: "นกคุ่ม", hr: "prepelica", sk: "prepelica", ga: "gearra", cy: "sofliar", ha: "codorna", am: "ኮድርና", fa: "بلدرچین", bn: "কোয়েল", zu: "isagwili" },',
       'corda'
     );
     fs.writeFileSync(GLOSS_FILE, gloss, 'utf8');

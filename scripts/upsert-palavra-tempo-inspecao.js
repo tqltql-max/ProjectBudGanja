@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: tempo (lat. tempus) — cronologia/clima/compasso; kairós × chronos; sempre/passado/vida/alma; Faça o melhor!',
-      whyEn: 'Words: tempo (Lat. tempus) — chronology/weather/beat; kairós × chronos; sempre/passado/vida/alma; Do your best!',
-      whyEs: 'Palabras: tempo (lat. tempus) — cronología/clima/compás; kairós × chronos; sempre/passado/vida/alma; ¡Haz lo mejor!',
+      why: 'Palavras: tempo (lat. tempus) — cronologia/clima/compasso; kairós × chronos; sempre/passado/vida/alma; Valeu !!!',
+      whyEn: 'Words: tempo (Lat. tempus) — chronology/weather/beat; kairós × chronos; sempre/passado/vida/alma; Valeu !!!',
+      whyEs: 'Palabras: tempo (lat. tempus) — cronología/clima/compás; kairós × chronos; sempre/passado/vida/alma; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -94,7 +94,7 @@ async function main() {
         post.sourceUrl,
         '/posts/post-inspecao-palavra-sempre.html',
         '/posts/post-inspecao-palavra-passado.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — cronos/clima/compasso/posse; kairós comparação sem linhagem.'
     };
@@ -113,11 +113,11 @@ async function main() {
       id: 'tempo',
       word: 'tempo',
       simple:
-        'Lat. tempus — cronologia, clima («tempo bom») e compasso musical na mesma palavra; kairós × chronos; elos sempre/passado/alma; Faça o melhor com o tempo que se tem.',
+        'Lat. tempus — cronologia, clima («tempo bom») e compasso musical na mesma palavra; kairós × chronos; elos sempre/passado/alma; Valeu !!! com o tempo que se tem.',
       simpleEn:
-        'Lat. tempus — chronology, weather and musical beat share the same word; kairós × chronos; links sempre/passado/alma; Do your best with the time you have.',
+        'Lat. tempus — chronology, weather and musical beat share the same word; kairós × chronos; links sempre/passado/alma; Valeu !!! with the time you have.',
       simpleEs:
-        'Lat. tempus — cronología, clima y compás musical en la misma palabra; kairós × chronos; vínculos sempre/passado/alma; Haz lo mejor con el tiempo que tienes.',
+        'Lat. tempus — cronología, clima y compás musical en la misma palabra; kairós × chronos; vínculos sempre/passado/alma; Valeu !!! con el tiempo que tienes.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -141,7 +141,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    tempo: { gloss: "Lat. tempus — cronologia, clima e compasso musical na mesma palavra; kairós × chronos; elos sempre/passado/alma; Faça o melhor!", href: "/posts/post-inspecao-palavra-tempo.html", en: "time / weather / tempo", es: "tiempo", fr: "temps", it: "tempo", de: "Zeit / Wetter", el: "chronos", la: "tempus", yo: "akoko", sw: "wakati", gez: "gize", nl: "tijd", pl: "czas", ru: "vremya", uk: "chas", zh: "shijian", ja: "jikan", ko: "sigan", ar: "waqt", he: "zman", hi: "samay", tr: "zaman", sv: "tid", da: "tid", no: "tid", fi: "aika", cs: "cas", ro: "timp", hu: "ido", ca: "temps", gl: "tempo", eu: "denbora", gn: "ara", qu: "pacha", eo: "tempo", vi: "thoi gian", id: "waktu", th: "wela", hr: "vrijeme", sk: "cas", ga: "am", cy: "amser", ha: "lokaci", am: "gize", fa: "zaman", bn: "somoy", zu: "isikhathi" },';
+      '    tempo: { gloss: "Lat. tempus — cronologia, clima e compasso musical na mesma palavra; kairós × chronos; elos sempre/passado/alma; Valeu !!!", href: "/posts/post-inspecao-palavra-tempo.html", en: "time / weather / tempo", es: "tiempo", fr: "temps", it: "tempo", de: "Zeit / Wetter", el: "chronos", la: "tempus", yo: "akoko", sw: "wakati", gez: "gize", nl: "tijd", pl: "czas", ru: "vremya", uk: "chas", zh: "shijian", ja: "jikan", ko: "sigan", ar: "waqt", he: "zman", hi: "samay", tr: "zaman", sv: "tid", da: "tid", no: "tid", fi: "aika", cs: "cas", ro: "timp", hu: "ido", ca: "temps", gl: "tempo", eu: "denbora", gn: "ara", qu: "pacha", eo: "tempo", vi: "thoi gian", id: "waktu", th: "wela", hr: "vrijeme", sk: "cas", ga: "am", cy: "amser", ha: "lokaci", am: "gize", fa: "zaman", bn: "somoy", zu: "isikhathi" },';
     if (/tempo:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    tempo:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

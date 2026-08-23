@@ -70,6 +70,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('build:livro-pdf', 'generate-catalogo-projeto-livro.js');
+  } catch (e) {
+    console.warn('Aviso build:livro-pdf:', e.message);
+  }
+
+  try {
     publishStaticAssets(ROOT);
   } catch (e) {
     console.warn('Aviso publish:static:', e.message);

@@ -104,7 +104,7 @@ async function main() {
         '/posts/post-inspecao-palavra-gesto.html',
         '/posts/post-inspecao-palavra-backspace.html',
         '/posts/post-inspecao-palavra-esquerdo.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html',
+        '/posts/post-inspecao-palavra-valeu.html',
         '/vida/',
         '/vida/diario/'
       ],

@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: pedi a mão (pedimao) — ajuda ou compromisso; mãos/gesto/respeito; Faça o melhor!',
-      whyEn: 'Words: pedi a mão (pedimao) — help or commitment; hands/gesture/respect; Do your best!',
-      whyEs: 'Palabras: pedi a mão (pedimao) — ayuda o compromiso; manos/gesto/respeto; ¡Haz lo mejor!',
+      why: 'Palavras: pedi a mão (pedimao) — ajuda ou compromisso; mãos/gesto/respeito; Valeu !!!',
+      whyEn: 'Words: pedi a mão (pedimao) — help or commitment; hands/gesture/respect; Valeu !!!',
+      whyEs: 'Palabras: pedi a mão (pedimao) — ayuda o compromiso; manos/gesto/respeto; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -94,7 +94,7 @@ async function main() {
         post.sourceUrl,
         '/posts/post-inspecao-palavra-mao-esquerda-direita.html',
         '/posts/post-inspecao-palavra-gesto.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — uma mão = ajuda; a mão = compromisso.'
     };
@@ -113,11 +113,11 @@ async function main() {
       id: 'pedi-mao',
       word: 'pedi a mão',
       simple:
-        'Pedir + mão — ajuda («uma mão») ou compromisso («a mão»); elos mãos/gesto; Faça o melhor ao pedir e ao dar.',
+        'Pedir + mão — ajuda («uma mão») ou compromisso («a mão»); elos mãos/gesto; Valeu !!! ao pedir e ao dar.',
       simpleEn:
-        'Ask + hand — help (“uma mão”) or commitment (“a mão”); links hands/gesture; Do your best asking and giving.',
+        'Ask + hand — help (“uma mão”) or commitment (“a mão”); links hands/gesture; Valeu !!! asking and giving.',
       simpleEs:
-        'Pedir + mano — ayuda («uma mão») o compromiso («a mão»); vínculos manos/gesto; Haz lo mejor al pedir y dar.',
+        'Pedir + mano — ayuda («uma mão») o compromiso («a mão»); vínculos manos/gesto; Valeu !!! al pedir y dar.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -139,7 +139,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    pedimao: { gloss: "Pedi a mão — pedir ajuda ou compromisso; elos mãos/gesto/respeito; Faça o melhor!", href: "/posts/post-inspecao-palavra-pedi-mao.html", en: "ask for a hand / propose", es: "pedir la mano / una mano", fr: "demander la main / coup de main", it: "chiedere la mano / una mano", de: "um die Hand anhalten / helfen", el: "zito cheri", la: "manum petere", yo: "beere owo", sw: "omba msaada", gez: "äsätən", nl: "om hand vragen / helpen", pl: "prosic o reke", ru: "prosit ruku", uk: "prosyty ruku", zh: "qiu hun / bangmang", ja: "te wo kariru", ko: "son butak", ar: "talab yad", he: "levakesh yad", hi: "hath mangna", tr: "el istemek", sv: "fria / be om hjalp", da: "fri / bede om hjaelp", no: "fri / be om hjelp", fi: "kosia / pyytaa apua", cs: "zadat o ruku", ro: "cere mana", hu: "kezet ker", ca: "demanar la ma", gl: "pedir a man", eu: "eskua eskatu", gn: "jerure po", qu: "maki mañakuy", eo: "peti manon", vi: "cau hon / xin tay", id: "minta tangan", th: "ขอมือ", hr: "zaprositi", sk: "ziadat o ruku", ga: "iaraidh lamh", cy: "gofyn am law", ha: "nemi hannu", am: "እጅ መጠየቅ", fa: "khastegari", bn: "হাত চাওয়া", zu: "cela isandla" },';
+      '    pedimao: { gloss: "Pedi a mão — pedir ajuda ou compromisso; elos mãos/gesto/respeito; Valeu !!!", href: "/posts/post-inspecao-palavra-pedi-mao.html", en: "ask for a hand / propose", es: "pedir la mano / una mano", fr: "demander la main / coup de main", it: "chiedere la mano / una mano", de: "um die Hand anhalten / helfen", el: "zito cheri", la: "manum petere", yo: "beere owo", sw: "omba msaada", gez: "äsätən", nl: "om hand vragen / helpen", pl: "prosic o reke", ru: "prosit ruku", uk: "prosyty ruku", zh: "qiu hun / bangmang", ja: "te wo kariru", ko: "son butak", ar: "talab yad", he: "levakesh yad", hi: "hath mangna", tr: "el istemek", sv: "fria / be om hjalp", da: "fri / bede om hjaelp", no: "fri / be om hjelp", fi: "kosia / pyytaa apua", cs: "zadat o ruku", ro: "cere mana", hu: "kezet ker", ca: "demanar la ma", gl: "pedir a man", eu: "eskua eskatu", gn: "jerure po", qu: "maki mañakuy", eo: "peti manon", vi: "cau hon / xin tay", id: "minta tangan", th: "ขอมือ", hr: "zaprositi", sk: "ziadat o ruku", ga: "iaraidh lamh", cy: "gofyn am law", ha: "nemi hannu", am: "እጅ መጠየቅ", fa: "khastegari", bn: "হাত চাওয়া", zu: "cela isandla" },';
     if (/pedimao:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    pedimao:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

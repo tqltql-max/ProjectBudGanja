@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: cinta (*cingere*) — faixa/suporte; gesto no tutoramento; ≠ sinta; Faça o melhor!',
-      whyEn: 'Words: cinta (*cingere*) — band/support; staking craft; ≠ sinta; Do your best!',
-      whyEs: 'Palabras: cinta (*cingere*) — banda/soporte; oficio de tutorado; ≠ sinta; ¡Haz lo mejor!',
+      why: 'Palavras: cinta (*cingere*) — faixa/suporte; gesto no tutoramento; ≠ sinta; Valeu !!!',
+      whyEn: 'Words: cinta (*cingere*) — band/support; staking craft; ≠ sinta; Valeu !!!',
+      whyEs: 'Palabras: cinta (*cingere*) — banda/soporte; oficio de tutorado; ≠ sinta; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -94,7 +94,7 @@ async function main() {
         post.sourceUrl,
         '/posts/post-inspecao-palavra-gesto.html',
         '/cultivo/',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — ≠ cinta ID (amor); folga no aperto.'
     };
@@ -113,11 +113,11 @@ async function main() {
       id: 'cinta',
       word: 'cinta',
       simple:
-        'Lat. cincta / cingere — faixa que segura; no cultivo, tutor com folga; ≠ sinta; Faça o melhor neste aperto.',
+        'Lat. cincta / cingere — faixa que segura; no cultivo, tutor com folga; ≠ sinta; Valeu !!! neste aperto.',
       simpleEn:
-        'Lat. cincta / cingere — band that holds; in cultivation, stake with slack; ≠ sinta; Do your best on this grip.',
+        'Lat. cincta / cingere — band that holds; in cultivation, stake with slack; ≠ sinta; Valeu !!! on this grip.',
       simpleEs:
-        'Lat. cincta / cingere — banda que sujeta; en cultivo, tutor con holgura; ≠ sinta; Haz lo mejor en este apriete.',
+        'Lat. cincta / cingere — banda que sujeta; en cultivo, tutor con holgura; ≠ sinta; Valeu !!! en este apriete.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -139,7 +139,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    cinta: { gloss: "Lat. cincta / cingere — faixa que segura; tutor com folga; ≠ sinta; Faça o melhor!", href: "/posts/post-inspecao-palavra-cinta.html", en: "belt / strap / tape", es: "cinta", fr: "bande / ceinture", it: "cintura / nastro", de: "Band / Gurt", el: "ζώνη", la: "cincta", yo: "okùn", sw: "ukanda", gez: "ḥabl", nl: "band", pl: "tasma", ru: "lenta", uk: "strichka", zh: "daizi", ja: "obi / tape", ko: "tti", ar: "hizam", he: "hetora", hi: "peti", tr: "kemer / bant", sv: "band", da: "bånd", no: "bånd", fi: "nauha", cs: "paska", ro: "banda", hu: "szalag", ca: "cinta", gl: "cinta", eu: "zinta", gn: "soga", qu: "watu", eo: "zono", vi: "dai", id: "sabuk (≠ cinta=amor)", th: "belt", hr: "traka", sk: "pasik", ga: "crios", cy: "gwregys", ha: "mara", am: "meret", fa: "navar", bn: "beltt", zu: "ibhande" },';
+      '    cinta: { gloss: "Lat. cincta / cingere — faixa que segura; tutor com folga; ≠ sinta; Valeu !!!", href: "/posts/post-inspecao-palavra-cinta.html", en: "belt / strap / tape", es: "cinta", fr: "bande / ceinture", it: "cintura / nastro", de: "Band / Gurt", el: "ζώνη", la: "cincta", yo: "okùn", sw: "ukanda", gez: "ḥabl", nl: "band", pl: "tasma", ru: "lenta", uk: "strichka", zh: "daizi", ja: "obi / tape", ko: "tti", ar: "hizam", he: "hetora", hi: "peti", tr: "kemer / bant", sv: "band", da: "bånd", no: "bånd", fi: "nauha", cs: "paska", ro: "banda", hu: "szalag", ca: "cinta", gl: "cinta", eu: "zinta", gn: "soga", qu: "watu", eo: "zono", vi: "dai", id: "sabuk (≠ cinta=amor)", th: "belt", hr: "traka", sk: "pasik", ga: "crios", cy: "gwregys", ha: "mara", am: "meret", fa: "navar", bn: "beltt", zu: "ibhande" },';
     if (/cinta:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    cinta:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

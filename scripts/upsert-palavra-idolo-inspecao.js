@@ -105,15 +105,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Ídolo — admiração, imagem, média e Faça o melhor!',
-      titleEn: 'Ídolo — admiration, image, media and Do your best!',
-      titleEs: 'Ídolo — admiración, imagen, medios y ¡Haz lo mejor!',
+      title: 'Ídolo — admiração, imagem, média e Valeu !!!',
+      titleEn: 'Ídolo — admiration, image, media and Valeu !!!',
+      titleEs: 'Ídolo — admiración, imagen, medios y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: ídolo (gr. eídōlon) — celebridade, culto lexical, idolatrar e média; admirar com ofício; Faça o melhor!',
-      whyEn: 'Words: ídolo (Gk. eídōlon) — celebrity, lexical cult sense, idolatrar and media; admire with craft; Do your best!',
-      whyEs: 'Palabras: ídolo (gr. eídōlon) — celebridad, culto léxico, idolatrar y medios; admirar con oficio; ¡Haz lo mejor!',
+      why: 'Palavras: ídolo (gr. eídōlon) — celebridade, culto lexical, idolatrar e média; admirar com ofício; Valeu !!!',
+      whyEn: 'Words: ídolo (Gk. eídōlon) — celebrity, lexical cult sense, idolatrar and media; admire with craft; Valeu !!!',
+      whyEs: 'Palabras: ídolo (gr. eídōlon) — celebridad, culto léxico, idolatrar y medios; admirar con oficio; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -122,7 +122,7 @@ async function main() {
         'https://pt.wikipedia.org/wiki/%C3%8Ddolo',
         '/posts/post-inspecao-figura-ayrton-senna.html',
         '/posts/post-inspecao-palavra-genial.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -144,11 +144,11 @@ async function main() {
       id: 'idolo',
       word: 'ídolo',
       simple:
-        'Gr. eídōlon — imagem → pessoa admirada; culto lexical, idolatrar e média; admirar com ofício; Faça o melhor!',
+        'Gr. eídōlon — imagem → pessoa admirada; culto lexical, idolatrar e média; admirar com ofício; Valeu !!!',
       simpleEn:
-        'Gk. eídōlon — image → admired person; lexical cult sense, idolatrar and media; admire with craft; Do your best!',
+        'Gk. eídōlon — image → admired person; lexical cult sense, idolatrar and media; admire with craft; Valeu !!!',
       simpleEs:
-        'Gr. eídōlon — imagen → persona admirada; culto léxico, idolatrar y medios; admirar con oficio; ¡Haz lo mejor!',
+        'Gr. eídōlon — imagen → persona admirada; culto léxico, idolatrar y medios; admirar con oficio; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -172,7 +172,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    ídolo: { gloss: "Gr. eídōlon — imagem → pessoa admirada; idolatrar/média com ofício; Faça o melhor sem pedestal oco.", href: "/posts/post-inspecao-palavra-idolo.html", en: "idol", es: "ídolo", fr: "idole", it: "idolo", de: "Idol", el: "είδωλο", la: "idolum", yo: "òrìṣà ìfẹ́", sw: "sanamu", gez: "amsāl", nl: "idool", pl: "idol", ru: "кумир", uk: "ідол", zh: "偶像", ja: "アイドル", ko: "아이돌", ar: "وثن/أيقونة", he: "אליל", hi: "मूर्ति", tr: "idol", sv: "idol", da: "idol", no: "idol", fi: "idoli", cs: "idol", ro: "idol", hu: "bálvány", ca: "ídol", gl: "ídolo", eu: "idolo", gn: "ta\'anga", qu: "waka", eo: "idolo", vi: "thần tượng", id: "idola", th: "ไอดอล", hr: "idol", sk: "idol", ga: "íol", cy: "eilun", ha: "gunki", am: "ጣዖት", fa: "بت", bn: "প্রতিমা", zu: "isithombe" },';
+      '    ídolo: { gloss: "Gr. eídōlon — imagem → pessoa admirada; idolatrar/média com ofício; Valeu !!! sem pedestal oco.", href: "/posts/post-inspecao-palavra-idolo.html", en: "idol", es: "ídolo", fr: "idole", it: "idolo", de: "Idol", el: "είδωλο", la: "idolum", yo: "òrìṣà ìfẹ́", sw: "sanamu", gez: "amsāl", nl: "idool", pl: "idol", ru: "кумир", uk: "ідол", zh: "偶像", ja: "アイドル", ko: "아이돌", ar: "وثن/أيقونة", he: "אליל", hi: "मूर्ति", tr: "idol", sv: "idol", da: "idol", no: "idol", fi: "idoli", cs: "idol", ro: "idol", hu: "bálvány", ca: "ídol", gl: "ídolo", eu: "idolo", gn: "ta\'anga", qu: "waka", eo: "idolo", vi: "thần tượng", id: "idola", th: "ไอดอล", hr: "idol", sk: "idol", ga: "íol", cy: "eilun", ha: "gunki", am: "ጣዖት", fa: "بت", bn: "প্রতিমা", zu: "isithombe" },';
     if (/ídolo:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    ídolo:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

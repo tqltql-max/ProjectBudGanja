@@ -65,7 +65,8 @@ const QUERY_OVERRIDES = {
   'maracuja-fruta': ['Passiflora edulis'],
   'tomatinho-cereja': ['Cherry tomato', 'Solanum lycopersicum', 'Tomato'],
   mamao: ['Carica papaya', 'Papaya'],
-  melancia: ['Citrullus lanatus', 'Watermelon']
+  melancia: ['Citrullus lanatus', 'Watermelon'],
+  marolo: ['Annona crassiflora', 'Araticum']
 };
 
 function parseArgs(argv) {

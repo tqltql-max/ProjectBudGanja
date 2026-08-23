@@ -105,7 +105,7 @@ async function main() {
         'https://loja.filmicca.com.br/pages/sobre',
         'https://pt.wikipedia.org/wiki/Filmicca',
         '/posts/post-inspecao-palavra-pipoca.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Site ≠ filme. Indexar ≠ endosso. FAQ ~400 vs imprensa ~630: datar.'
     };

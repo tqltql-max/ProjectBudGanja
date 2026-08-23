@@ -119,16 +119,16 @@ const ITEMS = [
     sugTitle: 'Moçambique — o país, o tónos em BI e o lapso esqueiro biq',
     sugTitleEn: 'Moçambique — the country, the tónos on BI, and the slip esqueiro biq',
     sugTitleEs: 'Moçambique — el país, el tónos en BI y el lapsus esqueiro biq',
-    why: 'Palavras: Moçambique = país; tónico em BI; esqueiro biq = Biq × isqueiro BIC; ≠ marca como étimo; Faça o melhor!',
+    why: 'Palavras: Moçambique = país; tónico em BI; esqueiro biq = Biq × isqueiro BIC; ≠ marca como étimo; Valeu !!!',
     guiaId: 'mocambique',
     guiaWord: 'Moçambique',
     guiaSimple:
-      'País lusófono (PT Moçambique / EN Mozambique / sw. Msumbiji); étimo Mussa Bin Bique; tónico em BI; lapso esqueiro biq ≠ isqueiro BIC; Faça o melhor neste mapa.',
+      'País lusófono (PT Moçambique / EN Mozambique / sw. Msumbiji); étimo Mussa Bin Bique; tónico em BI; lapso esqueiro biq ≠ isqueiro BIC; Valeu !!! neste mapa.',
     guiaAfter: ['paraguai', 'tonico', 'lingua-portuguesa'],
     glossKey: 'moçambique',
     glossAfter: 'paraguai',
     glossMain:
-      '    moçambique: { tone: "caution", category: "País", mundane: "República de Moçambique; grafia EN Mozambique.", gloss: "País ≠ isqueiro BIC; étimo Mussa Bin Bique / Biq; tónico em BI; lapso esqueiro biq; Faça o melhor neste mapa.", href: "/posts/post-inspecao-palavra-mocambique.html", en: "Mozambique", es: "Mozambique", fr: "Mozambique", it: "Mozambico", de: "Mosambik", el: "Μοζαμβίκη", la: "Mozambicum", yo: "Mozambique", sw: "Msumbiji", gez: "Mozambique", nl: "Mozambique", pl: "Mozambik", ru: "Мозамбик", uk: "Мозамбік", zh: "莫桑比克", ja: "モザンビーク", ko: "모잠비크", ar: "موزمبيق", he: "מוזמביק", hi: "मोज़ाम्बिक", tr: "Mozambik", sv: "Moçambique", da: "Mozambique", no: "Mosambik", fi: "Mosambik", cs: "Mosambik", ro: "Mozambic", hu: "Mozambik", ca: "Moçambic", gl: "Mozambique", eu: "Mozambike", gn: "Mosambike", qu: "Musambiki", eo: "Mozambiko", vi: "Mozambique", id: "Mozambik", th: "โมซัมบิก", hr: "Mozambik", sk: "Mozambik", ga: "Mósaimbíc", cy: "Mozambique", ha: "Mozambique", am: "ሞዛምቢክ", fa: "موزامبیک", bn: "মোজাম্বিক", zu: "iMozambique" },\n',
+      '    moçambique: { tone: "caution", category: "País", mundane: "República de Moçambique; grafia EN Mozambique.", gloss: "País ≠ isqueiro BIC; étimo Mussa Bin Bique / Biq; tónico em BI; lapso esqueiro biq; Valeu !!! neste mapa.", href: "/posts/post-inspecao-palavra-mocambique.html", en: "Mozambique", es: "Mozambique", fr: "Mozambique", it: "Mozambico", de: "Mosambik", el: "Μοζαμβίκη", la: "Mozambicum", yo: "Mozambique", sw: "Msumbiji", gez: "Mozambique", nl: "Mozambique", pl: "Mozambik", ru: "Мозамбик", uk: "Мозамбік", zh: "莫桑比克", ja: "モザンビーク", ko: "모잠비크", ar: "موزمبيق", he: "מוזמביק", hi: "मोज़ाम्बिक", tr: "Mozambik", sv: "Moçambique", da: "Mozambique", no: "Mosambik", fi: "Mosambik", cs: "Mosambik", ro: "Mozambic", hu: "Mozambik", ca: "Moçambic", gl: "Mozambique", eu: "Mozambike", gn: "Mosambike", qu: "Musambiki", eo: "Mozambiko", vi: "Mozambique", id: "Mozambik", th: "โมซัมบิก", hr: "Mozambik", sk: "Mozambik", ga: "Mósaimbíc", cy: "Mozambique", ha: "Mozambique", am: "ሞዛምቢክ", fa: "موزامبیک", bn: "মোজাম্বিক", zu: "iMozambique" },\n',
     glossAliases:
       '    mozambique: { gloss: "Grafia EN/ES de Moçambique — o mesmo país; ver ficha.", href: "/posts/post-inspecao-palavra-mocambique.html", en: "Mozambique", es: "Mozambique" },\n' +
       '    mocambique: { gloss: "Grafia sem cedilha de Moçambique — o mesmo país.", href: "/posts/post-inspecao-palavra-mocambique.html", en: "Mozambique (unaccented)", es: "Mozambique (sin cedilla)" },\n' +
@@ -141,16 +141,16 @@ const ITEMS = [
     sugTitle: 'Isqueiro BIC — tónos do polegar e o lapso esqueiro biq',
     sugTitleEn: 'BIC lighter — thumb tónos and the slip esqueiro biq',
     sugTitleEs: 'Encendedor BIC — tónos del pulgar y el lapsus esqueiro biq',
-    why: 'Palavras: isqueiro BIC = utensílio + marca 1973; tónos = tensão (~42 N); esqueiro biq ≠ Moçambique; Faça o melhor!',
+    why: 'Palavras: isqueiro BIC = utensílio + marca 1973; tónos = tensão (~42 N); esqueiro biq ≠ Moçambique; Valeu !!!',
     guiaId: 'isqueiro-bic',
     guiaWord: 'isqueiro BIC',
     guiaSimple:
-      'Isca + -eiro (lat. esca); marca BIC 1973; tónos do polegar (~42 N); lapso esqueiro biq cola ao Biq de Moçambique; ≠ país; Faça o melhor nesta chama.',
+      'Isca + -eiro (lat. esca); marca BIC 1973; tónos do polegar (~42 N); lapso esqueiro biq cola ao Biq de Moçambique; ≠ país; Valeu !!! nesta chama.',
     guiaAfter: ['mocambique', 'fogo', 'cinzeiro'],
     glossKey: 'isqueiro',
     glossAfter: 'moçambique',
     glossMain:
-      '    isqueiro: { tone: "caution", category: "Utensílio", mundane: "Aparelho de acender; tipo BIC = marca 1973.", gloss: "Isca + -eiro; tónos = tensão do polegar; lapso esqueiro biq ≠ Moçambique; elos fogo/cinzeiro; Faça o melhor nesta chama.", href: "/posts/post-inspecao-palavra-isqueiro-bic.html", en: "lighter", es: "encendedor", fr: "briquet", it: "accendino", de: "Feuerzeug", el: "αναπτήρας", la: "igniarium", yo: "iná ìtàná", sw: "kiberiti", gez: "mästäwəq", nl: "aansteker", pl: "zapalniczka", ru: "зажигалка", uk: "запальничка", zh: "打火机", ja: "ライター", ko: "라이터", ar: "ولاعة", he: "מצית", hi: "लाइटर", tr: "çakmak", sv: "tändare", da: "lighter", no: "lighter", fi: "sytytin", cs: "zapalovač", ro: "brichetă", hu: "öngyújtó", ca: "encenedor", gl: "isqueiro", eu: "pizgailu", gn: "tata mbopuha", qu: "nina ruwaq", eo: "bruligilo", vi: "bật lửa", id: "korek api", th: "ไฟแช็ก", hr: "uppaljač", sk: "zapaľovač", ga: "lastóir", cy: "taniwr", ha: "wuta", am: "ማቀጣጠያ", fa: "فندک", bn: "লাইটার", zu: "isikhanyiso" },\n',
+      '    isqueiro: { tone: "caution", category: "Utensílio", mundane: "Aparelho de acender; tipo BIC = marca 1973.", gloss: "Isca + -eiro; tónos = tensão do polegar; lapso esqueiro biq ≠ Moçambique; elos fogo/cinzeiro; Valeu !!! nesta chama.", href: "/posts/post-inspecao-palavra-isqueiro-bic.html", en: "lighter", es: "encendedor", fr: "briquet", it: "accendino", de: "Feuerzeug", el: "αναπτήρας", la: "igniarium", yo: "iná ìtàná", sw: "kiberiti", gez: "mästäwəq", nl: "aansteker", pl: "zapalniczka", ru: "зажигалка", uk: "запальничка", zh: "打火机", ja: "ライター", ko: "라이터", ar: "ولاعة", he: "מצית", hi: "लाइटर", tr: "çakmak", sv: "tändare", da: "lighter", no: "lighter", fi: "sytytin", cs: "zapalovač", ro: "brichetă", hu: "öngyújtó", ca: "encenedor", gl: "isqueiro", eu: "pizgailu", gn: "tata mbopuha", qu: "nina ruwaq", eo: "bruligilo", vi: "bật lửa", id: "korek api", th: "ไฟแช็ก", hr: "uppaljač", sk: "zapaľovač", ga: "lastóir", cy: "taniwr", ha: "wuta", am: "ማቀጣጠያ", fa: "فندک", bn: "লাইটার", zu: "isikhanyiso" },\n',
     glossAliases:
       '    "isqueiro bic": { gloss: "Tipo / marca do isqueiro — ver ficha; ≠ país Moçambique.", href: "/posts/post-inspecao-palavra-isqueiro-bic.html", en: "BIC lighter", es: "encendedor BIC" },\n' +
       '    esqueiro: { gloss: "Lapso de isqueiro (ou escada minhota) — ver isqueiro BIC.", href: "/posts/post-inspecao-palavra-isqueiro-bic.html", en: "isqueiro (slip)", es: "encendedor (lapsus)" },\n' +
@@ -179,7 +179,7 @@ function upsertSug(sug, post, cfg) {
     sources: [
       post.sourceUrl,
       '/posts/post-inspecao-palavra-tonico.html',
-      '/posts/post-inspecao-expressao-faca-o-melhor.html'
+      '/posts/post-inspecao-palavra-valeu.html'
     ],
     notes: 'Cap. ' + post.seriesOrder + ' — cluster Moçambique / isqueiro BIC / tónos / esqueiro biq.'
   };

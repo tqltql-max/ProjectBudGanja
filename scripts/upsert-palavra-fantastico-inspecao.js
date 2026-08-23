@@ -88,9 +88,9 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Fantástico — fantasia, elogio BR e Faça o melhor!',
-      titleEn: 'Fantástico — fantasy, BR praise and Do your best!',
-      titleEs: 'Fantástico — fantasía, elogio BR y ¡Haz lo mejor!',
+      title: 'Fantástico — fantasia, elogio BR e Valeu !!!',
+      titleEn: 'Fantástico — fantasy, BR praise and Valeu !!!',
+      titleEs: 'Fantástico — fantasía, elogio BR y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
@@ -106,7 +106,7 @@ async function main() {
         '/posts/post-inspecao-palavra-genial.html',
         '/posts/post-inspecao-palavra-maravilhoso.html',
         '/posts/post-inspecao-palavra-legal.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — fantisico → fantástico; escala de elogio.'
     };
@@ -125,11 +125,11 @@ async function main() {
       id: 'fantastico',
       word: 'fantástico',
       simple:
-        'Lat. phantasticus / fantasia — imaginação e elogio BR «fantástico!»; escala com legal, genial, maravilhoso; Faça o melhor depois do uau.',
+        'Lat. phantasticus / fantasia — imaginação e elogio BR «fantástico!»; escala com legal, genial, maravilhoso; Valeu !!! depois do uau.',
       simpleEn:
-        'Lat. phantasticus / fantasy — imagination and BR praise “fantástico!”; scale with legal, genial, maravilhoso; Do your best after the wow.',
+        'Lat. phantasticus / fantasy — imagination and BR praise “fantástico!”; scale with legal, genial, maravilhoso; Valeu !!! after the wow.',
       simpleEs:
-        'Lat. phantasticus / fantasía — imaginación y elogio BR «¡fantástico!»; escala con legal, genial, maravilhoso; Haz lo mejor después del guau.',
+        'Lat. phantasticus / fantasía — imaginación y elogio BR «¡fantástico!»; escala con legal, genial, maravilhoso; Valeu !!! después del guau.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -156,7 +156,7 @@ async function main() {
       const reFogo = /(fogo: \{[\s\S]*?zu: "[^"]+" },\r?\n)/;
       const reGenial = /(genial: \{[\s\S]*?zu: "[^"]+" },\r?\n)/;
       const entry =
-        '    fantástico: { gloss: "Lat. phantasticus / fantasia — imaginação e elogio BR «fantástico!»; escala legal/genial/maravilhoso; Faça o melhor.", href: "/posts/post-inspecao-palavra-fantastico.html", en: "fantastic / fantastical", es: "fantástico", fr: "fantastique", it: "fantastico", de: "fantastisch", el: "φανταστικός", la: "phantasticus", yo: "àrà ọ̀tọ̀", sw: "ajabu", gez: "mänäḳər", nl: "fantastisch", pl: "fantastyczny", ru: "фантастический", uk: "фантастичний", zh: "奇妙的", ja: "素晴らしい", ko: "환상적인", ar: "رائع", he: "פנטסטי", hi: "शानदार", tr: "fantastik", sv: "fantastisk", da: "fantastisk", no: "fantastisk", fi: "fantastinen", cs: "fantastický", ro: "fantastic", hu: "fantasztikus", ca: "fantàstic", gl: "fantástico", eu: "fantastiko", gn: "iporãité", qu: "musphay", eo: "fantasta", vi: "tuyệt vời", id: "fantastis", th: "มหัศจรรย์", hr: "fantastičan", sk: "fantastický", ga: "iontach", cy: "gwych", ha: "ban mamaki", am: "አስደናቂ", fa: "خارق‌العاده", bn: "অসাধারণ", zu: "kuyamangalisa" },\n';
+        '    fantástico: { gloss: "Lat. phantasticus / fantasia — imaginação e elogio BR «fantástico!»; escala legal/genial/maravilhoso; Valeu !!!", href: "/posts/post-inspecao-palavra-fantastico.html", en: "fantastic / fantastical", es: "fantástico", fr: "fantastique", it: "fantastico", de: "fantastisch", el: "φανταστικός", la: "phantasticus", yo: "àrà ọ̀tọ̀", sw: "ajabu", gez: "mänäḳər", nl: "fantastisch", pl: "fantastyczny", ru: "фантастический", uk: "фантастичний", zh: "奇妙的", ja: "素晴らしい", ko: "환상적인", ar: "رائع", he: "פנטסטי", hi: "शानदार", tr: "fantastik", sv: "fantastisk", da: "fantastisk", no: "fantastisk", fi: "fantastinen", cs: "fantastický", ro: "fantastic", hu: "fantasztikus", ca: "fantàstic", gl: "fantástico", eu: "fantastiko", gn: "iporãité", qu: "musphay", eo: "fantasta", vi: "tuyệt vời", id: "fantastis", th: "มหัศจรรย์", hr: "fantastičan", sk: "fantastický", ga: "iontach", cy: "gwych", ha: "ban mamaki", am: "አስደናቂ", fa: "خارق‌العاده", bn: "অসাধারণ", zu: "kuyamangalisa" },\n';
       if (reFogo.test(gloss)) {
         gloss = gloss.replace(reFogo, '$1' + entry);
         fs.writeFileSync(glossPath, gloss);

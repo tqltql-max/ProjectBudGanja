@@ -33,7 +33,7 @@ async function main() {
   <path d="M780 220 L780 280 L830 310" fill="none" stroke="rgba(220,180,120,0.7)" stroke-width="4" stroke-linecap="round"/>
   <text x="600" y="88" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#c4a880" letter-spacing="4">EXPRESSÕES · CICLO DAS COISAS</text>
   <text x="600" y="480" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="28" font-weight="700" fill="#f0e8dc">Como os ricos transformam as coisas</text>
-  <text x="600" y="535" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#b8a888">perguntar o ciclo · Annie Leonard · Faça o melhor</text>
+  <text x="600" y="535" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#b8a888">perguntar o ciclo · Annie Leonard · Valeu !!!</text>
 </svg>`);
 
   await sharp(bg).jpeg({ quality: 84, mozjpeg: true }).toFile(OUT);

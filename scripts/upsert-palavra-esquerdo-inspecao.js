@@ -71,22 +71,22 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Esquerdo — objeto, criação, finalidade e Faça o melhor!',
-      titleEn: 'Esquerdo — object, creation, purpose and Do your best!',
-      titleEs: 'Esquerdo — objeto, creación, finalidad y ¡Haz lo mejor!',
+      title: 'Esquerdo — objeto, criação, finalidade e Valeu !!!',
+      titleEn: 'Esquerdo — object, creation, purpose and Valeu !!!',
+      titleEs: 'Esquerdo — objeto, creación, finalidad y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: «esquerdo» — objeto/criação/finalidade; anti-estigma; elo mãos e Faça o melhor!',
-      whyEn: 'Words: “esquerdo” — object/creation/purpose; anti-stigma; hands + Do your best!',
-      whyEs: 'Palabras: «esquerdo» — objeto/creación/finalidad; anti-estigma; manos + ¡Haz lo mejor!',
+      why: 'Palavras: «esquerdo» — objeto/criação/finalidade; anti-estigma; elo mãos e Valeu !!!',
+      whyEn: 'Words: “esquerdo” — object/creation/purpose; anti-stigma; hands + Valeu !!!',
+      whyEs: 'Palabras: «esquerdo» — objeto/creación/finalidad; anti-estigma; manos + ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
       sources: [
         'https://pt.wiktionary.org/wiki/esquerdo',
         maosHref,
-        '/posts/post-inspecao-expressao-faca-o-melhor.html',
+        '/posts/post-inspecao-palavra-valeu.html',
         '/posts/post-inspecao-palavra-gesto.html'
       ],
       notes: 'Cap. 31 — quatro eixos; complementar mão esquerda×direita.'
@@ -106,11 +106,11 @@ async function main() {
       id: 'esquerdo',
       word: 'esquerdo',
       simple:
-        'Lado / ofício (esquerda); no BudGanja: objeto, criação e finalidade sem estigma; Faça o melhor nesta mão.',
+        'Lado / ofício (esquerda); no BudGanja: objeto, criação e finalidade sem estigma; Valeu !!! nesta mão.',
       simpleEn:
-        'Side / craft (left); in BudGanja: object, creation and purpose without stigma; Do your best with this hand.',
+        'Side / craft (left); in BudGanja: object, creation and purpose without stigma; Valeu !!! with this hand.',
       simpleEs:
-        'Lado / oficio (izquierda); en BudGanja: objeto, creación y finalidad sin estigma; Haz lo mejor con esta mano.',
+        'Lado / oficio (izquierda); en BudGanja: objeto, creación y finalidad sin estigma; Valeu !!! con esta mano.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -136,7 +136,7 @@ async function main() {
     if (!gloss.includes('esquerdo: {') && !gloss.includes('esquerda: {')) {
       const re = /(genial: \{[\s\S]*?zu: "uhlakaniphile" },\r?\n)/;
       const entry =
-        '    esquerdo: { gloss: "Lado de ofício (esquerda) — objeto, criação, finalidade; anti-estigma; Faça o melhor nesta mão.", href: "/posts/post-inspecao-palavra-esquerdo.html", en: "left", es: "izquierdo", fr: "gauche", it: "sinistro", de: "links", el: "αριστερός", la: "sinister", yo: "òsì", sw: "kushoto", gez: "ṣägäm", nl: "links", pl: "lewy", ru: "левый", uk: "лівий", zh: "左", ja: "左", ko: "왼쪽", ar: "يسار", he: "שמאל", hi: "बायाँ", tr: "sol", sv: "vänster", da: "venstre", no: "venstre", fi: "vasen", cs: "levý", ro: "stâng", hu: "bal", ca: "esquerre", gl: "esquerdo", eu: "ezker", gn: "asaje", qu: "lluq\'i", eo: "maldekstra", vi: "trái", id: "kiri", th: "ซ้าย", hr: "lijevi", sk: "ľavý", ga: "clé", cy: "chwith", ha: "hagu", am: "ግራ", fa: "چپ", bn: "বাম", zu: "kwesokunxele" },\n' +
+        '    esquerdo: { gloss: "Lado de ofício (esquerda) — objeto, criação, finalidade; anti-estigma; Valeu !!! nesta mão.", href: "/posts/post-inspecao-palavra-esquerdo.html", en: "left", es: "izquierdo", fr: "gauche", it: "sinistro", de: "links", el: "αριστερός", la: "sinister", yo: "òsì", sw: "kushoto", gez: "ṣägäm", nl: "links", pl: "lewy", ru: "левый", uk: "лівий", zh: "左", ja: "左", ko: "왼쪽", ar: "يسار", he: "שמאל", hi: "बायाँ", tr: "sol", sv: "vänster", da: "venstre", no: "venstre", fi: "vasen", cs: "levý", ro: "stâng", hu: "bal", ca: "esquerre", gl: "esquerdo", eu: "ezker", gn: "asaje", qu: "lluq\'i", eo: "maldekstra", vi: "trái", id: "kiri", th: "ซ้าย", hr: "lijevi", sk: "ľavý", ga: "clé", cy: "chwith", ha: "hagu", am: "ግራ", fa: "چپ", bn: "বাম", zu: "kwesokunxele" },\n' +
         '    esquerda: { gloss: "Forma feminina / lado — ver ficha esquerdo.", href: "/posts/post-inspecao-palavra-esquerdo.html", en: "left", es: "izquierda", fr: "gauche", it: "sinistra", de: "Linke", el: "αριστερά", la: "sinistra", yo: "òsì", sw: "kushoto", gez: "ṣägäm", nl: "links", pl: "lewa", ru: "левая", uk: "ліва", zh: "左边", ja: "左", ko: "왼쪽", ar: "يسار", he: "שמאל", hi: "बायाँ", tr: "sol", sv: "vänster", da: "venstre", no: "venstre", fi: "vasen", cs: "levá", ro: "stângă", hu: "bal", ca: "esquerra", gl: "esquerda", eu: "ezker", gn: "asaje", qu: "lluq\'i", eo: "maldekstro", vi: "bên trái", id: "kiri", th: "ซ้าย", hr: "lijevo", sk: "ľavá", ga: "clé", cy: "chwith", ha: "hagu", am: "ግራ", fa: "چپ", bn: "বাম", zu: "kwesokunxele" },\n';
       if (re.test(gloss)) {
         gloss = gloss.replace(re, '$1' + entry);

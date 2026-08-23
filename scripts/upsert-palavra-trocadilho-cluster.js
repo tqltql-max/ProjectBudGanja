@@ -123,11 +123,11 @@ const ITEMS = [
     sugTitle: 'Trocadilho — cara+alho, e por que não é polimorfismo',
     sugTitleEn: 'Trocadilho — cara+alho, and why it is not polymorphism',
     sugTitleEs: 'Trocadilho — cara+alho, y por qué no es polimorfismo',
-    why: 'Palavras: trocadilho (calembur) — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; Faça o melhor!',
+    why: 'Palavras: trocadilho (calembur) — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; Valeu !!!',
     guiaId: 'trocadilho',
     guiaWord: 'Trocadilho',
     guiaSimple:
-      'Calembur — cara+alho é jogo de ouvido + etimologia popular, não polimorfismo nem origem da terceira forma; irmãs aglutinação e Tanzânia (valise); Faça o melhor no nome.',
+      'Calembur — cara+alho é jogo de ouvido + etimologia popular, não polimorfismo nem origem da terceira forma; irmãs aglutinação e Tanzânia (valise); Valeu !!! no nome.',
     guiaHistory:
       'Trocadilho vem de trocar / esp. trocado: troca de peças sonoras. O calembur francês nomeia o mesmo ofício. Cara+alho é o exemplo BR clássico — leitura nova de uma forma já existente (baixo calão), não étimo.',
     guiaCuriosities:
@@ -136,7 +136,7 @@ const ITEMS = [
     glossKey: 'trocadilho',
     glossAfter: 'português',
     glossMain:
-      '    trocadilho: { tone: "craft", gloss: "Calembur — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; Faça o melhor no nome.", href: "/posts/post-inspecao-palavra-trocadilho.html", en: "pun / play on words", es: "juego de palabras / calambur", ' +
+      '    trocadilho: { tone: "craft", gloss: "Calembur — cara+alho é jogo + etimologia popular, não polimorfismo nem palavra-valise; Valeu !!! no nome.", href: "/posts/post-inspecao-palavra-trocadilho.html", en: "pun / play on words", es: "juego de palabras / calambur", ' +
       LANGS +
       ' },\n',
     glossAliases:
@@ -153,11 +153,11 @@ const ITEMS = [
     sugTitle: 'Aglutinação — a solda gramatical (cara+alho só parece)',
     sugTitleEn: 'Agglutination — grammatical fusion (cara+alho only looks like it)',
     sugTitleEs: 'Aglutinación — la soldadura gramatical (cara+alho solo parece)',
-    why: 'Palavras: aglutinação — composição por fusão (planalto, embora); cara+alho é máscara, o nome certo é trocadilho; Faça o melhor!',
+    why: 'Palavras: aglutinação — composição por fusão (planalto, embora); cara+alho é máscara, o nome certo é trocadilho; Valeu !!!',
     guiaId: 'aglutinacao',
     guiaWord: 'Aglutinação',
     guiaSimple:
-      'Composição por fusão (planalto, embora, aguardente); cara+alho só parece isto — o nome certo é trocadilho; ≠ polimorfismo; Faça o melhor na solda.',
+      'Composição por fusão (planalto, embora, aguardente); cara+alho só parece isto — o nome certo é trocadilho; ≠ polimorfismo; Valeu !!! na solda.',
     guiaHistory:
       'Aglutinação vem do latim agglutinare, colar. Nos manuais de português contrapõe-se à justaposição: guarda-chuva conserva as duas caras; planalto esconde a costura.',
     guiaCuriosities:
@@ -166,7 +166,7 @@ const ITEMS = [
     glossKey: 'aglutinação',
     glossAfter: 'trocadilho',
     glossMain:
-      '    aglutinação: { tone: "craft", gloss: "Composição por fusão (planalto, embora); cara+alho é máscara — o nome certo é trocadilho; Faça o melhor na solda.", href: "/posts/post-inspecao-palavra-aglutinacao.html", en: "agglutination (compounding)", es: "aglutinación", fr: "agglutination", it: "composizione per fusione", de: "Zusammenrückung", el: "σύνθεση", la: "agglutinatio", yo: "isopomo", sw: "muunganiko", gez: "agglutination", nl: "samenstelling", pl: "zrost", ru: "слияние", uk: "зрощення", zh: "黏合构词", ja: "融合複合", ko: "융합 합성", ar: "إلصاق", he: "הלחמה", hi: "समास", tr: "bitisim", sv: "sammansattning", da: "sammensatning", no: "sammensetning", fi: "yhdyssana", cs: "spojovani", ro: "aglutinare", hu: "osszetetel", ca: "aglutinacio", gl: "aglutinacion", eu: "elkarketa", gn: "moĩmby", qu: "t\'inkiy", eo: "kunmetado", vi: "ghep tu", id: "aglutinasi", th: "การประสมคำ", hr: "sljepljivanje", sk: "zrastanie", ga: "tattú", cy: "cyfuniad", ha: "hadewa", am: "መጣበቅ", fa: "التصاق", bn: "সমাস", zu: "ukuhlanganisa" },\n',
+      '    aglutinação: { tone: "craft", gloss: "Composição por fusão (planalto, embora); cara+alho é máscara — o nome certo é trocadilho; Valeu !!! na solda.", href: "/posts/post-inspecao-palavra-aglutinacao.html", en: "agglutination (compounding)", es: "aglutinación", fr: "agglutination", it: "composizione per fusione", de: "Zusammenrückung", el: "σύνθεση", la: "agglutinatio", yo: "isopomo", sw: "muunganiko", gez: "agglutination", nl: "samenstelling", pl: "zrost", ru: "слияние", uk: "зрощення", zh: "黏合构词", ja: "融合複合", ko: "융합 합성", ar: "إلصاق", he: "הלחמה", hi: "समास", tr: "bitisim", sv: "sammansattning", da: "sammensatning", no: "sammensetning", fi: "yhdyssana", cs: "spojovani", ro: "aglutinare", hu: "osszetetel", ca: "aglutinacio", gl: "aglutinacion", eu: "elkarketa", gn: "moĩmby", qu: "t\'inkiy", eo: "kunmetado", vi: "ghep tu", id: "aglutinasi", th: "การประสมคำ", hr: "sljepljivanje", sk: "zrastanie", ga: "tattú", cy: "cyfuniad", ha: "hadewa", am: "መጣበቅ", fa: "التصاق", bn: "সমাস", zu: "ukuhlanganisa" },\n',
     glossAliases:
       '    aglutinacao: { gloss: "Grafia sem acento de aglutinação — o mesmo ofício.", href: "/posts/post-inspecao-palavra-aglutinacao.html", en: "agglutination", es: "aglutinación" },\n' +
       '    justaposicao: { gloss: "Composição lado a lado (guarda-chuva) — o par escolar da aglutinação.", href: "/posts/post-inspecao-palavra-aglutinacao.html", en: "juxtaposition compounding", es: "yuxtaposición" },\n' +
@@ -178,11 +178,11 @@ const ITEMS = [
     sugTitle: 'Polimorfismo — várias formas do mesmo (não é cara+alho)',
     sugTitleEn: 'Polymorphism — many forms of the same (not cara+alho)',
     sugTitleEs: 'Polimorfismo — varias formas de lo mismo (no es cara+alho)',
-    why: 'Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; Faça o melhor!',
+    why: 'Palavras: polimorfismo (poly+morphē) — biologia, código, alomorfia; cara+alho não é isto, é trocadilho; Valeu !!!',
     guiaId: 'polimorfismo',
     guiaWord: 'Polimorfismo',
     guiaSimple:
-      'Poly+morphē — várias formas do mesmo (biologia, código, alomorfia); cara+alho não é isto, é trocadilho; irmã aglutinação; Faça o melhor no nome.',
+      'Poly+morphē — várias formas do mesmo (biologia, código, alomorfia); cara+alho não é isto, é trocadilho; irmã aglutinação; Valeu !!! no nome.',
     guiaHistory:
       'Polimorfismo junta o grego poly- (muitos) e morphē (forma). Vive na biologia (vários fenótipos), na programação (mesmo método, vários tipos) e, à margem linguística, na alomorfia.',
     guiaCuriosities:
@@ -191,7 +191,7 @@ const ITEMS = [
     glossKey: 'polimorfismo',
     glossAfter: 'aglutinação',
     glossMain:
-      '    polimorfismo: { tone: "craft", gloss: "Poly+morphē — várias formas do mesmo (bio/código/alomorfia); cara+alho não é isto, é trocadilho; Faça o melhor no nome.", href: "/posts/post-inspecao-palavra-polimorfismo.html", en: "polymorphism", es: "polimorfismo", fr: "polymorphisme", it: "polimorfismo", de: "Polymorphismus", el: "πολυμορφισμός", la: "polymorphismus", yo: "orisirisi irisi", sw: "umbo nyingi", gez: "polymorphism", nl: "polymorfisme", pl: "polimorfizm", ru: "полиморфизм", uk: "поліморфізм", zh: "多态", ja: "多型", ko: "다형성", ar: "تعدد الأشكال", he: "פולימורפיזם", hi: "बहुरूपता", tr: "polimorfizm", sv: "polymorfism", da: "polymorfi", no: "polymorfi", fi: "polymorfismi", cs: "polymorfismus", ro: "polimorfism", hu: "polimorfizmus", ca: "polimorfisme", gl: "polimorfismo", eu: "polimorfismo", gn: "heta ysaja", qu: "achka rikchay", eo: "polimorfismo", vi: "da hinh", id: "polimorfisme", th: "ภาวะหลายรูป", hr: "polimorfizam", sk: "polymorfizmus", ga: "ilmhoirfeacht", cy: "amlffurfiaeth", ha: "nau\'i da yawa", am: "ብዙ ቅርጽ", fa: "چندریختی", bn: "বহুরূপতা", zu: "izinhlobo eziningi" },\n',
+      '    polimorfismo: { tone: "craft", gloss: "Poly+morphē — várias formas do mesmo (bio/código/alomorfia); cara+alho não é isto, é trocadilho; Valeu !!! no nome.", href: "/posts/post-inspecao-palavra-polimorfismo.html", en: "polymorphism", es: "polimorfismo", fr: "polymorphisme", it: "polimorfismo", de: "Polymorphismus", el: "πολυμορφισμός", la: "polymorphismus", yo: "orisirisi irisi", sw: "umbo nyingi", gez: "polymorphism", nl: "polymorfisme", pl: "polimorfizm", ru: "полиморфизм", uk: "поліморфізм", zh: "多态", ja: "多型", ko: "다형성", ar: "تعدد الأشكال", he: "פולימורפיזם", hi: "बहुरूपता", tr: "polimorfizm", sv: "polymorfism", da: "polymorfi", no: "polymorfi", fi: "polymorfismi", cs: "polymorfismus", ro: "polimorfism", hu: "polimorfizmus", ca: "polimorfisme", gl: "polimorfismo", eu: "polimorfismo", gn: "heta ysaja", qu: "achka rikchay", eo: "polimorfismo", vi: "da hinh", id: "polimorfisme", th: "ภาวะหลายรูป", hr: "polimorfizam", sk: "polymorfizmus", ga: "ilmhoirfeacht", cy: "amlffurfiaeth", ha: "nau\'i da yawa", am: "ብዙ ቅርጽ", fa: "چندریختی", bn: "বহুরূপতা", zu: "izinhlobo eziningi" },\n',
     glossAliases:
       '    polymorphism: { gloss: "EN de polimorfismo — várias formas do mesmo; ≠ cara+alho.", href: "/posts/post-inspecao-palavra-polimorfismo.html", en: "polymorphism", es: "polimorfismo" },\n' +
       '    polissemia: { gloss: "Vários sentidos da mesma forma — ≠ polimorfismo ≠ trocadilho cara+alho.", href: "/posts/post-inspecao-palavra-polimorfismo.html", en: "polysemy", es: "polisemia" },\n'
@@ -219,7 +219,7 @@ function upsertSug(sug, post, cfg) {
     sources: [
       post.sourceUrl,
       '/posts/post-inspecao-palavra-lingua-portuguesa.html',
-      '/posts/post-inspecao-expressao-faca-o-melhor.html'
+      '/posts/post-inspecao-palavra-valeu.html'
     ],
     notes: 'Cap. ' + post.seriesOrder + ' — cluster trocadilho / aglutinação / polimorfismo / cara+alho.'
   };

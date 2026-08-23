@@ -83,15 +83,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Sempre — duração, hábito e Faça o melhor!',
-      titleEn: 'Sempre — duration, habit and Do your best!',
-      titleEs: 'Sempre — duración, hábito y ¡Haz lo mejor!',
+      title: 'Sempre — duração, hábito e Valeu !!!',
+      titleEn: 'Sempre — duration, habit and Valeu !!!',
+      titleEs: 'Sempre — duración, hábito y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: sempre (lat. semper) — duração × hábito × promessa; elos já/prosseguir/caminho; Faça o melhor!',
-      whyEn: 'Words: sempre (Lat. semper) — duration × habit × promise; links já/prosseguir/caminho; Do your best!',
-      whyEs: 'Palabras: sempre (lat. semper) — duración × hábito × promesa; vínculos já/prosseguir/caminho; ¡Haz lo mejor!',
+      why: 'Palavras: sempre (lat. semper) — duração × hábito × promessa; elos já/prosseguir/caminho; Valeu !!!',
+      whyEn: 'Words: sempre (Lat. semper) — duration × habit × promise; links já/prosseguir/caminho; Valeu !!!',
+      whyEs: 'Palabras: sempre (lat. semper) — duración × hábito × promesa; vínculos já/prosseguir/caminho; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -100,7 +100,7 @@ async function main() {
         '/posts/post-inspecao-palavra-ja.html',
         '/posts/post-inspecao-palavra-prosseguir.html',
         '/posts/post-inspecao-palavra-caminho.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — par com prosseguir.'
     };
@@ -119,11 +119,11 @@ async function main() {
       id: 'sempre',
       word: 'sempre',
       simple:
-        'Lat. semper — duração × hábito × promessa BR; elos já/prosseguir/caminho; Faça o melhor sempre que puder.',
+        'Lat. semper — duração × hábito × promessa BR; elos já/prosseguir/caminho; Valeu !!! sempre que puder.',
       simpleEn:
-        'Lat. semper — duration × habit × promise BR; links já/prosseguir/caminho; Do your best whenever you can.',
+        'Lat. semper — duration × habit × promise BR; links já/prosseguir/caminho; Valeu !!! whenever you can.',
       simpleEs:
-        'Lat. semper — duración × hábito × promesa BR; vínculos já/prosseguir/caminho; Haz lo mejor siempre que puedas.',
+        'Lat. semper — duración × hábito × promesa BR; vínculos já/prosseguir/caminho; Valeu !!! siempre que puedas.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -145,7 +145,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    sempre: { gloss: "Lat. semper — duração × hábito × promessa BR; elos já/prosseguir/caminho; Faça o melhor!", href: "/posts/post-inspecao-palavra-sempre.html", en: "always", es: "siempre", fr: "toujours", it: "sempre", de: "immer", el: "panta", la: "semper", yo: "nigbagbogbo", sw: "daima", gez: "zäläalom", nl: "altijd", pl: "zawsze", ru: "vsegda", uk: "zavzhdy", zh: "always", ja: "itsumo", ko: "hangsang", ar: "daiman", he: "tamid", hi: "hamesha", tr: "her zaman", sv: "alltid", da: "altid", no: "alltid", fi: "aina", cs: "vzdy", ro: "mereu", hu: "mindig", ca: "sempre", gl: "sempre", eu: "beti", gn: "meme gua", qu: "wiñay", eo: "cxiam", vi: "luon", id: "selalu", th: "always", hr: "uvijek", sk: "vzdy", ga: "i gconai", cy: "bob amser", ha: "kullum", am: "hulun gize", fa: "hamishe", bn: "sada", zu: "njalo" },';
+      '    sempre: { gloss: "Lat. semper — duração × hábito × promessa BR; elos já/prosseguir/caminho; Valeu !!!", href: "/posts/post-inspecao-palavra-sempre.html", en: "always", es: "siempre", fr: "toujours", it: "sempre", de: "immer", el: "panta", la: "semper", yo: "nigbagbogbo", sw: "daima", gez: "zäläalom", nl: "altijd", pl: "zawsze", ru: "vsegda", uk: "zavzhdy", zh: "always", ja: "itsumo", ko: "hangsang", ar: "daiman", he: "tamid", hi: "hamesha", tr: "her zaman", sv: "alltid", da: "altid", no: "alltid", fi: "aina", cs: "vzdy", ro: "mereu", hu: "mindig", ca: "sempre", gl: "sempre", eu: "beti", gn: "meme gua", qu: "wiñay", eo: "cxiam", vi: "luon", id: "selalu", th: "always", hr: "uvijek", sk: "vzdy", ga: "i gconai", cy: "bob amser", ha: "kullum", am: "hulun gize", fa: "hamishe", bn: "sada", zu: "njalo" },';
     if (/sempre:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    sempre:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

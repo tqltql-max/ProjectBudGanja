@@ -70,15 +70,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Buguei — do inseto ao «deu ruim» e Faça o melhor!',
-      titleEn: 'Buguei — from insect to “it went bad” and Do your best!',
-      titleEs: 'Buguei — del insecto al «salió mal» y ¡Haz lo mejor!',
+      title: 'Buguei — do inseto ao «deu ruim» e Valeu !!!',
+      titleEn: 'Buguei — from insect to “it went bad” and Valeu !!!',
+      titleEs: 'Buguei — del insecto al «salió mal» y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: buguei — bug (inseto) → falha → peito; alteração que parece ruim; Faça o melhor depois do tranco.',
-      whyEn: 'Words: buguei — bug (insect) → fault → chest; shift that sounds bad; Do your best after the stall.',
-      whyEs: 'Palabras: buguei — bug (insecto) → fallo → pecho; alteración que suena mala; Haz lo mejor después del tranco.',
+      why: 'Palavras: buguei — bug (inseto) → falha → peito; alteração que parece ruim; Valeu !!! depois do tranco.',
+      whyEn: 'Words: buguei — bug (insect) → fault → chest; shift that sounds bad; Valeu !!! after the stall.',
+      whyEs: 'Palabras: buguei — bug (insecto) → fallo → pecho; alteración que suena mala; Valeu !!! después del tranco.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -88,7 +88,7 @@ async function main() {
         'https://pt.wikipedia.org/wiki/Inseto',
         '/posts/post-inspecao-palavra-animal.html',
         '/posts/post-inspecao-palavra-aff.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. 34 — inseto × pejorativo × desbugar com ofício.'
     };
@@ -107,11 +107,11 @@ async function main() {
       id: 'buguei',
       word: 'buguei',
       simple:
-        'De bug (inseto) à falha e ao peito BR; o sentido foi puxado para «ruim»; depois do tranco, Faça o melhor!',
+        'De bug (inseto) à falha e ao peito BR; o sentido foi puxado para «ruim»; depois do tranco, Valeu !!!',
       simpleEn:
-        'From bug (insect) to fault and the BR chest; sense pulled toward “bad”; after the stall, Do your best!',
+        'From bug (insect) to fault and the BR chest; sense pulled toward “bad”; after the stall, Valeu !!!',
       simpleEs:
-        'De bug (insecto) al fallo y al pecho BR; el sentido se tiró a «malo»; después del tranco, ¡Haz lo mejor!',
+        'De bug (insecto) al fallo y al pecho BR; el sentido se tiró a «malo»; después del tranco, ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -137,7 +137,7 @@ async function main() {
     if (!gloss.includes('buguei: {') && !gloss.includes('bugar: {')) {
       const re = /(aff: \{[\s\S]*?zu: "hawu" },\r?\n)/;
       const entry =
-        '    buguei: { tone: "caution", category: "Tranco", mundane: "Gíria BR — travei/confundi (de bug = inseto/falha).", gloss: "Inseto→falha→peito; parece «ruim» por selecção de sentido; depois Faça o melhor!", href: "/posts/post-inspecao-palavra-buguei.html", en: "I glitched / froze", es: "me trabé", fr: "j\'ai bugué", it: "ho buggato", de: "ich habe einen Hänger", el: "κόλλησα", la: "haesi", yo: "mo dáwọ́ duro", sw: "nimesimama", gez: "täwaḳḳäfku", nl: "ik hing", pl: "zaciąłem się", ru: "завис", uk: "завис", zh: "卡住了", ja: "フリーズした", ko: "버벅였다", ar: "تعثرت", he: "נתקעתי", hi: "अटक गया", tr: "takıldım", sv: "jag hängde", da: "jeg hang", no: "jeg hang", fi: "jäin jumiin", cs: "zasekl jsem se", ro: "m-am blocat", hu: "beragadtam", ca: "m\'he bloquejat", gl: "travei", eu: "trabatu naiz", gn: "ajejoko", qu: "sayarqani", eo: "mi blokiĝis", vi: "bị đơ", id: "saya nge-bug", th: "ค้าง", hr: "zaglavio sam", sk: "zasekol som sa", ga: "chuaigh mé i bhfostú", cy: "mi wnes i rewi", ha: "na tsaya", am: "ተጣበቅኩ", fa: "گیر کردم", bn: "আটকে গেছি", zu: "ngibambekile" },\n' +
+        '    buguei: { tone: "caution", category: "Tranco", mundane: "Gíria BR — travei/confundi (de bug = inseto/falha).", gloss: "Inseto→falha→peito; parece «ruim» por selecção de sentido; depois Valeu !!!", href: "/posts/post-inspecao-palavra-buguei.html", en: "I glitched / froze", es: "me trabé", fr: "j\'ai bugué", it: "ho buggato", de: "ich habe einen Hänger", el: "κόλλησα", la: "haesi", yo: "mo dáwọ́ duro", sw: "nimesimama", gez: "täwaḳḳäfku", nl: "ik hing", pl: "zaciąłem się", ru: "завис", uk: "завис", zh: "卡住了", ja: "フリーズした", ko: "버벅였다", ar: "تعثرت", he: "נתקעתי", hi: "अटक गया", tr: "takıldım", sv: "jag hängde", da: "jeg hang", no: "jeg hang", fi: "jäin jumiin", cs: "zasekl jsem se", ro: "m-am blocat", hu: "beragadtam", ca: "m\'he bloquejat", gl: "travei", eu: "trabatu naiz", gn: "ajejoko", qu: "sayarqani", eo: "mi blokiĝis", vi: "bị đơ", id: "saya nge-bug", th: "ค้าง", hr: "zaglavio sam", sk: "zasekol som sa", ga: "chuaigh mé i bhfostú", cy: "mi wnes i rewi", ha: "na tsaya", am: "ተጣበቅኩ", fa: "گیر کردم", bn: "আটকে গেছি", zu: "ngibambekile" },\n' +
         '    bugar: { gloss: "Verbo informal — travar/falhar (de bug); ver ficha buguei.", href: "/posts/post-inspecao-palavra-buguei.html", en: "to glitch / freeze", es: "buguear", fr: "buguer", it: "buggare", de: "hängen", el: "κολλάω", la: "haerere", yo: "dáwọ́ duro", sw: "kusimama", gez: "wäḳḳäfä", nl: "hangen", pl: "zacinać się", ru: "зависать", uk: "зависати", zh: "卡死", ja: "バグる", ko: "버그나다", ar: "يتعطل", he: "לתקוע", hi: "अटकना", tr: "takılmak", sv: "hänga", da: "hænge", no: "henge", fi: "jumittua", cs: "zaseknout se", ro: "a se bloca", hu: "beragadni", ca: "bloquejar-se", gl: "travar", eu: "trabatu", gn: "jejoko", qu: "sayay", eo: "blokiĝi", vi: "bị đơ", id: "ngebug", th: "ค้าง", hr: "zaglaviti", sk: "zaseknúť sa", ga: "dul i bhfostú", cy: "rhewi", ha: "tsayawa", am: "መጣበቅ", fa: "گیر کردن", bn: "আটকে যাওয়া", zu: "ukubambeka" },\n';
       if (re.test(gloss)) {
         gloss = gloss.replace(re, '$1' + entry);

@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: luz (lat. lux) — claridade e efeito do clique; tríade circuito + sol; cultivo; Faça o melhor!',
-      whyEn: 'Words: luz (Lat. lux) — clarity and click effect; circuit triad + sol; grow; Do your best!',
-      whyEs: 'Palabras: luz (lat. lux) — claridad y efecto del clic; tríada circuito + sol; cultivo; ¡Haz lo mejor!',
+      why: 'Palavras: luz (lat. lux) — claridade e efeito do clique; tríade circuito + sol; cultivo; Valeu !!!',
+      whyEn: 'Words: luz (Lat. lux) — clarity and click effect; circuit triad + sol; grow; Valeu !!!',
+      whyEs: 'Palabras: luz (lat. lux) — claridad y efecto del clic; tríada circuito + sol; cultivo; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -98,7 +98,7 @@ async function main() {
         '/posts/post-inspecao-palavra-sol.html',
         '/posts/post-inspecao-palavra-noite.html',
         '/posts/post-inspecao-palavra-fogo.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — tríade circuito: peça × verbo × efeito (luz).'
     };
@@ -117,11 +117,11 @@ async function main() {
       id: 'luz',
       word: 'luz',
       simple:
-        'Lat. lux — claridade e efeito do clique; tríade circuito + sol (fonte natural); Faça o melhor com a luz certa.',
+        'Lat. lux — claridade e efeito do clique; tríade circuito + sol (fonte natural); Valeu !!! com a luz certa.',
       simpleEn:
-        'Lat. lux — clarity and click effect; circuit triad + sol (natural source); Do your best with the right light.',
+        'Lat. lux — clarity and click effect; circuit triad + sol (natural source); Valeu !!! with the right light.',
       simpleEs:
-        'Lat. lux — claridad y efecto del clic; tríada circuito + sol (fuente natural); Haz lo mejor con la luz cierta.',
+        'Lat. lux — claridad y efecto del clic; tríada circuito + sol (fuente natural); Valeu !!! con la luz cierta.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -145,7 +145,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    luz: { gloss: "Lat. lux — claridade e efeito do clique; tríade circuito + sol; cultivo; Faça o melhor!", href: "/posts/post-inspecao-palavra-luz.html", en: "light", es: "luz", fr: "lumiere", it: "luce", de: "Licht", el: "fos", la: "lux", yo: "imole", sw: "nuru", gez: "berhan", nl: "licht", pl: "swiatlo", ru: "svet", uk: "svitlo", zh: "guang", ja: "hikari", ko: "빛", ar: "daw", he: "or", hi: "prakash", tr: "isik", sv: "ljus", da: "lys", no: "lys", fi: "valo", cs: "svetlo", ro: "lumina", hu: "feny", ca: "llum", gl: "luz", eu: "argi", gn: "tendy", qu: "kancha", eo: "lumo", vi: "anh sang", id: "cahaya", th: "light", hr: "svjetlo", sk: "svetlo", ga: "solas", cy: "golau", ha: "haske", am: "birhan", fa: "nur", bn: "alo", zu: "ukukhanya" },';
+      '    luz: { gloss: "Lat. lux — claridade e efeito do clique; tríade circuito + sol; cultivo; Valeu !!!", href: "/posts/post-inspecao-palavra-luz.html", en: "light", es: "luz", fr: "lumiere", it: "luce", de: "Licht", el: "fos", la: "lux", yo: "imole", sw: "nuru", gez: "berhan", nl: "licht", pl: "swiatlo", ru: "svet", uk: "svitlo", zh: "guang", ja: "hikari", ko: "빛", ar: "daw", he: "or", hi: "prakash", tr: "isik", sv: "ljus", da: "lys", no: "lys", fi: "valo", cs: "svetlo", ro: "lumina", hu: "feny", ca: "llum", gl: "luz", eu: "argi", gn: "tendy", qu: "kancha", eo: "lumo", vi: "anh sang", id: "cahaya", th: "light", hr: "svjetlo", sk: "svetlo", ga: "solas", cy: "golau", ha: "haske", am: "birhan", fa: "nur", bn: "alo", zu: "ukukhanya" },';
     if (/luz:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    luz:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

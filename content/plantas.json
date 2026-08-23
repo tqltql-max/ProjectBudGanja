@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T01:51:55.136Z",
+  "updatedAt": "2026-08-23T12:51:36.275Z",
   "disclaimer": "Fichas educacionais de plantas fitoterápicas e medicinais do Brasil. Não substituem orientação profissional de saúde nem aconselhamento jurídico.",
   "plants": [
     {
@@ -1386,6 +1386,40 @@
           "labelEs": "Inspección: Abeja — propóleo, miel y cadena de la colmena"
         }
       ]
+    },
+    {
+      "id": "marolo",
+      "slug": "marolo",
+      "nomePopular": "Marolo",
+      "nomeCientifico": "Annona crassiflora Mart.",
+      "familia": "Annonaceae",
+      "hubCategory": "fruto",
+      "inspecaoDate": "2026-08-23",
+      "summary": "Anonácea nativa do Cerrado (*Annona crassiflora*): marolo / araticum-do-cerrado — polpa cremosa, muitas sementes; a ficha separa o fruto inteiro de maracujá, mamão, pinha/ata e graviola, e dos néctares e doces industriais.",
+      "partsUsed": [
+        "Fruto (polpa fresca madura)",
+        "Preparações culinárias de baixo processamento (doce, suco, sorvete caseiros)"
+      ],
+      "traditionalUses": [
+        "Consumo da polpa madura (feira, quintal, Cerrado / Minas Gerais)",
+        "Doces e sucos caseiros sem ultraprocessamento",
+        "Cultura alimentar do araticum / marolo no bioma Cerrado"
+      ],
+      "cautions": "Polpa madura é alimento tradicional. Sementes e folhas de Annonaceae não são chá genérico nem extracto caseiro. Não confundir com maracujá, mamão, pinha/ata ou graviola. Derivados industriais com açúcar entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional nem manejo do bioma.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "cerrado",
+        "nativas",
+        "annonaceae",
+        "araticum",
+        "minas-gerais"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/marolo-cover.jpg",
+      "relatedInspections": []
     }
   ]
 }

@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Livro do laboratório — Inspetor BudGanja</title>
+  <style>@page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+@page :first { margin: 0; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, "Segoe UI", serif;
+  font-size: 10pt;
+  line-height: 1.42;
+  color: #1a1f14;
+  background: #fff;
+}
+a { color: #3d4d12; text-decoration: none; }
+.cover {
+  min-height: 297mm;
+  padding: 42mm 22mm 28mm;
+  background: #1a1f14;
+  color: #f4f1e6;
+  page-break-after: always;
+}
+.cover .eyebrow {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 9pt;
+  color: #c5d08a;
+  margin: 0 0 18px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.cover h1 { font-size: 32pt; line-height: 1.12; margin: 0 0 12px; }
+.cover .subtitle { font-size: 13pt; color: #e4e0d0; margin: 0 0 28px; max-width: 140mm; }
+.cover .meta { font-size: 9.5pt; color: #c5d08a; font-family: "Segoe UI", Arial, sans-serif; }
+.cover .valeu { margin-top: 48mm; font-size: 14pt; color: #e8d48a; }
+.page { max-width: 180mm; margin: 0 auto; }
+.dedication {
+  page-break-after: always;
+  min-height: 240mm;
+  padding-top: 36mm;
+  text-align: center;
+}
+.dedication h2 {
+  font-size: 11pt;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #5a6b1a;
+  margin: 0 0 28px;
+}
+.dedication p { font-size: 12pt; line-height: 1.55; max-width: 130mm; margin: 0 auto 14px; }
+.dedication .especial { font-size: 13.5pt; font-style: italic; margin-top: 22px; }
+.dedication .field-note {
+  margin-top: 28px;
+  font-size: 8.5pt;
+  color: #555;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-style: normal;
+}
+.dedication .valeu { margin-top: 36px; font-size: 13pt; color: #3d4d12; }
+h1.chap {
+  font-size: 18pt;
+  color: #1a1f14;
+  border-bottom: 2.5px solid #5a6b1a;
+  padding-bottom: 6px;
+  margin: 0 0 10px;
+  page-break-before: always;
+  page-break-after: avoid;
+}
+h1.chap.toc-title { page-break-before: auto; }
+h2.topic {
+  font-size: 12pt;
+  color: #3d4d12;
+  border-bottom: 1px solid #c5d08a;
+  padding-bottom: 3px;
+  margin: 16px 0 8px;
+  page-break-after: avoid;
+}
+p.lead { margin: 0 0 10px; }
+.muted { color: #555; font-size: 9pt; }
+.toc { page-break-after: always; }
+.toc ol { list-style: none; padding: 0; margin: 0; }
+.toc > ol > li { margin: 0 0 10px; }
+.toc .chap-line { font-weight: 700; font-size: 11pt; }
+.toc .topics { margin: 4px 0 0 14px; font-size: 9.5pt; color: #333; }
+.stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin: 10px 0 14px; }
+.stat {
+  border: 1px solid #c5d08a;
+  background: #f7f9ef;
+  padding: 8px 10px;
+  page-break-inside: avoid;
+}
+.stat strong { display: block; font-size: 16pt; color: #3d4d12; }
+.ficha-list {
+  columns: 2;
+  column-gap: 14px;
+  margin: 0 0 10px;
+  padding-left: 1.15em;
+  font-size: 8.4pt;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.ficha-list li { break-inside: avoid; margin-bottom: 2px; }
+.box {
+  border: 1px solid #c5d08a;
+  background: #f7f9ef;
+  padding: 8px 10px;
+  margin: 8px 0 12px;
+  page-break-inside: avoid;
+}
+.colophon { page-break-before: always; padding-top: 24mm; font-size: 9.5pt; color: #444; }
+.colophon h2 { color: #5a6b1a; font-size: 12pt; }</style>
+    <link rel="icon" href="/imagens/favicon-32.v353.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.v353.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.v353.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/imagens/icon-192.v353.png" sizes="192x192" type="image/png">
+    <link rel="shortcut icon" href="/favicon.v353.ico" sizes="any">
+    <link rel="icon" href="/favicon.v353.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v353.png">
+    <link rel="manifest" href="/manifest.json?v=353">
+    <meta name="theme-color" content="#0a2230">
+</head>
+<body>
+  <section class="cover">
+    <p class="eyebrow">Laboratório digital · livro-catálogo</p>
+    <h1>Inspetor BudGanja</h1>
+    <p class="subtitle">O projecto inteiro, em capítulos e tópicos — um mapa para estudar, não um tratado clínico.</p>
+    <p class="meta">
+      2026-08-23 · 515 inspeções · 47 plantas · 9 animais · 1 fungos<br>
+      https://inspetorbudganja.com.br
+    </p>
+    <p class="valeu">Valeu !!!</p>
+  </section>
+
+  <div class="page">
+    <section class="dedication" id="dedicatoria">
+      <h2>Dedicatória</h2>
+      <p>
+        Ao <strong>XIV Curso de Extensão sobre o uso terapêutico da
+        <em>Cannabis sativa</em> L.</strong><br>
+        UNIFESP · MovReCam · SIEX
+      </p>
+      <p>
+        Com respeito a todas as professoras e professores,
+        à coordenação, à vice-coordenação e a quem sustenta
+        a extensão pública.
+      </p>
+      <p class="especial">
+        Em especial à <strong>Profa. Dra. Eliana Rodrigues</strong> —
+        coordenação RTC, CEE, curadoria CANABinALL —
+        pelo ofício de ensinar com método e crédito.
+      </p>
+      <p class="field-note">
+        Pedido de campo: <em>Heliana Rodrigues</em>.
+        A ficha canónica do laboratório corta o nome:
+        <a href="https://inspetorbudganja.com.br/posts/post-inspecao-eliana-rodrigues.html">Eliana Rodrigues</a>.
+        Não se inventa uma professora nova; honra-se a que já ensina o curso.
+      </p>
+      <p>
+        Este livro não pede afiliação nem endosso da Universidade.
+        É o mapa de um aluno.
+      </p>
+      <p class="valeu">Valeu !!!</p>
+    </section>
+
+    <section class="toc">
+      <h1 class="chap toc-title">Sumário</h1>
+      <p class="lead">Capítulos e tópicos. A ordem do PDF é esta.</p>
+      <ol><li><span class="chap-line">Capítulo I — Dedicatória</span><div class="topics">Ao XIV Curso · Em especial: Profa. Dra. Eliana Rodrigues</div></li>
+<li><span class="chap-line">Capítulo II — Como ler este livro</span><div class="topics">O que é · O que não é · Números do laboratório</div></li>
+<li><span class="chap-line">Capítulo III — Mapa das salas</span><div class="topics">Salas vivas · Páginas do site</div></li>
+<li><span class="chap-line">Capítulo IV — Biblioteca e UNIFESP</span><div class="topics">Hubs · Curso, SIEX, crédito</div></li>
+<li><span class="chap-line">Capítulo V — Catálogo vivo — Plantas</span><div class="topics">47 fichas</div></li>
+<li><span class="chap-line">Capítulo VI — Catálogo vivo — Animais</span><div class="topics">9 fichas</div></li>
+<li><span class="chap-line">Capítulo VII — Catálogo vivo — Fungos</span><div class="topics">1 fichas</div></li>
+<li><span class="chap-line">Capítulo VIII — Inspeções</span><div class="topics">Palavras (268) · Expressões e ditos (0) · Artes e cultura (49) · Pessoas, legado e formação (44) · Plantas nas inspeções (53) · Animais nas inspeções (16) · Fungos nas inspeções (1) · Artigos, neurociência e pesquisas (14) · Canais (13) · Jogos e cadernos (4) · Lojas e plataformas (3) · Equipamento e ferramentas (fichas) (7) · Vida (contos inspecionados) (6) · Outras inspeções (36) · Sem série (1)</div></li>
+<li><span class="chap-line">Capítulo IX — Ferramentas, equipamentos e cultivo</span><div class="topics">Calculadoras · Equipamentos · Diário</div></li>
+<li><span class="chap-line">Capítulo X — Vida, poemas, Inverno e origami</span><div class="topics">30 poemas</div></li>
+<li><span class="chap-line">Capítulo XI — Vídeos, jogos, rádio e comunidade</span><div class="topics">3 faixas na rádio</div></li>
+<li><span class="chap-line">Capítulo XII — Colofão</span><div class="topics">Independência · Valeu !!!</div></li></ol>
+    </section>
+
+    <h1 class="chap">Capítulo II — Como ler este livro</h1>
+    <h2 class="topic">O que é</h2>
+    <p>Catálogo do laboratório Inspetor BudGanja: salas, fichas e URLs. Cada linha aponta para a página viva.</p>
+    <h2 class="topic">O que não é</h2>
+    <div class="box">
+      Não é manual clínico, farmacêutico ou jurídico. Não substitui SIEX, aulas oficiais nem certificado.
+      Não é o texto integral de cada inspeção — isso vive no HTML. Aqui está o <strong>índice do ofício</strong>.
+    </div>
+    <h2 class="topic">Números do laboratório</h2>
+    <div class="stats">
+      <div class="stat"><strong>515</strong>inspeções</div>
+      <div class="stat"><strong>47</strong>plantas</div>
+      <div class="stat"><strong>9</strong>animais</div>
+      <div class="stat"><strong>1</strong>fungos</div>
+      <div class="stat"><strong>30</strong>poemas Vida</div>
+      <div class="stat"><strong>46</strong>páginas-hub</div>
+    </div>
+
+    <h1 class="chap">Capítulo III — Mapa das salas</h1>
+    <h2 class="topic">Salas vivas</h2>
+    <ul class="ficha-list"><li><a href="https://inspetorbudganja.com.br/animais/">Animais</a></li>
+<li><a href="https://inspetorbudganja.com.br/info/apresentacao-unifesp.html">Apresentação UNIFESP</a></li>
+<li><a href="https://inspetorbudganja.com.br/origami/barquinho-de-papel/">Barquinho de papel</a></li>
+<li><a href="https://inspetorbudganja.com.br/biblioteca/">Biblioteca</a></li>
+<li><a href="https://inspetorbudganja.com.br/inverno/">Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/biblioteca/cadernos/">Cadernos de engenharia</a></li>
+<li><a href="https://inspetorbudganja.com.br/comunidade/">Comunidade (Feed Vivo)</a></li>
+<li><a href="https://inspetorbudganja.com.br/cultivo/">Cultivo / diário de pesquisas</a></li>
+<li><a href="https://inspetorbudganja.com.br/vida/diario/">Diário Vida</a></li>
+<li><a href="https://inspetorbudganja.com.br/fungos/">Fungos</a></li>
+<li><a href="https://inspetorbudganja.com.br/guia/cultivo-basico.html">Guia de cultivo básico</a></li>
+<li><a href="https://inspetorbudganja.com.br/guia/palavras.html">Guia de Palavras</a></li>
+<li><a href="https://inspetorbudganja.com.br/biblioteca/inspecoes/">Inspeções</a></li>
+<li><a href="https://inspetorbudganja.com.br/jogos/">Jogos</a></li>
+<li><a href="https://inspetorbudganja.com.br/origami/">Origami</a></li>
+<li><a href="https://inspetorbudganja.com.br/biblioteca/pesquisas/">Pesquisas</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/">Plantas</a></li>
+<li><a href="https://inspetorbudganja.com.br/radio/">Rádio</a></li>
+<li><a href="https://inspetorbudganja.com.br/biblioteca/unifesp/livro-xiv.html">Rascunhos das aulas (Livro XIV)</a></li>
+<li><a href="https://inspetorbudganja.com.br/info/sobre.html">Sobre</a></li>
+<li><a href="https://inspetorbudganja.com.br/biblioteca/unifesp/">UNIFESP · XIV Curso</a></li>
+<li><a href="https://inspetorbudganja.com.br/vida/">Vida</a></li>
+<li><a href="https://inspetorbudganja.com.br/videos/">Vídeos</a></li></ul>
+    <h2 class="topic">Páginas do site (sem admin)</h2>
+    <ul class="ficha-list"><li><a href="https://inspetorbudganja.com.br/info/apresentacao-unifesp.html">Apresentação UNIFESP</a></li>
+<li><a href="https://inspetorbudganja.com.br/biblioteca/">Biblioteca</a></li>
+<li><a href="https://inspetorbudganja.com.br/inverno/">Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/biblioteca/cadernos/">Cadernos de Engenharia</a></li>
+<li><a href="https://inspetorbudganja.com.br/comunidade/">Comunidade</a></li>
+<li><a href="https://inspetorbudganja.com.br/info/contato.html">Contato</a></li>
+<li><a href="https://inspetorbudganja.com.br/biblioteca/unifesp/">Curso UNIFESP</a></li>
+<li><a href="https://inspetorbudganja.com.br/vida/diario/">Diário da Sementinha</a></li>
+<li><a href="https://inspetorbudganja.com.br/cultivo/">Diário de Pesquisas</a></li>
+<li><a href="https://inspetorbudganja.com.br/entrar.html">Entrar</a></li>
+<li><a href="https://inspetorbudganja.com.br/calculadoras/">Ferramentas</a></li>
+<li><a href="https://inspetorbudganja.com.br/guia/cultivo-basico.html">Guia de Cultivo</a></li>
+<li><a href="https://inspetorbudganja.com.br/guia/palavras.html">Guia de Palavras</a></li>
+<li><a href="https://inspetorbudganja.com.br/equipamentos/clonadora-12-estacas.html">Guia: Clonadora 12 estacas</a></li>
+<li><a href="https://inspetorbudganja.com.br/equipamentos/clonadora-6-estacas.html">Guia: Clonadora 6 estacas</a></li>
+<li><a href="https://inspetorbudganja.com.br/">Início</a></li>
+<li><a href="https://inspetorbudganja.com.br/biblioteca/inspecoes/">Inspeções</a></li>
+<li><a href="https://inspetorbudganja.com.br/jogos/">Jogos</a></li>
+<li><a href="https://inspetorbudganja.com.br/jogos/aleff/">Jogos · Aleff</a></li>
+<li><a href="https://inspetorbudganja.com.br/jogos/bagual/">Jogos · Bagual</a></li>
+<li><a href="https://inspetorbudganja.com.br/jogos/broto/">Jogos · Broto</a></li>
+<li><a href="https://inspetorbudganja.com.br/jogos/cadernos/">Jogos · Cadernos</a></li>
+<li><a href="https://inspetorbudganja.com.br/jogos/gtarp/">Jogos · GTA RP</a></li>
+<li><a href="https://inspetorbudganja.com.br/jogos/hopejoy/">Jogos · Hope Joy</a></li>
+<li><a href="https://inspetorbudganja.com.br/jogos/zangado/">Jogos · Zangado</a></li>
+<li><a href="https://inspetorbudganja.com.br/livro/">Livro do laboratório</a></li>
+<li><a href="https://inspetorbudganja.com.br/calculadoras/luximetro.html">Luxímetro</a></li>
+<li><a href="https://inspetorbudganja.com.br/equipamentos/manual-clonadora.html">Manual: Clonadoras (redirecionamento)</a></li>
+<li><a href="https://inspetorbudganja.com.br/equipamentos/manual-hidrocloradora.html">Manual: Clonadoras (redirecionamento)</a></li>
+<li><a href="https://inspetorbudganja.com.br/laboratorio/">Mapa do laboratório</a></li>
+<li><a href="https://inspetorbudganja.com.br/perfil.html">Meu perfil</a></li>
+<li><a href="https://inspetorbudganja.com.br/objetos/">Objetos</a></li>
+<li><a href="https://inspetorbudganja.com.br/equipamentos/">Objetos</a></li>
+<li><a href="https://inspetorbudganja.com.br/origami/">Origami</a></li>
+<li><a href="https://inspetorbudganja.com.br/origami/barquinho-de-papel/">Origami · Barquinho de papel</a></li>
+<li><a href="https://inspetorbudganja.com.br/biblioteca/pesquisas/substratos.html">Pesquisa: Substratos</a></li>
+<li><a href="https://inspetorbudganja.com.br/biblioteca/pesquisas/">Pesquisas</a></li>
+<li><a href="https://inspetorbudganja.com.br/info/privacidade.html">Privacidade</a></li>
+<li><a href="https://inspetorbudganja.com.br/radio/">Rádio</a></li>
+<li><a href="https://inspetorbudganja.com.br/biblioteca/unifesp/livro-xiv.html">Rascunhos das aulas XIV</a></li>
+<li><a href="https://inspetorbudganja.com.br/info/sobre.html">Sobre</a></li>
+<li><a href="https://inspetorbudganja.com.br/sorteios/">Sorteios</a></li>
+<li><a href="https://inspetorbudganja.com.br/calculadoras/cultivo-lab.html">Super Calc</a></li>
+<li><a href="https://inspetorbudganja.com.br/calculadoras/super-solo.html">Super Solo</a></li>
+<li><a href="https://inspetorbudganja.com.br/videos/">Últimos vídeos</a></li>
+<li><a href="https://inspetorbudganja.com.br/vida/">Vida</a></li></ul>
+
+    <h1 class="chap">Capítulo IV — Biblioteca e UNIFESP</h1>
+    <p class="lead">
+      Hub: <a href="https://inspetorbudganja.com.br/biblioteca/">/biblioteca/</a> ·
+      Curso: <a href="https://inspetorbudganja.com.br/biblioteca/unifesp/">/biblioteca/unifesp/</a> ·
+      Apresentação: <a href="https://inspetorbudganja.com.br/info/apresentacao-unifesp.html">/info/apresentacao-unifesp.html</a>
+    </p>
+    <p>
+      Título oficial: XIV Curso sobre o uso terapêutico da <em>Cannabis sativa</em> L.
+      Coordenação RTC: Profa. Dra. Eliana Rodrigues.
+      Independência editorial: o laboratório não reivindica marca nem endosso da UNIFESP.
+    </p>
+
+    <h1 class="chap">Capítulo V — Catálogo vivo: Plantas</h1>
+    <p class="muted">47 fichas educacionais. Não substituem consulta.</p>
+    <ul class="ficha-list"><li><a href="https://inspetorbudganja.com.br/plantas/abacate/">Abacate — Persea americana Mill.</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/abacaxi/">Abacaxi — Ananas comosus (L.) Merr.</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/acai/">Açaí — Euterpe oleracea Mart.</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/alecrim/">Alecrim — Salvia rosmarinus</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/alecrim-do-campo/">Alecrim-do-campo — Baccharis dracunculifolia DC.</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/andiroba/">Andiroba — Carapa guianensis</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/aroeira/">Aroeira — Schinus terebinthifolia</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/babosa/">Babosa — Aloe vera</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/banana/">Banana — Musa spp.</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/barbatimao/">Barbatimão — Stryphnodendron adstringens</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/boldo/">Boldo — Plectranthus barbatus</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/cacau/">Cacau — Theobroma cacao L.</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/calendula/">Calêndula — Calendula officinalis</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/camomila/">Camomila — Matricaria chamomilla</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/cannabis-sativa/">Cannabis (medicinal) — Cannabis sativa L.</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/capim-limao/">Capim-limão — Cymbopogon citratus</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/carqueja/">Carqueja — Baccharis trimera</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/cavalinha/">Cavalinha — Equisetum arvense</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/coco/">Coco — Cocos nucifera L.</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/copaiba/">Copaíba — Copaifera langsdorffii</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/curcuma/">Cúrcuma — Curcuma longa</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/erva-cidreira/">Erva-cidreira — Lippia alba</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/espinheira-santa/">Espinheira-santa — Maytenus ilicifolia</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/gengibre/">Gengibre — Zingiber officinale</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/goiaba/">Goiaba — Psidium guajava L.</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/guaco/">Guaco — Mikania glomerata</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/hortela/">Hortelã — Mentha spicata</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/ipecacuanha/">Ipecacuanha — Carapichea ipecacuanha</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/jaborandi/">Jaborandi — Pilocarpus microphyllus</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/jambu/">Jambu — Acmella oleracea</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/laranja/">Laranja — Citrus × sinensis (L.) Osbeck</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/maca/">Maçã — Malus domestica Borkh.</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/mamao/">Mamão — Carica papaya L.</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/manga/">Manga — Mangifera indica L.</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/maracuja/">Maracujá — Passiflora incarnata</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/maracuja-fruta/">Maracujá (fruta) — Passiflora edulis Sims</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/marolo/">Marolo — Annona crassiflora Mart.</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/melancia/">Melancia — Citrullus lanatus (Thunb.) Matsum. &amp; Nakai</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/melissa/">Melissa — Melissa officinalis</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/morango/">Morango — Fragaria × ananassa Duchesne</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/mulungu/">Mulungu — Erythrina mulungu</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/pfaffia/">Pfaffia (ginseng-brasileiro) — Pfaffia glomerata</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/quina/">Quina — Cinchona sp.</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/sucupira/">Sucupira — Pterodon emarginatus</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/tomatinho-cereja/">Tomatinho Cereja — Solanum lycopersicum var. cerasiforme</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/unha-de-gato/">Unha-de-gato — Uncaria tomentosa</a></li>
+<li><a href="https://inspetorbudganja.com.br/plantas/uva/">Uva — Vitis vinifera L.</a></li></ul>
+
+    <h1 class="chap">Capítulo VI — Catálogo vivo: Animais</h1>
+    <p class="muted">9 fichas. Corte: animal ≠ derivado industrial.</p>
+    <ul class="ficha-list"><li><a href="https://inspetorbudganja.com.br/animais/abelha/">Abelha — Apis mellifera</a></li>
+<li><a href="https://inspetorbudganja.com.br/animais/cao/">Cão — Canis lupus familiaris</a></li>
+<li><a href="https://inspetorbudganja.com.br/animais/cavalo/">Cavalo — Equus ferus caballus</a></li>
+<li><a href="https://inspetorbudganja.com.br/animais/codorna/">Codorna — Coturnix japonica</a></li>
+<li><a href="https://inspetorbudganja.com.br/animais/galinha/">Galinha — Gallus gallus domesticus</a></li>
+<li><a href="https://inspetorbudganja.com.br/animais/gato/">Gato — Felis catus</a></li>
+<li><a href="https://inspetorbudganja.com.br/animais/porco/">Porco — Sus scrofa domesticus</a></li>
+<li><a href="https://inspetorbudganja.com.br/animais/peixe-tilapia/">Tilápia — Oreochromis niloticus</a></li>
+<li><a href="https://inspetorbudganja.com.br/animais/vaca/">Vaca / boi — Bos taurus</a></li></ul>
+
+    <h1 class="chap">Capítulo VII — Catálogo vivo: Fungos</h1>
+    <p class="muted">1 fichas. Identificação — não é cultivo nem dose.</p>
+    <ul class="ficha-list"><li><a href="https://inspetorbudganja.com.br/fungos/psilocybe-cubensis/">Psilocybe cubensis — Psilocybe cubensis (Earle) Singer</a></li></ul>
+
+    <h1 class="chap">Capítulo VIII — Inspeções</h1>
+    <p class="lead">515 fichas publicadas, cortadas por série.</p>
+    <h2 class="topic">Palavras <span class="muted">(268)</span></h2>
+<ol class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-aff.html">Inspeção: Aff — exasperação e o risco de fechar sem método</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-alegria.html">Cap. 13 · Inspeção: Alegria — a palavra amarela da Riley</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-alucinogeno.html">Inspeção: Alucinógeno — classe de efeito e literacia XIV</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-animal.html">Inspeção: Animal — a palavra do alento, do vivo e do duplo sentido</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-anvisa.html">Inspeção: ANVISA — instituição no mapa regulatório BudGanja</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-arvore-da-vida.html">Inspeção: Árvore da Vida — a fase sénior do arco semente–mudinha–árvore</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-backspace.html">Inspeção: Backspace — invenção do apagar e a tentação do «tudo de ruim»</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-balde.html">Inspeção: Balde — volume, transporte e o gesto de regar</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-caminho.html">Cap. 3 · Inspeção: Caminho — a palavra que liga o laboratório BudGanja</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-buguei.html">Cap. 34 · Inspeção: Buguei — do inseto ao «deu ruim» e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-coracao.html">Cap. 35 · Inspeção: Coração — órgão, afeto, centro, coragem e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-barco.html">Cap. 50 · Inspeção: Barco — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-canhamo.html">Inspeção: Cânhamo — fibra industrial coberta pela confusão com «droga»</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-cannabis.html">Inspeção: Cannabis — latinismo técnico e hierarquia de registos</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-coelho.html">Inspeção: Coelho — a palavra da toca e da entrada na investigação</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-criatividade.html">Inspeção: Criatividade — a palavra de fazer nascer no laboratório</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-depressor.html">Inspeção: Depressor — classe de efeito no sistema nervoso</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-descriminalizacao.html">Inspeção: Descriminalização — atipicidade penal ≠ legalização</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-diamba.html">Inspeção: Diamba — cognato afro-brasileiro apagado pelo estigma</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-droga.html">Inspeção: Droga — do remédio ao ilícito no senso comum</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-eletrizante.html">Inspeção: Eletrizante — carga, hype BR e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-emocao.html">Cap. 12 · Inspeção: Emoção — o hub lexical da Riley (Divertida Mente)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-entorpecente-narcotico.html">Inspeção: Entorpecente e Narcótico — classificação legal no laboratório</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-erva.html">Cap. 8 · Inspeção: Erva — substituída por planta / plantas</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-esquerdo.html">Inspeção: Esquerdo — relação com as mãos, criação e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-genial.html">Cap. 30 · Inspeção: Genial — engenho do projecto BudGanja e o risco do culto vazio</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-guia-cannabis-medicos.html">Inspeção: Guia cannabis medicinal — mapa para médicos (acesso × seletividade)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-ja.html">Inspeção: Já — o relógio da frase e o par com aff</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-simbiose.html">Cap. 19 · Inspeção: Simbiose — a palavra do viver juntos</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-lavar.html">Cap. 28 · Inspeção: Lavar — das mãos à alma</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-lingua-portuguesa.html">Cap. 32 · Inspeção: Língua portuguesa — originalidade, alterações no tempo e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-fogo.html">Cap. 33 · Inspeção: Fogo — elemento, ardor, cuidado e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-guia-defensoria-acesso.html">Cap. 37 · Inspeção: Defensoria Pública — acesso gratuito à justiça e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-guia-quimiotipos-cannabis.html">Cap. 43 · Inspeção: Guia quimiotipos — THC, CBD, CBG e a composição da cannabis</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-guia-canabimeticos-modulacao.html">Cap. 44 · Inspeção: Guia canabiméticos — modular o SEC por via exógena</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-guia-farmacia-viva.html">Cap. 45 · Inspeção: Guia Farmácia Viva — plantas medicinais e cannabis no SUS</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mao-esquerda-direita.html">Inspeção: Mão esquerda / mão direita — complementaridade do ofício</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-memoravel.html">Cap. 36 · Inspeção: Memorável — o que fica na memória e o elogio com rasto</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-multitask.html">Cap. 47 · Inspeção: Multitask — empréstimo, parece×é e correção de ofício</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-incrivel.html">Cap. 48 · Inspeção: Incrível — incredibilis, elogio BR e a escala legal→genial</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-fruto.html">Cap. 49 · Inspeção: Fruto — fructus, frutos e os frutos do trabalho</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mar.html">Cap. 51 · Inspeção: Mar — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-gelo.html">Cap. 52 · Inspeção: Gelo — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-inverno.html">Cap. 53 · Inspeção: Inverno — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-invernagem.html">Cap. 54 · Inspeção: Invernagem — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-inacreditavel.html">Cap. 64 · Inspeção: Inacreditável — beyond belief, elogio BR e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-fantasioso.html">Cap. 69 · Inspeção: Fantasioso — fantasia, imaginação e ≠ fantástico</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-legal.html">Inspeção: Legal — lei, gíria BR «bacana» e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-lei-11-343.html">Inspeção: Lei 11.343/2006 — âncora tipológica da Lei de Drogas</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-navegar.html">Cap. 55 · Inspeção: Navegar — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-agua.html">Cap. 56 · Inspeção: Água — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-neve.html">Cap. 57 · Inspeção: Neve — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-congelado.html">Cap. 58 · Inspeção: Congelado — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-gesto.html">Inspeção: Gesto — a palavra que liga o laboratório inteiro</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-risco.html">Cap. 59 · Inspeção: Risco — perigo calculado, traço e ofício</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-solitario.html">Cap. 60 · Inspeção: Solitário — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-groenlandia.html">Cap. 61 · Inspeção: Groenlândia — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-anzol.html">Cap. 62 · Inspeção: Anzol — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-livro.html">Cap. 63 · Inspeção: Livro — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-respeito.html">Cap. 65 · Inspeção: Respeito — olhar de novo, prática social e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-maravilhoso.html">Cap. 67 · Inspeção: Maravilhoso — maravilha, assombro, elogio BR e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-pipoca.html">Cap. 68 · Inspeção: Pipoca — tupi pi'poka, milho que estoura, rua e cinema</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-vida.html">Cap. 70 · Inspeção: Vida — facto, tempo, modo e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-idolo.html">Cap. 71 · Inspeção: Ídolo — admiração, imagem, média e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-magnifico.html">Cap. 72 · Inspeção: Magnífico — magnificus, elogio BR e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-inseto.html">Cap. 73 · Inspeção: Inseto — vida, ecologia, cultura e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-sinal.html">Cap. 75 · Inspeção: Sinal — marca, aviso, gesto e dar sinal</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-esperanca.html">Cap. 80 · Inspeção: Esperança — afecto vivo, espera com ofício e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-estimulante.html">Inspeção: Estimulante — classe de efeito no sistema nervoso</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-estupefaciente.html">Inspeção: Estupefaciente — rótulo internacional vizinho de narcótico</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-fabuloso.html">Cap. 81 · Inspeção: Fabuloso — fábula, elogio BR e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-fantastico.html">Cap. 82 · Inspeção: Fantástico — fantasia, elogio BR «fantástico!» e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-ganja.html">Inspeção: Ganja — da rota índica à marca e à gíria global</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-planta.html">Cap. 83 · Inspeção: Planta — ser vivo, cultivo e Farmácia Viva</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-guia-preparo-cha-plantas.html">Cap. 91 · Inspeção: Guia — preparar chá de plantas (infusão e decoção)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-guia-receitas-plantas.html">Cap. 95 · Inspeção: Guia — receitas de plantas (lote 1 · tisanas)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-guia-associacoes-pacientes.html">Inspeção: Guia associações de pacientes — cultivo institucional × seletividade</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-guia-cannabis-farmaceuticos.html">Inspeção: Guia cannabis medicinal — mapa para farmacêuticos (dispensação × seletividade)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-guia-palavras-cobertura.html">Inspeção: Guia de Palavras — auditoria das 139 entradas e do acervo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-guia-hc-seletividade-advogados.html">Inspeção: Guia HC e seletividade — mapa para advogados (com HC × sem HC)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-guia-meditacao-endocanabinoidoma.html">Inspeção: Guia meditação — modular o endocanabinoidoma (via endógena)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-guia-palavras-molecula-ao-lixo.html">Inspeção: Guia palavras — léxico «Da molécula ao lixo» (destaque e justificação)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-ilicito.html">Inspeção: Ilícito — polo jurídico do duplo sentido de droga</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-lista-f.html">Inspeção: Lista F — âncora brasileira das listas de controlo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-maconha.html">Cap. 1 · Inspeção: Maconha — origem da palavra e transformação no Brasil</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-marijuana.html">Inspeção: Marijuana — do nome popular à arma da proibição</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-medo.html">Cap. 16 · Inspeção: Medo — a palavra roxa da vigilância interior</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-nojinho.html">Cap. 17 · Inspeção: Nojinho — a palavra verde da aversão que protege</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-opioide-opiaceo.html">Inspeção: Opioide e Opiáceo — tradição clínica por trás de narcótico</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-passar.html">Inspeção: Passar — verbo da passagem, do acontecido e da travessia</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mequetrefe.html">Cap. 128 · Inspeção: Porta Palavra #5 — mequetrefe e o brechó do dicionário</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-portaria.html">Inspeção: Portaria — forma normativa das listas de controlo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-porte-trafico.html">Inspeção: Porte × Tráfico — par semântico da seletividade na rua</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-proibicao-proibicionismo.html">Inspeção: Proibição e Proibicionismo — camada política da classificação</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-psicotropico.html">Inspeção: Psicotrópico — classe clínica e controlo no laboratório</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-tristeza.html">Cap. 14 · Inspeção: Tristeza — a palavra azul que também cuida</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-raiva.html">Cap. 15 · Inspeção: Raiva — a palavra vermelha da sala de comando</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-selvagem.html">Cap. 74 · Inspeção: Selvagem — silva, natureza e o limiar do domesticado</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-fiorde.html">Cap. 75 · Inspeção: Fiorde — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-drone.html">Cap. 76 · Inspeção: Drone — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-skill.html">Cap. 76 · Inspeção: Skill — empréstimo EN, habilidade e craft sem LinkedIn</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-circular.html">Cap. 77 · Inspeção: Circular — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-passado.html">Cap. 77 · Inspeção: Passado — tempo decorrido, memória e o rasto que inspeciona</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-oficio.html">Cap. 78 · Inspeção: Ofício — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-total.html">Cap. 78 · Inspeção: Total — tōtus, completude e gíria BR «total!»</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mensagem.html">Cap. 79 · Inspeção: Mensagem — comunicação, SMS/chat e deixar rasto</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-voar.html">Cap. 79 · Inspeção: Voar — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-ficar.html">Cap. 80 · Inspeção: Ficar — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-registar.html">Cap. 81 · Inspeção: Registar — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-camara.html">Cap. 82 · Inspeção: Câmara — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-ceu.html">Cap. 83 · Inspeção: Céu — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-emprestar.html">Cap. 84 · Inspeção: Emprestar — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-inspiracao.html">Cap. 84 · Inspeção: Inspiração — sopro, ideia acesa e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-doar.html">Cap. 85 · Inspeção: Doar — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-pular.html">Cap. 85 · Inspeção: Pular — salto, omissão e derivações</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-estante.html">Cap. 86 · Inspeção: Estante — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-interruptor.html">Cap. 86 · Inspeção: Interruptor — ligar, cortar e derivações</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-peito.html">Cap. 87 · Inspeção: Peito — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-sempre.html">Cap. 87 · Inspeção: Sempre — duração, hábito e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-prosseguir.html">Cap. 88 · Inspeção: Prosseguir — continuar, retomar e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-semente.html">Cap. 88 · Inspeção: Semente — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mudinha.html">Cap. 89 · Inspeção: Mudinha — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-valeu.html">Cap. 89 · Inspeção: Valeu — gratidão leve e fecho oral BR</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-daninha.html">Cap. 90 · Inspeção: Daninha — juízo de cultivo e planta viva</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-estacao.html">Cap. 90 · Inspeção: Estação — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-flor.html">Cap. 91 · Inspeção: Flor — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-cinta.html">Cap. 92 · Inspeção: Cinta — faixa que cinge e suporte no cultivo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-raiz.html">Cap. 92 · Inspeção: Raiz — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-cinzeiro.html">Cap. 93 · Inspeção: Cinzeiro — lugar da cinza e ofício do fogo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-partir.html">Cap. 93 · Inspeção: Partir — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-escrever.html">Cap. 94 · Inspeção: Escrever — léxico Tamara / Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-objetos.html">Cap. 94 · Inspeção: Objetos — o que fica diante e o foco da ficha</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-insana.html">Cap. 96 · Inspeção: Insana — intensidade, juízo e cuidado</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-sugestao.html">Cap. 97 · Inspeção: Sugestão — proposta, palpite e fila de ofício</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-tudo.html">Cap. 98 · Inspeção: Tudo — totalidade, essencial e foco</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-alma.html">Cap. 99 · Inspeção: Alma — centro vivo e chegar por dentro</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-nap.html">Cap. 100 · Inspeção: Nap — sono curto e pausa de ofício</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-pedi-mao.html">Cap. 101 · Inspeção: Pedi a mão — ajuda, pedido e gesto aberto</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-pattern.html">Cap. 102 · Inspeção: Pattern — molde, padrão e repetição</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-patrao.html">Cap. 103 · Inspeção: Patrão — chefe, poder e respeito</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-exit.html">Cap. 106 · Inspeção: EXIT — saída, limiar e salvação de ofício</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-tempo.html">Cap. 107 · Inspeção: Tempo — cronologia, clima, compasso e o instante certo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-perseguicao.html">Cap. 108 · Inspeção: Perseguição — caça, opressão e o seguir que aperta</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-relacao.html">Cap. 109 · Inspeção: Relação — o entre, o relato e a proporção</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-meneia.html">Cap. 110 · Inspeção: Meneia — balanço, corpo e a mão no étimo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mae.html">Cap. 111 · Inspeção: Mãe — origem, cuidado e tipografia fia → mãe</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-grok.html">Cap. 112 · Inspeção: Grok — compreender por dentro × falar limpo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-ligar-desligar.html">Cap. 113 · Inspeção: Ligar × Desligar — verbos do circuito</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-papel-enrolar-tabaco.html">Cap. 114 · Inspeção: Papel de enrolar e tabaco — origem do papel e origem da planta</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-macaneta.html">Cap. 115 · Inspeção: Maçaneta — torcer, abrir, mãos, porta/janela e ligar a luz</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-luz.html">Cap. 116 · Inspeção: Luz — efeito do circuito e claridade</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-sol.html">Cap. 117 · Inspeção: Sol — astro, luz natural e ciclo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-noite.html">Cap. 118 · Inspeção: Noite — ciclo, escuro e fotoperíodo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-sozna.html">Cap. 119 · Inspeção: Sozinho — sozna, sozinha e ofício</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-jobs.html">Cap. 120 · Inspeção: Jobs — trabalhos em inglês, nome próprio e ofício sem pedestal</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-abracadabra.html">Cap. 121 · Inspeção: Abracadabra — fórmula, palco e o lapso «abacadabra»</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-gemeos.html">Cap. 122 · Inspeção: Gêmeos — par, signo Gemini e a armadilha com «gênio»</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-lampada.html">Cap. 123 · Inspeção: Lâmpada — vaso de luz, vaso de desejo e o lapso «lampada»</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-esfregar.html">Cap. 124 · Inspeção: Esfregar — fricção, cue da lâmpada e o clique que não é</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-desejos.html">Cap. 125 · Inspeção: Desejos — vontade, pack da lâmpada e o ofício que não pede</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-tres.html">Cap. 126 · Inspeção: Três — o 3, a quota dos desejos e o teto que não é método</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-vassoura.html">Cap. 127 · Inspeção: Vassoura — varrer, cabo e o conto que não é receita</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-paraguai.html">Cap. 129 · Inspeção: Paraguai — o país, a grafia Paraguay e o lapso PARAGYACYY</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-paraguacu.html">Cap. 130 · Inspeção: Paraguaçu — topónimo brasileiro, Paraguaçu Paulista e o som que não é o país</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-guerra-do-paraguai.html">Cap. 131 · Inspeção: Guerra do Paraguai — o nome de 1864–1870, a Tríplice Aliança e a memória em disputa</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-trofeus-de-guerra.html">Cap. 132 · Inspeção: Troféus de guerra — espólio, museu e o caso El Cristiano</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-canhao.html">Cap. 133 · Inspeção: Canhão — El Cristiano, o lapso canjão e o troféu ainda no Rio</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-tonico.html">Cap. 134 · Inspeção: Tônico — tônicos da palavra e os outros sentidos de tónos</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-isotonico.html">Cap. 135 · Inspeção: Isotônico — iso- + tônico, tensão igual</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mocambique.html">Cap. 143 · Inspeção: Moçambique — o país, o tónos em BI e o lapso esqueiro biq</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-isqueiro-bic.html">Cap. 144 · Inspeção: Isqueiro BIC — tónos do polegar e o lapso esqueiro biq</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-tonos.html">Cap. 145 · Inspeção: Tónos — a raiz grega da tensão, distinta de tônico</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-vomitar.html">Cap. 146 · Inspeção: Vomitar — largar o que não fica, antes do commit</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-commitar.html">Cap. 147 · Inspeção: Commitar — gravar o rasto (comitar ≠ cometer)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-tanzania.html">Cap. 148 · Inspeção: Tanzânia — o país, o Taz e a relação com Taz Manaia</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-taz-manaia.html">Cap. 149 · Inspeção: Taz Manaia — o lapso Taz-Mania, o manaia e a relação com Tanzânia</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-xiaomi.html">Cap. 150 · Inspeção: Xiaomi — milheto, marca e ofício sem pedestal</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-cuca.html">Cap. 151 · Inspeção: Cuca — história infantil, cantiga e o bicho do Sítio</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-trocadilho.html">Cap. 152 · Inspeção: Trocadilho — cara + alho, e por que não é polimorfismo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-aglutinacao.html">Cap. 153 · Inspeção: Aglutinação — a solda gramatical (e por que cara+alho só parece)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-polimorfismo.html">Cap. 154 · Inspeção: Polimorfismo — várias formas do mesmo (não é cara+alho)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-sinais-rem.html">Cap. 155 · Inspeção: Sinais REM — o campo, o sono e a sigla do laboratório</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-objetos-perigosos-incendio.html">Cap. 156 · Inspeção: Objectos perigosos para controle de incêndio — mapa da tenda</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mars-hydro.html">Cap. 157 · Inspeção: Mars Hydro — Marte, água e o rasto marshydrobr</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-vivosun.html">Cap. 158 · Inspeção: Vivosun — sol vivo, marca e o cabo na tenda</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-tenda.html">Cap. 159 · Inspeção: Tenda — recinto, Mylar e o calor fechado</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-extintor.html">Cap. 160 · Inspeção: Extintor — apagar, classe e o último gesto</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-incendio.html">Cap. 161 · Inspeção: Incêndio — o evento, não o elemento</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-fonte.html">Cap. 162 · Inspeção: Fonte — a nascente que agora é o driver</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-extensao.html">Cap. 163 · Inspeção: Extensão — esticar a tomada até à tenda</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-exaustor.html">Cap. 164 · Inspeção: Exaustor — esgotar o ar, não o motor</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-sinais.html">Cap. 165 · Inspeção: Sinais — o campo do corpo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-barriga.html">Cap. 166 · Inspeção: Barriga — sinal de satisfação</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-orelha.html">Cap. 167 · Inspeção: Orelha — pulga atrás, curiosidade</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mama.html">Cap. 168 · Inspeção: Mama — teta, sinal de algo fácil</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-cabelo.html">Cap. 169 · Inspeção: Cabelo — deixa com as mulheres</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-sexta-feira-13.html">Cap. 170 · Inspeção: Sexta-feira 13 — apenas mais um dia qualquer</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-cola-colar.html">Cap. 171 · Inspeção: Cola · Colar — colante, cortante, cerol, pipa, linha e o Brasil com P de Perigo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-impressao-pressao.html">Cap. 172 · Inspeção: Impressão · Pressão — panela e a válvula de escape</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-etimologia.html">Cap. 173 · Inspeção: Etimologia — o ofício de perguntar de onde veio</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-no.html">Cap. 174 · Inspeção: Nó — o laço na corda, antes de desatar</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-corda.html">Cap. 175 · Inspeção: Corda — o objecto onde mora o nó</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-desatar.html">Cap. 176 · Inspeção: Desatar — soltar o nó, sem virar desastre</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-desastre.html">Cap. 177 · Inspeção: Desastre — má estrela, não é desatar o nó</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-ufa.html">Cap. 178 · Inspeção: Ufa!!! — o sopro, que alívio</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mara.html">Cap. 179 · Inspeção: Mara — o nome que chegou, a maravilha e os barquinhos de papel</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-orfeu.html">Cap. 180 · Inspeção: Orfeu — o nome, a lira e o Morpheus que não é ele</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-gratidao.html">Cap. 181 · Inspeção: Gratidão — qualidade de grato, não fórmula de obrigado</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-teoria-das-cordas.html">Cap. 182 · Inspeção: Teoria das cordas — a física, não o fio</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-violao.html">Cap. 183 · Inspeção: Violão — o objecto onde as cordas afinam</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-link.html">Cap. 184 · Inspeção: Link · Klink — a relação que a orelha cola e o étimo corta (Tamara)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-conexao.html">Cap. 185 · Inspeção: Conexão — conectar + ação (e por que se escreve com x)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-afinar.html">Cap. 198 · Inspeção: Afinar — violão, passarinho assobiando e o tom justo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-afinador.html">Cap. 199 · Inspeção: Afinador — o objecto que lê a corda do violão</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-script.html">Cap. 200 · Inspeção: Script — sequência escrita, não destino</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-upsert.html">Cap. 201 · Inspeção: Opsert — inserir ou actualizar sem duplicar a identidade</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-intestino.html">Cap. 202 · Inspeção: Intestino — o tubo de dentro (intus) e Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-curar.html">Cap. 203 · Inspeção: Curar — cūra, tratar e secar, sem milagre</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-lemniscata.html">Cap. 204 · Inspeção: Lemniscata — a fita em oito, não a eternidade</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-preguica.html">Cap. 205 · Inspeção: Preguiça — o estado, o animal e o que não é descanso</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-bode.html">Cap. 206 · Inspeção: Bode — o caprino, o expiatório e o mau humor</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-escravidao.html">Cap. 207 · Inspeção: Escravidão — o nome do cativeiro</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-node.html">Cap. 208 · Inspeção: Node · nuds — orelha cola, étimo corta</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-loop.html">Cap. 209 · Inspeção: loop — o laço que regressa, ainda não é o infinito</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-nectar.html">Cap. 210 · Inspeção: Néctar — o suco da flor, e o gatilho Nectar / Inectar</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-sonhar.html">Cap. 211 · Inspeção: Sonhar × sonar — o sonho, o eco, e o ñ que falta</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-balancar.html">Cap. 212 · Inspeção: Balançar — o gesto, a balança e o peso</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-eminente.html">Cap. 213 · Inspeção: Eminente — sobressai; a orelha cola iminente</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-sangue.html">Cap. 214 · Inspeção: Sangue — o fluido, a linhagem, e o elo com sucção</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-succao.html">Cap. 215 · Inspeção: Sucção — o gesto de puxar; ≠ açúcar; elo com sangue</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-pedra.html">Cap. 216 · Inspeção: Pedra — πέτρα; Pedro é o mesmo tronco; a orelha cola perdão</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-gesso.html">Cap. 217 · Inspeção: Gesso — γύψος; o olho cola geologia; braço direito ingessado</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-alivio.html">Cap. 218 · Inspeção: Alívio — tornar leve; aliviado é o estado; a orelha cola veado</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-giria.html">Cap. 219 · Inspeção: Gíria — fala de grupo; a orelha cola girino (o animal)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-homepage.html">Cap. 244 · Inspeção: Homepage — home + page; a porta, não o Homer</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-fight.html">Cap. 250 · Inspeção: Fight — o grito que abre o round, não a briga na rua</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-round.html">Cap. 251 · Inspeção: Round — Raund, a unidade do combate no ecrã</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-finish.html">Cap. 252 · Inspeção: Finish — o aviso do fliperama, não o fim da pessoa</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-fatality.html">Cap. 253 · Inspeção: Fatality — Fatallitty, o fecho letal nomeado</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-brutality.html">Cap. 254 · Inspeção: Brutality — Brutalititi, o fecho irmão da Fatality</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-babality.html">Cap. 255 · Inspeção: Babality — babalitity, o fecho satírico do bebé</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-hp.html">Cap. 256 · Inspeção: HP — hit points; a barra que o BR chama vida</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mana.html">Cap. 257 · Inspeção: Mana — a reserva de magia no HUD, não um rito</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-vida-energia.html">Cap. 258 · Inspeção: Vida e energia — duas barras; a Vida do laboratório é outra</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-deplorar.html">Cap. 259 · Inspeção: Deplorar — lastimar o dano; não é o mesmo que vomitar</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-calor-frio.html">Cap. 260 · Inspeção: Calor × Frio — qualidade térmica, não fogo nem gelo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mexico.html">Cap. 261 · Inspeção: México — o país, o golfo, o golfe e o lapso gosfo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mega-sena.html">Cap. 262 · Inspeção: Mega-Sena — o nome (mega + sena) e os patrocínios</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-catorze.html">Cap. 263 · Inspeção: 14 — catorze, dois setes, não é sorte</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-zero.html">Cap. 264 · Inspeção: 0 — zero, o nulo que conta</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-lava.html">Cap. 272 · Inspeção: Lava — o rio do vulcão, não o verbo lavar</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-larva.html">Cap. 273 · Inspeção: Larva — o jovem do inseto, não a lava do vulcão</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-formiga.html">Cap. 274 · Inspeção: Formiga — o inseto do chão, não a lava do vulcão</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-marajo.html">Cap. 276 · Inspeção: Marajó — ilha, não «cidade Maraj»</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-guapore.html">Cap. 277 · Inspeção: Guaporé — rio na fronteira e cidade no Sul</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-deus.html">Cap. 278 · Inspeção: Deus — o vocábulo do céu latino; ficha ≠ catecismo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-fui.html">Cap. 279 · Inspeção: fui — pretérito de ir e de ser; na rua, Fui!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-save-game.html">Cap. 280 · Inspeção: Save Game — gravar a partida; o rasto, não o milagre</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-letra-x.html">Cap. 282 · Inspeção: Letra X — o xis, o nexo, as salas</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-dsl.html">Cap. 283 · Inspeção: DSL — a sigla do cano que fica</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-login.html">Cap. 284 · Inspeção: Log In — a porta da sessão, não o cano</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-internet-discada.html">Cap. 285 · Inspeção: Internet discada — o cano que telefona</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-isqueiro-clipper.html">Cap. 286 · Inspeção: Isqueiro Clipper — o irmão recarregável do BIC</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-liberdade.html">Cap. 287 · Inspeção: Liberdade — o nome, as salas; ≠ bairro ≠ filme ≠ linha livre</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-fantasia.html">Cap. 288 · Inspeção: Fantasia — a faculdade; ≠ fantástico ≠ roupa ≠ filme</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-rdc-autorizacao-sanitaria.html">Inspeção: RDC × Autorização sanitária — camada ANVISA do acesso</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-substancia-controlada.html">Inspeção: Substância controlada — meta-rótulo das listas</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-verdade.html">Inspeção: Verdade — a palavra de verificar no laboratório</a></li></ol>
+<h2 class="topic">Expressões e ditos <span class="muted">(0)</span></h2>
+<p class="muted">Nenhuma ficha nesta sala.</p>
+<h2 class="topic">Artes e cultura <span class="muted">(49)</span></h2>
+<ol class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-bom-dia-inverno.html">Cap. 1 · Divulgação: Bom dia, Inverno — Tamara Klink e o léxico do gelo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html">Inspeção: Alice no País das Maravilhas — o livro de Carroll e o buraco do coelho</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-serie-chaves-el-chavo.html">Inspeção: Chaves (El Chavo del Ocho) — a turma e o bem que ensina</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-filmografia-leonardo-dicaprio.html">Cap. 1 · Inspeção: Filmografia de Leonardo DiCaprio — catálogo que inaugura o tipo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-a-ultima-casa-de-opio.html">Cap. 7 · Inspeção: A Última Casa de Ópio — a procura de Tosches e a crítica ao placebo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-a-historia-das-coisas.html">Cap. 8 · Inspeção: A História das Coisas — o livro de Leonard e a máquina extrair-fazer-descartar</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-desenho-rick-and-morty.html">Cap. 9 · Inspeção: Rick and Morty — o desenho do portal e o ofício nesta linha</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-filme-moana.html">Cap. 46 · Inspeção: Moana — o desenho do oceano, da vocação e da ilha</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-o-inicio.html">Cap. 47 · Inspeção: O Início — poesia do laboratório a partir do cultivo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-killing-in-the-name.html">Cap. 48 · Inspeção: Killing in the Name — Rage Against the Machine e a máquina que mata no nome</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-all-right-now.html">Cap. 49 · Inspeção: All Right Now — Free e o agora depois do silêncio</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-filme-de-volta-para-o-futuro.html">Cap. 50 · Inspeção: De Volta para o Futuro — o filme de 1985 e a homenagem aos actores</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-under-pressure.html">Cap. 50 · Inspeção: Under Pressure — Queen, Bowie e o aperto sem esmagar</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-delorean.html">Cap. 51 · Inspeção: DeLorean — o carro de Dunmurry e a camada de 1985</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-upside-down.html">Cap. 51 · Inspeção: Upside Down — Jack Johnson e o olhar de cabeça para baixo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-how-bizarre.html">Cap. 52 · Inspeção: How Bizarre — OMC e o ofício de nomear o estranho</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-filme-questao-de-tempo.html">Cap. 52 · Inspeção: Questão de Tempo — o filme de 2013 e o destaque para o autor</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-o-alquimista.html">Cap. 53 · Inspeção: O Alquimista — o livro de Paulo Coelho e a Lenda Pessoal</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-filme-um-sonho-de-liberdade.html">Cap. 53 · Inspeção: Um Sonho de Liberdade — a novela de King e o filme de 1994</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-filme-encontro-marcado.html">Cap. 54 · Inspeção: Encontro Marcado — a peça de 1924 e o filme de 1998</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-filme-coracao-valente.html">Cap. 55 · Inspeção: Coração Valente — a lenda de Wallace e o filme de 1995</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-filme-a-paixao-de-cristo.html">Cap. 56 · Inspeção: A Paixão de Cristo — os Evangelhos e o filme de 2004</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-aguas-e-lagrimas.html">Inspeção: Águas do Mar e Lágrimas — poesia do laboratório entre oceano e peito</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-barriga-de-trigo.html">Inspeção: Barriga de Trigo — o livro de William Davis e a tese do trigo moderno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-filme-divertida-mente.html">Cap. 9 · Inspeção: Divertida Mente — as emoções da Riley e a mensagem que importa</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-serie-friends.html">Cap. 57 · Inspeção: Friends — a turma de 1994 e a série que é o texto</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-serie-how-i-met-your-mother.html">Cap. 58 · Inspeção: How I Met Your Mother — o relato, o tempo e a série de 2005</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-bitter-sweet-symphony.html">Cap. 59 · Inspeção: Bitter Sweet Symphony — The Verve e o ofício do doce-amargo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-cruzamento-raiva-venom-vida-divertida.html">Inspeção: Cruzamento — Raiva, Emoção, Venom e Vida no mapa de Divertida Mente</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-diamba-sarabamba.html">Inspeção: Diamba Sarabamba — a coletânea pioneira de 1986 sobre a maconha no Brasil</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-every-breath-you-take.html">Cap. 60 · Inspeção: Every Breath You Take — The Police e o ofício de olhar sem possuir</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-lagrimas-da-vida.html">Inspeção: Lágrimas da Vida — o poema de Álvares de Azevedo e a máscara que chora</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-o-dia-do-curinga.html">Inspeção: O Dia do Curinga — o livro de Gaarder e a pergunta do curinga</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-send-me-on-my-way.html">Inspeção: Send Me On My Way — a canção Rusted Root e o caminho</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-filme-the-matrix.html">Cap. 3 · Inspeção: The Matrix — a obra Wachowski e a pergunta do real</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-the-middle.html">Cap. 61 · Inspeção: The Middle — Jimmy Eat World e o ofício de não se apagar</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-pelados-em-santos.html">Cap. 62 · Inspeção: Pelados em Santos — Mamonas e o ofício de rir sem esmagar</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-vira-vira.html">Cap. 63 · Inspeção: Vira-Vira — Mamonas e o ofício de virar sem esmagar</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-santa-ceia.html">Cap. 64 · Inspeção: Santa Ceia — A Última Ceia de Leonardo da Vinci</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-serie-the-chosen.html">Cap. 80 · Inspeção: The Chosen — a série sobre Jesus, os escolhidos e onde assistir</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-app-the-chosen.html">Cap. 81 · Inspeção: app The Chosen — a via oficial gratuita</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-romeu-e-julieta.html">Cap. 82 · Inspeção: Romeu e Julieta — o nome é o nó das casas</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-filme-romeu-mais-julieta.html">Cap. 83 · Inspeção: Romeu + Julieta (1996) — o filme de Luhrmann e DiCaprio</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-filme-o-magnata.html">Cap. 84 · Inspeção: O Magnata — o filme de 2007, o roteiro de Chorão e o preço × valor</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-desenho-elza-frozen.html">Cap. 85 · Inspeção: Elza — Frozen, o gelo e o ofício de não esconder o poder</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-so-os-loucos-sabem.html">Inspeção: Só os Loucos Sabem — a canção CBJr e o recomeço</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-vamos-fugir.html">Cap. 86 · Inspeção: Vamos Fugir — Gil 1984, Skank na radiola, mapa Marajó × Guaporé</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-ceu-azul.html">Cap. 87 · Inspeção: Céu Azul — Chorão, o dia, e o céu que não é o de Vamos Fugir</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-filme-venom.html">Inspeção: Venom — o filme de 2018, a simbiose e o «nós»</a></li></ol>
+<h2 class="topic">Pessoas, legado e formação <span class="muted">(44)</span></h2>
+<ol class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-chorao.html">Cap. 3 · Inspeção: Chorão — letra urbana, Charlie Brown Jr. e a série Palavras</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-amyr-klink.html">Cap. 7 · Inspeção: Amyr Klink — navegador e legado de caminho</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-cebrid.html">Inspeção: CEBRID — centro e medicina canabinoide</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-nick-tosches.html">Cap. 7 · Inspeção: Nick Tosches — prosa afiada e elo com A Última Casa de Ópio</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-annie-leonard.html">Cap. 8 · Inspeção: Annie Leonard — divulgação da economia dos materiais e elo com A História das Coisas</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-sidarta-ribeiro.html">Inspeção: Dr. Sidarta Ribeiro — Revolução Canabinóide</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-richard-rasmussen.html">Cap. 10 · Inspeção: Richard Rasmussen — respeito ao ofício selvagem no ecrã brasileiro</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-ayrton-senna.html">Cap. 11 · Inspeção: Ayrton Senna — homenagem completa ao Brasil e ao Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-aleff.html">Cap. 12 · Inspeção: Aleff — Aliffe de Machado, pessoa antes do ecrã</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-alvares-de-azevedo.html">Inspeção: Álvares de Azevedo — homenagem ao poeta da Lira e elo com Lágrimas da Vida</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-anthony-henman.html">Inspeção: Anthony Henman — antropologia da diamba e elo com Diamba Sarabamba</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html">Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-esapp-agronomia-paraguacu-paulista.html">Cap. 3 · Inspeção: ESAPP — Agronomia em Paraguaçu Paulista</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-gabrielle-dainezi.html">Inspeção: Gabrielle Dainezi — coordenação do curso UNIFESP</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-duvivier.html">Inspeção: Gregorio Duvivier — o método da palavra e a série Palavras</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-herodoto.html">Inspeção: Heródoto — método da pesquisa e a palavra passar</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-elisaldo-carlini.html">Cap. 2 · Inspeção: Prof. Elisaldo Carlini — pioneiro da cannabis medicinal</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-icl-cursos.html">Cap. 4 · Inspeção: ICL Cursos — Instituto Conhecimento Liberta</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-jostein-gaarder.html">Inspeção: Jostein Gaarder — filosofia narrada e elo com O Dia do Curinga</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-keanu-reeves.html">Cap. 4 · Inspeção: Keanu Reeves — presença, treino e elo com The Matrix</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-padre-ticao.html">Inspeção: Padre Ticão — Antônio Luiz Marchioni</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-plataformas-ensino-govbr.html">Cap. 5 · Inspeção: plataformas de ensino GOV.BR — Canal Educação, MEC Idiomas e MEC Livros</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-ibere-thenorio.html">Cap. 11 · Inspeção: Iberê Thenório — ofício de ciência no ecrã brasileiro</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-eliana-rodrigues.html">Inspeção: Profa. Dra. Eliana Rodrigues</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-solange-nappo.html">Cap. 4 · Inspeção: Profa. Solange Nappo — CEBRID</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-renato-russo.html">Cap. 12 · Inspeção: Renato Russo — Legião Urbana, letra geracional e a série Palavras</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-michael-j-fox.html">Cap. 13 · Inspeção: Michael J. Fox — presença, ofício e elo com De Volta para o Futuro</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-tom-jobim.html">Cap. 13 · Inspeção: Tom Jobim — bossa, Águas de Março e a dedicatória «Adoro origami»</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-christopher-lloyd.html">Cap. 14 · Inspeção: Christopher Lloyd — presença, improviso e elo com De Volta para o Futuro</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-ramon-valdes.html">Inspeção: Ramón Valdés — Seu Madruga e os devidos méritos</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-tamara-klink.html">Cap. 8 · Inspeção: Tamara Klink — legado vivo no Ártico</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-site-tamaraklink.html">Cap. 9 · Inspeção: tamaraklink.com — carta náutica digital do Ártico</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-richard-curtis.html">Cap. 15 · Inspeção: Richard Curtis — o autor, o ofício da escrita e Questão de Tempo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-stephen-king.html">Cap. 16 · Inspeção: Stephen King — o autor, a novela e Um Sonho de Liberdade</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-mel-gibson.html">Cap. 17 · Inspeção: Mel Gibson — ofício de ecrã, realização e as duas obras</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-paulo-coelho.html">Cap. 18 · Inspeção: Paulo Coelho — ofício de parábola e elo com O Alquimista</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-leonardo-da-vinci.html">Cap. 19 · Inspeção: Leonardo da Vinci — ofício de olhar e elo com a Santa Ceia</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-steve-jobs.html">Cap. 31 · Inspeção: Steve Jobs — ofício, casa sem iPad e o mito do celular aos 18</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-lucas-evangelista.html">Cap. 32 · Inspeção: Lucas — médico de homens e de almas</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-william-shakespeare.html">Cap. 33 · Inspeção: William Shakespeare — ofício da palavra em palco</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-baz-luhrmann.html">Cap. 34 · Inspeção: Baz Luhrmann — ofício de palco no ecrã</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-leonardo-dicaprio.html">Cap. 35 · Inspeção: Leonardo DiCaprio — ofício de presença no ecrã</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-manual-maker.html">Cap. 40 · Inspeção: Manual Maker — ofício Arduino, 3D e laser no Manual do Mundo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-william-davis.html">Inspeção: William Davis — cardiologista de Barriga de Trigo e o método anti-trigo</a></li></ol>
+<h2 class="topic">Plantas nas inspeções <span class="muted">(53)</span></h2>
+<ol class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-derivado-gluten.html">Cap. 4 · Inspeção: Glúten / farinha — trigo e proteína nociva ao organismo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-derivado-chocolate.html">Cap. 5 · Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-derivado-analise-danos-videos.html">Cap. 6 · Análise: danos dos produtos nocivos × vídeos catalogados</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-derivado-cana-de-acucar.html">Inspeção: Cana-de-açúcar — origem da planta, açúcar refinado e cruzamento Lair</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-derivado-abacate.html">Inspeção: Derivados do abacate — açúcar, aditivos e química industrial</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-derivado-coco.html">Inspeção: Derivados do coco — açúcar, óleo e química industrial</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-abacate.html">Cap. 1 · Inspeção: Fruto — Abacate — persina, PPO e gorduras monoinsaturadas</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-babosa.html">Cap. 1 · Inspeção: Planta — Babosa — gel foliar e polissacarídeos</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-coco.html">Cap. 2 · Inspeção: Fruto — Coco — água, polpa e óleo da drupa tropical</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-camomila.html">Cap. 2 · Inspeção: Planta — Camomila — apigenina e óleo azul</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-laranja.html">Cap. 3 · Inspeção: Fruto — Laranja — fruto inteiro vs suco industrial</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-capim-limao.html">Cap. 3 · Inspeção: Planta — Capim-limão — citral e gramínea aromática</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-acai.html">Cap. 4 · Inspeção: Fruto — Açaí</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-carqueja.html">Cap. 4 · Inspeção: Planta — Carqueja — flavonoides e amargor nativo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-manga.html">Cap. 5 · Inspeção: Fruto — Manga</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-cavalinha.html">Cap. 5 · Inspeção: Planta — Cavalinha — sílica e remineralizante</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-banana.html">Cap. 6 · Inspeção: Fruto — Banana</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-erva-cidreira.html">Cap. 6 · Inspeção: Planta — Erva-cidreira — citral e verbena brasileira</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-maca.html">Cap. 7 · Inspeção: Fruto — Maçã</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-espinheira-santa.html">Cap. 7 · Inspeção: Planta — Espinheira-santa — friedelina e triterpenos</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-abacaxi.html">Cap. 8 · Inspeção: Fruto — Abacaxi</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-guaco.html">Cap. 8 · Inspeção: Planta — Guaco — cumarina e trepadeira respiratória</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-goiaba.html">Cap. 9 · Inspeção: Fruto — Goiaba — vitamina C, pectina e goiabada</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-hortela.html">Cap. 9 · Inspeção: Planta — Hortelã — mentol e mentona</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-cacau.html">Cap. 10 · Inspeção: Fruto — Cacau</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-boldo.html">Cap. 10 · Inspeção: Planta — Boldo — falso-boldo brasileiro</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-uva.html">Cap. 11 · Inspeção: Fruto — Uva</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-melissa.html">Cap. 11 · Inspeção: Planta — Melissa — citral e melissa officinalis</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-morango.html">Cap. 12 · Inspeção: Fruto — Morango</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-alecrim.html">Cap. 12 · Inspeção: Planta — Alecrim — ácidos diterpênicos e cineol</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-maracuja-fruta.html">Cap. 13 · Inspeção: Fruto — Maracujá (fruta)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-gengibre.html">Cap. 13 · Inspeção: Planta — Gengibre — gingeróis e rizoma picante</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-tomatinho-cereja.html">Cap. 14 · Inspeção: Fruto — Tomatinho Cereja — cultivo familiar e fruto fresco</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-curcuma.html">Cap. 14 · Inspeção: Planta — Cúrcuma — açafrão-da-terra e curcumina</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-melancia.html">Cap. 15 · Inspeção: Fruto — Melancia — água na polpa, citrulina e verão BR</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-unha-de-gato.html">Cap. 15 · Inspeção: Planta — Unha-de-gato — alcaloides oxindólicos</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-mamao.html">Cap. 16 · Inspeção: Fruto — Mamão — papaína, polpa tropical e cultivo familiar</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-sucupira.html">Cap. 16 · Inspeção: Planta — Sucupira — furanoditerpenos do Cerrado</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-marolo.html">Cap. 17 · Inspeção: Fruto — Marolo — araticum do Cerrado, polpa e muitas sementes</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-copaiba.html">Cap. 17 · Inspeção: Planta — Copaíba — óleo-resina e β-cariofileno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-andiroba.html">Cap. 18 · Inspeção: Planta — Andiroba — limonoides e óleo amazônico</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-jambu.html">Cap. 19 · Inspeção: Planta — Jambu — espilanthol e anestesia oral</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-mulungu.html">Cap. 20 · Inspeção: Planta — Mulungu — alcaloides eritrínicos calmantes</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-maracuja.html">Cap. 21 · Inspeção: Planta — Maracujá — flavonoides e passiflorina</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-calendula.html">Cap. 22 · Inspeção: Planta — Calêndula — flavonoides e pomadas cutâneas</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-barbatimao.html">Cap. 23 · Inspeção: Planta — Barbatimão — proantocianidinas adstringentes</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-jaborandi.html">Cap. 24 · Inspeção: Planta — Jaborandi — pilocarpina e glaucoma histórico</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-ipecacuanha.html">Cap. 25 · Inspeção: Planta — Ipecacuanha — emetina e xarope histórico</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-pfaffia.html">Cap. 26 · Inspeção: Planta — Pfaffia (ginseng-brasileiro) — ecdisteroides e ginseng-brasileiro</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-aroeira.html">Cap. 27 · Inspeção: Planta — Aroeira — pimenta-rosa e óleos resinosos</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-quina.html">Cap. 28 · Inspeção: Planta — Quina — quinina e antimalárico histórico</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-cannabis-sativa.html">Cap. 29 · Inspeção: Planta — Cannabis (medicinal) — canabinoides THC/CBD e contexto clínico</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-planta-alecrim-do-campo.html">Cap. 30 · Inspeção: Planta — Alecrim-do-campo — artepillina C e própolis verde</a></li></ol>
+<h2 class="topic">Animais nas inspeções <span class="muted">(16)</span></h2>
+<ol class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-animal-cao.html">Cap. 1 · Inspeção: Animal — Cão</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-derivado-caseina.html">Cap. 1 · Inspeção: Caseína — leite bovino e proteína nociva ao organismo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-animal-galinha.html">Cap. 1 · Inspeção: Produção animal — Galinha</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-animal-gato.html">Cap. 2 · Inspeção: Animal — Gato</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-derivado-galinha.html">Cap. 2 · Inspeção: Derivados da galinha — ultraprocessados e química industrial</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-animal-vaca.html">Cap. 2 · Inspeção: Produção animal — Vaca / boi</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-animal-cavalo.html">Cap. 3 · Inspeção: Animal — Cavalo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-derivado-vaca.html">Cap. 3 · Inspeção: Derivados da vaca — carnes processadas e laticínios industriais</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-animal-porco.html">Cap. 3 · Inspeção: Produção animal — Porco</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-derivado-porco.html">Cap. 4 · Inspeção: Derivados do porco — embutidos e química industrial</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-animal-peixe-tilapia.html">Cap. 4 · Inspeção: Produção animal — Tilápia</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-derivado-peixe.html">Cap. 5 · Inspeção: Derivados do peixe — empanados e ultraprocessados</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-animal-abelha.html">Cap. 5 · Inspeção: Produção animal — Abelha</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-derivado-abelha.html">Cap. 6 · Inspeção: Derivados da abelha — mel adulterado e açúcares industriais</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-animal-codorna.html">Cap. 6 · Inspeção: Produção animal — Codorna</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-animal-aranha-rodrigo.html">Cap. 21 · Inspeção: Aranha Rodrigo — saltadora nomeada do Slivki Show</a></li></ol>
+<h2 class="topic">Fungos nas inspeções <span class="muted">(1)</span></h2>
+<ol class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-fungo-psilocybe-cubensis.html">Cap. 1 · Inspeção: Fungo — Psilocybe cubensis — identificação, UNIFESP e listas controladas</a></li></ol>
+<h2 class="topic">Artigos, neurociência e pesquisas <span class="muted">(14)</span></h2>
+<ol class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-neurociencia-endocanabinoidoma.html">Cap. 1 · Inspeção: Endocanabinoidoma — mapa neurocientífico do ofício</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-neurociencia-miguel-nicolelis.html">Cap. 2 · Homenagem: Miguel Nicolelis — pioneiro das interfaces cérebro-máquina</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-artigo-wieser-duas-faces-trigo-2020.html">Inspeção: Artigo — As duas faces do trigo (Wieser, Koehler &amp; Scherf, 2020)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-artigo-albaugh-cannabis-neurodesenvolvimento.html">Inspeção: Artigo — Cannabis na adolescência e neurodesenvolvimento (JAMA Psychiatry)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-artigo-hall-ultraprocessados-2019.html">Inspeção: Artigo — Dietas ultraprocessadas, calorias e peso (Hall et al., 2019)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-artigo-brooke-taylor-caseina-a1-a2-2017.html">Inspeção: Artigo — Efeitos GI da caseína A1 vs A2 (Brooke-Taylor et al., 2017)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-artigo-brouns-trigo-obesidade-2013.html">Inspeção: Artigo — O trigo engorda e adoece? (Brouns et al., 2013)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-artigo-oms-acucares-livres-2015.html">Inspeção: Diretriz OMS — Ingestão de açúcares livres (2015)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-divulgacao-lair-ribeiro.html">Inspeção: Dr. Lair Ribeiro — cannabinoides, açúcar e cruzamento com a cana</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-pesquisa-molecula-ao-lixo.html">Pesquisa: Da molécula ao lixo — fármacos, industrialização e desigualdade</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-pesquisa-fitocanabinoides.html">Cap. 5 · Pesquisa: Fitocanabinoides — catálogo da CBGA ao CBN</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-pesquisa-insumos-organicos-vs-industrializados-fruto.html">Pesquisa: Insumos orgânicos vs industrializados — influência no fruto final</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-pesquisa-oficio-roubo-proibicao.html">Pesquisa: Ofício sob roubo e proibição — mapa do mantra</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-otimizacao-propagacao-vegetal.html">Processo de Germinação Controlado</a></li></ol>
+<h2 class="topic">Canais <span class="muted">(13)</span></h2>
+<ol class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-canal-canabinall.html">Inspeção: Canal CANABinALL — Profa. Dra. Eliana Rodrigues</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-canal-movrecam.html">Cap. 11 · Inspeção: Canal MovReCam — aulas UNIFESP</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-canal-disneyjr.html">Cap. 12 · Inspeção: canal Disney Jr. Brasil — desenhos e o oceano</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-canal-tamaraklink.html">Cap. 13 · Inspeção: canal Tamara Klink — arquivo de travessias e léxico</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-canal-vevo.html">Cap. 13 · Inspeção: canal VEVO — rede de videoclipes oficiais</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-canal-amyrklink.html">Cap. 14 · Inspeção: canal Amyr Klink — ofício do pai, junto da Tamara</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-canal-zangado.html">Cap. 14 · Inspeção: canal Zangado — crítica gamer, sagas e primeira meia hora</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-canal-paulinho.html">Cap. 15 · Inspeção: canal Paulinho o LOKO — GTA RP, Anti-RP e arquivo de servidor</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-canal-richard-rasmussen.html">Cap. 16 · Inspeção: canal Richard Rasmussen Selvagem — fauna, expedições e o ecrã</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-canal-bagual.html">Cap. 16 · Inspeção: canal Todo Poderoso Bagual — BOPE, Capital City e arquivo GTA RP</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-canal-icl.html">Cap. 17 · Inspeção: canal ICL — jornalismo YouTube do Conhecimento Liberta</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-canal-slivki.html">Cap. 18 · Inspeção: canal Slivki Show — experiências visuais e a Aranha Rodrigo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-canal-manual-do-mundo.html">Cap. 19 · Inspeção: canal Manual do Mundo — ciência no ecrã e o Manual Maker</a></li></ol>
+<h2 class="topic">Jogos e cadernos <span class="muted">(4)</span></h2>
+<ol class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-estudio-rockstar.html">Cap. 0 · Inspeção: Rockstar Games — estúdio das cidades de ecrã</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-jogo-gta6.html">Cap. 1 · Caderno de jogo 1: GTA 6 — a cidade anunciada</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-jogo-sos-grand-bazaar.html">Cap. 2 · Caderno de jogo 2: Story of Seasons Grand Bazaar — a quinta legal</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-jogo-mortal-kombat.html">Cap. 4 · Caderno de jogo 4: Mortal Kombat — o fliperama e as palavras do combate</a></li></ol>
+<h2 class="topic">Lojas e plataformas <span class="muted">(3)</span></h2>
+<ol class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-loja-principia.html">Cap. 1 · Inspeção: Principia — marca, rótulo e o claim dos dermatologistas</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-loja-filmicca.html">Cap. 2 · Inspeção: FILMICCA — streaming com curadoria, site e o catálogo declarado</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-loja-mercado-play.html">Cap. 3 · Inspeção: Mercado Play — TV grátis do Mercado Livre e filmes legais no player</a></li></ol>
+<h2 class="topic">Equipamento e ferramentas (fichas) <span class="muted">(7)</span></h2>
+<ol class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-celular-riscos-saude-criancas.html">Inspeção: Celular — os riscos para a saúde das crianças (sociedade e mundo)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-marshydro-brasil.html">Cap. 2 · Inspeção: Equipamentos Mars Hydro Brasil</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-vivosun.html">Cap. 3 · Inspeção: Equipamentos Vivosun</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-patinete-eletrico-criancas.html">Cap. 4 · Inspeção: Patinete eléctrico — locomoção a bateria, crianças e perigos</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-ventilacao-tenda.html">Inspeção: Sistema de Ventilação da Tenda</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-guia-calculadora-luximetro.html">Luxímetro: Guia de Uso</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-guia-calculadora-super-solo.html">Super Solo: Guia de Uso</a></li></ol>
+<h2 class="topic">Vida (contos inspecionados) <span class="muted">(6)</span></h2>
+<ol class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-personagem-dj-brisa.html">Vida — DJ Brisa, a voz da harmonia</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-personagem-dona-maria.html">Vida — Dona Maria, mestra do solo</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-personagem-joaninha-joana.html">Vida — Joaninha Joana, guardiã biológica</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-personagem-inspetor.html">Vida — O Inspetor, detetive botânico</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-conto-vida-laboratorio.html">Vida — O Laboratório e a Sementinha</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-personagem-three-little-birds.html">Vida — Three Little Birds, o esquadrão da alegria</a></li></ol>
+<h2 class="topic">Outras inspeções <span class="muted">(36)</span></h2>
+<ol class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html">Inspeção: A vingança nunca é plena — mata a alma e a envenena</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-ausdhuashduas.html">Inspeção: ausdhuashduas — riso online e oralidade BR</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-valeu.html">Cap. 2 · Inspeção: Faça o seu melhor — mantra do ofício</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-jesusamado.html">Cap. 3 · Inspeção: jesusamado — assombro, afeto e oralidade BR</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-jesusudavi.html">Cap. 4 · Inspeção: jesusudavi — assombro alto (substitui meudeusdoceu)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-meudeusdoceu.html">Cap. 4 · Inspeção: meudeusdoceu — substituída por jesusudavi</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-deu-certo-galera.html">Cap. 5 · Inspeção: deu certo, galera — celebração colectiva e oralidade BR</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-filho-de-deus.html">Cap. 6 · Inspeção: filho de deus — título, oralidade e dignidade</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-duasakdiqujdocedomadur.html">Cap. 7 · Inspeção: duasakdiqujdocedomadur — Deus ajuda quem cedo madruga</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-muito-obrigado.html">Cap. 8 · Inspeção: Gratidão — gratidão reforçada e oralidade BR</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-eojsofaorforap.html">Cap. 10 · Inspeção: eojsofaorforap — eu só falo a verdade</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-deus-abencoe.html">Cap. 11 · Inspeção: Deus abençoe — bênção, despedida e tipografia Deus Abenço</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-deus-deu-dois-ouvidos.html">Cap. 12 · Inspeção: Deus deu dois ouvidos e uma boca — proporção, escuta e tipografia pouvi</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-como-os-ricos-transformam-as-coisas.html">Cap. 13 · Inspeção: Como os ricos transformam as coisas — poder, ciclo e História das Coisas</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-fim-da-linha.html">Cap. 14 · Inspeção: fim da linha — fita, vida e o confeito de chocolate</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-a-benca.html">Cap. 15 · Inspeção: a bença — pedir bênção, dorme com Deus e amém</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-templo-de-cristo-corpo-e-alma.html">Cap. 16 · Inspeção: o templo de Cristo, corpo e alma — morada, inteireza e ofício</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-nossa-senhora-ambulancia-sirene-jesus-cristo.html">Cap. 17 · Inspeção: nossa senhora, ambulância, sirene, Jesus Cristo — código vermelho oral</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-os-doze-apostolos.html">Cap. 17 · Inspeção: os doze apóstolos — conjunto, envio e ofício</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html">Cap. 18 · Inspeção: Toda criança nasce cientista — recado de campo e mensagem da mãe</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-no-na-vida.html">Cap. 19 · Inspeção: nó na vida! — o laço no arco, ainda não é desastre</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-desatar-o-no.html">Cap. 20 · Inspeção: desatar o nó — o ofício, não o desastre</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-elo-de-ligacao.html">Cap. 21 · Inspeção: Elo de ligação — o cruzamento do infinito, não a eternidade</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-em-pe-e-deitado.html">Cap. 22 · Inspeção: em pé e deitado — as duas posturas da lemniscata (*bodiado*)</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-em-pe.html">Cap. 23 · Inspeção: em pé — o oito erguido, o corpo como caminho</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html">Cap. 24 · Inspeção: A orelha cola o que a boca juntou</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html">Cap. 25 · Inspeção: ando, indo, vindo, voltando — o ciclo que não pousa</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-loop-infinito.html">Cap. 26 · Inspeção: loop infinito — o pattern que não sai</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-nectar-dos-deuses.html">Cap. 27 · Inspeção: néctar dos deuses — o mito, a hipérbole, e o gatilho Deusus</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-eu-amo-a-vida.html">Cap. 28 · Inspeção: eu amo a vida — alteração automática de Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-secos-e-molhados.html">Cap. 29 · Inspeção: secos e molhados — o armazém, o lapso seos e as duas prateleiras</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-mindinho.html">Cap. 30 · Inspeção: mindinho — a parlenda dos cinco, mundinho e mudinho</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-cruzar-os-bracos-em-cima-da-cabeca.html">Cap. 31 · Inspeção: cruzar os braços em cima da cabeça — pausa da cabeça</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-meter-marcha.html">Cap. 32 · Inspeção: Meter marcha — engatar o ofício</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-formiga-lava-pe.html">Cap. 275 · Inspeção: Formiga lava-pé — o inseto que arde, não a lava do vulcão</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-adeus.html">Cap. 276 · Inspeção: A Deus!!! — adeus, encomendar e sair</a></li></ol>
+<h2 class="topic">Sem série <span class="muted">(1)</span></h2>
+<ol class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-clonadora-aeroponica-documentada.html">Clonadora Caseira: Montagem com Pote de Sorvete</a></li></ol>
+
+    <h1 class="chap">Capítulo IX — Ferramentas, equipamentos e cultivo</h1>
+    <h2 class="topic">Calculadoras</h2>
+    <ul class="ficha-list"><li><a href="https://inspetorbudganja.com.br/calculadoras/">Hub de ferramentas</a></li>
+<li><a href="https://inspetorbudganja.com.br/calculadoras/luximetro.html">Luxímetro</a></li>
+<li><a href="https://inspetorbudganja.com.br/calculadoras/cultivo-lab.html">Super Calc (VPD, DLI, pH, EC…)</a></li>
+<li><a href="https://inspetorbudganja.com.br/calculadoras/super-solo.html">Super Solo</a></li></ul>
+    <h2 class="topic">Equipamentos e objectos</h2>
+    <ul class="ficha-list"><li><a href="https://inspetorbudganja.com.br/equipamentos/clonadora-12-estacas.html">Clonadora 12 estacas</a></li>
+<li><a href="https://inspetorbudganja.com.br/equipamentos/clonadora-6-estacas.html">Clonadora 6 estacas</a></li>
+<li><a href="https://inspetorbudganja.com.br/equipamentos/">Equipamentos</a></li>
+<li><a href="https://inspetorbudganja.com.br/equipamentos/manual-clonadora.html">Manual da clonadora</a></li>
+<li><a href="https://inspetorbudganja.com.br/equipamentos/manual-hidrocloradora.html">Manual da hidroclonadora</a></li>
+<li><a href="https://inspetorbudganja.com.br/objetos/">Objectos</a></li></ul>
+    <h2 class="topic">Diário de pesquisas</h2>
+    <p><a href="https://inspetorbudganja.com.br/cultivo/">/cultivo/</a> — registo, roteiro e plano. Públicas: <a href="https://inspetorbudganja.com.br/biblioteca/pesquisas/">/biblioteca/pesquisas/</a>.</p>
+
+    <h1 class="chap">Capítulo X — Vida, poemas, Inverno e origami</h1>
+    <h2 class="topic">Poemas do laboratório</h2>
+    <ul class="ficha-list"><li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-conto-vida-laboratorio.html">A semente foi plantada</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html">A vingança nunca é plena</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-aguas-e-lagrimas.html">Águas do Mar e Lágrimas</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-all-right-now.html">All Right Now</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-ando-indo-vindo-voltando.html">Ando, indo, vindo, voltando</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-arvore-da-vida.html">Árvore da Vida</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-mara.html">Barquinhos de papel</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-bitter-sweet-symphony.html">Bitter Sweet Symphony</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-bom-dia-inverno.html">Bom dia, Inverno</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-elo-de-ligacao.html">Elo de ligação</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-desenho-elza-frozen.html">Elza</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-em-pe.html">Em pé</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-em-pe-e-deitado.html">Em pé e deitado</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-every-breath-you-take.html">Every Breath You Take</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-fantasia.html">Fantasia</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-how-bizarre.html">How Bizarre</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-killing-in-the-name.html">Killing in the Name</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-loop-infinito.html">Loop infinito</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-figura-lucas-evangelista.html">Médico de homens e de almas</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-jogo-mortal-kombat.html">Mortal Kombat</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-o-inicio.html">O Início</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-os-doze-apostolos.html">Os doze</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-pelados-em-santos.html">Pelados em Santos</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-desenho-rick-and-morty.html">Rick and Morty</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-the-middle.html">The Middle</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html">Toda criança nasce cientista</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-under-pressure.html">Under Pressure</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-upside-down.html">Upside Down</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-palavra-valeu.html">Valeu !!!</a></li>
+<li><a href="https://inspetorbudganja.com.br/posts/post-inspecao-arte-vira-vira.html">Vira-Vira</a></li></ul>
+    <h2 class="topic">Salas irmãs</h2>
+    <ul class="ficha-list">
+      <li><a href="https://inspetorbudganja.com.br/vida/">Vida — conto familiar</a></li>
+      <li><a href="https://inspetorbudganja.com.br/inverno/">Bom dia, Inverno — Tamara Klink</a></li>
+      <li><a href="https://inspetorbudganja.com.br/origami/">Origami</a></li>
+      <li><a href="https://inspetorbudganja.com.br/origami/barquinho-de-papel/">Barquinho de papel</a></li>
+    </ul>
+
+    <h1 class="chap">Capítulo XI — Vídeos, jogos, rádio e comunidade</h1>
+    <h2 class="topic">Rádio</h2>
+    <ul class="ficha-list"><li><a href="https://inspetorbudganja.com.br/radio/">Bob Marley &amp; The Wailers - Three Little Birds (Official Music Video) - BobMarleyVEVO (youtube)</a></li>
+<li><a href="https://inspetorbudganja.com.br/radio/">Rusted Root - Send Me On My Way (Official Music Video) - RustedRootVEVO (youtube)</a></li>
+<li><a href="https://inspetorbudganja.com.br/radio/">Ziggy Marley - True To Myself (Official Music Video) - Ziggy Marley (youtube)</a></li></ul>
+    <h2 class="topic">Salas</h2>
+    <ul class="ficha-list">
+      <li><a href="https://inspetorbudganja.com.br/videos/">Vídeos</a></li>
+      <li><a href="https://inspetorbudganja.com.br/jogos/">Jogos</a></li>
+      <li><a href="https://inspetorbudganja.com.br/comunidade/">Feed Vivo</a></li>
+    </ul>
+
+    <section class="colophon">
+      <h2>Capítulo XII — Colofão</h2>
+      <p>
+        Gerado em 2026-08-23 a partir dos JSON vivos do repositório,
+        com o mesmo gerador de PDF da apresentação UNIFESP (Chrome headless).
+      </p>
+      <p>
+        Independente. Educacional. Sem afiliação comercial à UNIFESP.
+        Crédito a quem ensina — em especial à Profa. Dra. Eliana Rodrigues e ao XIV Curso.
+      </p>
+      <p><strong>Valeu !!!</strong></p>
+    </section>
+  </div>
+</body>
+</html>

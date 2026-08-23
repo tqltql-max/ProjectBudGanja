@@ -142,7 +142,7 @@ async function main() {
         '/posts/post-inspecao-palavra-nap.html',
         '/posts/post-inspecao-sidarta-ribeiro.html',
         '/posts/post-inspecao-neurociencia-endocanabinoidoma.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -164,11 +164,11 @@ async function main() {
       id: 'sinais-rem',
       word: 'sinais REM',
       simple:
-        'Plural de sinal + dois REM: sono Rapid Eye Movement × sigla lab Relaxamento·Endocanabinoide·Modular; elos gesto, nap, eCBome; Faça o melhor!',
+        'Plural de sinal + dois REM: sono Rapid Eye Movement × sigla lab Relaxamento·Endocanabinoide·Modular; elos gesto, nap, eCBome; Valeu !!!',
       simpleEn:
-        'Plural of sinal + two REM: Rapid Eye Movement sleep × lab acronym Relaxation·Endocannabinoid·Modular; links gesto, nap, eCBome; Do your best!',
+        'Plural of sinal + two REM: Rapid Eye Movement sleep × lab acronym Relaxation·Endocannabinoid·Modular; links gesto, nap, eCBome; Valeu !!!',
       simpleEs:
-        'Plural de sinal + dos REM: sueño Rapid Eye Movement × sigla lab Relajación·Endocanabinoide·Modular; vínculos gesto, nap, eCBome; ¡Haz lo mejor!',
+        'Plural de sinal + dos REM: sueño Rapid Eye Movement × sigla lab Relajación·Endocanabinoide·Modular; vínculos gesto, nap, eCBome; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href,
@@ -198,7 +198,7 @@ async function main() {
   if (fs.existsSync(GLOSS_FILE)) {
     let gloss = fs.readFileSync(GLOSS_FILE, 'utf8');
     const mainLine =
-      '    "sinais rem": { tone: "caution", category: "Campo", mundane: "Plural de sinal + sigla REM (sono × ofício).", gloss: "Campo de marcas — sono Rapid Eye Movement × sigla lab Relaxamento·Endocanabinoide·Modular; ≠ um único sinal ≠ mensagem; elos gesto, nap, eCBome; Faça o melhor!", href: "/posts/post-inspecao-palavra-sinais-rem.html", en: "REM signals / REM signs", es: "señales REM", fr: "signaux REM", it: "segnali REM", de: "REM-Zeichen", el: "símata REM", la: "signa REM", yo: "àwọn àmì REM", sw: "ishara za REM", gez: "təʾəmərt REM", nl: "REM-signalen", pl: "sygnały REM", ru: "znaki REM", uk: "sygnaly REM", zh: "REM xinhao", ja: "REM shingo", ko: "REM shinho", ar: "isharat REM", he: "otot REM", hi: "REM sanket", tr: "REM sinyalleri", sv: "REM-tecken", da: "REM-tegn", no: "REM-tegn", fi: "REM-merkit", cs: "signály REM", ro: "semnale REM", hu: "REM jelek", ca: "senyals REM", gl: "sinais REM", eu: "REM seinales", gn: "señál REM", qu: "unancha REM", eo: "REM signaloj", vi: "tin hieu REM", id: "sinyal REM", th: "สัญญาณ REM", hr: "REM signali", sk: "signály REM", ga: "comharthaí REM", cy: "arwyddion REM", ha: "alamomin REM", am: "የREM ምልክት", fa: "neshanehaye REM", bn: "REM সংকেত", zu: "izimpawu ze-REM" },\n';
+      '    "sinais rem": { tone: "caution", category: "Campo", mundane: "Plural de sinal + sigla REM (sono × ofício).", gloss: "Campo de marcas — sono Rapid Eye Movement × sigla lab Relaxamento·Endocanabinoide·Modular; ≠ um único sinal ≠ mensagem; elos gesto, nap, eCBome; Valeu !!!", href: "/posts/post-inspecao-palavra-sinais-rem.html", en: "REM signals / REM signs", es: "señales REM", fr: "signaux REM", it: "segnali REM", de: "REM-Zeichen", el: "símata REM", la: "signa REM", yo: "àwọn àmì REM", sw: "ishara za REM", gez: "təʾəmərt REM", nl: "REM-signalen", pl: "sygnały REM", ru: "znaki REM", uk: "sygnaly REM", zh: "REM xinhao", ja: "REM shingo", ko: "REM shinho", ar: "isharat REM", he: "otot REM", hi: "REM sanket", tr: "REM sinyalleri", sv: "REM-tecken", da: "REM-tegn", no: "REM-tegn", fi: "REM-merkit", cs: "signály REM", ro: "semnale REM", hu: "REM jelek", ca: "senyals REM", gl: "sinais REM", eu: "REM seinales", gn: "señál REM", qu: "unancha REM", eo: "REM signaloj", vi: "tin hieu REM", id: "sinyal REM", th: "สัญญาณ REM", hr: "REM signali", sk: "signály REM", ga: "comharthaí REM", cy: "arwyddion REM", ha: "alamomin REM", am: "የREM ምልክት", fa: "neshanehaye REM", bn: "REM সংকেত", zu: "izimpawu ze-REM" },\n';
     const aliases =
       '    rem: { gloss: "Duas leituras: Rapid Eye Movement (sono) × Relaxamento·Endocanabinoide·Modular (sigla lab); ver sinais REM.", href: "/posts/post-inspecao-palavra-sinais-rem.html", en: "REM", es: "REM" },\n' +
       '    sinais: { gloss: "Plural de sinal (lat. signum) — o campo de marcas; com REM ver a ficha sinais REM.", href: "/posts/post-inspecao-palavra-sinais-rem.html", en: "signals / signs", es: "señales" },\n';

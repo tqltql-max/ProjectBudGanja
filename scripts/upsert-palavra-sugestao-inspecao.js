@@ -84,9 +84,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: sugestão (lat. suggestio) — propor; meta-lab da fila; Faça o melhor!',
-      whyEn: 'Words: sugestão (Lat. suggestio) — propose; meta-lab queue; Do your best!',
-      whyEs: 'Palabras: sugestão (lat. suggestio) — proponer; meta-lab de cola; ¡Haz lo mejor!',
+      why: 'Palavras: sugestão (lat. suggestio) — propor; meta-lab da fila; Valeu !!!',
+      whyEn: 'Words: sugestão (Lat. suggestio) — propose; meta-lab queue; Valeu !!!',
+      whyEs: 'Palabras: sugestão (lat. suggestio) — proponer; meta-lab de cola; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -94,7 +94,7 @@ async function main() {
         post.sourceUrl,
         '/posts/post-inspecao-palavra-mensagem.html',
         '/posts/post-inspecao-palavra-objetos.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — proposta ≠ ordem; fila editorial.'
     };
@@ -113,11 +113,11 @@ async function main() {
       id: 'sugestao',
       word: 'sugestão',
       simple:
-        'Lat. suggestio — ato de sugerir / palpite; no lab, item da fila de inspeções; Faça o melhor nesta proposta.',
+        'Lat. suggestio — ato de sugerir / palpite; no lab, item da fila de inspeções; Valeu !!! nesta proposta.',
       simpleEn:
-        'Lat. suggestio — act of suggesting / tip; in the lab, inspection-queue item; Do your best in this proposal.',
+        'Lat. suggestio — act of suggesting / tip; in the lab, inspection-queue item; Valeu !!! in this proposal.',
       simpleEs:
-        'Lat. suggestio — acto de sugerir / tip; en el lab, ítem de la cola de inspecciones; Haz lo mejor en esta propuesta.',
+        'Lat. suggestio — acto de sugerir / tip; en el lab, ítem de la cola de inspecciones; Valeu !!! en esta propuesta.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -139,7 +139,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    sugestao: { gloss: "Lat. suggestio — ato de sugerir; meta-lab da fila de inspeções; Faça o melhor!", href: "/posts/post-inspecao-palavra-sugestao.html", en: "suggestion", es: "sugerencia", fr: "suggestion", it: "suggerimento", de: "Vorschlag", el: "protasi", la: "suggestio", yo: "imọran", sw: "pendekezo", gez: "məkr", nl: "suggestie", pl: "sugestia", ru: "predlozhenie", uk: "propozytsiia", zh: "jianyi", ja: "teian", ko: "jean", ar: "iqtirah", he: "hatzaa", hi: "sujhav", tr: "oneri", sv: "forslag", da: "forslag", no: "forslag", fi: "ehdotus", cs: "navrh", ro: "sugestie", hu: "javaslat", ca: "suggeriment", gl: "suxestion", eu: "iradokizun", gn: "ñe\'ẽnguéra", qu: "yuyay", eo: "sugesto", vi: "de xuat", id: "saran", th: "ข้อเสนอ", hr: "prijedlog", sk: "navrh", ga: "moladh", cy: "awgrym", ha: "shawara", am: "ጥቆማ", fa: "pishnahad", bn: "পরামর্শ", zu: "isiphakamiso" },';
+      '    sugestao: { gloss: "Lat. suggestio — ato de sugerir; meta-lab da fila de inspeções; Valeu !!!", href: "/posts/post-inspecao-palavra-sugestao.html", en: "suggestion", es: "sugerencia", fr: "suggestion", it: "suggerimento", de: "Vorschlag", el: "protasi", la: "suggestio", yo: "imọran", sw: "pendekezo", gez: "məkr", nl: "suggestie", pl: "sugestia", ru: "predlozhenie", uk: "propozytsiia", zh: "jianyi", ja: "teian", ko: "jean", ar: "iqtirah", he: "hatzaa", hi: "sujhav", tr: "oneri", sv: "forslag", da: "forslag", no: "forslag", fi: "ehdotus", cs: "navrh", ro: "sugestie", hu: "javaslat", ca: "suggeriment", gl: "suxestion", eu: "iradokizun", gn: "ñe\'ẽnguéra", qu: "yuyay", eo: "sugesto", vi: "de xuat", id: "saran", th: "ข้อเสนอ", hr: "prijedlog", sk: "navrh", ga: "moladh", cy: "awgrym", ha: "shawara", am: "ጥቆማ", fa: "pishnahad", bn: "পরামর্শ", zu: "isiphakamiso" },';
     if (/sugestao:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    sugestao:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

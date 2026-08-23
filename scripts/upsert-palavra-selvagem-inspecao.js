@@ -107,7 +107,7 @@ async function main() {
         '/posts/post-inspecao-palavra-planta.html',
         '/posts/post-inspecao-palavra-animal.html',
         '/posts/post-inspecao-palavra-inseto.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +

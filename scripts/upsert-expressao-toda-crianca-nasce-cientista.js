@@ -113,9 +113,9 @@ async function main() {
       tipo: 'expressao',
       priority: 2,
       status: 'feita',
-      why: 'Expressões: citação de Arleu (CNN / campo); chegou como mensagem da mãe; Faça o melhor!',
-      whyEn: 'Sayings: Arleu quote (CNN / field); arrived as a mother’s message; Do your best!',
-      whyEs: 'Dichos: cita de Arleu (CNN / campo); llegó como mensaje de la madre; ¡Haz lo mejor!',
+      why: 'Expressões: citação de Arleu (CNN / campo); chegou como mensagem da mãe; Valeu !!!',
+      whyEn: 'Sayings: Arleu quote (CNN / field); arrived as a mother’s message; Valeu !!!',
+      whyEs: 'Dichos: cita de Arleu (CNN / campo); llegó como mensaje de la madre; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'expressoes-ditados',
@@ -124,7 +124,7 @@ async function main() {
         '/posts/post-inspecao-palavra-mae.html',
         '/posts/post-inspecao-palavra-mensagem.html',
         '/posts/post-inspecao-palavra-inseto.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' Expressões — mensagem da mãe; crédito Arleu / CNN.'
     };
@@ -143,11 +143,11 @@ async function main() {
       id: 'toda-crianca-nasce-cientista',
       word: 'toda criança nasce cientista',
       simple:
-        'Citação de campo — curiosidade nativa; o crescer às vezes cala; o campo devolve o método. Chegou como mensagem da mãe. Faça o melhor!',
+        'Citação de campo — curiosidade nativa; o crescer às vezes cala; o campo devolve o método. Chegou como mensagem da mãe. Valeu !!!',
       simpleEn:
-        'Field quote — native curiosity; growing up sometimes silences it; the field returns the method. Arrived as a mother’s message. Do your best!',
+        'Field quote — native curiosity; growing up sometimes silences it; the field returns the method. Arrived as a mother’s message. Valeu !!!',
       simpleEs:
-        'Cita de campo — curiosidad nativa; crecer a veces calla; el campo devuelve el método. Llegó como mensaje de la madre. ¡Haz lo mejor!',
+        'Cita de campo — curiosidad nativa; crecer a veces calla; el campo devuelve el método. Llegó como mensaje de la madre. ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href,
@@ -179,7 +179,7 @@ async function main() {
 
   const glossPath = path.join(ROOT, 'js', 'learn-glossary.js');
   const glossLine =
-    '    "toda criança nasce cientista": { tone: "warm", category: "Campo", mundane: "Citação de campo — curiosidade nativa; o campo devolve o método.", gloss: "Arleu (CNN / Cerrado); chegou como mensagem da mãe; depois Faça o melhor!", href: "/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html", en: "every child is born a scientist", es: "todo niño nace científico", fr: "chaque enfant naît scientifique", it: "ogni bambino nasce scienziato", de: "jedes Kind wird als Wissenschaftler geboren", el: "κάθε παιδί γεννιέται επιστήμονας", la: "omnis infans nascitur scientiae studiosus", yo: "ọmọdé ni onímọ̀ sáyẹ́ǹsì", sw: "kila mtoto azaliwa mwanasayansi", gez: "ḥəṣan", nl: "elk kind wordt als wetenschapper geboren", pl: "kazde dziecko rodzi sie naukowcem", ru: "kazhdyi rebenok rozhdaetsia uchenym", uk: "kozhna dytyna narodzhuietsia vchenym", zh: "每个孩子生来都是科学家", ja: "子どもは科学者として生まれる", ko: "모든 아이는 과학자로 태어난다", ar: "كل طفل يولد عالما", he: "כל ילד נולד מדען", hi: "हर बच्चा वैज्ञानिक पैदा होता है", tr: "her çocuk bilim insanı olarak doğar", sv: "vart barn föds som vetenskapsman", da: "ethvert barn fødes som videnskabsmand", no: "hvert barn fødes som vitenskapsmann", fi: "jokainen lapsi syntyy tiedemieheksi", cs: "kazde dite se rodi vedcem", ro: "fiecare copil se naste om de stiinta", hu: "minden gyermek tudosnak szuletik", ca: "cada infant neix cientific", gl: "toda nena nace cientifica", eu: "haur bakoitza zientzialari jaiotzen da", gn: "mitã tuicháva científico", qu: "sapa wawa yachayniyuq nace", eo: "ciu infano naskigxas sciencisto", vi: "moi tre sinh ra la nha khoa hoc", id: "setiap anak lahir sebagai ilmuwan", th: "เด็กทุกคนเกิดมาเป็นนักวิทยาศาสตร์", hr: "svako dijete se rada kao znanstvenik", sk: "kazde dieta sa rodi ako vedec", ga: "saolaítear gach páiste ina eolaí", cy: "mae pob plentyn yn cael ei eni yn wyddonydd", ha: "kowane yaro an haife shi masanin kimiyya", am: "ሁሉም ልጅ ሳይንቲስት ሆኖ ይወለዳል", fa: "har kudak daneshmand be donya miayad", bn: "প্রতিটি শিশু বিজ্ঞানী হয়ে জন্মায়", zu: "zonke izingane zizalwa zingososayensi" },';
+    '    "toda criança nasce cientista": { tone: "warm", category: "Campo", mundane: "Citação de campo — curiosidade nativa; o campo devolve o método.", gloss: "Arleu (CNN / Cerrado); chegou como mensagem da mãe; depois Valeu !!!", href: "/posts/post-inspecao-expressao-toda-crianca-nasce-cientista.html", en: "every child is born a scientist", es: "todo niño nace científico", fr: "chaque enfant naît scientifique", it: "ogni bambino nasce scienziato", de: "jedes Kind wird als Wissenschaftler geboren", el: "κάθε παιδί γεννιέται επιστήμονας", la: "omnis infans nascitur scientiae studiosus", yo: "ọmọdé ni onímọ̀ sáyẹ́ǹsì", sw: "kila mtoto azaliwa mwanasayansi", gez: "ḥəṣan", nl: "elk kind wordt als wetenschapper geboren", pl: "kazde dziecko rodzi sie naukowcem", ru: "kazhdyi rebenok rozhdaetsia uchenym", uk: "kozhna dytyna narodzhuietsia vchenym", zh: "每个孩子生来都是科学家", ja: "子どもは科学者として生まれる", ko: "모든 아이는 과학자로 태어난다", ar: "كل طفل يولد عالما", he: "כל ילד נולד מדען", hi: "हर बच्चा वैज्ञानिक पैदा होता है", tr: "her çocuk bilim insanı olarak doğar", sv: "vart barn föds som vetenskapsman", da: "ethvert barn fødes som videnskabsmand", no: "hvert barn fødes som vitenskapsmann", fi: "jokainen lapsi syntyy tiedemieheksi", cs: "kazde dite se rodi vedcem", ro: "fiecare copil se naste om de stiinta", hu: "minden gyermek tudosnak szuletik", ca: "cada infant neix cientific", gl: "toda nena nace cientifica", eu: "haur bakoitza zientzialari jaiotzen da", gn: "mitã tuicháva científico", qu: "sapa wawa yachayniyuq nace", eo: "ciu infano naskigxas sciencisto", vi: "moi tre sinh ra la nha khoa hoc", id: "setiap anak lahir sebagai ilmuwan", th: "เด็กทุกคนเกิดมาเป็นนักวิทยาศาสตร์", hr: "svako dijete se rada kao znanstvenik", sk: "kazde dieta sa rodi ako vedec", ga: "saolaítear gach páiste ina eolaí", cy: "mae pob plentyn yn cael ei eni yn wyddonydd", ha: "kowane yaro an haife shi masanin kimiyya", am: "ሁሉም ልጅ ሳይንቲስት ሆኖ ይወለዳል", fa: "har kudak daneshmand be donya miayad", bn: "প্রতিটি শিশু বিজ্ঞানী হয়ে জন্মায়", zu: "zonke izingane zizalwa zingososayensi" },';
   upsertGloss(
     glossPath,
     '    "toda criança nasce cientista":\\s*\\{[\\s\\S]*?\\},',

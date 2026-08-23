@@ -156,9 +156,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: Xiaomi (*xioomi* → Xiaomi) — 小米 milheto; marca × grão × ídolo tech; elos Jobs/objetos/celular; Faça o melhor!',
-      whyEn: 'Words: Xiaomi (*xioomi* → Xiaomi) — 小米 millet; brand × grain × tech idol; links Jobs/objects/phone; Do your best!',
-      whyEs: 'Palabras: Xiaomi (*xioomi* → Xiaomi) — 小米 mijo; marca × grano × ídolo tech; vínculos Jobs/objetos/celular; ¡Haz lo mejor!',
+      why: 'Palavras: Xiaomi (*xioomi* → Xiaomi) — 小米 milheto; marca × grão × ídolo tech; elos Jobs/objetos/celular; Valeu !!!',
+      whyEn: 'Words: Xiaomi (*xioomi* → Xiaomi) — 小米 millet; brand × grain × tech idol; links Jobs/objects/phone; Valeu !!!',
+      whyEs: 'Palabras: Xiaomi (*xioomi* → Xiaomi) — 小米 mijo; marca × grano × ídolo tech; vínculos Jobs/objetos/celular; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -170,7 +170,7 @@ async function main() {
         '/posts/post-inspecao-palavra-idolo.html',
         '/posts/post-inspecao-palavra-objetos.html',
         '/posts/post-inspecao-celular-riscos-saude-criancas.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -194,11 +194,11 @@ async function main() {
       id: 'xiaomi',
       word: 'Xiaomi',
       simple:
-        'Grafia certa da marca (小米, milheto); rasto oral xioomi; marca × grão × ídolo tech; elos Jobs e celular; Faça o melhor!',
+        'Grafia certa da marca (小米, milheto); rasto oral xioomi; marca × grão × ídolo tech; elos Jobs e celular; Valeu !!!',
       simpleEn:
-        'Correct brand spelling (小米, millet); oral trail xioomi; brand × grain × tech idol; links Jobs and phone; Do your best!',
+        'Correct brand spelling (小米, millet); oral trail xioomi; brand × grain × tech idol; links Jobs and phone; Valeu !!!',
       simpleEs:
-        'Grafía correcta de la marca (小米, mijo); rastro oral xioomi; marca × grano × ídolo tech; vínculos Jobs y celular; ¡Haz lo mejor!',
+        'Grafía correcta de la marca (小米, mijo); rastro oral xioomi; marca × grano × ídolo tech; vínculos Jobs y celular; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href,
@@ -241,7 +241,7 @@ async function main() {
   upsertGloss(
     glossPath,
     'xiaomi',
-    '    xiaomi: { tone: "caution", category: "Marca", mundane: "Grafia certa da marca — telemóvel / IoT; étimo 小米 milheto.", gloss: "xioomi → Xiaomi; camadas: marca × grão × ídolo tech; elos Jobs/objetos/celular; sem pedestal; Faça o melhor!", href: "/posts/post-inspecao-palavra-xiaomi.html", en: "Xiaomi", es: "Xiaomi", fr: "Xiaomi", it: "Xiaomi", de: "Xiaomi", el: "Xiaomi", la: "Xiaomi / milium", yo: "Xiaomi", sw: "Xiaomi", gez: "Xiaomi", nl: "Xiaomi", pl: "Xiaomi", ru: "Xiaomi", uk: "Xiaomi", zh: "小米", ja: "Xiaomi / シャオミ", ko: "샤오미", ar: "شاومي", he: "שיאומי", hi: "शाओमी", tr: "Xiaomi", sv: "Xiaomi", da: "Xiaomi", no: "Xiaomi", fi: "Xiaomi", cs: "Xiaomi", ro: "Xiaomi", hu: "Xiaomi", ca: "Xiaomi", gl: "Xiaomi", eu: "Xiaomi", gn: "Xiaomi", qu: "Xiaomi", eo: "Xiaomi", vi: "Xiaomi", id: "Xiaomi", th: "เสียวหมี่", hr: "Xiaomi", sk: "Xiaomi", ga: "Xiaomi", cy: "Xiaomi", ha: "Xiaomi", am: "Xiaomi", fa: "شیائومی", bn: "শাওমি", zu: "Xiaomi" },',
+    '    xiaomi: { tone: "caution", category: "Marca", mundane: "Grafia certa da marca — telemóvel / IoT; étimo 小米 milheto.", gloss: "xioomi → Xiaomi; camadas: marca × grão × ídolo tech; elos Jobs/objetos/celular; sem pedestal; Valeu !!!", href: "/posts/post-inspecao-palavra-xiaomi.html", en: "Xiaomi", es: "Xiaomi", fr: "Xiaomi", it: "Xiaomi", de: "Xiaomi", el: "Xiaomi", la: "Xiaomi / milium", yo: "Xiaomi", sw: "Xiaomi", gez: "Xiaomi", nl: "Xiaomi", pl: "Xiaomi", ru: "Xiaomi", uk: "Xiaomi", zh: "小米", ja: "Xiaomi / シャオミ", ko: "샤오미", ar: "شاومي", he: "שיאומי", hi: "शाओमी", tr: "Xiaomi", sv: "Xiaomi", da: "Xiaomi", no: "Xiaomi", fi: "Xiaomi", cs: "Xiaomi", ro: "Xiaomi", hu: "Xiaomi", ca: "Xiaomi", gl: "Xiaomi", eu: "Xiaomi", gn: "Xiaomi", qu: "Xiaomi", eo: "Xiaomi", vi: "Xiaomi", id: "Xiaomi", th: "เสียวหมี่", hr: "Xiaomi", sk: "Xiaomi", ga: "Xiaomi", cy: "Xiaomi", ha: "Xiaomi", am: "Xiaomi", fa: "شیائومی", bn: "শাওমি", zu: "Xiaomi" },',
     ['jobs', 'skill']
   );
   upsertGloss(

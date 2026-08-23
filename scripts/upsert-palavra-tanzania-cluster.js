@@ -119,16 +119,16 @@ const ITEMS = [
     sugTitle: 'Tanzânia — o país, o Taz e a relação com Taz Manaia',
     sugTitleEn: 'Tanzânia — the country, Taz, and the relation with Taz Manaia',
     sugTitleEs: 'Tanzânia — el país, el Taz y la relación con Taz Manaia',
-    why: 'Palavras: Tanzânia = Tan+Zan+-ia (1964); Taz = hipocorístico; ≠ Tasmânia; relação com Taz Manaia; Faça o melhor!',
+    why: 'Palavras: Tanzânia = Tan+Zan+-ia (1964); Taz = hipocorístico; ≠ Tasmânia; relação com Taz Manaia; Valeu !!!',
     guiaId: 'tanzania',
     guiaWord: 'Tanzânia',
     guiaSimple:
-      'País (PT Tanzânia / EN-sw. Tanzania); étimo Tanganica + Zanzibar + -ia (1964); Taz = alcunha; ≠ Tasmânia; relação com o lapso Taz Manaia; Faça o melhor neste mapa.',
+      'País (PT Tanzânia / EN-sw. Tanzania); étimo Tanganica + Zanzibar + -ia (1964); Taz = alcunha; ≠ Tasmânia; relação com o lapso Taz Manaia; Valeu !!! neste mapa.',
     guiaAfter: ['mocambique', 'paraguai', 'relacao'],
     glossKey: 'tanzânia',
     glossAfter: 'moçambique',
     glossMain:
-      '    tanzânia: { tone: "caution", category: "País", mundane: "República Unida da Tanzânia; grafia EN/sw. Tanzania.", gloss: "País ≠ Tasmânia ≠ Taz-Mania; étimo Tan+Zan+-ia (1964); Taz = hipocorístico; relação com Taz Manaia; Faça o melhor neste mapa.", href: "/posts/post-inspecao-palavra-tanzania.html", en: "Tanzania", es: "Tanzania", fr: "Tanzanie", it: "Tanzania", de: "Tansania", el: "Τανζανία", la: "Tanzania", yo: "Tanzania", sw: "Tanzania", gez: "Tanzania", nl: "Tanzania", pl: "Tanzania", ru: "Танзания", uk: "Танзанія", zh: "坦桑尼亚", ja: "タンザニア", ko: "탄자니아", ar: "تنزانيا", he: "טנזניה", hi: "तंज़ानिया", tr: "Tanzanya", sv: "Tanzania", da: "Tanzania", no: "Tanzania", fi: "Tansania", cs: "Tanzanie", ro: "Tanzania", hu: "Tanzánia", ca: "Tanzània", gl: "Tanzania", eu: "Tanzania", gn: "Tanzania", qu: "Tansanya", eo: "Tanzanio", vi: "Tanzania", id: "Tanzania", th: "แทนซาเนีย", hr: "Tanzanija", sk: "Tanzánia", ga: "An Tansáin", cy: "Tansanïa", ha: "Tanzaniya", am: "ታንዛኒያ", fa: "تانزانیا", bn: "তানজানিয়া", zu: "iTanzania" },\n',
+      '    tanzânia: { tone: "caution", category: "País", mundane: "República Unida da Tanzânia; grafia EN/sw. Tanzania.", gloss: "País ≠ Tasmânia ≠ Taz-Mania; étimo Tan+Zan+-ia (1964); Taz = hipocorístico; relação com Taz Manaia; Valeu !!! neste mapa.", href: "/posts/post-inspecao-palavra-tanzania.html", en: "Tanzania", es: "Tanzania", fr: "Tanzanie", it: "Tanzania", de: "Tansania", el: "Τανζανία", la: "Tanzania", yo: "Tanzania", sw: "Tanzania", gez: "Tanzania", nl: "Tanzania", pl: "Tanzania", ru: "Танзания", uk: "Танзанія", zh: "坦桑尼亚", ja: "タンザニア", ko: "탄자니아", ar: "تنزانيا", he: "טנזניה", hi: "तंज़ानिया", tr: "Tanzanya", sv: "Tanzania", da: "Tanzania", no: "Tanzania", fi: "Tansania", cs: "Tanzanie", ro: "Tanzania", hu: "Tanzánia", ca: "Tanzània", gl: "Tanzania", eu: "Tanzania", gn: "Tanzania", qu: "Tansanya", eo: "Tanzanio", vi: "Tanzania", id: "Tanzania", th: "แทนซาเนีย", hr: "Tanzanija", sk: "Tanzánia", ga: "An Tansáin", cy: "Tansanïa", ha: "Tanzaniya", am: "ታንዛኒያ", fa: "تانزانیا", bn: "তানজানিয়া", zu: "iTanzania" },\n',
     glossAliases:
       '    tanzania: { gloss: "Grafia EN/sw. de Tanzânia — o mesmo país; ver ficha.", href: "/posts/post-inspecao-palavra-tanzania.html", en: "Tanzania", es: "Tanzania" },\n' +
       '    tanzanio: { gloss: "Grafia sem acento de Tanzânia — o mesmo país.", href: "/posts/post-inspecao-palavra-tanzania.html", en: "Tanzania (unaccented)", es: "Tanzania (sin acento)" },\n' +
@@ -141,16 +141,16 @@ const ITEMS = [
     sugTitle: 'Taz Manaia — o lapso Taz-Mania, o manaia e a relação com Tanzânia',
     sugTitleEn: 'Taz Manaia — the Taz-Mania slip, the manaia, and the relation with Tanzania',
     sugTitleEs: 'Taz Manaia — el lapsus Taz-Mania, el manaia y la relación con Tanzania',
-    why: 'Palavras: Taz Manaia = lapso Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Faça o melhor!',
+    why: 'Palavras: Taz Manaia = lapso Taz-Mania × Taz × manaia māori; ≠ pessoa verificada; relação lexical com Tanzânia; Valeu !!!',
     guiaId: 'taz-manaia',
     guiaWord: 'Taz Manaia',
     guiaSimple:
-      'Lapso de Taz-Mania (série) escrito como nome; Taz = Tanzânia e/ou diabo-da-Tasmânia; manaia māori ≠ meneia; ≠ biografia; relação lexical com Tanzânia; Faça o melhor neste entre.',
+      'Lapso de Taz-Mania (série) escrito como nome; Taz = Tanzânia e/ou diabo-da-Tasmânia; manaia māori ≠ meneia; ≠ biografia; relação lexical com Tanzânia; Valeu !!! neste entre.',
     guiaAfter: ['tanzania', 'relacao', 'meneia'],
     glossKey: '"taz manaia"',
     glossAfter: 'tanzânia',
     glossMain:
-      '    "taz manaia": { tone: "caution", category: "Lapso", mundane: "Nome-lapso: Taz-Mania + Taz + manaia māori.", gloss: "≠ pessoa verificada ≠ país Tanzânia; relação lexical (o entre); manaia com respeito ≠ meneia; Faça o melhor neste nome.", href: "/posts/post-inspecao-palavra-taz-manaia.html", en: "Taz Manaia (slip)", es: "Taz Manaia (lapsus)", fr: "Taz Manaia", it: "Taz Manaia", de: "Taz Manaia", el: "Taz Manaia", la: "Taz Manaia", yo: "Taz Manaia", sw: "Taz Manaia", gez: "Taz Manaia", nl: "Taz Manaia", pl: "Taz Manaia", ru: "Taz Manaia", uk: "Taz Manaia", zh: "Taz Manaia", ja: "Taz Manaia", ko: "Taz Manaia", ar: "Taz Manaia", he: "Taz Manaia", hi: "Taz Manaia", tr: "Taz Manaia", sv: "Taz Manaia", da: "Taz Manaia", no: "Taz Manaia", fi: "Taz Manaia", cs: "Taz Manaia", ro: "Taz Manaia", hu: "Taz Manaia", ca: "Taz Manaia", gl: "Taz Manaia", eu: "Taz Manaia", gn: "Taz Manaia", qu: "Taz Manaia", eo: "Taz Manaia", vi: "Taz Manaia", id: "Taz Manaia", th: "Taz Manaia", hr: "Taz Manaia", sk: "Taz Manaia", ga: "Taz Manaia", cy: "Taz Manaia", ha: "Taz Manaia", am: "Taz Manaia", fa: "Taz Manaia", bn: "Taz Manaia", zu: "Taz Manaia" },\n',
+      '    "taz manaia": { tone: "caution", category: "Lapso", mundane: "Nome-lapso: Taz-Mania + Taz + manaia māori.", gloss: "≠ pessoa verificada ≠ país Tanzânia; relação lexical (o entre); manaia com respeito ≠ meneia; Valeu !!! neste nome.", href: "/posts/post-inspecao-palavra-taz-manaia.html", en: "Taz Manaia (slip)", es: "Taz Manaia (lapsus)", fr: "Taz Manaia", it: "Taz Manaia", de: "Taz Manaia", el: "Taz Manaia", la: "Taz Manaia", yo: "Taz Manaia", sw: "Taz Manaia", gez: "Taz Manaia", nl: "Taz Manaia", pl: "Taz Manaia", ru: "Taz Manaia", uk: "Taz Manaia", zh: "Taz Manaia", ja: "Taz Manaia", ko: "Taz Manaia", ar: "Taz Manaia", he: "Taz Manaia", hi: "Taz Manaia", tr: "Taz Manaia", sv: "Taz Manaia", da: "Taz Manaia", no: "Taz Manaia", fi: "Taz Manaia", cs: "Taz Manaia", ro: "Taz Manaia", hu: "Taz Manaia", ca: "Taz Manaia", gl: "Taz Manaia", eu: "Taz Manaia", gn: "Taz Manaia", qu: "Taz Manaia", eo: "Taz Manaia", vi: "Taz Manaia", id: "Taz Manaia", th: "Taz Manaia", hr: "Taz Manaia", sk: "Taz Manaia", ga: "Taz Manaia", cy: "Taz Manaia", ha: "Taz Manaia", am: "Taz Manaia", fa: "Taz Manaia", bn: "Taz Manaia", zu: "Taz Manaia" },\n',
     glossAliases:
       '    taz: { gloss: "Hipocorístico: Tanzânia e/ou personagem Taz (Taz-Mania); ver Tanzânia e Taz Manaia.", href: "/posts/post-inspecao-palavra-taz-manaia.html", en: "Taz", es: "Taz" },\n' +
       '    "taz-mania": { gloss: "Série Warner 1991–95 — terra fictícia Tazmania; ≠ Tanzânia; ver Taz Manaia.", href: "/posts/post-inspecao-palavra-taz-manaia.html", en: "Taz-Mania", es: "Taz-Mania" },\n' +
@@ -181,7 +181,7 @@ function upsertSug(sug, post, cfg) {
     sources: [
       post.sourceUrl,
       '/posts/post-inspecao-palavra-relacao.html',
-      '/posts/post-inspecao-expressao-faca-o-melhor.html'
+      '/posts/post-inspecao-palavra-valeu.html'
     ],
     notes: 'Cap. ' + post.seriesOrder + ' — cluster Tanzânia / Taz Manaia / Taz-Mania / relação.'
   };

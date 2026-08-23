@@ -122,7 +122,7 @@ async function main() {
         '/posts/post-inspecao-palavra-lingua-portuguesa.html',
         '/posts/post-inspecao-planta-pfaffia.html',
         '/posts/post-inspecao-expressao-jesusudavi.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — mapa de sentidos; não fundir ofícios.'
     };
@@ -141,11 +141,11 @@ async function main() {
       id: 'tonico',
       word: 'tônico',
       simple:
-        'Gr. tónos / lat. tonus — sílaba tônica × tom do lab × planta × Ayurveda × crise × música × músculo × cosmética × água tónica; não fundir; Faça o melhor!',
+        'Gr. tónos / lat. tonus — sílaba tônica × tom do lab × planta × Ayurveda × crise × música × músculo × cosmética × água tónica; não fundir; Valeu !!!',
       simpleEn:
-        'Gr. tónos / Lat. tonus — stress × lab tone × herb × Ayurveda × seizure × music × muscle × cosmetic × tonic water; do not fuse; Do your best!',
+        'Gr. tónos / Lat. tonus — stress × lab tone × herb × Ayurveda × seizure × music × muscle × cosmetic × tonic water; do not fuse; Valeu !!!',
       simpleEs:
-        'Gr. tónos / lat. tonus — sílaba × tono lab × planta × Ayurveda × crisis × música × músculo × cosmética × agua tónica; no fusionar; ¡Haz lo mejor!',
+        'Gr. tónos / lat. tonus — sílaba × tono lab × planta × Ayurveda × crisis × música × músculo × cosmética × agua tónica; no fusionar; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href,
@@ -181,7 +181,7 @@ async function main() {
   upsertGloss(
     glossPath,
     'tonico',
-    '    tonico: { tone: "caution", category: "Tensão", mundane: "Adjectivo / substantivo — sílaba, tom, planta, música, corpo, bebida.", gloss: "Gr. tónos — mapa de sentidos; tônicos da palavra ≠ chá; Faça o melhor sem fundir.", href: "/posts/post-inspecao-palavra-tonico.html", en: "tonic / stressed", es: "tónico", fr: "tonique", it: "tonico", de: "tonisch / Tonika", el: "τονικός", la: "tonicus", yo: "okun", sw: "toniki", gez: "tonos", nl: "tonisch", pl: "toniczny", ru: "tonicheskii", uk: "tonichnyi", zh: "tonic", ja: "tonic", ko: "tonic", ar: "tonik", he: "toni", hi: "tonic", tr: "tonik", sv: "tonisk", da: "tonisk", no: "tonisk", fi: "toninen", cs: "tonicky", ro: "tonic", hu: "tonikus", ca: "tonic", gl: "tonico", eu: "toniko", gn: "tonico", qu: "tonico", eo: "tonika", vi: "tonic", id: "tonik", th: "tonic", hr: "tonican", sk: "tonicky", ga: "tonach", cy: "tonig", ha: "tonik", am: "tonic", fa: "tonik", bn: "tonic", zu: "i-tonic" },',
+    '    tonico: { tone: "caution", category: "Tensão", mundane: "Adjectivo / substantivo — sílaba, tom, planta, música, corpo, bebida.", gloss: "Gr. tónos — mapa de sentidos; tônicos da palavra ≠ chá; Valeu !!! sem fundir.", href: "/posts/post-inspecao-palavra-tonico.html", en: "tonic / stressed", es: "tónico", fr: "tonique", it: "tonico", de: "tonisch / Tonika", el: "τονικός", la: "tonicus", yo: "okun", sw: "toniki", gez: "tonos", nl: "tonisch", pl: "toniczny", ru: "tonicheskii", uk: "tonichnyi", zh: "tonic", ja: "tonic", ko: "tonic", ar: "tonik", he: "toni", hi: "tonic", tr: "tonik", sv: "tonisk", da: "tonisk", no: "tonisk", fi: "toninen", cs: "tonicky", ro: "tonic", hu: "tonikus", ca: "tonic", gl: "tonico", eu: "toniko", gn: "tonico", qu: "tonico", eo: "tonika", vi: "tonic", id: "tonik", th: "tonic", hr: "tonican", sk: "tonicky", ga: "tonach", cy: "tonig", ha: "tonik", am: "tonic", fa: "tonik", bn: "tonic", zu: "i-tonic" },',
     ['tempo', 'tudo', 'lingua']
   );
   upsertGloss(

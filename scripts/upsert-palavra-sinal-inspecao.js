@@ -103,7 +103,7 @@ async function main() {
         '/posts/post-inspecao-palavra-gesto.html',
         '/posts/post-inspecao-palavra-risco.html',
         '/posts/post-inspecao-palavra-verdade.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -125,11 +125,11 @@ async function main() {
       id: 'sinal',
       word: 'sinal',
       simple:
-        'Lat. signum — marca, aviso, trânsito e «dar sinal»; elos gesto, risco, verdade; Faça o melhor!',
+        'Lat. signum — marca, aviso, trânsito e «dar sinal»; elos gesto, risco, verdade; Valeu !!!',
       simpleEn:
-        'Lat. signum — mark, warning, traffic and “dar sinal”; links gesto, risco, verdade; Do your best!',
+        'Lat. signum — mark, warning, traffic and “dar sinal”; links gesto, risco, verdade; Valeu !!!',
       simpleEs:
-        'Lat. signum — marca, aviso, tráfico y «dar sinal»; vínculos gesto, risco, verdade; ¡Haz lo mejor!',
+        'Lat. signum — marca, aviso, tráfico y «dar sinal»; vínculos gesto, risco, verdade; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -153,7 +153,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const rich =
-      '    sinal: { gloss: "Lat. signum — marca, aviso, trânsito e «dar sinal»; elos gesto, risco, verdade; Faça o melhor!", href: "/posts/post-inspecao-palavra-sinal.html", en: "signal / sign", es: "señal / signo", fr: "signal / signe", it: "segnale / segno", de: "Signal / Zeichen", el: "σήμα", la: "signum", yo: "àmì", sw: "ishara", gez: "təʾəmərt", nl: "signaal / teken", pl: "sygnał / znak", ru: "сигнал / знак", uk: "сигнал / знак", zh: "信号 / 记号", ja: "信号 / しるし", ko: "신호 / 표지", ar: "إشارة", he: "אות / סימן", hi: "संकेत", tr: "sinyal / işaret", sv: "signal / tecken", da: "signal / tegn", no: "signal / tegn", fi: "signaali / merkki", cs: "signál / znamení", ro: "semnal / semn", hu: "jel / szignal", ca: "senyal / signe", gl: "sinal / signo", eu: "seinale", gn: "señál", qu: "unancha", eo: "signalo / signo", vi: "tín hiệu / dấu hiệu", id: "sinyal / tanda", th: "สัญญาณ", hr: "signal / znak", sk: "signál / znamenie", ga: "comhartha", cy: "arwydd", ha: "alama", am: "ምልክት", fa: "نشانه / سیگنال", bn: "সংকেত", zu: "uphawu" },';
+      '    sinal: { gloss: "Lat. signum — marca, aviso, trânsito e «dar sinal»; elos gesto, risco, verdade; Valeu !!!", href: "/posts/post-inspecao-palavra-sinal.html", en: "signal / sign", es: "señal / signo", fr: "signal / signe", it: "segnale / segno", de: "Signal / Zeichen", el: "σήμα", la: "signum", yo: "àmì", sw: "ishara", gez: "təʾəmərt", nl: "signaal / teken", pl: "sygnał / znak", ru: "сигнал / знак", uk: "сигнал / знак", zh: "信号 / 记号", ja: "信号 / しるし", ko: "신호 / 표지", ar: "إشارة", he: "אות / סימן", hi: "संकेत", tr: "sinyal / işaret", sv: "signal / tecken", da: "signal / tegn", no: "signal / tegn", fi: "signaali / merkki", cs: "signál / znamení", ro: "semnal / semn", hu: "jel / szignal", ca: "senyal / signe", gl: "sinal / signo", eu: "seinale", gn: "señál", qu: "unancha", eo: "signalo / signo", vi: "tín hiệu / dấu hiệu", id: "sinyal / tanda", th: "สัญญาณ", hr: "signal / znak", sk: "signál / znamenie", ga: "comhartha", cy: "arwydd", ha: "alama", am: "ምልክት", fa: "نشانه / سیگنال", bn: "সংকেত", zu: "uphawu" },';
     if (/sinal: \{[^}]*href: "\/posts\/post-inspecao-palavra-sinal\.html"/.test(gloss)) {
       console.log('Glossário já tinha sinal enriquecido');
     } else if (/sinal: \{[\s\S]*?zu: "[^"]*" },/.test(gloss)) {

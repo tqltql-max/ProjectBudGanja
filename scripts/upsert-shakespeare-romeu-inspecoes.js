@@ -299,11 +299,11 @@ async function main() {
         id: 'william-shakespeare',
         word: 'Shakespeare',
         simple:
-          'Pessoa — William Shakespeare (1564–1616), ofício da palavra em palco; elo Romeu e Julieta. Capa holográfica = arte, não fonte. Faça o melhor!',
+          'Pessoa — William Shakespeare (1564–1616), ofício da palavra em palco; elo Romeu e Julieta. Capa holográfica = arte, não fonte. Valeu !!!',
         simpleEn:
-          'Person — William Shakespeare (1564–1616), craft of the word on stage; link Romeo and Juliet. Holographic cover = art, not a source. Do your best!',
+          'Person — William Shakespeare (1564–1616), craft of the word on stage; link Romeo and Juliet. Holographic cover = art, not a source. Valeu !!!',
         simpleEs:
-          'Persona — William Shakespeare (1564–1616), oficio de la palabra en escena; vínculo Romeu e Julieta. Portada holográfica = arte, no fuente. ¡Haz lo mejor!',
+          'Persona — William Shakespeare (1564–1616), oficio de la palabra en escena; vínculo Romeu e Julieta. Portada holográfica = arte, no fuente. ¡Valeu !!!',
         group: 'lexico',
         fromTitle: false,
         href: shakeHref,
@@ -328,11 +328,11 @@ async function main() {
         id: 'romeu-e-julieta',
         word: 'Romeu e Julieta',
         simple:
-          'Peça de Shakespeare — Verona, duas casas; o nome é o nó, a pessoa não é o apelido. Literatura, não protocolo. Faça o melhor!',
+          'Peça de Shakespeare — Verona, duas casas; o nome é o nó, a pessoa não é o apelido. Literatura, não protocolo. Valeu !!!',
         simpleEn:
-          'Shakespeare play — Verona, two houses; the name is the knot, the person is not the surname. Literature, not a protocol. Do your best!',
+          'Shakespeare play — Verona, two houses; the name is the knot, the person is not the surname. Literature, not a protocol. Valeu !!!',
         simpleEs:
-          'Pieza de Shakespeare — Verona, dos casas; el nombre es el nudo, la persona no es el apellido. Literatura, no protocolo. ¡Haz lo mejor!',
+          'Pieza de Shakespeare — Verona, dos casas; el nombre es el nudo, la persona no es el apellido. Literatura, no protocolo. ¡Valeu !!!',
         group: 'lexico',
         fromTitle: false,
         href: romeuHref,
@@ -357,11 +357,11 @@ async function main() {
         id: 'romeu-mais-julieta-1996',
         word: 'Romeu + Julieta',
         simple:
-          'Filme 1996 de Baz Luhrmann — Leonardo DiCaprio (Romeu) e Claire Danes (Julieta); mesmos versos, Verona Beach. A peça é Romeu e Julieta. Faça o melhor!',
+          'Filme 1996 de Baz Luhrmann — Leonardo DiCaprio (Romeu) e Claire Danes (Julieta); mesmos versos, Verona Beach. A peça é Romeu e Julieta. Valeu !!!',
         simpleEn:
-          '1996 Baz Luhrmann film — Leonardo DiCaprio (Romeo) and Claire Danes (Juliet); same verse, Verona Beach. The play is Romeo and Juliet. Do your best!',
+          '1996 Baz Luhrmann film — Leonardo DiCaprio (Romeo) and Claire Danes (Juliet); same verse, Verona Beach. The play is Romeo and Juliet. Valeu !!!',
         simpleEs:
-          'Filme 1996 de Baz Luhrmann — Leonardo DiCaprio (Romeo) y Claire Danes (Julieta); mismos versos, Verona Beach. La pieza es Romeu e Julieta. ¡Haz lo mejor!',
+          'Filme 1996 de Baz Luhrmann — Leonardo DiCaprio (Romeo) y Claire Danes (Julieta); mismos versos, Verona Beach. La pieza es Romeu e Julieta. ¡Valeu !!!',
         group: 'lexico',
         fromTitle: false,
         href: filmeHref,
@@ -386,11 +386,11 @@ async function main() {
         id: 'baz-luhrmann',
         word: 'Luhrmann',
         simple:
-          'Pessoa — Baz Luhrmann (n. 1962), ofício de palco no ecrã (Red Curtain); elo Romeu + Julieta (1996). Faça o melhor!',
+          'Pessoa — Baz Luhrmann (n. 1962), ofício de palco no ecrã (Red Curtain); elo Romeu + Julieta (1996). Valeu !!!',
         simpleEn:
-          'Person — Baz Luhrmann (b. 1962), craft of stage on screen (Red Curtain); link Romeo + Juliet (1996). Do your best!',
+          'Person — Baz Luhrmann (b. 1962), craft of stage on screen (Red Curtain); link Romeo + Juliet (1996). Valeu !!!',
         simpleEs:
-          'Persona — Baz Luhrmann (n. 1962), oficio de escenario en pantalla (Red Curtain); vínculo Romeu + Julieta (1996). ¡Haz lo mejor!',
+          'Persona — Baz Luhrmann (n. 1962), oficio de escenario en pantalla (Red Curtain); vínculo Romeu + Julieta (1996). ¡Valeu !!!',
         group: 'lexico',
         fromTitle: false,
         href: luhrmannHref,
@@ -415,11 +415,11 @@ async function main() {
         id: 'leonardo-dicaprio',
         word: 'DiCaprio',
         simple:
-          'Pessoa — Leonardo DiCaprio (n. 1974), ofício de presença no ecrã; âncora Romeu + Julieta (1996); inaugura Filmografias. Pessoa ≠ catálogo ≠ uma obra. Faça o melhor!',
+          'Pessoa — Leonardo DiCaprio (n. 1974), ofício de presença no ecrã; âncora Romeu + Julieta (1996); inaugura Filmografias. Pessoa ≠ catálogo ≠ uma obra. Valeu !!!',
         simpleEn:
-          'Person — Leonardo DiCaprio (b. 1974), craft of presence on screen; anchor Romeo + Juliet (1996); founds Filmographies. Person ≠ catalog ≠ one work. Do your best!',
+          'Person — Leonardo DiCaprio (b. 1974), craft of presence on screen; anchor Romeo + Juliet (1996); founds Filmographies. Person ≠ catalog ≠ one work. Valeu !!!',
         simpleEs:
-          'Persona — Leonardo DiCaprio (n. 1974), oficio de presencia en pantalla; ancla Romeu + Julieta (1996); inaugura Filmografías. Persona ≠ catálogo ≠ una obra. ¡Haz lo mejor!',
+          'Persona — Leonardo DiCaprio (n. 1974), oficio de presencia en pantalla; ancla Romeu + Julieta (1996); inaugura Filmografías. Persona ≠ catálogo ≠ una obra. ¡Valeu !!!',
         group: 'lexico',
         fromTitle: false,
         href: dicaprioHref,
@@ -444,11 +444,11 @@ async function main() {
         id: 'filmografia-leonardo-dicaprio',
         word: 'filmografia',
         simple:
-          'Tipo novo — catálogo de ofício de ecrã. A série Filmografias inaugura-se com Leonardo DiCaprio. Lista ≠ trinta inspeções de filme. Faça o melhor!',
+          'Tipo novo — catálogo de ofício de ecrã. A série Filmografias inaugura-se com Leonardo DiCaprio. Lista ≠ trinta inspeções de filme. Valeu !!!',
         simpleEn:
-          'New type — a screen-craft catalog. The Filmographies series opens with Leonardo DiCaprio. A list ≠ thirty film inspections. Do your best!',
+          'New type — a screen-craft catalog. The Filmographies series opens with Leonardo DiCaprio. A list ≠ thirty film inspections. Valeu !!!',
         simpleEs:
-          'Tipo nuevo — catálogo de oficio de pantalla. La serie Filmografías se inaugura con Leonardo DiCaprio. Lista ≠ treinta inspecciones de filme. ¡Haz lo mejor!',
+          'Tipo nuevo — catálogo de oficio de pantalla. La serie Filmografías se inaugura con Leonardo DiCaprio. Lista ≠ treinta inspecciones de filme. ¡Valeu !!!',
         group: 'lexico',
         fromTitle: false,
         href: filoHref,
@@ -475,7 +475,7 @@ async function main() {
   upsertGloss(
     GLOSS_FILE,
     '    shakespeare:\\s*\\{[\\s\\S]*?\\},',
-    '    shakespeare: { tone: "craft", category: "Ofício", mundane: "William Shakespeare (1564–1616) — poeta, dramaturgo e actor.", gloss: "Ofício da palavra em palco; elo Romeu e Julieta; capa holográfica = arte, não fonte; Faça o melhor!", href: "/posts/post-inspecao-figura-william-shakespeare.html", en: "Shakespeare", es: "Shakespeare", fr: "Shakespeare", it: "Shakespeare", de: "Shakespeare", el: "Σαίξπηρ", la: "Shakesperius", yo: "Shakespeare", sw: "Shakespeare", gez: "Shakespeare", nl: "Shakespeare", pl: "Shakespeare", ru: "Шекспир", uk: "Шекспір", zh: "莎士比亚", ja: "シェイクスピア", ko: "셰익스피어", ar: "شكسبير", he: "שייקספיר", hi: "शेक्सपियर", tr: "Shakespeare", sv: "Shakespeare", da: "Shakespeare", no: "Shakespeare", fi: "Shakespeare", cs: "Shakespeare", ro: "Shakespeare", hu: "Shakespeare", ca: "Shakespeare", gl: "Shakespeare", eu: "Shakespeare", gn: "Shakespeare", qu: "Shakespeare", eo: "Ŝekspiro", vi: "Shakespeare", id: "Shakespeare", th: "เชกสเปียร์", hr: "Shakespeare", sk: "Shakespeare", ga: "Shakespeare", cy: "Shakespeare", ha: "Shakespeare", am: "ሼክስፒር", fa: "شکسپیر", bn: "শেকসপিয়র", zu: "uShakespeare" },',
+    '    shakespeare: { tone: "craft", category: "Ofício", mundane: "William Shakespeare (1564–1616) — poeta, dramaturgo e actor.", gloss: "Ofício da palavra em palco; elo Romeu e Julieta; capa holográfica = arte, não fonte; Valeu !!!", href: "/posts/post-inspecao-figura-william-shakespeare.html", en: "Shakespeare", es: "Shakespeare", fr: "Shakespeare", it: "Shakespeare", de: "Shakespeare", el: "Σαίξπηρ", la: "Shakesperius", yo: "Shakespeare", sw: "Shakespeare", gez: "Shakespeare", nl: "Shakespeare", pl: "Shakespeare", ru: "Шекспир", uk: "Шекспір", zh: "莎士比亚", ja: "シェイクスピア", ko: "셰익스피어", ar: "شكسبير", he: "שייקספיר", hi: "शेक्सपियर", tr: "Shakespeare", sv: "Shakespeare", da: "Shakespeare", no: "Shakespeare", fi: "Shakespeare", cs: "Shakespeare", ro: "Shakespeare", hu: "Shakespeare", ca: "Shakespeare", gl: "Shakespeare", eu: "Shakespeare", gn: "Shakespeare", qu: "Shakespeare", eo: "Ŝekspiro", vi: "Shakespeare", id: "Shakespeare", th: "เชกสเปียร์", hr: "Shakespeare", sk: "Shakespeare", ga: "Shakespeare", cy: "Shakespeare", ha: "Shakespeare", am: "ሼክስፒር", fa: "شکسپیر", bn: "শেকসপিয়র", zu: "uShakespeare" },',
     'skill'
   );
   upsertGloss(
@@ -487,7 +487,7 @@ async function main() {
   upsertGloss(
     GLOSS_FILE,
     '    "romeu e julieta":\\s*\\{[\\s\\S]*?\\},',
-    '    "romeu e julieta": { tone: "caution", category: "Peça", mundane: "Tragédia de Shakespeare — Verona, duas casas.", gloss: "O nome é o nó; a pessoa não é o apelido; What’s in a name?; literatura ≠ protocolo; Faça o melhor!", href: "/posts/post-inspecao-arte-romeu-e-julieta.html", en: "Romeo and Juliet", es: "Romeo y Julieta", fr: "Roméo et Juliette", it: "Romeo e Giulietta", de: "Romeo und Julia", el: "Ρωμαίος και Ιουλιέτα", la: "Romeus et Iulietta", yo: "Romeo ati Juliet", sw: "Romeo na Juliet", gez: "Romeo Juliet", nl: "Romeo en Julia", pl: "Romeo i Julia", ru: "Ромео и Джульетта", uk: "Ромео і Джульєтта", zh: "罗密欧与朱丽叶", ja: "ロミオとジュリエット", ko: "로미오와 줄리엣", ar: "روميو وجولييت", he: "רומיאו ויוליה", hi: "रोमियो और जूलियट", tr: "Romeo ve Juliet", sv: "Romeo och Julia", da: "Romeo og Julie", no: "Romeo og Julie", fi: "Romeo ja Julia", cs: "Romeo a Julie", ro: "Romeo și Julieta", hu: "Rómeó és Júlia", ca: "Romeu i Julieta", gl: "Romeu e Xulieta", eu: "Romeo eta Julieta", gn: "Romeo ha Julieta", qu: "Romeo wan Julieta", eo: "Romeo kaj Julieta", vi: "Romeo va Juliet", id: "Romeo dan Juliet", th: "โรมิโอและจูเลียต", hr: "Romeo i Julija", sk: "Romeo a Júlia", ga: "Romeo agus Juliet", cy: "Romeo a Juliet", ha: "Romeo da Juliet", am: "ሮሜዮ እና ጁልየት", fa: "رومئو و ژولیت", bn: "রোমিও ও জুলিয়েট", zu: "uRomeo noJuliet" },',
+    '    "romeu e julieta": { tone: "caution", category: "Peça", mundane: "Tragédia de Shakespeare — Verona, duas casas.", gloss: "O nome é o nó; a pessoa não é o apelido; What’s in a name?; literatura ≠ protocolo; Valeu !!!", href: "/posts/post-inspecao-arte-romeu-e-julieta.html", en: "Romeo and Juliet", es: "Romeo y Julieta", fr: "Roméo et Juliette", it: "Romeo e Giulietta", de: "Romeo und Julia", el: "Ρωμαίος και Ιουλιέτα", la: "Romeus et Iulietta", yo: "Romeo ati Juliet", sw: "Romeo na Juliet", gez: "Romeo Juliet", nl: "Romeo en Julia", pl: "Romeo i Julia", ru: "Ромео и Джульетта", uk: "Ромео і Джульєтта", zh: "罗密欧与朱丽叶", ja: "ロミオとジュリエット", ko: "로미오와 줄리엣", ar: "روميو وجولييت", he: "רומיאו ויוליה", hi: "रोमियो और जूलियट", tr: "Romeo ve Juliet", sv: "Romeo och Julia", da: "Romeo og Julie", no: "Romeo og Julie", fi: "Romeo ja Julia", cs: "Romeo a Julie", ro: "Romeo și Julieta", hu: "Rómeó és Júlia", ca: "Romeu i Julieta", gl: "Romeu e Xulieta", eu: "Romeo eta Julieta", gn: "Romeo ha Julieta", qu: "Romeo wan Julieta", eo: "Romeo kaj Julieta", vi: "Romeo va Juliet", id: "Romeo dan Juliet", th: "โรมิโอและจูเลียต", hr: "Romeo i Julija", sk: "Romeo a Júlia", ga: "Romeo agus Juliet", cy: "Romeo a Juliet", ha: "Romeo da Juliet", am: "ሮሜዮ እና ጁልየት", fa: "رومئو و ژولیت", bn: "রোমিও ও জুলিয়েট", zu: "uRomeo noJuliet" },',
     'shakespeare'
   );
   upsertGloss(
@@ -499,13 +499,13 @@ async function main() {
   upsertGloss(
     GLOSS_FILE,
     '    "romeu \\+ julieta":\\s*\\{[\\s\\S]*?\\},',
-    '    "romeu + julieta": { tone: "craft", category: "Filme", mundane: "Filme 1996 de Baz Luhrmann — DiCaprio e Danes.", gloss: "Mesmos versos, Verona Beach; peça = Romeu e Julieta; pessoa em DiCaprio; Faça o melhor!", href: "/posts/post-inspecao-filme-romeu-mais-julieta.html", en: "Romeo + Juliet", es: "Romeo + Julieta" },',
+    '    "romeu + julieta": { tone: "craft", category: "Filme", mundane: "Filme 1996 de Baz Luhrmann — DiCaprio e Danes.", gloss: "Mesmos versos, Verona Beach; peça = Romeu e Julieta; pessoa em DiCaprio; Valeu !!!", href: "/posts/post-inspecao-filme-romeu-mais-julieta.html", en: "Romeo + Juliet", es: "Romeo + Julieta" },',
     'shakespeare'
   );
   upsertGloss(
     GLOSS_FILE,
     '    luhrmann:\\s*\\{[\\s\\S]*?\\},',
-    '    luhrmann: { tone: "craft", category: "Ofício", mundane: "Baz Luhrmann (n. 1962) — cineasta; Red Curtain.", gloss: "Ofício de palco no ecrã; elo Romeu + Julieta (1996); Faça o melhor!", href: "/posts/post-inspecao-figura-baz-luhrmann.html", en: "Luhrmann", es: "Luhrmann" },',
+    '    luhrmann: { tone: "craft", category: "Ofício", mundane: "Baz Luhrmann (n. 1962) — cineasta; Red Curtain.", gloss: "Ofício de palco no ecrã; elo Romeu + Julieta (1996); Valeu !!!", href: "/posts/post-inspecao-figura-baz-luhrmann.html", en: "Luhrmann", es: "Luhrmann" },',
     'shakespeare'
   );
   upsertGloss(
@@ -517,7 +517,7 @@ async function main() {
   upsertGloss(
     GLOSS_FILE,
     '    dicaprio:\\s*\\{[\\s\\S]*?\\},',
-    '    dicaprio: { tone: "craft", category: "Ofício", mundane: "Leonardo DiCaprio (n. 1974) — actor; ofício de ecrã.", gloss: "Pessoa ≠ catálogo ≠ uma obra; âncora Romeu + Julieta (1996); inaugura Filmografias; Faça o melhor!", href: "/posts/post-inspecao-figura-leonardo-dicaprio.html", en: "DiCaprio", es: "DiCaprio" },',
+    '    dicaprio: { tone: "craft", category: "Ofício", mundane: "Leonardo DiCaprio (n. 1974) — actor; ofício de ecrã.", gloss: "Pessoa ≠ catálogo ≠ uma obra; âncora Romeu + Julieta (1996); inaugura Filmografias; Valeu !!!", href: "/posts/post-inspecao-figura-leonardo-dicaprio.html", en: "DiCaprio", es: "DiCaprio" },',
     'shakespeare'
   );
   upsertGloss(
@@ -529,7 +529,7 @@ async function main() {
   upsertGloss(
     GLOSS_FILE,
     '    filmografia:\\s*\\{[\\s\\S]*?\\},',
-    '    filmografia: { tone: "craft", category: "Catálogo", mundane: "Lista de títulos de ecrã de uma pessoa.", gloss: "Tipo novo BudGanja; inauguração DiCaprio; lista ≠ trinta inspeções; Faça o melhor!", href: "/posts/post-inspecao-filmografia-leonardo-dicaprio.html", en: "filmography", es: "filmografía" },',
+    '    filmografia: { tone: "craft", category: "Catálogo", mundane: "Lista de títulos de ecrã de uma pessoa.", gloss: "Tipo novo BudGanja; inauguração DiCaprio; lista ≠ trinta inspeções; Valeu !!!", href: "/posts/post-inspecao-filmografia-leonardo-dicaprio.html", en: "filmography", es: "filmografía" },',
     'shakespeare'
   );
   upsertGloss(

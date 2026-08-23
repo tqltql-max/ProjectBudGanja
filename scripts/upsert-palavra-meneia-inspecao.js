@@ -78,9 +78,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: «meneia» / menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto e mãos; Faça o melhor!',
-      whyEn: 'Words: “meneia” / menear (*manear* ← hand) — body sway and craft; links gesto and mãos; Do your best!',
-      whyEs: 'Palabras: «meneia» / menear (*manear* ← mano) — balanceo del cuerpo y oficio; vínculos gesto y mãos; ¡Haz lo mejor!',
+      why: 'Palavras: «meneia» / menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto e mãos; Valeu !!!',
+      whyEn: 'Words: “meneia” / menear (*manear* ← hand) — body sway and craft; links gesto and mãos; Valeu !!!',
+      whyEs: 'Palabras: «meneia» / menear (*manear* ← mano) — balanceo del cuerpo y oficio; vínculos gesto y mãos; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -89,7 +89,7 @@ async function main() {
         'https://www.aulete.com.br/menear',
         gestoHref,
         maosHref,
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Forma viva de menear; irmã rítmica de gesto.'
     };
@@ -108,11 +108,11 @@ async function main() {
       id: 'meneia',
       word: 'meneia',
       simple:
-        'Forma viva de menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto/mãos; Faça o melhor!',
+        'Forma viva de menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto/mãos; Valeu !!!',
       simpleEn:
-        'Living form of menear (*manear* ← hand) — body sway and craft; links gesto/mãos; Do your best!',
+        'Living form of menear (*manear* ← hand) — body sway and craft; links gesto/mãos; Valeu !!!',
       simpleEs:
-        'Forma viva de menear (*manear* ← mano) — balanceo del cuerpo y oficio; vínculos gesto/mãos; ¡Haz lo mejor!',
+        'Forma viva de menear (*manear* ← mano) — balanceo del cuerpo y oficio; vínculos gesto/mãos; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -138,7 +138,7 @@ async function main() {
     if (!gloss.includes('meneia: {') && !gloss.includes('menear: {')) {
       const re = /(gesto: \{[\s\S]*?zu: "gesture" },\r?\n)/;
       const entry =
-        '    meneia: { gloss: "Forma viva de menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto/mãos; Faça o melhor!", href: "/posts/post-inspecao-palavra-meneia.html", en: "sways / sway!", es: "menea", fr: "balance", it: "dondola", de: "schwenkt", el: "κουνάει", la: "iactat", yo: "mi n yí", sw: "inatikisa", gez: "yənaqəṭ", nl: "zwaait", pl: "kołysze", ru: "качает", uk: "гойдає", zh: "摇摆", ja: "揺らす", ko: "흔들다", ar: "يهز", he: "מניע", hi: "हिलाता", tr: "sallar", sv: "vippar", da: "vipper", no: "vipper", fi: "heiluttaa", cs: "kývá", ro: "legănă", hu: "leng", ca: "balanceja", gl: "menea", eu: "kulunkatu", gn: "mýi", qu: "kuyuy", eo: "balancas", vi: "lắc", id: "menggoyang", th: "แกว่ง", hr: "njiše", sk: "kýva", ga: "luascann", cy: "sigla", ha: "girkawa", am: "ያንቀሳቅሳል", fa: "تکان می‌دهد", bn: "দোলায়", zu: "nyakazisa" },\n' +
+        '    meneia: { gloss: "Forma viva de menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto/mãos; Valeu !!!", href: "/posts/post-inspecao-palavra-meneia.html", en: "sways / sway!", es: "menea", fr: "balance", it: "dondola", de: "schwenkt", el: "κουνάει", la: "iactat", yo: "mi n yí", sw: "inatikisa", gez: "yənaqəṭ", nl: "zwaait", pl: "kołysze", ru: "качает", uk: "гойдає", zh: "摇摆", ja: "揺らす", ko: "흔들다", ar: "يهز", he: "מניע", hi: "हिलाता", tr: "sallar", sv: "vippar", da: "vipper", no: "vipper", fi: "heiluttaa", cs: "kývá", ro: "legănă", hu: "leng", ca: "balanceja", gl: "menea", eu: "kulunkatu", gn: "mýi", qu: "kuyuy", eo: "balancas", vi: "lắc", id: "menggoyang", th: "แกว่ง", hr: "njiše", sk: "kýva", ga: "luascann", cy: "sigla", ha: "girkawa", am: "ያንቀሳቅሳል", fa: "تکان می‌دهد", bn: "দোলায়", zu: "nyakazisa" },\n' +
         '    menear: { gloss: "Lema de meneia — mover de um lado ao outro; manejar; elo gesto/mãos.", href: "/posts/post-inspecao-palavra-meneia.html", en: "to sway / to wag", es: "menear", fr: "balancer", it: "dondolare", de: "schwenken", el: "κουνώ", la: "iactare", yo: "yí", sw: "tikisa", gez: "naqəṭä", nl: "zwaaien", pl: "kołysać", ru: "качать", uk: "гойдати", zh: "摇摆", ja: "揺らす", ko: "흔들다", ar: "هز", he: "להניע", hi: "हिलाना", tr: "sallamak", sv: "vippa", da: "vippe", no: "vippe", fi: "heiluttaa", cs: "kývat", ro: "a legăna", hu: "lengeni", ca: "balancejar", gl: "menear", eu: "kulunkatu", gn: "mýi", qu: "kuyuy", eo: "balanci", vi: "lắc", id: "menggoyang", th: "แกว่ง", hr: "njihati", sk: "kývať", ga: "luascaidh", cy: "siglo", ha: "girkawa", am: "ማንቀሳቀስ", fa: "تکان دادن", bn: "দোলানো", zu: "ukunyakazisa" },\n';
       if (re.test(gloss)) {
         gloss = gloss.replace(re, '$1' + entry);

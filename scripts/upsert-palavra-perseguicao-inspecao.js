@@ -89,9 +89,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: perseguição (lat. persequī) — caça/opressão/obsessão; contraste prosseguir; caminho/risco/EXIT; Faça o melhor!',
-      whyEn: 'Words: perseguição (Lat. persequī) — chase/oppression/obsession; contrast prosseguir; caminho/risco/EXIT; Do your best!',
-      whyEs: 'Palabras: perseguição (lat. persequī) — caza/opresión/obsesión; contraste prosseguir; caminho/risco/EXIT; ¡Haz lo mejor!',
+      why: 'Palavras: perseguição (lat. persequī) — caça/opressão/obsessão; contraste prosseguir; caminho/risco/EXIT; Valeu !!!',
+      whyEn: 'Words: perseguição (Lat. persequī) — chase/oppression/obsession; contrast prosseguir; caminho/risco/EXIT; Valeu !!!',
+      whyEs: 'Palabras: perseguição (lat. persequī) — caza/opresión/obsesión; contraste prosseguir; caminho/risco/EXIT; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -101,7 +101,7 @@ async function main() {
         '/posts/post-inspecao-palavra-caminho.html',
         '/posts/post-inspecao-palavra-risco.html',
         '/posts/post-inspecao-palavra-exit.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — per- ≠ pro-; palavra ≠ relatório clínico.'
     };
@@ -120,11 +120,11 @@ async function main() {
       id: 'perseguicao',
       word: 'perseguição',
       simple:
-        'Lat. persequī — caça, opressão e obsessão; contraste prosseguir; elos caminho/risco/EXIT; Faça o melhor!',
+        'Lat. persequī — caça, opressão e obsessão; contraste prosseguir; elos caminho/risco/EXIT; Valeu !!!',
       simpleEn:
-        'Lat. persequī — chase, oppression and obsession; contrast prosseguir; links caminho/risco/EXIT; Do your best!',
+        'Lat. persequī — chase, oppression and obsession; contrast prosseguir; links caminho/risco/EXIT; Valeu !!!',
       simpleEs:
-        'Lat. persequī — caza, opresión y obsesión; contraste prosseguir; vínculos caminho/risco/EXIT; ¡Haz lo mejor!',
+        'Lat. persequī — caza, opresión y obsesión; contraste prosseguir; vínculos caminho/risco/EXIT; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -150,7 +150,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    perseguicao: { tone: "caution", gloss: "Lat. persequī — caça × opressão × obsessão; contraste prosseguir; elos caminho/risco/EXIT; Faça o melhor!", href: "/posts/post-inspecao-palavra-perseguicao.html", en: "persecution / pursuit", es: "persecucion", fr: "persecution", it: "persecuzione", de: "Verfolgung", el: "diogmos", la: "persecutio", yo: "ininile", sw: "udhalimu", gez: "säddätä", nl: "vervolging", pl: "prześladowanie", ru: "presledovanie", uk: "peresliduvannya", zh: "pohai", ja: "hakugai", ko: "bakhae", ar: "idtibad", he: "redifah", hi: "utpiran", tr: "zulum", sv: "forfoljelse", da: "forfolgelse", no: "forfolgelse", fi: "vaino", cs: "pronasledovani", ro: "persecutie", hu: "uldozes", ca: "persecucio", gl: "persecucion", eu: "jazarpen", gn: "jopyhy", qu: "qatikachay", eo: "persekuto", vi: "dan ap", id: "penganiayaan", th: "kan khaengkhied", hr: "progon", sk: "pronasledovanie", ga: "gearran", cy: "erlid", ha: "zalunci", am: "sitot", fa: "azit", bn: "nirjaton", zu: "ukushushiswa" },';
+      '    perseguicao: { tone: "caution", gloss: "Lat. persequī — caça × opressão × obsessão; contraste prosseguir; elos caminho/risco/EXIT; Valeu !!!", href: "/posts/post-inspecao-palavra-perseguicao.html", en: "persecution / pursuit", es: "persecucion", fr: "persecution", it: "persecuzione", de: "Verfolgung", el: "diogmos", la: "persecutio", yo: "ininile", sw: "udhalimu", gez: "säddätä", nl: "vervolging", pl: "prześladowanie", ru: "presledovanie", uk: "peresliduvannya", zh: "pohai", ja: "hakugai", ko: "bakhae", ar: "idtibad", he: "redifah", hi: "utpiran", tr: "zulum", sv: "forfoljelse", da: "forfolgelse", no: "forfolgelse", fi: "vaino", cs: "pronasledovani", ro: "persecutie", hu: "uldozes", ca: "persecucio", gl: "persecucion", eu: "jazarpen", gn: "jopyhy", qu: "qatikachay", eo: "persekuto", vi: "dan ap", id: "penganiayaan", th: "kan khaengkhied", hr: "progon", sk: "pronasledovanie", ga: "gearran", cy: "erlid", ha: "zalunci", am: "sitot", fa: "azit", bn: "nirjaton", zu: "ukushushiswa" },';
     const entryAccent =
       '    perseguição: { tone: "caution", gloss: "Lat. persequī — caça × opressão × obsessão; contraste prosseguir; elos caminho/risco/EXIT.", href: "/posts/post-inspecao-palavra-perseguicao.html", en: "persecution / pursuit", es: "persecucion", fr: "persecution", it: "persecuzione", de: "Verfolgung", el: "diogmos", la: "persecutio", yo: "ininile", sw: "udhalimu", gez: "säddätä", nl: "vervolging", pl: "prześladowanie", ru: "presledovanie", uk: "peresliduvannya", zh: "pohai", ja: "hakugai", ko: "bakhae", ar: "idtibad", he: "redifah", hi: "utpiran", tr: "zulum", sv: "forfoljelse", da: "forfolgelse", no: "forfolgelse", fi: "vaino", cs: "pronasledovani", ro: "persecutie", hu: "uldozes", ca: "persecucio", gl: "persecucion", eu: "jazarpen", gn: "jopyhy", qu: "qatikachay", eo: "persekuto", vi: "dan ap", id: "penganiayaan", th: "kan khaengkhied", hr: "progon", sk: "pronasledovanie", ga: "gearran", cy: "erlid", ha: "zalunci", am: "sitot", fa: "azit", bn: "nirjaton", zu: "ukushushiswa" },';
     if (/perseguicao:\s*\{/.test(gloss)) {

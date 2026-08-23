@@ -90,9 +90,9 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Inacreditável — beyond belief, elogio BR e Faça o melhor!',
-      titleEn: 'Inacreditável — beyond belief, BR praise, and Do your best!',
-      titleEs: 'Inacreditável — más allá de lo creíble, elogio BR y ¡Haz lo mejor!',
+      title: 'Inacreditável — beyond belief, elogio BR e Valeu !!!',
+      titleEn: 'Inacreditável — beyond belief, BR praise, and Valeu !!!',
+      titleEs: 'Inacreditável — más allá de lo creíble, elogio BR y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
@@ -107,7 +107,7 @@ async function main() {
         'https://pt.wiktionary.org/wiki/acreditar',
         '/posts/post-inspecao-palavra-incrivel.html',
         '/posts/post-inspecao-palavra-genial.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — beyond belief × elogio; irmão de incrível.'
     };
@@ -126,11 +126,11 @@ async function main() {
       id: 'inacreditavel',
       word: 'inacreditável',
       simple:
-        'in- + acreditável (← credere) — não acreditável / elogio BR «beyond belief»; irmão de incrível; Faça o melhor depois do «não acredito».',
+        'in- + acreditável (← credere) — não acreditável / elogio BR «beyond belief»; irmão de incrível; Valeu !!! depois do «não acredito».',
       simpleEn:
-        'in- + acreditável (← credere) — unbelievable / BR praise “beyond belief”; sister of incrível; Do your best after the wow.',
+        'in- + acreditável (← credere) — unbelievable / BR praise “beyond belief”; sister of incrível; Valeu !!! after the wow.',
       simpleEs:
-        'in- + acreditável (← credere) — increíble / elogio BR «beyond belief»; hermana de incrível; Haz lo mejor después del «no lo creo».',
+        'in- + acreditável (← credere) — increíble / elogio BR «beyond belief»; hermana de incrível; Valeu !!! después del «no lo creo».',
       group: 'lexico',
       fromTitle: false,
       href
@@ -155,7 +155,7 @@ async function main() {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     if (!gloss.includes('inacreditavel: {')) {
       const entry =
-        '    inacreditavel: { gloss: "in- + acreditável ← credere — beyond belief / elogio BR; escala com incrível e genial; Faça o melhor!", href: "/posts/post-inspecao-palavra-inacreditavel.html", en: "unbelievable / beyond belief", es: "increíble / inacreditável", fr: "incroyable", it: "incredibile", de: "unglaublich", el: "απίστευτος", la: "incredibilis", yo: "àìgbàgbọ́", sw: "asiyeaminika", gez: "ዘኢይትአመን", nl: "ongelooflijk", pl: "niewiarygodny", ru: "невероятный", uk: "неймовірний", zh: "难以置信的", ja: "信じられない", ko: "믿을 수 없는", ar: "لا يصدق", he: "לא ייאמן", hi: "अविश्वसनीय", tr: "inanılmaz", sv: "otrolig", da: "utrolig", no: "utrolig", fi: "uskomaton", cs: "neuvěřitelný", ro: "de necrezut", hu: "hihetetlen", ca: "inacreditable", gl: "inacreditábel", eu: "sinestezina", gn: "ndaikatúiva jerovia", qu: "mana iñinapaq", eo: "nekredebla", vi: "không thể tin được", id: "luar biasa", th: "เหลือเชื่อ", hr: "nevjerojatan", sk: "neuveriteľný", ga: "dochreidte", cy: "anhygoel", ha: "abin mamaki", am: "የማይታመን", fa: "باورنکردنی", bn: "অবিশ্বাস্য", zu: "okungakholeki" },\n';
+        '    inacreditavel: { gloss: "in- + acreditável ← credere — beyond belief / elogio BR; escala com incrível e genial; Valeu !!!", href: "/posts/post-inspecao-palavra-inacreditavel.html", en: "unbelievable / beyond belief", es: "increíble / inacreditável", fr: "incroyable", it: "incredibile", de: "unglaublich", el: "απίστευτος", la: "incredibilis", yo: "àìgbàgbọ́", sw: "asiyeaminika", gez: "ዘኢይትአመን", nl: "ongelooflijk", pl: "niewiarygodny", ru: "невероятный", uk: "неймовірний", zh: "难以置信的", ja: "信じられない", ko: "믿을 수 없는", ar: "لا يصدق", he: "לא ייאמן", hi: "अविश्वसनीय", tr: "inanılmaz", sv: "otrolig", da: "utrolig", no: "utrolig", fi: "uskomaton", cs: "neuvěřitelný", ro: "de necrezut", hu: "hihetetlen", ca: "inacreditable", gl: "inacreditábel", eu: "sinestezina", gn: "ndaikatúiva jerovia", qu: "mana iñinapaq", eo: "nekredebla", vi: "không thể tin được", id: "luar biasa", th: "เหลือเชื่อ", hr: "nevjerojatan", sk: "neuveriteľný", ga: "dochreidte", cy: "anhygoel", ha: "abin mamaki", am: "የማይታመን", fa: "باورنکردنی", bn: "অবিশ্বাস্য", zu: "okungakholeki" },\n';
       const reIncrivel = /(incrivel: \{[\s\S]*?zu: "[^"]*" },\r?\n)/;
       const reGenial = /(genial: \{[\s\S]*?zu: "[^"]*" },\r?\n)/;
       if (reIncrivel.test(gloss)) {

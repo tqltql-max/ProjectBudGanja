@@ -110,9 +110,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: passado (de passar / lat. passāre) — tempo decorrido; memória × história; elos memorável/verdade/língua; Faça o melhor!',
-      whyEn: 'Words: passado (from passar / Lat. passāre) — elapsed time; memory × history; memorável/truth/language; Do your best!',
-      whyEs: 'Palabras: passado (de passar / lat. passāre) — tiempo trascurrido; memoria × historia; memorável/verdad/lengua; ¡Haz lo mejor!',
+      why: 'Palavras: passado (de passar / lat. passāre) — tempo decorrido; memória × história; elos memorável/verdade/língua; Valeu !!!',
+      whyEn: 'Words: passado (from passar / Lat. passāre) — elapsed time; memory × history; memorável/truth/language; Valeu !!!',
+      whyEs: 'Palabras: passado (de passar / lat. passāre) — tiempo trascurrido; memoria × historia; memorável/verdad/lengua; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -123,7 +123,7 @@ async function main() {
         '/posts/post-inspecao-palavra-memoravel.html',
         '/posts/post-inspecao-palavra-verdade.html',
         '/posts/post-inspecao-palavra-lingua-portuguesa.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — tipografia psasafo → passado; filho de passar.'
     };
@@ -142,11 +142,11 @@ async function main() {
       id: 'passado',
       word: 'passado',
       simple:
-        'De passar / lat. passāre — tempo já decorrido; memória × história; elos memorável, verdade, língua; Faça o melhor!',
+        'De passar / lat. passāre — tempo já decorrido; memória × história; elos memorável, verdade, língua; Valeu !!!',
       simpleEn:
-        'From passar / Lat. passāre — elapsed time; memory × history; links memorável, truth, language; Do your best!',
+        'From passar / Lat. passāre — elapsed time; memory × history; links memorável, truth, language; Valeu !!!',
       simpleEs:
-        'De passar / lat. passāre — tiempo trascurrido; memoria × historia; vínculos memorável, verdad, lengua; ¡Haz lo mejor!',
+        'De passar / lat. passāre — tiempo trascurrido; memoria × historia; vínculos memorável, verdad, lengua; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -170,7 +170,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    passado: { gloss: "De passar / lat. passāre — tempo decorrido; memória × história; elos memorável/verdade/língua; Faça o melhor!", href: "/posts/post-inspecao-palavra-passado.html", en: "past", es: "pasado", fr: "passé", it: "passato", de: "Vergangenheit", el: "παρελθόν", la: "praeteritum", yo: "àtijọ́", sw: "zamani", gez: "zämän zäläfä", nl: "verleden", pl: "przeszłość", ru: "прошлое", uk: "минуле", zh: "过去", ja: "過去", ko: "과거", ar: "ماضٍ", he: "עבר", hi: "अतीत", tr: "geçmiş", sv: "förflutet", da: "fortid", no: "fortid", fi: "menneisyys", cs: "minulost", ro: "trecut", hu: "múlt", ca: "passat", gl: "pasado", eu: "iragan", gn: "oykéva", qu: "ñawpa", eo: "pasinto", vi: "quá khứ", id: "masa lalu", th: "อดีต", hr: "prošlost", sk: "minulosť", ga: "am atá thart", cy: "gorffennol", ha: "baya", am: "ያለፈ", fa: "گذشته", bn: "অতীত", zu: "okudlule" },';
+      '    passado: { gloss: "De passar / lat. passāre — tempo decorrido; memória × história; elos memorável/verdade/língua; Valeu !!!", href: "/posts/post-inspecao-palavra-passado.html", en: "past", es: "pasado", fr: "passé", it: "passato", de: "Vergangenheit", el: "παρελθόν", la: "praeteritum", yo: "àtijọ́", sw: "zamani", gez: "zämän zäläfä", nl: "verleden", pl: "przeszłość", ru: "прошлое", uk: "минуле", zh: "过去", ja: "過去", ko: "과거", ar: "ماضٍ", he: "עבר", hi: "अतीत", tr: "geçmiş", sv: "förflutet", da: "fortid", no: "fortid", fi: "menneisyys", cs: "minulost", ro: "trecut", hu: "múlt", ca: "passat", gl: "pasado", eu: "iragan", gn: "oykéva", qu: "ñawpa", eo: "pasinto", vi: "quá khứ", id: "masa lalu", th: "อดีต", hr: "prošlost", sk: "minulosť", ga: "am atá thart", cy: "gorffennol", ha: "baya", am: "ያለፈ", fa: "گذشته", bn: "অতীত", zu: "okudlule" },';
     if (/passado:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    passado:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

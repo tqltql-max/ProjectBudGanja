@@ -83,15 +83,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Esperança — afecto vivo, espera com ofício e Faça o melhor!',
-      titleEn: 'Esperança — lived hope, waiting with craft and Do your best!',
-      titleEs: 'Esperança — esperanza vivida, espera con oficio y ¡Haz lo mejor!',
+      title: 'Esperança — afecto vivo, espera com ofício e Valeu !!!',
+      titleEn: 'Esperança — lived hope, waiting with craft and Valeu !!!',
+      titleEs: 'Esperança — esperanza vivida, espera con oficio y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: esperança (lat. spēs / sperantia) — afecto vivo BR; esperar × esperança; rede alegria/medo/tristeza; Faça o melhor!',
-      whyEn: 'Words: esperança (Lat. spēs / sperantia) — lived BR hope; wait vs hope; joy/fear/sadness net; Do your best!',
-      whyEs: 'Palabras: esperança (lat. spēs / sperantia) — esperanza vivida BR; esperar × esperança; red alegría/miedo/tristeza; ¡Haz lo mejor!',
+      why: 'Palavras: esperança (lat. spēs / sperantia) — afecto vivo BR; esperar × esperança; rede alegria/medo/tristeza; Valeu !!!',
+      whyEn: 'Words: esperança (Lat. spēs / sperantia) — lived BR hope; wait vs hope; joy/fear/sadness net; Valeu !!!',
+      whyEs: 'Palabras: esperança (lat. spēs / sperantia) — esperanza vivida BR; esperar × esperança; red alegría/miedo/tristeza; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -100,7 +100,7 @@ async function main() {
         'https://pt.wiktionary.org/wiki/esperar',
         '/posts/post-inspecao-palavra-alegria.html',
         '/posts/post-inspecao-palavra-medo.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — fresta viva; sem sermão; tipografia epseramja → esperança.'
     };
@@ -119,11 +119,11 @@ async function main() {
       id: 'esperanca',
       word: 'esperança',
       simple:
-        'Lat. spēs / sperantia — afecto vivo BR; esperar × esperança; fresta junto a medo/tristeza; Faça o melhor com ofício.',
+        'Lat. spēs / sperantia — afecto vivo BR; esperar × esperança; fresta junto a medo/tristeza; Valeu !!! com ofício.',
       simpleEn:
-        'Lat. spēs / sperantia — lived BR hope; wait vs hope; crack of light beside fear/sadness; Do your best with craft.',
+        'Lat. spēs / sperantia — lived BR hope; wait vs hope; crack of light beside fear/sadness; Valeu !!! with craft.',
       simpleEs:
-        'Lat. spēs / sperantia — esperanza vivida BR; esperar × esperança; rendija junto a miedo/tristeza; Haz lo mejor con oficio.',
+        'Lat. spēs / sperantia — esperanza vivida BR; esperar × esperança; rendija junto a miedo/tristeza; Valeu !!! con oficio.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -147,7 +147,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    esperança: { gloss: "Lat. spēs / sperantia — afecto vivo BR; esperar × esperança; fresta com ofício; Faça o melhor!", href: "/posts/post-inspecao-palavra-esperanca.html", en: "hope", es: "esperanza", fr: "espoir", it: "speranza", de: "Hoffnung", el: "ελπίδα", la: "spes", yo: "ìrètí", sw: "tumaini", gez: "tesfā", nl: "hoop", pl: "nadzieja", ru: "надежда", uk: "надія", zh: "希望", ja: "希望", ko: "희망", ar: "أمل", he: "תקווה", hi: "आशा", tr: "umut", sv: "hopp", da: "håb", no: "håp", fi: "toivo", cs: "naděje", ro: "speranță", hu: "remény", ca: "esperança", gl: "esperanza", eu: "espero", gn: "jerovia", qu: "suyay", eo: "espero", vi: "hy vọng", id: "harapan", th: "ความหวัง", hr: "nada", sk: "nádej", ga: "dóchas", cy: "gobaith", ha: "bege", am: "ተስፋ", fa: "امید", bn: "আশা", zu: "ithemba" },';
+      '    esperança: { gloss: "Lat. spēs / sperantia — afecto vivo BR; esperar × esperança; fresta com ofício; Valeu !!!", href: "/posts/post-inspecao-palavra-esperanca.html", en: "hope", es: "esperanza", fr: "espoir", it: "speranza", de: "Hoffnung", el: "ελπίδα", la: "spes", yo: "ìrètí", sw: "tumaini", gez: "tesfā", nl: "hoop", pl: "nadzieja", ru: "надежда", uk: "надія", zh: "希望", ja: "希望", ko: "희망", ar: "أمل", he: "תקווה", hi: "आशा", tr: "umut", sv: "hopp", da: "håb", no: "håp", fi: "toivo", cs: "naděje", ro: "speranță", hu: "remény", ca: "esperança", gl: "esperanza", eu: "espero", gn: "jerovia", qu: "suyay", eo: "espero", vi: "hy vọng", id: "harapan", th: "ความหวัง", hr: "nada", sk: "nádej", ga: "dóchas", cy: "gobaith", ha: "bege", am: "ተስፋ", fa: "امید", bn: "আশা", zu: "ithemba" },';
     if (/esperança:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    esperança:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

@@ -83,15 +83,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Prosseguir — continuar, retomar e Faça o melhor!',
-      titleEn: 'Prosseguir — continue, resume and Do your best!',
-      titleEs: 'Prosseguir — continuar, retomar y ¡Haz lo mejor!',
+      title: 'Prosseguir — continuar, retomar e Valeu !!!',
+      titleEn: 'Prosseguir — continue, resume and Valeu !!!',
+      titleEs: 'Prosseguir — continuar, retomar y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: prosseguir (lat. prōsequī) — continuar × retomar; prosseguimento; elos sempre/já/caminho; Faça o melhor!',
-      whyEn: 'Words: prosseguir (Lat. prōsequī) — continue × resume; prosseguimento; links sempre/já/caminho; Do your best!',
-      whyEs: 'Palabras: prosseguir (lat. prōsequī) — continuar × retomar; prosseguimento; vínculos sempre/já/caminho; ¡Haz lo mejor!',
+      why: 'Palavras: prosseguir (lat. prōsequī) — continuar × retomar; prosseguimento; elos sempre/já/caminho; Valeu !!!',
+      whyEn: 'Words: prosseguir (Lat. prōsequī) — continue × resume; prosseguimento; links sempre/já/caminho; Valeu !!!',
+      whyEs: 'Palabras: prosseguir (lat. prōsequī) — continuar × retomar; prosseguimento; vínculos sempre/já/caminho; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -100,7 +100,7 @@ async function main() {
         '/posts/post-inspecao-palavra-sempre.html',
         '/posts/post-inspecao-palavra-ja.html',
         '/posts/post-inspecao-palavra-caminho.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — tipografia Proceguir → prosseguir; par com sempre.'
     };
@@ -119,11 +119,11 @@ async function main() {
       id: 'prosseguir',
       word: 'prosseguir',
       simple:
-        'Lat. prōsequī — continuar × retomar BR; derivações prosseguimento; elos sempre/já/caminho; Faça o melhor e prossiga.',
+        'Lat. prōsequī — continuar × retomar BR; derivações prosseguimento; elos sempre/já/caminho; Valeu !!! e prossiga.',
       simpleEn:
-        'Lat. prōsequī — continue × resume BR; derivatives prosseguimento; links sempre/já/caminho; Do your best and proceed.',
+        'Lat. prōsequī — continue × resume BR; derivatives prosseguimento; links sempre/já/caminho; Valeu !!! and proceed.',
       simpleEs:
-        'Lat. prōsequī — continuar × retomar BR; derivaciones prosseguimento; vínculos sempre/já/caminho; Haz lo mejor y prosigue.',
+        'Lat. prōsequī — continuar × retomar BR; derivaciones prosseguimento; vínculos sempre/já/caminho; Valeu !!! y prosigue.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -145,7 +145,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryMain =
-      '    prosseguir: { gloss: "Lat. prōsequī — continuar × retomar BR; derivações prosseguimento; elos sempre/já/caminho; Faça o melhor!", href: "/posts/post-inspecao-palavra-prosseguir.html", en: "to proceed / continue", es: "proseguir", fr: "poursuivre", it: "proseguire", de: "fortfahren", el: "synehizo", la: "prosequi", yo: "tesi", sw: "endelea", gez: "tänäggäsä", nl: "doorgaan", pl: "kontynuowac", ru: "prodolzhat", uk: "prodovzhuvaty", zh: "jixu", ja: "susumeru", ko: "gyesokhada", ar: "yuwasil", he: "lehamshikh", hi: "jari rakhna", tr: "devam etmek", sv: "fortsatta", da: "fortsaette", no: "fortsette", fi: "jatkaa", cs: "pokracovat", ro: "continua", hu: "folytatni", ca: "prosseguir", gl: "proseguir", eu: "jarraitu", gn: "jekutu", qu: "qatiy", eo: "dauxrigi", vi: "tiep tuc", id: "melanjutkan", th: "proceed", hr: "nastaviti", sk: "pokracovat", ga: "lean ar aghaidh", cy: "parhau", ha: "ci gaba", am: "quey", fa: "edame dadan", bn: "agiye jaoa", zu: "qhubeka" },';
+      '    prosseguir: { gloss: "Lat. prōsequī — continuar × retomar BR; derivações prosseguimento; elos sempre/já/caminho; Valeu !!!", href: "/posts/post-inspecao-palavra-prosseguir.html", en: "to proceed / continue", es: "proseguir", fr: "poursuivre", it: "proseguire", de: "fortfahren", el: "synehizo", la: "prosequi", yo: "tesi", sw: "endelea", gez: "tänäggäsä", nl: "doorgaan", pl: "kontynuowac", ru: "prodolzhat", uk: "prodovzhuvaty", zh: "jixu", ja: "susumeru", ko: "gyesokhada", ar: "yuwasil", he: "lehamshikh", hi: "jari rakhna", tr: "devam etmek", sv: "fortsatta", da: "fortsaette", no: "fortsette", fi: "jatkaa", cs: "pokracovat", ro: "continua", hu: "folytatni", ca: "prosseguir", gl: "proseguir", eu: "jarraitu", gn: "jekutu", qu: "qatiy", eo: "dauxrigi", vi: "tiep tuc", id: "melanjutkan", th: "proceed", hr: "nastaviti", sk: "pokracovat", ga: "lean ar aghaidh", cy: "parhau", ha: "ci gaba", am: "quey", fa: "edame dadan", bn: "agiye jaoa", zu: "qhubeka" },';
     const entryDeriv =
       '    prosseguimento: { gloss: "Derivação — continuação / andamento.", href: "/posts/post-inspecao-palavra-prosseguir.html", en: "continuation", es: "prosecución" },';
     const entryLine = entryMain + '\n' + entryDeriv;

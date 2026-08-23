@@ -83,15 +83,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Inspiração — sopro, ideia acesa e Faça o melhor!',
-      titleEn: 'Inspiração — breath, lit idea and Do your best!',
-      titleEs: 'Inspiração — aliento, idea encendida y ¡Haz lo mejor!',
+      title: 'Inspiração — sopro, ideia acesa e Valeu !!!',
+      titleEn: 'Inspiração — breath, lit idea and Valeu !!!',
+      titleEs: 'Inspiração — aliento, idea encendida y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: inspiração (lat. īnspīrātiō) — sopro × ideia BR; criatividade/gesto/esperança; Faça o melhor!',
-      whyEn: 'Words: inspiração (Lat. īnspīrātiō) — breath × idea BR; creativity/gesture/hope; Do your best!',
-      whyEs: 'Palabras: inspiração (lat. īnspīrātiō) — aliento × idea BR; creatividad/gesto/esperanza; ¡Haz lo mejor!',
+      why: 'Palavras: inspiração (lat. īnspīrātiō) — sopro × ideia BR; criatividade/gesto/esperança; Valeu !!!',
+      whyEn: 'Words: inspiração (Lat. īnspīrātiō) — breath × idea BR; creativity/gesture/hope; Valeu !!!',
+      whyEs: 'Palabras: inspiração (lat. īnspīrātiō) — aliento × idea BR; creatividad/gesto/esperanza; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -101,7 +101,7 @@ async function main() {
         '/posts/post-inspecao-palavra-criatividade.html',
         '/posts/post-inspecao-palavra-gesto.html',
         '/posts/post-inspecao-palavra-esperanca.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — sopro vivo; tipografia spnresoarpi → inspiração.'
     };
@@ -120,11 +120,11 @@ async function main() {
       id: 'inspiracao',
       word: 'inspiração',
       simple:
-        'Lat. īnspīrātiō — sopro × ideia BR; elos criatividade/gesto/esperança; Faça o melhor com o sopro.',
+        'Lat. īnspīrātiō — sopro × ideia BR; elos criatividade/gesto/esperança; Valeu !!! com o sopro.',
       simpleEn:
-        'Lat. īnspīrātiō — breath × idea BR; links creativity/gesture/hope; Do your best with the breath.',
+        'Lat. īnspīrātiō — breath × idea BR; links creativity/gesture/hope; Valeu !!! with the breath.',
       simpleEs:
-        'Lat. īnspīrātiō — aliento × idea BR; vínculos creatividad/gesto/esperanza; Haz lo mejor con el soplo.',
+        'Lat. īnspīrātiō — aliento × idea BR; vínculos creatividad/gesto/esperanza; Valeu !!! con el soplo.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -152,7 +152,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    inspiração: { gloss: "Lat. īnspīrātiō — sopro × ideia BR; elos criatividade/gesto/esperança; Faça o melhor!", href: "/posts/post-inspecao-palavra-inspiracao.html", en: "inspiration", es: "inspiración", fr: "inspiration", it: "ispirazione", de: "Inspiration", el: "έμπνευση", la: "inspiratio", yo: "ìmísí", sw: "msukumo", gez: "näfasä", nl: "inspiratie", pl: "inspiracja", ru: "вдохновение", uk: "натхнення", zh: "灵感", ja: "インスピレーション", ko: "영감", ar: "إلهام", he: "השראה", hi: "प्रेरणा", tr: "ilham", sv: "inspiration", da: "inspiration", no: "inspirasjon", fi: "inspiraatio", cs: "inspirace", ro: "inspirație", hu: "ihlet", ca: "inspiració", gl: "inspiración", eu: "inspirazio", gn: "py\'aguapy", qu: "samay", eo: "inspiro", vi: "cảm hứng", id: "inspirasi", th: "แรงบันดาลใจ", hr: "inspiracija", sk: "inšpirácia", ga: "inspioráid", cy: "ysbrydoliaeth", ha: "wahayi", am: "መነሳሳት", fa: "الهام", bn: "অনুপ্রেরণা", zu: "ugqozi" },';
+      '    inspiração: { gloss: "Lat. īnspīrātiō — sopro × ideia BR; elos criatividade/gesto/esperança; Valeu !!!", href: "/posts/post-inspecao-palavra-inspiracao.html", en: "inspiration", es: "inspiración", fr: "inspiration", it: "ispirazione", de: "Inspiration", el: "έμπνευση", la: "inspiratio", yo: "ìmísí", sw: "msukumo", gez: "näfasä", nl: "inspiratie", pl: "inspiracja", ru: "вдохновение", uk: "натхнення", zh: "灵感", ja: "インスピレーション", ko: "영감", ar: "إلهام", he: "השראה", hi: "प्रेरणा", tr: "ilham", sv: "inspiration", da: "inspiration", no: "inspirasjon", fi: "inspiraatio", cs: "inspirace", ro: "inspirație", hu: "ihlet", ca: "inspiració", gl: "inspiración", eu: "inspirazio", gn: "py\'aguapy", qu: "samay", eo: "inspiro", vi: "cảm hứng", id: "inspirasi", th: "แรงบันดาลใจ", hr: "inspiracija", sk: "inšpirácia", ga: "inspioráid", cy: "ysbrydoliaeth", ha: "wahayi", am: "መነሳሳት", fa: "الهام", bn: "অনুপ্রেরণা", zu: "ugqozi" },';
     if (/inspiração:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    inspiração:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

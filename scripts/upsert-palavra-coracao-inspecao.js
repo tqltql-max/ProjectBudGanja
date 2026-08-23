@@ -70,15 +70,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Coração — órgão, afeto, centro, coragem e Faça o melhor!',
-      titleEn: 'Coração — organ, affect, center, courage and Do your best!',
-      titleEs: 'Coração — órgano, afecto, centro, coraje y ¡Haz lo mejor!',
+      title: 'Coração — órgão, afeto, centro, coragem e Valeu !!!',
+      titleEn: 'Coração — organ, affect, center, courage and Valeu !!!',
+      titleEs: 'Coração — órgano, afecto, centro, coraje y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: coração (lat. cor) — órgão, afeto, centro, coragem; elo mãos/esquerdo; Faça o melhor de coração.',
-      whyEn: 'Words: coração (Lat. cor) — organ, affect, center, courage; hands/esquerdo; Do your best from the heart.',
-      whyEs: 'Palabras: coração (lat. cor) — órgano, afecto, centro, coraje; manos/esquerdo; Haz lo mejor de corazón.',
+      why: 'Palavras: coração (lat. cor) — órgão, afeto, centro, coragem; elo mãos/esquerdo; Valeu !!! de coração.',
+      whyEn: 'Words: coração (Lat. cor) — organ, affect, center, courage; hands/esquerdo; Valeu !!! from the heart.',
+      whyEs: 'Palabras: coração (lat. cor) — órgano, afecto, centro, coraje; manos/esquerdo; Valeu !!! de corazón.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -87,7 +87,7 @@ async function main() {
         'https://pt.wikipedia.org/wiki/Cora%C3%A7%C3%A3o',
         '/posts/post-inspecao-palavra-mao-esquerda-direita.html',
         '/posts/post-inspecao-palavra-esquerdo.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. 35 — peito × mãos (complementaridade); sem dogma anatómico.'
     };
@@ -106,11 +106,11 @@ async function main() {
       id: 'coracao',
       word: 'coração',
       simple:
-        'Lat. cor — órgão, afeto, centro e coragem; elo mãos/esquerdo (gesto cultural, não dogma); Faça o melhor de coração.',
+        'Lat. cor — órgão, afeto, centro e coragem; elo mãos/esquerdo (gesto cultural, não dogma); Valeu !!! de coração.',
       simpleEn:
-        'Lat. cor — organ, affect, center and courage; hands/esquerdo link (cultural gesture, not dogma); Do your best from the heart.',
+        'Lat. cor — organ, affect, center and courage; hands/esquerdo link (cultural gesture, not dogma); Valeu !!! from the heart.',
       simpleEs:
-        'Lat. cor — órgano, afecto, centro y coraje; vínculo manos/esquerdo (gesto cultural, no dogma); Haz lo mejor de corazón.',
+        'Lat. cor — órgano, afecto, centro y coraje; vínculo manos/esquerdo (gesto cultural, no dogma); Valeu !!! de corazón.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -134,7 +134,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryLine =
-      '    coração: { gloss: "Lat. cor — órgão, afeto, centro e coragem; elo mãos/gesto; Faça o melhor de coração.", href: "/posts/post-inspecao-palavra-coracao.html", en: "heart", es: "corazón", fr: "cœur", it: "cuore", de: "Herz", el: "καρδιά", la: "cor", yo: "ọkàn", sw: "moyo", gez: "ləbb", nl: "hart", pl: "serce", ru: "сердце", uk: "серце", zh: "心", ja: "心", ko: "마음", ar: "قلب", he: "לב", hi: "हृदय", tr: "kalp", sv: "hjärta", da: "hjerte", no: "hjerte", fi: "sydän", cs: "srdce", ro: "inimă", hu: "szív", ca: "cor", gl: "corazón", eu: "bihotz", gn: "korasõ", qu: "sunqu", eo: "koro", vi: "trái tim", id: "hati", th: "หัวใจ", hr: "srce", sk: "srdce", ga: "croí", cy: "calon", ha: "zuciya", am: "ልብ", fa: "دل", bn: "হৃদয়", zu: "inhliziyo" },';
+      '    coração: { gloss: "Lat. cor — órgão, afeto, centro e coragem; elo mãos/gesto; Valeu !!! de coração.", href: "/posts/post-inspecao-palavra-coracao.html", en: "heart", es: "corazón", fr: "cœur", it: "cuore", de: "Herz", el: "καρδιά", la: "cor", yo: "ọkàn", sw: "moyo", gez: "ləbb", nl: "hart", pl: "serce", ru: "сердце", uk: "серце", zh: "心", ja: "心", ko: "마음", ar: "قلب", he: "לב", hi: "हृदय", tr: "kalp", sv: "hjärta", da: "hjerte", no: "hjerte", fi: "sydän", cs: "srdce", ro: "inimă", hu: "szív", ca: "cor", gl: "corazón", eu: "bihotz", gn: "korasõ", qu: "sunqu", eo: "koro", vi: "trái tim", id: "hati", th: "หัวใจ", hr: "srce", sk: "srdce", ga: "croí", cy: "calon", ha: "zuciya", am: "ልብ", fa: "دل", bn: "হৃদয়", zu: "inhliziyo" },';
     if (/coração:\s*\{/.test(gloss)) {
       gloss = gloss.replace(/    coração:\s*\{[\s\S]*?\},/, entryLine);
       fs.writeFileSync(glossPath, gloss);

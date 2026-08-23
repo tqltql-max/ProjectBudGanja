@@ -108,7 +108,7 @@ async function main() {
         '/biblioteca/inspecoes/#inspecoes-frutos',
         '/posts/post-pesquisa-insumos-organicos-vs-industrializados-fruto.html',
         '/posts/post-inspecao-palavra-simbiose.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — lema fruto; plural + figurado; sem duplicar pesquisa/slug de espécie.'
     };

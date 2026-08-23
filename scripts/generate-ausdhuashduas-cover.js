@@ -24,11 +24,12 @@ async function main() {
   </defs>
   <rect width="1200" height="630" fill="url(#g)"/>
   <circle cx="600" cy="230" r="270" fill="url(#glow)"/>
-  <text x="600" y="90" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#f0b878" letter-spacing="4">EXPRESSÕES · RISO ONLINE BR</text>
-  <text x="600" y="255" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="52" font-weight="700" fill="#fff4e8">ausdhuashduas</text>
-  <text x="600" y="330" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="rgba(235,210,190,0.95)">lab name — substitui kkkk… e «risas online»</text>
-  <text x="600" y="490" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="24" fill="#d0b090">depois do riso — faça o melhor</text>
-  <text x="600" y="555" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#f0b878">aff · ausdhuashduas · jesusamado · meudeusdoceu</text>
+  <text x="600" y="90" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#f0b878" letter-spacing="4">EXPRESSÕES · TRANSCRIÇÃO DE RISOS</text>
+  <text x="600" y="210" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="72" font-weight="700" fill="#fff4e8">rs</text>
+  <text x="600" y="300" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="28" font-weight="700" fill="#ffe8d0">ausdhuashduas</text>
+  <text x="600" y="370" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="rgba(235,210,190,0.95)">ausdhauhsd · aushduashdua — smash de teclado</text>
+  <text x="600" y="500" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="22" fill="#d0b090">depois do riso — Valeu !!!</text>
+  <text x="600" y="555" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#f0b878">aff · rs · smash · jesusamado · meudeusdoceu</text>
 </svg>`);
 
   await sharp(bg).jpeg({ quality: 84, mozjpeg: true }).toFile(OUT);

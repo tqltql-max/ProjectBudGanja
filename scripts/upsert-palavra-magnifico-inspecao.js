@@ -126,9 +126,9 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Magnífico — magnificus, elogio BR e Faça o melhor!',
-      titleEn: 'Magnífico — magnificus, BR praise and Do your best!',
-      titleEs: 'Magnífico — magnificus, elogio BR y ¡Haz lo mejor!',
+      title: 'Magnífico — magnificus, elogio BR e Valeu !!!',
+      titleEn: 'Magnífico — magnificus, BR praise and Valeu !!!',
+      titleEs: 'Magnífico — magnificus, elogio BR y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
@@ -145,7 +145,7 @@ async function main() {
         '/posts/post-inspecao-palavra-genial.html',
         '/posts/post-inspecao-palavra-fabuloso.html',
         '/posts/post-inspecao-palavra-maravilhoso.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — elogio BR; rede só com slugs existentes; alt. máfia rejeitada.'
     };
@@ -164,11 +164,11 @@ async function main() {
       id: 'magnifico',
       word: 'magnífico',
       simple:
-        'Lat. magnificus / magnificent — elogio BR quotidiano («que grande!»); escala com legal, genial, fabuloso, fantástico, incrível, maravilhoso; Faça o melhor com rasto.',
+        'Lat. magnificus / magnificent — elogio BR quotidiano («que grande!»); escala com legal, genial, fabuloso, fantástico, incrível, maravilhoso; Valeu !!! com rasto.',
       simpleEn:
-        'Lat. magnificus / magnificent — everyday BR praise; scale with legal, genial, fabuloso, fantástico, incrível, maravilhoso; Do your best with a trail.',
+        'Lat. magnificus / magnificent — everyday BR praise; scale with legal, genial, fabuloso, fantástico, incrível, maravilhoso; Valeu !!! with a trail.',
       simpleEs:
-        'Lat. magnificus / magnificent — elogio BR cotidiano; escala con legal, genial, fabuloso, fantástico, incrível, maravilloso; Haz lo mejor con rastro.',
+        'Lat. magnificus / magnificent — elogio BR cotidiano; escala con legal, genial, fabuloso, fantástico, incrível, maravilloso; Valeu !!! con rastro.',
       group: 'lexico',
       fromTitle: false,
       href

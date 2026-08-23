@@ -100,9 +100,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: risco — perigo calculado × traço (riscar); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Faça o melhor!',
-      whyEn: 'Words: risco — calculated danger × stroke (riscar); links medo, sinal, caminho, EXIT, Tamara/Amyr; Do your best!',
-      whyEs: 'Palabras: risco — peligro calculado × trazo (riscar); vínculos medo, sinal, caminho, EXIT, Tamara/Amyr; ¡Haz lo mejor!',
+      why: 'Palavras: risco — perigo calculado × traço (riscar); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Valeu !!!',
+      whyEn: 'Words: risco — calculated danger × stroke (riscar); links medo, sinal, caminho, EXIT, Tamara/Amyr; Valeu !!!',
+      whyEs: 'Palabras: risco — peligro calculado × trazo (riscar); vínculos medo, sinal, caminho, EXIT, Tamara/Amyr; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -113,7 +113,7 @@ async function main() {
         '/posts/post-inspecao-palavra-sinal.html',
         '/posts/post-inspecao-tamara-klink.html',
         '/posts/post-inspecao-arte-bom-dia-inverno.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -135,11 +135,11 @@ async function main() {
       id: 'risco',
       word: 'Risco',
       simple:
-        'Perigo calculado × traço (*riscar*); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Faça o melhor!',
+        'Perigo calculado × traço (*riscar*); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Valeu !!!',
       simpleEn:
-        'Calculated danger × stroke (*riscar*); links medo, sinal, caminho, EXIT, Tamara/Amyr; Do your best!',
+        'Calculated danger × stroke (*riscar*); links medo, sinal, caminho, EXIT, Tamara/Amyr; Valeu !!!',
       simpleEs:
-        'Peligro calculado × trazo (*riscar*); vínculos medo, sinal, caminho, EXIT, Tamara/Amyr; ¡Haz lo mejor!',
+        'Peligro calculado × trazo (*riscar*); vínculos medo, sinal, caminho, EXIT, Tamara/Amyr; ¡Valeu !!!',
       group: 'lexico',
       fromTitle: false,
       href
@@ -157,7 +157,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const rich =
-      '    risco: { tone: "caution", gloss: "Perigo calculado × traço (riscar); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Faça o melhor!", href: "/posts/post-inspecao-palavra-risco.html", en: "risk", es: "riesgo", fr: "risque", it: "rischio", de: "Risiko", el: "κίνδυνος / ρίσκο", la: "periculum / alea", yo: "ewu", sw: "hatari", gez: "አደጋ", nl: "risico", pl: "ryzyko", ru: "риск", uk: "ризик", zh: "风险", ja: "リスク", ko: "위험 / 리스크", ar: "مخاطرة", he: "סיכון", hi: "जोखिम", tr: "risk", sv: "risk", da: "risiko", no: "risiko", fi: "riski", cs: "riziko", ro: "risc", hu: "kockázat", ca: "risc", gl: "risco", eu: "arrisku", gn: "kyhyje", qu: "chhikchi", eo: "risko", vi: "rủi ro", id: "risiko", th: "ความเสี่ยง", hr: "rizik", sk: "riziko", ga: "riosca", cy: "risg", ha: "haɗari", am: "አደጋ", fa: "ریسک", bn: "ঝুঁকি", zu: "ingozi" },';
+      '    risco: { tone: "caution", gloss: "Perigo calculado × traço (riscar); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Valeu !!!", href: "/posts/post-inspecao-palavra-risco.html", en: "risk", es: "riesgo", fr: "risque", it: "rischio", de: "Risiko", el: "κίνδυνος / ρίσκο", la: "periculum / alea", yo: "ewu", sw: "hatari", gez: "አደጋ", nl: "risico", pl: "ryzyko", ru: "риск", uk: "ризик", zh: "风险", ja: "リスク", ko: "위험 / 리스크", ar: "مخاطرة", he: "סיכון", hi: "जोखिम", tr: "risk", sv: "risk", da: "risiko", no: "risiko", fi: "riski", cs: "riziko", ro: "risc", hu: "kockázat", ca: "risc", gl: "risco", eu: "arrisku", gn: "kyhyje", qu: "chhikchi", eo: "risko", vi: "rủi ro", id: "risiko", th: "ความเสี่ยง", hr: "rizik", sk: "riziko", ga: "riosca", cy: "risg", ha: "haɗari", am: "አደጋ", fa: "ریسک", bn: "ঝুঁকি", zu: "ingozi" },';
     if (/risco: \{[\s\S]*?zu: "[^"]*" },/.test(gloss)) {
       gloss = gloss.replace(/risco: \{[\s\S]*?zu: "[^"]*" },/, rich);
       fs.writeFileSync(glossPath, gloss);
@@ -183,7 +183,7 @@ async function main() {
       nav = nav.replace(oldTile, newTile);
       nav = nav.replace(
         oldDesc,
-        '"href": "/posts/post-inspecao-palavra-risco.html",\n              "slug": "post-inspecao-palavra-risco",\n              "description": "Palavras: «risco» — perigo calculado × traço (riscar); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Faça o melhor!"'
+        '"href": "/posts/post-inspecao-palavra-risco.html",\n              "slug": "post-inspecao-palavra-risco",\n              "description": "Palavras: «risco» — perigo calculado × traço (riscar); elos medo, sinal, caminho, EXIT, Tamara/Amyr; Valeu !!!"'
       );
       fs.writeFileSync(navPath, nav);
       console.log('Nav actualizado (risco)');

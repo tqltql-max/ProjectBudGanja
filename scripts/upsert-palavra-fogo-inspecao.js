@@ -70,15 +70,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Fogo — elemento, ardor, cuidado e Faça o melhor!',
-      titleEn: 'Fogo — element, ardor, care and Do your best!',
-      titleEs: 'Fogo — elemento, ardor, cuidado y ¡Haz lo mejor!',
+      title: 'Fogo — elemento, ardor, cuidado e Valeu !!!',
+      titleEn: 'Fogo — element, ardor, care and Valeu !!!',
+      titleEs: 'Fogo — elemento, ardor, cuidado y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: fogo (lat. focus) — elemento e metáfora; elos água, raiva, cultivo; Faça o melhor com medida.',
-      whyEn: 'Words: fogo (Lat. focus) — element and metaphor; água, raiva, cultivo; Do your best with measure.',
-      whyEs: 'Palabras: fogo (lat. focus) — elemento y metáfora; água, raiva, cultivo; Haz lo mejor con medida.',
+      why: 'Palavras: fogo (lat. focus) — elemento e metáfora; elos água, raiva, cultivo; Valeu !!! com medida.',
+      whyEn: 'Words: fogo (Lat. focus) — element and metaphor; água, raiva, cultivo; Valeu !!! with measure.',
+      whyEs: 'Palabras: fogo (lat. focus) — elemento y metáfora; água, raiva, cultivo; Valeu !!! con medida.',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -87,7 +87,7 @@ async function main() {
         'https://pt.wikipedia.org/wiki/Fogo',
         '/posts/post-inspecao-palavra-agua.html',
         '/posts/post-inspecao-palavra-raiva.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. 33 — lareira × labareda; par com água.'
     };
@@ -106,11 +106,11 @@ async function main() {
       id: 'fogo',
       word: 'fogo',
       simple:
-        'Lat. focus — lareira / chama; elemento e metáfora; equilibrar com água; raiva com ofício; Faça o melhor com medida.',
+        'Lat. focus — lareira / chama; elemento e metáfora; equilibrar com água; raiva com ofício; Valeu !!! com medida.',
       simpleEn:
-        'Lat. focus — hearth / flame; element and metaphor; balance with water; anger with craft; Do your best with measure.',
+        'Lat. focus — hearth / flame; element and metaphor; balance with water; anger with craft; Valeu !!! with measure.',
       simpleEs:
-        'Lat. focus — hogar / llama; elemento y metáfora; equilibrar con agua; ira con oficio; Haz lo mejor con medida.',
+        'Lat. focus — hogar / llama; elemento y metáfora; equilibrar con agua; ira con oficio; Valeu !!! con medida.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -135,7 +135,7 @@ async function main() {
       const re = /(luz: \{[\s\S]*?zu: "ukukhanya" },\r?\n)/;
       const reAgua = /(água: \{[\s\S]*?zu: "[^"]+" },\r?\n)/;
       const entry =
-        '    fogo: { gloss: "Lat. focus — lareira/chama; elemento e metáfora; equilibrar com água; Faça o melhor com medida.", href: "/posts/post-inspecao-palavra-fogo.html", en: "fire", es: "fuego", fr: "feu", it: "fuoco", de: "Feuer", el: "φωτιά", la: "focus / ignis", yo: "iná", sw: "moto", gez: "ʼǝsat", nl: "vuur", pl: "ogień", ru: "огонь", uk: "вогонь", zh: "火", ja: "火", ko: "불", ar: "نار", he: "אש", hi: "आग", tr: "ateş", sv: "eld", da: "ild", no: "ild", fi: "tuli", cs: "oheň", ro: "foc", hu: "tűz", ca: "foc", gl: "lume", eu: "su", gn: "tata", qu: "nina", eo: "fajro", vi: "lửa", id: "api", th: "ไฟ", hr: "vatra", sk: "oheň", ga: "tine", cy: "tân", ha: "wuta", am: "እሳት", fa: "آتش", bn: "আগুন", zu: "umlilo" },\n';
+        '    fogo: { gloss: "Lat. focus — lareira/chama; elemento e metáfora; equilibrar com água; Valeu !!! com medida.", href: "/posts/post-inspecao-palavra-fogo.html", en: "fire", es: "fuego", fr: "feu", it: "fuoco", de: "Feuer", el: "φωτιά", la: "focus / ignis", yo: "iná", sw: "moto", gez: "ʼǝsat", nl: "vuur", pl: "ogień", ru: "огонь", uk: "вогонь", zh: "火", ja: "火", ko: "불", ar: "نار", he: "אש", hi: "आग", tr: "ateş", sv: "eld", da: "ild", no: "ild", fi: "tuli", cs: "oheň", ro: "foc", hu: "tűz", ca: "foc", gl: "lume", eu: "su", gn: "tata", qu: "nina", eo: "fajro", vi: "lửa", id: "api", th: "ไฟ", hr: "vatra", sk: "oheň", ga: "tine", cy: "tân", ha: "wuta", am: "እሳት", fa: "آتش", bn: "আগুন", zu: "umlilo" },\n';
       if (re.test(gloss)) {
         gloss = gloss.replace(re, '$1' + entry);
         fs.writeFileSync(glossPath, gloss);

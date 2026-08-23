@@ -89,9 +89,9 @@ async function main() {
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: interruptor (lat. interrumpere) — peça do circuito; tríade com ligar × desligar e luz; Faça o melhor!',
-      whyEn: 'Words: interruptor (Lat. interrumpere) — circuit device; triad with ligar × desligar and luz; Do your best!',
-      whyEs: 'Palabras: interruptor (lat. interrumpere) — pieza del circuito; tríada con ligar × desligar y luz; ¡Haz lo mejor!',
+      why: 'Palavras: interruptor (lat. interrumpere) — peça do circuito; tríade com ligar × desligar e luz; Valeu !!!',
+      whyEn: 'Words: interruptor (Lat. interrumpere) — circuit device; triad with ligar × desligar and luz; Valeu !!!',
+      whyEs: 'Palabras: interruptor (lat. interrumpere) — pieza del circuito; tríada con ligar × desligar y luz; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -103,7 +103,7 @@ async function main() {
         '/posts/post-inspecao-palavra-sinal.html',
         '/posts/post-inspecao-palavra-gesto.html',
         '/posts/post-inspecao-palavra-eletrizante.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — tipografia Imtupidor → interruptor; par lab com ligar × desligar.'
     };
@@ -122,11 +122,11 @@ async function main() {
       id: 'interruptor',
       word: 'interruptor',
       simple:
-        'Lat. interrumpere — peça do circuito; par lab com ligar × desligar; derivações interromper/interrupção; Faça o melhor com o clique.',
+        'Lat. interrumpere — peça do circuito; par lab com ligar × desligar; derivações interromper/interrupção; Valeu !!! com o clique.',
       simpleEn:
-        'Lat. interrumpere — circuit device; lab pair with ligar × desligar; derivatives interromper/interrupção; Do your best with the click.',
+        'Lat. interrumpere — circuit device; lab pair with ligar × desligar; derivatives interromper/interrupção; Valeu !!! with the click.',
       simpleEs:
-        'Lat. interrumpere — pieza del circuito; par lab con ligar × desligar; derivaciones interromper/interrupção; Haz lo mejor con el clic.',
+        'Lat. interrumpere — pieza del circuito; par lab con ligar × desligar; derivaciones interromper/interrupção; Valeu !!! con el clic.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -150,7 +150,7 @@ async function main() {
   if (fs.existsSync(glossPath)) {
     let gloss = fs.readFileSync(glossPath, 'utf8');
     const entryMain =
-      '    interruptor: { gloss: "Lat. interrumpere — peça do circuito; par lab com ligar × desligar; derivações interromper/interrupção; Faça o melhor!", href: "/posts/post-inspecao-palavra-interruptor.html", en: "switch / interrupter", es: "interruptor", fr: "interrupteur", it: "interruttore", de: "Schalter", el: "diakoptis", la: "interruptor", yo: "sakiti", sw: "swichi", gez: "makufaya", nl: "schakelaar", pl: "wylacznik", ru: "vyklyuchatel", uk: "vyklyuchatel", zh: "kaiguan", ja: "switch", ko: "스위치", ar: "miftah", he: "mateh", hi: "switch", tr: "anahtar", sv: "strombrytare", da: "kontakt", no: "bryter", fi: "katkaisin", cs: "vypinac", ro: "intrerupator", hu: "kapcsolo", ca: "interruptor", gl: "interruptor", eu: "etengailu", gn: "mbogueha", qu: "wanchay", eo: "sxaltilo", vi: "cong tac", id: "saklar", th: "switch", hr: "prekidac", sk: "vypinac", ga: "lasc", cy: "switsh", ha: "mai kunna", am: "mekfel", fa: "kelid", bn: "switch", zu: "iswitchi" },';
+      '    interruptor: { gloss: "Lat. interrumpere — peça do circuito; par lab com ligar × desligar; derivações interromper/interrupção; Valeu !!!", href: "/posts/post-inspecao-palavra-interruptor.html", en: "switch / interrupter", es: "interruptor", fr: "interrupteur", it: "interruttore", de: "Schalter", el: "diakoptis", la: "interruptor", yo: "sakiti", sw: "swichi", gez: "makufaya", nl: "schakelaar", pl: "wylacznik", ru: "vyklyuchatel", uk: "vyklyuchatel", zh: "kaiguan", ja: "switch", ko: "스위치", ar: "miftah", he: "mateh", hi: "switch", tr: "anahtar", sv: "strombrytare", da: "kontakt", no: "bryter", fi: "katkaisin", cs: "vypinac", ro: "intrerupator", hu: "kapcsolo", ca: "interruptor", gl: "interruptor", eu: "etengailu", gn: "mbogueha", qu: "wanchay", eo: "sxaltilo", vi: "cong tac", id: "saklar", th: "switch", hr: "prekidac", sk: "vypinac", ga: "lasc", cy: "switsh", ha: "mai kunna", am: "mekfel", fa: "kelid", bn: "switch", zu: "iswitchi" },';
     const entryDerivs =
       '    interromper: { gloss: "Verbo da família — cortar no meio / pausar.", href: "/posts/post-inspecao-palavra-interruptor.html", en: "to interrupt", es: "interrumpir" },\n' +
       '    interrupção: { gloss: "Evento do corte — pausa forçada ou escolha de ofício.", href: "/posts/post-inspecao-palavra-interruptor.html", en: "interruption", es: "interrupción" },\n' +

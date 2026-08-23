@@ -90,9 +90,9 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Legal — lei, gíria BR «bacana» e Faça o melhor!',
-      titleEn: 'Legal — law, BR slang “cool”, and Do your best!',
-      titleEs: 'Legal — ley, jerga BR «bacán» y ¡Haz lo mejor!',
+      title: 'Legal — lei, gíria BR «bacana» e Valeu !!!',
+      titleEn: 'Legal — law, BR slang “cool”, and Valeu !!!',
+      titleEs: 'Legal — ley, jerga BR «bacán» y ¡Valeu !!!',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
@@ -108,7 +108,7 @@ async function main() {
         '/posts/post-inspecao-palavra-ilicito.html',
         '/posts/post-inspecao-palavra-lei-11-343.html',
         '/posts/post-inspecao-palavra-descriminalizacao.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes: 'Cap. ' + post.seriesOrder + ' — lei × gíria; não confundir eixos.'
     };
@@ -127,11 +127,11 @@ async function main() {
       id: 'legal',
       word: 'legal',
       simple:
-        'Lat. legalis — conforme a lei; no BR também «bacana/ok»; separar eixo jurídico da gíria; Faça o melhor com a palavra certa.',
+        'Lat. legalis — conforme a lei; no BR também «bacana/ok»; separar eixo jurídico da gíria; Valeu !!! com a palavra certa.',
       simpleEn:
-        'Lat. legalis — lawful; in BR also “cool/ok”; separate juridical axis from slang; Do your best with the right word.',
+        'Lat. legalis — lawful; in BR also “cool/ok”; separate juridical axis from slang; Valeu !!! with the right word.',
       simpleEs:
-        'Lat. legalis — conforme a la ley; en BR también «bacán/ok»; separar eje jurídico de la jerga; Haz lo mejor con la palabra correcta.',
+        'Lat. legalis — conforme a la ley; en BR también «bacán/ok»; separar eje jurídico de la jerga; Valeu !!! con la palabra correcta.',
       group: 'lexico',
       fromTitle: false,
       href
@@ -158,7 +158,7 @@ async function main() {
       const re = /(risco: \{[\s\S]*?zu: "risk" },\r?\n)/;
       const reVerdade = /(verdade: \{[\s\S]*?zu: "truth" },\r?\n)/;
       const entry =
-        '    legal: { gloss: "Lat. legalis — lei / lícito; gíria BR «bacana»; separar eixos; Faça o melhor com a palavra certa.", href: "/posts/post-inspecao-palavra-legal.html", en: "legal / cool (BR)", es: "legal / bacán (BR)", fr: "légal / cool (BR)", it: "legale / figo (BR)", de: "legal / cool (BR)", el: "νόμιμος", la: "legalis", yo: "òfin", sw: "halali", gez: "ḥəggawi", nl: "wettelijk / cool (BR)", pl: "legalny", ru: "законный", uk: "законний", zh: "合法 / 酷 (BR)", ja: "合法 / いいね (BR)", ko: "합법 / 멋져 (BR)", ar: "قانوني", he: "חוקי", hi: "कानूनी", tr: "yasal", sv: "laglig", da: "lovlig", no: "lovlig", fi: "laillinen", cs: "legální", ro: "legal", hu: "törvényes", ca: "legal", gl: "legal", eu: "legal", gn: "téĩ", qu: "kamachiywan", eo: "leĝa", vi: "hợp pháp", id: "legal", th: "ถูกกฎหมาย", hr: "legalan", sk: "legálny", ga: "dlíthiúil", cy: "cyfreithiol", ha: "bisa doka", am: "ህጋዊ", fa: "قانونی", bn: "আইনি", zu: "okusemthethweni" },\n';
+        '    legal: { gloss: "Lat. legalis — lei / lícito; gíria BR «bacana»; separar eixos; Valeu !!! com a palavra certa.", href: "/posts/post-inspecao-palavra-legal.html", en: "legal / cool (BR)", es: "legal / bacán (BR)", fr: "légal / cool (BR)", it: "legale / figo (BR)", de: "legal / cool (BR)", el: "νόμιμος", la: "legalis", yo: "òfin", sw: "halali", gez: "ḥəggawi", nl: "wettelijk / cool (BR)", pl: "legalny", ru: "законный", uk: "законний", zh: "合法 / 酷 (BR)", ja: "合法 / いいね (BR)", ko: "합법 / 멋져 (BR)", ar: "قانوني", he: "חוקי", hi: "कानूनी", tr: "yasal", sv: "laglig", da: "lovlig", no: "lovlig", fi: "laillinen", cs: "legální", ro: "legal", hu: "törvényes", ca: "legal", gl: "legal", eu: "legal", gn: "téĩ", qu: "kamachiywan", eo: "leĝa", vi: "hợp pháp", id: "legal", th: "ถูกกฎหมาย", hr: "legalan", sk: "legálny", ga: "dlíthiúil", cy: "cyfreithiol", ha: "bisa doka", am: "ህጋዊ", fa: "قانونی", bn: "আইনি", zu: "okusemthethweni" },\n';
       if (re.test(gloss)) {
         gloss = gloss.replace(re, '$1' + entry);
         fs.writeFileSync(glossPath, gloss);

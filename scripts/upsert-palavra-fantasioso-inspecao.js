@@ -54,7 +54,7 @@ async function syncSql(post) {
 function glossEntryLine() {
   return [
     '    fantasioso: {',
-    ' gloss: "Fantasia + -oso — imaginativo / crítica leve «não seja fantasioso»; ≠ fantástico (Cap. irmã); Faça o melhor com rasto.",',
+    ' gloss: "Fantasia + -oso — imaginativo / crítica leve «não seja fantasioso»; ≠ fantástico (Cap. irmã); Valeu !!! com rasto.",',
     ' href: "/posts/post-inspecao-palavra-fantasioso.html",',
     ' en: "fanciful / imaginative",',
     ' es: "fantasioso",',
@@ -166,7 +166,7 @@ async function main() {
         '/posts/post-inspecao-palavra-criatividade.html',
         '/posts/post-inspecao-palavra-fantastico.html',
         '/posts/post-inspecao-palavra-verdade.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -188,11 +188,11 @@ async function main() {
       id: 'fantasioso',
       word: 'fantasioso',
       simple:
-        'Fantasia + -oso — imaginativo / fanciful; elogio ou crítica leve («não seja fantasioso»); ≠ fantástico (Cap. irmã); Faça o melhor com rasto.',
+        'Fantasia + -oso — imaginativo / fanciful; elogio ou crítica leve («não seja fantasioso»); ≠ fantástico (Cap. irmã); Valeu !!! com rasto.',
       simpleEn:
-        'Fantasia + -oso — fanciful / imaginative; praise or mild critique; ≠ fantástico (sister Cap.); Do your best with a trail.',
+        'Fantasia + -oso — fanciful / imaginative; praise or mild critique; ≠ fantástico (sister Cap.); Valeu !!! with a trail.',
       simpleEs:
-        'Fantasia + -oso — imaginativo; elogio o crítica leve; ≠ fantástico (Cap. hermana); Haz lo mejor con rastro.',
+        'Fantasia + -oso — imaginativo; elogio o crítica leve; ≠ fantástico (Cap. hermana); Valeu !!! con rastro.',
       group: 'lexico',
       fromTitle: false,
       href

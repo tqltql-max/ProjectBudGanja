@@ -149,7 +149,7 @@ async function main() {
         '/posts/post-inspecao-palavra-inspiracao.html',
         '/posts/post-inspecao-palavra-risco.html',
         '/posts/post-inspecao-palavra-aff.html',
-        '/posts/post-inspecao-expressao-faca-o-melhor.html'
+        '/posts/post-inspecao-palavra-valeu.html'
       ],
       notes:
         'Cap. ' +
@@ -206,9 +206,9 @@ async function main() {
       {
         id: 'impressionado',
         word: 'impressionado',
-        simple: 'Quem recebeu a marca — peito impresso. Crédito: muitoobrigado. Ver impressão/pressão.',
-        simpleEn: 'One who received the mark. Credit: muitoobrigado. See impression/pressure.',
-        simpleEs: 'Quien recibió la marca. Crédito: muitoobrigado. Ver impresión/presión.',
+        simple: 'Quem recebeu a marca — peito impresso. Crédito: Gratidão. Ver impressão/pressão.',
+        simpleEn: 'One who received the mark. Credit: Gratidão. See impression/pressure.',
+        simpleEs: 'Quien recibió la marca. Crédito: Gratidão. Ver impresión/presión.',
         ...shared
       },
       {
@@ -240,10 +240,10 @@ async function main() {
   if (fs.existsSync(GLOSS_FILE)) {
     let gloss = fs.readFileSync(GLOSS_FILE, 'utf8');
     const block =
-      '    impressão: { tone: "warm", category: "Marca", mundane: "Rasto de pressão para dentro — papel, peito, memória.", gloss: "Lat. impressio ← imprimere (in- + premere); ≠ inspiração (spirare); família panela de pressão / válvula de escape; Faça o melhor!", href: "' +
+      '    impressão: { tone: "warm", category: "Marca", mundane: "Rasto de pressão para dentro — papel, peito, memória.", gloss: "Lat. impressio ← imprimere (in- + premere); ≠ inspiração (spirare); família panela de pressão / válvula de escape; Valeu !!!", href: "' +
       href +
       '", en: "impression / print", es: "impresión", fr: "impression", it: "impressione", de: "Eindruck / Druck", el: "εντύπωση", la: "impressio", yo: "ami", sw: "hisia", gez: "impressao", nl: "indruk", pl: "wrazenie", ru: "впечатление", uk: "враження", zh: "印象", ja: "印象", ko: "인상", ar: "انطباع", he: "רושם", hi: "छाप", tr: "izlenim", sv: "intryck", da: "indtryk", no: "inntrykk", fi: "vaikutelma", cs: "dojem", ro: "impresie", hu: "benyomas", ca: "impressio", gl: "impresion", eu: "inpresio", gn: "jehecha", qu: "rikuy", eo: "impreso", vi: "an tuong", id: "kesan", th: "ความประทับใจ", hr: "dojam", sk: "dojem", ga: "tuiscint", cy: "argraff", ha: "tunanin", am: "ታሳቢ", fa: "برداشت", bn: "ছাপ", zu: "umqondo" },\n' +
-      '    pressão: { tone: "caution", category: "Força", mundane: "Aperto — física, social, do peito; o que a panela segura.", gloss: "Lat. pressio ← premere; elo impressão (marca para dentro); panela + válvula de escape; P de Perigo se escape preso; ≠ diagnóstico; Faça o melhor!", href: "' +
+      '    pressão: { tone: "caution", category: "Força", mundane: "Aperto — física, social, do peito; o que a panela segura.", gloss: "Lat. pressio ← premere; elo impressão (marca para dentro); panela + válvula de escape; P de Perigo se escape preso; ≠ diagnóstico; Valeu !!!", href: "' +
       href +
       '", en: "pressure", es: "presión", fr: "pression", it: "pressione", de: "Druck", el: "πίεση", la: "pressio", yo: "titẹ", sw: "shinikizo", gez: "pressao", nl: "druk", pl: "cisnienie", ru: "давление", uk: "тиск", zh: "压力", ja: "圧力", ko: "압력", ar: "ضغط", he: "לחץ", hi: "दबाव", tr: "basinc", sv: "tryck", da: "tryk", no: "trykk", fi: "paine", cs: "tlak", ro: "presiune", hu: "nyomas", ca: "pressio", gl: "presion", eu: "presio", gn: "mboguejy", qu: "ñitiy", eo: "premo", vi: "ap luc", id: "tekanan", th: "ความดัน", hr: "tlak", sk: "tlak", ga: "brú", cy: "pwysedd", ha: "matsi", am: "ግፊት", fa: "فشار", bn: "চাপ", zu: "ingcindezi" },\n' +
       '    impressionado: { gloss: "Quem recebeu a marca — ver impressão/pressão.", href: "' +
