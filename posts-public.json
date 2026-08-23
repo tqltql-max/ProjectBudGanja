@@ -6061,12 +6061,12 @@
     "seriesLabel": "Script · palavra"
   },
   {
-    "title": "Inspeção: Upsert — inserir ou actualizar sem duplicar a identidade",
-    "titleEn": "Inspection: Upsert — insert or update without duplicating identity",
-    "titleEs": "Inspección: Upsert — insertar o actualizar sin duplicar la identidad",
-    "excerpt": "Palavras: «upsert» (update+insert) — chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; o lab já pratica o gesto; Valeu !!!",
-    "excerptEn": "Words: “upsert” (update+insert) — key/slug; MERGE ≠ replace; BR calque upsertar; link commitar; the lab already does the gesture; Valeu !!!",
-    "excerptEs": "Palabras: «upsert» (update+insert) — clave/slug; MERGE ≠ replace; calco upsertar; vínculo commitar; el lab ya practica el gesto; ¡Valeu !!!",
+    "title": "Inspeção: Opsert — inserir ou actualizar sem duplicar a identidade",
+    "titleEn": "Inspection: Opsert — insert or update without duplicating identity",
+    "titleEs": "Inspección: Opsert — insertar o actualizar sin duplicar la identidad",
+    "excerpt": "Palavras: opsert (boca BR de upsert) — mãos à obra (plural); chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!",
+    "excerptEn": "Words: opsert (BR mouth of upsert) — mãos à obra (plural); key/slug; MERGE ≠ replace; calque upsertar; link commitar; Valeu !!!",
+    "excerptEs": "Palabras: opsert (boca BR de upsert) — mãos à obra (plural); clave/slug; MERGE ≠ replace; calco upsertar; vínculo commitar; ¡Valeu !!!",
     "hasBodyEn": true,
     "hasBodyEs": true,
     "slug": "inspecao-palavra-upsert",
@@ -6077,7 +6077,7 @@
     "category": "inspecao",
     "series": "palavras-origem",
     "seriesOrder": 201,
-    "seriesLabel": "Upsert · palavra"
+    "seriesLabel": "Opsert · palavra"
   },
   {
     "title": "Inspeção: Intestino — o tubo de dentro (intus) e Valeu !!!",

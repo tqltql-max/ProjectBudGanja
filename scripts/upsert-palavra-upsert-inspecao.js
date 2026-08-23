@@ -97,15 +97,15 @@ async function main() {
     const si = items.findIndex((x) => x.id === sugId);
     const entry = {
       id: sugId,
-      title: 'Upsert — inserir ou actualizar sem duplicar a identidade',
-      titleEn: 'Upsert — insert or update without duplicating identity',
-      titleEs: 'Upsert — insertar o actualizar sin duplicar la identidad',
+      title: 'Opsert — inserir ou actualizar sem duplicar a identidade',
+      titleEn: 'Opsert — insert or update without duplicating identity',
+      titleEs: 'Opsert — insertar o actualizar sin duplicar la identidad',
       tipo: 'palavra',
       priority: 2,
       status: 'feita',
-      why: 'Palavras: upsert (update+insert) — chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; o lab já pratica o gesto; Valeu !!!',
-      whyEn: 'Words: upsert (update+insert) — key/slug; MERGE ≠ replace; BR calque upsertar; link commitar; the lab already does the gesture; Valeu !!!',
-      whyEs: 'Palabras: upsert (update+insert) — clave/slug; MERGE ≠ replace; calco upsertar; vínculo commitar; el lab ya practica el gesto; ¡Valeu !!!',
+      why: 'Palavras: opsert (boca BR de upsert) — mãos à obra (plural); chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!',
+      whyEn: 'Words: opsert (BR mouth of upsert) — mãos à obra (plural); key/slug; MERGE ≠ replace; calque upsertar; link commitar; Valeu !!!',
+      whyEs: 'Palabras: opsert (boca BR de upsert) — mãos à obra (plural); clave/slug; MERGE ≠ replace; calco upsertar; vínculo commitar; ¡Valeu !!!',
       suggestedSlug: post.slug,
       doneHref: href,
       seriesHint: 'palavras-origem',
@@ -120,7 +120,7 @@ async function main() {
       notes:
         'Cap. ' +
         post.seriesOrder +
-        ' — portmanteau update+insert; identidade (slug); ≠ replace; depois commitar.'
+        ' — opsert (boca BR); mãos à obra (plural); identidade (slug); ≠ replace; depois commitar.'
     };
     if (si >= 0) items[si] = Object.assign({}, items[si], entry);
     else items.push(entry);
@@ -139,23 +139,23 @@ async function main() {
         id: 'upsert',
         word: 'upsert',
         simple:
-          'Portmanteau EN update+insert — inserir se a chave é nova, actualizar se já existe; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!',
+          'Portmanteau EN update+insert — nome nosso opsert; mãos à obra (plural); inserir se a chave é nova, actualizar se já existe; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!',
         simpleEn:
-          'EN portmanteau update+insert — insert if the key is new, update if it exists; MERGE ≠ replace; BR calque upsertar; link commitar; Valeu !!!',
+          'EN portmanteau update+insert — lab name opsert; mãos à obra (plural); insert if the key is new, update if it exists; MERGE ≠ replace; BR calque upsertar; link commitar; Valeu !!!',
         simpleEs:
-          'Portmanteau EN update+insert — insertar si la clave es nueva, actualizar si ya existe; MERGE ≠ replace; calco upsertar; vínculo commitar; ¡Valeu !!!',
+          'Portmanteau EN update+insert — nombre vivo opsert; mãos à obra (plural); insertar si la clave es nueva, actualizar si ya existe; MERGE ≠ replace; calco upsertar; vínculo commitar; ¡Valeu !!!',
         history:
-          'Upsert é portmanteau inglês de update + insert, jargão de bases de dados (MERGE no SQL:2003; UPSERT no PostgreSQL e no MongoDB). No laboratório nomeia o gesto de não duplicar a identidade — o slug decide insert ou update.',
+          'Upsert é portmanteau inglês de update + insert (MERGE no SQL:2003; UPSERT no PostgreSQL e no MongoDB). No laboratório o nome nosso é opsert — boca BR do lema, como commitar tomou o git. O slug decide insert ou update.',
         curiosities:
-          'Os scripts da casa já se chamam upsert-palavra-*.js: a ficha entra no catálogo pelo verbo que inspecciona. Upsertar é calco BR, como commitar; o commit grava o rasto depois do merge.',
+          'Os scripts da casa continuam upsert-*.js (lema EN no disco). Grito: mãos à obra (plural — as duas; não mão à obra). Upsertar é calco, não a fala. O commit grava o rasto depois do opsert.',
         historyEn:
-          'Upsert is an English portmanteau of update + insert, database jargon (SQL MERGE in SQL:2003; UPSERT in PostgreSQL and MongoDB). In the lab it names the gesture of not duplicating identity — the slug decides insert or update.',
+          'Upsert is an English portmanteau of update + insert (SQL MERGE in SQL:2003; UPSERT in PostgreSQL and MongoDB). In the lab the living name is opsert — BR mouth of the lemma, as commitar took git. The slug decides insert or update.',
         curiositiesEn:
-          'House scripts are already named upsert-palavra-*.js: the sheet enters the catalogue by the verb it inspects. Upsertar is a BR calque, like commitar; the commit records the trace after the merge.',
+          'House scripts stay upsert-*.js (EN lemma on disk). Cry: mãos à obra (plural — both hands; not mão à obra). Upsertar is a calque, not lab speech. The commit records the trace after the opsert.',
         historyEs:
-          'Upsert es un portmanteau inglés de update + insert, jerga de bases de datos (MERGE en SQL:2003; UPSERT en PostgreSQL y MongoDB). En el laboratorio nombra el gesto de no duplicar la identidad — el slug decide insert o update.',
+          'Upsert es un portmanteau inglés de update + insert (MERGE en SQL:2003; UPSERT en PostgreSQL y MongoDB). En el laboratorio el nombre vivo es opsert — boca BR del lema, como commitar tomó el git. El slug decide insert o update.',
         curiositiesEs:
-          'Los scripts de la casa ya se llaman upsert-palavra-*.js: la ficha entra al catálogo por el verbo que inspecciona. Upsertar es calco BR, como commitar; el commit graba el rastro después del merge.',
+          'Los scripts de la casa siguen upsert-*.js (lema EN en disco). Grito: mãos à obra (plural — las dos; no mão à obra). Upsertar es calco, no el habla. El commit graba el rastro después del opsert.',
         group: 'lexico',
         fromTitle: false,
         href
@@ -168,21 +168,55 @@ async function main() {
         id: 'upsertar',
         word: 'upsertar',
         simple:
-          'Calco BR de to upsert — inserir ou actualizar pela chave; ≠ replace; ≠ commitar; ver ficha upsert.',
+          'Calco BR de to upsert — inserir ou actualizar pela chave; ≠ nome nosso (opsert); ≠ replace; ≠ commitar; ver ficha upsert.',
         simpleEn:
-          'BR calque of to upsert — insert or update by key; ≠ replace; ≠ commitar; see upsert sheet.',
+          'BR calque of to upsert — insert or update by key; ≠ living name (opsert); ≠ replace; ≠ commitar; see upsert sheet.',
         simpleEs:
-          'Calco BR de to upsert — insertar o actualizar por clave; ≠ replace; ≠ commitar; ver ficha upsert.',
+          'Calco BR de to upsert — insertar o actualizar por clave; ≠ nombre vivo (opsert); ≠ replace; ≠ commitar; ver ficha upsert.',
         group: 'lexico',
         fromTitle: false,
         href
       },
       ['upsert']
     );
+    upsertGuia(
+      items,
+      {
+        id: 'opsert',
+        word: 'opsert',
+        simple:
+          'Nome nosso de upsert — boca BR do lema EN; verbo opsertar; fecho Opsert.; grito mãos à obra (plural); ≠ upsertar; ≠ replace; elo commitar; Valeu !!!',
+        simpleEn:
+          'Lab living name for upsert — BR mouth of the EN lemma; verb opsertar; close Opsert.; cry mãos à obra (plural); ≠ upsertar; ≠ replace; link commitar; Valeu !!!',
+        simpleEs:
+          'Nombre vivo de upsert — boca BR del lema EN; verbo opsertar; cierre Opsert.; grito mãos à obra (plural); ≠ upsertar; ≠ replace; vínculo commitar; ¡Valeu !!!',
+        group: 'lexico',
+        fromTitle: false,
+        href
+      },
+      ['upsertar']
+    );
+    upsertGuia(
+      items,
+      {
+        id: 'opsertar',
+        word: 'opsertar',
+        simple:
+          'Verbo de ofício de opsert — opsertar a ficha (levantar se o slug existe; inserir se não); ≠ upsertar; depois commitar.',
+        simpleEn:
+          'Craft verb of opsert — opsertar the sheet (raise if the slug exists; insert if not); ≠ upsertar; then commitar.',
+        simpleEs:
+          'Verbo de oficio de opsert — opsertar la ficha (levantar si el slug existe; insertar si no); ≠ upsertar; luego commitar.',
+        group: 'lexico',
+        fromTitle: false,
+        href
+      },
+      ['opsert']
+    );
     guia.items = items;
     guia.updatedAt = new Date().toISOString();
     fs.writeFileSync(GUIA_FILE, JSON.stringify(guia, null, 2) + '\n', 'utf8');
-    console.log('Guia de palavras actualizado (upsert / upsertar)');
+    console.log('Guia de palavras actualizado (upsert / upsertar / opsert / opsertar)');
   }
 
   const glossPath = path.join(ROOT, 'js', 'learn-glossary.js');
@@ -191,18 +225,28 @@ async function main() {
     const hrefU = '/posts/post-inspecao-palavra-upsert.html';
     const entries = {
       upsert:
-        '    upsert: { tone: "caution", category: "Ofício", mundane: "EN — inserir se novo, actualizar se a chave já existe.", gloss: "Portmanteau update+insert; MERGE ≠ replace; calco upsertar; elo commitar; o lab pratica no slug; Valeu !!!", href: "' +
+        '    upsert: { tone: "caution", category: "Ofício", mundane: "EN — inserir se novo, actualizar se a chave já existe.", gloss: "Portmanteau update+insert; nome nosso opsert; mãos à obra (plural); MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!", href: "' +
         hrefU +
         '", en: "upsert", es: "upsert / insertar o actualizar", fr: "upsert", it: "upsert", de: "upsert", el: "upsert", la: "inserere vel renovare", yo: "upsert", sw: "upsert", gez: "upsert", nl: "upsert", pl: "upsert", ru: "upsert", uk: "upsert", zh: "upsert", ja: "upsert", ko: "upsert", ar: "upsert", he: "upsert", hi: "upsert", tr: "upsert", sv: "upsert", da: "upsert", no: "upsert", fi: "upsert", cs: "upsert", ro: "upsert", hu: "upsert", ca: "upsert", gl: "upsert", eu: "upsert", gn: "upsert", qu: "upsert", eo: "upserti", vi: "upsert", id: "upsert", th: "upsert", hr: "upsert", sk: "upsert", ga: "upsert", cy: "upsert", ha: "upsert", am: "upsert", fa: "upsert", bn: "upsert", zu: "i-upsert" },\n',
       upsertar:
-        '    upsertar: { gloss: "Calco BR de to upsert — inserir ou actualizar pela chave; ≠ replace; ≠ commitar; ver ficha upsert.", href: "' +
+        '    upsertar: { gloss: "Calco BR de to upsert — ≠ nome nosso (opsert); inserir ou actualizar pela chave; ≠ replace; ≠ commitar; ver ficha upsert.", href: "' +
         hrefU +
-        '", en: "to upsert", es: "hacer upsert" },\n'
+        '", en: "to upsert", es: "hacer upsert" },\n',
+      opsert:
+        '    opsert: { tone: "caution", category: "Ofício", mundane: "Nome nosso — boca BR de upsert; as duas mãos à obra.", gloss: "Opsert / opsertar / Opsert.; mãos à obra (plural, não mão à obra); lema EN upsert no ficheiro; ≠ upsertar; elo commitar; Valeu !!!", href: "' +
+        hrefU +
+        '", en: "opsert (lab name of upsert)", es: "opsert" },\n',
+      opsertar:
+        '    opsertar: { gloss: "Verbo de ofício de opsert — opsertar a ficha pelo slug; ≠ upsertar; depois commitar.", href: "' +
+        hrefU +
+        '", en: "to opsert", es: "opsertar" },\n'
     };
 
     const chain = [
       ['commitar', 'upsert'],
-      ['upsert', 'upsertar']
+      ['upsert', 'upsertar'],
+      ['upsertar', 'opsert'],
+      ['opsert', 'opsertar']
     ];
     for (const [after, key] of chain) {
       if (glossHas(gloss, key)) gloss = replaceGloss(gloss, key, entries[key]);
@@ -210,7 +254,7 @@ async function main() {
     }
 
     fs.writeFileSync(glossPath, gloss);
-    console.log('Glossário actualizado (upsert / upsertar)');
+    console.log('Glossário actualizado (upsert / upsertar / opsert / opsertar)');
   }
 
   try {

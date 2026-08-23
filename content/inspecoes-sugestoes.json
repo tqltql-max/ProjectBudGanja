@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T20:54:00.753Z",
+  "updatedAt": "2026-08-23T02:52:10.678Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7882,15 +7882,15 @@
     },
     {
       "id": "palavra-upsert",
-      "title": "Upsert — inserir ou actualizar sem duplicar a identidade",
-      "titleEn": "Upsert — insert or update without duplicating identity",
-      "titleEs": "Upsert — insertar o actualizar sin duplicar la identidad",
+      "title": "Opsert — inserir ou actualizar sem duplicar a identidade",
+      "titleEn": "Opsert — insert or update without duplicating identity",
+      "titleEs": "Opsert — insertar o actualizar sin duplicar la identidad",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: upsert (update+insert) — chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; o lab já pratica o gesto; Valeu !!!",
-      "whyEn": "Words: upsert (update+insert) — key/slug; MERGE ≠ replace; BR calque upsertar; link commitar; the lab already does the gesture; Valeu !!!",
-      "whyEs": "Palabras: upsert (update+insert) — clave/slug; MERGE ≠ replace; calco upsertar; vínculo commitar; el lab ya practica el gesto; ¡Valeu !!!",
+      "why": "Palavras: opsert (boca BR de upsert) — mãos à obra (plural); chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!",
+      "whyEn": "Words: opsert (BR mouth of upsert) — mãos à obra (plural); key/slug; MERGE ≠ replace; calque upsertar; link commitar; Valeu !!!",
+      "whyEs": "Palabras: opsert (boca BR de upsert) — mãos à obra (plural); clave/slug; MERGE ≠ replace; calco upsertar; vínculo commitar; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-upsert",
       "doneHref": "/posts/post-inspecao-palavra-upsert.html",
       "seriesHint": "palavras-origem",
@@ -7902,7 +7902,7 @@
         "/posts/post-inspecao-palavra-skill.html",
         "/posts/post-inspecao-palavra-valeu.html"
       ],
-      "notes": "Cap. 201 — portmanteau update+insert; identidade (slug); ≠ replace; depois commitar."
+      "notes": "Cap. 201 — opsert (boca BR); mãos à obra (plural); identidade (slug); ≠ replace; depois commitar."
     },
     {
       "id": "palavra-intestino",

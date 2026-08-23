@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T20:54:40.921Z",
+  "updatedAt": "2026-08-23T02:53:00.580Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -350,10 +350,10 @@
       "text": "Inspeção: Intestino — o tubo de dentro (intus) e Valeu !!! Palavras: «intestino» (lat. *intestīnum* ← *intus*) — órgão-tubo e adj. interno; ≠ barriga; elos eCBome/UNIFESP; Valeu !!! por dentro. inspecao ## Escopo\n\nInspeção editorial da palavra **[intestino](/posts/post-inspecao-palavra-intestino.html)** — o **tubo de dentro**. O étimo não mente: lat. *intestīnum* é o substantivo de *intestīnus* «interno», de *intus* «dentro». Pedido de campo: *inspeção da palavra Intestino*. Esta ficha cobre o **objecto lexical**, os **dois ofícios** (órgão × adj. interno), o corte com a [barriga](/posts/post-inspecao-palavra-barriga.html) (ventre de **fora**, sinal de satisfação) e o fecho [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · intestino](https://pt.wiktionary.org/wiki/intestino), [Wikipédia · Intestino](https://pt.wikipedia.org/wiki/Intestino), lat. [*intestīnum*](https://en.wiktionary.org/wiki/intestinum#Latin), [*intus*](https://en.wiktionary.org/wiki/intus#Latin). Série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). **Ficha ≠ gastroenterologia, ≠ dieta, ≠ diagnóstico, ≠ bula.** O laboratório mapeia **léxico e ofício**. Índice de discurso ([Davis](/posts/post-inspecao-figura-william-davis.html), [glúten](/posts/post-inspecao-derivado-gluten.html), [UNIFESP](/biblioteca/unifesp/)) ≠ endosso clínico. Sem afiliação comercial.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **intestino** |\n| Classe | Substantivo masculino · também adjectivo («interno, de dentro») |\n| Étimo (trabalho) | Lat. *intestīnum* ← *intestīnus* «interno» ← *intus* «dentro» — confiança: **alta** |\n| Família verdadeira | *intestinal* · *intestinos* · *flora intestinal* · *guerra intestina* · *íntimo* / *interno* / *interior* (campo de *intus*) |\n| Popular | *tripa* (uso vivo; não é o étimo culto) |\n| Paralelo grego | *énteron* (ἔντερον) → *entérico*, *gastroenterologia* — **outro étimo**,"
     },
     {
-      "title": "Inspeção: Upsert — inserir ou actualizar sem duplicar a identidade",
+      "title": "Inspeção: Opsert — inserir ou actualizar sem duplicar a identidade",
       "url": "/posts/post-inspecao-palavra-upsert.html",
-      "excerpt": "Palavras: «upsert» (update+insert) — chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; o lab já pratica o gesto; Valeu !!!",
-      "text": "Inspeção: Upsert — inserir ou actualizar sem duplicar a identidade Palavras: «upsert» (update+insert) — chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; o lab já pratica o gesto; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da palavra **[upsert](/posts/post-inspecao-palavra-upsert.html)** — portmanteau inglês de *update* + *insert*. No ofício de bases de dados: **inserir se a identidade ainda não existe; actualizar se já existe**. Pedido de campo e ironia do lab: os scripts da casa chamam-se `upsert-palavra-*.js` — esta ficha entra no catálogo **pelo gesto que nomeia**. Cobre o **lema**, o mapa **INSERT × UPDATE × UPSERT × MERGE × REPLACE**, o calco BR **upsertar**, o elo [commitar](/posts/post-inspecao-palavra-commitar.html) (gravar o snapshot **depois** do merge) e o fecho [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wiktionary · upsert](https://en.wiktionary.org/wiki/upsert), [MERGE (SQL)](https://en.wikipedia.org/wiki/Merge_(SQL)), uso BR de oficina. **Ficha ≠ tutorial SQL, ≠ receita de corrida, ≠ licença para overwrite silencioso.** Tom: Inspetor BudGanja — *upsert* é [gesto](/posts/post-inspecao-palavra-gesto.html) de **identidade**, não botão mágico.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Forma âncora | **upsert** (EN; substantivo / verbo) |\n| Calco BR | **upsertar** (como [commitar](/posts/post-inspecao-palavra-commitar.html)) — «fazer upsert» |\n| Classe | Empréstimo de ofício (bases de dados, APIs, catálogos) |\n| Étimo (trabalho) | Portmanteau *update* + *insert* (jargão EN, séc. XX–XXI) — confiança: **alta** no blend; **média** na data exacta do primeiro uso |\n| Família | *upsert* · *upsertar* · SQL *MERGE* · *ON CONFLICT* · *ON DUPLICATE KEY* |\n| Falsos irmãos | *upar* (games, «subir de nível») · *replace* (apagar + inserir — outra política) · [commitar](/posts/post-inspecao-palavra-commitar.html) (snapshot git — **depois**) |\n| Tipo BudGanja | Pa"
+      "excerpt": "Palavras: opsert (boca BR de upsert) — mãos à obra (plural); chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!",
+      "text": "Inspeção: Opsert — inserir ou actualizar sem duplicar a identidade Palavras: opsert (boca BR de upsert) — mãos à obra (plural); chave/slug; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da palavra **[upsert](/posts/post-inspecao-palavra-upsert.html)** — portmanteau inglês de *update* + *insert*. No ofício: **inserir se a identidade ainda não existe; actualizar se já existe**. Pedido de campo: o lab **quer o gesto** e precisa de **nome nosso**. Nome de ofício: **opsert** (verbo **opsertar**; fecho **Opsert.**). Boca BR do lema EN: o *u* abre em *o* — como [commitar](/posts/post-inspecao-palavra-commitar.html) tomou o git. As **mãos** do gesto (plural — *mãos à obra*, não *mão à obra*): **levante** o que já está; **insira** o que ainda não está (pedido *levante e insiera*). Os scripts da casa continuam `upsert-*.js` (lema EN no disco). Calco **upsertar** fica no mapa; **não** é a fala. Fecho [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wiktionary · upsert](https://en.wiktionary.org/wiki/upsert), [MERGE (SQL)](https://en.wikipedia.org/wiki/Merge_(SQL)), boca de oficina BR. **Ficha ≠ tutorial SQL, ≠ receita de corrida, ≠ licença para overwrite silencioso.** Tom: Inspetor BudGanja — *upsert* é o lema EN; **opsert** é o [gesto](/posts/post-inspecao-palavra-gesto.html) de **identidade**.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Forma âncora (EN) | **upsert** (substantivo / verbo de oficina) |\n| Nome nosso | **opsert** — verbo **opsertar** · fecho **Opsert.** |\n| Grafia viva | *opsert* (pedido de campo) — o **mesmo** objecto que *upsert*, boca BR |\n| Mãos | **mãos à obra** (plural) — **levante** o que já está; **insira** o novo — lapso de campo *insiera* |\n| Calco BR | **upsertar** — anglicismo de oficina; **não** é a voz viva |\n| Classe | Empréstimo EN + nome nosso de ofício |\n| Étimo (trabalho) | EN *update*+*insert* (confiança **"
     },
     {
       "title": "Inspeção: Script — sequência escrita, não destino",
@@ -4270,14 +4270,26 @@
     {
       "title": "upsert",
       "url": "/posts/post-inspecao-palavra-upsert.html",
-      "excerpt": "Portmanteau EN update+insert — inserir se a chave é nova, actualizar se já existe; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!",
-      "text": "upsert Portmanteau EN update+insert — inserir se a chave é nova, actualizar se já existe; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!! lexico guia palavras glossário upsert"
+      "excerpt": "Portmanteau EN update+insert — nome nosso opsert; mãos à obra (plural); inserir se a chave é nova, actualizar se já existe; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!!",
+      "text": "upsert Portmanteau EN update+insert — nome nosso opsert; mãos à obra (plural); inserir se a chave é nova, actualizar se já existe; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!! lexico guia palavras glossário upsert"
     },
     {
       "title": "upsertar",
       "url": "/posts/post-inspecao-palavra-upsert.html",
-      "excerpt": "Calco BR de to upsert — inserir ou actualizar pela chave; ≠ replace; ≠ commitar; ver ficha upsert.",
-      "text": "upsertar Calco BR de to upsert — inserir ou actualizar pela chave; ≠ replace; ≠ commitar; ver ficha upsert. lexico guia palavras glossário upsertar"
+      "excerpt": "Calco BR de to upsert — inserir ou actualizar pela chave; ≠ nome nosso (opsert); ≠ replace; ≠ commitar; ver ficha upsert.",
+      "text": "upsertar Calco BR de to upsert — inserir ou actualizar pela chave; ≠ nome nosso (opsert); ≠ replace; ≠ commitar; ver ficha upsert. lexico guia palavras glossário upsertar"
+    },
+    {
+      "title": "opsert",
+      "url": "/posts/post-inspecao-palavra-upsert.html",
+      "excerpt": "Nome nosso de upsert — boca BR do lema EN; verbo opsertar; fecho Opsert.; grito mãos à obra (plural); ≠ upsertar; ≠ replace; elo commitar; Valeu !!!",
+      "text": "opsert Nome nosso de upsert — boca BR do lema EN; verbo opsertar; fecho Opsert.; grito mãos à obra (plural); ≠ upsertar; ≠ replace; elo commitar; Valeu !!! lexico guia palavras glossário opsert"
+    },
+    {
+      "title": "opsertar",
+      "url": "/posts/post-inspecao-palavra-upsert.html",
+      "excerpt": "Verbo de ofício de opsert — opsertar a ficha (levantar se o slug existe; inserir se não); ≠ upsertar; depois commitar.",
+      "text": "opsertar Verbo de ofício de opsert — opsertar a ficha (levantar se o slug existe; inserir se não); ≠ upsertar; depois commitar. lexico guia palavras glossário opsertar"
     },
     {
       "title": "script",

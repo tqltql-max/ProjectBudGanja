@@ -1,6 +1,6 @@
 'use strict';
 
-/** Capa 1200×630 — upsert (Palavras). */
+/** Capa 1200×630 — opsert / upsert (Palavras). */
 const fs = require('fs');
 const path = require('path');
 const { ROOT } = require('../lib/paths.js');
@@ -25,11 +25,12 @@ async function main() {
   <rect width="1200" height="630" fill="url(#g)"/>
   <ellipse cx="600" cy="220" rx="380" ry="200" fill="url(#glow)"/>
   <text x="600" y="78" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#7ecfc0" letter-spacing="3">PALAVRAS · UPDATE ∪ INSERT</text>
-  <text x="600" y="236" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="72" font-weight="700" fill="#e8faf4">upsert</text>
-  <text x="600" y="308" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="24" fill="#b8e0d4">inserir  ·  actualizar  ·  o mesmo id</text>
+  <text x="600" y="228" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="78" font-weight="700" fill="#e8faf4">opsert</text>
+  <text x="600" y="292" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="22" fill="#b8e0d4">mãos à obra  ·  levante e insira</text>
+  <text x="600" y="360" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="rgba(200,230,220,0.85)">upsert · boca BR</text>
   <text x="600" y="470" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="rgba(200,230,220,0.95)">MERGE ≠ replace  ·  ≠ commitar</text>
   <text x="600" y="530" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="20" fill="#98d4c8">chave visível · merge inspeccionável</text>
-  <text x="600" y="586" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#7ecfc0">faça o melhor neste slug</text>
+  <text x="600" y="586" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#7ecfc0">Opsert.</text>
 </svg>`);
 
   await sharp(bg).jpeg({ quality: 84, mozjpeg: true }).toFile(OUT);
