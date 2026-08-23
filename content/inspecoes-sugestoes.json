@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T19:08:36.652Z",
+  "updatedAt": "2026-08-23T19:43:59.266Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -9663,6 +9663,28 @@
       "doneHref": "/posts/post-inspecao-palavra-isqueiro-clipper.html",
       "seriesHint": "palavras-origem",
       "notes": "Cap. 286"
+    },
+    {
+      "id": "palavra-fantasia",
+      "title": "Fantasia — a faculdade; ≠ fantástico ≠ roupa ≠ filme",
+      "titleEn": "Fantasia — the faculty; ≠ fantástico ≠ costume ≠ film",
+      "titleEs": "Fantasia — la facultad; ≠ fantástico ≠ disfraz ≠ película",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: fantasia — phantasía; ≠ elogio fantástico ≠ fantasioso ≠ Carnaval ≠ Disney; Valeu !!!",
+      "whyEn": "Words: fantasia — phantasía; ≠ praise fantástico ≠ fantasioso ≠ Carnival ≠ Disney; Valeu !!!",
+      "whyEs": "Palabras: fantasia — phantasía; ≠ elogio fantástico ≠ fantasioso ≠ Carnaval ≠ Disney; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-fantasia",
+      "doneHref": "/posts/post-inspecao-palavra-fantasia.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/fantasia",
+        "/posts/post-inspecao-palavra-fantastico.html",
+        "/posts/post-inspecao-palavra-fantasioso.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 288 — pedido Inepçao de Fantasia."
     }
   ]
 }

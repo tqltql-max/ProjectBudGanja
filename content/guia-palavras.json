@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T19:08:36.652Z",
+  "updatedAt": "2026-08-23T19:43:59.266Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3488,6 +3488,22 @@
       "curiositiesEn": "The lab inspects the adjective as a method warning: imagine with a trail, do not fabricate evidence.",
       "historyEs": "Fantasioso junta fantasía al sufijo -oso y oscila entre imaginativo y crítica leve. Se distingue de fantástico, ficha hermana de elogio.",
       "curiositiesEs": "El laboratorio inspecciona el adjetivo como aviso de método: imaginar con rastro, no fabricar evidencia."
+    },
+    {
+      "id": "fantasia",
+      "word": "fantasia",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-fantasia.html",
+      "simple": "Gr. phantasía — faculdade de imaginar; ≠ elogio fantástico ≠ fantasioso ≠ roupa de Carnaval ≠ filme Disney. Valeu !!!",
+      "simpleEn": "Gk. phantasía — faculty of imagining; ≠ praise fantástico ≠ fantasioso ≠ Carnival costume ≠ Disney film. Valeu !!!",
+      "simpleEs": "Gr. phantasía — facultad de imaginar; ≠ elogio fantástico ≠ fantasioso ≠ disfraz ≠ Disney. ¡Valeu !!!",
+      "history": "Fantasia vem do grego phantasía (aparição / imaginação). No BR a mesma palavra veste o Carnaval; o adjectivo fantástico elogia; fantasioso marca quem está cheio disso.",
+      "curiosities": "Pedido de campo: Inepçao de Fantasia. A ficha corta as salas e não trata o vocábulo como manual de fuga.",
+      "historyEn": "Portuguese fantasia comes from Greek phantasía (appearance / imagination). In Brazil the same word also names a Carnival costume; fantástico praises; fantasioso marks who is full of it.",
+      "curiositiesEn": "Field slip: Inepçao de Fantasia. The sheet cuts the rooms and is not an escape manual.",
+      "historyEs": "Fantasia viene del griego phantasía. En BR la misma palabra también nombra el disfraz de carnaval; fantástico elogia; fantasioso marca a quien está lleno de ello.",
+      "curiositiesEs": "Pedido: Inepçao de Fantasia. La ficha corta las salas y no es un manual de fuga."
     },
     {
       "id": "fantastico",

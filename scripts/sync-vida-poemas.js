@@ -149,6 +149,11 @@ const {
   maraPoemEn,
   maraPoemEs
 } = require('../lib/mara-inspecao-post.js');
+const {
+  poemPt: poemFantasiaPt,
+  poemEn: poemFantasiaEn,
+  poemEs: poemFantasiaEs
+} = require('../lib/fantasia-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -156,6 +161,27 @@ const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
 const doc = {
   updatedAt: new Date().toISOString(),
   poems: [
+    {
+      id: 'fantasia',
+      slug: 'fantasia',
+      title: 'Fantasia',
+      titleEn: 'Fantasia',
+      titleEs: 'Fantasia',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'A faculdade de imaginar — não o uau, não a roupa, não o filme.',
+      teaserEn:
+        'The faculty of imagining — not the wow, not the costume, not the film.',
+      teaserEs:
+        'La facultad de imaginar — no el guau, no el disfraz, no la película.',
+      body: poemFantasiaPt(),
+      bodyEn: poemFantasiaEn(),
+      bodyEs: poemFantasiaEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-fantasia.html',
+      tags: ['poesia', 'vida', 'fantasia', 'imaginação']
+    },
     {
       id: 'barquinhos-de-papel',
       slug: 'barquinhos-de-papel',
