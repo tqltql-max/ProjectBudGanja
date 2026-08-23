@@ -29,7 +29,7 @@ const CARDS = [
   <circle cx="430" cy="320" r="9" fill="rgba(220,160,180,0.8)"/>
   <text x="600" y="92" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#b8c8dc" letter-spacing="6">PALAVRAS · CAMPO DO CORPO</text>
   <text x="720" y="280" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="72" font-weight="700" fill="#f7fbff">sinais</text>
-  <text x="720" y="360" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#d0dce8">barriga · orelha · mama · cabelo</text>
+  <text x="720" y="360" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#d0dce8">barriga · orelha · mama · cabelo · braços na cabeça</text>
   <text x="600" y="540" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="22" fill="#c4d4e4">o campo, não um único sinal</text>`
   },
   {

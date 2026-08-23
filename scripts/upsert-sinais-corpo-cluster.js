@@ -141,16 +141,16 @@ const ITEMS = [
     sugTitle: 'Sinais — o campo do corpo',
     sugTitleEn: 'Sinais — the body-signal field',
     sugTitleEs: 'Sinais — el campo del cuerpo',
-    why: 'Palavras: sinais — plural de sinal; mapa do corpo (barriga, orelha, mama, cabelo).',
+    why: 'Palavras: sinais — plural de sinal; mapa do corpo (barriga, orelha, mama, cabelo, braços na cabeça).',
     guiaId: 'sinais',
     guiaWord: 'sinais',
     guiaSimple:
-      'Plural de sinal — campo do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres; Faça o melhor!',
+      'Plural de sinal — campo do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres, braços na cabeça=pausa da cabeça; Valeu !!!',
     guiaAfter: ['sinal', 'sinais-rem'],
     glossKey: 'sinais',
     glossAfter: 'sinal',
     glossMain:
-      '    sinais: { gloss: "Plural de sinal — campo do corpo (barriga, orelha, mama, cabelo); ≠ sinais REM (sono/sigla); Faça o melhor!", href: "/posts/post-inspecao-palavra-sinais.html", en: "signals / signs", es: "señales", fr: "signaux", it: "segnali", de: "Zeichen", el: "símata", la: "signa", yo: "àwọn àmì", sw: "ishara", gez: "təʾəmərt", nl: "signalen", pl: "sygnały", ru: "znaki", uk: "sygnaly", zh: "xinhao", ja: "shingo", ko: "shinho", ar: "isharat", he: "otot", hi: "sanket", tr: "sinyaller", sv: "tecken", da: "tegn", no: "tegn", fi: "merkit", cs: "signály", ro: "semnale", hu: "jelek", ca: "senyals", gl: "sinais", eu: "seinaleak", gn: "señál", qu: "unancha", eo: "signaloj", vi: "tin hieu", id: "sinyal", th: "สัญญาณ", hr: "signali", sk: "signály", ga: "comharthaí", cy: "arwyddion", ha: "alamomi", am: "ምልክቶች", fa: "neshaneha", bn: "সংকেত", zu: "izimpawu" },\n'
+      '    sinais: { gloss: "Plural de sinal — campo do corpo (barriga, orelha, mama, cabelo, braços na cabeça=pausa); ≠ sinais REM (sono/sigla); Valeu !!!", href: "/posts/post-inspecao-palavra-sinais.html", en: "signals / signs", es: "señales", fr: "signaux", it: "segnali", de: "Zeichen", el: "símata", la: "signa", yo: "àwọn àmì", sw: "ishara", gez: "təʾəmərt", nl: "signalen", pl: "sygnały", ru: "znaki", uk: "sygnaly", zh: "xinhao", ja: "shingo", ko: "shinho", ar: "isharat", he: "otot", hi: "sanket", tr: "sinyaller", sv: "tecken", da: "tegn", no: "tegn", fi: "merkit", cs: "signály", ro: "semnale", hu: "jelek", ca: "senyals", gl: "sinais", eu: "seinaleak", gn: "señál", qu: "unancha", eo: "signaloj", vi: "tin hieu", id: "sinyal", th: "สัญญาณ", hr: "signali", sk: "signály", ga: "comharthaí", cy: "arwyddion", ha: "alamomi", am: "ምልክቶች", fa: "neshaneha", bn: "সংকেত", zu: "izimpawu" },\n'
   },
   {
     build: buildBarrigaPost,
@@ -162,12 +162,12 @@ const ITEMS = [
     guiaId: 'barriga',
     guiaWord: 'barriga',
     guiaSimple:
-      'Ventre como sinal de satisfação (o bastante); ≠ livro Barriga de Trigo; mapa sinais; Faça o melhor!',
+      'Ventre como sinal de satisfação (o bastante); ≠ livro Barriga de Trigo; mapa sinais; Valeu !!!',
     guiaAfter: ['sinais', 'sinal'],
     glossKey: 'barriga',
     glossAfter: 'sinais',
     glossMain:
-      '    barriga: { gloss: "Ventre — sinal de satisfação (o bastante); ≠ Barriga de Trigo; mapa sinais; Faça o melhor!", href: "/posts/post-inspecao-palavra-barriga.html", en: "belly", es: "barriga / vientre", fr: "ventre", it: "pancia", de: "Bauch", el: "koilia", la: "venter", yo: "ikun", sw: "tumbo", gez: "käbd", nl: "buik", pl: "brzuch", ru: "zhivot", uk: "zhivot", zh: "duzi", ja: "onaka", ko: "bae", ar: "batn", he: "beten", hi: "pet", tr: "karin", sv: "mage", da: "mave", no: "mage", fi: "vatsa", cs: "bricho", ro: "burtă", hu: "has", ca: "panxa", gl: "barriga", eu: "sabel", gn: "hyegue", qu: "wiksa", eo: "ventro", vi: "bung", id: "perut", th: "ท้อง", hr: "trbuh", sk: "brucho", ga: "bolg", cy: "bola", ha: "ciki", am: "ሆድ", fa: "shekam", bn: "পেট", zu: "isisu" },\n',
+      '    barriga: { gloss: "Ventre — sinal de satisfação (o bastante); ≠ Barriga de Trigo; mapa sinais; Valeu !!!", href: "/posts/post-inspecao-palavra-barriga.html", en: "belly", es: "barriga / vientre", fr: "ventre", it: "pancia", de: "Bauch", el: "koilia", la: "venter", yo: "ikun", sw: "tumbo", gez: "käbd", nl: "buik", pl: "brzuch", ru: "zhivot", uk: "zhivot", zh: "duzi", ja: "onaka", ko: "bae", ar: "batn", he: "beten", hi: "pet", tr: "karin", sv: "mage", da: "mave", no: "mage", fi: "vatsa", cs: "bricho", ro: "burtă", hu: "has", ca: "panxa", gl: "barriga", eu: "sabel", gn: "hyegue", qu: "wiksa", eo: "ventro", vi: "bung", id: "perut", th: "ท้อง", hr: "trbuh", sk: "brucho", ga: "bolg", cy: "bola", ha: "ciki", am: "ሆድ", fa: "shekam", bn: "পেট", zu: "isisu" },\n',
     glossAliases:
       '    satisfação: { gloss: "O bastante (lat. satisfacere) — no mapa de sinais, leitura da barriga.", href: "/posts/post-inspecao-palavra-barriga.html", en: "satisfaction", es: "satisfacción" },\n'
   },
@@ -181,12 +181,12 @@ const ITEMS = [
     guiaId: 'orelha',
     guiaWord: 'orelha',
     guiaSimple:
-      'Orelha — pulga atrás = curiosidade; elos inseto, dois ouvidos; mapa sinais; Faça o melhor!',
+      'Orelha — pulga atrás = curiosidade; elos inseto, dois ouvidos; mapa sinais; Valeu !!!',
     guiaAfter: ['barriga', 'sinais'],
     glossKey: 'orelha',
     glossAfter: 'barriga',
     glossMain:
-      '    orelha: { gloss: "Lat. auricula — pulga atrás da orelha = curiosidade; mapa sinais; Faça o melhor!", href: "/posts/post-inspecao-palavra-orelha.html", en: "ear", es: "oreja", fr: "oreille", it: "orecchio", de: "Ohr", el: "aftí", la: "auricula", yo: "etí", sw: "sikio", gez: "ʾəzn", nl: "oor", pl: "ucho", ru: "ukho", uk: "vukho", zh: "erduo", ja: "mimi", ko: "gwi", ar: "udhun", he: "ozen", hi: "kaan", tr: "kulak", sv: "ora", da: "ore", no: "ore", fi: "korva", cs: "ucho", ro: "ureche", hu: "ful", ca: "orella", gl: "orella", eu: "belarri", gn: "nambi", qu: "rinri", eo: "orelo", vi: "tai", id: "telinga", th: "หู", hr: "uho", sk: "ucho", ga: "cluain", cy: "clust", ha: "kunne", am: "ጆሮ", fa: "gush", bn: "কান", zu: "indlebe" },\n',
+      '    orelha: { gloss: "Lat. auricula — pulga atrás da orelha = curiosidade; mapa sinais; Valeu !!!", href: "/posts/post-inspecao-palavra-orelha.html", en: "ear", es: "oreja", fr: "oreille", it: "orecchio", de: "Ohr", el: "aftí", la: "auricula", yo: "etí", sw: "sikio", gez: "ʾəzn", nl: "oor", pl: "ucho", ru: "ukho", uk: "vukho", zh: "erduo", ja: "mimi", ko: "gwi", ar: "udhun", he: "ozen", hi: "kaan", tr: "kulak", sv: "ora", da: "ore", no: "ore", fi: "korva", cs: "ucho", ro: "ureche", hu: "ful", ca: "orella", gl: "orella", eu: "belarri", gn: "nambi", qu: "rinri", eo: "orelo", vi: "tai", id: "telinga", th: "หู", hr: "uho", sk: "ucho", ga: "cluain", cy: "clust", ha: "kunne", am: "ጆሮ", fa: "gush", bn: "কান", zu: "indlebe" },\n',
     glossAliases:
       '    pulga: { gloss: "Na fala BR, peça da locução pulga atrás da orelha — curiosidade; o bicho vai em inseto.", href: "/posts/post-inspecao-palavra-orelha.html", en: "flea (idiom)", es: "pulga (dicho)" },\n' +
       '    curiosidade: { gloss: "Sinal da orelha (pulga atrás) — inspecionar, não sentenciar.", href: "/posts/post-inspecao-palavra-orelha.html", en: "curiosity", es: "curiosidad" },\n'
@@ -201,12 +201,12 @@ const ITEMS = [
     guiaId: 'mama',
     guiaWord: 'mama',
     guiaSimple:
-      'Mama = teta — sinal de algo fácil (à mão); ≠ mamão ≠ mãe; mapa sinais; Faça o melhor!',
+      'Mama = teta — sinal de algo fácil (à mão); ≠ mamão ≠ mãe; mapa sinais; Valeu !!!',
     guiaAfter: ['orelha', 'sinais'],
     glossKey: 'mama',
     glossAfter: 'orelha',
     glossMain:
-      '    mama: { gloss: "Lat. mamma = teta — sinal de algo fácil; ≠ mamão ≠ mãe; mapa sinais; Faça o melhor!", href: "/posts/post-inspecao-palavra-mama.html", en: "breast / teat", es: "mama / teta", fr: "sein", it: "mammella", de: "Brust", el: "stithos", la: "mamma", yo: "oỳan", sw: "ziwa", gez: "ṭub", nl: "borst", pl: "piers", ru: "grud", uk: "hrudi", zh: "rufang", ja: "chichi", ko: "gaseum", ar: "thady", he: "shad", hi: "stan", tr: "meme", sv: "brost", da: "bryst", no: "bryst", fi: "rinta", cs: "prso", ro: "san", hu: "mell", ca: "mama", gl: "mama", eu: "bular", gn: "kambuchi", qu: "ñuñu", eo: "mamo", vi: "vu", id: "payudara", th: "เต้า", hr: "dojka", sk: "prsnik", ga: "cíoch", cy: "bron", ha: "nono", am: "ጡት", fa: "sine", bn: "স্তন", zu: "ibele" },\n',
+      '    mama: { gloss: "Lat. mamma = teta — sinal de algo fácil; ≠ mamão ≠ mãe; mapa sinais; Valeu !!!", href: "/posts/post-inspecao-palavra-mama.html", en: "breast / teat", es: "mama / teta", fr: "sein", it: "mammella", de: "Brust", el: "stithos", la: "mamma", yo: "oỳan", sw: "ziwa", gez: "ṭub", nl: "borst", pl: "piers", ru: "grud", uk: "hrudi", zh: "rufang", ja: "chichi", ko: "gaseum", ar: "thady", he: "shad", hi: "stan", tr: "meme", sv: "brost", da: "bryst", no: "bryst", fi: "rinta", cs: "prso", ro: "san", hu: "mell", ca: "mama", gl: "mama", eu: "bular", gn: "kambuchi", qu: "ñuñu", eo: "mamo", vi: "vu", id: "payudara", th: "เต้า", hr: "dojka", sk: "prsnik", ga: "cíoch", cy: "bron", ha: "nono", am: "ጡት", fa: "sine", bn: "স্তন", zu: "ibele" },\n',
     glossAliases:
       '    teta: { gloss: "Forma oral BR de mama — sinal de algo fácil; ver ficha mama.", href: "/posts/post-inspecao-palavra-mama.html", en: "teat", es: "teta" },\n'
   },
@@ -220,12 +220,12 @@ const ITEMS = [
     guiaId: 'cabelo',
     guiaWord: 'cabelo',
     guiaSimple:
-      'Cabelo — sinal de deferência: a gente deixa com as mulheres, elas sabem mais; ≠ despejo; mapa sinais; Faça o melhor!',
+      'Cabelo — sinal de deferência: a gente deixa com as mulheres, elas sabem mais; ≠ despejo; mapa sinais; Valeu !!!',
     guiaAfter: ['mama', 'sinais'],
     glossKey: 'cabelo',
     glossAfter: 'mama',
     glossMain:
-      '    cabelo: { gloss: "Lat. capillus — deixa com as mulheres (sabem mais); deferência ≠ despejo; mapa sinais; Faça o melhor!", href: "/posts/post-inspecao-palavra-cabelo.html", en: "hair", es: "cabello", fr: "cheveu", it: "capello", de: "Haar", el: "mallia", la: "capillus", yo: "irun", sw: "nywele", gez: "śəʿər", nl: "haar", pl: "wlosy", ru: "volosy", uk: "volossya", zh: "toufa", ja: "kami", ko: "meori", ar: "shaar", he: "sear", hi: "baal", tr: "sac", sv: "har", da: "har", no: "har", fi: "hius", cs: "vlasy", ro: "par", hu: "haj", ca: "cabell", gl: "cabelo", eu: "ile", gn: "akãrague", qu: "chujcha", eo: "haro", vi: "toc", id: "rambut", th: "ผม", hr: "kosa", sk: "vlasy", ga: "gruaig", cy: "gwallt", ha: "gashi", am: "ፀጉር", fa: "moo", bn: "চুল", zu: "izinwele" },\n'
+      '    cabelo: { gloss: "Lat. capillus — deixa com as mulheres (sabem mais); deferência ≠ despejo; mapa sinais; Valeu !!!", href: "/posts/post-inspecao-palavra-cabelo.html", en: "hair", es: "cabello", fr: "cheveu", it: "capello", de: "Haar", el: "mallia", la: "capillus", yo: "irun", sw: "nywele", gez: "śəʿər", nl: "haar", pl: "wlosy", ru: "volosy", uk: "volossya", zh: "toufa", ja: "kami", ko: "meori", ar: "shaar", he: "sear", hi: "baal", tr: "sac", sv: "har", da: "har", no: "har", fi: "hius", cs: "vlasy", ro: "par", hu: "haj", ca: "cabell", gl: "cabelo", eu: "ile", gn: "akãrague", qu: "chujcha", eo: "haro", vi: "toc", id: "rambut", th: "ผม", hr: "kosa", sk: "vlasy", ga: "gruaig", cy: "gwallt", ha: "gashi", am: "ፀጉር", fa: "moo", bn: "চুল", zu: "izinwele" },\n'
   }
 ];
 
@@ -250,7 +250,7 @@ function upsertSug(sug, post, cfg) {
     sources: [
       post.sourceUrl,
       '/posts/post-inspecao-palavra-sinal.html',
-      '/posts/post-inspecao-expressao-faca-o-melhor.html'
+      '/posts/post-inspecao-palavra-valeu.html'
     ],
     notes: 'Cap. ' + post.seriesOrder + ' — cluster sinais do corpo.'
   };
