@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T04:11:32.576Z",
+  "updatedAt": "2026-08-23T04:20:36.758Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8995,6 +8995,29 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 244 — home + page; página inicial; Homer é cola de olho; index.html = ficheiro, não étimo."
+    },
+    {
+      "id": "palavra-deplorar",
+      "title": "Deplorar — lastimar o dano; não é o mesmo que vomitar",
+      "titleEn": "Deplorar — lament the damage; it is not the same as vomitar",
+      "titleEs": "Deplorar — lamentar el daño; no es lo mismo que vomitar",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: deplorar (lat. dēplōrāre ← plōrāre) — luto × juízo; par vomitar por ofício, não por étimo; Valeu !!!",
+      "whyEn": "Words: deplorar (Lat. dēplōrāre ← plōrāre) — grief × judgement; pair with vomitar by office, not etymon; Valeu !!!",
+      "whyEs": "Palabras: deplorar (lat. dēplōrāre ← plōrāre) — duelo × juicio; par con vomitar por oficio, no por étimo; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-deplorar",
+      "doneHref": "/posts/post-inspecao-palavra-deplorar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/deplorar",
+        "/posts/post-inspecao-palavra-vomitar.html",
+        "/posts/post-inspecao-palavra-tonos.html",
+        "/posts/post-inspecao-palavra-commitar.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 259 — par vomitar × deplorar; plōrāre ≠ vomere."
     }
   ]
 }

@@ -2755,7 +2755,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-vomitar.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-vomitar",
-              "description": "Palavras: «vomitar» (lat. vomitare) — corpo × metáfora × mito XIV; tríade tónos / commitar; Valeu !!!"
+              "description": "Palavras: «vomitar» (lat. vomitare) — corpo × metáfora × mito XIV; tríade tónos / commitar; par deplorar; Valeu !!!"
             },
             {
               "label": "Inspeção: Commitar — gravar o rasto (comitar ≠ cometer)",
@@ -3316,6 +3316,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-vida-energia",
               "description": "Palavras: vida × energia no HUD — HP e meter; ≠ ficha Vida; elos mana e Mortal Kombat; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Deplorar — lastimar o dano; não é o mesmo que vomitar",
+              "tileLabel": "Inspeção: Deplorar — lastimar o…",
+              "href": "/posts/post-inspecao-palavra-deplorar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-deplorar",
+              "description": "Palavras: «deplorar» (lat. dēplōrāre ← plōrāre) — luto × juízo; par vomitar por ofício, não por étimo; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

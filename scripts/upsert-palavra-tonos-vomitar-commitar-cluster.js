@@ -120,19 +120,19 @@ const ITEMS = [
     sugTitle: 'Tónos — a raiz grega da tensão, distinta de tônico',
     sugTitleEn: 'Tónos — the Greek root of tension, distinct from tônico',
     sugTitleEs: 'Tónos — la raíz griega de la tensión, distinta de tônico',
-    why: 'Palavras: tónos (τόνος) — raiz da tensão; ≠ mapa PT tônico; tríade vomitar / commitar; Faça o melhor!',
-    whyEn: 'Words: tónos (τόνος) — root of tension; ≠ PT map tônico; triad vomitar / commitar; Do your best!',
-    whyEs: 'Palabras: tónos (τόνος) — raíz de la tensión; ≠ mapa PT tônico; tríada vomitar / commitar; ¡Haz lo mejor!',
+    why: 'Palavras: tónos (τόνος) — raiz da tensão; ≠ mapa PT tônico; tríade vomitar / commitar; Valeu !!!',
+    whyEn: 'Words: tónos (τόνος) — root of tension; ≠ PT map tônico; triad vomitar / commitar; Valeu !!!',
+    whyEs: 'Palabras: tónos (τόνος) — raíz de la tensión; ≠ mapa PT tônico; tríada vomitar / commitar; ¡Valeu !!!',
     guiaId: 'tonos',
     guiaWord: 'tónos',
     guiaAfter: ['tonico', 'isotonico', 'lingua-portuguesa'],
     guiaEntry: {
       simple:
-        'Gr. τόνος — tensão, tom, corda; raiz de tônico; ≠ mapa PT; tríade vomitar / commitar; Faça o melhor sem fundir a raiz.',
+        'Gr. τόνος — tensão, tom, corda; raiz de tônico; ≠ mapa PT; tríade vomitar / commitar; Valeu !!! sem fundir a raiz.',
       simpleEn:
-        'Gr. τόνος — tension, pitch, string; root of tônico; ≠ PT map; triad vomitar / commitar; Do your best without fusing the root.',
+        'Gr. τόνος — tension, pitch, string; root of tônico; ≠ PT map; triad vomitar / commitar; Valeu !!! without fusing the root.',
       simpleEs:
-        'Gr. τόνος — tensión, tono, cuerda; raíz de tônico; ≠ mapa PT; tríada vomitar / commitar; ¡Haz lo mejor sin fusionar la raíz!',
+        'Gr. τόνος — tensión, tono, cuerda; raíz de tônico; ≠ mapa PT; tríada vomitar / commitar; ¡Valeu !!! sin fusionar la raíz!',
       history:
         'Tónos é o substantivo grego da tensão (de teínō, esticar). Passou ao latim tonus e ao português tônico. No laboratório a raiz fica nesta ficha; os nove ofícios portugueses ficam na ficha tônico.',
       curiosities:
@@ -149,7 +149,7 @@ const ITEMS = [
     glossKey: 'tonos',
     glossAfter: 'tonico',
     glossMain:
-      '    tonos: { tone: "caution", category: "Tensão", mundane: "Grego τόνος — tensão, tom, corda; teclado tonos.", gloss: "Raiz de tônico; ≠ mapa PT; tríade vomitar / commitar; Faça o melhor sem fundir a raiz.", href: "/posts/post-inspecao-palavra-tonos.html", en: "tónos / tension", es: "tónos / tensión", fr: "tónos", it: "tónos", de: "tónos", el: "τόνος", la: "tonus", yo: "tónos", sw: "tónos", gez: "tonos", nl: "tónos", pl: "tónos", ru: "tonos", uk: "tonos", zh: "tonos", ja: "tonos", ko: "tonos", ar: "tonos", he: "tonos", hi: "tonos", tr: "tonos", sv: "tónos", da: "tónos", no: "tónos", fi: "tónos", cs: "tónos", ro: "tónos", hu: "tónos", ca: "tónos", gl: "tónos", eu: "tonos", gn: "tonos", qu: "tonos", eo: "tonoso", vi: "tonos", id: "tonos", th: "tonos", hr: "tonos", sk: "tónos", ga: "tónos", cy: "tonos", ha: "tonos", am: "tonos", fa: "tonos", bn: "tonos", zu: "i-tonos" },\n',
+      '    tonos: { tone: "caution", category: "Tensão", mundane: "Grego τόνος — tensão, tom, corda; teclado tonos.", gloss: "Raiz de tônico; ≠ mapa PT; tríade vomitar / commitar; Valeu !!! sem fundir a raiz.", href: "/posts/post-inspecao-palavra-tonos.html", en: "tónos / tension", es: "tónos / tensión", fr: "tónos", it: "tónos", de: "tónos", el: "τόνος", la: "tonus", yo: "tónos", sw: "tónos", gez: "tonos", nl: "tónos", pl: "tónos", ru: "tonos", uk: "tonos", zh: "tonos", ja: "tonos", ko: "tonos", ar: "tonos", he: "tonos", hi: "tonos", tr: "tonos", sv: "tónos", da: "tónos", no: "tónos", fi: "tónos", cs: "tónos", ro: "tónos", hu: "tónos", ca: "tónos", gl: "tónos", eu: "tonos", gn: "tonos", qu: "tonos", eo: "tonoso", vi: "tonos", id: "tonos", th: "tonos", hr: "tonos", sk: "tónos", ga: "tónos", cy: "tonos", ha: "tonos", am: "tonos", fa: "tonos", bn: "tonos", zu: "i-tonos" },\n',
     glossAliases:
       '    tónos: { gloss: "Grafia com acento de tonos — a mesma raiz grega.", href: "/posts/post-inspecao-palavra-tonos.html", en: "tónos (accented)", es: "tónos (con acento)" },\n' +
       '    "τόνος": { gloss: "Forma grega — ver tónos (raiz da tensão).", href: "/posts/post-inspecao-palavra-tonos.html", en: "τόνος", es: "τόνος" },\n'
@@ -160,36 +160,36 @@ const ITEMS = [
     sugTitle: 'Vomitar — largar o que não fica, antes do commit',
     sugTitleEn: 'Vomitar — release what must not stay, before the commit',
     sugTitleEs: 'Vomitar — soltar lo que no queda, antes del commit',
-    why: 'Palavras: vomitar (lat. vomitare) — corpo × metáfora × mito XIV; tríade tónos / commitar; Faça o melhor!',
-    whyEn: 'Words: vomitar (Lat. vomitare) — body × metaphor × XIV myth; triad tónos / commitar; Do your best!',
-    whyEs: 'Palabras: vomitar (lat. vomitare) — cuerpo × metáfora × mito XIV; tríada tónos / commitar; ¡Haz lo mejor!',
+    why: 'Palavras: vomitar (lat. vomitare) — corpo × metáfora × mito XIV; tríade tónos / commitar; par deplorar; Valeu !!!',
+    whyEn: 'Words: vomitar (Lat. vomitare) — body × metaphor × XIV myth; triad tónos / commitar; pair deplorar; Valeu !!!',
+    whyEs: 'Palabras: vomitar (lat. vomitare) — cuerpo × metáfora × mito XIV; tríada tónos / commitar; par deplorar; ¡Valeu !!!',
     guiaId: 'vomitar',
     guiaWord: 'vomitar',
     guiaAfter: ['tonos', 'tonico', 'risco'],
     guiaEntry: {
       simple:
-        'Lat. vomitare — largar o que não fica (corpo × metáfora × mito XIV); tríade tónos / commitar; ≠ protocolo clínico; Faça o melhor!',
+        'Lat. vomitare — largar o que não fica (corpo × metáfora × mito XIV); tríade tónos / commitar; par deplorar; ≠ protocolo clínico; Valeu !!!',
       simpleEn:
-        'Lat. vomitare — release what must not stay (body × metaphor × XIV myth); triad tónos / commitar; ≠ clinical protocol; Do your best!',
+        'Lat. vomitare — release what must not stay (body × metaphor × XIV myth); triad tónos / commitar; pair deplorar; ≠ clinical protocol; Valeu !!!',
       simpleEs:
-        'Lat. vomitare — soltar lo que no queda (cuerpo × metáfora × mito XIV); tríada tónos / commitar; ≠ protocolo clínico; ¡Haz lo mejor!',
+        'Lat. vomitare — soltar lo que no queda (cuerpo × metáfora × mito XIV); tríada tónos / commitar; par deplorar; ≠ protocolo clínico; ¡Valeu !!!',
       history:
         'Vomitar vem do latim vomitare, frequentativo de vomere (expulsar pela boca). No português cobre o corpo, a metáfora de despejar fala/código e, no curso XIV, o mito da cobra que ia vomitar veneno.',
       curiosities:
-        'No laboratório vomitar é o gesto do meio da tríade: depois de nomear a tensão (tónos) e antes de gravar o rasto (commitar). Ficha ≠ bula antiemética.',
+        'No laboratório vomitar é o gesto do meio da tríade: depois de nomear a tensão (tónos) e antes de gravar o rasto (commitar). Par de ofício com deplorar (lastimar ≠ largar). Ficha ≠ bula antiemética.',
       historyEn:
         'Portuguese vomitar comes from Latin vomitare, frequentative of vomere (to expel by mouth). It covers the body, the metaphor of dumping speech/code, and, in UNIFESP XIV, the myth of the snake about to vomit poison.',
       curiositiesEn:
-        'In the lab vomitar is the middle gesture of the triad: after naming tension (tónos) and before recording the trace (commitar). Sheet ≠ antiemetic leaflet.',
+        'In the lab vomitar is the middle gesture of the triad: after naming tension (tónos) and before recording the trace (commitar). Office pair with deplorar (lament ≠ release). Sheet ≠ antiemetic leaflet.',
       historyEs:
         'Vomitar viene del latín vomitare, frecuentativo de vomere (expulsar por la boca). En portugués cubre el cuerpo, la metáfora de volcar habla/código y, en el XIV, el mito de la serpiente que iba a vomitar veneno.',
       curiositiesEs:
-        'En el laboratorio vomitar es el gesto del medio de la tríada: después de nombrar la tensión (tónos) y antes de grabar el rastro (commitar). Ficha ≠ prospecto.'
+        'En el laboratorio vomitar es el gesto del medio de la tríada: después de nombrar la tensión (tónos) y antes de grabar el rastro (commitar). Par de oficio con deplorar (lamentar ≠ soltar). Ficha ≠ prospecto.'
     },
     glossKey: 'vomitar',
     glossAfter: 'tonos',
     glossMain:
-      '    vomitar: { tone: "caution", category: "Corpo", mundane: "Verbo — expulsar pela boca; também metáfora de despejo.", gloss: "Lat. vomitare — largar o que não fica; tríade tónos / commitar; ≠ protocolo; Faça o melhor!", href: "/posts/post-inspecao-palavra-vomitar.html", en: "to vomit / to spew", es: "vomitar", fr: "vomir", it: "vomitare", de: "erbrechen", el: "εμετώ", la: "vomitare", yo: "èèbì", sw: "tapika", gez: "vomitare", nl: "braken", pl: "wymiotować", ru: "blevat", uk: "blyuvaty", zh: "vomit", ja: "haku", ko: "to-hada", ar: "qaa", he: "lehakki", hi: "ulti", tr: "kusmak", sv: "kräkas", da: "kaste op", no: "kaste opp", fi: "oksentaa", cs: "zvracet", ro: "vomita", hu: "hány", ca: "vomitar", gl: "vomitar", eu: "oka egin", gn: "vomitar", qu: "vomitar", eo: "vomiti", vi: "non", id: "muntah", th: "vomit", hr: "povracati", sk: "vracat", ga: "aiseag", cy: "chwydu", ha: "toya", am: "vomit", fa: "estefragh", bn: "bomi", zu: "ukuhlanza" },\n',
+      '    vomitar: { tone: "caution", category: "Corpo", mundane: "Verbo — expulsar pela boca; também metáfora de despejo.", gloss: "Lat. vomitare — largar o que não fica; tríade tónos / commitar; par deplorar (ofício, não étimo); ≠ protocolo; Valeu !!!", href: "/posts/post-inspecao-palavra-vomitar.html", en: "to vomit / to spew", es: "vomitar", fr: "vomir", it: "vomitare", de: "erbrechen", el: "εμετώ", la: "vomitare", yo: "èèbì", sw: "tapika", gez: "vomitare", nl: "braken", pl: "wymiotować", ru: "blevat", uk: "blyuvaty", zh: "vomit", ja: "haku", ko: "to-hada", ar: "qaa", he: "lehakki", hi: "ulti", tr: "kusmak", sv: "kräkas", da: "kaste op", no: "kaste opp", fi: "oksentaa", cs: "zvracet", ro: "vomita", hu: "hány", ca: "vomitar", gl: "vomitar", eu: "oka egin", gn: "vomitar", qu: "vomitar", eo: "vomiti", vi: "non", id: "muntah", th: "vomit", hr: "povracati", sk: "vracat", ga: "aiseag", cy: "chwydu", ha: "toya", am: "vomit", fa: "estefragh", bn: "bomi", zu: "ukuhlanza" },\n',
     glossAliases:
       '    vomito: { gloss: "Substantivo irmão (vómito / vômito) — ver vomitar.", href: "/posts/post-inspecao-palavra-vomitar.html", en: "vomit (n.)", es: "vómito" },\n' +
       '    "vómito": { gloss: "Substantivo com acento — ver vomitar.", href: "/posts/post-inspecao-palavra-vomitar.html", en: "vomit (n.)", es: "vómito" },\n'
@@ -200,19 +200,19 @@ const ITEMS = [
     sugTitle: 'Commitar — gravar o rasto (comitar ≠ cometer)',
     sugTitleEn: 'Commitar — record the trace (comitar ≠ cometer)',
     sugTitleEs: 'Commitar — grabar el rastro (comitar ≠ cometer)',
-    why: 'Palavras: commitar (comitar) — calco git; ≠ cometer; tríade tónos / vomitar; Faça o melhor depois do snapshot!',
-    whyEn: 'Words: commitar (comitar) — git calque; ≠ cometer; triad tónos / vomitar; Do your best after the snapshot!',
-    whyEs: 'Palabras: commitar (comitar) — calco git; ≠ cometer; tríada tónos / vomitar; ¡Haz lo mejor después del snapshot!',
+    why: 'Palavras: commitar (comitar) — calco git; ≠ cometer; tríade tónos / vomitar; Valeu !!! depois do snapshot!',
+    whyEn: 'Words: commitar (comitar) — git calque; ≠ cometer; triad tónos / vomitar; Valeu !!! after the snapshot!',
+    whyEs: 'Palabras: commitar (comitar) — calco git; ≠ cometer; tríada tónos / vomitar; ¡Valeu !!! después del snapshot!',
     guiaId: 'commitar',
     guiaWord: 'commitar',
     guiaAfter: ['vomitar', 'tonos', 'genial'],
     guiaEntry: {
       simple:
-        'Calco BR de to commit (git) — gravar o rasto; grafia viva comitar; ≠ cometer; ≠ push/PR; tríade tónos / vomitar; Faça o melhor depois do snapshot!',
+        'Calco BR de to commit (git) — gravar o rasto; grafia viva comitar; ≠ cometer; ≠ push/PR; tríade tónos / vomitar; Valeu !!! depois do snapshot!',
       simpleEn:
-        'BR calque of to commit (git) — record the trace; live spelling comitar; ≠ cometer; ≠ push/PR; triad tónos / vomitar; Do your best after the snapshot!',
+        'BR calque of to commit (git) — record the trace; live spelling comitar; ≠ cometer; ≠ push/PR; triad tónos / vomitar; Valeu !!! after the snapshot!',
       simpleEs:
-        'Calco BR de to commit (git) — grabar el rastro; grafía viva comitar; ≠ cometer; ≠ push/PR; tríada tónos / vomitar; ¡Haz lo mejor después del snapshot!',
+        'Calco BR de to commit (git) — grabar el rastro; grafía viva comitar; ≠ cometer; ≠ push/PR; tríada tónos / vomitar; ¡Valeu !!! después del snapshot!',
       history:
         'Commitar é calco brasileiro do inglês to commit no git (do latim committere, juntar/confiar). No laboratório nomeia o snapshot do rasto — distinto de cometer (crime/erro) e dos gestos seguintes push e PR.',
       curiosities:
@@ -229,7 +229,7 @@ const ITEMS = [
     glossKey: 'commitar',
     glossAfter: 'vomitar',
     glossMain:
-      '    commitar: { tone: "caution", category: "Ofício", mundane: "Verbo BR — gravar snapshot git; grafia viva comitar.", gloss: "Calco de commit; ≠ cometer; ≠ push/PR; tríade tónos / vomitar; Faça o melhor depois do snapshot.", href: "/posts/post-inspecao-palavra-commitar.html", en: "to commit (git)", es: "hacer commit", fr: "commiter", it: "committare", de: "committen", el: "commit", la: "committere", yo: "commit", sw: "commit", gez: "commit", nl: "committen", pl: "commitowac", ru: "kommit", uk: "komit", zh: "commit", ja: "commit", ko: "commit", ar: "commit", he: "commit", hi: "commit", tr: "commit", sv: "commita", da: "committe", no: "commite", fi: "commitoida", cs: "commitnout", ro: "commit", hu: "commit", ca: "fer commit", gl: "commitar", eu: "commit", gn: "commitar", qu: "commit", eo: "commit", vi: "commit", id: "commit", th: "commit", hr: "commitati", sk: "commitnut", ga: "commit", cy: "commit", ha: "commit", am: "commit", fa: "commit", bn: "commit", zu: "i-commit" },\n',
+      '    commitar: { tone: "caution", category: "Ofício", mundane: "Verbo BR — gravar snapshot git; grafia viva comitar.", gloss: "Calco de commit; ≠ cometer; ≠ push/PR; tríade tónos / vomitar; Valeu !!! depois do snapshot.", href: "/posts/post-inspecao-palavra-commitar.html", en: "to commit (git)", es: "hacer commit", fr: "commiter", it: "committare", de: "committen", el: "commit", la: "committere", yo: "commit", sw: "commit", gez: "commit", nl: "committen", pl: "commitowac", ru: "kommit", uk: "komit", zh: "commit", ja: "commit", ko: "commit", ar: "commit", he: "commit", hi: "commit", tr: "commit", sv: "commita", da: "committe", no: "commite", fi: "commitoida", cs: "commitnout", ro: "commit", hu: "commit", ca: "fer commit", gl: "commitar", eu: "commit", gn: "commitar", qu: "commit", eo: "commit", vi: "commit", id: "commit", th: "commit", hr: "commitati", sk: "commitnut", ga: "commit", cy: "commit", ha: "commit", am: "commit", fa: "commit", bn: "commit", zu: "i-commit" },\n',
     glossAliases:
       '    comitar: { gloss: "Grafia viva (um m) de commitar — o mesmo gesto git; ≠ cometer.", href: "/posts/post-inspecao-palavra-commitar.html", en: "commitar (live spelling)", es: "commitar (grafía viva)" },\n' +
       '    commit: { gloss: "Substantivo / verbo EN de ofício — ver commitar; ≠ push/PR.", href: "/posts/post-inspecao-palavra-commitar.html", en: "commit (n./v.)", es: "commit" },\n'
@@ -257,7 +257,7 @@ function upsertSug(sug, post, cfg) {
     sources: [
       post.sourceUrl,
       '/posts/post-inspecao-palavra-tonico.html',
-      '/posts/post-inspecao-expressao-faca-o-melhor.html'
+      '/posts/post-inspecao-palavra-valeu.html'
     ],
     notes: 'Cap. ' + post.seriesOrder + ' — tríade tónos / vomitar / commitar.'
   };

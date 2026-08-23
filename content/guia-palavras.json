@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T04:11:32.583Z",
+  "updatedAt": "2026-08-23T04:20:36.761Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2725,11 +2725,27 @@
       "simpleEn": "Lat. vomitare — release what must not stay (body × metaphor × XIV myth); triad tónos / commitar; ≠ clinical protocol; Valeu !!!",
       "simpleEs": "Lat. vomitare — soltar lo que no queda (cuerpo × metáfora × mito XIV); tríada tónos / commitar; ≠ protocolo clínico; ¡Valeu !!!",
       "history": "Vomitar vem do latim vomitare, frequentativo de vomere (expulsar pela boca). No português cobre o corpo, a metáfora de despejar fala/código e, no curso XIV, o mito da cobra que ia vomitar veneno.",
-      "curiosities": "No laboratório vomitar é o gesto do meio da tríade: depois de nomear a tensão (tónos) e antes de gravar o rasto (commitar). Ficha ≠ bula antiemética.",
+      "curiosities": "No laboratório vomitar é o gesto do meio da tríade: depois de nomear a tensão (tónos) e antes de gravar o rasto (commitar). Par de ofício com deplorar (lastimar ≠ largar). Ficha ≠ bula antiemética.",
       "historyEn": "Portuguese vomitar comes from Latin vomitare, frequentative of vomere (to expel by mouth). It covers the body, the metaphor of dumping speech/code, and, in UNIFESP XIV, the myth of the snake about to vomit poison.",
-      "curiositiesEn": "In the lab vomitar is the middle gesture of the triad: after naming tension (tónos) and before recording the trace (commitar). Sheet ≠ antiemetic leaflet.",
+      "curiositiesEn": "In the lab vomitar is the middle gesture of the triad: after naming tension (tónos) and before recording the trace (commitar). Office pair with deplorar (lament ≠ release). Sheet ≠ antiemetic leaflet.",
       "historyEs": "Vomitar viene del latín vomitare, frecuentativo de vomere (expulsar por la boca). En portugués cubre el cuerpo, la metáfora de volcar habla/código y, en el XIV, el mito de la serpiente que iba a vomitar veneno.",
-      "curiositiesEs": "En el laboratorio vomitar es el gesto del medio de la tríada: después de nombrar la tensión (tónos) y antes de grabar el rastro (commitar). Ficha ≠ prospecto."
+      "curiositiesEs": "En el laboratorio vomitar es el gesto del medio de la tríada: después de nombrar la tensión (tónos) y antes de grabar el rastro (commitar). Par de oficio con deplorar (lamentar ≠ soltar). Ficha ≠ prospecto."
+    },
+    {
+      "id": "deplorar",
+      "word": "deplorar",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-deplorar.html",
+      "simple": "Lat. dēplōrāre ← plōrāre — lastimar / condenar; par vomitar por ofício, não por étimo; ≠ êmese; Valeu !!!",
+      "simpleEn": "Lat. dēplōrāre ← plōrāre — lament / censure; pair with vomitar by office, not etymon; ≠ emesis; Valeu !!!",
+      "simpleEs": "Lat. dēplōrāre ← plōrāre — lamentar / condenar; par con vomitar por oficio, no por étimo; ≠ emesis; ¡Valeu !!!",
+      "history": "Deplorar vem do latim dēplōrāre (dē- + plōrāre, chorar / clamar). No português cobre o luto e o juízo. Não partilha raiz com vomitar (vomere).",
+      "curiosities": "No laboratório deplorar nomeia o dano; vomitar larga o que não fica. Queixar-se sem filtrar deixa o veneno no commit. Deplorável é o adjectivo irmão, não diagnóstico de náusea.",
+      "historyEn": "Portuguese deplorar comes from Latin dēplōrāre (dē- + plōrāre, to weep / cry out). It covers grief and judgement. It does not share a root with vomitar (vomere).",
+      "curiositiesEn": "In the lab deplorar names the damage; vomitar releases what must not stay. Complaining without filtering leaves poison in the commit. Deplorável is the sister adjective, not a nausea diagnosis.",
+      "historyEs": "Deplorar viene del latín dēplōrāre (dē- + plōrāre, llorar / clamar). En portugués cubre el duelo y el juicio. No comparte raíz con vomitar (vomere).",
+      "curiositiesEs": "En el laboratorio deplorar nombra el daño; vomitar suelta lo que no queda. Quejarse sin filtrar deja el veneno en el commit. Deplorável es el adjetivo hermano, no un diagnóstico de náusea."
     },
     {
       "id": "commitar",
