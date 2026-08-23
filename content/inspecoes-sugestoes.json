@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T16:54:01.750Z",
+  "updatedAt": "2026-08-23T18:12:28.112Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -9512,6 +9512,27 @@
         "/posts/post-inspecao-palavra-passado.html"
       ],
       "notes": "Cap. 279 — fecha o cluster; gíria Fui!"
+    },
+    {
+      "id": "palavra-save-game",
+      "title": "Save Game — gravar a partida; o rasto, não o milagre",
+      "titleEn": "Save Game — persist the match; the trail, not the miracle",
+      "titleEs": "Save Game — grabar la partida; el rastro, no el milagro",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: Save Game = save + game; salve tudo; ≠ Load/New/backspace; Valeu !!!",
+      "whyEn": "Words: Save Game = save + game; living salve tudo; Valeu !!!",
+      "whyEs": "Palabras: Save Game = save + game; salve tudo; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-save-game",
+      "doneHref": "/posts/post-inspecao-palavra-save-game.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saved_game",
+        "/posts/post-inspecao-palavra-skill.html",
+        "/jogos/"
+      ],
+      "notes": "Cap. 280 — pedido Save Game / salve tudo."
     }
   ]
 }

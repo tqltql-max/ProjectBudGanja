@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T16:54:01.751Z",
+  "updatedAt": "2026-08-23T18:12:28.112Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -8070,6 +8070,16 @@
       "curiositiesEn": "Links with multitask and genial: Valeu !!! in the checkable deed.",
       "historyEs": "Skill es un préstamo EN→BR para habilidad/craft con rastro; el inglés antiguo scielan (distinguir) alimenta el sentido. El lab contrapone el vocablo a la insignia de LinkedIn.",
       "curiositiesEs": "Eslabones con multitask y genial: Valeu !!! en el hecho verificable."
+    },
+    {
+      "id": "save-game",
+      "word": "Save Game",
+      "simple": "EN save + game — gravar a partida. Voz viva: salve tudo. Irmãs: salvar / gravar / guardar. ≠ Load, New, backspace. Valeu !!!",
+      "simpleEn": "EN save + game — persist the match. Living voice: salve tudo. ≠ Load, New, backspace. Valeu !!!",
+      "simpleEs": "EN save + game — grabar la partida. Voz viva: salve tudo. ≠ Load, New, backspace. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-save-game.html"
     },
     {
       "id": "soja",
