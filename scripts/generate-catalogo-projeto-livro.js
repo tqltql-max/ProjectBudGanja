@@ -11,6 +11,7 @@ const fs = require('fs');
 const path = require('path');
 const { ROOT } = require('../lib/paths.js');
 const { printHtmlToPdf } = require('../lib/print-chrome-pdf.js');
+const { renderMarkdown } = require('../lib/markdown-render.js');
 
 const PRINT_HTML = path.join(ROOT, 'info', 'livro-inspetor-budganja-print.html');
 const OUT_PDF = path.join(ROOT, 'info', 'livro-inspetor-budganja.pdf');
@@ -131,6 +132,135 @@ function renderPostList(items) {
   return '<ol class="ficha-list">' + rows + '</ol>';
 }
 
+function absolutize(html) {
+  return String(html || '').replace(/(href|src)="(\/[^"]*)"/g, '$1="' + SITE + '$2"');
+}
+
+function listHtml(items) {
+  if (!items || !items.length) return '';
+  return (
+    '<ul>' +
+    items.map((item) => '<li>' + escapeHtml(item) + '</li>').join('') +
+    '</ul>'
+  );
+}
+
+function renderSpeciesCard(item, hrefFn) {
+  const name = item.nomePopular || item.commonName || item.slug || item.id || '';
+  const sciName = item.nomeCientifico || item.scientificName;
+  const sci = sciName ? ' — <em>' + escapeHtml(sciName) + '</em>' : '';
+  const family = item.familia || item.family;
+  const href = hrefFn(item);
+  const relatedItems = item.relatedInspections || [];
+  const related = Array.isArray(relatedItems)
+    ? relatedItems
+        .map((rel) => {
+          const label = rel.label || rel.href || '';
+          const url = rel.href ? siteUrl(rel.href) : '';
+          return url
+            ? '<li><a href="' + escapeHtml(url) + '">' + escapeHtml(label) + '</a></li>'
+            : '<li>' + escapeHtml(label) + '</li>';
+        })
+        .join('')
+    : '';
+  return (
+    '<article class="species">' +
+    '<h3>' +
+    escapeHtml(name) +
+    sci +
+    '</h3>' +
+    (family ? '<p class="muted">' + escapeHtml(family) + '</p>' : '') +
+    (href
+      ? '<p class="muted"><a href="' + escapeHtml(siteUrl(href)) + '">' + escapeHtml(siteUrl(href)) + '</a></p>'
+      : '') +
+    (item.summary ? '<p>' + escapeHtml(item.summary) + '</p>' : '') +
+    (item.partsUsed && item.partsUsed.length
+      ? '<p><strong>Partes usadas</strong></p>' + listHtml(item.partsUsed)
+      : '') +
+    (item.traditionalUses && item.traditionalUses.length
+      ? '<p><strong>Usos tradicionais</strong></p>' + listHtml(item.traditionalUses)
+      : '') +
+    (item.cautions ? '<p><strong>Cautelas</strong> ' + escapeHtml(item.cautions) + '</p>' : '') +
+    (related ? '<p><strong>Inspeções ligadas</strong></p><ul>' + related + '</ul>' : '') +
+    '</article>'
+  );
+}
+
+function renderSpeciesChapter(items, hrefFn) {
+  if (!items.length) return '<p class="muted">Nada neste catálogo.</p>';
+  return items
+    .slice()
+    .sort((a, b) =>
+      comparePt(a.nomePopular || a.slug, b.nomePopular || b.slug)
+    )
+    .map((item) => renderSpeciesCard(item, hrefFn))
+    .join('\n');
+}
+
+function renderPostEntry(post) {
+  const href = siteUrl(post.url || '/posts/post-' + post.slug + '.html');
+  const cap = Number.isFinite(Number(post.seriesOrder)) ? 'Cap. ' + post.seriesOrder + ' · ' : '';
+  const raw = String(post.content_raw || '').trim();
+  let body;
+  try {
+    body = raw
+      ? absolutize(renderMarkdown(raw))
+      : '<p class="muted">' + escapeHtml(post.excerpt || 'Sem corpo gravado nesta ficha.') + '</p>';
+  } catch (err) {
+    body =
+      '<p class="muted">Não foi possível renderizar esta ficha (' +
+      escapeHtml(err.message) +
+      ').</p><pre class="poem-body">' +
+      escapeHtml(raw.slice(0, 8000)) +
+      '</pre>';
+  }
+  return (
+    '<article class="entry">' +
+    '<h3 class="entry-title">' +
+    escapeHtml(cap + (post.title || post.slug)) +
+    '</h3>' +
+    '<p class="muted"><a href="' +
+    escapeHtml(href) +
+    '">' +
+    escapeHtml(href) +
+    '</a></p>' +
+    (post.excerpt ? '<p class="entry-lead">' + escapeHtml(post.excerpt) + '</p>' : '') +
+    '<div class="entry-body">' +
+    body +
+    '</div></article>'
+  );
+}
+
+function renderPostChapter(items) {
+  if (!items.length) return '<p class="muted">Nenhuma ficha nesta sala.</p>';
+  const sorted = items.slice().sort((a, b) => {
+    const oa = Number(a.seriesOrder);
+    const ob = Number(b.seriesOrder);
+    if (Number.isFinite(oa) && Number.isFinite(ob) && oa !== ob) return oa - ob;
+    return comparePt(a.title, b.title);
+  });
+  return sorted.map(renderPostEntry).join('\n');
+}
+
+function renderPoemEntry(poem) {
+  const href = poem.inspectionHref ? siteUrl(poem.inspectionHref) : siteUrl('/vida/');
+  return (
+    '<article class="poem">' +
+    '<h3>' +
+    escapeHtml(poem.title || poem.slug) +
+    '</h3>' +
+    (poem.author ? '<p class="muted">' + escapeHtml(poem.author) + '</p>' : '') +
+    '<p class="muted"><a href="' +
+    escapeHtml(href) +
+    '">' +
+    escapeHtml(href) +
+    '</a></p>' +
+    '<pre class="poem-body">' +
+    escapeHtml(poem.body || poem.teaser || '') +
+    '</pre></article>'
+  );
+}
+
 function printCss() {
   return `@page { size: A4; margin: 18mm 16mm 20mm 16mm; }
 @page :first { margin: 0; }
@@ -237,7 +367,23 @@ p.lead { margin: 0 0 10px; }
   page-break-inside: avoid;
 }
 .colophon { page-break-before: always; padding-top: 24mm; font-size: 9.5pt; color: #444; }
-.colophon h2 { color: #5a6b1a; font-size: 12pt; }`;
+.colophon h2 { color: #5a6b1a; font-size: 12pt; }
+.species, .entry, .poem {
+  margin: 0 0 14px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #d5deb0;
+  break-inside: auto;
+}
+.entry { break-before: page; }
+.entry-title, .species h3, .poem h3 { font-size: 13pt; margin: 0 0 4px; page-break-after: avoid; }
+.entry-lead { font-style: italic; }
+.entry-body { font-size: 9.6pt; }
+.entry-body h2 { font-size: 11.5pt; margin: 12px 0 6px; page-break-after: avoid; }
+.entry-body h3 { font-size: 10.5pt; margin: 10px 0 4px; }
+.entry-body table { width: 100%; border-collapse: collapse; font-size: 8pt; margin: 6px 0; }
+.entry-body th, .entry-body td { border: 1px solid #c5d08a; padding: 2px 4px; vertical-align: top; }
+.entry-body img, .entry-body iframe, .entry-body video { display: none; }
+.poem-body { white-space: pre-wrap; font-family: Georgia, serif; font-size: 10pt; line-height: 1.5; }`;
 }
 
 function buildHtml() {
@@ -362,7 +508,7 @@ function buildHtml() {
         ' <span class="muted">(' +
         topic.items.length +
         ')</span></h2>\n' +
-        renderPostList(topic.items)
+        renderPostChapter(topic.items)
       );
     })
     .join('\n');
@@ -382,7 +528,7 @@ function buildHtml() {
   <section class="cover">
     <p class="eyebrow">Laboratório digital · livro-catálogo</p>
     <h1>Inspetor BudGanja</h1>
-    <p class="subtitle">O projecto inteiro, em capítulos e tópicos — um mapa para estudar, não um tratado clínico.</p>
+    <p class="subtitle">Volume integral: o texto das fichas, catálogos e poemas — para ler e testar, não só o índice.</p>
     <p class="meta">
       ${escapeHtml(generatedAt)} · ${posts.length} inspeções · ${plants.length} plantas · ${animals.length} animais · ${fungi.length} fungos<br>
       ${escapeHtml(SITE)}
@@ -429,11 +575,11 @@ function buildHtml() {
 
     <h1 class="chap">Capítulo II — Como ler este livro</h1>
     <h2 class="topic">O que é</h2>
-    <p>Catálogo do laboratório Inspetor BudGanja: salas, fichas e URLs. Cada linha aponta para a página viva.</p>
+    <p>Volume do laboratório Inspetor BudGanja com o <strong>texto das inspeções</strong>, as fichas de plantas, animais e fungos, e os poemas. Cada artigo traz também o URL da página viva.</p>
     <h2 class="topic">O que não é</h2>
     <div class="box">
       Não é manual clínico, farmacêutico ou jurídico. Não substitui SIEX, aulas oficiais nem certificado.
-      Não é o texto integral de cada inspeção — isso vive no HTML. Aqui está o <strong>índice do ofício</strong>.
+      Não inclui o motor interactivo (calculadoras, login, feed). Inclui o ofício escrito.
     </div>
     <h2 class="topic">Números do laboratório</h2>
     <div class="stats">
@@ -465,15 +611,15 @@ function buildHtml() {
 
     <h1 class="chap">Capítulo V — Catálogo vivo: Plantas</h1>
     <p class="muted">${plants.length} fichas educacionais. Não substituem consulta.</p>
-    ${renderLinkList(plants, plantLabel, (item) => '/plantas/' + (item.slug || item.id) + '/')}
+    ${renderSpeciesChapter(plants, (item) => '/plantas/' + (item.slug || item.id) + '/')}
 
     <h1 class="chap">Capítulo VI — Catálogo vivo: Animais</h1>
     <p class="muted">${animals.length} fichas. Corte: animal ≠ derivado industrial.</p>
-    ${renderLinkList(animals, plantLabel, (item) => '/animais/' + (item.slug || item.id) + '/')}
+    ${renderSpeciesChapter(animals, (item) => '/animais/' + (item.slug || item.id) + '/')}
 
     <h1 class="chap">Capítulo VII — Catálogo vivo: Fungos</h1>
     <p class="muted">${fungi.length} fichas. Identificação — não é cultivo nem dose.</p>
-    ${renderLinkList(fungi, plantLabel, (item) => '/fungos/' + (item.slug || item.id) + '/')}
+    ${renderSpeciesChapter(fungi, (item) => '/fungos/' + (item.slug || item.id) + '/')}
 
     <h1 class="chap">Capítulo VIII — Inspeções</h1>
     <p class="lead">${posts.length} fichas publicadas, cortadas por série.</p>
@@ -489,7 +635,7 @@ function buildHtml() {
 
     <h1 class="chap">Capítulo X — Vida, poemas, Inverno e origami</h1>
     <h2 class="topic">Poemas do laboratório</h2>
-    ${renderLinkList(poems, (item) => item.title || item.slug, (item) => item.inspectionHref || '/vida/')}
+    ${poems.map(renderPoemEntry).join('\n')}
     <h2 class="topic">Salas irmãs</h2>
     <ul class="ficha-list">
       <li><a href="${escapeHtml(siteUrl('/vida/'))}">Vida — conto familiar</a></li>
@@ -513,6 +659,7 @@ function buildHtml() {
       <p>
         Gerado em ${escapeHtml(generatedAt)} a partir dos JSON vivos do repositório,
         com o mesmo gerador de PDF da apresentação UNIFESP (Chrome headless).
+        Este volume traz o <strong>texto integral</strong> das inspeções e das fichas de catálogo.
       </p>
       <p>
         Independente. Educacional. Sem afiliação comercial à UNIFESP.
@@ -530,7 +677,9 @@ function main() {
   fs.mkdirSync(path.dirname(PRINT_HTML), { recursive: true });
   fs.writeFileSync(PRINT_HTML, html, 'utf8');
   console.log('HTML do livro:', path.relative(ROOT, PRINT_HTML), '(' + Math.round(html.length / 1024) + ' KB)');
-  printHtmlToPdf(PRINT_HTML, OUT_PDF, { timeout: 180000 });
+  printHtmlToPdf(PRINT_HTML, OUT_PDF, { timeout: 600000 });
 }
 
-main();
+if (require.main === module) {
+  main();
+}
