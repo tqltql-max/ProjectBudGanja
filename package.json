@@ -29,6 +29,7 @@
     "build:assetlinks": "node scripts/build-assetlinks.js",
             "build:apresentacao-pdf": "node scripts/generate-apresentacao-pdf.js",
     "build:livro-pdf": "node scripts/generate-catalogo-projeto-livro.js",
+    "build:livro-page-pdf": "node scripts/generate-livro-page-pdf.js",
     "test:site": "node scripts/test-site.js",
     "test:lib": "node scripts/test-lib-unit.js",
     "check:assetlinks": "node scripts/check-assetlinks.js",

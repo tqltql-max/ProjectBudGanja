@@ -76,6 +76,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('build:livro-page-pdf', 'generate-livro-page-pdf.js');
+  } catch (e) {
+    console.warn('Aviso build:livro-page-pdf:', e.message);
+  }
+
+  try {
     publishStaticAssets(ROOT);
   } catch (e) {
     console.warn('Aviso publish:static:', e.message);
