@@ -3192,6 +3192,25 @@
     "seriesLabel": "Steve Jobs · pessoa"
   },
   {
+    "title": "Inspeção: Meter marcha — engatar o ofício",
+    "titleEn": "Inspection: Meter marcha — put the craft in gear",
+    "titleEs": "Inspección: Meter marcha — meter el oficio en marcha",
+    "excerpt": "Expressões: meter marcha — engatar a caixa / sair do ponto morto do dia; ≠ carnaval ≠ ré ≠ flerte-manual; Valeu !!!",
+    "excerptEn": "Sayings: meter marcha — in gear / leave idle; ≠ carnival ≠ reverse ≠ pickup guide; Valeu !!!",
+    "excerptEs": "Dichos: meter marcha — meter la marcha / salir del punto muerto; ≠ carnaval ≠ marcha atrás; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-expressao-meter-marcha",
+    "url": "/posts/post-inspecao-expressao-meter-marcha.html",
+    "date": "2026-08-23T14:40:00.000Z",
+    "filename": "posts/post-inspecao-expressao-meter-marcha.html",
+    "coverImage": "/imagens/inspecoes/meter-marcha-cover.jpg",
+    "category": "inspecao",
+    "series": "expressoes-ditados",
+    "seriesOrder": 32,
+    "seriesLabel": "Meter marcha · engatar"
+  },
+  {
     "title": "Inspeção: Lucas — médico de homens e de almas",
     "titleEn": "Inspection: Luke — physician of men and of souls",
     "titleEs": "Inspección: Lucas — médico de hombres y de almas",

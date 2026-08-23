@@ -358,6 +358,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Persea americana* — polpa rica em MUFA, persina defensiva e etimologia náuatle *āhuacatl*; separar planta inteira de derivados industriais."
             },
             {
+              "label": "Inspeção: Faça o seu melhor — mantra do ofício",
+              "tileLabel": "Inspeção: Faça o seu melhor — m…",
+              "href": "/posts/post-inspecao-expressao-faca-o-melhor.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-faca-o-melhor",
+              "description": "Expressões: voz viva «Faça o seu melhor» / «faça seu melhor como sempre»; forma antiga faça o melhor; se dá resultado, ficou; fecho Valeu !!! · Boa!!!."
+            },
+            {
               "label": "Caderno de jogo 2: Story of Seasons Grand Bazaar — a quinta legal",
               "tileLabel": "Caderno de jogo 2: Story of Sea…",
               "href": "/posts/post-inspecao-jogo-sos-grand-bazaar.html",
@@ -380,14 +388,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-neurociencia-miguel-nicolelis",
               "description": "Neurociências Cap. 2: homenagem documental a Miguel Nicolelis — interfaces cérebro-máquina, Projeto Andar de Novo e o pontapé da Copa 2014. Mérito e limites, sem hagiografia."
-            },
-            {
-              "label": "Inspeção: Valeu !!! — mantra do laboratório",
-              "tileLabel": "Inspeção: Valeu !!! — mantra do…",
-              "href": "/posts/post-inspecao-expressao-faca-o-melhor.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-expressao-faca-o-melhor",
-              "description": "Expressões: «Valeu !!!» — mantra Vida; ofício diário e resposta ao roubo e à proibição que tentam calar o projecto de inspeção."
             },
             {
               "label": "Inspeção: Derivados da galinha — ultraprocessados e química industrial",
@@ -942,6 +942,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Expressões: «Deus abençoe» — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; sem proselitismo; Valeu !!!"
             },
             {
+              "label": "Inspeção: Ayrton Senna — homenagem completa ao Brasil e ao Valeu !!!",
+              "tileLabel": "Inspeção: Ayrton Senna — homena…",
+              "href": "/posts/post-inspecao-figura-ayrton-senna.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-ayrton-senna",
+              "description": "Pessoas × Expressões: homenagem completa a Ayrton Senna (1960–1994) — tricampeão, ofício, filantropia e elo principal no mantra Valeu !!!; sem romantizar a morte."
+            },
+            {
               "label": "Inspeção: Planta — Melissa — citral e melissa officinalis",
               "tileLabel": "Inspeção: Planta — Melissa — ci…",
               "href": "/posts/post-inspecao-planta-melissa.html",
@@ -1236,6 +1244,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-mamao",
               "description": "*Carica papaya* — mamão brasileiro: polpa doce, papaína do látex e elo UNIFESP/SUS; separar fruto inteiro de néctares e ultraprocessados."
+            },
+            {
+              "label": "Inspeção: Fruto — Marolo — araticum do Cerrado, polpa e muitas sementes",
+              "tileLabel": "Inspeção: Fruto — Marolo — arat…",
+              "href": "/posts/post-inspecao-planta-marolo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-planta-marolo",
+              "description": "*Annona crassiflora* — marolo / araticum-do-cerrado: fruto nativo, polpa cremosa; ≠ maracujá ≠ mamão ≠ pinha/ata; crédito ao fruto inteiro."
             },
             {
               "label": "Inspeção: canal ICL — jornalismo YouTube do Conhecimento Liberta",
@@ -1550,12 +1566,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «genial» — engenho no projecto BudGanja; escala com legal, maravilhoso e fantástico; Valeu !!! ≠ seja génio; culto vazio = ressalva."
             },
             {
+              "label": "Inspeção: cruzar os braços em cima da cabeça — pausa da cabeça",
+              "tileLabel": "Inspeção: cruzar os braços em c…",
+              "href": "/posts/post-inspecao-expressao-cruzar-os-bracos-em-cima-da-cabeca.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-cruzar-os-bracos-em-cima-da-cabeca",
+              "description": "Expressões: cruzar os braços em cima da cabeça — sinal de pausa da cabeça; ≠ X no peito; mapa sinais; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Steve Jobs — ofício, casa sem iPad e o mito do celular aos 18",
               "tileLabel": "Inspeção: Steve Jobs — ofício, …",
               "href": "/posts/post-inspecao-figura-steve-jobs.html",
               "icon": "🔍",
               "slug": "post-inspecao-figura-steve-jobs",
               "description": "Pessoas: Steve Jobs (1955–2011). A fala documentada é limite de tecnologia em casa e iPad não usado (2010) — não «celular só aos 18». Elo palavra Jobs, ídolo e ficha do celular."
+            },
+            {
+              "label": "Inspeção: Meter marcha — engatar o ofício",
+              "tileLabel": "Inspeção: Meter marcha — engata…",
+              "href": "/posts/post-inspecao-expressao-meter-marcha.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-meter-marcha",
+              "description": "Expressões: meter marcha — engatar a caixa / sair do ponto morto do dia; ≠ carnaval ≠ ré ≠ flerte-manual; Valeu !!!"
             },
             {
               "label": "Inspeção: Lucas — médico de homens e de almas",
@@ -2923,7 +2955,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-sinais.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-sinais",
-              "description": "Palavras: «sinais» — plural de sinal; mapa do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres; Valeu !!!"
+              "description": "Palavras: «sinais» — plural de sinal; mapa do corpo: barriga=satisfação, orelha=pulga/curiosidade, mama/teta=algo fácil, cabelo=deixa com as mulheres, braços na cabeça=pausa; Valeu !!!"
             },
             {
               "label": "Inspeção: Barriga — sinal de satisfação",
@@ -3022,12 +3054,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «desastre» (*dis-* + *astrum*) — má estrela; ≠ desatar; relação de ofício com desatar o nó; ufa depois; Valeu !!!"
             },
             {
-              "label": "Inspeção: Ufa — o sopro depois de desatar o nó",
-              "tileLabel": "Inspeção: Ufa — o sopro depois …",
+              "label": "Inspeção: Ufa!!! — o sopro, que alívio",
+              "tileLabel": "Inspeção: Ufa!!! — o sopro, que…",
               "href": "/posts/post-inspecao-palavra-ufa.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-ufa",
-              "description": "Palavras: «ufa» — interjeição BR de alívio; par de aff; fecho de desatar o nó; legal (gíria) se couber; Valeu !!!"
+              "description": "Palavras: Ufa!!! — sopro de alívio; locução que alívio; vocábulo alívio; Valeu !!!"
             },
             {
               "label": "Inspeção: Mara — o nome que chegou, a maravilha e os barquinhos de papel",
@@ -3358,6 +3390,30 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: México (Mēxihco) — país ≠ golfo ≠ golfe ≠ gongo ≠ Congo; gosfo→golfo; Valeu !!!"
             },
             {
+              "label": "Inspeção: Mega-Sena — o nome (mega + sena) e os patrocínios",
+              "tileLabel": "Inspeção: Mega-Sena — o nome (m…",
+              "href": "/posts/post-inspecao-palavra-mega-sena.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mega-sena",
+              "description": "Palavras: Mega-Sena — nome mega + sena (seis); ≠ Senna (Ayrton, dois n); patrocínios ≠ sorte; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: 14 — catorze, dois setes, não é sorte",
+              "tileLabel": "Inspeção: 14 — catorze, dois se…",
+              "href": "/posts/post-inspecao-palavra-catorze.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-catorze",
+              "description": "Palavras: 14 / catorze — 2×7; composto; ≠ Fibonacci ≠ primo; na Mega-Sena é só dezena; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: 0 — zero, o nulo que conta",
+              "tileLabel": "Inspeção: 0 — zero, o nulo que …",
+              "href": "/posts/post-inspecao-palavra-zero.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-zero",
+              "description": "Palavras: 0 / zero — identidade da soma; ×0 apaga; ≠ dezena da Mega-Sena (01–60); ≠ letra O; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",
@@ -3412,14 +3468,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-ja",
               "description": "Palavras: «já» (lat. *iam*) — tempo e urgência; par oral com «aff»; fecho vazio = ressalva; Valeu !!! continua."
-            },
-            {
-              "label": "Inspeção: Ayrton Senna — homenagem completa ao Brasil e ao Valeu !!!",
-              "tileLabel": "Inspeção: Ayrton Senna — homena…",
-              "href": "/posts/post-inspecao-figura-ayrton-senna.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-figura-ayrton-senna",
-              "description": "Pessoas × Expressões: homenagem completa a Ayrton Senna (1960–1994) — tricampeão, ofício, filantropia e elo principal no mantra Valeu !!!; sem romantizar a morte."
             },
             {
               "label": "Inspeção: Lavar — das mãos à alma",

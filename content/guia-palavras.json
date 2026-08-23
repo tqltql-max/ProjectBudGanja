@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T13:32:33.957Z",
+  "updatedAt": "2026-08-23T14:34:28.530Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3946,6 +3946,16 @@
       "curiositiesEn": "The ear glues mundinho (little world) and mudinho (slip / mute / seedling glue). The rhyme is the hand; the ladder contact was the foot.",
       "historyEs": "Mindinho viene del latín minutínu, de minūtus (menudo). La rima cuenta: meñique, vecino, padre de todos, fura-bolo, mata-piolho.",
       "curiositiesEs": "La oreja pega mundinho (mundo chico) y mudinho (lapsus / mudo / cola de mudinha). La rima es de la mano; el contacto con la escalera fue en el pie."
+    },
+    {
+      "id": "meter-marcha",
+      "word": "meter marcha",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-meter-marcha.html",
+      "simple": "Locução BR — engatar a caixa / sair do ponto morto do dia; ≠ carnaval ≠ ré ≠ flerte-manual; Valeu !!!",
+      "simpleEn": "BR saying — put it in gear / leave idle; ≠ carnival ≠ reverse ≠ pickup guide; Valeu !!!",
+      "simpleEs": "Dicho BR — meter la marcha / salir del punto muerto; ≠ carnaval ≠ marcha atrás; ¡Valeu !!!"
     },
     {
       "id": "mundinho",

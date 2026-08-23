@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T13:32:33.947Z",
+  "updatedAt": "2026-08-23T14:34:28.530Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -9252,6 +9252,29 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 31 — gesto no mapa sinais; ≠ braços no peito."
+    },
+    {
+      "id": "expressao-meter-marcha",
+      "title": "Meter marcha — engatar o ofício",
+      "titleEn": "Meter marcha — put the craft in gear",
+      "titleEs": "Meter marcha — meter el oficio en marcha",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: meter marcha — sair do ponto morto; ≠ carnaval ≠ ré ≠ flerte-manual; Valeu !!!",
+      "whyEn": "Sayings: meter marcha — leave idle; ≠ carnival ≠ reverse ≠ pickup guide; Valeu !!!",
+      "whyEs": "Dichos: meter marcha — salir del punto muerto; ≠ carnaval ≠ marcha atrás; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-meter-marcha",
+      "doneHref": "/posts/post-inspecao-expressao-meter-marcha.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/marcha",
+        "https://pt.wiktionary.org/wiki/meter",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-palavra-respeito.html"
+      ],
+      "notes": "Cap. 32 — caixa × ofício; flerte só como corte."
     }
   ]
 }
