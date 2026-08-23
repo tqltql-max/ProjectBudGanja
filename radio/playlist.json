@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-22T03:36:38.046Z",
-  "trackCount": 2,
+  "updatedAt": "2026-08-23T04:26:53.492Z",
+  "trackCount": 3,
   "tracks": [
     {
       "id": "t_9dd52649cf9b",
@@ -13,6 +13,12 @@
       "title": "Bob Marley & The Wailers - Three Little Birds (Official Music Video) - BobMarleyVEVO (youtube)",
       "artist": "BudGanja Radio",
       "url": "/radio/Bob%20Marley%20%26%20The%20Wailers%20-%20Three%20Little%20Birds%20(Official%20Music%20Video)%20-%20BobMarleyVEVO%20(youtube).mp3"
+    },
+    {
+      "id": "t_74b5aec5c4dd",
+      "title": "Ziggy Marley - True To Myself (Official Music Video) - Ziggy Marley (youtube)",
+      "artist": "BudGanja Radio",
+      "url": "/radio/Ziggy%20Marley%20-%20True%20To%20Myself%20(Official%20Music%20Video)%20-%20Ziggy%20Marley%20(youtube).mp3"
     }
   ]
 }
