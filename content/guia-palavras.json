@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T15:40:34.176Z",
+  "updatedAt": "2026-08-23T16:54:01.751Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -514,6 +514,46 @@
       "curiositiesEn": "The sheet crosses the track with creativity, joy and path — a vocabulary of wonder, not diagnosis.",
       "historyEs": "How Bizarre, del grupo neozelandés OMC, salió en 1995 desde Ōtara. El título inglés elige nombrar lo bizarro en vez de suavizarlo.",
       "curiositiesEs": "La ficha cruza el tema con creatividad, alegría y camino — vocabulario de asombro, no de diagnóstico."
+    },
+    {
+      "id": "vamos-fugir",
+      "word": "Vamos Fugir",
+      "simple": "Gil + Liminha 1984 (Wailers); Spotify pedido = Skank 2004. Mapa Irajá/Marajó/Guaporé. Céu azul ≠ Céu Azul do Chorão. Valeu !!!",
+      "simpleEn": "Gil + Liminha 1984; requested Spotify is Skank 2004. Place-map Irajá/Marajó/Guaporé. Sky ≠ Chorão’s Céu Azul. Valeu !!!",
+      "simpleEs": "Gil + Liminha 1984; Spotify pedido = Skank 2004. Mapa Irajá/Marajó/Guaporé. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-vamos-fugir.html"
+    },
+    {
+      "id": "ceu-azul",
+      "word": "Céu Azul",
+      "simple": "Canção CBJR (Chorão + Castanho, 2011) ≠ o céu de Vamos Fugir. Liminha na ponte. Valeu !!!",
+      "simpleEn": "CBJR song (2011) ≠ the sky motif in Vamos Fugir. Valeu !!!",
+      "simpleEs": "Canción CBJR (2011) ≠ el cielo de Vamos Fugir. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-ceu-azul.html"
+    },
+    {
+      "id": "marajo",
+      "word": "Marajó",
+      "simple": "Ilha/arquipélago no Pará — não é uma cidade. Maraj = lapso. Elo Vamos Fugir. Valeu !!!",
+      "simpleEn": "Island/archipelago in Pará — not one city. Maraj = slip. Valeu !!!",
+      "simpleEs": "Isla/archipiélago en Pará — no es una ciudad. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-marajo.html"
+    },
+    {
+      "id": "guapore",
+      "word": "Guaporé",
+      "simple": "Rio (fronteira BR/BO) e município no RS. A canção Vamos Fugir não escolhe. Valeu !!!",
+      "simpleEn": "Border river and RS town. Vamos Fugir does not pick which. Valeu !!!",
+      "simpleEs": "Río de frontera y municipio de RS. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-guapore.html"
     },
     {
       "id": "rick-and-morty",
@@ -2368,6 +2408,36 @@
       "curiositiesEn": "The sheet asks respect for faith without proselytism — and the craft close: Valeu !!!",
       "historyEs": "Dios te bendiga / Deus abençoe es fórmula de bendición y despedida en el portugués de Brasil, de la tradición cristiana popular. La tipografía lab corrige Deus Abenço a la forma verbal viva.",
       "curiositiesEs": "La ficha pide respeto a la fe sin proselitismo — y el cierre de oficio: ¡Valeu !!!"
+    },
+    {
+      "id": "deus",
+      "word": "Deus",
+      "simple": "Lat. deus ← PIE *dyēus* (céu / luz do dia). Vocábulo, não catecismo. Deus × deus. Cluster: A Deus!!! · fui. Valeu !!!",
+      "simpleEn": "Lat. deus ← PIE *dyēus* (sky / daylight). Vocable, not catechism. God × a god. Cluster: A Deus!!! · fui. Valeu !!!",
+      "simpleEs": "Lat. deus ← PIE *dyēus* (cielo / luz del día). Vocablo, no catecismo. Dios × un dios. Clúster: A Deus!!! · fui. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-deus.html"
+    },
+    {
+      "id": "adeus",
+      "word": "A Deus!!!",
+      "simple": "a + Deus = adeus — encomendar e sair. Grito A Deus!!! × grafia junta. ≠ Deus abençoe. Irmã: fui. Valeu !!!",
+      "simpleEn": "a + Deus = adeus — commend and leave. Shout A Deus!!! × glued spelling. ≠ Deus abençoe. Sister: fui. Valeu !!!",
+      "simpleEs": "a + Deus = adeus — encomendar y salir. Grito A Deus!!! × grafía junta. ≠ Deus abençoe. Hermana: fui. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-adeus.html"
+    },
+    {
+      "id": "fui",
+      "word": "fui",
+      "simple": "Lat. fuī — pretérito de ir e de ser. Gíria Fui! = saí. Fecha o cluster Deus / A Deus!!!. ≠ passado. Valeu !!!",
+      "simpleEn": "Lat. fuī — preterite of to go and to be. Slang Fui! = I’m out. Closes Deus / A Deus!!!. ≠ passado. Valeu !!!",
+      "simpleEs": "Lat. fuī — pretérito de ir y de ser. Jerga ¡Fui! = me fui. Cierra Deus / A Deus!!!. ≠ passado. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-fui.html"
     },
     {
       "id": "templo-de-cristo-corpo-e-alma",

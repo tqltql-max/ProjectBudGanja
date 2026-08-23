@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T15:40:34.176Z",
+  "updatedAt": "2026-08-23T16:54:01.750Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -9357,6 +9357,161 @@
         "/posts/post-inspecao-palavra-lava.html"
       ],
       "notes": "Nome popular; sem receita de picada."
+    },
+    {
+      "id": "arte-vamos-fugir",
+      "title": "Vamos Fugir — Gil 1984, Skank no Spotify",
+      "titleEn": "Vamos Fugir — Gil 1984, Skank on Spotify",
+      "titleEs": "Vamos Fugir — Gil 1984, Skank en Spotify",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Spotify 7dxK6RSoCWZcb5gobxs1h9 = Skank; génese Gil+Liminha+Wailers; mapa Marajó/Guaporé; céu ≠ Céu Azul.",
+      "whyEn": "Requested Spotify is Skank; genesis Gil 1984; Marajó/Guaporé map; sky ≠ Chorão title.",
+      "whyEs": "Spotify pedido = Skank; génesis Gil 1984; mapa Marajó/Guaporé.",
+      "suggestedSlug": "inspecao-arte-vamos-fugir",
+      "doneHref": "/posts/post-inspecao-arte-vamos-fugir.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-vamos-fugir.html",
+        "https://open.spotify.com/track/7dxK6RSoCWZcb5gobxs1h9",
+        "https://www.youtube.com/watch?v=6WgTw8UL-1E",
+        "https://pt.wikipedia.org/wiki/Vamos_Fugir",
+        "/posts/post-inspecao-palavra-marajo.html",
+        "/posts/post-inspecao-palavra-guapore.html",
+        "/posts/post-inspecao-arte-ceu-azul.html"
+      ],
+      "notes": "Sem letra. Skank 2004 ≠ fonograma 1984."
+    },
+    {
+      "id": "palavra-marajo",
+      "title": "Marajó — ilha, não cidade Maraj",
+      "titleEn": "Marajó — island, not a city named Maraj",
+      "titleEs": "Marajó — isla, no ciudad Maraj",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Marajó ≠ um município; Maraj = lapso; elo Vamos Fugir.",
+      "whyEn": "Marajó ≠ one municipality; Maraj = slip.",
+      "whyEs": "Marajó ≠ un municipio; Maraj = lapsus.",
+      "suggestedSlug": "inspecao-palavra-marajo",
+      "doneHref": "/posts/post-inspecao-palavra-marajo.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Ilha_do_Maraj%C3%B3",
+        "/posts/post-inspecao-arte-vamos-fugir.html"
+      ],
+      "notes": "Arquipélago PA."
+    },
+    {
+      "id": "palavra-guapore",
+      "title": "Guaporé — rio e cidade",
+      "titleEn": "Guaporé — river and town",
+      "titleEs": "Guaporé — río y ciudad",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Rio BR/BO × município RS; a canção não escolhe.",
+      "whyEn": "Border river × RS town; the song does not pick.",
+      "whyEs": "Río de frontera × municipio RS.",
+      "suggestedSlug": "inspecao-palavra-guapore",
+      "doneHref": "/posts/post-inspecao-palavra-guapore.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Rio_Guapor%C3%A9",
+        "/posts/post-inspecao-arte-vamos-fugir.html"
+      ],
+      "notes": "Ambiguidade honesta."
+    },
+    {
+      "id": "arte-ceu-azul",
+      "title": "Céu Azul — Chorão, não o céu de Gil",
+      "titleEn": "Céu Azul — Chorão, not Gil’s sky",
+      "titleEs": "Céu Azul — Chorão, no el cielo de Gil",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "CBJR 2011; Liminha produziu o Caiçara; ≠ motivo céu azul em Vamos Fugir.",
+      "whyEn": "CBJR 2011; Liminha produced the live album; ≠ Gil motif.",
+      "whyEs": "CBJR 2011; Liminha en el Caiçara; ≠ motivo de Gil.",
+      "suggestedSlug": "inspecao-arte-ceu-azul",
+      "doneHref": "/posts/post-inspecao-arte-ceu-azul.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-ceu-azul.html",
+        "https://www.youtube.com/watch?v=0dLX40UMUKo",
+        "https://open.spotify.com/track/3cqeso9qMA6HoISorEoFfk",
+        "https://pt.wikipedia.org/wiki/C%C3%A9u_Azul_(can%C3%A7%C3%A3o)",
+        "/posts/post-inspecao-arte-vamos-fugir.html",
+        "/posts/post-inspecao-figura-chorao.html"
+      ],
+      "notes": "Sem letra. Clipe Radar 0dLX40UMUKo."
+    },
+    {
+      "id": "palavra-deus",
+      "title": "Deus — o vocábulo do céu latino; ficha ≠ catecismo",
+      "titleEn": "Deus — the Latin-sky vocable; sheet ≠ catechism",
+      "titleEs": "Deus — el vocablo del cielo latino; ficha ≠ catecismo",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: Deus ← lat. deus ← PIE *dyēus*; Deus × deus; ≠ Elohim/Theos/Allah; cluster A Deus!!! / fui; Valeu !!!",
+      "whyEn": "Words: Deus ← Lat. deus ← PIE *dyēus*; God × a god; cluster A Deus!!! / fui; Valeu !!!",
+      "whyEs": "Palabras: Deus ← lat. deus ← PIE *dyēus*; Dios × un dios; clúster A Deus!!! / fui; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-deus",
+      "doneHref": "/posts/post-inspecao-palavra-deus.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/Deus",
+        "/posts/post-inspecao-expressao-adeus.html",
+        "/posts/post-inspecao-palavra-fui.html",
+        "/posts/post-inspecao-palavra-diabo.html"
+      ],
+      "notes": "Cap. 278 — cluster Deus / A Deus!!! / fui; ficha ≠ catecismo."
+    },
+    {
+      "id": "expressao-adeus",
+      "title": "A Deus!!! — adeus, encomendar e sair",
+      "titleEn": "A Deus!!! — goodbye, commend and leave",
+      "titleEs": "¡A Deus!!! — adiós, encomendar y salir",
+      "tipo": "expressao",
+      "priority": 1,
+      "status": "feita",
+      "why": "Expressões: A Deus!!! = a + Deus (adeus); grito partido × grafia junta; ≠ Deus abençoe; irmã fui.",
+      "whyEn": "Sayings: A Deus!!! = a + Deus; split shout × glued spelling; ≠ Deus abençoe; sister fui.",
+      "whyEs": "Dichos: ¡A Deus!!! = a + Deus; grito partido × grafía junta; ≠ Deus abençoe; hermana fui.",
+      "suggestedSlug": "inspecao-expressao-adeus",
+      "doneHref": "/posts/post-inspecao-expressao-adeus.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/adeus",
+        "/posts/post-inspecao-palavra-deus.html",
+        "/posts/post-inspecao-palavra-fui.html",
+        "/posts/post-inspecao-expressao-deus-abencoe.html"
+      ],
+      "notes": "Cap. 276 — A Deus!!! / adeus; irmã fui."
+    },
+    {
+      "id": "palavra-fui",
+      "title": "fui — pretérito de ir e de ser; na rua, Fui!",
+      "titleEn": "fui — preterite of to go and to be; in the street, Fui!",
+      "titleEs": "fui — pretérito de ir y de ser; en la calle, ¡Fui!",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: fui ← lat. fuī (ir e ser); gíria Fui! = saí; cluster Deus / A Deus!!!; ≠ passado; Valeu !!!",
+      "whyEn": "Words: fui ← Lat. fuī (to go and to be); slang Fui!; cluster Deus / A Deus!!!; Valeu !!!",
+      "whyEs": "Palabras: fui ← lat. fuī (ir y ser); jerga ¡Fui!; clúster Deus / A Deus!!!; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-fui",
+      "doneHref": "/posts/post-inspecao-palavra-fui.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/fui",
+        "/posts/post-inspecao-palavra-deus.html",
+        "/posts/post-inspecao-expressao-adeus.html",
+        "/posts/post-inspecao-palavra-passado.html"
+      ],
+      "notes": "Cap. 279 — fecha o cluster; gíria Fui!"
     }
   ]
 }
