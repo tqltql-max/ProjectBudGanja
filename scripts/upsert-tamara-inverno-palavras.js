@@ -2,7 +2,7 @@
 
 /**
  * Upsert lote Tamara / Bom dia, Inverno:
- * — 14 fichas de palavra do gelo
+ * — léxico do gelo da homepage /inverno/ (lote original + palavras da página)
  * — Guia de Palavras (href → ficha)
  * — refresh da divulgação Artes
  *
@@ -13,7 +13,8 @@ const fs = require('fs');
 const path = require('path');
 const {
   TAMARA_INVERNO_PALAVRAS_POSTS,
-  TAMARA_INVERNO_PALAVRA_HREFS
+  TAMARA_INVERNO_PALAVRA_HREFS,
+  invernoLexiconWords
 } = require('../lib/tamara-inverno-palavras-posts.js');
 const {
   GUIA_TAMARA_INVERNO_ITEMS,
@@ -37,6 +38,48 @@ function upsertPost(posts, post) {
   const idx = posts.findIndex((p) => p.slug === post.slug);
   if (idx >= 0) posts[idx] = Object.assign({}, posts[idx], post);
   else posts.unshift(post);
+}
+
+function patchInvernoJs() {
+  const file = path.join(ROOT, 'js', 'inverno.js');
+  let src = fs.readFileSync(file, 'utf8');
+  const words = invernoLexiconWords();
+  const lines = words.map((w) => {
+    return (
+      '    { id: ' +
+      JSON.stringify(w.id) +
+      ', href: ' +
+      JSON.stringify(w.href) +
+      ', pt: ' +
+      JSON.stringify(w.pt) +
+      ', en: ' +
+      JSON.stringify(w.en) +
+      ', es: ' +
+      JSON.stringify(w.es) +
+      ', simplePt: ' +
+      JSON.stringify(w.simplePt) +
+      ', simpleEn: ' +
+      JSON.stringify(w.simpleEn) +
+      ', simpleEs: ' +
+      JSON.stringify(w.simpleEs) +
+      ' }'
+    );
+  });
+  const block = '  var WORDS = [\n' + lines.join(',\n') + '\n  ];';
+  if (!/  var WORDS = \[[\s\S]*?\n  \];/.test(src)) {
+    throw new Error('inverno.js: bloco WORDS não encontrado');
+  }
+  src = src.replace(/  var WORDS = \[[\s\S]*?\n  \];/, block);
+  fs.writeFileSync(file, src, 'utf8');
+  console.log('js/inverno.js: %d palavras no léxico do gelo', words.length);
+}
+
+function writeHtml(post) {
+  const { buildPostHtml, normalizePosts } = require('../lib/posts-service.js');
+  const [normalized] = normalizePosts([post]);
+  const out = path.join(ROOT, normalized.filename);
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  fs.writeFileSync(out, buildPostHtml(normalized), 'utf8');
 }
 
 function writeI18n(i18n, post) {
@@ -73,6 +116,16 @@ async function main() {
   for (const post of all) upsertPost(posts, post);
   fs.writeFileSync(POSTS_FILE, JSON.stringify(posts, null, 2) + '\n', 'utf8');
   console.log('posts.json: %d palavras + divulgação', palavraPosts.length);
+
+  patchInvernoJs();
+
+  for (const post of all) {
+    try {
+      writeHtml(post);
+    } catch (e) {
+      console.warn('HTML aviso', post.slug, e.message);
+    }
+  }
 
   const i18n = JSON.parse(fs.readFileSync(I18N_FILE, 'utf8'));
   for (const post of all) writeI18n(i18n, post);
@@ -164,7 +217,15 @@ async function main() {
       medo: '/posts/post-inspecao-palavra-medo.html',
       vida: '/vida/',
       animais: '/animais/',
-      envernagem: TAMARA_INVERNO_PALAVRA_HREFS.invernagem
+      envernagem: TAMARA_INVERNO_PALAVRA_HREFS.invernagem,
+      fjord: TAMARA_INVERNO_PALAVRA_HREFS.fiorde,
+      fiordo: TAMARA_INVERNO_PALAVRA_HREFS.fiorde,
+      camera: TAMARA_INVERNO_PALAVRA_HREFS.camara,
+      cielo: TAMARA_INVERNO_PALAVRA_HREFS.ceu,
+      escrevo: TAMARA_INVERNO_PALAVRA_HREFS.escrever,
+      escrevi: TAMARA_INVERNO_PALAVRA_HREFS.escrever,
+      fiquei: TAMARA_INVERNO_PALAVRA_HREFS.ficar,
+      ficava: TAMARA_INVERNO_PALAVRA_HREFS.ficar
     });
     let mapped = 0;
     for (const w of catalog.words || []) {

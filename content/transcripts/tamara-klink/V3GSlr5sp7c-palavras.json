@@ -281,7 +281,8 @@
     },
     {
       "word": "tempo",
-      "count": 6
+      "count": 6,
+      "href": "/posts/post-inspecao-palavra-tempo.html"
     },
     {
       "word": "ainda",
@@ -385,7 +386,8 @@
     },
     {
       "word": "escrevo",
-      "count": 4
+      "count": 4,
+      "href": "/posts/post-inspecao-palavra-escrever.html"
     },
     {
       "word": "estao",
@@ -397,7 +399,8 @@
     },
     {
       "word": "ficar",
-      "count": 4
+      "count": 4,
+      "href": "/posts/post-inspecao-palavra-ficar.html"
     },
     {
       "word": "fundo",
@@ -569,7 +572,8 @@
     },
     {
       "word": "ficava",
-      "count": 3
+      "count": 3,
+      "href": "/posts/post-inspecao-palavra-ficar.html"
     },
     {
       "word": "fim",
@@ -577,7 +581,8 @@
     },
     {
       "word": "fiquei",
-      "count": 3
+      "count": 3,
+      "href": "/posts/post-inspecao-palavra-ficar.html"
     },
     {
       "word": "gelo",
@@ -693,7 +698,8 @@
     },
     {
       "word": "sol",
-      "count": 3
+      "count": 3,
+      "href": "/posts/post-inspecao-palavra-sol.html"
     },
     {
       "word": "sonhos",
@@ -797,7 +803,8 @@
     },
     {
       "word": "ceu",
-      "count": 2
+      "count": 2,
+      "href": "/posts/post-inspecao-palavra-ceu.html"
     },
     {
       "word": "ciao",
@@ -1054,7 +1061,8 @@
     },
     {
       "word": "partir",
-      "count": 2
+      "count": 2,
+      "href": "/posts/post-inspecao-palavra-partir.html"
     },
     {
       "word": "passa",
@@ -1868,7 +1876,8 @@
     },
     {
       "word": "escrevi",
-      "count": 1
+      "count": 1,
+      "href": "/posts/post-inspecao-palavra-escrever.html"
     },
     {
       "word": "espiritos",
@@ -2241,7 +2250,8 @@
     },
     {
       "word": "luz",
-      "count": 1
+      "count": 1,
+      "href": "/posts/post-inspecao-palavra-luz.html"
     },
     {
       "word": "mae",
@@ -5643,6 +5653,6 @@
       "count": 1
     }
   ],
-  "mappedAt": "2026-08-02T19:48:54.870Z",
-  "mappedCount": 21
+  "mappedAt": "2026-08-23T04:10:50.023Z",
+  "mappedCount": 31
 }

@@ -224,6 +224,120 @@ const ENTRIES = {
     href: ficha('coelho'),
     en: 'rabbit', es: 'conejo', fr: 'lapin', it: 'coniglio', de: 'Kaninchen',
     el: 'κουνέλι', la: 'cuniculus'
+  }),
+  fiorde: fill({
+    gloss: 'Braço de mar — palco da invernagem: o barco preso no fiorde da Groenlândia.',
+    href: ficha('fiorde'),
+    en: 'fjord', es: 'fiordo', fr: 'fjord', it: 'fiordo', de: 'Fjord',
+    el: 'φιόρδ', la: 'fiordum'
+  }),
+  fiordo: fill({
+    gloss: 'Grafia ES/IT de fiorde — ver ficha.',
+    href: ficha('fiorde'),
+    en: 'fjord', es: 'fiordo'
+  }),
+  drone: fill({
+    gloss: 'Aeronave da capa — a câmara no céu porque Tamara a mandou; a mão esquerda conduz.',
+    href: ficha('drone'),
+    en: 'drone', es: 'dron', fr: 'drone', it: 'drone', de: 'Drohne',
+    el: 'drone', la: 'drone'
+  }),
+  dron: fill({
+    gloss: 'Grafia ES de drone — ver ficha.',
+    href: ficha('drone'),
+    en: 'drone', es: 'dron'
+  }),
+  circular: fill({
+    gloss: 'Pedido da autora: empresta, doa, deixa o papel viver — o gelo pede para circular.',
+    href: ficha('circular'),
+    en: 'to circulate', es: 'circular', fr: 'circuler', it: 'circolare', de: 'zirkulieren',
+    el: 'κυκλοφορώ', la: 'circulare'
+  }),
+  voar: fill({
+    gloss: 'Mandar a câmara ao céu — na invernagem a solo, voar faz o retrato.',
+    href: ficha('voar'),
+    en: 'to fly', es: 'volar', fr: 'voler', it: 'volare', de: 'fliegen',
+    el: 'πετώ', la: 'volare'
+  }),
+  registar: fill({
+    gloss: 'Fixar o que aconteceu — capa, diário e livro: voar, ficar, registar.',
+    href: ficha('registar'),
+    en: 'to record', es: 'registrar', fr: 'enregistrer', it: 'registrare', de: 'aufzeichnen',
+    el: 'καταγράφω', la: 'registrare'
+  }),
+  registrar: fill({
+    gloss: 'Grafia BR de registar — ver ficha do gelo.',
+    href: ficha('registar'),
+    en: 'to record', es: 'registrar'
+  }),
+  câmara: fill({
+    gloss: 'Olho do drone — no gelo não havia fotógrafo; ela sobe a câmara.',
+    href: ficha('camara'),
+    en: 'camera', es: 'cámara', fr: 'caméra', it: 'camera', de: 'Kamera',
+    el: 'κάμερα', la: 'camera'
+  }),
+  camara: fill({
+    gloss: 'Grafia sem acento de câmara — ver ficha.',
+    href: ficha('camara'),
+    en: 'camera', es: 'cámara'
+  }),
+  céu: fill({
+    gloss: 'Alto da capa — o céu é de onde o drone olha o fiorde.',
+    href: ficha('ceu'),
+    en: 'sky', es: 'cielo', fr: 'ciel', it: 'cielo', de: 'Himmel',
+    el: 'ουρανός', la: 'caelum'
+  }),
+  ceu: fill({
+    gloss: 'Grafia sem acento de céu — ver ficha.',
+    href: ficha('ceu'),
+    en: 'sky', es: 'cielo'
+  }),
+  emprestar: fill({
+    gloss: 'Primeiro gesto de circular o livro — empresta a quem ainda não leu.',
+    href: ficha('emprestar'),
+    en: 'to lend', es: 'prestar', fr: 'prêter', it: 'prestare', de: 'leihen',
+    el: 'δανείζω', la: 'praestare'
+  }),
+  doar: fill({
+    gloss: 'Segundo gesto de circular — doar o exemplar a uma biblioteca.',
+    href: ficha('doar'),
+    en: 'to donate', es: 'donar', fr: 'donner', it: 'donare', de: 'spenden',
+    el: 'δωρίζω', la: 'donare'
+  }),
+  estante: fill({
+    gloss: 'Onde o livro espera — o gelo pede para circular, não para ficar na estante.',
+    href: ficha('estante'),
+    en: 'shelf', es: 'estante', fr: 'étagère', it: 'scaffale', de: 'Regal',
+    el: 'ράφι', la: 'pluteus'
+  }),
+  peito: fill({
+    gloss: 'Corpo que a invernagem mede — o peito ainda cabe na mão quando o gelo prende o barco.',
+    href: ficha('peito'),
+    en: 'chest', es: 'pecho', fr: 'poitrine', it: 'petto', de: 'Brust',
+    el: 'στήθος', la: 'pectus'
+  }),
+  mudinha: fill({
+    gloss: 'Planta jovem — Bom dia, Inverno entra no laboratório como mudinha da Vida.',
+    href: ficha('mudinha'),
+    en: 'seedling', es: 'plantita', fr: 'plantule', it: 'piantina', de: 'Setzling',
+    el: 'φυτάριο', la: 'plantula'
+  }),
+  estação: fill({
+    gloss: 'Tempo do ciclo — inverno é estação, não fim; inspeciona-se a raiz.',
+    href: ficha('estacao'),
+    en: 'season', es: 'estación', fr: 'saison', it: 'stagione', de: 'Jahreszeit',
+    el: 'εποχή', la: 'statio'
+  }),
+  estacao: fill({
+    gloss: 'Grafia sem cedilha de estação — ver ficha.',
+    href: ficha('estacao'),
+    en: 'season', es: 'estación'
+  }),
+  partir: fill({
+    gloss: 'A decisão de ir — tríade Tamara no gelo: partir, ficar, escrever.',
+    href: ficha('partir'),
+    en: 'to leave', es: 'partir', fr: 'partir', it: 'partire', de: 'aufbrechen',
+    el: 'φεύγω', la: 'proficisci'
   })
 };
 
