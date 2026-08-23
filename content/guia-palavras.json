@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T14:34:28.530Z",
+  "updatedAt": "2026-08-23T15:40:34.176Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4988,9 +4988,9 @@
     {
       "id": "lavar",
       "word": "Lavar",
-      "simple": "Latim *lavāre* — mãos com água até «lavar a alma»: cuidado com método; «lavar as mãos» / fuga = ressalva.",
-      "simpleEn": "Latin *lavāre* — hands with water up to “wash the soul”: care with method; washing hands of it = caveat.",
-      "simpleEs": "Latín *lavāre* — manos con agua hasta «lavar el alma»: cuidado con método; lavarse las manos = salvedad.",
+      "simple": "Lat. lavāre — mãos e alma; ≠ lava de vulcão ≠ larva ≠ formiga lava-pé; Valeu !!!",
+      "simpleEn": "Lat. lavāre — hands and soul; ≠ volcanic lava ≠ larva ≠ fire ant; Valeu !!!",
+      "simpleEs": "Lat. lavāre — manos y alma; ≠ lava ≠ larva ≠ hormiga de fuego; ¡Valeu !!!",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-lavar.html",
@@ -5000,6 +5000,46 @@
       "curiositiesEn": "The lab asks for care with method; Pilate’s flight stays as a caveat.",
       "historyEs": "Lavar viene del latín lavāre — limpiar con agua. En portugués también es «lavar el alma» y, en sentido peyorativo, «lavarse las manos» de la responsabilidad.",
       "curiositiesEs": "El laboratorio pide cuidado con método; la huida de Pilato queda como salvedad."
+    },
+    {
+      "id": "lava",
+      "word": "lava",
+      "simple": "Rocha fundida do vulcão ≠ lavar ≠ larva; larva de vulcão = lapso; Valeu !!!",
+      "simpleEn": "Molten rock ≠ lavar ≠ larva; larva de vulcão = slip; Valeu !!!",
+      "simpleEs": "Roca fundida ≠ lavar ≠ larva; larva de vulcão = lapsus; ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-lava.html"
+    },
+    {
+      "id": "larva",
+      "word": "larva",
+      "simple": "Estádio jovem do inseto (lat. lārva) ≠ lava de vulcão; Valeu !!!",
+      "simpleEn": "Insect immature stage ≠ volcanic lava; Valeu !!!",
+      "simpleEs": "Estadio joven del insecto ≠ lava de volcán; ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-larva.html"
+    },
+    {
+      "id": "formiga",
+      "word": "formiga",
+      "simple": "Lat. formīca — inseto do chão; lava-pé é o caso Solenopsis; Valeu !!!",
+      "simpleEn": "Lat. formīca — ant; lava-pé = fire ant case; Valeu !!!",
+      "simpleEs": "Lat. formīca — hormiga; lava-pé = caso Solenopsis; ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-formiga.html"
+    },
+    {
+      "id": "formiga-lava-pe",
+      "word": "formiga lava-pé",
+      "simple": "Nome popular de Solenopsis; ferroa o pé ≠ rito de lava-pés ≠ lava de vulcão; Valeu !!!",
+      "simpleEn": "Folk name for fire ants; ≠ foot-washing rite ≠ volcanic lava; Valeu !!!",
+      "simpleEs": "Nombre popular de Solenopsis; ≠ rito ≠ lava de volcán; ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-formiga-lava-pe.html"
     },
     {
       "id": "legado",

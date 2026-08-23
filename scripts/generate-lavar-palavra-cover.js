@@ -31,7 +31,7 @@ async function main() {
   <path d="M560 280 Q600 340 640 280" fill="none" stroke="rgba(160,200,210,0.7)" stroke-width="3"/>
   <text x="600" y="90" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#dfc262" letter-spacing="6">PALAVRAS · MÃOS → ALMA</text>
   <text x="600" y="420" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="72" font-weight="700" fill="#f4efe6">lavar</text>
-  <text x="600" y="490" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="rgba(200,184,160,0.95)">lavar a alma · água · lágrima · método</text>
+  <text x="600" y="490" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="rgba(200,184,160,0.95)">água · ≠ lava · ≠ larva · lava-pé noutra sala</text>
   <text x="600" y="560" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#8ec4d4">cuidado sim · fuga e vingança não</text>
 </svg>`);
 

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T14:34:28.530Z",
+  "updatedAt": "2026-08-23T15:40:34.176Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3029,26 +3029,24 @@
     },
     {
       "id": "palavra-lavar",
-      "title": "Lavar — das mãos à alma",
-      "titleEn": "Lavar — from the hands to the soul",
-      "titleEs": "Lavar — de las manos al alma",
+      "title": "Lavar — água, não lava de vulcão",
+      "titleEn": "Lavar — water, not volcano lava",
+      "titleEs": "Lavar — agua, no lava de volcán",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: «lavar» até «lavar a alma» — mãos, água, lágrima; cuidado com método; fuga/vingança = ressalva.",
-      "whyEn": "Words: “lavar” up to “wash the soul” — hands, water, tear; care with method; evasion/revenge = caveat.",
-      "whyEs": "Palabras: «lavar» hasta «lavar el alma» — manos, agua, lágrima; cuidado con método; fuga/venganza = salvedad.",
+      "why": "Palavras: lavar ≠ lava ≠ larva; orelha cola formiga lava-pé; Valeu !!!",
+      "whyEn": "Words: lavar ≠ lava ≠ larva; ear glues formiga lava-pé; Valeu !!!",
+      "whyEs": "Palabras: lavar ≠ lava ≠ larva; el oído pega formiga lava-pé; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-lavar",
       "doneHref": "/posts/post-inspecao-palavra-lavar.html",
       "seriesHint": "palavras-origem",
       "sources": [
-        "https://pt.wiktionary.org/wiki/lavar",
-        "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
-        "/posts/post-inspecao-palavra-gesto.html",
-        "/posts/post-inspecao-palavra-agua.html",
-        "/posts/post-inspecao-palavra-balde.html"
+        "/posts/post-inspecao-palavra-lava.html",
+        "/posts/post-inspecao-palavra-larva.html",
+        "/posts/post-inspecao-expressao-formiga-lava-pe.html"
       ],
-      "notes": "Cap. 28 — complementaridade das mãos; ressalva «lavar as mãos» = fuga."
+      "notes": "Cap. 28 — corte lava/larva/lava-pé."
     },
     {
       "id": "figura-ayrton-senna",
@@ -9275,6 +9273,90 @@
         "/posts/post-inspecao-palavra-respeito.html"
       ],
       "notes": "Cap. 32 — caixa × ofício; flerte só como corte."
+    },
+    {
+      "id": "palavra-lava",
+      "title": "Lava — o rio do vulcão",
+      "titleEn": "Lava — the volcano’s river",
+      "titleEs": "Lava — el río del volcán",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: lava ≠ lavar ≠ larva; larva de vulcão = lapso; Valeu !!!",
+      "whyEn": "Words: lava ≠ lavar ≠ larva; larva de vulcão = slip; Valeu !!!",
+      "whyEs": "Palabras: lava ≠ lavar ≠ larva; larva de vulcão = lapsus; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-lava",
+      "doneHref": "/posts/post-inspecao-palavra-lava.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/lava",
+        "/posts/post-inspecao-palavra-lavar.html",
+        "/posts/post-inspecao-palavra-larva.html"
+      ],
+      "notes": "Rocha fundida; via lavāre desacreditada."
+    },
+    {
+      "id": "palavra-larva",
+      "title": "Larva — o jovem do inseto",
+      "titleEn": "Larva — the insect’s young",
+      "titleEs": "Larva — el joven del insecto",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: larva ≠ lava de vulcão; Valeu !!!",
+      "whyEn": "Words: larva ≠ volcanic lava; Valeu !!!",
+      "whyEs": "Palabras: larva ≠ lava de volcán; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-larva",
+      "doneHref": "/posts/post-inspecao-palavra-larva.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/larva",
+        "/posts/post-inspecao-palavra-lava.html",
+        "/posts/post-inspecao-palavra-inseto.html"
+      ],
+      "notes": "Lat. lārva."
+    },
+    {
+      "id": "palavra-formiga",
+      "title": "Formiga — o inseto do chão",
+      "titleEn": "Formiga — the ground insect",
+      "titleEs": "Formiga — el insecto del suelo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: formiga (formīca); lava-pé é o caso; ≠ tucandeira; Valeu !!!",
+      "whyEn": "Words: formiga (formīca); lava-pé is the case; ≠ tucandeira; Valeu !!!",
+      "whyEs": "Palabras: formiga; lava-pé es el caso; ≠ tucandeira; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-formiga",
+      "doneHref": "/posts/post-inspecao-palavra-formiga.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/formiga",
+        "/posts/post-inspecao-expressao-formiga-lava-pe.html",
+        "/posts/post-inspecao-palavra-inseto.html"
+      ],
+      "notes": "Lemma do inseto."
+    },
+    {
+      "id": "expressao-formiga-lava-pe",
+      "title": "Formiga lava-pé — ferroa, não lava",
+      "titleEn": "Formiga lava-pé — it stings, it does not wash",
+      "titleEs": "Formiga lava-pé — pica, no lava",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: formiga lava-pé (*Solenopsis*) ≠ rito ≠ lava ≠ larva; Valeu !!!",
+      "whyEn": "Sayings: fire ant ≠ foot-washing rite ≠ lava ≠ larva; Valeu !!!",
+      "whyEs": "Dichos: hormiga de fuego ≠ rito ≠ lava ≠ larva; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-formiga-lava-pe",
+      "doneHref": "/posts/post-inspecao-expressao-formiga-lava-pe.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-palavra-formiga.html",
+        "/posts/post-inspecao-palavra-lavar.html",
+        "/posts/post-inspecao-palavra-lava.html"
+      ],
+      "notes": "Nome popular; sem receita de picada."
     }
   ]
 }
