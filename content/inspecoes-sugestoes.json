@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T12:25:51.807Z",
+  "updatedAt": "2026-08-23T12:34:38.020Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -9095,6 +9095,30 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 30 — parlenda; cola mundinho/mudinho; gatilho pé/escada separado."
+    },
+    {
+      "id": "palavra-mexico",
+      "title": "México — país, golfo, golfe; lapsus gosfo / coongo / gongo",
+      "titleEn": "México — country, gulf, golf; slips gosfo / coongo / gongo",
+      "titleEs": "México — país, golfo, golf; lapsus gosfo / coongo / gongo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: México (Mēxihco) — país ≠ golfo ≠ golfe ≠ gongo ≠ Congo; Valeu !!!",
+      "whyEn": "Words: México (Mēxihco) — country ≠ gulf ≠ golf ≠ gong ≠ Congo; Valeu !!!",
+      "whyEs": "Palabras: México (Mēxihco) — país ≠ golfo ≠ golf ≠ gongo ≠ Congo; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-mexico",
+      "doneHref": "/posts/post-inspecao-palavra-mexico.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/M%C3%A9xico",
+        "https://pt.wiktionary.org/wiki/M%C3%A9xico",
+        "https://pt.wikipedia.org/wiki/Golfo_do_M%C3%A9xico",
+        "/posts/post-inspecao-planta-abacate.html",
+        "/posts/post-inspecao-serie-chaves-el-chavo.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 261 — inspeção especial do país; cola golfo/golfe/gongo/Congo."
     }
   ]
 }

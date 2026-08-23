@@ -3350,6 +3350,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «calor» × «frio» (lat. calor / frīgus) — grau medido; ≠ fogo ≠ gelo ≠ inverno ≠ caloria; Valeu !!!"
             },
             {
+              "label": "Inspeção: México — o país, o golfo, o golfe e o lapso gosfo",
+              "tileLabel": "Inspeção: México — o país, o go…",
+              "href": "/posts/post-inspecao-palavra-mexico.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mexico",
+              "description": "Palavras: México (Mēxihco) — país ≠ golfo ≠ golfe ≠ gongo ≠ Congo; gosfo→golfo; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",
