@@ -542,6 +542,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Citrus × sinensis* — laranja doce: crédito ao fruto inteiro e sumo fresco; separar concentrados, néctares e refrigerantes «de laranja»."
             },
             {
+              "label": "Caderno de jogo 4: Mortal Kombat — o fliperama e as palavras do combate",
+              "tileLabel": "Caderno de jogo 4: Mortal Komba…",
+              "href": "/posts/post-inspecao-jogo-mortal-kombat.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-jogo-mortal-kombat",
+              "description": "Caderno 4: Mortal Kombat (Midway, 1992) — Konbat; Fight / Round / Finish / Fatality / Brutality / Babality; HUD HP · mana · vida×energia; sem lista de golpes; Valeu !!!"
+            },
+            {
               "label": "Inspeção: ICL Cursos — Instituto Conhecimento Liberta",
               "tileLabel": "Inspeção: ICL Cursos — Institut…",
               "href": "/posts/post-inspecao-icl-cursos.html",
@@ -1486,6 +1494,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Schinus terebinthifolia* — frutos «pimenta-rosa» e folhas com óleos essenciais e taninos; tradição tópica e culinária."
             },
             {
+              "label": "Inspeção: eu amo a vida — alteração automática de Valeu !!!",
+              "tileLabel": "Inspeção: eu amo a vida — alter…",
+              "href": "/posts/post-inspecao-expressao-eu-amo-a-vida.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-eu-amo-a-vida",
+              "description": "Expressões: «eu amo a vida» — alteração automática de Valeu !!!; amar + vida; ≠ cartaz ≠ trilha /vida/; o render cola sozinho."
+            },
+            {
               "label": "Inspeção: Planta — Quina — quinina e antimalárico histórico",
               "tileLabel": "Inspeção: Planta — Quina — quin…",
               "href": "/posts/post-inspecao-planta-quina.html",
@@ -1702,6 +1718,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes · cinema: De Volta para o Futuro (1985, Zemeckis/Gale) — a obra e o crédito às pessoas: Michael J. Fox, Christopher Lloyd e o elenco, tratados como gente, não como persona."
             },
             {
+              "label": "Inspeção: Barco — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Barco — léxico Tamara…",
+              "href": "/posts/post-inspecao-palavra-barco.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-barco",
+              "description": "Embarcação — no universo Tamara é casa, oficina e corpo da invernagem; elo do livro *Bom dia, Inverno*."
+            },
+            {
               "label": "Inspeção: Upside Down — Jack Johnson e o olhar de cabeça para baixo",
               "tileLabel": "Inspeção: Upside Down — Jack Jo…",
               "href": "/posts/post-inspecao-arte-upside-down.html",
@@ -1716,6 +1740,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-delorean",
               "description": "Artes · objecto: DeLorean DMC (Giugiaro, Dunmurry, 1981–82) — o carro real primeiro; a máquina de De Volta para o Futuro é camada de ficção, não origem."
+            },
+            {
+              "label": "Inspeção: Mar — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Mar — léxico Tamara /…",
+              "href": "/posts/post-inspecao-palavra-mar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mar",
+              "description": "Oceano e horizonte — no laboratório cruza com caminho, Vida e a travessia solitária de Tamara."
             },
             {
               "label": "Inspeção: How Bizarre — OMC e o ofício de nomear o estranho",
@@ -1734,6 +1766,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes · cinema: Questão de Tempo / About Time (2013) — guião e realização de Richard Curtis; sem livro prévio, o filme é o texto. Destaque para o autor; elenco com crédito, não como centro."
             },
             {
+              "label": "Inspeção: Gelo — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Gelo — léxico Tamara …",
+              "href": "/posts/post-inspecao-palavra-gelo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-gelo",
+              "description": "Água sólida que prende o barco — matéria da invernagem ártica narrada em *Bom dia, Inverno*."
+            },
+            {
               "label": "Inspeção: O Alquimista — o livro de Paulo Coelho e a Lenda Pessoal",
               "tileLabel": "Inspeção: O Alquimista — o livr…",
               "href": "/posts/post-inspecao-arte-o-alquimista.html",
@@ -1750,12 +1790,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes · cinema: Um Sonho de Liberdade / The Shawshank Redemption (1994, Darabont) — génese na novela de Stephen King (1982); o filme é adaptação. Autor em Pessoas; elenco com crédito."
             },
             {
+              "label": "Inspeção: Inverno — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Inverno — léxico Tama…",
+              "href": "/posts/post-inspecao-palavra-inverno.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-inverno",
+              "description": "Estação e título — *Bom dia, Inverno*: cumprimentar o frio sem romantizar o isolamento."
+            },
+            {
               "label": "Inspeção: Encontro Marcado — a peça de 1924 e o filme de 1998",
               "tileLabel": "Inspeção: Encontro Marcado — a …",
               "href": "/posts/post-inspecao-filme-encontro-marcado.html",
               "icon": "🔍",
               "slug": "post-inspecao-filme-encontro-marcado",
               "description": "Artes · cinema: Encontro Marcado / Meet Joe Black (1998, Brest) — génese na peça de Alberto Casella (1924) e em Death Takes a Holiday (1934); o filme é remake. Morte, tempo e vida ordinária."
+            },
+            {
+              "label": "Inspeção: Invernagem — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Invernagem — léxico T…",
+              "href": "/posts/post-inspecao-palavra-invernagem.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-invernagem",
+              "description": "Permanecer o inverno inteiro no gelo — feito âncora de Tamara no Ártico; eixo do livro."
             },
             {
               "label": "Inspeção: Coração Valente — a lenda de Wallace e o filme de 1995",
@@ -1766,12 +1822,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes · cinema: Coração Valente / Braveheart (1995) — lenda de Blind Harry e Wallace; guião de Randall Wallace; Gibson realiza e interpreta. Épico ≠ crónica. Ficha própria, distinta de A Paixão de Cristo."
             },
             {
+              "label": "Inspeção: Navegar — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Navegar — léxico Tama…",
+              "href": "/posts/post-inspecao-palavra-navegar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-navegar",
+              "description": "Conduzir o barco e a própria rota — ofício Klink; no BudGanja liga a caminho e gesto."
+            },
+            {
               "label": "Inspeção: A Paixão de Cristo — os Evangelhos e o filme de 2004",
               "tileLabel": "Inspeção: A Paixão de Cristo — …",
               "href": "/posts/post-inspecao-filme-a-paixao-de-cristo.html",
               "icon": "🔍",
               "slug": "post-inspecao-filme-a-paixao-de-cristo",
               "description": "Artes · cinema: A Paixão de Cristo (2004, Gibson / Fitzgerald) — génese nos Evangelhos; Emmerich como camada secundária. Adaptação ≠ catecismo. Ficha própria, distinta de Coração Valente."
+            },
+            {
+              "label": "Inspeção: Água — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Água — léxico Tamara …",
+              "href": "/posts/post-inspecao-palavra-agua.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-agua",
+              "description": "Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem."
             },
             {
               "label": "Inspeção: Friends — a turma de 1994 e a série que é o texto",
@@ -1782,12 +1854,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes · sitcom: Friends (1994–2004, Crane / Kauffman) — a série é a génese; ensemble com crédito. Ficha própria, distinta de How I Met Your Mother."
             },
             {
+              "label": "Inspeção: Neve — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Neve — léxico Tamara …",
+              "href": "/posts/post-inspecao-palavra-neve.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-neve",
+              "description": "Cobertura branca do Ártico — paisagem e ruído branco da narrativa de Tamara."
+            },
+            {
               "label": "Inspeção: How I Met Your Mother — o relato, o tempo e a série de 2005",
               "tileLabel": "Inspeção: How I Met Your Mother…",
               "href": "/posts/post-inspecao-serie-how-i-met-your-mother.html",
               "icon": "🔍",
               "slug": "post-inspecao-serie-how-i-met-your-mother",
               "description": "Artes · sitcom: How I Met Your Mother (2005–2014, Bays / Thomas) — a série é a génese; moldura do tempo e da mãe. Ficha própria, distinta de Friends."
+            },
+            {
+              "label": "Inspeção: Congelado — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Congelado — léxico Ta…",
+              "href": "/posts/post-inspecao-palavra-congelado.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-congelado",
+              "description": "Estado do mar preso — o barco deixa de «passar» e passa a *ficar*; elo com Vida."
             },
             {
               "label": "Inspeção: Bitter Sweet Symphony — The Verve e o ofício do doce-amargo",
@@ -1814,12 +1902,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes · canção 1983: The Police — Every Breath You Take (*Synchronicity*); elo BudGanja com perseguição, medo e coração — o hino que o rádio ouviu como amor e Sting nomeou como vigilância."
             },
             {
+              "label": "Inspeção: Solitário — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Solitário — léxico Ta…",
+              "href": "/posts/post-inspecao-palavra-solitario.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-solitario",
+              "description": "Navegar e invernar sozinha — não isolamento romântico: método, medo e escrita."
+            },
+            {
               "label": "Inspeção: The Middle — Jimmy Eat World e o ofício de não se apagar",
               "tileLabel": "Inspeção: The Middle — Jimmy Ea…",
               "href": "/posts/post-inspecao-arte-the-middle.html",
               "icon": "🔍",
               "slug": "post-inspecao-arte-the-middle",
               "description": "Artes · canção 2001: Jimmy Eat World — The Middle (*Bleed American*); elo BudGanja com caminho, já e esperança — ficar no meio da viagem sem se escrever fora."
+            },
+            {
+              "label": "Inspeção: Groenlândia — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Groenlândia — léxico …",
+              "href": "/posts/post-inspecao-palavra-groenlandia.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-groenlandia",
+              "description": "Palco da invernagem ártica de Tamara — gelo, animais e o livro *Bom dia, Inverno*."
             },
             {
               "label": "Inspeção: Pelados em Santos — Mamonas e o ofício de rir sem esmagar",
@@ -1830,12 +1934,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes · canção 1995: Mamonas Assassinas — Pelados em Santos; elo BudGanja com alegria, língua e objectos. Sabiam de tudo e cairam no lugar certo — ou não."
             },
             {
+              "label": "Inspeção: Anzol — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Anzol — léxico Tamara…",
+              "href": "/posts/post-inspecao-palavra-anzol.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-anzol",
+              "description": "Ferramenta de pesca na narrativa — gesto concreto de sobrevivência no gelo."
+            },
+            {
               "label": "Inspeção: Vira-Vira — Mamonas e o ofício de virar sem esmagar",
               "tileLabel": "Inspeção: Vira-Vira — Mamonas e…",
               "href": "/posts/post-inspecao-arte-vira-vira.html",
               "icon": "🔍",
               "slug": "post-inspecao-arte-vira-vira",
               "description": "Artes · canção 1995: Mamonas Assassinas — Vira-Vira; paródia do género (vira), não de um povo. Par de Pelados em Santos: o outro clipe."
+            },
+            {
+              "label": "Inspeção: Livro — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Livro — léxico Tamara…",
+              "href": "/posts/post-inspecao-palavra-livro.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-livro",
+              "description": "Objecto e ofício — *Bom dia, Inverno* (Companhia das Letras): a invernagem vira página."
             },
             {
               "label": "Inspeção: Santa Ceia — A Última Ceia de Leonardo da Vinci",
@@ -1926,12 +2046,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «selvagem» (lat. silvaticus ← silva) — natureza, selvagem × domesticado, «bicho selvagem»; elos planta/animal/inseto; sem romantizar dano; Valeu !!!"
             },
             {
+              "label": "Inspeção: Fiorde — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Fiorde — léxico Tamar…",
+              "href": "/posts/post-inspecao-palavra-fiorde.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-fiorde",
+              "description": "Braço de mar entre montanhas — palco da invernagem: o barco preso no fiorde da Groenlândia."
+            },
+            {
               "label": "Inspeção: Sinal — marca, aviso, gesto e dar sinal",
               "tileLabel": "Inspeção: Sinal — marca, aviso,…",
               "href": "/posts/post-inspecao-palavra-sinal.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-sinal",
               "description": "Palavras: «sinal» (lat. *signum*) — marca, trânsito, corpo, aviso e «dar sinal»; tipografia singlam → sinal; elos gesto, risco, verdade; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Drone — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Drone — léxico Tamara…",
+              "href": "/posts/post-inspecao-palavra-drone.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-drone",
+              "description": "Aeronave sem piloto a bordo — na capa, a câmara que Tamara mandou ao céu; na página, o mesmo gesto a voar."
             },
             {
               "label": "Inspeção: Skill — empréstimo EN, habilidade e craft sem LinkedIn",
@@ -1942,12 +2078,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «skill» — empréstimo EN→BR; habilidade/craft; anti-badge LinkedIn; elos multitask e genial; tipografia skgll → skill; Valeu !!!"
             },
             {
+              "label": "Inspeção: Circular — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Circular — léxico Tam…",
+              "href": "/posts/post-inspecao-palavra-circular.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-circular",
+              "description": "Pedido da autora: empresta, doa, deixa o papel viver — o gelo pede para circular."
+            },
+            {
               "label": "Inspeção: Passado — tempo decorrido, memória e o rasto que inspeciona",
               "tileLabel": "Inspeção: Passado — tempo decor…",
               "href": "/posts/post-inspecao-palavra-passado.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-passado",
               "description": "Palavras: «passado» (de passar / lat. passāre) — tempo já decorrido; memória × história; ≠ futuro; elos memorável, verdade, língua; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Ofício — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Ofício — léxico Tamar…",
+              "href": "/posts/post-inspecao-palavra-oficio.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-oficio",
+              "description": "Trabalho habitual com método — na capa o ofício é voar, ficar, registar; não pedestal."
             },
             {
               "label": "Inspeção: Total — tōtus, completude e gíria BR «total!»",
@@ -1958,12 +2110,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «total» (lat. *tōtus*) — correcção de toal; completo/soma e gíria BR «total!»; escala com legal e fantástico."
             },
             {
+              "label": "Inspeção: Voar — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Voar — léxico Tamara …",
+              "href": "/posts/post-inspecao-palavra-voar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-voar",
+              "description": "Mandar a câmara ao céu — na invernagem a solo, voar é o gesto que faz o retrato."
+            },
+            {
               "label": "Inspeção: Mensagem — comunicação, SMS/chat e deixar rasto",
               "tileLabel": "Inspeção: Mensagem — comunicaçã…",
               "href": "/posts/post-inspecao-palavra-mensagem.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-mensagem",
               "description": "Palavras: «mensagem» / «mensagens» (lat. *mittere* → *message*) — comunicação; era SMS/chat; «deixar mensagem»; sinal ≠ mensagem; tipografia sm,enajsos."
+            },
+            {
+              "label": "Inspeção: Ficar — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Ficar — léxico Tamara…",
+              "href": "/posts/post-inspecao-palavra-ficar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-ficar",
+              "description": "Permanecer com método — eixo da invernagem e da Vida: ficar quando não se pode passar."
             },
             {
               "label": "Inspeção: The Chosen — a série sobre Jesus, os escolhidos e onde assistir",
@@ -1982,6 +2150,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «esperança» (lat. *spēs* / *sperantia*) — afecto vivo BR; esperar × esperança; rede com alegria, medo, tristeza; Valeu !!!"
             },
             {
+              "label": "Inspeção: Registar — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Registar — léxico Tam…",
+              "href": "/posts/post-inspecao-palavra-registar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-registar",
+              "description": "Fixar o que aconteceu — capa, diário e livro: o ofício inclui registar sem fotógrafo no gelo."
+            },
+            {
               "label": "Inspeção: app The Chosen — a via oficial gratuita",
               "tileLabel": "Inspeção: app The Chosen — a vi…",
               "href": "/posts/post-inspecao-app-the-chosen.html",
@@ -1996,6 +2172,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-fabuloso",
               "description": "Palavras: «fabuloso» (lat. *fābula* / *fabulous*) — elogio BR quotidiano; escala com genial, fantástico, incrível, maravilhoso, magnífico; tipografia fabsulkaoso → fabuloso."
+            },
+            {
+              "label": "Inspeção: Câmara — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Câmara — léxico Tamar…",
+              "href": "/posts/post-inspecao-palavra-camara.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-camara",
+              "description": "Olho do drone — no gelo não havia fotógrafo; a câmara sobe porque Tamara a sobe."
             },
             {
               "label": "Inspeção: Romeu e Julieta — o nome é o nó das casas",
@@ -2014,6 +2198,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «fantástico» (lat. *phantasticus* / fantasia) — correcção de fantisico; eixos fantasia e elogio BR; escala com legal, genial e maravilhoso."
             },
             {
+              "label": "Inspeção: Céu — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Céu — léxico Tamara /…",
+              "href": "/posts/post-inspecao-palavra-ceu.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-ceu",
+              "description": "Alto da capa — o céu é o sítio de onde o drone olha o fiorde; também palco do Q&A."
+            },
+            {
               "label": "Inspeção: Romeu + Julieta (1996) — o filme de Luhrmann e DiCaprio",
               "tileLabel": "Inspeção: Romeu + Julieta (1996…",
               "href": "/posts/post-inspecao-filme-romeu-mais-julieta.html",
@@ -2028,6 +2220,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-planta",
               "description": "Palavras: «planta» (lat. *planta* / *plantare*) — ser vivo vegetal; plural plantas no hub; cultivo e Farmácia Viva; sem listar espécies."
+            },
+            {
+              "label": "Inspeção: Emprestar — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Emprestar — léxico Ta…",
+              "href": "/posts/post-inspecao-palavra-emprestar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-emprestar",
+              "description": "Primeiro gesto de circular o livro — empresta a família, colega, a mesa do lado."
             },
             {
               "label": "Inspeção: O Magnata — o filme de 2007, o roteiro de Chorão e o preço × valor",
@@ -2046,12 +2246,36 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «inspiração» (lat. *īnspīrātiō*) — sopro × ideia BR; elos criatividade, gesto, esperança; Valeu !!!"
             },
             {
+              "label": "Inspeção: Elza — Frozen, o gelo e o ofício de não esconder o poder",
+              "tileLabel": "Inspeção: Elza — Frozen, o gelo…",
+              "href": "/posts/post-inspecao-desenho-elza-frozen.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-desenho-elza-frozen",
+              "description": "Artes · desenho 2013: Elza (Frozen / Disney) — gelo × medo × porta; Let It Go no DisneyMusicVEVO junto da ficha; sem colar a letra."
+            },
+            {
+              "label": "Inspeção: Doar — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Doar — léxico Tamara …",
+              "href": "/posts/post-inspecao-palavra-doar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-doar",
+              "description": "Segundo gesto de circular — doar o exemplar a uma biblioteca, principalmente se faltar no acervo."
+            },
+            {
               "label": "Inspeção: Pular — salto, omissão e derivações",
               "tileLabel": "Inspeção: Pular — salto, omissã…",
               "href": "/posts/post-inspecao-palavra-pular.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-pular",
               "description": "Palavras: «pular» (lat. *pullāre*) — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar, backspace, já; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Estante — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Estante — léxico Tama…",
+              "href": "/posts/post-inspecao-palavra-estante.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-estante",
+              "description": "Onde o livro espera — no laboratório a estante é o contrário do pedido: dois exemplares já saíram."
             },
             {
               "label": "Inspeção: Interruptor — ligar, cortar e derivações",
@@ -2062,12 +2286,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «interruptor» (lat. *interrumpere*) — peça do circuito; tríade com ligar × desligar e luz; Valeu !!!"
             },
             {
+              "label": "Inspeção: Peito — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Peito — léxico Tamara…",
+              "href": "/posts/post-inspecao-palavra-peito.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-peito",
+              "description": "Corpo que a invernagem mede — no poema o peito ainda cabe na mão quando o gelo prende o barco."
+            },
+            {
               "label": "Inspeção: Sempre — duração, hábito e Valeu !!!",
               "tileLabel": "Inspeção: Sempre — duração, háb…",
               "href": "/posts/post-inspecao-palavra-sempre.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-sempre",
               "description": "Palavras: «sempre» (lat. *semper*) — duração × hábito × promessa BR; elos já, prosseguir, caminho; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Semente — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Semente — léxico Tama…",
+              "href": "/posts/post-inspecao-palavra-semente.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-semente",
+              "description": "Partida do arco Vida — a semente ainda cabe na mão; no gelo vira mudinha."
             },
             {
               "label": "Inspeção: Prosseguir — continuar, retomar e Valeu !!!",
@@ -2078,12 +2318,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «prosseguir» (lat. *prōsequī*) — continuar × retomar BR; derivações prosseguimento; elos sempre, já, caminho; Valeu !!!"
             },
             {
+              "label": "Inspeção: Mudinha — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Mudinha — léxico Tama…",
+              "href": "/posts/post-inspecao-palavra-mudinha.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mudinha",
+              "description": "Planta jovem — *Bom dia, Inverno* entra no laboratório como mudinha da Vida, não árvore sénior."
+            },
+            {
               "label": "Inspeção: Valeu — gratidão leve e fecho oral BR",
               "tileLabel": "Inspeção: Valeu — gratidão leve…",
               "href": "/posts/post-inspecao-palavra-valeu.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-valeu",
               "description": "Palavras: «valeu» (de *valer* ← lat. *valēre*) — gratidão leve BR; elos Gratidão, gesto, respeito; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Estação — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Estação — léxico Tama…",
+              "href": "/posts/post-inspecao-palavra-estacao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-estacao",
+              "description": "Tempo do ciclo — o poema recusa o inverno como fim: é estação em que se inspeciona a raiz."
             },
             {
               "label": "Inspeção: Daninha — juízo de cultivo e planta viva",
@@ -2094,12 +2350,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «daninha» (*dano* + *-inha*) — planta daninha como juízo de lugar; elos planta, cultivo, selvagem; Valeu !!!"
             },
             {
+              "label": "Inspeção: Flor — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Flor — léxico Tamara …",
+              "href": "/posts/post-inspecao-palavra-flor.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-flor",
+              "description": "Desfecho visível do cultivo — no inverno não se força flor; inspeciona-se a raiz."
+            },
+            {
               "label": "Inspeção: Guia — preparar chá de plantas (infusão e decoção)",
               "tileLabel": "Inspeção: Guia — preparar chá d…",
               "href": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
               "icon": "🔍",
               "slug": "post-inspecao-guia-preparo-cha-plantas",
               "description": "Manual: infusão e decoção caseiras — material, tempos, proporções de ofício, segurança e elos com Plantas; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Raiz — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Raiz — léxico Tamara …",
+              "href": "/posts/post-inspecao-palavra-raiz.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-raiz",
+              "description": "O que fica debaixo no inverno — ofício do laboratório: inspecionar a raiz sem forçar a flor."
             },
             {
               "label": "Inspeção: Cinta — faixa que cinge e suporte no cultivo",
@@ -2110,12 +2382,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «cinta» (lat. *cincta* / *cingere*) — faixa que segura; tutoramento com gesto; ≠ sinta; Valeu !!!"
             },
             {
+              "label": "Inspeção: Partir — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Partir — léxico Tamar…",
+              "href": "/posts/post-inspecao-palavra-partir.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-partir",
+              "description": "A decisão de ir — no poema, tríade Tamara: partir, ficar, escrever."
+            },
+            {
               "label": "Inspeção: Cinzeiro — lugar da cinza e ofício do fogo",
               "tileLabel": "Inspeção: Cinzeiro — lugar da c…",
               "href": "/posts/post-inspecao-palavra-cinzeiro.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-cinzeiro",
               "description": "Palavras: «cinzeiro» (*cinza* + *-eiro*) — recipiente/monte da cinza; elos fogo, gesto, risco; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Escrever — léxico Tamara / Bom dia, Inverno",
+              "tileLabel": "Inspeção: Escrever — léxico Tam…",
+              "href": "/posts/post-inspecao-palavra-escrever.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-escrever",
+              "description": "Terceiro verbo da tríade Tamara — o ofício que transforma invernagem em livro."
             },
             {
               "label": "Inspeção: Objetos — o que fica diante e o foco da ficha",
@@ -2950,6 +3238,86 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: gíria (origem controversa / jerigonza) — fala de grupo; a orelha cola girino (γυρῖνος); gatilho anival gerino; Valeu !!!"
             },
             {
+              "label": "Inspeção: Homepage — home + page; a porta, não o Homer",
+              "tileLabel": "Inspeção: Homepage — home + pag…",
+              "href": "/posts/post-inspecao-palavra-homepage.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-homepage",
+              "description": "Palavras: homepage ← home + page; irmã página inicial; cola Homer cortada; ≠ casa ≠ landing; porta viva /; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Fight — o grito que abre o round, não a briga na rua",
+              "tileLabel": "Inspeção: Fight — o grito que a…",
+              "href": "/posts/post-inspecao-palavra-fight.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-fight",
+              "description": "Palavras: Fight — grito de abertura no Mortal Kombat; ≠ luta na rua; elo Round / Finish; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Round — Raund, a unidade do combate no ecrã",
+              "tileLabel": "Inspeção: Round — Raund, a unid…",
+              "href": "/posts/post-inspecao-palavra-round.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-round",
+              "description": "Palavras: Round / Raund — unidade da luta; Fight abre; Finish pode fechar o último; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Finish — o aviso do fliperama, não o fim da pessoa",
+              "tileLabel": "Inspeção: Finish — o aviso do f…",
+              "href": "/posts/post-inspecao-palavra-finish.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-finish",
+              "description": "Palavras: Finish — Finish Him/Her = nome do aviso (Acábalo); Fatality é a cena; sem golpes; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Fatality — Fatallitty, o fecho letal nomeado",
+              "tileLabel": "Inspeção: Fatality — Fatallitty…",
+              "href": "/posts/post-inspecao-palavra-fatality.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-fatality",
+              "description": "Palavras: Fatality / Fatallitty — fecho letal MK 1992 depois de Finish; sem lista de golpes; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Brutality — Brutalititi, o fecho irmão da Fatality",
+              "tileLabel": "Inspeção: Brutality — Brutaliti…",
+              "href": "/posts/post-inspecao-palavra-brutality.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-brutality",
+              "description": "Palavras: Brutality / Brutalititi — fecho UMK3 e depois; distinto de Fatality; sem inputs; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Babality — babalitity, o fecho satírico do bebé",
+              "tileLabel": "Inspeção: Babality — babalitity…",
+              "href": "/posts/post-inspecao-palavra-babality.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-babality",
+              "description": "Palavras: Babality / babalitity — MK II; paródia da Fatality; Friendship é irmã; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: HP — hit points; a barra que o BR chama vida",
+              "tileLabel": "Inspeção: HP — hit points; a ba…",
+              "href": "/posts/post-inspecao-palavra-hp.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-hp",
+              "description": "Palavras: HP — hit points; HUD vida ≠ ficha Vida do laboratório; elo mana / energia; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Mana — a reserva de magia no HUD, não um rito",
+              "tileLabel": "Inspeção: Mana — a reserva de m…",
+              "href": "/posts/post-inspecao-palavra-mana.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mana",
+              "description": "Palavras: Mana — oceânico → MP de jogo; distinto de HP e da Vida do lab; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Vida e energia — duas barras; a Vida do laboratório é outra",
+              "tileLabel": "Inspeção: Vida e energia — duas…",
+              "href": "/posts/post-inspecao-palavra-vida-energia.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-vida-energia",
+              "description": "Palavras: vida × energia no HUD — HP e meter; ≠ ficha Vida; elos mana e Mortal Kombat; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",
@@ -3068,110 +3436,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-figura-ramon-valdes",
               "description": "Pessoas: homenagem a Ramón Valdés (1923–1988) — o actor que deu dignidade cómica ao Seu Madruga; ofício, ética sem sermão e legado cultural latino-americano."
-            },
-            {
-              "label": "Inspeção: Livro — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Livro — léxico Tamara…",
-              "href": "/posts/post-inspecao-palavra-livro.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-livro",
-              "description": "Objecto e ofício — *Bom dia, Inverno* (Companhia das Letras): a invernagem vira página."
-            },
-            {
-              "label": "Inspeção: Anzol — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Anzol — léxico Tamara…",
-              "href": "/posts/post-inspecao-palavra-anzol.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-anzol",
-              "description": "Ferramenta de pesca na narrativa — gesto concreto de sobrevivência no gelo."
-            },
-            {
-              "label": "Inspeção: Groenlândia — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Groenlândia — léxico …",
-              "href": "/posts/post-inspecao-palavra-groenlandia.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-groenlandia",
-              "description": "Palco da invernagem ártica de Tamara — gelo, animais e o livro *Bom dia, Inverno*."
-            },
-            {
-              "label": "Inspeção: Solitário — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Solitário — léxico Ta…",
-              "href": "/posts/post-inspecao-palavra-solitario.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-solitario",
-              "description": "Navegar e invernar sozinha — não isolamento romântico: método, medo e escrita."
-            },
-            {
-              "label": "Inspeção: Congelado — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Congelado — léxico Ta…",
-              "href": "/posts/post-inspecao-palavra-congelado.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-congelado",
-              "description": "Estado do mar preso — o barco deixa de «passar» e passa a *ficar*; elo com Vida."
-            },
-            {
-              "label": "Inspeção: Neve — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Neve — léxico Tamara …",
-              "href": "/posts/post-inspecao-palavra-neve.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-neve",
-              "description": "Cobertura branca do Ártico — paisagem e ruído branco da narrativa de Tamara."
-            },
-            {
-              "label": "Inspeção: Água — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Água — léxico Tamara …",
-              "href": "/posts/post-inspecao-palavra-agua.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-agua",
-              "description": "Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem."
-            },
-            {
-              "label": "Inspeção: Navegar — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Navegar — léxico Tama…",
-              "href": "/posts/post-inspecao-palavra-navegar.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-navegar",
-              "description": "Conduzir o barco e a própria rota — ofício Klink; no BudGanja liga a caminho e gesto."
-            },
-            {
-              "label": "Inspeção: Invernagem — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Invernagem — léxico T…",
-              "href": "/posts/post-inspecao-palavra-invernagem.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-invernagem",
-              "description": "Permanecer o inverno inteiro no gelo — feito âncora de Tamara no Ártico; eixo do livro."
-            },
-            {
-              "label": "Inspeção: Inverno — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Inverno — léxico Tama…",
-              "href": "/posts/post-inspecao-palavra-inverno.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-inverno",
-              "description": "Estação e título — *Bom dia, Inverno*: cumprimentar o frio sem romantizar o isolamento."
-            },
-            {
-              "label": "Inspeção: Gelo — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Gelo — léxico Tamara …",
-              "href": "/posts/post-inspecao-palavra-gelo.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-gelo",
-              "description": "Água sólida que prende o barco — matéria da invernagem ártica narrada em *Bom dia, Inverno*."
-            },
-            {
-              "label": "Inspeção: Mar — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Mar — léxico Tamara /…",
-              "href": "/posts/post-inspecao-palavra-mar.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-mar",
-              "description": "Oceano e horizonte — no laboratório cruza com caminho, Vida e a travessia solitária de Tamara."
-            },
-            {
-              "label": "Inspeção: Barco — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Barco — léxico Tamara…",
-              "href": "/posts/post-inspecao-palavra-barco.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-barco",
-              "description": "Embarcação — no universo Tamara é casa, oficina e corpo da invernagem; elo do livro *Bom dia, Inverno*."
             },
             {
               "label": "Inspeção: A vingança nunca é plena — mata a alma e a envenena",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T04:03:20.855Z",
+  "updatedAt": "2026-08-23T04:11:32.576Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8548,6 +8548,453 @@
         "/posts/post-inspecao-jogo-mortal-kombat.html"
       ],
       "notes": "Cap. 4"
+    },
+    {
+      "id": "palavra-fiorde",
+      "title": "Fiorde — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Fiorde — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Fiorde — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Braço de mar entre montanhas — palco da invernagem: o barco preso no fiorde da Groenlândia.",
+      "whyEn": "Sea arm between mountains — stage of overwintering: the boat locked in a Greenland fjord.",
+      "whyEs": "Brazo de mar entre montañas — escenario de la invernada: el barco preso en un fiordo de Groenlandia.",
+      "suggestedSlug": "inspecao-palavra-fiorde",
+      "doneHref": "/posts/post-inspecao-palavra-fiorde.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-drone",
+      "title": "Drone — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Drone — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Drone — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Aeronave sem piloto a bordo — na capa, a câmara que Tamara mandou ao céu; na página, o mesmo gesto a voar.",
+      "whyEn": "Uncrewed aircraft — on the cover, the camera Tamara sent to the sky; on the page, the same gesture flying.",
+      "whyEs": "Aeronave sin piloto a bordo — en la portada, la cámara que Tamara mandó al cielo; en la página, el mismo gesto volando.",
+      "suggestedSlug": "inspecao-palavra-drone",
+      "doneHref": "/posts/post-inspecao-palavra-drone.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-circular",
+      "title": "Circular — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Circular — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Circular — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Pedido da autora: empresta, doa, deixa o papel viver — o gelo pede para circular.",
+      "whyEn": "The author’s request: lend, donate, let the paper live — the ice asks to circulate.",
+      "whyEs": "Pedido de la autora: presta, dona, deja vivir el papel — el hielo pide circular.",
+      "suggestedSlug": "inspecao-palavra-circular",
+      "doneHref": "/posts/post-inspecao-palavra-circular.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-oficio",
+      "title": "Ofício — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Ofício — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Ofício — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Trabalho habitual com método — na capa o ofício é voar, ficar, registar; não pedestal.",
+      "whyEn": "Habitual work with method — on the cover the craft is fly, stay, record; not a pedestal.",
+      "whyEs": "Trabajo habitual con método — en la portada el oficio es volar, quedarse, registrar; no pedestal.",
+      "suggestedSlug": "inspecao-palavra-oficio",
+      "doneHref": "/posts/post-inspecao-palavra-oficio.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-voar",
+      "title": "Voar — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Voar — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Voar — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Mandar a câmara ao céu — na invernagem a solo, voar é o gesto que faz o retrato.",
+      "whyEn": "Sending the camera to the sky — in solo overwintering, flying is the gesture that makes the portrait.",
+      "whyEs": "Mandar la cámara al cielo — en la invernada a solas, volar es el gesto que hace el retrato.",
+      "suggestedSlug": "inspecao-palavra-voar",
+      "doneHref": "/posts/post-inspecao-palavra-voar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-ficar",
+      "title": "Ficar — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Ficar — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Ficar — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Permanecer com método — eixo da invernagem e da Vida: ficar quando não se pode passar.",
+      "whyEn": "Remaining with method — axis of overwintering and Vida: stay when you cannot pass.",
+      "whyEs": "Permanecer con método — eje de la invernada y de Vida: quedarse cuando no se puede pasar.",
+      "suggestedSlug": "inspecao-palavra-ficar",
+      "doneHref": "/posts/post-inspecao-palavra-ficar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-registar",
+      "title": "Registar — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Registar — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Registar — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Fixar o que aconteceu — capa, diário e livro: o ofício inclui registar sem fotógrafo no gelo.",
+      "whyEn": "Fixing what happened — cover, diary and book: craft includes recording with no photographer on the ice.",
+      "whyEs": "Fijar lo que pasó — portada, diario y libro: el oficio incluye registrar sin fotógrafo en el hielo.",
+      "suggestedSlug": "inspecao-palavra-registar",
+      "doneHref": "/posts/post-inspecao-palavra-registar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-camara",
+      "title": "Câmara — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Câmara — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Câmara — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Olho do drone — no gelo não havia fotógrafo; a câmara sobe porque Tamara a sobe.",
+      "whyEn": "The drone’s eye — there was no photographer on the ice; the camera rises because Tamara raises it.",
+      "whyEs": "Ojo del dron — no había fotógrafo en el hielo; la cámara sube porque Tamara la sube.",
+      "suggestedSlug": "inspecao-palavra-camara",
+      "doneHref": "/posts/post-inspecao-palavra-camara.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-ceu",
+      "title": "Céu — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Céu — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Céu — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Alto da capa — o céu é o sítio de onde o drone olha o fiorde; também palco do Q&A.",
+      "whyEn": "Height of the cover — the sky is where the drone looks at the fjord; also a stage in the Q&A.",
+      "whyEs": "Alto de la portada — el cielo es desde donde el dron mira el fiordo; también escenario del Q&A.",
+      "suggestedSlug": "inspecao-palavra-ceu",
+      "doneHref": "/posts/post-inspecao-palavra-ceu.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-emprestar",
+      "title": "Emprestar — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Emprestar — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Emprestar — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Primeiro gesto de circular o livro — empresta a família, colega, a mesa do lado.",
+      "whyEn": "First gesture of circulating the book — lend it to family, a colleague, the next table.",
+      "whyEs": "Primer gesto de circular el libro — préstalo a la familia, un colega, la mesa de al lado.",
+      "suggestedSlug": "inspecao-palavra-emprestar",
+      "doneHref": "/posts/post-inspecao-palavra-emprestar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-doar",
+      "title": "Doar — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Doar — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Doar — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Segundo gesto de circular — doar o exemplar a uma biblioteca, principalmente se faltar no acervo.",
+      "whyEn": "Second circulating gesture — donate the copy to a library, especially if it is missing from the holdings.",
+      "whyEs": "Segundo gesto de circular — donar el ejemplar a una biblioteca, sobre todo si falta en el acervo.",
+      "suggestedSlug": "inspecao-palavra-doar",
+      "doneHref": "/posts/post-inspecao-palavra-doar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-estante",
+      "title": "Estante — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Estante — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Estante — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Onde o livro espera — no laboratório a estante é o contrário do pedido: dois exemplares já saíram.",
+      "whyEn": "Where the book waits — in the lab the shelf is the opposite of the request: two copies have already left.",
+      "whyEs": "Donde el libro espera — en el laboratorio el estante es lo contrario del pedido: dos ejemplares ya salieron.",
+      "suggestedSlug": "inspecao-palavra-estante",
+      "doneHref": "/posts/post-inspecao-palavra-estante.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-peito",
+      "title": "Peito — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Peito — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Peito — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Corpo que a invernagem mede — no poema o peito ainda cabe na mão quando o gelo prende o barco.",
+      "whyEn": "Body that overwintering measures — in the poem the chest still fits in a hand when the ice holds the boat.",
+      "whyEs": "Cuerpo que la invernada mide — en el poema el pecho aún cabe en la mano cuando el hielo atrapa el barco.",
+      "suggestedSlug": "inspecao-palavra-peito",
+      "doneHref": "/posts/post-inspecao-palavra-peito.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-semente",
+      "title": "Semente — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Semente — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Semente — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Partida do arco Vida — a semente ainda cabe na mão; no gelo vira mudinha.",
+      "whyEn": "Start of the Vida arc — the seed still fits in a hand; on ice it becomes a seedling.",
+      "whyEs": "Partida del arco Vida — la semilla aún cabe en la mano; en el hielo se hace plantita.",
+      "suggestedSlug": "inspecao-palavra-semente",
+      "doneHref": "/posts/post-inspecao-palavra-semente.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-mudinha",
+      "title": "Mudinha — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Mudinha — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Mudinha — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Planta jovem — *Bom dia, Inverno* entra no laboratório como mudinha da Vida, não árvore sénior.",
+      "whyEn": "Young plant — *Bom dia, Inverno* enters the lab as Vida’s seedling, not a senior tree.",
+      "whyEs": "Planta joven — *Bom dia, Inverno* entra al laboratorio como plantita de Vida, no árbol sénior.",
+      "suggestedSlug": "inspecao-palavra-mudinha",
+      "doneHref": "/posts/post-inspecao-palavra-mudinha.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-estacao",
+      "title": "Estação — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Estação — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Estação — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Tempo do ciclo — o poema recusa o inverno como fim: é estação em que se inspeciona a raiz.",
+      "whyEn": "Time in the cycle — the poem refuses winter as an end: it is a season for inspecting the root.",
+      "whyEs": "Tiempo del ciclo — el poema rechaza el invierno como fin: es estación en que se inspecciona la raíz.",
+      "suggestedSlug": "inspecao-palavra-estacao",
+      "doneHref": "/posts/post-inspecao-palavra-estacao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-flor",
+      "title": "Flor — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Flor — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Flor — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Desfecho visível do cultivo — no inverno não se força flor; inspeciona-se a raiz.",
+      "whyEn": "Visible outcome of the grow — in winter you do not force the flower; you inspect the root.",
+      "whyEs": "Desenlace visible del cultivo — en invierno no se fuerza la flor; se inspecciona la raíz.",
+      "suggestedSlug": "inspecao-palavra-flor",
+      "doneHref": "/posts/post-inspecao-palavra-flor.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-raiz",
+      "title": "Raiz — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Raiz — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Raiz — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "O que fica debaixo no inverno — ofício do laboratório: inspecionar a raiz sem forçar a flor.",
+      "whyEn": "What stays underneath in winter — lab craft: inspect the root without forcing the flower.",
+      "whyEs": "Lo que queda debajo en el invierno — oficio del lab: inspeccionar la raíz sin forzar la flor.",
+      "suggestedSlug": "inspecao-palavra-raiz",
+      "doneHref": "/posts/post-inspecao-palavra-raiz.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-partir",
+      "title": "Partir — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Partir — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Partir — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "A decisão de ir — no poema, tríade Tamara: partir, ficar, escrever.",
+      "whyEn": "The decision to go — in the poem, Tamara’s triad: leave, stay, write.",
+      "whyEs": "La decisión de ir — en el poema, tríada Tamara: partir, quedarse, escribir.",
+      "suggestedSlug": "inspecao-palavra-partir",
+      "doneHref": "/posts/post-inspecao-palavra-partir.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-escrever",
+      "title": "Escrever — léxico Tamara / Bom dia, Inverno",
+      "titleEn": "Inspection: Escrever — Tamara / Bom dia, Inverno lexicon",
+      "titleEs": "Inspección: Escrever — léxico Tamara / Bom dia, Inverno",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Terceiro verbo da tríade Tamara — o ofício que transforma invernagem em livro.",
+      "whyEn": "Third verb of Tamara’s triad — the craft that turns overwintering into a book.",
+      "whyEs": "Tercer verbo de la tríada Tamara — el oficio que transforma la invernada en libro.",
+      "suggestedSlug": "inspecao-palavra-escrever",
+      "doneHref": "/posts/post-inspecao-palavra-escrever.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-arte-bom-dia-inverno.html",
+        "/posts/post-inspecao-tamara-klink.html",
+        "https://www.youtube.com/watch?v=V3GSlr5sp7c"
+      ],
+      "notes": "Lote Tamara / Bom dia, Inverno"
+    },
+    {
+      "id": "palavra-homepage",
+      "title": "Homepage — home + page; a porta, não o Homer",
+      "titleEn": "Homepage — home + page; the door, not Homer",
+      "titleEs": "Homepage — home + page; la puerta, no Homer",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: homepage ← home + page; irmã página inicial; cola Homer cortada; ≠ casa ≠ landing; porta viva /.",
+      "whyEn": "Words: homepage ← home + page; sister página inicial; Homer glue cut; ≠ house ≠ landing; live door /.",
+      "whyEs": "Palabras: homepage ← home + page; hermana página inicial; cola Homer cortada; ≠ casa ≠ landing; puerta viva /.",
+      "suggestedSlug": "inspecao-palavra-homepage",
+      "doneHref": "/posts/post-inspecao-palavra-homepage.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wiktionary.org/wiki/homepage",
+        "https://en.wiktionary.org/wiki/home_page",
+        "https://en.wikipedia.org/wiki/Home_page",
+        "https://pt.wikipedia.org/wiki/P%C3%A1gina_inicial",
+        "/",
+        "/posts/post-inspecao-palavra-link.html",
+        "/posts/post-inspecao-palavra-conexao.html",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 244 — home + page; página inicial; Homer é cola de olho; index.html = ficheiro, não étimo."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T04:03:54.954Z",
+  "updatedAt": "2026-08-23T04:11:59.779Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -174,6 +174,132 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Homepage — home + page; a porta, não o Homer",
+      "url": "/posts/post-inspecao-palavra-homepage.html",
+      "excerpt": "Palavras: homepage ← home + page; irmã página inicial; cola Homer cortada; ≠ casa ≠ landing; porta viva /; Valeu !!!",
+      "text": "Inspeção: Homepage — home + page; a porta, não o Homer Palavras: homepage ← home + page; irmã página inicial; cola Homer cortada; ≠ casa ≠ landing; porta viva /; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da palavra **[homepage](/posts/post-inspecao-palavra-homepage.html)** — composto inglês **home + page**. Pedido de campo: *inspeção na palavra homepage* (e a cola viva *homer e page*). A orelha e o olho brasileiros **juntam** Homer (personagem) a *home*. O étimo **corta**. Irmã portuguesa: **página inicial**. No laboratório, a homepage do sítio é **[/](/)** (`index.html`). Fecho: [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [homepage](https://en.wiktionary.org/wiki/homepage), [home page](https://en.wiktionary.org/wiki/home_page), [home](https://en.wiktionary.org/wiki/home), [page](https://en.wiktionary.org/wiki/page), [página](https://pt.wiktionary.org/wiki/p%C3%A1gina), lat. [*pāgina*](https://en.wiktionary.org/wiki/pagina#Latin), [Home page](https://en.wikipedia.org/wiki/Home_page), [página inicial](https://pt.wikipedia.org/wiki/P%C3%A1gina_inicial). **Ficha ≠ tutorial de HTML, ≠ biografia de Simpson, ≠ receita de landing page.** Ofício da cola: [a orelha cola o que a boca juntou](/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html).\n\n**Gatilho:** *homepage* / *home page* / *home-page* / *homer page* / *a home* → lema **homepage**.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Forma âncora | **homepage** (EN, uma palavra) |\n| Forma irmã EN | **home page** (duas palavras) · *home-page* (hífen, mapa) |\n| Irmã PT | **página inicial** · também *página principal* / *página de entrada* |\n| Boca BR | *a home* · *a homepage* · *voltar pra home* |\n| Classe | Composto EN → empréstimo BR; calco PT *página inicial* |\n| Étimo (trabalho) | EN *home* (OE *hām*, morada / ponto de partida) + *page* (lat. *pāgina*, folha escrita) — confiança: **alta** |\n| Família | *home"
+    },
+    {
+      "title": "Inspeção: Escrever — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-escrever.html",
+      "excerpt": "Terceiro verbo da tríade Tamara — o ofício que transforma invernagem em livro.",
+      "text": "Inspeção: Escrever — léxico Tamara / Bom dia, Inverno Terceiro verbo da tríade Tamara — o ofício que transforma invernagem em livro. inspecao ## Escopo\n\nInspeção editorial da palavra **Escrever** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Escrever** |\n| Classe | Verbo |\n| Étimo (trabalho) | Lat. *scribere* |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Escrever](/guia/palavras.html?q=Escrever) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\n«Partir, ficar, **escrever**.» Elo [livro](/posts/post-inspecao-palavra-livro.html), [criatividade](/posts/post-inspecao-palavra-criatividade.html) e [registar](/posts/post-inspecao-palavra-registar.html) — a escrita é o registo que circula.\n\n## Rede BudGanja\n\n[livro](/posts/post-inspecao-palavra-livro.html) · [partir](/posts/post-inspecao-palavra-partir.html) · [ficar](/posts/post-inspecao-palavra-ficar.html) · [registar](/posts/post-inspecao-palavra-registar.html) · [Tamara](/posts/post-inspecao-tamara-klink.html)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-palavra-simbiose.html) · [Q&A](https://www.youtube.com/watch?v=V3GSlr5sp7c).\n\n## Status\n\n**Aprovado** — «E"
+    },
+    {
+      "title": "Inspeção: Partir — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-partir.html",
+      "excerpt": "A decisão de ir — no poema, tríade Tamara: partir, ficar, escrever.",
+      "text": "Inspeção: Partir — léxico Tamara / Bom dia, Inverno A decisão de ir — no poema, tríade Tamara: partir, ficar, escrever. inspecao ## Escopo\n\nInspeção editorial da palavra **Partir** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Partir** |\n| Classe | Verbo |\n| Étimo (trabalho) | Lat. *partire* / *partiri* («dividir, separar») |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Partir](/guia/palavras.html?q=Partir) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nEstrofe: «Tamara já sabia no [gelo](/posts/post-inspecao-palavra-gelo.html): partir, [ficar](/posts/post-inspecao-palavra-ficar.html), [escrever](/posts/post-inspecao-palavra-escrever.html)». A [semente](/posts/post-inspecao-palavra-semente.html) é a partida; a [mudinha](/posts/post-inspecao-palavra-mudinha.html) é o ficar.\n\n## Rede BudGanja\n\n[ficar](/posts/post-inspecao-palavra-ficar.html) · [escrever](/posts/post-inspecao-palavra-escrever.html) · [semente](/posts/post-inspecao-palavra-semente.html) · [Tamara](/posts/post-inspecao-tamara-klink.html) · [navegar](/posts/post-inspecao-palavra-navegar.html)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-palav"
+    },
+    {
+      "title": "Inspeção: Raiz — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-raiz.html",
+      "excerpt": "O que fica debaixo no inverno — ofício do laboratório: inspecionar a raiz sem forçar a flor.",
+      "text": "Inspeção: Raiz — léxico Tamara / Bom dia, Inverno O que fica debaixo no inverno — ofício do laboratório: inspecionar a raiz sem forçar a flor. inspecao ## Escopo\n\nInspeção editorial da palavra **Raiz** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Raiz** |\n| Classe | Substantivo feminino |\n| Étimo (trabalho) | Lat. *radix, radicis* |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Raiz](/guia/palavras.html?q=Raiz) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nO poema define o [inverno](/posts/post-inspecao-palavra-inverno.html) como inspeção da raiz. Elo [semente](/posts/post-inspecao-palavra-semente.html) / [mudinha](/posts/post-inspecao-palavra-mudinha.html) e o método BudGanja: olhar o que não se vê ainda.\n\n## Rede BudGanja\n\n[flor](/posts/post-inspecao-palavra-flor.html) · [estação](/posts/post-inspecao-palavra-estacao.html) · [mudinha](/posts/post-inspecao-palavra-mudinha.html) · [semente](/posts/post-inspecao-palavra-semente.html) · [poema](/inverno/#poema)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-palavra-simbiose.html) · [Q&A](https://www.youtube.com/watch?v=V3GSlr5sp7c).\n\n## Status\n\n**Aprovado*"
+    },
+    {
+      "title": "Inspeção: Flor — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-flor.html",
+      "excerpt": "Desfecho visível do cultivo — no inverno não se força flor; inspeciona-se a raiz.",
+      "text": "Inspeção: Flor — léxico Tamara / Bom dia, Inverno Desfecho visível do cultivo — no inverno não se força flor; inspeciona-se a raiz. inspecao ## Escopo\n\nInspeção editorial da palavra **Flor** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Flor** |\n| Classe | Substantivo feminino |\n| Étimo (trabalho) | Lat. *flos, floris* |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Flor](/guia/palavras.html?q=Flor) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nPoema: fase em que não se força flor, fase em que se inspeciona a [raiz](/posts/post-inspecao-palavra-raiz.html). Cultivo BudGanja ([cultivo](/guia/cultivo-basico.html)) × [estação](/posts/post-inspecao-palavra-estacao.html) difícil.\n\n## Rede BudGanja\n\n[raiz](/posts/post-inspecao-palavra-raiz.html) · [estação](/posts/post-inspecao-palavra-estacao.html) · [cultivo](/guia/cultivo-basico.html) · [mudinha](/posts/post-inspecao-palavra-mudinha.html)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-palavra-simbiose.html) · [Q&A](https://www.youtube.com/watch?v=V3GSlr5sp7c).\n\n## Status\n\n**Aprovado** — «Flor» fichada no lote Tamara / Inverno; elo vivo em [Bom dia, Inverno](/"
+    },
+    {
+      "title": "Inspeção: Estação — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-estacao.html",
+      "excerpt": "Tempo do ciclo — o poema recusa o inverno como fim: é estação em que se inspeciona a raiz.",
+      "text": "Inspeção: Estação — léxico Tamara / Bom dia, Inverno Tempo do ciclo — o poema recusa o inverno como fim: é estação em que se inspeciona a raiz. inspecao ## Escopo\n\nInspeção editorial da palavra **Estação** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Estação** |\n| Classe | Substantivo feminino |\n| Étimo (trabalho) | Lat. *statio, stationis* («paragem, posto») |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Estação](/guia/palavras.html?q=Esta%C3%A7%C3%A3o) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\n«Dizem que o [inverno](/posts/post-inspecao-palavra-inverno.html) é fim. Mentira antiga. Inverno é **estação**.» Elo [tempo](/posts/post-inspecao-palavra-tempo.html), [raiz](/posts/post-inspecao-palavra-raiz.html), [flor](/posts/post-inspecao-palavra-flor.html) — não se força floração.\n\n## Rede BudGanja\n\n[inverno](/posts/post-inspecao-palavra-inverno.html) · [tempo](/posts/post-inspecao-palavra-tempo.html) · [raiz](/posts/post-inspecao-palavra-raiz.html) · [flor](/posts/post-inspecao-palavra-flor.html) · [poema](/inverno/#poema)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-palavra-simbiose.html) · [Q&A](ht"
+    },
+    {
+      "title": "Inspeção: Mudinha — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-mudinha.html",
+      "excerpt": "Planta jovem — *Bom dia, Inverno* entra no laboratório como mudinha da Vida, não árvore sénior.",
+      "text": "Inspeção: Mudinha — léxico Tamara / Bom dia, Inverno Planta jovem — *Bom dia, Inverno* entra no laboratório como mudinha da Vida, não árvore sénior. inspecao ## Escopo\n\nInspeção editorial da palavra **Mudinha** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Mudinha** |\n| Classe | Substantivo feminino (diminutivo de muda) |\n| Étimo (trabalho) | De *muda* (planta para transplante) + *-inha* |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Mudinha](/guia/palavras.html?q=Mudinha) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nH2 da divulgação: o livro é **mudinha**, não árvore sénior. Pede [luz](/posts/post-inspecao-palavra-luz.html) fraca, [água](/posts/post-inspecao-palavra-agua.html) certa, [tempo](/posts/post-inspecao-palavra-tempo.html). Irmã da [semente](/posts/post-inspecao-palavra-semente.html); horizonte: [Árvore da Vida](/posts/post-inspecao-palavra-arvore-da-vida.html).\n\n## Rede BudGanja\n\n[semente](/posts/post-inspecao-palavra-semente.html) · [invernagem](/posts/post-inspecao-palavra-invernagem.html) · [Vida](/vida/) · [Árvore da Vida](/posts/post-inspecao-palavra-arvore-da-vida.html) · [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.htm"
+    },
+    {
+      "title": "Inspeção: Semente — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-semente.html",
+      "excerpt": "Partida do arco Vida — a semente ainda cabe na mão; no gelo vira mudinha.",
+      "text": "Inspeção: Semente — léxico Tamara / Bom dia, Inverno Partida do arco Vida — a semente ainda cabe na mão; no gelo vira mudinha. inspecao ## Escopo\n\nInspeção editorial da palavra **Semente** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Semente** |\n| Classe | Substantivo feminino |\n| Étimo (trabalho) | Lat. *sementis* ← *serere* («semear») |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Semente](/guia/palavras.html?q=Semente) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nTese cultural: **semente** = a partida; [mudinha](/posts/post-inspecao-palavra-mudinha.html) = a [invernagem](/posts/post-inspecao-palavra-invernagem.html). Poema: «A semente não grita». Elo [planta](/posts/post-inspecao-palavra-planta.html) e o [conto do laboratório](/posts/post-inspecao-conto-vida-laboratorio.html).\n\n## Rede BudGanja\n\n[mudinha](/posts/post-inspecao-palavra-mudinha.html) · [planta](/posts/post-inspecao-palavra-planta.html) · [Vida](/vida/) · [conto](/posts/post-inspecao-conto-vida-laboratorio.html) · [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-palavra-si"
+    },
+    {
+      "title": "Inspeção: Peito — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-peito.html",
+      "excerpt": "Corpo que a invernagem mede — no poema o peito ainda cabe na mão quando o gelo prende o barco.",
+      "text": "Inspeção: Peito — léxico Tamara / Bom dia, Inverno Corpo que a invernagem mede — no poema o peito ainda cabe na mão quando o gelo prende o barco. inspecao ## Escopo\n\nInspeção editorial da palavra **Peito** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Peito** |\n| Classe | Substantivo masculino |\n| Étimo (trabalho) | Lat. *pectus, pectoris* |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Peito](/guia/palavras.html?q=Peito) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nPrimeira estrofe: o [gelo](/posts/post-inspecao-palavra-gelo.html) prende o [barco](/posts/post-inspecao-palavra-barco.html) «e o peito ainda cabe na [mão](/posts/post-inspecao-palavra-mao-esquerda-direita.html)». Corpo, não heroísmo. Elo [medo](/posts/post-inspecao-palavra-medo.html) e [solitário](/posts/post-inspecao-palavra-solitario.html).\n\n## Rede BudGanja\n\n[mão](/posts/post-inspecao-palavra-mao-esquerda-direita.html) · [medo](/posts/post-inspecao-palavra-medo.html) · [gelo](/posts/post-inspecao-palavra-gelo.html) · [poema](/inverno/#poema)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-palavra-simbiose.html) · [Q&A](https://www.youtube."
+    },
+    {
+      "title": "Inspeção: Estante — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-estante.html",
+      "excerpt": "Onde o livro espera — no laboratório a estante é o contrário do pedido: dois exemplares já saíram.",
+      "text": "Inspeção: Estante — léxico Tamara / Bom dia, Inverno Onde o livro espera — no laboratório a estante é o contrário do pedido: dois exemplares já saíram. inspecao ## Escopo\n\nInspeção editorial da palavra **Estante** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Estante** |\n| Classe | Substantivo feminino |\n| Étimo (trabalho) | De *estar* — móvel onde as coisas estão |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Estante](/guia/palavras.html?q=Estante) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nNota do laboratório: o gelo pede para [circular](/posts/post-inspecao-palavra-circular.html), **não** para ficar na estante. Contraponto de [ficar](/posts/post-inspecao-palavra-ficar.html) no gelo (ofício) vs. ficar na estante (arquivo morto).\n\n## Rede BudGanja\n\n[circular](/posts/post-inspecao-palavra-circular.html) · [livro](/posts/post-inspecao-palavra-livro.html) · [ficar](/posts/post-inspecao-palavra-ficar.html) · [hub](/inverno/#circular)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-palavra-simbiose.html) · [Q&A](https://www.youtube.com/watch?v=V3GSlr5sp7c).\n\n## Status\n\n**Aprovado** — «Estante» fichada no l"
+    },
+    {
+      "title": "Inspeção: Doar — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-doar.html",
+      "excerpt": "Segundo gesto de circular — doar o exemplar a uma biblioteca, principalmente se faltar no acervo.",
+      "text": "Inspeção: Doar — léxico Tamara / Bom dia, Inverno Segundo gesto de circular — doar o exemplar a uma biblioteca, principalmente se faltar no acervo. inspecao ## Escopo\n\nInspeção editorial da palavra **Doar** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Doar** |\n| Classe | Verbo |\n| Étimo (trabalho) | Lat. *donare* ← *donum* («dádiva») |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Doar](/guia/palavras.html?q=Doar) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nPasso 2 da homepage: **Doa a uma biblioteca**. Completa [emprestar](/posts/post-inspecao-palavra-emprestar.html) e [circular](/posts/post-inspecao-palavra-circular.html). Dois exemplares saíram da [estante](/posts/post-inspecao-palavra-estante.html) do laboratório.\n\n## Rede BudGanja\n\n[circular](/posts/post-inspecao-palavra-circular.html) · [emprestar](/posts/post-inspecao-palavra-emprestar.html) · [estante](/posts/post-inspecao-palavra-estante.html) · [livro](/posts/post-inspecao-palavra-livro.html)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-palavra-simbiose.html) · [Q&A](https://www.youtube.com/watch?v=V3GSlr5sp7c).\n\n## Status\n\n**Aprovado** — «"
+    },
+    {
+      "title": "Inspeção: Emprestar — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-emprestar.html",
+      "excerpt": "Primeiro gesto de circular o livro — empresta a família, colega, a mesa do lado.",
+      "text": "Inspeção: Emprestar — léxico Tamara / Bom dia, Inverno Primeiro gesto de circular o livro — empresta a família, colega, a mesa do lado. inspecao ## Escopo\n\nInspeção editorial da palavra **Emprestar** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Emprestar** |\n| Classe | Verbo |\n| Étimo (trabalho) | De *em-* + *préstimo* ← lat. *praestare* («pôr à disposição») |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Emprestar](/guia/palavras.html?q=Emprestar) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nPedido da autora, passo 1: **Empresta**. Elo [circular](/posts/post-inspecao-palavra-circular.html) e [doar](/posts/post-inspecao-palavra-doar.html) — a [estante](/posts/post-inspecao-palavra-estante.html) não é o destino do [livro](/posts/post-inspecao-palavra-livro.html).\n\n## Rede BudGanja\n\n[circular](/posts/post-inspecao-palavra-circular.html) · [doar](/posts/post-inspecao-palavra-doar.html) · [livro](/posts/post-inspecao-palavra-livro.html) · [hub](/inverno/#circular)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-palavra-simbiose.html) · [Q&A](https://www.youtube.com/watch?v=V3GSlr5sp7c).\n\n## Status\n\n**Aprovad"
+    },
+    {
+      "title": "Inspeção: Céu — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-ceu.html",
+      "excerpt": "Alto da capa — o céu é o sítio de onde o drone olha o fiorde; também palco do Q&A.",
+      "text": "Inspeção: Céu — léxico Tamara / Bom dia, Inverno Alto da capa — o céu é o sítio de onde o drone olha o fiorde; também palco do Q&A. inspecao ## Escopo\n\nInspeção editorial da palavra **Céu** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Céu** |\n| Classe | Substantivo masculino |\n| Étimo (trabalho) | Lat. *caelum* |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Céu](/guia/palavras.html?q=C%C3%A9u) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nA homepage repete o [céu](/posts/post-inspecao-palavra-ceu.html) como ofício, não cenário: mandar a [câmara](/posts/post-inspecao-palavra-camara.html) para cima. Elo [drone](/posts/post-inspecao-palavra-drone.html) e Q&A (céu / céu do Ártico).\n\n## Rede BudGanja\n\n[drone](/posts/post-inspecao-palavra-drone.html) · [câmara](/posts/post-inspecao-palavra-camara.html) · [voar](/posts/post-inspecao-palavra-voar.html) · [Q&A](https://www.youtube.com/watch?v=V3GSlr5sp7c)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-palavra-simbiose.html) · [Q&A](https://www.youtube.com/watch?v=V3GSlr5sp7c).\n\n## Status\n\n**Aprovado** — «Céu» fichada no lote Tamara / Inverno; elo vivo em [Bom di"
+    },
+    {
+      "title": "Inspeção: Câmara — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-camara.html",
+      "excerpt": "Olho do drone — no gelo não havia fotógrafo; a câmara sobe porque Tamara a sobe.",
+      "text": "Inspeção: Câmara — léxico Tamara / Bom dia, Inverno Olho do drone — no gelo não havia fotógrafo; a câmara sobe porque Tamara a sobe. inspecao ## Escopo\n\nInspeção editorial da palavra **Câmara** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Câmara** |\n| Classe | Substantivo feminino |\n| Étimo (trabalho) | Lat. *camera* («câmara, quarto») → aparelho fotográfico |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Câmara](/guia/palavras.html?q=C%C3%A2mara) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nLead da capa: a [câmara](/posts/post-inspecao-palavra-camara.html) está no [céu](/posts/post-inspecao-palavra-ceu.html) porque ela a mandou. Elo [drone](/posts/post-inspecao-palavra-drone.html) × [mão](/posts/post-inspecao-palavra-mao-esquerda-direita.html) × [registar](/posts/post-inspecao-palavra-registar.html).\n\n## Rede BudGanja\n\n[drone](/posts/post-inspecao-palavra-drone.html) · [céu](/posts/post-inspecao-palavra-ceu.html) · [mão](/posts/post-inspecao-palavra-mao-esquerda-direita.html) · [registar](/posts/post-inspecao-palavra-registar.html) · [hub](/inverno/#capa)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-"
+    },
+    {
+      "title": "Inspeção: Registar — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-registar.html",
+      "excerpt": "Fixar o que aconteceu — capa, diário e livro: o ofício inclui registar sem fotógrafo no gelo.",
+      "text": "Inspeção: Registar — léxico Tamara / Bom dia, Inverno Fixar o que aconteceu — capa, diário e livro: o ofício inclui registar sem fotógrafo no gelo. inspecao ## Escopo\n\nInspeção editorial da palavra **Registar** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Registar** |\n| Classe | Verbo (grafia PT *registar*) |\n| Étimo (trabalho) | Lat. *regestare* / *regesta* — pôr no registo |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Registar](/guia/palavras.html?q=Registar) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nTríade da capa: [voar](/posts/post-inspecao-palavra-voar.html), [ficar](/posts/post-inspecao-palavra-ficar.html), **registar**. Elo com [gesto](/posts/post-inspecao-palavra-gesto.html), [câmara](/posts/post-inspecao-palavra-camara.html) e o [livro](/posts/post-inspecao-palavra-livro.html) que vira a invernagem em página. Mapa Vida: ficar, registar, cuidar.\n\n## Rede BudGanja\n\n[gesto](/posts/post-inspecao-palavra-gesto.html) · [voar](/posts/post-inspecao-palavra-voar.html) · [câmara](/posts/post-inspecao-palavra-camara.html) · [livro](/posts/post-inspecao-palavra-livro.html) · [Vida](/vida/)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavra"
+    },
+    {
+      "title": "Inspeção: Ficar — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-ficar.html",
+      "excerpt": "Permanecer com método — eixo da invernagem e da Vida: ficar quando não se pode passar.",
+      "text": "Inspeção: Ficar — léxico Tamara / Bom dia, Inverno Permanecer com método — eixo da invernagem e da Vida: ficar quando não se pode passar. inspecao ## Escopo\n\nInspeção editorial da palavra **Ficar** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Ficar** |\n| Classe | Verbo |\n| Étimo (trabalho) | Lat. *figicare* ← *figere* («fixar, pregar») |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Ficar](/guia/palavras.html?q=Ficar) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nH1 da obra: a [invernagem](/posts/post-inspecao-palavra-invernagem.html) é **ficar** quando não se pode [passar](/posts/post-inspecao-palavra-passar.html) depressa ([Vida](/vida/)). O poema: «pedimos só ficar». Distinto de [circular](/posts/post-inspecao-palavra-circular.html) o [livro](/posts/post-inspecao-palavra-livro.html) — o papel circula; o ofício fica.\n\n## Rede BudGanja\n\n[invernagem](/posts/post-inspecao-palavra-invernagem.html) · [passar](/posts/post-inspecao-palavra-passar.html) · [Vida](/vida/) · [congelado](/posts/post-inspecao-palavra-congelado.html) · [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) ·"
+    },
+    {
+      "title": "Inspeção: Voar — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-voar.html",
+      "excerpt": "Mandar a câmara ao céu — na invernagem a solo, voar é o gesto que faz o retrato.",
+      "text": "Inspeção: Voar — léxico Tamara / Bom dia, Inverno Mandar a câmara ao céu — na invernagem a solo, voar é o gesto que faz o retrato. inspecao ## Escopo\n\nInspeção editorial da palavra **Voar** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Voar** |\n| Classe | Verbo |\n| Étimo (trabalho) | Lat. *volare* |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Voar](/guia/palavras.html?q=Voar) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nCapa: «A foto guarda o ofício: [voar](/posts/post-inspecao-palavra-voar.html), [ficar](/posts/post-inspecao-palavra-ficar.html), [registar](/posts/post-inspecao-palavra-registar.html)». Sem fotógrafo no [fiorde](/posts/post-inspecao-palavra-fiorde.html), o [drone](/posts/post-inspecao-palavra-drone.html) voa porque ela o mandou.\n\n## Rede BudGanja\n\n[drone](/posts/post-inspecao-palavra-drone.html) · [céu](/posts/post-inspecao-palavra-ceu.html) · [gesto](/posts/post-inspecao-palavra-gesto.html) · [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-palavra-simbiose.html) · [Q&A](https://www.youtube.com/watch?v=V3GSlr5sp7c).\n\n## S"
+    },
+    {
+      "title": "Inspeção: Ofício — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-oficio.html",
+      "excerpt": "Trabalho habitual com método — na capa o ofício é voar, ficar, registar; não pedestal.",
+      "text": "Inspeção: Ofício — léxico Tamara / Bom dia, Inverno Trabalho habitual com método — na capa o ofício é voar, ficar, registar; não pedestal. inspecao ## Escopo\n\nInspeção editorial da palavra **Ofício** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Ofício** |\n| Classe | Substantivo masculino |\n| Étimo (trabalho) | Lat. *officium* («dever, serviço, tarefa») |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Ofício](/guia/palavras.html?q=Of%C3%ADcio) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nA homepage nomeia o **ofício** várias vezes: da [invernagem](/posts/post-inspecao-palavra-invernagem.html), da [mão esquerda](/posts/post-inspecao-palavra-mao-esquerda-direita.html), do [gesto](/posts/post-inspecao-palavra-gesto.html). Distinto de [ídolo](/posts/post-inspecao-palavra-idolo.html) de pedestal. Fecho: o ofício fica quando o barco não [passa](/posts/post-inspecao-palavra-passar.html).\n\n## Rede BudGanja\n\n[gesto](/posts/post-inspecao-palavra-gesto.html) · [invernagem](/posts/post-inspecao-palavra-invernagem.html) · [mão](/posts/post-inspecao-palavra-mao-esquerda-direita.html) · [navegar](/posts/post-inspecao-palavra-navegar.html) · [Bom dia, Inverno](/posts/po"
+    },
+    {
+      "title": "Inspeção: Circular — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-circular.html",
+      "excerpt": "Pedido da autora: empresta, doa, deixa o papel viver — o gelo pede para circular.",
+      "text": "Inspeção: Circular — léxico Tamara / Bom dia, Inverno Pedido da autora: empresta, doa, deixa o papel viver — o gelo pede para circular. inspecao ## Escopo\n\nInspeção editorial da palavra **Circular** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Circular** |\n| Classe | Verbo / adjectivo |\n| Étimo (trabalho) | Lat. *circulare* ← *circulus* («círculo») |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Circular](/guia/palavras.html?q=Circular) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nEixo da homepage: [Tamara](/posts/post-inspecao-tamara-klink.html) pediu que os exemplares **circulem**. Elos [emprestar](/posts/post-inspecao-palavra-emprestar.html), [doar](/posts/post-inspecao-palavra-doar.html), [livro](/posts/post-inspecao-palavra-livro.html) e [estante](/posts/post-inspecao-palavra-estante.html) — circular ≠ abandonar o ofício de [ficar](/posts/post-inspecao-palavra-ficar.html) no gelo.\n\n## Rede BudGanja\n\n[livro](/posts/post-inspecao-palavra-livro.html) · [emprestar](/posts/post-inspecao-palavra-emprestar.html) · [doar](/posts/post-inspecao-palavra-doar.html) · [estante](/posts/post-inspecao-palavra-estante.html) · [Tamara](/posts/post-inspecao-tamara-k"
+    },
+    {
+      "title": "Inspeção: Drone — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-drone.html",
+      "excerpt": "Aeronave sem piloto a bordo — na capa, a câmara que Tamara mandou ao céu; na página, o mesmo gesto a voar.",
+      "text": "Inspeção: Drone — léxico Tamara / Bom dia, Inverno Aeronave sem piloto a bordo — na capa, a câmara que Tamara mandou ao céu; na página, o mesmo gesto a voar. inspecao ## Escopo\n\nInspeção editorial da palavra **Drone** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Drone** |\n| Classe | Substantivo masculino (anglicismo técnico) |\n| Étimo (trabalho) | Inglês *drone* (zangão / aparelho) — no BR, aeronave remotamente pilotada |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Drone](/guia/palavras.html?q=Drone) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nA capa **não** é retrato de estúdio: quem dispara é o drone; quem segura o controlo é a [mão esquerda](/posts/post-inspecao-palavra-mao-esquerda-direita.html). O drone da [página](/inverno/#capa) é o mesmo [gesto](/posts/post-inspecao-palavra-gesto.html): voar, ficar, [registar](/posts/post-inspecao-palavra-registar.html).\n\n## Rede BudGanja\n\n[mão](/posts/post-inspecao-palavra-mao-esquerda-direita.html) · [gesto](/posts/post-inspecao-palavra-gesto.html) · [câmara](/posts/post-inspecao-palavra-camara.html) · [céu](/posts/post-inspecao-palavra-ceu.html) · [hub](/inverno/#capa) · [Bom dia, Inverno](/posts/post-ins"
+    },
+    {
+      "title": "Inspeção: Fiorde — léxico Tamara / Bom dia, Inverno",
+      "url": "/posts/post-inspecao-palavra-fiorde.html",
+      "excerpt": "Braço de mar entre montanhas — palco da invernagem: o barco preso no fiorde da Groenlândia.",
+      "text": "Inspeção: Fiorde — léxico Tamara / Bom dia, Inverno Braço de mar entre montanhas — palco da invernagem: o barco preso no fiorde da Groenlândia. inspecao ## Escopo\n\nInspeção editorial da palavra **Fiorde** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Fiorde** |\n| Classe | Substantivo masculino (geografia) |\n| Étimo (trabalho) | Norueguês *fjord* ← nórdico *fjǫrðr* («travessia, braço de mar») |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Fiorde](/guia/palavras.html?q=Fiorde) |\n| Data | 2026-08-23 |\n\n## Leitura no laboratório\n\nNa homepage: **−40 °C no fiorde**. A capa mostra o [barco](/posts/post-inspecao-palavra-barco.html) preso no fiorde — não há [fotógrafo](/inverno/#capa) no gelo. Elo com [Groenlândia](/posts/post-inspecao-palavra-groenlandia.html) e [invernagem](/posts/post-inspecao-palavra-invernagem.html).\n\n## Rede BudGanja\n\n[Groenlândia](/posts/post-inspecao-palavra-groenlandia.html) · [barco](/posts/post-inspecao-palavra-barco.html) · [invernagem](/posts/post-inspecao-palavra-invernagem.html) · [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) · [hub](/inverno/)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbio"
     },
     {
       "title": "Inspeção: Vida e energia — duas barras; a Vida do laboratório é outra",
@@ -1733,7 +1859,7 @@
       "title": "Inspeção: Anzol — léxico Tamara / Bom dia, Inverno",
       "url": "/posts/post-inspecao-palavra-anzol.html",
       "excerpt": "Ferramenta de pesca na narrativa — gesto concreto de sobrevivência no gelo.",
-      "text": "Inspeção: Anzol — léxico Tamara / Bom dia, Inverno Ferramenta de pesca na narrativa — gesto concreto de sobrevivência no gelo. inspecao ## Escopo\n\nInspeção editorial da palavra **Anzol** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Anzol** |\n| Classe | Substantivo masculino |\n| Étimo (trabalho) | Árabe *al-zall* / via romance (debate) — gancho de pesca |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Anzol](/guia/palavras.html?q=Anzol) |\n| Data | 2026-08-02 |\n\n## Leitura no laboratório\n\n[Gesto](/posts/post-inspecao-palavra-gesto.html) concreto de sobrevivência no gelo — irmão do [balde](/posts/post-inspecao-palavra-balde.html) como utensílio narrado. Equipamento sem romantizar o heroísmo.\n\n## Rede BudGanja\n\n[gesto](/posts/post-inspecao-palavra-gesto.html) · [balde](/posts/post-inspecao-palavra-balde.html) · [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) · [Q&A](https://www.youtube.com/watch?v=V3GSlr5sp7c) · [equipamentos](/objetos/)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-palavra-simbiose.html) · [Q&A](https://www.youtube.com/watch?v=V3GSlr5sp7c).\n\n## Status\n\n**Aprovado** — «Anzol» fi"
+      "text": "Inspeção: Anzol — léxico Tamara / Bom dia, Inverno Ferramenta de pesca na narrativa — gesto concreto de sobrevivência no gelo. inspecao ## Escopo\n\nInspeção editorial da palavra **Anzol** no léxico do gelo de [Tamara Klink](/posts/post-inspecao-tamara-klink.html) — lote temático de [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html). Ficha de **Palavras** no laboratório BudGanja: nomear o vocábulo, fixar leitura no projecto e ligar ao mapa (Vida, cultivo, Artes, Legado).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Q&A Tamara](https://www.youtube.com/watch?v=V3GSlr5sp7c), divulgação [*Bom dia, Inverno*](/posts/post-inspecao-arte-bom-dia-inverno.html), [Guia de Palavras](/guia/palavras.html). **Sem afiliação** editorial. Palavra ≠ biografia; catalogar ≠ vender o livro.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **Anzol** |\n| Classe | Substantivo masculino |\n| Étimo (trabalho) | Árabe *al-zall* / via romance (debate) — gancho de pesca |\n| Tipo BudGanja | Palavra — léxico Tamara / Inverno |\n| Hub obra | [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) |\n| Pessoa | [Tamara · Legado](/posts/post-inspecao-tamara-klink.html) |\n| Guia | [Anzol](/guia/palavras.html?q=Anzol) |\n| Data | 2026-08-02 |\n\n## Leitura no laboratório\n\n[Gesto](/posts/post-inspecao-palavra-gesto.html) concreto de sobrevivência no gelo — irmão do [balde](/posts/post-inspecao-palavra-balde.html) como utensílio narrado. Equipamento sem romantizar o heroísmo.\n\n## Rede BudGanja\n\n[gesto](/posts/post-inspecao-palavra-gesto.html) · [balde](/posts/post-inspecao-palavra-balde.html) · [Bom dia, Inverno](/posts/post-inspecao-arte-bom-dia-inverno.html) · [Q&A](https://www.youtube.com/watch?v=V3GSlr5sp7c) · [objectos](/objetos/)\n\nTambém: [Palavras](/biblioteca/inspecoes/#inspecoes-palavras) · [simbiose](/posts/post-inspecao-palavra-simbiose.html) · [Q&A](https://www.youtube.com/watch?v=V3GSlr5sp7c).\n\n## Status\n\n**Aprovado** — «Anzol» fichad"
     },
     {
       "title": "Inspeção: Groenlândia — léxico Tamara / Bom dia, Inverno",
@@ -3760,8 +3886,8 @@
     {
       "title": "Caminho",
       "url": "/posts/post-inspecao-palavra-caminho.html",
-      "excerpt": "Via por onde se anda — no laboratório, a palavra que liga pesquisa, vida e travessia.",
-      "text": "Caminho Via por onde se anda — no laboratório, a palavra que liga pesquisa, vida e travessia. lexico guia palavras glossário caminho"
+      "excerpt": "Via, método e hub lexical — procura de caminhos próprios após o «zero ajuda» (UOL / Tamara × Amyr).",
+      "text": "Caminho Via, método e hub lexical — procura de caminhos próprios após o «zero ajuda» (UOL / Tamara × Amyr). lexico guia palavras glossário caminho"
     },
     {
       "title": "Camomila",
@@ -3978,6 +4104,24 @@
       "url": "/posts/post-inspecao-palavra-node.html",
       "excerpt": "Lat. nodus — ponto de junção EN→BR; ≠ nuds/nudes (lat. nudus); ES nudos = nós; elos nó/conexão/script; Valeu !!!",
       "text": "node Lat. nodus — ponto de junção EN→BR; ≠ nuds/nudes (lat. nudus); ES nudos = nós; elos nó/conexão/script; Valeu !!! lexico guia palavras glossário node"
+    },
+    {
+      "title": "homepage",
+      "url": "/posts/post-inspecao-palavra-homepage.html",
+      "excerpt": "Composto EN home + page — página inicial da rede; cola Homer cortada; ≠ casa ≠ landing; porta viva /; Valeu !!!",
+      "text": "homepage Composto EN home + page — página inicial da rede; cola Homer cortada; ≠ casa ≠ landing; porta viva /; Valeu !!! lexico guia palavras glossário homepage"
+    },
+    {
+      "title": "página inicial",
+      "url": "/posts/post-inspecao-palavra-homepage.html",
+      "excerpt": "Calco PT de homepage — porta do sítio; ≠ casa ≠ landing; ≠ Homer; ver ficha homepage.",
+      "text": "página inicial Calco PT de homepage — porta do sítio; ≠ casa ≠ landing; ≠ Homer; ver ficha homepage. lexico guia palavras glossário pagina-inicial"
+    },
+    {
+      "title": "home page",
+      "url": "/posts/post-inspecao-palavra-homepage.html",
+      "excerpt": "Grafia em duas palavras de homepage — o mesmo composto home + page; ver ficha homepage.",
+      "text": "home page Grafia em duas palavras de homepage — o mesmo composto home + page; ver ficha homepage. lexico guia palavras glossário home-page"
     },
     {
       "title": "nuds",
@@ -4768,8 +4912,8 @@
     {
       "title": "Gesto",
       "url": "/posts/post-inspecao-palavra-gesto.html",
-      "excerpt": "Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade.",
-      "text": "Gesto Do latim *gestus* — acto mínimo; no BudGanja liga Vida, cultivo, inspeções, ferramentas e comunidade. lexico guia palavras glossário gesto"
+      "excerpt": "Acto mínimo concreto — regar, escrever, puxar anzol, abraçar o balde, mandar o drone ao céu.",
+      "text": "Gesto Acto mínimo concreto — regar, escrever, puxar anzol, abraçar o balde, mandar o drone ao céu. lexico guia palavras glossário gesto"
     },
     {
       "title": "gesso",
@@ -5336,10 +5480,10 @@
       "text": "Luxímetro Ferramenta para medir a luz — no site, também com a câmara do telemóvel. tecnico guia palavras glossário luximetro"
     },
     {
-      "title": "luz",
+      "title": "Luz",
       "url": "/posts/post-inspecao-palavra-luz.html",
-      "excerpt": "Lat. lux — claridade e efeito do clique; tríade circuito + sol (fonte natural); Valeu !!! com a luz certa.",
-      "text": "luz Lat. lux — claridade e efeito do clique; tríade circuito + sol (fonte natural); Valeu !!! com a luz certa. lexico guia palavras glossário luz"
+      "excerpt": "Claridade que se mede — no poema a mudinha pede luz fraca; no Ártico, meses sem sol.",
+      "text": "Luz Claridade que se mede — no poema a mudinha pede luz fraca; no Ártico, meses sem sol. lexico guia palavras glossário luz"
     },
     {
       "title": "Lâmpada",
@@ -5422,8 +5566,8 @@
     {
       "title": "Mão",
       "url": "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
-      "excerpt": "Latim *manus* — ferramenta do gesto: cultivar, escrever, teclar; no BudGanja entra no par esquerda × direita.",
-      "text": "Mão Latim *manus* — ferramenta do gesto: cultivar, escrever, teclar; no BudGanja entra no par esquerda × direita. lexico guia palavras glossário mao"
+      "excerpt": "Ferramenta do gesto — na capa de *Bom dia, Inverno* a mão esquerda segura o comando do drone.",
+      "text": "Mão Ferramenta do gesto — na capa de *Bom dia, Inverno* a mão esquerda segura o comando do drone. lexico guia palavras glossário mao"
     },
     {
       "title": "Mar",
@@ -5500,8 +5644,8 @@
     {
       "title": "Medo",
       "url": "/posts/post-inspecao-palavra-medo.html",
-      "excerpt": "Alerta interior que protege do perigo — a emoção roxa da Riley.",
-      "text": "Medo Alerta interior que protege do perigo — a emoção roxa da Riley. lexico guia palavras glossário medo"
+      "excerpt": "Afecto inspecionado sem romantizar — limite real da invernagem solitária; o poema pede não negar o medo.",
+      "text": "Medo Afecto inspecionado sem romantizar — limite real da invernagem solitária; o poema pede não negar o medo. lexico guia palavras glossário medo"
     },
     {
       "title": "sexta-feira 13",
@@ -5752,8 +5896,8 @@
     {
       "title": "Passar",
       "url": "/posts/post-inspecao-palavra-passar.html",
-      "excerpt": "Verbo da passagem: o que aconteceu, o que atravessa, o que se transmite.",
-      "text": "Passar Verbo da passagem: o que aconteceu, o que atravessa, o que se transmite. lexico guia palavras glossário passar"
+      "excerpt": "Atravessar / o que se passou — e também não poder passar no gelo; no poema, não deixar a mudinha passar sozinha.",
+      "text": "Passar Atravessar / o que se passou — e também não poder passar no gelo; no poema, não deixar a mudinha passar sozinha. lexico guia palavras glossário passar"
     },
     {
       "title": "pedra",
@@ -6296,10 +6440,10 @@
       "text": "Soja Glycine max — leguminosa citada em contexto agrícola/alimentar e fitoterapia (isoflavonas). Citada nos rascunhos das aulas XIV (curso UNIFESP). tecnico guia palavras glossário soja"
     },
     {
-      "title": "sol",
+      "title": "Sol",
       "url": "/posts/post-inspecao-palavra-sol.html",
-      "excerpt": "Lat. sol — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Valeu !!! com a luz do dia.",
-      "text": "sol Lat. sol — astro e luz natural; elo luz; contraste com interruptor; ≠ solitário; Valeu !!! com a luz do dia. lexico guia palavras glossário sol"
+      "excerpt": "Astro e luz natural — o poema recusa pedir sol a mais; na invernagem há meses sem ele.",
+      "text": "Sol Astro e luz natural — o poema recusa pedir sol a mais; na invernagem há meses sem ele. lexico guia palavras glossário sol"
     },
     {
       "title": "Vivosun",
@@ -6380,10 +6524,10 @@
       "text": "tabaco Planta americana (Nicotiana); vocábulo via espanhol; distinto de maconha; elo papel de enrolar. lexico guia palavras glossário tabaco"
     },
     {
-      "title": "tempo",
+      "title": "Tempo",
       "url": "/posts/post-inspecao-palavra-tempo.html",
-      "excerpt": "Lat. tempus — cronologia, clima («tempo bom») e compasso musical na mesma palavra; kairós × chronos; elos sempre/passado/alma; Valeu !!! com o tempo que se tem.",
-      "text": "tempo Lat. tempus — cronologia, clima («tempo bom») e compasso musical na mesma palavra; kairós × chronos; elos sempre/passado/alma; Valeu !!! com o tempo que se tem. lexico guia palavras glossário tempo"
+      "excerpt": "Duração e estação — a mudinha pede tempo; no mar congelado o tempo substitui o espaço.",
+      "text": "Tempo Duração e estação — a mudinha pede tempo; no mar congelado o tempo substitui o espaço. lexico guia palavras glossário tempo"
     },
     {
       "title": "Terpeno",
@@ -6542,10 +6686,10 @@
       "text": "Via exógena Sinónimo prático de modulação exógena na rede BudGanja — elo Aula 7 × guia de meditação (via endógena). tecnico guia palavras glossário via-exogena"
     },
     {
-      "title": "vida",
+      "title": "Vida",
       "url": "/posts/post-inspecao-palavra-vida.html",
-      "excerpt": "Lat. vīta — facto de viver, tempo e modo; ficha lexical distinta da trilha /vida/ e da Árvore da Vida; elos alegria/coração/esperança.",
-      "text": "vida Lat. vīta — facto de viver, tempo e modo; ficha lexical distinta da trilha /vida/ e da Árvore da Vida; elos alegria/coração/esperança. lexico guia palavras glossário vida"
+      "excerpt": "Palavra-eixo do laboratório — no hub Inverno a Vida é ficar, registar, cuidar; a mudinha raiz no mapa.",
+      "text": "Vida Palavra-eixo do laboratório — no hub Inverno a Vida é ficar, registar, cuidar; a mudinha raiz no mapa. lexico guia palavras glossário vida"
     },
     {
       "title": "Vida (trilha)",
@@ -6666,6 +6810,126 @@
       "url": "/posts/post-inspecao-palavra-vida-energia.html",
       "excerpt": "Duas barras do HUD. A Vida do laboratório é outra ficha.",
       "text": "vida × energia Duas barras do HUD. A Vida do laboratório é outra ficha. lexico guia palavras glossário vida-energia"
+    },
+    {
+      "title": "Fiorde",
+      "url": "/posts/post-inspecao-palavra-fiorde.html",
+      "excerpt": "Braço de mar entre montanhas — palco da invernagem: o barco preso no fiorde da Groenlândia.",
+      "text": "Fiorde Braço de mar entre montanhas — palco da invernagem: o barco preso no fiorde da Groenlândia. tecnico guia palavras glossário fiorde"
+    },
+    {
+      "title": "Drone",
+      "url": "/posts/post-inspecao-palavra-drone.html",
+      "excerpt": "Aeronave sem piloto a bordo — na capa, a câmara que Tamara mandou ao céu; na página, o mesmo gesto a voar.",
+      "text": "Drone Aeronave sem piloto a bordo — na capa, a câmara que Tamara mandou ao céu; na página, o mesmo gesto a voar. lexico guia palavras glossário drone"
+    },
+    {
+      "title": "Circular",
+      "url": "/posts/post-inspecao-palavra-circular.html",
+      "excerpt": "Pedido da autora: empresta, doa, deixa o papel viver — o gelo pede para circular.",
+      "text": "Circular Pedido da autora: empresta, doa, deixa o papel viver — o gelo pede para circular. lexico guia palavras glossário circular"
+    },
+    {
+      "title": "Ofício",
+      "url": "/posts/post-inspecao-palavra-oficio.html",
+      "excerpt": "Trabalho habitual com método — na capa o ofício é voar, ficar, registar; não pedestal.",
+      "text": "Ofício Trabalho habitual com método — na capa o ofício é voar, ficar, registar; não pedestal. lexico guia palavras glossário oficio"
+    },
+    {
+      "title": "Voar",
+      "url": "/posts/post-inspecao-palavra-voar.html",
+      "excerpt": "Mandar a câmara ao céu — na invernagem a solo, voar é o gesto que faz o retrato.",
+      "text": "Voar Mandar a câmara ao céu — na invernagem a solo, voar é o gesto que faz o retrato. lexico guia palavras glossário voar"
+    },
+    {
+      "title": "Ficar",
+      "url": "/posts/post-inspecao-palavra-ficar.html",
+      "excerpt": "Permanecer com método — eixo da invernagem e da Vida: ficar quando não se pode passar.",
+      "text": "Ficar Permanecer com método — eixo da invernagem e da Vida: ficar quando não se pode passar. lexico guia palavras glossário ficar"
+    },
+    {
+      "title": "Registar",
+      "url": "/posts/post-inspecao-palavra-registar.html",
+      "excerpt": "Fixar o que aconteceu — capa, diário e livro: o ofício inclui registar sem fotógrafo no gelo.",
+      "text": "Registar Fixar o que aconteceu — capa, diário e livro: o ofício inclui registar sem fotógrafo no gelo. lexico guia palavras glossário registar"
+    },
+    {
+      "title": "Câmara",
+      "url": "/posts/post-inspecao-palavra-camara.html",
+      "excerpt": "Olho do drone — no gelo não havia fotógrafo; a câmara sobe porque Tamara a sobe.",
+      "text": "Câmara Olho do drone — no gelo não havia fotógrafo; a câmara sobe porque Tamara a sobe. lexico guia palavras glossário camara"
+    },
+    {
+      "title": "Céu",
+      "url": "/posts/post-inspecao-palavra-ceu.html",
+      "excerpt": "Alto da capa — o céu é o sítio de onde o drone olha o fiorde; também palco do Q&A.",
+      "text": "Céu Alto da capa — o céu é o sítio de onde o drone olha o fiorde; também palco do Q&A. lexico guia palavras glossário ceu"
+    },
+    {
+      "title": "Emprestar",
+      "url": "/posts/post-inspecao-palavra-emprestar.html",
+      "excerpt": "Primeiro gesto de circular o livro — empresta a família, colega, a mesa do lado.",
+      "text": "Emprestar Primeiro gesto de circular o livro — empresta a família, colega, a mesa do lado. lexico guia palavras glossário emprestar"
+    },
+    {
+      "title": "Doar",
+      "url": "/posts/post-inspecao-palavra-doar.html",
+      "excerpt": "Segundo gesto de circular — doar o exemplar a uma biblioteca, principalmente se faltar no acervo.",
+      "text": "Doar Segundo gesto de circular — doar o exemplar a uma biblioteca, principalmente se faltar no acervo. lexico guia palavras glossário doar"
+    },
+    {
+      "title": "Estante",
+      "url": "/posts/post-inspecao-palavra-estante.html",
+      "excerpt": "Onde o livro espera — no laboratório a estante é o contrário do pedido: dois exemplares já saíram.",
+      "text": "Estante Onde o livro espera — no laboratório a estante é o contrário do pedido: dois exemplares já saíram. lexico guia palavras glossário estante"
+    },
+    {
+      "title": "Peito",
+      "url": "/posts/post-inspecao-palavra-peito.html",
+      "excerpt": "Corpo que a invernagem mede — no poema o peito ainda cabe na mão quando o gelo prende o barco.",
+      "text": "Peito Corpo que a invernagem mede — no poema o peito ainda cabe na mão quando o gelo prende o barco. lexico guia palavras glossário peito"
+    },
+    {
+      "title": "Semente",
+      "url": "/posts/post-inspecao-palavra-semente.html",
+      "excerpt": "Partida do arco Vida — a semente ainda cabe na mão; no gelo vira mudinha.",
+      "text": "Semente Partida do arco Vida — a semente ainda cabe na mão; no gelo vira mudinha. lexico guia palavras glossário semente"
+    },
+    {
+      "title": "Mudinha",
+      "url": "/posts/post-inspecao-palavra-mudinha.html",
+      "excerpt": "Planta jovem — *Bom dia, Inverno* entra no laboratório como mudinha da Vida, não árvore sénior.",
+      "text": "Mudinha Planta jovem — *Bom dia, Inverno* entra no laboratório como mudinha da Vida, não árvore sénior. lexico guia palavras glossário mudinha"
+    },
+    {
+      "title": "Estação",
+      "url": "/posts/post-inspecao-palavra-estacao.html",
+      "excerpt": "Tempo do ciclo — o poema recusa o inverno como fim: é estação em que se inspeciona a raiz.",
+      "text": "Estação Tempo do ciclo — o poema recusa o inverno como fim: é estação em que se inspeciona a raiz. lexico guia palavras glossário estacao"
+    },
+    {
+      "title": "Flor",
+      "url": "/posts/post-inspecao-palavra-flor.html",
+      "excerpt": "Desfecho visível do cultivo — no inverno não se força flor; inspeciona-se a raiz.",
+      "text": "Flor Desfecho visível do cultivo — no inverno não se força flor; inspeciona-se a raiz. lexico guia palavras glossário flor"
+    },
+    {
+      "title": "Raiz",
+      "url": "/posts/post-inspecao-palavra-raiz.html",
+      "excerpt": "O que fica debaixo no inverno — ofício do laboratório: inspecionar a raiz sem forçar a flor.",
+      "text": "Raiz O que fica debaixo no inverno — ofício do laboratório: inspecionar a raiz sem forçar a flor. lexico guia palavras glossário raiz"
+    },
+    {
+      "title": "Partir",
+      "url": "/posts/post-inspecao-palavra-partir.html",
+      "excerpt": "A decisão de ir — no poema, tríade Tamara: partir, ficar, escrever.",
+      "text": "Partir A decisão de ir — no poema, tríade Tamara: partir, ficar, escrever. lexico guia palavras glossário partir"
+    },
+    {
+      "title": "Escrever",
+      "url": "/posts/post-inspecao-palavra-escrever.html",
+      "excerpt": "Terceiro verbo da tríade Tamara — o ofício que transforma invernagem em livro.",
+      "text": "Escrever Terceiro verbo da tríade Tamara — o ofício que transforma invernagem em livro. lexico guia palavras glossário escrever"
     }
   ]
 }
