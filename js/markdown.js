@@ -7,6 +7,14 @@ function mdInlineFormat(text) {
     .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>');
 }
 
+/** Espelho de lib/fecho-oficio.js — alteração automática de Valeu !!!. */
+function mdApplyValeuAlteracao(html) {
+  return String(html || '').replace(
+    /<a href="\/posts\/post-inspecao-palavra-valeu\.html">((?:¡)?Valeu !!!)<\/a>(?:\s*·\s*<a href="\/posts\/post-inspecao-expressao-eu-amo-a-vida\.html">[^<]*<\/a>)?/g,
+    '<a href="/posts/post-inspecao-palavra-valeu.html">$1</a> · <a href="/posts/post-inspecao-expressao-eu-amo-a-vida.html">eu amo a vida</a>'
+  );
+}
+
 function renderMarkdownPreview(md) {
   if (!md) return '';
   const lines = md.replace(/\r/g, '').split('\n');
@@ -104,7 +112,7 @@ function renderMarkdownPreview(md) {
 
   flushParagraph();
   flushList();
-  return out.join('\n');
+  return mdApplyValeuAlteracao(out.join('\n'));
 }
 
 function formatDatePtBR(iso) {

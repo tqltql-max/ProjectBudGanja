@@ -46,14 +46,19 @@
       .replace(/"/g, '&quot;');
   }
 
-  function isMantraStanza(stanza) {
-    var t = String(stanza || '')
+  function normalizeMantraStanza(stanza) {
+    return String(stanza || '')
       .replace(/\s+/g, ' ')
       .trim()
       .toLowerCase()
       .replace(/^[¡!]+/, '')
       .replace(/[!¡.]+$/g, '');
+  }
+
+  function isValeuOnlyStanza(stanza) {
+    var t = normalizeMantraStanza(stanza);
     return (
+      t === 'valeu' ||
       t === 'faça o melhor' ||
       t === 'faca o melhor' ||
       t === 'do your best' ||
@@ -61,12 +66,34 @@
     );
   }
 
+  function isEuAmoAVidaStanza(stanza) {
+    var t = normalizeMantraStanza(stanza);
+    return t === 'eu amo a vida' || t === 'i love life' || t === 'amo la vida';
+  }
+
+  function isMantraStanza(stanza) {
+    var t = normalizeMantraStanza(stanza);
+    if (isValeuOnlyStanza(stanza) || isEuAmoAVidaStanza(stanza)) return true;
+    return t.indexOf('eu amo a vida') >= 0 && t.indexOf('valeu') >= 0;
+  }
+
+  function expandPoemMantraStanzas(stanzas) {
+    var src = stanzas || [];
+    var out = [];
+    for (var i = 0; i < src.length; i++) {
+      out.push(src[i]);
+      if (isValeuOnlyStanza(src[i]) && !isEuAmoAVidaStanza(src[i + 1])) {
+        out.push('eu amo a vida');
+      }
+    }
+    return out;
+  }
+
   /** Corpo do poema → stanzas com <br> por verso (texto wrappável pelo learn-mode). */
   function poemHtml(body) {
     var text = String(body || '').replace(/\r\n/g, '\n').trim();
     if (!text) return '';
-    return text
-      .split(/\n{2,}/)
+    return expandPoemMantraStanzas(text.split(/\n{2,}/))
       .map(function (stanza) {
         var lines = stanza.split('\n').map(function (line) {
           return escapeHtml(line);
