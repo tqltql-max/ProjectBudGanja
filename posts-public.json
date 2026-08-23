@@ -7790,6 +7790,25 @@
     "seriesLabel": "Fui · palavra"
   },
   {
+    "title": "Inspeção: Save Game — gravar a partida; o rasto, não o milagre",
+    "titleEn": "Inspection: Save Game — persist the match; the trail, not the miracle",
+    "titleEs": "Inspección: Save Game — grabar la partida; el rastro, no el milagro",
+    "excerpt": "Palavras: Save Game = save + game; salve tudo; salvar/gravar/guardar; ≠ Load/New/backspace; Valeu !!!",
+    "excerptEn": "Words: Save Game = save + game; living salve tudo; ≠ Load/New/backspace; Valeu !!!",
+    "excerptEs": "Palabras: Save Game = save + game; salve tudo; ≠ Load/New/backspace; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-save-game",
+    "url": "/posts/post-inspecao-palavra-save-game.html",
+    "date": "2026-08-23T18:10:00.000Z",
+    "filename": "posts/post-inspecao-palavra-save-game.html",
+    "coverImage": "/imagens/inspecoes/save-game-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 280,
+    "seriesLabel": "Save Game · palavra"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Valeu !!!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Valeu !!!",

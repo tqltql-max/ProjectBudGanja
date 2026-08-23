@@ -1518,6 +1518,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Expressões: «eu amo a vida» — alteração automática de Valeu !!!; amar + vida; ≠ cartaz ≠ trilha /vida/; o render cola sozinho."
             },
             {
+              "label": "Inspeção: Lavar — das mãos à alma",
+              "tileLabel": "Inspeção: Lavar — das mãos à al…",
+              "href": "/posts/post-inspecao-palavra-lavar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-lavar",
+              "description": "Palavras: lavar (lat. lavāre) ≠ lava de vulcão ≠ larva; orelha cola formiga lava-pé; lavar a alma com método."
+            },
+            {
               "label": "Inspeção: Planta — Quina — quinina e antimalárico histórico",
               "tileLabel": "Inspeção: Planta — Quina — quin…",
               "href": "/posts/post-inspecao-planta-quina.html",
@@ -1612,6 +1620,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-figura-william-shakespeare",
               "description": "Pessoas × Artes: William Shakespeare (1564–1616) — poeta, dramaturgo e actor; elo principal em Romeu e Julieta. Capa: dossiê holográfico de campo (arte, não fonte)."
+            },
+            {
+              "label": "Inspeção: Fogo — elemento, ardor, cuidado e Valeu !!!",
+              "tileLabel": "Inspeção: Fogo — elemento, ardo…",
+              "href": "/posts/post-inspecao-palavra-fogo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-fogo",
+              "description": "Palavras: «fogo» (lat. *focus*) — elemento e metáfora; elos água, raiva e cultivo; Valeu !!! com medida."
             },
             {
               "label": "Inspeção: Baz Luhrmann — ofício de palco no ecrã",
@@ -2318,6 +2334,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «pular» (lat. *pullāre*) — salto × omitir BR; derivações pulo/pulinho/pulada; elos passar, backspace, já; Valeu !!!"
             },
             {
+              "label": "Inspeção: Vamos Fugir — Gil 1984, Skank na radiola, mapa Marajó × Guaporé",
+              "tileLabel": "Inspeção: Vamos Fugir — Gil 198…",
+              "href": "/posts/post-inspecao-arte-vamos-fugir.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-vamos-fugir",
+              "description": "Artes: Vamos Fugir (Gil + Liminha, 1984; Skank 2004 no Spotify pedido) — Irajá / Marajó / Guaporé; céu azul ≠ Céu Azul do Chorão; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Estante — léxico Tamara / Bom dia, Inverno",
               "tileLabel": "Inspeção: Estante — léxico Tama…",
               "href": "/posts/post-inspecao-palavra-estante.html",
@@ -2332,6 +2356,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-interruptor",
               "description": "Palavras: «interruptor» (lat. *interrumpere*) — peça do circuito; tríade com ligar × desligar e luz; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Céu Azul — Chorão, o dia, e o céu que não é o de Vamos Fugir",
+              "tileLabel": "Inspeção: Céu Azul — Chorão, o …",
+              "href": "/posts/post-inspecao-arte-ceu-azul.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-ceu-azul",
+              "description": "Artes: Céu Azul (CBJR / Chorão + Castanho, 2011) ≠ o céu de Vamos Fugir; Liminha na ponte; sem letra; Valeu !!!"
             },
             {
               "label": "Inspeção: Peito — léxico Tamara / Bom dia, Inverno",
@@ -3414,6 +3446,86 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: 0 / zero — identidade da soma; ×0 apaga; ≠ dezena da Mega-Sena (01–60); ≠ letra O; Valeu !!!"
             },
             {
+              "label": "Inspeção: Lava — o rio do vulcão, não o verbo lavar",
+              "tileLabel": "Inspeção: Lava — o rio do vulcã…",
+              "href": "/posts/post-inspecao-palavra-lava.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-lava",
+              "description": "Palavras: lava (vulcão) ≠ lavar ≠ larva; larva de vulcão = lapso; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Larva — o jovem do inseto, não a lava do vulcão",
+              "tileLabel": "Inspeção: Larva — o jovem do in…",
+              "href": "/posts/post-inspecao-palavra-larva.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-larva",
+              "description": "Palavras: larva (lat. lārva) ≠ lava de vulcão; lapso larva de vulcão; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Formiga — o inseto do chão, não a lava do vulcão",
+              "tileLabel": "Inspeção: Formiga — o inseto do…",
+              "href": "/posts/post-inspecao-palavra-formiga.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-formiga",
+              "description": "Palavras: formiga (lat. formīca) ≠ lava-pé (grupo) ≠ tucandeira; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Formiga lava-pé — o inseto que arde, não a lava do vulcão",
+              "tileLabel": "Inspeção: Formiga lava-pé — o i…",
+              "href": "/posts/post-inspecao-expressao-formiga-lava-pe.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-formiga-lava-pe",
+              "description": "Expressões: formiga lava-pé (*Solenopsis*) ≠ lavar os pés ≠ lava ≠ larva; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Marajó — ilha, não «cidade Maraj»",
+              "tileLabel": "Inspeção: Marajó — ilha, não «c…",
+              "href": "/posts/post-inspecao-palavra-marajo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-marajo",
+              "description": "Palavras: Marajó (PA) ≠ uma cidade; Maraj = lapso; elo Vamos Fugir × Guaporé; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: A Deus!!! — adeus, encomendar e sair",
+              "tileLabel": "Inspeção: A Deus!!! — adeus, en…",
+              "href": "/posts/post-inspecao-expressao-adeus.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-adeus",
+              "description": "Expressões: A Deus!!! = a + Deus (adeus); grito partido × grafia junta; ≠ Deus abençoe; irmã fui; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Guaporé — rio na fronteira e cidade no Sul",
+              "tileLabel": "Inspeção: Guaporé — rio na fron…",
+              "href": "/posts/post-inspecao-palavra-guapore.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-guapore",
+              "description": "Palavras: Guaporé = rio (BR/BO) × município RS; Guapore = rasto; a canção Vamos Fugir não escolhe; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Deus — o vocábulo do céu latino; ficha ≠ catecismo",
+              "tileLabel": "Inspeção: Deus — o vocábulo do …",
+              "href": "/posts/post-inspecao-palavra-deus.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-deus",
+              "description": "Palavras: Deus ← lat. deus ← PIE *dyēus* (céu / dia); Deus × deus; ≠ Elohim/Theos/Allah; cluster A Deus!!! / fui; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: fui — pretérito de ir e de ser; na rua, Fui!",
+              "tileLabel": "Inspeção: fui — pretérito de ir…",
+              "href": "/posts/post-inspecao-palavra-fui.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-fui",
+              "description": "Palavras: fui ← lat. fuī (ir e ser); gíria Fui! = saí; cluster Deus / A Deus!!!; ≠ passado; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Save Game — gravar a partida; o rasto, não o milagre",
+              "tileLabel": "Inspeção: Save Game — gravar a …",
+              "href": "/posts/post-inspecao-palavra-save-game.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-save-game",
+              "description": "Palavras: Save Game = save + game; salve tudo; salvar/gravar/guardar; ≠ Load/New/backspace; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",
@@ -3438,14 +3550,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Expressões: ausdhuashduas — nome lab do riso tipado BR; substitui kkkk… e «risas online»; elos jesusamando, meudeusdoceu, aff, Valeu !!!"
             },
             {
-              "label": "Inspeção: Fogo — elemento, ardor, cuidado e Valeu !!!",
-              "tileLabel": "Inspeção: Fogo — elemento, ardo…",
-              "href": "/posts/post-inspecao-palavra-fogo.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-fogo",
-              "description": "Palavras: «fogo» (lat. *focus*) — elemento e metáfora; elos água, raiva e cultivo; Valeu !!! com medida."
-            },
-            {
               "label": "Inspeção: Mão esquerda / mão direita — complementaridade do ofício",
               "tileLabel": "Inspeção: Mão esquerda / mão di…",
               "href": "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
@@ -3468,14 +3572,6 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-ja",
               "description": "Palavras: «já» (lat. *iam*) — tempo e urgência; par oral com «aff»; fecho vazio = ressalva; Valeu !!! continua."
-            },
-            {
-              "label": "Inspeção: Lavar — das mãos à alma",
-              "tileLabel": "Inspeção: Lavar — das mãos à al…",
-              "href": "/posts/post-inspecao-palavra-lavar.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-lavar",
-              "description": "Palavras: «lavar» (lat. *lavāre*) — mãos com água até «lavar a alma»: cuidado com método; fuga e vingança = ressalva."
             },
             {
               "label": "Inspeção: Aff — exasperação e o risco de fechar sem método",
