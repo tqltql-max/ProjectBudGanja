@@ -84,13 +84,13 @@ window.__BIBLIOTECA_NAV__ = {
           "description": "Divulgação do livro de Tamara Klink — fazer circular."
         },
         {
-          "label": "Livro do laboratório",
-          "tileLabel": "Livro",
+          "label": "Manual de Inspeções BudGanja",
+          "tileLabel": "Manual",
           "href": "/livro/",
           "icon": "📘",
           "slug": "livro",
           "featured": true,
-          "description": "Página-livro do projecto — Gerar livro, dedicatória e mapa das salas."
+          "description": "Manual do projecto — Gerar manual, dedicatória e mapa das salas."
         },
         {
           "label": "Guias",

@@ -165,13 +165,13 @@ function buildHtml() {
     <h2>Cores em palavras</h2>
     <p>Cada cor tem ofício. Não se fundem.</p>
     <div class="chip-row">
+      <span class="chip chip-white">Branco</span>
       <span class="chip chip-red">Vermelho</span>
       <span class="chip chip-yellow">Amarelo</span>
-      <span class="chip chip-white">Branco</span>
     </div>
-    <p class="read"><strong>Vermelho</strong> — atenção. Semáforo, alarme, o ofício de parar e olhar. Não se funde com a Raiva da Riley.</p>
+    <p class="read"><strong>Branco</strong> — atenção. Página, gelo, olhar limpo. Não se funde com o vermelho do perigo nem com o amarelo do cuidado.</p>
+    <p class="read"><strong>Vermelho</strong> — perigo. Semáforo, alarme, ameaça nua. Não se funde com a Raiva da Riley.</p>
     <p class="read"><strong>Amarelo</strong> — cuidado. Luz de trânsito: ainda dá tempo. Não se funde com a Alegria.</p>
-    <p class="read"><strong>Branco</strong> — paz. Página, gelo, silêncio útil. Não se funde com o amarelo do cuidado.</p>
   </section>
 
   <section>

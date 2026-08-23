@@ -3,22 +3,22 @@
 
   var COLORS = [
     {
+      id: 'branco',
+      label: 'Branco',
+      tone: 'white',
+      text: 'Branco é atenção. Página, gelo, olhar limpo. Não se funde com o vermelho do perigo nem com o amarelo do cuidado: o ofício desta cor é prestar atenção.'
+    },
+    {
       id: 'vermelho',
       label: 'Vermelho',
       tone: 'red',
-      text: 'Vermelho é atenção. Semáforo, alarme, o ofício de parar e olhar. Não se funde com a Raiva da Riley — a cor avisa; a emoção tem ficha própria.'
+      text: 'Vermelho é perigo. Semáforo, alarme, ameaça nua. Não se funde com a Raiva da Riley — a cor marca o perigo; a emoção tem ficha própria.'
     },
     {
       id: 'amarelo',
       label: 'Amarelo',
       tone: 'yellow',
       text: 'Amarelo é cuidado. Luz de trânsito: ainda dá tempo. Não se funde com a Alegria — o aviso amarelo pede medida, não festa.'
-    },
-    {
-      id: 'branco',
-      label: 'Branco',
-      tone: 'white',
-      text: 'Branco é paz. Página, gelo, silêncio útil. Não se funde com o amarelo do cuidado nem com a neve só como paisagem: o ofício desta cor é o sossego.'
     }
   ];
 

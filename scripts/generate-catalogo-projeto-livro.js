@@ -2,7 +2,7 @@
 'use strict';
 
 /**
- * Livro-catálogo do laboratório Inspetor BudGanja.
+ * Manual de Inspeções BudGanja — catálogo integral do laboratório.
  * HTML de impressão + PDF (mesmo Chrome da apresentação UNIFESP).
  * Uso: node scripts/generate-catalogo-projeto-livro.js
  */
@@ -15,12 +15,42 @@ const { renderMarkdown } = require('../lib/markdown-render.js');
 
 const PRINT_HTML = path.join(ROOT, 'info', 'livro-inspetor-budganja-print.html');
 const OUT_PDF = path.join(ROOT, 'info', 'livro-inspetor-budganja.pdf');
+const MANUAL_PDF = path.join(ROOT, 'info', 'manual-inspecoes-budganja.pdf');
 const SITE = 'https://inspetorbudganja.com.br';
+
+const ARTES_NOT_MUSIC = /alquimista|historia-das-coisas|ultima-casa-de-opio|diamba-sarabamba|dia-do-curinga|santa-ceia|barriga-de-trigo|bom-dia-inverno|o-inicio|romeu-e-julieta/;
+
+function postSlug(post) {
+  return String(post.slug || '');
+}
+
+function isFilmografiaPost(post) {
+  const slug = postSlug(post);
+  return (
+    post.series === 'filmografias' ||
+    /inspecao-filme-|inspecao-serie-|inspecao-desenho-|inspecao-filmografia-/.test(slug) ||
+    slug === 'inspecao-delorean' ||
+    slug === 'inspecao-app-the-chosen' ||
+    slug === 'inspecao-cruzamento-raiva-venom-vida-divertida'
+  );
+}
+
+function isDiscografiaPost(post) {
+  const slug = postSlug(post);
+  return post.series === 'artes-cultura' && /^inspecao-arte-/.test(slug) && !ARTES_NOT_MUSIC.test(slug);
+}
+
+function isArtesPost(post) {
+  return post.series === 'artes-cultura' && !isFilmografiaPost(post) && !isDiscografiaPost(post);
+}
+
+function isCanalPost(post) {
+  return String(post.series || '').indexOf('canal-') === 0 || /inspecao-canal-/.test(postSlug(post));
+}
 
 const SERIES_TOPICS = [
   { title: 'Palavras', series: ['palavras-origem'] },
-  { title: 'Expressões e ditos', series: ['expressoes-ditos'] },
-  { title: 'Artes e cultura', series: ['artes-cultura', 'filmografias'] },
+  { title: 'Expressões e ditos', series: ['expressoes-ditos', 'expressoes-ditados'] },
   {
     title: 'Pessoas, legado e formação',
     series: ['pessoas-historia', 'legado-pessoas', 'formacao-academica']
@@ -37,24 +67,6 @@ const SERIES_TOPICS = [
   {
     title: 'Artigos, neurociência e pesquisas',
     series: ['artigos-cientificos', 'neurociencias', 'pesquisa-laboratorio', 'divulgacao-saude']
-  },
-  {
-    title: 'Canais',
-    series: [
-      'canal-movrecam',
-      'canal-canabinall',
-      'canal-icl',
-      'canal-manual-do-mundo',
-      'canal-slivki',
-      'canal-zangado',
-      'canal-paulinho',
-      'canal-bagual',
-      'canal-tamaraklink',
-      'canal-amyrklink',
-      'canal-richard-rasmussen',
-      'canal-disneyjr',
-      'canal-vevo'
-    ]
   },
   { title: 'Jogos e cadernos', series: ['cadernos-jogo'] },
   { title: 'Lojas e plataformas', series: ['loja-streaming', 'loja-dermocosmetico'] },
@@ -397,6 +409,12 @@ function buildHtml() {
 
   const usedSeries = new Set();
   SERIES_TOPICS.forEach((topic) => topic.series.forEach((key) => usedSeries.add(key)));
+  posts.forEach((post) => {
+    const series = String(post.series || '');
+    if (series === 'artes-cultura' || series === 'filmografias' || series.indexOf('canal-') === 0) {
+      usedSeries.add(series);
+    }
+  });
   const leftoverPosts = posts.filter((post) => post.series && !usedSeries.has(post.series));
   const orphanPosts = posts.filter((post) => !post.series);
 
@@ -455,6 +473,12 @@ function buildHtml() {
   ];
 
   const generatedAt = new Date().toISOString().slice(0, 10);
+  const cultureTopics = [
+    { title: 'Artes', items: posts.filter(isArtesPost) },
+    { title: 'Filmografia', items: posts.filter(isFilmografiaPost) },
+    { title: 'Discografia', items: posts.filter(isDiscografiaPost) },
+    { title: 'Canais inspeccionados', items: posts.filter(isCanalPost) }
+  ];
   const inspectionTopics = SERIES_TOPICS.map((topic) => ({
     title: topic.title,
     items: posts.filter((post) => topic.series.indexOf(post.series) >= 0)
@@ -468,7 +492,7 @@ function buildHtml() {
 
   const toc = [
     { n: 'I', title: 'Dedicatória', topics: ['Ao XIV Curso', 'Em especial: Profa. Dra. Eliana Rodrigues'] },
-    { n: 'II', title: 'Como ler este livro', topics: ['O que é', 'O que não é', 'Números do laboratório'] },
+    { n: 'II', title: 'Como ler este manual', topics: ['O que é', 'O que não é', 'Números do laboratório'] },
     { n: 'III', title: 'Mapa das salas', topics: ['Salas vivas', 'Páginas do site'] },
     { n: 'IV', title: 'Biblioteca e UNIFESP', topics: ['Hubs', 'Curso, SIEX, crédito'] },
     { n: 'V', title: 'Catálogo vivo — Plantas', topics: [plants.length + ' fichas'] },
@@ -476,13 +500,20 @@ function buildHtml() {
     { n: 'VII', title: 'Catálogo vivo — Fungos', topics: [fungi.length + ' fichas'] },
     {
       n: 'VIII',
-      title: 'Inspeções',
+      title: 'Artes',
+      topics: cultureTopics
+        .map((topic) => topic.title + ' (' + topic.items.length + ')')
+        .concat([poems.length + ' poesias'])
+    },
+    {
+      n: 'IX',
+      title: 'Demais inspeções',
       topics: inspectionTopics.map((topic) => topic.title + ' (' + topic.items.length + ')')
     },
-    { n: 'IX', title: 'Ferramentas, equipamentos e cultivo', topics: ['Calculadoras', 'Equipamentos', 'Diário'] },
-    { n: 'X', title: 'Vida, poemas, Inverno e origami', topics: [poems.length + ' poemas'] },
-    { n: 'XI', title: 'Vídeos, jogos, rádio e comunidade', topics: [tracks.length + ' faixas na rádio'] },
-    { n: 'XII', title: 'Colofão', topics: ['Independência', 'Valeu !!!'] }
+    { n: 'X', title: 'Ferramentas, equipamentos e cultivo', topics: ['Calculadoras', 'Equipamentos', 'Diário'] },
+    { n: 'XI', title: 'Vida, Inverno e origami', topics: ['Salas irmãs'] },
+    { n: 'XII', title: 'Vídeos, jogos, rádio e comunidade', topics: [tracks.length + ' faixas na rádio'] },
+    { n: 'XIII', title: 'Colofão', topics: ['Independência', 'Valeu !!!'] }
   ];
 
   const tocHtml = toc
@@ -500,18 +531,22 @@ function buildHtml() {
     })
     .join('\n');
 
-  const inspectionHtml = inspectionTopics
-    .map((topic) => {
-      return (
-        '<h2 class="topic">' +
-        escapeHtml(topic.title) +
-        ' <span class="muted">(' +
-        topic.items.length +
-        ')</span></h2>\n' +
-        renderPostChapter(topic.items)
-      );
-    })
-    .join('\n');
+  function topicsHtml(topics) {
+    return topics
+      .map((topic) => {
+        return (
+          '<h2 class="topic">' +
+          escapeHtml(topic.title) +
+          ' <span class="muted">(' +
+          topic.items.length +
+          ')</span></h2>\n' +
+          renderPostChapter(topic.items)
+        );
+      })
+      .join('\n');
+  }
+  const cultureHtml = topicsHtml(cultureTopics);
+  const inspectionHtml = topicsHtml(inspectionTopics);
 
   const elianaHref = siteUrl('/posts/post-inspecao-eliana-rodrigues.html');
   const plantLabel = (item) =>
@@ -521,13 +556,13 @@ function buildHtml() {
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Livro do laboratório — Inspetor BudGanja</title>
+  <title>Manual de Inspeções BudGanja — Inspetor BudGanja</title>
   <style>${printCss()}</style>
 </head>
 <body>
   <section class="cover">
-    <p class="eyebrow">Laboratório digital · livro-catálogo</p>
-    <h1>Inspetor BudGanja</h1>
+    <p class="eyebrow">Laboratório digital · manual-catálogo</p>
+    <h1>Manual de Inspeções BudGanja</h1>
     <p class="subtitle">Volume integral: o texto das fichas, catálogos e poemas — para ler e testar, não só o índice.</p>
     <p class="meta">
       ${escapeHtml(generatedAt)} · ${posts.length} inspeções · ${plants.length} plantas · ${animals.length} animais · ${fungi.length} fungos<br>
@@ -621,11 +656,17 @@ function buildHtml() {
     <p class="muted">${fungi.length} fichas. Identificação — não é cultivo nem dose.</p>
     ${renderSpeciesChapter(fungi, (item) => '/fungos/' + (item.slug || item.id) + '/')}
 
-    <h1 class="chap">Capítulo VIII — Inspeções</h1>
-    <p class="lead">${posts.length} fichas publicadas, cortadas por série.</p>
+    <h1 class="chap">Capítulo VIII — Artes</h1>
+    <p class="lead">O manual começa pelas obras: artes, filmografia, discografia, canais inspeccionados e poesias.</p>
+    ${cultureHtml}
+    <h2 class="topic">Poesias <span class="muted">(${poems.length})</span></h2>
+    ${poems.map(renderPoemEntry).join('\n')}
+
+    <h1 class="chap">Capítulo IX — Demais inspeções</h1>
+    <p class="lead">Palavras, expressões, pessoas, catálogos vivos e o resto do ofício escrito.</p>
     ${inspectionHtml}
 
-    <h1 class="chap">Capítulo IX — Ferramentas, equipamentos e cultivo</h1>
+    <h1 class="chap">Capítulo X — Ferramentas, equipamentos e cultivo</h1>
     <h2 class="topic">Calculadoras</h2>
     ${renderLinkList(tools, (item) => item.title, (item) => item.href)}
     <h2 class="topic">Equipamentos e objectos</h2>
@@ -633,9 +674,8 @@ function buildHtml() {
     <h2 class="topic">Diário de pesquisas</h2>
     <p><a href="${escapeHtml(siteUrl('/cultivo/'))}">/cultivo/</a> — registo, roteiro e plano. Públicas: <a href="${escapeHtml(siteUrl('/biblioteca/pesquisas/'))}">/biblioteca/pesquisas/</a>.</p>
 
-    <h1 class="chap">Capítulo X — Vida, poemas, Inverno e origami</h1>
-    <h2 class="topic">Poemas do laboratório</h2>
-    ${poems.map(renderPoemEntry).join('\n')}
+    <h1 class="chap">Capítulo XI — Vida, Inverno e origami</h1>
+    <p class="muted">As poesias do laboratório estão no Capítulo VIII. Aqui ficam as salas irmãs.</p>
     <h2 class="topic">Salas irmãs</h2>
     <ul class="ficha-list">
       <li><a href="${escapeHtml(siteUrl('/vida/'))}">Vida — conto familiar</a></li>
@@ -644,7 +684,7 @@ function buildHtml() {
       <li><a href="${escapeHtml(siteUrl('/origami/barquinho-de-papel/'))}">Barquinho de papel</a></li>
     </ul>
 
-    <h1 class="chap">Capítulo XI — Vídeos, jogos, rádio e comunidade</h1>
+    <h1 class="chap">Capítulo XII — Vídeos, jogos, rádio e comunidade</h1>
     <h2 class="topic">Rádio</h2>
     ${renderLinkList(tracks, (item) => item.title || item.id, () => '/radio/')}
     <h2 class="topic">Salas</h2>
@@ -655,7 +695,7 @@ function buildHtml() {
     </ul>
 
     <section class="colophon">
-      <h2>Capítulo XII — Colofão</h2>
+      <h2>Capítulo XIII — Colofão</h2>
       <p>
         Gerado em ${escapeHtml(generatedAt)} a partir dos JSON vivos do repositório,
         com o mesmo gerador de PDF da apresentação UNIFESP (Chrome headless).
@@ -676,8 +716,11 @@ function main() {
   const html = buildHtml();
   fs.mkdirSync(path.dirname(PRINT_HTML), { recursive: true });
   fs.writeFileSync(PRINT_HTML, html, 'utf8');
-  console.log('HTML do livro:', path.relative(ROOT, PRINT_HTML), '(' + Math.round(html.length / 1024) + ' KB)');
+  console.log('HTML do manual:', path.relative(ROOT, PRINT_HTML), '(' + Math.round(html.length / 1024) + ' KB)');
   printHtmlToPdf(PRINT_HTML, OUT_PDF, { timeout: 600000 });
+  fs.copyFileSync(OUT_PDF, MANUAL_PDF);
+  console.log('PDF:', path.relative(ROOT, OUT_PDF));
+  console.log('PDF:', path.relative(ROOT, MANUAL_PDF));
 }
 
 if (require.main === module) {
