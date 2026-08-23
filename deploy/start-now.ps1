@@ -65,10 +65,10 @@ try {
   Write-Host ('Local: ERRO - ' + $_.Exception.Message) -ForegroundColor Red
 }
 
-try {
-  $public = Invoke-WebRequest -Uri ($env:SITE_URL + '/') -UseBasicParsing -TimeoutSec 20
-  Write-Host ('Publico: HTTP ' + $public.StatusCode) -ForegroundColor Green
-} catch {
-  Write-Host ('Publico: ERRO - ' + $_.Exception.Message) -ForegroundColor Yellow
-  Write-Host 'Se der 503, execute:  .\fix-dns.ps1' -ForegroundColor Yellow
+. (Join-Path $PSScriptRoot 'probe-public.ps1')
+$public = Get-PublicHttpProbe (($env:SITE_URL.TrimEnd('/')) + '/')
+$publicHost = ([Uri]$env:SITE_URL).Host
+$publicKind = Write-PublicHostResult $publicHost $public
+if ($publicKind -eq 'fail') {
+  Write-Host 'Se der 530, execute:  .\fix-dns.ps1' -ForegroundColor Yellow
 }

@@ -91,3 +91,16 @@ CNAMEs **dentro** da zona `.com.br` (`inspetorbudganja.com.inspetorbudganja.com.
 em vez da zona `inspetorbudganja.com`. Por isso o DNS manual (secção B/C) é o caminho fiável.
 
 Não uses só o script até isto estar corrigido no painel.
+
+## HTTP 403 no `.com.br` (não é DNS)
+
+O `curl -sI` (HEAD) e o `Invoke-WebRequest` sem UA de browser levam **403** na zona
+`inspetorbudganja.com.br` por causa do **Bot Fight / Super Bot Fight** da Cloudflare.
+Os aliases `.com` respondem 301/302 na edge (Redirect Rules) e o probe antigo
+marcava só o canónico como `FALTA`.
+
+O `fix-dns.ps1` / `verify.ps1` passam a usar GET + UA de Chrome. Se ainda aparecer
+`AVISO … HTTP 403 (Cloudflare Bot Fight…)`, o DNS e o túnel estão provavelmente
+OK — abre `https://inspetorbudganja.com.br/` no browser. Para o probe ficar
+verde: zona `.com.br` → **Security → Bots** e alivia o Super Bot Fight, ou cria
+uma Skip Rule para o teu IP.

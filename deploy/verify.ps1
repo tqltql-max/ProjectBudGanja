@@ -25,11 +25,10 @@ try {
   Write-Host 'FALTA Local:' $_.Exception.Message -ForegroundColor Red
 }
 
-try {
-  $pub = Invoke-WebRequest -Uri "$SiteUrl/" -UseBasicParsing -TimeoutSec 20
-  Write-Host 'OK  Publico HTTP' $pub.StatusCode -ForegroundColor Green
-} catch {
-  Write-Host 'FALTA Publico:' $_.Exception.Message -ForegroundColor Red
+. (Join-Path $PSScriptRoot 'probe-public.ps1')
+$pub = Get-PublicHttpProbe ($SiteUrl.TrimEnd('/') + '/')
+$pubKind = Write-PublicHostResult 'inspetorbudganja.com.br' $pub
+if ($pubKind -eq 'fail') {
   Write-Host '  Corrija DNS: .\fix-dns.ps1' -ForegroundColor Yellow
   Write-Host '  Reinicie:    .\start-now.ps1' -ForegroundColor Yellow
 }

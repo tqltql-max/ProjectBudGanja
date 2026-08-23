@@ -33,28 +33,14 @@ foreach ($h in $canonical) {
 }
 
 Write-Host ""
-Write-Host "A testar hostnames (sem criar CNAME .com via cloudflared)..." -ForegroundColor Cyan
+Write-Host "A testar hostnames (GET + UA de browser; sem criar CNAME .com via cloudflared)..." -ForegroundColor Cyan
+# 403 com cf-ray = Bot Fight, nao CNAME em falta (ver add-alias-domains.md).
+. (Join-Path $PSScriptRoot 'probe-public.ps1')
 $aliasFail = @()
 foreach ($h in ($canonical + $aliases)) {
-  $url = "https://$h/"
-  $curlOut = & curl.exe -sI -o - --max-time 20 --max-redirs 0 $url 2>&1 | Out-String
-  $status = $null
-  $location = $null
-  if ($curlOut -match 'HTTP/\S+\s+(\d+)') { $status = [int]$Matches[1] }
-  if ($curlOut -match '(?im)^Location:\s*(\S+)') { $location = $Matches[1].Trim() }
-
-  if ($status -ge 200 -and $status -lt 400) {
-    if ($location) {
-      Write-Host ("  OK  {0}  HTTP {1} → {2}" -f $h, $status, $location) -ForegroundColor Green
-    } else {
-      Write-Host ("  OK  {0}  HTTP {1}" -f $h, $status) -ForegroundColor Green
-    }
-  } else {
-    $aliasFail += $h
-    $detail = if ($status) { "HTTP $status" } else { ($curlOut -split "`n" | Select-Object -First 1).Trim() }
-    if ($status -eq 530) { $detail = "HTTP 530 (tunel desligado)" }
-    Write-Host ("  FALTA {0}  {1}" -f $h, $detail) -ForegroundColor Red
-  }
+  $probe = Get-PublicHttpProbe "https://$h/"
+  $kind = Write-PublicHostResult $h $probe
+  if ($kind -eq 'fail') { $aliasFail += $h }
 }
 
 Write-Host ""
