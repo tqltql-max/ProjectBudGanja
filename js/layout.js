@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '351';
+const ASSET_V = '353';
 const HOME = '/inverno/';
 
 (function applyStoredTheme() {

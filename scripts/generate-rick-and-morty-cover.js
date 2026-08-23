@@ -18,20 +18,11 @@ async function main() {
   const OUT = path.join(ROOT, 'imagens/inspecoes/rick-and-morty-cover.jpg');
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
 
-  const bg = { r: 7, g: 11, b: 18, alpha: 1 };
-  await sharp({
-    create: { width: 1200, height: 630, channels: 3, background: bg }
-  })
-    .composite([
-      {
-        input: await sharp(src)
-          .rotate()
-          .resize({ width: 1200, height: 630, fit: 'contain', background: bg })
-          .jpeg({ quality: 88, mozjpeg: true })
-          .toBuffer()
-      }
-    ])
-    .jpeg({ quality: 88, mozjpeg: true })
+  // 1200×630 cheio e JPEG leve — o WhatsApp falha previews pesados ou com barras.
+  await sharp(src)
+    .rotate()
+    .resize(1200, 630, { fit: 'cover', position: 'centre' })
+    .jpeg({ quality: 80, mozjpeg: true })
     .toFile(OUT);
 
   const meta = await sharp(OUT).metadata();

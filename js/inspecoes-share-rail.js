@@ -125,23 +125,69 @@
     return Promise.resolve('fallback');
   }
 
+  function fetchCoverFile(item) {
+    var cover = coverSrc(item && item.coverImage);
+    if (!cover) return Promise.resolve(null);
+    var imageUrl = /^https?:\/\//i.test(cover) ? cover : absUrl(cover);
+    if (/localhost|127\.0\.0\.1/i.test(window.location.hostname || '') &&
+        /^https:\/\/inspetorbudganja\.com\.br\//i.test(imageUrl)) {
+      imageUrl = window.location.origin + imageUrl.replace(/^https:\/\/inspetorbudganja\.com\.br/i, '');
+    }
+    return fetch(imageUrl, { credentials: 'same-origin' })
+      .then(function (res) {
+        if (!res.ok) throw new Error('cover ' + res.status);
+        return res.blob();
+      })
+      .then(function (blob) {
+        if (!blob || !blob.type || blob.type.indexOf('image/') !== 0) return null;
+        try {
+          return new File([blob], 'capa-budganja.jpg', { type: blob.type });
+        } catch (e) {
+          blob.name = 'capa-budganja.jpg';
+          return blob;
+        }
+      })
+      .catch(function () {
+        return null;
+      });
+  }
+
+  function canShareFiles(files) {
+    if (!files || !files.length || typeof navigator.canShare !== 'function') return false;
+    try {
+      return navigator.canShare({ files: files });
+    } catch (e) {
+      return false;
+    }
+  }
+
   function shareItem(item, btn) {
     var url = absUrl(item.url);
     var title = itemTitle(item) || 'Inspetor BudGanja';
     var text = itemExcerpt(item) || title;
-    var payload = { title: title, text: text, url: url };
 
-    var run;
-    if (typeof navigator.share === 'function') {
-      run = navigator.share(payload).then(function () {
-        return 'shared';
-      }).catch(function (err) {
-        if (err && err.name === 'AbortError') return 'shared';
-        return copyUrl(url);
-      });
-    } else {
-      run = copyUrl(url);
-    }
+    var run = fetchCoverFile(item).then(function (file) {
+      var payload = { title: title, text: text, url: url };
+      if (file && canShareFiles([file])) payload.files = [file];
+
+      if (typeof navigator.share === 'function') {
+        return navigator.share(payload).then(function () {
+          return 'shared';
+        }).catch(function (err) {
+          if (err && err.name === 'AbortError') return 'shared';
+          if (payload.files) {
+            return navigator.share({ title: title, text: text, url: url }).then(function () {
+              return 'shared';
+            }).catch(function (err2) {
+              if (err2 && err2.name === 'AbortError') return 'shared';
+              return copyUrl(url);
+            });
+          }
+          return copyUrl(url);
+        });
+      }
+      return copyUrl(url);
+    });
 
     run.then(function (result) {
       if (result === 'copied' || result === 'fallback') showCopied(btn);

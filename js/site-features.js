@@ -419,15 +419,71 @@
       });
   }
 
-  function copyShareUrl(url) {
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      return navigator.clipboard.writeText(url).then(function () {
-        return 'copied';
-      }).catch(function () {
-        return fallbackSharePrompt(url);
-      });
+  function blobToPng(blob) {
+    if (!blob) return Promise.reject(new Error('no blob'));
+    if (blob.type === 'image/png') return Promise.resolve(blob);
+    return new Promise(function (resolve, reject) {
+      var img = new Image();
+      var objUrl = URL.createObjectURL(blob);
+      img.onload = function () {
+        var canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth || 1200;
+        canvas.height = img.naturalHeight || 630;
+        var ctx = canvas.getContext('2d');
+        if (!ctx) {
+          URL.revokeObjectURL(objUrl);
+          reject(new Error('canvas'));
+          return;
+        }
+        ctx.drawImage(img, 0, 0);
+        URL.revokeObjectURL(objUrl);
+        canvas.toBlob(function (png) {
+          if (png) resolve(png);
+          else reject(new Error('png'));
+        }, 'image/png');
+      };
+      img.onerror = function () {
+        URL.revokeObjectURL(objUrl);
+        reject(new Error('img'));
+      };
+      img.src = objUrl;
+    });
+  }
+
+  function copyShareUrl(url, file) {
+    var writeText = function () {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        return navigator.clipboard.writeText(url).then(function () {
+          return 'copied';
+        }).catch(function () {
+          return fallbackSharePrompt(url);
+        });
+      }
+      return Promise.resolve(fallbackSharePrompt(url));
+    };
+
+    if (
+      file &&
+      window.ClipboardItem &&
+      navigator.clipboard &&
+      typeof navigator.clipboard.write === 'function'
+    ) {
+      return blobToPng(file)
+        .then(function (png) {
+          var item = new ClipboardItem({
+            'text/plain': new Blob([url], { type: 'text/plain' }),
+            'image/png': png
+          });
+          return navigator.clipboard.write([item]);
+        })
+        .then(function () {
+          return 'copied';
+        })
+        .catch(function () {
+          return writeText();
+        });
     }
-    return Promise.resolve(fallbackSharePrompt(url));
+    return writeText();
   }
 
   function fallbackSharePrompt(url) {
@@ -477,23 +533,23 @@
         var withoutFiles = sharePagePayload(null);
 
         if (typeof navigator.share !== 'function') {
-          return copyShareUrl(withoutFiles.url);
+          return copyShareUrl(withoutFiles.url, file);
         }
 
         return navigator.share(withFiles).then(function () {
           return 'shared';
         }).catch(function (err) {
           if (err && err.name === 'AbortError') return 'shared';
-          // Alguns browsers rejeitam files — tentar só link.
+          // Alguns browsers rejeitam files — tentar só link; se falhar, copiar URL+capa.
           if (withFiles.files) {
             return navigator.share(withoutFiles).then(function () {
               return 'shared';
             }).catch(function (err2) {
               if (err2 && err2.name === 'AbortError') return 'shared';
-              return copyShareUrl(withoutFiles.url);
+              return copyShareUrl(withoutFiles.url, file);
             });
           }
-          return copyShareUrl(withoutFiles.url);
+          return copyShareUrl(withoutFiles.url, file);
         });
       });
 
