@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T06:56:31.766Z",
+  "updatedAt": "2026-08-23T12:25:51.807Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -9069,6 +9069,32 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 29 — locução do armazém; lapso seos; ≠ banda Secos & Molhados."
+    },
+    {
+      "id": "expressao-mindinho",
+      "title": "mindinho — parlenda dos cinco, mundinho e mudinho",
+      "titleEn": "mindinho — five-finger rhyme, mundinho and mudinho",
+      "titleEs": "mindinho — rima de los cinco, mundinho y mudinho",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: mindinho (minutínu) — parlenda da mão; mundinho≠mudinho; ≠ pé; Valeu !!!",
+      "whyEn": "Sayings: mindinho (minutínu) — hand rhyme; mundinho≠mudinho; ≠ toe; Valeu !!!",
+      "whyEs": "Dichos: mindinho (minutínu) — rima de la mano; mundinho≠mudinho; ≠ pie; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-mindinho",
+      "doneHref": "/posts/post-inspecao-expressao-mindinho.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/mindinho",
+        "https://pt.wiktionary.org/wiki/mundo",
+        "https://pt.wiktionary.org/wiki/mudo",
+        "https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/os-nomes-dos-dedos-da-mao-em-linguagem-popular-de-portugal/28959",
+        "/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html",
+        "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
+        "/posts/post-inspecao-palavra-mudinha.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 30 — parlenda; cola mundinho/mudinho; gatilho pé/escada separado."
     }
   ]
 }

@@ -1526,6 +1526,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Cannabis sativa* L. — fitocanabinoides (THC, CBD), terpenos e uso medicinal regulamentado; cautela legal e neurodesenvolvimento."
             },
             {
+              "label": "Inspeção: mindinho — a parlenda dos cinco, mundinho e mudinho",
+              "tileLabel": "Inspeção: mindinho — a parlenda…",
+              "href": "/posts/post-inspecao-expressao-mindinho.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-mindinho",
+              "description": "Expressões: mindinho (minutínu) — parlenda da mão; vizinhio→vizinho; mundinho≠mudinho; ≠ pé; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Planta — Alecrim-do-campo — artepillina C e própolis verde",
               "tileLabel": "Inspeção: Planta — Alecrim-do-c…",
               "href": "/posts/post-inspecao-planta-alecrim-do-campo.html",

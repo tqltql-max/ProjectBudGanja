@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T06:57:15.105Z",
+  "updatedAt": "2026-08-23T12:26:34.468Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -174,6 +174,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: mindinho — a parlenda dos cinco, mundinho e mudinho",
+      "url": "/posts/post-inspecao-expressao-mindinho.html",
+      "excerpt": "Expressões: mindinho (minutínu) — parlenda da mão; vizinhio→vizinho; mundinho≠mudinho; ≠ pé; Valeu !!!",
+      "text": "Inspeção: mindinho — a parlenda dos cinco, mundinho e mudinho Expressões: mindinho (minutínu) — parlenda da mão; vizinhio→vizinho; mundinho≠mudinho; ≠ pé; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da expressão **«[mindinho](/posts/post-inspecao-expressao-mindinho.html)»** — o **mais miúdo** da [mão](/posts/post-inspecao-palavra-mao-esquerda-direita.html) e, em cadeia, a **parlenda** que nomeia os cinco dedos. Pedido de campo: *Mindinho* · *seu vizinhio* · *Pai de todos* · *FUra bolo* · *Mat Piolho*, com relação a **Mundinho** e **Mudinho**.\n\n[A orelha cola](/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html) *mindinho* em *mundinho* e *mudinho*. O étimo **corta**.\n\nGatilho anterior do mesmo sopro: *bpm dia* · *contato com objeto escada* · *dedo do pé esquerto* · *dor*. A parlenda é da **mão**. O contato é do **pé**. Duas salas.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · mindinho](https://pt.wiktionary.org/wiki/mindinho) (lat. *minutínu* ← *minūtus* / [miúdo](https://pt.wiktionary.org/wiki/miúdo)), [mundo](https://pt.wiktionary.org/wiki/mundo), [mudo](https://pt.wiktionary.org/wiki/mudo), [Ciberdúvidas · nomes populares dos dedos](https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/os-nomes-dos-dedos-da-mao-em-linguagem-popular-de-portugal/28959). **Ficha ≠ protocolo clínico, ≠ CAT, ≠ receita de bolo, ≠ manual de piolho, ≠ teologia do Pai.** Tom: [gesto](/posts/post-inspecao-palavra-gesto.html) que conta a mão; [verdade](/posts/post-inspecao-palavra-verdade.html) do étimo.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Âncora | **mindinho** (também: *dedo mindinho*) |\n| Classe | Parlenda / lengalenga + nome popular do dedo mínimo |\n| Étimo (trabalho) | Lat. *minutínu* ← *minūtus* («miúdo») — confiança **alta** (Wikcionário) |\n| Variante | *minguinho* (de *mínimo* / *mingo* + *-inho*) — mesma sala, outra porta |\n| Tipo BudGanja | Expressão — conta os cinco; o étimo guarda o miúdo |\n| Elo m"
     },
     {
       "title": "Inspeção: secos e molhados — o armazém, o lapso seos e as duas prateleiras",
@@ -4968,6 +4974,24 @@
       "url": "/posts/post-inspecao-palavra-gesto.html",
       "excerpt": "Acto mínimo concreto — regar, escrever, puxar anzol, abraçar o balde, mandar o drone ao céu.",
       "text": "Gesto Acto mínimo concreto — regar, escrever, puxar anzol, abraçar o balde, mandar o drone ao céu. lexico guia palavras glossário gesto"
+    },
+    {
+      "title": "mindinho",
+      "url": "/posts/post-inspecao-expressao-mindinho.html",
+      "excerpt": "Lat. minutínu / miúdo — dedo mínimo da mão; parlenda dos cinco; ≠ mundinho ≠ mudinho ≠ pé; Valeu !!!",
+      "text": "mindinho Lat. minutínu / miúdo — dedo mínimo da mão; parlenda dos cinco; ≠ mundinho ≠ mudinho ≠ pé; Valeu !!! lexico guia palavras glossário mindinho"
+    },
+    {
+      "title": "mundinho",
+      "url": "/posts/post-inspecao-expressao-mindinho.html",
+      "excerpt": "Diminutivo de mundo (lat. mundus) — o mundo pequeno; cola de orelha com mindinho; Valeu !!!",
+      "text": "mundinho Diminutivo de mundo (lat. mundus) — o mundo pequeno; cola de orelha com mindinho; Valeu !!! lexico guia palavras glossário mundinho"
+    },
+    {
+      "title": "mudinho",
+      "url": "/posts/post-inspecao-expressao-mindinho.html",
+      "excerpt": "Lapso de mindinho, ou diminutivo de mudo, ou cola da mudinha — três salas; Valeu !!!",
+      "text": "mudinho Lapso de mindinho, ou diminutivo de mudo, ou cola da mudinha — três salas; Valeu !!! lexico guia palavras glossário mudinho"
     },
     {
       "title": "gesso",
