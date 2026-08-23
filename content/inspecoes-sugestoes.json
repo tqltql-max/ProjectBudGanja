@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T06:46:50.233Z",
+  "updatedAt": "2026-08-23T06:56:31.766Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -9043,6 +9043,32 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 260 — par térmico; qualidade ≠ fonte ≠ estado ≠ estação."
+    },
+    {
+      "id": "expressao-secos-e-molhados",
+      "title": "secos e molhados — armazém, lapso seos, duas prateleiras",
+      "titleEn": "secos e molhados — the store, the seos slip, two shelves",
+      "titleEs": "secos e molhados — el almacén, el lapsus seos, dos estantes",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: secos e molhados (siccus × molliare) — seos→secos; saco×vidro; ≠ banda; Valeu !!!",
+      "whyEn": "Sayings: secos e molhados (siccus × molliare) — seos→secos; sack×bottle; ≠ the band; Valeu !!!",
+      "whyEs": "Dichos: secos e molhados (siccus × molliare) — seos→secos; saco×vidrio; ≠ la banda; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-secos-e-molhados",
+      "doneHref": "/posts/post-inspecao-expressao-secos-e-molhados.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/seco",
+        "https://pt.wiktionary.org/wiki/molhado",
+        "https://pt.wiktionary.org/wiki/molhar",
+        "/posts/post-inspecao-palavra-agua.html",
+        "/posts/post-inspecao-palavra-curar.html",
+        "/posts/post-inspecao-palavra-calor-frio.html",
+        "/calculadoras/super-solo.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 29 — locução do armazém; lapso seos; ≠ banda Secos & Molhados."
     }
   ]
 }

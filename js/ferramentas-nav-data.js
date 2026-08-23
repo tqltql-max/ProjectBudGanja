@@ -1510,6 +1510,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Cinchona* spp. — casca fonte histórica de quinina; capítulo fundacional da quimioterapia antimalárica."
             },
             {
+              "label": "Inspeção: secos e molhados — o armazém, o lapso seos e as duas prateleiras",
+              "tileLabel": "Inspeção: secos e molhados — o …",
+              "href": "/posts/post-inspecao-expressao-secos-e-molhados.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-secos-e-molhados",
+              "description": "Expressões: «secos e molhados» (siccus × molliare) — seos→secos; armazém saco×vidro; ≠ banda; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Planta — Cannabis (medicinal) — canabinoides THC/CBD e contexto clínico",
               "tileLabel": "Inspeção: Planta — Cannabis (me…",
               "href": "/posts/post-inspecao-planta-cannabis-sativa.html",

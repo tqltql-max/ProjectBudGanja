@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T06:47:37.577Z",
+  "updatedAt": "2026-08-23T06:57:15.105Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -174,6 +174,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: secos e molhados — o armazém, o lapso seos e as duas prateleiras",
+      "url": "/posts/post-inspecao-expressao-secos-e-molhados.html",
+      "excerpt": "Expressões: «secos e molhados» (siccus × molliare) — seos→secos; armazém saco×vidro; ≠ banda; Valeu !!!",
+      "text": "Inspeção: secos e molhados — o armazém, o lapso seos e as duas prateleiras Expressões: «secos e molhados» (siccus × molliare) — seos→secos; armazém saco×vidro; ≠ banda; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da expressão **«[secos e molhados](/posts/post-inspecao-expressao-secos-e-molhados.html)»** — locução do **armazém** brasileiro (mercadoria **seca** × **molhada**) e, por extensão, da **mistura** que junta os dois ofícios sem os fundir. Pedido de campo: *seos e molhados*. O lab lê o lapso **seos** → **secos** (a boca comeu o *c*) e ficheia a forma canónica.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · seco](https://pt.wiktionary.org/wiki/seco), [molhado](https://pt.wiktionary.org/wiki/molhado), [molhar](https://pt.wiktionary.org/wiki/molhar), [siccus](https://en.wiktionary.org/wiki/siccus#Latin). **Ficha ≠ catálogo de mercearia, ≠ bula, ≠ a banda [Secos & Molhados](https://pt.wikipedia.org/wiki/Secos_%26_Molhados)** (Artes — ficha própria se chegar). Tom: [gesto](/posts/post-inspecao-palavra-gesto.html) de prateleira; [verdade](/posts/post-inspecao-palavra-verdade.html) do estado (seco × molhado).\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Expressão | **secos e molhados** |\n| Gatilho | *seos e molhados* → **secos** (lapso) |\n| Classe | Locução (também: par adj. *seco* × *molhado*) |\n| Étimo (trabalho) | Lat. *siccus* «seco» → PT *seco*; *molhar* ← lat. tardio *molliare* / *mollis* «mole, húmido» → *molhado* — confiança **alta** |\n| Ofício histórico | Armazém / venda que guarda **secos** (saco, grão, farinha) e **molhados** (vidro, azeite, vinagre, conserva) |\n| Extensão | Mistura; «de tudo um pouco» — **sem** apagar a distinção |\n| Tipo BudGanja | Expressão — prateleira × estado da matéria |\n| Elo par térmico | [calor × frio](/posts/post-inspecao-palavra-calor-frio.html) — grau do ar; aqui é **humidade / estado** |\n| Elo água | [água](/posts/post-inspecao-palavra-agua.html) · [gelo](/posts/post-inspec"
     },
     {
       "title": "Inspeção: Calor × Frio — qualidade térmica, não fogo nem gelo",
@@ -3492,6 +3498,24 @@
       "url": "/posts/post-inspecao-palavra-agua.html",
       "excerpt": "Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem.",
       "text": "Água Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem. lexico guia palavras glossário agua"
+    },
+    {
+      "title": "secos e molhados",
+      "url": "/posts/post-inspecao-expressao-secos-e-molhados.html",
+      "excerpt": "Locução do armazém BR — secos (saco) × molhados (vidro); lapso seos→secos; ≠ banda; Valeu !!!",
+      "text": "secos e molhados Locução do armazém BR — secos (saco) × molhados (vidro); lapso seos→secos; ≠ banda; Valeu !!! lexico guia palavras glossário secos-e-molhados"
+    },
+    {
+      "title": "seco",
+      "url": "/posts/post-inspecao-expressao-secos-e-molhados.html",
+      "excerpt": "Lat. siccus — estado sem humidade; par molhado; no armazém é o saco; Valeu !!!",
+      "text": "seco Lat. siccus — estado sem humidade; par molhado; no armazém é o saco; Valeu !!! lexico guia palavras glossário seco"
+    },
+    {
+      "title": "molhado",
+      "url": "/posts/post-inspecao-expressao-secos-e-molhados.html",
+      "excerpt": "Particípio de molhar (molliare / mollis) — estado com água; par seco; no armazém é o vidro; Valeu !!!",
+      "text": "molhado Particípio de molhar (molliare / mollis) — estado com água; par seco; no armazém é o vidro; Valeu !!! lexico guia palavras glossário molhado"
     },
     {
       "title": "Águas do Mar e Lágrimas",
