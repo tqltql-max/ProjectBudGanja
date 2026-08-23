@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T03:03:54.035Z",
+  "updatedAt": "2026-08-23T03:47:07.864Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8479,6 +8479,52 @@
         "/vida/"
       ],
       "notes": "Cap. 9 — desenho primeiro (2013); Channel 101 2006; RikRok ≠ Rick; poema original."
+    },
+    {
+      "id": "expressao-eu-amo-a-vida",
+      "title": "eu amo a vida — alteração automática de Valeu !!!",
+      "titleEn": "eu amo a vida — automatic alteration of Valeu !!!",
+      "titleEs": "eu amo a vida — alteración automática de Valeu !!!",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: eu amo a vida — alteração automática de Valeu !!!; o render cola sozinho; ≠ cartaz ≠ trilha /vida/.",
+      "whyEn": "Sayings: eu amo a vida — automatic alteration of Valeu !!!; renderer glues it; ≠ slogan ≠ Vida trail.",
+      "whyEs": "Dichos: eu amo a vida — alteración automática de Valeu !!!; el render la pega; ≠ cartel ≠ trama /vida/.",
+      "suggestedSlug": "inspecao-expressao-eu-amo-a-vida",
+      "doneHref": "/posts/post-inspecao-expressao-eu-amo-a-vida.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-palavra-valeu.html",
+        "/posts/post-inspecao-palavra-vida.html",
+        "https://pt.wiktionary.org/wiki/amar"
+      ],
+      "notes": "Cap. 28 — alteração automática via lib/fecho-oficio.js."
+    },
+    {
+      "id": "arte-desenho-elza-frozen",
+      "title": "Elza — Frozen, o gelo e o ofício de não esconder o poder",
+      "titleEn": "Elsa — Frozen, the ice and the craft of not hiding the power",
+      "titleEs": "Elza — Frozen, el hielo y el oficio de no esconder el poder",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes · desenho 2013: Elza (Frozen); Let It Go no DisneyMusicVEVO junto da ficha; sem colar letra.",
+      "whyEn": "Arts · 2013 cartoon: Elsa (Frozen); Let It Go on DisneyMusicVEVO beside the sheet.",
+      "whyEs": "Artes · dibujo 2013: Elza (Frozen); Let It Go en DisneyMusicVEVO junto a la ficha.",
+      "suggestedSlug": "inspecao-desenho-elza-frozen",
+      "doneHref": "/posts/post-inspecao-desenho-elza-frozen.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-desenho-elza-frozen.html",
+        "https://www.youtube.com/watch?v=L0MK7qz13bU",
+        "https://www.youtube.com/@DisneyMusicVEVO",
+        "https://pt.wikipedia.org/wiki/Elsa_%28Frozen%29",
+        "/posts/post-inspecao-canal-vevo.html",
+        "/posts/post-inspecao-desenho-megamente.html",
+        "/posts/post-inspecao-palavra-gelo.html"
+      ],
+      "notes": "Cap. 85 — personagem primeiro; Frozen 2 = eco."
     }
   ]
 }

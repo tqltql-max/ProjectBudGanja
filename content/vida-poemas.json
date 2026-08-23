@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T03:05:29.303Z",
+  "updatedAt": "2026-08-23T03:47:35.669Z",
   "poems": [
     {
       "id": "barquinhos-de-papel",
@@ -635,6 +635,32 @@
         "portal",
         "multiverso",
         "ofício"
+      ]
+    },
+    {
+      "id": "elza",
+      "slug": "elza",
+      "title": "Elza",
+      "titleEn": "Elsa",
+      "titleEs": "Elza",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja de Frozen — gelo que o medo trancou; mostrar o poder sem fechar a porta; Valeu !!!",
+      "teaserEn": "BudGanja echo of Frozen — ice that fear locked; show the power without shutting the door; Valeu !!!",
+      "teaserEs": "Eco BudGanja de Frozen — hielo que el miedo cerró; mostrar el poder sin cerrar la puerta; ¡Valeu !!!",
+      "body": "Elza.\nNão pedimos a letra emprestada —\npedimos o ofício de não esconder\no que o gelo já sabia fazer\nquando o medo pedia porta fechada.\n\nFrozen. Arendelle. Disney.\nHouve uma rainha ensinada a ser\na menina certa —\ne um inverno que saiu do peito\nquando a coroa apertou demais.\nHouve uma irmã a bater à porta.\nHouve um palácio de gelo\nque não é o Ártico da Tamara:\né o ofício de mostrar o poder\nsem congelar quem ama.\n\nO laboratório conhece esse frio.\nNão é maldição.\nÉ gesto que o medo trancou.\nSoltar não é abandonar a cidade —\né deixar o ofício à vista\ne voltar a abrir a porta.\n\nValeu !!!\n\nPorque toda vez que alguém\nmostra o gelo sem fechar o reino,\no universo cresce um pouco:\num verso a mais,\num dossel a mais,\numa irmã\nque ainda cabe no ofício.",
+      "bodyEn": "Elsa.\nWe do not borrow the lyric —\nwe ask for the craft of not hiding\nwhat the ice already knew how to do\nwhen fear asked for a closed door.\n\nFrozen. Arendelle. Disney.\nThere was a queen taught to be\nthe right girl —\nand a winter that left the chest\nwhen the crown pressed too hard.\nThere was a sister at the door.\nThere was an ice palace\nthat is not Tamara’s Arctic:\nit is the craft of showing power\nwithout freezing who you love.\n\nThe laboratory knows that cold.\nIt is not a curse.\nIt is a gesture fear locked.\nLetting go is not leaving the city —\nit is putting the craft in sight\nand opening the door again.\n\nValeu !!!\n\nBecause every time someone\nshows the ice without shutting the kingdom,\nthe universe grows a little:\none more verse,\none more canopy,\na sister\nthat still fits the craft.",
+      "bodyEs": "Elza.\nNo pedimos prestada la letra —\npedimos el oficio de no esconder\nlo que el hielo ya sabía hacer\ncuando el miedo pedía puerta cerrada.\n\nFrozen. Arendelle. Disney.\nHubo una reina enseñada a ser\nla niña correcta —\ny un invierno que salió del pecho\ncuando la corona apretó de más.\nHubo una hermana a la puerta.\nHubo un palacio de hielo\nque no es el Ártico de Tamara:\nes el oficio de mostrar el poder\nsin congelar a quien se ama.\n\nEl laboratorio conoce ese frío.\nNo es maldición.\nEs un gesto que el miedo cerró.\nSoltar no es abandonar la ciudad —\nes dejar el oficio a la vista\ny volver a abrir la puerta.\n\n¡Valeu !!!\n\nPorque cada vez que alguien\nmuestra el hielo sin cerrar el reino,\nel universo crece un poco:\nun verso más,\nun dosel más,\nuna hermana\nque aún cabe en el oficio.",
+      "inspectionHref": "/posts/post-inspecao-desenho-elza-frozen.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "desenho",
+        "elza",
+        "frozen",
+        "gelo",
+        "porta"
       ]
     },
     {

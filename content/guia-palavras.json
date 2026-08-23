@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T03:03:54.042Z",
+  "updatedAt": "2026-08-23T03:47:07.870Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3660,6 +3660,16 @@
       "curiositiesEn": "Bom dia, Inverno fixes ice as a craft stage, not as an empty metaphor of «emotional cold».",
       "historyEs": "Hielo / gelo viene del latín gelu — frío que endurece el agua. En la invernada ártica el vocablo es la materia que prende el barco.",
       "curiositiesEs": "El libro Bom dia, Inverno fija el hielo como escenario de oficio, no como metáfora vacía de «frío emocional»."
+    },
+    {
+      "id": "elza",
+      "word": "Elza",
+      "simple": "Personagem de Frozen (2013, Disney) — gelo que o medo trancou; Let It Go no DisneyMusicVEVO junto da ficha.",
+      "simpleEn": "Frozen character (2013, Disney) — ice that fear locked; Let It Go on DisneyMusicVEVO beside the sheet.",
+      "simpleEs": "Personaje de Frozen (2013, Disney) — hielo que el miedo cerró; Let It Go en DisneyMusicVEVO junto a la ficha.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-desenho-elza-frozen.html"
     },
     {
       "id": "genial",
@@ -8252,6 +8262,22 @@
       "curiositiesEn": "Valeu !!! — and valeu: the sheet treats the word as exit craft, not as scorn.",
       "historyEs": "Valeu viene de valer (lat. valēre) — gratitud leve y cierre oral BR, hermana de Gratidão. El pretérito se volvió gesto de respeto.",
       "curiositiesEs": "Valeu !!! — y valeu: la ficha trata el vocablo como oficio de salida, no como desprecio."
+    },
+    {
+      "id": "eu-amo-a-vida",
+      "word": "eu amo a vida",
+      "simple": "Alteração automática de Valeu !!! — amar + vida em primeira pessoa; o render cola sozinho; ≠ cartaz ≠ trilha /vida/.",
+      "simpleEn": "Automatic alteration of Valeu !!! — I love life; the renderer glues it; ≠ slogan ≠ Vida trail.",
+      "simpleEs": "Alteración automática de Valeu !!! — amo la vida; el render la pega; ≠ cartel ≠ trama /vida/.",
+      "history": "Pedido de campo 2026-08-23: eu amo a vida como alteração de Valeu !!!. Completamente automática: um sítio (fecho-oficio.js) cola a frase em cada ligação Valeu !!! no HTML.",
+      "curiosities": "Não apaga Valeu !!! (o lema fica no texto-fonte). Não é a ficha da palavra vida nem a trilha /vida/. O eu é a peça nova.",
+      "historyEn": "Field request 2026-08-23: eu amo a vida as an alteration of Valeu !!!. Fully automatic: one place (fecho-oficio.js) glues the phrase onto every Valeu !!! link in HTML.",
+      "curiositiesEn": "Does not erase Valeu !!! (the lemma stays in source). Not the word-vida sheet or the /vida/ trail. The I is the new piece.",
+      "historyEs": "Pedido de campo 2026-08-23: eu amo a vida como alteración de Valeu !!!. Completamente automática: un sitio (fecho-oficio.js) pega la frase a cada enlace Valeu !!! en el HTML.",
+      "curiositiesEs": "No borra Valeu !!! (el lema queda en el texto fuente). No es la ficha de la palabra vida ni la trama /vida/. El yo es la pieza nueva.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-eu-amo-a-vida.html"
     },
     {
       "id": "vassoura",

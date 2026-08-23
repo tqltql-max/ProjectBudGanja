@@ -95,6 +95,11 @@ const {
   poemRickAndMortyEs
 } = require('../lib/rick-and-morty-inspecao-post.js');
 const {
+  poemElzaPt,
+  poemElzaEn,
+  poemElzaEs
+} = require('../lib/elza-frozen-inspecao-post.js');
+const {
   poemDozeApostolosPt,
   poemDozeApostolosEn,
   poemDozeApostolosEs
@@ -694,6 +699,27 @@ const doc = {
       bodyEs: poemRickAndMortyEs(),
       inspectionHref: '/posts/post-inspecao-desenho-rick-and-morty.html',
       tags: ['poesia', 'vida', 'desenho', 'portal', 'multiverso', 'ofício']
+    },
+    {
+      id: 'elza',
+      slug: 'elza',
+      title: 'Elza',
+      titleEn: 'Elsa',
+      titleEs: 'Elza',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja de Frozen — gelo que o medo trancou; mostrar o poder sem fechar a porta; Valeu !!!',
+      teaserEn:
+        'BudGanja echo of Frozen — ice that fear locked; show the power without shutting the door; Valeu !!!',
+      teaserEs:
+        'Eco BudGanja de Frozen — hielo que el miedo cerró; mostrar el poder sin cerrar la puerta; ¡Valeu !!!',
+      body: poemElzaPt(),
+      bodyEn: poemElzaEn(),
+      bodyEs: poemElzaEs(),
+      inspectionHref: '/posts/post-inspecao-desenho-elza-frozen.html',
+      tags: ['poesia', 'vida', 'desenho', 'elza', 'frozen', 'gelo', 'porta']
     },
     {
       id: 'a-semente-foi-plantada',
