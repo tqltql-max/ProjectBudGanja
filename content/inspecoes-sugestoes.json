@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T18:12:28.112Z",
+  "updatedAt": "2026-08-23T19:08:36.652Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -9533,6 +9533,136 @@
         "/jogos/"
       ],
       "notes": "Cap. 280 — pedido Save Game / salve tudo."
+    },
+    {
+      "id": "palavra-letra-x",
+      "title": "Letra X — o xis, o nexo, as salas",
+      "titleEn": "Letter X — xis, nexus, the rooms",
+      "titleEs": "Letra X — el xis, el nexo, las salas",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: letra X / xis — 24.ª; x de conexão = nexo; ≠ app ≠ Xiaomi; Valeu !!!",
+      "whyEn": "Words: letter X / xis; x in conexão = nexus; ≠ app ≠ Xiaomi; Valeu !!!",
+      "whyEs": "Palabras: letra X / xis; x de conexão = nexo; ≠ app ≠ Xiaomi; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-letra-x",
+      "doneHref": "/posts/post-inspecao-palavra-letra-x.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/X",
+        "/posts/post-inspecao-palavra-letra-l.html",
+        "/posts/post-inspecao-palavra-conexao.html",
+        "/posts/post-inspecao-palavra-xiaomi.html"
+      ],
+      "notes": "Cap. 282 — pedido inspeção em X."
+    },
+    {
+      "id": "palavra-login",
+      "title": "Log In — a porta da sessão, não o cano",
+      "titleEn": "Log In — a porta da sessão, não o cano",
+      "titleEs": "Log In — a porta da sessão, não o cano",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: Log In / login = log + in; lapso Longin; ≠ conexão ≠ discada ≠ DSL; Valeu !!!",
+      "whyEn": "Palavras: Log In / login = log + in; lapso Longin; ≠ conexão ≠ discada ≠ DSL; Valeu !!!",
+      "whyEs": "Palavras: Log In / login = log + in; lapso Longin; ≠ conexão ≠ discada ≠ DSL; Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-login",
+      "doneHref": "/posts/post-inspecao-palavra-login.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Login",
+        "/posts/post-inspecao-palavra-conexao.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 284 — cluster Log In / discada / DSL / conexão."
+    },
+    {
+      "id": "palavra-internet-discada",
+      "title": "Internet discada — o cano que telefona",
+      "titleEn": "Internet discada — o cano que telefona",
+      "titleEs": "Internet discada — o cano que telefona",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: internet discada = dial-up; smash niocenchcadaro; ≠ DSL ≠ login; Valeu !!!",
+      "whyEn": "Palavras: internet discada = dial-up; smash niocenchcadaro; ≠ DSL ≠ login; Valeu !!!",
+      "whyEs": "Palavras: internet discada = dial-up; smash niocenchcadaro; ≠ DSL ≠ login; Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-internet-discada",
+      "doneHref": "/posts/post-inspecao-palavra-internet-discada.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Acesso_discado",
+        "/posts/post-inspecao-palavra-conexao.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 285 — cluster Log In / discada / DSL / conexão."
+    },
+    {
+      "id": "palavra-dsl",
+      "title": "DSL — a sigla do cano que fica",
+      "titleEn": "DSL — a sigla do cano que fica",
+      "titleEs": "DSL — a sigla do cano que fica",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: DSL = Digital Subscriber Line; ≠ discada ≠ login ≠ fibra; Valeu !!!",
+      "whyEn": "Palavras: DSL = Digital Subscriber Line; ≠ discada ≠ login ≠ fibra; Valeu !!!",
+      "whyEs": "Palavras: DSL = Digital Subscriber Line; ≠ discada ≠ login ≠ fibra; Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-dsl",
+      "doneHref": "/posts/post-inspecao-palavra-dsl.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Linha_digital_de_assinante",
+        "/posts/post-inspecao-palavra-conexao.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 283 — cluster Log In / discada / DSL / conexão."
+    },
+    {
+      "id": "palavra-conexao",
+      "title": "Conexão — conectar + ação (grafia com x)",
+      "titleEn": "Conexão — conectar + ação (grafia com x)",
+      "titleEs": "Conexão — conectar + ação (grafia com x)",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: conexão (x) ≠ conecção; lapsos conecxao / niocenchcadaro; elos discada DSL login; Valeu !!!",
+      "whyEn": "Palavras: conexão (x) ≠ conecção; lapsos conecxao / niocenchcadaro; elos discada DSL login; Valeu !!!",
+      "whyEs": "Palavras: conexão (x) ≠ conecção; lapsos conecxao / niocenchcadaro; elos discada DSL login; Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-conexao",
+      "doneHref": "/posts/post-inspecao-palavra-conexao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/conex%C3%A3o",
+        "/posts/post-inspecao-palavra-conexao.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 185 — cluster Log In / discada / DSL / conexão."
+    },
+    {
+      "id": "palavra-liberdade",
+      "title": "Liberdade — o nome, as salas",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: liberdade (lībertās); ≠ bairro ≠ filme ≠ DSL; Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-liberdade",
+      "doneHref": "/posts/post-inspecao-palavra-liberdade.html",
+      "seriesHint": "palavras-origem",
+      "notes": "Cap. 287"
+    },
+    {
+      "id": "palavra-isqueiro-clipper",
+      "title": "Isqueiro Clipper — irmão recarregável do BIC",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: Clipper = isqueiro Flamagas; ≠ cabelo ≠ navio; par BIC; Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-isqueiro-clipper",
+      "doneHref": "/posts/post-inspecao-palavra-isqueiro-clipper.html",
+      "seriesHint": "palavras-origem",
+      "notes": "Cap. 286"
     }
   ]
 }

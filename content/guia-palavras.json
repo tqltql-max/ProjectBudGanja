@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T18:12:28.112Z",
+  "updatedAt": "2026-08-23T19:08:36.652Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -166,6 +166,16 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-ufa.html"
+    },
+    {
+      "id": "liberdade",
+      "word": "liberdade",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-liberdade.html",
+      "simple": "Lat. lībertās — o nome. Livre/libre = adjectivo. ≠ bairro SP ≠ Shawshank ≠ linha DSL. Valeu !!!",
+      "simpleEn": "Lat. lībertās — o nome. Livre/libre = adjectivo. ≠ bairro SP ≠ Shawshank ≠ linha DSL. Valeu !!!",
+      "simpleEs": "Lat. lībertās — o nome. Livre/libre = adjectivo. ≠ bairro SP ≠ Shawshank ≠ linha DSL. Valeu !!!"
     },
     {
       "id": "abracadabra",
@@ -1840,6 +1850,46 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-homepage.html"
+    },
+    {
+      "id": "login",
+      "word": "Log In",
+      "simple": "EN log + in — entrar na sessão. Lapso Longin. Porta ≠ cano (conexão) ≠ discada ≠ DSL ≠ Save Game. Valeu !!!",
+      "simpleEn": "EN log + in — entrar na sessão. Lapso Longin. Porta ≠ cano (conexão) ≠ discada ≠ DSL ≠ Save Game. Valeu !!!",
+      "simpleEs": "EN log + in — entrar na sessão. Lapso Longin. Porta ≠ cano (conexão) ≠ discada ≠ DSL ≠ Save Game. Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-login.html"
+    },
+    {
+      "id": "internet-discada",
+      "word": "internet discada",
+      "simple": "Dial-up BR — o cano que disca e ocupa o telefone. Smash niocenchcadaro. ≠ DSL ≠ login. Valeu !!!",
+      "simpleEn": "Dial-up BR — o cano que disca e ocupa o telefone. Smash niocenchcadaro. ≠ DSL ≠ login. Valeu !!!",
+      "simpleEs": "Dial-up BR — o cano que disca e ocupa o telefone. Smash niocenchcadaro. ≠ DSL ≠ login. Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-internet-discada.html"
+    },
+    {
+      "id": "dsl",
+      "word": "DSL",
+      "simple": "Sigla: Digital Subscriber Line. Cano digital no cobre, em regra sempre no ar. ≠ discada ≠ login ≠ fibra. Valeu !!!",
+      "simpleEn": "Sigla: Digital Subscriber Line. Cano digital no cobre, em regra sempre no ar. ≠ discada ≠ login ≠ fibra. Valeu !!!",
+      "simpleEs": "Sigla: Digital Subscriber Line. Cano digital no cobre, em regra sempre no ar. ≠ discada ≠ login ≠ fibra. Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-dsl.html"
+    },
+    {
+      "id": "conexao",
+      "word": "conexão",
+      "simple": "Lat. connexio — ação de conectar; grafia com x. ≠ conecção ≠ colchão. Elos discada, DSL, Log In. Valeu !!!",
+      "simpleEn": "Lat. connexio — ação de conectar; grafia com x. ≠ conecção ≠ colchão. Elos discada, DSL, Log In. Valeu !!!",
+      "simpleEs": "Lat. connexio — ação de conectar; grafia com x. ≠ conecção ≠ colchão. Elos discada, DSL, Log In. Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-conexao.html"
     },
     {
       "id": "pagina-inicial",
@@ -6852,6 +6902,16 @@
       "href": "/posts/post-inspecao-palavra-isqueiro-bic.html"
     },
     {
+      "id": "clipper",
+      "word": "Clipper",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-isqueiro-clipper.html",
+      "simple": "Isqueiro Flamagas recarregável. ≠ máquina de cabelo ≠ navio ≠ clipe. Irmão do BIC. Valeu !!!",
+      "simpleEn": "Isqueiro Flamagas recarregável. ≠ máquina de cabelo ≠ navio ≠ clipe. Irmão do BIC. Valeu !!!",
+      "simpleEs": "Isqueiro Flamagas recarregável. ≠ máquina de cabelo ≠ navio ≠ clipe. Irmão do BIC. Valeu !!!"
+    },
+    {
       "id": "guerra-do-paraguai",
       "word": "Guerra do Paraguai",
       "simple": "Nome PT do conflito 1864–1870; Tríplice Aliança; narrativas e mortos em disputa; ≠ mapa de Paraguaçu; Valeu !!! nesta memória.",
@@ -9230,6 +9290,16 @@
       "simple": "0 — nulo que conta; a+0=a; ×0 apaga; ≠ dezena da Mega-Sena; ≠ letra O. Valeu !!!",
       "simpleEn": "0 — the null that counts; not a Mega-Sena dezena; ≠ letter O. Valeu !!!",
       "simpleEs": "0 — el nulo que cuenta; no es decena de la Mega-Sena; ≠ letra O. ¡Valeu !!!"
+    },
+    {
+      "id": "letra-x",
+      "word": "letra X",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-letra-x.html",
+      "simple": "24.ª letra (xis). Vários sons em PT. O x de conexão é nexo, não ç. ≠ app ≠ Xiaomi. Valeu !!!",
+      "simpleEn": "24th letter (xis). Several PT sounds. The x in conexão is nexus, not ç. ≠ app ≠ Xiaomi. Valeu !!!",
+      "simpleEs": "24.ª letra (xis). Varios sonidos en PT. La x de conexão es nexo, no ç. ≠ app ≠ Xiaomi. ¡Valeu !!!"
     }
   ]
 }
