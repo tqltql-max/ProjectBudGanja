@@ -169,9 +169,18 @@ function buildHtml() {
       <span class="chip chip-red">Vermelho</span>
       <span class="chip chip-yellow">Amarelo</span>
     </div>
-    <p class="read"><strong>Branco</strong> — atenção. Página, gelo, olhar limpo. Não se funde com o vermelho do perigo nem com o amarelo do cuidado.</p>
-    <p class="read"><strong>Vermelho</strong> — perigo. Semáforo, alarme, ameaça nua. Não se funde com a Raiva da Riley.</p>
-    <p class="read"><strong>Amarelo</strong> — cuidado. Luz de trânsito: ainda dá tempo. Não se funde com a Alegria.</p>
+    <p class="read"><strong>Branco</strong> — atenção. 1.º elo: eu · nós. Página, gelo, olhar limpo. Não se funde com o vermelho do perigo nem com o amarelo do cuidado.</p>
+    <p class="read"><strong>Vermelho</strong> — perigo. 3.º elo: ele · ela · eles · elas. Semáforo, alarme; a orelha cola elos em eles. Não se funde com a Raiva da Riley.</p>
+    <p class="read"><strong>Amarelo</strong> — cuidado. 2.º elo: tu · vós. Luz de trânsito: ainda dá tempo. Não se funde com a Alegria.</p>
+  </section>
+
+  <section>
+    <p class="kicker">Cruzamento · 3 × 3</p>
+    <h2>Cores × elos</h2>
+    <p>As 3 cores-ofício cruzam os 3 elos da conjugação. A cor avisa; a pessoa fala. Não se fundem.</p>
+    <p class="read"><strong>Branco × 1.º</strong> — eu · nós — quem fala olha limpo.</p>
+    <p class="read"><strong>Amarelo × 2.º</strong> — tu · vós — com quem se fala pede medida.</p>
+    <p class="read"><strong>Vermelho × 3.º</strong> — ele · ela · eles · elas — de quem se fala; o ausente.</p>
   </section>
 
   <section>
@@ -204,6 +213,7 @@ function buildHtml() {
       <li><strong>Bom dia, Inverno</strong><span>Tamara Klink — o livro que pediu para circular.</span></li>
       <li><strong>Vida</strong><span>Conto familiar do laboratório.</span></li>
       <li><strong>Guia de Palavras</strong><span>Léxico inspeccionado.</span></li>
+      <li><strong>Conjugação · 3 elos</strong><span>Cruzamento com as 3 cores-ofício.</span></li>
     </ul>
   </section>
 

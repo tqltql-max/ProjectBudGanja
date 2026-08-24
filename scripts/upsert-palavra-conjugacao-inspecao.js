@@ -108,7 +108,7 @@ async function syncSql(post) {
 const ZU_TAIL = /zu:\s*"[^"]*"\s*\},?\r?\n/;
 
 const CONJ_BLOCK =
-  '    "conjugação": { tone: "craft", category: "Gramática", mundane: "Jugo do verbo às pessoas — 1.ª, 2.ª, 3.ª.", gloss: "Lat. coniugātiō ← coniugāre (iugum); 3 elos; elos ≠ eles/elas; nós / vós / eles; sala com latim; Valeu !!!", href: "' +
+  '    "conjugação": { tone: "craft", category: "Gramática", mundane: "Jugo do verbo às pessoas — 1.ª, 2.ª, 3.ª.", gloss: "Lat. coniugātiō ← coniugāre (iugum); 3 elos × 3 cores (branco/eu · amarelo/tu · vermelho/ele); elos ≠ eles/elas; Valeu !!!", href: "' +
   HREF +
   '", en: "conjugation", es: "conjugación", fr: "conjugaison", it: "coniugazione", de: "Konjugation", el: "κλίση ρήματος", la: "coniugatio", yo: "ìsopọ̀ ọ̀rọ̀-ìṣe", sw: "upambanuzi wa kitenzi", gez: "coniugatio", nl: "vervoeging", pl: "koniugacja", ru: "spryazhenie", uk: "diioslivna paradyhma", zh: "动词变位", ja: "活用", ko: "동사 활용", ar: "tasrif", he: "netiyat poal", hi: "kriya rupakaran", tr: "çekim", sv: "böjning", da: "bøjning", no: "bøying", fi: "taivutus", cs: "časování", ro: "conjugare", hu: "ige ragozas", ca: "conjugació", gl: "conxugación", eu: "aditz jokatzea", gn: "ñemoñe\'ẽ", qu: "rimay tikray", eo: "konjugacio", vi: "chia động từ", id: "konjugasi", th: "การผันกริยา", hr: "konjugacija", sk: "časovanie", ga: "réimniú", cy: "cyugiad", ha: "juyawa", am: "የግስ ለውጥ", fa: "صرف فعل", bn: "ক্রিয়ার রূপ", zu: "ukuguqulwa kwesenzo" },\n';
 
@@ -184,9 +184,9 @@ function upsertSug(sug, post) {
     tipo: 'palavra',
     priority: 1,
     status: 'feita',
-    why: 'Palavras: conjugação ← coniugātiō; 3 elos; elos ≠ eles/elas; nós/vós/eles; sala com latim; Valeu !!!',
-    whyEn: 'Words: conjugação ← coniugātiō; 3 links; elos ≠ eles/elas; nós/vós/eles; shared with Latin; Valeu !!!',
-    whyEs: 'Palabras: conjugação ← coniugātiō; 3 eslabones; elos ≠ eles/elas; sala con latín; ¡Valeu !!!',
+    why: 'Palavras: conjugação ← coniugātiō; 3 elos × 3 cores (branco/eu · amarelo/tu · vermelho/ele); elos ≠ eles/elas; Valeu !!!',
+    whyEn: 'Words: conjugação ← coniugātiō; 3 links × 3 colors; elos ≠ eles/elas; Valeu !!!',
+    whyEs: 'Palabras: conjugação ← coniugātiō; 3 eslabones × 3 colores; elos ≠ eles/elas; ¡Valeu !!!',
     suggestedSlug: post.slug,
     doneHref: HREF,
     seriesHint: 'palavras-origem',
@@ -209,23 +209,23 @@ function upsertGuia(guia) {
       fromTitle: false,
       href: HREF,
       simple:
-        'Lat. coniugātiō ← coniugāre (jugo). 3 elos: eu/nós · tu/vós · ele·ela/eles·elas. Elos ≠ eles/elas. Sala com latim. Valeu !!!',
+        'Lat. coniugātiō ← coniugāre (jugo). 3 elos × 3 cores: branco/eu·nós · amarelo/tu·vós · vermelho/ele·elas. Elos ≠ eles/elas. Valeu !!!',
       simpleEn:
-        'Lat. coniugātiō ← coniugāre (yoke). 3 links: eu/nós · tu/vós · ele·ela/eles·elas. Elos ≠ eles/elas. Shared with Latin. Valeu !!!',
+        'Lat. coniugātiō ← coniugāre (yoke). 3 links × 3 colors: white/I·we · yellow/you · red/he·they. Elos ≠ eles/elas. Valeu !!!',
       simpleEs:
-        'Lat. coniugātiō ← coniugāre (yugo). 3 eslabones. Elos ≠ eles/elas. Sala con latín. ¡Valeu !!!',
+        'Lat. coniugātiō ← coniugāre (yugo). 3 eslabones × 3 colores. Elos ≠ eles/elas. ¡Valeu !!!',
       history:
         'Conjugação vem do latim coniugātiō, de coniugāre — pôr no mesmo jugo (iugum), ninho de iungere (juntos). As pessoas do verbo português herdam ego, tū, nōs, vōs do latim.',
       curiosities:
-        'A orelha cola elos (anéis) em eles (pronome). No BR, vocês pede desinência de 3.ª. Pessoa gramatical ≠ série Pessoas (biografias). Valeu !!!',
+        'Cruzamento: branco=atenção=1.ª; amarelo=cuidado=2.ª; vermelho=perigo=3.ª. A orelha cola elos em eles. No BR, vocês pede desinência de 3.ª. Valeu !!!',
       historyEn:
         'Portuguese conjugação comes from Latin coniugātiō, from coniugāre — to yoke together (iugum), kin to iungere (juntos). The persons inherit ego, tū, nōs, vōs.',
       curiositiesEn:
-        'The ear glues elos (rings) to eles (they). In Brazilian Portuguese, vocês takes 3rd-person endings. Grammatical person ≠ the People biography series. Valeu !!!',
+        'Cross: white=attention=1st; yellow=care=2nd; red=danger=3rd. The ear glues elos to eles. In BR, vocês takes 3rd-person endings. Valeu !!!',
       historyEs:
         'Conjugação viene del latín coniugātiō, de coniugāre — uncir al mismo yugo (iugum), nido de iungere (juntos). Las personas heredan ego, tū, nōs, vōs.',
       curiositiesEs:
-        'El oído pega elos (anillos) en eles (ellos). En BR, vocês pide desinencia de 3.ª. Persona gramatical ≠ serie Personas. ¡Valeu !!!'
+        'Cruce: blanco=atención=1.ª; amarillo=cuidado=2.ª; rojo=peligro=3.ª. El oído pega elos en eles. En BR, vocês pide desinencia de 3.ª. ¡Valeu !!!'
     },
     ['latim', 'lingua-portuguesa', 'etimologia']
   );

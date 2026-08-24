@@ -6,19 +6,19 @@
       id: 'branco',
       label: 'Branco',
       tone: 'white',
-      text: 'Branco é atenção. Página, gelo, olhar limpo. Não se funde com o vermelho do perigo nem com o amarelo do cuidado: o ofício desta cor é prestar atenção.'
+      text: 'Branco é atenção. 1.º elo: eu · nós — quem fala olha limpo. Não se funde com o vermelho do perigo nem com o amarelo do cuidado.'
     },
     {
       id: 'vermelho',
       label: 'Vermelho',
       tone: 'red',
-      text: 'Vermelho é perigo. Semáforo, alarme, ameaça nua. Não se funde com a Raiva da Riley — a cor marca o perigo; a emoção tem ficha própria.'
+      text: 'Vermelho é perigo. 3.º elo: ele · ela · eles · elas — de quem se fala; o ausente; a orelha cola elos em eles. Não se funde com a Raiva da Riley.'
     },
     {
       id: 'amarelo',
       label: 'Amarelo',
       tone: 'yellow',
-      text: 'Amarelo é cuidado. Luz de trânsito: ainda dá tempo. Não se funde com a Alegria — o aviso amarelo pede medida, não festa.'
+      text: 'Amarelo é cuidado. 2.º elo: tu · vós — com quem se fala; ainda dá tempo; tu vs você é medida, não festa. Não se funde com a Alegria.'
     }
   ];
 
