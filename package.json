@@ -25,7 +25,6 @@
     "build:animais": "node scripts/build-animais.js",
     "build:fungos": "node scripts/build-fungos.js",
     "build:tecnologia": "node scripts/build-tecnologia.js",
-    "build:mitologia": "node scripts/build-mitologia.js",
     "build:search": "node scripts/build-search-index.js",
     "build:sitemap": "node scripts/build-sitemap.js",
     "build:assetlinks": "node scripts/build-assetlinks.js",

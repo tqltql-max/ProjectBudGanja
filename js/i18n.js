@@ -415,7 +415,6 @@
     applyAnimalPageTranslations();
     applyAnimalHubTranslations();
     applyTecnologiaHubTranslations();
-    applyMitologiaHubTranslations();
     applyHubPageTranslations();
     syncPostI18nNotes();
   }
@@ -442,7 +441,6 @@
       main.querySelector('#animais-grid') ||
       main.querySelector('#fungos-grid') ||
       main.querySelector('#tecnologia-grid') ||
-      main.querySelector('#mitologia-grid') ||
       main.querySelector('#videos-player') ||
       document.body.dataset.page === 'equipamentos' ||
       document.body.dataset.page === 'objetos' ||
@@ -454,7 +452,6 @@
       document.body.dataset.page === 'fungos' ||
       document.body.dataset.page === 'fungo' ||
       document.body.dataset.page === 'tecnologia' ||
-      document.body.dataset.page === 'mitologia' ||
       document.body.dataset.postSlug
     ) {
       return;
@@ -591,28 +588,6 @@
     });
   }
 
-  function applyMitologiaHubTranslations() {
-    if (!document.body || document.body.dataset.page !== 'mitologia') return;
-    var loc = currentLocale === 'en' ? 'en' : currentLocale === 'es' ? 'es' : 'pt';
-    document.querySelectorAll('#mitologia-grid .planta-card').forEach(function (card) {
-      var nome =
-        (card.getAttribute('data-nome-' + loc) || '').trim() ||
-        (card.getAttribute('data-nome-pt') || '').trim();
-      var summary =
-        (card.getAttribute('data-summary-' + loc) || '').trim() ||
-        (card.getAttribute('data-summary-pt') || '').trim();
-      var kicker =
-        (card.getAttribute('data-kicker-' + loc) || '').trim() ||
-        (card.getAttribute('data-kicker-pt') || '').trim();
-      var titleEl = card.querySelector('[data-myth-nome]');
-      var summaryEl = card.querySelector('[data-myth-summary]');
-      var kickerEl = card.querySelector('[data-myth-kicker]');
-      if (titleEl && nome) titleEl.textContent = nome;
-      if (summaryEl && summary) summaryEl.textContent = summary;
-      if (kickerEl && kicker) kickerEl.textContent = kicker;
-    });
-  }
-
   function applyAnimalPageTranslations() {
     if (!document.body || document.body.dataset.page !== 'animal') return;
     var dataEl = document.getElementById('animal-i18n-data');
@@ -689,7 +664,6 @@
     fungos: 'fungos',
     fungo: 'fungos',
     tecnologia: 'tecnologia',
-    mitologia: 'mitologia',
     videos: 'videos',
     inspecoes: 'inspections',
     pesquisas: 'research',

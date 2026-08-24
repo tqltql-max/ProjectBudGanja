@@ -1,0 +1,590 @@
+{
+  "updatedAt": "2026-08-24T13:29:38.566Z",
+  "disclaimer": "Catálogo educacional de ofício técnico: vocábulos, aparelhos e jargão de informática. Não é manual de montagem, não é loja, não é metáfora de pessoas. O jumper ATA «escravo» tem ficha própria — distinta de escravidão.",
+  "items": [
+    {
+      "id": "tecnologia",
+      "slug": "tecnologia",
+      "nome": "Tecnologia",
+      "nomeEn": "Technology",
+      "nomeEs": "Tecnología",
+      "kicker": "Palavras · lema",
+      "kickerEn": "Words · lemma",
+      "kickerEs": "Palabras · lema",
+      "summary": "Gr. tékhnē + lógos — o ofício dos aparelhos e métodos. Lema deste catálogo.",
+      "summaryEn": "Gr. tékhnē + lógos — the craft of devices and methods. Lemma of this catalog.",
+      "summaryEs": "Gr. tékhnē + lógos — el oficio de aparatos y métodos. Lema de este catálogo.",
+      "category": "lema",
+      "tags": [
+        "lexico",
+        "hub",
+        "tekhne"
+      ],
+      "href": "/posts/post-inspecao-palavra-tecnologia.html",
+      "featured": true
+    },
+    {
+      "id": "hd-escravo",
+      "slug": "hd-escravo",
+      "nome": "HD escravo (slave)",
+      "nomeEn": "HD slave (ATA jumper)",
+      "nomeEs": "HD esclavo (jumper ATA)",
+      "kicker": "Hardware · ATA/IDE",
+      "kickerEn": "Hardware · ATA/IDE",
+      "kickerEs": "Hardware · ATA/IDE",
+      "summary": "Jumper mestre/escravo do disco rígido — jargão histórico, não metáfora de pessoas. Smash de campo: slayr.",
+      "summaryEn": "Hard-disk master/slave jumper — historical jargon, not a metaphor for people. Field slip: slayr.",
+      "summaryEs": "Jumper maestro/esclavo del disco duro — jerga histórica, no metáfora de personas. Lapso: slayr.",
+      "category": "hardware",
+      "tags": [
+        "hd",
+        "ata",
+        "ide",
+        "slave",
+        "jumper"
+      ],
+      "href": "/posts/post-inspecao-palavra-hd-escravo.html",
+      "featured": true
+    },
+    {
+      "id": "celular",
+      "slug": "celular",
+      "nome": "Celular",
+      "nomeEn": "Mobile phone",
+      "nomeEs": "Celular",
+      "kicker": "Hardware · saúde",
+      "kickerEn": "Hardware · health",
+      "kickerEs": "Hardware · salud",
+      "summary": "Smartphone como equipamento quotidiano — riscos para a saúde de crianças e adolescentes.",
+      "summaryEn": "Smartphone as everyday equipment — health risks for children and adolescents.",
+      "summaryEs": "Smartphone como equipo cotidiano — riesgos para la salud de niños y adolescentes.",
+      "category": "hardware",
+      "tags": [
+        "celular",
+        "saude",
+        "criancas"
+      ],
+      "href": "/posts/post-inspecao-celular-riscos-saude-criancas.html"
+    },
+    {
+      "id": "xiaomi",
+      "slug": "xiaomi",
+      "nome": "Xiaomi",
+      "nomeEn": "Xiaomi",
+      "nomeEs": "Xiaomi",
+      "kicker": "Hardware · marca",
+      "kickerEn": "Hardware · brand",
+      "kickerEs": "Hardware · marca",
+      "summary": "小米 milheto — marca × grão × ídolo tech. Smash de campo: xioomi.",
+      "summaryEn": "小米 millet — brand × grain × tech idol. Field slip: xioomi.",
+      "summaryEs": "小米 mijo — marca × grano × ídolo tech. Lapso: xioomi.",
+      "category": "hardware",
+      "tags": [
+        "xiaomi",
+        "marca",
+        "celular"
+      ],
+      "href": "/posts/post-inspecao-palavra-xiaomi.html"
+    },
+    {
+      "id": "aoc",
+      "slug": "aoc",
+      "nome": "AOC",
+      "nomeEn": "AOC",
+      "nomeEs": "AOC",
+      "kicker": "Hardware · monitor",
+      "kickerEn": "Hardware · monitor",
+      "kickerEs": "Hardware · monitor",
+      "summary": "Admiral Overseas Corporation — sigla de ecrã na mesa; ≠ AO90.",
+      "summaryEn": "Admiral Overseas Corporation — monitor acronym; ≠ AO90.",
+      "summaryEs": "Admiral Overseas Corporation — sigla de pantalla; ≠ AO90.",
+      "category": "hardware",
+      "tags": [
+        "monitor",
+        "sigla",
+        "ecra"
+      ],
+      "href": "/posts/post-inspecao-palavra-aoc.html"
+    },
+    {
+      "id": "interruptor",
+      "slug": "interruptor",
+      "nome": "Interruptor",
+      "nomeEn": "Switch",
+      "nomeEs": "Interruptor",
+      "kicker": "Hardware · gesto",
+      "kickerEn": "Hardware · gesture",
+      "kickerEs": "Hardware · gesto",
+      "summary": "O objecto que corta ou deixa passar — irmão de ligar/desligar.",
+      "summaryEn": "The object that cuts or lets through — sibling of on/off.",
+      "summaryEs": "El objeto que corta o deja pasar — hermano de ligar/desligar.",
+      "category": "hardware",
+      "tags": [
+        "interruptor",
+        "ligar",
+        "energia"
+      ],
+      "href": "/posts/post-inspecao-palavra-interruptor.html"
+    },
+    {
+      "id": "ligar-desligar",
+      "slug": "ligar-desligar",
+      "nome": "Ligar / desligar",
+      "nomeEn": "On / off",
+      "nomeEs": "Encender / apagar",
+      "kicker": "Hardware · par",
+      "kickerEn": "Hardware · pair",
+      "kickerEs": "Hardware · par",
+      "summary": "O par do circuito: pôr em marcha e cortar. Gesto, não metáfora moral.",
+      "summaryEn": "The circuit pair: start and cut. Gesture, not a moral metaphor.",
+      "summaryEs": "El par del circuito: poner en marcha y cortar. Gesto, no metáfora moral.",
+      "category": "hardware",
+      "tags": [
+        "ligar",
+        "desligar",
+        "circuito"
+      ],
+      "href": "/posts/post-inspecao-palavra-ligar-desligar.html"
+    },
+    {
+      "id": "internet-discada",
+      "slug": "internet-discada",
+      "nome": "Internet discada",
+      "nomeEn": "Dial-up internet",
+      "nomeEs": "Internet discada",
+      "kicker": "Rede · dial-up",
+      "kickerEn": "Network · dial-up",
+      "kickerEs": "Red · dial-up",
+      "summary": "O cano que telefona — a sessão ocupa a voz. Smash: niocenchcadaro.",
+      "summaryEn": "The pipe that phones — the session occupies the voice. Smash: niocenchcadaro.",
+      "summaryEs": "El caño que llama — la sesión ocupa la voz. Smash: niocenchcadaro.",
+      "category": "rede",
+      "tags": [
+        "discada",
+        "modem",
+        "telefone"
+      ],
+      "href": "/posts/post-inspecao-palavra-internet-discada.html"
+    },
+    {
+      "id": "dsl",
+      "slug": "dsl",
+      "nome": "DSL",
+      "nomeEn": "DSL",
+      "nomeEs": "DSL",
+      "kicker": "Rede · banda larga",
+      "kickerEn": "Network · broadband",
+      "kickerEs": "Red · banda ancha",
+      "summary": "Digital Subscriber Line — a linha que não canta o modem. ≠ discada.",
+      "summaryEn": "Digital Subscriber Line — the line that does not sing the modem. ≠ dial-up.",
+      "summaryEs": "Digital Subscriber Line — la línea que no canta el módem. ≠ discada.",
+      "category": "rede",
+      "tags": [
+        "dsl",
+        "banda-larga",
+        "linha"
+      ],
+      "href": "/posts/post-inspecao-palavra-dsl.html"
+    },
+    {
+      "id": "login",
+      "slug": "login",
+      "nome": "Login",
+      "nomeEn": "Login",
+      "nomeEs": "Login",
+      "kicker": "Rede · porta",
+      "kickerEn": "Network · door",
+      "kickerEs": "Red · puerta",
+      "summary": "A porta depois do modem — log in, não o nome da pessoa. Smash: Longin.",
+      "summaryEn": "The door after the modem — log in, not a person’s name. Slip: Longin.",
+      "summaryEs": "La puerta después del módem — log in, no el nombre de la persona. Lapso: Longin.",
+      "category": "rede",
+      "tags": [
+        "login",
+        "porta",
+        "sessao"
+      ],
+      "href": "/posts/post-inspecao-palavra-login.html"
+    },
+    {
+      "id": "conexao",
+      "slug": "conexao",
+      "nome": "Conexão",
+      "nomeEn": "Connection",
+      "nomeEs": "Conexión",
+      "kicker": "Rede · elo",
+      "kickerEn": "Network · link",
+      "kickerEs": "Red · eslabón",
+      "summary": "O elo que junta dois pontos — linha, cabo, sessão. Não é o login.",
+      "summaryEn": "The link that joins two points — line, cable, session. Not the login.",
+      "summaryEs": "El eslabón que junta dos puntos — línea, cable, sesión. No es el login.",
+      "category": "rede",
+      "tags": [
+        "conexao",
+        "elo",
+        "rede"
+      ],
+      "href": "/posts/post-inspecao-palavra-conexao.html"
+    },
+    {
+      "id": "tele",
+      "slug": "tele",
+      "nome": "Tele",
+      "nomeEn": "Tele",
+      "nomeEs": "Tele",
+      "kicker": "Rede · prefixo",
+      "kickerEn": "Network · prefix",
+      "kickerEs": "Red · prefijo",
+      "summary": "Gr. têle «longe» — prefixo e recorte brasileiro da televisão. ≠ tela.",
+      "summaryEn": "Gr. têle “far” — prefix and Brazilian clipping of television. ≠ tela.",
+      "summaryEs": "Gr. têle «lejos» — prefijo y recorte brasileño de televisión. ≠ tela.",
+      "category": "rede",
+      "tags": [
+        "tele",
+        "prefixo",
+        "tv"
+      ],
+      "href": "/posts/post-inspecao-palavra-tele.html"
+    },
+    {
+      "id": "homepage",
+      "slug": "homepage",
+      "nome": "Homepage",
+      "nomeEn": "Homepage",
+      "nomeEs": "Homepage",
+      "kicker": "Software · web",
+      "kickerEn": "Software · web",
+      "kickerEs": "Software · web",
+      "summary": "A página-casa do sítio — porta de entrada, não o laboratório inteiro.",
+      "summaryEn": "The site’s home page — front door, not the whole lab.",
+      "summaryEs": "La página-casa del sitio — puerta de entrada, no todo el laboratorio.",
+      "category": "software",
+      "tags": [
+        "homepage",
+        "web",
+        "porta"
+      ],
+      "href": "/posts/post-inspecao-palavra-homepage.html"
+    },
+    {
+      "id": "programacao",
+      "slug": "programacao",
+      "nome": "Programação",
+      "nomeEn": "Programming",
+      "nomeEs": "Programación",
+      "kicker": "Software · grámma",
+      "kickerEn": "Software · grámma",
+      "kickerEs": "Software · grámma",
+      "summary": "Gr. prógramma — o escrito à frente; ofício do código. Étimo distinto de profanar. Ficha no umbral pro-.",
+      "summaryEn": "Gr. prógramma — the writing set in front; craft of code. Distinct etymon from profanar.",
+      "summaryEs": "Gr. prógramma — lo escrito delante; oficio del código. Étimo distinto de profanar.",
+      "category": "software",
+      "tags": ["programacao", "script", "lexico", "pro"],
+      "href": "/posts/post-inspecao-palavra-profanar.html",
+      "featured": true
+    },
+    {
+      "id": "save-game",
+      "slug": "save-game",
+      "nome": "Save game",
+      "nomeEn": "Save game",
+      "nomeEs": "Save game",
+      "kicker": "Software · gravar",
+      "kickerEn": "Software · save",
+      "kickerEs": "Software · guardar",
+      "summary": "Gravar o estado do jogo — save ≠ save-game ≠ backup. Ofício de ficheiro.",
+      "summaryEn": "Save the game state — save ≠ save-game ≠ backup. File craft.",
+      "summaryEs": "Grabar el estado del juego — save ≠ save-game ≠ backup. Oficio de archivo.",
+      "category": "software",
+      "tags": [
+        "save",
+        "jogo",
+        "ficheiro"
+      ],
+      "href": "/posts/post-inspecao-palavra-save-game.html"
+    },
+    {
+      "id": "restore",
+      "slug": "restore",
+      "nome": "Restore / backup",
+      "nomeEn": "Restore / backup",
+      "nomeEs": "Restore / backup",
+      "kicker": "Software · reserva",
+      "kickerEn": "Software · spare copy",
+      "kickerEs": "Software · reserva",
+      "summary": "Restore · back · backup · up — pôr de pé de novo. Smash: Restoure.",
+      "summaryEn": "Restore · back · backup · up — set back on its feet. Slip: Restoure.",
+      "summaryEs": "Restore · back · backup · up — poner de pie otra vez. Lapso: Restoure.",
+      "category": "software",
+      "tags": [
+        "restore",
+        "backup",
+        "up"
+      ],
+      "href": "/posts/post-inspecao-palavra-restore.html"
+    },
+    {
+      "id": "backspace",
+      "slug": "backspace",
+      "nome": "Backspace",
+      "nomeEn": "Backspace",
+      "nomeEs": "Backspace",
+      "kicker": "Software · tecla",
+      "kickerEn": "Software · key",
+      "kickerEs": "Software · tecla",
+      "summary": "A tecla que apaga para trás — ≠ backup. Gesto de correcção.",
+      "summaryEn": "The key that deletes backward — ≠ backup. Correction gesture.",
+      "summaryEs": "La tecla que borra hacia atrás — ≠ backup. Gesto de corrección.",
+      "category": "software",
+      "tags": [
+        "tecla",
+        "apagar",
+        "teclado"
+      ],
+      "href": "/posts/post-inspecao-palavra-backspace.html"
+    },
+    {
+      "id": "script",
+      "slug": "script",
+      "nome": "Script",
+      "nomeEn": "Script",
+      "nomeEs": "Script",
+      "kicker": "Software · texto",
+      "kickerEn": "Software · text",
+      "kickerEs": "Software · texto",
+      "summary": "Texto que a máquina executa — roteiro × código. Não é tutorial de exploit.",
+      "summaryEn": "Text the machine runs — screenplay × code. Not an exploit tutorial.",
+      "summaryEs": "Texto que la máquina ejecuta — guion × código. No es tutorial de exploit.",
+      "category": "software",
+      "tags": [
+        "script",
+        "codigo",
+        "roteiro"
+      ],
+      "href": "/posts/post-inspecao-palavra-script.html"
+    },
+    {
+      "id": "for-if-else",
+      "slug": "for-if-else",
+      "nome": "For / If / Else",
+      "nomeEn": "For / If / Else",
+      "nomeEs": "For / If / Else",
+      "kicker": "Programação · aula 0",
+      "kickerEn": "Programming · lesson 0",
+      "kickerEs": "Programación · aula 0",
+      "summary": "Decidir, o outro caminho, repetir com fim. Aula 0 de programar neste catálogo.",
+      "summaryEn": "Decide, the other path, repeat with an end. Programming lesson 0 in this catalog.",
+      "summaryEs": "Decidir, el otro camino, repetir con fin. Aula 0 de programar en este catálogo.",
+      "category": "programacao",
+      "tags": [
+        "if",
+        "else",
+        "for",
+        "aula",
+        "javascript"
+      ],
+      "href": "/posts/post-inspecao-palavra-for-if-else.html",
+      "featured": true
+    },
+    {
+      "id": "node",
+      "slug": "node",
+      "nome": "Node",
+      "nomeEn": "Node",
+      "nomeEs": "Node",
+      "kicker": "Software · runtime",
+      "kickerEn": "Software · runtime",
+      "kickerEs": "Software · runtime",
+      "summary": "Nó da rede e runtime JavaScript — Node.js no ofício do sítio.",
+      "summaryEn": "Network node and JavaScript runtime — Node.js in this site’s craft.",
+      "summaryEs": "Nodo de la red y runtime JavaScript — Node.js en el oficio del sitio.",
+      "category": "software",
+      "tags": [
+        "node",
+        "javascript",
+        "runtime"
+      ],
+      "href": "/posts/post-inspecao-palavra-node.html"
+    },
+    {
+      "id": "grok",
+      "slug": "grok",
+      "nome": "Grok",
+      "nomeEn": "Grok",
+      "nomeEs": "Grok",
+      "kicker": "Software · compreender",
+      "kickerEn": "Software · understand",
+      "kickerEs": "Software · comprender",
+      "summary": "Heinlein: compreender por dentro. Modelo e verbo — sem culto de marca.",
+      "summaryEn": "Heinlein: to understand from inside. Model and verb — no brand cult.",
+      "summaryEs": "Heinlein: comprender por dentro. Modelo y verbo — sin culto de marca.",
+      "category": "software",
+      "tags": [
+        "grok",
+        "ia",
+        "compreender"
+      ],
+      "href": "/posts/post-inspecao-palavra-grok.html"
+    },
+    {
+      "id": "upsert",
+      "slug": "upsert",
+      "nome": "Upsert",
+      "nomeEn": "Upsert",
+      "nomeEs": "Upsert",
+      "kicker": "Software · gravar",
+      "kickerEn": "Software · write",
+      "kickerEs": "Software · grabar",
+      "summary": "Update + insert — gravar se existe, criar se não. Ofício de fichas.",
+      "summaryEn": "Update + insert — write if it exists, create if not. Sheet craft.",
+      "summaryEs": "Update + insert — grabar si existe, crear si no. Oficio de fichas.",
+      "category": "software",
+      "tags": [
+        "upsert",
+        "banco",
+        "gravar"
+      ],
+      "href": "/posts/post-inspecao-palavra-upsert.html"
+    },
+    {
+      "id": "commitar",
+      "slug": "commitar",
+      "nome": "Commitar",
+      "nomeEn": "Commit",
+      "nomeEs": "Commitar",
+      "kicker": "Software · git",
+      "kickerEn": "Software · git",
+      "kickerEs": "Software · git",
+      "summary": "O gesto de firmar o lote no git — commit. Português de oficina.",
+      "summaryEn": "The gesture of sealing the batch in git — commit. Workshop Portuguese.",
+      "summaryEs": "El gesto de firmar el lote en git — commit. Portugués de taller.",
+      "category": "software",
+      "tags": [
+        "git",
+        "commit",
+        "versao"
+      ],
+      "href": "/posts/post-inspecao-palavra-commitar.html"
+    },
+    {
+      "id": "dont-show-again",
+      "slug": "dont-show-again",
+      "nome": "Don't show again",
+      "nomeEn": "Don't show again",
+      "nomeEs": "Don't show again",
+      "kicker": "Software · diálogo",
+      "kickerEn": "Software · dialog",
+      "kickerEs": "Software · diálogo",
+      "summary": "A caixa que pede para não pôr à vista outra vez — preferência, não burla.",
+      "summaryEn": "The box that asks not to show again — preference, not a bypass.",
+      "summaryEs": "La caja que pide no mostrar otra vez — preferencia, no truco.",
+      "category": "software",
+      "tags": [
+        "dialogo",
+        "preferencia",
+        "aviso"
+      ],
+      "href": "/posts/post-inspecao-expressao-dont-show-again.html"
+    },
+    {
+      "id": "miss-click",
+      "slug": "miss-click",
+      "nome": "Miss click",
+      "nomeEn": "Miss click",
+      "nomeEs": "Miss click",
+      "kicker": "Software · gesto",
+      "kickerEn": "Software · gesture",
+      "kickerEs": "Software · gesto",
+      "summary": "Clique que falhou o alvo — mis- + click. ≠ Miss (título).",
+      "summaryEn": "Click that missed the target — mis- + click. ≠ Miss (title).",
+      "summaryEs": "Clic que falló el blanco — mis- + click. ≠ Miss (título).",
+      "category": "software",
+      "tags": [
+        "clique",
+        "rato",
+        "erro"
+      ],
+      "href": "/posts/post-inspecao-expressao-miss-click.html"
+    },
+    {
+      "id": "multitask",
+      "slug": "multitask",
+      "nome": "Multitask",
+      "nomeEn": "Multitask",
+      "nomeEs": "Multitask",
+      "kicker": "Software · atenção",
+      "kickerEn": "Software · attention",
+      "kickerEs": "Software · atención",
+      "summary": "Várias tarefas no mesmo sopro — ofício de CPU e de atenção humana.",
+      "summaryEn": "Several tasks in one breath — CPU craft and human attention.",
+      "summaryEs": "Varias tareas en el mismo soplo — oficio de CPU y de atención humana.",
+      "category": "software",
+      "tags": [
+        "multitask",
+        "atencao",
+        "cpu"
+      ],
+      "href": "/posts/post-inspecao-palavra-multitask.html"
+    },
+    {
+      "id": "skill",
+      "slug": "skill",
+      "nome": "Skill",
+      "nomeEn": "Skill",
+      "nomeEs": "Skill",
+      "kicker": "Software · ofício",
+      "kickerEn": "Software · craft",
+      "kickerEs": "Software · oficio",
+      "summary": "Habilidade treinável — germânico. Vizinha de tékhnē, não o mesmo vocábulo.",
+      "summaryEn": "Trainable ability — Germanic. Neighbour of tékhnē, not the same word.",
+      "summaryEs": "Habilidad entrenable — germánico. Vecina de tékhnē, no el mismo vocablo.",
+      "category": "software",
+      "tags": [
+        "skill",
+        "oficio",
+        "habilidade"
+      ],
+      "href": "/posts/post-inspecao-palavra-skill.html"
+    },
+    {
+      "id": "jobs",
+      "slug": "jobs",
+      "nome": "Jobs (palavra)",
+      "nomeEn": "Jobs (word)",
+      "nomeEs": "Jobs (palabra)",
+      "kicker": "Pessoas · vocábulo",
+      "kickerEn": "People · word",
+      "kickerEs": "Personas · vocablo",
+      "summary": "O apelido como palavra — ídolo tech × ofício. Elo com a ficha da pessoa.",
+      "summaryEn": "The surname as a word — tech idol × craft. Linked to the person sheet.",
+      "summaryEs": "El apellido como palabra — ídolo tech × oficio. Elo con la ficha de la persona.",
+      "category": "pessoas",
+      "tags": [
+        "jobs",
+        "idolo",
+        "apple"
+      ],
+      "href": "/posts/post-inspecao-palavra-jobs.html"
+    },
+    {
+      "id": "steve-jobs",
+      "slug": "steve-jobs",
+      "nome": "Steve Jobs",
+      "nomeEn": "Steve Jobs",
+      "nomeEs": "Steve Jobs",
+      "kicker": "Pessoas · figura",
+      "kickerEn": "People · figure",
+      "kickerEs": "Personas · figura",
+      "summary": "A pessoa — limite de tecnologia em casa (2010), não «celular só aos 18».",
+      "summaryEn": "The person — household tech limits (2010), not “phone only at 18”.",
+      "summaryEs": "La persona — límite de tecnología en casa (2010), no «celular solo a los 18».",
+      "category": "pessoas",
+      "tags": [
+        "jobs",
+        "apple",
+        "pessoa"
+      ],
+      "href": "/posts/post-inspecao-figura-steve-jobs.html"
+    }
+  ]
+}

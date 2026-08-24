@@ -125,6 +125,15 @@
     color: var(--color-text-muted, #ccc);
 }
 
+body[data-page="tecnologia"] .planta-card--featured {
+    border-color: rgba(93, 173, 226, 0.45);
+    box-shadow: 0 0 0 1px rgba(93, 173, 226, 0.18);
+}
+
+body[data-page="tecnologia"] .objetos-catalog-kicker {
+    margin: 0 0 4px;
+}
+
 .planta-card-inspection {
     display: inline-flex;
     align-self: flex-start;

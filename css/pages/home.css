@@ -674,6 +674,14 @@
     --card-label: #e8fffa;
 }
 
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--tecnologia {
+    --card-accent: #5dade2;
+    --card-accent-soft: rgba(93, 173, 226, 0.14);
+    --card-accent-strong: rgba(52, 152, 219, 0.32);
+    --card-accent-border: rgba(93, 173, 226, 0.42);
+    --card-label: #eaf4ff;
+}
+
 :is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--cultivo,
 :is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--pesquisas {
     --card-accent: #1abc9c;
