@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:29:55.750Z",
+  "updatedAt": "2026-08-24T13:05:54.206Z",
   "disclaimer": "Fichas educacionais sobre animais, criação e produtos associados. Não substituem orientação veterinária, zootécnica nem aconselhamento alimentar profissional.",
   "animals": [
     {
@@ -30,6 +30,12 @@
       "relatedUnifesp": false,
       "cover": null,
       "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-racao.html",
+          "label": "Inspeção: Ração para animais — do saco industrial ao comedouro",
+          "labelEn": "Inspection: Animal feed — from the industrial bag to the bowl",
+          "labelEs": "Inspección: Pienso para animales — del saco industrial al comedero"
+        },
         {
           "href": "/posts/post-inspecao-derivado-galinha.html",
           "label": "Inspeção: Derivados da galinha — ultraprocessados e química industrial",
@@ -66,6 +72,12 @@
       "relatedUnifesp": false,
       "cover": null,
       "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-racao.html",
+          "label": "Inspeção: Ração para animais — do saco industrial ao comedouro",
+          "labelEn": "Inspection: Animal feed — from the industrial bag to the bowl",
+          "labelEs": "Inspección: Pienso para animales — del saco industrial al comedero"
+        },
         {
           "href": "/posts/post-inspecao-derivado-leite.html",
           "label": "Inspeção: Leite e laticínios — da ordenha à prateleira industrial",
@@ -114,6 +126,12 @@
       "cover": null,
       "relatedInspections": [
         {
+          "href": "/posts/post-inspecao-derivado-racao.html",
+          "label": "Inspeção: Ração para animais — do saco industrial ao comedouro",
+          "labelEn": "Inspection: Animal feed — from the industrial bag to the bowl",
+          "labelEs": "Inspección: Pienso para animales — del saco industrial al comedero"
+        },
+        {
           "href": "/posts/post-inspecao-derivado-porco.html",
           "label": "Inspeção: Derivados do porco — embutidos e química industrial",
           "labelEn": "Inspection: Pork derivatives — cured meats and industrial chemistry",
@@ -148,6 +166,12 @@
       "relatedUnifesp": false,
       "cover": null,
       "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-racao.html",
+          "label": "Inspeção: Ração para animais — do saco industrial ao comedouro",
+          "labelEn": "Inspection: Animal feed — from the industrial bag to the bowl",
+          "labelEs": "Inspección: Pienso para animales — del saco industrial al comedero"
+        },
         {
           "href": "/posts/post-inspecao-derivado-peixe.html",
           "label": "Inspeção: Derivados do peixe — empanados e ultraprocessados",
@@ -218,7 +242,14 @@
       ],
       "relatedUnifesp": false,
       "cover": null,
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-racao.html",
+          "label": "Inspeção: Ração para animais — do saco industrial ao comedouro",
+          "labelEn": "Inspection: Animal feed — from the industrial bag to the bowl",
+          "labelEs": "Inspección: Pienso para animales — del saco industrial al comedero"
+        }
+      ]
     },
     {
       "id": "gato",
@@ -242,7 +273,14 @@
       ],
       "relatedUnifesp": false,
       "cover": null,
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-racao.html",
+          "label": "Inspeção: Ração para animais — do saco industrial ao comedouro",
+          "labelEn": "Inspection: Animal feed — from the industrial bag to the bowl",
+          "labelEs": "Inspección: Pienso para animales — del saco industrial al comedero"
+        }
+      ]
     },
     {
       "id": "cavalo",
@@ -269,7 +307,67 @@
       ],
       "relatedUnifesp": false,
       "cover": null,
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-racao.html",
+          "label": "Inspeção: Ração para animais — do saco industrial ao comedouro",
+          "labelEn": "Inspection: Animal feed — from the industrial bag to the bowl",
+          "labelEs": "Inspección: Pienso para animales — del saco industrial al comedero"
+        },
+        {
+          "href": "/posts/post-inspecao-animal-mula.html",
+          "label": "Inspeção: Animal — Mula",
+          "labelEn": "Inspection: Animal — Mule",
+          "labelEs": "Inspección: Animal — Mula"
+        }
+      ]
+    },
+    {
+      "id": "mula",
+      "slug": "mula",
+      "nomePopular": "Mula",
+      "nomeCientifico": "Equus asinus × Equus ferus caballus",
+      "familia": "Equidae",
+      "summary": "Híbrido de trabalho (jumento × égua): tração, carga e passo rural; vizinha lexical da mola — o ouvido cola, o étimo não (mūla ≠ mollis).",
+      "partsUsed": [
+        "Trabalho",
+        "Tração",
+        "Carga"
+      ],
+      "traditionalUses": [
+        "Tração de carroça e carga em terreno irregular",
+        "Transporte rural histórico no Brasil",
+        "Companhia e ofício de lida — distinta do cavalo e do jumento"
+      ],
+      "cautions": "Conteúdo educacional — não é protocolo veterinário nem de equitação. Distinguir o animal da palavra mola (peça elástica). Bem-estar, casqueamento e nutrição exigem profissionais. O animal não é o vilão; estereótipo de teimosia não é laudo.",
+      "tags": [
+        "companhia",
+        "trabalho",
+        "rural",
+        "equideo"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/inspecoes/mula-animal-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-palavra-mola.html",
+          "label": "Inspeção: Mola — o objecto que cede e volta (≠ mula)",
+          "labelEn": "Inspection: Mola — the object that yields and returns (≠ mule)",
+          "labelEs": "Inspección: Mola — el objeto que cede y vuelve (≠ mula)"
+        },
+        {
+          "href": "/posts/post-inspecao-animal-cavalo.html",
+          "label": "Inspeção: Animal — Cavalo",
+          "labelEn": "Inspection: Animal — Horse",
+          "labelEs": "Inspección: Animal — Caballo"
+        },
+        {
+          "href": "/posts/post-inspecao-derivado-racao.html",
+          "label": "Inspeção: Ração para animais — do saco industrial ao comedouro",
+          "labelEn": "Inspection: Animal feed — from the industrial bag to the bowl",
+          "labelEs": "Inspección: Pienso para animales — del saco industrial al comedero"
+        }
+      ]
     },
     {
       "id": "codorna",
@@ -298,6 +396,12 @@
       "relatedUnifesp": false,
       "cover": "/imagens/inspecoes/codorna-animal-cover.jpg",
       "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-racao.html",
+          "label": "Inspeção: Ração para animais — do saco industrial ao comedouro",
+          "labelEn": "Inspection: Animal feed — from the industrial bag to the bowl",
+          "labelEs": "Inspección: Pienso para animales — del saco industrial al comedero"
+        },
         {
           "href": "/posts/post-inspecao-palavra-corda.html",
           "label": "Inspeção: Corda — o objecto onde mora o nó",
