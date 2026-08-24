@@ -6681,7 +6681,6 @@
       "whyEn": "Palavras: três / 3 — cardinal (*trēs*) e quota popular dos três desejos; ≠ lei do clássico; Valeu !!! neste um.",
       "whyEs": "Palavras: três / 3 — cardinal (*trēs*) e quota popular dos três desejos; ≠ lei do clássico; Valeu !!! neste um.",
       "suggestedSlug": "inspecao-palavra-tres",
-      "doneHref": "/posts/post-inspecao-palavra-tres.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/tr%C3%AAs",
@@ -10355,7 +10354,6 @@
       "whyEn": "Words: 14 — 2×7; not Fibonacci; in Mega-Sena just a number.",
       "whyEs": "Palabras: 14 — 2×7; no Fibonacci; en la Mega-Sena solo una decena.",
       "suggestedSlug": "inspecao-palavra-catorze",
-      "doneHref": "/posts/post-inspecao-palavra-catorze.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/catorze",
@@ -10375,13 +10373,10 @@
       "whyEn": "Words: 22 / vinte e dois; 2×11; invert 22 → s2 (chat heart ≠ organ); ≠ Catch-22.",
       "whyEs": "Palabras: 22 / vinte e dois; 2×11; invertir 22 → s2 (corazón de chat ≠ órgano); ≠ Catch-22.",
       "suggestedSlug": "inspecao-palavra-vinte-e-dois",
-      "doneHref": "/posts/post-inspecao-palavra-vinte-e-dois.html",
       "seriesHint": "palavras-origem",
       "sources": [
-        "/posts/post-inspecao-palavra-vinte-e-dois.html",
         "https://pt.wiktionary.org/wiki/vinte",
         "/posts/post-inspecao-palavra-coracao.html",
-        "/posts/post-inspecao-palavra-catorze.html",
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 309 — cardinal × inversão s2; poema Vida."
@@ -10398,12 +10393,10 @@
       "whyEn": "Words: 0 / zero — additive identity; not a Mega-Sena dezena; ≠ letter O.",
       "whyEs": "Palabras: 0 / zero — identidad de la suma; no es decena de la Mega-Sena; ≠ letra O.",
       "suggestedSlug": "inspecao-palavra-zero",
-      "doneHref": "/posts/post-inspecao-palavra-zero.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/zero",
-        "/posts/post-inspecao-palavra-mega-sena.html",
-        "/posts/post-inspecao-palavra-catorze.html"
+        "/posts/post-inspecao-palavra-mega-sena.html"
       ],
       "notes": "Cap. 264 — pedido 0; não joga na Mega."
     },

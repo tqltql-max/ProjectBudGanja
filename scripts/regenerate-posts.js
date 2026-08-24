@@ -8,7 +8,9 @@ const { writeFileRetrySync } = require('../lib/fs-write-retry.js');
 const postsPath = path.join(ROOT, 'posts.json');
 const posts = mergeGuiaInspecoesPosts(JSON.parse(fs.readFileSync(postsPath, 'utf8')));
 
-const keep = new Set(posts.map((p) => p.filename));
+const keep = new Set(
+  posts.filter((p) => p.published !== false).map((p) => p.filename)
+);
 
 /** HTML leftover slugs that should redirect instead of being deleted. */
 const POST_REDIRECTS = [

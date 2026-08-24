@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T21:51:09.952Z",
+  "updatedAt": "2026-08-24T22:53:14.862Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -5051,7 +5051,7 @@
       "simpleEs": "Lat. trēs — cardinal 3 / tres; no mapa da lâmpada, teto popular dos três desejos; não é método; Valeu !!! neste um.",
       "group": "lexico",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-tres.html",
+      "href": "/posts/post-inspecao-palavra-desejos.html",
       "history": "Três vem do latim trēs — o cardinal 3. No mapa da lâmpada é o teto popular dos desejos, não um método de laboratório.",
       "curiosities": "A inspeção devolve o ofício a este um: Valeu !!! neste número, sem ritual.",
       "historyEn": "Portuguese três comes from Latin trēs — the cardinal 3. On the lamp map it is the popular ceiling of wishes, not a lab method.",
@@ -10770,42 +10770,6 @@
       "simpleEs": "Nombre: mega + sena (lat. sēnī = seis). ≠ Ayrton Senna (dos n). Patrocinios ≠ suerte. ¡Valeu !!!"
     },
     {
-      "id": "catorze",
-      "word": "catorze",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-catorze.html",
-      "simple": "14 — 2×7; composto; ≠ Fibonacci; na Mega-Sena é só dezena. Valeu !!!",
-      "simpleEn": "14 — 2×7; composite; not Fibonacci; in Mega-Sena just a number. Valeu !!!",
-      "simpleEs": "14 — 2×7; compuesto; no Fibonacci; en la Mega-Sena solo una decena. ¡Valeu !!!"
-    },
-    {
-      "id": "vinte-e-dois",
-      "word": "vinte e dois",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-vinte-e-dois.html",
-      "simple": "Lat. vīgintī + duo — cardinal 22; 2×11; palíndromo; inverter o primeiro 2 cola no S → s2 (coração de chat ≠ órgão); ≠ Catch-22. Valeu !!!",
-      "simpleEn": "Lat. vīgintī + duo — cardinal 22; 2×11; invert first 2 into S → s2 (chat heart ≠ organ); ≠ Catch-22. Valeu !!!",
-      "simpleEs": "Lat. vīgintī + duo — cardinal 22; 2×11; invertir el primer 2 pega en S → s2 (corazón de chat ≠ órgano); ≠ Catch-22. ¡Valeu !!!",
-      "history": "Vinte vem do latim vīgintī; dois vem de duo. No laboratório o 22 é também o par de traços que, invertido, vira o recado s2 do chat brasileiro.",
-      "curiosities": "s2 ≈ coração de ecrã (S + 2); Catch-22 é o romance de Heller — outra sala; S2 também é temporada.",
-      "historyEn": "Portuguese vinte e dois comes from Latin vīgintī + duo. In the lab 22 is also the pair of strokes that, inverted, becomes the Brazilian chat note s2.",
-      "curiositiesEn": "s2 ≈ on-screen heart (S + 2); Catch-22 is Heller’s novel — another room; S2 is also a season.",
-      "historyEs": "Vinte e dois viene del latín vīgintī + duo. En el laboratorio el 22 es también el par de trazos que, invertido, vira el recado s2 del chat brasileño.",
-      "curiositiesEs": "s2 ≈ corazón de pantalla (S + 2); Catch-22 es la novela de Heller — otra sala; S2 también es temporada."
-    },
-    {
-      "id": "zero",
-      "word": "zero",
-      "group": "lexico",
-      "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-zero.html",
-      "simple": "0 — nulo que conta; a+0=a; ×0 apaga; ≠ dezena da Mega-Sena; ≠ letra O. Valeu !!!",
-      "simpleEn": "0 — the null that counts; not a Mega-Sena dezena; ≠ letter O. Valeu !!!",
-      "simpleEs": "0 — el nulo que cuenta; no es decena de la Mega-Sena; ≠ letra O. ¡Valeu !!!"
-    },
-    {
       "id": "letra-x",
       "word": "letra X",
       "group": "lexico",
@@ -10825,5 +10789,6 @@
       "fromTitle": false,
       "href": "/posts/post-inspecao-jogo-metal-slug.html"
     }
-  ]
+  ],
+  "words": []
 }

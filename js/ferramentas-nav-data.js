@@ -2250,20 +2250,20 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Elemento que o balde carrega e o gelo retém — volume, sede e limite na invernagem."
             },
             {
+              "label": "Inspeção: Neve — nix, nivis; cobertura, não gelo",
+              "tileLabel": "Inspeção: Neve — nix, nivis; co…",
+              "href": "/posts/post-inspecao-palavra-neve.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-neve",
+              "description": "Palavras: Neve ← lat. nix, nivis — cristal que cai; ≠ gelo ≠ never ≠ nēve latino; par derreter (derver); Valeu !!!"
+            },
+            {
               "label": "Inspeção: Friends — a turma de 1994 e a série que é o texto",
               "tileLabel": "Inspeção: Friends — a turma de …",
               "href": "/posts/post-inspecao-serie-friends.html",
               "icon": "🔍",
               "slug": "post-inspecao-serie-friends",
               "description": "Artes · sitcom: Friends (1994–2004, Crane / Kauffman) — a série é a génese; ensemble com crédito. Ficha própria, distinta de How I Met Your Mother."
-            },
-            {
-              "label": "Inspeção: Neve — léxico Tamara / Bom dia, Inverno",
-              "tileLabel": "Inspeção: Neve — léxico Tamara …",
-              "href": "/posts/post-inspecao-palavra-neve.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-neve",
-              "description": "Cobertura branca do Ártico — paisagem e ruído branco da narrativa de Tamara."
             },
             {
               "label": "Inspeção: How I Met Your Mother — o relato, o tempo e a série de 2005",
@@ -3346,14 +3346,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «desejos» (*desiderium*) — vontade viva × pack do génio; quota muitas vezes três; ≠ gesto; elos lâmpada, esfregar e três; Valeu !!!"
             },
             {
-              "label": "Inspeção: Três — o 3, a quota dos desejos e o teto que não é método",
-              "tileLabel": "Inspeção: Três — o 3, a quota d…",
-              "href": "/posts/post-inspecao-palavra-tres.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-tres",
-              "description": "Palavras: «três» / 3 — cardinal (*trēs*) e quota popular dos três desejos da lâmpada; ≠ lei do clássico; elos desejos, esfregar e lâmpada; Valeu !!!"
-            },
-            {
               "label": "Inspeção: Vassoura — varrer, cabo e o conto que não é receita",
               "tileLabel": "Inspeção: Vassoura — varrer, ca…",
               "href": "/posts/post-inspecao-palavra-vassoura.html",
@@ -4082,22 +4074,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: Mega-Sena — nome mega + sena (seis); ≠ Senna (Ayrton, dois n); patrocínios ≠ sorte; Valeu !!!"
             },
             {
-              "label": "Inspeção: 14 — catorze, dois setes, não é sorte",
-              "tileLabel": "Inspeção: 14 — catorze, dois se…",
-              "href": "/posts/post-inspecao-palavra-catorze.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-catorze",
-              "description": "Palavras: 14 / catorze — 2×7; composto; ≠ Fibonacci ≠ primo; na Mega-Sena é só dezena; Valeu !!!"
-            },
-            {
-              "label": "Inspeção: 0 — zero, o nulo que conta",
-              "tileLabel": "Inspeção: 0 — zero, o nulo que …",
-              "href": "/posts/post-inspecao-palavra-zero.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-zero",
-              "description": "Palavras: 0 / zero — identidade da soma; ×0 apaga; ≠ dezena da Mega-Sena (01–60); ≠ letra O; Valeu !!!"
-            },
-            {
               "label": "Inspeção: Letra L — o éle, a haste, o alongamento",
               "tileLabel": "Inspeção: Letra L — o éle, a ha…",
               "href": "/posts/post-inspecao-palavra-letra-l.html",
@@ -4498,14 +4474,6 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: restore (lat. restaurāre) × back (germ. bæc) × backup (back+up) × up (germ. upp) — quatro salas, um circuito; Restoure = lapso; ≠ restore back; Valeu !!!"
             },
             {
-              "label": "Inspeção: 22 — vinte e dois; invertido vira s2, o coração do chat",
-              "tileLabel": "Inspeção: 22 — vinte e dois; in…",
-              "href": "/posts/post-inspecao-palavra-vinte-e-dois.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-vinte-e-dois",
-              "description": "Palavras: 22 / vinte e dois — lat. vīgintī + duo; 2×11; inverter o 2 cola no S → s2 (coração de chat ≠ órgão); ≠ Catch-22; Valeu !!!"
-            },
-            {
               "label": "Inspeção: Incineradora — o objecto que reduz a cinza",
               "tileLabel": "Inspeção: Incineradora — o obje…",
               "href": "/posts/post-inspecao-palavra-incineradora.html",
@@ -4712,6 +4680,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-dor",
               "description": "Palavras: dor ← lat. dolōrem ← dolēre; doer / doído / doido; pain ← poena (pena); labravra = lab colado; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Derreter — o sólido volta a água (campo: derver)",
+              "tileLabel": "Inspeção: Derreter — o sólido v…",
+              "href": "/posts/post-inspecao-palavra-derreter.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-derreter",
+              "description": "Palavras: Derreter ← dēterō × rēterō; campo derver; ≠ dever ≠ derrota ≠ lava; par neve; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

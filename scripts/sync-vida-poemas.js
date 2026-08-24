@@ -563,7 +563,6 @@ const doc = {
       body: poemVinteEDoisPt(),
       bodyEn: poemVinteEDoisEn(),
       bodyEs: poemVinteEDoisEs(),
-      inspectionHref: '/posts/post-inspecao-palavra-vinte-e-dois.html',
       tags: ['poesia', 'vida', '22', 'vinte e dois', 's2', 'coração']
     },
     {
