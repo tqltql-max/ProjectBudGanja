@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T10:54:52.842Z",
+  "updatedAt": "2026-08-24T10:57:16.289Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3111,6 +3111,29 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Homenagem completa; não romantizar a morte em Ímola."
+    },
+    {
+      "id": "figura-robson-oliveira",
+      "title": "Robson Oliveira — a casa, Boston e dois são mais fortes que um",
+      "titleEn": "Robson Oliveira — the house, Boston and two are stronger than one",
+      "titleEs": "Robson Oliveira — la casa, Boston y dos son más fuertes que uno",
+      "tipo": "pessoas",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pessoas: homenagem a Robson Gonçalves de Oliveira e à família; gesto de Boston 2026; elo juntos / Faça o seu melhor; Valeu !!!",
+      "whyEn": "People: homage to Robson Gonçalves de Oliveira and family; Boston 2026 gesture; juntos / do-your-best link; Valeu !!!",
+      "whyEs": "Personas: homenaje a Robson Gonçalves de Oliveira y a la familia; gesto de Boston 2026; vínculo juntos / haz lo mejor; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-figura-robson-oliveira",
+      "doneHref": "/posts/post-inspecao-figura-robson-oliveira.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://g1.globo.com/sp/sao-paulo/noticia/2026/04/22/brasileiro-de-sp-e-chamado-de-heroi-da-maratona-de-boston-ao-carregar-corredor-ate-reta-final-da-competicao-nos-eua.ghtml",
+        "/posts/post-inspecao-palavra-juntos.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-valeu.html",
+        "https://www.instagram.com/oliveirarobson89"
+      ],
+      "notes": "Cap. 38 Pessoas — pessoa viva: não inventar nomes da família; Corsuié = orelha de Gonçalves é."
     },
     {
       "id": "palavra-ja",
@@ -9279,6 +9302,54 @@
       "notes": "Cap. 261 — inspeção especial do país; cola golfo/golfe/gongo/Congo."
     },
     {
+      "id": "palavra-boston",
+      "title": "Boston — a vila de Botolph; ≠ bosta",
+      "titleEn": "Boston — Botolph’s town; ≠ bosta",
+      "titleEs": "Boston — la villa de Botolph; ≠ bosta",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: Boston = St. Botolph’s town (tūn); cola de orelha com bosta recusada como étimo; o -on é a vila; Valeu !!!",
+      "whyEn": "Words: Boston = St. Botolph’s town (tūn); ear-glue to bosta refused as etymon; the -on is the town.",
+      "whyEs": "Palabras: Boston = St. Botolph’s town (tūn); cola de oído con bosta rechazada; la -on es la villa.",
+      "suggestedSlug": "inspecao-palavra-boston",
+      "doneHref": "/posts/post-inspecao-palavra-boston.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-boston.html",
+        "/posts/post-inspecao-palavra-bosta.html",
+        "https://pt.wikipedia.org/wiki/Boston",
+        "https://en.wikipedia.org/wiki/Boston,_Lincolnshire",
+        "/posts/post-inspecao-palavra-trocadilho.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 301 — cruzamento Boston × bosta; tūn devolvido à vila."
+    },
+    {
+      "id": "palavra-bosta",
+      "title": "Bosta — estrume e gíria; ≠ Boston",
+      "titleEn": "Bosta — dung and slang; ≠ Boston",
+      "titleEs": "Bosta — estiércol y jerga; ≠ Boston",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: bosta ← via esp. bosta (estrume; origem última incerta); gíria BR; cola com Boston recusada; Valeu !!!",
+      "whyEn": "Words: bosta ← via Sp. bosta (dung; ultimate origin uncertain); BR slang; glue to Boston refused.",
+      "whyEs": "Palabras: bosta ← vía esp. bosta (estiércol; origen último incierto); jerga BR; cola con Boston rechazada.",
+      "suggestedSlug": "inspecao-palavra-bosta",
+      "doneHref": "/posts/post-inspecao-palavra-bosta.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-bosta.html",
+        "/posts/post-inspecao-palavra-boston.html",
+        "https://pt.wiktionary.org/wiki/bosta",
+        "/posts/post-inspecao-palavra-trocadilho.html",
+        "/posts/post-inspecao-palavra-giria.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 301 — cruzamento bosta × Boston; sem celebrar insulto."
+    },
+    {
       "id": "fruto-marolo",
       "title": "Marolo — araticum do Cerrado vs maracujá / mamão / pinha",
       "titleEn": "Marolo — Cerrado araticum vs passion fruit / papaya / sugar-apple",
@@ -10083,6 +10154,29 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 37 — metáfora de ofício; airbag não esteve na corrida; sem vida privada inventada."
+    },
+    {
+      "id": "palavra-conjugacao",
+      "title": "Conjugação — as 3 pessoas; elos e elas; nós, vós, eles",
+      "titleEn": "Conjugação — the 3 persons; elos e elas; nós, vós, eles",
+      "titleEs": "Conjugação — las 3 personas; elos e elas; nós, vós, eles",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: conjugação ← coniugātiō; 3 elos; elos ≠ eles/elas; nós/vós/eles; sala com latim; Valeu !!!",
+      "whyEn": "Words: conjugação ← coniugātiō; 3 links; elos ≠ eles/elas; nós/vós/eles; shared with Latin; Valeu !!!",
+      "whyEs": "Palabras: conjugação ← coniugātiō; 3 eslabones; elos ≠ eles/elas; sala con latín; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-conjugacao",
+      "doneHref": "/posts/post-inspecao-palavra-conjugacao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/conjuga%C3%A7%C3%A3o",
+        "/posts/post-inspecao-palavra-latim.html",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html",
+        "/posts/post-inspecao-palavra-ligar-desligar.html",
+        "/posts/post-inspecao-expressao-elo-de-ligacao.html"
+      ],
+      "notes": "Cap. 300 — 3 pessoas; plurais; partilha sala com latim."
     }
   ]
 }

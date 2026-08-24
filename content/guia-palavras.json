@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T10:54:52.863Z",
+  "updatedAt": "2026-08-24T10:57:16.297Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -996,6 +996,22 @@
       "curiositiesEn": "The People sheet crosses track craft with the mantra Valeu !!! — a homage of method, not empty idol worship.",
       "historyEs": "Ayrton Senna da Silva (1960–1994) fue piloto tricampeón de Fórmula 1 (1988, 1990, 1991). El Instituto Ayrton Senna nació en 1994 para educación pública.",
       "curiositiesEs": "La ficha de Personas cruza el oficio de pista con el mantra ¡Valeu !!! — homenaje de método, no culto de ídolo vacío."
+    },
+    {
+      "id": "robson-oliveira",
+      "word": "Robson Oliveira",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-figura-robson-oliveira.html",
+      "simple": "Maratonista amador de São Bernardo do Campo; homenagem em Pessoas à casa e ao gesto de Boston 2026 — dois são mais fortes que um; Valeu !!!",
+      "simpleEn": "Amateur marathoner from São Bernardo do Campo; People homage to the house and the Boston 2026 gesture — two are stronger than one; Valeu !!!",
+      "simpleEs": "Maratonista aficionado de São Bernardo do Campo; homenaje en Personas a la casa y al gesto de Boston 2026 — dos son más fuertes que uno; ¡Valeu !!!",
+      "history": "Robson Gonçalves de Oliveira (São Bernardo do Campo) é operador de máquinas e maratonista amador. Em 20 abr. 2026, na Maratona de Boston, abriu mão do recorde pessoal para, com Aaron Beggs, amparar Ajay Haridasse. Filho de pedreiro e trabalhadora doméstica migrantes do Ceará; a ficha honra também a família, só com rasto público.",
+      "curiosities": "O pedido chegou «Robson Corsuié» — a orelha ouviu Gonçalves é. Tempo em Boston: 2h44min26s. Instagram @oliveirarobson89. Fecho: Valeu !!!",
+      "historyEn": "Robson Gonçalves de Oliveira (São Bernardo do Campo) is a machine operator and amateur marathoner. On 20 Apr 2026 at Boston he gave up a personal-best chase to help Ajay Haridasse with Aaron Beggs. Son of a bricklayer and a domestic worker who migrated from Ceará; the sheet honours the family from the public record only.",
+      "curiositiesEn": "The request arrived as “Robson Corsuié” — the ear heard Gonçalves é. Boston time: 2:44:26. Instagram @oliveirarobson89. Close: Valeu !!!",
+      "historyEs": "Robson Gonçalves de Oliveira (São Bernardo do Campo) es operador de máquinas y maratonista aficionado. El 20 abr. 2026 en Boston dejó el récord personal para, con Aaron Beggs, amparar a Ajay Haridasse. Hijo de albañil y trabajadora doméstica migrantes de Ceará; la ficha honra también a la familia, solo con rastro público.",
+      "curiositiesEs": "El pedido llegó como «Robson Corsuié» — el oído oyó Gonçalves é. Tiempo en Boston: 2:44:26. Instagram @oliveirarobson89. Cierre: ¡Valeu !!!"
     },
     {
       "id": "aaron-beggs",
@@ -5626,6 +5642,22 @@
       "curiositiesEs": "El oído pega latido (latrāre, ladrar) al cachorro / cão (canis). En español latido es el del corazón; en portugués es el ladrido. Cannabis no viene de canis. ¡Valeu !!!"
     },
     {
+      "id": "conjugacao",
+      "word": "conjugação",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-conjugacao.html",
+      "simple": "Lat. coniugātiō ← coniugāre (jugo). 3 elos: eu/nós · tu/vós · ele·ela/eles·elas. Elos ≠ eles/elas. Sala com latim. Valeu !!!",
+      "simpleEn": "Lat. coniugātiō ← coniugāre (yoke). 3 links: eu/nós · tu/vós · ele·ela/eles·elas. Elos ≠ eles/elas. Shared with Latin. Valeu !!!",
+      "simpleEs": "Lat. coniugātiō ← coniugāre (yugo). 3 eslabones. Elos ≠ eles/elas. Sala con latín. ¡Valeu !!!",
+      "history": "Conjugação vem do latim coniugātiō, de coniugāre — pôr no mesmo jugo (iugum), ninho de iungere (juntos). As pessoas do verbo português herdam ego, tū, nōs, vōs do latim.",
+      "curiosities": "A orelha cola elos (anéis) em eles (pronome). No BR, vocês pede desinência de 3.ª. Pessoa gramatical ≠ série Pessoas (biografias). Valeu !!!",
+      "historyEn": "Portuguese conjugação comes from Latin coniugātiō, from coniugāre — to yoke together (iugum), kin to iungere (juntos). The persons inherit ego, tū, nōs, vōs.",
+      "curiositiesEn": "The ear glues elos (rings) to eles (they). In Brazilian Portuguese, vocês takes 3rd-person endings. Grammatical person ≠ the People biography series. Valeu !!!",
+      "historyEs": "Conjugação viene del latín coniugātiō, de coniugāre — uncir al mismo yugo (iugum), nido de iungere (juntos). Las personas heredan ego, tū, nōs, vōs.",
+      "curiositiesEs": "El oído pega elos (anillos) en eles (ellos). En BR, vocês pide desinencia de 3.ª. Persona gramatical ≠ serie Personas. ¡Valeu !!!"
+    },
+    {
       "id": "trocadilho",
       "word": "Trocadilho",
       "simple": "Calembur — cara+alho é jogo de ouvido + etimologia popular, não polimorfismo nem origem da terceira forma; irmãs aglutinação e Tanzânia (valise); Valeu !!! no nome.",
@@ -7178,6 +7210,38 @@
       "curiositiesEn": "Special field request, with slips gosfo / coongo / gongo and the sport golf. The ear glues; etymology cuts five rooms.",
       "historyEs": "México viene del náhuatl Mēxihco (lugar de los Mexica), vía castellano. El Golfo de México hereda el nombre; no es todo el Estado.",
       "curiositiesEs": "Pedido especial de campo, con lapsus gosfo / coongo / gongo y el deporte golf. La oreja pega; el étimo corta cinco salas."
+    },
+    {
+      "id": "boston",
+      "word": "Boston",
+      "simple": "St. Botolph’s town (ing. ant. tūn) — a vila de Botolph; Massachusetts herda o nome de Lincolnshire. ≠ bosta (cola de orelha). Valeu !!!",
+      "simpleEn": "St. Botolph’s town (OE tūn) — Botolph’s town; Massachusetts inherits the Lincolnshire name. ≠ bosta (ear glue). Valeu !!!",
+      "simpleEs": "St. Botolph’s town (ing. ant. tūn) — la villa de Botolph; Massachusetts hereda el nombre. ≠ bosta (cola de oído). ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-boston.html",
+      "history": "Boston contrai St. Botolph’s town (OE Botwulfes tūn). A cidade americana (1630) herda o nome da vila de Lincolnshire. O -ton é a vila, não um sufixo de gíria.",
+      "curiosities": "A orelha BR cola Boston em bosta. A piada apaga o -on — precisamente o tūn («vila»). O laboratório devolve a vila. Cruzamento: ficha bosta.",
+      "historyEn": "Boston contracts St. Botolph’s town (OE Botwulfes tūn). The American city (1630) inherits the Lincolnshire name. The -ton is the town, not a slang suffix.",
+      "curiositiesEn": "The Brazilian ear glues Boston to bosta. The joke deletes the -on — exactly the tūn (“town”). The lab puts the town back.",
+      "historyEs": "Boston contrae St. Botolph’s town (OE Botwulfes tūn). La ciudad americana hereda el nombre de Lincolnshire. El -ton es la villa.",
+      "curiositiesEs": "El oído BR pega Boston a bosta. El chiste borra la -on — el tūn («villa»). El laboratorio devuelve la villa."
+    },
+    {
+      "id": "bosta",
+      "word": "bosta",
+      "simple": "Via esp. bosta — estrume (origem última incerta). No BR também gíria de desdém. ≠ Boston (trocadilho, não étimo). Valeu !!!",
+      "simpleEn": "Via Sp. bosta — dung (ultimate origin uncertain). In BR also slang of disdain. ≠ Boston (pun, not etymon). Valeu !!!",
+      "simpleEs": "Vía esp. bosta — estiércol (origen último incierto). En BR también jerga de desdén. ≠ Boston (trocadilho, no étimo). ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-bosta.html",
+      "history": "Português bosta entra pela via espanhola (estrume, sobretudo de gado nas fontes). A origem última é incerta (substrato ibérico em discussão). Não vem de Boston.",
+      "curiosities": "Três andares: matéria, campo (sem receita) e gíria. Cruzar com Boston é etiquetar a cola da orelha, não fundir avôs. merda / esterco / cocô são vizinhos, não o mesmo étimo.",
+      "historyEn": "Portuguese bosta comes via Spanish (dung, often cattle in the sources). The ultimate origin is uncertain. It does not come from Boston.",
+      "curiositiesEn": "Three floors: matter, field (no recipe) and slang. Crossing with Boston labels ear-glue; it does not fuse grandfathers.",
+      "historyEs": "El portugués bosta entra por la vía española (estiércol). El origen último es incierto. No viene de Boston.",
+      "curiositiesEs": "Tres pisos: materia, campo (sin receta) y jerga. Cruzar con Boston etiqueta la cola del oído; no funde abuelos."
     },
     {
       "id": "golfo",
