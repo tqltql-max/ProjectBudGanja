@@ -1,30 +1,6 @@
 {
-  "updatedAt": "2026-08-24T10:42:55.043Z",
+  "updatedAt": "2026-08-24T10:53:33.681Z",
   "poems": [
-    {
-      "id": "lua",
-      "slug": "lua",
-      "title": "Lua",
-      "titleEn": "Lua",
-      "titleEs": "Lua",
-      "author": "Laboratório BudGanja",
-      "authorEn": "BudGanja Lab",
-      "authorEs": "Laboratorio BudGanja",
-      "teaser": "Eco BudGanja — a luminosa; irmã de lūx; brilho emprestado, sem fingir que é sol; Valeu !!!",
-      "teaserEn": "BudGanja echo — the luminous one; sister of lūx; borrowed shine, without pretending to be the sun; Valeu !!!",
-      "teaserEs": "Eco BudGanja — la luminosa; hermana de lūx; brillo prestado, sin fingir que es sol; ¡Valeu !!!",
-      "body": "Lua.\nNão é o sol.\nNão é a luz.\nÉ a que brilha\ncom claridade emprestada.\n\nLūna — a luminosa.\nIrmã de lūx.\nNão irmã de moon.\n\nMoon mede o mês.\nLua alumia a noite.\n\nDar à luz\né trazer ao claro.\nNão é pôr o astro no colo.\n\nEstar na lua é outra sala.\nLua de mel é outra sala.\nA linguagem Lua é outra sala.\n\nValeu !!!\nbrilho emprestado\nsem fingir que é sol.",
-      "bodyEn": "Lua.\nIt is not the sun.\nIt is not the light.\nIt is the one that shines\nwith borrowed clarity.\n\nLūna — the luminous one.\nSister of lūx.\nNot sister of moon.\n\nMoon measures the month.\nLua lights the night.\n\nDar à luz\nis to bring into the clear.\nIt is not putting the orb in your lap.\n\nTo be on the moon is another room.\nHoneymoon is another room.\nThe Lua language is another room.\n\nValeu !!!\nborrowed shine\nwithout pretending to be the sun.",
-      "bodyEs": "Lua.\nNo es el sol.\nNo es la luz.\nEs la que brilla\ncon claridad prestada.\n\nLūna — la luminosa.\nHermana de lūx.\nNo hermana de moon.\n\nMoon mide el mes.\nLua alumbra la noche.\n\nDar à luz\nes traer a lo claro.\nNo es poner el astro en el colo.\n\nEstar en la luna es otra sala.\nLuna de miel es otra sala.\nEl lenguaje Lua es otra sala.\n\n¡Valeu !!!\nbrillo prestado\nsin fingir que es sol.",
-      "inspectionHref": "/posts/post-inspecao-palavra-lua.html",
-      "tags": [
-        "poesia",
-        "vida",
-        "lua",
-        "luz",
-        "lux"
-      ]
-    },
     {
       "id": "fantasia",
       "slug": "fantasia",

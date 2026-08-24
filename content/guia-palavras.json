@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T10:51:19.426Z",
+  "updatedAt": "2026-08-24T10:53:27.061Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -998,6 +998,22 @@
       "curiositiesEs": "La ficha de Personas cruza el oficio de pista con el mantra ¡Valeu !!! — homenaje de método, no culto de ídolo vacío."
     },
     {
+      "id": "aaron-beggs",
+      "word": "Aaron Beggs",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-cruzamento-aaron-beggs-air-bag.html",
+      "simple": "Pessoa — corredor de Bangor (North Down AC); cruzamento com airbag: escolheu amortecer Ajay na Boylston Street, Boston 2026; Valeu !!!",
+      "simpleEn": "Person — Bangor runner (North Down AC); cross with airbag: chose to cushion Ajay on Boylston Street, Boston 2026; Valeu !!!",
+      "simpleEs": "Persona — corredor de Bangor (North Down AC); cruce con airbag: eligió amortiguar a Ajay en Boylston Street, Boston 2026; ¡Valeu !!!",
+      "history": "Aaron Beggs, de Bangor (Irlanda do Norte), parou a ~200 m da fita da Maratona de Boston de 2026 para ajudar Ajay Haridasse. Robson de Oliveira juntou-se. O laboratório lê o gesto como airbag humano: o saco dispara; ele escolheu.",
+      "curiosities": "Colete amarelo e azul do North Down AC. Tempos Athletics NI: 2:44:36. Não inventar família. Fecho: Valeu !!!",
+      "historyEn": "Aaron Beggs, from Bangor (Northern Ireland), stopped ~200 m from the 2026 Boston Marathon tape to help Ajay Haridasse. Robson de Oliveira joined. The lab reads the gesture as a human airbag.",
+      "curiositiesEn": "Yellow-blue North Down AC vest. Athletics NI time 2:44:36. No invented family. Close: Valeu !!!",
+      "historyEs": "Aaron Beggs, de Bangor (Irlanda del Norte), paró a ~200 m de la cinta de Boston 2026 para ayudar a Ajay Haridasse. Robson de Oliveira se unió. El laboratorio lee el gesto como airbag humano.",
+      "curiositiesEs": "Chaleco amarillo y azul del North Down AC. Tiempo Athletics NI 2:44:36. Sin familia inventada. Cierre: ¡Valeu !!!"
+    },
+    {
       "id": "babosa",
       "word": "Babosa",
       "simple": "Suculenta (Aloe vera) amplamente cultivada; gel foliar rico em polissacarídeos — tradição tópica; látex com antraquinonas (aloína) exige ca… Citada nos rascunhos das aulas XIV (curso UNIFESP).",
@@ -1882,6 +1898,38 @@
       "href": "/posts/post-inspecao-palavra-dsl.html"
     },
     {
+      "id": "ao90",
+      "word": "AO90",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-ao90.html",
+      "simple": "Sigla: Acordo Ortográfico de 1990. O 90 é o ano. Grafia ≠ étimo. ≠ AOC ≠ 90 Hz. Valeu !!!",
+      "simpleEn": "Acronym: 1990 Orthographic Agreement. 90 is the year. Spelling ≠ etymon. ≠ AOC ≠ 90 Hz. Valeu !!!",
+      "simpleEs": "Sigla: Acuerdo Ortográfico de 1990. El 90 es el año. Grafía ≠ étimo. ≠ AOC ≠ 90 Hz. ¡Valeu !!!",
+      "history": "AO90 nomeia o Acordo Ortográfico assinado em 1990. O Brasil já escrevia ação/objeto; o acordo alinha a letra (cai o c mudo). Não muda o étimo. A orelha cola em AOC (monitor).",
+      "curiosities": "Etimografia no campo = mistura de etimologia + ortografia. O acordo só toca a segunda. Fecho: Valeu !!!",
+      "historyEn": "AO90 names the 1990 spelling agreement. Brazil already wrote ação/objeto; the agreement aligns the letter (silent c drops). The etymon stays. The ear glues it to AOC (monitor brand).",
+      "curiositiesEn": "Field “etimografia” blends etymology + spelling. The agreement only touches spelling. Close: Valeu !!!",
+      "historyEs": "AO90 nombra el Acuerdo Ortográfico de 1990. Brasil ya escribía ação/objeto; el acuerdo alinea la letra. El étimo queda. La oreja pega en AOC (monitor).",
+      "curiositiesEs": "Etimografía en el campo = mezcla de etimología + ortografía. El acuerdo solo toca la segunda. Cierre: Valeu !!!"
+    },
+    {
+      "id": "aoc",
+      "word": "AOC",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-aoc.html",
+      "simple": "Sigla: Admiral Overseas Corporation. Monitor / objeto electrónico. ≠ AO90. Valeu !!!",
+      "simpleEn": "Acronym: Admiral Overseas Corporation. Monitor / electronic object. ≠ AO90. Valeu !!!",
+      "simpleEs": "Sigla: Admiral Overseas Corporation. Monitor / objeto electrónico. ≠ AO90. ¡Valeu !!!",
+      "history": "AOC nasceu como Admiral Overseas Corporation (1967, Taiwan) e ficou marca de ecrãs. Três letras no objeto da mesa. Não é o Acordo Ortográfico de 1990.",
+      "curiosities": "O C é de Corporation; o c que o AO90 largou em objecto é outra letra, outra história. Fecho: Valeu !!!",
+      "historyEn": "AOC began as Admiral Overseas Corporation (1967, Taiwan) and stayed a display brand. Three letters on a desk object. Not the 1990 spelling agreement.",
+      "curiositiesEn": "The C is from Corporation; the c AO90 dropped from objecto is another letter, another history. Close: Valeu !!!",
+      "historyEs": "AOC nació como Admiral Overseas Corporation (1967, Taiwán) y quedó marca de pantallas. Tres letras en el objeto de la mesa. No es el acuerdo de 1990.",
+      "curiositiesEs": "La C es de Corporation; la c que el AO90 soltó en objecto es otra letra, otra historia. Cierre: Valeu !!!"
+    },
+    {
       "id": "conexao",
       "word": "conexão",
       "simple": "Lat. connexio — ação de conectar; grafia com x. ≠ conecção ≠ colchão. Elos discada, DSL, Log In. Valeu !!!",
@@ -1906,6 +1954,22 @@
       "curiositiesEn": "Junto a is nearness, not always company. Juntas (fem. pl.) ≠ anatomical joints ≠ a governing board. Close: Valeu !!!",
       "historyEs": "Juntos viene del latín iunctus (← iungere, unir). En el laboratorio el estado cruza con los elos: el anillo que sujeta. Sin eslabón, juntos puede ser solo eslogan.",
       "curiositiesEs": "Junto a es proximidad, no siempre compañía. Juntas (fem.) ≠ articulaciones ≠ junta de gobierno. Cierre: ¡Valeu !!!"
+    },
+    {
+      "id": "airbag",
+      "word": "Airbag",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-cruzamento-aaron-beggs-air-bag.html",
+      "simple": "EN air + bag — saco de ar que infla no impacto; o dispositivo dispara; Aaron Beggs escolheu; cruzamento Boston 2026; Valeu !!!",
+      "simpleEn": "EN air + bag — cushion that inflates on impact; the device fires; Aaron Beggs chose; Boston 2026 cross; Valeu !!!",
+      "simpleEs": "EN air + bag — saco de aire que infla en el impacto; el dispositivo dispara; Aaron Beggs eligió; cruce Boston 2026; ¡Valeu !!!",
+      "history": "Airbag é estrangeirismo do inglês air + bag. Segurança passiva do automóvel: sensores, unidade de controlo, saco que enche em milissegundos. No laboratório cruza com o gesto de Aaron Beggs na Maratona de Boston de 2026 — metáfora de ofício, não facto da prova.",
+      "curiosities": "Também saco de ar, bolsa de ar, erbegue. O airbag não escolhe; Beggs olhou o relógio e parou. Fecho: Valeu !!!",
+      "historyEn": "Airbag is English air + bag. Passive car safety: sensors, control unit, bag that fills in milliseconds. In the lab it crosses with Aaron Beggs’s gesture at Boston 2026 — craft metaphor, not a fact of the race.",
+      "curiositiesEn": "Also air bag / saco de ar. The airbag does not choose; Beggs looked at his watch and stopped. Close: Valeu !!!",
+      "historyEs": "Airbag es inglés air + bag. Seguridad pasiva del automóvil. En el laboratorio cruza con el gesto de Aaron Beggs en Boston 2026 — metáfora de oficio, no hecho de la prueba.",
+      "curiositiesEs": "También saco de aire. El airbag no elige; Beggs miró el reloj y paró. Cierre: ¡Valeu !!!"
     },
     {
       "id": "pagina-inicial",
@@ -2978,6 +3042,42 @@
       "curiositiesEn": "Three paths to the same craft: PT alvo came from the colour (albus); EN target came from the shield (targe); ES blanco fuses colour and object (Gmc blank). Point-blank is “de pointe en blanc”. The glue rato+alvo is bilingual: in Portuguese rato+alvo does not sound like retarget. Retargeting / remarketing are the market room. In European Portuguese rato is also the computer mouse. Calque: retargetar.",
       "historyEs": "Retarget es inglés de oficio: prefijo re- («de nuevo / de vuelta», lat. re-) + target. Target viene del antiguo francés targette, diminutivo de targe — el escudo pequeño que viró disco a apuntar. En portugués el objeto se llama alvo — del latín albus, el blanco mate del centro. El oído pega rata (rat) + blanco (target); las letras del verbo son re-, no rat. El étimo corta el animal del origen.",
       "curiositiesEs": "Tres caminos: PT alvo vino del color (albus); EN target del escudo (targe); ES blanco funde color y objeto (germ. blank). Point-blank es «de pointe en blanc». La cola rato+alvo es bilingüe. Retargeting / remarketing son la sala del mercado. En PT-PT rato también es el ratón. Calco: retargetar."
+    },
+    {
+      "id": "miss-click",
+      "word": "Miss Click",
+      "simple": "EN mis- + click — clique no sítio errado. Grafias: misclick / miss click / Miss Click. Cola da orelha: senhorita Clique ≠ étimo (Miss ← mistress). Calco: clique errado. ≠ grupo social ≠ saudade. Valeu !!!",
+      "simpleEn": "EN mis- + click — click in the wrong place. Spellings: misclick / miss click / Miss Click. Ear-glue: young lady Clique ≠ etymon (Miss ← mistress). Calque: clique errado. ≠ social clique ≠ longing. Valeu !!!",
+      "simpleEs": "EN mis- + click — clic en el sitio errado. Grafías: misclick / miss click / Miss Click. Cola del oído: señorita Clique ≠ étimo (Miss ← mistress). Calco: clique errado. ≠ grupo social ≠ añoranza. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-miss-click.html",
+      "history": "Miss Click é a boca do pátio (maiúsculas) do composto inglês misclick: prefixo mis- («erradamente») + click (onomatopeia do estalo curto, depois o gesto no ecrã). A grafia miss click parte o composto no verbo miss («falhar o alvo», OE missan) — o ofício coincide; o étimo de oficina continua a ser o prefixo. O título Miss (senhorita, de mistress) é cola da orelha, não origem. O verbo misclick já aparece em registo de oficina nos anos 1950 (antes da GUI doméstica); o nome firma-se nos anos 1990. Português herdou clique do inglês click para o gesto; clique de grupo vem do francês — homógrafo a cortar.",
+      "curiosities": "A cola senhorita Clique só funciona com maiúsculas. Em português, miss + click não soa a Miss Click — a cola é bilingue. Irmão: retarget (voltar a apontar depois do miss). O interruptor já clicava antes do rato. Calco: clique errado / clicar fora. Primo táctil: mistap. Salas cortadas: saudade (I miss you), clickbait, klick (km), culpa moral do dedo.",
+      "historyEn": "Miss Click is yard speech (capitals) for English misclick: prefix mis- (“wrongly”) + click (onomatopoeia of a short snap, later the on-screen gesture). The spelling miss click splits the compound at the verb miss (“fail to hit”, OE missan) — the office matches; the workshop etymon remains the prefix. The title Miss (from mistress) is ear-glue, not origin. The verb is recorded in the 1950s (before home GUIs); the noun settles in the 1990s. Portuguese clique for the gesture comes from English click; social clique is French — a homograph to cut.",
+      "curiositiesEn": "The young-lady glue only works with capitals. In Portuguese, miss + click does not sound like Miss Click — the glue is bilingual. Sibling: retarget (aim again after the miss). The switch already clicked before the mouse. Calque: clique errado. Touch cousin: mistap. Rooms cut: I miss you, clickbait, klick (km), blaming the finger.",
+      "historyEs": "Miss Click es habla de patio (mayúsculas) del compuesto inglés misclick: prefijo mis- («erradamente») + click (onomatopeya del chasquido corto, luego el gesto en pantalla). La grafía miss click parte el compuesto en el verbo miss («fallar el blanco») — el oficio coincide; el étimo de oficio sigue siendo el prefijo. El título Miss (de mistress) es cola del oído, no origen. El verbo se registra en los años 1950; el nombre se afirma en los 1990. El portugués clique del gesto viene del inglés click; el clique de grupo es francés — homógrafo a cortar.",
+      "curiositiesEs": "La cola señorita Clique solo funciona con mayúsculas. En portugués, miss + click no suena a Miss Click — la cola es bilingüe. Hermano: retarget (volver a apuntar). El interruptor ya clicaba antes del ratón. Calco: clique errado. Primo táctil: mistap. Salas cortadas: añoranza, clickbait, klick (km), culpa del dedo."
+    },
+    {
+      "id": "misclick",
+      "word": "misclick",
+      "simple": "Forma de oficina (uma palavra) de Miss Click — mis- + click. Valeu !!!",
+      "simpleEn": "Workshop form (one word) of Miss Click — mis- + click. Valeu !!!",
+      "simpleEs": "Forma de oficio (una palabra) de Miss Click — mis- + click. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-miss-click.html"
+    },
+    {
+      "id": "clique-errado",
+      "word": "clique errado",
+      "simple": "Calco PT de miss click — o clique no sítio errado. Homógrafo clique (grupo FR) fica de fora. Valeu !!!",
+      "simpleEn": "PT calque of miss click — the click in the wrong place. Social clique (FR) stays out. Valeu !!!",
+      "simpleEs": "Calco PT de miss click — el clic en el sitio errado. El clique de grupo (FR) queda fuera. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-miss-click.html"
     },
     {
       "id": "alvo",
@@ -5536,6 +5636,22 @@
       "curiositiesEn": "Folk etymology is the cara+alho mechanism (a story that fits too well) — not the etymon. School agglutination (planalto) is fusion that is origin. Polymorphism is another map.",
       "historyEs": "Del griego etymología: étymon (sentido verdadero) + lógos (palabra / estudio). El laboratorio usa este oficio en todas las fichas Palabras.",
       "curiositiesEs": "Etimología popular es el mecanismo de cara+alho (historia que encaja demasiado) — no es el étimo. Aglutinación escolar (planalto) es fusión que es origen."
+    },
+    {
+      "id": "etimo",
+      "word": "Étimo",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-etimo.html",
+      "simple": "Gr. étymon — a peça da origem; ≠ etimologia (ofício); espécime ação: lat. āctiō ← agere («fazer, impulsionar»); Valeu !!!",
+      "simpleEn": "Gk. étymon — the origin piece; ≠ etymology (craft); specimen ação: Lat. āctiō ← agere (“to do, to drive”); Valeu !!!",
+      "simpleEs": "Gr. étymon — la pieza del origen; ≠ etimología (oficio); espécimen ação: lat. āctiō ← agere («hacer, impulsar»); ¡Valeu !!!",
+      "history": "Étimo vem do grego étymon (sentido verdadeiro), de étymos (verdadeiro). Não é o ofício — esse é etimologia. O pedido de campo traz um espécime: o étimo de ação é o latim āctiō ← agere («fazer, impulsionar»).",
+      "curiosities": "A orelha pode colar étimo em ação. O lab corta: étimo é a peça; āctiō é o étimo de ação, não de étimo. Fecho: Valeu !!!",
+      "historyEn": "Portuguese étimo comes from Greek étymon (true sense), from étymos (true). It is not the craft — that is etymology. The field request brings a specimen: the etymon of ação is Latin āctiō ← agere (“to do, to drive”).",
+      "curiositiesEn": "The ear may glue étimo to ação. The lab cuts: étimo is the piece; āctiō is the etymon of ação, not of étimo. Close: Valeu !!!",
+      "historyEs": "Étimo viene del griego étymon (sentido verdadero), de étymos (verdadero). No es el oficio — ese es etimología. El pedido de campo trae un espécimen: el étimo de ação es el latín āctiō ← agere («hacer, impulsar»).",
+      "curiositiesEs": "El oído puede pegar étimo en ação. El lab corta: étimo es la pieza; āctiō es el étimo de ação, no de étimo. Cierre: Valeu !!!"
     },
     {
       "id": "aglutinacao",

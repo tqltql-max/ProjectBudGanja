@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T10:51:19.416Z",
+  "updatedAt": "2026-08-24T10:53:27.061Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -232,14 +232,15 @@
       "titleEs": "Observatorio PharMacon",
       "tipo": "canal",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Parceiro citado no ecossistema CANABinALL/MovReCam; mapear acervo e complementaridade.",
       "whyEn": "Partner cited in the CANABinALL/MovReCam ecosystem; map the archive and complementarity.",
       "whyEs": "Socio citado en el ecosistema CANABinALL/MovReCam; mapear acervo y complementariedad.",
       "suggestedSlug": "inspecao-canal-pharmacon",
       "seriesHint": "canal-pharmacon",
       "sources": [],
-      "notes": "Confirmar handle YouTube / site oficial antes de inventariar."
+      "notes": "Confirmar handle YouTube / site oficial antes de inventariar.",
+      "doneHref": "/posts/post-inspecao-canal-pharmacon.html"
     },
     {
       "id": "artigo-seguinte",
@@ -282,14 +283,15 @@
       "titleEs": "Tabaco — origen de la planta y productos industriales",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Próximo candidato Derivados de risco: *Nicotiana tabacum* → cigarro industrial.",
       "whyEn": "Next Risk derivatives candidate: *Nicotiana tabacum* → industrial cigarette.",
       "whyEs": "Siguiente candidato Derivados de riesgo: *Nicotiana tabacum* → cigarrillo industrial.",
       "suggestedSlug": "inspecao-derivado-tabaco",
       "seriesHint": "plantas-derivados-risco",
       "sources": [],
-      "notes": "Separar planta/etnobotânica de indústria do tabaco; sem romantizar nicotina."
+      "notes": "Separar planta/etnobotânica de indústria do tabaco; sem romantizar nicotina.",
+      "doneHref": "/posts/post-inspecao-derivado-tabaco.html"
     },
     {
       "id": "palavra-maconha",
@@ -392,14 +394,15 @@
       "titleEs": "Teofrasto — padre de la botánica y el catálogo de plantas",
       "tipo": "pessoas",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Próxima Pessoa: botânica clássica após Heródoto; elo com espécies do catálogo.",
       "whyEn": "Next Person: classical botany after Herodotus; link to catalog species.",
       "whyEs": "Siguiente Persona: botánica clásica tras Heródoto; vínculo con especies del catálogo.",
       "suggestedSlug": "inspecao-figura-teophrasto",
       "seriesHint": "pessoas-historia",
       "sources": [],
-      "notes": "Historia Plantarum; cruzar com fichas /plantas/."
+      "notes": "Historia Plantarum; cruzar com fichas /plantas/.",
+      "doneHref": "/posts/post-inspecao-figura-teophrasto.html"
     },
     {
       "id": "figura-duvivier",
@@ -490,7 +493,7 @@
       "titleEs": "Legião Urbana — discografía y vínculo con Renato Russo",
       "tipo": "arte",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Foco na obra/banda (álbuns, formação); biografia do letrista já em Pessoas.",
       "whyEn": "Focus on the band/work (albums, lineup); lyricist bio already in People.",
       "whyEs": "Foco en la obra/banda (álbumes, formación); biografía del letrista ya en Personas.",
@@ -500,7 +503,8 @@
         "https://pt.wikipedia.org/wiki/Legi%C3%A3o_Urbana",
         "/posts/post-inspecao-figura-renato-russo.html"
       ],
-      "notes": "Foco na obra, não na biografia (já em Pessoas)."
+      "notes": "Foco na obra, não na biografia (já em Pessoas). · Cap. 94",
+      "doneHref": "/posts/post-inspecao-arte-legiao-urbana.html"
     },
     {
       "id": "palavra-passar",
@@ -549,7 +553,7 @@
       "titleEs": "Reefer Madness (1936) — propaganda e historia de la palabra",
       "tipo": "arte",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Marco cultural da demonização; elo com Palavras (maconha) e discurso moral do século XX.",
       "whyEn": "Cultural landmark of demonization; link to Words (maconha) and 20th-century moral discourse.",
       "whyEs": "Hito cultural de la demonización; vínculo con Palabras (maconha) y discurso moral del siglo XX.",
@@ -558,7 +562,9 @@
       "sources": [
         "https://en.wikipedia.org/wiki/Reefer_Madness",
         "/posts/post-inspecao-palavra-maconha.html"
-      ]
+      ],
+      "doneHref": "/posts/post-inspecao-filme-reefer-madness.html",
+      "notes": " · Cap. 95"
     },
     {
       "id": "arte-grass-doc",
@@ -567,7 +573,7 @@
       "titleEs": "Grass (1999) — documental de Ron Mann",
       "tipo": "arte",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Documentário sobre proibição e cultura canábica no século XX — método de inventário cultural.",
       "whyEn": "Documentary on prohibition and cannabis culture in the 20th century — cultural inventory method.",
       "whyEs": "Documental sobre prohibición y cultura cannábica en el siglo XX — método de inventario cultural.",
@@ -575,7 +581,9 @@
       "seriesHint": "artes-cultura",
       "sources": [
         "https://en.wikipedia.org/wiki/Grass_(1999_film)"
-      ]
+      ],
+      "doneHref": "/posts/post-inspecao-filme-grass.html",
+      "notes": " · Cap. 96"
     },
     {
       "id": "arte-weeds",
@@ -584,7 +592,7 @@
       "titleEs": "Weeds (2005–2012) — serie y representación doméstica",
       "tipo": "arte",
       "priority": 4,
-      "status": "ideia",
+      "status": "feita",
       "why": "Série mainstream sobre cultivo/tráfico suburbano — útil para contrastar ficção e discurso público.",
       "whyEn": "Mainstream series on suburban grow/trade — useful to contrast fiction and public discourse.",
       "whyEs": "Serie mainstream sobre cultivo/tráfico suburbano — útil para contrastar ficción y discurso público.",
@@ -593,7 +601,8 @@
       "sources": [
         "https://en.wikipedia.org/wiki/Weeds_(TV_series)"
       ],
-      "notes": "Não romantizar; mapear tropos e limites editoriais."
+      "notes": "Não romantizar; mapear tropos e limites editoriais. · Cap. 97",
+      "doneHref": "/posts/post-inspecao-serie-weeds.html"
     },
     {
       "id": "arte-send-me-on-my-way",
@@ -988,16 +997,17 @@
       "titleEs": "Entorpecente — categoría técnica vuelta rótulo moral",
       "tipo": "palavra",
       "priority": 4,
-      "status": "ideia",
+      "status": "feita",
       "why": "No mapa de duplo sentido; ficha completa opcional.",
       "whyEn": "On the double-meaning map; full sheet optional.",
       "whyEs": "En el mapa de doble sentido; ficha completa opcional.",
-      "suggestedSlug": "inspecao-palavra-entorpecente",
+      "suggestedSlug": "inspecao-palavra-entorpecente-narcotico",
       "seriesHint": "palavras-origem",
       "sources": [
         "/biblioteca/inspecoes/#inspecoes-palavras"
       ],
-      "notes": "Já no catálogo palavras-duplo-sentido.json (mapa)."
+      "notes": "Ficha conjunta Entorpecente × Narcótico.",
+      "doneHref": "/posts/post-inspecao-palavra-entorpecente-narcotico.html"
     },
     {
       "id": "palavra-narcotico",
@@ -1006,16 +1016,17 @@
       "titleEs": "Narcótico — del torpor clínico al arma policial",
       "tipo": "palavra",
       "priority": 4,
-      "status": "ideia",
+      "status": "feita",
       "why": "No mapa de duplo sentido; ficha completa opcional.",
       "whyEn": "On the double-meaning map; full sheet optional.",
       "whyEs": "En el mapa de doble sentido; ficha completa opcional.",
-      "suggestedSlug": "inspecao-palavra-narcotico",
+      "suggestedSlug": "inspecao-palavra-entorpecente-narcotico",
       "seriesHint": "palavras-origem",
       "sources": [
         "/biblioteca/inspecoes/#inspecoes-palavras"
       ],
-      "notes": "Já no catálogo palavras-duplo-sentido.json (mapa)."
+      "notes": "Ficha conjunta Entorpecente × Narcótico.",
+      "doneHref": "/posts/post-inspecao-palavra-entorpecente-narcotico.html"
     },
     {
       "id": "arte-diamba-hq-paiva",
@@ -1024,7 +1035,7 @@
       "titleEs": "Diamba — Historias del prohibicionismo en Brasil (HQ, Daniel Paiva)",
       "tipo": "arte",
       "priority": 2,
-      "status": "ideia",
+      "status": "feita",
       "why": "HQ documentário sobre criminalização e racismo estrutural — distinguir da antologia Diamba Sarabamba (1986) já inspecionada.",
       "whyEn": "Documentary comics on criminalization and structural racism — distinct from the 1986 Diamba Sarabamba anthology already inspected.",
       "whyEs": "HQ documental sobre criminalización y racismo estructural — distinta de la antología Diamba Sarabamba (1986).",
@@ -1034,7 +1045,8 @@
         "https://www.brasaeditora.com.br/produtos/livro-hq-diamba-2ed/",
         "/posts/post-inspecao-arte-diamba-sarabamba.html"
       ],
-      "notes": "Livro primeiro (HQ); não confundir com coletânea Ground 1986."
+      "notes": "Livro primeiro (HQ); não confundir com coletânea Ground 1986. · Cap. 89",
+      "doneHref": "/posts/post-inspecao-arte-diamba-hq-paiva.html"
     },
     {
       "id": "arte-confissoes-comedor-opio",
@@ -1043,7 +1055,7 @@
       "titleEs": "Confesiones de un inglés comedor de opio (De Quincey) — génesis literaria",
       "tipo": "arte",
       "priority": 2,
-      "status": "ideia",
+      "status": "feita",
       "why": "Marco literário do ópio; elo natural com A Última Casa de Ópio (Tosches) — sem romantizar uso.",
       "whyEn": "Literary landmark of opium; natural link to The Last Opium Den (Tosches) — without romanticizing use.",
       "whyEs": "Hito literario del opio; vínculo natural con A Última Casa de Ópio — sin romantizar el uso.",
@@ -1053,7 +1065,8 @@
         "https://en.wikipedia.org/wiki/Confessions_of_an_English_Opium-Eater",
         "/posts/post-inspecao-arte-a-ultima-casa-de-opio.html"
       ],
-      "notes": "Livro primeiro (1821); metáfora ≠ protocolo."
+      "notes": "Livro primeiro (1821); metáfora ≠ protocolo. · Cap. 90",
+      "doneHref": "/posts/post-inspecao-arte-confissoes-comedor-opio.html"
     },
     {
       "id": "arte-o-mundo-de-sofia",
@@ -1062,7 +1075,7 @@
       "titleEs": "El mundo de Sofía (Gaarder) — filosofía narrada a escala global",
       "tipo": "arte",
       "priority": 2,
-      "status": "ideia",
+      "status": "feita",
       "why": "Obra-marco de Gaarder (1991); complementar O Dia do Curinga — autor já em Pessoas.",
       "whyEn": "Gaarder landmark (1991); complements The Solitaire Mystery — author already in People.",
       "whyEs": "Obra hito de Gaarder (1991); complementa O Dia do Curinga — autor ya en Personas.",
@@ -1073,7 +1086,8 @@
         "/posts/post-inspecao-figura-jostein-gaarder.html",
         "/posts/post-inspecao-arte-o-dia-do-curinga.html"
       ],
-      "notes": "Livro primeiro; biografia fica em Gaarder."
+      "notes": "Livro primeiro; biografia fica em Gaarder. · Cap. 91",
+      "doneHref": "/posts/post-inspecao-arte-o-mundo-de-sofia.html"
     },
     {
       "id": "arte-alice-atraves-do-espelho",
@@ -1082,7 +1096,7 @@
       "titleEs": "A través del espejo (Carroll, 1871) — secuela literaria",
       "tipo": "arte",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Segunda obra de Alice — espelho, xadrez e linguagem; par com a ficha do livro de 1865.",
       "whyEn": "Alice sequel — mirror, chess and language; pair with the 1865 book sheet.",
       "whyEs": "Secuela de Alicia — espejo, ajedrez y lenguaje; par con la ficha del libro de 1865.",
@@ -1092,7 +1106,8 @@
         "https://en.wikipedia.org/wiki/Through_the_Looking-Glass",
         "/posts/post-inspecao-filme-alice-no-pais-das-maravilhas.html"
       ],
-      "notes": "Livro primeiro; Disney secundário se entrar."
+      "notes": "Livro primeiro; Disney secundário se entrar. · Cap. 98",
+      "doneHref": "/posts/post-inspecao-arte-alice-atraves-do-espelho.html"
     },
     {
       "id": "arte-botany-of-desire",
@@ -1101,7 +1116,7 @@
       "titleEs": "La botánica del deseo (Michael Pollan) — plantas que nos domestican",
       "tipo": "arte",
       "priority": 2,
-      "status": "ideia",
+      "status": "feita",
       "why": "Ensaio com capítulo da cannabis/maçã/batata/tulipa — elo Plantas × Artes × História das Coisas.",
       "whyEn": "Essay with cannabis/apple/potato/tulip chapters — Plants × Arts × Story of Stuff link.",
       "whyEs": "Ensayo con capítulos cannabis/manzana/patata/tulipán — vínculo Plantas × Artes.",
@@ -1112,7 +1127,8 @@
         "/plantas/",
         "/posts/post-inspecao-arte-a-historia-das-coisas.html"
       ],
-      "notes": "Livro primeiro; doc PBS como eco secundário."
+      "notes": "Livro primeiro; doc PBS como eco secundário. · Cap. 92",
+      "doneHref": "/posts/post-inspecao-arte-botanica-do-desejo.html"
     },
     {
       "id": "arte-paraisos-artificiais",
@@ -1121,7 +1137,7 @@
       "titleEs": "Los paraísos artificiales (Baudelaire) — hachís y modernidad literaria",
       "tipo": "arte",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Ensaio clássico sobre haxixe/ópio na literatura; elo com Palavras (droga) e Tosches — sem glamourizar.",
       "whyEn": "Classic essay on hashish/opium in literature; link to Words (droga) and Tosches — no glamorizing.",
       "whyEs": "Ensayo clásico sobre hachís/opio; vínculo con Palabras y Tosches — sin glamurizar.",
@@ -1132,7 +1148,8 @@
         "/posts/post-inspecao-palavra-droga.html",
         "/posts/post-inspecao-arte-a-ultima-casa-de-opio.html"
       ],
-      "notes": "Texto literário ≠ protocolo de substâncias."
+      "notes": "Texto literário ≠ protocolo de substâncias. · Cap. 99",
+      "doneHref": "/posts/post-inspecao-arte-paraisos-artificiais.html"
     },
     {
       "id": "arte-easy-rider",
@@ -1141,7 +1158,7 @@
       "titleEs": "Easy Rider (1969) — carretera, contracultura y mito de la libertad",
       "tipo": "arte",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Marco do cinema de estrada e da contracultura; elo com caminho/passar.",
       "whyEn": "Landmark road/counterculture film; link to caminho/passar.",
       "whyEs": "Hito del cine de carretera y contracultura; vínculo con caminho/passar.",
@@ -1151,7 +1168,8 @@
         "https://en.wikipedia.org/wiki/Easy_Rider",
         "/posts/post-inspecao-palavra-caminho.html"
       ],
-      "notes": "Filme primeiro; não romantizar overdose nem tráfico."
+      "notes": "Filme primeiro; não romantizar overdose nem tráfico. · Cap. 100",
+      "doneHref": "/posts/post-inspecao-filme-easy-rider.html"
     },
     {
       "id": "arte-dallas-buyers-club",
@@ -1160,7 +1178,7 @@
       "titleEs": "Dallas Buyers Club (2013) — acceso, medicina y burocracia",
       "tipo": "arte",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Drama sobre acesso a tratamentos — eco com literacia medicinal (UNIFESP), sem confundir com Legado.",
       "whyEn": "Drama on treatment access — echo with medicinal literacy (UNIFESP); not Legacy.",
       "whyEs": "Drama sobre acceso a tratamientos — eco con literacia medicinal; no es Legado.",
@@ -1170,7 +1188,8 @@
         "https://en.wikipedia.org/wiki/Dallas_Buyers_Club",
         "/biblioteca/unifesp/"
       ],
-      "notes": "Ficção baseada em factos; não é aconselhamento médico."
+      "notes": "Ficção baseada em factos; não é aconselhamento médico. · Cap. 101",
+      "doneHref": "/posts/post-inspecao-filme-dallas-buyers-club.html"
     },
     {
       "id": "arte-wall-e",
@@ -1179,7 +1198,7 @@
       "titleEs": "WALL-E (2008) — consumo, basura y planeta finito",
       "tipo": "arte",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Parábola animada do extrair-fazer-descartar; par com A História das Coisas (Leonard).",
       "whyEn": "Animated parable of take-make-waste; pair with The Story of Stuff (Leonard).",
       "whyEs": "Parábola animada de extraer-hacer-desechar; par con A História das Coisas.",
@@ -1189,7 +1208,8 @@
         "https://en.wikipedia.org/wiki/WALL-E",
         "/posts/post-inspecao-arte-a-historia-das-coisas.html"
       ],
-      "notes": "Filme primeiro; elo Artes consumo/materiais."
+      "notes": "Filme primeiro; elo Artes consumo/materiais. · Cap. 102",
+      "doneHref": "/posts/post-inspecao-filme-wall-e.html"
     },
     {
       "id": "arte-primavera-silenciosa",
@@ -1198,7 +1218,7 @@
       "titleEs": "Primavera silenciosa (Rachel Carson, 1962) — ensayo ecológico fundador",
       "tipo": "arte",
       "priority": 2,
-      "status": "ideia",
+      "status": "feita",
       "why": "Livro que mudou a literacia ambiental; elo com História das Coisas e derivados de risco.",
       "whyEn": "Book that changed environmental literacy; link to Story of Stuff and risk derivatives.",
       "whyEs": "Libro que cambió la literacia ambiental; vínculo con História das Coisas y derivados.",
@@ -1209,7 +1229,8 @@
         "/posts/post-inspecao-arte-a-historia-das-coisas.html",
         "/biblioteca/inspecoes/#inspecoes-derivados"
       ],
-      "notes": "Livro primeiro; Pessoas Carson opcional depois."
+      "notes": "Livro primeiro; Pessoas Carson opcional depois. · Cap. 93",
+      "doneHref": "/posts/post-inspecao-arte-primavera-silenciosa.html"
     },
     {
       "id": "arte-tropa-de-elite",
@@ -1218,7 +1239,7 @@
       "titleEs": "Tropa de Elite (2007) — policía, morro y discurso de la guerra a las drogas",
       "tipo": "arte",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Marco do cinema BR sobre Estado e tráfico; contrastar ficção, estigma (Palavras) e Diamba HQ.",
       "whyEn": "BR cinema landmark on State and trafficking; contrast fiction, stigma (Words) and Diamba HQ.",
       "whyEs": "Hito del cine BR sobre Estado y tráfico; contrastar ficción, estigma y Diamba HQ.",
@@ -1228,7 +1249,8 @@
         "https://pt.wikipedia.org/wiki/Tropa_de_Elite",
         "/posts/post-inspecao-palavra-droga.html"
       ],
-      "notes": "Filme primeiro; crítica cultural, não apologia nem glamour de violência."
+      "notes": "Filme primeiro; crítica cultural, não apologia nem glamour de violência. · Cap. 103",
+      "doneHref": "/posts/post-inspecao-filme-tropa-de-elite.html"
     },
     {
       "id": "arte-up-in-smoke",
@@ -1237,7 +1259,7 @@
       "titleEs": "Up in Smoke (1978) — comedia Cheech y Chong y el estereotipo",
       "tipo": "arte",
       "priority": 4,
-      "status": "ideia",
+      "status": "feita",
       "why": "Marco da comédia canábica US; auditar estereótipo vs literacia (Palavras/maconha).",
       "whyEn": "Landmark US cannabis comedy; audit stereotype vs literacy (Words/maconha).",
       "whyEs": "Hito de la comedia cannábica; auditar estereotipo vs literacia.",
@@ -1247,7 +1269,8 @@
         "https://en.wikipedia.org/wiki/Up_in_Smoke",
         "/posts/post-inspecao-palavra-maconha.html"
       ],
-      "notes": "Mapear tropos; não romantizar nem endossar uso."
+      "notes": "Mapear tropos; não romantizar nem endossar uso. · Cap. 104",
+      "doneHref": "/posts/post-inspecao-filme-up-in-smoke.html"
     },
     {
       "id": "arte-fed-up",
@@ -1256,7 +1279,7 @@
       "titleEs": "Fed Up (2014) — documental sobre azúcar e industria",
       "tipo": "arte",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Elo Artes × Derivados (cana/açúcar) e Lair Ribeiro — consumismo metabólico.",
       "whyEn": "Arts × Derivatives (cane/sugar) and Lair Ribeiro — metabolic consumerism.",
       "whyEs": "Artes × Derivados (caña/azúcar) y Lair Ribeiro — consumismo metabólico.",
@@ -1267,7 +1290,8 @@
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
         "/posts/post-inspecao-divulgacao-lair-ribeiro.html"
       ],
-      "notes": "Documentário; não é aconselhamento médico."
+      "notes": "Documentário; não é aconselhamento médico. · Cap. 105",
+      "doneHref": "/posts/post-inspecao-filme-fed-up.html"
     },
     {
       "id": "arte-super-size-me",
@@ -1276,7 +1300,7 @@
       "titleEs": "Super Size Me (2004) — cuerpo, marca y experimento mediático",
       "tipo": "arte",
       "priority": 4,
-      "status": "ideia",
+      "status": "feita",
       "why": "Documentário-performance sobre fast-food; par com Fed Up e derivados de risco.",
       "whyEn": "Performance documentary on fast food; pair with Fed Up and risk derivatives.",
       "whyEs": "Documental-performance sobre comida rápida; par con Fed Up y derivados.",
@@ -1286,7 +1310,8 @@
         "https://en.wikipedia.org/wiki/Super_Size_Me",
         "/posts/post-inspecao-derivado-cana-de-acucar.html"
       ],
-      "notes": "Obra mediática; limites metodológicos do «experimento»."
+      "notes": "Obra mediática; limites metodológicos do «experimento». · Cap. 106",
+      "doneHref": "/posts/post-inspecao-filme-super-size-me.html"
     },
     {
       "id": "arte-medo-e-delirio",
@@ -1295,7 +1320,7 @@
       "titleEs": "Miedo y asco en Las Vegas (Thompson / Gilliam) — libro y película",
       "tipo": "arte",
       "priority": 4,
-      "status": "ideia",
+      "status": "feita",
       "why": "Gonzo e psicadelia na cultura pop; livro primeiro, filme como adaptação — sem romantizar.",
       "whyEn": "Gonzo and psychedelia; book first, film as adaptation — no romanticizing.",
       "whyEs": "Gonzo y psicodelia; libro primero, película como adaptación — sin romantizar.",
@@ -1305,7 +1330,8 @@
         "https://en.wikipedia.org/wiki/Fear_and_Loathing_in_Las_Vegas",
         "https://en.wikipedia.org/wiki/Fear_and_Loathing_in_Las_Vegas_(film)"
       ],
-      "notes": "Hierarquia: livro 1971 → filme 1998."
+      "notes": "Hierarquia: livro 1971 → filme 1998. · Cap. 107",
+      "doneHref": "/posts/post-inspecao-arte-medo-e-delirio-las-vegas.html"
     },
     {
       "id": "arte-high-maintenance",
@@ -1314,7 +1340,7 @@
       "titleEs": "High Maintenance — serie antológica del repartidor",
       "tipo": "arte",
       "priority": 4,
-      "status": "ideia",
+      "status": "feita",
       "why": "Série sobre vidas urbanas com cannabis como fio — quotidiano vs estereótipo (Weeds / Up in Smoke).",
       "whyEn": "Urban lives with cannabis as thread — everyday vs stereotype (Weeds / Up in Smoke).",
       "whyEs": "Vidas urbanas con cannabis como hilo — cotidiano vs estereotipo.",
@@ -1323,7 +1349,8 @@
       "sources": [
         "https://en.wikipedia.org/wiki/High_Maintenance"
       ],
-      "notes": "Vimeo → HBO; não romantizar."
+      "notes": "Vimeo → HBO; não romantizar. · Cap. 108",
+      "doneHref": "/posts/post-inspecao-serie-high-maintenance.html"
     },
     {
       "id": "arte-beto-e-de-quadrinhos",
@@ -1332,7 +1359,7 @@
       "titleEs": "Beto e Dé y otros cómics cannábicos (Daniel Paiva)",
       "tipo": "arte",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Coletânea de tirinhas canábicas BR; elo com a HQ Diamba (mesmo autor) e Palavras/maconha.",
       "whyEn": "Brazilian cannabis strips; link to Diamba HQ (same author) and Words/maconha.",
       "whyEs": "Tiras cannábicas BR; vínculo con HQ Diamba y Palabras/maconha.",
@@ -1341,7 +1368,8 @@
       "sources": [
         "https://literaturars.com.br/2023/08/30/diamba-historias-do-proibicionismo-no-brasil/"
       ],
-      "notes": "Obra gráfica; par com arte-diamba-hq-paiva."
+      "notes": "Obra gráfica; par com arte-diamba-hq-paiva. · Cap. 109",
+      "doneHref": "/posts/post-inspecao-arte-beto-e-de.html"
     },
     {
       "id": "arte-matrix-sequelas",
@@ -1350,7 +1378,7 @@
       "titleEs": "Matrix Reloaded / Revolutions — secuelas y dilución de la pregunta",
       "tipo": "arte",
       "priority": 4,
-      "status": "ideia",
+      "status": "feita",
       "why": "Como as sequelas tratam o mito de Matrix (1999) e o elo Keanu — obra-âncora vs franquia.",
       "whyEn": "How sequels treat The Matrix (1999) myth and Keanu link — anchor work vs franchise.",
       "whyEs": "Cómo las secuelas tratan el mito de Matrix (1999) y Keanu — obra ancla vs franquicia.",
@@ -1361,7 +1389,8 @@
         "/posts/post-inspecao-filme-the-matrix.html",
         "/posts/post-inspecao-figura-keanu-reeves.html"
       ],
-      "notes": "Secundário à ficha Matrix 1999."
+      "notes": "Secundário à ficha Matrix 1999. · Cap. 110",
+      "doneHref": "/posts/post-inspecao-filme-matrix-sequelas.html"
     },
     {
       "id": "arte-koyaanisqatsi",
@@ -1370,7 +1399,7 @@
       "titleEs": "Koyaanisqatsi (1982) — vida fuera de equilibrio",
       "tipo": "arte",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Ensaio visual sobre velocidade e indústria; elo com História das Coisas e caminho/passar.",
       "whyEn": "Visual essay on speed and industry; link to Story of Stuff and caminho/passar.",
       "whyEs": "Ensayo visual sobre velocidad e industria; vínculo con História das Coisas.",
@@ -1381,7 +1410,8 @@
         "/posts/post-inspecao-arte-a-historia-das-coisas.html",
         "/posts/post-inspecao-palavra-caminho.html"
       ],
-      "notes": "Filme-ensaio; sem diálogo."
+      "notes": "Filme-ensaio; sem diálogo. · Cap. 111",
+      "doneHref": "/posts/post-inspecao-filme-koyaanisqatsi.html"
     },
     {
       "id": "palavra-coelho",
@@ -1488,24 +1518,25 @@
     },
     {
       "id": "derivado-laranja",
-      "title": "Derivados do Laranja — suco concentrado, néctar, refrigerante, aromas e corantes",
-      "titleEn": "Orange derivatives — concentrate juice, nectar, soft drinks, flavours and colours",
-      "titleEs": "Derivados de Naranja — jugo concentrado, néctar, refrescos, aromas y colorantes",
+      "title": "Derivados da Laranja — açúcar, aditivos e química industrial",
+      "titleEn": "Orange derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados de Naranja — azúcar, aditivos y química industrial",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Laranja inteiro vs matriz industrial (suco concentrado, néctar, refrigerante, aromas e corantes); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Orange vs industrial matrix (concentrate juice, nectar, soft drinks, flavours and colours); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Naranja entero vs matriz industrial (jugo concentrado, néctar, refrescos, aromas y colorantes); cruzar azúcares libres / caña.",
+      "status": "feita",
+      "why": "Derivados de risco: Laranja inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
+      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
+      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
       "suggestedSlug": "inspecao-derivado-laranja",
       "seriesHint": "plantas-derivados-risco",
       "sources": [
         "https://pt.wikipedia.org/wiki/Laranja",
         "/posts/post-inspecao-planta-laranja.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~3"
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 7",
+      "doneHref": "/posts/post-inspecao-derivado-laranja.html"
     },
     {
       "id": "fruto-acai",
@@ -1529,24 +1560,25 @@
     },
     {
       "id": "derivado-acai",
-      "title": "Derivados do Açaí — polpa pasteurizada, bowl/sorvete com xarope, snacks «açaí»",
-      "titleEn": "Açaí derivatives — pasteurized pulp, bowl/ice cream with syrup, “açaí” snacks",
-      "titleEs": "Derivados de Açaí — pulpa pasteurizada, bowl/helado con jarabe, snacks «açaí»",
+      "title": "Derivados do Açaí — açúcar, aditivos e química industrial",
+      "titleEn": "Açaí derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados de Açaí — azúcar, aditivos y química industrial",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Açaí inteiro vs matriz industrial (polpa pasteurizada, bowl/sorvete com xarope, snacks «açaí»); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Açaí vs industrial matrix (pasteurized pulp, bowl/ice cream with syrup, “açaí” snacks); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Açaí entero vs matriz industrial (pulpa pasteurizada, bowl/helado con jarabe, snacks «açaí»); cruzar azúcares libres / caña.",
+      "status": "feita",
+      "why": "Derivados de risco: Açaí inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
+      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
+      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
       "suggestedSlug": "inspecao-derivado-acai",
       "seriesHint": "plantas-derivados-risco",
       "sources": [
         "https://pt.wikipedia.org/wiki/A%C3%A7a%C3%AD",
         "/posts/post-inspecao-planta-acai.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~4"
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 8",
+      "doneHref": "/posts/post-inspecao-derivado-acai.html"
     },
     {
       "id": "fruto-manga",
@@ -1570,24 +1602,25 @@
     },
     {
       "id": "derivado-manga",
-      "title": "Derivados do Manga — néctar, polpa adoçada, doce, chips",
-      "titleEn": "Mango derivatives — nectar, sweetened pulp, sweets, chips",
-      "titleEs": "Derivados de Mango — néctar, pulpa endulzada, dulce, chips",
+      "title": "Derivados da Manga — açúcar, aditivos e química industrial",
+      "titleEn": "Mango derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados de Mango — azúcar, aditivos y química industrial",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Manga inteiro vs matriz industrial (néctar, polpa adoçada, doce, chips); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Mango vs industrial matrix (nectar, sweetened pulp, sweets, chips); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Mango entero vs matriz industrial (néctar, pulpa endulzada, dulce, chips); cruzar azúcares libres / caña.",
+      "status": "feita",
+      "why": "Derivados de risco: Manga inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
+      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
+      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
       "suggestedSlug": "inspecao-derivado-manga",
       "seriesHint": "plantas-derivados-risco",
       "sources": [
         "https://pt.wikipedia.org/wiki/Manga",
         "/posts/post-inspecao-planta-manga.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~5"
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 9",
+      "doneHref": "/posts/post-inspecao-derivado-manga.html"
     },
     {
       "id": "fruto-banana",
@@ -1611,24 +1644,25 @@
     },
     {
       "id": "derivado-banana",
-      "title": "Derivados do Banana — chips, farinha, snacks e sobremesas ultraprocessadas",
-      "titleEn": "Banana derivatives — chips, flour, snacks and ultra-processed desserts",
-      "titleEs": "Derivados de Plátano / banana — chips, harina, snacks y postres ultraprocesados",
+      "title": "Derivados da Banana — açúcar, aditivos e química industrial",
+      "titleEn": "Banana derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados de Plátano / banana — azúcar, aditivos y química industrial",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Banana inteiro vs matriz industrial (chips, farinha, snacks e sobremesas ultraprocessadas); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Banana vs industrial matrix (chips, flour, snacks and ultra-processed desserts); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Plátano / banana entero vs matriz industrial (chips, harina, snacks y postres ultraprocesados); cruzar azúcares libres / caña.",
+      "status": "feita",
+      "why": "Derivados de risco: Banana inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
+      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
+      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
       "suggestedSlug": "inspecao-derivado-banana",
       "seriesHint": "plantas-derivados-risco",
       "sources": [
         "https://pt.wikipedia.org/wiki/Banana",
         "/posts/post-inspecao-planta-banana.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~6"
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 10",
+      "doneHref": "/posts/post-inspecao-derivado-banana.html"
     },
     {
       "id": "fruto-maca",
@@ -1652,24 +1686,25 @@
     },
     {
       "id": "derivado-maca",
-      "title": "Derivados do Maçã — suco concentrado, puré, chips e snacks",
-      "titleEn": "Apple derivatives — concentrate juice, purée, chips and snacks",
-      "titleEs": "Derivados de Manzana — jugo concentrado, puré, chips y snacks",
+      "title": "Derivados da Maçã — açúcar, aditivos e química industrial",
+      "titleEn": "Apple derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados de Manzana — azúcar, aditivos y química industrial",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Maçã inteiro vs matriz industrial (suco concentrado, puré, chips e snacks); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Apple vs industrial matrix (concentrate juice, purée, chips and snacks); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Manzana entero vs matriz industrial (jugo concentrado, puré, chips y snacks); cruzar azúcares libres / caña.",
+      "status": "feita",
+      "why": "Derivados de risco: Maçã inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
+      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
+      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
       "suggestedSlug": "inspecao-derivado-maca",
       "seriesHint": "plantas-derivados-risco",
       "sources": [
         "https://pt.wikipedia.org/wiki/Ma%C3%A7%C3%A3",
         "/posts/post-inspecao-planta-maca.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~7"
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 11",
+      "doneHref": "/posts/post-inspecao-derivado-maca.html"
     },
     {
       "id": "fruto-abacaxi",
@@ -1693,24 +1728,25 @@
     },
     {
       "id": "derivado-abacaxi",
-      "title": "Derivados do Abacaxi — lata em calda, suco, néctar, doces",
-      "titleEn": "Pineapple derivatives — canned in syrup, juice, nectar, sweets",
-      "titleEs": "Derivados de Piña — lata en almíbar, jugo, néctar, dulces",
+      "title": "Derivados do Abacaxi — açúcar, aditivos e química industrial",
+      "titleEn": "Pineapple derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados de Piña — azúcar, aditivos y química industrial",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Abacaxi inteiro vs matriz industrial (lata em calda, suco, néctar, doces); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Pineapple vs industrial matrix (canned in syrup, juice, nectar, sweets); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Piña entero vs matriz industrial (lata en almíbar, jugo, néctar, dulces); cruzar azúcares libres / caña.",
+      "status": "feita",
+      "why": "Derivados de risco: Abacaxi inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
+      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
+      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
       "suggestedSlug": "inspecao-derivado-abacaxi",
       "seriesHint": "plantas-derivados-risco",
       "sources": [
         "https://pt.wikipedia.org/wiki/Abacaxi",
         "/posts/post-inspecao-planta-abacaxi.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~8"
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 12",
+      "doneHref": "/posts/post-inspecao-derivado-abacaxi.html"
     },
     {
       "id": "fruto-goiaba",
@@ -1734,24 +1770,25 @@
     },
     {
       "id": "derivado-goiaba",
-      "title": "Derivados do Goiaba — goiabada, polpa, néctar, doces de corte",
-      "titleEn": "Guava derivatives — guava paste, pulp, nectar, slab sweets",
-      "titleEs": "Derivados de Guayaba — pasta de guayaba, pulpa, néctar, dulces",
+      "title": "Derivados da Goiaba — açúcar, aditivos e química industrial",
+      "titleEn": "Guava derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados de Guayaba — azúcar, aditivos y química industrial",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Goiaba inteiro vs matriz industrial (goiabada, polpa, néctar, doces de corte); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Guava vs industrial matrix (guava paste, pulp, nectar, slab sweets); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Guayaba entero vs matriz industrial (pasta de guayaba, pulpa, néctar, dulces); cruzar azúcares libres / caña.",
+      "status": "feita",
+      "why": "Derivados de risco: Goiaba inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
+      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
+      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
       "suggestedSlug": "inspecao-derivado-goiaba",
       "seriesHint": "plantas-derivados-risco",
       "sources": [
         "https://pt.wikipedia.org/wiki/Goiaba",
         "/posts/post-inspecao-planta-goiaba.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~9"
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 13",
+      "doneHref": "/posts/post-inspecao-derivado-goiaba.html"
     },
     {
       "id": "fruto-cacau",
@@ -1775,24 +1812,25 @@
     },
     {
       "id": "derivado-cacau",
-      "title": "Derivados do Cacau — chocolate, cacau em pó açucarado, snacks e bebidas",
-      "titleEn": "Cacao derivatives — chocolate, sweetened cocoa powder, snacks and drinks",
-      "titleEs": "Derivados de Cacao — chocolate, cacao en polvo azucarado, snacks y bebidas",
+      "title": "Derivados do Cacau — açúcar, aditivos e química industrial",
+      "titleEn": "Cacao derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados de Cacao — azúcar, aditivos y química industrial",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Cacau inteiro vs matriz industrial (chocolate, cacau em pó açucarado, snacks e bebidas); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Cacao vs industrial matrix (chocolate, sweetened cocoa powder, snacks and drinks); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Cacao entero vs matriz industrial (chocolate, cacao en polvo azucarado, snacks y bebidas); cruzar azúcares libres / caña.",
+      "status": "feita",
+      "why": "Derivados de risco: Cacau inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
+      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
+      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
       "suggestedSlug": "inspecao-derivado-cacau",
       "seriesHint": "plantas-derivados-risco",
       "sources": [
         "https://pt.wikipedia.org/wiki/Cacau",
         "/posts/post-inspecao-planta-cacau.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~10"
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 14",
+      "doneHref": "/posts/post-inspecao-derivado-cacau.html"
     },
     {
       "id": "fruto-uva",
@@ -1816,24 +1854,25 @@
     },
     {
       "id": "derivado-uva",
-      "title": "Derivados do Uva — suco concentrado, néctar, refrigerante",
-      "titleEn": "Grape derivatives — concentrate juice, nectar, soft drinks",
-      "titleEs": "Derivados de Uva — jugo concentrado, néctar, refrescos",
+      "title": "Derivados da Uva — açúcar, aditivos e química industrial",
+      "titleEn": "Grape derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados de Uva — azúcar, aditivos y química industrial",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Uva inteiro vs matriz industrial (suco concentrado, néctar, refrigerante); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Grape vs industrial matrix (concentrate juice, nectar, soft drinks); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Uva entero vs matriz industrial (jugo concentrado, néctar, refrescos); cruzar azúcares libres / caña.",
+      "status": "feita",
+      "why": "Derivados de risco: Uva inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
+      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
+      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
       "suggestedSlug": "inspecao-derivado-uva",
       "seriesHint": "plantas-derivados-risco",
       "sources": [
         "https://pt.wikipedia.org/wiki/Uva",
         "/posts/post-inspecao-planta-uva.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~11"
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 15",
+      "doneHref": "/posts/post-inspecao-derivado-uva.html"
     },
     {
       "id": "fruto-morango",
@@ -1857,24 +1896,25 @@
     },
     {
       "id": "derivado-morango",
-      "title": "Derivados do Morango — iogurte, calda, aroma, geleia industrial",
-      "titleEn": "Strawberry derivatives — yogurt, syrup, flavour, industrial jam",
-      "titleEs": "Derivados de Fresa — yogur, jarabe, aroma, mermelada industrial",
+      "title": "Derivados do Morango — açúcar, aditivos e química industrial",
+      "titleEn": "Strawberry derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados de Fresa — azúcar, aditivos y química industrial",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Morango inteiro vs matriz industrial (iogurte, calda, aroma, geleia industrial); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Strawberry vs industrial matrix (yogurt, syrup, flavour, industrial jam); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Fresa entero vs matriz industrial (yogur, jarabe, aroma, mermelada industrial); cruzar azúcares libres / caña.",
+      "status": "feita",
+      "why": "Derivados de risco: Morango inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
+      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
+      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
       "suggestedSlug": "inspecao-derivado-morango",
       "seriesHint": "plantas-derivados-risco",
       "sources": [
         "https://pt.wikipedia.org/wiki/Morango",
         "/posts/post-inspecao-planta-morango.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~12"
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 16",
+      "doneHref": "/posts/post-inspecao-derivado-morango.html"
     },
     {
       "id": "fruto-maracuja-fruta",
@@ -1898,24 +1938,25 @@
     },
     {
       "id": "derivado-maracuja-fruta",
-      "title": "Derivados do Maracujá (fruta) — polpa pasteurizada, néctar, concentrado com açúcar",
-      "titleEn": "Passion fruit derivatives — pasteurized pulp, nectar, sugar concentrate",
-      "titleEs": "Derivados de Maracuyá (fruta) — pulpa pasteurizada, néctar, concentrado con azúcar",
+      "title": "Derivados do Maracujá (fruta) — açúcar, aditivos e química industrial",
+      "titleEn": "Passion fruit derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados de Maracuyá (fruta) — azúcar, aditivos y química industrial",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Maracujá (fruta) inteiro vs matriz industrial (polpa pasteurizada, néctar, concentrado com açúcar); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Passion fruit vs industrial matrix (pasteurized pulp, nectar, sugar concentrate); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Maracuyá (fruta) entero vs matriz industrial (pulpa pasteurizada, néctar, concentrado con azúcar); cruzar azúcares libres / caña.",
+      "status": "feita",
+      "why": "Derivados de risco: Maracujá (fruta) inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
+      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
+      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
       "suggestedSlug": "inspecao-derivado-maracuja-fruta",
       "seriesHint": "plantas-derivados-risco",
       "sources": [
         "https://pt.wikipedia.org/wiki/Passiflora_edulis",
         "/posts/post-inspecao-planta-maracuja-fruta.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Ordem fila ~13"
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 17",
+      "doneHref": "/posts/post-inspecao-derivado-maracuja-fruta.html"
     },
     {
       "id": "arte-divertida-mente",
@@ -1944,7 +1985,7 @@
       "titleEs": "Intensamente 2 (2024) — Ansiedad y nuevas emociones",
       "tipo": "arte",
       "priority": 3,
-      "status": "ideia",
+      "status": "feita",
       "why": "Sequela: Ansiedade, Inveja, Vergonha, Tédio — eco da ficha 2015; não substitui a génese.",
       "whyEn": "Sequel: Anxiety, Envy, Embarrassment, Ennui — echo of the 2015 sheet; does not replace the origin.",
       "whyEs": "Secuela: Ansiedad, Envidia, Vergüenza, Tedio — eco de la ficha 2015.",
@@ -1954,7 +1995,8 @@
         "https://pt.wikipedia.org/wiki/Divertida_Mente_2",
         "/posts/post-inspecao-filme-divertida-mente.html"
       ],
-      "notes": "Só depois da ficha 2015 estável."
+      "notes": "Só depois da ficha 2015 estável. · Cap. 112",
+      "doneHref": "/posts/post-inspecao-filme-divertida-mente-2.html"
     },
     {
       "id": "palavra-emocao",
@@ -3829,24 +3871,25 @@
     },
     {
       "id": "derivado-mamao",
-      "title": "Derivados do Mamão — néctar, polpa adoçada, doce, snacks «papaya»",
-      "titleEn": "Papaya derivatives — nectar, sweetened pulp, sweets, papaya snacks",
-      "titleEs": "Derivados de Papaya — néctar, pulpa endulzada, dulces, snacks «papaya»",
+      "title": "Derivados do Mamão — açúcar, aditivos e química industrial",
+      "titleEn": "Papaya derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados de Papaya — azúcar, aditivos y química industrial",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: Mamão inteiro vs matriz industrial (néctar, polpa adoçada, doce, snacks); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole Papaya vs industrial matrix (nectar, sweetened pulp, sweets, snacks); cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: Papaya entera vs matriz industrial; cruzar azúcares libres / caña.",
+      "status": "feita",
+      "why": "Derivados de risco: Mamão inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
+      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
+      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
       "suggestedSlug": "inspecao-derivado-mamao",
       "seriesHint": "plantas-derivados-risco",
       "sources": [
         "https://pt.wikipedia.org/wiki/Mam%C3%A3o",
         "/posts/post-inspecao-planta-mamao.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Não confundir com mamona."
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 18",
+      "doneHref": "/posts/post-inspecao-derivado-mamao.html"
     },
     {
       "id": "palavra-magnifico",
@@ -3895,24 +3938,25 @@
     },
     {
       "id": "derivado-melancia",
-      "title": "Derivados da melancia — sucos, néctares e ultraprocessados",
-      "titleEn": "Watermelon derivatives — juices, nectars and ultra-processed",
-      "titleEs": "Derivados de la sandía — jugos, néctares y ultraprocesados",
+      "title": "Derivados da Melancia — açúcar, aditivos e química industrial",
+      "titleEn": "Watermelon derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados de Sandía — azúcar, aditivos y química industrial",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: melancia inteira vs matriz industrial (suco, néctar, snacks «watermelon»); cruzar com cana/açúcares livres.",
-      "whyEn": "Risk derivatives: whole watermelon vs industrial matrix; cross free sugars / sugarcane.",
-      "whyEs": "Derivados de riesgo: sandía entera vs matriz industrial; cruzar azúcares libres / caña.",
+      "status": "feita",
+      "why": "Derivados de risco: Melancia inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
+      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
+      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
       "suggestedSlug": "inspecao-derivado-melancia",
       "seriesHint": "plantas-derivados-risco",
       "sources": [
         "https://pt.wikipedia.org/wiki/Melancia",
         "/posts/post-inspecao-planta-melancia.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose."
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 19",
+      "doneHref": "/posts/post-inspecao-derivado-melancia.html"
     },
     {
       "id": "palavra-sinal",
@@ -9228,24 +9272,25 @@
     },
     {
       "id": "derivado-marolo",
-      "title": "Derivados do marolo — polpas, néctares e licores",
-      "titleEn": "Marolo derivatives — pulps, nectars and liqueurs",
-      "titleEs": "Derivados del marolo — pulpas, néctares y licores",
+      "title": "Derivados do Marolo — açúcar, aditivos e química industrial",
+      "titleEn": "Marolo / araticum derivatives — sugar, additives and industrial chemistry",
+      "titleEs": "Derivados de Marolo / araticum — azúcar, aditivos y química industrial",
       "tipo": "derivado",
       "priority": 3,
-      "status": "ideia",
-      "why": "Derivados de risco: marolo inteiro vs polpa adoçada, néctar e licor industrial; cruzar açúcares livres.",
-      "whyEn": "Risk derivatives: whole marolo vs sweetened pulp, nectar and industrial liqueur; cross free sugars.",
-      "whyEs": "Derivados de riesgo: marolo entero vs pulpa endulzada, néctar y licor industrial; cruzar azúcares libres.",
+      "status": "feita",
+      "why": "Derivados de risco: Marolo inteiro vs matriz industrial; mapa químico açúcar × aditivos + elo planta.",
+      "whyEn": "Risk derivatives: whole fruit vs industrial matrix; sugar × additives map + plant link.",
+      "whyEs": "Derivados de riesgo: fruto entero vs matriz industrial; mapa azúcar × aditivos + vínculo planta.",
       "suggestedSlug": "inspecao-derivado-marolo",
       "seriesHint": "plantas-derivados-risco",
       "sources": [
         "https://pt.wikipedia.org/wiki/Annona_crassiflora",
         "/posts/post-inspecao-planta-marolo.html",
         "/posts/post-inspecao-derivado-cana-de-acucar.html",
-        "/biblioteca/inspecoes/#inspecoes-frutos"
+        "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/aditivos-alimentares"
       ],
-      "notes": "Fruto ≠ vilão; foco açúcar × aditivos × dose. Sem extracto de semente."
+      "notes": "Planta ≠ vilã; foco em açúcar × aditivos × dose. Cap. 20",
+      "doneHref": "/posts/post-inspecao-derivado-marolo.html"
     },
     {
       "id": "palavra-mega-sena",
@@ -9817,6 +9862,36 @@
       "notes": "Cap. 278 — entre do bando; mime ≠ ave ≠ drone."
     },
     {
+      "id": "expressao-miss-click",
+      "title": "Miss Click — mis- + click; a orelha cola a senhorita",
+      "titleEn": "Miss Click — mis- + click; the ear glues the young lady",
+      "titleEs": "Miss Click — mis- + click; el oído pega a la señorita",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: Miss Click (mis- + click) — clique no sítio errado; cola senhorita Clique ≠ étimo; ≠ clique social.",
+      "whyEn": "Sayings: Miss Click (mis- + click) — wrong-place click; young-lady glue ≠ etymon; ≠ social clique.",
+      "whyEs": "Dichos: Miss Click (mis- + click) — clic en el sitio errado; cola señorita ≠ étimo; ≠ clique social.",
+      "suggestedSlug": "inspecao-expressao-miss-click",
+      "doneHref": "/posts/post-inspecao-expressao-miss-click.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-miss-click.html",
+        "https://en.wiktionary.org/wiki/misclick",
+        "https://en.wiktionary.org/wiki/mis-#English",
+        "https://en.wiktionary.org/wiki/click",
+        "https://en.wiktionary.org/wiki/Miss",
+        "https://pt.wiktionary.org/wiki/clique",
+        "https://pt.wikipedia.org/wiki/Etimologia_popular",
+        "/posts/post-inspecao-palavra-etimologia.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-retarget.html",
+        "/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 279 — étimo mis-+click × cola Miss (≠ origem); sem tutorial de aim."
+    },
+    {
       "id": "palavra-acao",
       "title": "Ação — o fazer nomeado, o gesto e as outras salas",
       "titleEn": "Ação — named doing, the gesture, and the other rooms",
@@ -9886,6 +9961,99 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 295 — estado × anel; juntos sem elo = pose; cruzamento com elo de ligação."
+    },
+    {
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "suggestedSlug": "inspecao-palavra-ao90",
+      "doneHref": "/posts/post-inspecao-palavra-ao90.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Acordo_Ortogr%C3%A1fico_de_1990",
+        "https://en.wikipedia.org/wiki/Portuguese_Language_Orthographic_Agreement_of_1990",
+        "/posts/post-inspecao-palavra-aoc.html",
+        "/posts/post-inspecao-palavra-objetos.html",
+        "/posts/post-inspecao-palavra-acao.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 296 — 90 = 1990; grafia ≠ étimo; corte AOC.",
+      "title": "AO90 — o acordo, o ano e o que não é étimo",
+      "titleEn": "AO90 — the agreement, the year, and what is not an etymon",
+      "titleEs": "AO90 — el acuerdo, el año y lo que no es étimo",
+      "why": "Palavras: AO90 = Acordo Ortográfico de 1990; 90 é o ano; grafia ≠ étimo; ≠ AOC; Valeu !!!",
+      "whyEn": "Words: AO90 = 1990 Orthographic Agreement; 90 is the year; spelling ≠ etymon; ≠ AOC; Valeu !!!",
+      "whyEs": "Palabras: AO90 = Acuerdo Ortográfico de 1990; 90 es el año; grafía ≠ étimo; ≠ AOC; ¡Valeu !!!"
+    },
+    {
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "suggestedSlug": "inspecao-palavra-aoc",
+      "doneHref": "/posts/post-inspecao-palavra-aoc.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wikipedia.org/wiki/AOC_International",
+        "/posts/post-inspecao-palavra-ao90.html",
+        "/posts/post-inspecao-palavra-objetos.html",
+        "/posts/post-inspecao-palavra-eletrizante.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 297 — Admiral Overseas Corporation; monitor ≠ AO90.",
+      "title": "AOC — a sigla do monitor, não do acordo",
+      "titleEn": "AOC — the monitor acronym, not the agreement",
+      "titleEs": "AOC — la sigla del monitor, no del acuerdo",
+      "why": "Palavras: AOC = Admiral Overseas Corporation; monitor / objeto electrónico; ≠ AO90; Valeu !!!",
+      "whyEn": "Words: AOC = Admiral Overseas Corporation; monitor / electronic object; ≠ AO90; Valeu !!!",
+      "whyEs": "Palabras: AOC = Admiral Overseas Corporation; monitor / objeto electrónico; ≠ AO90; ¡Valeu !!!"
+    },
+    {
+      "id": "palavra-etimo",
+      "title": "Étimo — a peça da origem (āctiō ← agere)",
+      "titleEn": "Étimo — the origin piece (āctiō ← agere)",
+      "titleEs": "Étimo — la pieza del origen (āctiō ← agere)",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: étimo (gr. étymon) — a peça ≠ etimologia; espécime ação: lat. āctiō ← agere («fazer, impulsionar»); Valeu !!!",
+      "whyEn": "Words: étimo (Gk. étymon) — the piece ≠ etymology; specimen ação: Lat. āctiō ← agere (“to do, to drive”); Valeu !!!",
+      "whyEs": "Palabras: étimo (gr. étymon) — la pieza ≠ etimología; espécimen ação: lat. āctiō ← agere («hacer, impulsar»); ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-etimo",
+      "doneHref": "/posts/post-inspecao-palavra-etimo.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/%C3%A9timo",
+        "https://en.wiktionary.org/wiki/etymon",
+        "https://en.wiktionary.org/wiki/actio#Latin",
+        "/posts/post-inspecao-palavra-etimologia.html",
+        "/posts/post-inspecao-palavra-acao.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 298 — peça × ofício; espécime āctiō ← agere («fazer, impulsionar») na ficha ação."
+    },
+    {
+      "id": "cruzamento-aaron-beggs-air-bag",
+      "title": "Cruzamento — Aaron Beggs × Air Bag",
+      "titleEn": "Cross — Aaron Beggs × Air Bag",
+      "titleEs": "Cruce — Aaron Beggs × Air Bag",
+      "tipo": "pessoas",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pessoas · cruzamento: Aaron Beggs × airbag — o saco dispara; o homem de Bangor escolheu amortecer na Boylston Street (Boston 2026); Valeu !!!",
+      "whyEn": "People · cross: Aaron Beggs × airbag — the bag fires; the man from Bangor chose to cushion on Boylston Street (Boston 2026); Valeu !!!",
+      "whyEs": "Personas · cruce: Aaron Beggs × airbag — el saco dispara; el hombre de Bangor eligió amortiguar en Boylston Street (Boston 2026); ¡Valeu !!!",
+      "suggestedSlug": "inspecao-cruzamento-aaron-beggs-air-bag",
+      "doneHref": "/posts/post-inspecao-cruzamento-aaron-beggs-air-bag.html",
+      "seriesHint": "pessoas-historia",
+      "sources": [
+        "https://www.bbc.com/news/articles/cj0v632yddzo",
+        "https://www.nbcnews.com/sports/track-field/man-helped-competitor-boston-marathon-explains-rcna341852",
+        "https://pt.wikipedia.org/wiki/Airbag",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-juntos.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 37 — metáfora de ofício; airbag não esteve na corrida; sem vida privada inventada."
     }
   ]
 }
