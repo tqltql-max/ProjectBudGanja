@@ -909,7 +909,14 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/laranja-cover.jpg",
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-laranja.html",
+          "label": "Inspeção: Derivados da Laranja — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Orange derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Naranja — azúcar, aditivos y química industrial"
+        }
+      ]
     },
     {
       "id": "acai",
@@ -939,7 +946,14 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/acai-cover.jpg",
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-acai.html",
+          "label": "Inspeção: Derivados do Açaí — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Açaí derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Açaí — azúcar, aditivos y química industrial"
+        }
+      ]
     },
     {
       "id": "manga",
@@ -968,7 +982,14 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/manga-cover.jpg",
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-manga.html",
+          "label": "Inspeção: Derivados da Manga — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Mango derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Mango — azúcar, aditivos y química industrial"
+        }
+      ]
     },
     {
       "id": "banana",
@@ -996,7 +1017,14 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/banana-cover.jpg",
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-banana.html",
+          "label": "Inspeção: Derivados da Banana — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Banana derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Plátano / banana — azúcar, aditivos y química industrial"
+        }
+      ]
     },
     {
       "id": "maca",
@@ -1025,7 +1053,14 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/maca-cover.jpg",
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-maca.html",
+          "label": "Inspeção: Derivados da Maçã — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Apple derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Manzana — azúcar, aditivos y química industrial"
+        }
+      ]
     },
     {
       "id": "abacaxi",
@@ -1054,7 +1089,14 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/abacaxi-cover.jpg",
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-abacaxi.html",
+          "label": "Inspeção: Derivados do Abacaxi — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Pineapple derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Piña — azúcar, aditivos y química industrial"
+        }
+      ]
     },
     {
       "id": "goiaba",
@@ -1083,7 +1125,14 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/goiaba-cover.jpg",
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-goiaba.html",
+          "label": "Inspeção: Derivados da Goiaba — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Guava derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Guayaba — azúcar, aditivos y química industrial"
+        }
+      ]
     },
     {
       "id": "cacau",
@@ -1114,6 +1163,12 @@
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/cacau-cover.jpg",
       "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-cacau.html",
+          "label": "Inspeção: Derivados do Cacau — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Cacao derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Cacao — azúcar, aditivos y química industrial"
+        },
         {
           "href": "/posts/post-inspecao-derivado-chocolate.html",
           "label": "Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite",
@@ -1166,7 +1221,14 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/uva-cover.jpg",
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-uva.html",
+          "label": "Inspeção: Derivados da Uva — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Grape derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Uva — azúcar, aditivos y química industrial"
+        }
+      ]
     },
     {
       "id": "morango",
@@ -1195,7 +1257,14 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/morango-cover.jpg",
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-morango.html",
+          "label": "Inspeção: Derivados do Morango — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Strawberry derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Fresa — azúcar, aditivos y química industrial"
+        }
+      ]
     },
     {
       "id": "maracuja-fruta",
@@ -1224,7 +1293,14 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/maracuja-fruta-cover.jpg",
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-maracuja-fruta.html",
+          "label": "Inspeção: Derivados do Maracujá (fruta) — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Passion fruit derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Maracuyá (fruta) — azúcar, aditivos y química industrial"
+        }
+      ]
     },
     {
       "id": "tomatinho-cereja",
@@ -1290,7 +1366,14 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/melancia-cover.jpg",
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-melancia.html",
+          "label": "Inspeção: Derivados da Melancia — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Watermelon derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Sandía — azúcar, aditivos y química industrial"
+        }
+      ]
     },
     {
       "id": "mamao",
@@ -1326,6 +1409,12 @@
       "relatedUnifesp": true,
       "cover": "/imagens/plantas/mamao-cover.jpg",
       "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-mamao.html",
+          "label": "Inspeção: Derivados do Mamão — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Papaya derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Papaya — azúcar, aditivos y química industrial"
+        },
         {
           "href": "/biblioteca/unifesp/livro-xiv.html",
           "label": "Rascunhos XIV UNIFESP — papaína / farmácias vivas",
@@ -1419,7 +1508,14 @@
       ],
       "relatedUnifesp": false,
       "cover": "/imagens/plantas/marolo-cover.jpg",
-      "relatedInspections": []
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-marolo.html",
+          "label": "Inspeção: Derivados do Marolo — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Marolo / araticum derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Marolo / araticum — azúcar, aditivos y química industrial"
+        }
+      ]
     }
   ]
 }

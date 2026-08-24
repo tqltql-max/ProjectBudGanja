@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T10:58:20.490Z",
+  "updatedAt": "2026-08-24T11:00:41.260Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7022,6 +7022,35 @@
       "notes": "Cap. 152 — cluster trocadilho / aglutinação / polimorfismo / cara+alho."
     },
     {
+      "id": "palavra-caralhudo",
+      "title": "Caralhudo — -udo no tabu; cruzar com cara de alho e cara de olho",
+      "titleEn": "Caralhudo — -udo on the taboo; cross with garlic-face and eye-face",
+      "titleEs": "Caralhudo — -udo en el tabú; cruzar con cara de ajo y cara de ojo",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: caralhudo (caralho + -udo) × cara de alho (trocadilho, não étimo) × cara de olho (visual); olaho = cola.",
+      "whyEn": "Words: caralhudo (caralho + -udo) × garlic-face (pun, not etymon) × eye-face (visual); olaho = glue.",
+      "whyEs": "Palabras: caralhudo (caralho + -udo) × cara de ajo (calambur, no étimo) × cara de ojo (visual); olaho = cola.",
+      "suggestedSlug": "inspecao-palavra-caralhudo",
+      "doneHref": "/posts/post-inspecao-palavra-caralhudo.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-caralhudo.html",
+        "https://pt.wiktionary.org/wiki/caralhudo",
+        "https://pt.wiktionary.org/wiki/caralho",
+        "https://pt.wiktionary.org/wiki/alho",
+        "https://pt.wiktionary.org/wiki/olho",
+        "https://en.wiktionary.org/wiki/caraculum",
+        "https://pt.wiktionary.org/wiki/-udo",
+        "/posts/post-inspecao-palavra-trocadilho.html",
+        "/posts/post-inspecao-palavra-aglutinacao.html",
+        "/posts/post-inspecao-palavra-etimologia.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 303 — pedido: inspeção em caralahdo cruze com cara de olaho; três salas; ficha ≠ insulto."
+    },
+    {
       "id": "palavra-aglutinacao",
       "title": "Aglutinação — a solda gramatical (cara+alho só parece)",
       "titleEn": "Agglutination — grammatical fusion (cara+alho only looks like it)",
@@ -10177,6 +10206,29 @@
         "/posts/post-inspecao-expressao-elo-de-ligacao.html"
       ],
       "notes": "Cap. 300 — 3 pessoas; plurais; partilha sala com latim."
+    },
+    {
+      "id": "arte-desenho-animatrix",
+      "title": "Animatrix — o desenho das nove portas e o ofício de verificar o ecrã",
+      "titleEn": "Animatrix — the cartoon of nine doors and the craft of checking the screen",
+      "titleEs": "Animatrix — el dibujo de las nueve puertas y el oficio de verificar la pantalla",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes · desenho 2003: Animatrix (The Animatrix) — nove curtas de anime; filme Matrix 1999 continua génese; sem colar guião.",
+      "whyEn": "Arts · 2003 cartoon: The Animatrix — nine anime shorts; 1999 Matrix film stays genesis.",
+      "whyEs": "Artes · dibujo 2003: Animatrix — nueve cortos de anime; el filme Matrix 1999 sigue siendo génesis.",
+      "suggestedSlug": "inspecao-desenho-animatrix",
+      "doneHref": "/posts/post-inspecao-desenho-animatrix.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-desenho-animatrix.html",
+        "https://www.youtube.com/watch?v=94fPVqJqBGA",
+        "https://pt.wikipedia.org/wiki/Animatrix",
+        "https://en.wikipedia.org/wiki/The_Animatrix",
+        "/posts/post-inspecao-filme-the-matrix.html"
+      ],
+      "notes": "Cap. 113 — antologia 2003; sequelas live-action = fila à parte."
     }
   ]
 }
