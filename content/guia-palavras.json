@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T18:42:35.867Z",
+  "updatedAt": "2026-08-24T19:32:24.583Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3058,6 +3058,36 @@
       "curiositiesEn": "The lab inspects that historical turn — from pharmacy to stigma — without collapsing the name into the plant.",
       "historyEs": "Droga vino del neerlandés droog (seco) vía drogue francesa: en el siglo XVI era remedio seco. El sentido común del siglo XX volteó el vocablo hacia sustancia ilícita.",
       "curiositiesEs": "El laboratorio inspecciona ese viraje histórico — de farmacia a estigma — sin colapsar el nombre en la planta."
+    },
+    {
+      "id": "dor",
+      "word": "dor",
+      "simple": "Lat. dolōrem ← dolēre — doer; doído × doido; pain ← poena (pena). Labravra = lab colado. Valeu !!!",
+      "simpleEn": "Lat. dolōrem ← dolēre — to ache; doído × doido; pain ← poena (penalty). Labravra = lab glued on. Valeu !!!",
+      "simpleEs": "Lat. dolōrem ← dolēre — doler; doído × doido; pain ← poena (pena). Labravra = lab pegado. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-dor.html"
+    },
+    {
+      "id": "doer",
+      "word": "doer",
+      "simple": "Verbo de dor ← dolēre — dói. ≠ ing. doer. Corte na ficha dor. Valeu !!!",
+      "simpleEn": "Verb of dor ← dolēre — it aches. ≠ Eng. doer. Cut on the dor sheet. Valeu !!!",
+      "simpleEs": "Verbo de dor ← dolēre — duele. ≠ ing. doer. Corte en la ficha dor. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-dor.html"
+    },
+    {
+      "id": "labravra",
+      "word": "labravra",
+      "simple": "Lapso de palavra — o lab cola no vocábulo. Pedido da ficha dor. Valeu !!!",
+      "simpleEn": "Slip for palavra — the lab glues onto the word. Field request on the dor sheet. Valeu !!!",
+      "simpleEs": "Lapsus de palavra — el lab se pega al vocablo. Pedido de la ficha dor. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-dor.html"
     },
     {
       "id": "droga-vegetal",

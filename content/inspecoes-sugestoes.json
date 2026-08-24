@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T19:15:22.221Z",
+  "updatedAt": "2026-08-24T19:32:24.568Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -9487,6 +9487,28 @@
         "/posts/post-inspecao-palavra-animal.html"
       ],
       "notes": "Cap. 218 — levis × venātus; gatilho aninal; animal primeiro."
+    },
+    {
+      "id": "palavra-dor",
+      "title": "Dor — dolōrem; doer; pain é poena",
+      "titleEn": "Dor — dolōrem; doer; pain is poena",
+      "titleEs": "Dor — dolōrem; doer; pain es poena",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: dor ← dolōrem ← dolēre. Doer / doído / doido. Pain ← poena (pena). Pedido labravra. Valeu !!!",
+      "whyEn": "Words: dor ← dolōrem ← dolēre. Doer / doído / doido. Pain ← poena. Field slip labravra. Valeu !!!",
+      "whyEs": "Palabras: dor ← dolōrem ← dolēre. Doer / doído / doido. Pain ← poena. Pedido labravra. ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-dor",
+      "doneHref": "/posts/post-inspecao-palavra-dor.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/dor",
+        "https://pt.wiktionary.org/wiki/doer",
+        "https://en.wiktionary.org/wiki/poena#Latin",
+        "/posts/post-inspecao-palavra-alivio.html"
+      ],
+      "notes": "Cap. 338 — dolor × poena × álgos; gatilho labravra / inspção."
     },
     {
       "id": "palavra-giria",

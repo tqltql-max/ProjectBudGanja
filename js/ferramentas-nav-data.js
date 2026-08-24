@@ -4706,6 +4706,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: encruzilhada (en- + cruz + -ilhada) — o X da estrada; gatilho encruziliada; ≠ leito ≠ madeiro; cruzamento Jesus Cristo; Valeu !!!"
             },
             {
+              "label": "Inspeção: Dor — dolōrem; doer dói; pain é poena, não esta casa",
+              "tileLabel": "Inspeção: Dor — dolōrem; doer d…",
+              "href": "/posts/post-inspecao-palavra-dor.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-dor",
+              "description": "Palavras: dor ← lat. dolōrem ← dolēre; doer / doído / doido; pain ← poena (pena); labravra = lab colado; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",
