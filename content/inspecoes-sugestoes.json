@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T10:53:27.061Z",
+  "updatedAt": "2026-08-24T10:54:52.842Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3295,6 +3295,35 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 34 — inseto × pejorativo × desbugar com ofício."
+    },
+    {
+      "id": "palavra-miss",
+      "title": "Miss — falhar o alvo; cruzado com faltando e ERROR",
+      "titleEn": "Miss — fail to hit; crossed with faltando and ERROR",
+      "titleEs": "Miss — fallar el blanco; cruzado con faltando y ERROR",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: miss (germ. missan) × faltando (lat. fallere) × ERROR (lat. errāre) — três árvores, um campo; I miss you ≠ 500.",
+      "whyEn": "Words: miss (Gmc missan) × faltando (Lat. fallere) × ERROR (Lat. errāre) — three trees; I miss you ≠ 500.",
+      "whyEs": "Palabras: miss (germ. missan) × faltando (lat. fallere) × ERROR (lat. errāre) — tres árboles; I miss you ≠ 500.",
+      "suggestedSlug": "inspecao-palavra-miss",
+      "doneHref": "/posts/post-inspecao-palavra-miss.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-miss.html",
+        "https://en.wiktionary.org/wiki/miss#English",
+        "https://pt.wiktionary.org/wiki/faltar",
+        "https://en.wiktionary.org/wiki/error",
+        "https://en.wiktionary.org/wiki/erro#Latin",
+        "https://en.wiktionary.org/wiki/fallo#Latin",
+        "/posts/post-inspecao-palavra-buguei.html",
+        "/posts/post-inspecao-palavra-backspace.html",
+        "/posts/post-inspecao-palavra-exit.html",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 299 — miss × faltando × ERROR; três árvores; título Miss cortado."
     },
     {
       "id": "expressao-deu-certo-galera",

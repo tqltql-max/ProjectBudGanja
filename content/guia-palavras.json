@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T10:53:27.061Z",
+  "updatedAt": "2026-08-24T10:54:52.863Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1236,6 +1236,42 @@
       "curiositiesEn": "The inspection pulls the sense toward named trouble — and returns the craft: after the stall, Valeu !!!",
       "historyEs": "Buguei viene del inglés bug (insecto / falla de máquina), popularizado en la informática del siglo XX y aportuguesado en el pecho brasileño. La forma verbal marca el tranque: «buguei».",
       "curiositiesEs": "La inspección tira el sentido hacia lo malo nombrado — y devuelve el oficio: después del tranque, ¡Valeu !!!"
+    },
+    {
+      "id": "miss",
+      "word": "miss",
+      "simple": "EN germ. missan — falhar o alvo e sentir a falta. Cruzado com faltando (lat. fallere) e ERROR (lat. errāre): três árvores, um campo. I miss you ≠ 500. Título Miss (mistress) é outra sala. Valeu !!!",
+      "simpleEn": "EN Gmc missan — fail to hit and feel the absence. Crossed with faltando (Lat. fallere) and ERROR (Lat. errāre): three trees, one field. I miss you ≠ 500. Title Miss is another room. Valeu !!!",
+      "simpleEs": "EN germ. missan — fallar el blanco y sentir la falta. Cruzado con faltando (lat. fallere) y ERROR (lat. errāre): tres árboles, un campo. I miss you ≠ 500. Título Miss es otra sala. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-miss.html",
+      "history": "Miss (verbo) vem do inglês antigo missan, germânico «falhar o alvo». I miss you é a mesma árvore (notar a ausência). O título Miss vem de mistress/magister — outra raiz. Faltando é gerúndio de faltar, latim fallere (falhar, enganar), primo de fail/false. ERROR vem de errāre (vagar fora da via). Em português, errar o alvo já junta miss e error num só verbo latino — cruzamento de ofício, não de sangue.",
+      "curiosities": "Cache miss muitas vezes é ofício normal (a caixa não tinha). 404 é faltando; 500 é ERROR. «Está faltando você» como calco de I miss you trata a pessoa como peça; o nativo é fazes-me falta / estou com saudades. Falta no desporto é outra sala.",
+      "historyEn": "Miss (verb) is Old English missan, Germanic “fail to hit”. I miss you is the same tree (noticing absence). The title Miss is from mistress/magister — another root. Faltando is the gerund of faltar, Latin fallere (fail, deceive), cousin of fail/false. ERROR is from errāre (wander off the path). Portuguese errar o alvo already joins miss and error in one Latin verb — office, not blood.",
+      "curiositiesEn": "A cache miss is often normal office (the box did not hold the target). 404 is missing; 500 is ERROR. “Está faltando você” as a calque of I miss you treats the person as a missing part; native PT puts the lack in the chest. Sports falta is another room.",
+      "historyEs": "Miss (verbo) viene del inglés antiguo missan, germánico «fallar el blanco». I miss you es el mismo árbol. El título Miss viene de mistress/magister — otra raíz. Faltando es gerundio de faltar, latín fallere. ERROR viene de errāre. En portugués, errar o alvo ya junta miss y error en un verbo latino.",
+      "curiositiesEs": "Un cache miss suele ser oficio normal. 404 es faltando; 500 es ERROR. «Está faltando você» como calco de I miss you trata a la persona como pieza; lo nativo es fazes-me falta. Falta de deporte es otra sala."
+    },
+    {
+      "id": "error",
+      "word": "ERROR",
+      "simple": "Lat. error ← errāre — o nome do desvio; caps-lock do log. Cruzado com miss e faltando. 500 ≠ 404 ≠ cache miss. Valeu !!!",
+      "simpleEn": "Lat. error ← errāre — the name of the wander; log caps-lock. Crossed with miss and faltando. 500 ≠ 404 ≠ cache miss. Valeu !!!",
+      "simpleEs": "Lat. error ← errāre — el nombre del desvío; mayúsculas del log. Cruzado con miss y faltando. 500 ≠ 404 ≠ cache miss. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-miss.html"
+    },
+    {
+      "id": "faltando",
+      "word": "faltando",
+      "simple": "Gerúndio de faltar ← lat. fallere — o estado do que não está no conjunto. Cruzado com miss e ERROR. ≠ I miss you. Valeu !!!",
+      "simpleEn": "Gerund of faltar ← Lat. fallere — the state of what is not in the set. Crossed with miss and ERROR. ≠ I miss you. Valeu !!!",
+      "simpleEs": "Gerundio de faltar ← lat. fallere — el estado de lo que no está en el conjunto. Cruzado con miss y ERROR. ≠ I miss you. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-miss.html"
     },
     {
       "id": "cacau",

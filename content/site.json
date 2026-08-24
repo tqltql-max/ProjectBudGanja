@@ -293,6 +293,14 @@
                   "description": "Estúdio/rótulo Rockstar Games (Take-Two, NY, 1998): rede de studios, GTA/Red Dead, RAGE — distinto do Caderno GTA 6. Ficção de crime ≠ manual de crime."
                 },
                 {
+                  "label": "Inspeção: Observatório PharMacon — Unifesp e o debate público",
+                  "tileLabel": "Inspeção: Observatório PharMaco…",
+                  "href": "/posts/post-inspecao-canal-pharmacon.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-canal-pharmacon",
+                  "description": "Canal: PharMacon (Unifesp) — observatório de medicamentos, maconha e outras drogas. Distinto do YouTube CANABinALL. Fonte: observamed-drogas.unifesp.br."
+                },
+                {
                   "label": "Inspeção: Filmografia de Leonardo DiCaprio — catálogo que inaugura o tipo",
                   "tileLabel": "Inspeção: Filmografia de Leonar…",
                   "href": "/posts/post-inspecao-filmografia-leonardo-dicaprio.html",
@@ -669,6 +677,14 @@
                   "description": "Relatório educacional de Açaí (*Euterpe oleracea Mart.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
                 },
                 {
+                  "label": "Caderno de jogo 5: Metal Slug — o tanque, o pixel e o Hey!",
+                  "tileLabel": "Caderno de jogo 5: Metal Slug —…",
+                  "href": "/posts/post-inspecao-jogo-metal-slug.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-jogo-metal-slug",
+                  "description": "Caderno 5: Metal Slug (Nazca / SNK, 1996) — Meteal; SV-001; Mission Complete / HURRY UP! / POW Hey!; sem walkthrough nem ROM; Valeu !!!"
+                },
+                {
                   "label": "Inspeção: plataformas de ensino GOV.BR — Canal Educação, MEC Idiomas e MEC Livros",
                   "tileLabel": "Inspeção: plataformas de ensino…",
                   "href": "/posts/post-inspecao-plataformas-ensino-govbr.html",
@@ -773,6 +789,14 @@
                   "description": "Relatório educacional de Banana (*Musa spp.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
                 },
                 {
+                  "label": "Inspeção: Derivados da Laranja — açúcar, aditivos e química industrial",
+                  "tileLabel": "Inspeção: Derivados da Laranja …",
+                  "href": "/posts/post-inspecao-derivado-laranja.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-laranja",
+                  "description": "Derivados de risco: do fruto (*Citrus × sinensis (L.) Osbeck*) ao ultraprocessado — Suco reconstitído, néctar, refrigerante «de laranja», geleia, aroma e corantes; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
+                },
+                {
                   "label": "Inspeção: duasakdiqujdocedomadur — Deus ajuda quem cedo madruga",
                   "tileLabel": "Inspeção: duasakdiqujdocedomadu…",
                   "href": "/posts/post-inspecao-expressao-duasakdiqujdocedomadur.html",
@@ -819,6 +843,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-maca",
                   "description": "Relatório educacional de Maçã (*Malus domestica Borkh.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Derivados do Açaí — açúcar, aditivos e química industrial",
+                  "tileLabel": "Inspeção: Derivados do Açaí — a…",
+                  "href": "/posts/post-inspecao-derivado-acai.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-acai",
+                  "description": "Derivados de risco: do fruto (*Euterpe oleracea Mart.*) ao ultraprocessado — Polpa pasteurizada, bowl/sorvete com xarope, granola industrial, snacks «açaí»; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
                 },
                 {
                   "label": "Inspeção: Gratidão — gratidão reforçada e oralidade BR",
@@ -877,6 +909,14 @@
                   "description": "Relatório educacional de Abacaxi (*Ananas comosus (L.) Merr.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
                 },
                 {
+                  "label": "Inspeção: Derivados da Manga — açúcar, aditivos e química industrial",
+                  "tileLabel": "Inspeção: Derivados da Manga — …",
+                  "href": "/posts/post-inspecao-derivado-manga.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-manga",
+                  "description": "Derivados de risco: do fruto (*Mangifera indica L.*) ao ultraprocessado — Néctar, polpa adoçada, doce, chips e snacks «mango»; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
+                },
+                {
                   "label": "Inspeção: Rick and Morty — o desenho do portal e o ofício nesta linha",
                   "tileLabel": "Inspeção: Rick and Morty — o de…",
                   "href": "/posts/post-inspecao-desenho-rick-and-morty.html",
@@ -917,6 +957,14 @@
                   "description": "*Psidium guajava* — fruto brasileiro de quintal rico em vitamina C e fibra; separar goiaba inteira de goiabada, polpas e néctares industriais."
                 },
                 {
+                  "label": "Inspeção: Derivados da Banana — açúcar, aditivos e química industrial",
+                  "tileLabel": "Inspeção: Derivados da Banana —…",
+                  "href": "/posts/post-inspecao-derivado-banana.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-banana",
+                  "description": "Derivados de risco: do fruto (*Musa spp.*) ao ultraprocessado — Chips, farinha, snacks e sobremesas ultraprocessadas; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
+                },
+                {
                   "label": "Inspeção: Richard Rasmussen — respeito ao ofício selvagem no ecrã brasileiro",
                   "tileLabel": "Inspeção: Richard Rasmussen — r…",
                   "href": "/posts/post-inspecao-richard-rasmussen.html",
@@ -947,6 +995,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-cacau",
                   "description": "Relatório educacional de Cacau (*Theobroma cacao L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Derivados da Maçã — açúcar, aditivos e química industrial",
+                  "tileLabel": "Inspeção: Derivados da Maçã — a…",
+                  "href": "/posts/post-inspecao-derivado-maca.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-maca",
+                  "description": "Derivados de risco: do fruto (*Malus domestica Borkh.*) ao ultraprocessado — Suco concentrado, puré, chips e snacks; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
                 },
                 {
                   "label": "Inspeção: Iberê Thenório — ofício de ciência no ecrã brasileiro",
@@ -1005,6 +1061,14 @@
                   "description": "Relatório educacional de Uva (*Vitis vinifera L.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
                 },
                 {
+                  "label": "Inspeção: Derivados do Abacaxi — açúcar, aditivos e química industrial",
+                  "tileLabel": "Inspeção: Derivados do Abacaxi …",
+                  "href": "/posts/post-inspecao-derivado-abacaxi.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-abacaxi",
+                  "description": "Derivados de risco: do fruto (*Ananas comosus (L.) Merr.*) ao ultraprocessado — Lata em calda, suco, néctar, doces; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
+                },
+                {
                   "label": "Inspeção: Aleff — Aliffe de Machado, pessoa antes do ecrã",
                   "tileLabel": "Inspeção: Aleff — Aliffe de Mac…",
                   "href": "/posts/post-inspecao-figura-aleff.html",
@@ -1059,6 +1123,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-morango",
                   "description": "Relatório educacional de Morango (*Fragaria × ananassa Duchesne): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Derivados da Goiaba — açúcar, aditivos e química industrial",
+                  "tileLabel": "Inspeção: Derivados da Goiaba —…",
+                  "href": "/posts/post-inspecao-derivado-goiaba.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-goiaba",
+                  "description": "Derivados de risco: do fruto (*Psidium guajava L.*) ao ultraprocessado — Goiabada, polpa, néctar, doces de corte; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
                 },
                 {
                   "label": "Inspeção: canal Tamara Klink — arquivo de travessias e léxico",
@@ -1125,6 +1197,14 @@
                   "description": "Relatório educacional de Maracujá (fruta) (*Passiflora edulis Sims): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
                 },
                 {
+                  "label": "Inspeção: Derivados do Cacau — açúcar, aditivos e química industrial",
+                  "tileLabel": "Inspeção: Derivados do Cacau — …",
+                  "href": "/posts/post-inspecao-derivado-cacau.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-cacau",
+                  "description": "Derivados de risco: do fruto (*Theobroma cacao L.*) ao ultraprocessado — Liquor, manteiga, cacau em pó açucarado, snacks e bebidas — distinto da barra já fichada; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
+                },
+                {
                   "label": "Inspeção: fim da linha — fita, vida e o confeito de chocolate",
                   "tileLabel": "Inspeção: fim da linha — fita, …",
                   "href": "/posts/post-inspecao-expressao-fim-da-linha.html",
@@ -1181,6 +1261,14 @@
                   "description": "Tomatinho cereja (*Solanum lycopersicum* var. *cerasiforme*) — primeiro cultivo do Diário da Sementinha: fruto fresco vs ultraprocessados «tomato»."
                 },
                 {
+                  "label": "Inspeção: Derivados da Uva — açúcar, aditivos e química industrial",
+                  "tileLabel": "Inspeção: Derivados da Uva — aç…",
+                  "href": "/posts/post-inspecao-derivado-uva.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-uva",
+                  "description": "Derivados de risco: do fruto (*Vitis vinifera L.*) ao ultraprocessado — Suco concentrado, néctar, refrigerante; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
+                },
+                {
                   "label": "Inspeção: a bença — pedir bênção, dorme com Deus e amém",
                   "tileLabel": "Inspeção: a bença — pedir bênçã…",
                   "href": "/posts/post-inspecao-expressao-a-benca.html",
@@ -1227,6 +1315,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-unha-de-gato",
                   "description": "*Uncaria tomentosa* — casca amazônica rica em alcaloides oxindólicos pentacíclicos; fitoterapia imunomoduladora popular."
+                },
+                {
+                  "label": "Inspeção: Derivados do Morango — açúcar, aditivos e química industrial",
+                  "tileLabel": "Inspeção: Derivados do Morango …",
+                  "href": "/posts/post-inspecao-derivado-morango.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-morango",
+                  "description": "Derivados de risco: do fruto (*Fragaria × ananassa Duchesne*) ao ultraprocessado — Iogurte, calda, aroma, geleia industrial; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
                 },
                 {
                   "label": "Inspeção: canal Todo Poderoso Bagual — BOPE, Capital City e arquivo GTA RP",
@@ -1285,6 +1381,14 @@
                   "description": "*Carica papaya* — mamão brasileiro: polpa doce, papaína do látex e elo UNIFESP/SUS; separar fruto inteiro de néctares e ultraprocessados."
                 },
                 {
+                  "label": "Inspeção: Derivados do Maracujá (fruta) — açúcar, aditivos e química industrial",
+                  "tileLabel": "Inspeção: Derivados do Maracujá…",
+                  "href": "/posts/post-inspecao-derivado-maracuja-fruta.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-maracuja-fruta",
+                  "description": "Derivados de risco: do fruto (*Passiflora edulis Sims*) ao ultraprocessado — Polpa pasteurizada, néctar, concentrado com açúcar; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
+                },
+                {
                   "label": "Inspeção: Fruto — Marolo — araticum do Cerrado, polpa e muitas sementes",
                   "tileLabel": "Inspeção: Fruto — Marolo — arat…",
                   "href": "/posts/post-inspecao-planta-marolo.html",
@@ -1341,6 +1445,14 @@
                   "description": "*Copaifera langsdorffii* — óleo-resina amazônica; β-cariofileno e ácidos copaíbicos na tradição tópica e oral."
                 },
                 {
+                  "label": "Inspeção: Derivados do Mamão — açúcar, aditivos e química industrial",
+                  "tileLabel": "Inspeção: Derivados do Mamão — …",
+                  "href": "/posts/post-inspecao-derivado-mamao.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-mamao",
+                  "description": "Derivados de risco: do fruto (*Carica papaya L.*) ao ultraprocessado — Néctar, polpa adoçada, doce, snacks «papaya»; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
+                },
+                {
                   "label": "Inspeção: canal Slivki Show — experiências visuais e a Aranha Rodrigo",
                   "tileLabel": "Inspeção: canal Slivki Show — e…",
                   "href": "/posts/post-inspecao-canal-slivki.html",
@@ -1371,6 +1483,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-andiroba",
                   "description": "*Carapa guianensis* — óleo de sementes rico em limonoides (andirobina); tradição tópica e repelente."
+                },
+                {
+                  "label": "Inspeção: Derivados da Melancia — açúcar, aditivos e química industrial",
+                  "tileLabel": "Inspeção: Derivados da Melancia…",
+                  "href": "/posts/post-inspecao-derivado-melancia.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-melancia",
+                  "description": "Derivados de risco: do fruto (*Citrullus lanatus (Thunb.) Matsum. & Nakai*) ao ultraprocessado — Sucos, néctares e ultraprocessados «watermelon»; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
                 },
                 {
                   "label": "Inspeção: nó na vida! — o laço no arco, ainda não é desastre",
@@ -1413,6 +1533,14 @@
                   "description": "*Acmella oleracea* — alquilamidas (espilanthol) causam dormência oral; erva da culinária paraense."
                 },
                 {
+                  "label": "Inspeção: Derivados do Marolo — açúcar, aditivos e química industrial",
+                  "tileLabel": "Inspeção: Derivados do Marolo —…",
+                  "href": "/posts/post-inspecao-derivado-marolo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-marolo",
+                  "description": "Derivados de risco: do fruto (*Annona crassiflora Mart.*) ao ultraprocessado — Polpas, néctares e licores; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
+                },
+                {
                   "label": "Inspeção: desatar o nó — o ofício, não o desastre",
                   "tileLabel": "Inspeção: desatar o nó — o ofíc…",
                   "href": "/posts/post-inspecao-expressao-desatar-o-no.html",
@@ -1427,6 +1555,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-mulungu",
                   "description": "*Erythrina mulungu* — casca com alcaloides eritrínicos; chá calmante da tradição brasileira."
+                },
+                {
+                  "label": "Inspeção: Tabaco — origem da planta e produtos industriais",
+                  "tileLabel": "Inspeção: Tabaco — origem da pl…",
+                  "href": "/posts/post-inspecao-derivado-tabaco.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-tabaco",
+                  "description": "Derivados de risco: *Nicotiana* → cigarro e primos nicotínicos. Planta ≠ vilã; foco nicotina × combustão/aerossol × aditivos. Sem tutorial."
                 },
                 {
                   "label": "Inspeção: Elo de ligação — o cruzamento do infinito, não a eternidade",
@@ -1701,12 +1837,28 @@
                   "description": "Palavras: «coração» (lat. *cor*) — órgão, afeto, centro e coragem; elo mãos/esquerdo; Valeu !!! de coração."
                 },
                 {
+                  "label": "Inspeção: Teofrasto — pai da botânica e o catálogo de plantas",
+                  "tileLabel": "Inspeção: Teofrasto — pai da bo…",
+                  "href": "/posts/post-inspecao-figura-teophrasto.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-figura-teophrasto",
+                  "description": "Pessoas: Teofrasto — *Historia plantarum*; método de catálogo que o laboratório herda em /plantas/. Elo com Heródoto. Sem bulário moderno."
+                },
+                {
                   "label": "Inspeção: Memorável — o que fica na memória e o elogio com rasto",
                   "tileLabel": "Inspeção: Memorável — o que fic…",
                   "href": "/posts/post-inspecao-palavra-memoravel.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-memoravel",
                   "description": "Palavras: «memorável» (lat. memorabilis) — digno de memória; elogio BR; eixo retenção ≠ escala legal/genial/maravilhoso/fantástico; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Cruzamento — Aaron Beggs × Air Bag",
+                  "tileLabel": "Inspeção: Cruzamento — Aaron Be…",
+                  "href": "/posts/post-inspecao-cruzamento-aaron-beggs-air-bag.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-cruzamento-aaron-beggs-air-bag",
+                  "description": "Pessoas · cruzamento: Aaron Beggs × airbag — o saco de ar dispara no impacto; o homem de Bangor escolheu amortecer Ajay na Boylston Street (Boston 2026); Valeu !!!"
                 },
                 {
                   "label": "Inspeção: Defensoria Pública — acesso gratuito à justiça e Valeu !!!",
@@ -2469,6 +2621,14 @@
                   "description": "Palavras: «prosseguir» (lat. *prōsequī*) — continuar × retomar BR; derivações prosseguimento; elos sempre, já, caminho; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Diamba (HQ, Daniel Paiva) — histórias do proibicionismo no Brasil",
+                  "tileLabel": "Inspeção: Diamba (HQ, Daniel Pa…",
+                  "href": "/posts/post-inspecao-arte-diamba-hq-paiva.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-diamba-hq-paiva",
+                  "description": "Artes: HQ de Daniel Paiva sobre criminalização e raça no Brasil — distinta da antologia Diamba Sarabamba (1986). Livro primeiro; palavra diamba como elo."
+                },
+                {
                   "label": "Inspeção: Mudinha — léxico Tamara / Bom dia, Inverno",
                   "tileLabel": "Inspeção: Mudinha — léxico Tama…",
                   "href": "/posts/post-inspecao-palavra-mudinha.html",
@@ -2485,6 +2645,14 @@
                   "description": "Palavras: «valeu» (de *valer* ← lat. *valēre*) — gratidão leve BR; elos Gratidão, gesto, respeito; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Confissões de um Comedor de Ópio — De Quincey e a génese literária",
+                  "tileLabel": "Inspeção: Confissões de um Come…",
+                  "href": "/posts/post-inspecao-arte-confissoes-comedor-opio.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-confissoes-comedor-opio",
+                  "description": "Artes: De Quincey, 1821 — o ensaio que funda a confissão moderna do ópio. Livro primeiro; metáfora ≠ protocolo; elo com Tosches."
+                },
+                {
                   "label": "Inspeção: Estação — léxico Tamara / Bom dia, Inverno",
                   "tileLabel": "Inspeção: Estação — léxico Tama…",
                   "href": "/posts/post-inspecao-palavra-estacao.html",
@@ -2499,6 +2667,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-daninha",
                   "description": "Palavras: «daninha» (*dano* + *-inha*) — planta daninha como juízo de lugar; elos planta, cultivo, selvagem; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: O Mundo de Sofia — Gaarder e a filosofia narrada",
+                  "tileLabel": "Inspeção: O Mundo de Sofia — Ga…",
+                  "href": "/posts/post-inspecao-arte-o-mundo-de-sofia.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-o-mundo-de-sofia",
+                  "description": "Artes: O Mundo de Sofia (1991) — romance de Jostein Gaarder; filosofia como enredo. Livro primeiro; autor em Pessoas; par com O Dia do Curinga."
                 },
                 {
                   "label": "Inspeção: Flor — léxico Tamara / Bom dia, Inverno",
@@ -2525,6 +2701,14 @@
                   "description": "Manual: infusão e decoção caseiras — material, tempos, proporções de ofício, segurança e elos com Plantas; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: A Botânica do Desejo — Pollan e as plantas que nos domesticam",
+                  "tileLabel": "Inspeção: A Botânica do Desejo …",
+                  "href": "/posts/post-inspecao-arte-botanica-do-desejo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-botanica-do-desejo",
+                  "description": "Artes: The Botany of Desire (2001) — maçã, tulipa, cannabis, batata; co-evolução do desejo. Livro primeiro; PBS como eco; elo Plantas × História das Coisas."
+                },
+                {
                   "label": "Inspeção: Raiz — léxico Tamara / Bom dia, Inverno",
                   "tileLabel": "Inspeção: Raiz — léxico Tamara …",
                   "href": "/posts/post-inspecao-palavra-raiz.html",
@@ -2539,6 +2723,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-cinta",
                   "description": "Palavras: «cinta» (lat. *cincta* / *cingere*) — faixa que segura; tutoramento com gesto; ≠ sinta; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Primavera Silenciosa — Rachel Carson e a cadeia invisível",
+                  "tileLabel": "Inspeção: Primavera Silenciosa …",
+                  "href": "/posts/post-inspecao-arte-primavera-silenciosa.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-primavera-silenciosa",
+                  "description": "Artes: Silent Spring (1962) — ensaio fundador de Carson sobre pesticidas e o silêncio das aves. Livro primeiro; literacia ecológica, não manual de pragas."
                 },
                 {
                   "label": "Inspeção: Partir — léxico Tamara / Bom dia, Inverno",
@@ -2557,6 +2749,14 @@
                   "description": "Palavras: «cinzeiro» (*cinza* + *-eiro*) — recipiente/monte da cinza; elos fogo, gesto, risco; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Legião Urbana — discografia e elo com Renato Russo",
+                  "tileLabel": "Inspeção: Legião Urbana — disco…",
+                  "href": "/posts/post-inspecao-arte-legiao-urbana.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-legiao-urbana",
+                  "description": "Artes: Legião Urbana — discografia como objecto; letras de cidade, fé e desencanto. Banda primeiro; Russo em Pessoas se houver ficha. Sem protocolo."
+                },
+                {
                   "label": "Inspeção: Escrever — léxico Tamara / Bom dia, Inverno",
                   "tileLabel": "Inspeção: Escrever — léxico Tam…",
                   "href": "/posts/post-inspecao-palavra-escrever.html",
@@ -2573,12 +2773,28 @@
                   "description": "Palavras: «objetos» (lat. *obiectum*) — plural de objeto; meta-lab do objeto inspecionado; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Reefer Madness (1936) — propaganda e história da palavra",
+                  "tileLabel": "Inspeção: Reefer Madness (1936)…",
+                  "href": "/posts/post-inspecao-filme-reefer-madness.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-filme-reefer-madness",
+                  "description": "Artes: Reefer Madness (1936) — melodrama de pânico; objecto = propaganda, não botânica. Elo com o léxico marijuana/reefer."
+                },
+                {
                   "label": "Inspeção: Guia — receitas de plantas (lote 1 · tisanas)",
                   "tileLabel": "Inspeção: Guia — receitas de pl…",
                   "href": "/posts/post-inspecao-guia-receitas-plantas.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-guia-receitas-plantas",
                   "description": "Oito receitas de ofício (camomila, hortelã, melissa, capim-limão, erva-cidreira, alecrim, gengibre, maracujá); elo ao manual de chá; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Grass (1999) — documentário de Ron Mann",
+                  "tileLabel": "Inspeção: Grass (1999) — docume…",
+                  "href": "/posts/post-inspecao-filme-grass.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-filme-grass",
+                  "description": "Artes: Grass (1999, Ron Mann) — documentário de arquivo sobre proibição. Objecto = filme; não é guia de uso."
                 },
                 {
                   "label": "Inspeção: Insana — intensidade, juízo e cuidado",
@@ -2589,12 +2805,28 @@
                   "description": "Palavras: «insana» (lat. *insanus* = *in-* + *sanus*) — excesso/intensidade BR; ≠ diagnóstico; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Weeds (2005–2012) — série e representação doméstica",
+                  "tileLabel": "Inspeção: Weeds (2005–2012) — s…",
+                  "href": "/posts/post-inspecao-serie-weeds.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-serie-weeds",
+                  "description": "Artes: Weeds — série suburbana. Objecto = representação doméstica do comércio; não é manual."
+                },
+                {
                   "label": "Inspeção: Sugestão — proposta, palpite e fila de ofício",
                   "tileLabel": "Inspeção: Sugestão — proposta, …",
                   "href": "/posts/post-inspecao-palavra-sugestao.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-sugestao",
                   "description": "Palavras: «sugestão» (lat. *suggestio*) — ato de sugerir; meta-lab da fila de inspeções; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Alice Através do Espelho (Carroll, 1871) — continuação literária",
+                  "tileLabel": "Inspeção: Alice Através do Espe…",
+                  "href": "/posts/post-inspecao-arte-alice-atraves-do-espelho.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-alice-atraves-do-espelho",
+                  "description": "Artes: Através do Espelho (1871) — sequela de Carroll; xadrez e língua. Livro primeiro; par com 1865."
                 },
                 {
                   "label": "Inspeção: Tudo — totalidade, essencial e foco",
@@ -2605,12 +2837,28 @@
                   "description": "Palavras: «tudo» (família *totus*) — todas as coisas / o essencial; elos objetos, alma; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Os Paraísos Artificiais (Baudelaire) — haxixe e modernidade literária",
+                  "tileLabel": "Inspeção: Os Paraísos Artificia…",
+                  "href": "/posts/post-inspecao-arte-paraisos-artificiais.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-paraisos-artificiais",
+                  "description": "Artes: Paraísos artificiais (1860) — Baudelaire. Ensaio primeiro; haxixe como tema literário, não protocolo."
+                },
+                {
                   "label": "Inspeção: Alma — centro vivo e chegar por dentro",
                   "tileLabel": "Inspeção: Alma — centro vivo e …",
                   "href": "/posts/post-inspecao-palavra-alma.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-alma",
                   "description": "Palavras: «alma» (lat. *anima*) — centro vivo; chegar na alma; elos tudo, coração, vida; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Easy Rider (1969) — estrada, contracultura e mito da liberdade",
+                  "tileLabel": "Inspeção: Easy Rider (1969) — e…",
+                  "href": "/posts/post-inspecao-filme-easy-rider.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-filme-easy-rider",
+                  "description": "Artes: Easy Rider (1969) — filme de estrada e contracultura. Objecto = mito da liberdade; sem glamour de dano."
                 },
                 {
                   "label": "Inspeção: Nap — sono curto e pausa de ofício",
@@ -2621,12 +2869,28 @@
                   "description": "Palavras: «nap» (EN) — cochilo / power nap no BR; elos gesto, alma, vida; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Dallas Buyers Club (2013) — acesso, medicina e burocracia",
+                  "tileLabel": "Inspeção: Dallas Buyers Club (2…",
+                  "href": "/posts/post-inspecao-filme-dallas-buyers-club.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-filme-dallas-buyers-club",
+                  "description": "Artes: Dallas Buyers Club (2013) — acesso e burocracia. Filme primeiro; não é protocolo clínico."
+                },
+                {
                   "label": "Inspeção: Pedi a mão — ajuda, pedido e gesto aberto",
                   "tileLabel": "Inspeção: Pedi a mão — ajuda, p…",
                   "href": "/posts/post-inspecao-palavra-pedi-mao.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-pedi-mao",
                   "description": "Palavras: «pedi a mão» (*pedimao*) — pedir ajuda ou compromisso; elos mãos, gesto, respeito; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: WALL-E (2008) — consumo, lixo e planeta finito",
+                  "tileLabel": "Inspeção: WALL-E (2008) — consu…",
+                  "href": "/posts/post-inspecao-filme-wall-e.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-filme-wall-e",
+                  "description": "Artes: WALL-E (2008) — consumo e lixo. Filme primeiro; par com o livro de Leonard."
                 },
                 {
                   "label": "Inspeção: Pattern — molde, padrão e repetição",
@@ -2637,12 +2901,28 @@
                   "description": "Palavras: «pattern» (EN) — molde / padrão / design pattern no BR; elos gesto, caminho, risco; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Tropa de Elite (2007) — polícia, morro e discurso da guerra às drogas",
+                  "tileLabel": "Inspeção: Tropa de Elite (2007)…",
+                  "href": "/posts/post-inspecao-filme-tropa-de-elite.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-filme-tropa-de-elite",
+                  "description": "Artes: Tropa de Elite (2007) — polícia e guerra às drogas como discurso. Filme primeiro; sem apologia."
+                },
+                {
                   "label": "Inspeção: Patrão — chefe, poder e respeito",
                   "tileLabel": "Inspeção: Patrão — chefe, poder…",
                   "href": "/posts/post-inspecao-palavra-patrao.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-patrao",
                   "description": "Palavras: «patrão» — chefe/empregador (lat. patronus); elos respeito, pattern, gesto; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Up in Smoke (1978) — comédia Cheech e Chong e o estereótipo",
+                  "tileLabel": "Inspeção: Up in Smoke (1978) — …",
+                  "href": "/posts/post-inspecao-filme-up-in-smoke.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-filme-up-in-smoke",
+                  "description": "Artes: Up in Smoke (1978) — comédia e estereótipo. Objecto = palco; não é prova de planta."
                 },
                 {
                   "label": "Inspeção: Puta — de menina a tabu a intensificador",
@@ -2653,12 +2933,28 @@
                   "description": "Palavras: «puta» — lat. vulg. putta; pejorativo e intensificador BR; elos pariu, PQP, respeito; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Fed Up (2014) — documentário sobre açúcar e indústria",
+                  "tileLabel": "Inspeção: Fed Up (2014) — docum…",
+                  "href": "/posts/post-inspecao-filme-fed-up.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-filme-fed-up",
+                  "description": "Artes: Fed Up (2014) — açúcar e indústria. Documentário primeiro; elo com derivados de cana."
+                },
+                {
                   "label": "Inspeção: Pariu — do latim pariō ao sopro do palavrão",
                   "tileLabel": "Inspeção: Pariu — do latim pari…",
                   "href": "/posts/post-inspecao-palavra-pariu.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-pariu",
                   "description": "Palavras: «pariu» — lat. pariō / parir; parto e peça de puta que pariu; elos puta, vida; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Super Size Me (2004) — corpo, marca e experimento mediático",
+                  "tileLabel": "Inspeção: Super Size Me (2004) …",
+                  "href": "/posts/post-inspecao-filme-super-size-me.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-filme-super-size-me",
+                  "description": "Artes: Super Size Me (2004) — corpo e marca. Documentário-experimento; n=1 ≠ prova clínica."
                 },
                 {
                   "label": "Inspeção: EXIT — saída, limiar e salvação de ofício",
@@ -2669,12 +2965,28 @@
                   "description": "Palavras: «EXIT» (lat. *exīre* / *exitus*) — saída, quit, teatro; no lab, salvação = sair do aperto; elos caminho, risco, alma, vida; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Medo e Delírio em Las Vegas (Thompson / Gilliam) — livro e filme",
+                  "tileLabel": "Inspeção: Medo e Delírio em Las…",
+                  "href": "/posts/post-inspecao-arte-medo-e-delirio-las-vegas.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-medo-e-delirio-las-vegas",
+                  "description": "Artes: Medo e Delírio — livro Thompson (1971) primeiro; filme Gilliam como adaptação. Sem protocolo."
+                },
+                {
                   "label": "Inspeção: Tempo — cronologia, clima, compasso e o instante certo",
                   "tileLabel": "Inspeção: Tempo — cronologia, c…",
                   "href": "/posts/post-inspecao-palavra-tempo.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-tempo",
                   "description": "Palavras: «tempo» (lat. tempus) — cronologia, clima e compasso musical no BR; kairós × chronos; elos caminho, vida, sempre, passado, alma; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: High Maintenance — série antológica do entregador",
+                  "tileLabel": "Inspeção: High Maintenance — sé…",
+                  "href": "/posts/post-inspecao-serie-high-maintenance.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-serie-high-maintenance",
+                  "description": "Artes: High Maintenance — antologia do entregador. Objecto = forma e cidade; não é guia logístico."
                 },
                 {
                   "label": "Inspeção: Perseguição — caça, opressão e o seguir que aperta",
@@ -2685,12 +2997,28 @@
                   "description": "Palavras: «perseguição» (lat. *persequī*) — caça × opressão × obsessão; contraste prosseguir; elos caminho, risco, EXIT; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Beto e Dé e outros Quadrinhos Canábicos (Daniel Paiva)",
+                  "tileLabel": "Inspeção: Beto e Dé e outros Qu…",
+                  "href": "/posts/post-inspecao-arte-beto-e-de.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-beto-e-de",
+                  "description": "Artes: Beto e Dé (Paiva) — quadrinhos de cena; distinta da HQ Diamba sobre proibicionismo."
+                },
+                {
                   "label": "Inspeção: Relação — o entre, o relato e a proporção",
                   "tileLabel": "Inspeção: Relação — o entre, o …",
                   "href": "/posts/post-inspecao-palavra-relacao.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-relacao",
                   "description": "Palavras: «relação» (lat. *relatĭō*) — vínculo × relato × proporção; elos simbiose, respeito, gesto; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Matrix Reloaded / Revolutions — sequelas e diluição da pergunta",
+                  "tileLabel": "Inspeção: Matrix Reloaded / Rev…",
+                  "href": "/posts/post-inspecao-filme-matrix-sequelas.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-filme-matrix-sequelas",
+                  "description": "Artes: Reloaded / Revolutions — sequelas; a pergunta do primeiro filme e o risco de diluição. Par com Matrix 1999."
                 },
                 {
                   "label": "Inspeção: Meneia — balanço, corpo e a mão no étimo",
@@ -2701,12 +3029,28 @@
                   "description": "Palavras: «meneia» / menear (*manear* ← mão) — balanço do corpo e ofício; elos gesto e mãos; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Koyaanisqatsi (1982) — vida fora de equilíbrio",
+                  "tileLabel": "Inspeção: Koyaanisqatsi (1982) …",
+                  "href": "/posts/post-inspecao-filme-koyaanisqatsi.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-filme-koyaanisqatsi",
+                  "description": "Artes: Koyaanisqatsi (1982) — vida fora de equilíbrio. Filme-ensaio; par com Leonard e WALL-E."
+                },
+                {
                   "label": "Inspeção: Mãe — origem, cuidado e tipografia fia → mãe",
                   "tileLabel": "Inspeção: Mãe — origem, cuidado…",
                   "href": "/posts/post-inspecao-palavra-mae.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-mae",
                   "description": "Palavras: «mãe» (lat. *mater*) — origem e cuidado; tipografia fia → mãe; fia (NE/filha) ≠ mãe; elos Dona Maria, alma, coração; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Divertida Mente 2 (2024) — Ansiedade e novas emoções",
+                  "tileLabel": "Inspeção: Divertida Mente 2 (20…",
+                  "href": "/posts/post-inspecao-filme-divertida-mente-2.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-filme-divertida-mente-2",
+                  "description": "Artes: Divertida Mente 2 (2024) — Ansiedade e novas emoções. Sequela; a génese continua na ficha 2015."
                 },
                 {
                   "label": "Inspeção: Grok — compreender por dentro × falar limpo",
@@ -3661,12 +4005,28 @@
                   "description": "Expressões: perda total — sinistro / baixa do bem; Toral = o t; usual ≠ PT ≠ urna ≠ Lula; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Revoada — a relação do bando no gesto de voar",
+                  "tileLabel": "Inspeção: Revoada — a relação d…",
+                  "href": "/posts/post-inspecao-expressao-revoada.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-expressao-revoada",
+                  "description": "Expressões: Revoada — bando que levanta voo; relação × pássaro / Birds × gesto de voar; Valeu !!!"
+                },
+                {
                   "label": "Inspeção: Deus — o vocábulo do céu latino; ficha ≠ catecismo",
                   "tileLabel": "Inspeção: Deus — o vocábulo do …",
                   "href": "/posts/post-inspecao-palavra-deus.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-deus",
                   "description": "Palavras: Deus ← lat. deus ← PIE *dyēus* (céu / dia); Deus × deus; ≠ Elohim/Theos/Allah; cluster A Deus!!! / fui; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Miss Click — mis- + click; a orelha cola a senhorita; ≠ clique social",
+                  "tileLabel": "Inspeção: Miss Click — mis- + c…",
+                  "href": "/posts/post-inspecao-expressao-miss-click.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-expressao-miss-click",
+                  "description": "Expressões: Miss Click (mis- + click) — clique no sítio errado; cola senhorita Clique ≠ étimo; calco clique errado; Valeu !!!"
                 },
                 {
                   "label": "Inspeção: fui — pretérito de ir e de ser; na rua, Fui!",
@@ -3747,6 +4107,86 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-diabo",
                   "description": "Palavras: diabo ← diábolos (acusador); Daibo é lapso; Diablo é ES + jogo + monte; giaua é vizinho oral, não étimo; ≠ diamba; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Retarget — re- + alvo; a orelha cola o rato; ≠ tutorial de anúncio",
+                  "tileLabel": "Inspeção: Retarget — re- + alvo…",
+                  "href": "/posts/post-inspecao-palavra-retarget.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-retarget",
+                  "description": "Palavras: retarget (re- + target) — voltar a apontar ao alvo; cola rato+alvo (rat+target) ≠ étimo; objecto alvo (albus); animal rato; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Ação — o fazer nomeado, o gesto e as outras salas",
+                  "tileLabel": "Inspeção: Ação — o fazer nomead…",
+                  "href": "/posts/post-inspecao-palavra-acao.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-acao",
+                  "description": "Palavras: «ação» / acção — étimo lat. āctiō ← agere («fazer, impulsionar»); gesto ≠ ação ≠ ações da bolsa; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Lua — lūna, a luminosa; irmã de lūx; ≠ moon",
+                  "tileLabel": "Inspeção: Lua — lūna, a luminos…",
+                  "href": "/posts/post-inspecao-palavra-lua.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-lua",
+                  "description": "Palavras: lua (lat. lūna) — a luminosa; irmã de luz/lūx; dar à luz (claridade, não o astro); moon/mês medem; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Latim — língua do Lácio; a orelha cola latido (o cachorro)",
+                  "tileLabel": "Inspeção: Latim — língua do Lác…",
+                  "href": "/posts/post-inspecao-palavra-latim.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-latim",
+                  "description": "Palavras: latim ← lat. latīnus (Lácio) — língua; a orelha cola latido (latrāre) no cachorro / cão (canis); sala do latim; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Linha 10 · Cerol — contato com objeto cortante, pé direito",
+                  "tileLabel": "Inspeção: Linha 10 · Cerol — co…",
+                  "href": "/posts/post-inspecao-palavra-linha-10-cerol.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-linha-10-cerol",
+                  "description": "Palavras: linha 10 (calibre de pipa ≠ CPTM) · cerol; gatilho contato com objeto cortante · pé direito (≠ teto); Brasil com P; ficha ≠ receita; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Juntos — o estado, cruzado com os elos",
+                  "tileLabel": "Inspeção: Juntos — o estado, cr…",
+                  "href": "/posts/post-inspecao-palavra-juntos.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-juntos",
+                  "description": "Palavras: «juntos» (lat. iunctus ← iungere) — estado de estar junto; cruza com elos (anel ≠ slogan); Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: AO90 — o acordo, o ano e o que não é étimo",
+                  "tileLabel": "Inspeção: AO90 — o acordo, o an…",
+                  "href": "/posts/post-inspecao-palavra-ao90.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-ao90",
+                  "description": "Palavras: AO90 = Acordo Ortográfico de 1990; 90 é o ano; grafia ≠ étimo; ≠ AOC; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: AOC — a sigla do monitor, não do acordo",
+                  "tileLabel": "Inspeção: AOC — a sigla do moni…",
+                  "href": "/posts/post-inspecao-palavra-aoc.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-aoc",
+                  "description": "Palavras: AOC = Admiral Overseas Corporation; monitor / objeto electrónico; ≠ AO90; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Étimo — a peça da origem (āctiō ← agere)",
+                  "tileLabel": "Inspeção: Étimo — a peça da ori…",
+                  "href": "/posts/post-inspecao-palavra-etimo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-etimo",
+                  "description": "Palavras: «étimo» (gr. étymon) — a peça ≠ etimologia; espécime ação: lat. āctiō ← agere («fazer, impulsionar»); Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Miss — falhar o alvo; cruzado com faltando e ERROR",
+                  "tileLabel": "Inspeção: Miss — falhar o alvo;…",
+                  "href": "/posts/post-inspecao-palavra-miss.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-miss",
+                  "description": "Palavras: miss (germ. missan) × faltando (lat. fallere) × ERROR (lat. errāre) — três árvores, um campo; I miss you ≠ 500; Valeu !!!"
                 },
                 {
                   "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
