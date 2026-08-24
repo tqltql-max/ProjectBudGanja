@@ -630,4 +630,7 @@
   <url><loc>https://inspetorbudganja.com.br/animais/cavalo/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/animais/codorna/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://inspetorbudganja.com.br/fungos/psilocybe-cubensis/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url>
+    <loc>https://inspetorbudganja.com.br/posts/post-inspecao-palavra-acao.html</loc>
+  </url>
 </urlset>

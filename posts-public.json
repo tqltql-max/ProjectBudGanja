@@ -1,5 +1,24 @@
 [
   {
+    "title": "Inspeção: Ação — o fazer nomeado, o gesto e as outras salas",
+    "titleEn": "Inspection: Ação — named doing, the gesture, and the other rooms",
+    "titleEs": "Inspección: Ação — el hacer nombrado, el gesto y las otras salas",
+    "excerpt": "Palavras: «ação» / acção (lat. āctiō ← agere) — ofício; gesto ≠ ação ≠ ações da bolsa; Valeu !!!",
+    "excerptEn": "Words: “ação” / acção (Lat. āctiō ← agere) — craft; gesture ≠ action ≠ stock shares; Valeu !!!",
+    "excerptEs": "Palabras: «ação» / acção (lat. āctiō ← agere) — oficio; gesto ≠ acción ≠ acciones de bolsa; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-acao",
+    "url": "/posts/post-inspecao-palavra-acao.html",
+    "date": "2026-08-24T10:22:00.000Z",
+    "filename": "posts/post-inspecao-palavra-acao.html",
+    "coverImage": "/imagens/inspecoes/acao-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 291,
+    "seriesLabel": "Ação · palavra"
+  },
+  {
     "title": "Inspeção: Teoria das cordas — a física, não o fio",
     "titleEn": "Inspection: String theory — the physics, not the rope",
     "titleEs": "Inspección: Teoría de cuerdas — la física, no el hilo",

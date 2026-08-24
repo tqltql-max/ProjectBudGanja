@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T02:21:08.931Z",
+  "updatedAt": "2026-08-24T10:24:56.787Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4086,6 +4086,22 @@
       "curiositiesEn": "The sheet treats the word as a craft unit: what the hand does and what can be cited.",
       "historyEs": "Gesto viene del latín gestus — el acto mínimo del cuerpo. En BudGanja la palabra liga Vida, cultivo, inspecciones, herramientas y comunidad.",
       "curiositiesEs": "La ficha trata el vocablo como unidad de oficio: lo que la mano hace y lo que se puede citar."
+    },
+    {
+      "id": "acao",
+      "word": "Ação",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-acao.html",
+      "simple": "Lat. āctiō ← agere — o fazer nomeado; grafia acção (PT); gesto ≠ ação ≠ ações da bolsa; Valeu !!!",
+      "simpleEn": "Lat. āctiō ← agere — named doing; EU spelling acção; gesture ≠ action ≠ stock shares; Valeu !!!",
+      "simpleEs": "Lat. āctiō ← agere — el hacer nombrado; grafía acção (PT); gesto ≠ acción ≠ acciones de bolsa; ¡Valeu !!!",
+      "history": "Ação vem do latim āctiō (← agere, fazer). No Brasil e no AO90 cai o ct (ação); em Portugal tradicional escreve-se acção. O laboratório corta as salas: ofício, juízo, bolsa e filme.",
+      "curiosities": "O gesto é a unidade mínima; a ação nomeia a cadeia. Comprar ações não é passar à ação. Fecho: Valeu !!!",
+      "historyEn": "Portuguese ação comes from Latin āctiō (← agere, to do). Brazil and AO90 drop the ct; traditional European Portuguese keeps acção. The lab cuts rooms: craft, lawsuit, shares and film.",
+      "curiositiesEn": "The gesture is the minimal unit; action names the chain. Buying shares is not taking action. Close: Valeu !!!",
+      "historyEs": "Ação viene del latín āctiō (← agere, hacer). Brasil y AO90 sueltan el ct; el PT tradicional guarda acção. El laboratorio corta salas: oficio, juicio, bolsa y cine.",
+      "curiositiesEs": "El gesto es la unidad mínima; la acción nombra la cadena. Comprar acciones no es pasar a la acción. Cierre: Valeu !!!"
     },
     {
       "id": "revoada",

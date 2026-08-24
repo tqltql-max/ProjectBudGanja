@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T02:21:08.931Z",
+  "updatedAt": "2026-08-24T10:27:17.431Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -9758,6 +9758,30 @@
         "/posts/post-inspecao-palavra-animal.html"
       ],
       "notes": "Cap. 278 — entre do bando; mime ≠ ave ≠ drone."
+    },
+    {
+      "id": "palavra-acao",
+      "title": "Ação — o fazer nomeado, o gesto e as outras salas",
+      "titleEn": "Ação — named doing, the gesture, and the other rooms",
+      "titleEs": "Ação — el hacer nombrado, el gesto y las otras salas",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: ação / acção (lat. āctiō ← agere) — ofício; gesto ≠ ação ≠ ações da bolsa; Valeu !!!",
+      "whyEn": "Words: ação / acção (Lat. āctiō ← agere) — craft; gesture ≠ action ≠ stock shares; Valeu !!!",
+      "whyEs": "Palabras: ação / acção (lat. āctiō ← agere) — oficio; gesto ≠ acción ≠ acciones de bolsa; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-acao",
+      "doneHref": "/posts/post-inspecao-palavra-acao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/a%C3%A7%C3%A3o",
+        "https://en.wiktionary.org/wiki/actio#Latin",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-expressao-meter-marcha.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 291 — ofício × juízo × bolsa × filme; gesto é a unidade mínima."
     }
   ]
 }
