@@ -214,6 +214,11 @@ const {
   poemEn: poemRamelaEn,
   poemEs: poemRamelaEs
 } = require('../lib/ramela-inspecao-post.js');
+const {
+  poemPt: poemParabolaPt,
+  poemEn: poemParabolaEn,
+  poemEs: poemParabolaEs
+} = require('../lib/parabola-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -238,6 +243,27 @@ const doc = {
       bodyEs: poemRamelaEs(),
       inspectionHref: '/posts/post-inspecao-palavra-ramela.html',
       tags: ['poesia', 'vida', 'ramela', 'ramelento', 'remo']
+    },
+    {
+      id: 'parabola',
+      slug: 'parabola',
+      title: 'Parábola',
+      titleEn: 'Parábola',
+      titleEs: 'Parábola',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja — lançar ao lado; narrativa e curva na mesma página; Valeu !!!',
+      teaserEn:
+        'BudGanja echo — throw beside; story and curve on one page; Valeu !!!',
+      teaserEs:
+        'Eco BudGanja — lanzar al lado; narrativa y curva en la misma página; ¡Valeu !!!',
+      body: poemParabolaPt(),
+      bodyEn: poemParabolaEn(),
+      bodyEs: poemParabolaEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-parabola.html',
+      tags: ['poesia', 'vida', 'parabola', 'parabola', 'palavra']
     },
     {
       id: 'dois-sao-mais-fortes',

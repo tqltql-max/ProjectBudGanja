@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:39:17.720Z",
+  "updatedAt": "2026-08-24T11:50:17.143Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -5768,6 +5768,16 @@
       "curiositiesEs": "Nombrar, inspeccionar y cuidar: la ficha lee alteraciones en el tiempo (latín → BR → digital) sin purismo de museo."
     },
     {
+      "id": "palavra",
+      "word": "palavra",
+      "simple": "Lat. parabola ← gr. parabolḗ — vocábulo (unidade de fala). A série Palavras é o hub; esta ficha é o nome. ≠ verbo ≠ Verbo. Valeu !!!",
+      "simpleEn": "Lat. parabola ← Gr. parabolḗ — vocable (speech unit). The Words series is the hub; this sheet is the name. ≠ verb ≠ the Word. Valeu !!!",
+      "simpleEs": "Lat. parabola ← gr. parabolḗ — vocablo (unidad de habla). La serie Palabras es el hub; esta ficha es el nombre. ≠ verbo ≠ Verbo. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-palavra.html"
+    },
+    {
       "id": "cachorro",
       "word": "cachorro",
       "simple": "BR: o cão no dia-a-dia. Late → latido (latrāre). ≠ latim. Ficha de espécie em Animais / Cão. Corte na sala do latim. Valeu !!!",
@@ -5892,6 +5902,22 @@
       "curiositiesEn": "Folk etymology is the cara+alho mechanism (a story that fits too well) — not the etymon. School agglutination (planalto) is fusion that is origin. Polymorphism is another map.",
       "historyEs": "Del griego etymología: étymon (sentido verdadero) + lógos (palabra / estudio). El laboratorio usa este oficio en todas las fichas Palabras.",
       "curiositiesEs": "Etimología popular es el mecanismo de cara+alho (historia que encaja demasiado) — no es el étimo. Aglutinación escolar (planalto) es fusión que es origen."
+    },
+    {
+      "id": "parabola",
+      "word": "parábola",
+      "simple": "Gr. parabolḗ «lançar ao lado» → lat. parabola → PT parábola. Duas salas na mesma página: história que compara e curva (foco / directriz). Filha palavra = outra ficha. EN parable × parabola. Valeu !!!",
+      "simpleEn": "Gk. parabolḗ “throw beside” → Lat. parabola → PT parábola. Two rooms on one page: the comparing story and the curve (focus / directrix). Daughter palavra = another sheet. EN parable × parabola. Valeu !!!",
+      "simpleEs": "Gr. parabolḗ «lanzar al lado» → lat. parabola → PT parábola. Dos salas en la misma página: historia que compara y curva (foco / directriz). Hija palavra = otra ficha. EN parable × parabola. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-parabola.html",
+      "history": "Do grego parabolḗ (para- «ao lado» + bállein «lançar») entra o latim parabola: comparação, fala, história que ensina. O português guarda parábola para a narrativa e para a cónica; a filha palavra especializou-se em vocábulo. O inglês corta: parable × parabola.",
+      "curiosities": "A antena parabólica usa a propriedade do foco; o laboratório usa «parábola» em Artes como comparação metódica (não cosmologia). A lemniscata é outra curva. Hipérbole e elipse têm o mesmo fork duplo — salas futuras.",
+      "historyEn": "From Greek parabolḗ (para- “beside” + bállein “to throw”) Latin parabola takes comparison, speech, teaching story. Portuguese keeps parábola for both the narrative and the conic; daughter palavra specialised as “word”. English splits: parable × parabola.",
+      "curiositiesEn": "A dish antenna uses the focus property; the lab uses “parable” in Arts as methodical comparison (not cosmology). The lemniscate is another curve. Hyperbola and ellipse share the same double fork — future rooms.",
+      "historyEs": "Del griego parabolḗ (para- «al lado» + bállein «lanzar») el latín parabola toma comparación, habla, historia que enseña. El portugués guarda parábola para la narrativa y la cónica; la hija palavra se especializó en vocablo. El inglés corta: parable × parabola.",
+      "curiositiesEs": "La antena parabólica usa la propiedad del foco; el laboratorio usa «parábola» en Artes como comparación metódica. La lemniscata es otra curva. Hipérbola y elipse tienen el mismo fork — salas futuras."
     },
     {
       "id": "etimo",

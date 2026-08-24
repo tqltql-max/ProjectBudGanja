@@ -783,6 +783,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Derivados de risco: do fruto (*Citrus × sinensis (L.) Osbeck*) ao ultraprocessado — Suco reconstitído, néctar, refrigerante «de laranja», geleia, aroma e corantes; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
             },
             {
+              "label": "Inspeção: Artigo — Cannabis na adolescência, depressão e suicídio (JAMA Psychiatry)",
+              "tileLabel": "Inspeção: Artigo — Cannabis na …",
+              "href": "/posts/post-inspecao-artigo-gobbi-cannabis-adolescencia-humor.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-artigo-gobbi-cannabis-adolescencia-humor",
+              "description": "Auditoria da meta-análise Gobbi et al. (2019): 11 coortes, 23 317 jovens; OR 1,37 para depressão, 1,50 para ideação, 3,46 para tentativas; ansiedade não significativa. Associação ≠ destino; CVV 188."
+            },
+            {
               "label": "Inspeção: Leite e laticínios — da ordenha à prateleira industrial",
               "tileLabel": "Inspeção: Leite e laticínios — …",
               "href": "/posts/post-inspecao-derivado-leite.html",
@@ -4309,6 +4317,22 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-remo",
               "description": "Palavras: remo (lat. rēmus) ≠ REM (sono / sigla lab); gatilho rEMO; elos barco, Tamara, Amyr; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Parábola — lançar ao lado; latim e português na mesma página",
+              "tileLabel": "Inspeção: Parábola — lançar ao …",
+              "href": "/posts/post-inspecao-palavra-parabola.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-parabola",
+              "description": "Palavras: parábola ← lat. parabola ← gr. parabolḗ — estudar narrativa e curva aqui; filha palavra noutra ficha; EN parable × parabola; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Palavra — o vocábulo que nomeia a série",
+              "tileLabel": "Inspeção: Palavra — o vocábulo …",
+              "href": "/posts/post-inspecao-palavra-palavra.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-palavra",
+              "description": "Palavras: palavra ← lat. parabola / gr. parabolḗ — o vocábulo, não o hub; ≠ verbo ≠ Verbo; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

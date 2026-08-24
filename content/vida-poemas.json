@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:43:41.357Z",
+  "updatedAt": "2026-08-24T11:58:36.507Z",
   "poems": [
     {
       "id": "ramela",
@@ -23,6 +23,30 @@
         "ramela",
         "ramelento",
         "remo"
+      ]
+    },
+    {
+      "id": "parabola",
+      "slug": "parabola",
+      "title": "Parábola",
+      "titleEn": "Parábola",
+      "titleEs": "Parábola",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — lançar ao lado; narrativa e curva na mesma página; Valeu !!!",
+      "teaserEn": "BudGanja echo — throw beside; story and curve on one page; Valeu !!!",
+      "teaserEs": "Eco BudGanja — lanzar al lado; narrativa y curva en la misma página; ¡Valeu !!!",
+      "body": "Parábola.\nLançar ao lado.\n\nUma história que compara\nsem dizer o nome.\nUma curva que junta\no foco e a directriz.\n\nA mesma raiz\ndeu a palavra\ne a parábola.\n\nEm inglês cortam:\nparable / parabola.\nEm português\né a mesma boca.\n\nValeu !!!\nduas salas,\num étimo.",
+      "bodyEn": "Parábola.\nTo throw beside.\n\nA story that compares\nwithout naming the thing.\nA curve that joins\nthe focus and the directrix.\n\nThe same root\ngave the word\nand the parabola.\n\nEnglish cuts them:\nparable / parabola.\nPortuguese\nkeeps one mouth.\n\nValeu !!!\ntwo rooms,\none etymon.",
+      "bodyEs": "Parábola.\nLanzar al lado.\n\nUna historia que compara\nsin decir el nombre.\nUna curva que junta\nel foco y la directriz.\n\nLa misma raíz\ndio la palavra\ny la parábola.\n\nEn inglés cortan:\nparable / parabola.\nEn portugués\nes la misma boca.\n\n¡Valeu !!!\ndos salas,\nun étimo.",
+      "inspectionHref": "/posts/post-inspecao-palavra-parabola.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "parabola",
+        "parabola",
+        "palavra"
       ]
     },
     {
