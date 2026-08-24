@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T10:27:17.431Z",
+  "updatedAt": "2026-08-24T10:42:54.994Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5115,6 +5115,35 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 116 — tríade circuito: peça × verbo × efeito (luz)."
+    },
+    {
+      "id": "palavra-lua",
+      "title": "Lua — lūna, a luminosa; irmã de lūx",
+      "titleEn": "Lua — lūna, the luminous one; sister of lūx",
+      "titleEs": "Lua — lūna, la luminosa; hermana de lūx",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: lua (lat. lūna) — a luminosa; irmã de luz/lūx; dar à luz (claridade, não o astro); moon/mês medem; ≠ horóscopo.",
+      "whyEn": "Words: lua (Lat. lūna) — luminous one; sister of luz/lūx; dar à luz = clarity not orb; moon/mês measure.",
+      "whyEs": "Palabras: lua (lat. lūna) — la luminosa; hermana de luz/lūx; dar à luz = claridad, no el astro; moon/mês miden.",
+      "suggestedSlug": "inspecao-palavra-lua",
+      "doneHref": "/posts/post-inspecao-palavra-lua.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-lua.html",
+        "https://pt.wiktionary.org/wiki/lua",
+        "https://en.wiktionary.org/wiki/luna#Latin",
+        "https://en.wiktionary.org/wiki/lux#Latin",
+        "https://en.wiktionary.org/wiki/moon",
+        "https://pt.wiktionary.org/wiki/dar_%C3%A0_luz",
+        "/posts/post-inspecao-palavra-luz.html",
+        "/posts/post-inspecao-palavra-sol.html",
+        "/posts/post-inspecao-palavra-noite.html",
+        "/posts/post-inspecao-palavra-pariu.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 292 — lūna × lūx × dar à luz; moon/mês noutra árvore; sem horóscopo."
     },
     {
       "id": "palavra-sol",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T10:24:56.787Z",
+  "updatedAt": "2026-08-24T10:42:55.007Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -5734,6 +5734,32 @@
       "curiositiesEn": "Valeu !!! with the right light: the word is the click’s effect and also a metaphor of understanding.",
       "historyEs": "Luz viene del latín lux — claridad. En el lab forma tríada con el circuito (interruptor) y el sol (fuente natural).",
       "curiositiesEs": "Valeu !!! con la luz cierta: el vocablo es efecto del clic y también metáfora de entendimiento."
+    },
+    {
+      "id": "lua",
+      "word": "lua",
+      "simple": "Lat. lūna — a luminosa (raiz *lewk-, brilhar). Irmã de luz/lūx. Dar à luz é claridade/parto, não o astro. Moon e mês medem o tempo. ≠ horóscopo. Valeu !!!",
+      "simpleEn": "Lat. lūna — the luminous one (*lewk-, to shine). Sister of luz/lūx. Dar à luz is clarity/birth, not the orb. Moon and mês measure time. ≠ horoscope. Valeu !!!",
+      "simpleEs": "Lat. lūna — la luminosa (*lewk-, brillar). Hermana de luz/lūx. Dar à luz es claridad/parto, no el astro. Moon y mês miden el tiempo. ≠ horóscopo. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-lua.html",
+      "history": "Lua vem do latim lūna, «a luminosa», da mesma raiz *lewk- que deu lūx (luz) e a unidade lux. O n intervocálico caiu (luna > lua). O inglês moon e o português mês vêm de outra raiz (*mēh₁-, medir): em inglês o astro e o mês são família; em PT o astro brilha e o mês mede. Dar à luz é perífrase de claridade (trazer ao claro / parto), não «oferecer a lua».",
+      "curiosities": "Segunda-feira em espanhol ainda é lunes (dies Lunae); em português o astro saiu do dia civil. Lua de mel é calco de honeymoon — o mês doce; a boca PT importou o astro. A linguagem Lua (PUC-Rio, 1993) herdou o nome do satélite depois de uma linguagem chamada SOL. Lunático guarda a crença antiga; não é diagnóstico.",
+      "historyEn": "Lua is from Latin lūna, “the luminous one”, the same *lewk- root as lūx (light) and the SI unit lux. Intervocalic n dropped (luna > lua). English moon and Portuguese mês come from another root (*mēh₁-, to measure): English fused orb and month; Portuguese split shine (lua) from measure (mês). Dar à luz is a clarity periphrasis (bring into the light / give birth), not “offer the moon”.",
+      "curiositiesEn": "Spanish Monday is still lunes (dies Lunae); Portuguese dropped the orb from the weekday. Lua de mel is a calque of honeymoon — the sweet month; PT imported the orb. The Lua language (PUC-Rio, 1993) took the satellite’s name after a language called SOL. Lunático keeps an old belief; it is not a diagnosis.",
+      "historyEs": "Lua viene del latín lūna, «la luminosa», de la misma raíz *lewk- que dio lūx (luz) y la unidad lux. Cayó la n intervocálica (luna > lua). El inglés moon y el portugués mês vienen de otra raíz (*mēh₁-, medir). Dar à luz es perífrasis de claridad (traer a lo claro / parto), no «ofrecer la luna».",
+      "curiositiesEs": "El lunes español sigue siendo dies Lunae; en portugués el astro salió del día civil. Lua de mel es calco de honeymoon. El lenguaje Lua (PUC-Rio, 1993) tomó el nombre del satélite después de SOL. Lunático guarda una creencia antigua; no es diagnóstico."
+    },
+    {
+      "id": "dar-a-luz",
+      "word": "dar à luz",
+      "simple": "Perífrase de claridade / parto — lat. lūx, não lūna. Lapso «dar a lux» acerta o étimo e erra a preposição (à). Ver lua. Valeu !!!",
+      "simpleEn": "Clarity / birth periphrasis — Lat. lūx, not lūna. The slip “dar a lux” hits the etymon and misses the preposition. See lua. Valeu !!!",
+      "simpleEs": "Perífrasis de claridad / parto — lat. lūx, no lūna. El lapsus «dar a lux» acierta el étimo y falla la preposición. Ver lua. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-lua.html"
     },
     {
       "id": "lampada",
