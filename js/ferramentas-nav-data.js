@@ -4039,6 +4039,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: fui ← lat. fuī (ir e ser); gíria Fui! = saí; cluster Deus / A Deus!!!; ≠ passado; Valeu !!!"
             },
             {
+              "label": "Inspeção: Don't Show Again × não mostrar de novo — o aviso que pede para não voltar",
+              "tileLabel": "Inspeção: Don't Show Again × nã…",
+              "href": "/posts/post-inspecao-expressao-dont-show-again.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-dont-show-again",
+              "description": "Expressões: Don't Show Again × não mostrar de novo — caixa EN×PT; show=olhar × mostrar=avisar; de novo ≠ o novo; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Save Game — gravar a partida; o rasto, não o milagre",
               "tileLabel": "Inspeção: Save Game — gravar a …",
               "href": "/posts/post-inspecao-palavra-save-game.html",
@@ -4247,12 +4255,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Objecto: «óculos» (plural de óculo ← lat. oculus) — lentes + armação diante do olho; ≠ órgão ≠ contacto ≠ marca; Valeu !!!"
             },
             {
-              "label": "Inspeção: Restore — pôr de pé; cruzado com Back, Backup e Up",
-              "tileLabel": "Inspeção: Restore — pôr de pé; …",
-              "href": "/posts/post-inspecao-palavra-restore.html",
+              "label": "Inspeção: Genocídio — o nome de destruir um grupo como grupo; ≠ guerra ≠ slogan",
+              "tileLabel": "Inspeção: Genocídio — o nome de…",
+              "href": "/posts/post-inspecao-palavra-genocidio.html",
               "icon": "🔍",
-              "slug": "post-inspecao-palavra-restore",
-              "description": "Palavras: restore (lat. restaurāre) × back (germ. bæc) × backup (back+up) × up (germ. upp) — quatro salas, um circuito; Restoure = lapso; ≠ restore back; Valeu !!!"
+              "slug": "post-inspecao-palavra-genocidio",
+              "description": "Palavras: genocídio (génos + -cīdium; Lemkin 1944) — Convenção 1948 · Lei 2.889/1956; ≠ guerra ≠ massacre ≠ escravidão; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

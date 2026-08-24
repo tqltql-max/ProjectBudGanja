@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:11:55.841Z",
+  "updatedAt": "2026-08-24T11:22:53.680Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4255,6 +4255,33 @@
       ],
       "notes": "Cap. 207 — dois eixos, duas frases; lei da época ≠ art. 149.",
       "doneHref": "/posts/post-inspecao-palavra-escravidao.html"
+    },
+    {
+      "id": "palavra-genocidio",
+      "title": "Genocídio — destruir um grupo como grupo",
+      "titleEn": "Genocídio — destroying a group as a group",
+      "titleEs": "Genocídio — destruir un grupo como grupo",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: genocídio (génos + -cīdium; Lemkin 1944) — Convenção 1948 · Lei 2.889/1956; ≠ guerra ≠ massacre ≠ escravidão.",
+      "whyEn": "Words: genocídio (génos + -cīdium; Lemkin 1944) — 1948 Convention; ≠ war ≠ massacre ≠ slavery.",
+      "whyEs": "Palabras: genocídio (génos + -cīdium; Lemkin 1944) — Convención 1948; ≠ guerra ≠ masacre ≠ esclavitud.",
+      "suggestedSlug": "inspecao-palavra-genocidio",
+      "doneHref": "/posts/post-inspecao-palavra-genocidio.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-genocidio.html",
+        "https://pt.wiktionary.org/wiki/genoc%C3%ADdio",
+        "https://en.wiktionary.org/wiki/genocide",
+        "https://www.ohchr.org/pt/instruments-mechanisms/instruments/convention-prevention-and-punishment-crime-genocide",
+        "https://www.planalto.gov.br/ccivil_03/leis/L2889.htm",
+        "/posts/post-inspecao-palavra-escravidao.html",
+        "/posts/post-inspecao-palavra-perseguicao.html",
+        "/posts/post-inspecao-palavra-guerra-do-paraguai.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 307 — ficha de vocábulo, não tribunal; sem inventário de casos."
     },
     {
       "id": "expressao-eojsofaorforap",
@@ -10329,9 +10356,9 @@
       "tipo": "palavra",
       "priority": 1,
       "status": "feita",
-      "why": "Palavras: conjugação ← coniugātiō; 3 elos; elos ≠ eles/elas; nós/vós/eles; sala com latim; Valeu !!!",
-      "whyEn": "Words: conjugação ← coniugātiō; 3 links; elos ≠ eles/elas; nós/vós/eles; shared with Latin; Valeu !!!",
-      "whyEs": "Palabras: conjugação ← coniugātiō; 3 eslabones; elos ≠ eles/elas; sala con latín; ¡Valeu !!!",
+      "why": "Palavras: conjugação ← coniugātiō; 3 elos × 3 cores (branco/eu · amarelo/tu · vermelho/ele); elos ≠ eles/elas; Valeu !!!",
+      "whyEn": "Words: conjugação ← coniugātiō; 3 links × 3 colors; elos ≠ eles/elas; Valeu !!!",
+      "whyEs": "Palabras: conjugação ← coniugātiō; 3 eslabones × 3 colores; elos ≠ eles/elas; ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-conjugacao",
       "doneHref": "/posts/post-inspecao-palavra-conjugacao.html",
       "seriesHint": "palavras-origem",

@@ -40,6 +40,11 @@ const {
   poemKillingInTheNameEs
 } = require('../lib/killing-in-the-name-inspecao-post.js');
 const {
+  poemWakeUpPt,
+  poemWakeUpEn,
+  poemWakeUpEs
+} = require('../lib/wake-up-inspecao-post.js');
+const {
   poemAllRightNowPt,
   poemAllRightNowEn,
   poemAllRightNowEs
@@ -602,6 +607,27 @@ const doc = {
       bodyEs: poemKillingInTheNameEs(),
       inspectionHref: '/posts/post-inspecao-arte-killing-in-the-name.html',
       tags: ['poesia', 'vida', 'rage', 'máquina', 'raiva', 'proibição']
+    },
+    {
+      id: 'wake-up',
+      slug: 'wake-up',
+      title: 'Wake Up',
+      titleEn: 'Wake Up',
+      titleEs: 'Wake Up',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja da RATM — acordar contra a máquina; não tanque, não dormir no nome; faça o melhor.',
+      teaserEn:
+        'BudGanja echo of RATM — wake against the machine; no tank, no sleeping in the name; do your best.',
+      teaserEs:
+        'Eco BudGanja de RATM — despertar contra la máquina; no tanque, no dormir en el nombre; haz lo mejor.',
+      body: poemWakeUpPt(),
+      bodyEn: poemWakeUpEn(),
+      bodyEs: poemWakeUpEs(),
+      inspectionHref: '/posts/post-inspecao-arte-wake-up.html',
+      tags: ['poesia', 'vida', 'rage', 'máquina', 'acordar', 'matrix']
     },
     {
       id: 'all-right-now',

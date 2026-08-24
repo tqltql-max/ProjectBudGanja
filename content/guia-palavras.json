@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:11:55.866Z",
+  "updatedAt": "2026-08-24T11:22:53.688Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -5705,15 +5705,15 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-conjugacao.html",
-      "simple": "Lat. coniugātiō ← coniugāre (jugo). 3 elos: eu/nós · tu/vós · ele·ela/eles·elas. Elos ≠ eles/elas. Sala com latim. Valeu !!!",
-      "simpleEn": "Lat. coniugātiō ← coniugāre (yoke). 3 links: eu/nós · tu/vós · ele·ela/eles·elas. Elos ≠ eles/elas. Shared with Latin. Valeu !!!",
-      "simpleEs": "Lat. coniugātiō ← coniugāre (yugo). 3 eslabones. Elos ≠ eles/elas. Sala con latín. ¡Valeu !!!",
+      "simple": "Lat. coniugātiō ← coniugāre (jugo). 3 elos × 3 cores: branco/eu·nós · amarelo/tu·vós · vermelho/ele·elas. Elos ≠ eles/elas. Valeu !!!",
+      "simpleEn": "Lat. coniugātiō ← coniugāre (yoke). 3 links × 3 colors: white/I·we · yellow/you · red/he·they. Elos ≠ eles/elas. Valeu !!!",
+      "simpleEs": "Lat. coniugātiō ← coniugāre (yugo). 3 eslabones × 3 colores. Elos ≠ eles/elas. ¡Valeu !!!",
       "history": "Conjugação vem do latim coniugātiō, de coniugāre — pôr no mesmo jugo (iugum), ninho de iungere (juntos). As pessoas do verbo português herdam ego, tū, nōs, vōs do latim.",
-      "curiosities": "A orelha cola elos (anéis) em eles (pronome). No BR, vocês pede desinência de 3.ª. Pessoa gramatical ≠ série Pessoas (biografias). Valeu !!!",
+      "curiosities": "Cruzamento: branco=atenção=1.ª; amarelo=cuidado=2.ª; vermelho=perigo=3.ª. A orelha cola elos em eles. No BR, vocês pede desinência de 3.ª. Valeu !!!",
       "historyEn": "Portuguese conjugação comes from Latin coniugātiō, from coniugāre — to yoke together (iugum), kin to iungere (juntos). The persons inherit ego, tū, nōs, vōs.",
-      "curiositiesEn": "The ear glues elos (rings) to eles (they). In Brazilian Portuguese, vocês takes 3rd-person endings. Grammatical person ≠ the People biography series. Valeu !!!",
+      "curiositiesEn": "Cross: white=attention=1st; yellow=care=2nd; red=danger=3rd. The ear glues elos to eles. In BR, vocês takes 3rd-person endings. Valeu !!!",
       "historyEs": "Conjugação viene del latín coniugātiō, de coniugāre — uncir al mismo yugo (iugum), nido de iungere (juntos). Las personas heredan ego, tū, nōs, vōs.",
-      "curiositiesEs": "El oído pega elos (anillos) en eles (ellos). En BR, vocês pide desinencia de 3.ª. Persona gramatical ≠ serie Personas. ¡Valeu !!!"
+      "curiositiesEs": "Cruce: blanco=atención=1.ª; amarillo=cuidado=2.ª; rojo=peligro=3.ª. El oído pega elos en eles. En BR, vocês pide desinencia de 3.ª. ¡Valeu !!!"
     },
     {
       "id": "trocadilho",
@@ -6816,6 +6816,22 @@
       "curiositiesEn": "The lab keeps the mill word apart from the thanks word: two axes, two sentences. The ear glues what the mouth joined — a sheet of its own.",
       "historyEs": "Escravidão junta escravo (lat. med. sclavus) con el sufijo -idão. En Brasil el vocablo nombra el cautiverio de los ingenios y del tráfico atlántico — no el agradecimiento.",
       "curiositiesEs": "El laboratorio separa el vocablo del ingenio del vocablo del reconocimiento: dos ejes, dos frases. El oído pega lo que la boca juntó — ficha propia."
+    },
+    {
+      "id": "genocidio",
+      "word": "genocídio",
+      "simple": "Gr. génos + lat. -cīdium (Lemkin 1944) — destruir um grupo nacional, étnico, racial ou religioso como tal. Convenção 1948 · Lei 2.889/1956. ≠ guerra ≠ massacre ≠ escravidão. Valeu !!!",
+      "simpleEn": "Gk. génos + Lat. -cīdium (Lemkin 1944) — destroying a national, ethnical, racial or religious group as such. 1948 Convention. ≠ war ≠ massacre ≠ slavery. Valeu !!!",
+      "simpleEs": "Gr. génos + lat. -cīdium (Lemkin 1944) — destruir un grupo nacional, étnico, racial o religioso como tal. Convención 1948. ≠ guerra ≠ masacre ≠ esclavitud. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-genocidio.html",
+      "history": "A palavra é de 1944 (Raphael Lemkin: grego génos + latim -cīdium). A Convenção da ONU (1948) e a Lei brasileira 2.889/1956 fixam o teste jurídico: intenção de destruir um grupo protegido como tal. O crime é antigo; o nome é novo.",
+      "curiosities": "Guerra, massacre, homicídio, escravidão e perseguição são salas vizinhas, não sinónimos. No Brasil a palavra também viaja na política (juventude negra, povos indígenas, drogas) — uso, não sentença. O laboratório recusa inventário de casos.",
+      "historyEn": "The word is from 1944 (Raphael Lemkin: Greek génos + Latin -cīdium). The 1948 UN Convention and Brazil’s Law 2.889/1956 fix the legal test: intent to destroy a protected group as such. The crime is old; the name is new.",
+      "curiositiesEn": "War, massacre, homicide, slavery and persecution are neighbouring rooms, not synonyms. In Brazil the word also travels in politics — usage, not a verdict. The lab refuses a case inventory.",
+      "historyEs": "La palabra es de 1944 (Raphael Lemkin: griego génos + latín -cīdium). La Convención de la ONU (1948) y la Ley brasileña 2.889/1956 fijan el test jurídico. El crimen es antiguo; el nombre es nuevo.",
+      "curiositiesEs": "Guerra, masacre, homicidio, esclavitud y persecución son salas vecinas, no sinónimos. En Brasil la palabra también viaja en la política — uso, no sentencia. El laboratorio rehúsa inventario de casos."
     },
     {
       "id": "multitarefa",

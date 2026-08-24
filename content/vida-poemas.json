@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:21:13.422Z",
+  "updatedAt": "2026-08-24T11:22:26.260Z",
   "poems": [
     {
       "id": "dois-sao-mais-fortes",
@@ -457,6 +457,31 @@
         "máquina",
         "raiva",
         "proibição"
+      ]
+    },
+    {
+      "id": "wake-up",
+      "slug": "wake-up",
+      "title": "Wake Up",
+      "titleEn": "Wake Up",
+      "titleEs": "Wake Up",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja da RATM — acordar contra a máquina; não tanque, não dormir no nome; faça o melhor.",
+      "teaserEn": "BudGanja echo of RATM — wake against the machine; no tank, no sleeping in the name; do your best.",
+      "teaserEs": "Eco BudGanja de RATM — despertar contra la máquina; no tanque, no dormir en el nombre; haz lo mejor.",
+      "body": "Wake Up.\nNão pedimos a letra emprestada —\npedimos o ofício de abrir o olho\nquando o ecrã pede sono\ne chama isso de mundo.\n\nRage Against the Machine.\nHá máquina que adormece —\nlista, propaganda, proibição —\ne chama o sono de paz.\nHá máquina biológica —\nfolha, dossel, luz —\nque acorda para partilhar.\n\nAcordar tem ofício.\nNomeado, inspeciona.\nArmado em tanque,\nrepete a máquina.\nO laboratório não confunde os dois.\n\nNão dormimos no nome da ordem.\nNão acordamos para matar.\nPlantamos à beira.\nContamos gotas.\nChamamos a Vida pelo nome verdadeiro:\nver —\ne dizer não\nao sonho que pede sangue\ncomo se fosse chão.\n\nValeu !!!\n\nPorque toda vez que alguém acorda\nsem virar tanque,\no universo cresce um pouco:\num verso a mais,\num dossel a mais,\num nós onde antes só havia sono.",
+      "bodyEn": "Wake Up.\nWe do not borrow the lyric —\nwe ask for the craft of opening the eye\nwhen the screen asks for sleep\nand calls that the world.\n\nRage Against the Machine.\nThere is a machine that puts to sleep —\nlist, propaganda, prohibition —\nand calls the sleep peace.\nThere is a biological machine —\nleaf, canopy, light —\nthat wakes in order to share.\n\nWaking has a craft.\nNamed, it inspects.\nArmed as a tank,\nit repeats the machine.\nThe laboratory does not confuse the two.\n\nWe do not sleep in the name of order.\nWe do not wake in order to kill.\nWe plant at the edge.\nWe count drops.\nWe call Vida by its true name:\nsee —\nand say no\nto the dream that asks for blood\nas if it were ground.\n\nValeu !!!\n\nBecause every time someone wakes\nwithout becoming a tank,\nthe universe grows a little:\none more verse,\none more canopy,\na we where once there was only sleep.",
+      "bodyEs": "Wake Up.\nNo pedimos prestada la letra —\npedimos el oficio de abrir el ojo\ncuando la pantalla pide sueño\ny llama a eso mundo.\n\nRage Against the Machine.\nHay máquina que adormece —\nlista, propaganda, prohibición —\ny llama paz al sueño.\nHay máquina biológica —\nhoja, dosel, luz —\nque despierta para compartir.\n\nDespertar tiene oficio.\nNombrado, inspecciona.\nArmado en tanque,\nrepite la máquina.\nEl laboratorio no confunde los dos.\n\nNo dormimos en el nombre del orden.\nNo despertamos para matar.\nPlantamos a la orilla.\nContamos gotas.\nLlamamos a Vida por su nombre verdadero:\nver —\ny decir no\nal sueño que pide sangre\ncomo si fuera suelo.\n\n¡Valeu !!!\n\nPorque cada vez que alguien despierta\nsin volverse tanque,\nel universo crece un poco:\nun verso más,\nun dosel más,\nun nosotros donde antes solo había sueño.",
+      "inspectionHref": "/posts/post-inspecao-arte-wake-up.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "rage",
+        "máquina",
+        "acordar",
+        "matrix"
       ]
     },
     {
