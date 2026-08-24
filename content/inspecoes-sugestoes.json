@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:39:17.720Z",
+  "updatedAt": "2026-08-24T11:49:28.560Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7835,6 +7835,36 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 173 — ficha do método da série; cita cluster cara+alho."
+    },
+    {
+      "id": "palavra-parabola",
+      "title": "Parábola — lançar ao lado; latim e português na mesma página",
+      "titleEn": "Parábola — throw beside; Latin and Portuguese on the same page",
+      "titleEs": "Parábola — lanzar al lado; latín y portugués en la misma página",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: parábola ← lat. parabola ← gr. parabolḗ — página de estudo (narrativa × curva); filha palavra noutra ficha; EN parable × parabola.",
+      "whyEn": "Words: parábola ← Lat. parabola ← Gk. parabolḗ — study page (story × curve); daughter palavra elsewhere; EN parable × parabola.",
+      "whyEs": "Palabras: parábola ← lat. parabola ← gr. parabolḗ — página de estudio (narrativa × curva); hija palavra en otra ficha; EN parable × parabola.",
+      "suggestedSlug": "inspecao-palavra-parabola",
+      "doneHref": "/posts/post-inspecao-palavra-parabola.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-parabola.html",
+        "https://pt.wiktionary.org/wiki/par%C3%A1bola",
+        "https://en.wiktionary.org/wiki/parabola#Latin",
+        "https://en.wiktionary.org/wiki/%CF%80%CE%B1%CF%81%CE%B1%CE%B2%CE%BF%CE%BB%CE%AE#Ancient_Greek",
+        "https://en.wiktionary.org/wiki/parabola",
+        "https://en.wiktionary.org/wiki/parable",
+        "/posts/post-inspecao-palavra-palavra.html",
+        "/posts/post-inspecao-palavra-latim.html",
+        "/posts/post-inspecao-palavra-etimologia.html",
+        "/posts/post-inspecao-palavra-lemniscata.html",
+        "/posts/post-inspecao-arte-o-alquimista.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 313 — uma página latim+PT; duas salas; sem catecismo nem caderno de cónicas."
     },
     {
       "id": "palavra-no",
