@@ -307,6 +307,11 @@
       "tileLabel": "Fungi",
       "description": "Fungi catalog: identification and framing — not a grow or use protocol."
     },
+    "tecnologia": {
+      "label": "Technology",
+      "tileLabel": "Technology",
+      "description": "Technical craft catalog: words, hardware, network and software."
+    },
     "unifesp": {
       "label": "UNIFESP course",
       "tileLabel": "UNIFESP",
@@ -1215,6 +1220,32 @@
       "curiositiesLabel": "Curiosities",
       "moreLabel": "History and curiosities",
       "docTitle": "Words Guide | Inspetor BudGanja"
+    },
+    "guiaAstrologia": {
+      "eyebrow": "Library · Guides · Sky",
+      "title": "Astrology",
+      "subtitle": "The sky you can see and the sky you name. Aries is the first sign; the native is called ariana. This page is not a horoscope.",
+      "linkWords": "Words Guide",
+      "linkAriana": "Ariana sheet",
+      "linkLight": "Light",
+      "cutTitle": "Three rooms that do not merge",
+      "cutAstroTitle": "Astronomy",
+      "cutAstroText": "The photographic sky — IAU constellations, named stars, coordinates. The viewer (Aladin Lite) and the Google Earth KML live here.",
+      "cutZodiacTitle": "Zodiac",
+      "cutZodiacText": "Twelve tropical names from the March equinox. Aries is first. Culture, language and myth — not a verdict.",
+      "cutHoroTitle": "Horoscope",
+      "cutHoroText": "Daily column, character app, “I’m an Aries so…”. The lab does not issue that. Sign ≠ truth of the deed.",
+      "skyTitle": "Verifiable sky",
+      "skyLead": "The viewer is Aladin Lite (CDS Strasbourg) — sky photography, not a natal chart. Google Sky has no web embed.",
+      "openAladin": "Open Aladin in a tab",
+      "firstSign": "first sign",
+      "wheelTitle": "The twelve — Aries opens",
+      "wheelLead": "Approximate tropical dates. Only Aries and Gemini have a deep sheet in this delivery.",
+      "openInspection": "View inspection",
+      "soon": "Sheet queue",
+      "seeSky": "See in the sky",
+      "loadError": "Could not load the sign catalogue.",
+      "docTitle": "Astrology | Inspetor BudGanja"
     },
     "inverno": {
       "brand": "Inspetor BudGanja",

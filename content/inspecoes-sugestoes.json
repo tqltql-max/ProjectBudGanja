@@ -1,7 +1,30 @@
 {
-  "updatedAt": "2026-08-24T12:25:29.227Z",
+  "updatedAt": "2026-08-24T12:42:56.101Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
+    {
+      "id": "derivado-racao",
+      "title": "Ração para animais — do saco industrial ao comedouro",
+      "titleEn": "Animal feed — from the industrial bag to the bowl",
+      "titleEs": "Pienso para animales — del saco industrial al comedero",
+      "tipo": "derivado",
+      "priority": 1,
+      "status": "feita",
+      "why": "Hub Produtos nocivos: ração / pet food — kibble, petiscos e concentrado pecuário; distinto do animal e do que o humano come.",
+      "whyEn": "Harmful-products hub: animal feed / pet food — kibble, treats and livestock concentrate; distinct from the animal and from human food.",
+      "whyEs": "Hub Productos nocivos: pienso / pet food — kibble, snacks y concentrado pecuario; distinto del animal y de lo que come el humano.",
+      "suggestedSlug": "inspecao-derivado-racao",
+      "doneHref": "/posts/post-inspecao-derivado-racao.html",
+      "seriesHint": "animais-derivados-risco",
+      "sources": [
+        "/animais/",
+        "/animais/cao/",
+        "/animais/gato/",
+        "https://pt.wikipedia.org/wiki/Ra%C3%A7%C3%A3o_animal",
+        "https://en.wikipedia.org/wiki/Pet_food"
+      ],
+      "notes": "Hub do comedouro industrial; não fundir com fichas de animal nem com nugget/embutido/leite."
+    },
     {
       "id": "derivado-leite",
       "title": "Leite e laticínios — da ordenha à prateleira industrial",
@@ -10955,6 +10978,52 @@
         "/radio/"
       ],
       "notes": "Obra primeiro (1992); rádio = primeira faixa pública permitida; eco poético ≠ letra RATM."
+    },
+    {
+      "id": "expressao-quem-nao-arrisca-nao-petisca",
+      "title": "que não arrisca não petisca — o ditado do bocado",
+      "titleEn": "que não arrisca não petisca — the nibble proverb",
+      "titleEs": "que não arrisca não petisca — el dicho del bocado",
+      "tipo": "expressao",
+      "priority": 1,
+      "status": "feita",
+      "why": "Expressões: que não arrisca não petisca — voz viva / index no lugar de Valeu !!!; âncora quem…; ≠ aposta; Valeu !!!",
+      "whyEn": "Sayings: que não arrisca não petisca — living voice / index instead of Valeu !!!; anchor quem…; ≠ gamble; Valeu !!!",
+      "whyEs": "Dichos: que não arrisca não petisca — voz viva / index en lugar de Valeu !!!; ancla quem…; ≠ apuesta; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-quem-nao-arrisca-nao-petisca",
+      "doneHref": "/posts/post-inspecao-expressao-quem-nao-arrisca-nao-petisca.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/arriscar",
+        "https://pt.wiktionary.org/wiki/petiscar",
+        "/posts/post-inspecao-palavra-risco.html",
+        "/posts/post-inspecao-palavra-valeu.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/"
+      ],
+      "notes": "Cap. 283 — mantra visível da index; Valeu !!! permanece fecho das fichas."
+    },
+    {
+      "id": "palavra-ariana",
+      "title": "Ariana — Áries, o primeiro signo e as derivações",
+      "titleEn": "Ariana — Aries, the first sign, and the derivations",
+      "titleEs": "Ariana — Aries, el primer signo y las derivaciones",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: ariana / Áries — 1.º signo (lat. ariēs); ≠ horóscopo; ≠ ariano racial; guia Astrologia.",
+      "whyEn": "Words: ariana / Aries — 1st sign (Lat. ariēs); ≠ horoscope; Astrology hub.",
+      "whyEs": "Palabras: ariana / Áries — 1.º signo; ≠ horóscopo; hub Astrología.",
+      "suggestedSlug": "inspecao-palavra-ariana",
+      "doneHref": "/posts/post-inspecao-palavra-ariana.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/ariano",
+        "https://en.wiktionary.org/wiki/aries#Latin",
+        "/guia/astrologia.html",
+        "/posts/post-inspecao-palavra-gemeos.html"
+      ],
+      "notes": "Cap. 324 — primeiro signo; página /guia/astrologia.html"
     }
   ]
 }
