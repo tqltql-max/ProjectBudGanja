@@ -9595,6 +9595,25 @@
     "seriesLabel": "22 · vinte e dois · s2"
   },
   {
+    "title": "Inspeção: Incineradora — o objecto que reduz a cinza",
+    "titleEn": "Inspection: Incineradora — the object that reduces to ash",
+    "titleEs": "Inspección: Incineradora — el objeto que reduce a ceniza",
+    "excerpt": "Objecto: «incineradora» (pedido Inceneradora → canónica; in- + cinis + -dora) — forno que faz cinza; ≠ cinzeiro ≠ fogueira ≠ away; Valeu !!!",
+    "excerptEn": "Object: “incineradora” (requested Inceneradora → canonical; in- + cinis + -dora) — furnace that makes ash; ≠ ashtray ≠ bonfire ≠ away; Valeu !!!",
+    "excerptEs": "Objeto: «incineradora» (pedido Inceneradora → canónica; in- + cinis + -dora) — horno que hace ceniza; ≠ cenicero ≠ hogera ≠ away; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-incineradora",
+    "url": "/posts/post-inspecao-palavra-incineradora.html",
+    "date": "2026-08-24T18:00:00.000Z",
+    "filename": "posts/post-inspecao-palavra-incineradora.html",
+    "coverImage": "/imagens/inspecoes/incineradora-objeto-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 310,
+    "seriesLabel": "Incineradora · objecto"
+  },
+  {
     "title": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
     "titleEn": "Inspection: Eletrizante — charge, BR hype and Valeu !!!",
     "titleEs": "Inspección: Eletrizante — carga, hype BR y ¡Valeu !!!",

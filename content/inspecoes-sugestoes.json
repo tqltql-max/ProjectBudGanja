@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:29:41.460Z",
+  "updatedAt": "2026-08-24T11:29:59.988Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4587,6 +4587,34 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 93 — grafia canónica cinzeiro (pedido Cinzerio)."
+    },
+    {
+      "id": "objeto-incineradora",
+      "title": "Incineradora — o objecto que reduz a cinza",
+      "titleEn": "Incineradora — the object that reduces to ash",
+      "titleEs": "Incineradora — el objeto que reduce a ceniza",
+      "tipo": "objeto",
+      "priority": 2,
+      "status": "feita",
+      "why": "Objecto: incineradora (pedido Inceneradora → canónica; in- + cinis + -dora) — forno/usina; ≠ cinzeiro ≠ fogueira ≠ away.",
+      "whyEn": "Object: incineradora (requested Inceneradora → canonical; in- + cinis + -dora) — furnace/plant; ≠ ashtray ≠ bonfire ≠ away.",
+      "whyEs": "Objeto: incineradora (pedido Inceneradora → canónica; in- + cinis + -dora) — horno/planta; ≠ cenicero ≠ hogera ≠ away.",
+      "suggestedSlug": "inspecao-palavra-incineradora",
+      "doneHref": "/posts/post-inspecao-palavra-incineradora.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-incineradora.html",
+        "https://pt.wiktionary.org/wiki/incinerar",
+        "https://en.wiktionary.org/wiki/cinis#Latin",
+        "https://pt.wikipedia.org/wiki/Incinera%C3%A7%C3%A3o",
+        "/posts/post-inspecao-palavra-cinzeiro.html",
+        "/posts/post-inspecao-palavra-fogo.html",
+        "/posts/post-inspecao-palavra-extintor.html",
+        "/posts/post-inspecao-arte-a-historia-das-coisas.html",
+        "/objetos/",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 310 — objecto; grafia canónica incineradora (pedido Inceneradora)."
     },
     {
       "id": "palavra-objetos",

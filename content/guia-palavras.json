@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:29:41.479Z",
+  "updatedAt": "2026-08-24T11:30:00.010Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2156,6 +2156,22 @@
       "curiositiesEn": "The lab links the name to fire and risk: the end of fire asks for a right place — leftover craft, not a cigarette apology.",
       "historyEs": "Cenicero / cinzeiro junta ceniza (lat. cinis) al sufijo -eiro de recipiente. El vocablo nombra el objeto que guarda la ceniza del humo, distinto del montón informal.",
       "curiositiesEs": "El laboratorio liga el nombre a fuego y riesgo: el fin del fuego pide sitio cierto — oficio de resto, no apología de cigarro."
+    },
+    {
+      "id": "incineradora",
+      "word": "incineradora",
+      "simple": "In- + cinis + -dora — forno/usina que reduz a cinza. Pedido Inceneradora → canónica. ≠ cinzeiro ≠ fogueira ≠ away. Valeu !!!",
+      "simpleEn": "In- + cinis + -dora — furnace/plant that reduces to ash. Requested Inceneradora → canonical. ≠ ashtray ≠ bonfire ≠ away. Valeu !!!",
+      "simpleEs": "In- + cinis + -dora — horno/planta que reduce a ceniza. Pedido Inceneradora → canónica. ≠ cenicero ≠ hogera ≠ away. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-incineradora.html",
+      "history": "Incineradora vem de incinerar, latim incinerāre (reduzir a cinza), de in- + cinis, cineris — a mesma cinza do cinzeiro. O feminino puxa a usina; o masculino incinerador nomeia a máquina. Pedido oral Inceneradora (e) → canónica com i.",
+      "curiosities": "O cinzeiro guarda a cinza; a incineradora fabrica-a à escala da cidade. «Away» é história: vira cinza e gás. Cinza industrial ≠ adubo automático. Fogueira e crematório são outros objectos.",
+      "historyEn": "Incineradora comes from incinerar, Latin incinerāre (reduce to ash), from in- + cinis, cineris — the same ash as cinzeiro. The feminine often names the plant; masculine incinerador names the machine. Spoken Inceneradora (e) → canonical with i.",
+      "curiositiesEn": "The ashtray holds ash; the incinerator makes it at city scale. “Away” is a story: it becomes ash and gas. Industrial ash ≠ automatic fertilizer. Bonfire and crematorium are other objects.",
+      "historyEs": "Incineradora viene de incinerar, latín incinerāre (reducir a ceniza), de in- + cinis, cineris — la misma ceniza del cinzeiro. El femenino tira a la planta; el masculino nombra la máquina. Pedido Inceneradora (e) → canónica con i.",
+      "curiositiesEs": "El cenicero guarda la ceniza; la incineradora la fabrica a escala de ciudad. «Away» es historia: vira ceniza y gas. Ceniza industrial ≠ abono automático. Hogera y crematorio son otros objetos."
     },
     {
       "id": "clonadora",

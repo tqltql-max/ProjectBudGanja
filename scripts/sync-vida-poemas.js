@@ -200,6 +200,11 @@ const {
   poemEs: poemDangerEs
 } = require('../lib/danger-inspecao-post.js');
 const {
+  poemPt: poemVinteEDoisPt,
+  poemEn: poemVinteEDoisEn,
+  poemEs: poemVinteEDoisEs
+} = require('../lib/vinte-e-dois-inspecao-post.js');
+const {
   poemPt: poemDontShowAgainPt,
   poemEn: poemDontShowAgainEn,
   poemEs: poemDontShowAgainEs
@@ -252,6 +257,27 @@ const doc = {
       bodyEs: poemDangerEs(),
       inspectionHref: '/posts/post-inspecao-palavra-danger.html',
       tags: ['poesia', 'vida', 'danger', 'perigo', 'relação']
+    },
+    {
+      id: 'vinte-e-dois',
+      slug: 'vinte-e-dois',
+      title: 'Vinte e dois',
+      titleEn: 'Twenty-two',
+      titleEs: 'Veintidós',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja — 22 em pé, invertido vira s2; o peito do chat sem fundir o órgão; Valeu !!!',
+      teaserEn:
+        'BudGanja echo — 22 standing, inverted it becomes s2; the chat’s chest without fusing the organ; Valeu !!!',
+      teaserEs:
+        'Eco BudGanja — 22 de pie, invertido vira s2; el pecho del chat sin fundir el órgano; ¡Valeu !!!',
+      body: poemVinteEDoisPt(),
+      bodyEn: poemVinteEDoisEn(),
+      bodyEs: poemVinteEDoisEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-vinte-e-dois.html',
+      tags: ['poesia', 'vida', '22', 'vinte e dois', 's2', 'coração']
     },
     {
       id: 'fantasia',
