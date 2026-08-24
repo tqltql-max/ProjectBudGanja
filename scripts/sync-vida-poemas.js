@@ -244,6 +244,11 @@ const {
   poemEn: poemMapaEn,
   poemEs: poemMapaEs
 } = require('../lib/mapa-inspecao-post.js');
+const {
+  poemPt: poemCiladaPt,
+  poemEn: poemCiladaEn,
+  poemEs: poemCiladaEs
+} = require('../lib/cilada-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -251,6 +256,24 @@ const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
 const doc = {
   updatedAt: new Date().toISOString(),
   poems: [
+    {
+      id: 'cilada',
+      slug: 'cilada',
+      title: 'Cilada',
+      titleEn: 'Cilada',
+      titleEs: 'Cilada',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser: 'Eco BudGanja — cilada espera; desastre cai; ≠ celada; Valeu !!!',
+      teaserEn: 'BudGanja echo — the trap waits; disaster falls; ≠ helmet; Valeu !!!',
+      teaserEs: 'Eco BudGanja — la cilada espera; el desastre cae; ≠ celada; ¡Valeu !!!',
+      body: poemCiladaPt(),
+      bodyEn: poemCiladaEn(),
+      bodyEs: poemCiladaEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-cilada.html',
+      tags: ['poesia', 'vida', 'cilada', 'armadilha', 'tocaia']
+    },
     {
       id: 'mapa',
       slug: 'mapa',

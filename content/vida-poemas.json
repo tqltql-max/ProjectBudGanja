@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-08-24T13:42:39.344Z",
+  "updatedAt": "2026-08-24T14:18:56.827Z",
   "poems": [
+    {
+      "id": "cilada",
+      "slug": "cilada",
+      "title": "Cilada",
+      "titleEn": "Cilada",
+      "titleEs": "Cilada",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — cilada espera; desastre cai; ≠ celada; Valeu !!!",
+      "teaserEn": "BudGanja echo — the trap waits; disaster falls; ≠ helmet; Valeu !!!",
+      "teaserEs": "Eco BudGanja — la cilada espera; el desastre cae; ≠ celada; ¡Valeu !!!",
+      "body": "Cilada.\nNão é o desastre.\nO desastre cai.\nA cilada espera.\n\nCēlāta:\no que se esconde\npara apanhar.\n\nCelada cobre o rosto.\nCilada cobre a intenção.\nA mesma raiz.\nDois ofícios.\n\nO risco mapeia o visível.\nA cilada vive no isco.\n\nNomear a armadilha\nnão é cair nela.\nÉ o primeiro gesto.\n\nValeu !!!\nver o isco\nantes da boca.",
+      "bodyEn": "Cilada.\nNot disaster.\nDisaster falls.\nThe trap waits.\n\nCēlāta:\nwhat is hidden\nin order to catch.\n\nCelada covers the face.\nCilada covers the intent.\nSame root.\nTwo crafts.\n\nRisk maps the visible.\nThe trap lives in the bait.\n\nNaming the snare\nis not falling into it.\nIt is the first gesture.\n\nValeu !!!\nsee the bait\nbefore the mouth.",
+      "bodyEs": "Cilada.\nNo es el desastre.\nEl desastre cae.\nLa celada espera.\n\nCēlāta:\nlo que se esconde\npara atrapar.\n\nCelada cubre el rostro.\nCilada cubre la intención.\nLa misma raíz.\nDos oficios.\n\nEl riesgo mapea lo visible.\nLa cilada vive en el cebo.\n\nNombrar la trampa\nno es caer en ella.\nEs el primer gesto.\n\n¡Valeu !!!\nver el cebo\nantes de la boca.",
+      "inspectionHref": "/posts/post-inspecao-palavra-cilada.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "cilada",
+        "armadilha",
+        "tocaia"
+      ]
+    },
     {
       "id": "mapa",
       "slug": "mapa",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T13:40:15.587Z",
+  "updatedAt": "2026-08-24T14:18:32.039Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4686,6 +4686,35 @@
       "notes": "Cap. 93 — grafia canónica cinzeiro (pedido Cinzerio)."
     },
     {
+      "id": "palavra-cilada",
+      "title": "Cilada — cēlāta, o que se esconde para apanhar",
+      "titleEn": "Cilada — cēlāta, what hides in order to catch",
+      "titleEs": "Cilada — cēlāta, lo que se esconde para atrapar",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: Cilada ← lat. cēlāta / cēlāre — tocaia × ardil × situação × ofício; ≠ celada ≠ desastre ≠ risco.",
+      "whyEn": "Words: Cilada ← Lat. cēlāta / cēlāre — ambush × setup × situation × craft; ≠ helmet ≠ disaster ≠ risk.",
+      "whyEs": "Palabras: Cilada ← lat. cēlāta / cēlāre — tocaia × ardid × situación × oficio; ≠ celada ≠ desastre ≠ riesgo.",
+      "suggestedSlug": "inspecao-palavra-cilada",
+      "doneHref": "/posts/post-inspecao-palavra-cilada.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-cilada.html",
+        "https://pt.wiktionary.org/wiki/cilada",
+        "https://en.wiktionary.org/wiki/cilada",
+        "https://pt.wiktionary.org/wiki/celada",
+        "https://en.wiktionary.org/wiki/celo#Latin",
+        "https://pt.wikipedia.org/wiki/Cilada_%28programa_de_televis%C3%A3o%29",
+        "/posts/post-inspecao-palavra-risco.html",
+        "/posts/post-inspecao-palavra-desastre.html",
+        "/posts/post-inspecao-palavra-danger.html",
+        "/posts/post-inspecao-palavra-verdade.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 332 — ficha-mãe da linha Anti-armadilha; celada/ciliada/selada cortadas; sem manual de golpe."
+    },
+    {
       "id": "objeto-incineradora",
       "title": "Incineradora — o objecto que reduz a cinza",
       "titleEn": "Incineradora — the object that reduces to ash",
@@ -4757,6 +4786,30 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 326 — lema do catálogo Tecnologia."
+    },
+    {
+      "id": "palavra-profanar",
+      "title": "Profanar — umbral do templo; professor, propagação, programação",
+      "titleEn": "Profanar — temple threshold; professor, propagation, programming",
+      "titleEs": "Profanar — umbral del templo; profesor, propagación, programación",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: profanar (lat. pro- + fānum) — fora do templo × violar; professor é outra raiz; propagação = estaca; programação = grámma na sala tecnologia; Faça o seu melhor · Valeu !!!",
+      "whyEn": "Words: profanar (Lat. pro- + fānum); professor is another root; programming links to tecnologia.",
+      "whyEs": "Palabras: profanar (lat. pro- + fānum); professor es otra raíz; programação liga a tecnologia.",
+      "suggestedSlug": "inspecao-palavra-profanar",
+      "doneHref": "/posts/post-inspecao-palavra-profanar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/profanar",
+        "/posts/post-inspecao-palavra-tecnologia.html",
+        "/posts/post-inspecao-palavra-script.html",
+        "/posts/post-inspecao-expressao-faca-o-melhor.html",
+        "/posts/post-inspecao-palavra-valeu.html",
+        "/tecnologia/"
+      ],
+      "notes": "Cap. 330 — cluster pro-; fānum ≠ fatērī ≠ pangere ≠ grámma."
     },
     {
       "id": "palavra-hd-escravo",
@@ -11272,6 +11325,75 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 136 — derivação slang; não misturar lei e termómetro."
+    },
+    {
+      "id": "arte-back-door-man",
+      "title": "Back Door Man — The Doors, Jim e a porta de trás",
+      "titleEn": "Back Door Man — The Doors, Jim and the back door",
+      "titleEs": "Back Door Man — The Doors, Jim y la puerta de atrás",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canção: Dixon/Wolf 1960 → The Doors 1967 (Jim); porta de trás × maçaneta.",
+      "whyEn": "Song: Dixon/Wolf 1960 → The Doors 1967 (Jim); back door × doorknob.",
+      "whyEs": "Canción: Dixon/Wolf 1960 → The Doors 1967 (Jim); puerta de atrás × pomo.",
+      "suggestedSlug": "inspecao-arte-back-door-man",
+      "doneHref": "/posts/post-inspecao-arte-back-door-man.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-back-door-man.html",
+        "https://www.youtube.com/watch?v=WTwNzhLvRGs",
+        "https://en.wikipedia.org/wiki/Back_Door_Man",
+        "/posts/post-inspecao-palavra-macaneta.html",
+        "/radio/"
+      ],
+      "notes": "Obra primeiro (Dixon 1960; Doors 1967); Jim = voz, não biografia; eco poético ≠ letra."
+    },
+    {
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "suggestedSlug": "inspecao-expressao-baixar-a-bola",
+      "doneHref": "/posts/post-inspecao-expressao-baixar-a-bola.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/baixar",
+        "https://pt.wiktionary.org/wiki/bola",
+        "/posts/post-inspecao-expressao-jogar-areia.html",
+        "/posts/post-inspecao-palavra-respeito.html",
+        "/posts/post-inspecao-palavra-gesto.html"
+      ],
+      "notes": "Cap. 285 — pátio × altitude; irmã de jogar areia.",
+      "title": "Baixar a bola — o orgulho que desce ao chão",
+      "titleEn": "Baixar a bola — pride that comes down to the ground",
+      "titleEs": "Baixar a bola — el orgullo que baja al suelo",
+      "why": "Expressões: baixar a bola — descer o orgulho / o ritmo; ≠ humilhar ≠ bola pra frente ≠ pisar na bola; irmã de jogar areia; Valeu !!!",
+      "whyEn": "Sayings: baixar a bola — lower the pride / the pace; ≠ humiliation ≠ ball-forward; sister of jogar areia; Valeu !!!",
+      "whyEs": "Dichos: baixar a bola — bajar el orgullo / el ritmo; ≠ humillar ≠ bola pra frente; hermana de jogar areia; ¡Valeu !!!",
+      "id": "expressao-baixar-a-bola"
+    },
+    {
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "suggestedSlug": "inspecao-expressao-jogar-areia",
+      "doneHref": "/posts/post-inspecao-expressao-jogar-areia.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/jogar",
+        "https://pt.wiktionary.org/wiki/areia",
+        "/posts/post-inspecao-expressao-baixar-a-bola.html",
+        "/posts/post-inspecao-palavra-respeito.html",
+        "/posts/post-inspecao-palavra-risco.html"
+      ],
+      "notes": "Cap. 286 — pátio × atrito; irmã de baixar a bola.",
+      "title": "Jogar areia — o grão no jogo alheio",
+      "titleEn": "Jogar areia — grit in someone else’s game",
+      "titleEs": "Jogar areia — el grano en el juego ajeno",
+      "why": "Expressões: jogar areia — atrapalhar o plano alheio; ≠ sabotagem-manual ≠ ventilador ≠ praia; irmã de baixar a bola; Valeu !!!",
+      "whyEn": "Sayings: jogar areia — hinder someone else’s plan; ≠ sabotage how-to ≠ fan ≠ beach; sister of baixar a bola; Valeu !!!",
+      "whyEs": "Dichos: jogar areia — estorbar el plan ajeno; ≠ manual de sabotaje ≠ ventilador ≠ playa; hermana de baixar a bola; ¡Valeu !!!",
+      "id": "expressao-jogar-areia"
     }
   ]
 }
