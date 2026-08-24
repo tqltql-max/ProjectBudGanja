@@ -134,6 +134,10 @@
     var canvas = document.querySelector('.inverno-snow');
     var hero = document.querySelector('.inverno-hero');
     if (!canvas || !hero) return;
+    if (document.getElementById('site-snow')) {
+      canvas.hidden = true;
+      return;
+    }
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       canvas.remove();
       return;

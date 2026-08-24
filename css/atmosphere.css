@@ -134,6 +134,25 @@ body:is(
     animation: none;
 }
 
+.site-snow {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    pointer-events: none;
+}
+
+@media print {
+    .site-snow {
+        display: none !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-snow {
+        display: none !important;
+    }
+}
+
 @media (max-width: 700px), (prefers-reduced-motion: reduce) {
     body::before,
     body::after,

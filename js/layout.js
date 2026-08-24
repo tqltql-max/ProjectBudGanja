@@ -1,7 +1,20 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '353';
+const ASSET_V = '355';
 const HOME = '/inverno/';
+
+(function injectSiteSnowEarly() {
+  function add() {
+    if (document.querySelector('script[src*="site-snow.js"]')) return;
+    var s = document.createElement('script');
+    s.id = 'site-snow-js';
+    s.src = '/js/site-snow.js?v=' + ASSET_V;
+    (document.body || document.documentElement).appendChild(s);
+  }
+  if (document.querySelector('script[src*="site-snow.js"]')) return;
+  if (document.body) add();
+  else document.addEventListener('DOMContentLoaded', add);
+})();
 
 (function applyStoredTheme() {
   try {
