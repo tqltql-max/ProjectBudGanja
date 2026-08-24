@@ -209,6 +209,11 @@ const {
   poemEn: poemDontShowAgainEn,
   poemEs: poemDontShowAgainEs
 } = require('../lib/dont-show-again-inspecao-post.js');
+const {
+  poemPt: poemRamelaPt,
+  poemEn: poemRamelaEn,
+  poemEs: poemRamelaEs
+} = require('../lib/ramela-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -216,6 +221,24 @@ const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
 const doc = {
   updatedAt: new Date().toISOString(),
   poems: [
+    {
+      id: 'ramela',
+      slug: 'ramela',
+      title: 'Ramela',
+      titleEn: 'Ramela',
+      titleEs: 'Ramela',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser: 'Eco BudGanja — ramela no canto do olho; ramelento ≠ remo lento; Valeu !!!',
+      teaserEn: 'BudGanja echo — ramela in the eye corner; ramelento ≠ remo lento; Valeu !!!',
+      teaserEs: 'Eco BudGanja — ramela en el rincón del ojo; ramelento ≠ remo lento; ¡Valeu !!!',
+      body: poemRamelaPt(),
+      bodyEn: poemRamelaEn(),
+      bodyEs: poemRamelaEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-ramela.html',
+      tags: ['poesia', 'vida', 'ramela', 'ramelento', 'remo']
+    },
     {
       id: 'dois-sao-mais-fortes',
       slug: 'dois-sao-mais-fortes',

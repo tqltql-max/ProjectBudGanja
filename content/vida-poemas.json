@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-08-24T11:38:30.004Z",
+  "updatedAt": "2026-08-24T11:43:41.357Z",
   "poems": [
+    {
+      "id": "ramela",
+      "slug": "ramela",
+      "title": "Ramela",
+      "titleEn": "Ramela",
+      "titleEs": "Ramela",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — ramela no canto do olho; ramelento ≠ remo lento; Valeu !!!",
+      "teaserEn": "BudGanja echo — ramela in the eye corner; ramelento ≠ remo lento; Valeu !!!",
+      "teaserEs": "Eco BudGanja — ramela en el rincón del ojo; ramelento ≠ remo lento; ¡Valeu !!!",
+      "body": "Ramela.\nNão é remo pequeno.\nÉ o canto do olho\ndepois do sono.\n\nRamelento.\nA orelha ouve remo lento.\nO étimo corta:\nramela mais ento.\n\nRemo é a pá.\nLento é lentus.\nQuem acorda com ramela\nrema devagar\nsem ser remo.\n\nValeu !!!\nlimpar o canto\nsem fundir as árvores.",
+      "bodyEn": "Ramela.\nIt is not a small oar.\nIt is the corner of the eye\nafter sleep.\n\nRamelento.\nThe ear hears slow oar.\nThe etymon cuts:\nramela plus -ento.\n\nRemo is the blade.\nLento is lentus.\nWhoever wakes with ramela\nrows slowly\nwithout being an oar.\n\nValeu !!!\nclear the corner\nwithout fusing the trees.",
+      "bodyEs": "Ramela.\nNo es un remo pequeño.\nEs el rincón del ojo\ndespués del sueño.\n\nRamelento.\nEl oído oye remo lento.\nEl étimo corta:\nramela más ento.\n\nRemo es la pala.\nLento es lentus.\nQuien despierta con ramela\nrema despacio\nsin ser remo.\n\n¡Valeu !!!\nlimpiar el rincón\nsin fundir los árboles.",
+      "inspectionHref": "/posts/post-inspecao-palavra-ramela.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "ramela",
+        "ramelento",
+        "remo"
+      ]
+    },
     {
       "id": "dois-sao-mais-fortes",
       "slug": "dois-sao-mais-fortes",
