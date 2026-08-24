@@ -1061,7 +1061,7 @@
     "cadernosEngenharia": {
       "eyebrow": "Training · Engineering",
       "title": "Engineering notebooks",
-      "subtitle": "One notebook per subject — do not mix Chemistry with Math. Cornell method in every class. Suggested grid: ESAPP Agronomy. Notes stay on this device.",
+      "subtitle": "One notebook per subject — do not mix Chemistry with Math. Cornell method in every class. Suggested grid: ESAPP Agronomy. Notes stay in your account, yours alone.",
       "docTitle": "Engineering notebooks | Inspetor BudGanja",
       "noteTitle": "Study notebook.",
       "noteBody": " Not official ESAPP material and not a substitute for class. Confirm the syllabus on the school site. No institutional affiliation.",
@@ -1090,7 +1090,9 @@
       "addCustom": "Create notebook",
       "closePicker": "Close",
       "labStudiesTitle": "Lab studies",
-      "labStudiesLead": "Cornell model lessons in the subject notebook — you can edit them. First study: Cell Biology · Angiosperms."
+      "labStudiesLead": "Cornell model lessons in the subject notebook — you can edit them. First study: Cell Biology · Angiosperms.",
+      "loginLead": "The study notebook is personal — one per account. Sign in to open yours.",
+      "loginCta": "Sign in and open my notebook"
     },
     "origami": {
       "eyebrow": "Craft · paper",
@@ -1376,7 +1378,7 @@
       "poemKicker": "Lab poem",
       "poemTitle": "Good Morning, Winter",
       "poemLead": "A BudGanja verse in dialogue with the work — not text from the book.",
-      "poemBody": "Good morning, Winter.\nWe do not ask for more sun —\nwe only ask to stay\nwhen the ice holds the boat\nand the chest still fits in a hand.\n\nThe seed does not shout.\nNeither does the seedling.\nIt only asks for time:\nweak light, right water,\na bucket that does not judge the nausea.\n\nThey say winter is an end.\nOld lie.\nWinter is a season —\na phase when you do not force the flower,\na phase when you inspect the root.\n\nTamara already knew on the ice:\nleave, stay, write.\nIn this new universe of ours\nwe learn to greet the hard season —\nnot to deny the fear,\nbut so the seedling\ndoes not pass alone.\n\nque não arrisca não petisca",
+      "poemBody": "Good morning, Winter.\nWe do not ask for more sun —\nwe only ask to stay\nwhen the ice holds the boat\nand the chest still fits in a hand.\n\nThe seed does not shout.\nNeither does the seedling.\nIt only asks for time:\nweak light, right water,\na bucket that does not judge the nausea.\n\nThey say winter is an end.\nOld lie.\nWinter is a season —\na phase when you do not force the flower,\na phase when you inspect the root.\n\nTamara already knew on the ice:\nleave, stay, write.\nIn this new universe of ours\nwe learn to greet the hard season —\nnot to deny the fear,\nbut so the seedling\ndoes not pass alone.\n\nValeu !!!",
       "poemVida": "Read on Vida",
       "mapKicker": "Map",
       "mapTitle": "In the lab",
@@ -1405,7 +1407,7 @@
       "alsoP2": "The engineer-architect reads the city in the <a href=\"/biblioteca/cadernos/\">notebooks</a>. He plays the session. Credit the person: Aleff. Live on <a href=\"https://kick.com/paulinholokobr\">Kick</a>.",
       "alsoNoteKicker": "In the lab",
       "alsoNoteTitle": "My hero of the craft",
-      "alsoNoteP1": "<a href=\"/posts/post-inspecao-palavra-gratidao.html\">Thank you</a>. The merit is his. The map is ours. <a href=\"/posts/post-inspecao-expressao-quem-nao-arrisca-nao-petisca.html\">que não arrisca não petisca</a>",
+      "alsoNoteP1": "<a href=\"/posts/post-inspecao-palavra-gratidao.html\">Thank you</a>. The merit is his. The map is ours. <a href=\"/posts/post-inspecao-palavra-valeu.html\">Valeu !!!</a>",
       "mapGames": "Games",
       "mapGamesText": "Live on Kick · archive on YouTube.",
       "mapAleffText": "Hero of the craft, not a pedestal.",

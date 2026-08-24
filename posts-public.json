@@ -9405,12 +9405,12 @@
     "seriesLabel": "Letra X · xis"
   },
   {
-    "title": "Inspeção: que não arrisca não petisca — o ditado do bocado",
-    "titleEn": "Inspection: que não arrisca não petisca — the nibble proverb",
-    "titleEs": "Inspección: que não arrisca não petisca — el dicho del bocado",
-    "excerpt": "Expressões: que não arrisca não petisca — voz viva; âncora quem não arrisca…; index no lugar de Valeu !!!; ≠ aposta; Valeu !!!",
-    "excerptEn": "Sayings: que não arrisca não petisca — living voice; anchor quem não arrisca…; index instead of Valeu !!!; ≠ gamble; Valeu !!!",
-    "excerptEs": "Dichos: que não arrisca não petisca — voz viva; ancla quem não arrisca…; index en lugar de Valeu !!!; ≠ apuesta; ¡Valeu !!!",
+    "title": "Inspeção: quem não arrisca não petisca — o ditado do bocado",
+    "titleEn": "Inspection: quem não arrisca não petisca — the nibble proverb",
+    "titleEs": "Inspección: quem não arrisca não petisca — el dicho del bocado",
+    "excerpt": "Expressões: quem não arrisca não petisca — forma correcta; voz viva que…; ≠ aposta; Valeu !!! na index",
+    "excerptEn": "Sayings: quem não arrisca não petisca — correct form; spoken que…; ≠ gamble; Valeu !!! on the index",
+    "excerptEs": "Dichos: quem não arrisca não petisca — forma correcta; viva que…; ≠ apuesta; ¡Valeu !!! en la index",
     "hasBodyEn": true,
     "hasBodyEs": true,
     "slug": "inspecao-expressao-quem-nao-arrisca-nao-petisca",
@@ -9421,7 +9421,7 @@
     "category": "inspecao",
     "series": "expressoes-ditados",
     "seriesOrder": 283,
-    "seriesLabel": "que não arrisca não petisca · expressão"
+    "seriesLabel": "quem não arrisca não petisca · expressão"
   },
   {
     "title": "Inspeção: DSL — a sigla do cano que fica",

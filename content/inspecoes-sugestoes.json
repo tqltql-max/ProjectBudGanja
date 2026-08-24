@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T21:51:09.940Z",
+  "updatedAt": "2026-08-24T23:14:15.786Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -11396,15 +11396,15 @@
     },
     {
       "id": "expressao-quem-nao-arrisca-nao-petisca",
-      "title": "que não arrisca não petisca — o ditado do bocado",
-      "titleEn": "que não arrisca não petisca — the nibble proverb",
-      "titleEs": "que não arrisca não petisca — el dicho del bocado",
+      "title": "quem não arrisca não petisca — o ditado do bocado",
+      "titleEn": "quem não arrisca não petisca — the nibble proverb",
+      "titleEs": "quem não arrisca não petisca — el dicho del bocado",
       "tipo": "expressao",
       "priority": 1,
       "status": "feita",
-      "why": "Expressões: que não arrisca não petisca — voz viva / index no lugar de Valeu !!!; âncora quem…; ≠ aposta; Valeu !!!",
-      "whyEn": "Sayings: que não arrisca não petisca — living voice / index instead of Valeu !!!; anchor quem…; ≠ gamble; Valeu !!!",
-      "whyEs": "Dichos: que não arrisca não petisca — voz viva / index en lugar de Valeu !!!; ancla quem…; ≠ apuesta; ¡Valeu !!!",
+      "why": "Expressões: quem não arrisca não petisca — forma correcta; voz viva que…; ≠ aposta; Valeu !!! na index",
+      "whyEn": "Sayings: quem não arrisca não petisca — correct form; spoken que…; ≠ gamble; Valeu !!! on the index",
+      "whyEs": "Dichos: quem não arrisca não petisca — forma correcta; viva que…; ≠ apuesta; ¡Valeu !!! en la index",
       "suggestedSlug": "inspecao-expressao-quem-nao-arrisca-nao-petisca",
       "doneHref": "/posts/post-inspecao-expressao-quem-nao-arrisca-nao-petisca.html",
       "seriesHint": "expressoes-ditados",
@@ -11416,7 +11416,7 @@
         "/posts/post-inspecao-expressao-faca-o-melhor.html",
         "/"
       ],
-      "notes": "Cap. 283 — mantra visível da index; Valeu !!! permanece fecho das fichas."
+      "notes": "Cap. 283 — forma correcta quem; Valeu !!! volta à index."
     },
     {
       "id": "palavra-ariana",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T22:53:14.862Z",
+  "updatedAt": "2026-08-24T23:14:15.786Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -10181,19 +10181,19 @@
     },
     {
       "id": "quem-nao-arrisca-nao-petisca",
-      "word": "que não arrisca não petisca",
+      "word": "quem não arrisca não petisca",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-expressao-quem-nao-arrisca-nao-petisca.html",
-      "simple": "Ditado BR — voz viva que não arrisca não petisca; âncora quem…; index no lugar de Valeu !!!; ≠ aposta; Valeu !!! fica no fecho",
-      "simpleEn": "BR proverb — living que não arrisca não petisca; anchor quem…; index instead of Valeu !!!; ≠ gamble; Valeu !!! stays as close",
-      "simpleEs": "Dicho BR — voz viva que não arrisca não petisca; ancla quem…; index en lugar de Valeu !!!; ≠ apuesta; Valeu !!! sigue de cierre",
-      "history": "Pedido de campo 2026-08-24: expressão que não arrisca não petisca; e mudar Valeu !!! da página index para este ditado. Forma plena quem; boca de campo que.",
-      "curiosities": "Petiscar = bocado, não banquete. Arriscar = mapa, não salto vazio. Valeu !!! não é apagado — sai da index visível e fica no fecho das fichas.",
-      "historyEn": "Field request 2026-08-24: saying que não arrisca não petisca; and swap Valeu !!! on the index for this ditado. Full form quem; field mouth que.",
-      "curiositiesEn": "Petiscar = a nibble, not a feast. Arriscar = a map, not an empty leap. Valeu !!! is not erased — it leaves the visible index and stays as the sheet close.",
-      "historyEs": "Pedido de campo 2026-08-24: dicho que não arrisca não petisca; y cambiar Valeu !!! de la index por este dicho. Forma plena quem; boca de campo que.",
-      "curiositiesEs": "Petiscar = bocado, no banquete. Arriscar = mapa, no salto vacío. Valeu !!! no se borra — sale de la index visible y sigue como cierre de ficha."
+      "simple": "Ditado BR — forma correcta quem não arrisca não petisca; voz viva que…; ≠ aposta; Valeu !!! fica na index",
+      "simpleEn": "BR proverb — correct form quem não arrisca não petisca; spoken que…; ≠ gamble; Valeu !!! stays on the index",
+      "simpleEs": "Dicho BR — forma correcta quem não arrisca não petisca; viva que…; ≠ apuesta; Valeu !!! sigue en la index",
+      "history": "Pedido de campo: expressão correcta quem não arrisca não petisca. Valeu !!! volta à index; o ditado fica na ficha.",
+      "curiosities": "Petiscar = bocado, não banquete. Arriscar = mapa, não salto vazio. A boca corta o m (que); a ficha ancora quem.",
+      "historyEn": "Field: the correct saying is quem não arrisca não petisca. Valeu !!! returns to the index; the proverb stays on its sheet.",
+      "curiositiesEn": "Petiscar = a nibble, not a feast. Arriscar = a map, not an empty leap. The mouth drops the m (que); the sheet keeps quem.",
+      "historyEs": "Pedido de campo: la forma correcta es quem não arrisca não petisca. Valeu !!! vuelve a la index; el dicho queda en la ficha.",
+      "curiositiesEs": "Petiscar = bocado, no banquete. Arriscar = mapa, no salto vacío. La boca corta la m (que); la ficha ancla quem."
     },
     {
       "id": "partiu",

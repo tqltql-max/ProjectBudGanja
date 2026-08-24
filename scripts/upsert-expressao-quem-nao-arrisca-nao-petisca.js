@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Injeta a expressão «que não arrisca não petisca».
+ * Injeta a expressão «quem não arrisca não petisca».
  * Uso: node scripts/upsert-expressao-quem-nao-arrisca-nao-petisca.js
  */
 
@@ -47,10 +47,11 @@ function stampFiles(post) {
 
 function writeHtml(post) {
   const { buildPostHtml, normalizePosts } = require('../lib/posts-service.js');
+  const { writeFileRetrySync } = require('../lib/fs-write-retry.js');
   const [normalized] = normalizePosts([post]);
   const out = path.join(ROOT, normalized.filename);
   fs.mkdirSync(path.dirname(out), { recursive: true });
-  fs.writeFileSync(out, buildPostHtml(normalized), 'utf8');
+  writeFileRetrySync(out, buildPostHtml(normalized), 'utf8');
   console.log('HTML escrito', normalized.filename);
 }
 
@@ -102,26 +103,28 @@ function insertAfterKey(gloss, key, block) {
 
 function patchGlossary(gloss) {
   const mainLine =
-    '    "que não arrisca não petisca": { tone: "craft", category: "Ditado", mundane: "Provérbio BR — sem risco não há gosto / ganho.", gloss: "Voz viva de quem não arrisca não petisca; index no lugar de Valeu !!!; arriscar × petiscar; ≠ aposta; Valeu !!! fica no fecho", href: "' +
+    '    "quem não arrisca não petisca": { tone: "craft", category: "Ditado", mundane: "Provérbio BR — sem risco não há gosto / ganho.", gloss: "Forma correcta do ditado; voz viva que…; arriscar × petiscar; ≠ aposta; Valeu !!! fica na index", href: "' +
     HREF +
     '", en: "nothing ventured, nothing gained", es: "quien no arriesga no pica", fr: "qui ne risque rien n a rien", it: "chi non risica non rosica", de: "wer nicht wagt, der nicht gewinnt", el: "όποιος δεν ρισκάρει", la: "qui non audet nihil gustat", yo: "ẹni tí kò dánwò", sw: "asiyehatarisha", gez: "ዘኢዴልወ", nl: "wie niet waagt", pl: "kto nie ryzykuje", ru: "кто не рискует", uk: "хто не ризикує", zh: "不入虎穴", ja: "虎穴に入らずんば", ko: "호랑이 굴", ar: "من لا يخاطر", he: "מי שלא מסתכן", hi: "जो जोखिम नहीं लेता", tr: "risk almayan", sv: "den som inte vågar", da: "den der ikke vover", no: "den som ikke våger", fi: "joka ei uskalla", cs: "kdo neriskuje", ro: "cine nu riscă", hu: "aki nem mer", ca: "qui no s arrisca", gl: "quen non arrisca", eu: "ausartzen ez dena", gn: "ojepy\'ỹiva", qu: "mana osasqa", eo: "kiu ne riskas", vi: "không liều", id: "siapa tidak berani", th: "ไม่เสี่ยง", hr: "tko ne riskira", sk: "kto neriskuje", ga: "an té nach dtéann", cy: "pwy na fentro", ha: "wanda bai yi hadari ba", am: "ያልደፈረ", fa: "آن که ریسک نکند", bn: "যে ঝুঁকি নেয় না", zu: "ongazama" },\n';
   const aliases =
-    '    "quem não arrisca não petisca": { gloss: "Forma âncora do ditado — ver que não arrisca não petisca.", href: "' +
+    '    "que não arrisca não petisca": { gloss: "Recorte oral — ver quem não arrisca não petisca.", href: "' +
     HREF +
     '", en: "nothing ventured, nothing gained", es: "quien no arriesga no pica" },\n' +
-    '    petisca: { gloss: "3.ª de petiscar — o bocado do ditado; ver que não arrisca não petisca.", href: "' +
+    '    petisca: { gloss: "3.ª de petiscar — o bocado do ditado; ver quem não arrisca não petisca.", href: "' +
     HREF +
     '", en: "nibbles / tastes", es: "pica / prueba" },\n' +
-    '    arrisca: { gloss: "3.ª de arriscar — o mapa do ditado; ver risco e que não arrisca não petisca.", href: "' +
+    '    arrisca: { gloss: "3.ª de arriscar — o mapa do ditado; ver risco e quem não arrisca não petisca.", href: "' +
     HREF +
     '", en: "risks", es: "arriesga" },\n';
-
-  if (gloss.includes('"que não arrisca não petisca":')) {
-    return gloss;
-  }
-  const afterValeu = insertAfterKey(gloss, 'valeu', mainLine + aliases);
+  const block = mainLine + aliases;
+  const existing = /    "que não arrisca não petisca": \{[\s\S]*?\},\r?\n    "quem não arrisca não petisca": \{[\s\S]*?\},\r?\n    petisca: \{[\s\S]*?\},\r?\n    arrisca: \{[\s\S]*?\},\r?\n/;
+  const existingAlt = /    "quem não arrisca não petisca": \{[\s\S]*?\},\r?\n    "que não arrisca não petisca": \{[\s\S]*?\},\r?\n    petisca: \{[\s\S]*?\},\r?\n    arrisca: \{[\s\S]*?\},\r?\n/;
+  if (existing.test(gloss)) return gloss.replace(existing, block);
+  if (existingAlt.test(gloss)) return gloss.replace(existingAlt, block);
+  if (gloss.includes('"quem não arrisca não petisca": { tone')) return gloss;
+  const afterValeu = insertAfterKey(gloss, 'valeu', block);
   if (afterValeu) return afterValeu;
-  const afterPartiu = insertAfterKey(gloss, 'partiu', mainLine + aliases);
+  const afterPartiu = insertAfterKey(gloss, 'partiu', block);
   if (afterPartiu) return afterPartiu;
   console.warn('Aviso: glossário — inserção após valeu / partiu falhou');
   return gloss;
@@ -133,15 +136,15 @@ function upsertSug(sug, post) {
   const si = items.findIndex((x) => x.id === sugId);
   const entry = {
     id: sugId,
-    title: 'que não arrisca não petisca — o ditado do bocado',
-    titleEn: 'que não arrisca não petisca — the nibble proverb',
-    titleEs: 'que não arrisca não petisca — el dicho del bocado',
+    title: 'quem não arrisca não petisca — o ditado do bocado',
+    titleEn: 'quem não arrisca não petisca — the nibble proverb',
+    titleEs: 'quem não arrisca não petisca — el dicho del bocado',
     tipo: 'expressao',
     priority: 1,
     status: 'feita',
-    why: 'Expressões: que não arrisca não petisca — voz viva / index no lugar de Valeu !!!; âncora quem…; ≠ aposta; Valeu !!!',
-    whyEn: 'Sayings: que não arrisca não petisca — living voice / index instead of Valeu !!!; anchor quem…; ≠ gamble; Valeu !!!',
-    whyEs: 'Dichos: que não arrisca não petisca — voz viva / index en lugar de Valeu !!!; ancla quem…; ≠ apuesta; ¡Valeu !!!',
+    why: 'Expressões: quem não arrisca não petisca — forma correcta; voz viva que…; ≠ aposta; Valeu !!! na index',
+    whyEn: 'Sayings: quem não arrisca não petisca — correct form; spoken que…; ≠ gamble; Valeu !!! on the index',
+    whyEs: 'Dichos: quem não arrisca não petisca — forma correcta; viva que…; ≠ apuesta; ¡Valeu !!! en la index',
     suggestedSlug: post.slug,
     doneHref: HREF,
     seriesHint: 'expressoes-ditados',
@@ -153,7 +156,7 @@ function upsertSug(sug, post) {
       '/posts/post-inspecao-expressao-faca-o-melhor.html',
       '/'
     ],
-    notes: 'Cap. ' + post.seriesOrder + ' — mantra visível da index; Valeu !!! permanece fecho das fichas.'
+    notes: 'Cap. ' + post.seriesOrder + ' — forma correcta quem; Valeu !!! volta à index.'
   };
   if (si >= 0) items[si] = Object.assign({}, items[si], entry);
   else items.push(entry);
@@ -164,28 +167,28 @@ function upsertGuia(guia) {
   const items = Array.isArray(guia.items) ? guia.items : [];
   const entry = {
     id: 'quem-nao-arrisca-nao-petisca',
-    word: 'que não arrisca não petisca',
+    word: 'quem não arrisca não petisca',
     group: 'lexico',
     fromTitle: false,
     href: HREF,
     simple:
-      'Ditado BR — voz viva que não arrisca não petisca; âncora quem…; index no lugar de Valeu !!!; ≠ aposta; Valeu !!! fica no fecho',
+      'Ditado BR — forma correcta quem não arrisca não petisca; voz viva que…; ≠ aposta; Valeu !!! fica na index',
     simpleEn:
-      'BR proverb — living que não arrisca não petisca; anchor quem…; index instead of Valeu !!!; ≠ gamble; Valeu !!! stays as close',
+      'BR proverb — correct form quem não arrisca não petisca; spoken que…; ≠ gamble; Valeu !!! stays on the index',
     simpleEs:
-      'Dicho BR — voz viva que não arrisca não petisca; ancla quem…; index en lugar de Valeu !!!; ≠ apuesta; Valeu !!! sigue de cierre',
+      'Dicho BR — forma correcta quem não arrisca não petisca; viva que…; ≠ apuesta; Valeu !!! sigue en la index',
     history:
-      'Pedido de campo 2026-08-24: expressão que não arrisca não petisca; e mudar Valeu !!! da página index para este ditado. Forma plena quem; boca de campo que.',
+      'Pedido de campo: expressão correcta quem não arrisca não petisca. Valeu !!! volta à index; o ditado fica na ficha.',
     curiosities:
-      'Petiscar = bocado, não banquete. Arriscar = mapa, não salto vazio. Valeu !!! não é apagado — sai da index visível e fica no fecho das fichas.',
+      'Petiscar = bocado, não banquete. Arriscar = mapa, não salto vazio. A boca corta o m (que); a ficha ancora quem.',
     historyEn:
-      'Field request 2026-08-24: saying que não arrisca não petisca; and swap Valeu !!! on the index for this ditado. Full form quem; field mouth que.',
+      'Field: the correct saying is quem não arrisca não petisca. Valeu !!! returns to the index; the proverb stays on its sheet.',
     curiositiesEn:
-      'Petiscar = a nibble, not a feast. Arriscar = a map, not an empty leap. Valeu !!! is not erased — it leaves the visible index and stays as the sheet close.',
+      'Petiscar = a nibble, not a feast. Arriscar = a map, not an empty leap. The mouth drops the m (que); the sheet keeps quem.',
     historyEs:
-      'Pedido de campo 2026-08-24: dicho que não arrisca não petisca; y cambiar Valeu !!! de la index por este dicho. Forma plena quem; boca de campo que.',
+      'Pedido de campo: la forma correcta es quem não arrisca não petisca. Valeu !!! vuelve a la index; el dicho queda en la ficha.',
     curiositiesEs:
-      'Petiscar = bocado, no banquete. Arriscar = mapa, no salto vacío. Valeu !!! no se borra — sale de la index visible y sigue como cierre de ficha.'
+      'Petiscar = bocado, no banquete. Arriscar = mapa, no salto vacío. La boca corta la m (que); la ficha ancla quem.'
   };
   const gi = items.findIndex(
     (x) =>
@@ -236,7 +239,7 @@ async function main() {
   await writeJsonRetry(GUIA_FILE, guia);
   if (gloss) {
     await writeJsonRetry(GLOSS_FILE, gloss);
-    console.log('Glossário actualizado (que não arrisca não petisca)');
+    console.log('Glossário actualizado (quem não arrisca não petisca)');
   }
 
   try {
