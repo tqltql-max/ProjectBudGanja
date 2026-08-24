@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:11:13.269Z",
+  "updatedAt": "2026-08-24T11:17:28.224Z",
   "poems": [
     {
       "id": "fantasia",
@@ -783,6 +783,79 @@
         "retarget",
         "alvo",
         "rato"
+      ]
+    },
+    {
+      "id": "restore",
+      "slug": "restore",
+      "title": "Restore",
+      "titleEn": "Restore",
+      "titleEs": "Restore",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — pôr de pé de novo; cruzado com back, backup e up; Restoure = lapso; Valeu !!!",
+      "teaserEn": "BudGanja echo — set back on its feet; crossed with back, backup and up; Restoure = slip; Valeu !!!",
+      "teaserEs": "Eco BudGanja — poner de pie otra vez; cruzado con back, backup y up; Restoure = lapsus; ¡Valeu !!!",
+      "body": "Restore.\nNão é o Restoure da boca.\nNão é o restaurante.\nÉ pôr de pé de novo.\n\nUp é o vector.\nBack é o regresso.\nBackup é as duas peças\na segurar por trás.\n\nQuem restaura sem cópia\npede milagre.\nQuem copia e nunca testa\nsegura papel.\n\nRestore back\ndiz duas vezes\na mesma porta.\n\nValeu !!!\na cópia no sítio\ne o gesto de voltar.",
+      "bodyEn": "Restore.\nIt is not the mouth’s Restoure.\nIt is not the restaurant.\nIt is to set back on its feet.\n\nUp is the vector.\nBack is the return.\nBackup is both pieces\nholding from behind.\n\nWhoever restores without a copy\nasks for a miracle.\nWhoever copies and never tests\nholds paper.\n\nRestore back\nsays twice\nthe same door.\n\nValeu !!!\nthe copy in place\nand the gesture of return.",
+      "bodyEs": "Restore.\nNo es el Restoure de la boca.\nNo es el restaurante.\nEs poner de pie otra vez.\n\nUp es el vector.\nBack es el regreso.\nBackup son las dos piezas\nsosteniendo por detrás.\n\nQuien restaura sin copia\npide milagro.\nQuien copia y nunca prueba\nsostiene papel.\n\nRestore back\ndice dos veces\nla misma puerta.\n\n¡Valeu !!!\nla copia en su sitio\ny el gesto de volver.",
+      "inspectionHref": "/posts/post-inspecao-palavra-restore.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "restore",
+        "back",
+        "backup",
+        "up"
+      ]
+    },
+    {
+      "id": "boston",
+      "slug": "boston",
+      "title": "Boston",
+      "titleEn": "Boston",
+      "titleEs": "Boston",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — a vila de Botolph; o -on que a piada apaga é a vila; ≠ bosta; Valeu !!!",
+      "teaserEn": "BudGanja echo — Botolph’s town; the -on the joke erases is the town; ≠ bosta; Valeu !!!",
+      "teaserEs": "Eco BudGanja — la villa de Botolph; la -on que el chiste borra es la villa; ≠ bosta; ¡Valeu !!!",
+      "body": "Boston.\nNão é bosta.\nÉ a vila de Botolph\nque atravessou o Atlântico.\n\nO -on que a piada apaga\né o tūn — a vila.\nSem a vila, a orelha\nsó ouve o estrume.\n\nA cidade fica.\nO trocadilho passa.\nO étimo corta.\n\nValeu !!!\nmapa no sítio,\nsem colar o vocábulo no porto.",
+      "bodyEn": "Boston.\nIt is not bosta.\nIt is Botolph’s town\nthat crossed the Atlantic.\n\nThe -on the joke erases\nis the tūn — the town.\nWithout the town, the ear\nonly hears the dung.\n\nThe city stays.\nThe pun passes.\nThe etymon cuts.\n\nValeu !!!\nthe map in its place,\nwithout gluing the swear to the harbour.",
+      "bodyEs": "Boston.\nNo es bosta.\nEs la villa de Botolph\nque cruzó el Atlántico.\n\nLa -on que el chiste borra\nes el tūn — la villa.\nSin la villa, el oído\nsolo oye el estiércol.\n\nLa ciudad queda.\nEl trocadilho pasa.\nEl étimo corta.\n\n¡Valeu !!!\nel mapa en su sitio,\nsin pegar el vocablo al puerto.",
+      "inspectionHref": "/posts/post-inspecao-palavra-boston.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "boston",
+        "cidade",
+        "trocadilho"
+      ]
+    },
+    {
+      "id": "bosta",
+      "slug": "bosta",
+      "title": "Bosta",
+      "titleEn": "Bosta",
+      "titleEs": "Bosta",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — estrume e gíria; nomear o vocábulo sem arma e sem colar no mapa; Valeu !!!",
+      "teaserEn": "BudGanja echo — dung and slang; name the word without a weapon and without gluing it to the map; Valeu !!!",
+      "teaserEs": "Eco BudGanja — estiércol y jerga; nombrar el vocablo sin arma y sin pegarlo al mapa; ¡Valeu !!!",
+      "body": "Bosta.\nÉ o estrume.\nÉ também a gíria\nquando a coisa não presta.\n\nNão é Boston.\nA cidade tem um santo\ne uma vila no nome.\nAqui o chão é outro.\n\nO corpo larga.\nO campo às vezes usa.\nA boca às vezes fere.\n\nValeu !!!\nnomear o vocábulo\nsem fazer dele arma\ne sem colar no mapa.",
+      "bodyEn": "Bosta.\nIt is dung.\nIt is also the slang\nwhen the thing is no good.\n\nIt is not Boston.\nThe city has a saint\nand a town in the name.\nHere the ground is other.\n\nThe body lets go.\nThe field sometimes uses it.\nThe mouth sometimes wounds.\n\nValeu !!!\nname the word\nwithout making it a weapon\nand without gluing it to the map.",
+      "bodyEs": "Bosta.\nEs el estiércol.\nEs también la jerga\ncuando la cosa no sirve.\n\nNo es Boston.\nLa ciudad tiene un santo\ny una villa en el nombre.\nAquí el suelo es otro.\n\nEl cuerpo suelta.\nEl campo a veces usa.\nLa boca a veces hiere.\n\n¡Valeu !!!\nnombrar el vocablo\nsin hacerlo arma\ny sin pegarlo al mapa.",
+      "inspectionHref": "/posts/post-inspecao-palavra-bosta.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "bosta",
+        "giria",
+        "trocadilho"
       ]
     },
     {

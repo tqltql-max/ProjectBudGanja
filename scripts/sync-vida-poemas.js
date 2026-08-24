@@ -100,6 +100,11 @@ const {
   poemElzaEs
 } = require('../lib/elza-frozen-inspecao-post.js');
 const {
+  poemAnimatrixPt,
+  poemAnimatrixEn,
+  poemAnimatrixEs
+} = require('../lib/animatrix-inspecao-post.js');
+const {
   poemMortalKombatPt,
   poemMortalKombatEn,
   poemMortalKombatEs
@@ -164,6 +169,21 @@ const {
   poemEn: poemRetargetEn,
   poemEs: poemRetargetEs
 } = require('../lib/retarget-inspecao-post.js');
+const {
+  poemPt: poemRestorePt,
+  poemEn: poemRestoreEn,
+  poemEs: poemRestoreEs
+} = require('../lib/restore-inspecao-post.js');
+const {
+  poemPt: poemBostonPt,
+  poemEn: poemBostonEn,
+  poemEs: poemBostonEs
+} = require('../lib/boston-inspecao-post.js');
+const {
+  poemPt: poemBostaPt,
+  poemEn: poemBostaEn,
+  poemEs: poemBostaEs
+} = require('../lib/bosta-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -763,6 +783,27 @@ const doc = {
       tags: ['poesia', 'vida', 'desenho', 'elza', 'frozen', 'gelo', 'porta']
     },
     {
+      id: 'animatrix',
+      slug: 'animatrix',
+      title: 'Animatrix',
+      titleEn: 'Animatrix',
+      titleEs: 'Animatrix',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja do desenho — nove portas no mesmo ecrã; o filme 1999 continua primeiro; Valeu !!!',
+      teaserEn:
+        'BudGanja echo of the cartoon — nine doors on the same screen; the 1999 film stays first; Valeu !!!',
+      teaserEs:
+        'Eco BudGanja del dibujo — nueve puertas en la misma pantalla; el filme 1999 sigue primero; ¡Valeu !!!',
+      body: poemAnimatrixPt(),
+      bodyEn: poemAnimatrixEn(),
+      bodyEs: poemAnimatrixEs(),
+      inspectionHref: '/posts/post-inspecao-desenho-animatrix.html',
+      tags: ['poesia', 'vida', 'desenho', 'animatrix', 'matrix', 'anime']
+    },
+    {
       id: 'mortal-kombat',
       slug: 'mortal-kombat',
       title: 'Mortal Kombat',
@@ -824,6 +865,69 @@ const doc = {
       bodyEs: poemRetargetEs(),
       inspectionHref: '/posts/post-inspecao-palavra-retarget.html',
       tags: ['poesia', 'vida', 'retarget', 'alvo', 'rato']
+    },
+    {
+      id: 'restore',
+      slug: 'restore',
+      title: 'Restore',
+      titleEn: 'Restore',
+      titleEs: 'Restore',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja — pôr de pé de novo; cruzado com back, backup e up; Restoure = lapso; Valeu !!!',
+      teaserEn:
+        'BudGanja echo — set back on its feet; crossed with back, backup and up; Restoure = slip; Valeu !!!',
+      teaserEs:
+        'Eco BudGanja — poner de pie otra vez; cruzado con back, backup y up; Restoure = lapsus; ¡Valeu !!!',
+      body: poemRestorePt(),
+      bodyEn: poemRestoreEn(),
+      bodyEs: poemRestoreEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-restore.html',
+      tags: ['poesia', 'vida', 'restore', 'back', 'backup', 'up']
+    },
+    {
+      id: 'boston',
+      slug: 'boston',
+      title: 'Boston',
+      titleEn: 'Boston',
+      titleEs: 'Boston',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja — a vila de Botolph; o -on que a piada apaga é a vila; ≠ bosta; Valeu !!!',
+      teaserEn:
+        'BudGanja echo — Botolph’s town; the -on the joke erases is the town; ≠ bosta; Valeu !!!',
+      teaserEs:
+        'Eco BudGanja — la villa de Botolph; la -on que el chiste borra es la villa; ≠ bosta; ¡Valeu !!!',
+      body: poemBostonPt(),
+      bodyEn: poemBostonEn(),
+      bodyEs: poemBostonEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-boston.html',
+      tags: ['poesia', 'vida', 'boston', 'cidade', 'trocadilho']
+    },
+    {
+      id: 'bosta',
+      slug: 'bosta',
+      title: 'Bosta',
+      titleEn: 'Bosta',
+      titleEs: 'Bosta',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja — estrume e gíria; nomear o vocábulo sem arma e sem colar no mapa; Valeu !!!',
+      teaserEn:
+        'BudGanja echo — dung and slang; name the word without a weapon and without gluing it to the map; Valeu !!!',
+      teaserEs:
+        'Eco BudGanja — estiércol y jerga; nombrar el vocablo sin arma y sin pegarlo al mapa; ¡Valeu !!!',
+      body: poemBostaPt(),
+      bodyEn: poemBostaEn(),
+      bodyEs: poemBostaEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-bosta.html',
+      tags: ['poesia', 'vida', 'bosta', 'giria', 'trocadilho']
     },
     {
       id: 'a-semente-foi-plantada',

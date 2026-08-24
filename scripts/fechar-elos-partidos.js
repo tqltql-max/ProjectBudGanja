@@ -117,6 +117,7 @@ function collectBuilders() {
   add('colchao', () => require('../lib/colchao-inspecao-post.js').buildColchaoPost());
   add('boa', () => require('../lib/boa-inspecao-post.js').buildBoaPost());
   add('megamente', () => require('../lib/megamente-inspecao-post.js').buildMegamentePost());
+  add('animatrix', () => require('../lib/animatrix-inspecao-post.js').buildAnimatrixPost());
   add('pato', () => require('../lib/pato-inspecao-post.js').buildPatoPost());
   add('letra-l', () => require('../lib/letra-l-inspecao-post.js').buildLetraLPost());
   add('diabo', () => require('../lib/diabo-inspecao-post.js').buildDiaboPost());

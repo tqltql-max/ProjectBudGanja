@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:13:07.650Z",
+  "updatedAt": "2026-08-24T11:11:55.866Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3110,6 +3110,42 @@
       "curiositiesEn": "The young-lady glue only works with capitals. In Portuguese, miss + click does not sound like Miss Click — the glue is bilingual. Sibling: retarget (aim again after the miss). The switch already clicked before the mouse. Calque: clique errado. Touch cousin: mistap. Rooms cut: I miss you, clickbait, klick (km), blaming the finger.",
       "historyEs": "Miss Click es habla de patio (mayúsculas) del compuesto inglés misclick: prefijo mis- («erradamente») + click (onomatopeya del chasquido corto, luego el gesto en pantalla). La grafía miss click parte el compuesto en el verbo miss («fallar el blanco») — el oficio coincide; el étimo de oficio sigue siendo el prefijo. El título Miss (de mistress) es cola del oído, no origen. El verbo se registra en los años 1950; el nombre se afirma en los 1990. El portugués clique del gesto viene del inglés click; el clique de grupo es francés — homógrafo a cortar.",
       "curiositiesEs": "La cola señorita Clique solo funciona con mayúsculas. En portugués, miss + click no suena a Miss Click — la cola es bilingüe. Hermano: retarget (volver a apuntar). El interruptor ya clicaba antes del ratón. Calco: clique errado. Primo táctil: mistap. Salas cortadas: añoranza, clickbait, klick (km), culpa del dedo."
+    },
+    {
+      "id": "dont-show-again",
+      "word": "Don't Show Again",
+      "simple": "EN de caixa de diálogo — não pôr à vista outra vez. Cruzamento com não mostrar de novo. Show = olhar (scēawian); mostrar = avisar (mōnstrāre). Dont sem apóstrofo. De novo ≠ o novo. Pular = desta vez. Valeu !!!",
+      "simpleEn": "EN dialog-box speech — do not put in view again. Crossed with não mostrar de novo. Show = look (scēawian); mostrar = warn (mōnstrāre). Dont without apostrophe. De novo ≠ the new. Skip = this time. Valeu !!!",
+      "simpleEs": "EN de caja de diálogo — no poner a la vista otra vez. Cruce con não mostrar de novo. Show = mirar (scēawian); mostrar = avisar (mōnstrāre). Dont sin apóstrofo. De novo ≠ lo nuevo. Saltar = esta vez. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-dont-show-again.html",
+      "history": "Don't Show Again é locução de caixa de diálogo inglesa: contração don't (do + not) + show (OE scēawian «olhar, pôr à vista») + again (OE ongēan «outra vez»). A etiqueta elide this / this message: o objecto é esta mensagem, não «nunca mais mostrar nada». O português calca não mostrar de novo / não mostrar novamente: não (lat. non) + mostrar (lat. mōnstrāre ← moneō «avisar») + de novo («desde o novo» = outra vez). O cruzamento de ofício: o inglês esconde o olhar; o português esconde o aviso. Grafia de campo Dont cai o apóstrofo. Cola da orelha: de novo ouvido como «o novo» — não é o étimo da UI.",
+      "curiosities": "Pular / Skip / Dismiss é desta vez; Don't Show Again é daqui para a frente (deste sítio, deste rasto). Limpar dados ou outro login pode fazer a caixa voltar — não é never moral. Show de palco é outra sala. Miss Click no visto grava a preferência sem intenção. Prima: banner de cookies é consentir ou recusar, não só esconder o nag. O inspector, às vezes, olha de novo.",
+      "historyEn": "Don't Show Again is English dialog-box speech: contraction don't (do + not) + show (OE scēawian “look, put in view”) + again (OE ongēan “once more”). The label often drops this / this message: the object is this message, not “never show anything”. Portuguese calques não mostrar de novo / não mostrar novamente: não (Lat. non) + mostrar (Lat. mōnstrāre ← moneō “to warn”) + de novo (“from the new” = again). Craft cross: English hides the look; Portuguese hides the warning. Field spelling Dont drops the apostrophe. Ear-glue: de novo heard as “the new one” — not the UI etymon.",
+      "curiositiesEn": "Skip / Dismiss is this time; Don't Show Again is from here on (this site, this store). Clearing data or another login can bring the box back — it is not moral never. Stage show is another room. A Miss Click on the tick stores the preference by accident. Cousin: cookie banners are consent or refuse, not only hiding the nag. The inspector sometimes looks again.",
+      "historyEs": "Don't Show Again es locución inglesa de caja de diálogo: contracción don't (do + not) + show (OE scēawian «mirar, poner a la vista») + again (OE ongēan «otra vez»). La etiqueta elide this / this message: el objeto es este mensaje, no «nunca más mostrar nada». El portugués calca não mostrar de novo / não mostrar novamente: não (lat. non) + mostrar (lat. mōnstrāre ← moneō «avisar») + de novo («desde lo nuevo» = otra vez). Cruce de oficio: el inglés esconde la mirada; el portugués esconde el aviso. Grafía de campo Dont cae el apóstrofo. Cola del oído: de novo oído como «lo nuevo» — no es el étimo de la UI.",
+      "curiositiesEs": "Saltar / Dismiss es esta vez; Don't Show Again es de aquí en adelante (este sitio, este rastro). Borrar datos u otro login puede hacer volver la caja — no es never moral. El show de escenario es otra sala. Miss Click en el visto graba la preferencia sin querer. Prima: el banner de cookies es consentir o rechazar, no solo esconder el nag. El inspector, a veces, mira de nuevo."
+    },
+    {
+      "id": "nao-mostrar-de-novo",
+      "word": "não mostrar de novo",
+      "simple": "Calco PT vivo de Don't Show Again — de novo = outra vez, não «o novo». Forma de manual: não mostrar novamente. Valeu !!!",
+      "simpleEn": "Living PT calque of Don't Show Again — de novo = again, not “the new one”. Manual form: não mostrar novamente. Valeu !!!",
+      "simpleEs": "Calco PT vivo de Don't Show Again — de novo = otra vez, no «lo nuevo». Forma de manual: não mostrar novamente. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-dont-show-again.html"
+    },
+    {
+      "id": "mostrar",
+      "word": "mostrar",
+      "simple": "Lat. mōnstrāre — apontar, fazer ver, avisar (moneō). Peça PT de Don't Show Again × não mostrar de novo. ≠ show de palco. Valeu !!!",
+      "simpleEn": "Lat. mōnstrāre — to point, make visible, warn (moneō). PT piece of Don't Show Again × não mostrar de novo. ≠ stage show. Valeu !!!",
+      "simpleEs": "Lat. mōnstrāre — señalar, hacer ver, avisar (moneō). Pieza PT de Don't Show Again × não mostrar de novo. ≠ show de escenario. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-dont-show-again.html"
     },
     {
       "id": "misclick",

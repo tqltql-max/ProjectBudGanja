@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:03:40.801Z",
+  "updatedAt": "2026-08-24T11:11:55.841Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -10124,6 +10124,38 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 279 — étimo mis-+click × cola Miss (≠ origem); sem tutorial de aim."
+    },
+    {
+      "id": "expressao-dont-show-again",
+      "title": "Don't Show Again × não mostrar de novo — o aviso que pede para não voltar",
+      "titleEn": "Don't Show Again × não mostrar de novo — the warning that asks not to return",
+      "titleEs": "Don't Show Again × não mostrar de novo — el aviso que pide no volver",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: Don't Show Again × não mostrar de novo — caixa EN×PT; show=olhar × mostrar=avisar; de novo ≠ o novo.",
+      "whyEn": "Sayings: Don't Show Again × não mostrar de novo — EN×PT dialog; show=look × mostrar=warn; de novo ≠ the new.",
+      "whyEs": "Dichos: Don't Show Again × não mostrar de novo — caja EN×PT; show=mirar × mostrar=avisar; de novo ≠ lo nuevo.",
+      "suggestedSlug": "inspecao-expressao-dont-show-again",
+      "doneHref": "/posts/post-inspecao-expressao-dont-show-again.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-dont-show-again.html",
+        "https://en.wiktionary.org/wiki/show#English",
+        "https://en.wiktionary.org/wiki/don%27t",
+        "https://pt.wiktionary.org/wiki/mostrar",
+        "https://en.wiktionary.org/wiki/again",
+        "https://pt.wiktionary.org/wiki/n%C3%A3o",
+        "https://pt.wiktionary.org/wiki/de_novo",
+        "https://en.wiktionary.org/wiki/monstro#Latin",
+        "https://en.wiktionary.org/wiki/sceawian",
+        "/posts/post-inspecao-expressao-miss-click.html",
+        "/posts/post-inspecao-palavra-pular.html",
+        "/posts/post-inspecao-expressao-loop-infinito.html",
+        "/posts/post-inspecao-palavra-etimologia.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 280 — cruzamento EN×PT; sem tutorial de cookie / burlar aviso."
     },
     {
       "id": "palavra-acao",

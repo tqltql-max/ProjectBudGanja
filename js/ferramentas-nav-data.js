@@ -1927,12 +1927,12 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes · canção 1992: RATM — matar no nome da ordem × raiva nomeada; elo com O Início (tanques × dossel) e proibição."
             },
             {
-              "label": "Inspeção: Incrível — incredibilis, elogio BR e a escala legal→genial",
+              "label": "Inspeção: Incrível — incredibilis, cruzado com acreditar e fé",
               "tileLabel": "Inspeção: Incrível — incredibil…",
               "href": "/posts/post-inspecao-palavra-incrivel.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-incrivel",
-              "description": "Palavras: «incrível» (lat. *incredibilis*) — incredulidade e elogio BR «uau»; escala com fichas existentes (legal, genial, fantástico…); Valeu !!!"
+              "description": "Palavras: «incrível» (lat. *incredibilis* ← *credere*) — incredulidade e elogio BR; cruza com acreditar (mesmo tronco) e fé (*fides*, outro étimo); Valeu !!!"
             },
             {
               "label": "Inspeção: All Right Now — Free e o agora depois do silêncio",
@@ -3628,7 +3628,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-script.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-script",
-              "description": "Palavras: «script» (lat. scrīptum ← scrībere) — sequência escrita EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar; Valeu !!!"
+              "description": "Palavras: «script» (lat. scrīptum ← scrībere) — sequência escrita EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar/opsert; Valeu !!!"
             },
             {
               "label": "Inspeção: Opsert — inserir ou actualizar sem duplicar a identidade",
@@ -4221,6 +4221,38 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-caralhudo",
               "description": "Palavras: caralhudo (caralho + -udo) × cara de alho (trocadilho, não étimo) × cara de olho (visual); olaho = cola; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Danger — *dominus* (poder do senhor); cruzar com perigo (*periculum*); relação sem fundir; Valeu !!!",
+              "tileLabel": "Inspeção: Danger — *dominus* (p…",
+              "href": "/posts/post-inspecao-palavra-danger.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-danger",
+              "description": "Palavras: Danger (EN, *dominus*) × perigo (PT, *periculum*) — equivalentes de placa, não cognatos; método relação; ≠ risco ≠ medo; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Olho — oculus; cruzado com zaroio (zarolho)",
+              "tileLabel": "Inspeção: Olho — oculus; cruzad…",
+              "href": "/posts/post-inspecao-palavra-olho.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-olho",
+              "description": "Palavras: olho (lat. oculus) × zaroio (voz de zarolho — o olho que não alinha); lh → i; ≠ eye ≠ ophthalmós; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Óculos — o objecto diante do olho",
+              "tileLabel": "Inspeção: Óculos — o objecto di…",
+              "href": "/posts/post-inspecao-palavra-oculos.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-oculos",
+              "description": "Objecto: «óculos» (plural de óculo ← lat. oculus) — lentes + armação diante do olho; ≠ órgão ≠ contacto ≠ marca; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Restore — pôr de pé; cruzado com Back, Backup e Up",
+              "tileLabel": "Inspeção: Restore — pôr de pé; …",
+              "href": "/posts/post-inspecao-palavra-restore.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-restore",
+              "description": "Palavras: restore (lat. restaurāre) × back (germ. bæc) × backup (back+up) × up (germ. upp) — quatro salas, um circuito; Restoure = lapso; ≠ restore back; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
