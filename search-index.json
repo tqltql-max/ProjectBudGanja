@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T12:10:01.099Z",
+  "updatedAt": "2026-08-24T13:30:44.039Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -42,6 +42,18 @@
       "url": "/animais/",
       "excerpt": "Catálogo de animais: criação, companhia e derivados industriais de risco",
       "text": "Animais Catálogo de animais: criação, companhia e derivados industriais de risco animais produção galinha vaca porco abelha derivados indústria"
+    },
+    {
+      "title": "Tecnologia",
+      "url": "/tecnologia/",
+      "excerpt": "Catálogo de ofício técnico: vocábulos, hardware, rede e software — HD escravo e o lema tecnologia",
+      "text": "Tecnologia Catálogo de ofício técnico: vocábulos, hardware, rede e software — HD escravo e o lema tecnologia tecnologia hd escravo slave slayr ata ide disco rígido hardware software rede"
+    },
+    {
+      "title": "Mitologia",
+      "url": "/mitologia/",
+      "excerpt": "Catálogo de mitos e deuses: nomes, relatos e elos — Anúbis (chacal que pesa o coração) e o lema mitologia",
+      "text": "Mitologia Catálogo de mitos e deuses: nomes, relatos e elos — Anúbis (chacal que pesa o coração) e o lema mitologia mitologia anubis anúbis deus egito chacal maat mito deuses orfeu"
     },
     {
       "title": "Curso UNIFESP",
@@ -116,6 +128,12 @@
       "text": "Guia de Palavras Glossário simples dos títulos do site e do léxico inspecionado palavras glossário significado maconha ganja inspetor budganja"
     },
     {
+      "title": "Astrologia",
+      "url": "/guia/astrologia.html",
+      "excerpt": "Doze signos a partir de Áries; ariana/ariano; céu verificável (Aladin Lite); o que o Google Sky ainda permite",
+      "text": "Astrologia Doze signos a partir de Áries; ariana/ariano; céu verificável (Aladin Lite); o que o Google Sky ainda permite astrologia áries ariana ariano signos zodíaco céu aladin google sky horóscopo"
+    },
+    {
       "title": "Últimos vídeos",
       "url": "/videos/",
       "excerpt": "Vídeos recentes do canal YouTube",
@@ -174,6 +192,120 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: For / If / Else — aula 0 de programar",
+      "url": "/posts/post-inspecao-palavra-for-if-else.html",
+      "excerpt": "Palavras: for / if / else — decidir, o outro caminho, repetir com fim; aula 0 em /tecnologia/; ≠ Maria ≠ loop infinito; Valeu !!!",
+      "text": "Inspeção: For / If / Else — aula 0 de programar Palavras: for / if / else — decidir, o outro caminho, repetir com fim; aula 0 em /tecnologia/; ≠ Maria ≠ loop infinito; Valeu !!! inspecao ## Escopo\n\nInspeção-aula de **[for / if / else](/posts/post-inspecao-palavra-for-if-else.html)** — as três palavras-reservadas com que se **começa a programar**. Pedido de campo: *inspeção For If Else, tecnologia programação, vamos ensinar a programar por ali*. Esta ficha é a **Aula 0** do catálogo **[Tecnologia](/tecnologia/)**. Não é o [for](/posts/post-inspecao-palavra-maria.html) da Maria (preposição / conjuntivo). Não é o [loop](/posts/post-inspecao-palavra-loop.html) sem porta. É o ofício de **decidir**, **tomar o outro caminho** e **repetir com fim**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [if](https://en.wiktionary.org/wiki/if), [else](https://en.wiktionary.org/wiki/else), [for](https://en.wiktionary.org/wiki/for), [conditional](https://en.wikipedia.org/wiki/Conditional_(computer_programming)), [for loop](https://en.wikipedia.org/wiki/For_loop), [control flow](https://en.wikipedia.org/wiki/Control_flow). **Exemplos em JavaScript** — a língua do sítio e do [Node](/posts/post-inspecao-palavra-node.html). **Ficha ≠ curso de informática, ≠ tutorial de exploit, ≠ caixa que executa o que o visitante escrever.** A bancada em [Tecnologia](/tecnologia/) é demonstração fechada (regar vasos). Fecho: [Faça o seu melhor](/posts/post-inspecao-expressao-faca-o-melhor.html) · [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n**Gatilho:** *if* / *else* / *for* / *se* / *senão* / *para cada* / *estrutura de controlo* → **for / if / else**.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Forma âncora | **if** · **else** · **for** (palavras-reservadas EN, vivas no código BR) |\n| PT de oficina | *se* · *senão* · *para cada* / *de 1 até n* |\n| Classe | Palavras-reservadas de **fluxo de controlo** |\n| Étimo (trabalho) | EN *if* «se» · *else* «senão / outr"
+    },
+    {
+      "title": "Inspeção: Anúbis — jnpw, o chacal, a balança; algum deus do catálogo",
+      "url": "/posts/post-inspecao-palavra-anubis.html",
+      "excerpt": "Palavras: Anúbis (jnpw → Ἄνουβις) — chacal que pesa o coração; primeiro deus de /mitologia/; ≠ Deus ≠ magia; Valeu !!!",
+      "text": "Inspeção: Anúbis — jnpw, o chacal, a balança; algum deus do catálogo Palavras: Anúbis (jnpw → Ἄνουβις) — chacal que pesa o coração; primeiro deus de /mitologia/; ≠ Deus ≠ magia; Valeu !!! inspecao ## Escopo\n\nInspeção editorial do nome **[Anúbis](/posts/post-inspecao-palavra-anubis.html)** — mitónimo egípcio que o grego gravou **Ἄνουβις** (*Ánoubis*) e o português herdou como **Anúbis**. Pedido de campo: *inspeção em Anubis algum deus* + *página dedicada a mitologia*.\n\n*Algum deus:* não o vocábulo [Deus](/posts/post-inspecao-palavra-deus.html), não todos os panteões. Um nome. Esta ficha é esse nome. O lema fica em **[mitologia](/posts/post-inspecao-palavra-mitologia.html)**. O catálogo é **[Mitologia](/mitologia/)**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikipédia · Anúbis](https://pt.wikipedia.org/wiki/An%C3%BAbis), [Anubis](https://en.wikipedia.org/wiki/Anubis), [Wikcionário](https://en.wiktionary.org/wiki/Anubis), [Maat](https://pt.wikipedia.org/wiki/Maat), [Wepwawet](https://en.wikipedia.org/wiki/Wepwawet), [African wolf](https://en.wikipedia.org/wiki/African_wolf). **Ficha ≠ culto, ≠ magia, ≠ invocação, ≠ guia de mumificação, ≠ tratado de egiptologia.** [Respeito](/posts/post-inspecao-palavra-respeito.html) ao nome e à tradição que o transmitiu — sem altar. Sem afiliação religiosa.\n\n**Gatilho:** *Anúbis* / *Anubis* / *Anpu* / *Inpu* / *chacal* / *algum deus*.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Forma âncora | **Anúbis** (PT) · **Anubis** (EN / lat. via grego) |\n| Classe | Mitónimo / teónimo masculino |\n| Étimo (trabalho) | eg. **jnpw** (*Inpw* / *Anpu* / *Inpu*) → gr. **Ἄνουβις** → PT **Anúbis** — confiança: **alta** na via; o sentido exacto de *jnpw* fica **médio** (hipótese «príncipe / criança real» circula; não fechar romance) |\n| Tipo BudGanja | Palavra — nome de deus · primeiro do catálogo [Mitologia](/mitologia/) |\n| Ofício no relato | Embalsamador, guarda da necrópole, psicopompo, operador da [balança](h"
+    },
+    {
+      "title": "Inspeção: Mitologia — mŷthos + lógos; lema do catálogo; ≠ teologia ≠ magia",
+      "url": "/posts/post-inspecao-palavra-mitologia.html",
+      "excerpt": "Palavras: mitologia (mŷthos + lógos) — ofício de contar os deuses; lema de /mitologia/; Anúbis noutra sala; Valeu !!!",
+      "text": "Inspeção: Mitologia — mŷthos + lógos; lema do catálogo; ≠ teologia ≠ magia Palavras: mitologia (mŷthos + lógos) — ofício de contar os deuses; lema de /mitologia/; Anúbis noutra sala; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da palavra **[mitologia](/posts/post-inspecao-palavra-mitologia.html)** — gr. *mŷthos* («relato, fábula, o que se conta») + *lógos* («discurso / estudo»). Pedido de campo: *página dedicada a mitologia* + *inspeção em Anúbis, algum deus*.\n\nDuas salas, um sopro. Esta ficha é o **lema**. A página dedicada é o catálogo **[Mitologia](/mitologia/)**. O recorte de um deus (chacal, balança, Duat) cabe na irmã **[Anúbis](/posts/post-inspecao-palavra-anubis.html)**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · mitologia](https://pt.wiktionary.org/wiki/mitologia), [mythology](https://en.wiktionary.org/wiki/mythology), gr. [*mŷthos*](https://en.wiktionary.org/wiki/%CE%BC%E1%BF%A6%CE%B8%CE%BF%CF%82#Ancient_Greek), [Wikipédia](https://pt.wikipedia.org/wiki/Mitologia). **Ficha ≠ tratado teológico, ≠ guia de magia, ≠ culto, ≠ enciclopédia de todos os panteões.** Série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). Fecho: [Faça o seu melhor](/posts/post-inspecao-expressao-faca-o-melhor.html) · [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n**Gatilho:** *mitologia* / *mito* / *deuses* / *panteão* / *algum deus*.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Forma âncora | **mitologia** (PT) |\n| Classe | Substantivo feminino |\n| Étimo (trabalho) | gr. μῦθος *mŷthos* «relato» + λόγος *lógos* — via lat. cient. *mythologia* — confiança: **alta** |\n| Cognatos | esp. *mitología* · fr. *mythologie* · ing. *mythology* · it. *mitologia* |\n| Tipo BudGanja | Palavra — lema do catálogo [Mitologia](/mitologia/) |\n| Não é | teologia · magia · [ídolo](/posts/post-inspecao-palavra-idolo.html) · [Deus](/posts/post-inspecao-palavra-deus.html) (vocábulo latino) · [diabo](/posts/post-inspecao-palavra-diabo.html)"
+    },
+    {
+      "title": "Inspeção: Meter a mão — o gesto que entra no ofício",
+      "url": "/posts/post-inspecao-expressao-meter-a-mao.html",
+      "excerpt": "Expressões: meter a mão — contacto com a massa / o ofício; ≠ furto ≠ toque sem consentimento ≠ futebol; Valeu !!!",
+      "text": "Inspeção: Meter a mão — o gesto que entra no ofício Expressões: meter a mão — contacto com a massa / o ofício; ≠ furto ≠ toque sem consentimento ≠ futebol; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da expressão **«[meter a mão](/posts/post-inspecao-expressao-meter-a-mao.html)»** — locução viva do português do Brasil: **pôr a mão dentro** do que se faz. Pedido de campo: *inspeção da expressão meter a mão*. Canónica de ofício: **mão na massa** — o primeiro contacto com a matéria (terra, vaso, teclado). Irmã de **[meter marcha](/posts/post-inspecao-expressao-meter-marcha.html)** (o mesmo *meter*). Inverso de **[pedir a mão](/posts/post-inspecao-palavra-pedi-mao.html)** (abrir a palma × meter a palma). Três cortes: **furto**, **toque sem consentimento**, **mão na bola** — nomeiam-se; **não** são manual.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · meter](https://pt.wiktionary.org/wiki/meter), [mão](https://pt.wiktionary.org/wiki/m%C3%A3o), [mão na massa](https://pt.wiktionary.org/wiki/m%C3%A3o_na_massa). **Ficha ≠ guia de furto, ≠ toque no corpo alheio, ≠ regra de futebol.** Sem afiliação comercial. Tom: [gesto](/posts/post-inspecao-palavra-gesto.html) que entra no [caminho](/posts/post-inspecao-palavra-caminho.html) com [respeito](/posts/post-inspecao-palavra-respeito.html).\n\n**Gatilho:** *meter a mão* / *mete a mão* / *mão na massa* → **meter a mão** (âncora) · **mão na massa** (família de ofício).\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Expressão | **meter a mão** |\n| Variantes | *mete a mão* · *meter a mão na massa* · *mão na massa* · *meter a mão no bolso* · *meter a mão na consciência* |\n| Classe | Locução verbal |\n| Peças | **meter** (lat. *mittere* «pôr, enviar») + artigo **a** + **mão** (lat. *manus*) |\n| Núcleo | Contacto — a palma **entra** no ofício |\n| Tipo BudGanja | Expressão — [gesto](/posts/post-inspecao-palavra-gesto.html) × [mão](/posts/post-inspecao-palavra-mao-esquerda-direita.html) × [aç"
+    },
+    {
+      "title": "Inspeção: Mapa — o pano do mundo (relação com mão)",
+      "url": "/posts/post-inspecao-palavra-mapa.html",
+      "excerpt": "Palavras: mapa (lat. mappa «pano») × mão (lat. manus); cola MA- (MApa / Maão); mapa na mão; ≠ cartografia; Valeu !!!",
+      "text": "Inspeção: Mapa — o pano do mundo (relação com mão) Palavras: mapa (lat. mappa «pano») × mão (lat. manus); cola MA- (MApa / Maão); mapa na mão; ≠ cartografia; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da palavra **[mapa](/posts/post-inspecao-palavra-mapa.html)** — lat. *mappa* «pano / guardanapo»: o **tecido** onde se desenha o mundo, e por extensão o **desenho do território**, o **esquema** e o **plano**. Pedido de campo: *inspeção da palavra MApa · relação com Maão*.\n\nDuas peças, um campo. O **objecto** é o vocábulo português *mapa*. O **cruzamento** é **[mão](/posts/post-inspecao-palavra-mao-esquerda-direita.html)** — lat. *manus*. [A orelha cola](/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html) o **MA-** (*MApa* / *Maão*). O [étimo](/posts/post-inspecao-palavra-etimo.html) **corta**: *mappa* ≠ *manus*. A [relação](/posts/post-inspecao-palavra-relacao.html) de ofício permanece: o **pano do mundo cabe na palma**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · mapa](https://pt.wiktionary.org/wiki/mapa), EN [*mapa*](https://en.wiktionary.org/wiki/mapa), lat. [*mappa*](https://en.wiktionary.org/wiki/mappa#Latin), [mão](https://pt.wiktionary.org/wiki/m%C3%A3o), lat. [*manus*](https://en.wiktionary.org/wiki/manus#Latin), [mapear](https://pt.wiktionary.org/wiki/mapear), [WP · mapa](https://pt.wikipedia.org/wiki/Mapa), [*mappa mundi*](https://pt.wikipedia.org/wiki/Mappa_mundi), [cartografia](https://pt.wiktionary.org/wiki/cartografia). Método: [etimologia](/posts/post-inspecao-palavra-etimologia.html) — étimo × cola × sala. **Ficha ≠ atlas, ≠ GPS, ≠ quiromancia, ≠ mapa clínico.** Série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). Solo da [língua portuguesa](/posts/post-inspecao-palavra-lingua-portuguesa.html). Fecho: [Faça o seu melhor](/posts/post-inspecao-expressao-faca-o-melhor.html) · [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n**Gatilho tipográfico:** *MApa* / *mapa* / *MAPA* → **mapa**. *Maã"
+    },
+    {
+      "title": "Inspeção: HD escravo (slave) — jumper ATA; slayr; ≠ escravidão ≠ SATA",
+      "url": "/posts/post-inspecao-palavra-hd-escravo.html",
+      "excerpt": "Palavras: HD escravo = jumper IDE Device 1; smash slayr → slave; ≠ escravidão humana ≠ SATA; catálogo /tecnologia/; Valeu !!!",
+      "text": "Inspeção: HD escravo (slave) — jumper ATA; slayr; ≠ escravidão ≠ SATA Palavras: HD escravo = jumper IDE Device 1; smash slayr → slave; ≠ escravidão humana ≠ SATA; catálogo /tecnologia/; Valeu !!! inspecao ## Escopo\n\nInspeção editorial do jargão **[HD escravo](/posts/post-inspecao-palavra-hd-escravo.html)** — inglês *slave* no par **master/slave** do [disco rígido](https://pt.wikipedia.org/wiki/Disco_r%C3%ADgido) em cabo **[Parallel ATA / IDE](https://en.wikipedia.org/wiki/Parallel_ATA)**. Pedido de campo: *inspeção em HD slayr escravo tecnologia*.\n\nQuatro peças, salas cortadas.\n\n1. **HD** = *hard disk* / disco rígido — o [objecto](/posts/post-inspecao-palavra-objetos.html).  \n2. **slave** = jumper inglês do segundo dispositivo no mesmo cabo. Smash de campo: **slayr**.  \n3. **escravo** = calco português dos manuais (mestre / escravo).  \n4. **[tecnologia](/posts/post-inspecao-palavra-tecnologia.html)** = lema; a página dedicada é o catálogo **[Tecnologia](/tecnologia/)**.\n\nO vocábulo humano **[escravidão](/posts/post-inspecao-palavra-escravidao.html)** é **outra ficha**. Aí o lab recusa «escravo» como piada ou gíria de trabalho. **Aqui** não se usa o jargão para rir: documenta-se o jumper histórico e o movimento da indústria para *device 0 / device 1*. Duas frases. [A orelha cola o que a boca juntou](/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [disco rígido](https://pt.wikipedia.org/wiki/Disco_r%C3%ADgido), [HDD](https://en.wikipedia.org/wiki/Hard_disk_drive), [Parallel ATA](https://en.wikipedia.org/wiki/Parallel_ATA), [ATA Packet Interface](https://pt.wikipedia.org/wiki/ATA_Packet_Interface), [Master/slave (technology)](https://en.wikipedia.org/wiki/Master/slave_(technology)), [slave](https://en.wiktionary.org/wiki/slave), [escravo](https://pt.wiktionary.org/wiki/escravo). **Ficha ≠ tutorial de jumper, ≠ recuperação de dados, ≠ RAID, ≠ metáfora de cativeiro.** Sem afiliação com fabr"
+    },
+    {
+      "title": "Inspeção: Tecnologia — tékhnē + lógos; lema do catálogo; ≠ ídolo ≠ escravidão",
+      "url": "/posts/post-inspecao-palavra-tecnologia.html",
+      "excerpt": "Palavras: tecnologia (tékhnē + lógos) — ofício dos aparelhos; lema de /tecnologia/; HD escravo noutra sala; Valeu !!!",
+      "text": "Inspeção: Tecnologia — tékhnē + lógos; lema do catálogo; ≠ ídolo ≠ escravidão Palavras: tecnologia (tékhnē + lógos) — ofício dos aparelhos; lema de /tecnologia/; HD escravo noutra sala; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da palavra **[tecnologia](/posts/post-inspecao-palavra-tecnologia.html)** — gr. *tékhnē* («arte, ofício, saber-fazer») + *lógos* («discurso / estudo»). Pedido de campo: *inspeção em HD slayr escravo tecnologia* + *página dedicada a tecnologia*.\n\nDuas salas, um sopro. Esta ficha é o **lema**. A página dedicada é o catálogo **[Tecnologia](/tecnologia/)**. O recorte de hardware (disco rígido, jumper ATA, smash *slayr*) cabe na irmã **[HD escravo](/posts/post-inspecao-palavra-hd-escravo.html)**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · tecnologia](https://pt.wiktionary.org/wiki/tecnologia), [technology](https://en.wiktionary.org/wiki/technology), gr. [*tékhnē*](https://en.wiktionary.org/wiki/%CF%84%CE%AD%CF%87%CE%BD%CE%B7#Ancient_Greek), [Wikipédia](https://pt.wikipedia.org/wiki/Tecnologia). **Ficha ≠ história da informática, ≠ catálogo de marcas, ≠ culto de gadget.** Série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). Fecho: [Faça o seu melhor](/posts/post-inspecao-expressao-faca-o-melhor.html) · [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n**Gatilho:** *tecnologia* / *tech* / *alta tecnologia* / *escravo da tecnologia* (metáfora — cortar).\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Forma âncora | **tecnologia** (PT) |\n| Classe | Substantivo feminino |\n| Étimo (trabalho) | gr. τέχνη *tékhnē* «ofício / saber-fazer» + λόγος *lógos* — via lat. cient. *technologia* — confiança: **alta** |\n| Cognatos | esp. *tecnología* · fr. *technologie* · ing. *technology* · it. *tecnologia* |\n| Tipo BudGanja | Palavra — lema do catálogo [Tecnologia](/tecnologia/) |\n| Não é | [técnica](/posts/post-inspecao-palavra-skill.html) solta · ciência inteira · [ídolo](/posts/post-inspecao-pal"
+    },
+    {
+      "title": "Inspeção: Animal — Mula",
+      "url": "/posts/post-inspecao-animal-mula.html",
+      "excerpt": "Relatório educacional de Mula (*Equus asinus × Equus ferus caballus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem.",
+      "text": "Inspeção: Animal — Mula Relatório educacional de Mula (*Equus asinus × Equus ferus caballus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Mula** (*Equus asinus × Equus ferus caballus*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/mula/](/animais/mula/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Mula** |\n| Nome científico | *Equus asinus × Equus ferus caballus* |\n| Família | Equidae |\n| Eixo | Companhia |\n| Slug no catálogo | `mula` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nHíbrido de trabalho (jumento × égua): tração, carga e passo rural; vizinha lexical da mola — o ouvido cola, o étimo não (mūla ≠ mollis).\n\n## Produtos / partes\n\n- Trabalho\n- Tração\n- Carga\n\n## Criação e usos (catálogo)\n\n- Tração de carroça e carga em terreno irregular\n- Transporte rural histórico no Brasil\n- Companhia e ofício de lida — distinta do cavalo e do jumento\n\n## Cuidados\n\nConteúdo educacional — não é protocolo veterinário nem de equitação. Distinguir o animal da palavra mola (peça elástica). Bem-estar, casqueamento e nutrição exigem profissionais. O animal não é o vilão; estereótipo de teimosia não é laudo.\n\n\n## Inspeções de derivados de risco\n\n- [Inspeção: Mola — o objecto que cede e volta (≠ mula)](/posts/post-inspecao-palavra-mola.html)\n- [Inspeção: Animal — Cavalo](/posts/post-inspecao-animal-cavalo.html)\n- [Inspeção: Ração para animais — do saco industrial ao comedouro](/posts/post-inspecao-derivado-racao.html)\n\n## Ficha do catálogo\n\nPágina completa: [Mula](/animais/mula/)\n\n##"
+    },
+    {
+      "title": "Inspeção: Mola — o objecto que cede e volta (≠ mula)",
+      "url": "/posts/post-inspecao-palavra-mola.html",
+      "excerpt": "Objecto: mola / molas (it. molla ← mollis) — peça elástica; ≠ mula (lat. mūla) ≠ mó; feixe da carroça e passo equino; catálogo Objetos; Valeu !!!",
+      "text": "Inspeção: Mola — o objecto que cede e volta (≠ mula) Objecto: mola / molas (it. molla ← mollis) — peça elástica; ≠ mula (lat. mūla) ≠ mó; feixe da carroça e passo equino; catálogo Objetos; Valeu !!! inspecao ## Escopo\n\nInspeção editorial do **objecto [mola](/posts/post-inspecao-palavra-mola.html)** (pedido de campo: *Molas*) — a **peça elástica** que **cede e volta**. Pedido irmão: [relação](/posts/post-inspecao-palavra-relacao.html) com o animal **[mula](/posts/post-inspecao-animal-mula.html)**. O ouvido cola *mola* e *mula* (um **o** / um **u**); o lab **separa**. Esta ficha entra no catálogo [Objetos](/objetos/) como **coisa**. A mula entra no hub [Animais](/animais/) como **ser vivo** (*Equus asinus* × *Equus ferus caballus*). Par de método: [corda](/posts/post-inspecao-palavra-corda.html) × [codorna](/posts/post-inspecao-animal-codorna.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · mola](https://pt.wiktionary.org/wiki/mola), [mula](https://pt.wiktionary.org/wiki/mula), it. [*molle*](https://en.wiktionary.org/wiki/molle#Italian) / lat. [*mollis*](https://en.wiktionary.org/wiki/mollis#Latin), lat. [*mūla*](https://en.wiktionary.org/wiki/mula#Latin), [WP · mola](https://pt.wikipedia.org/wiki/Mola_%28dispositivo%29), [mula](https://pt.wikipedia.org/wiki/Mula), [lei de Hooke](https://pt.wikipedia.org/wiki/Lei_de_Hooke). **Ficha ≠ manual de mola, ≠ protocolo equino, ≠ receita de colchão.** Sem afiliação comercial de molas nem de criação. Fecho: [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n**Gatilho:** *MOLAS* / *mola* / *molas* → lema **mola** (objecto). *mula* / *mulo* → ficha [animal](/posts/post-inspecao-animal-mula.html).\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Objecto | **mola** (lema); fala e catálogo muitas vezes **molas** (o jogo, o feixe, o colchão) |\n| Classe | Substantivo feminino — peça elástica |\n| Étimo (trabalho) | it. *molla* «mola» ← *molle* «mole / que cede» ← lat. *mollis* — conf"
+    },
+    {
+      "title": "Inspeção: Ração para animais — do saco industrial ao comedouro",
+      "url": "/posts/post-inspecao-derivado-racao.html",
+      "excerpt": "Produtos nocivos: ração para animais — kibble, petiscos e concentrado pecuário versus pasto e comida inteira. Hub do comedouro industrial; o animal nas fichas de espécie; o que o humano come nos derivados.",
+      "text": "Inspeção: Ração para animais — do saco industrial ao comedouro Produtos nocivos: ração para animais — kibble, petiscos e concentrado pecuário versus pasto e comida inteira. Hub do comedouro industrial; o animal nas fichas de espécie; o que o humano come nos derivados. inspecao ## Escopo\n\nInspeção editorial da **ração para animais** — o alimento industrial que entra no comedouro — como **produto nocivo ao organismo** quando a **dose**, o **processamento** e a **matriz extrusada** se cruzam de forma desfavorável. Esta ficha é o **hub da família**: ração seca (kibble), húmida, petiscos, concentrado pecuário, premix e a ração de aquicultura. O animal vive nas fichas de [cão](/animais/cao/), [gato](/animais/gato/), [vaca](/animais/vaca/), [galinha](/animais/galinha/), [porco](/animais/porco/), [peixe-tilápia](/animais/peixe-tilapia/), [cavalo](/animais/cavalo/) e [codorna](/animais/codorna/). O que o **humano** come desses animais (nugget, embutido, leite) fica nos **derivados de risco** de cada espécie — **outra sala**.\n\n> **Nota metodológica:** auditoria independente do Inspetor BudGanja. **Não é aconselhamento veterinário, zootécnico nem nutricional.** O animal **não** é o vilão; o foco é a **cadeia industrial de ração** (extrusão, subprodutos, milho/soja, palatabilizantes, corantes, açúcar) e a literacia de rótulo. Indexar a [Wikipédia · ração animal](https://pt.wikipedia.org/wiki/Ra%C3%A7%C3%A3o_animal) ≠ endossar marca. Sem afiliação com a indústria pet ou de alimentação animal.\n\n## Não fundir as salas\n\n| Sala | O que inspecciona | Ficha |\n|------|-------------------|-------|\n| Animal de companhia | *Canis* / *Felis* — bem-estar, não o saco | [Cão](/animais/cao/) · [gato](/animais/gato/) · [inspeções](/posts/post-inspecao-animal-cao.html) |\n| Animal de produção | Criação, leite, ovo, carne **frescos** | [Vaca](/animais/vaca/) · [galinha](/animais/galinha/) · [porco](/animais/porco/) · [tilápia](/animais/peixe-tilapia/) |\n| O que o **animal** come | Ração / pet food"
+    },
+    {
+      "title": "Inspeção: Ariana — Áries, o primeiro signo e as derivações",
+      "url": "/posts/post-inspecao-palavra-ariana.html",
+      "excerpt": "Palavras: «ariana» / ariano / Áries — 1.º signo (lat. ariēs); ≠ horóscopo; ≠ ariano racial; página Astrologia; Valeu !!!",
+      "text": "Inspeção: Ariana — Áries, o primeiro signo e as derivações Palavras: «ariana» / ariano / Áries — 1.º signo (lat. ariēs); ≠ horóscopo; ≠ ariano racial; página Astrologia; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da palavra **[ariana](/posts/post-inspecao-palavra-ariana.html)** e da família **Áries**. Pedido de campo: *inspeção em arianos* — *arianos é o primeiro dos signos?* **Sim:** no zodíaco tropical, **Áries** é o **primeiro** signo (~21 mar. – 20 abr., equinócio de março). A nativa chama-se **ariana**; o nativo, **ariano**; o plural pedido, **arianos**. Página-mãe: **[Astrologia](/guia/astrologia.html)**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · ariano](https://pt.wiktionary.org/wiki/ariano), [Áries](https://pt.wiktionary.org/wiki/%C3%81ries), lat. [*ariēs*](https://en.wiktionary.org/wiki/aries#Latin), [Wikipédia · Áries (astrologia)](https://pt.wikipedia.org/wiki/%C3%81ries_(astrologia)). **Ficha ≠ horóscopo, ≠ mapa natal, ≠ laudo de carácter, ≠ conselho médico.** Sem afiliação a app de signos. Tom: [verdade](/posts/post-inspecao-palavra-verdade.html) do nome, não do destino.\n\n**Gatilho:** *arianos* / *ariana* / *ariano* / *aries* / *áries* / *carneiro* (signo) → lema **ariana** (destaque) + **Áries** (objecto celeste).\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Lema destaque | **ariana** (f.) · **ariano** (m.) · plural **arianos** / **arianas** |\n| Signo | **Áries** (BR) · **Carneiro** (PT-EU) · lat./ing. **Aries** |\n| Classe | Gentílico astrológico (ariana/ariano) · nome próprio do 1.º signo (Áries) |\n| Étimo (signo) | Lat. *ariēs, arietis* «carneiro» — confiança: **alta** |\n| Ordem | **1.º** do zodíaco tropical — entre Peixes e Touro |\n| Tipo BudGanja | Palavra — primeiro signo × nativo × derivações × corte racial |\n| Elo céu | **[Astrologia](/guia/astrologia.html)** · [sol](/posts/post-inspecao-palavra-sol.html) · [lua](/posts/post-inspecao-palavra-lua.html) · [luz](/posts/post-inspecao-palavra"
+    },
+    {
+      "title": "Inspeção: que não arrisca não petisca — o ditado do bocado",
+      "url": "/posts/post-inspecao-expressao-quem-nao-arrisca-nao-petisca.html",
+      "excerpt": "Expressões: que não arrisca não petisca — voz viva; âncora quem não arrisca…; index no lugar de Valeu !!!; ≠ aposta; Valeu !!!",
+      "text": "Inspeção: que não arrisca não petisca — o ditado do bocado Expressões: que não arrisca não petisca — voz viva; âncora quem não arrisca…; index no lugar de Valeu !!!; ≠ aposta; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da expressão **«[que não arrisca não petisca](/posts/post-inspecao-expressao-quem-nao-arrisca-nao-petisca.html)»**. Pedido de campo: **expressão : que não arrisca não petisca** — e, na mesma conversa, **mudar Valeu !!! da página index para essa expressão**. A forma de dicionário é **quem não arrisca não petisca**. A boca BR corta o *m*: **que** no lugar de **quem**. O ofício é o mesmo: **sem risco calculado, não há gosto**. Não substitui [Valeu !!!](/posts/post-inspecao-palavra-valeu.html) no fecho das fichas. Na [index](/) (hoje [/inverno/](/inverno/)), o mantra visível passa a ser **este ditado**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [arriscar](https://pt.wiktionary.org/wiki/arriscar), [petiscar](https://pt.wiktionary.org/wiki/petiscar), [petisco](https://pt.wiktionary.org/wiki/petisco), [quem](https://pt.wiktionary.org/wiki/quem), paralelo EN [nothing ventured, nothing gained](https://en.wiktionary.org/wiki/nothing_ventured,_nothing_gained), ficha [risco](/posts/post-inspecao-palavra-risco.html). **Ficha ≠ conselho de aposta, ≠ incentivo a dano, ≠ autoajuda de salto.** Tom: Inspetor BudGanja — *petiscar* o ofício, não o abismo.\n\n**Gatilho:** *que não arrisca não petisca* / *quem não arrisca não petisca* → **quem não arrisca não petisca** (canónica) · **que não arrisca não petisca** (voz viva / index).\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Voz viva / index | **que não arrisca não petisca** |\n| Forma âncora | **quem não arrisca não petisca** |\n| Classe | Ditado / provérbio BR (paralelismo negativo) |\n| Étimo (trabalho) | *quem* (pron. indefinido) · *não* ← lat. *nōn* · *arriscar* (*a-* + [risco](/posts/post-inspecao-palavra-risco.html)) · *petiscar* (de *petisco*, «bocado») — confiança **alta** "
+    },
+    {
+      "title": "Inspeção: Wake Up — Rage Against the Machine e o ofício de acordar",
+      "url": "/posts/post-inspecao-arte-wake-up.html",
+      "excerpt": "Artes · canção 1992: RATM — Wake Up (faixa 7) × sonhar/verdade; irmã de Killing in the Name; afterlife Matrix; rádio como adaptação.",
+      "text": "Inspeção: Wake Up — Rage Against the Machine e o ofício de acordar Artes · canção 1992: RATM — Wake Up (faixa 7) × sonhar/verdade; irmã de Killing in the Name; afterlife Matrix; rádio como adaptação. inspecao ## Escopo\n\nInspeção editorial da canção **«Wake Up»** — **Rage Against the Machine** (álbum homónimo, **3 nov. 1992**, faixa 7). O **início de tudo** é a **obra musical**: rap metal / funk metal do mesmo disco de [Killing in the Name](/posts/post-inspecao-arte-killing-in-the-name.html), protesto que nomeia o **acordar** contra a máquina (média, Estado, sono colectivo). No laboratório BudGanja, o título conversa com [sonhar](/posts/post-inspecao-palavra-sonhar.html) (o sono que se apresenta como chão), com [verdade](/posts/post-inspecao-palavra-verdade.html) (ver sem inventar) e com o fecho de [The Matrix](/posts/post-inspecao-filme-the-matrix.html) (**1999**) — afterlife cultural, **não** génese da faixa. A [BudGanja Radio](/radio/) entra **depois**, como **eco funcional**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [álbum](https://en.wikipedia.org/wiki/Rage_Against_the_Machine_(album)), [OST Matrix](https://en.wikipedia.org/wiki/The_Matrix:_Music_from_the_Motion_Picture), [página oficial da faixa](https://www.ratm.com/track/wake-up/). Crédito: Zack de la Rocha, Tom Morello, Tim Commerford, Brad Wilk / Epic · GGGarth (Garth Richardson). **Sem afiliação**. **Não** é manifesto de violência: inspeciona o **ofício de acordar**. Áudio oficial como referência da **obra**, não como canal YouTube objecto. Distinto de [Killing in the Name](/posts/post-inspecao-arte-killing-in-the-name.html) (mesmo disco, outro verbo) e do *wake-up* da NASA em [Send Me On My Way](/posts/post-inspecao-arte-send-me-on-my-way.html) (Opportunity Sol 21 — **outra** história). **Ficha ≠ letra integral.**\n\n@youtube 4lzqUe1Qfec\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Título | **Wake Up** |\n| Artista | **Rage Against the Machine** |\n| Meio | Canção / faixa de"
+    },
+    {
+      "title": "Inspeção: @ / arroba — *ar-rubʿ* (o quarto); cruzar com olhos (*oculus*); o olho cola, a orelha não; Valeu !!!",
+      "url": "/posts/post-inspecao-palavra-arroba.html",
+      "excerpt": "Palavras: @ / arroba (ár. ar-rubʿ, o peso) × olho / olhos (lat. oculus) — relação de pictograma, não de étimo; menção chama o olhar; Valeu !!!",
+      "text": "Inspeção: @ / arroba — *ar-rubʿ* (o quarto); cruzar com olhos (*oculus*); o olho cola, a orelha não; Valeu !!! Palavras: @ / arroba (ár. ar-rubʿ, o peso) × olho / olhos (lat. oculus) — relação de pictograma, não de étimo; menção chama o olhar; Valeu !!! inspecao ## Escopo\n\nInspeção editorial do glifo **[@](/posts/post-inspecao-palavra-arroba.html)** — nome português **arroba**; inglês *at sign* / *commercial at* (U+0040) — **cruzado**, pelo método de **[relação](/posts/post-inspecao-palavra-relacao.html)**, com **[olho](/posts/post-inspecao-palavra-olho.html)** / **olhos**. Pedido de campo: *relação de @ com olhos*.\n\nDuas salas, um **entre** de vista. O **[olho](/posts/post-inspecao-palavra-olho.html) cola** o pictograma: órbita + *a*-íris. [A orelha](/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html) **não cola** (*arroba* ≠ *olho*). O [étimo](/posts/post-inspecao-palavra-etimo.html) **corta**: ár. *ar-rubʿ* (o quarto / o peso) × lat. *oculus*.\n\n| Forma | Avô | Ofício antigo | Ofício agora |\n|-------|-----|---------------|--------------|\n| **@ / arroba** | ár. [*ar-rubʿ*](https://en.wiktionary.org/wiki/%D8%B1%D8%A8%D8%B9) «o quarto» | unidade de **peso**; depois «à razão de» | glifo de **sítio** (*at*) e de **menção** |\n| **[olho](/posts/post-inspecao-palavra-olho.html) / olhos** | lat. *oculus* | órgão que **vê** | olhar, abertura, broto |\n| **at** (EN) | germânico / uso comercial | preposição de **lugar** | o nome do glifo na rede |\n| **Alcunhas do glifo** | — | caracol, rabo de macaco, cão | **não** são *olho* |\n\n**H-relação:** [relação](/posts/post-inspecao-palavra-relacao.html) = pôr A e B **no entre** sem fundir. A relação pedida é de **olho** (o órgão lê o glifo como olho) e de **ofício** (@ chama o olhar). Não é de **genealogia**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · arroba](https://pt.wiktionary.org/wiki/arroba), EN [*at sign*](https://en.wiktionary.org/wiki/at_sign), [*@*](https://en.wiktionary.org/w"
+    },
+    {
+      "title": "Inspeção: Comprimento, Distância e Relatividade — o metro depende do quadro",
+      "url": "/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html",
+      "excerpt": "Palavras: comprimento × distância × relatividade — vara, vão e teoria do quadro; ≠ cumprimento ≠ relativismo; c não muda de ofício; Valeu !!!",
+      "text": "Inspeção: Comprimento, Distância e Relatividade — o metro depende do quadro Palavras: comprimento × distância × relatividade — vara, vão e teoria do quadro; ≠ cumprimento ≠ relativismo; c não muda de ofício; Valeu !!! inspecao ## Escopo\n\nInspeção editorial do trio **[comprimento](/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html)** · **[distância](/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html)** · **[relatividade](/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html)** — três vocábulos, **uma página**. Pedido de campo: inspeccionar *comprimento, distância e relatividade*. A ficha **separa** o que a fala junta: a **extensão de um objecto**, o **vão entre dois pontos**, e a **teoria** (Einstein, 1905 / 1915) que diz que essas medidas **dependem do quadro** do observador — sem transformar isso em «tudo é relativo».\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · comprimento](https://pt.wiktionary.org/wiki/comprimento), [distância](https://pt.wiktionary.org/wiki/dist%C3%A2ncia), [relatividade](https://pt.wiktionary.org/wiki/relatividade), lat. [*compleō*](https://en.wiktionary.org/wiki/compleo#Latin), [*distantia*](https://en.wiktionary.org/wiki/distantia#Latin), [*relātīvus*](https://en.wiktionary.org/wiki/relativus#Latin), [relatividade restrita](https://pt.wikipedia.org/wiki/Relatividade_restrita), [geral](https://pt.wikipedia.org/wiki/Relatividade_geral), [contração do espaço](https://pt.wikipedia.org/wiki/Contra%C3%A7%C3%A3o_do_espa%C3%A7o). Método: [etimologia](/posts/post-inspecao-palavra-etimologia.html). **Ficha ≠ curso de tensores, ≠ filosofia do relativismo, ≠ manual de GPS.** Sem afiliação a institutos. Fecho: [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n![Capa editorial — comprimento, distância e relatividade](/imagens/inspecoes/comprimento-distancia-relatividade-palavra-cover.jpg)\n\n*Três ofícios no mesmo quadro: a vara (comprimento próprio), o vão (distância), o co"
+    },
+    {
+      "title": "Inspeção: Patia — -patia ← gr. páthos; sentir × sofrer × escola",
+      "url": "/posts/post-inspecao-palavra-patia.html",
+      "excerpt": "Palavras: Patia / -patia ← gr. páthos · -pátheia — afecto × doença × escola × alelopatia; ≠ pato ≠ pátria; Valeu !!!",
+      "text": "Inspeção: Patia — -patia ← gr. páthos; sentir × sofrer × escola Palavras: Patia / -patia ← gr. páthos · -pátheia — afecto × doença × escola × alelopatia; ≠ pato ≠ pátria; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da peça **[Patia](/posts/post-inspecao-palavra-patia.html)** / **[-patia](/posts/post-inspecao-palavra-patia.html)**. Pedido de campo: *inspecionar palavra Patia*.\n\nO português quase **não** usa *patia* sozinha. O que vive na boca é o **sufixo culto** **-patia** (ES *-patía*, EN *-pathy*): a cauda que o grego *πάθος* (*páthos* — sentir, sofrer, padecer) deixou em dezenas de compostos. Esta ficha cobre **a peça**, não cada doença, não cada escola, não o [pato](/posts/post-inspecao-palavra-pato.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · -patia](https://pt.wiktionary.org/wiki/-patia), EN [*-pathy*](https://en.wiktionary.org/wiki/-pathy), gr. [*πάθος*](https://en.wiktionary.org/wiki/%CF%80%CE%AC%CE%B8%CE%BF%CF%82#Ancient_Greek) / [*‑πάθεια*](https://en.wiktionary.org/wiki/-%CF%80%CE%AC%CE%B8%CE%B5%CE%B9%CE%B1#Ancient_Greek), [*pathos*](https://en.wiktionary.org/wiki/pathos), [empatia](https://pt.wikipedia.org/wiki/Empatia), [homeopatia](https://pt.wikipedia.org/wiki/Homeopatia), [neuropatia](https://pt.wikipedia.org/wiki/Neuropatia), [alelopatia](https://pt.wikipedia.org/wiki/Alelopatia), [Patía](https://pt.wikipedia.org/wiki/Pat%C3%ADa). Método: [etimologia](/posts/post-inspecao-palavra-etimologia.html) · [étimo](/posts/post-inspecao-palavra-etimo.html) · [latim](/posts/post-inspecao-palavra-latim.html) · [aglutinação](/posts/post-inspecao-palavra-aglutinacao.html). **Ficha ≠ dicionário clínico, ≠ defesa ou ataque a escolas médicas, ≠ protocolo, ≠ receita de herbicida.** Série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). Solo da [língua portuguesa](/posts/post-inspecao-palavra-lingua-portuguesa.html). Fecho: [Faça o seu melhor](/posts/post-inspecao-expressao-faca-o-melhor.html) · [Valeu !!!](/posts/post-ins"
+    },
+    {
+      "title": "Inspeção: missão comprida — cola do comprimento; canónica cumprida; primos de complēre",
+      "url": "/posts/post-inspecao-expressao-missao-comprida.html",
+      "excerpt": "Expressões: missão comprida — trocadilho sobre missão cumprida (complēre); comprido é primo (extensão); missão é envio; Valeu !!!",
+      "text": "Inspeção: missão comprida — cola do comprimento; canónica cumprida; primos de complēre Expressões: missão comprida — trocadilho sobre missão cumprida (complēre); comprido é primo (extensão); missão é envio; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da expressão **«[missão comprida](/posts/post-inspecao-expressao-missao-comprida.html)»** — o [trocadilho](/posts/post-inspecao-palavra-trocadilho.html) BR que troca o **u** de *cumprida* pelo **o** de *comprida*. Pedido de campo: *inspeção da expressão missão comprida*.\n\nDuas salas, um sopro. A [orelha cola](/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html): **missão** + **comprida** (longa). A norma da locução é **missão cumprida** (feita, executada). O étimo **não funde** as salas — e, no mesmo gesto, **reconhece o parentesco**: *cumprido* e *comprido* nascem da mesma ânfora latina. Objecto = a **locução viva**. Não é briefing militar. Não é aula de metro. Não é o visto «Mission Accomplished» como âncora.\n\n> **Nota metodológica:** auditoria independente. Fontes: [cumprir](https://pt.wiktionary.org/wiki/cumprir), [comprido](https://pt.wiktionary.org/wiki/comprido), [cumprido](https://pt.wiktionary.org/wiki/cumprido), [missão](https://pt.wiktionary.org/wiki/miss%C3%A3o), [compleō](https://en.wiktionary.org/wiki/compleo#Latin), [missiō](https://en.wiktionary.org/wiki/missio#Latin), [mittō](https://en.wiktionary.org/wiki/mitto#Latin), [comprimento](https://pt.wiktionary.org/wiki/comprimento), [cumprimento](https://pt.wiktionary.org/wiki/cumprimento), [mission accomplished](https://en.wiktionary.org/wiki/mission_accomplished), [etimologia popular](https://pt.wikipedia.org/wiki/Etimologia_popular). Método: [etimologia](/posts/post-inspecao-palavra-etimologia.html) — étimo × cola. **Ficha ≠ doutrina de dever, ≠ cronómetro, ≠ bandeira de palco.** Série [Expressões](/biblioteca/inspecoes/#inspecoes-expressoes). Solo da [língua portuguesa](/posts/post-inspecao-palavra-lingua-portuguesa.html). Fecho: ["
+    },
+    {
+      "title": "Vida — Flor Maria Jane Maria, contacto do canal Joana e Maria",
+      "url": "/posts/post-inspecao-personagem-flor-maria-jane-maria.html",
+      "excerpt": "A flor do laboratório: contacto visível do canal Joana e Maria — solo da Dona Maria × guarda da Joana. Jane = Joana em inglês; Maria Jane = outra sala.",
+      "text": "Vida — Flor Maria Jane Maria, contacto do canal Joana e Maria A flor do laboratório: contacto visível do canal Joana e Maria — solo da Dona Maria × guarda da Joana. Jane = Joana em inglês; Maria Jane = outra sala. inspecao ## Escopo\n\nFicha do personagem **Flor Maria Jane Maria** na série [Vida](/vida/) — o **contacto visível** do canal **Joana e Maria**. Pedido de campo: *contato com flor maria jane maria personagem do canal joana e maria*.\n\n> Conteúdo educacional da série Vida. **Ficha ≠ receita de floração, ≠ protocolo clínico, ≠ tutorial de gíria.** Personagem ≠ pessoa civil. Sem afiliação.\n\n## Quem é\n\n| Campo | Valor |\n|-------|-------|\n| Nome | **Flor Maria Jane Maria** |\n| Função | A **flor** do laboratório — o encontro visível quando o solo e a folha trabalham juntos. |\n| Especialidade | Nomear a floração com carinho; lembrar que flor é **desfecho**, não atalho. |\n| Identidade | Personagem do **canal Joana e Maria**: [Joaninha Joana](/posts/post-inspecao-personagem-joaninha-joana.html) (guarda das folhas) + [Dona Maria](/posts/post-inspecao-personagem-dona-maria.html) (mestra do solo). |\n| Gatilho de campo | **contato com Flor Maria Jane Maria** |\n| Série | Vida · contos |\n| Hub | [Vida](/vida/) |\n| História completa | [O Laboratório e a Sementinha](/posts/post-inspecao-conto-vida-laboratorio.html) |\n\n## Canal Joana e Maria\n\nNo laboratório, **canal** não é um handle vazio da internet: é o **par** que conduz o cuidado.\n\n| Peça | Ofício | Ficha |\n|------|--------|-------|\n| **Joana** | Folha, guarda biológica, joaninha | [Joaninha Joana](/posts/post-inspecao-personagem-joaninha-joana.html) |\n| **Maria** | Solo vivo, cama da semente | [Dona Maria](/posts/post-inspecao-personagem-dona-maria.html) |\n| **Flor** | O contacto que **aparece** quando os dois ofícios se encontram | Esta ficha |\n\n**H-canal:** Joana + Maria = o canal. Flor Maria Jane Maria = a personagem **desse** canal, não um terceiro solo nem uma segunda joaninha.\n\n## Contato\n\nO gatilho *contato com…* "
+    },
+    {
+      "title": "Inspeção: Tele — longe no grego, a caixa na sala",
+      "url": "/posts/post-inspecao-palavra-tele.html",
+      "excerpt": "Palavras: tele ← gr. têle (longe); recorte BR «a tele» (TV); ≠ tela (lat. tēla); família telefone/telescópio; Valeu !!!",
+      "text": "Inspeção: Tele — longe no grego, a caixa na sala Palavras: tele ← gr. têle (longe); recorte BR «a tele» (TV); ≠ tela (lat. tēla); família telefone/telescópio; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da palavra **[tele](/posts/post-inspecao-palavra-tele.html)**. Pedido de campo: *isnpeçioanal palavra Tele* → **inspeção na palavra Tele**. Duas salas no mesmo sopro: o **prefixo grego** τῆλε (*têle*) «longe / à distância», e o **recorte brasileiro** *a tele* (= [televisão](https://pt.wiktionary.org/wiki/televis%C3%A3o)). A [orelha cola](/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html) **tele** em **tela**. O [étimo](/posts/post-inspecao-palavra-etimo.html) corta.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · tele](https://pt.wiktionary.org/wiki/tele), gr. [τῆλε](https://en.wiktionary.org/wiki/%CF%84%E1%BF%86%CE%BB%CE%B5#Ancient_Greek), [televisão](https://pt.wiktionary.org/wiki/televis%C3%A3o), [telefone](https://pt.wiktionary.org/wiki/telefone), [tela](https://pt.wiktionary.org/wiki/tela). **Ficha ≠ história da TV, ≠ manual de telecomunicações, ≠ biografia de Telê Santana.** Série [Palavras](/biblioteca/inspecoes/#inspecoes-palavras). Fecho: [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n**Gatilho:** *Tele* / *tele* / *a tele* / smash *isnpeçioanal* → lema **tele**.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Palavra | **tele** |\n| Classes | 1) prefixo / forma combinante · 2) substantivo informal (recorte) |\n| Étimo (trabalho) | gr. τῆλε *têle* «longe, ao longe, à distância» — confiança: **alta** |\n| Recorte BR | *a tele* ← **televisão** (visão ao longe) |\n| Não é | **tela** (lat. *tēla* «pano / tecido» → ecrã) · Telê (alcunha) · til · telex (sistema) |\n| Família (mapa) | telefone · televisão · telescópio · telegrama · telepatia · telecomando · teletrabalho |\n| Elos lab | [ligar](/posts/post-inspecao-palavra-ligar-desligar.html) · [conexão](/posts/post-inspecao-palavra-conexao.html"
     },
     {
       "title": "Inspeção: Maria — Miryam; cruzada com for (para)",
@@ -3173,25 +3305,25 @@
       "title": "Inspeção: Produção animal — Galinha",
       "url": "/posts/post-inspecao-animal-galinha.html",
       "excerpt": "Relatório educacional de Galinha (*Gallus gallus domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem.",
-      "text": "Inspeção: Produção animal — Galinha Relatório educacional de Galinha (*Gallus gallus domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Galinha** (*Gallus gallus domesticus*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/galinha/](/animais/galinha/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Galinha** |\n| Nome científico | *Gallus gallus domesticus* |\n| Família | Phasianidae |\n| Eixo | Produção / indústria |\n| Slug no catálogo | `galinha` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nAve de criação: ovo e carne frescos versus nuggets, embutidos e ultraprocessados de frango da indústria.\n\n## Produtos / partes\n\n- Ovo fresco\n- Carne\n- Penas (não alimentar)\n\n## Criação e usos (catálogo)\n\n- Alimento de baixo processamento\n- Criação familiar e granja\n- Ciclo ovo-pintainho-galinha\n\n## Cuidados\n\nSeparar o animal e o ovo/carne frescos dos derivados industriais ultraprocessados. Conteúdo educacional — não é protocolo nutricional.\n\n\n## Inspeções de derivados de risco\n\n- [Inspeção: Derivados da galinha — ultraprocessados e química industrial](/posts/post-inspecao-derivado-galinha.html)\n\n## Ficha do catálogo\n\nPágina completa: [Galinha](/animais/galinha/)\n\n## Hub\n\nVoltar às [inspeções de produção animal](/biblioteca/inspecoes/#inspecoes-producao).\n"
+      "text": "Inspeção: Produção animal — Galinha Relatório educacional de Galinha (*Gallus gallus domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Galinha** (*Gallus gallus domesticus*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/galinha/](/animais/galinha/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Galinha** |\n| Nome científico | *Gallus gallus domesticus* |\n| Família | Phasianidae |\n| Eixo | Produção / indústria |\n| Slug no catálogo | `galinha` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nAve de criação: ovo e carne frescos versus nuggets, embutidos e ultraprocessados de frango da indústria.\n\n## Produtos / partes\n\n- Ovo fresco\n- Carne\n- Penas (não alimentar)\n\n## Criação e usos (catálogo)\n\n- Alimento de baixo processamento\n- Criação familiar e granja\n- Ciclo ovo-pintainho-galinha\n\n## Cuidados\n\nSeparar o animal e o ovo/carne frescos dos derivados industriais ultraprocessados. Conteúdo educacional — não é protocolo nutricional.\n\n\n## Inspeções de derivados de risco\n\n- [Inspeção: Ração para animais — do saco industrial ao comedouro](/posts/post-inspecao-derivado-racao.html)\n- [Inspeção: Derivados da galinha — ultraprocessados e química industrial](/posts/post-inspecao-derivado-galinha.html)\n\n## Ficha do catálogo\n\nPágina completa: [Galinha](/animais/galinha/)\n\n## Hub\n\nVoltar às [inspeções de produção animal](/biblioteca/inspecoes/#inspecoes-producao).\n"
     },
     {
       "title": "Inspeção: Produção animal — Vaca / boi",
       "url": "/posts/post-inspecao-animal-vaca.html",
       "excerpt": "Relatório educacional de Vaca / boi (*Bos taurus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem.",
-      "text": "Inspeção: Produção animal — Vaca / boi Relatório educacional de Vaca / boi (*Bos taurus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Vaca / boi** (*Bos taurus*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/vaca/](/animais/vaca/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Vaca / boi** |\n| Nome científico | *Bos taurus* |\n| Família | Bovidae |\n| Eixo | Produção / indústria |\n| Slug no catálogo | `vaca` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nBovino de leite e carne: alimento fresco e tradição agrária versus carnes processadas e laticínios ultraprocessados.\n\n## Produtos / partes\n\n- Leite\n- Carne\n- Couro (não alimentar)\n\n## Criação e usos (catálogo)\n\n- Leite e queijos artesanais\n- Carne fresca\n- Tração e paisagem rural histórica\n\n## Cuidados\n\nO animal não é o vilão: o foco editorial é dose, processamento e padrões industriais. Consulte profissionais de saúde e veterinária quando couber.\n\n\n## Inspeções de derivados de risco\n\n- [Inspeção: Caseína — leite bovino e proteína nociva ao organismo](/posts/post-inspecao-derivado-caseina.html)\n- [Inspeção: Derivados da vaca — carnes processadas e laticínios industriais](/posts/post-inspecao-derivado-vaca.html)\n\n## Ficha do catálogo\n\nPágina completa: [Vaca / boi](/animais/vaca/)\n\n## Hub\n\nVoltar às [inspeções de produção animal](/biblioteca/inspecoes/#inspecoes-producao).\n"
+      "text": "Inspeção: Produção animal — Vaca / boi Relatório educacional de Vaca / boi (*Bos taurus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Vaca / boi** (*Bos taurus*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/vaca/](/animais/vaca/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Vaca / boi** |\n| Nome científico | *Bos taurus* |\n| Família | Bovidae |\n| Eixo | Produção / indústria |\n| Slug no catálogo | `vaca` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nBovino de leite e carne: alimento fresco e tradição agrária versus carnes processadas e laticínios ultraprocessados.\n\n## Produtos / partes\n\n- Leite\n- Carne\n- Couro (não alimentar)\n\n## Criação e usos (catálogo)\n\n- Leite e queijos artesanais\n- Carne fresca\n- Tração e paisagem rural histórica\n\n## Cuidados\n\nO animal não é o vilão: o foco editorial é dose, processamento e padrões industriais. Consulte profissionais de saúde e veterinária quando couber.\n\n\n## Inspeções de derivados de risco\n\n- [Inspeção: Ração para animais — do saco industrial ao comedouro](/posts/post-inspecao-derivado-racao.html)\n- [Inspeção: Leite e laticínios — da ordenha à prateleira industrial](/posts/post-inspecao-derivado-leite.html)\n- [Inspeção: Caseína — leite bovino e proteína nociva ao organismo](/posts/post-inspecao-derivado-caseina.html)\n- [Inspeção: Derivados da vaca — carnes processadas e laticínios industriais](/posts/post-inspecao-derivado-vaca.html)\n\n## Ficha do catálogo\n\nPágina completa: [Vaca / boi](/animais/vaca/)\n\n## Hub\n\nVoltar às [inspe"
     },
     {
       "title": "Inspeção: Produção animal — Porco",
       "url": "/posts/post-inspecao-animal-porco.html",
       "excerpt": "Relatório educacional de Porco (*Sus scrofa domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem.",
-      "text": "Inspeção: Produção animal — Porco Relatório educacional de Porco (*Sus scrofa domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Porco** (*Sus scrofa domesticus*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/porco/](/animais/porco/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Porco** |\n| Nome científico | *Sus scrofa domesticus* |\n| Família | Suidae |\n| Eixo | Produção / indústria |\n| Slug no catálogo | `porco` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nSuíno: carne fresca e charcutaria tradicional versus embutidos industriais ricos em sal, nitritos e ultraprocessamento.\n\n## Produtos / partes\n\n- Carne\n- Gordura (banha)\n\n## Criação e usos (catálogo)\n\n- Carne fresca\n- Presunto e linguiça artesanal\n- Banha culinária tradicional\n\n## Cuidados\n\nDistinguir criação e peça fresca de embutidos industriais. Conteúdo educacional.\n\n\n## Inspeções de derivados de risco\n\n- [Inspeção: Derivados do porco — embutidos e química industrial](/posts/post-inspecao-derivado-porco.html)\n\n## Ficha do catálogo\n\nPágina completa: [Porco](/animais/porco/)\n\n## Hub\n\nVoltar às [inspeções de produção animal](/biblioteca/inspecoes/#inspecoes-producao).\n"
+      "text": "Inspeção: Produção animal — Porco Relatório educacional de Porco (*Sus scrofa domesticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Porco** (*Sus scrofa domesticus*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/porco/](/animais/porco/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Porco** |\n| Nome científico | *Sus scrofa domesticus* |\n| Família | Suidae |\n| Eixo | Produção / indústria |\n| Slug no catálogo | `porco` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nSuíno: carne fresca e charcutaria tradicional versus embutidos industriais ricos em sal, nitritos e ultraprocessamento.\n\n## Produtos / partes\n\n- Carne\n- Gordura (banha)\n\n## Criação e usos (catálogo)\n\n- Carne fresca\n- Presunto e linguiça artesanal\n- Banha culinária tradicional\n\n## Cuidados\n\nDistinguir criação e peça fresca de embutidos industriais. Conteúdo educacional.\n\n\n## Inspeções de derivados de risco\n\n- [Inspeção: Ração para animais — do saco industrial ao comedouro](/posts/post-inspecao-derivado-racao.html)\n- [Inspeção: Derivados do porco — embutidos e química industrial](/posts/post-inspecao-derivado-porco.html)\n\n## Ficha do catálogo\n\nPágina completa: [Porco](/animais/porco/)\n\n## Hub\n\nVoltar às [inspeções de produção animal](/biblioteca/inspecoes/#inspecoes-producao).\n"
     },
     {
       "title": "Inspeção: Produção animal — Tilápia",
       "url": "/posts/post-inspecao-animal-peixe-tilapia.html",
       "excerpt": "Relatório educacional de Tilápia (*Oreochromis niloticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem.",
-      "text": "Inspeção: Produção animal — Tilápia Relatório educacional de Tilápia (*Oreochromis niloticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Tilápia** (*Oreochromis niloticus*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/peixe-tilapia/](/animais/peixe-tilapia/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Tilápia** |\n| Nome científico | *Oreochromis niloticus* |\n| Família | Cichlidae |\n| Eixo | Produção / indústria |\n| Slug no catálogo | `peixe-tilapia` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nPeixe de aquicultura comum no Brasil: filé fresco versus empanados, nuggets e ultraprocessados de peixe.\n\n## Produtos / partes\n\n- Filé\n- Peixe inteiro\n\n## Criação e usos (catálogo)\n\n- Alimento fresco\n- Aquicultura familiar e industrial\n- Proteína de baixo processamento\n\n## Cuidados\n\nA tilápia fresca não é o mesmo produto que o empanado industrial. Avaliar origem e processamento.\n\n\n## Inspeções de derivados de risco\n\n- [Inspeção: Derivados do peixe — empanados e ultraprocessados](/posts/post-inspecao-derivado-peixe.html)\n\n## Ficha do catálogo\n\nPágina completa: [Tilápia](/animais/peixe-tilapia/)\n\n## Hub\n\nVoltar às [inspeções de produção animal](/biblioteca/inspecoes/#inspecoes-producao).\n"
+      "text": "Inspeção: Produção animal — Tilápia Relatório educacional de Tilápia (*Oreochromis niloticus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Tilápia** (*Oreochromis niloticus*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/peixe-tilapia/](/animais/peixe-tilapia/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Tilápia** |\n| Nome científico | *Oreochromis niloticus* |\n| Família | Cichlidae |\n| Eixo | Produção / indústria |\n| Slug no catálogo | `peixe-tilapia` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nPeixe de aquicultura comum no Brasil: filé fresco versus empanados, nuggets e ultraprocessados de peixe.\n\n## Produtos / partes\n\n- Filé\n- Peixe inteiro\n\n## Criação e usos (catálogo)\n\n- Alimento fresco\n- Aquicultura familiar e industrial\n- Proteína de baixo processamento\n\n## Cuidados\n\nA tilápia fresca não é o mesmo produto que o empanado industrial. Avaliar origem e processamento.\n\n\n## Inspeções de derivados de risco\n\n- [Inspeção: Ração para animais — do saco industrial ao comedouro](/posts/post-inspecao-derivado-racao.html)\n- [Inspeção: Derivados do peixe — empanados e ultraprocessados](/posts/post-inspecao-derivado-peixe.html)\n\n## Ficha do catálogo\n\nPágina completa: [Tilápia](/animais/peixe-tilapia/)\n\n## Hub\n\nVoltar às [inspeções de produção animal](/biblioteca/inspecoes/#inspecoes-producao).\n"
     },
     {
       "title": "Inspeção: Produção animal — Abelha",
@@ -3203,19 +3335,19 @@
       "title": "Inspeção: Animal — Cão",
       "url": "/posts/post-inspecao-animal-cao.html",
       "excerpt": "Relatório educacional de Cão (*Canis lupus familiaris): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem.",
-      "text": "Inspeção: Animal — Cão Relatório educacional de Cão (*Canis lupus familiaris): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Cão** (*Canis lupus familiaris*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/cao/](/animais/cao/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Cão** |\n| Nome científico | *Canis lupus familiaris* |\n| Família | Canidae |\n| Eixo | Companhia |\n| Slug no catálogo | `cao` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nCompanheiro humano: bem-estar, alimentação responsável e distância crítica da indústria de pet food ultraprocessada de baixa qualidade.\n\n## Produtos / partes\n\n- Companhia\n- Trabalho (guarda, pastoreio, assistência)\n\n## Criação e usos (catálogo)\n\n- Companhia\n- Guarda\n- Pastoreio\n- Apoio a pessoas\n\n## Cuidados\n\nBem-estar animal e nutrição veterinária têm primazia. Rações e petiscos industriais variam muito em qualidade — ler rótulos e consultar veterinário.\n\n## Ficha do catálogo\n\nPágina completa: [Cão](/animais/cao/)\n\n## Hub\n\nVoltar às [inspeções de animais](/biblioteca/inspecoes/#inspecoes-animais).\n"
+      "text": "Inspeção: Animal — Cão Relatório educacional de Cão (*Canis lupus familiaris): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Cão** (*Canis lupus familiaris*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/cao/](/animais/cao/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Cão** |\n| Nome científico | *Canis lupus familiaris* |\n| Família | Canidae |\n| Eixo | Companhia |\n| Slug no catálogo | `cao` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nCompanheiro humano: bem-estar, alimentação responsável e distância crítica da indústria de pet food ultraprocessada de baixa qualidade.\n\n## Produtos / partes\n\n- Companhia\n- Trabalho (guarda, pastoreio, assistência)\n\n## Criação e usos (catálogo)\n\n- Companhia\n- Guarda\n- Pastoreio\n- Apoio a pessoas\n\n## Cuidados\n\nBem-estar animal e nutrição veterinária têm primazia. Rações e petiscos industriais variam muito em qualidade — ler rótulos e consultar veterinário.\n\n\n## Inspeções de derivados de risco\n\n- [Inspeção: Ração para animais — do saco industrial ao comedouro](/posts/post-inspecao-derivado-racao.html)\n\n## Ficha do catálogo\n\nPágina completa: [Cão](/animais/cao/)\n\n## Hub\n\nVoltar às [inspeções de animais](/biblioteca/inspecoes/#inspecoes-animais).\n"
     },
     {
       "title": "Inspeção: Animal — Gato",
       "url": "/posts/post-inspecao-animal-gato.html",
       "excerpt": "Relatório educacional de Gato (*Felis catus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem.",
-      "text": "Inspeção: Animal — Gato Relatório educacional de Gato (*Felis catus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Gato** (*Felis catus*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/gato/](/animais/gato/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Gato** |\n| Nome científico | *Felis catus* |\n| Família | Felidae |\n| Eixo | Companhia |\n| Slug no catálogo | `gato` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nFelino doméstico: companhia, etologia e cuidados — com atenção a toxinas domésticas e à indústria pet.\n\n## Produtos / partes\n\n- Companhia\n\n## Criação e usos (catálogo)\n\n- Companhia\n- Controlo de roedores em contexto rural histórico\n\n## Cuidados\n\nVárias plantas e alimentos humanos são tóxicos para gatos (ex.: lírios, chocolate, cebola). Rações e petiscos: critério veterinário.\n\n## Ficha do catálogo\n\nPágina completa: [Gato](/animais/gato/)\n\n## Hub\n\nVoltar às [inspeções de animais](/biblioteca/inspecoes/#inspecoes-animais).\n"
+      "text": "Inspeção: Animal — Gato Relatório educacional de Gato (*Felis catus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Gato** (*Felis catus*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/gato/](/animais/gato/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Gato** |\n| Nome científico | *Felis catus* |\n| Família | Felidae |\n| Eixo | Companhia |\n| Slug no catálogo | `gato` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nFelino doméstico: companhia, etologia e cuidados — com atenção a toxinas domésticas e à indústria pet.\n\n## Produtos / partes\n\n- Companhia\n\n## Criação e usos (catálogo)\n\n- Companhia\n- Controlo de roedores em contexto rural histórico\n\n## Cuidados\n\nVárias plantas e alimentos humanos são tóxicos para gatos (ex.: lírios, chocolate, cebola). Rações e petiscos: critério veterinário.\n\n\n## Inspeções de derivados de risco\n\n- [Inspeção: Ração para animais — do saco industrial ao comedouro](/posts/post-inspecao-derivado-racao.html)\n\n## Ficha do catálogo\n\nPágina completa: [Gato](/animais/gato/)\n\n## Hub\n\nVoltar às [inspeções de animais](/biblioteca/inspecoes/#inspecoes-animais).\n"
     },
     {
       "title": "Inspeção: Animal — Cavalo",
       "url": "/posts/post-inspecao-animal-cavalo.html",
       "excerpt": "Relatório educacional de Cavalo (*Equus ferus caballus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem.",
-      "text": "Inspeção: Animal — Cavalo Relatório educacional de Cavalo (*Equus ferus caballus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Cavalo** (*Equus ferus caballus*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/cavalo/](/animais/cavalo/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Cavalo** |\n| Nome científico | *Equus ferus caballus* |\n| Família | Equidae |\n| Eixo | Companhia |\n| Slug no catálogo | `cavalo` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nEquídeo de trabalho, desporto e companhia — tradição rural brasileira e ética do bem-estar equino.\n\n## Produtos / partes\n\n- Trabalho\n- Desporto\n- Companhia\n\n## Criação e usos (catálogo)\n\n- Tração e transporte histórico\n- Pastoreio\n- Hipismo e lazer\n\n## Cuidados\n\nBem-estar, casqueamento e nutrição equina exigem profissionais. Conteúdo educacional.\n\n## Ficha do catálogo\n\nPágina completa: [Cavalo](/animais/cavalo/)\n\n## Hub\n\nVoltar às [inspeções de animais](/biblioteca/inspecoes/#inspecoes-animais).\n"
+      "text": "Inspeção: Animal — Cavalo Relatório educacional de Cavalo (*Equus ferus caballus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Cavalo** (*Equus ferus caballus*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/cavalo/](/animais/cavalo/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Cavalo** |\n| Nome científico | *Equus ferus caballus* |\n| Família | Equidae |\n| Eixo | Companhia |\n| Slug no catálogo | `cavalo` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nEquídeo de trabalho, desporto e companhia — tradição rural brasileira e ética do bem-estar equino.\n\n## Produtos / partes\n\n- Trabalho\n- Desporto\n- Companhia\n\n## Criação e usos (catálogo)\n\n- Tração e transporte histórico\n- Pastoreio\n- Hipismo e lazer\n\n## Cuidados\n\nBem-estar, casqueamento e nutrição equina exigem profissionais. Conteúdo educacional.\n\n\n## Inspeções de derivados de risco\n\n- [Inspeção: Ração para animais — do saco industrial ao comedouro](/posts/post-inspecao-derivado-racao.html)\n\n## Ficha do catálogo\n\nPágina completa: [Cavalo](/animais/cavalo/)\n\n## Hub\n\nVoltar às [inspeções de animais](/biblioteca/inspecoes/#inspecoes-animais).\n"
     },
     {
       "title": "Inspeção: Annie Leonard — divulgação da economia dos materiais e elo com A História das Coisas",
@@ -3419,31 +3551,31 @@
       "title": "Vida — Three Little Birds, o esquadrão da alegria",
       "url": "/posts/post-inspecao-personagem-three-little-birds.html",
       "excerpt": "Trio de pássaros-IA: contas precisas, diário organizado e DJ Brisa na harmonia — do semente ao sênior.",
-      "text": "Vida — Three Little Birds, o esquadrão da alegria Trio de pássaros-IA: contas precisas, diário organizado e DJ Brisa na harmonia — do semente ao sênior. inspecao ## Escopo\n\nFicha do personagem **Three Little Birds** na série [Vida](/vida/) — conto do laboratório sobre cuidar de plantas com carinho. Fonte narrativa do laboratório BudGanja.\n\n> Conteúdo educacional da série Vida.\n\n## Quem é\n\n| Campo | Valor |\n|-------|-------|\n| Nome | **Three Little Birds** |\n| Função | Suporte de IA dividido em três: técnica, rotina e comunicação. |\n| Especialidade | Verde = calculadoras; Amarelo = Diário de Pesquisas; Brisa = rádio e clima afetivo do laboratório. |\n| Identidade | Esquadrão que guia desde a semente até Cultivador Sênior — tecnologia leve com coração reggae. |\n| Série | Vida · contos |\n| Hub | [Vida](/vida/) |\n| História completa | [O Laboratório e a Sementinha](/posts/post-inspecao-conto-vida-laboratorio.html) |\n\n## O que ensina\n\n- Contar gotas e nutrientes com responsabilidade (Passarinho Verde).  \n- Não esquecer o plano — anotar é cuidar (Passarinho Amarelo).  \n- Manter a alegria no laboratório (DJ Brisa).\n\n## Na prática\n\n- Abrir o [Diário](/cultivo/) e marcar «tarefa do dia».  \n- Explorar uma [calculadora](/calculadoras/) e recordar: «números também são amigos».  \n- Dançar com a [Rádio](/radio/).\n\n## Elos\n\n- [História completa](/posts/post-inspecao-conto-vida-laboratorio.html) · hub [Vida](/vida/)\n- Equipe: [Inspetor](/posts/post-inspecao-personagem-inspetor.html) · [Dona Maria](/posts/post-inspecao-personagem-dona-maria.html) · [DJ Brisa](/posts/post-inspecao-personagem-dj-brisa.html) · [Joana](/posts/post-inspecao-personagem-joaninha-joana.html) · [Three Little Birds](/posts/post-inspecao-personagem-three-little-birds.html)\n- [Diário](/cultivo/) · [Ferramentas](/calculadoras/) · [Rádio](/radio/) · [DJ Brisa](/posts/post-inspecao-personagem-dj-brisa.html)\n\n## Status\n\n**Publicado** — personagem da série Vida (2026-08-01)."
+      "text": "Vida — Three Little Birds, o esquadrão da alegria Trio de pássaros-IA: contas precisas, diário organizado e DJ Brisa na harmonia — do semente ao sênior. inspecao ## Escopo\n\nFicha do personagem **Three Little Birds** na série [Vida](/vida/) — conto do laboratório sobre cuidar de plantas com carinho. Fonte narrativa do laboratório BudGanja.\n\n> Conteúdo educacional da série Vida.\n\n## Quem é\n\n| Campo | Valor |\n|-------|-------|\n| Nome | **Three Little Birds** |\n| Função | Suporte de IA dividido em três: técnica, rotina e comunicação. |\n| Especialidade | Verde = calculadoras; Amarelo = Diário de Pesquisas; Brisa = rádio e clima afetivo do laboratório. |\n| Identidade | Esquadrão que guia desde a semente até Cultivador Sênior — tecnologia leve com coração reggae. |\n| Série | Vida · contos |\n| Hub | [Vida](/vida/) |\n| História completa | [O Laboratório e a Sementinha](/posts/post-inspecao-conto-vida-laboratorio.html) |\n\n## O que ensina\n\n- Contar gotas e nutrientes com responsabilidade (Passarinho Verde).  \n- Não esquecer o plano — anotar é cuidar (Passarinho Amarelo).  \n- Manter a alegria no laboratório (DJ Brisa).\n\n## Na prática\n\n- Abrir o [Diário](/cultivo/) e marcar «tarefa do dia».  \n- Explorar uma [calculadora](/calculadoras/) e recordar: «números também são amigos».  \n- Dançar com a [Rádio](/radio/).\n\n## Elos\n\n- [História completa](/posts/post-inspecao-conto-vida-laboratorio.html) · hub [Vida](/vida/)\n- Equipe: [Inspetor](/posts/post-inspecao-personagem-inspetor.html) · [Dona Maria](/posts/post-inspecao-personagem-dona-maria.html) · [DJ Brisa](/posts/post-inspecao-personagem-dj-brisa.html) · [Joana](/posts/post-inspecao-personagem-joaninha-joana.html) · [Flor Maria Jane Maria](/posts/post-inspecao-personagem-flor-maria-jane-maria.html) · [Three Little Birds](/posts/post-inspecao-personagem-three-little-birds.html)\n- [Diário](/cultivo/) · [Ferramentas](/calculadoras/) · [Rádio](/radio/) · [DJ Brisa](/posts/post-inspecao-personagem-dj-brisa.html)\n\n## Status\n\n**Publicado"
     },
     {
       "title": "Vida — Joaninha Joana, guardiã biológica",
       "url": "/posts/post-inspecao-personagem-joaninha-joana.html",
       "excerpt": "Pet da Dona Maria e ícone do controle biológico: protege as folhas sem veneno químico.",
-      "text": "Vida — Joaninha Joana, guardiã biológica Pet da Dona Maria e ícone do controle biológico: protege as folhas sem veneno químico. inspecao ## Escopo\n\nFicha do personagem **Joaninha Joana** na série [Vida](/vida/) — conto do laboratório sobre cuidar de plantas com carinho. Fonte narrativa do laboratório BudGanja.\n\n> Conteúdo educacional da série Vida.\n\n## Quem é\n\n| Campo | Valor |\n|-------|-------|\n| Nome | **Joaninha Joana** |\n| Função | Especialista em controle biológico natural — a «segurança» das plantas. |\n| Especialidade | Vigiar folhas contra pragas (os «monstros» como pulgões) de forma orgânica. |\n| Identidade | Pet de estimação da Dona Maria — pureza e proteção orgânica do laboratório. |\n| Série | Vida · contos |\n| Hub | [Vida](/vida/) |\n| História completa | [O Laboratório e a Sementinha](/posts/post-inspecao-conto-vida-laboratorio.html) |\n\n## O que ensina\n\n- Nem todo bichinho é inimigo — muitos são **amigos do jardim**.  \n- Proteger sem destruir o equilíbrio.  \n- Observar as folhas todos os dias.\n\n## Na prática\n\n- Procurar joaninhas no jardim ou num livro de insetos.  \n- Desenhar a Joana a «espantar» um pulgão (sem medo, com humor).\n\n## Elos\n\n- [História completa](/posts/post-inspecao-conto-vida-laboratorio.html) · hub [Vida](/vida/)\n- Equipe: [Inspetor](/posts/post-inspecao-personagem-inspetor.html) · [Dona Maria](/posts/post-inspecao-personagem-dona-maria.html) · [DJ Brisa](/posts/post-inspecao-personagem-dj-brisa.html) · [Joana](/posts/post-inspecao-personagem-joaninha-joana.html) · [Three Little Birds](/posts/post-inspecao-personagem-three-little-birds.html)\n- Catálogo: [Plantas](/plantas/)\n\n## Status\n\n**Publicado** — personagem da série Vida (2026-08-01)."
+      "text": "Vida — Joaninha Joana, guardiã biológica Pet da Dona Maria e ícone do controle biológico: protege as folhas sem veneno químico. inspecao ## Escopo\n\nFicha do personagem **Joaninha Joana** na série [Vida](/vida/) — conto do laboratório sobre cuidar de plantas com carinho. Fonte narrativa do laboratório BudGanja.\n\n> Conteúdo educacional da série Vida.\n\n## Quem é\n\n| Campo | Valor |\n|-------|-------|\n| Nome | **Joaninha Joana** |\n| Função | Especialista em controle biológico natural — a «segurança» das plantas. |\n| Especialidade | Vigiar folhas contra pragas (os «monstros» como pulgões) de forma orgânica. |\n| Identidade | Pet de estimação da Dona Maria — pureza e proteção orgânica do laboratório. |\n| Série | Vida · contos |\n| Hub | [Vida](/vida/) |\n| História completa | [O Laboratório e a Sementinha](/posts/post-inspecao-conto-vida-laboratorio.html) |\n\n## O que ensina\n\n- Nem todo bichinho é inimigo — muitos são **amigos do jardim**.  \n- Proteger sem destruir o equilíbrio.  \n- Observar as folhas todos os dias.\n\n## Na prática\n\n- Procurar joaninhas no jardim ou num livro de insetos.  \n- Desenhar a Joana a «espantar» um pulgão (sem medo, com humor).\n\n## Elos\n\n- [História completa](/posts/post-inspecao-conto-vida-laboratorio.html) · hub [Vida](/vida/)\n- Equipe: [Inspetor](/posts/post-inspecao-personagem-inspetor.html) · [Dona Maria](/posts/post-inspecao-personagem-dona-maria.html) · [DJ Brisa](/posts/post-inspecao-personagem-dj-brisa.html) · [Joana](/posts/post-inspecao-personagem-joaninha-joana.html) · [Flor Maria Jane Maria](/posts/post-inspecao-personagem-flor-maria-jane-maria.html) · [Three Little Birds](/posts/post-inspecao-personagem-three-little-birds.html)\n- Catálogo: [Plantas](/plantas/)\n\n## Status\n\n**Publicado** — personagem da série Vida (2026-08-01)."
     },
     {
       "title": "Vida — DJ Brisa, a voz da harmonia",
       "url": "/posts/post-inspecao-personagem-dj-brisa.html",
       "excerpt": "Arara DJ da Rádio BudGanja: torna o aprendizado leve, animado e cheio de boa vibração.",
-      "text": "Vida — DJ Brisa, a voz da harmonia Arara DJ da Rádio BudGanja: torna o aprendizado leve, animado e cheio de boa vibração. inspecao ## Escopo\n\nFicha do personagem **DJ Brisa** na série [Vida](/vida/) — conto do laboratório sobre cuidar de plantas com carinho. Fonte narrativa do laboratório BudGanja.\n\n> Conteúdo educacional da série Vida.\n\n## Quem é\n\n| Campo | Valor |\n|-------|-------|\n| Nome | **DJ Brisa** |\n| Função | DJ oficial da Rádio BudGanja e interface de comunicação da IA — educação com vibe. |\n| Especialidade | Rádio, ritmo e interação: lembra que aprender pode ser alegre. |\n| Identidade | Arara animada que lidera o esquadrão de pássaros — *every little thing is gonna be alright*. |\n| Série | Vida · contos |\n| Hub | [Vida](/vida/) |\n| História completa | [O Laboratório e a Sementinha](/posts/post-inspecao-conto-vida-laboratorio.html) |\n\n## O que ensina\n\n- Plantas (e pessoas) crescem melhor com **alegria**.  \n- Música dá ritmo ao cuidado.  \n- Comunicar com carinho faz parte do cultivo.\n\n## Na prática\n\n- Ouvir a [Rádio BudGanja](/radio/) enquanto rega.  \n- Inventar uma «música da rega» de 30 segundos.\n\n## Elos\n\n- [História completa](/posts/post-inspecao-conto-vida-laboratorio.html) · hub [Vida](/vida/)\n- Equipe: [Inspetor](/posts/post-inspecao-personagem-inspetor.html) · [Dona Maria](/posts/post-inspecao-personagem-dona-maria.html) · [DJ Brisa](/posts/post-inspecao-personagem-dj-brisa.html) · [Joana](/posts/post-inspecao-personagem-joaninha-joana.html) · [Three Little Birds](/posts/post-inspecao-personagem-three-little-birds.html)\n- [Rádio BudGanja](/radio/)\n\n## Status\n\n**Publicado** — personagem da série Vida (2026-08-01)."
+      "text": "Vida — DJ Brisa, a voz da harmonia Arara DJ da Rádio BudGanja: torna o aprendizado leve, animado e cheio de boa vibração. inspecao ## Escopo\n\nFicha do personagem **DJ Brisa** na série [Vida](/vida/) — conto do laboratório sobre cuidar de plantas com carinho. Fonte narrativa do laboratório BudGanja.\n\n> Conteúdo educacional da série Vida.\n\n## Quem é\n\n| Campo | Valor |\n|-------|-------|\n| Nome | **DJ Brisa** |\n| Função | DJ oficial da Rádio BudGanja e interface de comunicação da IA — educação com vibe. |\n| Especialidade | Rádio, ritmo e interação: lembra que aprender pode ser alegre. |\n| Identidade | Arara animada que lidera o esquadrão de pássaros — *every little thing is gonna be alright*. |\n| Série | Vida · contos |\n| Hub | [Vida](/vida/) |\n| História completa | [O Laboratório e a Sementinha](/posts/post-inspecao-conto-vida-laboratorio.html) |\n\n## O que ensina\n\n- Plantas (e pessoas) crescem melhor com **alegria**.  \n- Música dá ritmo ao cuidado.  \n- Comunicar com carinho faz parte do cultivo.\n\n## Na prática\n\n- Ouvir a [Rádio BudGanja](/radio/) enquanto rega.  \n- Inventar uma «música da rega» de 30 segundos.\n\n## Elos\n\n- [História completa](/posts/post-inspecao-conto-vida-laboratorio.html) · hub [Vida](/vida/)\n- Equipe: [Inspetor](/posts/post-inspecao-personagem-inspetor.html) · [Dona Maria](/posts/post-inspecao-personagem-dona-maria.html) · [DJ Brisa](/posts/post-inspecao-personagem-dj-brisa.html) · [Joana](/posts/post-inspecao-personagem-joaninha-joana.html) · [Flor Maria Jane Maria](/posts/post-inspecao-personagem-flor-maria-jane-maria.html) · [Three Little Birds](/posts/post-inspecao-personagem-three-little-birds.html)\n- [Rádio BudGanja](/radio/)\n\n## Status\n\n**Publicado** — personagem da série Vida (2026-08-01)."
     },
     {
       "title": "Vida — Dona Maria, mestra do solo",
       "url": "/posts/post-inspecao-personagem-dona-maria.html",
       "excerpt": "Mãe do Inspetor e guardiã do Super Solo: o coração orgânico do laboratório — terra viva e carinho.",
-      "text": "Vida — Dona Maria, mestra do solo Mãe do Inspetor e guardiã do Super Solo: o coração orgânico do laboratório — terra viva e carinho. inspecao ## Escopo\n\nFicha do personagem **Dona Maria** na série [Vida](/vida/) — conto do laboratório sobre cuidar de plantas com carinho. Fonte narrativa do laboratório BudGanja.\n\n> Conteúdo educacional da série Vida.\n\n## Quem é\n\n| Campo | Valor |\n|-------|-------|\n| Nome | **Dona Maria** |\n| Função | Matriarca e guardiã da sabedoria orgânica e ancestral do laboratório. |\n| Especialidade | Super Solo, fertilizantes tradicionais e vida microbiana («Chá Microbiano»). |\n| Identidade | Mãe do Inspetor — o «coração» do projeto: alta tecnologia do filho em equilíbrio com a terra viva. |\n| Série | Vida · contos |\n| Hub | [Vida](/vida/) |\n| História completa | [O Laboratório e a Sementinha](/posts/post-inspecao-conto-vida-laboratorio.html) |\n\n## O que ensina\n\n- Solo é **cama** da semente: fofinho, nutritivo e vivo.  \n- Carinho conta tanto quanto a receita.  \n- Natureza e ciência não são inimigas — dançam juntas.\n\n## Na prática\n\n- Explorar a [calculadora Super Solo](/calculadoras/super-solo.html).  \n- Montar um vasinho com terra boa e recordar: «aqui dorme a semente».\n\n## Elos\n\n- [História completa](/posts/post-inspecao-conto-vida-laboratorio.html) · hub [Vida](/vida/)\n- Equipe: [Inspetor](/posts/post-inspecao-personagem-inspetor.html) · [Dona Maria](/posts/post-inspecao-personagem-dona-maria.html) · [DJ Brisa](/posts/post-inspecao-personagem-dj-brisa.html) · [Joana](/posts/post-inspecao-personagem-joaninha-joana.html) · [Three Little Birds](/posts/post-inspecao-personagem-three-little-birds.html)\n- Ferramenta: [Super Solo](/calculadoras/super-solo.html)\n\n## Status\n\n**Publicado** — personagem da série Vida (2026-08-01)."
+      "text": "Vida — Dona Maria, mestra do solo Mãe do Inspetor e guardiã do Super Solo: o coração orgânico do laboratório — terra viva e carinho. inspecao ## Escopo\n\nFicha do personagem **Dona Maria** na série [Vida](/vida/) — conto do laboratório sobre cuidar de plantas com carinho. Fonte narrativa do laboratório BudGanja.\n\n> Conteúdo educacional da série Vida.\n\n## Quem é\n\n| Campo | Valor |\n|-------|-------|\n| Nome | **Dona Maria** |\n| Função | Matriarca e guardiã da sabedoria orgânica e ancestral do laboratório. |\n| Especialidade | Super Solo, fertilizantes tradicionais e vida microbiana («Chá Microbiano»). |\n| Identidade | Mãe do Inspetor — o «coração» do projeto: alta tecnologia do filho em equilíbrio com a terra viva. |\n| Série | Vida · contos |\n| Hub | [Vida](/vida/) |\n| História completa | [O Laboratório e a Sementinha](/posts/post-inspecao-conto-vida-laboratorio.html) |\n\n## O que ensina\n\n- Solo é **cama** da semente: fofinho, nutritivo e vivo.  \n- Carinho conta tanto quanto a receita.  \n- Natureza e ciência não são inimigas — dançam juntas.\n\n## Na prática\n\n- Explorar a [calculadora Super Solo](/calculadoras/super-solo.html).  \n- Montar um vasinho com terra boa e recordar: «aqui dorme a semente».\n\n## Elos\n\n- [História completa](/posts/post-inspecao-conto-vida-laboratorio.html) · hub [Vida](/vida/)\n- Equipe: [Inspetor](/posts/post-inspecao-personagem-inspetor.html) · [Dona Maria](/posts/post-inspecao-personagem-dona-maria.html) · [DJ Brisa](/posts/post-inspecao-personagem-dj-brisa.html) · [Joana](/posts/post-inspecao-personagem-joaninha-joana.html) · [Flor Maria Jane Maria](/posts/post-inspecao-personagem-flor-maria-jane-maria.html) · [Three Little Birds](/posts/post-inspecao-personagem-three-little-birds.html)\n- Ferramenta: [Super Solo](/calculadoras/super-solo.html)\n\n## Status\n\n**Publicado** — personagem da série Vida (2026-08-01)."
     },
     {
       "title": "Vida — O Inspetor, detetive botânico",
       "url": "/posts/post-inspecao-personagem-inspetor.html",
       "excerpt": "Detetive botânico de chapéu engraçado e braço de bronze: mede luz e clima para a planta crescer feliz.",
-      "text": "Vida — O Inspetor, detetive botânico Detetive botânico de chapéu engraçado e braço de bronze: mede luz e clima para a planta crescer feliz. inspecao ## Escopo\n\nFicha do personagem **O Inspetor** na série [Vida](/vida/) — conto do laboratório sobre cuidar de plantas com carinho. Fonte narrativa do laboratório BudGanja.\n\n> Conteúdo educacional da série Vida.\n\n## Quem é\n\n| Campo | Valor |\n|-------|-------|\n| Nome | **O Inspetor** |\n| Função | Autoridade técnica — inspeciona o «hardware» do cuidado (luz, ar, ferramentas) com rigor simpático. |\n| Especialidade | Braço mecânico de bronze, lupa, Luxímetro e medidores de clima (VPD/DLI). |\n| Identidade | Une mistério (braço enigmático) com o rigor do Diário de Pesquisas — o detetive das folhas. |\n| Série | Vida · contos |\n| Hub | [Vida](/vida/) |\n| História completa | [O Laboratório e a Sementinha](/posts/post-inspecao-conto-vida-laboratorio.html) |\n\n## O que ensina\n\n- Observar antes de agir: olhar a planta é o primeiro instrumento.  \n- Usar ferramentas para **ajudar**, não para complicar.  \n- Ciência pode ser divertida — números também cuidam.\n\n## Na prática\n\n- Experimentar o [Luxímetro](/calculadoras/luximetro.html) e falar sobre «luz boa».  \n- Anotar no [Diário](/cultivo/) uma observação por dia («hoje a folha abriu»).\n\n## Elos\n\n- [História completa](/posts/post-inspecao-conto-vida-laboratorio.html) · hub [Vida](/vida/)\n- Equipe: [Inspetor](/posts/post-inspecao-personagem-inspetor.html) · [Dona Maria](/posts/post-inspecao-personagem-dona-maria.html) · [DJ Brisa](/posts/post-inspecao-personagem-dj-brisa.html) · [Joana](/posts/post-inspecao-personagem-joaninha-joana.html) · [Three Little Birds](/posts/post-inspecao-personagem-three-little-birds.html)\n- Ferramentas: [Luxímetro](/calculadoras/luximetro.html) · [Diário](/cultivo/)\n\n## Status\n\n**Publicado** — personagem da série Vida (2026-08-01)."
+      "text": "Vida — O Inspetor, detetive botânico Detetive botânico de chapéu engraçado e braço de bronze: mede luz e clima para a planta crescer feliz. inspecao ## Escopo\n\nFicha do personagem **O Inspetor** na série [Vida](/vida/) — conto do laboratório sobre cuidar de plantas com carinho. Fonte narrativa do laboratório BudGanja.\n\n> Conteúdo educacional da série Vida.\n\n## Quem é\n\n| Campo | Valor |\n|-------|-------|\n| Nome | **O Inspetor** |\n| Função | Autoridade técnica — inspeciona o «hardware» do cuidado (luz, ar, ferramentas) com rigor simpático. |\n| Especialidade | Braço mecânico de bronze, lupa, Luxímetro e medidores de clima (VPD/DLI). |\n| Identidade | Une mistério (braço enigmático) com o rigor do Diário de Pesquisas — o detetive das folhas. |\n| Série | Vida · contos |\n| Hub | [Vida](/vida/) |\n| História completa | [O Laboratório e a Sementinha](/posts/post-inspecao-conto-vida-laboratorio.html) |\n\n## O que ensina\n\n- Observar antes de agir: olhar a planta é o primeiro instrumento.  \n- Usar ferramentas para **ajudar**, não para complicar.  \n- Ciência pode ser divertida — números também cuidam.\n\n## Na prática\n\n- Experimentar o [Luxímetro](/calculadoras/luximetro.html) e falar sobre «luz boa».  \n- Anotar no [Diário](/cultivo/) uma observação por dia («hoje a folha abriu»).\n\n## Elos\n\n- [História completa](/posts/post-inspecao-conto-vida-laboratorio.html) · hub [Vida](/vida/)\n- Equipe: [Inspetor](/posts/post-inspecao-personagem-inspetor.html) · [Dona Maria](/posts/post-inspecao-personagem-dona-maria.html) · [DJ Brisa](/posts/post-inspecao-personagem-dj-brisa.html) · [Joana](/posts/post-inspecao-personagem-joaninha-joana.html) · [Flor Maria Jane Maria](/posts/post-inspecao-personagem-flor-maria-jane-maria.html) · [Three Little Birds](/posts/post-inspecao-personagem-three-little-birds.html)\n- Ferramentas: [Luxímetro](/calculadoras/luximetro.html) · [Diário](/cultivo/)\n\n## Status\n\n**Publicado** — personagem da série Vida (2026-08-01)."
     },
     {
       "title": "Vida — O Laboratório e a Sementinha",
@@ -3833,7 +3965,7 @@
       "title": "Inspeção: Produção animal — Codorna",
       "url": "/posts/post-inspecao-animal-codorna.html",
       "excerpt": "Relatório educacional de Codorna (*Coturnix japonica): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem.",
-      "text": "Inspeção: Produção animal — Codorna Relatório educacional de Codorna (*Coturnix japonica): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Codorna** (*Coturnix japonica*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/codorna/](/animais/codorna/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Codorna** |\n| Nome científico | *Coturnix japonica* |\n| Família | Phasianidae |\n| Eixo | Produção / indústria |\n| Slug no catálogo | `codorna` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nAve de criação (codorna-japonesa): ovos pequenos e carne; vizinha lexical da corda — o ouvido cola, o étimo não (Coturnix ≠ chorda).\n\n## Produtos / partes\n\n- Ovo\n- Carne\n\n## Criação e usos (catálogo)\n\n- Ovos de codorna na mesa BR\n- Criação familiar e coturnicultura\n- Carne fresca em dose pequena\n\n## Cuidados\n\nConteúdo educacional — não é protocolo de coturnicultura nem nutricional. Distinguir a ave da palavra corda (fio). O animal não é o vilão; o desvio industrial, quando houver, pede ficha de derivado.\n\n\n## Inspeções de derivados de risco\n\n- [Inspeção: Corda — o objecto onde mora o nó](/posts/post-inspecao-palavra-corda.html)\n- [Inspeção: Nó — o laço na corda](/posts/post-inspecao-palavra-no.html)\n- [Inspeção: Produção animal — Galinha](/posts/post-inspecao-animal-galinha.html)\n\n## Ficha do catálogo\n\nPágina completa: [Codorna](/animais/codorna/)\n\n## Hub\n\nVoltar às [inspeções de produção animal](/biblioteca/inspecoes/#inspecoes-producao).\n"
+      "text": "Inspeção: Produção animal — Codorna Relatório educacional de Codorna (*Coturnix japonica): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem. inspecao ## Escopo\n\nInspeção educacional de **Codorna** (*Coturnix japonica*) a partir do catálogo de animais do Inspetor BudGanja. Este relatório reúne a ficha pública com método verificável do laboratório — **não** é protocolo veterinário e **não substitui** orientação profissional.\n\n> **Nota metodológica:** auditoria independente BudGanja com base na ficha em [/animais/codorna/](/animais/codorna/). Conteúdo apenas educacional. O animal não é o vilão; o desvio industrial documenta-se nas inspeções de **derivados de risco** ligadas.\n\n## Objeto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Nome popular | **Codorna** |\n| Nome científico | *Coturnix japonica* |\n| Família | Phasianidae |\n| Eixo | Produção / indústria |\n| Slug no catálogo | `codorna` |\n| Data da inspeção | 2026-08-01 |\n\n## Resumo\n\nAve de criação (codorna-japonesa): ovos pequenos e carne; vizinha lexical da corda — o ouvido cola, o étimo não (Coturnix ≠ chorda).\n\n## Produtos / partes\n\n- Ovo\n- Carne\n\n## Criação e usos (catálogo)\n\n- Ovos de codorna na mesa BR\n- Criação familiar e coturnicultura\n- Carne fresca em dose pequena\n\n## Cuidados\n\nConteúdo educacional — não é protocolo de coturnicultura nem nutricional. Distinguir a ave da palavra corda (fio). O animal não é o vilão; o desvio industrial, quando houver, pede ficha de derivado.\n\n\n## Inspeções de derivados de risco\n\n- [Inspeção: Ração para animais — do saco industrial ao comedouro](/posts/post-inspecao-derivado-racao.html)\n- [Inspeção: Corda — o objecto onde mora o nó](/posts/post-inspecao-palavra-corda.html)\n- [Inspeção: Nó — o laço na corda](/posts/post-inspecao-palavra-no.html)\n- [Inspeção: Produção animal — Galinha](/posts/post-inspecao-animal-galinha.html)\n\n## Ficha do catálogo\n\nPágina completa: [Codorna](/animais/codorna/)\n\n## Hub\n\nVoltar às [inspeções de produção ani"
     },
     {
       "title": "Babosa (Aloe vera)",
@@ -4166,6 +4298,12 @@
       "text": "Cavalo Equus ferus caballus Equidae Equídeo de trabalho, desporto e companhia — tradição rural brasileira e ética do bem-estar equino. companhia trabalho rural Tração e transporte histórico Pastoreio Hipismo e lazer animal produção indústria derivado"
     },
     {
+      "title": "Mula (Equus asinus × Equus ferus caballus)",
+      "url": "/animais/mula/",
+      "excerpt": "Híbrido de trabalho (jumento × égua): tração, carga e passo rural; vizinha lexical da mola — o ouvido cola, o étimo não (mūla ≠ mollis).",
+      "text": "Mula Equus asinus × Equus ferus caballus Equidae Híbrido de trabalho (jumento × égua): tração, carga e passo rural; vizinha lexical da mola — o ouvido cola, o étimo não (mūla ≠ mollis). companhia trabalho rural equideo Tração de carroça e carga em terreno irregular Transporte rural histórico no Brasil Companhia e ofício de lida — distinta do cavalo e do jumento animal produção indústria derivado"
+    },
+    {
       "title": "Codorna (Coturnix japonica)",
       "url": "/animais/codorna/",
       "excerpt": "Ave de criação (codorna-japonesa): ovos pequenos e carne; vizinha lexical da corda — o ouvido cola, o étimo não (Coturnix ≠ chorda).",
@@ -4176,6 +4314,222 @@
       "url": "/fungos/psilocybe-cubensis/",
       "excerpt": "Psilocybe cubensis — espécie cosmopolita de Psilocybe mais citada na divulgação contemporânea; no XIV UNIFESP entra como fungo psicadélico de ofício, distinta das espécies mazatecas clássicas. Ficha de identificação e enquadramento — não é cultivo nem dose.",
       "text": "Psilocybe cubensis Psilocybe cubensis (Earle) Singer Hymenogastraceae Psilocybe cubensis — espécie cosmopolita de Psilocybe mais citada na divulgação contemporânea; no XIV UNIFESP entra como fungo psicadélico de ofício, distinta das espécies mazatecas clássicas. Ficha de identificação e enquadramento — não é cultivo nem dose. psilocybe psicadelico unifesp hymenogastraceae identificacao lista-controlada Nomeada no XIV Curso UNIFESP junto de Psilocybe caerulescens como exemplo de fungo psicadélico Espécie-tipo da divulgação contemporânea de «cogumelos mágicos» — distinta das espécies mazatecas clássicas (P. mexicana e afins) Objecto de etnomicologia e psicofarmacologia pública — catalogar ≠ endossar uso fungo cogumelo micologia identificação"
+    },
+    {
+      "title": "Tecnologia",
+      "url": "/posts/post-inspecao-palavra-tecnologia.html",
+      "excerpt": "Gr. tékhnē + lógos — o ofício dos aparelhos e métodos. Lema deste catálogo.",
+      "text": "Tecnologia Technology Tecnología Palavras · lema Gr. tékhnē + lógos — o ofício dos aparelhos e métodos. Lema deste catálogo. Gr. tékhnē + lógos — the craft of devices and methods. Lemma of this catalog. lema lexico hub tekhne tecnologia hardware software rede"
+    },
+    {
+      "title": "HD escravo (slave)",
+      "url": "/posts/post-inspecao-palavra-hd-escravo.html",
+      "excerpt": "Jumper mestre/escravo do disco rígido — jargão histórico, não metáfora de pessoas. Smash de campo: slayr.",
+      "text": "HD escravo (slave) HD slave (ATA jumper) HD esclavo (jumper ATA) Hardware · ATA/IDE Jumper mestre/escravo do disco rígido — jargão histórico, não metáfora de pessoas. Smash de campo: slayr. Hard-disk master/slave jumper — historical jargon, not a metaphor for people. Field slip: slayr. hardware hd ata ide slave jumper tecnologia hardware software rede"
+    },
+    {
+      "title": "Celular",
+      "url": "/posts/post-inspecao-celular-riscos-saude-criancas.html",
+      "excerpt": "Smartphone como equipamento quotidiano — riscos para a saúde de crianças e adolescentes.",
+      "text": "Celular Mobile phone Celular Hardware · saúde Smartphone como equipamento quotidiano — riscos para a saúde de crianças e adolescentes. Smartphone as everyday equipment — health risks for children and adolescents. hardware celular saude criancas tecnologia hardware software rede"
+    },
+    {
+      "title": "Xiaomi",
+      "url": "/posts/post-inspecao-palavra-xiaomi.html",
+      "excerpt": "小米 milheto — marca × grão × ídolo tech. Smash de campo: xioomi.",
+      "text": "Xiaomi Xiaomi Xiaomi Hardware · marca 小米 milheto — marca × grão × ídolo tech. Smash de campo: xioomi. 小米 millet — brand × grain × tech idol. Field slip: xioomi. hardware xiaomi marca celular tecnologia hardware software rede"
+    },
+    {
+      "title": "AOC",
+      "url": "/posts/post-inspecao-palavra-aoc.html",
+      "excerpt": "Admiral Overseas Corporation — sigla de ecrã na mesa; ≠ AO90.",
+      "text": "AOC AOC AOC Hardware · monitor Admiral Overseas Corporation — sigla de ecrã na mesa; ≠ AO90. Admiral Overseas Corporation — monitor acronym; ≠ AO90. hardware monitor sigla ecra tecnologia hardware software rede"
+    },
+    {
+      "title": "Interruptor",
+      "url": "/posts/post-inspecao-palavra-interruptor.html",
+      "excerpt": "O objecto que corta ou deixa passar — irmão de ligar/desligar.",
+      "text": "Interruptor Switch Interruptor Hardware · gesto O objecto que corta ou deixa passar — irmão de ligar/desligar. The object that cuts or lets through — sibling of on/off. hardware interruptor ligar energia tecnologia hardware software rede"
+    },
+    {
+      "title": "Ligar / desligar",
+      "url": "/posts/post-inspecao-palavra-ligar-desligar.html",
+      "excerpt": "O par do circuito: pôr em marcha e cortar. Gesto, não metáfora moral.",
+      "text": "Ligar / desligar On / off Encender / apagar Hardware · par O par do circuito: pôr em marcha e cortar. Gesto, não metáfora moral. The circuit pair: start and cut. Gesture, not a moral metaphor. hardware ligar desligar circuito tecnologia hardware software rede"
+    },
+    {
+      "title": "Internet discada",
+      "url": "/posts/post-inspecao-palavra-internet-discada.html",
+      "excerpt": "O cano que telefona — a sessão ocupa a voz. Smash: niocenchcadaro.",
+      "text": "Internet discada Dial-up internet Internet discada Rede · dial-up O cano que telefona — a sessão ocupa a voz. Smash: niocenchcadaro. The pipe that phones — the session occupies the voice. Smash: niocenchcadaro. rede discada modem telefone tecnologia hardware software rede"
+    },
+    {
+      "title": "DSL",
+      "url": "/posts/post-inspecao-palavra-dsl.html",
+      "excerpt": "Digital Subscriber Line — a linha que não canta o modem. ≠ discada.",
+      "text": "DSL DSL DSL Rede · banda larga Digital Subscriber Line — a linha que não canta o modem. ≠ discada. Digital Subscriber Line — the line that does not sing the modem. ≠ dial-up. rede dsl banda-larga linha tecnologia hardware software rede"
+    },
+    {
+      "title": "Login",
+      "url": "/posts/post-inspecao-palavra-login.html",
+      "excerpt": "A porta depois do modem — log in, não o nome da pessoa. Smash: Longin.",
+      "text": "Login Login Login Rede · porta A porta depois do modem — log in, não o nome da pessoa. Smash: Longin. The door after the modem — log in, not a person’s name. Slip: Longin. rede login porta sessao tecnologia hardware software rede"
+    },
+    {
+      "title": "Conexão",
+      "url": "/posts/post-inspecao-palavra-conexao.html",
+      "excerpt": "O elo que junta dois pontos — linha, cabo, sessão. Não é o login.",
+      "text": "Conexão Connection Conexión Rede · elo O elo que junta dois pontos — linha, cabo, sessão. Não é o login. The link that joins two points — line, cable, session. Not the login. rede conexao elo rede tecnologia hardware software rede"
+    },
+    {
+      "title": "Tele",
+      "url": "/posts/post-inspecao-palavra-tele.html",
+      "excerpt": "Gr. têle «longe» — prefixo e recorte brasileiro da televisão. ≠ tela.",
+      "text": "Tele Tele Tele Rede · prefixo Gr. têle «longe» — prefixo e recorte brasileiro da televisão. ≠ tela. Gr. têle “far” — prefix and Brazilian clipping of television. ≠ tela. rede tele prefixo tv tecnologia hardware software rede"
+    },
+    {
+      "title": "Homepage",
+      "url": "/posts/post-inspecao-palavra-homepage.html",
+      "excerpt": "A página-casa do sítio — porta de entrada, não o laboratório inteiro.",
+      "text": "Homepage Homepage Homepage Software · web A página-casa do sítio — porta de entrada, não o laboratório inteiro. The site’s home page — front door, not the whole lab. software homepage web porta tecnologia hardware software rede"
+    },
+    {
+      "title": "Save game",
+      "url": "/posts/post-inspecao-palavra-save-game.html",
+      "excerpt": "Gravar o estado do jogo — save ≠ save-game ≠ backup. Ofício de ficheiro.",
+      "text": "Save game Save game Save game Software · gravar Gravar o estado do jogo — save ≠ save-game ≠ backup. Ofício de ficheiro. Save the game state — save ≠ save-game ≠ backup. File craft. software save jogo ficheiro tecnologia hardware software rede"
+    },
+    {
+      "title": "Restore / backup",
+      "url": "/posts/post-inspecao-palavra-restore.html",
+      "excerpt": "Restore · back · backup · up — pôr de pé de novo. Smash: Restoure.",
+      "text": "Restore / backup Restore / backup Restore / backup Software · reserva Restore · back · backup · up — pôr de pé de novo. Smash: Restoure. Restore · back · backup · up — set back on its feet. Slip: Restoure. software restore backup up tecnologia hardware software rede"
+    },
+    {
+      "title": "Backspace",
+      "url": "/posts/post-inspecao-palavra-backspace.html",
+      "excerpt": "A tecla que apaga para trás — ≠ backup. Gesto de correcção.",
+      "text": "Backspace Backspace Backspace Software · tecla A tecla que apaga para trás — ≠ backup. Gesto de correcção. The key that deletes backward — ≠ backup. Correction gesture. software tecla apagar teclado tecnologia hardware software rede"
+    },
+    {
+      "title": "Script",
+      "url": "/posts/post-inspecao-palavra-script.html",
+      "excerpt": "Texto que a máquina executa — roteiro × código. Não é tutorial de exploit.",
+      "text": "Script Script Script Software · texto Texto que a máquina executa — roteiro × código. Não é tutorial de exploit. Text the machine runs — screenplay × code. Not an exploit tutorial. software script codigo roteiro tecnologia hardware software rede"
+    },
+    {
+      "title": "For / If / Else",
+      "url": "/posts/post-inspecao-palavra-for-if-else.html",
+      "excerpt": "Decidir, o outro caminho, repetir com fim. Aula 0 de programar neste catálogo.",
+      "text": "For / If / Else For / If / Else For / If / Else Programação · aula 0 Decidir, o outro caminho, repetir com fim. Aula 0 de programar neste catálogo. Decide, the other path, repeat with an end. Programming lesson 0 in this catalog. programacao if else for aula javascript tecnologia hardware software rede"
+    },
+    {
+      "title": "Node",
+      "url": "/posts/post-inspecao-palavra-node.html",
+      "excerpt": "Nó da rede e runtime JavaScript — Node.js no ofício do sítio.",
+      "text": "Node Node Node Software · runtime Nó da rede e runtime JavaScript — Node.js no ofício do sítio. Network node and JavaScript runtime — Node.js in this site’s craft. software node javascript runtime tecnologia hardware software rede"
+    },
+    {
+      "title": "Grok",
+      "url": "/posts/post-inspecao-palavra-grok.html",
+      "excerpt": "Heinlein: compreender por dentro. Modelo e verbo — sem culto de marca.",
+      "text": "Grok Grok Grok Software · compreender Heinlein: compreender por dentro. Modelo e verbo — sem culto de marca. Heinlein: to understand from inside. Model and verb — no brand cult. software grok ia compreender tecnologia hardware software rede"
+    },
+    {
+      "title": "Upsert",
+      "url": "/posts/post-inspecao-palavra-upsert.html",
+      "excerpt": "Update + insert — gravar se existe, criar se não. Ofício de fichas.",
+      "text": "Upsert Upsert Upsert Software · gravar Update + insert — gravar se existe, criar se não. Ofício de fichas. Update + insert — write if it exists, create if not. Sheet craft. software upsert banco gravar tecnologia hardware software rede"
+    },
+    {
+      "title": "Commitar",
+      "url": "/posts/post-inspecao-palavra-commitar.html",
+      "excerpt": "O gesto de firmar o lote no git — commit. Português de oficina.",
+      "text": "Commitar Commit Commitar Software · git O gesto de firmar o lote no git — commit. Português de oficina. The gesture of sealing the batch in git — commit. Workshop Portuguese. software git commit versao tecnologia hardware software rede"
+    },
+    {
+      "title": "Don't show again",
+      "url": "/posts/post-inspecao-expressao-dont-show-again.html",
+      "excerpt": "A caixa que pede para não pôr à vista outra vez — preferência, não burla.",
+      "text": "Don't show again Don't show again Don't show again Software · diálogo A caixa que pede para não pôr à vista outra vez — preferência, não burla. The box that asks not to show again — preference, not a bypass. software dialogo preferencia aviso tecnologia hardware software rede"
+    },
+    {
+      "title": "Miss click",
+      "url": "/posts/post-inspecao-expressao-miss-click.html",
+      "excerpt": "Clique que falhou o alvo — mis- + click. ≠ Miss (título).",
+      "text": "Miss click Miss click Miss click Software · gesto Clique que falhou o alvo — mis- + click. ≠ Miss (título). Click that missed the target — mis- + click. ≠ Miss (title). software clique rato erro tecnologia hardware software rede"
+    },
+    {
+      "title": "Multitask",
+      "url": "/posts/post-inspecao-palavra-multitask.html",
+      "excerpt": "Várias tarefas no mesmo sopro — ofício de CPU e de atenção humana.",
+      "text": "Multitask Multitask Multitask Software · atenção Várias tarefas no mesmo sopro — ofício de CPU e de atenção humana. Several tasks in one breath — CPU craft and human attention. software multitask atencao cpu tecnologia hardware software rede"
+    },
+    {
+      "title": "Skill",
+      "url": "/posts/post-inspecao-palavra-skill.html",
+      "excerpt": "Habilidade treinável — germânico. Vizinha de tékhnē, não o mesmo vocábulo.",
+      "text": "Skill Skill Skill Software · ofício Habilidade treinável — germânico. Vizinha de tékhnē, não o mesmo vocábulo. Trainable ability — Germanic. Neighbour of tékhnē, not the same word. software skill oficio habilidade tecnologia hardware software rede"
+    },
+    {
+      "title": "Jobs (palavra)",
+      "url": "/posts/post-inspecao-palavra-jobs.html",
+      "excerpt": "O apelido como palavra — ídolo tech × ofício. Elo com a ficha da pessoa.",
+      "text": "Jobs (palavra) Jobs (word) Jobs (palabra) Pessoas · vocábulo O apelido como palavra — ídolo tech × ofício. Elo com a ficha da pessoa. The surname as a word — tech idol × craft. Linked to the person sheet. pessoas jobs idolo apple tecnologia hardware software rede"
+    },
+    {
+      "title": "Steve Jobs",
+      "url": "/posts/post-inspecao-figura-steve-jobs.html",
+      "excerpt": "A pessoa — limite de tecnologia em casa (2010), não «celular só aos 18».",
+      "text": "Steve Jobs Steve Jobs Steve Jobs Pessoas · figura A pessoa — limite de tecnologia em casa (2010), não «celular só aos 18». The person — household tech limits (2010), not “phone only at 18”. pessoas jobs apple pessoa tecnologia hardware software rede"
+    },
+    {
+      "title": "Mitologia",
+      "url": "/posts/post-inspecao-palavra-mitologia.html",
+      "excerpt": "Gr. mythos + lógos — o ofício de contar os deuses. Lema deste catálogo.",
+      "text": "Mitologia Mythology Mitología Palavras · lema Gr. mythos + lógos — o ofício de contar os deuses. Lema deste catálogo. Gr. mythos + lógos — the craft of telling the gods. Lemma of this catalog. lema lexico hub mythos mitologia mito deus deuses anubis egito"
+    },
+    {
+      "title": "Anúbis",
+      "url": "/posts/post-inspecao-palavra-anubis.html",
+      "excerpt": "jnpw / Anpu — o chacal que pesa o coração. Primeiro deus deste catálogo.",
+      "text": "Anúbis Anubis Anubis Egito · deus jnpw / Anpu — o chacal que pesa o coração. Primeiro deus deste catálogo. jnpw / Anpu — the jackal who weighs the heart. First god in this catalog. egito egito deus chacal anubis mitologia mito deus deuses anubis egito"
+    },
+    {
+      "title": "Orfeu",
+      "url": "/posts/post-inspecao-palavra-orfeu.html",
+      "excerpt": "Ὀρφεύς — a lira e Eurídice; no BR, Orfeu Negro. ≠ Morpheus.",
+      "text": "Orfeu Orpheus Orfeo Grécia · mitónimo Ὀρφεύς — a lira e Eurídice; no BR, Orfeu Negro. ≠ Morpheus. Ὀρφεύς — the lyre and Eurydice; in BR, Black Orpheus. ≠ Morpheus. grego grecia orfeu lira mitologia mito deus deuses anubis egito"
+    },
+    {
+      "title": "Néctar dos deuses",
+      "url": "/posts/post-inspecao-expressao-nectar-dos-deuses.html",
+      "excerpt": "O mito do néktar × a hipérbole de gosto. ≠ suco de gôndola.",
+      "text": "Néctar dos deuses Nectar of the gods Néctar de los dioses Grécia · expressão O mito do néktar × a hipérbole de gosto. ≠ suco de gôndola. The néktar myth × the taste hyperbole. ≠ carton juice. grego grecia nectar deuses mitologia mito deus deuses anubis egito"
+    },
+    {
+      "title": "Deus",
+      "url": "/posts/post-inspecao-palavra-deus.html",
+      "excerpt": "Lat. deus — céu / luz do dia no étimo. Palavra, não catecismo. ≠ Anúbis.",
+      "text": "Deus God / a god Dios / un dios Léxico · vocábulo Lat. deus — céu / luz do dia no étimo. Palavra, não catecismo. ≠ Anúbis. Lat. deus — sky / daylight in the etymon. A word, not a catechism. ≠ Anubis. lexico deus latim lexico mitologia mito deus deuses anubis egito"
+    },
+    {
+      "title": "Ídolo",
+      "url": "/posts/post-inspecao-palavra-idolo.html",
+      "excerpt": "Gr. eídōlon — imagem → pessoa admirada. Ficha ≠ altar.",
+      "text": "Ídolo Idol Ídolo Léxico · imagem Gr. eídōlon — imagem → pessoa admirada. Ficha ≠ altar. Gr. eídōlon — image → admired person. Sheet ≠ altar. lexico idolo imagem culto mitologia mito deus deuses anubis egito"
+    },
+    {
+      "title": "Diabo",
+      "url": "/posts/post-inspecao-palavra-diabo.html",
+      "excerpt": "Gr. diábolos — o acusador. Sala distinta de Anúbis e do Hades.",
+      "text": "Diabo Devil Diablo Léxico · acusador Gr. diábolos — o acusador. Sala distinta de Anúbis e do Hades. Gr. diábolos — the accuser. A room distinct from Anubis and Hades. lexico diabo lexico mitologia mito deus deuses anubis egito"
+    },
+    {
+      "title": "Astrologia",
+      "url": "/guia/astrologia.html",
+      "excerpt": "Céu nomeado × céu visto. Doze signos; ≠ horóscopo. Sala irmã.",
+      "text": "Astrologia Astrology Astrología Céu · guia Céu nomeado × céu visto. Doze signos; ≠ horóscopo. Sala irmã. Named sky × seen sky. Twelve signs; ≠ horoscope. Sister room. ceu ceu zodiaco astrologia mitologia mito deus deuses anubis egito"
     },
     {
       "title": "2-AG",
@@ -4844,6 +5198,12 @@
       "text": "Leite Secreção mamária bovina — no site, hub da família láctea (UHT, pó, laticínios ultraprocessados). tecnico guia palavras glossário leite"
     },
     {
+      "title": "Ração",
+      "url": "/posts/post-inspecao-derivado-racao.html",
+      "excerpt": "Porção medida que virou categoria industrial — no site, hub de pet food e concentrado pecuário (kibble, petiscos, granja).",
+      "text": "Ração Porção medida que virou categoria industrial — no site, hub de pet food e concentrado pecuário (kibble, petiscos, granja). tecnico guia palavras glossário racao"
+    },
+    {
       "title": "CB1",
       "url": "/posts/post-inspecao-guia-canabimeticos-modulacao.html",
       "excerpt": "Receptor canabinoide (sobretudo central/periférico) — na Aula 7, hiper expressão enquadra exemplos de pesquisa (ex. antagonistas periféricos).",
@@ -4944,6 +5304,18 @@
       "url": "/posts/post-inspecao-palavra-corda.html",
       "excerpt": "Lat. chorda — fio-objecto do nó; ≠ cinta ≠ codorna; catálogo Objetos.",
       "text": "corda Lat. chorda — fio-objecto do nó; ≠ cinta ≠ codorna; catálogo Objetos. lexico guia palavras glossário corda"
+    },
+    {
+      "title": "mola",
+      "url": "/posts/post-inspecao-palavra-mola.html",
+      "excerpt": "It. molla ← lat. mollis — peça que cede e volta. ≠ mula (animal) ≠ mó. Feixe da carroça; colchão de molas. Valeu !!!",
+      "text": "mola It. molla ← lat. mollis — peça que cede e volta. ≠ mula (animal) ≠ mó. Feixe da carroça; colchão de molas. Valeu !!! lexico guia palavras glossário mola"
+    },
+    {
+      "title": "mula",
+      "url": "/posts/post-inspecao-animal-mula.html",
+      "excerpt": "Lat. mūla — híbrido jumento × égua. ≠ mola (peça). Tração, carga, passo. Valeu !!!",
+      "text": "mula Lat. mūla — híbrido jumento × égua. ≠ mola (peça). Tração, carga, passo. Valeu !!! lexico guia palavras glossário mula"
     },
     {
       "title": "teoria das cordas",
@@ -5270,6 +5642,18 @@
       "text": "Deus Lat. deus ← PIE *dyēus* (céu / luz do dia). Vocábulo, não catecismo. Deus × deus. Cluster: A Deus!!! · fui. Valeu !!! lexico guia palavras glossário deus"
     },
     {
+      "title": "mitologia",
+      "url": "/posts/post-inspecao-palavra-mitologia.html",
+      "excerpt": "Gr. mŷthos + lógos — ofício de contar os deuses. Lema do catálogo /mitologia/. Anúbis noutra sala. Valeu !!!",
+      "text": "mitologia Gr. mŷthos + lógos — ofício de contar os deuses. Lema do catálogo /mitologia/. Anúbis noutra sala. Valeu !!! lexico guia palavras glossário mitologia"
+    },
+    {
+      "title": "Anúbis",
+      "url": "/posts/post-inspecao-palavra-anubis.html",
+      "excerpt": "jnpw → Ἄνουβις. Chacal que pesa o coração. Primeiro deus de /mitologia/. ≠ Deus ≠ magia. Valeu !!!",
+      "text": "Anúbis jnpw → Ἄνουβις. Chacal que pesa o coração. Primeiro deus de /mitologia/. ≠ Deus ≠ magia. Valeu !!! lexico guia palavras glossário anubis"
+    },
+    {
       "title": "A Deus!!!",
       "url": "/posts/post-inspecao-expressao-adeus.html",
       "excerpt": "a + Deus = adeus — encomendar e sair. Grito A Deus!!! × grafia junta. ≠ Deus abençoe. Irmã: fui. Valeu !!!",
@@ -5474,6 +5858,24 @@
       "text": "Don't Show Again EN de caixa de diálogo — não pôr à vista outra vez. Cruzamento com não mostrar de novo. Show = olhar (scēawian); mostrar = avisar (mōnstrāre). Dont sem apóstrofo. De novo ≠ o novo. Pular = desta vez. Valeu !!! lexico guia palavras glossário dont-show-again"
     },
     {
+      "title": "missão comprida",
+      "url": "/posts/post-inspecao-expressao-missao-comprida.html",
+      "excerpt": "Trocadilho BR: cola comprida (longa) sobre a locução missão cumprida (feita). Cumprir e comprido vêm do lat. complēre. Missão é envio (missiō). Comprimento × cumprimento. Valeu !!!",
+      "text": "missão comprida Trocadilho BR: cola comprida (longa) sobre a locução missão cumprida (feita). Cumprir e comprido vêm do lat. complēre. Missão é envio (missiō). Comprimento × cumprimento. Valeu !!! lexico guia palavras glossário missao-comprida"
+    },
+    {
+      "title": "comprido",
+      "url": "/posts/post-inspecao-expressao-missao-comprida.html",
+      "excerpt": "Adjectivo «longo» — particípio arcaico de comprir (lat. complēre). Cola de missão comprida. ≠ cumprido. Valeu !!!",
+      "text": "comprido Adjectivo «longo» — particípio arcaico de comprir (lat. complēre). Cola de missão comprida. ≠ cumprido. Valeu !!! lexico guia palavras glossário comprido"
+    },
+    {
+      "title": "missão cumprida",
+      "url": "/posts/post-inspecao-expressao-missao-comprida.html",
+      "excerpt": "Locução de fecho — o envio foi executado. Canónica de missão comprida. Cumprir ← complēre. Valeu !!!",
+      "text": "missão cumprida Locução de fecho — o envio foi executado. Canónica de missão comprida. Cumprir ← complēre. Valeu !!! lexico guia palavras glossário missao-cumprida"
+    },
+    {
       "title": "não mostrar de novo",
       "url": "/posts/post-inspecao-expressao-dont-show-again.html",
       "excerpt": "Calco PT vivo de Don't Show Again — de novo = outra vez, não «o novo». Forma de manual: não mostrar novamente. Valeu !!!",
@@ -5532,6 +5934,24 @@
       "url": "/posts/post-inspecao-palavra-script.html",
       "excerpt": "Lat. scrīptum ← scrībere — sequência escrita EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar/opsert; Valeu !!!",
       "text": "script Lat. scrīptum ← scrībere — sequência escrita EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar/opsert; Valeu !!! lexico guia palavras glossário script"
+    },
+    {
+      "title": "if",
+      "url": "/posts/post-inspecao-palavra-for-if-else.html",
+      "excerpt": "Palavra-reservada: se a condição for verdade, faz o bloco. Aula 0 em /tecnologia/ com else e for. Valeu !!!",
+      "text": "if Palavra-reservada: se a condição for verdade, faz o bloco. Aula 0 em /tecnologia/ com else e for. Valeu !!! lexico guia palavras glossário if"
+    },
+    {
+      "title": "else",
+      "url": "/posts/post-inspecao-palavra-for-if-else.html",
+      "excerpt": "Palavra-reservada: o outro caminho do if. Aula 0 em /tecnologia/. Valeu !!!",
+      "text": "else Palavra-reservada: o outro caminho do if. Aula 0 em /tecnologia/. Valeu !!! lexico guia palavras glossário else"
+    },
+    {
+      "title": "for (código)",
+      "url": "/posts/post-inspecao-palavra-for-if-else.html",
+      "excerpt": "Laço for: repetir com começo, porta e passo. Sala C do grafema for; ≠ Maria ≠ loop infinito. Aula 0. Valeu !!!",
+      "text": "for (código) Laço for: repetir com começo, porta e passo. Sala C do grafema for; ≠ Maria ≠ loop infinito. Aula 0. Valeu !!! lexico guia palavras glossário for-loop"
     },
     {
       "title": "roteiro",
@@ -5834,6 +6254,12 @@
       "text": "tenda Lat. tendere — recinto indoor (grow tent) que fecha luz e calor; ≠ cofre ignífugo; Valeu !!! lexico guia palavras glossário tenda"
     },
     {
+      "title": "tele",
+      "url": "/posts/post-inspecao-palavra-tele.html",
+      "excerpt": "Gr. têle — longe. Prefixo (telefone, telescópio) e recorte BR «a tele» (TV). ≠ tela (lat. tēla). Valeu !!!",
+      "text": "tele Gr. têle — longe. Prefixo (telefone, telescópio) e recorte BR «a tele» (TV). ≠ tela (lat. tēla). Valeu !!! lexico guia palavras glossário tele"
+    },
+    {
       "title": "exaustor",
       "url": "/posts/post-inspecao-palavra-exaustor.html",
       "excerpt": "Lat. exhaurīre — motor que esgota o ar da tenda; circulação ≠ extração; Valeu !!!",
@@ -5930,6 +6356,18 @@
       "text": "Gêmeos Lat. geminus — par / signo Gemini; ≠ gênio (genius) nem génio da lâmpada; grafia gemeos; elos relação e genial; Valeu !!! em cada mão. lexico guia palavras glossário gemeos"
     },
     {
+      "title": "Ariana",
+      "url": "/posts/post-inspecao-palavra-ariana.html",
+      "excerpt": "Nativa de Áries — 1.º signo (lat. ariēs, carneiro); ariano/arianos; ≠ horóscopo; ≠ ariano racial; guia Astrologia.",
+      "text": "Ariana Nativa de Áries — 1.º signo (lat. ariēs, carneiro); ariano/arianos; ≠ horóscopo; ≠ ariano racial; guia Astrologia. lexico guia palavras glossário ariana"
+    },
+    {
+      "title": "Astrologia",
+      "url": "/guia/astrologia.html",
+      "excerpt": "Página dedicada: 12 signos a partir de Áries; céu verificável (Aladin); Google Sky sem embed web.",
+      "text": "Astrologia Página dedicada: 12 signos a partir de Áries; céu verificável (Aladin); Google Sky sem embed web. lexico guia palavras glossário astrologia"
+    },
+    {
       "title": "Jobs",
       "url": "/posts/post-inspecao-palavra-jobs.html",
       "excerpt": "EN jobs (trabalhos) × nome próprio no BR (Steve Jobs); ofício sem pedestal; elos skill e ídolo; Valeu !!!",
@@ -5982,6 +6420,12 @@
       "url": "/posts/post-inspecao-expressao-meter-marcha.html",
       "excerpt": "Locução BR — engatar a caixa / sair do ponto morto do dia; ≠ carnaval ≠ ré ≠ flerte-manual; Valeu !!!",
       "text": "meter marcha Locução BR — engatar a caixa / sair do ponto morto do dia; ≠ carnaval ≠ ré ≠ flerte-manual; Valeu !!! lexico guia palavras glossário meter-marcha"
+    },
+    {
+      "title": "meter a mão",
+      "url": "/posts/post-inspecao-expressao-meter-a-mao.html",
+      "excerpt": "Locução BR — pôr a mão no ofício / mão na massa; ≠ furto ≠ toque sem consentimento ≠ futebol; Valeu !!!",
+      "text": "meter a mão Locução BR — pôr a mão no ofício / mão na massa; ≠ furto ≠ toque sem consentimento ≠ futebol; Valeu !!! lexico guia palavras glossário meter-a-mao"
     },
     {
       "title": "mundinho",
@@ -6344,6 +6788,12 @@
       "text": "Killing in the Name Canção RATM (1992): matar no nome da ordem; elo BudGanja com O Início, raiva nomeada e proibição. lexico guia palavras glossário killing-in-the-name"
     },
     {
+      "title": "Wake Up",
+      "url": "/posts/post-inspecao-arte-wake-up.html",
+      "excerpt": "Canção RATM (1992): acordar contra a máquina; irmã de Killing in the Name; afterlife Matrix; rádio como adaptação.",
+      "text": "Wake Up Canção RATM (1992): acordar contra a máquina; irmã de Killing in the Name; afterlife Matrix; rádio como adaptação. lexico guia palavras glossário wake-up"
+    },
+    {
       "title": "Laboratório",
       "url": "/",
       "excerpt": "Lugar de experiência e medida — aqui, o laboratório digital público BudGanja.",
@@ -6548,6 +6998,12 @@
       "text": "Étimo Gr. étymon — a peça da origem; ≠ etimologia (ofício); espécime ação: lat. āctiō ← agere («fazer, impulsionar»); Valeu !!! lexico guia palavras glossário etimo"
     },
     {
+      "title": "patia",
+      "url": "/posts/post-inspecao-palavra-patia.html",
+      "excerpt": "Gr. páthos → -pátheia → PT -patia. Quatro salas: afecto (empatia), doença (neuropatia), escola (homeopatia), planta (alelopatia). ≠ pato ≠ pátria. Valeu !!!",
+      "text": "patia Gr. páthos → -pátheia → PT -patia. Quatro salas: afecto (empatia), doença (neuropatia), escola (homeopatia), planta (alelopatia). ≠ pato ≠ pátria. Valeu !!! lexico guia palavras glossário patia"
+    },
+    {
       "title": "Aglutinação",
       "url": "/posts/post-inspecao-palavra-aglutinacao.html",
       "excerpt": "Composição por fusão (planalto, embora, aguardente); cara+alho só parece isto — o nome certo é trocadilho; ≠ polimorfismo; Valeu !!! na solda.",
@@ -6722,10 +7178,16 @@
       "text": "Maria Hebr. Miryam → lat. Maria. Cruzada com for (EN for ≈ PT para: a partícula aponta). ≠ for conjuntivo ≠ formaria ≠ marijuana. Valeu !!! lexico guia palavras glossário maria"
     },
     {
+      "title": "Flor Maria Jane Maria",
+      "url": "/posts/post-inspecao-personagem-flor-maria-jane-maria.html",
+      "excerpt": "Personagem Vida — flor do canal Joana e Maria (folha + solo). Jane = Joana em inglês. Maria Jane / Mary Jane = outra sala. Valeu !!!",
+      "text": "Flor Maria Jane Maria Personagem Vida — flor do canal Joana e Maria (folha + solo). Jane = Joana em inglês. Maria Jane / Mary Jane = outra sala. Valeu !!! lexico guia palavras glossário flor-maria-jane-maria"
+    },
+    {
       "title": "for",
       "url": "/posts/post-inspecao-palavra-maria.html",
-      "excerpt": "EN for ≈ PT para — aponta (nesta ficha: para Maria). Homógrafo PT = conjuntivo de ser/ir. ≠ formaria ≠ por. Valeu !!!",
-      "text": "for EN for ≈ PT para — aponta (nesta ficha: para Maria). Homógrafo PT = conjuntivo de ser/ir. ≠ formaria ≠ por. Valeu !!! lexico guia palavras glossário for"
+      "excerpt": "Três salas: A EN preposição ≈ PT para (Maria); B conjuntivo ser/ir; C laço de código — aula for/if/else em /tecnologia/. Valeu !!!",
+      "text": "for Três salas: A EN preposição ≈ PT para (Maria); B conjuntivo ser/ir; C laço de código — aula for/if/else em /tecnologia/. Valeu !!! lexico guia palavras glossário for"
     },
     {
       "title": "Mara",
@@ -6768,6 +7230,18 @@
       "url": "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
       "excerpt": "Ferramenta do gesto — na capa de *Bom dia, Inverno* a mão esquerda segura o comando do drone.",
       "text": "Mão Ferramenta do gesto — na capa de *Bom dia, Inverno* a mão esquerda segura o comando do drone. lexico guia palavras glossário mao"
+    },
+    {
+      "title": "Mapa",
+      "url": "/posts/post-inspecao-palavra-mapa.html",
+      "excerpt": "Lat. mappa «pano» — desenho do território e plano; cruzado com mão (lat. manus). Cola MA- (MApa / Maão). Mapa na mão. ≠ cartografia ≠ GPS. Valeu !!!",
+      "text": "Mapa Lat. mappa «pano» — desenho do território e plano; cruzado com mão (lat. manus). Cola MA- (MApa / Maão). Mapa na mão. ≠ cartografia ≠ GPS. Valeu !!! lexico guia palavras glossário mapa"
+    },
+    {
+      "title": "mapear",
+      "url": "/posts/post-inspecao-palavra-mapa.html",
+      "excerpt": "Verbo da família de mapa ← lat. mappa — pôr no pano / inventariar. Variação na ficha mapa. Valeu !!!",
+      "text": "mapear Verbo da família de mapa ← lat. mappa — pôr no pano / inventariar. Variação na ficha mapa. Valeu !!! lexico guia palavras glossário mapear"
     },
     {
       "title": "Mar",
@@ -7020,6 +7494,18 @@
       "url": "/posts/post-inspecao-palavra-objetos.html",
       "excerpt": "Lat. obiectum — plural de objeto; no lab, o foco do «objeto inspecionado»; Valeu !!! neste objeto.",
       "text": "objetos Lat. obiectum — plural de objeto; no lab, o foco do «objeto inspecionado»; Valeu !!! neste objeto. lexico guia palavras glossário objetos"
+    },
+    {
+      "title": "tecnologia",
+      "url": "/posts/post-inspecao-palavra-tecnologia.html",
+      "excerpt": "Gr. tékhnē + lógos — ofício dos aparelhos e métodos. Lema do catálogo /tecnologia/. HD escravo noutra sala. Valeu !!!",
+      "text": "tecnologia Gr. tékhnē + lógos — ofício dos aparelhos e métodos. Lema do catálogo /tecnologia/. HD escravo noutra sala. Valeu !!! lexico guia palavras glossário tecnologia"
+    },
+    {
+      "title": "HD escravo",
+      "url": "/posts/post-inspecao-palavra-hd-escravo.html",
+      "excerpt": "Jumper ATA/IDE Device 1 (slave). Smash slayr. ≠ escravidão humana ≠ SATA. Catálogo /tecnologia/. Valeu !!!",
+      "text": "HD escravo Jumper ATA/IDE Device 1 (slave). Smash slayr. ≠ escravidão humana ≠ SATA. Catálogo /tecnologia/. Valeu !!! lexico guia palavras glossário hd-escravo"
     },
     {
       "title": "Ofício editorial",
@@ -7664,6 +8150,18 @@
       "text": "olho Lat. oculus — o órgão que vê, e o olhar. Cruzado com zaroio (voz de zarolho: o olho que não alinha). Lh → i. ≠ eye ≠ ophthalmós ≠ xingo. Valeu !!! lexico guia palavras glossário olho"
     },
     {
+      "title": "@ / arroba",
+      "url": "/posts/post-inspecao-palavra-arroba.html",
+      "excerpt": "Ár. ar-rubʿ — o quarto / o peso; glifo @ = at (sítio, menção). Cruzar com olho (oculus): o olho cola o pictograma, a orelha não. ≠ órgão. Valeu !!!",
+      "text": "@ / arroba Ár. ar-rubʿ — o quarto / o peso; glifo @ = at (sítio, menção). Cruzar com olho (oculus): o olho cola o pictograma, a orelha não. ≠ órgão. Valeu !!! lexico guia palavras glossário arroba"
+    },
+    {
+      "title": "at sign",
+      "url": "/posts/post-inspecao-palavra-arroba.html",
+      "excerpt": "EN do glifo @ — o sítio (at). Ver arroba. Relação com olhos: pictograma, não étimo. Valeu !!!",
+      "text": "at sign EN do glifo @ — o sítio (at). Ver arroba. Relação com olhos: pictograma, não étimo. Valeu !!! lexico guia palavras glossário at-sign"
+    },
+    {
       "title": "ramela",
       "url": "/posts/post-inspecao-palavra-ramela.html",
       "excerpt": "Secreção no canto do olho (também remela; origem obscura). Ramelento = ramela + -ento. ≠ remo lento (rēmus × lentus). Valeu !!!",
@@ -7832,6 +8330,24 @@
       "text": "Tempo Duração e estação — a mudinha pede tempo; no mar congelado o tempo substitui o espaço. lexico guia palavras glossário tempo"
     },
     {
+      "title": "comprimento",
+      "url": "/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html",
+      "excerpt": "Lat. complēre → comprido → comprimento: extensão da vara. Trio com distância (vão) e relatividade (quadro). ≠ cumprimento. Valeu !!!",
+      "text": "comprimento Lat. complēre → comprido → comprimento: extensão da vara. Trio com distância (vão) e relatividade (quadro). ≠ cumprimento. Valeu !!! lexico guia palavras glossário comprimento"
+    },
+    {
+      "title": "relatividade",
+      "url": "/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html",
+      "excerpt": "Lat. relātīvus — teoria do quadro (1905 / 1915): comprimento e tempo medidos dependem do observador; c não. ≠ relativismo. Valeu !!!",
+      "text": "relatividade Lat. relātīvus — teoria do quadro (1905 / 1915): comprimento e tempo medidos dependem do observador; c não. ≠ relativismo. Valeu !!! lexico guia palavras glossário relatividade"
+    },
+    {
+      "title": "distância",
+      "url": "/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html",
+      "excerpt": "Lat. distantia ← distāre: o vão entre dois pontos, não a vara. Trio com comprimento e relatividade. Valeu !!!",
+      "text": "distância Lat. distantia ← distāre: o vão entre dois pontos, não a vara. Trio com comprimento e relatividade. Valeu !!! lexico guia palavras glossário distancia"
+    },
+    {
       "title": "Terpeno",
       "url": "/posts/post-inspecao-guia-quimiotipos-cannabis.html",
       "excerpt": "Metabólito secundário (via mevalonato/MEP) — cheiro/cor e modulação; partilha vias com a biossíntese de fitocanabinoides (Aula 10).",
@@ -7950,6 +8466,12 @@
       "url": "/posts/post-inspecao-palavra-valeu.html",
       "excerpt": "De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de Gratidão; gesto, respeito; Valeu !!! — e valeu.",
       "text": "valeu De valer ← lat. valēre — gratidão leve / fecho oral BR; irmã de Gratidão; gesto, respeito; Valeu !!! — e valeu. lexico guia palavras glossário valeu"
+    },
+    {
+      "title": "que não arrisca não petisca",
+      "url": "/posts/post-inspecao-expressao-quem-nao-arrisca-nao-petisca.html",
+      "excerpt": "Ditado BR — voz viva que não arrisca não petisca; âncora quem…; index no lugar de Valeu !!!; ≠ aposta; Valeu !!! fica no fecho",
+      "text": "que não arrisca não petisca Ditado BR — voz viva que não arrisca não petisca; âncora quem…; index no lugar de Valeu !!!; ≠ aposta; Valeu !!! fica no fecho lexico guia palavras glossário quem-nao-arrisca-nao-petisca"
     },
     {
       "title": "Partiu!!!",

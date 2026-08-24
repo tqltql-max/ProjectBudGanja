@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T13:21:45.928Z",
+  "updatedAt": "2026-08-24T13:29:48.480Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3454,6 +3454,42 @@
       "curiositiesEs": "Los scripts de la casa viven en scripts/ (upsert-*.js en disco). Script ≠ destino ≠ skill. El gesto de identidad se llama opsert. ¡Valeu !!!"
     },
     {
+      "id": "if",
+      "word": "if",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-for-if-else.html",
+      "simple": "Palavra-reservada: se a condição for verdade, faz o bloco. Aula 0 em /tecnologia/ com else e for. Valeu !!!",
+      "simpleEn": "Reserved word: if the condition is true, run the block. Lesson 0 at /tecnologia/ with else and for. Valeu !!!",
+      "simpleEs": "Palabra reservada: si la condición es verdad, hace el bloque. Aula 0 en /tecnologia/ con else y for. ¡Valeu !!!",
+      "history": "If vem do inglês «se». No código é a pergunta. No laboratório é a aula 0: o interruptor do texto. Irmãos else (o outro pé) e for (repetir com porta).",
+      "curiosities": "Não é destino. A bancada em /tecnologia/ demonstra com vasos — não executa texto livre. Valeu !!!",
+      "historyEn": "If comes from English “if”. In code it is the question. In the lab it is lesson 0: the switch in text. Siblings else (the other foot) and for (repeat with a door).",
+      "curiositiesEn": "It is not destiny. The bench at /tecnologia/ demos with pots — it does not run free text. Valeu !!!",
+      "historyEs": "If viene del inglés «si». En código es la pregunta. En el laboratorio es el aula 0: el interruptor del texto. Hermanos else (el otro pie) y for (repetir con puerta).",
+      "curiositiesEs": "No es destino. La bancada en /tecnologia/ demuestra con macetas — no ejecuta texto libre. ¡Valeu !!!"
+    },
+    {
+      "id": "else",
+      "word": "else",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-for-if-else.html",
+      "simple": "Palavra-reservada: o outro caminho do if. Aula 0 em /tecnologia/. Valeu !!!",
+      "simpleEn": "Reserved word: the other path of if. Lesson 0 at /tecnologia/. Valeu !!!",
+      "simpleEs": "Palabra reservada: el otro camino del if. Aula 0 en /tecnologia/. ¡Valeu !!!"
+    },
+    {
+      "id": "for-loop",
+      "word": "for (código)",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-for-if-else.html",
+      "simple": "Laço for: repetir com começo, porta e passo. Sala C do grafema for; ≠ Maria ≠ loop infinito. Aula 0. Valeu !!!",
+      "simpleEn": "For loop: repeat with start, door and step. Room C of the glyph for; ≠ Maria ≠ infinite loop. Lesson 0. Valeu !!!",
+      "simpleEs": "Bucle for: repetir con inicio, puerta y paso. Sala C del grafema for; ≠ Maria ≠ loop infinito. Aula 0. ¡Valeu !!!"
+    },
+    {
       "id": "roteiro",
       "word": "roteiro",
       "simple": "Irmã PT de script no palco/ecrã — linhas da cena; no lab preferir roteiro em ficha formal de filme; ver ficha script.",
@@ -6588,9 +6624,9 @@
     {
       "id": "for",
       "word": "for",
-      "simple": "EN for ≈ PT para — aponta (nesta ficha: para Maria). Homógrafo PT = conjuntivo de ser/ir. ≠ formaria ≠ por. Valeu !!!",
-      "simpleEn": "EN for ≈ PT para — it points (in this sheet: to Maria). PT homograph = ser/ir subjunctive. ≠ formaria ≠ por. Valeu !!!",
-      "simpleEs": "EN for ≈ PT para — apunta (en esta ficha: a Maria). Homógrafo PT = subjuntivo de ser/ir. ≠ formaria ≠ por. ¡Valeu !!!",
+      "simple": "Três salas: A EN preposição ≈ PT para (Maria); B conjuntivo ser/ir; C laço de código — aula for/if/else em /tecnologia/. Valeu !!!",
+      "simpleEn": "Three rooms: A EN preposition ≈ PT para (Maria); B ser/ir subjunctive; C code loop — for/if/else lesson at /tecnologia/. Valeu !!!",
+      "simpleEs": "Tres salas: A preposición EN ≈ PT para (Maria); B subjuntivo ser/ir; C bucle de código — aula for/if/else en /tecnologia/. ¡Valeu !!!",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-maria.html"

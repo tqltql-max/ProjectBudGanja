@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T13:21:45.911Z",
+  "updatedAt": "2026-08-24T13:29:48.467Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -10444,7 +10444,7 @@
         "/posts/post-inspecao-palavra-mitologia.html",
         "/posts/post-inspecao-palavra-valeu.html"
       ],
-      "notes": "Cap. 329 — primeiro deus; salas cortadas."
+      "notes": "Cap. 330 — primeiro deus; salas cortadas."
     },
     {
       "id": "expressao-adeus",
@@ -11221,6 +11221,33 @@
         "/posts/post-inspecao-palavra-respeito.html"
       ],
       "notes": "Cap. 284 — ofício × cortes furto/toque/bola; irmã de meter marcha."
+    },
+    {
+      "id": "palavra-for-if-else",
+      "title": "For / If / Else — aula 0 de programar",
+      "titleEn": "For / If / Else — programming lesson 0",
+      "titleEs": "For / If / Else — aula 0 de programar",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: for / if / else — decidir, outro caminho, repetir com fim; aula 0 no catálogo Tecnologia; ≠ Maria ≠ loop infinito.",
+      "whyEn": "Words: for / if / else — decide, other path, repeat with an end; lesson 0 in Tecnologia; ≠ Maria ≠ infinite loop.",
+      "whyEs": "Palabras: for / if / else — decidir, otro camino, repetir con fin; aula 0 en Tecnologia; ≠ Maria ≠ loop infinito.",
+      "suggestedSlug": "inspecao-palavra-for-if-else",
+      "doneHref": "/posts/post-inspecao-palavra-for-if-else.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Control_flow",
+        "https://en.wiktionary.org/wiki/if",
+        "https://en.wiktionary.org/wiki/else",
+        "https://en.wiktionary.org/wiki/for",
+        "/tecnologia/",
+        "/posts/post-inspecao-palavra-script.html",
+        "/posts/post-inspecao-palavra-loop.html",
+        "/posts/post-inspecao-palavra-maria.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 331 — aula 0; bancada no hub /tecnologia/."
     }
   ]
 }

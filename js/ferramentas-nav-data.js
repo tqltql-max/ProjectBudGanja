@@ -4554,6 +4554,30 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: mapa (lat. mappa «pano») × mão (lat. manus); cola MA- (MApa / Maão); mapa na mão; ≠ cartografia; Valeu !!!"
             },
             {
+              "label": "Inspeção: Mitologia — mŷthos + lógos; lema do catálogo; ≠ teologia ≠ magia",
+              "tileLabel": "Inspeção: Mitologia — mŷthos + …",
+              "href": "/posts/post-inspecao-palavra-mitologia.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mitologia",
+              "description": "Palavras: mitologia (mŷthos + lógos) — ofício de contar os deuses; lema de /mitologia/; Anúbis noutra sala; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Anúbis — jnpw, o chacal, a balança; algum deus do catálogo",
+              "tileLabel": "Inspeção: Anúbis — jnpw, o chac…",
+              "href": "/posts/post-inspecao-palavra-anubis.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-anubis",
+              "description": "Palavras: Anúbis (jnpw → Ἄνουβις) — chacal que pesa o coração; primeiro deus de /mitologia/; ≠ Deus ≠ magia; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: For / If / Else — aula 0 de programar",
+              "tileLabel": "Inspeção: For / If / Else — aul…",
+              "href": "/posts/post-inspecao-palavra-for-if-else.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-for-if-else",
+              "description": "Palavras: for / if / else — decidir, o outro caminho, repetir com fim; aula 0 em /tecnologia/; ≠ Maria ≠ loop infinito; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",
