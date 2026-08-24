@@ -249,6 +249,31 @@ const {
   poemEn: poemCiladaEn,
   poemEs: poemCiladaEs
 } = require('../lib/cilada-inspecao-post.js');
+const {
+  poemPt: poemEstradaPt,
+  poemEn: poemEstradaEn,
+  poemEs: poemEstradaEs
+} = require('../lib/estrada-inspecao-post.js');
+const {
+  poemPt: poemAutomovelPt,
+  poemEn: poemAutomovelEn,
+  poemEs: poemAutomovelEs
+} = require('../lib/automovel-inspecao-post.js');
+const {
+  poemPt: poemBateriaPt,
+  poemEn: poemBateriaEn,
+  poemEs: poemBateriaEs
+} = require('../lib/bateria-inspecao-post.js');
+const {
+  poemPt: poemEncruzilhadaPt,
+  poemEn: poemEncruzilhadaEn,
+  poemEs: poemEncruzilhadaEs
+} = require('../lib/encruzilhada-inspecao-post.js');
+const {
+  poemPt: poemEstradaJesusPt,
+  poemEn: poemEstradaJesusEn,
+  poemEs: poemEstradaJesusEs
+} = require('../lib/cruzamento-estrada-jesus-cristo-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -256,6 +281,96 @@ const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
 const doc = {
   updatedAt: new Date().toISOString(),
   poems: [
+    {
+      id: 'estrada-jesus-cristo',
+      slug: 'estrada-jesus-cristo',
+      title: 'Estrada × Jesus Cristo',
+      titleEn: 'Estrada × Jesus Christ',
+      titleEs: 'Estrada × Jesucristo',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser: 'Eco BudGanja — leito × máquina × pulso × X × «Eu sou o caminho»; Valeu !!!',
+      teaserEn: 'BudGanja echo — bed × machine × pulse × X × “I am the way”; Valeu !!!',
+      teaserEs: 'Eco BudGanja — lecho × máquina × pulso × X × «Yo soy el camino»; ¡Valeu !!!',
+      body: poemEstradaJesusPt(),
+      bodyEn: poemEstradaJesusEn(),
+      bodyEs: poemEstradaJesusEs(),
+      inspectionHref: '/posts/post-inspecao-cruzamento-estrada-encruzilhada-jesus-cristo.html',
+      tags: ['poesia', 'vida', 'estrada', 'jesus', 'encruzilhada', 'cruzamento']
+    },
+    {
+      id: 'encruzilhada',
+      slug: 'encruzilhada',
+      title: 'Encruzilhada',
+      titleEn: 'Encruzilhada',
+      titleEs: 'Encruzilhada',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser: 'Eco BudGanja — o X das vias; crux sem fundir o madeiro; Valeu !!!',
+      teaserEn: 'BudGanja echo — the X of the ways; crux without fusing the timber; Valeu !!!',
+      teaserEs: 'Eco BudGanja — la X de las vías; crux sin fusionar el madero; ¡Valeu !!!',
+      body: poemEncruzilhadaPt(),
+      bodyEn: poemEncruzilhadaEn(),
+      bodyEs: poemEncruzilhadaEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-encruzilhada.html',
+      tags: ['poesia', 'vida', 'encruzilhada', 'cruz', 'estrada']
+    },
+    {
+      id: 'bateria',
+      slug: 'bateria',
+      title: 'Bateria',
+      titleEn: 'Bateria',
+      titleEs: 'Bateria',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser: 'Eco BudGanja — pulso guardado; ≠ tambor; pulso ≠ alma; Valeu !!!',
+      teaserEn: 'BudGanja echo — stored pulse; ≠ drum; pulse ≠ soul; Valeu !!!',
+      teaserEs: 'Eco BudGanja — pulso guardado; ≠ tambor; pulso ≠ alma; ¡Valeu !!!',
+      body: poemBateriaPt(),
+      bodyEn: poemBateriaEn(),
+      bodyEs: poemBateriaEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-bateria.html',
+      tags: ['poesia', 'vida', 'bateria', 'automovel', 'pulso']
+    },
+    {
+      id: 'automovel',
+      slug: 'automovel',
+      title: 'Automóvel',
+      titleEn: 'Automóvel',
+      titleEs: 'Automóvel',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser: 'Eco BudGanja — auto + móvel; gatilho altomovel; Valeu !!!',
+      teaserEn: 'BudGanja echo — self + mobile; trigger altomovel; Valeu !!!',
+      teaserEs: 'Eco BudGanja — auto + móvil; gatillo altomovel; ¡Valeu !!!',
+      body: poemAutomovelPt(),
+      bodyEn: poemAutomovelEn(),
+      bodyEs: poemAutomovelEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-automovel.html',
+      tags: ['poesia', 'vida', 'automovel', 'estrada', 'bateria']
+    },
+    {
+      id: 'estrada',
+      slug: 'estrada',
+      title: 'Estrada',
+      titleEn: 'Estrada',
+      titleEs: 'Estrada',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser: 'Eco BudGanja — strata (via calçada) ≠ caminho; Valeu !!!',
+      teaserEn: 'BudGanja echo — strata (paved way) ≠ caminho; Valeu !!!',
+      teaserEs: 'Eco BudGanja — strata (vía calzada) ≠ caminho; ¡Valeu !!!',
+      body: poemEstradaPt(),
+      bodyEn: poemEstradaEn(),
+      bodyEs: poemEstradaEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-estrada.html',
+      tags: ['poesia', 'vida', 'estrada', 'caminho', 'strata']
+    },
     {
       id: 'cilada',
       slug: 'cilada',

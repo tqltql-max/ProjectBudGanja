@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T15:07:58.901Z",
+  "updatedAt": "2026-08-24T16:15:27.970Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1424,6 +1424,70 @@
       "curiositiesEn": "The lab uses the word to link research, Vida and crossing — route craft, not a grow GPS.",
       "historyEs": "Camino viene del latín vulgar camminus, quizá de sustrato celta, y nombra la vía por donde se anda. En portugués también es el proyecto de vida.",
       "curiositiesEs": "El laboratorio usa la palabra para ligar investigación, Vida y travesía — oficio de ruta, no GPS de cultivo."
+    },
+    {
+      "id": "estrada",
+      "word": "Estrada",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-estrada.html",
+      "simple": "Lat. strata «via calçada» — o leito; ≠ caminho (método). Objectos automóvel e bateria. Irmã encruzilhada. Valeu !!!",
+      "simpleEn": "Lat. strata “paved way” — the bed; ≠ caminho (method). Objects automóvel and bateria. Sister encruzilhada. Valeu !!!",
+      "simpleEs": "Lat. strata «vía calzada» — el lecho; ≠ caminho (método). Objetos automóvel y bateria. Hermana encruzilhada. ¡Valeu !!!",
+      "history": "Estrada vem do latim (via) strata, particípio de sternere (estender, pavimentar). Street inglês e strada italiana são primos. Caminho (camminus) é outra árvore. No laboratório o leito não é o método.",
+      "curiosities": "Pedido de campo com objectos automóvel e bateria, cruzado com encruzilhada e Jesus Cristo. Pegar a estrada ≠ ter o rumo. Fecho: Valeu !!!",
+      "historyEn": "Portuguese estrada is Latin (via) strata, from sternere (to spread, pave). English street and Italian strada are cousins. Caminho is another tree.",
+      "curiositiesEn": "Field request with car and battery, crossed with crossroads and Jesus Christ. Hitting the road is not already having the heading.",
+      "historyEs": "Estrada viene del latín (via) strata, de sternere. Street y strada son primas. Caminho es otro árbol.",
+      "curiositiesEs": "Pedido de campo con automóvil y batería, cruzado con encrucijada y Jesucristo."
+    },
+    {
+      "id": "encruzilhada",
+      "word": "Encruzilhada",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-encruzilhada.html",
+      "simple": "en- + cruz + -ilhada — o X da estrada. Gatilho encruziliada. ≠ leito ≠ madeiro. Cruzamento Jesus Cristo. Valeu !!!",
+      "simpleEn": "en- + cruz + -ilhada — the road’s X. Trigger encruziliada. ≠ bed ≠ timber. Jesus Christ cross. Valeu !!!",
+      "simpleEs": "en- + cruz + -ilhada — la X de la estrada. Gatillo encruziliada. ≠ lecho ≠ madero. Cruce Jesucristo. ¡Valeu !!!",
+      "history": "Encruzilhada junta en- + cruz (latim crux) + sufixo de lugar: o sítio onde as vias se cruzam. Carrefour francês é outra árvore (quatro furcas).",
+      "curiosities": "No Brasil também nomeia lugar de culto afro-brasileiro — o laboratório nomeia e não funde com Jesus Cristo. Estar numa encruzilhada = decisão."
+    },
+    {
+      "id": "jesus-cristo",
+      "word": "Jesus Cristo",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-cruzamento-estrada-encruzilhada-jesus-cristo.html",
+      "simple": "Yeshua + Christós — cruzamento com estrada, automóvel, bateria e encruzilhada. «Eu sou o caminho». Asfalto ≠ madeiro. Valeu !!!",
+      "simpleEn": "Yeshua + Christós — cross with road, car, battery and crossroads. “I am the way.” Asphalt ≠ timber. Valeu !!!",
+      "simpleEs": "Yeshua + Christós — cruce con estrada, auto, batería y encrucijada. «Yo soy el camino». Asfalto ≠ madero. ¡Valeu !!!",
+      "history": "Jesus vem do hebraico Yeshua / Yehoshua («YHWH salva»). Cristo do grego Christós («ungido»), tradução de Mashiach. O laboratório cruza o nome com o leito, a máquina, o pulso e o X — sem catecismo.",
+      "curiosities": "João 14:6 fala de caminho, não de estrada. Distinto de jesusamado (oralidade), The Chosen (série) e A Paixão de Cristo (filme). Gatilho jeusus."
+    },
+    {
+      "id": "automovel",
+      "word": "Automóvel",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-automovel.html",
+      "simple": "Gr. autós + lat. mōbilis — o que se move a si na estrada. Gatilho altomovel (alto ≠ auto). Pulso: bateria. Valeu !!!",
+      "simpleEn": "Gk. autós + Lat. mōbilis — that which moves itself on the road. Trigger altomovel (tall ≠ self). Pulse: battery. Valeu !!!",
+      "simpleEs": "Gr. autós + lat. mōbilis — lo que se mueve a sí en la estrada. Gatillo altomovel (alto ≠ auto). Pulso: batería. ¡Valeu !!!",
+      "history": "Automóvel calca o francês automobile: grego autós (si mesmo) + latim mōbilis (que se move). A orelha de campo altomovel cola alto (altura); o étimo corta.",
+      "curiosities": "Carro na fala BR é polissémico. DeLorean e Senna têm fichas próprias. Sem bateria, o automóvel é casca no leito."
+    },
+    {
+      "id": "bateria",
+      "word": "Bateria",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-bateria.html",
+      "simple": "Fr. batterie ← battre — feixe. Lema = célula do automóvel. Salas artilharia e tambores nomeadas. Pulso ≠ alma. Valeu !!!",
+      "simpleEn": "Fr. batterie ← battre — a set that beats. Lemma = car cell. Artillery and drums named. Pulse ≠ soul. Valeu !!!",
+      "simpleEs": "Fr. batterie ← battre — haz. Lema = celda del auto. Artillería y tambores nombrados. Pulso ≠ alma. ¡Valeu !!!",
+      "history": "Bateria vem do francês batterie, de battre (bater): primeiro o feixe de canhões, depois os tambores, depois as células (a pilha como bateria de peças).",
+      "curiosities": "No carro é o pulso do arranque ou da tração. O cruzamento com Jesus Cristo recusa baptizar o lítio. Ver patinete (fogo)."
     },
     {
       "id": "camomila",

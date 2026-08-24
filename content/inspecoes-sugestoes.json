@@ -1,29 +1,33 @@
 {
-  "updatedAt": "2026-08-24T15:07:58.901Z",
+  "updatedAt": "2026-08-24T16:15:27.958Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
-      "id": "derivado-racao",
-      "title": "Ração para animais — do saco industrial ao comedouro",
-      "titleEn": "Animal feed — from the industrial bag to the bowl",
-      "titleEs": "Pienso para animales — del saco industrial al comedero",
-      "tipo": "derivado",
+      "id": "cruzamento-estrada-jesus-cristo",
+      "title": "Cruzamento — Estrada × Encruzilhada × Jesus Cristo",
+      "titleEn": "Cross — Estrada × Encruzilhada × Jesus Christ",
+      "titleEs": "Cruce — Estrada × Encruzilhada × Jesucristo",
+      "tipo": "pessoas",
       "priority": 1,
       "status": "feita",
-      "why": "Hub Produtos nocivos: ração / pet food — kibble, petiscos e concentrado pecuário; distinto do animal e do que o humano come.",
-      "whyEn": "Harmful-products hub: animal feed / pet food — kibble, treats and livestock concentrate; distinct from the animal and from human food.",
-      "whyEs": "Hub Productos nocivos: pienso / pet food — kibble, snacks y concentrado pecuario; distinto del animal y de lo que come el humano.",
-      "suggestedSlug": "inspecao-derivado-racao",
-      "doneHref": "/posts/post-inspecao-derivado-racao.html",
-      "seriesHint": "animais-derivados-risco",
+      "why": "Pessoas · cruzamento: estrada × automóvel × bateria × encruzilhada × Jesus Cristo — leito, máquina, pulso e X encontram «Eu sou o caminho».",
+      "whyEn": "People · cross: road × car × battery × crossroads × Jesus Christ — bed, machine, pulse and X meet “I am the way”.",
+      "whyEs": "Personas · cruce: estrada × auto × batería × encrucijada × Jesucristo — lecho, máquina, pulso y X encuentran «Yo soy el camino».",
+      "suggestedSlug": "inspecao-cruzamento-estrada-encruzilhada-jesus-cristo",
+      "doneHref": "/posts/post-inspecao-cruzamento-estrada-encruzilhada-jesus-cristo.html",
+      "seriesHint": "pessoas-historia",
       "sources": [
-        "/animais/",
-        "/animais/cao/",
-        "/animais/gato/",
-        "https://pt.wikipedia.org/wiki/Ra%C3%A7%C3%A3o_animal",
-        "https://en.wikipedia.org/wiki/Pet_food"
+        "/posts/post-inspecao-cruzamento-estrada-encruzilhada-jesus-cristo.html",
+        "https://pt.wikipedia.org/wiki/Jesus",
+        "https://pt.wiktionary.org/wiki/Jesus",
+        "https://pt.wiktionary.org/wiki/Cristo",
+        "https://www.biblegateway.com/passage/?search=Jo%C3%A3o+14%3A6&version=ARC",
+        "/posts/post-inspecao-palavra-estrada.html",
+        "/posts/post-inspecao-palavra-automovel.html",
+        "/posts/post-inspecao-palavra-bateria.html",
+        "/posts/post-inspecao-palavra-encruzilhada.html"
       ],
-      "notes": "Hub do comedouro industrial; não fundir com fichas de animal nem com nugget/embutido/leite."
+      "notes": "Sem catecismo; crux relaciona sem fundir asfalto e madeiro."
     },
     {
       "id": "derivado-leite",
