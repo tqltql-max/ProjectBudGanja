@@ -122,7 +122,9 @@ function writeI18n(i18n, post) {
 }
 
 function upsertItem(items, entry, afterIds) {
-  const i = items.findIndex((x) => x.id === entry.id || x.word === entry.word);
+  const i = items.findIndex(
+    (x) => x.id === entry.id || (entry.word && x.word === entry.word)
+  );
   if (i >= 0) items[i] = Object.assign({}, items[i], entry);
   else {
     const after = (afterIds || [])
@@ -358,7 +360,7 @@ async function main() {
         title: 'Automóvel — o objecto que se move a si',
         titleEn: 'Automóvel — the object that moves itself',
         titleEs: 'Automóvel — el objeto que se mueve a sí',
-        tipo: 'palavra',
+        tipo: 'objeto',
         priority: 1,
         status: 'feita',
         why: 'Objecto: automóvel (auto + móvel); gatilho altomovel; pulso bateria; catálogo Objetos.',
@@ -379,7 +381,7 @@ async function main() {
         title: 'Bateria — pulso do automóvel',
         titleEn: 'Bateria — the car’s pulse',
         titleEs: 'Bateria — el pulso del automóvil',
-        tipo: 'palavra',
+        tipo: 'objeto',
         priority: 1,
         status: 'feita',
         why: 'Objecto: bateria (fr. batterie); lema = célula do carro; salas tambor/canhão nomeadas.',

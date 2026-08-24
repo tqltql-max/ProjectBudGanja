@@ -124,7 +124,7 @@ function replaceOrInsertAfter(gloss, key, line, afterKey) {
 
 function patchGlossary(gloss) {
   const main =
-    '    mapa: { tone: "craft", category: "Léxico", mundane: "Desenho do território; também plano, esquema, mapa mental.", gloss: "Lat. mappa «pano» × mão (lat. manus); cola MA- (MApa / Maão); mapa na mão; ≠ cartografia ≠ GPS ≠ quiromancia; Valeu !!!", href: "' +
+    '    mapa: { tone: "craft", category: "Léxico", mundane: "Desenho do território; também plano, esquema, mapa mental.", gloss: "Lat. mappa «pano» × mão (lat. manus); o pano desenha estrada, automóvel, bateria e encruzilhada; ≠ strata ≠ cartografia ≠ GPS; Valeu !!!", href: "' +
     HREF +
     '", en: "map", es: "mapa", fr: "carte / mappe", it: "mappa", de: "Karte / Mappe", el: "χάρτης", la: "mappa", yo: "máàpù", sw: "ramani", gez: "kārtā", nl: "kaart", pl: "mapa", ru: "карта", uk: "мапа", zh: "地图", ja: "地図", ko: "지도", ar: "خريطة", he: "מפה", hi: "नक्शा", tr: "harita", sv: "karta", da: "kort", no: "kart", fi: "kartta", cs: "mapa", ro: "hartă", hu: "térkép", ca: "mapa", gl: "mapa", eu: "mapa", gn: "mapa", qu: "mapa", eo: "mapo", vi: "bản đồ", id: "peta", th: "แผนที่", hr: "karta", sk: "mapa", ga: "léarscáil", cy: "map", ha: "taswira", am: "ካርታ", fa: "نقشه", bn: "মানচিত্র", zu: "imephu" },\n';
   gloss = replaceOrInsertAfter(gloss, 'mapa', main, 'mão');
@@ -224,9 +224,9 @@ async function main() {
         tipo: 'palavra',
         priority: 2,
         status: 'feita',
-        why: 'Palavras: mapa (lat. mappa «pano») × mão (lat. manus); cola MA- (MApa / Maão); mapa na mão; ≠ cartografia.',
-        whyEn: 'Words: mapa (Lat. mappa “cloth”) × mão (Lat. manus); MA- glue (MApa / Maão); map in hand.',
-        whyEs: 'Palabras: mapa (lat. mappa «paño») × mão (lat. manus); cola MA- (MApa / Maão); mapa en la mano.',
+        why: 'Palavras: mapa (lat. mappa «pano») × mão (lat. manus); o pano desenha estrada, automóvel, bateria e encruzilhada; ≠ strata ≠ cartografia.',
+        whyEn: 'Words: mapa (Lat. mappa “cloth”) × mão (Lat. manus); the cloth draws road, car, battery and crossroads; ≠ strata.',
+        whyEs: 'Palabras: mapa (lat. mappa «paño») × mão (lat. manus); el paño dibuja estrada, auto, batería y encrucijada; ≠ strata.',
         suggestedSlug: post.slug,
         doneHref: HREF,
         seriesHint: 'palavras-origem',
@@ -240,13 +240,18 @@ async function main() {
           WIKI_MAPPA_MUNDI,
           HREF_MAO,
           '/posts/post-inspecao-palavra-caminho.html',
+          '/posts/post-inspecao-palavra-estrada.html',
+          '/posts/post-inspecao-palavra-automovel.html',
+          '/posts/post-inspecao-palavra-bateria.html',
+          '/posts/post-inspecao-palavra-encruzilhada.html',
+          '/posts/post-inspecao-cruzamento-estrada-encruzilhada-jesus-cristo.html',
           '/posts/post-inspecao-palavra-relacao.html',
           '/posts/post-inspecao-palavra-valeu.html'
         ],
         notes:
           'Cap. ' +
           post.seriesOrder +
-          ' — mapa × mão; mappa ≠ manus; locução mapa na mão; mapear = variação.'
+          ' — mapa × mão; mappa ≠ manus ≠ strata; o pano desenha a viagem; mapear = variação.'
       },
       ['palavra-mao-esquerda-direita', 'palavra-caminho', 'palavra-relacao']
     );
@@ -265,26 +270,26 @@ async function main() {
         id: 'mapa',
         word: 'Mapa',
         simple:
-          'Lat. mappa «pano» — desenho do território e plano; cruzado com mão (lat. manus). Cola MA- (MApa / Maão). Mapa na mão. ≠ cartografia ≠ GPS. Valeu !!!',
+          'Lat. mappa «pano» — desenho do território e plano; cruzado com mão (lat. manus). O pano desenha estrada, automóvel, bateria e encruzilhada. ≠ strata ≠ cartografia ≠ GPS. Valeu !!!',
         simpleEn:
-          'Lat. mappa “cloth” — drawing of territory and plan; crossed with mão (Lat. manus). MA- glue (MApa / Maão). Map in hand. ≠ cartography ≠ GPS. Valeu !!!',
+          'Lat. mappa “cloth” — drawing of territory and plan; crossed with mão (Lat. manus). The cloth draws road, car, battery and crossroads. ≠ strata ≠ cartography ≠ GPS. Valeu !!!',
         simpleEs:
-          'Lat. mappa «paño» — dibujo del territorio y plan; cruzado con mão (lat. manus). Cola MA- (MApa / Maão). Mapa en la mano. ≠ cartografía ≠ GPS. ¡Valeu !!!',
+          'Lat. mappa «paño» — dibujo del territorio y plan; cruzado con mão (lat. manus). El paño dibuja estrada, auto, batería y encrucijada. ≠ strata ≠ cartografía ≠ GPS. ¡Valeu !!!',
         group: 'lexico',
         fromTitle: false,
         href: HREF,
         history:
           'Mapa vem do latim mappa (pano, guardanapo). Na Idade Média mappa mundi é o pano do mundo. O inglês map segue a mesma via. Cartografia (grego chartēs + graphein) é outra árvore. A mão (lat. manus) cola no ouvido (MA-) e no ofício (o pano cabe na palma), não no étimo.',
         curiosities:
-          'Gatilho de campo MApa / Maão: o olho marca o prefixo partilhado. Locução mapa na mão = ter a rota, não posse do chão. Mapear é variação verbal nesta ficha. Quiromancia (linhas da palma) fica cortada.',
+          'Gatilho de campo MApa / Maão: o olho marca o prefixo partilhado. Locução mapa na mão = ter a rota, não posse do chão. O pano desenha a viagem (estrada × automóvel × bateria × encruzilhada × Jesus Cristo) sem fundir mappa com strata. Mapear é variação verbal nesta ficha. Quiromancia fica cortada.',
         historyEn:
           'Portuguese mapa is Latin mappa (cloth, napkin). Medieval mappa mundi is the cloth of the world. English map follows the same path. Cartography (Greek chartēs + graphein) is another tree. Mão (Lat. manus) meets it in the ear (MA-) and in craft (cloth in the palm), not in the etymon.',
         curiositiesEn:
-          'Field trigger MApa / Maão: the eye marks the shared prefix. Phrase mapa na mão = to have the route, not title to the land. Mapear is a verbal variation on this sheet. Palmistry is cut.',
+          'Field trigger MApa / Maão: the eye marks the shared prefix. Phrase mapa na mão = to have the route, not title to the land. The cloth draws the journey (estrada × automóvel × bateria × encruzilhada × Jesus Christ) without fusing mappa with strata. Mapear is a verbal variation. Palmistry is cut.',
         historyEs:
           'Mapa viene del latín mappa (paño, servilleta). En la Edad Media mappa mundi es el paño del mundo. El inglés map sigue la misma vía. Cartografía (griego chartēs + graphein) es otro árbol. Mão (lat. manus) se encuentra en el oído (MA-) y en el oficio (el paño cabe en la palma), no en el étimo.',
         curiositiesEs:
-          'Gatillo de campo MApa / Maão: el ojo marca el prefijo compartido. Locución mapa na mão = tener la ruta, no título de tierra. Mapear es variación verbal en esta ficha. La quiromancia queda cortada.'
+          'Gatillo de campo MApa / Maão: el ojo marca el prefijo compartido. Locución mapa na mão = tener la ruta, no título de tierra. El paño dibuja el viaje (estrada × automóvel × bateria × encruzilhada × Jesucristo) sin fusionar mappa con strata. Mapear es variación verbal. La quiromancia queda cortada.'
       },
       ['mao', 'maravilhoso', 'mar']
     );
@@ -329,14 +334,14 @@ async function main() {
       author: 'Laboratório BudGanja',
       authorEn: 'BudGanja Lab',
       authorEs: 'Laboratorio BudGanja',
-      teaser: 'Eco BudGanja — mappa (pano) × manus (mão); MApa / Maão; o pano na palma; Valeu !!!',
-      teaserEn: 'BudGanja echo — mappa (cloth) × manus (hand); MApa / Maão; cloth in the palm; Valeu !!!',
-      teaserEs: 'Eco BudGanja — mappa (paño) × manus (mano); MApa / Maão; el paño en la palma; ¡Valeu !!!',
+      teaser: 'Eco BudGanja — mappa (pano) × manus (mão); o pano desenha a estrada; Valeu !!!',
+      teaserEn: 'BudGanja echo — mappa (cloth) × manus (hand); the cloth draws the road; Valeu !!!',
+      teaserEs: 'Eco BudGanja — mappa (paño) × manus (mano); el paño dibuja la estrada; ¡Valeu !!!',
       body: poemPt(),
       bodyEn: poemEn(),
       bodyEs: poemEs(),
       inspectionHref: HREF,
-      tags: ['poesia', 'vida', 'mapa', 'mao', 'mappa', 'manus']
+      tags: ['poesia', 'vida', 'mapa', 'mao', 'mappa', 'manus', 'estrada']
     });
     await writeJsonRetry(VIDA_FILE, vida);
     console.log('Poema Vida actualizado');

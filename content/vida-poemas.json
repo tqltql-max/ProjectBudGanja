@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T16:24:44.759Z",
+  "updatedAt": "2026-08-24T18:46:33.092Z",
   "poems": [
     {
       "id": "estrada-jesus-cristo",
@@ -155,12 +155,12 @@
       "author": "Laboratório BudGanja",
       "authorEn": "BudGanja Lab",
       "authorEs": "Laboratorio BudGanja",
-      "teaser": "Eco BudGanja — mappa (pano) × manus (mão); MApa / Maão; o pano na palma; Valeu !!!",
-      "teaserEn": "BudGanja echo — mappa (cloth) × manus (hand); MApa / Maão; cloth in the palm; Valeu !!!",
-      "teaserEs": "Eco BudGanja — mappa (paño) × manus (mano); MApa / Maão; el paño en la palma; ¡Valeu !!!",
-      "body": "Mapa.\nNão é a mão.\nÉ o pano do mundo.\n\nLatim mappa.\nPano, guardanapo, tecido.\nMappa mundi: o mundo no pano.\n\nMão.\nLatim manus.\nA palma que segura o pano.\n\nMApa.\nMaão.\nA orelha cola o MA.\nO étimo corta.\n\nO mapa na mão.\nNão é posse.\nÉ o traço que a palma fez.\n\nValeu !!!\nter o caminho no pano\nsem fundir o pano com a palma.",
-      "bodyEn": "Mapa.\nIt is not the hand.\nIt is the cloth of the world.\n\nLatin mappa.\nCloth, napkin, fabric.\nMappa mundi: the world on cloth.\n\nMão.\nLatin manus.\nThe palm that holds the cloth.\n\nMApa.\nMaão.\nThe ear glues the MA.\nThe etymon cuts.\n\nThe map in the hand.\nIt is not possession.\nIt is the trace the palm made.\n\nValeu !!!\nhave the path on the cloth\nwithout fusing cloth and palm.",
-      "bodyEs": "Mapa.\nNo es la mano.\nEs el paño del mundo.\n\nLatín mappa.\nPaño, servilleta, tejido.\nMappa mundi: el mundo en el paño.\n\nMão.\nLatín manus.\nLa palma que sujeta el paño.\n\nMApa.\nMaão.\nEl oído pega el MA.\nEl étimo corta.\n\nEl mapa en la mano.\nNo es posesión.\nEs el trazo que hizo la palma.\n\n¡Valeu !!!\ntener el camino en el paño\nsin fusionar el paño con la palma.",
+      "teaser": "Eco BudGanja — mappa (pano) × manus (mão); o pano desenha a estrada; Valeu !!!",
+      "teaserEn": "BudGanja echo — mappa (cloth) × manus (hand); the cloth draws the road; Valeu !!!",
+      "teaserEs": "Eco BudGanja — mappa (paño) × manus (mano); el paño dibuja la estrada; ¡Valeu !!!",
+      "body": "Mapa.\nNão é a mão.\nÉ o pano do mundo.\n\nLatim mappa.\nPano, guardanapo, tecido.\nMappa mundi: o mundo no pano.\n\nMão.\nLatim manus.\nA palma que segura o pano.\n\nMApa.\nMaão.\nA orelha cola o MA.\nO étimo corta.\n\nO mapa na mão.\nNão é posse.\nÉ o traço que a palma fez.\n\nNo pano cabe a estrada.\nCabe o automóvel.\nCabe a bateria.\nCabe a encruzilhada.\nO pano não é o leito.\n\nValeu !!!\nter o caminho no pano\nsem fundir o pano com a palma.",
+      "bodyEn": "Mapa.\nIt is not the hand.\nIt is the cloth of the world.\n\nLatin mappa.\nCloth, napkin, fabric.\nMappa mundi: the world on cloth.\n\nMão.\nLatin manus.\nThe palm that holds the cloth.\n\nMApa.\nMaão.\nThe ear glues the MA.\nThe etymon cuts.\n\nThe map in the hand.\nIt is not possession.\nIt is the trace the palm made.\n\nOn the cloth fits the road.\nFits the car.\nFits the battery.\nFits the crossroads.\nThe cloth is not the bed.\n\nValeu !!!\nhave the path on the cloth\nwithout fusing cloth and palm.",
+      "bodyEs": "Mapa.\nNo es la mano.\nEs el paño del mundo.\n\nLatín mappa.\nPaño, servilleta, tejido.\nMappa mundi: el mundo en el paño.\n\nMão.\nLatín manus.\nLa palma que sujeta el paño.\n\nMApa.\nMaão.\nEl oído pega el MA.\nEl étimo corta.\n\nEl mapa en la mano.\nNo es posesión.\nEs el trazo que hizo la palma.\n\nEn el paño cabe la estrada.\nCabe el automóvil.\nCabe la batería.\nCabe la encrucijada.\nEl paño no es el lecho.\n\n¡Valeu !!!\ntener el camino en el paño\nsin fusionar el paño con la palma.",
       "inspectionHref": "/posts/post-inspecao-palavra-mapa.html",
       "tags": [
         "poesia",
@@ -168,7 +168,8 @@
         "mapa",
         "mao",
         "mappa",
-        "manus"
+        "manus",
+        "estrada"
       ]
     },
     {

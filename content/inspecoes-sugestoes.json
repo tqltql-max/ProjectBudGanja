@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T16:15:27.958Z",
+  "updatedAt": "2026-08-24T18:42:35.858Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -983,6 +983,97 @@
         "/posts/post-inspecao-figura-herodoto.html"
       ],
       "notes": "Hub do projecto; não confundir com guia de cultivo."
+    },
+    {
+      "id": "palavra-estrada",
+      "title": "Estrada — via calçada (strata); ≠ caminho",
+      "titleEn": "Estrada — paved way (strata); ≠ caminho",
+      "titleEs": "Estrada — vía calzada (strata); ≠ caminho",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: estrada (lat. strata) ≠ caminho; objectos automóvel e bateria; irmã encruzilhada.",
+      "whyEn": "Words: estrada (Lat. strata) ≠ caminho; objects automóvel and bateria; sister encruzilhada.",
+      "whyEs": "Palabras: estrada (lat. strata) ≠ caminho; objetos automóvel y bateria; hermana encruzilhada.",
+      "suggestedSlug": "inspecao-palavra-estrada",
+      "doneHref": "/posts/post-inspecao-palavra-estrada.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-estrada.html",
+        "https://pt.wiktionary.org/wiki/estrada",
+        "/posts/post-inspecao-palavra-automovel.html",
+        "/posts/post-inspecao-palavra-bateria.html",
+        "/posts/post-inspecao-palavra-encruzilhada.html",
+        "/posts/post-inspecao-cruzamento-estrada-encruzilhada-jesus-cristo.html"
+      ],
+      "notes": "Cap. cluster — leito ≠ método."
+    },
+    {
+      "id": "palavra-encruzilhada",
+      "title": "Encruzilhada — o sítio da cruz das vias",
+      "titleEn": "Encruzilhada — the place of the crossed ways",
+      "titleEs": "Encruzilhada — el sitio de la cruz de las vías",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: encruzilhada (en- + cruz + -ilhada); gatilho encruziliada; ≠ leito ≠ madeiro.",
+      "whyEn": "Words: encruzilhada (en- + cruz + -ilhada); trigger encruziliada; ≠ bed ≠ timber.",
+      "whyEs": "Palabras: encruzilhada (en- + cruz + -ilhada); gatillo encruziliada; ≠ lecho ≠ madero.",
+      "suggestedSlug": "inspecao-palavra-encruzilhada",
+      "doneHref": "/posts/post-inspecao-palavra-encruzilhada.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-encruzilhada.html",
+        "https://pt.wiktionary.org/wiki/encruzilhada",
+        "https://pt.wiktionary.org/wiki/cruz",
+        "https://en.wiktionary.org/wiki/crux#Latin",
+        "/posts/post-inspecao-cruzamento-estrada-encruzilhada-jesus-cristo.html"
+      ],
+      "notes": "Camada afro-brasileira nomeada e cortada do eixo Jesus."
+    },
+    {
+      "id": "objeto-automovel",
+      "title": "Automóvel — o objecto que se move a si",
+      "titleEn": "Automóvel — the object that moves itself",
+      "titleEs": "Automóvel — el objeto que se mueve a sí",
+      "tipo": "objeto",
+      "priority": 1,
+      "status": "feita",
+      "why": "Objecto: automóvel (auto + móvel); gatilho altomovel; pulso bateria; catálogo Objetos.",
+      "whyEn": "Object: automóvel (self + mobile); trigger altomovel; battery pulse; Objects catalog.",
+      "whyEs": "Objeto: automóvel (auto + móvil); gatillo altomovel; pulso batería; catálogo Objetos.",
+      "suggestedSlug": "inspecao-palavra-automovel",
+      "doneHref": "/posts/post-inspecao-palavra-automovel.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-automovel.html",
+        "https://pt.wiktionary.org/wiki/autom%C3%B3vel",
+        "/posts/post-inspecao-palavra-estrada.html",
+        "/posts/post-inspecao-palavra-bateria.html"
+      ],
+      "notes": "Pedido de campo altomovel."
+    },
+    {
+      "id": "objeto-bateria",
+      "title": "Bateria — pulso do automóvel",
+      "titleEn": "Bateria — the car’s pulse",
+      "titleEs": "Bateria — el pulso del automóvil",
+      "tipo": "objeto",
+      "priority": 1,
+      "status": "feita",
+      "why": "Objecto: bateria (fr. batterie); lema = célula do carro; salas tambor/canhão nomeadas.",
+      "whyEn": "Object: bateria (Fr. batterie); lemma = car cell; drum/cannon rooms named.",
+      "whyEs": "Objeto: bateria (fr. batterie); lema = celda del auto; salas tambor/cañón nombradas.",
+      "suggestedSlug": "inspecao-palavra-bateria",
+      "doneHref": "/posts/post-inspecao-palavra-bateria.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-bateria.html",
+        "https://pt.wiktionary.org/wiki/bateria",
+        "/posts/post-inspecao-palavra-automovel.html",
+        "/posts/post-inspecao-palavra-estrada.html"
+      ],
+      "notes": "Pulso ≠ alma."
     },
     {
       "id": "palavra-marijuana",
@@ -3184,9 +3275,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: mapa (lat. mappa «pano») × mão (lat. manus); cola MA- (MApa / Maão); mapa na mão; ≠ cartografia.",
-      "whyEn": "Words: mapa (Lat. mappa “cloth”) × mão (Lat. manus); MA- glue (MApa / Maão); map in hand.",
-      "whyEs": "Palabras: mapa (lat. mappa «paño») × mão (lat. manus); cola MA- (MApa / Maão); mapa en la mano.",
+      "why": "Palavras: mapa (lat. mappa «pano») × mão (lat. manus); o pano desenha estrada, automóvel, bateria e encruzilhada; ≠ strata ≠ cartografia.",
+      "whyEn": "Words: mapa (Lat. mappa “cloth”) × mão (Lat. manus); the cloth draws road, car, battery and crossroads; ≠ strata.",
+      "whyEs": "Palabras: mapa (lat. mappa «paño») × mão (lat. manus); el paño dibuja estrada, auto, batería y encrucijada; ≠ strata.",
       "suggestedSlug": "inspecao-palavra-mapa",
       "doneHref": "/posts/post-inspecao-palavra-mapa.html",
       "seriesHint": "palavras-origem",
@@ -3200,10 +3291,15 @@
         "https://pt.wikipedia.org/wiki/Mappa_mundi",
         "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
         "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-palavra-estrada.html",
+        "/posts/post-inspecao-palavra-automovel.html",
+        "/posts/post-inspecao-palavra-bateria.html",
+        "/posts/post-inspecao-palavra-encruzilhada.html",
+        "/posts/post-inspecao-cruzamento-estrada-encruzilhada-jesus-cristo.html",
         "/posts/post-inspecao-palavra-relacao.html",
         "/posts/post-inspecao-palavra-valeu.html"
       ],
-      "notes": "Cap. 328 — mapa × mão; mappa ≠ manus; locução mapa na mão; mapear = variação."
+      "notes": "Cap. 328 — mapa × mão; mappa ≠ manus ≠ strata; o pano desenha a viagem; mapear = variação."
     },
     {
       "id": "palavra-arvore-da-vida",

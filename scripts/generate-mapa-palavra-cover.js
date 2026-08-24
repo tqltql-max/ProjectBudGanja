@@ -37,8 +37,9 @@ async function main() {
   <line x1="310" y1="168" x2="310" y2="378" stroke="rgba(180,200,160,0.28)" stroke-width="1.5"/>
   <line x1="410" y1="168" x2="410" y2="378" stroke="rgba(180,200,160,0.28)" stroke-width="1.5"/>
   <path d="M240 250 C280 210, 340 220, 380 248 C420 276, 460 250, 490 268" fill="none" stroke="rgba(210,190,120,0.85)" stroke-width="3"/>
-  <circle cx="268" cy="242" r="5" fill="rgba(223,194,98,0.9)"/>
-  <circle cx="448" cy="262" r="5" fill="rgba(223,194,98,0.9)"/>
+  <line x1="268" y1="220" x2="448" y2="300" stroke="rgba(200,170,90,0.55)" stroke-width="2.5"/>
+  <line x1="300" y1="300" x2="430" y2="210" stroke="rgba(200,170,90,0.55)" stroke-width="2.5"/>
+  <circle cx="360" cy="255" r="6" fill="rgba(223,194,98,0.95)"/>
   <text x="360" y="358" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="22" fill="rgba(220,210,180,0.9)">mappa</text>
 
   <!-- palm -->
@@ -51,8 +52,8 @@ async function main() {
 
   <text x="600" y="78" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#c8c090" letter-spacing="5">PALAVRAS · MAPPA · × MANUS</text>
   <text x="600" y="488" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="76" font-weight="700" fill="#f4f0e4">mapa</text>
-  <text x="600" y="542" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="rgba(220,210,180,0.95)">MApa · Maão · o pano na palma</text>
-  <text x="600" y="580" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="rgba(190,180,150,0.85)">mappa ≠ manus · mapa na mão · Valeu !!!</text>
+  <text x="600" y="542" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="rgba(220,210,180,0.95)">MApa · Maão · o pano da viagem</text>
+  <text x="600" y="580" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="rgba(190,180,150,0.85)">mappa ≠ manus ≠ strata · mapa na mão · Valeu !!!</text>
 </svg>`);
 
   await sharp(bg).jpeg({ quality: 84, mozjpeg: true }).toFile(OUT);

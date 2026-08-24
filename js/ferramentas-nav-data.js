@@ -4607,7 +4607,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-mapa.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-mapa",
-              "description": "Palavras: mapa (lat. mappa «pano») × mão (lat. manus); cola MA- (MApa / Maão); mapa na mão; ≠ cartografia; Valeu !!!"
+              "description": "Palavras: mapa (lat. mappa «pano») × mão (lat. manus); o pano desenha estrada, automóvel, bateria e encruzilhada; ≠ strata ≠ cartografia; Valeu !!!"
             },
             {
               "label": "Inspeção: Mitologia — mŷthos + lógos; lema do catálogo; ≠ teologia ≠ magia",

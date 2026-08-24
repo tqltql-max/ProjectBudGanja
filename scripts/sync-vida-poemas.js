@@ -398,14 +398,14 @@ const doc = {
       author: 'Laboratório BudGanja',
       authorEn: 'BudGanja Lab',
       authorEs: 'Laboratorio BudGanja',
-      teaser: 'Eco BudGanja — mappa (pano) × manus (mão); MApa / Maão; o pano na palma; Valeu !!!',
-      teaserEn: 'BudGanja echo — mappa (cloth) × manus (hand); MApa / Maão; cloth in the palm; Valeu !!!',
-      teaserEs: 'Eco BudGanja — mappa (paño) × manus (mano); MApa / Maão; el paño en la palma; ¡Valeu !!!',
+      teaser: 'Eco BudGanja — mappa (pano) × manus (mão); o pano desenha a estrada; Valeu !!!',
+      teaserEn: 'BudGanja echo — mappa (cloth) × manus (hand); the cloth draws the road; Valeu !!!',
+      teaserEs: 'Eco BudGanja — mappa (paño) × manus (mano); el paño dibuja la estrada; ¡Valeu !!!',
       body: poemMapaPt(),
       bodyEn: poemMapaEn(),
       bodyEs: poemMapaEs(),
       inspectionHref: '/posts/post-inspecao-palavra-mapa.html',
-      tags: ['poesia', 'vida', 'mapa', 'mao', 'mappa', 'manus']
+      tags: ['poesia', 'vida', 'mapa', 'mao', 'mappa', 'manus', 'estrada']
     },
     {
       id: 'maria',

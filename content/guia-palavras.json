@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T16:15:27.970Z",
+  "updatedAt": "2026-08-24T18:42:35.867Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -6922,18 +6922,18 @@
     {
       "id": "mapa",
       "word": "Mapa",
-      "simple": "Lat. mappa «pano» — desenho do território e plano; cruzado com mão (lat. manus). Cola MA- (MApa / Maão). Mapa na mão. ≠ cartografia ≠ GPS. Valeu !!!",
-      "simpleEn": "Lat. mappa “cloth” — drawing of territory and plan; crossed with mão (Lat. manus). MA- glue (MApa / Maão). Map in hand. ≠ cartography ≠ GPS. Valeu !!!",
-      "simpleEs": "Lat. mappa «paño» — dibujo del territorio y plan; cruzado con mão (lat. manus). Cola MA- (MApa / Maão). Mapa en la mano. ≠ cartografía ≠ GPS. ¡Valeu !!!",
+      "simple": "Lat. mappa «pano» — desenho do território e plano; cruzado com mão (lat. manus). O pano desenha estrada, automóvel, bateria e encruzilhada. ≠ strata ≠ cartografia ≠ GPS. Valeu !!!",
+      "simpleEn": "Lat. mappa “cloth” — drawing of territory and plan; crossed with mão (Lat. manus). The cloth draws road, car, battery and crossroads. ≠ strata ≠ cartography ≠ GPS. Valeu !!!",
+      "simpleEs": "Lat. mappa «paño» — dibujo del territorio y plan; cruzado con mão (lat. manus). El paño dibuja estrada, auto, batería y encrucijada. ≠ strata ≠ cartografía ≠ GPS. ¡Valeu !!!",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-mapa.html",
       "history": "Mapa vem do latim mappa (pano, guardanapo). Na Idade Média mappa mundi é o pano do mundo. O inglês map segue a mesma via. Cartografia (grego chartēs + graphein) é outra árvore. A mão (lat. manus) cola no ouvido (MA-) e no ofício (o pano cabe na palma), não no étimo.",
-      "curiosities": "Gatilho de campo MApa / Maão: o olho marca o prefixo partilhado. Locução mapa na mão = ter a rota, não posse do chão. Mapear é variação verbal nesta ficha. Quiromancia (linhas da palma) fica cortada.",
+      "curiosities": "Gatilho de campo MApa / Maão: o olho marca o prefixo partilhado. Locução mapa na mão = ter a rota, não posse do chão. O pano desenha a viagem (estrada × automóvel × bateria × encruzilhada × Jesus Cristo) sem fundir mappa com strata. Mapear é variação verbal nesta ficha. Quiromancia fica cortada.",
       "historyEn": "Portuguese mapa is Latin mappa (cloth, napkin). Medieval mappa mundi is the cloth of the world. English map follows the same path. Cartography (Greek chartēs + graphein) is another tree. Mão (Lat. manus) meets it in the ear (MA-) and in craft (cloth in the palm), not in the etymon.",
-      "curiositiesEn": "Field trigger MApa / Maão: the eye marks the shared prefix. Phrase mapa na mão = to have the route, not title to the land. Mapear is a verbal variation on this sheet. Palmistry is cut.",
+      "curiositiesEn": "Field trigger MApa / Maão: the eye marks the shared prefix. Phrase mapa na mão = to have the route, not title to the land. The cloth draws the journey (estrada × automóvel × bateria × encruzilhada × Jesus Christ) without fusing mappa with strata. Mapear is a verbal variation. Palmistry is cut.",
       "historyEs": "Mapa viene del latín mappa (paño, servilleta). En la Edad Media mappa mundi es el paño del mundo. El inglés map sigue la misma vía. Cartografía (griego chartēs + graphein) es otro árbol. Mão (lat. manus) se encuentra en el oído (MA-) y en el oficio (el paño cabe en la palma), no en el étimo.",
-      "curiositiesEs": "Gatillo de campo MApa / Maão: el ojo marca el prefijo compartido. Locución mapa na mão = tener la ruta, no título de tierra. Mapear es variación verbal en esta ficha. La quiromancia queda cortada."
+      "curiositiesEs": "Gatillo de campo MApa / Maão: el ojo marca el prefijo compartido. Locución mapa na mão = tener la ruta, no título de tierra. El paño dibuja el viaje (estrada × automóvel × bateria × encruzilhada × Jesucristo) sin fusionar mappa con strata. Mapear es variación verbal. La quiromancia queda cortada."
     },
     {
       "id": "mapear",
