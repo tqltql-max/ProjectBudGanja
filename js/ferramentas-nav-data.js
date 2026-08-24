@@ -39,6 +39,15 @@ window.__BIBLIOTECA_NAV__ = {
           "description": "Catálogo de fungos: identificação e enquadramento — não é cultivo nem uso."
         },
         {
+          "label": "Tecnologia",
+          "tileLabel": "Tecnologia",
+          "href": "/tecnologia/",
+          "icon": "⚙️",
+          "slug": "tecnologia",
+          "featured": true,
+          "description": "Catálogo de ofício técnico: vocábulos, hardware, rede e software."
+        },
+        {
           "label": "Curso UNIFESP",
           "tileLabel": "UNIFESP",
           "href": "/biblioteca/unifesp/",
@@ -1662,6 +1671,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-maracuja",
               "description": "*Passiflora incarnata* — flavonoides e alcaloides traço; chá calmante clássico da fitoterapia."
+            },
+            {
+              "label": "Inspeção: Animal — Mula",
+              "tileLabel": "Inspeção: Animal — Mula",
+              "href": "/posts/post-inspecao-animal-mula.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-animal-mula",
+              "description": "Relatório educacional de Mula (*Equus asinus × Equus ferus caballus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
             },
             {
               "label": "Inspeção: em pé e deitado — as duas posturas da lemniscata (*bodiado*)",
@@ -4192,6 +4209,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: DSL = Digital Subscriber Line; ≠ discada ≠ login ≠ fibra; Valeu !!!"
             },
             {
+              "label": "Inspeção: Meter a mão — o gesto que entra no ofício",
+              "tileLabel": "Inspeção: Meter a mão — o gesto…",
+              "href": "/posts/post-inspecao-expressao-meter-a-mao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-meter-a-mao",
+              "description": "Expressões: meter a mão — contacto com a massa / o ofício; ≠ furto ≠ toque sem consentimento ≠ futebol; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Log In — a porta da sessão, não o cano",
               "tileLabel": "Inspeção: Log In — a porta da s…",
               "href": "/posts/post-inspecao-palavra-login.html",
@@ -4486,6 +4511,38 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-ariana",
               "description": "Palavras: «ariana» / ariano / Áries — 1.º signo (lat. ariēs); ≠ horóscopo; ≠ ariano racial; página Astrologia; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Mola — o objecto que cede e volta (≠ mula)",
+              "tileLabel": "Inspeção: Mola — o objecto que …",
+              "href": "/posts/post-inspecao-palavra-mola.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mola",
+              "description": "Objecto: mola / molas (it. molla ← mollis) — peça elástica; ≠ mula (lat. mūla) ≠ mó; feixe da carroça e passo equino; catálogo Objetos; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Tecnologia — tékhnē + lógos; lema do catálogo; ≠ ídolo ≠ escravidão",
+              "tileLabel": "Inspeção: Tecnologia — tékhnē +…",
+              "href": "/posts/post-inspecao-palavra-tecnologia.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-tecnologia",
+              "description": "Palavras: tecnologia (tékhnē + lógos) — ofício dos aparelhos; lema de /tecnologia/; HD escravo noutra sala; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: HD escravo (slave) — jumper ATA; slayr; ≠ escravidão ≠ SATA",
+              "tileLabel": "Inspeção: HD escravo (slave) — …",
+              "href": "/posts/post-inspecao-palavra-hd-escravo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-hd-escravo",
+              "description": "Palavras: HD escravo = jumper IDE Device 1; smash slayr → slave; ≠ escravidão humana ≠ SATA; catálogo /tecnologia/; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Mapa — o pano do mundo (relação com mão)",
+              "tileLabel": "Inspeção: Mapa — o pano do mund…",
+              "href": "/posts/post-inspecao-palavra-mapa.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-mapa",
+              "description": "Palavras: mapa (lat. mappa «pano») × mão (lat. manus); cola MA- (MApa / Maão); mapa na mão; ≠ cartografia; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

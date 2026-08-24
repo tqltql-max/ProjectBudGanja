@@ -53,6 +53,15 @@
               "description": "Catálogo de fungos: identificação e enquadramento — não é cultivo nem uso."
             },
             {
+              "label": "Tecnologia",
+              "tileLabel": "Tecnologia",
+              "href": "/tecnologia/",
+              "icon": "⚙️",
+              "slug": "tecnologia",
+              "featured": true,
+              "description": "Catálogo de ofício técnico: vocábulos, hardware, rede e software."
+            },
+            {
               "label": "Curso UNIFESP",
               "tileLabel": "UNIFESP",
               "href": "/biblioteca/unifesp/",
@@ -121,6 +130,15 @@
                   "slug": "guia-palavras",
                   "featured": true,
                   "description": "Glossário simples: títulos do site e léxico inspecionado."
+                },
+                {
+                  "label": "Astrologia",
+                  "tileLabel": "Astrologia",
+                  "href": "/guia/astrologia.html",
+                  "icon": "♈",
+                  "slug": "guia-astrologia",
+                  "featured": true,
+                  "description": "Doze signos a partir de Áries; céu verificável; Google Sky sem embed web."
                 },
                 {
                   "label": "Chá de plantas",
@@ -373,6 +391,14 @@
                   "description": "Ficha fundadora da série Palavras: etimologia afro-atlântica de «maconha», viagem histórica, mudança de sentido e elo com *Cannabis sativa* no catálogo medicinal."
                 },
                 {
+                  "label": "Vida — O Laboratório e a Sementinha",
+                  "tileLabel": "Vida — O Laboratório e a Sement…",
+                  "href": "/posts/post-inspecao-conto-vida-laboratorio.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-conto-vida-laboratorio",
+                  "description": "Conto do laboratório: o Inspetor, a Dona Maria, a Joaninha Joana e os Three Little Birds ensinam a cuidar de uma semente com ciência, natureza e amizade."
+                },
+                {
                   "label": "Inspeção: Planta — Babosa — gel foliar e polissacarídeos",
                   "tileLabel": "Inspeção: Planta — Babosa — gel…",
                   "href": "/posts/post-inspecao-planta-babosa.html",
@@ -443,6 +469,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-animal-gato",
                   "description": "Relatório educacional de Gato (*Felis catus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
+                },
+                {
+                  "label": "Vida — O Inspetor, detetive botânico",
+                  "tileLabel": "Vida — O Inspetor, detetive bot…",
+                  "href": "/posts/post-inspecao-personagem-inspetor.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-personagem-inspetor",
+                  "description": "Detetive botânico de chapéu engraçado e braço de bronze: mede luz e clima para a planta crescer feliz."
                 },
                 {
                   "label": "Inspeção: Prof. Elisaldo Carlini — pioneiro da cannabis medicinal",
@@ -565,6 +599,14 @@
                   "description": "Pessoas × Palavras: Chorão (Alexandre Magno Abrão), letrista do Charlie Brown Jr. — poesia urbana, gíria e refrão cruzados com a ficha maconha e o hub de vocábulos."
                 },
                 {
+                  "label": "Vida — Dona Maria, mestra do solo",
+                  "tileLabel": "Vida — Dona Maria, mestra do so…",
+                  "href": "/posts/post-inspecao-personagem-dona-maria.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-personagem-dona-maria",
+                  "description": "Mãe do Inspetor e guardiã do Super Solo: o coração orgânico do laboratório — terra viva e carinho."
+                },
+                {
                   "label": "Inspeção: Planta — Capim-limão — citral e gramínea aromática",
                   "tileLabel": "Inspeção: Planta — Capim-limão …",
                   "href": "/posts/post-inspecao-planta-capim-limao.html",
@@ -653,6 +695,14 @@
                   "description": "Pessoas × Artes: Keanu Reeves — método actoral e presença física, com elo principal no filme The Matrix (1999); distinto do Legado canábico."
                 },
                 {
+                  "label": "Vida — DJ Brisa, a voz da harmonia",
+                  "tileLabel": "Vida — DJ Brisa, a voz da harmo…",
+                  "href": "/posts/post-inspecao-personagem-dj-brisa.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-personagem-dj-brisa",
+                  "description": "Arara DJ da Rádio BudGanja: torna o aprendizado leve, animado e cheio de boa vibração."
+                },
+                {
                   "label": "Inspeção: Profa. Solange Nappo — CEBRID",
                   "tileLabel": "Inspeção: Profa. Solange Nappo …",
                   "href": "/posts/post-inspecao-solange-nappo.html",
@@ -725,6 +775,14 @@
                   "description": "Relatório educacional de Abelha (*Apis mellifera): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
                 },
                 {
+                  "label": "Vida — Joaninha Joana, guardiã biológica",
+                  "tileLabel": "Vida — Joaninha Joana, guardiã …",
+                  "href": "/posts/post-inspecao-personagem-joaninha-joana.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-personagem-joaninha-joana",
+                  "description": "Pet da Dona Maria e ícone do controle biológico: protege as folhas sem veneno químico."
+                },
+                {
                   "label": "Inspeção: Planta — Cavalinha — sílica e remineralizante",
                   "tileLabel": "Inspeção: Planta — Cavalinha — …",
                   "href": "/posts/post-inspecao-planta-cavalinha.html",
@@ -773,6 +831,14 @@
                   "description": "Relatório educacional de Codorna (*Coturnix japonica): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
                 },
                 {
+                  "label": "Vida — Three Little Birds, o esquadrão da alegria",
+                  "tileLabel": "Vida — Three Little Birds, o es…",
+                  "href": "/posts/post-inspecao-personagem-three-little-birds.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-personagem-three-little-birds",
+                  "description": "Trio de pássaros-IA: contas precisas, diário organizado e DJ Brisa na harmonia — do semente ao sênior."
+                },
+                {
                   "label": "Inspeção: Planta — Erva-cidreira — citral e verbena brasileira",
                   "tileLabel": "Inspeção: Planta — Erva-cidreir…",
                   "href": "/posts/post-inspecao-planta-erva-cidreira.html",
@@ -811,6 +877,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-derivado-leite",
                   "description": "Produtos nocivos: leite e laticínios (*Bos taurus*) — UHT, leite em pó, queijo, iogurte adoçado e bebidas lácteas versus leite tradicional. Hub da família; proteína na caseína; animal na vaca."
+                },
+                {
+                  "label": "Vida — Flor Maria Jane Maria, contacto do canal Joana e Maria",
+                  "tileLabel": "Vida — Flor Maria Jane Maria, c…",
+                  "href": "/posts/post-inspecao-personagem-flor-maria-jane-maria.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-personagem-flor-maria-jane-maria",
+                  "description": "A flor do laboratório: contacto visível do canal Joana e Maria — solo da Dona Maria × guarda da Joana. Jane = Joana em inglês; Maria Jane = outra sala."
                 },
                 {
                   "label": "Inspeção: duasakdiqujdocedomadur — Deus ajuda quem cedo madruga",
@@ -859,6 +933,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-maca",
                   "description": "Relatório educacional de Maçã (*Malus domestica Borkh.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+                },
+                {
+                  "label": "Inspeção: Ração para animais — do saco industrial ao comedouro",
+                  "tileLabel": "Inspeção: Ração para animais — …",
+                  "href": "/posts/post-inspecao-derivado-racao.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-derivado-racao",
+                  "description": "Produtos nocivos: ração para animais — kibble, petiscos e concentrado pecuário versus pasto e comida inteira. Hub do comedouro industrial; o animal nas fichas de espécie; o que o humano come nos derivados."
                 },
                 {
                   "label": "Inspeção: Derivados do Açaí — açúcar, aditivos e química industrial",
@@ -1603,6 +1685,14 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-planta-maracuja",
                   "description": "*Passiflora incarnata* — flavonoides e alcaloides traço; chá calmante clássico da fitoterapia."
+                },
+                {
+                  "label": "Inspeção: Animal — Mula",
+                  "tileLabel": "Inspeção: Animal — Mula",
+                  "href": "/posts/post-inspecao-animal-mula.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-animal-mula",
+                  "description": "Relatório educacional de Mula (*Equus asinus × Equus ferus caballus): ficha, criação/usos, cuidados e ligação aos derivados industriais quando existirem."
                 },
                 {
                   "label": "Inspeção: em pé e deitado — as duas posturas da lemniscata (*bodiado*)",
@@ -3101,6 +3191,14 @@
                   "description": "Palavras: «ligar» × «desligar» (lat. *ligāre*) — verbos do circuito; tríade com interruptor e luz; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Wake Up — Rage Against the Machine e o ofício de acordar",
+                  "tileLabel": "Inspeção: Wake Up — Rage Agains…",
+                  "href": "/posts/post-inspecao-arte-wake-up.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-arte-wake-up",
+                  "description": "Artes · canção 1992: RATM — Wake Up (faixa 7) × sonhar/verdade; irmã de Killing in the Name; afterlife Matrix; rádio como adaptação."
+                },
+                {
                   "label": "Inspeção: Papel de enrolar e tabaco — origem do papel e origem da planta",
                   "tileLabel": "Inspeção: Papel de enrolar e ta…",
                   "href": "/posts/post-inspecao-palavra-papel-enrolar-tabaco.html",
@@ -4093,6 +4191,14 @@
                   "description": "Expressões: Partiu!!! — derivação de Valeu !!!; pretérito de partir virado grito de porta; ≠ Tamara ≠ pariu ≠ Fui; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: missão comprida — cola do comprimento; canónica cumprida; primos de complēre",
+                  "tileLabel": "Inspeção: missão comprida — col…",
+                  "href": "/posts/post-inspecao-expressao-missao-comprida.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-expressao-missao-comprida",
+                  "description": "Expressões: missão comprida — trocadilho sobre missão cumprida (complēre); comprido é primo (extensão); missão é envio; Valeu !!!"
+                },
+                {
                   "label": "Inspeção: Letra X — o xis, o nexo, as salas",
                   "tileLabel": "Inspeção: Letra X — o xis, o ne…",
                   "href": "/posts/post-inspecao-palavra-letra-x.html",
@@ -4101,12 +4207,28 @@
                   "description": "Palavras: letra X / xis — 24.ª; som PT vários; x de conexão = nexo; ≠ app ≠ Xiaomi; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: que não arrisca não petisca — o ditado do bocado",
+                  "tileLabel": "Inspeção: que não arrisca não p…",
+                  "href": "/posts/post-inspecao-expressao-quem-nao-arrisca-nao-petisca.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-expressao-quem-nao-arrisca-nao-petisca",
+                  "description": "Expressões: que não arrisca não petisca — voz viva; âncora quem não arrisca…; index no lugar de Valeu !!!; ≠ aposta; Valeu !!!"
+                },
+                {
                   "label": "Inspeção: DSL — a sigla do cano que fica",
                   "tileLabel": "Inspeção: DSL — a sigla do cano…",
                   "href": "/posts/post-inspecao-palavra-dsl.html",
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-dsl",
                   "description": "Palavras: DSL = Digital Subscriber Line; ≠ discada ≠ login ≠ fibra; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Meter a mão — o gesto que entra no ofício",
+                  "tileLabel": "Inspeção: Meter a mão — o gesto…",
+                  "href": "/posts/post-inspecao-expressao-meter-a-mao.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-expressao-meter-a-mao",
+                  "description": "Expressões: meter a mão — contacto com a massa / o ofício; ≠ furto ≠ toque sem consentimento ≠ futebol; Valeu !!!"
                 },
                 {
                   "label": "Inspeção: Log In — a porta da sessão, não o cano",
@@ -4363,6 +4485,78 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-maria",
                   "description": "Palavras: Maria (hebr. Miryam → lat. Maria) × for (EN for ≈ PT para — a partícula aponta); ≠ for conjuntivo ≠ formaria ≠ marijuana; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Tele — longe no grego, a caixa na sala",
+                  "tileLabel": "Inspeção: Tele — longe no grego…",
+                  "href": "/posts/post-inspecao-palavra-tele.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-tele",
+                  "description": "Palavras: tele ← gr. têle (longe); recorte BR «a tele» (TV); ≠ tela (lat. tēla); família telefone/telescópio; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Patia — -patia ← gr. páthos; sentir × sofrer × escola",
+                  "tileLabel": "Inspeção: Patia — -patia ← gr. …",
+                  "href": "/posts/post-inspecao-palavra-patia.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-patia",
+                  "description": "Palavras: Patia / -patia ← gr. páthos · -pátheia — afecto × doença × escola × alelopatia; ≠ pato ≠ pátria; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Comprimento, Distância e Relatividade — o metro depende do quadro",
+                  "tileLabel": "Inspeção: Comprimento, Distânci…",
+                  "href": "/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-comprimento-distancia-relatividade",
+                  "description": "Palavras: comprimento × distância × relatividade — vara, vão e teoria do quadro; ≠ cumprimento ≠ relativismo; c não muda de ofício; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: @ / arroba — *ar-rubʿ* (o quarto); cruzar com olhos (*oculus*); o olho cola, a orelha não; Valeu !!!",
+                  "tileLabel": "Inspeção: @ / arroba — *ar-rubʿ…",
+                  "href": "/posts/post-inspecao-palavra-arroba.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-arroba",
+                  "description": "Palavras: @ / arroba (ár. ar-rubʿ, o peso) × olho / olhos (lat. oculus) — relação de pictograma, não de étimo; menção chama o olhar; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Ariana — Áries, o primeiro signo e as derivações",
+                  "tileLabel": "Inspeção: Ariana — Áries, o pri…",
+                  "href": "/posts/post-inspecao-palavra-ariana.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-ariana",
+                  "description": "Palavras: «ariana» / ariano / Áries — 1.º signo (lat. ariēs); ≠ horóscopo; ≠ ariano racial; página Astrologia; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Mola — o objecto que cede e volta (≠ mula)",
+                  "tileLabel": "Inspeção: Mola — o objecto que …",
+                  "href": "/posts/post-inspecao-palavra-mola.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-mola",
+                  "description": "Objecto: mola / molas (it. molla ← mollis) — peça elástica; ≠ mula (lat. mūla) ≠ mó; feixe da carroça e passo equino; catálogo Objetos; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Tecnologia — tékhnē + lógos; lema do catálogo; ≠ ídolo ≠ escravidão",
+                  "tileLabel": "Inspeção: Tecnologia — tékhnē +…",
+                  "href": "/posts/post-inspecao-palavra-tecnologia.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-tecnologia",
+                  "description": "Palavras: tecnologia (tékhnē + lógos) — ofício dos aparelhos; lema de /tecnologia/; HD escravo noutra sala; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: HD escravo (slave) — jumper ATA; slayr; ≠ escravidão ≠ SATA",
+                  "tileLabel": "Inspeção: HD escravo (slave) — …",
+                  "href": "/posts/post-inspecao-palavra-hd-escravo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-hd-escravo",
+                  "description": "Palavras: HD escravo = jumper IDE Device 1; smash slayr → slave; ≠ escravidão humana ≠ SATA; catálogo /tecnologia/; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Mapa — o pano do mundo (relação com mão)",
+                  "tileLabel": "Inspeção: Mapa — o pano do mund…",
+                  "href": "/posts/post-inspecao-palavra-mapa.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-mapa",
+                  "description": "Palavras: mapa (lat. mappa «pano») × mão (lat. manus); cola MA- (MApa / Maão); mapa na mão; ≠ cartografia; Valeu !!!"
                 },
                 {
                   "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
@@ -4964,54 +5158,6 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-derivado-cana-de-acucar",
                   "description": "Derivados de risco: origem da cana, OMS (açúcares livres) e cruzamento com a divulgação do Dr. Lair Ribeiro — portal (sacarose da cana) + varredura de 887 vídeos do canal (açúcar, frutose, diabesidade)."
-                },
-                {
-                  "label": "Vida — Three Little Birds, o esquadrão da alegria",
-                  "tileLabel": "Vida — Three Little Birds, o es…",
-                  "href": "/posts/post-inspecao-personagem-three-little-birds.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-personagem-three-little-birds",
-                  "description": "Trio de pássaros-IA: contas precisas, diário organizado e DJ Brisa na harmonia — do semente ao sênior."
-                },
-                {
-                  "label": "Vida — Joaninha Joana, guardiã biológica",
-                  "tileLabel": "Vida — Joaninha Joana, guardiã …",
-                  "href": "/posts/post-inspecao-personagem-joaninha-joana.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-personagem-joaninha-joana",
-                  "description": "Pet da Dona Maria e ícone do controle biológico: protege as folhas sem veneno químico."
-                },
-                {
-                  "label": "Vida — DJ Brisa, a voz da harmonia",
-                  "tileLabel": "Vida — DJ Brisa, a voz da harmo…",
-                  "href": "/posts/post-inspecao-personagem-dj-brisa.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-personagem-dj-brisa",
-                  "description": "Arara DJ da Rádio BudGanja: torna o aprendizado leve, animado e cheio de boa vibração."
-                },
-                {
-                  "label": "Vida — Dona Maria, mestra do solo",
-                  "tileLabel": "Vida — Dona Maria, mestra do so…",
-                  "href": "/posts/post-inspecao-personagem-dona-maria.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-personagem-dona-maria",
-                  "description": "Mãe do Inspetor e guardiã do Super Solo: o coração orgânico do laboratório — terra viva e carinho."
-                },
-                {
-                  "label": "Vida — O Inspetor, detetive botânico",
-                  "tileLabel": "Vida — O Inspetor, detetive bot…",
-                  "href": "/posts/post-inspecao-personagem-inspetor.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-personagem-inspetor",
-                  "description": "Detetive botânico de chapéu engraçado e braço de bronze: mede luz e clima para a planta crescer feliz."
-                },
-                {
-                  "label": "Vida — O Laboratório e a Sementinha",
-                  "tileLabel": "Vida — O Laboratório e a Sement…",
-                  "href": "/posts/post-inspecao-conto-vida-laboratorio.html",
-                  "icon": "🔍",
-                  "slug": "post-inspecao-conto-vida-laboratorio",
-                  "description": "Conto do laboratório: o Inspetor, a Dona Maria, a Joaninha Joana e os Three Little Birds ensinam a cuidar de uma semente com ciência, natureza e amizade."
                 },
                 {
                   "label": "Inspeção: Gabrielle Dainezi — coordenação do curso UNIFESP",

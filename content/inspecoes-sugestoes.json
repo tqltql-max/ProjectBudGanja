@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T12:42:56.101Z",
+  "updatedAt": "2026-08-24T13:19:31.937Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3173,6 +3173,35 @@
       "notes": "Par único Cap. 25 — complementaridade de ofício; secção mão direita × coração; evitar preconceito «sinistra»."
     },
     {
+      "id": "palavra-mapa",
+      "title": "Mapa — mappa (pano); relação com mão (manus)",
+      "titleEn": "Mapa — mappa (cloth); relation with mão (manus)",
+      "titleEs": "Mapa — mappa (paño); relación con mão (manus)",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: mapa (lat. mappa «pano») × mão (lat. manus); cola MA- (MApa / Maão); mapa na mão; ≠ cartografia.",
+      "whyEn": "Words: mapa (Lat. mappa “cloth”) × mão (Lat. manus); MA- glue (MApa / Maão); map in hand.",
+      "whyEs": "Palabras: mapa (lat. mappa «paño») × mão (lat. manus); cola MA- (MApa / Maão); mapa en la mano.",
+      "suggestedSlug": "inspecao-palavra-mapa",
+      "doneHref": "/posts/post-inspecao-palavra-mapa.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-mapa.html",
+        "https://pt.wiktionary.org/wiki/mapa",
+        "https://en.wiktionary.org/wiki/mappa#Latin",
+        "https://pt.wiktionary.org/wiki/m%C3%A3o",
+        "https://en.wiktionary.org/wiki/manus#Latin",
+        "https://pt.wikipedia.org/wiki/Mapa",
+        "https://pt.wikipedia.org/wiki/Mappa_mundi",
+        "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-palavra-relacao.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 328 — mapa × mão; mappa ≠ manus; locução mapa na mão; mapear = variação."
+    },
+    {
       "id": "palavra-arvore-da-vida",
       "title": "Árvore da Vida — fase sénior do arco",
       "titleEn": "Tree of Life — senior phase of the arc",
@@ -4705,6 +4734,53 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 94 — um objeto por ficha; plural pede ordem."
+    },
+    {
+      "id": "palavra-tecnologia",
+      "title": "Tecnologia — tékhnē + lógos; lema do catálogo",
+      "titleEn": "Tecnologia — tékhnē + lógos; catalog lemma",
+      "titleEs": "Tecnologia — tékhnē + lógos; lema del catálogo",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: tecnologia (tékhnē + lógos) — ofício dos aparelhos; página /tecnologia/; HD escravo noutra sala; Valeu !!!",
+      "whyEn": "Words: tecnologia — craft of devices; /tecnologia/ hub; HD slave in another room.",
+      "whyEs": "Palabras: tecnologia — oficio de aparatos; hub /tecnologia/; HD esclavo en otra sala.",
+      "suggestedSlug": "inspecao-palavra-tecnologia",
+      "doneHref": "/posts/post-inspecao-palavra-tecnologia.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-tecnologia.html",
+        "/tecnologia/",
+        "/posts/post-inspecao-palavra-hd-escravo.html",
+        "https://pt.wiktionary.org/wiki/tecnologia",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 326 — lema do catálogo Tecnologia."
+    },
+    {
+      "id": "palavra-hd-escravo",
+      "title": "HD escravo (slave) — jumper ATA; slayr",
+      "titleEn": "HD slave — ATA jumper; slayr",
+      "titleEs": "HD esclavo — jumper ATA; slayr",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: HD escravo = jumper IDE Device 1; smash slayr; ≠ escravidão humana ≠ SATA; Valeu !!!",
+      "whyEn": "Words: HD escravo = IDE jumper Device 1; smash slayr; ≠ slavery ≠ SATA.",
+      "whyEs": "Palabras: HD escravo = jumper IDE Device 1; smash slayr; ≠ esclavitud ≠ SATA.",
+      "suggestedSlug": "inspecao-palavra-hd-escravo",
+      "doneHref": "/posts/post-inspecao-palavra-hd-escravo.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-hd-escravo.html",
+        "/tecnologia/",
+        "https://en.wikipedia.org/wiki/Master/slave_(technology)",
+        "/posts/post-inspecao-palavra-escravidao.html",
+        "/posts/post-inspecao-palavra-tecnologia.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 327 — jumper histórico; salas cortadas."
     },
     {
       "id": "guia-receitas-plantas",
@@ -8564,6 +8640,55 @@
       "notes": "Cap. 306 — objecto; mesmo oculus que olho; outra classe."
     },
     {
+      "id": "objeto-mola",
+      "title": "Mola — o objecto que cede e volta",
+      "titleEn": "Mola — the object that yields and returns",
+      "titleEs": "Mola — el objeto que cede y vuelve",
+      "tipo": "objeto",
+      "priority": 2,
+      "status": "feita",
+      "why": "Objecto: mola/molas (it. molla ← mollis) — peça elástica; ≠ mula ≠ mó; feixe da carroça; catálogo Objetos.",
+      "whyEn": "Object: mola/molas (It. molla ← mollis) — elastic piece; ≠ mule ≠ millstone; wagon leaf-spring; Objects catalog.",
+      "whyEs": "Objeto: mola/molas (it. molla ← mollis) — pieza elástica; ≠ mula ≠ muela; ballesta del carro; catálogo Objetos.",
+      "suggestedSlug": "inspecao-palavra-mola",
+      "doneHref": "/posts/post-inspecao-palavra-mola.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-mola.html",
+        "https://pt.wiktionary.org/wiki/mola",
+        "https://pt.wikipedia.org/wiki/Mola_%28dispositivo%29",
+        "/posts/post-inspecao-animal-mula.html",
+        "/posts/post-inspecao-palavra-colchao.html",
+        "/objetos/",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 325 — par mola/mula como corda/codorna."
+    },
+    {
+      "id": "animal-mula",
+      "title": "Mula — híbrido de trabalho, vizinha da mola",
+      "titleEn": "Mule — work hybrid, neighbour of the spring",
+      "titleEs": "Mula — híbrido de trabajo, vecina del muelle",
+      "tipo": "animal",
+      "priority": 2,
+      "status": "feita",
+      "why": "Animal: mula (lat. mūla) — jumento × égua; ≠ mola (peça); elo cavalo; catálogo Animais.",
+      "whyEn": "Animal: mule (Lat. mūla) — jack × mare; ≠ spring; horse link; Animals catalog.",
+      "whyEs": "Animal: mula (lat. mūla) — burro × yegua; ≠ muelle; vínculo caballo; catálogo Animales.",
+      "suggestedSlug": "inspecao-animal-mula",
+      "doneHref": "/posts/post-inspecao-animal-mula.html",
+      "seriesHint": "animais-catalogo",
+      "sources": [
+        "/posts/post-inspecao-animal-mula.html",
+        "https://pt.wiktionary.org/wiki/mula",
+        "https://pt.wikipedia.org/wiki/Mula",
+        "/posts/post-inspecao-palavra-mola.html",
+        "/animais/mula/",
+        "/posts/post-inspecao-animal-cavalo.html"
+      ],
+      "notes": "Par de método com objecto mola."
+    },
+    {
       "id": "palavra-script",
       "title": "Script — sequência escrita, não destino",
       "titleEn": "Script — written sequence, not destiny",
@@ -11024,6 +11149,31 @@
         "/posts/post-inspecao-palavra-gemeos.html"
       ],
       "notes": "Cap. 324 — primeiro signo; página /guia/astrologia.html"
+    },
+    {
+      "id": "expressao-meter-a-mao",
+      "title": "Meter a mão — o gesto que entra no ofício",
+      "titleEn": "Meter a mão — the gesture that enters the craft",
+      "titleEs": "Meter a mão — el gesto que entra en el oficio",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: meter a mão — contacto com a massa / o ofício; ≠ furto ≠ toque sem consentimento ≠ futebol; Valeu !!!",
+      "whyEn": "Sayings: meter a mão — hands-on contact with the craft; ≠ theft ≠ unwanted touch ≠ football; Valeu !!!",
+      "whyEs": "Dichos: meter a mão — contacto con la masa / el oficio; ≠ hurto ≠ toque sin consentimiento ≠ fútbol; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-meter-a-mao",
+      "doneHref": "/posts/post-inspecao-expressao-meter-a-mao.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/meter",
+        "https://pt.wiktionary.org/wiki/m%C3%A3o",
+        "/posts/post-inspecao-expressao-meter-marcha.html",
+        "/posts/post-inspecao-palavra-pedi-mao.html",
+        "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-respeito.html"
+      ],
+      "notes": "Cap. 284 — ofício × cortes furto/toque/bola; irmã de meter marcha."
     }
   ]
 }

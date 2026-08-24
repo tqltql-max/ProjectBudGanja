@@ -243,6 +243,34 @@
       ],
       "cautionsEn": "Educational content — not a farming or nutrition protocol. Distinguish the bird from the word corda (rope).",
       "cautionsEs": "Contenido educativo — no es protocolo de cría ni nutricional. Distinguir el ave de la palabra corda (cuerda)."
+    },
+    "mula": {
+      "nomePopularEn": "Mule",
+      "nomePopularEs": "Mula",
+      "summaryEn": "Work hybrid (jack donkey × mare): traction, pack and rural gait; lexical neighbour of mola (spring) — the ear glues them, the etymon does not (mūla ≠ mollis).",
+      "summaryEs": "Híbrido de trabajo (burro × yegua): tracción, carga y paso rural; vecina léxica de mola (muelle) — el oído pega, el étimo no (mūla ≠ mollis).",
+      "partsUsedEn": [
+        "Work",
+        "Traction",
+        "Pack"
+      ],
+      "partsUsedEs": [
+        "Trabajo",
+        "Tracción",
+        "Carga"
+      ],
+      "traditionalUsesEn": [
+        "Cart traction and pack on rough ground",
+        "Historic rural transport in Brazil",
+        "Companionship and ranch craft — distinct from horse and donkey"
+      ],
+      "traditionalUsesEs": [
+        "Tracción de carro y carga en terreno irregular",
+        "Transporte rural histórico en Brasil",
+        "Compañía y oficio de lida — distinta del caballo y del burro"
+      ],
+      "cautionsEn": "Educational content — not a veterinary or riding protocol. Distinguish the animal from the word mola (spring). Welfare, farriery and nutrition require professionals.",
+      "cautionsEs": "Contenido educativo — no es protocolo veterinario ni de equitación. Distinguir el animal de la palabra mola (muelle). Bienestar, herraje y nutrición exigen profesionales."
     }
   }
 }

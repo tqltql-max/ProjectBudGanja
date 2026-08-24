@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T12:42:56.113Z",
+  "updatedAt": "2026-08-24T13:19:31.937Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1946,6 +1946,38 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-corda.html"
+    },
+    {
+      "id": "mola",
+      "word": "mola",
+      "simple": "It. molla ← lat. mollis — peça que cede e volta. ≠ mula (animal) ≠ mó. Feixe da carroça; colchão de molas. Valeu !!!",
+      "simpleEn": "It. molla ← Lat. mollis — piece that yields and returns. ≠ mule ≠ millstone. Wagon leaf-spring; mattress coils. Valeu !!!",
+      "simpleEs": "It. molla ← lat. mollis — pieza que cede y vuelve. ≠ mula ≠ muela. Ballesta del carro; colchón de muelles. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mola.html",
+      "history": "Mola (peça elástica) entra no português pela via italiana molla, de molle, do latim mollis — o que é mole, o que cede. O homónimo latino mola (pedra de moinho) sobrevive no português como mó, não como esta ficha. O plural molas nomeia o jogo, o feixe e as peças do colchão.",
+      "curiosities": "O ouvido cola mola e mula (um o / um u), como corda e codorna. A relação de campo é a carroça: o feixe de molas amortece o passo da mula. A lei de Hooke mapeia o objecto até ao limite elástico.",
+      "historyEn": "Portuguese mola (spring) comes via Italian molla, from molle, from Latin mollis — what is soft, what yields. Latin mola (millstone) survives in Portuguese as mó, not this sheet. The plural molas names the set, the leaf pack and mattress coils.",
+      "curiositiesEn": "The ear glues mola and mula (o / u), like corda and codorna. The field link is the cart: leaf springs cushion the mule’s gait. Hooke’s law maps the object up to the elastic limit.",
+      "historyEs": "Mola (muelle) entra al portugués por la vía italiana molla, de molle, del latín mollis — lo blando, lo que cede. El homónimo latino mola (muela) sobrevive como mó, no como esta ficha.",
+      "curiositiesEs": "El oído pega mola y mula (o / u), como corda y codorna. El vínculo de campo es el carro: la ballesta amortigua el paso de la mula."
+    },
+    {
+      "id": "mula",
+      "word": "mula",
+      "simple": "Lat. mūla — híbrido jumento × égua. ≠ mola (peça). Tração, carga, passo. Valeu !!!",
+      "simpleEn": "Lat. mūla — jack donkey × mare hybrid. ≠ spring. Traction, pack, gait. Valeu !!!",
+      "simpleEs": "Lat. mūla — híbrido burro × yegua. ≠ muelle. Tracción, carga, paso. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-animal-mula.html",
+      "history": "Mula vem do latim mūla, fêmea do mūlus. No português nomeia o híbrido de jumento com égua (o inverso é o bardoto). A fala acrescenta mula de carga, picar a mula e a lenda da mula-sem-cabeça — camadas, não o étimo da peça mola.",
+      "curiosities": "Quase estéril, resistente, passo seguro em ladeira. O laboratório separa o animal da mola (objecto) e do estereótipo de teimosia.",
+      "historyEn": "Mula comes from Latin mūla, female of mūlus. In Portuguese it names the jack×mare hybrid (the reverse is the hinny). Speech adds pack-mule talk, picar a mula and the headless-mule legend — layers, not the spring’s etymon.",
+      "curiositiesEn": "Mostly sterile, hardy, sure-footed on slopes. The lab splits the animal from the spring (object) and from the stubbornness stereotype.",
+      "historyEs": "Mula viene del latín mūla, hembra de mūlus. En portugués nombra el híbrido de burro con yegua (lo inverso es el bardoto).",
+      "curiositiesEs": "Casi estéril, resistente, paso seguro en cuesta. El laboratorio separa el animal del muelle y del estereotipo de terquedad."
     },
     {
       "id": "teoria-das-cordas",
@@ -4586,6 +4618,22 @@
       "simpleEs": "Dicho BR — meter la marcha / salir del punto muerto; ≠ carnaval ≠ marcha atrás; ¡Valeu !!!"
     },
     {
+      "id": "meter-a-mao",
+      "word": "meter a mão",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-meter-a-mao.html",
+      "simple": "Locução BR — pôr a mão no ofício / mão na massa; ≠ furto ≠ toque sem consentimento ≠ futebol; Valeu !!!",
+      "simpleEn": "BR saying — put the hand into the craft / hands-on; ≠ theft ≠ unwanted touch ≠ football; Valeu !!!",
+      "simpleEs": "Dicho BR — meter la mano en el oficio / manos a la obra; ≠ hurto ≠ toque sin consentimiento ≠ fútbol; ¡Valeu !!!",
+      "history": "Meter (lat. mittere «pôr, enviar») + a + mão (lat. manus). Pedido de campo 2026-08-24: inspeção da expressão meter a mão.",
+      "curiosities": "Irmã de meter marcha (mesmo verbo, outro objecto). Inverso de pedir a mão (abrir a palma × meter a palma). Canónica: mão na massa.",
+      "historyEn": "Portuguese meter (Lat. mittere “to put, to send”) + a + mão (Lat. manus). Field request 2026-08-24: inspect the saying meter a mão.",
+      "curiositiesEn": "Sister of meter marcha (same verb, other object). Inverse of pedir a mão (open the palm × put the palm in). Canon: hands-on.",
+      "historyEs": "Meter (lat. mittere «poner, enviar») + a + mão (lat. manus). Pedido de campo 2026-08-24: inspección de la expresión meter a mão.",
+      "curiositiesEs": "Hermana de meter marcha (mismo verbo, otro objeto). Inverso de pedir a mão (abrir la palma × meter la palma). Canónica: manos a la obra."
+    },
+    {
       "id": "mundinho",
       "word": "mundinho",
       "group": "lexico",
@@ -6640,6 +6688,32 @@
       "curiositiesEs": "La ficha trata el vocablo como oficio de palma, no como metáfora de posesión."
     },
     {
+      "id": "mapa",
+      "word": "Mapa",
+      "simple": "Lat. mappa «pano» — desenho do território e plano; cruzado com mão (lat. manus). Cola MA- (MApa / Maão). Mapa na mão. ≠ cartografia ≠ GPS. Valeu !!!",
+      "simpleEn": "Lat. mappa “cloth” — drawing of territory and plan; crossed with mão (Lat. manus). MA- glue (MApa / Maão). Map in hand. ≠ cartography ≠ GPS. Valeu !!!",
+      "simpleEs": "Lat. mappa «paño» — dibujo del territorio y plan; cruzado con mão (lat. manus). Cola MA- (MApa / Maão). Mapa en la mano. ≠ cartografía ≠ GPS. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mapa.html",
+      "history": "Mapa vem do latim mappa (pano, guardanapo). Na Idade Média mappa mundi é o pano do mundo. O inglês map segue a mesma via. Cartografia (grego chartēs + graphein) é outra árvore. A mão (lat. manus) cola no ouvido (MA-) e no ofício (o pano cabe na palma), não no étimo.",
+      "curiosities": "Gatilho de campo MApa / Maão: o olho marca o prefixo partilhado. Locução mapa na mão = ter a rota, não posse do chão. Mapear é variação verbal nesta ficha. Quiromancia (linhas da palma) fica cortada.",
+      "historyEn": "Portuguese mapa is Latin mappa (cloth, napkin). Medieval mappa mundi is the cloth of the world. English map follows the same path. Cartography (Greek chartēs + graphein) is another tree. Mão (Lat. manus) meets it in the ear (MA-) and in craft (cloth in the palm), not in the etymon.",
+      "curiositiesEn": "Field trigger MApa / Maão: the eye marks the shared prefix. Phrase mapa na mão = to have the route, not title to the land. Mapear is a verbal variation on this sheet. Palmistry is cut.",
+      "historyEs": "Mapa viene del latín mappa (paño, servilleta). En la Edad Media mappa mundi es el paño del mundo. El inglés map sigue la misma vía. Cartografía (griego chartēs + graphein) es otro árbol. Mão (lat. manus) se encuentra en el oído (MA-) y en el oficio (el paño cabe en la palma), no en el étimo.",
+      "curiositiesEs": "Gatillo de campo MApa / Maão: el ojo marca el prefijo compartido. Locución mapa na mão = tener la ruta, no título de tierra. Mapear es variación verbal en esta ficha. La quiromancia queda cortada."
+    },
+    {
+      "id": "mapear",
+      "word": "mapear",
+      "simple": "Verbo da família de mapa ← lat. mappa — pôr no pano / inventariar. Variação na ficha mapa. Valeu !!!",
+      "simpleEn": "Verb of the mapa family ← Lat. mappa — put on the cloth / inventory. Variation on the mapa sheet. Valeu !!!",
+      "simpleEs": "Verbo de la familia de mapa ← lat. mappa — poner en el paño / inventariar. Variación en la ficha mapa. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mapa.html"
+    },
+    {
       "id": "mar",
       "word": "Mar",
       "simple": "Oceano e horizonte — no laboratório cruza com caminho, Vida e a travessia solitária de Tamara.",
@@ -7306,6 +7380,26 @@
       "curiositiesEn": "Valeu !!! in this object: the sheet asks to name the thing, not the persona.",
       "historyEs": "Objetos es el plural de objeto (lat. obiectum — lo que se lanza delante). En el lab es el foco del «objeto inspeccionado».",
       "curiositiesEs": "Valeu !!! en este objeto: la ficha pide nombrar la cosa, no la persona."
+    },
+    {
+      "id": "tecnologia",
+      "word": "tecnologia",
+      "simple": "Gr. tékhnē + lógos — ofício dos aparelhos e métodos. Lema do catálogo /tecnologia/. HD escravo noutra sala. Valeu !!!",
+      "simpleEn": "Gr. tékhnē + lógos — craft of devices and methods. Lemma of /tecnologia/. HD slave in another room. Valeu !!!",
+      "simpleEs": "Gr. tékhnē + lógos — oficio de aparatos y métodos. Lema de /tecnologia/. HD esclavo en otra sala. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-tecnologia.html"
+    },
+    {
+      "id": "hd-escravo",
+      "word": "HD escravo",
+      "simple": "Jumper ATA/IDE Device 1 (slave). Smash slayr. ≠ escravidão humana ≠ SATA. Catálogo /tecnologia/. Valeu !!!",
+      "simpleEn": "ATA/IDE jumper Device 1 (slave). Smash slayr. ≠ human slavery ≠ SATA. Catalog /tecnologia/. Valeu !!!",
+      "simpleEs": "Jumper ATA/IDE Device 1 (slave). Smash slayr. ≠ esclavitud humana ≠ SATA. Catálogo /tecnologia/. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-hd-escravo.html"
     },
     {
       "id": "oficio-editorial",
