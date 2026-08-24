@@ -220,6 +220,11 @@ const {
   poemEs: poemParabolaEs
 } = require('../lib/parabola-inspecao-post.js');
 const {
+  poemPt: poemPatiaPt,
+  poemEn: poemPatiaEn,
+  poemEs: poemPatiaEs
+} = require('../lib/patia-inspecao-post.js');
+const {
   poemPt: poemMariaPt,
   poemEn: poemMariaEn,
   poemEs: poemMariaEs
@@ -292,6 +297,24 @@ const doc = {
       bodyEs: poemParabolaEs(),
       inspectionHref: '/posts/post-inspecao-palavra-parabola.html',
       tags: ['poesia', 'vida', 'parabola', 'parabola', 'palavra']
+    },
+    {
+      id: 'patia',
+      slug: 'patia',
+      title: 'Patia',
+      titleEn: 'Patia',
+      titleEs: 'Patia',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser: 'Eco BudGanja — -patia herda o páthos; quatro salas, um sufixo; ≠ pato; Valeu !!!',
+      teaserEn: 'BudGanja echo — -patia inherits páthos; four rooms, one suffix; ≠ duck; Valeu !!!',
+      teaserEs: 'Eco BudGanja — -patia hereda el páthos; cuatro salas, un sufijo; ≠ pato; ¡Valeu !!!',
+      body: poemPatiaPt(),
+      bodyEn: poemPatiaEn(),
+      bodyEs: poemPatiaEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-patia.html',
+      tags: ['poesia', 'vida', 'patia', 'pathos', 'empatia']
     },
     {
       id: 'comprimento-distancia-relatividade',

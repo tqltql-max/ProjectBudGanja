@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T12:50:45.988Z",
+  "updatedAt": "2026-08-24T12:55:39.359Z",
   "poems": [
     {
       "id": "maria",
@@ -71,6 +71,30 @@
         "parabola",
         "parabola",
         "palavra"
+      ]
+    },
+    {
+      "id": "patia",
+      "slug": "patia",
+      "title": "Patia",
+      "titleEn": "Patia",
+      "titleEs": "Patia",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — -patia herda o páthos; quatro salas, um sufixo; ≠ pato; Valeu !!!",
+      "teaserEn": "BudGanja echo — -patia inherits páthos; four rooms, one suffix; ≠ duck; Valeu !!!",
+      "teaserEs": "Eco BudGanja — -patia hereda el páthos; cuatro salas, un sufijo; ≠ pato; ¡Valeu !!!",
+      "body": "Patia.\nNão é o pato.\n\nÉ o sufixo\nque herda o páthos:\nsentir, sofrer, padecer.\n\nEmpatia sente para dentro.\nSimpatia sente com.\nApatia não sente.\nNeuropatia nomeia o dano.\nHomeopatia nomeia a escola.\n\nA orelha cola pato.\nO étimo corta:\nπάθος, não a ave.\n\nValeu !!!\nquatro salas,\num sufixo.",
+      "bodyEn": "Patia.\nNot the duck.\n\nIt is the suffix\nthat inherits páthos:\nto feel, to suffer, to undergo.\n\nEmpathy feels inward.\nSympathy feels with.\nApathy does not feel.\nNeuropathy names the harm.\nHomeopathy names the school.\n\nThe ear glues duck.\nThe etymon cuts:\npáthos, not the bird.\n\nValeu !!!\nfour rooms,\none suffix.",
+      "bodyEs": "Patia.\nNo es el pato.\n\nEs el sufijo\nque hereda el páthos:\nsentir, sufrir, padecer.\n\nEmpatía siente hacia dentro.\nSimpatía siente con.\nApatía no siente.\nNeuropatía nombra el daño.\nHomeopatía nombra la escuela.\n\nEl oído pega pato.\nEl étimo corta:\nπάθος, no el ave.\n\n¡Valeu !!!\ncuatro salas,\nun sufijo.",
+      "inspectionHref": "/posts/post-inspecao-palavra-patia.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "patia",
+        "pathos",
+        "empatia"
       ]
     },
     {
