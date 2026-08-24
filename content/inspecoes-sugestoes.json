@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T02:09:01.175Z",
+  "updatedAt": "2026-08-24T02:21:08.931Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -9734,6 +9734,30 @@
         "/posts/post-inspecao-jogo-metal-slug.html"
       ],
       "notes": "Cap. 5 — fala viva Meteal; cópia legal."
+    },
+    {
+      "id": "expressao-revoada",
+      "title": "Revoada — a relação do bando no gesto de voar",
+      "titleEn": "Revoada — the flock’s relation in the flying gesture",
+      "titleEs": "Revoada — la relación de la bandada en el gesto de volar",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: Revoada — bando que levanta voo; relação × pássaro / Birds × gesto de voar; Valeu !!!",
+      "whyEn": "Sayings: Revoada — flock taking wing; relation × bird / Birds × flying gesture; Valeu !!!",
+      "whyEs": "Dichos: Revoada — bandada alzando el vuelo; relación × pájaro / Birds × gesto de volar; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-revoada",
+      "doneHref": "/posts/post-inspecao-expressao-revoada.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/revoada",
+        "https://pt.wiktionary.org/wiki/revoar",
+        "https://pt.wiktionary.org/wiki/voar",
+        "/posts/post-inspecao-palavra-relacao.html",
+        "/posts/post-inspecao-palavra-gesto.html",
+        "/posts/post-inspecao-palavra-animal.html"
+      ],
+      "notes": "Cap. 278 — entre do bando; mime ≠ ave ≠ drone."
     }
   ]
 }

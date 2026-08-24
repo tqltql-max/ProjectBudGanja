@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T02:09:01.179Z",
+  "updatedAt": "2026-08-24T02:21:08.931Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4086,6 +4086,22 @@
       "curiositiesEn": "The sheet treats the word as a craft unit: what the hand does and what can be cited.",
       "historyEs": "Gesto viene del latín gestus — el acto mínimo del cuerpo. En BudGanja la palabra liga Vida, cultivo, inspecciones, herramientas y comunidad.",
       "curiositiesEs": "La ficha trata el vocablo como unidad de oficio: lo que la mano hace y lo que se puede citar."
+    },
+    {
+      "id": "revoada",
+      "word": "revoada",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-revoada.html",
+      "simple": "re- + voar + -ada — bando que levanta voo junto; relação × pássaro / Birds × gesto de voar; Valeu !!!",
+      "simpleEn": "re- + voar + -ada — flock taking wing together; relation × bird / Birds × flying gesture; Valeu !!!",
+      "simpleEs": "re- + voar + -ada — bandada alzando el vuelo; relación × pájaro / Birds × gesto de volar; ¡Valeu !!!",
+      "history": "De revoar (re- + voar, lat. volāre) + sufixo colectivo -ada (como boiada). Nomeia o entre do bando, não o voo a solo.",
+      "curiosities": "Pedido de campo: relação com animal pássaro / Birds e o gesto de voar. Corte: pássaro ≠ passar; mime de braços ≠ ofício da asa; ficha Tamara voar = câmara, não a revoada.",
+      "historyEn": "From revoar (re- + voar, Lat. volāre) + collective -ada. Names the flock’s between, not a solo flight.",
+      "curiositiesEn": "Field request: relation with animal bird / Birds and the flying gesture. Cut: pássaro ≠ passar; arm-mime ≠ wing craft.",
+      "historyEs": "De revoar (re- + voar, lat. volāre) + sufijo colectivo -ada. Nombra el entre de la bandada, no el vuelo a solas.",
+      "curiositiesEs": "Pedido de campo: relación con animal pájaro / Birds y el gesto de volar. Corte: pássaro ≠ passar; mimo de brazos ≠ oficio del ala."
     },
     {
       "id": "cruzar-os-bracos-em-cima-da-cabeca",
