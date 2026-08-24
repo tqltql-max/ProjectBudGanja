@@ -41,7 +41,7 @@ async function main() {
   <text x="640" y="262" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="68" font-weight="700" fill="#eef8f2">script</text>
   <text x="640" y="338" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="rgba(200,230,210,0.95)">escrito · roteiro · código a seguir</text>
   <text x="640" y="500" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="22" fill="#a8d4bc">a vida não é o filme — o lab escreve o rasto</text>
-  <text x="640" y="558" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#8ec4a8">pattern · skill · commitar · Valeu !!!</text>
+  <text x="640" y="558" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#8ec4a8">pattern · skill · commitar · opsert · Valeu !!!</text>
 </svg>`);
 
   await sharp(bg).jpeg({ quality: 84, mozjpeg: true }).toFile(OUT);

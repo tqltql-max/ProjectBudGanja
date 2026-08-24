@@ -1,6 +1,6 @@
 'use strict';
 
-/** Capa 1200×630 — incrível (Palavras). */
+/** Capa 1200×630 — palavra incrível (credere · × acreditar / fé). */
 const fs = require('fs');
 const path = require('path');
 const { ROOT } = require('../lib/paths.js');
@@ -13,29 +13,29 @@ async function main() {
   const bg = Buffer.from(`<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0c1018"/>
-      <stop offset="45%" stop-color="#141a28"/>
-      <stop offset="100%" stop-color="#0a0e14"/>
+      <stop offset="0%" stop-color="#10141c"/>
+      <stop offset="48%" stop-color="#1a2438"/>
+      <stop offset="100%" stop-color="#0c1016"/>
     </linearGradient>
-    <radialGradient id="glow" cx="55%" cy="38%" r="46%">
-      <stop offset="0%" stop-color="rgba(120,180,220,0.28)"/>
-      <stop offset="50%" stop-color="rgba(200,160,90,0.14)"/>
+    <radialGradient id="glow" cx="52%" cy="40%" r="48%">
+      <stop offset="0%" stop-color="rgba(220,190,110,0.28)"/>
+      <stop offset="55%" stop-color="rgba(140,170,220,0.12)"/>
       <stop offset="100%" stop-color="rgba(40,50,70,0)"/>
     </radialGradient>
     <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="rgba(160,200,230,0)"/>
-      <stop offset="50%" stop-color="rgba(160,200,230,0.5)"/>
-      <stop offset="100%" stop-color="rgba(160,200,230,0)"/>
+      <stop offset="0%" stop-color="rgba(220,190,110,0)"/>
+      <stop offset="50%" stop-color="rgba(220,190,110,0.55)"/>
+      <stop offset="100%" stop-color="rgba(220,190,110,0)"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#g)"/>
-  <ellipse cx="640" cy="260" rx="300" ry="200" fill="url(#glow)"/>
-  <rect x="360" y="310" width="480" height="2" fill="url(#bar)"/>
-  <text x="600" y="90" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#9ec4e0" letter-spacing="3">PALAVRAS · INCREDIBILIS · DOIS EIXOS</text>
-  <text x="600" y="270" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="68" font-weight="700" fill="#f0f4fa">incrível</text>
-  <text x="600" y="360" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="rgba(200,220,235,0.95)">inacreditável · elogio BR · escala</text>
-  <text x="600" y="500" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="24" fill="#b8c8d8">faça o melhor sem esvaziar o uau</text>
-  <text x="600" y="560" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#9ec4e0">legal · genial · fantástico</text>
+  <ellipse cx="600" cy="270" rx="340" ry="170" fill="url(#glow)"/>
+  <rect x="340" y="318" width="520" height="2" fill="url(#bar)"/>
+  <text x="600" y="88" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#c8d8f0" letter-spacing="5">PALAVRAS · CREDERE · × ACREDITAR / FÉ</text>
+  <text x="600" y="250" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="78" font-weight="700" fill="#f4f6fa">incrível</text>
+  <text x="600" y="380" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#d5c89a">incredibilis · acreditar · fé</text>
+  <text x="600" y="500" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="22" fill="#b8c8d8">mesmo tronco ≠ outro étimo</text>
+  <text x="600" y="558" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="rgba(180,200,220,0.8)">credere · fides · Valeu !!!</text>
 </svg>`);
 
   await sharp(bg).jpeg({ quality: 84, mozjpeg: true }).toFile(OUT);
