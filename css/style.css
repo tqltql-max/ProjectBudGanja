@@ -10,6 +10,7 @@
 @import url("pages/apresentacao-unifesp.css");
 @import url("pages/home.css");
 @import url("pages/plantas.css");
+@import url("pages/tecnologia.css");
 @import url("pages/animais.css");
 @import url("pages/fungos.css");
 @import url("pages/jogos-broto.css");
@@ -5933,6 +5934,256 @@ html:not([data-theme="dark"]) .article-share-btn:focus-visible {
     color: #6e5614;
 }
 
+body.site-share-open {
+    overflow: hidden;
+}
+
+.site-share-sheet {
+    position: fixed;
+    inset: 0;
+    z-index: calc(var(--z-modal) + 8);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem;
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+.site-share-sheet[hidden] {
+    display: none !important;
+}
+
+.site-share-backdrop {
+    position: absolute;
+    inset: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: rgba(4, 10, 14, 0.72);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    cursor: pointer;
+}
+
+.site-share-panel {
+    position: relative;
+    width: min(440px, 100%);
+    max-height: min(90vh, 680px);
+    overflow: auto;
+    border-radius: 24px 24px 18px 18px;
+    border: 1px solid rgba(212, 175, 55, 0.32);
+    background:
+        radial-gradient(ellipse 90% 50% at 50% 0%, rgba(212, 175, 55, 0.16), transparent 55%),
+        linear-gradient(180deg, #18242a 0%, #0c161c 100%);
+    box-shadow: 0 28px 64px rgba(0, 0, 0, 0.5);
+    padding: 1.1rem 1.15rem 1.2rem;
+    color: #f4f1e8;
+}
+
+.site-share-panel-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 0.9rem;
+}
+
+.site-share-kicker {
+    margin: 0;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #e0c050;
+}
+
+.site-share-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    color: #ddd;
+    cursor: pointer;
+}
+
+.site-share-close:hover,
+.site-share-close:focus-visible {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    outline: none;
+}
+
+.site-share-preview {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    background: #0a1216;
+    margin-bottom: 1.05rem;
+}
+
+.site-share-cover {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+    background: #0a1216;
+}
+
+.site-share-cover[hidden] {
+    display: none;
+}
+
+.site-share-preview-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.85rem 1rem 1rem;
+}
+
+.site-share-brand {
+    margin: 0;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #d4af37;
+}
+
+.site-share-preview-body strong {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+}
+
+.site-share-preview-body span {
+    font-size: 0.88rem;
+    color: rgba(244, 241, 232, 0.72);
+    line-height: 1.4;
+}
+
+.site-share-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.site-share-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 48px;
+    padding: 0.7rem 1rem;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: #f2f2f2;
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.site-share-chip svg {
+    flex-shrink: 0;
+}
+
+.site-share-chip:hover,
+.site-share-chip:focus-visible {
+    border-color: rgba(212, 175, 55, 0.4);
+    background: rgba(212, 175, 55, 0.1);
+    transform: translateY(-1px);
+    outline: none;
+    color: #fff;
+}
+
+.site-share-chip--primary {
+    border: none;
+    background: linear-gradient(145deg, #f0d060, #d4af37 50%, #a68628);
+    color: #14120a;
+    box-shadow: 0 8px 22px rgba(212, 175, 55, 0.28);
+}
+
+.site-share-chip--primary:hover,
+.site-share-chip--primary:focus-visible {
+    background: linear-gradient(145deg, #ffe9a0, #e0c050 50%, #d4af37);
+    color: #14120a;
+}
+
+.site-share-chip--primary.is-copied {
+    background: rgba(39, 174, 96, 0.22);
+    color: #b8f5cf;
+    box-shadow: none;
+}
+
+.site-share-chip--wa {
+    border-color: rgba(37, 211, 102, 0.4);
+    background: rgba(37, 211, 102, 0.12);
+    color: #b8f5cf;
+}
+
+.site-share-chip--wa:hover,
+.site-share-chip--wa:focus-visible {
+    border-color: rgba(37, 211, 102, 0.65);
+    background: rgba(37, 211, 102, 0.2);
+    color: #e8fff0;
+}
+
+.site-share-chip--tg {
+    border-color: rgba(42, 171, 238, 0.4);
+    background: rgba(42, 171, 238, 0.12);
+    color: #b9e6ff;
+}
+
+.site-share-chip--tg:hover,
+.site-share-chip--tg:focus-visible {
+    border-color: rgba(42, 171, 238, 0.65);
+    background: rgba(42, 171, 238, 0.2);
+    color: #e7f7ff;
+}
+
+.site-share-url {
+    margin: 0.85rem 0 0;
+    padding: 0.65rem 0.75rem;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.28);
+    color: rgba(244, 241, 232, 0.55);
+    font-size: 0.75rem;
+    word-break: break-all;
+    line-height: 1.35;
+}
+
+@media (min-width: 640px) {
+    .site-share-sheet {
+        align-items: center;
+    }
+
+    .site-share-panel {
+        border-radius: 24px;
+    }
+
+    .site-share-actions {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .site-share-chip--primary {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-share-chip {
+        transition: none;
+    }
+}
+
 .meta-info {
     display: inline-flex;
     align-items: center;
@@ -7492,6 +7743,7 @@ html:not([data-theme="dark"]) .meta-info {
 .card-icon--sorteios,
 .card-icon--plantas,
 .card-icon--fungos,
+.card-icon--tecnologia,
 .card-icon--sementinha {
     display: inline-flex;
     align-items: center;
@@ -7538,6 +7790,12 @@ html:not([data-theme="dark"]) .meta-info {
     background: linear-gradient(145deg, rgba(90, 210, 190, 0.32), rgba(70, 140, 200, 0.14));
     border: 1px solid rgba(90, 210, 190, 0.4);
     box-shadow: 0 3px 10px rgba(90, 210, 190, 0.16);
+}
+
+.card-icon--tecnologia {
+    background: linear-gradient(145deg, rgba(93, 173, 226, 0.35), rgba(52, 152, 219, 0.14));
+    border: 1px solid rgba(93, 173, 226, 0.45);
+    box-shadow: 0 3px 10px rgba(93, 173, 226, 0.16);
 }
 
 .card-icon--equipamentos {
@@ -11767,6 +12025,27 @@ html:not([data-theme="dark"]) .botao-google {
     background: var(--color-surface);
 }
 
+.radio-yt-host--mini {
+    position: fixed;
+    right: 14px;
+    bottom: 88px;
+    width: 168px;
+    height: 94px;
+    z-index: 1640;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #000;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+.radio-yt-host--mini iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.radio-yt-host--mini[hidden] {
+    display: none;
+}
+
 .radio-mini {
     --z-radio: 1650; /* abaixo do bot?o instalar (1800) e header */
     position: fixed;
@@ -14014,6 +14293,7 @@ a.palavras-duplo-word:focus-visible {
 .biblioteca-hub-card--plantas { --bib-accent: #58d68d; --bib-soft: rgba(39, 174, 96, 0.14); }
 .biblioteca-hub-card--animais { --bib-accent: #e59866; --bib-soft: rgba(230, 126, 34, 0.14); }
 .biblioteca-hub-card--fungos { --bib-accent: #5ad2be; --bib-soft: rgba(90, 210, 190, 0.14); }
+.biblioteca-hub-card--tecnologia { --bib-accent: #5dade2; --bib-soft: rgba(93, 173, 226, 0.14); }
 .biblioteca-hub-card--vida { --bib-accent: #52be80; --bib-soft: rgba(46, 204, 113, 0.14); }
 .biblioteca-hub-card--videos { --bib-accent: #ff6b6b; --bib-soft: rgba(231, 76, 60, 0.14); }
 .biblioteca-hub-card--games { --bib-accent: #9ad15f; --bib-soft: rgba(124, 186, 90, 0.14); }

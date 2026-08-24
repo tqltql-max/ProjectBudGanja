@@ -74,7 +74,11 @@
     "shareAria": "分享这篇发布",
     "sharePageAria": "分享此页面",
     "shareCopied": "链接已复制！",
-    "privacyUpdatedDate": "2026年8月1日"
+    "privacyUpdatedDate": "2026年8月1日",
+    "shareCopy": "复制链接",
+    "shareEmail": "电子邮件",
+    "shareMore": "更多选项",
+    "shareClose": "关闭"
   },
   "radio": {
     "label": "电台",

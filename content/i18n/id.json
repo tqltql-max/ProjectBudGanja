@@ -74,7 +74,11 @@
     "shareAria": "Bagikan publikasi ini",
     "sharePageAria": "Bagikan halaman ini",
     "shareCopied": "Tautan disalin!",
-    "privacyUpdatedDate": "1 Agustus 2026"
+    "privacyUpdatedDate": "1 Agustus 2026",
+    "shareCopy": "Salin tautan",
+    "shareEmail": "Email",
+    "shareMore": "Opsi lain",
+    "shareClose": "Tutup"
   },
   "radio": {
     "label": "Radio",

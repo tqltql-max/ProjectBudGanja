@@ -363,7 +363,7 @@
     var content = og && og.getAttribute('content');
     if (!content) return '';
     if (/^https?:\/\//i.test(content)) {
-      // Em local, preferir a cópia no origin atual para anexar o ficheiro.
+      // Em local, usar a cópia no origin atual para o preview do painel.
       try {
         var u = new URL(content);
         if (/localhost|127\.0\.0\.1/i.test(window.location.hostname || '') &&
@@ -377,113 +377,43 @@
     return window.location.origin + '/' + content.replace(/^\/+/, '');
   }
 
-  function sharePagePayload(files) {
+  function sharePagePayload() {
     var h1 = document.querySelector('.article-header h1, main h1');
     var title = (h1 && h1.textContent.trim()) || document.title || 'Inspetor BudGanja';
     var descMeta = document.querySelector('meta[name="description"]');
-    var desc = (descMeta && descMeta.getAttribute('content')) || title;
+    var desc = (descMeta && descMeta.getAttribute('content')) || '';
+    var ogDesc = document.querySelector('meta[property="og:description"]');
+    if (!desc && ogDesc) desc = ogDesc.getAttribute('content') || '';
     var url = canonicalShareUrl();
-    // Não incluir o URL em `text`: WhatsApp e outros apps concatenam text+url
-    // e acabam a enviar o mesmo link duas vezes.
-    var payload = {
+    return {
       title: title,
-      text: desc,
-      url: url
+      text: desc || title,
+      url: url,
+      image: resolveShareImageUrl()
     };
-    if (files && files.length) payload.files = files;
-    return payload;
   }
 
-  function fetchShareImageFile() {
-    var imageUrl = resolveShareImageUrl();
-    if (!imageUrl) return Promise.resolve(null);
-    return fetch(imageUrl, { credentials: 'same-origin' })
-      .then(function (res) {
-        if (!res.ok) throw new Error('cover ' + res.status);
-        return res.blob();
-      })
-      .then(function (blob) {
-        if (!blob || !blob.type || blob.type.indexOf('image/') !== 0) return null;
-        var ext = blob.type.indexOf('png') >= 0 ? 'png' : blob.type.indexOf('webp') >= 0 ? 'webp' : 'jpg';
-        var file;
-        try {
-          file = new File([blob], 'capa-budganja.' + ext, { type: blob.type });
-        } catch (e) {
-          file = blob;
-          file.name = 'capa-budganja.' + ext;
-        }
-        return file;
-      })
-      .catch(function () {
-        return null;
+  function shareCaption(payload) {
+    return String((payload && payload.title) || 'Inspetor BudGanja').replace(/\s+/g, ' ').trim();
+  }
+
+  function nativeShareData(payload) {
+    return {
+      title: shareCaption(payload),
+      text: shareCaption(payload),
+      url: payload.url
+    };
+  }
+
+  function copyShareUrl(url) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(url).then(function () {
+        return 'copied';
+      }).catch(function () {
+        return fallbackSharePrompt(url);
       });
-  }
-
-  function blobToPng(blob) {
-    if (!blob) return Promise.reject(new Error('no blob'));
-    if (blob.type === 'image/png') return Promise.resolve(blob);
-    return new Promise(function (resolve, reject) {
-      var img = new Image();
-      var objUrl = URL.createObjectURL(blob);
-      img.onload = function () {
-        var canvas = document.createElement('canvas');
-        canvas.width = img.naturalWidth || 1200;
-        canvas.height = img.naturalHeight || 630;
-        var ctx = canvas.getContext('2d');
-        if (!ctx) {
-          URL.revokeObjectURL(objUrl);
-          reject(new Error('canvas'));
-          return;
-        }
-        ctx.drawImage(img, 0, 0);
-        URL.revokeObjectURL(objUrl);
-        canvas.toBlob(function (png) {
-          if (png) resolve(png);
-          else reject(new Error('png'));
-        }, 'image/png');
-      };
-      img.onerror = function () {
-        URL.revokeObjectURL(objUrl);
-        reject(new Error('img'));
-      };
-      img.src = objUrl;
-    });
-  }
-
-  function copyShareUrl(url, file) {
-    var writeText = function () {
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        return navigator.clipboard.writeText(url).then(function () {
-          return 'copied';
-        }).catch(function () {
-          return fallbackSharePrompt(url);
-        });
-      }
-      return Promise.resolve(fallbackSharePrompt(url));
-    };
-
-    if (
-      file &&
-      window.ClipboardItem &&
-      navigator.clipboard &&
-      typeof navigator.clipboard.write === 'function'
-    ) {
-      return blobToPng(file)
-        .then(function (png) {
-          var item = new ClipboardItem({
-            'text/plain': new Blob([url], { type: 'text/plain' }),
-            'image/png': png
-          });
-          return navigator.clipboard.write([item]);
-        })
-        .then(function () {
-          return 'copied';
-        })
-        .catch(function () {
-          return writeText();
-        });
     }
-    return writeText();
+    return Promise.resolve(fallbackSharePrompt(url));
   }
 
   function fallbackSharePrompt(url) {
@@ -494,7 +424,7 @@
   }
 
   function showShareFeedback(btn, result) {
-    if (result !== 'copied' && result !== 'fallback') return;
+    if (!btn || (result !== 'copied' && result !== 'fallback')) return;
     var wrap = btn.closest('.article-share');
     var feedback = wrap && wrap.querySelector('[data-post-share-feedback]');
     var msg = tShare('common.shareCopied', 'Link copiado!');
@@ -510,52 +440,264 @@
       if (feedback) {
         feedback.hidden = true;
         feedback.textContent = '';
+      } else {
+        btn.removeAttribute('data-tip');
       }
     }, 2200);
   }
 
-  function canShareFiles(files) {
-    if (!files || !files.length || typeof navigator.canShare !== 'function') return false;
+  function preferNativeShare() {
+    if (typeof navigator.share !== 'function') return false;
+    var ua = navigator.userAgent || '';
+    if (/Android|iPhone|iPad|iPod/i.test(ua)) return true;
     try {
-      return navigator.canShare({ files: files });
+      return window.matchMedia('(pointer: coarse) and (max-width: 900px)').matches;
     } catch (e) {
       return false;
     }
   }
 
+  function nativeShare(payload) {
+    var data = nativeShareData(payload);
+    if (typeof navigator.share !== 'function') return copyShareUrl(data.url);
+    return navigator.share(data).then(function () {
+      return 'shared';
+    }).catch(function (err) {
+      if (err && err.name === 'AbortError') return 'shared';
+      return copyShareUrl(data.url);
+    });
+  }
+
+  function whatsappShareHref(payload) {
+    return 'https://api.whatsapp.com/send?text=' +
+      encodeURIComponent(shareCaption(payload) + '\n' + payload.url);
+  }
+
+  function telegramShareHref(payload) {
+    return 'https://t.me/share/url?url=' + encodeURIComponent(payload.url) +
+      '&text=' + encodeURIComponent(shareCaption(payload));
+  }
+
+  function emailShareHref(payload) {
+    var body = payload.url;
+    if (payload.text && payload.text !== payload.title) {
+      body = payload.text + '\n\n' + payload.url;
+    }
+    return 'mailto:?subject=' + encodeURIComponent(shareCaption(payload)) +
+      '&body=' + encodeURIComponent(body);
+  }
+
+  function openShareHref(href) {
+    var isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || '');
+    if (isMobile || href.indexOf('mailto:') === 0) {
+      window.location.assign(href);
+      return;
+    }
+    var win = window.open(href, '_blank', 'noopener,noreferrer');
+    if (!win) window.location.assign(href);
+  }
+
+  var ICON_COPY =
+    '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>';
+  var ICON_WA =
+    '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.76 14.07c-.24.68-1.42 1.25-1.96 1.33-.5.07-1.14.1-1.84-.12-.42-.13-.97-.32-1.67-.62-2.94-1.27-4.85-4.24-5-4.44-.14-.2-1.18-1.57-1.18-3 0-1.42.74-2.12 1-2.41.26-.29.57-.36.76-.36h.55c.17 0 .41-.07.64.49.24.58.82 2 .89 2.15.07.14.12.32.02.51-.1.2-.14.32-.29.49-.14.17-.31.38-.44.51-.14.14-.29.29-.12.57.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.29.14.46.12.63-.07.17-.2.72-.84.91-1.13.19-.29.39-.24.64-.14.26.1 1.64.77 1.92.91.29.14.48.22.55.34.07.12.07.68-.17 1.36z"/></svg>';
+  var ICON_TG =
+    '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9.78 15.44 9.5 19.3c.4 0 .57-.17.78-.37l1.87-1.8 3.88 2.85c.71.39 1.22.19 1.41-.66l2.56-12.05c.23-1.02-.37-1.42-1.06-1.17L3.74 10.4c-.98.38-.96.93-.17 1.18l4.43 1.38 10.3-6.5c.49-.3.93-.13.57.19z"/></svg>';
+  var ICON_MAIL =
+    '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>';
+  var ICON_CLOSE =
+    '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.3 5.71 12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.3 19.71 2.89 18.3 9.17 12 2.89 5.71 4.3 4.29l6.29 6.3 6.3-6.3 1.41 1.42z"/></svg>';
+
+  var shareSheet = null;
+  var shareSheetPayload = null;
+  var shareSheetTrigger = null;
+
+  function clipShareText(s, n) {
+    var t = String(s || '').replace(/\s+/g, ' ').trim();
+    if (t.length <= n) return t;
+    return t.slice(0, n - 1).replace(/\s+\S*$/, '') + '…';
+  }
+
+  function refreshShareSheetLabels() {
+    if (!shareSheet) return;
+    var heading = shareSheet.querySelector('#site-share-heading');
+    var closeBtns = shareSheet.querySelectorAll('[data-site-share-close]');
+    var copyBtn = shareSheet.querySelector('[data-site-share-copy]');
+    var email = shareSheet.querySelector('[data-site-share-email]');
+    var more = shareSheet.querySelector('[data-site-share-native]');
+    if (heading) heading.textContent = tShare('common.share', 'Compartilhar');
+    closeBtns.forEach(function (el) {
+      el.setAttribute('aria-label', tShare('common.shareClose', 'Fechar'));
+    });
+    if (copyBtn) {
+      copyBtn.innerHTML = ICON_COPY + '<span>' + tShare('common.shareCopy', 'Copiar link') + '</span>';
+    }
+    if (email) {
+      email.innerHTML = ICON_MAIL + '<span>' + tShare('common.shareEmail', 'E-mail') + '</span>';
+    }
+    if (more) {
+      more.innerHTML = SHARE_ICON_FLAT_SVG + '<span>' + tShare('common.shareMore', 'Mais opções') + '</span>';
+    }
+  }
+
+  function fillShareSheet(payload) {
+    shareSheetPayload = payload;
+    var cover = shareSheet.querySelector('[data-site-share-cover]');
+    var titleEl = shareSheet.querySelector('[data-site-share-title]');
+    var descEl = shareSheet.querySelector('[data-site-share-desc]');
+    var urlEl = shareSheet.querySelector('[data-site-share-url]');
+    var wa = shareSheet.querySelector('[data-site-share-wa]');
+    var tg = shareSheet.querySelector('[data-site-share-tg]');
+    var email = shareSheet.querySelector('[data-site-share-email]');
+    var nativeBtn = shareSheet.querySelector('[data-site-share-native]');
+    if (cover) {
+      if (payload.image) {
+        cover.hidden = false;
+        cover.src = payload.image;
+        cover.alt = payload.title || '';
+      } else {
+        cover.hidden = true;
+        cover.removeAttribute('src');
+      }
+    }
+    if (titleEl) titleEl.textContent = payload.title || 'Inspetor BudGanja';
+    if (descEl) descEl.textContent = clipShareText(payload.text, 160);
+    if (urlEl) urlEl.textContent = payload.url;
+    if (wa) wa.href = whatsappShareHref(payload);
+    if (tg) tg.href = telegramShareHref(payload);
+    if (email) email.href = emailShareHref(payload);
+    if (nativeBtn) nativeBtn.hidden = typeof navigator.share !== 'function';
+    refreshShareSheetLabels();
+  }
+
+  function closeShareSheet() {
+    if (!shareSheet || shareSheet.hidden) return;
+    shareSheet.hidden = true;
+    document.body.classList.remove('site-share-open');
+    var trigger = shareSheetTrigger;
+    shareSheetTrigger = null;
+    if (trigger && typeof trigger.focus === 'function') {
+      try { trigger.focus(); } catch (e) { /* ignore */ }
+    }
+  }
+
+  function ensureShareSheet() {
+    if (shareSheet) return shareSheet;
+    shareSheet = document.createElement('div');
+    shareSheet.id = 'site-share-sheet';
+    shareSheet.className = 'site-share-sheet';
+    shareSheet.hidden = true;
+    shareSheet.innerHTML =
+      '<button type="button" class="site-share-backdrop" data-site-share-close></button>' +
+      '<div class="site-share-panel" role="dialog" aria-modal="true" aria-labelledby="site-share-heading">' +
+        '<div class="site-share-panel-top">' +
+          '<p class="site-share-kicker" id="site-share-heading">Compartilhar</p>' +
+          '<button type="button" class="site-share-close" data-site-share-close>' + ICON_CLOSE + '</button>' +
+        '</div>' +
+        '<div class="site-share-preview">' +
+          '<img class="site-share-cover" data-site-share-cover alt="" width="1200" height="630" decoding="async">' +
+          '<div class="site-share-preview-body">' +
+            '<p class="site-share-brand">Inspetor BudGanja</p>' +
+            '<strong data-site-share-title></strong>' +
+            '<span data-site-share-desc></span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="site-share-actions">' +
+          '<button type="button" class="site-share-chip site-share-chip--primary" data-site-share-copy></button>' +
+          '<a class="site-share-chip site-share-chip--wa" data-site-share-wa href="#" rel="noopener noreferrer"></a>' +
+          '<a class="site-share-chip site-share-chip--tg" data-site-share-tg href="#" rel="noopener noreferrer"></a>' +
+          '<a class="site-share-chip" data-site-share-email href="#"></a>' +
+          '<button type="button" class="site-share-chip" data-site-share-native hidden></button>' +
+        '</div>' +
+        '<p class="site-share-url" data-site-share-url></p>' +
+      '</div>';
+    document.body.appendChild(shareSheet);
+
+    shareSheet.querySelector('[data-site-share-wa]').innerHTML = ICON_WA + '<span>WhatsApp</span>';
+    shareSheet.querySelector('[data-site-share-tg]').innerHTML = ICON_TG + '<span>Telegram</span>';
+    refreshShareSheetLabels();
+
+    shareSheet.addEventListener('click', function (e) {
+      if (e.target.closest('[data-site-share-close]')) {
+        e.preventDefault();
+        closeShareSheet();
+        return;
+      }
+      var copyBtn = e.target.closest('[data-site-share-copy]');
+      if (copyBtn && shareSheetPayload) {
+        e.preventDefault();
+        copyShareUrl(shareSheetPayload.url).then(function (result) {
+          copyBtn.classList.add('is-copied');
+          var span = copyBtn.querySelector('span');
+          if (span) span.textContent = tShare('common.shareCopied', 'Link copiado!');
+          showShareFeedback(shareSheetTrigger, result);
+          window.setTimeout(function () {
+            closeShareSheet();
+            copyBtn.classList.remove('is-copied');
+            refreshShareSheetLabels();
+          }, 700);
+        });
+        return;
+      }
+      var nativeBtn = e.target.closest('[data-site-share-native]');
+      if (nativeBtn && shareSheetPayload) {
+        e.preventDefault();
+        nativeShare(shareSheetPayload).then(function (result) {
+          showShareFeedback(shareSheetTrigger, result);
+          closeShareSheet();
+        });
+        return;
+      }
+      var dest = e.target.closest('[data-site-share-wa], [data-site-share-tg], [data-site-share-email]');
+      if (dest && dest.getAttribute('href')) {
+        e.preventDefault();
+        closeShareSheet();
+        openShareHref(dest.getAttribute('href'));
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && shareSheet && !shareSheet.hidden) {
+        e.preventDefault();
+        closeShareSheet();
+      }
+    });
+
+    return shareSheet;
+  }
+
+  function openShareSheet(payload, trigger) {
+    ensureShareSheet();
+    shareSheetTrigger = trigger || document.activeElement;
+    fillShareSheet(payload);
+    shareSheet.hidden = false;
+    document.body.classList.add('site-share-open');
+    var focusEl = shareSheet.querySelector('[data-site-share-copy]');
+    if (focusEl) focusEl.focus();
+  }
+
+  function openShare(payload, trigger) {
+    if (!payload || !payload.url) return Promise.resolve();
+    if (preferNativeShare()) {
+      return nativeShare(payload).then(function (result) {
+        showShareFeedback(trigger, result);
+        return result;
+      });
+    }
+    openShareSheet(payload, trigger);
+    return Promise.resolve('sheet');
+  }
+
+  window.BudGanjaShare = {
+    open: openShare,
+    payloadFromPage: sharePagePayload
+  };
+
   function bindShareButton(btn) {
     if (!btn || btn.dataset.shareBound === '1') return;
     btn.dataset.shareBound = '1';
     btn.addEventListener('click', function () {
-      var run = fetchShareImageFile().then(function (file) {
-        var files = file ? [file] : null;
-        var withFiles = sharePagePayload(canShareFiles(files) ? files : null);
-        var withoutFiles = sharePagePayload(null);
-
-        if (typeof navigator.share !== 'function') {
-          return copyShareUrl(withoutFiles.url, file);
-        }
-
-        return navigator.share(withFiles).then(function () {
-          return 'shared';
-        }).catch(function (err) {
-          if (err && err.name === 'AbortError') return 'shared';
-          // Alguns browsers rejeitam files — tentar só link; se falhar, copiar URL+capa.
-          if (withFiles.files) {
-            return navigator.share(withoutFiles).then(function () {
-              return 'shared';
-            }).catch(function (err2) {
-              if (err2 && err2.name === 'AbortError') return 'shared';
-              return copyShareUrl(withoutFiles.url, file);
-            });
-          }
-          return copyShareUrl(withoutFiles.url, file);
-        });
-      });
-
-      run.then(function (result) {
-        showShareFeedback(btn, result);
-      }).catch(function () { /* ignore */ });
+      openShare(sharePagePayload(), btn);
     });
   }
 
@@ -661,29 +803,12 @@
       if (!YT_ID_RE.test(id)) return;
       var title = btn.getAttribute('data-share-title') || 'Vídeo — Inspetor BudGanja';
       var url = absoluteVideosShareUrl(id);
-      var payload = { title: title, text: title, url: url };
-
-      var run;
-      if (typeof navigator.share === 'function') {
-        run = navigator.share(payload).then(function () {
-          return 'shared';
-        }).catch(function (err) {
-          if (err && err.name === 'AbortError') return 'shared';
-          return copyShareUrl(url);
-        });
-      } else {
-        run = copyShareUrl(url);
-      }
-
-      run.then(function (result) {
-        if (result !== 'copied' && result !== 'fallback') return;
-        btn.classList.add('is-copied');
-        btn.setAttribute('data-tip', tShare('common.shareCopied', 'Link copiado!'));
-        window.setTimeout(function () {
-          btn.classList.remove('is-copied');
-          btn.removeAttribute('data-tip');
-        }, 2200);
-      }).catch(function () { /* ignore */ });
+      openShare({
+        title: title,
+        text: title,
+        url: url,
+        image: youtubeThumbUrl(id)
+      }, btn);
     });
   }
 
@@ -929,6 +1054,7 @@
     document.querySelectorAll('.site-breadcrumbs').forEach(function (el) { el.remove(); });
     injectBreadcrumbs();
     syncThemeButtons();
+    refreshShareSheetLabels();
   });
 
   if (document.readyState === 'loading') {

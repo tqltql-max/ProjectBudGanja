@@ -74,7 +74,11 @@
     "shareAria": "이 게시물 공유",
     "sharePageAria": "이 페이지 공유",
     "shareCopied": "링크가 복사되었습니다!",
-    "privacyUpdatedDate": "2026년 8월 1일"
+    "privacyUpdatedDate": "2026년 8월 1일",
+    "shareCopy": "링크 복사",
+    "shareEmail": "이메일",
+    "shareMore": "더 보기",
+    "shareClose": "닫기"
   },
   "radio": {
     "label": "라디오",

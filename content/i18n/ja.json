@@ -74,7 +74,11 @@
     "shareAria": "この公開を共有",
     "sharePageAria": "このページを共有",
     "shareCopied": "リンクをコピーしました！",
-    "privacyUpdatedDate": "2026年8月1日"
+    "privacyUpdatedDate": "2026年8月1日",
+    "shareCopy": "リンクをコピー",
+    "shareEmail": "メール",
+    "shareMore": "その他",
+    "shareClose": "閉じる"
   },
   "radio": {
     "label": "ラジオ",

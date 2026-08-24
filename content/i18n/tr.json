@@ -74,7 +74,11 @@
     "shareAria": "Bu yayını paylaş",
     "sharePageAria": "Bu sayfayı paylaş",
     "shareCopied": "Bağlantı kopyalandı!",
-    "privacyUpdatedDate": "1 Ağustos 2026"
+    "privacyUpdatedDate": "1 Ağustos 2026",
+    "shareCopy": "Bağlantıyı kopyala",
+    "shareEmail": "E-posta",
+    "shareMore": "Diğer seçenekler",
+    "shareClose": "Kapat"
   },
   "radio": {
     "label": "Radyo",

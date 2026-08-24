@@ -74,7 +74,11 @@
     "shareAria": "Deze publicatie delen",
     "sharePageAria": "Deze pagina delen",
     "shareCopied": "Link gekopieerd!",
-    "privacyUpdatedDate": "1 augustus 2026"
+    "privacyUpdatedDate": "1 augustus 2026",
+    "shareCopy": "Link kopiëren",
+    "shareEmail": "E-mail",
+    "shareMore": "Meer opties",
+    "shareClose": "Sluiten"
   },
   "radio": {
     "label": "Radio",

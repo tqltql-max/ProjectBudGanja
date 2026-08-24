@@ -74,7 +74,11 @@
     "shareAria": "Chia sẻ bài đăng này",
     "sharePageAria": "Chia sẻ trang này",
     "shareCopied": "Đã sao chép liên kết!",
-    "privacyUpdatedDate": "1 tháng 8, 2026"
+    "privacyUpdatedDate": "1 tháng 8, 2026",
+    "shareCopy": "Sao chép liên kết",
+    "shareEmail": "Email",
+    "shareMore": "Thêm tùy chọn",
+    "shareClose": "Đóng"
   },
   "radio": {
     "label": "Radio",

@@ -74,7 +74,11 @@
     "shareAria": "Поделиться этой публикацией",
     "sharePageAria": "Поделиться этой страницей",
     "shareCopied": "Ссылка скопирована!",
-    "privacyUpdatedDate": "1 августа 2026"
+    "privacyUpdatedDate": "1 августа 2026",
+    "shareCopy": "Копировать ссылку",
+    "shareEmail": "Эл. почта",
+    "shareMore": "Ещё",
+    "shareClose": "Закрыть"
   },
   "radio": {
     "label": "Радио",

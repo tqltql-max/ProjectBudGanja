@@ -74,7 +74,11 @@
     "shareAria": "Udostępnij tę publikację",
     "sharePageAria": "Udostępnij tę stronę",
     "shareCopied": "Link skopiowany!",
-    "privacyUpdatedDate": "1 sierpnia 2026"
+    "privacyUpdatedDate": "1 sierpnia 2026",
+    "shareCopy": "Kopiuj link",
+    "shareEmail": "E-mail",
+    "shareMore": "Więcej opcji",
+    "shareClose": "Zamknij"
   },
   "radio": {
     "label": "Radio",

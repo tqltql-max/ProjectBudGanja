@@ -74,7 +74,11 @@
     "shareAria": "مشاركة هذا المنشور",
     "sharePageAria": "مشاركة هذه الصفحة",
     "shareCopied": "تم نسخ الرابط!",
-    "privacyUpdatedDate": "1 أغسطس 2026"
+    "privacyUpdatedDate": "1 أغسطس 2026",
+    "shareCopy": "نسخ الرابط",
+    "shareEmail": "البريد",
+    "shareMore": "المزيد",
+    "shareClose": "إغلاق"
   },
   "radio": {
     "label": "الراديو",
