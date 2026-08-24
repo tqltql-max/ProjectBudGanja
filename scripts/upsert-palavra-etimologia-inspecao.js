@@ -133,13 +133,13 @@ const GLOSS_ALIASES =
   '    etymology: { gloss: "EN de etimologia — o ofício da origem; ≠ folk etymology.", href: "/posts/post-inspecao-palavra-etimologia.html", en: "etymology", es: "etimología" },\n' +
   '    "etimologia popular": { gloss: "História falsa que encaixa demais — fenómeno; ≠ étimo. Ex. cara+alho → trocadilho.", href: "/posts/post-inspecao-palavra-etimologia.html", en: "folk etymology", es: "etimología popular" },\n' +
   '    "folk etymology": { gloss: "EN de etimologia popular — ver ficha etimologia / trocadilho.", href: "/posts/post-inspecao-palavra-etimologia.html", en: "folk etymology", es: "etimología popular" },\n' +
-  '    etymon: { gloss: "EN de étimo — a origem verdadeira (ou a melhor hipótese); peça da ficha etimologia.", href: "/posts/post-inspecao-palavra-etimologia.html", en: "etymon", es: "étimo" },\n';
+  '    etymon: { gloss: "EN de étimo — a peça (origem verdadeira ou melhor hipótese); ≠ etimologia; ver ficha étimo.", href: "/posts/post-inspecao-palavra-etimo.html", en: "etymon", es: "étimo" },\n';
 
 const ETIMO_LINE =
-  '    étimo: { tone: "craft", gloss: "Origem verdadeira da palavra (ou a melhor hipótese); ≠ etimologia popular; ver ficha etimologia.", href: "/posts/post-inspecao-palavra-etimologia.html", en: "etymon", es: "étimo", fr: "étymon", it: "etimo", de: "Etymon", yo: "orísun ọ̀rọ̀", sw: "asili ya neno", gez: "mənbäʾ qal", el: "έτυμον", la: "etymon", nl: "etymon", pl: "etymon", ru: "этимон", uk: "етимон", zh: "词源", ja: "語源", ko: "어원", ar: "أثيم", he: "אטימון", hi: "व्युत्पत्ति-मूल", tr: "etimon", sv: "etymon", da: "etymon", no: "etymon", fi: "etymon", cs: "etymon", ro: "etimon", hu: "etimon", ca: "etimon", gl: "etimo", eu: "etimo", gn: "ñe\'e rape", qu: "simi saphi", eo: "etimono", vi: "tu nguyen", id: "etimon", th: "รูปเดิม", hr: "etimon", sk: "etymon", ga: "eitimeon", cy: "etymon", ha: "asalin kalma", am: "ምንጭ ቃል", fa: "ریشه واژه", bn: "মূলশব্দ", zu: "umsuka wegama" },\n';
+  '    étimo: { tone: "craft", category: "Ofício", mundane: "A peça da origem — não o ofício.", gloss: "Gr. étymon; ≠ etimologia; espécime ação: lat. āctiō ← agere («fazer, impulsionar»); Valeu !!!", href: "/posts/post-inspecao-palavra-etimo.html", en: "etymon", es: "étimo", fr: "étymon", it: "etimo", de: "Etymon", yo: "orísun ọ̀rọ̀", sw: "asili ya neno", gez: "mənbäʾ qal", el: "έτυμον", la: "etymon", nl: "etymon", pl: "etymon", ru: "этимон", uk: "етимон", zh: "词源", ja: "語源", ko: "어원", ar: "أثيم", he: "אטימון", hi: "व्युत्पत्ति-मूल", tr: "etimon", sv: "etymon", da: "etymon", no: "etymon", fi: "etymon", cs: "etymon", ro: "etimon", hu: "etimon", ca: "etimon", gl: "etimo", eu: "etimo", gn: "ñe\'e rape", qu: "simi saphi", eo: "etimono", vi: "tu nguyen", id: "etimon", th: "รูปเดิม", hr: "etimon", sk: "etymon", ga: "eitimeon", cy: "etymon", ha: "asalin kalma", am: "ምንጭ ቃল", fa: "ریشه واژه", bn: "মূলশব্দ", zu: "umsuka wegama" },\n';
 
 const ETIMO_ASCII =
-  '    etimo: { gloss: "Grafia sem acento de étimo — a origem; ver etimologia.", href: "/posts/post-inspecao-palavra-etimologia.html", en: "etymon", es: "étimo" },\n';
+  '    etimo: { gloss: "Grafia sem acento de étimo — a peça da origem; espécime āctiō ← agere na ficha ação.", href: "/posts/post-inspecao-palavra-etimo.html", en: "etymon", es: "étimo" },\n';
 
 function upsertSug(sug, post) {
   const items = Array.isArray(sug.items) ? sug.items : [];

@@ -125,6 +125,11 @@ const {
   poemLucasEs
 } = require('../lib/lucas-evangelista-inspecao-post.js');
 const {
+  poemRobsonPt,
+  poemRobsonEn,
+  poemRobsonEs
+} = require('../lib/robson-oliveira-inspecao-post.js');
+const {
   poemTodaCriancaNasceCientistaPt,
   poemTodaCriancaNasceCientistaEn,
   poemTodaCriancaNasceCientistaEs
@@ -184,6 +189,11 @@ const {
   poemEn: poemBostaEn,
   poemEs: poemBostaEs
 } = require('../lib/bosta-inspecao-post.js');
+const {
+  poemPt: poemDangerPt,
+  poemEn: poemDangerEn,
+  poemEs: poemDangerEs
+} = require('../lib/danger-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -191,6 +201,48 @@ const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
 const doc = {
   updatedAt: new Date().toISOString(),
   poems: [
+    {
+      id: 'dois-sao-mais-fortes',
+      slug: 'dois-sao-mais-fortes',
+      title: 'Dois são mais fortes',
+      titleEn: 'Two Are Stronger',
+      titleEs: 'Dos son más fuertes',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Homenagem a Robson Oliveira e à família — a casa que acorda no turno, Boston, dois são mais fortes que um.',
+      teaserEn:
+        'Homage to Robson Oliveira and his family — the house that wakes on the shift, Boston, two are stronger than one.',
+      teaserEs:
+        'Homenaje a Robson Oliveira y a la familia — la casa que despierta en el turno, Boston, dos son más fuertes que uno.',
+      body: poemRobsonPt(),
+      bodyEn: poemRobsonEn(),
+      bodyEs: poemRobsonEs(),
+      inspectionHref: '/posts/post-inspecao-figura-robson-oliveira.html',
+      tags: ['poesia', 'vida', 'robson', 'família', 'juntos', 'boston']
+    },
+    {
+      id: 'danger',
+      slug: 'danger',
+      title: 'Danger',
+      titleEn: 'Danger',
+      titleEs: 'Danger',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja — o senhor e a prova; a placa cola, o étimo corta; Valeu !!!',
+      teaserEn:
+        'BudGanja echo — the lord and the trial; the sign glues, the etymon cuts; Valeu !!!',
+      teaserEs:
+        'Eco BudGanja — el señor y la prueba; la placa pega, el étimo corta; ¡Valeu !!!',
+      body: poemDangerPt(),
+      bodyEn: poemDangerEn(),
+      bodyEs: poemDangerEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-danger.html',
+      tags: ['poesia', 'vida', 'danger', 'perigo', 'relação']
+    },
     {
       id: 'fantasia',
       slug: 'fantasia',
