@@ -32,6 +32,8 @@ const STATIC = [
   { loc: '/plantas/', priority: '0.95', changefreq: 'weekly' },
   { loc: '/animais/', priority: '0.95', changefreq: 'weekly' },
   { loc: '/fungos/', priority: '0.95', changefreq: 'weekly' },
+  { loc: '/tecnologia/', priority: '0.95', changefreq: 'weekly' },
+  { loc: '/mitologia/', priority: '0.95', changefreq: 'weekly' },
   { loc: '/vida/diario/', priority: '0.8', changefreq: 'monthly' },
   { loc: '/comunidade/', priority: '0.9', changefreq: 'daily' },
   { loc: '/radio/', priority: '0.8', changefreq: 'weekly' },

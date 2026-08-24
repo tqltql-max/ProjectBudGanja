@@ -16,6 +16,8 @@ const STATIC_PAGES = [
   { url: '/laboratorio/', title: 'Mapa do laboratório', desc: 'Todas as salas do Laboratório BudGanja: biblioteca, plantas, ferramentas, comunidade e o conto Vida.', keywords: 'laboratório mapa fitoterapia plantas unifesp cultivo vida' },
   { url: '/plantas/', title: 'Plantas fitoterápicas', desc: 'Catálogo curado de plantas medicinais e fitoterápicas do Brasil', keywords: 'plantas fitoterapia medicinal babosa camomila cannabis' },
   { url: '/animais/', title: 'Animais', desc: 'Catálogo de animais: criação, companhia e derivados industriais de risco', keywords: 'animais produção galinha vaca porco abelha derivados indústria' },
+  { url: '/tecnologia/', title: 'Tecnologia', desc: 'Catálogo de ofício técnico: vocábulos, hardware, rede e software — HD escravo e o lema tecnologia', keywords: 'tecnologia hd escravo slave slayr ata ide disco rígido hardware software rede' },
+  { url: '/mitologia/', title: 'Mitologia', desc: 'Catálogo de mitos e deuses: nomes, relatos e elos — Anúbis (chacal que pesa o coração) e o lema mitologia', keywords: 'mitologia anubis anúbis deus egito chacal maat mito deuses orfeu' },
   { url: '/biblioteca/unifesp/', title: 'Curso UNIFESP', desc: 'Hub do XIV curso de extensão UNIFESP sobre cannabis medicinal', keywords: 'unifesp curso cannabis medicinal siex formação' },
   { url: '/biblioteca/cadernos/', title: 'Cadernos de Engenharia', desc: 'Um caderno por matéria com método Cornell para o curso de Agronomia / engenharia', keywords: 'caderno engenharia agronomia esapp cornell anotações matérias' },
   { url: '/biblioteca/inspecoes/', title: 'Inspeções', desc: 'Relatórios técnicos com método verificável — canais, equipamentos e cursos', keywords: 'inspeção auditoria método' },
@@ -128,6 +130,58 @@ function buildIndex() {
           (fungo.tags || []).join(' '),
           (fungo.traditionalUses || []).join(' '),
           'fungo cogumelo micologia identificação'
+        ]
+          .filter(Boolean)
+          .join(' ')
+          .slice(0, 2000)
+      });
+    });
+  } catch (e) { /* optional */ }
+
+  try {
+    const { readTecnologia } = require('../lib/tecnologia-service.js');
+    const catalog = readTecnologia();
+    catalog.items.forEach((it) => {
+      items.push({
+        title: it.nome,
+        url: it.href,
+        excerpt: it.summary || '',
+        text: [
+          it.nome,
+          it.nomeEn,
+          it.nomeEs,
+          it.kicker,
+          it.summary,
+          it.summaryEn,
+          it.category,
+          (it.tags || []).join(' '),
+          'tecnologia hardware software rede'
+        ]
+          .filter(Boolean)
+          .join(' ')
+          .slice(0, 2000)
+      });
+    });
+  } catch (e) { /* optional */ }
+
+  try {
+    const { readMitologia } = require('../lib/mitologia-service.js');
+    const catalog = readMitologia();
+    catalog.items.forEach((it) => {
+      items.push({
+        title: it.nome,
+        url: it.href,
+        excerpt: it.summary || '',
+        text: [
+          it.nome,
+          it.nomeEn,
+          it.nomeEs,
+          it.kicker,
+          it.summary,
+          it.summaryEn,
+          it.category,
+          (it.tags || []).join(' '),
+          'mitologia mito deus deuses anubis egito'
         ]
           .filter(Boolean)
           .join(' ')

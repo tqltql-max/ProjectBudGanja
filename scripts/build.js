@@ -208,6 +208,18 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('build:tecnologia', 'build-tecnologia.js');
+  } catch (e) {
+    console.warn('Aviso build:tecnologia:', e.message);
+  }
+
+  try {
+    runStep('build:mitologia', 'build-mitologia.js');
+  } catch (e) {
+    console.warn('Aviso build:mitologia:', e.message);
+  }
+
+  try {
     runStep('build:search', 'build-search-index.js');
   } catch (e) {
     console.warn('Aviso build:search:', e.message);

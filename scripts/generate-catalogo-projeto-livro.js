@@ -458,6 +458,8 @@ function buildHtml() {
     { title: 'Plantas', href: '/plantas/' },
     { title: 'Animais', href: '/animais/' },
     { title: 'Fungos', href: '/fungos/' },
+    { title: 'Tecnologia', href: '/tecnologia/' },
+    { title: 'Mitologia', href: '/mitologia/' },
     { title: 'Vida', href: '/vida/' },
     { title: 'Diário Vida', href: '/vida/diario/' },
     { title: 'Bom dia, Inverno', href: '/inverno/' },
