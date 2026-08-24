@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T12:29:51.629Z",
+  "updatedAt": "2026-08-24T12:50:45.988Z",
   "poems": [
     {
       "id": "maria",
@@ -71,6 +71,30 @@
         "parabola",
         "parabola",
         "palavra"
+      ]
+    },
+    {
+      "id": "comprimento-distancia-relatividade",
+      "slug": "comprimento-distancia-relatividade",
+      "title": "Comprimento",
+      "titleEn": "Length",
+      "titleEs": "Longitud",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — a vara, o vão, o quadro; c não muda de ofício; Valeu !!!",
+      "teaserEn": "BudGanja echo — the rod, the gap, the frame; c does not change jobs; Valeu !!!",
+      "teaserEs": "Eco BudGanja — la vara, el vano, el marco; c no cambia de oficio; ¡Valeu !!!",
+      "body": "Comprimento.\nA vara no próprio.\n\nDistância.\nO vão entre dois pontos.\n\nRelatividade.\nO metro muda de comboio\ne a luz não muda de ofício.\n\nNão é cumprimento.\nNão é relativismo.\nNão é «tudo vale».\n\nO intervalo é o que resta\nquando o observador passa.\n\nValeu !!!\nmedir com o quadro à vista.",
+      "bodyEn": "Length.\nThe rod at rest.\n\nDistance.\nThe gap between two points.\n\nRelativity.\nThe metre changes trains\nand light does not change jobs.\n\nNot a greeting.\nNot relativism.\nNot “anything goes”.\n\nThe interval is what remains\nwhen the observer passes.\n\nValeu !!!\nmeasure with the frame in sight.",
+      "bodyEs": "Longitud.\nLa vara en su propio.\n\nDistancia.\nEl vano entre dos puntos.\n\nRelatividad.\nEl metro cambia de tren\ny la luz no cambia de oficio.\n\nNo es saludo.\nNo es relativismo.\nNo es «todo vale».\n\nEl intervalo es lo que queda\ncuando el observador pasa.\n\n¡Valeu !!!\nmedir con el marco a la vista.",
+      "inspectionHref": "/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "comprimento",
+        "distancia",
+        "relatividade"
       ]
     },
     {

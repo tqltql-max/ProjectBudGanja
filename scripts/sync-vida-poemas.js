@@ -224,6 +224,11 @@ const {
   poemEn: poemMariaEn,
   poemEs: poemMariaEs
 } = require('../lib/maria-inspecao-post.js');
+const {
+  poemPt: poemComprimentoPt,
+  poemEn: poemComprimentoEn,
+  poemEs: poemComprimentoEs
+} = require('../lib/comprimento-distancia-relatividade-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -287,6 +292,27 @@ const doc = {
       bodyEs: poemParabolaEs(),
       inspectionHref: '/posts/post-inspecao-palavra-parabola.html',
       tags: ['poesia', 'vida', 'parabola', 'parabola', 'palavra']
+    },
+    {
+      id: 'comprimento-distancia-relatividade',
+      slug: 'comprimento-distancia-relatividade',
+      title: 'Comprimento',
+      titleEn: 'Length',
+      titleEs: 'Longitud',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja — a vara, o vão, o quadro; c não muda de ofício; Valeu !!!',
+      teaserEn:
+        'BudGanja echo — the rod, the gap, the frame; c does not change jobs; Valeu !!!',
+      teaserEs:
+        'Eco BudGanja — la vara, el vano, el marco; c no cambia de oficio; ¡Valeu !!!',
+      body: poemComprimentoPt(),
+      bodyEn: poemComprimentoEn(),
+      bodyEs: poemComprimentoEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html',
+      tags: ['poesia', 'vida', 'comprimento', 'distancia', 'relatividade']
     },
     {
       id: 'dois-sao-mais-fortes',

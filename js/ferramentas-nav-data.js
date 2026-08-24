@@ -109,6 +109,15 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Glossário simples: títulos do site e léxico inspecionado."
             },
             {
+              "label": "Astrologia",
+              "tileLabel": "Astrologia",
+              "href": "/guia/astrologia.html",
+              "icon": "♈",
+              "slug": "guia-astrologia",
+              "featured": true,
+              "description": "Doze signos a partir de Áries; céu verificável; Google Sky sem embed web."
+            },
+            {
               "label": "Chá de plantas",
               "tileLabel": "Chá de plantas",
               "href": "/posts/post-inspecao-guia-preparo-cha-plantas.html",
@@ -901,6 +910,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-maca",
               "description": "Relatório educacional de Maçã (*Malus domestica Borkh.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: Ração para animais — do saco industrial ao comedouro",
+              "tileLabel": "Inspeção: Ração para animais — …",
+              "href": "/posts/post-inspecao-derivado-racao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-racao",
+              "description": "Produtos nocivos: ração para animais — kibble, petiscos e concentrado pecuário versus pasto e comida inteira. Hub do comedouro industrial; o animal nas fichas de espécie; o que o humano come nos derivados."
             },
             {
               "label": "Inspeção: Derivados do Açaí — açúcar, aditivos e química industrial",
@@ -4159,6 +4176,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: letra X / xis — 24.ª; som PT vários; x de conexão = nexo; ≠ app ≠ Xiaomi; Valeu !!!"
             },
             {
+              "label": "Inspeção: que não arrisca não petisca — o ditado do bocado",
+              "tileLabel": "Inspeção: que não arrisca não p…",
+              "href": "/posts/post-inspecao-expressao-quem-nao-arrisca-nao-petisca.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-quem-nao-arrisca-nao-petisca",
+              "description": "Expressões: que não arrisca não petisca — voz viva; âncora quem não arrisca…; index no lugar de Valeu !!!; ≠ aposta; Valeu !!!"
+            },
+            {
               "label": "Inspeção: DSL — a sigla do cano que fica",
               "tileLabel": "Inspeção: DSL — a sigla do cano…",
               "href": "/posts/post-inspecao-palavra-dsl.html",
@@ -4453,6 +4478,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-arroba",
               "description": "Palavras: @ / arroba (ár. ar-rubʿ, o peso) × olho / olhos (lat. oculus) — relação de pictograma, não de étimo; menção chama o olhar; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Ariana — Áries, o primeiro signo e as derivações",
+              "tileLabel": "Inspeção: Ariana — Áries, o pri…",
+              "href": "/posts/post-inspecao-palavra-ariana.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-ariana",
+              "description": "Palavras: «ariana» / ariano / Áries — 1.º signo (lat. ariēs); ≠ horóscopo; ≠ ariano racial; página Astrologia; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
