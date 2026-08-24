@@ -1855,6 +1855,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Guia de acesso: Defensoria Pública e a assistência jurídica gratuita no cultivo medicinal; critérios de hipossuficiência, laudos, HC e os filtros que restam sem honorários. Não é parecer."
             },
             {
+              "label": "Inspeção: Robson Oliveira — a casa, Boston e dois são mais fortes que um",
+              "tileLabel": "Inspeção: Robson Oliveira — a c…",
+              "href": "/posts/post-inspecao-figura-robson-oliveira.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-figura-robson-oliveira",
+              "description": "Pessoas: homenagem a Robson Gonçalves de Oliveira e à família — maratonista CLT de São Bernardo; o gesto de Boston (2026) e o elo juntos / Faça o seu melhor; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Manual Maker — ofício Arduino, 3D e laser no Manual do Mundo",
               "tileLabel": "Inspeção: Manual Maker — ofício…",
               "href": "/posts/post-inspecao-manual-maker.html",
@@ -4173,6 +4181,30 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-miss",
               "description": "Palavras: miss (germ. missan) × faltando (lat. fallere) × ERROR (lat. errāre) — três árvores, um campo; I miss you ≠ 500; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Conjugação — as 3 pessoas; elos e elas; nós, vós, eles",
+              "tileLabel": "Inspeção: Conjugação — as 3 pes…",
+              "href": "/posts/post-inspecao-palavra-conjugacao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-conjugacao",
+              "description": "Palavras: conjugação ← lat. coniugātiō (jugo); 3 elos (eu·tu·ele / nós·vós·eles); elos ≠ eles/elas; sala com latim; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Boston — a vila de Botolph; ≠ bosta",
+              "tileLabel": "Inspeção: Boston — a vila de Bo…",
+              "href": "/posts/post-inspecao-palavra-boston.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-boston",
+              "description": "Palavras: Boston = St. Botolph’s town (tūn); cola de orelha com bosta recusada como étimo; o -on é a vila; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Bosta — estrume e gíria; ≠ Boston",
+              "tileLabel": "Inspeção: Bosta — estrume e gír…",
+              "href": "/posts/post-inspecao-palavra-bosta.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-bosta",
+              "description": "Palavras: bosta ← via esp. bosta (estrume; étimo último incerto); gíria BR; cola de orelha com Boston recusada; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
