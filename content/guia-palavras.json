@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T12:06:36.464Z",
+  "updatedAt": "2026-08-24T12:18:37.216Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3232,6 +3232,42 @@
       "curiositiesEs": "Saltar / Dismiss es esta vez; Don't Show Again es de aquí en adelante (este sitio, este rastro). Borrar datos u otro login puede hacer volver la caja — no es never moral. El show de escenario es otra sala. Miss Click en el visto graba la preferencia sin querer. Prima: el banner de cookies es consentir o rechazar, no solo esconder el nag. El inspector, a veces, mira de nuevo."
     },
     {
+      "id": "missao-comprida",
+      "word": "missão comprida",
+      "simple": "Trocadilho BR: cola comprida (longa) sobre a locução missão cumprida (feita). Cumprir e comprido vêm do lat. complēre. Missão é envio (missiō). Comprimento × cumprimento. Valeu !!!",
+      "simpleEn": "BR pun: glue comprida (long) on the locution missão cumprida (done). Cumprir and comprido come from Lat. complēre. Missão is a sending (missiō). Length × greeting. Valeu !!!",
+      "simpleEs": "Juego BR: cola comprida (larga) sobre la locución missão cumprida (hecha). Cumprir y comprido vienen del lat. complēre. Missão es envío (missiō). Longitud × saludo. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-missao-comprida.html",
+      "history": "Missão comprida é a boca do pátio que troca o u de cumprida pelo o de comprida. A locução canónica é missão cumprida: cumprir vem do latim complēre («encher por completo»), via latim vulgar complīre e português arcaico comprir; a vogal átona passou a u no verbo moderno. O adjectivo comprido é o particípio antigo que ficou na grafia com o e passou a significar «longo». Missão vem de missiō / mittō («enviar») — outra árvore. O par comprimento / cumprimento é o mesmo corte o × u (metro × saudação / acto de cumprir).",
+      "curiosities": "A orelha recupera a grafia antiga (comprir) e erra o ofício se toma comprida por origem da locução. Em espanhol misión cumplida não abre comprida (larga) — o trocadilho é português. Irmã de ofício: Miss Click (ali a senhorita é outra árvore; aqui os primos partilham raiz). Salas cortadas: faixa Mission Accomplished, régua, cumprimento como «olá».",
+      "historyEn": "Missão comprida is yard speech that swaps the u of cumprida for the o of comprida. The canonical locution is missão cumprida: cumprir is from Latin complēre (“to fill completely”), via VL complīre and Old Portuguese comprir; the unstressed vowel became u in the modern verb. The adjective comprido is the old participle that kept the o and came to mean “long”. Missão is from missiō / mittō (“to send”) — another tree. The pair comprimento / cumprimento is the same o × u cut (metre × greeting / act of fulfilling).",
+      "curiositiesEn": "The ear recovers the old spelling (comprir) and misses the office if it takes comprida as the origin of the locution. In Spanish misión cumplida does not open comprida (larga) — the pun is Portuguese. Sister of craft: Miss Click (there the young lady is another tree; here the cousins share a root). Rooms cut: the Mission Accomplished banner, the ruler, cumprimento as “hello”.",
+      "historyEs": "Missão comprida es habla de patio que cambia la u de cumprida por la o de comprida. La locución canónica es missão cumprida: cumprir viene del latín complēre («llenar por completo»), vía latín vulgar complīre y portugués arcaico comprir; la vocal átona pasó a u en el verbo moderno. El adjetivo comprido es el participio antiguo que quedó con o y pasó a significar «largo». Missão viene de missiō / mittō («enviar») — otro árbol. El par comprimento / cumprimento es el mismo corte o × u (metro × saludo / acto de cumplir).",
+      "curiositiesEs": "El oído recupera la grafía antigua (comprir) y yerra el oficio si toma comprida por origen de la locución. En español misión cumplida no abre comprida (larga) — el juego es portugués. Hermana de oficio: Miss Click. Salas cortadas: la franja Mission Accomplished, la regla, cumprimento como «hola»."
+    },
+    {
+      "id": "comprido",
+      "word": "comprido",
+      "simple": "Adjectivo «longo» — particípio arcaico de comprir (lat. complēre). Cola de missão comprida. ≠ cumprido. Valeu !!!",
+      "simpleEn": "Adjective “long” — old participle of comprir (Lat. complēre). Glue of missão comprida. ≠ cumprido. Valeu !!!",
+      "simpleEs": "Adjetivo «largo» — participio arcaico de comprir (lat. complēre). Cola de missão comprida. ≠ cumprido. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-missao-comprida.html"
+    },
+    {
+      "id": "missao-cumprida",
+      "word": "missão cumprida",
+      "simple": "Locução de fecho — o envio foi executado. Canónica de missão comprida. Cumprir ← complēre. Valeu !!!",
+      "simpleEn": "Closing locution — the sending was executed. Canonical form of missão comprida. Cumprir ← complēre. Valeu !!!",
+      "simpleEs": "Locución de cierre — el envío fue ejecutado. Canónica de missão comprida. Cumprir ← complēre. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-missao-comprida.html"
+    },
+    {
       "id": "nao-mostrar-de-novo",
       "word": "não mostrar de novo",
       "simple": "Calco PT vivo de Don't Show Again — de novo = outra vez, não «o novo». Forma de manual: não mostrar novamente. Valeu !!!",
@@ -4126,6 +4162,22 @@
       "fromTitle": false,
       "history": "Esticar pano (tendere) virou a caixa Oxford/Mylar do cultivo indoor.",
       "curiosities": "Reflexão de catálogo não substitui o luxímetro."
+    },
+    {
+      "id": "tele",
+      "word": "tele",
+      "simple": "Gr. têle — longe. Prefixo (telefone, telescópio) e recorte BR «a tele» (TV). ≠ tela (lat. tēla). Valeu !!!",
+      "simpleEn": "Gr. têle — far. Prefix (telephone, telescope) and BR clipping “a tele” (TV). ≠ tela (Lat. tēla, screen). Valeu !!!",
+      "simpleEs": "Gr. têle — lejos. Prefijo (teléfono, telescopio) y recorte BR «a tele» (TV). ≠ tela (lat. tēla). ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-tele.html",
+      "history": "Tele entra no português pelo grego τῆλε (têle), «longe». Nos compostos marca distância (telefone, televisão, telescópio). No Brasil a fala corta televisão em a tele — a caixa, o canal, o hábito. Tela vem de outro étimo (lat. tēla, pano).",
+      "curiosities": "A orelha cola tele em tela: uma é distância grega, a outra é pano latino que virou ecrã. Telê (alcunha) não é o prefixo. Valeu !!!",
+      "historyEn": "Portuguese tele comes from Greek τῆλε (têle), “far”. In compounds it marks distance (telephone, television, telescope). In Brazil speech clips televisão to a tele — the set, the channel, the habit. Tela is another etymon (Lat. tēla, cloth).",
+      "curiositiesEn": "The ear glues tele to tela: one is Greek distance, the other Latin cloth that became a screen. Telê (a nickname) is not the prefix. Valeu !!!",
+      "historyEs": "Tele entra al portugués por el griego τῆλε (têle), «lejos». En los compuestos marca distancia. En Brasil el habla corta televisão en a tele. Tela viene de otro étimo (lat. tēla, paño).",
+      "curiositiesEs": "La oreja pega tele a tela: una es distancia griega, la otra paño latino vuelto pantalla. Telê (apodo) no es el prefijo. ¡Valeu !!!"
     },
     {
       "id": "exaustor",
@@ -6374,6 +6426,22 @@
       "curiositiesEn": "The ear glues for+Maria into formaria (conditional of formar). Portuguese for (quando eu for) is a homograph: future subjunctive of ser and ir. Marijuana and Dona Maria are neighbouring rooms, not etymons.",
       "historyEs": "Maria viene del hebreo Miryam, por el griego y el latín Maria. La ruta es estable; el meollo hebreo queda abierto. Cruza hacia maria lee el inglés for como la preposición que apunta — hermana portuguesa para, no por.",
       "curiositiesEs": "El oído pega for+Maria en formaria (condicional de formar). El for portugués es homógrafo: subjuntivo de ser e ir. Marijuana y Dona Maria son salas vecinas, no étimos."
+    },
+    {
+      "id": "flor-maria-jane-maria",
+      "word": "Flor Maria Jane Maria",
+      "simple": "Personagem Vida — flor do canal Joana e Maria (folha + solo). Jane = Joana em inglês. Maria Jane / Mary Jane = outra sala. Valeu !!!",
+      "simpleEn": "Vida character — flower of the Joana and Maria channel (leaf + soil). Jane = Joana in English. Maria Jane / Mary Jane = another room. Valeu !!!",
+      "simpleEs": "Personaje Vida — flor del canal Joana e Maria (hoja + suelo). Jane = Juana en inglés. Maria Jane / Mary Jane = otra sala. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-personagem-flor-maria-jane-maria.html",
+      "history": "Pedido de campo: contato com Flor Maria Jane Maria, personagem do canal Joana e Maria. O laboratório lê o canal como o par Joaninha Joana + Dona Maria; a flor é o contacto visível.",
+      "curiosities": "Jane traduz Joana. Maria Jane cola na orelha como Mary Jane (gíria EN da cannabis) — sala do catálogo da planta, não desta ficha. Nome ≠ planta (ver Maria). Flor ≠ receita (ver flor).",
+      "historyEn": "Field request: contact with Flor Maria Jane Maria, character of the Joana and Maria channel. The lab reads the channel as Ladybug Joana + Dona Maria; the flower is the visible contact.",
+      "curiositiesEn": "Jane translates Joana. Maria Jane sounds like Mary Jane (EN cannabis slang) — plant catalog room, not this sheet. Name ≠ plant (see Maria). Flower ≠ recipe (see flor).",
+      "historyEs": "Pedido de campo: contacto con Flor Maria Jane Maria, personaje del canal Joana e Maria. El laboratorio lee el canal como el par Mariquita Juana + Doña María; la flor es el contacto visible.",
+      "curiositiesEs": "Jane traduce a Juana. Maria Jane suena a Mary Jane (jerga EN) — sala del catálogo de la planta, no de esta ficha. Nombre ≠ planta. Flor ≠ receta."
     },
     {
       "id": "for",
