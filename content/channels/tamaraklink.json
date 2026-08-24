@@ -3,7 +3,7 @@
   "channelUrl": "https://www.youtube.com/@TamaraKlink",
   "channelName": "Tamara Klink",
   "handle": "@TamaraKlink",
-  "inspectedAt": "2026-08-23T22:18:52.825Z",
+  "inspectedAt": "2026-08-24T01:58:03.504Z",
   "fullCrawledAt": "2026-08-22T04:02:03.511Z",
   "videoCount": 143,
   "mission": "Velejo, inverno e escrevo — arquivo público de travessias, ofício e léxico.",
@@ -80,8 +80,8 @@
       "id": "E-VkHmSmMPM",
       "title": "Mensagem na garrafa #2",
       "url": "https://www.youtube.com/watch?v=E-VkHmSmMPM",
-      "views": "3,6 mil visualizações",
-      "publishedRelative": "há 2 dias",
+      "views": "3,7 mil visualizações",
+      "publishedRelative": "há 3 dias",
       "published": "2026-08-20T22:50:26+00:00",
       "category": "invernagem",
       "thumb": "https://i.ytimg.com/vi/E-VkHmSmMPM/hqdefault.jpg",
@@ -136,7 +136,7 @@
       "id": "zo136_VFkGk",
       "title": "BERING SEA",
       "url": "https://www.youtube.com/watch?v=zo136_VFkGk",
-      "views": "5 mil visualizações",
+      "views": "5,1 mil visualizações",
       "publishedRelative": "há 9 dias",
       "published": "2026-08-14T22:00:05+00:00",
       "category": "artico",
@@ -173,25 +173,25 @@
       "thumb": "https://i.ytimg.com/vi/lUr-XRints8/hqdefault.jpg"
     },
     {
-      "id": "LEdJ7WrMu1Y",
-      "title": "⛵️Solo Northwest Passage",
-      "url": "https://www.youtube.com/watch?v=LEdJ7WrMu1Y",
-      "views": "9,6 mil visualizações",
-      "publishedRelative": "há 11 meses",
-      "published": "2025-09-23T02:09:16.353Z",
-      "category": "noroeste",
-      "thumb": "https://i.ytimg.com/vi/LEdJ7WrMu1Y/hqdefault.jpg",
-      "pageIndex": 10
-    },
-    {
       "id": "IdbDcLo7ACI",
       "title": "Há quanto tempo você não tem tempo /  When was the last time you had free time?",
       "url": "https://www.youtube.com/watch?v=IdbDcLo7ACI",
       "views": "8,2 mil visualizações",
       "publishedRelative": "há 11 meses",
-      "published": "2025-09-23T02:09:16.353Z",
+      "published": "2025-09-23T05:48:26.810Z",
       "category": "palavras",
       "thumb": "https://i.ytimg.com/vi/IdbDcLo7ACI/hqdefault.jpg",
+      "pageIndex": 10
+    },
+    {
+      "id": "LEdJ7WrMu1Y",
+      "title": "⛵️Solo Northwest Passage",
+      "url": "https://www.youtube.com/watch?v=LEdJ7WrMu1Y",
+      "views": "9,6 mil visualizações",
+      "publishedRelative": "há 11 meses",
+      "published": "2025-09-23T05:48:26.809Z",
+      "category": "noroeste",
+      "thumb": "https://i.ytimg.com/vi/LEdJ7WrMu1Y/hqdefault.jpg",
       "pageIndex": 11
     },
     {
@@ -255,7 +255,7 @@
       "publishedRelative": "há 1 ano",
       "category": "reflexao",
       "thumb": "https://i.ytimg.com/vi/NN6FZZUaZXE/hqdefault.jpg",
-      "published": "2025-08-23T16:18:52.353Z",
+      "published": "2025-08-23T19:58:02.810Z",
       "pageIndex": 18
     },
     {
@@ -266,7 +266,7 @@
       "publishedRelative": "há 2 anos",
       "category": "palavras",
       "thumb": "https://i.ytimg.com/vi/QZw8a8TDJfQ/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 19
     },
     {
@@ -277,18 +277,18 @@
       "publishedRelative": "há 2 anos",
       "category": "palavras",
       "thumb": "https://i.ytimg.com/vi/Nwb8fBwb4cU/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 20
     },
     {
       "id": "dMkSe1too3c",
       "title": "🇧🇷ATÉ MAIS, BANQUISA! / 🇺🇸SEE YOU, ICEFIELD! / 🇬🇱 TAKUSS, SIKU!",
       "url": "https://www.youtube.com/watch?v=dMkSe1too3c",
-      "views": "19 mil visualizações",
+      "views": "20 mil visualizações",
       "publishedRelative": "há 2 anos",
       "category": "artico",
       "thumb": "https://i.ytimg.com/vi/dMkSe1too3c/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 21
     },
     {
@@ -299,18 +299,18 @@
       "publishedRelative": "há 2 anos",
       "category": "invernagem",
       "thumb": "https://i.ytimg.com/vi/OfTCpd4T0sk/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 22
     },
     {
       "id": "fwdG3ZdyeMI",
       "title": "REMÉDIO PRA SAUDADE #9 / REMEDY FOR SAUDADE #9",
       "url": "https://www.youtube.com/watch?v=fwdG3ZdyeMI",
-      "views": "7,8 mil visualizações",
+      "views": "7,9 mil visualizações",
       "publishedRelative": "há 2 anos",
       "category": "saudade",
       "thumb": "https://i.ytimg.com/vi/fwdG3ZdyeMI/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 23
     },
     {
@@ -321,7 +321,7 @@
       "publishedRelative": "há 2 anos",
       "category": "saudade",
       "thumb": "https://i.ytimg.com/vi/14hOUpNDeFI/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 24
     },
     {
@@ -332,7 +332,7 @@
       "publishedRelative": "há 2 anos",
       "category": "invernagem",
       "thumb": "https://i.ytimg.com/vi/iaxycdyv95k/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 25
     },
     {
@@ -343,7 +343,7 @@
       "publishedRelative": "há 2 anos",
       "category": "saudade",
       "thumb": "https://i.ytimg.com/vi/ZGTYDkYqX_M/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 26
     },
     {
@@ -354,7 +354,7 @@
       "publishedRelative": "há 2 anos",
       "category": "invernagem",
       "thumb": "https://i.ytimg.com/vi/Ja6_z_Ls7fQ/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 27
     },
     {
@@ -365,7 +365,7 @@
       "publishedRelative": "há 2 anos",
       "category": "invernagem",
       "thumb": "https://i.ytimg.com/vi/5Xc_TMVaOCM/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 28
     },
     {
@@ -376,7 +376,7 @@
       "publishedRelative": "há 2 anos",
       "category": "saudade",
       "thumb": "https://i.ytimg.com/vi/9XSIlJmLhB0/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 29
     },
     {
@@ -387,7 +387,7 @@
       "publishedRelative": "há 2 anos",
       "category": "saudade",
       "thumb": "https://i.ytimg.com/vi/99KtmPTfduk/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 30
     },
     {
@@ -398,7 +398,7 @@
       "publishedRelative": "há 2 anos",
       "category": "invernagem",
       "thumb": "https://i.ytimg.com/vi/L07UzVzhWNs/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 31
     },
     {
@@ -409,7 +409,7 @@
       "publishedRelative": "há 2 anos",
       "category": "saudade",
       "thumb": "https://i.ytimg.com/vi/vla4kXKt4nI/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 32
     },
     {
@@ -420,18 +420,18 @@
       "publishedRelative": "há 2 anos",
       "category": "invernagem",
       "thumb": "https://i.ytimg.com/vi/dQxPj1RJbko/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 33
     },
     {
       "id": "dohYRugK_EI",
       "title": "REMÉDIO PRA SAUDADE #3 / REMEDY FOR SAUDADE #3",
       "url": "https://www.youtube.com/watch?v=dohYRugK_EI",
-      "views": "6,9 mil visualizações",
+      "views": "7 mil visualizações",
       "publishedRelative": "há 2 anos",
       "category": "saudade",
       "thumb": "https://i.ytimg.com/vi/dohYRugK_EI/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 34
     },
     {
@@ -442,7 +442,7 @@
       "publishedRelative": "há 2 anos",
       "category": "invernagem",
       "thumb": "https://i.ytimg.com/vi/idshgFH9BGc/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 35
     },
     {
@@ -453,7 +453,7 @@
       "publishedRelative": "há 2 anos",
       "category": "saudade",
       "thumb": "https://i.ytimg.com/vi/Oo0x2wqFTFo/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 36
     },
     {
@@ -464,7 +464,7 @@
       "publishedRelative": "há 2 anos",
       "category": "invernagem",
       "thumb": "https://i.ytimg.com/vi/uBpZ5uRUfq8/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 37
     },
     {
@@ -475,7 +475,7 @@
       "publishedRelative": "há 2 anos",
       "category": "invernagem",
       "thumb": "https://i.ytimg.com/vi/kfPnDorz80A/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 38
     },
     {
@@ -486,7 +486,7 @@
       "publishedRelative": "há 2 anos",
       "category": "saudade",
       "thumb": "https://i.ytimg.com/vi/l1nZ6U8kEM8/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 39
     },
     {
@@ -497,7 +497,7 @@
       "publishedRelative": "há 2 anos",
       "category": "invernagem",
       "thumb": "https://i.ytimg.com/vi/Yi7DCgNR5sU/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 40
     },
     {
@@ -508,7 +508,7 @@
       "publishedRelative": "há 2 anos",
       "category": "reflexao",
       "thumb": "https://i.ytimg.com/vi/3uLE2N15StA/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 41
     },
     {
@@ -519,7 +519,7 @@
       "publishedRelative": "há 2 anos",
       "category": "artico",
       "thumb": "https://i.ytimg.com/vi/DfgLO1_Pdao/hqdefault.jpg",
-      "published": "2024-08-23T10:18:52.353Z",
+      "published": "2024-08-23T13:58:02.810Z",
       "pageIndex": 42
     },
     {

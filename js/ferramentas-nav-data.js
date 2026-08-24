@@ -455,6 +455,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Auditoria do catálogo marshydros.com.br — luzes TS/FC/FC-EVO, tendas, ventilação iFresh e kits com envio nacional, com dimensionamento cruzado ao laboratório."
             },
             {
+              "label": "Caderno de jogo 3: Diablo — a masmorra de 1997 e o nome que parece diabo",
+              "tileLabel": "Caderno de jogo 3: Diablo — a m…",
+              "href": "/posts/post-inspecao-jogo-diablo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-jogo-diablo",
+              "description": "Caderno 3: Diablo (Blizzard North, 1997) — Tristram, cópia legal; elo palavra diabo / monte californiano; ≠ diamba; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Equipamentos Vivosun",
               "tileLabel": "Inspeção: Equipamentos Vivosun",
               "href": "/posts/post-inspecao-vivosun.html",
@@ -949,6 +957,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-expressao-deus-abencoe",
               "description": "Expressões: «Deus abençoe» — bênção e despedida BR; tipografia Deus Abenço → Deus abençoe; sem proselitismo; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: puta que pariu — válvula de pico e ofício da boca",
+              "tileLabel": "Inspeção: puta que pariu — válv…",
+              "href": "/posts/post-inspecao-expressao-puta-que-pariu.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-puta-que-pariu",
+              "description": "Expressões: puta que pariu (PQP) — pico emocional BR; peças puta + pariu; elos respeito, jesusudavi; Valeu !!!"
             },
             {
               "label": "Inspeção: Ayrton Senna — homenagem completa ao Brasil e ao Valeu !!!",
@@ -1871,6 +1887,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Estação e título — *Bom dia, Inverno*: cumprimentar o frio sem romantizar o isolamento."
             },
             {
+              "label": "Inspeção: The Killing Jar — Siouxsie and the Banshees e o ofício de não pregar a vida",
+              "tileLabel": "Inspeção: The Killing Jar — Sio…",
+              "href": "/posts/post-inspecao-arte-the-killing-jar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-the-killing-jar",
+              "description": "Artes · canção 1988: Siouxsie and the Banshees — The Killing Jar (Peepshow); elo BudGanja com inseto, vida e objetos — beleza viva, não espécime."
+            },
+            {
               "label": "Inspeção: Encontro Marcado — a peça de 1924 e o filme de 1998",
               "tileLabel": "Inspeção: Encontro Marcado — a …",
               "href": "/posts/post-inspecao-filme-encontro-marcado.html",
@@ -2007,6 +2031,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Artes · canção 1995: Mamonas Assassinas — Pelados em Santos; elo BudGanja com alegria, língua e objectos. Sabiam de tudo e cairam no lugar certo — ou não."
             },
             {
+              "label": "Inspeção: Transformers — os filmes, a forma que muda e o que o objecto esconde",
+              "tileLabel": "Inspeção: Transformers — os fil…",
+              "href": "/posts/post-inspecao-filme-transformers.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-filme-transformers",
+              "description": "Artes · cinema: Transformers — brinquedo Hasbro/Takara 1984, filme 1986 e entrada live-action 2007 (Bay); mapa do ciclo Bay, Bumblebee e Transformers One."
+            },
+            {
               "label": "Inspeção: Anzol — léxico Tamara / Bom dia, Inverno",
               "tileLabel": "Inspeção: Anzol — léxico Tamara…",
               "href": "/posts/post-inspecao-palavra-anzol.html",
@@ -2021,6 +2053,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-arte-vira-vira",
               "description": "Artes · canção 1995: Mamonas Assassinas — Vira-Vira; paródia do género (vira), não de um povo. Par de Pelados em Santos: o outro clipe."
+            },
+            {
+              "label": "Inspeção: Amor e Fé — Hungria e o ofício de ficar quando o volume baixa",
+              "tileLabel": "Inspeção: Amor e Fé — Hungria e…",
+              "href": "/posts/post-inspecao-arte-amor-e-fe.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-amor-e-fe",
+              "description": "Artes · canção 2020: Hungria Hip Hop — Amor e Fé (Cheiro do Mato, acústico); Spotify 2024 como escuta pedida; elo BudGanja com coração, esperança e caminho."
             },
             {
               "label": "Inspeção: Livro — léxico Tamara / Bom dia, Inverno",
@@ -2391,6 +2431,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «sempre» (lat. *semper*) — duração × hábito × promessa BR; elos já, prosseguir, caminho; Valeu !!!"
             },
             {
+              "label": "Inspeção: Megamente — o desenho do papel e o ofício quando a capa cai",
+              "tileLabel": "Inspeção: Megamente — o desenho…",
+              "href": "/posts/post-inspecao-desenho-megamente.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-desenho-megamente",
+              "description": "Artes · desenho 2010: Megamente (DreamWorks / Tom McGrath) — vilão e herói como papéis; vitória oca e escolha de proteger; sem colar o guião."
+            },
+            {
               "label": "Inspeção: Semente — léxico Tamara / Bom dia, Inverno",
               "tileLabel": "Inspeção: Semente — léxico Tama…",
               "href": "/posts/post-inspecao-palavra-semente.html",
@@ -2445,6 +2493,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-flor",
               "description": "Desfecho visível do cultivo — no inverno não se força flor; inspeciona-se a raiz."
+            },
+            {
+              "label": "Inspeção: Pato — a palavra da ave, da culpa e da água",
+              "tileLabel": "Inspeção: Pato — a palavra da a…",
+              "href": "/posts/post-inspecao-palavra-pato.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-pato",
+              "description": "Palavras: «pato» (árabe-hispânico *páṭṭ* ← persa) — ave aquática, pagar o pato, culinária amazónica; elos animal, água, jambu; Valeu !!!"
             },
             {
               "label": "Inspeção: Guia — preparar chá de plantas (infusão e decoção)",
@@ -2575,6 +2631,22 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «patrão» — chefe/empregador (lat. patronus); elos respeito, pattern, gesto; Valeu !!!"
             },
             {
+              "label": "Inspeção: Puta — de menina a tabu a intensificador",
+              "tileLabel": "Inspeção: Puta — de menina a ta…",
+              "href": "/posts/post-inspecao-palavra-puta.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-puta",
+              "description": "Palavras: «puta» — lat. vulg. putta; pejorativo e intensificador BR; elos pariu, PQP, respeito; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Pariu — do latim pariō ao sopro do palavrão",
+              "tileLabel": "Inspeção: Pariu — do latim pari…",
+              "href": "/posts/post-inspecao-palavra-pariu.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-pariu",
+              "description": "Palavras: «pariu» — lat. pariō / parir; parto e peça de puta que pariu; elos puta, vida; Valeu !!!"
+            },
+            {
               "label": "Inspeção: EXIT — saída, limiar e salvação de ofício",
               "tileLabel": "Inspeção: EXIT — saída, limiar …",
               "href": "/posts/post-inspecao-palavra-exit.html",
@@ -2679,6 +2751,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «noite» (lat. *nox*) — fase escura do ciclo; par com sol; elos luz e interruptor; cultivo; Valeu !!!"
             },
             {
+              "label": "Inspeção: Ilegal — antónimo de legal, ilícito e Valeu !!!",
+              "tileLabel": "Inspeção: Ilegal — antónimo de …",
+              "href": "/posts/post-inspecao-palavra-ilegal.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-ilegal",
+              "description": "Palavras: «ilegal» (*in-* + *legālis*) — fora da lei; antónimo de legal (eixo jurídico, não a gíria); contraste com ilícito; elos Lei 11.343, risco e verdade."
+            },
+            {
               "label": "Inspeção: Sozinho — sozna, sozinha e ofício",
               "tileLabel": "Inspeção: Sozinho — sozna, sozi…",
               "href": "/posts/post-inspecao-palavra-sozna.html",
@@ -2757,6 +2837,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-mequetrefe",
               "description": "Palavras: todas as peças de Porta Palavra #5 (Gregorio) nesta página — mequetrefe, jururu, pinimba, cooper, lorota, brechó; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Especial — latim vivo, uso BR e palavras originárias do Brasil",
+              "tileLabel": "Inspeção: Especial — latim vivo…",
+              "href": "/posts/post-inspecao-palavra-especial.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-especial",
+              "description": "Palavras: «especial» — Lat. specialis (≠ Tupi); usos orais/ofício BR; meta «em especial»; rede das palavras originárias / BR-marcadas já fichadas; Valeu !!!"
             },
             {
               "label": "Inspeção: Paraguai — o país, a grafia Paraguay e o lapso PARAGYACYY",
@@ -3151,6 +3239,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: conexão — a ação de conectar; grafia com x (não conecção); ≠ colchão; Valeu !!!"
             },
             {
+              "label": "Inspeção: Colchão — a ação de dormir e tudo o que parece (cola, colcha, chão)",
+              "tileLabel": "Inspeção: Colchão — a ação de d…",
+              "href": "/posts/post-inspecao-palavra-colchao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-colchao",
+              "description": "Palavras: colchão — sítio de dormir (culcita/colcha); ≠ cola+chão; mapa do que parece; Valeu !!! também ao deitar."
+            },
+            {
               "label": "Inspeção: Afinar — violão, passarinho assobiando e o tom justo",
               "tileLabel": "Inspeção: Afinar — violão, pass…",
               "href": "/posts/post-inspecao-palavra-afinar.html",
@@ -3327,6 +3423,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: gíria (origem controversa / jerigonza) — fala de grupo; a orelha cola girino (γυρῖνος); gatilho anival gerino; Valeu !!!"
             },
             {
+              "label": "Inspeção: Boa!!! — variação quente de Valeu !!!",
+              "tileLabel": "Inspeção: Boa!!! — variação que…",
+              "href": "/posts/post-inspecao-palavra-boa.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-boa",
+              "description": "Palavras: Boa!!! — variação de Valeu !!!; aprovação BR (bom ← bonus); ≠ cobra ≠ saudação; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Homepage — home + page; a porta, não o Homer",
               "tileLabel": "Inspeção: Homepage — home + pag…",
               "href": "/posts/post-inspecao-palavra-homepage.html",
@@ -3455,6 +3559,30 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: 0 / zero — identidade da soma; ×0 apaga; ≠ dezena da Mega-Sena (01–60); ≠ letra O; Valeu !!!"
             },
             {
+              "label": "Inspeção: Letra L — o éle, a haste, o alongamento",
+              "tileLabel": "Inspeção: Letra L — o éle, a ha…",
+              "href": "/posts/post-inspecao-palavra-letra-l.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-letra-l",
+              "description": "Palavras: letra L / éle — 12.ª do alfabeto; genialllll = genial esticado; ≠ Lula ≠ loss; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Cigarro — o rolo, a orelha e a cigarra",
+              "tileLabel": "Inspeção: Cigarro — o rolo, a o…",
+              "href": "/posts/post-inspecao-palavra-cigarro.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-cigarro",
+              "description": "Palavras: cigarro (BR = cigarette) ≠ cigarra (inseto) ≠ charuto; étimo disputado; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Cigarra — o inseto que canta, não o cigarro",
+              "tileLabel": "Inspeção: Cigarra — o inseto qu…",
+              "href": "/posts/post-inspecao-palavra-cigarra.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-cigarra",
+              "description": "Palavras: cigarra (inseto, lat. cicada) ≠ cigarro; inseito → inseto; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Lava — o rio do vulcão, não o verbo lavar",
               "tileLabel": "Inspeção: Lava — o rio do vulcã…",
               "href": "/posts/post-inspecao-palavra-lava.html",
@@ -3509,6 +3637,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-guapore",
               "description": "Palavras: Guaporé = rio (BR/BO) × município RS; Guapore = rasto; a canção Vamos Fugir não escolhe; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Perda total — a baixa do bem, não da pessoa",
+              "tileLabel": "Inspeção: Perda total — a baixa…",
+              "href": "/posts/post-inspecao-expressao-perda-total.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-perda-total",
+              "description": "Expressões: perda total — sinistro / baixa do bem; Toral = o t; usual ≠ PT ≠ urna ≠ Lula; Valeu !!!"
             },
             {
               "label": "Inspeção: Deus — o vocábulo do céu latino; ficha ≠ catecismo",
@@ -3589,6 +3725,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-fantasia",
               "description": "Palavras: fantasia — gr. phantasía; substantivo da imaginação; ≠ elogio fantástico ≠ fantasioso ≠ Carnaval ≠ Disney; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Diabo — Daibo, Diablo e o que parece giaua",
+              "tileLabel": "Inspeção: Diabo — Daibo, Diablo…",
+              "href": "/posts/post-inspecao-palavra-diabo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-diabo",
+              "description": "Palavras: diabo ← diábolos (acusador); Daibo é lapso; Diablo é ES + jogo + monte; giaua é vizinho oral, não étimo; ≠ diamba; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
