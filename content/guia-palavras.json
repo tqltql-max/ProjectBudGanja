@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T19:43:59.266Z",
+  "updatedAt": "2026-08-24T02:09:01.179Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2946,6 +2946,42 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-upsert.html"
+    },
+    {
+      "id": "retarget",
+      "word": "retarget",
+      "simple": "EN re- + target — voltar a apontar ao alvo. Cola da orelha: rato + alvo (rat + target) ≠ étimo. Objecto: alvo (albus, o branco). Animal: rato. ≠ ads ≠ mouse. Valeu !!!",
+      "simpleEn": "EN re- + target — aim again at the target. Ear-glue: rat + target ≠ etymon. Object: alvo (albus, the white). Animal: rato. ≠ ads ≠ mouse. Valeu !!!",
+      "simpleEs": "EN re- + target — apuntar de nuevo al blanco. Cola del oído: rata + blanco ≠ étimo. Objeto: alvo (albus). Animal: rato. ≠ ads ≠ ratón. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-retarget.html",
+      "history": "Retarget é inglês de oficina: prefixo re- («de novo») + target (fr. targette / targe, o escudo pequeno que virou disco a atingir). Em português o objecto chama-se alvo — do latim albus, o branco do centro. A orelha cola rato (rat) + alvo (target); o étimo corta o animal da origem.",
+      "curiosities": "Retargeting / remarketing são a sala do mercado — a ficha nomeia o vocábulo, não ensina o funil. Em PT-PT rato também é o mouse; essa sala não entra. Calco: retargetar.",
+      "historyEn": "Retarget is workshop English: prefix re- (“again”) + target (Old French targette / targe, a small shield that became the disk to hit). Portuguese names the object alvo — from Latin albus, the white of the centre. The ear glues rat + target; the etymon cuts the animal from the origin.",
+      "curiositiesEn": "Retargeting / remarketing are the market room — the sheet names the word, it does not teach the funnel. In European Portuguese rato is also the computer mouse; that room stays out. Calque: retargetar.",
+      "historyEs": "Retarget es inglés de oficio: prefijo re- («de nuevo») + target (fr. targette / targe, el escudo pequeño que viró disco a apuntar). En portugués el objeto se llama alvo — del latín albus, el blanco del centro. El oído pega rata + blanco; el étimo corta el animal del origen.",
+      "curiositiesEs": "Retargeting / remarketing son la sala del mercado — la ficha nombra el vocablo, no enseña el embudo. En PT-PT rato también es el ratón; esa sala no entra. Calco: retargetar."
+    },
+    {
+      "id": "alvo",
+      "word": "alvo",
+      "simple": "Lat. albus — o branco do centro virou o objecto da pontaria. Peça PT de target; cola com rato em retarget. Valeu !!!",
+      "simpleEn": "Lat. albus — the white of the centre became the object of aim. PT piece of target; glued with rato in retarget. Valeu !!!",
+      "simpleEs": "Lat. albus — el blanco del centro viró el objeto de la puntería. Pieza PT de target; cola con rato en retarget. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-retarget.html"
+    },
+    {
+      "id": "rato",
+      "word": "rato",
+      "simple": "Animal (lat. rattus). Nesta ficha entra como cola EN rat + target = retarget — ≠ étimo ≠ mouse ≠ delator. Valeu !!!",
+      "simpleEn": "Animal (Lat. rattus). On this sheet it enters as glue EN rat + target = retarget — ≠ etymon ≠ mouse ≠ snitch. Valeu !!!",
+      "simpleEs": "Animal (lat. rattus). En esta ficha entra como cola EN rat + target = retarget — ≠ étimo ≠ ratón ≠ soplón. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-retarget.html"
     },
     {
       "id": "upsertar",
@@ -9316,6 +9352,16 @@
       "simple": "24.ª letra (xis). Vários sons em PT. O x de conexão é nexo, não ç. ≠ app ≠ Xiaomi. Valeu !!!",
       "simpleEn": "24th letter (xis). Several PT sounds. The x in conexão is nexus, not ç. ≠ app ≠ Xiaomi. Valeu !!!",
       "simpleEs": "24.ª letra (xis). Varios sonidos en PT. La x de conexão es nexo, no ç. ≠ app ≠ Xiaomi. ¡Valeu !!!"
+    },
+    {
+      "id": "metal-slug",
+      "word": "Metal Slug",
+      "simple": "Run and gun da Nazca / SNK (1996). No site, caderno de jogo 5 — tanque SV-001, Mission Complete / Hey!; cópia legal, sem ROM. Fala viva: Meteal.",
+      "simpleEn": "Nazca / SNK run and gun (1996). On the site, game notebook 5 — SV-001 tank, Mission Complete / Hey!; legal copy, no ROM. Living mouth: Meteal.",
+      "simpleEs": "Run and gun de Nazca / SNK (1996). En el sitio, cuaderno 5 — tanque SV-001, Mission Complete / Hey!; copia legal, sin ROM. Habla viva: Meteal.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-jogo-metal-slug.html"
     }
   ]
 }

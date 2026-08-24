@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T01:58:05.612Z",
+  "updatedAt": "2026-08-24T02:14:23.720Z",
   "poems": [
     {
       "id": "fantasia",
@@ -709,6 +709,31 @@
         "kombat",
         "finish",
         "fight"
+      ]
+    },
+    {
+      "id": "metal-slug",
+      "slug": "metal-slug",
+      "title": "Metal Slug",
+      "titleEn": "Metal Slug",
+      "titleEs": "Metal Slug",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja do fliperama — o tanque, o pixel e o Hey!, sem colar a ROM; Valeu !!!",
+      "teaserEn": "BudGanja echo of the cabinet — the tank, the pixel and the Hey!, without pasting the ROM; Valeu !!!",
+      "teaserEs": "Eco BudGanja del fliperama — el tanque, el píxel y el Hey!, sin pegar la ROM; ¡Valeu !!!",
+      "body": "Metal Slug.\nNão pedimos o ROM emprestado —\npedimos o ofício do pixel\ne das palavras que o fliperama gritava\nquando a missão acabava\ne o prisioneiro ainda dizia\nHey!\n\nNazca. SNK. Marco. Tarma.\nHouve um tanque chamado lesma de metal\ne uma boca que diz Meteal.\nHouve um Mission Complete que não é o fim da guerra:\né o nome do fecho no ecrã.\nHouve um HURRY UP que aperta o tempo\ne um Continue que ainda cabe no bolso.\n\nO laboratório conhece esse gabinete.\nNão cola o dump.\nLê o vocabulário.\nA guerra no ecrã é cartoon.\nO ofício é não copiar o tiro.\n\nValeu !!!\n\nPorque toda vez que alguém\nsepara o Hey! do prisioneiro\ndo tiro na rua,\no universo cresce um pouco:\numa missão a mais,\numa palavra a mais,\num tanque lento\nque ainda cabe no caderno.",
+      "bodyEn": "Metal Slug.\nWe do not borrow the ROM —\nwe ask for the craft of the pixel\nand of the words the cabinet shouted\nwhen the mission ended\nand the prisoner still said\nHey!\n\nNazca. SNK. Marco. Tarma.\nThere was a tank called a metal slug\nand a living mouth that says Meteal.\nThere was a Mission Complete that is not the end of a war:\nit is the name of the close on the screen.\nThere was a HURRY UP that squeezes time\nand a Continue that still fits a pocket.\n\nThe laboratory knows that cabinet.\nIt does not paste the dump.\nIt reads the vocabulary.\nWar on the screen is cartoon.\nThe craft is not copying the shot.\n\nValeu !!!\n\nBecause every time someone\nseparates the prisoner's Hey!\nfrom a shot in the street,\nthe universe grows a little:\none more mission,\none more word,\na slow tank\nthat still fits the notebook.",
+      "bodyEs": "Metal Slug.\nNo pedimos prestada la ROM —\npedimos el oficio del píxel\ny de las palabras que el fliperama gritaba\ncuando la misión acababa\ny el prisionero aún decía\nHey!\n\nNazca. SNK. Marco. Tarma.\nHubo un tanque llamado babosa de metal\ny una boca viva que dice Meteal.\nHubo un Mission Complete que no es el fin de la guerra:\nes el nombre del cierre en la pantalla.\nHubo un HURRY UP que aprieta el tiempo\ny un Continue que aún cabe en el bolsillo.\n\nEl laboratorio conoce ese gabinete.\nNo pega el dump.\nLee el vocabulario.\nLa guerra en la pantalla es cartoon.\nEl oficio es no copiar el tiro.\n\n¡Valeu !!!\n\nPorque cada vez que alguien\nsepara el Hey! del prisionero\ndel tiro en la calle,\nel universo crece un poco:\nuna misión más,\nuna palabra más,\nun tanque lento\nque aún cabe en el cuaderno.",
+      "inspectionHref": "/posts/post-inspecao-jogo-metal-slug.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "jogo",
+        "metal",
+        "slug",
+        "snk"
       ]
     },
     {

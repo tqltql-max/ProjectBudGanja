@@ -950,6 +950,25 @@
     "seriesLabel": "Açaí · fruto"
   },
   {
+    "title": "Caderno de jogo 5: Metal Slug — o tanque, o pixel e o Hey!",
+    "titleEn": "Game notebook 5: Metal Slug — the tank, the pixel and the Hey!",
+    "titleEs": "Cuaderno 5: Metal Slug — el tanque, el píxel y el Hey!",
+    "excerpt": "Caderno 5: Metal Slug (Nazca / SNK, 1996) — Meteal; SV-001; Mission Complete / HURRY UP! / POW Hey!; sem walkthrough nem ROM; Valeu !!!",
+    "excerptEn": "Notebook 5: Metal Slug (Nazca / SNK, 1996) — living Meteal; SV-001; Mission Complete / HURRY UP! / POW Hey!; no walkthrough, no ROM; Valeu !!!",
+    "excerptEs": "Cuaderno 5: Metal Slug (Nazca / SNK, 1996) — Meteal; SV-001; Mission Complete / HURRY UP! / POW Hey!; sin walkthrough ni ROM; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-jogo-metal-slug",
+    "url": "/posts/post-inspecao-jogo-metal-slug.html",
+    "date": "2026-08-24T02:15:00.000Z",
+    "filename": "posts/post-inspecao-jogo-metal-slug.html",
+    "coverImage": "/imagens/inspecoes/metal-slug-cover.jpg",
+    "category": "inspecao",
+    "series": "cadernos-jogo",
+    "seriesOrder": 5,
+    "seriesLabel": "Metal Slug · Caderno 5"
+  },
+  {
     "title": "Inspeção: plataformas de ensino GOV.BR — Canal Educação, MEC Idiomas e MEC Livros",
     "titleEn": "Inspection: GOV.BR learning platforms — Canal Educação, MEC Idiomas and MEC Livros",
     "titleEs": "Inspección: plataformas de enseñanza GOV.BR — Canal Educação, MEC Idiomas y MEC Livros",
@@ -8282,6 +8301,25 @@
     "series": "palavras-origem",
     "seriesOrder": 289,
     "seriesLabel": "Diabo · palavra"
+  },
+  {
+    "title": "Inspeção: Retarget — re- + alvo; a orelha cola o rato; ≠ tutorial de anúncio",
+    "titleEn": "Inspection: Retarget — re- + target; the ear glues the rat; ≠ ads tutorial",
+    "titleEs": "Inspección: Retarget — re- + blanco; el oído pega la rata; ≠ tutorial de anuncio",
+    "excerpt": "Palavras: retarget (re- + target) — voltar a apontar ao alvo; cola rato+alvo (rat+target) ≠ étimo; objecto alvo (albus); animal rato; Valeu !!!",
+    "excerptEn": "Words: retarget (re- + target) — aim again at the target; rat+target glue ≠ etymon; object alvo (albus); animal rato; Valeu !!!",
+    "excerptEs": "Palabras: retarget (re- + target) — apuntar de nuevo al blanco; cola rata+blanco ≠ étimo; objeto alvo (albus); animal rato; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-retarget",
+    "url": "/posts/post-inspecao-palavra-retarget.html",
+    "date": "2026-08-24T01:50:00.000Z",
+    "filename": "posts/post-inspecao-palavra-retarget.html",
+    "coverImage": "/imagens/inspecoes/retarget-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 290,
+    "seriesLabel": "Retarget · palavra"
   },
   {
     "title": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

@@ -105,6 +105,11 @@ const {
   poemMortalKombatEs
 } = require('../lib/mortal-kombat-inspecao-post.js');
 const {
+  poemMetalSlugPt,
+  poemMetalSlugEn,
+  poemMetalSlugEs
+} = require('../lib/metal-slug-caderno-jogo-post.js');
+const {
   poemDozeApostolosPt,
   poemDozeApostolosEn,
   poemDozeApostolosEs
@@ -772,6 +777,27 @@ const doc = {
       bodyEs: poemMortalKombatEs(),
       inspectionHref: '/posts/post-inspecao-jogo-mortal-kombat.html',
       tags: ['poesia', 'vida', 'jogo', 'kombat', 'finish', 'fight']
+    },
+    {
+      id: 'metal-slug',
+      slug: 'metal-slug',
+      title: 'Metal Slug',
+      titleEn: 'Metal Slug',
+      titleEs: 'Metal Slug',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja do fliperama — o tanque, o pixel e o Hey!, sem colar a ROM; Valeu !!!',
+      teaserEn:
+        'BudGanja echo of the cabinet — the tank, the pixel and the Hey!, without pasting the ROM; Valeu !!!',
+      teaserEs:
+        'Eco BudGanja del fliperama — el tanque, el píxel y el Hey!, sin pegar la ROM; ¡Valeu !!!',
+      body: poemMetalSlugPt(),
+      bodyEn: poemMetalSlugEn(),
+      bodyEs: poemMetalSlugEs(),
+      inspectionHref: '/posts/post-inspecao-jogo-metal-slug.html',
+      tags: ['poesia', 'vida', 'jogo', 'metal', 'slug', 'snk']
     },
     {
       id: 'a-semente-foi-plantada',

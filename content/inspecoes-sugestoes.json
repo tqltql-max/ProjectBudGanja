@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T19:43:59.266Z",
+  "updatedAt": "2026-08-24T02:09:01.175Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7907,6 +7907,32 @@
       "notes": "Cap. 201 — opsert (boca BR); mãos a obra (plural); identidade (slug); ≠ replace; depois commitar."
     },
     {
+      "id": "palavra-retarget",
+      "title": "Retarget — re- + alvo; a orelha cola o rato",
+      "titleEn": "Retarget — re- + target; the ear glues the rat",
+      "titleEs": "Retarget — re- + blanco; el oído pega la rata",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: retarget (re- + target) — voltar a apontar; objecto alvo (albus); cola animal rato (rat+target) ≠ étimo; ≠ ads.",
+      "whyEn": "Words: retarget (re- + target) — aim again; object alvo; rat glue ≠ etymon; ≠ ads.",
+      "whyEs": "Palabras: retarget (re- + target) — apuntar de nuevo; objeto alvo; cola rata ≠ étimo; ≠ ads.",
+      "suggestedSlug": "inspecao-palavra-retarget",
+      "doneHref": "/posts/post-inspecao-palavra-retarget.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-retarget.html",
+        "https://en.wiktionary.org/wiki/retarget",
+        "https://pt.wiktionary.org/wiki/alvo",
+        "https://pt.wiktionary.org/wiki/rato",
+        "/posts/post-inspecao-palavra-objetos.html",
+        "/posts/post-inspecao-palavra-animal.html",
+        "/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 290 — étimo × cola; sem tutorial de anúncio."
+    },
+    {
       "id": "palavra-intestino",
       "title": "Intestino — o tubo de dentro (intus) e Valeu !!!",
       "titleEn": "Intestino — the inner tube (intus) and Valeu !!!",
@@ -9685,6 +9711,29 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 288 — pedido Inepçao de Fantasia."
+    },
+    {
+      "id": "jogo-metal-slug-caderno-5",
+      "title": "Metal Slug — caderno 5, o tanque e o Hey!",
+      "titleEn": "Metal Slug — notebook 5, the tank and the Hey!",
+      "titleEs": "Metal Slug — cuaderno 5, el tanque y el Hey!",
+      "tipo": "jogo",
+      "priority": 1,
+      "status": "feita",
+      "why": "Caderno 5: Metal Slug 1996 (Nazca/SNK); SV-001; Mission Complete / HURRY UP! / POW Hey!; sem ROM.",
+      "whyEn": "Notebook 5: Metal Slug 1996 (Nazca/SNK); SV-001 lexicon; no ROM dump.",
+      "whyEs": "Cuaderno 5: Metal Slug 1996 (Nazca/SNK); léxico SV-001; sin ROM.",
+      "suggestedSlug": "inspecao-jogo-metal-slug",
+      "doneHref": "/posts/post-inspecao-jogo-metal-slug.html",
+      "seriesHint": "cadernos-jogo",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Metal_Slug_%281996_video_game%29",
+        "https://en.wikipedia.org/wiki/Metal_Slug",
+        "https://www.snk-corp.co.jp/us/games/metalslug_attack_re/",
+        "https://www.youtube.com/watch?v=zGvQN3uEyFM",
+        "/posts/post-inspecao-jogo-metal-slug.html"
+      ],
+      "notes": "Cap. 5 — fala viva Meteal; cópia legal."
     }
   ]
 }
