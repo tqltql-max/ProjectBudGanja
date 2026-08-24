@@ -1091,7 +1091,9 @@
       "pickerLead": "Grade ESAPP (Agronomia). Ou escreva o nome da sua disciplina.",
       "customPlaceholder": "Matéria que não está na lista",
       "addCustom": "Criar caderno",
-      "closePicker": "Fechar"
+      "closePicker": "Fechar",
+      "labStudiesTitle": "Estudos do laboratório",
+      "labStudiesLead": "Aulas-modelo Cornell no caderno da matéria — podes editar. Primeiro estudo: Biologia Celular · Angiospermas."
     },
     "origami": {
       "eyebrow": "Ofício · papel",

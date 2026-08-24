@@ -1088,7 +1088,9 @@
       "pickerLead": "ESAPP Agronomy grid. Or type the name of your course.",
       "customPlaceholder": "Subject not on the list",
       "addCustom": "Create notebook",
-      "closePicker": "Close"
+      "closePicker": "Close",
+      "labStudiesTitle": "Lab studies",
+      "labStudiesLead": "Cornell model lessons in the subject notebook — you can edit them. First study: Cell Biology · Angiosperms."
     },
     "origami": {
       "eyebrow": "Craft · paper",

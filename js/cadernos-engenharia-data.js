@@ -156,6 +156,109 @@
     });
   });
 
+  /**
+   * Estudos do laboratório — aulas-modelo Cornell.
+   * Entram no caderno da matéria (aparelho); o aluno pode editar.
+   * Não é material oficial da ESAPP.
+   */
+  var LAB_STUDIES = [
+    {
+      subjectId: 'biologia-celular',
+      formulas: [
+        'Angiosperma (Angiospermae): planta com flor; semente encerrada no fruto (ovário).',
+        'Gimnosperma: semente nua (pinheiro, cicas, Ginkgo).',
+        'Célula vegetal: parede (celulose) + vacúolo central + plastídios.',
+        'Plasmodesmos: ponte de citoplasma. Simplasto × apoplasto.',
+        'Dupla fecundação: espermatozoide + oosfera → zigoto (2n); espermatozoide + núcleos polares → endosperma (3n).',
+        'Saco embrionário típico (Polygonum): 7 células / 8 núcleos.'
+      ].join('\n'),
+      lessons: [
+        {
+          id: 'lab-biologia-celular-angiosperma',
+          title: 'Angiospermas — a célula da planta com flor',
+          date: '2026-08-24',
+          cues: [
+            'Grafia: Angiosperma — não «Angiosmpérma».',
+            'angio + sperma = semente no vaso (fruto)',
+            '≠ gimnosperma (semente nua)',
+            'célula vegetal: parede, vacúolo, plastídios',
+            'plasmodesmos / simplasto × apoplasto',
+            'dupla fecundação: zigoto 2n + endosperma 3n',
+            'saco embrionário: 7 células / 8 núcleos',
+            'mono × eudicot → caderno de Morfologia'
+          ].join('\n'),
+          notes: [
+            'Nome certo: Angiosperma (também Angiospermae / Magnoliophyta). O pedido «Angiosmpérma» é lapso de teclado — a âncora é Angiosperma.',
+            '',
+            'O que é. Grupo das plantas com flor. A semente forma-se dentro de um fruto, porque o óvulo está no ovário. Étimo de trabalho: grego angeíon (vaso, recipiente) + spérma (semente). Gimnosperma = semente nua, sem fruto verdadeiro.',
+            '',
+            'Recorte desta matéria (Biologia Celular). Não é a aula de classificação. Aqui o objecto é a célula eucariota vegetal da angiosperma e o evento celular que a define: a dupla fecundação.',
+            '',
+            'Célula. Parede primária (celulose, hemicelulose, pectina). Em células de sustentação / xilema, parede secundária com lenhina. Entre duas células vizinhas está a lamela média (pectina) — o «cimento». A membrana plasmática fica por dentro da parede.',
+            '',
+            'Comunicação. Plasmodesmos atravessam a parede e ligam citoplasmas (simplasto). O apoplasto é o caminho pelas paredes e espaços intercelulares, fora do citoplasma. Água e iões usam os dois caminhos; proteínas grandes e RNA usam sobretudo o simplasto.',
+            '',
+            'Vacúolo. Nas células maduras ocupa a maior parte do volume. O tonoplasto (membrana) controla o que entra e sai. Dá turgescência (a planta «em pé»), guarda água, iões, pigmentos e compostos de defesa. Células meristemáticas têm vacúolos pequenos e citoplasma denso — ainda estão a dividir.',
+            '',
+            'Plastídios. Organelos da linhagem vegetal: cloroplasto (fotossíntese), cromoplasto (cor da flor/fruto), amiloplasto (amido). Origem endossimbiótica — têm DNA próprio. Mitocôndria continua a ser a central de ATP.',
+            '',
+            'Dupla fecundação (o marco). Do tubo polínico entram dois gâmetas masculinos. Um funde com a oosfera → zigoto (2n) → embrião. O outro funde com os núcleos polares da célula central → endosperma (em geral 3n), tecido de reserva da semente. Gimnospermas não fazem este par zigoto + endosperma triploide.',
+            '',
+            'Saco embrionário típico (tipo Polygonum): 7 células e 8 núcleos — 3 antípodas, 2 sinérgides, 1 oosfera, 1 célula central com 2 núcleos polares.',
+            '',
+            'Elo de grade. Monocotiledónea × eudicotiledónea (um ou dois cotilédones no embrião; nervação, n° floral) fica no caderno Morfologia e sistemática vegetal. Não misturar as duas aulas no mesmo bloco.',
+            '',
+            'Elo do laboratório. Cannabis sativa L. é angiosperma (Cannabaceae). O tricoma glandular é uma célula epidérmica modificada — exemplo, não substitui esta ficha nem a aula. Fruto ≠ fruta: ver inspeção da palavra fruto.',
+            '',
+            'Isto é caderno de estudo. Não é material oficial da ESAPP. Confirme na aula e no livro da disciplina.'
+          ].join('\n'),
+          questions: [
+            'Por que a dupla fecundação é o marco celular das angiospermas, e não só «ter flor»?',
+            'Onde acaba a parede de uma célula e começa a da vizinha (lamela média)?',
+            'O vacúolo é vazio? O que o tonoplasto controla?',
+            'Simplasto e apoplasto: qual caminho uma proteína grande pode usar?'
+          ].join('\n'),
+          summary: [
+            'Angiosperma é a planta com flor cuja semente se fecha no fruto. Em Biologia Celular o recorte é a célula vegetal (parede de celulose, plasmodesmos, vacúolo, plastídios) e o evento único da dupla fecundação: zigoto 2n + endosperma 3n.',
+            'Grafia canónica: Angiosperma. ≠ gimnosperma. Classificação (mono × eudicot) vai para Morfologia e sistemática vegetal.',
+            'Caderno de estudo — completar com o que o professor disser na aula.'
+          ].join('\n')
+        }
+      ]
+    }
+  ];
+
+  function labStudyFor(subjectId) {
+    var i;
+    for (i = 0; i < LAB_STUDIES.length; i++) {
+      if (LAB_STUDIES[i].subjectId === subjectId) return LAB_STUDIES[i];
+    }
+    return null;
+  }
+
+  function listLabStudies() {
+    var list = [];
+    LAB_STUDIES.forEach(function (pack) {
+      var subject = null;
+      TERMS.forEach(function (term) {
+        term.subjects.forEach(function (s) {
+          if (s.id === pack.subjectId) subject = s;
+        });
+      });
+      (pack.lessons || []).forEach(function (lesson) {
+        list.push({
+          subjectId: pack.subjectId,
+          subjectName: subject ? subject.name : pack.subjectId,
+          icon: subject ? subject.icon : '📓',
+          termo: subject ? subject.termo : 0,
+          lessonId: lesson.id,
+          title: lesson.title
+        });
+      });
+    });
+    return list;
+  }
+
   function allSubjects() {
     var list = [];
     TERMS.forEach(function (term) {
@@ -177,6 +280,9 @@
     course: 'Agronomia — Engenharia Agronômica',
     slugify: slugify,
     TERMS: TERMS,
+    LAB_STUDIES: LAB_STUDIES,
+    labStudyFor: labStudyFor,
+    listLabStudies: listLabStudies,
     allSubjects: allSubjects,
     subjectsForTerm: subjectsForTerm
   };

@@ -1088,7 +1088,9 @@
       "pickerLead": "Grilla ESAPP (Agronomía). O escriba el nombre de su asignatura.",
       "customPlaceholder": "Materia que no está en la lista",
       "addCustom": "Crear cuaderno",
-      "closePicker": "Cerrar"
+      "closePicker": "Cerrar",
+      "labStudiesTitle": "Estudios del laboratorio",
+      "labStudiesLead": "Clases modelo Cornell en el cuaderno de la materia — puedes editarlas. Primer estudio: Biología Celular · Angiospermas."
     },
     "origami": {
       "eyebrow": "Oficio · papel",

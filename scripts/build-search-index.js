@@ -19,7 +19,7 @@ const STATIC_PAGES = [
   { url: '/tecnologia/', title: 'Tecnologia', desc: 'Catálogo de ofício técnico: vocábulos, hardware, rede e software — HD escravo e o lema tecnologia', keywords: 'tecnologia hd escravo slave slayr ata ide disco rígido hardware software rede' },
   { url: '/mitologia/', title: 'Mitologia', desc: 'Catálogo de mitos e deuses: nomes, relatos e elos — Anúbis (chacal que pesa o coração) e o lema mitologia', keywords: 'mitologia anubis anúbis deus egito chacal maat mito deuses orfeu' },
   { url: '/biblioteca/unifesp/', title: 'Curso UNIFESP', desc: 'Hub do XIV curso de extensão UNIFESP sobre cannabis medicinal', keywords: 'unifesp curso cannabis medicinal siex formação' },
-  { url: '/biblioteca/cadernos/', title: 'Cadernos de Engenharia', desc: 'Um caderno por matéria com método Cornell para o curso de Agronomia / engenharia', keywords: 'caderno engenharia agronomia esapp cornell anotações matérias' },
+  { url: '/biblioteca/cadernos/', title: 'Cadernos de Engenharia', desc: 'Um caderno por matéria com método Cornell para o curso de Agronomia / engenharia — estudo de Biologia Celular sobre angiospermas', keywords: 'caderno engenharia agronomia esapp cornell anotações matérias biologia celular angiosperma angiospermas' },
   { url: '/biblioteca/inspecoes/', title: 'Inspeções', desc: 'Relatórios técnicos com método verificável — canais, equipamentos e cursos', keywords: 'inspeção auditoria método' },
   { url: '/biblioteca/pesquisas/', title: 'Pesquisas', desc: 'Relatórios e estudos técnicos', keywords: 'pesquisa relatório' },
   { url: '/equipamentos/', title: 'Equipamentos', desc: 'Manuais caseiros e equipamentos documentados', keywords: 'equipamento caseiro manual clonadora' },

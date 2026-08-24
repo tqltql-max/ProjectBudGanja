@@ -75,6 +75,11 @@ function stampHtml(content) {
         '$1\n    <link rel="stylesheet" href="/css/pages/planejamento.css?v=' + ASSET_VERSION + '">'
       );
     }
+  } else if (next.includes('data-page="cadernos-engenharia"') && !next.includes('pages/cadernos-engenharia.css')) {
+    next = next.replace(
+      /(<link rel="stylesheet" href="\/css\/style\.css\?v=[^"]+">)/,
+      '$1\n    <link rel="stylesheet" href="/css/pages/cadernos-engenharia.css?v=' + ASSET_VERSION + '">'
+    );
   } else if (!next.includes('i18n-data.js') && next.includes('layout.js')) {
     next = next.replace(
       /(\s*<script\s+src="[^"]*\/js\/layout\.js[^"]*"><\/script>)/g,
