@@ -1558,6 +1558,25 @@
     "seriesLabel": "Maçã · fruto"
   },
   {
+    "title": "Inspeção: Artigo — Cannabis de alta potência e psicose (EU-GEI, Lancet Psychiatry)",
+    "titleEn": "Inspection: Article — High-potency cannabis and first-episode psychosis (EU-GEI, Lancet Psychiatry)",
+    "titleEs": "Inspección: Artículo — Cannabis de alta potencia y psicosis (EU-GEI, Lancet Psychiatry)",
+    "excerpt": "Auditoria do caso-controlo EU-GEI (Di Forti et al., 2019): 901 primeiros episódios vs 1237 controlos em 11 sítios; uso diário OR 3,2; diário de alta potência OR 4,8. PAF assume causalidade. Associação ≠ destino.",
+    "excerptEn": "Audit of the EU-GEI case-control study (Di Forti et al., 2019): 901 first-episode cases vs 1,237 controls across 11 sites; daily use OR 3.2; daily high-potency OR 4.8. PAF assumes causality. Association ≠ destiny.",
+    "excerptEs": "Auditoría del caso-control EU-GEI (Di Forti et al., 2019): 901 primeros episodios vs 1237 controles en 11 sitios; uso diario OR 3,2; diario de alta potencia OR 4,8. El PAF asume causalidad. Asociación ≠ destino.",
+    "hasBodyEn": false,
+    "hasBodyEs": false,
+    "slug": "inspecao-artigo-diforti-eugei-psicose-2019",
+    "url": "/posts/post-inspecao-artigo-diforti-eugei-psicose-2019.html",
+    "date": "2026-08-24T18:00:00.000Z",
+    "filename": "posts/post-inspecao-artigo-diforti-eugei-psicose-2019.html",
+    "coverImage": "/imagens/inspecoes/lancet-diforti-cover.jpg",
+    "category": "inspecao",
+    "series": "artigos-cientificos",
+    "seriesOrder": 8,
+    "seriesLabel": "Lancet Psychiatry · 2019"
+  },
+  {
     "title": "Inspeção: Ração para animais — do saco industrial ao comedouro",
     "titleEn": "Inspection: Animal feed — from the industrial bag to the bowl",
     "titleEs": "Inspección: Pienso para animales — del saco industrial al comedero",
@@ -1727,6 +1746,25 @@
     "series": "plantas-frutos",
     "seriesOrder": 8,
     "seriesLabel": "Abacaxi · fruto"
+  },
+  {
+    "title": "Inspeção: Artigo — CBD oral no síndrome de Dravet (Devinsky et al., NEJM)",
+    "titleEn": "Inspection: Article — Oral CBD for Dravet syndrome (Devinsky et al., NEJM)",
+    "titleEs": "Inspección: Artículo — CBD oral en el síndrome de Dravet (Devinsky et al., NEJM)",
+    "excerpt": "Auditoria do RCT NEJM 2017 (N=120, 2–18 anos): CBD isolado 20 mg/kg/dia vs placebo; crises convulsivas 12,4→5,9 vs 14,9→14,1 (P=0,01). Respondedores ≥50 % NS. Isolado ≠ óleo de loja; GW financiou.",
+    "excerptEn": "Audit of the 2017 NEJM RCT (N=120, ages 2–18): pharmaceutical CBD 20 mg/kg/day vs placebo; convulsive seizures 12.4→5.9 vs 14.9→14.1 (P=0.01). ≥50% responders NS. Isolate ≠ shop oil; GW funded.",
+    "excerptEs": "Auditoría del RCT NEJM 2017 (N=120, 2–18 años): CBD aislado 20 mg/kg/día vs placebo; crisis convulsivas 12,4→5,9 vs 14,9→14,1 (P=0,01). Respondedores ≥50 % NS. Aislado ≠ aceite de tienda; GW financió.",
+    "hasBodyEn": false,
+    "hasBodyEs": false,
+    "slug": "inspecao-artigo-devinsky-cbd-dravet-2017",
+    "url": "/posts/post-inspecao-artigo-devinsky-cbd-dravet-2017.html",
+    "date": "2026-08-24T18:30:00.000Z",
+    "filename": "posts/post-inspecao-artigo-devinsky-cbd-dravet-2017.html",
+    "coverImage": "/imagens/inspecoes/nejm-devinsky-cbd-cover.jpg",
+    "category": "inspecao",
+    "series": "artigos-cientificos",
+    "seriesOrder": 9,
+    "seriesLabel": "NEJM · 2017"
   },
   {
     "title": "Inspeção: Derivados da Manga — açúcar, aditivos e química industrial",

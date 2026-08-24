@@ -930,6 +930,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Relatório educacional de Maçã (*Malus domestica Borkh.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
             },
             {
+              "label": "Inspeção: Artigo — Cannabis de alta potência e psicose (EU-GEI, Lancet Psychiatry)",
+              "tileLabel": "Inspeção: Artigo — Cannabis de …",
+              "href": "/posts/post-inspecao-artigo-diforti-eugei-psicose-2019.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-artigo-diforti-eugei-psicose-2019",
+              "description": "Auditoria do caso-controlo EU-GEI (Di Forti et al., 2019): 901 primeiros episódios vs 1237 controlos em 11 sítios; uso diário OR 3,2; diário de alta potência OR 4,8. PAF assume causalidade. Associação ≠ destino."
+            },
+            {
               "label": "Inspeção: Ração para animais — do saco industrial ao comedouro",
               "tileLabel": "Inspeção: Ração para animais — …",
               "href": "/posts/post-inspecao-derivado-racao.html",
@@ -1000,6 +1008,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-planta-abacaxi",
               "description": "Relatório educacional de Abacaxi (*Ananas comosus (L.) Merr.): ficha, usos tradicionais, cuidados e ligação ao catálogo BudGanja."
+            },
+            {
+              "label": "Inspeção: Artigo — CBD oral no síndrome de Dravet (Devinsky et al., NEJM)",
+              "tileLabel": "Inspeção: Artigo — CBD oral no …",
+              "href": "/posts/post-inspecao-artigo-devinsky-cbd-dravet-2017.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-artigo-devinsky-cbd-dravet-2017",
+              "description": "Auditoria do RCT NEJM 2017 (N=120, 2–18 anos): CBD isolado 20 mg/kg/dia vs placebo; crises convulsivas 12,4→5,9 vs 14,9→14,1 (P=0,01). Respondedores ≥50 % NS. Isolado ≠ óleo de loja; GW financiou."
             },
             {
               "label": "Inspeção: Derivados da Manga — açúcar, aditivos e química industrial",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T18:42:35.858Z",
+  "updatedAt": "2026-08-24T19:15:22.221Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -313,6 +313,48 @@
       "notes": "CVV 188 na ficha. Associação ≠ causalidade. Ansiedade NS neste pool."
     },
     {
+      "id": "artigo-diforti-eugei-2019",
+      "title": "Artigo — Cannabis de alta potência e psicose (Di Forti / EU-GEI 2019)",
+      "titleEn": "Article — High-potency cannabis and psychosis (Di Forti / EU-GEI 2019)",
+      "titleEs": "Artículo — Cannabis de alta potencia y psicosis (Di Forti / EU-GEI 2019)",
+      "tipo": "artigo",
+      "priority": 1,
+      "status": "feita",
+      "why": "Caso-controlo Lancet Psychiatry: frequência + potência THC × primeiro episódio; elo USP/FAPESP.",
+      "whyEn": "Lancet Psychiatry case-control: frequency + THC potency × first-episode psychosis; USP/FAPESP link.",
+      "whyEs": "Caso-control Lancet Psychiatry: frecuencia + potencia THC × primer episodio; vínculo USP/FAPESP.",
+      "suggestedSlug": "inspecao-artigo-diforti-eugei-psicose-2019",
+      "doneHref": "/posts/post-inspecao-artigo-diforti-eugei-psicose-2019.html",
+      "seriesHint": "artigos-cientificos",
+      "sources": [
+        "https://doi.org/10.1016/S2215-0366(19)30048-3",
+        "https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366(19)30048-3/fulltext",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6447576/"
+      ],
+      "notes": "PAF assume causalidade. Caso-controlo ≠ RCT. Não fundir com Devinsky CBD."
+    },
+    {
+      "id": "artigo-devinsky-cbd-dravet-2017",
+      "title": "Artigo — CBD oral no síndrome de Dravet (Devinsky 2017)",
+      "titleEn": "Article — Oral CBD for Dravet syndrome (Devinsky 2017)",
+      "titleEs": "Artículo — CBD oral en el síndrome de Dravet (Devinsky 2017)",
+      "tipo": "artigo",
+      "priority": 1,
+      "status": "feita",
+      "why": "RCT NEJM de CBD isolado farmacêutico (20 mg/kg/dia) em Dravet resistente — âncora contra óleo de loja.",
+      "whyEn": "NEJM RCT of pharmaceutical CBD isolate (20 mg/kg/day) in drug-resistant Dravet — anchor against shop oil.",
+      "whyEs": "RCT NEJM de CBD aislado farmacéutico (20 mg/kg/día) en Dravet resistente — ancla contra aceite de tienda.",
+      "suggestedSlug": "inspecao-artigo-devinsky-cbd-dravet-2017",
+      "doneHref": "/posts/post-inspecao-artigo-devinsky-cbd-dravet-2017.html",
+      "seriesHint": "artigos-cientificos",
+      "sources": [
+        "https://doi.org/10.1056/NEJMoa1611618",
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa1611618",
+        "https://clinicaltrials.gov/study/NCT02091375"
+      ],
+      "notes": "Isolado ≠ óleo. GW financiou. ≥50 % respondedores NS. Não fundir com Di Forti."
+    },
+    {
       "id": "artigo-seguinte",
       "title": "Próximo artigo peer-reviewed (fila científica)",
       "titleEn": "Next peer-reviewed article (science queue)",
@@ -326,7 +368,7 @@
       "suggestedSlug": "inspecao-artigo-",
       "seriesHint": "artigos-cientificos",
       "sources": [],
-      "notes": "Gobbi 2019 fechado. Próximo: escolher DOI open access (ex. psicose Di Forti Lancet Psychiatry 2019, ou ensaio CBD)."
+      "notes": "Di Forti 2019 e Devinsky 2017 fechados. Próximo: escolher DOI (ex. Thiele CBD LGS 2018, ou Marconi meta-análise psicose)."
     },
     {
       "id": "derivado-cana-de-acucar",
