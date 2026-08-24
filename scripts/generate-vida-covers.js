@@ -53,7 +53,7 @@ function charSvg(label, sub, c1, c2, accent) {
   <circle cx="140" cy="520" r="200" fill="rgba(0,0,0,0.15)"/>
   <circle cx="600" cy="200" r="48" fill="${accent}" opacity="0.85"/>
   <text x="600" y="300" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="rgba(255,255,255,0.7)" letter-spacing="8">VIDA · PERSONAGEM</text>
-  <text x="600" y="390" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="52" font-weight="700" fill="#ffffff">${label}</text>
+  <text x="600" y="390" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="${label.length > 22 ? 36 : 52}" font-weight="700" fill="#ffffff">${label}</text>
   <text x="600" y="460" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.88)">${sub}</text>
 </svg>`;
 }
@@ -65,7 +65,8 @@ async function main() {
     'inspecao-personagem-dona-maria': ['Dona Maria', 'mestra do solo'],
     'inspecao-personagem-dj-brisa': ['DJ Brisa', 'voz da harmonia'],
     'inspecao-personagem-joaninha-joana': ['Joaninha Joana', 'guardiã biológica'],
-    'inspecao-personagem-three-little-birds': ['Three Little Birds', 'esquadrão da alegria']
+    'inspecao-personagem-three-little-birds': ['Three Little Birds', 'esquadrão da alegria'],
+    'inspecao-personagem-flor-maria-jane-maria': ['Flor Maria Jane Maria', 'contacto do canal Joana e Maria']
   };
   for (const p of PERSONAGENS) {
     const [label, sub] = labels[p.slug] || [p.nome, ''];

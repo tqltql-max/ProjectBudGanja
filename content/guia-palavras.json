@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T12:18:37.216Z",
+  "updatedAt": "2026-08-24T12:25:29.242Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -5492,6 +5492,22 @@
       "curiositiesEs": "La ficha de Artes liga el tema a O Início, rabia nombrada y prohibición — léxico político de la canción."
     },
     {
+      "id": "wake-up",
+      "word": "Wake Up",
+      "simple": "Canção RATM (1992): acordar contra a máquina; irmã de Killing in the Name; afterlife Matrix; rádio como adaptação.",
+      "simpleEn": "RATM song (1992): wake against the machine; sister of Killing in the Name; Matrix afterlife; radio as adaptation.",
+      "simpleEs": "Canción RATM (1992): despertar contra la máquina; hermana de Killing in the Name; afterlife Matrix; radio como adaptación.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-wake-up.html",
+      "history": "Wake Up, do Rage Against the Machine (álbum homónimo, 1992, faixa 7), nomeia o acordar contra a máquina. O fecho de The Matrix (1999) é afterlife, não origem.",
+      "curiosities": "A ficha de Artes liga a faixa a Killing in the Name, sonhar/verdade e à rádio — sem colar a letra.",
+      "historyEn": "Wake Up, by Rage Against the Machine (self-titled album, 1992, track 7), names waking against the machine. The Matrix (1999) ending is afterlife, not origin.",
+      "curiositiesEn": "The Arts sheet links the track to Killing in the Name, dream/truth and the radio — without pasting the lyric.",
+      "historyEs": "Wake Up, de Rage Against the Machine (álbum homónimo, 1992, pista 7), nombra el despertar contra la máquina. El cierre de The Matrix (1999) es afterlife, no origen.",
+      "curiositiesEs": "La ficha de Artes liga el tema a Killing in the Name, soñar/verdad y la radio — sin pegar la letra."
+    },
+    {
       "id": "laboratorio",
       "word": "Laboratório",
       "simple": "Lugar de experiência e medida — aqui, o laboratório digital público BudGanja.",
@@ -5986,6 +6002,22 @@
       "curiositiesEn": "The ear may glue étimo to ação. The lab cuts: étimo is the piece; āctiō is the etymon of ação, not of étimo. Close: Valeu !!!",
       "historyEs": "Étimo viene del griego étymon (sentido verdadero), de étymos (verdadero). No es el oficio — ese es etimología. El pedido de campo trae un espécimen: el étimo de ação es el latín āctiō ← agere («hacer, impulsar»).",
       "curiositiesEs": "El oído puede pegar étimo en ação. El lab corta: étimo es la pieza; āctiō es el étimo de ação, no de étimo. Cierre: Valeu !!!"
+    },
+    {
+      "id": "patia",
+      "word": "patia",
+      "simple": "Gr. páthos → -pátheia → PT -patia. Quatro salas: afecto (empatia), doença (neuropatia), escola (homeopatia), planta (alelopatia). ≠ pato ≠ pátria. Valeu !!!",
+      "simpleEn": "Gk. páthos → -pátheia → PT -patia. Four rooms: feeling (empathy), disease (neuropathy), school (homeopathy), plant (allelopathy). ≠ duck ≠ fatherland. Valeu !!!",
+      "simpleEs": "Gr. páthos → -pátheia → PT -patia. Cuatro salas: afecto (empatía), enfermedad (neuropatía), escuela (homeopatía), planta (alelopatía). ≠ pato ≠ patria. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-patia.html",
+      "history": "Do grego páthos (sentir, sofrer, ser afectado) entra o sufixo culto -pátheia. O português guarda -patia numa só boca para quatro ofícios. O latim patī (paciência) é primo, não o pai. Pato, pátria e pátio são colas da orelha.",
+      "curiosities": "Empatia sente dentro; simpatia sente com. Homeopatia é escola, não doença. Alelopatia é química entre plantas, não empatia vegetal. Patía (Cauca) é homónimo geográfico.",
+      "historyEn": "From Greek páthos (to feel, to suffer, to be affected) comes the learned suffix -pátheia. Portuguese keeps -patia in one mouth for four crafts. Latin patī (patience) is a cousin, not the father. Duck, fatherland and courtyard are ear-glue.",
+      "curiositiesEn": "Empathy feels inward; sympathy feels with. Homeopathy is a school, not a disease. Allelopathy is chemistry between plants, not plant empathy. Patía (Cauca) is a geographic homonym.",
+      "historyEs": "Del griego páthos (sentir, sufrir, ser afectado) entra el sufijo culto -pátheia. El portugués guarda -patia en una sola boca para cuatro oficios. El latín patī (paciencia) es primo, no el padre. Pato, patria y patio son pegamento del oído.",
+      "curiositiesEs": "Empatía siente hacia dentro; simpatía siente con. Homeopatía es escuela, no enfermedad. Alelopatía es química entre plantas, no empatía vegetal. Patía (Cauca) es homónimo geográfico."
     },
     {
       "id": "aglutinacao",
@@ -8858,6 +8890,32 @@
       "curiositiesEs": "Zaroio es zarolho en el oído (lh palatal vira i, como olho → oio). Hipótesis de trabajo: zarolho vía zanolho, blend de zanaga + olho. Nombrar no es insultar. Olho de la planta es brote; olho gordo es folclore."
     },
     {
+      "id": "arroba",
+      "word": "@ / arroba",
+      "simple": "Ár. ar-rubʿ — o quarto / o peso; glifo @ = at (sítio, menção). Cruzar com olho (oculus): o olho cola o pictograma, a orelha não. ≠ órgão. Valeu !!!",
+      "simpleEn": "Ar. ar-rubʿ — the quarter / the weight; glyph @ = at (place, mention). Cross with olho (oculus): the eye glues the pictogram, the ear does not. ≠ organ. Valeu !!!",
+      "simpleEs": "Ár. ar-rubʿ — el cuarto / el peso; glifo @ = at (sitio, mención). Cruzar con olho (oculus): el ojo pega el pictograma, el oído no. ≠ órgano. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-arroba.html",
+      "history": "Arroba vem do árabe ar-rubʿ (o quarto), unidade de peso ibérica. O glifo @ serviu de «à razão de»; o inglês leu at. Em 1971 entrou no correio electrónico. O nome do carácter em PT/ES continua a ser o do peso.",
+      "curiosities": "A relação com olhos é de vista: órbita + a-íris. A orelha não cola (arroba ≠ olho). Alcunhas mundiais vêem caracol, macaco ou cão — não olho. Menção @chama o olhar; não é o órgão.",
+      "historyEn": "Arroba comes from Arabic ar-rubʿ (the quarter), an Iberian weight. The @ mark meant “at the rate of”; English read at. In 1971 it entered email. The PT/ES name of the character is still the weight’s name.",
+      "curiositiesEn": "The relation with eyes is visual: orbit + a-as-iris. The ear does not glue (arroba ≠ olho). World nicknames see a snail, a monkey or a dog — not an eye. A mention @calls the look; it is not the organ.",
+      "historyEs": "Arroba viene del árabe ar-rubʿ (el cuarto), unidad de peso ibérica. El @ sirvió de «a razón de»; el inglés leyó at. En 1971 entró en el correo. El nombre PT/ES del carácter sigue siendo el del peso.",
+      "curiositiesEs": "La relación con ojos es de vista: órbita + a-iris. El oído no pega (arroba ≠ olho). Los apodos mundiales ven caracol, mono o perro — no ojo. La mención llama la mirada; no es el órgano."
+    },
+    {
+      "id": "at-sign",
+      "word": "at sign",
+      "simple": "EN do glifo @ — o sítio (at). Ver arroba. Relação com olhos: pictograma, não étimo. Valeu !!!",
+      "simpleEn": "EN name of the @ glyph — the place (at). See arroba. Relation with eyes: pictogram, not etymon. Valeu !!!",
+      "simpleEs": "Nombre EN del glifo @ — el sitio (at). Ver arroba. Relación con ojos: pictograma, no étimo. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-arroba.html"
+    },
+    {
       "id": "ramela",
       "word": "ramela",
       "simple": "Secreção no canto do olho (também remela; origem obscura). Ramelento = ramela + -ento. ≠ remo lento (rēmus × lentus). Valeu !!!",
@@ -9258,6 +9316,54 @@
       "curiositiesEn": "The lexical sheet is not the clock of About Time.",
       "historyEs": "Tiempo / tempo viene del latín tempus y en portugués cubre cronología, clima y compás musical. Kairós y chronos conviven en la misma palabra; eslabones con sempre, passado y Renato Russo.",
       "curiositiesEs": "La ficha léxica no es el reloj de About Time."
+    },
+    {
+      "id": "comprimento",
+      "word": "comprimento",
+      "simple": "Lat. complēre → comprido → comprimento: extensão da vara. Trio com distância (vão) e relatividade (quadro). ≠ cumprimento. Valeu !!!",
+      "simpleEn": "Lat. complēre → comprido → comprimento: the rod’s extent. Trio with distância (gap) and relatividade (frame). ≠ greeting. Valeu !!!",
+      "simpleEs": "Lat. complēre → comprido → comprimento: extensión de la vara. Trío con distância (vano) y relatividade (marco). ≠ saludo. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html",
+      "history": "Comprimento vem de comprido (lat. complētus / complēre, «encher até ao bordo» → longo). Distância vem de distantia (dis- + stāre). Relatividade vem de relātīvus (referre). Einstein (1905/1915) amarrou os três: o metro depende do quadro; c não.",
+      "curiosities": "Cumprimento (saudação) é prima, não sinónimo. Longitude é o mapa, não a vara. «Tudo é relativo» é slogan; o intervalo e c são o ofício duro.",
+      "historyEn": "Portuguese comprimento comes from comprido (Lat. complētus / complēre, “fill to the brim” → long). Distância from distantia (dis- + stāre). Relatividade from relātīvus (referre). Einstein (1905/1915) tied the three: the metre depends on the frame; c does not.",
+      "curiositiesEn": "Cumprimento (greeting) is a cousin, not a synonym. Longitude is the map, not the rod. “Everything is relative” is a slogan; the interval and c are the hard craft.",
+      "historyEs": "Comprimento viene de comprido (lat. complētus / complēre, «llenar hasta el borde» → largo). Distância de distantia (dis- + stāre). Relatividade de relātīvus (referre). Einstein (1905/1915) ató los tres: el metro depende del marco; c no.",
+      "curiositiesEs": "Cumprimento (saludo) es prima, no sinónimo. Longitude es el mapa, no la vara. «Todo es relativo» es eslogan; el intervalo y c son el oficio duro."
+    },
+    {
+      "id": "relatividade",
+      "word": "relatividade",
+      "simple": "Lat. relātīvus — teoria do quadro (1905 / 1915): comprimento e tempo medidos dependem do observador; c não. ≠ relativismo. Valeu !!!",
+      "simpleEn": "Lat. relātīvus — frame theory (1905 / 1915): measured length and time depend on the observer; c does not. ≠ relativism. Valeu !!!",
+      "simpleEs": "Lat. relātīvus — teoría del marco (1905 / 1915): longitud y tiempo medidos dependen del observador; c no. ≠ relativismo. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html",
+      "history": "De relativo (relātīvus, «que se refere») o português fez o nome da teoria. Poincaré falou em princípio de relatividade; Einstein fechou a restrita (1905) e a geral (1915).",
+      "curiosities": "GPS usa as duas. Relação é prima lexical (vínculo). Relativismo é outro tribunal. A contração de Lorentz é mapa, não caderno de exercícios.",
+      "historyEn": "From relativo (relātīvus, “that refers”) Portuguese named the theory. Poincaré spoke of a principle of relativity; Einstein closed special (1905) and general (1915).",
+      "curiositiesEn": "GPS uses both. Relação is a lexical cousin (a bond). Relativism is another court. Lorentz contraction is a map, not a problem set.",
+      "historyEs": "De relativo (relātīvus, «que se refiere») el portugués hizo el nombre de la teoría. Poincaré habló de principio de relatividad; Einstein cerró la especial (1905) y la general (1915).",
+      "curiositiesEs": "El GPS usa las dos. Relação es prima léxica (vínculo). El relativismo es otro tribunal. La contracción de Lorentz es mapa, no cuaderno."
+    },
+    {
+      "id": "distancia",
+      "word": "distância",
+      "simple": "Lat. distantia ← distāre: o vão entre dois pontos, não a vara. Trio com comprimento e relatividade. Valeu !!!",
+      "simpleEn": "Lat. distantia ← distāre: the gap between two points, not the rod. Trio with comprimento and relatividade. Valeu !!!",
+      "simpleEs": "Lat. distantia ← distāre: el vano entre dos puntos, no la vara. Trío con comprimento y relatividade. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html",
+      "history": "Distância herda o «estar-apartado» latino. Na geometria da parábola, cada ponto dista o mesmo do foco e da directriz. No espaço-tempo, o vão invariante é o intervalo.",
+      "curiosities": "Caminho percorrido pode ser mais longo que a distância. A relatividade não apaga o vão: muda o quadro em que se mede.",
+      "historyEn": "Distância inherits Latin “standing apart”. In the parabola’s geometry, each point is equally far from focus and directrix. In spacetime the invariant gap is the interval.",
+      "curiositiesEn": "A path travelled can be longer than the distance. Relativity does not erase the gap: it changes the frame of the measure.",
+      "historyEs": "Distância hereda el «estar-aparte» latino. En la geometría de la parábola, cada punto dista lo mismo del foco y la directriz. En el espacio-tiempo el vano invariante es el intervalo.",
+      "curiositiesEs": "El camino recorrido puede ser más largo que la distancia. La relatividad no borra el vano: cambia el marco de la medida."
     },
     {
       "id": "terpeno",
