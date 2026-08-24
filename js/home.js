@@ -45,6 +45,7 @@ function formatDateCompact(iso) {
 }
 
 var HOME_PINNED_SLUGS = [
+  'inspecao-expressao-quem-nao-arrisca-nao-petisca',
   'inspecao-palavra-teoria-das-cordas',
   'inspecao-arte-bom-dia-inverno',
   'inspecao-canal-paulinho'
