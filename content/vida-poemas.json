@@ -1,54 +1,6 @@
 {
-  "updatedAt": "2026-08-24T12:25:03.596Z",
+  "updatedAt": "2026-08-24T12:29:51.629Z",
   "poems": [
-    {
-      "id": "olho",
-      "slug": "olho",
-      "title": "Olho",
-      "titleEn": "Olho",
-      "titleEs": "Olho",
-      "author": "Laboratório BudGanja",
-      "authorEn": "BudGanja Lab",
-      "authorEs": "Laboratorio BudGanja",
-      "teaser": "Eco BudGanja — oculus; cruzado com zaroio (zarolho); o olho que não alinha; Valeu !!!",
-      "teaserEn": "BudGanja echo — oculus; crossed with zaroio (zarolho); the eye that does not line up; Valeu !!!",
-      "teaserEs": "Eco BudGanja — oculus; cruzado con zaroio (zarolho); el ojo que no alinea; ¡Valeu !!!",
-      "body": "Olho.\nNão é o verbo que eu olho.\nÉ o órgão.\nÉ o olhar nomeado em substância.\n\nLatim oculus.\nNão é o grego ophthalmós.\nNão é o inglês eye.\n\nZaroio.\nA boca cola o lh no i.\nZarolho no papel.\nZaroio no ouvido.\n\nO olho que não vai com o outro.\nNão é xingo.\nÉ o eixo que desviou.\n\nA orelha ouve oio dentro de zaroio.\nO étimo corta o prefixo incerto\ne guarda o olho.\n\nValeu !!!\nver direito\nsem zombar do eixo.",
-      "bodyEn": "Olho.\nNot the verb I look.\nIt is the organ.\nIt is the look named as a noun.\n\nLatin oculus.\nNot Greek ophthalmós.\nNot English eye.\n\nZaroio.\nThe mouth glues lh into i.\nZarolho on paper.\nZaroio in the ear.\n\nThe eye that does not go with the other.\nIt is not a slur.\nIt is the axis that wandered.\n\nThe ear hears oio inside zaroio.\nThe etymon cuts the uncertain prefix\nand keeps the eye.\n\nValeu !!!\nsee straight\nwithout mocking the axis.",
-      "bodyEs": "Olho.\nNo es el verbo que yo miro.\nEs el órgano.\nEs la mirada nombrada en sustancia.\n\nLatín oculus.\nNo es el griego ophthalmós.\nNo es el inglés eye.\n\nZaroio.\nLa boca pega el lh en la i.\nZarolho en el papel.\nZaroio en el oído.\n\nEl ojo que no va con el otro.\nNo es insulto.\nEs el eje que se desvió.\n\nEl oído oye oio dentro de zaroio.\nEl étimo corta el prefijo incierto\ny guarda el ojo.\n\n¡Valeu !!!\nver derecho\nsin burlarse del eje.",
-      "inspectionHref": "/posts/post-inspecao-palavra-olho.html",
-      "tags": [
-        "poesia",
-        "vida",
-        "olho",
-        "zaroio",
-        "zarolho"
-      ]
-    },
-    {
-      "id": "arroba",
-      "slug": "arroba",
-      "title": "@",
-      "titleEn": "@",
-      "titleEs": "@",
-      "author": "Laboratório BudGanja",
-      "authorEn": "BudGanja Lab",
-      "authorEs": "Laboratorio BudGanja",
-      "teaser": "Eco BudGanja — o olho cola o @; a orelha não; ar-rubʿ × oculus; Valeu !!!",
-      "teaserEn": "BudGanja echo — the eye glues the @; the ear does not; ar-rubʿ × oculus; Valeu !!!",
-      "teaserEs": "Eco BudGanja — el ojo pega el @; el oído no; ar-rubʿ × oculus; ¡Valeu !!!",
-      "body": "@.\nO olho cola.\nA orelha não.\n\nÓrbita.\nA letra a por íris.\nA cauda fecha o olhar.\n\nArroba.\nÁrabe ar-rubʿ —\no quarto, o peso.\nNão é oculus.\n\nAt.\nO sítio.\nO nome na rede.\nChamar o olhar\nnão é ser o órgão.\n\nValeu !!!\nver o glifo\nsem fundir com a carne.",
-      "bodyEn": "@.\nThe eye glues.\nThe ear does not.\n\nOrbit.\nThe letter a as iris.\nThe tail closes the look.\n\nArroba.\nArabic ar-rubʿ —\nthe quarter, the weight.\nIt is not oculus.\n\nAt.\nThe place.\nThe name on the net.\nCalling the look\nis not being the organ.\n\nValeu !!!\nsee the glyph\nwithout fusing it with flesh.",
-      "bodyEs": "@.\nEl ojo pega.\nEl oído no.\n\nÓrbita.\nLa letra a por iris.\nLa cola cierra la mirada.\n\nArroba.\nÁrabe ar-rubʿ —\nel cuarto, el peso.\nNo es oculus.\n\nAt.\nEl sitio.\nEl nombre en la red.\nLlamar la mirada\nno es ser el órgano.\n\n¡Valeu !!!\nver el glifo\nsin fundirlo con la carne.",
-      "inspectionHref": "/posts/post-inspecao-palavra-arroba.html",
-      "tags": [
-        "poesia",
-        "vida",
-        "arroba",
-        "olho",
-        "relação"
-      ]
-    },
     {
       "id": "maria",
       "slug": "maria",
@@ -119,30 +71,6 @@
         "parabola",
         "parabola",
         "palavra"
-      ]
-    },
-    {
-      "id": "comprimento-distancia-relatividade",
-      "slug": "comprimento-distancia-relatividade",
-      "title": "Comprimento",
-      "titleEn": "Length",
-      "titleEs": "Longitud",
-      "author": "Laboratório BudGanja",
-      "authorEn": "BudGanja Lab",
-      "authorEs": "Laboratorio BudGanja",
-      "teaser": "Eco BudGanja — a vara, o vão, o quadro; c não muda de ofício; Valeu !!!",
-      "teaserEn": "BudGanja echo — the rod, the gap, the frame; c does not change jobs; Valeu !!!",
-      "teaserEs": "Eco BudGanja — la vara, el vano, el marco; c no cambia de oficio; ¡Valeu !!!",
-      "body": "Comprimento.\nA vara no próprio.\n\nDistância.\nO vão entre dois pontos.\n\nRelatividade.\nO metro muda de comboio\ne a luz não muda de ofício.\n\nNão é cumprimento.\nNão é relativismo.\nNão é «tudo vale».\n\nO intervalo é o que resta\nquando o observador passa.\n\nValeu !!!\nmedir com o quadro à vista.",
-      "bodyEn": "Length.\nThe rod at rest.\n\nDistance.\nThe gap between two points.\n\nRelativity.\nThe metre changes trains\nand light does not change jobs.\n\nNot a greeting.\nNot relativism.\nNot “anything goes”.\n\nThe interval is what remains\nwhen the observer passes.\n\nValeu !!!\nmeasure with the frame in sight.",
-      "bodyEs": "Longitud.\nLa vara en su propio.\n\nDistancia.\nEl vano entre dos puntos.\n\nRelatividad.\nEl metro cambia de tren\ny la luz no cambia de oficio.\n\nNo es saludo.\nNo es relativismo.\nNo es «todo vale».\n\nEl intervalo es lo que queda\ncuando el observador pasa.\n\n¡Valeu !!!\nmedir con el marco a la vista.",
-      "inspectionHref": "/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html",
-      "tags": [
-        "poesia",
-        "vida",
-        "comprimento",
-        "distancia",
-        "relatividade"
       ]
     },
     {

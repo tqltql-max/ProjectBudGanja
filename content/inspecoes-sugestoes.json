@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T12:06:36.455Z",
+  "updatedAt": "2026-08-24T12:25:29.227Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2163,7 +2163,7 @@
       "tipo": "conto",
       "priority": 1,
       "status": "feita",
-      "why": "Conto do laboratório: cuidar de plantas com ciência, natureza e amizade — série Vida.",
+      "why": "Conto familiar: cuidar de plantas com ciência, natureza e amizade — série Vida.",
       "whyEn": "Family story: plant care with science, nature and friendship — Vida series.",
       "whyEs": "Cuento familiar: cuidar plantas con ciencia, naturaleza y amistad — serie Vida.",
       "suggestedSlug": "inspecao-conto-vida-laboratorio",
@@ -2175,6 +2175,30 @@
         "Vida/Personagens.txt"
       ],
       "notes": "Hub /vida/ + fichas de personagens."
+    },
+    {
+      "id": "personagem-flor-maria-jane-maria",
+      "title": "Vida — Flor Maria Jane Maria, contacto do canal Joana e Maria",
+      "titleEn": "Vida — Flor Maria Jane Maria, contact of the Joana and Maria channel",
+      "titleEs": "Vida — Flor Maria Jane Maria, contacto del canal Joana e Maria",
+      "tipo": "personagem",
+      "priority": 1,
+      "status": "feita",
+      "why": "Pedido de campo: contato com Flor Maria Jane Maria, personagem do canal Joana e Maria. Jane = Joana EN; Maria Jane = outra sala.",
+      "whyEn": "Field request: contact with Flor Maria Jane Maria, character of the Joana and Maria channel. Jane = Joana EN; Maria Jane = another room.",
+      "whyEs": "Pedido de campo: contacto con Flor Maria Jane Maria, personaje del canal Joana e Maria. Jane = Juana EN; Maria Jane = otra sala.",
+      "suggestedSlug": "inspecao-personagem-flor-maria-jane-maria",
+      "doneHref": "/posts/post-inspecao-personagem-flor-maria-jane-maria.html",
+      "seriesHint": "vida-contos",
+      "sources": [
+        "/posts/post-inspecao-personagem-flor-maria-jane-maria.html",
+        "/vida/",
+        "/posts/post-inspecao-personagem-joaninha-joana.html",
+        "/posts/post-inspecao-personagem-dona-maria.html",
+        "/posts/post-inspecao-palavra-flor.html",
+        "/posts/post-inspecao-palavra-maria.html"
+      ],
+      "notes": "Canal = par Joana + Dona Maria. Ficha ≠ receita de floração ≠ tutorial de gíria Mary Jane."
     },
     {
       "id": "pessoa-amyr-klink",
@@ -4998,6 +5022,40 @@
       "notes": "Cap. 107 — cronos/clima/compasso/posse; kairós comparação sem linhagem."
     },
     {
+      "id": "palavra-comprimento-distancia-relatividade",
+      "title": "Comprimento × Distância × Relatividade — o metro depende do quadro",
+      "titleEn": "Length × Distance × Relativity — the metre depends on the frame",
+      "titleEs": "Longitud × Distancia × Relatividad — el metro depende del marco",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: comprimento (vara) × distância (vão) × relatividade (quadro); ≠ cumprimento ≠ relativismo; c invariante; Valeu !!!",
+      "whyEn": "Words: length (rod) × distance (gap) × relativity (frame); ≠ greeting ≠ relativism; c invariant; Valeu !!!",
+      "whyEs": "Palabras: longitud (vara) × distancia (vano) × relatividad (marco); ≠ saludo ≠ relativismo; c invariante; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-comprimento-distancia-relatividade",
+      "doneHref": "/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-comprimento-distancia-relatividade.html",
+        "https://pt.wiktionary.org/wiki/comprimento",
+        "https://pt.wiktionary.org/wiki/dist%C3%A2ncia",
+        "https://pt.wiktionary.org/wiki/relatividade",
+        "https://en.wiktionary.org/wiki/compleo#Latin",
+        "https://en.wiktionary.org/wiki/distantia#Latin",
+        "https://en.wiktionary.org/wiki/relativus#Latin",
+        "https://pt.wikipedia.org/wiki/Relatividade_restrita",
+        "https://pt.wikipedia.org/wiki/Relatividade_geral",
+        "https://pt.wikipedia.org/wiki/Contra%C3%A7%C3%A3o_do_espa%C3%A7o",
+        "/posts/post-inspecao-palavra-tempo.html",
+        "/posts/post-inspecao-palavra-luz.html",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-palavra-teoria-das-cordas.html",
+        "/posts/post-inspecao-expressao-missao-comprida.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 322 — três salas; contração de Lorentz como mapa; GPS apontado, não tutorial."
+    },
+    {
       "id": "palavra-perseguicao",
       "title": "Perseguição — caça, opressão e o seguir que aperta",
       "titleEn": "Perseguição — chase, oppression, and the follow that squeezes",
@@ -7486,6 +7544,32 @@
       "seriesHint": "palavras-origem"
     },
     {
+      "id": "palavra-tele",
+      "title": "Tele — longe no grego, a caixa na sala",
+      "titleEn": "Tele — far in Greek, the box in the room",
+      "titleEs": "Tele — lejos en griego, la caja en la sala",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: tele ← gr. têle (longe); recorte BR «a tele» (TV); ≠ tela; família telefone/telescópio; Valeu !!!",
+      "whyEn": "Words: tele ← Gr. têle (far); BR clipping “a tele” (TV); ≠ tela; family telephone/telescope; Valeu !!!",
+      "whyEs": "Palabras: tele ← gr. têle (lejos); recorte BR «a tele» (TV); ≠ tela; familia teléfono/telescopio; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-tele",
+      "doneHref": "/posts/post-inspecao-palavra-tele.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/tele",
+        "https://en.wiktionary.org/wiki/%CF%84%E1%BF%86%CE%BB%CE%B5#Ancient_Greek",
+        "https://pt.wiktionary.org/wiki/televis%C3%A3o",
+        "https://pt.wiktionary.org/wiki/telefone",
+        "https://pt.wiktionary.org/wiki/tela",
+        "/posts/post-inspecao-palavra-ligar-desligar.html",
+        "/posts/post-inspecao-palavra-conexao.html",
+        "/posts/post-inspecao-palavra-olho.html"
+      ],
+      "notes": "Cap. 316 — prefixo × recorte; tela fica como cola cortada."
+    },
+    {
       "id": "palavra-extintor",
       "title": "Extintor — apagar, classe e o último gesto",
       "tipo": "palavra",
@@ -7625,6 +7709,31 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 305 — olho × zaroio; zarolho no papel; prefixo via zanolho (média); ≠ xingo."
+    },
+    {
+      "id": "palavra-arroba",
+      "title": "@ / arroba — *ar-rubʿ*; cruzar com olhos (*oculus*)",
+      "titleEn": "@ / arroba — *ar-rubʿ*; cross with eyes (*oculus*)",
+      "titleEs": "@ / arroba — *ar-rubʿ*; cruzar con ojos (*oculus*)",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: @ / arroba (peso, at) × olho / olhos — relação de pictograma, não de étimo; o olho cola, a orelha não.",
+      "whyEn": "Words: @ / arroba (weight, at) × olho / eyes — pictogram relation, not etymon; the eye glues, the ear does not.",
+      "whyEs": "Palabras: @ / arroba (peso, at) × olho / ojos — relación de pictograma, no de étimo; el ojo pega, el oído no.",
+      "suggestedSlug": "inspecao-palavra-arroba",
+      "doneHref": "/posts/post-inspecao-palavra-arroba.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-arroba.html",
+        "/posts/post-inspecao-palavra-olho.html",
+        "https://pt.wiktionary.org/wiki/arroba",
+        "https://en.wiktionary.org/wiki/at_sign",
+        "https://en.wikipedia.org/wiki/At_sign",
+        "/posts/post-inspecao-palavra-relacao.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 323 — cola de olho; étimo ar-rubʿ × oculus; sem manual de e-mail."
     },
     {
       "id": "palavra-ramela",
@@ -7917,6 +8026,35 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 313 — uma página latim+PT; duas salas; sem catecismo nem caderno de cónicas."
+    },
+    {
+      "id": "palavra-patia",
+      "title": "Patia — -patia ← páthos; quatro salas",
+      "titleEn": "Patia — -patia ← páthos; four rooms",
+      "titleEs": "Patia — -patia ← páthos; cuatro salas",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: Patia / -patia ← gr. páthos · -pátheia — afecto × doença × escola × alelopatia; ≠ pato ≠ pátria.",
+      "whyEn": "Words: Patia / -patia ← Gk. páthos · -pátheia — feeling × disease × school × allelopathy; ≠ duck ≠ fatherland.",
+      "whyEs": "Palabras: Patia / -patia ← gr. páthos · -pátheia — afecto × enfermedad × escuela × alelopatía; ≠ pato ≠ patria.",
+      "suggestedSlug": "inspecao-palavra-patia",
+      "doneHref": "/posts/post-inspecao-palavra-patia.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-patia.html",
+        "https://pt.wiktionary.org/wiki/-patia",
+        "https://en.wiktionary.org/wiki/-pathy",
+        "https://en.wiktionary.org/wiki/%CF%80%CE%AC%CE%B8%CE%BF%CF%82#Ancient_Greek",
+        "https://en.wiktionary.org/wiki/-%CF%80%CE%AC%CE%B8%CE%B5%CE%B9%CE%B1#Ancient_Greek",
+        "https://pt.wikipedia.org/wiki/Pat%C3%ADa",
+        "/posts/post-inspecao-palavra-pato.html",
+        "/posts/post-inspecao-palavra-emocao.html",
+        "/posts/post-inspecao-palavra-etimo.html",
+        "/posts/post-inspecao-palavra-etimologia.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 317 — sufixo culto; quatro salas; pato/pátria cortados; sem protocolo clínico."
     },
     {
       "id": "palavra-no",
@@ -10440,6 +10578,39 @@
       "notes": "Cap. 280 — cruzamento EN×PT; sem tutorial de cookie / burlar aviso."
     },
     {
+      "id": "expressao-missao-comprida",
+      "title": "missão comprida — cola do comprimento; canónica cumprida; primos de complēre",
+      "titleEn": "missão comprida — length-glue; canonical cumprida; cousins of complēre",
+      "titleEs": "missão comprida — cola de la longitud; canónica cumprida; primos de complēre",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: missão comprida — trocadilho sobre missão cumprida (complēre); comprido é primo (extensão); missão é envio.",
+      "whyEn": "Sayings: missão comprida — pun on missão cumprida (complēre); comprido is a cousin (length); missão is sending.",
+      "whyEs": "Dichos: missão comprida — juego sobre missão cumprida (complēre); comprido es primo (extensión); misión es envío.",
+      "suggestedSlug": "inspecao-expressao-missao-comprida",
+      "doneHref": "/posts/post-inspecao-expressao-missao-comprida.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "/posts/post-inspecao-expressao-missao-comprida.html",
+        "https://pt.wiktionary.org/wiki/cumprir",
+        "https://pt.wiktionary.org/wiki/comprido",
+        "https://pt.wiktionary.org/wiki/cumprido",
+        "https://pt.wiktionary.org/wiki/miss%C3%A3o",
+        "https://en.wiktionary.org/wiki/compleo#Latin",
+        "https://en.wiktionary.org/wiki/missio#Latin",
+        "https://pt.wiktionary.org/wiki/comprimento",
+        "https://pt.wiktionary.org/wiki/cumprimento",
+        "https://pt.wikipedia.org/wiki/Etimologia_popular",
+        "/posts/post-inspecao-palavra-trocadilho.html",
+        "/posts/post-inspecao-palavra-etimologia.html",
+        "/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html",
+        "/posts/post-inspecao-expressao-miss-click.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 282 — cola o/u × étimo comum complēre; sem briefing militar."
+    },
+    {
       "id": "palavra-acao",
       "title": "Ação — o fazer nomeado, o gesto e as outras salas",
       "titleEn": "Ação — named doing, the gesture, and the other rooms",
@@ -10760,6 +10931,30 @@
         "/posts/post-inspecao-expressao-adeus.html"
       ],
       "notes": "Cap. 281 — molde Valeu !!! (pretérito + !!!); eixo saída/convite."
+    },
+    {
+      "id": "arte-wake-up",
+      "title": "Wake Up — RATM e o ofício de acordar",
+      "titleEn": "Wake Up — RATM and the craft of waking",
+      "titleEs": "Wake Up — RATM y el oficio de despertar",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canção 1992: acordar contra a máquina × Killing in the Name, Matrix e rádio.",
+      "whyEn": "1992 song: wake against the machine × Killing in the Name, Matrix and radio.",
+      "whyEs": "Canción 1992: despertar contra la máquina × Killing in the Name, Matrix y radio.",
+      "suggestedSlug": "inspecao-arte-wake-up",
+      "doneHref": "/posts/post-inspecao-arte-wake-up.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-wake-up.html",
+        "https://www.youtube.com/watch?v=4lzqUe1Qfec",
+        "https://en.wikipedia.org/wiki/Rage_Against_the_Machine_(album)",
+        "/posts/post-inspecao-arte-killing-in-the-name.html",
+        "/posts/post-inspecao-filme-the-matrix.html",
+        "/radio/"
+      ],
+      "notes": "Obra primeiro (1992); rádio = primeira faixa pública permitida; eco poético ≠ letra RATM."
     }
   ]
 }
