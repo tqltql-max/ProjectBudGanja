@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:22:26.260Z",
+  "updatedAt": "2026-08-24T11:27:41.485Z",
   "poems": [
     {
       "id": "dois-sao-mais-fortes",
@@ -930,6 +930,30 @@
         "bosta",
         "giria",
         "trocadilho"
+      ]
+    },
+    {
+      "id": "dont-show-again",
+      "slug": "dont-show-again",
+      "title": "Don't Show Again",
+      "titleEn": "Don't Show Again",
+      "titleEs": "Don't Show Again",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — o aviso que pede para não voltar; show=olhar × mostrar=avisar; Valeu !!!",
+      "teaserEn": "BudGanja echo — the warning that asks not to return; show=look × mostrar=warn; Valeu !!!",
+      "teaserEs": "Eco BudGanja — el aviso que pide no volver; show=mirar × mostrar=avisar; ¡Valeu !!!",
+      "body": "Don't Show Again.\nNão mostrar de novo.\nDuas bocas, um ofício:\no aviso pede para não voltar.\n\nDon't: do + not.\nShow: pôr à vista — olhar.\nAgain: uma vez mais.\n\nNão: latim non.\nMostrar: monstrare — apontar, avisar.\nDe novo: desde o novo — outra vez.\n\nO inglês esconde o olhar.\nO português esconde o aviso.\nA caixa é a mesma.\n\nDont sem apóstrofo\nnão é um nome.\nÉ Don't sem a marca.\n\nDe novo não é o novo.\nÉ o outra vez.\n\nPular é desta vez.\nDon't Show Again é daqui para a frente.\nO loop pede condição de paragem.\nO inspector, às vezes, olha de novo.\n\nValeu !!!\nesconder o nag,\nsem esconder o risco.",
+      "bodyEn": "Don't Show Again.\nNão mostrar de novo.\nTwo mouths, one office:\nthe warning asks not to return.\n\nDon't: do + not.\nShow: put in view — look.\nAgain: once more.\n\nNão: Latin non.\nMostrar: monstrare — point, warn.\nDe novo: from the new — another time.\n\nEnglish hides the look.\nPortuguese hides the warning.\nThe box is the same.\n\nDont without the apostrophe\nis not a name.\nIt is Don't without the mark.\n\nDe novo is not the new one.\nIt is the once-more.\n\nSkip is this time.\nDon't Show Again is from here on.\nThe loop asks for a stop condition.\nThe inspector, sometimes, looks again.\n\nValeu !!!\nhide the nag,\nwithout hiding the risk.",
+      "bodyEs": "Don't Show Again.\nNão mostrar de novo.\nDos bocas, un oficio:\nel aviso pide no volver.\n\nDon't: do + not.\nShow: poner a la vista — mirar.\nAgain: una vez más.\n\nNão: latín non.\nMostrar: monstrare — señalar, avisar.\nDe novo: desde lo nuevo — otra vez.\n\nEl inglés esconde la mirada.\nEl portugués esconde el aviso.\nLa caja es la misma.\n\nDont sin apóstrofo\nno es un nombre.\nEs Don't sin la marca.\n\nDe novo no es lo nuevo.\nEs el otra vez.\n\nSaltar es esta vez.\nDon't Show Again es de aquí en adelante.\nEl loop pide condición de parada.\nEl inspector, a veces, mira de nuevo.\n\n¡Valeu !!!\nesconder el nag,\nsin esconder el riesgo.",
+      "inspectionHref": "/posts/post-inspecao-expressao-dont-show-again.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "dont-show-again",
+        "mostrar",
+        "gesto"
       ]
     },
     {

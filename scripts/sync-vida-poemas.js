@@ -199,6 +199,11 @@ const {
   poemEn: poemDangerEn,
   poemEs: poemDangerEs
 } = require('../lib/danger-inspecao-post.js');
+const {
+  poemPt: poemDontShowAgainPt,
+  poemEn: poemDontShowAgainEn,
+  poemEs: poemDontShowAgainEs
+} = require('../lib/dont-show-again-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -1006,6 +1011,27 @@ const doc = {
       bodyEs: poemBostaEs(),
       inspectionHref: '/posts/post-inspecao-palavra-bosta.html',
       tags: ['poesia', 'vida', 'bosta', 'giria', 'trocadilho']
+    },
+    {
+      id: 'dont-show-again',
+      slug: 'dont-show-again',
+      title: "Don't Show Again",
+      titleEn: "Don't Show Again",
+      titleEs: "Don't Show Again",
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja — o aviso que pede para não voltar; show=olhar × mostrar=avisar; Valeu !!!',
+      teaserEn:
+        'BudGanja echo — the warning that asks not to return; show=look × mostrar=warn; Valeu !!!',
+      teaserEs:
+        'Eco BudGanja — el aviso que pide no volver; show=mirar × mostrar=avisar; ¡Valeu !!!',
+      body: poemDontShowAgainPt(),
+      bodyEn: poemDontShowAgainEn(),
+      bodyEs: poemDontShowAgainEs(),
+      inspectionHref: '/posts/post-inspecao-expressao-dont-show-again.html',
+      tags: ['poesia', 'vida', 'dont-show-again', 'mostrar', 'gesto']
     },
     {
       id: 'a-semente-foi-plantada',
