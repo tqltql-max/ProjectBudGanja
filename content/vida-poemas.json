@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-08-24T10:55:49.198Z",
+  "updatedAt": "2026-08-24T10:56:15.144Z",
   "poems": [
+    {
+      "id": "miss",
+      "slug": "miss",
+      "title": "Miss",
+      "titleEn": "Miss",
+      "titleEs": "Miss",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — falhar o alvo; cruzado com faltando e ERROR; três árvores, um campo; Valeu !!!",
+      "teaserEn": "BudGanja echo — fail to hit; crossed with faltando and ERROR; three trees, one field; Valeu !!!",
+      "teaserEs": "Eco BudGanja — fallar el blanco; cruzado con faltando y ERROR; tres árboles, un campo; ¡Valeu !!!",
+      "body": "Miss.\nNão é o título.\nNão é o grito da máquina.\nÉ falhar o alvo.\n\nFaltando é o que não está.\nERROR é o nome do desvio.\n\nTrês árvores.\nUm campo.\n\nI miss you\nnão é 500.\nÉ a falta no peito.\n\nCache miss\nnão é queda.\nÉ a caixa que não tinha o alvo.\n\nEm português\nerrar o alvo\njá junta o miss e o erro.\nO lab não funde as raízes.\n\nValeu !!!\nnomear o desvio\nsem colar as salas.",
+      "bodyEn": "Miss.\nNot the title.\nNot the machine scream.\nIt is failing to hit.\n\nFaltando is what is not there.\nERROR is the name of the wander.\n\nThree trees.\nOne field.\n\nI miss you\nis not a 500.\nIt is the lack in the chest.\n\nA cache miss\nis not a crash.\nIt is the box that did not hold the target.\n\nIn Portuguese\nerrar o alvo\nalready joins miss and error.\nThe lab does not fuse the roots.\n\nValeu !!!\nname the wander\nwithout gluing the rooms.",
+      "bodyEs": "Miss.\nNo es el título.\nNo es el grito de la máquina.\nEs fallar el blanco.\n\nFaltando es lo que no está.\nERROR es el nombre del desvío.\n\nTres árboles.\nUn campo.\n\nI miss you\nno es un 500.\nEs la falta en el pecho.\n\nCache miss\nno es una caída.\nEs la caja que no tenía el blanco.\n\nEn portugués\nerrar o alvo\nya junta el miss y el error.\nEl lab no funde las raíces.\n\n¡Valeu !!!\nnombrar el desvío\nsin pegar las salas.",
+      "inspectionHref": "/posts/post-inspecao-palavra-miss.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "miss",
+        "faltando",
+        "error"
+      ]
+    },
     {
       "id": "fantasia",
       "slug": "fantasia",
