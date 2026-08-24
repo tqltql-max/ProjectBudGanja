@@ -5460,8 +5460,11 @@ html:not([data-theme="dark"]) .admin-studio-filters .select-dark {
 
 .post-card-cover {
     width: 100%;
-    height: clamp(120px, 22vw, 160px);
-    object-fit: cover;
+    height: auto;
+    aspect-ratio: 1200 / 630;
+    object-fit: contain;
+    object-position: center center;
+    background: #0b1218;
     border-radius: 0;
     margin: 0 0 12px;
     display: block;
@@ -5873,7 +5876,9 @@ blockquote {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center center;
+    background: #0b1218;
 }
 
 .article-share-btn {
@@ -13839,7 +13844,7 @@ a.palavras-duplo-word:focus-visible {
 
 .inspecoes-hub .card.post-card > a:not(.post-card-edit-btn) {
     display: grid;
-    grid-template-columns: minmax(140px, 220px) minmax(0, 1fr);
+    grid-template-columns: minmax(200px, 280px) minmax(0, 1fr);
     grid-template-rows: auto auto 1fr auto;
     column-gap: 0;
     row-gap: 4px;
@@ -13854,12 +13859,15 @@ a.palavras-duplo-word:focus-visible {
     grid-row: 1 / -1;
     width: 100%;
     height: 100%;
-    min-height: 132px;
+    min-height: 0;
     max-height: none;
     margin: 0;
     border-radius: 0;
-    object-fit: cover;
-    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center center;
+    aspect-ratio: 1200 / 630;
+    align-self: center;
+    background: #0b1218;
 }
 
 .inspecoes-hub .card.post-card > a:not(.post-card-edit-btn) > .post-card-badges {
@@ -13919,8 +13927,10 @@ a.palavras-duplo-word:focus-visible {
         grid-column: 1;
         grid-row: auto;
         min-height: 0;
-        aspect-ratio: 16 / 9;
-        max-height: 180px;
+        max-height: none;
+        height: auto;
+        aspect-ratio: 1200 / 630;
+        object-fit: contain;
     }
 
     .inspecoes-hub .card.post-card > a:not(.post-card-edit-btn) > .post-card-badges,
@@ -13959,7 +13969,7 @@ a.palavras-duplo-word:focus-visible {
 .inspecoes-drop-group > .inspecoes-drop-summary {
     position: relative;
     display: grid;
-    grid-template-columns: minmax(140px, 220px) minmax(0, 1fr);
+    grid-template-columns: minmax(200px, 280px) minmax(0, 1fr);
     grid-template-rows: auto auto 1fr auto;
     column-gap: 0;
     row-gap: 4px;
@@ -13983,12 +13993,15 @@ a.palavras-duplo-word:focus-visible {
     grid-row: 1 / -1;
     width: 100%;
     height: 100%;
-    min-height: 132px;
+    min-height: 0;
     max-height: none;
     margin: 0;
     border-radius: 0;
-    object-fit: cover;
-    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center center;
+    aspect-ratio: 1200 / 630;
+    align-self: center;
+    background: #0b1218;
 }
 
 .inspecoes-drop-group > .inspecoes-drop-summary > .post-card-badges {
@@ -14099,8 +14112,10 @@ a.palavras-duplo-word:focus-visible {
         grid-column: 1;
         grid-row: auto;
         min-height: 0;
-        aspect-ratio: 16 / 9;
-        max-height: 180px;
+        max-height: none;
+        height: auto;
+        aspect-ratio: 1200 / 630;
+        object-fit: contain;
     }
 
     .inspecoes-drop-group > .inspecoes-drop-summary > .post-card-badges,
