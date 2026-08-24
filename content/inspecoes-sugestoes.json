@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:36:21.521Z",
+  "updatedAt": "2026-08-24T11:39:17.720Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -265,6 +265,27 @@
       "doneHref": "/posts/post-inspecao-canal-pharmacon.html"
     },
     {
+      "id": "artigo-gobbi-humor-2019",
+      "title": "Artigo — Cannabis na adolescência, depressão e suicídio (Gobbi 2019)",
+      "titleEn": "Article — Adolescent cannabis, depression and suicide (Gobbi 2019)",
+      "titleEs": "Artículo — Cannabis en la adolescencia, depresión y suicidio (Gobbi 2019)",
+      "tipo": "artigo",
+      "priority": 1,
+      "status": "feita",
+      "why": "Par JAMA Psychiatry do Albaugh: meta-análise de humor/suicídio na jovem adultícia (open access PMC).",
+      "whyEn": "JAMA Psychiatry companion to Albaugh: mood/suicide meta-analysis in young adulthood (PMC open access).",
+      "whyEs": "Par JAMA Psychiatry de Albaugh: metanálisis de humor/suicidio en la adultez joven (acceso PMC).",
+      "suggestedSlug": "inspecao-artigo-gobbi-cannabis-adolescencia-humor",
+      "doneHref": "/posts/post-inspecao-artigo-gobbi-cannabis-adolescencia-humor.html",
+      "seriesHint": "artigos-cientificos",
+      "sources": [
+        "https://doi.org/10.1001/jamapsychiatry.2018.4500",
+        "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2723657",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6450286/"
+      ],
+      "notes": "CVV 188 na ficha. Associação ≠ causalidade. Ansiedade NS neste pool."
+    },
+    {
       "id": "artigo-seguinte",
       "title": "Próximo artigo peer-reviewed (fila científica)",
       "titleEn": "Next peer-reviewed article (science queue)",
@@ -278,7 +299,7 @@
       "suggestedSlug": "inspecao-artigo-",
       "seriesHint": "artigos-cientificos",
       "sources": [],
-      "notes": "Preencher DOI e título quando escolheres o paper."
+      "notes": "Gobbi 2019 fechado. Próximo: escolher DOI open access (ex. psicose Di Forti Lancet Psychiatry 2019, ou ensaio CBD)."
     },
     {
       "id": "derivado-cana-de-acucar",
@@ -10567,6 +10588,51 @@
         "/posts/post-inspecao-amyr-klink.html"
       ],
       "notes": "Cap. 312 — pá náutica; REM fica na ficha-irmã."
+    },
+    {
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "suggestedSlug": "inspecao-palavra-ao90",
+      "doneHref": "/posts/post-inspecao-palavra-ao90.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Acordo_Ortogr%C3%A1fico_de_1990",
+        "https://en.wikipedia.org/wiki/Portuguese_Language_Orthographic_Agreement_of_1990",
+        "/posts/post-inspecao-palavra-aoc.html",
+        "/posts/post-inspecao-palavra-objetos.html",
+        "/posts/post-inspecao-palavra-acao.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 296 — 90 = 1990; grafia ≠ étimo; corte AOC.",
+      "title": "AO90 — o acordo, o ano e o que não é étimo",
+      "titleEn": "AO90 — the agreement, the year, and what is not an etymon",
+      "titleEs": "AO90 — el acuerdo, el año y lo que no es étimo",
+      "why": "Palavras: AO90 = Acordo Ortográfico de 1990; 90 é o ano; grafia ≠ étimo; ≠ AOC; Valeu !!!",
+      "whyEn": "Words: AO90 = 1990 Orthographic Agreement; 90 is the year; spelling ≠ etymon; ≠ AOC; Valeu !!!",
+      "whyEs": "Palabras: AO90 = Acuerdo Ortográfico de 1990; 90 es el año; grafía ≠ étimo; ≠ AOC; ¡Valeu !!!"
+    },
+    {
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "suggestedSlug": "inspecao-palavra-aoc",
+      "doneHref": "/posts/post-inspecao-palavra-aoc.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wikipedia.org/wiki/AOC_International",
+        "/posts/post-inspecao-palavra-ao90.html",
+        "/posts/post-inspecao-palavra-objetos.html",
+        "/posts/post-inspecao-palavra-eletrizante.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 297 — Admiral Overseas Corporation; monitor ≠ AO90.",
+      "title": "AOC — a sigla do monitor, não do acordo",
+      "titleEn": "AOC — the monitor acronym, not the agreement",
+      "titleEs": "AOC — la sigla del monitor, no del acuerdo",
+      "why": "Palavras: AOC = Admiral Overseas Corporation; monitor / objeto electrónico; ≠ AO90; Valeu !!!",
+      "whyEn": "Words: AOC = Admiral Overseas Corporation; monitor / electronic object; ≠ AO90; Valeu !!!",
+      "whyEs": "Palabras: AOC = Admiral Overseas Corporation; monitor / objeto electrónico; ≠ AO90; ¡Valeu !!!"
     }
   ]
 }

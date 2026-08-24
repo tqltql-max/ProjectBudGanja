@@ -1273,6 +1273,25 @@
     "seriesLabel": "Laranja · derivado"
   },
   {
+    "title": "Inspeção: Artigo — Cannabis na adolescência, depressão e suicídio (JAMA Psychiatry)",
+    "titleEn": "Inspection: Article — Adolescent cannabis, depression and suicide (JAMA Psychiatry)",
+    "titleEs": "Inspección: Artículo — Cannabis en la adolescencia, depresión y suicidio (JAMA Psychiatry)",
+    "excerpt": "Auditoria da meta-análise Gobbi et al. (2019): 11 coortes, 23 317 jovens; OR 1,37 para depressão, 1,50 para ideação, 3,46 para tentativas; ansiedade não significativa. Associação ≠ destino; CVV 188.",
+    "excerptEn": "Audit of Gobbi et al. (2019) meta-analysis: 11 cohorts, 23,317 youths; OR 1.37 for depression, 1.50 for ideation, 3.46 for attempts; anxiety not significant. Association ≠ destiny; seek help.",
+    "excerptEs": "Auditoría del metanálisis Gobbi et al. (2019): 11 cohortes, 23 317 jóvenes; OR 1,37 depresión, 1,50 ideación, 3,46 intentos; ansiedad no significativa. Asociación ≠ destino; pedir ayuda.",
+    "hasBodyEn": false,
+    "hasBodyEs": false,
+    "slug": "inspecao-artigo-gobbi-cannabis-adolescencia-humor",
+    "url": "/posts/post-inspecao-artigo-gobbi-cannabis-adolescencia-humor.html",
+    "date": "2026-08-24T12:00:00.000Z",
+    "filename": "posts/post-inspecao-artigo-gobbi-cannabis-adolescencia-humor.html",
+    "coverImage": "/imagens/inspecoes/jama-gobbi-cover.jpg",
+    "category": "inspecao",
+    "series": "artigos-cientificos",
+    "seriesOrder": 7,
+    "seriesLabel": "JAMA Psychiatry · 2019"
+  },
+  {
     "title": "Inspeção: Leite e laticínios — da ordenha à prateleira industrial",
     "titleEn": "Inspection: Milk and dairy — from milking to the industrial shelf",
     "titleEs": "Inspección: Leche y lácteos — del ordeño al estante industrial",
