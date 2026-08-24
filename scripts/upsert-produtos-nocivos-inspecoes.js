@@ -13,6 +13,7 @@ const {
   buildChocolatePost,
   buildAnaliseDanosVideosPost
 } = require('../lib/produtos-nocivos-inspecoes-posts.js');
+const { buildLeiteLaticiniosPost } = require('../lib/leite-laticinios-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const POSTS_FILE = path.join(ROOT, 'posts.json');
@@ -65,6 +66,7 @@ function upsertSug(items, entry) {
 
 async function main() {
   const built = [
+    buildLeiteLaticiniosPost(),
     buildCaseinaPost(),
     buildGlutenPost(),
     buildChocolatePost(),
@@ -82,6 +84,21 @@ async function main() {
   if (fs.existsSync(SUG_FILE)) {
     const sug = JSON.parse(fs.readFileSync(SUG_FILE, 'utf8'));
     const items = Array.isArray(sug.items) ? sug.items : [];
+    upsertSug(items, {
+      id: 'derivado-leite',
+      title: 'Leite e laticínios — da ordenha à prateleira industrial',
+      titleEn: 'Milk and dairy — from milking to the industrial shelf',
+      titleEs: 'Leche y lácteos — del ordeño al estante industrial',
+      tipo: 'derivado',
+      priority: 1,
+      status: 'feita',
+      why: 'Hub Produtos nocivos: leite/laticínios — UHT, pó, queijo, iogurte adoçado e bebidas lácteas; proteína na caseína.',
+      whyEn: 'Harmful-products hub: milk/dairy — UHT, powder, cheese, sweetened yogurt and dairy drinks; protein on the casein sheet.',
+      whyEs: 'Hub Productos nocivos: leche/lácteos — UHT, polvo, queso, yogur azucarado y bebidas lácteas; proteína en caseína.',
+      suggestedSlug: 'inspecao-derivado-leite',
+      doneHref: '/posts/post-inspecao-derivado-leite.html',
+      seriesHint: 'animais-derivados-risco'
+    });
     upsertSug(items, {
       id: 'derivado-caseina',
       title: 'Caseína — leite bovino e proteína nociva',
@@ -154,6 +171,12 @@ async function main() {
     const vaca = animals.find((a) => a && a.slug === 'vaca');
     if (vaca) {
       vaca.relatedInspections = [
+        {
+          href: '/posts/post-inspecao-derivado-leite.html',
+          label: 'Inspeção: Leite e laticínios — da ordenha à prateleira industrial',
+          labelEn: 'Inspection: Milk and dairy — from milking to the industrial shelf',
+          labelEs: 'Inspección: Leche y lácteos — del ordeño al estante industrial'
+        },
         {
           href: '/posts/post-inspecao-derivado-caseina.html',
           label: 'Inspeção: Caseína — leite bovino e proteína nociva ao organismo',

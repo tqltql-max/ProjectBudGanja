@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:30:00.010Z",
+  "updatedAt": "2026-08-24T11:36:21.535Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1154,6 +1154,16 @@
       "curiositiesEn": "The book Bom dia, Inverno (Companhia das Letras) fixes the boat as a craft character, not only a vehicle.",
       "historyEs": "Barco viene del griego báris / latín barca — embarcación pequeña. En el universo Tamara Klink el vocablo se vuelve casa, taller y cuerpo de la invernada.",
       "curiositiesEs": "El libro Bom dia, Inverno (Companhia das Letras) fija el barco como personaje de oficio, no solo medio de transporte."
+    },
+    {
+      "id": "remo",
+      "word": "remo",
+      "simple": "Lat. rēmus — pá náutica / remar. Gatilho rEMO. ≠ REM (sono). Elos barco, Tamara, Amyr. Valeu !!!",
+      "simpleEn": "Lat. rēmus — oar / to row. Trigger rEMO. ≠ REM (sleep). Links boat, Tamara, Amyr. Valeu !!!",
+      "simpleEs": "Lat. rēmus — pala / remar. Gatillo rEMO. ≠ REM (sueño). Vínculos barco, Tamara, Amyr. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-remo.html"
     },
     {
       "id": "barriga-de-trigo",
@@ -8726,6 +8736,42 @@
       "curiositiesEn": "Zaroio is zarolho in the ear (palatal lh becomes i, as olho → oio). Working hypothesis: zarolho via zanolho, a blend of zanaga + olho — the second member is olho; the prefix stays open. Naming is not mocking. Plant olho is a bud; olho gordo is folklore.",
       "historyEs": "Olho viene del latín oculus (siglo XIII en gallego-portugués). Familia: olhar, óculo, ocular; español ojo, francés œil, italiano occhio. El inglés eye es germánico — paralelo, no padre. El griego ophthalmós alimenta la oftalmología, otro árbol. El verbo eu olho es homógrafo: misma familia, otra clase.",
       "curiositiesEs": "Zaroio es zarolho en el oído (lh palatal vira i, como olho → oio). Hipótesis de trabajo: zarolho vía zanolho, blend de zanaga + olho. Nombrar no es insultar. Olho de la planta es brote; olho gordo es folclore."
+    },
+    {
+      "id": "ramela",
+      "word": "ramela",
+      "simple": "Secreção no canto do olho (também remela; origem obscura). Ramelento = ramela + -ento. ≠ remo lento (rēmus × lentus). Valeu !!!",
+      "simpleEn": "Rheum in the eye corner (also remela; obscure origin). Ramelento = ramela + -ento. ≠ remo lento (rēmus × lentus). Valeu !!!",
+      "simpleEs": "Lagaña en el rincón del ojo (también remela; origen oscuro). Ramelento = ramela + -ento. ≠ remo lento (rēmus × lentus). ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-ramela.html",
+      "history": "Ramela e remela são variantes vivas da mesma secreção ocular. O Aulete marca origem obscura; o Wiktionary inglês diz unknown, com cognato galego remela. Vias folclóricas (diminutivo de remo / lat. mucilla) colam no ouvido e falham no étimo. Ramelento é ramela + sufixo -ento (provido de).",
+      "curiosities": "A orelha cola ramelento em remo lento: quatro sílabas quase iguais. Remo é lat. rēmus (a pá); lento é lat. lentus. Quem acorda com ramela rema devagar sem ser remo. No AL, ramela/remela também nomeia a polpa tenra do coco verde.",
+      "historyEn": "Ramela and remela are living variants of the same eye rheum. Aulete marks the origin obscure; English Wiktionary says unknown, with Galician cognate remela. Folk paths (diminutive of remo / Lat. mucilla) glue in the ear and fail as etymon. Ramelento is ramela + suffix -ento (provided with).",
+      "curiositiesEn": "The ear glues ramelento to remo lento: almost the same four syllables. Remo is Lat. rēmus (the oar); lento is Lat. lentus. Whoever wakes with ramela rows slowly without being an oar. In Alagoas the word also names tender green-coconut pulp.",
+      "historyEs": "Ramela y remela son variantes vivas de la misma lagaña. Aulete marca origen oscuro; el Wiktionary inglés dice unknown, con cognado gallego remela. Vías folclóricas (diminutivo de remo / lat. mucilla) pegan en el oído y fallan como étimo. Ramelento es ramela + sufijo -ento.",
+      "curiositiesEs": "El oído pega ramelento a remo lento: casi las mismas cuatro sílabas. Remo es lat. rēmus (la pala); lento es lat. lentus. Quien despierta con ramela rema despacio sin ser remo. En Alagoas la palabra también nombra la pulpa tierna del coco verde."
+    },
+    {
+      "id": "remela",
+      "word": "remela",
+      "simple": "Lema irmão de ramela — secreção do canto do olho; origem obscura. ≠ diminutivo de remo. Ver ramela. Valeu !!!",
+      "simpleEn": "Lemma twin of ramela — eye rheum; obscure origin. ≠ diminutive of remo. See ramela. Valeu !!!",
+      "simpleEs": "Lema hermano de ramela — lagaña; origen oscuro. ≠ diminutivo de remo. Ver ramela. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-ramela.html"
+    },
+    {
+      "id": "ramelento",
+      "word": "ramelento",
+      "simple": "Ramela + -ento — quem tem ramela; figurado vagaroso. A orelha cola remo lento; o étimo corta. Ver ramela. Valeu !!!",
+      "simpleEn": "Ramela + -ento — having rheum; figuratively sluggish. The ear glues remo lento; the etymon cuts. See ramela. Valeu !!!",
+      "simpleEs": "Ramela + -ento — quien tiene ramela; figurado perezoso al despertar. El oído pega remo lento; el étimo corta. Ver ramela. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-ramela.html"
     },
     {
       "id": "oculos",

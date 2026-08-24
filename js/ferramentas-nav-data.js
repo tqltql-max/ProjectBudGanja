@@ -4287,6 +4287,30 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: 22 / vinte e dois — lat. vīgintī + duo; 2×11; inverter o 2 cola no S → s2 (coração de chat ≠ órgão); ≠ Catch-22; Valeu !!!"
             },
             {
+              "label": "Inspeção: Incineradora — o objecto que reduz a cinza",
+              "tileLabel": "Inspeção: Incineradora — o obje…",
+              "href": "/posts/post-inspecao-palavra-incineradora.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-incineradora",
+              "description": "Objecto: «incineradora» (pedido Inceneradora → canónica; in- + cinis + -dora) — forno que faz cinza; ≠ cinzeiro ≠ fogueira ≠ away; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Ramela — ramelento ≠ remo lento",
+              "tileLabel": "Inspeção: Ramela — ramelento ≠ …",
+              "href": "/posts/post-inspecao-palavra-ramela.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-ramela",
+              "description": "Palavras: ramela / remela (canto do olho; origem obscura) × ramelento (ramela + -ento) ≠ remo lento (rēmus × lentus); Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Remo — a pá, o remar, e o lapso rEMO",
+              "tileLabel": "Inspeção: Remo — a pá, o remar,…",
+              "href": "/posts/post-inspecao-palavra-remo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-remo",
+              "description": "Palavras: remo (lat. rēmus) ≠ REM (sono / sigla lab); gatilho rEMO; elos barco, Tamara, Amyr; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",

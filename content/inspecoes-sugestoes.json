@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:29:59.988Z",
+  "updatedAt": "2026-08-24T11:36:21.521Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7554,6 +7554,56 @@
       "notes": "Cap. 305 — olho × zaroio; zarolho no papel; prefixo via zanolho (média); ≠ xingo."
     },
     {
+      "id": "palavra-ramela",
+      "title": "Ramela — ramelento ≠ remo lento",
+      "titleEn": "Ramela — ramelento ≠ remo lento (slow oar)",
+      "titleEs": "Ramela — ramelento ≠ remo lento",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: ramela / remela (canto do olho; origem obscura) × ramelento (ramela + -ento) ≠ remo lento (rēmus × lentus).",
+      "whyEn": "Words: ramela / remela (eye rheum; obscure origin) × ramelento (ramela + -ento) ≠ remo lento (rēmus × lentus).",
+      "whyEs": "Palabras: ramela / remela (lagaña; origen oscuro) × ramelento (ramela + -ento) ≠ remo lento (rēmus × lentus).",
+      "suggestedSlug": "inspecao-palavra-ramela",
+      "doneHref": "/posts/post-inspecao-palavra-ramela.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-ramela.html",
+        "https://pt.wiktionary.org/wiki/ramela",
+        "https://pt.wiktionary.org/wiki/remela",
+        "https://en.wiktionary.org/wiki/remela",
+        "https://www.dicio.com.br/ramelento/",
+        "https://pt.wiktionary.org/wiki/remo",
+        "https://en.wiktionary.org/wiki/lentus#Latin",
+        "https://www.aulete.com.br/remela",
+        "/posts/post-inspecao-palavra-remo.html",
+        "/posts/post-inspecao-palavra-olho.html",
+        "/posts/post-inspecao-palavra-sinais-rem.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 311 — ramela × ramelento; cola remo lento cortada; étimo de remela aberto."
+    },
+    {
+      "id": "palavra-ramelento",
+      "title": "Ramelento — ramela + -ento; cola remo lento",
+      "titleEn": "Ramelento — ramela + -ento; glue remo lento",
+      "titleEs": "Ramelento — ramela + -ento; cola remo lento",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: ramelento = ramela + -ento; a orelha cola remo lento; ver ficha ramela.",
+      "whyEn": "Words: ramelento = ramela + -ento; the ear glues remo lento; see ramela.",
+      "whyEs": "Palabras: ramelento = ramela + -ento; el oído pega remo lento; ver ramela.",
+      "suggestedSlug": "inspecao-palavra-ramela",
+      "doneHref": "/posts/post-inspecao-palavra-ramela.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-ramela.html",
+        "https://www.dicio.com.br/ramelento/"
+      ],
+      "notes": "Cap. 311 — mesma ficha que ramela."
+    },
+    {
       "id": "palavra-zaroio",
       "title": "Zaroio — voz de zarolho; cruzado na ficha olho",
       "titleEn": "Zaroio — field voice of zarolho; crossed in the olho sheet",
@@ -10495,6 +10545,28 @@
         "/posts/post-inspecao-filme-the-matrix.html"
       ],
       "notes": "Cap. 113 — antologia 2003; sequelas live-action = fila à parte."
+    },
+    {
+      "id": "palavra-remo",
+      "title": "Remo — a pá, o remar, e o lapso rEMO",
+      "titleEn": "Remo — the oar, the rowing, and the slip rEMO",
+      "titleEs": "Remo — la pala, el remar, y el lapsus rEMO",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: remo (lat. rēmus) ≠ REM (sono / sigla lab); gatilho rEMO; elos barco, Tamara, Amyr; Valeu !!!",
+      "whyEn": "Words: remo (Lat. rēmus) ≠ REM (sleep / lab acronym); trigger rEMO; links boat, Tamara, Amyr; Valeu !!!",
+      "whyEs": "Palabras: remo (lat. rēmus) ≠ REM (sueño / sigla lab); gatillo rEMO; vínculos barco, Tamara, Amyr; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-remo",
+      "doneHref": "/posts/post-inspecao-palavra-remo.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/remo",
+        "/posts/post-inspecao-palavra-sinais-rem.html",
+        "/posts/post-inspecao-palavra-barco.html",
+        "/posts/post-inspecao-amyr-klink.html"
+      ],
+      "notes": "Cap. 312 — pá náutica; REM fica na ficha-irmã."
     }
   ]
 }
