@@ -2659,10 +2659,23 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   function loadRadioPlayerScript() {
     if (document.querySelector('script[src*="radio-player.js"]')) return;
-    const radio = document.createElement('script');
-    radio.id = 'radio-player-js';
-    radio.src = '/js/radio-player.js?v=' + ASSET_V;
-    document.body.appendChild(radio);
+    function injectPlayer() {
+      if (document.querySelector('script[src*="radio-player.js"]')) return;
+      const radio = document.createElement('script');
+      radio.id = 'radio-player-js';
+      radio.src = '/js/radio-player.js?v=' + ASSET_V;
+      document.body.appendChild(radio);
+    }
+    if (!document.querySelector('script[src*="radio-youtube.js"]')) {
+      const yt = document.createElement('script');
+      yt.id = 'radio-youtube-js';
+      yt.src = '/js/radio-youtube.js?v=' + ASSET_V;
+      yt.onload = injectPlayer;
+      yt.onerror = injectPlayer;
+      document.body.appendChild(yt);
+      return;
+    }
+    injectPlayer();
   }
 
   function loadRadioOrderThenPlayer() {

@@ -288,13 +288,42 @@
     }
 
     function togglePlayback() {
+      var track = tracks[index];
+      if (isYtTrack(track) || (yt() && yt().isActive())) {
+        if (freshSession) {
+          freshSession = false;
+          var wi = findWelcomeIndex(tracks);
+          if (index !== wi) {
+            loadTrack(wi, true, 0);
+            return;
+          }
+        }
+        if (!(yt() && yt().isActive())) {
+          loadTrack(index, true, 0);
+          return;
+        }
+        if (yt().isPaused()) {
+          yt().play();
+          updatePlayUi(true);
+          writeSession(STORAGE_PLAYING, '1');
+          wantPlay = true;
+        } else {
+          yt().pause();
+          updatePlayUi(false);
+          writeSession(STORAGE_PLAYING, '0');
+          wantPlay = false;
+          persistProgress();
+        }
+        updateMediaSession(track);
+        return;
+      }
       if (audio.paused) {
         // Primeira ligação nesta sessão: abertura Rusted Root com autoplay.
         if (freshSession) {
           freshSession = false;
-          var wi = findWelcomeIndex(tracks);
-          if (index !== wi || !audio.src) {
-            loadTrack(wi, true, 0);
+          var wi2 = findWelcomeIndex(tracks);
+          if (index !== wi2 || !audio.src) {
+            loadTrack(wi2, true, 0);
             return;
           }
         }
@@ -340,14 +369,14 @@
       if (btnClose) btnClose.setAttribute('aria-label', tr('radio.close', 'Fechar rádio nesta sessão'));
       applyCollapsed();
       updateMuteUi();
-      updatePlayUi(!audio.paused);
+      updatePlayUi(!audio.paused || (yt() && yt().isActive() && !yt().isPaused()));
     }
 
     function applyCollapsed() {
       root.classList.toggle('is-collapsed', collapsed);
       if (inHeader) {
         btnFab.removeAttribute('aria-expanded');
-        var playing = wantPlay || !audio.paused;
+        var playing = wantPlay || !audio.paused || (yt() && yt().isActive() && !yt().isPaused());
         btnFab.setAttribute(
           'aria-label',
           playing
@@ -361,7 +390,7 @@
       btnFab.setAttribute(
         'aria-label',
         collapsed
-          ? (wantPlay || !audio.paused
+          ? (wantPlay || !audio.paused || (yt() && yt().isActive() && !yt().isPaused())
             ? tr('radio.expandPlaying', 'Expandir rádio (a tocar)')
             : tr('radio.open', 'Abrir rádio'))
           : tr('radio.opened', 'Rádio aberta')
@@ -402,6 +431,11 @@
       if (unloading) return;
       writeSession(STORAGE_INDEX, index);
       try {
+        if (yt() && yt().isActive()) {
+          var ytTime = yt().getCurrentTime();
+          if (Number.isFinite(ytTime) && ytTime > 0) writeSession(STORAGE_TIME, ytTime);
+          return;
+        }
         if (Number.isFinite(audio.currentTime) && audio.currentTime > 0) {
           writeSession(STORAGE_TIME, audio.currentTime);
         }
@@ -435,13 +469,43 @@
       } catch (e) { /* ignore */ }
     }
 
+    function yt() {
+      return window.BudGanjaRadioYoutube || null;
+    }
+
+    function isYtTrack(track) {
+      return !!(yt() && track && yt().isYoutube(track.url));
+    }
+
     function loadTrack(i, autoplay, seekTo) {
       index = ((i % tracks.length) + tracks.length) % tracks.length;
       var track = tracks[index];
-      audio.src = track.url;
       titleEl.textContent = track.title || 'Faixa';
       artistEl.textContent = track.artist || '';
       writeSession(STORAGE_INDEX, index);
+      if (isYtTrack(track)) {
+        audio.pause();
+        try {
+          audio.removeAttribute('src');
+          audio.load();
+        } catch (e) { /* ignore */ }
+        yt().load(yt().idFromUrl(track.url), autoplay, function () {
+          loadTrack(index + 1, true, 0);
+        });
+        if (yt().setMuted) yt().setMuted(!!audio.muted);
+        if (seekTo != null && seekTo > 0) {
+          setTimeout(function () {
+            if (yt() && yt().isActive()) yt().seekTo(seekTo);
+          }, 800);
+        }
+        updatePlayUi(!!autoplay);
+        writeSession(STORAGE_PLAYING, autoplay ? '1' : '0');
+        wantPlay = !!autoplay;
+        updateMediaSession(track);
+        return;
+      }
+      if (yt() && yt().isActive()) yt().stop();
+      audio.src = track.url;
       if (seekTo != null && seekTo > 0) {
         var onMeta = function () {
           audio.removeEventListener('loadedmetadata', onMeta);
@@ -526,6 +590,7 @@
     btnMute.addEventListener('click', function () {
       audio.muted = !audio.muted;
       writeMuted(audio.muted);
+      if (yt() && yt().setMuted) yt().setMuted(audio.muted);
       updateMuteUi();
     });
 
@@ -558,12 +623,14 @@
     }
 
     audio.addEventListener('ended', function () {
+      if (yt() && yt().isActive()) return;
       writeSession(STORAGE_TIME, '0');
       loadTrack(index + 1, true, 0);
     });
 
     audio.addEventListener('play', function () {
       if (unloading) return;
+      if (yt() && yt().isActive()) return;
       updatePlayUi(true);
       writeSession(STORAGE_PLAYING, '1');
       wantPlay = true;
@@ -577,6 +644,7 @@
         persistProgress();
         return;
       }
+      if (yt() && yt().isActive()) return;
       if (!audio.ended) {
         updatePlayUi(false);
         writeSession(STORAGE_PLAYING, '0');
@@ -587,12 +655,17 @@
     });
 
     audio.addEventListener('timeupdate', function () {
+      if (yt() && yt().isActive()) return;
       if (!audio.paused) persistProgress();
     });
 
+    setInterval(function () {
+      if (yt() && yt().isActive() && !yt().isPaused()) persistProgress();
+    }, 2000);
+
     function markUnloading() {
       unloading = true;
-      if (!audio.paused) {
+      if (!audio.paused || (yt() && yt().isActive() && !yt().isPaused())) {
         writeSession(STORAGE_PLAYING, '1');
         wantPlay = true;
       }
@@ -609,6 +682,14 @@
           return tracks[index] || null;
         },
         play: function () {
+          if (yt() && yt().isActive()) {
+            yt().play();
+            updatePlayUi(true);
+            writeSession(STORAGE_PLAYING, '1');
+            wantPlay = true;
+            updateMediaSession(tracks[index]);
+            return;
+          }
           audio.play().then(function () {
             updatePlayUi(true);
             writeSession(STORAGE_PLAYING, '1');
@@ -619,6 +700,7 @@
           });
         },
         pause: function () {
+          if (yt() && yt().isActive()) yt().pause();
           audio.pause();
           updatePlayUi(false);
           writeSession(STORAGE_PLAYING, '0');
@@ -638,9 +720,11 @@
     } else if ('mediaSession' in navigator) {
       try {
         navigator.mediaSession.setActionHandler('play', function () {
-          audio.play();
+          if (yt() && yt().isActive()) yt().play();
+          else audio.play();
         });
         navigator.mediaSession.setActionHandler('pause', function () {
+          if (yt() && yt().isActive()) yt().pause();
           audio.pause();
         });
         navigator.mediaSession.setActionHandler('previoustrack', function () {
@@ -659,6 +743,21 @@
     loadTrack(index, false, savedTime);
 
     function startPlayback() {
+      var track = tracks[index];
+      if (isYtTrack(track)) {
+        if (yt() && yt().isActive()) yt().play();
+        else loadTrack(index, true, savedTime);
+        updatePlayUi(true);
+        writeSession(STORAGE_PLAYING, '1');
+        wantPlay = true;
+        updateMediaSession(track);
+        if (collapsed && freshSession) {
+          collapsed = false;
+          setCollapsedPref(false);
+          applyCollapsed();
+        }
+        return Promise.resolve();
+      }
       return audio.play().then(function () {
         updatePlayUi(true);
         writeSession(STORAGE_PLAYING, '1');

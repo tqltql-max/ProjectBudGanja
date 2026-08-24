@@ -273,11 +273,18 @@ document.addEventListener('DOMContentLoaded', () => {
     window.BudGanjaRadioMedia.updatePosition(audio);
   }
 
+  function yt() {
+    return window.BudGanjaRadioYoutube || null;
+  }
+
+  function isYtTrack(track) {
+    return !!(yt() && track && yt().isYoutube(track.url));
+  }
+
   function loadTrack(i, autoplay) {
     if (!tracks.length) return;
     index = ((i % tracks.length) + tracks.length) % tracks.length;
     const track = tracks[index];
-    audio.src = track.url;
     if (nowTitle) nowTitle.textContent = track.title || 'Faixa';
     if (nowArtist) nowArtist.textContent = track.artist || '';
     setProgressPct(0);
@@ -285,6 +292,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (timeDuration) timeDuration.textContent = '0:00';
     highlightActive();
     refreshMediaSession();
+    if (isYtTrack(track)) {
+      audio.pause();
+      try {
+        audio.removeAttribute('src');
+        audio.load();
+      } catch (e) { /* ignore */ }
+      yt().load(yt().idFromUrl(track.url), autoplay, function () {
+        loadTrack(index + 1, true);
+      });
+      updatePlayUi(!!autoplay);
+      return;
+    }
+    if (yt() && yt().isActive()) yt().stop();
+    audio.src = track.url;
     if (autoplay) {
       audio.play().then(() => {
         updatePlayUi(true);
@@ -512,6 +533,12 @@ document.addEventListener('DOMContentLoaded', () => {
       getTrack: () => tracks[index] || null,
       play: () => {
         if (!tracks.length) return;
+        if (yt() && yt().isActive()) {
+          yt().play();
+          updatePlayUi(true);
+          refreshMediaSession();
+          return;
+        }
         if (!audio.src) loadTrack(index, true);
         else {
           audio.play().then(() => {
@@ -521,6 +548,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       },
       pause: () => {
+        if (yt() && yt().isActive()) yt().pause();
         audio.pause();
         updatePlayUi(false);
         refreshMediaSession();
@@ -533,6 +561,17 @@ document.addEventListener('DOMContentLoaded', () => {
   if (btnPlay) {
     btnPlay.addEventListener('click', () => {
       if (!tracks.length) return;
+      if (yt() && yt().isActive()) {
+        if (yt().isPaused()) {
+          yt().play();
+          updatePlayUi(true);
+        } else {
+          yt().pause();
+          updatePlayUi(false);
+        }
+        refreshMediaSession();
+        return;
+      }
       if (audio.paused) {
         if (!audio.src) loadTrack(index, true);
         else {
@@ -584,18 +623,37 @@ document.addEventListener('DOMContentLoaded', () => {
     if (ev.key === 'Escape') closeShareSheet();
   });
 
-  audio.addEventListener('ended', () => loadTrack(index + 1, true));
+  audio.addEventListener('ended', () => {
+    if (yt() && yt().isActive()) return;
+    loadTrack(index + 1, true);
+  });
   audio.addEventListener('play', () => {
+    if (yt() && yt().isActive()) return;
     updatePlayUi(true);
     refreshMediaSession();
   });
   audio.addEventListener('pause', () => {
+    if (yt() && yt().isActive()) return;
     if (!audio.ended) {
       updatePlayUi(false);
       refreshMediaSession();
     }
   });
+  function syncYtProgress() {
+    if (!(yt() && yt().isActive()) || seeking) return;
+    const d = yt().getDuration();
+    const t = yt().getCurrentTime();
+    if (timeCurrent) timeCurrent.textContent = formatTime(t);
+    if (timeDuration) timeDuration.textContent = formatTime(d);
+    if (seekEl && Number.isFinite(d) && d > 0) {
+      seekEl.value = String(Math.round((t / d) * 1000));
+      setProgressPct((t / d) * 100);
+    }
+    updatePlayUi(!yt().isPaused());
+  }
+  setInterval(syncYtProgress, 400);
   audio.addEventListener('timeupdate', () => {
+    if (yt() && yt().isActive()) return;
     if (seeking) return;
     const d = audio.duration;
     const t = audio.currentTime;
@@ -610,6 +668,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   function applySeekFromControl() {
     if (!seekEl) return false;
+    if (yt() && yt().isActive()) {
+      const d = yt().getDuration();
+      if (!Number.isFinite(d) || d <= 0) return false;
+      const ratio = Math.max(0, Math.min(1, Number(seekEl.value) / 1000));
+      yt().seekTo(ratio * d);
+      return true;
+    }
     const d = audio.duration;
     if (!Number.isFinite(d) || d <= 0) return false;
     const ratio = Math.max(0, Math.min(1, Number(seekEl.value) / 1000));
@@ -635,16 +700,18 @@ document.addEventListener('DOMContentLoaded', () => {
     seekEl.addEventListener('pointerdown', () => { seeking = true; });
     seekEl.addEventListener('input', () => {
       seeking = true;
-      const d = audio.duration;
+      const d = (yt() && yt().isActive()) ? yt().getDuration() : audio.duration;
       const ratio = Math.max(0, Math.min(1, Number(seekEl.value) / 1000));
       setProgressPct(ratio * 100);
       if (Number.isFinite(d) && d > 0 && timeCurrent) {
         timeCurrent.textContent = formatTime(ratio * d);
       }
-      // Seek em tempo real quando a duração já está disponível.
-      if (Number.isFinite(d) && d > 0) {
-        try { audio.currentTime = ratio * d; } catch (e) { /* ignore */ }
+      if (!Number.isFinite(d) || d <= 0) return;
+      if (yt() && yt().isActive()) {
+        yt().seekTo(ratio * d);
+        return;
       }
+      try { audio.currentTime = ratio * d; } catch (e) { /* ignore */ }
     });
     seekEl.addEventListener('change', endSeek);
     seekEl.addEventListener('pointerup', endSeek);
