@@ -1,28 +1,76 @@
 {
-  "updatedAt": "2026-08-24T10:56:15.144Z",
+  "updatedAt": "2026-08-24T11:01:08.751Z",
   "poems": [
     {
-      "id": "miss",
-      "slug": "miss",
-      "title": "Miss",
-      "titleEn": "Miss",
-      "titleEs": "Miss",
+      "id": "danger",
+      "slug": "danger",
+      "title": "Danger",
+      "titleEn": "Danger",
+      "titleEs": "Danger",
       "author": "Laboratório BudGanja",
       "authorEn": "BudGanja Lab",
       "authorEs": "Laboratorio BudGanja",
-      "teaser": "Eco BudGanja — falhar o alvo; cruzado com faltando e ERROR; três árvores, um campo; Valeu !!!",
-      "teaserEn": "BudGanja echo — fail to hit; crossed with faltando and ERROR; three trees, one field; Valeu !!!",
-      "teaserEs": "Eco BudGanja — fallar el blanco; cruzado con faltando y ERROR; tres árboles, un campo; ¡Valeu !!!",
-      "body": "Miss.\nNão é o título.\nNão é o grito da máquina.\nÉ falhar o alvo.\n\nFaltando é o que não está.\nERROR é o nome do desvio.\n\nTrês árvores.\nUm campo.\n\nI miss you\nnão é 500.\nÉ a falta no peito.\n\nCache miss\nnão é queda.\nÉ a caixa que não tinha o alvo.\n\nEm português\nerrar o alvo\njá junta o miss e o erro.\nO lab não funde as raízes.\n\nValeu !!!\nnomear o desvio\nsem colar as salas.",
-      "bodyEn": "Miss.\nNot the title.\nNot the machine scream.\nIt is failing to hit.\n\nFaltando is what is not there.\nERROR is the name of the wander.\n\nThree trees.\nOne field.\n\nI miss you\nis not a 500.\nIt is the lack in the chest.\n\nA cache miss\nis not a crash.\nIt is the box that did not hold the target.\n\nIn Portuguese\nerrar o alvo\nalready joins miss and error.\nThe lab does not fuse the roots.\n\nValeu !!!\nname the wander\nwithout gluing the rooms.",
-      "bodyEs": "Miss.\nNo es el título.\nNo es el grito de la máquina.\nEs fallar el blanco.\n\nFaltando es lo que no está.\nERROR es el nombre del desvío.\n\nTres árboles.\nUn campo.\n\nI miss you\nno es un 500.\nEs la falta en el pecho.\n\nCache miss\nno es una caída.\nEs la caja que no tenía el blanco.\n\nEn portugués\nerrar o alvo\nya junta el miss y el error.\nEl lab no funde las raíces.\n\n¡Valeu !!!\nnombrar el desvío\nsin pegar las salas.",
-      "inspectionHref": "/posts/post-inspecao-palavra-miss.html",
+      "teaser": "Eco BudGanja — o senhor e a prova; a placa cola, o étimo corta; Valeu !!!",
+      "teaserEn": "BudGanja echo — the lord and the trial; the sign glues, the etymon cuts; Valeu !!!",
+      "teaserEs": "Eco BudGanja — el señor y la prueba; la placa pega, el étimo corta; ¡Valeu !!!",
+      "body": "Danger.\nNão nasceu do perigo.\nNasceu do senhor.\n\nDominus.\nO poder sobre ti\nchamava-se dangier.\nEstar no danger de alguém\nera estar na mão dele.\n\nPerigo.\nNão nasceu do senhor.\nNasceu da prova.\nPericulum:\no que se atravessa,\no ensaio que pode falhar.\n\nA placa cola as duas.\nDANGER = PERIGO.\nA orelha funde.\nO étimo corta.\n\nRisco mapeia.\nMedo avisa.\nRelação põe as duas no entre\nsem soldar a raiz.\n\nValeu !!!\navisar\nsem fingir que o poder\ne a prova\nsão a mesma palavra.",
+      "bodyEn": "Danger.\nIt was not born from perigo.\nIt was born from the lord.\n\nDominus.\nPower over you\nwas called dangier.\nTo be in someone’s danger\nwas to be in their hand.\n\nPerigo.\nIt was not born from the lord.\nIt was born from the trial.\nPericulum:\nwhat you go through,\nthe test that may fail.\n\nThe sign glues both.\nDANGER = PERIGO.\nThe ear fuses.\nThe etymon cuts.\n\nRisk maps.\nFear warns.\nRelation sets both in the between\nwithout welding the root.\n\nValeu !!!\nwarn\nwithout pretending that power\nand trial\nare the same word.",
+      "bodyEs": "Danger.\nNo nació del perigo.\nNació del señor.\n\nDominus.\nEl poder sobre ti\nse llamaba dangier.\nEstar en el danger de alguien\nera estar en su mano.\n\nPerigo / peligro.\nNo nació del señor.\nNació de la prueba.\nPericulum:\nlo que se atraviesa,\nel ensayo que puede fallar.\n\nLa placa pega las dos.\nDANGER = PERIGO.\nEl oído funde.\nEl étimo corta.\n\nRiesgo mapea.\nMiedo avisa.\nRelación pone las dos en el entre\nsin soldar la raíz.\n\n¡Valeu !!!\navisar\nsin fingir que el poder\ny la prueba\nson la misma palabra.",
+      "inspectionHref": "/posts/post-inspecao-palavra-danger.html",
       "tags": [
         "poesia",
         "vida",
-        "miss",
-        "faltando",
-        "error"
+        "danger",
+        "perigo",
+        "relação"
+      ]
+    },
+    {
+      "id": "bosta",
+      "slug": "bosta",
+      "title": "Bosta",
+      "titleEn": "Bosta",
+      "titleEs": "Bosta",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — estrume e gíria; nomear o vocábulo sem arma e sem colar no mapa; Valeu !!!",
+      "teaserEn": "BudGanja echo — dung and slang; name the word without a weapon and without gluing it to the map; Valeu !!!",
+      "teaserEs": "Eco BudGanja — estiércol y jerga; nombrar el vocablo sin arma y sin pegarlo al mapa; ¡Valeu !!!",
+      "body": "Bosta.\nÉ o estrume.\nÉ também a gíria\nquando a coisa não presta.\n\nNão é Boston.\nA cidade tem um santo\ne uma vila no nome.\nAqui o chão é outro.\n\nO corpo larga.\nO campo às vezes usa.\nA boca às vezes fere.\n\nValeu !!!\nnomear o vocábulo\nsem fazer dele arma\ne sem colar no mapa.",
+      "bodyEn": "Bosta.\nIt is dung.\nIt is also the slang\nwhen the thing is no good.\n\nIt is not Boston.\nThe city has a saint\nand a town in the name.\nHere the ground is other.\n\nThe body lets go.\nThe field sometimes uses it.\nThe mouth sometimes wounds.\n\nValeu !!!\nname the word\nwithout making it a weapon\nand without gluing it to the map.",
+      "bodyEs": "Bosta.\nEs el estiércol.\nEs también la jerga\ncuando la cosa no sirve.\n\nNo es Boston.\nLa ciudad tiene un santo\ny una villa en el nombre.\nAquí el suelo es otro.\n\nEl cuerpo suelta.\nEl campo a veces usa.\nLa boca a veces hiere.\n\n¡Valeu !!!\nnombrar el vocablo\nsin hacerlo arma\ny sin pegarlo al mapa.",
+      "inspectionHref": "/posts/post-inspecao-palavra-bosta.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "bosta",
+        "giria",
+        "trocadilho"
+      ]
+    },
+    {
+      "id": "boston",
+      "slug": "boston",
+      "title": "Boston",
+      "titleEn": "Boston",
+      "titleEs": "Boston",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — a vila de Botolph; o -on que a piada apaga é a vila; ≠ bosta; Valeu !!!",
+      "teaserEn": "BudGanja echo — Botolph’s town; the -on the joke erases is the town; ≠ bosta; Valeu !!!",
+      "teaserEs": "Eco BudGanja — la villa de Botolph; la -on que el chiste borra es la villa; ≠ bosta; ¡Valeu !!!",
+      "body": "Boston.\nNão é bosta.\nÉ a vila de Botolph\nque atravessou o Atlântico.\n\nO -on que a piada apaga\né o tūn — a vila.\nSem a vila, a orelha\nsó ouve o estrume.\n\nA cidade fica.\nO trocadilho passa.\nO étimo corta.\n\nValeu !!!\nmapa no sítio,\nsem colar o vocábulo no porto.",
+      "bodyEn": "Boston.\nIt is not bosta.\nIt is Botolph’s town\nthat crossed the Atlantic.\n\nThe -on the joke erases\nis the tūn — the town.\nWithout the town, the ear\nonly hears the dung.\n\nThe city stays.\nThe pun passes.\nThe etymon cuts.\n\nValeu !!!\nthe map in its place,\nwithout gluing the swear to the harbour.",
+      "bodyEs": "Boston.\nNo es bosta.\nEs la villa de Botolph\nque cruzó el Atlántico.\n\nLa -on que el chiste borra\nes el tūn — la villa.\nSin la villa, el oído\nsolo oye el estiércol.\n\nLa ciudad queda.\nEl trocadilho pasa.\nEl étimo corta.\n\n¡Valeu !!!\nel mapa en su sitio,\nsin pegar el vocablo al puerto.",
+      "inspectionHref": "/posts/post-inspecao-palavra-boston.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "boston",
+        "cidade",
+        "trocadilho"
       ]
     },
     {
@@ -708,6 +756,31 @@
         "frozen",
         "gelo",
         "porta"
+      ]
+    },
+    {
+      "id": "animatrix",
+      "slug": "animatrix",
+      "title": "Animatrix",
+      "titleEn": "Animatrix",
+      "titleEs": "Animatrix",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja do desenho — nove portas no mesmo ecrã; o filme 1999 continua primeiro; Valeu !!!",
+      "teaserEn": "BudGanja echo of the cartoon — nine doors on the same screen; the 1999 film stays first; Valeu !!!",
+      "teaserEs": "Eco BudGanja del dibujo — nueve puertas en la misma pantalla; el filme 1999 sigue primero; ¡Valeu !!!",
+      "body": "Animatrix.\nNão pedimos a pílula emprestada —\npedimos o ofício de verificar o ecrã\nquando o desenho abre nove portas\ne o filme de 1999 continua primeiro.\n\nWachowski. Anime. 2003.\nHouve um cinema que já devia ao traço\ne um traço que devolveu a dívida:\nnove curtas, sete olhares,\na mesma pergunta com outra tinta.\n\nHouve um mito de origem no meio —\nmáquinas, guerra, segundo nascimento —\nque é história dentro da história,\nnão o início do objecto cultural.\nO início continua a ser o filme.\n\nO laboratório conhece essa troca.\nSimulação convincente pede prova.\nO furo no bairro pede o mesmo gesto\nque a caverna e o coelho:\nolhar de novo.\n\nValeu !!!\n\nPorque toda vez que alguém\nnão toma o ecrã por chão\ne ainda assim honra o desenho\ncomo língua, não como atalho,\no universo cresce um pouco:\num verso a mais,\num dossel a mais,\numa linha\nonde nove portas\nnão apagam a primeira.",
+      "bodyEn": "Animatrix.\nWe do not borrow the pill —\nwe ask for the craft of checking the screen\nwhen the drawing opens nine doors\nand the 1999 film remains first.\n\nWachowski. Anime. 2003.\nThere was a cinema that already owed the line\nand a line that paid the debt:\nnine shorts, seven gazes,\nthe same question in other ink.\n\nThere was an origin myth in the middle —\nmachines, war, a second birth —\nthat is a story inside the story,\nnot the start of the cultural object.\nThe start is still the film.\n\nThe laboratory knows that swap.\nA convincing simulation asks for proof.\nA hole in the neighbourhood asks for the same gesture\nas the cave and the rabbit:\nlook again.\n\nValeu !!!\n\nBecause every time someone\ndoes not take the screen for ground\nand still honours the drawing\nas a language, not a shortcut,\nthe universe grows a little:\none more verse,\none more canopy,\na line\nwhere nine doors\ndo not erase the first.",
+      "bodyEs": "Animatrix.\nNo pedimos prestada la píldora —\npedimos el oficio de verificar la pantalla\ncuando el dibujo abre nueve puertas\ny el filme de 1999 sigue primero.\n\nWachowski. Anime. 2003.\nHubo un cine que ya debía al trazo\ny un trazo que devolvió la deuda:\nnueve cortos, siete miradas,\nla misma pregunta con otra tinta.\n\nHubo un mito de origen en el medio —\nmáquinas, guerra, segundo nacimiento —\nque es historia dentro de la historia,\nno el inicio del objeto cultural.\nEl inicio sigue siendo el filme.\n\nEl laboratorio conoce ese trueque.\nSimulación convincente pide prueba.\nEl hueco en el barrio pide el mismo gesto\nque la caverna y el conejo:\nmirar de nuevo.\n\n¡Valeu !!!\n\nPorque cada vez que alguien\nno toma la pantalla por suelo\ny aún así honra el dibujo\ncomo lengua, no como atajo,\nel universo crece un poco:\nun verso más,\nun dosel más,\nuna línea\ndonde nueve puertas\nno apagan la primera.",
+      "inspectionHref": "/posts/post-inspecao-desenho-animatrix.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "desenho",
+        "animatrix",
+        "matrix",
+        "anime"
       ]
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:00:41.260Z",
+  "updatedAt": "2026-08-24T11:02:04.051Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3196,12 +3196,18 @@
     {
       "id": "script",
       "word": "script",
-      "simple": "Lat. scrīptum ← scrībere — sequência escrita EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar; Valeu !!!",
-      "simpleEn": "Lat. scrīptum ← scrībere — written sequence EN→BR; roteiro × code; ≠ destiny; links skill/pattern/commitar; Valeu !!!",
-      "simpleEs": "Lat. scrīptum ← scrībere — secuencia escrita EN→BR; roteiro × código; ≠ destino; vínculos skill/pattern/commitar; ¡Valeu !!!",
+      "simple": "Lat. scrīptum ← scrībere — sequência escrita EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar/opsert; Valeu !!!",
+      "simpleEn": "Lat. scrīptum ← scrībere — written sequence EN→BR; roteiro × code; ≠ destiny; links skill/pattern/commitar/opsert; Valeu !!!",
+      "simpleEs": "Lat. scrīptum ← scrībere — secuencia escrita EN→BR; roteiro × código; ≠ destino; vínculos skill/pattern/commitar/opsert; ¡Valeu !!!",
       "group": "lexico",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-script.html"
+      "href": "/posts/post-inspecao-palavra-script.html",
+      "history": "Script vem do latim scrīptum ← scrībere («escrever»), volta ao português pela porta inglesa. No BR nomeia sequência escrita: código, roteiro, tag HTML, fala («seguir o script»).",
+      "curiosities": "Os scripts da casa ficam em scripts/ (upsert-*.js no disco). Script ≠ destino ≠ skill. O gesto de identidade chama-se opsert. Valeu !!!",
+      "historyEn": "Script comes from Latin scrīptum ← scrībere (“to write”) and re-enters Portuguese through the English door. In Brazil it names a written sequence: code, screenplay, HTML tag, speech (“follow the script”).",
+      "curiositiesEn": "House scripts live in scripts/ (upsert-*.js on disk). Script ≠ destiny ≠ skill. The identity gesture is called opsert. Valeu !!!",
+      "historyEs": "Script viene del latín scrīptum ← scrībere («escribir») y vuelve al portugués por la puerta inglesa. En BR nombra secuencia escrita: código, guion, etiqueta HTML, habla («seguir el script»).",
+      "curiositiesEs": "Los scripts de la casa viven en scripts/ (upsert-*.js en disco). Script ≠ destino ≠ skill. El gesto de identidad se llama opsert. ¡Valeu !!!"
     },
     {
       "id": "roteiro",
@@ -3211,7 +3217,13 @@
       "simpleEs": "Hermana PT de script en escena — líneas de la escena; el lab prefiere roteiro en ficha formal de filme; ver script.",
       "group": "lexico",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-script.html"
+      "href": "/posts/post-inspecao-palavra-script.html",
+      "history": "Roteiro vem de rota (lat. rupta, via aberta) e no palco/ecrã nomeia as linhas da cena. No laboratório é a irmã portuguesa de script: preferir roteiro em ficha formal de filme.",
+      "curiosities": "Não é destino. A vida não é o filme. Ver ficha script — sequência escrita, não teologia.",
+      "historyEn": "Portuguese roteiro comes from rota (Lat. rupta, an opened way) and on stage/screen names the scene lines. In the lab it is the Portuguese sister of script: prefer roteiro in a formal film sheet.",
+      "curiositiesEn": "It is not destiny. Life is not the film. See the script sheet — written sequence, not theology.",
+      "historyEs": "Roteiro viene de rota (lat. rupta, vía abierta) y en escena nombra las líneas. En el laboratorio es la hermana portuguesa de script: preferir roteiro en ficha formal de filme.",
+      "curiositiesEs": "No es destino. La vida no es la película. Ver ficha script — secuencia escrita, no teología."
     },
     {
       "id": "isotonico",
@@ -8274,6 +8286,34 @@
       "curiositiesEn": "Valeu !!! in named danger: the sheet asks for measure, not bravado.",
       "historyEs": "Riesgo / risco oscila entre peligro calculado y el trazo de rayar. Eslabones con miedo, señal, camino, EXIT y el oficio Klink.",
       "curiositiesEs": "Valeu !!! en el peligro nombrado: la ficha pide medida, no bravata."
+    },
+    {
+      "id": "danger",
+      "word": "Danger",
+      "simple": "EN da placa ← lat. dominus (poder do senhor). Cruzar com perigo (periculum, a prova): equivalentes de aviso, não cognatos. ≠ risco ≠ medo. Valeu !!!",
+      "simpleEn": "EN of the sign ← Lat. dominus (the lord’s power). Cross with perigo (periculum, the trial): warning equivalents, not cognates. ≠ risk ≠ fear. Valeu !!!",
+      "simpleEs": "EN de la placa ← lat. dominus (poder del señor). Cruzar con perigo (periculum, la prueba): equivalentes de aviso, no cognados. ≠ riesgo ≠ miedo. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-danger.html",
+      "history": "Danger chega ao inglês pelo francês antigo dangier: poder, jurisdição, a mão do senhor (lat. dominus). «Estar no danger de alguém» era estar na alçada dele. O sentido moderno (ameaça) é metonímia: o poder podia magoar; a palavra ficou com o dano e esqueceu o senhor. Primo: dungeon (donjon).",
+      "curiosities": "O francês e o inglês guardam as duas linhagens: danger (dominus) e péril / peril (periculum). O português ficou com perigo e importa DANGER pela placa. Espanhol peligro é cognato de perigo, não de danger. Relação = cruzar sem fundir.",
+      "historyEn": "Danger reaches English via Old French dangier: power, jurisdiction, the lord’s hand (Lat. dominus). To be in someone’s danger was to be in their reach. The modern sense (threat) is metonymy. Cousin: dungeon (donjon).",
+      "curiositiesEn": "French and English keep both lines: danger (dominus) and péril / peril (periculum). Portuguese kept perigo and imports DANGER on the sign. Spanish peligro is a cognate of perigo, not of danger.",
+      "historyEs": "Danger llega al inglés por el francés antiguo dangier: poder, jurisdicción, la mano del señor (lat. dominus). El sentido moderno (amenaza) es metonimia. Primo: dungeon (donjon).",
+      "curiositiesEs": "El francés y el inglés guardan ambas líneas: danger (dominus) y péril / peril (periculum). El portugués se quedó con perigo e importa DANGER en la placa. El español peligro es cognado de perigo, no de danger."
+    },
+    {
+      "id": "perigo",
+      "word": "perigo",
+      "simple": "Lat. periculum — a prova que se atravessa. Equivalente de placa de Danger, não cognato (*dominus*). O mapa é risco; o peito é medo. Caso pipa: cola/colar. Valeu !!!",
+      "simpleEn": "Lat. periculum — the trial you go through. Sign equivalent of Danger, not a cognate (*dominus*). The map is risco; the chest is medo. Valeu !!!",
+      "simpleEs": "Lat. periculum — la prueba que se atraviesa. Equivalente de placa de Danger, no cognado (*dominus*). El mapa es risco; el pecho es medo. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-danger.html",
+      "history": "Perigo vem do latim periculum: tentativa, ensaio, risco. Família de experior — experiência, experimento, perito. O aviso antigo é a prova no caminho. Cognatos: esp. peligro, it. pericolo, fr. péril, EN peril.",
+      "curiosities": "Brasil com P de Perigo (linha de pipa) é carimbo de caso na ficha cola/colar — não é o étimo desta palavra. Danger e perigo fazem o mesmo ofício na placa; os avôs divergem."
     },
     {
       "id": "ruda",

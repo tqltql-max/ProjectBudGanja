@@ -3055,6 +3055,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «Grok» (Heinlein *to grok*) — compreensão íntima × tom de ofício; relação de forma de se expressar com Deus (abençoe / filho / meudeusdoceu / jesusamando); Valeu !!!"
             },
             {
+              "label": "Inspeção: Animatrix — o desenho das nove portas e o ofício de verificar o ecrã",
+              "tileLabel": "Inspeção: Animatrix — o desenho…",
+              "href": "/posts/post-inspecao-desenho-animatrix.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-desenho-animatrix",
+              "description": "Artes · desenho 2003: Animatrix (The Animatrix) — nove curtas de anime no mundo de Matrix; o filme 1999 continua génese; sem colar o guião."
+            },
+            {
               "label": "Inspeção: Ligar × Desligar — verbos do circuito",
               "tileLabel": "Inspeção: Ligar × Desligar — ve…",
               "href": "/posts/post-inspecao-palavra-ligar-desligar.html",
@@ -4205,6 +4213,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-bosta",
               "description": "Palavras: bosta ← via esp. bosta (estrume; étimo último incerto); gíria BR; cola de orelha com Boston recusada; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Caralhudo — -udo no tabu; cruzar com cara de alho e cara de olho; olaho no meio; Valeu !!!",
+              "tileLabel": "Inspeção: Caralhudo — -udo no t…",
+              "href": "/posts/post-inspecao-palavra-caralhudo.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-caralhudo",
+              "description": "Palavras: caralhudo (caralho + -udo) × cara de alho (trocadilho, não étimo) × cara de olho (visual); olaho = cola; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
