@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:49:28.560Z",
+  "updatedAt": "2026-08-24T12:06:36.455Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5134,6 +5134,58 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 111 — tipografia fia → mãe; oral NE fia ≠ mãe."
+    },
+    {
+      "id": "palavra-maria",
+      "title": "Maria — Miryam; cruzada com for (para)",
+      "titleEn": "Maria — Miryam; crossed with for (para)",
+      "titleEs": "Maria — Miryam; cruzada con for (para)",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: Maria (hebr. Miryam → lat. Maria) × for (EN for ≈ PT para); ≠ conjuntivo ≠ formaria ≠ marijuana.",
+      "whyEn": "Words: Maria (Heb. Miryam → Lat. Maria) × for (EN for ≈ PT para); ≠ subjunctive ≠ formaria ≠ marijuana.",
+      "whyEs": "Palabras: Maria (hebr. Miryam → lat. Maria) × for (EN for ≈ PT para); ≠ conjuntivo ≠ formaria ≠ marijuana.",
+      "suggestedSlug": "inspecao-palavra-maria",
+      "doneHref": "/posts/post-inspecao-palavra-maria.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-maria.html",
+        "https://pt.wiktionary.org/wiki/Maria",
+        "https://en.wiktionary.org/wiki/Miriam#English",
+        "https://en.wiktionary.org/wiki/for",
+        "https://pt.wiktionary.org/wiki/for",
+        "https://pt.wiktionary.org/wiki/para",
+        "https://pt.wiktionary.org/wiki/formaria",
+        "/posts/post-inspecao-personagem-dona-maria.html",
+        "/posts/post-inspecao-palavra-mae.html",
+        "/posts/post-inspecao-palavra-marijuana.html",
+        "/posts/post-inspecao-palavra-conjugacao.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 315 — aterra em Maria; for aponta (para); homógrafo e formaria cortados."
+    },
+    {
+      "id": "palavra-for",
+      "title": "for — para; cruzado na ficha Maria",
+      "titleEn": "for — para; crossed in the Maria sheet",
+      "titleEs": "for — para; cruzado en la ficha Maria",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "EN for ≈ PT para (destino); homógrafo PT = conjuntivo de ser/ir; cola formaria cortada; ver Maria.",
+      "whyEn": "EN for ≈ PT para (destination); PT homograph = ser/ir subjunctive; formaria glue cut; see Maria.",
+      "whyEs": "EN for ≈ PT para (destino); homógrafo PT = subjuntivo de ser/ir; cola formaria cortada; ver Maria.",
+      "suggestedSlug": "inspecao-palavra-maria",
+      "doneHref": "/posts/post-inspecao-palavra-maria.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-maria.html",
+        "https://en.wiktionary.org/wiki/for",
+        "https://pt.wiktionary.org/wiki/for",
+        "https://pt.wiktionary.org/wiki/para"
+      ],
+      "notes": "Cap. 315 — mesma ficha que Maria."
     },
     {
       "id": "expressao-deus-abencoe",
@@ -10663,6 +10715,51 @@
       "why": "Palavras: AOC = Admiral Overseas Corporation; monitor / objeto electrónico; ≠ AO90; Valeu !!!",
       "whyEn": "Words: AOC = Admiral Overseas Corporation; monitor / electronic object; ≠ AO90; Valeu !!!",
       "whyEs": "Palabras: AOC = Admiral Overseas Corporation; monitor / objeto electrónico; ≠ AO90; ¡Valeu !!!"
+    },
+    {
+      "id": "palavra-palavra",
+      "title": "Palavra — o vocábulo que nomeia a série",
+      "titleEn": "Palavra — the vocable that names the series",
+      "titleEs": "Palavra — el vocablo que nombra la serie",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: palavra ← parabola / parabolḗ — o vocábulo, não o hub; ≠ verbo ≠ Verbo; Valeu !!!",
+      "whyEn": "Words: palavra ← parabola / parabolḗ — the vocable, not the hub; ≠ verb ≠ the Word; Valeu !!!",
+      "whyEs": "Palabras: palavra ← parabola / parabolḗ — el vocablo, no el hub; ≠ verbo ≠ Verbo; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-palavra",
+      "doneHref": "/posts/post-inspecao-palavra-palavra.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/palavra",
+        "/biblioteca/inspecoes/#inspecoes-palavras",
+        "/posts/post-inspecao-palavra-etimologia.html",
+        "/posts/post-inspecao-palavra-lingua-portuguesa.html"
+      ],
+      "notes": "Cap. 314 — pedido <<PALAVRA>>; meta-ficha da série."
+    },
+    {
+      "id": "expressao-partiu",
+      "title": "Partiu!!! — derivação de Valeu !!!",
+      "titleEn": "Partiu!!! — derivation of Valeu !!!",
+      "titleEs": "Partiu!!! — derivación de Valeu !!!",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: Partiu!!! — derivação de Valeu !!!; pretérito de partir virado grito de porta; ≠ Tamara ≠ pariu ≠ Fui; Valeu !!!",
+      "whyEn": "Sayings: Partiu!!! — derivation of Valeu !!!; past of partir as door-cry; ≠ Tamara ≠ pariu ≠ Fui; Valeu !!!",
+      "whyEs": "Dichos: Partiu!!! — derivación de Valeu !!!; pretérito de partir como grito de puerta; ≠ Tamara ≠ pariu ≠ Fui; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-partiu",
+      "doneHref": "/posts/post-inspecao-expressao-partiu.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/partir",
+        "/posts/post-inspecao-palavra-valeu.html",
+        "/posts/post-inspecao-palavra-partir.html",
+        "/posts/post-inspecao-palavra-fui.html",
+        "/posts/post-inspecao-expressao-adeus.html"
+      ],
+      "notes": "Cap. 281 — molde Valeu !!! (pretérito + !!!); eixo saída/convite."
     }
   ]
 }

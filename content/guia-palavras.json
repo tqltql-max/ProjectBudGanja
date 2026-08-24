@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:50:17.143Z",
+  "updatedAt": "2026-08-24T12:06:36.464Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -6360,6 +6360,32 @@
       "curiositiesEs": "Eslabones con Dona Maria y alma: Valeu !!! en el cuidado nombrado."
     },
     {
+      "id": "maria",
+      "word": "Maria",
+      "simple": "Hebr. Miryam → lat. Maria. Cruzada com for (EN for ≈ PT para: a partícula aponta). ≠ for conjuntivo ≠ formaria ≠ marijuana. Valeu !!!",
+      "simpleEn": "Heb. Miryam → Lat. Maria. Crossed with for (EN for ≈ PT para: the particle points). ≠ subjunctive for ≠ formaria ≠ marijuana. Valeu !!!",
+      "simpleEs": "Hebr. Miryam → lat. Maria. Cruzada con for (EN for ≈ PT para: la partícula apunta). ≠ for conjuntivo ≠ formaria ≠ marijuana. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-maria.html",
+      "history": "Maria vem do hebraico Miryam, pelo grego Μαρία / Μαριάμ e o latim Maria. A rota é estável; o miolo hebraico (amada / amarga / outro) permanece aberto. O pedido cruze para maria lê o inglês for como a preposição que aponta — irmã portuguesa para, não por.",
+      "curiosities": "A orelha cola for+Maria em formaria (condicional de formar). O for português (quando eu for) é homógrafo: futuro do conjuntivo de ser e ir. Marijuana e Dona Maria são salas vizinhas, não étimos.",
+      "historyEn": "Maria comes from Hebrew Miryam via Greek Μαρία / Μαριάμ and Latin Maria. The path is stable; the inner Hebrew etymon stays open. Cross toward maria reads English for as the pointing preposition — Portuguese sister para, not por.",
+      "curiositiesEn": "The ear glues for+Maria into formaria (conditional of formar). Portuguese for (quando eu for) is a homograph: future subjunctive of ser and ir. Marijuana and Dona Maria are neighbouring rooms, not etymons.",
+      "historyEs": "Maria viene del hebreo Miryam, por el griego y el latín Maria. La ruta es estable; el meollo hebreo queda abierto. Cruza hacia maria lee el inglés for como la preposición que apunta — hermana portuguesa para, no por.",
+      "curiositiesEs": "El oído pega for+Maria en formaria (condicional de formar). El for portugués es homógrafo: subjuntivo de ser e ir. Marijuana y Dona Maria son salas vecinas, no étimos."
+    },
+    {
+      "id": "for",
+      "word": "for",
+      "simple": "EN for ≈ PT para — aponta (nesta ficha: para Maria). Homógrafo PT = conjuntivo de ser/ir. ≠ formaria ≠ por. Valeu !!!",
+      "simpleEn": "EN for ≈ PT para — it points (in this sheet: to Maria). PT homograph = ser/ir subjunctive. ≠ formaria ≠ por. Valeu !!!",
+      "simpleEs": "EN for ≈ PT para — apunta (en esta ficha: a Maria). Homógrafo PT = subjuntivo de ser/ir. ≠ formaria ≠ por. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-maria.html"
+    },
+    {
       "id": "mara",
       "word": "Mara",
       "simple": "Nome próprio BR que chegou ao mapa; cola no som de maravilha; hebr. mārāh (amarga) é camada, não veredicto; ≠ Tamara / Maria; barquinhos de papel; Valeu !!!",
@@ -9484,6 +9510,22 @@
       "curiositiesEn": "Valeu !!! — and valeu. Automatic alteration: eu amo a vida (the renderer glues it).",
       "historyEs": "Valeu viene de valer (lat. valēre) — gratitud leve y cierre oral BR, hermana de Gratidão. El pretérito se volvió gesto de respeto.",
       "curiositiesEs": "Valeu !!! — y valeu. Alteración automática: eu amo a vida (el render la pega)."
+    },
+    {
+      "id": "partiu",
+      "word": "Partiu!!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-partiu.html",
+      "simple": "Derivação de Valeu !!! — pretérito de partir virado grito de porta / convite; ≠ Tamara partir ≠ pariu ≠ Fui; Valeu !!!",
+      "simpleEn": "Derivation of Valeu !!! — past of partir as door-cry / let’s go; ≠ Tamara partir ≠ pariu ≠ Fui; Valeu !!!",
+      "simpleEs": "Derivación de Valeu !!! — pretérito de partir como grito de puerta / vamos; ≠ Tamara partir ≠ pariu ≠ Fui; ¡Valeu !!!",
+      "history": "Pedido de campo 2026-08-24: Partiu!!! como derivação de Valeu !!!. Mesmo molde (pretérito 3.ª + três exclamações); eixo saída e convite, não gratidão.",
+      "curiosities": "Não apaga Valeu !!!. Não funde com a palavra partir (tríade Tamara). A orelha cola pariu — corte. Irmãs de porta: Fui! e A Deus!!!.",
+      "historyEn": "Field request 2026-08-24: Partiu!!! as a derivation of Valeu !!!. Same mould (3rd-person past + three exclamation marks); axis is leaving/invite, not thanks.",
+      "curiositiesEn": "Does not erase Valeu !!!. Does not merge with the word partir (Tamara triad). The ear glues pariu — cut. Door sisters: Fui! and A Deus!!!.",
+      "historyEs": "Pedido de campo 2026-08-24: Partiu!!! como derivación de Valeu !!!. Mismo molde (pretérito 3.ª + tres exclamaciones); eje salida y convite, no gratitud.",
+      "curiositiesEs": "No borra Valeu !!!. No funde con la palabra partir (tríada Tamara). El oído pega pariu — corte. Hermanas de puerta: Fui! y A Deus!!!."
     },
     {
       "id": "eu-amo-a-vida",

@@ -2652,7 +2652,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-valeu.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-valeu",
-              "description": "Palavras: «valeu» (de *valer* ← lat. *valēre*) — gratidão leve BR; elos Gratidão, gesto, respeito; Valeu !!!"
+              "description": "Palavras: «valeu» (de *valer* ← lat. *valēre*) — gratidão leve BR; palavra incluída Boa!!!; elos Gratidão, gesto; Valeu !!!"
             },
             {
               "label": "Inspeção: Confissões de um Comedor de Ópio — De Quincey e a génese literária",
@@ -4071,6 +4071,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: Save Game = save + game; salve tudo; salvar/gravar/guardar; ≠ Load/New/backspace; Valeu !!!"
             },
             {
+              "label": "Inspeção: Partiu!!! — derivação de Valeu !!!",
+              "tileLabel": "Inspeção: Partiu!!! — derivação…",
+              "href": "/posts/post-inspecao-expressao-partiu.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-partiu",
+              "description": "Expressões: Partiu!!! — derivação de Valeu !!!; pretérito de partir virado grito de porta; ≠ Tamara ≠ pariu ≠ Fui; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Letra X — o xis, o nexo, as salas",
               "tileLabel": "Inspeção: Letra X — o xis, o ne…",
               "href": "/posts/post-inspecao-palavra-letra-x.html",
@@ -4333,6 +4341,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-palavra",
               "description": "Palavras: palavra ← lat. parabola / gr. parabolḗ — o vocábulo, não o hub; ≠ verbo ≠ Verbo; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Maria — Miryam; cruzada com for (para)",
+              "tileLabel": "Inspeção: Maria — Miryam; cruza…",
+              "href": "/posts/post-inspecao-palavra-maria.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-maria",
+              "description": "Palavras: Maria (hebr. Miryam → lat. Maria) × for (EN for ≈ PT para — a partícula aponta); ≠ for conjuntivo ≠ formaria ≠ marijuana; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
