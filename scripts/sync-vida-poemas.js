@@ -159,6 +159,11 @@ const {
   poemEn: poemFantasiaEn,
   poemEs: poemFantasiaEs
 } = require('../lib/fantasia-inspecao-post.js');
+const {
+  poemPt: poemRetargetPt,
+  poemEn: poemRetargetEn,
+  poemEs: poemRetargetEs
+} = require('../lib/retarget-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -798,6 +803,27 @@ const doc = {
       bodyEs: poemMetalSlugEs(),
       inspectionHref: '/posts/post-inspecao-jogo-metal-slug.html',
       tags: ['poesia', 'vida', 'jogo', 'metal', 'slug', 'snk']
+    },
+    {
+      id: 'retarget',
+      slug: 'retarget',
+      title: 'Retarget',
+      titleEn: 'Retarget',
+      titleEs: 'Retarget',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja — voltar a apontar ao alvo; a orelha cola o rato, o étimo corta (re-, não rat); Valeu !!!',
+      teaserEn:
+        'BudGanja echo — aim again at the target; the ear glues the rat, the etymon cuts (re-, not rat); Valeu !!!',
+      teaserEs:
+        'Eco BudGanja — apuntar de nuevo al blanco; el oído pega la rata, el étimo corta (re-, no rat); ¡Valeu !!!',
+      body: poemRetargetPt(),
+      bodyEn: poemRetargetEn(),
+      bodyEs: poemRetargetEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-retarget.html',
+      tags: ['poesia', 'vida', 'retarget', 'alvo', 'rato']
     },
     {
       id: 'a-semente-foi-plantada',

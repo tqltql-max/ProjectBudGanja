@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T02:17:32.856Z",
+  "updatedAt": "2026-08-24T10:30:58.652Z",
   "poems": [
     {
       "id": "fantasia",
@@ -734,6 +734,30 @@
         "metal",
         "slug",
         "snk"
+      ]
+    },
+    {
+      "id": "retarget",
+      "slug": "retarget",
+      "title": "Retarget",
+      "titleEn": "Retarget",
+      "titleEs": "Retarget",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — voltar a apontar ao alvo; a orelha cola o rato, o étimo corta (re-, não rat); Valeu !!!",
+      "teaserEn": "BudGanja echo — aim again at the target; the ear glues the rat, the etymon cuts (re-, not rat); Valeu !!!",
+      "teaserEs": "Eco BudGanja — apuntar de nuevo al blanco; el oído pega la rata, el étimo corta (re-, no rat); ¡Valeu !!!",
+      "body": "Retarget.\nNão é o rato que inventou o verbo.\nÉ o prefixo de novo\nmais o alvo.\n\nAlbus era o branco fosco.\nO branco era o centro.\nO centro virou o objecto.\nAlvo.\n\nA orelha cola:\nrato + alvo.\nA boca junta o sopro.\nO étimo corta — as letras são re-, não rat.\n\nre- outra vez.\nTarget o escudo que virou disco.\nAlvo o objecto.\nRato o animal — cola, não pai.\n\nO anúncio é outra sala.\nO rato do rato é outra sala.\nO delator é outra sala.\n\nValeu !!!\napontar de novo\nsem fundir o bicho no branco.",
+      "bodyEn": "Retarget.\nThe rat did not invent the verb.\nIt is the prefix again\nplus the target.\n\nAlbus was the dull white.\nThe white was the centre.\nThe centre became the object.\nAlvo.\n\nThe ear glues:\nrat + target.\nThe mouth joins the breath.\nThe etymon cuts — the letters are re-, not rat.\n\nre- once more.\nTarget the shield that became a disk.\nAlvo the object.\nRat the animal — glue, not father.\n\nThe ad is another room.\nThe computer mouse is another room.\nThe snitch is another room.\n\nValeu !!!\naim again\nwithout fusing the beast into the white.",
+      "bodyEs": "Retarget.\nNo es la rata quien inventó el verbo.\nEs el prefijo de nuevo\nmás el blanco.\n\nAlbus era el blanco mate.\nEl blanco era el centro.\nEl centro viró el objeto.\nAlvo.\n\nEl oído pega:\nrata + blanco.\nLa boca junta el soplo.\nEl étimo corta — las letras son re-, no rat.\n\nre- otra vez.\nTarget el escudo que viró disco.\nAlvo el objeto.\nRata el animal — cola, no padre.\n\nEl anuncio es otra sala.\nEl ratón del ordenador es otra sala.\nEl soplón es otra sala.\n\n¡Valeu !!!\napuntar de nuevo\nsin fundir el bicho en el blanco.",
+      "inspectionHref": "/posts/post-inspecao-palavra-retarget.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "retarget",
+        "alvo",
+        "rato"
       ]
     },
     {

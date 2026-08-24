@@ -118,7 +118,7 @@ function replaceOrInsertAfter(gloss, key, line, afterKey) {
 
 function patchGlossary(gloss) {
   const main =
-    '    retarget: { tone: "craft", category: "Léxico", mundane: "EN — voltar a apontar ao mesmo alvo (re- + target).", gloss: "re- + target; cola rato+alvo (rat+target) ≠ étimo; objecto alvo (albus); animal rato; ≠ ads ≠ mouse; Valeu !!!", href: "' +
+    '    retarget: { tone: "craft", category: "Léxico", mundane: "EN — voltar a apontar ao mesmo alvo (re- + target).", gloss: "re- + target (voltar a apontar); alvo ← albus (branco do centro); cola rato+alvo (rat+target) ≠ origem (letras re-, não rat); ≠ ads ≠ mouse; Valeu !!!", href: "' +
     HREF +
     '", en: "retarget", es: "retarget / volver a apuntar", fr: "recibler", it: "retarget", de: "retargeten", el: "retarget", la: "rursus petere", yo: "retarget", sw: "retarget", gez: "retarget", nl: "retargeten", pl: "retarget", ru: "retarget", uk: "retarget", zh: "再次瞄准", ja: "リターゲット", ko: "리타깃", ar: "إعادة الاستهداف", he: "retarget", hi: "retarget", tr: "yeniden hedeflemek", sv: "retargeta", da: "retargete", no: "retargete", fi: "retargetoida", cs: "retarget", ro: "retarget", hu: "retarget", ca: "retarget", gl: "retarget", eu: "retarget", gn: "retarget", qu: "retarget", eo: "re-celi", vi: "nhắm lại", id: "retarget", th: "retarget", hr: "retarget", sk: "retarget", ga: "retarget", cy: "retarget", ha: "retarget", am: "retarget", fa: "retarget", bn: "retarget", zu: "i-retarget" },\n';
   gloss = replaceOrInsertAfter(gloss, 'retarget', main, 'opsertar');
@@ -227,14 +227,18 @@ async function main() {
         sources: [
           HREF,
           WIKT,
+          'https://en.wiktionary.org/wiki/targe',
+          'https://en.wiktionary.org/wiki/albus#Latin',
           'https://pt.wiktionary.org/wiki/alvo',
           'https://pt.wiktionary.org/wiki/rato',
+          'https://pt.wikipedia.org/wiki/Etimologia_popular',
+          '/posts/post-inspecao-palavra-etimologia.html',
           '/posts/post-inspecao-palavra-objetos.html',
           '/posts/post-inspecao-palavra-animal.html',
           '/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html',
           '/posts/post-inspecao-palavra-valeu.html'
         ],
-        notes: 'Cap. ' + post.seriesOrder + ' — étimo × cola; sem tutorial de anúncio.'
+        notes: 'Cap. ' + post.seriesOrder + ' — étimo re-+target × albus × cola rat (≠ origem); sem tutorial de anúncio.'
       },
       ['palavra-upsert', 'palavra-pattern', 'palavra-skill']
     );
@@ -262,17 +266,17 @@ async function main() {
         fromTitle: false,
         href: HREF,
         history:
-          'Retarget é inglês de oficina: prefixo re- («de novo») + target (fr. targette / targe, o escudo pequeno que virou disco a atingir). Em português o objecto chama-se alvo — do latim albus, o branco do centro. A orelha cola rato (rat) + alvo (target); o étimo corta o animal da origem.',
+          'Retarget é inglês de oficina: prefixo re- («de novo / de volta», lat. re-) + target. Target vem do antigo francês targette, diminutivo de targe — o escudo pequeno (broquel) que virou disco a atingir (germ. *targō / nórd. targa). Em português o objecto chama-se alvo — do latim albus, o branco fosco do centro (ainda se diz «acertar no branco»). A orelha cola rato (EN rat) + alvo (target); as letras do verbo são re-, não rat. O étimo corta o animal da origem.',
         curiosities:
-          'Retargeting / remarketing são a sala do mercado — a ficha nomeia o vocábulo, não ensina o funil. Em PT-PT rato também é o mouse; essa sala não entra. Calco: retargetar.',
+          'Três caminhos para o mesmo ofício: PT alvo veio da cor (albus); EN target veio do escudo (targe); ES blanco funde cor e objecto (germ. blank). Point-blank é «de pointe en blanc» — apontar ao branco. A cola rato+alvo é bilingue: em português rato+alvo não soa a retarget. Retargeting / remarketing são a sala do mercado. Em PT-PT rato também é o mouse; essa sala não entra. Calco: retargetar.',
         historyEn:
-          'Retarget is workshop English: prefix re- (“again”) + target (Old French targette / targe, a small shield that became the disk to hit). Portuguese names the object alvo — from Latin albus, the white of the centre. The ear glues rat + target; the etymon cuts the animal from the origin.',
+          'Retarget is workshop English: prefix re- (“again / back”, Lat. re-) + target. Target is from Old French targette, diminutive of targe — a small shield that became the disk to hit (Gmc *targō / ON targa). Portuguese names the object alvo — from Latin albus, the dull white of the centre (still “hit the white”). The ear glues rat + target; the letters of the verb are re-, not rat. The etymon cuts the animal from the origin.',
         curiositiesEn:
-          'Retargeting / remarketing are the market room — the sheet names the word, it does not teach the funnel. In European Portuguese rato is also the computer mouse; that room stays out. Calque: retargetar.',
+          'Three paths to the same craft: PT alvo came from the colour (albus); EN target came from the shield (targe); ES blanco fuses colour and object (Gmc blank). Point-blank is “de pointe en blanc”. The glue rato+alvo is bilingual: in Portuguese rato+alvo does not sound like retarget. Retargeting / remarketing are the market room. In European Portuguese rato is also the computer mouse. Calque: retargetar.',
         historyEs:
-          'Retarget es inglés de oficio: prefijo re- («de nuevo») + target (fr. targette / targe, el escudo pequeño que viró disco a apuntar). En portugués el objeto se llama alvo — del latín albus, el blanco del centro. El oído pega rata + blanco; el étimo corta el animal del origen.',
+          'Retarget es inglés de oficio: prefijo re- («de nuevo / de vuelta», lat. re-) + target. Target viene del antiguo francés targette, diminutivo de targe — el escudo pequeño que viró disco a apuntar. En portugués el objeto se llama alvo — del latín albus, el blanco mate del centro. El oído pega rata (rat) + blanco (target); las letras del verbo son re-, no rat. El étimo corta el animal del origen.',
         curiositiesEs:
-          'Retargeting / remarketing son la sala del mercado — la ficha nombra el vocablo, no enseña el embudo. En PT-PT rato también es el ratón; esa sala no entra. Calco: retargetar.'
+          'Tres caminos: PT alvo vino del color (albus); EN target del escudo (targe); ES blanco funde color y objeto (germ. blank). Point-blank es «de pointe en blanc». La cola rato+alvo es bilingüe. Retargeting / remarketing son la sala del mercado. En PT-PT rato también es el ratón. Calco: retargetar.'
       },
       ['upsert', 'pattern', 'skill']
     );
@@ -282,7 +286,7 @@ async function main() {
         id: 'alvo',
         word: 'alvo',
         simple:
-          'Lat. albus — o branco do centro virou o objecto da pontaria. Peça PT de target; cola com rato em retarget. Valeu !!!',
+          'Lat. albus — o branco fosco do centro virou o objecto da pontaria (ainda se diz acertar no branco). Peça PT de target (que veio do escudo); cola com rato em retarget. Valeu !!!',
         simpleEn:
           'Lat. albus — the white of the centre became the object of aim. PT piece of target; glued with rato in retarget. Valeu !!!',
         simpleEs:
@@ -299,7 +303,7 @@ async function main() {
         id: 'rato',
         word: 'rato',
         simple:
-          'Animal (lat. rattus). Nesta ficha entra como cola EN rat + target = retarget — ≠ étimo ≠ mouse ≠ delator. Valeu !!!',
+          'Animal (lat. rattus). Cola EN rat + target = retarget — as letras do verbo são re-, não rat. ≠ étimo ≠ mouse ≠ delator. Valeu !!!',
         simpleEn:
           'Animal (Lat. rattus). On this sheet it enters as glue EN rat + target = retarget — ≠ etymon ≠ mouse ≠ snitch. Valeu !!!',
         simpleEs:
