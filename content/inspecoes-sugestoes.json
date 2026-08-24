@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T14:18:32.039Z",
+  "updatedAt": "2026-08-24T15:07:58.901Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -11394,6 +11394,79 @@
       "whyEn": "Sayings: jogar areia — hinder someone else’s plan; ≠ sabotage how-to ≠ fan ≠ beach; sister of baixar a bola; Valeu !!!",
       "whyEs": "Dichos: jogar areia — estorbar el plan ajeno; ≠ manual de sabotaje ≠ ventilador ≠ playa; hermana de baixar a bola; ¡Valeu !!!",
       "id": "expressao-jogar-areia"
+    },
+    {
+      "id": "arte-alive",
+      "title": "Alive — Pearl Jam e o ofício de ficar",
+      "titleEn": "Alive — Pearl Jam and the craft of staying",
+      "titleEs": "Alive — Pearl Jam y el oficio de quedarse",
+      "tipo": "arte",
+      "priority": 2,
+      "status": "feita",
+      "why": "Canção 1991: Ten, 1.º single; refrão peso × hino; fecho da rádio.",
+      "whyEn": "1991 song: Ten, first single; chorus as burden × anthem; radio closer.",
+      "whyEs": "Canción 1991: Ten, 1.er single; estribillo carga × himno; cierre de la radio.",
+      "suggestedSlug": "inspecao-arte-alive",
+      "doneHref": "/posts/post-inspecao-arte-alive.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "/posts/post-inspecao-arte-alive.html",
+        "https://www.youtube.com/watch?v=qM0zINtulhM",
+        "https://open.spotify.com/track/1L94M3KIu7QluZe63g64rv",
+        "https://en.wikipedia.org/wiki/Alive_(Pearl_Jam_song)",
+        "/radio/"
+      ],
+      "notes": "Pedido Spotify 1L94M3KIu7QluZe63g64rv; clipe oficial ao vivo; última faixa da playlist."
+    },
+    {
+      "id": "palavra-insercao",
+      "title": "Inserção — derivação de inserir (-ção), o gesto e o nome",
+      "titleEn": "Inserção — derivation from inserir (-ção), the gesture and the name",
+      "titleEs": "Inserção — derivación de inserir (-ção), el gesto y el nombre",
+      "why": "Palavras: inserir → inserção (lat. inserere / insertiō) — sufixo -ção; ≠ inseto ≠ upsert; Valeu !!!",
+      "whyEn": "Words: inserir → inserção (Lat. inserere / insertiō) — suffix -ção; ≠ insect ≠ upsert; Valeu !!!",
+      "whyEs": "Palabras: inserir → inserção (lat. inserere / insertiō) — sufijo -ção; ≠ insecto ≠ upsert; ¡Valeu !!!",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "suggestedSlug": "inspecao-palavra-insercao",
+      "doneHref": "/posts/post-inspecao-palavra-insercao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/inser%C3%A7%C3%A3o",
+        "https://pt.wiktionary.org/wiki/inserir",
+        "https://en.wiktionary.org/wiki/inserere#Latin",
+        "/posts/post-inspecao-palavra-acao.html",
+        "/posts/post-inspecao-palavra-upsert.html",
+        "/posts/post-inspecao-palavra-inseto.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 333 — derivação inserir + -ção; ≠ inseto ≠ upsert."
+    },
+    {
+      "id": "palavra-inserir",
+      "title": "Inserir — o verbo da inserção",
+      "titleEn": "Inserir — the verb of inserção",
+      "titleEs": "Inserir — el verbo de inserção",
+      "why": "Alias do par inserir / inserção — mesma ficha; gesto de meter para dentro.",
+      "whyEn": "Alias of the pair inserir / inserção — same sheet; gesture of putting in.",
+      "whyEs": "Alias del par inserir / inserção — misma ficha; gesto de meter dentro.",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "suggestedSlug": "inspecao-palavra-insercao",
+      "doneHref": "/posts/post-inspecao-palavra-insercao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/inser%C3%A7%C3%A3o",
+        "https://pt.wiktionary.org/wiki/inserir",
+        "https://en.wiktionary.org/wiki/inserere#Latin",
+        "/posts/post-inspecao-palavra-acao.html",
+        "/posts/post-inspecao-palavra-upsert.html",
+        "/posts/post-inspecao-palavra-inseto.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 333 — derivação inserir + -ção; ≠ inseto ≠ upsert."
     }
   ]
 }

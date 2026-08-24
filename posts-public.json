@@ -7011,6 +7011,25 @@
     "seriesLabel": "Maçaneta · palavra"
   },
   {
+    "title": "Inspeção: Alive — Pearl Jam e o ofício de ficar",
+    "titleEn": "Inspection: Alive — Pearl Jam and the craft of staying",
+    "titleEs": "Inspección: Alive — Pearl Jam y el oficio de quedarse",
+    "excerpt": "Artes · canção 1991: Pearl Jam — Alive (Ten, 1.º single) × vida/verdade; peso do refrão que a sala virou hino; rádio como fecho.",
+    "excerptEn": "Arts · 1991 song: Pearl Jam — Alive (Ten, first single) × life/truth; chorus as burden the room turned into an anthem; radio as closer.",
+    "excerptEs": "Artes · canción 1991: Pearl Jam — Alive (Ten, 1.er single) × vida/verdad; estribillo como carga que la sala volvió himno; radio como cierre.",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-arte-alive",
+    "url": "/posts/post-inspecao-arte-alive.html",
+    "date": "2026-08-24T14:20:00.000Z",
+    "filename": "posts/post-inspecao-arte-alive.html",
+    "coverImage": "/imagens/inspecoes/alive-cover.jpg",
+    "category": "inspecao",
+    "series": "artes-cultura",
+    "seriesOrder": 116,
+    "seriesLabel": "Alive · Artes"
+  },
+  {
     "title": "Inspeção: Luz — efeito do circuito e claridade",
     "titleEn": "Inspection: Luz — circuit effect and clarity",
     "titleEs": "Inspección: Luz — efecto del circuito y claridad",
@@ -10353,6 +10372,25 @@
     "series": "palavras-origem",
     "seriesOrder": 332,
     "seriesLabel": "Cilada"
+  },
+  {
+    "title": "Inspeção: Inserção — derivação de inserir (-ção), o gesto e o nome",
+    "titleEn": "Inspection: Inserção — derivation from inserir (-ção), the gesture and the name",
+    "titleEs": "Inspección: Inserção — derivación de inserir (-ção), el gesto y el nombre",
+    "excerpt": "Palavras: inserir → inserção — étimo lat. inserere / insertiō; sufixo -ção; ≠ inseto ≠ upsert; Valeu !!!",
+    "excerptEn": "Words: inserir → inserção — etymon Lat. inserere / insertiō; suffix -ção; ≠ insect ≠ upsert; Valeu !!!",
+    "excerptEs": "Palabras: inserir → inserção — étimo lat. inserere / insertiō; sufijo -ção; ≠ insecto ≠ upsert; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-insercao",
+    "url": "/posts/post-inspecao-palavra-insercao.html",
+    "date": "2026-08-24T14:52:00.000Z",
+    "filename": "posts/post-inspecao-palavra-insercao.html",
+    "coverImage": "/imagens/inspecoes/insercao-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 333,
+    "seriesLabel": "Inserção · palavra"
   },
   {
     "title": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

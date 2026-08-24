@@ -122,8 +122,8 @@ function patchGlossary(gloss) {
     ],
     [
       'tela',
-      '    tela: { gloss: "Lat. tēla — pano / teia / ecrã; a orelha cola em tele (têle = longe); ver tele.", href: "' +
-        HREF +
+      '    tela: { gloss: "Lat. tēla — pano / teia / ecrã; smash mtela = em tela; × papelão (uso); a orelha cola em tele (têle); ver mtela.", href: "' +
+        '/posts/post-inspecao-palavra-mtela.html' +
         '", en: "screen / canvas", es: "tela" },\n'
     ],
     [

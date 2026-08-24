@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T13:57:13.871Z",
+  "updatedAt": "2026-08-24T15:15:48.545Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -192,6 +192,18 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: Inserção — derivação de inserir (-ção), o gesto e o nome",
+      "url": "/posts/post-inspecao-palavra-insercao.html",
+      "excerpt": "Palavras: inserir → inserção — étimo lat. inserere / insertiō; sufixo -ção; ≠ inseto ≠ upsert; Valeu !!!",
+      "text": "Inspeção: Inserção — derivação de inserir (-ção), o gesto e o nome Palavras: inserir → inserção — étimo lat. inserere / insertiō; sufixo -ção; ≠ inseto ≠ upsert; Valeu !!! inspecao ## Escopo\n\nInspeção editorial do par **[inserir](https://pt.wiktionary.org/wiki/inserir) → [inserção](/posts/post-inspecao-palavra-insercao.html)** — **derivação** de verbo a nome pelo sufixo **[-ção](https://pt.wiktionary.org/wiki/-%C3%A7%C3%A3o)**. Pedido de campo: *derivação de inserção inserir*. [Étimo](/posts/post-inspecao-palavra-etimo.html): latim *inserere* (*in-* + *serere*, «juntar, entrançar») → particípio *insertus* → *insertiō*. No lab: o **verbo** é o [gesto](/posts/post-inspecao-palavra-gesto.html) de meter para dentro; o **nome** é o acto (ou o resultado) já nomeado. Fecho: [Valeu !!!](/posts/post-inspecao-palavra-valeu.html).\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikcionário · inserção](https://pt.wiktionary.org/wiki/inser%C3%A7%C3%A3o), [inserir](https://pt.wiktionary.org/wiki/inserir), lat. [*inserere*](https://en.wiktionary.org/wiki/inserere#Latin), [*insertiō*](https://en.wiktionary.org/wiki/insertio#Latin), [derivação](https://pt.wikipedia.org/wiki/Deriva%C3%A7%C3%A3o_%28lingu%C3%ADstica%29). **Ficha de palavra ≠ tutorial SQL, ≠ manual de upsert, ≠ ficha de [inseto](/posts/post-inspecao-palavra-inseto.html).** Tom: [verdade](/posts/post-inspecao-palavra-verdade.html) da morfologia.\n\n**Gatilho:** *inserir* / *inserção* / *insercao* / *insert* / *insertar* / *inserido* → lema **inserção** (par com **inserir**).\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Par | **inserir** (verbo) → **inserção** (nome) |\n| Classe | Verbo 3.ª (-ir) · substantivo feminino |\n| [Étimo](/posts/post-inspecao-palavra-etimo.html) (trabalho) | Lat. *inserere* ← *in-* + *serere* («juntar») · nome lat. *insertiō* ← *insertus* + *-tiō* — confiança: **alta** |\n| Máquina PT | radical *inser-* + sufixo **-ção** (lat. *-tiō*) — a mesma peça de [ação](/posts/p"
+    },
+    {
+      "title": "Inspeção: Alive — Pearl Jam e o ofício de ficar",
+      "url": "/posts/post-inspecao-arte-alive.html",
+      "excerpt": "Artes · canção 1991: Pearl Jam — Alive (Ten, 1.º single) × vida/verdade; peso do refrão que a sala virou hino; rádio como fecho.",
+      "text": "Inspeção: Alive — Pearl Jam e o ofício de ficar Artes · canção 1991: Pearl Jam — Alive (Ten, 1.º single) × vida/verdade; peso do refrão que a sala virou hino; rádio como fecho. inspecao ## Escopo\n\nInspeção editorial da canção **«Alive»** — **Pearl Jam** (álbum *[Ten](https://en.wikipedia.org/wiki/Ten_(Pearl_Jam_album))*, **27 ago. 1991**; primeiro single, **7 jul. 1991**). O **início de tudo** é a **obra musical**: instrumental *Dollar Short* de **Stone Gossard**; letra de **Eddie Vedder** sobre uma revelação familiar (semi-autobiográfica, com ficção). Pedido de campo: [Spotify](https://open.spotify.com/track/1L94M3KIu7QluZe63g64rv) (`1L94M3KIu7QluZe63g64rv`) — **cópia de escuta**, não génese. No laboratório BudGanja, *still alive* conversa com [vida](/posts/post-inspecao-palavra-vida.html) (ficar), com [verdade](/posts/post-inspecao-palavra-verdade.html) (o nome que chega tarde) e com [eu amo a vida](/posts/post-inspecao-expressao-eu-amo-a-vida.html) — **ficar** sem transformar o coro em cura nem em maldição. Distinto de [Wake Up](/posts/post-inspecao-arte-wake-up.html) (acordar contra a máquina) e par de [Killing in the Name](/posts/post-inspecao-arte-killing-in-the-name.html) (outro verbo: matar no nome × continuar vivo). A [BudGanja Radio](/radio/) entra **depois**, como **fecho da playlist**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wikipedia · Alive](https://en.wikipedia.org/wiki/Alive_(Pearl_Jam_song)), [Ten](https://en.wikipedia.org/wiki/Ten_(Pearl_Jam_album)), [Pearl Jam](https://en.wikipedia.org/wiki/Pearl_Jam), [página oficial da faixa](https://pearljam.com/music/song/alive). Crédito: Stone Gossard (música) · Eddie Vedder (letra) / Epic · produção Rick Parashar + banda. **Sem afiliação**. **Ficha ≠ letra integral.** **Não** é biografia de Vedder (Pessoas). **Não** descreve trauma como protocolo. O clipe oficial ([PearljamVEVO](https://www.youtube.com/watch?v=qM0zINtulhM)) é **ao vivo** (RKCNDY, Seattle, **3 ago. 1991**, dir. Josh Taft) —"
     },
     {
       "title": "Inspeção: Jogar areia — o grão no jogo alheio",
@@ -5888,6 +5900,12 @@
       "text": "upsert Portmanteau EN update+insert — nome nosso opsert; mãos a obra (plural); inserir se a chave é nova, actualizar se já existe; MERGE ≠ replace; calco upsertar; elo commitar; Valeu !!! lexico guia palavras glossário upsert"
     },
     {
+      "title": "Inserção",
+      "url": "/posts/post-inspecao-palavra-insercao.html",
+      "excerpt": "Lat. insertiō ← inserere — derivação inserir + -ção; o gesto e o nome do acto; ≠ inseto ≠ upsert; Valeu !!!",
+      "text": "Inserção Lat. insertiō ← inserere — derivação inserir + -ção; o gesto e o nome do acto; ≠ inseto ≠ upsert; Valeu !!! lexico guia palavras glossário insercao"
+    },
+    {
       "title": "retarget",
       "url": "/posts/post-inspecao-palavra-retarget.html",
       "excerpt": "EN re- + target — voltar a apontar ao alvo. Cola da orelha: rato + alvo (rat + target) ≠ étimo. Objecto: alvo (albus, o branco). Animal: rato. ≠ ads ≠ mouse. Valeu !!!",
@@ -6852,6 +6870,12 @@
       "url": "/posts/post-inspecao-arte-wake-up.html",
       "excerpt": "Canção RATM (1992): acordar contra a máquina; irmã de Killing in the Name; afterlife Matrix; rádio como adaptação.",
       "text": "Wake Up Canção RATM (1992): acordar contra a máquina; irmã de Killing in the Name; afterlife Matrix; rádio como adaptação. lexico guia palavras glossário wake-up"
+    },
+    {
+      "title": "Alive",
+      "url": "/posts/post-inspecao-arte-alive.html",
+      "excerpt": "Canção Pearl Jam (1991, Ten): ficar; refrão que nasceu peso e a sala virou hino; fecho da rádio.",
+      "text": "Alive Canção Pearl Jam (1991, Ten): ficar; refrão que nasceu peso e a sala virou hino; fecho da rádio. lexico guia palavras glossário alive"
     },
     {
       "title": "Back Door Man",

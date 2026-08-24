@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T14:18:32.047Z",
+  "updatedAt": "2026-08-24T15:07:58.901Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3268,6 +3268,22 @@
       "href": "/posts/post-inspecao-palavra-upsert.html"
     },
     {
+      "id": "insercao",
+      "word": "Inserção",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-insercao.html",
+      "simple": "Lat. insertiō ← inserere — derivação inserir + -ção; o gesto e o nome do acto; ≠ inseto ≠ upsert; Valeu !!!",
+      "simpleEn": "Lat. insertiō ← inserere — derivation inserir + -ção; the gesture and the named act; ≠ insect ≠ upsert; Valeu !!!",
+      "simpleEs": "Lat. insertiō ← inserere — derivación inserir + -ção; el gesto y el acto nombrado; ≠ insecto ≠ upsert; ¡Valeu !!!",
+      "history": "Inserção vem do latim insertiō, de inserere (in- + serere, juntar para dentro). Em português o nome alinha com o verbo inserir pelo sufixo -ção (o mesmo de ação e conjugação).",
+      "curiosities": "A orelha pode colar inserção em inseto — mas inseto vem de insecāre (cortar), não de serere (juntar). Upsert é outra sala: update+insert. Fecho: Valeu !!!",
+      "historyEn": "Portuguese inserção comes from Latin insertiō, from inserere (in- + serere, to join inward). The noun matches the verb inserir via the suffix -ção (the same piece as ação and conjugação).",
+      "curiositiesEn": "The ear may glue inserção to inseto — but inseto is from insecāre (to cut), not serere (to join). Upsert is another room: update+insert. Close: Valeu !!!",
+      "historyEs": "Inserção viene del latín insertiō, de inserere (in- + serere, juntar hacia dentro). En portugués el nombre alinea con el verbo inserir por el sufijo -ção (el mismo de ação y conjugação).",
+      "curiositiesEs": "El oído puede pegar inserção a inseto — pero inseto viene de insecāre (cortar), no de serere (juntar). Upsert es otra sala: update+insert. Cierre: Valeu !!!"
+    },
+    {
       "id": "retarget",
       "word": "retarget",
       "simple": "EN re- + target — voltar a apontar ao alvo. Cola da orelha: rato + alvo (rat + target) ≠ étimo. Objecto: alvo (albus, o branco). Animal: rato. ≠ ads ≠ mouse. Valeu !!!",
@@ -5700,6 +5716,22 @@
       "curiositiesEn": "The Arts sheet links the track to Killing in the Name, dream/truth and the radio — without pasting the lyric.",
       "historyEs": "Wake Up, de Rage Against the Machine (álbum homónimo, 1992, pista 7), nombra el despertar contra la máquina. El cierre de The Matrix (1999) es afterlife, no origen.",
       "curiositiesEs": "La ficha de Artes liga el tema a Killing in the Name, soñar/verdad y la radio — sin pegar la letra."
+    },
+    {
+      "id": "alive",
+      "word": "Alive",
+      "simple": "Canção Pearl Jam (1991, Ten): ficar; refrão que nasceu peso e a sala virou hino; fecho da rádio.",
+      "simpleEn": "Pearl Jam song (1991, Ten): staying; chorus born as burden, the room turned into an anthem; radio closer.",
+      "simpleEs": "Canción Pearl Jam (1991, Ten): quedarse; estribillo nacido como carga, la sala lo volvió himno; cierre de la radio.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-arte-alive.html",
+      "history": "Alive, de Pearl Jam (álbum Ten, 1991; primeiro single). Música de Stone Gossard (*Dollar Short*); letra de Eddie Vedder. O refrão foi relido pela sala.",
+      "curiosities": "A ficha de Artes liga a faixa a vida/verdade, a Wake Up e a Killing in the Name — sem colar a letra. Fecha a playlist da rádio.",
+      "historyEn": "Alive, by Pearl Jam (Ten, 1991; first single). Music by Stone Gossard (*Dollar Short*); lyric by Eddie Vedder. The room reread the chorus.",
+      "curiositiesEn": "The Arts sheet links the track to life/truth, Wake Up and Killing in the Name — without pasting the lyric. It closes the radio playlist.",
+      "historyEs": "Alive, de Pearl Jam (álbum Ten, 1991; primer single). Música de Stone Gossard (*Dollar Short*); letra de Eddie Vedder. La sala releyó el estribillo.",
+      "curiositiesEs": "La ficha de Artes liga el tema a vida/verdad, Wake Up y Killing in the Name — sin pegar la letra. Cierra la playlist de la radio."
     },
     {
       "id": "back-door-man",

@@ -1970,6 +1970,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Guia de acesso: Defensoria Pública e a assistência jurídica gratuita no cultivo medicinal; critérios de hipossuficiência, laudos, HC e os filtros que restam sem honorários. Não é parecer."
             },
             {
+              "label": "Inspeção: Legal — lei, gíria BR «bacana» e Valeu !!!",
+              "tileLabel": "Inspeção: Legal — lei, gíria BR…",
+              "href": "/posts/post-inspecao-palavra-legal.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-legal",
+              "description": "Palavras: «legal» (lat. *legālis*) — eixo jurídico e gíria BR «bacana»; contraste com inglês; elos ilícito, Lei 11.343, descriminalização, risco e verdade."
+            },
+            {
               "label": "Inspeção: Robson Oliveira — a casa, Boston e dois são mais fortes que um",
               "tileLabel": "Inspeção: Robson Oliveira — a c…",
               "href": "/posts/post-inspecao-figura-robson-oliveira.html",
@@ -3202,12 +3210,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: papel de enrolar × tabaco — planta americana e mortalha europeia; elos cinzeiro, fogo, maconha; Valeu !!!"
             },
             {
+              "label": "Inspeção: Back Door Man — The Doors, Jim e a porta de trás",
+              "tileLabel": "Inspeção: Back Door Man — The D…",
+              "href": "/posts/post-inspecao-arte-back-door-man.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-back-door-man",
+              "description": "Artes · canção: Dixon/Wolf 1960 → The Doors 1967 (Jim na voz); gíria da porta de trás × maçaneta/verdade; rádio como adaptação."
+            },
+            {
               "label": "Inspeção: Maçaneta — torcer, abrir, mãos, porta/janela e ligar a luz",
               "tileLabel": "Inspeção: Maçaneta — torcer, ab…",
               "href": "/posts/post-inspecao-palavra-macaneta.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-macaneta",
               "description": "Palavras: maçaneta — gesto torcer/abrir × mão E/D × porta/janela × ligar/desligar luz; elos gesto, interruptor; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Alive — Pearl Jam e o ofício de ficar",
+              "tileLabel": "Inspeção: Alive — Pearl Jam e o…",
+              "href": "/posts/post-inspecao-arte-alive.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-alive",
+              "description": "Artes · canção 1991: Pearl Jam — Alive (Ten, 1.º single) × vida/verdade; peso do refrão que a sala virou hino; rádio como fecho."
             },
             {
               "label": "Inspeção: Luz — efeito do circuito e claridade",
@@ -3384,6 +3408,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-isotonico",
               "description": "Palavras: «isotônico» — isola o tônico (tónos); iso- = igual; osmose × músculo × gôndola; ≠ chá, sílaba, água tónica; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Cool Gelado — derivação de Legal !!! (cool × gelado)",
+              "tileLabel": "Inspeção: Cool Gelado — derivaç…",
+              "href": "/posts/post-inspecao-palavra-cool-gelado.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-cool-gelado",
+              "description": "Palavras: «cool gelado» deriva de Legal !!! (gíria «bacana») — inglês cool (elogio × frio) → PT gelado; não é lei, não é gelo Tamara, não é marca de sorvete."
             },
             {
               "label": "Inspeção: Moçambique — o país, o tónos em BI e o lapso esqueiro biq",
@@ -4234,12 +4266,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: Log In / login = log + in; lapso Longin; ≠ conexão ≠ discada ≠ DSL ≠ Save Game; Valeu !!!"
             },
             {
+              "label": "Inspeção: Baixar a bola — o orgulho que desce ao chão",
+              "tileLabel": "Inspeção: Baixar a bola — o org…",
+              "href": "/posts/post-inspecao-expressao-baixar-a-bola.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-baixar-a-bola",
+              "description": "Expressões: baixar a bola — descer o orgulho / o ritmo; ≠ humilhar ≠ bola pra frente ≠ pisar na bola; irmã de jogar areia; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Internet discada — o cano que telefona",
               "tileLabel": "Inspeção: Internet discada — o …",
               "href": "/posts/post-inspecao-palavra-internet-discada.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-internet-discada",
               "description": "Palavras: internet discada = dial-up; ocupa o telefone; smash niocenchcadaro; ≠ DSL ≠ login; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Jogar areia — o grão no jogo alheio",
+              "tileLabel": "Inspeção: Jogar areia — o grão …",
+              "href": "/posts/post-inspecao-expressao-jogar-areia.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-jogar-areia",
+              "description": "Expressões: jogar areia — atrapalhar o plano alheio; ≠ sabotagem-manual ≠ ventilador ≠ praia; irmã de baixar a bola; Valeu !!!"
             },
             {
               "label": "Inspeção: Isqueiro Clipper — o irmão recarregável do BIC",
@@ -4562,6 +4610,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: mitologia (mŷthos + lógos) — ofício de contar os deuses; lema de /mitologia/; Anúbis noutra sala; Valeu !!!"
             },
             {
+              "label": "Inspeção: Profanar — umbral do templo; professor, propagação, programação",
+              "tileLabel": "Inspeção: Profanar — umbral do …",
+              "href": "/posts/post-inspecao-palavra-profanar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-profanar",
+              "description": "Palavras: profanar (lat. pro- + fānum) — fora do templo × violar; professor é outra raiz (profitērī); propagação = estaca; programação = grámma na sala tecnologia; Faça o seu melhor · Valeu !!!"
+            },
+            {
               "label": "Inspeção: Anúbis — jnpw, o chacal, a balança; algum deus do catálogo",
               "tileLabel": "Inspeção: Anúbis — jnpw, o chac…",
               "href": "/posts/post-inspecao-palavra-anubis.html",
@@ -4578,20 +4634,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: for / if / else — decidir, o outro caminho, repetir com fim; aula 0 em /tecnologia/; ≠ Maria ≠ loop infinito; Valeu !!!"
             },
             {
+              "label": "Inspeção: Cilada — cēlāta, o que se esconde para apanhar",
+              "tileLabel": "Inspeção: Cilada — cēlāta, o qu…",
+              "href": "/posts/post-inspecao-palavra-cilada.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-cilada",
+              "description": "Palavras: Cilada ← lat. cēlāta / cēlāre — tocaia × ardil × situação × ofício; ≠ celada ≠ desastre ≠ risco; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Inserção — derivação de inserir (-ção), o gesto e o nome",
+              "tileLabel": "Inspeção: Inserção — derivação …",
+              "href": "/posts/post-inspecao-palavra-insercao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-insercao",
+              "description": "Palavras: inserir → inserção — étimo lat. inserere / insertiō; sufixo -ção; ≠ inseto ≠ upsert; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
               "tileLabel": "Inspeção: Eletrizante — carga, …",
               "href": "/posts/post-inspecao-palavra-eletrizante.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-eletrizante",
               "description": "Palavras: «eletrizante» (eletro- + intensidade) — metáfora de carga e hype BR («show eletrizante»); tipografia eleltrioxsamndo → eletrizante; elos fogo e escala de louvor."
-            },
-            {
-              "label": "Inspeção: Legal — lei, gíria BR «bacana» e Valeu !!!",
-              "tileLabel": "Inspeção: Legal — lei, gíria BR…",
-              "href": "/posts/post-inspecao-palavra-legal.html",
-              "icon": "🔍",
-              "slug": "post-inspecao-palavra-legal",
-              "description": "Palavras: «legal» (lat. *legālis*) — eixo jurídico e gíria BR «bacana»; contraste com inglês; elos ilícito, Lei 11.343, descriminalização, risco e verdade."
             },
             {
               "label": "Inspeção: ausdhuashduas — riso online e oralidade BR",
