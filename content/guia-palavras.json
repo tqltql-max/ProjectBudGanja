@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:02:43.969Z",
+  "updatedAt": "2026-08-24T11:03:40.801Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4854,18 +4854,18 @@
     {
       "id": "incrivel",
       "word": "incrível",
-      "simple": "Lat. incredibilis — inacreditável e elogio BR «uau»; escala legal → especial → genial → incrível; Valeu !!!",
-      "simpleEn": "Lat. incredibilis — unbelievable and BR praise “wow”; scale legal → especial → genial → incrível; Valeu !!!",
-      "simpleEs": "Lat. incredibilis — inacreditável y elogio BR «uau»; escala legal → especial → genial → incrível; ¡Valeu !!!",
+      "simple": "Lat. incredibilis ← credere — inacreditável e elogio BR «uau»; cruza com acreditar (mesmo tronco) e fé (fides, outro étimo); Valeu !!!",
+      "simpleEn": "Lat. incredibilis ← credere — unbelievable and BR praise “wow”; crosses with acreditar (same trunk) and fé (fides, other etymon); Valeu !!!",
+      "simpleEs": "Lat. incredibilis ← credere — inacreditável y elogio BR «uau»; cruza con acreditar (mismo tronco) y fé (fides, otro étimo); ¡Valeu !!!",
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-incrivel.html",
-      "history": "Incrível vem do latim incredibilis — o que não se pode crer — e no BR é o uau da escala legal → especial → genial → incrível.",
-      "curiosities": "O laboratório trata o adjectivo como elogio com rasto, não como fim do ofício.",
-      "historyEn": "Portuguese incrível comes from Latin incredibilis — what cannot be believed — and in Brazil is the wow on the scale legal → especial → genial → incrível.",
-      "curiositiesEn": "The lab treats the adjective as praise with a trail, not as the end of craft.",
-      "historyEs": "Increíble viene del latín incredibilis — lo que no se puede creer — y en BR es el uau de la escala legal → especial → genial → incrível.",
-      "curiositiesEs": "El laboratorio trata el adjetivo como elogio con rastro, no como fin del oficio."
+      "history": "Incrível vem do latim incredibilis (in- + credibilis ← credere). No laboratório cruza com acreditar (mesmo tronco) e com fé (fides): o peito pode segurar o não-crível, mas os étimos não se fundem.",
+      "curiosities": "O in- marca o limite do crédito, não apaga o ofício. «É incrível, logo é verdade» é falácia. Irmão: inacreditável (via acreditar). Fecho: Valeu !!!",
+      "historyEn": "Portuguese incrível comes from Latin incredibilis (in- + credibilis ← credere). In the lab it crosses with acreditar (same trunk) and fé (fides): the chest may hold the unbelievable, but the etymons do not fuse.",
+      "curiositiesEn": "The in- marks the limit of credit; it does not erase craft. “It is incredible, therefore true” is a fallacy. Sibling: inacreditável. Close: Valeu !!!",
+      "historyEs": "Increíble viene del latín incredibilis (in- + credibilis ← credere). En el laboratorio cruza con acreditar (mismo tronco) y fé (fides): el pecho puede sujetar lo no creíble, pero los étimos no se fusionan.",
+      "curiositiesEs": "El in- marca el límite del crédito, no apaga el oficio. «Es incrível, luego es verdad» es falacia. Hermano: inacreditável. Cierre: ¡Valeu !!!"
     },
     {
       "id": "infusao",
@@ -8580,6 +8580,22 @@
       "curiositiesEn": "Zaroio is zarolho in the ear (palatal lh becomes i, as olho → oio). Working hypothesis: zarolho via zanolho, a blend of zanaga + olho — the second member is olho; the prefix stays open. Naming is not mocking. Plant olho is a bud; olho gordo is folklore.",
       "historyEs": "Olho viene del latín oculus (siglo XIII en gallego-portugués). Familia: olhar, óculo, ocular; español ojo, francés œil, italiano occhio. El inglés eye es germánico — paralelo, no padre. El griego ophthalmós alimenta la oftalmología, otro árbol. El verbo eu olho es homógrafo: misma familia, otra clase.",
       "curiositiesEs": "Zaroio es zarolho en el oído (lh palatal vira i, como olho → oio). Hipótesis de trabajo: zarolho vía zanolho, blend de zanaga + olho. Nombrar no es insultar. Olho de la planta es brote; olho gordo es folclore."
+    },
+    {
+      "id": "oculos",
+      "word": "óculos",
+      "simple": "Plural de óculo ← lat. oculus — o objecto (lentes + armação) diante do olho. ≠ órgão ≠ lente de contacto ≠ marca. Valeu !!!",
+      "simpleEn": "Plural of óculo ← Lat. oculus — the object (lenses + frame) in front of the eye. ≠ organ ≠ contacts ≠ brand. Valeu !!!",
+      "simpleEs": "Plural de óculo ← lat. oculus — el objeto (lentes + montura) delante del ojo. ≠ órgano ≠ lentilla ≠ marca. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-oculos.html",
+      "history": "Óculos é o plural de óculo, do latim oculus (olho). O órgão fica na ficha olho (cruzada com zaroio). O objecto é o par de lentes na armação, com hastes nas orelhas. A fala BR muitas vezes diz o óculos (um par); o lema no papel é plural.",
+      "curiosities": "O par senta-se à frente do olho, em regra sem o tocar — a lente de contacto é outra coisa. Grau, sol, EPI e natação são funções do mesmo lema. A marca não vê por ti.",
+      "historyEn": "Óculos is the plural of óculo, from Latin oculus (eye). The organ is the olho sheet (crossed with zaroio). The object is the pair of lenses in a frame, temples on the ears. Spoken BR often says o óculos (one pair); the lemma stays plural.",
+      "curiositiesEn": "The pair sits in front of the eye, usually without touching it — a contact lens is another thing. Prescription, sun, safety and swim are functions of the same lemma. A brand does not see for you.",
+      "historyEs": "Óculos es el plural de óculo, del latín oculus (ojo). El órgano está en la ficha olho (cruzada con zaroio). El objeto es el par de lentes en la montura. El habla BR a menudo dice o óculos; el lema sigue plural.",
+      "curiositiesEs": "El par se sienta delante del ojo, por regla sin tocarlo — la lentilla es otra cosa. Grado, sol, EPI y natación son funciones del mismo lema. La marca no ve por ti."
     },
     {
       "id": "zaroio",

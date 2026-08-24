@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:00:41.260Z",
+  "updatedAt": "2026-08-24T11:03:40.801Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -2867,6 +2867,34 @@
       "notes": "Cap. 59 — ficha completa (antes lote Tamara curto); perigo × traço; medo ≠ risco."
     },
     {
+      "id": "palavra-danger",
+      "title": "Danger — *dominus*; cruzar com perigo (*periculum*)",
+      "titleEn": "Danger — *dominus*; cross with perigo (*periculum*)",
+      "titleEs": "Danger — *dominus*; cruzar con perigo (*periculum*)",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: Danger (EN, poder do senhor) × perigo (PT, a prova) — relação sem fundir; ≠ risco ≠ medo.",
+      "whyEn": "Words: Danger (EN, lord’s power) × perigo (PT, the trial) — relation without fusing; ≠ risk ≠ fear.",
+      "whyEs": "Palabras: Danger (EN, poder del señor) × perigo (PT, la prueba) — relación sin fundir; ≠ riesgo ≠ miedo.",
+      "suggestedSlug": "inspecao-palavra-danger",
+      "doneHref": "/posts/post-inspecao-palavra-danger.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-danger.html",
+        "https://en.wiktionary.org/wiki/danger",
+        "https://pt.wiktionary.org/wiki/perigo",
+        "https://en.wiktionary.org/wiki/dominus#Latin",
+        "https://en.wiktionary.org/wiki/periculum#Latin",
+        "https://en.wiktionary.org/wiki/peril",
+        "/posts/post-inspecao-palavra-relacao.html",
+        "/posts/post-inspecao-palavra-risco.html",
+        "/posts/post-inspecao-palavra-medo.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 304 — étimo dominus × periculum; método relação; sem NR/laudo."
+    },
+    {
       "id": "palavra-solitario",
       "title": "Solitário — léxico Tamara / Bom dia, Inverno",
       "titleEn": "Inspection: Solitário — Tamara / Bom dia, Inverno lexicon",
@@ -3494,27 +3522,28 @@
     },
     {
       "id": "palavra-incrivel",
-      "title": "Incrível — incredibilis, elogio BR e a escala legal→genial",
-      "titleEn": "Incrível — incredibilis, BR praise, and the legal→genial scale",
-      "titleEs": "Incrível — incredibilis, elogio BR y la escala legal→genial",
+      "title": "Incrível — incredibilis, cruzado com acreditar e fé",
+      "titleEn": "Incrível — incredibilis, crossed with acreditar and fé",
+      "titleEs": "Incrível — incredibilis, cruzado con acreditar y fé",
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: incrível (lat. incredibilis) — incredulidade e elogio BR; escala legal/especial/genial; Valeu !!!",
-      "whyEn": "Words: incrível (Lat. incredibilis) — unbelief and BR praise; legal/especial/genial scale; Valeu !!!",
-      "whyEs": "Palabras: incrível (lat. incredibilis) — incredulidad y elogio BR; escala legal/especial/genial; ¡Valeu !!!",
+      "why": "Palavras: incrível (lat. incredibilis ← credere) — incredulidade e elogio BR; cruza com acreditar (mesmo tronco) e fé (fides); Valeu !!!",
+      "whyEn": "Words: incrível (Lat. incredibilis ← credere) — unbelief and BR praise; crosses with acreditar (same trunk) and fé (fides); Valeu !!!",
+      "whyEs": "Palabras: incrível (lat. incredibilis ← credere) — incredulidad y elogio BR; cruza con acreditar y fé (fides); ¡Valeu !!!",
       "suggestedSlug": "inspecao-palavra-incrivel",
       "doneHref": "/posts/post-inspecao-palavra-incrivel.html",
       "seriesHint": "palavras-origem",
       "sources": [
         "https://pt.wiktionary.org/wiki/incr%C3%ADvel",
         "https://en.wiktionary.org/wiki/incredibilis",
-        "/posts/post-inspecao-palavra-legal.html",
-        "/posts/post-inspecao-palavra-genial.html",
-        "/posts/post-inspecao-palavra-fantastico.html",
+        "https://pt.wiktionary.org/wiki/acreditar",
+        "https://pt.wiktionary.org/wiki/f%C3%A9",
+        "/posts/post-inspecao-palavra-inacreditavel.html",
+        "/posts/post-inspecao-arte-amor-e-fe.html",
         "/posts/post-inspecao-palavra-valeu.html"
       ],
-      "notes": "Cap. 48 — incredibilis × elogio BR; escala só com fichas existentes."
+      "notes": "Cap. 48 — credere × fides; incrível não funde com fé; irmão inacreditável."
     },
     {
       "id": "palavra-coracao",
@@ -7391,6 +7420,55 @@
       "notes": "Cap. 167 — cluster sinais do corpo."
     },
     {
+      "id": "palavra-olho",
+      "title": "Olho — oculus; cruzado com zaroio (zarolho)",
+      "titleEn": "Olho — oculus; crossed with zaroio (zarolho)",
+      "titleEs": "Olho — oculus; cruzado con zaroio (zarolho)",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: olho (lat. oculus) × zaroio (voz de zarolho — o olho que não alinha); lh → i; ≠ eye ≠ xingo.",
+      "whyEn": "Words: olho (Lat. oculus) × zaroio (field voice of zarolho — the eye that does not line up); lh → i.",
+      "whyEs": "Palabras: olho (lat. oculus) × zaroio (voz de zarolho — el ojo que no alinea); lh → i.",
+      "suggestedSlug": "inspecao-palavra-olho",
+      "doneHref": "/posts/post-inspecao-palavra-olho.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-olho.html",
+        "https://pt.wiktionary.org/wiki/olho",
+        "https://en.wiktionary.org/wiki/oculus#Latin",
+        "https://pt.wiktionary.org/wiki/zarolho",
+        "https://en.wiktionary.org/wiki/zanolho",
+        "/posts/post-inspecao-palavra-orelha.html",
+        "/posts/post-inspecao-palavra-sinais.html",
+        "/posts/post-inspecao-palavra-luz.html",
+        "/posts/post-inspecao-palavra-miss.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 305 — olho × zaroio; zarolho no papel; prefixo via zanolho (média); ≠ xingo."
+    },
+    {
+      "id": "palavra-zaroio",
+      "title": "Zaroio — voz de zarolho; cruzado na ficha olho",
+      "titleEn": "Zaroio — field voice of zarolho; crossed in the olho sheet",
+      "titleEs": "Zaroio — voz de zarolho; cruzado en la ficha olho",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: zaroio = zarolho no ouvido (lh → i); o olho que não alinha; ver ficha olho.",
+      "whyEn": "Words: zaroio = zarolho in the ear (lh → i); the eye that does not line up; see olho.",
+      "whyEs": "Palabras: zaroio = zarolho en el oído (lh → i); el ojo que no alinea; ver olho.",
+      "suggestedSlug": "inspecao-palavra-olho",
+      "doneHref": "/posts/post-inspecao-palavra-olho.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-olho.html",
+        "https://pt.wiktionary.org/wiki/zarolho",
+        "https://en.wiktionary.org/wiki/zanolho"
+      ],
+      "notes": "Cap. 305 — mesma ficha que olho."
+    },
+    {
       "id": "palavra-mama",
       "title": "Mama — teta, sinal de algo fácil",
       "titleEn": "Mama — teat, signal of something easy",
@@ -8040,6 +8118,32 @@
       "notes": "Cap. 199 — objecto-leitor; ≠ verbo afinar ≠ tarraxa ≠ passarinho."
     },
     {
+      "id": "objeto-oculos",
+      "title": "Óculos — o objecto diante do olho",
+      "titleEn": "Óculos — the object in front of the eye",
+      "titleEs": "Óculos — el objeto delante del ojo",
+      "tipo": "objeto",
+      "priority": 2,
+      "status": "feita",
+      "why": "Objecto: óculos (plural de óculo ← lat. oculus) — lentes + armação diante do olho; ≠ órgão ≠ contacto ≠ marca.",
+      "whyEn": "Object: óculos (plural of óculo ← Lat. oculus) — lenses + frame in front of the eye; ≠ organ ≠ contacts ≠ brand.",
+      "whyEs": "Objeto: óculos (plural de óculo ← lat. oculus) — lentes + montura delante del ojo; ≠ órgano ≠ lentilla ≠ marca.",
+      "suggestedSlug": "inspecao-palavra-oculos",
+      "doneHref": "/posts/post-inspecao-palavra-oculos.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-oculos.html",
+        "https://pt.wiktionary.org/wiki/%C3%B3culos",
+        "https://pt.wiktionary.org/wiki/%C3%B3culo",
+        "https://pt.wikipedia.org/wiki/%C3%93culos",
+        "/posts/post-inspecao-palavra-olho.html",
+        "/posts/post-inspecao-palavra-objetos.html",
+        "/objetos/",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 306 — objecto; mesmo oculus que olho; outra classe."
+    },
+    {
       "id": "palavra-script",
       "title": "Script — sequência escrita, não destino",
       "titleEn": "Script — written sequence, not destiny",
@@ -8047,9 +8151,9 @@
       "tipo": "palavra",
       "priority": 2,
       "status": "feita",
-      "why": "Palavras: script (lat. scrīptum ← scrībere) — sequência EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar.",
-      "whyEn": "Words: script (Lat. scrīptum ← scrībere) — sequence EN→BR; roteiro × code; ≠ destiny; links skill/pattern/commitar.",
-      "whyEs": "Palabras: script (lat. scrīptum ← scrībere) — secuencia EN→BR; roteiro × código; ≠ destino; vínculos skill/pattern/commitar.",
+      "why": "Palavras: script (lat. scrīptum ← scrībere) — sequência EN→BR; roteiro × código; ≠ destino; elos skill/pattern/commitar/opsert.",
+      "whyEn": "Words: script (Lat. scrīptum ← scrībere) — sequence EN→BR; roteiro × code; ≠ destiny; links skill/pattern/commitar/opsert.",
+      "whyEs": "Palabras: script (lat. scrīptum ← scrībere) — secuencia EN→BR; roteiro × código; ≠ destino; vínculos skill/pattern/commitar/opsert.",
       "suggestedSlug": "inspecao-palavra-script",
       "doneHref": "/posts/post-inspecao-palavra-script.html",
       "seriesHint": "palavras-origem",
@@ -8060,9 +8164,10 @@
         "/posts/post-inspecao-palavra-skill.html",
         "/posts/post-inspecao-palavra-pattern.html",
         "/posts/post-inspecao-palavra-commitar.html",
+        "/posts/post-inspecao-palavra-upsert.html",
         "/posts/post-inspecao-palavra-valeu.html"
       ],
-      "notes": "Cap. 200 — lat. scrīptum; sequência escrita; anti-destino; elos skill/pattern/commitar."
+      "notes": "Cap. 200 — lat. scrīptum; sequência escrita; anti-destino; elos skill/pattern/commitar/opsert."
     },
     {
       "id": "palavra-upsert",
