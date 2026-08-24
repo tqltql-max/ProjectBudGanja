@@ -45,6 +45,11 @@ const {
   poemWakeUpEs
 } = require('../lib/wake-up-inspecao-post.js');
 const {
+  poemBackDoorManPt,
+  poemBackDoorManEn,
+  poemBackDoorManEs
+} = require('../lib/back-door-man-inspecao-post.js');
+const {
   poemAllRightNowPt,
   poemAllRightNowEn,
   poemAllRightNowEs
@@ -234,6 +239,11 @@ const {
   poemEn: poemComprimentoEn,
   poemEs: poemComprimentoEs
 } = require('../lib/comprimento-distancia-relatividade-inspecao-post.js');
+const {
+  poemPt: poemMapaPt,
+  poemEn: poemMapaEn,
+  poemEs: poemMapaEs
+} = require('../lib/mapa-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -241,6 +251,24 @@ const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
 const doc = {
   updatedAt: new Date().toISOString(),
   poems: [
+    {
+      id: 'mapa',
+      slug: 'mapa',
+      title: 'Mapa',
+      titleEn: 'Mapa',
+      titleEs: 'Mapa',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser: 'Eco BudGanja — mappa (pano) × manus (mão); MApa / Maão; o pano na palma; Valeu !!!',
+      teaserEn: 'BudGanja echo — mappa (cloth) × manus (hand); MApa / Maão; cloth in the palm; Valeu !!!',
+      teaserEs: 'Eco BudGanja — mappa (paño) × manus (mano); MApa / Maão; el paño en la palma; ¡Valeu !!!',
+      body: poemMapaPt(),
+      bodyEn: poemMapaEn(),
+      bodyEs: poemMapaEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-mapa.html',
+      tags: ['poesia', 'vida', 'mapa', 'mao', 'mappa', 'manus']
+    },
     {
       id: 'maria',
       slug: 'maria',
@@ -780,6 +808,27 @@ const doc = {
       bodyEs: poemWakeUpEs(),
       inspectionHref: '/posts/post-inspecao-arte-wake-up.html',
       tags: ['poesia', 'vida', 'rage', 'máquina', 'acordar', 'matrix']
+    },
+    {
+      id: 'back-door-man',
+      slug: 'back-door-man',
+      title: 'Back Door Man',
+      titleEn: 'Back Door Man',
+      titleEs: 'Back Door Man',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser:
+        'Eco BudGanja dos Doors — a porta de trás; Jim na voz, Dixon na génese; abrir sem esconder a mão.',
+      teaserEn:
+        'BudGanja echo of the Doors — the back door; Jim on vocals, Dixon at genesis; open without hiding the hand.',
+      teaserEs:
+        'Eco BudGanja de The Doors — la puerta de atrás; Jim a la voz, Dixon en la génesis; abrir sin esconder la mano.',
+      body: poemBackDoorManPt(),
+      bodyEn: poemBackDoorManEn(),
+      bodyEs: poemBackDoorManEs(),
+      inspectionHref: '/posts/post-inspecao-arte-back-door-man.html',
+      tags: ['poesia', 'vida', 'doors', 'jim', 'porta', 'blues']
     },
     {
       id: 'all-right-now',

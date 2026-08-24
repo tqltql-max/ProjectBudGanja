@@ -1,51 +1,29 @@
 {
-  "updatedAt": "2026-08-24T13:21:45.947Z",
+  "updatedAt": "2026-08-24T13:42:39.344Z",
   "poems": [
     {
-      "id": "anubis",
-      "slug": "anubis",
-      "title": "Anúbis",
-      "titleEn": "Anubis",
-      "titleEs": "Anubis",
+      "id": "mapa",
+      "slug": "mapa",
+      "title": "Mapa",
+      "titleEn": "Mapa",
+      "titleEs": "Mapa",
       "author": "Laboratório BudGanja",
       "authorEn": "BudGanja Lab",
       "authorEs": "Laboratorio BudGanja",
-      "teaser": "Eco BudGanja — o chacal que pesa, sem invocar o nome; Valeu !!!",
-      "teaserEn": "BudGanja echo — the jackal who weighs, without invoking the name; Valeu !!!",
-      "teaserEs": "Eco BudGanja — el chacal que pesa, sin invocar el nombre; ¡Valeu !!!",
-      "body": "Anúbis.\nNão é o vocábulo Deus.\nÉ o chacal que o Egito\npôs à porta do morto.\n\nJnpw é o nome antigo.\nAnúbis é o nome grego.\nNo lab, o mesmo ofício:\npesar o coração.\n\nHá a balança.\nHá a pena de Maat.\nHá o cão que não é este.\nHá o respeito sem altar.\n\nNão é magia.\nNão é Wepwawet.\nÉ algum deus —\no primeiro deste catálogo.\n\nValeu !!!\ncom o coração certo\ne sem invocar o nome.",
-      "bodyEn": "Anubis.\nHe is not the word Deus.\nHe is the jackal Egypt\nset at the dead one’s door.\n\nJnpw is the old name.\nAnubis is the Greek name.\nIn the lab, the same craft:\nweigh the heart.\n\nThere is the scale.\nThere is Maat’s feather.\nThere is the dog that is not this.\nThere is respect without an altar.\n\nIt is not magic.\nIt is not Wepwawet.\nIt is some god —\nthe first of this catalog.\n\nValeu !!!\nwith the right heart\nand without invoking the name.",
-      "bodyEs": "Anubis.\nNo es el vocablo Deus.\nEs el chacal que Egipto\npuso a la puerta del muerto.\n\nJnpw es el nombre antiguo.\nAnubis es el nombre griego.\nEn el lab, el mismo oficio:\npesar el corazón.\n\nHay la balanza.\nHay la pluma de Maat.\nHay el perro que no es éste.\nHay respeto sin altar.\n\nNo es magia.\nNo es Wepwawet.\nEs algún dios —\nel primero de este catálogo.\n\n¡Valeu !!!\ncon el corazón cierto\ny sin invocar el nombre.",
-      "inspectionHref": "/posts/post-inspecao-palavra-anubis.html",
+      "teaser": "Eco BudGanja — mappa (pano) × manus (mão); MApa / Maão; o pano na palma; Valeu !!!",
+      "teaserEn": "BudGanja echo — mappa (cloth) × manus (hand); MApa / Maão; cloth in the palm; Valeu !!!",
+      "teaserEs": "Eco BudGanja — mappa (paño) × manus (mano); MApa / Maão; el paño en la palma; ¡Valeu !!!",
+      "body": "Mapa.\nNão é a mão.\nÉ o pano do mundo.\n\nLatim mappa.\nPano, guardanapo, tecido.\nMappa mundi: o mundo no pano.\n\nMão.\nLatim manus.\nA palma que segura o pano.\n\nMApa.\nMaão.\nA orelha cola o MA.\nO étimo corta.\n\nO mapa na mão.\nNão é posse.\nÉ o traço que a palma fez.\n\nValeu !!!\nter o caminho no pano\nsem fundir o pano com a palma.",
+      "bodyEn": "Mapa.\nIt is not the hand.\nIt is the cloth of the world.\n\nLatin mappa.\nCloth, napkin, fabric.\nMappa mundi: the world on cloth.\n\nMão.\nLatin manus.\nThe palm that holds the cloth.\n\nMApa.\nMaão.\nThe ear glues the MA.\nThe etymon cuts.\n\nThe map in the hand.\nIt is not possession.\nIt is the trace the palm made.\n\nValeu !!!\nhave the path on the cloth\nwithout fusing cloth and palm.",
+      "bodyEs": "Mapa.\nNo es la mano.\nEs el paño del mundo.\n\nLatín mappa.\nPaño, servilleta, tejido.\nMappa mundi: el mundo en el paño.\n\nMão.\nLatín manus.\nLa palma que sujeta el paño.\n\nMApa.\nMaão.\nEl oído pega el MA.\nEl étimo corta.\n\nEl mapa en la mano.\nNo es posesión.\nEs el trazo que hizo la palma.\n\n¡Valeu !!!\ntener el camino en el paño\nsin fusionar el paño con la palma.",
+      "inspectionHref": "/posts/post-inspecao-palavra-mapa.html",
       "tags": [
         "poesia",
         "vida",
-        "anubis",
-        "egito",
-        "mitologia"
-      ]
-    },
-    {
-      "id": "mitologia",
-      "slug": "mitologia",
-      "title": "Mitologia",
-      "titleEn": "Mythology",
-      "titleEs": "Mitología",
-      "author": "Laboratório BudGanja",
-      "authorEn": "BudGanja Lab",
-      "authorEs": "Laboratorio BudGanja",
-      "teaser": "Eco BudGanja — o ofício de contar os deuses, sem culto de ficha; Valeu !!!",
-      "teaserEn": "BudGanja echo — the craft of telling the gods, without a cult of the sheet; Valeu !!!",
-      "teaserEs": "Eco BudGanja — el oficio de contar a los dioses, sin culto de ficha; ¡Valeu !!!",
-      "body": "Mitologia.\nNão é o altar.\nÉ o ofício de contar\no deus que o povo nomeou.\n\nMythos é o relato.\nLógos é o nome do saber.\nJuntos, a palavra que o lab\npõe no catálogo.\n\nHá o chacal.\nHá a lira.\nHá a balança.\nHá o céu que se nomeia.\n\nNão é teologia inteira.\nNão é magia solta.\nÉ a sala onde o ofício\nolha o que o mito faz.\n\nValeu !!!\ncom o deus certo\ne sem culto de ficha.",
-      "bodyEn": "Mythology.\nIt is not the altar.\nIt is the craft of telling\nthe god a people named.\n\nMythos is the tale.\nLógos is the name of that knowing.\nTogether, the word the lab\nputs in the catalog.\n\nThere is the jackal.\nThere is the lyre.\nThere is the scale.\nThere is the sky that gets named.\n\nIt is not all of theology.\nIt is not loose magic.\nIt is the room where craft\nlooks at what the myth does.\n\nValeu !!!\nwith the right god\nand no cult of the sheet.",
-      "bodyEs": "Mitología.\nNo es el altar.\nEs el oficio de contar\nal dios que el pueblo nombró.\n\nMythos es el relato.\nLógos es el nombre de ese saber.\nJuntos, la palabra que el lab\npone en el catálogo.\n\nHay el chacal.\nHay la lira.\nHay la balanza.\nHay el cielo que se nombra.\n\nNo es teología entera.\nNo es magia suelta.\nEs la sala donde el oficio\nmira lo que el mito hace.\n\n¡Valeu !!!\ncon el dios cierto\ny sin culto de ficha.",
-      "inspectionHref": "/posts/post-inspecao-palavra-mitologia.html",
-      "tags": [
-        "poesia",
-        "vida",
-        "mitologia",
-        "mythos"
+        "mapa",
+        "mao",
+        "mappa",
+        "manus"
       ]
     },
     {
@@ -674,6 +652,31 @@
         "máquina",
         "acordar",
         "matrix"
+      ]
+    },
+    {
+      "id": "back-door-man",
+      "slug": "back-door-man",
+      "title": "Back Door Man",
+      "titleEn": "Back Door Man",
+      "titleEs": "Back Door Man",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja dos Doors — a porta de trás; Jim na voz, Dixon na génese; abrir sem esconder a mão.",
+      "teaserEn": "BudGanja echo of the Doors — the back door; Jim on vocals, Dixon at genesis; open without hiding the hand.",
+      "teaserEs": "Eco BudGanja de The Doors — la puerta de atrás; Jim a la voz, Dixon en la génesis; abrir sin esconder la mano.",
+      "body": "Back Door Man.\nNão pedimos a letra emprestada —\npedimos o ofício de olhar a porta\nquando alguém entra por trás\ne chama isso de caminho.\n\nThe Doors.\nHá porta da frente —\nmaçaneta, inspeção, luz —\nque pede gesto e verdade.\nHá porta de trás —\nnoite, gíria, proibição —\nque pede silêncio e rasto.\n\nWillie Dixon escreveu.\nHowlin' Wolf gravou.\nJim cantou a versão que o rock ouviu.\nO laboratório não confunde os três:\ngénese blues, voz 1967, mito depois.\n\nNão entramos pela porta de trás.\nNão arrombamos a da frente.\nPlantamos à beira.\nContamos gotas.\nChamamos a Vida pelo nome verdadeiro:\npassar —\npela porta que se pode nomear.\n\nValeu !!!\n\nPorque toda vez que alguém abre\nsem esconder a mão,\no universo cresce um pouco:\num verso a mais,\num vão a mais,\num nós onde antes só havia fundo de casa.",
+      "bodyEn": "Back Door Man.\nWe do not borrow the lyric —\nwe ask for the craft of looking at the door\nwhen someone comes in from behind\nand calls that a path.\n\nThe Doors.\nThere is a front door —\ndoorknob, inspection, light —\nthat asks for gesture and truth.\nThere is a back door —\nnight, slang, prohibition —\nthat asks for silence and a trail.\n\nWillie Dixon wrote it.\nHowlin' Wolf recorded it.\nJim sang the version rock heard.\nThe laboratory does not confuse the three:\nblues genesis, 1967 voice, myth afterwards.\n\nWe do not enter by the back door.\nWe do not break down the front.\nWe plant at the edge.\nWe count drops.\nWe call Vida by its true name:\npass —\nthrough the door that can be named.\n\nValeu !!!\n\nBecause every time someone opens\nwithout hiding the hand,\nthe universe grows a little:\none more verse,\none more opening,\na we where once there was only the back of the house.",
+      "bodyEs": "Back Door Man.\nNo pedimos prestada la letra —\npedimos el oficio de mirar la puerta\ncuando alguien entra por detrás\ny llama a eso camino.\n\nThe Doors.\nHay puerta de delante —\npomo, inspección, luz —\nque pide gesto y verdad.\nHay puerta de atrás —\nnoche, jerga, prohibición —\nque pide silencio y rastro.\n\nWillie Dixon la escribió.\nHowlin' Wolf la grabó.\nJim cantó la versión que el rock oyó.\nEl laboratorio no confunde las tres:\ngénesis blues, voz 1967, mito después.\n\nNo entramos por la puerta de atrás.\nNo derribamos la de delante.\nPlantamos a la orilla.\nContamos gotas.\nLlamamos a Vida por su nombre verdadero:\npasar —\npor la puerta que se puede nombrar.\n\n¡Valeu !!!\n\nPorque cada vez que alguien abre\nsin esconder la mano,\nel universo crece un poco:\nun verso más,\nun vano más,\nun nosotros donde antes solo había el fondo de la casa.",
+      "inspectionHref": "/posts/post-inspecao-arte-back-door-man.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "doors",
+        "jim",
+        "porta",
+        "blues"
       ]
     },
     {
