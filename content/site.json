@@ -2000,6 +2000,14 @@
                   "description": "Pessoas: homenagem a Robson Gonçalves de Oliveira e à família — maratonista CLT de São Bernardo; o gesto de Boston (2026) e o elo juntos / Faça o seu melhor; Valeu !!!"
                 },
                 {
+                  "label": "Inspeção: Cruzamento — Estrada × Encruzilhada × Jesus Cristo",
+                  "tileLabel": "Inspeção: Cruzamento — Estrada …",
+                  "href": "/posts/post-inspecao-cruzamento-estrada-encruzilhada-jesus-cristo.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-cruzamento-estrada-encruzilhada-jesus-cristo",
+                  "description": "Pessoas · cruzamento: estrada (strata) × automóvel × bateria × encruzilhada (crux) × Jesus Cristo — o leito, a máquina, o pulso e o X encontram «Eu sou o caminho»; Valeu !!!"
+                },
+                {
                   "label": "Inspeção: Manual Maker — ofício Arduino, 3D e laser no Manual do Mundo",
                   "tileLabel": "Inspeção: Manual Maker — ofício…",
                   "href": "/posts/post-inspecao-manual-maker.html",
@@ -4662,6 +4670,38 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-insercao",
                   "description": "Palavras: inserir → inserção — étimo lat. inserere / insertiō; sufixo -ção; ≠ inseto ≠ upsert; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Estrada — a via calçada (≠ caminho)",
+                  "tileLabel": "Inspeção: Estrada — a via calça…",
+                  "href": "/posts/post-inspecao-palavra-estrada.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-estrada",
+                  "description": "Palavras: estrada (lat. strata «via calçada») ≠ caminho (método); objectos automóvel e bateria; irmã encruzilhada; cruzamento Jesus Cristo; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Automóvel — o objecto que se move a si",
+                  "tileLabel": "Inspeção: Automóvel — o objecto…",
+                  "href": "/posts/post-inspecao-palavra-automovel.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-automovel",
+                  "description": "Objecto: automóvel (gr. autós + lat. mōbilis) — move-se a si na estrada; gatilho altomovel (alto ≠ auto); pulso bateria; catálogo Objetos; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Bateria — o pulso do automóvel (≠ tambor ≠ canhão)",
+                  "tileLabel": "Inspeção: Bateria — o pulso do …",
+                  "href": "/posts/post-inspecao-palavra-bateria.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-bateria",
+                  "description": "Objecto: bateria (fr. batterie ← battre) — feixe; lema = célula do automóvel na estrada; salas artilharia/tambores nomeadas; pulso ≠ alma; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Encruzilhada — o sítio da cruz das vias",
+                  "tileLabel": "Inspeção: Encruzilhada — o síti…",
+                  "href": "/posts/post-inspecao-palavra-encruzilhada.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-encruzilhada",
+                  "description": "Palavras: encruzilhada (en- + cruz + -ilhada) — o X da estrada; gatilho encruziliada; ≠ leito ≠ madeiro; cruzamento Jesus Cristo; Valeu !!!"
                 },
                 {
                   "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
