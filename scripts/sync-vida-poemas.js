@@ -219,6 +219,11 @@ const {
   poemEn: poemParabolaEn,
   poemEs: poemParabolaEs
 } = require('../lib/parabola-inspecao-post.js');
+const {
+  poemPt: poemMariaPt,
+  poemEn: poemMariaEn,
+  poemEs: poemMariaEs
+} = require('../lib/maria-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -226,6 +231,24 @@ const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
 const doc = {
   updatedAt: new Date().toISOString(),
   poems: [
+    {
+      id: 'maria',
+      slug: 'maria',
+      title: 'Maria',
+      titleEn: 'Maria',
+      titleEs: 'Maria',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser: 'Eco BudGanja — Miryam; cruzada com for (para); a partícula aponta; Valeu !!!',
+      teaserEn: 'BudGanja echo — Miryam; crossed with for (para); the particle points; Valeu !!!',
+      teaserEs: 'Eco BudGanja — Miryam; cruzada con for (para); la partícula apunta; ¡Valeu !!!',
+      body: poemMariaPt(),
+      bodyEn: poemMariaEn(),
+      bodyEs: poemMariaEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-maria.html',
+      tags: ['poesia', 'vida', 'maria', 'for', 'para']
+    },
     {
       id: 'ramela',
       slug: 'ramela',
