@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T13:29:48.480Z",
+  "updatedAt": "2026-08-24T13:40:15.605Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -5820,6 +5820,22 @@
       "curiositiesEn": "Valeu !!! with the right word: street «legal!» is not Law 11.343.",
       "historyEs": "Legal viene del latín legalis — conforme a la ley — y en BR también significa bacán. La ficha pide separar el eje jurídico de la jerga de acuerdo.",
       "curiositiesEs": "Valeu !!! con la palabra cierta: el «¡legal!» de la calle no es la Ley 11.343."
+    },
+    {
+      "id": "cool-gelado",
+      "word": "cool gelado",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-cool-gelado.html",
+      "simple": "Derivação de Legal! (gíria bacana): inglês cool (elogio × frio) → PT gelado; não é lei, não é gelo Tamara, não é marca; Valeu !!!",
+      "simpleEn": "Derivation of Legal! (slang): English cool (praise × cold) → PT gelado; not law, not Tamara ice, not a brand; Valeu !!!",
+      "simpleEs": "Derivación de Legal! (jerga): inglés cool (elogio × frío) → PT gelado; no es ley, no es hielo Tamara, no es marca; Valeu !!!",
+      "history": "Cool vem do inglês antigo cōl (frio) e ganhou elogio moderno; gelado vem de gelar ← lat. gelū. No lab a ponte parte da gíria Legal! e recusa o curto-circuito térmico.",
+      "curiosities": "«That's cool!» não se traduz por «está gelado». PT-PT gelado = sorvete; BR gelado = muito frio. Fecho: Valeu !!!",
+      "historyEn": "Cool comes from Old English cōl (cold) and gained modern praise; gelado comes from gelar ← Lat. gelū. The lab starts from slang Legal! and refuses the thermal short circuit.",
+      "curiositiesEn": "“That’s cool!” does not mean “it is ice-cold.” PT-PT gelado = ice cream; BR gelado = very cold. Close: Valeu !!!",
+      "historyEs": "Cool viene del inglés antiguo cōl (frío) y ganó elogio moderno; gelado viene de gelar ← lat. gelū. El lab parte de la jerga Legal! y rechaza el cortocircuito térmico.",
+      "curiositiesEs": "«That’s cool!» no se traduce por «está helado». PT-PT gelado = helado; BR gelado = muy frío. Cierre: Valeu !!!"
     },
     {
       "id": "lei-11-343",

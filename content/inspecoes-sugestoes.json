@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T13:29:48.467Z",
+  "updatedAt": "2026-08-24T13:40:15.587Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -11248,6 +11248,30 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 331 — aula 0; bancada no hub /tecnologia/."
+    },
+    {
+      "id": "palavra-cool-gelado",
+      "title": "Cool Gelado — derivação de Legal !!! (cool × gelado)",
+      "titleEn": "Cool Gelado — derivation of Legal !!! (cool × gelado)",
+      "titleEs": "Cool Gelado — derivación de Legal !!! (cool × gelado)",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: cool gelado deriva de Legal! (gíria bacana) — inglês cool (elogio × frio) → PT gelado; cortes lei / gelo / marca.",
+      "whyEn": "Words: cool gelado derives from Legal! (slang) — English cool (praise × cold) → PT gelado; cuts law / ice / brand.",
+      "whyEs": "Palabras: cool gelado deriva de Legal! (jerga) — inglés cool (elogio × frío) → PT gelado; cortes ley / hielo / marca.",
+      "suggestedSlug": "inspecao-palavra-cool-gelado",
+      "doneHref": "/posts/post-inspecao-palavra-cool-gelado.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://en.wiktionary.org/wiki/cool",
+        "https://pt.wiktionary.org/wiki/gelado",
+        "/posts/post-inspecao-palavra-legal.html",
+        "/posts/post-inspecao-palavra-calor-frio.html",
+        "/posts/post-inspecao-palavra-gelo.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 136 — derivação slang; não misturar lei e termómetro."
     }
   ]
 }
