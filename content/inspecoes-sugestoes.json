@@ -1,7 +1,29 @@
 {
-  "updatedAt": "2026-08-24T11:22:53.680Z",
+  "updatedAt": "2026-08-24T11:28:45.628Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
+    {
+      "id": "derivado-leite",
+      "title": "Leite e laticínios — da ordenha à prateleira industrial",
+      "titleEn": "Milk and dairy — from milking to the industrial shelf",
+      "titleEs": "Leche y lácteos — del ordeño al estante industrial",
+      "tipo": "derivado",
+      "priority": 1,
+      "status": "feita",
+      "why": "Hub Produtos nocivos: leite/laticínios — UHT, pó, queijo, iogurte adoçado e bebidas lácteas; proteína na caseína.",
+      "whyEn": "Harmful-products hub: milk/dairy — UHT, powder, cheese, sweetened yogurt and dairy drinks; protein on the casein sheet.",
+      "whyEs": "Hub Productos nocivos: leche/lácteos — UHT, polvo, queso, yogur azucarado y bebidas lácteas; proteína en caseína.",
+      "suggestedSlug": "inspecao-derivado-leite",
+      "doneHref": "/posts/post-inspecao-derivado-leite.html",
+      "seriesHint": "animais-derivados-risco",
+      "sources": [
+        "/animais/vaca/",
+        "/posts/post-inspecao-derivado-caseina.html",
+        "https://pt.wikipedia.org/wiki/Leite",
+        "https://pt.wikipedia.org/wiki/Latic%C3%ADnio"
+      ],
+      "notes": "Hub da família láctea; não fundir com a ficha Caseína nem com carnes da vaca."
+    },
     {
       "id": "plataformas-ensino-govbr",
       "title": "Plataformas de ensino GOV.BR — Canal Educação, MEC Idiomas e MEC Livros",
@@ -3023,6 +3045,35 @@
         "/vida/"
       ],
       "notes": "Backspace bom = rever; backspace mau = amnésia / silenciamento."
+    },
+    {
+      "id": "palavra-restore",
+      "title": "Restore — pôr de pé; cruzado com Back, Backup e Up",
+      "titleEn": "Restore — set back on its feet; crossed with Back, Backup and Up",
+      "titleEs": "Restore — poner de pie; cruzado con Back, Backup y Up",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: restore (lat. restaurāre) × back (germ. bæc) × backup (back+up) × up (germ. upp) — quatro salas, um circuito; Restoure = lapso.",
+      "whyEn": "Words: restore (Lat. restaurāre) × back × backup × up — four rooms, one circuit; Restoure = slip.",
+      "whyEs": "Palabras: restore (lat. restaurāre) × back × backup × up — cuatro salas, un circuito; Restoure = lapsus.",
+      "suggestedSlug": "inspecao-palavra-restore",
+      "doneHref": "/posts/post-inspecao-palavra-restore.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-restore.html",
+        "https://en.wiktionary.org/wiki/restore",
+        "https://en.wiktionary.org/wiki/back#English",
+        "https://en.wiktionary.org/wiki/backup",
+        "https://en.wiktionary.org/wiki/up#English",
+        "https://en.wiktionary.org/wiki/restauro#Latin",
+        "https://pt.wiktionary.org/wiki/restaurar",
+        "/posts/post-inspecao-palavra-backspace.html",
+        "/posts/post-inspecao-palavra-save-game.html",
+        "/posts/post-inspecao-palavra-commitar.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 308 — restore × back × backup × up; Restoure lido; restore back cortado."
     },
     {
       "id": "palavra-mao-esquerda-direita",
@@ -9594,6 +9645,29 @@
         "/posts/post-inspecao-palavra-mega-sena.html"
       ],
       "notes": "Cap. 263 — pedido 14; elo Mega-Sena."
+    },
+    {
+      "id": "palavra-vinte-e-dois",
+      "title": "22 — vinte e dois; invertido vira s2",
+      "titleEn": "22 — vinte e dois; inverted becomes s2",
+      "titleEs": "22 — vinte e dois; invertido vira s2",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: 22 / vinte e dois (vīgintī + duo); 2×11; inverter 22 → s2 (coração de chat ≠ órgão); ≠ Catch-22.",
+      "whyEn": "Words: 22 / vinte e dois; 2×11; invert 22 → s2 (chat heart ≠ organ); ≠ Catch-22.",
+      "whyEs": "Palabras: 22 / vinte e dois; 2×11; invertir 22 → s2 (corazón de chat ≠ órgano); ≠ Catch-22.",
+      "suggestedSlug": "inspecao-palavra-vinte-e-dois",
+      "doneHref": "/posts/post-inspecao-palavra-vinte-e-dois.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-vinte-e-dois.html",
+        "https://pt.wiktionary.org/wiki/vinte",
+        "/posts/post-inspecao-palavra-coracao.html",
+        "/posts/post-inspecao-palavra-catorze.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 309 — cardinal × inversão s2; poema Vida."
     },
     {
       "id": "palavra-zero",

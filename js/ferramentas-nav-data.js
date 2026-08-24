@@ -783,6 +783,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Derivados de risco: do fruto (*Citrus × sinensis (L.) Osbeck*) ao ultraprocessado — Suco reconstitído, néctar, refrigerante «de laranja», geleia, aroma e corantes; mapa químico de açúcares livres + aditivos, cruzado com a ficha planta e com a cana."
             },
             {
+              "label": "Inspeção: Leite e laticínios — da ordenha à prateleira industrial",
+              "tileLabel": "Inspeção: Leite e laticínios — …",
+              "href": "/posts/post-inspecao-derivado-leite.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-derivado-leite",
+              "description": "Produtos nocivos: leite e laticínios (*Bos taurus*) — UHT, leite em pó, queijo, iogurte adoçado e bebidas lácteas versus leite tradicional. Hub da família; proteína na caseína; animal na vaca."
+            },
+            {
               "label": "Inspeção: duasakdiqujdocedomadur — Deus ajuda quem cedo madruga",
               "tileLabel": "Inspeção: duasakdiqujdocedomadu…",
               "href": "/posts/post-inspecao-expressao-duasakdiqujdocedomadur.html",
@@ -4204,7 +4212,7 @@ window.__BIBLIOTECA_NAV__ = {
               "href": "/posts/post-inspecao-palavra-conjugacao.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-conjugacao",
-              "description": "Palavras: conjugação ← lat. coniugātiō (jugo); 3 elos (eu·tu·ele / nós·vós·eles); elos ≠ eles/elas; sala com latim; Valeu !!!"
+              "description": "Palavras: conjugação ← lat. coniugātiō; 3 elos × 3 cores (branco/eu · amarelo/tu · vermelho/ele); elos ≠ eles/elas; Valeu !!!"
             },
             {
               "label": "Inspeção: Boston — a vila de Botolph; ≠ bosta",
@@ -4261,6 +4269,22 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-genocidio",
               "description": "Palavras: genocídio (génos + -cīdium; Lemkin 1944) — Convenção 1948 · Lei 2.889/1956; ≠ guerra ≠ massacre ≠ escravidão; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Restore — pôr de pé; cruzado com Back, Backup e Up",
+              "tileLabel": "Inspeção: Restore — pôr de pé; …",
+              "href": "/posts/post-inspecao-palavra-restore.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-restore",
+              "description": "Palavras: restore (lat. restaurāre) × back (germ. bæc) × backup (back+up) × up (germ. upp) — quatro salas, um circuito; Restoure = lapso; ≠ restore back; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: 22 — vinte e dois; invertido vira s2, o coração do chat",
+              "tileLabel": "Inspeção: 22 — vinte e dois; in…",
+              "href": "/posts/post-inspecao-palavra-vinte-e-dois.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-vinte-e-dois",
+              "description": "Palavras: 22 / vinte e dois — lat. vīgintī + duo; 2×11; inverter o 2 cola no S → s2 (coração de chat ≠ órgão); ≠ Catch-22; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

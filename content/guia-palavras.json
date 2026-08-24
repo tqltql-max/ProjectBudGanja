@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:22:53.688Z",
+  "updatedAt": "2026-08-24T11:28:45.645Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1062,6 +1062,52 @@
       "curiositiesEs": "BudGanja trata la tecla como oficio de corrección — distinta de la tentación de borrar todo lo malo sin inspeccionar."
     },
     {
+      "id": "restore",
+      "word": "restore",
+      "simple": "EN lat. restaurāre — pôr de pé de novo. Cruzado com back (germ. bæc), backup (back+up) e up (germ. upp): quatro salas, um circuito. Restoure = lapso. ≠ restore back. ≠ restaurante. Valeu !!!",
+      "simpleEn": "EN Lat. restaurāre — set back on its feet. Crossed with back (Gmc bæc), backup (back+up) and up (Gmc upp): four rooms, one circuit. Restoure = slip. ≠ restore back. ≠ restaurant. Valeu !!!",
+      "simpleEs": "EN lat. restaurāre — poner de pie otra vez. Cruzado con back (germ. bæc), backup (back+up) y up (germ. upp): cuatro salas, un circuito. Restoure = lapsus. ≠ restore back. ≠ restaurante. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-restore.html",
+      "history": "Restore vem do francês antigo restorer, do latim restaurāre: reconstruir, reparar, pôr de pé de novo. A irmã portuguesa é restaurar / restauro. Restaurante é a mesma árvore (o sítio que restaura o corpo) com outro ofício. Restoure é lapso de campo. Restore back é tautologia: o regresso já está no verbo latino.",
+      "curiosities": "Backup é composto germânico (back + up, apoiar por trás) que no séc. XX vira cópia de segurança. Restore sem backup é milagre; backup sem restore testado é papel. Upar (jogo) é outra sala de up. Backspace apaga; não guarda a reserva.",
+      "historyEn": "Restore comes from Old French restorer, Latin restaurāre: rebuild, repair, set on its feet again. Portuguese restaurar is the native sister. Restaurant is the same tree (the place that restores the body) with another office. Restoure is a field slip. Restore back is a tautology.",
+      "curiositiesEn": "Backup is a Germanic compound (back + up, support from behind) that in the 20th century becomes the spare copy. Restore without backup is a miracle; backup without a tested restore is paper. Upar (games) is another room of up. Backspace erases; it does not keep the spare.",
+      "historyEs": "Restore viene del francés antiguo restorer, latín restaurāre: reconstruir, reparar, poner de pie. Restaurar es la hermana portuguesa. Restaurante es el mismo árbol con otro oficio. Restoure es lapsus. Restore back es tautología.",
+      "curiositiesEs": "Backup es compuesto germánico (back + up) que en el s. XX vira copia de seguridad. Restore sin backup es milagro; backup sin restore ensayado es papel. Upar es otra sala de up. Backspace borra; no guarda la reserva."
+    },
+    {
+      "id": "up",
+      "word": "up",
+      "simple": "EN germ. upp — para cima, completar, estar no ar. Cruzado com back, backup e restore. Upar = outra sala. Valeu !!!",
+      "simpleEn": "EN Gmc upp — upward, complete, online. Crossed with back, backup and restore. Upar = another room. Valeu !!!",
+      "simpleEs": "EN germ. upp — arriba, completar, en el aire. Cruzado con back, backup y restore. Upar = otra sala. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-restore.html"
+    },
+    {
+      "id": "backup",
+      "word": "backup",
+      "simple": "EN back + up — apoiar por trás; cópia de segurança. Cruzado com restore. ≠ Save Game. Valeu !!!",
+      "simpleEn": "EN back + up — support from behind; spare copy. Crossed with restore. ≠ Save Game. Valeu !!!",
+      "simpleEs": "EN back + up — sostener por detrás; copia de seguridad. Cruzado con restore. ≠ Save Game. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-restore.html"
+    },
+    {
+      "id": "back",
+      "word": "back",
+      "simple": "EN germ. bæc — costas, trás, regresso. Cruzado com restore, backup e up. ≠ backspace. Valeu !!!",
+      "simpleEn": "EN Gmc bæc — the back, the rear, the return. Crossed with restore, backup and up. ≠ backspace. Valeu !!!",
+      "simpleEs": "EN germ. bæc — espalda, atrás, regreso. Cruzado con restore, backup y up. ≠ backspace. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-restore.html"
+    },
+    {
       "id": "balde",
       "word": "Balde",
       "simple": "Recipiente com asa — volume e transporte no cultivo; no Q&A Tamara, utensílio da narrativa ártica.",
@@ -1576,6 +1622,38 @@
       "curiositiesEn": "On the harmful-products hub the lab treats the word as a sheeted food risk — not an imposed diet.",
       "historyEs": "Caseína viene del latín caseus (queso) y nombra la proteína principal de la leche, aislada químicamente en el siglo XIX. El sufijo -ína marca sustancia.",
       "curiositiesEs": "En el hub de productos nocivos el laboratorio trata el vocablo como riesgo alimentario de ficha — no como dieta impuesta."
+    },
+    {
+      "id": "laticinios",
+      "word": "Laticínios",
+      "simple": "Família de produtos do leite (queijo, iogurte, manteiga, UHT, ultraprocessados) — hub irmão da caseína.",
+      "simpleEn": "Dairy family (cheese, yogurt, butter, UHT, ultra-processed) — sibling hub of casein.",
+      "simpleEs": "Familia láctea (queso, yogur, mantequilla, UHT, ultraprocesados) — hub hermano de la caseína.",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/posts/post-inspecao-derivado-leite.html",
+      "history": "Laticínio / laticínios vem de laticinium (latim tardio: alimento de leite), de lac. Nomeia a indústria e os produtos derivados do leite.",
+      "curiosities": "No hub de produtos nocivos a palavra marca a prateleira inteira — não só o copo de leite fresco.",
+      "historyEn": "Portuguese laticínios comes from late Latin laticinium (milk food), from lac. It names the industry and milk-derived products.",
+      "curiositiesEn": "On the harmful-products hub the word marks the whole shelf — not only a glass of fresh milk.",
+      "historyEs": "Laticínios viene del latín tardío laticinium (alimento de leche), de lac. Nombra la industria y los derivados de la leche.",
+      "curiositiesEs": "En el hub de productos nocivos la palabra marca todo el estante — no solo el vaso de leche fresca."
+    },
+    {
+      "id": "leite",
+      "word": "Leite",
+      "simple": "Secreção mamária bovina — no site, hub da família láctea (UHT, pó, laticínios ultraprocessados).",
+      "simpleEn": "Bovine milk — on the site, dairy-family hub (UHT, powder, ultra-processed dairy).",
+      "simpleEs": "Leche bovina — en el sitio, hub de la familia láctea (UHT, polvo, lácteos ultraprocesados).",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/posts/post-inspecao-derivado-leite.html",
+      "history": "Leite vem do latim lac, lactis (leite). O vocábulo nomeia a secreção mamária e, por extensão, a cadeia dos laticínios.",
+      "curiosities": "O laboratório separa leite tradicional de UHT, leite em pó e bebidas lácteas; a proteína isolada vive na ficha Caseína.",
+      "historyEn": "Portuguese leite comes from Latin lac, lactis (milk). The word names the mammary secretion and, by extension, the dairy chain.",
+      "curiositiesEn": "The lab separates traditional milk from UHT, milk powder and dairy drinks; the isolated protein lives on the Casein sheet.",
+      "historyEs": "Leche / leite viene del latín lac, lactis. El vocablo nombra la secreción mamaria y, por extensión, la cadena láctea.",
+      "curiositiesEs": "El laboratorio separa la leche tradicional de UHT, leche en polvo y bebidas lácteas; la proteína aislada vive en la ficha Caseína."
     },
     {
       "id": "cb1",
@@ -9886,6 +9964,22 @@
       "simple": "14 — 2×7; composto; ≠ Fibonacci; na Mega-Sena é só dezena. Valeu !!!",
       "simpleEn": "14 — 2×7; composite; not Fibonacci; in Mega-Sena just a number. Valeu !!!",
       "simpleEs": "14 — 2×7; compuesto; no Fibonacci; en la Mega-Sena solo una decena. ¡Valeu !!!"
+    },
+    {
+      "id": "vinte-e-dois",
+      "word": "vinte e dois",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-vinte-e-dois.html",
+      "simple": "Lat. vīgintī + duo — cardinal 22; 2×11; palíndromo; inverter o primeiro 2 cola no S → s2 (coração de chat ≠ órgão); ≠ Catch-22. Valeu !!!",
+      "simpleEn": "Lat. vīgintī + duo — cardinal 22; 2×11; invert first 2 into S → s2 (chat heart ≠ organ); ≠ Catch-22. Valeu !!!",
+      "simpleEs": "Lat. vīgintī + duo — cardinal 22; 2×11; invertir el primer 2 pega en S → s2 (corazón de chat ≠ órgano); ≠ Catch-22. ¡Valeu !!!",
+      "history": "Vinte vem do latim vīgintī; dois vem de duo. No laboratório o 22 é também o par de traços que, invertido, vira o recado s2 do chat brasileiro.",
+      "curiosities": "s2 ≈ coração de ecrã (S + 2); Catch-22 é o romance de Heller — outra sala; S2 também é temporada.",
+      "historyEn": "Portuguese vinte e dois comes from Latin vīgintī + duo. In the lab 22 is also the pair of strokes that, inverted, becomes the Brazilian chat note s2.",
+      "curiositiesEn": "s2 ≈ on-screen heart (S + 2); Catch-22 is Heller’s novel — another room; S2 is also a season.",
+      "historyEs": "Vinte e dois viene del latín vīgintī + duo. En el laboratorio el 22 es también el par de trazos que, invertido, vira el recado s2 del chat brasileño.",
+      "curiositiesEs": "s2 ≈ corazón de pantalla (S + 2); Catch-22 es la novela de Heller — otra sala; S2 también es temporada."
     },
     {
       "id": "zero",
