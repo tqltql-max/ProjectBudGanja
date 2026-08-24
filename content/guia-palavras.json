@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T12:32:31.309Z",
+  "updatedAt": "2026-08-24T12:37:31.811Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1664,6 +1664,22 @@
       "curiositiesEn": "The lab separates traditional milk from UHT, milk powder and dairy drinks; the isolated protein lives on the Casein sheet.",
       "historyEs": "Leche / leite viene del latín lac, lactis. El vocablo nombra la secreción mamaria y, por extensión, la cadena láctea.",
       "curiositiesEs": "El laboratorio separa la leche tradicional de UHT, leche en polvo y bebidas lácteas; la proteína aislada vive en la ficha Caseína."
+    },
+    {
+      "id": "racao",
+      "word": "Ração",
+      "simple": "Porção medida que virou categoria industrial — no site, hub de pet food e concentrado pecuário (kibble, petiscos, granja).",
+      "simpleEn": "Measured portion that became an industrial category — on the site, hub of pet food and livestock concentrate (kibble, treats, barn feed).",
+      "simpleEs": "Porción medida que viró categoría industrial — en el sitio, hub de pet food y concentrado pecuario (kibble, snacks, granja).",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/posts/post-inspecao-derivado-racao.html",
+      "history": "Ração vem do latim ratio (medida, porção, conta). O vocábulo nomeia a ração de combate, o racionamento e, no Brasil, o alimento industrial para animais.",
+      "curiosities": "O laboratório corta três salas: o animal, o saco, e o que o humano come do animal. Premium no saco é marketing, não ensaio.",
+      "historyEn": "Portuguese ração comes from Latin ratio (measure, portion, account). The word names combat rations, rationing and, in Brazil, industrial animal feed.",
+      "curiositiesEn": "The lab cuts three rooms: the animal, the bag, and what humans eat from the animal. Premium on the sack is marketing, not a trial.",
+      "historyEs": "Ração viene del latín ratio (medida, porción, cuenta). El vocablo nombra la ración de combate, el racionamiento y, en Brasil, el pienso industrial.",
+      "curiositiesEs": "El laboratorio corta tres salas: el animal, el saco, y lo que el humano come del animal. Premium en el saco es marketing, no ensayo."
     },
     {
       "id": "cb1",
@@ -4404,6 +4420,32 @@
       "curiositiesEn": "The lab spelling gemeos recalls relation and the praise genial — two words, two sheets.",
       "historyEs": "Gemelos / gêmeos viene del latín geminus — par nacido junto — y nombra también el signo Géminis. No se confunde con genio ni con el genio de la lámpara.",
       "curiositiesEs": "La grafía gemeos en el lab recuerda relación y el elogio genial — dos vocablos, dos fichas."
+    },
+    {
+      "id": "ariana",
+      "word": "Ariana",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-ariana.html",
+      "simple": "Nativa de Áries — 1.º signo (lat. ariēs, carneiro); ariano/arianos; ≠ horóscopo; ≠ ariano racial; guia Astrologia.",
+      "simpleEn": "Aries native — 1st tropical sign (Lat. ariēs, ram); ≠ horoscope; Astrology hub.",
+      "simpleEs": "Nativa de Aries — 1.º signo (lat. ariēs); ≠ horóscopo; hub Astrología.",
+      "history": "Áries vem do latim ariēs (carneiro) e abre o zodíaco tropical no equinócio de março. Ariana/ariano são os nativos. O homógrafo racial (sânsc. ārya) é outra família.",
+      "curiosities": "Nos Cavaleiros do Zodíaco a primeira casa é Áries (Mu). Carneiro é o nome PT-EU do signo. Fecho: Valeu !!!",
+      "historyEn": "Portuguese Áries comes from Latin ariēs (ram) and opens the tropical zodiac at the March equinox. Ariana/ariano name the natives. The racial homograph (Skt. ārya) is another family.",
+      "curiositiesEn": "In Saint Seiya the first house is Aries (Mu). Close: Valeu !!!",
+      "historyEs": "Áries viene del latín ariēs (carnero) y abre el zodiaco tropical en el equinoccio de marzo. El homógrafo racial (sánsc. ārya) es otra familia.",
+      "curiositiesEs": "En Los Caballeros del Zodiaco la primera casa es Aries (Mu). Cierre: ¡Valeu !!!"
+    },
+    {
+      "id": "astrologia",
+      "word": "Astrologia",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/guia/astrologia.html",
+      "simple": "Página dedicada: 12 signos a partir de Áries; céu verificável (Aladin); Google Sky sem embed web.",
+      "simpleEn": "Dedicated page: 12 signs from Aries; verifiable sky (Aladin); no Google Sky web embed.",
+      "simpleEs": "Página dedicada: 12 signos desde Aries; cielo verificable (Aladin); Google Sky sin embed web."
     },
     {
       "id": "jobs",
