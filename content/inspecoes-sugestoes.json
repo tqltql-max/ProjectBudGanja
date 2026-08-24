@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T10:42:54.994Z",
+  "updatedAt": "2026-08-24T10:51:19.416Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -7357,6 +7357,34 @@
       "notes": "Cap. 171 — kólla ≠ collum ≠ Cola; pipa sem linha cortante = brinquedo; cerol = literacia, sem fabrico."
     },
     {
+      "id": "palavra-linha-10-cerol",
+      "title": "Linha 10 · Cerol — contato cortante, pé direito",
+      "titleEn": "Line 10 · Cerol — cutting contact, right foot",
+      "titleEs": "Línea 10 · Cerol — contacto cortante, pie derecho",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: linha 10 (calibre de pipa ≠ CPTM) + cerol; gatilho contato com objeto cortante · pé direito ≠ teto; P de Perigo; ficha ≠ receita.",
+      "whyEn": "Words: kite line 10 (≠ train) + cerol; trigger cutting-object contact · right foot ≠ ceiling height; P for Danger; not a recipe.",
+      "whyEs": "Palabras: línea 10 (≠ tren) + cerol; gatillo contacto cortante · pie derecho ≠ techo; P de Perigo; no es receta.",
+      "suggestedSlug": "inspecao-palavra-linha-10-cerol",
+      "doneHref": "/posts/post-inspecao-palavra-linha-10-cerol.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-linha-10-cerol.html",
+        "https://pt.wikipedia.org/wiki/Cerol",
+        "https://pt.wiktionary.org/wiki/linha",
+        "https://pt.wikipedia.org/wiki/Pipa_(brinquedo)",
+        "https://pt.wiktionary.org/wiki/p%C3%A9-direito",
+        "/posts/post-inspecao-palavra-cola-colar.html",
+        "/posts/post-inspecao-palavra-objetos.html",
+        "/posts/post-inspecao-palavra-risco.html",
+        "/posts/post-inspecao-expressao-mindinho.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 294 — calibre 10 × cerol × contato pé direito; sem fabrico; pipa sem linha cortante = brinquedo."
+    },
+    {
       "id": "palavra-impressao-pressao",
       "title": "Impressão · Pressão — panela e a válvula de escape",
       "titleEn": "Impression · Pressure — cooker and the release valve",
@@ -9811,6 +9839,53 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 291 — ofício × juízo × bolsa × filme; gesto é a unidade mínima."
+    },
+    {
+      "id": "palavra-latim",
+      "title": "Latim — língua do Lácio; a orelha cola latido (o cachorro)",
+      "titleEn": "Latim — language of Latium; the ear glues latido (the dog)",
+      "titleEs": "Latim — lengua del Lacio; el oído pega latido (el perro)",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: latim ← latīnus (Lácio). Latido ← latrāre (ladrido). Cachorro / cão ← canis. Sala do latim.",
+      "whyEn": "Words: latim ← latīnus (Latium). Latido ← latrāre (bark). Dog ← canis. Latin room.",
+      "whyEs": "Palabras: latim ← latīnus (Lacio). Latido ← latrāre (ladrido). Cachorro / cão ← canis. Sala del latín.",
+      "suggestedSlug": "inspecao-palavra-latim",
+      "doneHref": "/posts/post-inspecao-palavra-latim.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/latim",
+        "https://pt.wiktionary.org/wiki/latido",
+        "https://pt.wiktionary.org/wiki/cachorro",
+        "/animais/cao/",
+        "/posts/post-inspecao-palavra-animal.html"
+      ],
+      "notes": "Cap. 293 — latīnus × latrāre; animal primeiro."
+    },
+    {
+      "id": "palavra-juntos",
+      "title": "Juntos — o estado, cruzado com os elos",
+      "titleEn": "Juntos — the state, crossed with the links",
+      "titleEs": "Juntos — el estado, cruzado con los eslabones",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: juntos (lat. iunctus ← iungere) — estado; cruza com elos (anel ≠ slogan); Valeu !!!",
+      "whyEn": "Words: juntos (Lat. iunctus ← iungere) — state; crosses with elos (ring ≠ slogan); Valeu !!!",
+      "whyEs": "Palabras: juntos (lat. iunctus ← iungere) — estado; cruza con elos (anillo ≠ eslogan); ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-juntos",
+      "doneHref": "/posts/post-inspecao-palavra-juntos.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/juntos",
+        "https://en.wiktionary.org/wiki/iunctus#Latin",
+        "/posts/post-inspecao-expressao-elo-de-ligacao.html",
+        "/posts/post-inspecao-palavra-relacao.html",
+        "/posts/post-inspecao-palavra-sozna.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 295 — estado × anel; juntos sem elo = pose; cruzamento com elo de ligação."
     }
   ]
 }

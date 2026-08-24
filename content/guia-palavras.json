@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T10:42:55.007Z",
+  "updatedAt": "2026-08-24T10:51:19.426Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -1890,6 +1890,22 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-conexao.html"
+    },
+    {
+      "id": "juntos",
+      "word": "Juntos",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-juntos.html",
+      "simple": "Lat. iunctus ← iungere — estado de estar junto; cruza com elos (anel ≠ slogan); ≠ sozinho ≠ simbiose; Valeu !!!",
+      "simpleEn": "Lat. iunctus ← iungere — state of being together; crosses with elos (ring ≠ slogan); ≠ alone ≠ symbiosis; Valeu !!!",
+      "simpleEs": "Lat. iunctus ← iungere — estado de estar junto; cruza con elos (anillo ≠ eslogan); ≠ sozinho ≠ simbiose; ¡Valeu !!!",
+      "history": "Juntos vem do latim iunctus (← iungere, unir). No laboratório o estado cruza com os elos: o anel que segura. Sem elo, juntos pode ser só slogan.",
+      "curiosities": "Junto a é proximidade, nem sempre companhia. Juntas (fem.) ≠ juntas (articulações) ≠ junta (órgão). Fecho: Valeu !!!",
+      "historyEn": "Portuguese juntos comes from Latin iunctus (← iungere, to join). In the lab the state crosses with elos: the ring that holds. Without a ring, juntos can be only a slogan.",
+      "curiositiesEn": "Junto a is nearness, not always company. Juntas (fem. pl.) ≠ anatomical joints ≠ a governing board. Close: Valeu !!!",
+      "historyEs": "Juntos viene del latín iunctus (← iungere, unir). En el laboratorio el estado cruza con los elos: el anillo que sujeta. Sin eslabón, juntos puede ser solo eslogan.",
+      "curiositiesEs": "Junto a es proximidad, no siempre compañía. Juntas (fem.) ≠ articulaciones ≠ junta de gobierno. Cierre: ¡Valeu !!!"
     },
     {
       "id": "pagina-inicial",
@@ -5438,6 +5454,42 @@
       "curiositiesEs": "Nombrar, inspeccionar y cuidar: la ficha lee alteraciones en el tiempo (latín → BR → digital) sin purismo de museo."
     },
     {
+      "id": "cachorro",
+      "word": "cachorro",
+      "simple": "BR: o cão no dia-a-dia. Late → latido (latrāre). ≠ latim. Ficha de espécie em Animais / Cão. Corte na sala do latim. Valeu !!!",
+      "simpleEn": "BR everyday dog. Barks → latido (latrāre). ≠ latim. Species sheet under Animals / Dog. Cut on the Latin sheet. Valeu !!!",
+      "simpleEs": "BR: el perro cotidiano. Ladra → latido (latrāre). ≠ latim. Ficha de especie en Animales / Perro. Corte en la sala del latín. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-latim.html"
+    },
+    {
+      "id": "latido",
+      "word": "latido",
+      "simple": "PT: ladrido ← lat. latrāre. ≠ latim (latīnus). ES latido = batimento. Cachorro primeiro. Corte na sala do latim. Valeu !!!",
+      "simpleEn": "PT: bark ← Lat. latrāre. ≠ latim (latīnus). ES latido = heartbeat. Dog first. Cut on the Latin sheet. Valeu !!!",
+      "simpleEs": "PT: ladrido ← lat. latrāre. ≠ latim. ES latido = latido del corazón. Animal primero. Corte en la sala del latín. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-latim.html"
+    },
+    {
+      "id": "latim",
+      "word": "latim",
+      "simple": "Lat. latīnus ← Latium — a língua do Lácio. A orelha cola latido (latrāre) no cachorro. Sala do latim. Valeu !!!",
+      "simpleEn": "Lat. latīnus ← Latium — the language. The ear glues latido (latrāre) to the dog. Latin room. Valeu !!!",
+      "simpleEs": "Lat. latīnus ← Latium — la lengua del Lacio. El oído pega latido (latrāre) al cachorro. Sala del latín. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-latim.html",
+      "history": "Latim vem do latim latīnus, «do Lácio» (Latium), a região de Roma. É a língua-mãe romance do português, não o som do cão.",
+      "curiosities": "A orelha cola latido (latrāre, ladrar) no cachorro / cão (canis). Em espanhol latido é o batimento do coração; em português é o ladrido. Cannabis não vem de canis. Valeu !!!",
+      "historyEn": "Portuguese latim comes from Latin latīnus, “of Latium”, the region of Rome. It is the Romance mother of Portuguese, not the dog’s sound.",
+      "curiositiesEn": "The ear glues latido (latrāre, to bark) to the dog (canis). In Spanish latido is a heartbeat; in Portuguese it is a bark. Cannabis is not from canis. Valeu !!!",
+      "historyEs": "Latim viene del latín latīnus, «del Lacio». Es la lengua madre romance del portugués, no el sonido del perro.",
+      "curiositiesEs": "El oído pega latido (latrāre, ladrar) al cachorro / cão (canis). En español latido es el del corazón; en portugués es el ladrido. Cannabis no viene de canis. ¡Valeu !!!"
+    },
+    {
       "id": "trocadilho",
       "word": "Trocadilho",
       "simple": "Calembur — cara+alho é jogo de ouvido + etimologia popular, não polimorfismo nem origem da terceira forma; irmãs aglutinação e Tanzânia (valise); Valeu !!! no nome.",
@@ -5564,6 +5616,42 @@
       "curiositiesEn": "Municipal and state laws ban manufacture, sale and use in many places. Peaks cross school holidays. A kite without it remains a toy.",
       "historyEs": "Cerol es el nombre brasileño del revestimiento que hace la línea de cometa colante y cortante. Fuentes públicas describen adhesivo más abrasivo en el hilo — literacia, no receta.",
       "curiositiesEs": "Leyes municipales y estatales prohíben fabrico, venta y uso en muchos sitios. El pico cruza vacaciones escolares. La cometa sin esto sigue siendo juguete."
+    },
+    {
+      "id": "linha-10",
+      "word": "linha 10",
+      "simple": "Calibre 10 da linha de pipa BR (número do fio). ≠ CPTM Linha 10 ≠ ônibus. Com cerol = P de Perigo. Gatilho: contato com objeto cortante · pé direito. Ficha ≠ receita. Valeu !!!",
+      "simpleEn": "Brazilian kite-string gauge 10. ≠ CPTM Line 10. With cerol = P for Danger. Trigger: contact with a cutting object, right foot. Not a recipe. Valeu !!!",
+      "simpleEs": "Calibre 10 del hilo de cometa BR. ≠ CPTM Línea 10. Con cerol = P de Perigo. Gatillo: contacto con objeto cortante, pie derecho. No es receta. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-linha-10-cerol.html",
+      "history": "Na banca da pipa brasileira a linha vende-se com número (4, 6, 8, 10, 12…). Linha 10 é o calibre do fio, não o nome do cerol e não a Linha 10 Turquesa da CPTM.",
+      "curiosities": "O gatilho de campo veio em fala de atendimento: contato com objeto cortante, pé direito. Pé direito = membro; pé-direito (com hífen) = altura do teto. Ficha ≠ CID ≠ receita.",
+      "historyEn": "Brazilian kite shops number cotton line by thickness (4, 6, 8, 10, 12…). Line 10 is the gauge of the string, not the name of cerol and not CPTM Line 10.",
+      "curiositiesEn": "The field trigger arrived in clinic speech: contact with a cutting object, right foot. Right foot = body; pé-direito = ceiling height. Sheet ≠ ICD ≠ recipe.",
+      "historyEs": "En la banca brasileña la línea de cometa se vende con número (4, 6, 8, 10, 12…). Línea 10 es el calibre del hilo, no el nombre del cerol ni la Línea 10 de la CPTM.",
+      "curiositiesEs": "El gatillo de campo llegó en habla de atención: contacto con objeto cortante, pie derecho. Pie derecho = miembro; pé-direito = altura del techo. Ficha ≠ CIE ≠ receta."
+    },
+    {
+      "id": "objeto-cortante",
+      "word": "objeto cortante",
+      "simple": "Classe de atendimento: o que corta. Nesta ficha o objecto próprio é linha 10 + cerol; o sítio é o pé direito. ≠ faca como definição ≠ receita. Valeu !!!",
+      "simpleEn": "Clinic class: that which cuts. On this sheet the proper object is line 10 + cerol; the site is the right foot. ≠ knife-as-definition ≠ recipe. Valeu !!!",
+      "simpleEs": "Clase de atención: lo que corta. En esta ficha el objeto propio es línea 10 + cerol; el sitio es el pie derecho. ≠ cuchillo como definición ≠ receta. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-linha-10-cerol.html"
+    },
+    {
+      "id": "pe-direito-corpo",
+      "word": "pé direito",
+      "simple": "Pé do lado direito do corpo (gatilho desta ficha). ≠ pé-direito (altura do teto). Caso irmão: pé esquerdo × escada (mindinho). Valeu !!!",
+      "simpleEn": "Right foot of the body (this sheet’s trigger). ≠ pé-direito (ceiling height). Sister case: left foot × stairs (mindinho). Valeu !!!",
+      "simpleEs": "Pie derecho del cuerpo (gatillo de esta ficha). ≠ pé-direito (altura del techo). Caso hermano: pie izquierdo × escalera (mindinho). ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-linha-10-cerol.html"
     },
     {
       "id": "cortante",
