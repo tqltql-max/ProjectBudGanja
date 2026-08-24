@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T13:19:31.937Z",
+  "updatedAt": "2026-08-24T13:21:45.928Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2752,6 +2752,26 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-deus.html"
+    },
+    {
+      "id": "mitologia",
+      "word": "mitologia",
+      "simple": "Gr. mŷthos + lógos — ofício de contar os deuses. Lema do catálogo /mitologia/. Anúbis noutra sala. Valeu !!!",
+      "simpleEn": "Gr. mŷthos + lógos — craft of telling the gods. Lemma of /mitologia/. Anubis in another room. Valeu !!!",
+      "simpleEs": "Gr. mŷthos + lógos — oficio de contar a los dioses. Lema de /mitologia/. Anubis en otra sala. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-mitologia.html"
+    },
+    {
+      "id": "anubis",
+      "word": "Anúbis",
+      "simple": "jnpw → Ἄνουβις. Chacal que pesa o coração. Primeiro deus de /mitologia/. ≠ Deus ≠ magia. Valeu !!!",
+      "simpleEn": "jnpw → Ἄνουβις. Jackal who weighs the heart. First god of /mitologia/. ≠ Deus ≠ magic. Valeu !!!",
+      "simpleEs": "jnpw → Ἄνουβις. Chacal que pesa el corazón. Primer dios de /mitologia/. ≠ Deus ≠ magia. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-anubis.html"
     },
     {
       "id": "adeus",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T13:19:31.937Z",
+  "updatedAt": "2026-08-24T13:21:45.911Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -10398,6 +10398,53 @@
         "/posts/post-inspecao-palavra-diabo.html"
       ],
       "notes": "Cap. 278 — cluster Deus / A Deus!!! / fui; ficha ≠ catecismo."
+    },
+    {
+      "id": "palavra-mitologia",
+      "title": "Mitologia — mŷthos + lógos; lema do catálogo",
+      "titleEn": "Mitologia — mŷthos + lógos; catalog lemma",
+      "titleEs": "Mitologia — mŷthos + lógos; lema del catálogo",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: mitologia (mŷthos + lógos) — ofício de contar os deuses; página /mitologia/; Anúbis noutra sala; Valeu !!!",
+      "whyEn": "Words: mitologia — craft of telling the gods; /mitologia/ hub; Anubis in another room.",
+      "whyEs": "Palabras: mitologia — oficio de contar a los dioses; hub /mitologia/; Anubis en otra sala.",
+      "suggestedSlug": "inspecao-palavra-mitologia",
+      "doneHref": "/posts/post-inspecao-palavra-mitologia.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-mitologia.html",
+        "/mitologia/",
+        "/posts/post-inspecao-palavra-anubis.html",
+        "https://pt.wiktionary.org/wiki/mitologia",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 329 — lema do catálogo Mitologia."
+    },
+    {
+      "id": "palavra-anubis",
+      "title": "Anúbis — jnpw; chacal; algum deus",
+      "titleEn": "Anubis — jnpw; jackal; some god",
+      "titleEs": "Anubis — jnpw; chacal; algún dios",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: Anúbis (jnpw → Ἄνουβις) — chacal que pesa o coração; primeiro deus de /mitologia/; ≠ Deus ≠ magia; Valeu !!!",
+      "whyEn": "Words: Anubis (jnpw → Ἄνουβις) — jackal who weighs the heart; first god of /mitologia/; ≠ Deus ≠ magic.",
+      "whyEs": "Palabras: Anubis (jnpw → Ἄνουβις) — chacal que pesa el corazón; primer dios de /mitologia/; ≠ Deus ≠ magia.",
+      "suggestedSlug": "inspecao-palavra-anubis",
+      "doneHref": "/posts/post-inspecao-palavra-anubis.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-anubis.html",
+        "/mitologia/",
+        "https://pt.wikipedia.org/wiki/An%C3%BAbis",
+        "/posts/post-inspecao-palavra-deus.html",
+        "/posts/post-inspecao-palavra-mitologia.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 329 — primeiro deus; salas cortadas."
     },
     {
       "id": "expressao-adeus",

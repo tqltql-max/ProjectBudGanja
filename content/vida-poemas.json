@@ -1,6 +1,53 @@
 {
-  "updatedAt": "2026-08-24T12:55:39.359Z",
+  "updatedAt": "2026-08-24T13:21:45.947Z",
   "poems": [
+    {
+      "id": "anubis",
+      "slug": "anubis",
+      "title": "Anúbis",
+      "titleEn": "Anubis",
+      "titleEs": "Anubis",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — o chacal que pesa, sem invocar o nome; Valeu !!!",
+      "teaserEn": "BudGanja echo — the jackal who weighs, without invoking the name; Valeu !!!",
+      "teaserEs": "Eco BudGanja — el chacal que pesa, sin invocar el nombre; ¡Valeu !!!",
+      "body": "Anúbis.\nNão é o vocábulo Deus.\nÉ o chacal que o Egito\npôs à porta do morto.\n\nJnpw é o nome antigo.\nAnúbis é o nome grego.\nNo lab, o mesmo ofício:\npesar o coração.\n\nHá a balança.\nHá a pena de Maat.\nHá o cão que não é este.\nHá o respeito sem altar.\n\nNão é magia.\nNão é Wepwawet.\nÉ algum deus —\no primeiro deste catálogo.\n\nValeu !!!\ncom o coração certo\ne sem invocar o nome.",
+      "bodyEn": "Anubis.\nHe is not the word Deus.\nHe is the jackal Egypt\nset at the dead one’s door.\n\nJnpw is the old name.\nAnubis is the Greek name.\nIn the lab, the same craft:\nweigh the heart.\n\nThere is the scale.\nThere is Maat’s feather.\nThere is the dog that is not this.\nThere is respect without an altar.\n\nIt is not magic.\nIt is not Wepwawet.\nIt is some god —\nthe first of this catalog.\n\nValeu !!!\nwith the right heart\nand without invoking the name.",
+      "bodyEs": "Anubis.\nNo es el vocablo Deus.\nEs el chacal que Egipto\npuso a la puerta del muerto.\n\nJnpw es el nombre antiguo.\nAnubis es el nombre griego.\nEn el lab, el mismo oficio:\npesar el corazón.\n\nHay la balanza.\nHay la pluma de Maat.\nHay el perro que no es éste.\nHay respeto sin altar.\n\nNo es magia.\nNo es Wepwawet.\nEs algún dios —\nel primero de este catálogo.\n\n¡Valeu !!!\ncon el corazón cierto\ny sin invocar el nombre.",
+      "inspectionHref": "/posts/post-inspecao-palavra-anubis.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "anubis",
+        "egito",
+        "mitologia"
+      ]
+    },
+    {
+      "id": "mitologia",
+      "slug": "mitologia",
+      "title": "Mitologia",
+      "titleEn": "Mythology",
+      "titleEs": "Mitología",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — o ofício de contar os deuses, sem culto de ficha; Valeu !!!",
+      "teaserEn": "BudGanja echo — the craft of telling the gods, without a cult of the sheet; Valeu !!!",
+      "teaserEs": "Eco BudGanja — el oficio de contar a los dioses, sin culto de ficha; ¡Valeu !!!",
+      "body": "Mitologia.\nNão é o altar.\nÉ o ofício de contar\no deus que o povo nomeou.\n\nMythos é o relato.\nLógos é o nome do saber.\nJuntos, a palavra que o lab\npõe no catálogo.\n\nHá o chacal.\nHá a lira.\nHá a balança.\nHá o céu que se nomeia.\n\nNão é teologia inteira.\nNão é magia solta.\nÉ a sala onde o ofício\nolha o que o mito faz.\n\nValeu !!!\ncom o deus certo\ne sem culto de ficha.",
+      "bodyEn": "Mythology.\nIt is not the altar.\nIt is the craft of telling\nthe god a people named.\n\nMythos is the tale.\nLógos is the name of that knowing.\nTogether, the word the lab\nputs in the catalog.\n\nThere is the jackal.\nThere is the lyre.\nThere is the scale.\nThere is the sky that gets named.\n\nIt is not all of theology.\nIt is not loose magic.\nIt is the room where craft\nlooks at what the myth does.\n\nValeu !!!\nwith the right god\nand no cult of the sheet.",
+      "bodyEs": "Mitología.\nNo es el altar.\nEs el oficio de contar\nal dios que el pueblo nombró.\n\nMythos es el relato.\nLógos es el nombre de ese saber.\nJuntos, la palabra que el lab\npone en el catálogo.\n\nHay el chacal.\nHay la lira.\nHay la balanza.\nHay el cielo que se nombra.\n\nNo es teología entera.\nNo es magia suelta.\nEs la sala donde el oficio\nmira lo que el mito hace.\n\n¡Valeu !!!\ncon el dios cierto\ny sin culto de ficha.",
+      "inspectionHref": "/posts/post-inspecao-palavra-mitologia.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "mitologia",
+        "mythos"
+      ]
+    },
     {
       "id": "maria",
       "slug": "maria",

@@ -48,6 +48,15 @@ window.__BIBLIOTECA_NAV__ = {
           "description": "Catálogo de ofício técnico: vocábulos, hardware, rede e software."
         },
         {
+          "label": "Mitologia",
+          "tileLabel": "Mitologia",
+          "href": "/mitologia/",
+          "icon": "⚖️",
+          "slug": "mitologia",
+          "featured": true,
+          "description": "Catálogo de mitos e deuses: nomes, relatos e elos — Anúbis abre."
+        },
+        {
           "label": "Curso UNIFESP",
           "tileLabel": "UNIFESP",
           "href": "/biblioteca/unifesp/",
