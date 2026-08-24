@@ -4693,6 +4693,25 @@
     "seriesLabel": "Água · palavra"
   },
   {
+    "title": "Inspeção: Neve — nix, nivis; cobertura, não gelo",
+    "titleEn": "Inspection: Neve — nix, nivis; cover, not ice",
+    "titleEs": "Inspección: Neve — nix, nivis; cubierta, no hielo",
+    "excerpt": "Palavras: Neve ← lat. nix, nivis — cristal que cai; ≠ gelo ≠ never ≠ nēve latino; par derreter (derver); Valeu !!!",
+    "excerptEn": "Words: Neve ← Lat. nix, nivis — falling crystal; ≠ ice ≠ never ≠ Latin nēve; pair derreter (derver); Valeu !!!",
+    "excerptEs": "Palabras: Neve ← lat. nix, nivis — cristal que cae; ≠ hielo ≠ never ≠ nēve latino; par derreter (derver); ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-neve",
+    "url": "/posts/post-inspecao-palavra-neve.html",
+    "date": "2026-08-24T18:45:00.000Z",
+    "filename": "posts/post-inspecao-palavra-neve.html",
+    "coverImage": "/imagens/inspecoes/neve-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 57,
+    "seriesLabel": "Neve"
+  },
+  {
     "title": "Inspeção: Friends — a turma de 1994 e a série que é o texto",
     "titleEn": "Inspection: Friends — the 1994 ensemble and the series as the text",
     "titleEs": "Inspección: Friends — la tropa de 1994 y la serie como texto",
@@ -4710,25 +4729,6 @@
     "series": "artes-cultura",
     "seriesOrder": 57,
     "seriesLabel": "Friends · Artes"
-  },
-  {
-    "title": "Inspeção: Neve — léxico Tamara / Bom dia, Inverno",
-    "titleEn": "Inspection: Neve — Tamara / Bom dia, Inverno lexicon",
-    "titleEs": "Inspección: Neve — léxico Tamara / Bom dia, Inverno",
-    "excerpt": "Cobertura branca do Ártico — paisagem e ruído branco da narrativa de Tamara.",
-    "excerptEn": "White Arctic cover — landscape and white noise of Tamara’s narrative.",
-    "excerptEs": "Cubierta blanca del Ártico — paisaje y ruido blanco de la narrativa de Tamara.",
-    "hasBodyEn": true,
-    "hasBodyEs": true,
-    "slug": "inspecao-palavra-neve",
-    "url": "/posts/post-inspecao-palavra-neve.html",
-    "date": "2026-08-02T20:10:00.000Z",
-    "filename": "posts/post-inspecao-palavra-neve.html",
-    "coverImage": "/imagens/inspecoes/bom-dia-inverno-cover.jpg",
-    "category": "inspecao",
-    "series": "palavras-origem",
-    "seriesOrder": 57,
-    "seriesLabel": "Neve · palavra"
   },
   {
     "title": "Inspeção: How I Met Your Mother — o relato, o tempo e a série de 2005",
@@ -10543,6 +10543,25 @@
     "series": "palavras-origem",
     "seriesOrder": 338,
     "seriesLabel": "Dor · palavra"
+  },
+  {
+    "title": "Inspeção: Derreter — o sólido volta a água (campo: derver)",
+    "titleEn": "Inspection: Derreter — the solid returns to water (field: derver)",
+    "titleEs": "Inspección: Derreter — el sólido vuelve al agua (campo: derver)",
+    "excerpt": "Palavras: Derreter ← dēterō × rēterō; campo derver; ≠ dever ≠ derrota ≠ lava; par neve; Valeu !!!",
+    "excerptEn": "Words: Derreter ← dēterō × rēterō; field derver; ≠ duty ≠ defeat ≠ lava; pair neve; Valeu !!!",
+    "excerptEs": "Palabras: Derreter ← dēterō × rēterō; campo derver; ≠ deber ≠ derrota ≠ lava; par neve; ¡Valeu !!!",
+    "hasBodyEn": true,
+    "hasBodyEs": true,
+    "slug": "inspecao-palavra-derreter",
+    "url": "/posts/post-inspecao-palavra-derreter.html",
+    "date": "2026-08-24T18:46:00.000Z",
+    "filename": "posts/post-inspecao-palavra-derreter.html",
+    "coverImage": "/imagens/inspecoes/derreter-palavra-cover.jpg",
+    "category": "inspecao",
+    "series": "palavras-origem",
+    "seriesOrder": 339,
+    "seriesLabel": "Derreter"
   },
   {
     "title": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",
