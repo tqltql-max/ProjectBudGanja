@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:02:04.051Z",
+  "updatedAt": "2026-08-24T11:02:43.969Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -910,11 +910,11 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-expressao-ausdhuashduas.html",
-      "history": "Ausdhuashduas é nome-lab para o riso tipado brasileiro que substitui kkkk e «risas online». Nasce da oralidade digitada, não de étimo latino.",
+      "history": "Ausdhuashduas é o smash-lab da transcrição de risos na internet; anda com a sigla rs (risos). Nasce da oralidade digitada, não de étimo latino.",
       "curiosities": "A inspeção contrapõe o sopro ao aff: um celebra, o outro cansa — os dois pedem Valeu !!! depois da gargalhada.",
-      "historyEn": "Ausdhuashduas is the lab name for typed Brazilian laughter that replaces kkkk and online «risas». It is born from keyed speech, not a Latin etymon.",
+      "historyEn": "Ausdhuashduas is the lab smash for transcribing laughs online; it walks with the sigla rs (risos). It is born from keyed speech, not a Latin etymon.",
       "curiositiesEn": "The inspection sets the puff against aff: one celebrates, the other tires — both ask Valeu !!! after the laugh.",
-      "historyEs": "Ausdhuashduas es el nombre-lab de la risa tipeada brasileña que sustituye kkkk y «risas online». Nace de la oralidad digitada, no de un étimo latino.",
+      "historyEs": "Ausdhuashduas es el smash-lab de la transcripción de risas en internet; anda con la sigla rs (risos). Nace de la oralidad digitada, no de un étimo latino.",
       "curiositiesEs": "La inspección contrapone el soplo al aff: uno celebra, el otro cansa — ambos piden ¡Valeu !!! después de la carcajada."
     },
     {
@@ -3175,7 +3175,7 @@
       "historyEn": "Opsert is the lab living name of upsert: BR mouth of the English lemma, as commitar took git. Verb opsertar; close Opsert. The slug decides whether to raise the sheet or insert it.",
       "curiositiesEn": "Cry: mãos a obra — plural, no crase; the accent of the dictionary form gets in the way. Upsertar is a calque, not speech. After the opsert comes the commitar.",
       "historyEs": "Opsert es el nombre vivo de upsert: boca BR del lema inglés, como commitar tomó el git. Verbo opsertar; cierre Opsert. El slug decide si se levanta la ficha o si se inserta.",
-      "curiositiesEs": "Grito: mãos a obra — plural, las dos; mão à obra (una) queda en el mapa. Upsertar es calco, no el habla. Después del opsert viene el commitar."
+      "curiositiesEs": "Grito: mãos a obra — plural, sin crasis; el acento de la norma estorba. Upsertar es calco, no el habla. Después del opsert viene el commitar."
     },
     {
       "id": "opsertar",
@@ -5858,12 +5858,12 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-linha-10-cerol.html",
-      "history": "Na banca da pipa brasileira a linha vende-se com número (4, 6, 8, 10, 12…). Linha 10 é o calibre do fio, não o nome do cerol e não a Linha 10 Turquesa da CPTM.",
-      "curiosities": "O gatilho de campo veio em fala de atendimento: contato com objeto cortante, pé direito. Pé direito = membro; pé-direito (com hífen) = altura do teto. Ficha ≠ CID ≠ receita.",
-      "historyEn": "Brazilian kite shops number cotton line by thickness (4, 6, 8, 10, 12…). Line 10 is the gauge of the string, not the name of cerol and not CPTM Line 10.",
-      "curiositiesEn": "The field trigger arrived in clinic speech: contact with a cutting object, right foot. Right foot = body; pé-direito = ceiling height. Sheet ≠ ICD ≠ recipe.",
-      "historyEs": "En la banca brasileña la línea de cometa se vende con número (4, 6, 8, 10, 12…). Línea 10 es el calibre del hilo, no el nombre del cerol ni la Línea 10 de la CPTM.",
-      "curiositiesEs": "El gatillo de campo llegó en habla de atención: contacto con objeto cortante, pie derecho. Pie derecho = miembro; pé-direito = altura del techo. Ficha ≠ CIE ≠ receta."
+      "history": "Na banca da pipa brasileira a linha vende-se com número (4, 6, 8, 10, 12…). Linha 10 é o calibre do fio — não o nome do cerol e não a Linha 10 Turquesa da CPTM.",
+      "curiosities": "O gatilho de campo veio em fala de atendimento: contato com objeto cortante, pé direito. Pé direito = membro; pé-direito (hífen) = altura do teto. Com cerol = P de Perigo. Ficha ≠ receita ≠ CID.",
+      "historyEn": "Brazilian kite shops number cotton line by thickness (4, 6, 8, 10, 12…). Line 10 is the gauge of the string — not the name of cerol and not CPTM Line 10.",
+      "curiositiesEn": "The field trigger arrived in clinic speech: contact with a cutting object, right foot. Right foot = body; pé-direito = ceiling height. With cerol = P for Danger. Sheet ≠ recipe ≠ ICD.",
+      "historyEs": "En la banca brasileña la línea de cometa se vende con número (4, 6, 8, 10, 12…). Línea 10 es el calibre del hilo — no el nombre del cerol ni la Línea 10 de la CPTM.",
+      "curiositiesEs": "El gatillo de campo llegó en habla de atención: contacto con objeto cortante, pie derecho. Pie derecho = miembro; pé-direito = altura del techo. Con cerol = P de Perigo. Ficha ≠ receta ≠ CIE."
     },
     {
       "id": "objeto-cortante",
@@ -5873,7 +5873,13 @@
       "simpleEs": "Clase de atención: lo que corta. En esta ficha el objeto propio es línea 10 + cerol; el sitio es el pie derecho. ≠ cuchillo como definición ≠ receta. ¡Valeu !!!",
       "group": "lexico",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-linha-10-cerol.html"
+      "href": "/posts/post-inspecao-palavra-linha-10-cerol.html",
+      "history": "Objeto cortante é classe de atendimento (o que corta), não o nome próprio. Nesta ficha o objecto próprio é linha 10 com cerol; o sítio é o pé direito.",
+      "curiosities": "Fala de pronto-socorro / CAT aponta; o laboratório nomeia. Ficha ≠ protocolo clínico, ≠ CID, ≠ receita de cerol.",
+      "historyEn": "Objeto cortante is a clinic class (that which cuts), not the proper name. On this sheet the proper object is line 10 with cerol; the site is the right foot.",
+      "curiositiesEn": "Emergency / accident speech points; the lab names. Sheet ≠ clinical protocol, ≠ ICD, ≠ cerol recipe.",
+      "historyEs": "Objeto cortante es clase de atención (lo que corta), no el nombre propio. En esta ficha el objeto propio es línea 10 con cerol; el sitio es el pie derecho.",
+      "curiositiesEs": "El habla de urgencias apunta; el laboratorio nombra. Ficha ≠ protocolo clínico, ≠ CIE, ≠ receta de cerol."
     },
     {
       "id": "pe-direito-corpo",
@@ -5883,7 +5889,13 @@
       "simpleEs": "Pie derecho del cuerpo (gatillo de esta ficha). ≠ pé-direito (altura del techo). Caso hermano: pie izquierdo × escalera (mindinho). ¡Valeu !!!",
       "group": "lexico",
       "fromTitle": false,
-      "href": "/posts/post-inspecao-palavra-linha-10-cerol.html"
+      "href": "/posts/post-inspecao-palavra-linha-10-cerol.html",
+      "history": "Pé direito nesta ficha é o pé do lado direito do corpo (lat. pēs + dexter). Pé-direito com hífen é altura do piso ao teto — outra sala.",
+      "curiosities": "Caso irmão: contato com objeto escada no pé esquerdo ficou na ficha mindinho. Relacionar ≠ fundir.",
+      "historyEn": "Pé direito on this sheet is the right foot of the body (Lat. pēs + dexter). Hyphenated pé-direito is ceiling height — another room.",
+      "curiositiesEn": "Sister case: contact with a stair object on the left foot stayed on the mindinho sheet. Relating ≠ fusing.",
+      "historyEs": "Pé direito en esta ficha es el pie del lado derecho del cuerpo (lat. pēs + dexter). Pé-direito con guión es la altura del techo — otra sala.",
+      "curiositiesEs": "Caso hermano: contacto con objeto escalera en el pie izquierdo quedó en la ficha mindinho. Relacionar ≠ fundir."
     },
     {
       "id": "cortante",
@@ -8554,6 +8566,42 @@
       "href": "/posts/post-inspecao-palavra-orelha.html"
     },
     {
+      "id": "olho",
+      "word": "olho",
+      "simple": "Lat. oculus — o órgão que vê, e o olhar. Cruzado com zaroio (voz de zarolho: o olho que não alinha). Lh → i. ≠ eye ≠ ophthalmós ≠ xingo. Valeu !!!",
+      "simpleEn": "Lat. oculus — the organ that sees, and the look. Crossed with zaroio (field voice of zarolho: the eye that does not line up). Lh → i. ≠ eye ≠ ophthalmós ≠ slur. Valeu !!!",
+      "simpleEs": "Lat. oculus — el órgano que ve, y la mirada. Cruzado con zaroio (voz de zarolho: el ojo que no alinea). Lh → i. ≠ eye ≠ ophthalmós ≠ insulto. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-olho.html",
+      "history": "Olho vem do latim oculus (século XIII no galego-português). Família: olhar, óculo, ocular; espanhol ojo, francês œil, italiano occhio. O inglês eye é germânico — paralelo, não pai. O grego ophthalmós alimenta a oftalmologia, outra árvore. O verbo eu olho é homógrafo: mesma família, outra classe.",
+      "curiosities": "Zaroio é zarolho no ouvido (lh palatal vira i, como olho → oio). Hipótese de trabalho: zarolho via zanolho, blend de zanaga + olho — o segundo membro é olho; o prefixo fica aberto. Nomear não é xingar. Olho da planta é broto; olho gordo é folclore.",
+      "historyEn": "Portuguese olho is Latin oculus (13th c. in Galician-Portuguese). Family: olhar, óculo, ocular; Spanish ojo, French œil, Italian occhio. English eye is Germanic — a parallel, not a parent. Greek ophthalmós feeds ophthalmology, another tree. The verb eu olho is a homograph: same family, other class.",
+      "curiositiesEn": "Zaroio is zarolho in the ear (palatal lh becomes i, as olho → oio). Working hypothesis: zarolho via zanolho, a blend of zanaga + olho — the second member is olho; the prefix stays open. Naming is not mocking. Plant olho is a bud; olho gordo is folklore.",
+      "historyEs": "Olho viene del latín oculus (siglo XIII en gallego-portugués). Familia: olhar, óculo, ocular; español ojo, francés œil, italiano occhio. El inglés eye es germánico — paralelo, no padre. El griego ophthalmós alimenta la oftalmología, otro árbol. El verbo eu olho es homógrafo: misma familia, otra clase.",
+      "curiositiesEs": "Zaroio es zarolho en el oído (lh palatal vira i, como olho → oio). Hipótesis de trabajo: zarolho vía zanolho, blend de zanaga + olho. Nombrar no es insultar. Olho de la planta es brote; olho gordo es folclore."
+    },
+    {
+      "id": "zaroio",
+      "word": "zaroio",
+      "simple": "Voz de campo de zarolho (lh → i) — o olho que não alinha. Cruzado na ficha olho. ≠ xingo. Valeu !!!",
+      "simpleEn": "Field voice of zarolho (lh → i) — the eye that does not line up. Crossed in the olho sheet. ≠ slur. Valeu !!!",
+      "simpleEs": "Voz de campo de zarolho (lh → i) — el ojo que no alinea. Cruzado en la ficha olho. ≠ insulto. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-olho.html"
+    },
+    {
+      "id": "zarolho",
+      "word": "zarolho",
+      "simple": "Lema de zaroio — estrábico / cego de um olho; via zanolho ← zanaga + olho (média). Ver olho. Valeu !!!",
+      "simpleEn": "Lemma of zaroio — cross-eyed / one-eyed; path zanolho ← zanaga + olho (medium). See olho. Valeu !!!",
+      "simpleEs": "Lema de zaroio — bizco / tuerto; vía zanolho ← zanaga + olho (media). Ver olho. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-olho.html"
+    },
+    {
       "id": "mama",
       "word": "mama",
       "simple": "Mama = teta — sinal de algo fácil (à mão); ≠ mamão ≠ mãe; mapa sinais; Valeu !!!",
@@ -9197,11 +9245,11 @@
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-valeu.html",
       "history": "Valeu vem de valer (lat. valēre) — gratidão leve e fecho oral BR, irmã de Gratidão. O pretérito virou gesto de respeito.",
-      "curiosities": "Valeu !!! — e valeu: a ficha trata o vocábulo como ofício de saída, não como desprezo.",
+      "curiosities": "Valeu !!! — e valeu. Alteração automática: eu amo a vida (o render cola sozinho).",
       "historyEn": "Portuguese valeu comes from valer (Lat. valēre) — light thanks and a Brazilian oral close, sister of Gratidão. The past tense became a gesture of respect.",
-      "curiositiesEn": "Valeu !!! — and valeu: the sheet treats the word as exit craft, not as scorn.",
+      "curiositiesEn": "Valeu !!! — and valeu. Automatic alteration: eu amo a vida (the renderer glues it).",
       "historyEs": "Valeu viene de valer (lat. valēre) — gratitud leve y cierre oral BR, hermana de Gratidão. El pretérito se volvió gesto de respeto.",
-      "curiositiesEs": "Valeu !!! — y valeu: la ficha trata el vocablo como oficio de salida, no como desprecio."
+      "curiositiesEs": "Valeu !!! — y valeu. Alteración automática: eu amo a vida (el render la pega)."
     },
     {
       "id": "eu-amo-a-vida",
