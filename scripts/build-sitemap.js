@@ -19,6 +19,7 @@ const STATIC = [
   { loc: '/laboratorio/', priority: '0.85', changefreq: 'weekly' },
   { loc: '/guia/cultivo-basico.html', priority: '0.95', changefreq: 'monthly' },
   { loc: '/guia/palavras.html', priority: '0.9', changefreq: 'monthly' },
+  { loc: '/guia/astrologia.html', priority: '0.88', changefreq: 'monthly' },
   { loc: '/videos/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/jogos/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/jogos/gtarp/', priority: '0.85', changefreq: 'weekly' },

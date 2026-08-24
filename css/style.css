@@ -14302,6 +14302,205 @@ a.palavras-duplo-word:focus-visible {
     line-height: 1.45;
 }
 
+/* Guia de Astrologia */
+.guia-astrologia-page {
+    padding-bottom: 3rem;
+    max-width: 1100px;
+}
+
+.astro-cut,
+.astro-ariana,
+.astro-sky,
+.astro-google,
+.astro-wheel,
+.astro-culture {
+    margin: 2rem 0 0;
+}
+
+.astro-cut-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.85rem;
+    margin-top: 0.85rem;
+}
+
+.astro-cut-grid article {
+    padding: 1rem 1.05rem;
+    border: 1px solid rgba(223, 194, 98, 0.22);
+    border-radius: 12px;
+    background: rgba(10, 34, 48, 0.45);
+}
+
+.astro-cut-grid h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+}
+
+.astro-ariana {
+    padding: 1.15rem 1.2rem 1.25rem;
+    border: 1px solid rgba(232, 197, 90, 0.4);
+    border-radius: 14px;
+    background: linear-gradient(160deg, rgba(90, 40, 20, 0.35), rgba(10, 24, 32, 0.6));
+}
+
+.astro-ariana-lead {
+    max-width: 42rem;
+}
+
+.astro-derive-table-wrap {
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.astro-derive {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+}
+
+.astro-derive th,
+.astro-derive td {
+    text-align: left;
+    padding: 0.45rem 0.6rem;
+    border-bottom: 1px solid rgba(223, 194, 98, 0.16);
+    vertical-align: top;
+}
+
+.astro-derive-cut td {
+    color: rgba(244, 210, 180, 0.9);
+}
+
+.astro-ariana-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin: 1rem 0 0;
+}
+
+.astro-sky-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.85rem 0 0.75rem;
+}
+
+.astro-sign-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.32rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid rgba(223, 194, 98, 0.28);
+    background: rgba(8, 22, 32, 0.7);
+    color: #f4edd8;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.85rem;
+}
+
+.astro-sign-chip:hover,
+.astro-sign-chip:focus-visible {
+    border-color: #e8c547;
+}
+
+.astro-sign-chip.is-active,
+.astro-sign-chip--first.is-active {
+    background: rgba(232, 197, 71, 0.18);
+    border-color: #e8c547;
+    color: #fff6d4;
+}
+
+.astro-sign-chip--first {
+    border-color: rgba(232, 120, 70, 0.55);
+}
+
+.astro-sky-frame-wrap {
+    position: relative;
+    width: 100%;
+    min-height: 420px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(120, 180, 210, 0.28);
+    background: #04080e;
+}
+
+.astro-sky-frame-wrap iframe {
+    display: block;
+    width: 100%;
+    height: 460px;
+    border: 0;
+    background: #04080e;
+}
+
+.astro-sky-caption,
+.astro-sky-links,
+.astro-fecho,
+.astro-yt {
+    margin: 0.7rem 0 0;
+    font-size: 0.95rem;
+}
+
+.astro-sign-grid {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.85rem;
+}
+
+.astro-sign-card {
+    padding: 1rem 1.05rem 1.1rem;
+    border: 1px solid rgba(223, 194, 98, 0.2);
+    border-radius: 12px;
+    background: rgba(8, 22, 32, 0.5);
+}
+
+.astro-sign-card--first {
+    border-color: rgba(232, 140, 70, 0.55);
+    box-shadow: 0 0 0 1px rgba(232, 140, 70, 0.18);
+}
+
+.astro-sign-card h3 {
+    margin: 0.15rem 0 0.35rem;
+}
+
+.astro-sign-order,
+.astro-sign-meta,
+.astro-sign-el,
+.astro-sign-native,
+.astro-sign-soon {
+    margin: 0.15rem 0;
+    font-size: 0.86rem;
+    color: rgba(244, 237, 216, 0.72);
+}
+
+.astro-sign-actions {
+    margin: 0.55rem 0 0;
+    font-size: 0.9rem;
+}
+
+.astro-sign-actions .linkish {
+    background: none;
+    border: 0;
+    padding: 0;
+    color: #e8c547;
+    cursor: pointer;
+    font: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+}
+
+.astro-fecho {
+    margin-top: 2.2rem;
+}
+
+@media (max-width: 640px) {
+    .astro-sky-frame-wrap iframe {
+        height: 360px;
+    }
+}
+
 /* Fallback no fim da folha: vence inherit do modo Aprender e CSS antigo em cache. */
 #main-content a[href]:not(.botao):not(.voltar-link):not([class*="card"]):not(.nav-pill):not(.nav-top-link):not(.mobile-menu-link),
 .post-content a[href]:not(.botao):not(.voltar-link),

@@ -31,6 +31,7 @@ const STATIC_PAGES = [
   { url: '/comunidade/', title: 'Feed Vivo', desc: 'Feed Vivo — fotos e relatos de cultivo vegetal partilhados pelos cultivadores', keywords: 'comunidade feed vivo fotos diário cultivo comentários' },
   { url: '/sorteios/', title: 'Sorteios', desc: 'Sorteio de inauguração — clonadora aeropônica caseira em breve', keywords: 'sorteio inauguração clonadora' },
   { url: '/guia/palavras.html', title: 'Guia de Palavras', desc: 'Glossário simples dos títulos do site e do léxico inspecionado', keywords: 'palavras glossário significado maconha ganja inspetor budganja' },
+  { url: '/guia/astrologia.html', title: 'Astrologia', desc: 'Doze signos a partir de Áries; ariana/ariano; céu verificável (Aladin Lite); o que o Google Sky ainda permite', keywords: 'astrologia áries ariana ariano signos zodíaco céu aladin google sky horóscopo' },
   { url: '/videos/', title: 'Últimos vídeos', desc: 'Vídeos recentes do canal YouTube', keywords: 'youtube vídeo canal' },
   { url: '/radio/', title: 'BudGanja Radio', desc: 'Playlist BudGanja Radio do laboratório', keywords: 'rádio budganja playlist' },
   { url: '/info/sobre.html', title: 'Sobre', desc: 'Propósito e metodologia do projeto', keywords: 'sobre missão fitoterapia' },
