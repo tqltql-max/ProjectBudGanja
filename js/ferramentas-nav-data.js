@@ -419,6 +419,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "*Persea americana* — polpa rica em MUFA, persina defensiva e etimologia náuatle *āhuacatl*; separar planta inteira de derivados industriais."
             },
             {
+              "label": "Inspeção: Dr. Samuel Dalle Laste — canal, infarto e vídeos iguais demais",
+              "tileLabel": "Inspeção: Dr. Samuel Dalle Last…",
+              "href": "/posts/post-inspecao-divulgacao-samuel-dalle-laste.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-divulgacao-samuel-dalle-laste",
+              "description": "Divulgação: destaque «O que realmente PREVINE INFARTO» (parágrafo-caderno no hub), IDs CRM-RS 32011 e catálogo exclusivo dos ~811 vídeos. Indexar ≠ endossar."
+            },
+            {
               "label": "Inspeção: Faça o seu melhor — mantra do ofício",
               "tileLabel": "Inspeção: Faça o seu melhor — m…",
               "href": "/posts/post-inspecao-expressao-faca-o-melhor.html",
@@ -4737,6 +4745,14 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-json",
               "description": "Palavras: JSON = JavaScript Object Notation; relacionar PARK (recinto / to park); cola jay-son com Parkinson recusada; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: JavaScript — Java + Script; o + é cartaz, não sangue",
+              "tileLabel": "Inspeção: JavaScript — Java + S…",
+              "href": "/posts/post-inspecao-palavra-javascript.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-javascript",
+              "description": "Palavras: JavaScript ← Java + Script; cola «é o Java» recusada; ≠ café ≠ ilha; elos script/JSON/Node; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

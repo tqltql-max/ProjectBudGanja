@@ -48,10 +48,11 @@ function stampFiles(post) {
 
 function writeHtml(post) {
   const { buildPostHtml, normalizePosts } = require('../lib/posts-service.js');
+  const { writeFileRetrySync } = require('../lib/fs-write-retry.js');
   const [normalized] = normalizePosts([post]);
   const out = path.join(ROOT, normalized.filename);
   fs.mkdirSync(path.dirname(out), { recursive: true });
-  fs.writeFileSync(out, buildPostHtml(normalized), 'utf8');
+  writeFileRetrySync(out, buildPostHtml(normalized), 'utf8');
   console.log('HTML escrito', normalized.filename);
 }
 
