@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T09:34:50.836Z",
+  "updatedAt": "2026-08-25T09:58:47.615Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -10278,6 +10278,31 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 341 — trio Parkinson × parque × party; étimo Pedro, não recinto."
+    },
+    {
+      "id": "palavra-json",
+      "title": "JSON — notação; PARK parqueia objectos; ≠ Jason ≠ Parkinson",
+      "titleEn": "JSON — notation; PARK parks objects; ≠ Jason ≠ Parkinson",
+      "titleEs": "JSON — notación; PARK aparca objetos; ≠ Jason ≠ Parkinson",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: JSON = JavaScript Object Notation; relacionar PARK (recinto / to park); cola jay-son com Parkinson recusada; Valeu !!!",
+      "whyEn": "Words: JSON = JavaScript Object Notation; relate PARK (enclosure / to park); jay-son glue to Parkinson refused.",
+      "whyEs": "Palabras: JSON = JavaScript Object Notation; relacionar PARK (recinto / to park); cola jay-son con Parkinson rechazada.",
+      "suggestedSlug": "inspecao-palavra-json",
+      "doneHref": "/posts/post-inspecao-palavra-json.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-json.html",
+        "/posts/post-inspecao-palavra-parkinson.html",
+        "/posts/post-inspecao-palavra-parque-de-diversoes.html",
+        "/posts/post-inspecao-palavra-party.html",
+        "https://en.wiktionary.org/wiki/JSON",
+        "https://en.wikipedia.org/wiki/JSON",
+        "/posts/post-inspecao-palavra-script.html"
+      ],
+      "notes": "Cap. 344 — PARK × JSON; notação ≠ apelido."
     },
     {
       "id": "palavra-parque-de-diversoes",

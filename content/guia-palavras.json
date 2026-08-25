@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T09:34:50.847Z",
+  "updatedAt": "2026-08-25T09:58:47.627Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -8120,6 +8120,22 @@
       "curiositiesEn": "The ear reads PARK and points to the amusement park; PAR points to party. Relating labels the glue; it does not fuse tremor with a ride.",
       "historyEs": "Parkinson es patronímico inglés: Parkin (hipocorístico de Pedro) + -son. James Parkinson describe en 1817 la shaking palsy; el apellido vira epónimo. El park del recinto es otro abuelo.",
       "curiositiesEs": "El oído lee PARK y apunta al parque de diversiones; PAR apunta a party. Relacionar etiqueta la cola; no funde temblor con rueda."
+    },
+    {
+      "id": "json",
+      "word": "JSON",
+      "simple": "JavaScript Object Notation. Relacionar PARK: o lab parqueia objectos no ficheiro. Soa jay-son — ≠ Jason ≠ Parkinson. Valeu !!!",
+      "simpleEn": "JavaScript Object Notation. Relate PARK: the lab parks objects in the file. Sounds like jay-son — ≠ Jason ≠ Parkinson. Valeu !!!",
+      "simpleEs": "JavaScript Object Notation. Relacionar PARK: el lab aparca objetos en el archivo. Suena jay-son — ≠ Jason ≠ Parkinson. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-json.html",
+      "history": "JSON é acrónimo de JavaScript Object Notation (cunhagem de Douglas Crockford, ~2001; ECMA-404 / RFC 8259). Não vem de Jason nem do patronímico -son.",
+      "curiosities": "A orelha EN ouve jay-son e cola no -son de Parkinson. PARK é o recinto e o verbo to park: no laboratório os objectos ficam no .json. Quatro letras, outro mapa.",
+      "historyEn": "JSON is the acronym for JavaScript Object Notation (Crockford, ~2001). It does not come from Jason or from the patronymic -son.",
+      "curiositiesEn": "The English ear hears jay-son and glues it to Parkinson’s -son. PARK is the enclosure and the verb to park: in the lab, objects sit in .json.",
+      "historyEs": "JSON es el acrónimo de JavaScript Object Notation (Crockford, ~2001). No viene de Jason ni del patronímico -son.",
+      "curiositiesEs": "El oído EN oye jay-son y lo pega al -son de Parkinson. PARK es el recinto y el verbo to park: en el laboratorio los objetos quedan en .json."
     },
     {
       "id": "parque-de-diversoes",

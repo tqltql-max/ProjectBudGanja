@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T09:41:27.320Z",
+  "updatedAt": "2026-08-25T09:59:56.174Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -198,6 +198,12 @@
       "url": "/biblioteca/pesquisas/substratos.html",
       "excerpt": "Relatório sobre substratos biodegradáveis",
       "text": "Pesquisa: Substratos Relatório sobre substratos biodegradáveis substrato pesquisa"
+    },
+    {
+      "title": "Inspeção: JSON — notação; PARK parqueia objectos; ≠ Jason ≠ Parkinson",
+      "url": "/posts/post-inspecao-palavra-json.html",
+      "excerpt": "Palavras: JSON = JavaScript Object Notation; relacionar PARK (recinto / to park); cola jay-son com Parkinson recusada; Valeu !!!",
+      "text": "Inspeção: JSON — notação; PARK parqueia objectos; ≠ Jason ≠ Parkinson Palavras: JSON = JavaScript Object Notation; relacionar PARK (recinto / to park); cola jay-son com Parkinson recusada; Valeu !!! inspecao ## Escopo\n\nInspeção editorial da palavra **[JSON](/posts/post-inspecao-palavra-json.html)** — a **notação** de objectos. Pedido de campo: *relacionar PARK com JSON*.\n\nObjecto = o **acrónimo** *JSON* (JavaScript Object Notation). Relação pedida: **PARK** — as quatro letras que a orelha lê em [Parkinson](/posts/post-inspecao-palavra-parkinson.html) e o verbo inglês *to park* (deixar no recinto). O laboratório **parqueia** objectos em ficheiros `.json` (`posts.json`, `guia-palavras.json`). A orelha ouve *jay-son* e cola no *-son* do apelido. O [étimo](/posts/post-inspecao-palavra-etimo.html) **corta**.\n\n> **Nota metodológica:** auditoria independente. Fontes: [Wiktionary · JSON](https://en.wiktionary.org/wiki/JSON), [JSON](https://en.wikipedia.org/wiki/JSON), EN [park](https://en.wiktionary.org/wiki/park). **Ficha ≠ curso de API, ≠ esquema de base de dados, ≠ tutorial de injeção.** Irmãs: [script](/posts/post-inspecao-palavra-script.html) · [node](/posts/post-inspecao-palavra-node.html) · [opsert](/posts/post-inspecao-palavra-upsert.html). Trio: [Parkinson](/posts/post-inspecao-palavra-parkinson.html) · [parque de diversões](/posts/post-inspecao-palavra-parque-de-diversoes.html) · [party](/posts/post-inspecao-palavra-party.html). Fecho: [Faça o seu melhor](/posts/post-inspecao-expressao-faca-o-melhor.html) · [Valeu !!!](/posts/post-inspecao-palavra-valeu.html) · [eu amo a vida](/posts/post-inspecao-expressao-eu-amo-a-vida.html).\n\n**Gatilho:** *JSON* / *json* / *Jay-son* / *Jason* / *PARK* / `.json`.\n\n## 1. Objecto inspecionado\n\n| Campo | Valor |\n|-------|-------|\n| Forma âncora | **JSON** (acrónimo EN, uso BR igual) |\n| Expansão | **J**ava**S**cript **O**bject **N**otation |\n| Classe | Sigla / formato de dados |\n| Étimo (trabalho) | Cunhagem ~2001 (Crockford): nota"
     },
     {
       "title": "Inspeção: Party — partie / partire; paRTY; ≠ Parkinson ≠ parque",
@@ -7890,6 +7896,12 @@
       "url": "/posts/post-inspecao-palavra-parkinson.html",
       "excerpt": "Parkin + -son (filho de Parkin; Parkin = Pedro). Cola PARK com parque de diversões e PAR com party recusada. Epónimo facto, não brinquedo. Valeu !!!",
       "text": "Parkinson Parkin + -son (filho de Parkin; Parkin = Pedro). Cola PARK com parque de diversões e PAR com party recusada. Epónimo facto, não brinquedo. Valeu !!! lexico guia palavras glossário parkinson"
+    },
+    {
+      "title": "JSON",
+      "url": "/posts/post-inspecao-palavra-json.html",
+      "excerpt": "JavaScript Object Notation. Relacionar PARK: o lab parqueia objectos no ficheiro. Soa jay-son — ≠ Jason ≠ Parkinson. Valeu !!!",
+      "text": "JSON JavaScript Object Notation. Relacionar PARK: o lab parqueia objectos no ficheiro. Soa jay-son — ≠ Jason ≠ Parkinson. Valeu !!! lexico guia palavras glossário json"
     },
     {
       "title": "parque de diversões",
