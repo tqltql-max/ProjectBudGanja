@@ -1061,6 +1061,14 @@
       "subtitle": "Hub do curso de extensão da UNIFESP em parceria com o MovReCam.",
       "docTitle": "Curso UNIFESP | Inspetor BudGanja"
     },
+    "unifespCaderno": {
+      "eyebrow": "Formação · UNIFESP · Caderno",
+      "title": "Caderno de estudo — XIV Curso",
+      "subtitle": "Público. Um parágrafo único por aula — para rever o ofício da aula, não para substituir o vídeo nem o certificado SIEX.",
+      "docTitle": "Caderno de estudo · XIV Curso UNIFESP | Inspetor BudGanja",
+      "noteTitle": "Caderno de estudo.",
+      "noteBody": " Não é material oficial da UNIFESP nem do MovReCam. Não substitui presença, formulário de presença nem orientação médica, farmacêutica ou jurídica. Mérito das aulas: professores convidados e MovReCam."
+    },
     "cadernosEngenharia": {
       "eyebrow": "Formação · Engenharia",
       "title": "Cadernos de Engenharia",
@@ -1269,7 +1277,7 @@
       "cardInspectionsTitle": "Inspeções",
       "cardInspectionsText": "Relatórios com método verificável — legado, pessoas, canais, palavras, artes e produtos.",
       "cardUnifespTitle": "Curso UNIFESP",
-      "cardUnifespText": "Hub do XIV curso de cannabis medicinal — SIEX, grade e rascunhos das aulas.",
+      "cardUnifespText": "Hub do XIV curso de cannabis medicinal — SIEX, caderno público de estudo e rascunhos das aulas.",
       "cardCadernosTitle": "Cadernos de Engenharia",
       "cardCadernosText": "Um caderno por matéria, método Cornell — anotações do curso de Agronomia / engenharia.",
       "cardWordsTitle": "Guia de Palavras",

@@ -1058,6 +1058,14 @@
       "subtitle": "Hub for the UNIFESP extension course in partnership with MovReCam.",
       "docTitle": "UNIFESP course | Inspetor BudGanja"
     },
+    "unifespCaderno": {
+      "eyebrow": "Training · UNIFESP · Notebook",
+      "title": "Study notebook — 14th course",
+      "subtitle": "Public. One unique paragraph per class — to review the lesson’s craft, not to replace the video or the SIEX certificate.",
+      "docTitle": "Study notebook · 14th UNIFESP course | Inspetor BudGanja",
+      "noteTitle": "Study notebook.",
+      "noteBody": " Not official UNIFESP or MovReCam material. It does not replace attendance, the attendance form, or medical, pharmaceutical or legal advice. Credit for the classes: guest teachers and MovReCam."
+    },
     "cadernosEngenharia": {
       "eyebrow": "Training · Engineering",
       "title": "Engineering notebooks",
@@ -1266,7 +1274,7 @@
       "cardInspectionsTitle": "Inspections",
       "cardInspectionsText": "Reports with a verifiable method — legacy, people, channels, words, arts and products.",
       "cardUnifespTitle": "UNIFESP course",
-      "cardUnifespText": "Hub for the 14th medicinal cannabis course — SIEX, syllabus and lesson drafts.",
+      "cardUnifespText": "Hub for the 14th medicinal cannabis course — SIEX, public study notebook and lesson drafts.",
       "cardCadernosTitle": "Engineering notebooks",
       "cardCadernosText": "One notebook per subject, Cornell method — notes for the agronomy / engineering course.",
       "cardWordsTitle": "Words Guide",

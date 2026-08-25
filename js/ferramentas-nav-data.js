@@ -63,7 +63,7 @@ window.__BIBLIOTECA_NAV__ = {
           "icon": "🎓",
           "slug": "unifesp",
           "featured": true,
-          "description": "Hub do XIV curso de extensão sobre cannabis medicinal."
+          "description": "Hub do XIV curso — caderno público de estudo e SIEX."
         },
         {
           "label": "Cadernos de Engenharia",

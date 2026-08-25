@@ -28,6 +28,7 @@ const STATIC = [
   { loc: '/biblioteca/pesquisas/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/biblioteca/inspecoes/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/biblioteca/unifesp/', priority: '0.95', changefreq: 'monthly' },
+  { loc: '/biblioteca/unifesp/caderno.html', priority: '0.9', changefreq: 'weekly' },
   { loc: '/biblioteca/cadernos/', priority: '0.8', changefreq: 'weekly' },
   { loc: '/plantas/', priority: '0.95', changefreq: 'weekly' },
   { loc: '/animais/', priority: '0.95', changefreq: 'weekly' },

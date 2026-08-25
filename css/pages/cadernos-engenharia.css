@@ -374,11 +374,84 @@ html:not([data-theme="dark"]) .ce-custom-row input {
   .ce-toolbar,
   .ce-back,
   .ce-lesson-actions,
-  .ce-picker {
+  .ce-picker,
+  .livro-actions {
     display: none !important;
   }
 
-  .ce-lesson {
+  .ce-lesson,
+  .uc-aula {
     break-inside: avoid;
   }
+}
+
+/* Caderno público UNIFESP — um parágrafo por aula */
+.uc-page .livro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.5rem;
+}
+
+.uc-toc {
+  margin: 0 0 1.75rem;
+  padding: 1rem 1.1rem 1.15rem;
+  border-radius: 16px;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  background: rgba(18, 20, 14, 0.45);
+}
+
+.uc-toc h2 {
+  margin: 0 0 0.65rem;
+  font-size: 1.05rem;
+}
+
+.uc-toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.uc-toc li {
+  margin: 0.2rem 0;
+}
+
+.uc-gap {
+  margin: 0.85rem 0 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted, #ccc);
+}
+
+.uc-aula {
+  margin: 0 0 1.15rem;
+  padding: 1rem 1.1rem 1.15rem;
+  border-radius: 16px;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  background: rgba(18, 20, 14, 0.45);
+}
+
+.uc-kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: var(--color-text-muted, #ccc);
+}
+
+.uc-aula h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1.12rem;
+  color: #f5e6b8;
+}
+
+.uc-aula p:last-child {
+  margin: 0;
+  line-height: 1.6;
+}
+
+html:not([data-theme="dark"]) .uc-toc,
+html:not([data-theme="dark"]) .uc-aula {
+  background: linear-gradient(160deg, rgba(223, 194, 98, 0.16) 0%, #fffdf6 62%);
+}
+
+html:not([data-theme="dark"]) .uc-aula h2 {
+  color: #3d3210;
 }

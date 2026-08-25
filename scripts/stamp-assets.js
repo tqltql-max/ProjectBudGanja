@@ -75,7 +75,10 @@ function stampHtml(content) {
         '$1\n    <link rel="stylesheet" href="/css/pages/planejamento.css?v=' + ASSET_VERSION + '">'
       );
     }
-  } else if (next.includes('data-page="cadernos-engenharia"') && !next.includes('pages/cadernos-engenharia.css')) {
+  } else if (
+    (next.includes('data-page="cadernos-engenharia"') || next.includes('data-page="unifesp-caderno"')) &&
+    !next.includes('pages/cadernos-engenharia.css')
+  ) {
     next = next.replace(
       /(<link rel="stylesheet" href="\/css\/style\.css\?v=[^"]+">)/,
       '$1\n    <link rel="stylesheet" href="/css/pages/cadernos-engenharia.css?v=' + ASSET_VERSION + '">'
