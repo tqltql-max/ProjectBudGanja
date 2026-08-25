@@ -274,6 +274,11 @@ const {
   poemEn: poemEstradaJesusEn,
   poemEs: poemEstradaJesusEs
 } = require('../lib/cruzamento-estrada-jesus-cristo-inspecao-post.js');
+const {
+  poemPt: poemTeologiaPt,
+  poemEn: poemTeologiaEn,
+  poemEs: poemTeologiaEs
+} = require('../lib/teologia-inspecao-post.js');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'content', 'vida-poemas.json');
@@ -298,6 +303,24 @@ const doc = {
       bodyEs: poemEstradaJesusEs(),
       inspectionHref: '/posts/post-inspecao-cruzamento-estrada-encruzilhada-jesus-cristo.html',
       tags: ['poesia', 'vida', 'estrada', 'jesus', 'encruzilhada', 'cruzamento']
+    },
+    {
+      id: 'teologia',
+      slug: 'teologia',
+      title: 'Teologia',
+      titleEn: 'Theology',
+      titleEs: 'Teología',
+      author: 'Laboratório BudGanja',
+      authorEn: 'BudGanja Lab',
+      authorEs: 'Laboratorio BudGanja',
+      teaser: 'Eco BudGanja — theós + lógos; o nome do estudo, sem catecismo de ficha; Valeu !!!',
+      teaserEn: 'BudGanja echo — theós + lógos; the name of the study, without a catechism of the sheet; Valeu !!!',
+      teaserEs: 'Eco BudGanja — theós + lógos; el nombre del estudio, sin catecismo de ficha; ¡Valeu !!!',
+      body: poemTeologiaPt(),
+      bodyEn: poemTeologiaEn(),
+      bodyEs: poemTeologiaEs(),
+      inspectionHref: '/posts/post-inspecao-palavra-teologia.html',
+      tags: ['poesia', 'vida', 'teologia', 'theos']
     },
     {
       id: 'encruzilhada',

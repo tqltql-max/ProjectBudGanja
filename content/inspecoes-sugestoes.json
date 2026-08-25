@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T23:14:15.786Z",
+  "updatedAt": "2026-08-25T06:14:45.398Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -10664,6 +10664,29 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 329 — lema do catálogo Mitologia."
+    },
+    {
+      "id": "palavra-teologia",
+      "title": "Teologia — theós + lógos; estudo do divino",
+      "titleEn": "Teologia — theós + lógos; study of the divine",
+      "titleEs": "Teologia — theós + lógos; estudio de lo divino",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: teologia (theós + lógos) — gatilho TEologigiA; ≠ mitologia ≠ Deus ≠ catecismo; Valeu !!!",
+      "whyEn": "Words: teologia (theós + lógos) — trigger TEologigiA; ≠ mythology ≠ Deus ≠ catechism.",
+      "whyEs": "Palabras: teologia (theós + lógos) — gatillo TEologigiA; ≠ mitología ≠ Deus ≠ catecismo.",
+      "suggestedSlug": "inspecao-palavra-teologia",
+      "doneHref": "/posts/post-inspecao-palavra-teologia.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-teologia.html",
+        "/posts/post-inspecao-palavra-mitologia.html",
+        "/posts/post-inspecao-palavra-deus.html",
+        "https://pt.wiktionary.org/wiki/teologia",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 340 — estudo do divino; o nome, não o púlpito."
     },
     {
       "id": "palavra-anubis",

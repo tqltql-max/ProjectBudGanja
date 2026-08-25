@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T23:14:15.786Z",
+  "updatedAt": "2026-08-25T06:14:45.415Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2842,6 +2842,22 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-mitologia.html"
+    },
+    {
+      "id": "teologia",
+      "word": "teologia",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-teologia.html",
+      "simple": "Gr. theós + lógos — o nome do estudo do divino; gatilho TEologigiA; ≠ mitologia ≠ Deus ≠ catecismo; Valeu !!!",
+      "simpleEn": "Gr. theós + lógos — the name of the study of the divine; trigger TEologigiA; ≠ mythology ≠ pulpit.",
+      "simpleEs": "Gr. theós + lógos — el nombre del estudio de lo divino; gatillo TEologigiA; ≠ mitología ≠ púlpito.",
+      "history": "Pedido de campo 2026-08-25: inspeção da palavra e estudo da TEologigiA. Forma âncora teologia; theós + lógos.",
+      "curiosities": "«Estudo da teologia» quase repete o étimo. Irmã mitologia (mythos, não theós). Valeu !!! na index.",
+      "historyEn": "Field 2026-08-25: inspect the word and the study of TEologigiA. Anchor teologia; theós + lógos.",
+      "curiositiesEn": "“Study of theology” almost repeats the etymon. Sister mythology (mythos, not theós).",
+      "historyEs": "Pedido 2026-08-25: inspección de la palabra y el estudio de TEologigiA. Ancla teologia; theós + lógos.",
+      "curiositiesEs": "«Estudio de la teología» casi repite el étimo. Hermana mitología (mythos, no theós)."
     },
     {
       "id": "anubis",
