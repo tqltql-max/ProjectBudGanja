@@ -166,7 +166,7 @@
           x: Math.random() * width,
           y: Math.random() * height,
           r: Math.random() * 1.6 + 0.4,
-          s: Math.random() * 0.45 + 0.15,
+          s: Math.random() * 0.18 + 0.06,
           d: Math.random() * Math.PI * 2
         });
       }
@@ -178,8 +178,8 @@
       ctx.fillStyle = 'rgba(244, 247, 251, 0.72)';
       flakes.forEach(function (f) {
         f.y += f.s;
-        f.x += Math.sin(f.d) * 0.28;
-        f.d += 0.01;
+        f.x += Math.sin(f.d) * 0.12;
+        f.d += 0.004;
         if (f.y > height) {
           f.y = -4;
           f.x = Math.random() * width;

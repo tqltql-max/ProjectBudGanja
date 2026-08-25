@@ -50,7 +50,7 @@
         x: Math.random() * width,
         y: Math.random() * height,
         r: Math.random() * 1.7 + 0.35,
-        s: Math.random() * 0.5 + 0.18,
+        s: Math.random() * 0.2 + 0.07,
         d: Math.random() * Math.PI * 2
       });
     }
@@ -65,8 +65,8 @@
     for (i = 0; i < flakes.length; i++) {
       f = flakes[i];
       f.y += f.s;
-      f.x += Math.sin(f.d) * 0.32;
-      f.d += 0.012;
+      f.x += Math.sin(f.d) * 0.14;
+      f.d += 0.005;
       if (f.y > height) {
         f.y = -6;
         f.x = Math.random() * width;
