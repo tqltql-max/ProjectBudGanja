@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T11:16:53.246Z",
+  "updatedAt": "2026-08-25T12:04:51.004Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4114,6 +4114,38 @@
       "curiositiesEn": "In the lab salvation is the craft of leaving a tight spot: links with path, soul and risk — no praise of empty flight.",
       "historyEs": "EXIT viene del latín exīre / exitus — salida — y en el inglés de teatro marca la acotación de escenario. En lo digital se volvió quit.",
       "curiositiesEs": "En el lab la salvación es el oficio de salir del aprieto: eslabones con camino, alma y riesgo — sin apología de huida vacía."
+    },
+    {
+      "id": "enter",
+      "word": "Enter",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-enter.html",
+      "simple": "Lat. intrāre — ir para dentro; tecla que confirma o passo. Par de limiar: bem-vindos!!! (bene + venīre). ≠ EXIT ≠ login frio. Valeu !!!",
+      "simpleEn": "Lat. intrāre — to go in; the key that confirms the step. Threshold pair: bem-vindos!!! (bene + venīre). ≠ EXIT ≠ cold login. Valeu !!!",
+      "simpleEs": "Lat. intrāre — ir adentro; tecla que confirma el paso. Par de umbral: bem-vindos!!! (bene + venīre). ≠ EXIT ≠ login frío. ¡Valeu !!!",
+      "history": "Pedido de campo 2026-08-25: inspeção da palavra Enter, relação com bem viNDOS!!!, palavra final inspecionada. Do latim intrāre (intrā «dentro») via francês antigo entrer.",
+      "curiosities": "Bem-vindos e welcome partilham o desenho bem+vir / well+come — não o étimo de enter. A tecla Return era o carro da máquina; o PC fundiu Return e Enter.",
+      "historyEn": "Field 2026-08-25: inspect Enter, relation to bem viNDOS!!!, final inspected word. From Latin intrāre (intrā “inside”) via Old French entrer.",
+      "curiositiesEn": "Bem-vindos and welcome share the well+come drawing — not Enter’s etymon. Return was the typewriter carriage; the PC merged Return and Enter.",
+      "historyEs": "Pedido 2026-08-25: inspección de Enter, relación con bem viNDOS!!!, palabra final inspeccionada. Del latín intrāre (intrā «dentro») vía francés antiguo entrer.",
+      "curiositiesEs": "Bem-vindos y welcome comparten el dibujo bien+venir — no el étimo de enter. Return era el carro de la máquina; el PC fusionó Return y Enter."
+    },
+    {
+      "id": "bem-vindos",
+      "word": "bem-vindos",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-enter.html",
+      "simple": "Bem + vindos (lat. bene + venīre) — saudação do limiar. Par de Enter (relação de porta, não de sangue). Gatilho: bem viNDOS!!!. Valeu !!!",
+      "simpleEn": "Bem + vindos (Lat. bene + venīre) — greeting at the threshold. Pair of Enter (door relation, not blood). Trigger: bem viNDOS!!!. Valeu !!!",
+      "simpleEs": "Bem + vindos (lat. bene + venīre) — saludo del umbral. Par de Enter (relación de puerta, no de sangre). Gatillo: bem viNDOS!!!. ¡Valeu !!!",
+      "history": "Composto português: bem + particípio de vir. Inglês welcome = well + come — o mesmo gesto em duas línguas.",
+      "curiosities": "Hífen obrigatório no escrito (bem-vindo). Os três !!! ecoam Valeu !!!. Vive na ficha Enter, não numa ficha-irmã separada.",
+      "historyEn": "Portuguese compound: bem + participle of vir. English welcome = well + come — the same gesture in two languages.",
+      "curiositiesEn": "Hyphen required in writing (bem-vindo). The three !!! echo Valeu !!!. Lives on the Enter sheet, not a separate sister sheet.",
+      "historyEs": "Compuesto portugués: bem + participio de vir. Inglés welcome = well + come — el mismo gesto en dos lenguas.",
+      "curiositiesEs": "Guion obligatorio en lo escrito (bem-vindo). Los tres !!! ecoan Valeu !!!. Vive en la ficha Enter, no en una ficha hermana."
     },
     {
       "id": "externalidade",

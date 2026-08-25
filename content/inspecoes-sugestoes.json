@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T11:24:46.917Z",
+  "updatedAt": "2026-08-25T12:04:50.987Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -5301,6 +5301,34 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 106 — «essa é a salvação»; ofício sem sermão."
+    },
+    {
+      "id": "palavra-enter",
+      "title": "Enter — intrāre, a tecla e bem-vindos!!!",
+      "titleEn": "Enter — intrāre, the key and bem-vindos!!!",
+      "titleEs": "Enter — intrāre, la tecla y bem-vindos!!!",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: Enter ← lat. intrāre — tecla × verbo × limiar; relação com bem-vindos!!!; ≠ EXIT ≠ login frio; Valeu !!!",
+      "whyEn": "Words: Enter ← Lat. intrāre — key × verb × threshold; relation to bem-vindos!!!; ≠ EXIT ≠ cold login.",
+      "whyEs": "Palabras: Enter ← lat. intrāre — tecla × verbo × umbral; relación con bem-vindos!!!; ≠ EXIT ≠ login frío.",
+      "suggestedSlug": "inspecao-palavra-enter",
+      "doneHref": "/posts/post-inspecao-palavra-enter.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-enter.html",
+        "/posts/post-inspecao-palavra-exit.html",
+        "https://en.wiktionary.org/wiki/enter",
+        "https://pt.wiktionary.org/wiki/entrar",
+        "https://pt.wiktionary.org/wiki/bem-vindo",
+        "https://en.wiktionary.org/wiki/welcome",
+        "https://en.wikipedia.org/wiki/Enter_key",
+        "/posts/post-inspecao-palavra-backspace.html",
+        "/posts/post-inspecao-palavra-homepage.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 346 — palavra final inspecionada neste pedido; par bem-vindos!!! (limiar, não sangue)."
     },
     {
       "id": "palavra-pato",
