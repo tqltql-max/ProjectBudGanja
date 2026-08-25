@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T09:58:47.615Z",
+  "updatedAt": "2026-08-25T11:16:53.235Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -8942,6 +8942,32 @@
       "notes": "Cap. 200 — lat. scrīptum; sequência escrita; anti-destino; elos skill/pattern/commitar/opsert."
     },
     {
+      "id": "palavra-javascript",
+      "title": "JavaScript — Java + Script; o + é cartaz, não sangue",
+      "titleEn": "JavaScript — Java + Script; the plus is a billboard, not blood",
+      "titleEs": "JavaScript — Java + Script; el más es cartel, no sangre",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: JavaScript ← Java + Script; cola «é o Java» recusada; ≠ café ≠ ilha; elos script/JSON/Node; Valeu !!!",
+      "whyEn": "Words: JavaScript ← Java + Script; “it is Java” glue refused; ≠ coffee ≠ island; links script/JSON/Node.",
+      "whyEs": "Palabras: JavaScript ← Java + Script; cola «es el Java» rechazada; ≠ café ≠ isla; vínculos script/JSON/Node.",
+      "suggestedSlug": "inspecao-palavra-javascript",
+      "doneHref": "/posts/post-inspecao-palavra-javascript.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-javascript.html",
+        "/posts/post-inspecao-palavra-script.html",
+        "/posts/post-inspecao-palavra-json.html",
+        "/posts/post-inspecao-palavra-node.html",
+        "https://en.wiktionary.org/wiki/JavaScript",
+        "https://en.wikipedia.org/wiki/JavaScript",
+        "https://en.wiktionary.org/wiki/Java",
+        "https://en.wikipedia.org/wiki/ECMAScript"
+      ],
+      "notes": "Cap. 345 — Java + Script; cartaz 1995; ≠ Java."
+    },
+    {
       "id": "palavra-upsert",
       "title": "Opsert — inserir ou actualizar sem duplicar a identidade",
       "titleEn": "Opsert — insert or update without duplicating identity",
@@ -11777,6 +11803,28 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 333 — derivação inserir + -ção; ≠ inseto ≠ upsert."
+    },
+    {
+      "id": "samuel-dalle-laste",
+      "title": "Dr. Samuel Dalle Laste — canal, maconha e vídeos iguais demais",
+      "titleEn": "Dr. Samuel Dalle Laste — channel, cannabis and look-alike videos",
+      "titleEs": "Dr. Samuel Dalle Laste — canal, cannabis y vídeos demasiado iguales",
+      "tipo": "divulgacao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Divulgação: IDs do canal CRM-RS 32011 + âncoras de maconha + classificação exclusiva (DICA #, Pergunte, Olá Pessoal).",
+      "whyEn": "Outreach: CRM-RS 32011 channel IDs + cannabis anchors + exclusive classification (TIP #, Ask, Olá Pessoal).",
+      "whyEs": "Divulgación: IDs del canal CRM-RS 32011 + anclas de cannabis + clasificación exclusiva (TIP #, Pregunte, Olá Pessoal).",
+      "suggestedSlug": "inspecao-divulgacao-samuel-dalle-laste",
+      "doneHref": "/posts/post-inspecao-divulgacao-samuel-dalle-laste.html",
+      "seriesHint": "divulgacao-saude",
+      "sources": [
+        "https://www.youtube.com/@DrSamuelDalleLaste",
+        "https://www.youtube.com/c/DrSamuelDalleLaste",
+        "https://drsamueldallelaste.com.br/",
+        "https://clinicadallelaste.com.br/"
+      ],
+      "notes": "Série Divulgação. Indexar ≠ endossar medicina integrativa. Não equiparar a Ticão/Carlini."
     }
   ]
 }

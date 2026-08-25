@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T09:58:47.627Z",
+  "updatedAt": "2026-08-25T11:16:53.246Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -3594,6 +3594,42 @@
       "curiositiesEn": "House scripts live in scripts/ (upsert-*.js on disk). Script ≠ destiny ≠ skill. The identity gesture is called opsert. Valeu !!!",
       "historyEs": "Script viene del latín scrīptum ← scrībere («escribir») y vuelve al portugués por la puerta inglesa. En BR nombra secuencia escrita: código, guion, etiqueta HTML, habla («seguir el script»).",
       "curiositiesEs": "Los scripts de la casa viven en scripts/ (upsert-*.js en disco). Script ≠ destino ≠ skill. El gesto de identidad se llama opsert. ¡Valeu !!!"
+    },
+    {
+      "id": "javascript",
+      "word": "JavaScript",
+      "simple": "Composto Java + Script. O + é cartaz de 1995, não sangue. ≠ Java a língua ≠ café ≠ ilha. Elos script / JSON / Node. Valeu !!!",
+      "simpleEn": "Compound Java + Script. The plus is a 1995 billboard, not blood. ≠ Java the language ≠ coffee ≠ island. Links script / JSON / Node. Valeu !!!",
+      "simpleEs": "Compuesto Java + Script. El más es cartel de 1995, no sangre. ≠ Java la lengua ≠ café ≠ isla. Vínculos script / JSON / Node. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-javascript.html",
+      "history": "JavaScript é composto de marketing (Netscape, 1995): Mocha → LiveScript → JavaScript, para colar no hype da língua Java (Sun). Não é dialecto de Java. A norma chama-se ECMAScript. A peça Script é lat. scrīptum.",
+      "curiosities": "O pedido java + sCRIPT parte o camelCase: duas peças, um cartaz. No laboratório a língua vive em .js, na tag <script> e no Node. JSON é a notação de objectos desta língua.",
+      "historyEn": "JavaScript is a 1995 marketing compound (Netscape): Mocha → LiveScript → JavaScript, to ride Java’s (Sun) hype. It is not a dialect of Java. The standard is ECMAScript. Script is Lat. scrīptum.",
+      "curiositiesEn": "The request java + sCRIPT splits the camelCase: two pieces, one billboard. In the lab the language lives in .js, in the <script> tag and in Node. JSON is this language’s object notation.",
+      "historyEs": "JavaScript es compuesto de marketing (Netscape, 1995): Mocha → LiveScript → JavaScript, para pegarse al hype de Java (Sun). No es dialecto de Java. La norma es ECMAScript. Script es lat. scrīptum.",
+      "curiositiesEs": "El pedido java + sCRIPT parte el camelCase: dos piezas, un cartel. En el laboratorio la lengua vive en .js, en la etiqueta <script> y en Node. JSON es la notación de objetos de esta lengua."
+    },
+    {
+      "id": "js",
+      "word": "JS",
+      "simple": "Sigla de JavaScript / extensão .js. Ver JavaScript. Valeu !!!",
+      "simpleEn": "Abbreviation of JavaScript / .js extension. See JavaScript. Valeu !!!",
+      "simpleEs": "Sigla de JavaScript / extensión .js. Ver JavaScript. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-javascript.html"
+    },
+    {
+      "id": "java",
+      "word": "Java",
+      "simple": "Outra língua (e café / ilha). No composto JavaScript é só o íman de 1995. ≠ JavaScript. Valeu !!!",
+      "simpleEn": "Another language (and coffee / island). In the JavaScript compound it is only the 1995 magnet. ≠ JavaScript. Valeu !!!",
+      "simpleEs": "Otra lengua (y café / isla). En el compuesto JavaScript es solo el imán de 1995. ≠ JavaScript. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-javascript.html"
     },
     {
       "id": "if",
@@ -10868,6 +10904,22 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-jogo-metal-slug.html"
+    },
+    {
+      "id": "samuel-dalle-laste",
+      "word": "Samuel Dalle Laste",
+      "simple": "Médico CRM-RS 32011 — divulgação de prevenção/longevidade no YouTube (Divulgação). Indexar ≠ endossar.",
+      "simpleEn": "Physician CRM-RS 32011 — prevention/longevity outreach on YouTube (Outreach). Indexing ≠ endorsement.",
+      "simpleEs": "Médico CRM-RS 32011 — divulgación de prevención/longevidad en YouTube (Divulgación). Indexar ≠ respaldar.",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-divulgacao-samuel-dalle-laste.html",
+      "history": "Samuel Dalle Laste é o médico (CRM-RS 32011) do canal de divulgação de prevenção e longevidade. O laboratório abre ficha em Divulgação — catálogo temático, não endosso clínico.",
+      "curiosities": "DICA #, Pergunte e Olá Pessoal agrupam os vídeos iguais demais. Autor × canal: a biografia não substitui o laudo médico do leitor.",
+      "historyEn": "Samuel Dalle Laste is the physician (CRM-RS 32011) behind the prevention and longevity outreach channel. The lab opens an Outreach sheet — thematic catalog, not a clinical endorsement.",
+      "curiositiesEn": "TIP #, Ask and Olá Pessoal group the look-alike videos. Author × channel: the biography does not replace the reader’s medical report.",
+      "historyEs": "Samuel Dalle Laste es el médico (CRM-RS 32011) del canal de divulgación de prevención y longevidad. El laboratorio abre ficha en Divulgación — catálogo temático, no aval clínico.",
+      "curiositiesEs": "TIP #, Pregunte y Olá Pessoal agrupan los vídeos demasiado iguales. Autor × canal: la biografía no sustituye el informe médico del lector."
     }
   ],
   "words": []
