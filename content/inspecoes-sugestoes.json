@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T06:14:45.398Z",
+  "updatedAt": "2026-08-25T09:34:50.836Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -10252,6 +10252,78 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 301 — cruzamento Boston × bosta; tūn devolvido à vila."
+    },
+    {
+      "id": "palavra-parkinson",
+      "title": "Parkinson — Parkin + son (Pedro); ≠ parque ≠ party",
+      "titleEn": "Parkinson — Parkin + son (Peter); ≠ park ≠ party",
+      "titleEs": "Parkinson — Parkin + son (Pedro); ≠ parque ≠ party",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: Parkinson = Parkin + -son (Pedro); relacionar com parque de diversões e cruzar party = cola de orelha, não étimo; epónimo facto, não brinquedo; Valeu !!!",
+      "whyEn": "Words: Parkinson = Parkin + -son (Peter); relate to amusement park and cross party = ear-glue, not etymon; eponym as fact, not a ride.",
+      "whyEs": "Palabras: Parkinson = Parkin + -son (Pedro); relacionar con parque de diversiones y cruzar party = cola de oído, no étimo; epónimo como hecho, no un juego.",
+      "suggestedSlug": "inspecao-palavra-parkinson",
+      "doneHref": "/posts/post-inspecao-palavra-parkinson.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-parkinson.html",
+        "/posts/post-inspecao-palavra-parque-de-diversoes.html",
+        "/posts/post-inspecao-palavra-party.html",
+        "https://en.wiktionary.org/wiki/Parkinson",
+        "/posts/post-inspecao-figura-michael-j-fox.html",
+        "/biblioteca/unifesp/livro-xiv.html#aula-13",
+        "/posts/post-inspecao-palavra-trocadilho.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 341 — trio Parkinson × parque × party; étimo Pedro, não recinto."
+    },
+    {
+      "id": "palavra-parque-de-diversoes",
+      "title": "Parque de diversões — recinto da festa escolhida; ≠ Parkinson",
+      "titleEn": "Parque de diversões — enclosure of chosen fun; ≠ Parkinson",
+      "titleEs": "Parque de diversões — recinto de la fiesta elegida; ≠ Parkinson",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: parque de diversões = parc/parricus + diversão (dīvertere); cola PARK com Parkinson recusada; party pode entrar; Valeu !!!",
+      "whyEn": "Words: amusement park = parc/parricus + diversion; PARK glue to Parkinson refused; a party may enter.",
+      "whyEs": "Palabras: parque de diversiones = parc/parricus + diversión; cola PARK con Parkinson rechazada; party puede entrar.",
+      "suggestedSlug": "inspecao-palavra-parque-de-diversoes",
+      "doneHref": "/posts/post-inspecao-palavra-parque-de-diversoes.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-parque-de-diversoes.html",
+        "/posts/post-inspecao-palavra-parkinson.html",
+        "/posts/post-inspecao-palavra-party.html",
+        "https://pt.wikipedia.org/wiki/Parque_de_divers%C3%B5es",
+        "/posts/post-inspecao-palavra-alegria.html"
+      ],
+      "notes": "Cap. 342 — recinto; não metáfora do tremor."
+    },
+    {
+      "id": "palavra-party",
+      "title": "Party — partie / partire; paRTY; ≠ Parkinson ≠ parque",
+      "titleEn": "Party — partie / partire; paRTY; ≠ Parkinson ≠ park",
+      "titleEs": "Party — partie / partire; paRTY; ≠ Parkinson ≠ parque",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: party ← partie ← partire; gatilho paRTY; cola PAR com Parkinson e park recusada; festa (festum) traduz; Valeu !!!",
+      "whyEn": "Words: party ← partie ← partire; trigger paRTY; PAR glue to Parkinson and park refused; festa (festum) translates.",
+      "whyEs": "Palabras: party ← partie ← partire; gatillo paRTY; cola PAR con Parkinson y park rechazada; festa (festum) traduce.",
+      "suggestedSlug": "inspecao-palavra-party",
+      "doneHref": "/posts/post-inspecao-palavra-party.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-party.html",
+        "/posts/post-inspecao-palavra-parkinson.html",
+        "/posts/post-inspecao-palavra-parque-de-diversoes.html",
+        "https://en.wiktionary.org/wiki/party",
+        "/posts/post-inspecao-palavra-boston.html"
+      ],
+      "notes": "Cap. 343 — empréstimo; Tea Party fica em Boston."
     },
     {
       "id": "palavra-bosta",
