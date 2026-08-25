@@ -14306,6 +14306,7 @@ a.palavras-duplo-word:focus-visible {
 .biblioteca-hub-card--palavras { --bib-accent: #f5b041; --bib-soft: rgba(243, 156, 18, 0.14); }
 .biblioteca-hub-card--pesquisas { --bib-accent: #5dade2; --bib-soft: rgba(52, 152, 219, 0.14); }
 .biblioteca-hub-card--plantas { --bib-accent: #58d68d; --bib-soft: rgba(39, 174, 96, 0.14); }
+.biblioteca-hub-card--frutos { --bib-accent: #f5c542; --bib-soft: rgba(243, 156, 18, 0.16); }
 .biblioteca-hub-card--animais { --bib-accent: #e59866; --bib-soft: rgba(230, 126, 34, 0.14); }
 .biblioteca-hub-card--fungos { --bib-accent: #5ad2be; --bib-soft: rgba(90, 210, 190, 0.14); }
 .biblioteca-hub-card--tecnologia { --bib-accent: #5dade2; --bib-soft: rgba(93, 173, 226, 0.14); }

@@ -1119,7 +1119,7 @@ window.__I18N_LOCALES__ = {
       "plantas": {
         "label": "Plants",
         "tileLabel": "Plants",
-        "description": "Catalog of Brazilian herbal plants."
+        "description": "Catalog of Brazilian herbal plants — plant kingdom; fruit is another axis."
       },
       "animais": {
         "label": "Animals",
@@ -1235,6 +1235,11 @@ window.__I18N_LOCALES__ = {
         "label": "Words",
         "tileLabel": "Words",
         "description": "Simple glossary of site titles and the inspected lexicon."
+      },
+      "frutos": {
+        "label": "Fruits",
+        "tileLabel": "Fruits",
+        "description": "Catalog of the fruit organ — not the kingdom. The plant lives under Plants. Fungi are another kingdom."
       }
     },
     "pages": {
@@ -1368,7 +1373,11 @@ window.__I18N_LOCALES__ = {
         "cardVideosTip": "Inspections, tutorials and channel updates on YouTube.",
         "cardGamesTip": "Zangado and Paulinho o LOKO — games page only.",
         "cardRadioTip": "BudGanja Radio playlist.",
-        "cardGiveawaysTip": "Active and past lab giveaways."
+        "cardGiveawaysTip": "Active and past lab giveaways.",
+        "cardFrutosTitle": "Fruits",
+        "cardFrutosText": "The fruit organ — not the plant kingdom. Whole fruit vs industrial derivatives. A fungus is not a plant.",
+        "cardFrutosBtn": "Explore fruits",
+        "cardFrutosTip": "The fruit organ — not the plant kingdom. A fungus is not a plant."
       },
       "dev": {
         "badge": "Under construction",
@@ -1380,7 +1389,7 @@ window.__I18N_LOCALES__ = {
       "plantas": {
         "eyebrow": "Catalog",
         "title": "Herbal plants",
-        "subtitle": "Educational sheets of species used in Brazilian folk medicine and phytotherapy — traditional uses, plant parts and editorial cautions.",
+        "subtitle": "Educational sheets of species used in Brazilian folk medicine and phytotherapy — the plant kingdom. Fruit is an organ (see Fruits). A fungus is not a plant.",
         "disclaimerStrong": "Educational notice.",
         "disclaimer": "Educational sheets on Brazilian herbal and medicinal plants. They do not replace professional health advice or legal counsel.",
         "searchLabel": "Search",
@@ -1409,7 +1418,9 @@ window.__I18N_LOCALES__ = {
         "unifespBody": "This species is linked to the UNIFESP extension course track on medicinal cannabis.",
         "unifespHub": "UNIFESP hub",
         "unifespCourse": "Course inspection",
-        "plantsLink": "Plants"
+        "plantsLink": "Plants",
+        "relatedFruits": "Fruits catalog",
+        "relatedFungi": "Fungi"
       },
       "animais": {
         "eyebrow": "Catalog",
@@ -1471,7 +1482,8 @@ window.__I18N_LOCALES__ = {
         "unifespBody": "This species is linked to the UNIFESP extension course track on medicinal cannabis (psychedelics lesson).",
         "unifespHub": "UNIFESP hub",
         "unifespCourse": "Course inspection",
-        "fungiLink": "Fungi"
+        "fungiLink": "Fungi",
+        "relatedFruits": "Fruits catalog"
       },
       "tecnologia": {
         "eyebrow": "Catalog",
@@ -1878,10 +1890,18 @@ window.__I18N_LOCALES__ = {
         "subtitle": "Hub for the UNIFESP extension course in partnership with MovReCam.",
         "docTitle": "UNIFESP course | Inspetor BudGanja"
       },
+      "unifespCaderno": {
+        "eyebrow": "Training · UNIFESP · Notebook",
+        "title": "Study notebook — 14th course",
+        "subtitle": "Public. One unique paragraph per class — to review the lesson’s craft, not to replace the video or the SIEX certificate.",
+        "docTitle": "Study notebook · 14th UNIFESP course | Inspetor BudGanja",
+        "noteTitle": "Study notebook.",
+        "noteBody": " Not official UNIFESP or MovReCam material. It does not replace attendance, the attendance form, or medical, pharmaceutical or legal advice. Credit for the classes: guest teachers and MovReCam."
+      },
       "cadernosEngenharia": {
         "eyebrow": "Training · Engineering",
         "title": "Engineering notebooks",
-        "subtitle": "One notebook per subject — do not mix Chemistry with Math. Cornell method in every class. Suggested grid: ESAPP Agronomy. Notes stay on this device.",
+        "subtitle": "One notebook per subject — do not mix Chemistry with Math. Cornell method in every class. Suggested grid: ESAPP Agronomy. Notes stay in your account, yours alone.",
         "docTitle": "Engineering notebooks | Inspetor BudGanja",
         "noteTitle": "Study notebook.",
         "noteBody": " Not official ESAPP material and not a substitute for class. Confirm the syllabus on the school site. No institutional affiliation.",
@@ -1910,7 +1930,9 @@ window.__I18N_LOCALES__ = {
         "addCustom": "Create notebook",
         "closePicker": "Close",
         "labStudiesTitle": "Lab studies",
-        "labStudiesLead": "Cornell model lessons in the subject notebook — you can edit them. First study: Cell Biology · Angiosperms."
+        "labStudiesLead": "Cornell model lessons in the subject notebook — you can edit them. First study: Cell Biology · Angiosperms.",
+        "loginLead": "The study notebook is personal — one per account. Sign in to open yours.",
+        "loginCta": "Sign in and open my notebook"
       },
       "origami": {
         "eyebrow": "Craft · paper",
@@ -2084,7 +2106,7 @@ window.__I18N_LOCALES__ = {
         "cardInspectionsTitle": "Inspections",
         "cardInspectionsText": "Reports with a verifiable method — legacy, people, channels, words, arts and products.",
         "cardUnifespTitle": "UNIFESP course",
-        "cardUnifespText": "Hub for the 14th medicinal cannabis course — SIEX, syllabus and lesson drafts.",
+        "cardUnifespText": "Hub for the 14th medicinal cannabis course — SIEX, public study notebook and lesson drafts.",
         "cardCadernosTitle": "Engineering notebooks",
         "cardCadernosText": "One notebook per subject, Cornell method — notes for the agronomy / engineering course.",
         "cardWordsTitle": "Words Guide",
@@ -2107,7 +2129,9 @@ window.__I18N_LOCALES__ = {
         "cardGamesText": "GTA RP, Zangado and Paulinho o LOKO — a page just for them.",
         "cardCommunityTitle": "Live Feed",
         "cardCommunityText": "Community photos and notes — plant ID and shared research diary.",
-        "docTitle": "Library | Inspetor BudGanja"
+        "docTitle": "Library | Inspetor BudGanja",
+        "cardFrutosTitle": "Fruits",
+        "cardFrutosText": "The fruit organ — not the kingdom. Whole fruit vs industrial derivatives."
       },
       "guiaPalavras": {
         "eyebrow": "Library · Guides",
@@ -2196,7 +2220,7 @@ window.__I18N_LOCALES__ = {
         "poemKicker": "Lab poem",
         "poemTitle": "Good Morning, Winter",
         "poemLead": "A BudGanja verse in dialogue with the work — not text from the book.",
-        "poemBody": "Good morning, Winter.\nWe do not ask for more sun —\nwe only ask to stay\nwhen the ice holds the boat\nand the chest still fits in a hand.\n\nThe seed does not shout.\nNeither does the seedling.\nIt only asks for time:\nweak light, right water,\na bucket that does not judge the nausea.\n\nThey say winter is an end.\nOld lie.\nWinter is a season —\na phase when you do not force the flower,\na phase when you inspect the root.\n\nTamara already knew on the ice:\nleave, stay, write.\nIn this new universe of ours\nwe learn to greet the hard season —\nnot to deny the fear,\nbut so the seedling\ndoes not pass alone.\n\nque não arrisca não petisca",
+        "poemBody": "Good morning, Winter.\nWe do not ask for more sun —\nwe only ask to stay\nwhen the ice holds the boat\nand the chest still fits in a hand.\n\nThe seed does not shout.\nNeither does the seedling.\nIt only asks for time:\nweak light, right water,\na bucket that does not judge the nausea.\n\nThey say winter is an end.\nOld lie.\nWinter is a season —\na phase when you do not force the flower,\na phase when you inspect the root.\n\nTamara already knew on the ice:\nleave, stay, write.\nIn this new universe of ours\nwe learn to greet the hard season —\nnot to deny the fear,\nbut so the seedling\ndoes not pass alone.\n\nValeu !!!",
         "poemVida": "Read on Vida",
         "mapKicker": "Map",
         "mapTitle": "In the lab",
@@ -2225,7 +2249,7 @@ window.__I18N_LOCALES__ = {
         "alsoP2": "The engineer-architect reads the city in the <a href=\"/biblioteca/cadernos/\">notebooks</a>. He plays the session. Credit the person: Aleff. Live on <a href=\"https://kick.com/paulinholokobr\">Kick</a>.",
         "alsoNoteKicker": "In the lab",
         "alsoNoteTitle": "My hero of the craft",
-        "alsoNoteP1": "<a href=\"/posts/post-inspecao-palavra-gratidao.html\">Thank you</a>. The merit is his. The map is ours. <a href=\"/posts/post-inspecao-expressao-quem-nao-arrisca-nao-petisca.html\">que não arrisca não petisca</a>",
+        "alsoNoteP1": "<a href=\"/posts/post-inspecao-palavra-gratidao.html\">Thank you</a>. The merit is his. The map is ours. <a href=\"/posts/post-inspecao-palavra-valeu.html\">Valeu !!!</a>",
         "mapGames": "Games",
         "mapGamesText": "Live on Kick · archive on YouTube.",
         "mapAleffText": "Hero of the craft, not a pedestal.",
@@ -2241,6 +2265,37 @@ window.__I18N_LOCALES__ = {
         "coverP1": "The cover of <em>Bom dia, Inverno</em> is seen from above: Tamara in yellow, the boat locked in the fjord, the right leg greeting winter. The drone takes the shot. The dark rectangle — the controller — is in the <a href=\"/posts/post-inspecao-palavra-mao-esquerda-direita.html\">left hand</a>.",
         "coverP2": "Solo overwintering. Nobody on the ice to take the portrait. She lifts the camera, looks at it, and the left thumb is still on the sticks. The photo keeps the craft: fly, stay, record.",
         "coverP3": "The drone that flies on this page is the same gesture. Tap it: it brings you here, to the hand that still steers the view from above."
+      },
+      "frutos": {
+        "eyebrow": "Catalog",
+        "title": "Fruits",
+        "subtitle": "Organ of the plant (Lat. fructus), not the kingdom. Whole-fruit sheets — distinct from the medicinal plant and from industrial derivatives. A fungus is not a plant.",
+        "disclaimerStrong": "Educational notice.",
+        "disclaimer": "Educational sheets of the fruit organ: whole fruit vs industrial derivatives. Fruit is not the kingdom — the plant lives in the Plants catalog. Fungi are another kingdom. They do not replace professional health advice or legal counsel.",
+        "searchLabel": "Search",
+        "searchPlaceholder": "Common name, scientific name or tag…",
+        "tagLabel": "Tag",
+        "allTags": "All tags",
+        "count": "{n} fruits",
+        "empty": "No fruits found.",
+        "docTitle": "Fruits | Inspetor BudGanja",
+        "breadcrumb": "Navigation",
+        "partsUsed": "Parts used",
+        "traditionalUses": "Traditional uses",
+        "cautions": "Cautions",
+        "relatedScience": "Inspected readings from the lab",
+        "continueLab": "Continue in the lab",
+        "openInspection": "Open this fruit’s inspection",
+        "cardInspection": "Inspected fruit",
+        "startDiary": "Start research in the diary",
+        "startDiaryHint": " — create or open this species’ diary",
+        "backCatalog": "Back to the fruits catalog",
+        "relatedCourse": "UNIFESP course",
+        "relatedInspections": "Fruit inspections",
+        "relatedTools": "Growing tools",
+        "relatedPlants": "Plants catalog",
+        "relatedFungi": "Fungi",
+        "plantsLink": "Fruits"
       }
     }
   },
@@ -2545,7 +2600,7 @@ window.__I18N_LOCALES__ = {
       "plantas": {
         "label": "Plantas",
         "tileLabel": "Plantas",
-        "description": "Catálogo de plantas fitoterapéuticas de Brasil."
+        "description": "Catálogo de plantas fitoterapéuticas de Brasil — reino vegetal; el fruto es otro eje."
       },
       "animais": {
         "label": "Animales",
@@ -2661,6 +2716,11 @@ window.__I18N_LOCALES__ = {
         "label": "Bom dia, Inverno",
         "tileLabel": "Invierno",
         "description": "Divulgación del libro de Tamara Klink — hacerlo circular."
+      },
+      "frutos": {
+        "label": "Frutos",
+        "tileLabel": "Frutos",
+        "description": "Catálogo del órgano fruto — no es el reino. La planta está en Plantas. El hongo es otro reino."
       }
     },
     "pages": {
@@ -2794,7 +2854,11 @@ window.__I18N_LOCALES__ = {
         "vidaCtaStory": "Leer la historia",
         "latestPlantas": "Plantas →",
         "latestTecnologia": "Tecnología →",
-        "latestUnifesp": "UNIFESP →"
+        "latestUnifesp": "UNIFESP →",
+        "cardFrutosTitle": "Frutos",
+        "cardFrutosText": "El órgano fruto — no es el reino vegetal. Fruto entero vs derivados industriales. El hongo no es una planta.",
+        "cardFrutosBtn": "Explorar frutos",
+        "cardFrutosTip": "El órgano fruto — no es el reino vegetal. El hongo no es una planta."
       },
       "dev": {
         "badge": "En construcción",
@@ -2806,7 +2870,7 @@ window.__I18N_LOCALES__ = {
       "plantas": {
         "eyebrow": "Catálogo",
         "title": "Plantas fitoterapéuticas",
-        "subtitle": "Fichas educativas de especies usadas en la medicina popular y la fitoterapia brasileña — usos tradicionales, partes usadas y cuidados editoriales.",
+        "subtitle": "Fichas educativas de especies usadas en la medicina popular y la fitoterapia brasileña — el reino vegetal. El fruto es un órgano (ver Frutos). El hongo no es una planta.",
         "disclaimerStrong": "Aviso educacional.",
         "disclaimer": "Fichas educativas sobre plantas fitoterapéuticas y medicinales de Brasil. No sustituyen orientación profesional de salud ni asesoramiento jurídico.",
         "searchLabel": "Buscar",
@@ -2835,7 +2899,9 @@ window.__I18N_LOCALES__ = {
         "unifespBody": "Esta especie está ligada al eje del curso de extensión UNIFESP sobre cannabis medicinal.",
         "unifespHub": "Hub UNIFESP",
         "unifespCourse": "Inspección del curso",
-        "plantsLink": "Plantas"
+        "plantsLink": "Plantas",
+        "relatedFruits": "Catálogo de frutos",
+        "relatedFungi": "Hongos"
       },
       "animais": {
         "eyebrow": "Catálogo",
@@ -2897,7 +2963,8 @@ window.__I18N_LOCALES__ = {
         "unifespBody": "Esta especie está ligada al eje del curso de extensión UNIFESP sobre cannabis medicinal (clase de psicodélicos).",
         "unifespHub": "Hub UNIFESP",
         "unifespCourse": "Inspección del curso",
-        "fungiLink": "Hongos"
+        "fungiLink": "Hongos",
+        "relatedFruits": "Catálogo de frutos"
       },
       "tecnologia": {
         "eyebrow": "Catálogo",
@@ -3304,10 +3371,18 @@ window.__I18N_LOCALES__ = {
         "subtitle": "Hub del curso de extensión de la UNIFESP en alianza con MovReCam.",
         "docTitle": "Curso UNIFESP | Inspetor BudGanja"
       },
+      "unifespCaderno": {
+        "eyebrow": "Formación · UNIFESP · Cuaderno",
+        "title": "Cuaderno de estudio — XIV Curso",
+        "subtitle": "Público. Un párrafo único por clase — para repasar el oficio de la aula, no para sustituir el vídeo ni el certificado SIEX.",
+        "docTitle": "Cuaderno de estudio · XIV Curso UNIFESP | Inspetor BudGanja",
+        "noteTitle": "Cuaderno de estudio.",
+        "noteBody": " No es material oficial de la UNIFESP ni de MovReCam. No sustituye asistencia, formulario de presencia ni orientación médica, farmacéutica o jurídica. Mérito de las clases: profesores invitados y MovReCam."
+      },
       "cadernosEngenharia": {
         "eyebrow": "Formación · Ingeniería",
         "title": "Cuadernos de Ingeniería",
-        "subtitle": "Un cuaderno por materia — no mezcles Química con Matemáticas. Método Cornell en cada clase. Grilla sugerida: Agronomía de la ESAPP. Las notas quedan en este aparato.",
+        "subtitle": "Un cuaderno por materia — no mezcles Química con Matemáticas. Método Cornell en cada clase. Grilla sugerida: Agronomía de la ESAPP. Las notas quedan en tu cuenta, solo tuyas.",
         "docTitle": "Cuadernos de Ingeniería | Inspetor BudGanja",
         "noteTitle": "Cuaderno de estudio.",
         "noteBody": " No es material oficial de la ESAPP ni sustituye la clase. Confirme la grilla en el sitio de la escuela. Sin afiliación institucional.",
@@ -3336,7 +3411,9 @@ window.__I18N_LOCALES__ = {
         "addCustom": "Crear cuaderno",
         "closePicker": "Cerrar",
         "labStudiesTitle": "Estudios del laboratorio",
-        "labStudiesLead": "Clases modelo Cornell en el cuaderno de la materia — puedes editarlas. Primer estudio: Biología Celular · Angiospermas."
+        "labStudiesLead": "Clases modelo Cornell en el cuaderno de la materia — puedes editarlas. Primer estudio: Biología Celular · Angiospermas.",
+        "loginLead": "El cuaderno de estudio es personal — uno por cuenta. Entra para abrir el tuyo.",
+        "loginCta": "Entrar y abrir mi cuaderno"
       },
       "origami": {
         "eyebrow": "Oficio · papel",
@@ -3510,7 +3587,7 @@ window.__I18N_LOCALES__ = {
         "cardInspectionsTitle": "Inspecciones",
         "cardInspectionsText": "Informes con método verificable — legado, personas, canales, palabras, artes y productos.",
         "cardUnifespTitle": "Curso UNIFESP",
-        "cardUnifespText": "Hub del XIV curso de cannabis medicinal — SIEX, programa y borradores de las clases.",
+        "cardUnifespText": "Hub del XIV curso de cannabis medicinal — SIEX, cuaderno público de estudio y borradores de las clases.",
         "cardCadernosTitle": "Cuadernos de Ingeniería",
         "cardCadernosText": "Un cuaderno por materia, método Cornell — apuntes del curso de Agronomía / ingeniería.",
         "cardWordsTitle": "Guía de Palabras",
@@ -3533,7 +3610,9 @@ window.__I18N_LOCALES__ = {
         "cardGamesText": "GTA RP, Zangado y Paulinho o LOKO — una página solo para ellos.",
         "cardCommunityTitle": "Feed Vivo",
         "cardCommunityText": "Fotos y relatos de la comunidad — identificación de plantas y diario compartido.",
-        "docTitle": "Biblioteca | Inspetor BudGanja"
+        "docTitle": "Biblioteca | Inspetor BudGanja",
+        "cardFrutosTitle": "Frutos",
+        "cardFrutosText": "El órgano fruto — no es el reino. Fruto entero vs derivados industriales."
       },
       "guiaPalavras": {
         "eyebrow": "Biblioteca · Guías",
@@ -3622,7 +3701,7 @@ window.__I18N_LOCALES__ = {
         "poemKicker": "Poema del laboratorio",
         "poemTitle": "Buenos días, Invierno",
         "poemLead": "Verso BudGanja en diálogo con la obra — no es texto del libro.",
-        "poemBody": "Buenos días, Invierno.\nNo pedimos más sol —\npedimos solo quedarnos\ncuando el hielo agarra el barco\ny el pecho aún cabe en la mano.\n\nLa semilla no grita.\nLa plantita tampoco.\nSolo pide tiempo:\nluz débil, agua justa,\nun cubo que no juzgue el mareo.\n\nDicen que el invierno es fin.\nMentira antigua.\nInvierno es estación —\nfase en que no se fuerza la flor,\nfase en que se inspecciona la raíz.\n\nTamara ya sabía en el hielo:\npartir, quedarse, escribir.\nEn este universo nuevo\naprendemos a saludar la estación difícil —\nno para negar el miedo,\nsino para no dejar a la plantita\npasar sola.\n\nque não arrisca não petisca",
+        "poemBody": "Buenos días, Invierno.\nNo pedimos más sol —\npedimos solo quedarnos\ncuando el hielo agarra el barco\ny el pecho aún cabe en la mano.\n\nLa semilla no grita.\nLa plantita tampoco.\nSolo pide tiempo:\nluz débil, agua justa,\nun cubo que no juzgue el mareo.\n\nDicen que el invierno es fin.\nMentira antigua.\nInvierno es estación —\nfase en que no se fuerza la flor,\nfase en que se inspecciona la raíz.\n\nTamara ya sabía en el hielo:\npartir, quedarse, escribir.\nEn este universo nuevo\naprendemos a saludar la estación difícil —\nno para negar el miedo,\nsino para no dejar a la plantita\npasar sola.\n\n¡Valeu !!!",
         "poemVida": "Leer en Vida",
         "mapKicker": "Mapa",
         "mapTitle": "En el laboratorio",
@@ -3651,7 +3730,7 @@ window.__I18N_LOCALES__ = {
         "alsoP2": "El ingeniero-arquitecto lee la ciudad en los <a href=\"/biblioteca/cadernos/\">cuadernos</a>. Él juega la sesión. Crédito a la persona: Aleff. Live en <a href=\"https://kick.com/paulinholokobr\">Kick</a>.",
         "alsoNoteKicker": "En el laboratorio",
         "alsoNoteTitle": "Mi héroe de oficio",
-        "alsoNoteP1": "<a href=\"/posts/post-inspecao-palavra-gratidao.html\">Gratitud</a>. El mérito es suyo. El mapa es nuestro. <a href=\"/posts/post-inspecao-expressao-quem-nao-arrisca-nao-petisca.html\">que não arrisca não petisca</a>",
+        "alsoNoteP1": "<a href=\"/posts/post-inspecao-palavra-gratidao.html\">Gratitud</a>. El mérito es suyo. El mapa es nuestro. <a href=\"/posts/post-inspecao-palavra-valeu.html\">¡Valeu !!!</a>",
         "mapGames": "Games",
         "mapGamesText": "Live en Kick · archivo en YouTube.",
         "mapAleffText": "Héroe de oficio, no pedestal.",
@@ -3667,6 +3746,37 @@ window.__I18N_LOCALES__ = {
         "coverP1": "La portada de <em>Bom dia, Inverno</em> se ve desde arriba: Tamara de amarillo, el barco preso en el fiordo, la pierna derecha saludando al invierno. Quien dispara es el dron. Quien sostiene el mando — el rectángulo oscuro — es la <a href=\"/posts/post-inspecao-palavra-mao-esquerda-direita.html\">mano izquierda</a>.",
         "coverP2": "Invernada en solitario. No hay nadie en el hielo para hacer el retrato. Ella sube la cámara, la mira, y el pulgar izquierdo sigue en los sticks. La foto guarda el oficio: volar, quedarse, registrar.",
         "coverP3": "El dron que recorre esta página es el mismo gesto. Tócalo: te trae hasta aquí, a la mano que aún conduce la mirada de arriba."
+      },
+      "frutos": {
+        "eyebrow": "Catálogo",
+        "title": "Frutos",
+        "subtitle": "Órgano de la planta (lat. fructus), no el reino. Fichas del fruto entero — distinto de la planta medicinal y de los derivados industriales. El hongo no es una planta.",
+        "disclaimerStrong": "Aviso educacional.",
+        "disclaimer": "Fichas educativas del órgano fruto: el fruto entero vs derivados industriales. El fruto no es el reino — la planta está en el catálogo de Plantas. El hongo es otro reino. No sustituyen orientación profesional de salud ni asesoramiento jurídico.",
+        "searchLabel": "Buscar",
+        "searchPlaceholder": "Nombre popular, científico o etiqueta…",
+        "tagLabel": "Etiqueta",
+        "allTags": "Todas las etiquetas",
+        "count": "{n} frutos",
+        "empty": "Ningún fruto encontrado.",
+        "docTitle": "Frutos | Inspetor BudGanja",
+        "breadcrumb": "Navegación",
+        "partsUsed": "Partes usadas",
+        "traditionalUses": "Usos tradicionales",
+        "cautions": "Cuidados",
+        "relatedScience": "Lecturas inspeccionadas en el laboratorio",
+        "continueLab": "Continuar en el laboratorio",
+        "openInspection": "Abrir la inspección de este fruto",
+        "cardInspection": "Fruto inspeccionado",
+        "startDiary": "Iniciar investigación en el diario",
+        "startDiaryHint": " — crear o abrir el diario de esta especie",
+        "backCatalog": "Volver al catálogo de frutos",
+        "relatedCourse": "Curso UNIFESP",
+        "relatedInspections": "Inspecciones de frutos",
+        "relatedTools": "Herramientas de cultivo",
+        "relatedPlants": "Catálogo de plantas",
+        "relatedFungi": "Hongos",
+        "plantsLink": "Frutos"
       }
     }
   },
@@ -7341,7 +7451,7 @@ window.__I18N_LOCALES__ = {
       "plantas": {
         "label": "Plantas",
         "tileLabel": "Plantas",
-        "description": "Catálogo de plantas fitoterápicas do Brasil."
+        "description": "Catálogo de plantas fitoterápicas do Brasil — reino vegetal; o fruto é outro eixo."
       },
       "animais": {
         "label": "Animais",
@@ -7452,6 +7562,11 @@ window.__I18N_LOCALES__ = {
         "label": "Cultivo de Cannabis: o início",
         "tileLabel": "Cultivo de Cannabis: o início",
         "description": "O cultivo de cannabis resume-se em 4 etapas e fatores essenciais."
+      },
+      "frutos": {
+        "label": "Frutos",
+        "tileLabel": "Frutos",
+        "description": "Catálogo do órgão fruto — não é o reino. A planta fica em Plantas. Fungo é outro reino."
       }
     },
     "pages": {
@@ -7585,7 +7700,11 @@ window.__I18N_LOCALES__ = {
         "cardVideosTip": "Inspeções, tutoriais e novidades do canal no YouTube.",
         "cardGamesTip": "Zangado e Paulinho o LOKO — página só de jogos.",
         "cardRadioTip": "Playlist BudGanja Radio.",
-        "cardGiveawaysTip": "Sorteios activos e históricos do laboratório."
+        "cardGiveawaysTip": "Sorteios activos e históricos do laboratório.",
+        "cardFrutosTitle": "Frutos",
+        "cardFrutosText": "O órgão fruto — não é o reino vegetal. Fruto inteiro vs derivados industriais. Fungo não é planta.",
+        "cardFrutosBtn": "Explorar frutos",
+        "cardFrutosTip": "O órgão fruto — não é o reino vegetal. Fungo não é planta."
       },
       "dev": {
         "badge": "Em construção",
@@ -7597,7 +7716,7 @@ window.__I18N_LOCALES__ = {
       "plantas": {
         "eyebrow": "Catálogo",
         "title": "Plantas fitoterápicas",
-        "subtitle": "Fichas educacionais de espécies usadas na medicina popular e na fitoterapia brasileira — usos tradicionais, partes usadas e cuidados editoriais.",
+        "subtitle": "Reino vegetal: fichas de espécies usadas na medicina popular e na fitoterapia brasileira. O fruto é órgão — catálogo próprio em Frutos. Fungo é outro reino.",
         "disclaimerStrong": "Aviso educacional.",
         "disclaimer": "Fichas educacionais de plantas fitoterápicas e medicinais do Brasil. Não substituem orientação profissional de saúde nem aconselhamento jurídico.",
         "searchLabel": "Buscar",
@@ -7626,7 +7745,9 @@ window.__I18N_LOCALES__ = {
         "unifespBody": "Esta espécie está ligada ao eixo do curso de extensão UNIFESP sobre cannabis medicinal.",
         "unifespHub": "Hub UNIFESP",
         "unifespCourse": "Inspeção do curso",
-        "plantsLink": "Plantas"
+        "plantsLink": "Plantas",
+        "relatedFruits": "Catálogo de frutos",
+        "relatedFungi": "Fungos"
       },
       "animais": {
         "eyebrow": "Catálogo",
@@ -7688,7 +7809,8 @@ window.__I18N_LOCALES__ = {
         "unifespBody": "Esta espécie está ligada ao eixo do curso de extensão UNIFESP sobre cannabis medicinal (aula de psicadélicos).",
         "unifespHub": "Hub UNIFESP",
         "unifespCourse": "Inspeção do curso",
-        "fungiLink": "Fungos"
+        "fungiLink": "Fungos",
+        "relatedFruits": "Catálogo de frutos"
       },
       "tecnologia": {
         "eyebrow": "Catálogo",
@@ -8098,10 +8220,18 @@ window.__I18N_LOCALES__ = {
         "subtitle": "Hub do curso de extensão da UNIFESP em parceria com o MovReCam.",
         "docTitle": "Curso UNIFESP | Inspetor BudGanja"
       },
+      "unifespCaderno": {
+        "eyebrow": "Formação · UNIFESP · Caderno",
+        "title": "Caderno de estudo — XIV Curso",
+        "subtitle": "Público. Um parágrafo único por aula — para rever o ofício da aula, não para substituir o vídeo nem o certificado SIEX.",
+        "docTitle": "Caderno de estudo · XIV Curso UNIFESP | Inspetor BudGanja",
+        "noteTitle": "Caderno de estudo.",
+        "noteBody": " Não é material oficial da UNIFESP nem do MovReCam. Não substitui presença, formulário de presença nem orientação médica, farmacêutica ou jurídica. Mérito das aulas: professores convidados e MovReCam."
+      },
       "cadernosEngenharia": {
         "eyebrow": "Formação · Engenharia",
         "title": "Cadernos de Engenharia",
-        "subtitle": "Um caderno por matéria — não misture Química com Matemática. Em cada aula, método Cornell. Grade sugerida: Agronomia da ESAPP. As anotações ficam neste aparelho.",
+        "subtitle": "Um caderno por matéria — não misture Química com Matemática. Em cada aula, método Cornell. Grade sugerida: Agronomia da ESAPP. As anotações ficam na sua conta, só suas.",
         "docTitle": "Cadernos de Engenharia | Inspetor BudGanja",
         "noteTitle": "Caderno de estudo.",
         "noteBody": " Não é material oficial da ESAPP nem substitui a aula. Confirme a grade no site da escola. Sem afiliação institucional.",
@@ -8130,7 +8260,9 @@ window.__I18N_LOCALES__ = {
         "addCustom": "Criar caderno",
         "closePicker": "Fechar",
         "labStudiesTitle": "Estudos do laboratório",
-        "labStudiesLead": "Aulas-modelo Cornell no caderno da matéria — podes editar. Primeiro estudo: Biologia Celular · Angiospermas."
+        "labStudiesLead": "Aulas-modelo Cornell no caderno da matéria — podes editar. Primeiro estudo: Biologia Celular · Angiospermas.",
+        "loginLead": "O caderno de estudo é pessoal — um por conta. Entre para abrir o seu.",
+        "loginCta": "Entrar e abrir o meu caderno"
       },
       "origami": {
         "eyebrow": "Ofício · papel",
@@ -8304,7 +8436,7 @@ window.__I18N_LOCALES__ = {
         "cardInspectionsTitle": "Inspeções",
         "cardInspectionsText": "Relatórios com método verificável — legado, pessoas, canais, palavras, artes e produtos.",
         "cardUnifespTitle": "Curso UNIFESP",
-        "cardUnifespText": "Hub do XIV curso de cannabis medicinal — SIEX, grade e rascunhos das aulas.",
+        "cardUnifespText": "Hub do XIV curso de cannabis medicinal — SIEX, caderno público de estudo e rascunhos das aulas.",
         "cardCadernosTitle": "Cadernos de Engenharia",
         "cardCadernosText": "Um caderno por matéria, método Cornell — anotações do curso de Agronomia / engenharia.",
         "cardWordsTitle": "Guia de Palavras",
@@ -8327,7 +8459,9 @@ window.__I18N_LOCALES__ = {
         "cardGamesText": "GTA RP, Zangado e Paulinho o LOKO — página só deles.",
         "cardCommunityTitle": "Feed Vivo",
         "cardCommunityText": "Fotos e relatos da comunidade — identificação de plantas e diário partilhado.",
-        "docTitle": "Biblioteca | Inspetor BudGanja"
+        "docTitle": "Biblioteca | Inspetor BudGanja",
+        "cardFrutosTitle": "Frutos",
+        "cardFrutosText": "O órgão fruto — não é o reino. Fruto inteiro vs derivados industriais."
       },
       "guiaPalavras": {
         "eyebrow": "Biblioteca · Guias",
@@ -8416,7 +8550,7 @@ window.__I18N_LOCALES__ = {
         "poemKicker": "Poema do laboratório",
         "poemTitle": "Bom dia, Inverno",
         "poemLead": "Verso BudGanja em diálogo com a obra — não é texto do livro.",
-        "poemBody": "Bom dia, Inverno.\nNão pedimos sol a mais —\npedimos só ficar\nquando o gelo prende o barco\ne o peito ainda cabe na mão.\n\nA semente não grita.\nA mudinha também não.\nEla só pede tempo:\nluz fraca, água certa,\num balde que não julga o enjoo.\n\nDizem que o inverno é fim.\nMentira antiga.\nInverno é estação —\nfase em que não se força flor,\nfase em que se inspeciona a raiz.\n\nTamara já sabia no gelo:\npartir, ficar, escrever.\nNós, neste universo novo,\naprendemos a cumprimentar a estação difícil —\nnão para negar o medo,\nmas para não deixar a mudinha\npassar sozinha.\n\nque não arrisca não petisca",
+        "poemBody": "Bom dia, Inverno.\nNão pedimos sol a mais —\npedimos só ficar\nquando o gelo prende o barco\ne o peito ainda cabe na mão.\n\nA semente não grita.\nA mudinha também não.\nEla só pede tempo:\nluz fraca, água certa,\num balde que não julga o enjoo.\n\nDizem que o inverno é fim.\nMentira antiga.\nInverno é estação —\nfase em que não se força flor,\nfase em que se inspeciona a raiz.\n\nTamara já sabia no gelo:\npartir, ficar, escrever.\nNós, neste universo novo,\naprendemos a cumprimentar a estação difícil —\nnão para negar o medo,\nmas para não deixar a mudinha\npassar sozinha.\n\nValeu !!!",
         "poemVida": "Ler na página Vida",
         "mapKicker": "Mapa",
         "mapTitle": "No laboratório",
@@ -8445,7 +8579,7 @@ window.__I18N_LOCALES__ = {
         "alsoP2": "O engenheiro-arquiteto lê a cidade nos <a href=\"/biblioteca/cadernos/\">cadernos</a>. Ele joga a sessão. Crédito à pessoa: Aleff. Live no <a href=\"https://kick.com/paulinholokobr\">Kick</a>.",
         "alsoNoteKicker": "No laboratório",
         "alsoNoteTitle": "Meu herói de ofício",
-        "alsoNoteP1": "<a href=\"/posts/post-inspecao-palavra-gratidao.html\">Gratidão</a>. O mérito é dele. O mapa é nosso. <a href=\"/posts/post-inspecao-expressao-quem-nao-arrisca-nao-petisca.html\">que não arrisca não petisca</a>",
+        "alsoNoteP1": "<a href=\"/posts/post-inspecao-palavra-gratidao.html\">Gratidão</a>. O mérito é dele. O mapa é nosso. <a href=\"/posts/post-inspecao-palavra-valeu.html\">Valeu !!!</a>",
         "mapGames": "Games",
         "mapGamesText": "Live no Kick · arquivo no YouTube.",
         "mapAleffText": "Herói de ofício, não pedestal.",
@@ -8461,6 +8595,37 @@ window.__I18N_LOCALES__ = {
         "coverP1": "A capa de <em>Bom dia, Inverno</em> é vista de cima: Tamara no amarelo, o barco preso no fiorde, a perna direita a cumprimentar o inverno. Quem dispara é o drone. Quem segura o controlo — o retângulo escuro — é a <a href=\"/posts/post-inspecao-palavra-mao-esquerda-direita.html\">mão esquerda</a>.",
         "coverP2": "Invernagem a solo. Não há ninguém no gelo para fazer o retrato. Ela sobe a câmara, olha para ela, e o polegar esquerdo ainda trabalha nos sticks. A foto guarda o ofício: voar, ficar, registar.",
         "coverP3": "O drone que anda nesta página é o mesmo gesto. Toca-lhe: ele traz-te até aqui, à mão que ainda conduz o olhar de cima."
+      },
+      "frutos": {
+        "eyebrow": "Catálogo",
+        "title": "Frutos",
+        "subtitle": "Órgão da planta (lat. fructus), não o reino. Fichas do fruto inteiro — distinto da planta medicinal e dos derivados industriais. Fungo não é planta.",
+        "disclaimerStrong": "Aviso educacional.",
+        "disclaimer": "Fichas educacionais do órgão fruto: o fruto inteiro vs derivados industriais. O fruto não é o reino — a planta fica no catálogo de Plantas. Fungo é outro reino. Não substituem orientação profissional de saúde nem aconselhamento jurídico.",
+        "searchLabel": "Buscar",
+        "searchPlaceholder": "Nome popular, científico ou tag…",
+        "tagLabel": "Tag",
+        "allTags": "Todas as tags",
+        "count": "{n} frutos",
+        "empty": "Nenhum fruto encontrado.",
+        "docTitle": "Frutos | Inspetor BudGanja",
+        "breadcrumb": "Navegação",
+        "partsUsed": "Partes usadas",
+        "traditionalUses": "Usos tradicionais",
+        "cautions": "Cuidados",
+        "relatedScience": "Leituras inspecionadas no laboratório",
+        "continueLab": "Continuar no laboratório",
+        "openInspection": "Abrir inspeção deste fruto",
+        "cardInspection": "Fruto inspecionado",
+        "startDiary": "Iniciar pesquisa no diário",
+        "startDiaryHint": " — criar ou abrir o diário desta espécie",
+        "backCatalog": "Voltar ao catálogo de frutos",
+        "relatedCourse": "Curso UNIFESP",
+        "relatedInspections": "Inspeções de frutos",
+        "relatedTools": "Ferramentas de cultivo",
+        "relatedPlants": "Catálogo de plantas",
+        "relatedFungi": "Fungos",
+        "plantsLink": "Frutos"
       }
     }
   },

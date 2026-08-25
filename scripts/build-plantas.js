@@ -7,6 +7,8 @@ const { ASSET_VERSION } = require('../lib/asset-version.js');
 const {
   readPlantas,
   getPlantUrl,
+  isFrutoPlant,
+  listByHub,
   listTags,
   escapeHtml
 } = require('../lib/plantas-service.js');
@@ -81,13 +83,8 @@ ${extraScripts || ''}
 `;
 }
 
-function buildHub(catalog) {
-  const tags = listTags(catalog.plants);
-  const tagOptions = ['<option value="" data-i18n="pages.plantas.allTags">Todas as tags</option>']
-    .concat(tags.map((t) => `<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`))
-    .join('\n                    ');
-
-  const cards = catalog.plants
+function buildCards(plants, i18nPrefix, inspectionFallback) {
+  return plants
     .slice()
     .sort((a, b) => a.nomePopular.localeCompare(b.nomePopular, 'pt'))
     .map((p) => {
@@ -99,6 +96,7 @@ function buildHub(catalog) {
         loc.es.nomePopular,
         p.nomeCientifico,
         p.familia,
+        p.hubCategory || '',
         ...(p.tags || [])
       ]
         .join(' ')
@@ -114,25 +112,57 @@ function buildHub(catalog) {
                         <p class="planta-card-summary" data-planta-summary>${escapeHtml(p.summary)}</p>
                         ${unifesp}
                     </a>
-                    <a class="planta-card-inspection" href="${escapeHtml(inspecaoHref)}" data-i18n="pages.plantas.cardInspection">Planta inspecionada</a>
+                    <a class="planta-card-inspection" href="${escapeHtml(inspecaoHref)}" data-i18n="${i18nPrefix}.cardInspection">${escapeHtml(inspectionFallback)}</a>
                 </article>`;
     })
     .join('\n');
+}
+
+function buildHub(catalog, kind) {
+  const isFruto = kind === 'fruto';
+  const plants = listByHub(catalog.plants, isFruto ? 'fruto' : 'planta');
+  const i18n = isFruto ? 'pages.frutos' : 'pages.plantas';
+  const tags = listTags(plants);
+  const tagOptions = [`<option value="" data-i18n="${i18n}.allTags">Todas as tags</option>`]
+    .concat(tags.map((t) => `<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`))
+    .join('\n                    ');
+
+  const cards = buildCards(
+    plants,
+    i18n,
+    isFruto ? 'Fruto inspecionado' : 'Planta inspecionada'
+  );
+
+  const disclaimer = isFruto
+    ? 'Fichas educacionais do órgão fruto: o fruto inteiro vs derivados industriais. O fruto não é o reino — a planta fica no catálogo de Plantas. Fungo é outro reino. Não substituem orientação profissional de saúde nem aconselhamento jurídico.'
+    : catalog.disclaimer;
+
+  const related = isFruto
+    ? `<p class="plantas-related"><a href="/plantas/" data-i18n="${i18n}.relatedPlants">Catálogo de plantas</a> · <a href="/fungos/" data-i18n="${i18n}.relatedFungi">Fungos</a> · <a href="/biblioteca/inspecoes/#inspecoes-frutos" data-i18n="${i18n}.relatedInspections">Inspeções de frutos</a></p>`
+    : `<p class="plantas-related"><a href="/frutos/" data-i18n="${i18n}.relatedFruits">Catálogo de frutos</a> · <a href="/fungos/" data-i18n="${i18n}.relatedFungi">Fungos</a> · <a href="/biblioteca/unifesp/" data-i18n="${i18n}.relatedCourse">Curso UNIFESP</a> · <a href="/biblioteca/inspecoes/#inspecoes-plantas" data-i18n="${i18n}.relatedInspections">Inspeções</a></p>`;
+
+  const title = isFruto ? 'Frutos' : 'Plantas fitoterápicas';
+  const subtitle = isFruto
+    ? 'Órgão da planta (lat. fructus), não o reino. Fichas do fruto inteiro — distinto da planta medicinal e dos derivados industriais. Fungo não é planta.'
+    : 'Reino vegetal: fichas de espécies usadas na medicina popular e na fitoterapia brasileira. O fruto é órgão — catálogo próprio em Frutos. Fungo é outro reino.';
+  const description = isFruto
+    ? 'Catálogo do órgão fruto — não é o reino vegetal; a planta fica em /plantas/. Fungo é outro reino. Fruto inteiro vs derivados industriais.'
+    : 'Catálogo curado de plantas medicinais e fitoterápicas do Brasil — reino vegetal, distinto do órgão fruto e do reino dos fungos.';
 
   const body = `        <header class="plantas-hub-header">
-            <p class="article-eyebrow" data-i18n="pages.plantas.eyebrow">Catálogo</p>
-            <h1 data-i18n="pages.plantas.title">Plantas fitoterápicas</h1>
-            <p class="secao-subtitulo" data-i18n="pages.plantas.subtitle">Fichas educacionais de espécies usadas na medicina popular e na fitoterapia brasileira — usos tradicionais, partes usadas e cuidados editoriais.</p>
+            <p class="article-eyebrow" data-i18n="${i18n}.eyebrow">Catálogo</p>
+            <h1 data-i18n="${i18n}.title">${escapeHtml(title)}</h1>
+            <p class="secao-subtitulo" data-i18n="${i18n}.subtitle">${escapeHtml(subtitle)}</p>
         </header>
 
         <aside class="plantas-disclaimer" role="note">
-            <strong data-i18n="pages.plantas.disclaimerStrong">Aviso educacional.</strong> <span data-i18n="pages.plantas.disclaimer">${escapeHtml(catalog.disclaimer)}</span>
+            <strong data-i18n="${i18n}.disclaimerStrong">Aviso educacional.</strong> <span data-i18n="${i18n}.disclaimer">${escapeHtml(disclaimer)}</span>
         </aside>
 
         <div class="plantas-toolbar">
-            <label class="plantas-search-label" for="plantas-search" data-i18n="pages.plantas.searchLabel">Buscar</label>
-            <input type="search" id="plantas-search" class="plantas-search" placeholder="Nome popular, científico ou tag…" data-i18n-placeholder="pages.plantas.searchPlaceholder" autocomplete="off">
-            <label class="plantas-filter-label" for="plantas-tag" data-i18n="pages.plantas.tagLabel">Tag</label>
+            <label class="plantas-search-label" for="plantas-search" data-i18n="${i18n}.searchLabel">Buscar</label>
+            <input type="search" id="plantas-search" class="plantas-search" placeholder="Nome popular, científico ou tag…" data-i18n-placeholder="${i18n}.searchPlaceholder" autocomplete="off">
+            <label class="plantas-filter-label" for="plantas-tag" data-i18n="${i18n}.tagLabel">Tag</label>
             <select id="plantas-tag" class="plantas-tag-filter">
                     ${tagOptions}
             </select>
@@ -143,16 +173,15 @@ function buildHub(catalog) {
 ${cards}
         </div>
 
-        <p class="plantas-empty" id="plantas-empty" hidden data-i18n="pages.plantas.empty">Nenhuma planta corresponde aos filtros.</p>
+        <p class="plantas-empty" id="plantas-empty" hidden data-i18n="${i18n}.empty">${isFruto ? 'Nenhum fruto corresponde aos filtros.' : 'Nenhuma planta corresponde aos filtros.'}</p>
 
-        <p class="plantas-related"><a href="/biblioteca/unifesp/" data-i18n="pages.plantas.relatedCourse">Curso UNIFESP</a> · <a href="/biblioteca/inspecoes/" data-i18n="pages.plantas.relatedInspections">Inspeções</a> · <a href="/cultivo/" data-i18n="pages.plantas.relatedDiary">Diário de pesquisas</a></p>`;
+        ${related}`;
 
   return pageShell({
-    title: 'Plantas fitoterápicas | Inspetor BudGanja',
-    description:
-      'Catálogo curado de plantas medicinais e fitoterápicas do Brasil — fichas educacionais com usos tradicionais e cuidados.',
-    canonical: '/plantas/',
-    bodyPage: 'plantas',
+    title: title + ' | Inspetor BudGanja',
+    description,
+    canonical: isFruto ? '/frutos/' : '/plantas/',
+    bodyPage: isFruto ? 'frutos' : 'plantas',
     mainClass: 'conteudo-interno plantas-hub',
     bodyHtml: body,
     extraScripts: `    <script src="/js/plantas-hub.js?v=${ASSET_VERSION}"></script>\n`
@@ -165,6 +194,14 @@ function buildPlantPage(plant, catalog) {
     .join(' ');
   const localeJson = JSON.stringify(plantLocalePayload(plant)).replace(/</g, '\\u003c');
 
+  const isFruto = isFrutoPlant(plant);
+  const i18n = isFruto ? 'pages.frutos' : 'pages.plantas';
+  const catalogHref = isFruto ? '/frutos/' : '/plantas/';
+  const catalogLabel = isFruto ? 'Frutos' : 'Plantas';
+  const openInspectionFallback = isFruto
+    ? 'Abrir inspeção deste fruto'
+    : 'Abrir inspeção desta planta';
+  const backCatalogFallback = isFruto ? 'Voltar ao catálogo de frutos' : 'Voltar ao catálogo';
   const ownInspectionHref = '/posts/post-inspecao-planta-' + plant.slug + '.html';
   const ownInspectionLabel = 'Inspeção: ' + (plant.nomePopular || plant.slug);
   const relatedInspections = Array.isArray(plant.relatedInspections)
@@ -185,7 +222,7 @@ function buildPlantPage(plant, catalog) {
       ].concat(relatedInspections);
   const relatedScienceBlock = scienceLinks.length
     ? `            <div class="planta-related-science">
-                <h3 data-i18n="pages.plantas.relatedScience">Leituras inspecionadas no laboratório</h3>
+                <h3 data-i18n="${i18n}.relatedScience">Leituras inspecionadas no laboratório</h3>
                 <ul class="info-list">
 ${scienceLinks
   .map((r) => {
@@ -210,8 +247,8 @@ ${scienceLinks
     : '';
 
   const body = `        <script type="application/json" id="planta-i18n-data">${localeJson}</script>
-        <nav class="planta-breadcrumb" data-i18n-aria="pages.plantas.breadcrumb" aria-label="Navegação">
-            <a href="/plantas/" data-i18n="pages.plantas.plantsLink">Plantas</a>
+        <nav class="planta-breadcrumb" data-i18n-aria="${i18n}.breadcrumb" aria-label="Navegação">
+            <a href="${catalogHref}" data-i18n="${i18n}.plantsLink">${escapeHtml(catalogLabel)}</a>
             <span aria-hidden="true">/</span>
             <span data-planta-nome>${escapeHtml(plant.nomePopular)}</span>
         </nav>
@@ -225,21 +262,21 @@ ${scienceLinks
         </header>
 
         <aside class="plantas-disclaimer" role="note">
-            <strong data-i18n="pages.plantas.disclaimerStrong">Aviso educacional.</strong> <span data-i18n="pages.plantas.disclaimer">${escapeHtml(catalog.disclaimer)}</span>
+            <strong data-i18n="${i18n}.disclaimerStrong">Aviso educacional.</strong> <span data-i18n="${i18n}.disclaimer">${escapeHtml(isFruto ? 'Fichas educacionais do órgão fruto. O fruto não é o reino — a planta fica no catálogo de Plantas. Fungo é outro reino. Não substituem orientação profissional de saúde nem aconselhamento jurídico.' : catalog.disclaimer)}</span>
         </aside>
 
         <section class="info-panel">
-            <h2 data-i18n="pages.plantas.partsUsed">Partes usadas</h2>
+            <h2 data-i18n="${i18n}.partsUsed">Partes usadas</h2>
             <ul class="info-list" data-planta-parts></ul>
         </section>
 
         <section class="info-panel">
-            <h2 data-i18n="pages.plantas.traditionalUses">Usos tradicionais</h2>
+            <h2 data-i18n="${i18n}.traditionalUses">Usos tradicionais</h2>
             <ul class="info-list" data-planta-uses></ul>
         </section>
 
         <section class="info-panel" id="planta-cuidados">
-            <h2 data-i18n="pages.plantas.cautions">Cuidados</h2>
+            <h2 data-i18n="${i18n}.cautions">Cuidados</h2>
             <p data-planta-cautions>${escapeHtml(plant.cautions)}</p>
 ${relatedScienceBlock}
         </section>
@@ -247,14 +284,16 @@ ${relatedScienceBlock}
 ${unifespBlock}
 
         <section class="info-panel">
-            <h2 data-i18n="pages.plantas.continueLab">Continuar no laboratório</h2>
+            <h2 data-i18n="${i18n}.continueLab">Continuar no laboratório</h2>
             <ul class="info-list">
-                <li><a href="${escapeHtml(ownInspectionHref)}" data-i18n="pages.plantas.openInspection">Abrir inspeção desta planta</a></li>
-                <li><a href="/cultivo/?plant=${escapeHtml(plant.slug)}" data-i18n="pages.plantas.startDiary">Iniciar pesquisa no diário</a><span data-i18n="pages.plantas.startDiaryHint"> — criar ou abrir o diário desta espécie</span></li>
-                <li><a href="/plantas/" data-i18n="pages.plantas.backCatalog">Voltar ao catálogo</a></li>
-                <li><a href="/biblioteca/unifesp/" data-i18n="pages.plantas.relatedCourse">Curso UNIFESP</a></li>
-                <li><a href="/biblioteca/inspecoes/#inspecoes-plantas" data-i18n="pages.plantas.relatedInspections">Inspeções</a></li>
-                <li><a href="/calculadoras/" data-i18n="pages.plantas.relatedTools">Ferramentas de cultivo</a></li>
+                <li><a href="${escapeHtml(ownInspectionHref)}" data-i18n="${i18n}.openInspection">${escapeHtml(openInspectionFallback)}</a></li>
+                <li><a href="/cultivo/?plant=${escapeHtml(plant.slug)}" data-i18n="${i18n}.startDiary">Iniciar pesquisa no diário</a><span data-i18n="${i18n}.startDiaryHint"> — criar ou abrir o diário desta espécie</span></li>
+                <li><a href="${catalogHref}" data-i18n="${i18n}.backCatalog">${escapeHtml(backCatalogFallback)}</a></li>
+                <li><a href="${isFruto ? '/plantas/' : '/frutos/'}" data-i18n="${isFruto ? i18n + '.relatedPlants' : i18n + '.relatedFruits'}">${isFruto ? 'Catálogo de plantas' : 'Catálogo de frutos'}</a></li>
+                <li><a href="/fungos/" data-i18n="${i18n}.relatedFungi">Fungos</a></li>
+                <li><a href="/biblioteca/unifesp/" data-i18n="${i18n}.relatedCourse">Curso UNIFESP</a></li>
+                <li><a href="${isFruto ? '/biblioteca/inspecoes/#inspecoes-frutos' : '/biblioteca/inspecoes/#inspecoes-plantas'}" data-i18n="${i18n}.relatedInspections">Inspeções</a></li>
+                <li><a href="/calculadoras/" data-i18n="${i18n}.relatedTools">Ferramentas de cultivo</a></li>
             </ul>
         </section>`;
 
@@ -304,7 +343,12 @@ function buildPlantas() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   cleanGenerated(OUT_DIR);
 
-  fs.writeFileSync(path.join(OUT_DIR, 'index.html'), buildHub(catalog), 'utf8');
+  fs.writeFileSync(path.join(OUT_DIR, 'index.html'), buildHub(catalog, 'planta'), 'utf8');
+
+  const frutosDir = path.join(ROOT, 'frutos');
+  fs.mkdirSync(frutosDir, { recursive: true });
+  cleanGenerated(frutosDir);
+  fs.writeFileSync(path.join(frutosDir, 'index.html'), buildHub(catalog, 'fruto'), 'utf8');
 
   catalog.plants.forEach((plant) => {
     const dir = path.join(OUT_DIR, plant.slug);
@@ -312,7 +356,17 @@ function buildPlantas() {
     fs.writeFileSync(path.join(dir, 'index.html'), buildPlantPage(plant, catalog), 'utf8');
   });
 
-  console.log('build:plantas — hub +', catalog.plants.length, 'fichas em /plantas/');
+  const nFrutos = listByHub(catalog.plants, 'fruto').length;
+  const nPlantas = listByHub(catalog.plants, 'planta').length;
+  console.log(
+    'build:plantas — hub plantas (' +
+      nPlantas +
+      ') + hub frutos (' +
+      nFrutos +
+      ') + ' +
+      catalog.plants.length +
+      ' fichas em /plantas/'
+  );
 }
 
 buildPlantas();

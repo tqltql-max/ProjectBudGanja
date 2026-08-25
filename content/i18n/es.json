@@ -299,7 +299,7 @@
     "plantas": {
       "label": "Plantas",
       "tileLabel": "Plantas",
-      "description": "Catálogo de plantas fitoterapéuticas de Brasil."
+      "description": "Catálogo de plantas fitoterapéuticas de Brasil — reino vegetal; el fruto es otro eje."
     },
     "animais": {
       "label": "Animales",
@@ -415,6 +415,11 @@
       "label": "Bom dia, Inverno",
       "tileLabel": "Invierno",
       "description": "Divulgación del libro de Tamara Klink — hacerlo circular."
+    },
+    "frutos": {
+      "label": "Frutos",
+      "tileLabel": "Frutos",
+      "description": "Catálogo del órgano fruto — no es el reino. La planta está en Plantas. El hongo es otro reino."
     }
   },
   "pages": {
@@ -548,7 +553,11 @@
       "vidaCtaStory": "Leer la historia",
       "latestPlantas": "Plantas →",
       "latestTecnologia": "Tecnología →",
-      "latestUnifesp": "UNIFESP →"
+      "latestUnifesp": "UNIFESP →",
+      "cardFrutosTitle": "Frutos",
+      "cardFrutosText": "El órgano fruto — no es el reino vegetal. Fruto entero vs derivados industriales. El hongo no es una planta.",
+      "cardFrutosBtn": "Explorar frutos",
+      "cardFrutosTip": "El órgano fruto — no es el reino vegetal. El hongo no es una planta."
     },
     "dev": {
       "badge": "En construcción",
@@ -560,7 +569,7 @@
     "plantas": {
       "eyebrow": "Catálogo",
       "title": "Plantas fitoterapéuticas",
-      "subtitle": "Fichas educativas de especies usadas en la medicina popular y la fitoterapia brasileña — usos tradicionales, partes usadas y cuidados editoriales.",
+      "subtitle": "Fichas educativas de especies usadas en la medicina popular y la fitoterapia brasileña — el reino vegetal. El fruto es un órgano (ver Frutos). El hongo no es una planta.",
       "disclaimerStrong": "Aviso educacional.",
       "disclaimer": "Fichas educativas sobre plantas fitoterapéuticas y medicinales de Brasil. No sustituyen orientación profesional de salud ni asesoramiento jurídico.",
       "searchLabel": "Buscar",
@@ -589,7 +598,9 @@
       "unifespBody": "Esta especie está ligada al eje del curso de extensión UNIFESP sobre cannabis medicinal.",
       "unifespHub": "Hub UNIFESP",
       "unifespCourse": "Inspección del curso",
-      "plantsLink": "Plantas"
+      "plantsLink": "Plantas",
+      "relatedFruits": "Catálogo de frutos",
+      "relatedFungi": "Hongos"
     },
     "animais": {
       "eyebrow": "Catálogo",
@@ -651,7 +662,8 @@
       "unifespBody": "Esta especie está ligada al eje del curso de extensión UNIFESP sobre cannabis medicinal (clase de psicodélicos).",
       "unifespHub": "Hub UNIFESP",
       "unifespCourse": "Inspección del curso",
-      "fungiLink": "Hongos"
+      "fungiLink": "Hongos",
+      "relatedFruits": "Catálogo de frutos"
     },
     "tecnologia": {
       "eyebrow": "Catálogo",
@@ -1297,7 +1309,9 @@
       "cardGamesText": "GTA RP, Zangado y Paulinho o LOKO — una página solo para ellos.",
       "cardCommunityTitle": "Feed Vivo",
       "cardCommunityText": "Fotos y relatos de la comunidad — identificación de plantas y diario compartido.",
-      "docTitle": "Biblioteca | Inspetor BudGanja"
+      "docTitle": "Biblioteca | Inspetor BudGanja",
+      "cardFrutosTitle": "Frutos",
+      "cardFrutosText": "El órgano fruto — no es el reino. Fruto entero vs derivados industriales."
     },
     "guiaPalavras": {
       "eyebrow": "Biblioteca · Guías",
@@ -1431,6 +1445,37 @@
       "coverP1": "La portada de <em>Bom dia, Inverno</em> se ve desde arriba: Tamara de amarillo, el barco preso en el fiordo, la pierna derecha saludando al invierno. Quien dispara es el dron. Quien sostiene el mando — el rectángulo oscuro — es la <a href=\"/posts/post-inspecao-palavra-mao-esquerda-direita.html\">mano izquierda</a>.",
       "coverP2": "Invernada en solitario. No hay nadie en el hielo para hacer el retrato. Ella sube la cámara, la mira, y el pulgar izquierdo sigue en los sticks. La foto guarda el oficio: volar, quedarse, registrar.",
       "coverP3": "El dron que recorre esta página es el mismo gesto. Tócalo: te trae hasta aquí, a la mano que aún conduce la mirada de arriba."
+    },
+    "frutos": {
+      "eyebrow": "Catálogo",
+      "title": "Frutos",
+      "subtitle": "Órgano de la planta (lat. fructus), no el reino. Fichas del fruto entero — distinto de la planta medicinal y de los derivados industriales. El hongo no es una planta.",
+      "disclaimerStrong": "Aviso educacional.",
+      "disclaimer": "Fichas educativas del órgano fruto: el fruto entero vs derivados industriales. El fruto no es el reino — la planta está en el catálogo de Plantas. El hongo es otro reino. No sustituyen orientación profesional de salud ni asesoramiento jurídico.",
+      "searchLabel": "Buscar",
+      "searchPlaceholder": "Nombre popular, científico o etiqueta…",
+      "tagLabel": "Etiqueta",
+      "allTags": "Todas las etiquetas",
+      "count": "{n} frutos",
+      "empty": "Ningún fruto encontrado.",
+      "docTitle": "Frutos | Inspetor BudGanja",
+      "breadcrumb": "Navegación",
+      "partsUsed": "Partes usadas",
+      "traditionalUses": "Usos tradicionales",
+      "cautions": "Cuidados",
+      "relatedScience": "Lecturas inspeccionadas en el laboratorio",
+      "continueLab": "Continuar en el laboratorio",
+      "openInspection": "Abrir la inspección de este fruto",
+      "cardInspection": "Fruto inspeccionado",
+      "startDiary": "Iniciar investigación en el diario",
+      "startDiaryHint": " — crear o abrir el diario de esta especie",
+      "backCatalog": "Volver al catálogo de frutos",
+      "relatedCourse": "Curso UNIFESP",
+      "relatedInspections": "Inspecciones de frutos",
+      "relatedTools": "Herramientas de cultivo",
+      "relatedPlants": "Catálogo de plantas",
+      "relatedFungi": "Hongos",
+      "plantsLink": "Frutos"
     }
   }
 }

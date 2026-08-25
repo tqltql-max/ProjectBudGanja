@@ -14,7 +14,8 @@ const STATIC_PAGES = [
   { url: '/origami/', title: 'Origami', desc: 'Aprender a dobrar papel — mãos reais, um modelo de cada vez. Aula do barquinho.', keywords: 'origami papel dobrar barquinho mãos aula ofício' },
   { url: '/origami/barquinho-de-papel/', title: 'Barquinho de papel', desc: 'Aula de origami: doze vincos, mãos reais. Filmar sem fala, áudio local.', keywords: 'barquinho papel origami aula vinco mara maravilha' },
   { url: '/laboratorio/', title: 'Mapa do laboratório', desc: 'Todas as salas do Laboratório BudGanja: biblioteca, plantas, ferramentas, comunidade e o conto Vida.', keywords: 'laboratório mapa fitoterapia plantas unifesp cultivo vida' },
-  { url: '/plantas/', title: 'Plantas fitoterápicas', desc: 'Catálogo curado de plantas medicinais e fitoterápicas do Brasil', keywords: 'plantas fitoterapia medicinal babosa camomila cannabis' },
+  { url: '/plantas/', title: 'Plantas fitoterápicas', desc: 'Catálogo curado de plantas medicinais e fitoterápicas do Brasil — reino vegetal, distinto do órgão fruto e dos fungos', keywords: 'plantas fitoterapia medicinal babosa camomila cannabis reino vegetal' },
+  { url: '/frutos/', title: 'Frutos', desc: 'Catálogo do órgão fruto — não é o reino; a planta fica em Plantas. Fungo é outro reino. Fruto inteiro vs derivados industriais', keywords: 'frutos fruta órgão planta banana manga abacate derivados' },
   { url: '/animais/', title: 'Animais', desc: 'Catálogo de animais: criação, companhia e derivados industriais de risco', keywords: 'animais produção galinha vaca porco abelha derivados indústria' },
   { url: '/tecnologia/', title: 'Tecnologia', desc: 'Catálogo de ofício técnico: vocábulos, hardware, rede e software — HD escravo e o lema tecnologia', keywords: 'tecnologia hd escravo slave slayr ata ide disco rígido hardware software rede' },
   { url: '/mitologia/', title: 'Mitologia', desc: 'Catálogo de mitos e deuses: nomes, relatos e elos — Anúbis (chacal que pesa o coração) e o lema mitologia', keywords: 'mitologia anubis anúbis deus egito chacal maat mito deuses orfeu' },
@@ -79,9 +80,12 @@ function buildIndex() {
           plant.nomeCientifico,
           plant.familia,
           plant.summary,
+          plant.hubCategory || '',
           (plant.tags || []).join(' '),
           (plant.traditionalUses || []).join(' '),
-          'planta fitoterapia medicinal'
+          plant.hubCategory === 'fruto'
+            ? 'fruto órgão planta catálogo frutos'
+            : 'planta fitoterapia medicinal reino vegetal'
         ]
           .filter(Boolean)
           .join(' ')

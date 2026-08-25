@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T09:59:56.174Z",
+  "updatedAt": "2026-08-25T10:39:59.951Z",
   "items": [
     {
       "title": "Início — Bom dia, Inverno",
@@ -34,8 +34,14 @@
     {
       "title": "Plantas fitoterápicas",
       "url": "/plantas/",
-      "excerpt": "Catálogo curado de plantas medicinais e fitoterápicas do Brasil",
-      "text": "Plantas fitoterápicas Catálogo curado de plantas medicinais e fitoterápicas do Brasil plantas fitoterapia medicinal babosa camomila cannabis"
+      "excerpt": "Catálogo curado de plantas medicinais e fitoterápicas do Brasil — reino vegetal, distinto do órgão fruto e dos fungos",
+      "text": "Plantas fitoterápicas Catálogo curado de plantas medicinais e fitoterápicas do Brasil — reino vegetal, distinto do órgão fruto e dos fungos plantas fitoterapia medicinal babosa camomila cannabis reino vegetal"
+    },
+    {
+      "title": "Frutos",
+      "url": "/frutos/",
+      "excerpt": "Catálogo do órgão fruto — não é o reino; a planta fica em Plantas. Fungo é outro reino. Fruto inteiro vs derivados industriais",
+      "text": "Frutos Catálogo do órgão fruto — não é o reino; a planta fica em Plantas. Fungo é outro reino. Fruto inteiro vs derivados industriais frutos fruta órgão planta banana manga abacate derivados"
     },
     {
       "title": "Animais",
@@ -4085,283 +4091,283 @@
       "title": "Babosa (Aloe vera)",
       "url": "/plantas/babosa/",
       "excerpt": "Suculenta (*Aloe vera*) amplamente cultivada; gel foliar rico em polissacarídeos — tradição tópica; látex com antraquinonas (aloína) exige cautela na ingestão.",
-      "text": "Babosa Aloe vera Asphodelaceae Suculenta (*Aloe vera*) amplamente cultivada; gel foliar rico em polissacarídeos — tradição tópica; látex com antraquinonas (aloína) exige cautela na ingestão. pele domestica gel aloina polissacarideos Gel tópico em pele irritada e queimaduras leves (tradição popular) Cosmética caseira (máscaras, hidratação) Uso interno só com orientação — distinto do gel externo planta fitoterapia medicinal"
+      "text": "Babosa Aloe vera Asphodelaceae Suculenta (*Aloe vera*) amplamente cultivada; gel foliar rico em polissacarídeos — tradição tópica; látex com antraquinonas (aloína) exige cautela na ingestão. pele domestica gel aloina polissacarideos Gel tópico em pele irritada e queimaduras leves (tradição popular) Cosmética caseira (máscaras, hidratação) Uso interno só com orientação — distinto do gel externo planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Camomila (Matricaria chamomilla)",
       "url": "/plantas/camomila/",
       "excerpt": "Capítulos de *Matricaria chamomilla* — tradição de chás calmantes; marcadores como apigenina e óleo azul (camazuleno) em contexto educacional.",
-      "text": "Camomila Matricaria chamomilla Asteraceae Capítulos de *Matricaria chamomilla* — tradição de chás calmantes; marcadores como apigenina e óleo azul (camazuleno) em contexto educacional. cha calmante digestao apigenina asteraceae Infusões calmantes e apoio ao sono leve Conforto digestivo leve após refeições Compressas / uso tópico tradicional em pele irritada planta fitoterapia medicinal"
+      "text": "Camomila Matricaria chamomilla Asteraceae Capítulos de *Matricaria chamomilla* — tradição de chás calmantes; marcadores como apigenina e óleo azul (camazuleno) em contexto educacional. cha calmante digestao apigenina asteraceae Infusões calmantes e apoio ao sono leve Conforto digestivo leve após refeições Compressas / uso tópico tradicional em pele irritada planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Capim-limão (Cymbopogon citratus)",
       "url": "/plantas/capim-limao/",
       "excerpt": "Gramínea cítrica (*Cymbopogon citratus*) comum em quintais; citral e óleo essencial nas folhas — chás e culinária.",
-      "text": "Capim-limão Cymbopogon citratus Poaceae Gramínea cítrica (*Cymbopogon citratus*) comum em quintais; citral e óleo essencial nas folhas — chás e culinária. cha aromatica culinaria citral oleo-essencial Chás aromáticos citricos Aromatização de alimentos e caldos Uso popular digestivo leve planta fitoterapia medicinal"
+      "text": "Capim-limão Cymbopogon citratus Poaceae Gramínea cítrica (*Cymbopogon citratus*) comum em quintais; citral e óleo essencial nas folhas — chás e culinária. cha aromatica culinaria citral oleo-essencial Chás aromáticos citricos Aromatização de alimentos e caldos Uso popular digestivo leve planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Carqueja (Baccharis trimera)",
       "url": "/plantas/carqueja/",
       "excerpt": "Arbusto nativo (*Baccharis trimera*) — chás amargos do Sul/Sudeste; flavonoides e diterpenos em tradição digestiva popular.",
-      "text": "Carqueja Baccharis trimera Asteraceae Arbusto nativo (*Baccharis trimera*) — chás amargos do Sul/Sudeste; flavonoides e diterpenos em tradição digestiva popular. nativa digestao cha amargo baccharis Chás amargos digestivos tradicionais Fitoterapia popular hepática/digestiva (contexto cultural) Uso em decoctos regionais planta fitoterapia medicinal"
+      "text": "Carqueja Baccharis trimera Asteraceae Arbusto nativo (*Baccharis trimera*) — chás amargos do Sul/Sudeste; flavonoides e diterpenos em tradição digestiva popular. nativa digestao cha amargo baccharis Chás amargos digestivos tradicionais Fitoterapia popular hepática/digestiva (contexto cultural) Uso em decoctos regionais planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Cavalinha (Equisetum arvense)",
       "url": "/plantas/cavalinha/",
       "excerpt": "Equisetum — tradição de sílica e diurese popular; partes aéreas em chás e banhos (não confundir espécies tóxicas).",
-      "text": "Cavalinha Equisetum arvense Equisetaceae Equisetum — tradição de sílica e diurese popular; partes aéreas em chás e banhos (não confundir espécies tóxicas). cha mineral silica diuretico Infusões tradicionais (diurese popular) Banhos e uso tópico Interesse em sílica / tecido conjuntivo na tradição planta fitoterapia medicinal"
+      "text": "Cavalinha Equisetum arvense Equisetaceae Equisetum — tradição de sílica e diurese popular; partes aéreas em chás e banhos (não confundir espécies tóxicas). cha mineral silica diuretico Infusões tradicionais (diurese popular) Banhos e uso tópico Interesse em sílica / tecido conjuntivo na tradição planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Erva-cidreira (Lippia alba)",
       "url": "/plantas/erva-cidreira/",
       "excerpt": "*Lippia alba* — erva-cidreira brasileira; folhas com óleos essenciais (citral/carvona conforme quimiotipo) em chás e banhos.",
-      "text": "Erva-cidreira Lippia alba Verbenaceae *Lippia alba* — erva-cidreira brasileira; folhas com óleos essenciais (citral/carvona conforme quimiotipo) em chás e banhos. cha calmante brasileira lippia oleo-essencial Chás relaxantes e digestivos leves Banhos e aromatização doméstica Tradição de quintal brasileiro planta fitoterapia medicinal"
+      "text": "Erva-cidreira Lippia alba Verbenaceae *Lippia alba* — erva-cidreira brasileira; folhas com óleos essenciais (citral/carvona conforme quimiotipo) em chás e banhos. cha calmante brasileira lippia oleo-essencial Chás relaxantes e digestivos leves Banhos e aromatização doméstica Tradição de quintal brasileiro planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Espinheira-santa (Maytenus ilicifolia)",
       "url": "/plantas/espinheira-santa/",
       "excerpt": "*Maytenus ilicifolia* — Mata Atlântica; folhas na tradição gástrica brasileira; taninos e triterpenos em contexto educacional.",
-      "text": "Espinheira-santa Maytenus ilicifolia Celastraceae *Maytenus ilicifolia* — Mata Atlântica; folhas na tradição gástrica brasileira; taninos e triterpenos em contexto educacional. nativa digestao mata-atlantica taninos gastrico Chás digestivos / gástricos tradicionais Fitoterapia brasileira popular Decoctos de folhas planta fitoterapia medicinal"
+      "text": "Espinheira-santa Maytenus ilicifolia Celastraceae *Maytenus ilicifolia* — Mata Atlântica; folhas na tradição gástrica brasileira; taninos e triterpenos em contexto educacional. nativa digestao mata-atlantica taninos gastrico Chás digestivos / gástricos tradicionais Fitoterapia brasileira popular Decoctos de folhas planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Guaco (Mikania glomerata)",
       "url": "/plantas/guaco/",
       "excerpt": "*Mikania glomerata* — trepadeira clássica em xaropes e chás respiratórios; cumarinas (ex. cumarina) em contexto educacional.",
-      "text": "Guaco Mikania glomerata Asteraceae *Mikania glomerata* — trepadeira clássica em xaropes e chás respiratórios; cumarinas (ex. cumarina) em contexto educacional. nativa respiratorio cha cumarina xarope Xaropes e chás da medicina popular respiratória Infusões expectorantes tradicionais Uso familiar em resfriados (tradição — não protocolo) planta fitoterapia medicinal"
+      "text": "Guaco Mikania glomerata Asteraceae *Mikania glomerata* — trepadeira clássica em xaropes e chás respiratórios; cumarinas (ex. cumarina) em contexto educacional. nativa respiratorio cha cumarina xarope Xaropes e chás da medicina popular respiratória Infusões expectorantes tradicionais Uso familiar em resfriados (tradição — não protocolo) planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Hortelã (Mentha spicata)",
       "url": "/plantas/hortela/",
       "excerpt": "*Mentha spicata* (e afins) — mentol/óleos mentolados em chás e culinária; espécie e quimiotipo importam.",
-      "text": "Hortelã Mentha spicata Lamiaceae *Mentha spicata* (e afins) — mentol/óleos mentolados em chás e culinária; espécie e quimiotipo importam. cha culinaria aromatica mentol digestao Chás digestivos e refrescantes Culinária e aromatização Uso popular em náuseas leves planta fitoterapia medicinal"
+      "text": "Hortelã Mentha spicata Lamiaceae *Mentha spicata* (e afins) — mentol/óleos mentolados em chás e culinária; espécie e quimiotipo importam. cha culinaria aromatica mentol digestao Chás digestivos e refrescantes Culinária e aromatização Uso popular em náuseas leves planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Boldo (Plectranthus barbatus)",
       "url": "/plantas/boldo/",
       "excerpt": "No Brasil, “boldo” costuma ser *Plectranthus barbatus* (falso-boldo) — distinto do *Peumus boldus* chileno; folhas amargas em chás digestivos.",
-      "text": "Boldo Plectranthus barbatus Lamiaceae No Brasil, “boldo” costuma ser *Plectranthus barbatus* (falso-boldo) — distinto do *Peumus boldus* chileno; folhas amargas em chás digestivos. digestao cha domestica falso-boldo plectranthus Chás digestivos amargos tradicionais Uso popular após refeições pesadas Fitoterapia doméstica (identificar espécie) planta fitoterapia medicinal"
+      "text": "Boldo Plectranthus barbatus Lamiaceae No Brasil, “boldo” costuma ser *Plectranthus barbatus* (falso-boldo) — distinto do *Peumus boldus* chileno; folhas amargas em chás digestivos. digestao cha domestica falso-boldo plectranthus Chás digestivos amargos tradicionais Uso popular após refeições pesadas Fitoterapia doméstica (identificar espécie) planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Melissa (Melissa officinalis)",
       "url": "/plantas/melissa/",
       "excerpt": "*Melissa officinalis* — balm europeu adaptado; citral e ácidos fenólicos em chás calmantes.",
-      "text": "Melissa Melissa officinalis Lamiaceae *Melissa officinalis* — balm europeu adaptado; citral e ácidos fenólicos em chás calmantes. cha calmante aromatica citral lamiaceae Infusões relaxantes Aromatização e culinária leve Tradição europeia de conforto nervoso leve planta fitoterapia medicinal"
+      "text": "Melissa Melissa officinalis Lamiaceae *Melissa officinalis* — balm europeu adaptado; citral e ácidos fenólicos em chás calmantes. cha calmante aromatica citral lamiaceae Infusões relaxantes Aromatização e culinária leve Tradição europeia de conforto nervoso leve planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Alecrim (Salvia rosmarinus)",
       "url": "/plantas/alecrim/",
       "excerpt": "*Salvia rosmarinus* — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos.",
-      "text": "Alecrim Salvia rosmarinus Lamiaceae *Salvia rosmarinus* — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. culinaria aromatica cha cineol canfora Culinária (carnes, assados, azeites) Chás aromáticos Tradição de estímulo cognitivo popular (contexto cultural) planta fitoterapia medicinal"
+      "text": "Alecrim Salvia rosmarinus Lamiaceae *Salvia rosmarinus* — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos. culinaria aromatica cha cineol canfora Culinária (carnes, assados, azeites) Chás aromáticos Tradição de estímulo cognitivo popular (contexto cultural) planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Gengibre (Zingiber officinale)",
       "url": "/plantas/gengibre/",
       "excerpt": "Rizoma de *Zingiber officinale* — gingeróis e shogaóis; chás, culinária e tradição antináusea (contexto educacional).",
-      "text": "Gengibre Zingiber officinale Zingiberaceae Rizoma de *Zingiber officinale* — gingeróis e shogaóis; chás, culinária e tradição antináusea (contexto educacional). cha culinaria rizoma gingerois nauseas Chás e decoctos digestivos Culinária (fresco, seco, em conserva) Uso popular em náuseas de viagem / gestação leve (sempre com orientação na gravidez) planta fitoterapia medicinal"
+      "text": "Gengibre Zingiber officinale Zingiberaceae Rizoma de *Zingiber officinale* — gingeróis e shogaóis; chás, culinária e tradição antináusea (contexto educacional). cha culinaria rizoma gingerois nauseas Chás e decoctos digestivos Culinária (fresco, seco, em conserva) Uso popular em náuseas de viagem / gestação leve (sempre com orientação na gravidez) planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Cúrcuma (Curcuma longa)",
       "url": "/plantas/curcuma/",
       "excerpt": "Rizoma amarelo conhecido no Brasil como açafrão-da-terra — culinária, chás e tradição popular associada a conforto digestivo e efeitos anti-inflamatórios (contexto educacional).",
-      "text": "Cúrcuma Curcuma longa Zingiberaceae Rizoma amarelo conhecido no Brasil como açafrão-da-terra — culinária, chás e tradição popular associada a conforto digestivo e efeitos anti-inflamatórios (contexto educacional). culinaria rizoma cha antiinflamatorio digestivo Culinária (açafrão-da-terra / tempero e corante) Chás e leite dourado (golden milk) Uso popular digestivo e anti-inflamatório tradicional Preparações tópicas tradicionais em algumas culturas planta fitoterapia medicinal"
+      "text": "Cúrcuma Curcuma longa Zingiberaceae Rizoma amarelo conhecido no Brasil como açafrão-da-terra — culinária, chás e tradição popular associada a conforto digestivo e efeitos anti-inflamatórios (contexto educacional). culinaria rizoma cha antiinflamatorio digestivo Culinária (açafrão-da-terra / tempero e corante) Chás e leite dourado (golden milk) Uso popular digestivo e anti-inflamatório tradicional Preparações tópicas tradicionais em algumas culturas planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Unha-de-gato (Uncaria tomentosa)",
       "url": "/plantas/unha-de-gato/",
       "excerpt": "*Uncaria tomentosa* — trepadeira andino-amazônica; alcaloides oxindólicos e ácidos quinóvicos na tradição popular (casca/raiz).",
-      "text": "Unha-de-gato Uncaria tomentosa Rubiaceae *Uncaria tomentosa* — trepadeira andino-amazônica; alcaloides oxindólicos e ácidos quinóvicos na tradição popular (casca/raiz). amazonia tradicional alcaloides uncaria imunidade Decoctos tradicionais de casca/raiz Fitoterapia popular andino-amazônica Uso tónico tradicional (contexto cultural) planta fitoterapia medicinal"
+      "text": "Unha-de-gato Uncaria tomentosa Rubiaceae *Uncaria tomentosa* — trepadeira andino-amazônica; alcaloides oxindólicos e ácidos quinóvicos na tradição popular (casca/raiz). amazonia tradicional alcaloides uncaria imunidade Decoctos tradicionais de casca/raiz Fitoterapia popular andino-amazônica Uso tónico tradicional (contexto cultural) planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Sucupira (Pterodon emarginatus)",
       "url": "/plantas/sucupira/",
       "excerpt": "*Pterodon emarginatus* — Cerrado; sementes e óleo com diterpenos furânicos na medicina popular do Centro-Oeste.",
-      "text": "Sucupira Pterodon emarginatus Fabaceae *Pterodon emarginatus* — Cerrado; sementes e óleo com diterpenos furânicos na medicina popular do Centro-Oeste. cerrado nativa oleo diterpenos sementes Uso popular tópico (óleo/sementes) Tradição oral regional (com cautela) Fitoterapia do Cerrado planta fitoterapia medicinal"
+      "text": "Sucupira Pterodon emarginatus Fabaceae *Pterodon emarginatus* — Cerrado; sementes e óleo com diterpenos furânicos na medicina popular do Centro-Oeste. cerrado nativa oleo diterpenos sementes Uso popular tópico (óleo/sementes) Tradição oral regional (com cautela) Fitoterapia do Cerrado planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Copaíba (Copaifera langsdorffii)",
       "url": "/plantas/copaiba/",
       "excerpt": "*Copaifera* — óleo-resina amazônico/cerrado rico em β-cariofileno e diterpenos; tradição tópica e oral popular.",
-      "text": "Copaíba Copaifera langsdorffii Fabaceae *Copaifera* — óleo-resina amazônico/cerrado rico em β-cariofileno e diterpenos; tradição tópica e oral popular. amazonia oleo nativa cariofileno resina Uso tópico tradicional (pele/inflamação popular) Fitoterapia amazônica (gotas/óleo) Cosmética artesanal planta fitoterapia medicinal"
+      "text": "Copaíba Copaifera langsdorffii Fabaceae *Copaifera* — óleo-resina amazônico/cerrado rico em β-cariofileno e diterpenos; tradição tópica e oral popular. amazonia oleo nativa cariofileno resina Uso tópico tradicional (pele/inflamação popular) Fitoterapia amazônica (gotas/óleo) Cosmética artesanal planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Andiroba (Carapa guianensis)",
       "url": "/plantas/andiroba/",
       "excerpt": "*Carapa guianensis* — óleo das sementes amazônicas; limonoides e ácidos gordos em cosmética e tradição local.",
-      "text": "Andiroba Carapa guianensis Meliaceae *Carapa guianensis* — óleo das sementes amazônicas; limonoides e ácidos gordos em cosmética e tradição local. amazonia oleo pele limoides cosmetica Uso tópico tradicional (pele/insetos — tradição) Cosmética natural e sabões Tradição ribeirinha amazônica planta fitoterapia medicinal"
+      "text": "Andiroba Carapa guianensis Meliaceae *Carapa guianensis* — óleo das sementes amazônicas; limonoides e ácidos gordos em cosmética e tradição local. amazonia oleo pele limoides cosmetica Uso tópico tradicional (pele/insetos — tradição) Cosmética natural e sabões Tradição ribeirinha amazônica planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Jambu (Acmella oleracea)",
       "url": "/plantas/jambu/",
       "excerpt": "*Acmella oleracea* — jambu amazônico; spilanthol provoca formigamento; culinária paraense e tradição oral.",
-      "text": "Jambu Acmella oleracea Asteraceae *Acmella oleracea* — jambu amazônico; spilanthol provoca formigamento; culinária paraense e tradição oral. amazonia culinaria regional spilanthol anestesico Culinária regional (tacacá, pato no tucupi) Sensação anestésica/formigante tradicional Uso oral popular em pequenas quantidades culinárias planta fitoterapia medicinal"
+      "text": "Jambu Acmella oleracea Asteraceae *Acmella oleracea* — jambu amazônico; spilanthol provoca formigamento; culinária paraense e tradição oral. amazonia culinaria regional spilanthol anestesico Culinária regional (tacacá, pato no tucupi) Sensação anestésica/formigante tradicional Uso oral popular em pequenas quantidades culinárias planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Mulungu (Erythrina mulungu)",
       "url": "/plantas/mulungu/",
       "excerpt": "*Erythrina mulungu* — casca com alcaloides eritrínicos; tradição de chás calmantes (sedação popular).",
-      "text": "Mulungu Erythrina mulungu Fabaceae *Erythrina mulungu* — casca com alcaloides eritrínicos; tradição de chás calmantes (sedação popular). nativa calmante cha alcaloides sedativo Chás tradicionais calmantes Uso popular para nervosismo/sono (contexto cultural) Fitoterapia brasileira de casca planta fitoterapia medicinal"
+      "text": "Mulungu Erythrina mulungu Fabaceae *Erythrina mulungu* — casca com alcaloides eritrínicos; tradição de chás calmantes (sedação popular). nativa calmante cha alcaloides sedativo Chás tradicionais calmantes Uso popular para nervosismo/sono (contexto cultural) Fitoterapia brasileira de casca planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Maracujá (Passiflora incarnata)",
       "url": "/plantas/maracuja/",
       "excerpt": "*Passiflora* — folhas/partes aéreas em chás e fitoterápicos; flavonoides C-glicosídeos na tradição calmante.",
-      "text": "Maracujá Passiflora incarnata Passifloraceae *Passiflora* — folhas/partes aéreas em chás e fitoterápicos; flavonoides C-glicosídeos na tradição calmante. calmante cha brasileira flavonoides passiflora Chás calmantes Fitoterapia popular e produtos industrializados Tradição de conforto ansioso leve (não protocolo) planta fitoterapia medicinal"
+      "text": "Maracujá Passiflora incarnata Passifloraceae *Passiflora* — folhas/partes aéreas em chás e fitoterápicos; flavonoides C-glicosídeos na tradição calmante. calmante cha brasileira flavonoides passiflora Chás calmantes Fitoterapia popular e produtos industrializados Tradição de conforto ansioso leve (não protocolo) planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Calêndula (Calendula officinalis)",
       "url": "/plantas/calendula/",
       "excerpt": "*Calendula officinalis* — pétalas com triterpenos e carotenóides; tradição tópica em pele e infusões leves.",
-      "text": "Calêndula Calendula officinalis Asteraceae *Calendula officinalis* — pétalas com triterpenos e carotenóides; tradição tópica em pele e infusões leves. pele flor cha triterpenos topico Pomadas e uso tópico em pele Infusões leves Cosmética herbal tradicional planta fitoterapia medicinal"
+      "text": "Calêndula Calendula officinalis Asteraceae *Calendula officinalis* — pétalas com triterpenos e carotenóides; tradição tópica em pele e infusões leves. pele flor cha triterpenos topico Pomadas e uso tópico em pele Infusões leves Cosmética herbal tradicional planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Barbatimão (Stryphnodendron adstringens)",
       "url": "/plantas/barbatimao/",
       "excerpt": "*Stryphnodendron adstringens* — casca do Cerrado rica em taninos; tradição adstringente tópica e oral popular.",
-      "text": "Barbatimão Stryphnodendron adstringens Fabaceae *Stryphnodendron adstringens* — casca do Cerrado rica em taninos; tradição adstringente tópica e oral popular. cerrado nativa adstringente taninos casca Decoctos e uso tópico tradicional Tradição adstringente/ cicatrizante popular Fitoterapia do Cerrado planta fitoterapia medicinal"
+      "text": "Barbatimão Stryphnodendron adstringens Fabaceae *Stryphnodendron adstringens* — casca do Cerrado rica em taninos; tradição adstringente tópica e oral popular. cerrado nativa adstringente taninos casca Decoctos e uso tópico tradicional Tradição adstringente/ cicatrizante popular Fitoterapia do Cerrado planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Jaborandi (Pilocarpus microphyllus)",
       "url": "/plantas/jaborandi/",
       "excerpt": "*Pilocarpus microphyllus* — fonte histórica de pilocarpina (agonista muscarínico); referência farmacológica amazônica.",
-      "text": "Jaborandi Pilocarpus microphyllus Rutaceae *Pilocarpus microphyllus* — fonte histórica de pilocarpina (agonista muscarínico); referência farmacológica amazônica. amazonia historica nativa pilocarpina alcaloides Referência histórica farmacológica (pilocarpina) Fitoterapia regional com supervisão Educação sobre alcaloides potentes planta fitoterapia medicinal"
+      "text": "Jaborandi Pilocarpus microphyllus Rutaceae *Pilocarpus microphyllus* — fonte histórica de pilocarpina (agonista muscarínico); referência farmacológica amazônica. amazonia historica nativa pilocarpina alcaloides Referência histórica farmacológica (pilocarpina) Fitoterapia regional com supervisão Educação sobre alcaloides potentes planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Ipecacuanha (Carapichea ipecacuanha)",
       "url": "/plantas/ipecacuanha/",
       "excerpt": "*Carapichea ipecacuanha* — raiz histórica com emetina/cefaelina; farmacopeia e uso restrito (não remédio caseiro).",
-      "text": "Ipecacuanha Carapichea ipecacuanha Rubiaceae *Carapichea ipecacuanha* — raiz histórica com emetina/cefaelina; farmacopeia e uso restrito (não remédio caseiro). historica nativa farmacopeia emetina toxica Referência histórica farmacêutica (emético) Educação sobre alcaloides isoquinolínicos Contexto de farmacopeia — não uso doméstico planta fitoterapia medicinal"
+      "text": "Ipecacuanha Carapichea ipecacuanha Rubiaceae *Carapichea ipecacuanha* — raiz histórica com emetina/cefaelina; farmacopeia e uso restrito (não remédio caseiro). historica nativa farmacopeia emetina toxica Referência histórica farmacêutica (emético) Educação sobre alcaloides isoquinolínicos Contexto de farmacopeia — não uso doméstico planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Pfaffia (ginseng-brasileiro) (Pfaffia glomerata)",
       "url": "/plantas/pfaffia/",
       "excerpt": "*Pfaffia glomerata* — «ginseng-brasileiro»; raiz com ecdiesteroides e saponinas na tradição tonificante popular.",
-      "text": "Pfaffia (ginseng-brasileiro) Pfaffia glomerata Amaranthaceae *Pfaffia glomerata* — «ginseng-brasileiro»; raiz com ecdiesteroides e saponinas na tradição tonificante popular. nativa raiz tradicional ecdiesteroides tonico Preparações tradicionais tonificantes Uso popular de raiz (cápsulas/pó — mercado) Tradição adaptogénica popular (contexto cultural) planta fitoterapia medicinal"
+      "text": "Pfaffia (ginseng-brasileiro) Pfaffia glomerata Amaranthaceae *Pfaffia glomerata* — «ginseng-brasileiro»; raiz com ecdiesteroides e saponinas na tradição tonificante popular. nativa raiz tradicional ecdiesteroides tonico Preparações tradicionais tonificantes Uso popular de raiz (cápsulas/pó — mercado) Tradição adaptogénica popular (contexto cultural) planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Aroeira (Schinus terebinthifolia)",
       "url": "/plantas/aroeira/",
       "excerpt": "*Schinus terebinthifolia* — aroeira/pimenta-rosa; taninos e óleo essencial; casca/folhas na tradição e frutos na culinária.",
-      "text": "Aroeira Schinus terebinthifolia Anacardiaceae *Schinus terebinthifolia* — aroeira/pimenta-rosa; taninos e óleo essencial; casca/folhas na tradição e frutos na culinária. nativa culinaria pele taninos pimenta-rosa Uso tópico tradicional (casca/folhas) Culinária (frutos — pimenta-rosa) Tradição adstringente popular planta fitoterapia medicinal"
+      "text": "Aroeira Schinus terebinthifolia Anacardiaceae *Schinus terebinthifolia* — aroeira/pimenta-rosa; taninos e óleo essencial; casca/folhas na tradição e frutos na culinária. nativa culinaria pele taninos pimenta-rosa Uso tópico tradicional (casca/folhas) Culinária (frutos — pimenta-rosa) Tradição adstringente popular planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Quina (Cinchona sp.)",
       "url": "/plantas/quina/",
       "excerpt": "*Cinchona* — casca histórica da quinina; antimalárico clássico — referência de farmacopeia, não chá doméstico.",
-      "text": "Quina Cinchona sp. Rubiaceae *Cinchona* — casca histórica da quinina; antimalárico clássico — referência de farmacopeia, não chá doméstico. historica farmacopeia quinina antimalarico alcaloides Referência histórica antimalárica (quinina) Educação sobre alcaloides da casca Contexto de farmacopeia e história da medicina planta fitoterapia medicinal"
+      "text": "Quina Cinchona sp. Rubiaceae *Cinchona* — casca histórica da quinina; antimalárico clássico — referência de farmacopeia, não chá doméstico. historica farmacopeia quinina antimalarico alcaloides Referência histórica antimalárica (quinina) Educação sobre alcaloides da casca Contexto de farmacopeia e história da medicina planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Cannabis (medicinal) (Cannabis sativa L.)",
       "url": "/plantas/cannabis-sativa/",
       "excerpt": "*Cannabis sativa* — canabinóides (THC, CBD e outros) em contexto clínico e formativo; destaque UNIFESP e legislação — não incentivo a cultivo ilícito.",
-      "text": "Cannabis (medicinal) Cannabis sativa L. Cannabaceae *Cannabis sativa* — canabinóides (THC, CBD e outros) em contexto clínico e formativo; destaque UNIFESP e legislação — não incentivo a cultivo ilícito. medicinal unifesp legislacao fitoterapia canabinoides thc cbd Educação sobre uso terapêutico (curso UNIFESP) Referência em fitoterapia e legislação brasileira planta fitoterapia medicinal"
+      "text": "Cannabis (medicinal) Cannabis sativa L. Cannabaceae *Cannabis sativa* — canabinóides (THC, CBD e outros) em contexto clínico e formativo; destaque UNIFESP e legislação — não incentivo a cultivo ilícito. medicinal unifesp legislacao fitoterapia canabinoides thc cbd Educação sobre uso terapêutico (curso UNIFESP) Referência em fitoterapia e legislação brasileira planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Abacate (Persea americana Mill.)",
       "url": "/plantas/abacate/",
       "excerpt": "Fruto mesoamericano (*āhuacatl* em náuatle): polpa rica em gorduras monoinsaturadas; no Brasil alimento corrente — a ficha separa a planta inteira dos derivados industriais açucarados e aditivados.",
-      "text": "Abacate Persea americana Mill. Lauraceae Fruto mesoamericano (*āhuacatl* em náuatle): polpa rica em gorduras monoinsaturadas; no Brasil alimento corrente — a ficha separa a planta inteira dos derivados industriais açucarados e aditivados. alimento frutifera americas culinaria lipidos etimo frutos Alimento e culinária (saladas, guacamole fresco, torradas) Etnobotânica alimentar mesoamericana e andina (aguacate / palta) Preparações caseiras com a polpa (pele/cabelo — tradição popular) Óleo prensado em contextos artesanais planta fitoterapia medicinal"
+      "text": "Abacate Persea americana Mill. Lauraceae Fruto mesoamericano (*āhuacatl* em náuatle): polpa rica em gorduras monoinsaturadas; no Brasil alimento corrente — a ficha separa a planta inteira dos derivados industriais açucarados e aditivados. fruto alimento frutifera americas culinaria lipidos etimo frutos Alimento e culinária (saladas, guacamole fresco, torradas) Etnobotânica alimentar mesoamericana e andina (aguacate / palta) Preparações caseiras com a polpa (pele/cabelo — tradição popular) Óleo prensado em contextos artesanais fruto órgão planta catálogo frutos"
     },
     {
       "title": "Coco (Cocos nucifera L.)",
       "url": "/plantas/coco/",
       "excerpt": "Palmeira tropical (*Cocos nucifera*): o fruto (drupa) oferece água, polpa e óleo — a ficha separa o coco inteiro e a água fresca dos derivados industriais adoçados, refinados e ultraprocessados.",
-      "text": "Coco Cocos nucifera L. Arecaceae Palmeira tropical (*Cocos nucifera*): o fruto (drupa) oferece água, polpa e óleo — a ficha separa o coco inteiro e a água fresca dos derivados industriais adoçados, refinados e ultraprocessados. alimento frutos frutifera tropicais culinaria lipidos etimo Água de coco fresca (hidratação e bebida tropical) Polpa em culinária costeira e afro-brasileira Óleo e leite de coco em cozinha tradicional Uso material da casca e da madeira da palmeira planta fitoterapia medicinal"
+      "text": "Coco Cocos nucifera L. Arecaceae Palmeira tropical (*Cocos nucifera*): o fruto (drupa) oferece água, polpa e óleo — a ficha separa o coco inteiro e a água fresca dos derivados industriais adoçados, refinados e ultraprocessados. fruto alimento frutos frutifera tropicais culinaria lipidos etimo Água de coco fresca (hidratação e bebida tropical) Polpa em culinária costeira e afro-brasileira Óleo e leite de coco em cozinha tradicional Uso material da casca e da madeira da palmeira fruto órgão planta catálogo frutos"
     },
     {
       "title": "Laranja (Citrus × sinensis (L.) Osbeck)",
       "url": "/plantas/laranja/",
       "excerpt": "Citrino híbrido (*Citrus × sinensis*): crédito ao fruto inteiro e sumo fresco; a ficha separa concentrados, néctares e refrigerantes «de laranja» com açúcar e aditivos.",
-      "text": "Laranja Citrus × sinensis (L.) Osbeck Rutaceae Citrino híbrido (*Citrus × sinensis*): crédito ao fruto inteiro e sumo fresco; a ficha separa concentrados, néctares e refrigerantes «de laranja» com açúcar e aditivos. alimento frutos frutifera culinaria citricos suco Consumo do fruto inteiro ou fresco Sumo fresco caseiro (sem concentrado nem xarope) Culinária doméstica (zest, compotas artesanais sem aditivos industriais) Etnobotânica alimentar mediterrânica e tropical (Rutaceae / *Citrus*) planta fitoterapia medicinal"
+      "text": "Laranja Citrus × sinensis (L.) Osbeck Rutaceae Citrino híbrido (*Citrus × sinensis*): crédito ao fruto inteiro e sumo fresco; a ficha separa concentrados, néctares e refrigerantes «de laranja» com açúcar e aditivos. fruto alimento frutos frutifera culinaria citricos suco Consumo do fruto inteiro ou fresco Sumo fresco caseiro (sem concentrado nem xarope) Culinária doméstica (zest, compotas artesanais sem aditivos industriais) Etnobotânica alimentar mediterrânica e tropical (Rutaceae / *Citrus*) fruto órgão planta catálogo frutos"
     },
     {
       "title": "Açaí (Euterpe oleracea Mart.)",
       "url": "/plantas/acai/",
       "excerpt": "Palmeira amazónica: polpa fresca vs bowls industriais, xaropes e mixes ultraprocessados açucarados.",
-      "text": "Açaí Euterpe oleracea Mart. Arecaceae Palmeira amazónica: polpa fresca vs bowls industriais, xaropes e mixes ultraprocessados açucarados. alimento frutos frutifera culinaria amazonia polpa tropicais Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento planta fitoterapia medicinal"
+      "text": "Açaí Euterpe oleracea Mart. Arecaceae Palmeira amazónica: polpa fresca vs bowls industriais, xaropes e mixes ultraprocessados açucarados. fruto alimento frutos frutifera culinaria amazonia polpa tropicais Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento fruto órgão planta catálogo frutos"
     },
     {
       "title": "Manga (Mangifera indica L.)",
       "url": "/plantas/manga/",
       "excerpt": "Fruto tropical: manga inteira vs néctares, polpas adoçadas e snacks desidratados industriais.",
-      "text": "Manga Mangifera indica L. Anacardiaceae Fruto tropical: manga inteira vs néctares, polpas adoçadas e snacks desidratados industriais. alimento frutos frutifera culinaria tropicais polpa Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento planta fitoterapia medicinal"
+      "text": "Manga Mangifera indica L. Anacardiaceae Fruto tropical: manga inteira vs néctares, polpas adoçadas e snacks desidratados industriais. fruto alimento frutos frutifera culinaria tropicais polpa Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento fruto órgão planta catálogo frutos"
     },
     {
       "title": "Banana (Musa spp.)",
       "url": "/plantas/banana/",
       "excerpt": "Fruto cotidiano: banana inteira vs chips fritos, farinhas, snacks e sobremesas industriais.",
-      "text": "Banana Musa spp. Musaceae Fruto cotidiano: banana inteira vs chips fritos, farinhas, snacks e sobremesas industriais. alimento frutos frutifera culinaria snacks Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento planta fitoterapia medicinal"
+      "text": "Banana Musa spp. Musaceae Fruto cotidiano: banana inteira vs chips fritos, farinhas, snacks e sobremesas industriais. fruto alimento frutos frutifera culinaria snacks Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento fruto órgão planta catálogo frutos"
     },
     {
       "title": "Maçã (Malus domestica Borkh.)",
       "url": "/plantas/maca/",
       "excerpt": "Fruto temperado: maçã inteira vs sucos concentrados, purés infantis e snacks «apple» industriais.",
-      "text": "Maçã Malus domestica Borkh. Rosaceae Fruto temperado: maçã inteira vs sucos concentrados, purés infantis e snacks «apple» industriais. alimento frutos frutifera culinaria suco snacks Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento planta fitoterapia medicinal"
+      "text": "Maçã Malus domestica Borkh. Rosaceae Fruto temperado: maçã inteira vs sucos concentrados, purés infantis e snacks «apple» industriais. fruto alimento frutos frutifera culinaria suco snacks Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento fruto órgão planta catálogo frutos"
     },
     {
       "title": "Abacaxi (Ananas comosus (L.) Merr.)",
       "url": "/plantas/abacaxi/",
       "excerpt": "Bromélia tropical: fruto fresco vs lata em calda, sucos e néctares com açúcar.",
-      "text": "Abacaxi Ananas comosus (L.) Merr. Bromeliaceae Bromélia tropical: fruto fresco vs lata em calda, sucos e néctares com açúcar. alimento frutos frutifera culinaria tropicais calda Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento planta fitoterapia medicinal"
+      "text": "Abacaxi Ananas comosus (L.) Merr. Bromeliaceae Bromélia tropical: fruto fresco vs lata em calda, sucos e néctares com açúcar. fruto alimento frutos frutifera culinaria tropicais calda Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento fruto órgão planta catálogo frutos"
     },
     {
       "title": "Goiaba (Psidium guajava L.)",
       "url": "/plantas/goiaba/",
       "excerpt": "Fruto brasileiro comum: goiaba inteira vs goiabada, polpas e néctares ricos em açúcar.",
-      "text": "Goiaba Psidium guajava L. Myrtaceae Fruto brasileiro comum: goiaba inteira vs goiabada, polpas e néctares ricos em açúcar. alimento frutos frutifera culinaria brasileira doce Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento planta fitoterapia medicinal"
+      "text": "Goiaba Psidium guajava L. Myrtaceae Fruto brasileiro comum: goiaba inteira vs goiabada, polpas e néctares ricos em açúcar. fruto alimento frutos frutifera culinaria brasileira doce Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento fruto órgão planta catálogo frutos"
     },
     {
       "title": "Cacau (Theobroma cacao L.)",
       "url": "/plantas/cacau/",
       "excerpt": "Semente/fruto amazónico-mesoamericano: amêndoa vs chocolate industrial, açúcar e ultra processamento.",
-      "text": "Cacau Theobroma cacao L. Malvaceae Semente/fruto amazónico-mesoamericano: amêndoa vs chocolate industrial, açúcar e ultra processamento. alimento frutos frutifera culinaria amazonia chocolate lipidos Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento planta fitoterapia medicinal"
+      "text": "Cacau Theobroma cacao L. Malvaceae Semente/fruto amazónico-mesoamericano: amêndoa vs chocolate industrial, açúcar e ultra processamento. fruto alimento frutos frutifera culinaria amazonia chocolate lipidos Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento fruto órgão planta catálogo frutos"
     },
     {
       "title": "Uva (Vitis vinifera L.)",
       "url": "/plantas/uva/",
       "excerpt": "Bagão: uva inteira vs sucos concentrados, néctares e refrigerantes «de uva» com açúcar.",
-      "text": "Uva Vitis vinifera L. Vitaceae Bagão: uva inteira vs sucos concentrados, néctares e refrigerantes «de uva» com açúcar. alimento frutos frutifera culinaria suco Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento planta fitoterapia medicinal"
+      "text": "Uva Vitis vinifera L. Vitaceae Bagão: uva inteira vs sucos concentrados, néctares e refrigerantes «de uva» com açúcar. fruto alimento frutos frutifera culinaria suco Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento fruto órgão planta catálogo frutos"
     },
     {
       "title": "Morango (Fragaria × ananassa Duchesne)",
       "url": "/plantas/morango/",
       "excerpt": "Fruto vermelho: morango fresco vs iogurtes, caldas, aromas e ultraprocessados «strawberry».",
-      "text": "Morango Fragaria × ananassa Duchesne Rosaceae Fruto vermelho: morango fresco vs iogurtes, caldas, aromas e ultraprocessados «strawberry». alimento frutos frutifera culinaria calda aroma Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento planta fitoterapia medicinal"
+      "text": "Morango Fragaria × ananassa Duchesne Rosaceae Fruto vermelho: morango fresco vs iogurtes, caldas, aromas e ultraprocessados «strawberry». fruto alimento frutos frutifera culinaria calda aroma Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento fruto órgão planta catálogo frutos"
     },
     {
       "title": "Maracujá (fruta) (Passiflora edulis Sims)",
       "url": "/plantas/maracuja-fruta/",
       "excerpt": "Fruto de *P. edulis*: polpa fresca vs néctares e polpas industriais adoçadas — distinto da ficha medicinal de folhas (*P. incarnata*).",
-      "text": "Maracujá (fruta) Passiflora edulis Sims Passifloraceae Fruto de *P. edulis*: polpa fresca vs néctares e polpas industriais adoçadas — distinto da ficha medicinal de folhas (*P. incarnata*). alimento frutos frutifera culinaria polpa tropicais Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento planta fitoterapia medicinal"
+      "text": "Maracujá (fruta) Passiflora edulis Sims Passifloraceae Fruto de *P. edulis*: polpa fresca vs néctares e polpas industriais adoçadas — distinto da ficha medicinal de folhas (*P. incarnata*). fruto alimento frutos frutifera culinaria polpa tropicais Consumo do fruto inteiro ou fresco Culinária doméstica sem ultraprocessamento fruto órgão planta catálogo frutos"
     },
     {
       "title": "Tomatinho Cereja (Solanum lycopersicum var. cerasiforme)",
       "url": "/plantas/tomatinho-cereja/",
       "excerpt": "Tomate cereja de cultivo familiar: fruto inteiro fresco vs molhos, ketchups e ultraprocessados «tomato». Primeiro cultivo publicado no Diário da Sementinha pelo Inspetor BudGanja.",
-      "text": "Tomatinho Cereja Solanum lycopersicum var. cerasiforme Solanaceae Tomate cereja de cultivo familiar: fruto inteiro fresco vs molhos, ketchups e ultraprocessados «tomato». Primeiro cultivo publicado no Diário da Sementinha pelo Inspetor BudGanja. alimento frutos frutifera culinaria cultivo-familiar horta solanaceae Consumo do fruto fresco em saladas e lanches Culinária doméstica sem ultraprocessamento Cultivo em vaso ou canteiro com acompanhamento familiar planta fitoterapia medicinal"
+      "text": "Tomatinho Cereja Solanum lycopersicum var. cerasiforme Solanaceae Tomate cereja de cultivo familiar: fruto inteiro fresco vs molhos, ketchups e ultraprocessados «tomato». Primeiro cultivo publicado no Diário da Sementinha pelo Inspetor BudGanja. fruto alimento frutos frutifera culinaria cultivo-familiar horta solanaceae Consumo do fruto fresco em saladas e lanches Culinária doméstica sem ultraprocessamento Cultivo em vaso ou canteiro com acompanhamento familiar fruto órgão planta catálogo frutos"
     },
     {
       "title": "Melancia (Citrullus lanatus (Thunb.) Matsum. & Nakai)",
       "url": "/plantas/melancia/",
       "excerpt": "Cucurbitácea de verão (*Citrullus lanatus*): fruto refrescante de polpa aquosa — a ficha separa a melancia inteira dos sucos, néctares e ultraprocessados «watermelon»; cultura de feira, praia e cultivo familiar com sol na trepadeira e água na polpa.",
-      "text": "Melancia Citrullus lanatus (Thunb.) Matsum. & Nakai Cucurbitaceae Cucurbitácea de verão (*Citrullus lanatus*): fruto refrescante de polpa aquosa — a ficha separa a melancia inteira dos sucos, néctares e ultraprocessados «watermelon»; cultura de feira, praia e cultivo familiar com sol na trepadeira e água na polpa. alimento frutos frutifera culinaria tropicais verao cucurbitaceae cultivo-familiar hidrante Consumo do fruto fresco (verão, feira, praia) Suco e salada caseiros sem ultraprocessamento Cultura alimentar brasileira do melão-d'água Cultivo familiar em clima quente — trepadeira com espaço e polinização planta fitoterapia medicinal"
+      "text": "Melancia Citrullus lanatus (Thunb.) Matsum. & Nakai Cucurbitaceae Cucurbitácea de verão (*Citrullus lanatus*): fruto refrescante de polpa aquosa — a ficha separa a melancia inteira dos sucos, néctares e ultraprocessados «watermelon»; cultura de feira, praia e cultivo familiar com sol na trepadeira e água na polpa. fruto alimento frutos frutifera culinaria tropicais verao cucurbitaceae cultivo-familiar hidrante Consumo do fruto fresco (verão, feira, praia) Suco e salada caseiros sem ultraprocessamento Cultura alimentar brasileira do melão-d'água Cultivo familiar em clima quente — trepadeira com espaço e polinização fruto órgão planta catálogo frutos"
     },
     {
       "title": "Mamão (Carica papaya L.)",
       "url": "/plantas/mamao/",
       "excerpt": "Fruto tropical cotidiano (*Carica papaya*): polpa doce, sementes e látex com papaína — a ficha separa o mamão inteiro dos néctares, polpas adoçadas e snacks industriais; elo UNIFESP (papaína em feridas).",
-      "text": "Mamão Carica papaya L. Caricaceae Fruto tropical cotidiano (*Carica papaya*): polpa doce, sementes e látex com papaína — a ficha separa o mamão inteiro dos néctares, polpas adoçadas e snacks industriais; elo UNIFESP (papaína em feridas). alimento frutos frutifera culinaria tropicais papaina unifesp cultivo-familiar Consumo do fruto fresco (café da manhã, sobremesa, suco caseiro) Culinária tropical e brasileira (saladas de fruta, doces caseiros) Papaína do látex citada em protocolos de feridas no SUS (contexto formativo UNIFESP) Cultivo familiar em clima quente — planta de crescimento rápido planta fitoterapia medicinal"
+      "text": "Mamão Carica papaya L. Caricaceae Fruto tropical cotidiano (*Carica papaya*): polpa doce, sementes e látex com papaína — a ficha separa o mamão inteiro dos néctares, polpas adoçadas e snacks industriais; elo UNIFESP (papaína em feridas). fruto alimento frutos frutifera culinaria tropicais papaina unifesp cultivo-familiar Consumo do fruto fresco (café da manhã, sobremesa, suco caseiro) Culinária tropical e brasileira (saladas de fruta, doces caseiros) Papaína do látex citada em protocolos de feridas no SUS (contexto formativo UNIFESP) Cultivo familiar em clima quente — planta de crescimento rápido fruto órgão planta catálogo frutos"
     },
     {
       "title": "Alecrim-do-campo (Baccharis dracunculifolia DC.)",
       "url": "/plantas/alecrim-do-campo/",
       "excerpt": "Arbusto nativo do Cerrado (*Baccharis dracunculifolia*) — alecrim dourado / vassourinha; fonte botânica da própolis verde (artepillina C). Não confundir com o alecrim de cozinha (*Salvia rosmarinus*).",
-      "text": "Alecrim-do-campo Baccharis dracunculifolia DC. Asteraceae Arbusto nativo do Cerrado (*Baccharis dracunculifolia*) — alecrim dourado / vassourinha; fonte botânica da própolis verde (artepillina C). Não confundir com o alecrim de cozinha (*Salvia rosmarinus*). nativa cerrado baccharis propolis cha aromatica asteraceae campo Infusão popular de folhas e flores (ofício cultural, não posologia clínica) Tradição digestiva, respiratória e de bochechos antissépticos Fonte botânica da própolis verde brasileira (*Apis mellifera*) Espécie pioneira em recuperação de áreas degradadas (contexto ecológico) planta fitoterapia medicinal"
+      "text": "Alecrim-do-campo Baccharis dracunculifolia DC. Asteraceae Arbusto nativo do Cerrado (*Baccharis dracunculifolia*) — alecrim dourado / vassourinha; fonte botânica da própolis verde (artepillina C). Não confundir com o alecrim de cozinha (*Salvia rosmarinus*). nativa cerrado baccharis propolis cha aromatica asteraceae campo Infusão popular de folhas e flores (ofício cultural, não posologia clínica) Tradição digestiva, respiratória e de bochechos antissépticos Fonte botânica da própolis verde brasileira (*Apis mellifera*) Espécie pioneira em recuperação de áreas degradadas (contexto ecológico) planta fitoterapia medicinal reino vegetal"
     },
     {
       "title": "Marolo (Annona crassiflora Mart.)",
       "url": "/plantas/marolo/",
       "excerpt": "Anonácea nativa do Cerrado (*Annona crassiflora*): marolo / araticum-do-cerrado — polpa cremosa, muitas sementes; a ficha separa o fruto inteiro de maracujá, mamão, pinha/ata e graviola, e dos néctares e doces industriais.",
-      "text": "Marolo Annona crassiflora Mart. Annonaceae Anonácea nativa do Cerrado (*Annona crassiflora*): marolo / araticum-do-cerrado — polpa cremosa, muitas sementes; a ficha separa o fruto inteiro de maracujá, mamão, pinha/ata e graviola, e dos néctares e doces industriais. alimento frutos frutifera culinaria cerrado nativas annonaceae araticum minas-gerais Consumo da polpa madura (feira, quintal, Cerrado / Minas Gerais) Doces e sucos caseiros sem ultraprocessamento Cultura alimentar do araticum / marolo no bioma Cerrado planta fitoterapia medicinal"
+      "text": "Marolo Annona crassiflora Mart. Annonaceae Anonácea nativa do Cerrado (*Annona crassiflora*): marolo / araticum-do-cerrado — polpa cremosa, muitas sementes; a ficha separa o fruto inteiro de maracujá, mamão, pinha/ata e graviola, e dos néctares e doces industriais. fruto alimento frutos frutifera culinaria cerrado nativas annonaceae araticum minas-gerais Consumo da polpa madura (feira, quintal, Cerrado / Minas Gerais) Doces e sucos caseiros sem ultraprocessamento Cultura alimentar do araticum / marolo no bioma Cerrado fruto órgão planta catálogo frutos"
     },
     {
       "title": "Galinha (Gallus gallus domesticus)",

@@ -299,7 +299,7 @@
     "plantas": {
       "label": "Plants",
       "tileLabel": "Plants",
-      "description": "Catalog of Brazilian herbal plants."
+      "description": "Catalog of Brazilian herbal plants — plant kingdom; fruit is another axis."
     },
     "animais": {
       "label": "Animals",
@@ -415,6 +415,11 @@
       "label": "Words",
       "tileLabel": "Words",
       "description": "Simple glossary of site titles and the inspected lexicon."
+    },
+    "frutos": {
+      "label": "Fruits",
+      "tileLabel": "Fruits",
+      "description": "Catalog of the fruit organ — not the kingdom. The plant lives under Plants. Fungi are another kingdom."
     }
   },
   "pages": {
@@ -548,7 +553,11 @@
       "cardVideosTip": "Inspections, tutorials and channel updates on YouTube.",
       "cardGamesTip": "Zangado and Paulinho o LOKO — games page only.",
       "cardRadioTip": "BudGanja Radio playlist.",
-      "cardGiveawaysTip": "Active and past lab giveaways."
+      "cardGiveawaysTip": "Active and past lab giveaways.",
+      "cardFrutosTitle": "Fruits",
+      "cardFrutosText": "The fruit organ — not the plant kingdom. Whole fruit vs industrial derivatives. A fungus is not a plant.",
+      "cardFrutosBtn": "Explore fruits",
+      "cardFrutosTip": "The fruit organ — not the plant kingdom. A fungus is not a plant."
     },
     "dev": {
       "badge": "Under construction",
@@ -560,7 +569,7 @@
     "plantas": {
       "eyebrow": "Catalog",
       "title": "Herbal plants",
-      "subtitle": "Educational sheets of species used in Brazilian folk medicine and phytotherapy — traditional uses, plant parts and editorial cautions.",
+      "subtitle": "Educational sheets of species used in Brazilian folk medicine and phytotherapy — the plant kingdom. Fruit is an organ (see Fruits). A fungus is not a plant.",
       "disclaimerStrong": "Educational notice.",
       "disclaimer": "Educational sheets on Brazilian herbal and medicinal plants. They do not replace professional health advice or legal counsel.",
       "searchLabel": "Search",
@@ -589,7 +598,9 @@
       "unifespBody": "This species is linked to the UNIFESP extension course track on medicinal cannabis.",
       "unifespHub": "UNIFESP hub",
       "unifespCourse": "Course inspection",
-      "plantsLink": "Plants"
+      "plantsLink": "Plants",
+      "relatedFruits": "Fruits catalog",
+      "relatedFungi": "Fungi"
     },
     "animais": {
       "eyebrow": "Catalog",
@@ -651,7 +662,8 @@
       "unifespBody": "This species is linked to the UNIFESP extension course track on medicinal cannabis (psychedelics lesson).",
       "unifespHub": "UNIFESP hub",
       "unifespCourse": "Course inspection",
-      "fungiLink": "Fungi"
+      "fungiLink": "Fungi",
+      "relatedFruits": "Fruits catalog"
     },
     "tecnologia": {
       "eyebrow": "Catalog",
@@ -1297,7 +1309,9 @@
       "cardGamesText": "GTA RP, Zangado and Paulinho o LOKO — a page just for them.",
       "cardCommunityTitle": "Live Feed",
       "cardCommunityText": "Community photos and notes — plant ID and shared research diary.",
-      "docTitle": "Library | Inspetor BudGanja"
+      "docTitle": "Library | Inspetor BudGanja",
+      "cardFrutosTitle": "Fruits",
+      "cardFrutosText": "The fruit organ — not the kingdom. Whole fruit vs industrial derivatives."
     },
     "guiaPalavras": {
       "eyebrow": "Library · Guides",
@@ -1431,6 +1445,37 @@
       "coverP1": "The cover of <em>Bom dia, Inverno</em> is seen from above: Tamara in yellow, the boat locked in the fjord, the right leg greeting winter. The drone takes the shot. The dark rectangle — the controller — is in the <a href=\"/posts/post-inspecao-palavra-mao-esquerda-direita.html\">left hand</a>.",
       "coverP2": "Solo overwintering. Nobody on the ice to take the portrait. She lifts the camera, looks at it, and the left thumb is still on the sticks. The photo keeps the craft: fly, stay, record.",
       "coverP3": "The drone that flies on this page is the same gesture. Tap it: it brings you here, to the hand that still steers the view from above."
+    },
+    "frutos": {
+      "eyebrow": "Catalog",
+      "title": "Fruits",
+      "subtitle": "Organ of the plant (Lat. fructus), not the kingdom. Whole-fruit sheets — distinct from the medicinal plant and from industrial derivatives. A fungus is not a plant.",
+      "disclaimerStrong": "Educational notice.",
+      "disclaimer": "Educational sheets of the fruit organ: whole fruit vs industrial derivatives. Fruit is not the kingdom — the plant lives in the Plants catalog. Fungi are another kingdom. They do not replace professional health advice or legal counsel.",
+      "searchLabel": "Search",
+      "searchPlaceholder": "Common name, scientific name or tag…",
+      "tagLabel": "Tag",
+      "allTags": "All tags",
+      "count": "{n} fruits",
+      "empty": "No fruits found.",
+      "docTitle": "Fruits | Inspetor BudGanja",
+      "breadcrumb": "Navigation",
+      "partsUsed": "Parts used",
+      "traditionalUses": "Traditional uses",
+      "cautions": "Cautions",
+      "relatedScience": "Inspected readings from the lab",
+      "continueLab": "Continue in the lab",
+      "openInspection": "Open this fruit’s inspection",
+      "cardInspection": "Inspected fruit",
+      "startDiary": "Start research in the diary",
+      "startDiaryHint": " — create or open this species’ diary",
+      "backCatalog": "Back to the fruits catalog",
+      "relatedCourse": "UNIFESP course",
+      "relatedInspections": "Fruit inspections",
+      "relatedTools": "Growing tools",
+      "relatedPlants": "Plants catalog",
+      "relatedFungi": "Fungi",
+      "plantsLink": "Fruits"
     }
   }
 }

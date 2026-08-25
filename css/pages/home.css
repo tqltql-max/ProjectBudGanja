@@ -666,6 +666,14 @@
     --card-label: #e8fff0;
 }
 
+:is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--frutos {
+    --card-accent: #f5c542;
+    --card-accent-soft: rgba(243, 156, 18, 0.16);
+    --card-accent-strong: rgba(230, 126, 34, 0.32);
+    --card-accent-border: rgba(241, 196, 15, 0.45);
+    --card-label: #fff8e1;
+}
+
 :is(body[data-page="home"], body[data-page="laboratorio"]) .home-card--fungos {
     --card-accent: #5ad2be;
     --card-accent-soft: rgba(90, 210, 190, 0.14);

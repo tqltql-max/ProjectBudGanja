@@ -32,7 +32,16 @@
               "icon": "🌿",
               "slug": "plantas",
               "featured": true,
-              "description": "Catálogo de plantas fitoterápicas do Brasil."
+              "description": "Catálogo de plantas fitoterápicas do Brasil — reino vegetal; o fruto é outro eixo."
+            },
+            {
+              "label": "Frutos",
+              "tileLabel": "Frutos",
+              "href": "/frutos/",
+              "icon": "🍊",
+              "slug": "frutos",
+              "featured": true,
+              "description": "Catálogo do órgão fruto — não é o reino; a planta fica em Plantas. Fungo é outro reino."
             },
             {
               "label": "Animais",
@@ -77,7 +86,7 @@
               "icon": "🎓",
               "slug": "unifesp",
               "featured": true,
-              "description": "Hub do XIV curso de extensão sobre cannabis medicinal."
+              "description": "Hub do XIV curso — caderno público de estudo e SIEX."
             },
             {
               "label": "Cadernos de Engenharia",
@@ -4710,6 +4719,38 @@
                   "icon": "🔍",
                   "slug": "post-inspecao-palavra-teologia",
                   "description": "Palavras: teologia (theós + lógos) — o nome do estudo do divino; gatilho TEologigiA; ≠ mitologia ≠ Deus ≠ púlpito; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Parkinson — Parkin + son (Pedro); ≠ parque ≠ party",
+                  "tileLabel": "Inspeção: Parkinson — Parkin + …",
+                  "href": "/posts/post-inspecao-palavra-parkinson.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-parkinson",
+                  "description": "Palavras: Parkinson = Parkin + -son (Pedro); cola PARK com parque de diversões e PAR com party recusada; epónimo facto, não centro; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Parque de diversões — recinto da festa escolhida; ≠ Parkinson",
+                  "tileLabel": "Inspeção: Parque de diversões —…",
+                  "href": "/posts/post-inspecao-palavra-parque-de-diversoes.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-parque-de-diversoes",
+                  "description": "Palavras: parque de diversões = parc/parricus + diversão (dīvertere); cola PARK com Parkinson recusada; party pode entrar, não é o recinto; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: Party — partie / partire; paRTY; ≠ Parkinson ≠ parque",
+                  "tileLabel": "Inspeção: Party — partie / part…",
+                  "href": "/posts/post-inspecao-palavra-party.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-party",
+                  "description": "Palavras: party ← partie ← partire; gatilho paRTY; cola PAR com Parkinson e park recusada; festa (festum) traduz, não herda; Valeu !!!"
+                },
+                {
+                  "label": "Inspeção: JSON — notação; PARK parqueia objectos; ≠ Jason ≠ Parkinson",
+                  "tileLabel": "Inspeção: JSON — notação; PARK …",
+                  "href": "/posts/post-inspecao-palavra-json.html",
+                  "icon": "🔍",
+                  "slug": "post-inspecao-palavra-json",
+                  "description": "Palavras: JSON = JavaScript Object Notation; relacionar PARK (recinto / to park); cola jay-son com Parkinson recusada; Valeu !!!"
                 },
                 {
                   "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

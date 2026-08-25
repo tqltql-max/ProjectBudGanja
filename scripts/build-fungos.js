@@ -145,7 +145,7 @@ ${cards}
 
         <p class="plantas-empty" id="fungos-empty" hidden data-i18n="pages.fungos.empty">Nenhum fungo corresponde aos filtros.</p>
 
-        <p class="plantas-related"><a href="/biblioteca/unifesp/" data-i18n="pages.fungos.relatedCourse">Curso UNIFESP</a> · <a href="/biblioteca/inspecoes/#inspecoes-fungos" data-i18n="pages.fungos.relatedInspections">Inspeções de fungos</a> · <a href="/plantas/" data-i18n="pages.fungos.relatedPlants">Catálogo de plantas</a></p>`;
+        <p class="plantas-related"><a href="/biblioteca/unifesp/" data-i18n="pages.fungos.relatedCourse">Curso UNIFESP</a> · <a href="/biblioteca/inspecoes/#inspecoes-fungos" data-i18n="pages.fungos.relatedInspections">Inspeções de fungos</a> · <a href="/plantas/" data-i18n="pages.fungos.relatedPlants">Catálogo de plantas</a> · <a href="/frutos/" data-i18n="pages.fungos.relatedFruits">Catálogo de frutos</a></p>`;
 
   return pageShell({
     title: 'Fungos | Inspetor BudGanja',
