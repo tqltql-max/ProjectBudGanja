@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T12:04:50.987Z",
+  "updatedAt": "2026-08-25T12:36:11.671Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -4771,6 +4771,31 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 89 — irmã leve de Gratidão."
+    },
+    {
+      "id": "palavra-variacao",
+      "title": "Variação — varius; é nois; Legal !!!",
+      "titleEn": "Variação — varius; é nois; Legal !!!",
+      "titleEs": "Variação — varius; é nois; Legal !!!",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: variação ← lat. varius — VRAIÇÃO × VAIRAÇÃO × VARIAÇAO; é nois; Legal !!! (bacana ≠ lei); Valeu !!!",
+      "whyEn": "Words: variação ← Lat. varius — field mouths; é nois; Legal !!! slang ≠ law.",
+      "whyEs": "Palabras: variação ← lat. varius — bocas de campo; é nois; Legal !!! bacán ≠ ley.",
+      "suggestedSlug": "inspecao-palavra-variacao",
+      "doneHref": "/posts/post-inspecao-palavra-variacao.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "/posts/post-inspecao-palavra-variacao.html",
+        "/posts/post-inspecao-palavra-legal.html",
+        "/posts/post-inspecao-palavra-valeu.html",
+        "https://pt.wiktionary.org/wiki/varia%C3%A7%C3%A3o",
+        "https://en.wiktionary.org/wiki/varius#Latin",
+        "/posts/post-inspecao-palavra-giria.html",
+        "/posts/post-inspecao-palavra-boa.html"
+      ],
+      "notes": "Cap. 347 — as bocas de campo são a variação encenada; Legal !!! = gíria."
     },
     {
       "id": "palavra-daninha",

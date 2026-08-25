@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T12:04:51.004Z",
+  "updatedAt": "2026-08-25T12:36:11.684Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -10326,6 +10326,32 @@
       "curiositiesEn": "Valeu !!! — and valeu. Automatic alteration: eu amo a vida (the renderer glues it).",
       "historyEs": "Valeu viene de valer (lat. valēre) — gratitud leve y cierre oral BR, hermana de Gratidão. El pretérito se volvió gesto de respeto.",
       "curiositiesEs": "Valeu !!! — y valeu. Alteración automática: eu amo a vida (el render la pega)."
+    },
+    {
+      "id": "variacao",
+      "word": "variação",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-variacao.html",
+      "simple": "Lat. varius / variātiō — mudar de forma sem deixar de ser a peça. Bocas VRAIÇÃO × VAIRAÇÃO × VARIAÇAO. É nois. Legal !!! = bacana, ≠ lei. Valeu !!!",
+      "simpleEn": "Lat. varius / variātiō — change form without leaving the piece. Mouths VRAIÇÃO × VAIRAÇÃO × VARIAÇAO. É nois. Legal !!! = cool, ≠ law. Valeu !!!",
+      "simpleEs": "Lat. varius / variātiō — cambiar de forma sin dejar la pieza. Bocas VRAIÇÃO × VAIRAÇÃO × VARIAÇAO. É nois. Legal !!! = bacán, ≠ ley. ¡Valeu !!!",
+      "history": "Pedido 2026-08-25: VRAIÇÃO É NOIS VAIRAÇÃO VALEU!!! · VARIAÇAO LEGAL!!!. Âncora variação; o campo encena o étimo.",
+      "curiosities": "Boa!!! já era variação quente de Valeu !!!. Aqui a palavra nomeia o ofício. É nois = é nós. Legal !!! neste pedido não é diploma.",
+      "historyEn": "Field 2026-08-25: VRAIÇÃO É NOIS VAIRAÇÃO VALEU!!! · VARIAÇAO LEGAL!!!. Anchor variação; the field stages the etymon.",
+      "curiositiesEn": "Boa!!! was already a warm variation of Valeu !!!. Here the word names the craft. É nois = it’s us. Legal !!! is not a statute here.",
+      "historyEs": "Pedido 2026-08-25: VRAIÇÃO É NOIS VAIRAÇÃO VALEU!!! · VARIAÇAO LEGAL!!!. Ancla variação; el campo representa el étimo.",
+      "curiositiesEs": "Boa!!! ya era variación cálida de Valeu !!!. Aquí la palabra nombra el oficio. É nois = somos nosotros. Legal !!! no es diploma aquí."
+    },
+    {
+      "id": "e-nois",
+      "word": "é nois",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-variacao.html",
+      "simple": "Gíria BR de é nós — pertença de grupo. Na ficha variação: a variação é nois. Valeu !!!",
+      "simpleEn": "BR slang for é nós — group belonging. On the variação sheet: the variation is us. Valeu !!!",
+      "simpleEs": "Jerga BR de é nós — pertenencia de grupo. En la ficha variação: la variación es nois. ¡Valeu !!!"
     },
     {
       "id": "quem-nao-arrisca-nao-petisca",

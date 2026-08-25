@@ -1,30 +1,6 @@
 {
-  "updatedAt": "2026-08-25T12:04:51.021Z",
+  "updatedAt": "2026-08-25T12:37:57.520Z",
   "poems": [
-    {
-      "id": "enter",
-      "slug": "enter",
-      "title": "Enter",
-      "titleEn": "Enter",
-      "titleEs": "Enter",
-      "author": "Laboratório BudGanja",
-      "authorEn": "BudGanja Lab",
-      "authorEs": "Laboratorio BudGanja",
-      "teaser": "Eco BudGanja — Enter confirma o passo; bem-vindos!!! recebe; ≠ EXIT; Valeu !!!",
-      "teaserEn": "BudGanja echo — Enter confirms the step; bem-vindos!!! receives; ≠ EXIT; Valeu !!!",
-      "teaserEs": "Eco BudGanja — Enter confirma el paso; ¡bem-vindos!!! recibe; ≠ EXIT; ¡Valeu !!!",
-      "body": "Enter.\nNão é só a tecla.\nÉ o gesto de ir para dentro.\n\nIntrāre:\natravessar o limiar.\nBem-vindos!!!\né a voz que recebe\nquem entrou.\n\nEnter sem saudação\né login frio.\nBem-vindos sem Enter\né cartaz sem porta.\n\nEXIT é a outra boca.\nBackspace corrige o rascunho.\nEnter confirma o passo.\n\nValeu !!!\nentrar de verdade\ne ouvir bem-vindos.",
-      "bodyEn": "Enter.\nNot only the key.\nIt is the gesture of going in.\n\nIntrāre:\ncross the threshold.\nBem-vindos!!!\nis the voice that receives\nthe one who entered.\n\nEnter without welcome\nis a cold login.\nWelcome without Enter\nis a poster without a door.\n\nEXIT is the other mouth.\nBackspace revises the draft.\nEnter confirms the step.\n\nValeu !!!\nenter in truth\nand hear bem-vindos.",
-      "bodyEs": "Enter.\nNo es solo la tecla.\nEs el gesto de ir adentro.\n\nIntrāre:\ncruzar el umbral.\n¡Bem-vindos!!!\nes la voz que recibe\na quien entró.\n\nEnter sin saludo\nes un login frío.\nBienvenida sin Enter\nes cartel sin puerta.\n\nEXIT es la otra boca.\nBackspace corrige el borrador.\nEnter confirma el paso.\n\n¡Valeu !!!\nentrar de verdad\ny oír bem-vindos.",
-      "inspectionHref": "/posts/post-inspecao-palavra-enter.html",
-      "tags": [
-        "poesia",
-        "vida",
-        "enter",
-        "bem-vindos",
-        "limiar"
-      ]
-    },
     {
       "id": "estrada-jesus-cristo",
       "slug": "estrada-jesus-cristo",
