@@ -276,7 +276,7 @@
     "videos": {
       "label": "Videos",
       "tileLabel": "Videos",
-      "description": "Lab channel, lectures from inspected partner channels, and outreach (Dr. Lair Ribeiro)."
+      "description": "Lab channel, lectures from inspected partner channels, and outreach (Lair, Davis, Dalle Laste)."
     },
     "videos-menu": {
       "label": "Videos",
@@ -734,7 +734,7 @@
     "videos": {
       "eyebrow": "YouTube channel",
       "title": "Videos",
-      "subtitle": "Watch here on the site — the lab channel, lectures from inspected partner channels, and outreach (Dr. Lair Ribeiro).",
+      "subtitle": "Watch here on the site — the lab channel, lectures from inspected partner channels, and outreach (Lair, Davis, Dalle Laste).",
       "loading": "Loading videos…",
       "loadMore": "Load more",
       "empty": "No videos available.",

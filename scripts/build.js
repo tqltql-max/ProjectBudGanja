@@ -148,6 +148,12 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('build:dallelaste', 'build-drsamueldallelaste-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:dallelaste:', e.message);
+  }
+
+  try {
     runStep('build:amyr', 'build-amyr-klink-catalog.js');
   } catch (e) {
     console.warn('Aviso build:amyr:', e.message);

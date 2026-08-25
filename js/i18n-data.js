@@ -1096,7 +1096,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "label": "Videos",
         "tileLabel": "Videos",
-        "description": "Lab channel, lectures from inspected partner channels, and outreach (Dr. Lair Ribeiro)."
+        "description": "Lab channel, lectures from inspected partner channels, and outreach (Lair, Davis, Dalle Laste)."
       },
       "videos-menu": {
         "label": "Videos",
@@ -1554,7 +1554,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "eyebrow": "YouTube channel",
         "title": "Videos",
-        "subtitle": "Watch here on the site — the lab channel, lectures from inspected partner channels, and outreach (Dr. Lair Ribeiro).",
+        "subtitle": "Watch here on the site — the lab channel, lectures from inspected partner channels, and outreach (Lair, Davis, Dalle Laste).",
         "loading": "Loading videos…",
         "loadMore": "Load more",
         "empty": "No videos available.",
@@ -2577,7 +2577,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "label": "Videos",
         "tileLabel": "Videos",
-        "description": "Canal del laboratorio, clases de los canales inspeccionados y divulgación (Dr. Lair Ribeiro)."
+        "description": "Canal del laboratorio, clases de los canales inspeccionados y divulgación (Lair, Davis, Dalle Laste)."
       },
       "videos-menu": {
         "label": "Videos",
@@ -3035,7 +3035,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "eyebrow": "Canal de YouTube",
         "title": "Videos",
-        "subtitle": "Míralos aquí en el sitio — canal del laboratorio, clases de los canales inspeccionados y divulgación (Dr. Lair Ribeiro).",
+        "subtitle": "Míralos aquí en el sitio — canal del laboratorio, clases de los canales inspeccionados y divulgación (Lair, Davis, Dalle Laste).",
         "loading": "Cargando videos…",
         "loadMore": "Cargar más",
         "empty": "Ningún video disponible.",
@@ -7428,7 +7428,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "label": "Vídeos",
         "tileLabel": "Vídeos",
-        "description": "Canal do laboratório, aulas dos canais inspecionados e divulgação (Dr. Lair Ribeiro)."
+        "description": "Canal do laboratório, aulas dos canais inspecionados e divulgação (Lair, Davis, Dalle Laste)."
       },
       "videos-menu": {
         "label": "Vídeos",
@@ -7884,7 +7884,7 @@ window.__I18N_LOCALES__ = {
       "videos": {
         "eyebrow": "Canal YouTube",
         "title": "Vídeos",
-        "subtitle": "Assista aqui no site — canal do laboratório, aulas dos canais inspecionados e divulgação (Dr. Lair Ribeiro).",
+        "subtitle": "Assista aqui no site — canal do laboratório, aulas dos canais inspecionados e divulgação (Lair, Davis, Dalle Laste).",
         "loading": "Carregando vídeos...",
         "loadMore": "Carregar mais",
         "empty": "Nenhum vídeo disponível.",

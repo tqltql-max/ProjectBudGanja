@@ -11813,6 +11813,12 @@ html:not([data-theme="dark"]) .header-group-divider {
     overflow: hidden;
 }
 
+.video-card.is-playing .video-card-summary {
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+}
+
 .video-card-date {
     font-size: 0.78rem;
     color: var(--color-text-soft);

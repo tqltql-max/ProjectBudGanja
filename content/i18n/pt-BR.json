@@ -281,7 +281,7 @@
     "videos": {
       "label": "Vídeos",
       "tileLabel": "Vídeos",
-      "description": "Canal do laboratório, aulas dos canais inspecionados e divulgação (Dr. Lair Ribeiro)."
+      "description": "Canal do laboratório, aulas dos canais inspecionados e divulgação (Lair, Davis, Dalle Laste)."
     },
     "videos-menu": {
       "label": "Vídeos",
@@ -737,7 +737,7 @@
     "videos": {
       "eyebrow": "Canal YouTube",
       "title": "Vídeos",
-      "subtitle": "Assista aqui no site — canal do laboratório, aulas dos canais inspecionados e divulgação (Dr. Lair Ribeiro).",
+      "subtitle": "Assista aqui no site — canal do laboratório, aulas dos canais inspecionados e divulgação (Lair, Davis, Dalle Laste).",
       "loading": "Carregando vídeos...",
       "loadMore": "Carregar mais",
       "empty": "Nenhum vídeo disponível.",
