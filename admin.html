@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
   <title>Painel Admin | Inspetor BudGanja</title>
-  <link rel="icon" href="/favicon.svg?v=209" type="image/svg+xml">
-  <link rel="stylesheet" href="/css/style.css?v=209">
+  <link rel="icon" href="/favicon.svg?v=210" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css?v=210">
   <script>(function(){var t=localStorage.getItem('budganja-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
   <style>
     .admin-charts-row { display:flex; gap:12px; flex-wrap:wrap; margin:0 0 20px; }
@@ -70,7 +70,7 @@
       </div>
 
       <p class="admin-toolbar-hint">Atalho: <kbd>Ctrl</kbd> + <kbd>N</kbd> para nova publicação</p>
-      <p class="admin-generated-posts-note result-muted">Inspeções do <strong>Guia de Cultivo</strong>, do canal <strong>Jardim HG</strong> e similares são geradas em <code>lib/*-inspecoes-posts.js</code> no build — não aparecem aqui; edite o ficheiro fonte e rode <code>npm run build</code>.</p>
+      <p class="admin-generated-posts-note result-muted">Inspeções (Guia de Cultivo, canais e as que criar aqui) aparecem neste painel. <strong>Não são públicas</strong> — só o administrador as vê, no painel e na biblioteca de inspeções após login.</p>
 
       <div id="posts-table-wrap" class="admin-studio-table-wrap">
         <div id="posts-table" class="admin-studio-table" role="table" aria-label="Suas publicações"></div>
@@ -118,6 +118,7 @@
                 Publicar no site
               </label>
             </div>
+            <p id="inspecao-public-hint" class="field-hint" hidden>Inspeções ficam só no painel do administrador — mesmo “publicadas”, não aparecem no site público.</p>
 
             <details class="admin-video admin-video--primary">
               <summary>Inserir vídeo do YouTube</summary>
@@ -209,15 +210,15 @@
 
   </main>
   <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=209"></script>
-  <script src="/js/ferramentas-nav-data.js?v=209"></script>
-  <script src="/js/i18n-data.js?v=209"></script>
-  <script src="/js/i18n.js?v=209"></script>
-  <script src="/js/layout.js?v=209"></script>
-  <script src="/js/youtube.js?v=209"></script>
-  <script src="/js/markdown.js?v=209"></script>
-  <script src="/js/admin-charts.js?v=209"></script>
-  <script src="/js/admin.js?v=209"></script>
-  <script src="/js/admin-command-palette.js?v=209"></script>
+  <script src="/js/app-version-check.js?v=210"></script>
+  <script src="/js/ferramentas-nav-data.js?v=210"></script>
+  <script src="/js/i18n-data.js?v=210"></script>
+  <script src="/js/i18n.js?v=210"></script>
+  <script src="/js/layout.js?v=210"></script>
+  <script src="/js/youtube.js?v=210"></script>
+  <script src="/js/markdown.js?v=210"></script>
+  <script src="/js/admin-charts.js?v=210"></script>
+  <script src="/js/admin.js?v=210"></script>
+  <script src="/js/admin-command-palette.js?v=210"></script>
 </body>
 </html>

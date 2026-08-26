@@ -8,6 +8,7 @@
 const { mergeGuiaInspecoesPosts, sortPublicPosts, GUIA_INSPECOES_POSTS } = require('../lib/merge-guia-inspecoes.js');
 const { CHANNEL_INSPECOES_POSTS } = require('../lib/channel-inspecoes-posts.js');
 const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registry.js');
+const { getPublicPosts } = require('../lib/posts-service.js');
 const { ROOT } = require('../lib/paths.js');
 
 let passed = 0;
@@ -60,9 +61,12 @@ assert('guia #1 tem excerpt EN', !!sample.excerptEn);
 const { publishStaticAssets } = require('../lib/publish-static.js');
 publishStaticAssets(ROOT);
 const feed = JSON.parse(require('fs').readFileSync(require('path').join(ROOT, 'posts-public.json'), 'utf8'));
-const guiaFeed = feed.find((p) => p.slug === 'inspecao-cultivo-inicio');
-assert('posts-public tem series', guiaFeed && guiaFeed.series === 'guia-cultivo-basico');
+assert('posts-public sem inspeções', feed.every((p) => p.category !== 'inspecao'));
 assert('posts-public coverImage absoluto', !feed.some((p) => p.coverImage && !p.coverImage.startsWith('/') && !/^https?:/i.test(p.coverImage)));
+
+const publicList = getPublicPosts(merged);
+assert('getPublicPosts exclui inspeções', publicList.every((p) => p.category !== 'inspecao'));
+assert('getPublicPosts inspecao vazio', getPublicPosts(merged, 'inspecao').length === 0);
 
 assert('calculadoras registry', CALCULADORAS.length === 3);
 const cultivoLab = CALCULADORAS.find((c) => c.slug === 'cultivo-lab');

@@ -13,6 +13,14 @@ const TIMEOUT = 8000;
 
 const PROTECTED_PAGES = new Set(['admin.html', 'pesquisas-admin.html', 'usuarios-admin.html', 'sorteios-admin.html', 'loja-admin.html']);
 const DEV_MODE_PUBLIC_PAGES = new Set(['login.html', 'em-desenvolvimento.html']);
+
+function isProtectedPage(file) {
+  const normalized = String(file || '').replace(/\\/g, '/');
+  if (PROTECTED_PAGES.has(normalized)) return true;
+  if (normalized === 'biblioteca/inspecoes/index.html' || normalized === 'guia/cultivo-basico.html') return true;
+  if (/^posts\/post-inspecao-.*\.html$/i.test(normalized)) return true;
+  return false;
+}
 const DEV_MODE = isDevModeEnabled();
 const API_ROUTES = ['/api/me', '/api/site', '/api/posts', '/api/sorteio', '/api/guia-cultivo', '/api/youtube-feed', '/api/loja/encomendas'];
 
@@ -140,7 +148,7 @@ async function main() {
     try {
       const res = await fetchUrl(urlPath);
       const allowed = res.status === 200
-        || (PROTECTED_PAGES.has(file) && (res.status === 302 || res.status === 401))
+        || (isProtectedPage(file) && (res.status === 302 || res.status === 401))
         || (DEV_MODE && res.status === 503 && !DEV_MODE_PUBLIC_PAGES.has(file));
       if (!allowed) {
         issues.push({ kind: 'http', severity: 'error', message: `${urlPath} → HTTP ${res.status}` });
@@ -164,7 +172,7 @@ async function main() {
         });
       }
 
-      if (!res.body.includes('id="site-header"') && !PROTECTED_PAGES.has(file) && file !== 'login.html' && file !== 'em-desenvolvimento.html') {
+      if (!res.body.includes('id="site-header"') && !isProtectedPage(file) && file !== 'login.html' && file !== 'em-desenvolvimento.html') {
         issues.push({ kind: 'layout', severity: 'warn', message: `${file} não usa #site-header` });
       }
     } catch (e) {

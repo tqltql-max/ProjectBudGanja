@@ -19,7 +19,7 @@ exports.handler = async (event) => {
 
   const posts = normalizePosts(await store.getPosts());
   const post = posts.find((p) => p.slug === slug);
-  if (!post || post.published === false) {
+  if (!post || post.published === false || post.category === 'inspecao') {
     return { statusCode: 404, headers: { 'Content-Type': 'text/plain' }, body: '404 Not Found' };
   }
 

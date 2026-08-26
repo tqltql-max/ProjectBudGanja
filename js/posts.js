@@ -185,6 +185,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var filterEl = config.seriesFilter ? document.querySelector(config.seriesFilter) : null;
 
   loadPostsFromApi(config.category)
+    .then(function (posts) { return filterByCategory(posts, config.category); })
     .catch(function () { return loadPostsFromStaticFile(config.category); })
     .then(function (posts) {
       if (filterEl) initInspecoesSeriesFilter(filterEl, container, posts);
