@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '211';
+const ASSET_V = '212';
 
 function isAdminOnlyHref(href) {
   const h = String(href || '').split('?')[0].split('#')[0].toLowerCase();
