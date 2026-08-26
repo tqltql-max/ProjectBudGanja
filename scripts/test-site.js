@@ -252,10 +252,12 @@ async function main() {
     });
     if (indexRes.status !== 200) {
       issues.push({ kind: 'home', severity: 'error', message: `/ → HTTP ${indexRes.status} (Index tem de ser 200, sem redirect)` });
-    } else if (!indexRes.body.includes('home-launch') || !indexRes.body.includes('data-page="home"')) {
-      issues.push({ kind: 'home', severity: 'error', message: '/ não serviu o Index (home-launch)' });
-    } else if (/location\.replace\(['"]\/inverno\//.test(indexRes.body) || /url=\/inverno\//.test(indexRes.body)) {
+    } else if (!indexRes.body.includes('data-page="home"') || !indexRes.body.includes('Início | Inspetor BudGanja')) {
+      issues.push({ kind: 'home', severity: 'error', message: '/ não serviu o Index' });
+    } else if (/location\.replace\(['"]\/inverno\//.test(indexRes.body) || /http-equiv="refresh"[^>]*url=\/inverno\//.test(indexRes.body)) {
       issues.push({ kind: 'home', severity: 'error', message: '/ ainda redirecciona o cliente para /inverno/' });
+    } else if (!indexRes.body.includes('O laboratório') || !indexRes.body.includes('home-cards')) {
+      issues.push({ kind: 'home', severity: 'error', message: '/ não tem a Index clássica (O laboratório)' });
     } else {
       ok.push('/ é o Index, sem redirect para /inverno/');
     }

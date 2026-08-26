@@ -1244,9 +1244,9 @@ window.__I18N_LOCALES__ = {
     },
     "pages": {
       "home": {
-        "heroEyebrow": "Growing tool",
+        "heroEyebrow": "Brazilian phytotherapy · education and responsible growing",
         "heroTitle": "Inspetor BudGanja",
-        "heroSubtitle": "Guides and a grow diary.",
+        "heroSubtitle": "Inspection lab.",
         "functionsTitle": "Growing tool",
         "functionsLead": "Video guide and research diary. Learn, log, follow the grow.",
         "guidesKicker": "Guides",
@@ -2753,9 +2753,9 @@ window.__I18N_LOCALES__ = {
     },
     "pages": {
       "home": {
-        "heroEyebrow": "Herramienta de cultivo",
+        "heroEyebrow": "Fitoterapia brasileña · educación y cultivo responsable",
         "heroTitle": "Inspetor BudGanja",
-        "heroSubtitle": "Guías y diario de cultivo.",
+        "heroSubtitle": "Laboratorio de inspección.",
         "functionsTitle": "Herramienta de cultivo",
         "functionsLead": "Guía en vídeo y diario de investigaciones. Aprende, registra, sigue el cultivo.",
         "guidesKicker": "Guías",
@@ -7627,9 +7627,9 @@ window.__I18N_LOCALES__ = {
     },
     "pages": {
       "home": {
-        "heroEyebrow": "Ferramenta de cultivo",
+        "heroEyebrow": "Fitoterapia brasileira · educação e cultivo responsável",
         "heroTitle": "Inspetor BudGanja",
-        "heroSubtitle": "Guias e diário de pesquisas.",
+        "heroSubtitle": "Laboratório de inspeção.",
         "functionsTitle": "Ferramenta de cultivo",
         "functionsLead": "Guia em vídeo e diário de pesquisas. Aprenda, registe, acompanhe o cultivo.",
         "guidesKicker": "Guias",

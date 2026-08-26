@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ferramenta de cultivo do Inspetor BudGanja — guias em vídeo e diário de pesquisas para documentar o cultivo.">
-    <meta property="og:title" content="Ferramenta de cultivo | Inspetor BudGanja">
-    <meta property="og:description" content="Abra o guia de cultivo ou crie um diário novo.">
+    <meta name="description" content="Laboratório de inspeção. Plantas, ofício e cultura, com método.">
+    <meta property="og:title" content="Inspetor BudGanja">
+    <meta property="og:description" content="Inspetor BudGanja — laboratório de inspeção. Plantas, ofício e cultura.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://inspetorbudganja.com.br/">
     <meta property="og:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
@@ -14,8 +14,8 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ferramenta de cultivo | Inspetor BudGanja">
-    <meta name="twitter:description" content="Abra o guia de cultivo ou crie um diário novo.">
+    <meta name="twitter:title" content="Inspetor BudGanja">
+    <meta name="twitter:description" content="Inspetor BudGanja — laboratório de inspeção. Plantas, ofício e cultura.">
     <meta name="twitter:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
     <link rel="canonical" href="https://inspetorbudganja.com.br/">
 
@@ -32,105 +32,169 @@
     <link rel="manifest" href="/manifest.json?v=355">
     <meta name="theme-color" content="#0a2230">
     <link rel="stylesheet" href="/css/style.css?v=356">
-    <title>Ferramenta de cultivo | Inspetor BudGanja</title>
+    <link rel="preload" as="image" href="/imagens/inspecoes/bom-dia-inverno-cover.jpg" fetchpriority="high">
+    <title>Início | Inspetor BudGanja</title>
 </head>
 <body data-page="home">
     <div id="site-header"></div>
 
-    <main id="main-content" class="home-launch">
-        <section class="home-launch-hero" aria-labelledby="home-title">
-            <p class="home-launch-eyebrow" data-i18n="pages.home.heroEyebrow">Ferramenta de cultivo</p>
-            <h1 id="home-title" data-i18n="pages.home.heroTitle">Inspetor BudGanja</h1>
-            <p class="home-launch-lead" data-i18n="pages.home.functionsLead">Guia em vídeo e diário de pesquisas. Aprenda, registe, acompanhe o cultivo.</p>
-        </section>
-
-        <section class="home-launch-actions" aria-labelledby="home-functions-title">
-            <h2 id="home-functions-title" class="visually-hidden" data-i18n="pages.home.functionsTitle">Ferramenta de cultivo</h2>
-            <a class="home-launch-card" href="/videos/?topic=cultivo">
-                <span class="home-launch-kicker" data-i18n="pages.home.guidesKicker">Guias</span>
-                <strong data-i18n="pages.home.cardGuiaTitle">Guia de Cultivo Básico</strong>
-                <span data-i18n="pages.home.cardGuiaText">Trilha em vídeo do canal @InspetorBudGanja — do solo à floração, passo a passo.</span>
-            </a>
-            <a class="home-launch-card home-launch-card--primary" href="/cultivo/?view=novo">
-                <span class="home-launch-kicker" data-i18n="pages.home.newDiaryKicker">Diário</span>
-                <strong data-i18n="pages.home.newDiaryTitle">Novo diário de cultivo</strong>
-                <span data-i18n="pages.home.newDiaryText">Crie um diário: observações, roteiro por fase e plano.</span>
-            </a>
-        </section>
-        <p class="home-launch-note">
-            <a href="/cultivo/" data-i18n="pages.home.myDiariesLink">Abrir os meus diários</a>
-        </p>
-
-        <section class="home-launch-guides" aria-labelledby="home-guides-title">
-            <header class="home-launch-head">
-                <h2 id="home-guides-title" data-i18n="pages.home.guidesTitle">Guias de cultivo</h2>
-                <p data-i18n="pages.home.guidesLead">Trilha em vídeo — toque num capítulo.</p>
-            </header>
-            <ol id="home-guia-chapters" class="home-guia-list">
-                <li class="home-guia-item home-guia-item--loading">
-                    <p class="empty-message" data-i18n="pages.home.guidesLoading">A carregar guias…</p>
-                </li>
-            </ol>
-        </section>
-
-        <section class="home-launch-more" aria-labelledby="home-more-title">
-            <header class="home-launch-head">
-                <h2 id="home-more-title" data-i18n="pages.home.moreTitle">Mais funções</h2>
-            </header>
-            <nav class="home-fn-grid" aria-label="Ferramentas de cultivo">
-                <a href="/cultivo/" class="home-fn-link">
-                    <strong data-i18n="pages.home.cardCultivoTitle">Diário de Pesquisas</strong>
-                    <span data-i18n="pages.home.cardCultivoBtn">Abrir diário</span>
-                </a>
-                <a href="/plantas/" class="home-fn-link">
-                    <strong data-i18n="pages.home.cardPlantasTitle">Plantas fitoterápicas</strong>
-                    <span data-i18n="pages.home.cardPlantasBtn">Explorar plantas</span>
-                </a>
-                <a href="/calculadoras/" class="home-fn-link">
-                    <strong data-i18n="pages.home.cardCalcTitle">Ferramentas</strong>
-                    <span data-i18n="pages.home.cardCalcBtn">Ver Ferramentas</span>
-                </a>
-                <a href="/planejamento/" class="home-fn-link">
-                    <strong data-i18n="pages.home.cardPlanTitle">Planejamento</strong>
-                    <span data-i18n="pages.home.cardPlanBtn">Montar lista</span>
-                </a>
-                <a href="/comunidade/" class="home-fn-link">
-                    <strong data-i18n="pages.home.cardCommunityTitle">Comunidade</strong>
-                    <span data-i18n="pages.home.cardCommunityBtn">Abrir comunidade</span>
-                </a>
-                <a href="/jogos/" class="home-fn-link">
-                    <strong data-i18n="pages.home.cardGamesTitle">Jogos</strong>
-                    <span data-i18n="pages.home.cardGamesBtn">Abrir jogos</span>
-                </a>
-                <a href="/laboratorio/" class="home-fn-link">
-                    <strong data-i18n="pages.home.labMapTitle">Mapa do laboratório</strong>
-                    <span data-i18n="pages.home.labMapBtn">Ver todas as salas</span>
-                </a>
-            </nav>
-        </section>
-
-        <section id="home-sorteio-banner" class="home-announcement home-launch-sorteio" hidden>
-            <div class="home-announcement-inner">
-                <div class="home-announcement-copy">
-                    <p class="home-announcement-badge" data-i18n="pages.home.giveawayBadge">🎁 Sorteio ativo</p>
-                    <h2 id="home-sorteio-title" data-i18n="pages.home.giveawayTitle">Sorteio do laboratório</h2>
-                    <p id="home-sorteio-prize" class="home-announcement-prize"></p>
-                    <p id="home-sorteio-date" class="home-announcement-date"></p>
-                </div>
-                <a href="/sorteios/" class="botao botao-home" data-i18n="pages.home.giveawayJoin">Participar agora</a>
+    <main id="main-content">
+    <div class="lab-atmosphere" aria-hidden="true"></div>
+    <section class="hero hero--inverno">
+        <a class="hero-cover-link" href="/inverno/">
+            <img
+                class="hero-cover"
+                src="/imagens/inspecoes/bom-dia-inverno-cover.jpg"
+                alt="Bom dia, Inverno — Tamara Klink"
+                width="1200"
+                height="630"
+                decoding="async"
+                fetchpriority="high">
+        </a>
+        <div class="hero-content">
+            <p class="hero-eyebrow" data-i18n="pages.home.heroEyebrow">Fitoterapia brasileira · educação e cultivo responsável</p>
+            <h1 class="hero-title" data-i18n="pages.home.heroTitle">Inspetor BudGanja</h1>
+            <p class="hero-subtitle" data-i18n="pages.home.heroSubtitle">Laboratório de inspeção.</p>
+            <div class="hero-actions">
+                <a href="/inverno/" class="botao botao-home" data-i18n="pages.home.promoJoin">Bom dia, Inverno</a>
+                <a href="/jogos/" class="botao botao-home botao-home--secondary" data-i18n="pages.home.cardGamesBtn">Abrir jogos</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="home-latest home-latest--compact">
+    <section id="home-sorteio-banner" class="home-announcement" hidden>
+        <div class="conteudo home-announcement-inner">
+            <div class="home-announcement-copy">
+                <p class="home-announcement-badge" data-i18n="pages.home.giveawayBadge">🎁 Sorteio ativo</p>
+                <h2 id="home-sorteio-title" data-i18n="pages.home.giveawayTitle">Sorteio do laboratório</h2>
+                <p id="home-sorteio-prize" class="home-announcement-prize"></p>
+                <p id="home-sorteio-date" class="home-announcement-date"></p>
+            </div>
+            <a href="/sorteios/" class="botao botao-home" data-i18n="pages.home.giveawayJoin">Participar agora</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="conteudo conteudo-wide">
+            <header class="features-head">
+                <h2 class="features-title" data-i18n="pages.home.areasTitle">O laboratório</h2>
+                <p class="section-subtitle features-subtitle" data-i18n="pages.home.areasSubtitle">Estudo, cultivo e o jeito de olhar.</p>
+            </header>
+            <div class="container-cards home-cards">
+                <article class="card home-card home-card--videos has-hover-tip" data-tip="Inspeções, tutoriais e novidades do canal no YouTube." data-i18n-tip="pages.home.cardVideosTip">
+                    <div class="card-icon card-icon--videos" aria-hidden="true">▶</div>
+                    <h3 data-i18n="pages.home.cardVideosTitle">Vídeos</h3>
+                    <p data-i18n="pages.home.cardVideosText">Conteúdo do canal @InspetorBudGanja — inspeções, tutoriais e novidades do laboratório.</p>
+                    <a href="/videos/" class="botao botao-home" data-i18n="pages.home.cardVideosBtn">Ver vídeos</a>
+                </article>
+                <article class="card home-card home-card--games has-hover-tip" data-tip="Zangado e Paulinho o LOKO — página só de jogos." data-i18n-tip="pages.home.cardGamesTip">
+                    <div class="card-icon card-icon--games" aria-hidden="true">🎮</div>
+                    <h3 data-i18n="pages.home.cardGamesTitle">Jogos</h3>
+                    <p data-i18n="pages.home.cardGamesText">GTA RP, Zangado e Paulinho o LOKO — catálogos na página de jogos, separados dos vídeos do laboratório.</p>
+                    <a href="/jogos/" class="botao botao-home" data-i18n="pages.home.cardGamesBtn">Abrir jogos</a>
+                </article>
+                <article class="card home-card home-card--biblioteca has-hover-tip" data-auth-only hidden data-tip="Inspeções, UNIFESP, guias, pesquisas, plantas e animais." data-i18n-tip="pages.home.cardBibliotecaTip">
+                    <div class="card-icon card-icon--biblioteca" aria-hidden="true">📚</div>
+                    <h3 data-i18n="pages.home.cardBibliotecaTitle">Biblioteca</h3>
+                    <p data-i18n="pages.home.cardBibliotecaText">Acervo do laboratório — inspeções, curso UNIFESP, Guia de Palavras, pesquisas e catálogos.</p>
+                    <a href="/biblioteca/" class="botao botao-home" data-i18n="pages.home.cardBibliotecaBtn">Abrir biblioteca</a>
+                </article>
+                <article class="card home-card home-card--inspecoes has-hover-tip" data-tip="Relatórios de inspeção, verificações de campo e formação." data-i18n-tip="pages.home.cardInspectionsTip">
+                    <div class="card-icon card-icon--inspecoes" aria-hidden="true">🔍</div>
+                    <h3 data-i18n="pages.home.cardInspectionsTitle">Inspeções</h3>
+                    <p data-i18n="pages.home.cardInspectionsText">Relatórios técnicos com método verificável — guia, canais, equipamentos e cursos.</p>
+                    <a href="/biblioteca/inspecoes/" class="botao botao-home" data-i18n="pages.home.cardInspectionsBtn">Ver Inspeções</a>
+                </article>
+                <article class="card home-card home-card--plantas has-hover-tip" data-tip="Fichas de espécies usadas na medicina popular brasileira." data-i18n-tip="pages.home.cardPlantasTip">
+                    <div class="card-icon card-icon--plantas" aria-hidden="true">🌿</div>
+                    <h3 data-i18n="pages.home.cardPlantasTitle">Plantas fitoterápicas</h3>
+                    <p data-i18n="pages.home.cardPlantasText">Fichas curadas de espécies usadas na medicina popular brasileira — usos tradicionais, partes usadas e cuidados editoriais.</p>
+                    <a href="/plantas/" class="botao botao-home" data-i18n="pages.home.cardPlantasBtn">Explorar plantas</a>
+                </article>
+                <article class="card home-card home-card--pesquisas has-hover-tip" data-tip="Pesquisas do laboratório e estudos submetidos pela comunidade e aprovados para publicação." data-i18n-tip="pages.home.cardResearchTip">
+                    <div class="card-icon card-icon--pesquisas" aria-hidden="true">🔬</div>
+                    <h3 data-i18n="pages.home.cardResearchTitle">Pesquisas</h3>
+                    <p data-i18n="pages.home.cardResearchText">Pesquisas do laboratório e estudos submetidos pela comunidade e aprovados para publicação.</p>
+                    <a href="/biblioteca/pesquisas/" class="botao botao-home" data-i18n="pages.home.cardResearchBtn">Ver pesquisas</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-latest home-latest--compact">
+        <div class="conteudo conteudo-wide">
             <div class="home-latest-head">
                 <h2 data-i18n="pages.home.latestTitle">Últimas do laboratório</h2>
+                <p class="home-latest-nav">
+                    <a href="/biblioteca/" data-auth-only hidden data-i18n="pages.home.latestBiblioteca">Biblioteca →</a>
+                    <span data-auth-only hidden aria-hidden="true">·</span>
+                    <a href="/plantas/" data-i18n="pages.home.latestPlantas">Plantas →</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="/biblioteca/unifesp/" data-i18n="pages.home.latestUnifesp">UNIFESP →</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="/biblioteca/inspecoes/" data-i18n="pages.home.latestInspections">Inspeções →</a>
+                </p>
             </div>
             <ul id="home-latest-posts" class="home-latest-list">
                 <li class="home-latest-item home-latest-item--loading">
                     <p class="empty-message" data-i18n="pages.home.latestLoading">Carregando…</p>
                 </li>
             </ul>
-        </section>
+        </div>
+    </section>
+
+    <section class="home-channels home-vida" aria-label="Vida — trilha familiar">
+        <div class="conteudo conteudo-wide">
+            <header class="home-channels-head home-vida-head">
+                <p class="home-pillar-eyebrow" data-i18n="pages.home.vidaEyebrow">Trilha familiar</p>
+                <h2 data-i18n="pages.home.vidaTitle">Vida</h2>
+                <p class="section-subtitle" data-i18n="pages.home.vidaSubtitle">Cada semente merece carinho — ciência, natureza e amizade no Laboratório BudGanja.</p>
+            </header>
+            <div class="home-channels-grid home-vida-grid">
+                <article class="home-channel home-vida-card">
+                    <a class="home-vida-cover" href="/vida/" aria-label="Abrir Vida">
+                        <img
+                            src="/imagens/vida/equipe.jpg"
+                            alt="Equipe Vida — Dona Maria, Joaninha, Inspetor BudGanja e Three Little Birds"
+                            width="1600"
+                            height="630"
+                            loading="lazy"
+                            decoding="async">
+                    </a>
+                    <p class="home-pillar-eyebrow" data-i18n="pages.home.vidaCardEyebrow">Conto familiar</p>
+                    <h3 data-i18n="pages.home.vidaCardTitle">O Laboratório e a Sementinha</h3>
+                    <p data-i18n="pages.home.vidaCardText">O Inspetor, a Dona Maria, a Joaninha Joana e os Three Little Birds ensinam o jeito certo de cuidar das plantas.</p>
+                    <div class="home-pillar-actions">
+                        <a href="/vida/" class="botao botao-home" data-i18n="pages.home.vidaCtaHub">Começar Vida</a>
+                        <a href="/posts/post-inspecao-conto-vida-laboratorio.html" class="botao botao-home botao-home--secondary" data-i18n="pages.home.vidaCtaStory">Ler a história</a>
+                    </div>
+                </article>
+                <article class="home-channel home-vida-video">
+                    <div class="video-embed home-channel-embed yt-facade-skip home-vida-embed">
+                        <button
+                            type="button"
+                            class="yt-facade home-vida-yt-play"
+                            data-youtube-id="HNBCVM4KbUM"
+                            data-youtube-title="Bob Marley &amp; The Wailers — Three Little Birds"
+                            aria-label="Play: Three Little Birds">
+                            <img
+                                class="yt-facade-thumb"
+                                src="https://i.ytimg.com/vi/HNBCVM4KbUM/hqdefault.jpg"
+                                alt=""
+                                width="480"
+                                height="360"
+                                decoding="async"
+                                loading="lazy">
+                            <span class="video-card-play" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <p class="home-pillar-eyebrow" data-i18n="pages.home.vidaVideoEyebrow">Trilha da inauguração</p>
+                    <h3 data-i18n="pages.home.vidaVideoTitle">Three Little Birds</h3>
+                    <p data-i18n="pages.home.vidaVideoText">A música dos pássaros do laboratório — toque play e ouça com som.</p>
+                </article>
+            </div>
+        </div>
+    </section>
     </main>
 
     <div id="site-footer"></div>
@@ -142,5 +206,6 @@
     <script src="/js/layout.js?v=356"></script>
     <script src="/js/site-features.js?v=355"></script>
     <script src="/js/home.js?v=356"></script>
+
 </body>
 </html>
