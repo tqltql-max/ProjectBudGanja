@@ -1,6 +1,55 @@
 {
-  "updatedAt": "2026-08-25T12:37:57.520Z",
+  "updatedAt": "2026-08-26T08:50:28.697Z",
   "poems": [
+    {
+      "id": "internet",
+      "slug": "internet",
+      "title": "Internet",
+      "titleEn": "Internet",
+      "titleEs": "Internet",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — inter- + net; Intenet cai o r; ≠ WWW ≠ discada; Valeu !!!",
+      "teaserEn": "BudGanja echo — inter- + net; Intenet drops the r; ≠ WWW ≠ dial-up; Valeu !!!",
+      "teaserEs": "Eco BudGanja — inter- + net; Intenet pierde la r; ≠ WWW ≠ discada; ¡Valeu !!!",
+      "body": "Internet.\nNão é Intenet.\n\nA boca come o r\nde inter-.\nO étimo devolve:\nentre redes.\n\nNão é a discada.\nNão é o login.\nNão é a teia WWW.\nÉ o mapa no meio.\n\nValeu !!!\no cano é meio;\na Internet é o entre.",
+      "bodyEn": "Internet.\nNot Intenet.\n\nThe mouth drops the r\nof inter-.\nThe etymon gives it back:\nbetween networks.\n\nNot dial-up.\nNot the login.\nNot the WWW web.\nIt is the map in the middle.\n\nValeu !!!\nthe pipe is a medium;\nthe Internet is the between.",
+      "bodyEs": "Internet.\nNo es Intenet.\n\nLa boca se come la r\nde inter-.\nEl étimo la devuelve:\nentre redes.\n\nNo es la discada.\nNo es el login.\nNo es la telaraña WWW.\nEs el mapa en el medio.\n\n¡Valeu !!!\nel caño es medio;\nla Internet es el entre.",
+      "inspectionHref": "/posts/post-inspecao-palavra-internet.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "internet",
+        "intenet",
+        "rede",
+        "palavra"
+      ]
+    },
+    {
+      "id": "pessoas",
+      "slug": "pessoas",
+      "title": "Pessoas",
+      "titleEn": "Pessoas",
+      "titleEs": "Pessoas",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — persōna, máscara → alguém; o vocábulo, não o hub; Valeu !!!",
+      "teaserEn": "BudGanja echo — persōna, mask → someone; the vocable, not the hub; Valeu !!!",
+      "teaserEs": "Eco BudGanja — persōna, máscara → alguien; el vocablo, no el hub; ¡Valeu !!!",
+      "body": "Pessoas.\nNão é a conjugação.\nNão é o hub.\n\nPersōna era a máscara\nno palco — o papel que se põe.\nDepois virou quem vive:\na pessoa humana.\n\nA série guarda biografias.\nEsta ficha guarda o nome.\nHeródoto abre a porta.\nA palavra não é a lista.\n\nValeu !!!\nquem vive,\nsem fundir o verbo com o rosto.",
+      "bodyEn": "Pessoas.\nNot the conjugation.\nNot the hub.\n\nPersōna was the mask\non stage — the role you put on.\nThen it became who lives:\nthe human person.\n\nThe series keeps biographies.\nThis sheet keeps the name.\nHerodotus opens the door.\nThe word is not the list.\n\nValeu !!!\nwho lives,\nwithout fusing the verb with the face.",
+      "bodyEs": "Pessoas.\nNo es la conjugación.\nNo es el hub.\n\nPersōna era la máscara\nen el palco — el papel que se pone.\nDespués viró quien vive:\nla persona humana.\n\nLa serie guarda biografías.\nEsta ficha guarda el nombre.\nHeródoto abre la puerta.\nLa palabra no es la lista.\n\n¡Valeu !!!\nquien vive,\nsin fundir el verbo con el rostro.",
+      "inspectionHref": "/posts/post-inspecao-palavra-pessoas.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "pessoas",
+        "persona",
+        "palavra"
+      ]
+    },
     {
       "id": "estrada-jesus-cristo",
       "slug": "estrada-jesus-cristo",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T12:36:11.684Z",
+  "updatedAt": "2026-08-26T09:20:46.285Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -2138,6 +2138,22 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-internet-discada.html"
+    },
+    {
+      "id": "internet",
+      "word": "Internet",
+      "simple": "EN inter- + net — a rede das redes. Intenet é lapso (cai o r). ≠ WWW ≠ discada ≠ login. Valeu !!!",
+      "simpleEn": "EN inter- + net — the network of networks. Intenet is a slip (drops the r). ≠ WWW ≠ dial-up ≠ login. Valeu !!!",
+      "simpleEs": "EN inter- + net — la red de redes. Intenet es lapsus (cae la r). ≠ WWW ≠ discada ≠ login. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-internet.html",
+      "history": "Do inglês Internet ← internetwork (inter- «entre» + net «rede»). O português herda o empréstimo. Intenet perde o r de entre. A WWW é a teia de páginas sobre essa malha.",
+      "curiosities": "Internet discada é um meio (discar o telefone), não o mapa. Login é a porta. Intranet usa intra- (dentro), não inter- (entre).",
+      "historyEn": "English Internet ← internetwork (inter- “between” + net). Portuguese borrows the name. Intenet drops the r of between. The WWW is the page-web on that mesh.",
+      "curiositiesEn": "Dial-up is a medium, not the map. Login is the door. Intranet uses intra- (inside), not inter- (between).",
+      "historyEs": "Del inglés Internet ← internetwork (inter- «entre» + net). El portugués hereda el préstamo. Intenet pierde la r de entre. La WWW es la telaraña de páginas sobre esa malla.",
+      "curiositiesEs": "Internet discada es un medio, no el mapa. Login es la puerta. Intranet usa intra- (dentro), no inter- (entre)."
     },
     {
       "id": "dsl",
@@ -8611,19 +8627,19 @@
     },
     {
       "id": "pessoas",
-      "word": "Pessoas",
-      "simple": "Figuras humanas inspecionadas — biografias do legado e da divulgação.",
-      "simpleEn": "Inspected human figures — legacy and outreach biographies.",
-      "simpleEs": "Figuras humanas inspeccionadas — biografías del legado y la divulgación.",
-      "group": "hub",
-      "fromTitle": true,
-      "href": "/biblioteca/inspecoes/",
-      "history": "Pessoas vem do latim persona (máscara, depois indivíduo). No hub o título nomeia figuras humanas inspecionadas — biografias do legado e da divulgação.",
-      "curiosities": "Pessoa civil × persona de ecrã: o menu insiste na distinção.",
-      "historyEn": "Portuguese pessoas comes from Latin persona (mask, then individual). On the hub the title names inspected human figures — biographies of legacy and outreach.",
-      "curiositiesEn": "Civil person × screen persona: the menu insists on the distinction.",
-      "historyEs": "Personas viene del latín persona (máscara, después individuo). En el hub el título nombra figuras humanas inspeccionadas — biografías del legado y de la divulgación.",
-      "curiositiesEs": "Persona civil × persona de pantalla: el menú insiste en la distinción."
+      "word": "pessoas",
+      "simple": "Lat. persōna — máscara de teatro → alguém. O vocábulo; a série Pessoas é o hub de biografias. ≠ conjugação (1.ª/2.ª/3.ª). Valeu !!!",
+      "simpleEn": "Lat. persōna — stage mask → someone. The vocable; the People series is the biography hub. ≠ conjugation (1st/2nd/3rd). Valeu !!!",
+      "simpleEs": "Lat. persōna — máscara de teatro → alguien. El vocablo; la serie Personas es el hub de biografías. ≠ conjugación (1.ª/2.ª/3.ª). ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-pessoas.html",
+      "history": "Do latim persōna (máscara, papel) o português herda pessoa / pessoas. No laboratório o plural nomeia também a série de fichas humanas — o vocábulo fica nesta página; as biografias no hub.",
+      "curiosities": "Inglês people vem de populus (povo), não do plural de person. A 1.ª pessoa do verbo vive na ficha conjugação. Heródoto abre a série Pessoas.",
+      "historyEn": "From Latin persōna (mask, role) Portuguese inherits pessoa / pessoas. In the lab the plural also names the human-sheet series — the vocable stays here; biographies on the hub.",
+      "curiositiesEn": "English people comes from populus (a people), not the plural of person. Grammatical 1st person lives on the conjugation sheet. Herodotus opens the People series.",
+      "historyEs": "Del latín persōna (máscara, papel) el portugués hereda pessoa / pessoas. En el laboratorio el plural también nombra la serie de fichas humanas.",
+      "curiositiesEs": "Inglés people viene de populus, no del plural de person. La 1.ª persona del verbo vive en conjugación. Heródoto abre la serie Personas."
     },
     {
       "id": "pic",
@@ -10872,6 +10888,32 @@
       "group": "lexico",
       "fromTitle": false,
       "href": "/posts/post-inspecao-palavra-semente.html"
+    },
+    {
+      "id": "plantar-a-semente",
+      "word": "plantar a semente",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-plantar-a-semente.html",
+      "simple": "Locução BR — fincar a semente na terra (gesto activo); variante as sementes; lapso a sementes; ≠ guia de cultivo ≠ fábrica ≠ foi plantada; Valeu !!!",
+      "simpleEn": "BR saying — set the seed in the soil (active gesture); plural as sementes; slip a sementes; ≠ grow guide ≠ factory ≠ was planted; Valeu !!!",
+      "simpleEs": "Dicho BR — hincar la semilla en la tierra (gesto activo); variante as sementes; lapso a sementes; ≠ guía de cultivo ≠ fábrica ≠ fue plantada; ¡Valeu !!!",
+      "history": "Plantar (lat. plantare «fincar, pôr a crescer») + artigo + semente (lat. sēmen). Pedido de campo 2026-08-26: expressão plantar a sementes.",
+      "curiosities": "Âncora singular a semente; plural as sementes. Lapso: artigo a + plural sementes. Distinto do poema Vida «A semente foi plantada» (resultado). Irmã de meter a mão. Ficha ≠ receita de cultivo.",
+      "historyEn": "Portuguese plantar (Lat. plantare “to set, to make grow”) + article + semente (Lat. sēmen). Field request 2026-08-26: inspect plantar a sementes.",
+      "curiositiesEn": "Anchor singular a semente; plural as sementes. Slip: article a + plural sementes. Distinct from Vida’s “The seed was planted” (result). Sister of meter a mão. Sheet ≠ grow recipe.",
+      "historyEs": "Plantar (lat. plantare «hincar, poner a crecer») + artículo + semente (lat. sēmen). Pedido de campo 2026-08-26: inspección de plantar a sementes.",
+      "curiositiesEs": "Áncora singular a semente; plural as sementes. Lapso: artículo a + plural sementes. Distinto del poema Vida «La semilla fue plantada» (resultado). Hermana de meter a mão. Ficha ≠ receta de cultivo."
+    },
+    {
+      "id": "plantar",
+      "word": "plantar",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-plantar-a-semente.html",
+      "simple": "Verbo lat. plantare — fincar / pôr a crescer; locução plantar a semente; a palavra planta é o ser vivo.",
+      "simpleEn": "Verb from Lat. plantare — to set / to make grow; saying plantar a semente; the word planta is the living being.",
+      "simpleEs": "Verbo lat. plantare — hincar / poner a crecer; locución plantar a semente; la palabra planta es el ser vivo."
     },
     {
       "id": "mudinha",

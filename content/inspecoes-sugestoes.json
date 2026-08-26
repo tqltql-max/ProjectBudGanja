@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T12:36:11.671Z",
+  "updatedAt": "2026-08-26T09:20:46.285Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -11018,6 +11018,29 @@
       "notes": "Cap. 285 — cluster Log In / discada / DSL / conexão."
     },
     {
+      "id": "palavra-internet",
+      "title": "Internet — inter- + net; o lapso Intenet",
+      "titleEn": "Internet — inter- + net; the slip Intenet",
+      "titleEs": "Internet — inter- + net; el lapsus Intenet",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: Internet ← inter- + net; Intenet = lapso (cai o r); ≠ WWW ≠ discada ≠ login; Valeu !!!",
+      "whyEn": "Words: Internet ← inter- + net; Intenet = slip (drops the r); ≠ WWW ≠ dial-up ≠ login; Valeu !!!",
+      "whyEs": "Palabras: Internet ← inter- + net; Intenet = lapsus (cae la r); ≠ WWW ≠ discada ≠ login; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-internet",
+      "doneHref": "/posts/post-inspecao-palavra-internet.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/Internet",
+        "https://en.wiktionary.org/wiki/Internet",
+        "/posts/post-inspecao-palavra-internet-discada.html",
+        "/posts/post-inspecao-palavra-login.html",
+        "/posts/post-inspecao-palavra-conexao.html"
+      ],
+      "notes": "Cap. 366 — pedido Intenet; âncora Internet; cai o r de inter-."
+    },
+    {
       "id": "palavra-dsl",
       "title": "DSL — a sigla do cano que fica",
       "titleEn": "DSL — a sigla do cano que fica",
@@ -11547,6 +11570,29 @@
       "notes": "Cap. 314 — pedido <<PALAVRA>>; meta-ficha da série."
     },
     {
+      "id": "palavra-pessoas",
+      "title": "Pessoas — o vocábulo que nomeia a série",
+      "titleEn": "Pessoas — the vocable that names the People series",
+      "titleEs": "Pessoas — el vocablo que nombra la serie Personas",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: pessoas ← lat. persōna (máscara → alguém); o vocábulo, não o hub; ≠ conjugação; Valeu !!!",
+      "whyEn": "Words: pessoas ← Lat. persōna (mask → someone); the vocable, not the hub; ≠ conjugation; Valeu !!!",
+      "whyEs": "Palabras: pessoas ← lat. persōna (máscara → alguien); el vocablo, no el hub; ≠ conjugación; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-pessoas",
+      "doneHref": "/posts/post-inspecao-palavra-pessoas.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/pessoa",
+        "/biblioteca/inspecoes/#inspecoes-pessoas-historia",
+        "/posts/post-inspecao-palavra-palavra.html",
+        "/posts/post-inspecao-palavra-conjugacao.html",
+        "/posts/post-inspecao-figura-herodoto.html"
+      ],
+      "notes": "Cap. 365 — pedido Pessoas; meta-ficha da série histórica."
+    },
+    {
       "id": "expressao-partiu",
       "title": "Partiu!!! — derivação de Valeu !!!",
       "titleEn": "Partiu!!! — derivation of Valeu !!!",
@@ -11878,6 +11924,31 @@
         "https://clinicadallelaste.com.br/"
       ],
       "notes": "Série Divulgação. Indexar ≠ endossar medicina integrativa. Não equiparar a Ticão/Carlini."
+    },
+    {
+      "id": "expressao-plantar-a-semente",
+      "title": "Plantar a semente — o gesto que entrega a partida",
+      "titleEn": "Plantar a semente — the gesture that delivers the start",
+      "titleEs": "Plantar a semente — el gesto que entrega la partida",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: plantar a semente / as sementes — gesto activo; lapso a sementes; ≠ guia de cultivo ≠ fábrica ≠ foi plantada; Valeu !!!",
+      "whyEn": "Sayings: plantar a semente / as sementes — active gesture; slip a sementes; ≠ grow guide ≠ factory ≠ was planted; Valeu !!!",
+      "whyEs": "Dichos: plantar a semente / as sementes — gesto activo; lapso a sementes; ≠ guía de cultivo ≠ fábrica ≠ fue plantada; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-plantar-a-semente",
+      "doneHref": "/posts/post-inspecao-expressao-plantar-a-semente.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/plantar",
+        "https://pt.wiktionary.org/wiki/semente",
+        "/posts/post-inspecao-palavra-semente.html",
+        "/posts/post-inspecao-palavra-planta.html",
+        "/posts/post-inspecao-expressao-meter-a-mao.html",
+        "/posts/post-inspecao-palavra-arvore-da-vida.html",
+        "/vida/"
+      ],
+      "notes": "Cap. 287 — gesto × resultado Vida; lapso a sementes; ficha ≠ guia de cultivo."
     }
   ]
 }
