@@ -1,11 +1,10 @@
 // Service Worker para PWA - Inspetor BudGanja
-const APP_VERSION = '209';
+const APP_VERSION = '212';
 const CACHE_NAME = 'budganja-v' + APP_VERSION;
 const urlsToCache = [
     '/',
     '/index.html',
     '/biblioteca/pesquisas/',
-    '/biblioteca/inspecoes/',
     '/equipamentos/',
     '/loja/',
     '/loja/encomenda.html',
@@ -13,7 +12,6 @@ const urlsToCache = [
     '/calculadoras/cultivo-lab.html',
     '/calculadoras/luximetro.html',
     '/calculadoras/super-solo.html',
-    '/guia/cultivo-basico.html',
     '/info/sobre.html',
     '/info/contato.html',
     '/info/privacidade.html',
@@ -161,7 +159,7 @@ self.addEventListener('fetch', (event) => {
         return;
     }
 
-    if (path.startsWith('/biblioteca/pesquisas') || path.startsWith('/biblioteca/inspecoes')) {
+    if (path.startsWith('/biblioteca/pesquisas')) {
         event.respondWith(
             fetch(event.request).catch(() => caches.match(event.request))
         );

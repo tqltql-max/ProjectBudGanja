@@ -1,6 +1,53 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '209';
+const ASSET_V = '212';
+
+function isAdminOnlyHref(href) {
+  const h = String(href || '').split('?')[0].split('#')[0].toLowerCase();
+  if (h.indexOf('/biblioteca/inspecoes') !== -1) return true;
+  if (h.indexOf('/guia/cultivo-basico') !== -1) return true;
+  if (/\/posts\/post-inspecao-/.test(h)) return true;
+  return false;
+}
+
+function isAdminOnlyNavItem(item) {
+  if (!item) return false;
+  const slug = String(item.slug || '');
+  if (slug === 'inspecoes' || slug === 'inspecoes-menu' || slug === 'guia-cultivo') return true;
+  const label = String(item.label || '').trim().toLowerCase();
+  if (label === 'inspeções' || label === 'inspecoes' || label === 'inspections') return true;
+  return isAdminOnlyHref(item.href);
+}
+
+function filterAdminOnlyNav(items, isAdmin) {
+  if (isAdmin || !Array.isArray(items)) return items || [];
+  return items.map(function (item) {
+    if (!item || isAdminOnlyNavItem(item)) return null;
+    const next = Object.assign({}, item);
+    if (Array.isArray(next.children)) {
+      next.children = filterAdminOnlyNav(next.children, false);
+      if (next.submenu && !next.href && !next.children.length) return null;
+    }
+    if (Array.isArray(next.links)) {
+      next.links = filterAdminOnlyNav(next.links, false);
+    }
+    if (Array.isArray(next.items)) {
+      next.items = filterAdminOnlyNav(next.items, false);
+    }
+    if (Array.isArray(next.groups)) {
+      next.groups = next.groups.map(function (group) {
+        const g = Object.assign({}, group);
+        if (Array.isArray(g.items)) g.items = filterAdminOnlyNav(g.items, false);
+        if (Array.isArray(g.links)) g.links = filterAdminOnlyNav(g.links, false);
+        return g;
+      }).filter(function (g) {
+        return (g.items && g.items.length) || (g.links && g.links.length);
+      });
+    }
+    if (Array.isArray(next.links) && !next.links.length && !next.href) return null;
+    return next;
+  }).filter(Boolean);
+}
 
 let deferredInstallPrompt = null;
 let installFloatingBtn = null;
@@ -970,7 +1017,7 @@ function buildHeaderAdminIcon(adminLink, hideAuthNav) {
   );
 }
 
-function buildDesktopQuickNavHTML() {
+function buildDesktopQuickNavHTML(isAdmin) {
   const items = [
     {
       href: '/biblioteca/pesquisas/',
@@ -984,7 +1031,8 @@ function buildDesktopQuickNavHTML() {
       icon: '📋',
       label: i18n('nav.inspections', 'Inspeções'),
       tip: i18n('nav.quickInspectionsTip', 'Registos de campo e checklists'),
-      prefixes: '/biblioteca/inspecoes'
+      prefixes: '/biblioteca/inspecoes',
+      adminOnly: true
     },
     {
       href: '/equipamentos/',
@@ -1017,7 +1065,9 @@ function buildDesktopQuickNavHTML() {
       tone: 'loja'
     }
   ];
-  const links = items.map(function (item) {
+  const links = items.filter(function (item) {
+    return isAdmin || !item.adminOnly;
+  }).map(function (item) {
     const cls = 'header-quick-link' + (item.tone ? ' header-quick-link--' + item.tone : '');
     return (
       '<a href="' + escapeNavText(item.href) + '" class="' + cls + '"' +
@@ -1036,7 +1086,8 @@ function buildDesktopQuickNavHTML() {
 
 function buildHeaderHTML(site, authState) {
   const config = site || DEFAULT_SITE;
-  const navItems = config.nav || DEFAULT_SITE.nav;
+  const isAdmin = !!(authState && authState.isAdmin);
+  const navItems = filterAdminOnlyNav(config.nav || DEFAULT_SITE.nav, isAdmin);
   const navLinks = navItems.map(buildNavItemHTML).join('\n                ');
   const ytUrl = config.youtubeChannelUrl || DEFAULT_SITE.youtubeChannelUrl;
   const tagline = config.siteTagline || DEFAULT_SITE.siteTagline || '';
@@ -1103,7 +1154,7 @@ function buildHeaderHTML(site, authState) {
     '<span class="logo-name">' + escapeNavText(config.siteName || DEFAULT_SITE.siteName) + '</span>' +
     (tagline ? '<span class="logo-tagline">' + escapeNavText(i18n('footer.tagline', tagline)) + '</span>' : '') +
     '</span></a></div>' +
-    buildDesktopQuickNavHTML() +
+    buildDesktopQuickNavHTML(isAdmin) +
     '<nav id="primary-nav" class="primary-nav" aria-label="' + escapeNavText(i18n('common.mobileNav', 'Navegação principal')) + '">' +
     '<ul>' + navLinks + '</ul>' +
     '</nav>' +
@@ -1167,7 +1218,8 @@ function buildMobileUtilsHTML(authState, hideAuthNav) {
 
 function buildMobileMenuHTML(site, authState) {
   const config = site || DEFAULT_SITE;
-  const navItems = config.nav || DEFAULT_SITE.nav;
+  const isAdmin = !!(authState && authState.isAdmin);
+  const navItems = filterAdminOnlyNav(config.nav || DEFAULT_SITE.nav, isAdmin);
   const ytUrl = config.youtubeChannelUrl || DEFAULT_SITE.youtubeChannelUrl;
   const ytLabel = config.youtubeChannelLabel || DEFAULT_SITE.youtubeChannelLabel;
 
@@ -1277,11 +1329,11 @@ function mountMobileMenu(site, authState, menuToggle) {
   }, { passive: true });
 }
 
-function buildFooterHTML(site) {
+function buildFooterHTML(site, isAdmin) {
   const config = site || DEFAULT_SITE;
   const ytUrl = config.youtubeChannelUrl || DEFAULT_SITE.youtubeChannelUrl;
   const ytLabel = config.youtubeChannelLabel || DEFAULT_SITE.youtubeChannelLabel;
-  const footerGroups = config.footerGroups || DEFAULT_SITE.footerGroups;
+  const footerGroups = filterAdminOnlyNav(config.footerGroups || DEFAULT_SITE.footerGroups, isAdmin);
   const privacyDate = config.privacyUpdated || DEFAULT_SITE.privacyUpdated;
 
   const groupsHtml = footerGroups.map((group) =>
@@ -1657,8 +1709,10 @@ async function enrichBibliotecaWithPosts(navPanel) {
   };
 
   const grouped = { pesquisa: [], inspecao: [], equipamento: [] };
+  const showInspections = cachedLayoutAuth && cachedLayoutAuth.isAdmin;
   posts.forEach((post) => {
     const cat = post.category || 'pesquisa';
+    if (cat === 'inspecao' && !showInspections) return;
     if (grouped[cat] && grouped[cat].length < 3) grouped[cat].push(post);
   });
 
@@ -1706,7 +1760,7 @@ function injectLayout(site, authState) {
   const headerContainer = document.getElementById('site-header');
   const footerContainer = document.getElementById('site-footer');
   const headerHTML = buildHeaderHTML(site, authState);
-  const footerHTML = buildFooterHTML(site);
+  const footerHTML = buildFooterHTML(site, !!(authState && authState.isAdmin));
 
   if (headerContainer) {
     headerContainer.innerHTML = headerHTML;

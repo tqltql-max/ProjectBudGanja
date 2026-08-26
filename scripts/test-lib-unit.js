@@ -8,7 +8,10 @@
 const { mergeGuiaInspecoesPosts, sortPublicPosts, GUIA_INSPECOES_POSTS } = require('../lib/merge-guia-inspecoes.js');
 const { CHANNEL_INSPECOES_POSTS } = require('../lib/channel-inspecoes-posts.js');
 const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registry.js');
+const { getPublicPosts, getAdminListedPosts } = require('../lib/posts-service.js');
 const { ROOT } = require('../lib/paths.js');
+const fs = require('fs');
+const path = require('path');
 
 let passed = 0;
 let failed = 0;
@@ -60,9 +63,24 @@ assert('guia #1 tem excerpt EN', !!sample.excerptEn);
 const { publishStaticAssets } = require('../lib/publish-static.js');
 publishStaticAssets(ROOT);
 const feed = JSON.parse(require('fs').readFileSync(require('path').join(ROOT, 'posts-public.json'), 'utf8'));
-const guiaFeed = feed.find((p) => p.slug === 'inspecao-cultivo-inicio');
-assert('posts-public tem series', guiaFeed && guiaFeed.series === 'guia-cultivo-basico');
+assert('posts-public sem inspeções', feed.every((p) => p.category !== 'inspecao'));
 assert('posts-public coverImage absoluto', !feed.some((p) => p.coverImage && !p.coverImage.startsWith('/') && !/^https?:/i.test(p.coverImage)));
+
+const publicList = getPublicPosts(merged);
+assert('getPublicPosts exclui inspeções', publicList.every((p) => p.category !== 'inspecao'));
+assert('getPublicPosts inspecao vazio', getPublicPosts(merged, 'inspecao').length === 0);
+const adminInspecoes = getAdminListedPosts(merged, 'inspecao');
+assert('getAdminListedPosts inspecao inclui', adminInspecoes.length > 0);
+assert('getAdminListedPosts inspecao só inspeções', adminInspecoes.every((p) => p.category === 'inspecao'));
+
+const publicPages = ['index.html', 'info/sobre.html', 'cultivo/index.html', 'videos/index.html', 'loja/index.html'];
+const inspectionHref = /\/biblioteca\/inspecoes|\/posts\/post-inspecao-|\/guia\/cultivo-basico/;
+publicPages.forEach((file) => {
+  const html = fs.readFileSync(path.join(ROOT, file), 'utf8');
+  assert(file + ' sem link a inspeções', !inspectionHref.test(html));
+});
+assert('posts.js CTA público sem inspeções', !inspectionHref.test(fs.readFileSync(path.join(ROOT, 'js/posts.js'), 'utf8')));
+assert('loja-catalog sem href de inspeções', !inspectionHref.test(fs.readFileSync(path.join(ROOT, 'lib/loja-catalog.js'), 'utf8')));
 
 assert('calculadoras registry', CALCULADORAS.length === 3);
 const cultivoLab = CALCULADORAS.find((c) => c.slug === 'cultivo-lab');

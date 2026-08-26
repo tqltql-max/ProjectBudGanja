@@ -77,6 +77,7 @@ async function loadLatestPosts() {
     } catch (e) { /* ignore */ }
   }
 
+  posts = posts.filter((p) => p.category !== 'inspecao');
   posts.sort((a, b) => new Date(b.date) - new Date(a.date));
   renderHomePostCards(container, posts);
 }

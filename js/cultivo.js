@@ -313,15 +313,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (confirmBtn) confirmBtn.disabled = !publishable || !(log.name && String(log.name).trim());
   }
 
-  function updateWeekInspectionLink(profile) {
+  function hrefIsAdminOnlyInspection(href) {
+    if (typeof isAdminOnlyHref === 'function') return isAdminOnlyHref(href);
+    const h = String(href || '').split('?')[0].split('#')[0].toLowerCase();
+    return h.indexOf('/biblioteca/inspecoes') !== -1
+      || h.indexOf('/guia/cultivo-basico') !== -1
+      || /\/posts\/post-inspecao-/.test(h);
+  }
+
+  function applyWeekInspectionLink(profile, isAdmin) {
     if (!weekInspectionLink || !profile) return;
     const phase = getEffectivePhase(profile);
-    const inspection = PHASE_INSPECTION_LINKS[phase];
+    const inspection = isAdmin ? PHASE_INSPECTION_LINKS[phase] : null;
     const guide = getWeekGuideData(profile, getActiveWeek(profile));
-    let href = inspection ? inspection.href : '/biblioteca/inspecoes/';
+    let href = inspection ? inspection.href : '/videos/';
     let label = inspection ? inspection.label : 'Guia em vídeo';
     if (guide && Array.isArray(guide.tools)) {
-      const libraryTool = guide.tools.find((tool) => tool.href && tool.href.indexOf('/biblioteca/') === 0);
+      const libraryTool = guide.tools.find((tool) => {
+        if (!tool.href || tool.href.indexOf('/biblioteca/') !== 0) return false;
+        if (!isAdmin && hrefIsAdminOnlyInspection(tool.href)) return false;
+        return true;
+      });
       if (libraryTool) {
         href = libraryTool.href;
         label = libraryTool.label;
@@ -329,6 +341,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     weekInspectionLink.href = href;
     weekInspectionLink.textContent = label;
+  }
+
+  function updateWeekInspectionLink(profile) {
+    if (!weekInspectionLink || !profile) return;
+    const alreadyAdmin = document.body.dataset.adminSession === '1';
+    applyWeekInspectionLink(profile, alreadyAdmin);
+    if (alreadyAdmin) return;
+    fetch('/api/me', { credentials: 'include' }).then(function (res) {
+      if (!res.ok) return;
+      document.body.dataset.adminSession = '1';
+      applyWeekInspectionLink(profile, true);
+    }).catch(function () { /* visitante ou utilizador sem painel */ });
   }
 
   function maybeShowOnboarding(profile) {

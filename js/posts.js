@@ -32,7 +32,7 @@ function renderPostCards(container, posts) {
     var page = document.body.dataset.page;
     var category = page === 'inspecoes' ? 'inspecao' : page === 'equipamentos' ? 'equipamento' : 'pesquisa';
     var ctas = {
-      pesquisa: { text: 'Ver inspeções do guia de cultivo', href: '/biblioteca/inspecoes/' },
+      pesquisa: { text: 'Ver últimos vídeos', href: '/videos/' },
       inspecao: { text: 'Ver canal no YouTube', href: 'https://www.youtube.com/@InspetorBudGanja', external: true },
       equipamento: { text: 'Ver guia da clonadora', href: '/equipamentos/clonadora-6-estacas.html' }
     };
@@ -185,6 +185,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var filterEl = config.seriesFilter ? document.querySelector(config.seriesFilter) : null;
 
   loadPostsFromApi(config.category)
+    .then(function (posts) { return filterByCategory(posts, config.category); })
     .catch(function () { return loadPostsFromStaticFile(config.category); })
     .then(function (posts) {
       if (filterEl) initInspecoesSeriesFilter(filterEl, container, posts);

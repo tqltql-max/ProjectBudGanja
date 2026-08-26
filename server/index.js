@@ -8,11 +8,11 @@ const { renderMarkdown } = require('../lib/markdown-render.js');
 const { publishStaticAssets } = require('../lib/publish-static.js');
 const { createAppStore } = require('../lib/create-store.js');
 const { handleApiRequest } = require('../lib/api-handler.js');
-const { buildPostHtml, normalizePosts } = require('../lib/posts-service.js');
+const { buildPostHtml, normalizePosts, getPublicPosts: listPublicPosts } = require('../lib/posts-service.js');
 const { buildEmptyStateHtml } = require('../lib/empty-state.js');
 const { applySecurityHeaders } = require('../lib/security-headers.js');
 const { hasAdminAccess } = require('../lib/admin-access.js');
-const { isBlockedStaticPath, isProtectedHtml } = require('../lib/static-security.js');
+const { isBlockedStaticPath, isProtectedHtml, isAdminOnlyHtml } = require('../lib/static-security.js');
 const {
   isDevModeEnabled,
   shouldBlockForDevMode,
@@ -112,11 +112,7 @@ function writePostFile(filepath, post) {
 }
 
 function getPublicPosts(category) {
-  let posts = readPosts().filter((p) => p.published !== false);
-  if (category) {
-    posts = posts.filter((p) => (p.category || 'pesquisa') === category);
-  }
-  return posts;
+  return listPublicPosts(mergeGuiaInspecoesPosts(readPosts()), category);
 }
 
 function normalizePostsOnStartup() {
@@ -400,7 +396,7 @@ const server = http.createServer((req, res) => {
       return serveDevModePage(res, req, ROOT);
     }
 
-    if (isProtectedHtml(pageFile) && !isAdmin) {
+    if ((isProtectedHtml(pageFile) || isAdminOnlyHtml(pageFile)) && !isAdmin) {
       const returnTo = encodeURIComponent(staticPath);
       return resRedirect(res, '/login.html?returnTo=' + returnTo);
     }

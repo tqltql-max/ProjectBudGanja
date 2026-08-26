@@ -342,6 +342,11 @@ function initPostsPanel() {
     if (imageFileName) imageFileName.textContent = 'Nenhuma imagem selecionada';
   }
 
+  function updateInspecaoPublicHint() {
+    const hint = document.getElementById('inspecao-public-hint');
+    if (hint) hint.hidden = categoryEl.value !== 'inspecao';
+  }
+
   function resetForm() {
     form.reset();
     publishedEl.checked = true;
@@ -349,6 +354,7 @@ function initPostsPanel() {
     editingSlug = null;
     setEditMode(null);
     updatePreview();
+    updateInspecaoPublicHint();
     result.textContent = '';
   }
 
@@ -369,6 +375,7 @@ function initPostsPanel() {
     setEditMode(post.slug);
     updateCoverPreview();
     updatePreview();
+    updateInspecaoPublicHint();
   }
 
   function duplicatePost(post) {
@@ -674,6 +681,7 @@ function initPostsPanel() {
     const cat = categoryEl.value;
     if (serieField) serieField.hidden = cat !== 'inspecao';
     if (cat === 'inspecao') loadSeriesOptions(cat);
+    updateInspecaoPublicHint();
     schedulePreview();
   });
 

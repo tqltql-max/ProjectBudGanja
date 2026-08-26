@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { readPostsFrom } = require('../lib/publish-static.js');
+const { getPublicPosts } = require('../lib/posts-service.js');
 const { ROOT } = require('../lib/paths.js');
 const OUT = path.join(ROOT, 'sitemap.xml');
 
@@ -13,10 +14,8 @@ const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registr
 const STATIC = [
   { loc: '/', priority: '1.0', changefreq: 'weekly' },
   { loc: '/index.html', priority: '1.0', changefreq: 'weekly' },
-  { loc: '/guia/cultivo-basico.html', priority: '0.95', changefreq: 'monthly' },
   { loc: '/videos/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/biblioteca/pesquisas/', priority: '0.9', changefreq: 'weekly' },
-  { loc: '/biblioteca/inspecoes/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/equipamentos/', priority: '0.9', changefreq: 'monthly' },
   { loc: '/loja/', priority: '0.85', changefreq: 'monthly' },
   { loc: '/loja/encomenda.html', priority: '0.8', changefreq: 'monthly' },
@@ -39,7 +38,7 @@ const STATIC = [
 
 function buildSitemap() {
   const urls = STATIC.slice();
-  const posts = readPostsFrom(ROOT).filter((p) => p.published !== false);
+  const posts = getPublicPosts(readPostsFrom(ROOT));
   posts.forEach((p) => {
     const file = p.url || p.filename;
     if (!file) return;

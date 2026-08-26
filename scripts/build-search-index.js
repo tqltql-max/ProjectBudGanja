@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { readPostsFrom } = require('../lib/publish-static.js');
+const { getPublicPosts } = require('../lib/posts-service.js');
 const { ROOT } = require('../lib/paths.js');
 const OUT = path.join(ROOT, 'search-index.json');
 
@@ -10,9 +11,7 @@ const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registr
 
 const STATIC_PAGES = [
   { url: '/', title: 'Início', desc: 'Inspetor BudGanja — laboratório de inspeção. Plantas, ofício e cultura.', keywords: 'home laboratório inspeção' },
-  { url: '/biblioteca/inspecoes/', title: 'Inspeções — Guia de Cultivo Básico', desc: 'Série de inspeções com relatórios e vídeos @InspetorBudGanja', keywords: 'guia cultivo inspeção vídeo' },
   { url: '/biblioteca/pesquisas/', title: 'Pesquisas', desc: 'Relatórios e estudos técnicos', keywords: 'pesquisa relatório' },
-  { url: '/biblioteca/inspecoes/', title: 'Inspeções', desc: 'Verificações de campo e inspeções técnicas', keywords: 'inspeção campo' },
   { url: '/equipamentos/', title: 'Equipamentos', desc: 'Manuais caseiros e equipamentos documentados', keywords: 'equipamento caseiro manual clonadora' },
   { url: '/loja/', title: 'Loja parceira', desc: 'Materiais das clonadoras na vitrine Magazine Inspetor BudGanja (Magalu)', keywords: 'loja clonadora bombinha bucha balde bomba aspersor feltro magazine luiza magalu influenciador' },
   { url: '/calculadoras/', title: 'Ferramentas', desc: 'Super Calc, luxímetro e Super Solo', keywords: 'ferramentas cultivo vpd dli' },
@@ -42,7 +41,7 @@ function buildIndex() {
     text: [p.title, p.desc, p.keywords].join(' ')
   }));
 
-  const posts = readPostsFrom(ROOT).filter((p) => p.published !== false);
+  const posts = getPublicPosts(readPostsFrom(ROOT));
   posts.forEach((p) => {
     const url = p.url || (p.filename ? '/' + String(p.filename).replace(/^\/+/, '') : '');
     items.push({
@@ -52,19 +51,6 @@ function buildIndex() {
       text: [p.title, p.excerpt, p.category, p.content_raw].filter(Boolean).join(' ').slice(0, 2000)
     });
   });
-
-  try {
-    const { GUIA_INSPECOES_POSTS } = require('../lib/guia-inspecoes-posts.js');
-    GUIA_INSPECOES_POSTS.forEach((post) => {
-      const url = post.url || (post.filename ? '/' + String(post.filename).replace(/^\/+/, '') : '');
-      items.push({
-        title: post.title,
-        url,
-        excerpt: post.excerpt || '',
-        text: [post.title, post.excerpt, post.content_raw, 'guia cultivo básico inspeção'].join(' ').slice(0, 2000)
-      });
-    });
-  } catch (e) { /* optional */ }
 
   fs.writeFileSync(OUT, JSON.stringify({ updatedAt: new Date().toISOString(), items }, null, 2), 'utf8');
   console.log('search-index.json:', items.length, 'itens');
