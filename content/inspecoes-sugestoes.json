@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T09:33:19.359Z",
+  "updatedAt": "2026-08-26T09:43:48.305Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -11972,6 +11972,31 @@
         "/vida/"
       ],
       "notes": "Cap. 287 — gesto × resultado Vida; lapso a sementes; ficha ≠ guia de cultivo."
+    },
+    {
+      "id": "expressao-deixar-na-mao",
+      "title": "Deixar na mão — o gesto que larga no instante combinado",
+      "titleEn": "Deixar na mão — the gesture that drops at the agreed instant",
+      "titleEs": "Deixar na mão — el gesto que suelta en el instante combinado",
+      "tipo": "expressao",
+      "priority": 2,
+      "status": "feita",
+      "why": "Expressões: deixar na mão — abandonar quando a outra palma precisava; lapso deixar  na mao; ≠ meter a mão ≠ cuidados ≠ tutorial; Valeu !!!",
+      "whyEn": "Sayings: deixar na mão — leave hanging when the other palm needed you; slip deixar  na mao; ≠ hands-on ≠ care ≠ how-to; Valeu !!!",
+      "whyEs": "Dichos: deixar na mão — abandonar cuando la otra palma pedía; lapso deixar  na mao; ≠ meter la mano ≠ cuidados ≠ tutorial; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-expressao-deixar-na-mao",
+      "doneHref": "/posts/post-inspecao-expressao-deixar-na-mao.html",
+      "seriesHint": "expressoes-ditados",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/deixar",
+        "https://pt.wiktionary.org/wiki/m%C3%A3o",
+        "/posts/post-inspecao-expressao-meter-a-mao.html",
+        "/posts/post-inspecao-palavra-pedi-mao.html",
+        "/posts/post-inspecao-palavra-mao-esquerda-direita.html",
+        "/posts/post-inspecao-expressao-jogar-areia.html",
+        "/posts/post-inspecao-expressao-desatar-o-no.html"
+      ],
+      "notes": "Cap. 288 — ausência × ofício; lapso espaço/til; ficha ≠ tutorial de abandono."
     }
   ]
 }

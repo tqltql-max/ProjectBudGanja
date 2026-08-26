@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T09:33:19.367Z",
+  "updatedAt": "2026-08-26T09:43:48.305Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -4914,6 +4914,22 @@
       "curiositiesEn": "Sister of meter marcha (same verb, other object). Inverse of pedir a mão (open the palm × put the palm in). Canon: hands-on.",
       "historyEs": "Meter (lat. mittere «poner, enviar») + a + mão (lat. manus). Pedido de campo 2026-08-24: inspección de la expresión meter a mão.",
       "curiositiesEs": "Hermana de meter marcha (mismo verbo, otro objeto). Inverso de pedir a mão (abrir la palma × meter la palma). Canónica: manos a la obra."
+    },
+    {
+      "id": "deixar-na-mao",
+      "word": "deixar na mão",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-expressao-deixar-na-mao.html",
+      "simple": "Locução BR — abandonar no instante em que a outra palma precisava; lapso deixar  na mao; ≠ meter a mão ≠ cuidados ≠ tutorial; Valeu !!!",
+      "simpleEn": "BR saying — leave hanging when the other palm needed you; slip deixar  na mao; ≠ hands-on ≠ care ≠ how-to; Valeu !!!",
+      "simpleEs": "Dicho BR — abandonar cuando la otra palma pedía; lapso deixar  na mao; ≠ meter la mano ≠ cuidados ≠ tutorial; ¡Valeu !!!",
+      "history": "Deixar (lat. laxāre «soltar, deixar ir») + na + mão (lat. manus). Pedido de campo 2026-08-26: inspecao da expressao deixar  na mao.",
+      "curiosities": "Âncora: me deixou na mão. Outra sala: deixar na mão de (cuidados). Inverso de meter a mão. Irmã de jogar areia (dano presente × ausência). Ficha ≠ tutorial de abandono.",
+      "historyEn": "Portuguese deixar (Lat. laxāre “to loosen, let go”) + na + mão (Lat. manus). Field request 2026-08-26: inspect deixar  na mao.",
+      "curiositiesEn": "Anchor: me deixou na mão. Other room: deixar na mão de (care). Inverse of meter a mão. Sister of jogar areia (present harm × absence). Sheet ≠ abandonment how-to.",
+      "historyEs": "Deixar (lat. laxāre «soltar, dejar ir») + na + mão (lat. manus). Pedido de campo 2026-08-26: inspección de deixar  na mao.",
+      "curiositiesEs": "Áncora: me deixou na mão. Otra sala: deixar na mão de (cuidados). Inverso de meter a mão. Hermana de jogar areia (daño presente × ausencia). Ficha ≠ tutorial de abandono."
     },
     {
       "id": "baixar-a-bola",
