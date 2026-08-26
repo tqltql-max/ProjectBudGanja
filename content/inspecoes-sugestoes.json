@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T09:20:46.285Z",
+  "updatedAt": "2026-08-26T09:33:19.359Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -757,6 +757,29 @@
         "/posts/post-inspecao-figura-chorao.html"
       ],
       "notes": "Obra ≠ biografia Chorão; par da abertura Rusted Root."
+    },
+    {
+      "id": "arte-anjos-pra-quem-tem-fe",
+      "title": "Anjos (Pra quem tem fé) — O Rappa e a locução que a vida não acaba",
+      "titleEn": "Anjos (Pra quem tem fé) — O Rappa and the saying that life does not end",
+      "titleEs": "Anjos (Pra quem tem fé) — O Rappa y la locución de que la vida no acaba",
+      "tipo": "arte",
+      "priority": 1,
+      "status": "feita",
+      "why": "Artes · O Rappa — Anjos (Pra quem tem fé), 2013; locução pra quem tem fé a vida nunca tem fim; ≠ púlpito ≠ Hungria; Valeu !!!",
+      "whyEn": "Arts · O Rappa — Anjos (Pra quem tem fé), 2013; saying pra quem tem fé a vida nunca tem fim; ≠ pulpit ≠ Hungria; Valeu !!!",
+      "whyEs": "Artes · O Rappa — Anjos (Pra quem tem fé), 2013; locución pra quem tem fé a vida nunca tem fim; ≠ púlpito ≠ Hungria; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-arte-anjos-pra-quem-tem-fe",
+      "doneHref": "/posts/post-inspecao-arte-anjos-pra-quem-tem-fe.html",
+      "seriesHint": "artes-cultura",
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Anjos_(Pra_quem_tem_f%C3%A9)",
+        "https://pt.wikipedia.org/wiki/Nunca_Tem_Fim...",
+        "https://www.youtube.com/watch?v=BPbCLtBl_g4",
+        "/posts/post-inspecao-arte-amor-e-fe.html",
+        "/posts/post-inspecao-expressao-eu-amo-a-vida.html"
+      ],
+      "notes": "Cap. 117 — pedido locução + musica + o RAPPA; sem letra integral."
     },
     {
       "id": "arte-the-matrix",

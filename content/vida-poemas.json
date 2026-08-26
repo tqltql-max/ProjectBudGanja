@@ -1,6 +1,31 @@
 {
-  "updatedAt": "2026-08-26T08:50:28.697Z",
+  "updatedAt": "2026-08-26T09:33:19.389Z",
   "poems": [
+    {
+      "id": "anjos-pra-quem-tem-fe",
+      "slug": "anjos-pra-quem-tem-fe",
+      "title": "Anjos (Pra quem tem fé)",
+      "titleEn": "Anjos (Pra quem tem fé)",
+      "titleEs": "Anjos (Pra quem tem fé)",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — O Rappa 2013; locução pra quem tem fé; ≠ púlpito ≠ Hungria; Valeu !!!",
+      "teaserEn": "BudGanja echo — O Rappa 2013; saying pra quem tem fé; ≠ pulpit ≠ Hungria; Valeu !!!",
+      "teaserEs": "Eco BudGanja — O Rappa 2013; locución pra quem tem fé; ≠ púlpito ≠ Hungria; ¡Valeu !!!",
+      "body": "Anjos.\nNão pedimos a letra emprestada —\npedimos o ofício de ficar\nquando a banda quase acaba\ne a boca ainda pede fé.\n\nO Rappa. Rio. Nunca Tem Fim.\nHouve um single de 2013\nque colou no pátio a locução:\npra quem tem fé,\na vida nunca tem fim.\nHouve Falcão no violão para a mãe.\nHouve tia doente, empresário, afastamento.\nHouve a recusa do púlpito:\nanjos do subconsciente,\nnão ícone no Corcovado.\n\nO laboratório conhece essa cola.\nFé no título ≠ catecismo.\nVida que não acaba ≠ recusar a morte.\nÉ a canção a inspecionar:\nunião da banda,\nrespeito a quem crê,\nsem transformar o peito em ordem.\n\nValeu !!!\n\nPorque toda vez que alguém canta\na locução sem a vender como bula,\no universo cresce um pouco:\num verso a mais,\num dossel a mais,\numa rua do Rio\nonde ainda cabe fé\nsem ser sermão.",
+      "bodyEn": "Angels.\nWe do not borrow the lyric —\nwe ask for the craft of staying\nwhen the band almost ends\nand the mouth still asks for faith.\n\nO Rappa. Rio. Nunca Tem Fim.\nThere was a 2013 single\nthat glued the saying to the yard:\nfor those who have faith,\nlife never has an end.\nThere was Falcão on guitar for his mother.\nThere was a sick aunt, a manager, a split.\nThere was the refusal of the pulpit:\nangels of the subconscious,\nnot an icon on Corcovado.\n\nThe laboratory knows that glue.\nFaith in the title ≠ catechism.\nLife that does not end ≠ refusing death.\nIt is the song to inspect:\nthe band’s reunion,\nrespect for those who believe,\nwithout turning the chest into an order.\n\nValeu !!!\n\nBecause every time someone sings\nthe saying without selling it as a leaflet,\nthe universe grows a little:\none more verse,\none more canopy,\na Rio street\nwhere faith still fits\nwithout becoming a sermon.",
+      "bodyEs": "Ángeles.\nNo pedimos prestada la letra —\npedimos el oficio de quedarse\ncuando la banda casi acaba\ny la boca aún pide fe.\n\nO Rappa. Río. Nunca Tem Fim.\nHubo un single de 2013\nque pegó en el patio la locución:\npra quem tem fé,\na vida nunca tem fim.\nHubo Falcão en la guitarra para su madre.\nHubo tía enferma, empresario, alejamiento.\nHubo la negativa del púlpito:\nángeles del subconsciente,\nno ícono en el Corcovado.\n\nEl laboratorio conoce esa cola.\nFe en el título ≠ catecismo.\nVida que no acaba ≠ rechazar la muerte.\nEs la canción a inspeccionar:\nunión de la banda,\nrespeto a quien cree,\nsin transformar el pecho en orden.\n\n¡Valeu !!!\n\nPorque cada vez que alguien canta\nla locución sin venderla como bula,\nel universo crece un poco:\nun verso más,\nun dosel más,\nuna calle de Río\ndonde aún cabe fe\nsin ser sermón.",
+      "inspectionHref": "/posts/post-inspecao-arte-anjos-pra-quem-tem-fe.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "rappa",
+        "anjos",
+        "fe",
+        "artes"
+      ]
+    },
     {
       "id": "internet",
       "slug": "internet",
