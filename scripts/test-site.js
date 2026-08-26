@@ -11,10 +11,19 @@ const { isDevModeEnabled } = require('../lib/site-dev-mode.js');
 const BASE = 'http://localhost:8080';
 const TIMEOUT = 8000;
 
-const PROTECTED_PAGES = new Set(['admin.html', 'pesquisas-admin.html', 'usuarios-admin.html', 'sorteios-admin.html', 'loja-admin.html']);
+const PROTECTED_PAGES = new Set([
+  'admin.html',
+  'pesquisas-admin.html',
+  'gtarp-admin.html',
+  'usuarios-admin.html',
+  'sorteios-admin.html',
+  'info/apresentacao-unifesp.html',
+  'info/apresentacao-unifesp-print.html',
+  'info/apresentacao-inspetor-budganja-unifesp.pdf'
+]);
 const DEV_MODE_PUBLIC_PAGES = new Set(['login.html', 'em-desenvolvimento.html']);
 const DEV_MODE = isDevModeEnabled();
-const API_ROUTES = ['/api/me', '/api/site', '/api/posts', '/api/sorteio', '/api/guia-cultivo', '/api/youtube-feed', '/api/loja/encomendas'];
+const API_ROUTES = ['/api/me', '/api/site', '/api/posts', '/api/sorteio', '/api/guia-cultivo', '/api/youtube-feed', '/api/videos-hub'];
 
 function fetchUrl(urlPath) {
   return new Promise((resolve, reject) => {
@@ -186,7 +195,7 @@ async function main() {
     }
   }
 
-  const staticAssets = ['css/style.css', 'js/layout.js', 'js/ferramentas-nav-data.js', 'js/site-features.js', 'js/home.js', 'js/perfil.js', 'js/cultivo.js', 'js/guia-cultivo.js', 'js/videos.js', 'js/loja.js', 'js/loja-data.js', 'js/loja-order-ui.js', 'js/loja-order-callout.js', 'js/equip-loja-materials.js', 'js/loja-encomenda.js', 'js/loja-admin.js', 'content/guia-cultivo.json', 'content/youtube-feed.json', 'search-index.json', 'sw.js', 'posts-public.json'];
+  const staticAssets = ['css/style.css', 'js/layout.js', 'js/ferramentas-nav-data.js', 'js/site-features.js', 'js/home.js', 'js/perfil.js', 'js/cultivo.js', 'js/guia-cultivo.js', 'js/videos.js', 'content/guia-cultivo.json', 'content/youtube-feed.json', 'content/videos-hub.json', 'content/inspecoes-sugestoes.json', 'js/inspecoes-sugestoes.js', 'js/inspecoes-share-rail.js', 'search-index.json', 'sw.js', 'posts-public.json', 'inspecoes-share.json'];
   for (const asset of staticAssets) {
     try {
       const res = await fetchUrl('/' + asset);
@@ -241,8 +250,62 @@ async function main() {
         ok.push(`header ${h} presente`);
       }
     });
+    if (indexRes.status !== 200) {
+      issues.push({ kind: 'home', severity: 'error', message: `/ → HTTP ${indexRes.status} (Index tem de ser 200, sem redirect)` });
+    } else if (!indexRes.body.includes('data-page="home"') || !indexRes.body.includes('Início | Inspetor BudGanja')) {
+      issues.push({ kind: 'home', severity: 'error', message: '/ não serviu o Index' });
+    } else if (/location\.replace\(['"]\/inverno\//.test(indexRes.body) || /http-equiv="refresh"[^>]*url=\/inverno\//.test(indexRes.body)) {
+      issues.push({ kind: 'home', severity: 'error', message: '/ ainda redirecciona o cliente para /inverno/' });
+    } else if (!indexRes.body.includes('O laboratório') || !indexRes.body.includes('home-cards')) {
+      issues.push({ kind: 'home', severity: 'error', message: '/ não tem a Index clássica (O laboratório)' });
+    } else {
+      ok.push('/ é o Index, sem redirect para /inverno/');
+    }
   } catch (e) {
     issues.push({ kind: 'security', severity: 'error', message: 'Verificação de headers falhou: ' + e.message });
+  }
+
+  const redirectsFile = fs.readFileSync(path.join(ROOT, '_redirects'), 'utf8');
+  if (/(^|\n)\/(?:index\.html|inicio\/?)?\s+\/inverno\//.test(redirectsFile)) {
+    issues.push({ kind: 'home', severity: 'error', message: '_redirects ainda manda a homepage para /inverno/' });
+  } else {
+    ok.push('_redirects não manda / para /inverno/');
+  }
+
+  try {
+    const inicioRes = await fetchUrl('/inicio');
+    const loc = String((inicioRes.headers && inicioRes.headers.location) || '');
+    if (inicioRes.status !== 302 || loc !== '/') {
+      issues.push({ kind: 'home', severity: 'error', message: `/inicio → ${inicioRes.status} ${loc} (esperado 302 /)` });
+    } else {
+      ok.push('/inicio → /');
+    }
+  } catch (e) {
+    issues.push({ kind: 'home', severity: 'error', message: '/inicio → ' + e.message });
+  }
+
+  try {
+    const invernoRes = await fetchUrl('/inverno/');
+    if (invernoRes.status !== 200 || !invernoRes.body.includes('Bom dia, Inverno')) {
+      issues.push({ kind: 'home', severity: 'error', message: '/inverno/ não serviu a página do livro' });
+    } else if (/Paulinho o LOKO/.test(invernoRes.body) && /kick\.com\/paulinholoko/.test(invernoRes.body)) {
+      issues.push({ kind: 'home', severity: 'error', message: '/inverno/ ainda mistura divulgação de games do Paulinho' });
+    } else {
+      ok.push('/inverno/ é o livro da Tamara');
+    }
+  } catch (e) {
+    issues.push({ kind: 'home', severity: 'error', message: '/inverno/ → ' + e.message });
+  }
+
+  try {
+    const jogosRes = await fetchUrl('/jogos/');
+    if (jogosRes.status !== 200 || !jogosRes.body.includes('Paulinho o LOKO') || !jogosRes.body.includes('jogos-launch')) {
+      issues.push({ kind: 'home', severity: 'error', message: '/jogos/ não serviu o hub do Paulinho' });
+    } else {
+      ok.push('/jogos/ é o hub de games');
+    }
+  } catch (e) {
+    issues.push({ kind: 'home', severity: 'error', message: '/jogos/ → ' + e.message });
   }
 
   const errors = issues.filter((i) => i.severity === 'error');

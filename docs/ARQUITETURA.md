@@ -10,7 +10,7 @@ O que parece “extenso” na raiz é, na maior parte, o **site publicado**. O c
 ┌─────────────────────────────────────────────────────────────┐
 │  CAMADA 1 — Site público (URLs = pastas na raiz)            │
 │  index.html, biblioteca/, equipamentos/, calculadoras/,     │
-│  css/, js/, imagens/, posts/, loja/, sw.js, manifest.json   │
+│  css/, js/, imagens/, posts/, sw.js, manifest.json          │
 └─────────────────────────────────────────────────────────────┘
                               │
 ┌─────────────────────────────────────────────────────────────┐
@@ -38,16 +38,16 @@ O que parece “extenso” na raiz é, na maior parte, o **site publicado**. O c
 
 | Zona | Pastas / ficheiros | Função |
 |------|-------------------|--------|
-| **Páginas do site** | `index.html`, `biblioteca/`, `equipamentos/`, `calculadoras/`, `guia/`, `loja/`, `info/`, `videos/`, `sorteios/`, `entrar.html`, `perfil.html` | HTML servido tal como está; caminho = URL |
+| **Páginas do site** | `index.html`, `biblioteca/`, `equipamentos/`, `calculadoras/`, `guia/`, `info/`, `videos/`, `sorteios/`, `entrar.html`, `perfil.html` | HTML servido tal como está; caminho = URL |
 | **Assets do browser** | `css/`, `js/`, `imagens/`, `favicon.svg` | CSS, JS do layout, calculadoras, ícones PWA |
 | **Publicações geradas** | `posts/`, `posts.json`, `posts-public.json` | Artigos da biblioteca (build a partir do admin/BD) |
 | **Índices gerados** | `search-index.json`, `sitemap.xml`, `version.json`, `js/*-data.js` | Busca, SEO, cache-bust — **não editar à mão** |
-| **Backend partilhado** | `lib/` | Lógica: API, auth, SQLite, CMS, nav, loja Magalu, posts |
+| **Backend partilhado** | `lib/` | Lógica: API, auth, SQLite, CMS, nav, posts |
 | **Servidor HTTP** | `server/index.js` | Estáticos + `/api/*` em desenvolvimento e PM2 |
 | **Pipeline** | `scripts/` | `npm run build`, migrações, sync páginas ↔ BD |
-| **Conteúdo / seed** | `content/` | JSON de site, páginas, guia, sorteio, loja (espelho da BD) |
+| **Conteúdo / seed** | `content/` | JSON de site, páginas, guia, sorteio (espelho da BD) |
 | **Base de dados** | `data/budganja.db` | SQLite local (não versionado) |
-| **Deploy** | `deploy/`, `netlify/` | Túnel Cloudflare, TWA Android, functions Netlify |
+| **Deploy** | `deploy/`, `netlify/`, `functions/`, `wrangler.toml` | Túnel Cloudflare, Cloudflare Pages, TWA Android, functions Netlify |
 | **Uploads** | `uploads/` | Imagens enviadas pelo admin |
 
 ## `lib/` — mapa rápido
@@ -58,7 +58,7 @@ O que parece “extenso” na raiz é, na maior parte, o **site publicado**. O c
 | **CMS / páginas** | `content-store.js`, `page-html.js`, `sync-db-files.js` |
 | **Auth** | `auth-service.js`, `user-auth-service.js`, `oauth-state-service.js` |
 | **Navegação** | `biblioteca-nav.js`, `ferramentas-nav.js`, `clonadoras-nav.js` |
-| **Domínio** | `loja-catalog.js`, `magalu-influencer.js`, `calculadoras-registry.js`, `sorteios-service.js` |
+| **Domínio** | `calculadoras-registry.js`, `sorteios-service.js`, `loja-inspecoes-posts.js` |
 | **BD** | `lib/db/schema.sql`, `lib/db/content-repos.js`, `store-sql.js` |
 | **Utilitários** | `paths.js`, `asset-version.js`, `security-headers.js` |
 
@@ -68,7 +68,7 @@ O que parece “extenso” na raiz é, na maior parte, o **site publicado**. O c
 
 1. **Página fixa** — editar `equipamentos/foo.html` → `npm run sync:pages` (ou `npm run build`) → BD atualizada.
 2. **Só lógica servidor** — editar `lib/` → reiniciar `npm start` / `deploy/start-now.ps1`.
-3. **Catálogo loja / menu** — editar `lib/loja-catalog.js` ou `lib/biblioteca-nav.js` → `npm run build`.
+3. **Menu** — editar `lib/biblioteca-nav.js` / `lib/ferramentas-nav.js` → `npm run build`.
 4. **Post novo** — Admin ou `posts.json` → `npm run build:posts`.
 
 ## Por que não separar em `frontend/` e `backend/`?
@@ -96,7 +96,7 @@ Um layout `apps/web` + `packages/api` só compensa se o projeto crescer para **v
 | `login.html`, `admin.html` | URLs fixas do admin |
 | `sw.js`, `manifest.json` | PWA na raiz por convenção |
 | `posts.json` | Fonte legada / espelho de metadados |
-| `netlify.toml`, `_redirects` | Config de hosting |
+| `netlify.toml`, `_redirects`, `wrangler.toml`, `_headers` | Config de hosting (Netlify + Cloudflare Pages) |
 
 ## Resumo
 

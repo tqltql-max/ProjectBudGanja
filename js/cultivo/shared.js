@@ -27,23 +27,13 @@
   var SELECTED_GROW_KEY = 'budganja_selected_grow_id';
   var SUBMISSION_NOTIFY_KEY = 'budganja_submission_notify_v1';
   var PHASE_INSPECTION_LINKS = {
-    planejamento: { label: 'Inspeção: início do cultivo', href: '/posts/post-inspecao-cultivo-inicio.html' },
-    germinacao: { label: 'Inspeção: propagação e clonagem', href: '/posts/post-inspecao-propagacao-clonagem.html' },
-    vegetativo: { label: 'Inspeção: nutrição', href: '/posts/post-inspecao-nutricao-cannabis.html' },
-    floracao: { label: 'Inspeção: ciência da floração', href: '/posts/post-inspecao-ciencia-floracao.html' },
-    colheita: { label: 'Inspeção: solo vivo orgânico', href: '/posts/post-inspecao-solo-vivo-organico.html' }
+    planejamento: { label: 'Inspeções do laboratório', href: '/biblioteca/inspecoes/' },
+    germinacao: { label: 'Clonadora 6 estacas', href: '/equipamentos/clonadora-6-estacas.html' },
+    vegetativo: { label: 'Calculadora EC', href: '/calculadoras/cultivo-lab.html?mode=ec' },
+    floracao: { label: 'Calculadora VPD', href: '/calculadoras/cultivo-lab.html?mode=vpd' },
+    colheita: { label: 'Calculadora Super Solo', href: '/calculadoras/super-solo.html' }
   };
-  var DEFAULT_AVATAR = '/imagens/avatars/leaf.svg';
-  var PRESET_AVATARS = [
-    { id: 'leaf', label: 'Folha', src: '/imagens/avatars/leaf.svg' },
-    { id: 'seedling', label: 'Muda', src: '/imagens/avatars/seedling.svg' },
-    { id: 'bud', label: 'Flor', src: '/imagens/avatars/bud.svg' },
-    { id: 'greenhouse', label: 'Estufa', src: '/imagens/avatars/greenhouse.svg' },
-    { id: 'water', label: 'Rega', src: '/imagens/avatars/water.svg' },
-    { id: 'lab', label: 'Laboratório', src: '/imagens/avatars/lab.svg' },
-    { id: 'sun', label: 'Luz', src: '/imagens/avatars/sun.svg' },
-    { id: 'inspector', label: 'Inspetor', src: '/imagens/avatars/inspector.svg' }
-  ];
+  var DEFAULT_AVATAR = '/imagens/avatars/inspector.svg';
 
   function escapeHtml(text) {
     return String(text)
@@ -182,7 +172,6 @@
     SUBMISSION_NOTIFY_KEY: SUBMISSION_NOTIFY_KEY,
     PHASE_INSPECTION_LINKS: PHASE_INSPECTION_LINKS,
     DEFAULT_AVATAR: DEFAULT_AVATAR,
-    PRESET_AVATARS: PRESET_AVATARS,
     escapeHtml: escapeHtml,
     formatDate: formatDate,
     todayDateInputValue: todayDateInputValue,

@@ -1,0 +1,50 @@
+{
+  "date": "2026-08-02",
+  "total": 139,
+  "byGroup": {
+    "tecnico": 84,
+    "lexico": 24,
+    "titulo": 18,
+    "hub": 8,
+    "marca": 5
+  },
+  "linkKinds": {
+    "inspecao": 31,
+    "planta": 22,
+    "pagina": 33,
+    "livro": 51,
+    "outro": 2
+  },
+  "lexicoDeep": 19,
+  "lexicoShallow": [
+    "Barriga de Trigo",
+    "Bhang",
+    "Charas",
+    "Fumo de Angola",
+    "William Davis"
+  ],
+  "tecnicoLivroCount": 48,
+  "tecnicoLivroPriority": [
+    "THC",
+    "CBD",
+    "Sistema endocanabinoide",
+    "Efeito comitiva",
+    "Farmácia Viva",
+    "Quimiotipo",
+    "Endocanabinoidoma",
+    "Terpeno",
+    "Tricoma",
+    "Fitocanabinoide"
+  ],
+  "fixedNullHrefs": [
+    "Entorpecente",
+    "Narcótico"
+  ],
+  "stubEnFixed": 35,
+  "inventory": {
+    "posts": 134,
+    "palavraHtml": 18,
+    "plantas": 43,
+    "animais": 8
+  }
+}

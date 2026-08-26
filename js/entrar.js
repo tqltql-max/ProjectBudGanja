@@ -63,9 +63,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (urlError) {
     const errorMessages = {
       invalid_client: 'Google rejeitou o Client ID. Verifique as credenciais no Google Cloud.',
-      redirect_not_configured: 'Adicione GOOGLE_CLIENT_SECRET no .env e reinicie o site.',
+      redirect_not_configured:
+        'Login com Google ainda não está configurado no servidor. Use e-mail e senha por agora.',
       invalid_state: 'A ligação expirou ou o navegador bloqueou cookies. Tente novamente.',
-      access_denied: 'Login cancelado.'
+      access_denied: 'Login cancelado.',
+      rate_limited: 'Muitas tentativas de login. Aguarde alguns minutos e tente de novo.',
+      server_error: 'O servidor falhou ao falar com o Google. Tente de novo ou use e-mail e senha.',
+      registration_closed:
+        'Cadastros novos temporariamente indisponíveis no momento. Contas já existentes podem entrar normalmente.'
     };
     showError(errorMessages[urlError] || ('Erro Google: ' + urlError));
   }
@@ -77,6 +82,60 @@ document.addEventListener('DOMContentLoaded', async () => {
       return;
     }
   } catch (e) { /* continuar para login */ }
+
+  async function applyRegistrationGate() {
+    const banner = document.getElementById('entrar-registration-banner');
+    const registerTab = document.getElementById('local-tab-register');
+    const googleLabel = document.getElementById('entrar-google-label');
+    let open = false;
+    let message =
+      'Cadastros novos temporariamente indisponíveis no momento. Contas já existentes podem entrar normalmente.';
+    try {
+      const res = await fetch('/api/auth/registration-status', { credentials: 'include' });
+      if (res.ok) {
+        const data = await res.json();
+        open = !!data.open;
+        if (data.message) message = data.message;
+      }
+    } catch (e) {
+      open = false;
+    }
+    document.body.classList.toggle('registration-closed', !open);
+    const subtitle = document.getElementById('entrar-subtitle');
+    if (subtitle) {
+      subtitle.textContent = open
+        ? 'Entre com Google ou e-mail/senha. Pode criar conta nova.'
+        : 'Contas existentes: Google ou e-mail/senha. Cadastros novos estão temporariamente indisponíveis.';
+    }
+    if (banner) {
+      banner.hidden = open;
+      banner.textContent = message;
+    }
+    if (registerTab) {
+      registerTab.hidden = !open;
+      if (!open && registerTab.classList.contains('is-active')) {
+        setLocalTab('login');
+      }
+    }
+    if (registerForm) {
+      if (!open) {
+        registerForm.hidden = true;
+        registerForm.setAttribute('aria-disabled', 'true');
+      } else {
+        registerForm.removeAttribute('aria-disabled');
+      }
+    }
+    if (googleLabel) {
+      googleLabel.textContent = open
+        ? 'Entrar com Google'
+        : 'Entrar com Google (contas existentes)';
+    }
+    if (!open && noticeEl && !urlError) {
+      showNotice(message);
+    }
+  }
+
+  await applyRegistrationGate();
 
   if (loginForm) {
     loginForm.addEventListener('submit', async (e) => {
@@ -114,10 +173,15 @@ document.addEventListener('DOMContentLoaded', async () => {
       const emailEl = document.getElementById('local-register-email');
       const passEl = document.getElementById('local-register-password');
       const passConfirmEl = document.getElementById('local-register-password-confirm');
+      const termsEl = document.getElementById('local-register-community-terms');
       const password = passEl ? passEl.value : '';
       const passwordConfirm = passConfirmEl ? passConfirmEl.value : '';
       if (password !== passwordConfirm) {
         showError('As senhas não coincidem.');
+        return;
+      }
+      if (!termsEl || !termsEl.checked) {
+        showError('Aceite os termos de uso para criar a conta.');
         return;
       }
       try {
@@ -128,7 +192,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           body: JSON.stringify({
             name: nameEl ? nameEl.value : '',
             email: emailEl ? emailEl.value : '',
-            password: password
+            password: password,
+            communityTermsAccepted: true
           })
         });
         const data = await res.json().catch(() => ({}));
@@ -228,7 +293,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   if (!config.googleEnabled || !config.googleClientId) {
-    showNotice('Login com Google não configurado no servidor. Pode usar a conta local acima.');
+    if (redirectBtn) {
+      redirectBtn.hidden = true;
+      redirectBtn.removeAttribute('href');
+      redirectBtn.setAttribute('aria-disabled', 'true');
+    }
+    if (btnWrap) btnWrap.hidden = true;
+    const googleLabel = document.getElementById('entrar-google-label');
+    if (googleLabel) {
+      googleLabel.textContent = 'Google em breve — use e-mail e senha';
+    }
+    if (!urlError) {
+      showNotice('Login com Google ainda não está configurado no servidor. Use e-mail e senha.');
+    }
     return;
   }
 

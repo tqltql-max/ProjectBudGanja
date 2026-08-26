@@ -17,7 +17,7 @@ desktop.ini
 *.swp
 
 # Backup externo (fora do repo)
-scripts/_jardimhg-*.json
+scripts/_tmp-*.json
 scripts/_tmp-*.js
 
 # Cursor
@@ -48,3 +48,28 @@ deploy/android/bubblewrap-project/
 deploy/android/*.keystore
 deploy/android/*.jks
 deploy/android/*.pepk
+deploy/android/.keystore-password
+deploy/android/keystore.password.txt
+
+# JDK / tooling local (não versionar)
+tools/jdk-*/
+tools/*.zip
+
+# Scripts temporários de download/pesquisa
+scripts/tmp-*
+scripts/tmp-*/
+
+# Fontes de imagem temporárias
+imagens/**/_src/
+
+# Local Netlify folder
+.netlify
+
+# Cloudflare Pages / Wrangler
+.wrangler/
+.dev.vars
+_pages-dist/
+
+# Áudio acima do limite de 25 MiB da Cloudflare Pages
+*.m4a
+*.mp3

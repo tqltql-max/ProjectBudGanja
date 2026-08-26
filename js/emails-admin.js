@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     bannerEl.hidden = false;
     bannerEl.innerHTML =
       '<strong>SMTP não configurado.</strong> Defina <code>GMAIL_USER</code> e <code>GMAIL_APP_PASSWORD</code> no <code>.env</code> e reinicie o servidor. ' +
-      'Sem isto, nenhum e-mail (boas-vindas, encomendas, sorteios) será enviado.';
+      'Sem isto, nenhum e-mail (boas-vindas, sorteios) será enviado.';
   }
 
   async function loadStatus() {

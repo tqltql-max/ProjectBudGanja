@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
   <title>Painel Admin | Inspetor BudGanja</title>
-  <link rel="icon" href="/favicon.svg?v=209" type="image/svg+xml">
-  <link rel="stylesheet" href="/css/style.css?v=209">
+    <link rel="icon" href="/imagens/favicon-32.v353.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.v353.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.v353.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/imagens/icon-192.v353.png" sizes="192x192" type="image/png">
+    <link rel="shortcut icon" href="/favicon.v353.ico" sizes="any">
+    <link rel="icon" href="/favicon.v353.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v353.png">
+    <link rel="manifest" href="/manifest.json?v=353">
+    <meta name="theme-color" content="#0a2230">
+    <link rel="stylesheet" href="/css/style.css?v=353">
   <script>(function(){var t=localStorage.getItem('budganja-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
   <style>
     .admin-charts-row { display:flex; gap:12px; flex-wrap:wrap; margin:0 0 20px; }
@@ -25,7 +33,7 @@
       <div class="admin-hub-intro">
         <p class="admin-hub-eyebrow">Área administrativa</p>
         <h1>Painel de publicações</h1>
-        <p class="admin-hub-sub">Olá, <strong id="admin-user">admin</strong> — gere artigos, sorteios ou encomendas da loja.</p>
+        <p class="admin-hub-sub">Olá, <strong id="admin-user">admin</strong> — gere artigos e sorteios.</p>
       </div>
       <div class="admin-hub-actions">
         <a href="/" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Ver site</a>
@@ -36,10 +44,12 @@
     <nav class="admin-nav" aria-label="Secções do admin">
       <a href="/admin.html" class="admin-nav-link is-active" aria-current="page">Publicações</a>
       <a href="/pesquisas-admin.html" class="admin-nav-link">Submissões</a>
+      <a href="/gtarp-admin.html" class="admin-nav-link">GTA RP</a>
+      <a href="/comunidade-admin.html" class="admin-nav-link">Comunidade</a>
       <a href="/usuarios-admin.html" class="admin-nav-link">Utilizadores</a>
       <a href="/sorteios-admin.html" class="admin-nav-link">Sorteios</a>
-      <a href="/loja-admin.html" class="admin-nav-link">Encomendas</a>
       <a href="/admin-db.html" class="admin-nav-link">Base de Dados</a>
+      <a href="/info/apresentacao-unifesp.html" class="admin-nav-link">Apresentação UNIFESP</a>
       <button type="button" id="show-icons-btn" class="admin-nav-link admin-nav-link--icon">🎨 Ícones</button>
     </nav>
 
@@ -70,7 +80,7 @@
       </div>
 
       <p class="admin-toolbar-hint">Atalho: <kbd>Ctrl</kbd> + <kbd>N</kbd> para nova publicação</p>
-      <p class="admin-generated-posts-note result-muted">Inspeções do <strong>Guia de Cultivo</strong>, do canal <strong>Jardim HG</strong> e similares são geradas em <code>lib/*-inspecoes-posts.js</code> no build — não aparecem aqui; edite o ficheiro fonte e rode <code>npm run build</code>.</p>
+      <p class="admin-generated-posts-note result-muted">Inspeções do <strong>Guia de Cultivo</strong> e similares são geradas em <code>lib/*-inspecoes-posts.js</code> no build — não aparecem aqui; edite o ficheiro fonte e rode <code>npm run build</code>.</p>
 
       <div id="posts-table-wrap" class="admin-studio-table-wrap">
         <div id="posts-table" class="admin-studio-table" role="table" aria-label="Suas publicações"></div>
@@ -179,16 +189,26 @@
     <!-- Vista: ícones do site -->
     <section id="admin-icons-view" class="admin-studio" hidden>
       <h2 class="admin-section-title" style="margin-bottom:1.5rem;">🎨 Ícones do Site</h2>
-      <p class="result-muted" style="margin-bottom:1.5rem;">Carregue uma imagem PNG/JPG/WebP (mínimo 512×512 px recomendado). O sistema gera automaticamente todos os tamanhos e atualiza a versão do cache.</p>
+      <p class="result-muted" style="margin-bottom:1rem;">Carregue PNG/JPG/WebP (mín. 512×512). Actualiza <strong>aba do site</strong>, <strong>logo do header</strong>, <strong>PWA/app</strong> (192/512/maskable + Apple) e favicons usados pelo <strong>Google</strong> (48px+). O Google pode demorar dias a mostrar o novo ícone na pesquisa.</p>
+      <ul class="result-muted" style="margin:0 0 1.5rem;padding-left:1.2rem;font-size:.85rem;line-height:1.45;">
+        <li>Site / aba: favicon.ico, favicon-16/32/48, favicon.svg, icon-192</li>
+        <li>Google Search: favicon-48 + icon-192 (home)</li>
+        <li>App PWA: icon-192, icon-512, icon-512-maskable, apple-touch-icon</li>
+        <li>Logo header/menu: app-icon.png</li>
+      </ul>
 
       <div style="display:flex;gap:2rem;flex-wrap:wrap;align-items:flex-start;margin-bottom:2rem;">
         <div>
-          <p style="margin:0 0 .5rem;font-size:.85rem;color:var(--muted)">Ícone atual (192px)</p>
+          <p style="margin:0 0 .5rem;font-size:.85rem;color:var(--muted)">App / Google (192)</p>
           <img id="icons-current-192" src="" alt="Ícone atual 192px" width="96" height="96" style="border-radius:12px;border:1px solid var(--border);background:#111;">
         </div>
         <div>
-          <p style="margin:0 0 .5rem;font-size:.85rem;color:var(--muted)">Favicon atual</p>
+          <p style="margin:0 0 .5rem;font-size:.85rem;color:var(--muted)">Favicon 48 (Google)</p>
           <img id="icons-current-favicon" src="" alt="Favicon atual" width="48" height="48" style="border-radius:6px;border:1px solid var(--border);background:#111;">
+        </div>
+        <div>
+          <p style="margin:0 0 .5rem;font-size:.85rem;color:var(--muted)">Header</p>
+          <img id="icons-current-app" src="" alt="Logo header" width="48" height="48" style="border-radius:10px;border:1px solid var(--border);background:#111;">
         </div>
         <div id="icons-preview-wrap" hidden>
           <p style="margin:0 0 .5rem;font-size:.85rem;color:var(--verde)">Pré-visualização (novo)</p>
@@ -209,15 +229,17 @@
 
   </main>
   <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=209"></script>
-  <script src="/js/ferramentas-nav-data.js?v=209"></script>
-  <script src="/js/i18n-data.js?v=209"></script>
-  <script src="/js/i18n.js?v=209"></script>
-  <script src="/js/layout.js?v=209"></script>
-  <script src="/js/youtube.js?v=209"></script>
-  <script src="/js/markdown.js?v=209"></script>
-  <script src="/js/admin-charts.js?v=209"></script>
-  <script src="/js/admin.js?v=209"></script>
-  <script src="/js/admin-command-palette.js?v=209"></script>
+  <script src="/js/app-version-check.js?v=353"></script>
+  <script src="/js/ferramentas-nav-data.js?v=353"></script>
+  <script src="/js/i18n-data.js?v=353"></script>
+    <script src="/js/page-translations-data.js?v=353"></script>
+  <script src="/js/i18n.js?v=353"></script>
+  <script src="/js/layout.js?v=353"></script>
+  <script src="/js/youtube.js?v=353"></script>
+  <script src="/js/markdown.js?v=353"></script>
+  <script src="/js/admin-charts.js?v=353"></script>
+  <script src="/js/media-upload.js?v=353"></script>
+  <script src="/js/admin.js?v=353"></script>
+  <script src="/js/admin-command-palette.js?v=353"></script>
 </body>
 </html>

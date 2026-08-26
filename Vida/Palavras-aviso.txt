@@ -1,0 +1,147 @@
+Catálogo de palavras de aviso — trilha Vida × modo Aprender
+Fonte: expressão «A vingança nunca é plena, mata a alma e a envenena»
+e rede emocional BudGanja (Raiva, Emoção, Venom, Vida).
+
+No modo Aprender, o traço pontilhado terracota marca tokens sem tradução
+no idioma activo. Este catálogo classifica o núcleo semântico da frase
+como aviso editorial — não é proibição de uso, é literacia emocional.
+
+Tom:
+  danger  = palavra perigosa (promessa tóxica / dano / retaliação) — VERMELHO
+  caution = uso cauteloso (metáfora íntima, afecto, dose, aviso) — ÂMBAR
+
+Tip no Aprender (vermelhas):
+  Categoria · Comum: <sentido mundano> · BudGanja: <leitura lab> · Palavra perigosa
+
+---
+PERIGOSAS (tone: danger) — por categoria + significado mundano
+
+## Retaliação
+1. vingança
+   Mundano: Desforra ou castigo a quem ofendeu.
+   BudGanja: Retaliação que promete equilíbrio e cobra o preço em quem a cultiva.
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+2. retaliação
+   Mundano: Resposta igual ao dano sofrido; «olho por olho».
+   BudGanja: Conta de «olho por olho» que a frase diz nunca fechar («nunca é plena»).
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+3. revidar
+   Mundano: Responder a um golpe com outro golpe.
+   BudGanja: Devolver o golpe — impulso que a oralidade avisa contra.
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+## Dano à vida
+4. mata / matar
+   Mundano: Tirar a vida; causar a morte.
+   BudGanja: Aqui = esvaziar o centro íntimo (não homicídio literal).
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+## Toxina
+5. veneno
+   Mundano: Substância tóxica que pode matar ou adoecer.
+   BudGanja: Carga afectiva que ocupa o lugar do cuidado — ≠ toxina de planta.
+   Href: /posts/post-inspecao-filme-venom.html
+
+6. envenena / envenenar
+   Mundano: Dar ou aplicar veneno; tornar tóxico.
+   BudGanja: Corrompe por dentro — metáfora de dose que fica no próprio sujeito.
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+7. corromper
+   Mundano: Estragar; deteriorar moral ou materialmente.
+   BudGanja: Estragar por dentro — segundo dano da frase («envenena»).
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+## Afecto tóxico
+8. rancor
+   Mundano: Ódio ou mágoa guardada contra alguém.
+   BudGanja: Ressentimento guardado; o ditado trata-o como dose auto-ingerida.
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+9. ressentimento
+   Mundano: Mágoa persistente por ofensa recebida.
+   BudGanja: Ferida que continua a actuar depois do facto — nutriente do rancor.
+   Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+## Esvaziamento
+10. esvaziar
+    Mundano: Deixar vazio; retirar o conteúdo.
+    BudGanja: Esvaziar o centro íntimo — primeiro dano da frase («mata a alma»).
+    Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+---
+USO CAUTELOSO (tone: caution)
+
+11. alma
+    Mundano: Princípio vital / centro da pessoa (uso corrente e religioso).
+    BudGanja: Centro íntimo (paz, carácter, humor de fundo) — não teologia dogmática.
+    Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+12. espírito
+    Mundano: Ânimo, disposição; também sentido religioso.
+    BudGanja: Ânimo / disposição interior afectada pelo rancor.
+    Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+13. raiva
+    Mundano: Ira; indignação forte.
+    BudGanja: Fogo de limite e indignação — emoção com ofício, não vilania.
+    Href: /posts/post-inspecao-palavra-raiva.html
+
+14. emoção
+    Mundano: Sentimento ou estado afectivo.
+    BudGanja: Nome do afecto antes da personagem; hub da sala de comando.
+    Href: /posts/post-inspecao-palavra-emocao.html
+
+15. justiça
+    Mundano: Dar a cada um o que é devido; equidade.
+    BudGanja: O que a vingança promete e não entrega — usar com precisão.
+    Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+16. plena
+    Mundano: Completa; cheia; cumprida.
+    BudGanja: Completa / cumprida — na frase: a vingança «nunca é plena».
+    Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+17. dose
+    Mundano: Quantidade de remédio ou substância a ingerir.
+    BudGanja: Quantidade que se ingere; metáfora toxicológica do ressentimento.
+    Href: /posts/post-inspecao-filme-venom.html
+
+18. aviso
+    Mundano: Alerta; informação que previne.
+    BudGanja: O que a frase faz ao ouvinte — alerta, não condenação do afecto.
+    Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+19. ditado / ditados
+    Mundano: Frase popular de sabedoria.
+    BudGanja: Sabedoria em circulação (oralidade → TV → meme).
+    Href: /biblioteca/inspecoes/#inspecoes-expressoes
+
+20. expressão / expressões
+    Mundano: Modo de dizer; frase feita.
+    BudGanja: Unidade da série Expressões e Ditados — frase com método.
+    Href: /biblioteca/inspecoes/#inspecoes-expressoes
+
+21. metáfora
+    Mundano: Figura que transporta sentido de um domínio para outro.
+    BudGanja: Transporte de sentido (veneno afectivo ≠ toxina botânica).
+    Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+22. oralidade
+    Mundano: Comunicação pela fala (não escrita).
+    BudGanja: Circulação por voz, memória e refrão — antes e depois da TV.
+    Href: /posts/post-inspecao-expressao-vinganca-mata-alma-envenena.html
+
+---
+Par tipográfico (já em Caracteres-tipograficos.txt)
+« » · — … → — usados nas citações desta frase e na trilha Vida.
+
+---
+Categoria no Guia de Palavras (só as vermelhas):
+  /guia/palavras.html?group=aviso
+  node scripts/upsert-guia-palavras-aviso.js
+
+Atalho de verificação
+node scripts/patch-learn-palavras-aviso.js

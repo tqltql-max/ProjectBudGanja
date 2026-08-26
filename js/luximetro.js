@@ -120,7 +120,7 @@
         try {
             new Notification(title, {
                 body: body,
-                icon: '/imagens/icon-192.png',
+                icon: '/imagens/icon-192.v' + ((typeof ASSET_V !== 'undefined' && ASSET_V) ? ASSET_V : '288') + '.png',
                 tag: 'ppfd-alert',
                 renotify: true
             });

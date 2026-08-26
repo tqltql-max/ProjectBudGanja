@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   const accountEl = document.getElementById('perfil-account');
   const accountEditBtn = document.getElementById('perfil-account-edit-btn');
   const liveStatusEl = document.getElementById('perfil-live-status');
+  const incompleteBannerEl = document.getElementById('perfil-incomplete-banner');
+  const completeBtn = document.getElementById('perfil-complete-btn');
 
   const PAGE_SELF = '/perfil.html';
 
@@ -20,24 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   let profileSaving = false;
 
   const MIN_USER_AGE = 18;
-  const DEFAULT_AVATAR = '/imagens/avatars/leaf.svg';
-  const PRESET_AVATARS = [
-    { id: 'leaf', label: 'Folha', src: '/imagens/avatars/leaf.svg' },
-    { id: 'seedling', label: 'Muda', src: '/imagens/avatars/seedling.svg' },
-    { id: 'bud', label: 'Flor', src: '/imagens/avatars/bud.svg' },
-    { id: 'greenhouse', label: 'Estufa', src: '/imagens/avatars/greenhouse.svg' },
-    { id: 'water', label: 'Rega', src: '/imagens/avatars/water.svg' },
-    { id: 'lab', label: 'Laboratório', src: '/imagens/avatars/lab.svg' },
-    { id: 'sun', label: 'Luz', src: '/imagens/avatars/sun.svg' },
-    { id: 'inspector', label: 'Inspetor', src: '/imagens/avatars/inspector.svg' }
-  ];
-
-  const avatarPreviewEl = document.getElementById('profile-avatar-preview');
-  const avatarPresetsEl = document.getElementById('profile-avatar-presets');
-  const avatarUrlEl = document.getElementById('profile-avatar-url');
-  const avatarFileEl = document.getElementById('profile-avatar-file');
-  const avatarUploadLabelEl = document.getElementById('profile-avatar-upload-label');
-  let avatarUploadPending = false;
+  const DEFAULT_AVATAR = '/imagens/avatars/inspector.svg';
 
   function escapeHtml(text) {
     return String(text)
@@ -74,82 +59,57 @@ document.addEventListener('DOMContentLoaded', async () => {
     return String(raw).trim().split(/\s+/)[0] || 'Cultivador';
   }
 
-  function sanitizeUsername(raw) {
-    const base = String(raw || '')
-      .trim()
-      .toLowerCase()
-      .replace(/[^a-z0-9._-]/g, '')
-      .replace(/[._-]{2,}/g, '-')
-      .replace(/^[._-]+|[._-]+$/g, '');
-    if (base.length < 3 || base.length > 32) return '';
-    return base;
+  function resolveProfileAge(profile, data) {
+    const raw = profile && profile.age != null
+      ? profile.age
+      : (data && data.age != null ? data.age : null);
+    const age = Number(raw);
+    return Number.isFinite(age) ? age : NaN;
   }
 
-  function calculateAgeFromBirthDate(raw) {
-    const text = String(raw || '').trim();
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(text)) return null;
-    const birth = new Date(text + 'T00:00:00.000Z');
-    if (isNaN(birth.getTime())) return null;
-    const now = new Date();
-    let age = now.getUTCFullYear() - birth.getUTCFullYear();
-    const monthDiff = now.getUTCMonth() - birth.getUTCMonth();
-    const dayDiff = now.getUTCDate() - birth.getUTCDate();
-    if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) age -= 1;
-    if (age < 0 || age > 120) return null;
-    return age;
+  function resolveProfileName(profile, data) {
+    return String(
+      (profile && profile.displayName) ||
+      (data && data.name) ||
+      ''
+    ).trim();
   }
 
-  function resolvedProfileAge(profile) {
-    if (!profile) return null;
-    const byBirthDate = calculateAgeFromBirthDate(profile.birthDate);
-    if (byBirthDate != null) return byBirthDate;
-    const raw = profile.age;
-    if (raw === null || raw === undefined || raw === '') return null;
-    const parsed = parseInt(raw, 10);
-    if (isNaN(parsed)) return null;
-    return parsed;
+  function isProfileComplete(profile, data) {
+    // Confia no cálculo local — o flag da API pode ficar desactualizado com birth_date antigo.
+    if (!profile && !data) return false;
+    if (data && data.profileComplete === true) return true;
+    const name = resolveProfileName(profile, data);
+    const age = resolveProfileAge(profile, data);
+    return name.length >= 2 && !isNaN(age) && age >= MIN_USER_AGE;
   }
 
-  function isUserProfileComplete(data) {
-    if (!data) return false;
-    if (typeof data.profileComplete === 'boolean') return data.profileComplete;
-    return isProfileComplete(data.profile);
-  }
-
-  function isProfileComplete(profile) {
-    if (!profile) return false;
-    const name = String(profile.displayName || '').trim();
-    const username = sanitizeUsername(profile.username || '');
-    const age = resolvedProfileAge(profile);
-    return name.length >= 2 && !!username && age !== null && !isNaN(age) && age >= MIN_USER_AGE;
-  }
-
-  function refreshAgePreview() {
-    const birthDateEl = document.getElementById('profile-birthDate');
-    const previewEl = document.getElementById('profile-age-preview');
-    if (!previewEl) return;
-    const age = calculateAgeFromBirthDate(birthDateEl && birthDateEl.value);
-    if (age == null) {
-      previewEl.textContent = 'Menores de 18 anos não podem utilizar este site.';
-      return;
+  function wantsExplicitEdit() {
+    try {
+      return new URLSearchParams(window.location.search).get('edit') === '1';
+    } catch (e) {
+      return false;
     }
-    previewEl.textContent = age >= MIN_USER_AGE
-      ? 'Idade detectada: ' + age + ' anos.'
-      : 'É necessário ter 18 anos ou mais (actual: ' + age + ').';
+  }
+
+  function clearEditQuery() {
+    try {
+      const url = new URL(window.location.href);
+      if (!url.searchParams.has('edit')) return;
+      url.searchParams.delete('edit');
+      window.history.replaceState({}, '', url.pathname + url.search + url.hash);
+    } catch (e) { /* ignore */ }
   }
 
   function validateRegistrationForm() {
     const nameEl = document.getElementById('profile-displayName');
-    const usernameEl = document.getElementById('profile-username');
-    const birthDateEl = document.getElementById('profile-birthDate');
+    const ageEl = document.getElementById('profile-age');
+    const whatsappEl = document.getElementById('profile-whatsapp');
     const name = nameEl ? nameEl.value.trim() : '';
-    const username = sanitizeUsername(usernameEl && usernameEl.value);
-    const age = calculateAgeFromBirthDate(birthDateEl && birthDateEl.value);
+    const age = ageEl ? parseInt(ageEl.value, 10) : NaN;
+    const whatsappDigits = whatsappEl ? String(whatsappEl.value || '').replace(/\D/g, '') : '';
     if (name.length < 2) {
       return 'Informe um nome válido (mínimo 2 caracteres).';
-    }
-    if (!username) {
-      return 'Use um nome de utilizador válido (3-32, letras, números, . _ -).';
     }
     if (isNaN(age) || age < MIN_USER_AGE) {
       return 'É necessário ter 18 anos ou mais para utilizar o site.';
@@ -157,13 +117,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (age > 120) {
       return 'Informe uma idade válida.';
     }
+    if (whatsappDigits && (whatsappDigits.length < 10 || whatsappDigits.length > 15)) {
+      return 'WhatsApp inválido — use DDD + número (10 a 15 dígitos), ou deixe em branco.';
+    }
     return '';
   }
 
   function getProfilePicture(data) {
     if (!data) return DEFAULT_AVATAR;
-    const custom = data.profile && data.profile.avatarUrl ? String(data.profile.avatarUrl).trim() : '';
-    if (custom) return custom;
     if (data.picture) return data.picture;
     if (data.googlePicture) return data.googlePicture;
     return DEFAULT_AVATAR;
@@ -178,6 +139,36 @@ document.addEventListener('DOMContentLoaded', async () => {
     }));
   }
 
+  function formatWhatsappDisplay(raw) {
+    const digits = String(raw || '').replace(/\D/g, '');
+    if (!digits) return '—';
+    if (digits.length === 11) {
+      return '(' + digits.slice(0, 2) + ') ' + digits.slice(2, 7) + '-' + digits.slice(7);
+    }
+    if (digits.length === 10) {
+      return '(' + digits.slice(0, 2) + ') ' + digits.slice(2, 6) + '-' + digits.slice(6);
+    }
+    return digits;
+  }
+
+  function updateAccountSummary(data) {
+    const profile = data && data.profile ? data.profile : {};
+    const name = String(profile.displayName || data.name || '').trim() || '—';
+    const age = profile.age != null && !isNaN(profile.age) ? String(profile.age) + ' anos' : '—';
+    const email = String(data && data.email || '').trim() || '—';
+    const whatsapp = formatWhatsappDisplay(profile.whatsapp);
+    const nameEl = document.getElementById('perfil-summary-name');
+    const ageEl = document.getElementById('perfil-summary-age');
+    const emailEl = document.getElementById('perfil-summary-email');
+    const whatsappEl = document.getElementById('perfil-summary-whatsapp');
+    const badgeEl = document.getElementById('perfil-account-badge');
+    if (nameEl) nameEl.textContent = name;
+    if (ageEl) ageEl.textContent = age;
+    if (emailEl) emailEl.textContent = email;
+    if (whatsappEl) whatsappEl.textContent = whatsapp;
+    if (badgeEl) badgeEl.hidden = !isProfileComplete(profile, data);
+  }
+
   function updateUserHeader(data) {
     const avatar = document.getElementById('perfil-avatar');
     const nameEl = document.getElementById('perfil-name');
@@ -189,242 +180,25 @@ document.addEventListener('DOMContentLoaded', async () => {
       avatar.hidden = false;
     }
     if (nameEl) {
-      nameEl.textContent = isProfileComplete(data.profile)
-        ? 'Olá, ' + firstName(data.profile, data.name) + '!'
-        : ((data.profile && data.profile.displayName) || data.name || 'Meu perfil');
+      const full = (data.profile && data.profile.displayName) || data.name || '';
+      nameEl.textContent = String(full).trim() || 'Conta';
     }
     if (emailEl) emailEl.textContent = data.email || '';
-  }
-
-  function readFileAsDataUrl(file) {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = reject;
-      reader.readAsDataURL(file);
-    });
-  }
-
-  function setAvatarPreview(url) {
-    const src = url || DEFAULT_AVATAR;
-    if (avatarPreviewEl) avatarPreviewEl.src = src;
-    if (avatarUrlEl) avatarUrlEl.value = url || '';
-    if (user && user.profile) {
-      user.profile.avatarUrl = url || '';
-    }
-    if (avatarPresetsEl) {
-      avatarPresetsEl.querySelectorAll('.perfil-avatar-option').forEach((btn) => {
-        const match = btn.getAttribute('data-src') === url
-          || (!url && btn.getAttribute('data-src') === DEFAULT_AVATAR);
-        btn.classList.toggle('is-active', match);
-        btn.setAttribute('aria-selected', match ? 'true' : 'false');
-      });
-    }
-    updateAvatarStatus(url);
-    if (user) updateUserHeader(user);
-  }
-
-  function updateAvatarStatus(url) {
-    const statusEl = document.getElementById('profile-avatar-status');
-    if (!statusEl) return;
-    const custom = String(url || '').trim();
-    if (!custom) {
-      statusEl.textContent = user && user.googlePicture
-        ? 'A usar a foto da conta Google.'
-        : 'Escolha um avatar abaixo ou envie a sua foto.';
-      return;
-    }
-    if (custom.indexOf('/uploads/avatar-') === 0) {
-      statusEl.textContent = 'Foto personalizada seleccionada.';
-      return;
-    }
-    const preset = PRESET_AVATARS.find((item) => item.src === custom);
-    statusEl.textContent = preset
-      ? 'Avatar «' + preset.label + '» seleccionado.'
-      : 'Avatar seleccionado.';
-  }
-
-  async function persistAvatarChoice(message) {
-    if (!user || !user.profile) return null;
-    const avatarUrl = user.profile.avatarUrl != null
-      ? String(user.profile.avatarUrl).trim()
-      : (avatarUrlEl ? avatarUrlEl.value.trim() : '');
-
-    updateUserHeader(user);
-    broadcastProfilePicture(user);
-
-    try {
-      const res = await fetch('/api/user/profile/avatar', {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
-        body: JSON.stringify({ avatarUrl: avatarUrl })
-      });
-      const data = await res.json().catch(() => ({}));
-      if (!res.ok) {
-        flashLiveStatus(data.error || 'Erro ao guardar foto do perfil.', true);
-        setStatus(formStatus, data.error || 'Erro ao guardar foto.', true);
-        return null;
-      }
-      user = data.user;
-      if (user && user.profile && avatarUrlEl) {
-        avatarUrlEl.value = user.profile.avatarUrl || '';
-      }
-      updateUserHeader(user);
-      broadcastProfilePicture(user);
-      if (message) {
-        flashLiveStatus(message);
-        setStatus(formStatus, message);
-      }
-      return user;
-    } catch (err) {
-      flashLiveStatus('Servidor indisponível — tente de novo.', true);
-      setStatus(formStatus, 'Servidor indisponível.', true);
-      return null;
-    }
-  }
-
-  function fillAvatarFields(profile, data) {
-    const custom = profile && profile.avatarUrl ? String(profile.avatarUrl).trim() : '';
-    const googleBtn = document.getElementById('profile-avatar-google-btn');
-    if (googleBtn) {
-      googleBtn.hidden = !(data && data.googlePicture);
-    }
-    if (custom) {
-      setAvatarPreview(custom);
-      if (avatarUploadLabelEl) {
-        avatarUploadLabelEl.textContent = custom.indexOf('/uploads/avatar-') === 0
-          ? 'Alterar foto'
-          : 'Enviar foto';
-      }
-      return;
-    }
-    const google = data && data.googlePicture;
-    const preview = google || DEFAULT_AVATAR;
-    if (avatarPreviewEl) avatarPreviewEl.src = preview;
-    if (avatarUrlEl) avatarUrlEl.value = '';
-    if (user && user.profile) user.profile.avatarUrl = '';
-    if (avatarPresetsEl) {
-      avatarPresetsEl.querySelectorAll('.perfil-avatar-option').forEach((btn) => {
-        btn.classList.remove('is-active');
-        btn.setAttribute('aria-selected', 'false');
-      });
-    }
-    if (avatarUploadLabelEl) avatarUploadLabelEl.textContent = 'Enviar foto';
-    updateAvatarStatus('');
-  }
-
-  function initAvatarPicker() {
-    if (!avatarPresetsEl) return;
-    avatarPresetsEl.innerHTML = PRESET_AVATARS.map((item) =>
-      '<button type="button" class="perfil-avatar-option" role="option" data-src="' + item.src + '" ' +
-      'data-label="' + escapeHtml(item.label) + '" aria-label="' + escapeHtml(item.label) + '" title="' + escapeHtml(item.label) + '">' +
-      '<span class="perfil-avatar-option-img-wrap">' +
-      '<img src="' + item.src + '" alt="" width="52" height="52" loading="lazy">' +
-      '</span>' +
-      '<span class="perfil-avatar-option-label">' + escapeHtml(item.label) + '</span>' +
-      '</button>'
-    ).join('');
-
-    avatarPresetsEl.querySelectorAll('.perfil-avatar-option').forEach((btn) => {
-      btn.addEventListener('click', async () => {
-        const src = btn.getAttribute('data-src');
-        const label = btn.getAttribute('data-label') || 'Avatar';
-        setAvatarPreview(src);
-        if (avatarFileEl) avatarFileEl.value = '';
-        if (avatarUploadLabelEl) avatarUploadLabelEl.textContent = 'Enviar foto';
-        await persistAvatarChoice('Avatar «' + label + '» guardado.');
-      });
-    });
-
-    const googleBtn = document.getElementById('profile-avatar-google-btn');
-    if (googleBtn) {
-      googleBtn.addEventListener('click', async () => {
-        if (!user || !user.googlePicture) return;
-        user.profile.avatarUrl = '';
-        if (avatarUrlEl) avatarUrlEl.value = '';
-        if (avatarPreviewEl) avatarPreviewEl.src = user.googlePicture;
-        if (avatarFileEl) avatarFileEl.value = '';
-        if (avatarPresetsEl) {
-          avatarPresetsEl.querySelectorAll('.perfil-avatar-option').forEach((btn) => {
-            btn.classList.remove('is-active');
-            btn.setAttribute('aria-selected', 'false');
-          });
-        }
-        updateAvatarStatus('');
-        await persistAvatarChoice('Foto Google restaurada.');
-      });
-    }
-
-    if (avatarFileEl) {
-      avatarFileEl.addEventListener('change', async () => {
-        const file = avatarFileEl.files && avatarFileEl.files[0];
-        if (!file) return;
-        if (file.size > 2 * 1024 * 1024) {
-          setStatus(formStatus, 'A imagem deve ter no máximo 2 MB.', true);
-          avatarFileEl.value = '';
-          return;
-        }
-        if (!/^image\/(jpeg|png|webp)$/i.test(file.type)) {
-          setStatus(formStatus, 'Use JPG, PNG ou WebP.', true);
-          avatarFileEl.value = '';
-          return;
-        }
-        avatarUploadPending = true;
-        if (avatarUploadLabelEl) avatarUploadLabelEl.textContent = 'A enviar…';
-        setStatus(formStatus, 'A enviar foto…');
-
-        try {
-          const dataUrl = await readFileAsDataUrl(file);
-          const res = await fetch('/api/user/avatar', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            credentials: 'include',
-            body: JSON.stringify({ data: dataUrl })
-          });
-          const payload = await res.json().catch(() => ({}));
-          if (!res.ok) {
-            setStatus(formStatus, payload.error || 'Falha no upload.', true);
-            return;
-          }
-          if (payload.user) {
-            user = payload.user;
-            if (user.profile && user.profile.avatarUrl) {
-              setAvatarPreview(user.profile.avatarUrl);
-            } else if (payload.url) {
-              setAvatarPreview(payload.url);
-            }
-          } else if (payload.url) {
-            setAvatarPreview(payload.url);
-            await persistAvatarChoice('Foto guardada no perfil.');
-            return;
-          }
-          updateUserHeader(user);
-          broadcastProfilePicture(user);
-          if (avatarUploadLabelEl) avatarUploadLabelEl.textContent = 'Alterar foto';
-          flashLiveStatus('Foto guardada no perfil.');
-          setStatus(formStatus, 'Foto guardada no perfil.');
-        } catch (err) {
-          setStatus(formStatus, 'Servidor indisponível.', true);
-        } finally {
-          avatarUploadPending = false;
-        }
-      });
-    }
+    updateAccountSummary(data);
   }
 
   function readForm() {
     const nameEl = document.getElementById('profile-displayName');
-    const usernameEl = document.getElementById('profile-username');
-    const birthDateEl = document.getElementById('profile-birthDate');
+    const ageEl = document.getElementById('profile-age');
+    const whatsappEl = document.getElementById('profile-whatsapp');
     const base = user && user.profile ? Object.assign({}, user.profile) : {};
     if (nameEl) base.displayName = nameEl.value.trim();
-    if (usernameEl) base.username = sanitizeUsername(usernameEl.value);
-    if (birthDateEl) base.birthDate = String(birthDateEl.value || '').trim();
-    base.age = calculateAgeFromBirthDate(base.birthDate);
-    if (avatarUrlEl) {
-      const picked = avatarUrlEl.value.trim();
-      if (picked) base.avatarUrl = picked;
+    if (ageEl && ageEl.value !== '') {
+      const age = parseInt(ageEl.value, 10);
+      base.age = isNaN(age) ? null : age;
+    }
+    if (whatsappEl) {
+      base.whatsapp = String(whatsappEl.value || '').replace(/\D/g, '');
     }
     return base;
   }
@@ -432,42 +206,148 @@ document.addEventListener('DOMContentLoaded', async () => {
   function fillForm(profile) {
     const p = profile || {};
     const nameEl = document.getElementById('profile-displayName');
-    const usernameEl = document.getElementById('profile-username');
-    const birthDateEl = document.getElementById('profile-birthDate');
+    const ageEl = document.getElementById('profile-age');
+    const whatsappEl = document.getElementById('profile-whatsapp');
     if (nameEl) {
       nameEl.value = p.displayName || (user && user.name) || '';
     }
-    if (usernameEl) {
-      usernameEl.value = p.username || (user && user.username) || '';
+    if (ageEl) {
+      ageEl.value = p.age != null && !isNaN(p.age) ? String(p.age) : '';
     }
-    if (birthDateEl) {
-      birthDateEl.value = p.birthDate || (user && user.birthDate) || '';
+    if (whatsappEl) {
+      whatsappEl.value = p.whatsapp ? String(p.whatsapp).replace(/\D/g, '') : '';
     }
-    refreshAgePreview();
-    fillAvatarFields(p, user);
+  }
+
+  const PHASE_ORDER = ['planejamento', 'germinacao', 'vegetativo', 'floracao', 'colheita'];
+  const PHASE_EVO = {
+    planejamento: { dir: 'perfil-evolucao', file: '01-semente.png', short: 'Semente' },
+    germinacao: { dir: 'cultivo-cards', file: 'germinacao.png', short: 'Germinação' },
+    vegetativo: { dir: 'cultivo-cards', file: 'vegetativo.png', short: 'Vegetação' },
+    floracao: { dir: 'cultivo-cards', file: 'floracao.png', short: 'Floração' },
+    colheita: { dir: 'cultivo-cards', file: 'colheita.png', short: 'Colheita' }
+  };
+  const SENIOR_EVO = { dir: 'perfil-evolucao', file: '07-cultivador-senior.png', short: 'Sênior' };
+
+  function assetVersionToken() {
+    if (typeof ASSET_V !== 'undefined' && ASSET_V) return String(ASSET_V);
+    const script = document.querySelector('script[src*="/js/layout.js"]');
+    const match = script && String(script.getAttribute('src') || '').match(/[?&]v=([^&]+)/);
+    return match ? match[1] : '241';
+  }
+
+  function evoSrc(meta) {
+    const dir = (meta && meta.dir) || 'cultivo-cards';
+    const file = (meta && meta.file) || 'germinacao.png';
+    return '/imagens/' + dir + '/' + file + '?v=' + encodeURIComponent(assetVersionToken());
+  }
+
+  function renderPerfilEvolutionTrack(phase, seniorUnlocked) {
+    const trackEl = document.getElementById('perfil-evo-track');
+    const wrapEl = document.getElementById('perfil-evo-wrap');
+    const statusEl = document.getElementById('perfil-evo-status');
+    if (!trackEl || !wrapEl) return;
+    const current = PHASE_ORDER.includes(phase) ? phase : 'germinacao';
+    const currentIdx = PHASE_ORDER.indexOf(current);
+    const labels = {
+      planejamento: 'Planejamento',
+      germinacao: 'Germinação',
+      vegetativo: 'Vegetativo',
+      floracao: 'Floração',
+      colheita: 'Colheita'
+    };
+    const items = PHASE_ORDER.map((id, idx) => {
+      let state = 'is-upcoming';
+      if (idx < currentIdx) state = 'is-done';
+      if (idx === currentIdx) state = 'is-current';
+      const meta = PHASE_EVO[id];
+      return (
+        '<li class="cultivo-evo-step ' + state + '">' +
+        '<span class="cultivo-evo-step-icon" aria-hidden="true">' +
+        '<img class="cultivo-phase-art" src="' + escapeHtml(evoSrc(meta)) + '" alt="" width="64" height="64" loading="lazy" decoding="async">' +
+        '</span>' +
+        '<span class="cultivo-evo-step-label">' + escapeHtml(meta.short) + '</span>' +
+        '</li>'
+      );
+    }).join('');
+    const senior = (
+      '<li class="cultivo-evo-step cultivo-evo-step--senior ' + (seniorUnlocked ? 'is-current' : 'is-upcoming') + '">' +
+      '<span class="cultivo-evo-step-icon" aria-hidden="true">' +
+      '<img class="cultivo-phase-art" src="' + escapeHtml(evoSrc(SENIOR_EVO)) + '" alt="" width="64" height="64" loading="lazy" decoding="async">' +
+      '</span>' +
+      '<span class="cultivo-evo-step-label">' + escapeHtml(SENIOR_EVO.short) + '</span>' +
+      '</li>'
+    );
+    trackEl.innerHTML = '<ol class="cultivo-evo-steps">' + items + senior + '</ol>';
+    if (statusEl) {
+      statusEl.textContent = seniorUnlocked
+        ? 'Fase actual: ' + (labels[current] || current) + ' · distintivo Sênior desbloqueado.'
+        : 'Fase actual: ' + (labels[current] || current) + '. Avance no diário para evoluir.';
+    }
+    wrapEl.hidden = false;
+  }
+
+  async function loadPerfilEvolution() {
+    const wrapEl = document.getElementById('perfil-evo-wrap');
+    try {
+      const res = await fetch('/api/cultivo', { credentials: 'include' });
+      if (!res.ok) {
+        if (wrapEl) wrapEl.hidden = true;
+        return;
+      }
+      const data = await res.json().catch(() => ({}));
+      const cultivo = data.cultivo || data;
+      const logs = Array.isArray(cultivo.growLogs) ? cultivo.growLogs : [];
+      if (!logs.length) {
+        if (wrapEl) wrapEl.hidden = true;
+        return;
+      }
+      const activeId = cultivo.activeGrowLogId || '';
+      const active = logs.find((g) => g.id === activeId) || logs[0];
+      const phase = (active && active.phase) || cultivo.phase || 'germinacao';
+      const seniorUnlocked = logs.some((g) => g.phase === 'colheita');
+      renderPerfilEvolutionTrack(phase, seniorUnlocked);
+    } catch (e) {
+      if (wrapEl) wrapEl.hidden = true;
+    }
+  }
+
+  function showIncompleteBanner(show) {
+    if (!incompleteBannerEl) return;
+    incompleteBannerEl.hidden = !show;
   }
 
   function showAccountView() {
     if (onboardingEl) onboardingEl.hidden = true;
     if (accountEl) accountEl.hidden = false;
-    if (editBtn) editBtn.hidden = false;
+    if (editBtn) {
+      editBtn.hidden = false;
+      editBtn.textContent = 'Editar perfil';
+    }
     if (cancelEditBtn) cancelEditBtn.hidden = true;
+    // Banner só se faltar nome — idade em falta resolve-se em «Editar perfil», sem loop de cadastro.
+    const hasName = resolveProfileName(user && user.profile, user).length >= 2;
+    showIncompleteBanner(user ? !hasName : false);
+    clearEditQuery();
+    void loadPerfilEvolution();
   }
 
-  function showOnboardingView(isEdit) {
+  function showOnboardingView(isEdit, opts) {
+    opts = opts || {};
     if (onboardingEl) onboardingEl.hidden = false;
     if (accountEl) accountEl.hidden = true;
     if (editBtn) editBtn.hidden = true;
     if (cancelEditBtn) cancelEditBtn.hidden = !isEdit;
+    showIncompleteBanner(false);
     if (formTitle) {
-      formTitle.textContent = isEdit ? 'Editar cadastro' : 'Completar cadastro';
+      formTitle.textContent = 'Editar perfil';
     }
     if (onboardingIntro) {
-      onboardingIntro.innerHTML = isEdit
-        ? 'Altere nome, username, data de nascimento ou foto. O site é exclusivo para <strong>maiores de 18 anos</strong>.'
-        : 'Primeira etapa: nome, username e data de nascimento. O resto pode completar depois.';
+      onboardingIntro.textContent = 'Actualize o nome, a idade (18+) e o WhatsApp (opcional). A foto vem da conta Google.';
     }
-    onboardingEl && onboardingEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (opts.scroll !== false && onboardingEl) {
+      onboardingEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 
   async function saveProfilePayload(payload, statusEl) {
@@ -477,10 +357,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
       const accountPayload = {
         displayName: payload.displayName,
-        username: payload.username,
-        birthDate: payload.birthDate,
         age: payload.age,
-        avatarUrl: payload.avatarUrl
+        whatsapp: payload.whatsapp != null ? payload.whatsapp : ''
       };
       const res = await fetch('/api/user/profile', {
         method: 'PUT',
@@ -497,10 +375,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (data.user && data.user.profile) {
         const merged = Object.assign({}, data.user.profile);
         if (payload.displayName !== undefined) merged.displayName = payload.displayName;
-        if (payload.username !== undefined) merged.username = payload.username;
-        if (payload.birthDate !== undefined) merged.birthDate = payload.birthDate;
         if (payload.age !== undefined) merged.age = payload.age;
-        if (payload.avatarUrl !== undefined) merged.avatarUrl = payload.avatarUrl;
+        if (payload.whatsapp !== undefined) merged.whatsapp = payload.whatsapp;
         data.user.profile = merged;
       }
       user = data.user;
@@ -518,11 +394,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
+  function syncCommunityTermsField(data) {
+    const wrap = document.getElementById('perfil-community-terms-wrap');
+    const check = document.getElementById('profile-community-terms');
+    const accepted = !!(data && data.communityTermsAccepted);
+    if (wrap) wrap.hidden = accepted;
+    if (check) {
+      check.required = !accepted;
+      check.checked = false;
+    }
+  }
+
   function renderUser(data) {
     user = data;
     updateUserHeader(data);
     fillForm(data.profile);
     broadcastProfilePicture(data);
+    syncCommunityTermsField(data);
   }
 
   function redirectIfReturnTo() {
@@ -544,16 +432,23 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
       if (!res.ok) throw new Error('load_failed');
       const data = await res.json();
-      if (loadingEl) loadingEl.hidden = true;
-      if (appEl) appEl.hidden = false;
       renderUser(data);
 
-      if (isUserProfileComplete(data)) {
-        if (redirectIfReturnTo()) return;
-        showAccountView();
+      const complete = isProfileComplete(data.profile, data);
+      const hasName = resolveProfileName(data.profile, data).length >= 2;
+
+      // Conta aberta por defeito. Formulário só com ?edit=1, botão editar, ou sem nome.
+      if (wantsExplicitEdit()) {
+        showOnboardingView(true, { scroll: true });
+      } else if (!hasName) {
+        showOnboardingView(false, { scroll: false });
       } else {
-        showOnboardingView(false);
+        if (complete && redirectIfReturnTo()) return;
+        showAccountView();
       }
+
+      if (loadingEl) loadingEl.hidden = true;
+      if (appEl) appEl.hidden = false;
     } catch (e) {
       if (loadingEl) {
         loadingEl.textContent = 'Não foi possível carregar o perfil. Recarregue a página.';
@@ -562,10 +457,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function openEditForm() {
+    const complete = isProfileComplete(user && user.profile, user);
     fillForm(user && user.profile);
-    showOnboardingView(true);
-    const picker = document.querySelector('.perfil-avatar-picker');
-    if (picker) picker.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    showOnboardingView(complete, { scroll: true });
   }
 
   if (form) {
@@ -576,21 +470,38 @@ document.addEventListener('DOMContentLoaded', async () => {
         setStatus(formStatus, validationError, true);
         return;
       }
-      if (avatarUploadPending) {
-        setStatus(formStatus, 'Aguarde o envio da foto terminar.', true);
-        return;
-      }
       setStatus(formStatus, 'A guardar…');
       const saveBtn = document.getElementById('perfil-save-btn');
       if (saveBtn) saveBtn.disabled = true;
 
       try {
         const formData = readForm();
-        const wasComplete = isUserProfileComplete(user);
+        const wasComplete = user && isProfileComplete(user.profile, user);
+        const termsCheck = document.getElementById('profile-community-terms');
+        const termsWrap = document.getElementById('perfil-community-terms-wrap');
+        const needsTerms = termsWrap && !termsWrap.hidden;
+        if (needsTerms && (!termsCheck || !termsCheck.checked)) {
+          setStatus(formStatus, 'Aceite o termo da comunidade (apenas fotos e relatos de plantas).', true);
+          return;
+        }
         const saved = await saveProfilePayload(formData, formStatus);
         if (!saved) return;
 
-        if (!wasComplete && isUserProfileComplete(saved)) {
+        if (needsTerms && termsCheck && termsCheck.checked && !saved.communityTermsAccepted) {
+          const termsRes = await fetch('/api/user/community-terms', {
+            method: 'POST',
+            credentials: 'include',
+            headers: { 'Content-Type': 'application/json' },
+            body: '{}'
+          });
+          const termsData = await termsRes.json().catch(() => ({}));
+          if (termsRes.ok && termsData.user) {
+            user = termsData.user;
+            syncCommunityTermsField(user);
+          }
+        }
+
+        if (!wasComplete && isProfileComplete(saved.profile, saved)) {
           if (redirectIfReturnTo()) return;
           setStatus(formStatus, 'Conta activa!');
           showAccountView();
@@ -598,9 +509,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         } else {
           showAccountView();
           setStatus(formStatus, 'Perfil actualizado.');
-          if (cancelEditBtn && !cancelEditBtn.hidden) {
-            setTimeout(() => setStatus(formStatus, ''), 2500);
-          }
+          setTimeout(() => setStatus(formStatus, ''), 2500);
         }
       } catch (err) {
         setStatus(formStatus, 'Servidor indisponível.', true);
@@ -614,13 +523,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     editBtn.addEventListener('click', openEditForm);
   }
 
-  const avatarEditTrigger = document.getElementById('perfil-avatar-edit-btn');
-  if (avatarEditTrigger) {
-    avatarEditTrigger.addEventListener('click', openEditForm);
-  }
-
   if (accountEditBtn) {
     accountEditBtn.addEventListener('click', openEditForm);
+  }
+
+  if (completeBtn) {
+    completeBtn.addEventListener('click', openEditForm);
   }
 
   if (cancelEditBtn) {
@@ -639,8 +547,121 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  await initAvatarPicker();
-  const birthDateInput = document.getElementById('profile-birthDate');
-  if (birthDateInput) birthDateInput.addEventListener('input', refreshAgePreview);
-  loadUser();
+  const imagesGrid = document.getElementById('perfil-images-grid');
+  const imagesEmpty = document.getElementById('perfil-images-empty');
+  const imagesStatus = document.getElementById('perfil-images-status');
+  const imagesInput = document.getElementById('perfil-images-input');
+
+  function setImagesStatus(message, isError) {
+    if (!imagesStatus) return;
+    imagesStatus.textContent = message || '';
+    imagesStatus.classList.toggle('is-error', !!isError);
+  }
+
+  function renderImages(items) {
+    const list = Array.isArray(items) ? items : [];
+    if (imagesEmpty) imagesEmpty.hidden = list.length > 0;
+    if (!imagesGrid) return;
+    if (!list.length) {
+      imagesGrid.innerHTML = '';
+      return;
+    }
+    imagesGrid.innerHTML = list.map((item) => {
+      const name = String(item.name || '');
+      const url = String(item.url || '');
+      return (
+        '<figure class="perfil-images-item">' +
+        '<img src="' + escapeHtml(url) + '" alt="' + escapeHtml(name) + '" loading="lazy" decoding="async">' +
+        '<div class="perfil-images-item-actions">' +
+        '<button type="button" data-image-delete="' + escapeHtml(name) + '">Apagar</button>' +
+        '</div>' +
+        '</figure>'
+      );
+    }).join('');
+  }
+
+  async function loadUserImages() {
+    if (!imagesGrid) return;
+    try {
+      const res = await fetch('/api/user/images', { credentials: 'include' });
+      if (!res.ok) return;
+      const data = await res.json().catch(() => ({}));
+      renderImages(data.items || []);
+    } catch (e) {
+      setImagesStatus('Não foi possível carregar as imagens.', true);
+    }
+  }
+
+  function readFileAsDataUrl(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = () => reject(new Error('read_failed'));
+      reader.readAsDataURL(file);
+    });
+  }
+
+  if (imagesInput) {
+    imagesInput.addEventListener('change', async () => {
+      const file = imagesInput.files && imagesInput.files[0];
+      imagesInput.value = '';
+      if (!file) return;
+      if (!String(file.type || '').startsWith('image/')) {
+        setImagesStatus('Escolha uma imagem (png, jpg, webp ou gif).', true);
+        return;
+      }
+      setImagesStatus('A enviar…');
+      try {
+        const dataUrl = await readFileAsDataUrl(file);
+        const res = await fetch('/api/user/images', {
+          method: 'POST',
+          credentials: 'include',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ filename: file.name, data: dataUrl })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          setImagesStatus((data && data.error) || 'Falha no envio.', true);
+          return;
+        }
+        setImagesStatus('Imagem adicionada.');
+        await loadUserImages();
+        setTimeout(() => setImagesStatus(''), 2200);
+      } catch (e) {
+        setImagesStatus('Servidor indisponível.', true);
+      }
+    });
+  }
+
+  if (imagesGrid) {
+    imagesGrid.addEventListener('click', async (event) => {
+      const btn = event.target && event.target.closest('[data-image-delete]');
+      if (!btn) return;
+      const name = btn.getAttribute('data-image-delete');
+      if (!name) return;
+      if (!window.confirm('Apagar esta imagem da pasta pessoal?')) return;
+      setImagesStatus('A apagar…');
+      try {
+        const res = await fetch('/api/user/images', {
+          method: 'DELETE',
+          credentials: 'include',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          setImagesStatus((data && data.error) || 'Não foi possível apagar.', true);
+          return;
+        }
+        setImagesStatus('Imagem apagada.');
+        await loadUserImages();
+        setTimeout(() => setImagesStatus(''), 2200);
+      } catch (e) {
+        setImagesStatus('Servidor indisponível.', true);
+      }
+    });
+  }
+
+  await loadUser();
+  await loadUserImages();
 });

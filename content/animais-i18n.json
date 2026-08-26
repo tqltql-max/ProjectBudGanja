@@ -1,0 +1,276 @@
+{
+  "disclaimerEn": "Educational sheets on animals, husbandry and related products. They do not replace veterinary, zootechnical or professional dietary advice.",
+  "disclaimerEs": "Fichas educativas sobre animales, cría y productos asociados. No sustituyen orientación veterinaria, zootécnica ni asesoramiento alimentario profesional.",
+  "animals": {
+    "galinha": {
+      "nomePopularEn": "Chicken",
+      "nomePopularEs": "Gallina / pollo",
+      "summaryEn": "Farm bird: fresh eggs and meat versus industrial chicken nuggets, sausages and ultra-processed products.",
+      "summaryEs": "Ave de cría: huevo y carne frescos frente a nuggets, embutidos y ultraprocesados de pollo.",
+      "partsUsedEn": [
+        "Fresh egg",
+        "Meat",
+        "Feathers (non-food)"
+      ],
+      "partsUsedEs": [
+        "Huevo fresco",
+        "Carne",
+        "Plumas (no alimentario)"
+      ],
+      "traditionalUsesEn": [
+        "Low-processing food",
+        "Family and commercial flocks",
+        "Egg–chick–hen cycle"
+      ],
+      "traditionalUsesEs": [
+        "Alimento de bajo procesamiento",
+        "Cría familiar y granja",
+        "Ciclo huevo-pollito-gallina"
+      ],
+      "cautionsEn": "Separate the animal and fresh egg/meat from ultra-processed industrial derivatives. Educational content — not a nutrition protocol.",
+      "cautionsEs": "Separar el animal y el huevo/carne frescos de los derivados industriales ultraprocesados. Contenido educativo."
+    },
+    "vaca": {
+      "nomePopularEn": "Cattle",
+      "nomePopularEs": "Vaca / buey",
+      "summaryEn": "Dairy and beef cattle: fresh food and agrarian tradition versus processed meats and ultra-processed dairy.",
+      "summaryEs": "Bovino de leche y carne: alimento fresco y tradición agraria frente a carnes procesadas y lácteos ultraprocesados.",
+      "partsUsedEn": [
+        "Milk",
+        "Meat",
+        "Leather (non-food)"
+      ],
+      "partsUsedEs": [
+        "Leche",
+        "Carne",
+        "Cuero (no alimentario)"
+      ],
+      "traditionalUsesEn": [
+        "Milk and artisan cheeses",
+        "Fresh meat",
+        "Historic rural traction"
+      ],
+      "traditionalUsesEs": [
+        "Leche y quesos artesanales",
+        "Carne fresca",
+        "Tracción rural histórica"
+      ],
+      "cautionsEn": "The animal is not the villain: focus on dose, processing and industrial patterns.",
+      "cautionsEs": "El animal no es el villano: el foco es dosis, procesamiento y patrones industriales."
+    },
+    "porco": {
+      "nomePopularEn": "Pig",
+      "nomePopularEs": "Cerdo",
+      "summaryEn": "Swine: fresh meat and traditional charcuterie versus industrial cured meats high in salt and nitrites.",
+      "summaryEs": "Porcino: carne fresca y charcutería tradicional frente a embutidos industriales ricos en sal y nitritos.",
+      "partsUsedEn": [
+        "Meat",
+        "Fat (lard)"
+      ],
+      "partsUsedEs": [
+        "Carne",
+        "Grasa (manteca)"
+      ],
+      "traditionalUsesEn": [
+        "Fresh meat",
+        "Artisan ham and sausage",
+        "Traditional cooking fat"
+      ],
+      "traditionalUsesEs": [
+        "Carne fresca",
+        "Jamón y chorizo artesanal",
+        "Manteca culinaria tradicional"
+      ],
+      "cautionsEn": "Distinguish husbandry and fresh cuts from industrial cured meats.",
+      "cautionsEs": "Distinguir cría y pieza fresca de embutidos industriales."
+    },
+    "peixe-tilapia": {
+      "nomePopularEn": "Tilapia",
+      "nomePopularEs": "Tilapia",
+      "summaryEn": "Common Brazilian aquaculture fish: fresh fillet versus breaded sticks and ultra-processed fish products.",
+      "summaryEs": "Pez de acuicultura común en Brasil: filete fresco frente a empanados y ultraprocesados.",
+      "partsUsedEn": [
+        "Fillet",
+        "Whole fish"
+      ],
+      "partsUsedEs": [
+        "Filete",
+        "Pescado entero"
+      ],
+      "traditionalUsesEn": [
+        "Fresh food",
+        "Family and industrial aquaculture",
+        "Low-processing protein"
+      ],
+      "traditionalUsesEs": [
+        "Alimento fresco",
+        "Acuicultura familiar e industrial",
+        "Proteína de bajo procesamiento"
+      ],
+      "cautionsEn": "Fresh tilapia is not the same product as industrial breaded fish.",
+      "cautionsEs": "La tilapia fresca no es el mismo producto que el empanado industrial."
+    },
+    "abelha": {
+      "nomePopularEn": "Honey bee",
+      "nomePopularEs": "Abeja",
+      "summaryEn": "Pollinator and producer of honey, propolis and wax — distinguish quality honey from adulterated syrups.",
+      "summaryEs": "Polinizadora y productora de miel, propóleo y cera — distinguir miel de calidad de jarabes adulterados.",
+      "partsUsedEn": [
+        "Honey",
+        "Propolis",
+        "Wax",
+        "Royal jelly"
+      ],
+      "partsUsedEs": [
+        "Miel",
+        "Propóleo",
+        "Cera",
+        "Jalea real"
+      ],
+      "traditionalUsesEn": [
+        "Honey as food",
+        "Traditional propolis use",
+        "Crop pollination"
+      ],
+      "traditionalUsesEs": [
+        "Miel como alimento",
+        "Propóleo en tradición popular",
+        "Polinización agrícola"
+      ],
+      "cautionsEn": "Honey is contraindicated under age 1 (botulism). Adulterated honey is the industrial diversion to inspect.",
+      "cautionsEs": "La miel está contraindicada en menores de 1 año. La miel adulterada es el desvío industrial a inspeccionar."
+    },
+    "cao": {
+      "nomePopularEn": "Dog",
+      "nomePopularEs": "Perro",
+      "summaryEn": "Human companion: welfare, responsible feeding and a critical view of low-quality ultra-processed pet food.",
+      "summaryEs": "Compañero humano: bienestar, alimentación responsable y distancia crítica de la industria pet de baja calidad.",
+      "partsUsedEn": [
+        "Companionship",
+        "Work (guard, herding, assistance)"
+      ],
+      "partsUsedEs": [
+        "Compañía",
+        "Trabajo (guarda, pastoreo, asistencia)"
+      ],
+      "traditionalUsesEn": [
+        "Companionship",
+        "Guarding",
+        "Herding",
+        "Assistance"
+      ],
+      "traditionalUsesEs": [
+        "Compañía",
+        "Guarda",
+        "Pastoreo",
+        "Apoyo a personas"
+      ],
+      "cautionsEn": "Animal welfare and veterinary nutrition come first. Industrial pet foods vary widely — read labels and ask a vet.",
+      "cautionsEs": "El bienestar y la nutrición veterinaria tienen primacía. Piensos y snacks industriales varían mucho."
+    },
+    "gato": {
+      "nomePopularEn": "Cat",
+      "nomePopularEs": "Gato",
+      "summaryEn": "Domestic feline: companionship, ethology and care — watch household toxins and the pet industry.",
+      "summaryEs": "Felino doméstico: compañía, etología y cuidados — atención a toxinas domésticas y a la industria pet.",
+      "partsUsedEn": [
+        "Companionship"
+      ],
+      "partsUsedEs": [
+        "Compañía"
+      ],
+      "traditionalUsesEn": [
+        "Companionship",
+        "Historic rural rodent control"
+      ],
+      "traditionalUsesEs": [
+        "Compañía",
+        "Control de roedores en contexto rural histórico"
+      ],
+      "cautionsEn": "Many plants and human foods are toxic to cats. Pet foods: veterinary criteria.",
+      "cautionsEs": "Varias plantas y alimentos humanos son tóxicos para gatos. Piensos: criterio veterinario."
+    },
+    "cavalo": {
+      "nomePopularEn": "Horse",
+      "nomePopularEs": "Caballo",
+      "summaryEn": "Work, sport and companion equine — Brazilian rural tradition and equine welfare ethics.",
+      "summaryEs": "Équido de trabajo, deporte y compañía — tradición rural brasileña y ética del bienestar equino.",
+      "partsUsedEn": [
+        "Work",
+        "Sport",
+        "Companionship"
+      ],
+      "partsUsedEs": [
+        "Trabajo",
+        "Deporte",
+        "Compañía"
+      ],
+      "traditionalUsesEn": [
+        "Historic traction and transport",
+        "Herding",
+        "Riding and leisure"
+      ],
+      "traditionalUsesEs": [
+        "Tracción y transporte histórico",
+        "Pastoreo",
+        "Hípica y ocio"
+      ],
+      "cautionsEn": "Welfare, farriery and equine nutrition require professionals.",
+      "cautionsEs": "Bienestar, herraje y nutrición equina exigen profesionales."
+    },
+    "codorna": {
+      "nomePopularEn": "Quail",
+      "nomePopularEs": "Codorniz",
+      "summaryEn": "Farmed bird (Japanese quail): small eggs and meat; lexical neighbour of corda (rope) — the ear glues them, the etymon does not (Coturnix ≠ chorda).",
+      "summaryEs": "Ave de cría (codorniz japonesa): huevos pequeños y carne; vecina léxica de corda (cuerda) — el oído pega, el étimo no (Coturnix ≠ chorda).",
+      "partsUsedEn": [
+        "Egg",
+        "Meat"
+      ],
+      "partsUsedEs": [
+        "Huevo",
+        "Carne"
+      ],
+      "traditionalUsesEn": [
+        "Quail eggs on the Brazilian table",
+        "Family flocks and quail farming",
+        "Fresh meat in small portions"
+      ],
+      "traditionalUsesEs": [
+        "Huevos de codorniz en la mesa BR",
+        "Cría familiar y coturnicultura",
+        "Carne fresca en porción pequeña"
+      ],
+      "cautionsEn": "Educational content — not a farming or nutrition protocol. Distinguish the bird from the word corda (rope).",
+      "cautionsEs": "Contenido educativo — no es protocolo de cría ni nutricional. Distinguir el ave de la palabra corda (cuerda)."
+    },
+    "mula": {
+      "nomePopularEn": "Mule",
+      "nomePopularEs": "Mula",
+      "summaryEn": "Work hybrid (jack donkey × mare): traction, pack and rural gait; lexical neighbour of mola (spring) — the ear glues them, the etymon does not (mūla ≠ mollis).",
+      "summaryEs": "Híbrido de trabajo (burro × yegua): tracción, carga y paso rural; vecina léxica de mola (muelle) — el oído pega, el étimo no (mūla ≠ mollis).",
+      "partsUsedEn": [
+        "Work",
+        "Traction",
+        "Pack"
+      ],
+      "partsUsedEs": [
+        "Trabajo",
+        "Tracción",
+        "Carga"
+      ],
+      "traditionalUsesEn": [
+        "Cart traction and pack on rough ground",
+        "Historic rural transport in Brazil",
+        "Companionship and ranch craft — distinct from horse and donkey"
+      ],
+      "traditionalUsesEs": [
+        "Tracción de carro y carga en terreno irregular",
+        "Transporte rural histórico en Brasil",
+        "Compañía y oficio de lida — distinta del caballo y del burro"
+      ],
+      "cautionsEn": "Educational content — not a veterinary or riding protocol. Distinguish the animal from the word mola (spring). Welfare, farriery and nutrition require professionals.",
+      "cautionsEs": "Contenido educativo — no es protocolo veterinario ni de equitación. Distinguir el animal de la palabra mola (muelle). Bienestar, herraje y nutrición exigen profesionales."
+    }
+  }
+}

@@ -9,12 +9,23 @@ const OUT = path.join(ROOT, 'search-index.json');
 const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registry.js');
 
 const STATIC_PAGES = [
-  { url: '/', title: 'Início', desc: 'Inspetor BudGanja — laboratório de inspeção. Plantas, ofício e cultura.', keywords: 'home laboratório inspeção' },
-  { url: '/biblioteca/inspecoes/', title: 'Inspeções — Guia de Cultivo Básico', desc: 'Série de inspeções com relatórios e vídeos @InspetorBudGanja', keywords: 'guia cultivo inspeção vídeo' },
+  { url: '/', title: 'Ferramenta de cultivo | Inspetor BudGanja', desc: 'Guia em vídeo e diário de pesquisas para documentar o cultivo.', keywords: 'home inicio cultivo diario guia ferramenta' },
+  { url: '/inverno/', title: 'Bom dia, Inverno — Tamara Klink', desc: 'Divulgação do livro de Tamara Klink. Oito meses no gelo. Empresta, doa, faz circular.', keywords: 'inverno tamara klink livro gelo invernagem groenlandia circular' },
+  { url: '/vida/', title: 'Vida', desc: 'Conto familiar do Laboratório BudGanja. Cuidar de plantas com ciência, natureza e amizade.', keywords: 'vida conto familiar plantas semente inspetor dona maria' },
+  { url: '/origami/', title: 'Origami', desc: 'Aprender a dobrar papel — mãos reais, um modelo de cada vez. Aula do barquinho.', keywords: 'origami papel dobrar barquinho mãos aula ofício' },
+  { url: '/origami/barquinho-de-papel/', title: 'Barquinho de papel', desc: 'Aula de origami: doze vincos, mãos reais. Filmar sem fala, áudio local.', keywords: 'barquinho papel origami aula vinco mara maravilha' },
+  { url: '/laboratorio/', title: 'Mapa do laboratório', desc: 'Todas as salas do Laboratório BudGanja: biblioteca, plantas, ferramentas, comunidade e o conto Vida.', keywords: 'laboratório mapa fitoterapia plantas unifesp cultivo vida' },
+  { url: '/plantas/', title: 'Plantas fitoterápicas', desc: 'Catálogo curado de plantas medicinais e fitoterápicas do Brasil — reino vegetal, distinto do órgão fruto e dos fungos', keywords: 'plantas fitoterapia medicinal babosa camomila cannabis reino vegetal' },
+  { url: '/frutos/', title: 'Frutos', desc: 'Catálogo do órgão fruto — não é o reino; a planta fica em Plantas. Fungo é outro reino. Fruto inteiro vs derivados industriais', keywords: 'frutos fruta órgão planta banana manga abacate derivados' },
+  { url: '/animais/', title: 'Animais', desc: 'Catálogo de animais: criação, companhia e derivados industriais de risco', keywords: 'animais produção galinha vaca porco abelha derivados indústria' },
+  { url: '/tecnologia/', title: 'Tecnologia', desc: 'Catálogo de ofício técnico: vocábulos, hardware, rede e software — HD escravo e o lema tecnologia', keywords: 'tecnologia hd escravo slave slayr ata ide disco rígido hardware software rede' },
+  { url: '/mitologia/', title: 'Mitologia', desc: 'Catálogo de mitos e deuses: nomes, relatos e elos — Anúbis (chacal que pesa o coração) e o lema mitologia', keywords: 'mitologia anubis anúbis deus egito chacal maat mito deuses orfeu' },
+  { url: '/biblioteca/unifesp/', title: 'Curso UNIFESP', desc: 'Hub do XIV curso de extensão UNIFESP sobre cannabis medicinal', keywords: 'unifesp curso cannabis medicinal siex formação' },
+  { url: '/biblioteca/unifesp/caderno.html', title: 'Caderno de estudo · XIV Curso UNIFESP', desc: 'Caderno público: um parágrafo único por aula do XIV curso UNIFESP / MovReCam', keywords: 'caderno unifesp aulas resumo xiv movrecam estudo' },
+  { url: '/biblioteca/cadernos/', title: 'Cadernos de Engenharia', desc: 'Um caderno por matéria com método Cornell para o curso de Agronomia / engenharia — estudo de Biologia Celular sobre angiospermas', keywords: 'caderno engenharia agronomia esapp cornell anotações matérias biologia celular angiosperma angiospermas' },
+  { url: '/biblioteca/inspecoes/', title: 'Inspeções', desc: 'Relatórios técnicos com método verificável — canais, equipamentos e cursos', keywords: 'inspeção auditoria método' },
   { url: '/biblioteca/pesquisas/', title: 'Pesquisas', desc: 'Relatórios e estudos técnicos', keywords: 'pesquisa relatório' },
-  { url: '/biblioteca/inspecoes/', title: 'Inspeções', desc: 'Verificações de campo e inspeções técnicas', keywords: 'inspeção campo' },
   { url: '/equipamentos/', title: 'Equipamentos', desc: 'Manuais caseiros e equipamentos documentados', keywords: 'equipamento caseiro manual clonadora' },
-  { url: '/loja/', title: 'Loja parceira', desc: 'Materiais das clonadoras na vitrine Magazine Inspetor BudGanja (Magalu)', keywords: 'loja clonadora bombinha bucha balde bomba aspersor feltro magazine luiza magalu influenciador' },
   { url: '/calculadoras/', title: 'Ferramentas', desc: 'Super Calc, luxímetro e Super Solo', keywords: 'ferramentas cultivo vpd dli' },
   ...CALCULADORAS.map((c) => ({
     url: getCalculadoraUrl(c),
@@ -22,9 +33,13 @@ const STATIC_PAGES = [
     desc: c.description,
     keywords: c.keywords || c.slug
   })),
+  { url: '/comunidade/', title: 'Feed Vivo', desc: 'Feed Vivo — fotos e relatos de cultivo vegetal partilhados pelos cultivadores', keywords: 'comunidade feed vivo fotos diário cultivo comentários' },
   { url: '/sorteios/', title: 'Sorteios', desc: 'Sorteio de inauguração — clonadora aeropônica caseira em breve', keywords: 'sorteio inauguração clonadora' },
+  { url: '/guia/palavras.html', title: 'Guia de Palavras', desc: 'Glossário simples dos títulos do site e do léxico inspecionado', keywords: 'palavras glossário significado maconha ganja inspetor budganja' },
+  { url: '/guia/astrologia.html', title: 'Astrologia', desc: 'Doze signos a partir de Áries; ariana/ariano; céu verificável (Aladin Lite); o que o Google Sky ainda permite', keywords: 'astrologia áries ariana ariano signos zodíaco céu aladin google sky horóscopo' },
   { url: '/videos/', title: 'Últimos vídeos', desc: 'Vídeos recentes do canal YouTube', keywords: 'youtube vídeo canal' },
-  { url: '/info/sobre.html', title: 'Sobre', desc: 'Propósito e metodologia do projeto', keywords: 'sobre missão' },
+  { url: '/radio/', title: 'BudGanja Radio', desc: 'Playlist BudGanja Radio do laboratório', keywords: 'rádio budganja playlist' },
+  { url: '/info/sobre.html', title: 'Sobre', desc: 'Propósito e metodologia do projeto', keywords: 'sobre missão fitoterapia' },
   { url: '/info/contato.html', title: 'Contato', desc: 'E-mail e perguntas frequentes', keywords: 'contato email' },
   { url: '/info/privacidade.html', title: 'Privacidade', desc: 'LGPD e dados de sorteios', keywords: 'privacidade lgpd' },
   { url: '/equipamentos/clonadora-6-estacas.html', title: 'Guia: Clonadora de 6 estacas', desc: 'Pote de sorvete, bucha de louça e bombinha 24 h', keywords: 'clonadora 6 estacas pote sorvete bucha bombinha' },
@@ -54,14 +69,145 @@ function buildIndex() {
   });
 
   try {
-    const { GUIA_INSPECOES_POSTS } = require('../lib/guia-inspecoes-posts.js');
-    GUIA_INSPECOES_POSTS.forEach((post) => {
-      const url = post.url || (post.filename ? '/' + String(post.filename).replace(/^\/+/, '') : '');
+    const { readPlantas, getPlantUrl } = require('../lib/plantas-service.js');
+    const catalog = readPlantas();
+    catalog.plants.forEach((plant) => {
       items.push({
-        title: post.title,
-        url,
-        excerpt: post.excerpt || '',
-        text: [post.title, post.excerpt, post.content_raw, 'guia cultivo básico inspeção'].join(' ').slice(0, 2000)
+        title: plant.nomePopular + (plant.nomeCientifico ? ' (' + plant.nomeCientifico + ')' : ''),
+        url: getPlantUrl(plant),
+        excerpt: plant.summary || '',
+        text: [
+          plant.nomePopular,
+          plant.nomeCientifico,
+          plant.familia,
+          plant.summary,
+          plant.hubCategory || '',
+          (plant.tags || []).join(' '),
+          (plant.traditionalUses || []).join(' '),
+          plant.hubCategory === 'fruto'
+            ? 'fruto órgão planta catálogo frutos'
+            : 'planta fitoterapia medicinal reino vegetal'
+        ]
+          .filter(Boolean)
+          .join(' ')
+          .slice(0, 2000)
+      });
+    });
+  } catch (e) { /* optional */ }
+
+  try {
+    const { readAnimais, getAnimalUrl } = require('../lib/animais-service.js');
+    const catalog = readAnimais();
+    catalog.animals.forEach((animal) => {
+      items.push({
+        title: animal.nomePopular + (animal.nomeCientifico ? ' (' + animal.nomeCientifico + ')' : ''),
+        url: getAnimalUrl(animal),
+        excerpt: animal.summary || '',
+        text: [
+          animal.nomePopular,
+          animal.nomeCientifico,
+          animal.familia,
+          animal.summary,
+          animal.hubCategory || '',
+          (animal.tags || []).join(' '),
+          (animal.traditionalUses || []).join(' '),
+          'animal produção indústria derivado'
+        ]
+          .filter(Boolean)
+          .join(' ')
+          .slice(0, 2000)
+      });
+    });
+  } catch (e) { /* optional */ }
+
+  try {
+    const { readFungos, getFungoUrl } = require('../lib/fungos-service.js');
+    const catalog = readFungos();
+    catalog.fungi.forEach((fungo) => {
+      items.push({
+        title: fungo.nomePopular + (fungo.nomeCientifico ? ' (' + fungo.nomeCientifico + ')' : ''),
+        url: getFungoUrl(fungo),
+        excerpt: fungo.summary || '',
+        text: [
+          fungo.nomePopular,
+          fungo.nomeCientifico,
+          fungo.familia,
+          fungo.summary,
+          (fungo.tags || []).join(' '),
+          (fungo.traditionalUses || []).join(' '),
+          'fungo cogumelo micologia identificação'
+        ]
+          .filter(Boolean)
+          .join(' ')
+          .slice(0, 2000)
+      });
+    });
+  } catch (e) { /* optional */ }
+
+  try {
+    const { readTecnologia } = require('../lib/tecnologia-service.js');
+    const catalog = readTecnologia();
+    catalog.items.forEach((it) => {
+      items.push({
+        title: it.nome,
+        url: it.href,
+        excerpt: it.summary || '',
+        text: [
+          it.nome,
+          it.nomeEn,
+          it.nomeEs,
+          it.kicker,
+          it.summary,
+          it.summaryEn,
+          it.category,
+          (it.tags || []).join(' '),
+          'tecnologia hardware software rede'
+        ]
+          .filter(Boolean)
+          .join(' ')
+          .slice(0, 2000)
+      });
+    });
+  } catch (e) { /* optional */ }
+
+  try {
+    const { readMitologia } = require('../lib/mitologia-service.js');
+    const catalog = readMitologia();
+    catalog.items.forEach((it) => {
+      items.push({
+        title: it.nome,
+        url: it.href,
+        excerpt: it.summary || '',
+        text: [
+          it.nome,
+          it.nomeEn,
+          it.nomeEs,
+          it.kicker,
+          it.summary,
+          it.summaryEn,
+          it.category,
+          (it.tags || []).join(' '),
+          'mitologia mito deus deuses anubis egito'
+        ]
+          .filter(Boolean)
+          .join(' ')
+          .slice(0, 2000)
+      });
+    });
+  } catch (e) { /* optional */ }
+
+  try {
+    const guia = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'guia-palavras.json'), 'utf8'));
+    (guia.items || []).forEach((entry) => {
+      if (!entry || !entry.word) return;
+      items.push({
+        title: entry.word,
+        url: entry.href || '/guia/palavras.html',
+        excerpt: entry.simple || '',
+        text: [entry.word, entry.simple, entry.group, 'guia palavras glossário', entry.id]
+          .filter(Boolean)
+          .join(' ')
+          .slice(0, 2000)
       });
     });
   } catch (e) { /* optional */ }

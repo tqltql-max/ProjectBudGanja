@@ -3,6 +3,7 @@ const path = require('path');
 const { PAGE_REGISTRY } = require('../lib/content-store.js');
 const { sanitizeHeadExtra } = require('../lib/page-html.js');
 const { ROOT } = require('../lib/paths.js');
+const { writeFileRetrySync } = require('../lib/fs-write-retry.js');
 
 const root = ROOT;
 const pagesPath = path.join(root, 'content', 'pages.json');
@@ -80,5 +81,5 @@ for (const entry of PAGE_REGISTRY) {
 if (!fs.existsSync(path.dirname(pagesPath))) {
   fs.mkdirSync(path.dirname(pagesPath), { recursive: true });
 }
-fs.writeFileSync(pagesPath, JSON.stringify(synced, null, 2), 'utf8');
+writeFileRetrySync(pagesPath, JSON.stringify(synced, null, 2), 'utf8');
 console.log('pages.json updated (' + Object.keys(synced).length + ' paginas)');

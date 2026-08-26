@@ -1,0 +1,62 @@
+# Palavras do mantra «Valeu !!! · eu amo a vida»
+# Modo Aprender — vermelhas (apropriação / silenciamento) e âmbar (ofício).
+# Alteração automática: eu amo a vida (lib/fecho-oficio.js).
+
+## Vermelhas (perigosa)
+
+1. roubar / roubo
+   Categoria: Apropriação
+   Mundano: Tirar o que é de outrem.
+   BudGanja: Tomar frase, obra ou crédito do laboratório.
+
+2. apropriar
+   Categoria: Apropriação
+   Mundano: Fazer seu o alheio.
+   BudGanja: Usar o mantra sem o ofício / sem a fonte.
+
+3. proibir / proibição
+   Categoria: Silenciamento
+   Mundano: Impedir por regra ou força.
+   BudGanja: Calar o projecto de inspeção e o mantra.
+   Elo: post-inspecao-palavra-proibicao-proibicionismo
+
+4. silenciar
+   Categoria: Silenciamento
+   Mundano: Impedir de falar.
+   BudGanja: Fechar a ficha, apagar o verso, negar a origem.
+
+## Peças da frase (como veneno — só nesta ficha)
+
+0. Faça / fazer
+   Categoria: Ofício
+   Mundano: Imperativo de fazer (lat. facere) — realizar, produzir.
+   BudGanja: Acto, não pose; nesta mão, hoje.
+   ≠ faca (lâmina) — o ç muda o objecto.
+
+0b. o
+   Categoria: Gramática (só na tabela da ficha; artigo demais comum para balão lab global)
+   Mundano: Artigo definido (lat. illum).
+   BudGanja: Aponta para este melhor concreto — não o absoluto dos outros.
+
+0c. !
+   Categoria: Pontuação (só na tabela da ficha)
+   Mundano: Exclamação.
+   BudGanja: Urgência de ofício, não grito de marketing.
+
+## Âmbar (uso cauteloso)
+
+5. melhor
+   Mundano: Superior; o mais adequado. Comparativo de bom (lat. melior).
+   BudGanja: O possível honesto nesta mão, hoje — não perfeição alheia.
+
+6. mantra
+   Mundano: Frase repetida (religião / motivação).
+   BudGanja: Frase curta que repete ofício no laboratório Vida.
+
+7. esforço
+   Mundano: Emprego de força ou atenção.
+   BudGanja: Trabalho honesto do ofício — «fiz o meu melhor».
+
+8. ofício
+   Mundano: Profissão; trabalho habitual.
+   BudGanja: Acto concreto (gesto) — inspecionar, cultivar, narrar.

@@ -66,6 +66,8 @@ CREATE TABLE IF NOT EXISTS posts (
   slug TEXT PRIMARY KEY,
   title TEXT NOT NULL DEFAULT '',
   excerpt TEXT NOT NULL DEFAULT '',
+  excerpt_en TEXT NOT NULL DEFAULT '',
+  excerpt_es TEXT NOT NULL DEFAULT '',
   content_raw TEXT NOT NULL DEFAULT '',
   format TEXT NOT NULL DEFAULT 'markdown',
   filename TEXT NOT NULL DEFAULT '',
@@ -131,6 +133,9 @@ CREATE TABLE IF NOT EXISTS site_settings (
   youtube_channel_label TEXT NOT NULL DEFAULT '',
   youtube_jardim_url TEXT NOT NULL DEFAULT '',
   youtube_jardim_label TEXT NOT NULL DEFAULT '',
+  spotify_podcast_url TEXT NOT NULL DEFAULT '',
+  spotify_podcast_label TEXT NOT NULL DEFAULT '',
+  ga_measurement_id TEXT NOT NULL DEFAULT 'G-Q47PEYEXX6',
   updated_at TEXT NOT NULL
 );
 
@@ -283,6 +288,11 @@ CREATE TABLE IF NOT EXISTS youtube_feed_videos (
   published TEXT NOT NULL DEFAULT '',
   summary TEXT NOT NULL DEFAULT '',
   url TEXT NOT NULL DEFAULT '',
+  thumb TEXT NOT NULL DEFAULT '',
+  title_en TEXT NOT NULL DEFAULT '',
+  title_es TEXT NOT NULL DEFAULT '',
+  summary_en TEXT NOT NULL DEFAULT '',
+  summary_es TEXT NOT NULL DEFAULT '',
   sort_order INTEGER NOT NULL DEFAULT 0
 );
 
@@ -293,27 +303,6 @@ CREATE TABLE IF NOT EXISTS kv_store (
   value TEXT NOT NULL,
   updated_at TEXT NOT NULL
 );
-
-CREATE TABLE IF NOT EXISTS loja_orders (
-  id TEXT PRIMARY KEY,
-  product_id TEXT NOT NULL,
-  product_title TEXT NOT NULL DEFAULT '',
-  package_id TEXT NOT NULL DEFAULT '',
-  package_label TEXT NOT NULL DEFAULT '',
-  package_price_note TEXT NOT NULL DEFAULT '',
-  nome TEXT NOT NULL DEFAULT '',
-  email TEXT NOT NULL DEFAULT '',
-  telefone TEXT NOT NULL DEFAULT '',
-  cidade TEXT NOT NULL DEFAULT '',
-  estado TEXT NOT NULL DEFAULT '',
-  mensagem TEXT NOT NULL DEFAULT '',
-  user_id TEXT NOT NULL DEFAULT '',
-  status TEXT NOT NULL DEFAULT 'novo',
-  created_at TEXT NOT NULL
-);
-
-CREATE INDEX IF NOT EXISTS idx_loja_orders_product ON loja_orders(product_id);
-CREATE INDEX IF NOT EXISTS idx_loja_orders_created ON loja_orders(created_at);
 
 -- Diário de Pesquisas (utilizador autenticado)
 
@@ -412,3 +401,40 @@ CREATE TABLE IF NOT EXISTS post_series (
 );
 
 CREATE INDEX IF NOT EXISTS idx_post_series_category ON post_series(category);
+
+-- Feed da Comunidade (fotos do diário + comentários)
+
+CREATE TABLE IF NOT EXISTS community_posts (
+  id TEXT PRIMARY KEY,
+  user_id TEXT NOT NULL,
+  grow_id TEXT NOT NULL DEFAULT '',
+  entry_id TEXT NOT NULL DEFAULT '',
+  photo_url TEXT NOT NULL DEFAULT '',
+  caption TEXT NOT NULL DEFAULT '',
+  phase TEXT NOT NULL DEFAULT '',
+  help_request INTEGER NOT NULL DEFAULT 0,
+  kind TEXT NOT NULL DEFAULT 'diary',
+  status TEXT NOT NULL DEFAULT 'published',
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE INDEX IF NOT EXISTS idx_community_posts_status_created ON community_posts(status, created_at);
+CREATE INDEX IF NOT EXISTS idx_community_posts_user ON community_posts(user_id);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_community_posts_entry_photo
+  ON community_posts(entry_id, photo_url) WHERE entry_id <> '' AND photo_url <> '';
+
+CREATE TABLE IF NOT EXISTS community_comments (
+  id TEXT PRIMARY KEY,
+  post_id TEXT NOT NULL,
+  user_id TEXT NOT NULL,
+  body TEXT NOT NULL DEFAULT '',
+  status TEXT NOT NULL DEFAULT 'published',
+  created_at TEXT NOT NULL,
+  FOREIGN KEY (post_id) REFERENCES community_posts(id) ON DELETE CASCADE,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE INDEX IF NOT EXISTS idx_community_comments_post ON community_comments(post_id, created_at);
+CREATE INDEX IF NOT EXISTS idx_community_comments_user ON community_comments(user_id);

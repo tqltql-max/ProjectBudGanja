@@ -9,7 +9,7 @@ const { DEFAULT_SORTEIO_CONFIG } = require('../lib/sorteio-config.js');
 const { getDbClient, initDatabaseOnce } = require('../lib/db/client.js');
 
 const SOBRE_META = 'Conheça o propósito e a metodologia do projeto Inspetor BudGanja.';
-const SITE_TAGLINE = 'Laboratório de inspeção.';
+const SITE_TAGLINE = 'Laboratório de cultivo';
 
 async function main() {
   console.log('A limpar artefactos de teste BD…\n');

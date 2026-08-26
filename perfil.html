@@ -7,17 +7,31 @@
     <meta property="og:title" content="Minha conta | Inspetor BudGanja">
     <meta property="og:description" content="Gerir nome, idade e foto de perfil. O diário de pesquisas fica no módulo dedicado.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/imagens/icon-512.png?v=209">
-    <link rel="icon" href="/favicon.svg?v=209" type="image/svg+xml">
-    <link rel="icon" href="/imagens/favicon-32.png?v=209" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.png?v=209" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=209">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#3d5c28">
+    <meta property="og:url" content="https://inspetorbudganja.com.br/perfil.html">
+    <meta property="og:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
+    <meta property="og:image:secure_url" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Minha conta | Inspetor BudGanja">
+    <meta name="twitter:description" content="Gerir nome, idade e foto de perfil. O diário de pesquisas fica no módulo dedicado.">
+    <meta name="twitter:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
+    <link rel="canonical" href="https://inspetorbudganja.com.br/perfil.html">
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="stylesheet" href="/css/style.css?v=209">
+    <link rel="icon" href="/imagens/favicon-32.v353.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.v353.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.v353.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/imagens/icon-192.v353.png" sizes="192x192" type="image/png">
+    <link rel="shortcut icon" href="/favicon.v353.ico" sizes="any">
+    <link rel="icon" href="/favicon.v353.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v353.png">
+    <link rel="manifest" href="/manifest.json?v=353">
+    <meta name="theme-color" content="#0a2230">
+    <link rel="stylesheet" href="/css/style.css?v=353">
     <meta name="robots" content="noindex,nofollow">
     <title>Minha conta | Inspetor BudGanja</title>
 </head>
@@ -25,91 +39,162 @@
     <div id="site-header"></div>
 
     <main id="main-content" class="conteudo-interno perfil-page">
-    <div id="perfil-loading" class="conta-status">A carregar a sua conta…</div>
+      <div id="perfil-loading" class="perfil-loading" role="status">A carregar a sua conta…</div>
 
-    <div id="perfil-app" hidden>
-      <header class="perfil-hub-header">
-        <div class="perfil-hub-identity">
-          <button type="button" class="perfil-avatar-edit-btn" id="perfil-avatar-edit-btn" title="Alterar foto do perfil" aria-label="Alterar foto do perfil">
-            <img id="perfil-avatar" class="conta-avatar perfil-hub-avatar" src="/imagens/avatars/leaf.svg" alt="" width="64" height="64">
-            <span class="perfil-avatar-edit-badge" aria-hidden="true">✎</span>
-          </button>
-          <div>
-            <p class="perfil-hub-eyebrow">Minha conta</p>
-            <h1 id="perfil-name">Olá!</h1>
-            <p id="perfil-email" class="conta-email"></p>
-          </div>
-        </div>
-        <div class="perfil-hub-actions conta-actions">
-          <button type="button" class="botao botao-outline botao-sm" id="perfil-edit-btn" hidden>Editar dados</button>
-          <button type="button" class="botao botao-outline botao-sm" id="perfil-logout-btn">Sair</button>
-        </div>
-      </header>
-
-      <section id="perfil-onboarding" class="perfil-onboarding info-panel highlight-card" aria-labelledby="perfil-form-title">
-        <h2 id="perfil-form-title">Completar cadastro</h2>
-        <p id="perfil-onboarding-intro" class="page-intro">
-          Primeira etapa: informe apenas o essencial para activar a conta. O complemento do perfil pode ser feito depois.
-        </p>
-        <form id="perfil-form" class="login-form">
-          <fieldset class="perfil-avatar-field">
-            <legend class="perfil-avatar-legend">Foto do perfil</legend>
-            <div class="perfil-avatar-picker">
-              <div class="perfil-avatar-preview-wrap">
-                <img id="profile-avatar-preview" class="perfil-avatar-preview conta-avatar" src="/imagens/avatars/leaf.svg" alt="Pré-visualização do avatar" width="96" height="96">
-              </div>
-              <p id="profile-avatar-status" class="perfil-avatar-status">Escolha um avatar ou envie a sua foto.</p>
-              <p class="perfil-avatar-hint">Toque num avatar — guarda na hora e actualiza o site.</p>
-              <p class="perfil-avatar-section-label">Avatares do laboratório</p>
-              <div id="profile-avatar-presets" class="perfil-avatar-presets" role="listbox" aria-label="Avatares disponíveis"></div>
-              <div class="perfil-avatar-actions">
-                <label class="perfil-avatar-upload botao botao-outline" for="profile-avatar-file">
-                  <span id="profile-avatar-upload-label">Enviar foto</span>
-                  <input type="file" id="profile-avatar-file" accept="image/jpeg,image/png,image/webp" hidden>
-                </label>
-                <button type="button" class="botao botao-outline" id="profile-avatar-google-btn" hidden>Usar foto Google</button>
-              </div>
-              <input type="hidden" id="profile-avatar-url" name="avatarUrl" value="">
+      <div id="perfil-app" class="perfil-shell" hidden>
+        <header class="perfil-identity">
+          <div class="perfil-identity-main">
+            <div class="perfil-avatar-display" aria-hidden="true">
+              <img id="perfil-avatar" class="conta-avatar perfil-hub-avatar" src="/imagens/avatars/inspector.svg" alt="" width="88" height="88">
             </div>
-          </fieldset>
-          <label class="login-field conta-field" for="profile-displayName">Nome
-            <input type="text" id="profile-displayName" name="displayName" maxlength="80" required autocomplete="name" placeholder="Como quer ser chamado">
-          </label>
-          <label class="login-field conta-field" for="profile-username">Nome de utilizador
-            <input type="text" id="profile-username" name="username" maxlength="32" required autocomplete="username" placeholder="ex.: cultivador.br">
-          </label>
-          <label class="login-field conta-field" for="profile-birthDate">Data de nascimento
-            <input type="date" id="profile-birthDate" name="birthDate" required>
-          </label>
-          <p class="perfil-age-notice" id="profile-age-preview">Menores de 18 anos não podem utilizar este site.</p>
-          <div class="conta-actions">
-            <button type="submit" class="botao" id="perfil-save-btn">Guardar e continuar</button>
-            <button type="button" class="botao botao-outline" id="perfil-cancel-edit-btn" hidden>Voltar</button>
+            <div class="perfil-identity-copy">
+              <p class="perfil-hub-eyebrow">Conta do laboratório</p>
+              <h1 id="perfil-name" data-i18n="pages.profile.title">Conta</h1>
+              <p id="perfil-email" class="conta-email"></p>
+              <p id="perfil-account-badge" class="perfil-account-badge" hidden>Conta activa</p>
+            </div>
           </div>
-          <p id="perfil-form-status" class="conta-status" role="status" aria-live="polite"></p>
-        </form>
-      </section>
+          <div class="perfil-hub-actions conta-actions">
+            <button type="button" class="botao botao-outline botao-sm" id="perfil-edit-btn" hidden>Editar perfil</button>
+            <button type="button" class="botao botao-outline botao-sm" id="perfil-logout-btn">Terminar sessão</button>
+          </div>
+        </header>
 
-      <section id="perfil-account" class="perfil-account info-panel highlight-card" hidden aria-labelledby="perfil-account-title">
-        <h2 id="perfil-account-title">Conta activa</h2>
-        <p class="page-intro">Conta activada. Agora pode usar o laboratório e complementar o perfil a qualquer momento sem bloquear o acesso.</p>
-        <div class="conta-actions perfil-account-actions perfil-lab-links">
-          <a href="/cultivo/" class="botao">📓 Diário de Pesquisas</a>
-          <a href="/planejamento/" class="botao botao-outline">🛠️ Planejamento de infraestrutura</a>
-          <button type="button" class="botao botao-outline" id="perfil-account-edit-btn">Editar dados</button>
+        <p id="perfil-live-status" class="perfil-live-status" role="status" aria-live="polite" hidden></p>
+
+        <div id="perfil-incomplete-banner" class="perfil-incomplete-banner" hidden>
+          <p>Indique o seu nome para personalizar a conta.</p>
+          <button type="button" class="botao botao-sm" id="perfil-complete-btn">Editar perfil</button>
         </div>
-      </section>
-    </div>
-  </main>
+
+        <section id="perfil-onboarding" class="perfil-panel perfil-onboarding" aria-labelledby="perfil-form-title" hidden>
+          <header class="perfil-panel-head">
+            <h2 id="perfil-form-title">Editar perfil</h2>
+            <p id="perfil-onboarding-intro" class="perfil-panel-lead">
+              Actualize o nome, a idade (18+) e o WhatsApp (opcional). A foto vem da conta Google.
+            </p>
+          </header>
+          <form id="perfil-form" class="perfil-form login-form">
+            <div class="perfil-form-grid">
+              <label class="login-field conta-field" for="profile-displayName">Nome
+                <input type="text" id="profile-displayName" name="displayName" maxlength="80" required autocomplete="name" placeholder="Como quer ser chamado">
+              </label>
+              <label class="login-field conta-field" for="profile-age">Idade
+                <input type="number" id="profile-age" name="age" min="18" max="120" required inputmode="numeric" placeholder="18 ou mais">
+              </label>
+              <label class="login-field conta-field perfil-field-whatsapp" for="profile-whatsapp">WhatsApp <span class="perfil-field-optional">(opcional)</span>
+                <input type="tel" id="profile-whatsapp" name="whatsapp" maxlength="20" autocomplete="tel" inputmode="tel" placeholder="DDD + número, ex.: 11999999999">
+              </label>
+            </div>
+            <p class="perfil-age-notice">Acesso restrito a utilizadores com 18 anos ou mais. O WhatsApp é opcional.</p>
+
+            <div class="conta-actions perfil-form-actions">
+              <button type="submit" class="botao" id="perfil-save-btn">Guardar</button>
+              <button type="button" class="botao botao-outline" id="perfil-cancel-edit-btn" hidden>Cancelar</button>
+            </div>
+            <p id="perfil-form-status" class="conta-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section id="perfil-account" class="perfil-account" hidden aria-labelledby="perfil-account-title">
+          <h2 id="perfil-account-title" class="visually-hidden">Resumo da conta</h2>
+
+          <div class="perfil-account-grid">
+            <article class="perfil-panel">
+              <header class="perfil-panel-head">
+                <h3 class="perfil-panel-title">Dados da conta</h3>
+                <p class="perfil-panel-lead">Informação usada no site e no diário de pesquisas.</p>
+              </header>
+              <dl class="perfil-meta-list">
+                <div>
+                  <dt>Nome</dt>
+                  <dd id="perfil-summary-name">—</dd>
+                </div>
+                <div>
+                  <dt>Idade</dt>
+                  <dd id="perfil-summary-age">—</dd>
+                </div>
+                <div>
+                  <dt>WhatsApp</dt>
+                  <dd id="perfil-summary-whatsapp">—</dd>
+                </div>
+                <div>
+                  <dt>E-mail</dt>
+                  <dd id="perfil-summary-email">—</dd>
+                </div>
+              </dl>
+              <div class="perfil-panel-actions">
+                <button type="button" class="botao" id="perfil-account-edit-btn">Editar perfil e foto</button>
+              </div>
+            </article>
+
+            <article class="perfil-panel">
+              <header class="perfil-panel-head">
+                <h3 class="perfil-panel-title">Módulos do laboratório</h3>
+                <p class="perfil-panel-lead">Atalhos pessoais — diário, comunidade, ferramentas, planejamento e rádio.</p>
+              </header>
+              <div class="perfil-module-list" role="list">
+                <a href="/cultivo/" class="perfil-module-link" role="listitem">
+                  <span class="perfil-module-label">Diário de Pesquisas</span>
+                  <span class="perfil-module-desc">O seu diário pessoal — registos, roteiro e plano</span>
+                </a>
+                <a href="/biblioteca/pesquisas/" class="perfil-module-link" role="listitem">
+                  <span class="perfil-module-label">Pesquisas</span>
+                  <span class="perfil-module-desc">Hub público — estudos do laboratório e da comunidade</span>
+                </a>
+                <a href="/comunidade/" class="perfil-module-link" role="listitem">
+                  <span class="perfil-module-label">Comunidade</span>
+                  <span class="perfil-module-desc">Fotos, identificação de plantas e comentários</span>
+                </a>
+                <a href="/calculadoras/" class="perfil-module-link" role="listitem">
+                  <span class="perfil-module-label">Ferramentas</span>
+                  <span class="perfil-module-desc">VPD, DLI, EC, luxímetro e solo</span>
+                </a>
+                <a href="/planejamento/" class="perfil-module-link" role="listitem">
+                  <span class="perfil-module-label">Planejamento</span>
+                  <span class="perfil-module-desc">Infraestrutura e lista de materiais</span>
+                </a>
+                <a href="/radio/" class="perfil-module-link" role="listitem">
+                  <span class="perfil-module-label">Rádio</span>
+                  <span class="perfil-module-desc">Ouvir e partilhar a tua playlist</span>
+                </a>
+                <button type="button" class="perfil-module-link" data-pwa-install role="listitem">
+                  <span class="perfil-module-label">Instalar app</span>
+                  <span class="perfil-module-desc">Acesso rápido na tela inicial</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="perfil-panel perfil-images-panel" id="perfil-images-panel">
+              <header class="perfil-panel-head">
+                <h3 class="perfil-panel-title">Minhas imagens</h3>
+                <p class="perfil-panel-lead">Pasta pessoal da sua conta — privada, só para si.</p>
+              </header>
+              <div class="perfil-images-toolbar">
+                <label class="botao botao-sm perfil-images-upload-btn">
+                  Adicionar imagem
+                  <input type="file" id="perfil-images-input" accept="image/png,image/jpeg,image/webp,image/gif" hidden>
+                </label>
+                <p id="perfil-images-status" class="perfil-images-status" role="status" aria-live="polite"></p>
+              </div>
+              <div id="perfil-images-grid" class="perfil-images-grid" aria-live="polite"></div>
+              <p id="perfil-images-empty" class="perfil-images-empty" hidden>Ainda não há imagens nesta pasta.</p>
+            </article>
+
+          </div>
+        </section>
+      </div>
+    </main>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=209"></script>
-    <script src="/js/i18n-data.js?v=209"></script>
-    <script src="/js/i18n.js?v=209"></script>
-    <script src="/js/ferramentas-nav-data.js?v=209"></script>
-    <script src="/js/layout.js?v=209"></script>
-    <script src="/js/site-features.js?v=209"></script>
-  <script src="/js/perfil.js?v=209"></script>
+  <script src="/js/app-version-check.js?v=353"></script>
+    <script src="/js/i18n-data.js?v=353"></script>
+    <script src="/js/page-translations-data.js?v=353"></script>
+    <script src="/js/i18n.js?v=353"></script>
+    <script src="/js/ferramentas-nav-data.js?v=353"></script>
+    <script src="/js/layout.js?v=353"></script>
+    <script src="/js/site-features.js?v=353"></script>
+  <script src="/js/perfil.js?v=353"></script>
 
 </body>
 </html>

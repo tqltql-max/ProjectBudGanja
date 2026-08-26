@@ -1,0 +1,11 @@
+/* Fungos — reutiliza o layout de plantas; acento gelo/aurora. */
+
+body[data-page="fungos"] .planta-card-badge,
+body[data-page="fungo"] .planta-card-badge {
+    border-color: rgba(90, 210, 190, 0.4);
+}
+
+body[data-page="fungos"] .plantas-disclaimer,
+body[data-page="fungo"] .plantas-disclaimer {
+    border-color: rgba(90, 210, 190, 0.28);
+}

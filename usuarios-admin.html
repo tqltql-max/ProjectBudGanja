@@ -7,17 +7,31 @@
     <meta property="og:title" content="Utilizadores | Admin Inspetor BudGanja">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/imagens/icon-512.png?v=209">
-    <link rel="icon" href="/favicon.svg?v=209" type="image/svg+xml">
-    <link rel="icon" href="/imagens/favicon-32.png?v=209" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.png?v=209" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=209">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#3d5c28">
+    <meta property="og:url" content="https://inspetorbudganja.com.br/usuarios-admin.html">
+    <meta property="og:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
+    <meta property="og:image:secure_url" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Utilizadores | Admin Inspetor BudGanja">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
+    <link rel="canonical" href="https://inspetorbudganja.com.br/usuarios-admin.html">
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="stylesheet" href="/css/style.css?v=209">
+    <link rel="icon" href="/imagens/favicon-32.v353.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.v353.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.v353.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/imagens/icon-192.v353.png" sizes="192x192" type="image/png">
+    <link rel="shortcut icon" href="/favicon.v353.ico" sizes="any">
+    <link rel="icon" href="/favicon.v353.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v353.png">
+    <link rel="manifest" href="/manifest.json?v=353">
+    <meta name="theme-color" content="#0a2230">
+    <link rel="stylesheet" href="/css/style.css?v=353">
     <meta name="robots" content="noindex,nofollow">
     <title>Utilizadores | Admin Inspetor BudGanja</title>
 </head>
@@ -29,7 +43,7 @@
       <div class="admin-hub-intro">
         <p class="admin-hub-eyebrow">Área administrativa</p>
         <h1>Utilizadores</h1>
-        <p class="admin-hub-sub">Contas Google registadas, perfis de cultivador e permissões de administrador.</p>
+        <p class="admin-hub-sub">Gestão de contas, permissões e remoção de utilizadores.</p>
       </div>
       <div class="admin-hub-actions">
         <a href="/perfil.html" class="botao botao-outline botao-sm" target="_blank" rel="noopener">Minha conta</a>
@@ -41,18 +55,20 @@
     <nav class="admin-nav" aria-label="Secções do admin">
       <a href="/admin.html" class="admin-nav-link">Publicações</a>
       <a href="/pesquisas-admin.html" class="admin-nav-link">Submissões</a>
+      <a href="/comunidade-admin.html" class="admin-nav-link">Comunidade</a>
       <a href="/usuarios-admin.html" class="admin-nav-link is-active" aria-current="page">Utilizadores</a>
       <a href="/sorteios-admin.html" class="admin-nav-link">Sorteios</a>
-      <a href="/loja-admin.html" class="admin-nav-link">Encomendas</a>
+      <a href="/emails-admin.html" class="admin-nav-link">E-mail</a>
+      <a href="/info/apresentacao-unifesp.html" class="admin-nav-link">Apresentação UNIFESP</a>
     </nav>
 
     <div id="users-stats" class="admin-stats-grid" aria-label="Resumo de utilizadores"></div>
 
-    <section class="highlight-card loja-admin-panel" id="users-list-panel">
+    <section class="highlight-card admin-surface-panel" id="users-list-panel">
       <div class="sorteios-admin-toolbar">
         <div>
           <h2 class="admin-section-title" style="margin:0">Contas registadas</h2>
-          <p class="field-hint">Pesquise por e-mail, nome ou ID. Clique em <strong>Ver</strong> para o perfil completo.</p>
+          <p class="field-hint">Pesquise por e-mail, nome ou ID. Abra o detalhe para gerir permissões ou remover a conta.</p>
           <p id="users-count" class="sorteios-admin-count">A carregar…</p>
         </div>
         <label class="admin-field-row">
@@ -66,16 +82,15 @@
             <tr>
               <th>Utilizador</th>
               <th>E-mail</th>
-              <th>Perfil</th>
-              <th>Admin</th>
-              <th>Pesquisas</th>
-              <th>Registos</th>
+              <th>Estado</th>
+              <th>Acesso</th>
+              <th>Actividade</th>
               <th>Cadastro</th>
               <th></th>
             </tr>
           </thead>
           <tbody id="users-table-body">
-            <tr><td colspan="8">A carregar…</td></tr>
+            <tr><td colspan="7">A carregar…</td></tr>
           </tbody>
         </table>
       </div>
@@ -84,7 +99,7 @@
     <section class="highlight-card admin-studio-editor" id="user-detail-panel" hidden>
       <div class="admin-editor-top">
         <button type="button" id="user-back-btn" class="voltar-link admin-studio-back">&larr; Voltar à lista</button>
-        <span id="user-admin-badge" class="admin-editor-badge">Utilizador</span>
+        <div class="usuarios-admin-badges" id="user-badges" aria-live="polite"></div>
       </div>
 
       <div class="usuarios-admin-identity" id="user-identity"></div>
@@ -92,15 +107,15 @@
       <div class="admin-stats-grid" id="user-detail-stats" aria-label="Estatísticas do utilizador"></div>
 
       <div class="usuarios-admin-grid">
-        <section class="highlight-card usuarios-admin-card">
+        <section class="usuarios-admin-card">
           <h2 class="admin-section-title">Perfil da conta</h2>
           <dl id="user-profile-fields" class="usuarios-admin-dl"></dl>
           <p id="user-profile-empty" class="field-hint" hidden>Perfil ainda incompleto ou sem campos opcionais preenchidos.</p>
         </section>
 
-        <section class="highlight-card usuarios-admin-card">
+        <section class="usuarios-admin-card">
           <h2 class="admin-section-title">Permissões</h2>
-          <p class="field-hint">Administradores podem aceder a todos os painéis. E-mails em <code>ADMIN_EMAILS</code> no servidor também têm acesso (não editável aqui).</p>
+          <p class="field-hint">Administradores acedem a todos os painéis. E-mails em <code>ADMIN_EMAILS</code> também têm acesso (não editável aqui).</p>
           <label class="admin-checkbox">
             <input type="checkbox" id="user-is-admin">
             Administrador do site
@@ -112,7 +127,7 @@
         </section>
       </div>
 
-      <section class="highlight-card usuarios-admin-card">
+      <section class="usuarios-admin-card">
         <h2 class="admin-section-title">Pesquisas no diário</h2>
         <div class="sorteios-admin-table-wrap">
           <table class="sorteios-admin-table">
@@ -132,7 +147,7 @@
         </div>
       </section>
 
-      <section class="highlight-card usuarios-admin-card">
+      <section class="usuarios-admin-card">
         <h2 class="admin-section-title">Submissões ao laboratório</h2>
         <div class="sorteios-admin-table-wrap">
           <table class="sorteios-admin-table">
@@ -152,7 +167,7 @@
       </section>
 
       <div class="usuarios-admin-grid">
-        <section class="highlight-card usuarios-admin-card">
+        <section class="usuarios-admin-card">
           <h2 class="admin-section-title">Sorteios</h2>
           <div class="sorteios-admin-table-wrap">
             <table class="sorteios-admin-table">
@@ -170,36 +185,31 @@
           </div>
         </section>
 
-        <section class="highlight-card usuarios-admin-card">
-          <h2 class="admin-section-title">Encomendas loja</h2>
-          <div class="sorteios-admin-table-wrap">
-            <table class="sorteios-admin-table">
-              <thead>
-                <tr>
-                  <th>Data</th>
-                  <th>Produto</th>
-                  <th>Estado</th>
-                </tr>
-              </thead>
-              <tbody id="user-loja-body">
-                <tr><td colspan="3">—</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
       </div>
+
+      <section class="usuarios-admin-danger-zone" aria-labelledby="user-danger-title">
+        <div>
+          <h2 class="admin-section-title" id="user-danger-title">Zona de risco</h2>
+          <p class="field-hint">
+            Remover a conta apaga o diário, sessões e conteúdo da comunidade.
+            Inscrições em sorteios mantêm-se por histórico.
+          </p>
+        </div>
+        <button type="button" class="admin-danger" id="user-delete-btn">Remover conta</button>
+      </section>
 
       <p id="user-result" class="conta-status" role="status"></p>
     </section>
   </main>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=209"></script>
-    <script src="/js/i18n-data.js?v=209"></script>
-    <script src="/js/i18n.js?v=209"></script>
-    <script src="/js/ferramentas-nav-data.js?v=209"></script>
-    <script src="/js/layout.js?v=209"></script>
-    <script src="/js/usuarios-admin.js?v=209"></script>
+  <script src="/js/app-version-check.js?v=353"></script>
+    <script src="/js/i18n-data.js?v=353"></script>
+    <script src="/js/page-translations-data.js?v=353"></script>
+    <script src="/js/i18n.js?v=353"></script>
+    <script src="/js/ferramentas-nav-data.js?v=353"></script>
+    <script src="/js/layout.js?v=353"></script>
+    <script src="/js/usuarios-admin.js?v=353"></script>
 
 </body>
 </html>

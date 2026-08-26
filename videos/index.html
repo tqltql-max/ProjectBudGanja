@@ -3,47 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Últimos vídeos do canal Inspetor BudGanja — inspeções, tutoriais e sorteios.">
-    <meta property="og:title" content="Últimos vídeos | Inspetor BudGanja">
-    <meta property="og:description" content="Vídeos recentes do laboratório no YouTube.">
+    <meta name="description" content="Assista aos vídeos do Inspetor BudGanja, aulas MovReCam e CANABinALL, e o acervo de divulgação (Lair, Davis, Dalle Laste) — filtros por canal, série e tema.">
+    <meta property="og:title" content="Vídeos | Inspetor BudGanja">
+    <meta property="og:description" content="Player embutido com o canal do laboratório e catálogos dos canais inspecionados.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/imagens/icon-512.png?v=209">
-    <link rel="icon" href="/favicon.svg?v=209" type="image/svg+xml">
-    <link rel="icon" href="/imagens/favicon-32.png?v=209" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.png?v=209" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png?v=209">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#3d5c28">
+    <meta property="og:url" content="https://inspetorbudganja.com.br/videos/">
+    <meta property="og:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
+    <meta property="og:image:secure_url" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vídeos | Inspetor BudGanja">
+    <meta name="twitter:description" content="Player embutido com o canal do laboratório e catálogos dos canais inspecionados.">
+    <meta name="twitter:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
+    <link rel="canonical" href="https://inspetorbudganja.com.br/videos/">
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="stylesheet" href="/css/style.css?v=209">
-    <title>Últimos vídeos | Inspetor BudGanja</title>
+
+    <link rel="icon" href="/imagens/favicon-32.v355.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.v355.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.v355.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/imagens/icon-192.v355.png" sizes="192x192" type="image/png">
+    <link rel="shortcut icon" href="/favicon.v355.ico" sizes="any">
+    <link rel="icon" href="/favicon.v355.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v355.png">
+    <link rel="manifest" href="/manifest.json?v=355">
+    <meta name="theme-color" content="#0a2230">
+    <link rel="stylesheet" href="/css/style.css?v=355">
+    <title>Vídeos | Inspetor BudGanja</title>
 </head>
 <body data-page="videos">
     <div id="site-header"></div>
 
     <main id="main-content" class="conteudo videos-page">
         <header class="videos-header">
-            <p class="guia-badge">Canal YouTube</p>
-            <h1>Últimos vídeos</h1>
-            <p class="secao-subtitulo">Inspeções, tutoriais e novidades publicadas no canal.</p>
-            <p><a id="videos-channel-link" href="https://www.youtube.com/@InspetorBudGanja" class="botao botao-home" target="_blank" rel="noopener noreferrer">▶ @InspetorBudGanja</a></p>
+            <p class="guia-badge" data-i18n="pages.videos.eyebrow">Canal YouTube</p>
+            <h1 data-i18n="pages.videos.title">Vídeos</h1>
+            <p class="secao-subtitulo" data-i18n="pages.videos.subtitle">Assista aqui no site — canal do laboratório, aulas dos canais inspecionados e divulgação (Lair, Davis, Dalle Laste).</p>
         </header>
 
-        <div id="videos-grid" class="videos-grid">
-            <p class="empty-message">Carregando vídeos...</p>
+        <nav id="videos-filters" class="videos-filters-wrap" aria-label="Filtros de vídeos"></nav>
+
+        <div class="videos-search-wrap">
+            <label class="videos-search-label" for="videos-search" data-i18n="pages.videos.searchLabel">Buscar</label>
+            <input
+                type="search"
+                id="videos-search"
+                class="videos-search-input"
+                placeholder="Assunto, título ou palavra…"
+                data-i18n-placeholder="pages.videos.searchPlaceholder"
+                autocomplete="off"
+                enterkeyhint="search"
+            >
         </div>
+
+        <div id="videos-list" class="videos-list">
+            <p class="empty-message" data-i18n="pages.videos.loading">Carregando vídeos...</p>
+        </div>
+        <p class="videos-more-wrap comunidade-more-wrap">
+            <button type="button" id="videos-load-more" class="botao botao-outline" hidden data-i18n="pages.videos.loadMore">Carregar mais</button>
+        </p>
     </main>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=209"></script>
-    <script src="/js/i18n-data.js?v=209"></script>
-    <script src="/js/i18n.js?v=209"></script>
-    <script src="/js/ferramentas-nav-data.js?v=209"></script>
-    <script src="/js/layout.js?v=209"></script>
-    <script src="/js/site-features.js?v=209"></script>
-    <script src="/js/videos.js?v=209"></script>
+  <script src="/js/app-version-check.js?v=355"></script>
+    <script src="/js/i18n-data.js?v=355"></script>
+    <script src="/js/page-translations-data.js?v=355"></script>
+    <script src="/js/i18n.js?v=355"></script>
+    <script src="/js/ferramentas-nav-data.js?v=355"></script>
+    <script src="/js/layout.js?v=355"></script>
+    <script src="/js/site-features.js?v=355"></script>
+    <script src="/js/videos.js?v=355"></script>
 
 </body>
 </html>

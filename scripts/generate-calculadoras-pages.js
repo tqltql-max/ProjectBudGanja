@@ -9,9 +9,19 @@ const {
 } = require('../lib/calculadoras-registry.js');
 const { getGuiaPostUrl } = require('../lib/calculadoras-guias.js');
 const { CALC_ICONS } = require('../lib/ferramentas-nav.js');
+const { ASSET_VERSION } = require('../lib/asset-version.js');
 
 const CALC_DIR = path.join(ROOT, 'calculadoras');
 const GENERATED_MARKER = '<!-- generated:calculadoras -->';
+const ICON_HEAD = `    <link rel="icon" href="/imagens/favicon-32.v${ASSET_VERSION}.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.v${ASSET_VERSION}.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.v${ASSET_VERSION}.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/imagens/icon-192.v${ASSET_VERSION}.png" sizes="192x192" type="image/png">
+    <link rel="shortcut icon" href="/favicon.v${ASSET_VERSION}.ico" sizes="any">
+    <link rel="icon" href="/favicon.v${ASSET_VERSION}.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v${ASSET_VERSION}.png">
+    <link rel="manifest" href="/manifest.json?v=${ASSET_VERSION}">
+    <meta name="theme-color" content="#0a2230">`;
 
 const FORMS = {
   'super-solo': `
@@ -91,12 +101,7 @@ function buildCalcPage(calc) {
     <meta property="og:title" content="${escapeHtml(calc.title)} | Inspetor BudGanja">
     <meta property="og:description" content="${escapeHtml(calc.description)}">
     <meta property="og:type" content="website">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="/imagens/favicon-32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.png" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#3d5c28">
+${ICON_HEAD}
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
@@ -117,8 +122,10 @@ ${form}
     </main>
 
     <div id="site-footer"></div>
-    <script src="/js/ferramentas-nav-data.js"></script>
-    <script src="/js/layout.js"></script>
+    <script src="/js/i18n-data.js?v=${ASSET_VERSION}"></script>
+    <script src="/js/i18n.js?v=${ASSET_VERSION}"></script>
+    <script src="/js/ferramentas-nav-data.js?v=${ASSET_VERSION}"></script>
+    <script src="/js/layout.js?v=${ASSET_VERSION}"></script>
     <script src="/js/cultivo-diary-bridge.js"></script>
 ${scriptTag}</body>
 </html>
@@ -128,7 +135,8 @@ ${scriptTag}</body>
 function buildHubIndex() {
   let body = `
     <main id="main-content" class="conteudo calc-hub">
-        <h1>Ferramentas</h1>
+        <h1 data-i18n="pages.tools.title">Ferramentas</h1>
+        <p class="secao-subtitulo" data-i18n="pages.tools.subtitle">Calculadoras e utilitários para otimizar o cultivo.</p>
         <nav class="calc-apps-grid calc-apps-grid--all" aria-label="Ferramentas">`;
 
   CALCULADORAS.forEach((calc) => {
@@ -162,12 +170,7 @@ function buildHubIndex() {
     <meta property="og:title" content="Ferramentas | Inspetor BudGanja">
     <meta property="og:description" content="Super Calc, luxímetro e Super Solo — ferramentas numéricas para cultivo.">
     <meta property="og:type" content="website">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="/imagens/favicon-32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.png" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#3d5c28">
+${ICON_HEAD}
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">

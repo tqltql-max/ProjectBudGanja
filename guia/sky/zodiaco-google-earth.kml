@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" hint="target=sky">
+  <Document>
+    <name>Zodíaco BudGanja — Google Earth · modo Céu</name>
+    <description>Doze âncoras do zodíaco tropical para o modo Sky do Google Earth (ambiente de secretária). Não é embed web. Inspetor BudGanja — 2026. longitude = RA° − 180.</description>
+    <Style id="ariesPin">
+      <IconStyle>
+        <color>ff5ad4e2</color>
+        <scale>1.2</scale>
+      </IconStyle>
+      <LabelStyle>
+        <color>ffdfe8f4</color>
+      </LabelStyle>
+    </Style>
+    <LookAt>
+      <longitude>-148.207</longitude>
+      <latitude>23.462</latitude>
+      <altitude>0</altitude>
+      <range>18000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>♈ Áries · Hamal (1.º)</name>
+      <description>Primeiro signo. Estrela Hamal (α Arietis). Nativos: ariano / ariana. Ficha: https://inspetorbudganja.com.br/posts/post-inspecao-palavra-ariana.html</description>
+      <styleUrl>#ariesPin</styleUrl>
+      <LookAt>
+        <longitude>-148.207</longitude>
+        <latitude>23.462</latitude>
+        <range>8000000</range>
+        <tilt>0</tilt>
+        <heading>0</heading>
+      </LookAt>
+      <Point>
+        <coordinates>-148.207,23.462,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>♉ Touro · Aldebaran</name>
+      <Point><coordinates>-111.020,16.509,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>♊ Gêmeos · Pollux</name>
+      <description>Ficha: https://inspetorbudganja.com.br/posts/post-inspecao-palavra-gemeos.html</description>
+      <Point><coordinates>-63.671,28.026,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>♋ Câncer · M44</name>
+      <Point><coordinates>-49.900,19.667,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>♌ Leão · Regulus</name>
+      <Point><coordinates>-27.907,11.967,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>♍ Virgem · Spica</name>
+      <Point><coordinates>21.298,-11.161,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>♎ Libra · Zubenelgenubi</name>
+      <Point><coordinates>42.720,-16.042,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>♏ Escorpião · Antares</name>
+      <Point><coordinates>67.352,-26.432,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>♐ Sagitário · Kaus Australis</name>
+      <Point><coordinates>96.043,-34.385,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>♑ Capricórnio · Deneb Algedi</name>
+      <Point><coordinates>146.760,-16.127,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>♒ Aquário · Sadalsuud</name>
+      <Point><coordinates>142.890,-5.571,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>♓ Peixes · Alrescha</name>
+      <Point><coordinates>-155.571,3.236,0</coordinates></Point>
+    </Placemark>
+  </Document>
+</kml>

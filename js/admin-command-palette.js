@@ -40,8 +40,8 @@
     { icon: '🗄️', label: 'Base de Dados', hint: '/admin-db.html', href: '/admin-db.html' },
     { icon: '👥', label: 'Utilizadores', hint: '/usuarios-admin.html', href: '/usuarios-admin.html' },
     { icon: '🎁', label: 'Sorteios', hint: '/sorteios-admin.html', href: '/sorteios-admin.html' },
-    { icon: '🛒', label: 'Encomendas', hint: '/loja-admin.html', href: '/loja-admin.html' },
-    { icon: '📊', label: 'Submissões', hint: '/pesquisas-admin.html', href: '/pesquisas-admin.html' }
+    { icon: '📊', label: 'Submissões', hint: '/pesquisas-admin.html', href: '/pesquisas-admin.html' },
+    { icon: '🎓', label: 'Apresentação UNIFESP', hint: '/info/apresentacao-unifesp.html', href: '/info/apresentacao-unifesp.html' }
   ];
 
   /* ── State ── */

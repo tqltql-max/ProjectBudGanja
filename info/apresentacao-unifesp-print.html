@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apresentação Inspetor BudGanja — Reitoria UNIFESP</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 16mm 18mm 16mm;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.45;
+      color: #1a1f14;
+      background: #fff;
+    }
+    .doc {
+      max-width: 180mm;
+      margin: 0 auto;
+    }
+    .masthead {
+      border-bottom: 2.5px solid #5a6b1a;
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+    }
+    .eyebrow {
+      margin: 0 0 4px;
+      font-size: 9pt;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #5a6b1a;
+      font-weight: 700;
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 20pt;
+      line-height: 1.15;
+      color: #1a1f14;
+    }
+    .subtitle {
+      margin: 0;
+      font-size: 11pt;
+      color: #333;
+    }
+    .meta {
+      margin-top: 10px;
+      font-size: 9pt;
+      color: #444;
+    }
+    .meta a { color: #3d4d12; }
+    h2 {
+      margin: 16px 0 6px;
+      font-size: 12pt;
+      color: #3d4d12;
+      border-bottom: 1px solid #c5d08a;
+      padding-bottom: 3px;
+      page-break-after: avoid;
+    }
+    h3 {
+      margin: 10px 0 4px;
+      font-size: 10.5pt;
+      color: #2a3210;
+      page-break-after: avoid;
+    }
+    p { margin: 0 0 8px; }
+    ul, ol {
+      margin: 0 0 8px;
+      padding-left: 1.2em;
+    }
+    li { margin-bottom: 3px; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 8px 0 12px;
+    }
+    .box {
+      border: 1px solid #c5d08a;
+      border-radius: 4px;
+      padding: 8px 10px;
+      background: #f7f9ef;
+      page-break-inside: avoid;
+    }
+    .box h3 { margin-top: 0; }
+    .box ul { margin-bottom: 0; }
+    .footer {
+      margin-top: 20px;
+      padding-top: 10px;
+      border-top: 1px solid #c5d08a;
+      font-size: 9pt;
+      color: #444;
+    }
+    .footer strong { color: #1a1f14; }
+    a { color: #3d4d12; text-decoration: none; }
+    strong { font-weight: 700; }
+  </style>
+    <link rel="icon" href="/imagens/favicon-32.v353.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.v353.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.v353.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/imagens/icon-192.v353.png" sizes="192x192" type="image/png">
+    <link rel="shortcut icon" href="/favicon.v353.ico" sizes="any">
+    <link rel="icon" href="/favicon.v353.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v353.png">
+    <link rel="manifest" href="/manifest.json?v=353">
+    <meta name="theme-color" content="#0a2230">
+</head>
+<body>
+  <div class="doc">
+    <header class="masthead">
+      <p class="eyebrow">Apresentação institucional · Universidade Federal de São Paulo</p>
+      <h1>Inspetor BudGanja — Vida no laboratório</h1>
+      <p class="subtitle">
+        Laboratório digital educacional de plantas medicinais do Brasil —
+        documento para a <strong>Reitoria da UNIFESP</strong> e para a coordenação do
+        XIV Curso de Extensão em Cannabis Medicinal (UNIFESP / MovReCam / SIEX).
+        Página viva: inspetorbudganja.com.br/info/apresentacao-unifesp.html
+        (estilo Vida; referências Wikipédia para termos ainda sem ficha no projecto).
+      </p>
+      <p class="meta">
+        Site: <a href="https://inspetorbudganja.com.br/">https://inspetorbudganja.com.br/</a>
+        · PDF: https://inspetorbudganja.com.br/info/apresentacao-inspetor-budganja-unifesp.pdf
+      </p>
+    </header>
+
+    <section>
+      <h2>Dedicatória</h2>
+      <p>
+        Ao <strong>XIV Curso de Extensão sobre o uso terapêutico da Cannabis sativa L.</strong>
+        (UNIFESP · MovReCam · SIEX) — e a todas as professoras e professores que o sustentam.
+      </p>
+      <p>
+        Em especial à <strong>Profa. Dra. Eliana Rodrigues</strong>
+        (coordenação RTC, CEE, curadoria CANABinALL),
+        pelo ofício de ensinar com método e crédito.
+        Pedido de campo: Heliana Rodrigues — o laboratório honra o nome canónico já fichado:
+        <a href="https://inspetorbudganja.com.br/posts/post-inspecao-eliana-rodrigues.html">Eliana Rodrigues</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>1. Quem apresenta</h2>
+      <p>
+        <strong>Tiago Queiroz Loureiro</strong><br>
+        Cientista da computação · ambientes controlados (CEA), automação e IoT agrícola<br>
+        Aluno do XIV Curso UNIFESP de Cannabis Medicinal
+      </p>
+      <p>
+        Desenvolvi o Inspetor BudGanja como laboratório digital público para cruzar
+        formação de extensão, catálogo botânico e ferramentas práticas —
+        de forma independente, transparente e educacional.
+      </p>
+      <p>
+        Contacto: tql.tql@gmail.com ·
+        LinkedIn: linkedin.com/in/tiago-queiroz-loureiro
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Resumo executivo</h2>
+      <p>
+        O <strong>Inspetor BudGanja</strong> é uma plataforma web pública, multilíngue
+        (interface em 17 línguas; núcleo editorial em português, inglês e espanhol), dedicada a plantas medicinais do Brasil,
+        literacia canábica responsável e documentação prática de cultivo.
+        O conteúdo é educacional e deixa limites éticos à vista:
+        <strong>não substitui orientação médica, farmacêutica ou jurídica</strong>,
+        nem a inscrição SIEX ou as aulas oficiais da UNIFESP.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Objectivos perante a Universidade</h2>
+      <ul>
+        <li>Ampliar o alcance da formação de extensão em cannabis medicinal com material complementar, organizado e verificável.</li>
+        <li>Documentar com mérito explícito o legado científico e comunitário que sustenta o ecossistema UNIFESP / MovReCam / CEBRID.</li>
+        <li>Oferecer ferramentas práticas (VPD, DLI, EC, luxímetro) e fichas botânicas alinhadas ao estudo responsável.</li>
+        <li>Manter independência editorial — sem reivindicar afiliação, marca ou endosso institucional da UNIFESP.</li>
+        <li>Estar disponível para demonstração, críticas da coordenação e alinhamento de boas práticas de citação.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Ligação com o XIV Curso UNIFESP</h2>
+      <ul>
+        <li>Hub do XIV curso no site — resumo prático, SIEX, carga horária e caminhos de estudo.</li>
+        <li>Inspeção editorial independente do programa de extensão.</li>
+        <li>Destaque na página inicial e no hub de vídeos para MovReCam e CANABinALL.</li>
+        <li>Registo do mérito do curso no CannaPortugal Global Cannabis Awards 2025 e do contexto histórico com fontes públicas.</li>
+        <li>Alcance comunitário (20–21 ago. 2026): 11.ª aula partilhada em WhatsApp (20 amigos; 13 online no YouTube) e <em>Bom dia, Inverno</em> pelo botão Compartilhar do app.</li>
+        <li>Tráfego Cloudflare nas últimas 24 h (21 ago. 2026): 11,64 mil pedidos HTTP em 21 países e 382 visitantes únicos. Ordem no painel: Brasil (7,13 mil), Estados Unidos (2,74 mil), Taiwan (1,29 mil), China, Reino Unido, Canadá, França, Países Baixos, Alemanha, Singapura, Hong Kong, Coreia do Sul, Japão, Polónia, Indonésia, África do Sul, Emirados Árabes Unidos, Bélgica, Turquia, Tailândia e Filipinas. São pedidos de rede, não pessoas confirmadas.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Módulos do laboratório</h2>
+      <ol>
+        <li><strong>Plantas fitoterápicas</strong> — fichas educacionais (nome popular/científico, usos tradicionais, partes usadas, cuidados).</li>
+        <li><strong>Animais</strong> — fichas de interesse zootécnico e educativo.</li>
+        <li><strong>Inspeções</strong> — legado (pessoas e CEBRID), canais, cursos, artigos e objectos, com método verificável.</li>
+        <li><strong>Hub de vídeos</strong> — player in-site com filtros por canal e série.</li>
+        <li><strong>Ferramentas no navegador</strong> — VPD, DLI, pH/EC, luxímetro, super solo e outros utilitários.</li>
+        <li><strong>Diário de pesquisas</strong>, comunidade, objectos e BudGanja Radio como apoios ao estudo.</li>
+        <li><strong>Vida</strong> — conto familiar, poemas e diário da sementinha (mesmo pulso da página viva da apresentação).</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>6. Crédito às origens</h2>
+      <p>
+        Método BudGanja: <strong>crédito a quem merece</strong>, com fontes públicas —
+        <a href="/posts/post-inspecao-padre-ticao.html">Padre Ticão</a>,
+        Prof. <a href="/posts/post-inspecao-elisaldo-carlini.html">Elisaldo Carlini</a>,
+        <a href="/posts/post-inspecao-cebrid.html">CEBRID</a>,
+        Profa. <a href="/posts/post-inspecao-solange-nappo.html">Solange Nappo</a>,
+        Profa. Dra. <a href="/posts/post-inspecao-eliana-rodrigues.html">Eliana Rodrigues</a>,
+        <a href="/posts/post-inspecao-gabrielle-dainezi.html">Gabrielle Dainezi</a>,
+        Dr. <a href="/posts/post-inspecao-sidarta-ribeiro.html">Sidarta Ribeiro</a>,
+        canais MovReCam e CANABinALL, e o próprio XIV Curso UNIFESP.
+      </p>
+    </section>
+
+    <div class="grid">
+      <div class="box">
+        <h3>O que este projeto é</h3>
+        <ul>
+          <li>Iniciativa educacional independente de um aluno do curso.</li>
+          <li>Espaço digital para estudar, documentar e partilhar com responsabilidade.</li>
+          <li>Ponte entre extensão académica, catálogo botânico e prática de laboratório.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>O que este projeto não é</h3>
+        <ul>
+          <li>Não é produto comercial afiliado à UNIFESP.</li>
+          <li>Não substitui inscrição SIEX, aulas oficiais ou certificado.</li>
+          <li>Não presta aconselhamento clínico, farmacêutico ou jurídico.</li>
+        </ul>
+      </div>
+    </div>
+
+    <section>
+      <h2>7. Pedido à Reitoria e à coordenação</h2>
+      <p>
+        Solicito a oportunidade de uma demonstração breve (online ou presencial) do
+        laboratório perante a coordenação do XIV Curso e, se pertinente, perante
+        instâncias da Reitoria interessadas em extensão, divulgação científica e
+        inovação educacional. Estou aberto a críticas, a correções de citação e a
+        alinhar menções ou links oficiais quando fizer sentido institucionalmente.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>
+        <strong>Contacto:</strong> tql.tql@gmail.com<br>
+        <strong>Página:</strong> https://inspetorbudganja.com.br/info/apresentacao-unifesp.html<br>
+        <strong>Laboratório:</strong> https://inspetorbudganja.com.br/<br>
+        Documento gerado para partilha com a Reitoria e a coordenação do XIV Curso UNIFESP.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

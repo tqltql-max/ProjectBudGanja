@@ -1,0 +1,97 @@
+/* Hub Tecnologia — aula 0 (for / if / else) */
+
+.tech-lab {
+    margin: 1.25rem 0 1.75rem;
+    padding: 1.1rem 1.15rem 1.2rem;
+    border-radius: 14px;
+    border: 1px solid rgba(120, 200, 210, 0.28);
+    background: rgba(12, 22, 28, 0.55);
+}
+
+.tech-lab h2 {
+    margin: 0.15rem 0 0.5rem;
+}
+
+.tech-lab-lead {
+    margin: 0 0 1rem;
+    color: var(--color-text-muted, #c5d0d4);
+    line-height: 1.5;
+}
+
+.tech-lab-panels {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 720px) {
+    .tech-lab-panels {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.tech-lab-panel {
+    padding: 0.85rem 0.9rem;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    background: rgba(8, 14, 18, 0.45);
+}
+
+.tech-lab-panel h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+    font-family: Consolas, "Courier New", monospace;
+}
+
+.tech-lab-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 0.5rem 0 0.7rem;
+}
+
+.tech-lab-btn {
+    cursor: pointer;
+    border-radius: 999px;
+    border: 1px solid rgba(140, 210, 220, 0.45);
+    background: rgba(20, 40, 48, 0.8);
+    color: #e8f4f6;
+    padding: 0.4rem 0.85rem;
+    font-size: 0.9rem;
+}
+
+.tech-lab-btn:hover,
+.tech-lab-btn:focus-visible {
+    border-color: rgba(212, 175, 55, 0.7);
+    outline: none;
+}
+
+.tech-lab-code {
+    margin: 0 0 0.7rem;
+    padding: 0.7rem 0.8rem;
+    border-radius: 8px;
+    background: #0a1014;
+    color: #b8e0c8;
+    font-size: 0.82rem;
+    overflow-x: auto;
+}
+
+.tech-lab-out,
+.tech-lab-out-list {
+    margin: 0;
+    min-height: 1.4em;
+    color: #d4c070;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.92rem;
+}
+
+.tech-lab-out-list {
+    padding-left: 1.2rem;
+}
+
+.tech-lab-open {
+    margin: 1rem 0 0;
+}
+
+.tech-lab-open a {
+    font-weight: 600;
+}

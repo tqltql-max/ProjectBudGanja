@@ -6,8 +6,20 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const { ROOT } = require('../lib/paths.js');
 const { ASSET_VERSION } = require('../lib/asset-version.js');
+const { writeFileRetrySync } = require('../lib/fs-write-retry.js');
+
+function safeWriteFile(file, content) {
+  try {
+    writeFileRetrySync(file, content);
+    return true;
+  } catch (err) {
+    console.warn('stamp-assets: não gravou ' + path.relative(ROOT, file) + ' — ' + (err && err.message));
+    return false;
+  }
+}
 
 function listHtmlFiles(dir, acc) {
   acc = acc || [];
@@ -63,27 +75,131 @@ function stampHtml(content) {
         '$1\n    <link rel="stylesheet" href="/css/pages/planejamento.css?v=' + ASSET_VERSION + '">'
       );
     }
+  } else if (
+    (next.includes('data-page="cadernos-engenharia"') || next.includes('data-page="unifesp-caderno"')) &&
+    !next.includes('pages/cadernos-engenharia.css')
+  ) {
+    next = next.replace(
+      /(<link rel="stylesheet" href="\/css\/style\.css\?v=[^"]+">)/,
+      '$1\n    <link rel="stylesheet" href="/css/pages/cadernos-engenharia.css?v=' + ASSET_VERSION + '">'
+    );
   } else if (!next.includes('i18n-data.js') && next.includes('layout.js')) {
     next = next.replace(
       /(\s*<script\s+src="[^"]*\/js\/layout\.js[^"]*"><\/script>)/g,
-      '\n    <script src="/js/i18n-data.js?v=' + ASSET_VERSION + '"></script>\n    <script src="/js/i18n.js?v=' + ASSET_VERSION + '"></script>\n    <script src="/js/ferramentas-nav-data.js?v=' + ASSET_VERSION + '"></script>$1'
+      '\n    <script src="/js/i18n-data.js?v=' + ASSET_VERSION + '"></script>\n    <script src="/js/page-translations-data.js?v=' + ASSET_VERSION + '"></script>\n    <script src="/js/i18n.js?v=' + ASSET_VERSION + '"></script>\n    <script src="/js/ferramentas-nav-data.js?v=' + ASSET_VERSION + '"></script>$1'
     );
-  } else if (!next.includes('ferramentas-nav-data.js') && next.includes('layout.js')) {
+  }
+  if (next.includes('i18n-data.js') && !next.includes('page-translations-data.js')) {
+    next = next.replace(
+      /(<script\s+src="[^"]*\/js\/i18n-data\.js[^"]*"><\/script>)/g,
+      '$1\n    <script src="/js/page-translations-data.js?v=' + ASSET_VERSION + '"></script>'
+    );
+  }
+  if (!next.includes('ferramentas-nav-data.js') && next.includes('layout.js') && !next.includes('i18n-data.js')) {
     next = next.replace(
       /(\s*<script\s+src="[^"]*\/js\/layout\.js[^"]*"><\/script>)/g,
       '\n    <script src="/js/ferramentas-nav-data.js?v=' + ASSET_VERSION + '"></script>$1'
     );
   }
+
+  // Modo Aprender: Vida + inspeções (conto, personagens, palavras…).
+  const wantsLearn =
+    /data-page="vida"/.test(next) ||
+    /data-page="inspecao"/.test(next) ||
+    /data-post-slug="inspecao-/.test(next);
+  if (wantsLearn && !next.includes('learn-translate.js')) {
+    next = next.replace(
+      /<\/body>/i,
+      '    <script src="/js/learn-glossary.js?v=' +
+        ASSET_VERSION +
+        '"></script>\n' +
+        '    <script src="/js/learn-translate.js?v=' +
+        ASSET_VERSION +
+        '"></script>\n</body>'
+    );
+  }
+
   return ensureVersionCheckScript(next);
 }
 
+function stampIcons(html) {
+  return html
+    .replace(/(href="\/favicon\.svg)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(href="\/favicon\.ico)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(href="\/imagens\/favicon-\d+\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(href="\/imagens\/icon-192\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(href="\/imagens\/icon-512\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(href="\/imagens\/icon-512-maskable\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(href="\/imagens\/apple-touch-icon\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(href="\/imagens\/app-icon\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(src="\/imagens\/app-icon\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(src="\/imagens\/icon-192\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(/(content="\/imagens\/icon-512\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
+    .replace(
+      /(\/(?:imagens\/(?:icon-192|icon-512|icon-512-maskable|app-icon|apple-touch-icon|favicon-\d+)|favicon)\.v)\d+(\.(?:png|ico|svg))/g,
+      `$1${ASSET_VERSION}$2`
+    );
+}
+
+// Banner do hero: versão pelo hash do PNG fonte (variantes WebP/JPEG regeneram no build).
+const heroPngPath = path.join(ROOT, 'imagens', 'background-hero.png');
+const heroJpgPath = path.join(ROOT, 'imagens', 'background-hero.jpg');
+const heroMetaPath = path.join(ROOT, 'imagens', 'background-hero.meta.json');
+let heroCacheKey = ASSET_VERSION;
+let heroWidth = 1400;
+let heroHeight = 277;
+if (fs.existsSync(heroPngPath)) {
+  const heroBuf = fs.readFileSync(heroPngPath);
+  heroCacheKey = crypto.createHash('sha1').update(heroBuf).digest('hex').slice(0, 10);
+  if (heroBuf.length >= 24 && heroBuf[0] === 0x89 && heroBuf[1] === 0x50) {
+    const srcW = heroBuf.readUInt32BE(16);
+    const srcH = heroBuf.readUInt32BE(20);
+    // Dimensões do JPEG/WebP de display (max 1400w do optimize-hero).
+    heroWidth = Math.min(1400, srcW);
+    heroHeight = Math.max(1, Math.round((srcH * heroWidth) / srcW));
+  }
+}
+if (fs.existsSync(heroMetaPath)) {
+  try {
+    const meta = JSON.parse(fs.readFileSync(heroMetaPath, 'utf8'));
+    const jpgMeta = meta && meta.files && meta.files['background-hero.jpg'];
+    if (jpgMeta && jpgMeta.width && jpgMeta.height) {
+      heroWidth = jpgMeta.width;
+      heroHeight = jpgMeta.height;
+    }
+  } catch (e) { /* manter defaults */ }
+}
+if (!fs.existsSync(heroJpgPath)) {
+  console.warn('stamp-assets: background-hero.jpg em falta — corre scripts/optimize-hero.js');
+}
+
+function stampHeroMediaAttrs(tag) {
+  if (!heroWidth || !heroHeight) return tag;
+  let next = tag;
+  if (/\bwidth="/i.test(next)) next = next.replace(/\bwidth="\d+"/i, 'width="' + heroWidth + '"');
+  else next = next.replace(/<img\b/i, '<img width="' + heroWidth + '"');
+  if (/\bheight="/i.test(next)) next = next.replace(/\bheight="\d+"/i, 'height="' + heroHeight + '"');
+  else next = next.replace(/<img\b/i, '<img height="' + heroHeight + '"');
+  return next;
+}
+
+function stampHero(html) {
+  let nextHtml = html.replace(
+    /(\/imagens\/background-hero(?:-\d+)?\.(?:png|svg|jpg|jpeg|webp|avif))(?:\?v=[^"'\s>]*)?/g,
+    '$1?v=' + heroCacheKey
+  );
+  return nextHtml.replace(/<img\b[^>]*\bhero-media\b[^>]*>/gi, stampHeroMediaAttrs);
+}
+
 let changedHtml = 0;
-for (const file of listHtmlFiles(ROOT)) {
+let skippedHtml = 0;
+const htmlFiles = listHtmlFiles(ROOT);
+for (const file of htmlFiles) {
   const original = fs.readFileSync(file, 'utf8');
-  const updated = stampHtml(original);
+  const updated = stampHero(stampIcons(stampHtml(original)));
   if (updated !== original) {
-    fs.writeFileSync(file, updated);
-    changedHtml++;
+    if (safeWriteFile(file, updated)) changedHtml++;
+    else skippedHtml++;
   }
 }
 
@@ -96,7 +212,7 @@ if (fs.existsSync(layoutPath)) {
     `$1${ASSET_VERSION}$2`
   );
   if (next !== layout) {
-    fs.writeFileSync(layoutPath, next);
+    safeWriteFile(layoutPath, next);
   }
 }
 
@@ -108,7 +224,20 @@ if (fs.existsSync(versionCheckPath)) {
     `$1${ASSET_VERSION}$2`
   );
   if (next !== versionCheck) {
-    fs.writeFileSync(versionCheckPath, next);
+    safeWriteFile(versionCheckPath, next);
+  }
+}
+
+// Sincroniza ICON_V da Media Session (notificação da rádio).
+const radioMediaPath = path.join(ROOT, 'js', 'radio-media-session.js');
+if (fs.existsSync(radioMediaPath)) {
+  let radioMedia = fs.readFileSync(radioMediaPath, 'utf8');
+  const next = radioMedia.replace(
+    /(var\s+ICON_V\s*=\s*')[^']*(')/,
+    `$1${ASSET_VERSION}$2`
+  );
+  if (next !== radioMedia) {
+    safeWriteFile(radioMediaPath, next);
   }
 }
 
@@ -121,42 +250,70 @@ if (fs.existsSync(swPath)) {
     `$1${ASSET_VERSION}$2`
   );
   if (next !== sw) {
-    fs.writeFileSync(swPath, next);
+    safeWriteFile(swPath, next);
   }
 }
 
-// Sincroniza versão dos ícones no manifest.json (evita cache Cloudflare nos ícones PWA).
+// Manifest PWA: ícones SEM ?v= — alguns Chromium no desktop falham o critério
+// de instalação (e o atalho) quando o src do ícone leva query string.
 const manifestPath = path.join(ROOT, 'manifest.json');
 if (fs.existsSync(manifestPath)) {
   let manifest = fs.readFileSync(manifestPath, 'utf8');
   const next = manifest.replace(
-    /(\/imagens\/[^"?]+\.(?:png|svg))(?:\?v=[^"]*)?(")/g,
-    `$1?v=${ASSET_VERSION}$2`
+    /(\/imagens\/[^"?]+\.(?:png|svg))\?v=[^"]*(")/g,
+    '$1$2'
   );
   if (next !== manifest) {
-    fs.writeFileSync(manifestPath, next);
-  }
-}
-
-// Versiona favicon.svg e imagens de ícone nos HTML (evita cache Cloudflare).
-for (const file of listHtmlFiles(ROOT)) {
-  let html = fs.readFileSync(file, 'utf8');
-  const next = html
-    .replace(/(href="\/favicon\.svg)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
-    .replace(/(href="\/imagens\/favicon-\d+\.png)(?:\?v=[^"]*)?(")/g, `$1?v=${ASSET_VERSION}$2`)
-    .replace(/(href="\/imagens\/apple-touch-icon\.png)(?:\?v=[^"]*)?(")/, `$1?v=${ASSET_VERSION}$2`)
-    .replace(/(content="\/imagens\/icon-512\.png)(?:\?v=[^"]*)?(")/, `$1?v=${ASSET_VERSION}$2`);
-  if (next !== html) {
-    fs.writeFileSync(file, next);
+    safeWriteFile(manifestPath, next);
   }
 }
 
 // Manifesto de versão para o app verificar actualizações no telemóvel.
 const versionPath = path.join(ROOT, 'version.json');
-fs.writeFileSync(
+
+let siteUpdate = null;
+const siteUpdatePath = path.join(ROOT, 'content', 'site-update.json');
+if (fs.existsSync(siteUpdatePath)) {
+  try {
+    siteUpdate = JSON.parse(fs.readFileSync(siteUpdatePath, 'utf8'));
+    if (siteUpdate && siteUpdate.enabled === false) siteUpdate = null;
+  } catch (e) {
+    console.warn('stamp-assets: site-update.json inválido —', e.message);
+  }
+}
+
+safeWriteFile(
   versionPath,
-  JSON.stringify({ version: ASSET_VERSION, builtAt: new Date().toISOString() }, null, 2) + '\n',
-  'utf8'
+  JSON.stringify({
+    version: ASSET_VERSION,
+    hero: heroCacheKey,
+    heroSize: heroWidth && heroHeight ? { width: heroWidth, height: heroHeight } : null,
+    builtAt: new Date().toISOString(),
+    update: siteUpdate
+  }, null, 2) + '\n'
 );
 
-console.log(`stamp-assets: versão v${ASSET_VERSION} aplicada (${changedHtml} HTML atualizados).`);
+// Versiona imagens referenciadas no CSS (banner do hero → hash do ficheiro).
+function stampHeroInCssFile(cssPath) {
+  if (!fs.existsSync(cssPath)) return;
+  let css = fs.readFileSync(cssPath, 'utf8');
+  const nextCss = css.replace(
+    /(url\(\s*['"]?(?:\.\.\/)?\/?imagens\/background-hero\.(?:png|svg|jpg|jpeg|webp|avif))(?:\?v=[^'")\s]*)?(['"]?\s*\))/g,
+    `$1?v=${heroCacheKey}$2`
+  );
+  if (nextCss !== css) {
+    safeWriteFile(cssPath, nextCss);
+  }
+}
+stampHeroInCssFile(path.join(ROOT, 'css', 'style.css'));
+stampHeroInCssFile(path.join(ROOT, 'css', 'atmosphere.css'));
+stampHeroInCssFile(path.join(ROOT, 'css', 'pages', 'radio.css'));
+stampHeroInCssFile(path.join(ROOT, 'css', 'pages', 'home.css'));
+
+console.log(
+  'stamp-assets: versão v' + ASSET_VERSION + ' aplicada (' + changedHtml + ' HTML atualizados)' +
+  (skippedHtml ? ', ' + skippedHtml + ' ignorados' : '') +
+  '; hero ?v=' + heroCacheKey +
+  (heroWidth && heroHeight ? ' (' + heroWidth + '×' + heroHeight + ')' : '') +
+  '.'
+);

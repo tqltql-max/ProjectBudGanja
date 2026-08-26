@@ -1,0 +1,68 @@
+{
+  "updatedAt": "2026-08-19T15:30:00.000Z",
+  "disclaimer": "Fichas educacionais de fungos. Não substituem identificação micológica profissional, orientação de saúde nem aconselhamento jurídico. Este catálogo não é protocolo de cultivo nem de uso.",
+  "fungi": [
+    {
+      "id": "psilocybe-cubensis",
+      "slug": "psilocybe-cubensis",
+      "nomePopular": "Psilocybe cubensis",
+      "nomeCientifico": "Psilocybe cubensis (Earle) Singer",
+      "familia": "Hymenogastraceae",
+      "reino": "Fungi",
+      "summary": "Psilocybe cubensis — espécie cosmopolita de Psilocybe mais citada na divulgação contemporânea; no XIV UNIFESP entra como fungo psicadélico de ofício, distinta das espécies mazatecas clássicas. Ficha de identificação e enquadramento — não é cultivo nem dose.",
+      "partsUsed": [
+        "Basidioma (chapéu + estipe) — objecto de identificação micológica",
+        "Esporada púrpura-escura — carácter diagnóstico (não é receita)",
+        "Psilocibina / psilocina — substâncias nomeadas no mapa, sem extracção"
+      ],
+      "traditionalUses": [
+        "Nomeada no XIV Curso UNIFESP junto de Psilocybe caerulescens como exemplo de fungo psicadélico",
+        "Espécie-tipo da divulgação contemporânea de «cogumelos mágicos» — distinta das espécies mazatecas clássicas (P. mexicana e afins)",
+        "Objecto de etnomicologia e psicofarmacologia pública — catalogar ≠ endossar uso"
+      ],
+      "cautions": "Psilocibina e psilocina são substâncias controladas no Brasil (Portaria SVS/MS 344/1998 e actualizações — conferir listas vigentes). Ficha ≠ protocolo de cultivo, dose, extracção ou uso. Confusão com *Galerina* e outros basidiomas tóxicos pode ser fatal — identificação de campo exige perito. Não substitui médico, farmacêutico, micólogo nem advogado.",
+      "tags": [
+        "psilocybe",
+        "psicadelico",
+        "unifesp",
+        "hymenogastraceae",
+        "identificacao",
+        "lista-controlada"
+      ],
+      "relatedUnifesp": true,
+      "cover": "/imagens/fungos/psilocybe-cubensis-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-palavra-alucinogeno.html",
+          "label": "Inspeção: Alucinógeno — classe de efeito",
+          "labelEn": "Inspection: Alucinógeno — effect class",
+          "labelEs": "Inspección: Alucinógeno — clase de efecto"
+        },
+        {
+          "href": "/posts/post-inspecao-palavra-anvisa.html",
+          "label": "Inspeção: ANVISA",
+          "labelEn": "Inspection: ANVISA",
+          "labelEs": "Inspección: ANVISA"
+        },
+        {
+          "href": "/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html",
+          "label": "Inspeção: Curso UNIFESP — Cannabis sativa L. medicinal",
+          "labelEn": "Inspection: UNIFESP course",
+          "labelEs": "Inspección: Curso UNIFESP"
+        },
+        {
+          "href": "/posts/post-inspecao-palavra-lei-11-343.html",
+          "label": "Inspeção: Lei 11.343/2006",
+          "labelEn": "Inspection: Law 11.343/2006",
+          "labelEs": "Inspección: Ley 11.343/2006"
+        },
+        {
+          "href": "/posts/post-inspecao-palavra-substancia-controlada.html",
+          "label": "Inspeção: Substância controlada",
+          "labelEn": "Inspection: Controlled substance",
+          "labelEs": "Inspección: Sustancia controlada"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+#!/usr/bin/env node
+'use strict';
+
+/**
+ * PDF de teste da página /livro/ (fundo escuro, letras brancas).
+ * Uso: node scripts/generate-livro-page-pdf.js
+ */
+
+const fs = require('fs');
+const path = require('path');
+const { ROOT } = require('../lib/paths.js');
+const { printHtmlToPdf } = require('../lib/print-chrome-pdf.js');
+
+const PRINT_HTML = path.join(ROOT, 'info', 'livro-laboratorio-print.html');
+const OUT_PDF = path.join(ROOT, 'info', 'livro-laboratorio.pdf');
+
+function printCss() {
+  return `@page { size: A4; margin: 16mm; }
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  background: #0b1218 !important;
+  color: #fff !important;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+body {
+  font-family: "Segoe UI", "Source Sans 3", sans-serif;
+  font-size: 11.5pt;
+  line-height: 1.55;
+  padding: 4mm 2mm 8mm;
+}
+.kicker {
+  margin: 0 0 6px;
+  font-size: 8.5pt;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #7dffd0;
+}
+h1 {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 28pt;
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+h2 {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 18pt;
+  font-weight: 700;
+  color: #fff;
+}
+.brand { margin: 0 0 8px; font-size: 9pt; letter-spacing: 0.28em; text-transform: uppercase; color: #7dffd0; font-weight: 700; }
+.author { margin: 10px 0 0; font-weight: 600; color: #7dffd0; }
+.lead { margin: 8px 0 0; font-size: 13pt; font-weight: 600; max-width: 36em; }
+.facts { display: flex; gap: 18px; margin: 16px 0 0; }
+.facts div { min-width: 5.5em; }
+.facts strong { display: block; font-size: 16pt; }
+.facts span { display: block; font-size: 8pt; letter-spacing: 0.06em; text-transform: uppercase; color: #c5d0da; }
+section { margin-top: 22px; page-break-inside: avoid; }
+p { margin: 8px 0 0; color: #e8eef4; }
+.especial { margin-top: 14px; font-size: 12.5pt; font-style: italic; color: #fff; }
+.note { margin-top: 14px; font-size: 9.5pt; color: #c5d0da; }
+a { color: #7dffd0; text-decoration: none; }
+.chip-row { margin: 10px 0 0; }
+.chip {
+  display: inline-block;
+  margin: 0 6px 6px 0;
+  padding: 4px 10px;
+  border: 1px solid rgba(244,247,251,0.25);
+  color: #fff;
+  font-size: 10pt;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.chip-red { box-shadow: inset 4px 0 0 #e24b4b; }
+.chip-yellow { box-shadow: inset 4px 0 0 #e8c547; }
+.chip-white { box-shadow: inset 4px 0 0 #fff; }
+.read {
+  margin: 10px 0 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(244,247,251,0.12);
+  background: rgba(244,247,251,0.04);
+  color: #fff;
+  font-size: 10.5pt;
+}
+.rooms { list-style: none; padding: 0; margin: 12px 0 0; }
+.rooms li {
+  margin: 0 0 8px;
+  padding: 8px 10px;
+  border: 1px solid rgba(244,247,251,0.12);
+}
+.rooms strong { display: block; color: #fff; }
+.rooms span { display: block; font-size: 9.5pt; color: #c5d0da; }
+.cover { min-height: 220mm; display: flex; flex-direction: column; justify-content: flex-end; page-break-after: always; padding-bottom: 18mm; }
+.valeu { margin-top: 18px; font-weight: 700; color: #fff; }
+`;
+}
+
+function buildHtml() {
+  return `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Livro do laboratório — Inspetor BudGanja</title>
+  <style>${printCss()}</style>
+</head>
+<body>
+  <section class="cover">
+    <p class="brand">Inspetor BudGanja · livro</p>
+    <p class="kicker">Prova de impressão</p>
+    <h1>Livro do laboratório</h1>
+    <p class="author">Modelo Inverno · Tamara Klink · letras brancas no escuro</p>
+    <p class="lead">O projecto inteiro, em páginas. Um mapa para estudar — não um tratado clínico.</p>
+    <div class="facts">
+      <div><strong>XIV</strong><span>Curso UNIFESP</span></div>
+      <div><strong>3</strong><span>cores-ofício</span></div>
+      <div><strong>5</strong><span>emoções da Riley</span></div>
+    </div>
+    <p class="valeu">Valeu !!!</p>
+  </section>
+
+  <section>
+    <p class="kicker">Capítulo I</p>
+    <h2>Dedicatória</h2>
+    <p>
+      Ao <strong>XIV Curso de Extensão sobre o uso terapêutico da
+      <em>Cannabis sativa</em> L.</strong><br>
+      UNIFESP · MovReCam · SIEX
+    </p>
+    <p>
+      Com respeito a todas as professoras e professores,
+      à coordenação, à vice-coordenação e a quem sustenta
+      a extensão pública.
+    </p>
+    <p class="especial">
+      Em especial à <strong>Profa. Dra. Eliana Rodrigues</strong> —
+      coordenação RTC, CEE, curadoria CANABinALL —
+      pelo ofício de ensinar com método e crédito.
+    </p>
+    <p class="note">
+      Pedido de campo: <em>Heliana Rodrigues</em>.
+      A ficha canónica corta o nome: Eliana Rodrigues.
+      Não se inventa uma professora nova; honra-se a que já ensina o curso.
+    </p>
+    <p>Este livro não pede afiliação nem endosso da Universidade. É o mapa de um aluno.</p>
+    <p class="valeu">Valeu !!!</p>
+  </section>
+
+  <section>
+    <p class="kicker">Capítulo II</p>
+    <h2>Como ler</h2>
+    <p>Cada sala do laboratório tem URL. Aqui está o índice do ofício — não o texto integral de cada inspeção.</p>
+    <p>Não é manual clínico, farmacêutico ou jurídico. Não substitui SIEX, aulas oficiais nem certificado.</p>
+  </section>
+
+  <section>
+    <p class="kicker">Léxico · como no Divertida Mente</p>
+    <h2>Cores em palavras</h2>
+    <p>Cada cor tem ofício. Não se fundem.</p>
+    <div class="chip-row">
+      <span class="chip chip-white">Branco</span>
+      <span class="chip chip-red">Vermelho</span>
+      <span class="chip chip-yellow">Amarelo</span>
+    </div>
+    <p class="read"><strong>Branco</strong> — atenção. 1.º elo: eu · nós. Página, gelo, olhar limpo. Não se funde com o vermelho do perigo nem com o amarelo do cuidado.</p>
+    <p class="read"><strong>Vermelho</strong> — perigo. 3.º elo: ele · ela · eles · elas. Semáforo, alarme; a orelha cola elos em eles. Não se funde com a Raiva da Riley.</p>
+    <p class="read"><strong>Amarelo</strong> — cuidado. 2.º elo: tu · vós. Luz de trânsito: ainda dá tempo. Não se funde com a Alegria.</p>
+  </section>
+
+  <section>
+    <p class="kicker">Cruzamento · 3 × 3</p>
+    <h2>Cores × elos</h2>
+    <p>As 3 cores-ofício cruzam os 3 elos da conjugação. A cor avisa; a pessoa fala. Não se fundem.</p>
+    <p class="read"><strong>Branco × 1.º</strong> — eu · nós — quem fala olha limpo.</p>
+    <p class="read"><strong>Amarelo × 2.º</strong> — tu · vós — com quem se fala pede medida.</p>
+    <p class="read"><strong>Vermelho × 3.º</strong> — ele · ela · eles · elas — de quem se fala; o ausente.</p>
+  </section>
+
+  <section>
+    <p class="kicker">Riley · 2015</p>
+    <h2>Emoções em palavras</h2>
+    <p>As cinco da consola — todas importam.</p>
+    <div class="chip-row">
+      <span class="chip">Alegria</span>
+      <span class="chip">Tristeza</span>
+      <span class="chip">Raiva</span>
+      <span class="chip">Medo</span>
+      <span class="chip">Nojinho</span>
+    </div>
+    <p class="read"><strong>Alegria</strong> — quer o bem; aprende a partilhar o comando.</p>
+    <p class="read"><strong>Tristeza</strong> — abre o pedido de ajuda; sem ela a Alegria não basta.</p>
+    <p class="read"><strong>Raiva</strong> — fogo de limite. Ofício, não vilania.</p>
+    <p class="read"><strong>Medo</strong> — ensaio do risco. Protege sem apagar o caminho.</p>
+    <p class="read"><strong>Nojinho</strong> — aversão que guarda. Recusar também é cuidar.</p>
+  </section>
+
+  <section>
+    <p class="kicker">Capítulo III</p>
+    <h2>Mapa das salas</h2>
+    <ul class="rooms">
+      <li><strong>Biblioteca</strong><span>Inspeções, UNIFESP, guias, pesquisas.</span></li>
+      <li><strong>XIV Curso UNIFESP</strong><span>Hub do curso, SIEX, rascunhos.</span></li>
+      <li><strong>Plantas</strong><span>Catálogo vivo — fichas educacionais.</span></li>
+      <li><strong>Animais</strong><span>Corte: animal ≠ derivado industrial.</span></li>
+      <li><strong>Fungos</strong><span>Identificação — não é cultivo nem dose.</span></li>
+      <li><strong>Bom dia, Inverno</strong><span>Tamara Klink — o livro que pediu para circular.</span></li>
+      <li><strong>Vida</strong><span>Conto familiar do laboratório.</span></li>
+      <li><strong>Guia de Palavras</strong><span>Léxico inspeccionado.</span></li>
+      <li><strong>Conjugação · 3 elos</strong><span>Cruzamento com as 3 cores-ofício.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="kicker">Colofão</p>
+    <h2>Independência</h2>
+    <p>Gerado no laboratório. Educacional. Sem afiliação comercial à UNIFESP. Crédito a quem ensina — em especial à Profa. Dra. Eliana Rodrigues e ao XIV Curso.</p>
+    <p>Prova PDF da página <strong>/livro/</strong>: fundo escuro, letras brancas.</p>
+    <p class="valeu">Valeu !!!</p>
+  </section>
+</body>
+</html>`;
+}
+
+function main() {
+  const html = buildHtml();
+  fs.mkdirSync(path.dirname(PRINT_HTML), { recursive: true });
+  fs.writeFileSync(PRINT_HTML, html, 'utf8');
+  console.log('HTML:', path.relative(ROOT, PRINT_HTML));
+  printHtmlToPdf(PRINT_HTML, OUT_PDF, { timeout: 90000 });
+}
+
+main();

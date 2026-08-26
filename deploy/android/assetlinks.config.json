@@ -1,7 +1,9 @@
 {
-  "_comment": "Adicione o SHA-256 do certificado de assinatura do app Android. Obtenha com: deploy\\android\\get-signing-fingerprint.ps1",
+  "_comment": "SHA-256 do certificado de assinatura Android (android.keystore, alias budganja). Password em deploy/android/.keystore-password (gitignored).",
   "packageName": "com.inspetorbudganja.app",
-  "sha256CertFingerprints": [],
-  "_status": "PENDENTE — execute deploy\\android\\get-signing-fingerprint.ps1 após init-twa.ps1",
+  "sha256CertFingerprints": [
+    "F5:C6:26:B4:45:C5:D8:35:DA:5B:68:5D:91:A1:6A:45:57:3E:28:6F:6A:86:54:0E:7E:E0:1E:70:12:BE:5C:D2"
+  ],
+  "_status": "OK — keystore local gerado; use o mesmo ficheiro no Bubblewrap/Play Store",
   "_verify": "npm run check:assetlinks"
 }

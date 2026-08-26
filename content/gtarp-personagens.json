@@ -1,0 +1,51 @@
+{
+  "updatedAt": "2026-08-22T05:00:00.000Z",
+  "server": {
+    "name": "Capital City",
+    "note": "Servidor brasileiro de GTA RP (FiveM). Personagem ≠ pessoa. Ficção de jogo ≠ manual de crime. Sem afiliação."
+  },
+  "characters": [
+    {
+      "id": "hopejoy",
+      "featured": true,
+      "name": "Hope Joy",
+      "role": "Jornal da Capital — personagem",
+      "blurb": "A live da streamer está no Kick. O YouTube é o arquivo da personagem. Distinto da ficha de pessoa — ainda sem biografia civil no laboratório.",
+      "yt": "https://www.youtube.com/@hopejoyoficial",
+      "ytHandle": "@hopejoyoficial",
+      "kick": "https://kick.com/hopejoyoficial",
+      "kickHandle": "hopejoyoficial",
+      "href": "/jogos/hopejoy/",
+      "catalogUrl": "/content/channels/hopejoyoficial.json"
+    },
+    {
+      "id": "bagual",
+      "featured": true,
+      "name": "Todo Poderoso Bagual",
+      "role": "BOPE — personagem",
+      "blurb": "A live do streamer está no Kick. O YouTube é o arquivo da personagem (Bagual Clips). Distinto da ficha de pessoa — ainda sem biografia civil no laboratório. Ficção de jogo ≠ manual de crime.",
+      "yt": "https://www.youtube.com/@poderosobagual",
+      "ytHandle": "@poderosobagual",
+      "kick": "https://kick.com/poderosobagual",
+      "kickHandle": "poderosobagual",
+      "href": "/jogos/bagual/",
+      "catalogUrl": "/content/channels/poderosobagual.json",
+      "inspection": "/posts/post-inspecao-canal-bagual.html"
+    },
+    {
+      "id": "paulinho",
+      "featured": false,
+      "name": "Paulinho o LOKO",
+      "role": "Sessão / cidade — crédito à pessoa Aleff",
+      "blurb": "A live do streamer está no Kick. O YouTube é arquivo. A pessoa vive na ficha Aleff; o canal vive aqui como personagem de servidor.",
+      "yt": "https://www.youtube.com/@PaulinhoLOKOoficial",
+      "ytHandle": "@PaulinhoLOKOoficial",
+      "kick": "https://kick.com/paulinholokobr",
+      "kickHandle": "PaulinhoLOKObr",
+      "href": "/jogos/aleff/",
+      "catalogUrl": "/content/channels/paulinholoko.json",
+      "inspection": "/posts/post-inspecao-canal-paulinho.html",
+      "personHref": "/posts/post-inspecao-figura-aleff.html"
+    }
+  ]
+}

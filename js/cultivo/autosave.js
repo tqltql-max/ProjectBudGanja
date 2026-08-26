@@ -63,12 +63,19 @@
       setIndicator('saving');
       try {
         var ok = await opts.save();
-        if (ok === false) {
-          setIndicator('error');
-        } else {
+        // Só limpar dirty em sucesso explícito (true). null/undefined = ocupado/adiado.
+        if (ok === true) {
           dirty = false;
           lastSavedAt = Date.now();
           setIndicator('saved');
+        } else if (ok === false) {
+          setIndicator('error');
+        } else {
+          // Outro guardado em curso — remarcar e tentar de novo em breve.
+          dirty = true;
+          clearTimeout(timer);
+          timer = setTimeout(function () { flush(); }, Math.min(debounceMs, 1200));
+          setIndicator('pending');
         }
       } catch (e) {
         setIndicator('error');
@@ -94,11 +101,22 @@
       });
     }
 
+    function pause() {
+      clearTimeout(timer);
+      timer = null;
+    }
+
+    function resume() {
+      if (dirty) scheduleSave();
+    }
+
     return {
       bind: bind,
       flush: flush,
       scheduleSave: scheduleSave,
-      setIndicator: setIndicator
+      setIndicator: setIndicator,
+      pause: pause,
+      resume: resume
     };
   }
 

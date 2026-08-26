@@ -1,14 +1,16 @@
 // Service Worker para PWA - Inspetor BudGanja
-const APP_VERSION = '209';
-const CACHE_NAME = 'budganja-v' + APP_VERSION;
+const APP_VERSION = '355';
+const CACHE_NAME = 'budganja-v' + APP_VERSION + '-index';
 const urlsToCache = [
     '/',
     '/index.html',
     '/biblioteca/pesquisas/',
     '/biblioteca/inspecoes/',
+    '/biblioteca/cadernos/',
+    '/js/cadernos-engenharia.js',
+    '/js/cadernos-engenharia-data.js',
+    '/css/pages/cadernos-engenharia.css',
     '/equipamentos/',
-    '/loja/',
-    '/loja/encomenda.html',
     '/calculadoras/',
     '/calculadoras/cultivo-lab.html',
     '/calculadoras/luximetro.html',
@@ -18,11 +20,14 @@ const urlsToCache = [
     '/info/contato.html',
     '/info/privacidade.html',
     '/sorteios/',
+    '/comunidade/',
     '/cultivo/',
     '/planejamento/',
     '/js/planejamento.js',
     '/js/cultivo.js',
     '/js/cultivo/shared.js',
+    '/js/media-upload.js',
+    '/js/comunidade.js',
     '/js/cultivo/onboarding.js',
     '/js/cultivo-phase-weeks-data.js',
     '/css/pages/cultivo-perfil.css',
@@ -46,32 +51,62 @@ const urlsToCache = [
     '/js/guia-cultivo.js',
     '/content/guia-cultivo.json',
     '/content/youtube-feed.json',
+    '/content/videos-hub.json',
+    '/content/inspecoes-sugestoes.json',
     '/content/sorteio.json',
-    '/content/loja.json',
-    '/js/loja.js',
-    '/js/loja-data.js',
-    '/js/loja-order-ui.js',
-    '/js/loja-order-callout.js',
-    '/js/equip-loja-materials.js',
-    '/js/loja-encomenda.js',
     '/js/i18n-data.js',
     '/js/i18n.js',
     '/posts-public.json',
+    '/inspecoes-share.json',
+    '/js/inspecoes-share-rail.js',
     '/manifest.json',
-    '/favicon.svg',
-    '/imagens/app-icon.svg',
-    '/imagens/icon-192.png',
-    '/imagens/icon-512.png',
-    '/imagens/icon-512-maskable.png',
-    '/imagens/apple-touch-icon.png',
-    '/imagens/favicon-32.png',
-    '/imagens/favicon-16.png'
+    '/favicon.v' + APP_VERSION + '.ico',
+    '/favicon.v' + APP_VERSION + '.svg',
+    '/imagens/app-icon.v' + APP_VERSION + '.png',
+    '/imagens/icon-192.v' + APP_VERSION + '.png',
+    '/imagens/icon-512.v' + APP_VERSION + '.png',
+    '/imagens/icon-512-maskable.v' + APP_VERSION + '.png',
+    '/imagens/apple-touch-icon.v' + APP_VERSION + '.png',
+    '/imagens/favicon-48.v' + APP_VERSION + '.png',
+    '/imagens/favicon-32.v' + APP_VERSION + '.png',
+    '/imagens/favicon-16.v' + APP_VERSION + '.png',
+    '/imagens/iconsite.png?v=' + APP_VERSION
 ];
 
 self.addEventListener('message', (event) => {
-    if (event.data && event.data.type === 'SKIP_WAITING') {
+    const data = event.data || {};
+    if (data.type === 'SKIP_WAITING') {
         self.skipWaiting();
+        return;
     }
+    if (data.type === 'VIDA_DIARIO_NOTIFY' && data.title) {
+        event.waitUntil(
+            self.registration.showNotification(String(data.title), {
+                body: String(data.body || ''),
+                icon: '/imagens/icon-192.v' + APP_VERSION + '.png',
+                badge: '/imagens/favicon-48.v' + APP_VERSION + '.png',
+                tag: String(data.tag || 'vida-diario'),
+                renotify: true,
+                data: { url: data.url || '/vida/diario/' }
+            }).catch(() => {})
+        );
+    }
+});
+
+self.addEventListener('notificationclick', (event) => {
+    event.notification.close();
+    const target = (event.notification && event.notification.data && event.notification.data.url) || '/vida/diario/';
+    event.waitUntil(
+        clients.matchAll({ type: 'window', includeUncontrolled: true }).then((list) => {
+            for (const client of list) {
+                if (client.url && client.url.indexOf('/vida/diario') !== -1 && 'focus' in client) {
+                    return client.focus();
+                }
+            }
+            if (clients.openWindow) return clients.openWindow(target);
+            return undefined;
+        })
+    );
 });
 
 self.addEventListener('install', (event) => {
@@ -107,9 +142,20 @@ self.addEventListener('fetch', (event) => {
     if (event.request.url.includes('/api/')) return;
 
     const url = new URL(event.request.url);
+    // Não interceptar cross-origin (ex.: miniaturas i.ytimg.com nos cards).
+    // Caso contrário o cache-first abaixo pode devolver respostas opacas/falhadas
+    // e as capas dos posts ficam em branco (net::ERR_FAILED).
+    if (url.origin !== self.location.origin) return;
+
     const path = url.pathname;
 
     if (path === '/version.json' || path === '/sw.js' || path.indexOf('/sw.js') === 0) {
+        event.respondWith(fetch(event.request, { cache: 'no-store' }));
+        return;
+    }
+
+    // Fotos/vídeos do diário: sempre rede (nunca cache-first, senão a foto nova não aparece).
+    if (path.startsWith('/uploads/')) {
         event.respondWith(fetch(event.request, { cache: 'no-store' }));
         return;
     }
@@ -136,7 +182,9 @@ self.addEventListener('fetch', (event) => {
         '/guia/cultivo-basico.html',
         '/search-index.json',
         '/content/guia-cultivo.json',
-        '/content/youtube-feed.json'
+        '/content/youtube-feed.json',
+        '/content/videos-hub.json',
+        '/content/inspecoes-sugestoes.json'
     ];
 
     if (offlineFirst.some((p) => path === p || path.endsWith(p))) {

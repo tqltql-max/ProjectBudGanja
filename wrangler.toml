@@ -1,3 +1,26 @@
+# Cloudflare Pages — Inspetor BudGanja
+# Deploy: npm run pages:deploy
+# Dev:    npm run pages:dev
+#
+# Segredos (Dashboard → Pages → Settings → Variables, ou):
+#   npx wrangler pages secret put TURSO_DATABASE_URL --project-name inspetor-budganja
+#   npx wrangler pages secret put TURSO_AUTH_TOKEN --project-name inspetor-budganja
+#   npx wrangler pages secret put RESEARCH_PASS --project-name inspetor-budganja
+#   npx wrangler pages secret put GOOGLE_CLIENT_SECRET --project-name inspetor-budganja
+#   npx wrangler pages secret put GEMINI_API_KEY --project-name inspetor-budganja
+#
+# Uploads (opcional): wrangler r2 bucket create budganja-uploads
+# e descomentar o bloco [[r2_buckets]] abaixo.
+
 name = "inspetor-budganja"
 compatibility_date = "2026-06-29"
+compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "."
+
+[vars]
+SITE_URL = "https://inspetorbudganja.com.br"
+STORE_BACKEND = "sql"
+
+# [[r2_buckets]]
+# binding = "UPLOADS"
+# bucket_name = "budganja-uploads"

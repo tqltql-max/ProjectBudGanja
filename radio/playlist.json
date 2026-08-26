@@ -1,0 +1,42 @@
+{
+  "updatedAt": "2026-08-24T16:24:44.597Z",
+  "trackCount": 6,
+  "tracks": [
+    {
+      "id": "t_9dd52649cf9b",
+      "title": "Rusted Root - Send Me On My Way (Official Music Video) - RustedRootVEVO (youtube)",
+      "artist": "BudGanja Radio",
+      "url": "/radio/Rusted%20Root%20-%20Send%20Me%20On%20My%20Way%20(Official%20Music%20Video)%20-%20RustedRootVEVO%20(youtube).mp3"
+    },
+    {
+      "id": "t_799d7b71f1b9",
+      "title": "Bob Marley & The Wailers - Three Little Birds (Official Music Video) - BobMarleyVEVO (youtube)",
+      "artist": "BudGanja Radio",
+      "url": "/radio/Bob%20Marley%20%26%20The%20Wailers%20-%20Three%20Little%20Birds%20(Official%20Music%20Video)%20-%20BobMarleyVEVO%20(youtube).mp3"
+    },
+    {
+      "id": "t_74b5aec5c4dd",
+      "title": "Ziggy Marley - True To Myself (Official Music Video) - Ziggy Marley (youtube)",
+      "artist": "BudGanja Radio",
+      "url": "/radio/Ziggy%20Marley%20-%20True%20To%20Myself%20(Official%20Music%20Video)%20-%20Ziggy%20Marley%20(youtube).mp3"
+    },
+    {
+      "id": "t_a70196e53d07",
+      "title": "Wake Up (Official Audio)",
+      "artist": "Rage Against the Machine",
+      "url": "https://www.youtube.com/watch?v=4lzqUe1Qfec"
+    },
+    {
+      "id": "t_6192876e0853",
+      "title": "Back Door Man (Official Audio)",
+      "artist": "The Doors",
+      "url": "https://www.youtube.com/watch?v=WTwNzhLvRGs"
+    },
+    {
+      "id": "t_312e15a84e37",
+      "title": "Alive (Official Video)",
+      "artist": "Pearl Jam",
+      "url": "https://www.youtube.com/watch?v=qM0zINtulhM"
+    }
+  ]
+}

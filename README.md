@@ -32,11 +32,11 @@ Detalhes: [`docs/GIT.md`](docs/GIT.md) · copie `.env.example` → `.env`
 | Secção | Páginas |
 |--------|---------|
 | **Pesquisas** | [Diário de Pesquisas](/cultivo/) · [Minha conta](/perfil.html) |
-| **Biblioteca** | [Inspeções](/biblioteca/inspecoes/) (série Guia de Cultivo), [Pesquisas](/biblioteca/pesquisas/), [Equipamentos](/equipamentos/) |
+| **Biblioteca** | [Inspeções](/biblioteca/inspecoes/), [Pesquisas](/biblioteca/pesquisas/), [Equipamentos](/equipamentos/) |
 | **Ferramentas** | [Calculadoras](/calculadoras/), [Luxímetro](/calculadoras/luximetro.html) |
-| **Conteúdo** | [Sorteios](/sorteios/), [Últimos vídeos](/videos/), [Loja parceira](/loja/) |
+| **Conteúdo** | [Sorteios](/sorteios/), [Últimos vídeos](/videos/), [Equipamentos](/equipamentos/) |
 
-> O antigo guia em `/guia/cultivo-basico.html` redireciona para as [Inspeções](/biblioteca/inspecoes/) — cada capítulo em vídeo virou relatório técnico com embed do YouTube.
+> O antigo guia em `/guia/cultivo-basico.html` redireciona para o [Diário de Pesquisas](/cultivo/).
 
 ## Funcionalidades
 
@@ -50,12 +50,16 @@ Detalhes: [`docs/GIT.md`](docs/GIT.md) · copie `.env.example` → `.env`
 
 ## Scripts
 
+Lista completa (todos os `npm run …`): **[docs/log-comandos-npm.md](docs/log-comandos-npm.md)**.
+
 | Comando | Descrição |
 |---------|-----------|
 | `npm start` | Servidor local na porta 8080 |
 | `npm run start:quick` | Arranque rápido local (sem migrate/build) |
 | `npm run start:quick:tunnel` | Arranque rápido local + túnel Cloudflare (sem migrate/build) |
 | `npm run deploy:online` | Build + servidor + túnel para publicar online num comando só |
+| `npm run pages:dev` | Pré-visualização Cloudflare Pages (precisa `.dev.vars` + Turso) |
+| `npm run pages:deploy` | Build + publicação na Cloudflare Pages |
 | `npm run build` | Build completo: posts, páginas, guia, YouTube, busca, sitemap |
 | `npm run build:posts` | Regenera HTML dos posts a partir de `posts.json` |
 | `npm run sync:pages` | Sincroniza `content/pages.json` a partir dos HTML |
@@ -82,6 +86,8 @@ O comando `npm run build` executa, por ordem:
 3. `build:guia` · `build:youtube` · `build:search` · `build:sitemap` · `build:assetlinks`
 
 Defina `SITE_URL=https://inspetorbudganja.com.br` para o sitemap apontar ao domínio correcto.
+
+Se o build falhar com `UNKNOWN: unknown error, open '…'` em JSON/HTML no Windows, é quase sempre ficheiro bloqueado (antivírus, pré-visualização do Explorer ou outro processo). Feche a pré-visualização, aguarde uns segundos e volte a correr `npm run build` (ou `npm run verify`).
 
 Para publicar online e já deixar o túnel ativo, use:
 
@@ -121,15 +127,42 @@ Depois reinicie o servidor local (`npm run start:quick`) e faça refresh forçad
 
 ### Google Play Store (TWA)
 
-1. Instalar JDK 17 + Android Studio (ver `deploy/android/PLAY-STORE.md`)
-2. `.\deploy\android\init-twa.ps1` — gera projecto Android
-3. `.\deploy\android\get-signing-fingerprint.ps1` — copiar SHA-256 para `deploy/android/assetlinks.config.json`
+O Digital Asset Links já fica em `deploy/android/assetlinks.config.json` (fingerprint do `android.keystore` local; password em `deploy/android/.keystore-password`, gitignored). Guarda uma cópia segura dessa password — sem ela não assinas updates na Play Store.
+
+1. Instalar Android Studio + SDK (ver `deploy/android/PLAY-STORE.md`); JDK 17 no PATH ou portátil em `tools/jdk-17`
+2. `.\deploy\android\init-twa.ps1` — gera projecto Android (reutilizar o mesmo `android.keystore`)
+3. `.\deploy\android\get-signing-fingerprint.ps1` — confirmar SHA-256
 4. `npm run build` — publica `/.well-known/assetlinks.json`
 5. `.\deploy\android\build-twa.ps1` — gera `.aab` para a Play Console
 
-## Publicar — inspetorbudganja.com.br (Registro.br)
+## Publicar — inspetorbudganja.com.br
 
-Modo prático: **Cloudflare + túnel no PC Windows** (pasta `deploy/`).
+### Cloudflare Pages (recomendado — site sempre ligado)
+
+O PC **não** precisa ficar ligado. Estáticos na Cloudflare; API em Pages Functions + Turso.
+
+1. `npx wrangler login` (uma vez, browser da Cloudflare)
+2. Copie `.dev.vars.example` → `.dev.vars` e preencha Turso / senhas (só local)
+3. No [dashboard Turso](https://turso.tech) (ou o que já usa no Netlify), copie `TURSO_DATABASE_URL` e `TURSO_AUTH_TOKEN`
+4. ```powershell
+   .\deploy\cloudflare-pages.ps1
+   ```
+   ou `npm run pages:deploy`
+5. Dashboard → **Workers & Pages** → `inspetor-budganja` → **Settings → Variables** (Production):
+   - `TURSO_DATABASE_URL`, `TURSO_AUTH_TOKEN`
+   - `RESEARCH_PASS`, `ADMIN_USER`, `ADMIN_EMAILS`
+   - `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`
+   - `GEMINI_API_KEY` (opcional)
+6. **Custom domains** → `inspetorbudganja.com.br` e `www` (a zona DNS já na Cloudflare)
+7. Uploads (opcional): `npx wrangler r2 bucket create budganja-uploads` e descomente `[[r2_buckets]]` em `wrangler.toml`
+
+Pré-visualização local do modo Pages: `npm run pages:dev` (não substitui `npm start` para desenvolvimento do dia-a-dia).
+
+**URL canónica:** https://inspetorbudganja.com.br · Admin: `/login.html`
+
+### Túnel no PC Windows (alternativa)
+
+O domínio aponta para `localhost:8080` neste computador. Se o PC desligar, o site cai.
 
 1. [Cloudflare](https://dash.cloudflare.com) → Add site → `inspetorbudganja.com.br`
 2. [Registro.br](https://registro.br) → **Alterar servidores DNS** → 2 nameservers da Cloudflare
@@ -145,16 +178,33 @@ Modo prático: **Cloudflare + túnel no PC Windows** (pasta `deploy/`).
    ```
    Copiar `deploy\cloudflared.config.example.yml` → `%USERPROFILE%\.cloudflared\config.yml` (ajustar Tunnel ID e user)
    ```powershell
-   cloudflared tunnel route dns budganja inspetorbudganja.com.br
-   cloudflared tunnel route dns budganja www.inspetorbudganja.com.br
+   .\deploy\fix-dns.ps1
    ```
 6. ```powershell
    .\deploy\start-site.ps1
    ```
 
-**URLs:** https://inspetorbudganja.com.br · Admin: `/login.html`
-
 O PC deve ficar ligado (PM2: `pm2 status`).
+
+### Domínios alias (.com)
+
+Os domínios `inspetorbudganja.com` e `inspectorbudganja.com` (e respectivos `www`) usam o **mesmo túnel**; o servidor (e, se configurares, a Cloudflare) redirecciona para `https://inspetorbudganja.com.br`.
+
+Guia completo (DNS manual — método fiável): [`deploy/add-alias-domains.md`](deploy/add-alias-domains.md).
+
+Em cada zona `.com` → **DNS**, cria (Proxied):
+
+| Type | Name | Target |
+|------|------|--------|
+| CNAME | `@` | `deccb19c-bdf3-477d-a251-279dc4b5b584.cfargotunnel.com` |
+| CNAME | `www` | `deccb19c-bdf3-477d-a251-279dc4b5b584.cfargotunnel.com` |
+
+Apaga no `.com.br` quaisquer CNAME errados com esses nomes (subdomínios fantasma).  
+Opcional: Redirect Rule 301 na edge → `https://inspetorbudganja.com.br${uri}`.
+
+`SITE_URL` continua `https://inspetorbudganja.com.br`.
+
+Com **Cloudflare Pages**, em vez do CNAME do túnel, adicione cada domínio em **Custom domains** (não use túnel e Pages no mesmo hostname ao mesmo tempo).
 
 ### Testes locais
 
@@ -255,12 +305,12 @@ O site público **tem de ficar na raiz** (cada pasta = URL). Código de sistema:
 ProjectBudGanja/
 ├── [SITE — URLs públicas]
 │   ├── index.html, entrar.html, perfil.html, login.html, admin.html
-│   ├── biblioteca/, guia/, equipamentos/, calculadoras/, loja/, info/, videos/, sorteios/
+│   ├── biblioteca/, guia/, equipamentos/, calculadoras/, info/, videos/, sorteios/
 │   ├── css/, js/, imagens/, posts/
 │   └── sw.js, manifest.json, favicon.svg
 ├── [RUNTIME]
 │   ├── server/index.js          # HTTP local + API
-│   └── lib/                     # API, auth, CMS, nav, loja, BD (ver ARQUITETURA.md)
+│   └── lib/                     # API, auth, CMS, nav, BD (ver ARQUITETURA.md)
 ├── [BUILD]
 │   └── scripts/                 # npm run build, sync, testes
 ├── [DADOS]

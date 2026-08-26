@@ -26,9 +26,15 @@ function runBuildSteps() {
   }
 
   try {
-    runStep('sync:icon-head', 'sync-icon-head.js');
+    runStep('optimize:hero', 'optimize-hero.js');
   } catch (e) {
-    console.warn('Aviso sync:icon-head:', e.message);
+    console.warn('Aviso optimize:hero:', e.message);
+  }
+
+  try {
+    runStep('build:og-images', 'generate-og-images.js');
+  } catch (e) {
+    console.warn('Aviso build:og-images:', e.message);
   }
 
   try {
@@ -45,9 +51,34 @@ function runBuildSteps() {
   }
 
   try {
+    // Garante data-i18n nos hubs antes de sync:pages (fonte = HTML).
+    runStep('wire:i18n', 'wire-html-i18n.js');
+  } catch (e) {
+    console.warn('Aviso wire:i18n:', e.message);
+  }
+
+  try {
     runStep('sync:pages', 'sync-pages-from-html.js');
   } catch (e) {
     console.warn('Aviso sync:pages:', e.message);
+  }
+
+  try {
+    runStep('build:apresentacao-pdf', 'generate-apresentacao-pdf.js');
+  } catch (e) {
+    console.warn('Aviso build:apresentacao-pdf:', e.message);
+  }
+
+  try {
+    runStep('build:livro-pdf', 'generate-catalogo-projeto-livro.js');
+  } catch (e) {
+    console.warn('Aviso build:livro-pdf:', e.message);
+  }
+
+  try {
+    runStep('build:livro-page-pdf', 'generate-livro-page-pdf.js');
+  } catch (e) {
+    console.warn('Aviso build:livro-page-pdf:', e.message);
   }
 
   try {
@@ -60,6 +91,12 @@ function runBuildSteps() {
     runStep('sync:pages-to-db', 'sync-pages-to-db.js');
   } catch (e) {
     console.warn('Aviso sync:pages-to-db:', e.message);
+  }
+
+  try {
+    runStep('stamp:pesquisa-series', 'stamp-pesquisa-series.js');
+  } catch (e) {
+    console.warn('Aviso stamp:pesquisa-series:', e.message);
   }
 
   try {
@@ -81,9 +118,63 @@ function runBuildSteps() {
   }
 
   try {
-    runStep('build:jardimhg', 'build-jardimhg-catalog.js');
+    runStep('build:paulinho', 'build-paulinho-catalog.js');
   } catch (e) {
-    console.warn('Aviso build:jardimhg:', e.message);
+    console.warn('Aviso build:paulinho:', e.message);
+  }
+
+  try {
+    runStep('build:zangado', 'build-zangado-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:zangado:', e.message);
+  }
+
+  try {
+    runStep('build:hopejoy', 'build-hopejoy-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:hopejoy:', e.message);
+  }
+
+  try {
+    runStep('build:bagual', 'build-bagual-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:bagual:', e.message);
+  }
+
+  try {
+    runStep('build:tamara', 'build-tamara-klink-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:tamara:', e.message);
+  }
+
+  try {
+    runStep('build:dallelaste', 'build-drsamueldallelaste-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:dallelaste:', e.message);
+  }
+
+  try {
+    runStep('build:amyr', 'build-amyr-klink-catalog.js');
+  } catch (e) {
+    console.warn('Aviso build:amyr:', e.message);
+  }
+
+  try {
+    runStep('build:videos-hub', 'build-videos-hub.js');
+  } catch (e) {
+    console.warn('Aviso build:videos-hub:', e.message);
+  }
+
+  try {
+    runStep('build:radio', 'build-radio-playlist.js');
+  } catch (e) {
+    console.warn('Aviso build:radio:', e.message);
+  }
+
+  try {
+    runStep('sync:vida-poemas', 'sync-vida-poemas.js');
+  } catch (e) {
+    console.warn('Aviso sync:vida-poemas:', e.message);
   }
 
   try {
@@ -93,15 +184,45 @@ function runBuildSteps() {
   }
 
   try {
+    runStep('sync:page-translations', 'sync-page-translations.js');
+  } catch (e) {
+    console.warn('Aviso sync:page-translations:', e.message);
+  }
+
+  try {
     runStep('sync:ferramentas-nav', 'sync-ferramentas-nav.js');
   } catch (e) {
     console.warn('Aviso sync:ferramentas-nav:', e.message);
   }
 
   try {
-    runStep('sync:loja-data', 'sync-loja-data.js');
+    runStep('build:plantas', 'build-plantas.js');
   } catch (e) {
-    console.warn('Aviso sync:loja-data:', e.message);
+    console.warn('Aviso build:plantas:', e.message);
+  }
+
+  try {
+    runStep('build:animais', 'build-animais.js');
+  } catch (e) {
+    console.warn('Aviso build:animais:', e.message);
+  }
+
+  try {
+    runStep('build:fungos', 'build-fungos.js');
+  } catch (e) {
+    console.warn('Aviso build:fungos:', e.message);
+  }
+
+  try {
+    runStep('build:tecnologia', 'build-tecnologia.js');
+  } catch (e) {
+    console.warn('Aviso build:tecnologia:', e.message);
+  }
+
+  try {
+    runStep('build:mitologia', 'build-mitologia.js');
+  } catch (e) {
+    console.warn('Aviso build:mitologia:', e.message);
   }
 
   try {
@@ -126,6 +247,13 @@ function runBuildSteps() {
     runStep('stamp:assets', 'stamp-assets.js');
   } catch (e) {
     console.warn('Aviso stamp:assets:', e.message);
+  }
+
+  // Depois de posts/guia/stamp — evita que templates antigos voltem a pôr o favicon SVG errado.
+  try {
+    runStep('sync:icon-head', 'sync-icon-head.js');
+  } catch (e) {
+    console.warn('Aviso sync:icon-head:', e.message);
   }
 
   console.log('\nBuild concluído: ficheiros estáticos e índices gerados.');

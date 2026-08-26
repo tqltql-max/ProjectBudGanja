@@ -17,7 +17,6 @@ Base de dados **SQLite** (`data/budganja.db` localmente; **Turso** em produção
 | **Rodapé** | `footer_links`, `footer_groups`, `footer_group_links` | Links do footer |
 | **Guia de cultivo** | `guia_cultivo`, `guia_chapters`, `guia_videos` | Trilha em vídeo @InspetorBudGanja |
 | **Sorteios** | `sorteio_settings`, `sorteio_prizes`, `sorteio_entries`, `sorteio_alert_subscribers` | Config + inscrições + alertas |
-| **Loja** | `loja_orders` | Pedidos de encomenda |
 | **YouTube** | `youtube_feed`, `youtube_feed_videos` | Feed do canal Inspetor |
 
 Schema SQL: `lib/db/schema.sql` · Repositórios: `lib/db/content-repos.js`, `lib/db/cultivo-repos.js`
@@ -39,13 +38,6 @@ Mapa canônico aplicado em código (`lib/persistence-naming.js`):
 | Sorteios | `premio_id` | `premioId` | — |
 | Sorteios | `premio_label` | `premioLabel` | `premio` |
 | Sorteios | `created_at` | `createdAt` | — |
-| Loja | `product_id` | `productId` | `produto` (entrada) |
-| Loja | `product_title` | `productTitle` | — |
-| Loja | `package_id` | `packageId` | `pacote` (entrada) |
-| Loja | `package_label` | `packageLabel` | — |
-| Loja | `package_price_note` | `packagePriceNote` | — |
-| Loja | `user_id` | `userId` | — |
-| Loja | `created_at` | `createdAt` | — |
 | Utilizadores | `google_id` | `googleId` | — |
 | Utilizadores | `email_verified_at` | `emailVerifiedAt` / `emailVerified` | — |
 | Utilizadores | `username` | `username` | `userName`, `user_name` |
@@ -130,7 +122,8 @@ Migração legada: dados antigos em `users.profile_json` (campo `growLogs`) são
 | Campo | Descrição |
 |-------|-----------|
 | `displayName`, `age`, `username`, `birthDate` | Dados de perfil para UX; idade é dinâmica com base em `birthDate` |
-| `avatarUrl`, `experience`, `environment`… | Metadados opcionais do cultivador |
+| `experience`, `environment`… | Metadados opcionais do cultivador |
+| Foto de perfil | Vem de `users.picture` (URL da conta Google no login); sem upload próprio |
 
 **Não guardar** `growLogs`, `journal`, `planTasks` em `profile_json` — usar tabelas `cultivo_*`.
 

@@ -1,0 +1,348 @@
+/* Modo Aprender — tradução palavra a palavra + tip de frase */
+
+.learn-toolbar {
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1.25rem;
+    padding: 0.9rem 1.1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(223, 194, 98, 0.35);
+    background:
+        linear-gradient(135deg, rgba(223, 194, 98, 0.12), rgba(124, 179, 66, 0.08)),
+        rgba(12, 18, 8, 0.92);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
+body[data-page="vida"] .learn-toolbar {
+    width: auto;
+    margin: 0 0 1.25rem;
+}
+
+.learn-toolbar-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.65rem 1rem;
+}
+
+.learn-toolbar-label {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #dfc262;
+}
+
+.learn-toolbar-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 0.28rem;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    max-height: min(42vh, 16rem);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(223, 194, 98, 0.55) rgba(0, 0, 0, 0.22);
+    padding: 0.05rem 0.2rem 0.15rem 0;
+}
+
+.learn-toolbar-actions::-webkit-scrollbar {
+    width: 8px;
+}
+
+.learn-toolbar-actions::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: rgba(223, 194, 98, 0.5);
+}
+
+.learn-toolbar-btn {
+    appearance: none;
+    border: 1px solid rgba(223, 194, 98, 0.35);
+    background: rgba(10, 14, 8, 0.65);
+    color: rgba(244, 237, 216, 0.88);
+    font-family: "Nunito", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.01em;
+    padding: 0.32rem 0.55rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.learn-toolbar-btn:hover,
+.learn-toolbar-btn:focus-visible {
+    border-color: rgba(223, 194, 98, 0.75);
+    color: #fef9d7;
+    outline: none;
+}
+
+.learn-toolbar-btn.is-active {
+    background: linear-gradient(135deg, #dfc262, #a68628);
+    border-color: transparent;
+    color: #12180e;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 560px) {
+    .learn-toolbar-actions {
+        width: 100%;
+    }
+}
+
+.learn-toolbar-hint {
+    margin: 0.55rem 0 0;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    color: rgba(244, 237, 216, 0.72);
+}
+
+/* Sem seleção/nativo Copiar-Colar: o toque deve traduzir, não abrir o menu do SO. */
+body.learn-mode-active .learn-mode-on,
+body.learn-mode-active .learn-word {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+body.learn-mode-active #main-content,
+body.learn-mode-active .learn-mode-on {
+    overflow-x: clip;
+    max-width: 100%;
+}
+
+.learn-mode-on .learn-word,
+.learn-mode-active .learn-word {
+    display: inline;
+    cursor: pointer;
+    border-radius: 0.2em;
+    padding: 0 0.05em;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+/* Títulos dourados: garantir que as palavras traduzíveis recebem hover/cor */
+.learn-mode-active h1 .learn-word,
+.learn-mode-active h2 .learn-word,
+.learn-mode-active h3 .learn-word,
+.learn-mode-active h4 .learn-word,
+.learn-mode-active .vida-hero-brand .learn-word,
+.learn-mode-active .article-eyebrow .learn-word {
+    -webkit-text-fill-color: inherit;
+    color: inherit;
+}
+
+.learn-mode-on .learn-word:hover,
+.learn-mode-on .learn-word:focus-visible {
+    outline: none;
+    background: rgba(223, 194, 98, 0.12);
+}
+
+/* Palavra com ficha (já clicável) — dourado, distinto do texto corrido. */
+.learn-mode-active .learn-word[data-learn-href],
+.learn-mode-on .learn-word[data-learn-href],
+.post-content a[href] .learn-word {
+    color: #e8c547 !important;
+    -webkit-text-fill-color: #e8c547 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #d4af37 !important;
+    text-underline-offset: 0.16em;
+}
+
+.learn-mode-active .learn-word--danger[data-learn-href],
+.learn-mode-on .learn-word--danger[data-learn-href],
+.post-content a[href] .learn-word--danger {
+    color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+    text-decoration-color: #e23a2c !important;
+}
+
+/* Palavras sem tradução no idioma activo — sempre visíveis no modo Aprender */
+.learn-mode-active .learn-word--unknown,
+.learn-mode-on .learn-word--unknown {
+    background: rgba(196, 112, 72, 0.14);
+    border-bottom: 2px dotted rgba(214, 140, 96, 0.95);
+    border-radius: 0.12em;
+    color: inherit;
+}
+
+.learn-mode-active .learn-word--unknown:hover,
+.learn-mode-active .learn-word--unknown:focus-visible,
+.learn-mode-on .learn-word--unknown:hover,
+.learn-mode-on .learn-word--unknown:focus-visible {
+    background: rgba(196, 112, 72, 0.26);
+    border-bottom-color: rgba(230, 160, 110, 1);
+}
+
+.learn-toolbar-legend {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem 0.55rem;
+    margin: 0.45rem 0 0;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    color: rgba(244, 237, 216, 0.78);
+}
+
+.learn-legend-swatch {
+    display: inline-block;
+    width: 0.95em;
+    height: 0.28em;
+    border-radius: 1px;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+.learn-legend-swatch--danger {
+    background: #e23a2c;
+    box-shadow: 0 0 0 1px rgba(226, 58, 44, 0.35);
+}
+
+.learn-toolbar-legend-link {
+    color: #ffb4a8;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #e23a2c;
+    text-underline-offset: 0.16em;
+}
+
+.learn-toolbar-legend-link:hover,
+.learn-toolbar-legend-link:focus-visible {
+    color: #ffd0c8;
+    outline: none;
+}
+
+/* Palavras de aviso (catálogo Vida/Palavras-aviso.txt) — traço vermelho sólido */
+.learn-mode-active .learn-word--danger,
+.learn-mode-on .learn-word--danger,
+.learn-mode-active .learn-word--danger.learn-word--unknown,
+.learn-mode-on .learn-word--danger.learn-word--unknown {
+    background: rgba(226, 58, 44, 0.16);
+    border-bottom: 2px solid #e23a2c;
+    border-radius: 0.12em;
+    text-decoration: underline;
+    text-decoration-color: #e23a2c;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.14em;
+    color: inherit;
+}
+
+.learn-mode-active .learn-word--danger:hover,
+.learn-mode-active .learn-word--danger:focus-visible,
+.learn-mode-on .learn-word--danger:hover,
+.learn-mode-on .learn-word--danger:focus-visible {
+    background: rgba(226, 58, 44, 0.28);
+}
+
+.learn-mode-active .learn-word--caution,
+.learn-mode-on .learn-word--caution {
+    background: rgba(196, 148, 64, 0.14);
+    border-bottom: 2px dashed rgba(196, 148, 64, 0.95);
+    border-radius: 0.12em;
+}
+
+.learn-mode-active .learn-word--caution:hover,
+.learn-mode-active .learn-word--caution:focus-visible,
+.learn-mode-on .learn-word--caution:hover,
+.learn-mode-on .learn-word--caution:focus-visible {
+    background: rgba(196, 148, 64, 0.26);
+}
+
+.learn-word.is-sheen,
+.learn-word.is-translated {
+    background: rgba(244, 248, 252, 0.1);
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+    animation: none;
+    filter: none;
+}
+
+.learn-word.is-translated {
+    animation: none;
+    background: rgba(244, 248, 252, 0.08);
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+    filter: none;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, currentColor 55%, transparent);
+    text-underline-offset: 0.16em;
+}
+
+.learn-mode-active .learn-word--danger.is-translated,
+.learn-mode-on .learn-word--danger.is-translated {
+    background: rgba(226, 58, 44, 0.16);
+    text-decoration-color: #e23a2c;
+}
+
+.learn-mode-active .learn-word--caution.is-translated,
+.learn-mode-on .learn-word--caution.is-translated {
+    background: rgba(196, 148, 64, 0.14);
+    text-decoration-style: dashed;
+    text-decoration-color: rgba(196, 148, 64, 0.95);
+}
+
+.learn-word--drone-kept.is-translated {
+    text-decoration: underline;
+    text-decoration-color: rgba(126, 232, 210, 0.7);
+    text-underline-offset: 0.16em;
+    text-decoration-thickness: 2px;
+}
+
+.learn-word.is-unknown.is-sheen,
+.learn-word--unknown.is-sheen {
+    background: rgba(196, 112, 72, 0.32);
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+    filter: none;
+    animation: none;
+    border-bottom-color: rgba(230, 160, 110, 1);
+}
+
+.learn-word--chars {
+    white-space: normal;
+}
+
+.learn-char {
+    display: inline-block;
+    min-width: 0.05em;
+    max-width: 100%;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.learn-char--fade {
+    opacity: 0;
+    transform: scaleY(0.4);
+    width: 0;
+    min-width: 0;
+    overflow: hidden;
+}
+
+@keyframes learnWordSheen {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .learn-word.is-sheen,
+    .learn-word.is-translated {
+        animation: none !important;
+        transition: none !important;
+        filter: none;
+    }
+}

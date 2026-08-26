@@ -12,14 +12,34 @@ const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registr
 
 const STATIC = [
   { loc: '/', priority: '1.0', changefreq: 'weekly' },
-  { loc: '/index.html', priority: '1.0', changefreq: 'weekly' },
+  { loc: '/inverno/', priority: '0.85', changefreq: 'weekly' },
+  { loc: '/vida/', priority: '0.9', changefreq: 'weekly' },
+  { loc: '/origami/', priority: '0.85', changefreq: 'weekly' },
+  { loc: '/origami/barquinho-de-papel/', priority: '0.8', changefreq: 'monthly' },
+  { loc: '/laboratorio/', priority: '0.85', changefreq: 'weekly' },
   { loc: '/guia/cultivo-basico.html', priority: '0.95', changefreq: 'monthly' },
+  { loc: '/guia/palavras.html', priority: '0.9', changefreq: 'monthly' },
+  { loc: '/guia/astrologia.html', priority: '0.88', changefreq: 'monthly' },
   { loc: '/videos/', priority: '0.9', changefreq: 'weekly' },
+  { loc: '/jogos/', priority: '0.9', changefreq: 'weekly' },
+  { loc: '/jogos/gtarp/', priority: '0.85', changefreq: 'weekly' },
+  { loc: '/jogos/hopejoy/', priority: '0.8', changefreq: 'weekly' },
+  { loc: '/jogos/bagual/', priority: '0.8', changefreq: 'weekly' },
   { loc: '/biblioteca/pesquisas/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/biblioteca/inspecoes/', priority: '0.9', changefreq: 'weekly' },
-  { loc: '/equipamentos/', priority: '0.9', changefreq: 'monthly' },
-  { loc: '/loja/', priority: '0.85', changefreq: 'monthly' },
-  { loc: '/loja/encomenda.html', priority: '0.8', changefreq: 'monthly' },
+  { loc: '/biblioteca/unifesp/', priority: '0.95', changefreq: 'monthly' },
+  { loc: '/biblioteca/unifesp/caderno.html', priority: '0.9', changefreq: 'weekly' },
+  { loc: '/biblioteca/cadernos/', priority: '0.8', changefreq: 'weekly' },
+  { loc: '/plantas/', priority: '0.95', changefreq: 'weekly' },
+  { loc: '/frutos/', priority: '0.95', changefreq: 'weekly' },
+  { loc: '/animais/', priority: '0.95', changefreq: 'weekly' },
+  { loc: '/fungos/', priority: '0.95', changefreq: 'weekly' },
+  { loc: '/tecnologia/', priority: '0.95', changefreq: 'weekly' },
+  { loc: '/mitologia/', priority: '0.95', changefreq: 'weekly' },
+  { loc: '/vida/diario/', priority: '0.8', changefreq: 'monthly' },
+  { loc: '/comunidade/', priority: '0.9', changefreq: 'daily' },
+  { loc: '/radio/', priority: '0.8', changefreq: 'weekly' },
+  { loc: '/objetos/', priority: '0.9', changefreq: 'monthly' },
   { loc: '/calculadoras/', priority: '0.8', changefreq: 'monthly' },
   ...CALCULADORAS.map((c) => ({
     loc: getCalculadoraUrl(c),
@@ -49,6 +69,42 @@ function buildSitemap() {
       changefreq: 'monthly'
     });
   });
+
+  try {
+    const { readPlantas, getPlantUrl } = require('../lib/plantas-service.js');
+    const catalog = readPlantas();
+    catalog.plants.forEach((plant) => {
+      urls.push({
+        loc: getPlantUrl(plant),
+        priority: '0.75',
+        changefreq: 'monthly'
+      });
+    });
+  } catch (e) { /* optional */ }
+
+  try {
+    const { readAnimais, getAnimalUrl } = require('../lib/animais-service.js');
+    const catalog = readAnimais();
+    catalog.animals.forEach((animal) => {
+      urls.push({
+        loc: getAnimalUrl(animal),
+        priority: '0.75',
+        changefreq: 'monthly'
+      });
+    });
+  } catch (e) { /* optional */ }
+
+  try {
+    const { readFungos, getFungoUrl } = require('../lib/fungos-service.js');
+    const catalog = readFungos();
+    catalog.fungi.forEach((fungo) => {
+      urls.push({
+        loc: getFungoUrl(fungo),
+        priority: '0.75',
+        changefreq: 'monthly'
+      });
+    });
+  } catch (e) { /* optional */ }
 
   const body = urls.map((u) =>
     '  <url><loc>' + BASE + u.loc + '</loc><changefreq>' + u.changefreq + '</changefreq><priority>' + u.priority + '</priority></url>'

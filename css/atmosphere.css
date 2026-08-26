@@ -1,0 +1,164 @@
+/* Aurora boreal — camada leve atrás do conteúdo (sem isolation/will-change/blend) */
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 62vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
+body::before {
+    background:
+        radial-gradient(ellipse 55% 42% at 18% 8%, rgba(90, 255, 210, 0.28), transparent 58%),
+        radial-gradient(ellipse 48% 36% at 78% 4%, rgba(96, 186, 255, 0.22), transparent 54%),
+        radial-gradient(ellipse 42% 30% at 52% -4%, rgba(244, 248, 252, 0.14), transparent 50%);
+    animation: aurora-north 36s ease-in-out infinite alternate;
+}
+
+body::after {
+    background:
+        radial-gradient(ellipse 50% 38% at 62% 18%, rgba(176, 132, 255, 0.16), transparent 56%),
+        radial-gradient(ellipse 40% 32% at 88% 28%, rgba(255, 130, 214, 0.1), transparent 52%),
+        radial-gradient(ellipse 70% 28% at 40% 0%, rgba(70, 230, 190, 0.12), transparent 60%);
+    animation: aurora-south 48s ease-in-out infinite alternate;
+}
+
+#main-content {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes aurora-north {
+    from { transform: translate3d(-2%, 0, 0); opacity: 0.78; }
+    to { transform: translate3d(3%, 2%, 0); opacity: 1; }
+}
+
+@keyframes aurora-south {
+    from { transform: translate3d(2%, 1%, 0); opacity: 0.62; }
+    to { transform: translate3d(-3%, -1%, 0); opacity: 0.92; }
+}
+
+.lab-atmosphere,
+.radio-atmosphere {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.22;
+    background:
+        linear-gradient(180deg, rgba(7, 16, 24, 0.15) 0%, rgba(7, 16, 24, 0.72) 70%, var(--color-bg, #071018) 100%),
+        url("/imagens/background-hero.png?v=7f1482449a") center top / cover no-repeat;
+}
+
+@keyframes lab-fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.lab-fade-up {
+    animation: lab-fade-up 0.7s var(--transition-smooth, cubic-bezier(0.22, 1, 0.36, 1)) both;
+}
+
+.lab-fade-up-delay-1 { animation-delay: 0.06s; }
+.lab-fade-up-delay-2 { animation-delay: 0.12s; }
+.lab-fade-up-delay-3 { animation-delay: 0.18s; }
+
+.lab-eyebrow {
+    margin: 0 0 0.45rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #9be7ff;
+}
+
+.lab-title-gold {
+    background: linear-gradient(180deg, #f7fbff 0%, #7dffd0 48%, #7eb8ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.lab-glass {
+    border: 1px solid rgba(126, 232, 210, 0.28);
+    background:
+        linear-gradient(165deg, rgba(12, 28, 40, 0.82), rgba(7, 16, 24, 0.92));
+    box-shadow:
+        0 1px 0 rgba(244, 248, 252, 0.08) inset,
+        0 18px 48px rgba(0, 16, 28, 0.4);
+}
+
+html:not([data-theme="dark"]) body::before {
+    opacity: 0.42;
+}
+
+html:not([data-theme="dark"]) body::after {
+    opacity: 0.32;
+}
+
+html:not([data-theme="dark"]) .lab-atmosphere,
+html:not([data-theme="dark"]) .radio-atmosphere {
+    opacity: 0.08;
+}
+
+body:is(
+    [data-page="admin"],
+    [data-page="admin-db"],
+    [data-page="comunidade-admin"],
+    [data-page="pesquisas-admin"],
+    [data-page="usuarios-admin"],
+    [data-page="sorteios-admin"],
+    [data-page="emails-admin"]
+)::before,
+body:is(
+    [data-page="admin"],
+    [data-page="admin-db"],
+    [data-page="comunidade-admin"],
+    [data-page="pesquisas-admin"],
+    [data-page="usuarios-admin"],
+    [data-page="sorteios-admin"],
+    [data-page="emails-admin"]
+)::after {
+    opacity: 0.22;
+    animation: none;
+}
+
+.site-snow {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    pointer-events: none;
+}
+
+@media print {
+    .site-snow {
+        display: none !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-snow {
+        display: none !important;
+    }
+}
+
+@media (max-width: 700px), (prefers-reduced-motion: reduce) {
+    body::before,
+    body::after,
+    .lab-atmosphere,
+    .radio-atmosphere,
+    .lab-fade-up {
+        animation: none !important;
+    }
+}

@@ -1,0 +1,1521 @@
+{
+  "updatedAt": "2026-08-23T12:51:36.275Z",
+  "disclaimer": "Fichas educacionais de plantas fitoterápicas e medicinais do Brasil. Não substituem orientação profissional de saúde nem aconselhamento jurídico.",
+  "plants": [
+    {
+      "partsUsed": [
+        "Folhas (gel)"
+      ],
+      "traditionalUses": [
+        "Gel tópico em pele irritada e queimaduras leves (tradição popular)",
+        "Cosmética caseira (máscaras, hidratação)",
+        "Uso interno só com orientação — distinto do gel externo"
+      ],
+      "cautions": "Separar gel interno (folha) do látex amarelo (aloína / antraquinonas). Uso interno e extratos concentrados exigem orientação profissional; látex pode irritar. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "pele",
+        "domestica",
+        "gel",
+        "aloina",
+        "polissacarideos"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/babosa-cover.jpg",
+      "id": "babosa",
+      "slug": "babosa",
+      "nomePopular": "Babosa",
+      "nomeCientifico": "Aloe vera",
+      "familia": "Asphodelaceae",
+      "summary": "Suculenta (*Aloe vera*) amplamente cultivada; gel foliar rico em polissacarídeos — tradição tópica; látex com antraquinonas (aloína) exige cautela na ingestão."
+    },
+    {
+      "partsUsed": [
+        "Capítulos florais"
+      ],
+      "traditionalUses": [
+        "Infusões calmantes e apoio ao sono leve",
+        "Conforto digestivo leve após refeições",
+        "Compressas / uso tópico tradicional em pele irritada"
+      ],
+      "cautions": "Alergia a Asteraceae possível. Evitar automedicação em gravidez e crianças pequenas sem orientação. Óleos essenciais concentrados ≠ chá. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "cha",
+        "calmante",
+        "digestao",
+        "apigenina",
+        "asteraceae"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/camomila-cover.jpg",
+      "id": "camomila",
+      "slug": "camomila",
+      "nomePopular": "Camomila",
+      "nomeCientifico": "Matricaria chamomilla",
+      "familia": "Asteraceae",
+      "summary": "Capítulos de *Matricaria chamomilla* — tradição de chás calmantes; marcadores como apigenina e óleo azul (camazuleno) em contexto educacional."
+    },
+    {
+      "partsUsed": [
+        "Folhas"
+      ],
+      "traditionalUses": [
+        "Chás aromáticos citricos",
+        "Aromatização de alimentos e caldos",
+        "Uso popular digestivo leve"
+      ],
+      "cautions": "Óleo essencial concentrado irritante — não ingerir puro. Gravidez e epilepsia: orientação profissional. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "cha",
+        "aromatica",
+        "culinaria",
+        "citral",
+        "oleo-essencial"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/capim-limao-cover.jpg",
+      "id": "capim-limao",
+      "slug": "capim-limao",
+      "nomePopular": "Capim-limão",
+      "nomeCientifico": "Cymbopogon citratus",
+      "familia": "Poaceae",
+      "summary": "Gramínea cítrica (*Cymbopogon citratus*) comum em quintais; citral e óleo essencial nas folhas — chás e culinária."
+    },
+    {
+      "partsUsed": [
+        "Partes aéreas"
+      ],
+      "traditionalUses": [
+        "Chás amargos digestivos tradicionais",
+        "Fitoterapia popular hepática/digestiva (contexto cultural)",
+        "Uso em decoctos regionais"
+      ],
+      "cautions": "Amargor intenso; uso prolongado e gravidez exigem orientação. Não substitui avaliação de doença hepática. Conteúdo educacional — evite automedicação.",
+      "tags": [
+        "nativa",
+        "digestao",
+        "cha",
+        "amargo",
+        "baccharis"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/carqueja-cover.jpg",
+      "id": "carqueja",
+      "slug": "carqueja",
+      "nomePopular": "Carqueja",
+      "nomeCientifico": "Baccharis trimera",
+      "familia": "Asteraceae",
+      "summary": "Arbusto nativo (*Baccharis trimera*) — chás amargos do Sul/Sudeste; flavonoides e diterpenos em tradição digestiva popular."
+    },
+    {
+      "partsUsed": [
+        "Partes aéreas"
+      ],
+      "traditionalUses": [
+        "Infusões tradicionais (diurese popular)",
+        "Banhos e uso tópico",
+        "Interesse em sílica / tecido conjuntivo na tradição"
+      ],
+      "cautions": "Pode interagir com diuréticos e afetar rins/eletrólitos — orientar-se com profissional. Identificar espécie; alguns Equisetum são tóxicos. Conteúdo educacional.",
+      "tags": [
+        "cha",
+        "mineral",
+        "silica",
+        "diuretico"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/cavalinha-cover.jpg",
+      "id": "cavalinha",
+      "slug": "cavalinha",
+      "nomePopular": "Cavalinha",
+      "nomeCientifico": "Equisetum arvense",
+      "familia": "Equisetaceae",
+      "summary": "Equisetum — tradição de sílica e diurese popular; partes aéreas em chás e banhos (não confundir espécies tóxicas)."
+    },
+    {
+      "partsUsed": [
+        "Folhas"
+      ],
+      "traditionalUses": [
+        "Chás relaxantes e digestivos leves",
+        "Banhos e aromatização doméstica",
+        "Tradição de quintal brasileiro"
+      ],
+      "cautions": "Quimiotipos variam (cheiro e composição). Óleo essencial concentrado ≠ chá. Gravidez: orientação profissional. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "cha",
+        "calmante",
+        "brasileira",
+        "lippia",
+        "oleo-essencial"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/erva-cidreira-cover.jpg",
+      "id": "erva-cidreira",
+      "slug": "erva-cidreira",
+      "nomePopular": "Erva-cidreira",
+      "nomeCientifico": "Lippia alba",
+      "familia": "Verbenaceae",
+      "summary": "*Lippia alba* — erva-cidreira brasileira; folhas com óleos essenciais (citral/carvona conforme quimiotipo) em chás e banhos."
+    },
+    {
+      "partsUsed": [
+        "Folhas"
+      ],
+      "traditionalUses": [
+        "Chás digestivos / gástricos tradicionais",
+        "Fitoterapia brasileira popular",
+        "Decoctos de folhas"
+      ],
+      "cautions": "Não substitui diagnóstico de úlcera ou gastrite. Uso prolongado e gravidez: orientação profissional. Conteúdo educacional — evite automedicação.",
+      "tags": [
+        "nativa",
+        "digestao",
+        "mata-atlantica",
+        "taninos",
+        "gastrico"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/espinheira-santa-cover.jpg",
+      "id": "espinheira-santa",
+      "slug": "espinheira-santa",
+      "nomePopular": "Espinheira-santa",
+      "nomeCientifico": "Maytenus ilicifolia",
+      "familia": "Celastraceae",
+      "summary": "*Maytenus ilicifolia* — Mata Atlântica; folhas na tradição gástrica brasileira; taninos e triterpenos em contexto educacional."
+    },
+    {
+      "partsUsed": [
+        "Folhas"
+      ],
+      "traditionalUses": [
+        "Xaropes e chás da medicina popular respiratória",
+        "Infusões expectorantes tradicionais",
+        "Uso familiar em resfriados (tradição — não protocolo)"
+      ],
+      "cautions": "Cumarinas: cautela com anticoagulantes e hepatotoxicidade em doses altas. Não usar em gravidez sem orientação. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "nativa",
+        "respiratorio",
+        "cha",
+        "cumarina",
+        "xarope"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/guaco-cover.jpg",
+      "id": "guaco",
+      "slug": "guaco",
+      "nomePopular": "Guaco",
+      "nomeCientifico": "Mikania glomerata",
+      "familia": "Asteraceae",
+      "summary": "*Mikania glomerata* — trepadeira clássica em xaropes e chás respiratórios; cumarinas (ex. cumarina) em contexto educacional."
+    },
+    {
+      "partsUsed": [
+        "Folhas"
+      ],
+      "traditionalUses": [
+        "Chás digestivos e refrescantes",
+        "Culinária e aromatização",
+        "Uso popular em náuseas leves"
+      ],
+      "cautions": "Não confundir espécies (*M. piperita* vs *spicata*). Óleo essencial concentrado pode irritar; cautela em refluxo e lactentes. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "cha",
+        "culinaria",
+        "aromatica",
+        "mentol",
+        "digestao"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/hortela-cover.jpg",
+      "id": "hortela",
+      "slug": "hortela",
+      "nomePopular": "Hortelã",
+      "nomeCientifico": "Mentha spicata",
+      "familia": "Lamiaceae",
+      "summary": "*Mentha spicata* (e afins) — mentol/óleos mentolados em chás e culinária; espécie e quimiotipo importam."
+    },
+    {
+      "partsUsed": [
+        "Folhas"
+      ],
+      "traditionalUses": [
+        "Chás digestivos amargos tradicionais",
+        "Uso popular após refeições pesadas",
+        "Fitoterapia doméstica (identificar espécie)"
+      ],
+      "cautions": "Não confundir com *Peumus boldus* (boldo-do-chile — hepatotoxicidade documentada em abusos). Uso prolongado, gravidez e doença hepática: orientação profissional. Conteúdo educacional.",
+      "tags": [
+        "digestao",
+        "cha",
+        "domestica",
+        "falso-boldo",
+        "plectranthus"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/boldo-cover.jpg",
+      "id": "boldo",
+      "slug": "boldo",
+      "nomePopular": "Boldo",
+      "nomeCientifico": "Plectranthus barbatus",
+      "familia": "Lamiaceae",
+      "summary": "No Brasil, “boldo” costuma ser *Plectranthus barbatus* (falso-boldo) — distinto do *Peumus boldus* chileno; folhas amargas em chás digestivos."
+    },
+    {
+      "partsUsed": [
+        "Folhas"
+      ],
+      "traditionalUses": [
+        "Infusões relaxantes",
+        "Aromatização e culinária leve",
+        "Tradição europeia de conforto nervoso leve"
+      ],
+      "cautions": "Pode potencializar sedativos. Hipotiroidismo e gravidez: orientação. Óleo essencial concentrado ≠ chá. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "cha",
+        "calmante",
+        "aromatica",
+        "citral",
+        "lamiaceae"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/melissa-cover.jpg",
+      "id": "melissa",
+      "slug": "melissa",
+      "nomePopular": "Melissa",
+      "nomeCientifico": "Melissa officinalis",
+      "familia": "Lamiaceae",
+      "summary": "*Melissa officinalis* — balm europeu adaptado; citral e ácidos fenólicos em chás calmantes."
+    },
+    {
+      "partsUsed": [
+        "Folhas",
+        "Ramos"
+      ],
+      "traditionalUses": [
+        "Culinária (carnes, assados, azeites)",
+        "Chás aromáticos",
+        "Tradição de estímulo cognitivo popular (contexto cultural)"
+      ],
+      "cautions": "Óleo essencial rico em cânfora — não ingerir puro; cautela em epilepsia e gravidez. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "culinaria",
+        "aromatica",
+        "cha",
+        "cineol",
+        "canfora"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/alecrim-cover.jpg",
+      "id": "alecrim",
+      "slug": "alecrim",
+      "nomePopular": "Alecrim",
+      "nomeCientifico": "Salvia rosmarinus",
+      "familia": "Lamiaceae",
+      "summary": "*Salvia rosmarinus* — arbusto de cozinha; cineol, cânfora e ácidos fenólicos em chás e temperos."
+    },
+    {
+      "partsUsed": [
+        "Rizoma"
+      ],
+      "traditionalUses": [
+        "Chás e decoctos digestivos",
+        "Culinária (fresco, seco, em conserva)",
+        "Uso popular em náuseas de viagem / gestação leve (sempre com orientação na gravidez)"
+      ],
+      "cautions": "Pode interagir com anticoagulantes e irritar o estômago em doses altas; cautela em cálculos biliares. Uso culinário ≠ extratos concentrados. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "cha",
+        "culinaria",
+        "rizoma",
+        "gingerois",
+        "nauseas"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/gengibre-cover.jpg",
+      "id": "gengibre",
+      "slug": "gengibre",
+      "nomePopular": "Gengibre",
+      "nomeCientifico": "Zingiber officinale",
+      "familia": "Zingiberaceae",
+      "summary": "Rizoma de *Zingiber officinale* — gingeróis e shogaóis; chás, culinária e tradição antináusea (contexto educacional)."
+    },
+    {
+      "partsUsed": [
+        "Rizoma"
+      ],
+      "traditionalUses": [
+        "Culinária (açafrão-da-terra / tempero e corante)",
+        "Chás e leite dourado (golden milk)",
+        "Uso popular digestivo e anti-inflamatório tradicional",
+        "Preparações tópicas tradicionais em algumas culturas"
+      ],
+      "cautions": "Conteúdo educacional — não substitui orientação profissional. Uso culinário habitual difere de suplementos concentrados (curcumina). Pode interagir com anticoagulantes e irritar o estômago em doses altas; cautela em cálculos biliares e na gravidez. Não confundir com açafrão verdadeiro (Crocus sativus).",
+      "tags": [
+        "culinaria",
+        "rizoma",
+        "cha",
+        "antiinflamatorio",
+        "digestivo"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/curcuma-cover.jpg",
+      "id": "curcuma",
+      "slug": "curcuma",
+      "nomePopular": "Cúrcuma",
+      "nomeCientifico": "Curcuma longa",
+      "familia": "Zingiberaceae",
+      "summary": "Rizoma amarelo conhecido no Brasil como açafrão-da-terra — culinária, chás e tradição popular associada a conforto digestivo e efeitos anti-inflamatórios (contexto educacional)."
+    },
+    {
+      "partsUsed": [
+        "Casca",
+        "Raiz"
+      ],
+      "traditionalUses": [
+        "Decoctos tradicionais de casca/raiz",
+        "Fitoterapia popular andino-amazônica",
+        "Uso tónico tradicional (contexto cultural)"
+      ],
+      "cautions": "Espécie e extratos regulamentados em alguns contextos; pode modular imunidade — cautela em doenças autoimunes e pré-cirurgia. Procurar orientação profissional. Conteúdo educacional.",
+      "tags": [
+        "amazonia",
+        "tradicional",
+        "alcaloides",
+        "uncaria",
+        "imunidade"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/unha-de-gato-cover.jpg",
+      "id": "unha-de-gato",
+      "slug": "unha-de-gato",
+      "nomePopular": "Unha-de-gato",
+      "nomeCientifico": "Uncaria tomentosa",
+      "familia": "Rubiaceae",
+      "summary": "*Uncaria tomentosa* — trepadeira andino-amazônica; alcaloides oxindólicos e ácidos quinóvicos na tradição popular (casca/raiz)."
+    },
+    {
+      "partsUsed": [
+        "Sementes",
+        "Óleo"
+      ],
+      "traditionalUses": [
+        "Uso popular tópico (óleo/sementes)",
+        "Tradição oral regional (com cautela)",
+        "Fitoterapia do Cerrado"
+      ],
+      "cautions": "Sementes e óleos concentrados podem irritar; uso oral só com orientação. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "cerrado",
+        "nativa",
+        "oleo",
+        "diterpenos",
+        "sementes"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/sucupira-cover.jpg",
+      "id": "sucupira",
+      "slug": "sucupira",
+      "nomePopular": "Sucupira",
+      "nomeCientifico": "Pterodon emarginatus",
+      "familia": "Fabaceae",
+      "summary": "*Pterodon emarginatus* — Cerrado; sementes e óleo com diterpenos furânicos na medicina popular do Centro-Oeste."
+    },
+    {
+      "partsUsed": [
+        "Óleo-resina"
+      ],
+      "traditionalUses": [
+        "Uso tópico tradicional (pele/inflamação popular)",
+        "Fitoterapia amazônica (gotas/óleo)",
+        "Cosmética artesanal"
+      ],
+      "cautions": "Óleo-resina concentrado pode irritar mucosas; uso oral e dose só com orientação. Autenticidade do produto importa. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "amazonia",
+        "oleo",
+        "nativa",
+        "cariofileno",
+        "resina"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/copaiba-cover.jpg",
+      "id": "copaiba",
+      "slug": "copaiba",
+      "nomePopular": "Copaíba",
+      "nomeCientifico": "Copaifera langsdorffii",
+      "familia": "Fabaceae",
+      "summary": "*Copaifera* — óleo-resina amazônico/cerrado rico em β-cariofileno e diterpenos; tradição tópica e oral popular."
+    },
+    {
+      "partsUsed": [
+        "Óleo das sementes"
+      ],
+      "traditionalUses": [
+        "Uso tópico tradicional (pele/insetos — tradição)",
+        "Cosmética natural e sabões",
+        "Tradição ribeirinha amazônica"
+      ],
+      "cautions": "Uso tópico prudente; ingestão e extratos concentrados só com orientação. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "amazonia",
+        "oleo",
+        "pele",
+        "limoides",
+        "cosmetica"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/andiroba-cover.jpg",
+      "id": "andiroba",
+      "slug": "andiroba",
+      "nomePopular": "Andiroba",
+      "nomeCientifico": "Carapa guianensis",
+      "familia": "Meliaceae",
+      "summary": "*Carapa guianensis* — óleo das sementes amazônicas; limonoides e ácidos gordos em cosmética e tradição local."
+    },
+    {
+      "partsUsed": [
+        "Folhas",
+        "Flores"
+      ],
+      "traditionalUses": [
+        "Culinária regional (tacacá, pato no tucupi)",
+        "Sensação anestésica/formigante tradicional",
+        "Uso oral popular em pequenas quantidades culinárias"
+      ],
+      "cautions": "Spilanthol causa dormência temporária — esperado em doses culinárias; extratos concentrados exigem orientação. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "amazonia",
+        "culinaria",
+        "regional",
+        "spilanthol",
+        "anestesico"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/jambu-cover.jpg",
+      "id": "jambu",
+      "slug": "jambu",
+      "nomePopular": "Jambu",
+      "nomeCientifico": "Acmella oleracea",
+      "familia": "Asteraceae",
+      "summary": "*Acmella oleracea* — jambu amazônico; spilanthol provoca formigamento; culinária paraense e tradição oral."
+    },
+    {
+      "partsUsed": [
+        "Casca"
+      ],
+      "traditionalUses": [
+        "Chás tradicionais calmantes",
+        "Uso popular para nervosismo/sono (contexto cultural)",
+        "Fitoterapia brasileira de casca"
+      ],
+      "cautions": "Pode potencializar sedativos e álcool — não usar sem orientação. Condução e máquinas: cautela. Conteúdo educacional.",
+      "tags": [
+        "nativa",
+        "calmante",
+        "cha",
+        "alcaloides",
+        "sedativo"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/mulungu-cover.jpg",
+      "id": "mulungu",
+      "slug": "mulungu",
+      "nomePopular": "Mulungu",
+      "nomeCientifico": "Erythrina mulungu",
+      "familia": "Fabaceae",
+      "summary": "*Erythrina mulungu* — casca com alcaloides eritrínicos; tradição de chás calmantes (sedação popular)."
+    },
+    {
+      "partsUsed": [
+        "Folhas",
+        "Partes aéreas"
+      ],
+      "traditionalUses": [
+        "Chás calmantes",
+        "Fitoterapia popular e produtos industrializados",
+        "Tradição de conforto ansioso leve (não protocolo)"
+      ],
+      "cautions": "Pode potencializar sedativos. Identificar espécie (*P. incarnata* vs edulis — fruto ≠ folha medicinal). Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "calmante",
+        "cha",
+        "brasileira",
+        "flavonoides",
+        "passiflora"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/maracuja-cover.jpg",
+      "id": "maracuja",
+      "slug": "maracuja",
+      "nomePopular": "Maracujá",
+      "nomeCientifico": "Passiflora incarnata",
+      "familia": "Passifloraceae",
+      "summary": "*Passiflora* — folhas/partes aéreas em chás e fitoterápicos; flavonoides C-glicosídeos na tradição calmante."
+    },
+    {
+      "partsUsed": [
+        "Flores"
+      ],
+      "traditionalUses": [
+        "Pomadas e uso tópico em pele",
+        "Infusões leves",
+        "Cosmética herbal tradicional"
+      ],
+      "cautions": "Alergia a Asteraceae possível. Uso interno prolongado: orientação. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "pele",
+        "flor",
+        "cha",
+        "triterpenos",
+        "topico"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/calendula-cover.jpg",
+      "id": "calendula",
+      "slug": "calendula",
+      "nomePopular": "Calêndula",
+      "nomeCientifico": "Calendula officinalis",
+      "familia": "Asteraceae",
+      "summary": "*Calendula officinalis* — pétalas com triterpenos e carotenóides; tradição tópica em pele e infusões leves."
+    },
+    {
+      "partsUsed": [
+        "Casca"
+      ],
+      "traditionalUses": [
+        "Decoctos e uso tópico tradicional",
+        "Tradição adstringente/ cicatrizante popular",
+        "Fitoterapia do Cerrado"
+      ],
+      "cautions": "Taninos concentrados irritam mucosas; uso oral só com orientação. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "cerrado",
+        "nativa",
+        "adstringente",
+        "taninos",
+        "casca"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/barbatimao-cover.jpg",
+      "id": "barbatimao",
+      "slug": "barbatimao",
+      "nomePopular": "Barbatimão",
+      "nomeCientifico": "Stryphnodendron adstringens",
+      "familia": "Fabaceae",
+      "summary": "*Stryphnodendron adstringens* — casca do Cerrado rica em taninos; tradição adstringente tópica e oral popular."
+    },
+    {
+      "partsUsed": [
+        "Folhas"
+      ],
+      "traditionalUses": [
+        "Referência histórica farmacológica (pilocarpina)",
+        "Fitoterapia regional com supervisão",
+        "Educação sobre alcaloides potentes"
+      ],
+      "cautions": "Pilocarpina e alcaloides relacionados são potentes — uso só com supervisão profissional. Não automedicar. Conteúdo educacional.",
+      "tags": [
+        "amazonia",
+        "historica",
+        "nativa",
+        "pilocarpina",
+        "alcaloides"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/jaborandi-cover.jpg",
+      "id": "jaborandi",
+      "slug": "jaborandi",
+      "nomePopular": "Jaborandi",
+      "nomeCientifico": "Pilocarpus microphyllus",
+      "familia": "Rutaceae",
+      "summary": "*Pilocarpus microphyllus* — fonte histórica de pilocarpina (agonista muscarínico); referência farmacológica amazônica."
+    },
+    {
+      "partsUsed": [
+        "Raiz"
+      ],
+      "traditionalUses": [
+        "Referência histórica farmacêutica (emético)",
+        "Educação sobre alcaloides isoquinolínicos",
+        "Contexto de farmacopeia — não uso doméstico"
+      ],
+      "cautions": "Emetina é tóxica em abuso — não automedicar nem usar como «xarope caseiro». Conteúdo educacional apenas.",
+      "tags": [
+        "historica",
+        "nativa",
+        "farmacopeia",
+        "emetina",
+        "toxica"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/ipecacuanha-cover.jpg",
+      "id": "ipecacuanha",
+      "slug": "ipecacuanha",
+      "nomePopular": "Ipecacuanha",
+      "nomeCientifico": "Carapichea ipecacuanha",
+      "familia": "Rubiaceae",
+      "summary": "*Carapichea ipecacuanha* — raiz histórica com emetina/cefaelina; farmacopeia e uso restrito (não remédio caseiro)."
+    },
+    {
+      "partsUsed": [
+        "Raiz"
+      ],
+      "traditionalUses": [
+        "Preparações tradicionais tonificantes",
+        "Uso popular de raiz (cápsulas/pó — mercado)",
+        "Tradição adaptogénica popular (contexto cultural)"
+      ],
+      "cautions": "Suplementos concentrados ≠ raiz culinária. Gravidez, hipertensão e medicamentos: orientação profissional. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "nativa",
+        "raiz",
+        "tradicional",
+        "ecdiesteroides",
+        "tonico"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/pfaffia-cover.jpg",
+      "id": "pfaffia",
+      "slug": "pfaffia",
+      "nomePopular": "Pfaffia (ginseng-brasileiro)",
+      "nomeCientifico": "Pfaffia glomerata",
+      "familia": "Amaranthaceae",
+      "summary": "*Pfaffia glomerata* — «ginseng-brasileiro»; raiz com ecdiesteroides e saponinas na tradição tonificante popular."
+    },
+    {
+      "partsUsed": [
+        "Casca",
+        "Folhas",
+        "Frutos"
+      ],
+      "traditionalUses": [
+        "Uso tópico tradicional (casca/folhas)",
+        "Culinária (frutos — pimenta-rosa)",
+        "Tradição adstringente popular"
+      ],
+      "cautions": "Anacardiaceae: alergia cruzada possível (urushiol-like). Frutos culinários ≠ decocto de casca. Conteúdo educacional — não substitui consulta.",
+      "tags": [
+        "nativa",
+        "culinaria",
+        "pele",
+        "taninos",
+        "pimenta-rosa"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/aroeira-cover.jpg",
+      "id": "aroeira",
+      "slug": "aroeira",
+      "nomePopular": "Aroeira",
+      "nomeCientifico": "Schinus terebinthifolia",
+      "familia": "Anacardiaceae",
+      "summary": "*Schinus terebinthifolia* — aroeira/pimenta-rosa; taninos e óleo essencial; casca/folhas na tradição e frutos na culinária."
+    },
+    {
+      "partsUsed": [
+        "Casca"
+      ],
+      "traditionalUses": [
+        "Referência histórica antimalárica (quinina)",
+        "Educação sobre alcaloides da casca",
+        "Contexto de farmacopeia e história da medicina"
+      ],
+      "cautions": "Quinina e derivados são fármacos potentes — espécies e usos regulamentados; não automedicar com «chá de quina». Conteúdo educacional.",
+      "tags": [
+        "historica",
+        "farmacopeia",
+        "quinina",
+        "antimalarico",
+        "alcaloides"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/quina-cover.jpg",
+      "id": "quina",
+      "slug": "quina",
+      "nomePopular": "Quina",
+      "nomeCientifico": "Cinchona sp.",
+      "familia": "Rubiaceae",
+      "summary": "*Cinchona* — casca histórica da quinina; antimalárico clássico — referência de farmacopeia, não chá doméstico."
+    },
+    {
+      "partsUsed": [
+        "Flores",
+        "Extratos (contexto clínico)"
+      ],
+      "traditionalUses": [
+        "Educação sobre uso terapêutico (curso UNIFESP)",
+        "Referência em fitoterapia e legislação brasileira"
+      ],
+      "cautions": "Uso medicinal sujeito a legislação e prescrição. Em adolescentes, estudos longitudinais de neuroimagem (ex.: IMAGEN / Albaugh et al., JAMA Psychiatry 2021) associam uso de cannabis a alterações no neurodesenvolvimento cortical — ver a inspeção BudGanja do artigo. Conteúdo educacional — não incentiva cultivo ilícito nem automedicação.",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-artigo-albaugh-cannabis-neurodesenvolvimento.html",
+          "label": "Inspeção: Cannabis na adolescência e neurodesenvolvimento (JAMA Psychiatry)",
+          "labelEn": "Inspection: Adolescent cannabis use and neurodevelopment (JAMA Psychiatry)",
+          "labelEs": "Inspección: Cannabis en la adolescencia y neurodesarrollo (JAMA Psychiatry)"
+        },
+        {
+          "href": "/posts/post-inspecao-palavra-maconha.html",
+          "label": "Inspeção: Maconha — origem da palavra e transformação no Brasil",
+          "labelEn": "Inspection: Maconha — word origin and transformation in Brazil",
+          "labelEs": "Inspección: Maconha — origen de la palabra y transformación en Brasil"
+        },
+        {
+          "href": "/posts/post-inspecao-figura-chorao.html",
+          "label": "Inspeção: Chorão — letra urbana, Charlie Brown Jr. e a série Palavras",
+          "labelEn": "Inspection: Chorão — urban lyrics, Charlie Brown Jr. and the Words series",
+          "labelEs": "Inspección: Chorão — letra urbana, Charlie Brown Jr. y la serie Palabras"
+        },
+        {
+          "href": "/posts/post-inspecao-divulgacao-lair-ribeiro.html",
+          "label": "Inspeção: Dr. Lair Ribeiro — canal e divulgação sobre cannabinoides",
+          "labelEn": "Inspection: Dr. Lair Ribeiro — channel and cannabinoid outreach",
+          "labelEs": "Inspección: Dr. Lair Ribeiro — canal y divulgación sobre cannabinoides"
+        },
+        {
+          "href": "/posts/post-inspecao-figura-renato-russo.html",
+          "label": "Inspeção: Renato Russo — Legião Urbana, letra geracional e a série Palavras",
+          "labelEn": "Inspection: Renato Russo — Legião Urbana, generational lyrics and the Words series",
+          "labelEs": "Inspección: Renato Russo — Legião Urbana, letra generacional y la serie Palabras"
+        }
+      ],
+      "tags": [
+        "medicinal",
+        "unifesp",
+        "legislacao",
+        "fitoterapia",
+        "canabinoides",
+        "thc",
+        "cbd"
+      ],
+      "relatedUnifesp": true,
+      "cover": "/imagens/plantas/cannabis-sativa-cover.jpg",
+      "id": "cannabis-sativa",
+      "slug": "cannabis-sativa",
+      "nomePopular": "Cannabis (medicinal)",
+      "nomeCientifico": "Cannabis sativa L.",
+      "familia": "Cannabaceae",
+      "summary": "*Cannabis sativa* — canabinóides (THC, CBD e outros) em contexto clínico e formativo; destaque UNIFESP e legislação — não incentivo a cultivo ilícito."
+    },
+    {
+      "id": "abacate",
+      "slug": "abacate",
+      "nomePopular": "Abacate",
+      "nomeCientifico": "Persea americana Mill.",
+      "familia": "Lauraceae",
+      "summary": "Fruto mesoamericano (*āhuacatl* em náuatle): polpa rica em gorduras monoinsaturadas; no Brasil alimento corrente — a ficha separa a planta inteira dos derivados industriais açucarados e aditivados.",
+      "partsUsed": [
+        "Fruto (polpa)",
+        "Óleo da polpa (culinário / cosmético tradicional)",
+        "Folhas (uso tradicional, com cautela — não alimentar animais)"
+      ],
+      "traditionalUses": [
+        "Alimento e culinária (saladas, guacamole fresco, torradas)",
+        "Etnobotânica alimentar mesoamericana e andina (aguacate / palta)",
+        "Preparações caseiras com a polpa (pele/cabelo — tradição popular)",
+        "Óleo prensado em contextos artesanais"
+      ],
+      "cautions": "Polpa madura é alimento comum. Folhas, casca e caroço contêm persina e podem ser tóxicos para animais (cães, aves, etc.). Extratos e chá de folha: evitar automedicação. Derivados industriais com açúcar e aditivos têm ficha própria em Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutifera",
+        "americas",
+        "culinaria",
+        "lipidos",
+        "etimo",
+        "frutos"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/abacate-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-abacate.html",
+          "label": "Inspeção: Derivados do abacate — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Avocado derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados del aguacate — azúcar, aditivos y química industrial"
+        }
+      ],
+      "hubCategory": "fruto"
+    },
+    {
+      "id": "coco",
+      "slug": "coco",
+      "nomePopular": "Coco",
+      "nomeCientifico": "Cocos nucifera L.",
+      "familia": "Arecaceae",
+      "hubCategory": "fruto",
+      "summary": "Palmeira tropical (*Cocos nucifera*): o fruto (drupa) oferece água, polpa e óleo — a ficha separa o coco inteiro e a água fresca dos derivados industriais adoçados, refinados e ultraprocessados.",
+      "partsUsed": [
+        "Fruto (água endospérmica)",
+        "Polpa / amêndoa (fresca ou desidratada)",
+        "Óleo da polpa (culinário / cosmético tradicional)",
+        "Fibra da casca (coir — uso material, não alimentar)"
+      ],
+      "traditionalUses": [
+        "Água de coco fresca (hidratação e bebida tropical)",
+        "Polpa em culinária costeira e afro-brasileira",
+        "Óleo e leite de coco em cozinha tradicional",
+        "Uso material da casca e da madeira da palmeira"
+      ],
+      "cautions": "Água e polpa frescas são alimentos comuns. Derivados industriais com açúcar, xaropes e aditivos (água de coco adoçada, sobremesas, snacks) têm ficha própria em Derivados de risco. Óleo de coco é rico em gordura saturada — dose e contexto alimentar importam. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "tropicais",
+        "culinaria",
+        "lipidos",
+        "etimo"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/coco-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-coco.html",
+          "label": "Inspeção: Derivados do coco — açúcar, óleo e química industrial",
+          "labelEn": "Inspection: Coconut derivatives — sugar, oil and industrial chemistry",
+          "labelEs": "Inspección: Derivados del coco — azúcar, aceite y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "laranja",
+      "slug": "laranja",
+      "nomePopular": "Laranja",
+      "nomeCientifico": "Citrus × sinensis (L.) Osbeck",
+      "familia": "Rutaceae",
+      "hubCategory": "fruto",
+      "summary": "Citrino híbrido (*Citrus × sinensis*): crédito ao fruto inteiro e sumo fresco; a ficha separa concentrados, néctares e refrigerantes «de laranja» com açúcar e aditivos.",
+      "partsUsed": [
+        "Fruto (polpa / gomos)",
+        "Sumo natural espremido (baixo processamento)",
+        "Casca / zest em culinária (óleo essencial — dose)",
+        "Preparações culinárias domésticas sem ultraprocessamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Sumo fresco caseiro (sem concentrado nem xarope)",
+        "Culinária doméstica (zest, compotas artesanais sem aditivos industriais)",
+        "Etnobotânica alimentar mediterrânica e tropical (Rutaceae / *Citrus*)"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Sumo mesmo «natural» concentra açúcar sem fibra da polpa — dose importa. Derivados industriais (concentrado, néctar, refrigerante, aromas) entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "citricos",
+        "suco"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/laranja-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-laranja.html",
+          "label": "Inspeção: Derivados da Laranja — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Orange derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Naranja — azúcar, aditivos y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "acai",
+      "slug": "acai",
+      "nomePopular": "Açaí",
+      "nomeCientifico": "Euterpe oleracea Mart.",
+      "familia": "Arecaceae",
+      "hubCategory": "fruto",
+      "summary": "Palmeira amazónica: polpa fresca vs bowls industriais, xaropes e mixes ultraprocessados açucarados.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "amazonia",
+        "polpa",
+        "tropicais"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/acai-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-acai.html",
+          "label": "Inspeção: Derivados do Açaí — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Açaí derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Açaí — azúcar, aditivos y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "manga",
+      "slug": "manga",
+      "nomePopular": "Manga",
+      "nomeCientifico": "Mangifera indica L.",
+      "familia": "Anacardiaceae",
+      "hubCategory": "fruto",
+      "summary": "Fruto tropical: manga inteira vs néctares, polpas adoçadas e snacks desidratados industriais.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "tropicais",
+        "polpa"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/manga-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-manga.html",
+          "label": "Inspeção: Derivados da Manga — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Mango derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Mango — azúcar, aditivos y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "banana",
+      "slug": "banana",
+      "nomePopular": "Banana",
+      "nomeCientifico": "Musa spp.",
+      "familia": "Musaceae",
+      "hubCategory": "fruto",
+      "summary": "Fruto cotidiano: banana inteira vs chips fritos, farinhas, snacks e sobremesas industriais.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "snacks"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/banana-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-banana.html",
+          "label": "Inspeção: Derivados da Banana — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Banana derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Plátano / banana — azúcar, aditivos y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "maca",
+      "slug": "maca",
+      "nomePopular": "Maçã",
+      "nomeCientifico": "Malus domestica Borkh.",
+      "familia": "Rosaceae",
+      "hubCategory": "fruto",
+      "summary": "Fruto temperado: maçã inteira vs sucos concentrados, purés infantis e snacks «apple» industriais.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "suco",
+        "snacks"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/maca-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-maca.html",
+          "label": "Inspeção: Derivados da Maçã — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Apple derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Manzana — azúcar, aditivos y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "abacaxi",
+      "slug": "abacaxi",
+      "nomePopular": "Abacaxi",
+      "nomeCientifico": "Ananas comosus (L.) Merr.",
+      "familia": "Bromeliaceae",
+      "hubCategory": "fruto",
+      "summary": "Bromélia tropical: fruto fresco vs lata em calda, sucos e néctares com açúcar.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "tropicais",
+        "calda"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/abacaxi-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-abacaxi.html",
+          "label": "Inspeção: Derivados do Abacaxi — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Pineapple derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Piña — azúcar, aditivos y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "goiaba",
+      "slug": "goiaba",
+      "nomePopular": "Goiaba",
+      "nomeCientifico": "Psidium guajava L.",
+      "familia": "Myrtaceae",
+      "hubCategory": "fruto",
+      "summary": "Fruto brasileiro comum: goiaba inteira vs goiabada, polpas e néctares ricos em açúcar.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "brasileira",
+        "doce"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/goiaba-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-goiaba.html",
+          "label": "Inspeção: Derivados da Goiaba — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Guava derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Guayaba — azúcar, aditivos y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "cacau",
+      "slug": "cacau",
+      "nomePopular": "Cacau",
+      "nomeCientifico": "Theobroma cacao L.",
+      "familia": "Malvaceae",
+      "hubCategory": "fruto",
+      "summary": "Semente/fruto amazónico-mesoamericano: amêndoa vs chocolate industrial, açúcar e ultra processamento.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco e amêndoa merecem contexto. Chocolate industrial, achocolatados e snacks com açúcar, farinha e leite entram na série Produtos nocivos (hub chocolate). Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "amazonia",
+        "chocolate",
+        "lipidos"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/cacau-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-cacau.html",
+          "label": "Inspeção: Derivados do Cacau — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Cacao derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Cacao — azúcar, aditivos y química industrial"
+        },
+        {
+          "href": "/posts/post-inspecao-derivado-chocolate.html",
+          "label": "Inspeção: Chocolate industrial — cacau, açúcar, farinha e leite",
+          "labelEn": "Inspection: Industrial chocolate — cacao, sugar, flour and milk",
+          "labelEs": "Inspección: Chocolate industrial — cacao, azúcar, harina y leche"
+        },
+        {
+          "href": "/posts/post-inspecao-derivado-cana-de-acucar.html",
+          "label": "Inspeção: Cana-de-açúcar / açúcares livres",
+          "labelEn": "Inspection: Sugarcane / free sugars",
+          "labelEs": "Inspección: Caña de azúcar / azúcares libres"
+        },
+        {
+          "href": "/posts/post-inspecao-derivado-gluten.html",
+          "label": "Inspeção: Glúten / farinha",
+          "labelEn": "Inspection: Gluten / flour",
+          "labelEs": "Inspección: Gluten / harina"
+        },
+        {
+          "href": "/posts/post-inspecao-derivado-caseina.html",
+          "label": "Inspeção: Caseína / leite",
+          "labelEn": "Inspection: Casein / milk",
+          "labelEs": "Inspección: Caseína / leche"
+        }
+      ]
+    },
+    {
+      "id": "uva",
+      "slug": "uva",
+      "nomePopular": "Uva",
+      "nomeCientifico": "Vitis vinifera L.",
+      "familia": "Vitaceae",
+      "hubCategory": "fruto",
+      "summary": "Bagão: uva inteira vs sucos concentrados, néctares e refrigerantes «de uva» com açúcar.",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "suco"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/uva-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-uva.html",
+          "label": "Inspeção: Derivados da Uva — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Grape derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Uva — azúcar, aditivos y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "morango",
+      "slug": "morango",
+      "nomePopular": "Morango",
+      "nomeCientifico": "Fragaria × ananassa Duchesne",
+      "familia": "Rosaceae",
+      "hubCategory": "fruto",
+      "summary": "Fruto vermelho: morango fresco vs iogurtes, caldas, aromas e ultraprocessados «strawberry».",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "calda",
+        "aroma"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/morango-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-morango.html",
+          "label": "Inspeção: Derivados do Morango — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Strawberry derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Fresa — azúcar, aditivos y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "maracuja-fruta",
+      "slug": "maracuja-fruta",
+      "nomePopular": "Maracujá (fruta)",
+      "nomeCientifico": "Passiflora edulis Sims",
+      "familia": "Passifloraceae",
+      "hubCategory": "fruto",
+      "summary": "Fruto de *P. edulis*: polpa fresca vs néctares e polpas industriais adoçadas — distinto da ficha medicinal de folhas (*P. incarnata*).",
+      "partsUsed": [
+        "Fruto (polpa / sumo natural)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto inteiro ou fresco",
+        "Culinária doméstica sem ultraprocessamento"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "polpa",
+        "tropicais"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/maracuja-fruta-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-maracuja-fruta.html",
+          "label": "Inspeção: Derivados do Maracujá (fruta) — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Passion fruit derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Maracuyá (fruta) — azúcar, aditivos y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "tomatinho-cereja",
+      "slug": "tomatinho-cereja",
+      "nomePopular": "Tomatinho Cereja",
+      "nomeCientifico": "Solanum lycopersicum var. cerasiforme",
+      "familia": "Solanaceae",
+      "hubCategory": "fruto",
+      "summary": "Tomate cereja de cultivo familiar: fruto inteiro fresco vs molhos, ketchups e ultraprocessados «tomato». Primeiro cultivo publicado no Diário da Sementinha pelo Inspetor BudGanja.",
+      "partsUsed": [
+        "Fruto (inteiro / fresco)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto fresco em saladas e lanches",
+        "Culinária doméstica sem ultraprocessamento",
+        "Cultivo em vaso ou canteiro com acompanhamento familiar"
+      ],
+      "cautions": "Fruto fresco é alimento comum. Folhas e partes verdes da planta não são alimento. Derivados industriais com açúcar, sal e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "cultivo-familiar",
+        "horta",
+        "solanaceae"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/tomatinho-cereja-cover.jpg",
+      "relatedInspections": []
+    },
+    {
+      "id": "melancia",
+      "slug": "melancia",
+      "nomePopular": "Melancia",
+      "nomeCientifico": "Citrullus lanatus (Thunb.) Matsum. & Nakai",
+      "familia": "Cucurbitaceae",
+      "hubCategory": "fruto",
+      "summary": "Cucurbitácea de verão (*Citrullus lanatus*): fruto refrescante de polpa aquosa — a ficha separa a melancia inteira dos sucos, néctares e ultraprocessados «watermelon»; cultura de feira, praia e cultivo familiar com sol na trepadeira e água na polpa.",
+      "partsUsed": [
+        "Fruto (polpa fresca)",
+        "Sementes (torradas / culinária tradicional, com moderação)",
+        "Preparações culinárias de baixo processamento (suco caseiro, salada)"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto fresco (verão, feira, praia)",
+        "Suco e salada caseiros sem ultraprocessamento",
+        "Cultura alimentar brasileira do melão-d'água",
+        "Cultivo familiar em clima quente — trepadeira com espaço e polinização"
+      ],
+      "cautions": "Polpa madura é alimento comum — açúcar natural da fruta conta na dose diária. Sementes em excesso e extratos: sem automedicação. Folhas e partes verdes da cucurbitácea não são o foco alimentar desta ficha. Derivados industriais com açúcar, xaropes e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "tropicais",
+        "verao",
+        "cucurbitaceae",
+        "cultivo-familiar",
+        "hidrante"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/melancia-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-melancia.html",
+          "label": "Inspeção: Derivados da Melancia — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Watermelon derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Sandía — azúcar, aditivos y química industrial"
+        }
+      ]
+    },
+    {
+      "id": "mamao",
+      "slug": "mamao",
+      "nomePopular": "Mamão",
+      "nomeCientifico": "Carica papaya L.",
+      "familia": "Caricaceae",
+      "hubCategory": "fruto",
+      "summary": "Fruto tropical cotidiano (*Carica papaya*): polpa doce, sementes e látex com papaína — a ficha separa o mamão inteiro dos néctares, polpas adoçadas e snacks industriais; elo UNIFESP (papaína em feridas).",
+      "partsUsed": [
+        "Fruto (polpa madura)",
+        "Sementes (culinária / tradição popular, com cautela)",
+        "Látex / papaína (contexto clínico e industrial — não automedicação)",
+        "Preparações culinárias de baixo processamento"
+      ],
+      "traditionalUses": [
+        "Consumo do fruto fresco (café da manhã, sobremesa, suco caseiro)",
+        "Culinária tropical e brasileira (saladas de fruta, doces caseiros)",
+        "Papaína do látex citada em protocolos de feridas no SUS (contexto formativo UNIFESP)",
+        "Cultivo familiar em clima quente — planta de crescimento rápido"
+      ],
+      "cautions": "Polpa madura é alimento comum. Látex cru pode irritar pele e mucosa — não é brinquedo de cozinha. Sementes em excesso e extratos: evitar automedicação. Folhas e partes verdes não substituem orientação clínica. Derivados industriais com açúcar e aditivos entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "tropicais",
+        "papaina",
+        "unifesp",
+        "cultivo-familiar"
+      ],
+      "relatedUnifesp": true,
+      "cover": "/imagens/plantas/mamao-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-mamao.html",
+          "label": "Inspeção: Derivados do Mamão — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Papaya derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Papaya — azúcar, aditivos y química industrial"
+        },
+        {
+          "href": "/biblioteca/unifesp/livro-xiv.html",
+          "label": "Rascunhos XIV UNIFESP — papaína / farmácias vivas",
+          "labelEn": "XIV UNIFESP drafts — papain / living pharmacies",
+          "labelEs": "Borradores XIV UNIFESP — papaína / farmacias vivas"
+        }
+      ]
+    },
+    {
+      "id": "alecrim-do-campo",
+      "slug": "alecrim-do-campo",
+      "nomePopular": "Alecrim-do-campo",
+      "nomeCientifico": "Baccharis dracunculifolia DC.",
+      "familia": "Asteraceae",
+      "inspecaoDate": "2026-08-21",
+      "summary": "Arbusto nativo do Cerrado (*Baccharis dracunculifolia*) — alecrim dourado / vassourinha; fonte botânica da própolis verde (artepillina C). Não confundir com o alecrim de cozinha (*Salvia rosmarinus*).",
+      "partsUsed": [
+        "Folhas e ápices vegetativos (infusão tradicional)",
+        "Flores / inflorescências amarelo-ouro",
+        "Resina dos brotos (colheita pelas abelhas → própolis verde)"
+      ],
+      "traditionalUses": [
+        "Infusão popular de folhas e flores (ofício cultural, não posologia clínica)",
+        "Tradição digestiva, respiratória e de bochechos antissépticos",
+        "Fonte botânica da própolis verde brasileira (*Apis mellifera*)",
+        "Espécie pioneira em recuperação de áreas degradadas (contexto ecológico)"
+      ],
+      "cautions": "Contraindicado em gravidez e lactação. Não recomendado a menores de 12 anos. Diabéticos sob hipoglicemiantes: monitorizar glicose — o chá não substitui fármaco. Evitar uso excessivo ou prolongado sem orientação. Não confundir com alecrim de cozinha (*Salvia rosmarinus*) nem com carqueja (*Baccharis trimera*). Conteúdo educacional — evite automedicação.",
+      "tags": [
+        "nativa",
+        "cerrado",
+        "baccharis",
+        "propolis",
+        "cha",
+        "aromatica",
+        "asteraceae",
+        "campo"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/alecrim-do-campo-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-planta-alecrim.html",
+          "label": "Inspeção: Alecrim de cozinha (*Salvia rosmarinus*) — não confundir",
+          "labelEn": "Inspection: Kitchen rosemary (*Salvia rosmarinus*) — do not confuse",
+          "labelEs": "Inspección: Romero de cocina (*Salvia rosmarinus*) — no confundir"
+        },
+        {
+          "href": "/posts/post-inspecao-planta-carqueja.html",
+          "label": "Inspeção: Carqueja (*Baccharis trimera*) — mesmo género",
+          "labelEn": "Inspection: Carqueja (*Baccharis trimera*) — same genus",
+          "labelEs": "Inspección: Carqueja (*Baccharis trimera*) — mismo género"
+        },
+        {
+          "href": "/posts/post-inspecao-animal-abelha.html",
+          "label": "Inspeção: Abelha — própolis, mel e cadeia da colmeia",
+          "labelEn": "Inspection: Honeybee — propolis, honey and hive chain",
+          "labelEs": "Inspección: Abeja — propóleo, miel y cadena de la colmena"
+        }
+      ]
+    },
+    {
+      "id": "marolo",
+      "slug": "marolo",
+      "nomePopular": "Marolo",
+      "nomeCientifico": "Annona crassiflora Mart.",
+      "familia": "Annonaceae",
+      "hubCategory": "fruto",
+      "inspecaoDate": "2026-08-23",
+      "summary": "Anonácea nativa do Cerrado (*Annona crassiflora*): marolo / araticum-do-cerrado — polpa cremosa, muitas sementes; a ficha separa o fruto inteiro de maracujá, mamão, pinha/ata e graviola, e dos néctares e doces industriais.",
+      "partsUsed": [
+        "Fruto (polpa fresca madura)",
+        "Preparações culinárias de baixo processamento (doce, suco, sorvete caseiros)"
+      ],
+      "traditionalUses": [
+        "Consumo da polpa madura (feira, quintal, Cerrado / Minas Gerais)",
+        "Doces e sucos caseiros sem ultraprocessamento",
+        "Cultura alimentar do araticum / marolo no bioma Cerrado"
+      ],
+      "cautions": "Polpa madura é alimento tradicional. Sementes e folhas de Annonaceae não são chá genérico nem extracto caseiro. Não confundir com maracujá, mamão, pinha/ata ou graviola. Derivados industriais com açúcar entram na série Derivados de risco. Conteúdo educacional — não substitui orientação profissional nem manejo do bioma.",
+      "tags": [
+        "alimento",
+        "frutos",
+        "frutifera",
+        "culinaria",
+        "cerrado",
+        "nativas",
+        "annonaceae",
+        "araticum",
+        "minas-gerais"
+      ],
+      "relatedUnifesp": false,
+      "cover": "/imagens/plantas/marolo-cover.jpg",
+      "relatedInspections": [
+        {
+          "href": "/posts/post-inspecao-derivado-marolo.html",
+          "label": "Inspeção: Derivados do Marolo — açúcar, aditivos e química industrial",
+          "labelEn": "Inspection: Marolo / araticum derivatives — sugar, additives and industrial chemistry",
+          "labelEs": "Inspección: Derivados de Marolo / araticum — azúcar, aditivos y química industrial"
+        }
+      ]
+    }
+  ]
+}

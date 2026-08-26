@@ -6,4 +6,4 @@ if (!writeGuiaRedirectPage(ROOT)) {
   process.exit(1);
 }
 
-console.log('Guia redirect page synced → biblioteca/inspecoes/');
+console.log('Guia redirect page synced → /cultivo/');

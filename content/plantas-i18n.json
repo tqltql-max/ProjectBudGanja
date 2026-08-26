@@ -1,0 +1,1170 @@
+{
+  "disclaimerEn": "Educational profiles of herbal and medicinal plants from Brazil. They do not replace professional health guidance or legal advice.",
+  "disclaimerEs": "Fichas educativas sobre plantas herbales y medicinales de Brasil. No sustituyen la orientación de profesionales de la salud ni el asesoramiento jurídico.",
+  "plants": {
+    "babosa": {
+      "nomePopularEn": "Aloe",
+      "nomePopularEs": "Sábila",
+      "summaryEn": "Succulent (*Aloe vera*) widely grown; leaf gel rich in polysaccharides — topical tradition; latex with anthraquinones (aloin) needs caution if ingested.",
+      "summaryEs": "Suculenta (*Aloe vera*) muy cultivada; gel foliar rico en polisacáridos — tradición tópica; látex con antraquinonas (aloína) exige precaución si se ingiere.",
+      "partsUsedEn": [
+        "Leaves (gel)"
+      ],
+      "partsUsedEs": [
+        "Hojas (gel)"
+      ],
+      "traditionalUsesEn": [
+        "Topical gel on irritated skin and mild burns (folk tradition)",
+        "Homemade cosmetics (masks, moisturizing)",
+        "Internal use only with guidance — distinct from external gel"
+      ],
+      "traditionalUsesEs": [
+        "Gel tópico en piel irritada y quemaduras leves (tradición popular)",
+        "Cosmética casera (mascarillas, hidratación)",
+        "Uso interno solo con orientación — distinto del gel externo"
+      ],
+      "cautionsEn": "Separate inner leaf gel from yellow latex (aloin / anthraquinones). Internal use and concentrated extracts need professional guidance; latex may irritate. Educational content — does not replace a consultation.",
+      "cautionsEs": "Separar el gel interno de la hoja del látex amarillo (aloína / antraquinonas). Uso interno y extractos concentrados requieren orientación profesional; el látex puede irritar. Contenido educativo — no sustituye una consulta."
+    },
+    "camomila": {
+      "nomePopularEn": "Chamomile",
+      "nomePopularEs": "Manzanilla",
+      "summaryEn": "Flower heads of *Matricaria chamomilla* — calming tea tradition; markers such as apigenin and blue oil (chamazulene) in educational context.",
+      "summaryEs": "Capítulos de *Matricaria chamomilla* — tradición de infusiones calmantes; marcadores como apigenina y aceite azul (camazuleno) en contexto educativo.",
+      "partsUsedEn": [
+        "Flower heads"
+      ],
+      "partsUsedEs": [
+        "Capítulos florales"
+      ],
+      "traditionalUsesEn": [
+        "Calming infusions and mild sleep support",
+        "Mild digestive comfort after meals",
+        "Traditional compresses / topical use on irritated skin"
+      ],
+      "traditionalUsesEs": [
+        "Infusiones calmantes y apoyo leve al sueño",
+        "Confort digestivo leve tras comidas",
+        "Compresas / uso tópico tradicional en piel irritada"
+      ],
+      "cautionsEn": "Asteraceae allergy possible. Avoid self-medication in pregnancy and young children without guidance. Concentrated essential oils ≠ tea. Educational content — does not replace a consultation.",
+      "cautionsEs": "Posible alergia a Asteraceae. Evitar automedicación en embarazo y niños pequeños sin orientación. Aceites esenciales concentrados ≠ infusión. Contenido educativo — no sustituye una consulta."
+    },
+    "capim-limao": {
+      "nomePopularEn": "Lemongrass",
+      "nomePopularEs": "Hierba limón",
+      "summaryEn": "Citrus grass (*Cymbopogon citratus*) common in home gardens; citral and essential oil in leaves — teas and cooking.",
+      "summaryEs": "Gramínea cítrica (*Cymbopogon citratus*) común en huertos; citral y aceite esencial en las hojas — infusiones y cocina.",
+      "partsUsedEn": [
+        "Leaves"
+      ],
+      "partsUsedEs": [
+        "Hojas"
+      ],
+      "traditionalUsesEn": [
+        "Aromatic citrus teas",
+        "Flavoring foods and broths",
+        "Mild popular digestive use"
+      ],
+      "traditionalUsesEs": [
+        "Infusiones aromáticas cítricas",
+        "Aromatización de alimentos y caldos",
+        "Uso popular digestivo leve"
+      ],
+      "cautionsEn": "Concentrated essential oil is irritating — do not ingest neat. Pregnancy and epilepsy: professional guidance. Educational content — does not replace a consultation.",
+      "cautionsEs": "Aceite esencial concentrado irritante — no ingerir puro. Embarazo y epilepsia: orientación profesional. Contenido educativo — no sustituye una consulta."
+    },
+    "carqueja": {
+      "nomePopularEn": "Carqueja",
+      "nomePopularEs": "Carqueja",
+      "summaryEn": "Native shrub (*Baccharis trimera*) — bitter teas of southern/southeastern Brazil; flavonoids and diterpenes in popular digestive tradition.",
+      "summaryEs": "Arbusto nativo (*Baccharis trimera*) — infusiones amargas del sur/sureste; flavonoides y diterpenos en tradición digestiva popular.",
+      "partsUsedEn": [
+        "Aerial parts"
+      ],
+      "partsUsedEs": [
+        "Partes aéreas"
+      ],
+      "traditionalUsesEn": [
+        "Traditional bitter digestive teas",
+        "Popular hepatic/digestive herbal use (cultural context)",
+        "Regional decoctions"
+      ],
+      "traditionalUsesEs": [
+        "Infusiones amargas digestivas tradicionales",
+        "Fitoterapia popular hepática/digestiva (contexto cultural)",
+        "Decocciones regionales"
+      ],
+      "cautionsEn": "Intense bitterness; prolonged use and pregnancy need guidance. Does not replace assessment of liver disease. Educational content — avoid self-medication.",
+      "cautionsEs": "Amargor intenso; uso prolongado y embarazo requieren orientación. No sustituye evaluación de enfermedad hepática. Contenido educativo — evite automedicación."
+    },
+    "cavalinha": {
+      "nomePopularEn": "Horsetail",
+      "nomePopularEs": "Cola de caballo",
+      "summaryEn": "Equisetum — silica and folk diuretic tradition; aerial parts in teas and baths (do not confuse with toxic species).",
+      "summaryEs": "Equisetum — tradición de sílice y diuresis popular; partes aéreas en infusiones y baños (no confundir especies tóxicas).",
+      "partsUsedEn": [
+        "Aerial parts"
+      ],
+      "partsUsedEs": [
+        "Partes aéreas"
+      ],
+      "traditionalUsesEn": [
+        "Traditional infusions (folk diuresis)",
+        "Baths and topical use",
+        "Interest in silica / connective tissue in tradition"
+      ],
+      "traditionalUsesEs": [
+        "Infusiones tradicionales (diuresis popular)",
+        "Baños y uso tópico",
+        "Interés en sílice / tejido conectivo en la tradición"
+      ],
+      "cautionsEn": "May interact with diuretics and affect kidneys/electrolytes — seek professional guidance. Identify species; some Equisetum are toxic. Educational content.",
+      "cautionsEs": "Puede interactuar con diuréticos y afectar riñones/electrolitos; consulte a un profesional. Identificar especie; algunos Equisetum son tóxicos. Contenido educativo."
+    },
+    "erva-cidreira": {
+      "nomePopularEn": "Brazilian lemon balm",
+      "nomePopularEs": "Toronjil brasileño",
+      "summaryEn": "*Lippia alba* — Brazilian lemon balm; leaves with essential oils (citral/carvone by chemotype) in teas and baths.",
+      "summaryEs": "*Lippia alba* — toronjil brasileño; hojas con aceites esenciales (citral/carvona según quimiotipo) en infusiones y baños.",
+      "partsUsedEn": [
+        "Leaves"
+      ],
+      "partsUsedEs": [
+        "Hojas"
+      ],
+      "traditionalUsesEn": [
+        "Relaxing and mild digestive teas",
+        "Baths and home fragrance",
+        "Brazilian backyard tradition"
+      ],
+      "traditionalUsesEs": [
+        "Infusiones relajantes y digestivas leves",
+        "Baños y aromatización del hogar",
+        "Tradición de huerto brasileño"
+      ],
+      "cautionsEn": "Chemotypes vary (scent and composition). Concentrated essential oil ≠ tea. Pregnancy: professional guidance. Educational content — does not replace a consultation.",
+      "cautionsEs": "Los quimiotipos varían (olor y composición). Aceite esencial concentrado ≠ infusión. Embarazo: orientación profesional. Contenido educativo — no sustituye una consulta."
+    },
+    "espinheira-santa": {
+      "nomePopularEn": "Espinheira-santa",
+      "nomePopularEs": "Espinheira-santa",
+      "summaryEn": "*Maytenus ilicifolia* — Atlantic Forest; leaves in Brazilian gastric tradition; tannins and triterpenes in educational context.",
+      "summaryEs": "*Maytenus ilicifolia* — Mata Atlántica; hojas en tradición gástrica brasileña; taninos y triterpenos en contexto educativo.",
+      "partsUsedEn": [
+        "Leaves"
+      ],
+      "partsUsedEs": [
+        "Hojas"
+      ],
+      "traditionalUsesEn": [
+        "Traditional digestive / gastric teas",
+        "Brazilian popular herbal medicine",
+        "Leaf decoctions"
+      ],
+      "traditionalUsesEs": [
+        "Infusiones digestivas / gástricas tradicionales",
+        "Fitoterapia popular brasileña",
+        "Decocciones de hojas"
+      ],
+      "cautionsEn": "Does not replace diagnosis of ulcer or gastritis. Prolonged use and pregnancy: professional guidance. Educational content — avoid self-medication.",
+      "cautionsEs": "No sustituye diagnóstico de úlcera o gastritis. Uso prolongado y embarazo: orientación profesional. Contenido educativo — evite automedicación."
+    },
+    "guaco": {
+      "nomePopularEn": "Guaco",
+      "nomePopularEs": "Guaco",
+      "summaryEn": "*Mikania glomerata* — classic vine in respiratory syrups and teas; coumarins (e.g. coumarin) in educational context.",
+      "summaryEs": "*Mikania glomerata* — enredadera clásica en jarabes e infusiones respiratorias; cumarinas en contexto educativo.",
+      "partsUsedEn": [
+        "Leaves"
+      ],
+      "partsUsedEs": [
+        "Hojas"
+      ],
+      "traditionalUsesEn": [
+        "Syrups and teas of popular respiratory medicine",
+        "Traditional expectorant infusions",
+        "Family use for colds (tradition — not a protocol)"
+      ],
+      "traditionalUsesEs": [
+        "Jarabes e infusiones de la medicina popular respiratoria",
+        "Infusiones expectorantes tradicionales",
+        "Uso familiar en resfriados (tradición — no protocolo)"
+      ],
+      "cautionsEn": "Coumarins: caution with anticoagulants and hepatotoxicity at high doses. Do not use in pregnancy without guidance. Educational content — does not replace a consultation.",
+      "cautionsEs": "Cumarinas: precaución con anticoagulantes y hepatotoxicidad en dosis altas. No usar en embarazo sin orientación. Contenido educativo — no sustituye una consulta."
+    },
+    "hortela": {
+      "nomePopularEn": "Spearmint",
+      "nomePopularEs": "Hierbabuena",
+      "summaryEn": "*Mentha spicata* (and allies) — menthol/mint oils in teas and cooking; species and chemotype matter.",
+      "summaryEs": "*Mentha spicata* (y afines) — mentol/aceites mentolados en infusiones y cocina; especie y quimiotipo importan.",
+      "partsUsedEn": [
+        "Leaves"
+      ],
+      "partsUsedEs": [
+        "Hojas"
+      ],
+      "traditionalUsesEn": [
+        "Digestive and refreshing teas",
+        "Cooking and flavoring",
+        "Popular use for mild nausea"
+      ],
+      "traditionalUsesEs": [
+        "Infusiones digestivas y refrescantes",
+        "Cocina y aromatización",
+        "Uso popular en náuseas leves"
+      ],
+      "cautionsEn": "Do not confuse species (*M. piperita* vs *spicata*). Concentrated essential oil may irritate; caution in reflux and infants. Educational content — does not replace a consultation.",
+      "cautionsEs": "No confundir especies (*M. piperita* vs *spicata*). Aceite esencial concentrado puede irritar; precaución en reflujo y lactantes. Contenido educativo — no sustituye una consulta."
+    },
+    "boldo": {
+      "nomePopularEn": "False boldo",
+      "nomePopularEs": "Boldo de jardín",
+      "summaryEn": "In Brazil, “boldo” usually means *Plectranthus barbatus* (false boldo) — distinct from Chilean *Peumus boldus*; bitter leaves in digestive teas.",
+      "summaryEs": "En Brasil, «boldo» suele ser *Plectranthus barbatus* (falso boldo) — distinto del *Peumus boldus* chileno; hojas amargas en infusiones digestivas.",
+      "partsUsedEn": [
+        "Leaves"
+      ],
+      "partsUsedEs": [
+        "Hojas"
+      ],
+      "traditionalUsesEn": [
+        "Traditional bitter digestive teas",
+        "Popular use after heavy meals",
+        "Home herbal use (identify species)"
+      ],
+      "traditionalUsesEs": [
+        "Infusiones digestivas amargas tradicionales",
+        "Uso popular tras comidas pesadas",
+        "Fitoterapia doméstica (identificar especie)"
+      ],
+      "cautionsEn": "Do not confuse with *Peumus boldus* (Chilean boldo — documented hepatotoxicity in abuse). Prolonged use, pregnancy and liver disease: professional guidance. Educational content.",
+      "cautionsEs": "No confundir con *Peumus boldus* (boldo chileno — hepatotoxicidad documentada en abusos). Uso prolongado, embarazo y enfermedad hepática: orientación profesional. Contenido educativo."
+    },
+    "melissa": {
+      "nomePopularEn": "Lemon balm",
+      "nomePopularEs": "Melisa",
+      "summaryEn": "*Melissa officinalis* — European lemon balm adapted locally; citral and phenolic acids in calming teas.",
+      "summaryEs": "*Melissa officinalis* — melisa europea adaptada; citral y ácidos fenólicos en infusiones calmantes.",
+      "partsUsedEn": [
+        "Leaves"
+      ],
+      "partsUsedEs": [
+        "Hojas"
+      ],
+      "traditionalUsesEn": [
+        "Relaxing infusions",
+        "Flavoring and light cooking",
+        "European tradition of mild nervous comfort"
+      ],
+      "traditionalUsesEs": [
+        "Infusiones relajantes",
+        "Aromatización y cocina ligera",
+        "Tradición europea de confort nervioso leve"
+      ],
+      "cautionsEn": "May potentiate sedatives. Hypothyroidism and pregnancy: guidance. Concentrated essential oil ≠ tea. Educational content — does not replace a consultation.",
+      "cautionsEs": "Puede potenciar sedantes. Hipotiroidismo y embarazo: orientación. Aceite esencial concentrado ≠ infusión. Contenido educativo — no sustituye una consulta."
+    },
+    "alecrim": {
+      "nomePopularEn": "Rosemary",
+      "nomePopularEs": "Romero",
+      "summaryEn": "*Salvia rosmarinus* — kitchen shrub; cineole, camphor and phenolic acids in teas and seasoning.",
+      "summaryEs": "*Salvia rosmarinus* — arbusto de cocina; cineol, alcanfor y ácidos fenólicos en infusiones y condimentos.",
+      "partsUsedEn": [
+        "Leaves",
+        "Sprigs"
+      ],
+      "partsUsedEs": [
+        "Hojas",
+        "Ramas"
+      ],
+      "traditionalUsesEn": [
+        "Cooking (meats, roasts, oils)",
+        "Aromatic teas",
+        "Popular cognitive-stimulation tradition (cultural context)"
+      ],
+      "traditionalUsesEs": [
+        "Cocina (carnes, asados, aceites)",
+        "Infusiones aromáticas",
+        "Tradición popular de estímulo cognitivo (contexto cultural)"
+      ],
+      "cautionsEn": "Essential oil rich in camphor — do not ingest neat; caution in epilepsy and pregnancy. Educational content — does not replace a consultation.",
+      "cautionsEs": "Aceite esencial rico en alcanfor — no ingerir puro; precaución en epilepsia y embarazo. Contenido educativo — no sustituye una consulta."
+    },
+    "gengibre": {
+      "nomePopularEn": "Ginger",
+      "nomePopularEs": "Jengibre",
+      "summaryEn": "Rhizome of *Zingiber officinale* — gingerols and shogaols; teas, cooking and anti-nausea tradition (educational context).",
+      "summaryEs": "Rizoma de *Zingiber officinale* — gingeroles y shogaoles; infusiones, cocina y tradición antináuseas (contexto educativo).",
+      "partsUsedEn": [
+        "Rhizome"
+      ],
+      "partsUsedEs": [
+        "Rizoma"
+      ],
+      "traditionalUsesEn": [
+        "Digestive teas and decoctions",
+        "Cooking (fresh, dried, preserved)",
+        "Popular use for travel / mild pregnancy nausea (always with guidance in pregnancy)"
+      ],
+      "traditionalUsesEs": [
+        "Infusiones y decocciones digestivas",
+        "Cocina (fresco, seco, en conserva)",
+        "Uso popular en náuseas de viaje / gestación leve (siempre con orientación en embarazo)"
+      ],
+      "cautionsEn": "May interact with anticoagulants and irritate the stomach at high doses; caution with gallstones. Culinary use ≠ concentrated extracts. Educational content — does not replace a consultation.",
+      "cautionsEs": "Puede interactuar con anticoagulantes e irritar el estómago en dosis altas; precaución con cálculos biliares. Uso culinario ≠ extractos concentrados. Contenido educativo — no sustituye una consulta."
+    },
+    "curcuma": {
+      "nomePopularEn": "Turmeric",
+      "nomePopularEs": "Cúrcuma",
+      "summaryEn": "Yellow rhizome known in Brazil as açafrão-da-terra (Indian saffron) — cooking, teas and popular tradition linked to digestive comfort and anti-inflammatory use (educational context).",
+      "summaryEs": "Rizoma amarillo conocido en Brasil como açafrão-da-terra (azafrán de la India) — cocina, infusiones y tradición popular ligada a confort digestivo y uso antiinflamatorio (contexto educativo).",
+      "partsUsedEn": [
+        "Rhizome"
+      ],
+      "partsUsedEs": [
+        "Rizoma"
+      ],
+      "traditionalUsesEn": [
+        "Cooking (spice and natural colorant)",
+        "Teas and golden milk",
+        "Popular digestive and traditional anti-inflammatory use",
+        "Traditional topical preparations in some cultures"
+      ],
+      "traditionalUsesEs": [
+        "Cocina (azafrán de la tierra / condimento y colorante)",
+        "Infusiones y leche dorada (golden milk)",
+        "Uso popular digestivo y antiinflamatorio tradicional",
+        "Preparaciones tópicas tradicionales en algunas culturas"
+      ],
+      "cautionsEn": "Educational content — does not replace professional advice. Everyday culinary use differs from concentrated curcumin supplements. May interact with anticoagulants and irritate the stomach at high doses; caution with gallstones and in pregnancy. Do not confuse with true saffron (Crocus sativus).",
+      "cautionsEs": "Contenido educativo — no sustituye orientación profesional. El uso culinario habitual difiere de suplementos concentrados (curcumina). Puede interactuar con anticoagulantes e irritar el estómago a dosis altas; precaución con cálculos biliares y en el embarazo. No confundir con el azafrán verdadero (Crocus sativus)."
+    },
+    "unha-de-gato": {
+      "nomePopularEn": "Cat’s claw",
+      "nomePopularEs": "Uña de gato",
+      "summaryEn": "*Uncaria tomentosa* — Andean-Amazonian vine; oxindole alkaloids and quinovic acids in popular tradition (bark/root).",
+      "summaryEs": "*Uncaria tomentosa* — enredadera andino-amazónica; alcaloides oxindólicos y ácidos quinóvicos en tradición popular (corteza/raíz).",
+      "partsUsedEn": [
+        "Bark",
+        "Root"
+      ],
+      "partsUsedEs": [
+        "Corteza",
+        "Raíz"
+      ],
+      "traditionalUsesEn": [
+        "Traditional bark/root decoctions",
+        "Andean-Amazonian popular herbal medicine",
+        "Traditional tonic use (cultural context)"
+      ],
+      "traditionalUsesEs": [
+        "Decocciones tradicionales de corteza/raíz",
+        "Fitoterapia popular andino-amazónica",
+        "Uso tónico tradicional (contexto cultural)"
+      ],
+      "cautionsEn": "Species and extracts regulated in some contexts; may modulate immunity — caution in autoimmune disease and before surgery. Seek professional guidance. Educational content.",
+      "cautionsEs": "Especie y extractos regulados en algunos contextos; puede modular inmunidad — precaución en enfermedades autoinmunes y prequirúrgico. Buscar orientación profesional. Contenido educativo."
+    },
+    "sucupira": {
+      "nomePopularEn": "Sucupira",
+      "nomePopularEs": "Sucupira",
+      "summaryEn": "*Pterodon emarginatus* — Cerrado; seeds and oil with furan diterpenes in Central-West popular medicine.",
+      "summaryEs": "*Pterodon emarginatus* — Cerrado; semillas y aceite con diterpenos furánicos en medicina popular del Centro-Oeste.",
+      "partsUsedEn": [
+        "Seeds",
+        "Oil"
+      ],
+      "partsUsedEs": [
+        "Semillas",
+        "Aceite"
+      ],
+      "traditionalUsesEn": [
+        "Popular topical use (oil/seeds)",
+        "Regional oral tradition (with caution)",
+        "Cerrado herbal medicine"
+      ],
+      "traditionalUsesEs": [
+        "Uso popular tópico (aceite/semillas)",
+        "Tradición oral regional (con precaución)",
+        "Fitoterapia del Cerrado"
+      ],
+      "cautionsEn": "Seeds and concentrated oils may irritate; oral use only with guidance. Educational content — does not replace a consultation.",
+      "cautionsEs": "Semillas y aceites concentrados pueden irritar; uso oral solo con orientación. Contenido educativo — no sustituye una consulta."
+    },
+    "copaiba": {
+      "nomePopularEn": "Copaiba",
+      "nomePopularEs": "Copaiba",
+      "summaryEn": "*Copaifera* — Amazon/Cerrado oleoresin rich in β-caryophyllene and diterpenes; popular topical and oral tradition.",
+      "summaryEs": "*Copaifera* — oleorresina amazónica/cerrado rica en β-cariofileno y diterpenos; tradición tópica y oral popular.",
+      "partsUsedEn": [
+        "Oleoresin"
+      ],
+      "partsUsedEs": [
+        "Oleorresina"
+      ],
+      "traditionalUsesEn": [
+        "Traditional topical use (skin / folk inflammation)",
+        "Amazonian herbal medicine (drops/oil)",
+        "Artisanal cosmetics"
+      ],
+      "traditionalUsesEs": [
+        "Uso tópico tradicional (piel / inflamación popular)",
+        "Fitoterapia amazónica (gotas/aceite)",
+        "Cosmética artesanal"
+      ],
+      "cautionsEn": "Concentrated oleoresin may irritate mucosa; oral use and dose only with guidance. Product authenticity matters. Educational content — does not replace a consultation.",
+      "cautionsEs": "Oleorresina concentrada puede irritar mucosas; uso oral y dosis solo con orientación. La autenticidad del producto importa. Contenido educativo — no sustituye una consulta."
+    },
+    "andiroba": {
+      "nomePopularEn": "Andiroba",
+      "nomePopularEs": "Andiroba",
+      "summaryEn": "*Carapa guianensis* — Amazonian seed oil; limonoids and fatty acids in cosmetics and local tradition.",
+      "summaryEs": "*Carapa guianensis* — aceite de semillas amazónicas; limonoides y ácidos grasos en cosmética y tradición local.",
+      "partsUsedEn": [
+        "Seed oil"
+      ],
+      "partsUsedEs": [
+        "Aceite de las semillas"
+      ],
+      "traditionalUsesEn": [
+        "Traditional topical use (skin/insects — tradition)",
+        "Natural cosmetics and soaps",
+        "Amazon riverine tradition"
+      ],
+      "traditionalUsesEs": [
+        "Uso tópico tradicional (piel/insectos — tradición)",
+        "Cosmética natural y jabones",
+        "Tradición ribereña amazónica"
+      ],
+      "cautionsEn": "Prudent topical use; ingestion and concentrated extracts only with guidance. Educational content — does not replace a consultation.",
+      "cautionsEs": "Uso tópico prudente; ingestión y extractos concentrados solo con orientación. Contenido educativo — no sustituye una consulta."
+    },
+    "jambu": {
+      "nomePopularEn": "Jambu",
+      "nomePopularEs": "Jambu",
+      "summaryEn": "*Acmella oleracea* — Amazonian jambu; spilanthol causes tingling; Pará cuisine and oral tradition.",
+      "summaryEs": "*Acmella oleracea* — jambu amazónico; espilantol provoca hormigueo; cocina paraense y tradición oral.",
+      "partsUsedEn": [
+        "Leaves",
+        "Flowers"
+      ],
+      "partsUsedEs": [
+        "Hojas",
+        "Flores"
+      ],
+      "traditionalUsesEn": [
+        "Regional cuisine (tacacá, duck in tucupi)",
+        "Traditional anesthetic/tingling sensation",
+        "Popular oral use in small culinary amounts"
+      ],
+      "traditionalUsesEs": [
+        "Cocina regional (tacacá, pato en tucupi)",
+        "Sensación anestésica/hormigueo tradicional",
+        "Uso oral popular en pequeñas cantidades culinarias"
+      ],
+      "cautionsEn": "Spilanthol causes temporary numbness — expected in culinary doses; concentrated extracts need guidance. Educational content — does not replace a consultation.",
+      "cautionsEs": "El espilantol causa adormecimiento temporal — esperado en dosis culinarias; extractos concentrados requieren orientación. Contenido educativo — no sustituye una consulta."
+    },
+    "mulungu": {
+      "nomePopularEn": "Mulungu",
+      "nomePopularEs": "Mulungu",
+      "summaryEn": "*Erythrina mulungu* — bark with erythrina alkaloids; calming tea tradition (folk sedation).",
+      "summaryEs": "*Erythrina mulungu* — corteza con alcaloides eritrínicos; tradición de infusiones calmantes (sedación popular).",
+      "partsUsedEn": [
+        "Bark"
+      ],
+      "partsUsedEs": [
+        "Corteza"
+      ],
+      "traditionalUsesEn": [
+        "Traditional calming teas",
+        "Popular use for nervousness/sleep (cultural context)",
+        "Brazilian bark herbal medicine"
+      ],
+      "traditionalUsesEs": [
+        "Infusiones calmantes tradicionales",
+        "Uso popular para nerviosismo/sueño (contexto cultural)",
+        "Fitoterapia brasileña de corteza"
+      ],
+      "cautionsEn": "May potentiate sedatives and alcohol — do not use without guidance. Driving and machinery: caution. Educational content.",
+      "cautionsEs": "Puede potenciar sedantes y alcohol — no usar sin orientación. Conducción y maquinaria: precaución. Contenido educativo."
+    },
+    "maracuja": {
+      "nomePopularEn": "Passionflower",
+      "nomePopularEs": "Pasiflora",
+      "summaryEn": "*Passiflora* — leaves/aerial parts in teas and herbals; C-glycoside flavonoids in calming tradition.",
+      "summaryEs": "*Passiflora* — hojas/partes aéreas en infusiones y fitoterápicos; flavonoides C-glicósidos en tradición calmante.",
+      "partsUsedEn": [
+        "Leaves",
+        "Aerial parts"
+      ],
+      "partsUsedEs": [
+        "Hojas",
+        "Partes aéreas"
+      ],
+      "traditionalUsesEn": [
+        "Calming teas",
+        "Popular herbal medicine and industrial products",
+        "Mild anxious-comfort tradition (not a protocol)"
+      ],
+      "traditionalUsesEs": [
+        "Infusiones calmantes",
+        "Fitoterapia popular y productos industrializados",
+        "Tradición de conforto ansioso leve (no protocolo)"
+      ],
+      "cautionsEn": "May potentiate sedatives. Identify species (*P. incarnata* vs edulis — fruit ≠ medicinal leaf). Educational content — does not replace a consultation.",
+      "cautionsEs": "Puede potenciar sedantes. Identificar especie (*P. incarnata* vs edulis — fruto ≠ hoja medicinal). Contenido educativo — no sustituye una consulta."
+    },
+    "calendula": {
+      "nomePopularEn": "Calendula",
+      "nomePopularEs": "Caléndula",
+      "summaryEn": "*Calendula officinalis* — petals with triterpenes and carotenoids; topical skin tradition and mild infusions.",
+      "summaryEs": "*Calendula officinalis* — pétalos con triterpenos y carotenoides; tradición tópica en piel e infusiones suaves.",
+      "partsUsedEn": [
+        "Flowers"
+      ],
+      "partsUsedEs": [
+        "Flores"
+      ],
+      "traditionalUsesEn": [
+        "Ointments and topical skin use",
+        "Mild infusions",
+        "Traditional herbal cosmetics"
+      ],
+      "traditionalUsesEs": [
+        "Pomadas y uso tópico en piel",
+        "Infusiones suaves",
+        "Cosmética herbal tradicional"
+      ],
+      "cautionsEn": "Asteraceae allergy possible. Prolonged internal use: guidance. Educational content — does not replace a consultation.",
+      "cautionsEs": "Posible alergia a Asteraceae. Uso interno prolongado: orientación. Contenido educativo — no sustituye una consulta."
+    },
+    "barbatimao": {
+      "nomePopularEn": "Barbatimão",
+      "nomePopularEs": "Barbatimão",
+      "summaryEn": "*Stryphnodendron adstringens* — Cerrado bark rich in tannins; popular astringent topical and oral tradition.",
+      "summaryEs": "*Stryphnodendron adstringens* — corteza del Cerrado rica en taninos; tradición astringente tópica y oral popular.",
+      "partsUsedEn": [
+        "Bark"
+      ],
+      "partsUsedEs": [
+        "Corteza"
+      ],
+      "traditionalUsesEn": [
+        "Decoctions and traditional topical use",
+        "Popular astringent / healing tradition",
+        "Cerrado herbal medicine"
+      ],
+      "traditionalUsesEs": [
+        "Decocciones y uso tópico tradicional",
+        "Tradición astringente / cicatrizante popular",
+        "Fitoterapia del Cerrado"
+      ],
+      "cautionsEn": "Concentrated tannins irritate mucosa; oral use only with guidance. Educational content — does not replace a consultation.",
+      "cautionsEs": "Taninos concentrados irritan mucosas; uso oral solo con orientación. Contenido educativo — no sustituye una consulta."
+    },
+    "jaborandi": {
+      "nomePopularEn": "Jaborandi",
+      "nomePopularEs": "Jaborandi",
+      "summaryEn": "*Pilocarpus microphyllus* — historic source of pilocarpine (muscarinic agonist); Amazonian pharmacological reference.",
+      "summaryEs": "*Pilocarpus microphyllus* — fuente histórica de pilocarpina (agonista muscarínico); referencia farmacológica amazónica.",
+      "partsUsedEn": [
+        "Leaves"
+      ],
+      "partsUsedEs": [
+        "Hojas"
+      ],
+      "traditionalUsesEn": [
+        "Historic pharmacological reference (pilocarpine)",
+        "Regional herbal use under supervision",
+        "Education on potent alkaloids"
+      ],
+      "traditionalUsesEs": [
+        "Referencia histórica farmacológica (pilocarpina)",
+        "Fitoterapia regional con supervisión",
+        "Educación sobre alcaloides potentes"
+      ],
+      "cautionsEn": "Pilocarpine and related alkaloids are potent — use only under professional supervision. Do not self-medicate. Educational content.",
+      "cautionsEs": "Pilocarpina y alcaloides relacionados son potentes — uso solo con supervisión profesional. No automedicar. Contenido educativo."
+    },
+    "ipecacuanha": {
+      "nomePopularEn": "Ipecac",
+      "nomePopularEs": "Ipecacuana",
+      "summaryEn": "*Carapichea ipecacuanha* — historic root with emetine/cephaeline; pharmacopeia and restricted use (not a home remedy).",
+      "summaryEs": "*Carapichea ipecacuanha* — raíz histórica con emetina/cefaelina; farmacopea y uso restringido (no remedio casero).",
+      "partsUsedEn": [
+        "Root"
+      ],
+      "partsUsedEs": [
+        "Raíz"
+      ],
+      "traditionalUsesEn": [
+        "Historic pharmaceutical reference (emetic)",
+        "Education on isoquinoline alkaloids",
+        "Pharmacopeia context — not home use"
+      ],
+      "traditionalUsesEs": [
+        "Referencia histórica farmacéutica (emético)",
+        "Educación sobre alcaloides isoquinolínicos",
+        "Contexto de farmacopea — no uso doméstico"
+      ],
+      "cautionsEn": "Emetine is toxic in abuse — do not self-medicate or use as a «homemade syrup». Educational content only.",
+      "cautionsEs": "La emetina es tóxica en abuso — no automedicar ni usar como «jarabe casero». Solo contenido educativo."
+    },
+    "pfaffia": {
+      "nomePopularEn": "Brazilian ginseng",
+      "nomePopularEs": "Ginseng brasileño",
+      "summaryEn": "*Pfaffia glomerata* — «Brazilian ginseng»; root with ecdysteroids and saponins in popular tonic tradition.",
+      "summaryEs": "*Pfaffia glomerata* — «ginseng brasileño»; raíz con ecdisteroides y saponinas en tradición tonificante popular.",
+      "partsUsedEn": [
+        "Root"
+      ],
+      "partsUsedEs": [
+        "Raíz"
+      ],
+      "traditionalUsesEn": [
+        "Traditional tonic preparations",
+        "Popular root use (capsules/powder — market)",
+        "Popular adaptogenic tradition (cultural context)"
+      ],
+      "traditionalUsesEs": [
+        "Preparaciones tradicionales tonificantes",
+        "Uso popular de raíz (cápsulas/polvo — mercado)",
+        "Tradición adaptógena popular (contexto cultural)"
+      ],
+      "cautionsEn": "Concentrated supplements ≠ culinary root. Pregnancy, hypertension and medicines: professional guidance. Educational content — does not replace a consultation.",
+      "cautionsEs": "Suplementos concentrados ≠ raíz culinaria. Embarazo, hipertensión y medicamentos: orientación profesional. Contenido educativo — no sustituye una consulta."
+    },
+    "aroeira": {
+      "nomePopularEn": "Brazilian pepper tree",
+      "nomePopularEs": "Pimentero brasileño",
+      "summaryEn": "*Schinus terebinthifolia* — Brazilian pepper / pink peppercorn; tannins and essential oil; bark/leaves in tradition and fruits in cooking.",
+      "summaryEs": "*Schinus terebinthifolia* — aroeira / pimienta rosa; taninos y aceite esencial; corteza/hojas en tradición y frutos en cocina.",
+      "partsUsedEn": [
+        "Bark",
+        "Leaves",
+        "Fruits"
+      ],
+      "partsUsedEs": [
+        "Corteza",
+        "Hojas",
+        "Frutos"
+      ],
+      "traditionalUsesEn": [
+        "Traditional topical use (bark/leaves)",
+        "Cooking (fruits — pink peppercorn)",
+        "Popular astringent tradition"
+      ],
+      "traditionalUsesEs": [
+        "Uso tópico tradicional (corteza/hojas)",
+        "Cocina (frutos — pimienta rosa)",
+        "Tradición astringente popular"
+      ],
+      "cautionsEn": "Anacardiaceae: cross-allergy possible (urushiol-like). Culinary fruits ≠ bark decoction. Educational content — does not replace a consultation.",
+      "cautionsEs": "Anacardiaceae: posible alergia cruzada (tipo urushiol). Frutos culinarios ≠ decocción de corteza. Contenido educativo — no sustituye una consulta."
+    },
+    "quina": {
+      "nomePopularEn": "Cinchona",
+      "nomePopularEs": "Quina",
+      "summaryEn": "*Cinchona* — historic quinine bark; classic antimalarial — pharmacopeia reference, not a home tea.",
+      "summaryEs": "*Cinchona* — corteza histórica de la quinina; antimalárico clásico — referencia de farmacopea, no infusión doméstica.",
+      "partsUsedEn": [
+        "Bark"
+      ],
+      "partsUsedEs": [
+        "Corteza"
+      ],
+      "traditionalUsesEn": [
+        "Historic antimalarial reference (quinine)",
+        "Education on bark alkaloids",
+        "Pharmacopeia and history-of-medicine context"
+      ],
+      "traditionalUsesEs": [
+        "Referencia histórica antimalárica (quinina)",
+        "Educación sobre alcaloides de la corteza",
+        "Contexto de farmacopea e historia de la medicina"
+      ],
+      "cautionsEn": "Quinine and derivatives are potent drugs — species and uses regulated; do not self-medicate with «quina tea». Educational content.",
+      "cautionsEs": "Quinina y derivados son fármacos potentes — especies y usos regulados; no automedicar con «té de quina». Contenido educativo."
+    },
+    "cannabis-sativa": {
+      "nomePopularEn": "Medical cannabis",
+      "nomePopularEs": "Cannabis medicinal",
+      "summaryEn": "*Cannabis sativa* — cannabinoids (THC, CBD and others) in clinical and training context; UNIFESP focus and law — does not encourage illicit cultivation.",
+      "summaryEs": "*Cannabis sativa* — cannabinoides (THC, CBD y otros) en contexto clínico y formativo; foco UNIFESP y legislación — no incentiva cultivo ilícito.",
+      "partsUsedEn": [
+        "Flowers",
+        "Extracts (clinical context)"
+      ],
+      "partsUsedEs": [
+        "Flores",
+        "Extractos (contexto clínico)"
+      ],
+      "traditionalUsesEn": [
+        "Education on therapeutic use (UNIFESP course)",
+        "Reference in herbal medicine and Brazilian legislation"
+      ],
+      "traditionalUsesEs": [
+        "Educación sobre uso terapéutico (curso de UNIFESP)",
+        "Referencia en fitoterapia y legislación brasileña"
+      ],
+      "cautionsEn": "Medicinal use is subject to legislation and prescription. In adolescents, longitudinal neuroimaging studies (e.g. IMAGEN / Albaugh et al., JAMA Psychiatry 2021) associate cannabis use with changes in cortical neurodevelopment — see the BudGanja inspection of that article. Educational content — it does not encourage illegal cultivation or self-medication.",
+      "cautionsEs": "El uso medicinal está sujeto a legislación y prescripción. En adolescentes, estudios longitudinales de neuroimagen (p. ej. IMAGEN / Albaugh et al., JAMA Psychiatry 2021) asocian el uso de cannabis con cambios en el neurodesarrollo cortical — ver la inspección BudGanja del artículo. Contenido educativo: no fomenta el cultivo ilegal ni la automedicación."
+    },
+    "abacate": {
+      "nomePopularEn": "Avocado",
+      "nomePopularEs": "Aguacate",
+      "summaryEn": "Mesoamerican fruit (*āhuacatl* in Nahuatl): pulp rich in monounsaturated fats; everyday food in Brazil — this sheet separates the whole plant from sugary, additive-laden industrial derivatives.",
+      "summaryEs": "Fruto mesoamericano (*āhuacatl* en náhuatl): pulpa rica en grasas monoinsaturadas; alimento corriente en Brasil — la ficha separa la planta entera de los derivados industriales azucarados y aditivados.",
+      "partsUsedEn": [
+        "Fruit (pulp)",
+        "Pulp oil (culinary / traditional cosmetic)",
+        "Leaves (traditional use, with caution — not for pets)"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa)",
+        "Aceite de la pulpa (culinario / cosmético tradicional)",
+        "Hojas (uso tradicional, con cautela — no alimentar animales)"
+      ],
+      "traditionalUsesEn": [
+        "Food and cooking (salads, fresh guacamole, toast)",
+        "Mesoamerican and Andean food ethnobotany (aguacate / palta)",
+        "Home pulp preparations (skin/hair — popular tradition)",
+        "Pressed oil in artisanal contexts"
+      ],
+      "traditionalUsesEs": [
+        "Alimento y cocina (ensaladas, guacamole fresco, tostadas)",
+        "Etnobotánica alimentaria mesoamericana y andina (aguacate / palta)",
+        "Preparaciones caseras con la pulpa (piel/cabello — tradición popular)",
+        "Aceite prensado en contextos artesanales"
+      ],
+      "cautionsEn": "Ripe pulp is common food. Leaves, peel and seed contain persin and may be toxic to animals (dogs, birds, etc.). Leaf extracts/teas: avoid self-medication. Industrial derivatives with sugar and additives have their own Risk derivatives sheet. Educational content — does not replace professional advice.",
+      "cautionsEs": "La pulpa madura es alimento común. Hojas, cáscara y hueso contienen persina y pueden ser tóxicos para animales (perros, aves, etc.). Extractos y té de hoja: evitar automedicación. Los derivados industriales con azúcar y aditivos tienen ficha propia en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "coco": {
+      "nomePopularEn": "Coconut",
+      "nomePopularEs": "Coco",
+      "summaryEn": "Tropical palm (*Cocos nucifera*): the fruit (drupe) yields water, pulp and oil — this sheet separates whole coconut and fresh water from sweetened, refined and ultra-processed industrial derivatives.",
+      "summaryEs": "Palmera tropical (*Cocos nucifera*): el fruto (drupa) ofrece agua, pulpa y aceite — la ficha separa el coco entero y el agua fresca de los derivados industriales endulzados, refinados y ultraprocesados.",
+      "partsUsedEn": [
+        "Fruit (endosperm water)",
+        "Pulp / kernel (fresh or dried)",
+        "Pulp oil (culinary / traditional cosmetic)",
+        "Husk fiber (coir — material use, not food)"
+      ],
+      "partsUsedEs": [
+        "Fruto (agua endospérmica)",
+        "Pulpa / almendra (fresca o deshidratada)",
+        "Aceite de la pulpa (culinario / cosmético tradicional)",
+        "Fibra de la cáscara (coir — uso material, no alimentario)"
+      ],
+      "traditionalUsesEn": [
+        "Fresh coconut water (hydration and tropical drink)",
+        "Pulp in coastal and Afro-Brazilian cooking",
+        "Coconut oil and milk in traditional cuisine",
+        "Material use of husk and palm wood"
+      ],
+      "traditionalUsesEs": [
+        "Agua de coco fresca (hidratación y bebida tropical)",
+        "Pulpa en cocina costera y afrobrasileña",
+        "Aceite y leche de coco en cocina tradicional",
+        "Uso material de la cáscara y la madera de la palmera"
+      ],
+      "cautionsEn": "Fresh water and pulp are common foods. Industrial derivatives with sugar, syrups and additives (sweetened coconut water, desserts, snacks) have their own Risk derivatives sheet. Coconut oil is high in saturated fat — dose and dietary context matter. Educational content — does not replace professional advice.",
+      "cautionsEs": "El agua y la pulpa frescas son alimentos comunes. Los derivados industriales con azúcar, jarabes y aditivos (agua de coco endulzada, postres, snacks) tienen ficha propia en Derivados de riesgo. El aceite de coco es rico en grasa saturada — importan dosis y contexto. Contenido educativo — no sustituye orientación profesional."
+    },
+    "laranja": {
+      "nomePopularEn": "Orange",
+      "nomePopularEs": "Naranja",
+      "summaryEn": "Hybrid citrus (*Citrus × sinensis*): credit whole fruit and fresh juice; this sheet separates concentrates, nectars and “orange” soft drinks with sugar and additives.",
+      "summaryEs": "Cítrico híbrido (*Citrus × sinensis*): crédito al fruto entero y jugo fresco; la ficha separa concentrados, néctares y refrescos «de naranja» con azúcar y aditivos.",
+      "partsUsedEn": [
+        "Fruit (pulp / segments)",
+        "Freshly squeezed natural juice (low process)",
+        "Peel / zest in cooking (essential oil — dose)",
+        "Home culinary uses without ultra-processing"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / gajos)",
+        "Jugo natural exprimido (bajo procesamiento)",
+        "Cáscara / zest en cocina (aceite esencial — dosis)",
+        "Uso culinario doméstico sin ultraprocesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Fresh home-squeezed juice (no concentrate or syrup)",
+        "Home cooking (zest, artisanal preserves without industrial additives)",
+        "Mediterranean and tropical food ethnobotany (Rutaceae / *Citrus*)"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Jugo fresco casero (sin concentrado ni jarabe)",
+        "Cocina casera (zest, confituras artesanales sin aditivos industriales)",
+        "Etnobotánica alimentaria mediterránea y tropical (Rutaceae / *Citrus*)"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Even “natural” juice concentrates sugar without pulp fiber — dose matters. Industrial derivatives belong in Risk derivatives. Educational — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. El jugo, aunque «natural», concentra azúcar sin fibra — importa la dosis. Los derivados industriales entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "acai": {
+      "nomePopularEn": "Açaí",
+      "nomePopularEs": "Açaí",
+      "summaryEn": "Amazon palm: fresh pulp vs industrial bowls, syrups and sugary ultra-processed mixes.",
+      "summaryEs": "Palmera amazónica: pulpa fresca vs bowls industriales, jarabes y mixes ultraprocesados azucarados.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "manga": {
+      "nomePopularEn": "Mango",
+      "nomePopularEs": "Mango",
+      "summaryEn": "Tropical fruit: whole mango vs nectars, sweetened pulps and industrial dried snacks.",
+      "summaryEs": "Fruto tropical: mango entero vs néctares, pulpas endulzadas y snacks deshidratados industriales.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "banana": {
+      "nomePopularEn": "Banana",
+      "nomePopularEs": "Plátano / banana",
+      "summaryEn": "Everyday fruit: whole banana vs fried chips, flours, snacks and industrial desserts.",
+      "summaryEs": "Fruto cotidiano: banana entera vs chips fritos, harinas, snacks y postres industriales.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "maca": {
+      "nomePopularEn": "Apple",
+      "nomePopularEs": "Manzana",
+      "summaryEn": "Temperate fruit: whole apple vs concentrate juices, baby purées and industrial “apple” snacks.",
+      "summaryEs": "Fruto templado: manzana entera vs jugos concentrados, purés infantiles y snacks «apple» industriales.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "abacaxi": {
+      "nomePopularEn": "Pineapple",
+      "nomePopularEs": "Piña",
+      "summaryEn": "Tropical bromeliad: fresh fruit vs canned in syrup, juices and sugary nectars.",
+      "summaryEs": "Bromelia tropical: fruto fresco vs lata en almíbar, jugos y néctares azucarados.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "goiaba": {
+      "nomePopularEn": "Guava",
+      "nomePopularEs": "Guayaba",
+      "summaryEn": "Common Brazilian fruit: whole guava vs guava paste, pulps and sugar-rich nectars.",
+      "summaryEs": "Fruto brasileño común: guayaba entera vs pasta de guayaba, pulpas y néctares ricos en azúcar.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "cacau": {
+      "nomePopularEn": "Cacao",
+      "nomePopularEs": "Cacao",
+      "summaryEn": "Amazonian–Mesoamerican seed/fruit: bean vs industrial chocolate, sugar and ultra-processing.",
+      "summaryEs": "Semilla/fruto amazónico-mesoamericano: almendra vs chocolate industrial, azúcar y ultraprocesamiento.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "uva": {
+      "nomePopularEn": "Grape",
+      "nomePopularEs": "Uva",
+      "summaryEn": "Grape: whole fruit vs concentrate juices, nectars and sugary “grape” soft drinks.",
+      "summaryEs": "Uva: fruto entero vs jugos concentrados, néctares y refrescos «de uva» azucarados.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "morango": {
+      "nomePopularEn": "Strawberry",
+      "nomePopularEs": "Fresa",
+      "summaryEn": "Red fruit: fresh strawberry vs yogurts, syrups, flavours and “strawberry” ultra-processed products.",
+      "summaryEs": "Fruto rojo: fresa fresca vs yogures, jarabes, aromas y ultraprocesados «strawberry».",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "maracuja-fruta": {
+      "nomePopularEn": "Passion fruit",
+      "nomePopularEs": "Maracuyá (fruta)",
+      "summaryEn": "*P. edulis* fruit: fresh pulp vs industrial sweetened nectars/pulps — distinct from the medicinal leaf sheet (*P. incarnata*).",
+      "summaryEs": "Fruto de *P. edulis*: pulpa fresca vs néctares y pulpas industriales endulzadas — distinto de la ficha medicinal de hojas.",
+      "partsUsedEn": [
+        "Fruit (pulp / natural juice)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa / jugo natural)",
+        "Usso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Whole / fresh fruit",
+        "Home cooking without ultra-processing"
+      ],
+      "traditionalUsesEs": [
+        "Fruto entero / fresco",
+        "Cocina casera sin ultraprocesamiento"
+      ],
+      "cautionsEn": "Fresh fruit is common food. Industrial derivatives with sugar, syrups and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "El fruto fresco es alimento común. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "mamao": {
+      "nomePopularEn": "Papaya",
+      "nomePopularEs": "Papaya / mamón",
+      "summaryEn": "Everyday tropical fruit (*Carica papaya*): sweet pulp, seeds and latex with papain — whole fruit vs sugary nectars and industrial snacks; UNIFESP link (papain in wound care).",
+      "summaryEs": "Fruto tropical cotidiano (*Carica papaya*): pulpa dulce, semillas y látex con papaína — fruto entero vs néctares azucarados y snacks industriales; vínculo UNIFESP (papaína en heridas).",
+      "partsUsedEn": [
+        "Fruit (ripe pulp)",
+        "Seeds (culinary / folk use, with caution)",
+        "Latex / papain (clinical and industrial context — not self-medication)",
+        "Low-process culinary uses"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa madura)",
+        "Semillas (culinaria / tradición popular, con cautela)",
+        "Látex / papaína (contexto clínico e industrial — no automedicación)",
+        "Uso culinario de bajo procesamiento"
+      ],
+      "traditionalUsesEn": [
+        "Fresh fruit (breakfast, dessert, home juice)",
+        "Tropical and Brazilian cooking",
+        "Latex papain cited in SUS wound protocols (UNIFESP training context)",
+        "Family growing in warm climates — fast-growing plant"
+      ],
+      "traditionalUsesEs": [
+        "Consumo del fruto fresco (desayuno, postre, jugo casero)",
+        "Cocina tropical y brasileña",
+        "Papaína del látex citada en protocolos de heridas del SUS (contexto formativo UNIFESP)",
+        "Cultivo familiar en clima cálido — planta de crecimiento rápido"
+      ],
+      "cautionsEn": "Ripe pulp is common food. Raw latex can irritate skin and mucosa. Excess seeds and extracts: avoid self-medication. Industrial derivatives with sugar and additives belong in Risk derivatives. Educational content — not professional advice.",
+      "cautionsEs": "La pulpa madura es alimento común. El látex crudo puede irritar piel y mucosa. Semillas en exceso y extractos: evitar automedicación. Los derivados industriales con azúcar y aditivos entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "melancia": {
+      "nomePopularEn": "Watermelon",
+      "nomePopularEs": "Sandía",
+      "summaryEn": "Summer cucurbit (*Citrullus lanatus*): refreshing watery pulp — this sheet separates whole watermelon from juices, nectars and ultra-processed «watermelon»; market, beach and light home-grow culture.",
+      "summaryEs": "Cucurbitácea de verano (*Citrullus lanatus*): pulpa acuosa refrescante — la ficha separa la sandía entera de jugos, néctares y ultraprocesados «watermelon»; cultura de feria, playa y cultivo familiar ligero.",
+      "partsUsedEn": [
+        "Fruit (fresh pulp)",
+        "Seeds (toasted / traditional cooking, in moderation)",
+        "Low-process culinary uses (homemade juice, salad)"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa fresca)",
+        "Semillas (tostadas / cocina tradicional, con moderación)",
+        "Usos culinarios de bajo procesamiento (jugo casero, ensalada)"
+      ],
+      "traditionalUsesEn": [
+        "Fresh fruit (summer, market, beach)",
+        "Homemade juice and salad without ultra-processing",
+        "Food culture of watermelon",
+        "Family growing in warm climates — vine with space and pollination"
+      ],
+      "traditionalUsesEs": [
+        "Fruto fresco (verano, feria, playa)",
+        "Jugo y ensalada caseros sin ultraprocesamiento",
+        "Cultura alimentaria de la sandía",
+        "Cultivo familiar en clima cálido — enredadera con espacio y polinización"
+      ],
+      "cautionsEn": "Ripe pulp is common food — natural fruit sugar counts in daily dose. Excess seeds and extracts: no self-medication. Green plant parts are not the food focus of this sheet. Industrial derivatives with sugar/syrups/additives belong in Risk derivatives. Educational — not professional advice.",
+      "cautionsEs": "La pulpa madura es alimento común — el azúcar natural cuenta en la dosis diaria. Semillas en exceso y extractos: sin automedicación. Partes verdes no son el foco alimentario. Derivados industriales entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    },
+    "alecrim-do-campo": {
+      "nomePopularEn": "Field rosemary (alecrim-do-campo)",
+      "nomePopularEs": "Alecrim-do-campo (romero de campo)",
+      "summaryEn": "Cerrado native shrub (*Baccharis dracunculifolia*) — golden rosemary / vassourinha; botanical source of Brazilian green propolis (artepillin C). Do not confuse with kitchen rosemary (*Salvia rosmarinus*).",
+      "summaryEs": "Arbusto nativo del Cerrado (*Baccharis dracunculifolia*) — romero dorado / vassourinha; fuente botánica del propóleo verde brasileño (artepilina C). No confundir con el romero de cocina (*Salvia rosmarinus*).",
+      "partsUsedEn": [
+        "Leaves and vegetative apices (traditional infusion)",
+        "Flowers / golden inflorescences",
+        "Bud resin (collected by bees → green propolis)"
+      ],
+      "partsUsedEs": [
+        "Hojas y ápices vegetativos (infusión tradicional)",
+        "Flores / inflorescencias amarillo-oro",
+        "Resina de brotes (cosecha por abejas → propóleo verde)"
+      ],
+      "traditionalUsesEn": [
+        "Folk infusion of leaves and flowers (cultural craft, not clinical posology)",
+        "Digestive, respiratory and antiseptic-rinse tradition",
+        "Botanical source of Brazilian green propolis (*Apis mellifera*)",
+        "Pioneer species in restoring degraded land (ecological context)"
+      ],
+      "traditionalUsesEs": [
+        "Infusión popular de hojas y flores (oficio cultural, no posología clínica)",
+        "Tradición digestiva, respiratoria y de enjuagues antisépticos",
+        "Fuente botánica del propóleo verde brasileño (*Apis mellifera*)",
+        "Especie pionera en recuperación de áreas degradadas (contexto ecológico)"
+      ],
+      "cautionsEn": "Contraindicated in pregnancy and nursing. Not recommended under age 12. People on hypoglycemics: monitor glucose — tea does not replace medicine. Avoid excessive or prolonged use without guidance. Do not confuse with kitchen rosemary (*Salvia rosmarinus*) or carqueja (*Baccharis trimera*). Educational — avoid self-medication.",
+      "cautionsEs": "Contraindicado en embarazo y lactancia. No recomendado menores de 12 años. Diabéticos con hipoglucemiantes: monitorizar glucosa — el té no sustituye fármaco. Evitar uso excesivo o prolongado sin orientación. No confundir con romero de cocina (*Salvia rosmarinus*) ni carqueja (*Baccharis trimera*). Contenido educativo — evite automedicación."
+    },
+    "marolo": {
+      "nomePopularEn": "Marolo (Cerrado araticum)",
+      "nomePopularEs": "Marolo (araticum del Cerrado)",
+      "summaryEn": "Native Cerrado Annonaceae (*Annona crassiflora*): marolo / araticum — creamy pulp, many seeds; this sheet separates the whole fruit from passion fruit, papaya, sugar-apple and soursop, and from industrial nectars and sweets.",
+      "summaryEs": "Anonácea nativa del Cerrado (*Annona crassiflora*): marolo / araticum — pulpa cremosa, muchas semillas; la ficha separa el fruto entero de maracuyá, papaya, anón y guanábana, y de néctares y dulces industriales.",
+      "partsUsedEn": [
+        "Fruit (ripe fresh pulp)",
+        "Low-process culinary uses (home sweet, juice, ice cream)"
+      ],
+      "partsUsedEs": [
+        "Fruto (pulpa fresca madura)",
+        "Usos culinarios de bajo procesamiento (dulce, jugo, helado caseros)"
+      ],
+      "traditionalUsesEn": [
+        "Ripe pulp (market, yard, Cerrado / Minas Gerais)",
+        "Home sweets and juices without ultra-processing",
+        "Food culture of araticum / marolo in the Cerrado"
+      ],
+      "traditionalUsesEs": [
+        "Pulpa madura (feria, patio, Cerrado / Minas Gerais)",
+        "Dulces y jugos caseros sin ultraprocesamiento",
+        "Cultura alimentaria del araticum / marolo en el Cerrado"
+      ],
+      "cautionsEn": "Ripe pulp is traditional food. Annonaceae seeds and leaves are not a generic tea or home extract. Do not confuse with passion fruit, papaya, sugar-apple or soursop. Industrial sugary derivatives belong in Risk derivatives. Educational — not professional advice or biome management.",
+      "cautionsEs": "La pulpa madura es alimento tradicional. Semillas y hojas de Annonaceae no son té genérico ni extracto casero. No confundir con maracuyá, papaya, anón o guanábana. Derivados industriales azucarados entran en Derivados de riesgo. Contenido educativo — no sustituye orientación profesional."
+    }
+  }
+}

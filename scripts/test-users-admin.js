@@ -8,6 +8,7 @@ const {
   listUsersForAdmin,
   getUserDetailForAdmin,
   setUserAdmin,
+  deleteUserForAdmin,
   resolveAdminAccess
 } = require('../lib/users-admin-service.js');
 
@@ -74,6 +75,14 @@ async function run() {
     assert('conceder admin a segundo utilizador', grant2.ok && grant2.user.adminGranted);
     const revoke2 = await setUserAdmin(store, TEST_USER_ID_2, false, { userId: TEST_USER_ID });
     assert('revogar segundo admin', revoke2.ok);
+
+    const selfDelete = await deleteUserForAdmin(store, TEST_USER_ID, { userId: TEST_USER_ID });
+    assert('bloquear auto-remoção', !selfDelete.ok && selfDelete.status === 409);
+
+    const removed = await deleteUserForAdmin(store, TEST_USER_ID, { userId: TEST_USER_ID_2 });
+    assert('remover utilizador', removed.ok && removed.deleted && removed.deleted.id === TEST_USER_ID);
+    const gone = await getUserDetailForAdmin(store, TEST_USER_ID);
+    assert('utilizador apagado', !gone.ok && gone.status === 404);
   } finally {
     await db.execute({ sql: 'DELETE FROM users WHERE id IN (?, ?)', args: [TEST_USER_ID, TEST_USER_ID_2] });
   }

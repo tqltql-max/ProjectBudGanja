@@ -6,7 +6,9 @@
     "target": {
       "namespace": "android_app",
       "package_name": "com.inspetorbudganja.app",
-      "sha256_cert_fingerprints": []
+      "sha256_cert_fingerprints": [
+        "F5:C6:26:B4:45:C5:D8:35:DA:5B:68:5D:91:A1:6A:45:57:3E:28:6F:6A:86:54:0E:7E:E0:1E:70:12:BE:5C:D2"
+      ]
     }
   }
 ]

@@ -140,21 +140,21 @@
     color: var(--color-accent-light, #9fd89f);
 }
 
-html[data-theme="light"] .cultivo-lab-screen {
+html:not([data-theme="dark"]) .cultivo-lab-screen {
     background: #f0f4ee;
     border-color: rgba(61, 92, 40, 0.2);
 }
 
-html[data-theme="light"] .cultivo-lab-display {
+html:not([data-theme="dark"]) .cultivo-lab-display {
     color: #2d5a28;
 }
 
-html[data-theme="light"] .cultivo-lab-mode-btn {
+html:not([data-theme="dark"]) .cultivo-lab-mode-btn {
     background: rgba(0, 0, 0, 0.04);
     border-color: rgba(0, 0, 0, 0.12);
 }
 
-html[data-theme="light"] .cultivo-lab-input {
+html:not([data-theme="dark"]) .cultivo-lab-input {
     background: #fff;
     border-color: rgba(0, 0, 0, 0.12);
 }

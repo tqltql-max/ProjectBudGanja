@@ -1,0 +1,850 @@
+/* Vida — conto familiar sobre cuidar de plantas */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito:wght@400;600;700;800&display=swap");
+
+body[data-page="vida"],
+body[data-page="apresentacao-unifesp"],
+.vida-page {
+    --vida-gold: #dfc262;
+    --vida-ice: #c8f4ff;
+    --vida-leaf: #6ee7c5;
+    --vida-leaf-deep: #3db8c8;
+    --vida-soil: #0a2230;
+    --vida-cream: #f4f8fc;
+    --vida-ink: #071018;
+    --vida-panel: rgba(8, 22, 32, 0.72);
+}
+
+body[data-page="vida"],
+body[data-page="apresentacao-unifesp"] {
+    background: var(--color-bg, #071018);
+}
+
+.vida-page {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0 0 clamp(2.5rem, 6vw, 4rem);
+    font-family: "Nunito", system-ui, sans-serif;
+    overflow-x: clip;
+}
+
+.vida-flow {
+    position: relative;
+    z-index: 1;
+    width: min(1080px, calc(100% - 2 * var(--space-page-x, 1.25rem)));
+    margin: 0 auto;
+}
+
+.vida-atmosphere {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: min(42vh, 360px);
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse 70% 50% at 18% 12%, rgba(110, 231, 197, 0.12), transparent 58%),
+        radial-gradient(ellipse 50% 40% at 88% 8%, rgba(94, 200, 255, 0.1), transparent 52%);
+}
+
+.vida-hero {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0.35rem;
+    overflow: hidden;
+}
+
+.vida-hero-art {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    max-height: none;
+    overflow: hidden;
+    background: #071018;
+    line-height: 0;
+    text-align: center;
+}
+
+.vida-hero-art::after {
+    content: none;
+}
+
+.vida-hero-art img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: min(46vh, 480px);
+    margin-inline: auto;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.vida-hero .article-share {
+    display: none;
+}
+
+.vida-hero-copy {
+    position: relative;
+    z-index: 1;
+    width: min(1080px, calc(100% - 2 * var(--space-page-x, 1.25rem)));
+    margin: 0 auto;
+    padding: 1.15rem 0 0.35rem;
+    text-align: left;
+}
+
+.vida-hero-brand {
+    margin: 0 0 0.35rem;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--vida-ice);
+}
+
+.vida-hero h1 {
+    margin: 0;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(1.85rem, 6vw, 3.1rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+    background: linear-gradient(180deg, #f7fbff 0%, #7dffd0 52%, #7eb8ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.vida-hero h1 .is-drone-over {
+    background: linear-gradient(180deg, #f4f8fc 0%, #c8f4ff 42%, #7dffd0 100%);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    color: #071018;
+    -webkit-text-fill-color: #071018;
+    text-shadow: none;
+    box-shadow:
+        0 0 0 2px rgba(94, 200, 255, 0.55),
+        0 0 16px rgba(126, 232, 210, 0.55);
+}
+
+.vida-hero-sub {
+    margin: 0.5rem 0 0;
+    max-width: 46ch;
+    font-size: clamp(0.92rem, 2vw, 1.05rem);
+    line-height: 1.45;
+    color: rgba(244, 248, 252, 0.82);
+}
+
+.vida-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    justify-content: flex-start;
+    margin-top: 0.9rem;
+}
+
+.vida-hero-actions .botao {
+    min-width: 8.5rem;
+}
+
+.vida-hero-actions .botao-home--secondary {
+    background: rgba(7, 16, 24, 0.45);
+    border: 1px solid rgba(200, 244, 255, 0.35);
+    color: #f4f8fc;
+    box-shadow: none;
+}
+
+.vida-hero-actions .botao-home--secondary:hover,
+.vida-hero-actions .botao-home--secondary:focus-visible {
+    background: var(--gradient-accent);
+    border-color: rgba(126, 232, 210, 0.55);
+    color: #071018;
+    box-shadow:
+        0 0 0 1px rgba(126, 232, 210, 0.22),
+        0 8px 22px rgba(94, 200, 255, 0.32);
+}
+
+body.site-drone-on .vida-hero-actions .botao-home--secondary.is-drone-over {
+    background: var(--gradient-accent);
+    border-color: #c8f4ff;
+    color: #071018;
+    outline: 2px solid rgba(200, 244, 255, 0.85);
+    outline-offset: 3px;
+    box-shadow:
+        0 0 0 1px rgba(126, 232, 210, 0.4),
+        0 0 20px rgba(94, 200, 255, 0.5),
+        0 10px 26px rgba(62, 224, 192, 0.36);
+}
+
+@keyframes vida-fade-up {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.vida-section {
+    position: relative;
+    z-index: 1;
+    padding: clamp(1.2rem, 3vw, 1.85rem) 0;
+    animation: vida-fade-up 0.8s 0.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.vida-section + .vida-section {
+    animation-delay: 0.18s;
+}
+
+.vida-section h2 {
+    margin: 0 0 0.5rem;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(1.55rem, 4vw, 2rem);
+    font-weight: 700;
+    color: var(--vida-cream);
+    letter-spacing: -0.02em;
+}
+
+.vida-section-lead {
+    margin: 0 0 1.5rem;
+    max-width: 48ch;
+    color: rgba(244, 248, 252, 0.68);
+    line-height: 1.5;
+}
+
+.vida-note {
+    margin: 0 0 0.85rem;
+    padding: 0.7rem 1rem;
+    border-left: 3px solid var(--vida-leaf);
+    background: rgba(110, 231, 197, 0.08);
+    border-radius: 0 16px 16px 0;
+    color: rgba(244, 248, 252, 0.85);
+    font-size: 0.92rem;
+    line-height: 1.45;
+}
+
+.vida-connect {
+    margin: 0 0 1.1rem;
+    padding: 1.15rem 1.25rem 1.25rem;
+    border-radius: 22px;
+    border: 1px solid rgba(126, 232, 210, 0.22);
+    background:
+        linear-gradient(165deg, rgba(12, 32, 44, 0.88), rgba(7, 16, 24, 0.94));
+    box-shadow:
+        0 1px 0 rgba(244, 248, 252, 0.06) inset,
+        0 18px 44px rgba(0, 16, 28, 0.28);
+}
+
+.vida-connect-eyebrow {
+    margin: 0 0 0.4rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--vida-leaf);
+}
+
+.vida-mantra-banner {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 1.1rem;
+    padding: clamp(1.15rem, 3vw, 1.7rem) 1.2rem;
+    text-align: center;
+    border-radius: 24px;
+    border: 1px solid rgba(126, 232, 210, 0.28);
+    background:
+        radial-gradient(ellipse 80% 90% at 50% 0%, rgba(110, 231, 197, 0.16), transparent 55%),
+        radial-gradient(ellipse 70% 80% at 50% 100%, rgba(94, 200, 255, 0.1), transparent 50%),
+        linear-gradient(160deg, rgba(12, 32, 44, 0.94), rgba(7, 16, 24, 0.96));
+    box-shadow:
+        0 1px 0 rgba(244, 248, 252, 0.08) inset,
+        0 18px 48px rgba(0, 16, 28, 0.32);
+    overflow: hidden;
+}
+
+.vida-mantra-banner::before,
+.vida-mantra-banner::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: min(12rem, 48%);
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--vida-leaf), transparent);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.vida-mantra-banner::before {
+    top: 0.85rem;
+    transform: translateX(-50%);
+}
+
+.vida-mantra-banner::after {
+    bottom: 0.85rem;
+    transform: translateX(-50%);
+}
+
+.vida-mantra-label {
+    margin: 0 0 0.55rem;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--vida-leaf);
+}
+
+.vida-mantra {
+    margin: 0;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(2.15rem, 7vw, 3.35rem);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: 0.01em;
+    color: var(--vida-cream);
+    text-wrap: balance;
+}
+
+.vida-mantra-link {
+    display: inline-block;
+    color: var(--vida-cream);
+    background: linear-gradient(120deg, #f7fbff 0%, #7dffd0 42%, #dfc262 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.vida-mantra-link:hover,
+.vida-mantra-link:focus-visible {
+    text-decoration: underline;
+    text-decoration-color: rgba(223, 194, 98, 0.55);
+    text-underline-offset: 0.18em;
+}
+
+.vida-mantra-sub {
+    margin: 0.85rem 0 0;
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: rgba(244, 237, 216, 0.78);
+}
+
+.vida-mantra-sub a {
+    color: var(--vida-gold);
+    text-decoration: none;
+}
+
+.vida-mantra-sub a:hover,
+.vida-mantra-sub a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.vida-connect h2 {
+    margin: 0 0 0.65rem;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(1.25rem, 3vw, 1.55rem);
+    font-weight: 700;
+    color: rgba(244, 237, 216, 0.92);
+    line-height: 1.25;
+}
+
+.vida-poem-stanza--mantra {
+    margin-top: 0.35rem;
+    padding: 0.85rem 1rem;
+    border-radius: 14px;
+    border: 1px solid rgba(223, 194, 98, 0.4);
+    background:
+        radial-gradient(ellipse 90% 120% at 50% 0%, rgba(223, 194, 98, 0.16), transparent 60%),
+        rgba(28, 40, 18, 0.55);
+    font-size: clamp(1.25rem, 2.8vw, 1.55rem);
+    font-weight: 700;
+    text-align: center;
+    color: var(--vida-gold);
+    letter-spacing: 0.02em;
+}
+
+.vida-connect-body {
+    margin: 0 0 0.85rem;
+    font-size: 1.02rem;
+    line-height: 1.55;
+    color: rgba(244, 237, 216, 0.9);
+}
+
+.vida-connect .vida-quote {
+    margin: 0;
+}
+
+.vida-story {
+    display: grid;
+    gap: 1rem;
+}
+
+.vida-story-beat {
+    padding: 1.2rem 1.3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(126, 232, 210, 0.18);
+    background:
+        linear-gradient(155deg, rgba(12, 32, 44, 0.9), rgba(7, 16, 24, 0.94));
+    box-shadow: 0 12px 36px rgba(0, 16, 28, 0.22);
+    transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.28s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .vida-story-beat:hover {
+        transform: translateY(-3px);
+        border-color: rgba(126, 232, 210, 0.45);
+    }
+}
+
+.vida-story-beat h3 {
+    margin: 0 0 0.45rem;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.2rem;
+    color: var(--vida-ice);
+}
+
+.vida-story-beat p {
+    margin: 0;
+    color: rgba(244, 248, 252, 0.88);
+    line-height: 1.55;
+    font-size: 1.02rem;
+}
+
+.vida-story-beat p + p {
+    margin-top: 0.65rem;
+}
+
+.vida-quote {
+    margin: 0.75rem 0 0;
+    padding-left: 0.85rem;
+    border-left: 2px solid var(--vida-leaf);
+    font-style: italic;
+    color: rgba(223, 194, 98, 0.95);
+}
+
+.vida-chars {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.vida-char {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--vida-panel);
+    transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.vida-char-media {
+    display: block;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #071018;
+}
+
+.vida-char-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
+}
+
+.vida-char-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    padding: 1.05rem 1.1rem 1.2rem;
+}
+
+.vida-char:focus-visible {
+    outline: 2px solid var(--vida-gold);
+    outline-offset: 3px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .vida-char:hover {
+        transform: translateY(-4px);
+        border-color: rgba(223, 194, 98, 0.45);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+    }
+}
+
+.vida-char-role {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--vida-leaf);
+}
+
+.vida-char h3 {
+    margin: 0;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.25rem;
+    color: var(--vida-cream);
+}
+
+.vida-char p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: rgba(244, 237, 216, 0.72);
+    flex: 1;
+}
+
+.vida-char-link {
+    margin-top: 0.35rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--vida-gold);
+}
+
+.vida-inverno-card {
+    display: grid;
+    grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+    gap: 1.15rem;
+    align-items: center;
+    margin: 0 0 1.25rem;
+    padding: 0.7rem;
+    border-radius: 20px;
+    border: 1px solid rgba(126, 232, 210, 0.2);
+    background: rgba(8, 22, 32, 0.72);
+}
+
+.vida-inverno-card-media {
+    display: block;
+    overflow: hidden;
+    border-radius: 14px;
+    line-height: 0;
+}
+
+.vida-inverno-card-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    object-position: center 18%;
+}
+
+.vida-inverno-card-copy {
+    padding: 0.35rem 0.55rem 0.45rem 0;
+}
+
+.vida-inverno-card-eyebrow {
+    margin: 0 0 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--vida-ice);
+}
+
+.vida-inverno-card-copy h3 {
+    margin: 0 0 0.45rem;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(1.35rem, 3vw, 1.85rem);
+    color: var(--vida-cream);
+}
+
+.vida-inverno-card-copy p {
+    margin: 0 0 1rem;
+    max-width: 42ch;
+    color: rgba(244, 248, 252, 0.78);
+}
+
+@media (max-width: 640px) {
+    .vida-inverno-card {
+        grid-template-columns: 1fr;
+    }
+
+    .vida-inverno-card-media img {
+        max-height: 220px;
+    }
+}
+
+.vida-lessons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.85rem;
+}
+
+.vida-lesson {
+    padding: 1rem 1.05rem;
+    border-radius: 16px;
+    border: 1px solid rgba(126, 232, 210, 0.18);
+    background: rgba(10, 26, 36, 0.78);
+}
+
+.vida-lesson strong {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-family: "Fraunces", Georgia, serif;
+    color: var(--vida-gold);
+    font-size: 1.05rem;
+}
+
+.vida-lesson span {
+    color: rgba(244, 237, 216, 0.75);
+    font-size: 0.92rem;
+    line-height: 1.4;
+}
+
+.vida-phases {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.65rem;
+    counter-reset: vida-phase;
+}
+
+.vida-phases li {
+    counter-increment: vida-phase;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.85rem;
+    align-items: start;
+    padding: 0.85rem 1rem;
+    border-radius: 14px;
+    background: rgba(10, 26, 36, 0.82);
+    border: 1px solid rgba(126, 232, 210, 0.16);
+}
+
+.vida-phases li::before {
+    content: counter(vida-phase);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: var(--vida-ink);
+    background: linear-gradient(145deg, #7dffd0, #5ec8ff);
+}
+
+.vida-phases strong {
+    display: block;
+    color: var(--vida-cream);
+    font-family: "Fraunces", Georgia, serif;
+    margin-bottom: 0.15rem;
+}
+
+.vida-phases span {
+    color: rgba(244, 237, 216, 0.72);
+    font-size: 0.92rem;
+    line-height: 1.4;
+}
+
+.vida-poems-list {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.vida-poem-card {
+    appearance: none;
+    text-align: left;
+    cursor: pointer;
+    display: grid;
+    gap: 0.35rem;
+    padding: 1rem 1.1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(126, 232, 210, 0.22);
+    background:
+        linear-gradient(160deg, rgba(110, 231, 197, 0.1), rgba(7, 16, 24, 0.92));
+    color: inherit;
+    font: inherit;
+    transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.vida-poem-card:hover,
+.vida-poem-card:focus-visible {
+    border-color: rgba(223, 194, 98, 0.7);
+    outline: none;
+    transform: translateY(-2px);
+}
+
+.vida-poem-card.is-active {
+    border-color: rgba(223, 194, 98, 0.85);
+    background:
+        linear-gradient(160deg, rgba(223, 194, 98, 0.22), rgba(18, 26, 12, 0.95));
+}
+
+.vida-poem-card-meta {
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(223, 194, 98, 0.85);
+    font-weight: 700;
+}
+
+.vida-poem-card-title {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    color: var(--vida-cream, #f4edd8);
+    font-weight: 700;
+}
+
+.vida-poem-card-teaser {
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: rgba(244, 237, 216, 0.72);
+}
+
+.vida-poem-card-open {
+    margin-top: 0.25rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #dfc262;
+}
+
+.vida-poem-reader {
+    margin-top: 1.35rem;
+    padding: 1.35rem 1.4rem 1.5rem;
+    border-radius: 18px;
+    border: 1px solid rgba(223, 194, 98, 0.32);
+    background:
+        linear-gradient(165deg, rgba(223, 194, 98, 0.08), rgba(12, 18, 8, 0.96));
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.28);
+}
+
+.vida-poem-eyebrow {
+    margin: 0 0 0.35rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(223, 194, 98, 0.9);
+}
+
+.vida-poem-reader h3 {
+    margin: 0 0 0.25rem;
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    font-size: clamp(1.45rem, 3vw, 1.9rem);
+    color: var(--vida-cream, #f4edd8);
+}
+
+.vida-poem-author {
+    margin: 0 0 1.1rem;
+    font-size: 0.95rem;
+    color: rgba(244, 237, 216, 0.65);
+}
+
+.vida-poem-body {
+    display: grid;
+    gap: 1.1rem;
+}
+
+.vida-poem-stanza {
+    margin: 0;
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    font-size: clamp(1.05rem, 2.2vw, 1.22rem);
+    line-height: 1.65;
+    color: rgba(254, 249, 230, 0.92);
+}
+
+.vida-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-top: 1.25rem;
+}
+
+.vida-cta-row a {
+    text-decoration: none;
+}
+
+.vida-explore-chips {
+    gap: 0.45rem;
+}
+
+.vida-explore-chips .botao {
+    min-width: 0;
+    padding: 0.42rem 0.85rem;
+    font-size: 0.86rem;
+}
+
+@media (max-width: 700px) {
+    .vida-hero-art,
+    .vida-hero-art img {
+        width: 100%;
+        max-height: none;
+        height: auto;
+    }
+
+    .vida-hero-copy {
+        text-align: center;
+        padding: 0.95rem 0 0.25rem;
+    }
+
+    .vida-hero-sub {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .vida-hero-actions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .vida-hero-actions .botao {
+        flex: 1 1 calc(50% - 0.4rem);
+        min-width: 0;
+    }
+
+    .vida-chars {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 0.75rem;
+        padding-bottom: 0.4rem;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .vida-char {
+        flex: 0 0 min(78%, 260px);
+        scroll-snap-align: start;
+    }
+
+    .vida-inverno-card-media img {
+        max-height: 160px;
+    }
+}
+
+body[data-page="vida"] #main-content.conteudo {
+    max-width: none;
+}
+
+body[data-page="vida"] #site-header {
+    background: linear-gradient(180deg, rgba(7, 16, 24, 0.42), rgba(7, 16, 24, 0.06));
+    border-bottom-color: transparent;
+    box-shadow: none;
+}
+
+body[data-page="vida"] #site-header.is-scrolled {
+    background: rgba(7, 16, 24, 0.86);
+    border-bottom-color: var(--color-header-border);
+    box-shadow: 0 10px 32px rgba(0, 16, 28, 0.42);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .vida-hero-art img {
+        transform: none;
+    }
+}
+

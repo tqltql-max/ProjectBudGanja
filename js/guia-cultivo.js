@@ -42,9 +42,13 @@ function renderVideoBlock(video) {
     '</div>' +
     (video.summary ? '<p class="guia-video-summary">' + escapeHtml(video.summary) + '</p>' : '') +
     renderEmbed(video) +
+    '<div class="video-embed-continue guia-video-continue">' +
+    '<a class="botao botao-outline botao-sm" href="' + escapeHtml(video.url) + '" target="_blank" rel="noopener noreferrer">' +
+    'Continuar no YouTube</a>' +
+    '<span class="video-embed-continue-hint">Para ouvir com o ecrã desligado, abra na app YouTube.</span>' +
+    '</div>' +
     '<p class="guia-video-meta">' +
     '<time datetime="' + escapeHtml(video.published || '') + '">' + escapeHtml(formatDatePtBR(video.published)) + '</time>' +
-    ' · <a href="' + escapeHtml(video.url) + '" target="_blank" rel="noopener noreferrer">Abrir no YouTube</a>' +
     '</p>' +
     '</article>'
   );
@@ -59,9 +63,11 @@ function renderGuide(data) {
 
   if (titleEl && data.title) titleEl.textContent = data.title;
   if (subtitleEl && data.subtitle) subtitleEl.textContent = data.subtitle;
-  if (channelLink && data.channelUrl) {
-    channelLink.href = data.channelUrl;
-    channelLink.textContent = '▶ Inscrever-se no ' + (data.channelName || '@InspetorBudGanja');
+  if (channelLink) {
+    channelLink.href = '/videos/';
+    channelLink.removeAttribute('target');
+    channelLink.removeAttribute('rel');
+    channelLink.textContent = '▶ Ver vídeos' + (data.channelName ? ' · ' + data.channelName : '');
   }
 
   if (!tocList || !chaptersEl || !data.chapters) return;

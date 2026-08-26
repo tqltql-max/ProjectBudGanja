@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const params = new URLSearchParams(window.location.search);
   const returnTo = params.get('returnTo') || '/admin.html';
-  const safeReturnTo = /^\/[a-z0-9/-]+\.html$/i.test(returnTo) ? returnTo : '/admin.html';
+  const safeReturnTo = /^\/[a-z0-9/_-]+\.(html|pdf)$/i.test(returnTo) ? returnTo : '/admin.html';
 
   function showError(message) {
     if (!errorEl) return;

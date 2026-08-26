@@ -5,6 +5,7 @@ require('../lib/load-env.js');
 const fs = require('fs');
 const path = require('path');
 const { ROOT } = require('../lib/paths.js');
+const { writeFileRetrySync } = require('../lib/fs-write-retry.js');
 const { PAGE_REGISTRY } = require('../lib/content-store.js');
 const { buildHtmlFromPage } = require('../lib/page-html.js');
 const { getSqlStoreIfAvailable } = require('../lib/sync-db-files.js');
@@ -31,7 +32,7 @@ async function main() {
     const html = buildHtmlFromPage(page);
     const filePath = path.join(ROOT, entry.file);
     fs.mkdirSync(path.dirname(filePath), { recursive: true });
-    fs.writeFileSync(filePath, html, 'utf8');
+    writeFileRetrySync(filePath, html, 'utf8');
   }
 
   console.log('sync-pages-to-db: ' + Object.keys(pages).length + ' páginas gravadas na base de dados');

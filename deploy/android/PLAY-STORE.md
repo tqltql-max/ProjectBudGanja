@@ -31,13 +31,15 @@ Este guia usa **TWA (Trusted Web Activity)**: o app Android abre o site `https:/
 
 ### 3. Gerar o projecto Android
 
+Se já existir `deploy/android/android.keystore` (e a password em `deploy/android/.keystore-password`), **reutiliza esse keystore** no Bubblewrap — o SHA-256 em `assetlinks.config.json` tem de coincidir com a assinatura do `.aab`.
+
 ```powershell
 cd C:\Users\tiago\Desktop\ProjectBudGanja
 .\deploy\android\init-twa.ps1
 ```
 
 O Bubblewrap vai pedir:
-- Password do **keystore** (guarda num sítio seguro — **nunca percas**)
+- Password do **keystore** (guarda num sítio seguro — **nunca percas**; se usares o ficheiro `.keystore-password`, copia dessa fonte)
 - Confirmação de host, ícones, etc.
 
 ### 4. Ligar o app ao domínio (obrigatório para TWA)

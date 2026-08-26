@@ -1,0 +1,457 @@
+/* Cadernos de Engenharia — anotações por matéria (método Cornell) */
+
+.ce-page {
+  max-width: 54rem;
+  padding-bottom: 3.5rem;
+}
+
+.ce-header h1 {
+  margin: 0.25rem 0 0.45rem;
+}
+
+.ce-lead {
+  margin: 0 0 1rem;
+}
+
+.ce-method {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+  margin: 1.25rem 0 1.5rem;
+}
+
+@media (min-width: 720px) {
+  .ce-method {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.ce-method-card {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  background: rgba(18, 20, 14, 0.55);
+}
+
+.ce-method-card h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  color: #f5e6b8;
+}
+
+.ce-method-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--color-text-muted, #ccc);
+}
+
+.ce-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0 0 1.15rem;
+}
+
+.ce-search {
+  flex: 1 1 12rem;
+  min-width: 10rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  background: rgba(10, 12, 8, 0.55);
+  color: inherit;
+  font: inherit;
+}
+
+.ce-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.85rem;
+}
+
+.ce-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.05rem 1.1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  background: linear-gradient(160deg, rgba(212, 175, 55, 0.12) 0%, rgba(14, 20, 10, 0.94) 62%);
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  transition: border-color 0.18s ease, transform 0.15s ease;
+}
+
+.ce-card:hover,
+.ce-card:focus-visible {
+  border-color: #dfc262;
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.ce-card-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.ce-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #fef9d7;
+}
+
+.ce-card-meta {
+  margin: 0;
+  font-size: 0.82rem;
+  color: rgba(244, 237, 216, 0.72);
+}
+
+.ce-lab-studies {
+  margin: 0 0 1.5rem;
+}
+
+.ce-lab-studies h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+  color: #f5e6b8;
+}
+
+.ce-lab-studies-lead {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted, #ccc);
+}
+
+.ce-card--lab {
+  border-color: rgba(126, 200, 167, 0.45);
+  background: linear-gradient(160deg, rgba(80, 160, 120, 0.18) 0%, rgba(14, 20, 10, 0.94) 62%);
+}
+
+.ce-lab-kicker {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9ee0b8;
+}
+
+.ce-lab-badge {
+  display: inline-block;
+  margin: 0 0 0.4rem;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1a3a28;
+  background: #9ee0b8;
+}
+
+.ce-lesson--lab {
+  border-color: rgba(126, 200, 167, 0.35);
+}
+
+.ce-lesson--lab .ce-cornell textarea {
+  min-height: 14rem;
+}
+
+html:not([data-theme="dark"]) .ce-lab-studies h2 {
+  color: #2a4a34;
+}
+
+html:not([data-theme="dark"]) .ce-card--lab {
+  background: linear-gradient(160deg, rgba(126, 200, 167, 0.22) 0%, #fffdf6 62%);
+}
+
+html:not([data-theme="dark"]) .ce-lab-kicker {
+  color: #2a5c40;
+}
+
+.ce-empty {
+  padding: 1.25rem 1rem;
+  border-radius: 14px;
+  border: 1px dashed rgba(212, 175, 55, 0.35);
+  color: var(--color-text-muted, #ccc);
+}
+
+.ce-back {
+  margin: 0 0 0.85rem;
+}
+
+.ce-subject-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.ce-subject-head h2 {
+  margin: 0 0 0.25rem;
+}
+
+.ce-sheet label,
+.ce-lesson label {
+  display: block;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #dfc262;
+  margin: 0 0 0.35rem;
+}
+
+.ce-sheet textarea,
+.ce-lesson input,
+.ce-lesson textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  background: rgba(10, 12, 8, 0.55);
+  color: inherit;
+  font: inherit;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.ce-sheet {
+  margin-bottom: 1.25rem;
+}
+
+.ce-sheet textarea {
+  min-height: 5.5rem;
+}
+
+.ce-lessons {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.ce-lesson {
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  background: rgba(16, 18, 12, 0.55);
+}
+
+.ce-lesson-top {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .ce-lesson-top {
+    grid-template-columns: 1fr 9rem auto;
+    align-items: end;
+  }
+}
+
+.ce-cornell {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 800px) {
+  .ce-cornell {
+    grid-template-columns: minmax(10rem, 32%) 1fr;
+  }
+}
+
+.ce-cornell textarea {
+  min-height: 9rem;
+}
+
+.ce-summary textarea {
+  min-height: 4.2rem;
+}
+
+.ce-lesson-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.65rem;
+}
+
+.ce-status {
+  font-size: 0.82rem;
+  color: var(--color-text-muted, #ccc);
+  min-height: 1.2em;
+}
+
+.ce-picker {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.ce-picker[hidden] {
+  display: none;
+}
+
+.ce-picker-panel {
+  width: min(36rem, 100%);
+  max-height: 85vh;
+  overflow: auto;
+  padding: 1.15rem 1.2rem 1.3rem;
+  border-radius: 16px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: #14160f;
+}
+
+.ce-picker-panel h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+}
+
+.ce-picker-list {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.ce-picker-list button {
+  text-align: left;
+}
+
+.ce-custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.ce-custom-row input {
+  flex: 1 1 12rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  background: rgba(10, 12, 8, 0.55);
+  color: inherit;
+  font: inherit;
+}
+
+html:not([data-theme="dark"]) .ce-method-card,
+html:not([data-theme="dark"]) .ce-lesson,
+html:not([data-theme="dark"]) .ce-picker-panel {
+  background: #fffdf6;
+  border-color: rgba(166, 134, 40, 0.28);
+}
+
+html:not([data-theme="dark"]) .ce-card {
+  background: linear-gradient(160deg, rgba(223, 194, 98, 0.18) 0%, #fffdf6 62%);
+}
+
+html:not([data-theme="dark"]) .ce-card h3,
+html:not([data-theme="dark"]) .ce-method-card h2 {
+  color: #3d3210;
+}
+
+html:not([data-theme="dark"]) .ce-search,
+html:not([data-theme="dark"]) .ce-sheet textarea,
+html:not([data-theme="dark"]) .ce-lesson input,
+html:not([data-theme="dark"]) .ce-lesson textarea,
+html:not([data-theme="dark"]) .ce-custom-row input {
+  background: #fff;
+  color: inherit;
+}
+
+@media print {
+  #site-header,
+  #site-footer,
+  .ce-toolbar,
+  .ce-back,
+  .ce-lesson-actions,
+  .ce-picker,
+  .livro-actions {
+    display: none !important;
+  }
+
+  .ce-lesson,
+  .uc-aula {
+    break-inside: avoid;
+  }
+}
+
+/* Caderno público UNIFESP — um parágrafo por aula */
+.uc-page .livro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.5rem;
+}
+
+.uc-toc {
+  margin: 0 0 1.75rem;
+  padding: 1rem 1.1rem 1.15rem;
+  border-radius: 16px;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  background: rgba(18, 20, 14, 0.45);
+}
+
+.uc-toc h2 {
+  margin: 0 0 0.65rem;
+  font-size: 1.05rem;
+}
+
+.uc-toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.uc-toc li {
+  margin: 0.2rem 0;
+}
+
+.uc-gap {
+  margin: 0.85rem 0 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted, #ccc);
+}
+
+.uc-aula {
+  margin: 0 0 1.15rem;
+  padding: 1rem 1.1rem 1.15rem;
+  border-radius: 16px;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  background: rgba(18, 20, 14, 0.45);
+}
+
+.uc-kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: var(--color-text-muted, #ccc);
+}
+
+.uc-aula h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1.12rem;
+  color: #f5e6b8;
+}
+
+.uc-aula p:last-child {
+  margin: 0;
+  line-height: 1.6;
+}
+
+html:not([data-theme="dark"]) .uc-toc,
+html:not([data-theme="dark"]) .uc-aula {
+  background: linear-gradient(160deg, rgba(223, 194, 98, 0.16) 0%, #fffdf6 62%);
+}
+
+html:not([data-theme="dark"]) .uc-aula h2 {
+  color: #3d3210;
+}

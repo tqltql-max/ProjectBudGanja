@@ -9,10 +9,18 @@ const { publishStaticAssets } = require('../lib/publish-static.js');
 const { createAppStore } = require('../lib/create-store.js');
 const { handleApiRequest } = require('../lib/api-handler.js');
 const { buildPostHtml, normalizePosts } = require('../lib/posts-service.js');
+const { mergeGuiaInspecoesPosts } = require('../lib/merge-guia-inspecoes.js');
 const { buildEmptyStateHtml } = require('../lib/empty-state.js');
 const { applySecurityHeaders } = require('../lib/security-headers.js');
 const { hasAdminAccess } = require('../lib/admin-access.js');
-const { isBlockedStaticPath, isProtectedHtml } = require('../lib/static-security.js');
+const { getUserSession } = require('../lib/user-auth-service.js');
+const {
+  isBlockedStaticPath,
+  isProtectedHtml,
+  isProtectedPath,
+  isAuthProtectedHtml,
+  isAuthProtectedPath
+} = require('../lib/static-security.js');
 const {
   isDevModeEnabled,
   shouldBlockForDevMode,
@@ -23,7 +31,6 @@ const { auditStartupSecurity } = require('../lib/startup-security.js');
 const { ROOT } = require('../lib/paths.js');
 const { getAdminSession } = require('../lib/admin-access.js');
 const eventBus = require('../lib/admin-event-bus.js');
-const { mergeGuiaInspecoesPosts } = require('../lib/merge-guia-inspecoes.js');
 const contentStore = createContentStore(ROOT);
 let appStore = null;
 const PORT = Number(process.env.PORT) || 8080;
@@ -38,13 +45,31 @@ const MIME = {
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
+  '.gif': 'image/gif',
   '.ico': 'image/x-icon',
   '.webp': 'image/webp',
-  '.webmanifest': 'application/manifest+json'
+  '.avif': 'image/avif',
+  '.webmanifest': 'application/manifest+json',
+  '.mp3': 'audio/mpeg',
+  '.mp4': 'video/mp4',
+  '.webm': 'video/webm',
+  '.mov': 'video/quicktime',
+  '.pdf': 'application/pdf'
 };
 
 const MAX_BODY_BYTES = 2 * 1024 * 1024;
 const MAX_UPLOAD_BYTES = 6 * 1024 * 1024;
+const MAX_ICONS_BODY_BYTES = 12 * 1024 * 1024; // PNG até 8 MB em data-URL JSON
+const MAX_CULTIVO_MEDIA_BODY_BYTES = 40 * 1024 * 1024;
+const MAX_CULTIVO_STATE_BODY_BYTES = 8 * 1024 * 1024;
+
+function bodyLimitForApi(url) {
+  if (url === '/api/admin/update-icons') return MAX_ICONS_BODY_BYTES;
+  if (url === '/api/upload') return MAX_UPLOAD_BYTES;
+  if (url === '/api/cultivo/photo') return MAX_CULTIVO_MEDIA_BODY_BYTES;
+  if (url === '/api/cultivo') return MAX_CULTIVO_STATE_BODY_BYTES;
+  return MAX_BODY_BYTES;
+}
 
 const POSTS_META = path.join(ROOT, 'posts.json');
 const UPLOADS_DIR = path.join(ROOT, 'uploads');
@@ -56,15 +81,54 @@ function isCompressible(ext) {
   return ['.html', '.js', '.css', '.json', '.svg', '.txt', '.webmanifest'].includes(ext);
 }
 
-function getCacheControl(ext) {
+function isMediaExt(ext) {
+  return ['.mp3', '.mp4', '.webm', '.mov', '.ogg', '.wav', '.m4a', '.aac'].includes(ext);
+}
+
+/** Parseia Range: bytes=start-end para seek de áudio/vídeo. */
+function parseByteRange(rangeHeader, size) {
+  const m = /^bytes=(\d*)-(\d*)$/i.exec(String(rangeHeader || '').trim());
+  if (!m || !size) return null;
+  let start = m[1] === '' ? NaN : parseInt(m[1], 10);
+  let end = m[2] === '' ? NaN : parseInt(m[2], 10);
+  if (Number.isNaN(start) && Number.isNaN(end)) return null;
+  if (Number.isNaN(start)) {
+    const suffix = end;
+    start = Math.max(0, size - suffix);
+    end = size - 1;
+  } else if (Number.isNaN(end)) {
+    end = size - 1;
+  }
+  if (start < 0 || start >= size || start > end) return null;
+  end = Math.min(end, size - 1);
+  return { start, end };
+}
+
+function getCacheControl(ext, filePath) {
+  const base = path.basename(filePath || '');
+  // Ícones PWA / favicon — nunca cachear agressivamente (Cloudflare ficou com oval verde immutable).
+  if (/^(icon-\d+|icon-\d+-maskable|apple-touch-icon|app-icon|favicon-\d+|iconsite)\.png$/i.test(base)) {
+    return 'no-cache, must-revalidate';
+  }
+  if (/^favicon(\.v\d+)?\.(ico|svg)$/i.test(base)) {
+    return 'no-cache, must-revalidate';
+  }
+  // Banner da home — muda com frequência durante design; hash no HTML + revalidação.
+  if (/^background-hero\.(png|svg)$/i.test(base)) {
+    return 'no-cache, must-revalidate';
+  }
   if (ext === '.html') return 'no-cache';
   if (['.js', '.css', '.json', '.webmanifest'].includes(ext)) return 'no-cache';
-  if (['.png', '.jpg', '.jpeg', '.svg', '.webp', '.ico'].includes(ext)) return 'public, max-age=86400';
+  if (['.png', '.jpg', '.jpeg', '.svg', '.webp', '.avif', '.ico'].includes(ext)) return 'public, max-age=86400';
   return 'public, max-age=3600';
 }
 
 function readPosts() {
-  try { return JSON.parse(fs.readFileSync(POSTS_META, 'utf8') || '[]'); } catch (e) { return []; }
+  try {
+    return mergeGuiaInspecoesPosts(JSON.parse(fs.readFileSync(POSTS_META, 'utf8') || '[]'));
+  } catch (e) {
+    return mergeGuiaInspecoesPosts([]);
+  }
 }
 
 function writePosts(posts) {
@@ -121,12 +185,12 @@ function getPublicPosts(category) {
 
 function normalizePostsOnStartup() {
   try {
+    // Sempre regenera HTML com overlay i18n (contentEn/Es, titleEn/Es).
     const posts = readPosts() || [];
-    const normalized = normalizePosts(posts);
-    if (JSON.stringify(posts) !== JSON.stringify(normalized)) writePosts(normalized);
-    normalized.forEach((p) => {
-      const fp = path.join(ROOT, p.filename);
-      if (fs.existsSync(fp)) writePostFile(fp, p);
+    posts.forEach((p) => {
+      if (p.published === false) return;
+      if (!p.filename) return;
+      writePostFile(path.join(ROOT, p.filename), p);
     });
   } catch (e) { /* ignore */ }
 }
@@ -138,6 +202,15 @@ async function isAdminAuthenticated(req) {
   if (!appStore) return false;
   try {
     return await hasAdminAccess(appStore, req.headers.cookie);
+  } catch (e) {
+    return false;
+  }
+}
+
+async function isUserAuthenticated(req) {
+  if (!appStore) return false;
+  try {
+    return !!(await getUserSession(appStore, req.headers.cookie));
   } catch (e) {
     return false;
   }
@@ -167,10 +240,19 @@ function resRedirect(res, location) {
   res.end();
 }
 
+function jogosWatchPath(pathname) {
+  const m = /^\/jogos\/(zangado|aleff|aleph|paulinho|hopejoy|bagual)\/([a-zA-Z0-9_-]{11})\/?$/.exec(String(pathname || ''));
+  return m ? '/jogos/video.html' : null;
+}
+
 function legacyRedirectFor(staticPath) {
+  if (staticPath === '/inicio' || staticPath === '/inicio/') return '/';
+  if (staticPath === '/games' || staticPath === '/games/') return '/jogos/';
+  if (staticPath === '/jogos/paulinho' || staticPath === '/jogos/paulinho/') return '/jogos/aleff/';
+  if (staticPath === '/jogos/aleph' || staticPath === '/jogos/aleph/') return '/jogos/aleff/';
   if (staticPath === '/calculadoras.html') return '/calculadoras/';
   if (staticPath === '/luximetro.html') return '/calculadoras/luximetro.html';
-  if (staticPath === '/equipamentos.html') return '/equipamentos/';
+  if (staticPath === '/equipamentos.html' || staticPath === '/equipamentos' || staticPath === '/equipamentos/') return '/objetos/';
   if (staticPath === '/manual-clonadora.html') return '/equipamentos/manual-clonadora.html';
   if (staticPath === '/manual-hidrocloradora.html') return '/equipamentos/manual-hidrocloradora.html';
   if (staticPath === '/pesquisas.html') return '/biblioteca/pesquisas/';
@@ -222,7 +304,7 @@ function serveManagedHtml(res, filename) {
   let transform = null;
   if (filename === 'biblioteca/pesquisas/index.html') {
     transform = (body) => injectPostsPlaceholder(body, '<!-- POSTS_PLACEHOLDER -->', 'pesquisa');
-  } else if (filename === 'equipamentos/index.html') {
+  } else if (filename === 'objetos/index.html' || filename === 'equipamentos/index.html') {
     transform = (body) => injectPostsPlaceholder(body, '<!-- EQUIPMENT_POSTS_PLACEHOLDER -->', 'equipamento');
   } else if (filename === 'biblioteca/inspecoes/index.html') {
     transform = (body) => injectPostsPlaceholder(body, '<!-- INSPECTION_POSTS_PLACEHOLDER -->', 'inspecao');
@@ -231,9 +313,9 @@ function serveManagedHtml(res, filename) {
   const html = contentStore.renderManagedPage(filename, transform);
   if (!html) return false;
 
-  setSecurityHeaders(res, null);
+  setSecurityHeaders(res, null, isProtectedPath(filename) ? { noStore: true, noIndex: true } : {});
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
-  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Cache-Control', isProtectedPath(filename) ? 'no-store' : 'no-cache');
   res.end(html);
   return true;
 }
@@ -264,7 +346,11 @@ function serveStatic(req, res, staticPath) {
     const ext = path.extname(requested).toLowerCase();
     const contentType = MIME[ext] || 'application/octet-stream';
     const pageName = path.relative(ROOT, requested).replace(/\\/g, '/');
-    const headerOpts = isProtectedHtml(pageName) ? { noStore: true, noIndex: true } : null;
+    const isShareImage = /(?:^|\/)imagens\/(?:og-[^/]+\.jpe?g|inspecoes\/)/i.test(pageName);
+    const headerOpts = {
+      ...(isProtectedPath(pageName) ? { noStore: true, noIndex: true } : {}),
+      corpCrossOrigin: isShareImage
+    };
     setSecurityHeaders(res, req, headerOpts);
 
     const lastModified = stats.mtime.toUTCString();
@@ -279,10 +365,48 @@ function serveStatic(req, res, staticPath) {
       || pageName === 'version.json'
       || pageName === 'manifest.json'
       || pageName === 'js/app-version-check.js';
-    res.setHeader('Cache-Control', (headerOpts || neverCache) ? 'no-store, no-cache, must-revalidate' : getCacheControl(ext));
+    res.setHeader('Cache-Control', (headerOpts.noStore || neverCache) ? 'no-store, no-cache, must-revalidate' : getCacheControl(ext, requested));
+    // Pedir à Cloudflare para não reter ícones “envenenados” (ex.: oval verde immutable).
+    if (/no-cache/i.test(res.getHeader('Cache-Control') || '')) {
+      res.setHeader('CDN-Cache-Control', 'no-store');
+      res.setHeader('Cloudflare-CDN-Cache-Control', 'no-store');
+    }
     res.setHeader('Last-Modified', lastModified);
     res.setHeader('ETag', etag);
     res.setHeader('Content-Type', contentType);
+
+    // Áudio/vídeo: Accept-Ranges + 206 — sem isto o seek da rádio falha no browser.
+    if (isMediaExt(ext)) {
+      res.setHeader('Accept-Ranges', 'bytes');
+      const range = parseByteRange(req.headers.range, stats.size);
+      if (req.headers.range && !range) {
+        res.writeHead(416, {
+          'Content-Range': 'bytes */' + stats.size,
+          'Content-Type': contentType
+        });
+        res.end();
+        return;
+      }
+      if (range) {
+        const chunkSize = range.end - range.start + 1;
+        res.writeHead(206, {
+          'Content-Range': 'bytes ' + range.start + '-' + range.end + '/' + stats.size,
+          'Content-Length': chunkSize,
+          'Accept-Ranges': 'bytes',
+          'Content-Type': contentType,
+          'Cache-Control': res.getHeader('Cache-Control') || getCacheControl(ext, requested),
+          'Last-Modified': lastModified,
+          ETag: etag
+        });
+        const partial = fs.createReadStream(requested, { start: range.start, end: range.end });
+        partial.on('error', () => {
+          if (!res.headersSent) res.writeHead(500, { 'Content-Type': 'text/plain' });
+          res.end('500 Internal Server Error');
+        });
+        partial.pipe(res);
+        return;
+      }
+    }
 
     const accept = req.headers['accept-encoding'] || '';
     const stream = fs.createReadStream(requested);
@@ -307,10 +431,22 @@ const server = http.createServer((req, res) => {
   try {
     const raw = req.url.split('?')[0] || '/';
     const url = decodeURIComponent(raw);
-    const host = String(req.headers['x-forwarded-host'] || req.headers.host || '').split(',')[0].trim().split(':')[0];
-    if (host === 'www.inspetorbudganja.com.br') {
-      const qs = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
-      return resRedirect(res, 'https://inspetorbudganja.com.br' + url + qs);
+    const host = String(req.headers['x-forwarded-host'] || req.headers.host || '').split(',')[0].trim().split(':')[0].toLowerCase();
+    const qs = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
+    const canonicalHost = 'inspetorbudganja.com.br';
+    const englishCanonicalHost = 'www.inspectorbudganja.com';
+    // Domínio EN: serve o site (não redirecciona para .com.br)
+    if (host === 'inspectorbudganja.com') {
+      return resRedirect(res, 'https://' + englishCanonicalHost + url + qs);
+    }
+    // Aliases PT → canónico .com.br
+    const redirectHosts = new Set([
+      'www.inspetorbudganja.com.br',
+      'inspetorbudganja.com',
+      'www.inspetorbudganja.com'
+    ]);
+    if (redirectHosts.has(host)) {
+      return resRedirect(res, 'https://' + canonicalHost + url + qs);
     }
 
     if (url.startsWith('/api/')) {
@@ -360,7 +496,7 @@ const server = http.createServer((req, res) => {
         setSecurityHeaders(res, req);
         Object.entries(response.headers || {}).forEach(([k, v]) => res.setHeader(k, v));
         (response.setCookies || []).forEach((c) => res.appendHeader('Set-Cookie', c));
-        res.writeHead(response.status);
+        res.writeHead(response.statusCode || response.status || 500);
         res.end(response.body);
       }).catch(() => {
         setSecurityHeaders(res, req);
@@ -371,7 +507,7 @@ const server = http.createServer((req, res) => {
       if (req.method === 'GET' || req.method === 'DELETE' || req.method === 'HEAD') {
         return sendApi('');
       }
-      return collectBody(req, (url === '/api/upload' || url === '/api/admin/update-icons') ? MAX_UPLOAD_BYTES : MAX_BODY_BYTES).then(sendApi).catch(() => {
+      return collectBody(req, bodyLimitForApi(url)).then(sendApi).catch(() => {
         setSecurityHeaders(res, req);
         res.writeHead(413, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: 'body too large' }));
@@ -380,12 +516,45 @@ const server = http.createServer((req, res) => {
 
     let staticPath = url;
     if (staticPath === '/') staticPath = '/index.html';
+    if (staticPath === '/inverno') staticPath = '/inverno/';
+    if (staticPath === '/vida') staticPath = '/vida/';
+    if (staticPath === '/laboratorio') staticPath = '/laboratorio/';
     if (staticPath === '/calculadoras') staticPath = '/calculadoras/';
+    if (staticPath === '/objetos') staticPath = '/objetos/';
     if (staticPath === '/equipamentos') staticPath = '/equipamentos/';
     if (staticPath === '/sorteios') staticPath = '/sorteios/';
     if (staticPath === '/videos') staticPath = '/videos/';
+    if (staticPath === '/jogos') staticPath = '/jogos/';
+    if ((url === '/jogos/' || url === '/jogos') && qs) {
+      const params = new URLSearchParams(qs.startsWith('?') ? qs.slice(1) : qs);
+      const canal = String(params.get('canal') || params.get('channel') || '').toLowerCase();
+      if (canal === 'zangado' || canal === 'zangadoreview' || canal === 'tio-zangado') {
+        return resRedirect(res, '/jogos/zangado/');
+      }
+      if (canal === 'paulinho' || canal === 'aleff' || canal === 'aleph' || canal === 'paulinholoko' || canal === 'paulinho-loko') {
+        return resRedirect(res, '/jogos/aleff/');
+      }
+      if (canal === 'hopejoy' || canal === 'hope-joy' || canal === 'hopejoyoficial') {
+        return resRedirect(res, '/jogos/hopejoy/');
+      }
+      if (
+        canal === 'bagual' ||
+        canal === 'poderosobagual' ||
+        canal === 'todo-poderoso-bagual' ||
+        canal === 'todopoderosobagual'
+      ) {
+        return resRedirect(res, '/jogos/bagual/');
+      }
+      if (canal === 'gtarp' || canal === 'gta-rp' || canal === 'gta') {
+        return resRedirect(res, '/jogos/gtarp/');
+      }
+    }
+    const jogosWatch = jogosWatchPath(url);
+    if (jogosWatch) staticPath = jogosWatch;
+    if (staticPath === '/biblioteca') staticPath = '/biblioteca/';
     if (staticPath === '/biblioteca/pesquisas') staticPath = '/biblioteca/pesquisas/';
     if (staticPath === '/biblioteca/inspecoes') staticPath = '/biblioteca/inspecoes/';
+    if (staticPath === '/biblioteca/cadernos') staticPath = '/biblioteca/cadernos/';
     if (staticPath.endsWith('/')) staticPath += 'index.html';
 
     const legacyLocation = legacyRedirectFor(url);
@@ -400,8 +569,20 @@ const server = http.createServer((req, res) => {
       return serveDevModePage(res, req, ROOT);
     }
 
-    if (isProtectedHtml(pageFile) && !isAdmin) {
-      const returnTo = encodeURIComponent(staticPath);
+    if (isAuthProtectedPath(pageFile) && !isAdmin) {
+      const isUser = await isUserAuthenticated(req);
+      if (!isUser) {
+        const returnTo = isAuthProtectedHtml(pageFile)
+          ? encodeURIComponent(staticPath)
+          : encodeURIComponent('/biblioteca/');
+        return resRedirect(res, '/entrar.html?returnTo=' + returnTo);
+      }
+    }
+
+    if (isProtectedPath(pageFile) && !isAdmin) {
+      const returnTo = isProtectedHtml(pageFile)
+        ? encodeURIComponent(staticPath)
+        : encodeURIComponent('/info/apresentacao-unifesp.html');
       return resRedirect(res, '/login.html?returnTo=' + returnTo);
     }
 

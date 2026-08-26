@@ -1,57 +1,44 @@
 {
-
   "name": "inspetor-budganja",
-
   "version": "1.0.0",
-
   "description": "Site estático do Inspetor BudGanja — servidor estático local com headers de segurança e cache.",
-
   "main": "server/index.js",
-
   "scripts": {
-
     "start": "node server/index.js",
-
     "start:dev": "node server/index.js",
-
     "start:quick": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-dev.ps1",
-
     "start:quick:tunnel": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-dev.ps1 -Tunnel",
     "deploy:online": "powershell -NoProfile -ExecutionPolicy Bypass -File ./deploy/start-site.ps1",
-
+    "pages:dev": "npx wrangler pages dev",
+    "pages:deploy": "npm run build && npx wrangler pages deploy",
     "build": "node scripts/build.js",
-
+    "stamp:hero": "node scripts/stamp-assets.js",
+    "optimize:hero": "node scripts/optimize-hero.js",
     "build:posts": "node scripts/regenerate-posts.js",
-
     "sync:pages": "node scripts/sync-pages-from-html.js",
-
     "sync:pages:db": "node scripts/sync-pages-to-db.js",
-
     "sync:pages:all": "npm run sync:pages && npm run sync:pages:db",
-
     "build:guia": "node scripts/build-guia-cultivo.js",
-
     "build:youtube": "node scripts/build-youtube-feed.js",
-
-    "build:jardimhg": "node scripts/build-jardimhg-catalog.js",
-
+    "build:radio": "node scripts/build-radio-playlist.js",
+    "build:plantas": "node scripts/build-plantas.js",
+    "build:animais": "node scripts/build-animais.js",
+    "build:fungos": "node scripts/build-fungos.js",
+    "build:tecnologia": "node scripts/build-tecnologia.js",
+    "build:mitologia": "node scripts/build-mitologia.js",
     "build:search": "node scripts/build-search-index.js",
-
     "build:sitemap": "node scripts/build-sitemap.js",
-
     "build:assetlinks": "node scripts/build-assetlinks.js",
-
+            "build:apresentacao-pdf": "node scripts/generate-apresentacao-pdf.js",
+    "build:livro-pdf": "node scripts/generate-catalogo-projeto-livro.js",
+    "build:livro-page-pdf": "node scripts/generate-livro-page-pdf.js",
     "test:site": "node scripts/test-site.js",
     "test:lib": "node scripts/test-lib-unit.js",
     "check:assetlinks": "node scripts/check-assetlinks.js",
-
     "db:migrate": "node scripts/db-migrate.js",
-
     "db:cleanup": "node scripts/db-cleanup-test-artifacts.js",
-
     "db:backup": "node scripts/db-backup.js",
     "db:backup:external": "node scripts/db-backup-external.js",
-
     "test:db": "node scripts/test-db-persistence.js",
     "test:cultivo": "node scripts/test-cultivo-persistence.js",
     "test:cultivo-submissions": "node scripts/test-cultivo-submissions.js",
@@ -59,32 +46,33 @@
     "test:api:contract": "node scripts/test-api-contract-persistence.js",
     "check:db:naming": "node scripts/check-db-naming.js",
     "test": "node scripts/test-lib-unit.js && node scripts/test-db-persistence.js && node scripts/test-cultivo-persistence.js && node scripts/test-cultivo-submissions.js && node scripts/test-users-admin.js && node scripts/test-api-contract-persistence.js",
-
     "verify": "node scripts/verify.js",
-
-    "db:backup:schedule": "node scripts/db-backup-schedule.js"
-
+    "db:backup:schedule": "node scripts/db-backup-schedule.js",
+    "build:movrecam": "node scripts/build-movrecam-catalog.js",
+    "build:canabinall": "node scripts/build-canabinall-catalog.js",
+    "build:disneyjr": "node scripts/build-disneyjr-catalog.js",
+    "build:paulinho": "node scripts/build-paulinho-catalog.js",
+    "build:hopejoy": "node scripts/build-hopejoy-catalog.js",
+    "build:bagual": "node scripts/build-bagual-catalog.js",
+    "build:zangado": "node scripts/build-zangado-catalog.js",
+    "build:tamara": "node scripts/build-tamara-klink-catalog.js",
+    "build:amyr": "node scripts/build-amyr-klink-catalog.js",
+    "build:william-davis": "node scripts/build-william-davis-catalog.js",
+    "build:slivki": "node scripts/build-slivki-catalog.js",
+    "build:manualdomundo": "node scripts/build-manual-do-mundo-catalog.js",
+    "fetch:xiv-transcripts": "node scripts/fetch-xiv-transcripts.js",
+    "build:xiv-livro": "node scripts/build-xiv-livro.js"
   },
-
   "dependencies": {
-
     "@libsql/client": "^0.15.15",
-
     "@netlify/blobs": "^8.1.0",
-
-    "sharp": "^0.35.2"
-
+    "png-to-ico": "^3.0.2",
+    "sharp": "^0.35.2",
+    "youtube-transcript": "^1.3.1"
   },
-
   "author": "",
-
   "license": "MIT",
-
   "engines": {
-
     "node": ">=14"
-
   }
-
 }
-
