@@ -9,7 +9,8 @@ const OUT = path.join(ROOT, 'search-index.json');
 const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registry.js');
 
 const STATIC_PAGES = [
-  { url: '/inverno/', title: 'Início — Bom dia, Inverno', desc: 'Página inicial: divulgação do livro de Tamara Klink. Oito meses no gelo. Empresta, doa, faz circular.', keywords: 'home inicio inverno tamara klink livro gelo invernagem groenlandia circular' },
+  { url: '/', title: 'Ferramenta de cultivo | Inspetor BudGanja', desc: 'Guia em vídeo e diário de pesquisas para documentar o cultivo.', keywords: 'home inicio cultivo diario guia ferramenta' },
+  { url: '/inverno/', title: 'Bom dia, Inverno — Tamara Klink', desc: 'Divulgação do livro de Tamara Klink. Oito meses no gelo. Empresta, doa, faz circular.', keywords: 'inverno tamara klink livro gelo invernagem groenlandia circular' },
   { url: '/vida/', title: 'Vida', desc: 'Conto familiar do Laboratório BudGanja. Cuidar de plantas com ciência, natureza e amizade.', keywords: 'vida conto familiar plantas semente inspetor dona maria' },
   { url: '/origami/', title: 'Origami', desc: 'Aprender a dobrar papel — mãos reais, um modelo de cada vez. Aula do barquinho.', keywords: 'origami papel dobrar barquinho mãos aula ofício' },
   { url: '/origami/barquinho-de-papel/', title: 'Barquinho de papel', desc: 'Aula de origami: doze vincos, mãos reais. Filmar sem fala, áudio local.', keywords: 'barquinho papel origami aula vinco mara maravilha' },

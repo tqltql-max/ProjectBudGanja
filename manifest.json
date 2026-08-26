@@ -3,7 +3,7 @@
   "short_name": "BudGanja",
   "description": "Laboratório de inspeção. Plantas, ofício e cultura, com método.",
   "id": "/",
-  "start_url": "/inverno/",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "display_override": [

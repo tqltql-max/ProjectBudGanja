@@ -893,3 +893,213 @@ body[data-page="laboratorio"] .hero--lab .hero-actions {
     }
 }
 
+/* Início — funções do projecto, compacto */
+body[data-page="home"] #main-content.home-launch {
+    width: min(42rem, calc(100% - 2 * var(--space-page-x, 1.25rem)));
+    margin: 0 auto;
+    padding: 1.15rem 0 2.4rem;
+}
+
+.home-launch-hero {
+    margin: 0 0 1.1rem;
+}
+
+.home-launch-eyebrow {
+    margin: 0 0 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #7dffd0;
+}
+
+.home-launch-hero h1 {
+    margin: 0;
+    font-size: clamp(1.7rem, 5vw, 2.15rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: #f4f8fc;
+}
+
+.home-launch-lead {
+    margin: 0.45rem 0 0;
+    font-size: 1.02rem;
+    line-height: 1.45;
+    color: #9eb0c2;
+}
+
+.home-launch-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+}
+
+.home-launch-card {
+    display: grid;
+    gap: 0.22rem;
+    padding: 0.95rem 1rem;
+    border: 1px solid rgba(125, 255, 208, 0.18);
+    background: rgba(232, 238, 244, 0.045);
+    color: inherit;
+    text-decoration: none;
+    border-radius: 12px;
+    min-width: 0;
+}
+
+.home-launch-card:hover,
+.home-launch-card:focus-visible {
+    border-color: rgba(125, 255, 208, 0.45);
+    background: rgba(125, 255, 208, 0.08);
+}
+
+.home-launch-card--primary {
+    border-color: rgba(155, 231, 255, 0.42);
+    background: rgba(94, 200, 255, 0.1);
+}
+
+.home-launch-kicker {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #7dffd0;
+}
+
+.home-launch-card strong {
+    font-size: 1.12rem;
+    line-height: 1.2;
+    color: #f4f8fc;
+}
+
+.home-launch-card span:last-child {
+    font-size: 0.92rem;
+    line-height: 1.4;
+    color: #9eb0c2;
+}
+
+.home-launch-note {
+    margin: 0.7rem 0 0;
+    font-size: 0.92rem;
+}
+
+.home-launch-note a {
+    color: #7dffd0;
+}
+
+.home-launch-guides,
+.home-launch-more,
+body[data-page="home"] .home-latest {
+    margin-top: 1.65rem;
+}
+
+.home-launch-head {
+    margin: 0 0 0.7rem;
+}
+
+.home-launch-head h2 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #f4f8fc;
+}
+
+.home-launch-head p {
+    margin: 0.25rem 0 0;
+    font-size: 0.92rem;
+    color: #9eb0c2;
+}
+
+.home-guia-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+}
+
+.home-guia-item a {
+    display: grid;
+    gap: 0.12rem;
+    padding: 0.62rem 0.75rem;
+    border: 1px solid rgba(232, 238, 244, 0.1);
+    background: rgba(8, 14, 20, 0.28);
+    color: inherit;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.home-guia-item a:hover,
+.home-guia-item a:focus-visible {
+    border-color: rgba(125, 255, 208, 0.4);
+}
+
+.home-guia-item strong {
+    color: #f4f8fc;
+    font-size: 0.95rem;
+}
+
+.home-guia-item span {
+    color: #9eb0c2;
+    font-size: 0.82rem;
+    line-height: 1.35;
+}
+
+.home-fn-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.home-fn-link {
+    display: grid;
+    gap: 0.12rem;
+    padding: 0.7rem 0.8rem;
+    border: 1px solid rgba(232, 238, 244, 0.1);
+    background: rgba(232, 238, 244, 0.04);
+    color: inherit;
+    text-decoration: none;
+    border-radius: 8px;
+    min-width: 0;
+}
+
+.home-fn-link:hover,
+.home-fn-link:focus-visible {
+    border-color: rgba(155, 231, 255, 0.4);
+}
+
+.home-fn-link strong {
+    font-size: 0.95rem;
+    color: #f4f8fc;
+}
+
+.home-fn-link span {
+    font-size: 0.78rem;
+    color: #9eb0c2;
+}
+
+body[data-page="home"] .home-launch-sorteio {
+    margin-top: 1.4rem;
+}
+
+body[data-page="home"] .home-announcement-inner {
+    display: grid;
+    gap: 0.7rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(125, 255, 208, 0.18);
+    border-radius: 12px;
+}
+
+@media (min-width: 640px) {
+    .home-launch-actions {
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 520px) {
+    .home-fn-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

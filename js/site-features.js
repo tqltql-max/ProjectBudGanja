@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var HOME = '/inverno/';
+  var HOME = '/';
 
   var BREADCRUMBS = {
     'guia/cultivo-basico.html': [{ label: 'Início', href: HOME }, { label: 'Guia de Cultivo' }],
@@ -9,7 +9,7 @@
     'biblioteca/inspecoes/index.html': [{ label: 'Início', href: HOME }, { label: 'Inspeções' }],
     'objetos/index.html': [{ label: 'Início', href: HOME }, { label: 'Objetos' }],
     'equipamentos/index.html': [{ label: 'Início', href: HOME }, { label: 'Objetos', href: '/objetos/' }],
-    'index.html': [{ label: 'Início', href: HOME }, { label: 'Laboratório', href: '/laboratorio/' }],
+    'index.html': [{ label: 'Início' }],
     'laboratorio/index.html': [{ label: 'Início', href: HOME }, { label: 'Laboratório' }],
     'inverno/index.html': [{ label: 'Bom dia, Inverno' }],
     'vida/index.html': [{ label: 'Início', href: HOME }, { label: 'Vida' }],
@@ -20,6 +20,9 @@
     'perfil.html': [{ label: 'Início', href: HOME }, { label: 'Minha conta' }],
     'login.html': [{ label: 'Início', href: HOME }, { label: 'Admin' }],
     'videos/index.html': [{ label: 'Início', href: HOME }, { label: 'Vídeos' }],
+    'jogos/index.html': [{ label: 'Jogos' }],
+    'jogos/gtarp/index.html': [{ label: 'Início', href: HOME }, { label: 'Jogos', href: '/jogos/' }, { label: 'GTA RP' }],
+    'jogos/aleff/index.html': [{ label: 'Início', href: HOME }, { label: 'Jogos', href: '/jogos/' }, { label: 'Paulinho o LOKO' }],
     'radio/index.html': [{ label: 'Início', href: HOME }, { label: 'Rádio' }],
     'comunidade/index.html': [{ label: 'Início', href: HOME }, { label: 'Comunidade' }],
     'info/sobre.html': [{ label: 'Início', href: HOME }, { label: 'Sobre' }],

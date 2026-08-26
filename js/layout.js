@@ -1,7 +1,7 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '355';
-const HOME = '/inverno/';
+const ASSET_V = '356';
+const HOME = '/';
 
 (function injectSiteSnowEarly() {
   function add() {
@@ -792,6 +792,7 @@ const DEFAULT_SITE = {
   ],
   footerLinks: [
     { label: 'Início', href: HOME },
+    { label: 'Diário de pesquisas', href: '/cultivo/' },
     { label: 'Plantas', href: '/plantas/' },
     { label: 'Animais', href: '/animais/' },
     { label: 'Fungos', href: '/fungos/' },
@@ -826,6 +827,7 @@ const DEFAULT_SITE = {
     {
       title: 'Ferramentas',
       links: [
+        { label: 'Diário de pesquisas', href: '/cultivo/' },
         { label: 'Ferramentas', href: '/calculadoras/' },
         { label: 'Luxímetro', href: '/calculadoras/luximetro.html' },
         { label: 'Solo', href: '/calculadoras/super-solo.html' }
@@ -966,9 +968,11 @@ function markQuickNavActive(root) {
       .map(function (p) { return normalizeNavPath(p.trim()); })
       .filter(Boolean);
     const prefixMatch = prefixes.some(function (prefix) {
+      if (prefix === '/') return false;
       return current === prefix || current.startsWith(prefix + '/');
     });
-    const active = isNavLinkActive(href) || prefixMatch;
+    const exact = link.getAttribute('data-active-exact') === '1';
+    const active = exact ? isNavLinkActive(href) : (isNavLinkActive(href) || prefixMatch);
     link.classList.toggle('is-active', active);
     if (active) link.setAttribute('aria-current', 'page');
     else link.removeAttribute('aria-current');
@@ -1315,6 +1319,14 @@ function filterAdminOnlyNav(items, authState) {
 function getSiteHubNav(authState) {
   const quick = [
       {
+        href: '/cultivo/',
+        icon: '📓',
+        label: i18n('nav.diaryShort', 'Diário'),
+        tip: i18n('nav.quickGrowTip', 'Diário de pesquisas e registos de cultivo'),
+        prefixes: '/cultivo,/planejamento',
+        tone: 'cultivo'
+      },
+      {
         href: '/videos/',
         icon: '▶',
         label: i18n('nav.videos', 'Vídeos'),
@@ -1418,9 +1430,24 @@ function getSiteHubNav(authState) {
             href: HOME,
             icon: '🏠',
             label: i18n('common.home', 'Início'),
-            prefixes: '/inverno',
+            prefixes: '/',
             exact: true,
             tone: 'inicio'
+          },
+          {
+            href: '/cultivo/',
+            icon: '📓',
+            label: i18n('nav.growDiary', 'Diário de pesquisas'),
+            prefixes: '/cultivo',
+            tone: 'cultivo'
+          },
+          {
+            href: '/cultivo/?view=novo',
+            icon: '＋',
+            label: i18n('pages.home.newDiaryTitle', 'Novo diário de cultivo'),
+            prefixes: '',
+            exact: true,
+            tone: 'cultivo'
           },
           {
             href: '/laboratorio/',
@@ -1677,10 +1704,10 @@ function buildHeaderHTML(site, authState) {
 
   const headerBoat =
     '<a href="' + HOME + '" class="header-quick-link header-quick-link--brand header-quick-link--boat logo-link"' +
-    ' data-active-prefixes="/inverno"' +
-    ' data-tip="' + escapeNavText(i18n('nav.quickInvernoTip', 'O barco no gelo — Tamara e o ofício de ficar')) + '"' +
-    ' aria-label="' + escapeNavText(i18n('nav.inverno', 'Bom dia, Inverno')) + '"' +
-    ' title="' + escapeNavText(i18n('nav.inverno', 'Bom dia, Inverno')) + '">' +
+    ' data-active-exact="1"' +
+    ' data-tip="' + escapeNavText(i18n('common.home', 'Início')) + '"' +
+    ' aria-label="' + escapeNavText(i18n('common.home', 'Início')) + '"' +
+    ' title="' + escapeNavText(i18n('common.home', 'Início')) + '">' +
     '<span class="header-quick-link-icon" aria-hidden="true">' +
     '<svg class="header-boat-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">' +
     '<path d="M3.1 16.4h17.8c.45 0 .72.52.43.88C20.3 18.7 18.4 19.7 16 19.7H8c-2.4 0-4.3-1-5.33-2.42-.29-.36-.02-.88.43-.88z"/>' +

@@ -1,8 +1,6 @@
-# Página inicial: Bom dia, Inverno
-/ /inverno/ 302
-/inicio /inverno/ 302
-/inicio/ /inverno/ 302
-/index.html /inverno/ 302
+# Página inicial: Index (ferramenta de cultivo)
+/inicio /
+/inicio/ /
 
 /calculadoras.html /calculadoras/ 301
 /luximetro.html /calculadoras/luximetro.html 301

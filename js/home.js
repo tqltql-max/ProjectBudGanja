@@ -159,6 +159,50 @@ async function loadLatestPosts() {
   renderHomePostCards(container, pickHomeLatestPosts(posts, 4));
 }
 
+async function loadGuiaChapters() {
+  const list = document.getElementById('home-guia-chapters');
+  if (!list) return;
+
+  let data = null;
+  try {
+    const res = await fetch('/api/guia-cultivo');
+    if (res.ok) data = await res.json();
+  } catch (e) { /* static */ }
+
+  if (!data || !data.chapters) {
+    try {
+      const res = await fetch('/content/guia-cultivo.json');
+      if (res.ok) data = await res.json();
+    } catch (e) { /* ignore */ }
+  }
+
+  const chapters = (data && data.chapters) || [];
+  if (!chapters.length) {
+    list.innerHTML =
+      '<li class="home-guia-item home-guia-item--empty">' +
+      '<a href="/videos/?topic=cultivo">' +
+      '<strong>' + escapeHtml(i18nHome('pages.home.cardGuiaTitle', 'Guia de Cultivo Básico')) + '</strong>' +
+      '<span>' + escapeHtml(i18nHome('pages.home.cardGuiaBtn', 'Abrir guia')) + '</span>' +
+      '</a></li>';
+    return;
+  }
+
+  list.innerHTML = chapters.map(function (ch) {
+    const firstId = (ch.videoIds && ch.videoIds[0]) || '';
+    const href = firstId
+      ? 'https://www.youtube.com/watch?v=' + encodeURIComponent(firstId)
+      : '/videos/?topic=cultivo';
+    const desc = String(ch.description || '').trim();
+    return (
+      '<li class="home-guia-item">' +
+      '<a href="' + escapeHtml(href) + '"' + (firstId ? ' target="_blank" rel="noopener noreferrer"' : '') + '>' +
+      '<strong>' + escapeHtml(ch.title || '') + '</strong>' +
+      (desc ? '<span>' + escapeHtml(desc) + '</span>' : '') +
+      '</a></li>'
+    );
+  }).join('');
+}
+
 async function loadSorteioBanner() {
   const banner = document.getElementById('home-sorteio-banner');
   if (!banner) return;
@@ -209,8 +253,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (page !== 'home' && page !== 'laboratorio') return;
   loadSorteioBanner();
   loadLatestPosts();
+  loadGuiaChapters();
   window.addEventListener('budganja:locale-change', function () {
     loadSorteioBanner();
     loadLatestPosts();
+    loadGuiaChapters();
   });
 });

@@ -246,7 +246,8 @@ function jogosWatchPath(pathname) {
 }
 
 function legacyRedirectFor(staticPath) {
-  if (staticPath === '/' || staticPath === '/inicio' || staticPath === '/inicio/' || staticPath === '/index.html') return '/inverno/';
+  if (staticPath === '/inicio' || staticPath === '/inicio/') return '/';
+  if (staticPath === '/games' || staticPath === '/games/') return '/jogos/';
   if (staticPath === '/jogos/paulinho' || staticPath === '/jogos/paulinho/') return '/jogos/aleff/';
   if (staticPath === '/jogos/aleph' || staticPath === '/jogos/aleph/') return '/jogos/aleff/';
   if (staticPath === '/calculadoras.html') return '/calculadoras/';

@@ -12,7 +12,7 @@ const { CALCULADORAS, getCalculadoraUrl } = require('../lib/calculadoras-registr
 
 const STATIC = [
   { loc: '/', priority: '1.0', changefreq: 'weekly' },
-  { loc: '/inverno/', priority: '1.0', changefreq: 'weekly' },
+  { loc: '/inverno/', priority: '0.85', changefreq: 'weekly' },
   { loc: '/vida/', priority: '0.9', changefreq: 'weekly' },
   { loc: '/origami/', priority: '0.85', changefreq: 'weekly' },
   { loc: '/origami/barquinho-de-papel/', priority: '0.8', changefreq: 'monthly' },
