@@ -1,0 +1,196 @@
+/* Hub de jogos — Paulinho o LOKO, GTA RP e o resto */
+
+body[data-page="jogos"].jogos-launch,
+body[data-jogos="hub"] {
+    --jogos-ink: #eef8d8;
+    --jogos-muted: #b7c9a0;
+    --jogos-lime: #9ad15f;
+    --jogos-deep: #071018;
+}
+
+body[data-jogos="hub"] #main-content.jogos-launch {
+    padding: 0;
+    max-width: none;
+    width: 100%;
+}
+
+.jogos-launch {
+    color: var(--jogos-ink);
+}
+
+.jogos-hero {
+    display: grid;
+    gap: 1.1rem;
+    padding: 1.2rem 1.1rem 1.6rem;
+    background:
+        radial-gradient(ellipse 70% 50% at 0% 0%, rgba(154, 209, 95, 0.16), transparent 55%),
+        #071018;
+}
+
+.jogos-hero-cover {
+    margin: 0;
+}
+
+.jogos-hero-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 42vh;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid rgba(154, 209, 95, 0.28);
+}
+
+.jogos-kicker {
+    margin: 0 0 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--jogos-lime);
+}
+
+.jogos-hero-copy h1 {
+    margin: 0 0 0.35rem;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: #f4ffe6;
+}
+
+.jogos-credit,
+.jogos-lead,
+.jogos-section-head p {
+    margin: 0;
+    color: var(--jogos-muted);
+    line-height: 1.45;
+}
+
+.jogos-credit {
+    margin-bottom: 0.45rem;
+    font-weight: 600;
+    color: #d7ecc0;
+}
+
+.jogos-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-top: 1rem;
+}
+
+.jogos-cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+    background: var(--jogos-lime);
+    color: #071018;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.jogos-cta--ghost {
+    background: transparent;
+    color: var(--jogos-ink);
+    border: 1px solid rgba(154, 209, 95, 0.4);
+}
+
+.jogos-cta:hover,
+.jogos-cta:focus-visible {
+    filter: brightness(1.08);
+    outline: none;
+}
+
+.jogos-section {
+    padding: 1.4rem 1.1rem 1.8rem;
+    border-top: 1px solid rgba(154, 209, 95, 0.16);
+}
+
+.jogos-section-head {
+    margin-bottom: 1rem;
+}
+
+.jogos-section-head h2 {
+    margin: 0 0 0.35rem;
+    font-size: clamp(1.4rem, 3.5vw, 2rem);
+    letter-spacing: -0.02em;
+    color: #f4ffe6;
+}
+
+.jogos-card-grid {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.jogos-card {
+    display: grid;
+    gap: 0.28rem;
+    padding: 0.85rem;
+    border: 1px solid rgba(154, 209, 95, 0.22);
+    border-radius: 14px;
+    background: rgba(9, 22, 14, 0.72);
+    color: inherit;
+    text-decoration: none;
+}
+
+.jogos-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.35rem;
+}
+
+.jogos-card-kicker {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--jogos-lime);
+}
+
+.jogos-card strong {
+    font-size: 1.15rem;
+    letter-spacing: -0.02em;
+    color: #f4ffe6;
+}
+
+.jogos-card span:last-child {
+    color: var(--jogos-muted);
+    font-size: 0.95rem;
+}
+
+.jogos-card:hover,
+.jogos-card:focus-visible {
+    border-color: var(--jogos-lime);
+    outline: none;
+}
+
+.jogos-card--feature {
+    background: linear-gradient(160deg, rgba(154, 209, 95, 0.16), rgba(9, 22, 14, 0.9));
+}
+
+@media (min-width: 720px) {
+    .jogos-hero {
+        grid-template-columns: 1.15fr 1fr;
+        align-items: center;
+        padding: 1.6rem 1.6rem 1.8rem;
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+
+    .jogos-hero-cover img {
+        max-height: none;
+    }
+
+    .jogos-section {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+
+    .jogos-card-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

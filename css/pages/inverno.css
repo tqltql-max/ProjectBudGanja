@@ -39,20 +39,6 @@ body[data-page="inverno"] #main-content {
     background: #070c11;
 }
 
-.inverno-hero-media {
-    position: relative;
-    display: block;
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    max-height: min(86vh, 920px);
-    margin-inline: auto;
-    object-fit: contain;
-    object-position: center top;
-    z-index: 0;
-    background: #070c11;
-}
-
 .inverno-snow {
     position: absolute;
     inset: 0;
@@ -624,6 +610,7 @@ body[data-page="inverno"] #main-content {
 
     .inverno-hero-copy {
         background: #0b1218;
+        padding-top: calc(var(--header-height, 60px) + 1.35rem);
     }
 
     .inverno-hero h1 {

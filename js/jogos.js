@@ -100,8 +100,10 @@
   ];
 
   var HUB_NAMES = [
+    { href: '/jogos/aleff/', nameKey: 'pages.games.paulinhoTitle', nameFallback: 'Paulinho o LOKO' },
     { href: '/jogos/gtarp/', nameKey: 'pages.games.gtarpTitle', nameFallback: 'GTA RP' },
-    { href: '/jogos/aleff/', nameKey: 'pages.games.aleffTitle', nameFallback: 'Aleff' },
+    { href: '/jogos/hopejoy/', nameKey: 'pages.games.hopejoyTitle', nameFallback: 'Hope Joy' },
+    { href: '/jogos/bagual/', nameKey: 'pages.games.bagualTitle', nameFallback: 'Todo Poderoso Bagual' },
     { href: '/jogos/zangado/', nameKey: 'pages.games.zangadoTitle', nameFallback: 'Zangado' },
     { href: '/jogos/broto/', nameKey: 'pages.games.brotoTitle', nameFallback: 'Broto' },
     { href: '/jogos/cadernos/', nameKey: 'pages.games.notebooksTitle', nameFallback: 'Cadernos' }
@@ -191,6 +193,7 @@
   function renderHub() {
     var nav = document.getElementById('jogos-names');
     if (!nav) return;
+    if (nav.getAttribute('data-static') === '1') return;
     nav.setAttribute('aria-label', i18n('pages.games.namesLabel', 'Nomes'));
     nav.innerHTML = HUB_NAMES.map(function (item) {
       return (
