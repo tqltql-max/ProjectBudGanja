@@ -32,7 +32,6 @@
     <link rel="manifest" href="/manifest.json?v=355">
     <meta name="theme-color" content="#0a2230">
     <link rel="stylesheet" href="/css/style.css?v=356">
-    <link rel="preload" as="image" href="/imagens/inspecoes/bom-dia-inverno-cover.jpg" fetchpriority="high">
     <title>Início | Inspetor BudGanja</title>
 </head>
 <body data-page="home">
@@ -40,25 +39,36 @@
 
     <main id="main-content">
     <div class="lab-atmosphere" aria-hidden="true"></div>
-    <section class="hero hero--inverno">
-        <a class="hero-cover-link" href="/inverno/">
-            <img
-                class="hero-cover"
-                src="/imagens/inspecoes/bom-dia-inverno-cover.jpg"
-                alt="Bom dia, Inverno — Tamara Klink"
-                width="1200"
-                height="630"
-                decoding="async"
-                fetchpriority="high">
-        </a>
+    <section class="hero">
         <div class="hero-content">
             <p class="hero-eyebrow" data-i18n="pages.home.heroEyebrow">Fitoterapia brasileira · educação e cultivo responsável</p>
             <h1 class="hero-title" data-i18n="pages.home.heroTitle">Inspetor BudGanja</h1>
             <p class="hero-subtitle" data-i18n="pages.home.heroSubtitle">Laboratório de inspeção.</p>
             <div class="hero-actions">
-                <a href="/inverno/" class="botao botao-home" data-i18n="pages.home.promoJoin">Bom dia, Inverno</a>
+                <a href="/laboratorio/" class="botao botao-home" data-i18n="pages.home.labMapBtn">Ver todas as salas</a>
                 <a href="/jogos/" class="botao botao-home botao-home--secondary" data-i18n="pages.home.cardGamesBtn">Abrir jogos</a>
             </div>
+        </div>
+    </section>
+
+    <section class="home-announcement" aria-labelledby="home-inverno-title">
+        <div class="conteudo home-announcement-inner home-announcement-inner--promo">
+            <a class="home-promo-cover-link" href="/inverno/">
+                <img
+                    class="home-promo-cover"
+                    src="/imagens/inspecoes/bom-dia-inverno-cover.jpg"
+                    alt="Bom dia, Inverno — Tamara Klink"
+                    width="1200"
+                    height="630"
+                    decoding="async"
+                    loading="lazy">
+            </a>
+            <div class="home-announcement-copy">
+                <p class="home-announcement-badge" data-i18n="pages.home.promoBadge">Divulgação</p>
+                <h2 id="home-inverno-title" data-i18n="pages.home.promoTitle">Bom dia, Inverno — Tamara Klink</h2>
+                <p class="home-announcement-prize" data-i18n="pages.home.promoText">Oito meses no gelo. O livro pede para circular.</p>
+            </div>
+            <a href="/inverno/" class="botao botao-home" data-i18n="pages.home.promoJoin">Bom dia, Inverno</a>
         </div>
     </section>
 
