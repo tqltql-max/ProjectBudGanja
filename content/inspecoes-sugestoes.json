@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T09:54:17.414Z",
+  "updatedAt": "2026-08-26T09:59:06.477Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3889,6 +3889,30 @@
         "/posts/post-inspecao-palavra-pessoas.html"
       ],
       "notes": "Cap. 367 — pedido Feio; âncora feio; homónimo tratado cortado."
+    },
+    {
+      "id": "palavra-chegou",
+      "title": "Chegou — pretérito de chegar; lat. plicāre",
+      "titleEn": "Chegou — preterite of chegar; Lat. plicāre",
+      "titleEs": "Chegou — pretérito de chegar; lat. plicāre",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: chegou ← chegar ← lat. plicāre (pl- → ch-); Chegou = pretérito de campo; ≠ cheio ≠ cheiro ≠ GPS ≠ Enter; Valeu !!!",
+      "whyEn": "Words: chegou ← chegar ← Lat. plicāre (pl- → ch-); Chegou = field preterite; ≠ cheio ≠ cheiro ≠ GPS ≠ Enter; Valeu !!!",
+      "whyEs": "Palabras: chegou ← chegar ← lat. plicāre (pl- → ch-); Chegou = pretérito de campo; ≠ cheio ≠ cheiro ≠ GPS ≠ Enter; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-chegou",
+      "doneHref": "/posts/post-inspecao-palavra-chegou.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/chegar",
+        "https://en.wiktionary.org/wiki/plico#Latin",
+        "/posts/post-inspecao-palavra-caminho.html",
+        "/posts/post-inspecao-palavra-enter.html",
+        "/posts/post-inspecao-palavra-ficar.html",
+        "/posts/post-inspecao-expressao-meter-marcha.html"
+      ],
+      "notes": "Cap. 368 — pedido Chegou; lema chegar; cortes cheio/cheiro."
     },
     {
       "id": "palavra-incrivel",

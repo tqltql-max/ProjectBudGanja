@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T09:54:17.422Z",
+  "updatedAt": "2026-08-26T09:59:06.484Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -9184,6 +9184,22 @@
       "curiositiesEn": "The ear glues feio to feito (past participle of fazer). The Ugly Duckling uses the word; it is not the word. Ugly weather lives on the tempo sheet. Sheet ≠ insult how-to.",
       "historyEs": "Del latín foedus, foeda, foedum «feo, sucio» — no el homónimo foedus «tratado» (fidēs). PT diptonga (feio); ES queda feo. Pedido 2026-08-26: inspección de Feio.",
       "curiositiesEs": "El oído pega feio con feito (participio de fazer). El Patito Feo usa la palabra; no la es. Tiempo feo vive en la ficha tempo. Ficha ≠ tutorial de insulto."
+    },
+    {
+      "id": "chegou",
+      "word": "chegou",
+      "simple": "Pretérito de chegar ← lat. plicāre (pl- → ch-). ≠ cheio ≠ cheiro ≠ GPS ≠ Enter. Valeu !!!",
+      "simpleEn": "Preterite of chegar ← Lat. plicāre (pl- → ch-). ≠ cheio ≠ cheiro ≠ GPS ≠ Enter. Valeu !!!",
+      "simpleEs": "Pretérito de chegar ← lat. plicāre (pl- → ch-). ≠ cheio ≠ cheiro ≠ GPS ≠ Enter. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-chegou.html",
+      "history": "Do latim plicāre «dobrar». O português palataliza pl- → ch- (chegar); o espanhol faz ll- (llegar). Pedido de campo 2026-08-26: inpecao da palabra Chegou.",
+      "curiosities": "A orelha cola chegou em cheio (plēnus) e cheiro (flagrāre) — três che- de árvores distintas. Chega! é o mesmo verbo no limite. Ficar é o inverso. Ficha ≠ GPS.",
+      "historyEn": "From Latin plicāre “to fold”. Portuguese palatalizes pl- → ch- (chegar); Spanish makes ll- (llegar). Field 2026-08-26: inspect Chegou.",
+      "curiositiesEn": "The ear glues chegou to cheio (plēnus) and cheiro (flagrāre) — three che- from distinct trees. Chega! is the same verb at the limit. Ficar is the inverse. Sheet ≠ GPS.",
+      "historyEs": "Del latín plicāre «plegar». El portugués palataliza pl- → ch- (chegar); el español hace ll- (llegar). Pedido 2026-08-26: inspección de Chegou.",
+      "curiositiesEs": "El oído pega chegou con cheio (plēnus) y cheiro (flagrāre) — tres che- de árboles distintos. ¡Chega! es el mismo verbo en el límite. Ficar es el inverso. Ficha ≠ GPS."
     },
     {
       "group": "aviso",

@@ -1,6 +1,31 @@
 {
-  "updatedAt": "2026-08-26T09:54:17.446Z",
+  "updatedAt": "2026-08-26T09:59:06.504Z",
   "poems": [
+    {
+      "id": "chegou",
+      "slug": "chegou",
+      "title": "Chegou",
+      "titleEn": "Chegou",
+      "titleEs": "Chegou",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — plicāre; ≠ cheio ≠ cheiro ≠ GPS; Valeu !!!",
+      "teaserEn": "BudGanja echo — plicāre; ≠ cheio ≠ cheiro ≠ GPS; Valeu !!!",
+      "teaserEs": "Eco BudGanja — plicāre; ≠ cheio ≠ cheiro ≠ GPS; ¡Valeu !!!",
+      "body": "Chegou.\nNão é cheio.\nNão é cheiro.\n\nPlicāre era dobrar —\na vela, o caminho, o corpo\naté o limiar.\npl- virou ch- nesta boca.\n\nChega! é o mesmo verbo\nquando o suficiente chegou.\nFicar é o inverso:\npermanecer, não partir.\n\nValeu !!!\nno limiar,\nsem fundir o passo com o odor.",
+      "bodyEn": "Chegou.\nNot cheio (full).\nNot cheiro (smell).\n\nPlicāre was to fold —\nthe sail, the path, the body\nup to the threshold.\npl- became ch- in this mouth.\n\nChega! is the same verb\nwhen enough has arrived.\nTo stay is the inverse:\nremain, not depart.\n\nValeu !!!\non the threshold,\nwithout fusing the step with the scent.",
+      "bodyEs": "Chegou.\nNo es cheio (lleno).\nNo es cheiro (olor).\n\nPlicāre era plegar —\nla vela, el camino, el cuerpo\nhasta el umbral.\npl- viró ch- en esta boca.\n\n¡Chega! es el mismo verbo\ncuando lo suficiente llegó.\nQuedar es el inverso:\npermanecer, no partir.\n\n¡Valeu !!!\nen el umbral,\nsin fundir el paso con el olor.",
+      "inspectionHref": "/posts/post-inspecao-palavra-chegou.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "chegou",
+        "chegar",
+        "plicare",
+        "palavra"
+      ]
+    },
     {
       "id": "feio",
       "slug": "feio",
