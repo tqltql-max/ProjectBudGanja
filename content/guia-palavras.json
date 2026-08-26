@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T09:43:48.305Z",
+  "updatedAt": "2026-08-26T09:54:17.422Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -9168,6 +9168,22 @@
       "curiositiesEn": "Link with truth and gesture; contrast with rancor: Valeu !!! by looking again.",
       "historyEs": "Respeto viene del latín respectus / respicere — mirar de nuevo. En el laboratorio es consideración y práctica social, sin sermón.",
       "curiositiesEs": "Eslabón con verdad y gesto; contraste con rencor: Valeu !!! mirando de nuevo."
+    },
+    {
+      "id": "feio",
+      "word": "feio",
+      "simple": "Lat. foedus (adjectivo) — o que desagrada o olhar; que feio! no pátio. ≠ feito ≠ Patinho ≠ tempo feio ≠ insulto-manual. Valeu !!!",
+      "simpleEn": "Lat. foedus (adjective) — what displeases the eye; yard moral que feio!. ≠ feito ≠ Ugly Duckling ≠ ugly weather ≠ insult how-to. Valeu !!!",
+      "simpleEs": "Lat. foedus (adjetivo) — lo que desagrada la mirada; que feio! en el patio. ≠ feito ≠ Patito ≠ tiempo feo ≠ tutorial de insulto. ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-feio.html",
+      "history": "Do latim foedus, foeda, foedum «feio, sujo, desairoso» — não o homónimo foedus «tratado» (fidēs). PT ditonga (feio); ES fica feo. Pedido de campo 2026-08-26: inspecao da palavra Feio.",
+      "curiosities": "A orelha cola feio em feito (particípio de fazer). O Patinho Feio usa a palavra; não a é. Tempo feio vive na ficha tempo. Ficha ≠ tutorial de insulto.",
+      "historyEn": "From Latin foedus, foeda, foedum “ugly, foul” — not the homonym foedus “treaty” (fidēs). PT diphthong (feio); ES stays feo. Field 2026-08-26: inspect Feio.",
+      "curiositiesEn": "The ear glues feio to feito (past participle of fazer). The Ugly Duckling uses the word; it is not the word. Ugly weather lives on the tempo sheet. Sheet ≠ insult how-to.",
+      "historyEs": "Del latín foedus, foeda, foedum «feo, sucio» — no el homónimo foedus «tratado» (fidēs). PT diptonga (feio); ES queda feo. Pedido 2026-08-26: inspección de Feio.",
+      "curiositiesEs": "El oído pega feio con feito (participio de fazer). El Patito Feo usa la palabra; no la es. Tiempo feo vive en la ficha tempo. Ficha ≠ tutorial de insulto."
     },
     {
       "group": "aviso",

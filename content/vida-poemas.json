@@ -1,6 +1,31 @@
 {
-  "updatedAt": "2026-08-26T09:33:19.389Z",
+  "updatedAt": "2026-08-26T09:54:17.446Z",
   "poems": [
+    {
+      "id": "feio",
+      "slug": "feio",
+      "title": "Feio",
+      "titleEn": "Feio",
+      "titleEs": "Feio",
+      "author": "Laboratório BudGanja",
+      "authorEn": "BudGanja Lab",
+      "authorEs": "Laboratorio BudGanja",
+      "teaser": "Eco BudGanja — lat. foedus; ≠ feito ≠ tratado ≠ Patinho; Valeu !!!",
+      "teaserEn": "BudGanja echo — Lat. foedus; ≠ feito ≠ treaty ≠ duckling; Valeu !!!",
+      "teaserEs": "Eco BudGanja — lat. foedus; ≠ feito ≠ tratado ≠ Patito; ¡Valeu !!!",
+      "body": "Feio.\nNão é feito.\nNão é o tratado.\n\nFoedus era o que desagrada o olhar —\nsujo, desairoso, fora do agrado.\nO outro foedus é o pacto.\nA orelha cola; o étimo corta.\n\nNão é o patinho do conto.\nNão é o tempo nublado.\nÉ a qualidade — não o golpe.\n\nValeu !!!\ncom respeito no olhar,\nsem ensinar a ferir o rosto.",
+      "bodyEn": "Feio.\nNot feito (done).\nNot the treaty.\n\nFoedus was what displeases the eye —\nfoul, unseemly, off the pleasing.\nThe other foedus is the pact.\nThe ear glues; the etymon cuts.\n\nNot the duckling of the tale.\nNot the ugly weather.\nIt is the quality — not the blow.\n\nValeu !!!\nwith respect in the gaze,\nwithout teaching how to wound the face.",
+      "bodyEs": "Feio.\nNo es feito (hecho).\nNo es el tratado.\n\nFoedus era lo que desagrada la mirada —\nsucio, desairado, fuera del agrado.\nEl otro foedus es el pacto.\nEl oído pega; el étimo corta.\n\nNo es el patito del cuento.\nNo es el tiempo nublado.\nEs la cualidad — no el golpe.\n\n¡Valeu !!!\ncon respeto en la mirada,\nsin enseñar a herir el rostro.",
+      "inspectionHref": "/posts/post-inspecao-palavra-feio.html",
+      "tags": [
+        "poesia",
+        "vida",
+        "feio",
+        "foedus",
+        "respeito",
+        "palavra"
+      ]
+    },
     {
       "id": "anjos-pra-quem-tem-fe",
       "slug": "anjos-pra-quem-tem-fe",

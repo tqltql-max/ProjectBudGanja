@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T09:43:48.305Z",
+  "updatedAt": "2026-08-26T09:54:17.414Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -3865,6 +3865,30 @@
         "/posts/post-inspecao-palavra-valeu.html"
       ],
       "notes": "Cap. 65 — respeito como prática; sem sermão."
+    },
+    {
+      "id": "palavra-feio",
+      "title": "Feio — lat. foedus; não o tratado nem o feito",
+      "titleEn": "Feio — Lat. foedus; not the treaty and not feito",
+      "titleEs": "Feio — lat. foedus; no el tratado ni o feito",
+      "tipo": "palavra",
+      "priority": 1,
+      "status": "feita",
+      "why": "Palavras: feio ← lat. foedus (adjectivo); Feio = maiúscula de campo; ≠ feito ≠ Patinho ≠ tempo feio ≠ insulto-manual; Valeu !!!",
+      "whyEn": "Words: feio ← Lat. foedus (adjective); Feio = field capital; ≠ feito ≠ Ugly Duckling ≠ ugly weather ≠ insult how-to; Valeu !!!",
+      "whyEs": "Palabras: feio ← lat. foedus (adjetivo); Feio = mayúscula de campo; ≠ feito ≠ Patito ≠ tiempo feo ≠ tutorial de insulto; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-feio",
+      "doneHref": "/posts/post-inspecao-palavra-feio.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/feio",
+        "https://en.wiktionary.org/wiki/foedus#Latin",
+        "/posts/post-inspecao-palavra-respeito.html",
+        "/posts/post-inspecao-palavra-pato.html",
+        "/posts/post-inspecao-palavra-tempo.html",
+        "/posts/post-inspecao-palavra-pessoas.html"
+      ],
+      "notes": "Cap. 367 — pedido Feio; âncora feio; homónimo tratado cortado."
     },
     {
       "id": "palavra-incrivel",
