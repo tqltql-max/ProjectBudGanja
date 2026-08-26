@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '210';
+const ASSET_V = '211';
 
 function isAdminOnlyHref(href) {
   const h = String(href || '').split('?')[0].split('#')[0].toLowerCase();
@@ -28,6 +28,12 @@ function filterAdminOnlyNav(items, isAdmin) {
       next.children = filterAdminOnlyNav(next.children, false);
       if (next.submenu && !next.href && !next.children.length) return null;
     }
+    if (Array.isArray(next.links)) {
+      next.links = filterAdminOnlyNav(next.links, false);
+    }
+    if (Array.isArray(next.items)) {
+      next.items = filterAdminOnlyNav(next.items, false);
+    }
     if (Array.isArray(next.groups)) {
       next.groups = next.groups.map(function (group) {
         const g = Object.assign({}, group);
@@ -38,6 +44,7 @@ function filterAdminOnlyNav(items, isAdmin) {
         return (g.items && g.items.length) || (g.links && g.links.length);
       });
     }
+    if (Array.isArray(next.links) && !next.links.length && !next.href) return null;
     return next;
   }).filter(Boolean);
 }
