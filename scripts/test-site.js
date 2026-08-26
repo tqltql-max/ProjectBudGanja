@@ -250,8 +250,60 @@ async function main() {
         ok.push(`header ${h} presente`);
       }
     });
+    if (indexRes.status !== 200) {
+      issues.push({ kind: 'home', severity: 'error', message: `/ → HTTP ${indexRes.status} (Index tem de ser 200, sem redirect)` });
+    } else if (!indexRes.body.includes('home-launch') || !indexRes.body.includes('data-page="home"')) {
+      issues.push({ kind: 'home', severity: 'error', message: '/ não serviu o Index (home-launch)' });
+    } else if (/location\.replace\(['"]\/inverno\//.test(indexRes.body) || /url=\/inverno\//.test(indexRes.body)) {
+      issues.push({ kind: 'home', severity: 'error', message: '/ ainda redirecciona o cliente para /inverno/' });
+    } else {
+      ok.push('/ é o Index, sem redirect para /inverno/');
+    }
   } catch (e) {
     issues.push({ kind: 'security', severity: 'error', message: 'Verificação de headers falhou: ' + e.message });
+  }
+
+  const redirectsFile = fs.readFileSync(path.join(ROOT, '_redirects'), 'utf8');
+  if (/(^|\n)\/(?:index\.html|inicio\/?)?\s+\/inverno\//.test(redirectsFile)) {
+    issues.push({ kind: 'home', severity: 'error', message: '_redirects ainda manda a homepage para /inverno/' });
+  } else {
+    ok.push('_redirects não manda / para /inverno/');
+  }
+
+  try {
+    const inicioRes = await fetchUrl('/inicio');
+    const loc = String((inicioRes.headers && inicioRes.headers.location) || '');
+    if (inicioRes.status !== 302 || loc !== '/') {
+      issues.push({ kind: 'home', severity: 'error', message: `/inicio → ${inicioRes.status} ${loc} (esperado 302 /)` });
+    } else {
+      ok.push('/inicio → /');
+    }
+  } catch (e) {
+    issues.push({ kind: 'home', severity: 'error', message: '/inicio → ' + e.message });
+  }
+
+  try {
+    const invernoRes = await fetchUrl('/inverno/');
+    if (invernoRes.status !== 200 || !invernoRes.body.includes('Bom dia, Inverno')) {
+      issues.push({ kind: 'home', severity: 'error', message: '/inverno/ não serviu a página do livro' });
+    } else if (/Paulinho o LOKO/.test(invernoRes.body) && /kick\.com\/paulinholoko/.test(invernoRes.body)) {
+      issues.push({ kind: 'home', severity: 'error', message: '/inverno/ ainda mistura divulgação de games do Paulinho' });
+    } else {
+      ok.push('/inverno/ é o livro da Tamara');
+    }
+  } catch (e) {
+    issues.push({ kind: 'home', severity: 'error', message: '/inverno/ → ' + e.message });
+  }
+
+  try {
+    const jogosRes = await fetchUrl('/jogos/');
+    if (jogosRes.status !== 200 || !jogosRes.body.includes('Paulinho o LOKO') || !jogosRes.body.includes('jogos-launch')) {
+      issues.push({ kind: 'home', severity: 'error', message: '/jogos/ não serviu o hub do Paulinho' });
+    } else {
+      ok.push('/jogos/ é o hub de games');
+    }
+  } catch (e) {
+    issues.push({ kind: 'home', severity: 'error', message: '/jogos/ → ' + e.message });
   }
 
   const errors = issues.filter((i) => i.severity === 'error');
