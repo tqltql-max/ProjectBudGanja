@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T09:59:06.484Z",
+  "updatedAt": "2026-08-27T10:52:46.628Z",
   "title": "Guia de Palavras",
   "titleEn": "Words Guide",
   "titleEs": "Guía de Palabras",
@@ -6470,6 +6470,16 @@
       "curiositiesEn": "The ear may glue étimo to ação. The lab cuts: étimo is the piece; āctiō is the etymon of ação, not of étimo. Close: Valeu !!!",
       "historyEs": "Étimo viene del griego étymon (sentido verdadero), de étymos (verdadero). No es el oficio — ese es etimología. El pedido de campo trae un espécimen: el étimo de ação es el latín āctiō ← agere («hacer, impulsar»).",
       "curiositiesEs": "El oído puede pegar étimo en ação. El lab corta: étimo es la pieza; āctiō es el étimo de ação, no de étimo. Cierre: Valeu !!!"
+    },
+    {
+      "id": "cortar",
+      "word": "cortar",
+      "simple": "Lat. curtāre / curtus — encurtar; o étimo corta o que a orelha cola; ≠ tesoura-caedere ≠ colar ≠ copiar; Valeu !!!",
+      "simpleEn": "Lat. curtāre / curtus — to shorten; the etymon cuts what the ear glued; ≠ scissors-caedere ≠ paste ≠ copy; Valeu !!!",
+      "simpleEs": "Lat. curtāre / curtus — acortar; el étimo corta lo que el oído pegó; ≠ tijera-caedere ≠ pegar ≠ copiar; ¡Valeu !!!",
+      "group": "lexico",
+      "fromTitle": false,
+      "href": "/posts/post-inspecao-palavra-cortar.html"
     },
     {
       "id": "patia",

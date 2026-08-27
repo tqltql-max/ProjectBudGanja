@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T09:59:06.477Z",
+  "updatedAt": "2026-08-27T10:52:46.618Z",
   "description": "Fila editorial de sugestões de inspeção — o laboratório escolhe o próximo relatório com critério e fontes. Tipo «arte» alimenta a aba Artes (filmes, séries, artes).",
   "items": [
     {
@@ -12045,6 +12045,29 @@
         "/posts/post-inspecao-expressao-desatar-o-no.html"
       ],
       "notes": "Cap. 288 — ausência × ofício; lapso espaço/til; ficha ≠ tutorial de abandono."
+    },
+    {
+      "id": "palavra-cortar",
+      "title": "Cortar — o étimo corta (≠ colar ≠ caedere)",
+      "titleEn": "Cortar — the etymon cuts (≠ glue ≠ caedere)",
+      "titleEs": "Cortar — el étimo corta (≠ pegar ≠ caedere)",
+      "tipo": "palavra",
+      "priority": 2,
+      "status": "feita",
+      "why": "Palavras: cortar (lat. curtāre) — o étimo corta o que a orelha cola; ≠ tesoura-caedere ≠ colar; Valeu !!!",
+      "whyEn": "Words: cortar (Lat. curtāre) — the etymon cuts what the ear glued; ≠ scissors-caedere ≠ paste; Valeu !!!",
+      "whyEs": "Palabras: cortar (lat. curtāre) — el étimo corta lo que el oído pegó; ≠ tijera-caedere ≠ pegar; ¡Valeu !!!",
+      "suggestedSlug": "inspecao-palavra-cortar",
+      "doneHref": "/posts/post-inspecao-palavra-cortar.html",
+      "seriesHint": "palavras-origem",
+      "sources": [
+        "https://pt.wiktionary.org/wiki/cortar",
+        "/posts/post-inspecao-palavra-etimo.html",
+        "/posts/post-inspecao-palavra-cola-colar.html",
+        "/posts/post-inspecao-expressao-a-orelha-cola-o-que-a-boca-juntou.html",
+        "/posts/post-inspecao-palavra-valeu.html"
+      ],
+      "notes": "Cap. 369 — cortar; cluster cola/copiar e caedere como corte."
     }
   ]
 }
