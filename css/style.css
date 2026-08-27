@@ -14309,7 +14309,52 @@ a.palavras-duplo-word:focus-visible {
 
 .biblioteca-hub-card--inspecoes { --bib-accent: #85c1e9; --bib-soft: rgba(93, 173, 226, 0.14); }
 .biblioteca-hub-card--unifesp { --bib-accent: #bb8fce; --bib-soft: rgba(155, 89, 182, 0.14); }
+.biblioteca-hub-card--esapp { --bib-accent: #7d9a3a; --bib-soft: rgba(125, 154, 58, 0.16); }
 .biblioteca-hub-card--cadernos { --bib-accent: #c9a227; --bib-soft: rgba(201, 162, 39, 0.16); }
+
+.esapp-hub-cover {
+  margin: 0 0 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.esapp-hub-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.esapp-grade {
+  display: grid;
+  gap: 0.6rem;
+}
+.esapp-term {
+  border: 1px solid rgba(125, 154, 58, 0.28);
+  border-radius: 10px;
+  padding: 0.35rem 0.85rem 0.55rem;
+  background: rgba(125, 154, 58, 0.06);
+}
+.esapp-term summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.45rem 0;
+}
+.esapp-term-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0.3rem;
+}
+.esapp-term-list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.7rem;
+  align-items: baseline;
+  padding: 0.28rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.esapp-term-hours {
+  margin-left: auto;
+  opacity: 0.72;
+  font-size: 0.9em;
+}
 .biblioteca-hub-card--palavras { --bib-accent: #f5b041; --bib-soft: rgba(243, 156, 18, 0.14); }
 .biblioteca-hub-card--pesquisas { --bib-accent: #5dade2; --bib-soft: rgba(52, 152, 219, 0.14); }
 .biblioteca-hub-card--plantas { --bib-accent: #58d68d; --bib-soft: rgba(39, 174, 96, 0.14); }

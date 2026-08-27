@@ -75,6 +75,15 @@ window.__BIBLIOTECA_NAV__ = {
           "description": "Hub do XIV curso — caderno público de estudo e SIEX."
         },
         {
+          "label": "Curso ESAPP",
+          "tileLabel": "ESAPP",
+          "href": "/biblioteca/esapp/",
+          "icon": "🌾",
+          "slug": "esapp",
+          "featured": true,
+          "description": "Hub de Agronomia — Engenharia Agronômica em Paraguaçu Paulista."
+        },
+        {
           "label": "Cadernos de Engenharia",
           "tileLabel": "Cadernos",
           "href": "/biblioteca/cadernos/",
@@ -3293,6 +3302,14 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: «luz» (lat. *lūx*) — claridade e efeito do clique; tríade circuito + sol (fonte natural); Valeu !!!"
             },
             {
+              "label": "Inspeção: Anjos (Pra quem tem fé) — O Rappa e a locução que a vida não acaba",
+              "tileLabel": "Inspeção: Anjos (Pra quem tem f…",
+              "href": "/posts/post-inspecao-arte-anjos-pra-quem-tem-fe.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-arte-anjos-pra-quem-tem-fe",
+              "description": "Artes · O Rappa — Anjos (Pra quem tem fé), 2013, Nunca Tem Fim...; locução pra quem tem fé a vida nunca tem fim; ≠ púlpito ≠ Hungria; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Sol — astro, luz natural e ciclo",
               "tileLabel": "Inspeção: Sol — astro, luz natu…",
               "href": "/posts/post-inspecao-palavra-sol.html",
@@ -4325,12 +4342,28 @@ window.__BIBLIOTECA_NAV__ = {
               "description": "Palavras: Clipper = isqueiro Flamagas; ≠ cabelo ≠ navio ≠ clipe; par BIC; Valeu !!!"
             },
             {
+              "label": "Inspeção: Plantar a semente — o gesto que entrega a partida",
+              "tileLabel": "Inspeção: Plantar a semente — o…",
+              "href": "/posts/post-inspecao-expressao-plantar-a-semente.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-plantar-a-semente",
+              "description": "Expressões: plantar a semente / as sementes — gesto activo; lapso a sementes; ≠ guia de cultivo ≠ fábrica ≠ «foi plantada»; Valeu !!!"
+            },
+            {
               "label": "Inspeção: Liberdade — o nome, as salas; ≠ bairro ≠ filme ≠ linha livre",
               "tileLabel": "Inspeção: Liberdade — o nome, a…",
               "href": "/posts/post-inspecao-palavra-liberdade.html",
               "icon": "🔍",
               "slug": "post-inspecao-palavra-liberdade",
               "description": "Palavras: liberdade (lībertās); livre/libre; ≠ bairro ≠ Shawshank ≠ DSL; Cantouou · Ufa!!!; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Deixar na mão — o gesto que larga no instante combinado",
+              "tileLabel": "Inspeção: Deixar na mão — o ges…",
+              "href": "/posts/post-inspecao-expressao-deixar-na-mao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-expressao-deixar-na-mao",
+              "description": "Expressões: deixar na mão — abandonar quando a outra palma precisava; lapso deixar  na mao; ≠ meter a mão ≠ cuidados ≠ tutorial; Valeu !!!"
             },
             {
               "label": "Inspeção: Fantasia — a faculdade; ≠ fantástico ≠ roupa ≠ filme",
@@ -4755,6 +4788,62 @@ window.__BIBLIOTECA_NAV__ = {
               "icon": "🔍",
               "slug": "post-inspecao-palavra-json",
               "description": "Palavras: JSON = JavaScript Object Notation; relacionar PARK (recinto / to park); cola jay-son com Parkinson recusada; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Enter — intrāre, a tecla e bem-vindos!!!",
+              "tileLabel": "Inspeção: Enter — intrāre, a te…",
+              "href": "/posts/post-inspecao-palavra-enter.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-enter",
+              "description": "Palavras: Enter ← lat. intrāre — tecla × verbo × limiar; relação com bem-vindos!!! (bene + venīre); ≠ EXIT ≠ login frio; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Variação — varius; é nois; Legal !!!",
+              "tileLabel": "Inspeção: Variação — varius; é …",
+              "href": "/posts/post-inspecao-palavra-variacao.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-variacao",
+              "description": "Palavras: variação ← lat. varius — VRAIÇÃO × VAIRAÇÃO × VARIAÇAO; é nois; Legal !!! (bacana, ≠ lei); Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Pessoas — o vocábulo que nomeia a série",
+              "tileLabel": "Inspeção: Pessoas — o vocábulo …",
+              "href": "/posts/post-inspecao-palavra-pessoas.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-pessoas",
+              "description": "Palavras: pessoas ← lat. persōna (máscara → alguém); o vocábulo, não o hub; ≠ conjugação (1.ª/2.ª/3.ª); Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Internet — inter- + net; o lapso Intenet",
+              "tileLabel": "Inspeção: Internet — inter- + n…",
+              "href": "/posts/post-inspecao-palavra-internet.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-internet",
+              "description": "Palavras: Internet ← inter- + net; Intenet = lapso (cai o r); ≠ WWW ≠ discada ≠ login; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Feio — lat. foedus; não o tratado nem o feito",
+              "tileLabel": "Inspeção: Feio — lat. foedus; n…",
+              "href": "/posts/post-inspecao-palavra-feio.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-feio",
+              "description": "Palavras: feio ← lat. foedus (adjectivo); Feio = maiúscula de campo; ≠ feito ≠ Patinho ≠ tempo feio ≠ insulto-manual; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Chegou — pretérito de chegar; lat. plicāre",
+              "tileLabel": "Inspeção: Chegou — pretérito de…",
+              "href": "/posts/post-inspecao-palavra-chegou.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-chegou",
+              "description": "Palavras: chegou ← chegar ← lat. plicāre (pl- → ch-); Chegou = pretérito de campo; ≠ cheio ≠ cheiro ≠ GPS ≠ Enter; Valeu !!!"
+            },
+            {
+              "label": "Inspeção: Cortar — o étimo corta (≠ colar ≠ caedere)",
+              "tileLabel": "Inspeção: Cortar — o étimo cort…",
+              "href": "/posts/post-inspecao-palavra-cortar.html",
+              "icon": "🔍",
+              "slug": "post-inspecao-palavra-cortar",
+              "description": "Palavras: cortar (lat. curtāre / curtus) — o étimo corta o que a orelha cola; ≠ tesoura-caedere ≠ colar ≠ copiar; Valeu !!!"
             },
             {
               "label": "Inspeção: Eletrizante — carga, hype BR e Valeu !!!",

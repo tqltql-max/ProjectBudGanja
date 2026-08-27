@@ -32,7 +32,10 @@
     'equipamentos/clonadora-12-estacas.html': [{ label: 'Início', href: HOME }, { label: 'Objetos', href: '/objetos/' }, { label: 'Clonadora de 12 estacas' }],
     'equipamentos/manual-clonadora.html': [{ label: 'Início', href: HOME }, { label: 'Objetos', href: '/objetos/' }, { label: 'Clonadoras' }],
     'equipamentos/manual-hidrocloradora.html': [{ label: 'Início', href: HOME }, { label: 'Objetos', href: '/objetos/' }, { label: 'Clonadora de 12 estacas', href: '/equipamentos/clonadora-12-estacas.html' }],
-    'biblioteca/pesquisas/substratos.html': [{ label: 'Início', href: HOME }, { label: 'Pesquisas', href: '/biblioteca/pesquisas/' }, { label: 'Substratos' }]
+    'biblioteca/pesquisas/substratos.html': [{ label: 'Início', href: HOME }, { label: 'Pesquisas', href: '/biblioteca/pesquisas/' }, { label: 'Substratos' }],
+    'biblioteca/unifesp/index.html': [{ label: 'Início', href: HOME }, { label: 'Biblioteca', href: '/biblioteca/' }, { label: 'Curso UNIFESP' }],
+    'biblioteca/esapp/index.html': [{ label: 'Início', href: HOME }, { label: 'Biblioteca', href: '/biblioteca/' }, { label: 'Curso ESAPP' }],
+    'biblioteca/cadernos/index.html': [{ label: 'Início', href: HOME }, { label: 'Biblioteca', href: '/biblioteca/' }, { label: 'Cadernos' }]
   };
 
   var POST_PARENT = {
@@ -123,7 +126,9 @@
       'Substratos': 'menu.substratos.tileLabel',
       'Plantas': 'nav.plants',
       'UNIFESP': 'nav.unifesp',
-      'Curso UNIFESP': 'menu.unifesp.label'
+      'Curso UNIFESP': 'menu.unifesp.label',
+      'ESAPP': 'nav.esapp',
+      'Curso ESAPP': 'menu.esapp.label'
     };
     if (window.BudGanjaI18n && map[label]) return window.BudGanjaI18n.t(map[label], label);
     return label;

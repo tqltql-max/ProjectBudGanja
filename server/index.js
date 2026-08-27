@@ -555,6 +555,8 @@ const server = http.createServer((req, res) => {
     if (staticPath === '/biblioteca/pesquisas') staticPath = '/biblioteca/pesquisas/';
     if (staticPath === '/biblioteca/inspecoes') staticPath = '/biblioteca/inspecoes/';
     if (staticPath === '/biblioteca/cadernos') staticPath = '/biblioteca/cadernos/';
+    if (staticPath === '/biblioteca/unifesp') staticPath = '/biblioteca/unifesp/';
+    if (staticPath === '/biblioteca/esapp') staticPath = '/biblioteca/esapp/';
     if (staticPath.endsWith('/')) staticPath += 'index.html';
 
     const legacyLocation = legacyRedirectFor(url);

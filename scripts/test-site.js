@@ -308,6 +308,25 @@ async function main() {
     issues.push({ kind: 'home', severity: 'error', message: '/jogos/ → ' + e.message });
   }
 
+  try {
+    const esappRes = await fetchUrl('/biblioteca/esapp/');
+    if (esappRes.status !== 200 || !esappRes.body.includes('Agronomia') || !esappRes.body.includes('ESAPP')) {
+      issues.push({ kind: 'home', severity: 'error', message: '/biblioteca/esapp/ não serviu o hub de Agronomia' });
+    } else if (!esappRes.body.includes('não ESSAP') && !esappRes.body.includes('não «ESSAP»') && !/ESSAP/.test(esappRes.body)) {
+      issues.push({ kind: 'home', severity: 'warn', message: '/biblioteca/esapp/ não nomeia o lapso ESSAP' });
+    } else {
+      ok.push('/biblioteca/esapp/ é o hub de Agronomia da ESAPP');
+    }
+    const esappSlash = await fetchUrl('/biblioteca/esapp');
+    if (esappSlash.status !== 200 && esappSlash.status !== 302) {
+      issues.push({ kind: 'home', severity: 'error', message: '/biblioteca/esapp sem barra → HTTP ' + esappSlash.status });
+    } else {
+      ok.push('/biblioteca/esapp sem barra resolve');
+    }
+  } catch (e) {
+    issues.push({ kind: 'home', severity: 'error', message: '/biblioteca/esapp/ → ' + e.message });
+  }
+
   const errors = issues.filter((i) => i.severity === 'error');
   const warns = issues.filter((i) => i.severity === 'warn');
 

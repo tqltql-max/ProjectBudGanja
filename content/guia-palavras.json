@@ -10354,6 +10354,22 @@
       "curiositiesEs": "El laboratorio trata el acrónimo como sede institucional de las clases XIV — crédito, no afiliación comercial."
     },
     {
+      "id": "esapp",
+      "word": "ESAPP",
+      "simple": "Escola Superior de Agronomia de Paraguaçu Paulista — graduação em Engenharia Agronômica. Grafia ESAPP (não ESSAP). Valeu !!!",
+      "simpleEn": "School of Agronomy of Paraguaçu Paulista — Agronomic Engineering degree. Spelling ESAPP (not ESSAP). Valeu !!!",
+      "simpleEs": "Escuela Superior de Agronomía de Paraguaçu Paulista — grado en Ingeniería Agronómica. Grafía ESAPP (no ESSAP). ¡Valeu !!!",
+      "group": "tecnico",
+      "fromTitle": true,
+      "href": "/biblioteca/esapp/",
+      "history": "A ESAPP (Escola Superior de Agronomia de Paraguaçu Paulista) é mantida pela FUNGE. Credenciada em 1974. O laboratório trata a sigla como casa de graduação agronómica — crédito, não afiliação.",
+      "curiosities": "O pedido de campo ESSAP é lapso: o lema institucional é ESAPP. Complementa o curso UNIFESP; não o substitui.",
+      "historyEn": "ESAPP (School of Agronomy of Paraguaçu Paulista) is maintained by FUNGE. Accredited in 1974. The lab treats the acronym as the agronomy degree house — credit, not affiliation.",
+      "curiositiesEn": "The field slip ESSAP is a misspelling: the institutional lemma is ESAPP. It complements the UNIFESP course; it does not replace it.",
+      "historyEs": "La ESAPP es mantenida por la FUNGE. Acreditada en 1974. El laboratorio trata la sigla como casa de grado agronómico — crédito, no afiliación.",
+      "curiositiesEs": "El pedido ESSAP es lapsus: el lema institucional es ESAPP. Complementa el curso UNIFESP; no lo sustituye."
+    },
+    {
       "id": "usuario-drogas",
       "word": "Usuário",
       "simple": "Rótulo policial/social oposto a «paciente medicinal» no debate canábico — quem não judicializa costuma ficar nesta categoria.",
