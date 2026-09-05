@@ -18,9 +18,11 @@ const {
   isBlockedStaticPath,
   isProtectedHtml,
   isProtectedPath,
+  isInspectionProtectedPath,
   isAuthProtectedHtml,
   isAuthProtectedPath
 } = require('../lib/static-security.js');
+const { hasInspectionAccess } = require('../lib/inspecoes-public.js');
 const {
   isDevModeEnabled,
   shouldBlockForDevMode,
@@ -247,9 +249,12 @@ function jogosWatchPath(pathname) {
 
 function legacyRedirectFor(staticPath) {
   if (staticPath === '/inicio' || staticPath === '/inicio/') return '/';
-  if (staticPath === '/games' || staticPath === '/games/') return '/jogos/';
-  if (staticPath === '/jogos/paulinho' || staticPath === '/jogos/paulinho/') return '/jogos/aleff/';
-  if (staticPath === '/jogos/aleph' || staticPath === '/jogos/aleph/') return '/jogos/aleff/';
+  if (staticPath === '/inverno' || staticPath === '/inverno/') return '/';
+  if (/^\/inverno\//.test(staticPath)) return '/';
+  if (staticPath === '/games' || staticPath === '/games/') return '/videos/';
+  if (staticPath === '/jogos' || staticPath === '/jogos/') return '/videos/';
+  if (/^\/jogos\//.test(staticPath)) return '/videos/';
+  if (staticPath === '/gtarp-admin.html') return '/admin.html';
   if (staticPath === '/calculadoras.html') return '/calculadoras/';
   if (staticPath === '/luximetro.html') return '/calculadoras/luximetro.html';
   if (staticPath === '/equipamentos.html' || staticPath === '/equipamentos' || staticPath === '/equipamentos/') return '/objetos/';
@@ -264,6 +269,12 @@ function legacyRedirectFor(staticPath) {
   if (staticPath === '/sobre.html') return '/info/sobre.html';
   if (staticPath === '/contato.html') return '/info/contato.html';
   if (staticPath === '/privacidade.html') return '/info/privacidade.html';
+  if (staticPath === '/biblioteca/unifesp' || staticPath === '/biblioteca/unifesp/') return '/biblioteca/';
+  if (staticPath === '/biblioteca/unifesp/caderno.html') return '/biblioteca/cadernos/';
+  if (staticPath === '/biblioteca/unifesp/livro-xiv.html') return '/biblioteca/';
+  if (staticPath === '/info/apresentacao-unifesp.html') return '/biblioteca/';
+  if (staticPath === '/info/apresentacao-unifesp-print.html') return '/biblioteca/';
+  if (staticPath === '/posts/post-inspecao-curso-unifesp-cannabis-medicinal.html') return '/biblioteca/inspecoes/';
   const postMatch = staticPath.match(/^\/(post-[^/]+\.html)$/i);
   if (postMatch) return '/posts/' + postMatch[1];
   return null;
@@ -524,34 +535,12 @@ const server = http.createServer((req, res) => {
     if (staticPath === '/equipamentos') staticPath = '/equipamentos/';
     if (staticPath === '/sorteios') staticPath = '/sorteios/';
     if (staticPath === '/videos') staticPath = '/videos/';
-    if (staticPath === '/jogos') staticPath = '/jogos/';
-    if ((url === '/jogos/' || url === '/jogos') && qs) {
-      const params = new URLSearchParams(qs.startsWith('?') ? qs.slice(1) : qs);
-      const canal = String(params.get('canal') || params.get('channel') || '').toLowerCase();
-      if (canal === 'zangado' || canal === 'zangadoreview' || canal === 'tio-zangado') {
-        return resRedirect(res, '/jogos/zangado/');
-      }
-      if (canal === 'paulinho' || canal === 'aleff' || canal === 'aleph' || canal === 'paulinholoko' || canal === 'paulinho-loko') {
-        return resRedirect(res, '/jogos/aleff/');
-      }
-      if (canal === 'hopejoy' || canal === 'hope-joy' || canal === 'hopejoyoficial') {
-        return resRedirect(res, '/jogos/hopejoy/');
-      }
-      if (
-        canal === 'bagual' ||
-        canal === 'poderosobagual' ||
-        canal === 'todo-poderoso-bagual' ||
-        canal === 'todopoderosobagual'
-      ) {
-        return resRedirect(res, '/jogos/bagual/');
-      }
-      if (canal === 'gtarp' || canal === 'gta-rp' || canal === 'gta') {
-        return resRedirect(res, '/jogos/gtarp/');
-      }
+    if (staticPath === '/jogos' || staticPath === '/jogos/' || /^\/jogos\//.test(staticPath)) {
+      return resRedirect(res, '/videos/');
     }
-    const jogosWatch = jogosWatchPath(url);
-    if (jogosWatch) staticPath = jogosWatch;
-    if (staticPath === '/biblioteca') staticPath = '/biblioteca/';
+    if (staticPath === '/gtarp-admin.html') {
+      return resRedirect(res, '/admin.html');
+    }    if (staticPath === '/biblioteca') staticPath = '/biblioteca/';
     if (staticPath === '/biblioteca/pesquisas') staticPath = '/biblioteca/pesquisas/';
     if (staticPath === '/biblioteca/inspecoes') staticPath = '/biblioteca/inspecoes/';
     if (staticPath === '/biblioteca/cadernos') staticPath = '/biblioteca/cadernos/';
@@ -579,10 +568,18 @@ const server = http.createServer((req, res) => {
       }
     }
 
+    if (isInspectionProtectedPath(pageFile)) {
+      const canViewInspecoes = await hasInspectionAccess(appStore, req.headers.cookie);
+      if (!canViewInspecoes) {
+        const returnTo = encodeURIComponent(staticPath);
+        return resRedirect(res, '/login.html?returnTo=' + returnTo);
+      }
+    }
+
     if (isProtectedPath(pageFile) && !isAdmin) {
       const returnTo = isProtectedHtml(pageFile)
         ? encodeURIComponent(staticPath)
-        : encodeURIComponent('/info/apresentacao-unifesp.html');
+        : encodeURIComponent('/biblioteca/');
       return resRedirect(res, '/login.html?returnTo=' + returnTo);
     }
 

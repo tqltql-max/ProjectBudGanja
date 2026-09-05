@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Relatórios de inspeção do Inspetor BudGanja: método verificável sobre cultivo, canais e formação — achados, medições e recomendações práticas.">
+    <meta name="description" content="Relatórios de inspeção do Inspetor BudGanja: plantas, frutos, animais, fungos, derivados e equipamento de cultivo — método verificável.">
     <meta property="og:title" content="Inspeções | Inspetor BudGanja">
-    <meta property="og:description" content="Auditorias técnicas com método verificável: canais, cursos e equipamentos.">
+    <meta property="og:description" content="Auditorias técnicas de cultivo: plantas, animais, fungos, derivados e equipamentos.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://inspetorbudganja.com.br/biblioteca/inspecoes/">
     <meta property="og:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
@@ -15,23 +15,22 @@
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Inspeções | Inspetor BudGanja">
-    <meta name="twitter:description" content="Auditorias técnicas com método verificável: canais, cursos e equipamentos.">
+    <meta name="twitter:description" content="Auditorias técnicas de cultivo: plantas, animais, fungos, derivados e equipamentos.">
     <meta name="twitter:image" content="https://inspetorbudganja.com.br/imagens/og-default.jpg">
     <link rel="canonical" href="https://inspetorbudganja.com.br/biblioteca/inspecoes/">
-
+    <link rel="icon" href="/imagens/favicon-32.v357.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/imagens/favicon-48.v357.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/imagens/favicon-16.v357.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/imagens/icon-192.v357.png" sizes="192x192" type="image/png">
+    <link rel="shortcut icon" href="/favicon.v357.ico" sizes="any">
+    <link rel="icon" href="/favicon.v357.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v357.png">
+    <link rel="manifest" href="/manifest.json?v=357">
+    <meta name="theme-color" content="#0a2230">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="BudGanja">
-    <link rel="icon" href="/imagens/favicon-32.v355.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/imagens/favicon-48.v355.png" sizes="48x48" type="image/png">
-    <link rel="icon" href="/imagens/favicon-16.v355.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="/imagens/icon-192.v355.png" sizes="192x192" type="image/png">
-    <link rel="shortcut icon" href="/favicon.v355.ico" sizes="any">
-    <link rel="icon" href="/favicon.v355.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/imagens/apple-touch-icon.v355.png">
-    <link rel="manifest" href="/manifest.json?v=355">
-    <meta name="theme-color" content="#0a2230">
-    <link rel="stylesheet" href="/css/style.css?v=355">
+    <link rel="stylesheet" href="/css/style.css?v=357">
     <title>Inspeções | Inspetor BudGanja</title>
 </head>
 <body data-page="inspecoes">
@@ -41,7 +40,7 @@
         <header class="inspecoes-hub-header">
             <p class="guia-badge" data-i18n="pages.inspections.eyebrow">Biblioteca</p>
             <h1 data-i18n="pages.inspections.title">Inspeções</h1>
-            <p class="secao-subtitulo inspecoes-hub-lead" data-i18n="pages.inspections.subtitle">Relatórios técnicos com método verificável — legado, pessoas, canais, cursos, artigos, plantas medicinais, frutos, derivados de risco, palavras, divulgação, artes e objectos.</p>
+            <p class="secao-subtitulo inspecoes-hub-lead" data-i18n="pages.inspections.subtitle">Relatórios técnicos de cultivo — plantas, frutos, animais, fungos, derivados de risco e equipamento.</p>
         </header>
 
         <nav id="inspecoes-filters" class="videos-filters-wrap" aria-label="Filtrar por série" data-i18n-aria="pages.inspections.filtersLabel"></nav>
@@ -52,7 +51,7 @@
                 type="search"
                 id="inspecoes-search"
                 class="videos-search-input"
-                placeholder="Título, série ou palavra…"
+                placeholder="Título, série ou planta…"
                 data-i18n-placeholder="pages.inspections.searchPlaceholder"
                 autocomplete="off"
                 enterkeyhint="search"
@@ -66,95 +65,10 @@
             <button type="button" id="inspecoes-load-more" class="botao botao-outline" hidden data-i18n="pages.inspections.loadMore">Carregar mais</button>
         </p>
 
-        <section id="inspecoes-artes" class="inspecoes-hub-panel inspecoes-sugestoes" data-sug-tipo="arte" hidden>
-            <header class="inspecoes-hub-panel-head">
-                <h2 class="category-title" data-i18n="pages.inspections.sectionArts">Artes</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionArtsDesc">Filmes, séries, música, artes visuais e obras culturais ligadas a plantas, linguagem ou ao ecossistema inspecionado — fila de sugestões abaixo; relatórios publicados aparecem em cards. Distinto de Canais (YouTube) e de Pessoas (biografia).</p>
-            </header>
-            <div class="inspecoes-sug-filters" role="group" aria-label="Filtro de sugestões de artes">
-                <button type="button" class="inspecoes-sug-filter is-active" data-sug-filter="abertas" aria-pressed="true" data-i18n="pages.inspections.sugFilterOpen">Abertas</button>
-                <button type="button" class="inspecoes-sug-filter" data-sug-filter="feitas" aria-pressed="false" data-i18n="pages.inspections.sugFilterDone">Feitas</button>
-                <button type="button" class="inspecoes-sug-filter" data-sug-filter="todas" aria-pressed="false" data-i18n="pages.inspections.sugFilterAll">Todas</button>
-            </div>
-            <div class="inspecoes-sug-list" data-inspecoes-sugestoes-list>
-                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-            </div>
-        </section>
-
-        <section id="inspecoes-filmografias" class="inspecoes-hub-panel inspecoes-sugestoes" data-sug-tipo="filmografia" hidden>
-            <header class="inspecoes-hub-panel-head">
-                <h2 class="category-title" data-i18n="pages.inspections.sectionFilmography">Filmografias</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionFilmographyDesc">Catálogos de ofício de ecrã — a lista de títulos de uma pessoa, distinta da biografia (Pessoas) e da ficha de uma só obra (Artes). A série inaugura-se com Leonardo DiCaprio.</p>
-            </header>
-            <div class="inspecoes-sug-filters" role="group" aria-label="Filtro de sugestões de filmografias">
-                <button type="button" class="inspecoes-sug-filter is-active" data-sug-filter="abertas" aria-pressed="true" data-i18n="pages.inspections.sugFilterOpen">Abertas</button>
-                <button type="button" class="inspecoes-sug-filter" data-sug-filter="feitas" aria-pressed="false" data-i18n="pages.inspections.sugFilterDone">Feitas</button>
-                <button type="button" class="inspecoes-sug-filter" data-sug-filter="todas" aria-pressed="false" data-i18n="pages.inspections.sugFilterAll">Todas</button>
-            </div>
-            <div class="inspecoes-sug-list" data-inspecoes-sugestoes-list>
-                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-            </div>
-        </section>
-
-        <section id="inspecoes-jogos" class="inspecoes-hub-panel inspecoes-sugestoes" data-sug-tipo="jogo" hidden>
-            <header class="inspecoes-hub-panel-head">
-                <h2 class="category-title" data-i18n="pages.inspections.sectionGames">Cadernos de jogo</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionGamesDesc">Cadernos de inspeção de videojogos — o primeiro recorte, a cidade ou a sessão — com método, sem walkthrough de delito. Distinto de Artes (filme/série/música).</p>
-            </header>
-            <div class="inspecoes-sug-filters" role="group" aria-label="Filtro de cadernos de jogo">
-                <button type="button" class="inspecoes-sug-filter is-active" data-sug-filter="abertas" aria-pressed="true" data-i18n="pages.inspections.sugFilterOpen">Abertas</button>
-                <button type="button" class="inspecoes-sug-filter" data-sug-filter="feitas" aria-pressed="false" data-i18n="pages.inspections.sugFilterDone">Feitas</button>
-                <button type="button" class="inspecoes-sug-filter" data-sug-filter="todas" aria-pressed="false" data-i18n="pages.inspections.sugFilterAll">Todas</button>
-            </div>
-            <div class="inspecoes-sug-list" data-inspecoes-sugestoes-list>
-                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-            </div>
-        </section>
-
-        <section id="inspecoes-expressoes" class="inspecoes-hub-panel inspecoes-sugestoes" data-sug-tipo="expressao" hidden>
-            <header class="inspecoes-hub-panel-head">
-                <h2 class="category-title" data-i18n="pages.inspections.sectionExpressions">Expressões e Ditados populares</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionExpressionsDesc">Frases da oralidade — ditados, refrões e avisos que circulam na cultura — inspecionadas como objecto próprio: forma canónica, origem, aviso embutido e cruzamentos com Palavras, Artes e Vida.</p>
-            </header>
-            <div class="inspecoes-sug-filters" role="group" aria-label="Filtro de sugestões de expressões">
-                <button type="button" class="inspecoes-sug-filter is-active" data-sug-filter="abertas" aria-pressed="true" data-i18n="pages.inspections.sugFilterOpen">Abertas</button>
-                <button type="button" class="inspecoes-sug-filter" data-sug-filter="feitas" aria-pressed="false" data-i18n="pages.inspections.sugFilterDone">Feitas</button>
-                <button type="button" class="inspecoes-sug-filter" data-sug-filter="todas" aria-pressed="false" data-i18n="pages.inspections.sugFilterAll">Todas</button>
-            </div>
-            <div class="inspecoes-sug-list" data-inspecoes-sugestoes-list>
-                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-            </div>
-        </section>
-
-        <section id="inspecoes-palavras" class="inspecoes-hub-panel inspecoes-sugestoes" data-sug-tipo="palavra" hidden>
-            <header class="inspecoes-hub-panel-head">
-                <h2 class="category-title" data-i18n="pages.inspections.sectionWords">Palavras</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionWordsDesc">Origem, viagem e transformação histórica de vocábulos — com mapa do duplo sentido prejudicial à originalidade; fichas publicadas em cards e fila de sugestões abaixo.</p>
-                <p class="inspecoes-hub-section-desc">
-                    <a href="/guia/palavras.html" class="botao botao-outline botao-sm" data-i18n="pages.inspections.wordsGuideLink">Guia de Palavras (glossário simples)</a>
-                </p>
-            </header>
-            <div class="palavras-duplo-sentido" data-palavras-duplo-sentido>
-                <h3 class="palavras-duplo-heading" data-i18n="pages.inspections.wordsCatalogTitle">Duplo sentido prejudicial à originalidade</h3>
-                <p class="inspecoes-hub-section-desc" data-palavras-duplo-lead></p>
-                <div class="palavras-duplo-list" data-palavras-duplo-list>
-                    <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-                </div>
-            </div>
-            <div class="inspecoes-sug-filters" role="group" aria-label="Filtro de sugestões de palavras">
-                <button type="button" class="inspecoes-sug-filter is-active" data-sug-filter="abertas" aria-pressed="true" data-i18n="pages.inspections.sugFilterOpen">Abertas</button>
-                <button type="button" class="inspecoes-sug-filter" data-sug-filter="feitas" aria-pressed="false" data-i18n="pages.inspections.sugFilterDone">Feitas</button>
-                <button type="button" class="inspecoes-sug-filter" data-sug-filter="todas" aria-pressed="false" data-i18n="pages.inspections.sugFilterAll">Todas</button>
-            </div>
-            <div class="inspecoes-sug-list" data-inspecoes-sugestoes-list>
-                <p class="empty-message" data-i18n="pages.inspections.loading">Carregando…</p>
-            </div>
-        </section>
-
         <section id="inspecoes-sugestoes" class="inspecoes-hub-panel inspecoes-sugestoes" hidden>
             <header class="inspecoes-hub-panel-head">
                 <h2 class="category-title" data-i18n="pages.inspections.sectionSuggestions">Sugestões</h2>
-                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionSuggestionsDesc">Fila editorial do laboratório — ideias e próximos relatórios, separados das inspeções já publicadas. Quando um relatório sai, a sugestão marca-se como feita automaticamente.</p>
+                <p class="inspecoes-hub-section-desc" data-i18n="pages.inspections.sectionSuggestionsDesc">Fila editorial do laboratório — ideias e próximos relatórios de cultivo, separados das inspeções já publicadas.</p>
             </header>
             <div class="inspecoes-sug-filters" role="group" aria-label="Filtro de sugestões">
                 <button type="button" class="inspecoes-sug-filter is-active" data-sug-filter="abertas" aria-pressed="true" data-i18n="pages.inspections.sugFilterOpen">Abertas</button>
@@ -168,15 +82,12 @@
     </main>
 
     <div id="site-footer"></div>
-  <script src="/js/app-version-check.js?v=355"></script>
-    <script src="/js/i18n-data.js?v=355"></script>
-    <script src="/js/page-translations-data.js?v=355"></script>
-    <script src="/js/i18n.js?v=355"></script>
-    <script src="/js/ferramentas-nav-data.js?v=355"></script>
-    <script src="/js/layout.js?v=355"></script>
-    <script src="/js/inspecoes-sugestoes.js?v=355"></script>
-    <script src="/js/palavras-duplo-sentido.js?v=355"></script>
-    <script src="/js/posts.js?v=355"></script>
+    <script src="/js/i18n-data.js?v=357"></script>
+    <script src="/js/i18n.js?v=357"></script>
+    <script src="/js/ferramentas-nav-data.js?v=357"></script>
+    <script src="/js/layout.js?v=357"></script>
+    <script src="/js/inspecoes-sugestoes.js?v=357"></script>
+    <script src="/js/posts.js?v=357"></script>
 
 </body>
 </html>

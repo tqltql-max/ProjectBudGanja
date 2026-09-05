@@ -288,9 +288,9 @@
 
   var TOPIC_ALIASES = {
     cultivo: 'cultivo',
-    unifesp: 'unifesp',
-    'aulas-unifesp': 'unifesp',
-    aulas: 'unifesp',
+    unifesp: 'ciencia',
+    'aulas-unifesp': 'ciencia',
+    aulas: 'ciencia',
     saude: 'saude',
     saúde: 'saude',
     'saude-e-usos': 'saude',
@@ -303,10 +303,10 @@
     selvagem: 'natureza'
   };
 
-  var TOPIC_ORDER = ['cultivo', 'unifesp', 'saude', 'plantas', 'ciencia', 'desenhos', 'natureza'];
+  var TOPIC_ORDER = ['cultivo', 'plantas', 'ciencia'];
 
-  var CHANNEL_ORDER = ['movrecam', 'canabinall', 'inspetor', 'lair', 'davis', 'dallelaste', 'tamara', 'amyr', 'rasmussen', 'disneyjr', 'slivki', 'manualdomundo'];
-  var GAMES_CHANNELS = { zangado: true, paulinho: true, hopejoy: true };
+  var CHANNEL_ORDER = ['inspetor'];
+  var GAMES_CHANNELS = {};
 
   function isGamesChannel(id) {
     return !!GAMES_CHANNELS[id];
@@ -877,8 +877,7 @@
 
   function topicLabel(id) {
     if (id === 'cultivo') return i18n('pages.videos.topicCultivo', 'Cultivo');
-    if (id === 'unifesp') return i18n('pages.videos.topicUnifesp', 'Aulas UNIFESP');
-    if (id === 'saude') return i18n('pages.videos.topicSaude', 'Saúde e usos');
+        if (id === 'saude') return i18n('pages.videos.topicSaude', 'Saúde e usos');
     if (id === 'plantas') return i18n('pages.videos.topicPlantas', 'Plantas');
     if (id === 'ciencia') return i18n('pages.videos.topicCiencia', 'Ciência');
     if (id === 'desenhos') return i18n('pages.videos.topicDesenhos', 'Desenhos');
@@ -1996,7 +1995,6 @@
                 seriesOptions: [],
                 topicOptions: [
                   { id: 'cultivo', label: 'Cultivo' },
-                  { id: 'unifesp', label: 'Aulas UNIFESP' },
                   { id: 'saude', label: 'Saúde e usos' },
                   { id: 'plantas', label: 'Plantas' },
                   { id: 'ciencia', label: 'Ciência' },

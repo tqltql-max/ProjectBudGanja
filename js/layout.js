@@ -1,29 +1,18 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '356';
+const ASSET_V = '357';
 const HOME = '/';
-
-(function injectSiteSnowEarly() {
-  function add() {
-    if (document.querySelector('script[src*="site-snow.js"]')) return;
-    var s = document.createElement('script');
-    s.id = 'site-snow-js';
-    s.src = '/js/site-snow.js?v=' + ASSET_V;
-    (document.body || document.documentElement).appendChild(s);
-  }
-  if (document.querySelector('script[src*="site-snow.js"]')) return;
-  if (document.body) add();
-  else document.addEventListener('DOMContentLoaded', add);
-})();
 
 (function applyStoredTheme() {
   try {
-    if (localStorage.getItem('budganja-theme') === 'dark') {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
+    if (localStorage.getItem('budganja-theme') === 'light') {
       document.documentElement.removeAttribute('data-theme');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
     }
-  } catch (e) {}
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
 })();
 
 (function injectClickableLinkGold() {
@@ -796,12 +785,9 @@ const DEFAULT_SITE = {
     { label: 'Plantas', href: '/plantas/' },
     { label: 'Animais', href: '/animais/' },
     { label: 'Fungos', href: '/fungos/' },
-    { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
     { label: 'Cadernos de Engenharia', href: '/biblioteca/cadernos/' },
     { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
-    { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
     { label: 'Vídeos', href: '/videos/' },
-    { label: 'Jogos', href: '/jogos/' },
     { label: 'Objetos', href: '/objetos/' },
     { label: 'Ferramentas', href: '/calculadoras/' },
     { label: 'Comunidade', href: '/comunidade/' },
@@ -815,12 +801,10 @@ const DEFAULT_SITE = {
         { label: 'Plantas', href: '/plantas/' },
         { label: 'Animais', href: '/animais/' },
         { label: 'Fungos', href: '/fungos/' },
-        { label: 'Curso UNIFESP', href: '/biblioteca/unifesp/' },
         { label: 'Cadernos de Engenharia', href: '/biblioteca/cadernos/' },
-        { label: 'Inspeções', href: '/biblioteca/inspecoes/' },
+        { label: 'Inspeções', href: '/biblioteca/inspecoes/', inspectionsOnly: true },
         { label: 'Pesquisas', href: '/biblioteca/pesquisas/' },
         { label: 'Vídeos', href: '/videos/' },
-        { label: 'Jogos', href: '/jogos/' },
         { label: 'Objetos', href: '/objetos/' }
       ]
     },
@@ -885,7 +869,6 @@ function translateFooterLabel(label) {
     'Plantas': 'nav.plants',
     'Animais': 'nav.animals',
     'Fungos': 'nav.fungi',
-    'UNIFESP': 'nav.unifesp'
   };
   return map[label] ? i18n(map[label], label) : label;
 }
@@ -1303,6 +1286,7 @@ function isAuthUser(authState) {
 
 function navItemAllowed(item, authState) {
   if (!item) return false;
+  if (item.inspectionsOnly && !(authState && authState.canViewInspections)) return false;
   if (item.adminOnly && !isAdminAuth(authState)) return false;
   if (item.authOnly && !isAuthUser(authState)) return false;
   return true;
@@ -1367,14 +1351,6 @@ function getSiteHubNav(authState) {
         tone: 'fungos'
       },
       {
-        href: '/biblioteca/unifesp/',
-        icon: '🎓',
-        label: i18n('nav.unifesp', 'UNIFESP'),
-        tip: i18n('nav.quickUnifespTip', 'Curso de extensão UNIFESP sobre cannabis medicinal'),
-        prefixes: '/biblioteca/unifesp,/posts/post-inspecao-curso-unifesp',
-        tone: 'inspecoes'
-      },
-      {
         href: '/biblioteca/cadernos/',
         icon: '📓',
         label: i18n('nav.cadernosEngenharia', 'Cadernos'),
@@ -1391,10 +1367,19 @@ function getSiteHubNav(authState) {
         tone: 'inspecoes'
       },
       {
+        href: '/biblioteca/inspecoes/',
+        icon: '🔍',
+        label: i18n('nav.inspections', 'Inspeções'),
+        tip: i18n('nav.quickInspectionsTip', 'Relatórios técnicos com método verificável'),
+        prefixes: '/biblioteca/inspecoes',
+        tone: 'inspecoes',
+        inspectionsOnly: true
+      },
+      {
         href: '/biblioteca/',
         icon: '📚',
         label: i18n('nav.library', 'Biblioteca'),
-        tip: i18n('nav.quickLibraryTip', 'Inspeções, UNIFESP, guias, pesquisas e catálogos'),
+        tip: i18n('nav.quickLibraryTip', 'Inspeções, guias, pesquisas e catálogos'),
         prefixes: '/biblioteca/inspecoes,/guia',
         tone: 'inspecoes',
         authOnly: true
@@ -1414,14 +1399,6 @@ function getSiteHubNav(authState) {
         tip: i18n('nav.quickCalculatorsTip', 'VPD, pH, EC, luxímetro e mais'),
         prefixes: '/calculadoras',
         tone: 'ferramentas'
-      },
-      {
-        href: '/jogos/',
-        icon: '🎮',
-        label: i18n('nav.games', 'Jogos'),
-        tip: i18n('nav.quickGamesTip', 'Zangado e Paulinho o LOKO'),
-        prefixes: '/jogos',
-        tone: 'games'
       }
   ].filter(function (item) { return navItemAllowed(item, authState); });
 
@@ -1486,13 +1463,6 @@ function getSiteHubNav(authState) {
             tone: 'comunidade'
           },
           {
-            href: '/biblioteca/unifesp/',
-            icon: '🎓',
-            label: i18n('nav.unifesp', 'Curso UNIFESP'),
-            prefixes: '/biblioteca/unifesp',
-            tone: 'inspecoes'
-          },
-          {
             href: '/biblioteca/cadernos/',
             icon: '📓',
             label: i18n('nav.cadernosEngenharia', 'Cadernos'),
@@ -1511,7 +1481,8 @@ function getSiteHubNav(authState) {
             icon: '🔍',
             label: i18n('nav.inspections', 'Inspeções'),
             prefixes: '/biblioteca/inspecoes',
-            tone: 'inspecoes'
+            tone: 'inspecoes',
+            inspectionsOnly: true
           },
           {
             href: '/biblioteca/pesquisas/',
@@ -1526,13 +1497,6 @@ function getSiteHubNav(authState) {
             label: i18n('nav.videos', 'Vídeos'),
             prefixes: '/videos',
             tone: 'videos'
-          },
-          {
-            href: '/jogos/',
-            icon: '🎮',
-            label: i18n('nav.games', 'Jogos'),
-            prefixes: '/jogos',
-            tone: 'games'
           }
   ].filter(function (item) { return navItemAllowed(item, authState); });
 
@@ -1671,6 +1635,35 @@ function buildThemeToggleHTML(variant) {
   );
 }
 
+function isHomePage() {
+  return !!(document.body && document.body.dataset.page === 'home');
+}
+
+function buildHeaderRadioFallbackHTML() {
+  const label = i18n('radio.open', 'Abrir rádio');
+  const tip = i18n('nav.quickRadioTip', 'Playlist BudGanja Radio');
+  return (
+    '<a href="/radio/" class="header-quick-link header-quick-link--radio header-radio-fallback"' +
+    ' data-active-prefixes="/radio"' +
+    ' data-tip="' + escapeNavText(tip) + '"' +
+    ' aria-label="' + escapeNavText(label) + '"' +
+    ' title="' + escapeNavText(label) + '">' +
+    '<span class="header-quick-link-icon" aria-hidden="true">📻</span>' +
+    '<span class="header-quick-link-label">' + escapeNavText(i18n('nav.radio', 'BudGanja Radio')) + '</span>' +
+    '</a>'
+  );
+}
+
+function buildHomeRadioLangClusterHTML() {
+  return (
+    '<div class="header-cluster--community-lang">' +
+    '<div id="header-radio-host" class="header-radio-host"></div>' +
+    buildHeaderRadioFallbackHTML() +
+    buildLangSwitcherHTML('header') +
+    '</div>'
+  );
+}
+
 function buildHeaderHTML(site, authState) {
   const config = site || DEFAULT_SITE;
   const navItems = filterAdminOnlyNav(config.nav || DEFAULT_SITE.nav, authState);
@@ -1701,6 +1694,12 @@ function buildHeaderHTML(site, authState) {
     '</div>';
 
   const headerThemeToggle = buildThemeToggleHTML('header');
+  const homePage = isHomePage();
+  const headerRadioSlot = homePage
+    ? ''
+    : '<div id="header-radio-host" class="header-radio-host"></div>';
+  const homeRadioLangCluster = homePage ? buildHomeRadioLangClusterHTML() : '';
+  const headerLangUtility = homePage ? '' : buildLangSwitcherHTML('header');
 
   const headerBoat =
     '<a href="' + HOME + '" class="header-quick-link header-quick-link--brand header-quick-link--boat logo-link"' +
@@ -1725,14 +1724,15 @@ function buildHeaderHTML(site, authState) {
     '<div class="header-brand-group">' +
     headerBoat +
     '</div>' +
-    '<div id="header-radio-host" class="header-radio-host"></div>' +
+    headerRadioSlot +
     '<span class="header-chrome-sep" aria-hidden="true"></span>' +
     buildDesktopQuickNavHTML(authState) +
     '<span class="header-chrome-sep header-chrome-sep--end" aria-hidden="true"></span>' +
+    homeRadioLangCluster +
     '<div class="header-right">' +
     '<div class="header-utilities">' +
     headerToolbar +
-    buildLangSwitcherHTML('header') +
+    headerLangUtility +
     headerThemeToggle +
     '</div>' +
     '<button type="button" class="header-quick-link header-quick-link--menu menu-toggle" aria-label="' + escapeNavText(i18n('common.menuOpen', 'Abrir menu')) + '" aria-expanded="false" aria-controls="mobile-menu">' +
@@ -2041,9 +2041,17 @@ function buildFooterHTML(site) {
   const spotifyUrl = config.spotifyPodcastUrl || DEFAULT_SITE.spotifyPodcastUrl;
   const spotifyLabel = config.spotifyPodcastLabel || DEFAULT_SITE.spotifyPodcastLabel;
   const footerGroups = config.footerGroups || DEFAULT_SITE.footerGroups;
+  const authState = cachedLayoutAuth || null;
+  const filteredFooterGroups = footerGroups.map(function (group) {
+    return Object.assign({}, group, {
+      links: (group.links || []).filter(function (link) {
+        return navItemAllowed(link, authState);
+      })
+    });
+  });
   const privacyDate = resolveFooterUpdatedDate(config);
 
-  const groupsHtml = footerGroups.map((group) =>
+  const groupsHtml = filteredFooterGroups.map((group) =>
     '<div class="footer-col">' +
     '<p class="footer-col-title">' + escapeNavText(translateFooterGroupTitle(group.title)) + '</p>' +
     '<nav class="footer-col-links" aria-label="' + escapeNavText(translateFooterGroupTitle(group.title)) + '">' +
@@ -2079,9 +2087,7 @@ function buildFooterHTML(site) {
       : '') +
     '</div>';
 
-  const page = (document.body && document.body.dataset.page) || '';
-  const skipShareRail = /admin/i.test(page) || page === 'login' || page === 'entrar' ||
-    page === 'apresentacao-unifesp' || page === 'apresentacao-unifesp-print';
+  const skipShareRail = !(authState && authState.canViewInspections);
 
   const shareRailHtml = skipShareRail ? '' :
     '<section class="inspecoes-share-rail" id="inspecoes-share-rail" hidden aria-labelledby="inspecoes-share-rail-title">' +
@@ -2290,7 +2296,7 @@ function applyFerramentasNav(site) {
 
 async function fetchAuthState() {
   const userFallback = { label: i18n('common.login', 'Entrar'), href: '/entrar.html', isUser: false };
-  const state = { userLink: userFallback, adminLink: null, isAdmin: false, isUser: false };
+  const state = { userLink: userFallback, adminLink: null, isAdmin: false, isUser: false, canViewInspections: false };
 
   try {
     const serverOk = await isServerAvailable();
@@ -2308,14 +2314,17 @@ async function fetchAuthState() {
           name: data.name || null
         };
         state.isUser = true;
+        if (data.canViewInspections) state.canViewInspections = true;
       }
     } catch (e) { /* not logged in as user */ }
 
     try {
       const res = await fetch('/api/me', { credentials: 'include' });
       if (res.ok) {
+        const data = await res.json();
         state.adminLink = { label: i18n('common.panel', 'Painel'), href: '/admin.html', isAdmin: true };
         state.isAdmin = true;
+        if (data.canViewInspections) state.canViewInspections = true;
       }
     } catch (e) { /* not admin */ }
 
@@ -2516,6 +2525,7 @@ async function enrichBibliotecaWithPosts(navPanel) {
   const grouped = { pesquisa: [], inspecao: [], equipamento: [] };
   posts.forEach((post) => {
     const cat = post.category || 'pesquisa';
+    if (cat === 'inspecao') return;
     if (grouped[cat] && grouped[cat].length < 3) grouped[cat].push(post);
   });
 
@@ -2574,6 +2584,14 @@ function applyAuthOnlyVisibility(authState) {
   });
 }
 
+function applyInspectionsVisibility(canView) {
+  document.body.classList.toggle('can-view-inspections', !!canView);
+  document.querySelectorAll('[data-inspections-only]').forEach(function (el) {
+    if (canView) el.removeAttribute('hidden');
+    else el.setAttribute('hidden', '');
+  });
+}
+
 function injectLayout(site, authState) {
   cachedLayoutSite = site;
   cachedLayoutAuth = authState;
@@ -2585,6 +2603,7 @@ function injectLayout(site, authState) {
   const footerHTML = buildFooterHTML(localizedSite);
   applyAdminOnlyVisibility(isAdminAuth(localizedAuth));
   applyAuthOnlyVisibility(localizedAuth);
+  applyInspectionsVisibility(localizedAuth && localizedAuth.canViewInspections);
 
   if (headerContainer) {
     headerContainer.innerHTML = headerHTML;
@@ -2683,7 +2702,12 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.body.appendChild(feat);
   }
 
-  if (!document.querySelector('script[src*="inspecoes-share-rail.js"]')) {
+  const layoutPage = (document.body && document.body.dataset.page) || '';
+  const skipShareRailScript = !cachedLayoutAuth || !cachedLayoutAuth.canViewInspections ||
+    /admin/i.test(layoutPage) || layoutPage === 'login' || layoutPage === 'entrar' ||
+    layoutPage === 'home';
+
+  if (!skipShareRailScript && !document.querySelector('script[src*="inspecoes-share-rail.js"]')) {
     const shareRail = document.createElement('script');
     shareRail.id = 'inspecoes-share-rail-js';
     shareRail.src = '/js/inspecoes-share-rail.js?v=' + ASSET_V;

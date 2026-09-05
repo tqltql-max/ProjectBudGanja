@@ -83,7 +83,7 @@
   function initTheme() {
     var stored = null;
     try { stored = localStorage.getItem('budganja-theme'); } catch (e) {}
-    applyTheme(stored === 'dark' ? 'dark' : 'light', false);
+    applyTheme(stored === 'light' ? 'light' : 'dark', false);
 
     if (themeClickBound) return;
     themeClickBound = true;
@@ -121,9 +121,7 @@
       'Clonadora de 12 estacas': 'menu.clonadora-12.label',
       'Clonadoras': 'menu.clonadoras.label',
       'Substratos': 'menu.substratos.tileLabel',
-      'Plantas': 'nav.plants',
-      'UNIFESP': 'nav.unifesp',
-      'Curso UNIFESP': 'menu.unifesp.label'
+      'Plantas': 'nav.plants'
     };
     if (window.BudGanjaI18n && map[label]) return window.BudGanjaI18n.t(map[label], label);
     return label;

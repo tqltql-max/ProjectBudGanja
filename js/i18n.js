@@ -464,7 +464,6 @@
     var entry = map[key];
     if (!entry) {
       // aliases comuns
-      if (key === 'biblioteca/unifesp/') entry = map['biblioteca/unifesp/index.html'];
       if (key === 'equipamentos/') entry = map['equipamentos/index.html'];
       if (key === 'objetos/') entry = map['objetos/index.html'] || map['equipamentos/index.html'];
     }

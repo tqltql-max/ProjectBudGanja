@@ -255,10 +255,7 @@ function resolveInspecaoTipo(post) {
   return 'canal';
 }
 
-var INSPECOES_PINNED_SLUGS = [
-  'inspecao-palavra-teoria-das-cordas',
-  'inspecao-arte-bom-dia-inverno'
-];
+var INSPECOES_PINNED_SLUGS = [];
 
 function inspecoesPinRank(slug) {
   var i = INSPECOES_PINNED_SLUGS.indexOf(slug);
@@ -397,6 +394,7 @@ function renderPostCards(container, posts, options) {
       var ficha = document.createElement('a');
       ficha.className = 'post-card-ficha';
       ficha.href = fichaHref;
+      ficha.setAttribute('data-learn-skip', '');
       ficha.textContent = (window.BudGanjaI18n && typeof window.BudGanjaI18n.t === 'function')
         ? window.BudGanjaI18n.t('pages.inspections.openFicha', 'Abrir ficha')
         : 'Abrir ficha';
@@ -471,52 +469,14 @@ var HUB_ANCHOR_TO_TIPO = {
 };
 
 var INSPECAO_HUB_TIPOS = [
-  { id: 'pessoa', labelKey: 'pages.inspections.chipPeople', fallback: 'Legado', sort: 'seriesOrder' },
-  { id: 'pessoas', labelKey: 'pages.inspections.chipPeopleHistory', fallback: 'Pessoas', sort: 'seriesOrder' },
-  { id: 'canal', labelKey: 'pages.inspections.chipChannels', fallback: 'Canais', sort: 'label' },
-  { id: 'curso', labelKey: 'pages.inspections.chipCourses', fallback: 'Cursos', sort: 'seriesOrder' },
-  { id: 'artigo', labelKey: 'pages.inspections.chipArticles', fallback: 'Artigos', sort: 'seriesOrder' },
-  {
-    id: 'neurociencia',
-    labelKey: 'pages.inspections.chipNeuroscience',
-    fallback: 'Neurociências',
-    sort: 'seriesOrder',
-    keepVisible: true
-  },
   { id: 'planta', labelKey: 'pages.inspections.chipPlants', fallback: 'Plantas', sort: 'seriesOrder' },
-  { id: 'fruto', labelKey: 'pages.inspections.chipFruits', fallback: 'Frutos', sort: 'seriesOrder', keepVisible: true },
-  { id: 'animal', labelKey: 'pages.inspections.chipAnimals', fallback: 'Animais', sort: 'seriesOrder', keepVisible: true },
-  { id: 'fungo', labelKey: 'pages.inspections.chipFungi', fallback: 'Fungos', sort: 'seriesOrder', keepVisible: true },
-  { id: 'producao', labelKey: 'pages.inspections.chipAnimalProduction', fallback: 'Produção animal', sort: 'seriesOrder', keepVisible: true },
+  { id: 'fruto', labelKey: 'pages.inspections.chipFruits', fallback: 'Frutos', sort: 'seriesOrder' },
+  { id: 'animal', labelKey: 'pages.inspections.chipAnimals', fallback: 'Animais', sort: 'seriesOrder' },
+  { id: 'fungo', labelKey: 'pages.inspections.chipFungi', fallback: 'Fungos', sort: 'seriesOrder' },
+  { id: 'producao', labelKey: 'pages.inspections.chipAnimalProduction', fallback: 'Produção animal', sort: 'seriesOrder' },
   { id: 'derivado', labelKey: 'pages.inspections.chipDerivatives', fallback: 'Produtos nocivos', sort: 'seriesOrder' },
-  { id: 'loja', labelKey: 'pages.inspections.chipShops', fallback: 'Lojas', sort: 'seriesOrder', keepVisible: true },
-  { id: 'palavra', labelKey: 'pages.inspections.chipWords', fallback: 'Palavras', sort: 'seriesOrder', keepVisible: true },
-  { id: 'divulgacao', labelKey: 'pages.inspections.chipOutreach', fallback: 'Divulgação', sort: 'seriesOrder' },
-  { id: 'arte', labelKey: 'pages.inspections.chipArts', fallback: 'Artes', sort: 'seriesOrder', keepVisible: true },
-  {
-    id: 'filmografia',
-    labelKey: 'pages.inspections.chipFilmography',
-    fallback: 'Filmografias',
-    sort: 'seriesOrder',
-    keepVisible: true
-  },
-  {
-    id: 'equipamento',
-    labelKey: 'pages.inspections.chipObjects',
-    fallback: 'Objetos',
-    sort: 'seriesOrder',
-    keepVisible: true
-  },
-  { id: 'jogo', labelKey: 'pages.inspections.chipGames', fallback: 'Cadernos de jogo', sort: 'seriesOrder', keepVisible: true },
-  { id: 'conto', labelKey: 'pages.inspections.chipVida', fallback: 'Vida', sort: 'seriesOrder', keepVisible: true },
-  {
-    id: 'expressao',
-    labelKey: 'pages.inspections.chipExpressions',
-    fallback: 'Expressões',
-    sort: 'seriesOrder',
-    keepVisible: true
-  },
-  { id: 'sugestoes', labelKey: 'pages.inspections.chipSuggestions', fallback: 'Sugestões', special: true, keepVisible: true }
+  { id: 'equipamento', labelKey: 'pages.inspections.chipObjects', fallback: 'Objetos', sort: 'seriesOrder' },
+  { id: 'sugestoes', labelKey: 'pages.inspections.chipSuggestions', fallback: 'Sugestões', special: true }
 ];
 
 var inspecoesHubPosts = [];
