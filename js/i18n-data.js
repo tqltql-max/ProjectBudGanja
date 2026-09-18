@@ -759,7 +759,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "Über uns",
         "title": "Über Inspetor BudGanja",
-        "subtitle": "Ein öffentliches digitales Labor — Heilpflanzen, Tiere, methodische Inspektionen (Wörter, Vermächtnis, Künste), Feed Vivo, der Vida-Pfad und praktische Werkzeuge. Gegründet von Tiago Queiroz Loureiro.",
+        "subtitle": "Ein öffentliches digitales Labor — Heilpflanzen, Tiere, methodische Inspektionen (Wörter, Vermächtnis, Künste), Feed Vivo, der Vida-Pfad und praktische Werkzeuge. Gegründet von Tiago Queiroz Loureiro, Student des 14. UNIFESP-Kurses zu medizinischem Cannabis.",
         "docTitle": "Über Inspetor BudGanja | Inspetor BudGanja"
       },
       "contact": {
@@ -1297,7 +1297,7 @@ window.__I18N_LOCALES__ = {
         "cardResearchText": "Lab research and community studies approved for publication.",
         "cardResearchBtn": "View research",
         "cardInspectionsTitle": "Inspections",
-        "cardInspectionsText": "Cultivation technical reports — plants, fruits, animals, fungi, derivatives and equipment.",
+        "cardInspectionsText": "Technical reports with a verifiable method — guide, channels and courses.",
         "cardInspectionsBtn": "View inspections",
         "cardEquipTitle": "Objects",
         "cardEquipText": "Lab objects catalogue — cloners, thing-sheets and verification inspections.",
@@ -1367,7 +1367,7 @@ window.__I18N_LOCALES__ = {
         "cardSementinhaTip": "Story of inspected crops — first: Cherry Tomato. Read only.",
         "cardCalcTip": "Environment tools: VPD, DLI, EC, lux meter and more.",
         "cardResearchTip": "Lab research and community studies approved for publication.",
-        "cardInspectionsTip": "Cultivation inspection reports — plants, fruits, animals, fungi and equipment.",
+        "cardInspectionsTip": "Inspection reports, field checks and training.",
         "cardEquipTip": "Objects catalogue — cloners, thing-sheets and verification inspections.",
         "cardCommunityTip": "Share diary photos and ask the community for help.",
         "cardVideosTip": "Inspections, tutorials and channel updates on YouTube.",
@@ -1696,7 +1696,7 @@ window.__I18N_LOCALES__ = {
       "inspections": {
         "eyebrow": "Library",
         "title": "Inspections",
-        "subtitle": "Technical cultivation reports — plants, fruits, animals, fungi, harmful derivatives, and equipment.",
+        "subtitle": "Technical reports with a verifiable method — legacy, people, channels, courses, articles, medicinal plants, fruits, fungi, harmful products (casein, gluten, sugar…), words, outreach, arts and objects.",
         "loading": "Loading…",
         "loadMore": "Load more",
         "empty": "No inspections published yet.",
@@ -2026,15 +2026,14 @@ window.__I18N_LOCALES__ = {
         "learnHintEn": "Pass over a word: the gold sheen turns it into English.",
         "learnHintEs": "Pass over a word: the gold sheen turns it into Spanish.",
         "docTitle": "Vida | Inspetor BudGanja",
-        "learnHintOn": "Mouse/tap: translates (or shows the meaning if this language is missing). Click a dotted word with a sheet to open it. Drone: the beam leaves the translation on the page ({lang}). Dotted = no translation in this language. Solid red = warning (shows meaning). Amber dashed = use with care.",
+        "learnHintOn": "Mouse: translates, then back to Portuguese. Drone: the beam leaves the translation on the page ({lang}). Dotted underline = no translation. Solid red = dangerous word — shows the meaning, not the translation; amber dashed = use with care.",
         "learnNoTranslation": "No translation in this language",
-        "learnOpenLink": "Double-click (or Enter) to open the sheet",
-        "learnOpenLinkClick": "Click to open the sheet",
+        "learnOpenLink": "Double-click to open the reference",
         "learnToneDanger": "Dangerous word — use with care",
         "learnToneCaution": "Use with caution",
         "learnMundane": "Everyday",
         "learnLabGloss": "BudGanja",
-        "learnLegendDanger": "Red underline: warning word — retaliation, harm, toxin or affect that charges the price in the one who grows it. Hover/tap shows the meaning; click opens the sheet when available.",
+        "learnLegendDanger": "Red underline: warning word — retaliation, harm, toxin or affect that charges the price in the one who grows it. Not a ban: literacy (everyday sense + BudGanja reading).",
         "learnLegendLink": "Open Warning words category",
         "ctaDiary": "Little Seed Diary",
         "ctaInverno": "Bom dia, Inverno",
@@ -2052,7 +2051,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "About",
         "title": "About Inspetor BudGanja",
-        "subtitle": "A public digital laboratory — medicinal plants, animals, method-based inspections (words, legacy, arts), Live Feed, the Vida trail, and practical tools. Created by Tiago Queiroz Loureiro.",
+        "subtitle": "A public digital laboratory — medicinal plants, animals, method-based inspections (words, legacy, arts), Live Feed, the Vida trail, and practical tools. Created by Tiago Queiroz Loureiro, a student in the 14th UNIFESP medicinal-cannabis course.",
         "docTitle": "About | Inspetor BudGanja"
       },
       "contact": {
@@ -2759,7 +2758,7 @@ window.__I18N_LOCALES__ = {
         "cardResearchText": "Investigaciones del laboratorio y estudios enviados por la comunidad y aprobados.",
         "cardResearchBtn": "Ver investigaciones",
         "cardInspectionsTitle": "Inspecciones",
-        "cardInspectionsText": "Informes técnicos de cultivo — plantas, frutos, animales, hongos, derivados y equipo.",
+        "cardInspectionsText": "Informes técnicos con método verificable — guía, canales y cursos.",
         "cardInspectionsBtn": "Ver inspecciones",
         "cardEquipTitle": "Objetos",
         "cardEquipText": "Catálogo de objetos del laboratorio — clonadoras, fichas de cosas e inspecciones de verificación.",
@@ -2826,7 +2825,7 @@ window.__I18N_LOCALES__ = {
         "cardSementinhaTip": "Historia de los cultivos inspeccionados — primero: Tomate Cherry. Solo lectura.",
         "cardCalcTip": "Utilidades para optimizar tu cultivo: VPD, DLI, EC, luxómetro y más.",
         "cardResearchTip": "Investigaciones del laboratorio y estudios de la comunidad aprobados para publicación.",
-        "cardInspectionsTip": "Informes de inspección de cultivo — plantas, frutos, animales, hongos y equipo.",
+        "cardInspectionsTip": "Informes de inspección, chequeos de campo y formación.",
         "cardEquipTip": "Catálogo de objetos — clonadoras, fichas de cosas e inspecciones de verificación.",
         "cardCommunityTip": "Comparte fotos del diario y pide ayuda a la comunidad.",
         "cardVideosTip": "Inspecciones, tutoriales y novedades del canal en YouTube.",
@@ -3178,7 +3177,7 @@ window.__I18N_LOCALES__ = {
       "inspections": {
         "eyebrow": "Biblioteca",
         "title": "Inspecciones",
-        "subtitle": "Informes técnicos de cultivo — plantas, frutos, animales, hongos, derivados de riesgo y equipo.",
+        "subtitle": "Informes técnicos con método verificable — legado, personas, canales, cursos, artículos, plantas medicinales, frutos, hongos, productos nocivos (caseína, gluten, azúcar…), palabras, divulgación, artes y objetos.",
         "loading": "Cargando…",
         "loadMore": "Cargar más",
         "empty": "Ninguna inspección publicada aún.",
@@ -3508,15 +3507,14 @@ window.__I18N_LOCALES__ = {
         "learnHintEn": "Pasa por una palabra: el brillo dorado la traduce al inglés.",
         "learnHintEs": "Pasa por una palabra: el brillo dorado la traduce al español.",
         "docTitle": "Vida | Inspetor BudGanja",
-        "learnHintOn": "Ratón/toque: traduce (o muestra el sentido si falta el idioma). Clic en la palabra punteada con ficha para abrirla. Dron: el haz deja la traducción en el texto ({lang}). Punteado = sin traducción en este idioma. Rojo sólido = aviso (muestra el sentido). Ámbar discontinuo = uso cauteloso.",
+        "learnHintOn": "Ratón: traduce y vuelve al portugués. Dron: el haz deja la traducción en el texto ({lang}). Subrayado punteado = sin traducción. Rojo sólido = palabra peligrosa — muestra el significado, no la traducción; ámbar discontinuo = uso cauteloso.",
         "learnNoTranslation": "Sin traducción en este idioma",
-        "learnOpenLink": "Doble clic (o Enter) para abrir la ficha",
-        "learnOpenLinkClick": "Clic para abrir la ficha",
-        "learnToneDanger": "Palabra peligrosa — uso con cuidado",
+        "learnOpenLink": "Doble clic para abrir la referencia",
+        "learnToneDanger": "Palabra peligrosa — usar con cuidado",
         "learnToneCaution": "Uso cauteloso",
         "learnMundane": "Común",
         "learnLabGloss": "BudGanja",
-        "learnLegendDanger": "Trazo rojo: palabra de aviso — retaliación, daño, toxina o afecto que cobra el precio en quien lo cultiva. Hover/toque muestra el sentido; clic abre la ficha si existe.",
+        "learnLegendDanger": "Trazo rojo: palabra de aviso — retaliación, daño, toxina o afecto que cobra el precio en quien lo cultiva. No es prohibición: es literacia (sentido común + lectura BudGanja).",
         "learnLegendLink": "Abrir categoría Palabras de aviso",
         "ctaDiary": "Diario de la Semillita",
         "ctaInverno": "Bom dia, Inverno",
@@ -3534,7 +3532,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "Acerca de",
         "title": "Sobre Inspetor BudGanja",
-        "subtitle": "Laboratorio digital público — plantas medicinales, animales, inspecciones con método (palabras, legado, artes), Feed Vivo, trama Vida y herramientas prácticas. Creado por Tiago Queiroz Loureiro.",
+        "subtitle": "Laboratorio digital público — plantas medicinales, animales, inspecciones con método (palabras, legado, artes), Feed Vivo, trama Vida y herramientas prácticas. Creado por Tiago Queiroz Loureiro, alumno del XIV Curso UNIFESP de cannabis medicinal.",
         "docTitle": "Acerca de | Inspetor BudGanja"
       },
       "contact": {
@@ -4225,7 +4223,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "À propos",
         "title": "À propos d’Inspetor BudGanja",
-        "subtitle": "Un laboratoire numérique public — plantes médicinales, animaux, inspections méthodiques (mots, héritage, arts), Feed Vivo, le parcours Vida, et des outils pratiques. Créé par Tiago Queiroz Loureiro.",
+        "subtitle": "Un laboratoire numérique public — plantes médicinales, animaux, inspections méthodiques (mots, héritage, arts), Feed Vivo, le parcours Vida, et des outils pratiques. Créé par Tiago Queiroz Loureiro, étudiant du 14e cours UNIFESP de cannabis médicinal.",
         "docTitle": "À propos | Inspetor BudGanja"
       },
       "contact": {
@@ -4634,7 +4632,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "परिचय",
         "title": "Inspetor BudGanja के बारे में",
-        "subtitle": "एक सार्वजनिक डिजिटल प्रयोगशाला — औषधीय पौधे.",
+        "subtitle": "एक सार्वजनिक डिजिटल प्रयोगशाला — औषधीय पौधे, जानवर, विधि आधारित निरीक्षण (शब्द, विरासत, कला), Feed Vivo, Vida पथ और व्यावहारिक उपकरण। 14वें UNIFESP औषधीय भांग पाठ्यक्रम के छात्र Tiago Queiroz Loureiro द्वारा बनाया गया।",
         "docTitle": "Inspetor BudGanja के बारे में | Inspetor BudGanja"
       },
       "contact": {
@@ -5043,7 +5041,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "Tentang",
         "title": "Tentang Inspetor BudGanja",
-        "subtitle": "Laboratorium digital publik — tanaman obat, hewan, inspeksi berbasis metode (kata, warisan, seni), Feed Vivo, jalur Vida, dan alat praktis. Dibuat oleh Tiago Queiroz Loureiro.",
+        "subtitle": "Laboratorium digital publik — tanaman obat, hewan, inspeksi berbasis metode (kata, warisan, seni), Feed Vivo, jalur Vida, dan alat praktis. Dibuat oleh Tiago Queiroz Loureiro, mahasiswa kursus ke-14 UNIFESP tentang kanabis medis.",
         "docTitle": "Tentang Inspetor BudGanja | Inspetor BudGanja"
       },
       "contact": {
@@ -5452,7 +5450,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "Chi siamo",
         "title": "Su Inspetor BudGanja",
-        "subtitle": "Un laboratorio digitale pubblico — piante medicinali, animali, ispezioni con metodo (parole, lascito, arti), Feed Vivo, il percorso Vida e strumenti pratici. Creato da Tiago Queiroz Loureiro.",
+        "subtitle": "Un laboratorio digitale pubblico — piante medicinali, animali, ispezioni con metodo (parole, lascito, arti), Feed Vivo, il percorso Vida e strumenti pratici. Creato da Tiago Queiroz Loureiro, studente del 14° corso UNIFESP di cannabis medicinale.",
         "docTitle": "Su Inspetor BudGanja | Inspetor BudGanja"
       },
       "contact": {
@@ -5861,7 +5859,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "概要",
         "title": "Inspetor BudGanja について",
-        "subtitle": "公開のデジタルラボ.",
+        "subtitle": "公開のデジタルラボ — 薬用植物、動物、方法に基づく検査（ことば、レガシー、芸術）、Feed Vivo、Vida の道、実用ツール。第14回 UNIFESP 薬用大麻講座の学生 Tiago Queiroz Loureiro が開設。",
         "docTitle": "Inspetor BudGanja について | Inspetor BudGanja"
       },
       "contact": {
@@ -6679,7 +6677,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "Over",
         "title": "Over Inspetor BudGanja",
-        "subtitle": "Een openbaar digitaal laboratorium — medicinale planten, dieren, methodische inspecties (woorden, nalatenschap, kunsten), Feed Vivo, het Vida-pad en praktische tools. Opgericht door Tiago Queiroz Loureiro.",
+        "subtitle": "Een openbaar digitaal laboratorium — medicinale planten, dieren, methodische inspecties (woorden, nalatenschap, kunsten), Feed Vivo, het Vida-pad en praktische tools. Opgericht door Tiago Queiroz Loureiro, student van de 14e UNIFESP-cursus medicinale cannabis.",
         "docTitle": "Over Inspetor BudGanja | Inspetor BudGanja"
       },
       "contact": {
@@ -7088,7 +7086,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "O nas",
         "title": "O Inspetor BudGanja",
-        "subtitle": "Publiczne laboratorium cyfrowe — rośliny lecznicze, zwierzęta, metodyczne inspekcje (słowa, dziedzictwo, sztuki), Feed Vivo, ścieżka Vida i praktyczne narzędzia. Stworzone przez Tiago Queiroz Loureiro.",
+        "subtitle": "Publiczne laboratorium cyfrowe — rośliny lecznicze, zwierzęta, metodyczne inspekcje (słowa, dziedzictwo, sztuki), Feed Vivo, ścieżka Vida i praktyczne narzędzia. Stworzone przez Tiago Queiroz Loureiro, studenta 14. kursu UNIFESP o medycznej konopi.",
         "docTitle": "O Inspetor BudGanja | Inspetor BudGanja"
       },
       "contact": {
@@ -7576,8 +7574,8 @@ window.__I18N_LOCALES__ = {
         "heroEyebrow": "Fitoterapia brasileira · educação e cultivo responsável",
         "heroTitle": "Inspetor BudGanja",
         "heroSubtitle": "Laboratório de inspeção.",
-        "areasTitle": "Ferramentas de pesquisas",
-        "areasSubtitle": "Inspeções, pesquisas, diário e calculadoras do laboratório.",
+        "areasTitle": "O laboratório",
+        "areasSubtitle": "Estudo, cultivo e o jeito de olhar.",
         "cardBibliotecaTitle": "Biblioteca",
         "cardBibliotecaText": "Acervo do laboratório — inspeções, curso UNIFESP, Guia de Palavras, pesquisas e catálogos.",
         "cardBibliotecaBtn": "Abrir biblioteca",
@@ -7626,7 +7624,7 @@ window.__I18N_LOCALES__ = {
         "cardResearchText": "Pesquisas do laboratório e estudos submetidos pela comunidade e aprovados para publicação.",
         "cardResearchBtn": "Ver pesquisas",
         "cardInspectionsTitle": "Inspeções",
-        "cardInspectionsText": "Relatórios técnicos de cultivo — plantas, frutos, animais, fungos, derivados e equipamento.",
+        "cardInspectionsText": "Relatórios técnicos com método verificável — guia, canais e cursos.",
         "cardInspectionsBtn": "Ver Inspeções",
         "cardEquipTitle": "Objetos",
         "cardEquipText": "Catálogo de objectos do laboratório — clonadoras, fichas de coisas e inspeções de verificação.",
@@ -7696,7 +7694,7 @@ window.__I18N_LOCALES__ = {
         "cardSementinhaTip": "História dos cultivos inspecionados — primeiro: Tomatinho Cereja. Só leitura.",
         "cardCalcTip": "Utilitários para ambiente de cultivo: VPD, DLI, EC, luxímetro e mais.",
         "cardResearchTip": "Pesquisas do laboratório e estudos submetidos pela comunidade e aprovados para publicação.",
-        "cardInspectionsTip": "Relatórios de inspeção de cultivo — plantas, frutos, animais, fungos e equipamento.",
+        "cardInspectionsTip": "Relatórios de inspeção, verificações de campo e formação.",
         "cardEquipTip": "Catálogo de objectos — clonadoras, fichas de coisas e inspeções de verificação.",
         "cardCommunityTip": "Partilhe fotos do diário e peça ajuda à comunidade.",
         "cardVideosTip": "Inspeções, tutoriais e novidades do canal no YouTube.",
@@ -8028,7 +8026,7 @@ window.__I18N_LOCALES__ = {
       "inspections": {
         "eyebrow": "Biblioteca",
         "title": "Inspeções",
-        "subtitle": "Relatórios técnicos de cultivo — plantas, frutos, animais, fungos, derivados de risco e equipamento.",
+        "subtitle": "Relatórios técnicos com método verificável — legado, pessoas, canais, cursos, artigos, plantas medicinais, frutos, fungos, produtos nocivos (caseína, glúten, açúcar…), palavras, divulgação, artes e objectos.",
         "loading": "Carregando…",
         "loadMore": "Carregar mais",
         "empty": "Nenhuma inspeção publicada ainda.",
@@ -8358,15 +8356,14 @@ window.__I18N_LOCALES__ = {
         "learnHintEn": "Passe numa palavra: o brilho dourado traduz para English.",
         "learnHintEs": "Passe numa palavra: o brilho dourado traduz para español.",
         "docTitle": "Vida | Inspetor BudGanja",
-        "learnHintOn": "Rato/toque: traduz (ou mostra o sentido se faltar o idioma). Clique na palavra pontilhada com ficha para abrir. Drone: o feixe deixa a tradução no texto ({lang}). Pontilhado = sem tradução neste idioma. Vermelho sólido = aviso (mostra o sentido). Âmbar tracejado = cautela.",
+        "learnHintOn": "Rato: traduz e volta ao português. Drone: o feixe deixa a tradução no texto ({lang}). Traço pontilhado = sem tradução. Traço sólido vermelho = palavra perigosa — mostra o significado, não a tradução; tracejado âmbar = uso cauteloso.",
         "learnNoTranslation": "Sem tradução neste idioma",
-        "learnOpenLink": "Duplo clique (ou Enter) para abrir a ficha",
-        "learnOpenLinkClick": "Clique para abrir a ficha",
+        "learnOpenLink": "Duplo clique para abrir a referência",
         "learnToneDanger": "Palavra perigosa — uso com cuidado",
         "learnToneCaution": "Uso cauteloso",
         "learnMundane": "Comum",
         "learnLabGloss": "BudGanja",
-        "learnLegendDanger": "Traço vermelho: palavra de aviso — retaliação, dano, toxina ou afecto que cobra o preço em quem o cultiva. Hover/toque mostra o sentido; clique abre a ficha se existir.",
+        "learnLegendDanger": "Traço vermelho: palavra de aviso — retaliação, dano, toxina ou afecto que cobra o preço em quem o cultiva. Não é proibição: é literacia (sentido comum + leitura BudGanja).",
         "learnLegendLink": "Abrir categoria Palavras de aviso",
         "ctaDiary": "Diário da Sementinha",
         "ctaInverno": "Bom dia, Inverno",
@@ -8384,7 +8381,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "Sobre",
         "title": "Sobre o Inspetor BudGanja",
-        "subtitle": "Laboratório digital público — plantas medicinais, animais, inspeções com método (palavras, legado, artes), Feed Vivo, trilha Vida e ferramentas práticas. Criado por Tiago Queiroz Loureiro.",
+        "subtitle": "Laboratório digital público — plantas medicinais, animais, inspeções com método (palavras, legado, artes), Feed Vivo, trilha Vida e ferramentas práticas. Criado por Tiago Queiroz Loureiro, aluno do XIV Curso UNIFESP de cannabis medicinal.",
         "docTitle": "Sobre | Inspetor BudGanja"
       },
       "contact": {
@@ -8982,7 +8979,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "О проекте",
         "title": "Об Inspetor BudGanja",
-        "subtitle": "Открытая цифровая лаборатория — лекарственные растения, животные, методические инспекции (слова, наследие, искусства), Feed Vivo, тропа Vida и практические инструменты. Создана Tiago Queiroz Loureiro.",
+        "subtitle": "Открытая цифровая лаборатория — лекарственные растения, животные, методические инспекции (слова, наследие, искусства), Feed Vivo, тропа Vida и практические инструменты. Создана Tiago Queiroz Loureiro, студентом 14-го курса UNIFESP по медицинской каннабисе.",
         "docTitle": "Об Inspetor BudGanja | Inspetor BudGanja"
       },
       "contact": {
@@ -9800,7 +9797,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "Giới thiệu",
         "title": "Về Inspetor BudGanja",
-        "subtitle": "Phòng thí nghiệm số công cộng — cây thuốc, động vật, kiểm tra theo phương pháp (từ, di sản, nghệ thuật), Feed Vivo, đường Vida và công cụ thực hành. Do Tiago Queiroz Loureiro.",
+        "subtitle": "Phòng thí nghiệm số công cộng — cây thuốc, động vật, kiểm tra theo phương pháp (từ, di sản, nghệ thuật), Feed Vivo, đường Vida và công cụ thực hành. Do Tiago Queiroz Loureiro, sinh viên khóa 14 UNIFESP về cần sa y học, tạo ra.",
         "docTitle": "Về Inspetor BudGanja | Inspetor BudGanja"
       },
       "contact": {
@@ -10209,7 +10206,7 @@ window.__I18N_LOCALES__ = {
       "about": {
         "eyebrow": "关于",
         "title": "关于 Inspetor BudGanja",
-        "subtitle": "一座公开的数字实验室.",
+        "subtitle": "一座公开的数字实验室 — 药用植物、动物、有方法的检查（词语、遗产、艺术）、Feed Vivo、Vida 路径与实用工具。由第14期 UNIFESP 药用大麻课程学生 Tiago Queiroz Loureiro 创建。",
         "docTitle": "关于 Inspetor BudGanja | Inspetor BudGanja"
       },
       "contact": {

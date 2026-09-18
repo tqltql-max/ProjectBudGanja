@@ -1,24 +1,144 @@
 {
-  "updatedAt": "2026-08-24T16:24:44.597Z",
-  "trackCount": 6,
+  "updatedAt": "2026-09-18T15:16:00.798Z",
+  "trackCount": 26,
   "tracks": [
     {
-      "id": "t_9dd52649cf9b",
-      "title": "Rusted Root - Send Me On My Way (Official Music Video) - RustedRootVEVO (youtube)",
+      "id": "t_3e4b62ea3e7b",
+      "title": "Stir It Up",
       "artist": "BudGanja Radio",
-      "url": "/radio/Rusted%20Root%20-%20Send%20Me%20On%20My%20Way%20(Official%20Music%20Video)%20-%20RustedRootVEVO%20(youtube).mp3"
+      "url": "/radio/01%20-%20Stir%20It%20Up.mp3"
+    },
+    {
+      "id": "t_ded2721d47ba",
+      "title": "I Shot The Sheriff",
+      "artist": "BudGanja Radio",
+      "url": "/radio/02%20-%20I%20Shot%20The%20Sheriff.mp3"
+    },
+    {
+      "id": "t_120b8a20c67e",
+      "title": "Get Up, Stand Up",
+      "artist": "BudGanja Radio",
+      "url": "/radio/03%20-%20Get%20Up%2C%20Stand%20Up.mp3"
+    },
+    {
+      "id": "t_cc94e4e41d48",
+      "title": "No Woman No Cry",
+      "artist": "BudGanja Radio",
+      "url": "/radio/04%20-%20No%20Woman%20No%20Cry.mp3"
+    },
+    {
+      "id": "t_3e179d70754d",
+      "title": "Exodus",
+      "artist": "BudGanja Radio",
+      "url": "/radio/05%20-%20Exodus.mp3"
+    },
+    {
+      "id": "t_681bf318f698",
+      "title": "Turn Your Lights Down Low",
+      "artist": "BudGanja Radio",
+      "url": "/radio/06%20-%20Turn%20Your%20Lights%20Down%20Low.mp3"
+    },
+    {
+      "id": "t_58cee096af75",
+      "title": "I Know A Place (Single Remix)",
+      "artist": "BudGanja Radio",
+      "url": "/radio/07%20-%20I%20Know%20A%20Place%20(Single%20Remix).mp3"
+    },
+    {
+      "id": "t_091b4de7a16b",
+      "title": "So Much Trouble In The World",
+      "artist": "BudGanja Radio",
+      "url": "/radio/08%20-%20So%20Much%20Trouble%20In%20The%20World.mp3"
+    },
+    {
+      "id": "t_8f206c64e31e",
+      "title": "Roots Rock Reggae",
+      "artist": "BudGanja Radio",
+      "url": "/radio/09%20-%20Roots%20Rock%20Reggae.mp3"
+    },
+    {
+      "id": "t_c78a5c902a0d",
+      "title": "Lively Up Yourself",
+      "artist": "BudGanja Radio",
+      "url": "/radio/10%20-%20Lively%20Up%20Yourself.mp3"
+    },
+    {
+      "id": "t_e89ed7379145",
+      "title": "One Love",
+      "artist": "BudGanja Radio",
+      "url": "/radio/11%20-%20One%20Love.mp3"
+    },
+    {
+      "id": "t_55c9cb00f877",
+      "title": "Three Little Birds",
+      "artist": "BudGanja Radio",
+      "url": "/radio/12%20-%20Three%20Little%20Birds.mp3"
+    },
+    {
+      "id": "t_5e8ce5153abb",
+      "title": "Jammin'",
+      "artist": "BudGanja Radio",
+      "url": "/radio/13%20-%20Jammin'.mp3"
+    },
+    {
+      "id": "t_b8ae4a1fdd94",
+      "title": "Waiting In Vain",
+      "artist": "BudGanja Radio",
+      "url": "/radio/14%20-%20Waiting%20In%20Vain.mp3"
+    },
+    {
+      "id": "t_bdc7a654f503",
+      "title": "Buffalo Soldier",
+      "artist": "BudGanja Radio",
+      "url": "/radio/15%20-%20Buffalo%20Soldier.mp3"
+    },
+    {
+      "id": "t_bc62296751c3",
+      "title": "Could You Be Loved",
+      "artist": "BudGanja Radio",
+      "url": "/radio/16%20-%20Could%20You%20Be%20Loved.mp3"
+    },
+    {
+      "id": "t_26f112756be9",
+      "title": "Sun Is Shinning (Original)",
+      "artist": "BudGanja Radio",
+      "url": "/radio/17%20-%20Sun%20Is%20Shinning%20(Original).mp3"
+    },
+    {
+      "id": "t_18c6f1a8256b",
+      "title": "Is This Love",
+      "artist": "BudGanja Radio",
+      "url": "/radio/18%20-%20Is%20This%20Love.mp3"
+    },
+    {
+      "id": "t_72c53c7cb828",
+      "title": "& The Wailers - I Know A Place",
+      "artist": "BudGanja Radio",
+      "url": "/radio/19%20-%20%26%20The%20Wailers%20-%20I%20Know%20A%20Place.mp3"
+    },
+    {
+      "id": "t_fe446af29837",
+      "title": "Iron Lion Zion",
+      "artist": "BudGanja Radio",
+      "url": "/radio/20%20-%20Iron%20Lion%20Zion.mp3"
+    },
+    {
+      "id": "t_e1245f45dd73",
+      "title": "Iron Lion Zion (12 Inch Mix)",
+      "artist": "BudGanja Radio",
+      "url": "/radio/21%20-%20Iron%20Lion%20Zion%20(12%20Inch%20Mix).mp3"
+    },
+    {
+      "id": "t_30b31b163f7b",
+      "title": "Redemption Song (Band Version) Very Rare",
+      "artist": "BudGanja Radio",
+      "url": "/radio/22%20-%20Redemption%20Song%20(Band%20Version)%20Very%20Rare.mp3"
     },
     {
       "id": "t_799d7b71f1b9",
       "title": "Bob Marley & The Wailers - Three Little Birds (Official Music Video) - BobMarleyVEVO (youtube)",
       "artist": "BudGanja Radio",
       "url": "/radio/Bob%20Marley%20%26%20The%20Wailers%20-%20Three%20Little%20Birds%20(Official%20Music%20Video)%20-%20BobMarleyVEVO%20(youtube).mp3"
-    },
-    {
-      "id": "t_74b5aec5c4dd",
-      "title": "Ziggy Marley - True To Myself (Official Music Video) - Ziggy Marley (youtube)",
-      "artist": "BudGanja Radio",
-      "url": "/radio/Ziggy%20Marley%20-%20True%20To%20Myself%20(Official%20Music%20Video)%20-%20Ziggy%20Marley%20(youtube).mp3"
     },
     {
       "id": "t_a70196e53d07",

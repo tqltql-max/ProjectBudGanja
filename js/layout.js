@@ -1,6 +1,6 @@
 // Layout.js - Dynamic header and footer injection
 
-const ASSET_V = '358';
+const ASSET_V = '359';
 const HOME = '/';
 
 (function applyStoredTheme() {

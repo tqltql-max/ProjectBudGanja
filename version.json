@@ -1,14 +1,14 @@
 {
-  "version": "358",
+  "version": "359",
   "hero": "7f1482449a",
   "heroSize": {
     "width": 1400,
     "height": 440
   },
-  "builtAt": "2026-09-18T15:07:21.213Z",
+  "builtAt": "2026-09-18T15:22:19.475Z",
   "update": {
     "enabled": true,
-    "id": "lab-358-2026-09-18",
+    "id": "lab-359-2026-09-18",
     "href": "/",
     "image": "/imagens/icon-512.png",
     "imageAlt": {
@@ -34,9 +34,9 @@
       "es": "Nueva versión del laboratorio"
     },
     "text": {
-      "pt-BR": "Ícone do Inspetor, inspeções do leite e da carne nas Últimas, e o sentido de virou carne de vaca. No telemóvel, toque em Atualizar agora.",
-      "en": "Inspector icon, milk and meat inspections on Latest, and the everyday meaning of virou carne de vaca. On the phone, tap Update now.",
-      "es": "Icono del Inspector, inspecciones de leche y carne en Últimas, y el sentido cotidiano de virou carne de vaca. En el móvil, toca Actualizar ahora."
+      "pt-BR": "As Últimas voltaram: carne, leite, glúten e trigo. No telemóvel, toque em Atualizar agora.",
+      "en": "Latest is back: meat, milk, gluten and wheat. On the phone, tap Update now.",
+      "es": "Últimas volvió: carne, leche, gluten y trigo. En el móvil, toca Actualizar ahora."
     },
     "cta": {
       "pt-BR": "Depois",
